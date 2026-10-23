@@ -2583,6 +2583,32 @@ class AppLocalizationsKy extends AppLocalizations {
       'Суммалар баштапкы валютада, которулган эмес. Сатуудан түшкөн каражат сатуу комиссиясы чегерилгенден кийин көрсөтүлөт; сатып алуу наркына сатып алуу комиссиясы кирет (FIFO). Салык декларациясы үчүн салык органыңыз талап кылган курс менен которуңуз.';
 
   @override
+  String get portfolioShare => 'Натыйжалар менен бөлүшүү';
+
+  @override
+  String get portfolioShareHeading => 'Менин портфелим';
+
+  @override
+  String get portfolioTopHoldings => 'Эң ири позициялар';
+
+  @override
+  String get portfolioShareNote => 'Пайыздар гана бөлүшүлөт, суммалар эмес.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count позиция',
+      one: '1 позиция',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Инвестициялык кеңеш эмес';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

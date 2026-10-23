@@ -2582,6 +2582,32 @@ class AppLocalizationsSv extends AppLocalizations {
       'Belopp i ursprunglig valuta, inte omräknade. Försäljningspriset är efter avdrag för courtage vid försäljning; omkostnadsbeloppet inkluderar courtage vid köp (FIFO). Till deklarationen räknar du om enligt den växelkurs som skattemyndigheten kräver.';
 
   @override
+  String get portfolioShare => 'Dela utvecklingen';
+
+  @override
+  String get portfolioShareHeading => 'Min portfölj';
+
+  @override
+  String get portfolioTopHoldings => 'Största innehav';
+
+  @override
+  String get portfolioShareNote => 'Endast procentsatser delas, inga belopp.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count innehav',
+      one: '$count innehav',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Inte investeringsrådgivning';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

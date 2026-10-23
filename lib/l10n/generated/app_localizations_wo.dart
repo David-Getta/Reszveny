@@ -2574,6 +2574,32 @@ class AppLocalizationsWo extends AppLocalizations {
       'Xaalis yi ci xaalis bu njëkk bi lañu, ñu soppiwuñu leen. Xaalisu jaay bi, dañu ci génne peyu liggéeyu jaay bi; njëgu jënd bi boole na ci peyu liggéeyu jënd bi (FIFO). Ngir sa déclaration lempo, soppil ko ci njëgu weccit xaalis bi biro lempo bi laaj.';
 
   @override
+  String get portfolioShare => 'Séddoo njureef yi';
+
+  @override
+  String get portfolioShareHeading => 'Sama aksiyoŋ yi';
+
+  @override
+  String get portfolioTopHoldings => 'Aksiyoŋ yi gëna mag';
+
+  @override
+  String get portfolioShareNote =>
+      'Ay pursaŋ rekk lañuy séddoo, amul lim xaalis.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aksiyoŋ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Du ndigal ci dugal xaalis';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

@@ -787,5 +787,11 @@
   "portfolioProceeds": "د پلور عاید",
   "portfolioCostBasis": "د پېرود لګښت",
   "portfolioFeesPaid": "ورکړل شوې فیس",
-  "portfolioAnnualSummaryNote": "اندازې په اصلي اسعارو دي، نه دي اړول شوې. د پلور عاید د پلور فیس ترې کم شوی؛ د پېرود لګښت د پېرود فیس هم پکې شامل دی (FIFO). د مالیې د اظهارنامې لپاره، د اسعارو په هغه نرخ یې واړوئ چې ستاسو د مالیې اداره یې غواړي."
+  "portfolioAnnualSummaryNote": "اندازې په اصلي اسعارو دي، نه دي اړول شوې. د پلور عاید د پلور فیس ترې کم شوی؛ د پېرود لګښت د پېرود فیس هم پکې شامل دی (FIFO). د مالیې د اظهارنامې لپاره، د اسعارو په هغه نرخ یې واړوئ چې ستاسو د مالیې اداره یې غواړي.",
+  "portfolioShare": "کارکردګي شریک کړئ",
+  "portfolioShareHeading": "زما پورټفولیو",
+  "portfolioTopHoldings": "تر ټولو لوی پوزیشنونه",
+  "portfolioShareNote": "یوازې سلنې شریکېږي، مقدارونه نه.",
+  "portfolioPositionsCount": "{count, plural, one{{count} پوزیشن} other{{count} پوزیشنونه}}",
+  "shareNotAdvice": "د پانګونې مشوره نه ده"
 }

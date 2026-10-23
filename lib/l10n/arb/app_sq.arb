@@ -787,5 +787,11 @@
   "portfolioProceeds": "Të ardhurat nga shitjet",
   "portfolioCostBasis": "Kostoja e blerjes",
   "portfolioFeesPaid": "Komisionet e paguara",
-  "portfolioAnnualSummaryNote": "Shumat në monedhën origjinale, pa konvertim. Të ardhurat janë neto nga komisioni i shitjes; kostoja e blerjes përfshin komisionin e blerjes (FIFO). Për deklaratën tatimore, konvertoni me kursin e këmbimit që kërkon autoriteti juaj tatimor."
+  "portfolioAnnualSummaryNote": "Shumat në monedhën origjinale, pa konvertim. Të ardhurat janë neto nga komisioni i shitjes; kostoja e blerjes përfshin komisionin e blerjes (FIFO). Për deklaratën tatimore, konvertoni me kursin e këmbimit që kërkon autoriteti juaj tatimor.",
+  "portfolioShare": "Ndaj performancën",
+  "portfolioShareHeading": "Portofoli im",
+  "portfolioTopHoldings": "Pozicionet më të mëdha",
+  "portfolioShareNote": "Ndahen vetëm përqindjet, jo shumat.",
+  "portfolioPositionsCount": "{count, plural, one{{count} pozicion} other{{count} pozicione}}",
+  "shareNotAdvice": "Nuk është këshillë investimi"
 }

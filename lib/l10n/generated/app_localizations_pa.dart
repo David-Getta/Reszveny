@@ -2577,6 +2577,33 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਰਕਮਾਂ ਮੂਲ ਮੁਦਰਾ ਵਿੱਚ, ਬਦਲੀਆਂ ਨਹੀਂ ਗਈਆਂ। ਵਿਕਰੀ ਆਮਦਨ ਵਿੱਚੋਂ ਵਿਕਰੀ ਫੀਸ ਘਟਾਈ ਗਈ ਹੈ; ਖ਼ਰੀਦ ਲਾਗਤ ਵਿੱਚ ਖ਼ਰੀਦ ਫੀਸ ਸ਼ਾਮਲ ਹੈ (FIFO)। ਟੈਕਸ ਰਿਟਰਨ ਲਈ, ਆਪਣੇ ਟੈਕਸ ਵਿਭਾਗ ਵੱਲੋਂ ਮੰਗੀ ਵਟਾਂਦਰਾ ਦਰ ’ਤੇ ਬਦਲੋ।';
 
   @override
+  String get portfolioShare => 'ਪ੍ਰਦਰਸ਼ਨ ਸਾਂਝਾ ਕਰੋ';
+
+  @override
+  String get portfolioShareHeading => 'ਮੇਰਾ ਪੋਰਟਫ਼ੋਲੀਓ';
+
+  @override
+  String get portfolioTopHoldings => 'ਸਭ ਤੋਂ ਵੱਡੀਆਂ ਪੁਜ਼ੀਸ਼ਨਾਂ';
+
+  @override
+  String get portfolioShareNote =>
+      'ਸਿਰਫ਼ ਪ੍ਰਤੀਸ਼ਤ ਸਾਂਝੇ ਕੀਤੇ ਜਾਂਦੇ ਹਨ, ਰਕਮਾਂ ਨਹੀਂ।';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਪੁਜ਼ੀਸ਼ਨਾਂ',
+      one: '$count ਪੁਜ਼ੀਸ਼ਨ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

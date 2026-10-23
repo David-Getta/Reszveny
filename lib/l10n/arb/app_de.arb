@@ -787,5 +787,11 @@
   "portfolioProceeds": "Veräußerungserlös",
   "portfolioCostBasis": "Anschaffungskosten",
   "portfolioFeesPaid": "Gezahlte Gebühren",
-  "portfolioAnnualSummaryNote": "Beträge in Originalwährung, nicht umgerechnet. Der Veräußerungserlös versteht sich abzüglich der Verkaufsgebühr; die Anschaffungskosten enthalten die Kaufgebühr (FIFO). Für die Steuererklärung rechne zu dem Kurs um, den dein Finanzamt verlangt."
+  "portfolioAnnualSummaryNote": "Beträge in Originalwährung, nicht umgerechnet. Der Veräußerungserlös versteht sich abzüglich der Verkaufsgebühr; die Anschaffungskosten enthalten die Kaufgebühr (FIFO). Für die Steuererklärung rechne zu dem Kurs um, den dein Finanzamt verlangt.",
+  "portfolioShare": "Performance teilen",
+  "portfolioShareHeading": "Mein Portfolio",
+  "portfolioTopHoldings": "Größte Positionen",
+  "portfolioShareNote": "Es werden nur Prozentwerte geteilt, keine Beträge.",
+  "portfolioPositionsCount": "{count, plural, =1{1 Position} other{{count} Positionen}}",
+  "shareNotAdvice": "Keine Anlageberatung"
 }

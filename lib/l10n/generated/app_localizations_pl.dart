@@ -2648,6 +2648,35 @@ class AppLocalizationsPl extends AppLocalizations {
       'Kwoty w walucie oryginalnej, bez przeliczenia. Przychód jest pomniejszony o prowizję od sprzedaży; koszt nabycia obejmuje prowizję od zakupu (FIFO). Do zeznania podatkowego przelicz po kursie wymaganym przez urząd skarbowy.';
 
   @override
+  String get portfolioShare => 'Udostępnij wyniki';
+
+  @override
+  String get portfolioShareHeading => 'Mój portfel';
+
+  @override
+  String get portfolioTopHoldings => 'Największe pozycje';
+
+  @override
+  String get portfolioShareNote =>
+      'Udostępniane są tylko wartości procentowe, bez kwot.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozycji',
+      many: '$count pozycji',
+      few: '$count pozycje',
+      one: '$count pozycja',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Nie stanowi porady inwestycyjnej';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

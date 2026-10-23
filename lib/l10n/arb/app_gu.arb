@@ -787,5 +787,11 @@
   "portfolioProceeds": "વેચાણની આવક",
   "portfolioCostBasis": "ખરીદ ખર્ચ",
   "portfolioFeesPaid": "ચૂકવેલ બ્રોકરેજ",
-  "portfolioAnnualSummaryNote": "રકમો મૂળ કરન્સીમાં છે, રૂપાંતરિત નથી. વેચાણની આવક વેચાણનું બ્રોકરેજ બાદ કરીને છે; ખરીદ ખર્ચમાં ખરીદીનું બ્રોકરેજ સામેલ છે (FIFO). ટેક્સ રિટર્ન માટે તમારા કર સત્તાવાળા માગે તે વિનિમય દરે રૂપાંતર કરો."
+  "portfolioAnnualSummaryNote": "રકમો મૂળ કરન્સીમાં છે, રૂપાંતરિત નથી. વેચાણની આવક વેચાણનું બ્રોકરેજ બાદ કરીને છે; ખરીદ ખર્ચમાં ખરીદીનું બ્રોકરેજ સામેલ છે (FIFO). ટેક્સ રિટર્ન માટે તમારા કર સત્તાવાળા માગે તે વિનિમય દરે રૂપાંતર કરો.",
+  "portfolioShare": "કામગીરી શેર કરો",
+  "portfolioShareHeading": "મારો પોર્ટફોલિયો",
+  "portfolioTopHoldings": "સૌથી મોટી પોઝિશન",
+  "portfolioShareNote": "ફક્ત ટકાવારી શેર થાય છે, કોઈ રકમ નહીં.",
+  "portfolioPositionsCount": "{count, plural, =1{1 પોઝિશન} other{{count} પોઝિશન}}",
+  "shareNotAdvice": "રોકાણ સલાહ નથી"
 }

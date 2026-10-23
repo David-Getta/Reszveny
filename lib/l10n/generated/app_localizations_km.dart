@@ -2559,6 +2559,32 @@ class AppLocalizationsKm extends AppLocalizations {
       'ចំនួនទឹកប្រាក់ជារូបិយប័ណ្ណដើម មិនបានបម្លែងទេ។ ចំណូលពីការលក់គឺក្រោយកាត់កម្រៃជើងសារលក់ ហើយថ្លៃដើមទិញរួមបញ្ចូលកម្រៃជើងសារទិញ (FIFO)។ សម្រាប់ការប្រកាសពន្ធ សូមបម្លែងតាមអត្រាប្តូរប្រាក់ដែលអាជ្ញាធរពន្ធដាររបស់អ្នកតម្រូវ។';
 
   @override
+  String get portfolioShare => 'ចែករំលែកលទ្ធផល';
+
+  @override
+  String get portfolioShareHeading => 'ផលប័ត្ររបស់ខ្ញុំ';
+
+  @override
+  String get portfolioTopHoldings => 'ការកាន់កាប់ធំបំផុត';
+
+  @override
+  String get portfolioShareNote =>
+      'ចែករំលែកតែភាគរយប៉ុណ្ណោះ គ្មានចំនួនទឹកប្រាក់ទេ។';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ភាគហ៊ុន $count មុខ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'មិនមែនជាដំបូន្មានវិនិយោគទេ';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

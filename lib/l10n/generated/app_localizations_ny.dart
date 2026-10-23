@@ -2588,6 +2588,33 @@ class AppLocalizationsNy extends AppLocalizations {
       'Ndalama zili mu ndalama yoyambirira, sizinasinthidwe. Ndalama zogulitsa zachotsedwa zolipiritsa zogulitsa; mtengo wogulira ukuphatikiza zolipiritsa zogulira (FIFO). Pa msonkho wanu, sinthani pa mtengo wosinthira ndalama umene bungwe la msonkho likufuna.';
 
   @override
+  String get portfolioShare => 'Gawani zotsatira';
+
+  @override
+  String get portfolioShareHeading => 'Masheya anga';
+
+  @override
+  String get portfolioTopHoldings => 'Masheya akuluakulu';
+
+  @override
+  String get portfolioShareNote =>
+      'Maperesenti okha ndi omwe amagawidwa, osati ndalama.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Masheya $count',
+      one: 'Sheya $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Si malangizo okhudza kuyika ndalama';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

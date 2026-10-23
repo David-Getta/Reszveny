@@ -2599,6 +2599,32 @@ class AppLocalizationsTn extends AppLocalizations {
       'Madi a mo mading a ntlha, ga a a fetolwa. Letseno la thekiso ke morago ga go ntsha tuelo ya thekiso; ditshenyegelo tsa go reka di akaretsa tuelo ya theko (FIFO). Go tlhagisa lekgetho la gago, fetola ka tlhwatlhwa ya phetolo e bothati jwa lekgetho bo e tlhokang.';
 
   @override
+  String get portfolioShare => 'Abelana dipoelo';
+
+  @override
+  String get portfolioShareHeading => 'Potefolio ya me';
+
+  @override
+  String get portfolioTopHoldings => 'Dishere tse dikgolo';
+
+  @override
+  String get portfolioShareNote => 'Go abelanwa diperesente fela, e seng madi.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dishere di le $count',
+      one: 'Shere e le $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ga se kgakololo ya peeletso';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

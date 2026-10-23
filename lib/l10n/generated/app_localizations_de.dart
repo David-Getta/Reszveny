@@ -2594,6 +2594,33 @@ class AppLocalizationsDe extends AppLocalizations {
       'Beträge in Originalwährung, nicht umgerechnet. Der Veräußerungserlös versteht sich abzüglich der Verkaufsgebühr; die Anschaffungskosten enthalten die Kaufgebühr (FIFO). Für die Steuererklärung rechne zu dem Kurs um, den dein Finanzamt verlangt.';
 
   @override
+  String get portfolioShare => 'Performance teilen';
+
+  @override
+  String get portfolioShareHeading => 'Mein Portfolio';
+
+  @override
+  String get portfolioTopHoldings => 'Größte Positionen';
+
+  @override
+  String get portfolioShareNote =>
+      'Es werden nur Prozentwerte geteilt, keine Beträge.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Positionen',
+      one: '1 Position',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Keine Anlageberatung';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

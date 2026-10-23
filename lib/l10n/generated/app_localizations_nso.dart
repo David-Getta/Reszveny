@@ -2598,6 +2598,33 @@ class AppLocalizationsNso extends AppLocalizations {
       'Ditšhelete di ka tšhelete ya mathomo, ga di a fetošwa. Letseno la dithekišo ke ka morago ga go ntšha tefelo ya thekišo; ditshenyagalelo tša go reka di akaretša tefelo ya theko (FIFO). Bakeng sa pušetšo ya gago ya motšhelo, fetoša ka reiti ya phetošo ye e nyakwago ke bolaodi bja motšhelo.';
 
   @override
+  String get portfolioShare => 'Abelana dipoelo';
+
+  @override
+  String get portfolioShareHeading => 'Photefolio ya ka';
+
+  @override
+  String get portfolioTopHoldings => 'Maemo a magolo kudu';
+
+  @override
+  String get portfolioShareNote =>
+      'Go abelanwa diphesente fela, e sego dipalo tša tšhelete.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Maemo a $count',
+      one: 'Boemo bo $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ga se keletšo ya peeletšo';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

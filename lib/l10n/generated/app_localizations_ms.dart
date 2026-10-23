@@ -2585,6 +2585,32 @@ class AppLocalizationsMs extends AppLocalizations {
       'Amaun dalam mata wang asal, tidak ditukar. Hasil jualan adalah bersih selepas yuran jualan; kos perolehan termasuk yuran pembelian (FIFO). Untuk penyata cukai anda, tukar pada kadar pertukaran yang ditetapkan oleh pihak berkuasa cukai anda.';
 
   @override
+  String get portfolioShare => 'Kongsi prestasi';
+
+  @override
+  String get portfolioShareHeading => 'Portfolio saya';
+
+  @override
+  String get portfolioTopHoldings => 'Pegangan terbesar';
+
+  @override
+  String get portfolioShareNote =>
+      'Hanya peratusan yang dikongsi, tanpa jumlah.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pegangan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Bukan nasihat pelaburan';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

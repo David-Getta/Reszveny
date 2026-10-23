@@ -2581,6 +2581,32 @@ class AppLocalizationsKa extends AppLocalizations {
       'თანხები საწყის ვალუტაშია, გადაუანგარიშებლად. გაყიდვიდან შემოსავალი გაყიდვის საკომისიოს გამოკლებითაა; შეძენის ღირებულება მოიცავს ყიდვის საკომისიოს (FIFO). საგადასახადო დეკლარაციისთვის გადაიანგარიშეთ იმ კურსით, რომელსაც თქვენი საგადასახადო ორგანო მოითხოვს.';
 
   @override
+  String get portfolioShare => 'შედეგების გაზიარება';
+
+  @override
+  String get portfolioShareHeading => 'ჩემი პორტფელი';
+
+  @override
+  String get portfolioTopHoldings => 'უდიდესი პოზიციები';
+
+  @override
+  String get portfolioShareNote => 'ზიარდება მხოლოდ პროცენტები, თანხები — არა.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count პოზიცია',
+      one: '1 პოზიცია',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'არ არის საინვესტიციო რჩევა';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

@@ -787,5 +787,11 @@
   "portfolioProceeds": "Príjem z predaja",
   "portfolioCostBasis": "Obstarávacia cena",
   "portfolioFeesPaid": "Zaplatené poplatky",
-  "portfolioAnnualSummaryNote": "Sumy v pôvodnej mene, bez prepočtu. Príjem z predaja je po odpočítaní poplatku pri predaji; obstarávacia cena zahŕňa poplatok pri nákupe (FIFO). Na daňové priznanie prepočítajte kurzom, ktorý vyžaduje váš daňový úrad."
+  "portfolioAnnualSummaryNote": "Sumy v pôvodnej mene, bez prepočtu. Príjem z predaja je po odpočítaní poplatku pri predaji; obstarávacia cena zahŕňa poplatok pri nákupe (FIFO). Na daňové priznanie prepočítajte kurzom, ktorý vyžaduje váš daňový úrad.",
+  "portfolioShare": "Zdieľať výkonnosť",
+  "portfolioShareHeading": "Moje portfólio",
+  "portfolioTopHoldings": "Najväčšie pozície",
+  "portfolioShareNote": "Zdieľajú sa len percentá, žiadne sumy.",
+  "portfolioPositionsCount": "{count, plural, one{{count} pozícia} few{{count} pozície} many{{count} pozície} other{{count} pozícií}}",
+  "shareNotAdvice": "Nie je investičné odporúčanie"
 }

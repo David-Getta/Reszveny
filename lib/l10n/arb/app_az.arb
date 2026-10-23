@@ -787,5 +787,11 @@
   "portfolioProceeds": "Satışdan gəlir",
   "portfolioCostBasis": "Alış dəyəri",
   "portfolioFeesPaid": "Ödənilmiş komissiya",
-  "portfolioAnnualSummaryNote": "Məbləğlər ilkin valyutadadır, çevrilməyib. Satışdan gəlir satış komissiyası çıxılmaqla göstərilir; alış dəyərinə alış komissiyası daxildir (FIFO). Vergi bəyannaməsi üçün vergi orqanınızın tələb etdiyi məzənnə ilə çevirin."
+  "portfolioAnnualSummaryNote": "Məbləğlər ilkin valyutadadır, çevrilməyib. Satışdan gəlir satış komissiyası çıxılmaqla göstərilir; alış dəyərinə alış komissiyası daxildir (FIFO). Vergi bəyannaməsi üçün vergi orqanınızın tələb etdiyi məzənnə ilə çevirin.",
+  "portfolioShare": "Nəticələri paylaş",
+  "portfolioShareHeading": "Portfelim",
+  "portfolioTopHoldings": "Ən böyük mövqelər",
+  "portfolioShareNote": "Yalnız faizlər paylaşılır, məbləğlər yox.",
+  "portfolioPositionsCount": "{count, plural, =1{1 mövqe} other{{count} mövqe}}",
+  "shareNotAdvice": "İnvestisiya məsləhəti deyil"
 }

@@ -2619,6 +2619,33 @@ class AppLocalizationsRo extends AppLocalizations {
       'Sume în moneda originală, neconvertite. Încasările sunt nete de comisionul de vânzare; costul de achiziție include comisionul de cumpărare (FIFO). Pentru declarația fiscală, convertește la cursul de schimb cerut de autoritatea fiscală.';
 
   @override
+  String get portfolioShare => 'Distribuie performanța';
+
+  @override
+  String get portfolioShareHeading => 'Portofoliul meu';
+
+  @override
+  String get portfolioTopHoldings => 'Cele mai mari poziții';
+
+  @override
+  String get portfolioShareNote => 'Se distribuie doar procente, fără sume.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de poziții',
+      few: '$count poziții',
+      one: '$count poziție',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Nu este sfat de investiții';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

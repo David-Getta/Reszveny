@@ -2577,6 +2577,33 @@ class AppLocalizationsSi extends AppLocalizations {
       'මුදල් මුල් මුදල් වර්ගයෙන්, පරිවර්තනය කර නැත. විකුණුම් ආදායමෙන් විකුණුම් ගාස්තුව අඩු කර ඇත; මිලදී ගැනීමේ පිරිවැයට මිලදී ගැනීමේ ගාස්තුව ඇතුළත් වේ (FIFO). බදු වාර්තාව සඳහා, ඔබේ බදු අධිකාරිය නියම කරන විනිමය අනුපාතයට පරිවර්තනය කරන්න.';
 
   @override
+  String get portfolioShare => 'කාර්ය සාධනය බෙදාගන්න';
+
+  @override
+  String get portfolioShareHeading => 'මගේ කළඹ';
+
+  @override
+  String get portfolioTopHoldings => 'විශාලතම ස්ථාන';
+
+  @override
+  String get portfolioShareNote =>
+      'ප්‍රතිශත පමණක් බෙදාගැනේ, මුදල් ප්‍රමාණ නොවේ.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ස්ථාන $count',
+      one: 'ස්ථාන $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'ආයෝජන උපදෙසක් නොවේ';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

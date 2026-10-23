@@ -787,5 +787,11 @@
   "portfolioProceeds": "Lekeno la thekiso",
   "portfolioCostBasis": "Ditshenyehelo tsa ho reka",
   "portfolioFeesPaid": "Ditefello tse lefilweng",
-  "portfolioAnnualSummaryNote": "Dichelete di ka chelete ya pele, ha di a fetolwa. Lekeno la thekiso ke kamora ho tlosa tefello ya thekiso; ditshenyehelo tsa ho reka di kenyeletsa tefello ya theko (FIFO). Bakeng sa tlaleho ya hao ya lekgetho, fetola ka sekgahla sa phapanyetsano se hlokwang ke bolaodi ba lekgetho."
+  "portfolioAnnualSummaryNote": "Dichelete di ka chelete ya pele, ha di a fetolwa. Lekeno la thekiso ke kamora ho tlosa tefello ya thekiso; ditshenyehelo tsa ho reka di kenyeletsa tefello ya theko (FIFO). Bakeng sa tlaleho ya hao ya lekgetho, fetola ka sekgahla sa phapanyetsano se hlokwang ke bolaodi ba lekgetho.",
+  "portfolioShare": "Arolelana diphetho",
+  "portfolioShareHeading": "Potefolio ya ka",
+  "portfolioTopHoldings": "Dishere tse kgolo",
+  "portfolioShareNote": "Ho arolelanwa diphesente feela, ha ho dipalo tsa chelete.",
+  "portfolioPositionsCount": "{count, plural, one{Shere e le {count}} other{Dishere tse {count}}}",
+  "shareNotAdvice": "Hase keletso ya ho tsetela"
 }

@@ -2648,6 +2648,34 @@ class AppLocalizationsRu extends AppLocalizations {
       'Суммы в исходной валюте, без пересчёта. Выручка указана за вычетом комиссии при продаже; стоимость приобретения включает комиссию при покупке (FIFO). Для налоговой декларации пересчитайте по курсу, который требует ваша налоговая служба.';
 
   @override
+  String get portfolioShare => 'Поделиться доходностью';
+
+  @override
+  String get portfolioShareHeading => 'Мой портфель';
+
+  @override
+  String get portfolioTopHoldings => 'Крупнейшие позиции';
+
+  @override
+  String get portfolioShareNote => 'Передаются только проценты, без сумм.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count позиции',
+      many: '$count позиций',
+      few: '$count позиции',
+      one: '$count позиция',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Не инвестиционная рекомендация';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

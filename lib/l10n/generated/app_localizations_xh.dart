@@ -2592,6 +2592,33 @@ class AppLocalizationsXh extends AppLocalizations {
       'Izixa zikwimali yokuqala, aziguqulwanga. Ingeniso yokuthengisa sele kutsalwe ifizi yokuthengisa; iindleko zokuthenga ziquka ifizi yokuthenga (FIFO). Kwingxelo yakho yerhafu, guqula ngexabiso lotshintshiselwano elifunwa ligunya lerhafu.';
 
   @override
+  String get portfolioShare => 'Yabelana ngeziphumo';
+
+  @override
+  String get portfolioShareHeading => 'Ipotifoliyo yam';
+
+  @override
+  String get portfolioTopHoldings => 'Iipozishini ezinkulu';
+
+  @override
+  String get portfolioShareNote =>
+      'Kwabelwana ngeepesenti kuphela, hayi ngezixa zemali.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Iipozishini ezi-$count',
+      one: 'Ipozishini e-$count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ayilocebiso lotyalo-mali';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

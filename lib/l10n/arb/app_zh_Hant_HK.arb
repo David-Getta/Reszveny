@@ -787,5 +787,11 @@
   "portfolioProceeds": "出售所得",
   "portfolioCostBasis": "購入成本",
   "portfolioFeesPaid": "已付佣金",
-  "portfolioAnnualSummaryNote": "金額以原貨幣列示，未經換算。出售所得已扣除賣出佣金；購入成本已包括買入佣金（FIFO）。報稅時請按稅務機關要求的匯率換算。"
+  "portfolioAnnualSummaryNote": "金額以原貨幣列示，未經換算。出售所得已扣除賣出佣金；購入成本已包括買入佣金（FIFO）。報稅時請按稅務機關要求的匯率換算。",
+  "portfolioShare": "分享投資表現",
+  "portfolioShareHeading": "我的投資組合",
+  "portfolioTopHoldings": "最大持倉",
+  "portfolioShareNote": "只分享百分比，不包括金額。",
+  "portfolioPositionsCount": "{count, plural, other{{count} 個持倉}}",
+  "shareNotAdvice": "並不構成投資建議"
 }

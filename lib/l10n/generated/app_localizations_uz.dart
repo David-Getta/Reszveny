@@ -2585,6 +2585,32 @@ class AppLocalizationsUz extends AppLocalizations {
       'Summalar asl valyutada, konvertatsiya qilinmagan. Sotuvdan tushumdan sotish komissiyasi chegirilgan; sotib olish qiymatiga xarid komissiyasi kiradi (FIFO). Soliq deklaratsiyasi uchun soliq organingiz talab qiladigan valyuta kursida konvertatsiya qiling.';
 
   @override
+  String get portfolioShare => 'Natijani ulashish';
+
+  @override
+  String get portfolioShareHeading => 'Mening portfelim';
+
+  @override
+  String get portfolioTopHoldings => 'Eng yirik pozitsiyalar';
+
+  @override
+  String get portfolioShareNote => 'Faqat foizlar ulashiladi, summalar emas.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta pozitsiya',
+      one: '$count ta pozitsiya',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Investitsiya maslahati emas';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

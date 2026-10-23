@@ -787,5 +787,11 @@
   "portfolioProceeds": "Ngalu yeeyugol",
   "portfolioCostBasis": "Coggu soodgol",
   "portfolioFeesPaid": "Njoɓdi yoɓaandi",
-  "portfolioAnnualSummaryNote": "Keeweele ina e kaalis iniwal, waylaaka. Ngalu yeeyugol ittaama njoɓdi yeeyugol; coggu soodgol ina waɗi njoɓdi soodgol (FIFO). Ngam deftere lempo maa, waylu e coggu beccol ngol lamu lempo maa naamni."
+  "portfolioAnnualSummaryNote": "Keeweele ina e kaalis iniwal, waylaaka. Ngalu yeeyugol ittaama njoɓdi yeeyugol; coggu soodgol ina waɗi njoɓdi soodgol (FIFO). Ngam deftere lempo maa, waylu e coggu beccol ngol lamu lempo maa naamni.",
+  "portfolioShare": "Lollin nafoore/bonannde",
+  "portfolioShareHeading": "Aksiyoŋ am",
+  "portfolioTopHoldings": "Aksiyonji ɓurɗi mawnude",
+  "portfolioShareNote": "Pursantaasji tan, keeweele alaa.",
+  "portfolioPositionsCount": "{count, plural, =1{Aksiyoŋ 1} other{Aksiyonji {count}}}",
+  "shareNotAdvice": "Wonaa wasiya e investisman"
 }

@@ -2649,6 +2649,34 @@ class AppLocalizationsUk extends AppLocalizations {
       'Суми у вихідній валюті, без перерахунку. Дохід від продажу вказано за вирахуванням комісії при продажу; вартість придбання включає комісію при купівлі (FIFO). Для податкової декларації перерахуйте за курсом, якого вимагає ваша податкова служба.';
 
   @override
+  String get portfolioShare => 'Поділитися дохідністю';
+
+  @override
+  String get portfolioShareHeading => 'Мій портфель';
+
+  @override
+  String get portfolioTopHoldings => 'Найбільші позиції';
+
+  @override
+  String get portfolioShareNote => 'Передаються лише відсотки, без сум.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count позиції',
+      many: '$count позицій',
+      few: '$count позиції',
+      one: '$count позиція',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Не інвестиційна порада';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

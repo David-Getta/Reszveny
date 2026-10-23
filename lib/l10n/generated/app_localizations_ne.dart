@@ -2579,6 +2579,32 @@ class AppLocalizationsNe extends AppLocalizations {
       'रकमहरू मूल मुद्रामा, रूपान्तरण नगरिएको। बिक्री आम्दानीबाट बिक्री शुल्क घटाइएको छ; खरिद लागतमा खरिद शुल्क समावेश छ (FIFO)। कर विवरणका लागि, आफ्नो कर कार्यालयले तोकेको विनिमय दरमा रूपान्तरण गर्नुहोस्।';
 
   @override
+  String get portfolioShare => 'प्रदर्शन सेयर गर्नुहोस्';
+
+  @override
+  String get portfolioShareHeading => 'मेरो पोर्टफोलियो';
+
+  @override
+  String get portfolioTopHoldings => 'सबैभन्दा ठूला पोजिसनहरू';
+
+  @override
+  String get portfolioShareNote => 'प्रतिशत मात्र सेयर गरिन्छ, रकम होइन।';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count पोजिसन',
+      one: '$count पोजिसन',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'लगानी सल्लाह होइन';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

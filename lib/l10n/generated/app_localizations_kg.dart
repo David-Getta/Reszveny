@@ -2589,6 +2589,33 @@ class AppLocalizationsKg extends AppLocalizations {
       'Mbongo kele na mbongo ya ntete, bo me balula yo ve. Bo me katula frè ya kuteka na mbongo ya kuteka; ntalu ya kusumba ke tula frè ya kusumba (FIFO). Sambu na mukanda ya mpaku, balula yo na ntalu ya nsobolo yina luyalu ya mpaku ya nge ke lomba.';
 
   @override
+  String get portfolioShare => 'Kabula mbakulu/mvidisu';
+
+  @override
+  String get portfolioShareHeading => 'Portefeuille na mono';
+
+  @override
+  String get portfolioTopHoldings => 'Ba position ya nene';
+
+  @override
+  String get portfolioShareNote =>
+      'Bo ke kabula kaka ba pourcentage, ve ba mbongo.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bitini $count',
+      one: 'Kitini 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ka malongi ma kutula mbongo ko';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

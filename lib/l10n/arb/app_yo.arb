@@ -787,5 +787,11 @@
   "portfolioProceeds": "Owó tí o rí nínú títà",
   "portfolioCostBasis": "Iye owó ìrajà",
   "portfolioFeesPaid": "Owó iṣẹ́ tí o san",
-  "portfolioAnnualSummaryNote": "Owó wà nínú owó àkọ́kọ́, a kò yí i padà. A ti yọ owó iṣẹ́ títà kúrò nínú owó títà; iye owó ìrajà ní owó iṣẹ́ ìrajà nínú (FIFO). Fún ìfisùn owó-orí rẹ, yí i padà ní ìwọ̀n pàṣípààrọ̀ tí àjọ owó-orí rẹ béèrè."
+  "portfolioAnnualSummaryNote": "Owó wà nínú owó àkọ́kọ́, a kò yí i padà. A ti yọ owó iṣẹ́ títà kúrò nínú owó títà; iye owó ìrajà ní owó iṣẹ́ ìrajà nínú (FIFO). Fún ìfisùn owó-orí rẹ, yí i padà ní ìwọ̀n pàṣípààrọ̀ tí àjọ owó-orí rẹ béèrè.",
+  "portfolioShare": "Pín àbájáde ìdókòwò",
+  "portfolioShareHeading": "Àpò ìdókòwò mi",
+  "portfolioTopHoldings": "Àwọn ohun ìní tó tóbi jù",
+  "portfolioShareNote": "Ìdá nínú ọgọ́rùn-ún nìkan la ń pín, kò sí iye owó.",
+  "portfolioPositionsCount": "{count, plural, other{Ohun ìní {count}}}",
+  "shareNotAdvice": "Kì í ṣe ìmọ̀ràn ìdókòwò"
 }

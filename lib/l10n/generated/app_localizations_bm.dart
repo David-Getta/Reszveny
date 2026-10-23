@@ -2578,6 +2578,33 @@ class AppLocalizationsBm extends AppLocalizations {
       'Wari hakɛw bɛ wari fɔlɔ la, u ma falen. Feereli sara bɔlen don feereli wari la; sanni sara bɛ sanni sɔngɔ la (FIFO). I ka nisɔngɔ dantigɛli kama, u falen ni wari falen sɔngɔ ye min i ka nisɔngɔ ɲɛmɔgɔw b\'a fɛ.';
 
   @override
+  String get portfolioShare => 'Tɔnɔ/bɔnɛ jɛnsɛn';
+
+  @override
+  String get portfolioShareHeading => 'N ka aksiyɔn kɛsu';
+
+  @override
+  String get portfolioTopHoldings => 'Aksiyɔn belebelebaw';
+
+  @override
+  String get portfolioShareNote =>
+      'Pursantaziw dɔrɔn de bɛ jɛnsɛn, wari hakɛw tɛ.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aksiyɔn $count',
+      one: 'Aksiyɔn 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Wari donni ladilikan tɛ';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

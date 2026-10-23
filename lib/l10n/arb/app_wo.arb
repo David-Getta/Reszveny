@@ -787,5 +787,11 @@
   "portfolioProceeds": "Xaalisu jaay",
   "portfolioCostBasis": "Njëgu jënd",
   "portfolioFeesPaid": "Peyu liggéey yi ñu fey",
-  "portfolioAnnualSummaryNote": "Xaalis yi ci xaalis bu njëkk bi lañu, ñu soppiwuñu leen. Xaalisu jaay bi, dañu ci génne peyu liggéeyu jaay bi; njëgu jënd bi boole na ci peyu liggéeyu jënd bi (FIFO). Ngir sa déclaration lempo, soppil ko ci njëgu weccit xaalis bi biro lempo bi laaj."
+  "portfolioAnnualSummaryNote": "Xaalis yi ci xaalis bu njëkk bi lañu, ñu soppiwuñu leen. Xaalisu jaay bi, dañu ci génne peyu liggéeyu jaay bi; njëgu jënd bi boole na ci peyu liggéeyu jënd bi (FIFO). Ngir sa déclaration lempo, soppil ko ci njëgu weccit xaalis bi biro lempo bi laaj.",
+  "portfolioShare": "Séddoo njureef yi",
+  "portfolioShareHeading": "Sama aksiyoŋ yi",
+  "portfolioTopHoldings": "Aksiyoŋ yi gëna mag",
+  "portfolioShareNote": "Ay pursaŋ rekk lañuy séddoo, amul lim xaalis.",
+  "portfolioPositionsCount": "{count, plural, other{{count} aksiyoŋ}}",
+  "shareNotAdvice": "Du ndigal ci dugal xaalis"
 }

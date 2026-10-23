@@ -787,5 +787,11 @@
   "portfolioProceeds": "Amafaranga yavuye mu igurisha",
   "portfolioCostBasis": "Igiciro cy'ibyaguzwe",
   "portfolioFeesPaid": "Komisiyo zishyuwe",
-  "portfolioAnnualSummaryNote": "Amafaranga ari mu ifaranga ry'umwimerere, ntiyahinduwe. Amafaranga yavuye mu igurisha yakuweho komisiyo yo kugurisha; igiciro cy'ibyaguzwe kirimo komisiyo yo kugura (FIFO). Ku imenyekanisha ry'umusoro, hindura ku gipimo cy'ivunjisha gisabwa n'ikigo cy'imisoro."
+  "portfolioAnnualSummaryNote": "Amafaranga ari mu ifaranga ry'umwimerere, ntiyahinduwe. Amafaranga yavuye mu igurisha yakuweho komisiyo yo kugurisha; igiciro cy'ibyaguzwe kirimo komisiyo yo kugura (FIFO). Ku imenyekanisha ry'umusoro, hindura ku gipimo cy'ivunjisha gisabwa n'ikigo cy'imisoro.",
+  "portfolioShare": "Sangiza ibyavuyemo",
+  "portfolioShareHeading": "Ishoramari ryanjye",
+  "portfolioTopHoldings": "Imigabane minini",
+  "portfolioShareNote": "Hasangizwa ijanisha gusa, nta mafaranga agaragara.",
+  "portfolioPositionsCount": "{count, plural, one{Umugabane {count}} other{Imigabane {count}}}",
+  "shareNotAdvice": "Si inama yo gushora imari"
 }

@@ -2641,6 +2641,34 @@ class AppLocalizationsCs extends AppLocalizations {
       'Částky v původní měně, bez přepočtu. Příjmy z prodeje jsou po odečtení poplatku za prodej; nabývací cena zahrnuje poplatek za nákup (FIFO). Pro daňové přiznání je přepočtěte kurzem, který vyžaduje váš finanční úřad.';
 
   @override
+  String get portfolioShare => 'Sdílet výkonnost';
+
+  @override
+  String get portfolioShareHeading => 'Moje portfolio';
+
+  @override
+  String get portfolioTopHoldings => 'Největší pozice';
+
+  @override
+  String get portfolioShareNote => 'Sdílejí se jen procenta, žádné částky.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozic',
+      many: '$count pozice',
+      few: '$count pozice',
+      one: '1 pozice',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Nejde o investiční doporučení';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

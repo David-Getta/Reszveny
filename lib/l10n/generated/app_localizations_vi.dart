@@ -2574,6 +2574,32 @@ class AppLocalizationsVi extends AppLocalizations {
       'Số tiền theo đồng tiền gốc, không quy đổi. Tiền thu từ bán đã trừ phí bán; giá vốn đã gồm phí mua (FIFO). Khi khai thuế, hãy quy đổi theo tỷ giá mà cơ quan thuế yêu cầu.';
 
   @override
+  String get portfolioShare => 'Chia sẻ hiệu suất';
+
+  @override
+  String get portfolioShareHeading => 'Danh mục của tôi';
+
+  @override
+  String get portfolioTopHoldings => 'Vị thế lớn nhất';
+
+  @override
+  String get portfolioShareNote =>
+      'Chỉ chia sẻ tỷ lệ phần trăm, không có số tiền.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vị thế',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Không phải lời khuyên đầu tư';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

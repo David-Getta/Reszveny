@@ -2624,6 +2624,33 @@ class AppLocalizationsBs extends AppLocalizations {
       'Iznosi su u originalnoj valuti, nisu preračunati. Prihod od prodaje umanjen je za proviziju pri prodaji; nabavna vrijednost uključuje proviziju pri kupovini (FIFO). Za poresku prijavu preračunajte po kursu koji zahtijeva vaša poreska uprava.';
 
   @override
+  String get portfolioShare => 'Podijeli rezultate';
+
+  @override
+  String get portfolioShareHeading => 'Moj portfolio';
+
+  @override
+  String get portfolioTopHoldings => 'Najveće pozicije';
+
+  @override
+  String get portfolioShareNote => 'Dijele se samo procenti, bez iznosa.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozicija',
+      few: '$count pozicije',
+      one: '$count pozicija',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Nije investicijski savjet';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

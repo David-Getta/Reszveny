@@ -787,5 +787,11 @@
   "portfolioProceeds": "Vrednost ob odsvojitvi",
   "portfolioCostBasis": "Nabavna vrednost",
   "portfolioFeesPaid": "Plačane provizije",
-  "portfolioAnnualSummaryNote": "Zneski v izvirni valuti, brez preračuna. Vrednost ob odsvojitvi je zmanjšana za provizijo pri prodaji; nabavna vrednost vključuje provizijo pri nakupu (FIFO). Za davčno napoved preračunajte po tečaju, ki ga zahteva vaš davčni organ."
+  "portfolioAnnualSummaryNote": "Zneski v izvirni valuti, brez preračuna. Vrednost ob odsvojitvi je zmanjšana za provizijo pri prodaji; nabavna vrednost vključuje provizijo pri nakupu (FIFO). Za davčno napoved preračunajte po tečaju, ki ga zahteva vaš davčni organ.",
+  "portfolioShare": "Deli donosnost",
+  "portfolioShareHeading": "Moj portfelj",
+  "portfolioTopHoldings": "Največje pozicije",
+  "portfolioShareNote": "Delijo se samo odstotki, brez zneskov.",
+  "portfolioPositionsCount": "{count, plural, one{{count} pozicija} two{{count} poziciji} few{{count} pozicije} other{{count} pozicij}}",
+  "shareNotAdvice": "Ni naložbeni nasvet"
 }

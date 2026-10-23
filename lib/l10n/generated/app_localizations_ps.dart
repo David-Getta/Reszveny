@@ -2572,6 +2572,32 @@ class AppLocalizationsPs extends AppLocalizations {
       'اندازې په اصلي اسعارو دي، نه دي اړول شوې. د پلور عاید د پلور فیس ترې کم شوی؛ د پېرود لګښت د پېرود فیس هم پکې شامل دی (FIFO). د مالیې د اظهارنامې لپاره، د اسعارو په هغه نرخ یې واړوئ چې ستاسو د مالیې اداره یې غواړي.';
 
   @override
+  String get portfolioShare => 'کارکردګي شریک کړئ';
+
+  @override
+  String get portfolioShareHeading => 'زما پورټفولیو';
+
+  @override
+  String get portfolioTopHoldings => 'تر ټولو لوی پوزیشنونه';
+
+  @override
+  String get portfolioShareNote => 'یوازې سلنې شریکېږي، مقدارونه نه.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پوزیشنونه',
+      one: '$count پوزیشن',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'د پانګونې مشوره نه ده';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

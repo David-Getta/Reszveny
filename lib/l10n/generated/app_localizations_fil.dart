@@ -2588,6 +2588,33 @@ class AppLocalizationsFil extends AppLocalizations {
       'Mga halaga sa orihinal na currency, hindi naka-convert. Bawas na sa kita sa pagbenta ang komisyon sa pagbenta; kasama sa halaga ng pagbili ang komisyon sa pagbili (FIFO). Para sa iyong tax return, i-convert sa exchange rate na hinihingi ng iyong tax authority.';
 
   @override
+  String get portfolioShare => 'Ibahagi ang performance';
+
+  @override
+  String get portfolioShareHeading => 'Aking portfolio';
+
+  @override
+  String get portfolioTopHoldings => 'Pinakamalalaking posisyon';
+
+  @override
+  String get portfolioShareNote =>
+      'Porsyento lang ang ibinabahagi, walang halaga.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posisyon',
+      one: '1 posisyon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Hindi payo sa pamumuhunan';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

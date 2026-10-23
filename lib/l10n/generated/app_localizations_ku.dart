@@ -2582,6 +2582,33 @@ class AppLocalizationsKu extends AppLocalizations {
       'Mîqdar bi diravê eslî ne, nehatine veguhertin. Dahata firotinê piştî derxistina komîsyona firotinê ye; lêçûna kirînê komîsyona kirînê dihewîne (FIFO). Ji bo daxuyaniya bacê, bi rêjeya danûstandinê ya ku rayedarê bacê dixwaze veguherîne.';
 
   @override
+  String get portfolioShare => 'Encaman parve bike';
+
+  @override
+  String get portfolioShareHeading => 'Portfolyoya min';
+
+  @override
+  String get portfolioTopHoldings => 'Pozîsyonên herî mezin';
+
+  @override
+  String get portfolioShareNote =>
+      'Tenê rêjeyên sedî tên parvekirin, ne mîqdar.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozîsyon',
+      one: '1 pozîsyon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ne şîreta veberhênanê ye';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

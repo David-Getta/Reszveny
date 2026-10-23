@@ -787,5 +787,11 @@
   "portfolioProceeds": "Ndalama zogulitsa",
   "portfolioCostBasis": "Mtengo wogulira",
   "portfolioFeesPaid": "Zolipiritsa zolipidwa",
-  "portfolioAnnualSummaryNote": "Ndalama zili mu ndalama yoyambirira, sizinasinthidwe. Ndalama zogulitsa zachotsedwa zolipiritsa zogulitsa; mtengo wogulira ukuphatikiza zolipiritsa zogulira (FIFO). Pa msonkho wanu, sinthani pa mtengo wosinthira ndalama umene bungwe la msonkho likufuna."
+  "portfolioAnnualSummaryNote": "Ndalama zili mu ndalama yoyambirira, sizinasinthidwe. Ndalama zogulitsa zachotsedwa zolipiritsa zogulitsa; mtengo wogulira ukuphatikiza zolipiritsa zogulira (FIFO). Pa msonkho wanu, sinthani pa mtengo wosinthira ndalama umene bungwe la msonkho likufuna.",
+  "portfolioShare": "Gawani zotsatira",
+  "portfolioShareHeading": "Masheya anga",
+  "portfolioTopHoldings": "Masheya akuluakulu",
+  "portfolioShareNote": "Maperesenti okha ndi omwe amagawidwa, osati ndalama.",
+  "portfolioPositionsCount": "{count, plural, one{Sheya {count}} other{Masheya {count}}}",
+  "shareNotAdvice": "Si malangizo okhudza kuyika ndalama"
 }

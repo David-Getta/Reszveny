@@ -2587,6 +2587,33 @@ class AppLocalizationsSn extends AppLocalizations {
       'Mari iri mumari yepakutanga, haina kushandurwa. Mari yezvatengeswa yabviswa mubhadharo wekutengesa; mutengo wekutenga unosanganisira mubhadharo wekutenga (FIFO). Pamushumo wako wemutero, shandura nemutengo wekuchinjana mari unodiwa nevakuru vemutero.';
 
   @override
+  String get portfolioShare => 'Govera mhedzisiro';
+
+  @override
+  String get portfolioShareHeading => 'Potiforiyo yangu';
+
+  @override
+  String get portfolioTopHoldings => 'Masheya makuru';
+
+  @override
+  String get portfolioShareNote =>
+      'Mapesenti chete ndiwo anogoverwa, kwete mari.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Masheya $count',
+      one: 'Sheya $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Haisi zano rekuisa mari';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

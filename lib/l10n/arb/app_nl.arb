@@ -787,5 +787,11 @@
   "portfolioProceeds": "Verkoopopbrengst",
   "portfolioCostBasis": "Verkrijgingsprijs",
   "portfolioFeesPaid": "Betaalde transactiekosten",
-  "portfolioAnnualSummaryNote": "Bedragen in de oorspronkelijke valuta, niet omgerekend. De opbrengst is na aftrek van de transactiekosten bij verkoop; de verkrijgingsprijs is inclusief de transactiekosten bij aankoop (FIFO). Reken voor je belastingaangifte om tegen de wisselkoers die je belastingdienst voorschrijft."
+  "portfolioAnnualSummaryNote": "Bedragen in de oorspronkelijke valuta, niet omgerekend. De opbrengst is na aftrek van de transactiekosten bij verkoop; de verkrijgingsprijs is inclusief de transactiekosten bij aankoop (FIFO). Reken voor je belastingaangifte om tegen de wisselkoers die je belastingdienst voorschrijft.",
+  "portfolioShare": "Rendement delen",
+  "portfolioShareHeading": "Mijn portefeuille",
+  "portfolioTopHoldings": "Grootste posities",
+  "portfolioShareNote": "Alleen percentages worden gedeeld, geen bedragen.",
+  "portfolioPositionsCount": "{count, plural, one{{count} positie} other{{count} posities}}",
+  "shareNotAdvice": "Geen beleggingsadvies"
 }

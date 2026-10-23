@@ -2591,6 +2591,33 @@ class AppLocalizationsTa extends AppLocalizations {
       'தொகைகள் அசல் நாணயத்தில், மாற்றப்படவில்லை. விற்பனைத் தொகையில் விற்பனைக் கட்டணம் கழிக்கப்பட்டுள்ளது; கொள்முதல் செலவில் கொள்முதல் கட்டணம் அடங்கும் (FIFO). வரி தாக்கலுக்கு, உங்கள் வரித் துறை கோரும் மாற்று விகிதத்தில் மாற்றவும்.';
 
   @override
+  String get portfolioShare => 'செயல்திறனைப் பகிர்';
+
+  @override
+  String get portfolioShareHeading => 'எனது போர்ட்ஃபோலியோ';
+
+  @override
+  String get portfolioTopHoldings => 'மிகப் பெரிய நிலைகள்';
+
+  @override
+  String get portfolioShareNote =>
+      'சதவீதங்கள் மட்டுமே பகிரப்படும், தொகைகள் அல்ல.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count நிலைகள்',
+      one: '$count நிலை',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'முதலீட்டு ஆலோசனை அல்ல';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

@@ -2578,6 +2578,33 @@ class AppLocalizationsHt extends AppLocalizations {
       'Montan yo nan lajan orijinal la, yo pa konvèti. Revni lavant yo se apre komisyon lavant lan retire; pri acha a gen ladan l komisyon acha a (FIFO). Pou deklarasyon taks ou, konvèti yo nan to chanj otorite taks ou egzije a.';
 
   @override
+  String get portfolioShare => 'Pataje pèfòmans lan';
+
+  @override
+  String get portfolioShareHeading => 'Pòtfèy mwen';
+
+  @override
+  String get portfolioTopHoldings => 'Pi gwo pozisyon yo';
+
+  @override
+  String get portfolioShareNote =>
+      'Se sèlman pousantaj yo ki pataje, pa gen montan.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozisyon',
+      one: '1 pozisyon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Se pa yon konsèy envestisman';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

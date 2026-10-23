@@ -787,5 +787,11 @@
   "portfolioProceeds": "卖出收入",
   "portfolioCostBasis": "取得成本",
   "portfolioFeesPaid": "已付手续费",
-  "portfolioAnnualSummaryNote": "金额为原币种，未经换算。卖出收入已扣除卖出手续费；取得成本含买入手续费（FIFO）。报税时请按税务机关要求的汇率换算。"
+  "portfolioAnnualSummaryNote": "金额为原币种，未经换算。卖出收入已扣除卖出手续费；取得成本含买入手续费（FIFO）。报税时请按税务机关要求的汇率换算。",
+  "portfolioShare": "分享投资表现",
+  "portfolioShareHeading": "我的投资组合",
+  "portfolioTopHoldings": "最大持仓",
+  "portfolioShareNote": "仅分享百分比，不含金额。",
+  "portfolioPositionsCount": "{count, plural, other{{count} 个持仓}}",
+  "shareNotAdvice": "不构成投资建议"
 }

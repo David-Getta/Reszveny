@@ -2585,6 +2585,32 @@ class AppLocalizationsSu extends AppLocalizations {
       'Jumlah dina mata uang asli, teu dikonvérsi. Hasil penjualan parantos dikirangan biaya penjualan; harga perolehan kalebet biaya pameulian (FIFO). Kanggo laporan pajeg, konvérsi nganggo kurs anu diwajibkeun ku otoritas pajeg anjeun.';
 
   @override
+  String get portfolioShare => 'Bagikeun kinerja';
+
+  @override
+  String get portfolioShareHeading => 'Portofolio abdi';
+
+  @override
+  String get portfolioTopHoldings => 'Posisi panggedéna';
+
+  @override
+  String get portfolioShareNote =>
+      'Ngan persentase nu dibagikeun, tanpa jumlah.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posisi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Lain naséhat investasi';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

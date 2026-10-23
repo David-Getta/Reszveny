@@ -787,5 +787,11 @@
   "portfolioProceeds": "Przychód ze sprzedaży",
   "portfolioCostBasis": "Koszt nabycia",
   "portfolioFeesPaid": "Zapłacone prowizje",
-  "portfolioAnnualSummaryNote": "Kwoty w walucie oryginalnej, bez przeliczenia. Przychód jest pomniejszony o prowizję od sprzedaży; koszt nabycia obejmuje prowizję od zakupu (FIFO). Do zeznania podatkowego przelicz po kursie wymaganym przez urząd skarbowy."
+  "portfolioAnnualSummaryNote": "Kwoty w walucie oryginalnej, bez przeliczenia. Przychód jest pomniejszony o prowizję od sprzedaży; koszt nabycia obejmuje prowizję od zakupu (FIFO). Do zeznania podatkowego przelicz po kursie wymaganym przez urząd skarbowy.",
+  "portfolioShare": "Udostępnij wyniki",
+  "portfolioShareHeading": "Mój portfel",
+  "portfolioTopHoldings": "Największe pozycje",
+  "portfolioShareNote": "Udostępniane są tylko wartości procentowe, bez kwot.",
+  "portfolioPositionsCount": "{count, plural, one{{count} pozycja} few{{count} pozycje} many{{count} pozycji} other{{count} pozycji}}",
+  "shareNotAdvice": "Nie stanowi porady inwestycyjnej"
 }

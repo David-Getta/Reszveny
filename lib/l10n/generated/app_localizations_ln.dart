@@ -2591,6 +2591,33 @@ class AppLocalizationsLn extends AppLocalizations {
       'Mbongo ezali na mbongo ya ebandeli, ebongolami te. Mbongo ya boteki elongolami frais ya boteki; ntalo ya bosombi ezali na frais ya bosombi (FIFO). Mpo na déclaration ya mpako na yo, bongola yango na motuya ya mbongo oyo bakonzi ya mpako basɛngaka.';
 
   @override
+  String get portfolioShare => 'Kabola litomba/bobungisi';
+
+  @override
+  String get portfolioShareHeading => 'Portefeuille na ngai';
+
+  @override
+  String get portfolioTopHoldings => 'Ba-position ya minene';
+
+  @override
+  String get portfolioShareNote =>
+      'Ba-pourcentage kaka nde ekabolamaka, mbongo te.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Biteni $count',
+      one: 'Eteni 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ezali toli ya kotia mbɔngɔ te';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

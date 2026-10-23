@@ -2585,6 +2585,33 @@ class AppLocalizationsGn extends AppLocalizations {
       'Pira pire oĩ viru ypykuépe, noñemoambuéi. Ñemu repýgui oñenohẽma ñemu comisión; jejogua repy oguereko jejogua comisión (FIFO). Ne declaración de impuestos-rã, emoambue pe cambio repýpe ojeruréva nde impuesto mburuvicha.';
 
   @override
+  String get portfolioShare => 'Emoherakuã rendimiento';
+
+  @override
+  String get portfolioShareHeading => 'Che cartera';
+
+  @override
+  String get portfolioTopHoldings => 'Ereguerekóva tuichavéva';
+
+  @override
+  String get portfolioShareNote =>
+      'Porcentaje añoite oñemoherakuã, ndahaʼéi pira pire.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ereguerekóva',
+      one: '1 ereguerekóva',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ndahaʼéi ñemoñeʼẽ inversión rehegua';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

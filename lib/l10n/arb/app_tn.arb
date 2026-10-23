@@ -787,5 +787,11 @@
   "portfolioProceeds": "Letseno la thekiso",
   "portfolioCostBasis": "Ditshenyegelo tsa go reka",
   "portfolioFeesPaid": "Dituelo tse di duetsweng",
-  "portfolioAnnualSummaryNote": "Madi a mo mading a ntlha, ga a a fetolwa. Letseno la thekiso ke morago ga go ntsha tuelo ya thekiso; ditshenyegelo tsa go reka di akaretsa tuelo ya theko (FIFO). Go tlhagisa lekgetho la gago, fetola ka tlhwatlhwa ya phetolo e bothati jwa lekgetho bo e tlhokang."
+  "portfolioAnnualSummaryNote": "Madi a mo mading a ntlha, ga a a fetolwa. Letseno la thekiso ke morago ga go ntsha tuelo ya thekiso; ditshenyegelo tsa go reka di akaretsa tuelo ya theko (FIFO). Go tlhagisa lekgetho la gago, fetola ka tlhwatlhwa ya phetolo e bothati jwa lekgetho bo e tlhokang.",
+  "portfolioShare": "Abelana dipoelo",
+  "portfolioShareHeading": "Potefolio ya me",
+  "portfolioTopHoldings": "Dishere tse dikgolo",
+  "portfolioShareNote": "Go abelanwa diperesente fela, e seng madi.",
+  "portfolioPositionsCount": "{count, plural, one{Shere e le {count}} other{Dishere di le {count}}}",
+  "shareNotAdvice": "Ga se kgakololo ya peeletso"
 }

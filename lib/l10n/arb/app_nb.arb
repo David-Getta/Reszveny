@@ -787,5 +787,11 @@
   "portfolioProceeds": "Salgsvederlag",
   "portfolioCostBasis": "Inngangsverdi",
   "portfolioFeesPaid": "Betalt kurtasje",
-  "portfolioAnnualSummaryNote": "Beløp i opprinnelig valuta, ikke omregnet. Salgsvederlaget er fratrukket kurtasje ved salg; inngangsverdien inkluderer kurtasje ved kjøp (FIFO). Til skattemeldingen må du regne om etter valutakursen skattemyndighetene krever."
+  "portfolioAnnualSummaryNote": "Beløp i opprinnelig valuta, ikke omregnet. Salgsvederlaget er fratrukket kurtasje ved salg; inngangsverdien inkluderer kurtasje ved kjøp (FIFO). Til skattemeldingen må du regne om etter valutakursen skattemyndighetene krever.",
+  "portfolioShare": "Del avkastningen",
+  "portfolioShareHeading": "Min portefølje",
+  "portfolioTopHoldings": "Største beholdninger",
+  "portfolioShareNote": "Kun prosenter deles, ingen beløp.",
+  "portfolioPositionsCount": "{count, plural, one{{count} beholdning} other{{count} beholdninger}}",
+  "shareNotAdvice": "Ikke investeringsråd"
 }

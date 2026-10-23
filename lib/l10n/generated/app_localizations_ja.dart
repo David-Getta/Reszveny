@@ -2501,6 +2501,32 @@ class AppLocalizationsJa extends AppLocalizations {
       '金額は換算前の元の通貨で表示しています。譲渡収入は売却手数料を差し引いた額、取得費は購入手数料を含む額です（FIFO）。確定申告では、税務当局が定める為替レートで換算してください。';
 
   @override
+  String get portfolioShare => '運用成績を共有';
+
+  @override
+  String get portfolioShareHeading => 'マイポートフォリオ';
+
+  @override
+  String get portfolioTopHoldings => '上位銘柄';
+
+  @override
+  String get portfolioShareNote => '共有されるのは割合（%）のみで、金額は含まれません。';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 銘柄',
+      one: '1 銘柄',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => '投資助言ではありません';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

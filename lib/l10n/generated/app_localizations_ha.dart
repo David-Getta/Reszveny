@@ -2586,6 +2586,33 @@ class AppLocalizationsHa extends AppLocalizations {
       'Adadin suna a asalin kuɗin, ba a canza su ba. An cire kuɗin dillali na sayarwa daga kuɗin sayarwa; kuɗin saye ya haɗa da kuɗin dillali na saye (FIFO). Don bayanin harajinka, canza su a farashin musaya da hukumar harajinka ke buƙata.';
 
   @override
+  String get portfolioShare => 'Raba sakamako';
+
+  @override
+  String get portfolioShareHeading => 'Jakar hannun jarina';
+
+  @override
+  String get portfolioTopHoldings => 'Manyan matsayi';
+
+  @override
+  String get portfolioShareNote =>
+      'Kashi cikin ɗari kawai ake rabawa, ba adadin kuɗi ba.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hannayen jari $count',
+      one: 'Hannun jari 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ba shawarar zuba jari ba ne';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

@@ -2579,6 +2579,32 @@ class AppLocalizationsMr extends AppLocalizations {
       'रकमा मूळ चलनात, रूपांतरित न करता. विक्री उत्पन्नातून विक्री शुल्क वजा केले आहे; संपादन खर्चात खरेदी शुल्क समाविष्ट आहे (FIFO). कर विवरणपत्रासाठी, तुमच्या कर विभागाने ठरवलेल्या विनिमय दराने रूपांतरित करा.';
 
   @override
+  String get portfolioShare => 'कामगिरी शेअर करा';
+
+  @override
+  String get portfolioShareHeading => 'माझा पोर्टफोलिओ';
+
+  @override
+  String get portfolioTopHoldings => 'सर्वांत मोठ्या पोझिशन्स';
+
+  @override
+  String get portfolioShareNote => 'फक्त टक्केवारी शेअर होते, रक्कम नाही.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count पोझिशन्स',
+      one: '$count पोझिशन',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'गुंतवणूक सल्ला नाही';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

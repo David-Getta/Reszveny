@@ -787,5 +787,11 @@
   "portfolioProceeds": "Adetɔn mu sika",
   "portfolioCostBasis": "Adetɔ ka",
   "portfolioFeesPaid": "Akatua a wotuae",
-  "portfolioAnnualSummaryNote": "Sika dodow no wɔ sika a edi kan no mu, wɔnsesaa no. Wɔayi adetɔn akatua no afi adetɔn mu sika no mu; adetɔ ka no ka adetɔ akatua no ho (FIFO). Ma wo tow ho nsɛm, sesa no wɔ sika sesa bo a wo tow adwumakuw hwehwɛ no so."
+  "portfolioAnnualSummaryNote": "Sika dodow no wɔ sika a edi kan no mu, wɔnsesaa no. Wɔayi adetɔn akatua no afi adetɔn mu sika no mu; adetɔ ka no ka adetɔ akatua no ho (FIFO). Ma wo tow ho nsɛm, sesa no wɔ sika sesa bo a wo tow adwumakuw hwehwɛ no so.",
+  "portfolioShare": "Kyɛ nkɔsoɔ",
+  "portfolioShareHeading": "Me nkyɛfa",
+  "portfolioTopHoldings": "Nkyɛfa a ɛsõ koraa",
+  "portfolioShareNote": "Ɔha mu nkyɛmu nko ara na wɔkyɛ, ɛnyɛ sika dodow.",
+  "portfolioPositionsCount": "{count, plural, =1{Kyɛfa 1} other{Nkyɛfa {count}}}",
+  "shareNotAdvice": "Ɛnyɛ sikahyɛmu ho afotu"
 }

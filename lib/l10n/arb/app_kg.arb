@@ -787,5 +787,11 @@
   "portfolioProceeds": "Mbongo ya kuteka",
   "portfolioCostBasis": "Ntalu ya kusumba",
   "portfolioFeesPaid": "Frè ya nge me futa",
-  "portfolioAnnualSummaryNote": "Mbongo kele na mbongo ya ntete, bo me balula yo ve. Bo me katula frè ya kuteka na mbongo ya kuteka; ntalu ya kusumba ke tula frè ya kusumba (FIFO). Sambu na mukanda ya mpaku, balula yo na ntalu ya nsobolo yina luyalu ya mpaku ya nge ke lomba."
+  "portfolioAnnualSummaryNote": "Mbongo kele na mbongo ya ntete, bo me balula yo ve. Bo me katula frè ya kuteka na mbongo ya kuteka; ntalu ya kusumba ke tula frè ya kusumba (FIFO). Sambu na mukanda ya mpaku, balula yo na ntalu ya nsobolo yina luyalu ya mpaku ya nge ke lomba.",
+  "portfolioShare": "Kabula mbakulu/mvidisu",
+  "portfolioShareHeading": "Portefeuille na mono",
+  "portfolioTopHoldings": "Ba position ya nene",
+  "portfolioShareNote": "Bo ke kabula kaka ba pourcentage, ve ba mbongo.",
+  "portfolioPositionsCount": "{count, plural, =1{Kitini 1} other{Bitini {count}}}",
+  "shareNotAdvice": "Ka malongi ma kutula mbongo ko"
 }

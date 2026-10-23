@@ -2586,6 +2586,33 @@ class AppLocalizationsTe extends AppLocalizations {
       'మొత్తాలు అసలు కరెన్సీలో ఉన్నాయి, మార్చబడలేదు. అమ్మకపు ఆదాయం నుండి అమ్మకపు రుసుము తీసివేయబడింది; కొనుగోలు వ్యయంలో కొనుగోలు రుసుము కలిసి ఉంది (FIFO). పన్ను రిటర్న్ కోసం, మీ పన్ను శాఖ కోరే మారకపు రేటులో మార్చండి.';
 
   @override
+  String get portfolioShare => 'పనితీరును షేర్ చేయండి';
+
+  @override
+  String get portfolioShareHeading => 'నా పోర్ట్‌ఫోలియో';
+
+  @override
+  String get portfolioTopHoldings => 'అతిపెద్ద పొజిషన్లు';
+
+  @override
+  String get portfolioShareNote =>
+      'శాతాలు మాత్రమే షేర్ అవుతాయి, మొత్తాలు కాదు.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count పొజిషన్లు',
+      one: '$count పొజిషన్',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'పెట్టుబడి సలహా కాదు';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

@@ -787,5 +787,11 @@
   "portfolioProceeds": "Pārdošanas ieņēmumi",
   "portfolioCostBasis": "Iegādes vērtība",
   "portfolioFeesPaid": "Samaksātā komisija",
-  "portfolioAnnualSummaryNote": "Summas sākotnējā valūtā, nepārrēķinātas. Pārdošanas ieņēmumi norādīti, atskaitot pārdošanas komisiju; iegādes vērtībā ietilpst pirkuma komisija (FIFO). Nodokļu deklarācijai pārrēķiniet pēc kursa, ko pieprasa jūsu nodokļu administrācija."
+  "portfolioAnnualSummaryNote": "Summas sākotnējā valūtā, nepārrēķinātas. Pārdošanas ieņēmumi norādīti, atskaitot pārdošanas komisiju; iegādes vērtībā ietilpst pirkuma komisija (FIFO). Nodokļu deklarācijai pārrēķiniet pēc kursa, ko pieprasa jūsu nodokļu administrācija.",
+  "portfolioShare": "Kopīgot rezultātus",
+  "portfolioShareHeading": "Mans portfelis",
+  "portfolioTopHoldings": "Lielākās pozīcijas",
+  "portfolioShareNote": "Tiek kopīgoti tikai procenti, bez summām.",
+  "portfolioPositionsCount": "{count, plural, zero{{count} pozīcijas} one{{count} pozīcija} other{{count} pozīcijas}}",
+  "shareNotAdvice": "Nav ieguldījumu konsultācija"
 }

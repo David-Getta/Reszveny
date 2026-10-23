@@ -787,5 +787,11 @@
   "portfolioProceeds": "譲渡収入",
   "portfolioCostBasis": "取得費",
   "portfolioFeesPaid": "支払手数料",
-  "portfolioAnnualSummaryNote": "金額は換算前の元の通貨で表示しています。譲渡収入は売却手数料を差し引いた額、取得費は購入手数料を含む額です（FIFO）。確定申告では、税務当局が定める為替レートで換算してください。"
+  "portfolioAnnualSummaryNote": "金額は換算前の元の通貨で表示しています。譲渡収入は売却手数料を差し引いた額、取得費は購入手数料を含む額です（FIFO）。確定申告では、税務当局が定める為替レートで換算してください。",
+  "portfolioShare": "運用成績を共有",
+  "portfolioShareHeading": "マイポートフォリオ",
+  "portfolioTopHoldings": "上位銘柄",
+  "portfolioShareNote": "共有されるのは割合（%）のみで、金額は含まれません。",
+  "portfolioPositionsCount": "{count, plural, =1{1 銘柄} other{{count} 銘柄}}",
+  "shareNotAdvice": "投資助言ではありません"
 }

@@ -2583,6 +2583,32 @@ class AppLocalizationsUg extends AppLocalizations {
       'سوممىلار ئەسلى پۇل بىرلىكىدە، ئايلاندۇرۇلمىغان. سېتىش كىرىمىدىن سېتىش رەسمىيەت ھەققى چىقىرىۋېتىلگەن؛ سېتىۋېلىش تەننەرخىگە سېتىۋېلىش رەسمىيەت ھەققى كىرىدۇ (FIFO). باج دوكلاتى ئۈچۈن، باج ئورگىنىڭىز تەلەپ قىلغان پېرېۋوت نىسبىتى بويىچە ئايلاندۇرۇڭ.';
 
   @override
+  String get portfolioShare => 'نەتىجىنى ھەمبەھىرلەش';
+
+  @override
+  String get portfolioShareHeading => 'مەبلەغ بىرىكمەم';
+
+  @override
+  String get portfolioTopHoldings => 'ئەڭ چوڭ پايلار';
+
+  @override
+  String get portfolioShareNote => 'پەقەت پىرسەنتلا ھەمبەھىرلىنىدۇ، سومما يوق.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پاي',
+      one: '$count پاي',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'مەبلەغ سېلىش تەۋسىيەسى ئەمەس';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

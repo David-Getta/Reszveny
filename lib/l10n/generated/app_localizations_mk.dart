@@ -2601,6 +2601,32 @@ class AppLocalizationsMk extends AppLocalizations {
       'Износите се во оригиналната валута, без конверзија. Приходот е намален за провизијата при продажба; набавната вредност ја вклучува провизијата при купување (FIFO). За даночната пријава, конвертирајте по курсот што го бара вашата даночна управа.';
 
   @override
+  String get portfolioShare => 'Сподели го приносот';
+
+  @override
+  String get portfolioShareHeading => 'Мое портфолио';
+
+  @override
+  String get portfolioTopHoldings => 'Најголеми позиции';
+
+  @override
+  String get portfolioShareNote => 'Се споделуваат само проценти, без износи.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count позиции',
+      one: '$count позиција',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Не е инвестициски совет';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

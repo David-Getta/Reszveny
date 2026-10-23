@@ -787,5 +787,11 @@
   "portfolioProceeds": "Mbeca cia ũendia",
   "portfolioCostBasis": "Thogora wa ũgũri",
   "portfolioFeesPaid": "Marĩhi marĩhĩtwo",
-  "portfolioAnnualSummaryNote": "Mbeca irĩ na mbeca cia mbere, itigarũrĩtwo. Mbeca cia ũendia nĩ ciarutĩrwo marĩhi ma ũendia; thogora wa ũgũri nĩ ũtoonyithĩtie marĩhi ma ũgũri (FIFO). Nĩ ũndũ wa riboti yaku ya igooti, garũra na thogora wa kũgarũra mbeca ũrĩa ũbataranagio nĩ ũthamaki wa igooti."
+  "portfolioAnnualSummaryNote": "Mbeca irĩ na mbeca cia mbere, itigarũrĩtwo. Mbeca cia ũendia nĩ ciarutĩrwo marĩhi ma ũendia; thogora wa ũgũri nĩ ũtoonyithĩtie marĩhi ma ũgũri (FIFO). Nĩ ũndũ wa riboti yaku ya igooti, garũra na thogora wa kũgarũra mbeca ũrĩa ũbataranagio nĩ ũthamaki wa igooti.",
+  "portfolioShare": "Gayana uumithio/hasara",
+  "portfolioShareHeading": "Hisa ciakwa",
+  "portfolioTopHoldings": "Hisa iria nene makĩria",
+  "portfolioShareNote": "Percent tu nĩcio igayanagwo, ti mbeca.",
+  "portfolioPositionsCount": "{count, plural, =1{Mũgabana 1} other{Mĩgabana {count}}}",
+  "shareNotAdvice": "Ti ũtaaro wa investment"
 }

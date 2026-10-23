@@ -787,5 +787,11 @@
   "portfolioProceeds": "Nudzadzra me ga",
   "portfolioCostBasis": "Nuƒeƒle ƒe asi",
   "portfolioFeesPaid": "Fe siwo woxe",
-  "portfolioAnnualSummaryNote": "Ga home siwo le gaŋkɔ gbãtɔ me, wometrɔ wo o. Woɖe nudzadzra ƒe fe la le nudzadzra me ga la me; nuƒeƒle ƒe asi la ƒo nuƒeƒle ƒe fe la ɖe eme (FIFO). Na wò adzɔxexe ŋuti nyatakaka la, trɔ wo ɖe gatsɔtsɔli asi si wò adzɔxɔdɔwɔƒe di la nu."
+  "portfolioAnnualSummaryNote": "Ga home siwo le gaŋkɔ gbãtɔ me, wometrɔ wo o. Woɖe nudzadzra ƒe fe la le nudzadzra me ga la me; nuƒeƒle ƒe asi la ƒo nuƒeƒle ƒe fe la ɖe eme (FIFO). Na wò adzɔxexe ŋuti nyatakaka la, trɔ wo ɖe gatsɔtsɔli asi si wò adzɔxɔdɔwɔƒe di la nu.",
+  "portfolioShare": "Ma viɖe/nubu",
+  "portfolioShareHeading": "Nye akpawo",
+  "portfolioTopHoldings": "Akpa gãtowo",
+  "portfolioShareNote": "Alafa me akpawo ko wòmana, ga home aɖeke meli o.",
+  "portfolioPositionsCount": "{count, plural, =1{Akpa 1} other{Akpa {count}}}",
+  "shareNotAdvice": "Menye aɖaŋuɖoɖo le gadede nu ŋu o"
 }

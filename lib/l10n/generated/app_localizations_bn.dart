@@ -2578,6 +2578,33 @@ class AppLocalizationsBn extends AppLocalizations {
       'পরিমাণগুলো মূল মুদ্রায়, রূপান্তর করা হয়নি। বিক্রয় আয় বিক্রির কমিশন বাদ দিয়ে দেখানো; ক্রয়মূল্যে ক্রয়ের কমিশন অন্তর্ভুক্ত (FIFO)। কর রিটার্নের জন্য আপনার কর কর্তৃপক্ষ যে বিনিময় হার চায়, সেই হারে রূপান্তর করুন।';
 
   @override
+  String get portfolioShare => 'পারফরম্যান্স শেয়ার করুন';
+
+  @override
+  String get portfolioShareHeading => 'আমার পোর্টফোলিও';
+
+  @override
+  String get portfolioTopHoldings => 'সবচেয়ে বড় অবস্থান';
+
+  @override
+  String get portfolioShareNote =>
+      'শুধু শতাংশ শেয়ার করা হয়, কোনো পরিমাণ নয়।';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি অবস্থান',
+      one: '1টি অবস্থান',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'বিনিয়োগ পরামর্শ নয়';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

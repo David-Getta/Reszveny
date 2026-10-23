@@ -787,5 +787,11 @@
   "portfolioProceeds": "ବିକ୍ରି ଆୟ",
   "portfolioCostBasis": "କ୍ରୟ ମୂଲ୍ୟ",
   "portfolioFeesPaid": "ଦେଇଥିବା ଶୁଳ୍କ",
-  "portfolioAnnualSummaryNote": "ରାଶି ମୂଳ ମୁଦ୍ରାରେ, ରୂପାନ୍ତରିତ ନୁହେଁ। ବିକ୍ରି ଆୟରୁ ବିକ୍ରି ଶୁଳ୍କ କଟାଯାଇଛି; କ୍ରୟ ମୂଲ୍ୟରେ କ୍ରୟ ଶୁଳ୍କ ସାମିଲ (FIFO)। ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ, ଆପଣଙ୍କ ଟିକସ ବିଭାଗ ଆବଶ୍ୟକ କରୁଥିବା ବିନିମୟ ଦରରେ ରୂପାନ୍ତର କରନ୍ତୁ।"
+  "portfolioAnnualSummaryNote": "ରାଶି ମୂଳ ମୁଦ୍ରାରେ, ରୂପାନ୍ତରିତ ନୁହେଁ। ବିକ୍ରି ଆୟରୁ ବିକ୍ରି ଶୁଳ୍କ କଟାଯାଇଛି; କ୍ରୟ ମୂଲ୍ୟରେ କ୍ରୟ ଶୁଳ୍କ ସାମିଲ (FIFO)। ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ, ଆପଣଙ୍କ ଟିକସ ବିଭାଗ ଆବଶ୍ୟକ କରୁଥିବା ବିନିମୟ ଦରରେ ରୂପାନ୍ତର କରନ୍ତୁ।",
+  "portfolioShare": "ପ୍ରଦର୍ଶନ ସେୟାର କରନ୍ତୁ",
+  "portfolioShareHeading": "ମୋ ପୋର୍ଟଫୋଲିଓ",
+  "portfolioTopHoldings": "ସବୁଠୁ ବଡ଼ ପୋଜିସନ",
+  "portfolioShareNote": "କେବଳ ପ୍ରତିଶତ ସେୟାର ହୁଏ, ରାଶି ନୁହେଁ।",
+  "portfolioPositionsCount": "{count, plural, one{{count}ଟି ପୋଜିସନ} other{{count}ଟି ପୋଜିସନ}}",
+  "shareNotAdvice": "ନିବେଶ ପରାମର୍ଶ ନୁହେଁ"
 }

@@ -787,5 +787,11 @@
   "portfolioProceeds": "ਵਿਕਰੀ ਆਮਦਨ",
   "portfolioCostBasis": "ਖ਼ਰੀਦ ਲਾਗਤ",
   "portfolioFeesPaid": "ਅਦਾ ਕੀਤੀ ਫੀਸ",
-  "portfolioAnnualSummaryNote": "ਰਕਮਾਂ ਮੂਲ ਮੁਦਰਾ ਵਿੱਚ, ਬਦਲੀਆਂ ਨਹੀਂ ਗਈਆਂ। ਵਿਕਰੀ ਆਮਦਨ ਵਿੱਚੋਂ ਵਿਕਰੀ ਫੀਸ ਘਟਾਈ ਗਈ ਹੈ; ਖ਼ਰੀਦ ਲਾਗਤ ਵਿੱਚ ਖ਼ਰੀਦ ਫੀਸ ਸ਼ਾਮਲ ਹੈ (FIFO)। ਟੈਕਸ ਰਿਟਰਨ ਲਈ, ਆਪਣੇ ਟੈਕਸ ਵਿਭਾਗ ਵੱਲੋਂ ਮੰਗੀ ਵਟਾਂਦਰਾ ਦਰ ’ਤੇ ਬਦਲੋ।"
+  "portfolioAnnualSummaryNote": "ਰਕਮਾਂ ਮੂਲ ਮੁਦਰਾ ਵਿੱਚ, ਬਦਲੀਆਂ ਨਹੀਂ ਗਈਆਂ। ਵਿਕਰੀ ਆਮਦਨ ਵਿੱਚੋਂ ਵਿਕਰੀ ਫੀਸ ਘਟਾਈ ਗਈ ਹੈ; ਖ਼ਰੀਦ ਲਾਗਤ ਵਿੱਚ ਖ਼ਰੀਦ ਫੀਸ ਸ਼ਾਮਲ ਹੈ (FIFO)। ਟੈਕਸ ਰਿਟਰਨ ਲਈ, ਆਪਣੇ ਟੈਕਸ ਵਿਭਾਗ ਵੱਲੋਂ ਮੰਗੀ ਵਟਾਂਦਰਾ ਦਰ ’ਤੇ ਬਦਲੋ।",
+  "portfolioShare": "ਪ੍ਰਦਰਸ਼ਨ ਸਾਂਝਾ ਕਰੋ",
+  "portfolioShareHeading": "ਮੇਰਾ ਪੋਰਟਫ਼ੋਲੀਓ",
+  "portfolioTopHoldings": "ਸਭ ਤੋਂ ਵੱਡੀਆਂ ਪੁਜ਼ੀਸ਼ਨਾਂ",
+  "portfolioShareNote": "ਸਿਰਫ਼ ਪ੍ਰਤੀਸ਼ਤ ਸਾਂਝੇ ਕੀਤੇ ਜਾਂਦੇ ਹਨ, ਰਕਮਾਂ ਨਹੀਂ।",
+  "portfolioPositionsCount": "{count, plural, one{{count} ਪੁਜ਼ੀਸ਼ਨ} other{{count} ਪੁਜ਼ੀਸ਼ਨਾਂ}}",
+  "shareNotAdvice": "ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ"
 }

@@ -2590,6 +2590,33 @@ class AppLocalizationsOm extends AppLocalizations {
       'Maallaqni maallaqa jalqabaatiin, hin jijjiiramne. Galii gurgurtaa irraa kaffaltiin tajaajilaa gurgurtaa hir\'ifameera; gatiin bittaa kaffaltii tajaajilaa bittaa of keessaa qaba (FIFO). Gabaasa gibiraa keetiif, gatii jijjiirraa abbaan taayitaa gibiraa barbaaduun jijjiiri.';
 
   @override
+  String get portfolioShare => 'Bu\'aa qoodi';
+
+  @override
+  String get portfolioShareHeading => 'Poortfooliyoo koo';
+
+  @override
+  String get portfolioTopHoldings => 'Qabiyyeewwan gurguddoo';
+
+  @override
+  String get portfolioShareNote =>
+      'Dhibbeentaa qofatu qoodama, hammi maallaqaa hin qoodamu.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Qabiyyeewwan $count',
+      one: 'Qabiyyee $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Gorsa invastimantii miti';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

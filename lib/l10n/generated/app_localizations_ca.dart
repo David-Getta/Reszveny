@@ -2590,6 +2590,33 @@ class AppLocalizationsCa extends AppLocalizations {
       'Imports en la moneda original, sense convertir. El valor de transmissió és net de la comissió de venda; el valor d\'adquisició inclou la comissió de compra (FIFO). Per a la declaració de la renda, converteix-los al tipus de canvi que exigeixi la teva administració tributària.';
 
   @override
+  String get portfolioShare => 'Compartir el rendiment';
+
+  @override
+  String get portfolioShareHeading => 'La meva cartera';
+
+  @override
+  String get portfolioTopHoldings => 'Posicions més grans';
+
+  @override
+  String get portfolioShareNote =>
+      'Només es comparteixen percentatges, cap import.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posicions',
+      one: '1 posició',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'No és assessorament d’inversió';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

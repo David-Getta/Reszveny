@@ -787,5 +787,11 @@
   "portfolioProceeds": "Ñemu repy",
   "portfolioCostBasis": "Jejogua repy",
   "portfolioFeesPaid": "Comisión ojehepymeʼẽva",
-  "portfolioAnnualSummaryNote": "Pira pire oĩ viru ypykuépe, noñemoambuéi. Ñemu repýgui oñenohẽma ñemu comisión; jejogua repy oguereko jejogua comisión (FIFO). Ne declaración de impuestos-rã, emoambue pe cambio repýpe ojeruréva nde impuesto mburuvicha."
+  "portfolioAnnualSummaryNote": "Pira pire oĩ viru ypykuépe, noñemoambuéi. Ñemu repýgui oñenohẽma ñemu comisión; jejogua repy oguereko jejogua comisión (FIFO). Ne declaración de impuestos-rã, emoambue pe cambio repýpe ojeruréva nde impuesto mburuvicha.",
+  "portfolioShare": "Emoherakuã rendimiento",
+  "portfolioShareHeading": "Che cartera",
+  "portfolioTopHoldings": "Ereguerekóva tuichavéva",
+  "portfolioShareNote": "Porcentaje añoite oñemoherakuã, ndahaʼéi pira pire.",
+  "portfolioPositionsCount": "{count, plural, =1{1 ereguerekóva} other{{count} ereguerekóva}}",
+  "shareNotAdvice": "Ndahaʼéi ñemoñeʼẽ inversión rehegua"
 }

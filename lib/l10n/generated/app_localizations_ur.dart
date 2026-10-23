@@ -2580,6 +2580,32 @@ class AppLocalizationsUr extends AppLocalizations {
       'رقمیں اصل کرنسی میں ہیں، تبدیل نہیں کی گئیں۔ فروخت کی آمدنی سے فروخت کی فیس منہا کی گئی ہے؛ خریداری کی لاگت میں خریداری کی فیس شامل ہے (FIFO)۔ ٹیکس ریٹرن کے لیے، اس شرح مبادلہ پر تبدیل کریں جو آپ کا ٹیکس محکمہ طلب کرتا ہے۔';
 
   @override
+  String get portfolioShare => 'کارکردگی شیئر کریں';
+
+  @override
+  String get portfolioShareHeading => 'میرا پورٹ فولیو';
+
+  @override
+  String get portfolioTopHoldings => 'سب سے بڑی پوزیشنز';
+
+  @override
+  String get portfolioShareNote => 'صرف فیصد شیئر کیے جاتے ہیں، رقم نہیں۔';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پوزیشنز',
+      one: '$count پوزیشن',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'سرمایہ کاری کا مشورہ نہیں';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

@@ -2581,6 +2581,32 @@ class AppLocalizationsNb extends AppLocalizations {
       'Beløp i opprinnelig valuta, ikke omregnet. Salgsvederlaget er fratrukket kurtasje ved salg; inngangsverdien inkluderer kurtasje ved kjøp (FIFO). Til skattemeldingen må du regne om etter valutakursen skattemyndighetene krever.';
 
   @override
+  String get portfolioShare => 'Del avkastningen';
+
+  @override
+  String get portfolioShareHeading => 'Min portefølje';
+
+  @override
+  String get portfolioTopHoldings => 'Største beholdninger';
+
+  @override
+  String get portfolioShareNote => 'Kun prosenter deles, ingen beløp.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count beholdninger',
+      one: '$count beholdning',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ikke investeringsråd';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

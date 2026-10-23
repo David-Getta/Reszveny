@@ -2645,6 +2645,34 @@ class AppLocalizationsLt extends AppLocalizations {
       'Sumos pradine valiuta, neperskaičiuotos. Pardavimo pajamos nurodytos atėmus pardavimo komisinius; įsigijimo kaina apima pirkimo komisinius (FIFO). Mokesčių deklaracijai perskaičiuokite pagal kursą, kurio reikalauja jūsų mokesčių administratorius.';
 
   @override
+  String get portfolioShare => 'Bendrinti rezultatus';
+
+  @override
+  String get portfolioShareHeading => 'Mano portfelis';
+
+  @override
+  String get portfolioTopHoldings => 'Didžiausios pozicijos';
+
+  @override
+  String get portfolioShareNote => 'Bendrinami tik procentai, jokių sumų.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozicijų',
+      many: '$count pozicijos',
+      few: '$count pozicijos',
+      one: '$count pozicija',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Tai nėra investavimo rekomendacija';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

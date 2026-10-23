@@ -787,5 +787,11 @@
   "portfolioProceeds": "Rantikusqamanta qullqi",
   "portfolioCostBasis": "Rantisqa chanin",
   "portfolioFeesPaid": "Pagasqa comisión",
-  "portfolioAnnualSummaryNote": "Qullqikuna ñawpaq qullqinpi, mana tikrasqa. Rantikusqamanta qullqiqa rantikuy comisionta qichusqañam; rantisqa chaninqa rantiy comisionta hap'in (FIFO). Impuesto willakuyniykipaq, impuesto kamachiq munasqan cambiowan tikray."
+  "portfolioAnnualSummaryNote": "Qullqikuna ñawpaq qullqinpi, mana tikrasqa. Rantikusqamanta qullqiqa rantikuy comisionta qichusqañam; rantisqa chaninqa rantiy comisionta hap'in (FIFO). Impuesto willakuyniykipaq, impuesto kamachiq munasqan cambiowan tikray.",
+  "portfolioShare": "Rendimientota rakiy",
+  "portfolioShareHeading": "Portafolioy",
+  "portfolioTopHoldings": "Aswan hatun posicionkuna",
+  "portfolioShareNote": "Porcentajekunallam rakikun, manam qullqi haykachu.",
+  "portfolioPositionsCount": "{count, plural, one{{count} posición} other{{count} posición}}",
+  "shareNotAdvice": "Manan qullqi churanapaq yuyaychaychu"
 }

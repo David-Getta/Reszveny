@@ -2586,6 +2586,33 @@ class AppLocalizationsIt extends AppLocalizations {
       'Importi nella valuta originale, non convertiti. Il corrispettivo è al netto della commissione di vendita; il costo di acquisto include la commissione di acquisto (FIFO). Per la dichiarazione dei redditi, converti al tasso di cambio richiesto dalla tua amministrazione fiscale.';
 
   @override
+  String get portfolioShare => 'Condividi rendimento';
+
+  @override
+  String get portfolioShareHeading => 'Il mio portafoglio';
+
+  @override
+  String get portfolioTopHoldings => 'Posizioni principali';
+
+  @override
+  String get portfolioShareNote =>
+      'Si condividono solo percentuali, nessun importo.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posizioni',
+      one: '1 posizione',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Non è un consiglio di investimento';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

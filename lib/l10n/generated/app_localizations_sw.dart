@@ -2581,6 +2581,33 @@ class AppLocalizationsSw extends AppLocalizations {
       'Kiasi kiko katika sarafu asili, hakijabadilishwa. Mapato ya mauzo ni baada ya kutoa ada ya mauzo; gharama ya ununuzi inajumuisha ada ya ununuzi (FIFO). Kwa marejesho ya kodi, badilisha kwa kiwango cha ubadilishaji kinachotakiwa na mamlaka ya kodi.';
 
   @override
+  String get portfolioShare => 'Shiriki utendaji';
+
+  @override
+  String get portfolioShareHeading => 'Jalada langu la hisa';
+
+  @override
+  String get portfolioTopHoldings => 'Nafasi kubwa zaidi';
+
+  @override
+  String get portfolioShareNote =>
+      'Asilimia pekee ndizo zinazoshirikiwa, si kiasi cha pesa.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nafasi $count',
+      one: 'Nafasi $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Si ushauri wa uwekezaji';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

@@ -2129,6 +2129,35 @@
   "@portfolioAnnualSummaryNote": {
     "description": "Note at the bottom of the annual summary sheet."
   },
+  "portfolioShare": "Share performance",
+  "@portfolioShare": {
+    "description": "Button and sheet title: share the portfolio performance as an image or text (percentages only, no amounts)."
+  },
+  "portfolioShareHeading": "My portfolio",
+  "@portfolioShareHeading": {
+    "description": "Heading on the shared portfolio performance image."
+  },
+  "portfolioTopHoldings": "Largest positions",
+  "@portfolioTopHoldings": {
+    "description": "Label above the largest positions and their weights on the shared portfolio image."
+  },
+  "portfolioShareNote": "Only percentages are shared, no amounts.",
+  "@portfolioShareNote": {
+    "description": "Note under the preview of the portfolio performance image."
+  },
+  "portfolioPositionsCount": "{count, plural, =1{1 position} other{{count} positions}}",
+  "@portfolioPositionsCount": {
+    "description": "Number of positions in the portfolio, on the shared image.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "shareNotAdvice": "Not investment advice",
+  "@shareNotAdvice": {
+    "description": "Small print at the bottom of a shared image."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

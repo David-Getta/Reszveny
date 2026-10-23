@@ -787,5 +787,11 @@
   "portfolioProceeds": "Letseno la dithekišo",
   "portfolioCostBasis": "Ditshenyagalelo tša go reka",
   "portfolioFeesPaid": "Ditefelo tše di lefilwego",
-  "portfolioAnnualSummaryNote": "Ditšhelete di ka tšhelete ya mathomo, ga di a fetošwa. Letseno la dithekišo ke ka morago ga go ntšha tefelo ya thekišo; ditshenyagalelo tša go reka di akaretša tefelo ya theko (FIFO). Bakeng sa pušetšo ya gago ya motšhelo, fetoša ka reiti ya phetošo ye e nyakwago ke bolaodi bja motšhelo."
+  "portfolioAnnualSummaryNote": "Ditšhelete di ka tšhelete ya mathomo, ga di a fetošwa. Letseno la dithekišo ke ka morago ga go ntšha tefelo ya thekišo; ditshenyagalelo tša go reka di akaretša tefelo ya theko (FIFO). Bakeng sa pušetšo ya gago ya motšhelo, fetoša ka reiti ya phetošo ye e nyakwago ke bolaodi bja motšhelo.",
+  "portfolioShare": "Abelana dipoelo",
+  "portfolioShareHeading": "Photefolio ya ka",
+  "portfolioTopHoldings": "Maemo a magolo kudu",
+  "portfolioShareNote": "Go abelanwa diphesente fela, e sego dipalo tša tšhelete.",
+  "portfolioPositionsCount": "{count, plural, one{Boemo bo {count}} other{Maemo a {count}}}",
+  "shareNotAdvice": "Ga se keletšo ya peeletšo"
 }

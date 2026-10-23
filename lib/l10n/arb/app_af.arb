@@ -787,5 +787,11 @@
   "portfolioProceeds": "Verkoopopbrengs",
   "portfolioCostBasis": "Basiskoste",
   "portfolioFeesPaid": "Betaalde kommissie",
-  "portfolioAnnualSummaryNote": "Bedrae in die oorspronklike geldeenheid, nie omgeskakel nie. Die opbrengs is ná aftrekking van die verkoopkommissie; die basiskoste sluit die aankoopkommissie in (FIFO). Skakel vir jou belastingopgawe om teen die wisselkoers wat jou belastingowerheid vereis."
+  "portfolioAnnualSummaryNote": "Bedrae in die oorspronklike geldeenheid, nie omgeskakel nie. Die opbrengs is ná aftrekking van die verkoopkommissie; die basiskoste sluit die aankoopkommissie in (FIFO). Skakel vir jou belastingopgawe om teen die wisselkoers wat jou belastingowerheid vereis.",
+  "portfolioShare": "Deel prestasie",
+  "portfolioShareHeading": "My portefeulje",
+  "portfolioTopHoldings": "Grootste posisies",
+  "portfolioShareNote": "Slegs persentasies word gedeel, geen bedrae nie.",
+  "portfolioPositionsCount": "{count, plural, =1{1 posisie} other{{count} posisies}}",
+  "shareNotAdvice": "Nie beleggingsadvies nie"
 }

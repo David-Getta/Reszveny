@@ -2588,6 +2588,33 @@ class AppLocalizationsLua extends AppLocalizations {
       'Makuta adi mu makuta a kumpala, kaavua mashintulula to. Makuta a kusumbisha adi mumane kuumusha makuta a mudimu a kusumbisha; mushinga wa kusumba udi ne makuta a mudimu a kusumba (FIFO). Bua mukanda webe wa mpaku, shintulula ku mushinga wa dishintuluija udi bakokeshi ba mpaku bakulomba.';
 
   @override
+  String get portfolioShare => 'Abanya dipeta/dijimija';
+
+  @override
+  String get portfolioShareHeading => 'Portefeuille wanyi';
+
+  @override
+  String get portfolioTopHoldings => 'Position minene';
+
+  @override
+  String get portfolioShareNote =>
+      'Badi babanya anu ma pourcentage, kabena babanya makuta to.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bitupa $count',
+      one: 'Tshitupa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Kadiena mibelu ya kuteka mfranga';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

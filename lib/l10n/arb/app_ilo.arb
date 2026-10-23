@@ -787,5 +787,11 @@
   "portfolioProceeds": "Sapul iti panaglako",
   "portfolioCostBasis": "Gastos iti panaggatang",
   "portfolioFeesPaid": "Komision a nabayadan",
-  "portfolioAnnualSummaryNote": "Dagiti kantidad ket iti orihinal a currency, saan a naikomberte. Ti sapul iti panaglako ket nakissayan ti komision ti panaglako; ti gastos iti panaggatang ket mairaman ti komision ti panaggatang (FIFO). Para iti tax return-mo, ikombertem iti exchange rate a kiddawen ti tax authority-mo."
+  "portfolioAnnualSummaryNote": "Dagiti kantidad ket iti orihinal a currency, saan a naikomberte. Ti sapul iti panaglako ket nakissayan ti komision ti panaglako; ti gastos iti panaggatang ket mairaman ti komision ti panaggatang (FIFO). Para iti tax return-mo, ikombertem iti exchange rate a kiddawen ti tax authority-mo.",
+  "portfolioShare": "Ibingay ti performance",
+  "portfolioShareHeading": "Ti portfolio-k",
+  "portfolioTopHoldings": "Kadakkelan a posision",
+  "portfolioShareNote": "Dagiti porsiento laeng ti maibingay, awan ti kantidad.",
+  "portfolioPositionsCount": "{count, plural, =1{1 a posision} other{{count} a posision}}",
+  "shareNotAdvice": "Saan a balakad iti panagpuonan"
 }

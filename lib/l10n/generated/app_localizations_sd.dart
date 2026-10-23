@@ -2571,6 +2571,32 @@ class AppLocalizationsSd extends AppLocalizations {
       'رقمون اصل ڪرنسي ۾، تبديل ڪيل ناهن. وڪري جي آمدني مان وڪري جي فيس ڪٽيل آهي؛ خريد جي لاڳت ۾ خريد جي فيس شامل آهي (FIFO). ٽيڪس ريٽرن لاءِ، ان مٽاسٽا جي شرح تي تبديل ڪريو جيڪا توهان جو ٽيڪس کاتو گهري ٿو.';
 
   @override
+  String get portfolioShare => 'ڪارڪردگي شيئر ڪريو';
+
+  @override
+  String get portfolioShareHeading => 'منهنجو پورٽ فوليو';
+
+  @override
+  String get portfolioTopHoldings => 'سڀ کان وڏيون پوزيشنون';
+
+  @override
+  String get portfolioShareNote => 'صرف سيڪڙو شيئر ڪيا ويندا آهن، رقمون نه.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پوزيشنون',
+      one: '$count پوزيشن',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'سيڙپڪاري جو مشورو ناهي';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

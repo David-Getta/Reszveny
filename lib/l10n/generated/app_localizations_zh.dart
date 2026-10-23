@@ -2467,6 +2467,31 @@ class AppLocalizationsZh extends AppLocalizations {
       '金额为原币种，未经换算。卖出收入已扣除卖出手续费；取得成本含买入手续费（FIFO）。报税时请按税务机关要求的汇率换算。';
 
   @override
+  String get portfolioShare => '分享投资表现';
+
+  @override
+  String get portfolioShareHeading => '我的投资组合';
+
+  @override
+  String get portfolioTopHoldings => '最大持仓';
+
+  @override
+  String get portfolioShareNote => '仅分享百分比，不含金额。';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 个持仓',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => '不构成投资建议';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5301,6 +5326,31 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String get portfolioAnnualSummaryNote =>
       '金額以原貨幣列示，未經換算。出售所得已扣除賣出佣金；購入成本已包括買入佣金（FIFO）。報稅時請按稅務機關要求的匯率換算。';
+
+  @override
+  String get portfolioShare => '分享投資表現';
+
+  @override
+  String get portfolioShareHeading => '我的投資組合';
+
+  @override
+  String get portfolioTopHoldings => '最大持倉';
+
+  @override
+  String get portfolioShareNote => '只分享百分比，不包括金額。';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 個持倉',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => '並不構成投資建議';
 
   @override
   String get portfolioGoalSet => '設定目標';

@@ -2575,6 +2575,33 @@ class AppLocalizationsIg extends AppLocalizations {
       'Ego ndị a dị n\'ego mbụ, a gbanweghị ha. E wepụla ụgwọ ọrụ ire n\'ego e nwetara n\'ire; ọnụ ahịa ịzụta gụnyere ụgwọ ọrụ ịzụta (FIFO). Maka akụkọ ụtụ isi gị, gbanwee ha n\'ọnụego mgbanwe nke ndị ọchịchị ụtụ isi gị chọrọ.';
 
   @override
+  String get portfolioShare => 'Kesaa uru na mfu';
+
+  @override
+  String get portfolioShareHeading => 'Portfolio m';
+
+  @override
+  String get portfolioTopHoldings => 'Ihe kachasị ukwuu ị nwere';
+
+  @override
+  String get portfolioShareNote =>
+      'Naanị pasentị ka a na-ekesa, ọ bụghị ego ole.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Òkè $count',
+      one: 'Òkè 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ọ bụghị ndụmọdụ itinye ego';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

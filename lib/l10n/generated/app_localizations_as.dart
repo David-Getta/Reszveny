@@ -2578,6 +2578,33 @@ class AppLocalizationsAs extends AppLocalizations {
       'পৰিমাণসমূহ মূল মুদ্ৰাত, ৰূপান্তৰ কৰা হোৱা নাই। বিক্ৰীৰ আয় বিক্ৰীৰ কমিছন বাদ দি দেখুওৱা হৈছে; ক্ৰয় মূল্যত ক্ৰয়ৰ কমিছন অন্তৰ্ভুক্ত (FIFO)। কৰ ৰিটাৰ্ণৰ বাবে আপোনাৰ কৰ কৰ্তৃপক্ষই বিচৰা বিনিময় হাৰত ৰূপান্তৰ কৰক।';
 
   @override
+  String get portfolioShare => 'পাৰদৰ্শিতা শ্বেয়াৰ কৰক';
+
+  @override
+  String get portfolioShareHeading => 'মোৰ প\'ৰ্টফ\'লিঅ\'';
+
+  @override
+  String get portfolioTopHoldings => 'আটাইতকৈ ডাঙৰ পজিচন';
+
+  @override
+  String get portfolioShareNote =>
+      'কেৱল শতাংশহে শ্বেয়াৰ কৰা হয়, কোনো পৰিমাণ নহয়।';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটা পজিচন',
+      one: '1টা পজিচন',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'বিনিয়োগৰ পৰামৰ্শ নহয়';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

@@ -2578,6 +2578,32 @@ class AppLocalizationsEn extends AppLocalizations {
       'Amounts in the original currency, not converted. Proceeds are net of the sale fee; the cost basis includes the purchase fee (FIFO). For your tax return, convert at the exchange rate your tax authority requires.';
 
   @override
+  String get portfolioShare => 'Share performance';
+
+  @override
+  String get portfolioShareHeading => 'My portfolio';
+
+  @override
+  String get portfolioTopHoldings => 'Largest positions';
+
+  @override
+  String get portfolioShareNote => 'Only percentages are shared, no amounts.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count positions',
+      one: '1 position',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Not investment advice';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

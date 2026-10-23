@@ -787,5 +787,11 @@
   "portfolioProceeds": "बिक्रीसँ आमदनी",
   "portfolioCostBasis": "खरीद लागत",
   "portfolioFeesPaid": "चुकाओल ब्रोकरेज",
-  "portfolioAnnualSummaryNote": "राशि मूल मुद्रामे अछि, बदलल नहि गेल। बिक्रीसँ आमदनी बिक्रीक ब्रोकरेज घटा कऽ अछि; खरीद लागतमे खरीदक ब्रोकरेज सम्मिलित अछि (FIFO)। टैक्स रिटर्नक लेल ओहि विनिमय दरपर बदलू जे अहाँक कर विभाग मँगैत अछि।"
+  "portfolioAnnualSummaryNote": "राशि मूल मुद्रामे अछि, बदलल नहि गेल। बिक्रीसँ आमदनी बिक्रीक ब्रोकरेज घटा कऽ अछि; खरीद लागतमे खरीदक ब्रोकरेज सम्मिलित अछि (FIFO)। टैक्स रिटर्नक लेल ओहि विनिमय दरपर बदलू जे अहाँक कर विभाग मँगैत अछि।",
+  "portfolioShare": "प्रदर्शन साझा करू",
+  "portfolioShareHeading": "हमर पोर्टफ़ोलियो",
+  "portfolioTopHoldings": "सभसँ पैघ पोजीशन",
+  "portfolioShareNote": "केवल प्रतिशत साझा होइत अछि, कोनो राशि नहि।",
+  "portfolioPositionsCount": "{count, plural, =1{1 पोजीशन} other{{count} पोजीशन}}",
+  "shareNotAdvice": "निवेशक सलाह नहि"
 }

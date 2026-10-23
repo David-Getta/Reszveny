@@ -2600,6 +2600,33 @@ class AppLocalizationsTs extends AppLocalizations {
       'Mali yi le ka mali ya masungulo, a yi cinciwanga. Mali ya swixavisiwa yi susiwile hakelo ya ku xavisa; ntsengo wa ku xava wu katsa hakelo ya ku xava (FIFO). Eka xiviko xa wena xa xibalo, cinca hi mpimo wa ku cincana mali lowu lavekaka hi vulawuri bya xibalo.';
 
   @override
+  String get portfolioShare => 'Avelana mbuyelo';
+
+  @override
+  String get portfolioShareHeading => 'Phothifoliyo ya mina';
+
+  @override
+  String get portfolioTopHoldings => 'Tixere letikulu';
+
+  @override
+  String get portfolioShareNote =>
+      'Ku avelaniwa tiphesente ntsena, ku nga ri mali.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tixere ta $count',
+      one: 'Xere ya $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'A hi ndzayo ya vuvekisi';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

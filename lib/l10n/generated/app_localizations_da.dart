@@ -2579,6 +2579,32 @@ class AppLocalizationsDa extends AppLocalizations {
       'Beløb i den oprindelige valuta, ikke omregnet. Salgssummen er fratrukket kurtagen ved salg; anskaffelsessummen omfatter kurtagen ved køb (FIFO). Til selvangivelsen skal du omregne til den valutakurs, som skattemyndighederne kræver.';
 
   @override
+  String get portfolioShare => 'Del afkast';
+
+  @override
+  String get portfolioShareHeading => 'Min portefølje';
+
+  @override
+  String get portfolioTopHoldings => 'Største beholdninger';
+
+  @override
+  String get portfolioShareNote => 'Kun procenter deles, ingen beløb.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count beholdninger',
+      one: '1 beholdning',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ikke investeringsrådgivning';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

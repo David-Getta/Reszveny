@@ -2648,6 +2648,34 @@ class AppLocalizationsSl extends AppLocalizations {
       'Zneski v izvirni valuti, brez preračuna. Vrednost ob odsvojitvi je zmanjšana za provizijo pri prodaji; nabavna vrednost vključuje provizijo pri nakupu (FIFO). Za davčno napoved preračunajte po tečaju, ki ga zahteva vaš davčni organ.';
 
   @override
+  String get portfolioShare => 'Deli donosnost';
+
+  @override
+  String get portfolioShareHeading => 'Moj portfelj';
+
+  @override
+  String get portfolioTopHoldings => 'Največje pozicije';
+
+  @override
+  String get portfolioShareNote => 'Delijo se samo odstotki, brez zneskov.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozicij',
+      few: '$count pozicije',
+      two: '$count poziciji',
+      one: '$count pozicija',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ni naložbeni nasvet';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

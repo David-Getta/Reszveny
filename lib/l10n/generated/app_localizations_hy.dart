@@ -2588,6 +2588,33 @@ class AppLocalizationsHy extends AppLocalizations {
       'Գումարները սկզբնական արժույթով են՝ առանց փոխարկման։ Վաճառքից հասույթը ներկայացված է վաճառքի միջնորդավճարը հանած, իսկ ձեռքբերման արժեքը ներառում է գնման միջնորդավճարը (FIFO)։ Հարկային հայտարարագրի համար փոխարկեք այն փոխարժեքով, որը պահանջում է ձեր հարկային մարմինը։';
 
   @override
+  String get portfolioShare => 'Կիսվել արդյունքներով';
+
+  @override
+  String get portfolioShareHeading => 'Իմ պորտֆելը';
+
+  @override
+  String get portfolioTopHoldings => 'Ամենամեծ դիրքերը';
+
+  @override
+  String get portfolioShareNote =>
+      'Կիսվում են միայն տոկոսները, ոչ թե գումարները։';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count դիրք',
+      one: '1 դիրք',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ներդրումային խորհուրդ չէ';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

@@ -787,5 +787,11 @@
   "portfolioProceeds": "Money from sales",
   "portfolioCostBasis": "Buying cost",
   "portfolioFeesPaid": "Charges wey you pay",
-  "portfolioAnnualSummaryNote": "Di amounts dey for di original currency, we no change dem. Di sales money don remove di selling charges; di buying cost include di buying charges (FIFO). For your tax return, change am with di exchange rate wey your tax office want."
+  "portfolioAnnualSummaryNote": "Di amounts dey for di original currency, we no change dem. Di sales money don remove di selling charges; di buying cost include di buying charges (FIFO). For your tax return, change am with di exchange rate wey your tax office want.",
+  "portfolioShare": "Share your performance",
+  "portfolioShareHeading": "My portfolio",
+  "portfolioTopHoldings": "Biggest stocks",
+  "portfolioShareNote": "Na only percentage we go share, no amount.",
+  "portfolioPositionsCount": "{count, plural, one{{count} stock} other{{count} stocks}}",
+  "shareNotAdvice": "E no be investment advice"
 }

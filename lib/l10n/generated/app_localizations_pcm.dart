@@ -2580,6 +2580,32 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Di amounts dey for di original currency, we no change dem. Di sales money don remove di selling charges; di buying cost include di buying charges (FIFO). For your tax return, change am with di exchange rate wey your tax office want.';
 
   @override
+  String get portfolioShare => 'Share your performance';
+
+  @override
+  String get portfolioShareHeading => 'My portfolio';
+
+  @override
+  String get portfolioTopHoldings => 'Biggest stocks';
+
+  @override
+  String get portfolioShareNote => 'Na only percentage we go share, no amount.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count stocks',
+      one: '$count stock',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'E no be investment advice';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

@@ -2580,6 +2580,33 @@ class AppLocalizationsTr extends AppLocalizations {
       'Tutarlar orijinal para biriminde, çevrilmemiştir. Satış bedelinden satış komisyonu düşülmüştür; maliyet bedeline alış komisyonu dahildir (FIFO). Vergi beyannameniz için vergi idarenizin istediği döviz kuruyla çevirin.';
 
   @override
+  String get portfolioShare => 'Performansı paylaş';
+
+  @override
+  String get portfolioShareHeading => 'Portföyüm';
+
+  @override
+  String get portfolioTopHoldings => 'En büyük pozisyonlar';
+
+  @override
+  String get portfolioShareNote =>
+      'Yalnızca yüzdeler paylaşılır, tutarlar paylaşılmaz.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozisyon',
+      one: '$count pozisyon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Yatırım tavsiyesi değildir';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

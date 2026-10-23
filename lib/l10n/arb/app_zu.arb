@@ -787,5 +787,11 @@
   "portfolioProceeds": "Imali yokuthengisa",
   "portfolioCostBasis": "Izindleko zokuthenga",
   "portfolioFeesPaid": "Izinkokhelo ezikhokhiwe",
-  "portfolioAnnualSummaryNote": "Amanani asemalini yokuqala, awaguqulwanga. Imali yokuthengisa isikhishwe inkokhelo yokuthengisa; izindleko zokuthenga zifaka inkokhelo yokuthenga (FIFO). Embikweni wakho wentela, guqula ngezinga lokushintshaniswa kwemali elidingwa yisiphathimandla sentela."
+  "portfolioAnnualSummaryNote": "Amanani asemalini yokuqala, awaguqulwanga. Imali yokuthengisa isikhishwe inkokhelo yokuthengisa; izindleko zokuthenga zifaka inkokhelo yokuthenga (FIFO). Embikweni wakho wentela, guqula ngezinga lokushintshaniswa kwemali elidingwa yisiphathimandla sentela.",
+  "portfolioShare": "Yabelana ngemiphumela",
+  "portfolioShareHeading": "Iphothifoliyo yami",
+  "portfolioTopHoldings": "Amasheya amakhulu",
+  "portfolioShareNote": "Kwabelwana ngamaphesenti kuphela, hhayi ngamanani emali.",
+  "portfolioPositionsCount": "{count, plural, one{Isheya elingu-{count}} other{Amasheya angu-{count}}}",
+  "shareNotAdvice": "Akusona iseluleko sokutshala imali"
 }

@@ -787,5 +787,11 @@
   "portfolioProceeds": "Koosgã ligdi",
   "portfolioCostBasis": "Raabã ligdi",
   "portfolioFeesPaid": "Ligd sẽn yaod fãa",
-  "portfolioAnnualSummaryNote": "Ligdã yaa ne a pipi ligd buudã, b pa lebg-a ye. Koosgã ligdã, b vʋʋsa koosgã ligd sẽn yaodã; raabã ligdã pʋgẽ, raabã ligd sẽn yaodã be (FIFO). F lampo sebrã yĩnga, lebg ne ligd teedg kʋʋng ning lampo tʋʋm-dãmbã sẽn baoodã."
+  "portfolioAnnualSummaryNote": "Ligdã yaa ne a pipi ligd buudã, b pa lebg-a ye. Koosgã ligdã, b vʋʋsa koosgã ligd sẽn yaodã; raabã ligdã pʋgẽ, raabã ligd sẽn yaodã be (FIFO). F lampo sebrã yĩnga, lebg ne ligd teedg kʋʋng ning lampo tʋʋm-dãmbã sẽn baoodã.",
+  "portfolioShare": "Pʋɩ nafa la bõnem",
+  "portfolioShareHeading": "M portfey",
+  "portfolioTopHoldings": "Aksiõ kãsems",
+  "portfolioShareNote": "Yaa % bala la b pʋɩɩd, pa ligd sõor ye.",
+  "portfolioPositionsCount": "{count, plural, one{Aksiõ {count}} other{Aksiõ {count}}}",
+  "shareNotAdvice": "Pa sagls ligd kẽesg wɛɛngẽ ye"
 }

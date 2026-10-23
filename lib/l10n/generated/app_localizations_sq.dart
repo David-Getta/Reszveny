@@ -2586,6 +2586,32 @@ class AppLocalizationsSq extends AppLocalizations {
       'Shumat në monedhën origjinale, pa konvertim. Të ardhurat janë neto nga komisioni i shitjes; kostoja e blerjes përfshin komisionin e blerjes (FIFO). Për deklaratën tatimore, konvertoni me kursin e këmbimit që kërkon autoriteti juaj tatimor.';
 
   @override
+  String get portfolioShare => 'Ndaj performancën';
+
+  @override
+  String get portfolioShareHeading => 'Portofoli im';
+
+  @override
+  String get portfolioTopHoldings => 'Pozicionet më të mëdha';
+
+  @override
+  String get portfolioShareNote => 'Ndahen vetëm përqindjet, jo shumat.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozicione',
+      one: '$count pozicion',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Nuk është këshillë investimi';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

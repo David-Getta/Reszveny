@@ -2584,6 +2584,33 @@ class AppLocalizationsJv extends AppLocalizations {
       'Jumlah ing mata uang asli, ora diowahi. Asil dodolan wis dikurangi biaya transaksi dodolan; rega tuku wis kalebu biaya transaksi tukon (FIFO). Kanggo laporan pajeg, owahana nganggo kurs sing ditetepake panguwasa pajeg sampeyan.';
 
   @override
+  String get portfolioShare => 'Bagekake kinerja';
+
+  @override
+  String get portfolioShareHeading => 'Portofolioku';
+
+  @override
+  String get portfolioTopHoldings => 'Posisi paling gedhe';
+
+  @override
+  String get portfolioShareNote =>
+      'Mung persentase sing dibagekake, tanpa jumlah dhuwit.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posisi',
+      one: '1 posisi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Dudu saran investasi';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

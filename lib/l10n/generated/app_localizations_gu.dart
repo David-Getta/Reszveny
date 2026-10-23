@@ -2575,6 +2575,32 @@ class AppLocalizationsGu extends AppLocalizations {
       'રકમો મૂળ કરન્સીમાં છે, રૂપાંતરિત નથી. વેચાણની આવક વેચાણનું બ્રોકરેજ બાદ કરીને છે; ખરીદ ખર્ચમાં ખરીદીનું બ્રોકરેજ સામેલ છે (FIFO). ટેક્સ રિટર્ન માટે તમારા કર સત્તાવાળા માગે તે વિનિમય દરે રૂપાંતર કરો.';
 
   @override
+  String get portfolioShare => 'કામગીરી શેર કરો';
+
+  @override
+  String get portfolioShareHeading => 'મારો પોર્ટફોલિયો';
+
+  @override
+  String get portfolioTopHoldings => 'સૌથી મોટી પોઝિશન';
+
+  @override
+  String get portfolioShareNote => 'ફક્ત ટકાવારી શેર થાય છે, કોઈ રકમ નહીં.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count પોઝિશન',
+      one: '1 પોઝિશન',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'રોકાણ સલાહ નથી';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

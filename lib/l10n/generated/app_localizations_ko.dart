@@ -2510,6 +2510,32 @@ class AppLocalizationsKo extends AppLocalizations {
       '금액은 환산하지 않은 원래 통화로 표시됩니다. 양도가액은 매도 수수료를 차감한 금액이며, 취득가액에는 매수 수수료가 포함됩니다(FIFO). 세금 신고 시에는 세무 당국이 요구하는 환율로 환산하세요.';
 
   @override
+  String get portfolioShare => '수익률 공유';
+
+  @override
+  String get portfolioShareHeading => '내 포트폴리오';
+
+  @override
+  String get portfolioTopHoldings => '상위 보유 종목';
+
+  @override
+  String get portfolioShareNote => '금액 없이 비율(%)만 공유됩니다.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count개 종목',
+      one: '1개 종목',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => '투자 조언이 아닙니다';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

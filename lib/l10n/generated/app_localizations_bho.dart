@@ -2575,6 +2575,32 @@ class AppLocalizationsBho extends AppLocalizations {
       'रकम मूल मुद्रा में बा, बदलल नइखे। बिक्री से आमदनी बिक्री के ब्रोकरेज घटा के बा; खरीद लागत में खरीद के ब्रोकरेज शामिल बा (FIFO)। टैक्स रिटर्न खातिर ओह विनिमय दर पर बदलीं जवन रउआ के टैक्स विभाग माँगेला।';
 
   @override
+  String get portfolioShare => 'प्रदर्शन साझा करीं';
+
+  @override
+  String get portfolioShareHeading => 'हमार पोर्टफ़ोलियो';
+
+  @override
+  String get portfolioTopHoldings => 'सबसे बड़ पोजीशन';
+
+  @override
+  String get portfolioShareNote => 'खाली प्रतिशत साझा होला, कवनो रकम ना।';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count पोजीशन',
+      one: '1 पोजीशन',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'निवेश के सलाह ना ह';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

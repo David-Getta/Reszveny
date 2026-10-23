@@ -787,5 +787,11 @@
   "portfolioProceeds": "Tiền thu từ bán",
   "portfolioCostBasis": "Giá vốn",
   "portfolioFeesPaid": "Phí đã trả",
-  "portfolioAnnualSummaryNote": "Số tiền theo đồng tiền gốc, không quy đổi. Tiền thu từ bán đã trừ phí bán; giá vốn đã gồm phí mua (FIFO). Khi khai thuế, hãy quy đổi theo tỷ giá mà cơ quan thuế yêu cầu."
+  "portfolioAnnualSummaryNote": "Số tiền theo đồng tiền gốc, không quy đổi. Tiền thu từ bán đã trừ phí bán; giá vốn đã gồm phí mua (FIFO). Khi khai thuế, hãy quy đổi theo tỷ giá mà cơ quan thuế yêu cầu.",
+  "portfolioShare": "Chia sẻ hiệu suất",
+  "portfolioShareHeading": "Danh mục của tôi",
+  "portfolioTopHoldings": "Vị thế lớn nhất",
+  "portfolioShareNote": "Chỉ chia sẻ tỷ lệ phần trăm, không có số tiền.",
+  "portfolioPositionsCount": "{count, plural, other{{count} vị thế}}",
+  "shareNotAdvice": "Không phải lời khuyên đầu tư"
 }

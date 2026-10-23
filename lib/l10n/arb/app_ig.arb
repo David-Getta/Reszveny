@@ -787,5 +787,11 @@
   "portfolioProceeds": "Ego e nwetara n'ire",
   "portfolioCostBasis": "Ọnụ ahịa ịzụta",
   "portfolioFeesPaid": "Ụgwọ ọrụ akwụrụ",
-  "portfolioAnnualSummaryNote": "Ego ndị a dị n'ego mbụ, a gbanweghị ha. E wepụla ụgwọ ọrụ ire n'ego e nwetara n'ire; ọnụ ahịa ịzụta gụnyere ụgwọ ọrụ ịzụta (FIFO). Maka akụkọ ụtụ isi gị, gbanwee ha n'ọnụego mgbanwe nke ndị ọchịchị ụtụ isi gị chọrọ."
+  "portfolioAnnualSummaryNote": "Ego ndị a dị n'ego mbụ, a gbanweghị ha. E wepụla ụgwọ ọrụ ire n'ego e nwetara n'ire; ọnụ ahịa ịzụta gụnyere ụgwọ ọrụ ịzụta (FIFO). Maka akụkọ ụtụ isi gị, gbanwee ha n'ọnụego mgbanwe nke ndị ọchịchị ụtụ isi gị chọrọ.",
+  "portfolioShare": "Kesaa uru na mfu",
+  "portfolioShareHeading": "Portfolio m",
+  "portfolioTopHoldings": "Ihe kachasị ukwuu ị nwere",
+  "portfolioShareNote": "Naanị pasentị ka a na-ekesa, ọ bụghị ego ole.",
+  "portfolioPositionsCount": "{count, plural, =1{Òkè 1} other{Òkè {count}}}",
+  "shareNotAdvice": "Ọ bụghị ndụmọdụ itinye ego"
 }

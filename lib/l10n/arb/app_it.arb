@@ -787,5 +787,11 @@
   "portfolioProceeds": "Corrispettivo di vendita",
   "portfolioCostBasis": "Costo di acquisto",
   "portfolioFeesPaid": "Commissioni pagate",
-  "portfolioAnnualSummaryNote": "Importi nella valuta originale, non convertiti. Il corrispettivo è al netto della commissione di vendita; il costo di acquisto include la commissione di acquisto (FIFO). Per la dichiarazione dei redditi, converti al tasso di cambio richiesto dalla tua amministrazione fiscale."
+  "portfolioAnnualSummaryNote": "Importi nella valuta originale, non convertiti. Il corrispettivo è al netto della commissione di vendita; il costo di acquisto include la commissione di acquisto (FIFO). Per la dichiarazione dei redditi, converti al tasso di cambio richiesto dalla tua amministrazione fiscale.",
+  "portfolioShare": "Condividi rendimento",
+  "portfolioShareHeading": "Il mio portafoglio",
+  "portfolioTopHoldings": "Posizioni principali",
+  "portfolioShareNote": "Si condividono solo percentuali, nessun importo.",
+  "portfolioPositionsCount": "{count, plural, =1{1 posizione} other{{count} posizioni}}",
+  "shareNotAdvice": "Non è un consiglio di investimento"
 }

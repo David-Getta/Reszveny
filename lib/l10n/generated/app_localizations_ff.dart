@@ -2575,6 +2575,32 @@ class AppLocalizationsFf extends AppLocalizations {
       'Keeweele ina e kaalis iniwal, waylaaka. Ngalu yeeyugol ittaama njoɓdi yeeyugol; coggu soodgol ina waɗi njoɓdi soodgol (FIFO). Ngam deftere lempo maa, waylu e coggu beccol ngol lamu lempo maa naamni.';
 
   @override
+  String get portfolioShare => 'Lollin nafoore/bonannde';
+
+  @override
+  String get portfolioShareHeading => 'Aksiyoŋ am';
+
+  @override
+  String get portfolioTopHoldings => 'Aksiyonji ɓurɗi mawnude';
+
+  @override
+  String get portfolioShareNote => 'Pursantaasji tan, keeweele alaa.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aksiyonji $count',
+      one: 'Aksiyoŋ 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Wonaa wasiya e investisman';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

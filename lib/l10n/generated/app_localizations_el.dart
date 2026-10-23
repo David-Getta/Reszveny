@@ -2591,6 +2591,32 @@ class AppLocalizationsEl extends AppLocalizations {
       'Ποσά στο αρχικό νόμισμα, χωρίς μετατροπή. Τα έσοδα πωλήσεων είναι καθαρά από την προμήθεια πώλησης· η τιμή κτήσης περιλαμβάνει την προμήθεια αγοράς (FIFO). Για τη φορολογική σας δήλωση, μετατρέψτε με την ισοτιμία που απαιτεί η φορολογική αρχή σας.';
 
   @override
+  String get portfolioShare => 'Κοινοποίηση απόδοσης';
+
+  @override
+  String get portfolioShareHeading => 'Το χαρτοφυλάκιό μου';
+
+  @override
+  String get portfolioTopHoldings => 'Μεγαλύτερες θέσεις';
+
+  @override
+  String get portfolioShareNote => 'Κοινοποιούνται μόνο ποσοστά, όχι ποσά.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count θέσεις',
+      one: '1 θέση',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Δεν αποτελεί επενδυτική συμβουλή';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

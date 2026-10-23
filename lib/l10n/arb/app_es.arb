@@ -787,5 +787,11 @@
   "portfolioProceeds": "Valor de transmisión",
   "portfolioCostBasis": "Valor de adquisición",
   "portfolioFeesPaid": "Comisiones pagadas",
-  "portfolioAnnualSummaryNote": "Importes en la moneda original, sin convertir. El valor de transmisión es neto de la comisión de venta; el valor de adquisición incluye la comisión de compra (FIFO). Para tu declaración de impuestos, conviértelos al tipo de cambio que exija tu administración tributaria."
+  "portfolioAnnualSummaryNote": "Importes en la moneda original, sin convertir. El valor de transmisión es neto de la comisión de venta; el valor de adquisición incluye la comisión de compra (FIFO). Para tu declaración de impuestos, conviértelos al tipo de cambio que exija tu administración tributaria.",
+  "portfolioShare": "Compartir rentabilidad",
+  "portfolioShareHeading": "Mi cartera",
+  "portfolioTopHoldings": "Mayores posiciones",
+  "portfolioShareNote": "Solo se comparten porcentajes, no importes.",
+  "portfolioPositionsCount": "{count, plural, =1{1 posición} other{{count} posiciones}}",
+  "shareNotAdvice": "No es asesoramiento de inversión"
 }

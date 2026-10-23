@@ -787,5 +787,11 @@
   "portfolioProceeds": "Galii gurgurtaa",
   "portfolioCostBasis": "Gatii bittaa",
   "portfolioFeesPaid": "Kaffaltii tajaajilaa kaffalame",
-  "portfolioAnnualSummaryNote": "Maallaqni maallaqa jalqabaatiin, hin jijjiiramne. Galii gurgurtaa irraa kaffaltiin tajaajilaa gurgurtaa hir'ifameera; gatiin bittaa kaffaltii tajaajilaa bittaa of keessaa qaba (FIFO). Gabaasa gibiraa keetiif, gatii jijjiirraa abbaan taayitaa gibiraa barbaaduun jijjiiri."
+  "portfolioAnnualSummaryNote": "Maallaqni maallaqa jalqabaatiin, hin jijjiiramne. Galii gurgurtaa irraa kaffaltiin tajaajilaa gurgurtaa hir'ifameera; gatiin bittaa kaffaltii tajaajilaa bittaa of keessaa qaba (FIFO). Gabaasa gibiraa keetiif, gatii jijjiirraa abbaan taayitaa gibiraa barbaaduun jijjiiri.",
+  "portfolioShare": "Bu'aa qoodi",
+  "portfolioShareHeading": "Poortfooliyoo koo",
+  "portfolioTopHoldings": "Qabiyyeewwan gurguddoo",
+  "portfolioShareNote": "Dhibbeentaa qofatu qoodama, hammi maallaqaa hin qoodamu.",
+  "portfolioPositionsCount": "{count, plural, one{Qabiyyee {count}} other{Qabiyyeewwan {count}}}",
+  "shareNotAdvice": "Gorsa invastimantii miti"
 }

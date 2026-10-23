@@ -2586,6 +2586,33 @@ class AppLocalizationsEs extends AppLocalizations {
       'Importes en la moneda original, sin convertir. El valor de transmisión es neto de la comisión de venta; el valor de adquisición incluye la comisión de compra (FIFO). Para tu declaración de impuestos, conviértelos al tipo de cambio que exija tu administración tributaria.';
 
   @override
+  String get portfolioShare => 'Compartir rentabilidad';
+
+  @override
+  String get portfolioShareHeading => 'Mi cartera';
+
+  @override
+  String get portfolioTopHoldings => 'Mayores posiciones';
+
+  @override
+  String get portfolioShareNote =>
+      'Solo se comparten porcentajes, no importes.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posiciones',
+      one: '1 posición',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'No es asesoramiento de inversión';
+
+  @override
   String get portfolioGoalSet => 'Fijar un objetivo';
 
   @override

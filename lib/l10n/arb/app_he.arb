@@ -787,5 +787,11 @@
   "portfolioProceeds": "תמורת המכירה",
   "portfolioCostBasis": "מחיר מקורי",
   "portfolioFeesPaid": "עמלות ששולמו",
-  "portfolioAnnualSummaryNote": "הסכומים במטבע המקורי, ללא המרה. התמורה היא בניכוי עמלת המכירה; המחיר המקורי כולל את עמלת הקנייה (FIFO). לדוח המס יש להמיר לפי שער החליפין שרשות המסים דורשת."
+  "portfolioAnnualSummaryNote": "הסכומים במטבע המקורי, ללא המרה. התמורה היא בניכוי עמלת המכירה; המחיר המקורי כולל את עמלת הקנייה (FIFO). לדוח המס יש להמיר לפי שער החליפין שרשות המסים דורשת.",
+  "portfolioShare": "שיתוף הביצועים",
+  "portfolioShareHeading": "התיק שלי",
+  "portfolioTopHoldings": "הפוזיציות הגדולות",
+  "portfolioShareNote": "משותפים רק אחוזים, ללא סכומים.",
+  "portfolioPositionsCount": "{count, plural, one{פוזיציה אחת} two{שתי פוזיציות} other{{count} פוזיציות}}",
+  "shareNotAdvice": "אין לראות בכך ייעוץ השקעות"
 }

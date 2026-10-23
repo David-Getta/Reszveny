@@ -2592,6 +2592,33 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Mga kantidad sa orihinal nga currency, wala gi-convert. Ang kita sa pagbaligya net na sa komisyon sa pagbaligya; ang gasto sa pagpalit naglakip sa komisyon sa pagpalit (FIFO). Para sa imong tax return, i-convert sa exchange rate nga gikinahanglan sa imong tax authority.';
 
   @override
+  String get portfolioShare => 'Ipaambit ang performance';
+
+  @override
+  String get portfolioShareHeading => 'Akong portfolio';
+
+  @override
+  String get portfolioTopHoldings => 'Pinakadakong mga posisyon';
+
+  @override
+  String get portfolioShareNote =>
+      'Mga porsyento lang ang ipaambit, walay mga kantidad.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka posisyon',
+      one: '1 ka posisyon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Dili tambag sa pagpamuhunan';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

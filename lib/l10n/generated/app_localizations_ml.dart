@@ -2590,6 +2590,33 @@ class AppLocalizationsMl extends AppLocalizations {
       'തുകകൾ യഥാർത്ഥ കറൻസിയിലാണ്, മാറ്റിയിട്ടില്ല. വിൽപ്പന വരുമാനം വിൽപ്പന ഫീസ് കുറച്ചതാണ്; വാങ്ങൽ ചെലവിൽ വാങ്ങൽ ഫീസ് ഉൾപ്പെടുന്നു (FIFO). നികുതി റിട്ടേണിനായി, നിങ്ങളുടെ നികുതി വകുപ്പ് ആവശ്യപ്പെടുന്ന വിനിമയ നിരക്കിൽ മാറ്റുക.';
 
   @override
+  String get portfolioShare => 'പ്രകടനം പങ്കിടുക';
+
+  @override
+  String get portfolioShareHeading => 'എന്റെ പോർട്ട്ഫോളിയോ';
+
+  @override
+  String get portfolioTopHoldings => 'ഏറ്റവും വലിയ പൊസിഷനുകൾ';
+
+  @override
+  String get portfolioShareNote =>
+      'ശതമാനങ്ങൾ മാത്രമാണ് പങ്കിടുന്നത്, തുകകളല്ല.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count പൊസിഷനുകൾ',
+      one: '$count പൊസിഷൻ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'നിക്ഷേപ ഉപദേശമല്ല';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

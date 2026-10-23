@@ -787,5 +787,11 @@
   "portfolioProceeds": "Mali ya swixavisiwa",
   "portfolioCostBasis": "Ntsengo wa ku xava",
   "portfolioFeesPaid": "Tihakelo leti hakeriweke",
-  "portfolioAnnualSummaryNote": "Mali yi le ka mali ya masungulo, a yi cinciwanga. Mali ya swixavisiwa yi susiwile hakelo ya ku xavisa; ntsengo wa ku xava wu katsa hakelo ya ku xava (FIFO). Eka xiviko xa wena xa xibalo, cinca hi mpimo wa ku cincana mali lowu lavekaka hi vulawuri bya xibalo."
+  "portfolioAnnualSummaryNote": "Mali yi le ka mali ya masungulo, a yi cinciwanga. Mali ya swixavisiwa yi susiwile hakelo ya ku xavisa; ntsengo wa ku xava wu katsa hakelo ya ku xava (FIFO). Eka xiviko xa wena xa xibalo, cinca hi mpimo wa ku cincana mali lowu lavekaka hi vulawuri bya xibalo.",
+  "portfolioShare": "Avelana mbuyelo",
+  "portfolioShareHeading": "Phothifoliyo ya mina",
+  "portfolioTopHoldings": "Tixere letikulu",
+  "portfolioShareNote": "Ku avelaniwa tiphesente ntsena, ku nga ri mali.",
+  "portfolioPositionsCount": "{count, plural, one{Xere ya {count}} other{Tixere ta {count}}}",
+  "shareNotAdvice": "A hi ndzayo ya vuvekisi"
 }

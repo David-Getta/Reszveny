@@ -787,5 +787,11 @@
   "portfolioProceeds": "Mapato ya mauzo",
   "portfolioCostBasis": "Gharama ya ununuzi",
   "portfolioFeesPaid": "Ada zilizolipwa",
-  "portfolioAnnualSummaryNote": "Kiasi kiko katika sarafu asili, hakijabadilishwa. Mapato ya mauzo ni baada ya kutoa ada ya mauzo; gharama ya ununuzi inajumuisha ada ya ununuzi (FIFO). Kwa marejesho ya kodi, badilisha kwa kiwango cha ubadilishaji kinachotakiwa na mamlaka ya kodi."
+  "portfolioAnnualSummaryNote": "Kiasi kiko katika sarafu asili, hakijabadilishwa. Mapato ya mauzo ni baada ya kutoa ada ya mauzo; gharama ya ununuzi inajumuisha ada ya ununuzi (FIFO). Kwa marejesho ya kodi, badilisha kwa kiwango cha ubadilishaji kinachotakiwa na mamlaka ya kodi.",
+  "portfolioShare": "Shiriki utendaji",
+  "portfolioShareHeading": "Jalada langu la hisa",
+  "portfolioTopHoldings": "Nafasi kubwa zaidi",
+  "portfolioShareNote": "Asilimia pekee ndizo zinazoshirikiwa, si kiasi cha pesa.",
+  "portfolioPositionsCount": "{count, plural, one{Nafasi {count}} other{Nafasi {count}}}",
+  "shareNotAdvice": "Si ushauri wa uwekezaji"
 }

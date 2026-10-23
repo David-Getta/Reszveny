@@ -2621,6 +2621,33 @@ class AppLocalizationsLv extends AppLocalizations {
       'Summas sākotnējā valūtā, nepārrēķinātas. Pārdošanas ieņēmumi norādīti, atskaitot pārdošanas komisiju; iegādes vērtībā ietilpst pirkuma komisija (FIFO). Nodokļu deklarācijai pārrēķiniet pēc kursa, ko pieprasa jūsu nodokļu administrācija.';
 
   @override
+  String get portfolioShare => 'Kopīgot rezultātus';
+
+  @override
+  String get portfolioShareHeading => 'Mans portfelis';
+
+  @override
+  String get portfolioTopHoldings => 'Lielākās pozīcijas';
+
+  @override
+  String get portfolioShareNote => 'Tiek kopīgoti tikai procenti, bez summām.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozīcijas',
+      one: '$count pozīcija',
+      zero: '$count pozīcijas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Nav ieguldījumu konsultācija';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

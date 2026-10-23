@@ -2576,6 +2576,33 @@ class AppLocalizationsFa extends AppLocalizations {
       'مبالغ به ارز اصلی و بدون تبدیل‌اند. درآمد فروش پس از کسر کارمزد فروش است؛ بهای تمام‌شده شامل کارمزد خرید است (FIFO). برای اظهارنامه مالیاتی، با نرخ ارزی که سازمان مالیاتی شما تعیین می‌کند تبدیل کنید.';
 
   @override
+  String get portfolioShare => 'اشتراک‌گذاری عملکرد';
+
+  @override
+  String get portfolioShareHeading => 'سبد سهام من';
+
+  @override
+  String get portfolioTopHoldings => 'بزرگ‌ترین موقعیت‌ها';
+
+  @override
+  String get portfolioShareNote =>
+      'فقط درصدها به اشتراک گذاشته می‌شوند، نه مبالغ.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count موقعیت',
+      one: '1 موقعیت',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'توصیه سرمایه‌گذاری نیست';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

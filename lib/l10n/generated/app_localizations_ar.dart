@@ -2635,6 +2635,36 @@ class AppLocalizationsAr extends AppLocalizations {
       'المبالغ بالعملة الأصلية دون تحويل. عائدات البيع صافية بعد خصم عمولة البيع؛ وتشمل تكلفة الاقتناء عمولة الشراء (FIFO). لإقرارك الضريبي، حوِّل المبالغ بسعر الصرف الذي تشترطه مصلحة الضرائب لديك.';
 
   @override
+  String get portfolioShare => 'مشاركة الأداء';
+
+  @override
+  String get portfolioShareHeading => 'محفظتي';
+
+  @override
+  String get portfolioTopHoldings => 'أكبر المراكز';
+
+  @override
+  String get portfolioShareNote =>
+      'تتم مشاركة النسب المئوية فقط، دون أي مبالغ.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مركز',
+      many: '$count مركزًا',
+      few: '$count مراكز',
+      two: 'مركزان',
+      one: 'مركز واحد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'ليس نصيحة استثمارية';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

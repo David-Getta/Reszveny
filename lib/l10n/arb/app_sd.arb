@@ -787,5 +787,11 @@
   "portfolioProceeds": "وڪري جي آمدني",
   "portfolioCostBasis": "خريد جي لاڳت",
   "portfolioFeesPaid": "ادا ڪيل فيس",
-  "portfolioAnnualSummaryNote": "رقمون اصل ڪرنسي ۾، تبديل ڪيل ناهن. وڪري جي آمدني مان وڪري جي فيس ڪٽيل آهي؛ خريد جي لاڳت ۾ خريد جي فيس شامل آهي (FIFO). ٽيڪس ريٽرن لاءِ، ان مٽاسٽا جي شرح تي تبديل ڪريو جيڪا توهان جو ٽيڪس کاتو گهري ٿو."
+  "portfolioAnnualSummaryNote": "رقمون اصل ڪرنسي ۾، تبديل ڪيل ناهن. وڪري جي آمدني مان وڪري جي فيس ڪٽيل آهي؛ خريد جي لاڳت ۾ خريد جي فيس شامل آهي (FIFO). ٽيڪس ريٽرن لاءِ، ان مٽاسٽا جي شرح تي تبديل ڪريو جيڪا توهان جو ٽيڪس کاتو گهري ٿو.",
+  "portfolioShare": "ڪارڪردگي شيئر ڪريو",
+  "portfolioShareHeading": "منهنجو پورٽ فوليو",
+  "portfolioTopHoldings": "سڀ کان وڏيون پوزيشنون",
+  "portfolioShareNote": "صرف سيڪڙو شيئر ڪيا ويندا آهن، رقمون نه.",
+  "portfolioPositionsCount": "{count, plural, one{{count} پوزيشن} other{{count} پوزيشنون}}",
+  "shareNotAdvice": "سيڙپڪاري جو مشورو ناهي"
 }

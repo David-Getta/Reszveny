@@ -2581,6 +2581,32 @@ class AppLocalizationsKi extends AppLocalizations {
       'Mbeca irĩ na mbeca cia mbere, itigarũrĩtwo. Mbeca cia ũendia nĩ ciarutĩrwo marĩhi ma ũendia; thogora wa ũgũri nĩ ũtoonyithĩtie marĩhi ma ũgũri (FIFO). Nĩ ũndũ wa riboti yaku ya igooti, garũra na thogora wa kũgarũra mbeca ũrĩa ũbataranagio nĩ ũthamaki wa igooti.';
 
   @override
+  String get portfolioShare => 'Gayana uumithio/hasara';
+
+  @override
+  String get portfolioShareHeading => 'Hisa ciakwa';
+
+  @override
+  String get portfolioTopHoldings => 'Hisa iria nene makĩria';
+
+  @override
+  String get portfolioShareNote => 'Percent tu nĩcio igayanagwo, ti mbeca.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mĩgabana $count',
+      one: 'Mũgabana 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ti ũtaaro wa investment';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

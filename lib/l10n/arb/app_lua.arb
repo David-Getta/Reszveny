@@ -787,5 +787,11 @@
   "portfolioProceeds": "Makuta a kusumbisha",
   "portfolioCostBasis": "Mushinga wa kusumba",
   "portfolioFeesPaid": "Makuta a mudimu afutabu",
-  "portfolioAnnualSummaryNote": "Makuta adi mu makuta a kumpala, kaavua mashintulula to. Makuta a kusumbisha adi mumane kuumusha makuta a mudimu a kusumbisha; mushinga wa kusumba udi ne makuta a mudimu a kusumba (FIFO). Bua mukanda webe wa mpaku, shintulula ku mushinga wa dishintuluija udi bakokeshi ba mpaku bakulomba."
+  "portfolioAnnualSummaryNote": "Makuta adi mu makuta a kumpala, kaavua mashintulula to. Makuta a kusumbisha adi mumane kuumusha makuta a mudimu a kusumbisha; mushinga wa kusumba udi ne makuta a mudimu a kusumba (FIFO). Bua mukanda webe wa mpaku, shintulula ku mushinga wa dishintuluija udi bakokeshi ba mpaku bakulomba.",
+  "portfolioShare": "Abanya dipeta/dijimija",
+  "portfolioShareHeading": "Portefeuille wanyi",
+  "portfolioTopHoldings": "Position minene",
+  "portfolioShareNote": "Badi babanya anu ma pourcentage, kabena babanya makuta to.",
+  "portfolioPositionsCount": "{count, plural, =1{Tshitupa 1} other{Bitupa {count}}}",
+  "shareNotAdvice": "Kadiena mibelu ya kuteka mfranga"
 }

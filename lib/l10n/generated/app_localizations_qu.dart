@@ -2593,6 +2593,33 @@ class AppLocalizationsQu extends AppLocalizations {
       'Qullqikuna ñawpaq qullqinpi, mana tikrasqa. Rantikusqamanta qullqiqa rantikuy comisionta qichusqañam; rantisqa chaninqa rantiy comisionta hap\'in (FIFO). Impuesto willakuyniykipaq, impuesto kamachiq munasqan cambiowan tikray.';
 
   @override
+  String get portfolioShare => 'Rendimientota rakiy';
+
+  @override
+  String get portfolioShareHeading => 'Portafolioy';
+
+  @override
+  String get portfolioTopHoldings => 'Aswan hatun posicionkuna';
+
+  @override
+  String get portfolioShareNote =>
+      'Porcentajekunallam rakikun, manam qullqi haykachu.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posición',
+      one: '$count posición',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Manan qullqi churanapaq yuyaychaychu';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

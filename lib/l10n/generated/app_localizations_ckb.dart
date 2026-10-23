@@ -2581,6 +2581,33 @@ class AppLocalizationsCkb extends AppLocalizations {
       'بڕەکان بە دراوی ڕەسەنن و نەگۆڕدراون. داهاتی فرۆشتن دوای لابردنی کۆمیسیۆنی فرۆشتنە؛ تێچووی کڕین کۆمیسیۆنی کڕین لەخۆدەگرێت (FIFO). بۆ ڕاپۆرتی باج، بە ئەو نرخی ئاڵوگۆڕەی دەسەڵاتی باجەکەت داوای دەکات بیانگۆڕە.';
 
   @override
+  String get portfolioShare => 'هاوبەشکردنی ئەدا';
+
+  @override
+  String get portfolioShareHeading => 'پۆرتفۆلیۆکەم';
+
+  @override
+  String get portfolioTopHoldings => 'گەورەترین پۆزیشنەکان';
+
+  @override
+  String get portfolioShareNote =>
+      'تەنها ڕێژەی سەدی هاوبەش دەکرێت، بڕی پارە نا.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پۆزیشن',
+      one: '1 پۆزیشن',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'ئامۆژگاریی وەبەرهێنان نییە';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

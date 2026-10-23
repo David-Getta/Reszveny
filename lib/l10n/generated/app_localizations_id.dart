@@ -2577,6 +2577,33 @@ class AppLocalizationsId extends AppLocalizations {
       'Jumlah dalam mata uang asli, tidak dikonversi. Hasil penjualan sudah dikurangi biaya transaksi penjualan; harga perolehan sudah termasuk biaya transaksi pembelian (FIFO). Untuk pelaporan pajak, konversikan dengan kurs yang ditetapkan otoritas pajak Anda.';
 
   @override
+  String get portfolioShare => 'Bagikan kinerja';
+
+  @override
+  String get portfolioShareHeading => 'Portofolio saya';
+
+  @override
+  String get portfolioTopHoldings => 'Posisi terbesar';
+
+  @override
+  String get portfolioShareNote =>
+      'Hanya persentase yang dibagikan, tanpa nominal.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posisi',
+      one: '1 posisi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Bukan saran investasi';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

@@ -2572,6 +2572,32 @@ class AppLocalizationsMy extends AppLocalizations {
       'ပမာဏများကို မူလငွေကြေးဖြင့် ပြထားပြီး ပြောင်းလဲတွက်ချက်ထားခြင်း မရှိပါ။ ရောင်းရငွေမှ ရောင်းချမှု ကော်မရှင်ခကို နုတ်ထားပြီး ဝယ်ယူကုန်ကျစရိတ်တွင် ဝယ်ယူမှု ကော်မရှင်ခ ပါဝင်သည် (FIFO)။ အခွန်ကြေညာလွှာအတွက် သင့်အခွန်ဌာနက သတ်မှတ်သော ငွေလဲနှုန်းဖြင့် ပြောင်းလဲပါ။';
 
   @override
+  String get portfolioShare => 'စွမ်းဆောင်ရည် မျှဝေရန်';
+
+  @override
+  String get portfolioShareHeading => 'ကျွန်ုပ်၏ ပေါ့ဖိုလီယို';
+
+  @override
+  String get portfolioTopHoldings => 'အကြီးဆုံး ကိုင်ဆောင်ထားမှုများ';
+
+  @override
+  String get portfolioShareNote =>
+      'ရာခိုင်နှုန်းများကိုသာ မျှဝေပြီး ပမာဏများ မပါဝင်ပါ။';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ကိုင်ဆောင်ထားမှု $count ခု',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

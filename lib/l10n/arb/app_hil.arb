@@ -787,5 +787,11 @@
   "portfolioProceeds": "Kita sa pagbaligya",
   "portfolioCostBasis": "Gasto sa pagbakal",
   "portfolioFeesPaid": "Nabayaran nga komisyon",
-  "portfolioAnnualSummaryNote": "Mga kantidad sa orihinal nga currency, wala gin-convert. Ang kita sa pagbaligya bawas na ang komisyon sa pagbaligya; upod sa gasto sa pagbakal ang komisyon sa pagbakal (FIFO). Para sa imo tax return, i-convert sa exchange rate nga ginapangayo sang imo tax authority."
+  "portfolioAnnualSummaryNote": "Mga kantidad sa orihinal nga currency, wala gin-convert. Ang kita sa pagbaligya bawas na ang komisyon sa pagbaligya; upod sa gasto sa pagbakal ang komisyon sa pagbakal (FIFO). Para sa imo tax return, i-convert sa exchange rate nga ginapangayo sang imo tax authority.",
+  "portfolioShare": "Ipaambit ang performance",
+  "portfolioShareHeading": "Akon portfolio",
+  "portfolioTopHoldings": "Pinakadako nga mga posisyon",
+  "portfolioShareNote": "Porsiyento lang ang ginapaambit, wala sang kantidad.",
+  "portfolioPositionsCount": "{count, plural, =1{1 ka posisyon} other{{count} ka posisyon}}",
+  "shareNotAdvice": "Indi laygay sa pag-invest"
 }

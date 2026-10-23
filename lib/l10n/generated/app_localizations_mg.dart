@@ -2599,6 +2599,33 @@ class AppLocalizationsMg extends AppLocalizations {
       'Amin\'ny vola niaviana ny sanda, tsy novaina. Efa nesorina ny saran\'ny fivarotana amin\'ny vola azo; tafiditra ao amin\'ny vidin\'ny fividianana ny saran\'ny fividianana (FIFO). Ho an\'ny fanambaranao hetra, ovay araka ny tahan\'ny fifanakalozana takian\'ny sampan-draharahan\'ny hetra.';
 
   @override
+  String get portfolioShare => 'Zarao ny vokatra';
+
+  @override
+  String get portfolioShareHeading => 'Ny kitapom-bolako';
+
+  @override
+  String get portfolioTopHoldings => 'Fananana lehibe indrindra';
+
+  @override
+  String get portfolioShareNote =>
+      'Ny isan-jato ihany no zaraina, tsy misy habetsahana.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fananana $count',
+      one: 'Fananana $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Tsy torohevitra momba ny fampiasam-bola';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

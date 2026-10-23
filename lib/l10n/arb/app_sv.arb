@@ -787,5 +787,11 @@
   "portfolioProceeds": "Försäljningspris",
   "portfolioCostBasis": "Omkostnadsbelopp",
   "portfolioFeesPaid": "Betalt courtage",
-  "portfolioAnnualSummaryNote": "Belopp i ursprunglig valuta, inte omräknade. Försäljningspriset är efter avdrag för courtage vid försäljning; omkostnadsbeloppet inkluderar courtage vid köp (FIFO). Till deklarationen räknar du om enligt den växelkurs som skattemyndigheten kräver."
+  "portfolioAnnualSummaryNote": "Belopp i ursprunglig valuta, inte omräknade. Försäljningspriset är efter avdrag för courtage vid försäljning; omkostnadsbeloppet inkluderar courtage vid köp (FIFO). Till deklarationen räknar du om enligt den växelkurs som skattemyndigheten kräver.",
+  "portfolioShare": "Dela utvecklingen",
+  "portfolioShareHeading": "Min portfölj",
+  "portfolioTopHoldings": "Största innehav",
+  "portfolioShareNote": "Endast procentsatser delas, inga belopp.",
+  "portfolioPositionsCount": "{count, plural, one{{count} innehav} other{{count} innehav}}",
+  "shareNotAdvice": "Inte investeringsrådgivning"
 }

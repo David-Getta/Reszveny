@@ -787,5 +787,11 @@
   "portfolioProceeds": "Asil dodolan",
   "portfolioCostBasis": "Rega tuku",
   "portfolioFeesPaid": "Biaya transaksi sing dibayar",
-  "portfolioAnnualSummaryNote": "Jumlah ing mata uang asli, ora diowahi. Asil dodolan wis dikurangi biaya transaksi dodolan; rega tuku wis kalebu biaya transaksi tukon (FIFO). Kanggo laporan pajeg, owahana nganggo kurs sing ditetepake panguwasa pajeg sampeyan."
+  "portfolioAnnualSummaryNote": "Jumlah ing mata uang asli, ora diowahi. Asil dodolan wis dikurangi biaya transaksi dodolan; rega tuku wis kalebu biaya transaksi tukon (FIFO). Kanggo laporan pajeg, owahana nganggo kurs sing ditetepake panguwasa pajeg sampeyan.",
+  "portfolioShare": "Bagekake kinerja",
+  "portfolioShareHeading": "Portofolioku",
+  "portfolioTopHoldings": "Posisi paling gedhe",
+  "portfolioShareNote": "Mung persentase sing dibagekake, tanpa jumlah dhuwit.",
+  "portfolioPositionsCount": "{count, plural, =1{1 posisi} other{{count} posisi}}",
+  "shareNotAdvice": "Dudu saran investasi"
 }

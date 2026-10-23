@@ -787,5 +787,11 @@
   "portfolioProceeds": "እቶት መሸጣ",
   "portfolioCostBasis": "ዋጋ ዕድጊት",
   "portfolioFeesPaid": "ዝተኸፍለ ክፍሊት",
-  "portfolioAnnualSummaryNote": "መጠናት ብመበቆል ባጤራ እዮም፣ ኣይተቐየሩን። እቶት መሸጣ ክፍሊት መሸጣ ተቐኒሱ እዩ፤ ዋጋ ዕድጊት ክፍሊት ዕድጊት የጠቓልል (FIFO)። ንናይ ግብሪ መግለጺኹም፣ ብቲ ቤት ጽሕፈት ግብሪ ዝሓቶ ናይ ገንዘብ ምልውዋጥ ዋጋ ቀይሩ።"
+  "portfolioAnnualSummaryNote": "መጠናት ብመበቆል ባጤራ እዮም፣ ኣይተቐየሩን። እቶት መሸጣ ክፍሊት መሸጣ ተቐኒሱ እዩ፤ ዋጋ ዕድጊት ክፍሊት ዕድጊት የጠቓልል (FIFO)። ንናይ ግብሪ መግለጺኹም፣ ብቲ ቤት ጽሕፈት ግብሪ ዝሓቶ ናይ ገንዘብ ምልውዋጥ ዋጋ ቀይሩ።",
+  "portfolioShare": "ውጽኢት ኣካፍል",
+  "portfolioShareHeading": "ፖርትፎሊዮይ",
+  "portfolioTopHoldings": "ዝዓበዩ ዋንነታት",
+  "portfolioShareNote": "ሚእታዊ ጥራይ ይካፈል፣ መጠን ገንዘብ ኣይካፈልን።",
+  "portfolioPositionsCount": "{count, plural, one{{count} ዋንነት} other{{count} ዋንነታት}}",
+  "shareNotAdvice": "ምኽሪ ወፍሪ ኣይኮነን"
 }

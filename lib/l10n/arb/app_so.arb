@@ -787,5 +787,11 @@
   "portfolioProceeds": "Dakhliga iibka",
   "portfolioCostBasis": "Kharashka iibsiga",
   "portfolioFeesPaid": "Khidmadda la bixiyay",
-  "portfolioAnnualSummaryNote": "Lacagaha waa lacagta asalka ah, lama beddelin. Dakhliga iibka waxaa laga jaray khidmadda iibka; kharashka iibsiga waxaa ku jira khidmadda iibsiga (FIFO). Canshuur celintaada, ku beddel sicirka sarrifka ay hay'adda canshuurtu dalbato."
+  "portfolioAnnualSummaryNote": "Lacagaha waa lacagta asalka ah, lama beddelin. Dakhliga iibka waxaa laga jaray khidmadda iibka; kharashka iibsiga waxaa ku jira khidmadda iibsiga (FIFO). Canshuur celintaada, ku beddel sicirka sarrifka ay hay'adda canshuurtu dalbato.",
+  "portfolioShare": "La wadaag waxqabadka",
+  "portfolioShareHeading": "Portfoliyohayga",
+  "portfolioTopHoldings": "Haysashooyinka ugu waaweyn",
+  "portfolioShareNote": "Boqolleyda oo keliya ayaa la wadaagaa, qaddarka lacagta lama wadaago.",
+  "portfolioPositionsCount": "{count, plural, one{{count} haysasho} other{{count} haysasho}}",
+  "shareNotAdvice": "Ma aha talo maalgashi"
 }

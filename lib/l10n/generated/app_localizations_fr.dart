@@ -2592,6 +2592,33 @@ class AppLocalizationsFr extends AppLocalizations {
       'Montants dans la devise d’origine, non convertis. Le prix de cession s’entend net des frais de vente ; le prix d’acquisition inclut les frais d’achat (FIFO). Pour votre déclaration d’impôts, convertissez au taux de change exigé par votre administration fiscale.';
 
   @override
+  String get portfolioShare => 'Partager la performance';
+
+  @override
+  String get portfolioShareHeading => 'Mon portefeuille';
+
+  @override
+  String get portfolioTopHoldings => 'Principales positions';
+
+  @override
+  String get portfolioShareNote =>
+      'Seuls les pourcentages sont partagés, aucun montant.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count positions',
+      one: '1 position',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ne constitue pas un conseil en investissement';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

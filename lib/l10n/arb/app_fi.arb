@@ -787,5 +787,11 @@
   "portfolioProceeds": "Luovutushinta",
   "portfolioCostBasis": "Hankintameno",
   "portfolioFeesPaid": "Maksetut välityspalkkiot",
-  "portfolioAnnualSummaryNote": "Summat alkuperäisessä valuutassa, muuntamatta. Luovutushinnasta on vähennetty myynnin välityspalkkio; hankintameno sisältää oston välityspalkkion (FIFO). Muunna veroilmoitusta varten verottajan edellyttämällä valuuttakurssilla."
+  "portfolioAnnualSummaryNote": "Summat alkuperäisessä valuutassa, muuntamatta. Luovutushinnasta on vähennetty myynnin välityspalkkio; hankintameno sisältää oston välityspalkkion (FIFO). Muunna veroilmoitusta varten verottajan edellyttämällä valuuttakurssilla.",
+  "portfolioShare": "Jaa tuotto",
+  "portfolioShareHeading": "Oma salkku",
+  "portfolioTopHoldings": "Suurimmat omistukset",
+  "portfolioShareNote": "Vain prosenttiluvut jaetaan, ei summia.",
+  "portfolioPositionsCount": "{count, plural, =1{1 omistus} other{{count} omistusta}}",
+  "shareNotAdvice": "Ei sijoitusneuvontaa"
 }

@@ -2577,6 +2577,32 @@ class AppLocalizationsOr extends AppLocalizations {
       'ରାଶି ମୂଳ ମୁଦ୍ରାରେ, ରୂପାନ୍ତରିତ ନୁହେଁ। ବିକ୍ରି ଆୟରୁ ବିକ୍ରି ଶୁଳ୍କ କଟାଯାଇଛି; କ୍ରୟ ମୂଲ୍ୟରେ କ୍ରୟ ଶୁଳ୍କ ସାମିଲ (FIFO)। ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ, ଆପଣଙ୍କ ଟିକସ ବିଭାଗ ଆବଶ୍ୟକ କରୁଥିବା ବିନିମୟ ଦରରେ ରୂପାନ୍ତର କରନ୍ତୁ।';
 
   @override
+  String get portfolioShare => 'ପ୍ରଦର୍ଶନ ସେୟାର କରନ୍ତୁ';
+
+  @override
+  String get portfolioShareHeading => 'ମୋ ପୋର୍ଟଫୋଲିଓ';
+
+  @override
+  String get portfolioTopHoldings => 'ସବୁଠୁ ବଡ଼ ପୋଜିସନ';
+
+  @override
+  String get portfolioShareNote => 'କେବଳ ପ୍ରତିଶତ ସେୟାର ହୁଏ, ରାଶି ନୁହେଁ।';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countଟି ପୋଜିସନ',
+      one: '$countଟି ପୋଜିସନ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'ନିବେଶ ପରାମର୍ଶ ନୁହେଁ';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

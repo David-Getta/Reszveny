@@ -4465,6 +4465,42 @@ abstract class AppLocalizations {
   /// **'Amounts in the original currency, not converted. Proceeds are net of the sale fee; the cost basis includes the purchase fee (FIFO). For your tax return, convert at the exchange rate your tax authority requires.'**
   String get portfolioAnnualSummaryNote;
 
+  /// Button and sheet title: share the portfolio performance as an image or text (percentages only, no amounts).
+  ///
+  /// In en, this message translates to:
+  /// **'Share performance'**
+  String get portfolioShare;
+
+  /// Heading on the shared portfolio performance image.
+  ///
+  /// In en, this message translates to:
+  /// **'My portfolio'**
+  String get portfolioShareHeading;
+
+  /// Label above the largest positions and their weights on the shared portfolio image.
+  ///
+  /// In en, this message translates to:
+  /// **'Largest positions'**
+  String get portfolioTopHoldings;
+
+  /// Note under the preview of the portfolio performance image.
+  ///
+  /// In en, this message translates to:
+  /// **'Only percentages are shared, no amounts.'**
+  String get portfolioShareNote;
+
+  /// Number of positions in the portfolio, on the shared image.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 position} other{{count} positions}}'**
+  String portfolioPositionsCount(int count);
+
+  /// Small print at the bottom of a shared image.
+  ///
+  /// In en, this message translates to:
+  /// **'Not investment advice'**
+  String get shareNotAdvice;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

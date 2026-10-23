@@ -2580,6 +2580,32 @@ class AppLocalizationsKk extends AppLocalizations {
       'Сомалар бастапқы валютада, айырбасталмаған. Сатудан түскен түсім сату комиссиясы шегерілгеннен кейін көрсетіледі; сатып алу құнына сатып алу комиссиясы кіреді (FIFO). Салық декларациясы үшін салық органыңыз талап ететін бағам бойынша айырбастаңыз.';
 
   @override
+  String get portfolioShare => 'Нәтижелермен бөлісу';
+
+  @override
+  String get portfolioShareHeading => 'Менің портфелім';
+
+  @override
+  String get portfolioTopHoldings => 'Ең ірі позициялар';
+
+  @override
+  String get portfolioShareNote => 'Тек пайыздар бөлісіледі, сомалар емес.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count позиция',
+      one: '1 позиция',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Инвестициялық кеңес емес';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

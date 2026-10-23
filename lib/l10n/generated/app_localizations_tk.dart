@@ -2581,6 +2581,33 @@ class AppLocalizationsTk extends AppLocalizations {
       'Möçberler asyl walýutada, öwrülmedik. Satuw girdejisinden satuw komissiýasy aýrylan; satyn alyş bahasyna satyn alyş komissiýasy goşulan (FIFO). Salgyt beýannamasy üçin salgyt edaraňyzyň talap edýän walýuta hümmeti boýunça öwrüň.';
 
   @override
+  String get portfolioShare => 'Netijäni paýlaş';
+
+  @override
+  String get portfolioShareHeading => 'Meniň portfelim';
+
+  @override
+  String get portfolioTopHoldings => 'Iň uly pozisiýalar';
+
+  @override
+  String get portfolioShareNote =>
+      'Diňe göterimler paýlaşylýar, möçberler däl.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozisiýa',
+      one: '$count pozisiýa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Maýa goýum maslahaty däl';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

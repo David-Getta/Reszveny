@@ -2553,6 +2553,32 @@ class AppLocalizationsLo extends AppLocalizations {
       'ຈຳນວນເງິນເປັນສະກຸນເງິນເດີມ ບໍ່ໄດ້ແປງ. ລາຍຮັບຈາກການຂາຍແມ່ນຫັກຄ່າທຳນຽມການຂາຍແລ້ວ; ຕົ້ນທຶນການຊື້ລວມຄ່າທຳນຽມການຊື້ (FIFO). ສຳລັບການຍື່ນພາສີ, ໃຫ້ແປງຕາມອັດຕາແລກປ່ຽນທີ່ເຈົ້າໜ້າທີ່ພາສີຂອງທ່ານກຳນົດ.';
 
   @override
+  String get portfolioShare => 'ແບ່ງປັນຜົນງານ';
+
+  @override
+  String get portfolioShareHeading => 'ພອດໂຟລິໂອຂອງຂ້ອຍ';
+
+  @override
+  String get portfolioTopHoldings => 'ຮຸ້ນທີ່ຖືຫຼາຍທີ່ສຸດ';
+
+  @override
+  String get portfolioShareNote =>
+      'ແບ່ງປັນສະເພາະເປີເຊັນເທົ່ານັ້ນ ບໍ່ມີຈຳນວນເງິນ';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ລາຍການ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

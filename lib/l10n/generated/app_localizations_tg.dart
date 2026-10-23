@@ -2582,6 +2582,33 @@ class AppLocalizationsTg extends AppLocalizations {
       'Маблағҳо бо асъори аслӣ, бе табдил. Даромад аз фурӯш бе комиссияи фурӯш нишон дода шудааст; арзиши харид комиссияи харидро дар бар мегирад (FIFO). Барои эъломияи андоз бо қурбе табдил диҳед, ки мақомоти андози шумо талаб мекунад.';
 
   @override
+  String get portfolioShare => 'Мубодилаи даромаднокӣ';
+
+  @override
+  String get portfolioShareHeading => 'Портфели ман';
+
+  @override
+  String get portfolioTopHoldings => 'Мавқеъҳои калонтарин';
+
+  @override
+  String get portfolioShareNote =>
+      'Танҳо фоизҳо мубодила мешаванд, бе маблағҳо.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count мавқеъ',
+      one: '$count мавқеъ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Маслиҳати сармоягузорӣ нест';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

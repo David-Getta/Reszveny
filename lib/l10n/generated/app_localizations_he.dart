@@ -2572,6 +2572,33 @@ class AppLocalizationsHe extends AppLocalizations {
       'הסכומים במטבע המקורי, ללא המרה. התמורה היא בניכוי עמלת המכירה; המחיר המקורי כולל את עמלת הקנייה (FIFO). לדוח המס יש להמיר לפי שער החליפין שרשות המסים דורשת.';
 
   @override
+  String get portfolioShare => 'שיתוף הביצועים';
+
+  @override
+  String get portfolioShareHeading => 'התיק שלי';
+
+  @override
+  String get portfolioTopHoldings => 'הפוזיציות הגדולות';
+
+  @override
+  String get portfolioShareNote => 'משותפים רק אחוזים, ללא סכומים.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count פוזיציות',
+      two: 'שתי פוזיציות',
+      one: 'פוזיציה אחת',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'אין לראות בכך ייעוץ השקעות';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

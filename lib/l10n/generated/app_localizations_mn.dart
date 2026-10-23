@@ -2580,6 +2580,33 @@ class AppLocalizationsMn extends AppLocalizations {
       'Дүнгүүд анхны валютаар, хөрвүүлээгүй. Борлуулалтын орлогоос зарах үеийн шимтгэлийг хассан; худалдан авалтын өртөгт авах үеийн шимтгэл багтсан (FIFO). Татварын тайландаа татварын байгууллагын шаардсан ханшаар хөрвүүлнэ үү.';
 
   @override
+  String get portfolioShare => 'Гүйцэтгэлээ хуваалцах';
+
+  @override
+  String get portfolioShareHeading => 'Миний портфолио';
+
+  @override
+  String get portfolioTopHoldings => 'Хамгийн том эзэмшлүүд';
+
+  @override
+  String get portfolioShareNote =>
+      'Зөвхөн хувийг хуваалцах бөгөөд дүнг харуулахгүй.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count эзэмшил',
+      one: '$count эзэмшил',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Хөрөнгө оруулалтын зөвлөгөө биш';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

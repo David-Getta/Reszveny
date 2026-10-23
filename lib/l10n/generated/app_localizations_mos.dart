@@ -2566,6 +2566,32 @@ class AppLocalizationsMos extends AppLocalizations {
       'Ligdã yaa ne a pipi ligd buudã, b pa lebg-a ye. Koosgã ligdã, b vʋʋsa koosgã ligd sẽn yaodã; raabã ligdã pʋgẽ, raabã ligd sẽn yaodã be (FIFO). F lampo sebrã yĩnga, lebg ne ligd teedg kʋʋng ning lampo tʋʋm-dãmbã sẽn baoodã.';
 
   @override
+  String get portfolioShare => 'Pʋɩ nafa la bõnem';
+
+  @override
+  String get portfolioShareHeading => 'M portfey';
+
+  @override
+  String get portfolioTopHoldings => 'Aksiõ kãsems';
+
+  @override
+  String get portfolioShareNote => 'Yaa % bala la b pʋɩɩd, pa ligd sõor ye.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aksiõ $count',
+      one: 'Aksiõ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Pa sagls ligd kẽesg wɛɛngẽ ye';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

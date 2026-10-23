@@ -2588,6 +2588,33 @@ class AppLocalizationsSo extends AppLocalizations {
       'Lacagaha waa lacagta asalka ah, lama beddelin. Dakhliga iibka waxaa laga jaray khidmadda iibka; kharashka iibsiga waxaa ku jira khidmadda iibsiga (FIFO). Canshuur celintaada, ku beddel sicirka sarrifka ay hay\'adda canshuurtu dalbato.';
 
   @override
+  String get portfolioShare => 'La wadaag waxqabadka';
+
+  @override
+  String get portfolioShareHeading => 'Portfoliyohayga';
+
+  @override
+  String get portfolioTopHoldings => 'Haysashooyinka ugu waaweyn';
+
+  @override
+  String get portfolioShareNote =>
+      'Boqolleyda oo keliya ayaa la wadaagaa, qaddarka lacagta lama wadaago.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count haysasho',
+      one: '$count haysasho',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ma aha talo maalgashi';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

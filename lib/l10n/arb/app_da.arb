@@ -787,5 +787,11 @@
   "portfolioProceeds": "Salgssum",
   "portfolioCostBasis": "Anskaffelsessum",
   "portfolioFeesPaid": "Betalt kurtage",
-  "portfolioAnnualSummaryNote": "Beløb i den oprindelige valuta, ikke omregnet. Salgssummen er fratrukket kurtagen ved salg; anskaffelsessummen omfatter kurtagen ved køb (FIFO). Til selvangivelsen skal du omregne til den valutakurs, som skattemyndighederne kræver."
+  "portfolioAnnualSummaryNote": "Beløb i den oprindelige valuta, ikke omregnet. Salgssummen er fratrukket kurtagen ved salg; anskaffelsessummen omfatter kurtagen ved køb (FIFO). Til selvangivelsen skal du omregne til den valutakurs, som skattemyndighederne kræver.",
+  "portfolioShare": "Del afkast",
+  "portfolioShareHeading": "Min portefølje",
+  "portfolioTopHoldings": "Største beholdninger",
+  "portfolioShareNote": "Kun procenter deles, ingen beløb.",
+  "portfolioPositionsCount": "{count, plural, =1{1 beholdning} other{{count} beholdninger}}",
+  "shareNotAdvice": "Ikke investeringsrådgivning"
 }

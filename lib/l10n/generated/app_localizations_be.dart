@@ -2646,6 +2646,34 @@ class AppLocalizationsBe extends AppLocalizations {
       'Сумы ў зыходнай валюце, без пераліку. Выручка паказана за вылікам камісіі за продаж; кошт набыцця ўключае камісію за пакупку (FIFO). Для падатковай дэкларацыі пералічыце па курсе, які патрабуе ваша падатковая служба.';
 
   @override
+  String get portfolioShare => 'Падзяліцца вынікамі';
+
+  @override
+  String get portfolioShareHeading => 'Мой партфель';
+
+  @override
+  String get portfolioTopHoldings => 'Найбуйнейшыя пазіцыі';
+
+  @override
+  String get portfolioShareNote => 'Вы дзеліцеся толькі працэнтамі, без сум.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count пазіцыі',
+      many: '$count пазіцый',
+      few: '$count пазіцыі',
+      one: '$count пазіцыя',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Не з’яўляецца інвестыцыйнай парадай';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

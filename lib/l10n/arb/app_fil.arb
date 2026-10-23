@@ -787,5 +787,11 @@
   "portfolioProceeds": "Kita sa pagbenta",
   "portfolioCostBasis": "Halaga ng pagbili",
   "portfolioFeesPaid": "Binayarang komisyon",
-  "portfolioAnnualSummaryNote": "Mga halaga sa orihinal na currency, hindi naka-convert. Bawas na sa kita sa pagbenta ang komisyon sa pagbenta; kasama sa halaga ng pagbili ang komisyon sa pagbili (FIFO). Para sa iyong tax return, i-convert sa exchange rate na hinihingi ng iyong tax authority."
+  "portfolioAnnualSummaryNote": "Mga halaga sa orihinal na currency, hindi naka-convert. Bawas na sa kita sa pagbenta ang komisyon sa pagbenta; kasama sa halaga ng pagbili ang komisyon sa pagbili (FIFO). Para sa iyong tax return, i-convert sa exchange rate na hinihingi ng iyong tax authority.",
+  "portfolioShare": "Ibahagi ang performance",
+  "portfolioShareHeading": "Aking portfolio",
+  "portfolioTopHoldings": "Pinakamalalaking posisyon",
+  "portfolioShareNote": "Porsyento lang ang ibinabahagi, walang halaga.",
+  "portfolioPositionsCount": "{count, plural, =1{1 posisyon} other{{count} posisyon}}",
+  "shareNotAdvice": "Hindi payo sa pamumuhunan"
 }

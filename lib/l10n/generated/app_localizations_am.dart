@@ -2547,6 +2547,32 @@ class AppLocalizationsAm extends AppLocalizations {
       'መጠኖቹ በመጀመሪያው ምንዛሬ ናቸው፣ አልተቀየሩም። የሽያጭ ገቢው የሽያጭ ኮሚሽኑ ተቀንሶ ነው፤ የግዢ ወጪው የግዢ ኮሚሽኑን ያካትታል (FIFO)። ለግብር ማስታወቂያዎ የግብር ባለሥልጣንዎ በሚጠይቀው የምንዛሪ ተመን ይቀይሩ።';
 
   @override
+  String get portfolioShare => 'አፈጻጸምን አጋራ';
+
+  @override
+  String get portfolioShareHeading => 'የእኔ ፖርትፎሊዮ';
+
+  @override
+  String get portfolioTopHoldings => 'ትልልቅ ይዞታዎች';
+
+  @override
+  String get portfolioShareNote => 'የሚጋሩት መቶኛዎች ብቻ ናቸው፤ መጠኖች አይጋሩም።';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ይዞታዎች',
+      one: '1 ይዞታ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'የኢንቨስትመንት ምክር አይደለም';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

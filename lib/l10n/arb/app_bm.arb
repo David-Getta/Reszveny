@@ -787,5 +787,11 @@
   "portfolioProceeds": "Feereli wari",
   "portfolioCostBasis": "Sanni sɔngɔ",
   "portfolioFeesPaid": "Sara saralenw",
-  "portfolioAnnualSummaryNote": "Wari hakɛw bɛ wari fɔlɔ la, u ma falen. Feereli sara bɔlen don feereli wari la; sanni sara bɛ sanni sɔngɔ la (FIFO). I ka nisɔngɔ dantigɛli kama, u falen ni wari falen sɔngɔ ye min i ka nisɔngɔ ɲɛmɔgɔw b'a fɛ."
+  "portfolioAnnualSummaryNote": "Wari hakɛw bɛ wari fɔlɔ la, u ma falen. Feereli sara bɔlen don feereli wari la; sanni sara bɛ sanni sɔngɔ la (FIFO). I ka nisɔngɔ dantigɛli kama, u falen ni wari falen sɔngɔ ye min i ka nisɔngɔ ɲɛmɔgɔw b'a fɛ.",
+  "portfolioShare": "Tɔnɔ/bɔnɛ jɛnsɛn",
+  "portfolioShareHeading": "N ka aksiyɔn kɛsu",
+  "portfolioTopHoldings": "Aksiyɔn belebelebaw",
+  "portfolioShareNote": "Pursantaziw dɔrɔn de bɛ jɛnsɛn, wari hakɛw tɛ.",
+  "portfolioPositionsCount": "{count, plural, =1{Aksiyɔn 1} other{Aksiyɔn {count}}}",
+  "shareNotAdvice": "Wari donni ladilikan tɛ"
 }

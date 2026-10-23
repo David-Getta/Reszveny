@@ -2550,6 +2550,31 @@ class AppLocalizationsTh extends AppLocalizations {
       'จำนวนเงินเป็นสกุลเงินเดิม ไม่ได้แปลงค่า รายรับจากการขายหักค่าธรรมเนียมการขายแล้ว ต้นทุนการได้มารวมค่าธรรมเนียมการซื้อ (FIFO) สำหรับการยื่นภาษี โปรดแปลงค่าด้วยอัตราแลกเปลี่ยนที่หน่วยงานภาษีของคุณกำหนด';
 
   @override
+  String get portfolioShare => 'แชร์ผลการลงทุน';
+
+  @override
+  String get portfolioShareHeading => 'พอร์ตโฟลิโอของฉัน';
+
+  @override
+  String get portfolioTopHoldings => 'หุ้นที่ถือสัดส่วนสูงสุด';
+
+  @override
+  String get portfolioShareNote => 'แชร์เฉพาะเปอร์เซ็นต์ ไม่มีจำนวนเงิน';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'หุ้นที่ถือ $count รายการ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'ไม่ใช่คำแนะนำในการลงทุน';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

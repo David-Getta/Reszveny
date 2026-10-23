@@ -787,5 +787,11 @@
   "portfolioProceeds": "Satuw girdejisi",
   "portfolioCostBasis": "Satyn alyş bahasy",
   "portfolioFeesPaid": "Tölenen komissiýa",
-  "portfolioAnnualSummaryNote": "Möçberler asyl walýutada, öwrülmedik. Satuw girdejisinden satuw komissiýasy aýrylan; satyn alyş bahasyna satyn alyş komissiýasy goşulan (FIFO). Salgyt beýannamasy üçin salgyt edaraňyzyň talap edýän walýuta hümmeti boýunça öwrüň."
+  "portfolioAnnualSummaryNote": "Möçberler asyl walýutada, öwrülmedik. Satuw girdejisinden satuw komissiýasy aýrylan; satyn alyş bahasyna satyn alyş komissiýasy goşulan (FIFO). Salgyt beýannamasy üçin salgyt edaraňyzyň talap edýän walýuta hümmeti boýunça öwrüň.",
+  "portfolioShare": "Netijäni paýlaş",
+  "portfolioShareHeading": "Meniň portfelim",
+  "portfolioTopHoldings": "Iň uly pozisiýalar",
+  "portfolioShareNote": "Diňe göterimler paýlaşylýar, möçberler däl.",
+  "portfolioPositionsCount": "{count, plural, one{{count} pozisiýa} other{{count} pozisiýa}}",
+  "shareNotAdvice": "Maýa goýum maslahaty däl"
 }

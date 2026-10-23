@@ -2542,6 +2542,32 @@ class AppLocalizationsTi extends AppLocalizations {
       'መጠናት ብመበቆል ባጤራ እዮም፣ ኣይተቐየሩን። እቶት መሸጣ ክፍሊት መሸጣ ተቐኒሱ እዩ፤ ዋጋ ዕድጊት ክፍሊት ዕድጊት የጠቓልል (FIFO)። ንናይ ግብሪ መግለጺኹም፣ ብቲ ቤት ጽሕፈት ግብሪ ዝሓቶ ናይ ገንዘብ ምልውዋጥ ዋጋ ቀይሩ።';
 
   @override
+  String get portfolioShare => 'ውጽኢት ኣካፍል';
+
+  @override
+  String get portfolioShareHeading => 'ፖርትፎሊዮይ';
+
+  @override
+  String get portfolioTopHoldings => 'ዝዓበዩ ዋንነታት';
+
+  @override
+  String get portfolioShareNote => 'ሚእታዊ ጥራይ ይካፈል፣ መጠን ገንዘብ ኣይካፈልን።';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ዋንነታት',
+      one: '$count ዋንነት',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'ምኽሪ ወፍሪ ኣይኮነን';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

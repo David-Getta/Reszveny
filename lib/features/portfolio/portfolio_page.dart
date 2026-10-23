@@ -18,6 +18,7 @@ import 'split_dialog.dart';
 import 'holdings_import.dart';
 import 'portfolio_history.dart';
 import 'portfolio_review_card.dart';
+import 'portfolio_share_card.dart';
 import 'portfolio_store.dart';
 import 'portfolio_valuation.dart';
 
@@ -297,8 +298,25 @@ class _PortfolioBody extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(l10n.portfolioTotalValue, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
-                        const SizedBox(height: 4),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                l10n.portfolioTotalValue,
+                                style: theme.textTheme.labelLarge?.copyWith(color: p.muted),
+                              ),
+                            ),
+                            // A teljesítmény megosztása képként vagy szövegként (csak százalékok).
+                            if (!s.unknown && s.rows.isNotEmpty)
+                              IconButton(
+                                key: const ValueKey('portfolio-share'),
+                                tooltip: l10n.portfolioShare,
+                                visualDensity: VisualDensity.compact,
+                                icon: Icon(Icons.ios_share_rounded, size: 20, color: p.muted),
+                                onPressed: () => showPortfolioShare(context, s),
+                              ),
+                          ],
+                        ),
                         Text(
                           s.unknown ? l10n.notAvailable : fmt.money(s.totalValue, ccy),
                           style: theme.textTheme.headlineMedium,

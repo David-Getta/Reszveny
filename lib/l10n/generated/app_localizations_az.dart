@@ -2582,6 +2582,32 @@ class AppLocalizationsAz extends AppLocalizations {
       'Məbləğlər ilkin valyutadadır, çevrilməyib. Satışdan gəlir satış komissiyası çıxılmaqla göstərilir; alış dəyərinə alış komissiyası daxildir (FIFO). Vergi bəyannaməsi üçün vergi orqanınızın tələb etdiyi məzənnə ilə çevirin.';
 
   @override
+  String get portfolioShare => 'Nəticələri paylaş';
+
+  @override
+  String get portfolioShareHeading => 'Portfelim';
+
+  @override
+  String get portfolioTopHoldings => 'Ən böyük mövqelər';
+
+  @override
+  String get portfolioShareNote => 'Yalnız faizlər paylaşılır, məbləğlər yox.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count mövqe',
+      one: '1 mövqe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'İnvestisiya məsləhəti deyil';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

@@ -787,5 +787,11 @@
   "portfolioProceeds": "Prihod od prodaje",
   "portfolioCostBasis": "Nabavna vrijednost",
   "portfolioFeesPaid": "Plaćena provizija",
-  "portfolioAnnualSummaryNote": "Iznosi su u originalnoj valuti, nisu preračunati. Prihod od prodaje umanjen je za proviziju pri prodaji; nabavna vrijednost uključuje proviziju pri kupovini (FIFO). Za poresku prijavu preračunajte po kursu koji zahtijeva vaša poreska uprava."
+  "portfolioAnnualSummaryNote": "Iznosi su u originalnoj valuti, nisu preračunati. Prihod od prodaje umanjen je za proviziju pri prodaji; nabavna vrijednost uključuje proviziju pri kupovini (FIFO). Za poresku prijavu preračunajte po kursu koji zahtijeva vaša poreska uprava.",
+  "portfolioShare": "Podijeli rezultate",
+  "portfolioShareHeading": "Moj portfolio",
+  "portfolioTopHoldings": "Najveće pozicije",
+  "portfolioShareNote": "Dijele se samo procenti, bez iznosa.",
+  "portfolioPositionsCount": "{count, plural, one{{count} pozicija} few{{count} pozicije} other{{count} pozicija}}",
+  "shareNotAdvice": "Nije investicijski savjet"
 }

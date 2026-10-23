@@ -814,6 +814,16 @@ void main() {
     await _shot(tester, 'portfolio_account_phone_hu');
   });
 
+  testWidgets('sharing the portfolio performance on a phone (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'), portfolio: _samplePortfolio(), currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-share')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_share_phone_hu');
+  });
+
   testWidgets('annual summary on a phone (hungarian)', (tester) async {
     final portfolio = PortfolioStore(
       lots: [

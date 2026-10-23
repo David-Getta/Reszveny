@@ -787,5 +787,11 @@
   "portfolioProceeds": "Satış bedeli",
   "portfolioCostBasis": "Maliyet bedeli",
   "portfolioFeesPaid": "Ödenen komisyon",
-  "portfolioAnnualSummaryNote": "Tutarlar orijinal para biriminde, çevrilmemiştir. Satış bedelinden satış komisyonu düşülmüştür; maliyet bedeline alış komisyonu dahildir (FIFO). Vergi beyannameniz için vergi idarenizin istediği döviz kuruyla çevirin."
+  "portfolioAnnualSummaryNote": "Tutarlar orijinal para biriminde, çevrilmemiştir. Satış bedelinden satış komisyonu düşülmüştür; maliyet bedeline alış komisyonu dahildir (FIFO). Vergi beyannameniz için vergi idarenizin istediği döviz kuruyla çevirin.",
+  "portfolioShare": "Performansı paylaş",
+  "portfolioShareHeading": "Portföyüm",
+  "portfolioTopHoldings": "En büyük pozisyonlar",
+  "portfolioShareNote": "Yalnızca yüzdeler paylaşılır, tutarlar paylaşılmaz.",
+  "portfolioPositionsCount": "{count, plural, one{{count} pozisyon} other{{count} pozisyon}}",
+  "shareNotAdvice": "Yatırım tavsiyesi değildir"
 }

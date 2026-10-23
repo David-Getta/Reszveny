@@ -2582,6 +2582,32 @@ class AppLocalizationsFi extends AppLocalizations {
       'Summat alkuperäisessä valuutassa, muuntamatta. Luovutushinnasta on vähennetty myynnin välityspalkkio; hankintameno sisältää oston välityspalkkion (FIFO). Muunna veroilmoitusta varten verottajan edellyttämällä valuuttakurssilla.';
 
   @override
+  String get portfolioShare => 'Jaa tuotto';
+
+  @override
+  String get portfolioShareHeading => 'Oma salkku';
+
+  @override
+  String get portfolioTopHoldings => 'Suurimmat omistukset';
+
+  @override
+  String get portfolioShareNote => 'Vain prosenttiluvut jaetaan, ei summia.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count omistusta',
+      one: '1 omistus',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ei sijoitusneuvontaa';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

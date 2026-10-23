@@ -2586,6 +2586,33 @@ class AppLocalizationsNl extends AppLocalizations {
       'Bedragen in de oorspronkelijke valuta, niet omgerekend. De opbrengst is na aftrek van de transactiekosten bij verkoop; de verkrijgingsprijs is inclusief de transactiekosten bij aankoop (FIFO). Reken voor je belastingaangifte om tegen de wisselkoers die je belastingdienst voorschrijft.';
 
   @override
+  String get portfolioShare => 'Rendement delen';
+
+  @override
+  String get portfolioShareHeading => 'Mijn portefeuille';
+
+  @override
+  String get portfolioTopHoldings => 'Grootste posities';
+
+  @override
+  String get portfolioShareNote =>
+      'Alleen percentages worden gedeeld, geen bedragen.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posities',
+      one: '$count positie',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Geen beleggingsadvies';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

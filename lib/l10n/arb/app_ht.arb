@@ -787,5 +787,11 @@
   "portfolioProceeds": "Revni lavant",
   "portfolioCostBasis": "Pri acha",
   "portfolioFeesPaid": "Komisyon ou peye",
-  "portfolioAnnualSummaryNote": "Montan yo nan lajan orijinal la, yo pa konvèti. Revni lavant yo se apre komisyon lavant lan retire; pri acha a gen ladan l komisyon acha a (FIFO). Pou deklarasyon taks ou, konvèti yo nan to chanj otorite taks ou egzije a."
+  "portfolioAnnualSummaryNote": "Montan yo nan lajan orijinal la, yo pa konvèti. Revni lavant yo se apre komisyon lavant lan retire; pri acha a gen ladan l komisyon acha a (FIFO). Pou deklarasyon taks ou, konvèti yo nan to chanj otorite taks ou egzije a.",
+  "portfolioShare": "Pataje pèfòmans lan",
+  "portfolioShareHeading": "Pòtfèy mwen",
+  "portfolioTopHoldings": "Pi gwo pozisyon yo",
+  "portfolioShareNote": "Se sèlman pousantaj yo ki pataje, pa gen montan.",
+  "portfolioPositionsCount": "{count, plural, =1{1 pozisyon} other{{count} pozisyon}}",
+  "shareNotAdvice": "Se pa yon konsèy envestisman"
 }

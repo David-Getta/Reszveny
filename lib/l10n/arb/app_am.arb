@@ -787,5 +787,11 @@
   "portfolioProceeds": "የሽያጭ ገቢ",
   "portfolioCostBasis": "የግዢ ወጪ",
   "portfolioFeesPaid": "የተከፈለ ኮሚሽን",
-  "portfolioAnnualSummaryNote": "መጠኖቹ በመጀመሪያው ምንዛሬ ናቸው፣ አልተቀየሩም። የሽያጭ ገቢው የሽያጭ ኮሚሽኑ ተቀንሶ ነው፤ የግዢ ወጪው የግዢ ኮሚሽኑን ያካትታል (FIFO)። ለግብር ማስታወቂያዎ የግብር ባለሥልጣንዎ በሚጠይቀው የምንዛሪ ተመን ይቀይሩ።"
+  "portfolioAnnualSummaryNote": "መጠኖቹ በመጀመሪያው ምንዛሬ ናቸው፣ አልተቀየሩም። የሽያጭ ገቢው የሽያጭ ኮሚሽኑ ተቀንሶ ነው፤ የግዢ ወጪው የግዢ ኮሚሽኑን ያካትታል (FIFO)። ለግብር ማስታወቂያዎ የግብር ባለሥልጣንዎ በሚጠይቀው የምንዛሪ ተመን ይቀይሩ።",
+  "portfolioShare": "አፈጻጸምን አጋራ",
+  "portfolioShareHeading": "የእኔ ፖርትፎሊዮ",
+  "portfolioTopHoldings": "ትልልቅ ይዞታዎች",
+  "portfolioShareNote": "የሚጋሩት መቶኛዎች ብቻ ናቸው፤ መጠኖች አይጋሩም።",
+  "portfolioPositionsCount": "{count, plural, =1{1 ይዞታ} other{{count} ይዞታዎች}}",
+  "shareNotAdvice": "የኢንቨስትመንት ምክር አይደለም"
 }

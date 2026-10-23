@@ -787,5 +787,11 @@
   "portfolioProceeds": "Příjmy z prodeje",
   "portfolioCostBasis": "Nabývací cena",
   "portfolioFeesPaid": "Zaplacené poplatky",
-  "portfolioAnnualSummaryNote": "Částky v původní měně, bez přepočtu. Příjmy z prodeje jsou po odečtení poplatku za prodej; nabývací cena zahrnuje poplatek za nákup (FIFO). Pro daňové přiznání je přepočtěte kurzem, který vyžaduje váš finanční úřad."
+  "portfolioAnnualSummaryNote": "Částky v původní měně, bez přepočtu. Příjmy z prodeje jsou po odečtení poplatku za prodej; nabývací cena zahrnuje poplatek za nákup (FIFO). Pro daňové přiznání je přepočtěte kurzem, který vyžaduje váš finanční úřad.",
+  "portfolioShare": "Sdílet výkonnost",
+  "portfolioShareHeading": "Moje portfolio",
+  "portfolioTopHoldings": "Největší pozice",
+  "portfolioShareNote": "Sdílejí se jen procenta, žádné částky.",
+  "portfolioPositionsCount": "{count, plural, =1{1 pozice} few{{count} pozice} many{{count} pozice} other{{count} pozic}}",
+  "shareNotAdvice": "Nejde o investiční doporučení"
 }

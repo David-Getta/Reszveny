@@ -2586,6 +2586,33 @@ class AppLocalizationsPt extends AppLocalizations {
       'Valores na moeda original, sem conversão. O valor de alienação já desconta a comissão de venda; o custo de aquisição inclui a comissão de compra (FIFO). Para a declaração de imposto, converta pela taxa de câmbio exigida pela sua autoridade fiscal.';
 
   @override
+  String get portfolioShare => 'Compartilhar desempenho';
+
+  @override
+  String get portfolioShareHeading => 'Minha carteira';
+
+  @override
+  String get portfolioTopHoldings => 'Maiores posições';
+
+  @override
+  String get portfolioShareNote =>
+      'Apenas as percentagens são compartilhadas, sem valores.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posições',
+      one: '$count posição',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Não é aconselhamento de investimento';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

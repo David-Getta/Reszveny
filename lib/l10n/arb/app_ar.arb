@@ -787,5 +787,11 @@
   "portfolioProceeds": "عائدات البيع",
   "portfolioCostBasis": "تكلفة الاقتناء",
   "portfolioFeesPaid": "العمولات المدفوعة",
-  "portfolioAnnualSummaryNote": "المبالغ بالعملة الأصلية دون تحويل. عائدات البيع صافية بعد خصم عمولة البيع؛ وتشمل تكلفة الاقتناء عمولة الشراء (FIFO). لإقرارك الضريبي، حوِّل المبالغ بسعر الصرف الذي تشترطه مصلحة الضرائب لديك."
+  "portfolioAnnualSummaryNote": "المبالغ بالعملة الأصلية دون تحويل. عائدات البيع صافية بعد خصم عمولة البيع؛ وتشمل تكلفة الاقتناء عمولة الشراء (FIFO). لإقرارك الضريبي، حوِّل المبالغ بسعر الصرف الذي تشترطه مصلحة الضرائب لديك.",
+  "portfolioShare": "مشاركة الأداء",
+  "portfolioShareHeading": "محفظتي",
+  "portfolioTopHoldings": "أكبر المراكز",
+  "portfolioShareNote": "تتم مشاركة النسب المئوية فقط، دون أي مبالغ.",
+  "portfolioPositionsCount": "{count, plural, =1{مركز واحد} =2{مركزان} few{{count} مراكز} many{{count} مركزًا} other{{count} مركز}}",
+  "shareNotAdvice": "ليس نصيحة استثمارية"
 }

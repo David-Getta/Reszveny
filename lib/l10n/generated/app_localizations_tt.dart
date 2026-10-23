@@ -2578,6 +2578,32 @@ class AppLocalizationsTt extends AppLocalizations {
       'Суммалар баштагы валютада, күчерелмәгән. Сатудан керем сату комиссиясен чигереп күрсәтелә; сатып алу бәясенә сатып алу комиссиясе керә (FIFO). Салым декларациясе өчен салым органыгыз таләп иткән алмашу курсы буенча күчерегез.';
 
   @override
+  String get portfolioShare => 'Керемлелек белән бүлешү';
+
+  @override
+  String get portfolioShareHeading => 'Минем портфель';
+
+  @override
+  String get portfolioTopHoldings => 'Иң зур позицияләр';
+
+  @override
+  String get portfolioShareNote => 'Процентлар гына бүлешелә, суммалар юк.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count позиция',
+      one: '$count позиция',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Инвестиция киңәше түгел';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

@@ -787,5 +787,11 @@
   "portfolioProceeds": "Prix de cession",
   "portfolioCostBasis": "Prix d’acquisition",
   "portfolioFeesPaid": "Frais payés",
-  "portfolioAnnualSummaryNote": "Montants dans la devise d’origine, non convertis. Le prix de cession s’entend net des frais de vente ; le prix d’acquisition inclut les frais d’achat (FIFO). Pour votre déclaration d’impôts, convertissez au taux de change exigé par votre administration fiscale."
+  "portfolioAnnualSummaryNote": "Montants dans la devise d’origine, non convertis. Le prix de cession s’entend net des frais de vente ; le prix d’acquisition inclut les frais d’achat (FIFO). Pour votre déclaration d’impôts, convertissez au taux de change exigé par votre administration fiscale.",
+  "portfolioShare": "Partager la performance",
+  "portfolioShareHeading": "Mon portefeuille",
+  "portfolioTopHoldings": "Principales positions",
+  "portfolioShareNote": "Seuls les pourcentages sont partagés, aucun montant.",
+  "portfolioPositionsCount": "{count, plural, =1{1 position} other{{count} positions}}",
+  "shareNotAdvice": "Ne constitue pas un conseil en investissement"
 }

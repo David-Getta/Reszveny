@@ -787,5 +787,11 @@
   "portfolioProceeds": "Vola azo tamin'ny fivarotana",
   "portfolioCostBasis": "Vidin'ny fividianana",
   "portfolioFeesPaid": "Sarany naloa",
-  "portfolioAnnualSummaryNote": "Amin'ny vola niaviana ny sanda, tsy novaina. Efa nesorina ny saran'ny fivarotana amin'ny vola azo; tafiditra ao amin'ny vidin'ny fividianana ny saran'ny fividianana (FIFO). Ho an'ny fanambaranao hetra, ovay araka ny tahan'ny fifanakalozana takian'ny sampan-draharahan'ny hetra."
+  "portfolioAnnualSummaryNote": "Amin'ny vola niaviana ny sanda, tsy novaina. Efa nesorina ny saran'ny fivarotana amin'ny vola azo; tafiditra ao amin'ny vidin'ny fividianana ny saran'ny fividianana (FIFO). Ho an'ny fanambaranao hetra, ovay araka ny tahan'ny fifanakalozana takian'ny sampan-draharahan'ny hetra.",
+  "portfolioShare": "Zarao ny vokatra",
+  "portfolioShareHeading": "Ny kitapom-bolako",
+  "portfolioTopHoldings": "Fananana lehibe indrindra",
+  "portfolioShareNote": "Ny isan-jato ihany no zaraina, tsy misy habetsahana.",
+  "portfolioPositionsCount": "{count, plural, one{Fananana {count}} other{Fananana {count}}}",
+  "shareNotAdvice": "Tsy torohevitra momba ny fampiasam-bola"
 }

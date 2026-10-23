@@ -787,5 +787,11 @@
   "portfolioProceeds": "Ingeniso yokuthengisa",
   "portfolioCostBasis": "Iindleko zokuthenga",
   "portfolioFeesPaid": "Iifizi ezihlawuliweyo",
-  "portfolioAnnualSummaryNote": "Izixa zikwimali yokuqala, aziguqulwanga. Ingeniso yokuthengisa sele kutsalwe ifizi yokuthengisa; iindleko zokuthenga ziquka ifizi yokuthenga (FIFO). Kwingxelo yakho yerhafu, guqula ngexabiso lotshintshiselwano elifunwa ligunya lerhafu."
+  "portfolioAnnualSummaryNote": "Izixa zikwimali yokuqala, aziguqulwanga. Ingeniso yokuthengisa sele kutsalwe ifizi yokuthengisa; iindleko zokuthenga ziquka ifizi yokuthenga (FIFO). Kwingxelo yakho yerhafu, guqula ngexabiso lotshintshiselwano elifunwa ligunya lerhafu.",
+  "portfolioShare": "Yabelana ngeziphumo",
+  "portfolioShareHeading": "Ipotifoliyo yam",
+  "portfolioTopHoldings": "Iipozishini ezinkulu",
+  "portfolioShareNote": "Kwabelwana ngeepesenti kuphela, hayi ngezixa zemali.",
+  "portfolioPositionsCount": "{count, plural, one{Ipozishini e-{count}} other{Iipozishini ezi-{count}}}",
+  "shareNotAdvice": "Ayilocebiso lotyalo-mali"
 }

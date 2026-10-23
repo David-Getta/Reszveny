@@ -787,5 +787,11 @@
   "portfolioProceeds": "Pardavimo pajamos",
   "portfolioCostBasis": "Įsigijimo kaina",
   "portfolioFeesPaid": "Sumokėti komisiniai",
-  "portfolioAnnualSummaryNote": "Sumos pradine valiuta, neperskaičiuotos. Pardavimo pajamos nurodytos atėmus pardavimo komisinius; įsigijimo kaina apima pirkimo komisinius (FIFO). Mokesčių deklaracijai perskaičiuokite pagal kursą, kurio reikalauja jūsų mokesčių administratorius."
+  "portfolioAnnualSummaryNote": "Sumos pradine valiuta, neperskaičiuotos. Pardavimo pajamos nurodytos atėmus pardavimo komisinius; įsigijimo kaina apima pirkimo komisinius (FIFO). Mokesčių deklaracijai perskaičiuokite pagal kursą, kurio reikalauja jūsų mokesčių administratorius.",
+  "portfolioShare": "Bendrinti rezultatus",
+  "portfolioShareHeading": "Mano portfelis",
+  "portfolioTopHoldings": "Didžiausios pozicijos",
+  "portfolioShareNote": "Bendrinami tik procentai, jokių sumų.",
+  "portfolioPositionsCount": "{count, plural, one{{count} pozicija} few{{count} pozicijos} many{{count} pozicijos} other{{count} pozicijų}}",
+  "shareNotAdvice": "Tai nėra investavimo rekomendacija"
 }

@@ -787,5 +787,11 @@
   "portfolioProceeds": "Încasări din vânzări",
   "portfolioCostBasis": "Cost de achiziție",
   "portfolioFeesPaid": "Comisioane plătite",
-  "portfolioAnnualSummaryNote": "Sume în moneda originală, neconvertite. Încasările sunt nete de comisionul de vânzare; costul de achiziție include comisionul de cumpărare (FIFO). Pentru declarația fiscală, convertește la cursul de schimb cerut de autoritatea fiscală."
+  "portfolioAnnualSummaryNote": "Sume în moneda originală, neconvertite. Încasările sunt nete de comisionul de vânzare; costul de achiziție include comisionul de cumpărare (FIFO). Pentru declarația fiscală, convertește la cursul de schimb cerut de autoritatea fiscală.",
+  "portfolioShare": "Distribuie performanța",
+  "portfolioShareHeading": "Portofoliul meu",
+  "portfolioTopHoldings": "Cele mai mari poziții",
+  "portfolioShareNote": "Se distribuie doar procente, fără sume.",
+  "portfolioPositionsCount": "{count, plural, one{{count} poziție} few{{count} poziții} other{{count} de poziții}}",
+  "shareNotAdvice": "Nu este sfat de investiții"
 }

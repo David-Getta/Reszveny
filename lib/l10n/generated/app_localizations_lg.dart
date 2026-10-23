@@ -2594,6 +2594,33 @@ class AppLocalizationsLg extends AppLocalizations {
       'Ssente ziri mu ssente ezaasooka, tezikyusiddwa. Ssente z\'okutunda zigyiddwako ebisale by\'okutunda; omuwendo gw\'okugula gutwaliddemu ebisale by\'okugula (FIFO). Ku lipoota y\'omusolo, kyusa ku muwendo gw\'okuwaanyisa ensimbi ekitongole ky\'omusolo kye kyetaaga.';
 
   @override
+  String get portfolioShare => 'Gabana amagoba/okufiirwa';
+
+  @override
+  String get portfolioShareHeading => 'Emigabo gyange';
+
+  @override
+  String get portfolioTopHoldings => 'Emigabo egisinga obunene';
+
+  @override
+  String get portfolioShareNote =>
+      'Ebitundu ku kikumi byokka bye bigabanwa, si ssente.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Emigabo $count',
+      one: 'Omugabo 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Si magezi ga kusiga nsimbi';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

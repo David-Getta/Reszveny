@@ -2581,6 +2581,33 @@ class AppLocalizationsAk extends AppLocalizations {
       'Sika dodow no wɔ sika a edi kan no mu, wɔnsesaa no. Wɔayi adetɔn akatua no afi adetɔn mu sika no mu; adetɔ ka no ka adetɔ akatua no ho (FIFO). Ma wo tow ho nsɛm, sesa no wɔ sika sesa bo a wo tow adwumakuw hwehwɛ no so.';
 
   @override
+  String get portfolioShare => 'Kyɛ nkɔsoɔ';
+
+  @override
+  String get portfolioShareHeading => 'Me nkyɛfa';
+
+  @override
+  String get portfolioTopHoldings => 'Nkyɛfa a ɛsõ koraa';
+
+  @override
+  String get portfolioShareNote =>
+      'Ɔha mu nkyɛmu nko ara na wɔkyɛ, ɛnyɛ sika dodow.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nkyɛfa $count',
+      one: 'Kyɛfa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ɛnyɛ sikahyɛmu ho afotu';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

@@ -787,5 +787,11 @@
   "portfolioProceeds": "Valor de alienação",
   "portfolioCostBasis": "Custo de aquisição",
   "portfolioFeesPaid": "Comissões pagas",
-  "portfolioAnnualSummaryNote": "Valores na moeda original, sem conversão. O valor de alienação já desconta a comissão de venda; o custo de aquisição inclui a comissão de compra (FIFO). Para a declaração de imposto, converta pela taxa de câmbio exigida pela sua autoridade fiscal."
+  "portfolioAnnualSummaryNote": "Valores na moeda original, sem conversão. O valor de alienação já desconta a comissão de venda; o custo de aquisição inclui a comissão de compra (FIFO). Para a declaração de imposto, converta pela taxa de câmbio exigida pela sua autoridade fiscal.",
+  "portfolioShare": "Compartilhar desempenho",
+  "portfolioShareHeading": "Minha carteira",
+  "portfolioTopHoldings": "Maiores posições",
+  "portfolioShareNote": "Apenas as percentagens são compartilhadas, sem valores.",
+  "portfolioPositionsCount": "{count, plural, one{{count} posição} other{{count} posições}}",
+  "shareNotAdvice": "Não é aconselhamento de investimento"
 }

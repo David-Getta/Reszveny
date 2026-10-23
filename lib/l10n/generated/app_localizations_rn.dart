@@ -2589,6 +2589,32 @@ class AppLocalizationsRn extends AppLocalizations {
       'Amahera ari mu mahera y\'intango, ntiyahinduwe. Amahera avuye mu kugurisha yakuweko komisiyo yo kugurisha; igiciro c\'ivyaguzwe kirimwo komisiyo yo kugura (FIFO). Ku bijanye n\'imenyekanisha ry\'ikori, hindura ku giciro c\'ivunjisha gisabwa n\'ubuyobozi bw\'amakori.';
 
   @override
+  String get portfolioShare => 'Sangiza ivyavuyemwo';
+
+  @override
+  String get portfolioShareHeading => 'Ishoramari ryanje';
+
+  @override
+  String get portfolioTopHoldings => 'Imigabane minini';
+
+  @override
+  String get portfolioShareNote => 'Hasangizwa ijanisha gusa, nta mafaranga.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Imigabane $count',
+      one: 'Umugabane $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Si inama yo gushora imari';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

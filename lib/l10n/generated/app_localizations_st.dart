@@ -2596,6 +2596,33 @@ class AppLocalizationsSt extends AppLocalizations {
       'Dichelete di ka chelete ya pele, ha di a fetolwa. Lekeno la thekiso ke kamora ho tlosa tefello ya thekiso; ditshenyehelo tsa ho reka di kenyeletsa tefello ya theko (FIFO). Bakeng sa tlaleho ya hao ya lekgetho, fetola ka sekgahla sa phapanyetsano se hlokwang ke bolaodi ba lekgetho.';
 
   @override
+  String get portfolioShare => 'Arolelana diphetho';
+
+  @override
+  String get portfolioShareHeading => 'Potefolio ya ka';
+
+  @override
+  String get portfolioTopHoldings => 'Dishere tse kgolo';
+
+  @override
+  String get portfolioShareNote =>
+      'Ho arolelanwa diphesente feela, ha ho dipalo tsa chelete.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dishere tse $count',
+      one: 'Shere e le $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Hase keletso ya ho tsetela';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

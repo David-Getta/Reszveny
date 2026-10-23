@@ -2582,6 +2582,32 @@ class AppLocalizationsBg extends AppLocalizations {
       'Сумите са в оригиналната валута, без превалутиране. Приходите са след приспадане на комисионата за продажба; цената на придобиване включва комисионата за покупка (FIFO). За данъчната декларация превалутирайте по курса, който изисква данъчната администрация.';
 
   @override
+  String get portfolioShare => 'Споделяне на резултатите';
+
+  @override
+  String get portfolioShareHeading => 'Моят портфейл';
+
+  @override
+  String get portfolioTopHoldings => 'Най-големи позиции';
+
+  @override
+  String get portfolioShareNote => 'Споделят се само проценти, без суми.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count позиции',
+      one: '1 позиция',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Не е инвестиционен съвет';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

@@ -2591,6 +2591,33 @@ class AppLocalizationsZu extends AppLocalizations {
       'Amanani asemalini yokuqala, awaguqulwanga. Imali yokuthengisa isikhishwe inkokhelo yokuthengisa; izindleko zokuthenga zifaka inkokhelo yokuthenga (FIFO). Embikweni wakho wentela, guqula ngezinga lokushintshaniswa kwemali elidingwa yisiphathimandla sentela.';
 
   @override
+  String get portfolioShare => 'Yabelana ngemiphumela';
+
+  @override
+  String get portfolioShareHeading => 'Iphothifoliyo yami';
+
+  @override
+  String get portfolioTopHoldings => 'Amasheya amakhulu';
+
+  @override
+  String get portfolioShareNote =>
+      'Kwabelwana ngamaphesenti kuphela, hhayi ngamanani emali.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Amasheya angu-$count',
+      one: 'Isheya elingu-$count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Akusona iseluleko sokutshala imali';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

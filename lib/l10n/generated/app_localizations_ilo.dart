@@ -2601,6 +2601,33 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Dagiti kantidad ket iti orihinal a currency, saan a naikomberte. Ti sapul iti panaglako ket nakissayan ti komision ti panaglako; ti gastos iti panaggatang ket mairaman ti komision ti panaggatang (FIFO). Para iti tax return-mo, ikombertem iti exchange rate a kiddawen ti tax authority-mo.';
 
   @override
+  String get portfolioShare => 'Ibingay ti performance';
+
+  @override
+  String get portfolioShareHeading => 'Ti portfolio-k';
+
+  @override
+  String get portfolioTopHoldings => 'Kadakkelan a posision';
+
+  @override
+  String get portfolioShareNote =>
+      'Dagiti porsiento laeng ti maibingay, awan ti kantidad.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count a posision',
+      one: '1 a posision',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Saan a balakad iti panagpuonan';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

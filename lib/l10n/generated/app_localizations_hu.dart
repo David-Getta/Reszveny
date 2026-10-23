@@ -2585,6 +2585,33 @@ class AppLocalizationsHu extends AppLocalizations {
       'Az összegek az eredeti pénznemben, átváltás nélkül. A bevételből az eladás jutaléka már levonva, a szerzési érték a vétel jutalékával együtt (FIFO). A bevalláshoz az adóhatóság által előírt árfolyamon számolj át.';
 
   @override
+  String get portfolioShare => 'Teljesítmény megosztása';
+
+  @override
+  String get portfolioShareHeading => 'A portfólióm';
+
+  @override
+  String get portfolioTopHoldings => 'Legnagyobb pozíciók';
+
+  @override
+  String get portfolioShareNote =>
+      'Csak százalékok kerülnek a megosztásba, összegek nem.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozíció',
+      one: '1 pozíció',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Nem befektetési tanács';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

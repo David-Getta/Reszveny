@@ -2586,6 +2586,33 @@ class AppLocalizationsKn extends AppLocalizations {
       'ಮೊತ್ತಗಳು ಮೂಲ ಕರೆನ್ಸಿಯಲ್ಲಿವೆ, ಪರಿವರ್ತಿಸಲಾಗಿಲ್ಲ. ಮಾರಾಟದ ಆದಾಯದಿಂದ ಮಾರಾಟದ ಬ್ರೋಕರೇಜ್ ಕಳೆಯಲಾಗಿದೆ; ಖರೀದಿ ವೆಚ್ಚದಲ್ಲಿ ಖರೀದಿಯ ಬ್ರೋಕರೇಜ್ ಸೇರಿದೆ (FIFO). ತೆರಿಗೆ ರಿಟರ್ನ್‌ಗಾಗಿ ನಿಮ್ಮ ತೆರಿಗೆ ಇಲಾಖೆ ಕೇಳುವ ವಿನಿಮಯ ದರದಲ್ಲಿ ಪರಿವರ್ತಿಸಿ.';
 
   @override
+  String get portfolioShare => 'ಕಾರ್ಯಕ್ಷಮತೆ ಹಂಚಿಕೊಳ್ಳಿ';
+
+  @override
+  String get portfolioShareHeading => 'ನನ್ನ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ';
+
+  @override
+  String get portfolioTopHoldings => 'ಅತಿದೊಡ್ಡ ಪೊಸಿಷನ್‌ಗಳು';
+
+  @override
+  String get portfolioShareNote =>
+      'ಶೇಕಡಾವಾರು ಮಾತ್ರ ಹಂಚಿಕೊಳ್ಳಲಾಗುತ್ತದೆ, ಮೊತ್ತಗಳಲ್ಲ.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಪೊಸಿಷನ್‌ಗಳು',
+      one: '1 ಪೊಸಿಷನ್',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

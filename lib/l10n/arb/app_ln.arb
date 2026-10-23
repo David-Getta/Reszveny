@@ -787,5 +787,11 @@
   "portfolioProceeds": "Mbongo ya boteki",
   "portfolioCostBasis": "Ntalo ya bosombi",
   "portfolioFeesPaid": "Frais oyo ofutaki",
-  "portfolioAnnualSummaryNote": "Mbongo ezali na mbongo ya ebandeli, ebongolami te. Mbongo ya boteki elongolami frais ya boteki; ntalo ya bosombi ezali na frais ya bosombi (FIFO). Mpo na déclaration ya mpako na yo, bongola yango na motuya ya mbongo oyo bakonzi ya mpako basɛngaka."
+  "portfolioAnnualSummaryNote": "Mbongo ezali na mbongo ya ebandeli, ebongolami te. Mbongo ya boteki elongolami frais ya boteki; ntalo ya bosombi ezali na frais ya bosombi (FIFO). Mpo na déclaration ya mpako na yo, bongola yango na motuya ya mbongo oyo bakonzi ya mpako basɛngaka.",
+  "portfolioShare": "Kabola litomba/bobungisi",
+  "portfolioShareHeading": "Portefeuille na ngai",
+  "portfolioTopHoldings": "Ba-position ya minene",
+  "portfolioShareNote": "Ba-pourcentage kaka nde ekabolamaka, mbongo te.",
+  "portfolioPositionsCount": "{count, plural, =1{Eteni 1} other{Biteni {count}}}",
+  "shareNotAdvice": "Ezali toli ya kotia mbɔngɔ te"
 }

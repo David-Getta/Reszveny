@@ -2578,6 +2578,32 @@ class AppLocalizationsHi extends AppLocalizations {
       'राशियाँ मूल मुद्रा में हैं, बदली नहीं गईं। बिक्री राशि में से बिक्री का ब्रोकरेज घटाया गया है; अधिग्रहण लागत में खरीद का ब्रोकरेज शामिल है (FIFO)। टैक्स रिटर्न के लिए उस विनिमय दर पर बदलें जो आपका कर विभाग मांगता है।';
 
   @override
+  String get portfolioShare => 'प्रदर्शन शेयर करें';
+
+  @override
+  String get portfolioShareHeading => 'मेरा पोर्टफ़ोलियो';
+
+  @override
+  String get portfolioTopHoldings => 'सबसे बड़ी पोज़िशन';
+
+  @override
+  String get portfolioShareNote => 'केवल प्रतिशत शेयर होते हैं, कोई राशि नहीं।';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count पोज़िशन',
+      one: '1 पोज़िशन',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'निवेश सलाह नहीं';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

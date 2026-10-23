@@ -787,5 +787,11 @@
   "portfolioProceeds": "Dahata firotinê",
   "portfolioCostBasis": "Lêçûna kirînê",
   "portfolioFeesPaid": "Komîsyona dayî",
-  "portfolioAnnualSummaryNote": "Mîqdar bi diravê eslî ne, nehatine veguhertin. Dahata firotinê piştî derxistina komîsyona firotinê ye; lêçûna kirînê komîsyona kirînê dihewîne (FIFO). Ji bo daxuyaniya bacê, bi rêjeya danûstandinê ya ku rayedarê bacê dixwaze veguherîne."
+  "portfolioAnnualSummaryNote": "Mîqdar bi diravê eslî ne, nehatine veguhertin. Dahata firotinê piştî derxistina komîsyona firotinê ye; lêçûna kirînê komîsyona kirînê dihewîne (FIFO). Ji bo daxuyaniya bacê, bi rêjeya danûstandinê ya ku rayedarê bacê dixwaze veguherîne.",
+  "portfolioShare": "Encaman parve bike",
+  "portfolioShareHeading": "Portfolyoya min",
+  "portfolioTopHoldings": "Pozîsyonên herî mezin",
+  "portfolioShareNote": "Tenê rêjeyên sedî tên parvekirin, ne mîqdar.",
+  "portfolioPositionsCount": "{count, plural, =1{1 pozîsyon} other{{count} pozîsyon}}",
+  "shareNotAdvice": "Ne şîreta veberhênanê ye"
 }

@@ -2569,6 +2569,32 @@ class AppLocalizationsBo extends AppLocalizations {
       'དངུལ་འབོར་ནི་ཐོག་མའི་དངུལ་ལུགས་ཐོག་ཡིན་ཞིང་བསྒྱུར་མེད། འཚོང་ཡོང་ནི་འཚོང་བའི་གླ་ཆ་ཕྲ་རྗེས་ཡིན། ཉོ་གོང་ནང་ཉོ་བའི་གླ་ཆ་ཚུད་ཡོད (FIFO)། ཁྲལ་འབབ་ཞུ་ཐོའི་ཆེད་དུ་ཁྱེད་ཀྱི་ཁྲལ་དོན་ལས་ཁུངས་ཀྱིས་དགོས་པའི་དངུལ་བརྗེའི་ཐང་ཚད་ལྟར་བསྒྱུར་རོགས།';
 
   @override
+  String get portfolioShare => 'གྲུབ་འབྲས་མཉམ་སྤྱོད།';
+
+  @override
+  String get portfolioShareHeading => 'ངའི་མ་འཇོག་ཚོགས་སྡེབ';
+
+  @override
+  String get portfolioTopHoldings => 'ཉར་ཡོད་ཆེ་ཤོས';
+
+  @override
+  String get portfolioShareNote =>
+      'བརྒྱ་ཆ་ཙམ་མཉམ་སྤྱོད་བྱེད་ཀྱི་ཡོད། དངུལ་འབོར་མི་སྟོན།';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཉར་ཡོད་ཧུར་ཁག་ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'མ་འཇོག་གི་བསམ་འཆར་མིན།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

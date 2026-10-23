@@ -2573,6 +2573,32 @@ class AppLocalizationsMai extends AppLocalizations {
       'राशि मूल मुद्रामे अछि, बदलल नहि गेल। बिक्रीसँ आमदनी बिक्रीक ब्रोकरेज घटा कऽ अछि; खरीद लागतमे खरीदक ब्रोकरेज सम्मिलित अछि (FIFO)। टैक्स रिटर्नक लेल ओहि विनिमय दरपर बदलू जे अहाँक कर विभाग मँगैत अछि।';
 
   @override
+  String get portfolioShare => 'प्रदर्शन साझा करू';
+
+  @override
+  String get portfolioShareHeading => 'हमर पोर्टफ़ोलियो';
+
+  @override
+  String get portfolioTopHoldings => 'सभसँ पैघ पोजीशन';
+
+  @override
+  String get portfolioShareNote => 'केवल प्रतिशत साझा होइत अछि, कोनो राशि नहि।';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count पोजीशन',
+      one: '1 पोजीशन',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'निवेशक सलाह नहि';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

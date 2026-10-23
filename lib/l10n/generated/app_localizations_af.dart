@@ -2584,6 +2584,33 @@ class AppLocalizationsAf extends AppLocalizations {
       'Bedrae in die oorspronklike geldeenheid, nie omgeskakel nie. Die opbrengs is ná aftrekking van die verkoopkommissie; die basiskoste sluit die aankoopkommissie in (FIFO). Skakel vir jou belastingopgawe om teen die wisselkoers wat jou belastingowerheid vereis.';
 
   @override
+  String get portfolioShare => 'Deel prestasie';
+
+  @override
+  String get portfolioShareHeading => 'My portefeulje';
+
+  @override
+  String get portfolioTopHoldings => 'Grootste posisies';
+
+  @override
+  String get portfolioShareNote =>
+      'Slegs persentasies word gedeel, geen bedrae nie.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posisies',
+      one: '1 posisie',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Nie beleggingsadvies nie';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

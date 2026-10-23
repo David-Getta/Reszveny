@@ -2579,6 +2579,32 @@ class AppLocalizationsKab extends AppLocalizations {
       'Azalen s tedrimt taɣbalut, ur ttwabeddlen ara. Idrimen n uznuzu ttwakksen-asen ixelṣen n uznuzu; azal n tiɣin yegber ixelṣen n tiɣin (FIFO). I tsemmelt-ik n tebzert, beddel-iten s wazal n usnemlil i d-yessuter unabaḍ n tebzert.';
 
   @override
+  String get portfolioShare => 'Bḍu igmaḍ';
+
+  @override
+  String get portfolioShareHeading => 'Aqrab-iw';
+
+  @override
+  String get portfolioTopHoldings => 'Iksyunen imeqqranen';
+
+  @override
+  String get portfolioShareNote => 'Ala ifmiḍen i yettwabḍan, ulac azalen.';
+
+  @override
+  String portfolioPositionsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count n yimukan',
+      one: '1 n wadeg',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareNotAdvice => 'Ur d awellih n usersi n yidrimen ara';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override
