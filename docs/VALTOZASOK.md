@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.208)
+# Változásjegyzék (0.2.130 → 0.2.209)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -7,8 +7,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 
 - **Kapott osztalékok** kártya a portfólióban: idei és összes összeg (átváltva), kézi felvétel, törlés
   visszavonással, évenkénti összegek a lezárt évek változásával („2025 · +8%”), CSV-export az
-  adóbevalláshoz; a bróker-exportok (Revolut, Trading 212, IBKR – forrásadóval nettósítva) osztaléksorai
-  importáláskor bekerülnek; fiókkal szinkronizálva, a biztonsági mentésben.
+  adóbevalláshoz; a bróker-exportok (Revolut, Trading 212, IBKR, Schwab, Fidelity, Robinhood – forrásadóval
+  nettósítva) osztaléksorai importáláskor bekerülnek; fiókkal szinkronizálva, a biztonsági mentésben.
 - **Várható következő osztalékok** a rögzített kifizetések ritmusából (havi / negyedéves / féléves /
   éves, a legutóbbi távolságokból): a kártyán, „A pozícióm” kártyán, az Események naptárban (naptárexportba
   is), a heti e-mailben („a következő két hétben”).
@@ -94,6 +94,10 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - A CSV-import a **magyar és német fejléceket** is felismeri (Mennyiség, Árfolyam, Pénznem, Dátum, Irány,
   Számla, Jutalék; Stück, Kurs, Währung, Datum, Typ, Gebühr, Konto), a „Vétel/Eladás/Osztalék” és a
   „Kauf/Verkauf” szavakat, és a magyar dátumot („2025.03.14.”).
+- **Amerikai brókerek exportja** is: Charles Schwab, Fidelity és Robinhood – vételek, eladások (a jutalékkal),
+  újrabefektetett osztalék darabjai, kapott osztalékok a külön soros forrásadóval csökkentve; a perjeles dátum
+  sorrendjét (hónap/nap vagy nap/hónap) a fájl dönti el, ennek híján az amerikai fejléc, végül az amerikai nyelvi
+  beállítás.
 
 ## Megosztás
 

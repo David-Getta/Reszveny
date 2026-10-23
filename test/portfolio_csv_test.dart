@@ -46,6 +46,64 @@ void main() {
     expect(r.skipped, 2);
   });
 
+  test('US broker exports: Schwab, Fidelity and Robinhood – month-first dates, dividends net of tax', () {
+    final schwab = parsePortfolioCsv(
+      '"Transactions  for account Individual ...123 as of 10/23/2025 04:10:00 PM ET"\n'
+      '"Date","Action","Symbol","Description","Quantity","Price","Fees & Comm","Amount"\n'
+      '"03/04/2025","Buy","AAPL","APPLE INC","10","\$182.50","\$0.05","-\$1825.05"\n'
+      '"05/15/2025 as of 05/14/2025","Qualified Dividend","AAPL","APPLE INC","","","","\$2.50"\n'
+      '"05/15/2025","NRA Tax Adj","AAPL","APPLE INC","","","","-\$0.38"\n'
+      '"06/02/2025","Reinvest Shares","AAPL","APPLE INC","0.01","\$200.00","","-\$2.00"\n'
+      '"09/12/2025","Sell","AAPL","APPLE INC","4","\$230.00","\$0.12","\$919.88"\n'
+      '"09/30/2025","Bank Interest","","BANK INT 090125-093025","","","","\$0.11"\n'
+      'Transactions Total,,,,,,,"-\$904.92"\n',
+    );
+    expect(schwab.lots.map((l) => (l.symbol, l.quantity, l.price, l.date, l.sell, l.fee)), [
+      ('AAPL', 10.0, 182.5, DateTime(2025, 3, 4), false, 0.05),
+      ('AAPL', 0.01, 200.0, DateTime(2025, 6, 2), false, 0.0),
+      ('AAPL', 4.0, 230.0, DateTime(2025, 9, 12), true, 0.12),
+    ]);
+    // Az osztalék a forrásadóval csökkentve (2,50 − 0,38).
+    final div = schwab.dividends.single;
+    expect((div.symbol, div.date), ('AAPL', DateTime(2025, 5, 15)));
+    expect(div.amount, closeTo(2.12, 1e-9));
+
+    final fidelity = parsePortfolioCsv(
+      '\n\nBrokerage\n\n'
+      'Run Date,Action,Symbol,Description,Type,Quantity,Price (\$),Commission (\$),Fees (\$),Accrued Interest (\$),'
+      'Amount (\$),Cash Balance (\$),Settlement Date\n'
+      '02/03/2025,YOU BOUGHT MICROSOFT CORP (MSFT) (Cash),MSFT,MICROSOFT CORP,Cash,2,410.2,,,,-820.4,1000,02/04/2025\n'
+      '06/12/2025,DIVIDEND RECEIVED MICROSOFT CORP (MSFT) (Cash),MSFT,MICROSOFT CORP,Cash,,,,,,1.66,1001.66,\n'
+      '08/20/2025,YOU SOLD MICROSOFT CORP (MSFT) (Cash),MSFT,MICROSOFT CORP,Cash,-1,500,,0.02,,499.98,1501.64,08/21/2025\n'
+      '\n"The data and information in this spreadsheet is provided to you solely for your use."\n',
+    );
+    // Az egyértelmű nap (20) dönt: hónap/nap/év.
+    expect(fidelity.lots.map((l) => (l.symbol, l.quantity, l.price, l.date, l.sell)), [
+      ('MSFT', 2.0, 410.2, DateTime(2025, 2, 3), false),
+      ('MSFT', 1.0, 500.0, DateTime(2025, 8, 20), true),
+    ]);
+    expect(fidelity.dividends.single.amount, 1.66);
+
+    final robinhood = parsePortfolioCsv(
+      '"Activity Date","Process Date","Settle Date","Instrument","Description","Trans Code","Quantity","Price","Amount"\n'
+      '"1/6/2025","1/6/2025","1/7/2025","NVDA","NVIDIA","Buy","5","\$140.00","(\$700.00)"\n'
+      '"3/4/2025","3/4/2025","3/4/2025","NVDA","Cash Div: R/D 2025-03-01 P/D 2025-03-04","CDIV","","","\$0.05"\n'
+      '"4/1/2025","4/1/2025","4/2/2025","NVDA","NVIDIA","Sell","2","\$110.00","\$220.00"\n'
+      '"4/2/2025","4/2/2025","4/2/2025","","ACH Deposit","ACH","","","\$500.00"\n',
+    );
+    // Kétértelmű dátumok (mind 12 alatt): az amerikai fejléc dönt.
+    expect(robinhood.lots.map((l) => (l.symbol, l.quantity, l.price, l.date, l.sell)), [
+      ('NVDA', 5.0, 140.0, DateTime(2025, 1, 6), false),
+      ('NVDA', 2.0, 110.0, DateTime(2025, 4, 1), true),
+    ]);
+    expect(robinhood.dividends.map((d) => (d.amount, d.date)), [(0.05, DateTime(2025, 3, 4))]);
+
+    // Egy semleges fejlécű fájlban a kétértelmű perjeles dátum alapból nap/hónap; amerikai beállításnál hónap/nap.
+    const neutral = 'Date,Symbol,Quantity,Price\n03/04/2025,OTP,10,30000\n';
+    expect(parsePortfolioCsv(neutral).lots.single.date, DateTime(2025, 4, 3));
+    expect(parsePortfolioCsv(neutral, monthFirst: true).lots.single.date, DateTime(2025, 3, 4));
+  });
+
   test('broker exports: Revolut, Trading 212 and Interactive Brokers, with sales; other rows are ignored', () {
     final revolut = parsePortfolioCsv(
       'Date,Ticker,Type,Quantity,Price per share,Total Amount,Currency,FX Rate\n'

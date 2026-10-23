@@ -233,8 +233,33 @@ String _separator(String line) {
 /// Az eladás és a vétel magyarul és németül a „side” oszlopban, szó elején (a
 /// „kivétel”, „bevétel”, „Rückkauf” nem vétel); az eladás előbb, mert a „Verkauf”
 /// „kauf”-ot is tartalmaz.
-final _sellWords = RegExp(r'(^|[^\p{L}])(eladás|verkauf)', unicode: true);
-final _buyWords = RegExp(r'(^|[^\p{L}])(vétel|vásárlás|kauf)', unicode: true);
+final _sellWords = RegExp(r'(^|[^\p{L}])(eladás|verkauf|sold)', unicode: true);
+// Az újrabefektetett osztalék darabjai (Schwab „Reinvest Shares”, Fidelity „Reinvestment”) is vétel.
+final _buyWords = RegExp(r'(^|[^\p{L}])(vétel|vásárlás|kauf|bought|reinvest)', unicode: true);
+
+/// Osztaléksor (Schwab „Non-Qualified Div”, Robinhood „CDIV” is).
+final _dividendWords = RegExp(r'dividend|osztalék|(^|[^\p{L}])c?div($|[^\p{L}])', unicode: true);
+
+/// Forrásadó-sor (Schwab „NRA Tax Adj”, Fidelity „Foreign Tax Paid”, Robinhood „DTAX”).
+final _taxWords = RegExp(r'(^|[^\p{L}])(tax|dtax)($|[^\p{L}])', unicode: true);
+
+/// Az amerikai brókerek exportjának oszlopai (Schwab, Fidelity, Robinhood): ezekben a
+/// perjeles dátum hónappal kezdődik (`10/15/2024`).
+const _usHeaders = {'feescomm', 'rundate', 'activitydate', 'transcode'};
+
+final _slashDate = RegExp(r'^(\d{1,2})/(\d{1,2})/\d{4}');
+
+/// Hónappal kezdődnek-e a perjeles dátumok: ha valamelyikben a második tag 12 fölött
+/// van, igen; ha az első, nem; ha egyik sem dönt, a [hint].
+bool _monthFirst(Iterable<String> dates, {required bool hint}) {
+  for (final d in dates) {
+    final m = _slashDate.firstMatch(d.trim());
+    if (m == null) continue;
+    if (int.parse(m[2]!) > 12) return true;
+    if (int.parse(m[1]!) > 12) return false;
+  }
+  return hint;
+}
 
 final _accountLike = RegExp(r'\p{L}', unicode: true);
 
@@ -247,7 +272,7 @@ String? _positionalAccount(List<String> f) =>
 /// nélkül – így a magyar „Mennyiség” „mennyisg”, a német „Stück” „stck”). A saját
 /// táblázatokhoz magyar és német fejlécek is.
 const _roles = <String, Set<String>>{
-  'symbol': {'symbol', 'ticker', 'szimblum', 'tickerkd', 'krzel'},
+  'symbol': {'symbol', 'ticker', 'instrument', 'szimblum', 'tickerkd', 'krzel'},
   'quantity': {
     'quantity', 'qty', 'shares', 'noofshares', 'numberofshares', 'units', //
     'mennyisg', 'darab', 'darabszm', 'db', 'stck', 'stckzahl', 'anzahl', 'menge',
@@ -257,9 +282,12 @@ const _roles = <String, Set<String>>{
     'egysgr', 'vtelir', 'eladsir', 'ausfhrungskurs',
   },
   'currency': {'currency', 'currencypriceshare', 'pricecurrency', 'currencyprimary', 'pnznem', 'deviza', 'whrung'},
-  'date': {'date', 'time', 'datetime', 'tradedate', 'dtum', 'teljestsdtuma', 'ktsnap', 'datum', 'handelstag'},
+  'date': {
+    'date', 'time', 'datetime', 'tradedate', 'rundate', 'activitydate', //
+    'dtum', 'teljestsdtuma', 'ktsnap', 'datum', 'handelstag',
+  },
   'side': {
-    'type', 'action', 'side', 'buysell', 'transactiontype', //
+    'type', 'action', 'side', 'buysell', 'transactiontype', 'transcode', //
     'irny', 'mvelet', 'transaktionsart', 'geschftsart',
   },
   // Az osztaléksor összege (Revolut „Total Amount”, Trading 212 „Total”).
@@ -268,7 +296,10 @@ const _roles = <String, Set<String>>{
   // A számla (saját export „account”, magyarul „számla”).
   'account': {'account', 'accountname', 'szmla', 'konto', 'depot'},
   // A tranzakció díja a kereskedés pénznemében (az IBKR negatívként írja).
-  'fee': {'fee', 'fees', 'commission', 'commissions', 'commfee', 'jutalk', 'dj', 'gebhr', 'gebhren', 'provision'},
+  'fee': {
+    'fee', 'fees', 'feescomm', 'commission', 'commissions', 'commfee', //
+    'jutalk', 'dj', 'gebhr', 'gebhren', 'provision',
+  },
 };
 
 /// Általános oszlopnevek: csak ha nincs egyértelműbb (pl. a „Típus” lehet az
@@ -292,8 +323,9 @@ Map<String, int>? _header(List<String> cells) {
   return found.containsKey('symbol') && found.containsKey('quantity') && found.containsKey('price') ? found : null;
 }
 
-/// Dátum a gyakori alakokban: `2024-03-14…`, `2024.03.14.`, `20240314`, `14/03/2024`, `14.03.2024`.
-DateTime? _date(String raw) {
+/// Dátum a gyakori alakokban: `2024-03-14…`, `2024.03.14.`, `20240314`, `14/03/2024`, `14.03.2024`
+/// ([monthFirst] esetén a perjeles `03/14/2024`).
+DateTime? _date(String raw, {bool monthFirst = false}) {
   final s = raw.trim();
   final iso = RegExp(r'^(\d{4})-(\d{2})-(\d{2})').firstMatch(s);
   if (iso != null) return DateTime.tryParse('${iso[1]}-${iso[2]}-${iso[3]}');
@@ -305,9 +337,11 @@ DateTime? _date(String raw) {
   }
   final compact = RegExp(r'^(\d{4})(\d{2})(\d{2})(\D|$)').firstMatch(s);
   if (compact != null) return DateTime.tryParse('${compact[1]}-${compact[2]}-${compact[3]}');
-  final eu = RegExp(r'^(\d{1,2})[./](\d{1,2})[./](\d{4})').firstMatch(s);
+  final eu = RegExp(r'^(\d{1,2})([./])(\d{1,2})[./](\d{4})').firstMatch(s);
   if (eu != null) {
-    final d = int.parse(eu[1]!), m = int.parse(eu[2]!), y = int.parse(eu[3]!);
+    // Perjellel az amerikai sorrend is lehet (hónap/nap/év); ponttal mindig nap.hónap.év.
+    final swap = monthFirst && eu[2] == '/';
+    final d = int.parse(eu[swap ? 3 : 1]!), m = int.parse(eu[swap ? 1 : 3]!), y = int.parse(eu[4]!);
     if (m >= 1 && m <= 12 && d >= 1 && d <= 31) return DateTime(y, m, d);
   }
   return null;
@@ -329,7 +363,11 @@ DateTime? _date(String raw) {
 /// ár, pénznem, dátum, side`; a pénznem és a dátum elhagyható (pénznem nélkül
 /// [defaultCurrency]). Eladás: `sell` a hatodik oszlopban, illetve negatív
 /// darabszám; osztalék: `dividend`, az összeg az ár oszlopában.
-CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD'}) {
+///
+/// A perjeles dátumok sorrendjét a fájl dönti el (egy 12-nél nagyobb tag), ennek
+/// híján az amerikai brókerek fejléce, végül a [monthFirst] (pl. amerikai nyelvi
+/// beállításnál).
+CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD', bool monthFirst = false}) {
   final lines = [
     for (final l in text.split(RegExp(r'\r?\n')))
       if (l.trim().isNotEmpty) l.trim(),
@@ -338,7 +376,9 @@ CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD'}) {
   for (final (i, line) in lines.take(30).indexed) {
     final sep = _separator(line);
     final h = _header(splitCsvLine(line, sep));
-    if (h != null) return _withHeader(lines.skip(i + 1), sep, h, splitCsvLine(line, sep), defaultCurrency);
+    if (h != null) {
+      return _withHeader(lines.skip(i + 1), sep, h, splitCsvLine(line, sep), defaultCurrency, monthFirst: monthFirst);
+    }
   }
   return _positional(lines, defaultCurrency);
 }
@@ -348,8 +388,9 @@ CsvImport _withHeader(
   String sep,
   Map<String, int> col,
   List<String> header,
-  String defaultCurrency,
-) {
+  String defaultCurrency, {
+  required bool monthFirst,
+}) {
   final lots = <ImportedLot>[];
   final dividends = <ImportedDividend>[];
   final splits = <ImportedSplit>[];
@@ -358,6 +399,12 @@ CsvImport _withHeader(
     final i = col[role];
     return i == null || i >= f.length ? '' : f[i];
   }
+
+  final us = header.any((c) => _usHeaders.contains(c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), '')));
+  final mdy = _monthFirst([
+    for (final l in lines) cell(splitCsvLine(l, _separator(l)), 'date'),
+  ], hint: us || monthFirst);
+  DateTime? date(List<String> f) => _date(cell(f, 'date'), monthFirst: mdy);
 
   // Interactive Brokers kimutatás: „Trades,Header,…” után csak a „Trades,Data,…”
   // sorok számítanak; a „Dividends” szakasz sorai kapott osztalékok.
@@ -379,7 +426,10 @@ CsvImport _withHeader(
       } else if (f[1].toLowerCase() == 'data') {
         if (isTax && taxCols != null) {
           final t = _ibkrDividend(f, taxCols, allowNegative: true);
-          if (t != null) withholding[_dayKey(t)] = (withholding[_dayKey(t)] ?? 0) + t.amount;
+          if (t != null) {
+            final key = _dayKey(t.symbol, t.currency, t.date);
+            withholding[key] = (withholding[key] ?? 0) + t.amount;
+          }
         } else if (!isTax && dividendCols != null) {
           final d = _ibkrDividend(f, dividendCols);
           if (d != null) dividends.add(d);
@@ -401,7 +451,8 @@ CsvImport _withHeader(
       sell = false;
     }
     final symbol = cell(f, 'symbol').toUpperCase();
-    if (side.contains('dividend') || side.contains('osztalék')) {
+    final dividend = _dividendWords.hasMatch(side);
+    if (dividend || _taxWords.hasMatch(side)) {
       // Kapott osztalék: a teljes összeg (ha nincs külön oszlopa, az ár oszlopában).
       final (amount, amountCcy) = _price(col.containsKey('total') ? cell(f, 'total') : cell(f, 'price'));
       final totalCcy = cell(f, 'totalcurrency').toUpperCase();
@@ -409,13 +460,21 @@ CsvImport _withHeader(
       final ccy = _currency.hasMatch(totalCcy)
           ? totalCcy
           : (amountCcy ?? (_currency.hasMatch(ccyCell) ? ccyCell : defaultCurrency));
+      if (!dividend) {
+        // Forrásadó külön sorban: az aznapi osztalékból levonva (az előjelétől függetlenül).
+        if (_symbol.hasMatch(symbol) && amount != null && amount != 0) {
+          final key = _dayKey(symbol, ccy, date(f));
+          withholding[key] = (withholding[key] ?? 0) - amount.abs();
+        }
+        continue;
+      }
       if (_symbol.hasMatch(symbol) && amount != null && amount > 0) {
         dividends.add(
           ImportedDividend(
             symbol: symbol,
             amount: amount,
             currency: ccy,
-            date: _date(cell(f, 'date')),
+            date: date(f),
             account: PortfolioLot.cleanAccount(cell(f, 'account')),
           ),
         );
@@ -449,7 +508,7 @@ CsvImport _withHeader(
         quantity: quantity,
         price: price,
         currency: ccy,
-        date: _date(cell(f, 'date')),
+        date: date(f),
         sell: sell,
         account: PortfolioLot.cleanAccount(cell(f, 'account')),
         fee: PortfolioLot.cleanFee(_decimal(cell(f, 'fee'))?.abs()),
@@ -459,13 +518,14 @@ CsvImport _withHeader(
   // A bruttó osztalékból a forrásadó levonva: ami a számlára érkezett.
   final net = [
     for (final d in dividends)
-      if (d.amount + (withholding[_dayKey(d)] ?? 0) case final a when a > 0)
+      if (d.amount + (withholding[_dayKey(d.symbol, d.currency, d.date)] ?? 0) case final a when a > 0)
         ImportedDividend(symbol: d.symbol, amount: a, currency: d.currency, date: d.date, account: d.account),
   ];
   return CsvImport(lots, skipped, dividends: net, splits: splits);
 }
 
-String _dayKey(ImportedDividend d) => '${d.symbol}|${d.currency}|${d.date?.toIso8601String().substring(0, 10)}';
+String _dayKey(String symbol, String currency, DateTime? date) =>
+    '$symbol|$currency|${date?.toIso8601String().substring(0, 10)}';
 
 /// Az IBKR „Dividends,Data,…” (vagy „Withholding Tax,Data,…”) sora: a ticker a
 /// leírás elején („AAPL(US0378331005) Cash Dividend USD 0.25 per Share”), az
