@@ -797,5 +797,6 @@
   "contributionButton": "Investir de nouveaux fonds",
   "contributionAmount": "Montant à investir ({currency})",
   "contributionHint": "Achats uniquement, aucune vente : les positions les plus en dessous de leur cible reçoivent l’argent en premier.",
-  "contributionShares": "≈ {shares} actions"
+  "contributionShares": "≈ {shares} actions",
+  "contributionMissing": "Pas de cours actuel pour {symbols} : hors répartition."
 }

@@ -797,5 +797,6 @@
   "contributionButton": "Neues Geld anlegen",
   "contributionAmount": "Anlagebetrag ({currency})",
   "contributionHint": "Nur Käufe, keine Verkäufe: Die Positionen, die am weitesten unter ihrem Ziel liegen, bekommen das Geld zuerst.",
-  "contributionShares": "≈ {shares} Aktien"
+  "contributionShares": "≈ {shares} Aktien",
+  "contributionMissing": "Kein aktueller Kurs für {symbols}: bei der Aufteilung nicht berücksichtigt."
 }

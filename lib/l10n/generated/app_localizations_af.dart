@@ -2628,6 +2628,11 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Geen huidige prys vir $symbols nie: uitgelaat uit die verdeling.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

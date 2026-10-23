@@ -797,5 +797,6 @@
   "contributionButton": "Iga mbeca njerũ",
   "contributionAmount": "Mbeca cia kũiga ({currency})",
   "contributionHint": "Kũgũra tu, gũtirĩ kwendia: hisa iria ciagĩte mũno thĩ ya muoroto wacio nĩcio ikũheo mbeca mbere.",
-  "contributionShares": "≈ hisa {shares}"
+  "contributionShares": "≈ hisa {shares}",
+  "contributionMissing": "Gũtirĩ thogora wa rĩu wa {symbols}: itiigĩtwo thĩinĩ wa kũgayania."
 }

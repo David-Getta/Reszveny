@@ -797,5 +797,6 @@
   "contributionButton": "Dugal xaalis bu bees",
   "contributionAmount": "Xaalis bi nga bëgg a dugal ({currency})",
   "contributionHint": "Jënd rekk, du jaay: aksiyoŋ yi gën a sore seen jubluwaay ci suuf ñoo jëkk a jot xaalis bi.",
-  "contributionShares": "≈ {shares} aksiyoŋ"
+  "contributionShares": "≈ {shares} aksiyoŋ",
+  "contributionMissing": "Amul njëg bu léegi ngir {symbols}: boolewuñu leen ci séddale bi."
 }

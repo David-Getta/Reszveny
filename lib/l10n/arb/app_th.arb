@@ -797,5 +797,6 @@
   "contributionButton": "ลงทุนเงินก้อนใหม่",
   "contributionAmount": "จำนวนเงินที่จะลงทุน ({currency})",
   "contributionHint": "ซื้ออย่างเดียว ไม่ขาย: หุ้นที่ต่ำกว่าสัดส่วนเป้าหมายมากที่สุดจะได้รับเงินก่อน",
-  "contributionShares": "≈ {shares} หุ้น"
+  "contributionShares": "≈ {shares} หุ้น",
+  "contributionMissing": "ไม่มีราคาปัจจุบันสำหรับ {symbols} จึงไม่นับรวมในการแบ่งเงิน"
 }

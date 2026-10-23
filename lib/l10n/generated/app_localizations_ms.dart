@@ -2628,6 +2628,11 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Tiada harga semasa untuk $symbols: tidak dimasukkan dalam pembahagian.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

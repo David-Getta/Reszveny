@@ -2622,6 +2622,11 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols का लागि वर्तमान मूल्य उपलब्ध छैन: बाँडफाँडमा समावेश गरिएको छैन।';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

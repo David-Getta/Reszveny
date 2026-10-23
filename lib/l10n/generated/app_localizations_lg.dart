@@ -2638,6 +2638,11 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Tewali bbeeyi ya kati eya $symbols: tegibaliddwa mu kugabanya.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

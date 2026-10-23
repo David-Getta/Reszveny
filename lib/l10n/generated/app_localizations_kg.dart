@@ -2633,6 +2633,11 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ka kuena ntalu ya bubu ya $symbols ko: bo me katula yo na kukabula.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

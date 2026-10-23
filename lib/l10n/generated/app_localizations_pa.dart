@@ -2621,6 +2621,11 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols ਲਈ ਮੌਜੂਦਾ ਕੀਮਤ ਉਪਲਬਧ ਨਹੀਂ ਹੈ: ਵੰਡ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤਾ ਗਿਆ।';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

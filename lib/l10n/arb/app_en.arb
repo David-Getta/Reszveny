@@ -2186,6 +2186,16 @@
       }
     }
   },
+  "contributionMissing": "No price right now for {symbols}: left out of the split.",
+  "@contributionMissing": {
+    "description": "Warning in the \"invest new money\" dialog: positions with a target but no current price are not included.",
+    "placeholders": {
+      "symbols": {
+        "type": "String",
+        "example": "OTP, MOL"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

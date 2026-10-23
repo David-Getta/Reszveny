@@ -797,5 +797,6 @@
   "contributionButton": "Einverti viru pyahu",
   "contributionAmount": "Mboýpa reinvertíta ({currency})",
   "contributionHint": "Jejogua añoite, ñemu ỹre: umi ereguerekóva opytavéva hupytyrã guýpe ohupyty raẽ pe viru.",
-  "contributionShares": "≈ {shares} acción"
+  "contributionShares": "≈ {shares} acción",
+  "contributionMissing": "Ndaipóri {symbols} tepy ko'ag̃agua: noñemoingéi ñemboja'ópe."
 }

@@ -797,5 +797,6 @@
   "contributionButton": "નવા પૈસાનું રોકાણ કરો",
   "contributionAmount": "રોકાણ કરવાની રકમ ({currency})",
   "contributionHint": "ફક્ત ખરીદી, કોઈ વેચાણ નહીં: પોતાના લક્ષ્યથી સૌથી વધુ પાછળ રહેલી પોઝિશનને પહેલા પૈસા મળે છે.",
-  "contributionShares": "≈ {shares} શેર"
+  "contributionShares": "≈ {shares} શેર",
+  "contributionMissing": "{symbols} માટે વર્તમાન ભાવ ઉપલબ્ધ નથી: વહેંચણીમાં સામેલ નથી."
 }

@@ -797,5 +797,6 @@
   "contributionButton": "नया पैसा निवेश करें",
   "contributionAmount": "निवेश की राशि ({currency})",
   "contributionHint": "सिर्फ़ खरीद, कोई बिक्री नहीं: जो पोज़िशन अपने लक्ष्य से सबसे ज़्यादा पीछे हैं, उन्हें पैसा पहले मिलता है।",
-  "contributionShares": "≈ {shares} शेयर"
+  "contributionShares": "≈ {shares} शेयर",
+  "contributionMissing": "{symbols} के लिए वर्तमान कीमत उपलब्ध नहीं है: बँटवारे में शामिल नहीं किया गया।"
 }

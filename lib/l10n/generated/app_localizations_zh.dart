@@ -2508,6 +2508,11 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols暂无当前价格，未纳入分配。';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5382,6 +5387,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String contributionShares(String shares) {
     return '≈ $shares 股';
+  }
+
+  @override
+  String contributionMissing(String symbols) {
+    return '$symbols沒有目前股價，未有納入分配。';
   }
 
   @override

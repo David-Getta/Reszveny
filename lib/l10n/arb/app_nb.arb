@@ -797,5 +797,6 @@
   "contributionButton": "Invester nye penger",
   "contributionAmount": "Beløp å investere ({currency})",
   "contributionHint": "Bare kjøp, ingen salg: beholdningene som ligger lengst under målet, får pengene først.",
-  "contributionShares": "≈ {shares} aksjer"
+  "contributionShares": "≈ {shares} aksjer",
+  "contributionMissing": "Ingen aktuell kurs for {symbols}: er ikke med i fordelingen."
 }

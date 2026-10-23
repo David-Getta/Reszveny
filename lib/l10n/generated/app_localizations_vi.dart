@@ -2617,6 +2617,11 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Không có giá hiện tại cho $symbols: không được tính vào phần phân bổ.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

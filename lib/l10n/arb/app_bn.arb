@@ -797,5 +797,6 @@
   "contributionButton": "নতুন টাকা বিনিয়োগ করুন",
   "contributionAmount": "বিনিয়োগের পরিমাণ ({currency})",
   "contributionHint": "শুধু কেনা, কোনো বিক্রি নয়: লক্ষ্যের চেয়ে সবচেয়ে বেশি পিছিয়ে থাকা অবস্থানগুলো আগে টাকা পায়।",
-  "contributionShares": "≈ {shares} শেয়ার"
+  "contributionShares": "≈ {shares} শেয়ার",
+  "contributionMissing": "{symbols}-এর বর্তমান দাম নেই: বণ্টনে ধরা হয়নি।"
 }

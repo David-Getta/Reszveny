@@ -2619,6 +2619,11 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Enweghị ọnụahịa ugbu a maka $symbols: etinyeghị ha na nkesa ahụ.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

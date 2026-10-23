@@ -2621,6 +2621,11 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols के लिए वर्तमान कीमत उपलब्ध नहीं है: बँटवारे में शामिल नहीं किया गया।';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

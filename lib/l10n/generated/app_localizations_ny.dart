@@ -2632,6 +2632,11 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Palibe mtengo wapano wa $symbols: sanaphatikizidwe pogawa.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

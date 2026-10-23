@@ -2626,6 +2626,11 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols ئۈچۈن نۆۋەتتىكى باھا يوق: تەقسىماتقا كىرگۈزۈلمىدى.';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

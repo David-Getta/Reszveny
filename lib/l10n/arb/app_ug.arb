@@ -797,5 +797,6 @@
   "contributionButton": "يېڭى مەبلەغ سېلىش",
   "contributionAmount": "سېلىنىدىغان سومما ({currency})",
   "contributionHint": "پەقەت سېتىۋېلىش، سېتىش يوق: نىشانىدىن ئەڭ كۆپ تۆۋەن تۇرغان پايلار ئالدى بىلەن پۇل ئالىدۇ.",
-  "contributionShares": "≈ {shares} پاي"
+  "contributionShares": "≈ {shares} پاي",
+  "contributionMissing": "{symbols} ئۈچۈن نۆۋەتتىكى باھا يوق: تەقسىماتقا كىرگۈزۈلمىدى."
 }

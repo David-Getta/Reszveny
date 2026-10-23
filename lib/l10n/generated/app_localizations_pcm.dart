@@ -2623,6 +2623,11 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols no get current price: we no put dem for di sharing.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

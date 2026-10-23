@@ -797,5 +797,6 @@
   "contributionButton": "Do ga yeye ɖe eme",
   "contributionAmount": "Ga si nàde eme ({currency})",
   "contributionHint": "Ƒeƒle ko, dzadzra aɖeke meli o: akpa siwo tsi megbe wu na woƒe taɖodzinu la xɔa ga la gbã.",
-  "contributionShares": "≈ akpa {shares}"
+  "contributionShares": "≈ akpa {shares}",
+  "contributionMissing": "Fifia asi aɖeke meli na {symbols} o: wometsɔ wo de mamã la me o."
 }

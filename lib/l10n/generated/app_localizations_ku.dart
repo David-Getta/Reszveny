@@ -2626,6 +2626,11 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ji bo $symbols bihayê niha tune: di dabeşkirinê de nayên hesibandin.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

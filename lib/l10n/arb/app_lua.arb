@@ -797,5 +797,6 @@
   "contributionButton": "Teka mfranga mipiamipia",
   "contributionAmount": "Bungi bua mfranga ya kuteka ({currency})",
   "contributionHint": "Kusumba patupu, kakuyi kusumbisha: ma-position adi kule kupita ku muinshi kua tshipatshila tshiawu ke adi apeta mfranga kumpala.",
-  "contributionShares": "≈ action {shares}"
+  "contributionShares": "≈ action {shares}",
+  "contributionMissing": "Kakuena mushinga wa mpindieu wa {symbols}: katuyi tubala mu diabanya."
 }

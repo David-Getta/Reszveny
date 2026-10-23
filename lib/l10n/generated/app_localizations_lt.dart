@@ -2690,6 +2690,11 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Nėra dabartinės $symbols kainos: neįtrauktos į paskirstymą.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

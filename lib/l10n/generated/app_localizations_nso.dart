@@ -2642,6 +2642,11 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ga go na theko ya bjale ya $symbols: ga a akaretšwe kabong.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

@@ -26,7 +26,10 @@ List<({String symbol, double weight})> topHoldings(PortfolioSnapshot s, {int cou
 /// éves hozam, mai mozgás és a legnagyobb pozíciók súlya – összegek nélkül, hogy
 /// a vagyon ne derüljön ki. Mindig sötét témában, mint az elemzés kártyája.
 class PortfolioShareCard extends StatelessWidget {
-  const PortfolioShareCard({super.key, required this.snapshot, required this.fmt, required this.date});
+  const PortfolioShareCard({super.key, required this.snapshot, required this.fmt, required this.date, this.account});
+
+  /// Számla-nézetből a számla neve (a cím mellett), hogy ne az egész portfóliónak látsszon.
+  final String? account;
 
   /// A kártya logikai mérete; 3× nagyítással 1080×1350 képpont.
   static const size = Size(360, 450);
@@ -75,7 +78,9 @@ class PortfolioShareCard extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Text(
-                      l10n.portfolioShareHeading,
+                      [l10n.portfolioShareHeading, ?account].join(' · '),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w800),
                     ),
                   ),
@@ -110,7 +115,7 @@ class PortfolioShareCard extends StatelessWidget {
                   Expanded(
                     child: Text(l10n.portfolioTopHoldings, style: TextStyle(color: p.muted, fontSize: 12)),
                   ),
-                  Text(l10n.portfolioPositionsCount(s.rows.length), style: TextStyle(color: p.muted, fontSize: 12)),
+                  Text(l10n.portfolioPositionsCount(pricedCount(s)), style: TextStyle(color: p.muted, fontSize: 12)),
                 ],
               ),
               const SizedBox(height: 6),
@@ -184,13 +189,18 @@ class PortfolioShareCard extends StatelessWidget {
   }
 }
 
+/// Az árazott (az összesítésben szereplő) pozíciók száma: a kártya csak ezekről mutat adatot.
+int pricedCount(PortfolioSnapshot s) => s.rows.where((r) => r.inTotal).length;
+
 /// A teljesítmény szövegként (ugyanazok a százalékok, mint a képen).
-String portfolioShareText(PortfolioSnapshot s, AppLocalizations l10n, Fmt fmt) {
-  final b = StringBuffer('${l10n.portfolioShareHeading} · ${l10n.shareCardFooter}\n');
+String portfolioShareText(PortfolioSnapshot s, AppLocalizations l10n, Fmt fmt, {String? account}) {
+  final b = StringBuffer('${[l10n.portfolioShareHeading, ?account].join(' · ')} · ${l10n.shareCardFooter}\n');
   b.writeln('${l10n.portfolioGainLoss}: ${fmt.percent(s.gainPercent, withSign: true)}');
   if (s.annualReturn case final r?) {
     b.writeln('${l10n.portfolioAnnualReturn}: ${l10n.portfolioPerYear(fmt.percent(r * 100, withSign: true))}');
   }
+  if (s.dayGainPercent case final d?) b.writeln('${l10n.portfolioToday}: ${fmt.percent(d, withSign: true)}');
+  b.writeln(l10n.portfolioPositionsCount(pricedCount(s)));
   final top = topHoldings(s);
   if (top.isNotEmpty) {
     b.writeln(
@@ -203,17 +213,19 @@ String portfolioShareText(PortfolioSnapshot s, AppLocalizations l10n, Fmt fmt) {
 
 /// A megosztó lap: a kártya előnézete, alatta a megjegyzés (csak százalékok),
 /// képként vagy szövegként osztható meg.
-Future<void> showPortfolioShare(BuildContext context, PortfolioSnapshot snapshot) => showModalBottomSheet<void>(
-  context: context,
-  isScrollControlled: true,
-  showDragHandle: true,
-  builder: (_) => _PortfolioShareSheet(snapshot: snapshot),
-);
+Future<void> showPortfolioShare(BuildContext context, PortfolioSnapshot snapshot, {String? account}) =>
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      showDragHandle: true,
+      builder: (_) => _PortfolioShareSheet(snapshot: snapshot, account: account),
+    );
 
 class _PortfolioShareSheet extends StatefulWidget {
-  const _PortfolioShareSheet({required this.snapshot});
+  const _PortfolioShareSheet({required this.snapshot, this.account});
 
   final PortfolioSnapshot snapshot;
+  final String? account;
 
   @override
   State<_PortfolioShareSheet> createState() => _PortfolioShareSheetState();
@@ -250,7 +262,7 @@ class _PortfolioShareSheetState extends State<_PortfolioShareSheet> {
                 borderRadius: BorderRadius.circular(16),
                 child: RepaintBoundary(
                   key: _boundary,
-                  child: PortfolioShareCard(snapshot: widget.snapshot, fmt: fmt, date: _date),
+                  child: PortfolioShareCard(snapshot: widget.snapshot, fmt: fmt, date: _date, account: widget.account),
                 ),
               ),
             ),
@@ -302,7 +314,7 @@ class _PortfolioShareSheetState extends State<_PortfolioShareSheet> {
                     onPressed: _busy
                         ? null
                         : () => shareText(
-                            portfolioShareText(widget.snapshot, l10n, fmt),
+                            portfolioShareText(widget.snapshot, l10n, fmt, account: widget.account),
                             subject: '${l10n.portfolioShareHeading} · WhatStock',
                             origin: shareOriginOf(btn),
                           ),

@@ -2636,6 +2636,11 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Akukho xabiso langoku kwi-$symbols: azibandakanywanga kulwabiwo.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

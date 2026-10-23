@@ -797,5 +797,6 @@
   "contributionButton": "Fa sika foforo hyɛ mu",
   "contributionAmount": "Sika a wode bɛhyɛ mu ({currency})",
   "contributionHint": "Wɔtɔ nko ara, wɔntɔn hwee: nkyɛfa a aka akyi koraa wɔ wɔn botaeɛ ho na wɔnya sika no kan.",
-  "contributionShares": "≈ nkyɛfa {shares}"
+  "contributionShares": "≈ nkyɛfa {shares}",
+  "contributionMissing": "Seesei bo biara nni hɔ mma {symbols}: wɔamfa wɔn anka sika nkyɛmu no ho."
 }

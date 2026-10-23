@@ -2640,6 +2640,11 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ha ho theko ya hona jwale ya $symbols: ha di kenyelletswe kabong.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

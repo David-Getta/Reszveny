@@ -2618,6 +2618,11 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols खातिर अबही के दाम उपलब्ध नइखे: बँटवारा में शामिल नइखे कइल गइल।';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

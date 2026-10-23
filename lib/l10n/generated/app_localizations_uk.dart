@@ -2694,6 +2694,11 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Немає поточної ціни для $symbols: не враховано під час розподілу.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

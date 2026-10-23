@@ -797,5 +797,6 @@
   "contributionButton": "Musuq qullqita churay",
   "contributionAmount": "Churanapaq qullqi ({currency})",
   "contributionHint": "Rantiylla, mana rantikuychu: munasqanmanta aswan uraypi kaq posicionkuna ñawpaqta qullqita chaskinku.",
-  "contributionShares": "≈ {shares} accionkuna"
+  "contributionShares": "≈ {shares} accionkuna",
+  "contributionMissing": "{symbols}-paq kunan chaninnin mana kanchu: rakinakuypi mana yupakunchu."
 }

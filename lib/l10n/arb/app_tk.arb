@@ -797,5 +797,6 @@
   "contributionButton": "Täze maýa goý",
   "contributionAmount": "Goýuljak mukdar ({currency})",
   "contributionHint": "Diňe satyn almak, satmak ýok: maksadyndan iň köp aşakda galan pozisiýalar puly ilki alýar.",
-  "contributionShares": "≈ {shares} paýnama"
+  "contributionShares": "≈ {shares} paýnama",
+  "contributionMissing": "{symbols} üçin häzirki baha ýok: paýlanyşa goşulmady."
 }

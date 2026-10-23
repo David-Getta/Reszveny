@@ -2602,6 +2602,11 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'គ្មានតម្លៃបច្ចុប្បន្នសម្រាប់ $symbols ទេ៖ មិនត្រូវបានរាប់បញ្ចូលក្នុងការបែងចែកទេ។';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

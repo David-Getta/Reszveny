@@ -2636,6 +2636,11 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Pas de cours actuel pour $symbols : hors répartition.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

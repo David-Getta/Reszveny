@@ -2612,6 +2612,11 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols ལ་ད་ལྟའི་གོང་ཚད་མེད། བགོ་བཤའི་ནང་མ་བསྡུས།';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

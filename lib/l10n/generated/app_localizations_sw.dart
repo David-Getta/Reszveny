@@ -2625,6 +2625,11 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Hakuna bei ya sasa kwa $symbols: hazijajumuishwa kwenye mgawanyo.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

@@ -2624,6 +2624,11 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols-д одоогийн үнэ байхгүй: хуваарилалтад оруулаагүй.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

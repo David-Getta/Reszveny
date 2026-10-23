@@ -2630,6 +2630,11 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Sem preço atual para $symbols: ficam fora da distribuição.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

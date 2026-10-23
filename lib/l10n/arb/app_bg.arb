@@ -797,5 +797,6 @@
   "contributionButton": "Инвестиране на нови пари",
   "contributionAmount": "Сума за инвестиране ({currency})",
   "contributionHint": "Само покупки, без продажби: първо получават пари позициите, които най-много изостават от целта си.",
-  "contributionShares": "≈ {shares} акции"
+  "contributionShares": "≈ {shares} акции",
+  "contributionMissing": "Няма актуална цена за {symbols}: не са включени в разпределението."
 }

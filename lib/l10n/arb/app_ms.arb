@@ -797,5 +797,6 @@
   "contributionButton": "Laburkan wang baharu",
   "contributionAmount": "Jumlah untuk dilaburkan ({currency})",
   "contributionHint": "Beli sahaja, tanpa jualan: pegangan yang paling jauh di bawah sasarannya menerima wang dahulu.",
-  "contributionShares": "≈ {shares} saham"
+  "contributionShares": "≈ {shares} saham",
+  "contributionMissing": "Tiada harga semasa untuk {symbols}: tidak dimasukkan dalam pembahagian."
 }

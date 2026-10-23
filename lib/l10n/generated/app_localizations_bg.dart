@@ -2625,6 +2625,11 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Няма актуална цена за $symbols: не са включени в разпределението.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

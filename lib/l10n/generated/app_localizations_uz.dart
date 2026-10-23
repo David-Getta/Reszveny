@@ -2628,6 +2628,11 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols uchun joriy narx yoʻq: taqsimotga kiritilmadi.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

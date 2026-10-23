@@ -797,5 +797,6 @@
   "contributionButton": "Tshala imali entsha",
   "contributionAmount": "Inani lokutshala ({currency})",
   "contributionHint": "Kuthengwa kuphela, akuthengiswa: amasheya angaphansi kakhulu komgomo wawo athola imali kuqala.",
-  "contributionShares": "≈ amasheya {shares}"
+  "contributionShares": "≈ amasheya {shares}",
+  "contributionMissing": "Ayikho intengo yamanje ye-{symbols}: akufakiwe ekwabiweni."
 }

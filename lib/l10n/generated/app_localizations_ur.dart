@@ -2623,6 +2623,11 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols کے لیے موجودہ قیمت دستیاب نہیں: تقسیم میں شامل نہیں کیا گیا۔';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

@@ -797,5 +797,6 @@
   "contributionButton": "Wari kura don",
   "contributionAmount": "Wari hakɛ min bɛna don ({currency})",
   "contributionHint": "San dɔrɔn, feere tɛ: aksiyɔn minnu tora kɔfɛ kosɛbɛ u ka laɲini na, olu bɛ wari sɔrɔ fɔlɔ.",
-  "contributionShares": "≈ aksiyɔn {shares}"
+  "contributionShares": "≈ aksiyɔn {shares}",
+  "contributionMissing": "{symbols} sisan sɔngɔ tɛ yen: u ma don tilali la."
 }

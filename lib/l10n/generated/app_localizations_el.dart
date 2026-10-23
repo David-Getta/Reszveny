@@ -2634,6 +2634,11 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Δεν υπάρχει τρέχουσα τιμή για $symbols: εξαιρούνται από την κατανομή.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

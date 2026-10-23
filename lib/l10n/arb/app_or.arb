@@ -797,5 +797,6 @@
   "contributionButton": "ନୂଆ ଅର୍ଥ ନିବେଶ କରନ୍ତୁ",
   "contributionAmount": "ନିବେଶ ପାଇଁ ରାଶି ({currency})",
   "contributionHint": "କେବଳ କିଣିବା, ବିକ୍ରି ନୁହେଁ: ନିଜ ଲକ୍ଷ୍ୟଠାରୁ ସବୁଠାରୁ ଅଧିକ ତଳେ ଥିବା ପୋଜିସନଗୁଡ଼ିକ ପ୍ରଥମେ ଅର୍ଥ ପାଆନ୍ତି।",
-  "contributionShares": "≈ {shares} ସେୟାର"
+  "contributionShares": "≈ {shares} ସେୟାର",
+  "contributionMissing": "{symbols} ପାଇଁ ବର୍ତ୍ତମାନର ଦର ଉପଲବ୍ଧ ନାହିଁ: ବଣ୍ଟନରୁ ବାଦ ଦିଆଯାଇଛି।"
 }

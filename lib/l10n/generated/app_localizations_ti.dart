@@ -2585,6 +2585,11 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'ን$symbols ህሉው ዋጋ የለን፦ ኣብ ምምቃል ኣይተሓወሰን።';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

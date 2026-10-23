@@ -2630,6 +2630,11 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Babu farashin yanzu na $symbols: ba a saka su a rabon ba.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

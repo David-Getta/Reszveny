@@ -797,5 +797,6 @@
   "contributionButton": "དངུལ་གསར་པ་མ་འཇོག་བྱེད།",
   "contributionAmount": "མ་འཇོག་བྱེད་རྒྱུའི་དངུལ་འབོར ({currency})",
   "contributionHint": "ཉོ་བ་ཁོ་ན། འཚོང་བ་མེད། དམིགས་ཡུལ་ལས་ཆེས་མང་བ་ཞན་པའི་ཧུར་ཁག་ལ་དངུལ་སྔོན་ལ་སྤྲོད་ཀྱི་རེད།",
-  "contributionShares": "≈ ཧུར་ཁག {shares}"
+  "contributionShares": "≈ ཧུར་ཁག {shares}",
+  "contributionMissing": "{symbols} ལ་ད་ལྟའི་གོང་ཚད་མེད། བགོ་བཤའི་ནང་མ་བསྡུས།"
 }

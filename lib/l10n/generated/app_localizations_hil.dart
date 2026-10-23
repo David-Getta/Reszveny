@@ -2641,6 +2641,11 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Wala sang presyo subong para sa $symbols: wala ginlakip sa pagbinahin.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

@@ -2634,6 +2634,11 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'No hi ha preu actual per a $symbols: queden fora del repartiment.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

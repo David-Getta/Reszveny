@@ -2621,6 +2621,11 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Tidak ada harga terkini untuk $symbols: tidak disertakan dalam pembagian.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

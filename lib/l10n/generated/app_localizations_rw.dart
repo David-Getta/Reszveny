@@ -2636,6 +2636,11 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Nta giciro cya none cya $symbols: ntibibarirwa mu igabanywa.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

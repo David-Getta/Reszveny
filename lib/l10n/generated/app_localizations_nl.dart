@@ -2630,6 +2630,11 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Geen actuele koers voor $symbols: niet meegenomen in de verdeling.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

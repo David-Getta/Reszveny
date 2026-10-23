@@ -797,5 +797,6 @@
   "contributionButton": "Mag-invest ng bagong pera",
   "contributionAmount": "Halagang i-invest ({currency})",
   "contributionHint": "Pagbili lang, walang pagbebenta: ang mga posisyong pinakamalayo sa ilalim ng kanilang target ang unang makakatanggap ng pera.",
-  "contributionShares": "≈ {shares} share"
+  "contributionShares": "≈ {shares} share",
+  "contributionMissing": "Walang kasalukuyang presyo para sa {symbols}: hindi isinama sa paghahati."
 }

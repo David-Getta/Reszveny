@@ -797,5 +797,6 @@
   "contributionButton": "Жаңа қаражат салу",
   "contributionAmount": "Салынатын сома ({currency})",
   "contributionHint": "Тек сатып алу, сатусыз: қаражатты алдымен мақсатынан ең көп қалып отырған позициялар алады.",
-  "contributionShares": "≈ {shares} акция"
+  "contributionShares": "≈ {shares} акция",
+  "contributionMissing": "{symbols} үшін ағымдағы баға жоқ: бөлуге қосылмады."
 }

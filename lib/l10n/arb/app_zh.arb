@@ -797,5 +797,6 @@
   "contributionButton": "投入新资金",
   "contributionAmount": "投资金额（{currency}）",
   "contributionHint": "只买不卖：低于目标比例最多的持仓优先分配资金。",
-  "contributionShares": "≈ {shares} 股"
+  "contributionShares": "≈ {shares} 股",
+  "contributionMissing": "{symbols}暂无当前价格，未纳入分配。"
 }

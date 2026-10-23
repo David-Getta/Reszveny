@@ -797,5 +797,6 @@
   "contributionButton": "Zuba sabon kuɗi",
   "contributionAmount": "Adadin da za a zuba ({currency})",
   "contributionHint": "Saye kawai, babu sayarwa: matsayin da suka fi nisa ƙasa da manufarsu ne za su fara samun kuɗin.",
-  "contributionShares": "≈ hannun jari {shares}"
+  "contributionShares": "≈ hannun jari {shares}",
+  "contributionMissing": "Babu farashin yanzu na {symbols}: ba a saka su a rabon ba."
 }

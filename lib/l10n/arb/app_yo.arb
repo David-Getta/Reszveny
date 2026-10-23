@@ -797,5 +797,6 @@
   "contributionButton": "Dókòwò owó tuntun",
   "contributionAmount": "Iye owó láti dókòwò ({currency})",
   "contributionHint": "Rírà nìkan, kò sí títà: àwọn ohun ìní tí ó jìnnà jù lọ sí àfojúsùn wọn ní ìsàlẹ̀ ni yóò kọ́kọ́ gba owó náà.",
-  "contributionShares": "≈ ìpín {shares}"
+  "contributionShares": "≈ ìpín {shares}",
+  "contributionMissing": "Kò sí iye owó lọ́wọ́lọ́wọ́ fún {symbols}: a kò fi wọ́n kún pínpín náà."
 }

@@ -797,5 +797,6 @@
   "contributionButton": "Invest new moni",
   "contributionAmount": "Amount to invest ({currency})",
   "contributionHint": "Na only buy, no sell: di stocks wey fall pass under dia target go first collect di moni.",
-  "contributionShares": "≈ {shares} shares"
+  "contributionShares": "≈ {shares} shares",
+  "contributionMissing": "{symbols} no get current price: we no put dem for di sharing."
 }

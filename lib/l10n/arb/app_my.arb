@@ -797,5 +797,6 @@
   "contributionButton": "ငွေသစ် ရင်းနှီးရန်",
   "contributionAmount": "ရင်းနှီးမည့် ပမာဏ ({currency})",
   "contributionHint": "ဝယ်ရုံသာ၊ မရောင်းပါ- ပစ်မှတ်ထက် အများဆုံး လျော့နေသော ကိုင်ဆောင်ထားမှုများက ငွေကို ဦးစွာ ရရှိပါသည်။",
-  "contributionShares": "≈ ရှယ်ယာ {shares}"
+  "contributionShares": "≈ ရှယ်ယာ {shares}",
+  "contributionMissing": "{symbols} အတွက် လက်ရှိဈေးနှုန်း မရှိပါ- ခွဲဝေမှုတွင် ထည့်မတွက်ပါ။"
 }

@@ -797,5 +797,6 @@
   "contributionButton": "Yeni para yatır",
   "contributionAmount": "Yatırılacak tutar ({currency})",
   "contributionHint": "Yalnızca alım, satış yok: para önce hedefinin en çok altında kalan pozisyonlara gider.",
-  "contributionShares": "≈ {shares} hisse"
+  "contributionShares": "≈ {shares} hisse",
+  "contributionMissing": "{symbols} için güncel fiyat yok: dağılıma dahil edilmedi."
 }

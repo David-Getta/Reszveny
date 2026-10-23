@@ -2634,6 +2634,11 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Gatiin ammaa $symbols hin jiru: qoodinsa keessa hin galle.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

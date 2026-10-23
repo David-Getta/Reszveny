@@ -797,5 +797,6 @@
   "contributionButton": "Ieguldīt jaunu naudu",
   "contributionAmount": "Ieguldāmā summa ({currency})",
   "contributionHint": "Tikai pirkumi, bez pārdošanas: naudu vispirms saņem pozīcijas, kas visvairāk atpaliek no sava mērķa.",
-  "contributionShares": "≈ {shares} akcijas"
+  "contributionShares": "≈ {shares} akcijas",
+  "contributionMissing": "Pozīcijām {symbols} nav pašreizējās cenas: nav iekļautas sadalē."
 }

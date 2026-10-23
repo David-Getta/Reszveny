@@ -2629,6 +2629,11 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ndaipóri $symbols tepy ko\'ag̃agua: noñemoingéi ñemboja\'ópe.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

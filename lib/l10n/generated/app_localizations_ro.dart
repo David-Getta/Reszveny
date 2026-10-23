@@ -2663,6 +2663,11 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Nu există preț curent pentru $symbols: nu sunt incluse în repartizare.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

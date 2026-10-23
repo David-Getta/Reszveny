@@ -2642,6 +2642,11 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ga go na tlhwatlhwa ya gompieno ya $symbols: ga di akarediwe mo kabong.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

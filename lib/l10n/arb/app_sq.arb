@@ -797,5 +797,6 @@
   "contributionButton": "Investo para të reja",
   "contributionAmount": "Shuma për t’u investuar ({currency})",
   "contributionHint": "Vetëm blerje, pa shitje: paratë i marrin së pari pozicionet që janë më shumë nën synimin e tyre.",
-  "contributionShares": "≈ {shares} aksione"
+  "contributionShares": "≈ {shares} aksione",
+  "contributionMissing": "Nuk ka çmim aktual për {symbols}: nuk përfshihen në ndarje."
 }

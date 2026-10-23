@@ -797,5 +797,6 @@
   "contributionButton": "Investi nuovo denaro",
   "contributionAmount": "Importo da investire ({currency})",
   "contributionHint": "Solo acquisti, nessuna vendita: le posizioni più sotto il loro obiettivo ricevono il denaro per prime.",
-  "contributionShares": "≈ {shares} azioni"
+  "contributionShares": "≈ {shares} azioni",
+  "contributionMissing": "Nessun prezzo attuale per {symbols}: esclusi dalla ripartizione."
 }

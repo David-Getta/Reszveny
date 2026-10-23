@@ -2691,6 +2691,11 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Pre $symbols nie je k dispozícii aktuálna cena: nie sú zahrnuté do rozdelenia.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

@@ -797,5 +797,6 @@
   "contributionButton": "Жаңы каражат салуу",
   "contributionAmount": "Салына турган сумма ({currency})",
   "contributionHint": "Сатып алуу гана, сатуусуз: акчаны адегенде максатынан эң көп артта калган позициялар алат.",
-  "contributionShares": "≈ {shares} акция"
+  "contributionShares": "≈ {shares} акция",
+  "contributionMissing": "{symbols} үчүн учурдагы баа жок: бөлүштүрүүгө кирген жок."
 }

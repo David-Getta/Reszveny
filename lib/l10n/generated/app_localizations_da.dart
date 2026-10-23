@@ -2622,6 +2622,11 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ingen aktuel kurs for $symbols: er ikke med i fordelingen.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

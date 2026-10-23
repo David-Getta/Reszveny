@@ -797,5 +797,6 @@
   "contributionButton": "Invertir diners nous",
   "contributionAmount": "Import a invertir ({currency})",
   "contributionHint": "Només compres, cap venda: les posicions més per sota del seu objectiu reben els diners primer.",
-  "contributionShares": "≈ {shares} accions"
+  "contributionShares": "≈ {shares} accions",
+  "contributionMissing": "No hi ha preu actual per a {symbols}: queden fora del repartiment."
 }

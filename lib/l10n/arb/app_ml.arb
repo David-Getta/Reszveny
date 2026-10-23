@@ -797,5 +797,6 @@
   "contributionButton": "പുതിയ പണം നിക്ഷേപിക്കുക",
   "contributionAmount": "നിക്ഷേപിക്കേണ്ട തുക ({currency})",
   "contributionHint": "വാങ്ങൽ മാത്രം, വിൽപ്പനയില്ല: ലക്ഷ്യത്തിൽ നിന്ന് ഏറ്റവും താഴെയുള്ള പൊസിഷനുകൾക്കാണ് ആദ്യം പണം ലഭിക്കുക.",
-  "contributionShares": "≈ {shares} ഓഹരികൾ"
+  "contributionShares": "≈ {shares} ഓഹരികൾ",
+  "contributionMissing": "{symbols}-ന് നിലവിലെ വില ലഭ്യമല്ല: വിഭജനത്തിൽ ഉൾപ്പെടുത്തിയിട്ടില്ല."
 }

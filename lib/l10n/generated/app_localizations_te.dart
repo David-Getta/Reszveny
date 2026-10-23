@@ -2630,6 +2630,11 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols కోసం ప్రస్తుత ధర అందుబాటులో లేదు: పంపిణీలో చేర్చలేదు.';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

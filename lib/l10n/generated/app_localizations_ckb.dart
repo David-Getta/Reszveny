@@ -2625,6 +2625,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'نرخی ئێستا بۆ $symbols نییە: لە دابەشکردنەکە دەرکراون.';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

@@ -797,5 +797,6 @@
   "contributionButton": "නව මුදල් ආයෝජනය කරන්න",
   "contributionAmount": "ආයෝජනය කරන මුදල ({currency})",
   "contributionHint": "මිලදී ගැනීම් පමණි, විකිණීම් නැත: තම ඉලක්කයට වඩා වැඩිපුරම පහළින් ඇති ස්ථානවලට මුදල් මුලින්ම ලැබේ.",
-  "contributionShares": "≈ කොටස් {shares}"
+  "contributionShares": "≈ කොටස් {shares}",
+  "contributionMissing": "{symbols} සඳහා වත්මන් මිලක් නොමැත: බෙදීමට ඇතුළත් කර නැත."
 }

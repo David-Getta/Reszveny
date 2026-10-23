@@ -797,5 +797,6 @@
   "contributionButton": "Isa mari itsva",
   "contributionAmount": "Mari yekuisa ({currency})",
   "contributionHint": "Kutenga chete, hapana kutengesa: masheya ari pasi zvikuru pechinangwa chawo anotanga kuwana mari.",
-  "contributionShares": "≈ masheya {shares}"
+  "contributionShares": "≈ masheya {shares}",
+  "contributionMissing": "Hapana mutengo wazvino we {symbols}: hazvina kuverengerwa mukugovera."
 }

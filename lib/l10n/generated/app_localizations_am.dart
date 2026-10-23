@@ -2590,6 +2590,11 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'ለ$symbols የአሁኑ ዋጋ የለም፤ ከክፍፍሉ ውጭ ተደርገዋል።';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

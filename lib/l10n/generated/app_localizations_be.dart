@@ -2691,6 +2691,11 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Няма актуальнай цаны для $symbols: не ўлічаны пры размеркаванні.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

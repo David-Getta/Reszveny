@@ -2622,6 +2622,11 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols sisan sɔngɔ tɛ yen: u ma don tilali la.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

@@ -2626,6 +2626,11 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols үчүн учурдагы баа жок: бөлүштүрүүгө кирген жок.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

@@ -8,7 +8,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/date_picker_row.dart';
 import '../../widgets/metric_hint.dart';
-import 'add_lot_dialog.dart' show parseDecimal;
+import 'add_lot_dialog.dart' show parseAmount;
 import 'dividend_forecast.dart';
 import 'goal_dialog.dart';
 import 'portfolio_store.dart';
@@ -212,9 +212,13 @@ class DividendsCard extends StatelessWidget {
                               // Több számlán érkező kifizetésnél a legnagyobb rész a saját számlájára
                               // (a többi a számla nézetéből vagy kézzel rögzíthető).
                               onPressed: () {
-                                final part = account != null || x.byAccount.isEmpty
-                                    ? null
-                                    : (x.byAccount.entries.toList()..sort((a, b) => b.value.compareTo(a.value))).first;
+                                // Csak a részvényt még tartó számlák közül (ha van ilyen rész).
+                                final holders = services.portfolio.heldByAccount(x.symbol).keys.toSet();
+                                final parts = [
+                                  for (final e in x.byAccount.entries)
+                                    if (holders.contains(e.key)) e,
+                                ]..sort((a, b) => b.value.compareTo(a.value));
+                                final part = account != null ? null : parts.firstOrNull;
                                 showAddDividendDialog(
                                   context,
                                   symbol: x.symbol,
@@ -382,7 +386,7 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
   Future<void> _submit() async {
     final l10n = AppLocalizations.of(context);
     final symbol = _symbol.text.trim().toUpperCase();
-    final amount = parseDecimal(_amount.text);
+    final amount = parseAmount(_amount.text, Localizations.localeOf(context).toString());
     final ccy = _currency.text.trim().toUpperCase();
     setState(() {
       _symbolError = !_symbolPattern.hasMatch(symbol);

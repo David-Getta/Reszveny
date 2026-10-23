@@ -2596,6 +2596,11 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'ບໍ່ມີລາຄາປັດຈຸບັນສຳລັບ $symbols: ບໍ່ໄດ້ນັບລວມໃນການແບ່ງ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

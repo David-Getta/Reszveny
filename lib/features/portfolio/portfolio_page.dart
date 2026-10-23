@@ -307,13 +307,14 @@ class _PortfolioBody extends StatelessWidget {
                               ),
                             ),
                             // A teljesítmény megosztása képként vagy szövegként (csak százalékok).
-                            if (!s.unknown && s.rows.isNotEmpty)
+                            // Csak ha van árazott pozíció (különben nincs mit százalékban mutatni).
+                            if (s.value > 0)
                               IconButton(
                                 key: const ValueKey('portfolio-share'),
                                 tooltip: l10n.portfolioShare,
                                 visualDensity: VisualDensity.compact,
                                 icon: Icon(Icons.ios_share_rounded, size: 20, color: p.muted),
-                                onPressed: () => showPortfolioShare(context, s),
+                                onPressed: () => showPortfolioShare(context, s, account: account),
                               ),
                           ],
                         ),
@@ -838,7 +839,11 @@ class _ContributionDialogState extends State<_ContributionDialog> {
     final theme = Theme.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     final ccy = widget.snapshot.currency;
-    final plan = contributionPlan(widget.snapshot, widget.targets, parseDecimal(_amount.text) ?? 0);
+    final plan = contributionPlan(
+      widget.snapshot,
+      widget.targets,
+      parseAmount(_amount.text, Localizations.localeOf(context).toString()) ?? 0,
+    );
     return AlertDialog(
       title: Text(l10n.contributionButton),
       content: SizedBox(
@@ -858,6 +863,20 @@ class _ContributionDialogState extends State<_ContributionDialog> {
                 decoration: InputDecoration(labelText: l10n.contributionAmount(ccy)),
                 onChanged: (_) => setState(() {}),
               ),
+              // A céllal bíró, de most ár nélküli pozíciók kimaradnak – ezt kimondjuk.
+              if ([
+                    for (final r in widget.snapshot.rows)
+                      if (!r.inTotal && widget.targets.containsKey(r.position.symbol.toUpperCase())) r.position.symbol,
+                  ]
+                  case final missing when missing.isNotEmpty)
+                Padding(
+                  key: const ValueKey('contribution-missing'),
+                  padding: const EdgeInsets.only(top: 8),
+                  child: Text(
+                    l10n.contributionMissing(missing.join(', ')),
+                    style: theme.textTheme.bodySmall?.copyWith(color: p.negative),
+                  ),
+                ),
               const SizedBox(height: 10),
               for (final step in plan)
                 Padding(

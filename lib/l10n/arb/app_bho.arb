@@ -797,5 +797,6 @@
   "contributionButton": "नया पइसा निवेश करीं",
   "contributionAmount": "निवेश करे के रकम ({currency})",
   "contributionHint": "सिरिफ खरीदारी, बिक्री ना: जवन पोजीशन अपना लक्ष्य से सबसे जादा पीछे बाड़ी, ओकरा के पइसा पहिले मिली।",
-  "contributionShares": "≈ {shares} शेयर"
+  "contributionShares": "≈ {shares} शेयर",
+  "contributionMissing": "{symbols} खातिर अबही के दाम उपलब्ध नइखे: बँटवारा में शामिल नइखे कइल गइल।"
 }

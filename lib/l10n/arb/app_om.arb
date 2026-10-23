@@ -797,5 +797,6 @@
   "contributionButton": "Maallaqa haaraa invastii godhi",
   "contributionAmount": "Hanga invastii godhamu ({currency})",
   "contributionHint": "Bituu qofa, gurgurtaa hin qabu: qabiyyeewwan galma isaanii irraa baay'ee gadi jiran maallaqa dursanii argatu.",
-  "contributionShares": "≈ aksiyoona {shares}"
+  "contributionShares": "≈ aksiyoona {shares}",
+  "contributionMissing": "Gatiin ammaa {symbols} hin jiru: qoodinsa keessa hin galle."
 }

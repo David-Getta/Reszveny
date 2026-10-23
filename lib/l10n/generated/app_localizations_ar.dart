@@ -2682,6 +2682,11 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'لا يوجد سعر حالي لـ $symbols، لذا استُبعدت من التوزيع.';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

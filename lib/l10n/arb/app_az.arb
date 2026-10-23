@@ -797,5 +797,6 @@
   "contributionButton": "Yeni pul yatır",
   "contributionAmount": "Yatırılacaq məbləğ ({currency})",
   "contributionHint": "Yalnız alış, satış yoxdur: pulu ilk növbədə hədəfindən ən çox geri qalan mövqelər alır.",
-  "contributionShares": "≈ {shares} səhm"
+  "contributionShares": "≈ {shares} səhm",
+  "contributionMissing": "{symbols} üçün cari qiymət yoxdur: bölgüyə daxil edilmir."
 }

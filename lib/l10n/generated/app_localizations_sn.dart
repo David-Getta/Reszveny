@@ -2631,6 +2631,11 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Hapana mutengo wazvino we $symbols: hazvina kuverengerwa mukugovera.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

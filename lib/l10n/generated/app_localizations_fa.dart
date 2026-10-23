@@ -2620,6 +2620,11 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'قیمت فعلی برای $symbols موجود نیست: در تقسیم لحاظ نمی‌شوند.';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

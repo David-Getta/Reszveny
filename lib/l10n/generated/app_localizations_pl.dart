@@ -2694,6 +2694,11 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Brak aktualnej ceny dla $symbols: pominięte w podziale.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

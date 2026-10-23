@@ -2592,6 +2592,11 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'ไม่มีราคาปัจจุบันสำหรับ $symbols จึงไม่นับรวมในการแบ่งเงิน';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

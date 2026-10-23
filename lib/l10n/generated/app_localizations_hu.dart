@@ -2629,6 +2629,11 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Most nincs ára: $symbols – kimarad az elosztásból.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

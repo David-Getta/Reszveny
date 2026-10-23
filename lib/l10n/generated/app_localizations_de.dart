@@ -2638,6 +2638,11 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Kein aktueller Kurs für $symbols: bei der Aufteilung nicht berücksichtigt.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

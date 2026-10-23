@@ -2616,6 +2616,11 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'אין מחיר נוכחי עבור $symbols: לא נכללו בחלוקה.';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

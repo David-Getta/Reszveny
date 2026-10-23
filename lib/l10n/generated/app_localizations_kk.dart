@@ -2623,6 +2623,11 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols үшін ағымдағы баға жоқ: бөлуге қосылмады.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

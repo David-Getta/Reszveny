@@ -2624,6 +2624,11 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols için güncel fiyat yok: dağılıma dahil edilmedi.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

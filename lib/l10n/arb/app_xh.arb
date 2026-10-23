@@ -797,5 +797,6 @@
   "contributionButton": "Tyala imali entsha",
   "contributionAmount": "Isixa sokutyala ({currency})",
   "contributionHint": "Kuthengwa kuphela, akuthengiswa: iipozishini ezingaphantsi kakhulu kwenjongo yazo zifumana imali kuqala.",
-  "contributionShares": "≈ izabelo {shares}"
+  "contributionShares": "≈ izabelo {shares}",
+  "contributionMissing": "Akukho xabiso langoku kwi-{symbols}: azibandakanywanga kulwabiwo."
 }

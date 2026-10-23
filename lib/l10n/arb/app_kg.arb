@@ -797,5 +797,6 @@
   "contributionButton": "Tula mbongo ya mpa",
   "contributionAmount": "Ntalu ya kutula ({currency})",
   "contributionHint": "Kusumba kaka, kuteka ve: ba position yina me bikala nsi ya lukanu na yo kuluta ta baka mbongo ntete.",
-  "contributionShares": "≈ action {shares}"
+  "contributionShares": "≈ action {shares}",
+  "contributionMissing": "Ka kuena ntalu ya bubu ya {symbols} ko: bo me katula yo na kukabula."
 }

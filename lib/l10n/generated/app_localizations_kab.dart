@@ -2622,6 +2622,11 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ulac ssuma tamirant i $symbols: ur ttwaḥesben ara deg beṭṭu.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

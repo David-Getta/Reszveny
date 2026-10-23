@@ -2629,6 +2629,11 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Fifia asi aɖeke meli na $symbols o: wometsɔ wo de mamã la me o.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

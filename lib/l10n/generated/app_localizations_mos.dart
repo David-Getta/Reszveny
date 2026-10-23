@@ -2609,6 +2609,11 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols koosg ka be masã ye: b pa kẽes-b pʋɩɩbã pʋgẽ ye.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

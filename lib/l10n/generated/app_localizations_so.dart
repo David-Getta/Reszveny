@@ -2632,6 +2632,11 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols ma laha qiime hadda ah: lagama darin qaybinta.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

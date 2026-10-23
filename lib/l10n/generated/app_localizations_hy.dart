@@ -2632,6 +2632,11 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols-ի ընթացիկ գինը չկա․ բաշխման մեջ չեն ներառվել։';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

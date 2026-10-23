@@ -797,5 +797,6 @@
   "contributionButton": "አዲስ ገንዘብ ኢንቨስት ያድርጉ",
   "contributionAmount": "ኢንቨስት የሚደረገው መጠን ({currency})",
   "contributionHint": "ግዢ ብቻ፣ ሽያጭ የለም፦ ከዒላማቸው በጣም ወደ ኋላ የቀሩት ይዞታዎች ገንዘቡን መጀመሪያ ያገኛሉ።",
-  "contributionShares": "≈ {shares} አክሲዮኖች"
+  "contributionShares": "≈ {shares} አክሲዮኖች",
+  "contributionMissing": "ለ{symbols} የአሁኑ ዋጋ የለም፤ ከክፍፍሉ ውጭ ተደርገዋል።"
 }

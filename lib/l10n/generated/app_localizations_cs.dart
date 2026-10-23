@@ -2686,6 +2686,11 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Pro $symbols není k dispozici aktuální cena: nejsou zahrnuty do rozdělení.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

@@ -797,5 +797,6 @@
   "contributionButton": "Shora amahera mashasha",
   "contributionAmount": "Amahera yo gushora ({currency})",
   "contributionHint": "Kugura gusa, nta kugurisha: imigabane iri kure cane munsi y'intumbero yayo ni yo ironka amahera mbere.",
-  "contributionShares": "≈ imigabane {shares}"
+  "contributionShares": "≈ imigabane {shares}",
+  "contributionMissing": "Nta giciro ca none ca {symbols}: ntibiharurwa mu kugabura."
 }

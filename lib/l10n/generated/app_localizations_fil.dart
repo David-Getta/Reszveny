@@ -2632,6 +2632,11 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Walang kasalukuyang presyo para sa $symbols: hindi isinama sa paghahati.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

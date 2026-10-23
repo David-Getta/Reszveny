@@ -2553,6 +2553,11 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols의 현재 가격이 없어 배분에서 제외했습니다.';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

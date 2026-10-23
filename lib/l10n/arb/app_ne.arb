@@ -797,5 +797,6 @@
   "contributionButton": "नयाँ रकम लगानी गर्नुहोस्",
   "contributionAmount": "लगानी गर्ने रकम ({currency})",
   "contributionHint": "केवल खरिद, बिक्री होइन: आफ्नो लक्ष्यभन्दा सबैभन्दा तल रहेका पोजिसनहरूले पहिले रकम पाउँछन्।",
-  "contributionShares": "≈ {shares} शेयर"
+  "contributionShares": "≈ {shares} शेयर",
+  "contributionMissing": "{symbols} का लागि वर्तमान मूल्य उपलब्ध छैन: बाँडफाँडमा समावेश गरिएको छैन।"
 }

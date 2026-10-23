@@ -797,5 +797,6 @@
   "contributionButton": "Beeletsa madi a masha",
   "contributionAmount": "Madi a go beeletsa ({currency})",
   "contributionHint": "Go reka fela, ga go rekisiwe: dishere tse di kwa tlase thata ga maikaelelo a tsone di amogela madi pele.",
-  "contributionShares": "≈ dishere di le {shares}"
+  "contributionShares": "≈ dishere di le {shares}",
+  "contributionMissing": "Ga go na tlhwatlhwa ya gompieno ya {symbols}: ga di akarediwe mo kabong."
 }

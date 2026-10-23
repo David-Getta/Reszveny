@@ -2645,6 +2645,11 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Awan ti agdama a presio para iti $symbols: saan a nairaman iti panagbingay.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

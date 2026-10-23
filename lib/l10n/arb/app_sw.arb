@@ -797,5 +797,6 @@
   "contributionButton": "Wekeza pesa mpya",
   "contributionAmount": "Kiasi cha kuwekeza ({currency})",
   "contributionHint": "Ununuzi tu, hakuna mauzo: nafasi zilizo chini zaidi ya lengo lake hupata pesa kwanza.",
-  "contributionShares": "≈ hisa {shares}"
+  "contributionShares": "≈ hisa {shares}",
+  "contributionMissing": "Hakuna bei ya sasa kwa {symbols}: hazijajumuishwa kwenye mgawanyo."
 }

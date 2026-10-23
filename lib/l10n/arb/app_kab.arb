@@ -797,5 +797,6 @@
   "contributionButton": "Sers idrimen imaynuten",
   "contributionAmount": "Azal ara tserseḍ ({currency})",
   "contributionHint": "Asɣi kan, ulac azenzi: iksyunen yeqqimen ugar deffir yiswi-nsen ad awin idrimen d imezwura.",
-  "contributionShares": "≈ {shares} n yiksyunen"
+  "contributionShares": "≈ {shares} n yiksyunen",
+  "contributionMissing": "Ulac ssuma tamirant i {symbols}: ur ttwaḥesben ara deg beṭṭu."
 }

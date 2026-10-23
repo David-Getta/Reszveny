@@ -797,5 +797,6 @@
   "contributionButton": "Επένδυση νέων χρημάτων",
   "contributionAmount": "Ποσό προς επένδυση ({currency})",
   "contributionHint": "Μόνο αγορές, χωρίς πωλήσεις: οι θέσεις που υστερούν περισσότερο έναντι του στόχου τους παίρνουν πρώτες τα χρήματα.",
-  "contributionShares": "≈ {shares} μετοχές"
+  "contributionShares": "≈ {shares} μετοχές",
+  "contributionMissing": "Δεν υπάρχει τρέχουσα τιμή για {symbols}: εξαιρούνται από την κατανομή."
 }

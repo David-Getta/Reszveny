@@ -797,5 +797,6 @@
   "contributionButton": "Agipuonan iti baro a kuarta",
   "contributionAmount": "Gatad a maipuonan ({currency})",
   "contributionHint": "Panaggatang laeng, awan ti panaglako: dagiti posision a kaadaywan iti baba ti targetda ti umuna a makaawat iti kuarta.",
-  "contributionShares": "≈ {shares} a share"
+  "contributionShares": "≈ {shares} a share",
+  "contributionMissing": "Awan ti agdama a presio para iti {symbols}: saan a nairaman iti panagbingay."
 }

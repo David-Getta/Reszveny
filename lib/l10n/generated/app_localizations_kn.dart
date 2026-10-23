@@ -2630,6 +2630,11 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols ಗೆ ಪ್ರಸ್ತುತ ಬೆಲೆ ಲಭ್ಯವಿಲ್ಲ: ಹಂಚಿಕೆಯಿಂದ ಹೊರಗಿಡಲಾಗಿದೆ.';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

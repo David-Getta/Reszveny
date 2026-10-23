@@ -797,5 +797,6 @@
   "contributionButton": "ახალი თანხის ინვესტირება",
   "contributionAmount": "ინვესტირების თანხა ({currency})",
   "contributionHint": "მხოლოდ ყიდვა, გაყიდვის გარეშე: თანხას პირველ რიგში ის პოზიციები იღებს, რომლებიც ყველაზე მეტად ჩამორჩება თავის მიზანს.",
-  "contributionShares": "≈ {shares} აქცია"
+  "contributionShares": "≈ {shares} აქცია",
+  "contributionMissing": "{symbols}-ის მიმდინარე ფასი არ არის: განაწილებაში არ ჩაითვალა."
 }

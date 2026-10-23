@@ -2622,6 +2622,11 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols साठी वर्तमान किंमत उपलब्ध नाही: वाटपात धरले नाही.';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

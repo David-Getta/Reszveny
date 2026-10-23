@@ -2629,6 +2629,11 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Nuk ka çmim aktual për $symbols: nuk përfshihen në ndarje.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

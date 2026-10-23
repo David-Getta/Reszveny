@@ -2621,6 +2621,11 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols өчен агымдагы бәя юк: бүлүгә кертелмәде.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

@@ -2622,6 +2622,11 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols-ৰ বাবে বৰ্তমানৰ দাম নাই: বিতৰণৰ পৰা বাদ দিয়া হৈছে।';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

@@ -2636,6 +2636,11 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Walay presyo karon alang sa $symbols: wala iapil sa pagbahin.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

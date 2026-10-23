@@ -797,5 +797,6 @@
   "contributionButton": "Hametraka vola vaovao",
   "contributionAmount": "Vola hapetraka ({currency})",
   "contributionHint": "Fividianana ihany, tsy misy fivarotana: ny fananana lavitra indrindra ambanin'ny tanjony no mahazo ny vola voalohany.",
-  "contributionShares": "≈ {shares} aksiona"
+  "contributionShares": "≈ {shares} aksiona",
+  "contributionMissing": "Tsy misy vidiny ankehitriny ho an'ny {symbols}: tsy tafiditra amin'ny fizarana."
 }

@@ -2643,6 +2643,11 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Tsy misy vidiny ankehitriny ho an\'ny $symbols: tsy tafiditra amin\'ny fizarana.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

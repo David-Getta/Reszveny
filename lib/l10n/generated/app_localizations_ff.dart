@@ -2618,6 +2618,11 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Coggu jooni alaa wonande $symbols: naatnaaka e feccugol.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

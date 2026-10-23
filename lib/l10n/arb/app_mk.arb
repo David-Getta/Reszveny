@@ -797,5 +797,6 @@
   "contributionButton": "Вложи нови пари",
   "contributionAmount": "Износ за вложување ({currency})",
   "contributionHint": "Само купувања, без продажби: парите прво одат кај позициите што се најмногу под својата цел.",
-  "contributionShares": "≈ {shares} акции"
+  "contributionShares": "≈ {shares} акции",
+  "contributionMissing": "Нема актуелна цена за {symbols}: не се вклучени во распределбата."
 }

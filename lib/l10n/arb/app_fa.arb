@@ -797,5 +797,6 @@
   "contributionButton": "سرمایه‌گذاری پول جدید",
   "contributionAmount": "مبلغ سرمایه‌گذاری ({currency})",
   "contributionHint": "فقط خرید، بدون فروش: موقعیت‌هایی که بیش از همه از هدفشان عقب‌اند، زودتر پول می‌گیرند.",
-  "contributionShares": "≈ {shares} سهم"
+  "contributionShares": "≈ {shares} سهم",
+  "contributionMissing": "قیمت فعلی برای {symbols} موجود نیست: در تقسیم لحاظ نمی‌شوند."
 }

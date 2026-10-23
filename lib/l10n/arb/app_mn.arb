@@ -797,5 +797,6 @@
   "contributionButton": "Шинэ мөнгө оруулах",
   "contributionAmount": "Оруулах дүн ({currency})",
   "contributionHint": "Зөвхөн худалдан авна, зарахгүй: зорилтоосоо хамгийн их хоцорсон эзэмшилд мөнгө эхэлж очно.",
-  "contributionShares": "≈ {shares} хувьцаа"
+  "contributionShares": "≈ {shares} хувьцаа",
+  "contributionMissing": "{symbols}-д одоогийн үнэ байхгүй: хуваарилалтад оруулаагүй."
 }

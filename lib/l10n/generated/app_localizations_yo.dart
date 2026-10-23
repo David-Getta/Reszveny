@@ -2622,6 +2622,11 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Kò sí iye owó lọ́wọ́lọ́wọ́ fún $symbols: a kò fi wọ́n kún pínpín náà.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

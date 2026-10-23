@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../../app_services.dart';
 import '../../core/util/formatters.dart';
@@ -21,7 +22,24 @@ double? parseDecimal(String input) {
     final decimal = dot > comma ? '.' : ',';
     s = s.replaceAll(decimal == '.' ? ',' : '.', '');
   }
-  return double.tryParse(s.replaceAll(',', '.'));
+  final v = double.tryParse(s.replaceAll(',', '.'));
+  // A „NaN”, az „Infinity” és a túl nagy szám nem szám.
+  return v != null && v.isFinite ? v : null;
+}
+
+/// Pénzösszeg beolvasása ezres tagolással is: ha csak a nyelv tizedesjelétől
+/// eltérő jel (pont vagy vessző) van benne, és utána mindig pontosan három
+/// számjegy jön („5,000” angolul, „100.000” magyarul), az ezres tagolás; minden
+/// más esetben, mint a [parseDecimal].
+double? parseAmount(String input, String locale) {
+  final s = input.trim().replaceAll(RegExp(r"[\s\u00a0\u202f']"), '');
+  final decimal = NumberFormat.decimalPattern(Fmt(locale).numberLocale).symbols.DECIMAL_SEP;
+  final group = decimal == ',' ? '.' : ',';
+  // Az első csoport nem kezdődhet 0-val: a „0.125” tizedestört, nem 125.
+  if (!s.contains(decimal) && RegExp('^-?[1-9]\\d{0,2}(${RegExp.escape(group)}\\d{3})+\$').hasMatch(s)) {
+    return double.tryParse(s.replaceAll(group, ''));
+  }
+  return parseDecimal(input);
 }
 
 /// Vétel (vagy [holdings] megadásával eladás) rögzítése: darabszám,

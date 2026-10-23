@@ -2624,6 +2624,11 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Gũtirĩ thogora wa rĩu wa $symbols: itiigĩtwo thĩinĩ wa kũgayania.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

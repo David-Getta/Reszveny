@@ -2625,6 +2625,11 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols üçin häzirki baha ýok: paýlanyşa goşulmady.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

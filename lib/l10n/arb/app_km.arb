@@ -797,5 +797,6 @@
   "contributionButton": "វិនិយោគប្រាក់ថ្មី",
   "contributionAmount": "ចំនួនទឹកប្រាក់ត្រូវវិនិយោគ ({currency})",
   "contributionHint": "ទិញតែប៉ុណ្ណោះ គ្មានការលក់ទេ៖ ការកាន់កាប់ដែលនៅក្រោមគោលដៅឆ្ងាយជាងគេ ទទួលបានប្រាក់មុន។",
-  "contributionShares": "≈ {shares} ភាគហ៊ុន"
+  "contributionShares": "≈ {shares} ភាគហ៊ុន",
+  "contributionMissing": "គ្មានតម្លៃបច្ចុប្បន្នសម្រាប់ {symbols} ទេ៖ មិនត្រូវបានរាប់បញ្ចូលក្នុងការបែងចែកទេ។"
 }

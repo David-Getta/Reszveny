@@ -2616,6 +2616,11 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols लेल वर्तमान दाम उपलब्ध नहि अछि: बँटवारामे शामिल नहि कएल गेल।';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

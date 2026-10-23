@@ -797,5 +797,6 @@
   "contributionButton": "Investește bani noi",
   "contributionAmount": "Suma de investit ({currency})",
   "contributionHint": "Doar cumpărări, fără vânzări: banii merg mai întâi la pozițiile aflate cel mai mult sub țintă.",
-  "contributionShares": "≈ {shares} acțiuni"
+  "contributionShares": "≈ {shares} acțiuni",
+  "contributionMissing": "Nu există preț curent pentru {symbols}: nu sunt incluse în repartizare."
 }

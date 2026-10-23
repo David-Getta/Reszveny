@@ -2637,6 +2637,11 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols-paq kunan chaninnin mana kanchu: rakinakuypi mana yupakunchu.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

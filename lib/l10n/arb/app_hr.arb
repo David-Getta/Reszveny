@@ -797,5 +797,6 @@
   "contributionButton": "Uloži novi novac",
   "contributionAmount": "Iznos za ulaganje ({currency})",
   "contributionHint": "Samo kupnja, bez prodaje: novac prvo dobivaju pozicije koje najviše zaostaju za svojim ciljem.",
-  "contributionShares": "≈ {shares} kom."
+  "contributionShares": "≈ {shares} kom.",
+  "contributionMissing": "Nema trenutačne cijene za {symbols}: nisu uključeni u raspodjelu."
 }

@@ -2665,6 +2665,11 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Pozīcijām $symbols nav pašreizējās cenas: nav iekļautas sadalē.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

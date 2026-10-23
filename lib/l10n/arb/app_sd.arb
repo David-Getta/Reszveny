@@ -797,5 +797,6 @@
   "contributionButton": "نئين رقم سيڙپ ڪريو",
   "contributionAmount": "سيڙپ ڪرڻ واري رقم ({currency})",
   "contributionHint": "رڳو خريد، وڪرو نه: پنهنجي هدف کان سڀ کان وڌيڪ هيٺ پوزيشنن کي پهريان رقم ملي ٿي.",
-  "contributionShares": "≈ {shares} شيئر"
+  "contributionShares": "≈ {shares} شيئر",
+  "contributionMissing": "{symbols} لاءِ موجوده قيمت موجود ناهي: ورهاست ۾ شامل ناهن."
 }

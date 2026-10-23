@@ -797,5 +797,6 @@
   "contributionButton": "নতুন ধন বিনিয়োগ কৰক",
   "contributionAmount": "বিনিয়োগ কৰিবলগীয়া পৰিমাণ ({currency})",
   "contributionHint": "কেৱল ক্ৰয়, বিক্ৰী নাই: লক্ষ্যৰ পৰা আটাইতকৈ বেছি তলত থকা পজিচনসমূহে প্ৰথমে ধন পাব।",
-  "contributionShares": "≈ {shares} শ্বেয়াৰ"
+  "contributionShares": "≈ {shares} শ্বেয়াৰ",
+  "contributionMissing": "{symbols}-ৰ বাবে বৰ্তমানৰ দাম নাই: বিতৰণৰ পৰা বাদ দিয়া হৈছে।"
 }

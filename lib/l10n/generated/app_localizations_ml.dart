@@ -2634,6 +2634,11 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols-ന് നിലവിലെ വില ലഭ്യമല്ല: വിഭജനത്തിൽ ഉൾപ്പെടുത്തിയിട്ടില്ല.';
+  }
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

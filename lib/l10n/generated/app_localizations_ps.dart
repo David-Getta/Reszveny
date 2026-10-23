@@ -2615,6 +2615,11 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'د $symbols لپاره اوسنۍ بیه نشته: په وېش کې نه دي شامل.';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

@@ -2628,6 +2628,11 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ora ana rega saiki kanggo $symbols: ora dilebokake ing pambagian.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

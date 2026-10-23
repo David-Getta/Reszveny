@@ -2632,6 +2632,11 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Kakuena mushinga wa mpindieu wa $symbols: katuyi tubala mu diabanya.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

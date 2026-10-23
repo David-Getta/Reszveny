@@ -2625,6 +2625,11 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Seesei bo biara nni hɔ mma $symbols: wɔamfa wɔn anka sika nkyɛmu no ho.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

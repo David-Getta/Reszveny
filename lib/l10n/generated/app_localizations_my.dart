@@ -2615,6 +2615,11 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols အတွက် လက်ရှိဈေးနှုန်း မရှိပါ- ခွဲဝေမှုတွင် ထည့်မတွက်ပါ။';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

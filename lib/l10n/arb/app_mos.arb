@@ -797,5 +797,6 @@
   "contributionButton": "Kẽes ligd-paalga",
   "contributionAmount": "Ligd sõore f sẽn na n kẽes ({currency})",
   "contributionHint": "Da bala, koosg ka be: aksiõ nins sẽn ka ta b raabã wʋsgo n deng n paamd ligdã.",
-  "contributionShares": "≈ aksiõ {shares}"
+  "contributionShares": "≈ aksiõ {shares}",
+  "contributionMissing": "{symbols} koosg ka be masã ye: b pa kẽes-b pʋɩɩbã pʋgẽ ye."
 }

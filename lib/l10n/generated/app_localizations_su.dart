@@ -2628,6 +2628,11 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Teu aya harga ayeuna pikeun $symbols: teu diasupkeun kana pambagian.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

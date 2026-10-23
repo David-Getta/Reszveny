@@ -4,7 +4,7 @@ import '../../app_services.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
-import 'add_lot_dialog.dart' show parseDecimal;
+import 'add_lot_dialog.dart' show parseAmount;
 
 /// Készpénz a brókernél, pénznemenként: a meglévő egyenlegek listája törléssel,
 /// és egy új (vagy módosított) egyenleg megadása. Az összértékbe és a
@@ -39,7 +39,7 @@ class _CashDialogState extends State<_CashDialog> {
   Future<void> _submit() async {
     final l10n = AppLocalizations.of(context);
     final ccy = _currency.text.trim().toUpperCase();
-    final amount = parseDecimal(_amount.text);
+    final amount = parseAmount(_amount.text, Localizations.localeOf(context).toString());
     setState(() {
       _currencyError = !RegExp(r'^[A-Z]{3}$').hasMatch(ccy);
       _amountError = amount == null || amount < 0 || !amount.isFinite ? l10n.portfolioInvalidNumber : null;

@@ -797,5 +797,6 @@
   "contributionButton": "Sijoita uutta rahaa",
   "contributionAmount": "Sijoitettava summa ({currency})",
   "contributionHint": "Vain ostoja, ei myyntejä: eniten tavoitteestaan jäljessä olevat omistukset saavat rahat ensin.",
-  "contributionShares": "≈ {shares} osaketta"
+  "contributionShares": "≈ {shares} osaketta",
+  "contributionMissing": "Ei nykyistä hintaa kohteille {symbols}: jätetty jaon ulkopuolelle."
 }

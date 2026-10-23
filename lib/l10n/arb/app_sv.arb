@@ -797,5 +797,6 @@
   "contributionButton": "Investera nya pengar",
   "contributionAmount": "Belopp att investera ({currency})",
   "contributionHint": "Bara köp, ingen försäljning: innehaven som ligger längst under sitt mål får pengarna först.",
-  "contributionShares": "≈ {shares} aktier"
+  "contributionShares": "≈ {shares} aktier",
+  "contributionMissing": "Ingen aktuell kurs för {symbols}: tas inte med i fördelningen."
 }

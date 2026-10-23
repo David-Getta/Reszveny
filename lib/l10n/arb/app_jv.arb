@@ -797,5 +797,6 @@
   "contributionButton": "Investasekake dhuwit anyar",
   "contributionAmount": "Jumlah sing diinvestasekake ({currency})",
   "contributionHint": "Mung tuku, ora ana adol: posisi sing paling adoh ing ngisor target-e oleh dhuwit luwih dhisik.",
-  "contributionShares": "≈ {shares} saham"
+  "contributionShares": "≈ {shares} saham",
+  "contributionMissing": "Ora ana rega saiki kanggo {symbols}: ora dilebokake ing pambagian."
 }

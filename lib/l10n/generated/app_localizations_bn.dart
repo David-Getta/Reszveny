@@ -2622,6 +2622,11 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols-এর বর্তমান দাম নেই: বণ্টনে ধরা হয়নি।';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

@@ -797,5 +797,6 @@
   "contributionButton": "Teeka ssente empya",
   "contributionAmount": "Ssente z'onoteeka ({currency})",
   "contributionHint": "Kugula kwokka, tewali kutunda: emigabo egisinga okuba wansi w'ekigendererwa kyagyo gye gisooka okufuna ssente.",
-  "contributionShares": "≈ emigabo {shares}"
+  "contributionShares": "≈ emigabo {shares}",
+  "contributionMissing": "Tewali bbeeyi ya kati eya {symbols}: tegibaliddwa mu kugabanya."
 }

@@ -797,5 +797,6 @@
   "contributionButton": "Maalgeli lacag cusub",
   "contributionAmount": "Lacagta la maalgelinayo ({currency})",
   "contributionHint": "Iibsasho kaliya, iib ma jiro: haysashooyinka sida ugu badan uga hooseeya hadafkooda ayaa lacagta hore u hela.",
-  "contributionShares": "≈ {shares} saami"
+  "contributionShares": "≈ {shares} saami",
+  "contributionMissing": "{symbols} ma laha qiime hadda ah: lagama darin qaybinta."
 }

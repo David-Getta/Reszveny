@@ -2618,6 +2618,11 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols માટે વર્તમાન ભાવ ઉપલબ્ધ નથી: વહેંચણીમાં સામેલ નથી.';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

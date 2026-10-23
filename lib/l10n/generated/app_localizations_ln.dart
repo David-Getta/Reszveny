@@ -2635,6 +2635,11 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ntalo ya sikoyo ezali te mpo na $symbols: etangami te na bokaboli.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

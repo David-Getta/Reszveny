@@ -2622,6 +2622,11 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Pa gen pri aktyèl pou $symbols: yo pa konte nan repatisyon an.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

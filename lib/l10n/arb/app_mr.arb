@@ -797,5 +797,6 @@
   "contributionButton": "नवीन रक्कम गुंतवा",
   "contributionAmount": "गुंतवायची रक्कम ({currency})",
   "contributionHint": "फक्त खरेदी, विक्री नाही: आपल्या लक्ष्यापेक्षा सर्वाधिक खाली असलेल्या पोझिशन्सना आधी रक्कम मिळते.",
-  "contributionShares": "≈ {shares} शेअर्स"
+  "contributionShares": "≈ {shares} शेअर्स",
+  "contributionMissing": "{symbols} साठी वर्तमान किंमत उपलब्ध नाही: वाटपात धरले नाही."
 }

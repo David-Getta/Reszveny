@@ -2614,6 +2614,11 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols لاءِ موجوده قيمت موجود ناهي: ورهاست ۾ شامل ناهن.';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

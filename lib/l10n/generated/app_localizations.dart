@@ -4525,6 +4525,12 @@ abstract class AppLocalizations {
   /// **'≈ {shares} shares'**
   String contributionShares(String shares);
 
+  /// Warning in the "invest new money" dialog: positions with a target but no current price are not included.
+  ///
+  /// In en, this message translates to:
+  /// **'No price right now for {symbols}: left out of the split.'**
+  String contributionMissing(String symbols);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

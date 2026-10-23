@@ -797,5 +797,6 @@
   "contributionButton": "Investovat nové peníze",
   "contributionAmount": "Částka k investování ({currency})",
   "contributionHint": "Jen nákupy, žádné prodeje: peníze dostanou nejdřív pozice, které nejvíc zaostávají za svým cílem.",
-  "contributionShares": "≈ {shares} ks"
+  "contributionShares": "≈ {shares} ks",
+  "contributionMissing": "Pro {symbols} není k dispozici aktuální cena: nejsou zahrnuty do rozdělení."
 }

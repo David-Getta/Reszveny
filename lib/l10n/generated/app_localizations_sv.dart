@@ -2625,6 +2625,11 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ingen aktuell kurs för $symbols: tas inte med i fördelningen.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

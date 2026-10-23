@@ -797,5 +797,6 @@
   "contributionButton": "Tsetela chelete e ntjha",
   "contributionAmount": "Chelete ya ho tsetela ({currency})",
   "contributionHint": "Ho reka feela, ha ho rekiswe: dishere tse ka tlase haholo ho sepheo sa tsona di fumana chelete pele.",
-  "contributionShares": "≈ dishere tse {shares}"
+  "contributionShares": "≈ dishere tse {shares}",
+  "contributionMissing": "Ha ho theko ya hona jwale ya {symbols}: ha di kenyelletswe kabong."
 }

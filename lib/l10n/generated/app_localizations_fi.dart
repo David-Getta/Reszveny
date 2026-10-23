@@ -2625,6 +2625,11 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ei nykyistä hintaa kohteille $symbols: jätetty jaon ulkopuolelle.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.194)
+# Változásjegyzék (0.2.130 → 0.2.195)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -65,6 +65,10 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   bekerül; szinkronban, mentésben és a CSV-ben is.
 
 ## Import
+
+- A **pénzösszeg-mezők** (befizetés, cél, készpénz, osztalék, „Mi lett volna, ha”) a nyelv ezres tagolását is értik:
+  angolul az „5,000” 5000, magyarul és németül a „100.000” 100 000 (eddig 5, illetve 100 lett); a „NaN” és az
+  „Infinity” nem szám.
 
 - A CSV-import a **magyar és német fejléceket** is felismeri (Mennyiség, Árfolyam, Pénznem, Dátum, Irány,
   Számla, Jutalék; Stück, Kurs, Währung, Datum, Typ, Gebühr, Konto), a „Vétel/Eladás/Osztalék” és a

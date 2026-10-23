@@ -797,5 +797,6 @@
   "contributionButton": "I-invest ang bag-ong kwarta",
   "contributionAmount": "Kantidad nga i-invest ({currency})",
   "contributionHint": "Pagpalit lang, walay pagbaligya: ang mga posisyon nga labing layo ubos sa ilang target ang unang makadawat sa kwarta.",
-  "contributionShares": "≈ {shares} ka share"
+  "contributionShares": "≈ {shares} ka share",
+  "contributionMissing": "Walay presyo karon alang sa {symbols}: wala iapil sa pagbahin."
 }

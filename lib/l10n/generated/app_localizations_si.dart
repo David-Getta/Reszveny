@@ -2621,6 +2621,11 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols සඳහා වත්මන් මිලක් නොමැත: බෙදීමට ඇතුළත් කර නැත.';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

@@ -797,5 +797,6 @@
   "contributionButton": "השקעת כסף חדש",
   "contributionAmount": "סכום להשקעה ({currency})",
   "contributionHint": "רק קניות, בלי מכירות: הפוזיציות שהכי רחוקות מתחת ליעד שלהן מקבלות את הכסף ראשונות.",
-  "contributionShares": "≈ {shares} מניות"
+  "contributionShares": "≈ {shares} מניות",
+  "contributionMissing": "אין מחיר נוכחי עבור {symbols}: לא נכללו בחלוקה."
 }

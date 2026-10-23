@@ -2644,6 +2644,11 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'A ku na nxavo wa sweswi wa $symbols: a ti katsiwi eka ku avela.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

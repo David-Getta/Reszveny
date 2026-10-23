@@ -797,5 +797,6 @@
   "contributionButton": "नव पाइ निवेश करू",
   "contributionAmount": "निवेशक राशि ({currency})",
   "contributionHint": "केवल खरीद, बिक्री नहि: जे पोजीशन अपन लक्ष्यसँ सभसँ बेसी पाछाँ अछि, तकरा पहिने पाइ भेटैत अछि।",
-  "contributionShares": "≈ {shares} शेयर"
+  "contributionShares": "≈ {shares} शेयर",
+  "contributionMissing": "{symbols} लेल वर्तमान दाम उपलब्ध नहि अछि: बँटवारामे शामिल नहि कएल गेल।"
 }

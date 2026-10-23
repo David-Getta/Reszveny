@@ -2626,6 +2626,11 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Барои $symbols нархи ҷорӣ мавҷуд нест: ба тақсимот дохил карда нашуд.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

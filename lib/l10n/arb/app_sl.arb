@@ -797,5 +797,6 @@
   "contributionButton": "Vloži nov denar",
   "contributionAmount": "Znesek za naložbo ({currency})",
   "contributionHint": "Samo nakupi, brez prodaj: denar najprej dobijo pozicije, ki so najbolj pod svojim ciljem.",
-  "contributionShares": "≈ {shares} delnic"
+  "contributionShares": "≈ {shares} delnic",
+  "contributionMissing": "Ni trenutne cene za {symbols}: niso vključeni v razdelitev."
 }

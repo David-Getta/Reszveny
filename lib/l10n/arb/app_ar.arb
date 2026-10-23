@@ -797,5 +797,6 @@
   "contributionButton": "استثمار أموال جديدة",
   "contributionAmount": "المبلغ المراد استثماره ({currency})",
   "contributionHint": "شراء فقط دون أي بيع: تحصل المراكز الأكثر تأخرًا عن هدفها على المال أولًا.",
-  "contributionShares": "≈ {shares} سهم"
+  "contributionShares": "≈ {shares} سهم",
+  "contributionMissing": "لا يوجد سعر حالي لـ {symbols}، لذا استُبعدت من التوزيع."
 }

@@ -2617,6 +2617,11 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Amul njëg bu léegi ngir $symbols: boolewuñu leen ci séddale bi.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

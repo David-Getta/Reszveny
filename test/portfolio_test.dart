@@ -479,6 +479,23 @@ void main() {
     expect(parseDecimal("1'234.5"), 1234.5);
     expect(parseDecimal('abc'), isNull);
     expect(parseDecimal(''), isNull);
+    expect(parseDecimal('NaN'), isNull);
+    expect(parseDecimal('Infinity'), isNull);
+    expect(parseDecimal('1e400'), isNull);
+  });
+
+  test('money amounts: thousands separators in the reader’s language', () {
+    // Angolul a vessző ezres tagolás (ha utána három számjegy jön), magyarul és németül a pont.
+    expect(parseAmount('5,000', 'en'), 5000);
+    expect(parseAmount('1,250,000', 'en'), 1250000);
+    expect(parseAmount('5,5', 'en'), 5.5, reason: 'nem háromjegyű csoport: tizedes');
+    expect(parseAmount('100.000', 'hu'), 100000);
+    expect(parseAmount('100.000', 'de'), 100000);
+    expect(parseAmount('12.5', 'hu'), 12.5);
+    expect(parseAmount('0.125', 'hu'), 0.125, reason: 'a 0-val kezdődő nem ezres tagolás');
+    expect(parseAmount('1 500,50', 'hu'), 1500.5);
+    expect(parseAmount('1.234,56', 'de'), 1234.56);
+    expect(parseAmount('Infinity', 'en'), isNull);
   });
 
   test('the analysis is told about the reader’s own position, without being asked for advice', () {

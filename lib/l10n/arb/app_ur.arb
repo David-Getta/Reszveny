@@ -797,5 +797,6 @@
   "contributionButton": "نئی رقم کی سرمایہ کاری کریں",
   "contributionAmount": "سرمایہ کاری کی رقم ({currency})",
   "contributionHint": "صرف خریداری، فروخت نہیں: جو پوزیشنز اپنے ہدف سے سب سے زیادہ نیچے ہیں، انہیں پہلے رقم ملتی ہے۔",
-  "contributionShares": "≈ {shares} شیئرز"
+  "contributionShares": "≈ {shares} شیئرز",
+  "contributionMissing": "{symbols} کے لیے موجودہ قیمت دستیاب نہیں: تقسیم میں شامل نہیں کیا گیا۔"
 }

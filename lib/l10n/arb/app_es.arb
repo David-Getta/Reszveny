@@ -797,5 +797,6 @@
   "contributionButton": "Invertir dinero nuevo",
   "contributionAmount": "Importe a invertir ({currency})",
   "contributionHint": "Solo compras, sin ventas: las posiciones más por debajo de su objetivo reciben el dinero primero.",
-  "contributionShares": "≈ {shares} acciones"
+  "contributionShares": "≈ {shares} acciones",
+  "contributionMissing": "No hay precio actual para {symbols}: quedan fuera del reparto."
 }

@@ -2624,6 +2624,11 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols-ის მიმდინარე ფასი არ არის: განაწილებაში არ ჩაითვალა.';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

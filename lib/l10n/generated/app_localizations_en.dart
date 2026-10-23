@@ -2621,6 +2621,11 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'No price right now for $symbols: left out of the split.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

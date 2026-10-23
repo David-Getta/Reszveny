@@ -2669,6 +2669,11 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Nema trenutačne cijene za $symbols: nisu uključeni u raspodjelu.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

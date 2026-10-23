@@ -797,5 +797,6 @@
   "contributionButton": "ሓድሽ ገንዘብ ኣውፍር",
   "contributionAmount": "መጠን ወፍሪ ({currency})",
   "contributionHint": "ዕድጊት ጥራይ፣ መሸጣ የለን፦ እቶም ካብ ዕላማኦም ብዝያዳ ዝተሓቱ ዋንነታት ቅድም ገንዘብ ይረኽቡ።",
-  "contributionShares": "≈ {shares} ኣክሲዮናት"
+  "contributionShares": "≈ {shares} ኣክሲዮናት",
+  "contributionMissing": "ን{symbols} ህሉው ዋጋ የለን፦ ኣብ ምምቃል ኣይተሓወሰን።"
 }

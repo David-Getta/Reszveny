@@ -797,5 +797,6 @@
   "contributionButton": "Beeletša tšhelete ye mpsha",
   "contributionAmount": "Tšhelete ya go beeletša ({currency})",
   "contributionHint": "Go reka fela, ga go rekišwe: maemo ao a lego ka fase kudu ga nepo ya ona a hwetša tšhelete pele.",
-  "contributionShares": "≈ dišere tše {shares}"
+  "contributionShares": "≈ dišere tše {shares}",
+  "contributionMissing": "Ga go na theko ya bjale ya {symbols}: ga a akaretšwe kabong."
 }

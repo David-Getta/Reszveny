@@ -797,5 +797,6 @@
   "contributionButton": "Tinye ego ọhụrụ",
   "contributionAmount": "Ego ị ga-etinye ({currency})",
   "contributionHint": "Ịzụ naanị, enweghị ire: ihe ndị ị nwere kacha nọrọ n'azụ ebumnuche ha na-ebu ụzọ nweta ego ahụ.",
-  "contributionShares": "≈ shares {shares}"
+  "contributionShares": "≈ shares {shares}",
+  "contributionMissing": "Enweghị ọnụahịa ugbu a maka {symbols}: etinyeghị ha na nkesa ahụ."
 }

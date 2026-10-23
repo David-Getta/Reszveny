@@ -797,5 +797,6 @@
   "contributionButton": "Pereyên nû veberhêne",
   "contributionAmount": "Mîqdara veberhênanê ({currency})",
   "contributionHint": "Tenê kirîn, bê firotin: pozîsyonên ku herî zêde di bin armanca xwe de ne, pêşî pere distînin.",
-  "contributionShares": "≈ {shares} pişk"
+  "contributionShares": "≈ {shares} pişk",
+  "contributionMissing": "Ji bo {symbols} bihayê niha tune: di dabeşkirinê de nayên hesibandin."
 }

@@ -797,5 +797,6 @@
   "contributionButton": "Nieuw geld investeren",
   "contributionAmount": "Te investeren bedrag ({currency})",
   "contributionHint": "Alleen kopen, niet verkopen: de posities die het verst onder hun doel liggen, krijgen het geld als eerste.",
-  "contributionShares": "≈ {shares} aandelen"
+  "contributionShares": "≈ {shares} aandelen",
+  "contributionMissing": "Geen actuele koers voor {symbols}: niet meegenomen in de verdeling."
 }

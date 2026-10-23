@@ -2635,6 +2635,11 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Ayikho intengo yamanje ye-$symbols: akufakiwe ekwabiweni.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

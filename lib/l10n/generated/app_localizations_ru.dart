@@ -2693,6 +2693,11 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return 'Нет текущей цены для $symbols: не учтены при распределении.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

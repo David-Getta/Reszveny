@@ -797,5 +797,6 @@
   "contributionButton": "ಹೊಸ ಹಣ ಹೂಡಿಕೆ ಮಾಡಿ",
   "contributionAmount": "ಹೂಡಿಕೆ ಮಾಡುವ ಮೊತ್ತ ({currency})",
   "contributionHint": "ಖರೀದಿ ಮಾತ್ರ, ಮಾರಾಟವಿಲ್ಲ: ತಮ್ಮ ಗುರಿಗಿಂತ ಅತಿ ಹೆಚ್ಚು ಕೆಳಗಿರುವ ಪೊಸಿಷನ್‌ಗಳಿಗೆ ಮೊದಲು ಹಣ ಸಿಗುತ್ತದೆ.",
-  "contributionShares": "≈ {shares} ಷೇರುಗಳು"
+  "contributionShares": "≈ {shares} ಷೇರುಗಳು",
+  "contributionMissing": "{symbols} ಗೆ ಪ್ರಸ್ತುತ ಬೆಲೆ ಲಭ್ಯವಿಲ್ಲ: ಹಂಚಿಕೆಯಿಂದ ಹೊರಗಿಡಲಾಗಿದೆ."
 }

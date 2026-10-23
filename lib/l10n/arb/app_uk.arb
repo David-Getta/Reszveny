@@ -797,5 +797,6 @@
   "contributionButton": "Вкласти нові гроші",
   "contributionAmount": "Сума для вкладення ({currency})",
   "contributionHint": "Лише купівлі, без продажів: гроші спершу отримують позиції, які найбільше відстають від цілі.",
-  "contributionShares": "≈ {shares} шт."
+  "contributionShares": "≈ {shares} шт.",
+  "contributionMissing": "Немає поточної ціни для {symbols}: не враховано під час розподілу."
 }

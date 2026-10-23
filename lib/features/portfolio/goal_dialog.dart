@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/util/formatters.dart';
 import '../../theme/app_theme.dart';
 import '../../l10n/generated/app_localizations.dart';
-import 'add_lot_dialog.dart' show parseDecimal, plainNumber;
+import 'add_lot_dialog.dart' show parseAmount, plainNumber;
 
 typedef Goal = ({double amount, String currency});
 
@@ -152,7 +152,7 @@ class _GoalDialogState extends State<_GoalDialog> {
   }
 
   void _save() {
-    final v = parseDecimal(_controller.text);
+    final v = parseAmount(_controller.text, Localizations.localeOf(context).toString());
     if (v != null && v > 0) Navigator.of(context).pop(v);
   }
 

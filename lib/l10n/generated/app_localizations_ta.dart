@@ -2635,6 +2635,11 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols-க்கு தற்போதைய விலை கிடைக்கவில்லை: பகிர்வில் சேர்க்கப்படவில்லை.';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

@@ -797,5 +797,6 @@
   "contributionButton": "Yangi pul kiritish",
   "contributionAmount": "Kiritiladigan summa ({currency})",
   "contributionHint": "Faqat xarid, sotuvsiz: pul avval maqsadidan eng koʻp ortda qolgan pozitsiyalarga beriladi.",
-  "contributionShares": "≈ {shares} aksiya"
+  "contributionShares": "≈ {shares} aksiya",
+  "contributionMissing": "{symbols} uchun joriy narx yoʻq: taqsimotga kiritilmadi."
 }

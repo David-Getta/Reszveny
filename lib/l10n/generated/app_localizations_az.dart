@@ -2625,6 +2625,11 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbols üçün cari qiymət yoxdur: bölgüyə daxil edilmir.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

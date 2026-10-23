@@ -57,7 +57,7 @@ class _WhatIfCardState extends State<WhatIfCard> {
     ];
     if (options.isEmpty) return const SizedBox.shrink();
     final years = options.contains(_years) ? _years! : options.last;
-    final amount = parseDecimal(_amount.text);
+    final amount = parseAmount(_amount.text, Localizations.localeOf(context).toString());
     final value = amount == null || amount <= 0 ? null : WhatIfCard.valueToday(pts, amount, years);
     final gain = value == null ? null : value - amount!;
     return SectionCard(

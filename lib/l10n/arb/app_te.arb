@@ -797,5 +797,6 @@
   "contributionButton": "కొత్త డబ్బును పెట్టుబడి పెట్టండి",
   "contributionAmount": "పెట్టుబడి పెట్టే మొత్తం ({currency})",
   "contributionHint": "కొనుగోళ్లు మాత్రమే, అమ్మకాలు లేవు: తమ లక్ష్యానికి అత్యంత దిగువన ఉన్న పొజిషన్లకు ముందుగా డబ్బు అందుతుంది.",
-  "contributionShares": "≈ {shares} షేర్లు"
+  "contributionShares": "≈ {shares} షేర్లు",
+  "contributionMissing": "{symbols} కోసం ప్రస్తుత ధర అందుబాటులో లేదు: పంపిణీలో చేర్చలేదు."
 }

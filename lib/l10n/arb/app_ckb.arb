@@ -797,5 +797,6 @@
   "contributionButton": "وەبەرهێنانی پارەی نوێ",
   "contributionAmount": "بڕی وەبەرهێنان ({currency})",
   "contributionHint": "تەنها کڕین، بێ فرۆشتن: ئەو پۆزیشنانەی زیاتر لە هەمووان لە ئامانجەکەیان دواکەوتوون، یەکەم پارەکە وەردەگرن.",
-  "contributionShares": "≈ {shares} پشک"
+  "contributionShares": "≈ {shares} پشک",
+  "contributionMissing": "نرخی ئێستا بۆ {symbols} نییە: لە دابەشکردنەکە دەرکراون."
 }

@@ -797,5 +797,6 @@
   "contributionButton": "Investuoti naujus pinigus",
   "contributionAmount": "Investuojama suma ({currency})",
   "contributionHint": "Tik pirkimai, jokių pardavimų: pinigus pirmiausia gauna pozicijos, labiausiai atsiliekančios nuo savo tikslo.",
-  "contributionShares": "≈ {shares} vnt."
+  "contributionShares": "≈ {shares} vnt.",
+  "contributionMissing": "Nėra dabartinės {symbols} kainos: neįtrauktos į paskirstymą."
 }

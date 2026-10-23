@@ -2543,6 +2543,11 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String contributionMissing(String symbols) {
+    return '$symbolsの現在の株価がないため、配分から除外しました。';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override
