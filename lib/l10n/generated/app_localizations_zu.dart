@@ -2876,6 +2876,18 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Akukho okuthengwe ngaphambilini okutholakele ukuze kubuyiselwe.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Akukho ukubhalisa okungaphathwa lapha. Ukubhalisa okuthengwe ku-App Store noma ku-Google Play kuphathwa kuzilungiselelo zesitolo.';
+
+  @override
+  String get backupFailed =>
+      'Isipele asikwazanga ukulondolozwa. Sicela uzame futhi.';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

@@ -2865,6 +2865,17 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Tiklash uchun avvalgi xaridlar topilmadi.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Bu yerda boshqariladigan obuna yoʻq. App Store yoki Google Play orqali sotib olingan obuna doʻkon sozlamalarida boshqariladi.';
+
+  @override
+  String get backupFailed =>
+      'Zaxira nusxani saqlab boʻlmadi. Qaytadan urinib koʻring.';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

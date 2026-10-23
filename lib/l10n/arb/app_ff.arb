@@ -850,5 +850,8 @@
   "errRateLimited": "Ɗaɓɓitanɗe keewii e sahaa seeɗa. Tiiɗno muñ hojom gooto refti eto goɗngol.",
   "watchListNameTaken": "Doggol jogiingol innde nde ena woodi gila.",
   "watchListLimit": "Aɗa waawi jogaade doggi haa {max}.",
-  "portfolioBuyBelowSold": "Ko famɗi fof {quantity} – ndee limoore yeeyaama ɓooyii"
+  "portfolioBuyBelowSold": "Ko famɗi fof {quantity} – ndee limoore yeeyaama ɓooyii",
+  "restoreNothing": "Yiytaaka ko a soodiino adii ngam artirde.",
+  "manageSubscriptionElsewhere": "Alaa abonmaa toppitetee ɗoo. Abonmaa soodaaɗo e App Store walla Google Play ina toppitee e teelte bitik ngon.",
+  "backupFailed": "Horiima danndude kopi ndi. Tiiɗno eto goɗngol."
 }

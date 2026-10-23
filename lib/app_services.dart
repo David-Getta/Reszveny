@@ -252,7 +252,13 @@ class AppServices {
   /// Demó bolt a rendszer régiójának pénznemével és ECB-árfolyammal.
   DemoBillingService _demoBilling(FxService fx) {
     final device = WidgetsBinding.instance.platformDispatcher.locale;
-    return DemoBillingService(fx: fx, locale: device.toString(), currency: () => displayCurrency(device) ?? 'USD');
+    // A boltok a régió pénznemében számláznak: az ár ehhez igazodik, nem a részvények
+    // megjelenítési pénzneméhez (pl. „csak a részvény saját pénzneme”).
+    return DemoBillingService(
+      fx: fx,
+      locale: device.toString(),
+      currency: () => defaultCurrencyFor(countryCode: device.countryCode, languageCode: device.languageCode),
+    );
   }
 
   factory AppServices.fromConfig(
@@ -603,7 +609,10 @@ class AppServices {
   /// olcsóbb modellen futtatja (a megvett extra elemzések már teljes értékűek).
   bool get isTrialAnalysis {
     final s = entitlements.state;
-    return s.tier == PlanTier.trial && s.usedInPeriod < PlanSpec.trial.analysesPerPeriod;
+    // Lejárt próbaidő után (mint a szerveren) a vett extra elemzések teljes értékűek.
+    return s.tier == PlanTier.trial &&
+        s.usedInPeriod < PlanSpec.trial.analysesPerPeriod &&
+        !entitlements.isTrialExpired;
   }
 
   /// A ténylegesen használt hossz: a próbaidő alatt mindig rövid.

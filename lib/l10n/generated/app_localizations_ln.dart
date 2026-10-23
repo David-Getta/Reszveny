@@ -2877,6 +2877,18 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Bosombi ya kala moko te emonani mpo na kozongisa.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Abonnement moko te ezali awa ya kokamba. Abonnement oyo osombaki na App Store to Google Play ekambamaka na ba-paramètre ya store.';
+
+  @override
+  String get backupFailed =>
+      'Kopi ya kobomba ekokaki kobombama te. Meka lisusu.';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

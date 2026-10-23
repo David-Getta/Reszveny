@@ -2850,6 +2850,17 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'སླར་གསོ་བྱ་རྒྱུའི་སྔོན་གྱི་ཉོས་པ་གང་ཡང་རྙེད་མ་བྱུང་།';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'འདི་ན་དོ་དམ་བྱ་རྒྱུའི་མཁོ་ཉོ་མེད། App Store ཡང་ན་ Google Play ནང་ཉོས་པའི་མཁོ་ཉོ་ནི་ཚོང་ཁང་གི་སྒྲིག་འགོད་ནང་དོ་དམ་བྱེད།';
+
+  @override
+  String get backupFailed => 'གྲབས་ཉར་ཉར་ཚགས་བྱེད་མ་ཐུབ། ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

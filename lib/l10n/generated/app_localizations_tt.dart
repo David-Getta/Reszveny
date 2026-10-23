@@ -2858,6 +2858,17 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Кайтару өчен элеккеге сатып алулар табылмады.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Монда идарә итәрлек язылу юк. App Store яки Google Play аша сатып алынган язылу кибет көйләүләрендә идарә ителә.';
+
+  @override
+  String get backupFailed =>
+      'Резерв күчермәне саклап булмады. Зинһар, кабат тырышып карагыз.';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

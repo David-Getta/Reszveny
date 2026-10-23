@@ -850,5 +850,8 @@
   "errRateLimited": "For mange forespørgsler på kort tid. Vent et minut, og prøv igen.",
   "watchListNameTaken": "Der findes allerede en liste med dette navn.",
   "watchListLimit": "Du kan have op til {max} lister.",
-  "portfolioBuyBelowSold": "Mindst {quantity} – så mange er allerede solgt"
+  "portfolioBuyBelowSold": "Mindst {quantity} – så mange er allerede solgt",
+  "restoreNothing": "Der blev ikke fundet tidligere køb at gendanne.",
+  "manageSubscriptionElsewhere": "Der er intet abonnement at administrere her. Et abonnement købt i App Store eller Google Play administreres i butikkens indstillinger.",
+  "backupFailed": "Sikkerhedskopien kunne ikke gemmes. Prøv igen."
 }

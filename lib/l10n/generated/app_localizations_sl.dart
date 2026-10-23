@@ -2939,6 +2939,18 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Ni bilo najdenih prejšnjih nakupov za obnovitev.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Tu ni naročnine za upravljanje. Naročnino, kupljeno v App Store ali Google Play, upravljate v nastavitvah trgovine.';
+
+  @override
+  String get backupFailed =>
+      'Varnostne kopije ni bilo mogoče shraniti. Poskusite znova.';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

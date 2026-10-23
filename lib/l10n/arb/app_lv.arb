@@ -850,5 +850,8 @@
   "errRateLimited": "Pārāk daudz pieprasījumu īsā laikā. Lūdzu, uzgaidiet minūti un mēģiniet vēlreiz.",
   "watchListNameTaken": "Saraksts ar šādu nosaukumu jau pastāv.",
   "watchListLimit": "Varat izveidot līdz {max} sarakstiem.",
-  "portfolioBuyBelowSold": "Vismaz {quantity} – tik daudz jau ir pārdots"
+  "portfolioBuyBelowSold": "Vismaz {quantity} – tik daudz jau ir pārdots",
+  "restoreNothing": "Netika atrasti iepriekšēji pirkumi, ko atjaunot.",
+  "manageSubscriptionElsewhere": "Šeit nav abonementa, ko pārvaldīt. App Store vai Google Play iegādāts abonements tiek pārvaldīts veikala iestatījumos.",
+  "backupFailed": "Dublējumu neizdevās saglabāt. Lūdzu, mēģiniet vēlreiz."
 }

@@ -2940,6 +2940,18 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Попередніх покупок для відновлення не знайдено.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Тут немає підписки для керування. Підпискою, придбаною в App Store або Google Play, можна керувати в налаштуваннях магазину.';
+
+  @override
+  String get backupFailed =>
+      'Не вдалося зберегти резервну копію. Спробуйте ще раз.';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

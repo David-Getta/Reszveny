@@ -2937,6 +2937,17 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Nenašli sa žiadne predchádzajúce nákupy na obnovenie.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Nie je tu žiadne predplatné na spravovanie. Predplatné kúpené v App Store alebo Google Play sa spravuje v nastaveniach obchodu.';
+
+  @override
+  String get backupFailed => 'Zálohu sa nepodarilo uložiť. Skúste to znova.';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

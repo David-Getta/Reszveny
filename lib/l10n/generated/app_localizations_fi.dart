@@ -2863,6 +2863,17 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Palautettavia aiempia ostoksia ei löytynyt.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Täällä ei ole hallittavaa tilausta. App Storesta tai Google Playsta ostettua tilausta hallitaan kaupan asetuksissa.';
+
+  @override
+  String get backupFailed =>
+      'Varmuuskopiota ei voitu tallentaa. Yritä uudelleen.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

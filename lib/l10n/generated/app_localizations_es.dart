@@ -2868,6 +2868,18 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'No se han encontrado compras anteriores para restaurar.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Aquí no hay ninguna suscripción que gestionar. Una suscripción comprada en App Store o Google Play se gestiona en los ajustes de la tienda.';
+
+  @override
+  String get backupFailed =>
+      'No se ha podido guardar la copia de seguridad. Inténtalo de nuevo.';
+
+  @override
   String get portfolioGoalSet => 'Fijar un objetivo';
 
   @override

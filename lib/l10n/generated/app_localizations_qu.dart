@@ -2877,6 +2877,18 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Manam kutichinapaq ñawpaq rantisqakuna tarikunchu.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Kaypiqa manam kamachinapaq suscripción kanchu. App Store utaq Google Play nisqapi rantisqa suscripciónqa tiendapa allichayninkunapim kamachikun.';
+
+  @override
+  String get backupFailed =>
+      'Waqaychasqaqa manam waqaychakuyta atirqanchu. Ama hina kaspa, huktawan ruway.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

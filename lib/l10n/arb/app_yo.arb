@@ -850,5 +850,8 @@
   "errRateLimited": "Ìbéèrè ti pọ̀ jù láàárín àkókò kúkúrú. Jọ̀ọ́ dúró fún ìṣẹ́jú kan kí o sì tún gbìyànjú.",
   "watchListNameTaken": "Àkójọ tí ó ní orúkọ yìí ti wà tẹ́lẹ̀.",
   "watchListLimit": "O lè ní àkójọ tó tó {max}.",
-  "portfolioBuyBelowSold": "Ó kéré tán {quantity} – iye bẹ́ẹ̀ ni a ti tà tẹ́lẹ̀"
+  "portfolioBuyBelowSold": "Ó kéré tán {quantity} – iye bẹ́ẹ̀ ni a ti tà tẹ́lẹ̀",
+  "restoreNothing": "A kò rí ohun tí o ti rà tẹ́lẹ̀ láti dá padà.",
+  "manageSubscriptionElsewhere": "Kò sí àsansílẹ̀ kankan láti ṣàkóso níbí. Àsansílẹ̀ tí o rà nínú App Store tàbí Google Play ni a ń ṣàkóso nínú ètò ilé ìtajà.",
+  "backupFailed": "A kò lè fi ẹ̀dà ìpamọ́ pamọ́. Jọ̀ọ́ tún gbìyànjú."
 }

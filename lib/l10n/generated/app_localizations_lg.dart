@@ -2879,6 +2879,17 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Tewali bye wagula edda ebizuuliddwa okuzzaawo.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Wano tewali kwewandiisa kwa kuddukanya. Okwewandiisa okwagulwa mu App Store oba Google Play kuddukanyizibwa mu nsengeka z\'edduuka.';
+
+  @override
+  String get backupFailed =>
+      'Kkopi ey\'obukuumi tesobodde kuterekebwa. Gezaako nate.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

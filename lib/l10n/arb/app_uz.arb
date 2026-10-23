@@ -850,5 +850,8 @@
   "errRateLimited": "Qisqa vaqt ichida juda koʻp soʻrov yuborildi. Bir daqiqa kuting va qaytadan urinib koʻring.",
   "watchListNameTaken": "Bu nomdagi roʻyxat allaqachon mavjud.",
   "watchListLimit": "Koʻpi bilan {max} ta roʻyxatingiz boʻlishi mumkin.",
-  "portfolioBuyBelowSold": "Kamida {quantity} – shuncha allaqachon sotilgan"
+  "portfolioBuyBelowSold": "Kamida {quantity} – shuncha allaqachon sotilgan",
+  "restoreNothing": "Tiklash uchun avvalgi xaridlar topilmadi.",
+  "manageSubscriptionElsewhere": "Bu yerda boshqariladigan obuna yoʻq. App Store yoki Google Play orqali sotib olingan obuna doʻkon sozlamalarida boshqariladi.",
+  "backupFailed": "Zaxira nusxani saqlab boʻlmadi. Qaytadan urinib koʻring."
 }

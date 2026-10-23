@@ -2861,6 +2861,17 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'بحال کرنے کے لیے کوئی سابقہ خریداری نہیں ملی۔';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'یہاں نظم کرنے کے لیے کوئی سبسکرپشن نہیں ہے۔ App Store یا Google Play سے خریدی گئی سبسکرپشن کا نظم اسٹور کی ترتیبات میں کیا جاتا ہے۔';
+
+  @override
+  String get backupFailed =>
+      'بیک اپ محفوظ نہیں ہو سکا۔ براہ کرم دوبارہ کوشش کریں۔';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

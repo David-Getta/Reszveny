@@ -2863,6 +2863,18 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Не са намерени предишни покупки за възстановяване.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Тук няма абонамент за управление. Абонамент, закупен в App Store или Google Play, се управлява от настройките на магазина.';
+
+  @override
+  String get backupFailed =>
+      'Резервното копие не можа да бъде запазено. Моля, опитайте отново.';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

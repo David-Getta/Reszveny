@@ -2860,6 +2860,17 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Nou pa jwenn okenn ansyen acha pou retabli.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Pa gen okenn abònman pou jere isit la. Yon abònman ou achte nan App Store oswa Google Play, se nan paramèt magazen an pou w jere l.';
+
+  @override
+  String get backupFailed =>
+      'Nou pa t ka anrejistre sovgad la. Tanpri eseye ankò.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

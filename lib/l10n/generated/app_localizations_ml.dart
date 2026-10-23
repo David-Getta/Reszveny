@@ -2874,6 +2874,18 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'പുനഃസ്ഥാപിക്കാൻ മുമ്പുള്ള വാങ്ങലുകളൊന്നും കണ്ടെത്തിയില്ല.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'ഇവിടെ മാനേജ് ചെയ്യാൻ സബ്സ്ക്രിപ്ഷനൊന്നുമില്ല. App Store-ലോ Google Play-യിലോ വാങ്ങിയ സബ്സ്ക്രിപ്ഷൻ സ്റ്റോർ ക്രമീകരണങ്ങളിലാണ് മാനേജ് ചെയ്യുന്നത്.';
+
+  @override
+  String get backupFailed =>
+      'ബാക്കപ്പ് സേവ് ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

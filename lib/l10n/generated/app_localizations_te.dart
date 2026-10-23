@@ -2868,6 +2868,18 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'పునరుద్ధరించడానికి మునుపటి కొనుగోళ్లు ఏవీ కనుగొనబడలేదు.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'ఇక్కడ నిర్వహించడానికి సబ్‌స్క్రిప్షన్ ఏదీ లేదు. App Store లేదా Google Playలో కొన్న సబ్‌స్క్రిప్షన్‌ను స్టోర్ సెట్టింగ్‌లలో నిర్వహిస్తారు.';
+
+  @override
+  String get backupFailed =>
+      'బ్యాకప్‌ను సేవ్ చేయలేకపోయాం. దయచేసి మళ్లీ ప్రయత్నించండి.';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

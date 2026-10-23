@@ -2737,6 +2737,16 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => '未找到可恢复的以往购买记录。';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      '此处没有可管理的订阅。在 App Store 或 Google Play 购买的订阅需在商店设置中管理。';
+
+  @override
+  String get backupFailed => '无法保存备份。请重试。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5841,6 +5851,16 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String portfolioBuyBelowSold(String quantity) {
     return '不能少於已賣出的 $quantity';
   }
+
+  @override
+  String get restoreNothing => '找不到可恢復的過往購買紀錄。';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      '這裡沒有可管理的訂閱。在 App Store 或 Google Play 購買的訂閱須於商店設定中管理。';
+
+  @override
+  String get backupFailed => '無法儲存備份。請再試一次。';
 
   @override
   String get portfolioGoalSet => '設定目標';

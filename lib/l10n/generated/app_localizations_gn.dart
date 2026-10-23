@@ -2868,6 +2868,16 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Ndojejuhúi jejogua yma ikatúva oñembojevy.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Ndaipóri ápe ñemboheraguapy eñangareko hag̃ua. Ñemboheraguapy ojejoguáva App Store térã Google Play-pe oñeñangareko ñemuha ñembohekópe.';
+
+  @override
+  String get backupFailed => 'Ndaikatúi oñeñongatu mbaʼekuaarã. Ehaʼã jey.';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

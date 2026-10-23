@@ -2871,6 +2871,18 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Hapana zvawakatenga kare zvawanikwa kuti zvidzorerwe.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Hapana kunyoresa kwekutarisira pano. Kunyoresa kwawakatenga muApp Store kana Google Play kunotarisirwa mumarongero echitoro.';
+
+  @override
+  String get backupFailed =>
+      'Bhakapu haina kukwanisa kuchengetedzwa. Ndapota edza zvakare.';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

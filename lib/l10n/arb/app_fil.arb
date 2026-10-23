@@ -850,5 +850,8 @@
   "errRateLimited": "Masyadong maraming request sa maikling panahon. Maghintay muna ng isang minuto at subukang muli.",
   "watchListNameTaken": "May listahan na may ganitong pangalan.",
   "watchListLimit": "Maaari kang magkaroon ng hanggang {max} listahan.",
-  "portfolioBuyBelowSold": "Hindi bababa sa {quantity} – naibenta na ang ganoon karami"
+  "portfolioBuyBelowSold": "Hindi bababa sa {quantity} – naibenta na ang ganoon karami",
+  "restoreNothing": "Walang nakitang naunang binili na mare-restore.",
+  "manageSubscriptionElsewhere": "Walang subscription na mapapamahalaan dito. Ang subscription na binili sa App Store o Google Play ay pinamamahalaan sa settings ng store.",
+  "backupFailed": "Hindi ma-save ang backup. Pakisubukang muli."
 }

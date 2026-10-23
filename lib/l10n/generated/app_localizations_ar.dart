@@ -2933,6 +2933,17 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'لم يتم العثور على مشتريات سابقة لاستعادتها.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'لا يوجد هنا اشتراك لإدارته. تتم إدارة الاشتراك الذي تم شراؤه من App Store أو Google Play من إعدادات المتجر.';
+
+  @override
+  String get backupFailed =>
+      'تعذر حفظ النسخة الاحتياطية. يرجى المحاولة مرة أخرى.';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

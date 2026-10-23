@@ -2871,6 +2871,18 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Վերականգնելու համար նախկին գնումներ չեն գտնվել։';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Այստեղ կառավարելու բաժանորդագրություն չկա։ App Store-ում կամ Google Play-ում գնված բաժանորդագրությունը կառավարվում է խանութի կարգավորումներում։';
+
+  @override
+  String get backupFailed =>
+      'Չհաջողվեց պահել պահուստային պատճենը։ Խնդրում ենք նորից փորձել։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

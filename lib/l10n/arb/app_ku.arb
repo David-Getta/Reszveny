@@ -850,5 +850,8 @@
   "errRateLimited": "Di demeke kurt de gelek daxwaz hatin şandin. Ji kerema xwe deqeyekê bisekine û dîsa biceribîne.",
   "watchListNameTaken": "Lîsteyek bi vî navî jixwe heye.",
   "watchListLimit": "Tu dikarî herî zêde {max} lîsteyan çêkî.",
-  "portfolioBuyBelowSold": "Herî kêm {quantity} – ew qas berê hatin firotin"
+  "portfolioBuyBelowSold": "Herî kêm {quantity} – ew qas berê hatin firotin",
+  "restoreNothing": "Ti kirînên berê yên ku werin vegerandin nehatin dîtin.",
+  "manageSubscriptionElsewhere": "Li vir ti abonetî tune ye ku were birêvebirin. Abonetiya ku ji App Store an Google Play hatiye kirîn, di mîhengên firotgehê de tê birêvebirin.",
+  "backupFailed": "Paşeke nehat tomarkirin. Ji kerema xwe dîsa biceribîne."
 }

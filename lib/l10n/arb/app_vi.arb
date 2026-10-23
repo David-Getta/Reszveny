@@ -850,5 +850,8 @@
   "errRateLimited": "Quá nhiều yêu cầu trong thời gian ngắn. Vui lòng đợi một phút rồi thử lại.",
   "watchListNameTaken": "Đã có danh sách với tên này.",
   "watchListLimit": "Bạn có thể có tối đa {max} danh sách.",
-  "portfolioBuyBelowSold": "Ít nhất {quantity} – đã bán chừng ấy cổ phiếu rồi"
+  "portfolioBuyBelowSold": "Ít nhất {quantity} – đã bán chừng ấy cổ phiếu rồi",
+  "restoreNothing": "Không tìm thấy giao dịch mua trước đây nào để khôi phục.",
+  "manageSubscriptionElsewhere": "Không có gói đăng ký nào để quản lý tại đây. Gói đăng ký mua qua App Store hoặc Google Play được quản lý trong phần cài đặt của cửa hàng.",
+  "backupFailed": "Không thể lưu bản sao lưu. Vui lòng thử lại."
 }

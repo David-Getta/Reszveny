@@ -2873,6 +2873,18 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Δεν βρέθηκαν προηγούμενες αγορές για επαναφορά.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Δεν υπάρχει συνδρομή για διαχείριση εδώ. Η διαχείριση μιας συνδρομής που αγοράστηκε στο App Store ή στο Google Play γίνεται από τις ρυθμίσεις του καταστήματος.';
+
+  @override
+  String get backupFailed =>
+      'Δεν ήταν δυνατή η αποθήκευση του αντιγράφου ασφαλείας. Δοκιμάστε ξανά.';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

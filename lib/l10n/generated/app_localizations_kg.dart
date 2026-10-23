@@ -2874,6 +2874,18 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Beto monaka ve mana nge sumbaka ntete ya kuvutula.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Abonnement ya kutwadisa kele ve awa. Abonnement yina nge sumbaka na App Store yovo Google Play ke twadisama na paramètres ya store.';
+
+  @override
+  String get backupFailed =>
+      'Kopi ya kubumba ka kulendi bumbama ko. Meka diaka.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

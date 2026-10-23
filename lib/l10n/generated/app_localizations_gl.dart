@@ -2886,6 +2886,18 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Non se atoparon compras anteriores para restaurar.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Aquí non hai ningunha subscrición que xestionar. Unha subscrición mercada na App Store ou en Google Play xestiónase na configuración da tenda.';
+
+  @override
+  String get backupFailed =>
+      'Non se puido gardar a copia de seguranza. Téntao de novo.';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

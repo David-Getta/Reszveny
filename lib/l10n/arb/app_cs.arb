@@ -850,5 +850,8 @@
   "errRateLimited": "Příliš mnoho požadavků v krátkém čase. Počkejte prosím minutu a zkuste to znovu.",
   "watchListNameTaken": "Seznam s tímto názvem už existuje.",
   "watchListLimit": "Můžete mít nejvýše {max} seznamů.",
-  "portfolioBuyBelowSold": "Alespoň {quantity} – tolik už bylo prodáno"
+  "portfolioBuyBelowSold": "Alespoň {quantity} – tolik už bylo prodáno",
+  "restoreNothing": "Nebyly nalezeny žádné dřívější nákupy k obnovení.",
+  "manageSubscriptionElsewhere": "Není zde žádné předplatné ke správě. Předplatné zakoupené přes App Store nebo Google Play se spravuje v nastavení obchodu.",
+  "backupFailed": "Zálohu se nepodařilo uložit. Zkuste to znovu."
 }

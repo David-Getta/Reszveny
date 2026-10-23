@@ -850,5 +850,8 @@
   "errRateLimited": "Te veel verzoeken in korte tijd. Wacht een minuut en probeer het opnieuw.",
   "watchListNameTaken": "Er bestaat al een lijst met deze naam.",
   "watchListLimit": "Je kunt maximaal {max} lijsten hebben.",
-  "portfolioBuyBelowSold": "Minstens {quantity} – zoveel zijn er al verkocht"
+  "portfolioBuyBelowSold": "Minstens {quantity} – zoveel zijn er al verkocht",
+  "restoreNothing": "Er zijn geen eerdere aankopen gevonden om te herstellen.",
+  "manageSubscriptionElsewhere": "Er is hier geen abonnement om te beheren. Een abonnement dat je in de App Store of Google Play hebt gekocht, beheer je in de instellingen van de store.",
+  "backupFailed": "De back-up kon niet worden opgeslagen. Probeer het opnieuw."
 }

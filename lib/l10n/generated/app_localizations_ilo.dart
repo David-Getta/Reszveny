@@ -2884,6 +2884,17 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Awan ti nasarakan a nagatang idi a maisubli.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Awan ti subscription a maimaneho ditoy. Ti subscription a nagatang iti App Store wenno Google Play ket maimaneho iti setting ti store.';
+
+  @override
+  String get backupFailed =>
+      'Saan a ma-save ti backup. Pangngaasim ta padasem manen.';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

@@ -2858,6 +2858,16 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Sanni kɔrɔ si ma sɔrɔ min bɛ se ka segin.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Abɔnɛman si tɛ yan ka ɲɛnabɔ. Abɔnɛman min sanna App Store walima Google Play la, o bɛ ɲɛnabɔ butiki labɛnw kɔnɔ.';
+
+  @override
+  String get backupFailed => 'Kopi lamaralen ma se ka mara. A kɔrɔbɔ tugun.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

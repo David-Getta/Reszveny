@@ -850,5 +850,8 @@
   "errRateLimited": "Qısa müddətdə həddindən çox sorğu göndərildi. Bir dəqiqə gözləyin və yenidən cəhd edin.",
   "watchListNameTaken": "Bu adda siyahı artıq mövcuddur.",
   "watchListLimit": "Ən çoxu {max} siyahınız ola bilər.",
-  "portfolioBuyBelowSold": "Ən azı {quantity} – bu qədəri artıq satılıb"
+  "portfolioBuyBelowSold": "Ən azı {quantity} – bu qədəri artıq satılıb",
+  "restoreNothing": "Bərpa ediləcək əvvəlki alış tapılmadı.",
+  "manageSubscriptionElsewhere": "Burada idarə ediləcək abunəlik yoxdur. App Store və ya Google Play-də alınmış abunəlik mağaza ayarlarında idarə olunur.",
+  "backupFailed": "Ehtiyat nüsxəni saxlamaq mümkün olmadı. Yenidən cəhd edin."
 }

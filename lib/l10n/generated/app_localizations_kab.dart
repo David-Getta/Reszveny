@@ -2861,6 +2861,17 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Ur d-nufi ara tiɣin yezrin ara d-nerr.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Ulac ajerred ara tesfekreḍ dagi. Ajerred i yettwaɣen deg App Store neɣ Google Play yettwasefrak deg yiɣewwaṛen n tḥanut.';
+
+  @override
+  String get backupFailed =>
+      'Ur yezmir ara ad yettwasekles uḥraz. Ɛreḍ tikkelt-nniḍen.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

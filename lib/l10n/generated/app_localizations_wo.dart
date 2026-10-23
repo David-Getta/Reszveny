@@ -2854,6 +2854,16 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Gisuñu benn jënd bu jiitu bu ñu mën a delloo.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Amul fii abonmaa bu ñu mën a toppatoo. Abonmaa bu ñu jënde ci App Store walla Google Play, ci tànneefu bitig bi lañuy toppatoo.';
+
+  @override
+  String get backupFailed => 'Mënuñu denc kaaraange bi. Jéemaatal.';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

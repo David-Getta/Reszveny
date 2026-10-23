@@ -850,5 +850,8 @@
   "errRateLimited": "Занадта шмат запытаў за кароткі час. Пачакайце хвіліну і паспрабуйце яшчэ раз.",
   "watchListNameTaken": "Спіс з такой назвай ужо існуе.",
   "watchListLimit": "Можна мець да {max} спісаў.",
-  "portfolioBuyBelowSold": "Не менш за {quantity} – столькі ўжо прададзена"
+  "portfolioBuyBelowSold": "Не менш за {quantity} – столькі ўжо прададзена",
+  "restoreNothing": "Не знойдзена ранейшых пакупак для аднаўлення.",
+  "manageSubscriptionElsewhere": "Тут няма падпіскі для кіравання. Падпіскай, набытай у App Store або Google Play, кіруюць у наладах крамы.",
+  "backupFailed": "Не ўдалося захаваць рэзервовую копію. Паспрабуйце яшчэ раз."
 }

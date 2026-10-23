@@ -850,5 +850,8 @@
   "errRateLimited": "Hetaiterei mbaʼejerure sapyʼaitépe. Ehaʼarõmi peteĩ aravoʼi ha ehaʼã jey.",
   "watchListNameTaken": "Oĩma peteĩ lista ko térandi.",
   "watchListLimit": "Ikatu reguereko {max} lista peve.",
-  "portfolioBuyBelowSold": "Saʼivévo {quantity} – oñemuma upe papy"
+  "portfolioBuyBelowSold": "Saʼivévo {quantity} – oñemuma upe papy",
+  "restoreNothing": "Ndojejuhúi jejogua yma ikatúva oñembojevy.",
+  "manageSubscriptionElsewhere": "Ndaipóri ápe ñemboheraguapy eñangareko hag̃ua. Ñemboheraguapy ojejoguáva App Store térã Google Play-pe oñeñangareko ñemuha ñembohekópe.",
+  "backupFailed": "Ndaikatúi oñeñongatu mbaʼekuaarã. Ehaʼã jey."
 }

@@ -850,5 +850,8 @@
   "errRateLimited": "Too many request for short time. Abeg wait one minute and try again.",
   "watchListNameTaken": "List wey get dis name don already dey.",
   "watchListLimit": "You fit get up to {max} lists.",
-  "portfolioBuyBelowSold": "At least {quantity} – dat many don already sell"
+  "portfolioBuyBelowSold": "At least {quantity} – dat many don already sell",
+  "restoreNothing": "We no see any purchase wey you don make before to bring back.",
+  "manageSubscriptionElsewhere": "No subscription dey here to manage. Subscription wey you buy for App Store or Google Play, na for di store settings you go manage am.",
+  "backupFailed": "Di backup no fit save. Abeg try again."
 }

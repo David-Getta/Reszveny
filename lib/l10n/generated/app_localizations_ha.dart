@@ -2869,6 +2869,17 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Ba a sami sayayyar da ta gabata da za a dawo da ita ba.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Babu rajistar da za a sarrafa a nan. Rajistar da aka saya a App Store ko Google Play ana sarrafa ta a cikin saitunan shagon.';
+
+  @override
+  String get backupFailed => 'Ba a iya adana ajiyar ba. Da fatan a sake gwada.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

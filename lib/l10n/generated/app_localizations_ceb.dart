@@ -2874,6 +2874,18 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Walay nakit-ang nangaging napalit nga ma-restore.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Walay subscription nga madumala dinhi. Ang subscription nga gipalit sa App Store o Google Play gidumala sa mga setting sa store.';
+
+  @override
+  String get backupFailed =>
+      'Dili ma-save ang backup. Palihug sulayi pag-usab.';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

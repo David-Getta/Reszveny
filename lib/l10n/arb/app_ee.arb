@@ -850,5 +850,8 @@
   "errRateLimited": "Biabia geɖe akpa le ɣeyiɣi kpui aɖe me. Taflatse, lala miniti ɖeka eye nàgate kpɔ.",
   "watchListNameTaken": "Xexlẽdzesi si ƒe ŋkɔe nye esia li xoxo.",
   "watchListLimit": "Àte ŋu akpɔ xexlẽdzesiwo va se ɖe {max}.",
-  "portfolioBuyBelowSold": "{quantity} ya teti – wodzra nenema gbegbe xoxo"
+  "portfolioBuyBelowSold": "{quantity} ya teti – wodzra nenema gbegbe xoxo",
+  "restoreNothing": "Míekpɔ nu aɖeke si nèƒle do ŋgɔ be míagaxɔe o.",
+  "manageSubscriptionElsewhere": "Subscription aɖeke mele afii be nàkpɔ edzi o. Subscription si nèƒle le App Store alo Google Play la, wokpɔa edzi le store la ƒe ɖoɖowo me.",
+  "backupFailed": "Míete ŋu dzra kɔpi la ɖo o. Taflatse, gate kpɔ."
 }

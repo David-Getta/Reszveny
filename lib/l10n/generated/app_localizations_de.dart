@@ -2877,6 +2877,18 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Es wurden keine früheren Käufe zum Wiederherstellen gefunden.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Hier gibt es kein Abonnement zu verwalten. Ein im App Store oder bei Google Play abgeschlossenes Abonnement verwaltest du in den Store-Einstellungen.';
+
+  @override
+  String get backupFailed =>
+      'Das Backup konnte nicht gespeichert werden. Bitte versuche es erneut.';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

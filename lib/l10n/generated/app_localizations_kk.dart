@@ -2860,6 +2860,18 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Қалпына келтіретін бұрынғы сатып алулар табылмады.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Мұнда басқаратын жазылым жоқ. App Store немесе Google Play арқылы сатып алынған жазылым дүкен параметрлерінде басқарылады.';
+
+  @override
+  String get backupFailed =>
+      'Сақтық көшірмені сақтау мүмкін болмады. Қайталап көріңіз.';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

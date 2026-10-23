@@ -850,5 +850,8 @@
   "errRateLimited": "Malomba a bungi mu tshikondo tshikese. Indila minite umue, pashishe teta kabidi.",
   "watchListNameTaken": "Kudi kale liste ne dîna edi.",
   "watchListLimit": "Udi mua kuenza liste too ne {max}.",
-  "portfolioBuyBelowSold": "{quantity} anyi kupita – bungi abu mbusumbishibue kale"
+  "portfolioBuyBelowSold": "{quantity} anyi kupita – bungi abu mbusumbishibue kale",
+  "restoreNothing": "Katuena bapete bintu biuvua musumbe kale bua kubipingaja.",
+  "manageSubscriptionElsewhere": "Kakuena abonnement wa kulombola muaba eu to. Abonnement uvua musumbe mu App Store anyi Google Play udi ulombodibua mu malongolola a store.",
+  "backupFailed": "Katuena mua kulama kopi. Teta kabidi."
 }

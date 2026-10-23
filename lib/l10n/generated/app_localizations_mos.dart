@@ -2845,6 +2845,16 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'B pa yã raab sẽn deng n na n lebs ye.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Abonmã ka be ka n na n get a yell ye. Abonmã sẽn da App Store bɩ Google Play pʋgẽ, b getda a yell raagã seglgã pʋgẽ.';
+
+  @override
+  String get backupFailed => 'B pa tõog n bilg sẽn bʋʋd n bilgã ye. Le mak.';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

@@ -2872,6 +2872,18 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'No s’han trobat compres anteriors per restaurar.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Aquí no hi ha cap subscripció per gestionar. Una subscripció comprada a l’App Store o a Google Play es gestiona a la configuració de la botiga.';
+
+  @override
+  String get backupFailed =>
+      'No s’ha pogut desar la còpia de seguretat. Torna-ho a provar.';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

@@ -850,5 +850,8 @@
   "errRateLimited": "Swikombelo swi tele ngopfu hi nkarhi wo koma. Hi kombela u rindza minete kutani u ringeta nakambe.",
   "watchListNameTaken": "Ku na nxaxamelo leyi nga ni vito leri se.",
   "watchListLimit": "U nga va na minxaxamelo yo fika eka {max}.",
-  "portfolioBuyBelowSold": "Ku nga ri ehansi ka {quantity} – nhlayo leyo yi xavisiwile khale"
+  "portfolioBuyBelowSold": "Ku nga ri ehansi ka {quantity} – nhlayo leyo yi xavisiwile khale",
+  "restoreNothing": "A ku kumekanga swixaviwa swa khale leswi nga vuyisiwaka.",
+  "manageSubscriptionElsewhere": "A ku na ntsariso lowu nga lawuriwaka laha. Ntsariso lowu xaviweke eka App Store kumbe Google Play wu lawuriwa eka swiyimiso swa vhengele.",
+  "backupFailed": "Nkopi yo hlayisa a yi kotanga ku hlayisiwa. Hi kombela u ringeta nakambe."
 }

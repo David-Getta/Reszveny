@@ -2864,6 +2864,16 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Ora ana tukon sadurungé sing bisa dipulihaké.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Ora ana langganan sing bisa diatur ing kéné. Langganan sing dituku ing App Store utawa Google Play diatur ing setelan toko.';
+
+  @override
+  String get backupFailed => 'Cadhangan ora bisa disimpen. Mangga jajal maneh.';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

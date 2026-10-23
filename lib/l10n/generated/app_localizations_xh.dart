@@ -2875,6 +2875,18 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Akufunyanwanga zinto zithengiweyo ngaphambili ukuze zibuyiselwe.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Akukho mrhumo unokulawulwa apha. Umrhumo othengwe kwi-App Store okanye kwi-Google Play ulawulwa kwiisetingi zevenkile.';
+
+  @override
+  String get backupFailed =>
+      'Ikopi yokhuseleko ayikwazanga ukugcinwa. Nceda uzame kwakhona.';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

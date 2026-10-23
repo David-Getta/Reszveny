@@ -2863,6 +2863,18 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Ягон хариди қаблӣ барои барқароркунӣ ёфт нашуд.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Дар ин ҷо обунае барои идоракунӣ нест. Обунае, ки дар App Store ё Google Play харида шудааст, дар танзимоти мағоза идора карда мешавад.';
+
+  @override
+  String get backupFailed =>
+      'Нусхаи эҳтиётӣ нигоҳ дошта нашуд. Лутфан, бори дигар кӯшиш кунед.';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

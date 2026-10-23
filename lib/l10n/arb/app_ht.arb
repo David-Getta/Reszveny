@@ -850,5 +850,8 @@
   "errRateLimited": "Twòp demann nan yon ti tan. Tanpri tann yon minit epi eseye ankò.",
   "watchListNameTaken": "Gen yon lis ki gen non sa a deja.",
   "watchListLimit": "Ou ka gen jiska {max} lis.",
-  "portfolioBuyBelowSold": "Omwen {quantity} – kantite sa a deja vann"
+  "portfolioBuyBelowSold": "Omwen {quantity} – kantite sa a deja vann",
+  "restoreNothing": "Nou pa jwenn okenn ansyen acha pou retabli.",
+  "manageSubscriptionElsewhere": "Pa gen okenn abònman pou jere isit la. Yon abònman ou achte nan App Store oswa Google Play, se nan paramèt magazen an pou w jere l.",
+  "backupFailed": "Nou pa t ka anrejistre sovgad la. Tanpri eseye ankò."
 }

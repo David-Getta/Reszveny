@@ -2865,6 +2865,18 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Ti kirînên berê yên ku werin vegerandin nehatin dîtin.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Li vir ti abonetî tune ye ku were birêvebirin. Abonetiya ku ji App Store an Google Play hatiye kirîn, di mîhengên firotgehê de tê birêvebirin.';
+
+  @override
+  String get backupFailed =>
+      'Paşeke nehat tomarkirin. Ji kerema xwe dîsa biceribîne.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

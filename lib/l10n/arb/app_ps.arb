@@ -850,5 +850,8 @@
   "errRateLimited": "په لنډ وخت کې ډېرې غوښتنې. مهرباني وکړئ یوه دقیقه انتظار وکړئ او بیا هڅه وکړئ.",
   "watchListNameTaken": "په دې نوم یو لېست له مخکې شته.",
   "watchListLimit": "تاسو تر {max} پورې لېستونه لرلی شئ.",
-  "portfolioBuyBelowSold": "لږ تر لږه {quantity} – دومره مخکې پلورل شوې دي"
+  "portfolioBuyBelowSold": "لږ تر لږه {quantity} – دومره مخکې پلورل شوې دي",
+  "restoreNothing": "د بیا راګرځولو لپاره پخواني پېرودونه ونه موندل شول.",
+  "manageSubscriptionElsewhere": "دلته د ادارې لپاره هېڅ ګډون نشته. هغه ګډون چې له App Store یا Google Play څخه اخیستل شوی وي، د سټور په تنظیماتو کې اداره کېږي.",
+  "backupFailed": "بیک اپ خوندي نه شو. مهرباني وکړئ بیا هڅه وکړئ."
 }

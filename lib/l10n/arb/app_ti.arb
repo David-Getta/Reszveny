@@ -850,5 +850,8 @@
   "errRateLimited": "ኣብ ሓጺር ግዜ ኣዝዮም ብዙሓት ሕቶታት። በጃኹም ሓንቲ ደቒቕ ተጸቢኹም ዳግማይ ፈትኑ።",
   "watchListNameTaken": "በዚ ስም ዝርዝር ድሮ ኣሎ።",
   "watchListLimit": "ክሳብ {max} ዝርዝራት ክህልወኩም ይኽእል።",
-  "portfolioBuyBelowSold": "እንተወሓደ {quantity} – እዚ ዝኣክል ድሮ ተሸይጡ ኣሎ"
+  "portfolioBuyBelowSold": "እንተወሓደ {quantity} – እዚ ዝኣክል ድሮ ተሸይጡ ኣሎ",
+  "restoreNothing": "ክምለስ ዝኽእል ቅድሚ ሕጂ ዝተገበረ ዕድጊ ኣይተረኽበን።",
+  "manageSubscriptionElsewhere": "ኣብዚ ዝመሓደር ምዝገባ የለን። ኣብ App Store ወይ Google Play ዝተዓደገ ምዝገባ ኣብ ቅጥዕታት መኽዘን ይመሓደር።",
+  "backupFailed": "ምትኪእ ቅዳሕ ክዕቀብ ኣይከኣለን። በጃኹም ዳግማይ ፈትኑ።"
 }

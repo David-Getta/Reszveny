@@ -2866,6 +2866,18 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Geen vorige aankope is gevind om te herstel nie.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Hier is geen intekening om te bestuur nie. ’n Intekening wat in die App Store of Google Play gekoop is, word in die winkel se instellings bestuur.';
+
+  @override
+  String get backupFailed =>
+      'Die rugsteun kon nie gestoor word nie. Probeer asseblief weer.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

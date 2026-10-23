@@ -2839,6 +2839,17 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'រកមិនឃើញការទិញពីមុនសម្រាប់ស្ដារឡើងវិញទេ។';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'គ្មានការជាវសម្រាប់គ្រប់គ្រងនៅទីនេះទេ។ ការជាវដែលបានទិញនៅក្នុង App Store ឬ Google Play ត្រូវគ្រប់គ្រងនៅក្នុងការកំណត់របស់ហាង។';
+
+  @override
+  String get backupFailed =>
+      'មិនអាចរក្សាទុកការបម្រុងទុកបានទេ។ សូមព្យាយាមម្ដងទៀត។';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

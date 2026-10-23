@@ -2883,6 +2883,17 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Tsy nisy fividianana teo aloha hita haverina.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Tsy misy famandrihana tantanina eto. Ny famandrihana novidiana tao amin\'ny App Store na Google Play dia tantanina ao amin\'ny fikirakiran\'ny fivarotana.';
+
+  @override
+  String get backupFailed =>
+      'Tsy voatahiry ny fitahirizana. Andramo indray azafady.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

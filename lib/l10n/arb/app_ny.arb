@@ -850,5 +850,8 @@
   "errRateLimited": "Zopempha zambiri kwambiri munthawi yochepa. Chonde dikirani mphindi imodzi ndipo yesaninso.",
   "watchListNameTaken": "Mndandanda wa dzina limeneli ulipo kale.",
   "watchListLimit": "Mutha kukhala ndi mindandanda yofikira {max}.",
-  "portfolioBuyBelowSold": "Osachepera {quantity} – masheya amenewo agulitsidwa kale"
+  "portfolioBuyBelowSold": "Osachepera {quantity} – masheya amenewo agulitsidwa kale",
+  "restoreNothing": "Palibe zogula zakale zomwe zapezeka kuti zibwezeretsedwe.",
+  "manageSubscriptionElsewhere": "Palibe kulembetsa koti muyang'anire pano. Kulembetsa komwe munagula mu App Store kapena Google Play kumayang'aniridwa mu zokonda za sitolo.",
+  "backupFailed": "Zosunga zobwezera sizinathe kusungidwa. Chonde yesaninso."
 }

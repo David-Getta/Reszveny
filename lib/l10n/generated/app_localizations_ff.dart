@@ -2858,6 +2858,16 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Yiytaaka ko a soodiino adii ngam artirde.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Alaa abonmaa toppitetee ɗoo. Abonmaa soodaaɗo e App Store walla Google Play ina toppitee e teelte bitik ngon.';
+
+  @override
+  String get backupFailed => 'Horiima danndude kopi ndi. Tiiɗno eto goɗngol.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

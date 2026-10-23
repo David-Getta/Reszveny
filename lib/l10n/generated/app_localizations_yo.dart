@@ -2858,6 +2858,17 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'A kò rí ohun tí o ti rà tẹ́lẹ̀ láti dá padà.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Kò sí àsansílẹ̀ kankan láti ṣàkóso níbí. Àsansílẹ̀ tí o rà nínú App Store tàbí Google Play ni a ń ṣàkóso nínú ètò ilé ìtajà.';
+
+  @override
+  String get backupFailed =>
+      'A kò lè fi ẹ̀dà ìpamọ́ pamọ́. Jọ̀ọ́ tún gbìyànjú.';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

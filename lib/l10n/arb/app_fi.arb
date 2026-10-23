@@ -850,5 +850,8 @@
   "errRateLimited": "Liian monta pyyntöä lyhyessä ajassa. Odota minuutti ja yritä uudelleen.",
   "watchListNameTaken": "Samanniminen lista on jo olemassa.",
   "watchListLimit": "Voit luoda enintään {max} listaa.",
-  "portfolioBuyBelowSold": "Vähintään {quantity} – niin monta on jo myyty"
+  "portfolioBuyBelowSold": "Vähintään {quantity} – niin monta on jo myyty",
+  "restoreNothing": "Palautettavia aiempia ostoksia ei löytynyt.",
+  "manageSubscriptionElsewhere": "Täällä ei ole hallittavaa tilausta. App Storesta tai Google Playsta ostettua tilausta hallitaan kaupan asetuksissa.",
+  "backupFailed": "Varmuuskopiota ei voitu tallentaa. Yritä uudelleen."
 }

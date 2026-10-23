@@ -2857,6 +2857,18 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Tidak ditemukan pembelian sebelumnya untuk dipulihkan.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Tidak ada langganan untuk dikelola di sini. Langganan yang dibeli di App Store atau Google Play dikelola di pengaturan toko.';
+
+  @override
+  String get backupFailed =>
+      'Cadangan tidak dapat disimpan. Silakan coba lagi.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

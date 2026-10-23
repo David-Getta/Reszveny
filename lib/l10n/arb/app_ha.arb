@@ -850,5 +850,8 @@
   "errRateLimited": "Buƙatu sun yi yawa cikin ɗan lokaci. Da fatan a jira minti ɗaya sannan a sake gwadawa.",
   "watchListNameTaken": "Akwai jeri mai wannan suna tuni.",
   "watchListLimit": "Za ka iya samun jeri har {max}.",
-  "portfolioBuyBelowSold": "Aƙalla {quantity} – an riga an sayar da wannan adadin"
+  "portfolioBuyBelowSold": "Aƙalla {quantity} – an riga an sayar da wannan adadin",
+  "restoreNothing": "Ba a sami sayayyar da ta gabata da za a dawo da ita ba.",
+  "manageSubscriptionElsewhere": "Babu rajistar da za a sarrafa a nan. Rajistar da aka saya a App Store ko Google Play ana sarrafa ta a cikin saitunan shagon.",
+  "backupFailed": "Ba a iya adana ajiyar ba. Da fatan a sake gwada."
 }

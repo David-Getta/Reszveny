@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../app_services.dart';
+import '../../core/backend/backend_client.dart' show BackendException;
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
 import '../account/sign_in_sheet.dart';
+import 'billing_controller.dart' show RestoreOutcome;
 import 'billing_service.dart';
 import 'entitlement_service.dart';
 import 'fallback_billing_service.dart';
@@ -63,6 +65,10 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
     final services = AppServices.of(context);
     services.billingController.loadProducts();
     services.billingController.addListener(_onBilling);
+    // Egy korábbi látogatás lezárt vásárlásának üzenete ne jelenjen meg újra.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) services.billingController.clearFinished();
+    });
   }
 
   @override
@@ -221,6 +227,8 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
                                 ? l10n.bestValue
                                 : (spec.tier == PlanTier.pro ? l10n.mostPopular : null),
                             busy: bc.busyProductId == id,
+                            // Egy folyamatban lévő vásárlás alatt a többi gomb sem indít újat.
+                            locked: bc.busyProductId != null,
                             onBuy: (prod) => bc.buy(prod),
                           ),
                     ],
@@ -236,7 +244,12 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
                     runSpacing: 10,
                     children: [
                       for (final pack in packs)
-                        _PackChip(product: pack, busy: bc.busyProductId == pack.id, onBuy: () => bc.buy(pack)),
+                        _PackChip(
+                          product: pack,
+                          busy: bc.busyProductId == pack.id,
+                          locked: bc.busyProductId != null,
+                          onBuy: () => bc.buy(pack),
+                        ),
                     ],
                   ),
                 ],
@@ -255,13 +268,25 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
                     ),
                   )
                 else if (event != null && event.status != BillingStatus.needsLogin)
-                  _EventNote(event: event),
+                  _EventNote(event: event)
+                else if (bc.restoreOutcome case final r? when r != RestoreOutcome.found)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 10),
+                    child: Text(
+                      r == RestoreOutcome.nothing ? l10n.restoreNothing : l10n.errorGeneric,
+                      key: const ValueKey('restore-outcome'),
+                      style: TextStyle(color: p.muted, fontWeight: FontWeight.w600),
+                    ),
+                  ),
                 Wrap(
                   spacing: 8,
                   children: [
                     TextButton.icon(
-                      onPressed: bc.restore,
-                      icon: const Icon(Icons.restore_rounded, size: 18),
+                      key: const ValueKey('restore-purchases'),
+                      onPressed: bc.restoring ? null : bc.restore,
+                      icon: bc.restoring
+                          ? const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2))
+                          : const Icon(Icons.restore_rounded, size: 18),
                       label: Text(l10n.restorePurchases),
                     ),
                     TextButton.icon(
@@ -317,12 +342,24 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
 
   Future<void> _manage(BuildContext context) async {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
     final billing = AppServices.of(context).billing;
+    // Ha nincs mit megnyitni, a felhasználó ezt tudja meg (ne „ne történjen semmi”).
+    void elsewhere() => messenger.showSnackBar(SnackBar(content: Text(l10n.manageSubscriptionElsewhere)));
     if (billing is WebCheckoutBillingService) {
       try {
         await billing.manage();
+      } on BackendException catch (e) {
+        debugPrint('Ügyfélportál nem nyitható: $e');
+        if (e.code == 'no_customer') {
+          elsewhere();
+        } else {
+          messenger.showSnackBar(SnackBar(content: Text(l10n.errorGeneric)));
+        }
       } catch (e) {
         debugPrint('Ügyfélportál nem nyitható: $e');
+        messenger.showSnackBar(SnackBar(content: Text(l10n.errorGeneric)));
       }
       return;
     }
@@ -331,7 +368,8 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
       TargetPlatform.android => 'https://play.google.com/store/account/subscriptions',
       _ => null,
     };
-    if (url != null) await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+    if (url == null) return elsewhere();
+    await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
   }
 }
 
@@ -355,13 +393,16 @@ class _StatusCard extends StatelessWidget {
       subtitle = ent.extraCredits > 0 ? l10n.extraCredits(ent.extraCredits) : l10n.errNoPlan;
     } else if (ent.isTrial) {
       title = l10n.planTrial;
+      // Lejárt próbaidő mellett a vett extra elemzésekkel tovább lehet elemezni.
       subtitle = ent.isTrialExpired
-          ? l10n.trialExpired
+          ? (ent.extraCredits > 0 ? l10n.extraCredits(ent.extraCredits) : l10n.trialExpired)
           : '${l10n.trialDaysLeft(ent.trialDaysLeft)} · ${l10n.analysesRemaining(ent.remainingInPeriod, ent.quota)}';
     } else {
       title = planName(plan.tier);
+      // Éves csomagnál a havi keret frissül, de a megújulás a kifizetett időszak végén van.
       subtitle =
-          '${l10n.analysesRemaining(ent.remainingInPeriod, ent.quota)} · ${l10n.renewsOn(fmt.date(ent.periodEnd))}';
+          '${l10n.analysesRemaining(ent.remainingInPeriod, ent.quota)} · '
+          '${l10n.renewsOn(fmt.date(ent.state.paidThrough ?? ent.periodEnd))}';
     }
     return Card(
       child: Padding(
@@ -377,7 +418,7 @@ class _StatusCard extends StatelessWidget {
                   Text('${l10n.currentPlan}: $title', style: theme.textTheme.titleMedium),
                   const SizedBox(height: 2),
                   Text(subtitle, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-                  if (plan != null && !ent.isTrial && ent.extraCredits > 0)
+                  if (plan != null && (!ent.isTrial || !ent.isTrialExpired) && ent.extraCredits > 0)
                     Text(
                       l10n.extraCredits(ent.extraCredits),
                       style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
@@ -444,9 +485,13 @@ class _PlanCard extends StatelessWidget {
     required this.current,
     required this.busy,
     required this.onBuy,
+    this.locked = false,
     this.badge,
     this.yearly = false,
   });
+
+  /// Egy másik vásárlás fut: a gomb nem indít újat.
+  final bool locked;
 
   final PlanSpec spec;
 
@@ -536,7 +581,7 @@ class _PlanCard extends StatelessWidget {
             child: current
                 ? OutlinedButton(onPressed: null, child: Text(l10n.currentPlan))
                 : FilledButton(
-                    onPressed: product == null || busy ? null : () => onBuy(product!),
+                    onPressed: product == null || busy || locked ? null : () => onBuy(product!),
                     child: busy
                         ? const SizedBox(
                             width: 16,
@@ -553,10 +598,11 @@ class _PlanCard extends StatelessWidget {
 }
 
 class _PackChip extends StatelessWidget {
-  const _PackChip({required this.product, required this.busy, required this.onBuy});
+  const _PackChip({required this.product, required this.busy, required this.onBuy, this.locked = false});
 
   final StoreProduct product;
   final bool busy;
+  final bool locked;
   final VoidCallback onBuy;
 
   @override
@@ -571,21 +617,21 @@ class _PackChip extends StatelessWidget {
         border: Border.all(color: p.border),
       ),
       padding: const EdgeInsetsDirectional.fromSTEB(14, 10, 10, 10),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
+      // Nagy betűméretnél a gomb a felirat alá kerül (egy sorban nem férnének el).
+      child: Wrap(
+        spacing: 12,
+        runSpacing: 8,
+        crossAxisAlignment: WrapCrossAlignment.center,
         children: [
-          // Nagy betűméretnél a felirat tördelődik, a gomb a helyén marad.
-          Flexible(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(l10n.extraCredits(n), style: const TextStyle(fontWeight: FontWeight.w600)),
-                Text(product.price, style: TextStyle(color: p.muted, fontSize: 12)),
-              ],
-            ),
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(l10n.extraCredits(n), style: const TextStyle(fontWeight: FontWeight.w600)),
+              Text(product.price, style: TextStyle(color: p.muted, fontSize: 12)),
+            ],
           ),
-          const SizedBox(width: 12),
-          FilledButton.tonal(onPressed: busy ? null : onBuy, child: Text(l10n.buy)),
+          FilledButton.tonal(onPressed: busy || locked ? null : onBuy, child: Text(l10n.buy)),
         ],
       ),
     );

@@ -31,7 +31,10 @@ class UsageChip extends StatelessWidget {
           detail = ent.extraCredits > 0 ? l10n.extraCredits(ent.extraCredits) : l10n.viewPlans;
         } else if (ent.isTrial) {
           label = l10n.planTrial;
-          detail = ent.isTrialExpired ? l10n.trialExpired : l10n.trialDaysLeft(ent.trialDaysLeft);
+          // Lejárt próbaidő mellett a vett extra elemzések (velük tovább lehet elemezni).
+          detail = ent.isTrialExpired
+              ? (ent.extraCredits > 0 ? l10n.extraCredits(ent.extraCredits) : l10n.trialExpired)
+              : l10n.trialDaysLeft(ent.trialDaysLeft);
         } else {
           label = switch (plan.tier) {
             PlanTier.normal => l10n.planNormal,
@@ -40,7 +43,10 @@ class UsageChip extends StatelessWidget {
             PlanTier.ultra => l10n.planMax2,
             PlanTier.trial => l10n.planTrial,
           };
-          detail = l10n.analysesRemaining(ent.remainingInPeriod, ent.quota);
+          detail = [
+            l10n.analysesRemaining(ent.remainingInPeriod, ent.quota),
+            if (ent.extraCredits > 0) l10n.extraCredits(ent.extraCredits),
+          ].join(' · ');
         }
         final warn = !ent.canAnalyze;
         return Material(

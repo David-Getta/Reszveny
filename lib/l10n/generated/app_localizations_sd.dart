@@ -2852,6 +2852,17 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'بحال ڪرڻ لاءِ ڪا به اڳوڻي خريداري نه ملي.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'هتي سنڀالڻ لاءِ ڪا سبسڪرپشن ناهي. App Store يا Google Play تان خريد ڪيل سبسڪرپشن اسٽور جي سيٽنگن ۾ سنڀالي ويندي آهي.';
+
+  @override
+  String get backupFailed =>
+      'بيڪ اپ محفوظ نه ٿي سگهيو. مهرباني ڪري ٻيهر ڪوشش ڪريو.';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

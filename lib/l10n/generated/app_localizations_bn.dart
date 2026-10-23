@@ -2860,6 +2860,18 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'পুনরুদ্ধার করার মতো আগের কোনো কেনাকাটা পাওয়া যায়নি।';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'এখানে পরিচালনা করার মতো কোনো সাবস্ক্রিপশন নেই। App Store বা Google Play থেকে কেনা সাবস্ক্রিপশন স্টোরের সেটিংসে পরিচালনা করা হয়।';
+
+  @override
+  String get backupFailed =>
+      'ব্যাকআপ সেভ করা যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

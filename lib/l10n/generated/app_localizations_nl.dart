@@ -2868,6 +2868,18 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Er zijn geen eerdere aankopen gevonden om te herstellen.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Er is hier geen abonnement om te beheren. Een abonnement dat je in de App Store of Google Play hebt gekocht, beheer je in de instellingen van de store.';
+
+  @override
+  String get backupFailed =>
+      'De back-up kon niet worden opgeslagen. Probeer het opnieuw.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

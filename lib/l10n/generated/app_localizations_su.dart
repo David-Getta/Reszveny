@@ -2864,6 +2864,17 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Teu aya pameulian saméméhna anu kapendak pikeun dipulihkeun.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Di dieu teu aya langganan anu tiasa diatur. Langganan anu dibeuli di App Store atawa Google Play diatur dina setélan toko.';
+
+  @override
+  String get backupFailed => 'Cadangan teu bisa disimpen. Mangga cobaan deui.';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

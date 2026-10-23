@@ -2854,6 +2854,16 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'ပြန်ယူရန် ယခင် ဝယ်ယူမှု မတွေ့ပါ။';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'ဤနေရာတွင် စီမံရန် စာရင်းသွင်းမှု မရှိပါ။ App Store သို့မဟုတ် Google Play တွင် ဝယ်ထားသော စာရင်းသွင်းမှုကို စတိုး ဆက်တင်များတွင် စီမံပါသည်။';
+
+  @override
+  String get backupFailed => 'အရန်ကို သိမ်း၍ မရပါ။ ထပ်စမ်းကြည့်ပါ။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

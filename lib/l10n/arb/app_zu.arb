@@ -850,5 +850,8 @@
   "errRateLimited": "Izicelo eziningi kakhulu esikhathini esifushane. Sicela ulinde umzuzu bese uzama futhi.",
   "watchListNameTaken": "Uhlu olunaleli gama selukhona.",
   "watchListLimit": "Ungaba nezinhlu ezingafika ku-{max}.",
-  "portfolioBuyBelowSold": "Okungenani {quantity} – amasheya angaka asethengisiwe"
+  "portfolioBuyBelowSold": "Okungenani {quantity} – amasheya angaka asethengisiwe",
+  "restoreNothing": "Akukho okuthengwe ngaphambilini okutholakele ukuze kubuyiselwe.",
+  "manageSubscriptionElsewhere": "Akukho ukubhalisa okungaphathwa lapha. Ukubhalisa okuthengwe ku-App Store noma ku-Google Play kuphathwa kuzilungiselelo zesitolo.",
+  "backupFailed": "Isipele asikwazanga ukulondolozwa. Sicela uzame futhi."
 }

@@ -850,5 +850,8 @@
   "errRateLimited": "Trop de requêtes en peu de temps. Veuillez patienter une minute et réessayer.",
   "watchListNameTaken": "Une liste porte déjà ce nom.",
   "watchListLimit": "Vous pouvez avoir jusqu’à {max} listes.",
-  "portfolioBuyBelowSold": "Au moins {quantity} – ce nombre a déjà été vendu"
+  "portfolioBuyBelowSold": "Au moins {quantity} – ce nombre a déjà été vendu",
+  "restoreNothing": "Aucun achat antérieur à restaurer n’a été trouvé.",
+  "manageSubscriptionElsewhere": "Il n’y a aucun abonnement à gérer ici. Un abonnement souscrit sur l’App Store ou Google Play se gère dans les réglages de la boutique.",
+  "backupFailed": "La sauvegarde n’a pas pu être enregistrée. Veuillez réessayer."
 }

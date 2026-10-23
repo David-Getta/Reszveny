@@ -2874,6 +2874,17 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Katuena bapete bintu biuvua musumbe kale bua kubipingaja.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Kakuena abonnement wa kulombola muaba eu to. Abonnement uvua musumbe mu App Store anyi Google Play udi ulombodibua mu malongolola a store.';
+
+  @override
+  String get backupFailed => 'Katuena mua kulama kopi. Teta kabidi.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

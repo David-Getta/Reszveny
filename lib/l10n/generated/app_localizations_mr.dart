@@ -2859,6 +2859,18 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'पुनर्संचयित करण्यासाठी पूर्वीची कोणतीही खरेदी आढळली नाही.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'येथे व्यवस्थापित करण्यासाठी कोणतेही सबस्क्रिप्शन नाही. App Store किंवा Google Play मध्ये खरेदी केलेले सबस्क्रिप्शन स्टोअरच्या सेटिंग्जमध्ये व्यवस्थापित केले जाते.';
+
+  @override
+  String get backupFailed =>
+      'बॅकअप जतन होऊ शकला नाही. कृपया पुन्हा प्रयत्न करा.';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

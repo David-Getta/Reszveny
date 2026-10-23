@@ -2833,6 +2833,16 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'ບໍ່ພົບການຊື້ກ່ອນໜ້ານີ້ທີ່ຈະກູ້ຄືນ.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'ບໍ່ມີການສະໝັກສະມາຊິກໃຫ້ຈັດການຢູ່ບ່ອນນີ້. ການສະໝັກສະມາຊິກທີ່ຊື້ຜ່ານ App Store ຫຼື Google Play ຈັດການໄດ້ໃນການຕັ້ງຄ່າຂອງຮ້ານ.';
+
+  @override
+  String get backupFailed => 'ບໍ່ສາມາດບັນທຶກການສຳຮອງຂໍ້ມູນໄດ້. ກະລຸນາລອງໃໝ່.';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

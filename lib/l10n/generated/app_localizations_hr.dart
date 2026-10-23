@@ -2911,6 +2911,17 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Nisu pronađene ranije kupnje za obnovu.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Ovdje nema pretplate kojom se može upravljati. Pretplatom kupljenom u App Storeu ili na Google Playu upravlja se u postavkama trgovine.';
+
+  @override
+  String get backupFailed =>
+      'Sigurnosnu kopiju nije bilo moguće spremiti. Pokušajte ponovno.';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

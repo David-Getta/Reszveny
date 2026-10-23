@@ -2854,6 +2854,17 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Ahụghị ihe ọ bụla i zụrụ na mbụ a ga-eweghachi.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Enweghị ndenye aha a ga-ajikwa ebe a. Ndenye aha e zụrụ na App Store ma ọ bụ Google Play ka a na-ajikwa na ntọala ụlọ ahịa ahụ.';
+
+  @override
+  String get backupFailed => 'Enweghị ike ichekwa ndabere ahụ. Biko nwaa ọzọ.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

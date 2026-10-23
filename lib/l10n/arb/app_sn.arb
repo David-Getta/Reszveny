@@ -850,5 +850,8 @@
   "errRateLimited": "Zvikumbiro zvawandisa munguva pfupi. Ndapota mira miniti imwe wobva waedza zvakare.",
   "watchListNameTaken": "Rondedzero rine zita iri ratovepo.",
   "watchListLimit": "Unogona kuva nemarondedzero anosvika {max}.",
-  "portfolioBuyBelowSold": "Kanenge {quantity} – masheya akadaro akatotengeswa"
+  "portfolioBuyBelowSold": "Kanenge {quantity} – masheya akadaro akatotengeswa",
+  "restoreNothing": "Hapana zvawakatenga kare zvawanikwa kuti zvidzorerwe.",
+  "manageSubscriptionElsewhere": "Hapana kunyoresa kwekutarisira pano. Kunyoresa kwawakatenga muApp Store kana Google Play kunotarisirwa mumarongero echitoro.",
+  "backupFailed": "Bhakapu haina kukwanisa kuchengetedzwa. Ndapota edza zvakare."
 }

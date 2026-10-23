@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:hotkey_manager/hotkey_manager.dart';
 import 'package:intl/intl.dart';
@@ -30,7 +32,11 @@ import '../../widgets/centered_scroll.dart';
 import '../../widgets/fit_row.dart';
 
 /// Fiók törlése megerősítéssel; a készüléken tárolt adatok törlése is választható.
+/// Fióktörlés folyamatban: lassú hálózaton egy második koppintás ne indítson újabbat.
+bool _deletingAccount = false;
+
 Future<void> _confirmDeleteAccount(BuildContext context) async {
+  if (_deletingAccount) return;
   final l10n = AppLocalizations.of(context);
   final services = AppServices.of(context);
   final messenger = ScaffoldMessenger.of(context);
@@ -71,13 +77,26 @@ Future<void> _confirmDeleteAccount(BuildContext context) async {
       ),
     ),
   );
-  if (ok != true) return;
+  if (ok != true || _deletingAccount || !context.mounted) return;
+  _deletingAccount = true;
+  // A törlés idejére egy nem bezárható folyamatjelző (és vele a lap sem koppintható).
+  final navigator = Navigator.of(context, rootNavigator: true);
+  unawaited(
+    showDialog<void>(
+      context: context,
+      barrierDismissible: false,
+      builder: (_) => const PopScope(canPop: false, child: Center(child: CircularProgressIndicator())),
+    ),
+  );
   try {
     await services.deleteAccount(wipeLocalData: wipe);
     messenger.showSnackBar(SnackBar(content: Text(l10n.accountDeleted)));
   } catch (e) {
     debugPrint('Fiók törlése nem sikerült: $e');
     messenger.showSnackBar(SnackBar(content: Text(l10n.errDeleteAccount)));
+  } finally {
+    _deletingAccount = false;
+    if (navigator.mounted) navigator.pop();
   }
 }
 
@@ -177,10 +196,13 @@ class SettingsPage extends StatelessWidget {
                                                 height: 20,
                                                 child: CircularProgressIndicator(strokeWidth: 2),
                                               )
-                                            : TextButton(
+                                            // Ikongomb: a „Szinkron most” felirat nagy betűvel
+                                            // elfoglalná a sor teljes szélességét.
+                                            : IconButton(
                                                 key: const ValueKey('sync-now'),
+                                                tooltip: l10n.syncNow,
                                                 onPressed: sync.syncNow,
-                                                child: Text(l10n.syncNow),
+                                                icon: const Icon(Icons.refresh_rounded),
                                               ),
                                       ),
                                       SwitchListTile(

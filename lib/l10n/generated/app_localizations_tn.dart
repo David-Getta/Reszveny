@@ -2883,6 +2883,18 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Ga go a bonwa ditheko tsa pele tse di ka busediwang.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Ga go na ikwadisetso e o ka e laolang fano. Ikwadisetso e e rekilweng mo App Store kgotsa Google Play e laolwa mo dithulaganyong tsa lebenkele.';
+
+  @override
+  String get backupFailed =>
+      'Polokelo ya tshireletso ga e a kgona go bolokwa. Tswee-tswee leka gape.';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

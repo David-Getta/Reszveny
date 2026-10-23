@@ -850,5 +850,8 @@
   "errRateLimited": "Preveč zahtev v kratkem času. Počakajte minuto in poskusite znova.",
   "watchListNameTaken": "Seznam s tem imenom že obstaja.",
   "watchListLimit": "Največje število seznamov: {max}.",
-  "portfolioBuyBelowSold": "Vsaj {quantity} – toliko jih je že prodanih"
+  "portfolioBuyBelowSold": "Vsaj {quantity} – toliko jih je že prodanih",
+  "restoreNothing": "Ni bilo najdenih prejšnjih nakupov za obnovitev.",
+  "manageSubscriptionElsewhere": "Tu ni naročnine za upravljanje. Naročnino, kupljeno v App Store ali Google Play, upravljate v nastavitvah trgovine.",
+  "backupFailed": "Varnostne kopije ni bilo mogoče shraniti. Poskusite znova."
 }

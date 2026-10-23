@@ -2863,6 +2863,18 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Калыбына келтире турган мурунку сатып алуулар табылган жок.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Бул жерде башкара турган жазылуу жок. App Store же Google Play аркылуу сатып алынган жазылуу дүкөндүн жөндөөлөрүнөн башкарылат.';
+
+  @override
+  String get backupFailed =>
+      'Камдык көчүрмөнү сактоо мүмкүн болгон жок. Кайра аракет кылыңыз.';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

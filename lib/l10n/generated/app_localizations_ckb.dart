@@ -2864,6 +2864,17 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'هیچ کڕینێکی پێشوو نەدۆزرایەوە بۆ گەڕاندنەوە.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'لێرە هیچ ئابوونەیەک نییە بۆ بەڕێوەبردن. ئابوونەیەک کە لە App Store یان Google Play کڕدرابێت، لە ڕێکخستنەکانی فرۆشگادا بەڕێوە دەبرێت.';
+
+  @override
+  String get backupFailed =>
+      'یەدەگەکە پاشەکەوت نەکرا. تکایە دووبارە هەوڵ بدەرەوە.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

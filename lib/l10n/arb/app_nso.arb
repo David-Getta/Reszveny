@@ -850,5 +850,8 @@
   "errRateLimited": "Dikgopelo tše dintši kudu ka nako ye kopana. Hle leta motsotso gomme o leke gape.",
   "watchListNameTaken": "Go šetše go na le lenaneo leo le nago le leina le.",
   "watchListLimit": "O ka ba le mananeo a sa fetego {max}.",
-  "portfolioBuyBelowSold": "Bonyane {quantity} – palo yeo e šetše e rekišitšwe"
+  "portfolioBuyBelowSold": "Bonyane {quantity} – palo yeo e šetše e rekišitšwe",
+  "restoreNothing": "Ga go a hwetšwa tše o di rekilego pele gore di bušetšwe.",
+  "manageSubscriptionElsewhere": "Ga go na ngwadišo ye e ka laolwago mo. Ngwadišo ye e rekilwego go App Store goba Google Play e laolwa go dipeakanyo tša lebenkele.",
+  "backupFailed": "Polokelo ya thekgo e be e sa kgone go bolokwa. Hle leka gape."
 }

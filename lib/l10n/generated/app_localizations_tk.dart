@@ -2863,6 +2863,17 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Dikeltmek üçin öňki satyn alyş tapylmady.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Bu ýerde dolandyrmak üçin abuna ýok. App Store ýa-da Google Play arkaly satyn alnan abuna dükanyň sazlamalarynda dolandyrylýar.';
+
+  @override
+  String get backupFailed =>
+      'Ätiýaçlyk nusgany saklap bolmady. Gaýtadan synanyşyň.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

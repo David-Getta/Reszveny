@@ -850,5 +850,8 @@
   "errRateLimited": "Kakehan panjalukan ing wektu sing cendhak. Mangga ngenteni sak menit lan jajal maneh.",
   "watchListNameTaken": "Dhaptar kanthi jeneng iki wis ana.",
   "watchListLimit": "Sampeyan bisa duwe nganti {max} dhaptar.",
-  "portfolioBuyBelowSold": "Paling ora {quantity} – samono wis didol"
+  "portfolioBuyBelowSold": "Paling ora {quantity} – samono wis didol",
+  "restoreNothing": "Ora ana tukon sadurungé sing bisa dipulihaké.",
+  "manageSubscriptionElsewhere": "Ora ana langganan sing bisa diatur ing kéné. Langganan sing dituku ing App Store utawa Google Play diatur ing setelan toko.",
+  "backupFailed": "Cadhangan ora bisa disimpen. Mangga jajal maneh."
 }

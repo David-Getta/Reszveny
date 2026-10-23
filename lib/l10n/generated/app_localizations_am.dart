@@ -2824,6 +2824,16 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'ወደነበረበት የሚመለስ ቀደም ያለ ግዢ አልተገኘም።';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'እዚህ የሚተዳደር የደንበኝነት ምዝገባ የለም። በApp Store ወይም በGoogle Play የተገዛ ምዝገባ በመደብሩ ቅንብሮች ውስጥ ይተዳደራል።';
+
+  @override
+  String get backupFailed => 'ምትኬው ሊቀመጥ አልቻለም። እባክዎ እንደገና ይሞክሩ።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

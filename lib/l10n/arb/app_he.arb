@@ -850,5 +850,8 @@
   "errRateLimited": "יותר מדי בקשות בזמן קצר. המתינו דקה ונסו שוב.",
   "watchListNameTaken": "כבר קיימת רשימה בשם הזה.",
   "watchListLimit": "אפשר ליצור עד {max} רשימות.",
-  "portfolioBuyBelowSold": "לפחות {quantity} – כמות זו כבר נמכרה"
+  "portfolioBuyBelowSold": "לפחות {quantity} – כמות זו כבר נמכרה",
+  "restoreNothing": "לא נמצאו רכישות קודמות לשחזור.",
+  "manageSubscriptionElsewhere": "אין כאן מינוי לניהול. מינוי שנרכש ב-App Store או ב-Google Play מנוהל בהגדרות החנות.",
+  "backupFailed": "לא ניתן היה לשמור את הגיבוי. נסו שוב."
 }

@@ -850,5 +850,8 @@
   "errRateLimited": "Dikopo di dintsi thata mo nakong e khutshwane. Tswee-tswee ema motsotso mme o leke gape.",
   "watchListNameTaken": "Lenaane le le nang le leina le le setse le le teng.",
   "watchListLimit": "O ka nna le manaane a a sa feteng {max}.",
-  "portfolioBuyBelowSold": "Bonnye {quantity} – palo eo e setse e rekisitswe"
+  "portfolioBuyBelowSold": "Bonnye {quantity} – palo eo e setse e rekisitswe",
+  "restoreNothing": "Ga go a bonwa ditheko tsa pele tse di ka busediwang.",
+  "manageSubscriptionElsewhere": "Ga go na ikwadisetso e o ka e laolang fano. Ikwadisetso e e rekilweng mo App Store kgotsa Google Play e laolwa mo dithulaganyong tsa lebenkele.",
+  "backupFailed": "Polokelo ya tshireletso ga e a kgona go bolokwa. Tswee-tswee leka gape."
 }

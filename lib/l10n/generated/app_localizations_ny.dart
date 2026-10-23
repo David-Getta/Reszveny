@@ -2873,6 +2873,18 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Palibe zogula zakale zomwe zapezeka kuti zibwezeretsedwe.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Palibe kulembetsa koti muyang\'anire pano. Kulembetsa komwe munagula mu App Store kapena Google Play kumayang\'aniridwa mu zokonda za sitolo.';
+
+  @override
+  String get backupFailed =>
+      'Zosunga zobwezera sizinathe kusungidwa. Chonde yesaninso.';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

@@ -850,5 +850,8 @@
   "errRateLimited": "Zbyt wiele zapytań w krótkim czasie. Odczekaj minutę i spróbuj ponownie.",
   "watchListNameTaken": "Lista o tej nazwie już istnieje.",
   "watchListLimit": "Maksymalna liczba list: {max}.",
-  "portfolioBuyBelowSold": "Co najmniej {quantity} – tyle już sprzedano"
+  "portfolioBuyBelowSold": "Co najmniej {quantity} – tyle już sprzedano",
+  "restoreNothing": "Nie znaleziono wcześniejszych zakupów do przywrócenia.",
+  "manageSubscriptionElsewhere": "Nie ma tu subskrypcji do zarządzania. Subskrypcją kupioną w App Store lub Google Play zarządza się w ustawieniach sklepu.",
+  "backupFailed": "Nie udało się zapisać kopii zapasowej. Spróbuj ponownie."
 }

@@ -2861,6 +2861,17 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'We no see any purchase wey you don make before to bring back.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'No subscription dey here to manage. Subscription wey you buy for App Store or Google Play, na for di store settings you go manage am.';
+
+  @override
+  String get backupFailed => 'Di backup no fit save. Abeg try again.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

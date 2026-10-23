@@ -850,5 +850,8 @@
   "errRateLimited": "Gysga wagtda gaty köp haýyş iberildi. Bir minut garaşyň we gaýtadan synanyşyň.",
   "watchListNameTaken": "Bu atly sanaw eýýäm bar.",
   "watchListLimit": "Iň köp {max} sanawyňyz bolup biler.",
-  "portfolioBuyBelowSold": "Iň az {quantity} – şonça eýýäm satyldy"
+  "portfolioBuyBelowSold": "Iň az {quantity} – şonça eýýäm satyldy",
+  "restoreNothing": "Dikeltmek üçin öňki satyn alyş tapylmady.",
+  "manageSubscriptionElsewhere": "Bu ýerde dolandyrmak üçin abuna ýok. App Store ýa-da Google Play arkaly satyn alnan abuna dükanyň sazlamalarynda dolandyrylýar.",
+  "backupFailed": "Ätiýaçlyk nusgany saklap bolmady. Gaýtadan synanyşyň."
 }

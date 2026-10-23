@@ -850,5 +850,8 @@
   "errRateLimited": "በአጭር ጊዜ ውስጥ በጣም ብዙ ጥያቄዎች ተልከዋል። እባክዎ አንድ ደቂቃ ይጠብቁና እንደገና ይሞክሩ።",
   "watchListNameTaken": "ይህ ስም ያለው ዝርዝር አስቀድሞ አለ።",
   "watchListLimit": "እስከ {max} ዝርዝሮች ሊኖርዎት ይችላል።",
-  "portfolioBuyBelowSold": "ቢያንስ {quantity} – ያን ያህል አስቀድሞ ተሽጧል"
+  "portfolioBuyBelowSold": "ቢያንስ {quantity} – ያን ያህል አስቀድሞ ተሽጧል",
+  "restoreNothing": "ወደነበረበት የሚመለስ ቀደም ያለ ግዢ አልተገኘም።",
+  "manageSubscriptionElsewhere": "እዚህ የሚተዳደር የደንበኝነት ምዝገባ የለም። በApp Store ወይም በGoogle Play የተገዛ ምዝገባ በመደብሩ ቅንብሮች ውስጥ ይተዳደራል።",
+  "backupFailed": "ምትኬው ሊቀመጥ አልቻለም። እባክዎ እንደገና ይሞክሩ።"
 }

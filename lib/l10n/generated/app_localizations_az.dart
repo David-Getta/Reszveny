@@ -2862,6 +2862,17 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Bərpa ediləcək əvvəlki alış tapılmadı.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Burada idarə ediləcək abunəlik yoxdur. App Store və ya Google Play-də alınmış abunəlik mağaza ayarlarında idarə olunur.';
+
+  @override
+  String get backupFailed =>
+      'Ehtiyat nüsxəni saxlamaq mümkün olmadı. Yenidən cəhd edin.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

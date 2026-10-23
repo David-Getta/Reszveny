@@ -2853,6 +2853,17 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'पुनर्स्थापित करबाक लेल पहिलुका कोनो खरीदारी नहि भेटल।';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'एतय प्रबंधित करबाक लेल कोनो सदस्यता नहि अछि। App Store वा Google Play मे कीनल सदस्यता स्टोरक सेटिंग्समे प्रबंधित होइत अछि।';
+
+  @override
+  String get backupFailed => 'बैकअप सेव नहि भऽ सकल। कृपया फेरसँ प्रयास करू।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

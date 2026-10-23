@@ -2868,6 +2868,18 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'ಮರುಸ್ಥಾಪಿಸಲು ಹಿಂದಿನ ಯಾವುದೇ ಖರೀದಿಗಳು ಕಂಡುಬಂದಿಲ್ಲ.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'ಇಲ್ಲಿ ನಿರ್ವಹಿಸಲು ಯಾವುದೇ ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ. App Store ಅಥವಾ Google Play ನಲ್ಲಿ ಖರೀದಿಸಿದ ಚಂದಾದಾರಿಕೆಯನ್ನು ಸ್ಟೋರ್‌ನ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ನಿರ್ವಹಿಸಲಾಗುತ್ತದೆ.';
+
+  @override
+  String get backupFailed =>
+      'ಬ್ಯಾಕಪ್ ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

@@ -850,5 +850,8 @@
   "errRateLimited": "Yeroo gabaabaa keessatti gaaffiiwwan baay'een ergamaniiru. Maaloo daqiiqaa tokko eegii irra deebi'ii yaali.",
   "watchListNameTaken": "Tarreen maqaa kanaan jiru duraanuu jira.",
   "watchListLimit": "Tarreewwan hanga {max} qabaachuu dandeessa.",
-  "portfolioBuyBelowSold": "Yoo xiqqaate {quantity} – hammana duraan gurguramaniiru"
+  "portfolioBuyBelowSold": "Yoo xiqqaate {quantity} – hammana duraan gurguramaniiru",
+  "restoreNothing": "Bittaan kanaan dura deebi'uu danda'u hin argamne.",
+  "manageSubscriptionElsewhere": "Asitti miseensummaan bulchamu hin jiru. Miseensummaan App Store ykn Google Play irraa bitame qindaa'ina kuusaa keessatti bulchama.",
+  "backupFailed": "Kuusaan deebii olkaa'amuu hin dandeenye. Maaloo irra deebi'ii yaali."
 }

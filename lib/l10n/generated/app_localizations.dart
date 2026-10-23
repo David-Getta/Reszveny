@@ -4842,6 +4842,24 @@ abstract class AppLocalizations {
   /// **'At least {quantity} – that many have already been sold'**
   String portfolioBuyBelowSold(String quantity);
 
+  /// Shown after the user tapped "Restore purchases" and the store or server found no earlier purchase on this account.
+  ///
+  /// In en, this message translates to:
+  /// **'No earlier purchases were found to restore.'**
+  String get restoreNothing;
+
+  /// Shown when the user taps "Manage subscription" but there is no browser (Stripe) subscription on the account.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no subscription to manage here. A subscription bought in the App Store or Google Play is managed in the store\'s settings.'**
+  String get manageSubscriptionElsewhere;
+
+  /// Error after saving the backup file failed (e.g. no permission or disk full).
+  ///
+  /// In en, this message translates to:
+  /// **'The backup could not be saved. Please try again.'**
+  String get backupFailed;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

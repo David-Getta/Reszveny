@@ -2880,6 +2880,17 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Wala sang nakita nga nauna nga ginbakal nga mabalik.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Wala sang subscription nga madumalahan diri. Ang subscription nga ginbakal sa App Store ukon Google Play ginadumalahan sa mga setting sang store.';
+
+  @override
+  String get backupFailed => 'Indi ma-save ang backup. Palihog tilawi liwat.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

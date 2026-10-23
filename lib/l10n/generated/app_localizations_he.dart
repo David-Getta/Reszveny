@@ -2854,6 +2854,16 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'לא נמצאו רכישות קודמות לשחזור.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'אין כאן מינוי לניהול. מינוי שנרכש ב-App Store או ב-Google Play מנוהל בהגדרות החנות.';
+
+  @override
+  String get backupFailed => 'לא ניתן היה לשמור את הגיבוי. נסו שוב.';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

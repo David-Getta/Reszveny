@@ -850,5 +850,8 @@
   "errRateLimited": "มีคำขอมากเกินไปในเวลาสั้นๆ โปรดรอสักหนึ่งนาทีแล้วลองอีกครั้ง",
   "watchListNameTaken": "มีรายการชื่อนี้อยู่แล้ว",
   "watchListLimit": "คุณมีรายการได้สูงสุด {max} รายการ",
-  "portfolioBuyBelowSold": "อย่างน้อย {quantity} เพราะขายไปแล้วเท่านี้"
+  "portfolioBuyBelowSold": "อย่างน้อย {quantity} เพราะขายไปแล้วเท่านี้",
+  "restoreNothing": "ไม่พบการซื้อก่อนหน้าที่จะกู้คืนได้",
+  "manageSubscriptionElsewhere": "ไม่มีการสมัครสมาชิกให้จัดการที่นี่ การสมัครสมาชิกที่ซื้อผ่าน App Store หรือ Google Play ต้องจัดการในการตั้งค่าของสโตร์",
+  "backupFailed": "ไม่สามารถบันทึกข้อมูลสำรองได้ โปรดลองอีกครั้ง"
 }

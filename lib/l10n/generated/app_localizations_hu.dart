@@ -2867,6 +2867,17 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Nem találtunk visszaállítható korábbi vásárlást.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Itt nincs kezelhető előfizetés. Az App Store-ban vagy a Google Playen vett előfizetést a bolt beállításaiban kezelheted.';
+
+  @override
+  String get backupFailed => 'A mentés nem sikerült. Próbáld újra.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

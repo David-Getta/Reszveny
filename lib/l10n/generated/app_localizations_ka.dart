@@ -2861,6 +2861,17 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'აღსადგენი წინა შენაძენები ვერ მოიძებნა.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'აქ სამართავი გამოწერა არ არის. App Store-ში ან Google Play-ში შეძენილი გამოწერა მაღაზიის პარამეტრებში იმართება.';
+
+  @override
+  String get backupFailed =>
+      'სარეზერვო ასლის შენახვა ვერ მოხერხდა. სცადეთ ხელახლა.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

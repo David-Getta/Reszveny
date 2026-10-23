@@ -850,5 +850,8 @@
   "errRateLimited": "Adu unay ti request iti ababa a tiempo. Pangngaasim ta agurayka iti maysa a minuto ket padasem manen.",
   "watchListNameTaken": "Addan ti listaan nga addaan iti daytoy a nagan.",
   "watchListLimit": "Mabalinmo ti agaddaan agingga iti {max} a listaan.",
-  "portfolioBuyBelowSold": "Di kumurang iti {quantity} – kasta kaadu ti nailakon"
+  "portfolioBuyBelowSold": "Di kumurang iti {quantity} – kasta kaadu ti nailakon",
+  "restoreNothing": "Awan ti nasarakan a nagatang idi a maisubli.",
+  "manageSubscriptionElsewhere": "Awan ti subscription a maimaneho ditoy. Ti subscription a nagatang iti App Store wenno Google Play ket maimaneho iti setting ti store.",
+  "backupFailed": "Saan a ma-save ti backup. Pangngaasim ta padasem manen."
 }

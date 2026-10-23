@@ -2861,6 +2861,17 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Geri yüklenecek önceki bir satın alma bulunamadı.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Burada yönetilecek bir abonelik yok. App Store veya Google Play üzerinden alınan abonelik, mağaza ayarlarından yönetilir.';
+
+  @override
+  String get backupFailed => 'Yedek kaydedilemedi. Lütfen tekrar deneyin.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

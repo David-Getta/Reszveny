@@ -850,5 +850,8 @@
   "errRateLimited": "För många förfrågningar på kort tid. Vänta en minut och försök igen.",
   "watchListNameTaken": "Det finns redan en lista med det här namnet.",
   "watchListLimit": "Du kan ha upp till {max} listor.",
-  "portfolioBuyBelowSold": "Minst {quantity} – så många är redan sålda"
+  "portfolioBuyBelowSold": "Minst {quantity} – så många är redan sålda",
+  "restoreNothing": "Inga tidigare köp hittades att återställa.",
+  "manageSubscriptionElsewhere": "Det finns ingen prenumeration att hantera här. En prenumeration som köpts i App Store eller Google Play hanteras i butikens inställningar.",
+  "backupFailed": "Säkerhetskopian kunde inte sparas. Försök igen."
 }

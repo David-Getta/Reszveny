@@ -850,5 +850,8 @@
   "errRateLimited": "Shumë kërkesa brenda një kohe të shkurtër. Ju lutemi prisni një minutë dhe provoni përsëri.",
   "watchListNameTaken": "Ekziston tashmë një listë me këtë emër.",
   "watchListLimit": "Mund të keni deri në {max} lista.",
-  "portfolioBuyBelowSold": "Të paktën {quantity} – kaq janë shitur tashmë"
+  "portfolioBuyBelowSold": "Të paktën {quantity} – kaq janë shitur tashmë",
+  "restoreNothing": "Nuk u gjetën blerje të mëparshme për t’u rikthyer.",
+  "manageSubscriptionElsewhere": "Këtu nuk ka abonim për t’u menaxhuar. Një abonim i blerë në App Store ose Google Play menaxhohet te cilësimet e dyqanit.",
+  "backupFailed": "Kopja rezervë nuk mund të ruhej. Ju lutemi provoni përsëri."
 }

@@ -2772,6 +2772,16 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => '復元できる過去の購入は見つかりませんでした。';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'ここで管理できるサブスクリプションはありません。App StoreまたはGoogle Playで購入したサブスクリプションは、ストアの設定で管理します。';
+
+  @override
+  String get backupFailed => 'バックアップを保存できませんでした。もう一度お試しください。';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

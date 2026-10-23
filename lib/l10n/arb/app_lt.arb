@@ -850,5 +850,8 @@
   "errRateLimited": "Per daug užklausų per trumpą laiką. Palaukite minutę ir bandykite dar kartą.",
   "watchListNameTaken": "Sąrašas tokiu pavadinimu jau yra.",
   "watchListLimit": "Galite turėti ne daugiau kaip {max} sąrašų.",
-  "portfolioBuyBelowSold": "Ne mažiau kaip {quantity} – tiek jau parduota"
+  "portfolioBuyBelowSold": "Ne mažiau kaip {quantity} – tiek jau parduota",
+  "restoreNothing": "Nerasta ankstesnių pirkinių, kuriuos būtų galima atkurti.",
+  "manageSubscriptionElsewhere": "Čia nėra prenumeratos, kurią būtų galima tvarkyti. App Store arba Google Play įsigyta prenumerata tvarkoma parduotuvės nustatymuose.",
+  "backupFailed": "Atsarginės kopijos išsaugoti nepavyko. Bandykite dar kartą."
 }

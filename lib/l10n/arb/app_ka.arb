@@ -850,5 +850,8 @@
   "errRateLimited": "ძალიან ბევრი მოთხოვნა მოკლე დროში. დაიცადეთ ერთი წუთი და სცადეთ ხელახლა.",
   "watchListNameTaken": "ამ სახელით სია უკვე არსებობს.",
   "watchListLimit": "შეგიძლიათ გქონდეთ მაქსიმუმ {max} სია.",
-  "portfolioBuyBelowSold": "მინიმუმ {quantity} – ამდენი უკვე გაყიდულია"
+  "portfolioBuyBelowSold": "მინიმუმ {quantity} – ამდენი უკვე გაყიდულია",
+  "restoreNothing": "აღსადგენი წინა შენაძენები ვერ მოიძებნა.",
+  "manageSubscriptionElsewhere": "აქ სამართავი გამოწერა არ არის. App Store-ში ან Google Play-ში შეძენილი გამოწერა მაღაზიის პარამეტრებში იმართება.",
+  "backupFailed": "სარეზერვო ასლის შენახვა ვერ მოხერხდა. სცადეთ ხელახლა."
 }

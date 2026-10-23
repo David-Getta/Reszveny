@@ -850,5 +850,8 @@
   "errRateLimited": "Codsiyo aad u badan muddo gaaban gudaheed. Fadlan sug hal daqiiqo oo isku day mar kale.",
   "watchListNameTaken": "Liis magacan leh ayaa horey u jira.",
   "watchListLimit": "Waxaad yeelan kartaa ilaa {max} liis.",
-  "portfolioBuyBelowSold": "Ugu yaraan {quantity} – intaas ayaa horay loo iibiyay"
+  "portfolioBuyBelowSold": "Ugu yaraan {quantity} – intaas ayaa horay loo iibiyay",
+  "restoreNothing": "Lama helin iibsasho hore oo la soo celin karo.",
+  "manageSubscriptionElsewhere": "Halkan ma jiro rukummo la maamuli karo. Rukummada laga iibsaday App Store ama Google Play waxaa lagu maamulaa dejinta dukaanka.",
+  "backupFailed": "Nuqulka kaydka lama kaydin karin. Fadlan isku day mar kale."
 }

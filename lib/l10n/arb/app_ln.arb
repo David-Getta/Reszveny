@@ -850,5 +850,8 @@
   "errRateLimited": "Masɛngi ebele na ntango moke. Zela miniti moko mpe meka lisusu.",
   "watchListNameTaken": "Liste moko na nkombo oyo esili kozala.",
   "watchListLimit": "Okoki kozala na ba liste kino {max}.",
-  "portfolioBuyBelowSold": "{quantity} to koleka – motango yango esili kotekama"
+  "portfolioBuyBelowSold": "{quantity} to koleka – motango yango esili kotekama",
+  "restoreNothing": "Bosombi ya kala moko te emonani mpo na kozongisa.",
+  "manageSubscriptionElsewhere": "Abonnement moko te ezali awa ya kokamba. Abonnement oyo osombaki na App Store to Google Play ekambamaka na ba-paramètre ya store.",
+  "backupFailed": "Kopi ya kobomba ekokaki kobombama te. Meka lisusu."
 }

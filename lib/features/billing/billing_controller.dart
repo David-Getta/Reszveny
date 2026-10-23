@@ -13,7 +13,13 @@ typedef PurchaseVerifier = Future<EntitlementState> Function(BillingEvent event)
 
 /// Összeköti a boltot a jogosultságokkal: vásárlási esemény → kvóta.
 class BillingController extends ChangeNotifier {
-  BillingController({required this.billing, required this.entitlements, this.verifier, this.onPurchased}) {
+  BillingController({
+    required this.billing,
+    required this.entitlements,
+    this.verifier,
+    this.onPurchased,
+    this.restoreGrace = const Duration(seconds: 4),
+  }) {
     _sub = billing.events.listen(_onEvent);
   }
 
@@ -48,6 +54,17 @@ class BillingController extends ChangeNotifier {
   String? _busyProductId;
   String? get busyProductId => _busyProductId;
 
+  /// A visszaállítás után ennyit várunk a bolt eseményeire (a visszaállított
+  /// vásárlások külön érkeznek), mielőtt „nincs mit visszaállítani”-t mondunk.
+  final Duration restoreGrace;
+  bool _restoring = false;
+  bool get restoring => _restoring;
+  bool _sawRestore = false;
+  RestoreOutcome? _restoreOutcome;
+
+  /// A legutóbbi visszaállítás eredménye a felületnek (`null`: nem volt, vagy még fut).
+  RestoreOutcome? get restoreOutcome => _restoreOutcome;
+
   Future<void> loadProducts() async {
     if (_loading) return;
     _loading = true;
@@ -66,6 +83,8 @@ class BillingController extends ChangeNotifier {
   }
 
   Future<void> buy(StoreProduct p) async {
+    // Egyszerre egy vásárlás (különben két fizetés is elindulhatna).
+    if (_busyProductId != null) return;
     _busyProductId = p.id;
     _lastEvent = null;
     notifyListeners();
@@ -79,15 +98,36 @@ class BillingController extends ChangeNotifier {
   }
 
   Future<void> restore() async {
+    if (_restoring) return;
+    _restoring = true;
+    _sawRestore = false;
+    _restoreOutcome = null;
+    notifyListeners();
     try {
       await billing.restore();
+      if (restoreGrace > Duration.zero) await Future<void>.delayed(restoreGrace);
+      _restoreOutcome = _sawRestore ? RestoreOutcome.found : RestoreOutcome.nothing;
     } catch (e) {
       debugPrint('Visszaállítás nem sikerült: $e');
+      _restoreOutcome = RestoreOutcome.failed;
+    } finally {
+      _restoring = false;
+      notifyListeners();
     }
+  }
+
+  /// A lap megnyitásakor: a korábbi (már lezárt) vásárlás vagy visszaállítás üzenete
+  /// ne jelenjen meg újra (a folyamatban lévő fizetésé marad).
+  void clearFinished() {
+    if (_lastEvent?.status == BillingStatus.pending) return;
+    _lastEvent = null;
+    if (!_restoring) _restoreOutcome = null;
+    notifyListeners();
   }
 
   Future<void> _onEvent(BillingEvent e) async {
     _lastEvent = e;
+    if (_restoring && (e.status == BillingStatus.restored || e.status == BillingStatus.purchased)) _sawRestore = true;
     final granted = e.entitlements;
     if (e.status == BillingStatus.purchased) onPurchased?.call();
     if (granted != null) {
@@ -229,3 +269,6 @@ class BillingController extends ChangeNotifier {
 
 /// A szerveroldali ellenőrzés eredménye: jóváírva, elutasítva, vagy később újra.
 enum _Verified { ok, rejected, later }
+
+/// A visszaállítás eredménye: talált vásárlást, nem talált semmit, vagy hiba volt.
+enum RestoreOutcome { found, nothing, failed }

@@ -850,5 +850,8 @@
   "errRateLimited": "Previše zahtjeva u kratkom vremenu. Pričekajte minutu i pokušajte ponovno.",
   "watchListNameTaken": "Popis s tim nazivom već postoji.",
   "watchListLimit": "Možete imati najviše {max} popisa.",
-  "portfolioBuyBelowSold": "Najmanje {quantity} – toliko ih je već prodano"
+  "portfolioBuyBelowSold": "Najmanje {quantity} – toliko ih je već prodano",
+  "restoreNothing": "Nisu pronađene ranije kupnje za obnovu.",
+  "manageSubscriptionElsewhere": "Ovdje nema pretplate kojom se može upravljati. Pretplatom kupljenom u App Storeu ili na Google Playu upravlja se u postavkama trgovine.",
+  "backupFailed": "Sigurnosnu kopiju nije bilo moguće spremiti. Pokušajte ponovno."
 }

@@ -2870,6 +2870,17 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Walang nakitang naunang binili na mare-restore.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Walang subscription na mapapamahalaan dito. Ang subscription na binili sa App Store o Google Play ay pinamamahalaan sa settings ng store.';
+
+  @override
+  String get backupFailed => 'Hindi ma-save ang backup. Pakisubukang muli.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

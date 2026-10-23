@@ -850,5 +850,8 @@
   "errRateLimited": "Be loatra ny fangatahana tao anatin'ny fotoana fohy. Miandrasa iray minitra azafady ary andramo indray.",
   "watchListNameTaken": "Efa misy lisitra mitondra io anarana io.",
   "watchListLimit": "Hatramin'ny lisitra {max} no azonao ananana.",
-  "portfolioBuyBelowSold": "Farafahakeliny {quantity} – izany isa izany no efa namidy"
+  "portfolioBuyBelowSold": "Farafahakeliny {quantity} – izany isa izany no efa namidy",
+  "restoreNothing": "Tsy nisy fividianana teo aloha hita haverina.",
+  "manageSubscriptionElsewhere": "Tsy misy famandrihana tantanina eto. Ny famandrihana novidiana tao amin'ny App Store na Google Play dia tantanina ao amin'ny fikirakiran'ny fivarotana.",
+  "backupFailed": "Tsy voatahiry ny fitahirizana. Andramo indray azafady."
 }

@@ -850,5 +850,8 @@
   "errRateLimited": "Zininzi kakhulu izicelo ngexesha elifutshane. Nceda ulinde umzuzu uze uzame kwakhona.",
   "watchListNameTaken": "Sele lukhona uluhlu olunaleli gama.",
   "watchListLimit": "Ungaba nezintlu ezingafikelela kwi-{max}.",
-  "portfolioBuyBelowSold": "Ubuncinane {quantity} – izabelo ezingako sele zithengisiwe"
+  "portfolioBuyBelowSold": "Ubuncinane {quantity} – izabelo ezingako sele zithengisiwe",
+  "restoreNothing": "Akufunyanwanga zinto zithengiweyo ngaphambili ukuze zibuyiselwe.",
+  "manageSubscriptionElsewhere": "Akukho mrhumo unokulawulwa apha. Umrhumo othengwe kwi-App Store okanye kwi-Google Play ulawulwa kwiisetingi zevenkile.",
+  "backupFailed": "Ikopi yokhuseleko ayikwazanga ukugcinwa. Nceda uzame kwakhona."
 }

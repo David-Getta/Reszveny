@@ -850,5 +850,8 @@
   "errRateLimited": "Laaj yi bari nañu lool ci diir bu gàtt. Xaaral benn minit te jéemaatal.",
   "watchListNameTaken": "Benn limm bu am tur bii am na ba pare.",
   "watchListLimit": "Mën nga am ba ci {max} limm.",
-  "portfolioBuyBelowSold": "Lu néew-néew {quantity} – lim boobu jaay nañu ko ba noppi"
+  "portfolioBuyBelowSold": "Lu néew-néew {quantity} – lim boobu jaay nañu ko ba noppi",
+  "restoreNothing": "Gisuñu benn jënd bu jiitu bu ñu mën a delloo.",
+  "manageSubscriptionElsewhere": "Amul fii abonmaa bu ñu mën a toppatoo. Abonmaa bu ñu jënde ci App Store walla Google Play, ci tànneefu bitig bi lañuy toppatoo.",
+  "backupFailed": "Mënuñu denc kaaraange bi. Jéemaatal."
 }

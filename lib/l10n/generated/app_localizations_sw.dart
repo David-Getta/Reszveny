@@ -2864,6 +2864,18 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Hakuna manunuzi ya awali yaliyopatikana ya kurejesha.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Hakuna usajili wa kudhibiti hapa. Usajili ulionunuliwa kwenye App Store au Google Play hudhibitiwa kwenye mipangilio ya duka.';
+
+  @override
+  String get backupFailed =>
+      'Nakala rudufu haikuweza kuhifadhiwa. Tafadhali jaribu tena.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

@@ -2868,6 +2868,18 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Nuk u gjetën blerje të mëparshme për t’u rikthyer.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Këtu nuk ka abonim për t’u menaxhuar. Një abonim i blerë në App Store ose Google Play menaxhohet te cilësimet e dyqanit.';
+
+  @override
+  String get backupFailed =>
+      'Kopja rezervë nuk mund të ruhej. Ju lutemi provoni përsëri.';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

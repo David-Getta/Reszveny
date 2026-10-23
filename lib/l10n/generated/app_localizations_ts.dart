@@ -2885,6 +2885,18 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'A ku kumekanga swixaviwa swa khale leswi nga vuyisiwaka.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'A ku na ntsariso lowu nga lawuriwaka laha. Ntsariso lowu xaviweke eka App Store kumbe Google Play wu lawuriwa eka swiyimiso swa vhengele.';
+
+  @override
+  String get backupFailed =>
+      'Nkopi yo hlayisa a yi kotanga ku hlayisiwa. Hi kombela u ringeta nakambe.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

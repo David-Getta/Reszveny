@@ -850,5 +850,8 @@
   "errRateLimited": "Dikopo di ngata haholo ka nako e kgutshwane. Ka kopo ema motsotso mme o leke hape.",
   "watchListNameTaken": "Lenane le nang le lebitso lena le se le ntse le le teng.",
   "watchListLimit": "O ka ba le manane a sa feteng {max}.",
-  "portfolioBuyBelowSold": "Bonyane {quantity} – palo eo e se e rekisitswe"
+  "portfolioBuyBelowSold": "Bonyane {quantity} – palo eo e se e rekisitswe",
+  "restoreNothing": "Ha ho ditheko tsa pele tse fumanweng hore di kgutliswe.",
+  "manageSubscriptionElsewhere": "Ha ho ingodiso eo o ka e laolang mona. Ingodiso e rekilweng ho App Store kapa Google Play e laolwa ditlhophisong tsa lebenkele.",
+  "backupFailed": "Polokelo ya tshehetso ha e a kgona ho bolokwa. Ka kopo leka hape."
 }

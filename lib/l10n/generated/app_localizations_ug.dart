@@ -2864,6 +2864,17 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'ئەسلىگە كەلتۈرگىلى بولىدىغان ئىلگىرىكى سېتىۋېلىش تېپىلمىدى.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'بۇ يەردە باشقۇرىدىغان مۇشتەرىلىك يوق. App Store ياكى Google Play ئارقىلىق سېتىۋېلىنغان مۇشتەرىلىك دۇكان تەڭشىكىدە باشقۇرۇلىدۇ.';
+
+  @override
+  String get backupFailed => 'زاپاسنى ساقلىغىلى بولمىدى. قايتا سىناپ بېقىڭ.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

@@ -2861,6 +2861,16 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Сэргээх өмнөх худалдан авалт олдсонгүй.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Энд удирдах захиалга алга. App Store эсвэл Google Play-ээс авсан захиалгыг дэлгүүрийн тохиргооноос удирдана.';
+
+  @override
+  String get backupFailed => 'Нөөцийг хадгалж чадсангүй. Дахин оролдоно уу.';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

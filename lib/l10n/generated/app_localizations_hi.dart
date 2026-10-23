@@ -2859,6 +2859,17 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'पुनर्स्थापित करने के लिए पहले की कोई खरीदारी नहीं मिली।';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'यहाँ प्रबंधित करने के लिए कोई सदस्यता नहीं है। App Store या Google Play से खरीदी गई सदस्यता स्टोर की सेटिंग्स में प्रबंधित होती है।';
+
+  @override
+  String get backupFailed => 'बैकअप सेव नहीं हो सका। कृपया पुनः प्रयास करें।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

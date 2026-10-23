@@ -2882,6 +2882,18 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Не се пронајдени претходни купувања за враќање.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Тука нема претплата за управување. Претплатата купена на App Store или Google Play се управува во поставките на продавницата.';
+
+  @override
+  String get backupFailed =>
+      'Резервната копија не можеше да се зачува. Обидете се повторно.';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

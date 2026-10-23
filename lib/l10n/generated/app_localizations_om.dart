@@ -2875,6 +2875,18 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Bittaan kanaan dura deebi\'uu danda\'u hin argamne.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Asitti miseensummaan bulchamu hin jiru. Miseensummaan App Store ykn Google Play irraa bitame qindaa\'ina kuusaa keessatti bulchama.';
+
+  @override
+  String get backupFailed =>
+      'Kuusaan deebii olkaa\'amuu hin dandeenye. Maaloo irra deebi\'ii yaali.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

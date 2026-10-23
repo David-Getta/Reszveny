@@ -2852,6 +2852,17 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Không tìm thấy giao dịch mua trước đây nào để khôi phục.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Không có gói đăng ký nào để quản lý tại đây. Gói đăng ký mua qua App Store hoặc Google Play được quản lý trong phần cài đặt của cửa hàng.';
+
+  @override
+  String get backupFailed => 'Không thể lưu bản sao lưu. Vui lòng thử lại.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

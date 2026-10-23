@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.282)
+# Változásjegyzék (0.2.130 → 0.2.283)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,19 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Csomagok és beállítások: egy huszonkilencedik kódátnézés javításai
+
+- **0.2.283**: egyszerre csak egy vásárlás indulhat (eddig böngészős fizetés közben egy másik csomag is
+  megvehető volt, akár kettős terheléssel), és a félbehagyott böngészős fizetés egy idő után lezárul, a gomb nem
+  pörög tovább. A „Vásárlások visszaállítása” csak akkor mond sikert, ha tényleg talált vásárlást, különben azt
+  írja, hogy nincs mit visszaállítani, és futás közben nem nyomható újra. Lejárt próbaidő után a vett extra
+  elemzések teljes értékűek (nem rövidek), és a csomag-jelző és az állapotkártya is mutatja őket. Az árak a régió
+  pénznemében jelennek meg, nem a részvények megjelenítési pénznemében, az éves előfizetés megújulási napja a
+  kifizetett időszak vége, és az utolsó órában sem „0 nap” a próbaidő. A korábbi vásárlás üzenete nem jelenik meg
+  újra a lap következő megnyitásakor, az „Előfizetés kezelése” megmondja, ha itt nincs mit kezelni, és a sikertelen
+  mentésről is értesítés jön (3 új szöveg, 120 nyelven). A fióktörlés nem indítható kétszer, a szinkron sora nagy
+  betűvel sem töri szét a Beállításokat, és a csomagvásárlás chipje keskeny képernyőn sem csordul túl.
 
 ## Akadálymentesség és jobbról balra író nyelvek: egy huszonnyolcadik kódátnézés javításai
 

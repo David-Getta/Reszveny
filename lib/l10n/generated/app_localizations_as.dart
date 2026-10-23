@@ -2860,6 +2860,17 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'পুনৰুদ্ধাৰ কৰিবলৈ আগৰ কোনো ক্ৰয় পোৱা নগ\'ল।';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'ইয়াত পৰিচালনা কৰিবলৈ কোনো ছাবস্ক্ৰিপশ্বন নাই। App Store বা Google Playত কিনা ছাবস্ক্ৰিপশ্বন ষ্ট\'ৰৰ ছেটিংছত পৰিচালনা কৰা হয়।';
+
+  @override
+  String get backupFailed =>
+      'বেকআপ ছেভ কৰিব পৰা নগ\'ল। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

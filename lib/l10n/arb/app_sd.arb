@@ -850,5 +850,8 @@
   "errRateLimited": "ٿوري وقت ۾ تمام گهڻيون درخواستون. مهرباني ڪري هڪ منٽ انتظار ڪريو ۽ ٻيهر ڪوشش ڪريو.",
   "watchListNameTaken": "هن نالي سان فهرست اڳ ۾ ئي موجود آهي.",
   "watchListLimit": "توهان وڌ ۾ وڌ {max} فهرستون رکي سگهو ٿا.",
-  "portfolioBuyBelowSold": "گهٽ ۾ گهٽ {quantity} – ايترا اڳ ۾ ئي وڪرو ٿي چڪا آهن"
+  "portfolioBuyBelowSold": "گهٽ ۾ گهٽ {quantity} – ايترا اڳ ۾ ئي وڪرو ٿي چڪا آهن",
+  "restoreNothing": "بحال ڪرڻ لاءِ ڪا به اڳوڻي خريداري نه ملي.",
+  "manageSubscriptionElsewhere": "هتي سنڀالڻ لاءِ ڪا سبسڪرپشن ناهي. App Store يا Google Play تان خريد ڪيل سبسڪرپشن اسٽور جي سيٽنگن ۾ سنڀالي ويندي آهي.",
+  "backupFailed": "بيڪ اپ محفوظ نه ٿي سگهيو. مهرباني ڪري ٻيهر ڪوشش ڪريو."
 }

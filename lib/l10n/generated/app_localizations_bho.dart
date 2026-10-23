@@ -2855,6 +2855,16 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'बहाल करे खातिर पहिले के कवनो खरीदारी ना मिलल।';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'इहाँ सँभारे खातिर कवनो सदस्यता नइखे। App Store भा Google Play में खरीदल सदस्यता स्टोर के सेटिंग्स में सँभारल जाला।';
+
+  @override
+  String get backupFailed => 'बैकअप सेव ना हो सकल। कृपया फेर से कोसिस करीं।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

@@ -2872,6 +2872,18 @@ class AppLocalizationsRn extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Nta vyo waguze imbere vyabonetse ngo bigarurwe.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Ng\'aha nta yandikisha ryo kugenzura. Iyandikisha waguze muri App Store canke Google Play rigenzurirwa mu vyo gutunganya vy\'iduka.';
+
+  @override
+  String get backupFailed =>
+      'Ububiko bw\'ingoboka ntibwashoboye kubikwa. Subira ugerageze.';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

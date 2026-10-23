@@ -850,5 +850,8 @@
   "errRateLimited": "Demasiadas solicitudes en pouco tempo. Agarda un minuto e téntao de novo.",
   "watchListNameTaken": "Xa existe unha lista con este nome.",
   "watchListLimit": "Podes ter ata {max} listas.",
-  "portfolioBuyBelowSold": "Polo menos {quantity} – xa se venderon tantas"
+  "portfolioBuyBelowSold": "Polo menos {quantity} – xa se venderon tantas",
+  "restoreNothing": "Non se atoparon compras anteriores para restaurar.",
+  "manageSubscriptionElsewhere": "Aquí non hai ningunha subscrición que xestionar. Unha subscrición mercada na App Store ou en Google Play xestiónase na configuración da tenda.",
+  "backupFailed": "Non se puido gardar a copia de seguranza. Téntao de novo."
 }

@@ -2864,6 +2864,16 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Yɛanhu nea wotɔɔ kane biara a yɛbɛsan de aba.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Subscription biara nni ha a wobɛhwɛ so. Subscription a wotɔɔ wɔ App Store anaa Google Play mu no, wohwɛ so wɔ store no nhyehyɛe mu.';
+
+  @override
+  String get backupFailed => 'Yɛantumi ankora akorae no. Yɛsrɛ wo, sɔ hwɛ bio.';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

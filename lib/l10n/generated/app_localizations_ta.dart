@@ -2874,6 +2874,18 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'மீட்டெடுக்க முந்தைய கொள்முதல்கள் எதுவும் கிடைக்கவில்லை.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'இங்கே நிர்வகிக்க சந்தா எதுவும் இல்லை. App Store அல்லது Google Play-இல் வாங்கிய சந்தா ஸ்டோர் அமைப்புகளில் நிர்வகிக்கப்படுகிறது.';
+
+  @override
+  String get backupFailed =>
+      'காப்புப்பிரதியைச் சேமிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்.';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

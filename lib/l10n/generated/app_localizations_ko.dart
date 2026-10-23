@@ -2784,6 +2784,16 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => '복원할 이전 구매 내역이 없습니다.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      '여기에서 관리할 구독이 없습니다. App Store 또는 Google Play에서 구매한 구독은 스토어 설정에서 관리합니다.';
+
+  @override
+  String get backupFailed => '백업을 저장할 수 없습니다. 다시 시도해 주세요.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

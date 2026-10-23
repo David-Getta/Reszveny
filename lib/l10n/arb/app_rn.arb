@@ -850,5 +850,8 @@
   "errRateLimited": "Hari ivyasabwe vyinshi cane mu kanya gato. Rindira umunota umwe maze usubire ugerageze.",
   "watchListNameTaken": "Hari urutonde rufise iri zina.",
   "watchListLimit": "Ushobora kugira intonde zigera kuri {max}.",
-  "portfolioBuyBelowSold": "Nibura {quantity} – iyo migabane yamaze kugurishwa"
+  "portfolioBuyBelowSold": "Nibura {quantity} – iyo migabane yamaze kugurishwa",
+  "restoreNothing": "Nta vyo waguze imbere vyabonetse ngo bigarurwe.",
+  "manageSubscriptionElsewhere": "Ng'aha nta yandikisha ryo kugenzura. Iyandikisha waguze muri App Store canke Google Play rigenzurirwa mu vyo gutunganya vy'iduka.",
+  "backupFailed": "Ububiko bw'ingoboka ntibwashoboye kubikwa. Subira ugerageze."
 }

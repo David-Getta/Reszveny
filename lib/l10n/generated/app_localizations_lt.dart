@@ -2937,6 +2937,18 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Nerasta ankstesnių pirkinių, kuriuos būtų galima atkurti.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Čia nėra prenumeratos, kurią būtų galima tvarkyti. App Store arba Google Play įsigyta prenumerata tvarkoma parduotuvės nustatymuose.';
+
+  @override
+  String get backupFailed =>
+      'Atsarginės kopijos išsaugoti nepavyko. Bandykite dar kartą.';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

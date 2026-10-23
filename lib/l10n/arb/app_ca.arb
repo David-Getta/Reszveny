@@ -850,5 +850,8 @@
   "errRateLimited": "Massa sol·licituds en poc temps. Espera un minut i torna-ho a provar.",
   "watchListNameTaken": "Ja existeix una llista amb aquest nom.",
   "watchListLimit": "Pots tenir fins a {max} llistes.",
-  "portfolioBuyBelowSold": "Almenys {quantity} – ja se n’han venut tantes"
+  "portfolioBuyBelowSold": "Almenys {quantity} – ja se n’han venut tantes",
+  "restoreNothing": "No s’han trobat compres anteriors per restaurar.",
+  "manageSubscriptionElsewhere": "Aquí no hi ha cap subscripció per gestionar. Una subscripció comprada a l’App Store o a Google Play es gestiona a la configuració de la botiga.",
+  "backupFailed": "No s’ha pogut desar la còpia de seguretat. Torna-ho a provar."
 }

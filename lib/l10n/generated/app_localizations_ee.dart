@@ -2868,6 +2868,16 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Míekpɔ nu aɖeke si nèƒle do ŋgɔ be míagaxɔe o.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Subscription aɖeke mele afii be nàkpɔ edzi o. Subscription si nèƒle le App Store alo Google Play la, wokpɔa edzi le store la ƒe ɖoɖowo me.';
+
+  @override
+  String get backupFailed => 'Míete ŋu dzra kɔpi la ɖo o. Taflatse, gate kpɔ.';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

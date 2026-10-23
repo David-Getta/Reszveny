@@ -850,5 +850,8 @@
   "errRateLimited": "Pisi pachapi ancha achka mañakuykuna. Ama hina kaspa, huk minutota suyay, hinaspa huktawan ruway.",
   "watchListNameTaken": "Kay sutiyuq lista kanñam.",
   "watchListLimit": "{max} listakamallam kapusunkiman.",
-  "portfolioBuyBelowSold": "Aswan pisipas {quantity} – chhikan ñam rantikusqaña"
+  "portfolioBuyBelowSold": "Aswan pisipas {quantity} – chhikan ñam rantikusqaña",
+  "restoreNothing": "Manam kutichinapaq ñawpaq rantisqakuna tarikunchu.",
+  "manageSubscriptionElsewhere": "Kaypiqa manam kamachinapaq suscripción kanchu. App Store utaq Google Play nisqapi rantisqa suscripciónqa tiendapa allichayninkunapim kamachikun.",
+  "backupFailed": "Waqaychasqaqa manam waqaychakuyta atirqanchu. Ama hina kaspa, huktawan ruway."
 }

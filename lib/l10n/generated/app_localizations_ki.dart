@@ -2864,6 +2864,17 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Gũtirĩ indo iria wagũrire mbere ciaoneka cia gũcookia.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Gũkũ gũtirĩ ũiyandĩkithio wa kũrũgamĩrĩra. Ũiyandĩkithio ũrĩa wagũrire App Store kana Google Play ũrũgamagĩrĩrwo mĩtaratara-inĩ ya store.';
+
+  @override
+  String get backupFailed => 'Mbaka ndĩngĩahotire kũigwo. Geria rĩngĩ.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

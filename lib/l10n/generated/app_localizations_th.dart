@@ -2828,6 +2828,16 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'ไม่พบการซื้อก่อนหน้าที่จะกู้คืนได้';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'ไม่มีการสมัครสมาชิกให้จัดการที่นี่ การสมัครสมาชิกที่ซื้อผ่าน App Store หรือ Google Play ต้องจัดการในการตั้งค่าของสโตร์';
+
+  @override
+  String get backupFailed => 'ไม่สามารถบันทึกข้อมูลสำรองได้ โปรดลองอีกครั้ง';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

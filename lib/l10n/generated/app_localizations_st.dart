@@ -2881,6 +2881,18 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Ha ho ditheko tsa pele tse fumanweng hore di kgutliswe.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Ha ho ingodiso eo o ka e laolang mona. Ingodiso e rekilweng ho App Store kapa Google Play e laolwa ditlhophisong tsa lebenkele.';
+
+  @override
+  String get backupFailed =>
+      'Polokelo ya tshehetso ha e a kgona ho bolokwa. Ka kopo leka hape.';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

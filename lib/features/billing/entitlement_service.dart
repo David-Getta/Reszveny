@@ -127,7 +127,8 @@ class EntitlementService extends ChangeNotifier {
     if (!isTrial || _state.periodEnd == null) return 0;
     final diff = _state.periodEnd!.difference(_clock());
     if (diff.isNegative) return 0;
-    return (diff.inHours / 24).ceil();
+    // Másodpercre pontosan felfelé: az utolsó órában is 1 nap, 24 óra 30 perc 2 nap.
+    return (diff.inSeconds / Duration.secondsPerDay).ceil();
   }
 
   int get quota => _effectivePlan()?.analysesPerPeriod ?? 0;

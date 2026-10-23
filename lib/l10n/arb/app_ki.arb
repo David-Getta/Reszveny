@@ -850,5 +850,8 @@
   "errRateLimited": "Mahoya maingĩ mũno ihinda inini. Etereera ndagĩka ĩmwe ũcooke ũgerie rĩngĩ.",
   "watchListNameTaken": "Orodha ĩrĩ na rĩĩtwa rĩrĩ nĩ ĩrĩ kuo.",
   "watchListLimit": "Ũngĩkorwo na orodha nginya {max}.",
-  "portfolioBuyBelowSold": "{quantity} kana makĩria – icio nĩciendetwo"
+  "portfolioBuyBelowSold": "{quantity} kana makĩria – icio nĩciendetwo",
+  "restoreNothing": "Gũtirĩ indo iria wagũrire mbere ciaoneka cia gũcookia.",
+  "manageSubscriptionElsewhere": "Gũkũ gũtirĩ ũiyandĩkithio wa kũrũgamĩrĩra. Ũiyandĩkithio ũrĩa wagũrire App Store kana Google Play ũrũgamagĩrĩrwo mĩtaratara-inĩ ya store.",
+  "backupFailed": "Mbaka ndĩngĩahotire kũigwo. Geria rĩngĩ."
 }

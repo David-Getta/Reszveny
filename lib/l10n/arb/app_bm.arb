@@ -850,5 +850,8 @@
   "errRateLimited": "Ɲininiw ka ca waati surun kɔnɔ. Miniti kelen makɔnɔ ka a kɔrɔbɔ tugun.",
   "watchListNameTaken": "Lisi dɔ bɛ yen kaban ni nin tɔgɔ ye.",
   "watchListLimit": "I bɛ se ka lisi {max} dɔrɔn de sɔrɔ.",
-  "portfolioBuyBelowSold": "{quantity} walima ka caya – o hakɛ feerela kaban"
+  "portfolioBuyBelowSold": "{quantity} walima ka caya – o hakɛ feerela kaban",
+  "restoreNothing": "Sanni kɔrɔ si ma sɔrɔ min bɛ se ka segin.",
+  "manageSubscriptionElsewhere": "Abɔnɛman si tɛ yan ka ɲɛnabɔ. Abɔnɛman min sanna App Store walima Google Play la, o bɛ ɲɛnabɔ butiki labɛnw kɔnɔ.",
+  "backupFailed": "Kopi lamaralen ma se ka mara. A kɔrɔbɔ tugun."
 }

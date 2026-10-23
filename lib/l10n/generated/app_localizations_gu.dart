@@ -2856,6 +2856,18 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'પુનઃસ્થાપિત કરવા માટે અગાઉની કોઈ ખરીદી મળી નથી.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'અહીં મેનેજ કરવા માટે કોઈ સબ્સ્ક્રિપ્શન નથી. App Store અથવા Google Play માં ખરીદેલું સબ્સ્ક્રિપ્શન સ્ટોરના સેટિંગમાં મેનેજ થાય છે.';
+
+  @override
+  String get backupFailed =>
+      'બેકઅપ સેવ થઈ શક્યો નથી. કૃપા કરીને ફરી પ્રયાસ કરો.';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

@@ -2859,6 +2859,17 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'ਮੁੜ-ਬਹਾਲ ਕਰਨ ਲਈ ਕੋਈ ਪਿਛਲੀ ਖ਼ਰੀਦ ਨਹੀਂ ਮਿਲੀ।';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'ਇੱਥੇ ਪ੍ਰਬੰਧਨ ਲਈ ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ ਹੈ। App Store ਜਾਂ Google Play ਵਿੱਚ ਖ਼ਰੀਦੀ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਦਾ ਪ੍ਰਬੰਧਨ ਸਟੋਰ ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਹੁੰਦਾ ਹੈ।';
+
+  @override
+  String get backupFailed =>
+      'ਬੈਕਅੱਪ ਸੇਵ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

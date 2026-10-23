@@ -850,5 +850,8 @@
   "errRateLimited": "कम समय में बहुत जादा अनुरोध भेजाइल बा। कृपया एक मिनट रुकीं आ फेर से कोसिस करीं।",
   "watchListNameTaken": "एह नाम के सूची पहिले से बा।",
   "watchListLimit": "रउआ अधिकतम {max} गो सूची रख सकत बानी।",
-  "portfolioBuyBelowSold": "कम से कम {quantity} – एतना पहिलहीं बेचा चुकल बा"
+  "portfolioBuyBelowSold": "कम से कम {quantity} – एतना पहिलहीं बेचा चुकल बा",
+  "restoreNothing": "बहाल करे खातिर पहिले के कवनो खरीदारी ना मिलल।",
+  "manageSubscriptionElsewhere": "इहाँ सँभारे खातिर कवनो सदस्यता नइखे। App Store भा Google Play में खरीदल सदस्यता स्टोर के सेटिंग्स में सँभारल जाला।",
+  "backupFailed": "बैकअप सेव ना हो सकल। कृपया फेर से कोसिस करीं।"
 }

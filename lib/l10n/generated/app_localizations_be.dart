@@ -2937,6 +2937,17 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Не знойдзена ранейшых пакупак для аднаўлення.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Тут няма падпіскі для кіравання. Падпіскай, набытай у App Store або Google Play, кіруюць у наладах крамы.';
+
+  @override
+  String get backupFailed =>
+      'Не ўдалося захаваць рэзервовую копію. Паспрабуйце яшчэ раз.';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

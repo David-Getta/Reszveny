@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 import '../../core/backend/backend_client.dart';
 import '../account/account_controller.dart';
 import 'billing_service.dart';
+import 'plan.dart';
 import 'demo_billing_service.dart';
 import 'entitlement_service.dart';
 
@@ -80,7 +81,11 @@ class WebCheckoutBillingService implements BillingService {
       return;
     }
     final before = account.entitlements.state;
-    await openUrl(Uri.parse(url));
+    // Ha a böngésző nem nyílik meg, nincs mire várni (a gomb ne pörögjön tovább).
+    if (!await openUrl(Uri.parse(url))) {
+      _events.add(BillingEvent(productId: product.id, status: BillingStatus.error, platform: 'stripe'));
+      return;
+    }
     _events.add(BillingEvent(productId: product.id, status: BillingStatus.pending, platform: 'stripe'));
     _watch(product.id, before);
   }
@@ -92,6 +97,8 @@ class WebCheckoutBillingService implements BillingService {
     _poll = Timer.periodic(pollInterval, (t) async {
       if (DateTime.now().isAfter(deadline)) {
         t.cancel();
+        // Félbehagyott fizetés: a várakozás lezárul, a csomag újra választható.
+        _events.add(BillingEvent(productId: productId, status: BillingStatus.canceled, platform: 'stripe'));
         return;
       }
       try {
@@ -114,6 +121,10 @@ class WebCheckoutBillingService implements BillingService {
   @override
   Future<void> restore() async {
     final now = await backend.me();
+    // Csak ha van mit visszaállítani (fizetős csomag vagy extra elemzés): különben a
+    // vezérlő „nincs mit visszaállítani”-t mond, nem „sikeres vásárlást”.
+    final paid = now.tier != null && now.tier != PlanTier.trial;
+    if (!paid && now.extraCredits <= 0) return;
     _events.add(BillingEvent(productId: '', status: BillingStatus.restored, platform: 'stripe', entitlements: now));
   }
 

@@ -850,5 +850,8 @@
   "errRateLimited": "Arịrịọ dị ukwuu n'ime obere oge. Biko chere otu nkeji wee nwaa ọzọ.",
   "watchListNameTaken": "Ndepụta nwere aha a adịlarị.",
   "watchListLimit": "Ị nwere ike inwe ndepụta ruru {max}.",
-  "portfolioBuyBelowSold": "Opekata mpe {quantity} – e reela ọnụ ọgụgụ ahụ"
+  "portfolioBuyBelowSold": "Opekata mpe {quantity} – e reela ọnụ ọgụgụ ahụ",
+  "restoreNothing": "Ahụghị ihe ọ bụla i zụrụ na mbụ a ga-eweghachi.",
+  "manageSubscriptionElsewhere": "Enweghị ndenye aha a ga-ajikwa ebe a. Ndenye aha e zụrụ na App Store ma ọ bụ Google Play ka a na-ajikwa na ntọala ụlọ ahịa ahụ.",
+  "backupFailed": "Enweghị ike ichekwa ndabere ahụ. Biko nwaa ọzọ."
 }

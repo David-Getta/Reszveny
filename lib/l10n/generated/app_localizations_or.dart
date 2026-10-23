@@ -2857,6 +2857,18 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'ପୁନରୁଦ୍ଧାର କରିବାକୁ କୌଣସି ପୂର୍ବ କ୍ରୟ ମିଳିଲା ନାହିଁ।';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'ଏଠାରେ ପରିଚାଳନା କରିବାକୁ କୌଣସି ସବସ୍କ୍ରିପସନ ନାହିଁ। App Store କିମ୍ବା Google Playରେ କିଣାଯାଇଥିବା ସବସ୍କ୍ରିପସନ ଷ୍ଟୋର ସେଟିଂସରେ ପରିଚାଳନା କରାଯାଏ।';
+
+  @override
+  String get backupFailed =>
+      'ବ୍ୟାକଅପ୍ ସେଭ୍ ହୋଇପାରିଲା ନାହିଁ। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

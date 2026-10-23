@@ -2863,6 +2863,17 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Tiada pembelian terdahulu ditemui untuk dipulihkan.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Tiada langganan untuk diurus di sini. Langganan yang dibeli di App Store atau Google Play diurus dalam tetapan gedung.';
+
+  @override
+  String get backupFailed => 'Sandaran tidak dapat disimpan. Sila cuba lagi.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

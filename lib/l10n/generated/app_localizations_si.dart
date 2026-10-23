@@ -2858,6 +2858,18 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'ප්‍රතිසාධනය කිරීමට පෙර මිලදී ගැනීම් කිසිවක් හමු නොවීය.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'මෙහි කළමනාකරණය කිරීමට දායකත්වයක් නැත. App Store හෝ Google Play හි මිලදී ගත් දායකත්වයක් ගබඩා සැකසීම්වල කළමනාකරණය කෙරේ.';
+
+  @override
+  String get backupFailed =>
+      'උපස්ථය සුරැකිය නොහැකි විය. කරුණාකර නැවත උත්සාහ කරන්න.';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

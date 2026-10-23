@@ -2905,6 +2905,17 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Nu au fost găsite achiziții anterioare de restabilit.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Nu există niciun abonament de gestionat aici. Un abonament cumpărat din App Store sau Google Play se gestionează din setările magazinului.';
+
+  @override
+  String get backupFailed => 'Backupul nu a putut fi salvat. Încearcă din nou.';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

@@ -850,5 +850,8 @@
   "errRateLimited": "Sobra kadamo nga request sa malip-ot nga tion. Palihog hulat sang isa ka minuto kag tilawi liwat.",
   "watchListNameTaken": "May listahan na nga amo sini ang ngalan.",
   "watchListLimit": "Puwede ka makahimo sang tubtob {max} ka listahan.",
-  "portfolioBuyBelowSold": "Labing diutay {quantity} – nabaligya na ang amo sina kadamo"
+  "portfolioBuyBelowSold": "Labing diutay {quantity} – nabaligya na ang amo sina kadamo",
+  "restoreNothing": "Wala sang nakita nga nauna nga ginbakal nga mabalik.",
+  "manageSubscriptionElsewhere": "Wala sang subscription nga madumalahan diri. Ang subscription nga ginbakal sa App Store ukon Google Play ginadumalahan sa mga setting sang store.",
+  "backupFailed": "Indi ma-save ang backup. Palihog tilawi liwat."
 }

@@ -2861,6 +2861,17 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Der blev ikke fundet tidligere køb at gendanne.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Der er intet abonnement at administrere her. Et abonnement købt i App Store eller Google Play administreres i butikkens indstillinger.';
+
+  @override
+  String get backupFailed => 'Sikkerhedskopien kunne ikke gemmes. Prøv igen.';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

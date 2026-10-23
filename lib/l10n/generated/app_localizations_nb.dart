@@ -2863,6 +2863,16 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Fant ingen tidligere kjøp å gjenopprette.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Det finnes ikke noe abonnement å administrere her. Et abonnement kjøpt i App Store eller Google Play administreres i butikkens innstillinger.';
+
+  @override
+  String get backupFailed => 'Sikkerhetskopien kunne ikke lagres. Prøv igjen.';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

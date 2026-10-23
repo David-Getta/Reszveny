@@ -850,5 +850,8 @@
   "errRateLimited": "Troppe richieste in poco tempo. Attendi un minuto e riprova.",
   "watchListNameTaken": "Esiste già una lista con questo nome.",
   "watchListLimit": "Puoi avere fino a {max} liste.",
-  "portfolioBuyBelowSold": "Almeno {quantity} – tante ne sono già state vendute"
+  "portfolioBuyBelowSold": "Almeno {quantity} – tante ne sono già state vendute",
+  "restoreNothing": "Non sono stati trovati acquisti precedenti da ripristinare.",
+  "manageSubscriptionElsewhere": "Qui non c’è nessun abbonamento da gestire. Un abbonamento acquistato su App Store o Google Play si gestisce nelle impostazioni dello store.",
+  "backupFailed": "Non è stato possibile salvare il backup. Riprova."
 }

@@ -2858,6 +2858,16 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'هیچ خرید قبلی برای بازیابی پیدا نشد.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'اینجا اشتراکی برای مدیریت وجود ندارد. اشتراکی که از App Store یا Google Play خریده شده، در تنظیمات فروشگاه مدیریت می‌شود.';
+
+  @override
+  String get backupFailed => 'نسخهٔ پشتیبان ذخیره نشد. لطفاً دوباره تلاش کنید.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

@@ -2864,6 +2864,16 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Inga tidigare köp hittades att återställa.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Det finns ingen prenumeration att hantera här. En prenumeration som köpts i App Store eller Google Play hanteras i butikens inställningar.';
+
+  @override
+  String get backupFailed => 'Säkerhetskopian kunde inte sparas. Försök igen.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

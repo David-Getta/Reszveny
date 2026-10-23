@@ -2822,6 +2822,16 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'ክምለስ ዝኽእል ቅድሚ ሕጂ ዝተገበረ ዕድጊ ኣይተረኽበን።';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'ኣብዚ ዝመሓደር ምዝገባ የለን። ኣብ App Store ወይ Google Play ዝተዓደገ ምዝገባ ኣብ ቅጥዕታት መኽዘን ይመሓደር።';
+
+  @override
+  String get backupFailed => 'ምትኪእ ቅዳሕ ክዕቀብ ኣይከኣለን። በጃኹም ዳግማይ ፈትኑ።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

@@ -850,5 +850,8 @@
   "errRateLimited": "Daghan kaayong request sa mubong panahon. Palihug paghulat og usa ka minuto ug sulayi pag-usab.",
   "watchListNameTaken": "Aduna nay lista nga kini ang ngalan.",
   "watchListLimit": "Mahimo kang adunay hangtod {max} ka lista.",
-  "portfolioBuyBelowSold": "Labing gamay {quantity} – nabaligya na ang ingon niana kadaghan"
+  "portfolioBuyBelowSold": "Labing gamay {quantity} – nabaligya na ang ingon niana kadaghan",
+  "restoreNothing": "Walay nakit-ang nangaging napalit nga ma-restore.",
+  "manageSubscriptionElsewhere": "Walay subscription nga madumala dinhi. Ang subscription nga gipalit sa App Store o Google Play gidumala sa mga setting sa store.",
+  "backupFailed": "Dili ma-save ang backup. Palihug sulayi pag-usab."
 }

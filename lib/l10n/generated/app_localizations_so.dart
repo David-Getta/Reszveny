@@ -2871,6 +2871,17 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing => 'Lama helin iibsasho hore oo la soo celin karo.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Halkan ma jiro rukummo la maamuli karo. Rukummada laga iibsaday App Store ama Google Play waxaa lagu maamulaa dejinta dukaanka.';
+
+  @override
+  String get backupFailed =>
+      'Nuqulka kaydka lama kaydin karin. Fadlan isku day mar kale.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

@@ -240,6 +240,7 @@ class BackupCard extends StatelessWidget {
             title: Text(l10n.backupSave),
             subtitle: Text(l10n.backupSaveHint),
             onTap: () async {
+              final messenger = ScaffoldMessenger.of(context);
               final now = DateTime.now();
               final text = const JsonEncoder.withIndent(' ').convert(Backup.data(services, now: now));
               try {
@@ -247,6 +248,8 @@ class BackupCard extends StatelessWidget {
                 services.telemetry.track('backup_saved');
               } catch (e) {
                 debugPrint('Mentés nem sikerült: $e');
+                // A felhasználó tudja meg, hogy a fájl nem készült el.
+                messenger.showSnackBar(SnackBar(content: Text(l10n.backupFailed)));
               }
             },
           ),

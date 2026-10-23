@@ -2908,6 +2908,18 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'Netika atrasti iepriekšēji pirkumi, ko atjaunot.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'Šeit nav abonementa, ko pārvaldīt. App Store vai Google Play iegādāts abonements tiek pārvaldīts veikala iestatījumos.';
+
+  @override
+  String get backupFailed =>
+      'Dublējumu neizdevās saglabāt. Lūdzu, mēģiniet vēlreiz.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

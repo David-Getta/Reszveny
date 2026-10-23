@@ -850,5 +850,8 @@
   "errRateLimited": "Kosg wʋsg wakat bilf pʋgẽ. Gũ minit a yembre la f le mak.",
   "watchListNameTaken": "Liste sẽn tar yʋʋr-kãngã beeme.",
   "watchListLimit": "Fo pa tõe n tara listɛ n yɩɩg {max} ye.",
-  "portfolioBuyBelowSold": "{quantity} bɩ sẽn yɩɩd rẽ – b koosa sõor kãng pĩnda"
+  "portfolioBuyBelowSold": "{quantity} bɩ sẽn yɩɩd rẽ – b koosa sõor kãng pĩnda",
+  "restoreNothing": "B pa yã raab sẽn deng n na n lebs ye.",
+  "manageSubscriptionElsewhere": "Abonmã ka be ka n na n get a yell ye. Abonmã sẽn da App Store bɩ Google Play pʋgẽ, b getda a yell raagã seglgã pʋgẽ.",
+  "backupFailed": "B pa tõog n bilg sẽn bʋʋd n bilgã ye. Le mak."
 }

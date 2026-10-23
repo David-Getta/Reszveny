@@ -2853,6 +2853,17 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get restoreNothing =>
+      'د بیا راګرځولو لپاره پخواني پېرودونه ونه موندل شول.';
+
+  @override
+  String get manageSubscriptionElsewhere =>
+      'دلته د ادارې لپاره هېڅ ګډون نشته. هغه ګډون چې له App Store یا Google Play څخه اخیستل شوی وي، د سټور په تنظیماتو کې اداره کېږي.';
+
+  @override
+  String get backupFailed => 'بیک اپ خوندي نه شو. مهرباني وکړئ بیا هڅه وکړئ.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override
