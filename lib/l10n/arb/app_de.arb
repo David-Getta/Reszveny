@@ -819,5 +819,9 @@
   "lotNoteAdd": "Notiz hinzufügen",
   "lotNoteBuyHint": "Warum kaufst du? Kommt mit Datum in die Notizen zur Aktie.",
   "lotNoteSellHint": "Warum verkaufst du? Kommt mit Datum in die Notizen zur Aktie.",
-  "lotNoteBought": "Gekauft"
+  "lotNoteBought": "Gekauft",
+  "positionHeld": "Haltedauer",
+  "durationMonths": "{months, plural, one{{months} Monat} other{{months} Monate}}",
+  "durationDays": "{days, plural, one{{days} Tag} other{{days} Tage}}",
+  "positionHeldSince": "seit {date}"
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Tambihkeun catetan",
   "lotNoteBuyHint": "Naha anjeun mésér? Bakal lebet kana catetan saham, sareng tanggalna.",
   "lotNoteSellHint": "Naha anjeun ngajual? Bakal lebet kana catetan saham, sareng tanggalna.",
-  "lotNoteBought": "Dibeuli"
+  "lotNoteBought": "Dibeuli",
+  "positionHeld": "Lilana dicekel",
+  "durationMonths": "{months, plural, other{{months} bulan}}",
+  "durationDays": "{days, plural, other{{days} poé}}",
+  "positionHeldSince": "ti saprak {date}"
 }

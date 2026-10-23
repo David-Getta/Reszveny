@@ -819,5 +819,9 @@
   "lotNoteAdd": "ເພີ່ມບັນທຶກ",
   "lotNoteBuyHint": "ເປັນຫຍັງທ່ານຈຶ່ງຊື້? ມັນຈະຖືກເພີ່ມໃສ່ບັນທຶກຂອງຮຸ້ນ ພ້ອມວັນທີ.",
   "lotNoteSellHint": "ເປັນຫຍັງທ່ານຈຶ່ງຂາຍ? ມັນຈະຖືກເພີ່ມໃສ່ບັນທຶກຂອງຮຸ້ນ ພ້ອມວັນທີ.",
-  "lotNoteBought": "ຊື້ແລ້ວ"
+  "lotNoteBought": "ຊື້ແລ້ວ",
+  "positionHeld": "ໄລຍະຖືຄອງ",
+  "durationMonths": "{months, plural, other{{months} ເດືອນ}}",
+  "durationDays": "{days, plural, other{{days} ມື້}}",
+  "positionHeldSince": "ນັບແຕ່ {date}"
 }

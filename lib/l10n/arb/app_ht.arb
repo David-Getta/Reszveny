@@ -819,5 +819,9 @@
   "lotNoteAdd": "Ajoute yon nòt",
   "lotNoteBuyHint": "Poukisa w ap achte? L ap ale nan nòt aksyon an, ak dat la.",
   "lotNoteSellHint": "Poukisa w ap vann? L ap ale nan nòt aksyon an, ak dat la.",
-  "lotNoteBought": "Achte"
+  "lotNoteBought": "Achte",
+  "positionHeld": "Tan ou kenbe l",
+  "durationMonths": "{months, plural, one{{months} mwa} other{{months} mwa}}",
+  "durationDays": "{days, plural, one{{days} jou} other{{days} jou}}",
+  "positionHeldSince": "depi {date}"
 }

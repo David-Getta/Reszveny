@@ -2712,6 +2712,36 @@ class AppLocalizationsFa extends AppLocalizations {
   String get lotNoteBought => 'خرید';
 
   @override
+  String get positionHeld => 'مدت نگهداری';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ماه',
+      one: '$months ماه',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days روز',
+      one: '$days روز',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'از $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

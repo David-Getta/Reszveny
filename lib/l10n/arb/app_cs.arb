@@ -819,5 +819,9 @@
   "lotNoteAdd": "Přidat poznámku",
   "lotNoteBuyHint": "Proč kupujete? Uloží se do poznámek k akcii i s datem.",
   "lotNoteSellHint": "Proč prodáváte? Uloží se do poznámek k akcii i s datem.",
-  "lotNoteBought": "Koupeno"
+  "lotNoteBought": "Koupeno",
+  "positionHeld": "Doba držení",
+  "durationMonths": "{months, plural, one{{months} měsíc} few{{months} měsíce} many{{months} měsíce} other{{months} měsíců}}",
+  "durationDays": "{days, plural, one{{days} den} few{{days} dny} many{{days} dne} other{{days} dní}}",
+  "positionHeldSince": "od {date}"
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Tambahkan catatan",
   "lotNoteBuyHint": "Mengapa Anda membeli? Akan ditambahkan ke catatan saham, beserta tanggalnya.",
   "lotNoteSellHint": "Mengapa Anda menjual? Akan ditambahkan ke catatan saham, beserta tanggalnya.",
-  "lotNoteBought": "Dibeli"
+  "lotNoteBought": "Dibeli",
+  "positionHeld": "Lama kepemilikan",
+  "durationMonths": "{months, plural, other{{months} bulan}}",
+  "durationDays": "{days, plural, other{{days} hari}}",
+  "positionHeldSince": "sejak {date}"
 }

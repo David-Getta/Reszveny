@@ -819,5 +819,9 @@
   "lotNoteAdd": "గమనికను జోడించండి",
   "lotNoteBuyHint": "ఎందుకు కొంటున్నారు? ఇది తేదీతో పాటు స్టాక్ గమనికలలో చేరుతుంది.",
   "lotNoteSellHint": "ఎందుకు అమ్ముతున్నారు? ఇది తేదీతో పాటు స్టాక్ గమనికలలో చేరుతుంది.",
-  "lotNoteBought": "కొన్నారు"
+  "lotNoteBought": "కొన్నారు",
+  "positionHeld": "కలిగి ఉన్న వ్యవధి",
+  "durationMonths": "{months, plural, one{{months} నెల} other{{months} నెలలు}}",
+  "durationDays": "{days, plural, one{{days} రోజు} other{{days} రోజులు}}",
+  "positionHeldSince": "{date} నుండి"
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Yokk benn notu",
   "lotNoteBuyHint": "Lu tax ngay jënd? Dina dugg ci notu aksiyoŋ bi, ak bés bi.",
   "lotNoteSellHint": "Lu tax ngay jaay? Dina dugg ci notu aksiyoŋ bi, ak bés bi.",
-  "lotNoteBought": "Jënde"
+  "lotNoteBought": "Jënde",
+  "positionHeld": "Diir bi nga ko denc",
+  "durationMonths": "{months, plural, other{{months} weer}}",
+  "durationDays": "{days, plural, other{{days} fan}}",
+  "positionHeldSince": "li dale {date}"
 }

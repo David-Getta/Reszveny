@@ -2719,6 +2719,36 @@ class AppLocalizationsUg extends AppLocalizations {
   String get lotNoteBought => 'سېتىۋېلىندى';
 
   @override
+  String get positionHeld => 'ساقلاش مۇددىتى';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ئاي',
+      one: '$months ئاي',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days كۈن',
+      one: '$days كۈن',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date دىن بۇيان';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

@@ -819,5 +819,9 @@
   "lotNoteAdd": "הוספת הערה",
   "lotNoteBuyHint": "למה קונים? זה יירשם בהערות של המניה, עם התאריך.",
   "lotNoteSellHint": "למה מוכרים? זה יירשם בהערות של המניה, עם התאריך.",
-  "lotNoteBought": "נקנו"
+  "lotNoteBought": "נקנו",
+  "positionHeld": "תקופת החזקה",
+  "durationMonths": "{months, plural, one{חודש אחד} two{חודשיים} other{{months} חודשים}}",
+  "durationDays": "{days, plural, one{יום אחד} two{יומיים} other{{days} ימים}}",
+  "positionHeldSince": "מאז {date}"
 }

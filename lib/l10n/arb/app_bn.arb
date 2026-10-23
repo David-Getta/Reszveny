@@ -819,5 +819,9 @@
   "lotNoteAdd": "নোট যোগ করুন",
   "lotNoteBuyHint": "কেন কিনছেন? এটি তারিখসহ শেয়ারটির নোটে যোগ হবে।",
   "lotNoteSellHint": "কেন বিক্রি করছেন? এটি তারিখসহ শেয়ারটির নোটে যোগ হবে।",
-  "lotNoteBought": "কেনা"
+  "lotNoteBought": "কেনা",
+  "positionHeld": "ধরে রাখার সময়কাল",
+  "durationMonths": "{months, plural, one{{months} মাস} other{{months} মাস}}",
+  "durationDays": "{days, plural, one{{days} দিন} other{{days} দিন}}",
+  "positionHeldSince": "{date} থেকে"
 }

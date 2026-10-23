@@ -819,5 +819,9 @@
   "lotNoteAdd": "메모 추가",
   "lotNoteBuyHint": "왜 매수하나요? 날짜와 함께 종목 메모에 추가됩니다.",
   "lotNoteSellHint": "왜 매도하나요? 날짜와 함께 종목 메모에 추가됩니다.",
-  "lotNoteBought": "매수"
+  "lotNoteBought": "매수",
+  "positionHeld": "보유 기간",
+  "durationMonths": "{months, plural, other{{months}개월}}",
+  "durationDays": "{days, plural, other{{days}일}}",
+  "positionHeldSince": "{date}부터"
 }

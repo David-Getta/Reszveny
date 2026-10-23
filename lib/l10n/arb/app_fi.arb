@@ -819,5 +819,9 @@
   "lotNoteAdd": "Lisää muistiinpano",
   "lotNoteBuyHint": "Miksi ostat? Tallentuu osakkeen muistiinpanoihin päivämäärän kanssa.",
   "lotNoteSellHint": "Miksi myyt? Tallentuu osakkeen muistiinpanoihin päivämäärän kanssa.",
-  "lotNoteBought": "Ostettu"
+  "lotNoteBought": "Ostettu",
+  "positionHeld": "Omistusaika",
+  "durationMonths": "{months, plural, one{{months} kuukausi} other{{months} kuukautta}}",
+  "durationDays": "{days, plural, one{{days} päivä} other{{days} päivää}}",
+  "positionHeldSince": "{date} alkaen"
 }

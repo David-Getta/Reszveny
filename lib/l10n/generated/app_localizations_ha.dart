@@ -2723,6 +2723,36 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lotNoteBought => 'An saya';
 
   @override
+  String get positionHeld => 'Lokacin riƙewa';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'watanni $months',
+      one: 'wata $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'kwanaki $days',
+      one: 'kwana $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'tun $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

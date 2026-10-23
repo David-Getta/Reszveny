@@ -2718,6 +2718,36 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lotNoteBought => 'Umenunua';
 
   @override
+  String get positionHeld => 'Muda wa umiliki';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'miezi $months',
+      one: 'mwezi $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'siku $days',
+      one: 'siku $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'tangu $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

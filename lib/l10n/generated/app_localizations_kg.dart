@@ -2726,6 +2726,36 @@ class AppLocalizationsKg extends AppLocalizations {
   String get lotNoteBought => 'Me sumbama';
 
   @override
+  String get positionHeld => 'Ntangu ya kusimba';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'ngonda $months',
+      one: 'ngonda $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'bilumbu $days',
+      one: 'kilumbu $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'banda $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

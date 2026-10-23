@@ -819,5 +819,9 @@
   "lotNoteAdd": "Oketsa ntlha",
   "lotNoteBuyHint": "Goreng o reka? E tla tsena mo dintlheng tsa shere, mmogo le letlha.",
   "lotNoteSellHint": "Goreng o rekisa? E tla tsena mo dintlheng tsa shere, mmogo le letlha.",
-  "lotNoteBought": "E rekilwe"
+  "lotNoteBought": "E rekilwe",
+  "positionHeld": "Nako e o e tshwereng",
+  "durationMonths": "{months, plural, one{kgwedi e le {months}} other{dikgwedi di le {months}}}",
+  "durationDays": "{days, plural, one{letsatsi le le {days}} other{malatsi a le {days}}}",
+  "positionHeldSince": "go tloga ka {date}"
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "نوٽ شامل ڪريو",
   "lotNoteBuyHint": "توهان ڇو خريد ڪري رهيا آهيو؟ اهو تاريخ سان گڏ شيئر جي نوٽس ۾ شامل ٿيندو.",
   "lotNoteSellHint": "توهان ڇو وڪڻي رهيا آهيو؟ اهو تاريخ سان گڏ شيئر جي نوٽس ۾ شامل ٿيندو.",
-  "lotNoteBought": "خريد ٿيو"
+  "lotNoteBought": "خريد ٿيو",
+  "positionHeld": "رکڻ جو عرصو",
+  "durationMonths": "{months, plural, one{{months} مهينو} other{{months} مهينا}}",
+  "durationDays": "{days, plural, one{{days} ڏينهن} other{{days} ڏينهن}}",
+  "positionHeldSince": "{date} کان"
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "കുറിപ്പ് ചേർക്കുക",
   "lotNoteBuyHint": "എന്തിനാണ് വാങ്ങുന്നത്? തീയതിയോടൊപ്പം ഇത് ഓഹരിയുടെ കുറിപ്പുകളിൽ ചേർക്കും.",
   "lotNoteSellHint": "എന്തിനാണ് വിൽക്കുന്നത്? തീയതിയോടൊപ്പം ഇത് ഓഹരിയുടെ കുറിപ്പുകളിൽ ചേർക്കും.",
-  "lotNoteBought": "വാങ്ങി"
+  "lotNoteBought": "വാങ്ങി",
+  "positionHeld": "കൈവശം വെച്ച കാലയളവ്",
+  "durationMonths": "{months, plural, one{{months} മാസം} other{{months} മാസം}}",
+  "durationDays": "{days, plural, one{{days} ദിവസം} other{{days} ദിവസം}}",
+  "positionHeldSince": "{date} മുതൽ"
 }

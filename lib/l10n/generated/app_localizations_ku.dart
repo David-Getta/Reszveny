@@ -2719,6 +2719,36 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lotNoteBought => 'Hate kirîn';
 
   @override
+  String get positionHeld => 'Dema xwedîkirinê';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months meh',
+      one: '$months meh',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days roj',
+      one: '$days roj',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'ji $date ve';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

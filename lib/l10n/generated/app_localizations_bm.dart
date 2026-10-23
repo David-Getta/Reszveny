@@ -2714,6 +2714,34 @@ class AppLocalizationsBm extends AppLocalizations {
   String get lotNoteBought => 'Sannen';
 
   @override
+  String get positionHeld => 'Marali waati';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'kalo $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'tile $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'kabini $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

@@ -819,5 +819,9 @@
   "lotNoteAdd": "یادښت اضافه کړئ",
   "lotNoteBuyHint": "ولې یې اخلئ؟ د نېټې سره د ونډې یادښتونو ته ورزیاتېږي.",
   "lotNoteSellHint": "ولې یې پلورئ؟ د نېټې سره د ونډې یادښتونو ته ورزیاتېږي.",
-  "lotNoteBought": "وپېرل شو"
+  "lotNoteBought": "وپېرل شو",
+  "positionHeld": "د ساتلو موده",
+  "durationMonths": "{months, plural, one{{months} میاشت} other{{months} میاشتې}}",
+  "durationDays": "{days, plural, one{{days} ورځ} other{{days} ورځې}}",
+  "positionHeldSince": "له {date} راهیسې"
 }

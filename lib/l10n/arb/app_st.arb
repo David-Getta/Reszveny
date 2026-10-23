@@ -819,5 +819,9 @@
   "lotNoteAdd": "Eketsa ntlha",
   "lotNoteBuyHint": "Hobaneng o reka? E tla kena dintlheng tsa shere, hammoho le letsatsi.",
   "lotNoteSellHint": "Hobaneng o rekisa? E tla kena dintlheng tsa shere, hammoho le letsatsi.",
-  "lotNoteBought": "E rekilwe"
+  "lotNoteBought": "E rekilwe",
+  "positionHeld": "Nako eo o e tshwereng",
+  "durationMonths": "{months, plural, one{kgwedi e {months}} other{dikgwedi tse {months}}}",
+  "durationDays": "{days, plural, one{letsatsi le {days}} other{matsatsi a {days}}}",
+  "positionHeldSince": "ho tloha ka {date}"
 }

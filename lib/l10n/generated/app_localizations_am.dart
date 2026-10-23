@@ -2680,6 +2680,36 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lotNoteBought => 'ተገዝቷል';
 
   @override
+  String get positionHeld => 'የተያዘበት ጊዜ';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ወራት',
+      one: '$months ወር',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ቀናት',
+      one: '$days ቀን',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'ከ$date ጀምሮ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

@@ -2724,6 +2724,36 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lotNoteBought => 'Nabili';
 
   @override
+  String get positionHeld => 'Tagal ng paghawak';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months buwan',
+      one: '$months buwan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days araw',
+      one: '$days araw',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'mula noong $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

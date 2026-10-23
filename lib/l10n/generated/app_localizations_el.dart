@@ -2727,6 +2727,36 @@ class AppLocalizationsEl extends AppLocalizations {
   String get lotNoteBought => 'Αγοράστηκαν';
 
   @override
+  String get positionHeld => 'Διάρκεια διακράτησης';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months μήνες',
+      one: '$months μήνας',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ημέρες',
+      one: '$days ημέρα',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'από $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

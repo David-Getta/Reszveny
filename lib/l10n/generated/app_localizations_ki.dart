@@ -2717,6 +2717,36 @@ class AppLocalizationsKi extends AppLocalizations {
   String get lotNoteBought => 'Yagũrwo';
 
   @override
+  String get positionHeld => 'Ihinda rĩa kũnyiita';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'mĩeri $months',
+      one: 'mweri $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'mĩthenya $days',
+      one: 'mũthenya $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'kuuma $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

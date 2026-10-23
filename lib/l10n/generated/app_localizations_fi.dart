@@ -2717,6 +2717,36 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lotNoteBought => 'Ostettu';
 
   @override
+  String get positionHeld => 'Omistusaika';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months kuukautta',
+      one: '$months kuukausi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days päivää',
+      one: '$days päivä',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date alkaen';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

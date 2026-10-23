@@ -819,5 +819,9 @@
   "lotNoteAdd": "Not ekle",
   "lotNoteBuyHint": "Neden alıyorsunuz? Tarihiyle birlikte hissenin notlarına eklenir.",
   "lotNoteSellHint": "Neden satıyorsunuz? Tarihiyle birlikte hissenin notlarına eklenir.",
-  "lotNoteBought": "Alış"
+  "lotNoteBought": "Alış",
+  "positionHeld": "Elde tutma süresi",
+  "durationMonths": "{months, plural, one{{months} ay} other{{months} ay}}",
+  "durationDays": "{days, plural, one{{days} gün} other{{days} gün}}",
+  "positionHeldSince": "{date} tarihinden beri"
 }

@@ -2762,6 +2762,38 @@ class AppLocalizationsHr extends AppLocalizations {
   String get lotNoteBought => 'Kupljeno';
 
   @override
+  String get positionHeld => 'Razdoblje držanja';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months mjeseci',
+      few: '$months mjeseca',
+      one: '$months mjesec',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dana',
+      few: '$days dana',
+      one: '$days dan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'od $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

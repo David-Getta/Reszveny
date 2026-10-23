@@ -819,5 +819,9 @@
   "lotNoteAdd": "မှတ်စု ထည့်ရန်",
   "lotNoteBuyHint": "ဘာကြောင့် ဝယ်တာလဲ။ ရက်စွဲနှင့်အတူ ရှယ်ယာ၏ မှတ်စုများထဲသို့ ထည့်သွင်းပါမည်။",
   "lotNoteSellHint": "ဘာကြောင့် ရောင်းတာလဲ။ ရက်စွဲနှင့်အတူ ရှယ်ယာ၏ မှတ်စုများထဲသို့ ထည့်သွင်းပါမည်။",
-  "lotNoteBought": "ဝယ်ပြီး"
+  "lotNoteBought": "ဝယ်ပြီး",
+  "positionHeld": "ကိုင်ဆောင်ထားသည့်ကာလ",
+  "durationMonths": "{months, plural, other{{months} လ}}",
+  "durationDays": "{days, plural, other{{days} ရက်}}",
+  "positionHeldSince": "{date} မှစ၍"
 }

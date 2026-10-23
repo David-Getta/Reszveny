@@ -2726,6 +2726,36 @@ class AppLocalizationsNy extends AppLocalizations {
   String get lotNoteBought => 'Zagulidwa';
 
   @override
+  String get positionHeld => 'Nthawi yosunga';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'miyezi $months',
+      one: 'mwezi $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'masiku $days',
+      one: 'tsiku $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'kuyambira $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

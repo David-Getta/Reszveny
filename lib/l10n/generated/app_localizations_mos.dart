@@ -2701,6 +2701,36 @@ class AppLocalizationsMos extends AppLocalizations {
   String get lotNoteBought => 'B raa';
 
   @override
+  String get positionHeld => 'Wakat ning f sẽn tall-a';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'kiuud $months',
+      one: 'kiuug a yembre',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'rasem $days',
+      one: 'daar a yembre',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'sẽn sɩng $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

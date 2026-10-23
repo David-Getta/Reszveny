@@ -2718,6 +2718,36 @@ class AppLocalizationsTk extends AppLocalizations {
   String get lotNoteBought => 'Satyn alyndy';
 
   @override
+  String get positionHeld => 'Saklama möhleti';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months aý',
+      one: '$months aý',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days gün',
+      one: '$days gün',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date senesinden bäri';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

@@ -2713,6 +2713,36 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lotNoteBought => 'මිලදී ගන්නා ලදී';
 
   @override
+  String get positionHeld => 'රඳවා ගත් කාලය';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'මාස $months',
+      one: 'මාස $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'දින $days',
+      one: 'දින $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date සිට';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

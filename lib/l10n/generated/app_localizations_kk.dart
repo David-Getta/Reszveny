@@ -2715,6 +2715,36 @@ class AppLocalizationsKk extends AppLocalizations {
   String get lotNoteBought => 'Сатып алынды';
 
   @override
+  String get positionHeld => 'Ұстау мерзімі';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ай',
+      one: '$months ай',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days күн',
+      one: '$days күн',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date бастап';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

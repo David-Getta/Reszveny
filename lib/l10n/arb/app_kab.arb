@@ -819,5 +819,9 @@
   "lotNoteAdd": "Rnu tazmilt",
   "lotNoteBuyHint": "Acimi i tettaɣeḍ? Ad tettwarnu ɣer tezmilin n uksyun, s uzemz.",
   "lotNoteSellHint": "Acimi i tettzenzeḍ? Ad tettwarnu ɣer tezmilin n uksyun, s uzemz.",
-  "lotNoteBought": "Yettwaɣ"
+  "lotNoteBought": "Yettwaɣ",
+  "positionHeld": "Akud n uṭṭaf",
+  "durationMonths": "{months, plural, one{{months} n wayyur} other{{months} n wayyuren}}",
+  "durationDays": "{days, plural, one{{days} n wass} other{{days} n wussan}}",
+  "positionHeldSince": "seg {date}"
 }

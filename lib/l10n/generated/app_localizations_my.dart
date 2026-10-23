@@ -2708,6 +2708,34 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lotNoteBought => 'ဝယ်ပြီး';
 
   @override
+  String get positionHeld => 'ကိုင်ဆောင်ထားသည့်ကာလ';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months လ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ရက်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date မှစ၍';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

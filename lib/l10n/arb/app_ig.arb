@@ -819,5 +819,9 @@
   "lotNoteAdd": "Tinye ndetu",
   "lotNoteBuyHint": "Gịnị mere ị na-azụ ya? Ọ ga-abanye na ndetu stock a, ya na ụbọchị.",
   "lotNoteSellHint": "Gịnị mere ị na-ere ya? Ọ ga-abanye na ndetu stock a, ya na ụbọchị.",
-  "lotNoteBought": "E zụrụ"
+  "lotNoteBought": "E zụrụ",
+  "positionHeld": "Oge i jidere ya",
+  "durationMonths": "{months, plural, other{ọnwa {months}}}",
+  "durationDays": "{days, plural, other{ụbọchị {days}}}",
+  "positionHeldSince": "kemgbe {date}"
 }

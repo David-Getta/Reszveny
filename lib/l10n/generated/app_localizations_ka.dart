@@ -2716,6 +2716,36 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lotNoteBought => 'შეძენილია';
 
   @override
+  String get positionHeld => 'ფლობის ვადა';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months თვე',
+      one: '$months თვე',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days დღე',
+      one: '$days დღე',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date-დან';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

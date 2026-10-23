@@ -819,5 +819,9 @@
   "lotNoteAdd": "Add note",
   "lotNoteBuyHint": "Why you dey buy? E go enter di stock notes, with di date.",
   "lotNoteSellHint": "Why you dey sell? E go enter di stock notes, with di date.",
-  "lotNoteBought": "Bought"
+  "lotNoteBought": "Bought",
+  "positionHeld": "You don hold am for",
+  "durationMonths": "{months, plural, one{{months} month} other{{months} months}}",
+  "durationDays": "{days, plural, one{{days} day} other{{days} days}}",
+  "positionHeldSince": "since {date}"
 }

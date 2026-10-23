@@ -819,5 +819,9 @@
   "lotNoteAdd": "تێبینییەک زیاد بکە",
   "lotNoteBuyHint": "بۆچی دەیکڕیت؟ لەگەڵ بەروارەکە دەچێتە ناو تێبینییەکانی پشکەکە.",
   "lotNoteSellHint": "بۆچی دەیفرۆشیت؟ لەگەڵ بەروارەکە دەچێتە ناو تێبینییەکانی پشکەکە.",
-  "lotNoteBought": "کڕدرا"
+  "lotNoteBought": "کڕدرا",
+  "positionHeld": "ماوەی هەڵگرتن",
+  "durationMonths": "{months, plural, one{{months} مانگ} other{{months} مانگ}}",
+  "durationDays": "{days, plural, one{{days} ڕۆژ} other{{days} ڕۆژ}}",
+  "positionHeldSince": "لە {date}ەوە"
 }

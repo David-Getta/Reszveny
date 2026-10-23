@@ -819,5 +819,9 @@
   "lotNoteAdd": "Paas gʋlsgo",
   "lotNoteBuyHint": "Bõe yĩng tɩ f raada? A na n kẽe aksiõ gʋlsgã pʋgẽ ne a daarã.",
   "lotNoteSellHint": "Bõe yĩng tɩ f koosda? A na n kẽe aksiõ gʋlsgã pʋgẽ ne a daarã.",
-  "lotNoteBought": "B raa"
+  "lotNoteBought": "B raa",
+  "positionHeld": "Wakat ning f sẽn tall-a",
+  "durationMonths": "{months, plural, one{kiuug a yembre} other{kiuud {months}}}",
+  "durationDays": "{days, plural, one{daar a yembre} other{rasem {days}}}",
+  "positionHeldSince": "sẽn sɩng {date}"
 }

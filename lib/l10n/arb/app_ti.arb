@@ -819,5 +819,9 @@
   "lotNoteAdd": "ማስታወሻ ወስኽ",
   "lotNoteBuyHint": "ስለምንታይ ትገዝኡ ኣለኹም? ምስ ዕለቱ ናብ ማስታወሻታት እቲ ኣክሲዮን ይኣቱ።",
   "lotNoteSellHint": "ስለምንታይ ትሸጡ ኣለኹም? ምስ ዕለቱ ናብ ማስታወሻታት እቲ ኣክሲዮን ይኣቱ።",
-  "lotNoteBought": "ተዓዲጉ"
+  "lotNoteBought": "ተዓዲጉ",
+  "positionHeld": "ዝተታሕዘሉ ግዜ",
+  "durationMonths": "{months, plural, one{{months} ወርሒ} other{{months} ኣዋርሕ}}",
+  "durationDays": "{days, plural, one{{days} መዓልቲ} other{{days} መዓልታት}}",
+  "positionHeldSince": "ካብ {date} ጀሚሩ"
 }

@@ -2758,6 +2758,38 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lotNoteBought => 'Nopirkts';
 
   @override
+  String get positionHeld => 'Turēšanas periods';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months mēneši',
+      one: '$months mēnesis',
+      zero: '$months mēneši',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dienas',
+      one: '$days diena',
+      zero: '$days dienas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'kopš $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

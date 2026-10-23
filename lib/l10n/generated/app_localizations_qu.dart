@@ -2730,6 +2730,36 @@ class AppLocalizationsQu extends AppLocalizations {
   String get lotNoteBought => 'Rantisqa';
 
   @override
+  String get positionHeld => 'Hap\'isqa pacha';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months killa',
+      one: '$months killa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days p\'unchaw',
+      one: '$days p\'unchaw',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '${date}manta pacha';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

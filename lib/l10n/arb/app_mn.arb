@@ -819,5 +819,9 @@
   "lotNoteAdd": "Тэмдэглэл нэмэх",
   "lotNoteBuyHint": "Яагаад худалдаж авч байна вэ? Огноотойгоо хамт хувьцааны тэмдэглэлд нэмэгдэнэ.",
   "lotNoteSellHint": "Яагаад зарж байна вэ? Огноотойгоо хамт хувьцааны тэмдэглэлд нэмэгдэнэ.",
-  "lotNoteBought": "Авсан"
+  "lotNoteBought": "Авсан",
+  "positionHeld": "Эзэмшсэн хугацаа",
+  "durationMonths": "{months, plural, one{{months} сар} other{{months} сар}}",
+  "durationDays": "{days, plural, one{{days} өдөр} other{{days} өдөр}}",
+  "positionHeldSince": "{date} өдрөөс хойш"
 }

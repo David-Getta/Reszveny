@@ -819,5 +819,9 @@
   "lotNoteAdd": "Yongerako ekiwandiiko",
   "lotNoteBuyHint": "Lwaki ogula? Kijja kuyingira mu biwandiiko by'omugabo, n'olunaku.",
   "lotNoteSellHint": "Lwaki otunda? Kijja kuyingira mu biwandiiko by'omugabo, n'olunaku.",
-  "lotNoteBought": "Wagula"
+  "lotNoteBought": "Wagula",
+  "positionHeld": "Ebbanga ly'okukwata",
+  "durationMonths": "{months, plural, one{omwezi {months}} other{emyezi {months}}}",
+  "durationDays": "{days, plural, one{olunaku {days}} other{ennaku {days}}}",
+  "positionHeldSince": "okuva ku {date}"
 }

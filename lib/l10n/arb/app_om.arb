@@ -819,5 +819,9 @@
   "lotNoteAdd": "Yaadannoo dabali",
   "lotNoteBuyHint": "Maaliif bitta? Guyyaa wajjin yaadannoo aksiyoonaa keessatti galmaa'a.",
   "lotNoteSellHint": "Maaliif gurgurta? Guyyaa wajjin yaadannoo aksiyoonaa keessatti galmaa'a.",
-  "lotNoteBought": "Bitame"
+  "lotNoteBought": "Bitame",
+  "positionHeld": "Yeroo qabannaa",
+  "durationMonths": "{months, plural, one{ji'a {months}} other{ji'a {months}}}",
+  "durationDays": "{days, plural, one{guyyaa {days}} other{guyyaa {days}}}",
+  "positionHeldSince": "{date} irraa kaasee"
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Notitie toevoegen",
   "lotNoteBuyHint": "Waarom koop je? Dit komt met de datum in de notities bij het aandeel.",
   "lotNoteSellHint": "Waarom verkoop je? Dit komt met de datum in de notities bij het aandeel.",
-  "lotNoteBought": "Gekocht"
+  "lotNoteBought": "Gekocht",
+  "positionHeld": "Aanhoudperiode",
+  "durationMonths": "{months, plural, one{{months} maand} other{{months} maanden}}",
+  "durationDays": "{days, plural, one{{days} dag} other{{days} dagen}}",
+  "positionHeldSince": "sinds {date}"
 }

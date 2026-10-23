@@ -819,5 +819,9 @@
   "lotNoteAdd": "සටහනක් එක් කරන්න",
   "lotNoteBuyHint": "ඔබ මිලදී ගන්නේ ඇයි? එය දිනය සමඟ කොටසේ සටහන්වලට එක් වේ.",
   "lotNoteSellHint": "ඔබ විකුණන්නේ ඇයි? එය දිනය සමඟ කොටසේ සටහන්වලට එක් වේ.",
-  "lotNoteBought": "මිලදී ගන්නා ලදී"
+  "lotNoteBought": "මිලදී ගන්නා ලදී",
+  "positionHeld": "රඳවා ගත් කාලය",
+  "durationMonths": "{months, plural, one{මාස {months}} other{මාස {months}}}",
+  "durationDays": "{days, plural, one{දින {days}} other{දින {days}}}",
+  "positionHeldSince": "{date} සිට"
 }

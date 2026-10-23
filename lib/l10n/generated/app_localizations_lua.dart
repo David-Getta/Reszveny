@@ -2727,6 +2727,36 @@ class AppLocalizationsLua extends AppLocalizations {
   String get lotNoteBought => 'Musumba';
 
   @override
+  String get positionHeld => 'Tshikondo tshia kulama';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'ngondo $months',
+      one: 'ngondo $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'matuku $days',
+      one: 'dituku $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'kubangila ku $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

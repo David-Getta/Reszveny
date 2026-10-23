@@ -819,5 +819,9 @@
   "lotNoteAdd": "Προσθήκη σημείωσης",
   "lotNoteBuyHint": "Γιατί αγοράζετε; Καταχωρίζεται στις σημειώσεις της μετοχής με την ημερομηνία.",
   "lotNoteSellHint": "Γιατί πουλάτε; Καταχωρίζεται στις σημειώσεις της μετοχής με την ημερομηνία.",
-  "lotNoteBought": "Αγοράστηκαν"
+  "lotNoteBought": "Αγοράστηκαν",
+  "positionHeld": "Διάρκεια διακράτησης",
+  "durationMonths": "{months, plural, one{{months} μήνας} other{{months} μήνες}}",
+  "durationDays": "{days, plural, one{{days} ημέρα} other{{days} ημέρες}}",
+  "positionHeldSince": "από {date}"
 }

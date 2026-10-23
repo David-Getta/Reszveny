@@ -819,5 +819,9 @@
   "lotNoteAdd": "Ongerera ĩandĩko",
   "lotNoteBuyHint": "Nĩ kĩ gĩgũtũma ũgũre? Rĩkũongererwo maandĩko-inĩ ma hisa, hamwe na mũthenya.",
   "lotNoteSellHint": "Nĩ kĩ gĩgũtũma wendie? Rĩkũongererwo maandĩko-inĩ ma hisa, hamwe na mũthenya.",
-  "lotNoteBought": "Yagũrwo"
+  "lotNoteBought": "Yagũrwo",
+  "positionHeld": "Ihinda rĩa kũnyiita",
+  "durationMonths": "{months, plural, one{mweri {months}} other{mĩeri {months}}}",
+  "durationDays": "{days, plural, one{mũthenya {days}} other{mĩthenya {days}}}",
+  "positionHeldSince": "kuuma {date}"
 }

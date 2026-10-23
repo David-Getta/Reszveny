@@ -819,5 +819,9 @@
   "lotNoteAdd": "ማስታወሻ ያክሉ",
   "lotNoteBuyHint": "ለምን ይገዛሉ? ከቀኑ ጋር ወደ አክሲዮኑ ማስታወሻዎች ይገባል።",
   "lotNoteSellHint": "ለምን ይሸጣሉ? ከቀኑ ጋር ወደ አክሲዮኑ ማስታወሻዎች ይገባል።",
-  "lotNoteBought": "ተገዝቷል"
+  "lotNoteBought": "ተገዝቷል",
+  "positionHeld": "የተያዘበት ጊዜ",
+  "durationMonths": "{months, plural, one{{months} ወር} other{{months} ወራት}}",
+  "durationDays": "{days, plural, one{{days} ቀን} other{{days} ቀናት}}",
+  "positionHeldSince": "ከ{date} ጀምሮ"
 }

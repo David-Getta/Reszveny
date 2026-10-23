@@ -819,5 +819,9 @@
   "lotNoteAdd": "টোকা যোগ কৰক",
   "lotNoteBuyHint": "আপুনি কিয় কিনিছে? ই তাৰিখসহ শ্বেয়াৰটোৰ টোকাসমূহত যোগ হ'ব।",
   "lotNoteSellHint": "আপুনি কিয় বিক্ৰী কৰিছে? ই তাৰিখসহ শ্বেয়াৰটোৰ টোকাসমূহত যোগ হ'ব।",
-  "lotNoteBought": "ক্ৰয়"
+  "lotNoteBought": "ক্ৰয়",
+  "positionHeld": "ধৰি ৰখাৰ সময়",
+  "durationMonths": "{months, plural, one{{months} মাহ} other{{months} মাহ}}",
+  "durationDays": "{days, plural, one{{days} দিন} other{{days} দিন}}",
+  "positionHeldSince": "{date}ৰ পৰা"
 }

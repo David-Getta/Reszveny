@@ -819,5 +819,9 @@
   "lotNoteAdd": "Dodaj zapisek",
   "lotNoteBuyHint": "Zakaj kupujete? Shrani se med zapiske o delnici, z datumom.",
   "lotNoteSellHint": "Zakaj prodajate? Shrani se med zapiske o delnici, z datumom.",
-  "lotNoteBought": "Kupljeno"
+  "lotNoteBought": "Kupljeno",
+  "positionHeld": "Obdobje imetništva",
+  "durationMonths": "{months, plural, one{{months} mesec} two{{months} meseca} few{{months} meseci} other{{months} mesecev}}",
+  "durationDays": "{days, plural, one{{days} dan} two{{days} dneva} few{{days} dnevi} other{{days} dni}}",
+  "positionHeldSince": "od {date}"
 }

@@ -16,6 +16,7 @@ import 'package:reszveny/features/stock_detail/widgets/price_chart.dart';
 import 'package:reszveny/features/portfolio/add_lot_dialog.dart';
 import 'package:reszveny/features/portfolio/portfolio_page.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
+import 'package:reszveny/features/portfolio/position_card.dart' show heldFor;
 import 'package:reszveny/features/portfolio/portfolio_valuation.dart';
 
 import 'app_widget_test.dart' show services;
@@ -1388,4 +1389,36 @@ void main() {
       expect(store.lots, hasLength(2));
     },
   );
+
+  test('held for: full years, the remaining months, and days within the first month', () {
+    expect(heldFor(DateTime(2024, 3, 4), DateTime(2025, 10, 23)), (years: 1, months: 7, days: 0));
+    expect(heldFor(DateTime(2024, 10, 23), DateTime(2025, 10, 23)), (years: 1, months: 0, days: 0));
+    expect(heldFor(DateTime(2025, 9, 30), DateTime(2025, 10, 23)), (years: 0, months: 0, days: 23));
+    // Hónap végén: jan. 31-től febr. 28-ig még nem telt el egy hónap.
+    expect(heldFor(DateTime(2025, 1, 31), DateTime(2025, 2, 28)), (years: 0, months: 0, days: 28));
+    expect(heldFor(DateTime(2025, 10, 23, 18), DateTime(2025, 10, 23, 9)), (years: 0, months: 0, days: 0));
+  });
+
+  testWidgets('my position card: how long the oldest shares still held have been owned', (tester) async {
+    tester.view.physicalSize = const Size(1200, 4000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 150, currency: 'USD', date: DateTime(2024, 3, 4));
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField).first, 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    final h = heldFor(DateTime(2024, 3, 4), DateTime.now());
+    final years = h.years == 1 ? '1 year' : '${h.years} years';
+    final months = switch (h.months) {
+      0 => '',
+      1 => ' 1 month',
+      final m => ' $m months',
+    };
+    final held = find.byKey(const ValueKey('position-held'));
+    expect(find.descendant(of: held, matching: find.text('$years$months')), findsOneWidget);
+    expect(find.descendant(of: held, matching: find.text('since Mar 4, 2024')), findsOneWidget);
+  });
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Bakisa note",
   "lotNoteBuyHint": "Mpo na nini ozali kosomba? Ekokɔta na ba note ya action, elongo na mokɔlɔ.",
   "lotNoteSellHint": "Mpo na nini ozali koteka? Ekokɔta na ba note ya action, elongo na mokɔlɔ.",
-  "lotNoteBought": "Esombami"
+  "lotNoteBought": "Esombami",
+  "positionHeld": "Ntango ya kosimba",
+  "durationMonths": "{months, plural, one{sanza {months}} other{sanza {months}}}",
+  "durationDays": "{days, plural, one{mokɔlɔ {days}} other{mikɔlɔ {days}}}",
+  "positionHeldSince": "banda {date}"
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "نوٹ شامل کریں",
   "lotNoteBuyHint": "آپ کیوں خرید رہے ہیں؟ یہ تاریخ کے ساتھ شیئر کے نوٹس میں شامل ہو جائے گا۔",
   "lotNoteSellHint": "آپ کیوں بیچ رہے ہیں؟ یہ تاریخ کے ساتھ شیئر کے نوٹس میں شامل ہو جائے گا۔",
-  "lotNoteBought": "خرید شدہ"
+  "lotNoteBought": "خرید شدہ",
+  "positionHeld": "رکھنے کی مدت",
+  "durationMonths": "{months, plural, one{{months} مہینہ} other{{months} مہینے}}",
+  "durationDays": "{days, plural, one{{days} دن} other{{days} دن}}",
+  "positionHeldSince": "{date} سے"
 }

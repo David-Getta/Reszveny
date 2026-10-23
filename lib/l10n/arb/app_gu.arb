@@ -819,5 +819,9 @@
   "lotNoteAdd": "નોંધ ઉમેરો",
   "lotNoteBuyHint": "તમે કેમ ખરીદો છો? તે તારીખ સાથે શેરની નોંધોમાં ઉમેરાશે.",
   "lotNoteSellHint": "તમે કેમ વેચો છો? તે તારીખ સાથે શેરની નોંધોમાં ઉમેરાશે.",
-  "lotNoteBought": "ખરીદ્યા"
+  "lotNoteBought": "ખરીદ્યા",
+  "positionHeld": "હોલ્ડિંગ અવધિ",
+  "durationMonths": "{months, plural, one{{months} મહિનો} other{{months} મહિના}}",
+  "durationDays": "{days, plural, one{{days} દિવસ} other{{days} દિવસ}}",
+  "positionHeldSince": "{date}થી"
 }

@@ -2785,6 +2785,40 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lotNoteBought => 'Nupirkta';
 
   @override
+  String get positionHeld => 'Turėjimo laikotarpis';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months mėnesių',
+      many: '$months mėnesio',
+      few: '$months mėnesiai',
+      one: '$months mėnuo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dienų',
+      many: '$days dienos',
+      few: '$days dienos',
+      one: '$days diena',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'nuo $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

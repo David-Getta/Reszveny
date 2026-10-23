@@ -819,5 +819,9 @@
   "lotNoteAdd": "Tambahake cathetan",
   "lotNoteBuyHint": "Kenapa sampeyan tuku? Bakal mlebu cathetan saham, karo tanggale.",
   "lotNoteSellHint": "Kenapa sampeyan adol? Bakal mlebu cathetan saham, karo tanggale.",
-  "lotNoteBought": "Dituku"
+  "lotNoteBought": "Dituku",
+  "positionHeld": "Suwene dicekel",
+  "durationMonths": "{months, plural, other{{months} sasi}}",
+  "durationDays": "{days, plural, other{{days} dina}}",
+  "positionHeldSince": "wiwit {date}"
 }

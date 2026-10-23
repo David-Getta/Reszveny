@@ -819,5 +819,9 @@
   "lotNoteAdd": "افزودن یادداشت",
   "lotNoteBuyHint": "چرا می‌خرید؟ همراه با تاریخ به یادداشت‌های این سهم اضافه می‌شود.",
   "lotNoteSellHint": "چرا می‌فروشید؟ همراه با تاریخ به یادداشت‌های این سهم اضافه می‌شود.",
-  "lotNoteBought": "خرید"
+  "lotNoteBought": "خرید",
+  "positionHeld": "مدت نگهداری",
+  "durationMonths": "{months, plural, one{{months} ماه} other{{months} ماه}}",
+  "durationDays": "{days, plural, one{{days} روز} other{{days} روز}}",
+  "positionHeldSince": "از {date}"
 }

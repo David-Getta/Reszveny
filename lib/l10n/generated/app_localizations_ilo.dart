@@ -2737,6 +2737,36 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get lotNoteBought => 'Nagatang';
 
   @override
+  String get positionHeld => 'Kabayag ti panangiggem';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months a bulan',
+      one: '$months a bulan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days nga aldaw',
+      one: '$days nga aldaw',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'manipud $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

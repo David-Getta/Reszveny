@@ -819,5 +819,9 @@
   "lotNoteAdd": "Engetela notsi",
   "lotNoteBuyHint": "Hikwalaho ka yini u xava? Yi ta nghena eka tinotsi ta xere, swin'we ni siku.",
   "lotNoteSellHint": "Hikwalaho ka yini u xavisa? Yi ta nghena eka tinotsi ta xere, swin'we ni siku.",
-  "lotNoteBought": "Swi xaviwile"
+  "lotNoteBought": "Swi xaviwile",
+  "positionHeld": "Nkarhi lowu u yi khomeke",
+  "durationMonths": "{months, plural, one{n'hweti yin'we} other{tin'hweti ta {months}}}",
+  "durationDays": "{days, plural, one{siku rin'we} other{masiku ya {days}}}",
+  "positionHeldSince": "ku sukela {date}"
 }

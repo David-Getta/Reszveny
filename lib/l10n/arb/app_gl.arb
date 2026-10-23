@@ -819,5 +819,9 @@
   "lotNoteAdd": "Engadir unha nota",
   "lotNoteBuyHint": "Por que compras? Engádese ás notas da acción, coa data.",
   "lotNoteSellHint": "Por que vendes? Engádese ás notas da acción, coa data.",
-  "lotNoteBought": "Comprado"
+  "lotNoteBought": "Comprado",
+  "positionHeld": "Tempo en carteira",
+  "durationMonths": "{months, plural, one{{months} mes} other{{months} meses}}",
+  "durationDays": "{days, plural, one{{days} día} other{{days} días}}",
+  "positionHeldSince": "desde o {date}"
 }

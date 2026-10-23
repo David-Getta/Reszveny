@@ -819,5 +819,9 @@
   "lotNoteAdd": "Oketša ntlha",
   "lotNoteBuyHint": "Ke ka baka la eng o reka? E tla tsena dintlheng tša šere, gotee le letšatšikgwedi.",
   "lotNoteSellHint": "Ke ka baka la eng o rekiša? E tla tsena dintlheng tša šere, gotee le letšatšikgwedi.",
-  "lotNoteBought": "E rekilwe"
+  "lotNoteBought": "E rekilwe",
+  "positionHeld": "Nako yeo o e swerego",
+  "durationMonths": "{months, plural, one{kgwedi e {months}} other{dikgwedi tše {months}}}",
+  "durationDays": "{days, plural, one{letšatši le {days}} other{matšatši a {days}}}",
+  "positionHeldSince": "go tloga ka {date}"
 }

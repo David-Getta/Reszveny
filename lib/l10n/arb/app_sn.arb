@@ -819,5 +819,9 @@
   "lotNoteAdd": "Wedzera chinyorwa",
   "lotNoteBuyHint": "Uri kutengerei? Zvichaiswa muzvinyorwa zvesheya, pamwe nezuva.",
   "lotNoteSellHint": "Uri kutengeserei? Zvichaiswa muzvinyorwa zvesheya, pamwe nezuva.",
-  "lotNoteBought": "Zvatengwa"
+  "lotNoteBought": "Zvatengwa",
+  "positionHeld": "Nguva yawakaibata",
+  "durationMonths": "{months, plural, one{mwedzi {months}} other{mwedzi {months}}}",
+  "durationDays": "{days, plural, one{zuva {days}} other{mazuva {days}}}",
+  "positionHeldSince": "kubvira {date}"
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Qillqasqata yapay",
   "lotNoteBuyHint": "Imaraykutaq rantinki? Accionpa qillqasqankunaman yapakunqa, p'unchawninwan.",
   "lotNoteSellHint": "Imaraykutaq rantikunki? Accionpa qillqasqankunaman yapakunqa, p'unchawninwan.",
-  "lotNoteBought": "Rantisqa"
+  "lotNoteBought": "Rantisqa",
+  "positionHeld": "Hap'isqa pacha",
+  "durationMonths": "{months, plural, one{{months} killa} other{{months} killa}}",
+  "durationDays": "{days, plural, one{{days} p'unchaw} other{{days} p'unchaw}}",
+  "positionHeldSince": "{date}manta pacha"
 }

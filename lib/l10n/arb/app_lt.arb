@@ -819,5 +819,9 @@
   "lotNoteAdd": "Pridėti užrašą",
   "lotNoteBuyHint": "Kodėl perkate? Įrašoma į akcijos užrašus su data.",
   "lotNoteSellHint": "Kodėl parduodate? Įrašoma į akcijos užrašus su data.",
-  "lotNoteBought": "Nupirkta"
+  "lotNoteBought": "Nupirkta",
+  "positionHeld": "Turėjimo laikotarpis",
+  "durationMonths": "{months, plural, one{{months} mėnuo} few{{months} mėnesiai} many{{months} mėnesio} other{{months} mėnesių}}",
+  "durationDays": "{days, plural, one{{days} diena} few{{days} dienos} many{{days} dienos} other{{days} dienų}}",
+  "positionHeldSince": "nuo {date}"
 }

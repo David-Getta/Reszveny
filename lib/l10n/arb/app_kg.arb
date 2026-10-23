@@ -819,5 +819,9 @@
   "lotNoteAdd": "Yika note",
   "lotNoteBuyHint": "Sambu na nki nge ke sumba? Yo ta kota na ba note ya action, ti kilumbu.",
   "lotNoteSellHint": "Sambu na nki nge ke teka? Yo ta kota na ba note ya action, ti kilumbu.",
-  "lotNoteBought": "Me sumbama"
+  "lotNoteBought": "Me sumbama",
+  "positionHeld": "Ntangu ya kusimba",
+  "durationMonths": "{months, plural, one{ngonda {months}} other{ngonda {months}}}",
+  "durationDays": "{days, plural, one{kilumbu {days}} other{bilumbu {days}}}",
+  "positionHeldSince": "banda {date}"
 }

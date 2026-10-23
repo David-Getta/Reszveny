@@ -819,5 +819,9 @@
   "lotNoteAdd": "Fa nkyerɛwee bi ka ho",
   "lotNoteBuyHint": "Adɛn nti na woretɔ? Ɛbɛkɔ kyɛfa no nkyerɛwee mu, ne da no ka ho.",
   "lotNoteSellHint": "Adɛn nti na woretɔn? Ɛbɛkɔ kyɛfa no nkyerɛwee mu, ne da no ka ho.",
-  "lotNoteBought": "Woatɔ"
+  "lotNoteBought": "Woatɔ",
+  "positionHeld": "Bere a woakura no",
+  "durationMonths": "{months, plural, one{bosome {months}} other{bosome {months}}}",
+  "durationDays": "{days, plural, one{da {days}} other{nna {days}}}",
+  "positionHeldSince": "efi {date}"
 }

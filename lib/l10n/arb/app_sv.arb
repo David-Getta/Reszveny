@@ -819,5 +819,9 @@
   "lotNoteAdd": "Lägg till en anteckning",
   "lotNoteBuyHint": "Varför köper du? Det hamnar i aktiens anteckningar, med datum.",
   "lotNoteSellHint": "Varför säljer du? Det hamnar i aktiens anteckningar, med datum.",
-  "lotNoteBought": "Köpt"
+  "lotNoteBought": "Köpt",
+  "positionHeld": "Innehavstid",
+  "durationMonths": "{months, plural, one{{months} månad} other{{months} månader}}",
+  "durationDays": "{days, plural, one{{days} dag} other{{days} dagar}}",
+  "positionHeldSince": "sedan {date}"
 }

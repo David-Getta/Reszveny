@@ -2780,6 +2780,40 @@ class AppLocalizationsCs extends AppLocalizations {
   String get lotNoteBought => 'Koupeno';
 
   @override
+  String get positionHeld => 'Doba držení';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months měsíců',
+      many: '$months měsíce',
+      few: '$months měsíce',
+      one: '$months měsíc',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dní',
+      many: '$days dne',
+      few: '$days dny',
+      one: '$days den',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'od $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

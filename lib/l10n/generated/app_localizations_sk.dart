@@ -2785,6 +2785,40 @@ class AppLocalizationsSk extends AppLocalizations {
   String get lotNoteBought => 'Kúpené';
 
   @override
+  String get positionHeld => 'Doba držania';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months mesiacov',
+      many: '$months mesiaca',
+      few: '$months mesiace',
+      one: '$months mesiac',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dní',
+      many: '$days dňa',
+      few: '$days dni',
+      one: '$days deň',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'od $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

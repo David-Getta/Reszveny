@@ -2733,6 +2733,36 @@ class AppLocalizationsHil extends AppLocalizations {
   String get lotNoteBought => 'Ginbakal';
 
   @override
+  String get positionHeld => 'Kadugayon sang paghupot';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ka bulan',
+      one: '$months ka bulan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ka adlaw',
+      one: '$days ka adlaw',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'halin sang $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

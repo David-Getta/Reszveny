@@ -2727,6 +2727,36 @@ class AppLocalizationsTa extends AppLocalizations {
   String get lotNoteBought => 'வாங்கியது';
 
   @override
+  String get positionHeld => 'வைத்திருக்கும் காலம்';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months மாதங்கள்',
+      one: '$months மாதம்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days நாட்கள்',
+      one: '$days நாள்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date முதல்';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

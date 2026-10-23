@@ -2722,6 +2722,36 @@ class AppLocalizationsTe extends AppLocalizations {
   String get lotNoteBought => 'కొన్నారు';
 
   @override
+  String get positionHeld => 'కలిగి ఉన్న వ్యవధి';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months నెలలు',
+      one: '$months నెల',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days రోజులు',
+      one: '$days రోజు',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date నుండి';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

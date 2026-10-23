@@ -819,5 +819,9 @@
   "lotNoteAdd": "ਨੋਟ ਸ਼ਾਮਲ ਕਰੋ",
   "lotNoteBuyHint": "ਤੁਸੀਂ ਕਿਉਂ ਖਰੀਦ ਰਹੇ ਹੋ? ਇਹ ਮਿਤੀ ਸਮੇਤ ਸ਼ੇਅਰ ਦੇ ਨੋਟਾਂ ਵਿੱਚ ਜੁੜ ਜਾਵੇਗਾ।",
   "lotNoteSellHint": "ਤੁਸੀਂ ਕਿਉਂ ਵੇਚ ਰਹੇ ਹੋ? ਇਹ ਮਿਤੀ ਸਮੇਤ ਸ਼ੇਅਰ ਦੇ ਨੋਟਾਂ ਵਿੱਚ ਜੁੜ ਜਾਵੇਗਾ।",
-  "lotNoteBought": "ਖਰੀਦੇ"
+  "lotNoteBought": "ਖਰੀਦੇ",
+  "positionHeld": "ਹੋਲਡਿੰਗ ਮਿਆਦ",
+  "durationMonths": "{months, plural, one{{months} ਮਹੀਨਾ} other{{months} ਮਹੀਨੇ}}",
+  "durationDays": "{days, plural, one{{days} ਦਿਨ} other{{days} ਦਿਨ}}",
+  "positionHeldSince": "{date} ਤੋਂ"
 }

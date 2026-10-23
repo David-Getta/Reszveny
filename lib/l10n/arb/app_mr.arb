@@ -819,5 +819,9 @@
   "lotNoteAdd": "नोंद जोडा",
   "lotNoteBuyHint": "तुम्ही का खरेदी करत आहात? ही नोंद तारखेसह शेअरच्या नोंदींमध्ये जोडली जाईल.",
   "lotNoteSellHint": "तुम्ही का विकत आहात? ही नोंद तारखेसह शेअरच्या नोंदींमध्ये जोडली जाईल.",
-  "lotNoteBought": "खरेदी केले"
+  "lotNoteBought": "खरेदी केले",
+  "positionHeld": "धारण कालावधी",
+  "durationMonths": "{months, plural, one{{months} महिना} other{{months} महिने}}",
+  "durationDays": "{days, plural, one{{days} दिवस} other{{days} दिवस}}",
+  "positionHeldSince": "{date} पासून"
 }

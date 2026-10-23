@@ -2718,6 +2718,36 @@ class AppLocalizationsAk extends AppLocalizations {
   String get lotNoteBought => 'Woatɔ';
 
   @override
+  String get positionHeld => 'Bere a woakura no';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'bosome $months',
+      one: 'bosome $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'nna $days',
+      one: 'da $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'efi $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

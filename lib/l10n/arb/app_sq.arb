@@ -819,5 +819,9 @@
   "lotNoteAdd": "Shto një shënim",
   "lotNoteBuyHint": "Pse po blini? Shtohet te shënimet e aksionit, me datën.",
   "lotNoteSellHint": "Pse po shitni? Shtohet te shënimet e aksionit, me datën.",
-  "lotNoteBought": "Blerë"
+  "lotNoteBought": "Blerë",
+  "positionHeld": "Periudha e mbajtjes",
+  "durationMonths": "{months, plural, one{{months} muaj} other{{months} muaj}}",
+  "durationDays": "{days, plural, one{{days} ditë} other{{days} ditë}}",
+  "positionHeldSince": "që nga {date}"
 }

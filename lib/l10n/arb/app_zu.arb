@@ -819,5 +819,9 @@
   "lotNoteAdd": "Engeza inothi",
   "lotNoteBuyHint": "Ulithengelani? Kuzongezwa kumanothi esheya, kanye nosuku.",
   "lotNoteSellHint": "Ulithengiselani? Kuzongezwa kumanothi esheya, kanye nosuku.",
-  "lotNoteBought": "Kuthengiwe"
+  "lotNoteBought": "Kuthengiwe",
+  "positionHeld": "Isikhathi sokubamba",
+  "durationMonths": "{months, plural, one{inyanga e-{months}} other{izinyanga ezingu-{months}}}",
+  "durationDays": "{days, plural, one{usuku olu-{days}} other{izinsuku ezingu-{days}}}",
+  "positionHeldSince": "kusukela ngo-{date}"
 }

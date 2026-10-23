@@ -819,5 +819,9 @@
   "lotNoteAdd": "ନୋଟ୍ ଯୋଡ଼ନ୍ତୁ",
   "lotNoteBuyHint": "ଆପଣ କାହିଁକି କିଣୁଛନ୍ତି? ଏହା ତାରିଖ ସହିତ ସେୟାରର ନୋଟ୍‌ରେ ଯୋଡ଼ିହେବ।",
   "lotNoteSellHint": "ଆପଣ କାହିଁକି ବିକ୍ରି କରୁଛନ୍ତି? ଏହା ତାରିଖ ସହିତ ସେୟାରର ନୋଟ୍‌ରେ ଯୋଡ଼ିହେବ।",
-  "lotNoteBought": "କିଣାଗଲା"
+  "lotNoteBought": "କିଣାଗଲା",
+  "positionHeld": "ଧାରଣ ଅବଧି",
+  "durationMonths": "{months, plural, one{{months} ମାସ} other{{months} ମାସ}}",
+  "durationDays": "{days, plural, one{{days} ଦିନ} other{{days} ଦିନ}}",
+  "positionHeldSince": "{date}ଠାରୁ"
 }

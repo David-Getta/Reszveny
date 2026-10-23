@@ -819,5 +819,9 @@
   "lotNoteAdd": "新增筆記",
   "lotNoteBuyHint": "為何買入？會連同日期記入此股票的筆記。",
   "lotNoteSellHint": "為何賣出？會連同日期記入此股票的筆記。",
-  "lotNoteBought": "買入"
+  "lotNoteBought": "買入",
+  "positionHeld": "持有時間",
+  "durationMonths": "{months, plural, other{{months}個月}}",
+  "durationDays": "{days, plural, other{{days}日}}",
+  "positionHeldSince": "自{date}起"
 }

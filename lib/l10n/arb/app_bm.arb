@@ -819,5 +819,9 @@
   "lotNoteAdd": "Sɛbɛnni dɔ fara a kan",
   "lotNoteBuyHint": "Mun na i b'a san? A bɛ don aksiyɔn ka sɛbɛnniw na ni don ye.",
   "lotNoteSellHint": "Mun na i b'a feere? A bɛ don aksiyɔn ka sɛbɛnniw na ni don ye.",
-  "lotNoteBought": "Sannen"
+  "lotNoteBought": "Sannen",
+  "positionHeld": "Marali waati",
+  "durationMonths": "{months, plural, other{kalo {months}}}",
+  "durationDays": "{days, plural, other{tile {days}}}",
+  "positionHeldSince": "kabini {date}"
 }

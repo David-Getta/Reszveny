@@ -819,5 +819,9 @@
   "lotNoteAdd": "Дадаць нататку",
   "lotNoteBuyHint": "Чаму вы купляеце? Гэта трапіць у нататкі да акцыі разам з датай.",
   "lotNoteSellHint": "Чаму вы прадаеце? Гэта трапіць у нататкі да акцыі разам з датай.",
-  "lotNoteBought": "Куплена"
+  "lotNoteBought": "Куплена",
+  "positionHeld": "Тэрмін валодання",
+  "durationMonths": "{months, plural, one{{months} месяц} few{{months} месяцы} many{{months} месяцаў} other{{months} месяца}}",
+  "durationDays": "{days, plural, one{{days} дзень} few{{days} дні} many{{days} дзён} other{{days} дня}}",
+  "positionHeldSince": "з {date}"
 }

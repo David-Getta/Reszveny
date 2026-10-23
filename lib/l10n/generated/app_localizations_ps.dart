@@ -2708,6 +2708,36 @@ class AppLocalizationsPs extends AppLocalizations {
   String get lotNoteBought => 'وپېرل شو';
 
   @override
+  String get positionHeld => 'د ساتلو موده';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months میاشتې',
+      one: '$months میاشت',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ورځې',
+      one: '$days ورځ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'له $date راهیسې';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

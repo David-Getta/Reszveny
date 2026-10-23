@@ -819,5 +819,9 @@
   "lotNoteAdd": "Qayd qoʻshish",
   "lotNoteBuyHint": "Nega sotib olyapsiz? Sana bilan aksiya qaydlariga qoʻshiladi.",
   "lotNoteSellHint": "Nega sotyapsiz? Sana bilan aksiya qaydlariga qoʻshiladi.",
-  "lotNoteBought": "Sotib olindi"
+  "lotNoteBought": "Sotib olindi",
+  "positionHeld": "Saqlash muddati",
+  "durationMonths": "{months, plural, one{{months} oy} other{{months} oy}}",
+  "durationDays": "{days, plural, one{{days} kun} other{{days} kun}}",
+  "positionHeldSince": "{date} sanasidan beri"
 }

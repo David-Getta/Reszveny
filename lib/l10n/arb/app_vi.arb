@@ -819,5 +819,9 @@
   "lotNoteAdd": "Thêm ghi chú",
   "lotNoteBuyHint": "Vì sao bạn mua? Nội dung sẽ được thêm vào ghi chú của cổ phiếu, kèm ngày.",
   "lotNoteSellHint": "Vì sao bạn bán? Nội dung sẽ được thêm vào ghi chú của cổ phiếu, kèm ngày.",
-  "lotNoteBought": "Đã mua"
+  "lotNoteBought": "Đã mua",
+  "positionHeld": "Thời gian nắm giữ",
+  "durationMonths": "{months, plural, other{{months} tháng}}",
+  "durationDays": "{days, plural, other{{days} ngày}}",
+  "positionHeldSince": "từ {date}"
 }

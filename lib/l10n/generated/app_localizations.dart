@@ -4657,6 +4657,30 @@ abstract class AppLocalizations {
   /// **'Bought'**
   String get lotNoteBought;
 
+  /// My position card: label of how long the oldest shares still held have been owned, e.g. "Held for 1 year 7 months".
+  ///
+  /// In en, this message translates to:
+  /// **'Held for'**
+  String get positionHeld;
+
+  /// A number of months as part of a duration, e.g. "7 months" (after a number of years, or alone).
+  ///
+  /// In en, this message translates to:
+  /// **'{months, plural, one{1 month} other{{months} months}}'**
+  String durationMonths(int months);
+
+  /// A number of days as a duration, e.g. "12 days".
+  ///
+  /// In en, this message translates to:
+  /// **'{days, plural, one{1 day} other{{days} days}}'**
+  String durationDays(int days);
+
+  /// Under the holding period: the date of the oldest purchase still held, e.g. "since Mar 4, 2024".
+  ///
+  /// In en, this message translates to:
+  /// **'since {date}'**
+  String positionHeldSince(String date);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

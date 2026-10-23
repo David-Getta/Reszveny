@@ -2735,6 +2735,36 @@ class AppLocalizationsTn extends AppLocalizations {
   String get lotNoteBought => 'E rekilwe';
 
   @override
+  String get positionHeld => 'Nako e o e tshwereng';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'dikgwedi di le $months',
+      one: 'kgwedi e le $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'malatsi a le $days',
+      one: 'letsatsi le le $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'go tloga ka $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

@@ -2713,6 +2713,36 @@ class AppLocalizationsEn extends AppLocalizations {
   String get lotNoteBought => 'Bought';
 
   @override
+  String get positionHeld => 'Held for';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months months',
+      one: '1 month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days',
+      one: '1 day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'since $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Magdagdag ng tala",
   "lotNoteBuyHint": "Bakit ka bumibili? Mapupunta ito sa mga tala ng stock, kasama ang petsa.",
   "lotNoteSellHint": "Bakit ka nagbebenta? Mapupunta ito sa mga tala ng stock, kasama ang petsa.",
-  "lotNoteBought": "Nabili"
+  "lotNoteBought": "Nabili",
+  "positionHeld": "Tagal ng paghawak",
+  "durationMonths": "{months, plural, one{{months} buwan} other{{months} buwan}}",
+  "durationDays": "{days, plural, one{{days} araw} other{{days} araw}}",
+  "positionHeldSince": "mula noong {date}"
 }

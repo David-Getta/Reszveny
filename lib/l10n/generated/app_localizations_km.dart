@@ -2695,6 +2695,34 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lotNoteBought => 'បានទិញ';
 
   @override
+  String get positionHeld => 'រយៈពេលកាន់កាប់';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ខែ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ថ្ងៃ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'ចាប់ពី $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

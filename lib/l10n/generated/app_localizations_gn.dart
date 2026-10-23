@@ -2722,6 +2722,36 @@ class AppLocalizationsGn extends AppLocalizations {
   String get lotNoteBought => 'Jejogua';
 
   @override
+  String get positionHeld => 'Mbovy aja reguereko';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months jasy',
+      one: '$months jasy',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ára',
+      one: '$days ára',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date guive';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

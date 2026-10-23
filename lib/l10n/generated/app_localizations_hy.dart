@@ -2725,6 +2725,36 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lotNoteBought => 'Գնված';
 
   @override
+  String get positionHeld => 'Պահման ժամկետ';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ամիս',
+      one: '$months ամիս',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days օր',
+      one: '$days օր',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'սկսած $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Ongeza dokezo",
   "lotNoteBuyHint": "Kwa nini unanunua? Litaingia kwenye madokezo ya hisa, pamoja na tarehe.",
   "lotNoteSellHint": "Kwa nini unauza? Litaingia kwenye madokezo ya hisa, pamoja na tarehe.",
-  "lotNoteBought": "Umenunua"
+  "lotNoteBought": "Umenunua",
+  "positionHeld": "Muda wa umiliki",
+  "durationMonths": "{months, plural, one{mwezi {months}} other{miezi {months}}}",
+  "durationDays": "{days, plural, one{siku {days}} other{siku {days}}}",
+  "positionHeldSince": "tangu {date}"
 }

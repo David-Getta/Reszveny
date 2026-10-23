@@ -819,5 +819,9 @@
   "lotNoteAdd": "Язма өстәү",
   "lotNoteBuyHint": "Ни өчен сатып аласыз? Ул датасы белән акциянең язмаларына өстәлә.",
   "lotNoteSellHint": "Ни өчен сатасыз? Ул датасы белән акциянең язмаларына өстәлә.",
-  "lotNoteBought": "Сатып алынды"
+  "lotNoteBought": "Сатып алынды",
+  "positionHeld": "Тоту вакыты",
+  "durationMonths": "{months, plural, one{{months} ай} other{{months} ай}}",
+  "durationDays": "{days, plural, one{{days} көн} other{{days} көн}}",
+  "positionHeldSince": "{date} датасыннан бирле"
 }

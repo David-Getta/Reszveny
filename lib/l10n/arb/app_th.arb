@@ -819,5 +819,9 @@
   "lotNoteAdd": "เพิ่มบันทึก",
   "lotNoteBuyHint": "ซื้อเพราะอะไร จะเพิ่มลงในบันทึกของหุ้นพร้อมวันที่",
   "lotNoteSellHint": "ขายเพราะอะไร จะเพิ่มลงในบันทึกของหุ้นพร้อมวันที่",
-  "lotNoteBought": "ซื้อ"
+  "lotNoteBought": "ซื้อ",
+  "positionHeld": "ระยะเวลาถือครอง",
+  "durationMonths": "{months, plural, other{{months} เดือน}}",
+  "durationDays": "{days, plural, other{{days} วัน}}",
+  "positionHeldSince": "ตั้งแต่ {date}"
 }

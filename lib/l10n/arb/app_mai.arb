@@ -819,5 +819,9 @@
   "lotNoteAdd": "नोट जोड़ू",
   "lotNoteBuyHint": "अहाँ किएक कीनि रहल छी? ई तिथिक संग शेयरक नोटमे जुड़ि जाएत।",
   "lotNoteSellHint": "अहाँ किएक बेचि रहल छी? ई तिथिक संग शेयरक नोटमे जुड़ि जाएत।",
-  "lotNoteBought": "कीनल"
+  "lotNoteBought": "कीनल",
+  "positionHeld": "रखबाक अवधि",
+  "durationMonths": "{months, plural, one{{months} मास} other{{months} मास}}",
+  "durationDays": "{days, plural, one{{days} दिन} other{{days} दिन}}",
+  "positionHeldSince": "{date}सँ"
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Inayon ti nota",
   "lotNoteBuyHint": "Apay a gumatangka? Mainayon daytoy kadagiti nota ti stock, agraman ti petsa.",
   "lotNoteSellHint": "Apay a aglakoka? Mainayon daytoy kadagiti nota ti stock, agraman ti petsa.",
-  "lotNoteBought": "Nagatang"
+  "lotNoteBought": "Nagatang",
+  "positionHeld": "Kabayag ti panangiggem",
+  "durationMonths": "{months, plural, one{{months} a bulan} other{{months} a bulan}}",
+  "durationDays": "{days, plural, one{{days} nga aldaw} other{{days} nga aldaw}}",
+  "positionHeldSince": "manipud {date}"
 }

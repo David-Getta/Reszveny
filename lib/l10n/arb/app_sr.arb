@@ -819,5 +819,9 @@
   "lotNoteAdd": "Додај белешку",
   "lotNoteBuyHint": "Зашто купујете? Уписује се у белешке о акцији, са датумом.",
   "lotNoteSellHint": "Зашто продајете? Уписује се у белешке о акцији, са датумом.",
-  "lotNoteBought": "Купљено"
+  "lotNoteBought": "Купљено",
+  "positionHeld": "Период држања",
+  "durationMonths": "{months, plural, one{{months} месец} few{{months} месеца} other{{months} месеци}}",
+  "durationDays": "{days, plural, one{{days} дан} few{{days} дана} other{{days} дана}}",
+  "positionHeldSince": "од {date}"
 }

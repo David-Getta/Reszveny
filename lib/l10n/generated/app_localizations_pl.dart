@@ -2788,6 +2788,40 @@ class AppLocalizationsPl extends AppLocalizations {
   String get lotNoteBought => 'Kupiono';
 
   @override
+  String get positionHeld => 'Okres posiadania';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months miesiąca',
+      many: '$months miesięcy',
+      few: '$months miesiące',
+      one: '$months miesiąc',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dnia',
+      many: '$days dni',
+      few: '$days dni',
+      one: '$days dzień',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'od $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

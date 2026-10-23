@@ -819,5 +819,9 @@
   "lotNoteAdd": "Ƙara bayani",
   "lotNoteBuyHint": "Me ya sa kake saye? Za a saka shi cikin bayanan hannun jarin, tare da kwanan wata.",
   "lotNoteSellHint": "Me ya sa kake sayarwa? Za a saka shi cikin bayanan hannun jarin, tare da kwanan wata.",
-  "lotNoteBought": "An saya"
+  "lotNoteBought": "An saya",
+  "positionHeld": "Lokacin riƙewa",
+  "durationMonths": "{months, plural, one{wata {months}} other{watanni {months}}}",
+  "durationDays": "{days, plural, one{kwana {days}} other{kwanaki {days}}}",
+  "positionHeldSince": "tun {date}"
 }

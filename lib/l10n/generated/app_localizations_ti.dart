@@ -2677,6 +2677,36 @@ class AppLocalizationsTi extends AppLocalizations {
   String get lotNoteBought => 'ተዓዲጉ';
 
   @override
+  String get positionHeld => 'ዝተታሕዘሉ ግዜ';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ኣዋርሕ',
+      one: '$months ወርሒ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days መዓልታት',
+      one: '$days መዓልቲ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'ካብ $date ጀሚሩ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

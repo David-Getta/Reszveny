@@ -819,5 +819,9 @@
   "lotNoteAdd": "Tsɔ nuŋlɔɖi aɖe kpe ɖe eŋu",
   "lotNoteBuyHint": "Nukatae nèle eƒlem? Woaŋlɔe ɖe akpa la ƒe nuŋlɔɖiwo me kple ŋkeke la.",
   "lotNoteSellHint": "Nukatae nèle edzram? Woaŋlɔe ɖe akpa la ƒe nuŋlɔɖiwo me kple ŋkeke la.",
-  "lotNoteBought": "Woƒlee"
+  "lotNoteBought": "Woƒlee",
+  "positionHeld": "Ɣeyiɣi si nèlée ɖe asi",
+  "durationMonths": "{months, plural, one{ɣleti {months}} other{ɣleti {months}}}",
+  "durationDays": "{days, plural, one{ŋkeke {days}} other{ŋkeke {days}}}",
+  "positionHeldSince": "tso {date} dzi"
 }

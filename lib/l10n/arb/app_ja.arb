@@ -819,5 +819,9 @@
   "lotNoteAdd": "メモを追加",
   "lotNoteBuyHint": "購入の理由は？日付付きで銘柄のメモに追加されます。",
   "lotNoteSellHint": "売却の理由は？日付付きで銘柄のメモに追加されます。",
-  "lotNoteBought": "購入"
+  "lotNoteBought": "購入",
+  "positionHeld": "保有期間",
+  "durationMonths": "{months, plural, other{{months}か月}}",
+  "durationDays": "{days, plural, other{{days}日}}",
+  "positionHeldSince": "{date}から"
 }

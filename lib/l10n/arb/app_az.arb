@@ -819,5 +819,9 @@
   "lotNoteAdd": "Qeyd əlavə edin",
   "lotNoteBuyHint": "Niyə alırsınız? Tarixlə birlikdə səhmin qeydlərinə əlavə olunur.",
   "lotNoteSellHint": "Niyə satırsınız? Tarixlə birlikdə səhmin qeydlərinə əlavə olunur.",
-  "lotNoteBought": "Alındı"
+  "lotNoteBought": "Alındı",
+  "positionHeld": "Saxlama müddəti",
+  "durationMonths": "{months, plural, one{{months} ay} other{{months} ay}}",
+  "durationDays": "{days, plural, one{{days} gün} other{{days} gün}}",
+  "positionHeldSince": "{date} tarixindən"
 }

@@ -2728,6 +2728,36 @@ class AppLocalizationsCeb extends AppLocalizations {
   String get lotNoteBought => 'Gipalit';
 
   @override
+  String get positionHeld => 'Gidugayon sa paghupot';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ka bulan',
+      one: '$months ka bulan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ka adlaw',
+      one: '$days ka adlaw',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'sukad sa $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

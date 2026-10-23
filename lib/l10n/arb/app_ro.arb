@@ -819,5 +819,9 @@
   "lotNoteAdd": "Adaugă o notiță",
   "lotNoteBuyHint": "De ce cumperi? Intră în notițele acțiunii, cu data.",
   "lotNoteSellHint": "De ce vinzi? Intră în notițele acțiunii, cu data.",
-  "lotNoteBought": "Cumpărat"
+  "lotNoteBought": "Cumpărat",
+  "positionHeld": "Perioadă de deținere",
+  "durationMonths": "{months, plural, one{{months} lună} few{{months} luni} other{{months} de luni}}",
+  "durationDays": "{days, plural, one{{days} zi} few{{days} zile} other{{days} de zile}}",
+  "positionHeldSince": "din {date}"
 }

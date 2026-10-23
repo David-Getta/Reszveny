@@ -2715,6 +2715,36 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get lotNoteBought => 'Bought';
 
   @override
+  String get positionHeld => 'You don hold am for';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months months',
+      one: '$months month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days',
+      one: '$days day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'since $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

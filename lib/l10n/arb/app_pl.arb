@@ -819,5 +819,9 @@
   "lotNoteAdd": "Dodaj notatkę",
   "lotNoteBuyHint": "Powód zakupu? Trafi do notatek o akcji, z datą.",
   "lotNoteSellHint": "Powód sprzedaży? Trafi do notatek o akcji, z datą.",
-  "lotNoteBought": "Kupiono"
+  "lotNoteBought": "Kupiono",
+  "positionHeld": "Okres posiadania",
+  "durationMonths": "{months, plural, one{{months} miesiąc} few{{months} miesiące} many{{months} miesięcy} other{{months} miesiąca}}",
+  "durationDays": "{days, plural, one{{days} dzień} few{{days} dni} many{{days} dni} other{{days} dnia}}",
+  "positionHeldSince": "od {date}"
 }

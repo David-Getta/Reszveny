@@ -2729,6 +2729,36 @@ class AppLocalizationsXh extends AppLocalizations {
   String get lotNoteBought => 'Kuthengiwe';
 
   @override
+  String get positionHeld => 'Ixesha lokubamba';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'iinyanga ezi-$months',
+      one: 'inyanga e-$months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'iintsuku ezi-$days',
+      one: 'usuku olu-$days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'ukususela ngo-$date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

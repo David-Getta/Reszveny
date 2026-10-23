@@ -2788,6 +2788,40 @@ class AppLocalizationsUk extends AppLocalizations {
   String get lotNoteBought => 'Куплено';
 
   @override
+  String get positionHeld => 'Строк володіння';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months місяця',
+      many: '$months місяців',
+      few: '$months місяці',
+      one: '$months місяць',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days дня',
+      many: '$days днів',
+      few: '$days дні',
+      one: '$days день',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'з $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

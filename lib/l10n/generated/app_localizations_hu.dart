@@ -2721,6 +2721,36 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lotNoteBought => 'Vétel';
 
   @override
+  String get positionHeld => 'Tartod';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months hónap',
+      one: '1 hónap',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days nap',
+      one: '1 nap',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date óta';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

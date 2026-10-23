@@ -819,5 +819,9 @@
   "lotNoteAdd": "Pievienot piezīmi",
   "lotNoteBuyHint": "Kāpēc jūs pērkat? Tiks pievienots akcijas piezīmēm ar datumu.",
   "lotNoteSellHint": "Kāpēc jūs pārdodat? Tiks pievienots akcijas piezīmēm ar datumu.",
-  "lotNoteBought": "Nopirkts"
+  "lotNoteBought": "Nopirkts",
+  "positionHeld": "Turēšanas periods",
+  "durationMonths": "{months, plural, zero{{months} mēneši} one{{months} mēnesis} other{{months} mēneši}}",
+  "durationDays": "{days, plural, zero{{days} dienas} one{{days} diena} other{{days} dienas}}",
+  "positionHeldSince": "kopš {date}"
 }

@@ -2597,6 +2597,34 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lotNoteBought => '买入';
 
   @override
+  String get positionHeld => '持有时长';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months个月',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days天',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '自$date起';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5561,6 +5589,34 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get lotNoteBought => '買入';
+
+  @override
+  String get positionHeld => '持有時間';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months個月',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days日',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '自$date起';
+  }
 
   @override
   String get portfolioGoalSet => '設定目標';

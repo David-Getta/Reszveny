@@ -819,5 +819,9 @@
   "lotNoteAdd": "Илова кардани қайд",
   "lotNoteBuyHint": "Чаро мехаред? Бо сана ба қайдҳои саҳмия илова мешавад.",
   "lotNoteSellHint": "Чаро мефурӯшед? Бо сана ба қайдҳои саҳмия илова мешавад.",
-  "lotNoteBought": "Харида шуд"
+  "lotNoteBought": "Харида шуд",
+  "positionHeld": "Мӯҳлати нигоҳдорӣ",
+  "durationMonths": "{months, plural, one{{months} моҳ} other{{months} моҳ}}",
+  "durationDays": "{days, plural, one{{days} рӯз} other{{days} рӯз}}",
+  "positionHeldSince": "аз {date}"
 }

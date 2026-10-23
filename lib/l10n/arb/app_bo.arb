@@ -819,5 +819,9 @@
   "lotNoteAdd": "ཟིན་ཐོ་སྣོན།",
   "lotNoteBuyHint": "ཁྱེད་ཀྱིས་ཅིའི་ཕྱིར་ཉོ་གི་ཡིན་ནམ། འདི་ཚེས་གྲངས་དང་བཅས་ཧུར་ཁག་གི་ཟིན་ཐོའི་ནང་འཇུག་གི་རེད།",
   "lotNoteSellHint": "ཁྱེད་ཀྱིས་ཅིའི་ཕྱིར་འཚོང་གི་ཡིན་ནམ། འདི་ཚེས་གྲངས་དང་བཅས་ཧུར་ཁག་གི་ཟིན་ཐོའི་ནང་འཇུག་གི་རེད།",
-  "lotNoteBought": "ཉོས་ཟིན"
+  "lotNoteBought": "ཉོས་ཟིན",
+  "positionHeld": "ཉར་བའི་དུས་ཡུན",
+  "durationMonths": "{months, plural, other{ཟླ་བ་ {months}}}",
+  "durationDays": "{days, plural, other{ཉིན་ {days}}}",
+  "positionHeldSince": "{date} ནས་བཟུང་"
 }

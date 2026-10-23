@@ -819,5 +819,9 @@
   "lotNoteAdd": "Жазуу кошуу",
   "lotNoteBuyHint": "Эмне үчүн сатып алып жатасыз? Ал күнү менен акциянын жазууларына кошулат.",
   "lotNoteSellHint": "Эмне үчүн сатып жатасыз? Ал күнү менен акциянын жазууларына кошулат.",
-  "lotNoteBought": "Сатып алынды"
+  "lotNoteBought": "Сатып алынды",
+  "positionHeld": "Кармоо мөөнөтү",
+  "durationMonths": "{months, plural, one{{months} ай} other{{months} ай}}",
+  "durationDays": "{days, plural, one{{days} күн} other{{days} күн}}",
+  "positionHeldSince": "{date} баштап"
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Dodajte bilješku",
   "lotNoteBuyHint": "Zašto kupujete? Upisuje se u bilješke o dionici, s datumom.",
   "lotNoteSellHint": "Zašto prodajete? Upisuje se u bilješke o dionici, s datumom.",
-  "lotNoteBought": "Kupljeno"
+  "lotNoteBought": "Kupljeno",
+  "positionHeld": "Razdoblje držanja",
+  "durationMonths": "{months, plural, one{{months} mjesec} few{{months} mjeseca} other{{months} mjeseci}}",
+  "durationDays": "{days, plural, one{{days} dan} few{{days} dana} other{{days} dana}}",
+  "positionHeldSince": "od {date}"
 }

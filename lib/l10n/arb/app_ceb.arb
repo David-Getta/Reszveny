@@ -819,5 +819,9 @@
   "lotNoteAdd": "Idugang ang nota",
   "lotNoteBuyHint": "Nganong mopalit ka? Ma-apil kini sa mga nota sa stock, uban ang petsa.",
   "lotNoteSellHint": "Nganong mobaligya ka? Ma-apil kini sa mga nota sa stock, uban ang petsa.",
-  "lotNoteBought": "Gipalit"
+  "lotNoteBought": "Gipalit",
+  "positionHeld": "Gidugayon sa paghupot",
+  "durationMonths": "{months, plural, one{{months} ka bulan} other{{months} ka bulan}}",
+  "durationDays": "{days, plural, one{{days} ka adlaw} other{{days} ka adlaw}}",
+  "positionHeldSince": "sukad sa {date}"
 }

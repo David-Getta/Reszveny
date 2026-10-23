@@ -819,5 +819,9 @@
   "lotNoteAdd": "Ավելացնել նշում",
   "lotNoteBuyHint": "Ինչո՞ւ եք գնում։ Այն ամսաթվով կավելանա բաժնետոմսի նշումներին։",
   "lotNoteSellHint": "Ինչո՞ւ եք վաճառում։ Այն ամսաթվով կավելանա բաժնետոմսի նշումներին։",
-  "lotNoteBought": "Գնված"
+  "lotNoteBought": "Գնված",
+  "positionHeld": "Պահման ժամկետ",
+  "durationMonths": "{months, plural, one{{months} ամիս} other{{months} ամիս}}",
+  "durationDays": "{days, plural, one{{days} օր} other{{days} օր}}",
+  "positionHeldSince": "սկսած {date}"
 }

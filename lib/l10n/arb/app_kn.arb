@@ -819,5 +819,9 @@
   "lotNoteAdd": "ಟಿಪ್ಪಣಿ ಸೇರಿಸಿ",
   "lotNoteBuyHint": "ಏಕೆ ಖರೀದಿಸುತ್ತಿದ್ದೀರಿ? ಇದು ದಿನಾಂಕದೊಂದಿಗೆ ಷೇರಿನ ಟಿಪ್ಪಣಿಗಳಿಗೆ ಸೇರುತ್ತದೆ.",
   "lotNoteSellHint": "ಏಕೆ ಮಾರುತ್ತಿದ್ದೀರಿ? ಇದು ದಿನಾಂಕದೊಂದಿಗೆ ಷೇರಿನ ಟಿಪ್ಪಣಿಗಳಿಗೆ ಸೇರುತ್ತದೆ.",
-  "lotNoteBought": "ಖರೀದಿ"
+  "lotNoteBought": "ಖರೀದಿ",
+  "positionHeld": "ಹೊಂದಿರುವ ಅವಧಿ",
+  "durationMonths": "{months, plural, one{{months} ತಿಂಗಳು} other{{months} ತಿಂಗಳುಗಳು}}",
+  "durationDays": "{days, plural, one{{days} ದಿನ} other{{days} ದಿನಗಳು}}",
+  "positionHeldSince": "{date} ರಿಂದ"
 }

@@ -2706,6 +2706,36 @@ class AppLocalizationsSd extends AppLocalizations {
   String get lotNoteBought => 'خريد ٿيو';
 
   @override
+  String get positionHeld => 'رکڻ جو عرصو';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months مهينا',
+      one: '$months مهينو',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ڏينهن',
+      one: '$days ڏينهن',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date کان';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

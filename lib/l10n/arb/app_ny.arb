@@ -819,5 +819,9 @@
   "lotNoteAdd": "Onjezani cholemba",
   "lotNoteBuyHint": "Chifukwa chiyani mukugula? Chidzalowa m'zolemba za sheya, pamodzi ndi tsiku.",
   "lotNoteSellHint": "Chifukwa chiyani mukugulitsa? Chidzalowa m'zolemba za sheya, pamodzi ndi tsiku.",
-  "lotNoteBought": "Zagulidwa"
+  "lotNoteBought": "Zagulidwa",
+  "positionHeld": "Nthawi yosunga",
+  "durationMonths": "{months, plural, one{mwezi {months}} other{miyezi {months}}}",
+  "durationDays": "{days, plural, one{tsiku {days}} other{masiku {days}}}",
+  "positionHeldSince": "kuyambira {date}"
 }

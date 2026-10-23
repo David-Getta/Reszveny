@@ -819,5 +819,9 @@
   "lotNoteAdd": "Добавете бележка",
   "lotNoteBuyHint": "Защо купувате? Записва се в бележките за акцията с датата.",
   "lotNoteSellHint": "Защо продавате? Записва се в бележките за акцията с датата.",
-  "lotNoteBought": "Купени"
+  "lotNoteBought": "Купени",
+  "positionHeld": "Период на притежание",
+  "durationMonths": "{months, plural, one{{months} месец} other{{months} месеца}}",
+  "durationDays": "{days, plural, one{{days} ден} other{{days} дни}}",
+  "positionHeldSince": "от {date}"
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Notekê zêde bike",
   "lotNoteBuyHint": "Tu çima dikirî? Bi dîrokê re dikeve notên pişkê.",
   "lotNoteSellHint": "Tu çima difiroşî? Bi dîrokê re dikeve notên pişkê.",
-  "lotNoteBought": "Hate kirîn"
+  "lotNoteBought": "Hate kirîn",
+  "positionHeld": "Dema xwedîkirinê",
+  "durationMonths": "{months, plural, one{{months} meh} other{{months} meh}}",
+  "durationDays": "{days, plural, one{{days} roj} other{{days} roj}}",
+  "positionHeldSince": "ji {date} ve"
 }

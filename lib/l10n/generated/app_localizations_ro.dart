@@ -2756,6 +2756,38 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lotNoteBought => 'Cumpărat';
 
   @override
+  String get positionHeld => 'Perioadă de deținere';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months de luni',
+      few: '$months luni',
+      one: '$months lună',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days de zile',
+      few: '$days zile',
+      one: '$days zi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'din $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

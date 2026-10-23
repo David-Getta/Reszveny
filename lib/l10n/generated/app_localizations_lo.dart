@@ -2689,6 +2689,34 @@ class AppLocalizationsLo extends AppLocalizations {
   String get lotNoteBought => 'ຊື້ແລ້ວ';
 
   @override
+  String get positionHeld => 'ໄລຍະຖືຄອງ';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ເດືອນ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ມື້',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'ນັບແຕ່ $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

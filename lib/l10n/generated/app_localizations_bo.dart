@@ -2705,6 +2705,34 @@ class AppLocalizationsBo extends AppLocalizations {
   String get lotNoteBought => 'ཉོས་ཟིན';
 
   @override
+  String get positionHeld => 'ཉར་བའི་དུས་ཡུན';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'ཟླ་བ་ $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'ཉིན་ $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date ནས་བཟུང་';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Embojoapy peteĩ jehaipy",
   "lotNoteBuyHint": "¿Mbaʼérepa rejogua? Oike acción jehaipyrekuérape, arange ndive.",
   "lotNoteSellHint": "¿Mbaʼérepa reñemu? Oike acción jehaipyrekuérape, arange ndive.",
-  "lotNoteBought": "Jejogua"
+  "lotNoteBought": "Jejogua",
+  "positionHeld": "Mbovy aja reguereko",
+  "durationMonths": "{months, plural, one{{months} jasy} other{{months} jasy}}",
+  "durationDays": "{days, plural, one{{days} ára} other{{days} ára}}",
+  "positionHeldSince": "{date} guive"
 }

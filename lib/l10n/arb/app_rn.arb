@@ -819,5 +819,9 @@
   "lotNoteAdd": "Ongerako icandiko",
   "lotNoteBuyHint": "Ni kubera iki uriko uragura? Bizoja mu vyo wanditse ku mugabane, hamwe n'itarike.",
   "lotNoteSellHint": "Ni kubera iki uriko uragurisha? Bizoja mu vyo wanditse ku mugabane, hamwe n'itarike.",
-  "lotNoteBought": "Vyaguzwe"
+  "lotNoteBought": "Vyaguzwe",
+  "positionHeld": "Igihe umaranye",
+  "durationMonths": "{months, plural, one{ukwezi {months}} other{amezi {months}}}",
+  "durationDays": "{days, plural, one{umusi {days}} other{imisi {days}}}",
+  "positionHeldSince": "kuva {date}"
 }

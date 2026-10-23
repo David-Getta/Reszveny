@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.219)
+# Változásjegyzék (0.2.130 → 0.2.220)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -81,6 +81,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **Tranzakciós díj (jutalék)**: a vételhez és az eladáshoz megadható; a bekerülési értékbe, a realizált nyereségbe
   (az adó-CSV-be is) és az éves hozamba beszámít; a bróker-exportok díj-oszlopa (IBKR „Comm/Fee”) importáláskor
   bekerül; szinkronban, mentésben és a CSV-ben is.
+- **Tartási idő** a „Pozícióm” kártyán: mióta tartod a legrégebbi még birtokolt darabokat („Tartod: 1 év 7 hónap ·
+  2024. márc. 4. óta”).
 - **Jegyzet a tranzakcióhoz** (befektetési napló): a vétel/eladás dialógusban „Jegyzet hozzáadása” – a „miért veszed /
   adod el” a részvény jegyzeteinek végére kerül, dátummal, darabszámmal és árral; szinkronban, az AI-elemzés is látja.
 - **Előnézet rögzítés előtt** a vétel/eladás dialógusban: vételnél az új átlagár („Új átlagár: 150,00 USD (most
@@ -186,11 +188,12 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 
 ## Bolti „Újdonságok” (rövid)
 
-**Magyar:** Számlák (pl. TBSZ) és jutalék a portfólióban, éves összesítő az adóbevalláshoz, új befizetés
-elosztása a célarányok szerint, teljesítmény megosztása képként; kapott és várható osztalékok, készpénz a
-brókernél, „Miért mozog ma?” AI-magyarázat, technikai kép és jelzések, fogalomtár – mind 120 nyelven.
+**Magyar:** Import hat további brókertől (DEGIRO, Schwab, Fidelity, Robinhood, Scalable Capital, Lightyear –
+egy koppintással visszavonható), előnézet vétel és eladás előtt (új átlagár, várható realizált eredmény), idei
+hozam az indexhez mérve, távolság a riasztásig, jegyzet a tranzakcióhoz; számlák (pl. TBSZ) és jutalék, éves
+összesítő az adóbevalláshoz, Excelben rögtön megnyitható CSV-export – mind 120 nyelven.
 
-**English:** Accounts and fees in your portfolio, an annual summary for your tax return, splitting new money
-by your target weights, sharing your performance as an image; dividends received and expected, cash at your
-broker, “Why is it moving today?” AI explanations, a technical picture with signals and a glossary – all in
-120 languages.
+**English:** Imports from six more brokers (DEGIRO, Schwab, Fidelity, Robinhood, Scalable Capital, Lightyear –
+undo in one tap), a preview before you buy or sell (new average cost, expected realized gain), this year's return
+next to an index, how far each alert is from firing, a note on every trade; accounts and fees, an annual summary
+for your tax return, CSV exports that open straight in Excel – all in 120 languages.

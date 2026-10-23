@@ -2728,6 +2728,36 @@ class AppLocalizationsOm extends AppLocalizations {
   String get lotNoteBought => 'Bitame';
 
   @override
+  String get positionHeld => 'Yeroo qabannaa';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'ji\'a $months',
+      one: 'ji\'a $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'guyyaa $days',
+      one: 'guyyaa $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date irraa kaasee';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

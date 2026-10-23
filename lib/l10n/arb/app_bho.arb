@@ -819,5 +819,9 @@
   "lotNoteAdd": "नोट जोड़ीं",
   "lotNoteBuyHint": "रउआ काहे खरीदत बानी? ई तारीख के साथे शेयर के नोट में जुड़ जाई।",
   "lotNoteSellHint": "रउआ काहे बेचत बानी? ई तारीख के साथे शेयर के नोट में जुड़ जाई।",
-  "lotNoteBought": "खरीदल"
+  "lotNoteBought": "खरीदल",
+  "positionHeld": "रखे के अवधि",
+  "durationMonths": "{months, plural, one{{months} महीना} other{{months} महीना}}",
+  "durationDays": "{days, plural, one{{days} दिन} other{{days} दिन}}",
+  "positionHeldSince": "{date} से"
 }

@@ -819,5 +819,9 @@
   "lotNoteAdd": "Yongeza inqaku",
   "lotNoteBuyHint": "Kutheni usithenga? Kuya kongezwa kumanqaku esabelo, kunye nomhla.",
   "lotNoteSellHint": "Kutheni usithengisa? Kuya kongezwa kumanqaku esabelo, kunye nomhla.",
-  "lotNoteBought": "Kuthengiwe"
+  "lotNoteBought": "Kuthengiwe",
+  "positionHeld": "Ixesha lokubamba",
+  "durationMonths": "{months, plural, one{inyanga e-{months}} other{iinyanga ezi-{months}}}",
+  "durationDays": "{days, plural, one{usuku olu-{days}} other{iintsuku ezi-{days}}}",
+  "positionHeldSince": "ukususela ngo-{date}"
 }

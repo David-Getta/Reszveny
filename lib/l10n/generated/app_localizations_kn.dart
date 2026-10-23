@@ -2722,6 +2722,36 @@ class AppLocalizationsKn extends AppLocalizations {
   String get lotNoteBought => 'ಖರೀದಿ';
 
   @override
+  String get positionHeld => 'ಹೊಂದಿರುವ ಅವಧಿ';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ತಿಂಗಳುಗಳು',
+      one: '$months ತಿಂಗಳು',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ದಿನಗಳು',
+      one: '$days ದಿನ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date ರಿಂದ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

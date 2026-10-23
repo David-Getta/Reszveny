@@ -2725,6 +2725,36 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lotNoteBought => 'La iibsaday';
 
   @override
+  String get positionHeld => 'Muddada haysashada';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months bilood',
+      one: '$months bil',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days maalmood',
+      one: '$days maalin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'laga bilaabo $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

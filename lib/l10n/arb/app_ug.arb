@@ -819,5 +819,9 @@
   "lotNoteAdd": "خاتىرە قوشۇش",
   "lotNoteBuyHint": "نېمىشقا سېتىۋالىسىز؟ چېسلاسى بىلەن پاي چېكىنىڭ خاتىرىلىرىگە قوشۇلىدۇ.",
   "lotNoteSellHint": "نېمىشقا ساتىسىز؟ چېسلاسى بىلەن پاي چېكىنىڭ خاتىرىلىرىگە قوشۇلىدۇ.",
-  "lotNoteBought": "سېتىۋېلىندى"
+  "lotNoteBought": "سېتىۋېلىندى",
+  "positionHeld": "ساقلاش مۇددىتى",
+  "durationMonths": "{months, plural, one{{months} ئاي} other{{months} ئاي}}",
+  "durationDays": "{days, plural, one{{days} كۈن} other{{days} كۈن}}",
+  "positionHeldSince": "{date} دىن بۇيان"
 }

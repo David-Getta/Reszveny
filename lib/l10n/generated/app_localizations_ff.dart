@@ -2711,6 +2711,36 @@ class AppLocalizationsFf extends AppLocalizations {
   String get lotNoteBought => 'Soodaama';
 
   @override
+  String get positionHeld => 'Duumol jogagol';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'lebbi $months',
+      one: 'lewru $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'balɗe $days',
+      one: 'ñalnde $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'gila $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

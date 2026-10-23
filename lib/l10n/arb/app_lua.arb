@@ -819,5 +819,9 @@
   "lotNoteAdd": "Sakidila mufundu",
   "lotNoteBuyHint": "Bua tshinyi udi usumba? Bidi bifundibua mu mifundu ya action pamue ne dituku.",
   "lotNoteSellHint": "Bua tshinyi udi usumbisha? Bidi bifundibua mu mifundu ya action pamue ne dituku.",
-  "lotNoteBought": "Musumba"
+  "lotNoteBought": "Musumba",
+  "positionHeld": "Tshikondo tshia kulama",
+  "durationMonths": "{months, plural, one{ngondo {months}} other{ngondo {months}}}",
+  "durationDays": "{days, plural, one{dituku {days}} other{matuku {days}}}",
+  "positionHeldSince": "kubangila ku {date}"
 }

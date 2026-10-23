@@ -819,5 +819,9 @@
   "lotNoteAdd": "टिपोट थप्नुहोस्",
   "lotNoteBuyHint": "किन किन्दै हुनुहुन्छ? यो मितिसहित सेयरका टिपोटहरूमा थपिन्छ।",
   "lotNoteSellHint": "किन बेच्दै हुनुहुन्छ? यो मितिसहित सेयरका टिपोटहरूमा थपिन्छ।",
-  "lotNoteBought": "किनियो"
+  "lotNoteBought": "किनियो",
+  "positionHeld": "धारण अवधि",
+  "durationMonths": "{months, plural, one{{months} महिना} other{{months} महिना}}",
+  "durationDays": "{days, plural, one{{days} दिन} other{{days} दिन}}",
+  "positionHeldSince": "{date} देखि"
 }

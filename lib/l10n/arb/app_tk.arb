@@ -819,5 +819,9 @@
   "lotNoteAdd": "Bellik goş",
   "lotNoteBuyHint": "Näme üçin satyn alýarsyňyz? Sene bilen paýnamanyň belliklerine goşulýar.",
   "lotNoteSellHint": "Näme üçin satýarsyňyz? Sene bilen paýnamanyň belliklerine goşulýar.",
-  "lotNoteBought": "Satyn alyndy"
+  "lotNoteBought": "Satyn alyndy",
+  "positionHeld": "Saklama möhleti",
+  "durationMonths": "{months, plural, one{{months} aý} other{{months} aý}}",
+  "durationDays": "{days, plural, one{{days} gün} other{{days} gün}}",
+  "positionHeldSince": "{date} senesinden bäri"
 }

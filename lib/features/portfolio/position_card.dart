@@ -12,6 +12,16 @@ import 'dividend_forecast.dart';
 import 'portfolio_page.dart';
 import 'portfolio_valuation.dart';
 
+/// Mennyi ideje tart egy pozíciót: teljes évek, a maradék teljes hónapok, és (egy
+/// hónapon belül) a napok – naptári napok szerint.
+({int years, int months, int days}) heldFor(DateTime since, DateTime now) {
+  final from = DateTime(since.year, since.month, since.day), to = DateTime(now.year, now.month, now.day);
+  var months = (to.year - from.year) * 12 + to.month - from.month;
+  if (to.day < from.day) months--;
+  if (months < 0) months = 0;
+  return (years: months ~/ 12, months: months % 12, days: months == 0 ? to.difference(from).inDays : 0);
+}
+
 /// „A pozícióm” a részletes nézetben, ha a részvény a portfólióban van:
 /// darabszám, átlagár, jelenlegi érték, nyereség/veszteség és a napi változás.
 class PositionCard extends StatelessWidget {
@@ -77,6 +87,22 @@ class PositionCard extends StatelessWidget {
                     color: gainColor(p, r),
                     hint: l10n.portfolioAnnualReturnHint,
                   ),
+              // Mióta tartja: a legrégebbi még birtokolt vételtől (FIFO szerint).
+              // (A ma vett pozíciónál még nincs mit mutatni.)
+              if (pos.firstDate case final since? when heldFor(since, now) != (years: 0, months: 0, days: 0))
+                MetricFigure(
+                  key: const ValueKey('position-held'),
+                  label: l10n.positionHeld,
+                  value: switch (heldFor(since, now)) {
+                    (years: final y, months: final m, days: _) when y > 0 => [
+                      l10n.longTermYears(y),
+                      if (m > 0) l10n.durationMonths(m),
+                    ].join(' '),
+                    (years: _, months: final m, days: _) when m > 0 => l10n.durationMonths(m),
+                    (years: _, months: _, days: final d) => l10n.durationDays(d),
+                  },
+                  sub: l10n.positionHeldSince(fmt.date(since)),
+                ),
               if (pos.hasSales)
                 MetricFigure(
                   label: l10n.portfolioRealized,

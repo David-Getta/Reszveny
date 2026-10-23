@@ -2714,6 +2714,36 @@ class AppLocalizationsKab extends AppLocalizations {
   String get lotNoteBought => 'Yettwaɣ';
 
   @override
+  String get positionHeld => 'Akud n uṭṭaf';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months n wayyuren',
+      one: '$months n wayyur',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days n wussan',
+      one: '$days n wass',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'seg $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

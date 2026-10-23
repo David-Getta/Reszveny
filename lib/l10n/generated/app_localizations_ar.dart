@@ -2777,6 +2777,44 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lotNoteBought => 'شراء';
 
   @override
+  String get positionHeld => 'مدة الاحتفاظ';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months شهر',
+      many: '$months شهرًا',
+      few: '$months أشهر',
+      two: 'شهران',
+      one: 'شهر واحد',
+      zero: '$months شهر',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days يوم',
+      many: '$days يومًا',
+      few: '$days أيام',
+      two: 'يومان',
+      one: 'يوم واحد',
+      zero: '$days يوم',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'منذ $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

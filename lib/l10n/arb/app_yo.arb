@@ -819,5 +819,9 @@
   "lotNoteAdd": "Fi àkọsílẹ̀ kún",
   "lotNoteBuyHint": "Kí ló dé tí o fi ń rà á? A ó fi kún àwọn àkọsílẹ̀ ìpín náà, pẹ̀lú ọjọ́.",
   "lotNoteSellHint": "Kí ló dé tí o fi ń tà á? A ó fi kún àwọn àkọsílẹ̀ ìpín náà, pẹ̀lú ọjọ́.",
-  "lotNoteBought": "Rírà"
+  "lotNoteBought": "Rírà",
+  "positionHeld": "Àkókò tí o ti dì í mú",
+  "durationMonths": "{months, plural, other{oṣù {months}}}",
+  "durationDays": "{days, plural, other{ọjọ́ {days}}}",
+  "positionHeldSince": "láti {date}"
 }

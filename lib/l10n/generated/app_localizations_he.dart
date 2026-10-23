@@ -2708,6 +2708,38 @@ class AppLocalizationsHe extends AppLocalizations {
   String get lotNoteBought => 'נקנו';
 
   @override
+  String get positionHeld => 'תקופת החזקה';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months חודשים',
+      two: 'חודשיים',
+      one: 'חודש אחד',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ימים',
+      two: 'יומיים',
+      one: 'יום אחד',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'מאז $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

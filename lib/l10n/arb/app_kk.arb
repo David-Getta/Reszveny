@@ -819,5 +819,9 @@
   "lotNoteAdd": "Жазба қосу",
   "lotNoteBuyHint": "Неге сатып алып жатырсыз? Ол күнімен бірге акция жазбаларына қосылады.",
   "lotNoteSellHint": "Неге сатып жатырсыз? Ол күнімен бірге акция жазбаларына қосылады.",
-  "lotNoteBought": "Сатып алынды"
+  "lotNoteBought": "Сатып алынды",
+  "positionHeld": "Ұстау мерзімі",
+  "durationMonths": "{months, plural, one{{months} ай} other{{months} ай}}",
+  "durationDays": "{days, plural, one{{days} күн} other{{days} күн}}",
+  "positionHeldSince": "{date} бастап"
 }

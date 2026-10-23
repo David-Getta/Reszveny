@@ -2735,6 +2735,36 @@ class AppLocalizationsNso extends AppLocalizations {
   String get lotNoteBought => 'E rekilwe';
 
   @override
+  String get positionHeld => 'Nako yeo o e swerego';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'dikgwedi tše $months',
+      one: 'kgwedi e $months',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'matšatši a $days',
+      one: 'letšatši le $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'go tloga ka $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

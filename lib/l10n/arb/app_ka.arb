@@ -819,5 +819,9 @@
   "lotNoteAdd": "ჩანაწერის დამატება",
   "lotNoteBuyHint": "რატომ ყიდულობთ? თარიღთან ერთად აქციის ჩანაწერებში დაემატება.",
   "lotNoteSellHint": "რატომ ყიდით? თარიღთან ერთად აქციის ჩანაწერებში დაემატება.",
-  "lotNoteBought": "შეძენილია"
+  "lotNoteBought": "შეძენილია",
+  "positionHeld": "ფლობის ვადა",
+  "durationMonths": "{months, plural, one{{months} თვე} other{{months} თვე}}",
+  "durationDays": "{days, plural, one{{days} დღე} other{{days} დღე}}",
+  "positionHeldSince": "{date}-დან"
 }

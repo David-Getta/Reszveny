@@ -2643,6 +2643,34 @@ class AppLocalizationsKo extends AppLocalizations {
   String get lotNoteBought => '매수';
 
   @override
+  String get positionHeld => '보유 기간';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months개월',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days일',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date부터';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

@@ -2785,6 +2785,40 @@ class AppLocalizationsBe extends AppLocalizations {
   String get lotNoteBought => 'Куплена';
 
   @override
+  String get positionHeld => 'Тэрмін валодання';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months месяца',
+      many: '$months месяцаў',
+      few: '$months месяцы',
+      one: '$months месяц',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days дня',
+      many: '$days дзён',
+      few: '$days дні',
+      one: '$days дзень',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'з $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

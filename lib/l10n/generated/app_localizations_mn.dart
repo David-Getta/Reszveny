@@ -2716,6 +2716,36 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lotNoteBought => 'Авсан';
 
   @override
+  String get positionHeld => 'Эзэмшсэн хугацаа';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months сар',
+      one: '$months сар',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days өдөр',
+      one: '$days өдөр',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date өдрөөс хойш';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

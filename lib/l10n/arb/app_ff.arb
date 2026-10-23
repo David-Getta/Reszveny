@@ -819,5 +819,9 @@
   "lotNoteAdd": "Ɓeydu binndi",
   "lotNoteBuyHint": "Ko waɗi a soodata ɗum? Ɗum naatat e binndi aksiyoŋ oo, wondude e ñalnde.",
   "lotNoteSellHint": "Ko waɗi a yeeyata ɗum? Ɗum naatat e binndi aksiyoŋ oo, wondude e ñalnde.",
-  "lotNoteBought": "Soodaama"
+  "lotNoteBought": "Soodaama",
+  "positionHeld": "Duumol jogagol",
+  "durationMonths": "{months, plural, one{lewru {months}} other{lebbi {months}}}",
+  "durationDays": "{days, plural, one{ñalnde {days}} other{balɗe {days}}}",
+  "positionHeldSince": "gila {date}"
 }

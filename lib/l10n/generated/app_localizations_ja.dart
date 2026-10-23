@@ -2633,6 +2633,34 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lotNoteBought => '購入';
 
   @override
+  String get positionHeld => '保有期間';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$monthsか月',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days日',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$dateから';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

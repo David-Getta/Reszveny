@@ -819,5 +819,9 @@
   "lotNoteAdd": "បន្ថែមកំណត់ចំណាំ",
   "lotNoteBuyHint": "ហេតុអ្វីអ្នកទិញ? វានឹងចូលទៅក្នុងកំណត់ចំណាំរបស់ភាគហ៊ុន រួមជាមួយកាលបរិច្ឆេទ។",
   "lotNoteSellHint": "ហេតុអ្វីអ្នកលក់? វានឹងចូលទៅក្នុងកំណត់ចំណាំរបស់ភាគហ៊ុន រួមជាមួយកាលបរិច្ឆេទ។",
-  "lotNoteBought": "បានទិញ"
+  "lotNoteBought": "បានទិញ",
+  "positionHeld": "រយៈពេលកាន់កាប់",
+  "durationMonths": "{months, plural, other{{months} ខែ}}",
+  "durationDays": "{days, plural, other{{days} ថ្ងៃ}}",
+  "positionHeldSince": "ចាប់ពី {date}"
 }

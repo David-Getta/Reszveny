@@ -2327,6 +2327,38 @@
   "@lotNoteBought": {
     "description": "Word at the start of a note entry written from the buy dialog, e.g. \"Oct 23, 2026 · Bought 10 × 172.50 USD: …\" (the sell entry uses \"Sold\")."
   },
+  "positionHeld": "Held for",
+  "@positionHeld": {
+    "description": "My position card: label of how long the oldest shares still held have been owned, e.g. \"Held for 1 year 7 months\"."
+  },
+  "durationMonths": "{months, plural, one{1 month} other{{months} months}}",
+  "@durationMonths": {
+    "description": "A number of months as part of a duration, e.g. \"7 months\" (after a number of years, or alone).",
+    "placeholders": {
+      "months": {
+        "type": "int"
+      }
+    }
+  },
+  "durationDays": "{days, plural, one{1 day} other{{days} days}}",
+  "@durationDays": {
+    "description": "A number of days as a duration, e.g. \"12 days\".",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "positionHeldSince": "since {date}",
+  "@positionHeldSince": {
+    "description": "Under the holding period: the date of the oldest purchase still held, e.g. \"since Mar 4, 2024\".",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "Mar 4, 2024"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

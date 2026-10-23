@@ -819,5 +819,9 @@
   "lotNoteAdd": "Ku dar qoraal",
   "lotNoteBuyHint": "Maxaad u iibsanaysaa? Waxaa lagu darayaa qoraallada saamiga, taariikhda oo la socota.",
   "lotNoteSellHint": "Maxaad u iibinaysaa? Waxaa lagu darayaa qoraallada saamiga, taariikhda oo la socota.",
-  "lotNoteBought": "La iibsaday"
+  "lotNoteBought": "La iibsaday",
+  "positionHeld": "Muddada haysashada",
+  "durationMonths": "{months, plural, one{{months} bil} other{{months} bilood}}",
+  "durationDays": "{days, plural, one{{days} maalin} other{{days} maalmood}}",
+  "positionHeldSince": "laga bilaabo {date}"
 }

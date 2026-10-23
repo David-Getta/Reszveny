@@ -819,5 +819,9 @@
   "lotNoteAdd": "குறிப்பைச் சேர்",
   "lotNoteBuyHint": "ஏன் வாங்குகிறீர்கள்? இது தேதியுடன் பங்கின் குறிப்புகளில் சேர்க்கப்படும்.",
   "lotNoteSellHint": "ஏன் விற்கிறீர்கள்? இது தேதியுடன் பங்கின் குறிப்புகளில் சேர்க்கப்படும்.",
-  "lotNoteBought": "வாங்கியது"
+  "lotNoteBought": "வாங்கியது",
+  "positionHeld": "வைத்திருக்கும் காலம்",
+  "durationMonths": "{months, plural, one{{months} மாதம்} other{{months} மாதங்கள்}}",
+  "durationDays": "{days, plural, one{{days} நாள்} other{{days} நாட்கள்}}",
+  "positionHeldSince": "{date} முதல்"
 }

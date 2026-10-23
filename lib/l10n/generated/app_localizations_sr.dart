@@ -2763,6 +2763,38 @@ class AppLocalizationsSr extends AppLocalizations {
   String get lotNoteBought => 'Купљено';
 
   @override
+  String get positionHeld => 'Период држања';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months месеци',
+      few: '$months месеца',
+      one: '$months месец',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days дана',
+      few: '$days дана',
+      one: '$days дан',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return 'од $date';
+  }
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

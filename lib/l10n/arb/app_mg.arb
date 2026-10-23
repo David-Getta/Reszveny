@@ -819,5 +819,9 @@
   "lotNoteAdd": "Hanampy naoty",
   "lotNoteBuyHint": "Nahoana ianao no mividy? Hiditra ao amin'ny naotin'ny aksiona miaraka amin'ny daty izany.",
   "lotNoteSellHint": "Nahoana ianao no mivarotra? Hiditra ao amin'ny naotin'ny aksiona miaraka amin'ny daty izany.",
-  "lotNoteBought": "Novidiana"
+  "lotNoteBought": "Novidiana",
+  "positionHeld": "Faharetan'ny fitazonana",
+  "durationMonths": "{months, plural, one{{months} volana} other{{months} volana}}",
+  "durationDays": "{days, plural, one{{days} andro} other{{days} andro}}",
+  "positionHeldSince": "hatramin'ny {date}"
 }

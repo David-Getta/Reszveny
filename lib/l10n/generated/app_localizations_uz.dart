@@ -2720,6 +2720,36 @@ class AppLocalizationsUz extends AppLocalizations {
   String get lotNoteBought => 'Sotib olindi';
 
   @override
+  String get positionHeld => 'Saqlash muddati';
+
+  @override
+  String durationMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months oy',
+      one: '$months oy',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String durationDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days kun',
+      one: '$days kun',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionHeldSince(String date) {
+    return '$date sanasidan beri';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override
