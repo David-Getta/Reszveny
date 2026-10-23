@@ -424,7 +424,7 @@ class _PortfolioBody extends StatelessWidget {
                     ),
                   ),
                 ],
-                // Az osztalékok nem számlához kötöttek: számla-nézetben nem látszanak.
+                // Számla-nézetben a számla osztalékai (a havi osztalékcél csak a Minden számla nézetben).
                 DividendsCard(currency: ccy, annualDividend: s.annualDividend, account: account),
                 if (s.closed.isNotEmpty) ...[
                   Padding(

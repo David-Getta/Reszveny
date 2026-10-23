@@ -196,7 +196,18 @@ class DigestSender {
     final until = today.add(Duration(days: days));
     final out = <DigestDividend>[];
     for (final e in series.entries) {
-      final paidOn = e.value.keys.toList()..sort();
+      // Az egy héten belüli tételek (két brókernél, két számlán) egy kifizetés, az első
+      // napjával és az együttes összeggel – mint az appban (`payoutWindowDays`).
+      final paidOn = <DateTime>[];
+      final amountOn = <DateTime, double>{};
+      for (final day in e.value.keys.toList()..sort()) {
+        if (paidOn.isNotEmpty && day.difference(paidOn.last).inDays < 7) {
+          amountOn[paidOn.last] = amountOn[paidOn.last]! + e.value[day]!;
+        } else {
+          paidOn.add(day);
+          amountOn[day] = e.value[day]!;
+        }
+      }
       if (paidOn.length < 2) continue;
       // A legutóbbi legfeljebb négy távolság mediánja: a régi, ritkás előzmény ne torzítson.
       final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays];
@@ -204,7 +215,7 @@ class DigestSender {
       if (period == null) continue;
       final next = _addMonths(paidOn.last, period);
       if (next.isBefore(today) || next.isAfter(until)) continue;
-      out.add((symbol: e.key.$1, amount: e.value[paidOn.last]!, currency: e.key.$2, date: next));
+      out.add((symbol: e.key.$1, amount: amountOn[paidOn.last]!, currency: e.key.$2, date: next));
     }
     return out..sort((a, b) {
       final byDate = a.date.compareTo(b.date);

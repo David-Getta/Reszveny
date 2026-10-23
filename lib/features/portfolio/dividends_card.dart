@@ -209,14 +209,21 @@ class DividendsCard extends StatelessWidget {
                               tooltip: l10n.portfolioAddDividend,
                               visualDensity: VisualDensity.compact,
                               icon: Icon(Icons.add_circle_outline_rounded, size: 18, color: p.muted),
-                              onPressed: () => showAddDividendDialog(
-                                context,
-                                symbol: x.symbol,
-                                currency: x.currency,
-                                amount: x.amount,
-                                date: x.date,
-                                account: account,
-                              ),
+                              // Több számlán érkező kifizetésnél a legnagyobb rész a saját számlájára
+                              // (a többi a számla nézetéből vagy kézzel rögzíthető).
+                              onPressed: () {
+                                final part = account != null || x.byAccount.isEmpty
+                                    ? null
+                                    : (x.byAccount.entries.toList()..sort((a, b) => b.value.compareTo(a.value))).first;
+                                showAddDividendDialog(
+                                  context,
+                                  symbol: x.symbol,
+                                  currency: x.currency,
+                                  amount: part?.value ?? x.amount,
+                                  date: x.date,
+                                  account: part?.key ?? account,
+                                );
+                              },
                             ),
                           ],
                         ),

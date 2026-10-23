@@ -220,6 +220,17 @@ void main() {
     final ex = DigestSender.expectedDividendsOf(data, now: now);
     expect(ex.map((d) => (d.symbol, d.currency, d.date)), [('KO', 'USD', DateTime.utc(2026, 10, 30))]);
     expect(ex.single.amount, closeTo(5.1, 1e-9), reason: 'az egy napon rögzített két tétel együtt');
+    // Két számlán egy nap eltéréssel jóváírva: egy kifizetés (nem 1 napos ritmus).
+    final split = DigestSender.expectedDividendsOf({
+      'lots': data['lots'],
+      'dividends': [
+        {'symbol': 'KO', 'amount': 3, 'currency': 'USD', 'date': '2026-04-30', 'account': 'TBSZ'},
+        {'symbol': 'KO', 'amount': 2, 'currency': 'USD', 'date': '2026-05-01'},
+        {'symbol': 'KO', 'amount': 3, 'currency': 'USD', 'date': '2026-07-30', 'account': 'TBSZ'},
+        {'symbol': 'KO', 'amount': 2, 'currency': 'USD', 'date': '2026-07-31'},
+      ],
+    }, now: now);
+    expect(split.map((d) => (d.symbol, d.amount, d.date)), [('KO', 5.0, DateTime.utc(2026, 10, 30))]);
     // Két pénznemben (két brókernél) rögzítve: külön sorozatok, nem keverednek.
     final mixed = DigestSender.expectedDividendsOf({
       'lots': data['lots'],

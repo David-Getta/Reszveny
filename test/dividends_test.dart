@@ -100,6 +100,30 @@ void main() {
       },
     );
 
+    test('one payout credited on two accounts a day apart is one payment, split by account', () {
+      DividendRecord on(String? account, DateTime date, double amount) => DividendRecord(
+        id: '$account$date',
+        symbol: 'AAPL',
+        amount: amount,
+        currency: 'USD',
+        date: date,
+        account: account,
+      );
+      final out = expectedDividends(
+        [
+          on('TBSZ', DateTime(2026, 5, 14), 1.5),
+          on('Normál', DateTime(2026, 5, 15), 1.0),
+          on('TBSZ', DateTime(2026, 8, 13), 1.5),
+          on('Normál', DateTime(2026, 8, 14), 1.0),
+        ],
+        ['AAPL'],
+        now: now,
+      );
+      expect(out.single.date, DateTime(2026, 11, 13));
+      expect(out.single.amount, 2.5);
+      expect(out.single.byAccount, {'TBSZ': 1.5, 'Normál': 1.0});
+    });
+
     test('monthly, half-yearly and yearly rhythms; irregular or too sparse series give nothing', () {
       expect(periodMonthsFor(31), 1);
       expect(periodMonthsFor(91), 3);
@@ -328,10 +352,17 @@ void main() {
       ];
       final expected = <ExpectedDividend>[
         // Havonta fizető: a következő három hónapban is.
-        (symbol: 'O', date: DateTime(2026, 11, 14), amount: 1, currency: 'USD', periodMonths: 1),
+        (symbol: 'O', date: DateTime(2026, 11, 14), amount: 1, currency: 'USD', periodMonths: 1, byAccount: const {}),
         // Negyedéves: csak egyszer fér az ablakba.
-        (symbol: 'AAPL', date: DateTime(2026, 11, 13), amount: 3, currency: 'USD', periodMonths: 3),
-        (symbol: 'X', date: DateTime(2026, 12, 1), amount: 4, currency: 'CHF', periodMonths: 3),
+        (
+          symbol: 'AAPL',
+          date: DateTime(2026, 11, 13),
+          amount: 3,
+          currency: 'USD',
+          periodMonths: 3,
+          byAccount: const {},
+        ),
+        (symbol: 'X', date: DateTime(2026, 12, 1), amount: 4, currency: 'CHF', periodMonths: 3, byAccount: const {}),
       ];
       final months = dividendMonths(
         ds,
@@ -357,7 +388,7 @@ void main() {
       // Hónapfordulón fizető havi részvény: minden hónapban pontosan egyszer (nem 30 naponként csúszva).
       final edge = dividendMonths(
         const [],
-        [(symbol: 'M', date: DateTime(2026, 12, 1), amount: 1, currency: 'USD', periodMonths: 1)],
+        [(symbol: 'M', date: DateTime(2026, 12, 1), amount: 1, currency: 'USD', periodMonths: 1, byAccount: const {})],
         now: DateTime(2026, 11, 22),
         rate: (_) => 1.0,
       );

@@ -85,9 +85,11 @@ class _AnnualSummarySheetState extends State<_AnnualSummarySheet> {
   /// A sorok szövegként (a megosztáshoz): év, számla, pénznem és az összegek.
   String _text(AppLocalizations l10n, Fmt fmt, int year, List<SummaryRow> rows) {
     final b = StringBuffer('${l10n.portfolioAnnualSummary} $year\n');
+    // Ugyanaz a fejléc, mint a lapon (számlák esetén a számla nélküli rész is megnevezve).
+    final withAccounts = rows.any((r) => r.account != null);
     for (final r in rows) {
       b.writeln();
-      b.writeln([?r.account, r.currency].join(' · '));
+      b.writeln([if (withAccounts) r.account ?? l10n.portfolioNoAccount, r.currency].join(' · '));
       if (r.sales > 0) {
         b.writeln('${l10n.portfolioProceeds}: ${fmt.money(r.proceeds, r.currency)}');
         b.writeln('${l10n.portfolioCostBasis}: ${fmt.money(r.cost, r.currency)}');
