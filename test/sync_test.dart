@@ -374,6 +374,63 @@ void main() {
     expect(a.notes.of('AAPL')?.text, 'Bought again.');
   });
 
+  test('alerts: an offline edit beats a later server mark of the old setting; a reset peak is not undone', () {
+    Map<String, dynamic> side(Map<String, dynamic> a) => {
+      'alerts': [
+        {'id': 'x', 'symbol': 'AAPL', 'created_at': '2026-10-01T00:00:00Z', ...a},
+      ],
+    };
+    Map merged(Map<String, dynamic> l, Map<String, dynamic> r) =>
+        (SyncService.merge(l, r)['alerts'] as List).single as Map;
+    // 10:00-kor 300-ra emelve (még nem szinkronizált); 10:01-kor a szerver a régi 250-re jelöl.
+    final edited = side({'kind': 'above', 'value': 300, 'edited': '2026-10-15T10:00:00Z'});
+    final marked = side({'kind': 'above', 'value': 250, 'triggered_at': '2026-10-15T10:01:00Z'});
+    for (final m in [merged(edited, marked), merged(marked, edited)]) {
+      expect((m['value'], m['triggered_at']), (300, null));
+    }
+    // Követő stop szigorítva (5%, a csúcs a mostani 95-re állt): a régi 100-as csúcs nem jön vissza.
+    final tightened = side({'kind': 'trailing', 'value': 5, 'peak': 95, 'edited': '2026-10-15T10:00:00Z'});
+    final old = side({'kind': 'trailing', 'value': 10, 'peak': 100});
+    for (final m in [merged(tightened, old), merged(old, tightened)]) {
+      expect(PriceAlert.fromJson(m.cast<String, dynamic>())!.trailingLevel, closeTo(90.25, 1e-9));
+    }
+  });
+
+  test('a trailing stop tightened while the server wrote meanwhile keeps its new peak end to end', () async {
+    final server = _Server();
+    SharedPreferences.setMockInitialValues({});
+    final a = _Device(server);
+    final x = await a.alerts.add(symbol: 'AAPL', kind: AlertKind.trailing, value: 10, currency: 'USD', peak: 100);
+    await a.sync.start();
+    // A szerver közben írt (pl. egy másik riasztás csúcsát mentette).
+    server.data = jsonDecode(jsonEncode(server.data)) as Map<String, dynamic>;
+    server.updatedAt = DateTime.utc(2026, 10, 15, 10);
+    await a.alerts.edit(x.id, kind: AlertKind.trailing, value: 5, currency: 'USD', peak: 95);
+    await a.sync.syncNow();
+    expect(a.alerts.alerts.single.trailingLevel, closeTo(90.25, 1e-9));
+    expect((server.data!['alerts'] as List).single['peak'], 95);
+  });
+
+  test('a server that keeps refusing the upload leaves the sync failed, not looping', () async {
+    final server = _Server();
+    SharedPreferences.setMockInitialValues({});
+    final a = _Device(server);
+    await a.sync.start();
+    await a.portfolio.add(symbol: 'AAPL', quantity: 1, price: 180, currency: 'USD');
+    var gets = 0;
+    void writeBetween() {
+      gets++;
+      server.updatedAt = DateTime.utc(2026, 10, 16, 0, 0, gets);
+      server.afterNextGet = writeBetween;
+    }
+
+    server.afterNextGet = writeBetween;
+    await a.sync.syncNow();
+    expect(a.sync.failed, isTrue);
+    expect(server.conflicts, 3);
+    server.afterNextGet = null;
+  });
+
   test('goals follow the account: the newer change wins, a removed goal does not come back', () async {
     final server = _Server();
     SharedPreferences.setMockInitialValues({});

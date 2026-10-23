@@ -40,6 +40,21 @@ void main() {
     expect(Backup.parse('not json'), isNull);
   });
 
+  test('restoring brings back an alert and a note deleted after the backup', () async {
+    final a = services();
+    final alert = await a.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 250, currency: 'USD');
+    await a.notes.set('AAPL', 'Why I bought.');
+    final file = jsonEncode(Backup.data(a));
+    await a.alerts.remove(alert.id);
+    await a.notes.set('AAPL', '');
+    await Backup.restore(a, Backup.parse(file)!);
+    expect(a.alerts.alerts.single.id, alert.id);
+    expect(a.alerts.alerts.single.modified, isNotNull, reason: 'újabbnak jelölve');
+    expect(a.notes.of('AAPL')?.text, 'Why I bought.');
+    expect(a.alerts.deletedJson, isEmpty);
+    expect(a.notes.deletedJson, isEmpty);
+  });
+
   test('restoring brings back what was deleted after the backup; other deletions stay deleted', () async {
     final a = services();
     final kept = await a.portfolio.add(symbol: 'AAPL', quantity: 3, price: 180, currency: 'USD');

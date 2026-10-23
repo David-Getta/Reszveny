@@ -208,15 +208,13 @@ class SyncService extends ChangeNotifier {
         _ => false,
       },
     );
-    // Riasztás: azonosítónként a később változott (szerkesztés, újraélesítés vagy
-    // teljesülés ideje) nyer; egyezésnél a teljesült (a szerver is megjelölhette),
-    // hogy egy már kiküldött riasztás ne éledjen újra. Két aktív példánál a
-    // követő stop magasabb csúcsa marad.
+    // Riasztás: azonosítónként a felhasználó később módosított változata nyer
+    // (szerkesztés, újraélesítés, visszaállítás – a teljesülés ideje nem számít,
+    // az a régi beállítás szerint történt). Azonos módosításnál a teljesült (a
+    // szerver is megjelölhette), hogy egy már kiküldött riasztás ne éledjen újra;
+    // két aktív példánál a követő stop magasabb csúcsa marad.
     DateTime? at(Object? v) => DateTime.tryParse('${v ?? ''}');
-    DateTime changed(Map<String, dynamic> a) {
-      final times = [?at(a['edited']), ?at(a['triggered_at'])];
-      return times.isEmpty ? DateTime(0) : times.reduce((x, y) => y.isAfter(x) ? y : x);
-    }
+    DateTime edit(Map<String, dynamic> a) => at(a['edited']) ?? DateTime(0);
 
     final alertsMerged = <Map<String, dynamic>>[];
     final alertIndex = <String, int>{};
@@ -228,20 +226,20 @@ class SyncService extends ChangeNotifier {
         continue;
       }
       final cur = alertsMerged[i];
-      final (ca, cc) = (changed(a), changed(cur));
-      final pick = ca.isAfter(cc) || (!cc.isAfter(ca) && cur['triggered_at'] == null && a['triggered_at'] != null)
-          ? a
-          : cur;
-      final other = identical(pick, a) ? cur : a;
-      // Követő stop: a két oldal közül a magasabb csúcs marad (ha mindkettő aktív).
-      if (pick['triggered_at'] == null && other['triggered_at'] == null && other['peak'] is num) {
-        final mine = pick['peak'];
-        if (mine is! num || (other['peak'] as num) > mine) {
-          alertsMerged[i] = {...pick, 'peak': other['peak']};
-          continue;
+      final (ea, ec) = (edit(a), edit(cur));
+      if (ea.isAfter(ec)) {
+        alertsMerged[i] = a;
+      } else if (ea.isAtSameMomentAs(ec)) {
+        final (ta, tc) = (at(a['triggered_at']), at(cur['triggered_at']));
+        if (ta != null && (tc == null || ta.isBefore(tc))) {
+          // A korábbi teljesülés az érvényes (a kiküldött e-mail ahhoz tartozik).
+          alertsMerged[i] = a;
+        } else if (ta == null && tc == null && a['peak'] is num) {
+          // Követő stop ugyanabban a beállításban: a magasabb csúcs marad.
+          final mine = cur['peak'];
+          if (mine is! num || (a['peak'] as num) > mine) alertsMerged[i] = {...cur, 'peak': a['peak']};
         }
       }
-      alertsMerged[i] = pick;
     }
     // A törölt riasztás csak akkor marad, ha a törlés után szerkesztették (a
     // szerver jelölése nem számít: az a törlésről még nem tudhatott).
@@ -525,12 +523,12 @@ class SyncService extends ChangeNotifier {
     final firstHere = _syncedEmail != account.email;
     if (data == null) {
       await _push(snapshot(), base: null);
-    } else if (firstHere || (_dirty && base != null && _last != null && base.isAfter(_last!))) {
+    } else if (firstHere || (_dirty && base != null && _last != null && !base.isAtSameMomentAs(_last!))) {
       // Első belépés ezen az eszközön, vagy mindkét oldalon volt változás.
       final merged = merge(snapshot(), data);
       await _apply(merged);
       await _push(merged, base: base);
-    } else if (base != null && (_last == null || base.isAfter(_last!))) {
+    } else if (base != null && (_last == null || !base.isAtSameMomentAs(_last!))) {
       final kept = await _apply(data);
       _last = base;
       (await SharedPreferences.getInstance()).setString(_lastKey, base.toIso8601String());

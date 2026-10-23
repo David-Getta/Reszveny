@@ -45,40 +45,50 @@ class Backup {
       alerts: s.alerts,
       notes: s.notes,
     );
-    // A mentés után törölt (most hiányzó) tételek visszajönnek: a törlési jelzésük
-    // kimarad, és a tétel újabbnak jelölve, hogy egy másik eszköz jelzése se vigye
-    // el újra. A most is meglévőt a szokásos összefésülés kezeli (az újabb nyer).
-    final deleted = (now['deleted'] as Map? ?? const {}).cast<String, dynamic>();
-    final present = {
-      for (final key in ['lots', 'dividends', 'splits'])
+    // A mentés után törölt (most hiányzó) tranzakciók, osztalékok, felaprózások,
+    // riasztások és jegyzetek visszajönnek: a törlési jelzésük kimarad, és a tétel
+    // újabbnak jelölve, hogy egy másik eszköz jelzése se vigye el újra. A most is
+    // meglévőt a szokásos összefésülés kezeli (az újabb nyer).
+    Set<String> idsOf(List<String> keys) => {
+      for (final key in keys)
         for (final m in (now[key] as List? ?? const [])) '${(m as Map)['id']}',
     };
-    final stamp = DateTime.now().toUtc().toIso8601String();
-    final revived = <String>{};
-    List<Object?> revive(Object? items) {
-      final out = <Object?>[];
-      for (final m in items is List ? items : const []) {
-        final id = m is Map ? '${m['id']}' : '';
-        if (m is Map && deleted.containsKey(id) && !present.contains(id)) {
-          revived.add(id);
-          out.add({...m, 'edited': stamp});
-        } else {
-          out.add(m);
-        }
-      }
-      return out;
+    final present = {
+      'deleted': idsOf(['lots', 'dividends', 'splits']),
+      'alerts_deleted': idsOf(['alerts']),
+      'notes_deleted': {for (final k in (now['notes'] as Map? ?? const {}).keys) '$k'},
+    };
+    final revived = {for (final k in present.keys) k: <String>{}};
+    // Visszajön-e (és ha igen, feljegyzi).
+    bool back(String tombKey, String id) {
+      final gone = (now[tombKey] as Map? ?? const {}).containsKey(id) && !present[tombKey]!.contains(id);
+      if (gone) revived[tombKey]!.add(id);
+      return gone;
     }
 
+    final stamp = DateTime.now().toUtc().toIso8601String();
+    List<Object?> reviveList(Object? items, String tombKey) => [
+      for (final m in items is List ? items : const [])
+        if (m is Map && back(tombKey, '${m['id']}')) {...m, 'edited': stamp} else m,
+    ];
     final fromBackup = {
       ...backup,
-      for (final key in ['lots', 'dividends', 'splits']) key: revive(backup[key]),
+      for (final key in ['lots', 'dividends', 'splits']) key: reviveList(backup[key], 'deleted'),
+      'alerts': reviveList(backup['alerts'], 'alerts_deleted'),
+      'notes': {
+        for (final e in (backup['notes'] as Map? ?? const {}).entries)
+          '${e.key}': e.value is Map && back('notes_deleted', '${e.key}')
+              ? {...e.value as Map, 'updated_at': stamp}
+              : e.value,
+      },
     };
     final current = {
       ...now,
-      'deleted': {
-        for (final e in deleted.entries)
-          if (!revived.contains(e.key)) e.key: e.value,
-      },
+      for (final e in revived.entries)
+        e.key: {
+          for (final t in (now[e.key] as Map? ?? const {}).entries)
+            if (!e.value.contains(t.key)) t.key: t.value,
+        },
     };
     // A beállítások (e-mailes riasztás, heti összefoglaló) maradnak, ahogy most vannak.
     final merged = {
