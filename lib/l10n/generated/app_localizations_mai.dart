@@ -2599,6 +2599,23 @@ class AppLocalizationsMai extends AppLocalizations {
   String get shareNotAdvice => 'निवेशक सलाह नहि';
 
   @override
+  String get contributionButton => 'नव पाइ निवेश करू';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'निवेशक राशि ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'केवल खरीद, बिक्री नहि: जे पोजीशन अपन लक्ष्यसँ सभसँ बेसी पाछाँ अछि, तकरा पहिने पाइ भेटैत अछि।';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares शेयर';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

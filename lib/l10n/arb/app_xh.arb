@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Iipozishini ezinkulu",
   "portfolioShareNote": "Kwabelwana ngeepesenti kuphela, hayi ngezixa zemali.",
   "portfolioPositionsCount": "{count, plural, one{Ipozishini e-{count}} other{Iipozishini ezi-{count}}}",
-  "shareNotAdvice": "Ayilocebiso lotyalo-mali"
+  "shareNotAdvice": "Ayilocebiso lotyalo-mali",
+  "contributionButton": "Tyala imali entsha",
+  "contributionAmount": "Isixa sokutyala ({currency})",
+  "contributionHint": "Kuthengwa kuphela, akuthengiswa: iipozishini ezingaphantsi kakhulu kwenjongo yazo zifumana imali kuqala.",
+  "contributionShares": "≈ izabelo {shares}"
 }

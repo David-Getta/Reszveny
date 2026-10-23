@@ -2609,6 +2609,23 @@ class AppLocalizationsKu extends AppLocalizations {
   String get shareNotAdvice => 'Ne şîreta veberhênanê ye';
 
   @override
+  String get contributionButton => 'Pereyên nû veberhêne';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Mîqdara veberhênanê ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Tenê kirîn, bê firotin: pozîsyonên ku herî zêde di bin armanca xwe de ne, pêşî pere distînin.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares pişk';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

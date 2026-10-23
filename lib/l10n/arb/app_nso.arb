@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Maemo a magolo kudu",
   "portfolioShareNote": "Go abelanwa diphesente fela, e sego dipalo tša tšhelete.",
   "portfolioPositionsCount": "{count, plural, one{Boemo bo {count}} other{Maemo a {count}}}",
-  "shareNotAdvice": "Ga se keletšo ya peeletšo"
+  "shareNotAdvice": "Ga se keletšo ya peeletšo",
+  "contributionButton": "Beeletša tšhelete ye mpsha",
+  "contributionAmount": "Tšhelete ya go beeletša ({currency})",
+  "contributionHint": "Go reka fela, ga go rekišwe: maemo ao a lego ka fase kudu ga nepo ya ona a hwetša tšhelete pele.",
+  "contributionShares": "≈ dišere tše {shares}"
 }

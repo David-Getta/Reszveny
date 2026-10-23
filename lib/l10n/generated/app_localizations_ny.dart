@@ -2615,6 +2615,23 @@ class AppLocalizationsNy extends AppLocalizations {
   String get shareNotAdvice => 'Si malangizo okhudza kuyika ndalama';
 
   @override
+  String get contributionButton => 'Ikani ndalama zatsopano';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Ndalama zoti muike ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Kugula kokha, osagulitsa: masheya omwe ali pansi kwambiri pa cholinga chawo amalandira ndalama poyamba.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ masheya $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

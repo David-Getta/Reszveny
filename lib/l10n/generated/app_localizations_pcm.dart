@@ -2606,6 +2606,23 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get shareNotAdvice => 'E no be investment advice';
 
   @override
+  String get contributionButton => 'Invest new moni';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Amount to invest ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Na only buy, no sell: di stocks wey fall pass under dia target go first collect di moni.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

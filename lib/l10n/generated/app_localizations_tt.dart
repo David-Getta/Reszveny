@@ -2604,6 +2604,23 @@ class AppLocalizationsTt extends AppLocalizations {
   String get shareNotAdvice => 'Инвестиция киңәше түгел';
 
   @override
+  String get contributionButton => 'Яңа акча салу';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Салына торган сумма ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Сатып алу гына, сату юк: акча иң элек максатыннан иң күп калышкан позицияләргә бирелә.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares акция';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

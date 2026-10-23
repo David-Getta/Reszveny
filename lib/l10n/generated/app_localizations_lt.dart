@@ -2673,6 +2673,23 @@ class AppLocalizationsLt extends AppLocalizations {
   String get shareNotAdvice => 'Tai nėra investavimo rekomendacija';
 
   @override
+  String get contributionButton => 'Investuoti naujus pinigus';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Investuojama suma ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Tik pirkimai, jokių pardavimų: pinigus pirmiausia gauna pozicijos, labiausiai atsiliekančios nuo savo tikslo.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares vnt.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

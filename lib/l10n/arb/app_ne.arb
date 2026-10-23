@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "सबैभन्दा ठूला पोजिसनहरू",
   "portfolioShareNote": "प्रतिशत मात्र सेयर गरिन्छ, रकम होइन।",
   "portfolioPositionsCount": "{count, plural, one{{count} पोजिसन} other{{count} पोजिसन}}",
-  "shareNotAdvice": "लगानी सल्लाह होइन"
+  "shareNotAdvice": "लगानी सल्लाह होइन",
+  "contributionButton": "नयाँ रकम लगानी गर्नुहोस्",
+  "contributionAmount": "लगानी गर्ने रकम ({currency})",
+  "contributionHint": "केवल खरिद, बिक्री होइन: आफ्नो लक्ष्यभन्दा सबैभन्दा तल रहेका पोजिसनहरूले पहिले रकम पाउँछन्।",
+  "contributionShares": "≈ {shares} शेयर"
 }

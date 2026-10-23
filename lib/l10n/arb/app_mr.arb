@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "सर्वांत मोठ्या पोझिशन्स",
   "portfolioShareNote": "फक्त टक्केवारी शेअर होते, रक्कम नाही.",
   "portfolioPositionsCount": "{count, plural, one{{count} पोझिशन} other{{count} पोझिशन्स}}",
-  "shareNotAdvice": "गुंतवणूक सल्ला नाही"
+  "shareNotAdvice": "गुंतवणूक सल्ला नाही",
+  "contributionButton": "नवीन रक्कम गुंतवा",
+  "contributionAmount": "गुंतवायची रक्कम ({currency})",
+  "contributionHint": "फक्त खरेदी, विक्री नाही: आपल्या लक्ष्यापेक्षा सर्वाधिक खाली असलेल्या पोझिशन्सना आधी रक्कम मिळते.",
+  "contributionShares": "≈ {shares} शेअर्स"
 }

@@ -2608,6 +2608,23 @@ class AppLocalizationsBg extends AppLocalizations {
   String get shareNotAdvice => 'Не е инвестиционен съвет';
 
   @override
+  String get contributionButton => 'Инвестиране на нови пари';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Сума за инвестиране ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Само покупки, без продажби: първо получават пари позициите, които най-много изостават от целта си.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares акции';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

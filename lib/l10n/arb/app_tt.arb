@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Иң зур позицияләр",
   "portfolioShareNote": "Процентлар гына бүлешелә, суммалар юк.",
   "portfolioPositionsCount": "{count, plural, one{{count} позиция} other{{count} позиция}}",
-  "shareNotAdvice": "Инвестиция киңәше түгел"
+  "shareNotAdvice": "Инвестиция киңәше түгел",
+  "contributionButton": "Яңа акча салу",
+  "contributionAmount": "Салына торган сумма ({currency})",
+  "contributionHint": "Сатып алу гына, сату юк: акча иң элек максатыннан иң күп калышкан позицияләргә бирелә.",
+  "contributionShares": "≈ {shares} акция"
 }

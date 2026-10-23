@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Position minene",
   "portfolioShareNote": "Badi babanya anu ma pourcentage, kabena babanya makuta to.",
   "portfolioPositionsCount": "{count, plural, =1{Tshitupa 1} other{Bitupa {count}}}",
-  "shareNotAdvice": "Kadiena mibelu ya kuteka mfranga"
+  "shareNotAdvice": "Kadiena mibelu ya kuteka mfranga",
+  "contributionButton": "Teka mfranga mipiamipia",
+  "contributionAmount": "Bungi bua mfranga ya kuteka ({currency})",
+  "contributionHint": "Kusumba patupu, kakuyi kusumbisha: ma-position adi kule kupita ku muinshi kua tshipatshila tshiawu ke adi apeta mfranga kumpala.",
+  "contributionShares": "≈ action {shares}"
 }

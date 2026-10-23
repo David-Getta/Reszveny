@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "ትልልቅ ይዞታዎች",
   "portfolioShareNote": "የሚጋሩት መቶኛዎች ብቻ ናቸው፤ መጠኖች አይጋሩም።",
   "portfolioPositionsCount": "{count, plural, =1{1 ይዞታ} other{{count} ይዞታዎች}}",
-  "shareNotAdvice": "የኢንቨስትመንት ምክር አይደለም"
+  "shareNotAdvice": "የኢንቨስትመንት ምክር አይደለም",
+  "contributionButton": "አዲስ ገንዘብ ኢንቨስት ያድርጉ",
+  "contributionAmount": "ኢንቨስት የሚደረገው መጠን ({currency})",
+  "contributionHint": "ግዢ ብቻ፣ ሽያጭ የለም፦ ከዒላማቸው በጣም ወደ ኋላ የቀሩት ይዞታዎች ገንዘቡን መጀመሪያ ያገኛሉ።",
+  "contributionShares": "≈ {shares} አክሲዮኖች"
 }

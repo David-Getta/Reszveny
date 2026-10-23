@@ -2598,6 +2598,23 @@ class AppLocalizationsPs extends AppLocalizations {
   String get shareNotAdvice => 'د پانګونې مشوره نه ده';
 
   @override
+  String get contributionButton => 'نوې پیسې پانګونه کړئ';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'د پانګونې اندازه ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'یوازې پېرود، پلور نه: هغه پوزیشنونه چې له خپل هدف څخه تر ټولو ډېر ټیټ دي، لومړی پیسې ترلاسه کوي.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares ونډې';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

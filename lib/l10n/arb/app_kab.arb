@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Iksyunen imeqqranen",
   "portfolioShareNote": "Ala ifmiḍen i yettwabḍan, ulac azalen.",
   "portfolioPositionsCount": "{count, plural, =1{1 n wadeg} other{{count} n yimukan}}",
-  "shareNotAdvice": "Ur d awellih n usersi n yidrimen ara"
+  "shareNotAdvice": "Ur d awellih n usersi n yidrimen ara",
+  "contributionButton": "Sers idrimen imaynuten",
+  "contributionAmount": "Azal ara tserseḍ ({currency})",
+  "contributionHint": "Asɣi kan, ulac azenzi: iksyunen yeqqimen ugar deffir yiswi-nsen ad awin idrimen d imezwura.",
+  "contributionShares": "≈ {shares} n yiksyunen"
 }

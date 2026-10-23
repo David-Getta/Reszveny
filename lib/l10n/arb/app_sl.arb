@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Največje pozicije",
   "portfolioShareNote": "Delijo se samo odstotki, brez zneskov.",
   "portfolioPositionsCount": "{count, plural, one{{count} pozicija} two{{count} poziciji} few{{count} pozicije} other{{count} pozicij}}",
-  "shareNotAdvice": "Ni naložbeni nasvet"
+  "shareNotAdvice": "Ni naložbeni nasvet",
+  "contributionButton": "Vloži nov denar",
+  "contributionAmount": "Znesek za naložbo ({currency})",
+  "contributionHint": "Samo nakupi, brez prodaj: denar najprej dobijo pozicije, ki so najbolj pod svojim ciljem.",
+  "contributionShares": "≈ {shares} delnic"
 }

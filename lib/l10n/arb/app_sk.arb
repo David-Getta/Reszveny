@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Najväčšie pozície",
   "portfolioShareNote": "Zdieľajú sa len percentá, žiadne sumy.",
   "portfolioPositionsCount": "{count, plural, one{{count} pozícia} few{{count} pozície} many{{count} pozície} other{{count} pozícií}}",
-  "shareNotAdvice": "Nie je investičné odporúčanie"
+  "shareNotAdvice": "Nie je investičné odporúčanie",
+  "contributionButton": "Investovať nové peniaze",
+  "contributionAmount": "Suma na investovanie ({currency})",
+  "contributionHint": "Len nákupy, žiadne predaje: peniaze dostanú najskôr pozície, ktoré sú najviac pod svojím cieľom.",
+  "contributionShares": "≈ {shares} ks"
 }

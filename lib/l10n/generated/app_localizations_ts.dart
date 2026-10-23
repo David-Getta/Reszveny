@@ -2627,6 +2627,23 @@ class AppLocalizationsTs extends AppLocalizations {
   String get shareNotAdvice => 'A hi ndzayo ya vuvekisi';
 
   @override
+  String get contributionButton => 'Vekisa mali leyintshwa';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Mali yo vekisa ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Ku xava ntsena, ku hava ku xavisa: tixere leti nga ehansi swinene ka xikongomelo xa tona ti kuma mali ku sungula.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ tixere ta $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

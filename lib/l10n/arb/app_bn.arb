@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "সবচেয়ে বড় অবস্থান",
   "portfolioShareNote": "শুধু শতাংশ শেয়ার করা হয়, কোনো পরিমাণ নয়।",
   "portfolioPositionsCount": "{count, plural, =1{1টি অবস্থান} other{{count}টি অবস্থান}}",
-  "shareNotAdvice": "বিনিয়োগ পরামর্শ নয়"
+  "shareNotAdvice": "বিনিয়োগ পরামর্শ নয়",
+  "contributionButton": "নতুন টাকা বিনিয়োগ করুন",
+  "contributionAmount": "বিনিয়োগের পরিমাণ ({currency})",
+  "contributionHint": "শুধু কেনা, কোনো বিক্রি নয়: লক্ষ্যের চেয়ে সবচেয়ে বেশি পিছিয়ে থাকা অবস্থানগুলো আগে টাকা পায়।",
+  "contributionShares": "≈ {shares} শেয়ার"
 }

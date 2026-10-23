@@ -2674,6 +2674,23 @@ class AppLocalizationsBe extends AppLocalizations {
   String get shareNotAdvice => 'Не з’яўляецца інвестыцыйнай парадай';
 
   @override
+  String get contributionButton => 'Укласці новыя грошы';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Сума для ўкладання ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Толькі куплі, без продажаў: грошы спачатку атрымліваюць пазіцыі, якія найбольш адстаюць ад мэты.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares шт.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

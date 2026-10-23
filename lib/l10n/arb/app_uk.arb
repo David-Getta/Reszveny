@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Найбільші позиції",
   "portfolioShareNote": "Передаються лише відсотки, без сум.",
   "portfolioPositionsCount": "{count, plural, one{{count} позиція} few{{count} позиції} many{{count} позицій} other{{count} позиції}}",
-  "shareNotAdvice": "Не інвестиційна порада"
+  "shareNotAdvice": "Не інвестиційна порада",
+  "contributionButton": "Вкласти нові гроші",
+  "contributionAmount": "Сума для вкладення ({currency})",
+  "contributionHint": "Лише купівлі, без продажів: гроші спершу отримують позиції, які найбільше відстають від цілі.",
+  "contributionShares": "≈ {shares} шт."
 }

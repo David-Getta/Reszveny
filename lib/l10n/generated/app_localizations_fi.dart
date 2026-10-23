@@ -2608,6 +2608,23 @@ class AppLocalizationsFi extends AppLocalizations {
   String get shareNotAdvice => 'Ei sijoitusneuvontaa';
 
   @override
+  String get contributionButton => 'Sijoita uutta rahaa';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Sijoitettava summa ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Vain ostoja, ei myyntejä: eniten tavoitteestaan jäljessä olevat omistukset saavat rahat ensin.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares osaketta';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

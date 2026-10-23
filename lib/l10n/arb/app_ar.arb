@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "أكبر المراكز",
   "portfolioShareNote": "تتم مشاركة النسب المئوية فقط، دون أي مبالغ.",
   "portfolioPositionsCount": "{count, plural, =1{مركز واحد} =2{مركزان} few{{count} مراكز} many{{count} مركزًا} other{{count} مركز}}",
-  "shareNotAdvice": "ليس نصيحة استثمارية"
+  "shareNotAdvice": "ليس نصيحة استثمارية",
+  "contributionButton": "استثمار أموال جديدة",
+  "contributionAmount": "المبلغ المراد استثماره ({currency})",
+  "contributionHint": "شراء فقط دون أي بيع: تحصل المراكز الأكثر تأخرًا عن هدفها على المال أولًا.",
+  "contributionShares": "≈ {shares} سهم"
 }

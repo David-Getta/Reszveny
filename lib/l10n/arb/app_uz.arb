@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Eng yirik pozitsiyalar",
   "portfolioShareNote": "Faqat foizlar ulashiladi, summalar emas.",
   "portfolioPositionsCount": "{count, plural, one{{count} ta pozitsiya} other{{count} ta pozitsiya}}",
-  "shareNotAdvice": "Investitsiya maslahati emas"
+  "shareNotAdvice": "Investitsiya maslahati emas",
+  "contributionButton": "Yangi pul kiritish",
+  "contributionAmount": "Kiritiladigan summa ({currency})",
+  "contributionHint": "Faqat xarid, sotuvsiz: pul avval maqsadidan eng koʻp ortda qolgan pozitsiyalarga beriladi.",
+  "contributionShares": "≈ {shares} aksiya"
 }

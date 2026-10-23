@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "En büyük pozisyonlar",
   "portfolioShareNote": "Yalnızca yüzdeler paylaşılır, tutarlar paylaşılmaz.",
   "portfolioPositionsCount": "{count, plural, one{{count} pozisyon} other{{count} pozisyon}}",
-  "shareNotAdvice": "Yatırım tavsiyesi değildir"
+  "shareNotAdvice": "Yatırım tavsiyesi değildir",
+  "contributionButton": "Yeni para yatır",
+  "contributionAmount": "Yatırılacak tutar ({currency})",
+  "contributionHint": "Yalnızca alım, satış yok: para önce hedefinin en çok altında kalan pozisyonlara gider.",
+  "contributionShares": "≈ {shares} hisse"
 }

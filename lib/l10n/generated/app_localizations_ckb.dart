@@ -2608,6 +2608,23 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get shareNotAdvice => 'ئامۆژگاریی وەبەرهێنان نییە';
 
   @override
+  String get contributionButton => 'وەبەرهێنانی پارەی نوێ';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'بڕی وەبەرهێنان ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'تەنها کڕین، بێ فرۆشتن: ئەو پۆزیشنانەی زیاتر لە هەمووان لە ئامانجەکەیان دواکەوتوون، یەکەم پارەکە وەردەگرن.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares پشک';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

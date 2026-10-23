@@ -2600,6 +2600,23 @@ class AppLocalizationsVi extends AppLocalizations {
   String get shareNotAdvice => 'Không phải lời khuyên đầu tư';
 
   @override
+  String get contributionButton => 'Đầu tư tiền mới';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Số tiền đầu tư ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Chỉ mua, không bán: các vị thế thấp hơn mục tiêu nhiều nhất sẽ nhận tiền trước.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares cổ phiếu';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

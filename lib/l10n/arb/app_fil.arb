@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Pinakamalalaking posisyon",
   "portfolioShareNote": "Porsyento lang ang ibinabahagi, walang halaga.",
   "portfolioPositionsCount": "{count, plural, =1{1 posisyon} other{{count} posisyon}}",
-  "shareNotAdvice": "Hindi payo sa pamumuhunan"
+  "shareNotAdvice": "Hindi payo sa pamumuhunan",
+  "contributionButton": "Mag-invest ng bagong pera",
+  "contributionAmount": "Halagang i-invest ({currency})",
+  "contributionHint": "Pagbili lang, walang pagbebenta: ang mga posisyong pinakamalayo sa ilalim ng kanilang target ang unang makakatanggap ng pera.",
+  "contributionShares": "≈ {shares} share"
 }

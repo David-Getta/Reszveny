@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "सभसँ पैघ पोजीशन",
   "portfolioShareNote": "केवल प्रतिशत साझा होइत अछि, कोनो राशि नहि।",
   "portfolioPositionsCount": "{count, plural, =1{1 पोजीशन} other{{count} पोजीशन}}",
-  "shareNotAdvice": "निवेशक सलाह नहि"
+  "shareNotAdvice": "निवेशक सलाह नहि",
+  "contributionButton": "नव पाइ निवेश करू",
+  "contributionAmount": "निवेशक राशि ({currency})",
+  "contributionHint": "केवल खरीद, बिक्री नहि: जे पोजीशन अपन लक्ष्यसँ सभसँ बेसी पाछाँ अछि, तकरा पहिने पाइ भेटैत अछि।",
+  "contributionShares": "≈ {shares} शेयर"
 }

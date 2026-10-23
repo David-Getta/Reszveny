@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "আটাইতকৈ ডাঙৰ পজিচন",
   "portfolioShareNote": "কেৱল শতাংশহে শ্বেয়াৰ কৰা হয়, কোনো পৰিমাণ নহয়।",
   "portfolioPositionsCount": "{count, plural, =1{1টা পজিচন} other{{count}টা পজিচন}}",
-  "shareNotAdvice": "বিনিয়োগৰ পৰামৰ্শ নহয়"
+  "shareNotAdvice": "বিনিয়োগৰ পৰামৰ্শ নহয়",
+  "contributionButton": "নতুন ধন বিনিয়োগ কৰক",
+  "contributionAmount": "বিনিয়োগ কৰিবলগীয়া পৰিমাণ ({currency})",
+  "contributionHint": "কেৱল ক্ৰয়, বিক্ৰী নাই: লক্ষ্যৰ পৰা আটাইতকৈ বেছি তলত থকা পজিচনসমূহে প্ৰথমে ধন পাব।",
+  "contributionShares": "≈ {shares} শ্বেয়াৰ"
 }

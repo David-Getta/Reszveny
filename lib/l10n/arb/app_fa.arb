@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "بزرگ‌ترین موقعیت‌ها",
   "portfolioShareNote": "فقط درصدها به اشتراک گذاشته می‌شوند، نه مبالغ.",
   "portfolioPositionsCount": "{count, plural, =1{1 موقعیت} other{{count} موقعیت}}",
-  "shareNotAdvice": "توصیه سرمایه‌گذاری نیست"
+  "shareNotAdvice": "توصیه سرمایه‌گذاری نیست",
+  "contributionButton": "سرمایه‌گذاری پول جدید",
+  "contributionAmount": "مبلغ سرمایه‌گذاری ({currency})",
+  "contributionHint": "فقط خرید، بدون فروش: موقعیت‌هایی که بیش از همه از هدفشان عقب‌اند، زودتر پول می‌گیرند.",
+  "contributionShares": "≈ {shares} سهم"
 }

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "ସବୁଠୁ ବଡ଼ ପୋଜିସନ",
   "portfolioShareNote": "କେବଳ ପ୍ରତିଶତ ସେୟାର ହୁଏ, ରାଶି ନୁହେଁ।",
   "portfolioPositionsCount": "{count, plural, one{{count}ଟି ପୋଜିସନ} other{{count}ଟି ପୋଜିସନ}}",
-  "shareNotAdvice": "ନିବେଶ ପରାମର୍ଶ ନୁହେଁ"
+  "shareNotAdvice": "ନିବେଶ ପରାମର୍ଶ ନୁହେଁ",
+  "contributionButton": "ନୂଆ ଅର୍ଥ ନିବେଶ କରନ୍ତୁ",
+  "contributionAmount": "ନିବେଶ ପାଇଁ ରାଶି ({currency})",
+  "contributionHint": "କେବଳ କିଣିବା, ବିକ୍ରି ନୁହେଁ: ନିଜ ଲକ୍ଷ୍ୟଠାରୁ ସବୁଠାରୁ ଅଧିକ ତଳେ ଥିବା ପୋଜିସନଗୁଡ଼ିକ ପ୍ରଥମେ ଅର୍ଥ ପାଆନ୍ତି।",
+  "contributionShares": "≈ {shares} ସେୟାର"
 }

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Akpa gãtowo",
   "portfolioShareNote": "Alafa me akpawo ko wòmana, ga home aɖeke meli o.",
   "portfolioPositionsCount": "{count, plural, =1{Akpa 1} other{Akpa {count}}}",
-  "shareNotAdvice": "Menye aɖaŋuɖoɖo le gadede nu ŋu o"
+  "shareNotAdvice": "Menye aɖaŋuɖoɖo le gadede nu ŋu o",
+  "contributionButton": "Do ga yeye ɖe eme",
+  "contributionAmount": "Ga si nàde eme ({currency})",
+  "contributionHint": "Ƒeƒle ko, dzadzra aɖeke meli o: akpa siwo tsi megbe wu na woƒe taɖodzinu la xɔa ga la gbã.",
+  "contributionShares": "≈ akpa {shares}"
 }

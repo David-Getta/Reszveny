@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Grootste posities",
   "portfolioShareNote": "Alleen percentages worden gedeeld, geen bedragen.",
   "portfolioPositionsCount": "{count, plural, one{{count} positie} other{{count} posities}}",
-  "shareNotAdvice": "Geen beleggingsadvies"
+  "shareNotAdvice": "Geen beleggingsadvies",
+  "contributionButton": "Nieuw geld investeren",
+  "contributionAmount": "Te investeren bedrag ({currency})",
+  "contributionHint": "Alleen kopen, niet verkopen: de posities die het verst onder hun doel liggen, krijgen het geld als eerste.",
+  "contributionShares": "≈ {shares} aandelen"
 }

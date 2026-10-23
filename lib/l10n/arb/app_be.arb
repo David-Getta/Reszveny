@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Найбуйнейшыя пазіцыі",
   "portfolioShareNote": "Вы дзеліцеся толькі працэнтамі, без сум.",
   "portfolioPositionsCount": "{count, plural, one{{count} пазіцыя} few{{count} пазіцыі} many{{count} пазіцый} other{{count} пазіцыі}}",
-  "shareNotAdvice": "Не з’яўляецца інвестыцыйнай парадай"
+  "shareNotAdvice": "Не з’яўляецца інвестыцыйнай парадай",
+  "contributionButton": "Укласці новыя грошы",
+  "contributionAmount": "Сума для ўкладання ({currency})",
+  "contributionHint": "Толькі куплі, без продажаў: грошы спачатку атрымліваюць пазіцыі, якія найбольш адстаюць ад мэты.",
+  "contributionShares": "≈ {shares} шт."
 }

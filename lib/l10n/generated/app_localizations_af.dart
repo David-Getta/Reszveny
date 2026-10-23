@@ -2611,6 +2611,23 @@ class AppLocalizationsAf extends AppLocalizations {
   String get shareNotAdvice => 'Nie beleggingsadvies nie';
 
   @override
+  String get contributionButton => 'Belê nuwe geld';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Bedrag om te belê ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Slegs aankope, geen verkope nie: die posisies wat die verste onder hul teiken is, kry die geld eerste.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares aandele';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

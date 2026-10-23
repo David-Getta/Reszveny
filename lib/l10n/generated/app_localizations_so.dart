@@ -2615,6 +2615,23 @@ class AppLocalizationsSo extends AppLocalizations {
   String get shareNotAdvice => 'Ma aha talo maalgashi';
 
   @override
+  String get contributionButton => 'Maalgeli lacag cusub';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Lacagta la maalgelinayo ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Iibsasho kaliya, iib ma jiro: haysashooyinka sida ugu badan uga hooseeya hadafkooda ayaa lacagta hore u hela.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares saami';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

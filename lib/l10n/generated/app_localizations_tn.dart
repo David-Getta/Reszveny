@@ -2625,6 +2625,23 @@ class AppLocalizationsTn extends AppLocalizations {
   String get shareNotAdvice => 'Ga se kgakololo ya peeletso';
 
   @override
+  String get contributionButton => 'Beeletsa madi a masha';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Madi a go beeletsa ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Go reka fela, ga go rekisiwe: dishere tse di kwa tlase thata ga maikaelelo a tsone di amogela madi pele.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ dishere di le $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

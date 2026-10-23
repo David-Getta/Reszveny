@@ -2615,6 +2615,23 @@ class AppLocalizationsLua extends AppLocalizations {
   String get shareNotAdvice => 'Kadiena mibelu ya kuteka mfranga';
 
   @override
+  String get contributionButton => 'Teka mfranga mipiamipia';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Bungi bua mfranga ya kuteka ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Kusumba patupu, kakuyi kusumbisha: ma-position adi kule kupita ku muinshi kua tshipatshila tshiawu ke adi apeta mfranga kumpala.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ action $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "ཉར་ཡོད་ཆེ་ཤོས",
   "portfolioShareNote": "བརྒྱ་ཆ་ཙམ་མཉམ་སྤྱོད་བྱེད་ཀྱི་ཡོད། དངུལ་འབོར་མི་སྟོན།",
   "portfolioPositionsCount": "{count, plural, other{ཉར་ཡོད་ཧུར་ཁག་ {count}}}",
-  "shareNotAdvice": "མ་འཇོག་གི་བསམ་འཆར་མིན།"
+  "shareNotAdvice": "མ་འཇོག་གི་བསམ་འཆར་མིན།",
+  "contributionButton": "དངུལ་གསར་པ་མ་འཇོག་བྱེད།",
+  "contributionAmount": "མ་འཇོག་བྱེད་རྒྱུའི་དངུལ་འབོར ({currency})",
+  "contributionHint": "ཉོ་བ་ཁོ་ན། འཚོང་བ་མེད། དམིགས་ཡུལ་ལས་ཆེས་མང་བ་ཞན་པའི་ཧུར་ཁག་ལ་དངུལ་སྔོན་ལ་སྤྲོད་ཀྱི་རེད།",
+  "contributionShares": "≈ ཧུར་ཁག {shares}"
 }

@@ -2611,6 +2611,23 @@ class AppLocalizationsMs extends AppLocalizations {
   String get shareNotAdvice => 'Bukan nasihat pelaburan';
 
   @override
+  String get contributionButton => 'Laburkan wang baharu';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Jumlah untuk dilaburkan ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Beli sahaja, tanpa jualan: pegangan yang paling jauh di bawah sasarannya menerima wang dahulu.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares saham';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

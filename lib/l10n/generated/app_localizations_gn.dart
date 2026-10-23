@@ -2612,6 +2612,23 @@ class AppLocalizationsGn extends AppLocalizations {
   String get shareNotAdvice => 'Ndahaʼéi ñemoñeʼẽ inversión rehegua';
 
   @override
+  String get contributionButton => 'Einverti viru pyahu';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Mboýpa reinvertíta ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Jejogua añoite, ñemu ỹre: umi ereguerekóva opytavéva hupytyrã guýpe ohupyty raẽ pe viru.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares acción';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

@@ -2608,6 +2608,23 @@ class AppLocalizationsSw extends AppLocalizations {
   String get shareNotAdvice => 'Si ushauri wa uwekezaji';
 
   @override
+  String get contributionButton => 'Wekeza pesa mpya';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Kiasi cha kuwekeza ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Ununuzi tu, hakuna mauzo: nafasi zilizo chini zaidi ya lengo lake hupata pesa kwanza.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ hisa $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

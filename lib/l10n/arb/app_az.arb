@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Ən böyük mövqelər",
   "portfolioShareNote": "Yalnız faizlər paylaşılır, məbləğlər yox.",
   "portfolioPositionsCount": "{count, plural, =1{1 mövqe} other{{count} mövqe}}",
-  "shareNotAdvice": "İnvestisiya məsləhəti deyil"
+  "shareNotAdvice": "İnvestisiya məsləhəti deyil",
+  "contributionButton": "Yeni pul yatır",
+  "contributionAmount": "Yatırılacaq məbləğ ({currency})",
+  "contributionHint": "Yalnız alış, satış yoxdur: pulu ilk növbədə hədəfindən ən çox geri qalan mövqelər alır.",
+  "contributionShares": "≈ {shares} səhm"
 }

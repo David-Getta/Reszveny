@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "மிகப் பெரிய நிலைகள்",
   "portfolioShareNote": "சதவீதங்கள் மட்டுமே பகிரப்படும், தொகைகள் அல்ல.",
   "portfolioPositionsCount": "{count, plural, one{{count} நிலை} other{{count} நிலைகள்}}",
-  "shareNotAdvice": "முதலீட்டு ஆலோசனை அல்ல"
+  "shareNotAdvice": "முதலீட்டு ஆலோசனை அல்ல",
+  "contributionButton": "புதிய பணத்தை முதலீடு செய்",
+  "contributionAmount": "முதலீடு செய்யும் தொகை ({currency})",
+  "contributionHint": "வாங்குதல் மட்டுமே, விற்பனை இல்லை: தங்கள் இலக்கை விட மிகக் குறைவாக உள்ள நிலைகளுக்கு முதலில் பணம் கிடைக்கும்.",
+  "contributionShares": "≈ {shares} பங்குகள்"
 }

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Masheya makuru",
   "portfolioShareNote": "Mapesenti chete ndiwo anogoverwa, kwete mari.",
   "portfolioPositionsCount": "{count, plural, one{Sheya {count}} other{Masheya {count}}}",
-  "shareNotAdvice": "Haisi zano rekuisa mari"
+  "shareNotAdvice": "Haisi zano rekuisa mari",
+  "contributionButton": "Isa mari itsva",
+  "contributionAmount": "Mari yekuisa ({currency})",
+  "contributionHint": "Kutenga chete, hapana kutengesa: masheya ari pasi zvikuru pechinangwa chawo anotanga kuwana mari.",
+  "contributionShares": "≈ masheya {shares}"
 }

@@ -770,6 +770,35 @@ void main() {
     expect(g.first.weight, closeTo(0.5, 1e-9));
   });
 
+  test('new money: buys only, the furthest below target first; the rest by the target weights', () {
+    final store = PortfolioStore(
+      lots: [
+        for (final (sym, q) in [('AAPL', 6.0), ('MSFT', 3.0), ('KO', 1.0)])
+          PortfolioLot(id: sym, symbol: sym, quantity: q, price: 100, currency: 'USD', date: DateTime(2025, 1, 2)),
+      ],
+    );
+    final snap = PortfolioSnapshot.compute(
+      store.positions,
+      quotes: {
+        for (final s in ['AAPL', 'MSFT', 'KO']) s: StockQuote(symbol: s, price: 100, change: 0),
+      },
+      rate: (_, _) => 1,
+      currency: 'USD',
+    );
+    // 1000 + 500: az AAPL (600) túl van a 20%-os célján, nem kap; az MSFT-nek 300, a KO-nak 500 hiányzik –
+    // a 800 hiányból 500 jut, arányosan.
+    final plan = contributionPlan(snap, {'AAPL': 20, 'MSFT': 40, 'KO': 40}, 500);
+    expect(plan.map((x) => x.symbol), ['KO', 'MSFT']);
+    expect(plan.first.amount, closeTo(312.5, 1e-9));
+    expect(plan.last.amount, closeTo(187.5, 1e-9));
+    expect(plan.first.shares, closeTo(3.125, 1e-9));
+    // Ha minden hiány betelt, a maradék a célarányok szerint: csak az AAPL-nek van célja (50%).
+    final rest = contributionPlan(snap, {'AAPL': 50}, 100);
+    expect((rest.single.symbol, rest.single.amount), ('AAPL', 100.0));
+    expect(contributionPlan(snap, {'AAPL': 50}, 0), isEmpty);
+    expect(contributionPlan(snap, const {}, 100), isEmpty);
+  });
+
   test('rebalancing: buy what is under its target, sell what is over it', () {
     PositionValue row(String symbol, double w) => PositionValue(
       position: Position(symbol: symbol, currency: 'USD', lots: const []),
@@ -818,6 +847,18 @@ void main() {
       find.descendant(of: find.byKey(const ValueKey('target-MSFT')), matching: find.textContaining('Buy ≈ ')),
       findsOneWidget,
     );
+    // Új befizetés: 1000 USD csak vételre – az MSFT van a célja alatt, minden oda megy.
+    await tester.tap(find.byKey(const ValueKey('contribution-open')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('contribution-amount')), '1000');
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('contribution-MSFT')), findsOneWidget);
+    expect(find.byKey(const ValueKey('contribution-AAPL')), findsNothing);
+    expect(
+      find.descendant(of: find.byKey(const ValueKey('contribution-MSFT')), matching: find.text('+1,000.00 USD')),
+      findsOneWidget,
+    );
+    expect(find.textContaining(RegExp(r'^≈ 1\.95 shares$')), findsOneWidget);
   });
 
   testWidgets('target rows fit a narrow phone with large text', (tester) async {

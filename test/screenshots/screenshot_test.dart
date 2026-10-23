@@ -824,6 +824,22 @@ void main() {
     await _shot(tester, 'portfolio_share_phone_hu');
   });
 
+  testWidgets('investing new money towards the targets on a phone (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'), portfolio: _samplePortfolio(), currency: 'HUF');
+    await s.preferences.setTargets({'OTP': 25, 'AAPL': 25, 'NVDA': 25, 'MSFT': 25});
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    final open = find.byKey(const ValueKey('contribution-open'));
+    await tester.ensureVisible(open);
+    await tester.pumpAndSettle();
+    await tester.tap(open);
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('contribution-amount')), '500000');
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_contribution_phone_hu');
+  });
+
   testWidgets('annual summary on a phone (hungarian)', (tester) async {
     final portfolio = PortfolioStore(
       lots: [

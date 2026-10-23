@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Μεγαλύτερες θέσεις",
   "portfolioShareNote": "Κοινοποιούνται μόνο ποσοστά, όχι ποσά.",
   "portfolioPositionsCount": "{count, plural, =1{1 θέση} other{{count} θέσεις}}",
-  "shareNotAdvice": "Δεν αποτελεί επενδυτική συμβουλή"
+  "shareNotAdvice": "Δεν αποτελεί επενδυτική συμβουλή",
+  "contributionButton": "Επένδυση νέων χρημάτων",
+  "contributionAmount": "Ποσό προς επένδυση ({currency})",
+  "contributionHint": "Μόνο αγορές, χωρίς πωλήσεις: οι θέσεις που υστερούν περισσότερο έναντι του στόχου τους παίρνουν πρώτες τα χρήματα.",
+  "contributionShares": "≈ {shares} μετοχές"
 }

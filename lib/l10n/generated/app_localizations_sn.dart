@@ -2614,6 +2614,23 @@ class AppLocalizationsSn extends AppLocalizations {
   String get shareNotAdvice => 'Haisi zano rekuisa mari';
 
   @override
+  String get contributionButton => 'Isa mari itsva';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Mari yekuisa ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Kutenga chete, hapana kutengesa: masheya ari pasi zvikuru pechinangwa chawo anotanga kuwana mari.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ masheya $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Nafasi kubwa zaidi",
   "portfolioShareNote": "Asilimia pekee ndizo zinazoshirikiwa, si kiasi cha pesa.",
   "portfolioPositionsCount": "{count, plural, one{Nafasi {count}} other{Nafasi {count}}}",
-  "shareNotAdvice": "Si ushauri wa uwekezaji"
+  "shareNotAdvice": "Si ushauri wa uwekezaji",
+  "contributionButton": "Wekeza pesa mpya",
+  "contributionAmount": "Kiasi cha kuwekeza ({currency})",
+  "contributionHint": "Ununuzi tu, hakuna mauzo: nafasi zilizo chini zaidi ya lengo lake hupata pesa kwanza.",
+  "contributionShares": "≈ hisa {shares}"
 }

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "ዝዓበዩ ዋንነታት",
   "portfolioShareNote": "ሚእታዊ ጥራይ ይካፈል፣ መጠን ገንዘብ ኣይካፈልን።",
   "portfolioPositionsCount": "{count, plural, one{{count} ዋንነት} other{{count} ዋንነታት}}",
-  "shareNotAdvice": "ምኽሪ ወፍሪ ኣይኮነን"
+  "shareNotAdvice": "ምኽሪ ወፍሪ ኣይኮነን",
+  "contributionButton": "ሓድሽ ገንዘብ ኣውፍር",
+  "contributionAmount": "መጠን ወፍሪ ({currency})",
+  "contributionHint": "ዕድጊት ጥራይ፣ መሸጣ የለን፦ እቶም ካብ ዕላማኦም ብዝያዳ ዝተሓቱ ዋንነታት ቅድም ገንዘብ ይረኽቡ።",
+  "contributionShares": "≈ {shares} ኣክሲዮናት"
 }

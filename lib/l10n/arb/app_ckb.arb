@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "گەورەترین پۆزیشنەکان",
   "portfolioShareNote": "تەنها ڕێژەی سەدی هاوبەش دەکرێت، بڕی پارە نا.",
   "portfolioPositionsCount": "{count, plural, =1{1 پۆزیشن} other{{count} پۆزیشن}}",
-  "shareNotAdvice": "ئامۆژگاریی وەبەرهێنان نییە"
+  "shareNotAdvice": "ئامۆژگاریی وەبەرهێنان نییە",
+  "contributionButton": "وەبەرهێنانی پارەی نوێ",
+  "contributionAmount": "بڕی وەبەرهێنان ({currency})",
+  "contributionHint": "تەنها کڕین، بێ فرۆشتن: ئەو پۆزیشنانەی زیاتر لە هەمووان لە ئامانجەکەیان دواکەوتوون، یەکەم پارەکە وەردەگرن.",
+  "contributionShares": "≈ {shares} پشک"
 }

@@ -2669,6 +2669,23 @@ class AppLocalizationsCs extends AppLocalizations {
   String get shareNotAdvice => 'Nejde o investiční doporučení';
 
   @override
+  String get contributionButton => 'Investovat nové peníze';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Částka k investování ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Jen nákupy, žádné prodeje: peníze dostanou nejdřív pozice, které nejvíc zaostávají za svým cílem.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares ks';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

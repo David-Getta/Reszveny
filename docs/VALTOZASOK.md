@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.192)
+# Változásjegyzék (0.2.130 → 0.2.193)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -32,6 +32,9 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   évi osztalékkal; ha a cég nem fizet, ezt egy mondat mondja ki (az összehasonlításban is új sor).
 
 ## Kockázat
+
+- **Új befizetés elosztása** a célarányok szerint: a befektetendő összegből csak vétel, először a céljuktól leginkább
+  elmaradó pozíciók kapnak; pozíciónként az összeg és nagyjából hány darab.
 
 - A megoszlás-kártya alján a **portfólió-béta** (a részvények bétája az értékükkel súlyozva) és **a 3
   legnagyobb pozíció súlya**, ⓘ magyarázattal (a fogalomtár 32 mutatója); az AI-portfólióelemzés is megkapja.

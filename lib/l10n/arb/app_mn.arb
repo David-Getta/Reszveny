@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Хамгийн том эзэмшлүүд",
   "portfolioShareNote": "Зөвхөн хувийг хуваалцах бөгөөд дүнг харуулахгүй.",
   "portfolioPositionsCount": "{count, plural, one{{count} эзэмшил} other{{count} эзэмшил}}",
-  "shareNotAdvice": "Хөрөнгө оруулалтын зөвлөгөө биш"
+  "shareNotAdvice": "Хөрөнгө оруулалтын зөвлөгөө биш",
+  "contributionButton": "Шинэ мөнгө оруулах",
+  "contributionAmount": "Оруулах дүн ({currency})",
+  "contributionHint": "Зөвхөн худалдан авна, зарахгүй: зорилтоосоо хамгийн их хоцорсон эзэмшилд мөнгө эхэлж очно.",
+  "contributionShares": "≈ {shares} хувьцаа"
 }

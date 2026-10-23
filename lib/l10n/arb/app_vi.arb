@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Vị thế lớn nhất",
   "portfolioShareNote": "Chỉ chia sẻ tỷ lệ phần trăm, không có số tiền.",
   "portfolioPositionsCount": "{count, plural, other{{count} vị thế}}",
-  "shareNotAdvice": "Không phải lời khuyên đầu tư"
+  "shareNotAdvice": "Không phải lời khuyên đầu tư",
+  "contributionButton": "Đầu tư tiền mới",
+  "contributionAmount": "Số tiền đầu tư ({currency})",
+  "contributionHint": "Chỉ mua, không bán: các vị thế thấp hơn mục tiêu nhiều nhất sẽ nhận tiền trước.",
+  "contributionShares": "≈ {shares} cổ phiếu"
 }

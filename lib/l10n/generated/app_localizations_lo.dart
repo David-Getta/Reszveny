@@ -2579,6 +2579,23 @@ class AppLocalizationsLo extends AppLocalizations {
   String get shareNotAdvice => 'ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ';
 
   @override
+  String get contributionButton => 'ລົງທຶນເງິນໃໝ່';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'ຈຳນວນເງິນທີ່ຈະລົງທຶນ ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'ຊື້ເທົ່ານັ້ນ ບໍ່ມີການຂາຍ: ຮຸ້ນທີ່ຕ່ຳກວ່າເປົ້າໝາຍຫຼາຍທີ່ສຸດຈະໄດ້ຮັບເງິນກ່ອນ.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares ຮຸ້ນ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "سڀ کان وڏيون پوزيشنون",
   "portfolioShareNote": "صرف سيڪڙو شيئر ڪيا ويندا آهن، رقمون نه.",
   "portfolioPositionsCount": "{count, plural, one{{count} پوزيشن} other{{count} پوزيشنون}}",
-  "shareNotAdvice": "سيڙپڪاري جو مشورو ناهي"
+  "shareNotAdvice": "سيڙپڪاري جو مشورو ناهي",
+  "contributionButton": "نئين رقم سيڙپ ڪريو",
+  "contributionAmount": "سيڙپ ڪرڻ واري رقم ({currency})",
+  "contributionHint": "رڳو خريد، وڪرو نه: پنهنجي هدف کان سڀ کان وڌيڪ هيٺ پوزيشنن کي پهريان رقم ملي ٿي.",
+  "contributionShares": "≈ {shares} شيئر"
 }

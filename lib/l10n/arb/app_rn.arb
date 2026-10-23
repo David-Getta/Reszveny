@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Imigabane minini",
   "portfolioShareNote": "Hasangizwa ijanisha gusa, nta mafaranga.",
   "portfolioPositionsCount": "{count, plural, one{Umugabane {count}} other{Imigabane {count}}}",
-  "shareNotAdvice": "Si inama yo gushora imari"
+  "shareNotAdvice": "Si inama yo gushora imari",
+  "contributionButton": "Shora amahera mashasha",
+  "contributionAmount": "Amahera yo gushora ({currency})",
+  "contributionHint": "Kugura gusa, nta kugurisha: imigabane iri kure cane munsi y'intumbero yayo ni yo ironka amahera mbere.",
+  "contributionShares": "≈ imigabane {shares}"
 }

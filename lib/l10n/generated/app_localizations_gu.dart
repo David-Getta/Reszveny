@@ -2601,6 +2601,23 @@ class AppLocalizationsGu extends AppLocalizations {
   String get shareNotAdvice => 'રોકાણ સલાહ નથી';
 
   @override
+  String get contributionButton => 'નવા પૈસાનું રોકાણ કરો';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'રોકાણ કરવાની રકમ ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'ફક્ત ખરીદી, કોઈ વેચાણ નહીં: પોતાના લક્ષ્યથી સૌથી વધુ પાછળ રહેલી પોઝિશનને પહેલા પૈસા મળે છે.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares શેર';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

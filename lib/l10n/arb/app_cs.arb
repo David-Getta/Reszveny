@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Největší pozice",
   "portfolioShareNote": "Sdílejí se jen procenta, žádné částky.",
   "portfolioPositionsCount": "{count, plural, =1{1 pozice} few{{count} pozice} many{{count} pozice} other{{count} pozic}}",
-  "shareNotAdvice": "Nejde o investiční doporučení"
+  "shareNotAdvice": "Nejde o investiční doporučení",
+  "contributionButton": "Investovat nové peníze",
+  "contributionAmount": "Částka k investování ({currency})",
+  "contributionHint": "Jen nákupy, žádné prodeje: peníze dostanou nejdřív pozice, které nejvíc zaostávají za svým cílem.",
+  "contributionShares": "≈ {shares} ks"
 }

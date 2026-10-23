@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Haysashooyinka ugu waaweyn",
   "portfolioShareNote": "Boqolleyda oo keliya ayaa la wadaagaa, qaddarka lacagta lama wadaago.",
   "portfolioPositionsCount": "{count, plural, one{{count} haysasho} other{{count} haysasho}}",
-  "shareNotAdvice": "Ma aha talo maalgashi"
+  "shareNotAdvice": "Ma aha talo maalgashi",
+  "contributionButton": "Maalgeli lacag cusub",
+  "contributionAmount": "Lacagta la maalgelinayo ({currency})",
+  "contributionHint": "Iibsasho kaliya, iib ma jiro: haysashooyinka sida ugu badan uga hooseeya hadafkooda ayaa lacagta hore u hela.",
+  "contributionShares": "≈ {shares} saami"
 }

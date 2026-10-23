@@ -2608,6 +2608,23 @@ class AppLocalizationsAz extends AppLocalizations {
   String get shareNotAdvice => 'İnvestisiya məsləhəti deyil';
 
   @override
+  String get contributionButton => 'Yeni pul yatır';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Yatırılacaq məbləğ ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Yalnız alış, satış yoxdur: pulu ilk növbədə hədəfindən ən çox geri qalan mövqelər alır.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares səhm';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

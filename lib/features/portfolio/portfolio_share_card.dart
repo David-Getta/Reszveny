@@ -87,7 +87,7 @@ class PortfolioShareCard extends StatelessWidget {
               Text(
                 fmt.percent(s.gainPercent, withSign: true),
                 key: const ValueKey('share-gain'),
-                style: TextStyle(color: gainColor(p, s.gain), fontSize: 46, fontWeight: FontWeight.w800, height: 1.15),
+                style: TextStyle(color: gainColor(p, s.gain), fontSize: 42, fontWeight: FontWeight.w800, height: 1.15),
               ),
               const SizedBox(height: 10),
               Wrap(
@@ -104,7 +104,7 @@ class PortfolioShareCard extends StatelessWidget {
                     figure(l10n.portfolioToday, fmt.percent(d, withSign: true), gainColor(p, d)),
                 ],
               ),
-              const SizedBox(height: 26),
+              const SizedBox(height: 20),
               Row(
                 children: [
                   Expanded(
@@ -114,43 +114,54 @@ class PortfolioShareCard extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 6),
-              for (final (i, h) in top.indexed)
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 5),
-                  child: Row(
+              // A pozíciók a maradék helyen (más betűkészlettel sem csordul túl: ami nem fér el, levágódik).
+              Expanded(
+                // Görgetés nélküli görgető nézet: a túllógó sor levágódik, hibajelzés nélkül.
+                child: SingleChildScrollView(
+                  physics: const NeverScrollableScrollPhysics(),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
-                        width: 64,
-                        child: Text(
-                          h.symbol,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13),
-                        ),
-                      ),
-                      Expanded(
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(4),
-                          child: LinearProgressIndicator(
-                            value: h.weight.clamp(0.0, 1.0),
-                            minHeight: 10,
-                            backgroundColor: p.surface,
-                            color: colors[i % colors.length],
+                      for (final (i, h) in top.indexed)
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 5),
+                          child: Row(
+                            children: [
+                              SizedBox(
+                                width: 64,
+                                child: Text(
+                                  h.symbol,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13),
+                                ),
+                              ),
+                              Expanded(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(4),
+                                  child: LinearProgressIndicator(
+                                    value: h.weight.clamp(0.0, 1.0),
+                                    minHeight: 10,
+                                    backgroundColor: p.surface,
+                                    color: colors[i % colors.length],
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 52,
+                                child: Text(
+                                  fmt.percent(h.weight * 100, decimals: 0),
+                                  textAlign: TextAlign.end,
+                                  style: const TextStyle(fontSize: 12),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        width: 52,
-                        child: Text(
-                          fmt.percent(h.weight * 100, decimals: 0),
-                          textAlign: TextAlign.end,
-                          style: const TextStyle(fontSize: 12),
-                        ),
-                      ),
                     ],
                   ),
                 ),
-              const Spacer(),
+              ),
               Row(
                 children: [
                   Image.asset('assets/branding/logo_128.png', width: 22, height: 22),

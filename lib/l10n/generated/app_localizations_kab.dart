@@ -2605,6 +2605,23 @@ class AppLocalizationsKab extends AppLocalizations {
   String get shareNotAdvice => 'Ur d awellih n usersi n yidrimen ara';
 
   @override
+  String get contributionButton => 'Sers idrimen imaynuten';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Azal ara tserseḍ ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Asɣi kan, ulac azenzi: iksyunen yeqqimen ugar deffir yiswi-nsen ad awin idrimen d imezwura.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares n yiksyunen';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

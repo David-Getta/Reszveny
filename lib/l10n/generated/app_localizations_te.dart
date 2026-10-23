@@ -2613,6 +2613,23 @@ class AppLocalizationsTe extends AppLocalizations {
   String get shareNotAdvice => 'పెట్టుబడి సలహా కాదు';
 
   @override
+  String get contributionButton => 'కొత్త డబ్బును పెట్టుబడి పెట్టండి';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'పెట్టుబడి పెట్టే మొత్తం ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'కొనుగోళ్లు మాత్రమే, అమ్మకాలు లేవు: తమ లక్ష్యానికి అత్యంత దిగువన ఉన్న పొజిషన్లకు ముందుగా డబ్బు అందుతుంది.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares షేర్లు';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

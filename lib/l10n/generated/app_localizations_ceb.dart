@@ -2619,6 +2619,23 @@ class AppLocalizationsCeb extends AppLocalizations {
   String get shareNotAdvice => 'Dili tambag sa pagpamuhunan';
 
   @override
+  String get contributionButton => 'I-invest ang bag-ong kwarta';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Kantidad nga i-invest ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Pagpalit lang, walay pagbaligya: ang mga posisyon nga labing layo ubos sa ilang target ang unang makadawat sa kwarta.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares ka share';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

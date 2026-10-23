@@ -2623,6 +2623,23 @@ class AppLocalizationsSt extends AppLocalizations {
   String get shareNotAdvice => 'Hase keletso ya ho tsetela';
 
   @override
+  String get contributionButton => 'Tsetela chelete e ntjha';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Chelete ya ho tsetela ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Ho reka feela, ha ho rekiswe: dishere tse ka tlase haholo ho sepheo sa tsona di fumana chelete pele.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ dishere tse $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

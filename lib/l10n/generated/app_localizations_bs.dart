@@ -2651,6 +2651,23 @@ class AppLocalizationsBs extends AppLocalizations {
   String get shareNotAdvice => 'Nije investicijski savjet';
 
   @override
+  String get contributionButton => 'Uloži novi novac';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Iznos za ulaganje ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Samo kupovina, bez prodaje: novac prvo dobijaju pozicije koje najviše zaostaju za svojim ciljem.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares kom.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "විශාලතම ස්ථාන",
   "portfolioShareNote": "ප්‍රතිශත පමණක් බෙදාගැනේ, මුදල් ප්‍රමාණ නොවේ.",
   "portfolioPositionsCount": "{count, plural, one{ස්ථාන {count}} other{ස්ථාන {count}}}",
-  "shareNotAdvice": "ආයෝජන උපදෙසක් නොවේ"
+  "shareNotAdvice": "ආයෝජන උපදෙසක් නොවේ",
+  "contributionButton": "නව මුදල් ආයෝජනය කරන්න",
+  "contributionAmount": "ආයෝජනය කරන මුදල ({currency})",
+  "contributionHint": "මිලදී ගැනීම් පමණි, විකිණීම් නැත: තම ඉලක්කයට වඩා වැඩිපුරම පහළින් ඇති ස්ථානවලට මුදල් මුලින්ම ලැබේ.",
+  "contributionShares": "≈ කොටස් {shares}"
 }

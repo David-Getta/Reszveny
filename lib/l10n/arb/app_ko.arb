@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "상위 보유 종목",
   "portfolioShareNote": "금액 없이 비율(%)만 공유됩니다.",
   "portfolioPositionsCount": "{count, plural, =1{1개 종목} other{{count}개 종목}}",
-  "shareNotAdvice": "투자 조언이 아닙니다"
+  "shareNotAdvice": "투자 조언이 아닙니다",
+  "contributionButton": "추가 자금 투자",
+  "contributionAmount": "투자 금액({currency})",
+  "contributionHint": "매수만 하고 매도는 하지 않습니다. 목표 비중에 가장 못 미치는 종목부터 자금을 배분합니다.",
+  "contributionShares": "≈ {shares}주"
 }

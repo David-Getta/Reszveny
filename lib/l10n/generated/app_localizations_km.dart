@@ -2585,6 +2585,23 @@ class AppLocalizationsKm extends AppLocalizations {
   String get shareNotAdvice => 'មិនមែនជាដំបូន្មានវិនិយោគទេ';
 
   @override
+  String get contributionButton => 'វិនិយោគប្រាក់ថ្មី';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'ចំនួនទឹកប្រាក់ត្រូវវិនិយោគ ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'ទិញតែប៉ុណ្ណោះ គ្មានការលក់ទេ៖ ការកាន់កាប់ដែលនៅក្រោមគោលដៅឆ្ងាយជាងគេ ទទួលបានប្រាក់មុន។';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares ភាគហ៊ុន';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

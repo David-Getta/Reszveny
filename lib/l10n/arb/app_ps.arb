@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "تر ټولو لوی پوزیشنونه",
   "portfolioShareNote": "یوازې سلنې شریکېږي، مقدارونه نه.",
   "portfolioPositionsCount": "{count, plural, one{{count} پوزیشن} other{{count} پوزیشنونه}}",
-  "shareNotAdvice": "د پانګونې مشوره نه ده"
+  "shareNotAdvice": "د پانګونې مشوره نه ده",
+  "contributionButton": "نوې پیسې پانګونه کړئ",
+  "contributionAmount": "د پانګونې اندازه ({currency})",
+  "contributionHint": "یوازې پېرود، پلور نه: هغه پوزیشنونه چې له خپل هدف څخه تر ټولو ډېر ټیټ دي، لومړی پیسې ترلاسه کوي.",
+  "contributionShares": "≈ {shares} ونډې"
 }

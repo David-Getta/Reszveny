@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Lielākās pozīcijas",
   "portfolioShareNote": "Tiek kopīgoti tikai procenti, bez summām.",
   "portfolioPositionsCount": "{count, plural, zero{{count} pozīcijas} one{{count} pozīcija} other{{count} pozīcijas}}",
-  "shareNotAdvice": "Nav ieguldījumu konsultācija"
+  "shareNotAdvice": "Nav ieguldījumu konsultācija",
+  "contributionButton": "Ieguldīt jaunu naudu",
+  "contributionAmount": "Ieguldāmā summa ({currency})",
+  "contributionHint": "Tikai pirkumi, bez pārdošanas: naudu vispirms saņem pozīcijas, kas visvairāk atpaliek no sava mērķa.",
+  "contributionShares": "≈ {shares} akcijas"
 }

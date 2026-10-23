@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "सबसे बड़ पोजीशन",
   "portfolioShareNote": "खाली प्रतिशत साझा होला, कवनो रकम ना।",
   "portfolioPositionsCount": "{count, plural, =1{1 पोजीशन} other{{count} पोजीशन}}",
-  "shareNotAdvice": "निवेश के सलाह ना ह"
+  "shareNotAdvice": "निवेश के सलाह ना ह",
+  "contributionButton": "नया पइसा निवेश करीं",
+  "contributionAmount": "निवेश करे के रकम ({currency})",
+  "contributionHint": "सिरिफ खरीदारी, बिक्री ना: जवन पोजीशन अपना लक्ष्य से सबसे जादा पीछे बाड़ी, ओकरा के पइसा पहिले मिली।",
+  "contributionShares": "≈ {shares} शेयर"
 }

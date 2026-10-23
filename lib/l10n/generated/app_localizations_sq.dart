@@ -2612,6 +2612,23 @@ class AppLocalizationsSq extends AppLocalizations {
   String get shareNotAdvice => 'Nuk është këshillë investimi';
 
   @override
+  String get contributionButton => 'Investo para të reja';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Shuma për t’u investuar ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Vetëm blerje, pa shitje: paratë i marrin së pari pozicionet që janë më shumë nën synimin e tyre.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares aksione';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

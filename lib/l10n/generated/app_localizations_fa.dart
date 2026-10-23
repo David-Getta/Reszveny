@@ -2603,6 +2603,23 @@ class AppLocalizationsFa extends AppLocalizations {
   String get shareNotAdvice => 'توصیه سرمایه‌گذاری نیست';
 
   @override
+  String get contributionButton => 'سرمایه‌گذاری پول جدید';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'مبلغ سرمایه‌گذاری ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'فقط خرید، بدون فروش: موقعیت‌هایی که بیش از همه از هدفشان عقب‌اند، زودتر پول می‌گیرند.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares سهم';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

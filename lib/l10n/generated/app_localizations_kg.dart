@@ -2616,6 +2616,23 @@ class AppLocalizationsKg extends AppLocalizations {
   String get shareNotAdvice => 'Ka malongi ma kutula mbongo ko';
 
   @override
+  String get contributionButton => 'Tula mbongo ya mpa';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Ntalu ya kutula ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Kusumba kaka, kuteka ve: ba position yina me bikala nsi ya lukanu na yo kuluta ta baka mbongo ntete.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ action $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

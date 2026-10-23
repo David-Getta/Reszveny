@@ -2607,6 +2607,23 @@ class AppLocalizationsKi extends AppLocalizations {
   String get shareNotAdvice => 'Ti ũtaaro wa investment';
 
   @override
+  String get contributionButton => 'Iga mbeca njerũ';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Mbeca cia kũiga ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Kũgũra tu, gũtirĩ kwendia: hisa iria ciagĩte mũno thĩ ya muoroto wacio nĩcio ikũheo mbeca mbere.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ hisa $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

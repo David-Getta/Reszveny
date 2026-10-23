@@ -2597,6 +2597,23 @@ class AppLocalizationsSd extends AppLocalizations {
   String get shareNotAdvice => 'سيڙپڪاري جو مشورو ناهي';
 
   @override
+  String get contributionButton => 'نئين رقم سيڙپ ڪريو';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'سيڙپ ڪرڻ واري رقم ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'رڳو خريد، وڪرو نه: پنهنجي هدف کان سڀ کان وڌيڪ هيٺ پوزيشنن کي پهريان رقم ملي ٿي.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares شيئر';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

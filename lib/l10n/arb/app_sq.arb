@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Pozicionet më të mëdha",
   "portfolioShareNote": "Ndahen vetëm përqindjet, jo shumat.",
   "portfolioPositionsCount": "{count, plural, one{{count} pozicion} other{{count} pozicione}}",
-  "shareNotAdvice": "Nuk është këshillë investimi"
+  "shareNotAdvice": "Nuk është këshillë investimi",
+  "contributionButton": "Investo para të reja",
+  "contributionAmount": "Shuma për t’u investuar ({currency})",
+  "contributionHint": "Vetëm blerje, pa shitje: paratë i marrin së pari pozicionet që janë më shumë nën synimin e tyre.",
+  "contributionShares": "≈ {shares} aksione"
 }

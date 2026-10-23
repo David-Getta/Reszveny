@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Najveće pozicije",
   "portfolioShareNote": "Dijele se samo postoci, bez iznosa.",
   "portfolioPositionsCount": "{count, plural, one{{count} pozicija} few{{count} pozicije} other{{count} pozicija}}",
-  "shareNotAdvice": "Nije investicijski savjet"
+  "shareNotAdvice": "Nije investicijski savjet",
+  "contributionButton": "Uloži novi novac",
+  "contributionAmount": "Iznos za ulaganje ({currency})",
+  "contributionHint": "Samo kupnja, bez prodaje: novac prvo dobivaju pozicije koje najviše zaostaju za svojim ciljem.",
+  "contributionShares": "≈ {shares} kom."
 }

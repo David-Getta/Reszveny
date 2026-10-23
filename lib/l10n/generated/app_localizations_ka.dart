@@ -2607,6 +2607,23 @@ class AppLocalizationsKa extends AppLocalizations {
   String get shareNotAdvice => 'არ არის საინვესტიციო რჩევა';
 
   @override
+  String get contributionButton => 'ახალი თანხის ინვესტირება';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'ინვესტირების თანხა ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'მხოლოდ ყიდვა, გაყიდვის გარეშე: თანხას პირველ რიგში ის პოზიციები იღებს, რომლებიც ყველაზე მეტად ჩამორჩება თავის მიზანს.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares აქცია';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

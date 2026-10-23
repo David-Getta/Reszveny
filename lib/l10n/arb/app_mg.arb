@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Fananana lehibe indrindra",
   "portfolioShareNote": "Ny isan-jato ihany no zaraina, tsy misy habetsahana.",
   "portfolioPositionsCount": "{count, plural, one{Fananana {count}} other{Fananana {count}}}",
-  "shareNotAdvice": "Tsy torohevitra momba ny fampiasam-bola"
+  "shareNotAdvice": "Tsy torohevitra momba ny fampiasam-bola",
+  "contributionButton": "Hametraka vola vaovao",
+  "contributionAmount": "Vola hapetraka ({currency})",
+  "contributionHint": "Fividianana ihany, tsy misy fivarotana: ny fananana lavitra indrindra ambanin'ny tanjony no mahazo ny vola voalohany.",
+  "contributionShares": "≈ {shares} aksiona"
 }

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Nkyɛfa a ɛsõ koraa",
   "portfolioShareNote": "Ɔha mu nkyɛmu nko ara na wɔkyɛ, ɛnyɛ sika dodow.",
   "portfolioPositionsCount": "{count, plural, =1{Kyɛfa 1} other{Nkyɛfa {count}}}",
-  "shareNotAdvice": "Ɛnyɛ sikahyɛmu ho afotu"
+  "shareNotAdvice": "Ɛnyɛ sikahyɛmu ho afotu",
+  "contributionButton": "Fa sika foforo hyɛ mu",
+  "contributionAmount": "Sika a wode bɛhyɛ mu ({currency})",
+  "contributionHint": "Wɔtɔ nko ara, wɔntɔn hwee: nkyɛfa a aka akyi koraa wɔ wɔn botaeɛ ho na wɔnya sika no kan.",
+  "contributionShares": "≈ nkyɛfa {shares}"
 }

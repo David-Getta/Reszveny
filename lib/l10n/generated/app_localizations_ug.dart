@@ -2609,6 +2609,23 @@ class AppLocalizationsUg extends AppLocalizations {
   String get shareNotAdvice => 'مەبلەغ سېلىش تەۋسىيەسى ئەمەس';
 
   @override
+  String get contributionButton => 'يېڭى مەبلەغ سېلىش';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'سېلىنىدىغان سومما ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'پەقەت سېتىۋېلىش، سېتىش يوق: نىشانىدىن ئەڭ كۆپ تۆۋەن تۇرغان پايلار ئالدى بىلەن پۇل ئالىدۇ.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares پاي';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

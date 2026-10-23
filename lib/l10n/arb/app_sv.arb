@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Största innehav",
   "portfolioShareNote": "Endast procentsatser delas, inga belopp.",
   "portfolioPositionsCount": "{count, plural, one{{count} innehav} other{{count} innehav}}",
-  "shareNotAdvice": "Inte investeringsrådgivning"
+  "shareNotAdvice": "Inte investeringsrådgivning",
+  "contributionButton": "Investera nya pengar",
+  "contributionAmount": "Belopp att investera ({currency})",
+  "contributionHint": "Bara köp, ingen försäljning: innehaven som ligger längst under sitt mål får pengarna först.",
+  "contributionShares": "≈ {shares} aktier"
 }

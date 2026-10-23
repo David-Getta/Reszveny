@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "سب سے بڑی پوزیشنز",
   "portfolioShareNote": "صرف فیصد شیئر کیے جاتے ہیں، رقم نہیں۔",
   "portfolioPositionsCount": "{count, plural, one{{count} پوزیشن} other{{count} پوزیشنز}}",
-  "shareNotAdvice": "سرمایہ کاری کا مشورہ نہیں"
+  "shareNotAdvice": "سرمایہ کاری کا مشورہ نہیں",
+  "contributionButton": "نئی رقم کی سرمایہ کاری کریں",
+  "contributionAmount": "سرمایہ کاری کی رقم ({currency})",
+  "contributionHint": "صرف خریداری، فروخت نہیں: جو پوزیشنز اپنے ہدف سے سب سے زیادہ نیچے ہیں، انہیں پہلے رقم ملتی ہے۔",
+  "contributionShares": "≈ {shares} شیئرز"
 }

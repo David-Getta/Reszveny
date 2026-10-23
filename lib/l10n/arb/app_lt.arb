@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Didžiausios pozicijos",
   "portfolioShareNote": "Bendrinami tik procentai, jokių sumų.",
   "portfolioPositionsCount": "{count, plural, one{{count} pozicija} few{{count} pozicijos} many{{count} pozicijos} other{{count} pozicijų}}",
-  "shareNotAdvice": "Tai nėra investavimo rekomendacija"
+  "shareNotAdvice": "Tai nėra investavimo rekomendacija",
+  "contributionButton": "Investuoti naujus pinigus",
+  "contributionAmount": "Investuojama suma ({currency})",
+  "contributionHint": "Tik pirkimai, jokių pardavimų: pinigus pirmiausia gauna pozicijos, labiausiai atsiliekančios nuo savo tikslo.",
+  "contributionShares": "≈ {shares} vnt."
 }

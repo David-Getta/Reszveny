@@ -2613,6 +2613,23 @@ class AppLocalizationsHa extends AppLocalizations {
   String get shareNotAdvice => 'Ba shawarar zuba jari ba ne';
 
   @override
+  String get contributionButton => 'Zuba sabon kuɗi';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Adadin da za a zuba ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Saye kawai, babu sayarwa: matsayin da suka fi nisa ƙasa da manufarsu ne za su fara samun kuɗin.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ hannun jari $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Manyan matsayi",
   "portfolioShareNote": "Kashi cikin ɗari kawai ake rabawa, ba adadin kuɗi ba.",
   "portfolioPositionsCount": "{count, plural, =1{Hannun jari 1} other{Hannayen jari {count}}}",
-  "shareNotAdvice": "Ba shawarar zuba jari ba ne"
+  "shareNotAdvice": "Ba shawarar zuba jari ba ne",
+  "contributionButton": "Zuba sabon kuɗi",
+  "contributionAmount": "Adadin da za a zuba ({currency})",
+  "contributionHint": "Saye kawai, babu sayarwa: matsayin da suka fi nisa ƙasa da manufarsu ne za su fara samun kuɗin.",
+  "contributionShares": "≈ hannun jari {shares}"
 }

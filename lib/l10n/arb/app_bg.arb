@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Най-големи позиции",
   "portfolioShareNote": "Споделят се само проценти, без суми.",
   "portfolioPositionsCount": "{count, plural, =1{1 позиция} other{{count} позиции}}",
-  "shareNotAdvice": "Не е инвестиционен съвет"
+  "shareNotAdvice": "Не е инвестиционен съвет",
+  "contributionButton": "Инвестиране на нови пари",
+  "contributionAmount": "Сума за инвестиране ({currency})",
+  "contributionHint": "Само покупки, без продажби: първо получават пари позициите, които най-много изостават от целта си.",
+  "contributionShares": "≈ {shares} акции"
 }

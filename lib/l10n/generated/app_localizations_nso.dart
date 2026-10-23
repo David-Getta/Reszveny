@@ -2625,6 +2625,23 @@ class AppLocalizationsNso extends AppLocalizations {
   String get shareNotAdvice => 'Ga se keletšo ya peeletšo';
 
   @override
+  String get contributionButton => 'Beeletša tšhelete ye mpsha';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Tšhelete ya go beeletša ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Go reka fela, ga go rekišwe: maemo ao a lego ka fase kudu ga nepo ya ona a hwetša tšhelete pele.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ dišere tše $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

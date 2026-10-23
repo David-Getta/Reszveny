@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "అతిపెద్ద పొజిషన్లు",
   "portfolioShareNote": "శాతాలు మాత్రమే షేర్ అవుతాయి, మొత్తాలు కాదు.",
   "portfolioPositionsCount": "{count, plural, one{{count} పొజిషన్} other{{count} పొజిషన్లు}}",
-  "shareNotAdvice": "పెట్టుబడి సలహా కాదు"
+  "shareNotAdvice": "పెట్టుబడి సలహా కాదు",
+  "contributionButton": "కొత్త డబ్బును పెట్టుబడి పెట్టండి",
+  "contributionAmount": "పెట్టుబడి పెట్టే మొత్తం ({currency})",
+  "contributionHint": "కొనుగోళ్లు మాత్రమే, అమ్మకాలు లేవు: తమ లక్ష్యానికి అత్యంత దిగువన ఉన్న పొజిషన్లకు ముందుగా డబ్బు అందుతుంది.",
+  "contributionShares": "≈ {shares} షేర్లు"
 }

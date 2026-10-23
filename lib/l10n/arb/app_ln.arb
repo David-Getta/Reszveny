@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Ba-position ya minene",
   "portfolioShareNote": "Ba-pourcentage kaka nde ekabolamaka, mbongo te.",
   "portfolioPositionsCount": "{count, plural, =1{Eteni 1} other{Biteni {count}}}",
-  "shareNotAdvice": "Ezali toli ya kotia mbɔngɔ te"
+  "shareNotAdvice": "Ezali toli ya kotia mbɔngɔ te",
+  "contributionButton": "Tia mbɔngɔ ya sika",
+  "contributionAmount": "Motuya ya kotia ({currency})",
+  "contributionHint": "Kosomba kaka, koteka te: ba-position oyo etikali mosika mingi na nse ya mokano na yango ekozwa mbɔngɔ liboso.",
+  "contributionShares": "≈ ba-action {shares}"
 }

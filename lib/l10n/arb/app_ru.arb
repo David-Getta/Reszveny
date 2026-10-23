@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Крупнейшие позиции",
   "portfolioShareNote": "Передаются только проценты, без сумм.",
   "portfolioPositionsCount": "{count, plural, one{{count} позиция} few{{count} позиции} many{{count} позиций} other{{count} позиции}}",
-  "shareNotAdvice": "Не инвестиционная рекомендация"
+  "shareNotAdvice": "Не инвестиционная рекомендация",
+  "contributionButton": "Вложить новые деньги",
+  "contributionAmount": "Сумма для вложения ({currency})",
+  "contributionHint": "Только покупки, без продаж: деньги сначала идут в позиции, сильнее всего отстающие от цели.",
+  "contributionShares": "≈ {shares} шт."
 }

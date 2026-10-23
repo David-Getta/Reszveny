@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "最大持仓",
   "portfolioShareNote": "仅分享百分比，不含金额。",
   "portfolioPositionsCount": "{count, plural, other{{count} 个持仓}}",
-  "shareNotAdvice": "不构成投资建议"
+  "shareNotAdvice": "不构成投资建议",
+  "contributionButton": "投入新资金",
+  "contributionAmount": "投资金额（{currency}）",
+  "contributionHint": "只买不卖：低于目标比例最多的持仓优先分配资金。",
+  "contributionShares": "≈ {shares} 股"
 }

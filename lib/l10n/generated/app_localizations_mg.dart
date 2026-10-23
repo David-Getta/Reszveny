@@ -2626,6 +2626,23 @@ class AppLocalizationsMg extends AppLocalizations {
   String get shareNotAdvice => 'Tsy torohevitra momba ny fampiasam-bola';
 
   @override
+  String get contributionButton => 'Hametraka vola vaovao';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Vola hapetraka ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Fividianana ihany, tsy misy fivarotana: ny fananana lavitra indrindra ambanin\'ny tanjony no mahazo ny vola voalohany.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares aksiona';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

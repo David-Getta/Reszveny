@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "ຮຸ້ນທີ່ຖືຫຼາຍທີ່ສຸດ",
   "portfolioShareNote": "ແບ່ງປັນສະເພາະເປີເຊັນເທົ່ານັ້ນ ບໍ່ມີຈຳນວນເງິນ",
   "portfolioPositionsCount": "{count, plural, other{{count} ລາຍການ}}",
-  "shareNotAdvice": "ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ"
+  "shareNotAdvice": "ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ",
+  "contributionButton": "ລົງທຶນເງິນໃໝ່",
+  "contributionAmount": "ຈຳນວນເງິນທີ່ຈະລົງທຶນ ({currency})",
+  "contributionHint": "ຊື້ເທົ່ານັ້ນ ບໍ່ມີການຂາຍ: ຮຸ້ນທີ່ຕ່ຳກວ່າເປົ້າໝາຍຫຼາຍທີ່ສຸດຈະໄດ້ຮັບເງິນກ່ອນ.",
+  "contributionShares": "≈ {shares} ຮຸ້ນ"
 }

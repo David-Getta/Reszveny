@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import '../../core/models/stock_quote.dart';
 import '../fx/fx_service.dart';
 import '../market_data/market_data_provider.dart';
@@ -311,4 +313,36 @@ List<RebalanceStep> rebalancePlan(PortfolioSnapshot s, Map<String, double> targe
       if (targets[r.position.symbol.toUpperCase()] case final t?)
         (symbol: r.position.symbol, current: r.weight * 100, target: t, amount: t / 100 * total - r.weight * total),
   ]..sort((a, b) => b.amount.abs().compareTo(a.amount.abs()));
+}
+
+/// Egy pozíció vétele egy új befizetésből: összeg a portfólió pénznemében és a
+/// mai áron nagyjából hány darab (`null`, ha nincs ár vagy árfolyam).
+typedef ContributionStep = ({String symbol, double amount, double? shares});
+
+/// Új befizetés ([amount], a portfólió pénznemében) elosztása csak vétellel a
+/// célarányok felé: a cél a mostani összértékhez és a befizetéshez együtt mérve.
+/// Először a célja alatt lévő pozíciók hiánya töltődik fel (ha a pénz nem elég
+/// mindre, a hiányuk arányában), a maradék a célarányok szerint oszlik el. Csak
+/// az árral és árfolyammal rendelkező, céllal bíró pozíciók; a legnagyobb vétel elöl.
+List<ContributionStep> contributionPlan(PortfolioSnapshot s, Map<String, double> targets, double amount) {
+  if (amount <= 0) return const [];
+  final rows = [
+    for (final r in s.rows)
+      if (r.inTotal && r.price! > 0)
+        if (targets[r.position.symbol.toUpperCase()] case final t? when t > 0) (row: r, target: t),
+  ];
+  if (rows.isEmpty) return const [];
+  final total = s.totalValue + amount;
+  final deficits = [for (final x in rows) math.max(0.0, x.target / 100 * total - x.row.value! * x.row.rate!)];
+  final missing = deficits.fold(0.0, (a, b) => a + b);
+  final targetSum = rows.fold(0.0, (a, x) => a + x.target);
+  final out = <ContributionStep>[];
+  for (final (i, x) in rows.indexed) {
+    final buy = missing >= amount
+        ? deficits[i] * amount / missing
+        : deficits[i] + (amount - missing) * x.target / targetSum;
+    if (buy <= 0) continue;
+    out.add((symbol: x.row.position.symbol, amount: buy, shares: buy / x.row.rate! / x.row.price!));
+  }
+  return out..sort((a, b) => b.amount.compareTo(a.amount));
 }

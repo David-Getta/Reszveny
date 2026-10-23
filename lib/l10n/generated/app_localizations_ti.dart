@@ -2568,6 +2568,23 @@ class AppLocalizationsTi extends AppLocalizations {
   String get shareNotAdvice => 'ምኽሪ ወፍሪ ኣይኮነን';
 
   @override
+  String get contributionButton => 'ሓድሽ ገንዘብ ኣውፍር';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'መጠን ወፍሪ ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'ዕድጊት ጥራይ፣ መሸጣ የለን፦ እቶም ካብ ዕላማኦም ብዝያዳ ዝተሓቱ ዋንነታት ቅድም ገንዘብ ይረኽቡ።';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares ኣክሲዮናት';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

@@ -2612,6 +2612,23 @@ class AppLocalizationsEe extends AppLocalizations {
   String get shareNotAdvice => 'Menye aɖaŋuɖoɖo le gadede nu ŋu o';
 
   @override
+  String get contributionButton => 'Do ga yeye ɖe eme';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Ga si nàde eme ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Ƒeƒle ko, dzadzra aɖeke meli o: akpa siwo tsi megbe wu na woƒe taɖodzinu la xɔa ga la gbã.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ akpa $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

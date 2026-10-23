@@ -2608,6 +2608,23 @@ class AppLocalizationsTk extends AppLocalizations {
   String get shareNotAdvice => 'Maýa goýum maslahaty däl';
 
   @override
+  String get contributionButton => 'Täze maýa goý';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Goýuljak mukdar ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Diňe satyn almak, satmak ýok: maksadyndan iň köp aşakda galan pozisiýalar puly ilki alýar.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares paýnama';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

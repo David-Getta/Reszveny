@@ -2631,6 +2631,23 @@ class AppLocalizationsGl extends AppLocalizations {
   String get shareNotAdvice => 'Non é asesoramento de investimento';
 
   @override
+  String get contributionButton => 'Investir diñeiro novo';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Importe para investir ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Só compras, sen vendas: as posicións máis por debaixo do seu obxectivo reciben primeiro o diñeiro.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares accións';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

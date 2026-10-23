@@ -2536,6 +2536,23 @@ class AppLocalizationsKo extends AppLocalizations {
   String get shareNotAdvice => '투자 조언이 아닙니다';
 
   @override
+  String get contributionButton => '추가 자금 투자';
+
+  @override
+  String contributionAmount(String currency) {
+    return '투자 금액($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      '매수만 하고 매도는 하지 않습니다. 목표 비중에 가장 못 미치는 종목부터 자금을 배분합니다.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares주';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

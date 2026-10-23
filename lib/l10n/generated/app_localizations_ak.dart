@@ -2608,6 +2608,23 @@ class AppLocalizationsAk extends AppLocalizations {
   String get shareNotAdvice => 'Ɛnyɛ sikahyɛmu ho afotu';
 
   @override
+  String get contributionButton => 'Fa sika foforo hyɛ mu';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Sika a wode bɛhyɛ mu ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Wɔtɔ nko ara, wɔntɔn hwee: nkyɛfa a aka akyi koraa wɔ wɔn botaeɛ ho na wɔnya sika no kan.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ nkyɛfa $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

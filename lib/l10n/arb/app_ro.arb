@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Cele mai mari poziții",
   "portfolioShareNote": "Se distribuie doar procente, fără sume.",
   "portfolioPositionsCount": "{count, plural, one{{count} poziție} few{{count} poziții} other{{count} de poziții}}",
-  "shareNotAdvice": "Nu este sfat de investiții"
+  "shareNotAdvice": "Nu este sfat de investiții",
+  "contributionButton": "Investește bani noi",
+  "contributionAmount": "Suma de investit ({currency})",
+  "contributionHint": "Doar cumpărări, fără vânzări: banii merg mai întâi la pozițiile aflate cel mai mult sub țintă.",
+  "contributionShares": "≈ {shares} acțiuni"
 }

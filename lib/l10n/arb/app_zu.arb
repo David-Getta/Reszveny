@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Amasheya amakhulu",
   "portfolioShareNote": "Kwabelwana ngamaphesenti kuphela, hhayi ngamanani emali.",
   "portfolioPositionsCount": "{count, plural, one{Isheya elingu-{count}} other{Amasheya angu-{count}}}",
-  "shareNotAdvice": "Akusona iseluleko sokutshala imali"
+  "shareNotAdvice": "Akusona iseluleko sokutshala imali",
+  "contributionButton": "Tshala imali entsha",
+  "contributionAmount": "Inani lokutshala ({currency})",
+  "contributionHint": "Kuthengwa kuphela, akuthengiswa: amasheya angaphansi kakhulu komgomo wawo athola imali kuqala.",
+  "contributionShares": "≈ amasheya {shares}"
 }

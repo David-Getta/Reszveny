@@ -2615,6 +2615,23 @@ class AppLocalizationsRn extends AppLocalizations {
   String get shareNotAdvice => 'Si inama yo gushora imari';
 
   @override
+  String get contributionButton => 'Shora amahera mashasha';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Amahera yo gushora ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Kugura gusa, nta kugurisha: imigabane iri kure cane munsi y\'intumbero yayo ni yo ironka amahera mbere.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ imigabane $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

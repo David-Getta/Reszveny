@@ -2492,6 +2492,22 @@ class AppLocalizationsZh extends AppLocalizations {
   String get shareNotAdvice => '不构成投资建议';
 
   @override
+  String get contributionButton => '投入新资金';
+
+  @override
+  String contributionAmount(String currency) {
+    return '投资金额（$currency）';
+  }
+
+  @override
+  String get contributionHint => '只买不卖：低于目标比例最多的持仓优先分配资金。';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares 股';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5351,6 +5367,22 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get shareNotAdvice => '並不構成投資建議';
+
+  @override
+  String get contributionButton => '投入新資金';
+
+  @override
+  String contributionAmount(String currency) {
+    return '投資金額（$currency）';
+  }
+
+  @override
+  String get contributionHint => '只買不賣：低於目標比例最多的持倉優先獲分配資金。';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares 股';
+  }
 
   @override
   String get portfolioGoalSet => '設定目標';

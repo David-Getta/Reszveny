@@ -2595,6 +2595,23 @@ class AppLocalizationsBo extends AppLocalizations {
   String get shareNotAdvice => 'མ་འཇོག་གི་བསམ་འཆར་མིན།';
 
   @override
+  String get contributionButton => 'དངུལ་གསར་པ་མ་འཇོག་བྱེད།';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'མ་འཇོག་བྱེད་རྒྱུའི་དངུལ་འབོར ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'ཉོ་བ་ཁོ་ན། འཚོང་བ་མེད། དམིགས་ཡུལ་ལས་ཆེས་མང་བ་ཞན་པའི་ཧུར་ཁག་ལ་དངུལ་སྔོན་ལ་སྤྲོད་ཀྱི་རེད།';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ ཧུར་ཁག $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

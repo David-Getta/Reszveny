@@ -2608,6 +2608,23 @@ class AppLocalizationsSv extends AppLocalizations {
   String get shareNotAdvice => 'Inte investeringsrådgivning';
 
   @override
+  String get contributionButton => 'Investera nya pengar';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Belopp att investera ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Bara köp, ingen försäljning: innehaven som ligger längst under sitt mål får pengarna först.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares aktier';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Ereguerekóva tuichavéva",
   "portfolioShareNote": "Porcentaje añoite oñemoherakuã, ndahaʼéi pira pire.",
   "portfolioPositionsCount": "{count, plural, =1{1 ereguerekóva} other{{count} ereguerekóva}}",
-  "shareNotAdvice": "Ndahaʼéi ñemoñeʼẽ inversión rehegua"
+  "shareNotAdvice": "Ndahaʼéi ñemoñeʼẽ inversión rehegua",
+  "contributionButton": "Einverti viru pyahu",
+  "contributionAmount": "Mboýpa reinvertíta ({currency})",
+  "contributionHint": "Jejogua añoite, ñemu ỹre: umi ereguerekóva opytavéva hupytyrã guýpe ohupyty raẽ pe viru.",
+  "contributionShares": "≈ {shares} acción"
 }

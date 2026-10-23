@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Emigabo egisinga obunene",
   "portfolioShareNote": "Ebitundu ku kikumi byokka bye bigabanwa, si ssente.",
   "portfolioPositionsCount": "{count, plural, =1{Omugabo 1} other{Emigabo {count}}}",
-  "shareNotAdvice": "Si magezi ga kusiga nsimbi"
+  "shareNotAdvice": "Si magezi ga kusiga nsimbi",
+  "contributionButton": "Teeka ssente empya",
+  "contributionAmount": "Ssente z'onoteeka ({currency})",
+  "contributionHint": "Kugula kwokka, tewali kutunda: emigabo egisinga okuba wansi w'ekigendererwa kyagyo gye gisooka okufuna ssente.",
+  "contributionShares": "≈ emigabo {shares}"
 }

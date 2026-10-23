@@ -2613,6 +2613,23 @@ class AppLocalizationsPt extends AppLocalizations {
   String get shareNotAdvice => 'Não é aconselhamento de investimento';
 
   @override
+  String get contributionButton => 'Investir dinheiro novo';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Valor a investir ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Só compras, sem vendas: as posições mais abaixo da meta recebem o dinheiro primeiro.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares ações';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

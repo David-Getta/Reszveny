@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Aksiyɔn belebelebaw",
   "portfolioShareNote": "Pursantaziw dɔrɔn de bɛ jɛnsɛn, wari hakɛw tɛ.",
   "portfolioPositionsCount": "{count, plural, =1{Aksiyɔn 1} other{Aksiyɔn {count}}}",
-  "shareNotAdvice": "Wari donni ladilikan tɛ"
+  "shareNotAdvice": "Wari donni ladilikan tɛ",
+  "contributionButton": "Wari kura don",
+  "contributionAmount": "Wari hakɛ min bɛna don ({currency})",
+  "contributionHint": "San dɔrɔn, feere tɛ: aksiyɔn minnu tora kɔfɛ kosɛbɛ u ka laɲini na, olu bɛ wari sɔrɔ fɔlɔ.",
+  "contributionShares": "≈ aksiyɔn {shares}"
 }

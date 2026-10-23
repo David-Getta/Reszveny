@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Мавқеъҳои калонтарин",
   "portfolioShareNote": "Танҳо фоизҳо мубодила мешаванд, бе маблағҳо.",
   "portfolioPositionsCount": "{count, plural, one{{count} мавқеъ} other{{count} мавқеъ}}",
-  "shareNotAdvice": "Маслиҳати сармоягузорӣ нест"
+  "shareNotAdvice": "Маслиҳати сармоягузорӣ нест",
+  "contributionButton": "Сармоягузории пули нав",
+  "contributionAmount": "Маблағи сармоягузорӣ ({currency})",
+  "contributionHint": "Танҳо харид, бе фурӯш: аввал ба мавқеъҳое пул мерасад, ки аз ҳама бештар аз мақсади худ пасттаранд.",
+  "contributionShares": "≈ {shares} саҳмия"
 }

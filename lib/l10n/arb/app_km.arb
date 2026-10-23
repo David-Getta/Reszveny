@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "ការកាន់កាប់ធំបំផុត",
   "portfolioShareNote": "ចែករំលែកតែភាគរយប៉ុណ្ណោះ គ្មានចំនួនទឹកប្រាក់ទេ។",
   "portfolioPositionsCount": "{count, plural, other{ភាគហ៊ុន {count} មុខ}}",
-  "shareNotAdvice": "មិនមែនជាដំបូន្មានវិនិយោគទេ"
+  "shareNotAdvice": "មិនមែនជាដំបូន្មានវិនិយោគទេ",
+  "contributionButton": "វិនិយោគប្រាក់ថ្មី",
+  "contributionAmount": "ចំនួនទឹកប្រាក់ត្រូវវិនិយោគ ({currency})",
+  "contributionHint": "ទិញតែប៉ុណ្ណោះ គ្មានការលក់ទេ៖ ការកាន់កាប់ដែលនៅក្រោមគោលដៅឆ្ងាយជាងគេ ទទួលបានប្រាក់មុន។",
+  "contributionShares": "≈ {shares} ភាគហ៊ុន"
 }

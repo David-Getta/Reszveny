@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Iň uly pozisiýalar",
   "portfolioShareNote": "Diňe göterimler paýlaşylýar, möçberler däl.",
   "portfolioPositionsCount": "{count, plural, one{{count} pozisiýa} other{{count} pozisiýa}}",
-  "shareNotAdvice": "Maýa goýum maslahaty däl"
+  "shareNotAdvice": "Maýa goýum maslahaty däl",
+  "contributionButton": "Täze maýa goý",
+  "contributionAmount": "Goýuljak mukdar ({currency})",
+  "contributionHint": "Diňe satyn almak, satmak ýok: maksadyndan iň köp aşakda galan pozisiýalar puly ilki alýar.",
+  "contributionShares": "≈ {shares} paýnama"
 }

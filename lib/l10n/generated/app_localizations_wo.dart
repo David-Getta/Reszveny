@@ -2600,6 +2600,23 @@ class AppLocalizationsWo extends AppLocalizations {
   String get shareNotAdvice => 'Du ndigal ci dugal xaalis';
 
   @override
+  String get contributionButton => 'Dugal xaalis bu bees';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Xaalis bi nga bëgg a dugal ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Jënd rekk, du jaay: aksiyoŋ yi gën a sore seen jubluwaay ci suuf ñoo jëkk a jot xaalis bi.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares aksiyoŋ';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

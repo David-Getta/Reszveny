@@ -2628,6 +2628,23 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get shareNotAdvice => 'Saan a balakad iti panagpuonan';
 
   @override
+  String get contributionButton => 'Agipuonan iti baro a kuarta';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Gatad a maipuonan ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Panaggatang laeng, awan ti panaglako: dagiti posision a kaadaywan iti baba ti targetda ti umuna a makaawat iti kuarta.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares a share';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

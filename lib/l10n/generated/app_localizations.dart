@@ -4501,6 +4501,30 @@ abstract class AppLocalizations {
   /// **'Not investment advice'**
   String get shareNotAdvice;
 
+  /// Button under the target weights (rebalancing) and dialog title: split an amount of new money between the positions, buying only, towards their target weights.
+  ///
+  /// In en, this message translates to:
+  /// **'Invest new money'**
+  String get contributionButton;
+
+  /// Field label in the "invest new money" dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount to invest ({currency})'**
+  String contributionAmount(String currency);
+
+  /// Explanation at the top of the "invest new money" dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Buys only, no sales: the positions furthest below their target get the money first.'**
+  String get contributionHint;
+
+  /// About how many shares the suggested amount buys at today's price.
+  ///
+  /// In en, this message translates to:
+  /// **'≈ {shares} shares'**
+  String contributionShares(String shares);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

@@ -2573,6 +2573,23 @@ class AppLocalizationsAm extends AppLocalizations {
   String get shareNotAdvice => 'የኢንቨስትመንት ምክር አይደለም';
 
   @override
+  String get contributionButton => 'አዲስ ገንዘብ ኢንቨስት ያድርጉ';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'ኢንቨስት የሚደረገው መጠን ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'ግዢ ብቻ፣ ሽያጭ የለም፦ ከዒላማቸው በጣም ወደ ኋላ የቀሩት ይዞታዎች ገንዘቡን መጀመሪያ ያገኛሉ።';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares አክሲዮኖች';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

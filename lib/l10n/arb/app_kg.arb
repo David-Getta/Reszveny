@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Ba position ya nene",
   "portfolioShareNote": "Bo ke kabula kaka ba pourcentage, ve ba mbongo.",
   "portfolioPositionsCount": "{count, plural, =1{Kitini 1} other{Bitini {count}}}",
-  "shareNotAdvice": "Ka malongi ma kutula mbongo ko"
+  "shareNotAdvice": "Ka malongi ma kutula mbongo ko",
+  "contributionButton": "Tula mbongo ya mpa",
+  "contributionAmount": "Ntalu ya kutula ({currency})",
+  "contributionHint": "Kusumba kaka, kuteka ve: ba position yina me bikala nsi ya lukanu na yo kuluta ta baka mbongo ntete.",
+  "contributionShares": "≈ action {shares}"
 }

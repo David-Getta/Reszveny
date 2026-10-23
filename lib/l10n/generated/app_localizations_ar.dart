@@ -2665,6 +2665,23 @@ class AppLocalizationsAr extends AppLocalizations {
   String get shareNotAdvice => 'ليس نصيحة استثمارية';
 
   @override
+  String get contributionButton => 'استثمار أموال جديدة';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'المبلغ المراد استثماره ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'شراء فقط دون أي بيع: تحصل المراكز الأكثر تأخرًا عن هدفها على المال أولًا.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares سهم';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

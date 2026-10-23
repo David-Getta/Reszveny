@@ -2605,6 +2605,23 @@ class AppLocalizationsDa extends AppLocalizations {
   String get shareNotAdvice => 'Ikke investeringsrådgivning';
 
   @override
+  String get contributionButton => 'Investér nye penge';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Beløb at investere ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Kun køb, intet salg: de beholdninger, der ligger længst under deres mål, får pengene først.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares aktier';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

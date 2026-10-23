@@ -2601,6 +2601,23 @@ class AppLocalizationsFf extends AppLocalizations {
   String get shareNotAdvice => 'Wonaa wasiya e investisman';
 
   @override
+  String get contributionButton => 'Waɗ ceede kese';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Limoore ceede ɗe a waɗata ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Sooda tan, alaa yeeya: ko a jogii ɓurɗo woɗɗude faandaare mum heɓan ceede ɗee adan.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ aksiyoŋ $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

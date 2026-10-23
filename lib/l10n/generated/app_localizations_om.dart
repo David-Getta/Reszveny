@@ -2617,6 +2617,23 @@ class AppLocalizationsOm extends AppLocalizations {
   String get shareNotAdvice => 'Gorsa invastimantii miti';
 
   @override
+  String get contributionButton => 'Maallaqa haaraa invastii godhi';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Hanga invastii godhamu ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Bituu qofa, gurgurtaa hin qabu: qabiyyeewwan galma isaanii irraa baay\'ee gadi jiran maallaqa dursanii argatu.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ aksiyoona $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

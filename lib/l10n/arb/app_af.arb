@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Grootste posisies",
   "portfolioShareNote": "Slegs persentasies word gedeel, geen bedrae nie.",
   "portfolioPositionsCount": "{count, plural, =1{1 posisie} other{{count} posisies}}",
-  "shareNotAdvice": "Nie beleggingsadvies nie"
+  "shareNotAdvice": "Nie beleggingsadvies nie",
+  "contributionButton": "Belê nuwe geld",
+  "contributionAmount": "Bedrag om te belê ({currency})",
+  "contributionHint": "Slegs aankope, geen verkope nie: die posisies wat die verste onder hul teiken is, kry die geld eerste.",
+  "contributionShares": "≈ {shares} aandele"
 }

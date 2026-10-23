@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Aksiyonji ɓurɗi mawnude",
   "portfolioShareNote": "Pursantaasji tan, keeweele alaa.",
   "portfolioPositionsCount": "{count, plural, =1{Aksiyoŋ 1} other{Aksiyonji {count}}}",
-  "shareNotAdvice": "Wonaa wasiya e investisman"
+  "shareNotAdvice": "Wonaa wasiya e investisman",
+  "contributionButton": "Waɗ ceede kese",
+  "contributionAmount": "Limoore ceede ɗe a waɗata ({currency})",
+  "contributionHint": "Sooda tan, alaa yeeya: ko a jogii ɓurɗo woɗɗude faandaare mum heɓan ceede ɗee adan.",
+  "contributionShares": "≈ aksiyoŋ {shares}"
 }

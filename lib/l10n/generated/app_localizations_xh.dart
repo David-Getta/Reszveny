@@ -2619,6 +2619,23 @@ class AppLocalizationsXh extends AppLocalizations {
   String get shareNotAdvice => 'Ayilocebiso lotyalo-mali';
 
   @override
+  String get contributionButton => 'Tyala imali entsha';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Isixa sokutyala ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Kuthengwa kuphela, akuthengiswa: iipozishini ezingaphantsi kakhulu kwenjongo yazo zifumana imali kuqala.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ izabelo $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

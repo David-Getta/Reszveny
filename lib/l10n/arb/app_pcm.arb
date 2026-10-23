@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Biggest stocks",
   "portfolioShareNote": "Na only percentage we go share, no amount.",
   "portfolioPositionsCount": "{count, plural, one{{count} stock} other{{count} stocks}}",
-  "shareNotAdvice": "E no be investment advice"
+  "shareNotAdvice": "E no be investment advice",
+  "contributionButton": "Invest new moni",
+  "contributionAmount": "Amount to invest ({currency})",
+  "contributionHint": "Na only buy, no sell: di stocks wey fall pass under dia target go first collect di moni.",
+  "contributionShares": "≈ {shares} shares"
 }

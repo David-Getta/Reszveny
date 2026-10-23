@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "ਸਭ ਤੋਂ ਵੱਡੀਆਂ ਪੁਜ਼ੀਸ਼ਨਾਂ",
   "portfolioShareNote": "ਸਿਰਫ਼ ਪ੍ਰਤੀਸ਼ਤ ਸਾਂਝੇ ਕੀਤੇ ਜਾਂਦੇ ਹਨ, ਰਕਮਾਂ ਨਹੀਂ।",
   "portfolioPositionsCount": "{count, plural, one{{count} ਪੁਜ਼ੀਸ਼ਨ} other{{count} ਪੁਜ਼ੀਸ਼ਨਾਂ}}",
-  "shareNotAdvice": "ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ"
+  "shareNotAdvice": "ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ",
+  "contributionButton": "ਨਵਾਂ ਪੈਸਾ ਨਿਵੇਸ਼ ਕਰੋ",
+  "contributionAmount": "ਨਿਵੇਸ਼ ਕਰਨ ਲਈ ਰਕਮ ({currency})",
+  "contributionHint": "ਸਿਰਫ਼ ਖਰੀਦ, ਕੋਈ ਵਿਕਰੀ ਨਹੀਂ: ਆਪਣੇ ਟੀਚੇ ਤੋਂ ਸਭ ਤੋਂ ਵੱਧ ਹੇਠਾਂ ਵਾਲੀਆਂ ਪੁਜ਼ੀਸ਼ਨਾਂ ਨੂੰ ਪਹਿਲਾਂ ਪੈਸਾ ਮਿਲਦਾ ਹੈ।",
+  "contributionShares": "≈ {shares} ਸ਼ੇਅਰ"
 }

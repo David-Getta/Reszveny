@@ -2618,6 +2618,23 @@ class AppLocalizationsZu extends AppLocalizations {
   String get shareNotAdvice => 'Akusona iseluleko sokutshala imali';
 
   @override
+  String get contributionButton => 'Tshala imali entsha';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Inani lokutshala ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Kuthengwa kuphela, akuthengiswa: amasheya angaphansi kakhulu komgomo wawo athola imali kuqala.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ amasheya $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

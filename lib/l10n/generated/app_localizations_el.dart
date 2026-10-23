@@ -2617,6 +2617,23 @@ class AppLocalizationsEl extends AppLocalizations {
   String get shareNotAdvice => 'Δεν αποτελεί επενδυτική συμβουλή';
 
   @override
+  String get contributionButton => 'Επένδυση νέων χρημάτων';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Ποσό προς επένδυση ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Μόνο αγορές, χωρίς πωλήσεις: οι θέσεις που υστερούν περισσότερο έναντι του στόχου τους παίρνουν πρώτες τα χρήματα.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares μετοχές';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

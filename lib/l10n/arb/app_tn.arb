@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Dishere tse dikgolo",
   "portfolioShareNote": "Go abelanwa diperesente fela, e seng madi.",
   "portfolioPositionsCount": "{count, plural, one{Shere e le {count}} other{Dishere di le {count}}}",
-  "shareNotAdvice": "Ga se kgakololo ya peeletso"
+  "shareNotAdvice": "Ga se kgakololo ya peeletso",
+  "contributionButton": "Beeletsa madi a masha",
+  "contributionAmount": "Madi a go beeletsa ({currency})",
+  "contributionHint": "Go reka fela, ga go rekisiwe: dishere tse di kwa tlase thata ga maikaelelo a tsone di amogela madi pele.",
+  "contributionShares": "≈ dishere di le {shares}"
 }

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Kadakkelan a posision",
   "portfolioShareNote": "Dagiti porsiento laeng ti maibingay, awan ti kantidad.",
   "portfolioPositionsCount": "{count, plural, =1{1 a posision} other{{count} a posision}}",
-  "shareNotAdvice": "Saan a balakad iti panagpuonan"
+  "shareNotAdvice": "Saan a balakad iti panagpuonan",
+  "contributionButton": "Agipuonan iti baro a kuarta",
+  "contributionAmount": "Gatad a maipuonan ({currency})",
+  "contributionHint": "Panaggatang laeng, awan ti panaglako: dagiti posision a kaadaywan iti baba ti targetda ti umuna a makaawat iti kuarta.",
+  "contributionShares": "≈ {shares} a share"
 }

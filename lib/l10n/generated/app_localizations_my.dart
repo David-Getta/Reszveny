@@ -2598,6 +2598,23 @@ class AppLocalizationsMy extends AppLocalizations {
   String get shareNotAdvice => 'ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ';
 
   @override
+  String get contributionButton => 'ငွေသစ် ရင်းနှီးရန်';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'ရင်းနှီးမည့် ပမာဏ ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'ဝယ်ရုံသာ၊ မရောင်းပါ- ပစ်မှတ်ထက် အများဆုံး လျော့နေသော ကိုင်ဆောင်ထားမှုများက ငွေကို ဦးစွာ ရရှိပါသည်။';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ ရှယ်ယာ $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

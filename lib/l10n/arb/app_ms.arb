@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Pegangan terbesar",
   "portfolioShareNote": "Hanya peratusan yang dikongsi, tanpa jumlah.",
   "portfolioPositionsCount": "{count, plural, other{{count} pegangan}}",
-  "shareNotAdvice": "Bukan nasihat pelaburan"
+  "shareNotAdvice": "Bukan nasihat pelaburan",
+  "contributionButton": "Laburkan wang baharu",
+  "contributionAmount": "Jumlah untuk dilaburkan ({currency})",
+  "contributionHint": "Beli sahaja, tanpa jualan: pegangan yang paling jauh di bawah sasarannya menerima wang dahulu.",
+  "contributionShares": "≈ {shares} saham"
 }

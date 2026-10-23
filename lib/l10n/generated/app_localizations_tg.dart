@@ -2609,6 +2609,23 @@ class AppLocalizationsTg extends AppLocalizations {
   String get shareNotAdvice => 'Маслиҳати сармоягузорӣ нест';
 
   @override
+  String get contributionButton => 'Сармоягузории пули нав';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Маблағи сармоягузорӣ ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Танҳо харид, бе фурӯш: аввал ба мавқеъҳое пул мерасад, ки аз ҳама бештар аз мақсади худ пасттаранд.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares саҳмия';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

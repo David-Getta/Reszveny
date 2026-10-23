@@ -2646,6 +2646,23 @@ class AppLocalizationsRo extends AppLocalizations {
   String get shareNotAdvice => 'Nu este sfat de investiții';
 
   @override
+  String get contributionButton => 'Investește bani noi';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Suma de investit ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Doar cumpărări, fără vânzări: banii merg mai întâi la pozițiile aflate cel mai mult sub țintă.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares acțiuni';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

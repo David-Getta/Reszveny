@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Qabiyyeewwan gurguddoo",
   "portfolioShareNote": "Dhibbeentaa qofatu qoodama, hammi maallaqaa hin qoodamu.",
   "portfolioPositionsCount": "{count, plural, one{Qabiyyee {count}} other{Qabiyyeewwan {count}}}",
-  "shareNotAdvice": "Gorsa invastimantii miti"
+  "shareNotAdvice": "Gorsa invastimantii miti",
+  "contributionButton": "Maallaqa haaraa invastii godhi",
+  "contributionAmount": "Hanga invastii godhamu ({currency})",
+  "contributionHint": "Bituu qofa, gurgurtaa hin qabu: qabiyyeewwan galma isaanii irraa baay'ee gadi jiran maallaqa dursanii argatu.",
+  "contributionShares": "≈ aksiyoona {shares}"
 }

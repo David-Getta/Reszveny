@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Ihe kachasị ukwuu ị nwere",
   "portfolioShareNote": "Naanị pasentị ka a na-ekesa, ọ bụghị ego ole.",
   "portfolioPositionsCount": "{count, plural, =1{Òkè 1} other{Òkè {count}}}",
-  "shareNotAdvice": "Ọ bụghị ndụmọdụ itinye ego"
+  "shareNotAdvice": "Ọ bụghị ndụmọdụ itinye ego",
+  "contributionButton": "Tinye ego ọhụrụ",
+  "contributionAmount": "Ego ị ga-etinye ({currency})",
+  "contributionHint": "Ịzụ naanị, enweghị ire: ihe ndị ị nwere kacha nọrọ n'azụ ebumnuche ha na-ebu ụzọ nweta ego ahụ.",
+  "contributionShares": "≈ shares {shares}"
 }

@@ -2606,6 +2606,23 @@ class AppLocalizationsKk extends AppLocalizations {
   String get shareNotAdvice => 'Инвестициялық кеңес емес';
 
   @override
+  String get contributionButton => 'Жаңа қаражат салу';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Салынатын сома ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Тек сатып алу, сатусыз: қаражатты алдымен мақсатынан ең көп қалып отырған позициялар алады.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares акция';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

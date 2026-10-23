@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "หุ้นที่ถือสัดส่วนสูงสุด",
   "portfolioShareNote": "แชร์เฉพาะเปอร์เซ็นต์ ไม่มีจำนวนเงิน",
   "portfolioPositionsCount": "{count, plural, other{หุ้นที่ถือ {count} รายการ}}",
-  "shareNotAdvice": "ไม่ใช่คำแนะนำในการลงทุน"
+  "shareNotAdvice": "ไม่ใช่คำแนะนำในการลงทุน",
+  "contributionButton": "ลงทุนเงินก้อนใหม่",
+  "contributionAmount": "จำนวนเงินที่จะลงทุน ({currency})",
+  "contributionHint": "ซื้ออย่างเดียว ไม่ขาย: หุ้นที่ต่ำกว่าสัดส่วนเป้าหมายมากที่สุดจะได้รับเงินก่อน",
+  "contributionShares": "≈ {shares} หุ้น"
 }

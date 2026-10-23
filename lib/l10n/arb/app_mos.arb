@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Aksiõ kãsems",
   "portfolioShareNote": "Yaa % bala la b pʋɩɩd, pa ligd sõor ye.",
   "portfolioPositionsCount": "{count, plural, one{Aksiõ {count}} other{Aksiõ {count}}}",
-  "shareNotAdvice": "Pa sagls ligd kẽesg wɛɛngẽ ye"
+  "shareNotAdvice": "Pa sagls ligd kẽesg wɛɛngẽ ye",
+  "contributionButton": "Kẽes ligd-paalga",
+  "contributionAmount": "Ligd sõore f sẽn na n kẽes ({currency})",
+  "contributionHint": "Da bala, koosg ka be: aksiõ nins sẽn ka ta b raabã wʋsgo n deng n paamd ligdã.",
+  "contributionShares": "≈ aksiõ {shares}"
 }

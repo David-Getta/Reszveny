@@ -2612,6 +2612,23 @@ class AppLocalizationsHu extends AppLocalizations {
   String get shareNotAdvice => 'Nem befektetési tanács';
 
   @override
+  String get contributionButton => 'Új befizetés elosztása';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Befektetendő összeg ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Csak vétel, eladás nélkül: először a céljuktól leginkább elmaradó pozíciók kapnak belőle.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares db';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

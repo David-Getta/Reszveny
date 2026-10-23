@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Masheya akuluakulu",
   "portfolioShareNote": "Maperesenti okha ndi omwe amagawidwa, osati ndalama.",
   "portfolioPositionsCount": "{count, plural, one{Sheya {count}} other{Masheya {count}}}",
-  "shareNotAdvice": "Si malangizo okhudza kuyika ndalama"
+  "shareNotAdvice": "Si malangizo okhudza kuyika ndalama",
+  "contributionButton": "Ikani ndalama zatsopano",
+  "contributionAmount": "Ndalama zoti muike ({currency})",
+  "contributionHint": "Kugula kokha, osagulitsa: masheya omwe ali pansi kwambiri pa cholinga chawo amalandira ndalama poyamba.",
+  "contributionShares": "≈ masheya {shares}"
 }

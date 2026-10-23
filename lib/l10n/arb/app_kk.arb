@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Ең ірі позициялар",
   "portfolioShareNote": "Тек пайыздар бөлісіледі, сомалар емес.",
   "portfolioPositionsCount": "{count, plural, =1{1 позиция} other{{count} позиция}}",
-  "shareNotAdvice": "Инвестициялық кеңес емес"
+  "shareNotAdvice": "Инвестициялық кеңес емес",
+  "contributionButton": "Жаңа қаражат салу",
+  "contributionAmount": "Салынатын сома ({currency})",
+  "contributionHint": "Тек сатып алу, сатусыз: қаражатты алдымен мақсатынан ең көп қалып отырған позициялар алады.",
+  "contributionShares": "≈ {shares} акция"
 }

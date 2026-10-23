@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Pinakadakong mga posisyon",
   "portfolioShareNote": "Mga porsyento lang ang ipaambit, walay mga kantidad.",
   "portfolioPositionsCount": "{count, plural, =1{1 ka posisyon} other{{count} ka posisyon}}",
-  "shareNotAdvice": "Dili tambag sa pagpamuhunan"
+  "shareNotAdvice": "Dili tambag sa pagpamuhunan",
+  "contributionButton": "I-invest ang bag-ong kwarta",
+  "contributionAmount": "Kantidad nga i-invest ({currency})",
+  "contributionHint": "Pagpalit lang, walay pagbaligya: ang mga posisyon nga labing layo ubos sa ilang target ang unang makadawat sa kwarta.",
+  "contributionShares": "≈ {shares} ka share"
 }

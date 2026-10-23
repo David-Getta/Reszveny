@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "ಅತಿದೊಡ್ಡ ಪೊಸಿಷನ್‌ಗಳು",
   "portfolioShareNote": "ಶೇಕಡಾವಾರು ಮಾತ್ರ ಹಂಚಿಕೊಳ್ಳಲಾಗುತ್ತದೆ, ಮೊತ್ತಗಳಲ್ಲ.",
   "portfolioPositionsCount": "{count, plural, =1{1 ಪೊಸಿಷನ್} other{{count} ಪೊಸಿಷನ್‌ಗಳು}}",
-  "shareNotAdvice": "ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ"
+  "shareNotAdvice": "ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ",
+  "contributionButton": "ಹೊಸ ಹಣ ಹೂಡಿಕೆ ಮಾಡಿ",
+  "contributionAmount": "ಹೂಡಿಕೆ ಮಾಡುವ ಮೊತ್ತ ({currency})",
+  "contributionHint": "ಖರೀದಿ ಮಾತ್ರ, ಮಾರಾಟವಿಲ್ಲ: ತಮ್ಮ ಗುರಿಗಿಂತ ಅತಿ ಹೆಚ್ಚು ಕೆಳಗಿರುವ ಪೊಸಿಷನ್‌ಗಳಿಗೆ ಮೊದಲು ಹಣ ಸಿಗುತ್ತದೆ.",
+  "contributionShares": "≈ {shares} ಷೇರುಗಳು"
 }

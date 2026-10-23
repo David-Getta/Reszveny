@@ -2601,6 +2601,23 @@ class AppLocalizationsBho extends AppLocalizations {
   String get shareNotAdvice => 'निवेश के सलाह ना ह';
 
   @override
+  String get contributionButton => 'नया पइसा निवेश करीं';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'निवेश करे के रकम ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'सिरिफ खरीदारी, बिक्री ना: जवन पोजीशन अपना लक्ष्य से सबसे जादा पीछे बाड़ी, ओकरा के पइसा पहिले मिली।';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares शेयर';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

@@ -2617,6 +2617,23 @@ class AppLocalizationsMl extends AppLocalizations {
   String get shareNotAdvice => 'നിക്ഷേപ ഉപദേശമല്ല';
 
   @override
+  String get contributionButton => 'പുതിയ പണം നിക്ഷേപിക്കുക';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'നിക്ഷേപിക്കേണ്ട തുക ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'വാങ്ങൽ മാത്രം, വിൽപ്പനയില്ല: ലക്ഷ്യത്തിൽ നിന്ന് ഏറ്റവും താഴെയുള്ള പൊസിഷനുകൾക്കാണ് ആദ്യം പണം ലഭിക്കുക.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares ഓഹരികൾ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

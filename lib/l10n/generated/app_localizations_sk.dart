@@ -2674,6 +2674,23 @@ class AppLocalizationsSk extends AppLocalizations {
   String get shareNotAdvice => 'Nie je investičné odporúčanie';
 
   @override
+  String get contributionButton => 'Investovať nové peniaze';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Suma na investovanie ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Len nákupy, žiadne predaje: peniaze dostanú najskôr pozície, ktoré sú najviac pod svojím cieľom.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares ks';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

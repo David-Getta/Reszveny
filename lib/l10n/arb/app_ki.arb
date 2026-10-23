@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Hisa iria nene makĩria",
   "portfolioShareNote": "Percent tu nĩcio igayanagwo, ti mbeca.",
   "portfolioPositionsCount": "{count, plural, =1{Mũgabana 1} other{Mĩgabana {count}}}",
-  "shareNotAdvice": "Ti ũtaaro wa investment"
+  "shareNotAdvice": "Ti ũtaaro wa investment",
+  "contributionButton": "Iga mbeca njerũ",
+  "contributionAmount": "Mbeca cia kũiga ({currency})",
+  "contributionHint": "Kũgũra tu, gũtirĩ kwendia: hisa iria ciagĩte mũno thĩ ya muoroto wacio nĩcio ikũheo mbeca mbere.",
+  "contributionShares": "≈ hisa {shares}"
 }

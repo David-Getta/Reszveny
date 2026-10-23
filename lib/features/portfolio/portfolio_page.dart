@@ -789,6 +789,17 @@ class _Targets extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 4),
                   child: Text(l10n.targetsSum(fmt.percent(sum, decimals: 1)), style: muted(theme, p)),
                 ),
+              // Új befizetés elosztása csak vétellel a célok felé.
+              TextButton.icon(
+                key: const ValueKey('contribution-open'),
+                style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: EdgeInsets.zero),
+                onPressed: () => showDialog<void>(
+                  context: context,
+                  builder: (_) => _ContributionDialog(snapshot: snapshot, targets: prefs.targets),
+                ),
+                icon: const Icon(Icons.add_card_outlined, size: 18),
+                label: Text(l10n.contributionButton),
+              ),
             ],
           ],
         );
@@ -797,6 +808,88 @@ class _Targets extends StatelessWidget {
   }
 
   static TextStyle? muted(ThemeData theme, AppPalette p) => theme.textTheme.bodySmall?.copyWith(color: p.muted);
+}
+
+/// Új befizetés elosztása: összeg a portfólió pénznemében, alatta pozíciónként
+/// mennyit (és a mai áron nagyjából hány darabot) érdemes venni a célok felé.
+class _ContributionDialog extends StatefulWidget {
+  const _ContributionDialog({required this.snapshot, required this.targets});
+
+  final PortfolioSnapshot snapshot;
+  final Map<String, double> targets;
+
+  @override
+  State<_ContributionDialog> createState() => _ContributionDialogState();
+}
+
+class _ContributionDialogState extends State<_ContributionDialog> {
+  final _amount = TextEditingController();
+
+  @override
+  void dispose() {
+    _amount.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
+    final ccy = widget.snapshot.currency;
+    final plan = contributionPlan(widget.snapshot, widget.targets, parseDecimal(_amount.text) ?? 0);
+    return AlertDialog(
+      title: Text(l10n.contributionButton),
+      content: SizedBox(
+        width: 380,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(l10n.contributionHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+              const SizedBox(height: 8),
+              TextField(
+                key: const ValueKey('contribution-amount'),
+                controller: _amount,
+                autofocus: true,
+                keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                decoration: InputDecoration(labelText: l10n.contributionAmount(ccy)),
+                onChanged: (_) => setState(() {}),
+              ),
+              const SizedBox(height: 10),
+              for (final step in plan)
+                Padding(
+                  key: ValueKey('contribution-${step.symbol}'),
+                  padding: const EdgeInsets.symmetric(vertical: 4),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        width: 64,
+                        child: Text(step.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
+                      ),
+                      Expanded(
+                        child: Text(
+                          fmt.money(step.amount, ccy, withSign: true),
+                          style: TextStyle(color: p.positive, fontWeight: FontWeight.w600),
+                        ),
+                      ),
+                      if (step.shares case final n?)
+                        Text(
+                          l10n.contributionShares(fmt.number(n, decimals: n < 10 ? 2 : 0)),
+                          style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                        ),
+                    ],
+                  ),
+                ),
+            ],
+          ),
+        ),
+      ),
+      actions: [TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.close))],
+    );
+  }
 }
 
 /// A célarányok megadása pozíciónként (üres mező: nincs cél).

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "უდიდესი პოზიციები",
   "portfolioShareNote": "ზიარდება მხოლოდ პროცენტები, თანხები — არა.",
   "portfolioPositionsCount": "{count, plural, =1{1 პოზიცია} other{{count} პოზიცია}}",
-  "shareNotAdvice": "არ არის საინვესტიციო რჩევა"
+  "shareNotAdvice": "არ არის საინვესტიციო რჩევა",
+  "contributionButton": "ახალი თანხის ინვესტირება",
+  "contributionAmount": "ინვესტირების თანხა ({currency})",
+  "contributionHint": "მხოლოდ ყიდვა, გაყიდვის გარეშე: თანხას პირველ რიგში ის პოზიციები იღებს, რომლებიც ყველაზე მეტად ჩამორჩება თავის მიზანს.",
+  "contributionShares": "≈ {shares} აქცია"
 }

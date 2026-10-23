@@ -2620,6 +2620,23 @@ class AppLocalizationsQu extends AppLocalizations {
   String get shareNotAdvice => 'Manan qullqi churanapaq yuyaychaychu';
 
   @override
+  String get contributionButton => 'Musuq qullqita churay';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Churanapaq qullqi ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Rantiylla, mana rantikuychu: munasqanmanta aswan uraypi kaq posicionkuna ñawpaqta qullqita chaskinku.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares accionkuna';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

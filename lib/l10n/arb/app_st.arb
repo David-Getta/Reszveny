@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Dishere tse kgolo",
   "portfolioShareNote": "Ho arolelanwa diphesente feela, ha ho dipalo tsa chelete.",
   "portfolioPositionsCount": "{count, plural, one{Shere e le {count}} other{Dishere tse {count}}}",
-  "shareNotAdvice": "Hase keletso ya ho tsetela"
+  "shareNotAdvice": "Hase keletso ya ho tsetela",
+  "contributionButton": "Tsetela chelete e ntjha",
+  "contributionAmount": "Chelete ya ho tsetela ({currency})",
+  "contributionHint": "Ho reka feela, ha ho rekiswe: dishere tse ka tlase haholo ho sepheo sa tsona di fumana chelete pele.",
+  "contributionShares": "≈ dishere tse {shares}"
 }

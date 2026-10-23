@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Posicions més grans",
   "portfolioShareNote": "Només es comparteixen percentatges, cap import.",
   "portfolioPositionsCount": "{count, plural, =1{1 posició} other{{count} posicions}}",
-  "shareNotAdvice": "No és assessorament d’inversió"
+  "shareNotAdvice": "No és assessorament d’inversió",
+  "contributionButton": "Invertir diners nous",
+  "contributionAmount": "Import a invertir ({currency})",
+  "contributionHint": "Només compres, cap venda: les posicions més per sota del seu objectiu reben els diners primer.",
+  "contributionShares": "≈ {shares} accions"
 }

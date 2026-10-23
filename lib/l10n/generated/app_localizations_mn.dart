@@ -2607,6 +2607,23 @@ class AppLocalizationsMn extends AppLocalizations {
   String get shareNotAdvice => 'Хөрөнгө оруулалтын зөвлөгөө биш';
 
   @override
+  String get contributionButton => 'Шинэ мөнгө оруулах';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Оруулах дүн ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Зөвхөн худалдан авна, зарахгүй: зорилтоосоо хамгийн их хоцорсон эзэмшилд мөнгө эхэлж очно.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares хувьцаа';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

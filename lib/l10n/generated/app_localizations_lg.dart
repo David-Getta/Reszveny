@@ -2621,6 +2621,23 @@ class AppLocalizationsLg extends AppLocalizations {
   String get shareNotAdvice => 'Si magezi ga kusiga nsimbi';
 
   @override
+  String get contributionButton => 'Teeka ssente empya';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Ssente z\'onoteeka ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Kugula kwokka, tewali kutunda: emigabo egisinga okuba wansi w\'ekigendererwa kyagyo gye gisooka okufuna ssente.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ emigabo $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "အကြီးဆုံး ကိုင်ဆောင်ထားမှုများ",
   "portfolioShareNote": "ရာခိုင်နှုန်းများကိုသာ မျှဝေပြီး ပမာဏများ မပါဝင်ပါ။",
   "portfolioPositionsCount": "{count, plural, other{ကိုင်ဆောင်ထားမှု {count} ခု}}",
-  "shareNotAdvice": "ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ"
+  "shareNotAdvice": "ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ",
+  "contributionButton": "ငွေသစ် ရင်းနှီးရန်",
+  "contributionAmount": "ရင်းနှီးမည့် ပမာဏ ({currency})",
+  "contributionHint": "ဝယ်ရုံသာ၊ မရောင်းပါ- ပစ်မှတ်ထက် အများဆုံး လျော့နေသော ကိုင်ဆောင်ထားမှုများက ငွေကို ဦးစွာ ရရှိပါသည်။",
+  "contributionShares": "≈ ရှယ်ယာ {shares}"
 }

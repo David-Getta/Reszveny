@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Àwọn ohun ìní tó tóbi jù",
   "portfolioShareNote": "Ìdá nínú ọgọ́rùn-ún nìkan la ń pín, kò sí iye owó.",
   "portfolioPositionsCount": "{count, plural, other{Ohun ìní {count}}}",
-  "shareNotAdvice": "Kì í ṣe ìmọ̀ràn ìdókòwò"
+  "shareNotAdvice": "Kì í ṣe ìmọ̀ràn ìdókòwò",
+  "contributionButton": "Dókòwò owó tuntun",
+  "contributionAmount": "Iye owó láti dókòwò ({currency})",
+  "contributionHint": "Rírà nìkan, kò sí títà: àwọn ohun ìní tí ó jìnnà jù lọ sí àfojúsùn wọn ní ìsàlẹ̀ ni yóò kọ́kọ́ gba owó náà.",
+  "contributionShares": "≈ ìpín {shares}"
 }

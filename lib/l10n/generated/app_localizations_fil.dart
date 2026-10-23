@@ -2615,6 +2615,23 @@ class AppLocalizationsFil extends AppLocalizations {
   String get shareNotAdvice => 'Hindi payo sa pamumuhunan';
 
   @override
+  String get contributionButton => 'Mag-invest ng bagong pera';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Halagang i-invest ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Pagbili lang, walang pagbebenta: ang mga posisyong pinakamalayo sa ilalim ng kanilang target ang unang makakatanggap ng pera.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares share';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

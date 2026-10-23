@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Største beholdninger",
   "portfolioShareNote": "Kun prosenter deles, ingen beløp.",
   "portfolioPositionsCount": "{count, plural, one{{count} beholdning} other{{count} beholdninger}}",
-  "shareNotAdvice": "Ikke investeringsråd"
+  "shareNotAdvice": "Ikke investeringsråd",
+  "contributionButton": "Invester nye penger",
+  "contributionAmount": "Beløp å investere ({currency})",
+  "contributionHint": "Bare kjøp, ingen salg: beholdningene som ligger lengst under målet, får pengene først.",
+  "contributionShares": "≈ {shares} aksjer"
 }

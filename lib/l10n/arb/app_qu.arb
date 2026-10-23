@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Aswan hatun posicionkuna",
   "portfolioShareNote": "Porcentajekunallam rakikun, manam qullqi haykachu.",
   "portfolioPositionsCount": "{count, plural, one{{count} posición} other{{count} posición}}",
-  "shareNotAdvice": "Manan qullqi churanapaq yuyaychaychu"
+  "shareNotAdvice": "Manan qullqi churanapaq yuyaychaychu",
+  "contributionButton": "Musuq qullqita churay",
+  "contributionAmount": "Churanapaq qullqi ({currency})",
+  "contributionHint": "Rantiylla, mana rantikuychu: munasqanmanta aswan uraypi kaq posicionkuna ñawpaqta qullqita chaskinku.",
+  "contributionShares": "≈ {shares} accionkuna"
 }

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Suurimmat omistukset",
   "portfolioShareNote": "Vain prosenttiluvut jaetaan, ei summia.",
   "portfolioPositionsCount": "{count, plural, =1{1 omistus} other{{count} omistusta}}",
-  "shareNotAdvice": "Ei sijoitusneuvontaa"
+  "shareNotAdvice": "Ei sijoitusneuvontaa",
+  "contributionButton": "Sijoita uutta rahaa",
+  "contributionAmount": "Sijoitettava summa ({currency})",
+  "contributionHint": "Vain ostoja, ei myyntejä: eniten tavoitteestaan jäljessä olevat omistukset saavat rahat ensin.",
+  "contributionShares": "≈ {shares} osaketta"
 }

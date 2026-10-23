@@ -2605,6 +2605,23 @@ class AppLocalizationsBn extends AppLocalizations {
   String get shareNotAdvice => 'বিনিয়োগ পরামর্শ নয়';
 
   @override
+  String get contributionButton => 'নতুন টাকা বিনিয়োগ করুন';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'বিনিয়োগের পরিমাণ ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'শুধু কেনা, কোনো বিক্রি নয়: লক্ষ্যের চেয়ে সবচেয়ে বেশি পিছিয়ে থাকা অবস্থানগুলো আগে টাকা পায়।';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares শেয়ার';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

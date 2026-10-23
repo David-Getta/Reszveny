@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "上位銘柄",
   "portfolioShareNote": "共有されるのは割合（%）のみで、金額は含まれません。",
   "portfolioPositionsCount": "{count, plural, =1{1 銘柄} other{{count} 銘柄}}",
-  "shareNotAdvice": "投資助言ではありません"
+  "shareNotAdvice": "投資助言ではありません",
+  "contributionButton": "追加資金を投資",
+  "contributionAmount": "投資額（{currency}）",
+  "contributionHint": "購入のみで、売却はしません。目標を最も下回っている銘柄から優先して資金を配分します。",
+  "contributionShares": "≈ {shares}株"
 }

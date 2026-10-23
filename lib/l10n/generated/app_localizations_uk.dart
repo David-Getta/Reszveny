@@ -2677,6 +2677,23 @@ class AppLocalizationsUk extends AppLocalizations {
   String get shareNotAdvice => 'Не інвестиційна порада';
 
   @override
+  String get contributionButton => 'Вкласти нові гроші';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Сума для вкладення ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Лише купівлі, без продажів: гроші спершу отримують позиції, які найбільше відстають від цілі.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares шт.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

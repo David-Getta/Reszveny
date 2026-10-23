@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Posisi paling gedhe",
   "portfolioShareNote": "Mung persentase sing dibagekake, tanpa jumlah dhuwit.",
   "portfolioPositionsCount": "{count, plural, =1{1 posisi} other{{count} posisi}}",
-  "shareNotAdvice": "Dudu saran investasi"
+  "shareNotAdvice": "Dudu saran investasi",
+  "contributionButton": "Investasekake dhuwit anyar",
+  "contributionAmount": "Jumlah sing diinvestasekake ({currency})",
+  "contributionHint": "Mung tuku, ora ana adol: posisi sing paling adoh ing ngisor target-e oleh dhuwit luwih dhisik.",
+  "contributionShares": "≈ {shares} saham"
 }

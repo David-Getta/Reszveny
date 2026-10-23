@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Pi gwo pozisyon yo",
   "portfolioShareNote": "Se sèlman pousantaj yo ki pataje, pa gen montan.",
   "portfolioPositionsCount": "{count, plural, =1{1 pozisyon} other{{count} pozisyon}}",
-  "shareNotAdvice": "Se pa yon konsèy envestisman"
+  "shareNotAdvice": "Se pa yon konsèy envestisman",
+  "contributionButton": "Envesti nouvo lajan",
+  "contributionAmount": "Montan pou envesti ({currency})",
+  "contributionHint": "Se achte sèlman, pa gen vant: pozisyon ki pi lwen anba sib yo resevwa lajan an an premye.",
+  "contributionShares": "≈ {shares} aksyon"
 }

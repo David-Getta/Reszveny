@@ -2648,6 +2648,23 @@ class AppLocalizationsLv extends AppLocalizations {
   String get shareNotAdvice => 'Nav ieguldījumu konsultācija';
 
   @override
+  String get contributionButton => 'Ieguldīt jaunu naudu';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Ieguldāmā summa ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Tikai pirkumi, bez pārdošanas: naudu vispirms saņem pozīcijas, kas visvairāk atpaliek no sava mērķa.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares akcijas';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

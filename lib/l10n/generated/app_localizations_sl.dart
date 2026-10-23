@@ -2676,6 +2676,23 @@ class AppLocalizationsSl extends AppLocalizations {
   String get shareNotAdvice => 'Ni naložbeni nasvet';
 
   @override
+  String get contributionButton => 'Vloži nov denar';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Znesek za naložbo ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Samo nakupi, brez prodaj: denar najprej dobijo pozicije, ki so najbolj pod svojim ciljem.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares delnic';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

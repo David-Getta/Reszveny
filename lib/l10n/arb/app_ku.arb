@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Pozîsyonên herî mezin",
   "portfolioShareNote": "Tenê rêjeyên sedî tên parvekirin, ne mîqdar.",
   "portfolioPositionsCount": "{count, plural, =1{1 pozîsyon} other{{count} pozîsyon}}",
-  "shareNotAdvice": "Ne şîreta veberhênanê ye"
+  "shareNotAdvice": "Ne şîreta veberhênanê ye",
+  "contributionButton": "Pereyên nû veberhêne",
+  "contributionAmount": "Mîqdara veberhênanê ({currency})",
+  "contributionHint": "Tenê kirîn, bê firotin: pozîsyonên ku herî zêde di bin armanca xwe de ne, pêşî pere distînin.",
+  "contributionShares": "≈ {shares} pişk"
 }

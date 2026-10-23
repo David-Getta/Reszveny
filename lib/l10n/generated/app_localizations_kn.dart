@@ -2613,6 +2613,23 @@ class AppLocalizationsKn extends AppLocalizations {
   String get shareNotAdvice => 'ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ';
 
   @override
+  String get contributionButton => 'ಹೊಸ ಹಣ ಹೂಡಿಕೆ ಮಾಡಿ';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'ಹೂಡಿಕೆ ಮಾಡುವ ಮೊತ್ತ ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'ಖರೀದಿ ಮಾತ್ರ, ಮಾರಾಟವಿಲ್ಲ: ತಮ್ಮ ಗುರಿಗಿಂತ ಅತಿ ಹೆಚ್ಚು ಕೆಳಗಿರುವ ಪೊಸಿಷನ್‌ಗಳಿಗೆ ಮೊದಲು ಹಣ ಸಿಗುತ್ತದೆ.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares ಷೇರುಗಳು';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

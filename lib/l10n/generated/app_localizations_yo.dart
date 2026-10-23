@@ -2605,6 +2605,23 @@ class AppLocalizationsYo extends AppLocalizations {
   String get shareNotAdvice => 'Kì í ṣe ìmọ̀ràn ìdókòwò';
 
   @override
+  String get contributionButton => 'Dókòwò owó tuntun';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Iye owó láti dókòwò ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Rírà nìkan, kò sí títà: àwọn ohun ìní tí ó jìnnà jù lọ sí àfojúsùn wọn ní ìsàlẹ̀ ni yóò kọ́kọ́ gba owó náà.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ ìpín $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

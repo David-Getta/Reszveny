@@ -2615,6 +2615,23 @@ class AppLocalizationsHy extends AppLocalizations {
   String get shareNotAdvice => 'Ներդրումային խորհուրդ չէ';
 
   @override
+  String get contributionButton => 'Ներդնել նոր գումար';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Ներդրման գումար ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Միայն գնումներ, առանց վաճառքի։ Գումարը նախ ստանում են այն դիրքերը, որոնք ամենաշատն են հետ մնում իրենց թիրախից։';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares բաժնետոմս';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

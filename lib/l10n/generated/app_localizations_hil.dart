@@ -2624,6 +2624,23 @@ class AppLocalizationsHil extends AppLocalizations {
   String get shareNotAdvice => 'Indi laygay sa pag-invest';
 
   @override
+  String get contributionButton => 'Mag-invest sang bag-o nga kuwarta';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Kantidad nga i-invest ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Pagbakal lang, wala sing pagbaligya: ang mga posisyon nga pinakamalayo sa idalom sang ila target ang una nga makabaton sang kuwarta.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares ka share';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

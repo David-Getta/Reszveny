@@ -2618,6 +2618,23 @@ class AppLocalizationsLn extends AppLocalizations {
   String get shareNotAdvice => 'Ezali toli ya kotia mbɔngɔ te';
 
   @override
+  String get contributionButton => 'Tia mbɔngɔ ya sika';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Motuya ya kotia ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Kosomba kaka, koteka te: ba-position oyo etikali mosika mingi na nse ya mokano na yango ekozwa mbɔngɔ liboso.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ ba-action $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

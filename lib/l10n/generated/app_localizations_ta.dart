@@ -2618,6 +2618,23 @@ class AppLocalizationsTa extends AppLocalizations {
   String get shareNotAdvice => 'முதலீட்டு ஆலோசனை அல்ல';
 
   @override
+  String get contributionButton => 'புதிய பணத்தை முதலீடு செய்';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'முதலீடு செய்யும் தொகை ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'வாங்குதல் மட்டுமே, விற்பனை இல்லை: தங்கள் இலக்கை விட மிகக் குறைவாக உள்ள நிலைகளுக்கு முதலில் பணம் கிடைக்கும்.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares பங்குகள்';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

@@ -2605,6 +2605,23 @@ class AppLocalizationsBm extends AppLocalizations {
   String get shareNotAdvice => 'Wari donni ladilikan tɛ';
 
   @override
+  String get contributionButton => 'Wari kura don';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Wari hakɛ min bɛna don ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'San dɔrɔn, feere tɛ: aksiyɔn minnu tora kɔfɛ kosɛbɛ u ka laɲini na, olu bɛ wari sɔrɔ fɔlɔ.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ aksiyɔn $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

@@ -2592,6 +2592,23 @@ class AppLocalizationsMos extends AppLocalizations {
   String get shareNotAdvice => 'Pa sagls ligd kẽesg wɛɛngẽ ye';
 
   @override
+  String get contributionButton => 'Kẽes ligd-paalga';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Ligd sõore f sẽn na n kẽes ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Da bala, koosg ka be: aksiõ nins sẽn ka ta b raabã wʋsgo n deng n paamd ligdã.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ aksiõ $shares';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

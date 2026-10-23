@@ -2158,6 +2158,34 @@
   "@shareNotAdvice": {
     "description": "Small print at the bottom of a shared image."
   },
+  "contributionButton": "Invest new money",
+  "@contributionButton": {
+    "description": "Button under the target weights (rebalancing) and dialog title: split an amount of new money between the positions, buying only, towards their target weights."
+  },
+  "contributionAmount": "Amount to invest ({currency})",
+  "@contributionAmount": {
+    "description": "Field label in the \"invest new money\" dialog.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD"
+      }
+    }
+  },
+  "contributionHint": "Buys only, no sales: the positions furthest below their target get the money first.",
+  "@contributionHint": {
+    "description": "Explanation at the top of the \"invest new money\" dialog."
+  },
+  "contributionShares": "≈ {shares} shares",
+  "@contributionShares": {
+    "description": "About how many shares the suggested amount buys at today's price.",
+    "placeholders": {
+      "shares": {
+        "type": "String",
+        "example": "1.25"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

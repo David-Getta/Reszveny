@@ -2604,6 +2604,23 @@ class AppLocalizationsId extends AppLocalizations {
   String get shareNotAdvice => 'Bukan saran investasi';
 
   @override
+  String get contributionButton => 'Investasikan dana baru';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Jumlah yang diinvestasikan ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Hanya membeli, tanpa menjual: posisi yang paling jauh di bawah targetnya mendapat dana lebih dulu.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares saham';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

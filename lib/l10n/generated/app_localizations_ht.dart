@@ -2605,6 +2605,23 @@ class AppLocalizationsHt extends AppLocalizations {
   String get shareNotAdvice => 'Se pa yon konsèy envestisman';
 
   @override
+  String get contributionButton => 'Envesti nouvo lajan';
+
+  @override
+  String contributionAmount(String currency) {
+    return 'Montan pou envesti ($currency)';
+  }
+
+  @override
+  String get contributionHint =>
+      'Se achte sèlman, pa gen vant: pozisyon ki pi lwen anba sib yo resevwa lajan an an premye.';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares aksyon';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

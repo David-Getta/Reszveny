@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Maiores posições",
   "portfolioShareNote": "Apenas as percentagens são compartilhadas, sem valores.",
   "portfolioPositionsCount": "{count, plural, one{{count} posição} other{{count} posições}}",
-  "shareNotAdvice": "Não é aconselhamento de investimento"
+  "shareNotAdvice": "Não é aconselhamento de investimento",
+  "contributionButton": "Investir dinheiro novo",
+  "contributionAmount": "Valor a investir ({currency})",
+  "contributionHint": "Só compras, sem vendas: as posições mais abaixo da meta recebem o dinheiro primeiro.",
+  "contributionShares": "≈ {shares} ações"
 }

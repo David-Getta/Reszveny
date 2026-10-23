@@ -2527,6 +2527,22 @@ class AppLocalizationsJa extends AppLocalizations {
   String get shareNotAdvice => '投資助言ではありません';
 
   @override
+  String get contributionButton => '追加資金を投資';
+
+  @override
+  String contributionAmount(String currency) {
+    return '投資額（$currency）';
+  }
+
+  @override
+  String get contributionHint => '購入のみで、売却はしません。目標を最も下回っている銘柄から優先して資金を配分します。';
+
+  @override
+  String contributionShares(String shares) {
+    return '≈ $shares株';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

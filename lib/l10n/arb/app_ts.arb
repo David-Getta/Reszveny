@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "Tixere letikulu",
   "portfolioShareNote": "Ku avelaniwa tiphesente ntsena, ku nga ri mali.",
   "portfolioPositionsCount": "{count, plural, one{Xere ya {count}} other{Tixere ta {count}}}",
-  "shareNotAdvice": "A hi ndzayo ya vuvekisi"
+  "shareNotAdvice": "A hi ndzayo ya vuvekisi",
+  "contributionButton": "Vekisa mali leyintshwa",
+  "contributionAmount": "Mali yo vekisa ({currency})",
+  "contributionHint": "Ku xava ntsena, ku hava ku xavisa: tixere leti nga ehansi swinene ka xikongomelo xa tona ti kuma mali ku sungula.",
+  "contributionShares": "≈ tixere ta {shares}"
 }

@@ -793,5 +793,9 @@
   "portfolioTopHoldings": "સૌથી મોટી પોઝિશન",
   "portfolioShareNote": "ફક્ત ટકાવારી શેર થાય છે, કોઈ રકમ નહીં.",
   "portfolioPositionsCount": "{count, plural, =1{1 પોઝિશન} other{{count} પોઝિશન}}",
-  "shareNotAdvice": "રોકાણ સલાહ નથી"
+  "shareNotAdvice": "રોકાણ સલાહ નથી",
+  "contributionButton": "નવા પૈસાનું રોકાણ કરો",
+  "contributionAmount": "રોકાણ કરવાની રકમ ({currency})",
+  "contributionHint": "ફક્ત ખરીદી, કોઈ વેચાણ નહીં: પોતાના લક્ષ્યથી સૌથી વધુ પાછળ રહેલી પોઝિશનને પહેલા પૈસા મળે છે.",
+  "contributionShares": "≈ {shares} શેર"
 }
