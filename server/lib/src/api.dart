@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import 'dart:math';
 import 'dart:typed_data';
 
 import 'package:crypto/crypto.dart';
@@ -82,7 +83,10 @@ class Api {
        quota = Quota(store),
        telemetry = TelemetryStore(store.database),
        // A megosztások ugyanazt az órát használják, mint az adatbázis (tesztben is).
-       shares = ShareStore(store.database)..clock = (() => store.clock());
+       shares = ShareStore(store.database)..clock = (() => store.clock()) {
+    // Az előző futásból (leállás, újratelepítés) félbemaradt elemzések foglalása visszajár.
+    releaseStaleHolds();
+  }
 
   /// Megosztott elemzések nyilvános linkjei (`/s/<id>`).
   final ShareStore shares;
@@ -257,7 +261,8 @@ class Api {
     final now = store.clock();
     if (t != null && now.isBefore(r.at.add(Duration(days: t.days)))) return;
     store.removeTesterRedemptions(uid);
-    if (store.hasPurchases(uid)) return;
+    // A beváltás óta vett előfizetés marad (egy csomag nem tartja meg a tesztelői szintet).
+    if (store.productsBoughtSince(uid, r.at).any((p) => PlanSpec.byProductId(p) != null)) return;
     final e = store.entitlement(uid);
     if (e.tier == null || e.tier == 'trial') return;
     store.save(
@@ -517,6 +522,8 @@ class Api {
         token = _token(r)!;
       } else {
         final (id, t) = store.createAnonymousUser(null);
+        // Az e-mailes regisztráció is az IP-nkénti próbaidő-korlát alá esik.
+        _limitTrial(r, id);
         uid = id;
         token = t;
       }
@@ -546,6 +553,7 @@ class Api {
         ..tier = a.tier
         ..periodStart = a.periodStart
         ..periodEnd = a.periodEnd
+        ..paidThrough = a.paidThrough
         ..used = a.used;
     }
     a.extra = 0;
@@ -965,7 +973,13 @@ class Api {
   Future<Response> _putSync(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
-    if (store.emailOf(uid) == null) return _error(403, 'sign_in_required');
+    final email = store.emailOf(uid);
+    if (email == null) return _error(403, 'sign_in_required');
+    // Ugyanaz a postafiók más alakban (`név+1@`, Gmailnél pontokkal) sem válthat be újra.
+    final mailbox = normalizedMailbox(email);
+    if (store.referralRedeemerEmails().any((e) => normalizedMailbox(e) == mailbox)) {
+      return _error(409, 'already_redeemed');
+    }
     final raw = await r.readAsString();
     if (raw.length > syncMaxBytes) return _error(413, 'too_large');
     final Object? body;
@@ -1061,10 +1075,14 @@ class Api {
       if (used.count >= t.maxAccounts) return _error(409, 'tester_code_full');
       store.addTesterRedemption(t.code, uid);
       final now = store.clock();
+      // A kifizetett időszak is a kód végéig tart: így a csomag akkor is lejár, ha a
+      // fiók közben vásárolt (pl. egy csomagot), és egy korábbi előfizetés lejárt dátuma
+      // sem viszi el azonnal.
       final e = store.entitlement(uid)
         ..tier = t.tier
         ..periodStart = now
         ..periodEnd = now.add(Duration(days: t.days))
+        ..paidThrough = now.add(Duration(days: t.days))
         ..used = 0;
       store.save(e);
       stdout.writeln('Tesztelői kód beváltva: ${t.label} (${t.tier}, ${t.days} nap)');
@@ -1076,7 +1094,13 @@ class Api {
     if (store.hasRedeemedReferral(uid)) return _error(409, 'already_redeemed');
     // Eldobható névtelen fiókokkal ne lehessen bónuszt gyűjteni: e-mailes fiók
     // kell, és egy kód legfeljebb [referralMax]-szor váltható be.
-    if (store.emailOf(uid) == null) return _error(403, 'sign_in_required');
+    final email = store.emailOf(uid);
+    if (email == null) return _error(403, 'sign_in_required');
+    // Ugyanaz a postafiók más alakban (`név+1@`, Gmailnél pontokkal) sem válthat be újra.
+    final mailbox = normalizedMailbox(email);
+    if (store.referralRedeemerEmails().any((e) => normalizedMailbox(e) == mailbox)) {
+      return _error(409, 'already_redeemed');
+    }
     if (store.referralStats(referrer).$1 >= referralMax) return _error(409, 'code_full');
     store.addReferral(refereeId: uid, referrerId: referrer);
     final e = store.entitlement(uid);
@@ -1244,7 +1268,21 @@ class Api {
           quota.apply(store.entitlement(uid), productId);
         }
       case 'invoice.paid':
-        final uid = store.userIdForStripeCustomer(obj['customer'] as String? ?? '');
+        // A Stripe nem garantálja a sorrendet: ha a számla a checkout előtt érkezik, a
+        // fiók az előfizetés metaadataiból jön (a checkout teszi bele).
+        var uid = store.userIdForStripeCustomer(obj['customer'] as String? ?? '');
+        if (uid == null) {
+          final details = (obj['subscription_details'] ?? (obj['parent'] as Map?)?['subscription_details']) as Map?;
+          final owner = (details?['metadata'] as Map?)?['user_id'] as String?;
+          if (owner != null && store.userExists(owner)) {
+            uid = owner;
+            store.setStripe(
+              owner,
+              customerId: obj['customer'] as String?,
+              subscriptionId: (obj['subscription'] ?? details?['subscription']) as String?,
+            );
+          }
+        }
         final productId = _productFromInvoice(s, obj);
         if (uid == null || productId == null) break;
         final until = _invoicePeriodEnd(obj);
@@ -1356,25 +1394,43 @@ class Api {
       return _error(502, 'store_unavailable');
     }
     if (txn == null) return _error(402, 'invalid_purchase');
-    // Egy törölt fiók még fizetett előfizetése az új fiókhoz köthető (különben a
-    // megújítások a törölt fiókhoz futnának, és a visszaállítás sem menne).
-    var relinked = false;
-    if (txn.linkKey case final link? when store.userForPurchaseLink(platform, link) == Store.deletedUser) {
-      store.relinkPurchases(platform: platform, linkKey: link, to: uid);
-      relinked = true;
+    // A bolti vásárlás gazdája az, aki utoljára igazolta (visszaállítás új telepítésen
+    // vagy eszközön, egy törölt fiók még fizetett előfizetése): a régi fiókról átkerül,
+    // így a megújítások és a visszatérítések az új gazdához érkeznek.
+    final owner = txn.linkKey == null ? null : store.userForPurchaseLink(platform, txn.linkKey!);
+    var usedBefore = 0;
+    final moved = owner != null && owner != uid;
+    if (moved) {
+      store.relinkPurchases(platform: platform, linkKey: txn.linkKey!, from: owner, to: uid);
+      if (owner == Store.deletedUser) {
+        // A törölt fiók felhasználását nem ismerjük: az időszak kerete elfogyottnak számít
+        // (különben fióktörléssel és visszaállítással újra lehetne kezdeni).
+        usedBefore = PlanSpec.byProductId(productId)?.analysesPerPeriod ?? 0;
+      } else {
+        final old = store.entitlement(owner);
+        if (old.tier == PlanSpec.byProductId(productId)?.tier) usedBefore = old.used;
+        quota.revoke(old, productId);
+      }
     }
     final e = store.entitlement(uid);
-    final fresh =
-        store.recordPurchase(
-          userId: uid,
-          productId: productId,
-          platform: platform,
-          transactionId: txn.transactionId,
-          linkKey: txn.linkKey,
-        ) ||
-        relinked;
-    if (fresh) quota.apply(e, productId, until: txn.expiresAt);
-    return _json({'entitlements': store.entitlement(uid).toJson(), 'applied': fresh});
+    final fresh = store.recordPurchase(
+      userId: uid,
+      productId: productId,
+      platform: platform,
+      transactionId: txn.transactionId,
+      linkKey: txn.linkKey,
+    );
+    // Új tranzakció (vásárlás, megújítás): jóváírás. Átvett előfizetés: a csomag és a
+    // kifizetett időszak jön, a felhasználás nem indul újra; átvett csomag nem jár újra.
+    final isPack = PlanSpec.packs.containsKey(productId);
+    final applied = fresh || (moved && !isPack);
+    if (fresh) {
+      quota.apply(e, productId, until: txn.expiresAt);
+    } else if (applied) {
+      quota.apply(e, productId, until: txn.expiresAt);
+      store.save(store.entitlement(uid)..used = usedBefore);
+    }
+    return _json({'entitlements': store.entitlement(uid).toJson(), 'applied': applied});
   }
 
   // ---- Bolti értesítések (megújítás, visszatérítés) ----
@@ -1499,66 +1555,171 @@ class Api {
     }
   }
 
-  /// Elemzés: kvóta-ellenőrzés, továbbítás, siker után levonás és naplózás.
+  /// Egy `pause_turn` után kiadott folytatási jel: a már levont elemzéshez tartozik,
+  /// így a folytatás nem von le újra; ha a folytatás meghiúsul, az egész visszajár.
+  final Map<String, _Continuation> _continuations = {};
+
+  /// Egy elemzéshez legfeljebb ennyi folytatás jár (mint az appban).
+  static const maxContinuations = 3;
+  static const continuationTtl = Duration(minutes: 30);
+
+  /// Ugyanannak az elemzésnek az ismételt kérése (`x-whatstock-request-id`; pl.
+  /// időtúllépés vagy az app bezárása után): a kész vagy még futó válasz jön, új
+  /// levonás nélkül.
+  final Map<String, ({Future<_Answer> answer, DateTime expires})> _recentAnalyses = {};
+  static const recentAnalysisTtl = Duration(minutes: 15);
+
+  /// Folytatás-e a kérés (az utolsó üzenet az asszisztensé): a jelet még nem küldő
+  /// régebbi app folytatása is az eredeti elemzéshez tartozik.
+  static bool _continues(String body) {
+    try {
+      final messages = (jsonDecode(body) as Map)['messages'];
+      return messages is List && messages.isNotEmpty && (messages.last as Map)['role'] == 'assistant';
+    } catch (_) {
+      return false;
+    }
+  }
+
+  String? _latestContinuationOf(String uid) {
+    String? latest;
+    for (final e in _continuations.entries) {
+      if (e.value.uid == uid && (latest == null || e.value.expires.isAfter(_continuations[latest]!.expires))) {
+        latest = e.key;
+      }
+    }
+    return latest;
+  }
+
+  static final _rng = Random.secure();
+  static String _newId() => base64Url.encode(List.generate(18, (_) => _rng.nextInt(256)));
+
+  /// Az előző futásból (leállás, újratelepítés) félbemaradt foglalások visszaadása.
+  void releaseStaleHolds() {
+    for (final h in store.takeStaleHolds()) {
+      quota.refund(h.userId, (period: h.period, extra: h.extra));
+    }
+  }
+
+  /// Elemzés: kvóta-ellenőrzés, foglalás, továbbítás; a 200-as válasz levon (a
+  /// hosszkorláton megszakadt kivételével), a sikertelen visszaad.
   Future<Response> _analyze(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
+    final now = store.clock();
+    _recentAnalyses.removeWhere((_, v) => !v.expires.isAfter(now));
+    _continuations.removeWhere((_, v) => !v.expires.isAfter(now));
+    final id = r.headers['x-whatstock-request-id'];
+    final key = id == null || id.isEmpty || id.length > 100 ? null : '$uid|$id';
+    if (key == null) return (await _analyzeOnce(r, uid)).toResponse();
+    final earlier = _recentAnalyses[key];
+    if (earlier != null) return (await earlier.answer).toResponse();
+    final answer = _analyzeOnce(r, uid);
+    _recentAnalyses[key] = (answer: answer, expires: now.add(recentAnalysisTtl));
+    try {
+      final a = await answer;
+      // Csak a levont (kész) válasz marad meg az ismétléshez.
+      if (!a.charged) _recentAnalyses.remove(key);
+      return a.toResponse();
+    } catch (_) {
+      _recentAnalyses.remove(key);
+      rethrow;
+    }
+  }
+
+  Future<_Answer> _analyzeOnce(Request r, String uid) async {
     _expireTester(uid);
     final e = store.entitlement(uid);
-    // A próbaidő kerete: rövid elemzés az olcsóbb modellel (a megvett extra
-    // elemzések már a teljes értékűek).
     final invite = _invite(r);
-    if (invite != null) {
-      final now = store.clock().toUtc();
-      final today = DateTime.utc(now.year, now.month, now.day);
-      if (store.inviteUsageSince(invite.code, today) >= invite.dailyAnalyses) {
-        return _error(402, 'invite_daily_limit');
+    final body = await r.readAsString();
+    if (body.length > analyzeMaxBytes) return _Answer.error(413, 'too_large');
+    final token = r.headers['x-whatstock-continuation'] ?? (_continues(body) ? _latestContinuationOf(uid) : null);
+    final cont = token == null ? null : _continuations.remove(token);
+    final continued = cont != null && cont.uid == uid;
+    // A próbaidő kerete: rövid elemzés az olcsóbb modellel (a megvett extra
+    // elemzések már a teljes értékűek). A folytatás az eredeti kérés szerint megy.
+    final trialRun = continued ? cont.trialRun : quota.drawsFromTrial(e);
+    final depth = continued
+        ? cont.depth
+        : trialRun
+        ? Depth.brief
+        : Depth.parse(r.headers['x-whatstock-depth']);
+    if (!continued) {
+      if (invite != null) {
+        final now = store.clock().toUtc();
+        final today = DateTime.utc(now.year, now.month, now.day);
+        if (store.inviteUsageSince(invite.code, today) >= invite.dailyAnalyses) {
+          return _Answer.error(402, 'invite_daily_limit');
+        }
+      }
+      final q = quota.check(e, cost: depth.cost);
+      if (q == QuotaResult.insufficient) {
+        return _Answer(
+          402,
+          jsonEncode({'error': 'insufficient_quota', 'needed': depth.cost, 'available': quota.available(e)}),
+        );
+      }
+      if (q != QuotaResult.ok) {
+        return _Answer.error(402, switch (q) {
+          QuotaResult.trialExpired => 'trial_expired',
+          QuotaResult.noPlan => 'no_plan',
+          _ => 'quota_exceeded',
+        });
       }
     }
-    final trialRun = quota.drawsFromTrial(e);
-    final depth = trialRun ? Depth.brief : Depth.parse(r.headers['x-whatstock-depth']);
-    final q = quota.check(e, cost: depth.cost);
-    if (q == QuotaResult.insufficient) {
-      return _json({'error': 'insufficient_quota', 'needed': depth.cost, 'available': quota.available(e)}, status: 402);
-    }
-    if (q != QuotaResult.ok) {
-      return _error(402, switch (q) {
-        QuotaResult.trialExpired => 'trial_expired',
-        QuotaResult.noPlan => 'no_plan',
-        _ => 'quota_exceeded',
-      });
-    }
-    final body = await r.readAsString();
-    if (body.length > analyzeMaxBytes) return _error(413, 'too_large');
     final raw = limitRequest(body, depth: depth, tier: e.tier, model: trialRun ? trialModel : anthropicModel);
-    if (raw == null) return _error(400, 'bad_request');
-    // A keret a továbbítás előtt foglalódik; sikertelen, félbemaradt (pause_turn)
-    // vagy a hosszkorláton megszakadt (max_tokens) válasznál visszajár – csak a
-    // befejezett elemzés kerül pénzbe.
-    final held = quota.reserve(uid, cost: depth.cost);
-    if (held == null) return _error(402, 'quota_exceeded');
+    if (raw == null) return _Answer.error(400, 'bad_request');
+    // A keret a továbbítás előtt foglalódik (a folytatásé már az első körben).
+    final held = continued ? cont.held : quota.reserve(uid, cost: depth.cost);
+    if (held == null) return _Answer.error(402, 'quota_exceeded');
+    final holdId = continued ? null : store.addHold(uid, held);
+    void release() {
+      quota.refund(uid, held);
+      if (holdId != null) store.removeHold(holdId);
+    }
+
     final beta = allowedBeta(r.headers['anthropic-beta']);
     http.Response upstream;
     try {
       upstream = await _forwardAnthropic(raw, beta);
       if (_rejectedWebFetch(upstream)) upstream = await _forwardAnthropic(withoutWebFetch(raw), beta);
     } catch (_) {
-      quota.refund(uid, held);
+      release();
       rethrow;
     }
     Map<String, dynamic>? j;
     try {
       j = (jsonDecode(upstream.body) as Map).cast<String, dynamic>();
     } catch (_) {}
-    if (upstream.statusCode != 200 || j?['stop_reason'] == 'pause_turn' || j?['stop_reason'] == 'max_tokens') {
-      quota.refund(uid, held);
+    final stop = j?['stop_reason'];
+    if (upstream.statusCode != 200 || j == null || stop == 'max_tokens') {
+      release();
+      // A hosszkorláton megszakadt válasz szövege nem megy ki: a visszatérített
+      // (akár szándékosan kis `max_tokens`-szel kért) hívás nem adhat ingyen eredményt.
+      final out = stop == 'max_tokens' ? jsonEncode({...j!, 'content': const []}) : upstream.body;
+      return _Answer(upstream.statusCode, out);
+    }
+    if (holdId != null) store.removeHold(holdId);
+    // `pause_turn`: a levonás marad, a folytatás egy jellel ingyenes.
+    String? next;
+    final left = continued ? cont.left - 1 : maxContinuations;
+    if (stop == 'pause_turn' && left > 0) {
+      next = _newId();
+      _continuations[next] = _Continuation(
+        uid: uid,
+        held: held,
+        left: left,
+        depth: depth,
+        trialRun: trialRun,
+        expires: store.clock().add(continuationTtl),
+      );
     } else {
-      final usage = (j?['usage'] as Map?)?.cast<String, dynamic>();
+      // A lánc vége: naplózás, a meghívó napi kerete és az ajánló jutalma egyszer.
+      final usage = (j['usage'] as Map?)?.cast<String, dynamic>();
       store.logUsage(uid, _symbolFrom(raw), usage?['input_tokens'] as int?, usage?['output_tokens'] as int?);
       if (invite != null) store.logInviteUsage(invite.code);
       _rewardReferrer(uid);
     }
-    return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
+    return _Answer(200, upstream.body, continuation: next, charged: true);
   }
 
   /// A csomag és a hossz szerinti korlátok érvényesítése a kérésen: rögzített
@@ -2129,4 +2290,56 @@ class Api {
 /// A kérés törzse túllépte a megengedett méretet (olvasás közben derül ki).
 class _TooLarge implements Exception {
   const _TooLarge();
+}
+
+/// Egy elemzés-kérés eredménye (a megismételt kérés ugyanezt kapja vissza).
+class _Answer {
+  _Answer(this.status, this.body, {this.continuation, this.charged = false});
+
+  _Answer.error(int status, String code) : this(status, jsonEncode({'error': code}));
+
+  final int status;
+  final String body;
+  final String? continuation;
+
+  /// Levont-e elemzést (csak az ilyen válasz adható vissza ismétléskor).
+  final bool charged;
+
+  Response toResponse() => Response(
+    status,
+    body: body,
+    headers: {'content-type': 'application/json', 'x-whatstock-continuation': ?continuation},
+  );
+}
+
+/// Egy `pause_turn` után folytatható elemzés: kié, mennyit foglalt, hány folytatás maradt.
+class _Continuation {
+  _Continuation({
+    required this.uid,
+    required this.held,
+    required this.left,
+    required this.depth,
+    required this.trialRun,
+    required this.expires,
+  });
+
+  final String uid;
+  final ({int period, int extra}) held;
+  final int left;
+  final Depth depth;
+  final bool trialRun;
+  final DateTime expires;
+}
+
+/// A postafiók azonosítója a visszaélés-ellenőrzéshez: kisbetűvel, a `+címke`
+/// nélkül, Gmailnél a pontok nélkül (ugyanoda érkező címek egynek számítanak).
+String normalizedMailbox(String email) {
+  final e = email.trim().toLowerCase();
+  final at = e.lastIndexOf('@');
+  if (at <= 0) return e;
+  var local = e.substring(0, at).split('+').first;
+  var domain = e.substring(at + 1);
+  if (domain == 'googlemail.com') domain = 'gmail.com';
+  if (domain == 'gmail.com') local = local.replaceAll('.', '');
+  return '$local@$domain';
 }

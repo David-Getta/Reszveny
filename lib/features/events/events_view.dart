@@ -17,6 +17,7 @@ import '../portfolio/dividends_card.dart' show showAddDividendDialog;
 import 'calendar_export.dart';
 import 'events_service.dart';
 import '../../core/util/dates.dart';
+import '../../core/util/text.dart';
 
 /// „Mikor?”: ma, holnap, N nap múlva.
 String eventWhen(AppLocalizations l10n, DateTime day, DateTime today) {
@@ -73,7 +74,7 @@ List<CalendarEntry> calendarEntries(AppLocalizations l10n, Fmt fmt, List<Upcomin
           ...switch (e.kind) {
             UpcomingEventKind.earnings => ['${e.date.year}', 'Q${(e.date.month - 1) ~/ 3 + 1}'],
             UpcomingEventKind.dividend => [?e.currency, e.date.toIso8601String().substring(0, 7)],
-            UpcomingEventKind.catalyst => [e.date.toIso8601String().substring(0, 10), _stableHash(e.text)],
+            UpcomingEventKind.catalyst => [e.date.toIso8601String().substring(0, 10), stableHash(e.text)],
           },
         ].join('-'),
         day: e.date,
@@ -81,15 +82,6 @@ List<CalendarEntry> calendarEntries(AppLocalizations l10n, Fmt fmt, List<Upcomin
         description: t.detail ?? '',
       ),
 ];
-
-/// Futásonként is ugyanaz (a `String.hashCode` nem garantáltan az).
-String _stableHash(String s) {
-  var h = 0x811c9dc5;
-  for (final b in utf8.encode(s)) {
-    h = ((h ^ b) * 0x01000193) & 0xffffffff;
-  }
-  return h.toRadixString(16);
-}
 
 /// A naptárfájl mentése. Tesztben lecserélhető.
 typedef CalendarSaver = Future<void> Function(Uint8List bytes, String fileName);

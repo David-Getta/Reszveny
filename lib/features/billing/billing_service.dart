@@ -47,6 +47,7 @@ class BillingEvent {
     this.platform,
     this.verificationData,
     this.entitlements,
+    this.complete,
   });
 
   final String productId;
@@ -61,6 +62,11 @@ class BillingEvent {
 
   /// Ha a szerver már jóváírta (böngészős fizetés), a friss jogosultság.
   final EntitlementState? entitlements;
+
+  /// A vásárlás lezárása a boltnál (a csomag elhasználása): csak a bizonylat
+  /// mentése után hívandó, különben egy közben bezárt app elveszítené a vásárlást
+  /// (lezáratlanul a bolt újra elküldi).
+  final Future<void> Function()? complete;
 }
 
 /// Fizetés a platform boltján keresztül. A jogosultságot a [BillingController]

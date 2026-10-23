@@ -172,6 +172,29 @@ void main() {
       );
     });
 
+    test('a folytatás a szerver jelével megy, az első kérés azonosítóval (az ismétlés nem von le újra)', () async {
+      final seen = <Map<String, String>>[];
+      final client = MockClient((req) async {
+        seen.add(req.headers);
+        if (seen.length == 1) {
+          return http.Response(
+            jsonEncode({'stop_reason': 'pause_turn', 'content': []}),
+            200,
+            headers: {'content-type': 'application/json', 'x-whatstock-continuation': 'cont-1'},
+          );
+        }
+        return _json({'stop_reason': 'end_turn', 'content': []});
+      });
+      final analyst = ClaudeStockAnalyst(
+        config: const AppConfig(backendUrl: 'https://x.test'),
+        client: client,
+      );
+      await expectLater(analyst.analyze(details), throwsA(isA<AnalysisException>()));
+      expect(seen.first['x-whatstock-request-id'], startsWith('AAPL-'));
+      expect(seen.first.containsKey('x-whatstock-continuation'), isFalse);
+      expect(seen[1]['x-whatstock-continuation'], 'cont-1');
+    });
+
     test('402 hibakódok leképezése', () {
       expect(ClaudeStockAnalyst.quotaErrorFor('{"error":"quota_exceeded"}'), AppErrorCode.quotaExceeded);
       expect(ClaudeStockAnalyst.quotaErrorFor('{"error":"no_plan"}'), AppErrorCode.noPlan);

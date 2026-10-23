@@ -40,6 +40,7 @@ class Entitlement {
     'used': used,
     'extra': extra,
     'trial_started_at': trialStartedAt?.toUtc().toIso8601String(),
+    'paid_through': paidThrough?.toUtc().toIso8601String(),
   };
 }
 
@@ -152,6 +153,13 @@ class Store {
         body TEXT NOT NULL,
         created_at TEXT NOT NULL
       );
+      CREATE TABLE IF NOT EXISTS analysis_holds (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id TEXT NOT NULL,
+        period INTEGER NOT NULL,
+        extra INTEGER NOT NULL,
+        created_at TEXT NOT NULL
+      );
     ''');
     // Fiók-oszlopok (meglévő adatbázisokhoz is).
     final cols = _db.select('PRAGMA table_info(users)').map((r) => r['name'] as String).toSet();
@@ -228,6 +236,8 @@ class Store {
   // ---- Fiók ----
 
   static String normalizeEmail(String email) => email.trim().toLowerCase();
+
+  bool userExists(String userId) => _db.select('SELECT 1 FROM users WHERE id = ?', [userId]).isNotEmpty;
 
   String? emailOf(String userId) {
     final r = _db.select('SELECT email FROM users WHERE id = ?', [userId]);
@@ -316,6 +326,7 @@ class Store {
       _db.execute('DELETE FROM digest_log WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM digest_unsubscribe WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM tester_redemptions WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM analysis_holds WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [userId]);
       // Az ajánlás sora névtelenítve marad (nem törlődik): különben a másik fél újra
       // beválthatna egy kódot (a meghívott), illetve az ajánló kerete újraindulna.
@@ -372,6 +383,10 @@ class Store {
     _db.execute('UPDATE usage_log SET user_id = ? WHERE user_id = ?', [into, from]);
     _db.execute('DELETE FROM helper_calls WHERE user_id = ?', [from]);
     _db.execute('DELETE FROM ask_calls WHERE user_id = ?', [from]);
+    // A tesztelői kód beváltása is (így a fiókban is lejár), és a futó foglalások.
+    _db.execute('UPDATE OR IGNORE tester_redemptions SET user_id = ? WHERE user_id = ?', [into, from]);
+    _db.execute('DELETE FROM tester_redemptions WHERE user_id = ?', [from]);
+    _db.execute('UPDATE analysis_holds SET user_id = ? WHERE user_id = ?', [into, from]);
   }
 
   void clearStripeSubscription(String userId) =>
@@ -439,6 +454,30 @@ class Store {
     [used, extra, userId],
   );
 
+  /// Egy folyamatban lévő elemzés foglalása: ha a szerver közben leáll, az
+  /// újraindításkor visszajár ([takeStaleHolds]).
+  int addHold(String userId, ({int period, int extra}) held) {
+    _db.execute('INSERT INTO analysis_holds (user_id, period, extra, created_at) VALUES (?, ?, ?, ?)', [
+      userId,
+      held.period,
+      held.extra,
+      clock().toUtc().toIso8601String(),
+    ]);
+    return _db.lastInsertRowId;
+  }
+
+  /// A foglalás lezárult (levonva vagy visszaadva).
+  void removeHold(int id) => _db.execute('DELETE FROM analysis_holds WHERE id = ?', [id]);
+
+  /// Az előző futásból félbemaradt foglalások (és törlésük).
+  List<({String userId, int period, int extra})> takeStaleHolds() {
+    final rows = _db.select('SELECT user_id, period, extra FROM analysis_holds');
+    _db.execute('DELETE FROM analysis_holds');
+    return [
+      for (final r in rows) (userId: r['user_id'] as String, period: r['period'] as int, extra: r['extra'] as int),
+    ];
+  }
+
   void save(Entitlement e) {
     _db.execute(
       '''INSERT INTO entitlements (user_id, tier, period_start, period_end, used, extra, trial_started_at, paid_through)
@@ -495,10 +534,30 @@ class Store {
   static const deletedUser = 'deleted';
 
   /// Egy törölt fiókhoz kötött bolti vásárlás átkötése egy új fiókhoz.
-  void relinkPurchases({required String platform, required String linkKey, required String to}) => _db.execute(
-    'UPDATE purchases SET user_id = ? WHERE platform = ? AND link_key = ? AND user_id = ?',
-    [to, platform, linkKey, deletedUser],
-  );
+  void relinkPurchases({required String platform, required String linkKey, required String from, required String to}) =>
+      _db.execute('UPDATE purchases SET user_id = ? WHERE platform = ? AND link_key = ? AND user_id = ?', [
+        to,
+        platform,
+        linkKey,
+        from,
+      ]);
+
+  /// A fiók által [since] óta igazolt vásárlások termékei.
+  List<String> productsBoughtSince(String userId, DateTime since) => [
+    for (final r in _db.select('SELECT product_id FROM purchases WHERE user_id = ? AND verified_at >= ?', [
+      userId,
+      since.toUtc().toIso8601String(),
+    ]))
+      r['product_id'] as String,
+  ];
+
+  /// Akik már beváltottak egy ajánlói kódot: az e-mail-címük (a még meglévő fiókoké).
+  List<String> referralRedeemerEmails() => [
+    for (final r in _db.select(
+      'SELECT u.email FROM referrals f JOIN users u ON u.id = f.referee_id WHERE u.email IS NOT NULL',
+    ))
+      r['email'] as String,
+  ];
 
   /// Kié a bolti vásárlás (az első, ezzel a kulccsal rögzített vásárlás gazdája).
   String? userForPurchaseLink(String platform, String linkKey) {

@@ -86,15 +86,18 @@ class ClaudeStockAnalyst implements StockAnalyst {
       searchCountry: country,
       webFetch: !_webFetchRejected,
     );
-    Map<String, dynamic> response;
+    // Ugyanannak a kérésnek az ismétlése (pl. időtúllépés után) a szerveren nem von le újra.
+    String requestId() => '${details.symbol}-${stableHash(jsonEncode(body()))}';
+    ({Map<String, dynamic> body, String? continuation}) sent;
     try {
-      response = await _post(body(), options.depth);
+      sent = await _post(body(), options.depth, requestId: requestId());
     } on AnalysisException catch (e) {
       // Ha a fiókban nincs engedélyezve az oldalmegnyitás, nélküle fut az elemzés.
       if (!web || _webFetchRejected || !_isWebFetchRejection(e)) rethrow;
       _webFetchRejected = true;
-      response = await _post(body(), options.depth);
+      sent = await _post(body(), options.depth, requestId: requestId());
     }
+    var response = sent.body;
     // A folytatások előtti válaszrészek (keresési találatok) is kellenek a forrásokhoz.
     final earlier = <Map<String, dynamic>>[];
     final usage = <String, int>{};
@@ -105,7 +108,9 @@ class ClaudeStockAnalyst implements StockAnalyst {
       final part = ((response['content'] as List?) ?? const []).cast<Map<String, dynamic>>();
       earlier.addAll(part);
       messages.add({'role': 'assistant', 'content': part});
-      response = await _post(body(), options.depth);
+      // A folytatás a szerver jelével megy: az elemzés már le van vonva.
+      sent = await _post(body(), options.depth, continuation: sent.continuation);
+      response = sent.body;
       _addUsage(usage, response);
     }
     lastUsage = usage;
@@ -116,7 +121,7 @@ class ClaudeStockAnalyst implements StockAnalyst {
       // kör átalakítja. A keretet nem terheli (a továbbító végponton megy).
       final draft = _text(response);
       if (e.code != AppErrorCode.aiBadResponse || draft.trim().isEmpty) rethrow;
-      final repaired = await _post(buildRepairBody(draft, options), options.depth, url: repairEndpoint);
+      final repaired = (await _post(buildRepairBody(draft, options), options.depth, url: repairEndpoint)).body;
       _addUsage(usage, repaired);
       lastUsage = usage;
       final searched = ((response['content'] as List?) ?? const []).cast<Map<String, dynamic>>();
@@ -176,7 +181,13 @@ class ClaudeStockAnalyst implements StockAnalyst {
     }
   }
 
-  Future<Map<String, dynamic>> _post(Map<String, dynamic> body, AnalysisDepth depth, {String? url}) async {
+  Future<({Map<String, dynamic> body, String? continuation})> _post(
+    Map<String, dynamic> body,
+    AnalysisDepth depth, {
+    String? url,
+    String? continuation,
+    String? requestId,
+  }) async {
     final http.Response res;
     try {
       res = await _client
@@ -189,7 +200,11 @@ class ClaudeStockAnalyst implements StockAnalyst {
               'anthropic-version': anthropicVersion,
               'anthropic-beta': 'server-side-fallback-2026-07-01',
               // A backend ebből számolja a keret-levonást és a korlátokat.
-              if (config.hasBackend && url == null) 'x-whatstock-depth': depth.name,
+              if (config.hasBackend && url == null) ...{
+                'x-whatstock-depth': depth.name,
+                'x-whatstock-continuation': ?continuation,
+                'x-whatstock-request-id': ?requestId,
+              },
             },
             body: jsonEncode(body),
           )
@@ -206,7 +221,10 @@ class ClaudeStockAnalyst implements StockAnalyst {
       throw AnalysisException(AppErrorCode.aiHttp, detail: '${res.statusCode}', cause: res.body);
     }
     try {
-      return jsonDecode(res.body) as Map<String, dynamic>;
+      return (
+        body: jsonDecode(res.body) as Map<String, dynamic>,
+        continuation: res.headers['x-whatstock-continuation'],
+      );
     } on FormatException catch (e) {
       throw AnalysisException(AppErrorCode.aiBadResponse, cause: e);
     }

@@ -97,12 +97,22 @@ class BillingController extends ChangeNotifier {
     } else if (e.status == BillingStatus.purchased || e.status == BillingStatus.restored) {
       final v = verifier;
       if (v != null) {
-        // A bizonylat megmarad, amíg a szerver nem dönt róla: a bolt a vásárlást
-        // már lezárta (a csomagot el is használta), így csak innen küldhető újra.
+        // A bizonylat megmarad, amíg a szerver nem dönt róla; a boltnál csak a mentése
+        // után zárjuk le a vásárlást (utána csak innen küldhető újra).
         await _remember(e);
-        if (!await _verify(v, e)) await entitlements.applyProduct(e.productId);
+        await _complete(e);
+        switch (await _verify(v, e)) {
+          case _Verified.ok:
+            break;
+          case _Verified.rejected:
+            // A szerver elutasította: nem „sikeres vásárlás”.
+            _lastEvent = BillingEvent(productId: e.productId, status: BillingStatus.error, message: _verifyError);
+          case _Verified.later:
+            await entitlements.applyProduct(e.productId);
+        }
       } else {
         await entitlements.applyProduct(e.productId);
+        await _complete(e);
       }
       _busyProductId = null;
     } else if (e.status != BillingStatus.pending) {
@@ -113,25 +123,38 @@ class BillingController extends ChangeNotifier {
 
   static const _pendingKey = 'billing_pending_verifications';
 
-  /// Ellenőrzés a szerveren; igaz, ha a szerver döntött (jóváírta vagy
-  /// érvénytelennek találta) – akkor a bizonylat törlődik a várólistáról.
-  Future<bool> _verify(PurchaseVerifier v, BillingEvent e) async {
+  static Future<void> _complete(BillingEvent e) async {
+    try {
+      await e.complete?.call();
+    } catch (err) {
+      debugPrint('A vásárlás lezárása nem sikerült: $err');
+    }
+  }
+
+  /// Ellenőrzés a szerveren. Ha a szerver döntött (jóváírta vagy érvénytelennek
+  /// találta), a bizonylat törlődik a várólistáról; ha nem érhető el, marad.
+  Future<_Verified> _verify(PurchaseVerifier v, BillingEvent e) async {
     try {
       await entitlements.replace(await v(e));
       _verifyError = null;
       await _forget(e);
-      return true;
+      return _Verified.ok;
     } catch (err) {
       _verifyError = '$err';
-      // Érvénytelen bizonylat (vagy ismeretlen termék): újrapróbálni sincs értelme.
-      if (err is BackendException && err.status >= 400 && err.status < 500 && err.status != 401) {
+      // Érvénytelen bizonylat (vagy ismeretlen termék): újrapróbálni sincs értelme. A
+      // zárt előzetes meghívókód-hibája (403 `invite_*`) nem a bizonylaté: az marad.
+      if (err is BackendException &&
+          err.status >= 400 &&
+          err.status < 500 &&
+          err.status != 401 &&
+          !(err.status == 403 && err.code.startsWith('invite_'))) {
         await _forget(e);
-        return true;
+        return _Verified.rejected;
       }
       // A szerver nem érhető el: a bizonylat a várólistán marad, indításkor
       // újra elküldjük. Addig helyben írjuk jóvá.
       debugPrint('Vásárlás ellenőrzése nem sikerült: $err');
-      return false;
+      return _Verified.later;
     }
   }
 
@@ -203,3 +226,6 @@ class BillingController extends ChangeNotifier {
     super.dispose();
   }
 }
+
+/// A szerveroldali ellenőrzés eredménye: jóváírva, elutasítva, vagy később újra.
+enum _Verified { ok, rejected, later }

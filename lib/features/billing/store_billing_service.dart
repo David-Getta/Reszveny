@@ -85,6 +85,8 @@ class StoreBillingService implements BillingService {
         PurchaseStatus.error => BillingStatus.error,
         PurchaseStatus.canceled => BillingStatus.canceled,
       };
+      // A sikeres vásárlást a vezérlő zárja le, miután a bizonylatot elmentette.
+      final paid = status == BillingStatus.purchased || status == BillingStatus.restored;
       _events.add(
         BillingEvent(
           productId: p.productID,
@@ -92,9 +94,10 @@ class StoreBillingService implements BillingService {
           message: p.error?.message,
           platform: p.verificationData.source,
           verificationData: p.verificationData.serverVerificationData,
+          complete: paid && p.pendingCompletePurchase ? () => _iap.completePurchase(p) : null,
         ),
       );
-      if (p.pendingCompletePurchase) _iap.completePurchase(p);
+      if (!paid && p.pendingCompletePurchase) _iap.completePurchase(p);
     }
   }
 

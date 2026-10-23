@@ -22,10 +22,10 @@ class Quota {
   /// próbaidő vagy megvett extra elemzés.
   bool hasAccess(Entitlement e) => e.extra > 0 || (e.tier != null && !_trialExpired(e));
 
-  /// Most felhasználható elemzések: időszaki maradék + extra.
+  /// Most felhasználható elemzések: időszaki maradék + extra (a tartozás levonva).
   int available(Entitlement e) {
     final q = _periodQuota(e);
-    return (q - e.used).clamp(0, q) + e.extra;
+    return ((q - e.used).clamp(0, q) + e.extra).clamp(0, 1 << 30);
   }
 
   /// Indítható-e egy [cost] elemzést fogyasztó elemzés.
@@ -70,9 +70,11 @@ class Quota {
       }
       return;
     }
+    // Csomagnál a jóváírt extra elemzések elvesznek; ha már elfogytak, tartozás marad
+    // (negatív extra), amit a következő vásárlás vagy a keret fedez.
     final pack = PlanSpec.packs[productId];
     if (pack != null) {
-      e.extra = (e.extra - pack).clamp(0, e.extra);
+      e.extra -= pack;
       store.save(e);
     }
   }
@@ -86,7 +88,10 @@ class Quota {
     if (plan != null) {
       final now = store.clock();
       final month = now.add(const Duration(days: PlanSpec.periodDays));
-      final paid = until != null && until.isAfter(now) ? until : month;
+      // Ismeretlen kifizetett időszaknál (pl. a Stripe számlája még nem jött meg) az
+      // éves előfizetés egy évre szól, nem egy hónapra.
+      final fallback = productId == plan.yearlyProductId ? now.add(const Duration(days: 365)) : month;
+      final paid = until != null && until.isAfter(now) ? until : fallback;
       e
         ..tier = plan.tier
         ..periodStart = now

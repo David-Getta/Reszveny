@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.268)
+# Változásjegyzék (0.2.130 → 0.2.269)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,24 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Számlázás és keretek: egy tizenötödik kódátnézés javításai
+
+- **0.2.269**: a szerver minden sikeres elemzés-választ levon. Eddig a kliens által kért kis `max_tokens`
+  vagy egy `pause_turn` ingyen adta a részeredményt. A hosszkorláton megszakadt, visszatérített válasz szöveg
+  nélkül megy ki. A szünetelt (`pause_turn`) elemzés egyszer kerül pénzbe, a folytatásai egy jellel
+  ingyenesek, egy meghiúsult folytatás az egészet visszaadja (a jelet még nem küldő régebbi app folytatása is
+  felismerve). Ugyanannak az elemzésnek az ismétlése (pl. időtúllépés után) nem von le újra, és egy
+  szerver-újraindításkor félbemaradt elemzés foglalása visszajár. Fióktörlés és visszaállítás után egy
+  elhasznált csomag nem írható jóvá újra, és az előfizetés időszaka nem indul újra. Egy másik élő fiókon
+  visszaállított előfizetés átkerül (a megújítás is oda megy). A tesztelői kód csomagja akkor is lejár, ha
+  közben csomagot vett a fiók. Belépéskor az átkerülő előfizetés kifizetett időszaka is átkerül. A Stripe
+  éves csomagja akkor is egy évre szól, ha a számla a fizetés előtt érkezik. Az elhasznált, majd visszatérített
+  csomag tartozást hagy, amit a következő vásárlás fedez. A Google Playen lemondott, de még kifizetett
+  előfizetés is elfogadva. Az e-mailes regisztráció is az IP-nkénti próbaidő-korlát alá esik, egy postafiók
+  más alakban (`név+1@`) nem válthat be újra ajánlói kódot. Az appban az elutasított vásárlás nem „sikeres”,
+  a zárt előzetes meghívókód-hibája nem dobja el a bizonylatot, a bolti vásárlás csak a bizonylat mentése után
+  zárul le, és a kifizetett időszakon túl nem látszik új keret.
 
 ## Asztali app és háttér: egy tizennegyedik kódátnézés javításai
 

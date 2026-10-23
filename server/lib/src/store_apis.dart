@@ -177,7 +177,8 @@ class GooglePlayApi {
     if (res.statusCode != 200) throw StoreApiException('google_${res.statusCode}', res.body);
     final j = (jsonDecode(res.body) as Map).cast<String, dynamic>();
     if (isSubscription) {
-      const live = {'SUBSCRIPTION_STATE_ACTIVE', 'SUBSCRIPTION_STATE_IN_GRACE_PERIOD'};
+      // A lemondott (automatikus megújítás kikapcsolva) előfizetés a lejáratig fizetett.
+      const live = {'SUBSCRIPTION_STATE_ACTIVE', 'SUBSCRIPTION_STATE_IN_GRACE_PERIOD', 'SUBSCRIPTION_STATE_CANCELED'};
       if (!live.contains(j['subscriptionState'])) return null;
       final now = _clock().toUtc();
       final items = (j['lineItems'] as List? ?? const []).cast<Map>();

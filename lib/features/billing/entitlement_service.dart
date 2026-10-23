@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -21,14 +22,21 @@ class EntitlementState {
     this.usedInPeriod = 0,
     this.extraCredits = 0,
     this.trialStartedAt,
+    this.paidThrough,
   });
 
   final PlanTier? tier;
   final DateTime? periodStart;
   final DateTime? periodEnd;
   final int usedInPeriod;
+
+  /// Ennyi extra elemzés van (egy visszatérített, már elhasznált csomag után negatív:
+  /// tartozás, amit a következő vásárlás fedez).
   final int extraCredits;
   final DateTime? trialStartedAt;
+
+  /// Meddig van kifizetve az előfizetés (a szerver szerint); ezen túl nincs új keret.
+  final DateTime? paidThrough;
 
   EntitlementState copyWith({
     PlanTier? tier,
@@ -38,6 +46,7 @@ class EntitlementState {
     int? usedInPeriod,
     int? extraCredits,
     DateTime? trialStartedAt,
+    DateTime? paidThrough,
   }) => EntitlementState(
     tier: clearTier ? null : (tier ?? this.tier),
     periodStart: periodStart ?? this.periodStart,
@@ -45,6 +54,7 @@ class EntitlementState {
     usedInPeriod: usedInPeriod ?? this.usedInPeriod,
     extraCredits: extraCredits ?? this.extraCredits,
     trialStartedAt: trialStartedAt ?? this.trialStartedAt,
+    paidThrough: paidThrough ?? this.paidThrough,
   );
 
   Map<String, dynamic> toJson() => {
@@ -54,6 +64,7 @@ class EntitlementState {
     'used': usedInPeriod,
     'extra': extraCredits,
     'trial_started_at': trialStartedAt?.toUtc().toIso8601String(),
+    'paid_through': paidThrough?.toUtc().toIso8601String(),
   };
 
   factory EntitlementState.fromJson(Map<String, dynamic> j) => EntitlementState(
@@ -63,6 +74,7 @@ class EntitlementState {
     usedInPeriod: (j['used'] as num?)?.toInt() ?? 0,
     extraCredits: (j['extra'] as num?)?.toInt() ?? 0,
     trialStartedAt: DateTime.tryParse(j['trial_started_at'] as String? ?? ''),
+    paidThrough: DateTime.tryParse(j['paid_through'] as String? ?? ''),
   );
 }
 
@@ -121,10 +133,10 @@ class EntitlementService extends ChangeNotifier {
   int get quota => _effectivePlan()?.analysesPerPeriod ?? 0;
   int get used => _rolled().usedInPeriod;
   int get remainingInPeriod => (quota - used).clamp(0, quota);
-  int get extraCredits => _state.extraCredits;
+  int get extraCredits => max(0, _state.extraCredits);
 
   /// Összesen indítható elemzés most (időszaki keret + extra).
-  int get remainingTotal => check() == QuotaCheck.ok ? remainingInPeriod + extraCredits : extraCredits;
+  int get remainingTotal => check() == QuotaCheck.ok ? available : extraCredits;
 
   DateTime? get periodEnd => _rolled().periodEnd;
 
@@ -145,7 +157,7 @@ class EntitlementService extends ChangeNotifier {
 
   int _available(EntitlementState s) {
     final q = _periodQuota(s);
-    return (q - s.usedInPeriod).clamp(0, q) + s.extraCredits;
+    return max(0, (q - s.usedInPeriod).clamp(0, q) + s.extraCredits);
   }
 
   int _periodQuota(EntitlementState s) {
@@ -214,6 +226,8 @@ class EntitlementService extends ChangeNotifier {
     if (s.tier == null || s.tier == PlanTier.trial || s.periodEnd == null) return s;
     final now = _clock();
     if (now.isBefore(s.periodEnd!)) return s;
+    // A kifizetett időszakon túl nincs új keret (a szerver sem ad; a megújítás hozza).
+    if (s.paidThrough case final paid? when !now.isBefore(paid)) return s;
     var start = s.periodEnd!;
     var end = start.add(PlanSpec.period);
     while (!now.isBefore(end)) {

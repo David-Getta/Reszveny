@@ -84,7 +84,7 @@ void main() {
     api = build();
   });
 
-  Future<({int status, dynamic body})> call(
+  Future<({int status, dynamic body, Map<String, String> headers})> call(
     String method,
     String path, {
     String? token,
@@ -107,7 +107,7 @@ void main() {
     } catch (_) {
       j = text;
     }
-    return (status: res.statusCode, body: j);
+    return (status: res.statusCode, body: j, headers: res.headers);
   }
 
   Future<(String, String)> anon({Map<String, String>? headers}) async {
@@ -193,14 +193,117 @@ void main() {
     reply = () => http.Response('{"type":"error"}', 529);
     expect((await call('POST', '/v1/analyze', token: t, body: analyzeBody())).status, 529);
     expect(store.entitlement(uid).extra, 2);
-    reply = () => http.Response(jsonEncode({'stop_reason': 'pause_turn', 'content': []}), 200);
-    expect((await call('POST', '/v1/analyze', token: t, body: analyzeBody())).status, 200);
-    expect(store.entitlement(uid).extra, 2, reason: 'a folytatás számít, nem a félbemaradt rész');
-    reply = () => http.Response(jsonEncode({'stop_reason': 'max_tokens', 'content': []}), 200);
-    expect((await call('POST', '/v1/analyze', token: t, body: analyzeBody())).status, 200);
+    reply = () => http.Response(
+      jsonEncode({
+        'stop_reason': 'max_tokens',
+        'content': [
+          {'type': 'text', 'text': 'partial'},
+        ],
+      }),
+      200,
+    );
+    final cut = await call('POST', '/v1/analyze', token: t, body: analyzeBody());
     expect(store.entitlement(uid).extra, 2, reason: 'a hosszkorláton megszakadt elemzés nem kerül pénzbe');
+    expect(cut.body['content'], isEmpty, reason: 'a visszatérített hívás szövege nem megy ki');
     expect((await call('POST', '/v1/analyze', token: t, raw: '{not json')).status, 400);
     expect(store.entitlement(uid).extra, 2);
+  });
+
+  test('an analysis paused for a server tool is charged once; its continuations are free', () async {
+    final (t, uid) = await anon();
+    store.save(
+      store.entitlement(uid)
+        ..tier = null
+        ..extra = 2,
+    );
+    reply = () => http.Response(jsonEncode({'stop_reason': 'pause_turn', 'content': []}), 200);
+    final first = await call('POST', '/v1/analyze', token: t, body: analyzeBody());
+    expect(store.entitlement(uid).extra, 1, reason: 'a félbemaradt rész is pénzbe kerül');
+    var token = first.headers['x-whatstock-continuation'];
+    expect(token, isNotNull);
+    for (var i = 0; i < 2; i++) {
+      final next = await call(
+        'POST',
+        '/v1/analyze',
+        token: t,
+        body: analyzeBody(),
+        headers: {'x-whatstock-continuation': token!},
+      );
+      token = next.headers['x-whatstock-continuation'];
+    }
+    expect(store.entitlement(uid).extra, 1, reason: 'a folytatások nem vonnak le');
+    // Egy meghiúsult folytatás az egész elemzést visszaadja.
+    reply = () => http.Response('{"type":"error"}', 529);
+    await call('POST', '/v1/analyze', token: t, body: analyzeBody(), headers: {'x-whatstock-continuation': token!});
+    expect(store.entitlement(uid).extra, 2);
+    // Egy másik fiók nem használhatja a jelet.
+    reply = () => http.Response(jsonEncode({'stop_reason': 'pause_turn', 'content': []}), 200);
+    final again = await call('POST', '/v1/analyze', token: t, body: analyzeBody());
+    final (other, otherId) = await anon();
+    store.save(
+      store.entitlement(otherId)
+        ..tier = null
+        ..extra = 1,
+    );
+    reply = null;
+    await call(
+      'POST',
+      '/v1/analyze',
+      token: other,
+      body: analyzeBody(),
+      headers: {'x-whatstock-continuation': again.headers['x-whatstock-continuation']!},
+    );
+    expect(store.entitlement(otherId).extra, 0);
+  });
+
+  test('an older app that does not send the continuation mark is not charged for its continuations', () async {
+    final (t, uid) = await anon();
+    store.save(
+      store.entitlement(uid)
+        ..tier = null
+        ..extra = 2,
+    );
+    reply = () => http.Response(jsonEncode({'stop_reason': 'pause_turn', 'content': []}), 200);
+    await call('POST', '/v1/analyze', token: t, body: analyzeBody());
+    reply = null;
+    final continued = {
+      ...analyzeBody(),
+      'messages': [
+        ...analyzeBody()['messages'] as List,
+        {'role': 'assistant', 'content': []},
+      ],
+    };
+    expect((await call('POST', '/v1/analyze', token: t, body: continued)).status, 200);
+    expect(store.entitlement(uid).extra, 1);
+  });
+
+  test('a repeated analysis request is answered without a new charge; a crashed one is given back', () async {
+    final (t, uid) = await anon();
+    store.save(
+      store.entitlement(uid)
+        ..tier = null
+        ..extra = 2,
+    );
+    const id = {'x-whatstock-request-id': 'aapl-standard-2026-10-11'};
+    gate = Completer<void>();
+    final first = call('POST', '/v1/analyze', token: t, body: analyzeBody(), headers: id);
+    await Future<void>.delayed(const Duration(milliseconds: 20));
+    final second = call('POST', '/v1/analyze', token: t, body: analyzeBody(), headers: id);
+    gate!.complete();
+    gate = null;
+    expect((await first).status, 200);
+    expect((await second).status, 200);
+    expect((await call('POST', '/v1/analyze', token: t, body: analyzeBody(), headers: id)).status, 200);
+    expect(store.entitlement(uid).extra, 1);
+    expect(upstreamCalls, 1);
+
+    // Leállás egy futó elemzés közben: az újraindult szerver visszaadja a foglalást.
+    gate = Completer<void>();
+    unawaited(call('POST', '/v1/analyze', token: t, body: analyzeBody()));
+    await Future<void>.delayed(const Duration(milliseconds: 20));
+    expect(store.entitlement(uid).extra, 0);
+    api = build();
+    expect(store.entitlement(uid).extra, 1);
   });
 
   test('only the beta features the app uses are passed on', () async {
@@ -427,6 +530,155 @@ void main() {
     expect(await verify(t2, 'whatstock.sub.pro', 'r1'), 200);
     expect(store.entitlement(uid2).tier, 'pro');
     expect(store.userForPurchaseLink('app_store', 'link-r1'), uid2);
+  });
+
+  test(
+    'after deleting an account a used pack is not credited again, and a subscription keeps the period used up',
+    () async {
+      api = Api(
+        store: store,
+        anthropicApiKey: 'k',
+        finnhubApiKey: 'k',
+        verifier: _FixedVerifier(now.add(const Duration(days: 30))),
+        mailer: mailer,
+      );
+      final (t, _) = await anon();
+      expect(await verify(t, 'whatstock.pack.50', 'pack'), 200);
+      expect(await verify(t, 'whatstock.sub.pro', 'sub'), 200);
+      expect((await call('DELETE', '/v1/account', token: t)).status, 200);
+      final (t2, uid2) = await anon();
+      expect(await verify(t2, 'whatstock.pack.50', 'pack'), 200);
+      expect(store.entitlement(uid2).extra, 0, reason: 'a csomag egyszer jár');
+      expect(await verify(t2, 'whatstock.sub.pro', 'sub'), 200);
+      final e = store.entitlement(uid2);
+      expect((e.tier, e.used), ('pro', PlanSpec.byTier('pro')!.analysesPerPeriod));
+    },
+  );
+
+  test('restoring a subscription on a second live account moves it there, with the period usage', () async {
+    api = Api(
+      store: store,
+      anthropicApiKey: 'k',
+      finnhubApiKey: 'k',
+      verifier: _FixedVerifier(now.add(const Duration(days: 30))),
+      mailer: mailer,
+    );
+    final (a, uidA) = await anon();
+    expect(await verify(a, 'whatstock.sub.pro', 't1'), 200);
+    store.save(store.entitlement(uidA)..used = 7);
+    final (b, uidB) = await anon();
+    final restored = await call(
+      'POST',
+      '/v1/purchases/verify',
+      token: b,
+      body: {'platform': 'app_store', 'product_id': 'whatstock.sub.pro', 'verification_data': 't1'},
+    );
+    expect(restored.body['applied'], isTrue);
+    expect((store.entitlement(uidB).tier, store.entitlement(uidB).used), ('pro', 7));
+    expect(store.entitlement(uidA).tier, isNull);
+    expect(store.userForPurchaseLink('app_store', 'link-t1'), uidB);
+  });
+
+  test('a tester plan ends on time even after buying a pack; signing in carries the redemption', () async {
+    final (t, uid) = await anon();
+    expect((await call('POST', '/v1/referral/redeem', token: t, body: {'code': 'DAVID-TESZT'})).status, 200);
+    expect(await verify(t, 'whatstock.pack.5', 'pack-5'), 200);
+    now = now.add(const Duration(days: 31));
+    await call('POST', '/v1/analyze', token: t, body: analyzeBody());
+    now = now.add(Store.paidGrace);
+    expect(store.entitlement(uid).tier, isNull);
+    expect(store.entitlement(uid).extra, greaterThan(0), reason: 'a megvett csomag marad');
+
+    final (t2, _) = await anon();
+    expect((await call('POST', '/v1/referral/redeem', token: t2, body: {'code': 'DAVID-TESZT'})).status, 200);
+    final account = (await login('tester@x.io', token: t2))['user_id'] as String;
+    now = now.add(const Duration(days: 40));
+    await call('POST', '/v1/analyze', token: (await login('tester@x.io'))['token'] as String, body: analyzeBody());
+    expect(store.entitlement(account).tier, isNot('max'));
+  });
+
+  test('signing in keeps the paid-through date of the plan that moves to the account', () async {
+    final until = now.add(const Duration(days: 30));
+    api = Api(store: store, anthropicApiKey: 'k', finnhubApiKey: 'k', verifier: _FixedVerifier(until), mailer: mailer);
+    final (t, _) = await anon();
+    expect(await verify(t, 'whatstock.sub.max', 'm1'), 200);
+    final account = (await login('old@x.io', token: t))['user_id'] as String;
+    expect(store.entitlement(account).paidThrough, until);
+    now = until.add(Store.paidGrace).add(const Duration(days: 1));
+    expect(store.entitlement(account).tier, isNull, reason: 'a lemondott előfizetés lejár');
+  });
+
+  test('Stripe: a yearly plan keeps its year when the invoice arrives before the checkout', () async {
+    final (t, _) = await anon();
+    final uid = (await login('year@x.io', token: t))['user_id'] as String;
+    stripe = StripeClient(
+      secretKey: 'sk_test',
+      webhookSecret: 'whsec_test',
+      prices: StripeClient.parsePrices('whatstock.sub.max.year=price_max_year'),
+      client: MockClient((req) async => http.Response('{"id":"cs","url":"https://x"}', 200)),
+    );
+    api = build();
+    final year = now.add(const Duration(days: 365));
+    await webhook(
+      event('i1', 'invoice.paid', {
+        'id': 'in_y',
+        'customer': 'cus_y',
+        'subscription': 'sub_y',
+        'billing_reason': 'subscription_create',
+        'subscription_details': {
+          'metadata': {'user_id': uid},
+        },
+        'lines': {
+          'data': [
+            {
+              'price': {'id': 'price_max_year'},
+              'period': {'end': year.millisecondsSinceEpoch ~/ 1000},
+            },
+          ],
+        },
+      }),
+    );
+    expect(store.stripeOf(uid).customerId, 'cus_y');
+    await webhook(
+      event('c1', 'checkout.session.completed', {
+        'id': 'cs_y',
+        'client_reference_id': uid,
+        'customer': 'cus_y',
+        'subscription': 'sub_y',
+        'payment_status': 'paid',
+        'metadata': {'product_id': 'whatstock.sub.max.year'},
+      }),
+    );
+    expect(store.entitlement(uid).paidThrough, year);
+    now = now.add(const Duration(days: 40));
+    expect(store.entitlement(uid).tier, 'max');
+  });
+
+  test('a pack refunded after use leaves a debt that the next purchase covers', () async {
+    final (t, uid) = await anon();
+    store.save(store.entitlement(uid)..tier = null);
+    expect(await verify(t, 'whatstock.pack.20', 'used-pack'), 200);
+    store.save(store.entitlement(uid)..extra = 0);
+    api.quota.revoke(store.entitlement(uid), 'whatstock.pack.20');
+    expect(store.entitlement(uid).extra, -20);
+    expect(api.quota.available(store.entitlement(uid)), 0);
+    expect(await verify(t, 'whatstock.pack.5', 'next-pack'), 200);
+    expect(store.entitlement(uid).extra, -15);
+    expect((await call('POST', '/v1/analyze', token: t, body: analyzeBody())).status, 402);
+  });
+
+  test('email sign-ups count towards the trial limit per address; mailbox aliases redeem one referral', () async {
+    api = build(trialPerIpPerDay: 1);
+    const ip = {'x-forwarded-for': '203.0.113.7'};
+    await anon(headers: ip);
+    for (var i = 0; i < 2; i++) {
+      await call('POST', '/v1/auth/email/start', body: {'email': 'farm+$i@x.io'}, headers: ip);
+      final code = mailer.sent['farm+$i@x.io']!;
+      final r = await call('POST', '/v1/auth/email/verify', body: {'email': 'farm+$i@x.io', 'code': code}, headers: ip);
+      expect(store.entitlement(r.body['user_id'] as String).tier, isNull);
+    }
+    expect(normalizedMailbox('Jo.Hn+x@GoogleMail.com'), 'john@gmail.com');
+    expect(normalizedMailbox('a.b+c@x.io'), 'a.b@x.io');
   });
 
   test('login codes cannot be guessed at length: a daily cap on codes and on wrong attempts', () async {
