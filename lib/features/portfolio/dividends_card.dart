@@ -119,7 +119,10 @@ class DividendsCard extends StatelessWidget {
                       );
                       // Évenként is, ha több évből van tétel (az adóbevalláshoz).
                       final years = {for (final d in all) ?d.date?.year}.toList()..sort((a, b) => b.compareTo(a));
-                      final byYear = {for (final y in years) y: sum(all.where((d) => d.date?.year == y))};
+                      // Az évenkénti összegben csak a már kifizetett (a bejelentett jövőbeli nem).
+                      final byYear = {
+                        for (final y in years) y: sum(all.where((d) => d.date?.year == y && !d.date!.isAfter(now))),
+                      };
                       return Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -444,6 +447,29 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
 
   static final _symbolPattern = RegExp(r'^[A-Z0-9][A-Z0-9.\-:^]{0,14}$');
 
+  /// A felhasználó átírta-e a pénznemet (akkor a beírt ticker nem írja felül).
+  bool _currencyTouched = false;
+
+  @override
+  void initState() {
+    super.initState();
+    // Új osztaléknál ticker nélkül nyitva: a beírt, birtokolt részvény pénzneme és fő
+    // számlája jön (nem az összesítés pénzneme).
+    if (widget.editing == null && widget.symbol == null) _symbol.addListener(_symbolChanged);
+  }
+
+  void _symbolChanged() {
+    final portfolio = AppServices.of(context).portfolio;
+    final s = _symbol.text.trim().toUpperCase();
+    final pos = portfolio.positionOf(s);
+    if (pos == null) return;
+    if (!_currencyTouched && _currency.text != pos.currency) _currency.text = pos.currency;
+    if (widget.account == null) {
+      final main = portfolio.mainAccountOf(s);
+      if (main != _account) setState(() => _account = main);
+    }
+  }
+
   @override
   void dispose() {
     _symbol.dispose();
@@ -509,6 +535,7 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
                   child: TextField(
                     key: const ValueKey('dividend-currency'),
                     controller: _currency,
+                    onChanged: (_) => _currencyTouched = true,
                     textCapitalization: TextCapitalization.characters,
                     maxLength: 3,
                     decoration: InputDecoration(
@@ -711,7 +738,8 @@ class _DividendGoal extends StatelessWidget {
               ? l10n.dividendGoalReached(amount, fmt.money(goal.amount, goal.currency))
               : l10n.dividendGoalProgress(
                   amount,
-                  fmt.percent(ratio * 100, decimals: 0),
+                  // Lefelé kerekítve: a még el nem ért cél ne mutasson 100%-ot.
+                  fmt.percent((ratio * 100).floorToDouble(), decimals: 0),
                   fmt.money(goal.amount, goal.currency),
                 ),
           onChanged: prefs.setDividendGoal,

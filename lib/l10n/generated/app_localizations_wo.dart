@@ -2849,6 +2849,11 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Lu néew-néew $quantity – lim boobu jaay nañu ko ba noppi';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

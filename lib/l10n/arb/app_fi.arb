@@ -849,5 +849,6 @@
   "errImageUnsupported": "Kuvaa ei voi lukea. Tallenna se JPEG- tai PNG-muodossa ja yritä uudelleen.",
   "errRateLimited": "Liian monta pyyntöä lyhyessä ajassa. Odota minuutti ja yritä uudelleen.",
   "watchListNameTaken": "Samanniminen lista on jo olemassa.",
-  "watchListLimit": "Voit luoda enintään {max} listaa."
+  "watchListLimit": "Voit luoda enintään {max} listaa.",
+  "portfolioBuyBelowSold": "Vähintään {quantity} – niin monta on jo myyty"
 }

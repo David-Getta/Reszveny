@@ -2849,6 +2849,11 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'အနည်းဆုံး $quantity – ထိုမျှ ရောင်းပြီးသားဖြစ်သည်';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

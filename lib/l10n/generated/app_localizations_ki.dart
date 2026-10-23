@@ -2859,6 +2859,11 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return '$quantity kana makĩria – icio nĩciendetwo';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

@@ -2903,6 +2903,11 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Vismaz $quantity – tik daudz jau ir pārdots';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

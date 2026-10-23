@@ -2863,6 +2863,11 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'కనీసం $quantity – ఇప్పటికే ఆ సంఖ్యలో అమ్మారు';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

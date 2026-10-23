@@ -2823,6 +2823,11 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'อย่างน้อย $quantity เพราะขายไปแล้วเท่านี้';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

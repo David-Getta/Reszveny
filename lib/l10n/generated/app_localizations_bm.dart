@@ -2853,6 +2853,11 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return '$quantity walima ka caya – o hakɛ feerela kaban';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

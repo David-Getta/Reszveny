@@ -2862,6 +2862,11 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Legalább $quantity – ennyit már eladtál belőle';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

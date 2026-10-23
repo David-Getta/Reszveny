@@ -2859,6 +2859,11 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Sahenteuna $quantity – sakitu parantos dijual';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

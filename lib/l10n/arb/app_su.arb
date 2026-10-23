@@ -849,5 +849,6 @@
   "errImageUnsupported": "Gambar ieu teu tiasa dibaca. Simpen salaku JPEG atanapi PNG teras cobaan deui.",
   "errRateLimited": "Kaleuleuwihi pamundut dina waktos anu pondok. Mangga antosan samenit teras cobaan deui.",
   "watchListNameTaken": "Daptar kalayan ngaran ieu parantos aya.",
-  "watchListLimit": "Anjeun tiasa gaduh dugi ka {max} daptar."
+  "watchListLimit": "Anjeun tiasa gaduh dugi ka {max} daptar.",
+  "portfolioBuyBelowSold": "Sahenteuna {quantity} – sakitu parantos dijual"
 }

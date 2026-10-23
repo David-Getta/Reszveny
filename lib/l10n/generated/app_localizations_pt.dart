@@ -2863,6 +2863,11 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Pelo menos $quantity – essa quantidade já foi vendida';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

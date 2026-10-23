@@ -2851,6 +2851,11 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'ઓછામાં ઓછા $quantity – આટલા પહેલેથી જ વેચાઈ ગયા છે';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

@@ -849,5 +849,6 @@
   "errImageUnsupported": "Gambar ini tidak dapat dibaca. Simpan sebagai JPEG atau PNG, lalu coba lagi.",
   "errRateLimited": "Terlalu banyak permintaan dalam waktu singkat. Mohon tunggu satu menit, lalu coba lagi.",
   "watchListNameTaken": "Daftar dengan nama ini sudah ada.",
-  "watchListLimit": "Anda dapat memiliki hingga {max} daftar."
+  "watchListLimit": "Anda dapat memiliki hingga {max} daftar.",
+  "portfolioBuyBelowSold": "Minimal {quantity} – sebanyak itu sudah terjual"
 }

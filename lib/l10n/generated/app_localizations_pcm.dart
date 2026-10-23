@@ -2856,6 +2856,11 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'At least $quantity – dat many don already sell';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

@@ -2870,6 +2870,11 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Ubuncinane $quantity – izabelo ezingako sele zithengisiwe';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

@@ -849,5 +849,6 @@
   "errImageUnsupported": "Tento obrázok sa nedá prečítať. Uložte ho ako JPEG alebo PNG a skúste to znova.",
   "errRateLimited": "Príliš veľa požiadaviek v krátkom čase. Počkajte prosím minútu a skúste to znova.",
   "watchListNameTaken": "Zoznam s týmto názvom už existuje.",
-  "watchListLimit": "Maximálny počet zoznamov: {max}."
+  "watchListLimit": "Maximálny počet zoznamov: {max}.",
+  "portfolioBuyBelowSold": "Najmenej {quantity} – toľko už bolo predaných"
 }

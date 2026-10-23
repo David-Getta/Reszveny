@@ -2860,6 +2860,11 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Herî kêm $quantity – ew qas berê hatin firotin';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

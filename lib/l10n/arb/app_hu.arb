@@ -750,6 +750,7 @@
   "errRateLimited": "Túl sok kérés rövid idő alatt. Várj egy percet, és próbáld újra.",
   "watchListNameTaken": "Már van ilyen nevű lista.",
   "watchListLimit": "Legfeljebb {max} listád lehet.",
+  "portfolioBuyBelowSold": "Legalább {quantity} – ennyit már eladtál belőle",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

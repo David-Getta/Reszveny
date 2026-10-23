@@ -220,7 +220,14 @@ Future<void> showPortfolioImport(BuildContext context) async {
             : SnackBarAction(
                 key: const ValueKey('portfolio-import-undo'),
                 label: l10n.undo,
-                onPressed: () => services.portfolio.removeIds(lots: lotIds, dividends: dividendIds, splits: splitIds),
+                onPressed: () async {
+                  // A behozott felaprózások riasztás-átszámolása is visszafordul.
+                  final splits = services.portfolio.splits.where((s) => splitIds.contains(s.id)).toList();
+                  await services.portfolio.removeIds(lots: lotIds, dividends: dividendIds, splits: splitIds);
+                  for (final s in splits) {
+                    await services.alerts.applySplit(s.symbol, from: s.to, to: s.from, date: s.date);
+                  }
+                },
               ),
       ),
     );

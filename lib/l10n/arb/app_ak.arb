@@ -849,5 +849,6 @@
   "errImageUnsupported": "Yɛntumi nkenkan mfonini yi. Kora no sɛ JPEG anaa PNG na sɔ hwɛ bio.",
   "errRateLimited": "Abisade dodow dodo wɔ bere tiaa mu. Yɛsrɛ wo, twɛn simma baako na sɔ hwɛ bio.",
   "watchListNameTaken": "Nhyehyɛe a ne din te sɛ yei wɔ hɔ dedaw.",
-  "watchListLimit": "Wubetumi anya nhyehyɛe kosi {max}."
+  "watchListLimit": "Wubetumi anya nhyehyɛe kosi {max}.",
+  "portfolioBuyBelowSold": "Anyɛ yiye koraa {quantity} – woatɔn saa dodow no dedaw"
 }

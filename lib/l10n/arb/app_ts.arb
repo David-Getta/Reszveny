@@ -849,5 +849,6 @@
   "errImageUnsupported": "Xifaniso lexi a xi hlayeki. Xi hlayisi tanihi JPEG kumbe PNG kutani u ringeta nakambe.",
   "errRateLimited": "Swikombelo swi tele ngopfu hi nkarhi wo koma. Hi kombela u rindza minete kutani u ringeta nakambe.",
   "watchListNameTaken": "Ku na nxaxamelo leyi nga ni vito leri se.",
-  "watchListLimit": "U nga va na minxaxamelo yo fika eka {max}."
+  "watchListLimit": "U nga va na minxaxamelo yo fika eka {max}.",
+  "portfolioBuyBelowSold": "Ku nga ri ehansi ka {quantity} – nhlayo leyo yi xavisiwile khale"
 }

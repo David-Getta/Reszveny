@@ -849,5 +849,6 @@
   "errImageUnsupported": "Iyi foto ntishobora gusomwa. Yibike nka JPEG cyangwa PNG maze wongere ugerageze.",
   "errRateLimited": "Ubusabe bwinshi cyane mu gihe gito. Tegereza umunota umwe maze wongere ugerageze.",
   "watchListNameTaken": "Hari urutonde rufite iri zina.",
-  "watchListLimit": "Ushobora kugira intonde zigera kuri {max}."
+  "watchListLimit": "Ushobora kugira intonde zigera kuri {max}.",
+  "portfolioBuyBelowSold": "Nibura {quantity} – iyo migabane yamaze kugurishwa"
 }

@@ -2856,6 +2856,11 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Ma drus $quantity – amḍan-agi yettwazenz yakan';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

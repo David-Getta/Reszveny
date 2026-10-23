@@ -849,5 +849,6 @@
   "errImageUnsupported": "Tsy azo vakiana ity sary ity. Tehirizo ho JPEG na PNG izy ary andramo indray.",
   "errRateLimited": "Be loatra ny fangatahana tao anatin'ny fotoana fohy. Miandrasa iray minitra azafady ary andramo indray.",
   "watchListNameTaken": "Efa misy lisitra mitondra io anarana io.",
-  "watchListLimit": "Hatramin'ny lisitra {max} no azonao ananana."
+  "watchListLimit": "Hatramin'ny lisitra {max} no azonao ananana.",
+  "portfolioBuyBelowSold": "Farafahakeliny {quantity} – izany isa izany no efa namidy"
 }

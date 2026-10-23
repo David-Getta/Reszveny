@@ -849,5 +849,6 @@
   "errImageUnsupported": "Picha hii haiwezi kusomwa. Ihifadhi kama JPEG au PNG kisha ujaribu tena.",
   "errRateLimited": "Maombi mengi mno kwa muda mfupi. Tafadhali subiri dakika moja kisha ujaribu tena.",
   "watchListNameTaken": "Tayari kuna orodha yenye jina hili.",
-  "watchListLimit": "Unaweza kuwa na hadi orodha {max}."
+  "watchListLimit": "Unaweza kuwa na hadi orodha {max}.",
+  "portfolioBuyBelowSold": "Angalau {quantity} – idadi hiyo imeshauzwa"
 }

@@ -2863,6 +2863,11 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'ಕನಿಷ್ಠ $quantity – ಇಷ್ಟು ಈಗಾಗಲೇ ಮಾರಾಟವಾಗಿವೆ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

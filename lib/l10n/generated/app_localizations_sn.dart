@@ -2866,6 +2866,11 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Kanenge $quantity – masheya akadaro akatotengeswa';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

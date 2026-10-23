@@ -2932,6 +2932,11 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Не менш за $quantity – столькі ўжо прададзена';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

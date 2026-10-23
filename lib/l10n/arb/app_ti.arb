@@ -849,5 +849,6 @@
   "errImageUnsupported": "እዚ ስእሊ ክንበብ ኣይከኣለን። ከም JPEG ወይ PNG ዓቂብኩም ዳግማይ ፈትኑ።",
   "errRateLimited": "ኣብ ሓጺር ግዜ ኣዝዮም ብዙሓት ሕቶታት። በጃኹም ሓንቲ ደቒቕ ተጸቢኹም ዳግማይ ፈትኑ።",
   "watchListNameTaken": "በዚ ስም ዝርዝር ድሮ ኣሎ።",
-  "watchListLimit": "ክሳብ {max} ዝርዝራት ክህልወኩም ይኽእል።"
+  "watchListLimit": "ክሳብ {max} ዝርዝራት ክህልወኩም ይኽእል።",
+  "portfolioBuyBelowSold": "እንተወሓደ {quantity} – እዚ ዝኣክል ድሮ ተሸይጡ ኣሎ"
 }

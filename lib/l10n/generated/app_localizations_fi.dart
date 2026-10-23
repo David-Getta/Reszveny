@@ -2858,6 +2858,11 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Vähintään $quantity – niin monta on jo myyty';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

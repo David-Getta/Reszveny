@@ -849,5 +849,6 @@
   "errImageUnsupported": "Lo mfanekiso awufundeki. Wugcine njenge-JPEG okanye i-PNG uze uzame kwakhona.",
   "errRateLimited": "Zininzi kakhulu izicelo ngexesha elifutshane. Nceda ulinde umzuzu uze uzame kwakhona.",
   "watchListNameTaken": "Sele lukhona uluhlu olunaleli gama.",
-  "watchListLimit": "Ungaba nezintlu ezingafikelela kwi-{max}."
+  "watchListLimit": "Ungaba nezintlu ezingafikelela kwi-{max}.",
+  "portfolioBuyBelowSold": "Ubuncinane {quantity} – izabelo ezingako sele zithengisiwe"
 }

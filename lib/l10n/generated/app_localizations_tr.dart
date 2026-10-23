@@ -2856,6 +2856,11 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'En az $quantity – bu kadarı zaten satıldı';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

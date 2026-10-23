@@ -2859,6 +2859,11 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Angalau $quantity – idadi hiyo imeshauzwa';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

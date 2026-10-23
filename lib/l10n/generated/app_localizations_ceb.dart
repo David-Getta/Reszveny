@@ -2869,6 +2869,11 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Labing gamay $quantity – nabaligya na ang ingon niana kadaghan';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

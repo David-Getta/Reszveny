@@ -849,5 +849,6 @@
   "errImageUnsupported": "Hindi mabasa ang larawang ito. I-save ito bilang JPEG o PNG at subukang muli.",
   "errRateLimited": "Masyadong maraming request sa maikling panahon. Maghintay muna ng isang minuto at subukang muli.",
   "watchListNameTaken": "May listahan na may ganitong pangalan.",
-  "watchListLimit": "Maaari kang magkaroon ng hanggang {max} listahan."
+  "watchListLimit": "Maaari kang magkaroon ng hanggang {max} listahan.",
+  "portfolioBuyBelowSold": "Hindi bababa sa {quantity} – naibenta na ang ganoon karami"
 }

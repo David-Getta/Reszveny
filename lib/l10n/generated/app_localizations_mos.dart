@@ -2840,6 +2840,11 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return '$quantity bɩ sẽn yɩɩd rẽ – b koosa sõor kãng pĩnda';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

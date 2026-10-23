@@ -2878,6 +2878,11 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Farafahakeliny $quantity – izany isa izany no efa namidy';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

@@ -849,5 +849,6 @@
   "errImageUnsupported": "Ba a iya karanta wannan hoto ba. Ajiye shi a matsayin JPEG ko PNG sannan ka sake gwadawa.",
   "errRateLimited": "Buƙatu sun yi yawa cikin ɗan lokaci. Da fatan a jira minti ɗaya sannan a sake gwadawa.",
   "watchListNameTaken": "Akwai jeri mai wannan suna tuni.",
-  "watchListLimit": "Za ka iya samun jeri har {max}."
+  "watchListLimit": "Za ka iya samun jeri har {max}.",
+  "portfolioBuyBelowSold": "Aƙalla {quantity} – an riga an sayar da wannan adadin"
 }

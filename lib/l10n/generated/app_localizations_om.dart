@@ -2870,6 +2870,11 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Yoo xiqqaate $quantity – hammana duraan gurguramaniiru';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

@@ -872,8 +872,12 @@ class PortfolioSummaryCard extends StatelessWidget {
                                     style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, s.gain)),
                                   ),
                                   // Az idén kapott osztalék a portfólió pénznemében (ha van).
+                                  // A bejelentett (jövőbeli) kifizetés még nem kapott osztalék.
                                   if (services.portfolio.dividends
-                                          .where((d) => d.date?.year == DateTime.now().year)
+                                          .where(
+                                            (d) =>
+                                                d.date?.year == DateTime.now().year && !d.date!.isAfter(DateTime.now()),
+                                          )
                                           .toList()
                                       case final ds when ds.isNotEmpty)
                                     _YearDividends(dividends: ds, currency: s.currency, fmt: fmt),
@@ -968,7 +972,8 @@ class _GoalBar extends StatelessWidget {
           text: (ratio, goal) => ratio >= 1
               ? l10n.portfolioGoalReached(fmt.money(goal.amount, goal.currency))
               : l10n.portfolioGoalProgress(
-                  fmt.percent(ratio * 100, decimals: 0),
+                  // Lefelé kerekítve: a még el nem ért cél ne mutasson 100%-ot.
+                  fmt.percent((ratio * 100).floorToDouble(), decimals: 0),
                   fmt.money(goal.amount, goal.currency),
                 ),
           onChanged: prefs.setPortfolioGoal,

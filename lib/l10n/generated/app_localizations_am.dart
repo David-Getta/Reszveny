@@ -2819,6 +2819,11 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'ቢያንስ $quantity – ያን ያህል አስቀድሞ ተሽጧል';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

@@ -2847,6 +2847,11 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'گهٽ ۾ گهٽ $quantity – ايترا اڳ ۾ ئي وڪرو ٿي چڪا آهن';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

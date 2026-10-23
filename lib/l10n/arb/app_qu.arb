@@ -849,5 +849,6 @@
   "errImageUnsupported": "Kay rikch'ayta mana ñawinchayta atikunchu. JPEG utaq PNG hina waqaychay, hinaspa huktawan ruway.",
   "errRateLimited": "Pisi pachapi ancha achka mañakuykuna. Ama hina kaspa, huk minutota suyay, hinaspa huktawan ruway.",
   "watchListNameTaken": "Kay sutiyuq lista kanñam.",
-  "watchListLimit": "{max} listakamallam kapusunkiman."
+  "watchListLimit": "{max} listakamallam kapusunkiman.",
+  "portfolioBuyBelowSold": "Aswan pisipas {quantity} – chhikan ñam rantikusqaña"
 }

@@ -2848,6 +2848,11 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'لږ تر لږه $quantity – دومره مخکې پلورل شوې دي';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

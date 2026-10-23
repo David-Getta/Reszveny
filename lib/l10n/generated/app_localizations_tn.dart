@@ -2878,6 +2878,11 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Bonnye $quantity – palo eo e setse e rekisitswe';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

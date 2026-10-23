@@ -2853,6 +2853,11 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Ko famɗi fof $quantity – ndee limoore yeeyaama ɓooyii';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

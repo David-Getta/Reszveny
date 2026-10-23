@@ -2867,6 +2867,11 @@ class AppLocalizationsRn extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Nibura $quantity – iyo migabane yamaze kugurishwa';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

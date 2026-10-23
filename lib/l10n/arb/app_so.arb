@@ -849,5 +849,6 @@
   "errImageUnsupported": "Sawirkan lama akhriyi karo. U kaydi JPEG ama PNG oo isku day mar kale.",
   "errRateLimited": "Codsiyo aad u badan muddo gaaban gudaheed. Fadlan sug hal daqiiqo oo isku day mar kale.",
   "watchListNameTaken": "Liis magacan leh ayaa horey u jira.",
-  "watchListLimit": "Waxaad yeelan kartaa ilaa {max} liis."
+  "watchListLimit": "Waxaad yeelan kartaa ilaa {max} liis.",
+  "portfolioBuyBelowSold": "Ugu yaraan {quantity} – intaas ayaa horay loo iibiyay"
 }

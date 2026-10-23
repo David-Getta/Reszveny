@@ -2856,6 +2856,11 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'მინიმუმ $quantity – ამდენი უკვე გაყიდულია';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

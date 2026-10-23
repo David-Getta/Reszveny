@@ -2853,6 +2853,11 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Ó kéré tán $quantity – iye bẹ́ẹ̀ ni a ti tà tẹ́lẹ̀';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

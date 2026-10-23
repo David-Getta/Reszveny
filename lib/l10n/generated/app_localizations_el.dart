@@ -2868,6 +2868,11 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Τουλάχιστον $quantity – τόσες έχουν ήδη πωληθεί';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

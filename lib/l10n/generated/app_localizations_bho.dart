@@ -2850,6 +2850,11 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'कम से कम $quantity – एतना पहिलहीं बेचा चुकल बा';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

@@ -849,5 +849,6 @@
   "errImageUnsupported": "Không thể đọc ảnh này. Hãy lưu ảnh dưới dạng JPEG hoặc PNG rồi thử lại.",
   "errRateLimited": "Quá nhiều yêu cầu trong thời gian ngắn. Vui lòng đợi một phút rồi thử lại.",
   "watchListNameTaken": "Đã có danh sách với tên này.",
-  "watchListLimit": "Bạn có thể có tối đa {max} danh sách."
+  "watchListLimit": "Bạn có thể có tối đa {max} danh sách.",
+  "portfolioBuyBelowSold": "Ít nhất {quantity} – đã bán chừng ấy cổ phiếu rồi"
 }

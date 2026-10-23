@@ -2845,6 +2845,11 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'ཉུང་མཐར་ཡང་ $quantity – ཧུར་ཁག་དེ་ཙམ་བཙོངས་ཟིན';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

@@ -2858,6 +2858,11 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Кеминде $quantity – ушунчасы буга чейин сатылган';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

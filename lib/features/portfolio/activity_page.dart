@@ -108,7 +108,8 @@ class _ActivityPageState extends State<ActivityPage> {
 
   Future<void> _delete(ActivityEntry e) async {
     final l10n = AppLocalizations.of(context);
-    final portfolio = AppServices.of(context).portfolio;
+    final services = AppServices.of(context);
+    final portfolio = services.portfolio;
     final messenger = ScaffoldMessenger.of(context);
     // A tranzakció a listában igazítva látszik: a visszavonáshoz a tárolt alakja kell.
     final (String text, VoidCallback? undo) = switch (e) {
@@ -125,13 +126,13 @@ class _ActivityPageState extends State<ActivityPage> {
       ActivityEntry(split: final s?) => (
         l10n.portfolioSplitRemoved,
         () {
-          portfolio.restoreSplit(s);
+          services.restoreSplit(s);
         },
       ),
       _ => throw StateError('üres sor'),
     };
     if (e.dividend != null) await portfolio.removeDividend(e.id);
-    if (e.split != null) await portfolio.removeSplit(e.id);
+    if (e.split != null) await services.removeSplit(e.id);
     messenger
       ..hideCurrentSnackBar()
       ..showSnackBar(
@@ -335,7 +336,12 @@ class _ActivityList extends StatelessWidget {
       ),
       // Koppintva javítható (a felaprózás csak törölhető).
       onTap: switch (e) {
-        ActivityEntry(lot: final l?) => () => showEditLotDialog(context, l),
+        // A listában a felaprózással igazított alak látszik; a javító ablak a tárolt tételt
+        // kapja (különben a felaprózás kétszer érvényesülne).
+        ActivityEntry(lot: final l?) => () {
+          final stored = AppServices.of(context).portfolio.lots.where((x) => x.id == l.id).firstOrNull;
+          if (stored != null) showEditLotDialog(context, stored);
+        },
         ActivityEntry(dividend: final d?) => () => showEditDividendDialog(context, d),
         _ => null,
       },

@@ -2863,6 +2863,11 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return '$quantity ya teti – wodzra nenema gbegbe xoxo';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

@@ -2854,6 +2854,11 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'कम से कम $quantity – इतने पहले ही बेचे जा चुके हैं';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

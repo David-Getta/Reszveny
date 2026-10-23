@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/util/formatters.dart';
 import '../../theme/app_theme.dart';
 import '../../l10n/generated/app_localizations.dart';
-import 'add_lot_dialog.dart' show parseAmount, plainNumber;
+import 'add_lot_dialog.dart' show fieldNumber, parseAmount, plainNumber;
 
 typedef Goal = ({double amount, String currency});
 
@@ -153,9 +153,13 @@ class _GoalDialog extends StatefulWidget {
 }
 
 class _GoalDialogState extends State<_GoalDialog> {
-  // Pont tizedesjellel, ezres tagolás nélkül, hogy a [parseDecimal] változatlanul
-  // visszaolvassa (a „1,500” különben 1,5 lenne), és a kis havi cél se kerekedjen.
-  late final _controller = TextEditingController(text: widget.initial == null ? '' : plainNumber(widget.initial!));
+  // Ezres tagolás nélkül, a nyelv tizedesjelével, hogy a [parseAmount] változatlanul
+  // visszaolvassa (németül a „0.125” ezres tagolás lenne), és a kis havi cél se kerekedjen.
+  late final _controller = TextEditingController(
+    text: widget.initial == null
+        ? ''
+        : fieldNumber(plainNumber(widget.initial!), Localizations.localeOf(context).toString()),
+  );
 
   @override
   void dispose() {

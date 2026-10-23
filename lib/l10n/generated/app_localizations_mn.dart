@@ -2856,6 +2856,11 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Дор хаяж $quantity – төдийг нь аль хэдийн зарсан';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

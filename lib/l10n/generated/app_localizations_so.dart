@@ -2866,6 +2866,11 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Ugu yaraan $quantity – intaas ayaa horay loo iibiyay';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

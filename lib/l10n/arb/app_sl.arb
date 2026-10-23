@@ -849,5 +849,6 @@
   "errImageUnsupported": "Te slike ni mogoče prebrati. Shranite jo kot JPEG ali PNG in poskusite znova.",
   "errRateLimited": "Preveč zahtev v kratkem času. Počakajte minuto in poskusite znova.",
   "watchListNameTaken": "Seznam s tem imenom že obstaja.",
-  "watchListLimit": "Največje število seznamov: {max}."
+  "watchListLimit": "Največje število seznamov: {max}.",
+  "portfolioBuyBelowSold": "Vsaj {quantity} – toliko jih je že prodanih"
 }

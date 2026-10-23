@@ -2817,6 +2817,11 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'እንተወሓደ $quantity – እዚ ዝኣክል ድሮ ተሸይጡ ኣሎ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

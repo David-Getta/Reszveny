@@ -2872,6 +2872,11 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Aswan pisipas $quantity – chhikan ñam rantikusqaña';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

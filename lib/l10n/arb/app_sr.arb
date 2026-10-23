@@ -849,5 +849,6 @@
   "errImageUnsupported": "Ова слика не може да се прочита. Сачувајте је као JPEG или PNG и покушајте поново.",
   "errRateLimited": "Превише захтева за кратко време. Сачекајте минут и покушајте поново.",
   "watchListNameTaken": "Листа са овим називом већ постоји.",
-  "watchListLimit": "Највећи број листа је {max}."
+  "watchListLimit": "Највећи број листа је {max}.",
+  "portfolioBuyBelowSold": "Најмање {quantity} – толико је већ продато"
 }

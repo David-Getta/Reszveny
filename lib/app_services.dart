@@ -649,6 +649,20 @@ class AppServices {
   /// A részvény 12 havi, a pozíció pénznemétől eltérő osztalékainak árfolyamát
   /// lekéri (a gyorsítótárba), hogy az elemzés osztalékadata ne a korábbi
   /// képernyőktől függjön; azonos pénznemnél nincs hálózat.
+  /// Felaprózás törlése: a részvény riasztásai is visszaállnak a régi egységre (a
+  /// felvételkor átszámoltuk őket).
+  Future<void> removeSplit(String id) async {
+    final s = portfolio.splits.where((x) => x.id == id).firstOrNull;
+    await portfolio.removeSplit(id);
+    if (s != null) await alerts.applySplit(s.symbol, from: s.to, to: s.from, date: s.date);
+  }
+
+  /// Törölt felaprózás visszavétele (visszavonás), a riasztások újbóli átszámolásával.
+  Future<void> restoreSplit(SplitRecord s) async {
+    await portfolio.restoreSplit(s);
+    await alerts.applySplit(s.symbol, from: s.from, to: s.to, date: s.date);
+  }
+
   Future<void> prefetchDividendRates(String symbol) async {
     final held = portfolio.positionOf(symbol);
     if (held == null) return;

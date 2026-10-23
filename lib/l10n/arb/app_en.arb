@@ -2516,6 +2516,8 @@
   "@watchListNameTaken": {"description": "Error under the list name field: another of the user's own watch lists already has this name."},
   "watchListLimit": "You can have up to {max} lists.",
   "@watchListLimit": {"description": "Short message when the user tries to create a new watch list but already has the maximum number. {max} is a number like 20.", "placeholders": {"max": {"type": "int"}}},
+  "portfolioBuyBelowSold": "At least {quantity} – that many have already been sold",
+  "@portfolioBuyBelowSold": {"description": "Error under the quantity field when the user corrects a past purchase to fewer shares than were already sold from it. {quantity} is the smallest allowed number of shares, already formatted (e.g. 8).", "placeholders": {"quantity": {"type": "String"}}},
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

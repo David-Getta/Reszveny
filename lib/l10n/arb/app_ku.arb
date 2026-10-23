@@ -849,5 +849,6 @@
   "errImageUnsupported": "Ev wêne nayê xwendin. Wê wek JPEG an PNG tomar bike û dîsa biceribîne.",
   "errRateLimited": "Di demeke kurt de gelek daxwaz hatin şandin. Ji kerema xwe deqeyekê bisekine û dîsa biceribîne.",
   "watchListNameTaken": "Lîsteyek bi vî navî jixwe heye.",
-  "watchListLimit": "Tu dikarî herî zêde {max} lîsteyan çêkî."
+  "watchListLimit": "Tu dikarî herî zêde {max} lîsteyan çêkî.",
+  "portfolioBuyBelowSold": "Herî kêm {quantity} – ew qas berê hatin firotin"
 }

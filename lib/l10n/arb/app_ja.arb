@@ -849,5 +849,6 @@
   "errImageUnsupported": "この画像を読み込めません。JPEGまたはPNGで保存して、もう一度お試しください。",
   "errRateLimited": "短時間にリクエストが多すぎます。1分ほど待ってから、もう一度お試しください。",
   "watchListNameTaken": "この名前のリストはすでにあります。",
-  "watchListLimit": "リストは最大{max}個まで作成できます。"
+  "watchListLimit": "リストは最大{max}個まで作成できます。",
+  "portfolioBuyBelowSold": "{quantity}以上にしてください（その数はすでに売却済みです）"
 }

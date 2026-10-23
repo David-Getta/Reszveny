@@ -134,7 +134,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                   if (removedSplit.value case final r?)
                     undoRow('split', l10n.portfolioSplitRemoved, () {
                       removedSplit.value = null;
-                      services.portfolio.restoreSplit(r);
+                      services.restoreSplit(r);
                     }),
                   if (now.hasSales)
                     Padding(
@@ -183,7 +183,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                         icon: Icon(Icons.delete_outline_rounded, size: 18, color: p.negative),
                         onPressed: () {
                           removedSplit.value = s;
-                          services.portfolio.removeSplit(s.id);
+                          services.removeSplit(s.id);
                         },
                       ),
                     ),

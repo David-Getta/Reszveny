@@ -849,5 +849,6 @@
   "errImageUnsupported": "Mbica ĩno ndĩrathomeka. Mĩiga ta JPEG kana PNG ũcooke ũgerie rĩngĩ.",
   "errRateLimited": "Mahoya maingĩ mũno ihinda inini. Etereera ndagĩka ĩmwe ũcooke ũgerie rĩngĩ.",
   "watchListNameTaken": "Orodha ĩrĩ na rĩĩtwa rĩrĩ nĩ ĩrĩ kuo.",
-  "watchListLimit": "Ũngĩkorwo na orodha nginya {max}."
+  "watchListLimit": "Ũngĩkorwo na orodha nginya {max}.",
+  "portfolioBuyBelowSold": "{quantity} kana makĩria – icio nĩciendetwo"
 }

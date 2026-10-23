@@ -2732,6 +2732,11 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return '不能少于已卖出的 $quantity';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5830,6 +5835,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String watchListLimit(int max) {
     return '最多可建立 $max 個清單。';
+  }
+
+  @override
+  String portfolioBuyBelowSold(String quantity) {
+    return '不能少於已賣出的 $quantity';
   }
 
   @override

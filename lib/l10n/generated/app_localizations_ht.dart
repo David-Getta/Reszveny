@@ -2855,6 +2855,11 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Omwen $quantity – kantite sa a deja vann';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

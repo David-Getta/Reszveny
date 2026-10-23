@@ -849,5 +849,6 @@
   "errImageUnsupported": "Hierdie prent kan nie gelees word nie. Stoor dit as JPEG of PNG en probeer weer.",
   "errRateLimited": "Te veel versoeke in ’n kort tyd. Wag asseblief ’n minuut en probeer weer.",
   "watchListNameTaken": "'n Lys met hierdie naam bestaan reeds.",
-  "watchListLimit": "Jy kan tot {max} lyste hê."
+  "watchListLimit": "Jy kan tot {max} lyste hê.",
+  "portfolioBuyBelowSold": "Ten minste {quantity} – soveel is reeds verkoop"
 }

@@ -849,5 +849,6 @@
   "errImageUnsupported": "Foto kãngã pa tõe n karem ye. Ning-a JPEG bɩ PNG la f le mak.",
   "errRateLimited": "Kosg wʋsg wakat bilf pʋgẽ. Gũ minit a yembre la f le mak.",
   "watchListNameTaken": "Liste sẽn tar yʋʋr-kãngã beeme.",
-  "watchListLimit": "Fo pa tõe n tara listɛ n yɩɩg {max} ye."
+  "watchListLimit": "Fo pa tõe n tara listɛ n yɩɩg {max} ye.",
+  "portfolioBuyBelowSold": "{quantity} bɩ sẽn yɩɩd rẽ – b koosa sõor kãng pĩnda"
 }

@@ -2847,6 +2847,11 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Ít nhất $quantity – đã bán chừng ấy cổ phiếu rồi';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

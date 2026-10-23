@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.279)
+# Változásjegyzék (0.2.130 → 0.2.280)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Portfólió-felület: egy huszonhatodik kódátnézés javításai
+
+- **0.2.280**: a „Minden tranzakció” listából javított vétel nem alkalmazza kétszer a részvényfelaprózást (eddig
+  egy változatlan mentés is tízszeresére növelte a pozíciót egy 10:1-es felaprózás után). A vétel, eladás és
+  javítás ablaka érti az ezres tagolást („1,500” angolul, „12.500” magyarul), és a nyelv tizedesjelével tölti ki a
+  mezőket; a nagyon kis árak (0,00012 USD) előtöltése sem kerekít le. Egy vétel nem javítható a belőle már eladott
+  mennyiség alá (új hibaüzenet, 120 nyelven). A felaprózás törlése és visszavonása (az importé is) a részvény
+  árfolyam-riasztásait is visszaállítja. A bejelentett, jövőbeli osztalék nem számít bele az idei kapott
+  osztalékba, az évenkénti összegbe és az adóbevalláshoz készülő CSV-be. Az osztalék kézi felvételénél a beírt
+  (birtokolt) részvény pénzneme és számlája jön, nem az összesítés pénzneme. A szektor- és országmegoszlás új
+  részvény vétele vagy importja után is frissül, és a még el nem ért cél nem mutat 100%-ot.
 
 ## Szerver: riasztások, levelek, indítás – egy huszonötödik kódátnézés javításai
 

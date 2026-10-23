@@ -849,5 +849,6 @@
   "errImageUnsupported": "Tokoki kotánga elilingi oyo te. Bomba yango lokola JPEG to PNG mpe meka lisusu.",
   "errRateLimited": "Masɛngi ebele na ntango moke. Zela miniti moko mpe meka lisusu.",
   "watchListNameTaken": "Liste moko na nkombo oyo esili kozala.",
-  "watchListLimit": "Okoki kozala na ba liste kino {max}."
+  "watchListLimit": "Okoki kozala na ba liste kino {max}.",
+  "portfolioBuyBelowSold": "{quantity} to koleka – motango yango esili kotekama"
 }

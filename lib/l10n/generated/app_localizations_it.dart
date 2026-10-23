@@ -2863,6 +2863,11 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Almeno $quantity – tante ne sono già state vendute';
+  }
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

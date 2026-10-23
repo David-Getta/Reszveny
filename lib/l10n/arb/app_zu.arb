@@ -849,5 +849,6 @@
   "errImageUnsupported": "Lesi sithombe asifundeki. Sigcine njenge-JPEG noma i-PNG bese uzama futhi.",
   "errRateLimited": "Izicelo eziningi kakhulu esikhathini esifushane. Sicela ulinde umzuzu bese uzama futhi.",
   "watchListNameTaken": "Uhlu olunaleli gama selukhona.",
-  "watchListLimit": "Ungaba nezinhlu ezingafika ku-{max}."
+  "watchListLimit": "Ungaba nezinhlu ezingafika ku-{max}.",
+  "portfolioBuyBelowSold": "Okungenani {quantity} – amasheya angaka asethengisiwe"
 }

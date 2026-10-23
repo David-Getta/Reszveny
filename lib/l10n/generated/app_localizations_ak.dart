@@ -2859,6 +2859,11 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Anyɛ yiye koraa $quantity – woatɔn saa dodow no dedaw';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

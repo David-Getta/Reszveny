@@ -849,5 +849,6 @@
   "errImageUnsupported": "Setshwantsho se ga se balege. Se boloke jaaka JPEG kgotsa PNG mme o leke gape.",
   "errRateLimited": "Dikopo di dintsi thata mo nakong e khutshwane. Tswee-tswee ema motsotso mme o leke gape.",
   "watchListNameTaken": "Lenaane le le nang le leina le le setse le le teng.",
-  "watchListLimit": "O ka nna le manaane a a sa feteng {max}."
+  "watchListLimit": "O ka nna le manaane a a sa feteng {max}.",
+  "portfolioBuyBelowSold": "Bonnye {quantity} – palo eo e setse e rekisitswe"
 }

@@ -2864,6 +2864,11 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Aƙalla $quantity – an riga an sayar da wannan adadin';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

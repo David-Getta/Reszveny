@@ -849,5 +849,6 @@
   "errImageUnsupported": "Impossible de lire cette image. Enregistrez-la au format JPEG ou PNG et réessayez.",
   "errRateLimited": "Trop de requêtes en peu de temps. Veuillez patienter une minute et réessayer.",
   "watchListNameTaken": "Une liste porte déjà ce nom.",
-  "watchListLimit": "Vous pouvez avoir jusqu’à {max} listes."
+  "watchListLimit": "Vous pouvez avoir jusqu’à {max} listes.",
+  "portfolioBuyBelowSold": "Au moins {quantity} – ce nombre a déjà été vendu"
 }

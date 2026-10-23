@@ -849,5 +849,6 @@
   "errImageUnsupported": "Nou pa ka li imaj sa a. Anrejistre l an JPEG oswa PNG epi eseye ankò.",
   "errRateLimited": "Twòp demann nan yon ti tan. Tanpri tann yon minit epi eseye ankò.",
   "watchListNameTaken": "Gen yon lis ki gen non sa a deja.",
-  "watchListLimit": "Ou ka gen jiska {max} lis."
+  "watchListLimit": "Ou ka gen jiska {max} lis.",
+  "portfolioBuyBelowSold": "Omwen {quantity} – kantite sa a deja vann"
 }

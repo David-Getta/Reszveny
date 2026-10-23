@@ -2871,6 +2871,11 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Okungenani $quantity – amasheya angaka asethengisiwe';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

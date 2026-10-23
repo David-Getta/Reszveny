@@ -2858,6 +2858,11 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Ақаллан $quantity – ин қадар аллакай фурӯхта шудааст';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

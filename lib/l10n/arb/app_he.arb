@@ -849,5 +849,6 @@
   "errImageUnsupported": "לא ניתן לקרוא את התמונה הזו. שמרו אותה כ-JPEG או כ-PNG ונסו שוב.",
   "errRateLimited": "יותר מדי בקשות בזמן קצר. המתינו דקה ונסו שוב.",
   "watchListNameTaken": "כבר קיימת רשימה בשם הזה.",
-  "watchListLimit": "אפשר ליצור עד {max} רשימות."
+  "watchListLimit": "אפשר ליצור עד {max} רשימות.",
+  "portfolioBuyBelowSold": "לפחות {quantity} – כמות זו כבר נמכרה"
 }

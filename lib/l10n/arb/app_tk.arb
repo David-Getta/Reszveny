@@ -849,5 +849,6 @@
   "errImageUnsupported": "Bu suraty okap bolmaýar. Ony JPEG ýa-da PNG görnüşinde ýatda saklaň we gaýtadan synanyşyň.",
   "errRateLimited": "Gysga wagtda gaty köp haýyş iberildi. Bir minut garaşyň we gaýtadan synanyşyň.",
   "watchListNameTaken": "Bu atly sanaw eýýäm bar.",
-  "watchListLimit": "Iň köp {max} sanawyňyz bolup biler."
+  "watchListLimit": "Iň köp {max} sanawyňyz bolup biler.",
+  "portfolioBuyBelowSold": "Iň az {quantity} – şonça eýýäm satyldy"
 }

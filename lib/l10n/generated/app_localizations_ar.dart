@@ -2928,6 +2928,11 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return '$quantity على الأقل – تم بيع هذا العدد بالفعل';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

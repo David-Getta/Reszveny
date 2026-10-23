@@ -2927,6 +2927,11 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Alespoň $quantity – tolik už bylo prodáno';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

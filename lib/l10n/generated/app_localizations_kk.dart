@@ -2855,6 +2855,11 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Кемінде $quantity – соншасы әлдеқашан сатылған';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

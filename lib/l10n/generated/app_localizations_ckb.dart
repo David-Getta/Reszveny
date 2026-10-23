@@ -2859,6 +2859,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'لانیکەم $quantity – ئەوەندە پێشتر فرۆشراون';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

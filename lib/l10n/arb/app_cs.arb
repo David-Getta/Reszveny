@@ -849,5 +849,6 @@
   "errImageUnsupported": "Tento obrázek nelze přečíst. Uložte ho jako JPEG nebo PNG a zkuste to znovu.",
   "errRateLimited": "Příliš mnoho požadavků v krátkém čase. Počkejte prosím minutu a zkuste to znovu.",
   "watchListNameTaken": "Seznam s tímto názvem už existuje.",
-  "watchListLimit": "Můžete mít nejvýše {max} seznamů."
+  "watchListLimit": "Můžete mít nejvýše {max} seznamů.",
+  "portfolioBuyBelowSold": "Alespoň {quantity} – tolik už bylo prodáno"
 }

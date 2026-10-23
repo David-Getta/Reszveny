@@ -2872,6 +2872,11 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return '$quantity to koleka – motango yango esili kotekama';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

@@ -2855,6 +2855,11 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'অন্ততঃ $quantity – ইমানবোৰ ইতিমধ্যে বিক্ৰী কৰা হৈছে';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

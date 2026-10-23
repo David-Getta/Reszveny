@@ -2834,6 +2834,11 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'យ៉ាងហោចណាស់ $quantity – ចំនួននេះត្រូវបានលក់រួចហើយ';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

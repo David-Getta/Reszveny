@@ -95,10 +95,22 @@ class _AllocationCardState extends State<AllocationCard> {
   AllocationBy _by = AllocationBy.positions;
   Future<Map<String, ({String? sector, String? country})>>? _profiles;
 
-  /// A szektor és az ország a cégprofilokból (egyszer töltjük be, a gyorsítótárból jön).
+  /// Melyik részvényekhez töltöttük be a profilokat: új részvény (vétel, import,
+  /// számlaváltás) esetén újra kell, különben a szektora „n/a” maradna.
+  Set<String> _profilesFor = const {};
+
+  @override
+  void didUpdateWidget(covariant AllocationCard oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    final symbols = {for (final r in widget.rows) r.position.symbol};
+    if (_profiles != null && !_profilesFor.containsAll(symbols)) _profiles = _loadProfiles();
+  }
+
+  /// A szektor és az ország a cégprofilokból (a gyorsítótárból jön).
   Future<Map<String, ({String? sector, String? country})>> _loadProfiles() async {
     final market = AppServices.of(context).marketData;
     final symbols = {for (final r in widget.rows) r.position.symbol};
+    _profilesFor = symbols;
     final entries = await Future.wait([
       for (final s in symbols)
         market

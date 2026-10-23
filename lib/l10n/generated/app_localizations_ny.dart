@@ -2868,6 +2868,11 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Osachepera $quantity – masheya amenewo agulitsidwa kale';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

@@ -2860,6 +2860,11 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Kamida $quantity – shuncha allaqachon sotilgan';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

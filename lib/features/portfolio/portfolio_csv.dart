@@ -55,13 +55,18 @@ String portfolioCsv(
 
 /// A kapott osztalékok CSV-ben (az adóbevalláshoz): dátum, ticker, összeg,
 /// pénznem, időrendben.
-String dividendsCsv(List<DividendRecord> dividends) {
+String dividendsCsv(List<DividendRecord> dividends, {DateTime? now}) {
   String n(double v) {
     final t = v.toStringAsFixed(4).replaceFirst(RegExp(r'\.?0+$'), '');
     return t == '-0' ? '0' : t;
   }
 
-  final rows = [...dividends]..sort((a, b) => (a.date ?? DateTime(9999)).compareTo(b.date ?? DateTime(9999)));
+  // Csak a már kifizetett (a bejelentett, jövőbeli kifizetés még nem jövedelem).
+  final today = now ?? DateTime.now();
+  final rows = [
+    for (final d in dividends)
+      if (d.date == null || !d.date!.isAfter(today)) d,
+  ]..sort((a, b) => (a.date ?? DateTime(9999)).compareTo(b.date ?? DateTime(9999)));
   // A számla oszlopa csak akkor, ha van számlás osztalék (pl. a TBSZ osztaléka másként adózik).
   final withAccount = rows.any((d) => d.account != null);
   final b = StringBuffer('date,symbol,amount,currency${withAccount ? ',account' : ''}\n');

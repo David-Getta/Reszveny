@@ -2859,6 +2859,11 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Paling ora $quantity – samono wis didol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

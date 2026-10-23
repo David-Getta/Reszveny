@@ -2852,6 +2852,11 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'ଅତିକମରେ $quantity – ଏତିକି ପୂର୍ବରୁ ବିକ୍ରି ହୋଇସାରିଛି';
+  }
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

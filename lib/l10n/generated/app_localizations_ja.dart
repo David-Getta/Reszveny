@@ -2767,6 +2767,11 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return '$quantity以上にしてください（その数はすでに売却済みです）';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

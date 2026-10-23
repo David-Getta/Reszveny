@@ -849,5 +849,6 @@
   "errImageUnsupported": "Beto lendi ve kutanga kifwani kiaki ko. Bumba yo bonso JPEG to PNG, bosi meka diaka.",
   "errRateLimited": "Tulombele mbala mingi na ntangu fioti. Vingila minuti mosi, bosi meka diaka.",
   "watchListNameTaken": "Lisiti mosi ya kele ti zina yai kele dezia.",
-  "watchListLimit": "Nge lenda vanda ti ba lisiti tii {max}."
+  "watchListLimit": "Nge lenda vanda ti ba lisiti tii {max}.",
+  "portfolioBuyBelowSold": "{quantity} to kuluta – ntalu yina me tekama dezia"
 }

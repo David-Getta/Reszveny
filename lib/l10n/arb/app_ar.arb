@@ -849,5 +849,6 @@
   "errImageUnsupported": "تعذّرت قراءة هذه الصورة. احفظها بتنسيق JPEG أو PNG وحاول مرة أخرى.",
   "errRateLimited": "طلبات كثيرة جداً خلال وقت قصير. يرجى الانتظار دقيقة ثم المحاولة مرة أخرى.",
   "watchListNameTaken": "توجد قائمة بهذا الاسم بالفعل.",
-  "watchListLimit": "يمكنك إنشاء ما يصل إلى {max} قائمة."
+  "watchListLimit": "يمكنك إنشاء ما يصل إلى {max} قائمة.",
+  "portfolioBuyBelowSold": "{quantity} على الأقل – تم بيع هذا العدد بالفعل"
 }

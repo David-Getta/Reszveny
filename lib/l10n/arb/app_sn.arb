@@ -849,5 +849,6 @@
   "errImageUnsupported": "Mufananidzo uyu haugone kuverengwa. Uchengete se JPEG kana PNG wobva waedza zvakare.",
   "errRateLimited": "Zvikumbiro zvawandisa munguva pfupi. Ndapota mira miniti imwe wobva waedza zvakare.",
   "watchListNameTaken": "Rondedzero rine zita iri ratovepo.",
-  "watchListLimit": "Unogona kuva nemarondedzero anosvika {max}."
+  "watchListLimit": "Unogona kuva nemarondedzero anosvika {max}.",
+  "portfolioBuyBelowSold": "Kanenge {quantity} – masheya akadaro akatotengeswa"
 }

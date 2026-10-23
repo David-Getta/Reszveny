@@ -2874,6 +2874,11 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Waakiri $quantity – omuwendo ogwo gwatundiddwa dda';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

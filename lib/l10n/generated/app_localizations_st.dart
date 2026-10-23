@@ -2876,6 +2876,11 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Bonyane $quantity – palo eo e se e rekisitswe';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

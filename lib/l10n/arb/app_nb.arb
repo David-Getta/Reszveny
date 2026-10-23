@@ -849,5 +849,6 @@
   "errImageUnsupported": "Dette bildet kan ikke leses. Lagre det som JPEG eller PNG og prøv igjen.",
   "errRateLimited": "For mange forespørsler på kort tid. Vent et minutt og prøv igjen.",
   "watchListNameTaken": "Det finnes allerede en liste med dette navnet.",
-  "watchListLimit": "Du kan ha opptil {max} lister."
+  "watchListLimit": "Du kan ha opptil {max} lister.",
+  "portfolioBuyBelowSold": "Minst {quantity} – så mange er allerede solgt"
 }

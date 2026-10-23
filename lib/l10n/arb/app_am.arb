@@ -849,5 +849,6 @@
   "errImageUnsupported": "ይህ ምስል ሊነበብ አልቻለም። እንደ JPEG ወይም PNG ያስቀምጡትና እንደገና ይሞክሩ።",
   "errRateLimited": "በአጭር ጊዜ ውስጥ በጣም ብዙ ጥያቄዎች ተልከዋል። እባክዎ አንድ ደቂቃ ይጠብቁና እንደገና ይሞክሩ።",
   "watchListNameTaken": "ይህ ስም ያለው ዝርዝር አስቀድሞ አለ።",
-  "watchListLimit": "እስከ {max} ዝርዝሮች ሊኖርዎት ይችላል።"
+  "watchListLimit": "እስከ {max} ዝርዝሮች ሊኖርዎት ይችላል።",
+  "portfolioBuyBelowSold": "ቢያንስ {quantity} – ያን ያህል አስቀድሞ ተሽጧል"
 }

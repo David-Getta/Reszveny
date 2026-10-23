@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
@@ -11,9 +13,18 @@ import 'portfolio_store.dart' show PortfolioLot, largestKey;
 import 'portfolio_valuation.dart' show PortfolioSnapshot, weightChange;
 
 /// Szám a beviteli mezőbe: pont tizedesjellel, ezres tagolás nélkül, amit a
-/// [parseDecimal] változatlanul visszaolvas.
-String plainNumber(double v) =>
-    v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(v < 1 ? 4 : 2).replaceAll(RegExp(r'0+$'), '');
+/// [parseDecimal] változatlanul visszaolvas. Egy alatt legalább négy értékes jeggyel
+/// (a 0,00012 dolláros ár ne legyen 0,0001, a 0,00004 ne legyen „0.”).
+String plainNumber(double v) {
+  if (v == v.roundToDouble()) return v.toStringAsFixed(0);
+  final decimals = v.abs() < 1 ? math.max(4, (-math.log(v.abs()) / math.ln10).ceil() + 3).clamp(4, 12) : 2;
+  return v.toStringAsFixed(decimals).replaceAll(RegExp(r'0+$'), '').replaceAll(RegExp(r'\.$'), '');
+}
+
+/// A mezőbe írt szám a nyelv tizedesjelével (vesszős nyelven vesszővel): a
+/// [parseAmount] így ugyanazt olvassa vissza (németül a „12.345” ezres tagolás lenne).
+String fieldNumber(String plain, String locale) =>
+    Fmt(locale).decimalSeparator == ',' ? plain.replaceFirst('.', ',') : plain;
 
 /// Tárolt szám a beviteli mezőbe pontosan, kerekítés nélkül (javításkor és a
 /// „Mind” gombnál: a 0,12345678 tört részvény ne változzon mentéskor).
@@ -127,7 +138,6 @@ class _AddLotDialog extends StatefulWidget {
 
 class _AddLotDialogState extends State<_AddLotDialog> {
   final _quantity = TextEditingController();
-  late final TextEditingController _price;
   // Javításkor a tárolt nap marad (a dátum nélküli tétel is dátum nélküli, amíg
   // nem választanak napot – különben az eladás elé kerülhetne).
   late DateTime? _date = widget.editing == null ? DateTime.now() : widget.editing!.date;
@@ -174,19 +184,28 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   /// Ennél többet nem lehet eladni (a választott számlán birtokolt darabszám).
   double? get _sellMax => widget.holdings == null ? null : (widget.holdings![_sellFrom] ?? 0);
 
-  @override
-  void initState() {
-    super.initState();
-    _price = TextEditingController(
-      text: switch ((widget.editing, widget.currentPrice)) {
-        (final e?, _) => exactNumber(e.price),
-        (null, final p?) => plainNumber(p),
-        _ => '',
-      },
-    );
+  final _price = TextEditingController();
+  bool _prefilled = false;
+
+  /// Az app nyelve (a számok írásmódjához).
+  String get _locale => Localizations.localeOf(context).toString();
+
+  /// A mezőbe írt szám a nyelv írásmódjában, ezres tagolással is („1,500”, „12.500”).
+  double? _number(String text) => parseAmount(text, _locale);
+
+  /// Az előkitöltés a nyelv tizedesjelével (ehhez kell a környezet, ezért nem az initState-ben).
+  void _prefill() {
+    if (_prefilled) return;
+    _prefilled = true;
+    String field(String plain) => fieldNumber(plain, _locale);
+    _price.text = switch ((widget.editing, widget.currentPrice)) {
+      (final e?, _) => field(exactNumber(e.price)),
+      (null, final p?) => field(plainNumber(p)),
+      _ => '',
+    };
     if (widget.editing case final e?) {
-      _quantity.text = exactNumber(e.quantity);
-      if (e.fee > 0) _fee.text = exactNumber(e.fee);
+      _quantity.text = field(exactNumber(e.quantity));
+      if (e.fee > 0) _fee.text = field(exactNumber(e.fee));
     }
     // Az előnézet minden beírásra frissül (a „Mind” gomb kitöltésére is).
     for (final c in [_quantity, _price, _fee]) {
@@ -204,6 +223,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+    _prefill();
     if (_portfolioLoading) return;
     _portfolioLoading = true;
     final services = AppServices.of(context);
@@ -226,8 +246,8 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   Widget? _preview(AppLocalizations l10n, Fmt fmt, AppPalette p, ThemeData theme) {
     // Javításnál a régi tétel még a tárolóban van: az előnézet kétszer számolná.
     if (widget.editing != null) return null;
-    final q = parseDecimal(_quantity.text), price = parseDecimal(_price.text);
-    final fee = _fee.text.trim().isEmpty ? 0.0 : parseDecimal(_fee.text);
+    final q = _number(_quantity.text), price = _number(_price.text);
+    final fee = _fee.text.trim().isEmpty ? 0.0 : _number(_fee.text);
     if (q == null || q <= 0 || price == null || price <= 0 || fee == null || fee < 0) return null;
     if (_sellMax case final max? when q > max + 1e-9) return null;
     final store = AppServices.of(context).portfolio;
@@ -327,18 +347,34 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     return held + (portfolio.canonicalAccount(e.account) == account ? e.quantity : 0);
   }
 
+  /// Javított vételnél legalább annyi, amennyit a számláról már eladtak (különben az
+  /// eladások egy része fedezet nélkül maradna, és kiesne a realizált eredményből).
+  double? _editedBuyMin() {
+    final e = widget.editing;
+    if (e == null || e.sell) return null;
+    final portfolio = AppServices.of(context).portfolio;
+    final held = portfolio.heldByAccount(e.symbol)[portfolio.canonicalAccount(e.account)] ?? 0;
+    final min = e.quantity - held;
+    return min > 1e-9 ? min : null;
+  }
+
   Future<void> _submit() async {
     final l10n = AppLocalizations.of(context);
-    final q = parseDecimal(_quantity.text);
-    final p = parseDecimal(_price.text);
+    final q = _number(_quantity.text);
+    final p = _number(_price.text);
     // Üres díjmező: nincs díj.
-    final fee = _fee.text.trim().isEmpty ? 0.0 : parseDecimal(_fee.text);
+    final fee = _fee.text.trim().isEmpty ? 0.0 : _number(_fee.text);
     final max = _sellMax ?? _editedSellMax();
+    final min = _editedBuyMin();
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     setState(() {
       _quantityError = q == null || q <= 0
           ? l10n.portfolioInvalidNumber
-          : (max != null && q > max + 1e-9 ? l10n.portfolioSellTooMany(fmt.quantity(max)) : null);
+          : (max != null && q > max + 1e-9)
+          ? l10n.portfolioSellTooMany(fmt.quantity(max))
+          : (min != null && q < min - 1e-9)
+          ? l10n.portfolioBuyBelowSold(fmt.quantity(min))
+          : null;
       _priceError = p == null || p <= 0 ? l10n.portfolioInvalidNumber : null;
       _feeError = fee == null || fee < 0 ? l10n.portfolioInvalidNumber : null;
     });
@@ -448,7 +484,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                     ? null
                     : InkWell(
                         key: const ValueKey('lot-sell-all'),
-                        onTap: () => _quantity.text = exactNumber(_sellMax!),
+                        onTap: () => _quantity.text = fieldNumber(exactNumber(_sellMax!), _locale),
                         child: Text(l10n.portfolioSellAll, style: TextStyle(color: p.accent)),
                       ),
               ),

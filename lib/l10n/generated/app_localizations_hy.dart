@@ -2866,6 +2866,11 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Առնվազն $quantity – այդքան արդեն վաճառված է';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

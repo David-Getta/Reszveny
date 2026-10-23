@@ -849,5 +849,6 @@
   "errImageUnsupported": "Ekifaananyi kino tekisobola kusomebwa. Kitereke nga JPEG oba PNG oddemu ogezeeko.",
   "errRateLimited": "Okusaba kungi nnyo mu kaseera katono. Lindako eddakiika emu oddemu ogezeeko.",
   "watchListNameTaken": "Waliwo dda olukalala olulina erinnya lino.",
-  "watchListLimit": "Osobola okuba n'enkalala okutuuka ku {max}."
+  "watchListLimit": "Osobola okuba n'enkalala okutuuka ku {max}.",
+  "portfolioBuyBelowSold": "Waakiri {quantity} – omuwendo ogwo gwatundiddwa dda"
 }

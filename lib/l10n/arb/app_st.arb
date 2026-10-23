@@ -849,5 +849,6 @@
   "errImageUnsupported": "Setshwantsho sena se ke ke sa balwa. Se boloke jwalo ka JPEG kapa PNG mme o leke hape.",
   "errRateLimited": "Dikopo di ngata haholo ka nako e kgutshwane. Ka kopo ema motsotso mme o leke hape.",
   "watchListNameTaken": "Lenane le nang le lebitso lena le se le ntse le le teng.",
-  "watchListLimit": "O ka ba le manane a sa feteng {max}."
+  "watchListLimit": "O ka ba le manane a sa feteng {max}.",
+  "portfolioBuyBelowSold": "Bonyane {quantity} – palo eo e se e rekisitswe"
 }

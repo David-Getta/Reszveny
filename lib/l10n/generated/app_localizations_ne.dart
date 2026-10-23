@@ -2854,6 +2854,11 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'कम्तीमा $quantity – त्यति पहिले नै बेचिइसकेका छन्';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

@@ -849,5 +849,6 @@
   "errImageUnsupported": "Mënuñu a jàng nataal bii. Denc ko ni JPEG walla PNG te jéemaatal.",
   "errRateLimited": "Laaj yi bari nañu lool ci diir bu gàtt. Xaaral benn minit te jéemaatal.",
   "watchListNameTaken": "Benn limm bu am tur bii am na ba pare.",
-  "watchListLimit": "Mën nga am ba ci {max} limm."
+  "watchListLimit": "Mën nga am ba ci {max} limm.",
+  "portfolioBuyBelowSold": "Lu néew-néew {quantity} – lim boobu jaay nañu ko ba noppi"
 }

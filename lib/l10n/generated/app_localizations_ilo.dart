@@ -2879,6 +2879,11 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Di kumurang iti $quantity – kasta kaadu ti nailakon';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

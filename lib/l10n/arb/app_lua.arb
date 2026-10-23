@@ -849,5 +849,6 @@
   "errImageUnsupported": "Katuena mua kubala tshimfuanyi etshi to. Tshilama bu JPEG anyi PNG, pashishe teta kabidi.",
   "errRateLimited": "Malomba a bungi mu tshikondo tshikese. Indila minite umue, pashishe teta kabidi.",
   "watchListNameTaken": "Kudi kale liste ne dîna edi.",
-  "watchListLimit": "Udi mua kuenza liste too ne {max}."
+  "watchListLimit": "Udi mua kuenza liste too ne {max}.",
+  "portfolioBuyBelowSold": "{quantity} anyi kupita – bungi abu mbusumbishibue kale"
 }

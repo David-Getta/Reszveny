@@ -849,5 +849,6 @@
   "errImageUnsupported": "Šio vaizdo nepavyksta nuskaityti. Išsaugokite jį JPEG arba PNG formatu ir bandykite dar kartą.",
   "errRateLimited": "Per daug užklausų per trumpą laiką. Palaukite minutę ir bandykite dar kartą.",
   "watchListNameTaken": "Sąrašas tokiu pavadinimu jau yra.",
-  "watchListLimit": "Galite turėti ne daugiau kaip {max} sąrašų."
+  "watchListLimit": "Galite turėti ne daugiau kaip {max} sąrašų.",
+  "portfolioBuyBelowSold": "Ne mažiau kaip {quantity} – tiek jau parduota"
 }

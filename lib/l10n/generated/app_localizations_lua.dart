@@ -2869,6 +2869,11 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return '$quantity anyi kupita – bungi abu mbusumbishibue kale';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

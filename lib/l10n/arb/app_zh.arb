@@ -849,5 +849,6 @@
   "errImageUnsupported": "无法读取这张图片。请将其保存为 JPEG 或 PNG 格式后重试。",
   "errRateLimited": "短时间内请求过多。请稍等一分钟后重试。",
   "watchListNameTaken": "已存在同名列表。",
-  "watchListLimit": "最多可创建 {max} 个列表。"
+  "watchListLimit": "最多可创建 {max} 个列表。",
+  "portfolioBuyBelowSold": "不能少于已卖出的 {quantity}"
 }

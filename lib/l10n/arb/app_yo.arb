@@ -849,5 +849,6 @@
   "errImageUnsupported": "A kò lè ka àwòrán yìí. Fi pamọ́ gẹ́gẹ́ bí JPEG tàbí PNG kí o sì tún gbìyànjú.",
   "errRateLimited": "Ìbéèrè ti pọ̀ jù láàárín àkókò kúkúrú. Jọ̀ọ́ dúró fún ìṣẹ́jú kan kí o sì tún gbìyànjú.",
   "watchListNameTaken": "Àkójọ tí ó ní orúkọ yìí ti wà tẹ́lẹ̀.",
-  "watchListLimit": "O lè ní àkójọ tó tó {max}."
+  "watchListLimit": "O lè ní àkójọ tó tó {max}.",
+  "portfolioBuyBelowSold": "Ó kéré tán {quantity} – iye bẹ́ẹ̀ ni a ti tà tẹ́lẹ̀"
 }

@@ -2880,6 +2880,11 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Ku nga ri ehansi ka $quantity – nhlayo leyo yi xavisiwile khale';
+  }
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

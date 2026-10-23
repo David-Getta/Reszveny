@@ -849,5 +849,6 @@
   "errImageUnsupported": "Deze afbeelding kan niet worden gelezen. Sla deze op als JPEG of PNG en probeer het opnieuw.",
   "errRateLimited": "Te veel verzoeken in korte tijd. Wacht een minuut en probeer het opnieuw.",
   "watchListNameTaken": "Er bestaat al een lijst met deze naam.",
-  "watchListLimit": "Je kunt maximaal {max} lijsten hebben."
+  "watchListLimit": "Je kunt maximaal {max} lijsten hebben.",
+  "portfolioBuyBelowSold": "Minstens {quantity} – zoveel zijn er al verkocht"
 }

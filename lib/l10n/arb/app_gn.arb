@@ -849,5 +849,6 @@
   "errImageUnsupported": "Ko taʼãnga ndaikatúi oñemoñeʼẽ. Eñongatu JPEG térã PNG ramo ha ehaʼã jey.",
   "errRateLimited": "Hetaiterei mbaʼejerure sapyʼaitépe. Ehaʼarõmi peteĩ aravoʼi ha ehaʼã jey.",
   "watchListNameTaken": "Oĩma peteĩ lista ko térandi.",
-  "watchListLimit": "Ikatu reguereko {max} lista peve."
+  "watchListLimit": "Ikatu reguereko {max} lista peve.",
+  "portfolioBuyBelowSold": "Saʼivévo {quantity} – oñemuma upe papy"
 }

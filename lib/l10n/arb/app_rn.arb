@@ -849,5 +849,6 @@
   "errImageUnsupported": "Iyi foto ntishobora gusomwa. Yibike nka JPEG canke PNG maze usubire ugerageze.",
   "errRateLimited": "Hari ivyasabwe vyinshi cane mu kanya gato. Rindira umunota umwe maze usubire ugerageze.",
   "watchListNameTaken": "Hari urutonde rufise iri zina.",
-  "watchListLimit": "Ushobora kugira intonde zigera kuri {max}."
+  "watchListLimit": "Ushobora kugira intonde zigera kuri {max}.",
+  "portfolioBuyBelowSold": "Nibura {quantity} – iyo migabane yamaze kugurishwa"
 }

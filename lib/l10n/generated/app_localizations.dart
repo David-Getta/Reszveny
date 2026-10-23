@@ -4836,6 +4836,12 @@ abstract class AppLocalizations {
   /// **'You can have up to {max} lists.'**
   String watchListLimit(int max);
 
+  /// Error under the quantity field when the user corrects a past purchase to fewer shares than were already sold from it. {quantity} is the smallest allowed number of shares, already formatted (e.g. 8).
+  ///
+  /// In en, this message translates to:
+  /// **'At least {quantity} – that many have already been sold'**
+  String portfolioBuyBelowSold(String quantity);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

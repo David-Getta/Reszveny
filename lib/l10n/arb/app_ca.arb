@@ -849,5 +849,6 @@
   "errImageUnsupported": "Aquesta imatge no es pot llegir. Desa-la com a JPEG o PNG i torna-ho a provar.",
   "errRateLimited": "Massa sol·licituds en poc temps. Espera un minut i torna-ho a provar.",
   "watchListNameTaken": "Ja existeix una llista amb aquest nom.",
-  "watchListLimit": "Pots tenir fins a {max} llistes."
+  "watchListLimit": "Pots tenir fins a {max} llistes.",
+  "portfolioBuyBelowSold": "Almenys {quantity} – ja se n’han venut tantes"
 }

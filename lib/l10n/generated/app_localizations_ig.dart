@@ -2849,6 +2849,11 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Opekata mpe $quantity – e reela ọnụ ọgụgụ ahụ';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

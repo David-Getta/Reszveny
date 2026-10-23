@@ -2900,6 +2900,11 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Cel puțin $quantity – atâtea au fost deja vândute';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

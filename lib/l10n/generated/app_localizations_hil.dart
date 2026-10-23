@@ -2875,6 +2875,11 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Labing diutay $quantity – nabaligya na ang amo sina kadamo';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

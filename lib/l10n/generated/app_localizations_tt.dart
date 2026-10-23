@@ -2853,6 +2853,11 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Ким дигәндә $quantity – шулкадәр инде сатылды';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

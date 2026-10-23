@@ -2869,6 +2869,11 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return '$quantity to kuluta – ntalu yina me tekama dezia';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

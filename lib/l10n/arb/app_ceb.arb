@@ -849,5 +849,6 @@
   "errImageUnsupported": "Dili mabasa kini nga hulagway. I-save kini isip JPEG o PNG ug sulayi pag-usab.",
   "errRateLimited": "Daghan kaayong request sa mubong panahon. Palihug paghulat og usa ka minuto ug sulayi pag-usab.",
   "watchListNameTaken": "Aduna nay lista nga kini ang ngalan.",
-  "watchListLimit": "Mahimo kang adunay hangtod {max} ka lista."
+  "watchListLimit": "Mahimo kang adunay hangtod {max} ka lista.",
+  "portfolioBuyBelowSold": "Labing gamay {quantity} – nabaligya na ang ingon niana kadaghan"
 }

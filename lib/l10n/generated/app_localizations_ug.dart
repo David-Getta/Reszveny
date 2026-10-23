@@ -2859,6 +2859,11 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'ئاز دېگەندە $quantity – شۇنچىلىك ئاللىقاچان سېتىلدى';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

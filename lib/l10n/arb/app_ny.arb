@@ -849,5 +849,6 @@
   "errImageUnsupported": "Chithunzichi sichikuwerengeka. Chisungeni ngati JPEG kapena PNG ndipo yesaninso.",
   "errRateLimited": "Zopempha zambiri kwambiri munthawi yochepa. Chonde dikirani mphindi imodzi ndipo yesaninso.",
   "watchListNameTaken": "Mndandanda wa dzina limeneli ulipo kale.",
-  "watchListLimit": "Mutha kukhala ndi mindandanda yofikira {max}."
+  "watchListLimit": "Mutha kukhala ndi mindandanda yofikira {max}.",
+  "portfolioBuyBelowSold": "Osachepera {quantity} – masheya amenewo agulitsidwa kale"
 }

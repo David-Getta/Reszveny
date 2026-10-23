@@ -849,5 +849,6 @@
   "errImageUnsupported": "Natal ngal waawaa janngeede. Danndu ngal no JPEG walla PNG refti eto goɗngol.",
   "errRateLimited": "Ɗaɓɓitanɗe keewii e sahaa seeɗa. Tiiɗno muñ hojom gooto refti eto goɗngol.",
   "watchListNameTaken": "Doggol jogiingol innde nde ena woodi gila.",
-  "watchListLimit": "Aɗa waawi jogaade doggi haa {max}."
+  "watchListLimit": "Aɗa waawi jogaade doggi haa {max}.",
+  "portfolioBuyBelowSold": "Ko famɗi fof {quantity} – ndee limoore yeeyaama ɓooyii"
 }

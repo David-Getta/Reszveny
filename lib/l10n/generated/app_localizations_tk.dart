@@ -2858,6 +2858,11 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Iň az $quantity – şonça eýýäm satyldy';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

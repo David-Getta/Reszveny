@@ -2877,6 +2877,11 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Bonyane $quantity – palo yeo e šetše e rekišitšwe';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

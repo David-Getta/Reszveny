@@ -2854,6 +2854,11 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'ਘੱਟੋ-ਘੱਟ $quantity – ਇੰਨੇ ਪਹਿਲਾਂ ਹੀ ਵੇਚੇ ਜਾ ਚੁੱਕੇ ਹਨ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

@@ -2869,6 +2869,11 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'குறைந்தது $quantity – அத்தனை ஏற்கெனவே விற்கப்பட்டுவிட்டன';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

@@ -2856,6 +2856,11 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return 'Mindst $quantity – så mange er allerede solgt';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

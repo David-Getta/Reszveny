@@ -2779,6 +2779,11 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String portfolioBuyBelowSold(String quantity) {
+    return '최소 $quantity주 – 이미 그만큼 매도했어요';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override
