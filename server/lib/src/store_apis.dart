@@ -86,8 +86,15 @@ class AppleStoreApi {
     return VerifiedPurchase(
       info['transactionId'].toString(),
       linkKey: (info['originalTransactionId'] ?? info['transactionId']).toString(),
+      expiresAt: expiresOf(info),
     );
   }
+
+  /// Az előfizetés időszakának vége a tranzakcióból (ha van).
+  static DateTime? expiresOf(Map<String, dynamic> t) => switch (t['expiresDate']) {
+    final num ms => DateTime.fromMillisecondsSinceEpoch(ms.toInt(), isUtc: true),
+    _ => null,
+  };
 
   /// Érvényes-e a tranzakció erre a termékre (app, termék, visszatérítés, lejárat).
   bool accepts(Map<String, dynamic> t, String productId) {
@@ -174,14 +181,17 @@ class GooglePlayApi {
       if (!live.contains(j['subscriptionState'])) return null;
       final now = _clock().toUtc();
       final items = (j['lineItems'] as List? ?? const []).cast<Map>();
-      final current = items.any((i) {
-        final until = DateTime.tryParse('${i['expiryTime']}');
-        return i['productId'] == productId && until != null && until.isAfter(now);
-      });
-      if (!current) return null;
+      DateTime? until;
+      for (final i in items) {
+        final t = DateTime.tryParse('${i['expiryTime']}');
+        if (i['productId'] == productId && t != null && t.isAfter(now) && (until == null || t.isAfter(until))) {
+          until = t;
+        }
+      }
+      if (until == null) return null;
       // Megújításonként új rendelés-azonosító (GPA.…..0, …..1), így minden időszak egyszer írható jóvá.
       final order = j['latestOrderId'] as String? ?? 'gp-$purchaseToken';
-      return VerifiedPurchase(order, linkKey: purchaseToken);
+      return VerifiedPurchase(order, linkKey: purchaseToken, expiresAt: until);
     }
     if (j['purchaseState'] != 0) return null;
     return VerifiedPurchase(j['orderId'] as String? ?? 'gp-$purchaseToken', linkKey: purchaseToken);

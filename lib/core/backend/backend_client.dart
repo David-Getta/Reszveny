@@ -288,7 +288,8 @@ class BackendClient {
   }
 
   /// `POST /v1/referral/redeem` → egy barát kódjának beváltása; a válasz a friss
-  /// jogosultság. Hibák: `unknown_code`, `own_code`, `already_redeemed`.
+  /// jogosultság. Hibák: `unknown_code`, `own_code`, `already_redeemed`,
+  /// `sign_in_required`, `code_full`.
   Future<EntitlementState> redeemReferral(String code) async {
     final res = await _authorized(
       (h) => _inner.post(

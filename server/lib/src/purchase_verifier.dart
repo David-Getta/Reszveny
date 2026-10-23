@@ -15,10 +15,13 @@ abstract interface class PurchaseVerifier {
 /// vásárlást a későbbi bolti értesítésekhez kötő kulcs (App Store: eredeti
 /// tranzakció; Google Play: vásárlási token).
 class VerifiedPurchase {
-  const VerifiedPurchase(this.transactionId, {this.linkKey});
+  const VerifiedPurchase(this.transactionId, {this.linkKey, this.expiresAt});
 
   final String transactionId;
   final String? linkKey;
+
+  /// Előfizetésnél a bolt szerinti időszak vége (meddig van kifizetve).
+  final DateTime? expiresAt;
 }
 
 /// Fejlesztéshez: elfogad, a tranzakció-azonosító a bizonylat hash-e.

@@ -301,4 +301,169 @@ void main() {
     }
     expect((await call('GET', '/v1/me')).body['error'], 'invite_required');
   });
+
+  test('a subscription ends after its paid period (plus a short grace) unless renewed', () async {
+    final (t, uid) = await anon();
+    expect(await verify(t, 'whatstock.sub.normal', 'receipt-sub'), 200);
+    final paid = store.entitlement(uid).paidThrough!;
+    expect(paid, now.add(const Duration(days: 30)));
+    store.save(store.entitlement(uid)..used = 8);
+    // A kifizetett időszak után, a türelmi időben: nincs új keret (a régi marad).
+    now = paid.add(const Duration(days: 1));
+    expect((store.entitlement(uid).tier, store.entitlement(uid).used), ('normal', 8));
+    now = paid.add(Store.paidGrace);
+    expect(store.entitlement(uid).tier, isNull);
+    expect((await call('POST', '/v1/analyze', token: t, body: analyzeBody())).status, 402);
+    // Megújítás (új tranzakció): újra él, új kerettel.
+    expect(await verify(t, 'whatstock.sub.normal', 'receipt-renewal'), 200);
+    expect((store.entitlement(uid).tier, store.entitlement(uid).used), ('normal', 0));
+  });
+
+  test('a store subscription period follows the store: the quota resets with the renewal, not on day 30', () async {
+    final until = now.add(const Duration(days: 31));
+    api = Api(store: store, anthropicApiKey: 'k', finnhubApiKey: 'k', verifier: _FixedVerifier(until), mailer: mailer);
+    final (t, uid) = await anon();
+    expect(await verify(t, 'whatstock.sub.pro', 'receipt'), 200);
+    final e = store.entitlement(uid);
+    expect((e.periodEnd, e.paidThrough), (until, until));
+    // Éves előfizetés: havonta gördülő keret, a kifizetett idő egy év.
+    final year = now.add(const Duration(days: 365));
+    api = Api(store: store, anthropicApiKey: 'k', finnhubApiKey: 'k', verifier: _FixedVerifier(year), mailer: mailer);
+    expect(await verify(t, 'whatstock.sub.pro', 'receipt-year'), 200);
+    final y = store.entitlement(uid);
+    expect((y.periodEnd, y.paidThrough), (now.add(const Duration(days: 30)), year));
+    now = now.add(const Duration(days: 45));
+    expect(store.entitlement(uid).tier, 'pro', reason: 'az éves előfizetés közben tovább gördül');
+  });
+
+  Future<int> webhook(Map<String, dynamic> event) async {
+    final payload = jsonEncode(event);
+    return (await call(
+      'POST',
+      '/v1/stripe/webhook',
+      raw: payload,
+      headers: {'stripe-signature': stripe.signForTest(payload, now)},
+    )).status;
+  }
+
+  Map<String, dynamic> event(String id, String type, Map<String, dynamic> object) => {
+    'id': id,
+    'type': type,
+    'data': {'object': object},
+  };
+
+  test('Stripe: no second subscription; unpaid checkouts are not credited; refunds and disputes take back', () async {
+    final (t, _) = await anon();
+    final uid = (await login('pay@x.io', token: t))['user_id'] as String;
+    // Késleltetett fizetés: a „completed” még nem fizetett, csak az „async_payment_succeeded”.
+    final session = {
+      'id': 'cs_1',
+      'client_reference_id': uid,
+      'customer': 'cus_1',
+      'subscription': 'sub_1',
+      'metadata': {'product_id': 'whatstock.sub.pro'},
+    };
+    await webhook(event('e1', 'checkout.session.completed', {...session, 'payment_status': 'unpaid'}));
+    expect(store.entitlement(uid).tier, 'trial');
+    await webhook(event('e2', 'checkout.session.async_payment_succeeded', {...session, 'payment_status': 'paid'}));
+    expect(store.entitlement(uid).tier, 'pro');
+    // Második előfizetés élő mellé: nem.
+    final second = await call('POST', '/v1/billing/checkout', token: t, body: {'product_id': 'whatstock.sub.max'});
+    expect((second.status, second.body['error']), (409, 'already_subscribed'));
+
+    // Csomag, majd visszatérítés: a csomag visszavonva (egyszer).
+    await webhook(
+      event('e3', 'checkout.session.completed', {
+        'id': 'cs_2',
+        'client_reference_id': uid,
+        'customer': 'cus_1',
+        'payment_intent': 'pi_pack',
+        'payment_status': 'paid',
+        'metadata': {'product_id': 'whatstock.pack.20'},
+      }),
+    );
+    expect(store.entitlement(uid).extra, 20);
+    await webhook(event('e4', 'charge.refunded', {'id': 'ch_1', 'payment_intent': 'pi_pack'}));
+    await webhook(event('e5', 'charge.dispute.created', {'id': 'dp_1', 'payment_intent': 'pi_pack'}));
+    expect(store.entitlement(uid).extra, 0);
+    // Az előfizetés első számlájának visszatérítése: a csomag megszűnik.
+    await webhook(
+      event('e6', 'invoice.paid', {
+        'id': 'in_1',
+        'customer': 'cus_1',
+        'billing_reason': 'subscription_create',
+        'payment_intent': 'pi_sub',
+        'lines': {
+          'data': [
+            {
+              'price': {'id': 'price_pro'},
+              'period': {'end': now.add(const Duration(days: 31)).millisecondsSinceEpoch ~/ 1000},
+            },
+          ],
+        },
+      }),
+    );
+    expect(store.entitlement(uid).paidThrough, now.add(const Duration(days: 31)));
+    await webhook(event('e7', 'charge.refunded', {'id': 'ch_2', 'payment_intent': 'pi_sub'}));
+    expect(store.entitlement(uid).tier, isNull);
+  });
+
+  test('a store subscription of a deleted account can be restored on a new account', () async {
+    api = Api(
+      store: store,
+      anthropicApiKey: 'k',
+      finnhubApiKey: 'k',
+      verifier: _FixedVerifier(now.add(const Duration(days: 30))),
+      mailer: mailer,
+    );
+    final (t, _) = await anon();
+    expect(await verify(t, 'whatstock.sub.pro', 'r1'), 200);
+    expect((await call('DELETE', '/v1/account', token: t)).status, 200);
+    final (t2, uid2) = await anon();
+    expect(await verify(t2, 'whatstock.sub.pro', 'r1'), 200);
+    expect(store.entitlement(uid2).tier, 'pro');
+    expect(store.userForPurchaseLink('app_store', 'link-r1'), uid2);
+  });
+
+  test('login codes cannot be guessed at length: a daily cap on codes and on wrong attempts', () async {
+    var sent = 0;
+    for (var i = 0; i < 12; i++) {
+      now = now.add(const Duration(minutes: 13));
+      final r = await call('POST', '/v1/auth/email/start', body: {'email': 'target@x.io'});
+      if (r.status == 200) sent++;
+    }
+    expect(sent, 10);
+    // Rossz kódok: legfeljebb 15 próbálkozás naponta (az utána beírt helyes kód sem megy át).
+    now = now.add(const Duration(hours: 2));
+    for (var round = 0; round < 4; round++) {
+      await call('POST', '/v1/auth/email/start', body: {'email': 'victim@x.io'});
+      for (var i = 0; i < 5; i++) {
+        await call('POST', '/v1/auth/email/verify', body: {'email': 'victim@x.io', 'code': '000000'});
+      }
+      now = now.add(const Duration(minutes: 13));
+    }
+    await call('POST', '/v1/auth/email/start', body: {'email': 'victim@x.io'});
+    final code = mailer.sent['victim@x.io']!;
+    final r = await call('POST', '/v1/auth/email/verify', body: {'email': 'victim@x.io', 'code': code});
+    expect(r.status, 401);
+    // Másnap újra lehet.
+    now = now.add(const Duration(days: 1, hours: 1));
+    await call('POST', '/v1/auth/email/start', body: {'email': 'victim@x.io'});
+    final next = mailer.sent['victim@x.io']!;
+    expect((await call('POST', '/v1/auth/email/verify', body: {'email': 'victim@x.io', 'code': next})).status, 200);
+  });
+}
+
+/// Ellenőrző, amely mindent elfogad, a megadott lejárattal.
+class _FixedVerifier implements PurchaseVerifier {
+  _FixedVerifier(this.until);
+
+  final DateTime until;
+
+  @override
+  Future<VerifiedPurchase?> verify({
+    required String platform,
+    required String productId,
+    required String verificationData,
+  }) async => VerifiedPurchase('fixed-$verificationData', linkKey: 'link-$verificationData', expiresAt: until);
 }

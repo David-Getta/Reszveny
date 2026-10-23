@@ -16,6 +16,7 @@ class Entitlement {
     this.used = 0,
     this.extra = 0,
     this.trialStartedAt,
+    this.paidThrough,
   });
 
   final String userId;
@@ -25,6 +26,11 @@ class Entitlement {
   int used;
   int extra;
   DateTime? trialStartedAt;
+
+  /// Meddig van kifizetve az előfizetés (a bolt vagy a Stripe szerint); utána –
+  /// rövid türelmi idő után, ha nem jött megújítás – a csomag megszűnik.
+  /// `null`: régi sor, ismeretlen (az időszakok tovább gördülnek).
+  DateTime? paidThrough;
 
   /// A kliens `EntitlementState.fromJson` formátuma.
   Map<String, dynamic> toJson() => {
@@ -150,6 +156,8 @@ class Store {
     }
     _db.execute('CREATE UNIQUE INDEX IF NOT EXISTS users_email ON users(email)');
     // A bolti értesítésekhez: melyik vásárlás (eredeti tranzakció / token) kié.
+    final ecols = _db.select('PRAGMA table_info(entitlements)').map((r) => r['name'] as String).toSet();
+    if (!ecols.contains('paid_through')) _db.execute('ALTER TABLE entitlements ADD COLUMN paid_through TEXT');
     final pcols = _db.select('PRAGMA table_info(purchases)').map((r) => r['name'] as String).toSet();
     if (!pcols.contains('link_key')) _db.execute('ALTER TABLE purchases ADD COLUMN link_key TEXT');
     _db.execute('CREATE INDEX IF NOT EXISTS purchases_link ON purchases(platform, link_key)');
@@ -230,15 +238,17 @@ class Store {
   void setEmail(String userId, String email) =>
       _db.execute('UPDATE users SET email = ? WHERE id = ?', [normalizeEmail(email), userId]);
 
-  /// Hány kód ment ki erre a címre az elmúlt órában (visszaélés ellen).
-  int recentCodeCount(String email) {
-    final since = clock().subtract(const Duration(hours: 1)).toUtc().toIso8601String();
+  /// Hány kód ment ki erre a címre az elmúlt [within] időben (alapból egy óra; visszaélés ellen).
+  int recentCodeCount(String email, {Duration within = const Duration(hours: 1)}) {
+    final since = clock().subtract(within).toUtc().toIso8601String();
     return _db.select('SELECT COUNT(*) AS n FROM login_codes WHERE email = ? AND created_at > ?', [
           normalizeEmail(email),
           since,
         ]).first['n']
         as int;
   }
+
+  static const maxDailyLoginFailures = 15;
 
   /// Új 6 jegyű belépőkód (10 percig érvényes); a korábbiak érvénytelenek lesznek.
   String createLoginCode(String email) {
@@ -266,6 +276,16 @@ class Store {
     if (rows.isEmpty) return false;
     final r = rows.first;
     if ((r['attempts'] as int) >= 5) return false;
+    // Naponta legfeljebb [maxDailyLoginFailures] hibás próbálkozás címenként (a
+    // kódok között is): a 6 jegyű kód így nem találgatható ki ésszerű időn belül.
+    final day = clock().subtract(const Duration(days: 1)).toUtc().toIso8601String();
+    final failed =
+        _db.select('SELECT COALESCE(SUM(attempts), 0) AS n FROM login_codes WHERE email = ? AND created_at > ?', [
+              e,
+              day,
+            ]).first['n']
+            as int;
+    if (failed >= maxDailyLoginFailures) return false;
     if (r['code_hash'] == hashToken('$e:${code.trim()}')) {
       _db.execute('DELETE FROM login_codes WHERE email = ?', [e]);
       return true;
@@ -292,7 +312,7 @@ class Store {
       _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referrals WHERE referee_id = ? OR referrer_id = ?', [userId, userId]);
       if (email != null) _db.execute('DELETE FROM login_codes WHERE email = ?', [email]);
-      _db.execute("UPDATE purchases SET user_id = 'deleted' WHERE user_id = ?", [userId]);
+      _db.execute('UPDATE purchases SET user_id = ? WHERE user_id = ?', [deletedUser, userId]);
       _db.execute('DELETE FROM users WHERE id = ?', [userId]);
       _db.execute('COMMIT');
     } catch (_) {
@@ -337,6 +357,9 @@ class Store {
     _db.execute('UPDATE users SET token_hash = ? WHERE id = ?', ['revoked:$from', from]);
   }
 
+  void clearStripeSubscription(String userId) =>
+      _db.execute('UPDATE users SET stripe_subscription_id = NULL WHERE id = ?', [userId]);
+
   String? userIdForStripeCustomer(String customerId) {
     final r = _db.select('SELECT id FROM users WHERE stripe_customer_id = ?', [customerId]);
     return r.isEmpty ? null : r.first['id'] as String;
@@ -354,15 +377,30 @@ class Store {
       used: r['used'] as int,
       extra: r['extra'] as int,
       trialStartedAt: _date(r['trial_started_at']),
+      paidThrough: _date(r['paid_through']),
     );
     return _rolled(e);
   }
 
-  /// Fizetős időszak görgetése: lejárt időszak után új, nullázott felhasználással.
+  /// Ennyivel a kifizetett időszak vége után szűnik meg a csomag, ha nem jött
+  /// megújítás (a bolt fizetési újrapróbálkozása, késő értesítés).
+  static const paidGrace = Duration(days: 3);
+
+  /// Fizetős időszak görgetése: lejárt időszak után új, nullázott felhasználással
+  /// – amíg az előfizetés ki van fizetve; utána a csomag megszűnik.
   Entitlement _rolled(Entitlement e) {
     if (e.tier == null || e.tier == 'trial' || e.periodEnd == null) return e;
     final now = clock();
+    if (e.paidThrough case final paid? when !now.isBefore(paid.add(paidGrace))) {
+      e
+        ..tier = null
+        ..periodEnd = paid;
+      save(e);
+      return e;
+    }
     if (now.isBefore(e.periodEnd!)) return e;
+    // A kifizetett időszak végéig ér a keret: új keret csak a megújítással jön.
+    if (e.paidThrough case final paid? when !e.periodEnd!.isBefore(paid)) return e;
     var start = e.periodEnd!;
     var end = start.add(const Duration(days: PlanSpec.periodDays));
     while (!now.isBefore(end)) {
@@ -386,11 +424,11 @@ class Store {
 
   void save(Entitlement e) {
     _db.execute(
-      '''INSERT INTO entitlements (user_id, tier, period_start, period_end, used, extra, trial_started_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?)
+      '''INSERT INTO entitlements (user_id, tier, period_start, period_end, used, extra, trial_started_at, paid_through)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?)
          ON CONFLICT(user_id) DO UPDATE SET tier=excluded.tier, period_start=excluded.period_start,
            period_end=excluded.period_end, used=excluded.used, extra=excluded.extra,
-           trial_started_at=excluded.trial_started_at''',
+           trial_started_at=excluded.trial_started_at, paid_through=excluded.paid_through''',
       [
         e.userId,
         e.tier,
@@ -399,6 +437,7 @@ class Store {
         e.used,
         e.extra,
         e.trialStartedAt?.toUtc().toIso8601String(),
+        e.paidThrough?.toUtc().toIso8601String(),
       ],
     );
   }
@@ -434,6 +473,15 @@ class Store {
     );
     return rows.isEmpty ? null : rows.first['product_id'] as String;
   }
+
+  /// A törölt fiókok vásárlásainak gazdája (a bolti azonosítók megmaradnak).
+  static const deletedUser = 'deleted';
+
+  /// Egy törölt fiókhoz kötött bolti vásárlás átkötése egy új fiókhoz.
+  void relinkPurchases({required String platform, required String linkKey, required String to}) => _db.execute(
+    'UPDATE purchases SET user_id = ? WHERE platform = ? AND link_key = ? AND user_id = ?',
+    [to, platform, linkKey, deletedUser],
+  );
 
   /// Kié a bolti vásárlás (az első, ezzel a kulccsal rögzített vásárlás gazdája).
   String? userForPurchaseLink(String platform, String linkKey) {

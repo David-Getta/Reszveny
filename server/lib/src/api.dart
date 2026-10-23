@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 
+import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
 import 'package:markdown/markdown.dart' as md;
 import 'package:shelf/shelf.dart';
@@ -400,7 +401,9 @@ class Api {
   Future<Response> _emailStart(Request r) async {
     final email = Store.normalizeEmail((await _body(r))['email'] as String? ?? '');
     if (!_emailRe.hasMatch(email)) return _error(400, 'invalid_email');
-    if (store.recentCodeCount(email) >= 5) return _error(429, 'too_many_codes');
+    if (store.recentCodeCount(email) >= 5 || store.recentCodeCount(email, within: const Duration(days: 1)) >= 10) {
+      return _error(429, 'too_many_codes');
+    }
     final code = store.createLoginCode(email);
     try {
       await mailer.sendLoginCode(email, code);
@@ -919,6 +922,10 @@ class Api {
     if (referrer == null) return _error(404, 'unknown_code');
     if (referrer == uid) return _error(400, 'own_code');
     if (store.hasRedeemedReferral(uid)) return _error(409, 'already_redeemed');
+    // Eldobható névtelen fiókokkal ne lehessen bónuszt gyűjteni: e-mailes fiók
+    // kell, és egy kód legfeljebb [referralMax]-szor váltható be.
+    if (store.emailOf(uid) == null) return _error(403, 'sign_in_required');
+    if (store.referralStats(referrer).$1 >= referralMax) return _error(409, 'code_full');
     store.addReferral(refereeId: uid, referrerId: referrer);
     final e = store.entitlement(uid);
     store.save(e..extra += referralBonus);
@@ -1006,6 +1013,13 @@ class Api {
     final productId = (await _body(r))['product_id'] as String? ?? '';
     final isSub = PlanSpec.byProductId(productId) != null;
     if (!isSub && !PlanSpec.packs.containsKey(productId)) return _error(400, 'unknown_product');
+    // Élő Stripe-előfizetés mellé nem indul második (a váltás a portálon megy):
+    // különben a régi lemondása az újat is megszüntetné, a fióktörlés pedig csak
+    // az egyiket mondaná le.
+    if (isSub && store.stripeOf(uid).subscriptionId != null) {
+      final e = store.entitlement(uid);
+      if (e.tier != null && e.tier != 'trial') return _error(409, 'already_subscribed');
+    }
     try {
       final url = await s.createCheckoutSession(
         userId: uid,
@@ -1050,8 +1064,19 @@ class Api {
     final obj = ((event['data'] as Map?)?['object'] as Map?)?.cast<String, dynamic>() ?? const {};
     final eventId = event['id'] as String? ?? '';
 
+    // A tárolt (élő) előfizetés eseménye-e (egy régi, lemondott előfizetésé nem
+    // írhatja felül az újat).
+    bool current(String uid) {
+      final stored = store.stripeOf(uid).subscriptionId;
+      return stored != null && stored == obj['id'];
+    }
+
     switch (type) {
-      case 'checkout.session.completed':
+      case 'checkout.session.completed' || 'checkout.session.async_payment_succeeded':
+        // Késleltetett fizetési módnál a pénz később érkezik: addig nincs jóváírás.
+        if (obj['payment_status'] case final String status when status != 'paid' && status != 'no_payment_required') {
+          break;
+        }
         final uid = obj['client_reference_id'] as String? ?? (obj['metadata'] as Map?)?['user_id'] as String?;
         final productId = (obj['metadata'] as Map?)?['product_id'] as String?;
         if (uid == null || productId == null) break;
@@ -1061,30 +1086,47 @@ class Api {
           productId: productId,
           platform: 'stripe',
           transactionId: obj['id'] as String? ?? eventId,
+          // Csomagnál a fizetés azonosítója köti a visszatérítéshez.
+          linkKey: obj['payment_intent'] as String?,
         )) {
           quota.apply(store.entitlement(uid), productId);
         }
       case 'invoice.paid':
-        // A megújulás új időszakot nyit; az első számlát a checkout már elintézte.
-        if (obj['billing_reason'] != 'subscription_cycle') break;
         final uid = store.userIdForStripeCustomer(obj['customer'] as String? ?? '');
         final productId = _productFromInvoice(s, obj);
         if (uid == null || productId == null) break;
+        final until = _invoicePeriodEnd(obj);
+        if (obj['billing_reason'] != 'subscription_cycle') {
+          // Az első számlát a checkout már jóváírta: csak a visszatérítéshez kötjük,
+          // és a kifizetett időszak végét pontosítjuk.
+          store.recordPurchase(
+            userId: uid,
+            productId: productId,
+            platform: 'stripe',
+            transactionId: 'invoice:${obj['id'] ?? eventId}',
+            linkKey: obj['payment_intent'] as String?,
+          );
+          final e = store.entitlement(uid);
+          if (until != null && e.tier == PlanSpec.byProductId(productId)?.tier) store.save(e..paidThrough = until);
+          break;
+        }
+        // A megújulás új időszakot nyit.
         if (store.recordPurchase(
           userId: uid,
           productId: productId,
           platform: 'stripe',
           transactionId: obj['id'] as String? ?? eventId,
+          linkKey: obj['payment_intent'] as String?,
         )) {
-          quota.apply(store.entitlement(uid), productId);
+          quota.apply(store.entitlement(uid), productId, until: until);
         }
       case 'customer.subscription.updated':
         final uid = store.userIdForStripeCustomer(obj['customer'] as String? ?? '');
+        if (uid == null || !current(uid)) break;
         final items = ((obj['items'] as Map?)?['data'] as List?) ?? const [];
         final priceId = items.isEmpty ? null : ((items.first as Map)['price'] as Map?)?['id'] as String?;
         final plan = priceId == null ? null : PlanSpec.byProductId(s.productForPrice(priceId) ?? '');
-        if (uid == null ||
-            plan == null ||
+        if (plan == null ||
             !store.recordPurchase(
               userId: uid,
               productId: plan.productId,
@@ -1093,16 +1135,43 @@ class Api {
             )) {
           break;
         }
-        // Csomagváltás azonnal érvényes, a felhasznált keret megmarad.
         final e = store.entitlement(uid);
-        if (e.tier != plan.tier) store.save(e..tier = plan.tier);
+        if (const {'canceled', 'unpaid', 'incomplete_expired'}.contains(obj['status'])) {
+          // Megszűnt (vagy nem fizetett): a csomag véget ér.
+          if (e.tier != null && e.tier != 'trial') store.save(e..tier = null);
+        } else if (e.tier != null && e.tier != 'trial' && e.tier != plan.tier) {
+          // Csomagváltás azonnal érvényes, a felhasznált keret megmarad.
+          store.save(e..tier = plan.tier);
+        }
       case 'customer.subscription.deleted':
         final uid = store.userIdForStripeCustomer(obj['customer'] as String? ?? '');
-        if (uid == null) break;
+        if (uid == null || !current(uid)) break;
         final e = store.entitlement(uid);
         if (e.tier != null && e.tier != 'trial') store.save(e..tier = null);
+        store.clearStripeSubscription(uid);
+      case 'charge.refunded' || 'charge.dispute.created':
+        // Visszatérítés vagy vitatott terhelés: a hozzá tartozó csomag / előfizetés visszavonva (egyszer).
+        final pi = obj['payment_intent'] as String?;
+        if (pi == null) break;
+        final uid = store.userForPurchaseLink('stripe', pi);
+        final productId = store.productForPurchaseLink('stripe', pi);
+        if (uid == null || productId == null) break;
+        if (store.recordPurchase(userId: uid, productId: productId, platform: 'stripe', transactionId: 'revoked:$pi')) {
+          quota.revoke(store.entitlement(uid), productId);
+        }
     }
     return _json({'received': true});
+  }
+
+  /// A számla előfizetési időszakának vége (a sor `period.end`-je, Unix-másodperc).
+  static DateTime? _invoicePeriodEnd(Map<String, dynamic> invoice) {
+    final lines = ((invoice['lines'] as Map?)?['data'] as List?) ?? const [];
+    for (final l in lines.whereType<Map>()) {
+      if ((l['period'] as Map?)?['end'] case final num end) {
+        return DateTime.fromMillisecondsSinceEpoch(end.toInt() * 1000, isUtc: true);
+      }
+    }
+    return null;
   }
 
   static String? _productFromInvoice(StripeClient s, Map<String, dynamic> invoice) {
@@ -1135,15 +1204,24 @@ class Api {
       return _error(502, 'store_unavailable');
     }
     if (txn == null) return _error(402, 'invalid_purchase');
+    // Egy törölt fiók még fizetett előfizetése az új fiókhoz köthető (különben a
+    // megújítások a törölt fiókhoz futnának, és a visszaállítás sem menne).
+    var relinked = false;
+    if (txn.linkKey case final link? when store.userForPurchaseLink(platform, link) == Store.deletedUser) {
+      store.relinkPurchases(platform: platform, linkKey: link, to: uid);
+      relinked = true;
+    }
     final e = store.entitlement(uid);
-    final fresh = store.recordPurchase(
-      userId: uid,
-      productId: productId,
-      platform: platform,
-      transactionId: txn.transactionId,
-      linkKey: txn.linkKey,
-    );
-    if (fresh) quota.apply(e, productId);
+    final fresh =
+        store.recordPurchase(
+          userId: uid,
+          productId: productId,
+          platform: platform,
+          transactionId: txn.transactionId,
+          linkKey: txn.linkKey,
+        ) ||
+        relinked;
+    if (fresh) quota.apply(e, productId, until: txn.expiresAt);
     return _json({'entitlements': store.entitlement(uid).toJson(), 'applied': fresh});
   }
 
@@ -1161,7 +1239,7 @@ class Api {
     String? revokedTransaction,
   }) {
     final uid = store.userForPurchaseLink(platform, linkKey);
-    if (uid == null) return;
+    if (uid == null || uid == Store.deletedUser) return;
     final e = store.entitlement(uid);
     if (revokedTransaction != null) {
       final first = store.recordPurchase(
@@ -1181,7 +1259,7 @@ class Api {
       transactionId: renewed.transactionId,
       linkKey: renewed.linkKey,
     );
-    if (fresh) quota.apply(e, productId);
+    if (fresh) quota.apply(e, productId, until: renewed.expiresAt);
   }
 
   /// App Store Server Notifications V2 (`{signedPayload}`). Az értesítés tartalmát
@@ -1206,7 +1284,11 @@ class Api {
           platform: 'app_store',
           linkKey: link,
           productId: productId,
-          renewed: VerifiedPurchase('${info['transactionId']}', linkKey: link),
+          renewed: VerifiedPurchase(
+            '${info['transactionId']}',
+            linkKey: link,
+            expiresAt: AppleStoreApi.expiresOf(info),
+          ),
         );
       }
       return _json({'ok': true});
@@ -1498,7 +1580,12 @@ class Api {
     if (!quota.hasAccess(e)) return _error(402, 'no_plan');
     // Megosztott válasz (pl. egy cég negyedéves összefoglalója adott nyelven):
     // ha már valaki lekérte, mindenki ugyanazt kapja, kérés és keret nélkül.
-    final cacheKey = sharedCacheKey(raw['shared_cache']);
+    // A kulcs a kérés tartalmát is tartalmazza: egy saját kérdéssel nem írható
+    // felül, amit mások ugyanazon a kulcson kapnak.
+    final clientKey = sharedCacheKey(raw['shared_cache']);
+    final cacheKey = clientKey == null
+        ? null
+        : '$clientKey#${sha256.convert(utf8.encode(jsonEncode([req.system, req.messages, askResearchTools(raw['tools'])])))}';
     final cached = cacheKey == null ? null : store.sharedAnswer(cacheKey, sharedAnswerKeepFor);
     if (cached != null) {
       telemetry.bump('shared_cache_hit');

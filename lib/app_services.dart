@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
@@ -228,6 +229,8 @@ class AppServices {
             ),
       onPurchased: () => this.telemetry.track('purchase_done'),
     );
+    // Egy korábban (hálózati hiba miatt) ellenőrizetlenül maradt vásárlás újra.
+    if (b != null) unawaited(billingController.retryPending());
   }
 
   /// Backend-módban a szerver szerinti jogosultság átvétele (indításkor,

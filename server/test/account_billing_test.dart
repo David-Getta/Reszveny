@@ -202,7 +202,9 @@ void main() {
       'type': 'customer.subscription.updated',
       'data': {
         'object': {
+          'id': 'sub_1',
           'customer': 'cus_1',
+          'status': 'active',
           'items': {
             'data': [
               {
@@ -219,11 +221,41 @@ void main() {
     expect(portal['body']['url'], 'https://billing.stripe.com/p/1');
     expect(stripeCalls['/v1/billing_portal/sessions']!['customer'], 'cus_1');
 
+    // Egy régi (másik) előfizetés megszűnése nem érinti az élőt.
+    await webhook({
+      'id': 'evt_old',
+      'type': 'customer.subscription.deleted',
+      'data': {
+        'object': {'id': 'sub_old', 'customer': 'cus_1'},
+      },
+    });
+    expect(store.entitlement(uid).tier, 'max');
+
     await webhook({
       'id': 'evt_4',
       'type': 'customer.subscription.deleted',
       'data': {
-        'object': {'customer': 'cus_1'},
+        'object': {'id': 'sub_1', 'customer': 'cus_1'},
+      },
+    });
+    expect(store.entitlement(uid).tier, isNull);
+    // Egy késve (újra) kézbesített „updated” a megszűnés után nem éleszti újra.
+    await webhook({
+      'id': 'evt_5',
+      'type': 'customer.subscription.updated',
+      'data': {
+        'object': {
+          'id': 'sub_1',
+          'customer': 'cus_1',
+          'status': 'active',
+          'items': {
+            'data': [
+              {
+                'price': {'id': 'price_max'},
+              },
+            ],
+          },
+        },
       },
     });
     expect(store.entitlement(uid).tier, isNull);

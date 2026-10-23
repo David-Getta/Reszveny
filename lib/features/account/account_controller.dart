@@ -38,7 +38,7 @@ class AccountController extends ChangeNotifier {
   Future<void> startLogin(String email) => backend.startEmailLogin(email);
 
   /// Egy barát ajánlókódjának beváltása: az extra elemzések azonnal látszanak.
-  /// Hibánál [BackendException] (`unknown_code`, `own_code`, `already_redeemed`).
+  /// Hibánál [BackendException] (`unknown_code`, `own_code`, `already_redeemed`, `sign_in_required`, `code_full`).
   Future<void> redeemReferral(String code) async {
     await entitlements.replace(await backend.redeemReferral(code));
   }

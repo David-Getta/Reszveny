@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.249)
+# Változásjegyzék (0.2.130 → 0.2.250)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -256,6 +256,16 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   IP-korlátja nem kerülhető meg hamis továbbítási fejléccel; a tesztelői kód újra beváltva nem indul újra; a bolti
   értesítések átjutnak a meghívó-kapun; bejelentkezéskor a névtelen fiók fizetős csomagja és vásárlásai átköltöznek
   (nem másolódnak), a régi token érvénytelen.
+- **0.2.250**: az előfizetés a kifizetett időszak végén (+3 nap türelmi idő) megszűnik, ha nem jött megújítás – a bolt
+  (App Store `expiresDate`, Google Play `expiryTime`) és a Stripe (számla-időszak) szerint; a havi keret a bolt
+  időszakához igazodik (nem a 30. napon, majd a megújításkor újra), évesnél havonta gördül. Stripe: élő előfizetés mellé
+  nem indul második, a megszűnés és a módosítás csak a tárolt előfizetésre és státusz szerint hat (egy késve érkező
+  esemény sem éleszt újra), a késleltetett fizetés csak beérkezéskor ír jóvá, a visszatérítés és a vitatott terhelés
+  visszavonja a csomagot. Ajánlói kód: csak e-mailes fiókkal váltható be, és legfeljebb a felső határig. A törölt fiók
+  még fizetett bolti előfizetése új fiókhoz köthető; a megosztott válasz kulcsa a kérés tartalmából is számolódik
+  (saját kérdéssel nem írható felül). Az app a szerveren még nem ellenőrzött vásárlást megjegyzi, és indításkor újra
+  elküldi (hálózati hiba után sem vész el a megvett csomag). A belépőkód napi korlátja: címenként legfeljebb 10 kód
+  és 15 hibás próbálkozás naponta (a 6 jegyű kód így nem találgatható ki).
 
 ## Bolti „Újdonságok” (rövid)
 

@@ -64,7 +64,8 @@ class Quota {
       if (e.tier == plan.tier) {
         e
           ..tier = null
-          ..periodEnd = store.clock();
+          ..periodEnd = store.clock()
+          ..paidThrough = store.clock();
         store.save(e);
       }
       return;
@@ -77,14 +78,20 @@ class Quota {
   }
 
   /// Vásárlás jóváírása: előfizetés → új időszak; csomag → extra elemzések.
-  bool apply(Entitlement e, String productId) {
+  /// Előfizetésnél [until] a bolt / Stripe szerinti kifizetett időszak vége
+  /// (ismeretlenül egy hónap); havi előfizetésnél a keret-időszak is ehhez
+  /// igazodik, évesnél havonta gördül tovább.
+  bool apply(Entitlement e, String productId, {DateTime? until}) {
     final plan = PlanSpec.byProductId(productId);
     if (plan != null) {
       final now = store.clock();
+      final month = now.add(const Duration(days: PlanSpec.periodDays));
+      final paid = until != null && until.isAfter(now) ? until : month;
       e
         ..tier = plan.tier
         ..periodStart = now
-        ..periodEnd = now.add(const Duration(days: PlanSpec.periodDays))
+        ..periodEnd = paid.difference(now) <= const Duration(days: 35) ? paid : month
+        ..paidThrough = paid
         ..used = 0;
       store.save(e);
       return true;

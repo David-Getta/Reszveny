@@ -52,7 +52,14 @@ void main() {
     return (status: res.statusCode, body: (jsonDecode(await res.readAsString()) as Map).cast<String, dynamic>());
   }
 
-  Future<String> newUser() async => (await call('POST', '/v1/auth/anonymous')).body['token'] as String;
+  var users = 0;
+
+  /// Új, e-mailes fiók (a beváltáshoz e-mail kell); [anonymous] esetén névtelen.
+  Future<String> newUser({bool anonymous = false}) async {
+    final body = (await call('POST', '/v1/auth/anonymous')).body;
+    if (!anonymous) store.setEmail(body['user_id'] as String, 'user${++users}@example.com');
+    return body['token'] as String;
+  }
 
   Future<int> extra(String token) async =>
       (await call('GET', '/v1/me', token: token)).body['entitlements']['extra'] as int;
@@ -94,17 +101,28 @@ void main() {
   test('the referrer is rewarded after the friend’s first analysis, once, and only up to the limit', () async {
     final alice = await newUser();
     final code = (await call('GET', '/v1/referral', token: alice)).body['code'];
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 2; i++) {
       final friend = await newUser();
       await call('POST', '/v1/referral/redeem', token: friend, body: {'code': code});
       await analyze(friend);
       await analyze(friend);
     }
-    // Felső határ: 2 meghívott után jár jutalom (2 × 5).
+    // Felső határ: 2 meghívott után jár jutalom (2 × 5), és a kód sem váltható be többször.
     expect(await extra(alice), 10);
+    final third = await call('POST', '/v1/referral/redeem', token: await newUser(), body: {'code': code});
+    expect((third.status, third.body['error']), (409, 'code_full'));
     final stats = (await call('GET', '/v1/referral', token: alice)).body;
-    expect(stats['invited'], 3);
-    expect(stats['rewarded'], 3);
+    expect(stats['invited'], 2);
+    expect(stats['rewarded'], 2);
+  });
+
+  test('throwaway anonymous accounts cannot collect the friend bonus', () async {
+    final alice = await newUser();
+    final code = (await call('GET', '/v1/referral', token: alice)).body['code'];
+    final anon = await newUser(anonymous: true);
+    final r = await call('POST', '/v1/referral/redeem', token: anon, body: {'code': code});
+    expect((r.status, r.body['error']), (403, 'sign_in_required'));
+    expect(await extra(anon), 0);
   });
 
   test('a code can be redeemed once per account, never your own, and must exist', () async {

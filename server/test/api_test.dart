@@ -355,7 +355,7 @@ void main() {
     expect(Api.finnhubQuoteFromTwelveData({'status': 'error'}), isNull);
   });
 
-  test('paid period rolls over on the server', () async {
+  test('a renewal starts a fresh paid period on the server; without one the plan does not roll on', () async {
     final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
     await call(
       'POST',
@@ -368,6 +368,18 @@ void main() {
     }
     expect((await call('POST', '/v1/analyze', token: token, body: {}))['status'], 402);
     now = now.add(const Duration(days: 31));
+    expect(
+      (await call('POST', '/v1/analyze', token: token, body: {}))['status'],
+      402,
+      reason: 'nincs megújítás',
+    );
+    // A bolt megújította: új tranzakció → új időszak, nullázott kerettel.
+    await call(
+      'POST',
+      '/v1/purchases/verify',
+      token: token,
+      body: {'platform': 'android', 'product_id': 'whatstock.sub.normal', 'verification_data': 'r2'},
+    );
     final me = await call('GET', '/v1/me', token: token);
     expect(me['body']['entitlements']['used'], 0);
     expect((await call('POST', '/v1/analyze', token: token, body: {}))['status'], 200);
