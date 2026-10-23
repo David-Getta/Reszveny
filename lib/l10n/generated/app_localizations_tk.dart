@@ -2565,6 +2565,22 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ýyllyk jemleme';
+
+  @override
+  String get portfolioProceeds => 'Satuw girdejisi';
+
+  @override
+  String get portfolioCostBasis => 'Satyn alyş bahasy';
+
+  @override
+  String get portfolioFeesPaid => 'Tölenen komissiýa';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Möçberler asyl walýutada, öwrülmedik. Satuw girdejisinden satuw komissiýasy aýrylan; satyn alyş bahasyna satyn alyş komissiýasy goşulan (FIFO). Salgyt beýannamasy üçin salgyt edaraňyzyň talap edýän walýuta hümmeti boýunça öwrüň.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

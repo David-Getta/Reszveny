@@ -782,5 +782,10 @@
   "allocationAccounts": "Diakhaonto",
   "portfolioFee": "Tuelo ({currency})",
   "portfolioFeeAdd": "Oketsa tuelo",
-  "portfolioFeeRow": "Tuelo: {amount}"
+  "portfolioFeeRow": "Tuelo: {amount}",
+  "portfolioAnnualSummary": "Kakaretso ya ngwaga",
+  "portfolioProceeds": "Letseno la thekiso",
+  "portfolioCostBasis": "Ditshenyegelo tsa go reka",
+  "portfolioFeesPaid": "Dituelo tse di duetsweng",
+  "portfolioAnnualSummaryNote": "Madi a mo mading a ntlha, ga a a fetolwa. Letseno la thekiso ke morago ga go ntsha tuelo ya thekiso; ditshenyegelo tsa go reka di akaretsa tuelo ya theko (FIFO). Go tlhagisa lekgetho la gago, fetola ka tlhwatlhwa ya phetolo e bothati jwa lekgetho bo e tlhokang."
 }

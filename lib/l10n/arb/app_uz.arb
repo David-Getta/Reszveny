@@ -782,5 +782,10 @@
   "allocationAccounts": "Hisoblar",
   "portfolioFee": "Komissiya ({currency})",
   "portfolioFeeAdd": "Komissiya qoʻshish",
-  "portfolioFeeRow": "Komissiya: {amount}"
+  "portfolioFeeRow": "Komissiya: {amount}",
+  "portfolioAnnualSummary": "Yillik xulosa",
+  "portfolioProceeds": "Sotuvdan tushum",
+  "portfolioCostBasis": "Sotib olish qiymati",
+  "portfolioFeesPaid": "Toʻlangan komissiya",
+  "portfolioAnnualSummaryNote": "Summalar asl valyutada, konvertatsiya qilinmagan. Sotuvdan tushumdan sotish komissiyasi chegirilgan; sotib olish qiymatiga xarid komissiyasi kiradi (FIFO). Soliq deklaratsiyasi uchun soliq organingiz talab qiladigan valyuta kursida konvertatsiya qiling."
 }

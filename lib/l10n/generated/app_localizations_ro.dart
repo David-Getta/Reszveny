@@ -2603,6 +2603,22 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Rezumat anual';
+
+  @override
+  String get portfolioProceeds => 'Încasări din vânzări';
+
+  @override
+  String get portfolioCostBasis => 'Cost de achiziție';
+
+  @override
+  String get portfolioFeesPaid => 'Comisioane plătite';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Sume în moneda originală, neconvertite. Încasările sunt nete de comisionul de vânzare; costul de achiziție include comisionul de cumpărare (FIFO). Pentru declarația fiscală, convertește la cursul de schimb cerut de autoritatea fiscală.';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

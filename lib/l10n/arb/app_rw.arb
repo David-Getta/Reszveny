@@ -782,5 +782,10 @@
   "allocationAccounts": "Konti",
   "portfolioFee": "Komisiyo ({currency})",
   "portfolioFeeAdd": "Ongeraho komisiyo",
-  "portfolioFeeRow": "Komisiyo: {amount}"
+  "portfolioFeeRow": "Komisiyo: {amount}",
+  "portfolioAnnualSummary": "Incamake y'umwaka",
+  "portfolioProceeds": "Amafaranga yavuye mu igurisha",
+  "portfolioCostBasis": "Igiciro cy'ibyaguzwe",
+  "portfolioFeesPaid": "Komisiyo zishyuwe",
+  "portfolioAnnualSummaryNote": "Amafaranga ari mu ifaranga ry'umwimerere, ntiyahinduwe. Amafaranga yavuye mu igurisha yakuweho komisiyo yo kugurisha; igiciro cy'ibyaguzwe kirimo komisiyo yo kugura (FIFO). Ku imenyekanisha ry'umusoro, hindura ku gipimo cy'ivunjisha gisabwa n'ikigo cy'imisoro."
 }

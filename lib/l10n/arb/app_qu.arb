@@ -782,5 +782,10 @@
   "allocationAccounts": "Cuentakuna",
   "portfolioFee": "Comisión ({currency})",
   "portfolioFeeAdd": "Comisionta yapay",
-  "portfolioFeeRow": "Comisión: {amount}"
+  "portfolioFeeRow": "Comisión: {amount}",
+  "portfolioAnnualSummary": "Watapa pisichay",
+  "portfolioProceeds": "Rantikusqamanta qullqi",
+  "portfolioCostBasis": "Rantisqa chanin",
+  "portfolioFeesPaid": "Pagasqa comisión",
+  "portfolioAnnualSummaryNote": "Qullqikuna ñawpaq qullqinpi, mana tikrasqa. Rantikusqamanta qullqiqa rantikuy comisionta qichusqañam; rantisqa chaninqa rantiy comisionta hap'in (FIFO). Impuesto willakuyniykipaq, impuesto kamachiq munasqan cambiowan tikray."
 }

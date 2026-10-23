@@ -2563,6 +2563,22 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'वार्षिक सारांश';
+
+  @override
+  String get portfolioProceeds => 'विक्री उत्पन्न';
+
+  @override
+  String get portfolioCostBasis => 'संपादन खर्च';
+
+  @override
+  String get portfolioFeesPaid => 'भरलेले शुल्क';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'रकमा मूळ चलनात, रूपांतरित न करता. विक्री उत्पन्नातून विक्री शुल्क वजा केले आहे; संपादन खर्चात खरेदी शुल्क समाविष्ट आहे (FIFO). कर विवरणपत्रासाठी, तुमच्या कर विभागाने ठरवलेल्या विनिमय दराने रूपांतरित करा.';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

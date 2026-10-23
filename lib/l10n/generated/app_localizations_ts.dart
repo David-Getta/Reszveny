@@ -2584,6 +2584,22 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Nkatsakanyo wa lembe';
+
+  @override
+  String get portfolioProceeds => 'Mali ya swixavisiwa';
+
+  @override
+  String get portfolioCostBasis => 'Ntsengo wa ku xava';
+
+  @override
+  String get portfolioFeesPaid => 'Tihakelo leti hakeriweke';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Mali yi le ka mali ya masungulo, a yi cinciwanga. Mali ya swixavisiwa yi susiwile hakelo ya ku xavisa; ntsengo wa ku xava wu katsa hakelo ya ku xava (FIFO). Eka xiviko xa wena xa xibalo, cinca hi mpimo wa ku cincana mali lowu lavekaka hi vulawuri bya xibalo.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

@@ -2630,6 +2630,22 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Гадавая зводка';
+
+  @override
+  String get portfolioProceeds => 'Выручка ад продажу';
+
+  @override
+  String get portfolioCostBasis => 'Кошт набыцця';
+
+  @override
+  String get portfolioFeesPaid => 'Выплачаная камісія';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Сумы ў зыходнай валюце, без пераліку. Выручка паказана за вылікам камісіі за продаж; кошт набыцця ўключае камісію за пакупку (FIFO). Для падатковай дэкларацыі пералічыце па курсе, які патрабуе ваша падатковая служба.';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

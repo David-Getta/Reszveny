@@ -782,5 +782,10 @@
   "allocationAccounts": "Konton",
   "portfolioFee": "Courtage ({currency})",
   "portfolioFeeAdd": "Lägg till courtage",
-  "portfolioFeeRow": "Courtage: {amount}"
+  "portfolioFeeRow": "Courtage: {amount}",
+  "portfolioAnnualSummary": "Årsöversikt",
+  "portfolioProceeds": "Försäljningspris",
+  "portfolioCostBasis": "Omkostnadsbelopp",
+  "portfolioFeesPaid": "Betalt courtage",
+  "portfolioAnnualSummaryNote": "Belopp i ursprunglig valuta, inte omräknade. Försäljningspriset är efter avdrag för courtage vid försäljning; omkostnadsbeloppet inkluderar courtage vid köp (FIFO). Till deklarationen räknar du om enligt den växelkurs som skattemyndigheten kräver."
 }

@@ -2574,6 +2574,22 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'വാർഷിക സംഗ്രഹം';
+
+  @override
+  String get portfolioProceeds => 'വിൽപ്പന വരുമാനം';
+
+  @override
+  String get portfolioCostBasis => 'വാങ്ങൽ ചെലവ്';
+
+  @override
+  String get portfolioFeesPaid => 'അടച്ച ഫീസ്';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'തുകകൾ യഥാർത്ഥ കറൻസിയിലാണ്, മാറ്റിയിട്ടില്ല. വിൽപ്പന വരുമാനം വിൽപ്പന ഫീസ് കുറച്ചതാണ്; വാങ്ങൽ ചെലവിൽ വാങ്ങൽ ഫീസ് ഉൾപ്പെടുന്നു (FIFO). നികുതി റിട്ടേണിനായി, നിങ്ങളുടെ നികുതി വകുപ്പ് ആവശ്യപ്പെടുന്ന വിനിമയ നിരക്കിൽ മാറ്റുക.';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

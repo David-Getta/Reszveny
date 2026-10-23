@@ -782,5 +782,10 @@
   "allocationAccounts": "खाता",
   "portfolioFee": "ब्रोकरेज ({currency})",
   "portfolioFeeAdd": "ब्रोकरेज जोड़ीं",
-  "portfolioFeeRow": "ब्रोकरेज: {amount}"
+  "portfolioFeeRow": "ब्रोकरेज: {amount}",
+  "portfolioAnnualSummary": "सालाना सारांश",
+  "portfolioProceeds": "बिक्री से आमदनी",
+  "portfolioCostBasis": "खरीद लागत",
+  "portfolioFeesPaid": "चुकावल ब्रोकरेज",
+  "portfolioAnnualSummaryNote": "रकम मूल मुद्रा में बा, बदलल नइखे। बिक्री से आमदनी बिक्री के ब्रोकरेज घटा के बा; खरीद लागत में खरीद के ब्रोकरेज शामिल बा (FIFO)। टैक्स रिटर्न खातिर ओह विनिमय दर पर बदलीं जवन रउआ के टैक्स विभाग माँगेला।"
 }

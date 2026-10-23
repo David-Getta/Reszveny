@@ -2570,6 +2570,22 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'ವಾರ್ಷಿಕ ಸಾರಾಂಶ';
+
+  @override
+  String get portfolioProceeds => 'ಮಾರಾಟದ ಆದಾಯ';
+
+  @override
+  String get portfolioCostBasis => 'ಖರೀದಿ ವೆಚ್ಚ';
+
+  @override
+  String get portfolioFeesPaid => 'ಪಾವತಿಸಿದ ಬ್ರೋಕರೇಜ್';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'ಮೊತ್ತಗಳು ಮೂಲ ಕರೆನ್ಸಿಯಲ್ಲಿವೆ, ಪರಿವರ್ತಿಸಲಾಗಿಲ್ಲ. ಮಾರಾಟದ ಆದಾಯದಿಂದ ಮಾರಾಟದ ಬ್ರೋಕರೇಜ್ ಕಳೆಯಲಾಗಿದೆ; ಖರೀದಿ ವೆಚ್ಚದಲ್ಲಿ ಖರೀದಿಯ ಬ್ರೋಕರೇಜ್ ಸೇರಿದೆ (FIFO). ತೆರಿಗೆ ರಿಟರ್ನ್‌ಗಾಗಿ ನಿಮ್ಮ ತೆರಿಗೆ ಇಲಾಖೆ ಕೇಳುವ ವಿನಿಮಯ ದರದಲ್ಲಿ ಪರಿವರ್ತಿಸಿ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

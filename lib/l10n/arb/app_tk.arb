@@ -782,5 +782,10 @@
   "allocationAccounts": "Hasaplar",
   "portfolioFee": "Komissiýa ({currency})",
   "portfolioFeeAdd": "Komissiýa goş",
-  "portfolioFeeRow": "Komissiýa: {amount}"
+  "portfolioFeeRow": "Komissiýa: {amount}",
+  "portfolioAnnualSummary": "Ýyllyk jemleme",
+  "portfolioProceeds": "Satuw girdejisi",
+  "portfolioCostBasis": "Satyn alyş bahasy",
+  "portfolioFeesPaid": "Tölenen komissiýa",
+  "portfolioAnnualSummaryNote": "Möçberler asyl walýutada, öwrülmedik. Satuw girdejisinden satuw komissiýasy aýrylan; satyn alyş bahasyna satyn alyş komissiýasy goşulan (FIFO). Salgyt beýannamasy üçin salgyt edaraňyzyň talap edýän walýuta hümmeti boýunça öwrüň."
 }

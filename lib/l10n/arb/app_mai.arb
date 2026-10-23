@@ -782,5 +782,10 @@
   "allocationAccounts": "खाता",
   "portfolioFee": "ब्रोकरेज ({currency})",
   "portfolioFeeAdd": "ब्रोकरेज जोड़ू",
-  "portfolioFeeRow": "ब्रोकरेज: {amount}"
+  "portfolioFeeRow": "ब्रोकरेज: {amount}",
+  "portfolioAnnualSummary": "वार्षिक सारांश",
+  "portfolioProceeds": "बिक्रीसँ आमदनी",
+  "portfolioCostBasis": "खरीद लागत",
+  "portfolioFeesPaid": "चुकाओल ब्रोकरेज",
+  "portfolioAnnualSummaryNote": "राशि मूल मुद्रामे अछि, बदलल नहि गेल। बिक्रीसँ आमदनी बिक्रीक ब्रोकरेज घटा कऽ अछि; खरीद लागतमे खरीदक ब्रोकरेज सम्मिलित अछि (FIFO)। टैक्स रिटर्नक लेल ओहि विनिमय दरपर बदलू जे अहाँक कर विभाग मँगैत अछि।"
 }

@@ -782,5 +782,10 @@
   "allocationAccounts": "Akawunti",
   "portfolioFee": "Ebisale ({currency})",
   "portfolioFeeAdd": "Yongerako ebisale",
-  "portfolioFeeRow": "Ebisale: {amount}"
+  "portfolioFeeRow": "Ebisale: {amount}",
+  "portfolioAnnualSummary": "Ebifunze by'omwaka",
+  "portfolioProceeds": "Ssente z'okutunda",
+  "portfolioCostBasis": "Omuwendo gw'okugula",
+  "portfolioFeesPaid": "Ebisale ebyasasulwa",
+  "portfolioAnnualSummaryNote": "Ssente ziri mu ssente ezaasooka, tezikyusiddwa. Ssente z'okutunda zigyiddwako ebisale by'okutunda; omuwendo gw'okugula gutwaliddemu ebisale by'okugula (FIFO). Ku lipoota y'omusolo, kyusa ku muwendo gw'okuwaanyisa ensimbi ekitongole ky'omusolo kye kyetaaga."
 }

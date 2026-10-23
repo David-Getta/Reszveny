@@ -2568,6 +2568,22 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ringkesan taunan';
+
+  @override
+  String get portfolioProceeds => 'Asil dodolan';
+
+  @override
+  String get portfolioCostBasis => 'Rega tuku';
+
+  @override
+  String get portfolioFeesPaid => 'Biaya transaksi sing dibayar';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Jumlah ing mata uang asli, ora diowahi. Asil dodolan wis dikurangi biaya transaksi dodolan; rega tuku wis kalebu biaya transaksi tukon (FIFO). Kanggo laporan pajeg, owahana nganggo kurs sing ditetepake panguwasa pajeg sampeyan.';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

@@ -782,5 +782,10 @@
   "allocationAccounts": "Iiakhawunti",
   "portfolioFee": "Ifizi ({currency})",
   "portfolioFeeAdd": "Yongeza ifizi",
-  "portfolioFeeRow": "Ifizi: {amount}"
+  "portfolioFeeRow": "Ifizi: {amount}",
+  "portfolioAnnualSummary": "Isishwankathelo sonyaka",
+  "portfolioProceeds": "Ingeniso yokuthengisa",
+  "portfolioCostBasis": "Iindleko zokuthenga",
+  "portfolioFeesPaid": "Iifizi ezihlawuliweyo",
+  "portfolioAnnualSummaryNote": "Izixa zikwimali yokuqala, aziguqulwanga. Ingeniso yokuthengisa sele kutsalwe ifizi yokuthengisa; iindleko zokuthenga ziquka ifizi yokuthenga (FIFO). Kwingxelo yakho yerhafu, guqula ngexabiso lotshintshiselwano elifunwa ligunya lerhafu."
 }

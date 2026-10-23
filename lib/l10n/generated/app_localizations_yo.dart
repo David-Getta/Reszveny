@@ -2563,6 +2563,22 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Àkópọ̀ ọdún';
+
+  @override
+  String get portfolioProceeds => 'Owó tí o rí nínú títà';
+
+  @override
+  String get portfolioCostBasis => 'Iye owó ìrajà';
+
+  @override
+  String get portfolioFeesPaid => 'Owó iṣẹ́ tí o san';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Owó wà nínú owó àkọ́kọ́, a kò yí i padà. A ti yọ owó iṣẹ́ títà kúrò nínú owó títà; iye owó ìrajà ní owó iṣẹ́ ìrajà nínú (FIFO). Fún ìfisùn owó-orí rẹ, yí i padà ní ìwọ̀n pàṣípààrọ̀ tí àjọ owó-orí rẹ béèrè.';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

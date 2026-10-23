@@ -2566,6 +2566,22 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Годишно обобщение';
+
+  @override
+  String get portfolioProceeds => 'Приходи от продажби';
+
+  @override
+  String get portfolioCostBasis => 'Цена на придобиване';
+
+  @override
+  String get portfolioFeesPaid => 'Платени комисиони';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Сумите са в оригиналната валута, без превалутиране. Приходите са след приспадане на комисионата за продажба; цената на придобиване включва комисионата за покупка (FIFO). За данъчната декларация превалутирайте по курса, който изисква данъчната администрация.';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

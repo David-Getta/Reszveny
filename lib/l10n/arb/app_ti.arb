@@ -782,5 +782,10 @@
   "allocationAccounts": "ሕሳባት",
   "portfolioFee": "ክፍሊት ({currency})",
   "portfolioFeeAdd": "ክፍሊት ወስኽ",
-  "portfolioFeeRow": "ክፍሊት፦ {amount}"
+  "portfolioFeeRow": "ክፍሊት፦ {amount}",
+  "portfolioAnnualSummary": "ዓመታዊ ጽማቝ",
+  "portfolioProceeds": "እቶት መሸጣ",
+  "portfolioCostBasis": "ዋጋ ዕድጊት",
+  "portfolioFeesPaid": "ዝተኸፍለ ክፍሊት",
+  "portfolioAnnualSummaryNote": "መጠናት ብመበቆል ባጤራ እዮም፣ ኣይተቐየሩን። እቶት መሸጣ ክፍሊት መሸጣ ተቐኒሱ እዩ፤ ዋጋ ዕድጊት ክፍሊት ዕድጊት የጠቓልል (FIFO)። ንናይ ግብሪ መግለጺኹም፣ ብቲ ቤት ጽሕፈት ግብሪ ዝሓቶ ናይ ገንዘብ ምልውዋጥ ዋጋ ቀይሩ።"
 }

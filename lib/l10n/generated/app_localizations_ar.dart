@@ -2619,6 +2619,22 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'الملخص السنوي';
+
+  @override
+  String get portfolioProceeds => 'عائدات البيع';
+
+  @override
+  String get portfolioCostBasis => 'تكلفة الاقتناء';
+
+  @override
+  String get portfolioFeesPaid => 'العمولات المدفوعة';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'المبالغ بالعملة الأصلية دون تحويل. عائدات البيع صافية بعد خصم عمولة البيع؛ وتشمل تكلفة الاقتناء عمولة الشراء (FIFO). لإقرارك الضريبي، حوِّل المبالغ بسعر الصرف الذي تشترطه مصلحة الضرائب لديك.';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

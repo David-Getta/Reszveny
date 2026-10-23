@@ -782,5 +782,10 @@
   "allocationAccounts": "اڪائونٽس",
   "portfolioFee": "فيس ({currency})",
   "portfolioFeeAdd": "فيس شامل ڪريو",
-  "portfolioFeeRow": "فيس: {amount}"
+  "portfolioFeeRow": "فيس: {amount}",
+  "portfolioAnnualSummary": "سالياني خلاصو",
+  "portfolioProceeds": "وڪري جي آمدني",
+  "portfolioCostBasis": "خريد جي لاڳت",
+  "portfolioFeesPaid": "ادا ڪيل فيس",
+  "portfolioAnnualSummaryNote": "رقمون اصل ڪرنسي ۾، تبديل ڪيل ناهن. وڪري جي آمدني مان وڪري جي فيس ڪٽيل آهي؛ خريد جي لاڳت ۾ خريد جي فيس شامل آهي (FIFO). ٽيڪس ريٽرن لاءِ، ان مٽاسٽا جي شرح تي تبديل ڪريو جيڪا توهان جو ٽيڪس کاتو گهري ٿو."
 }

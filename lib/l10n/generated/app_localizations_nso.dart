@@ -2582,6 +2582,22 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Kakaretšo ya ngwaga';
+
+  @override
+  String get portfolioProceeds => 'Letseno la dithekišo';
+
+  @override
+  String get portfolioCostBasis => 'Ditshenyagalelo tša go reka';
+
+  @override
+  String get portfolioFeesPaid => 'Ditefelo tše di lefilwego';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Ditšhelete di ka tšhelete ya mathomo, ga di a fetošwa. Letseno la dithekišo ke ka morago ga go ntšha tefelo ya thekišo; ditshenyagalelo tša go reka di akaretša tefelo ya theko (FIFO). Bakeng sa pušetšo ya gago ya motšhelo, fetoša ka reiti ya phetošo ye e nyakwago ke bolaodi bja motšhelo.';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

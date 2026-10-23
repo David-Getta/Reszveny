@@ -2558,6 +2558,22 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Tënkub at mi';
+
+  @override
+  String get portfolioProceeds => 'Xaalisu jaay';
+
+  @override
+  String get portfolioCostBasis => 'Njëgu jënd';
+
+  @override
+  String get portfolioFeesPaid => 'Peyu liggéey yi ñu fey';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Xaalis yi ci xaalis bu njëkk bi lañu, ñu soppiwuñu leen. Xaalisu jaay bi, dañu ci génne peyu liggéeyu jaay bi; njëgu jënd bi boole na ci peyu liggéeyu jënd bi (FIFO). Ngir sa déclaration lempo, soppil ko ci njëgu weccit xaalis bi biro lempo bi laaj.';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

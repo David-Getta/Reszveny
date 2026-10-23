@@ -2556,6 +2556,22 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'کلنۍ لنډیز';
+
+  @override
+  String get portfolioProceeds => 'د پلور عاید';
+
+  @override
+  String get portfolioCostBasis => 'د پېرود لګښت';
+
+  @override
+  String get portfolioFeesPaid => 'ورکړل شوې فیس';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'اندازې په اصلي اسعارو دي، نه دي اړول شوې. د پلور عاید د پلور فیس ترې کم شوی؛ د پېرود لګښت د پېرود فیس هم پکې شامل دی (FIFO). د مالیې د اظهارنامې لپاره، د اسعارو په هغه نرخ یې واړوئ چې ستاسو د مالیې اداره یې غواړي.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

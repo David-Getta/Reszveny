@@ -2559,6 +2559,22 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'सालाना सारांश';
+
+  @override
+  String get portfolioProceeds => 'बिक्री से आमदनी';
+
+  @override
+  String get portfolioCostBasis => 'खरीद लागत';
+
+  @override
+  String get portfolioFeesPaid => 'चुकावल ब्रोकरेज';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'रकम मूल मुद्रा में बा, बदलल नइखे। बिक्री से आमदनी बिक्री के ब्रोकरेज घटा के बा; खरीद लागत में खरीद के ब्रोकरेज शामिल बा (FIFO)। टैक्स रिटर्न खातिर ओह विनिमय दर पर बदलीं जवन रउआ के टैक्स विभाग माँगेला।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

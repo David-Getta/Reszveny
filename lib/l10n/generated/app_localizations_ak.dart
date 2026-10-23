@@ -2565,6 +2565,22 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Afe nsɛm tiawa';
+
+  @override
+  String get portfolioProceeds => 'Adetɔn mu sika';
+
+  @override
+  String get portfolioCostBasis => 'Adetɔ ka';
+
+  @override
+  String get portfolioFeesPaid => 'Akatua a wotuae';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Sika dodow no wɔ sika a edi kan no mu, wɔnsesaa no. Wɔayi adetɔn akatua no afi adetɔn mu sika no mu; adetɔ ka no ka adetɔ akatua no ho (FIFO). Ma wo tow ho nsɛm, sesa no wɔ sika sesa bo a wo tow adwumakuw hwehwɛ no so.';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

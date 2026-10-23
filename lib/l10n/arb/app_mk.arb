@@ -782,5 +782,10 @@
   "allocationAccounts": "Сметки",
   "portfolioFee": "Провизија ({currency})",
   "portfolioFeeAdd": "Додај провизија",
-  "portfolioFeeRow": "Провизија: {amount}"
+  "portfolioFeeRow": "Провизија: {amount}",
+  "portfolioAnnualSummary": "Годишен преглед",
+  "portfolioProceeds": "Приход од продажба",
+  "portfolioCostBasis": "Набавна вредност",
+  "portfolioFeesPaid": "Платена провизија",
+  "portfolioAnnualSummaryNote": "Износите се во оригиналната валута, без конверзија. Приходот е намален за провизијата при продажба; набавната вредност ја вклучува провизијата при купување (FIFO). За даночната пријава, конвертирајте по курсот што го бара вашата даночна управа."
 }

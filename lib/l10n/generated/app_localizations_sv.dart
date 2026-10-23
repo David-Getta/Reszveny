@@ -2566,6 +2566,22 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Årsöversikt';
+
+  @override
+  String get portfolioProceeds => 'Försäljningspris';
+
+  @override
+  String get portfolioCostBasis => 'Omkostnadsbelopp';
+
+  @override
+  String get portfolioFeesPaid => 'Betalt courtage';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Belopp i ursprunglig valuta, inte omräknade. Försäljningspriset är efter avdrag för courtage vid försäljning; omkostnadsbeloppet inkluderar courtage vid köp (FIFO). Till deklarationen räknar du om enligt den växelkurs som skattemyndigheten kräver.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

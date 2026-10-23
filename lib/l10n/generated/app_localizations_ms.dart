@@ -2569,6 +2569,22 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ringkasan tahunan';
+
+  @override
+  String get portfolioProceeds => 'Hasil jualan';
+
+  @override
+  String get portfolioCostBasis => 'Kos perolehan';
+
+  @override
+  String get portfolioFeesPaid => 'Yuran dibayar';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Amaun dalam mata wang asal, tidak ditukar. Hasil jualan adalah bersih selepas yuran jualan; kos perolehan termasuk yuran pembelian (FIFO). Untuk penyata cukai anda, tukar pada kadar pertukaran yang ditetapkan oleh pihak berkuasa cukai anda.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

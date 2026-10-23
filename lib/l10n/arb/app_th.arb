@@ -782,5 +782,10 @@
   "allocationAccounts": "บัญชี",
   "portfolioFee": "ค่าธรรมเนียม ({currency})",
   "portfolioFeeAdd": "เพิ่มค่าธรรมเนียม",
-  "portfolioFeeRow": "ค่าธรรมเนียม: {amount}"
+  "portfolioFeeRow": "ค่าธรรมเนียม: {amount}",
+  "portfolioAnnualSummary": "สรุปรายปี",
+  "portfolioProceeds": "รายรับจากการขาย",
+  "portfolioCostBasis": "ต้นทุนการได้มา",
+  "portfolioFeesPaid": "ค่าธรรมเนียมที่จ่าย",
+  "portfolioAnnualSummaryNote": "จำนวนเงินเป็นสกุลเงินเดิม ไม่ได้แปลงค่า รายรับจากการขายหักค่าธรรมเนียมการขายแล้ว ต้นทุนการได้มารวมค่าธรรมเนียมการซื้อ (FIFO) สำหรับการยื่นภาษี โปรดแปลงค่าด้วยอัตราแลกเปลี่ยนที่หน่วยงานภาษีของคุณกำหนด"
 }

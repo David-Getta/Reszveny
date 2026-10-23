@@ -782,5 +782,10 @@
   "allocationAccounts": "Cuentas",
   "portfolioFee": "Comisión ({currency})",
   "portfolioFeeAdd": "Añadir una comisión",
-  "portfolioFeeRow": "Comisión: {amount}"
+  "portfolioFeeRow": "Comisión: {amount}",
+  "portfolioAnnualSummary": "Resumen anual",
+  "portfolioProceeds": "Valor de transmisión",
+  "portfolioCostBasis": "Valor de adquisición",
+  "portfolioFeesPaid": "Comisiones pagadas",
+  "portfolioAnnualSummaryNote": "Importes en la moneda original, sin convertir. El valor de transmisión es neto de la comisión de venta; el valor de adquisición incluye la comisión de compra (FIFO). Para tu declaración de impuestos, conviértelos al tipo de cambio que exija tu administración tributaria."
 }

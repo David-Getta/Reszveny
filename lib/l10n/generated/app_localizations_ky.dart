@@ -2567,6 +2567,22 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Жылдык корутунду';
+
+  @override
+  String get portfolioProceeds => 'Сатуудан түшкөн каражат';
+
+  @override
+  String get portfolioCostBasis => 'Сатып алуу наркы';
+
+  @override
+  String get portfolioFeesPaid => 'Төлөнгөн комиссия';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Суммалар баштапкы валютада, которулган эмес. Сатуудан түшкөн каражат сатуу комиссиясы чегерилгенден кийин көрсөтүлөт; сатып алуу наркына сатып алуу комиссиясы кирет (FIFO). Салык декларациясы үчүн салык органыңыз талап кылган курс менен которуңуз.';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

@@ -782,5 +782,10 @@
   "allocationAccounts": "Hesab",
   "portfolioFee": "Komîsyon ({currency})",
   "portfolioFeeAdd": "Komîsyonekê zêde bike",
-  "portfolioFeeRow": "Komîsyon: {amount}"
+  "portfolioFeeRow": "Komîsyon: {amount}",
+  "portfolioAnnualSummary": "Kurteya salane",
+  "portfolioProceeds": "Dahata firotinê",
+  "portfolioCostBasis": "Lêçûna kirînê",
+  "portfolioFeesPaid": "Komîsyona dayî",
+  "portfolioAnnualSummaryNote": "Mîqdar bi diravê eslî ne, nehatine veguhertin. Dahata firotinê piştî derxistina komîsyona firotinê ye; lêçûna kirînê komîsyona kirînê dihewîne (FIFO). Ji bo daxuyaniya bacê, bi rêjeya danûstandinê ya ku rayedarê bacê dixwaze veguherîne."
 }

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.189)
+# Változásjegyzék (0.2.130 → 0.2.190)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -53,6 +53,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   az a számla); a számla-nézetben a „Kapott osztalékok” kártya a számla osztalékait, várható kifizetéseit és havi
   diagramját mutatja; az osztalék-CSV-kben számla-oszlop; szinkronban (régebbi app sem törli).
 - **Megoszlás számlák szerint**: a megoszlás-kártyán új „Számlák” nézet (pl. TBSZ 2026 32% · Normál 68%).
+- **Éves összesítő az adóbevalláshoz** (portfólió menü): évenként, számlánként és pénznemenként az eladási bevétel, a
+  szerzési érték, a realizált nyereség, a kapott osztalék és a fizetett jutalék, átváltás nélkül; szövegként megosztható.
 - **Tranzakciós díj (jutalék)**: a vételhez és az eladáshoz megadható; a bekerülési értékbe, a realizált nyereségbe
   (az adó-CSV-be is) és az éves hozamba beszámít; a bróker-exportok díj-oszlopa (IBKR „Comm/Fee”) importáláskor
   bekerül; szinkronban, mentésben és a CSV-ben is.

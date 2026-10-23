@@ -782,5 +782,10 @@
   "allocationAccounts": "Kont",
   "portfolioFee": "Komisyon ({currency})",
   "portfolioFeeAdd": "Ajoute yon komisyon",
-  "portfolioFeeRow": "Komisyon: {amount}"
+  "portfolioFeeRow": "Komisyon: {amount}",
+  "portfolioAnnualSummary": "Rezime anyèl",
+  "portfolioProceeds": "Revni lavant",
+  "portfolioCostBasis": "Pri acha",
+  "portfolioFeesPaid": "Komisyon ou peye",
+  "portfolioAnnualSummaryNote": "Montan yo nan lajan orijinal la, yo pa konvèti. Revni lavant yo se apre komisyon lavant lan retire; pri acha a gen ladan l komisyon acha a (FIFO). Pou deklarasyon taks ou, konvèti yo nan to chanj otorite taks ou egzije a."
 }

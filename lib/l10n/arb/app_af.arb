@@ -782,5 +782,10 @@
   "allocationAccounts": "Rekeninge",
   "portfolioFee": "Kommissie ({currency})",
   "portfolioFeeAdd": "Voeg 'n kommissie by",
-  "portfolioFeeRow": "Kommissie: {amount}"
+  "portfolioFeeRow": "Kommissie: {amount}",
+  "portfolioAnnualSummary": "Jaaroorsig",
+  "portfolioProceeds": "Verkoopopbrengs",
+  "portfolioCostBasis": "Basiskoste",
+  "portfolioFeesPaid": "Betaalde kommissie",
+  "portfolioAnnualSummaryNote": "Bedrae in die oorspronklike geldeenheid, nie omgeskakel nie. Die opbrengs is ná aftrekking van die verkoopkommissie; die basiskoste sluit die aankoopkommissie in (FIFO). Skakel vir jou belastingopgawe om teen die wisselkoers wat jou belastingowerheid vereis."
 }

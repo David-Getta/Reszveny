@@ -2566,6 +2566,22 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Vuosiyhteenveto';
+
+  @override
+  String get portfolioProceeds => 'Luovutushinta';
+
+  @override
+  String get portfolioCostBasis => 'Hankintameno';
+
+  @override
+  String get portfolioFeesPaid => 'Maksetut välityspalkkiot';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Summat alkuperäisessä valuutassa, muuntamatta. Luovutushinnasta on vähennetty myynnin välityspalkkio; hankintameno sisältää oston välityspalkkion (FIFO). Muunna veroilmoitusta varten verottajan edellyttämällä valuuttakurssilla.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

@@ -782,5 +782,10 @@
   "allocationAccounts": "Шоттар",
   "portfolioFee": "Комиссия ({currency})",
   "portfolioFeeAdd": "Комиссия қосу",
-  "portfolioFeeRow": "Комиссия: {amount}"
+  "portfolioFeeRow": "Комиссия: {amount}",
+  "portfolioAnnualSummary": "Жылдық қорытынды",
+  "portfolioProceeds": "Сатудан түскен түсім",
+  "portfolioCostBasis": "Сатып алу құны",
+  "portfolioFeesPaid": "Төленген комиссия",
+  "portfolioAnnualSummaryNote": "Сомалар бастапқы валютада, айырбасталмаған. Сатудан түскен түсім сату комиссиясы шегерілгеннен кейін көрсетіледі; сатып алу құнына сатып алу комиссиясы кіреді (FIFO). Салық декларациясы үшін салық органыңыз талап ететін бағам бойынша айырбастаңыз."
 }

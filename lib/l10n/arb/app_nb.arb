@@ -782,5 +782,10 @@
   "allocationAccounts": "Kontoer",
   "portfolioFee": "Kurtasje ({currency})",
   "portfolioFeeAdd": "Legg til kurtasje",
-  "portfolioFeeRow": "Kurtasje: {amount}"
+  "portfolioFeeRow": "Kurtasje: {amount}",
+  "portfolioAnnualSummary": "Årsoversikt",
+  "portfolioProceeds": "Salgsvederlag",
+  "portfolioCostBasis": "Inngangsverdi",
+  "portfolioFeesPaid": "Betalt kurtasje",
+  "portfolioAnnualSummaryNote": "Beløp i opprinnelig valuta, ikke omregnet. Salgsvederlaget er fratrukket kurtasje ved salg; inngangsverdien inkluderer kurtasje ved kjøp (FIFO). Til skattemeldingen må du regne om etter valutakursen skattemyndighetene krever."
 }

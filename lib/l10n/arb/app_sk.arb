@@ -782,5 +782,10 @@
   "allocationAccounts": "Účty",
   "portfolioFee": "Poplatok ({currency})",
   "portfolioFeeAdd": "Pridať poplatok",
-  "portfolioFeeRow": "Poplatok: {amount}"
+  "portfolioFeeRow": "Poplatok: {amount}",
+  "portfolioAnnualSummary": "Ročný prehľad",
+  "portfolioProceeds": "Príjem z predaja",
+  "portfolioCostBasis": "Obstarávacia cena",
+  "portfolioFeesPaid": "Zaplatené poplatky",
+  "portfolioAnnualSummaryNote": "Sumy v pôvodnej mene, bez prepočtu. Príjem z predaja je po odpočítaní poplatku pri predaji; obstarávacia cena zahŕňa poplatok pri nákupe (FIFO). Na daňové priznanie prepočítajte kurzom, ktorý vyžaduje váš daňový úrad."
 }

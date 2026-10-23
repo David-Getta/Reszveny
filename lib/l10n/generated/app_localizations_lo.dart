@@ -2537,6 +2537,22 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'ສະຫຼຸບປະຈຳປີ';
+
+  @override
+  String get portfolioProceeds => 'ລາຍຮັບຈາກການຂາຍ';
+
+  @override
+  String get portfolioCostBasis => 'ຕົ້ນທຶນການຊື້';
+
+  @override
+  String get portfolioFeesPaid => 'ຄ່າທຳນຽມທີ່ຈ່າຍ';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'ຈຳນວນເງິນເປັນສະກຸນເງິນເດີມ ບໍ່ໄດ້ແປງ. ລາຍຮັບຈາກການຂາຍແມ່ນຫັກຄ່າທຳນຽມການຂາຍແລ້ວ; ຕົ້ນທຶນການຊື້ລວມຄ່າທຳນຽມການຊື້ (FIFO). ສຳລັບການຍື່ນພາສີ, ໃຫ້ແປງຕາມອັດຕາແລກປ່ຽນທີ່ເຈົ້າໜ້າທີ່ພາສີຂອງທ່ານກຳນົດ.';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

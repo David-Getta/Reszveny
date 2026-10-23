@@ -2534,6 +2534,22 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'สรุปรายปี';
+
+  @override
+  String get portfolioProceeds => 'รายรับจากการขาย';
+
+  @override
+  String get portfolioCostBasis => 'ต้นทุนการได้มา';
+
+  @override
+  String get portfolioFeesPaid => 'ค่าธรรมเนียมที่จ่าย';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'จำนวนเงินเป็นสกุลเงินเดิม ไม่ได้แปลงค่า รายรับจากการขายหักค่าธรรมเนียมการขายแล้ว ต้นทุนการได้มารวมค่าธรรมเนียมการซื้อ (FIFO) สำหรับการยื่นภาษี โปรดแปลงค่าด้วยอัตราแลกเปลี่ยนที่หน่วยงานภาษีของคุณกำหนด';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

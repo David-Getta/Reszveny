@@ -2561,6 +2561,22 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'ਸਾਲਾਨਾ ਸਾਰ';
+
+  @override
+  String get portfolioProceeds => 'ਵਿਕਰੀ ਆਮਦਨ';
+
+  @override
+  String get portfolioCostBasis => 'ਖ਼ਰੀਦ ਲਾਗਤ';
+
+  @override
+  String get portfolioFeesPaid => 'ਅਦਾ ਕੀਤੀ ਫੀਸ';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'ਰਕਮਾਂ ਮੂਲ ਮੁਦਰਾ ਵਿੱਚ, ਬਦਲੀਆਂ ਨਹੀਂ ਗਈਆਂ। ਵਿਕਰੀ ਆਮਦਨ ਵਿੱਚੋਂ ਵਿਕਰੀ ਫੀਸ ਘਟਾਈ ਗਈ ਹੈ; ਖ਼ਰੀਦ ਲਾਗਤ ਵਿੱਚ ਖ਼ਰੀਦ ਫੀਸ ਸ਼ਾਮਲ ਹੈ (FIFO)। ਟੈਕਸ ਰਿਟਰਨ ਲਈ, ਆਪਣੇ ਟੈਕਸ ਵਿਭਾਗ ਵੱਲੋਂ ਮੰਗੀ ਵਟਾਂਦਰਾ ਦਰ ’ਤੇ ਬਦਲੋ।';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

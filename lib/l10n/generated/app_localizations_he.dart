@@ -2556,6 +2556,22 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'סיכום שנתי';
+
+  @override
+  String get portfolioProceeds => 'תמורת המכירה';
+
+  @override
+  String get portfolioCostBasis => 'מחיר מקורי';
+
+  @override
+  String get portfolioFeesPaid => 'עמלות ששולמו';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'הסכומים במטבע המקורי, ללא המרה. התמורה היא בניכוי עמלת המכירה; המחיר המקורי כולל את עמלת הקנייה (FIFO). לדוח המס יש להמיר לפי שער החליפין שרשות המסים דורשת.';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

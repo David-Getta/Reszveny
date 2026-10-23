@@ -782,5 +782,10 @@
   "allocationAccounts": "ಖಾತೆಗಳು",
   "portfolioFee": "ಬ್ರೋಕರೇಜ್ ({currency})",
   "portfolioFeeAdd": "ಬ್ರೋಕರೇಜ್ ಸೇರಿಸಿ",
-  "portfolioFeeRow": "ಬ್ರೋಕರೇಜ್: {amount}"
+  "portfolioFeeRow": "ಬ್ರೋಕರೇಜ್: {amount}",
+  "portfolioAnnualSummary": "ವಾರ್ಷಿಕ ಸಾರಾಂಶ",
+  "portfolioProceeds": "ಮಾರಾಟದ ಆದಾಯ",
+  "portfolioCostBasis": "ಖರೀದಿ ವೆಚ್ಚ",
+  "portfolioFeesPaid": "ಪಾವತಿಸಿದ ಬ್ರೋಕರೇಜ್",
+  "portfolioAnnualSummaryNote": "ಮೊತ್ತಗಳು ಮೂಲ ಕರೆನ್ಸಿಯಲ್ಲಿವೆ, ಪರಿವರ್ತಿಸಲಾಗಿಲ್ಲ. ಮಾರಾಟದ ಆದಾಯದಿಂದ ಮಾರಾಟದ ಬ್ರೋಕರೇಜ್ ಕಳೆಯಲಾಗಿದೆ; ಖರೀದಿ ವೆಚ್ಚದಲ್ಲಿ ಖರೀದಿಯ ಬ್ರೋಕರೇಜ್ ಸೇರಿದೆ (FIFO). ತೆರಿಗೆ ರಿಟರ್ನ್‌ಗಾಗಿ ನಿಮ್ಮ ತೆರಿಗೆ ಇಲಾಖೆ ಕೇಳುವ ವಿನಿಮಯ ದರದಲ್ಲಿ ಪರಿವರ್ತಿಸಿ."
 }

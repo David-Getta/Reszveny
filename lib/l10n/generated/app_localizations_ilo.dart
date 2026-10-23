@@ -2585,6 +2585,22 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Tinawen a pakabuklan';
+
+  @override
+  String get portfolioProceeds => 'Sapul iti panaglako';
+
+  @override
+  String get portfolioCostBasis => 'Gastos iti panaggatang';
+
+  @override
+  String get portfolioFeesPaid => 'Komision a nabayadan';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Dagiti kantidad ket iti orihinal a currency, saan a naikomberte. Ti sapul iti panaglako ket nakissayan ti komision ti panaglako; ti gastos iti panaggatang ket mairaman ti komision ti panaggatang (FIFO). Para iti tax return-mo, ikombertem iti exchange rate a kiddawen ti tax authority-mo.';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

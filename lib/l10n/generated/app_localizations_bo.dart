@@ -2553,6 +2553,22 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'ལོ་འཁོར་བསྡུས་དོན';
+
+  @override
+  String get portfolioProceeds => 'འཚོང་ཡོང';
+
+  @override
+  String get portfolioCostBasis => 'ཉོ་གོང';
+
+  @override
+  String get portfolioFeesPaid => 'སྤྲད་ཟིན་པའི་གླ་ཆ';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'དངུལ་འབོར་ནི་ཐོག་མའི་དངུལ་ལུགས་ཐོག་ཡིན་ཞིང་བསྒྱུར་མེད། འཚོང་ཡོང་ནི་འཚོང་བའི་གླ་ཆ་ཕྲ་རྗེས་ཡིན། ཉོ་གོང་ནང་ཉོ་བའི་གླ་ཆ་ཚུད་ཡོད (FIFO)། ཁྲལ་འབབ་ཞུ་ཐོའི་ཆེད་དུ་ཁྱེད་ཀྱི་ཁྲལ་དོན་ལས་ཁུངས་ཀྱིས་དགོས་པའི་དངུལ་བརྗེའི་ཐང་ཚད་ལྟར་བསྒྱུར་རོགས།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

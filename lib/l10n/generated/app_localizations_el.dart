@@ -2575,6 +2575,22 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ετήσια σύνοψη';
+
+  @override
+  String get portfolioProceeds => 'Έσοδα πωλήσεων';
+
+  @override
+  String get portfolioCostBasis => 'Τιμή κτήσης';
+
+  @override
+  String get portfolioFeesPaid => 'Καταβληθείσες προμήθειες';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Ποσά στο αρχικό νόμισμα, χωρίς μετατροπή. Τα έσοδα πωλήσεων είναι καθαρά από την προμήθεια πώλησης· η τιμή κτήσης περιλαμβάνει την προμήθεια αγοράς (FIFO). Για τη φορολογική σας δήλωση, μετατρέψτε με την ισοτιμία που απαιτεί η φορολογική αρχή σας.';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

@@ -2562,6 +2562,22 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'San jatebɔ';
+
+  @override
+  String get portfolioProceeds => 'Feereli wari';
+
+  @override
+  String get portfolioCostBasis => 'Sanni sɔngɔ';
+
+  @override
+  String get portfolioFeesPaid => 'Sara saralenw';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Wari hakɛw bɛ wari fɔlɔ la, u ma falen. Feereli sara bɔlen don feereli wari la; sanni sara bɛ sanni sɔngɔ la (FIFO). I ka nisɔngɔ dantigɛli kama, u falen ni wari falen sɔngɔ ye min i ka nisɔngɔ ɲɛmɔgɔw b\'a fɛ.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

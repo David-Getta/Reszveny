@@ -2564,6 +2564,22 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Yıllık özet';
+
+  @override
+  String get portfolioProceeds => 'Satış bedeli';
+
+  @override
+  String get portfolioCostBasis => 'Maliyet bedeli';
+
+  @override
+  String get portfolioFeesPaid => 'Ödenen komisyon';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Tutarlar orijinal para biriminde, çevrilmemiştir. Satış bedelinden satış komisyonu düşülmüştür; maliyet bedeline alış komisyonu dahildir (FIFO). Vergi beyannameniz için vergi idarenizin istediği döviz kuruyla çevirin.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

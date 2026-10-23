@@ -2629,6 +2629,22 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Metinė suvestinė';
+
+  @override
+  String get portfolioProceeds => 'Pardavimo pajamos';
+
+  @override
+  String get portfolioCostBasis => 'Įsigijimo kaina';
+
+  @override
+  String get portfolioFeesPaid => 'Sumokėti komisiniai';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Sumos pradine valiuta, neperskaičiuotos. Pardavimo pajamos nurodytos atėmus pardavimo komisinius; įsigijimo kaina apima pirkimo komisinius (FIFO). Mokesčių deklaracijai perskaičiuokite pagal kursą, kurio reikalauja jūsų mokesčių administratorius.';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

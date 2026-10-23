@@ -782,5 +782,10 @@
   "allocationAccounts": "Эсептер",
   "portfolioFee": "Комиссия ({currency})",
   "portfolioFeeAdd": "Комиссия кошуу",
-  "portfolioFeeRow": "Комиссия: {amount}"
+  "portfolioFeeRow": "Комиссия: {amount}",
+  "portfolioAnnualSummary": "Жылдык корутунду",
+  "portfolioProceeds": "Сатуудан түшкөн каражат",
+  "portfolioCostBasis": "Сатып алуу наркы",
+  "portfolioFeesPaid": "Төлөнгөн комиссия",
+  "portfolioAnnualSummaryNote": "Суммалар баштапкы валютада, которулган эмес. Сатуудан түшкөн каражат сатуу комиссиясы чегерилгенден кийин көрсөтүлөт; сатып алуу наркына сатып алуу комиссиясы кирет (FIFO). Салык декларациясы үчүн салык органыңыз талап кылган курс менен которуңуз."
 }

@@ -2570,6 +2570,22 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Jaaroverzicht';
+
+  @override
+  String get portfolioProceeds => 'Verkoopopbrengst';
+
+  @override
+  String get portfolioCostBasis => 'Verkrijgingsprijs';
+
+  @override
+  String get portfolioFeesPaid => 'Betaalde transactiekosten';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Bedragen in de oorspronkelijke valuta, niet omgerekend. De opbrengst is na aftrek van de transactiekosten bij verkoop; de verkrijgingsprijs is inclusief de transactiekosten bij aankoop (FIFO). Reken voor je belastingaangifte om tegen de wisselkoers die je belastingdienst voorschrijft.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

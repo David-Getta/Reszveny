@@ -2526,6 +2526,22 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'ዓመታዊ ጽማቝ';
+
+  @override
+  String get portfolioProceeds => 'እቶት መሸጣ';
+
+  @override
+  String get portfolioCostBasis => 'ዋጋ ዕድጊት';
+
+  @override
+  String get portfolioFeesPaid => 'ዝተኸፍለ ክፍሊት';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'መጠናት ብመበቆል ባጤራ እዮም፣ ኣይተቐየሩን። እቶት መሸጣ ክፍሊት መሸጣ ተቐኒሱ እዩ፤ ዋጋ ዕድጊት ክፍሊት ዕድጊት የጠቓልል (FIFO)። ንናይ ግብሪ መግለጺኹም፣ ብቲ ቤት ጽሕፈት ግብሪ ዝሓቶ ናይ ገንዘብ ምልውዋጥ ዋጋ ቀይሩ።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

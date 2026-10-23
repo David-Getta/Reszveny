@@ -782,5 +782,10 @@
   "allocationAccounts": "መለያዎች",
   "portfolioFee": "ኮሚሽን ({currency})",
   "portfolioFeeAdd": "ኮሚሽን ያክሉ",
-  "portfolioFeeRow": "ኮሚሽን፦ {amount}"
+  "portfolioFeeRow": "ኮሚሽን፦ {amount}",
+  "portfolioAnnualSummary": "ዓመታዊ ማጠቃለያ",
+  "portfolioProceeds": "የሽያጭ ገቢ",
+  "portfolioCostBasis": "የግዢ ወጪ",
+  "portfolioFeesPaid": "የተከፈለ ኮሚሽን",
+  "portfolioAnnualSummaryNote": "መጠኖቹ በመጀመሪያው ምንዛሬ ናቸው፣ አልተቀየሩም። የሽያጭ ገቢው የሽያጭ ኮሚሽኑ ተቀንሶ ነው፤ የግዢ ወጪው የግዢ ኮሚሽኑን ያካትታል (FIFO)። ለግብር ማስታወቂያዎ የግብር ባለሥልጣንዎ በሚጠይቀው የምንዛሪ ተመን ይቀይሩ።"
 }

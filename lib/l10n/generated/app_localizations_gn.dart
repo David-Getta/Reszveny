@@ -2569,6 +2569,22 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ary ñemombykymi';
+
+  @override
+  String get portfolioProceeds => 'Ñemu repy';
+
+  @override
+  String get portfolioCostBasis => 'Jejogua repy';
+
+  @override
+  String get portfolioFeesPaid => 'Comisión ojehepymeʼẽva';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Pira pire oĩ viru ypykuépe, noñemoambuéi. Ñemu repýgui oñenohẽma ñemu comisión; jejogua repy oguereko jejogua comisión (FIFO). Ne declaración de impuestos-rã, emoambue pe cambio repýpe ojeruréva nde impuesto mburuvicha.';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

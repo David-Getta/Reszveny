@@ -2562,6 +2562,22 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Rezime anyèl';
+
+  @override
+  String get portfolioProceeds => 'Revni lavant';
+
+  @override
+  String get portfolioCostBasis => 'Pri acha';
+
+  @override
+  String get portfolioFeesPaid => 'Komisyon ou peye';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Montan yo nan lajan orijinal la, yo pa konvèti. Revni lavant yo se apre komisyon lavant lan retire; pri acha a gen ladan l komisyon acha a (FIFO). Pou deklarasyon taks ou, konvèti yo nan to chanj otorite taks ou egzije a.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

@@ -782,5 +782,10 @@
   "allocationAccounts": "Akun",
   "portfolioFee": "Biaya ({currency})",
   "portfolioFeeAdd": "Tambihkeun biaya",
-  "portfolioFeeRow": "Biaya: {amount}"
+  "portfolioFeeRow": "Biaya: {amount}",
+  "portfolioAnnualSummary": "Kasimpulan taunan",
+  "portfolioProceeds": "Hasil penjualan",
+  "portfolioCostBasis": "Harga perolehan",
+  "portfolioFeesPaid": "Biaya anu dibayar",
+  "portfolioAnnualSummaryNote": "Jumlah dina mata uang asli, teu dikonvérsi. Hasil penjualan parantos dikirangan biaya penjualan; harga perolehan kalebet biaya pameulian (FIFO). Kanggo laporan pajeg, konvérsi nganggo kurs anu diwajibkeun ku otoritas pajeg anjeun."
 }

@@ -2565,6 +2565,22 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ũhoro mũkuhĩ wa mwaka';
+
+  @override
+  String get portfolioProceeds => 'Mbeca cia ũendia';
+
+  @override
+  String get portfolioCostBasis => 'Thogora wa ũgũri';
+
+  @override
+  String get portfolioFeesPaid => 'Marĩhi marĩhĩtwo';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Mbeca irĩ na mbeca cia mbere, itigarũrĩtwo. Mbeca cia ũendia nĩ ciarutĩrwo marĩhi ma ũendia; thogora wa ũgũri nĩ ũtoonyithĩtie marĩhi ma ũgũri (FIFO). Nĩ ũndũ wa riboti yaku ya igooti, garũra na thogora wa kũgarũra mbeca ũrĩa ũbataranagio nĩ ũthamaki wa igooti.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

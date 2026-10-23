@@ -2571,6 +2571,22 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Pfupiso yegore';
+
+  @override
+  String get portfolioProceeds => 'Mari yezvatengeswa';
+
+  @override
+  String get portfolioCostBasis => 'Mutengo wekutenga';
+
+  @override
+  String get portfolioFeesPaid => 'Mibhadharo yakabhadharwa';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Mari iri mumari yepakutanga, haina kushandurwa. Mari yezvatengeswa yabviswa mubhadharo wekutengesa; mutengo wekutenga unosanganisira mubhadharo wekutenga (FIFO). Pamushumo wako wemutero, shandura nemutengo wekuchinjana mari unodiwa nevakuru vemutero.';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

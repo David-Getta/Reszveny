@@ -7,6 +7,7 @@ import '../../app_services.dart';
 import '../../core/share/share_text.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import 'annual_summary.dart';
 import 'holdings_import.dart';
 import 'cash_dialog.dart';
 import 'portfolio_csv.dart';
@@ -46,6 +47,8 @@ class PortfolioCsvMenu extends StatelessWidget {
               ),
             );
           }
+        } else if (v == 'summary') {
+          if (context.mounted) await showAnnualSummary(context);
         } else if (v == 'realized') {
           await shareText(realizedCsv(services.portfolio.allPositions), subject: 'WhatStock realized-gains.csv');
         } else if (v == 'photo') {
@@ -60,6 +63,13 @@ class PortfolioCsvMenu extends StatelessWidget {
             key: const ValueKey('portfolio-export'),
             value: 'export',
             child: ListTile(leading: const Icon(Icons.ios_share_rounded), title: Text(l10n.portfolioExport)),
+          ),
+        // Éves összesítő (adóbevalláshoz), ha volt eladás, osztalék vagy díj.
+        if (summaryYears(services.portfolio).isNotEmpty)
+          PopupMenuItem(
+            key: const ValueKey('portfolio-annual-summary'),
+            value: 'summary',
+            child: ListTile(leading: const Icon(Icons.summarize_outlined), title: Text(l10n.portfolioAnnualSummary)),
           ),
         if (services.portfolio.lots.any((l) => l.sell))
           PopupMenuItem(

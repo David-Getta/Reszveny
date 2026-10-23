@@ -782,5 +782,10 @@
   "allocationAccounts": "Akun",
   "portfolioFee": "Biaya transaksi ({currency})",
   "portfolioFeeAdd": "Tambahake biaya transaksi",
-  "portfolioFeeRow": "Biaya transaksi: {amount}"
+  "portfolioFeeRow": "Biaya transaksi: {amount}",
+  "portfolioAnnualSummary": "Ringkesan taunan",
+  "portfolioProceeds": "Asil dodolan",
+  "portfolioCostBasis": "Rega tuku",
+  "portfolioFeesPaid": "Biaya transaksi sing dibayar",
+  "portfolioAnnualSummaryNote": "Jumlah ing mata uang asli, ora diowahi. Asil dodolan wis dikurangi biaya transaksi dodolan; rega tuku wis kalebu biaya transaksi tukon (FIFO). Kanggo laporan pajeg, owahana nganggo kurs sing ditetepake panguwasa pajeg sampeyan."
 }

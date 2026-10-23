@@ -2576,6 +2576,22 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Incamake y\'umwaka';
+
+  @override
+  String get portfolioProceeds => 'Amafaranga yavuye mu igurisha';
+
+  @override
+  String get portfolioCostBasis => 'Igiciro cy\'ibyaguzwe';
+
+  @override
+  String get portfolioFeesPaid => 'Komisiyo zishyuwe';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Amafaranga ari mu ifaranga ry\'umwimerere, ntiyahinduwe. Amafaranga yavuye mu igurisha yakuweho komisiyo yo kugurisha; igiciro cy\'ibyaguzwe kirimo komisiyo yo kugura (FIFO). Ku imenyekanisha ry\'umusoro, hindura ku gipimo cy\'ivunjisha gisabwa n\'ikigo cy\'imisoro.';
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

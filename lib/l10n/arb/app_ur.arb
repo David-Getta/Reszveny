@@ -782,5 +782,10 @@
   "allocationAccounts": "اکاؤنٹس",
   "portfolioFee": "فیس ({currency})",
   "portfolioFeeAdd": "فیس شامل کریں",
-  "portfolioFeeRow": "فیس: {amount}"
+  "portfolioFeeRow": "فیس: {amount}",
+  "portfolioAnnualSummary": "سالانہ خلاصہ",
+  "portfolioProceeds": "فروخت کی آمدنی",
+  "portfolioCostBasis": "خریداری کی لاگت",
+  "portfolioFeesPaid": "ادا شدہ فیس",
+  "portfolioAnnualSummaryNote": "رقمیں اصل کرنسی میں ہیں، تبدیل نہیں کی گئیں۔ فروخت کی آمدنی سے فروخت کی فیس منہا کی گئی ہے؛ خریداری کی لاگت میں خریداری کی فیس شامل ہے (FIFO)۔ ٹیکس ریٹرن کے لیے، اس شرح مبادلہ پر تبدیل کریں جو آپ کا ٹیکس محکمہ طلب کرتا ہے۔"
 }

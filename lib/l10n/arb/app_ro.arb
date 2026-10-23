@@ -782,5 +782,10 @@
   "allocationAccounts": "Conturi",
   "portfolioFee": "Comision ({currency})",
   "portfolioFeeAdd": "Adaugă un comision",
-  "portfolioFeeRow": "Comision: {amount}"
+  "portfolioFeeRow": "Comision: {amount}",
+  "portfolioAnnualSummary": "Rezumat anual",
+  "portfolioProceeds": "Încasări din vânzări",
+  "portfolioCostBasis": "Cost de achiziție",
+  "portfolioFeesPaid": "Comisioane plătite",
+  "portfolioAnnualSummaryNote": "Sume în moneda originală, neconvertite. Încasările sunt nete de comisionul de vânzare; costul de achiziție include comisionul de cumpărare (FIFO). Pentru declarația fiscală, convertește la cursul de schimb cerut de autoritatea fiscală."
 }

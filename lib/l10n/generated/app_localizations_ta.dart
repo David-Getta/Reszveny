@@ -2575,6 +2575,22 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'ஆண்டுச் சுருக்கம்';
+
+  @override
+  String get portfolioProceeds => 'விற்பனைத் தொகை';
+
+  @override
+  String get portfolioCostBasis => 'கொள்முதல் செலவு';
+
+  @override
+  String get portfolioFeesPaid => 'செலுத்திய கட்டணம்';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'தொகைகள் அசல் நாணயத்தில், மாற்றப்படவில்லை. விற்பனைத் தொகையில் விற்பனைக் கட்டணம் கழிக்கப்பட்டுள்ளது; கொள்முதல் செலவில் கொள்முதல் கட்டணம் அடங்கும் (FIFO). வரி தாக்கலுக்கு, உங்கள் வரித் துறை கோரும் மாற்று விகிதத்தில் மாற்றவும்.';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

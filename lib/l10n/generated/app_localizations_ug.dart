@@ -2567,6 +2567,22 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'يىللىق خۇلاسە';
+
+  @override
+  String get portfolioProceeds => 'سېتىش كىرىمى';
+
+  @override
+  String get portfolioCostBasis => 'سېتىۋېلىش تەننەرخى';
+
+  @override
+  String get portfolioFeesPaid => 'تۆلەنگەن رەسمىيەت ھەققى';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'سوممىلار ئەسلى پۇل بىرلىكىدە، ئايلاندۇرۇلمىغان. سېتىش كىرىمىدىن سېتىش رەسمىيەت ھەققى چىقىرىۋېتىلگەن؛ سېتىۋېلىش تەننەرخىگە سېتىۋېلىش رەسمىيەت ھەققى كىرىدۇ (FIFO). باج دوكلاتى ئۈچۈن، باج ئورگىنىڭىز تەلەپ قىلغان پېرېۋوت نىسبىتى بويىچە ئايلاندۇرۇڭ.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

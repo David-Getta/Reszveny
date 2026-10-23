@@ -782,5 +782,10 @@
   "allocationAccounts": "ਖਾਤੇ",
   "portfolioFee": "ਫੀਸ ({currency})",
   "portfolioFeeAdd": "ਫੀਸ ਸ਼ਾਮਲ ਕਰੋ",
-  "portfolioFeeRow": "ਫੀਸ: {amount}"
+  "portfolioFeeRow": "ਫੀਸ: {amount}",
+  "portfolioAnnualSummary": "ਸਾਲਾਨਾ ਸਾਰ",
+  "portfolioProceeds": "ਵਿਕਰੀ ਆਮਦਨ",
+  "portfolioCostBasis": "ਖ਼ਰੀਦ ਲਾਗਤ",
+  "portfolioFeesPaid": "ਅਦਾ ਕੀਤੀ ਫੀਸ",
+  "portfolioAnnualSummaryNote": "ਰਕਮਾਂ ਮੂਲ ਮੁਦਰਾ ਵਿੱਚ, ਬਦਲੀਆਂ ਨਹੀਂ ਗਈਆਂ। ਵਿਕਰੀ ਆਮਦਨ ਵਿੱਚੋਂ ਵਿਕਰੀ ਫੀਸ ਘਟਾਈ ਗਈ ਹੈ; ਖ਼ਰੀਦ ਲਾਗਤ ਵਿੱਚ ਖ਼ਰੀਦ ਫੀਸ ਸ਼ਾਮਲ ਹੈ (FIFO)। ਟੈਕਸ ਰਿਟਰਨ ਲਈ, ਆਪਣੇ ਟੈਕਸ ਵਿਭਾਗ ਵੱਲੋਂ ਮੰਗੀ ਵਟਾਂਦਰਾ ਦਰ ’ਤੇ ਬਦਲੋ।"
 }

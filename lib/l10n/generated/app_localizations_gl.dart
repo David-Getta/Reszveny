@@ -2588,6 +2588,22 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Resumo anual';
+
+  @override
+  String get portfolioProceeds => 'Valor de transmisión';
+
+  @override
+  String get portfolioCostBasis => 'Valor de adquisición';
+
+  @override
+  String get portfolioFeesPaid => 'Comisións pagadas';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Importes na moeda orixinal, sen converter. O valor de transmisión é neto da comisión de venda; o valor de adquisición inclúe a comisión de compra (FIFO). Para a declaración da renda, convérteos ao tipo de cambio que esixa a túa administración tributaria.';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

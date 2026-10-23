@@ -2565,6 +2565,22 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Muhtasari wa mwaka';
+
+  @override
+  String get portfolioProceeds => 'Mapato ya mauzo';
+
+  @override
+  String get portfolioCostBasis => 'Gharama ya ununuzi';
+
+  @override
+  String get portfolioFeesPaid => 'Ada zilizolipwa';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Kiasi kiko katika sarafu asili, hakijabadilishwa. Mapato ya mauzo ni baada ya kutoa ada ya mauzo; gharama ya ununuzi inajumuisha ada ya ununuzi (FIFO). Kwa marejesho ya kodi, badilisha kwa kiwango cha ubadilishaji kinachotakiwa na mamlaka ya kodi.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

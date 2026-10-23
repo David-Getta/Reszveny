@@ -782,5 +782,10 @@
   "allocationAccounts": "الحسابات",
   "portfolioFee": "العمولة ({currency})",
   "portfolioFeeAdd": "إضافة عمولة",
-  "portfolioFeeRow": "العمولة: {amount}"
+  "portfolioFeeRow": "العمولة: {amount}",
+  "portfolioAnnualSummary": "الملخص السنوي",
+  "portfolioProceeds": "عائدات البيع",
+  "portfolioCostBasis": "تكلفة الاقتناء",
+  "portfolioFeesPaid": "العمولات المدفوعة",
+  "portfolioAnnualSummaryNote": "المبالغ بالعملة الأصلية دون تحويل. عائدات البيع صافية بعد خصم عمولة البيع؛ وتشمل تكلفة الاقتناء عمولة الشراء (FIFO). لإقرارك الضريبي، حوِّل المبالغ بسعر الصرف الذي تشترطه مصلحة الضرائب لديك."
 }

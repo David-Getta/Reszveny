@@ -782,5 +782,10 @@
   "allocationAccounts": "Mga account",
   "portfolioFee": "Komisyon ({currency})",
   "portfolioFeeAdd": "Idugang ang komisyon",
-  "portfolioFeeRow": "Komisyon: {amount}"
+  "portfolioFeeRow": "Komisyon: {amount}",
+  "portfolioAnnualSummary": "Tinuig nga katingbanan",
+  "portfolioProceeds": "Kita sa pagbaligya",
+  "portfolioCostBasis": "Gasto sa pagpalit",
+  "portfolioFeesPaid": "Nabayad nga komisyon",
+  "portfolioAnnualSummaryNote": "Mga kantidad sa orihinal nga currency, wala gi-convert. Ang kita sa pagbaligya net na sa komisyon sa pagbaligya; ang gasto sa pagpalit naglakip sa komisyon sa pagpalit (FIFO). Para sa imong tax return, i-convert sa exchange rate nga gikinahanglan sa imong tax authority."
 }

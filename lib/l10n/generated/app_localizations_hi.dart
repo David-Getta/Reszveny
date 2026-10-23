@@ -2562,6 +2562,22 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'वार्षिक सारांश';
+
+  @override
+  String get portfolioProceeds => 'बिक्री राशि';
+
+  @override
+  String get portfolioCostBasis => 'अधिग्रहण लागत';
+
+  @override
+  String get portfolioFeesPaid => 'चुकाया गया ब्रोकरेज';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'राशियाँ मूल मुद्रा में हैं, बदली नहीं गईं। बिक्री राशि में से बिक्री का ब्रोकरेज घटाया गया है; अधिग्रहण लागत में खरीद का ब्रोकरेज शामिल है (FIFO)। टैक्स रिटर्न के लिए उस विनिमय दर पर बदलें जो आपका कर विभाग मांगता है।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

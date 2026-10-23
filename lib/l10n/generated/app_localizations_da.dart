@@ -2563,6 +2563,22 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Årsoversigt';
+
+  @override
+  String get portfolioProceeds => 'Salgssum';
+
+  @override
+  String get portfolioCostBasis => 'Anskaffelsessum';
+
+  @override
+  String get portfolioFeesPaid => 'Betalt kurtage';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Beløb i den oprindelige valuta, ikke omregnet. Salgssummen er fratrukket kurtagen ved salg; anskaffelsessummen omfatter kurtagen ved køb (FIFO). Til selvangivelsen skal du omregne til den valutakurs, som skattemyndighederne kræver.';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

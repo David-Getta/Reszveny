@@ -2576,6 +2576,22 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Tinuig nga katingbanan';
+
+  @override
+  String get portfolioProceeds => 'Kita sa pagbaligya';
+
+  @override
+  String get portfolioCostBasis => 'Gasto sa pagpalit';
+
+  @override
+  String get portfolioFeesPaid => 'Nabayad nga komisyon';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Mga kantidad sa orihinal nga currency, wala gi-convert. Ang kita sa pagbaligya net na sa komisyon sa pagbaligya; ang gasto sa pagpalit naglakip sa komisyon sa pagpalit (FIFO). Para sa imong tax return, i-convert sa exchange rate nga gikinahanglan sa imong tax authority.';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

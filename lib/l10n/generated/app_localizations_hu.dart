@@ -2569,6 +2569,22 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Éves összesítő';
+
+  @override
+  String get portfolioProceeds => 'Eladási bevétel';
+
+  @override
+  String get portfolioCostBasis => 'Szerzési érték';
+
+  @override
+  String get portfolioFeesPaid => 'Fizetett jutalék';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Az összegek az eredeti pénznemben, átváltás nélkül. A bevételből az eladás jutaléka már levonva, a szerzési érték a vétel jutalékával együtt (FIFO). A bevalláshoz az adóhatóság által előírt árfolyamon számolj át.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

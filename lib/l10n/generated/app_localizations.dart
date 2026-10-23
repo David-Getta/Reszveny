@@ -4435,6 +4435,36 @@ abstract class AppLocalizations {
   /// **'Fee: {amount}'**
   String portfolioFeeRow(String amount);
 
+  /// Portfolio menu item and sheet title: per year, per account and currency, the realized gains, sales proceeds, cost basis, dividends received and fees paid – for the tax return.
+  ///
+  /// In en, this message translates to:
+  /// **'Annual summary'**
+  String get portfolioAnnualSummary;
+
+  /// Row in the annual summary: total proceeds of the sales in that year (net of the sale fees).
+  ///
+  /// In en, this message translates to:
+  /// **'Sales proceeds'**
+  String get portfolioProceeds;
+
+  /// Row in the annual summary: the FIFO purchase cost of the shares sold in that year (including purchase fees).
+  ///
+  /// In en, this message translates to:
+  /// **'Cost basis'**
+  String get portfolioCostBasis;
+
+  /// Row in the annual summary: broker fees (commissions) paid on purchases and sales in that year.
+  ///
+  /// In en, this message translates to:
+  /// **'Fees paid'**
+  String get portfolioFeesPaid;
+
+  /// Note at the bottom of the annual summary sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Amounts in the original currency, not converted. Proceeds are net of the sale fee; the cost basis includes the purchase fee (FIFO). For your tax return, convert at the exchange rate your tax authority requires.'**
+  String get portfolioAnnualSummaryNote;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

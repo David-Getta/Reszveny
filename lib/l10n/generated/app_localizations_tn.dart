@@ -2583,6 +2583,22 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Kakaretso ya ngwaga';
+
+  @override
+  String get portfolioProceeds => 'Letseno la thekiso';
+
+  @override
+  String get portfolioCostBasis => 'Ditshenyegelo tsa go reka';
+
+  @override
+  String get portfolioFeesPaid => 'Dituelo tse di duetsweng';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Madi a mo mading a ntlha, ga a a fetolwa. Letseno la thekiso ke morago ga go ntsha tuelo ya thekiso; ditshenyegelo tsa go reka di akaretsa tuelo ya theko (FIFO). Go tlhagisa lekgetho la gago, fetola ka tlhwatlhwa ya phetolo e bothati jwa lekgetho bo e tlhokang.';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

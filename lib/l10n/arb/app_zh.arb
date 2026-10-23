@@ -782,5 +782,10 @@
   "allocationAccounts": "账户",
   "portfolioFee": "手续费 ({currency})",
   "portfolioFeeAdd": "添加手续费",
-  "portfolioFeeRow": "手续费：{amount}"
+  "portfolioFeeRow": "手续费：{amount}",
+  "portfolioAnnualSummary": "年度汇总",
+  "portfolioProceeds": "卖出收入",
+  "portfolioCostBasis": "取得成本",
+  "portfolioFeesPaid": "已付手续费",
+  "portfolioAnnualSummaryNote": "金额为原币种，未经换算。卖出收入已扣除卖出手续费；取得成本含买入手续费（FIFO）。报税时请按税务机关要求的汇率换算。"
 }

@@ -2572,6 +2572,22 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Tshikoso tsha tshidimu';
+
+  @override
+  String get portfolioProceeds => 'Makuta a kusumbisha';
+
+  @override
+  String get portfolioCostBasis => 'Mushinga wa kusumba';
+
+  @override
+  String get portfolioFeesPaid => 'Makuta a mudimu afutabu';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Makuta adi mu makuta a kumpala, kaavua mashintulula to. Makuta a kusumbisha adi mumane kuumusha makuta a mudimu a kusumbisha; mushinga wa kusumba udi ne makuta a mudimu a kusumba (FIFO). Bua mukanda webe wa mpaku, shintulula ku mushinga wa dishintuluija udi bakokeshi ba mpaku bakulomba.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

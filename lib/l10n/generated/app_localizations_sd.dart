@@ -2555,6 +2555,22 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'سالياني خلاصو';
+
+  @override
+  String get portfolioProceeds => 'وڪري جي آمدني';
+
+  @override
+  String get portfolioCostBasis => 'خريد جي لاڳت';
+
+  @override
+  String get portfolioFeesPaid => 'ادا ڪيل فيس';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'رقمون اصل ڪرنسي ۾، تبديل ڪيل ناهن. وڪري جي آمدني مان وڪري جي فيس ڪٽيل آهي؛ خريد جي لاڳت ۾ خريد جي فيس شامل آهي (FIFO). ٽيڪس ريٽرن لاءِ، ان مٽاسٽا جي شرح تي تبديل ڪريو جيڪا توهان جو ٽيڪس کاتو گهري ٿو.';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

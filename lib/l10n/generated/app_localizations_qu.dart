@@ -2577,6 +2577,22 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Watapa pisichay';
+
+  @override
+  String get portfolioProceeds => 'Rantikusqamanta qullqi';
+
+  @override
+  String get portfolioCostBasis => 'Rantisqa chanin';
+
+  @override
+  String get portfolioFeesPaid => 'Pagasqa comisión';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Qullqikuna ñawpaq qullqinpi, mana tikrasqa. Rantikusqamanta qullqiqa rantikuy comisionta qichusqañam; rantisqa chaninqa rantiy comisionta hap\'in (FIFO). Impuesto willakuyniykipaq, impuesto kamachiq munasqan cambiowan tikray.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

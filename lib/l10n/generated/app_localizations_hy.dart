@@ -2572,6 +2572,22 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Տարեկան ամփոփում';
+
+  @override
+  String get portfolioProceeds => 'Վաճառքից հասույթ';
+
+  @override
+  String get portfolioCostBasis => 'Ձեռքբերման արժեք';
+
+  @override
+  String get portfolioFeesPaid => 'Վճարված միջնորդավճար';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Գումարները սկզբնական արժույթով են՝ առանց փոխարկման։ Վաճառքից հասույթը ներկայացված է վաճառքի միջնորդավճարը հանած, իսկ ձեռքբերման արժեքը ներառում է գնման միջնորդավճարը (FIFO)։ Հարկային հայտարարագրի համար փոխարկեք այն փոխարժեքով, որը պահանջում է ձեր հարկային մարմինը։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

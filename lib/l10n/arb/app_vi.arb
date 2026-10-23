@@ -782,5 +782,10 @@
   "allocationAccounts": "Tài khoản",
   "portfolioFee": "Phí giao dịch ({currency})",
   "portfolioFeeAdd": "Thêm phí",
-  "portfolioFeeRow": "Phí: {amount}"
+  "portfolioFeeRow": "Phí: {amount}",
+  "portfolioAnnualSummary": "Tổng kết năm",
+  "portfolioProceeds": "Tiền thu từ bán",
+  "portfolioCostBasis": "Giá vốn",
+  "portfolioFeesPaid": "Phí đã trả",
+  "portfolioAnnualSummaryNote": "Số tiền theo đồng tiền gốc, không quy đổi. Tiền thu từ bán đã trừ phí bán; giá vốn đã gồm phí mua (FIFO). Khi khai thuế, hãy quy đổi theo tỷ giá mà cơ quan thuế yêu cầu."
 }

@@ -782,5 +782,10 @@
   "allocationAccounts": "கணக்குகள்",
   "portfolioFee": "கட்டணம் ({currency})",
   "portfolioFeeAdd": "கட்டணத்தைச் சேர்",
-  "portfolioFeeRow": "கட்டணம்: {amount}"
+  "portfolioFeeRow": "கட்டணம்: {amount}",
+  "portfolioAnnualSummary": "ஆண்டுச் சுருக்கம்",
+  "portfolioProceeds": "விற்பனைத் தொகை",
+  "portfolioCostBasis": "கொள்முதல் செலவு",
+  "portfolioFeesPaid": "செலுத்திய கட்டணம்",
+  "portfolioAnnualSummaryNote": "தொகைகள் அசல் நாணயத்தில், மாற்றப்படவில்லை. விற்பனைத் தொகையில் விற்பனைக் கட்டணம் கழிக்கப்பட்டுள்ளது; கொள்முதல் செலவில் கொள்முதல் கட்டணம் அடங்கும் (FIFO). வரி தாக்கலுக்கு, உங்கள் வரித் துறை கோரும் மாற்று விகிதத்தில் மாற்றவும்."
 }

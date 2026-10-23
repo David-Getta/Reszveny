@@ -2570,6 +2570,22 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Riepilogo annuale';
+
+  @override
+  String get portfolioProceeds => 'Corrispettivo di vendita';
+
+  @override
+  String get portfolioCostBasis => 'Costo di acquisto';
+
+  @override
+  String get portfolioFeesPaid => 'Commissioni pagate';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Importi nella valuta originale, non convertiti. Il corrispettivo è al netto della commissione di vendita; il costo di acquisto include la commissione di acquisto (FIFO). Per la dichiarazione dei redditi, converti al tasso di cambio richiesto dalla tua amministrazione fiscale.';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

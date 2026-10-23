@@ -2630,6 +2630,22 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ročný prehľad';
+
+  @override
+  String get portfolioProceeds => 'Príjem z predaja';
+
+  @override
+  String get portfolioCostBasis => 'Obstarávacia cena';
+
+  @override
+  String get portfolioFeesPaid => 'Zaplatené poplatky';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Sumy v pôvodnej mene, bez prepočtu. Príjem z predaja je po odpočítaní poplatku pri predaji; obstarávacia cena zahŕňa poplatok pri nákupe (FIFO). Na daňové priznanie prepočítajte kurzom, ktorý vyžaduje váš daňový úrad.';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

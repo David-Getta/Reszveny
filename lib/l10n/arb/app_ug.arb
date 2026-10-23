@@ -782,5 +782,10 @@
   "allocationAccounts": "ھېساباتلار",
   "portfolioFee": "رەسمىيەت ھەققى ({currency})",
   "portfolioFeeAdd": "رەسمىيەت ھەققى قوشۇش",
-  "portfolioFeeRow": "رەسمىيەت ھەققى: {amount}"
+  "portfolioFeeRow": "رەسمىيەت ھەققى: {amount}",
+  "portfolioAnnualSummary": "يىللىق خۇلاسە",
+  "portfolioProceeds": "سېتىش كىرىمى",
+  "portfolioCostBasis": "سېتىۋېلىش تەننەرخى",
+  "portfolioFeesPaid": "تۆلەنگەن رەسمىيەت ھەققى",
+  "portfolioAnnualSummaryNote": "سوممىلار ئەسلى پۇل بىرلىكىدە، ئايلاندۇرۇلمىغان. سېتىش كىرىمىدىن سېتىش رەسمىيەت ھەققى چىقىرىۋېتىلگەن؛ سېتىۋېلىش تەننەرخىگە سېتىۋېلىش رەسمىيەت ھەققى كىرىدۇ (FIFO). باج دوكلاتى ئۈچۈن، باج ئورگىنىڭىز تەلەپ قىلغان پېرېۋوت نىسبىتى بويىچە ئايلاندۇرۇڭ."
 }

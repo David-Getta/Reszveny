@@ -2566,6 +2566,22 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Kurteya salane';
+
+  @override
+  String get portfolioProceeds => 'Dahata firotinê';
+
+  @override
+  String get portfolioCostBasis => 'Lêçûna kirînê';
+
+  @override
+  String get portfolioFeesPaid => 'Komîsyona dayî';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Mîqdar bi diravê eslî ne, nehatine veguhertin. Dahata firotinê piştî derxistina komîsyona firotinê ye; lêçûna kirînê komîsyona kirînê dihewîne (FIFO). Ji bo daxuyaniya bacê, bi rêjeya danûstandinê ya ku rayedarê bacê dixwaze veguherîne.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

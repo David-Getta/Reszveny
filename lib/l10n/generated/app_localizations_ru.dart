@@ -2632,6 +2632,22 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Итоги за год';
+
+  @override
+  String get portfolioProceeds => 'Выручка от продаж';
+
+  @override
+  String get portfolioCostBasis => 'Стоимость приобретения';
+
+  @override
+  String get portfolioFeesPaid => 'Уплаченные комиссии';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Суммы в исходной валюте, без пересчёта. Выручка указана за вычетом комиссии при продаже; стоимость приобретения включает комиссию при покупке (FIFO). Для налоговой декларации пересчитайте по курсу, который требует ваша налоговая служба.';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

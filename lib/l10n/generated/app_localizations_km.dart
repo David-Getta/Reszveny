@@ -2543,6 +2543,22 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'សេចក្តីសង្ខេបប្រចាំឆ្នាំ';
+
+  @override
+  String get portfolioProceeds => 'ចំណូលពីការលក់';
+
+  @override
+  String get portfolioCostBasis => 'ថ្លៃដើមទិញ';
+
+  @override
+  String get portfolioFeesPaid => 'កម្រៃជើងសារដែលបានបង់';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'ចំនួនទឹកប្រាក់ជារូបិយប័ណ្ណដើម មិនបានបម្លែងទេ។ ចំណូលពីការលក់គឺក្រោយកាត់កម្រៃជើងសារលក់ ហើយថ្លៃដើមទិញរួមបញ្ចូលកម្រៃជើងសារទិញ (FIFO)។ សម្រាប់ការប្រកាសពន្ធ សូមបម្លែងតាមអត្រាប្តូរប្រាក់ដែលអាជ្ញាធរពន្ធដាររបស់អ្នកតម្រូវ។';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

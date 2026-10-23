@@ -782,5 +782,10 @@
   "allocationAccounts": "Jatew",
   "portfolioFee": "Sara ({currency})",
   "portfolioFeeAdd": "Sara dɔ fara a kan",
-  "portfolioFeeRow": "Sara: {amount}"
+  "portfolioFeeRow": "Sara: {amount}",
+  "portfolioAnnualSummary": "San jatebɔ",
+  "portfolioProceeds": "Feereli wari",
+  "portfolioCostBasis": "Sanni sɔngɔ",
+  "portfolioFeesPaid": "Sara saralenw",
+  "portfolioAnnualSummaryNote": "Wari hakɛw bɛ wari fɔlɔ la, u ma falen. Feereli sara bɔlen don feereli wari la; sanni sara bɛ sanni sɔngɔ la (FIFO). I ka nisɔngɔ dantigɛli kama, u falen ni wari falen sɔngɔ ye min i ka nisɔngɔ ɲɛmɔgɔw b'a fɛ."
 }

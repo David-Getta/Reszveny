@@ -782,5 +782,10 @@
   "allocationAccounts": "Akoonnada",
   "portfolioFee": "Khidmad ({currency})",
   "portfolioFeeAdd": "Ku dar khidmad",
-  "portfolioFeeRow": "Khidmad: {amount}"
+  "portfolioFeeRow": "Khidmad: {amount}",
+  "portfolioAnnualSummary": "Soo koobid sannadeed",
+  "portfolioProceeds": "Dakhliga iibka",
+  "portfolioCostBasis": "Kharashka iibsiga",
+  "portfolioFeesPaid": "Khidmadda la bixiyay",
+  "portfolioAnnualSummaryNote": "Lacagaha waa lacagta asalka ah, lama beddelin. Dakhliga iibka waxaa laga jaray khidmadda iibka; kharashka iibsiga waxaa ku jira khidmadda iibsiga (FIFO). Canshuur celintaada, ku beddel sicirka sarrifka ay hay'adda canshuurtu dalbato."
 }

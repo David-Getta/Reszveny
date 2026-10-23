@@ -2572,6 +2572,22 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Soo koobid sannadeed';
+
+  @override
+  String get portfolioProceeds => 'Dakhliga iibka';
+
+  @override
+  String get portfolioCostBasis => 'Kharashka iibsiga';
+
+  @override
+  String get portfolioFeesPaid => 'Khidmadda la bixiyay';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Lacagaha waa lacagta asalka ah, lama beddelin. Dakhliga iibka waxaa laga jaray khidmadda iibka; kharashka iibsiga waxaa ku jira khidmadda iibsiga (FIFO). Canshuur celintaada, ku beddel sicirka sarrifka ay hay\'adda canshuurtu dalbato.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

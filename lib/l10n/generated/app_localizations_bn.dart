@@ -2562,6 +2562,22 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'বার্ষিক সারাংশ';
+
+  @override
+  String get portfolioProceeds => 'বিক্রয় আয়';
+
+  @override
+  String get portfolioCostBasis => 'ক্রয়মূল্য';
+
+  @override
+  String get portfolioFeesPaid => 'পরিশোধিত কমিশন';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'পরিমাণগুলো মূল মুদ্রায়, রূপান্তর করা হয়নি। বিক্রয় আয় বিক্রির কমিশন বাদ দিয়ে দেখানো; ক্রয়মূল্যে ক্রয়ের কমিশন অন্তর্ভুক্ত (FIFO)। কর রিটার্নের জন্য আপনার কর কর্তৃপক্ষ যে বিনিময় হার চায়, সেই হারে রূপান্তর করুন।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

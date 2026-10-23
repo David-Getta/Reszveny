@@ -2576,6 +2576,22 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Isishwankathelo sonyaka';
+
+  @override
+  String get portfolioProceeds => 'Ingeniso yokuthengisa';
+
+  @override
+  String get portfolioCostBasis => 'Iindleko zokuthenga';
+
+  @override
+  String get portfolioFeesPaid => 'Iifizi ezihlawuliweyo';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Izixa zikwimali yokuqala, aziguqulwanga. Ingeniso yokuthengisa sele kutsalwe ifizi yokuthengisa; iindleko zokuthenga ziquka ifizi yokuthenga (FIFO). Kwingxelo yakho yerhafu, guqula ngexabiso lotshintshiselwano elifunwa ligunya lerhafu.';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

@@ -2564,6 +2564,22 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'سالانہ خلاصہ';
+
+  @override
+  String get portfolioProceeds => 'فروخت کی آمدنی';
+
+  @override
+  String get portfolioCostBasis => 'خریداری کی لاگت';
+
+  @override
+  String get portfolioFeesPaid => 'ادا شدہ فیس';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'رقمیں اصل کرنسی میں ہیں، تبدیل نہیں کی گئیں۔ فروخت کی آمدنی سے فروخت کی فیس منہا کی گئی ہے؛ خریداری کی لاگت میں خریداری کی فیس شامل ہے (FIFO)۔ ٹیکس ریٹرن کے لیے، اس شرح مبادلہ پر تبدیل کریں جو آپ کا ٹیکس محکمہ طلب کرتا ہے۔';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

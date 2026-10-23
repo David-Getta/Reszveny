@@ -782,5 +782,10 @@
   "allocationAccounts": "חשבונות",
   "portfolioFee": "עמלה ({currency})",
   "portfolioFeeAdd": "הוספת עמלה",
-  "portfolioFeeRow": "עמלה: {amount}"
+  "portfolioFeeRow": "עמלה: {amount}",
+  "portfolioAnnualSummary": "סיכום שנתי",
+  "portfolioProceeds": "תמורת המכירה",
+  "portfolioCostBasis": "מחיר מקורי",
+  "portfolioFeesPaid": "עמלות ששולמו",
+  "portfolioAnnualSummaryNote": "הסכומים במטבע המקורי, ללא המרה. התמורה היא בניכוי עמלת המכירה; המחיר המקורי כולל את עמלת הקנייה (FIFO). לדוח המס יש להמיר לפי שער החליפין שרשות המסים דורשת."
 }

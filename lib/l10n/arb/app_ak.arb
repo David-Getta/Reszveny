@@ -782,5 +782,10 @@
   "allocationAccounts": "Akontaabu",
   "portfolioFee": "Akatua ({currency})",
   "portfolioFeeAdd": "Fa akatua bi ka ho",
-  "portfolioFeeRow": "Akatua: {amount}"
+  "portfolioFeeRow": "Akatua: {amount}",
+  "portfolioAnnualSummary": "Afe nsɛm tiawa",
+  "portfolioProceeds": "Adetɔn mu sika",
+  "portfolioCostBasis": "Adetɔ ka",
+  "portfolioFeesPaid": "Akatua a wotuae",
+  "portfolioAnnualSummaryNote": "Sika dodow no wɔ sika a edi kan no mu, wɔnsesaa no. Wɔayi adetɔn akatua no afi adetɔn mu sika no mu; adetɔ ka no ka adetɔ akatua no ho (FIFO). Ma wo tow ho nsɛm, sesa no wɔ sika sesa bo a wo tow adwumakuw hwehwɛ no so."
 }

@@ -2561,6 +2561,22 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'වාර්ෂික සාරාංශය';
+
+  @override
+  String get portfolioProceeds => 'විකුණුම් ආදායම';
+
+  @override
+  String get portfolioCostBasis => 'මිලදී ගැනීමේ පිරිවැය';
+
+  @override
+  String get portfolioFeesPaid => 'ගෙවූ ගාස්තු';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'මුදල් මුල් මුදල් වර්ගයෙන්, පරිවර්තනය කර නැත. විකුණුම් ආදායමෙන් විකුණුම් ගාස්තුව අඩු කර ඇත; මිලදී ගැනීමේ පිරිවැයට මිලදී ගැනීමේ ගාස්තුව ඇතුළත් වේ (FIFO). බදු වාර්තාව සඳහා, ඔබේ බදු අධිකාරිය නියම කරන විනිමය අනුපාතයට පරිවර්තනය කරන්න.';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

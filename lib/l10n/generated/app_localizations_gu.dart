@@ -2559,6 +2559,22 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'વાર્ષિક સારાંશ';
+
+  @override
+  String get portfolioProceeds => 'વેચાણની આવક';
+
+  @override
+  String get portfolioCostBasis => 'ખરીદ ખર્ચ';
+
+  @override
+  String get portfolioFeesPaid => 'ચૂકવેલ બ્રોકરેજ';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'રકમો મૂળ કરન્સીમાં છે, રૂપાંતરિત નથી. વેચાણની આવક વેચાણનું બ્રોકરેજ બાદ કરીને છે; ખરીદ ખર્ચમાં ખરીદીનું બ્રોકરેજ સામેલ છે (FIFO). ટેક્સ રિટર્ન માટે તમારા કર સત્તાવાળા માગે તે વિનિમય દરે રૂપાંતર કરો.';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

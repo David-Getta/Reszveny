@@ -782,5 +782,10 @@
   "allocationAccounts": "ખાતાં",
   "portfolioFee": "બ્રોકરેજ ({currency})",
   "portfolioFeeAdd": "બ્રોકરેજ ઉમેરો",
-  "portfolioFeeRow": "બ્રોકરેજ: {amount}"
+  "portfolioFeeRow": "બ્રોકરેજ: {amount}",
+  "portfolioAnnualSummary": "વાર્ષિક સારાંશ",
+  "portfolioProceeds": "વેચાણની આવક",
+  "portfolioCostBasis": "ખરીદ ખર્ચ",
+  "portfolioFeesPaid": "ચૂકવેલ બ્રોકરેજ",
+  "portfolioAnnualSummaryNote": "રકમો મૂળ કરન્સીમાં છે, રૂપાંતરિત નથી. વેચાણની આવક વેચાણનું બ્રોકરેજ બાદ કરીને છે; ખરીદ ખર્ચમાં ખરીદીનું બ્રોકરેજ સામેલ છે (FIFO). ટેક્સ રિટર્ન માટે તમારા કર સત્તાવાળા માગે તે વિનિમય દરે રૂપાંતર કરો."
 }

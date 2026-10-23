@@ -782,5 +782,10 @@
   "allocationAccounts": "Diakhaonto",
   "portfolioFee": "Tefello ({currency})",
   "portfolioFeeAdd": "Eketsa tefello",
-  "portfolioFeeRow": "Tefello: {amount}"
+  "portfolioFeeRow": "Tefello: {amount}",
+  "portfolioAnnualSummary": "Kakaretso ya selemo",
+  "portfolioProceeds": "Lekeno la thekiso",
+  "portfolioCostBasis": "Ditshenyehelo tsa ho reka",
+  "portfolioFeesPaid": "Ditefello tse lefilweng",
+  "portfolioAnnualSummaryNote": "Dichelete di ka chelete ya pele, ha di a fetolwa. Lekeno la thekiso ke kamora ho tlosa tefello ya thekiso; ditshenyehelo tsa ho reka di kenyeletsa tefello ya theko (FIFO). Bakeng sa tlaleho ya hao ya lekgetho, fetola ka sekgahla sa phapanyetsano se hlokwang ke bolaodi ba lekgetho."
 }

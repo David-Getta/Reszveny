@@ -782,5 +782,10 @@
   "allocationAccounts": "ଆକାଉଣ୍ଟ",
   "portfolioFee": "ଶୁଳ୍କ ({currency})",
   "portfolioFeeAdd": "ଶୁଳ୍କ ଯୋଡ଼ନ୍ତୁ",
-  "portfolioFeeRow": "ଶୁଳ୍କ: {amount}"
+  "portfolioFeeRow": "ଶୁଳ୍କ: {amount}",
+  "portfolioAnnualSummary": "ବାର୍ଷିକ ସାରାଂଶ",
+  "portfolioProceeds": "ବିକ୍ରି ଆୟ",
+  "portfolioCostBasis": "କ୍ରୟ ମୂଲ୍ୟ",
+  "portfolioFeesPaid": "ଦେଇଥିବା ଶୁଳ୍କ",
+  "portfolioAnnualSummaryNote": "ରାଶି ମୂଳ ମୁଦ୍ରାରେ, ରୂପାନ୍ତରିତ ନୁହେଁ। ବିକ୍ରି ଆୟରୁ ବିକ୍ରି ଶୁଳ୍କ କଟାଯାଇଛି; କ୍ରୟ ମୂଲ୍ୟରେ କ୍ରୟ ଶୁଳ୍କ ସାମିଲ (FIFO)। ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ, ଆପଣଙ୍କ ଟିକସ ବିଭାଗ ଆବଶ୍ୟକ କରୁଥିବା ବିନିମୟ ଦରରେ ରୂପାନ୍ତର କରନ୍ତୁ।"
 }

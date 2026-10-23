@@ -782,5 +782,10 @@
   "allocationAccounts": "Ama-akhawunti",
   "portfolioFee": "Inkokhelo ({currency})",
   "portfolioFeeAdd": "Engeza inkokhelo",
-  "portfolioFeeRow": "Inkokhelo: {amount}"
+  "portfolioFeeRow": "Inkokhelo: {amount}",
+  "portfolioAnnualSummary": "Isifinyezo sonyaka",
+  "portfolioProceeds": "Imali yokuthengisa",
+  "portfolioCostBasis": "Izindleko zokuthenga",
+  "portfolioFeesPaid": "Izinkokhelo ezikhokhiwe",
+  "portfolioAnnualSummaryNote": "Amanani asemalini yokuqala, awaguqulwanga. Imali yokuthengisa isikhishwe inkokhelo yokuthengisa; izindleko zokuthenga zifaka inkokhelo yokuthenga (FIFO). Embikweni wakho wentela, guqula ngezinga lokushintshaniswa kwemali elidingwa yisiphathimandla sentela."
 }

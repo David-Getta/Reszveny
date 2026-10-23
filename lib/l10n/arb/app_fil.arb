@@ -782,5 +782,10 @@
   "allocationAccounts": "Mga account",
   "portfolioFee": "Komisyon ({currency})",
   "portfolioFeeAdd": "Magdagdag ng komisyon",
-  "portfolioFeeRow": "Komisyon: {amount}"
+  "portfolioFeeRow": "Komisyon: {amount}",
+  "portfolioAnnualSummary": "Taunang buod",
+  "portfolioProceeds": "Kita sa pagbenta",
+  "portfolioCostBasis": "Halaga ng pagbili",
+  "portfolioFeesPaid": "Binayarang komisyon",
+  "portfolioAnnualSummaryNote": "Mga halaga sa orihinal na currency, hindi naka-convert. Bawas na sa kita sa pagbenta ang komisyon sa pagbenta; kasama sa halaga ng pagbili ang komisyon sa pagbili (FIFO). Para sa iyong tax return, i-convert sa exchange rate na hinihingi ng iyong tax authority."
 }

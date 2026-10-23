@@ -2531,6 +2531,22 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'ዓመታዊ ማጠቃለያ';
+
+  @override
+  String get portfolioProceeds => 'የሽያጭ ገቢ';
+
+  @override
+  String get portfolioCostBasis => 'የግዢ ወጪ';
+
+  @override
+  String get portfolioFeesPaid => 'የተከፈለ ኮሚሽን';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'መጠኖቹ በመጀመሪያው ምንዛሬ ናቸው፣ አልተቀየሩም። የሽያጭ ገቢው የሽያጭ ኮሚሽኑ ተቀንሶ ነው፤ የግዢ ወጪው የግዢ ኮሚሽኑን ያካትታል (FIFO)። ለግብር ማስታወቂያዎ የግብር ባለሥልጣንዎ በሚጠይቀው የምንዛሪ ተመን ይቀይሩ።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

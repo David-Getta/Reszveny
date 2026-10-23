@@ -782,5 +782,10 @@
   "allocationAccounts": "Računi",
   "portfolioFee": "Provizija ({currency})",
   "portfolioFeeAdd": "Dodaj provizijo",
-  "portfolioFeeRow": "Provizija: {amount}"
+  "portfolioFeeRow": "Provizija: {amount}",
+  "portfolioAnnualSummary": "Letni povzetek",
+  "portfolioProceeds": "Vrednost ob odsvojitvi",
+  "portfolioCostBasis": "Nabavna vrednost",
+  "portfolioFeesPaid": "Plačane provizije",
+  "portfolioAnnualSummaryNote": "Zneski v izvirni valuti, brez preračuna. Vrednost ob odsvojitvi je zmanjšana za provizijo pri prodaji; nabavna vrednost vključuje provizijo pri nakupu (FIFO). Za davčno napoved preračunajte po tečaju, ki ga zahteva vaš davčni organ."
 }

@@ -2559,6 +2559,22 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Nchịkọta afọ';
+
+  @override
+  String get portfolioProceeds => 'Ego e nwetara n\'ire';
+
+  @override
+  String get portfolioCostBasis => 'Ọnụ ahịa ịzụta';
+
+  @override
+  String get portfolioFeesPaid => 'Ụgwọ ọrụ akwụrụ';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Ego ndị a dị n\'ego mbụ, a gbanweghị ha. E wepụla ụgwọ ọrụ ire n\'ego e nwetara n\'ire; ọnụ ahịa ịzụta gụnyere ụgwọ ọrụ ịzụta (FIFO). Maka akụkọ ụtụ isi gị, gbanwee ha n\'ọnụego mgbanwe nke ndị ọchịchị ụtụ isi gị chọrọ.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

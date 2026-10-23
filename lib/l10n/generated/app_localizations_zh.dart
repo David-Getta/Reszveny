@@ -2451,6 +2451,22 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => '年度汇总';
+
+  @override
+  String get portfolioProceeds => '卖出收入';
+
+  @override
+  String get portfolioCostBasis => '取得成本';
+
+  @override
+  String get portfolioFeesPaid => '已付手续费';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      '金额为原币种，未经换算。卖出收入已扣除卖出手续费；取得成本含买入手续费（FIFO）。报税时请按税务机关要求的汇率换算。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5269,6 +5285,22 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String portfolioFeeRow(String amount) {
     return '佣金：$amount';
   }
+
+  @override
+  String get portfolioAnnualSummary => '年度摘要';
+
+  @override
+  String get portfolioProceeds => '出售所得';
+
+  @override
+  String get portfolioCostBasis => '購入成本';
+
+  @override
+  String get portfolioFeesPaid => '已付佣金';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      '金額以原貨幣列示，未經換算。出售所得已扣除賣出佣金；購入成本已包括買入佣金（FIFO）。報稅時請按稅務機關要求的匯率換算。';
 
   @override
   String get portfolioGoalSet => '設定目標';

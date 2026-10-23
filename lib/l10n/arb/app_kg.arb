@@ -782,5 +782,10 @@
   "allocationAccounts": "Bakonti",
   "portfolioFee": "Frè ({currency})",
   "portfolioFeeAdd": "Yika frè",
-  "portfolioFeeRow": "Frè: {amount}"
+  "portfolioFeeRow": "Frè: {amount}",
+  "portfolioAnnualSummary": "Nkufi ya mvula",
+  "portfolioProceeds": "Mbongo ya kuteka",
+  "portfolioCostBasis": "Ntalu ya kusumba",
+  "portfolioFeesPaid": "Frè ya nge me futa",
+  "portfolioAnnualSummaryNote": "Mbongo kele na mbongo ya ntete, bo me balula yo ve. Bo me katula frè ya kuteka na mbongo ya kuteka; ntalu ya kusumba ke tula frè ya kusumba (FIFO). Sambu na mukanda ya mpaku, balula yo na ntalu ya nsobolo yina luyalu ya mpaku ya nge ke lomba."
 }

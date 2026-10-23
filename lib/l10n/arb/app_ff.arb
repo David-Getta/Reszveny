@@ -782,5 +782,10 @@
   "allocationAccounts": "Konteeji",
   "portfolioFee": "Njoɓdi ({currency})",
   "portfolioFeeAdd": "Ɓeydu njoɓdi",
-  "portfolioFeeRow": "Njoɓdi: {amount}"
+  "portfolioFeeRow": "Njoɓdi: {amount}",
+  "portfolioAnnualSummary": "Ciimtol hitaande",
+  "portfolioProceeds": "Ngalu yeeyugol",
+  "portfolioCostBasis": "Coggu soodgol",
+  "portfolioFeesPaid": "Njoɓdi yoɓaandi",
+  "portfolioAnnualSummaryNote": "Keeweele ina e kaalis iniwal, waylaaka. Ngalu yeeyugol ittaama njoɓdi yeeyugol; coggu soodgol ina waɗi njoɓdi soodgol (FIFO). Ngam deftere lempo maa, waylu e coggu beccol ngol lamu lempo maa naamni."
 }

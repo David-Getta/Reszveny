@@ -782,5 +782,10 @@
   "allocationAccounts": "هەژمارەکان",
   "portfolioFee": "کۆمیسیۆن ({currency})",
   "portfolioFeeAdd": "کۆمیسیۆنێک زیاد بکە",
-  "portfolioFeeRow": "کۆمیسیۆن: {amount}"
+  "portfolioFeeRow": "کۆمیسیۆن: {amount}",
+  "portfolioAnnualSummary": "پوختەی ساڵانە",
+  "portfolioProceeds": "داهاتی فرۆشتن",
+  "portfolioCostBasis": "تێچووی کڕین",
+  "portfolioFeesPaid": "کۆمیسیۆنی دراو",
+  "portfolioAnnualSummaryNote": "بڕەکان بە دراوی ڕەسەنن و نەگۆڕدراون. داهاتی فرۆشتن دوای لابردنی کۆمیسیۆنی فرۆشتنە؛ تێچووی کڕین کۆمیسیۆنی کڕین لەخۆدەگرێت (FIFO). بۆ ڕاپۆرتی باج، بە ئەو نرخی ئاڵوگۆڕەی دەسەڵاتی باجەکەت داوای دەکات بیانگۆڕە."
 }

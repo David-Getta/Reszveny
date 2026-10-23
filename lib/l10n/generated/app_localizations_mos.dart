@@ -2550,6 +2550,22 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Yʋʋmd fãa sõdbo';
+
+  @override
+  String get portfolioProceeds => 'Koosgã ligdi';
+
+  @override
+  String get portfolioCostBasis => 'Raabã ligdi';
+
+  @override
+  String get portfolioFeesPaid => 'Ligd sẽn yaod fãa';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Ligdã yaa ne a pipi ligd buudã, b pa lebg-a ye. Koosgã ligdã, b vʋʋsa koosgã ligd sẽn yaodã; raabã ligdã pʋgẽ, raabã ligd sẽn yaodã be (FIFO). F lampo sebrã yĩnga, lebg ne ligd teedg kʋʋng ning lampo tʋʋm-dãmbã sẽn baoodã.';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

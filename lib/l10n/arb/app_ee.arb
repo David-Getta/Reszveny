@@ -782,5 +782,10 @@
   "allocationAccounts": "Akɔntawo",
   "portfolioFee": "Fe ({currency})",
   "portfolioFeeAdd": "Tsɔ fe aɖe kpe ɖe eŋu",
-  "portfolioFeeRow": "Fe: {amount}"
+  "portfolioFeeRow": "Fe: {amount}",
+  "portfolioAnnualSummary": "Ƒe ƒe ƒuƒoƒo",
+  "portfolioProceeds": "Nudzadzra me ga",
+  "portfolioCostBasis": "Nuƒeƒle ƒe asi",
+  "portfolioFeesPaid": "Fe siwo woxe",
+  "portfolioAnnualSummaryNote": "Ga home siwo le gaŋkɔ gbãtɔ me, wometrɔ wo o. Woɖe nudzadzra ƒe fe la le nudzadzra me ga la me; nuƒeƒle ƒe asi la ƒo nuƒeƒle ƒe fe la ɖe eme (FIFO). Na wò adzɔxexe ŋuti nyatakaka la, trɔ wo ɖe gatsɔtsɔli asi si wò adzɔxɔdɔwɔƒe di la nu."
 }

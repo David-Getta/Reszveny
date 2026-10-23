@@ -2556,6 +2556,22 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'နှစ်ပတ်လည် အနှစ်ချုပ်';
+
+  @override
+  String get portfolioProceeds => 'ရောင်းရငွေ';
+
+  @override
+  String get portfolioCostBasis => 'ဝယ်ယူကုန်ကျစရိတ်';
+
+  @override
+  String get portfolioFeesPaid => 'ပေးခဲ့သော ကော်မရှင်ခ';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'ပမာဏများကို မူလငွေကြေးဖြင့် ပြထားပြီး ပြောင်းလဲတွက်ချက်ထားခြင်း မရှိပါ။ ရောင်းရငွေမှ ရောင်းချမှု ကော်မရှင်ခကို နုတ်ထားပြီး ဝယ်ယူကုန်ကျစရိတ်တွင် ဝယ်ယူမှု ကော်မရှင်ခ ပါဝင်သည် (FIFO)။ အခွန်ကြေညာလွှာအတွက် သင့်အခွန်ဌာနက သတ်မှတ်သော ငွေလဲနှုန်းဖြင့် ပြောင်းလဲပါ။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

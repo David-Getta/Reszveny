@@ -2574,6 +2574,22 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Resum anual';
+
+  @override
+  String get portfolioProceeds => 'Valor de transmissió';
+
+  @override
+  String get portfolioCostBasis => 'Valor d\'adquisició';
+
+  @override
+  String get portfolioFeesPaid => 'Comissions pagades';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Imports en la moneda original, sense convertir. El valor de transmissió és net de la comissió de venda; el valor d\'adquisició inclou la comissió de compra (FIFO). Per a la declaració de la renda, converteix-los al tipus de canvi que exigeixi la teva administració tributària.';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

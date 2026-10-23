@@ -2632,6 +2632,22 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Letni povzetek';
+
+  @override
+  String get portfolioProceeds => 'Vrednost ob odsvojitvi';
+
+  @override
+  String get portfolioCostBasis => 'Nabavna vrednost';
+
+  @override
+  String get portfolioFeesPaid => 'Plačane provizije';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Zneski v izvirni valuti, brez preračuna. Vrednost ob odsvojitvi je zmanjšana za provizijo pri prodaji; nabavna vrednost vključuje provizijo pri nakupu (FIFO). Za davčno napoved preračunajte po tečaju, ki ga zahteva vaš davčni organ.';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

@@ -2575,6 +2575,22 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Bokuse ya mbula';
+
+  @override
+  String get portfolioProceeds => 'Mbongo ya boteki';
+
+  @override
+  String get portfolioCostBasis => 'Ntalo ya bosombi';
+
+  @override
+  String get portfolioFeesPaid => 'Frais oyo ofutaki';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Mbongo ezali na mbongo ya ebandeli, ebongolami te. Mbongo ya boteki elongolami frais ya boteki; ntalo ya bosombi ezali na frais ya bosombi (FIFO). Mpo na déclaration ya mpako na yo, bongola yango na motuya ya mbongo oyo bakonzi ya mpako basɛngaka.';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

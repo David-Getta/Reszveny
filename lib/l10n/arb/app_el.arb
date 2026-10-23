@@ -782,5 +782,10 @@
   "allocationAccounts": "Λογαριασμοί",
   "portfolioFee": "Προμήθεια ({currency})",
   "portfolioFeeAdd": "Προσθήκη προμήθειας",
-  "portfolioFeeRow": "Προμήθεια: {amount}"
+  "portfolioFeeRow": "Προμήθεια: {amount}",
+  "portfolioAnnualSummary": "Ετήσια σύνοψη",
+  "portfolioProceeds": "Έσοδα πωλήσεων",
+  "portfolioCostBasis": "Τιμή κτήσης",
+  "portfolioFeesPaid": "Καταβληθείσες προμήθειες",
+  "portfolioAnnualSummaryNote": "Ποσά στο αρχικό νόμισμα, χωρίς μετατροπή. Τα έσοδα πωλήσεων είναι καθαρά από την προμήθεια πώλησης· η τιμή κτήσης περιλαμβάνει την προμήθεια αγοράς (FIFO). Για τη φορολογική σας δήλωση, μετατρέψτε με την ισοτιμία που απαιτεί η φορολογική αρχή σας."
 }

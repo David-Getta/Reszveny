@@ -2572,6 +2572,22 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Taunang buod';
+
+  @override
+  String get portfolioProceeds => 'Kita sa pagbenta';
+
+  @override
+  String get portfolioCostBasis => 'Halaga ng pagbili';
+
+  @override
+  String get portfolioFeesPaid => 'Binayarang komisyon';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Mga halaga sa orihinal na currency, hindi naka-convert. Bawas na sa kita sa pagbenta ang komisyon sa pagbenta; kasama sa halaga ng pagbili ang komisyon sa pagbili (FIFO). Para sa iyong tax return, i-convert sa exchange rate na hinihingi ng iyong tax authority.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

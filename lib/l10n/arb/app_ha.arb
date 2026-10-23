@@ -782,5 +782,10 @@
   "allocationAccounts": "Asusu",
   "portfolioFee": "Kuɗin dillali ({currency})",
   "portfolioFeeAdd": "Ƙara kuɗin dillali",
-  "portfolioFeeRow": "Kuɗin dillali: {amount}"
+  "portfolioFeeRow": "Kuɗin dillali: {amount}",
+  "portfolioAnnualSummary": "Taƙaitaccen bayanin shekara",
+  "portfolioProceeds": "Kuɗin sayarwa",
+  "portfolioCostBasis": "Kuɗin saye",
+  "portfolioFeesPaid": "Kuɗin dillali da aka biya",
+  "portfolioAnnualSummaryNote": "Adadin suna a asalin kuɗin, ba a canza su ba. An cire kuɗin dillali na sayarwa daga kuɗin sayarwa; kuɗin saye ya haɗa da kuɗin dillali na saye (FIFO). Don bayanin harajinka, canza su a farashin musaya da hukumar harajinka ke buƙata."
 }

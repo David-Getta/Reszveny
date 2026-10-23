@@ -782,5 +782,10 @@
   "allocationAccounts": "帳戶",
   "portfolioFee": "佣金 ({currency})",
   "portfolioFeeAdd": "新增佣金",
-  "portfolioFeeRow": "佣金：{amount}"
+  "portfolioFeeRow": "佣金：{amount}",
+  "portfolioAnnualSummary": "年度摘要",
+  "portfolioProceeds": "出售所得",
+  "portfolioCostBasis": "購入成本",
+  "portfolioFeesPaid": "已付佣金",
+  "portfolioAnnualSummaryNote": "金額以原貨幣列示，未經換算。出售所得已扣除賣出佣金；購入成本已包括買入佣金（FIFO）。報稅時請按稅務機關要求的匯率換算。"
 }

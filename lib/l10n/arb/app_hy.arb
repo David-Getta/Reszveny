@@ -782,5 +782,10 @@
   "allocationAccounts": "Հաշիվներ",
   "portfolioFee": "Միջնորդավճար ({currency})",
   "portfolioFeeAdd": "Ավելացնել միջնորդավճար",
-  "portfolioFeeRow": "Միջնորդավճար՝ {amount}"
+  "portfolioFeeRow": "Միջնորդավճար՝ {amount}",
+  "portfolioAnnualSummary": "Տարեկան ամփոփում",
+  "portfolioProceeds": "Վաճառքից հասույթ",
+  "portfolioCostBasis": "Ձեռքբերման արժեք",
+  "portfolioFeesPaid": "Վճարված միջնորդավճար",
+  "portfolioAnnualSummaryNote": "Գումարները սկզբնական արժույթով են՝ առանց փոխարկման։ Վաճառքից հասույթը ներկայացված է վաճառքի միջնորդավճարը հանած, իսկ ձեռքբերման արժեքը ներառում է գնման միջնորդավճարը (FIFO)։ Հարկային հայտարարագրի համար փոխարկեք այն փոխարժեքով, որը պահանջում է ձեր հարկային մարմինը։"
 }

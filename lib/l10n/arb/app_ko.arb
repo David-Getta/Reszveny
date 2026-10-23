@@ -782,5 +782,10 @@
   "allocationAccounts": "계좌",
   "portfolioFee": "수수료({currency})",
   "portfolioFeeAdd": "수수료 추가",
-  "portfolioFeeRow": "수수료: {amount}"
+  "portfolioFeeRow": "수수료: {amount}",
+  "portfolioAnnualSummary": "연간 요약",
+  "portfolioProceeds": "양도가액",
+  "portfolioCostBasis": "취득가액",
+  "portfolioFeesPaid": "지급 수수료",
+  "portfolioAnnualSummaryNote": "금액은 환산하지 않은 원래 통화로 표시됩니다. 양도가액은 매도 수수료를 차감한 금액이며, 취득가액에는 매수 수수료가 포함됩니다(FIFO). 세금 신고 시에는 세무 당국이 요구하는 환율로 환산하세요."
 }

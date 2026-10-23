@@ -782,5 +782,10 @@
   "allocationAccounts": "Akaũnti",
   "portfolioFee": "Marĩhi ({currency})",
   "portfolioFeeAdd": "Ongerera marĩhi",
-  "portfolioFeeRow": "Marĩhi: {amount}"
+  "portfolioFeeRow": "Marĩhi: {amount}",
+  "portfolioAnnualSummary": "Ũhoro mũkuhĩ wa mwaka",
+  "portfolioProceeds": "Mbeca cia ũendia",
+  "portfolioCostBasis": "Thogora wa ũgũri",
+  "portfolioFeesPaid": "Marĩhi marĩhĩtwo",
+  "portfolioAnnualSummaryNote": "Mbeca irĩ na mbeca cia mbere, itigarũrĩtwo. Mbeca cia ũendia nĩ ciarutĩrwo marĩhi ma ũendia; thogora wa ũgũri nĩ ũtoonyithĩtie marĩhi ma ũgũri (FIFO). Nĩ ũndũ wa riboti yaku ya igooti, garũra na thogora wa kũgarũra mbeca ũrĩa ũbataranagio nĩ ũthamaki wa igooti."
 }

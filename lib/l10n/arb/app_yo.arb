@@ -782,5 +782,10 @@
   "allocationAccounts": "Àkáǹtì",
   "portfolioFee": "Owó iṣẹ́ ({currency})",
   "portfolioFeeAdd": "Fi owó iṣẹ́ kún",
-  "portfolioFeeRow": "Owó iṣẹ́: {amount}"
+  "portfolioFeeRow": "Owó iṣẹ́: {amount}",
+  "portfolioAnnualSummary": "Àkópọ̀ ọdún",
+  "portfolioProceeds": "Owó tí o rí nínú títà",
+  "portfolioCostBasis": "Iye owó ìrajà",
+  "portfolioFeesPaid": "Owó iṣẹ́ tí o san",
+  "portfolioAnnualSummaryNote": "Owó wà nínú owó àkọ́kọ́, a kò yí i padà. A ti yọ owó iṣẹ́ títà kúrò nínú owó títà; iye owó ìrajà ní owó iṣẹ́ ìrajà nínú (FIFO). Fún ìfisùn owó-orí rẹ, yí i padà ní ìwọ̀n pàṣípààrọ̀ tí àjọ owó-orí rẹ béèrè."
 }

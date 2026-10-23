@@ -782,5 +782,10 @@
   "allocationAccounts": "Llogaritë",
   "portfolioFee": "Komisioni ({currency})",
   "portfolioFeeAdd": "Shto komision",
-  "portfolioFeeRow": "Komisioni: {amount}"
+  "portfolioFeeRow": "Komisioni: {amount}",
+  "portfolioAnnualSummary": "Përmbledhje vjetore",
+  "portfolioProceeds": "Të ardhurat nga shitjet",
+  "portfolioCostBasis": "Kostoja e blerjes",
+  "portfolioFeesPaid": "Komisionet e paguara",
+  "portfolioAnnualSummaryNote": "Shumat në monedhën origjinale, pa konvertim. Të ardhurat janë neto nga komisioni i shitjes; kostoja e blerjes përfshin komisionin e blerjes (FIFO). Për deklaratën tatimore, konvertoni me kursin e këmbimit që kërkon autoriteti juaj tatimor."
 }

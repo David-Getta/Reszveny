@@ -2625,6 +2625,22 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Roční přehled';
+
+  @override
+  String get portfolioProceeds => 'Příjmy z prodeje';
+
+  @override
+  String get portfolioCostBasis => 'Nabývací cena';
+
+  @override
+  String get portfolioFeesPaid => 'Zaplacené poplatky';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Částky v původní měně, bez přepočtu. Příjmy z prodeje jsou po odečtení poplatku za prodej; nabývací cena zahrnuje poplatek za nákup (FIFO). Pro daňové přiznání je přepočtěte kurzem, který vyžaduje váš finanční úřad.';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

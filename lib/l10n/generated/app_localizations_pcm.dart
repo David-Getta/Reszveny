@@ -2564,6 +2564,22 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Yearly summary';
+
+  @override
+  String get portfolioProceeds => 'Money from sales';
+
+  @override
+  String get portfolioCostBasis => 'Buying cost';
+
+  @override
+  String get portfolioFeesPaid => 'Charges wey you pay';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Di amounts dey for di original currency, we no change dem. Di sales money don remove di selling charges; di buying cost include di buying charges (FIFO). For your tax return, change am with di exchange rate wey your tax office want.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

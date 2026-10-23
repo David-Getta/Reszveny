@@ -2561,6 +2561,22 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'ବାର୍ଷିକ ସାରାଂଶ';
+
+  @override
+  String get portfolioProceeds => 'ବିକ୍ରି ଆୟ';
+
+  @override
+  String get portfolioCostBasis => 'କ୍ରୟ ମୂଲ୍ୟ';
+
+  @override
+  String get portfolioFeesPaid => 'ଦେଇଥିବା ଶୁଳ୍କ';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'ରାଶି ମୂଳ ମୁଦ୍ରାରେ, ରୂପାନ୍ତରିତ ନୁହେଁ। ବିକ୍ରି ଆୟରୁ ବିକ୍ରି ଶୁଳ୍କ କଟାଯାଇଛି; କ୍ରୟ ମୂଲ୍ୟରେ କ୍ରୟ ଶୁଳ୍କ ସାମିଲ (FIFO)। ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ, ଆପଣଙ୍କ ଟିକସ ବିଭାଗ ଆବଶ୍ୟକ କରୁଥିବା ବିନିମୟ ଦରରେ ରୂପାନ୍ତର କରନ୍ତୁ।';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

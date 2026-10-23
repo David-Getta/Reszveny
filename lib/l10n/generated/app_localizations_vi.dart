@@ -2558,6 +2558,22 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Tổng kết năm';
+
+  @override
+  String get portfolioProceeds => 'Tiền thu từ bán';
+
+  @override
+  String get portfolioCostBasis => 'Giá vốn';
+
+  @override
+  String get portfolioFeesPaid => 'Phí đã trả';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Số tiền theo đồng tiền gốc, không quy đổi. Tiền thu từ bán đã trừ phí bán; giá vốn đã gồm phí mua (FIFO). Khi khai thuế, hãy quy đổi theo tỷ giá mà cơ quan thuế yêu cầu.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

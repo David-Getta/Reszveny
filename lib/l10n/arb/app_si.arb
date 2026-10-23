@@ -782,5 +782,10 @@
   "allocationAccounts": "ගිණුම්",
   "portfolioFee": "ගාස්තුව ({currency})",
   "portfolioFeeAdd": "ගාස්තුවක් එක් කරන්න",
-  "portfolioFeeRow": "ගාස්තුව: {amount}"
+  "portfolioFeeRow": "ගාස්තුව: {amount}",
+  "portfolioAnnualSummary": "වාර්ෂික සාරාංශය",
+  "portfolioProceeds": "විකුණුම් ආදායම",
+  "portfolioCostBasis": "මිලදී ගැනීමේ පිරිවැය",
+  "portfolioFeesPaid": "ගෙවූ ගාස්තු",
+  "portfolioAnnualSummaryNote": "මුදල් මුල් මුදල් වර්ගයෙන්, පරිවර්තනය කර නැත. විකුණුම් ආදායමෙන් විකුණුම් ගාස්තුව අඩු කර ඇත; මිලදී ගැනීමේ පිරිවැයට මිලදී ගැනීමේ ගාස්තුව ඇතුළත් වේ (FIFO). බදු වාර්තාව සඳහා, ඔබේ බදු අධිකාරිය නියම කරන විනිමය අනුපාතයට පරිවර්තනය කරන්න."
 }

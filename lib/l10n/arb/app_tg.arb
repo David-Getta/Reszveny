@@ -782,5 +782,10 @@
   "allocationAccounts": "Ҳисобҳо",
   "portfolioFee": "Комиссия ({currency})",
   "portfolioFeeAdd": "Комиссия илова кардан",
-  "portfolioFeeRow": "Комиссия: {amount}"
+  "portfolioFeeRow": "Комиссия: {amount}",
+  "portfolioAnnualSummary": "Ҷамъбасти солона",
+  "portfolioProceeds": "Даромад аз фурӯш",
+  "portfolioCostBasis": "Арзиши харид",
+  "portfolioFeesPaid": "Комиссияи пардохтшуда",
+  "portfolioAnnualSummaryNote": "Маблағҳо бо асъори аслӣ, бе табдил. Даромад аз фурӯш бе комиссияи фурӯш нишон дода шудааст; арзиши харид комиссияи харидро дар бар мегирад (FIFO). Барои эъломияи андоз бо қурбе табдил диҳед, ки мақомоти андози шумо талаб мекунад."
 }

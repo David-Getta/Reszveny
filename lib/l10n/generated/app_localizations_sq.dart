@@ -2570,6 +2570,22 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Përmbledhje vjetore';
+
+  @override
+  String get portfolioProceeds => 'Të ardhurat nga shitjet';
+
+  @override
+  String get portfolioCostBasis => 'Kostoja e blerjes';
+
+  @override
+  String get portfolioFeesPaid => 'Komisionet e paguara';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Shumat në monedhën origjinale, pa konvertim. Të ardhurat janë neto nga komisioni i shitjes; kostoja e blerjes përfshin komisionin e blerjes (FIFO). Për deklaratën tatimore, konvertoni me kursin e këmbimit që kërkon autoriteti juaj tatimor.';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

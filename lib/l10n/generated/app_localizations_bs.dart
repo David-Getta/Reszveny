@@ -2608,6 +2608,22 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Godišnji pregled';
+
+  @override
+  String get portfolioProceeds => 'Prihod od prodaje';
+
+  @override
+  String get portfolioCostBasis => 'Nabavna vrijednost';
+
+  @override
+  String get portfolioFeesPaid => 'Plaćena provizija';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Iznosi su u originalnoj valuti, nisu preračunati. Prihod od prodaje umanjen je za proviziju pri prodaji; nabavna vrijednost uključuje proviziju pri kupovini (FIFO). Za poresku prijavu preračunajte po kursu koji zahtijeva vaša poreska uprava.';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

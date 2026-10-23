@@ -2583,6 +2583,22 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Famintinana isan-taona';
+
+  @override
+  String get portfolioProceeds => 'Vola azo tamin\'ny fivarotana';
+
+  @override
+  String get portfolioCostBasis => 'Vidin\'ny fividianana';
+
+  @override
+  String get portfolioFeesPaid => 'Sarany naloa';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Amin\'ny vola niaviana ny sanda, tsy novaina. Efa nesorina ny saran\'ny fivarotana amin\'ny vola azo; tafiditra ao amin\'ny vidin\'ny fividianana ny saran\'ny fividianana (FIFO). Ho an\'ny fanambaranao hetra, ovay araka ny tahan\'ny fifanakalozana takian\'ny sampan-draharahan\'ny hetra.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

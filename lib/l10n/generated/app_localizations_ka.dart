@@ -2565,6 +2565,22 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'წლიური შეჯამება';
+
+  @override
+  String get portfolioProceeds => 'გაყიდვიდან შემოსავალი';
+
+  @override
+  String get portfolioCostBasis => 'შეძენის ღირებულება';
+
+  @override
+  String get portfolioFeesPaid => 'გადახდილი საკომისიო';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'თანხები საწყის ვალუტაშია, გადაუანგარიშებლად. გაყიდვიდან შემოსავალი გაყიდვის საკომისიოს გამოკლებითაა; შეძენის ღირებულება მოიცავს ყიდვის საკომისიოს (FIFO). საგადასახადო დეკლარაციისთვის გადაიანგარიშეთ იმ კურსით, რომელსაც თქვენი საგადასახადო ორგანო მოითხოვს.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

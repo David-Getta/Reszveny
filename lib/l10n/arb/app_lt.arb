@@ -782,5 +782,10 @@
   "allocationAccounts": "Sąskaitos",
   "portfolioFee": "Komisiniai ({currency})",
   "portfolioFeeAdd": "Pridėti komisinius",
-  "portfolioFeeRow": "Komisiniai: {amount}"
+  "portfolioFeeRow": "Komisiniai: {amount}",
+  "portfolioAnnualSummary": "Metinė suvestinė",
+  "portfolioProceeds": "Pardavimo pajamos",
+  "portfolioCostBasis": "Įsigijimo kaina",
+  "portfolioFeesPaid": "Sumokėti komisiniai",
+  "portfolioAnnualSummaryNote": "Sumos pradine valiuta, neperskaičiuotos. Pardavimo pajamos nurodytos atėmus pardavimo komisinius; įsigijimo kaina apima pirkimo komisinius (FIFO). Mokesčių deklaracijai perskaičiuokite pagal kursą, kurio reikalauja jūsų mokesčių administratorius."
 }

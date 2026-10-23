@@ -782,5 +782,10 @@
   "allocationAccounts": "खाते",
   "portfolioFee": "ब्रोकरेज ({currency})",
   "portfolioFeeAdd": "ब्रोकरेज जोड़ें",
-  "portfolioFeeRow": "ब्रोकरेज: {amount}"
+  "portfolioFeeRow": "ब्रोकरेज: {amount}",
+  "portfolioAnnualSummary": "वार्षिक सारांश",
+  "portfolioProceeds": "बिक्री राशि",
+  "portfolioCostBasis": "अधिग्रहण लागत",
+  "portfolioFeesPaid": "चुकाया गया ब्रोकरेज",
+  "portfolioAnnualSummaryNote": "राशियाँ मूल मुद्रा में हैं, बदली नहीं गईं। बिक्री राशि में से बिक्री का ब्रोकरेज घटाया गया है; अधिग्रहण लागत में खरीद का ब्रोकरेज शामिल है (FIFO)। टैक्स रिटर्न के लिए उस विनिमय दर पर बदलें जो आपका कर विभाग मांगता है।"
 }

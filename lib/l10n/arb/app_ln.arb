@@ -782,5 +782,10 @@
   "allocationAccounts": "Ba-compte",
   "portfolioFee": "Frais ({currency})",
   "portfolioFeeAdd": "Bakisa frais",
-  "portfolioFeeRow": "Frais: {amount}"
+  "portfolioFeeRow": "Frais: {amount}",
+  "portfolioAnnualSummary": "Bokuse ya mbula",
+  "portfolioProceeds": "Mbongo ya boteki",
+  "portfolioCostBasis": "Ntalo ya bosombi",
+  "portfolioFeesPaid": "Frais oyo ofutaki",
+  "portfolioAnnualSummaryNote": "Mbongo ezali na mbongo ya ebandeli, ebongolami te. Mbongo ya boteki elongolami frais ya boteki; ntalo ya bosombi ezali na frais ya bosombi (FIFO). Mpo na déclaration ya mpako na yo, bongola yango na motuya ya mbongo oyo bakonzi ya mpako basɛngaka."
 }

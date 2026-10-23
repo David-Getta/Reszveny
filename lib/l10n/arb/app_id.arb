@@ -782,5 +782,10 @@
   "allocationAccounts": "Akun",
   "portfolioFee": "Biaya transaksi ({currency})",
   "portfolioFeeAdd": "Tambahkan biaya transaksi",
-  "portfolioFeeRow": "Biaya transaksi: {amount}"
+  "portfolioFeeRow": "Biaya transaksi: {amount}",
+  "portfolioAnnualSummary": "Ringkasan tahunan",
+  "portfolioProceeds": "Hasil penjualan",
+  "portfolioCostBasis": "Harga perolehan",
+  "portfolioFeesPaid": "Biaya transaksi yang dibayar",
+  "portfolioAnnualSummaryNote": "Jumlah dalam mata uang asli, tidak dikonversi. Hasil penjualan sudah dikurangi biaya transaksi penjualan; harga perolehan sudah termasuk biaya transaksi pembelian (FIFO). Untuk pelaporan pajak, konversikan dengan kurs yang ditetapkan otoritas pajak Anda."
 }

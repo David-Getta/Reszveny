@@ -782,5 +782,10 @@
   "allocationAccounts": "Рахунки",
   "portfolioFee": "Комісія ({currency})",
   "portfolioFeeAdd": "Додати комісію",
-  "portfolioFeeRow": "Комісія: {amount}"
+  "portfolioFeeRow": "Комісія: {amount}",
+  "portfolioAnnualSummary": "Річний підсумок",
+  "portfolioProceeds": "Дохід від продажу",
+  "portfolioCostBasis": "Вартість придбання",
+  "portfolioFeesPaid": "Сплачені комісії",
+  "portfolioAnnualSummaryNote": "Суми у вихідній валюті, без перерахунку. Дохід від продажу вказано за вирахуванням комісії при продажу; вартість придбання включає комісію при купівлі (FIFO). Для податкової декларації перерахуйте за курсом, якого вимагає ваша податкова служба."
 }

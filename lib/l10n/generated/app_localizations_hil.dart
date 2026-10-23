@@ -2581,6 +2581,22 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Tinuig nga sumaryo';
+
+  @override
+  String get portfolioProceeds => 'Kita sa pagbaligya';
+
+  @override
+  String get portfolioCostBasis => 'Gasto sa pagbakal';
+
+  @override
+  String get portfolioFeesPaid => 'Nabayaran nga komisyon';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Mga kantidad sa orihinal nga currency, wala gin-convert. Ang kita sa pagbaligya bawas na ang komisyon sa pagbaligya; upod sa gasto sa pagbakal ang komisyon sa pagbakal (FIFO). Para sa imo tax return, i-convert sa exchange rate nga ginapangayo sang imo tax authority.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

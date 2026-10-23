@@ -782,5 +782,10 @@
   "allocationAccounts": "Akaụntụ",
   "portfolioFee": "Ụgwọ ọrụ ({currency})",
   "portfolioFeeAdd": "Tinye ụgwọ ọrụ",
-  "portfolioFeeRow": "Ụgwọ ọrụ: {amount}"
+  "portfolioFeeRow": "Ụgwọ ọrụ: {amount}",
+  "portfolioAnnualSummary": "Nchịkọta afọ",
+  "portfolioProceeds": "Ego e nwetara n'ire",
+  "portfolioCostBasis": "Ọnụ ahịa ịzụta",
+  "portfolioFeesPaid": "Ụgwọ ọrụ akwụrụ",
+  "portfolioAnnualSummaryNote": "Ego ndị a dị n'ego mbụ, a gbanweghị ha. E wepụla ụgwọ ọrụ ire n'ego e nwetara n'ire; ọnụ ahịa ịzụta gụnyere ụgwọ ọrụ ịzụta (FIFO). Maka akụkọ ụtụ isi gị, gbanwee ha n'ọnụego mgbanwe nke ndị ọchịchị ụtụ isi gị chọrọ."
 }

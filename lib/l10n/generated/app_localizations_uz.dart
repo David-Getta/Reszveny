@@ -2569,6 +2569,22 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Yillik xulosa';
+
+  @override
+  String get portfolioProceeds => 'Sotuvdan tushum';
+
+  @override
+  String get portfolioCostBasis => 'Sotib olish qiymati';
+
+  @override
+  String get portfolioFeesPaid => 'Toʻlangan komissiya';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Summalar asl valyutada, konvertatsiya qilinmagan. Sotuvdan tushumdan sotish komissiyasi chegirilgan; sotib olish qiymatiga xarid komissiyasi kiradi (FIFO). Soliq deklaratsiyasi uchun soliq organingiz talab qiladigan valyuta kursida konvertatsiya qiling.';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

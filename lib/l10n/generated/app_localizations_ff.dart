@@ -2559,6 +2559,22 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ciimtol hitaande';
+
+  @override
+  String get portfolioProceeds => 'Ngalu yeeyugol';
+
+  @override
+  String get portfolioCostBasis => 'Coggu soodgol';
+
+  @override
+  String get portfolioFeesPaid => 'Njoɓdi yoɓaandi';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Keeweele ina e kaalis iniwal, waylaaka. Ngalu yeeyugol ittaama njoɓdi yeeyugol; coggu soodgol ina waɗi njoɓdi soodgol (FIFO). Ngam deftere lempo maa, waylu e coggu beccol ngol lamu lempo maa naamni.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

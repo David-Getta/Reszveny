@@ -2574,6 +2574,22 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Cuunfaa waggaa';
+
+  @override
+  String get portfolioProceeds => 'Galii gurgurtaa';
+
+  @override
+  String get portfolioCostBasis => 'Gatii bittaa';
+
+  @override
+  String get portfolioFeesPaid => 'Kaffaltii tajaajilaa kaffalame';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Maallaqni maallaqa jalqabaatiin, hin jijjiiramne. Galii gurgurtaa irraa kaffaltiin tajaajilaa gurgurtaa hir\'ifameera; gatiin bittaa kaffaltii tajaajilaa bittaa of keessaa qaba (FIFO). Gabaasa gibiraa keetiif, gatii jijjiirraa abbaan taayitaa gibiraa barbaaduun jijjiiri.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

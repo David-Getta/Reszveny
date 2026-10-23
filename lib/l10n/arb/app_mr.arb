@@ -782,5 +782,10 @@
   "allocationAccounts": "खाती",
   "portfolioFee": "शुल्क ({currency})",
   "portfolioFeeAdd": "शुल्क जोडा",
-  "portfolioFeeRow": "शुल्क: {amount}"
+  "portfolioFeeRow": "शुल्क: {amount}",
+  "portfolioAnnualSummary": "वार्षिक सारांश",
+  "portfolioProceeds": "विक्री उत्पन्न",
+  "portfolioCostBasis": "संपादन खर्च",
+  "portfolioFeesPaid": "भरलेले शुल्क",
+  "portfolioAnnualSummaryNote": "रकमा मूळ चलनात, रूपांतरित न करता. विक्री उत्पन्नातून विक्री शुल्क वजा केले आहे; संपादन खर्चात खरेदी शुल्क समाविष्ट आहे (FIFO). कर विवरणपत्रासाठी, तुमच्या कर विभागाने ठरवलेल्या विनिमय दराने रूपांतरित करा."
 }

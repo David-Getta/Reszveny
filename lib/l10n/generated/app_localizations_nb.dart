@@ -2565,6 +2565,22 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Årsoversikt';
+
+  @override
+  String get portfolioProceeds => 'Salgsvederlag';
+
+  @override
+  String get portfolioCostBasis => 'Inngangsverdi';
+
+  @override
+  String get portfolioFeesPaid => 'Betalt kurtasje';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Beløp i opprinnelig valuta, ikke omregnet. Salgsvederlaget er fratrukket kurtasje ved salg; inngangsverdien inkluderer kurtasje ved kjøp (FIFO). Til skattemeldingen må du regne om etter valutakursen skattemyndighetene krever.';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

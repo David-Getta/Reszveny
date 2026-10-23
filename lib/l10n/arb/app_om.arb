@@ -782,5 +782,10 @@
   "allocationAccounts": "Herregoota",
   "portfolioFee": "Kaffaltii tajaajilaa ({currency})",
   "portfolioFeeAdd": "Kaffaltii tajaajilaa dabali",
-  "portfolioFeeRow": "Kaffaltii tajaajilaa: {amount}"
+  "portfolioFeeRow": "Kaffaltii tajaajilaa: {amount}",
+  "portfolioAnnualSummary": "Cuunfaa waggaa",
+  "portfolioProceeds": "Galii gurgurtaa",
+  "portfolioCostBasis": "Gatii bittaa",
+  "portfolioFeesPaid": "Kaffaltii tajaajilaa kaffalame",
+  "portfolioAnnualSummaryNote": "Maallaqni maallaqa jalqabaatiin, hin jijjiiramne. Galii gurgurtaa irraa kaffaltiin tajaajilaa gurgurtaa hir'ifameera; gatiin bittaa kaffaltii tajaajilaa bittaa of keessaa qaba (FIFO). Gabaasa gibiraa keetiif, gatii jijjiirraa abbaan taayitaa gibiraa barbaaduun jijjiiri."
 }

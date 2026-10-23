@@ -782,5 +782,10 @@
   "allocationAccounts": "Rachunki",
   "portfolioFee": "Prowizja ({currency})",
   "portfolioFeeAdd": "Dodaj prowizję",
-  "portfolioFeeRow": "Prowizja: {amount}"
+  "portfolioFeeRow": "Prowizja: {amount}",
+  "portfolioAnnualSummary": "Podsumowanie roczne",
+  "portfolioProceeds": "Przychód ze sprzedaży",
+  "portfolioCostBasis": "Koszt nabycia",
+  "portfolioFeesPaid": "Zapłacone prowizje",
+  "portfolioAnnualSummaryNote": "Kwoty w walucie oryginalnej, bez przeliczenia. Przychód jest pomniejszony o prowizję od sprzedaży; koszt nabycia obejmuje prowizję od zakupu (FIFO). Do zeznania podatkowego przelicz po kursie wymaganym przez urząd skarbowy."
 }

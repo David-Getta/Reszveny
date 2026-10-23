@@ -782,5 +782,10 @@
   "allocationAccounts": "Comptes",
   "portfolioFee": "Comissió ({currency})",
   "portfolioFeeAdd": "Afegeix una comissió",
-  "portfolioFeeRow": "Comissió: {amount}"
+  "portfolioFeeRow": "Comissió: {amount}",
+  "portfolioAnnualSummary": "Resum anual",
+  "portfolioProceeds": "Valor de transmissió",
+  "portfolioCostBasis": "Valor d'adquisició",
+  "portfolioFeesPaid": "Comissions pagades",
+  "portfolioAnnualSummaryNote": "Imports en la moneda original, sense convertir. El valor de transmissió és net de la comissió de venda; el valor d'adquisició inclou la comissió de compra (FIFO). Per a la declaració de la renda, converteix-los al tipus de canvi que exigeixi la teva administració tributària."
 }

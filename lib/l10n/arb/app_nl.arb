@@ -782,5 +782,10 @@
   "allocationAccounts": "Rekeningen",
   "portfolioFee": "Transactiekosten ({currency})",
   "portfolioFeeAdd": "Transactiekosten toevoegen",
-  "portfolioFeeRow": "Transactiekosten: {amount}"
+  "portfolioFeeRow": "Transactiekosten: {amount}",
+  "portfolioAnnualSummary": "Jaaroverzicht",
+  "portfolioProceeds": "Verkoopopbrengst",
+  "portfolioCostBasis": "Verkrijgingsprijs",
+  "portfolioFeesPaid": "Betaalde transactiekosten",
+  "portfolioAnnualSummaryNote": "Bedragen in de oorspronkelijke valuta, niet omgerekend. De opbrengst is na aftrek van de transactiekosten bij verkoop; de verkrijgingsprijs is inclusief de transactiekosten bij aankoop (FIFO). Reken voor je belastingaangifte om tegen de wisselkoers die je belastingdienst voorschrijft."
 }

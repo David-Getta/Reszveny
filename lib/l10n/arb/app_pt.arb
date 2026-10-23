@@ -782,5 +782,10 @@
   "allocationAccounts": "Contas",
   "portfolioFee": "Comissão ({currency})",
   "portfolioFeeAdd": "Adicionar comissão",
-  "portfolioFeeRow": "Comissão: {amount}"
+  "portfolioFeeRow": "Comissão: {amount}",
+  "portfolioAnnualSummary": "Resumo anual",
+  "portfolioProceeds": "Valor de alienação",
+  "portfolioCostBasis": "Custo de aquisição",
+  "portfolioFeesPaid": "Comissões pagas",
+  "portfolioAnnualSummaryNote": "Valores na moeda original, sem conversão. O valor de alienação já desconta a comissão de venda; o custo de aquisição inclui a comissão de compra (FIFO). Para a declaração de imposto, converta pela taxa de câmbio exigida pela sua autoridade fiscal."
 }

@@ -2562,6 +2562,22 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Annual summary';
+
+  @override
+  String get portfolioProceeds => 'Sales proceeds';
+
+  @override
+  String get portfolioCostBasis => 'Cost basis';
+
+  @override
+  String get portfolioFeesPaid => 'Fees paid';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Amounts in the original currency, not converted. Proceeds are net of the sale fee; the cost basis includes the purchase fee (FIFO). For your tax return, convert at the exchange rate your tax authority requires.';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

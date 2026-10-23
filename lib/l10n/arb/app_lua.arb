@@ -782,5 +782,10 @@
   "allocationAccounts": "Konte",
   "portfolioFee": "Makuta a mudimu ({currency})",
   "portfolioFeeAdd": "Sakidila makuta a mudimu",
-  "portfolioFeeRow": "Makuta a mudimu: {amount}"
+  "portfolioFeeRow": "Makuta a mudimu: {amount}",
+  "portfolioAnnualSummary": "Tshikoso tsha tshidimu",
+  "portfolioProceeds": "Makuta a kusumbisha",
+  "portfolioCostBasis": "Mushinga wa kusumba",
+  "portfolioFeesPaid": "Makuta a mudimu afutabu",
+  "portfolioAnnualSummaryNote": "Makuta adi mu makuta a kumpala, kaavua mashintulula to. Makuta a kusumbisha adi mumane kuumusha makuta a mudimu a kusumbisha; mushinga wa kusumba udi ne makuta a mudimu a kusumba (FIFO). Bua mukanda webe wa mpaku, shintulula ku mushinga wa dishintuluija udi bakokeshi ba mpaku bakulomba."
 }

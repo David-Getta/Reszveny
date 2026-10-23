@@ -782,5 +782,10 @@
   "allocationAccounts": "Сметки",
   "portfolioFee": "Комисиона ({currency})",
   "portfolioFeeAdd": "Добавете комисиона",
-  "portfolioFeeRow": "Комисиона: {amount}"
+  "portfolioFeeRow": "Комисиона: {amount}",
+  "portfolioAnnualSummary": "Годишно обобщение",
+  "portfolioProceeds": "Приходи от продажби",
+  "portfolioCostBasis": "Цена на придобиване",
+  "portfolioFeesPaid": "Платени комисиони",
+  "portfolioAnnualSummaryNote": "Сумите са в оригиналната валута, без превалутиране. Приходите са след приспадане на комисионата за продажба; цената на придобиване включва комисионата за покупка (FIFO). За данъчната декларация превалутирайте по курса, който изисква данъчната администрация."
 }

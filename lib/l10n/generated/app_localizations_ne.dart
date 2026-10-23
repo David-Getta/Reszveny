@@ -2563,6 +2563,22 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'वार्षिक सारांश';
+
+  @override
+  String get portfolioProceeds => 'बिक्री आम्दानी';
+
+  @override
+  String get portfolioCostBasis => 'खरिद लागत';
+
+  @override
+  String get portfolioFeesPaid => 'तिरेको शुल्क';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'रकमहरू मूल मुद्रामा, रूपान्तरण नगरिएको। बिक्री आम्दानीबाट बिक्री शुल्क घटाइएको छ; खरिद लागतमा खरिद शुल्क समावेश छ (FIFO)। कर विवरणका लागि, आफ्नो कर कार्यालयले तोकेको विनिमय दरमा रूपान्तरण गर्नुहोस्।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

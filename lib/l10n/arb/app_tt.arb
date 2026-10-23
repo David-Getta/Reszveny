@@ -782,5 +782,10 @@
   "allocationAccounts": "Хисаплар",
   "portfolioFee": "Комиссия ({currency})",
   "portfolioFeeAdd": "Комиссия өстәү",
-  "portfolioFeeRow": "Комиссия: {amount}"
+  "portfolioFeeRow": "Комиссия: {amount}",
+  "portfolioAnnualSummary": "Ел нәтиҗәләре",
+  "portfolioProceeds": "Сатудан керем",
+  "portfolioCostBasis": "Сатып алу бәясе",
+  "portfolioFeesPaid": "Түләнгән комиссия",
+  "portfolioAnnualSummaryNote": "Суммалар баштагы валютада, күчерелмәгән. Сатудан керем сату комиссиясен чигереп күрсәтелә; сатып алу бәясенә сатып алу комиссиясе керә (FIFO). Салым декларациясе өчен салым органыгыз таләп иткән алмашу курсы буенча күчерегез."
 }

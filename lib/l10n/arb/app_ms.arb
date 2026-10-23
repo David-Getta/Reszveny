@@ -782,5 +782,10 @@
   "allocationAccounts": "Akaun",
   "portfolioFee": "Yuran ({currency})",
   "portfolioFeeAdd": "Tambah yuran",
-  "portfolioFeeRow": "Yuran: {amount}"
+  "portfolioFeeRow": "Yuran: {amount}",
+  "portfolioAnnualSummary": "Ringkasan tahunan",
+  "portfolioProceeds": "Hasil jualan",
+  "portfolioCostBasis": "Kos perolehan",
+  "portfolioFeesPaid": "Yuran dibayar",
+  "portfolioAnnualSummaryNote": "Amaun dalam mata wang asal, tidak ditukar. Hasil jualan adalah bersih selepas yuran jualan; kos perolehan termasuk yuran pembelian (FIFO). Untuk penyata cukai anda, tukar pada kadar pertukaran yang ditetapkan oleh pihak berkuasa cukai anda."
 }

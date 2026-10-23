@@ -2570,6 +2570,22 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'వార్షిక సారాంశం';
+
+  @override
+  String get portfolioProceeds => 'అమ్మకపు ఆదాయం';
+
+  @override
+  String get portfolioCostBasis => 'కొనుగోలు వ్యయం';
+
+  @override
+  String get portfolioFeesPaid => 'చెల్లించిన రుసుము';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'మొత్తాలు అసలు కరెన్సీలో ఉన్నాయి, మార్చబడలేదు. అమ్మకపు ఆదాయం నుండి అమ్మకపు రుసుము తీసివేయబడింది; కొనుగోలు వ్యయంలో కొనుగోలు రుసుము కలిసి ఉంది (FIFO). పన్ను రిటర్న్ కోసం, మీ పన్ను శాఖ కోరే మారకపు రేటులో మార్చండి.';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

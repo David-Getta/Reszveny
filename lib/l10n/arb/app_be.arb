@@ -782,5 +782,10 @@
   "allocationAccounts": "Рахункі",
   "portfolioFee": "Камісія ({currency})",
   "portfolioFeeAdd": "Дадаць камісію",
-  "portfolioFeeRow": "Камісія: {amount}"
+  "portfolioFeeRow": "Камісія: {amount}",
+  "portfolioAnnualSummary": "Гадавая зводка",
+  "portfolioProceeds": "Выручка ад продажу",
+  "portfolioCostBasis": "Кошт набыцця",
+  "portfolioFeesPaid": "Выплачаная камісія",
+  "portfolioAnnualSummaryNote": "Сумы ў зыходнай валюце, без пераліку. Выручка паказана за вылікам камісіі за продаж; кошт набыцця ўключае камісію за пакупку (FIFO). Для падатковай дэкларацыі пералічыце па курсе, які патрабуе ваша падатковая служба."
 }

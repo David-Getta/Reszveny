@@ -2580,6 +2580,22 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Kakaretso ya selemo';
+
+  @override
+  String get portfolioProceeds => 'Lekeno la thekiso';
+
+  @override
+  String get portfolioCostBasis => 'Ditshenyehelo tsa ho reka';
+
+  @override
+  String get portfolioFeesPaid => 'Ditefello tse lefilweng';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Dichelete di ka chelete ya pele, ha di a fetolwa. Lekeno la thekiso ke kamora ho tlosa tefello ya thekiso; ditshenyehelo tsa ho reka di kenyeletsa tefello ya theko (FIFO). Bakeng sa tlaleho ya hao ya lekgetho, fetola ka sekgahla sa phapanyetsano se hlokwang ke bolaodi ba lekgetho.';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

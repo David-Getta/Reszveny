@@ -2562,6 +2562,22 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'বাৰ্ষিক সাৰাংশ';
+
+  @override
+  String get portfolioProceeds => 'বিক্ৰীৰ আয়';
+
+  @override
+  String get portfolioCostBasis => 'ক্ৰয় মূল্য';
+
+  @override
+  String get portfolioFeesPaid => 'পৰিশোধ কৰা কমিছন';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'পৰিমাণসমূহ মূল মুদ্ৰাত, ৰূপান্তৰ কৰা হোৱা নাই। বিক্ৰীৰ আয় বিক্ৰীৰ কমিছন বাদ দি দেখুওৱা হৈছে; ক্ৰয় মূল্যত ক্ৰয়ৰ কমিছন অন্তৰ্ভুক্ত (FIFO)। কৰ ৰিটাৰ্ণৰ বাবে আপোনাৰ কৰ কৰ্তৃপক্ষই বিচৰা বিনিময় হাৰত ৰূপান্তৰ কৰক।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

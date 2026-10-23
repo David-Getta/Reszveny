@@ -782,5 +782,10 @@
   "allocationAccounts": "Maakaundi",
   "portfolioFee": "Mubhadharo ({currency})",
   "portfolioFeeAdd": "Wedzera mubhadharo",
-  "portfolioFeeRow": "Mubhadharo: {amount}"
+  "portfolioFeeRow": "Mubhadharo: {amount}",
+  "portfolioAnnualSummary": "Pfupiso yegore",
+  "portfolioProceeds": "Mari yezvatengeswa",
+  "portfolioCostBasis": "Mutengo wekutenga",
+  "portfolioFeesPaid": "Mibhadharo yakabhadharwa",
+  "portfolioAnnualSummaryNote": "Mari iri mumari yepakutanga, haina kushandurwa. Mari yezvatengeswa yabviswa mubhadharo wekutengesa; mutengo wekutenga unosanganisira mubhadharo wekutenga (FIFO). Pamushumo wako wemutero, shandura nemutengo wekuchinjana mari unodiwa nevakuru vemutero."
 }

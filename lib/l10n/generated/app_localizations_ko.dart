@@ -2494,6 +2494,22 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => '연간 요약';
+
+  @override
+  String get portfolioProceeds => '양도가액';
+
+  @override
+  String get portfolioCostBasis => '취득가액';
+
+  @override
+  String get portfolioFeesPaid => '지급 수수료';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      '금액은 환산하지 않은 원래 통화로 표시됩니다. 양도가액은 매도 수수료를 차감한 금액이며, 취득가액에는 매수 수수료가 포함됩니다(FIFO). 세금 신고 시에는 세무 당국이 요구하는 환율로 환산하세요.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

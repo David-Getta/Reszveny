@@ -782,5 +782,10 @@
   "allocationAccounts": "Данс",
   "portfolioFee": "Шимтгэл ({currency})",
   "portfolioFeeAdd": "Шимтгэл нэмэх",
-  "portfolioFeeRow": "Шимтгэл: {amount}"
+  "portfolioFeeRow": "Шимтгэл: {amount}",
+  "portfolioAnnualSummary": "Жилийн хураангуй",
+  "portfolioProceeds": "Борлуулалтын орлого",
+  "portfolioCostBasis": "Худалдан авалтын өртөг",
+  "portfolioFeesPaid": "Төлсөн шимтгэл",
+  "portfolioAnnualSummaryNote": "Дүнгүүд анхны валютаар, хөрвүүлээгүй. Борлуулалтын орлогоос зарах үеийн шимтгэлийг хассан; худалдан авалтын өртөгт авах үеийн шимтгэл багтсан (FIFO). Татварын тайландаа татварын байгууллагын шаардсан ханшаар хөрвүүлнэ үү."
 }

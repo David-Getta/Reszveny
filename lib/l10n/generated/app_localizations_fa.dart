@@ -2560,6 +2560,22 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'خلاصه سالانه';
+
+  @override
+  String get portfolioProceeds => 'درآمد فروش';
+
+  @override
+  String get portfolioCostBasis => 'بهای تمام‌شده';
+
+  @override
+  String get portfolioFeesPaid => 'کارمزد پرداختی';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'مبالغ به ارز اصلی و بدون تبدیل‌اند. درآمد فروش پس از کسر کارمزد فروش است؛ بهای تمام‌شده شامل کارمزد خرید است (FIFO). برای اظهارنامه مالیاتی، با نرخ ارزی که سازمان مالیاتی شما تعیین می‌کند تبدیل کنید.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

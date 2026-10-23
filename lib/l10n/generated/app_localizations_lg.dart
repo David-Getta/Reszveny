@@ -2578,6 +2578,22 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ebifunze by\'omwaka';
+
+  @override
+  String get portfolioProceeds => 'Ssente z\'okutunda';
+
+  @override
+  String get portfolioCostBasis => 'Omuwendo gw\'okugula';
+
+  @override
+  String get portfolioFeesPaid => 'Ebisale ebyasasulwa';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Ssente ziri mu ssente ezaasooka, tezikyusiddwa. Ssente z\'okutunda zigyiddwako ebisale by\'okutunda; omuwendo gw\'okugula gutwaliddemu ebisale by\'okugula (FIFO). Ku lipoota y\'omusolo, kyusa ku muwendo gw\'okuwaanyisa ensimbi ekitongole ky\'omusolo kye kyetaaga.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

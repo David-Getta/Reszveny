@@ -2570,6 +2570,22 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Resumo anual';
+
+  @override
+  String get portfolioProceeds => 'Valor de alienação';
+
+  @override
+  String get portfolioCostBasis => 'Custo de aquisição';
+
+  @override
+  String get portfolioFeesPaid => 'Comissões pagas';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Valores na moeda original, sem conversão. O valor de alienação já desconta a comissão de venda; o custo de aquisição inclui a comissão de compra (FIFO). Para a declaração de imposto, converta pela taxa de câmbio exigida pela sua autoridade fiscal.';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

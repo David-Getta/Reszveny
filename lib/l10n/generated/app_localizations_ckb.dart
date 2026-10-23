@@ -2565,6 +2565,22 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'پوختەی ساڵانە';
+
+  @override
+  String get portfolioProceeds => 'داهاتی فرۆشتن';
+
+  @override
+  String get portfolioCostBasis => 'تێچووی کڕین';
+
+  @override
+  String get portfolioFeesPaid => 'کۆمیسیۆنی دراو';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'بڕەکان بە دراوی ڕەسەنن و نەگۆڕدراون. داهاتی فرۆشتن دوای لابردنی کۆمیسیۆنی فرۆشتنە؛ تێچووی کڕین کۆمیسیۆنی کڕین لەخۆدەگرێت (FIFO). بۆ ڕاپۆرتی باج، بە ئەو نرخی ئاڵوگۆڕەی دەسەڵاتی باجەکەت داوای دەکات بیانگۆڕە.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

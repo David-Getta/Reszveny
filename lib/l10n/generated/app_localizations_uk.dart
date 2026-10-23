@@ -2633,6 +2633,22 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Річний підсумок';
+
+  @override
+  String get portfolioProceeds => 'Дохід від продажу';
+
+  @override
+  String get portfolioCostBasis => 'Вартість придбання';
+
+  @override
+  String get portfolioFeesPaid => 'Сплачені комісії';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Суми у вихідній валюті, без перерахунку. Дохід від продажу вказано за вирахуванням комісії при продажу; вартість придбання включає комісію при купівлі (FIFO). Для податкової декларації перерахуйте за курсом, якого вимагає ваша податкова служба.';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

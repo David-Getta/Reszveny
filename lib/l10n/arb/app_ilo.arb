@@ -782,5 +782,10 @@
   "allocationAccounts": "Account",
   "portfolioFee": "Komision ({currency})",
   "portfolioFeeAdd": "Inayon ti komision",
-  "portfolioFeeRow": "Komision: {amount}"
+  "portfolioFeeRow": "Komision: {amount}",
+  "portfolioAnnualSummary": "Tinawen a pakabuklan",
+  "portfolioProceeds": "Sapul iti panaglako",
+  "portfolioCostBasis": "Gastos iti panaggatang",
+  "portfolioFeesPaid": "Komision a nabayadan",
+  "portfolioAnnualSummaryNote": "Dagiti kantidad ket iti orihinal a currency, saan a naikomberte. Ti sapul iti panaglako ket nakissayan ti komision ti panaglako; ti gastos iti panaggatang ket mairaman ti komision ti panaggatang (FIFO). Para iti tax return-mo, ikombertem iti exchange rate a kiddawen ti tax authority-mo."
 }

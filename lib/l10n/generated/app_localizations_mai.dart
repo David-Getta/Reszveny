@@ -2557,6 +2557,22 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'वार्षिक सारांश';
+
+  @override
+  String get portfolioProceeds => 'बिक्रीसँ आमदनी';
+
+  @override
+  String get portfolioCostBasis => 'खरीद लागत';
+
+  @override
+  String get portfolioFeesPaid => 'चुकाओल ब्रोकरेज';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'राशि मूल मुद्रामे अछि, बदलल नहि गेल। बिक्रीसँ आमदनी बिक्रीक ब्रोकरेज घटा कऽ अछि; खरीद लागतमे खरीदक ब्रोकरेज सम्मिलित अछि (FIFO)। टैक्स रिटर्नक लेल ओहि विनिमय दरपर बदलू जे अहाँक कर विभाग मँगैत अछि।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

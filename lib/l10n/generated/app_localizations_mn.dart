@@ -2564,6 +2564,22 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Жилийн хураангуй';
+
+  @override
+  String get portfolioProceeds => 'Борлуулалтын орлого';
+
+  @override
+  String get portfolioCostBasis => 'Худалдан авалтын өртөг';
+
+  @override
+  String get portfolioFeesPaid => 'Төлсөн шимтгэл';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Дүнгүүд анхны валютаар, хөрвүүлээгүй. Борлуулалтын орлогоос зарах үеийн шимтгэлийг хассан; худалдан авалтын өртөгт авах үеийн шимтгэл багтсан (FIFO). Татварын тайландаа татварын байгууллагын шаардсан ханшаар хөрвүүлнэ үү.';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

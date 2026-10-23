@@ -2566,6 +2566,22 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ҷамъбасти солона';
+
+  @override
+  String get portfolioProceeds => 'Даромад аз фурӯш';
+
+  @override
+  String get portfolioCostBasis => 'Арзиши харид';
+
+  @override
+  String get portfolioFeesPaid => 'Комиссияи пардохтшуда';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Маблағҳо бо асъори аслӣ, бе табдил. Даромад аз фурӯш бе комиссияи фурӯш нишон дода шудааст; арзиши харид комиссияи харидро дар бар мегирад (FIFO). Барои эъломияи андоз бо қурбе табдил диҳед, ки мақомоти андози шумо талаб мекунад.';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

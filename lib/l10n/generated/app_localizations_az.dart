@@ -2566,6 +2566,22 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'İllik xülasə';
+
+  @override
+  String get portfolioProceeds => 'Satışdan gəlir';
+
+  @override
+  String get portfolioCostBasis => 'Alış dəyəri';
+
+  @override
+  String get portfolioFeesPaid => 'Ödənilmiş komissiya';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Məbləğlər ilkin valyutadadır, çevrilməyib. Satışdan gəlir satış komissiyası çıxılmaqla göstərilir; alış dəyərinə alış komissiyası daxildir (FIFO). Vergi bəyannaməsi üçün vergi orqanınızın tələb etdiyi məzənnə ilə çevirin.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

@@ -782,5 +782,10 @@
   "allocationAccounts": "അക്കൗണ്ടുകൾ",
   "portfolioFee": "ഫീസ് ({currency})",
   "portfolioFeeAdd": "ഫീസ് ചേർക്കുക",
-  "portfolioFeeRow": "ഫീസ്: {amount}"
+  "portfolioFeeRow": "ഫീസ്: {amount}",
+  "portfolioAnnualSummary": "വാർഷിക സംഗ്രഹം",
+  "portfolioProceeds": "വിൽപ്പന വരുമാനം",
+  "portfolioCostBasis": "വാങ്ങൽ ചെലവ്",
+  "portfolioFeesPaid": "അടച്ച ഫീസ്",
+  "portfolioAnnualSummaryNote": "തുകകൾ യഥാർത്ഥ കറൻസിയിലാണ്, മാറ്റിയിട്ടില്ല. വിൽപ്പന വരുമാനം വിൽപ്പന ഫീസ് കുറച്ചതാണ്; വാങ്ങൽ ചെലവിൽ വാങ്ങൽ ഫീസ് ഉൾപ്പെടുന്നു (FIFO). നികുതി റിട്ടേണിനായി, നിങ്ങളുടെ നികുതി വകുപ്പ് ആവശ്യപ്പെടുന്ന വിനിമയ നിരക്കിൽ മാറ്റുക."
 }

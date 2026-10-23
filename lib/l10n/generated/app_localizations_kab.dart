@@ -2563,6 +2563,22 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Agzul n useggas';
+
+  @override
+  String get portfolioProceeds => 'Idrimen n uznuzu';
+
+  @override
+  String get portfolioCostBasis => 'Azal n tiɣin';
+
+  @override
+  String get portfolioFeesPaid => 'Ixelṣen yettwaxelṣen';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Azalen s tedrimt taɣbalut, ur ttwabeddlen ara. Idrimen n uznuzu ttwakksen-asen ixelṣen n uznuzu; azal n tiɣin yegber ixelṣen n tiɣin (FIFO). I tsemmelt-ik n tebzert, beddel-iten s wazal n usnemlil i d-yessuter unabaḍ n tebzert.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

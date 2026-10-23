@@ -2573,6 +2573,22 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Nkufi ya mvula';
+
+  @override
+  String get portfolioProceeds => 'Mbongo ya kuteka';
+
+  @override
+  String get portfolioCostBasis => 'Ntalu ya kusumba';
+
+  @override
+  String get portfolioFeesPaid => 'Frè ya nge me futa';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Mbongo kele na mbongo ya ntete, bo me balula yo ve. Bo me katula frè ya kuteka na mbongo ya kuteka; ntalu ya kusumba ke tula frè ya kusumba (FIFO). Sambu na mukanda ya mpaku, balula yo na ntalu ya nsobolo yina luyalu ya mpaku ya nge ke lomba.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

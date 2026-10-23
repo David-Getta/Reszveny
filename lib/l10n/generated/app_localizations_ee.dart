@@ -2569,6 +2569,22 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ƒe ƒe ƒuƒoƒo';
+
+  @override
+  String get portfolioProceeds => 'Nudzadzra me ga';
+
+  @override
+  String get portfolioCostBasis => 'Nuƒeƒle ƒe asi';
+
+  @override
+  String get portfolioFeesPaid => 'Fe siwo woxe';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Ga home siwo le gaŋkɔ gbãtɔ me, wometrɔ wo o. Woɖe nudzadzra ƒe fe la le nudzadzra me ga la me; nuƒeƒle ƒe asi la ƒo nuƒeƒle ƒe fe la ɖe eme (FIFO). Na wò adzɔxexe ŋuti nyatakaka la, trɔ wo ɖe gatsɔtsɔli asi si wò adzɔxɔdɔwɔƒe di la nu.';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

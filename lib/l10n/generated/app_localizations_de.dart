@@ -2578,6 +2578,22 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Jahresübersicht';
+
+  @override
+  String get portfolioProceeds => 'Veräußerungserlös';
+
+  @override
+  String get portfolioCostBasis => 'Anschaffungskosten';
+
+  @override
+  String get portfolioFeesPaid => 'Gezahlte Gebühren';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Beträge in Originalwährung, nicht umgerechnet. Der Veräußerungserlös versteht sich abzüglich der Verkaufsgebühr; die Anschaffungskosten enthalten die Kaufgebühr (FIFO). Für die Steuererklärung rechne zu dem Kurs um, den dein Finanzamt verlangt.';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

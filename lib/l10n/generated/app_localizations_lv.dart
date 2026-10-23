@@ -2605,6 +2605,22 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Gada kopsavilkums';
+
+  @override
+  String get portfolioProceeds => 'Pārdošanas ieņēmumi';
+
+  @override
+  String get portfolioCostBasis => 'Iegādes vērtība';
+
+  @override
+  String get portfolioFeesPaid => 'Samaksātā komisija';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Summas sākotnējā valūtā, nepārrēķinātas. Pārdošanas ieņēmumi norādīti, atskaitot pārdošanas komisiju; iegādes vērtībā ietilpst pirkuma komisija (FIFO). Nodokļu deklarācijai pārrēķiniet pēc kursa, ko pieprasa jūsu nodokļu administrācija.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

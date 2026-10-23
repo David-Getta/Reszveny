@@ -782,5 +782,10 @@
   "allocationAccounts": "حساب‌ها",
   "portfolioFee": "کارمزد ({currency})",
   "portfolioFeeAdd": "افزودن کارمزد",
-  "portfolioFeeRow": "کارمزد: {amount}"
+  "portfolioFeeRow": "کارمزد: {amount}",
+  "portfolioAnnualSummary": "خلاصه سالانه",
+  "portfolioProceeds": "درآمد فروش",
+  "portfolioCostBasis": "بهای تمام‌شده",
+  "portfolioFeesPaid": "کارمزد پرداختی",
+  "portfolioAnnualSummaryNote": "مبالغ به ارز اصلی و بدون تبدیل‌اند. درآمد فروش پس از کسر کارمزد فروش است؛ بهای تمام‌شده شامل کارمزد خرید است (FIFO). برای اظهارنامه مالیاتی، با نرخ ارزی که سازمان مالیاتی شما تعیین می‌کند تبدیل کنید."
 }

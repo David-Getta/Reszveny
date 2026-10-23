@@ -782,5 +782,10 @@
   "allocationAccounts": "Konten",
   "portfolioFee": "Gebühr ({currency})",
   "portfolioFeeAdd": "Gebühr hinzufügen",
-  "portfolioFeeRow": "Gebühr: {amount}"
+  "portfolioFeeRow": "Gebühr: {amount}",
+  "portfolioAnnualSummary": "Jahresübersicht",
+  "portfolioProceeds": "Veräußerungserlös",
+  "portfolioCostBasis": "Anschaffungskosten",
+  "portfolioFeesPaid": "Gezahlte Gebühren",
+  "portfolioAnnualSummaryNote": "Beträge in Originalwährung, nicht umgerechnet. Der Veräußerungserlös versteht sich abzüglich der Verkaufsgebühr; die Anschaffungskosten enthalten die Kaufgebühr (FIFO). Für die Steuererklärung rechne zu dem Kurs um, den dein Finanzamt verlangt."
 }

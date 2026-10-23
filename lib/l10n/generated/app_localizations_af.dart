@@ -2568,6 +2568,22 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Jaaroorsig';
+
+  @override
+  String get portfolioProceeds => 'Verkoopopbrengs';
+
+  @override
+  String get portfolioCostBasis => 'Basiskoste';
+
+  @override
+  String get portfolioFeesPaid => 'Betaalde kommissie';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Bedrae in die oorspronklike geldeenheid, nie omgeskakel nie. Die opbrengs is ná aftrekking van die verkoopkommissie; die basiskoste sluit die aankoopkommissie in (FIFO). Skakel vir jou belastingopgawe om teen die wisselkoers wat jou belastingowerheid vereis.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

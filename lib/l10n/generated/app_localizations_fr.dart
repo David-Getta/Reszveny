@@ -2576,6 +2576,22 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Récapitulatif annuel';
+
+  @override
+  String get portfolioProceeds => 'Prix de cession';
+
+  @override
+  String get portfolioCostBasis => 'Prix d’acquisition';
+
+  @override
+  String get portfolioFeesPaid => 'Frais payés';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Montants dans la devise d’origine, non convertis. Le prix de cession s’entend net des frais de vente ; le prix d’acquisition inclut les frais d’achat (FIFO). Pour votre déclaration d’impôts, convertissez au taux de change exigé par votre administration fiscale.';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

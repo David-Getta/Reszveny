@@ -2561,6 +2561,22 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ringkasan tahunan';
+
+  @override
+  String get portfolioProceeds => 'Hasil penjualan';
+
+  @override
+  String get portfolioCostBasis => 'Harga perolehan';
+
+  @override
+  String get portfolioFeesPaid => 'Biaya transaksi yang dibayar';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Jumlah dalam mata uang asli, tidak dikonversi. Hasil penjualan sudah dikurangi biaya transaksi penjualan; harga perolehan sudah termasuk biaya transaksi pembelian (FIFO). Untuk pelaporan pajak, konversikan dengan kurs yang ditetapkan otoritas pajak Anda.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

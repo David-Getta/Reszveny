@@ -2572,6 +2572,22 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Chidule cha pachaka';
+
+  @override
+  String get portfolioProceeds => 'Ndalama zogulitsa';
+
+  @override
+  String get portfolioCostBasis => 'Mtengo wogulira';
+
+  @override
+  String get portfolioFeesPaid => 'Zolipiritsa zolipidwa';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Ndalama zili mu ndalama yoyambirira, sizinasinthidwe. Ndalama zogulitsa zachotsedwa zolipiritsa zogulitsa; mtengo wogulira ukuphatikiza zolipiritsa zogulira (FIFO). Pa msonkho wanu, sinthani pa mtengo wosinthira ndalama umene bungwe la msonkho likufuna.';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

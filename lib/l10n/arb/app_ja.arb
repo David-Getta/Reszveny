@@ -782,5 +782,10 @@
   "allocationAccounts": "口座",
   "portfolioFee": "手数料（{currency}）",
   "portfolioFeeAdd": "手数料を追加",
-  "portfolioFeeRow": "手数料：{amount}"
+  "portfolioFeeRow": "手数料：{amount}",
+  "portfolioAnnualSummary": "年間サマリー",
+  "portfolioProceeds": "譲渡収入",
+  "portfolioCostBasis": "取得費",
+  "portfolioFeesPaid": "支払手数料",
+  "portfolioAnnualSummaryNote": "金額は換算前の元の通貨で表示しています。譲渡収入は売却手数料を差し引いた額、取得費は購入手数料を含む額です（FIFO）。確定申告では、税務当局が定める為替レートで換算してください。"
 }

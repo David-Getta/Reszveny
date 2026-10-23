@@ -782,5 +782,10 @@
   "allocationAccounts": "Рачуни",
   "portfolioFee": "Провизија ({currency})",
   "portfolioFeeAdd": "Додај провизију",
-  "portfolioFeeRow": "Провизија: {amount}"
+  "portfolioFeeRow": "Провизија: {amount}",
+  "portfolioAnnualSummary": "Годишњи преглед",
+  "portfolioProceeds": "Приход од продаје",
+  "portfolioCostBasis": "Набавна цена",
+  "portfolioFeesPaid": "Плаћена провизија",
+  "portfolioAnnualSummaryNote": "Износи у оригиналној валути, без прерачунавања. Приход од продаје је умањен за провизију при продаји; набавна цена укључује провизију при куповини (FIFO). За пореску пријаву прерачунајте по курсу који захтева ваша пореска управа."
 }

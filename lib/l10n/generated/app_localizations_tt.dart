@@ -2562,6 +2562,22 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Ел нәтиҗәләре';
+
+  @override
+  String get portfolioProceeds => 'Сатудан керем';
+
+  @override
+  String get portfolioCostBasis => 'Сатып алу бәясе';
+
+  @override
+  String get portfolioFeesPaid => 'Түләнгән комиссия';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Суммалар баштагы валютада, күчерелмәгән. Сатудан керем сату комиссиясен чигереп күрсәтелә; сатып алу бәясенә сатып алу комиссиясе керә (FIFO). Салым декларациясе өчен салым органыгыз таләп иткән алмашу курсы буенча күчерегез.';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

@@ -782,5 +782,10 @@
   "allocationAccounts": "Akaunti",
   "portfolioFee": "Ada ({currency})",
   "portfolioFeeAdd": "Ongeza ada",
-  "portfolioFeeRow": "Ada: {amount}"
+  "portfolioFeeRow": "Ada: {amount}",
+  "portfolioAnnualSummary": "Muhtasari wa mwaka",
+  "portfolioProceeds": "Mapato ya mauzo",
+  "portfolioCostBasis": "Gharama ya ununuzi",
+  "portfolioFeesPaid": "Ada zilizolipwa",
+  "portfolioAnnualSummaryNote": "Kiasi kiko katika sarafu asili, hakijabadilishwa. Mapato ya mauzo ni baada ya kutoa ada ya mauzo; gharama ya ununuzi inajumuisha ada ya ununuzi (FIFO). Kwa marejesho ya kodi, badilisha kwa kiwango cha ubadilishaji kinachotakiwa na mamlaka ya kodi."
 }

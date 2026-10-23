@@ -2632,6 +2632,22 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Podsumowanie roczne';
+
+  @override
+  String get portfolioProceeds => 'Przychód ze sprzedaży';
+
+  @override
+  String get portfolioCostBasis => 'Koszt nabycia';
+
+  @override
+  String get portfolioFeesPaid => 'Zapłacone prowizje';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Kwoty w walucie oryginalnej, bez przeliczenia. Przychód jest pomniejszony o prowizję od sprzedaży; koszt nabycia obejmuje prowizję od zakupu (FIFO). Do zeznania podatkowego przelicz po kursie wymaganym przez urząd skarbowy.';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

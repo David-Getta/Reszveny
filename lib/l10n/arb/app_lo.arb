@@ -782,5 +782,10 @@
   "allocationAccounts": "ບັນຊີ",
   "portfolioFee": "ຄ່າທຳນຽມ ({currency})",
   "portfolioFeeAdd": "ເພີ່ມຄ່າທຳນຽມ",
-  "portfolioFeeRow": "ຄ່າທຳນຽມ: {amount}"
+  "portfolioFeeRow": "ຄ່າທຳນຽມ: {amount}",
+  "portfolioAnnualSummary": "ສະຫຼຸບປະຈຳປີ",
+  "portfolioProceeds": "ລາຍຮັບຈາກການຂາຍ",
+  "portfolioCostBasis": "ຕົ້ນທຶນການຊື້",
+  "portfolioFeesPaid": "ຄ່າທຳນຽມທີ່ຈ່າຍ",
+  "portfolioAnnualSummaryNote": "ຈຳນວນເງິນເປັນສະກຸນເງິນເດີມ ບໍ່ໄດ້ແປງ. ລາຍຮັບຈາກການຂາຍແມ່ນຫັກຄ່າທຳນຽມການຂາຍແລ້ວ; ຕົ້ນທຶນການຊື້ລວມຄ່າທຳນຽມການຊື້ (FIFO). ສຳລັບການຍື່ນພາສີ, ໃຫ້ແປງຕາມອັດຕາແລກປ່ຽນທີ່ເຈົ້າໜ້າທີ່ພາສີຂອງທ່ານກຳນົດ."
 }

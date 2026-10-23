@@ -782,5 +782,10 @@
   "allocationAccounts": "Konti",
   "portfolioFee": "Komisiyo ({currency})",
   "portfolioFeeAdd": "Ongerako komisiyo",
-  "portfolioFeeRow": "Komisiyo: {amount}"
+  "portfolioFeeRow": "Komisiyo: {amount}",
+  "portfolioAnnualSummary": "Incamake y'umwaka",
+  "portfolioProceeds": "Amahera avuye mu kugurisha",
+  "portfolioCostBasis": "Igiciro c'ivyaguzwe",
+  "portfolioFeesPaid": "Komisiyo zarishwe",
+  "portfolioAnnualSummaryNote": "Amahera ari mu mahera y'intango, ntiyahinduwe. Amahera avuye mu kugurisha yakuweko komisiyo yo kugurisha; igiciro c'ivyaguzwe kirimwo komisiyo yo kugura (FIFO). Ku bijanye n'imenyekanisha ry'ikori, hindura ku giciro c'ivunjisha gisabwa n'ubuyobozi bw'amakori."
 }

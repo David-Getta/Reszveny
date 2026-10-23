@@ -782,5 +782,10 @@
   "allocationAccounts": "Hesaplar",
   "portfolioFee": "Komisyon ({currency})",
   "portfolioFeeAdd": "Komisyon ekle",
-  "portfolioFeeRow": "Komisyon: {amount}"
+  "portfolioFeeRow": "Komisyon: {amount}",
+  "portfolioAnnualSummary": "Yıllık özet",
+  "portfolioProceeds": "Satış bedeli",
+  "portfolioCostBasis": "Maliyet bedeli",
+  "portfolioFeesPaid": "Ödenen komisyon",
+  "portfolioAnnualSummaryNote": "Tutarlar orijinal para biriminde, çevrilmemiştir. Satış bedelinden satış komisyonu düşülmüştür; maliyet bedeline alış komisyonu dahildir (FIFO). Vergi beyannameniz için vergi idarenizin istediği döviz kuruyla çevirin."
 }

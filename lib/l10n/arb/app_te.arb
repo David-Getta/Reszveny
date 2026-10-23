@@ -782,5 +782,10 @@
   "allocationAccounts": "ఖాతాలు",
   "portfolioFee": "రుసుము ({currency})",
   "portfolioFeeAdd": "రుసుమును జోడించండి",
-  "portfolioFeeRow": "రుసుము: {amount}"
+  "portfolioFeeRow": "రుసుము: {amount}",
+  "portfolioAnnualSummary": "వార్షిక సారాంశం",
+  "portfolioProceeds": "అమ్మకపు ఆదాయం",
+  "portfolioCostBasis": "కొనుగోలు వ్యయం",
+  "portfolioFeesPaid": "చెల్లించిన రుసుము",
+  "portfolioAnnualSummaryNote": "మొత్తాలు అసలు కరెన్సీలో ఉన్నాయి, మార్చబడలేదు. అమ్మకపు ఆదాయం నుండి అమ్మకపు రుసుము తీసివేయబడింది; కొనుగోలు వ్యయంలో కొనుగోలు రుసుము కలిసి ఉంది (FIFO). పన్ను రిటర్న్ కోసం, మీ పన్ను శాఖ కోరే మారకపు రేటులో మార్చండి."
 }

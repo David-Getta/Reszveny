@@ -782,5 +782,10 @@
   "allocationAccounts": "རྩིས་ཁྲ",
   "portfolioFee": "གླ་ཆ ({currency})",
   "portfolioFeeAdd": "གླ་ཆ་སྣོན།",
-  "portfolioFeeRow": "གླ་ཆ། {amount}"
+  "portfolioFeeRow": "གླ་ཆ། {amount}",
+  "portfolioAnnualSummary": "ལོ་འཁོར་བསྡུས་དོན",
+  "portfolioProceeds": "འཚོང་ཡོང",
+  "portfolioCostBasis": "ཉོ་གོང",
+  "portfolioFeesPaid": "སྤྲད་ཟིན་པའི་གླ་ཆ",
+  "portfolioAnnualSummaryNote": "དངུལ་འབོར་ནི་ཐོག་མའི་དངུལ་ལུགས་ཐོག་ཡིན་ཞིང་བསྒྱུར་མེད། འཚོང་ཡོང་ནི་འཚོང་བའི་གླ་ཆ་ཕྲ་རྗེས་ཡིན། ཉོ་གོང་ནང་ཉོ་བའི་གླ་ཆ་ཚུད་ཡོད (FIFO)། ཁྲལ་འབབ་ཞུ་ཐོའི་ཆེད་དུ་ཁྱེད་ཀྱི་ཁྲལ་དོན་ལས་ཁུངས་ཀྱིས་དགོས་པའི་དངུལ་བརྗེའི་ཐང་ཚད་ལྟར་བསྒྱུར་རོགས།"
 }

@@ -782,5 +782,10 @@
   "allocationAccounts": "គណនី",
   "portfolioFee": "កម្រៃជើងសារ ({currency})",
   "portfolioFeeAdd": "បន្ថែមកម្រៃជើងសារ",
-  "portfolioFeeRow": "កម្រៃជើងសារ៖ {amount}"
+  "portfolioFeeRow": "កម្រៃជើងសារ៖ {amount}",
+  "portfolioAnnualSummary": "សេចក្តីសង្ខេបប្រចាំឆ្នាំ",
+  "portfolioProceeds": "ចំណូលពីការលក់",
+  "portfolioCostBasis": "ថ្លៃដើមទិញ",
+  "portfolioFeesPaid": "កម្រៃជើងសារដែលបានបង់",
+  "portfolioAnnualSummaryNote": "ចំនួនទឹកប្រាក់ជារូបិយប័ណ្ណដើម មិនបានបម្លែងទេ។ ចំណូលពីការលក់គឺក្រោយកាត់កម្រៃជើងសារលក់ ហើយថ្លៃដើមទិញរួមបញ្ចូលកម្រៃជើងសារទិញ (FIFO)។ សម្រាប់ការប្រកាសពន្ធ សូមបម្លែងតាមអត្រាប្តូរប្រាក់ដែលអាជ្ញាធរពន្ធដាររបស់អ្នកតម្រូវ។"
 }

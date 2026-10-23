@@ -782,5 +782,10 @@
   "allocationAccounts": "Tilit",
   "portfolioFee": "Välityspalkkio ({currency})",
   "portfolioFeeAdd": "Lisää välityspalkkio",
-  "portfolioFeeRow": "Välityspalkkio: {amount}"
+  "portfolioFeeRow": "Välityspalkkio: {amount}",
+  "portfolioAnnualSummary": "Vuosiyhteenveto",
+  "portfolioProceeds": "Luovutushinta",
+  "portfolioCostBasis": "Hankintameno",
+  "portfolioFeesPaid": "Maksetut välityspalkkiot",
+  "portfolioAnnualSummaryNote": "Summat alkuperäisessä valuutassa, muuntamatta. Luovutushinnasta on vähennetty myynnin välityspalkkio; hankintameno sisältää oston välityspalkkion (FIFO). Muunna veroilmoitusta varten verottajan edellyttämällä valuuttakurssilla."
 }

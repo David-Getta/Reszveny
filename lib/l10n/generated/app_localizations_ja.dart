@@ -2485,6 +2485,22 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => '年間サマリー';
+
+  @override
+  String get portfolioProceeds => '譲渡収入';
+
+  @override
+  String get portfolioCostBasis => '取得費';
+
+  @override
+  String get portfolioFeesPaid => '支払手数料';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      '金額は換算前の元の通貨で表示しています。譲渡収入は売却手数料を差し引いた額、取得費は購入手数料を含む額です（FIFO）。確定申告では、税務当局が定める為替レートで換算してください。';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

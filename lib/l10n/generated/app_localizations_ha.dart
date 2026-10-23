@@ -2570,6 +2570,22 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAnnualSummary => 'Taƙaitaccen bayanin shekara';
+
+  @override
+  String get portfolioProceeds => 'Kuɗin sayarwa';
+
+  @override
+  String get portfolioCostBasis => 'Kuɗin saye';
+
+  @override
+  String get portfolioFeesPaid => 'Kuɗin dillali da aka biya';
+
+  @override
+  String get portfolioAnnualSummaryNote =>
+      'Adadin suna a asalin kuɗin, ba a canza su ba. An cire kuɗin dillali na sayarwa daga kuɗin sayarwa; kuɗin saye ya haɗa da kuɗin dillali na saye (FIFO). Don bayanin harajinka, canza su a farashin musaya da hukumar harajinka ke buƙata.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

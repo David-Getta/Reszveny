@@ -782,5 +782,10 @@
   "allocationAccounts": "ანგარიშები",
   "portfolioFee": "საკომისიო ({currency})",
   "portfolioFeeAdd": "საკომისიოს დამატება",
-  "portfolioFeeRow": "საკომისიო: {amount}"
+  "portfolioFeeRow": "საკომისიო: {amount}",
+  "portfolioAnnualSummary": "წლიური შეჯამება",
+  "portfolioProceeds": "გაყიდვიდან შემოსავალი",
+  "portfolioCostBasis": "შეძენის ღირებულება",
+  "portfolioFeesPaid": "გადახდილი საკომისიო",
+  "portfolioAnnualSummaryNote": "თანხები საწყის ვალუტაშია, გადაუანგარიშებლად. გაყიდვიდან შემოსავალი გაყიდვის საკომისიოს გამოკლებითაა; შეძენის ღირებულება მოიცავს ყიდვის საკომისიოს (FIFO). საგადასახადო დეკლარაციისთვის გადაიანგარიშეთ იმ კურსით, რომელსაც თქვენი საგადასახადო ორგანო მოითხოვს."
 }

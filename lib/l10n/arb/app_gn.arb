@@ -782,5 +782,10 @@
   "allocationAccounts": "Cuentakuéra",
   "portfolioFee": "Comisión ({currency})",
   "portfolioFeeAdd": "Embojoapy peteĩ comisión",
-  "portfolioFeeRow": "Comisión: {amount}"
+  "portfolioFeeRow": "Comisión: {amount}",
+  "portfolioAnnualSummary": "Ary ñemombykymi",
+  "portfolioProceeds": "Ñemu repy",
+  "portfolioCostBasis": "Jejogua repy",
+  "portfolioFeesPaid": "Comisión ojehepymeʼẽva",
+  "portfolioAnnualSummaryNote": "Pira pire oĩ viru ypykuépe, noñemoambuéi. Ñemu repýgui oñenohẽma ñemu comisión; jejogua repy oguereko jejogua comisión (FIFO). Ne declaración de impuestos-rã, emoambue pe cambio repýpe ojeruréva nde impuesto mburuvicha."
 }
