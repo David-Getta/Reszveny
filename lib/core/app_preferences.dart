@@ -633,7 +633,11 @@ class AppPreferences extends ChangeNotifier {
         recent: strings(_recentKey) ?? const [],
         favorites: strings(_favoritesKey) ?? const [],
         hotkeyJson: hotkey is Map<String, dynamic> ? hotkey : null,
-        displayCurrency: str(_currencyKey) ?? currencyUnset,
+        // A bolgár leva 2026-tól euró (az ECB már nem jegyzi).
+        displayCurrency: switch (str(_currencyKey)) {
+          'BGN' => 'EUR',
+          final c => c ?? currencyUnset,
+        },
         autoUpdate: flag(_autoUpdateKey) ?? true,
         analysisDepth: AnalysisDepth.values.asNameMap()[str(_depthKey) ?? ''] ?? AnalysisDepth.standard,
         readerLevel: ReaderLevel.values.asNameMap()[str(_readerKey) ?? ''] ?? ReaderLevel.beginner,

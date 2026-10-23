@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
@@ -23,8 +25,53 @@ class FavoritesStrip extends StatefulWidget {
 class _FavoritesStripState extends State<FavoritesStrip> {
   final Map<String, Future<StockQuote>> _quotes = {};
 
-  Future<StockQuote> _quote(String symbol) =>
-      _quotes.putIfAbsent(symbol, () => AppServices.of(context).marketData.quote(symbol));
+  /// Nyitva hagyva (asztali gépen napokig) félóránként, és előtérbe kerüléskor
+  /// (ha legalább 5 perce töltött) friss árak.
+  static const refreshEvery = Duration(minutes: 30);
+  Timer? _timer;
+  AppLifecycleListener? _lifecycle;
+  DateTime _loadedAt = DateTime.now();
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = Timer.periodic(refreshEvery, (_) => _refresh());
+    _lifecycle = AppLifecycleListener(
+      onResume: () {
+        if (DateTime.now().difference(_loadedAt) >= const Duration(minutes: 5)) _refresh();
+      },
+    );
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _lifecycle?.dispose();
+    super.dispose();
+  }
+
+  void _refresh() {
+    if (!mounted) return;
+    setState(() {
+      _quotes.clear();
+      _loadedAt = DateTime.now();
+    });
+  }
+
+  /// A sikertelen lekérés nem marad meg: a következő rajzolás újra próbálja.
+  Future<StockQuote> _quote(String symbol) {
+    if (_quotes[symbol] case final cached?) return cached;
+    final market = AppServices.of(context).marketData;
+    final f = Future.sync(() => market.quote(symbol));
+    _quotes[symbol] = f;
+    f.then<void>(
+      (_) {},
+      onError: (Object _) {
+        if (identical(_quotes[symbol], f)) _quotes.remove(symbol);
+      },
+    );
+    return f;
+  }
 
   @override
   Widget build(BuildContext context) {

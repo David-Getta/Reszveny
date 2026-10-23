@@ -34,7 +34,6 @@ class FxService extends ChangeNotifier {
     'PLN',
     'CZK',
     'RON',
-    'BGN',
     'SEK',
     'NOK',
     'DKK',
@@ -59,7 +58,18 @@ class FxService extends ChangeNotifier {
     'ZAR',
   ];
 
-  static bool isSupported(String? code) => code != null && supportedCurrencies.contains(code.toUpperCase());
+  /// A fő pénznem és a szorzó: az alegységben (penny, cent, agora) jegyzett
+  /// árfolyamot a fő pénznem századaként váltjuk (`GBp`/`GBX` → GBP × 0,01,
+  /// `ZAc` → ZAR × 0,01, `ILA` → ILS × 0,01). A `GBp` kisbetűje számít: nem GBP.
+  static (String, double) major(String code) {
+    final u = code.toUpperCase();
+    if (code == 'GBp' || u == 'GBX') return ('GBP', 0.01);
+    if (code == 'ZAc' || u == 'ZAC') return ('ZAR', 0.01);
+    if (u == 'ILA') return ('ILS', 0.01);
+    return (u, 1);
+  }
+
+  static bool isSupported(String? code) => code != null && supportedCurrencies.contains(major(code).$1);
 
   /// A lekért árfolyam és a lekérés ideje (a 12 óra ettől számít, nem az ECB
   /// árfolyamának napjától – az ünnepnapok után is lehet több napos).
@@ -71,11 +81,12 @@ class FxService extends ChangeNotifier {
   /// nem érhető el (ilyenkor a felület egyszerűen nem mutat átváltást).
   /// Árfolyamok a [to] pénznemre, pénznemenként egyszer lekérve (az azonos
   /// pénznem 1); amelyikhez nincs árfolyam, az kimarad a térképből.
+  /// A térkép kulcsa a megadott pénznemkód (ahogy a tételeknél szerepel).
   Future<Map<String, double>> ratesFor(Iterable<String> currencies, String to) async {
     final out = <String, double>{};
     await Future.wait([
-      for (final c in {for (final c in currencies) c.toUpperCase()})
-        if (c == to.toUpperCase())
+      for (final c in currencies.toSet())
+        if (c.toUpperCase() == to.toUpperCase() && major(c).$2 == major(to).$2)
           Future.value(out[c] = 1)
         else
           rate(c, to).then((r) {
@@ -86,7 +97,17 @@ class FxService extends ChangeNotifier {
   }
 
   Future<FxRate?> rate(String from, String to) {
-    final f = from.toUpperCase(), t = to.toUpperCase();
+    final (f, ff) = major(from);
+    final (t, tf) = major(to);
+    final scale = ff / tf;
+    if (scale == 1) return _rate(f, t);
+    if (!isSupported(f) || !isSupported(t)) return Future.value(null);
+    // Ugyanannak a pénznemnek az alegysége (pl. GBX → GBP): csak a szorzó.
+    if (f == t) return Future.value(FxRate(from: from, to: to, rate: scale, date: DateTime.now()));
+    return _rate(f, t).then((r) => r == null ? null : FxRate(from: from, to: to, rate: r.rate * scale, date: r.date));
+  }
+
+  Future<FxRate?> _rate(String f, String t) {
     if (f == t || !isSupported(f) || !isSupported(t)) return Future.value(null);
     final key = '$f>$t';
     final cached = _cache[key];
@@ -165,7 +186,15 @@ class FxService extends ChangeNotifier {
   }
 
   /// Azonnali (már gyorsítótárazott) árfolyam, szinkron megjelenítéshez.
-  FxRate? cachedRate(String from, String to) => _cache['${from.toUpperCase()}>${to.toUpperCase()}']?.$2;
+  FxRate? cachedRate(String from, String to) {
+    final (f, ff) = major(from);
+    final (t, tf) = major(to);
+    final scale = ff / tf;
+    if (f == t) return scale == 1 ? null : FxRate(from: from, to: to, rate: scale, date: DateTime.now());
+    final r = _cache['$f>$t']?.$2;
+    if (r == null || scale == 1) return r;
+    return FxRate(from: from, to: to, rate: r.rate * scale, date: r.date);
+  }
 
   /// A Frankfurter `/latest` válasza: `{"amount":1,"base":"USD","date":"2026-10-09","rates":{"HUF":355.2}}`.
   static FxRate? parseLatest(Map<String, dynamic> j, String from, String to) {
@@ -191,7 +220,10 @@ String defaultCurrencyFor({String? countryCode, String? languageCode}) {
     'PL': 'PLN',
     'CZ': 'CZK',
     'RO': 'RON',
-    'BG': 'BGN',
+    // Az euróövezet (Bulgária 2026. január 1-jétől).
+    'AT': 'EUR', 'BE': 'EUR', 'BG': 'EUR', 'CY': 'EUR', 'DE': 'EUR', 'EE': 'EUR', 'ES': 'EUR', 'FI': 'EUR',
+    'FR': 'EUR', 'GR': 'EUR', 'HR': 'EUR', 'IE': 'EUR', 'IT': 'EUR', 'LT': 'EUR', 'LU': 'EUR', 'LV': 'EUR',
+    'MT': 'EUR', 'NL': 'EUR', 'PT': 'EUR', 'SI': 'EUR', 'SK': 'EUR',
     'SE': 'SEK',
     'NO': 'NOK',
     'DK': 'DKK',
@@ -221,7 +253,7 @@ String defaultCurrencyFor({String? countryCode, String? languageCode}) {
     'pl': 'PLN',
     'cs': 'CZK',
     'ro': 'RON',
-    'bg': 'BGN',
+    'bg': 'EUR',
     'sv': 'SEK',
     'nb': 'NOK',
     'da': 'DKK',

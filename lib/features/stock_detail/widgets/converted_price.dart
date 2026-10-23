@@ -31,16 +31,25 @@ class ConvertedPrice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final services = AppServices.of(context);
+    // A megjelenítési pénznem váltása azonnal látszik (nem csak a következő újrarajzoláskor).
+    return ListenableBuilder(listenable: services.preferences, builder: (context, _) => _build(context, services));
+  }
+
+  Widget _build(BuildContext context, AppServices services) {
     final locale = Localizations.localeOf(context);
     final to = services.displayCurrency(locale);
     final from = fromCurrency;
-    if (to == null || from == null || from.toUpperCase() == to.toUpperCase()) return const SizedBox.shrink();
+    if (to == null || from == null) return const SizedBox.shrink();
+    // Ugyanaz a pénznem (az alegység – GBp, GBX – nem az: azt átváltjuk fontra).
+    if (FxService.major(from) == FxService.major(to)) return const SizedBox.shrink();
     if (!FxService.isSupported(from) || !FxService.isSupported(to)) return const SizedBox.shrink();
 
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
     final fmt = Fmt(locale.toString(), na: l10n.notAvailable);
+    // A pár szerint kulcsolva: új pénznemnél nem a régi árfolyam marad az új címke alatt.
     return FutureBuilder<FxRate?>(
+      key: ValueKey('$from>$to'),
       future: services.fx.rate(from, to),
       initialData: services.fx.cachedRate(from, to),
       builder: (context, snap) {
@@ -54,7 +63,10 @@ class ConvertedPrice extends StatelessWidget {
           children: [
             Text(text, style: style ?? TextStyle(color: p.muted)),
             Text(
-              l10n.fxRateNote(from, fmt.number(r.rate, decimals: r.rate < 10 ? 4 : 2), to, fmt.date(r.date)),
+              // Nagyon kis árfolyamnál (1 IDR = 0,00005 GBP) a fordítottja olvasható.
+              r.rate < 0.01
+                  ? l10n.fxRateNote(to, fmt.number(1 / r.rate, decimals: 2), from, fmt.date(r.date))
+                  : l10n.fxRateNote(from, fmt.number(r.rate, decimals: r.rate < 10 ? 4 : 2), to, fmt.date(r.date)),
               textAlign: alignEnd ? TextAlign.end : TextAlign.start,
               style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted),
             ),

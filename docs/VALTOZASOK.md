@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.275)
+# Változásjegyzék (0.2.130 → 0.2.276)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,17 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Árfolyamok és a részvényoldal kártyái: egy huszonkettedik kódátnézés javításai
+
+- **0.2.276**: a megjelenítési pénznem váltása a részvényoldal fejlécében azonnal látszik, és betöltés közben
+  sem kerül a régi árfolyam az új pénznem címkéje alá. Az euróövezet országaiban (pl. Írország, Málta, angol
+  nyelvű felülettel Németország) és Bulgáriában (2026-tól euró) az alapértelmezett pénznem az euró; a tárolt
+  bolgár leva euróra vált. A pennyben (GBp, GBX), centben (ZAc) és agórában (ILA) jegyzett árak a fő pénznem
+  századaként váltódnak (eddig a font árfolyamával, százszoros értékkel, vagy egyáltalán nem). A kezdőképernyő
+  kedvencei félóránként és előtérbe kerüléskor frissülnek, egy sikertelen lekérés nem marad „n/a”. A részvényoldal
+  gyorsjelentés-, bennfentes- és társcég-adatait görgetéskor nem kéri le újra (10 percig megmarad). A nagyon kis
+  árfolyam (1 IDR = 0,00005 GBP) a fordítottjával jelenik meg, nem 0,0000-ként.
 
 ## Fiók, belépés, meghívó: egy huszonegyedik kódátnézés javításai
 

@@ -192,14 +192,36 @@ class CachingMarketDataProvider extends MarketDataProvider {
   Future<AnalysisExtras> analysisExtras(String symbol) => inner.analysisExtras(symbol);
 
   @override
-  Future<List<String>> peers(String symbol) => inner.peers(symbol);
+  Future<List<String>> peers(String symbol) => _memoized('peers', symbol, () => inner.peers(symbol));
 
   @override
   Future<UpcomingEarnings?> nextEarnings(String symbol) => inner.nextEarnings(symbol);
 
   @override
-  Future<EarningsOverview> earnings(String symbol) => inner.earnings(symbol);
+  Future<EarningsOverview> earnings(String symbol) => _memoized('earnings', symbol, () => inner.earnings(symbol));
 
   @override
-  Future<InsiderSummary?> insiders(String symbol) => inner.insiders(symbol);
+  Future<InsiderSummary?> insiders(String symbol) => _memoized('insiders', symbol, () => inner.insiders(symbol));
+
+  /// A részvényoldal kártyái görgetéskor újraépülnek: a ritkán változó adatot
+  /// ([memoFor] ideig) ne kérjük le újra – az adatszolgáltató percenkénti kerete szűk.
+  static const memoFor = Duration(minutes: 10);
+  final Map<String, (DateTime, Future<Object?>)> _memo = {};
+
+  Future<T> _memoized<T>(String kind, String symbol, Future<T> Function() load) {
+    final key = '${kind}_${symbol.toUpperCase()}';
+    final now = _clock();
+    if (_memo[key] case (final at, final f) when now.difference(at) < memoFor) return f as Future<T>;
+    final f = Future.sync(load);
+    _memo[key] = (now, f);
+    // A hiba nem marad meg: a következő kérés újra próbálja.
+    f.then<void>(
+      (_) {},
+      onError: (Object _) {
+        if (identical(_memo[key]?.$2, f)) _memo.remove(key);
+      },
+    );
+    if (_memo.length > 3 * maxSymbols) _memo.removeWhere((_, v) => now.difference(v.$1) >= memoFor);
+    return f;
+  }
 }
