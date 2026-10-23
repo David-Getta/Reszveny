@@ -699,7 +699,9 @@ class AppPreferences extends ChangeNotifier {
   /// Új saját lista; `false`, ha a név üres, foglalt vagy elérte a [maxLists]-et.
   Future<bool> addWatchList(String name) async {
     final n = name.trim();
-    if (n.isEmpty || n.length > maxListName || _lists.length >= maxLists || _listNamed(n) != null) return false;
+    if (n.isEmpty || n.characters.length > maxListName || _lists.length >= maxLists || _listNamed(n) != null) {
+      return false;
+    }
     _lists.add(WatchList(name: n));
     _listMark(listKey(n), added: true);
     await _saveLists();
@@ -708,7 +710,7 @@ class AppPreferences extends ChangeNotifier {
 
   Future<bool> renameWatchList(String from, String to) async {
     final l = _listNamed(from), n = to.trim();
-    if (l == null || n.isEmpty || n.length > maxListName) return false;
+    if (l == null || n.isEmpty || n.characters.length > maxListName) return false;
     final other = _listNamed(n);
     if (other != null && other != l) return false;
     _lists[_lists.indexOf(l)] = WatchList(name: n, symbols: l.symbols);
@@ -777,11 +779,13 @@ class AppPreferences extends ChangeNotifier {
     return added;
   }
 
-  /// Az összes saját lista cseréje (szinkronkor a fiók adataira).
+  /// Az összes saját lista cseréje (szinkronkor a fiók adataira, visszaállításkor
+  /// a mentéssel összefésülve). A [maxLists] csak az új lista létrehozását korlátozza:
+  /// egy összefésülés nem dobhat el meglévő listát.
   Future<void> setWatchLists(List<WatchList> lists) async {
     _lists
       ..clear()
-      ..addAll(lists.take(maxLists));
+      ..addAll(lists);
     await _saveLists();
   }
 
@@ -979,9 +983,10 @@ class AppPreferences extends ChangeNotifier {
         _favoritesRemoved.remove(s);
       }
     }
+    // Nagybetűsen, ismétlés nélkül (egy kézzel írt mentés „aapl”-je se legyen kétszer).
     _favorites
       ..clear()
-      ..addAll(symbols.map((s) => s.toUpperCase()));
+      ..addAll({for (final s in symbols) s.trim().toUpperCase()}.where((s) => s.isNotEmpty));
     _favoriteSince
       ..addAll(since)
       ..removeWhere((s, _) => !_favorites.contains(s));
@@ -1055,10 +1060,10 @@ class WatchList {
     if (j is! Map || j['name'] is! String || (j['name'] as String).trim().isEmpty) return null;
     return WatchList(
       name: (j['name'] as String).trim(),
-      symbols: [
+      symbols: {
         for (final s in (j['symbols'] is List ? j['symbols'] as List : const []))
           if (s is String && s.trim().isNotEmpty) s.trim().toUpperCase(),
-      ],
+      }.toList(),
     );
   }
 

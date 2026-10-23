@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.265)
+# Változásjegyzék (0.2.130 → 0.2.266)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,20 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Kedvencek, listák, összehasonlítás, mentés: egy tizenkettedik kódátnézés javításai
+
+- **0.2.266**: a mentésből való visszaállítás valóban nem töröl semmit. A mentés törlési jelzései (a mentést készítő
+  eszközön levett kedvenc, törölt lista, levett listatag, törölt tétel, riasztás, jegyzet) nem viszik el a most
+  meglévőt. A mostani jegyzet, készpénz és cél marad, a mentés csak a hiányzót pótolja, az eltérő mentett jegyzet a
+  mostani alá kerül. A hibás típusú mezőt tartalmazó fájl egészében elutasítva, üzenettel (eddig félig íródott be,
+  üzenet nélkül), a furcsa értékek (szám azonosító, hiányzó dátum) nem okoznak hibát, a kisbetűs tickerek nem
+  duplázódnak. A 20 feletti listák sem vesznek el összefésüléskor (a korlát csak új listára vonatkozik).
+  Összehasonlításban az adósságmentes cég (0 adósság/saját tőke) nyer, holtversenyben nincs kiemelés. A
+  tickerbeillesztés idézőjeles CSV-ből, „Apple (AAPL)” alakból, „AAPL: 10” sorokból és mondatból is kiolvassa a
+  tickereket (a közönséges szavak nélkül). Az utolsó kedvenc levétele után is elérhetők a saját listák. A
+  jegyzet és a listanév hossza karakterre számít (az emodzsis jegyzet nem vágódik meg, az emodzsis név nem
+  utasítódik el csendben). A rendezés stabil (a betöltetlen sorok a saját sorrendben maradnak).
 
 ## AI-elemzés: egy tizenegyedik kódátnézés javításai
 

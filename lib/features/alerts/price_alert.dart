@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/models/stock_quote.dart';
+import '../../core/util/text.dart';
 import '../../core/util/tombstones.dart';
 
 /// Mikor szóljon a riasztás: az ár egy szint fölé megy, alá esik, a napi
@@ -164,23 +165,23 @@ class PriceAlert {
   };
 
   static PriceAlert? fromJson(Map<String, dynamic> j) {
-    final symbol = (j['symbol'] as String? ?? '').trim().toUpperCase();
+    final symbol = (asText(j['symbol']) ?? '').trim().toUpperCase();
     final kind = AlertKind.parse(j['kind']);
     final value = j['value'];
     if (symbol.isEmpty || kind == null || value is! num || value <= 0) return null;
     final tp = j['triggered_price'];
     final peak = j['peak'];
     return PriceAlert(
-      id: j['id'] as String? ?? '${symbol}_${DateTime.now().microsecondsSinceEpoch}',
+      id: asText(j['id']) ?? '${symbol}_${DateTime.now().microsecondsSinceEpoch}',
       symbol: symbol,
       kind: kind,
       value: value.toDouble(),
-      currency: j['currency'] as String?,
-      createdAt: DateTime.tryParse(j['created_at'] as String? ?? '') ?? DateTime.now(),
-      triggeredAt: DateTime.tryParse(j['triggered_at'] as String? ?? ''),
+      currency: asText(j['currency']),
+      createdAt: DateTime.tryParse(asText(j['created_at']) ?? '') ?? DateTime.now(),
+      triggeredAt: DateTime.tryParse(asText(j['triggered_at']) ?? ''),
       triggeredPrice: tp is num ? tp.toDouble() : null,
       peak: peak is num && peak > 0 ? peak.toDouble() : null,
-      modified: DateTime.tryParse(j['edited'] as String? ?? ''),
+      modified: DateTime.tryParse(asText(j['edited']) ?? ''),
     );
   }
 }

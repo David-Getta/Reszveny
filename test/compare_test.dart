@@ -42,6 +42,12 @@ void main() {
     expect(bestIndex([0.1, 0.3, null], Better.higher), 1);
     expect(bestIndex([12, null, null], Better.higher), isNull);
     expect(bestIndex([1.2, 0.9], Better.none), isNull);
+    expect(bestIndex([0, 0.5, 1.2], Better.lowerOrZero), 0, reason: 'debt-free wins debt/equity');
+    expect(bestIndex([-0.4, 0.5, 1.2], Better.lowerOrZero), 1, reason: 'negative equity is not low debt');
+    expect(bestIndex([0, 18, 25], Better.lower), 1);
+    expect(bestIndex([20, 20, 30], Better.lower), isNull, reason: 'a tie has no winner');
+    expect(bestIndex([5, 9, 9], Better.higher), isNull);
+    expect(bestIndex([-3, -1], Better.higher), 1);
   });
 
   test('rows from real details: values in each stock’s format and the winners', () async {
@@ -73,7 +79,9 @@ void main() {
     final surprise = withEarnings.firstWhere((r) => r.label == 'Last quarter EPS vs. expected');
     expect(surprise.values[0], '+2.7%');
     expect(surprise.values[2], isNull);
-    expect(surprise.best, isNotNull);
+    // A mintaadatban mindkettőé ugyanannyi: holtversenyben nincs kiemelés.
+    expect(surprise.values[1], surprise.values[0]);
+    expect(surprise.best, isNull);
     expect(withEarnings.firstWhere((r) => r.label == 'Next report').values[0], isNotNull);
     // Szövegként az AI-kérdéshez: oszlopok és soronként az értékek.
     final text = compareRowsAsText(['AAPL', 'MSFT', 'X'], rows);

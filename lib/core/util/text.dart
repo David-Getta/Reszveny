@@ -7,3 +7,6 @@ String clipText(String s, int max) {
   if (end > 0 && (s.codeUnitAt(end - 1) & 0xFC00) == 0xD800) end--;
   return s.substring(0, end);
 }
+
+/// A JSON-érték, ha szöveg; különben `null` (egy hibás fájl vagy csomag ne dobjon kivételt).
+String? asText(Object? v) => v is String ? v : null;

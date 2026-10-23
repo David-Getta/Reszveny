@@ -92,6 +92,114 @@ void main() {
     expect(a.portfolio.deletedJson.keys, [gone.id]);
   });
 
+  test("restoring never deletes: the backup's own deletions are ignored", () async {
+    // A mentést készítő eszköz felvette, majd levette az MSFT-t, törölte a Tech listát,
+    // és a KO-t levette a Div listáról.
+    final a = services();
+    await a.preferences.setFavorites(['AAPL']);
+    await a.preferences.toggleFavorite('MSFT');
+    await a.preferences.toggleFavorite('MSFT');
+    await a.preferences.addWatchList('Tech');
+    await a.preferences.removeWatchList('Tech');
+    await a.preferences.addWatchList('Div');
+    await a.preferences.toggleInList('Div', 'KO');
+    await a.preferences.toggleInList('Div', 'KO');
+    final lot = await a.portfolio.add(symbol: 'X', quantity: 1, price: 1, currency: 'USD');
+    await a.portfolio.remove(lot.id);
+    await a.notes.set('NVDA', 'old');
+    await a.notes.set('NVDA', '');
+    final file = jsonEncode(Backup.data(a));
+
+    SharedPreferences.setMockInitialValues({});
+    final b = services();
+    await b.preferences.setFavorites(['MSFT']);
+    await b.preferences.addWatchList('Tech');
+    await b.preferences.toggleInList('Tech', 'AMD');
+    await b.preferences.addWatchList('Div');
+    await b.preferences.toggleInList('Div', 'KO');
+    await b.notes.set('NVDA', 'mine');
+    await Backup.restore(b, Backup.parse(file)!);
+    expect(b.preferences.favorites.toSet(), {'MSFT', 'AMD', 'KO', 'AAPL'});
+    expect(b.preferences.watchLists.map((l) => '${l.name}: ${l.symbols.join(',')}'), ['Tech: AMD', 'Div: KO']);
+    expect(b.notes.of('NVDA')?.text, 'mine');
+    expect(b.preferences.favoritesRemovedJson, isEmpty);
+    expect(b.preferences.listsRemovedJson, isEmpty);
+  });
+
+  test('restoring keeps this device\'s notes, cash and goals; the backup only fills the gaps', () async {
+    final a = services();
+    await a.notes.set('AAPL', 'A: other thesis');
+    await a.notes.set('MSFT', 'Cloud.');
+    await a.portfolio.setCash('USD', 50);
+    await a.portfolio.setCash('CHF', 70);
+    await a.preferences.setDividendGoal((amount: 100, currency: 'EUR'));
+    final file = jsonEncode(Backup.data(a));
+
+    SharedPreferences.setMockInitialValues({});
+    final b = services();
+    await b.notes.set('AAPL', 'B: my own thesis');
+    await b.portfolio.setCash('USD', 1000);
+    await b.portfolio.setCash('EUR', 500);
+    await b.preferences.setPortfolioGoal((amount: 10000000, currency: 'HUF'));
+    await Backup.restore(b, Backup.parse(file)!);
+    expect(b.notes.of('AAPL')?.text, 'B: my own thesis\n\nA: other thesis');
+    expect(b.notes.of('MSFT')?.text, 'Cloud.');
+    expect(b.portfolio.cash, {'USD': 1000, 'EUR': 500, 'CHF': 70});
+    expect(b.preferences.portfolioGoal, (amount: 10000000.0, currency: 'HUF'));
+    expect(b.preferences.dividendGoal, (amount: 100.0, currency: 'EUR'));
+
+    // Újra visszaállítva a jegyzet nem duplázódik.
+    await Backup.restore(b, Backup.parse(file)!);
+    expect(b.notes.of('AAPL')?.text, 'B: my own thesis\n\nA: other thesis');
+  });
+
+  test('a malformed backup is refused as a whole; odd values are tolerated; tickers are normalised', () async {
+    expect(Backup.parse('{"app":"WhatStock","favorites":"AAPL"}'), isNull);
+    expect(Backup.parse('{"app":"WhatStock","notes":[]}'), isNull);
+    final b = services();
+    await Backup.restore(
+      b,
+      Backup.parse(
+        jsonEncode({
+          'app': 'WhatStock',
+          'favorites': ['aapl', 'AAPL', ' msft ', 7],
+          'watch_lists': [
+            {
+              'name': 'Tech',
+              'symbols': ['nvda', 'NVDA'],
+            },
+          ],
+          'alerts': [
+            {'id': 7, 'symbol': 'AAPL', 'kind': 'above', 'value': 250, 'currency': 1, 'created_at': 5},
+          ],
+          'notes': {
+            'aapl': {'text': 'Why.'},
+          },
+        }),
+      )!,
+    );
+    expect(b.preferences.favorites, ['AAPL', 'MSFT']);
+    expect(b.preferences.watchLists.single.symbols, ['NVDA']);
+    expect(b.alerts.alerts.single.value, 250);
+    expect(b.notes.of('AAPL')?.text, 'Why.');
+  });
+
+  test('restoring does not drop lists beyond the limit for new lists', () async {
+    final a = services();
+    for (var i = 0; i < 10; i++) {
+      await a.preferences.addWatchList('A$i');
+    }
+    final file = jsonEncode(Backup.data(a));
+    SharedPreferences.setMockInitialValues({});
+    final b = services();
+    for (var i = 0; i < 15; i++) {
+      await b.preferences.addWatchList('B$i');
+    }
+    await Backup.restore(b, Backup.parse(file)!);
+    expect(b.preferences.watchLists, hasLength(25));
+    expect(await b.preferences.addWatchList('New'), isFalse, reason: 'új lista a korlát felett nem jön létre');
+  });
+
   testWidgets('settings: save a backup file and restore from one', (tester) async {
     tester.view.physicalSize = const Size(1200, 4000);
     tester.view.devicePixelRatio = 1;

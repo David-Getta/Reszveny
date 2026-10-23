@@ -193,6 +193,10 @@ void main() {
     expect(await p.addWatchList(' Tech '), isTrue);
     expect(await p.addWatchList('tech'), isFalse);
     expect(await p.addWatchList(''), isFalse);
+    // A név hossza karakterre számít, mint a szövegmezőben (emodzsi is egy karakter).
+    expect(await p.addWatchList('🚀' * AppPreferences.maxListName), isTrue);
+    expect(await p.addWatchList('🚀' * (AppPreferences.maxListName + 1)), isFalse);
+    await p.removeWatchList('🚀' * AppPreferences.maxListName);
     await p.toggleInList('Tech', 'nvda');
     expect(p.watchLists.single.symbols, ['NVDA']);
     expect(p.favorites, ['NVDA', 'MSFT']);
@@ -340,6 +344,37 @@ void main() {
   test('tickers are read from pasted text', () {
     expect(parseTickers('aapl, MSFT;  \$nvda\nOTP.BD 2024 brk-b aapl ##'), ['AAPL', 'MSFT', 'NVDA', 'OTP.BD', 'BRK-B']);
     expect(parseTickers(''), isEmpty);
+    expect(parseTickers('"AAPL","MSFT","NVDA"'), ['AAPL', 'MSFT', 'NVDA']);
+    expect(parseTickers('AAPL: 10, MSFT: 5 | (OTP.BD)'), ['AAPL', 'MSFT', 'OTP.BD']);
+    expect(parseTickers('Apple (AAPL) Microsoft (MSFT)'), ['AAPL', 'MSFT']);
+    expect(parseTickers('I hold AAPL, MSFT and NVDA.'), ['AAPL', 'MSFT', 'NVDA']);
+    expect(parseTickers('Mostly \$tsla and BRK.B.'), ['TSLA', 'BRK.B']);
+  });
+
+  testWidgets('removing the last favorite keeps the own lists reachable', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.preferences.addWatchList('Tech');
+    await s.preferences.toggleInList('Tech', 'NVDA');
+    await s.preferences.toggleFavorite('NVDA');
+    expect(s.preferences.favorites, isEmpty);
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('favorites-see-all')));
+    await tester.pumpAndSettle();
+    expect(find.text('No favorites yet. Tap the star on a stock to add it.'), findsWidgets);
+    await tester.tap(find.byKey(const ValueKey('watch-list-Tech')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('watch-NVDA')), findsOneWidget);
+    expect(find.byKey(const ValueKey('watch-list-new')), findsOneWidget);
+  });
+
+  test('favorites are kept upper-case and without repeats', () async {
+    final p = AppPreferences();
+    await p.setFavorites(['aapl', 'AAPL', ' msft', '']);
+    expect(p.favorites, ['AAPL', 'MSFT']);
   });
 
   testWidgets('share a list as text and paste tickers into another one', (tester) async {

@@ -23,6 +23,9 @@ void main() {
     expect((await NotesStore.load()).of('AAPL'), isNull);
     await store.set('X', 'a' * (NotesStore.maxLength + 500));
     expect(store.of('X')!.text.length, NotesStore.maxLength);
+    // Karakterre számolva, mint a szövegmező: az emodzsis jegyzet sem vágódik meg.
+    await store.set('Y', '😀' * NotesStore.maxLength);
+    expect(store.of('Y')!.text, '😀' * NotesStore.maxLength);
   });
 
   test('the analysis gets the notes as context, on one line and quoted safely', () {

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/text.dart';
 import '../../core/util/tombstones.dart';
 
 /// Egy tranzakció: vétel (vagy [sell] esetén eladás) – hány darab, milyen
@@ -84,20 +85,20 @@ class PortfolioLot {
   };
 
   static PortfolioLot? fromJson(Map<String, dynamic> j) {
-    final symbol = (j['symbol'] as String? ?? '').trim().toUpperCase();
+    final symbol = (asText(j['symbol']) ?? '').trim().toUpperCase();
     final q = j['quantity'], p = j['price'];
     if (symbol.isEmpty || q is! num || p is! num || q <= 0 || p <= 0) return null;
     return PortfolioLot(
-      id: j['id'] as String? ?? '${symbol}_${DateTime.now().microsecondsSinceEpoch}',
+      id: asText(j['id']) ?? '${symbol}_${DateTime.now().microsecondsSinceEpoch}',
       symbol: symbol,
       quantity: q.toDouble(),
       price: p.toDouble(),
-      currency: (j['currency'] as String? ?? 'USD').toUpperCase(),
-      date: DateTime.tryParse(j['date'] as String? ?? ''),
+      currency: (asText(j['currency']) ?? 'USD').toUpperCase(),
+      date: DateTime.tryParse(asText(j['date']) ?? ''),
       sell: j['side'] == 'sell',
       account: cleanAccount(j['account']),
       fee: cleanFee(j['fee']),
-      edited: DateTime.tryParse(j['edited'] as String? ?? ''),
+      edited: DateTime.tryParse(asText(j['edited']) ?? ''),
     );
   }
 }
@@ -141,17 +142,17 @@ class DividendRecord {
   };
 
   static DividendRecord? fromJson(Map<String, dynamic> j) {
-    final symbol = (j['symbol'] as String? ?? '').trim().toUpperCase();
+    final symbol = (asText(j['symbol']) ?? '').trim().toUpperCase();
     final a = j['amount'];
     if (symbol.isEmpty || a is! num || a <= 0) return null;
     return DividendRecord(
-      id: j['id'] as String? ?? '${symbol}_d${DateTime.now().microsecondsSinceEpoch}',
+      id: asText(j['id']) ?? '${symbol}_d${DateTime.now().microsecondsSinceEpoch}',
       symbol: symbol,
       amount: a.toDouble(),
-      currency: (j['currency'] as String? ?? 'USD').toUpperCase(),
-      date: DateTime.tryParse(j['date'] as String? ?? ''),
+      currency: (asText(j['currency']) ?? 'USD').toUpperCase(),
+      date: DateTime.tryParse(asText(j['date']) ?? ''),
       account: PortfolioLot.cleanAccount(j['account']),
-      edited: DateTime.tryParse(j['edited'] as String? ?? ''),
+      edited: DateTime.tryParse(asText(j['edited']) ?? ''),
     );
   }
 }
@@ -202,17 +203,17 @@ class SplitRecord {
   };
 
   static SplitRecord? fromJson(Map<String, dynamic> j) {
-    final symbol = (j['symbol'] as String? ?? '').trim().toUpperCase();
+    final symbol = (asText(j['symbol']) ?? '').trim().toUpperCase();
     final from = j['from'], to = j['to'];
-    final date = DateTime.tryParse(j['date'] as String? ?? '');
+    final date = DateTime.tryParse(asText(j['date']) ?? '');
     if (symbol.isEmpty || from is! int || to is! int || !validRatio(from, to) || date == null) return null;
     return SplitRecord(
-      id: j['id'] as String? ?? '${symbol}_s${DateTime.now().microsecondsSinceEpoch}',
+      id: asText(j['id']) ?? '${symbol}_s${DateTime.now().microsecondsSinceEpoch}',
       symbol: symbol,
       from: from,
       to: to,
       date: DateTime(date.year, date.month, date.day),
-      edited: DateTime.tryParse(j['edited'] as String? ?? ''),
+      edited: DateTime.tryParse(asText(j['edited']) ?? ''),
     );
   }
 

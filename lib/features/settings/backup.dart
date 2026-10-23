@@ -8,6 +8,8 @@ import '../../app_services.dart';
 import '../../core/app_preferences.dart';
 import '../../core/share/save_file.dart';
 import '../../l10n/generated/app_localizations.dart';
+import '../notes/notes_store.dart';
+import '../portfolio/portfolio_store.dart';
 import '../sync/sync_service.dart';
 
 /// Biztonsági mentés egy JSON-fájlba (kedvencek, listák, portfólió, riasztások,
@@ -27,18 +29,58 @@ class Backup {
 
   static String fileName(DateTime now) => 'WhatStock-backup-${now.toIso8601String().substring(0, 10)}.json';
 
-  /// A fájl beolvasása; `null`, ha nem WhatStock-mentés.
+  /// A mentés listát, illetve objektumot váró mezői.
+  static const _listFields = ['favorites', 'watch_lists', 'lots', 'dividends', 'splits', 'alerts'];
+  static const _mapFields = [
+    'notes',
+    'cash',
+    'cash_at',
+    'goals',
+    'targets',
+    'favorite_since',
+    'switches_at',
+    'deleted',
+    'alerts_deleted',
+    'notes_deleted',
+    'favorites_removed',
+    'favorites_added',
+    'lists_removed',
+    'lists_added',
+  ];
+
+  /// A fájl beolvasása; `null`, ha nem WhatStock-mentés, vagy egy mezője nem a várt
+  /// típusú (akkor semmit nem veszünk át belőle). A kedvencek és a jegyzetek tickerei
+  /// nagybetűsek, a kedvencek ismétlés nélkül.
   static Map<String, dynamic>? parse(String text) {
     try {
       final j = jsonDecode(text);
       if (j is! Map || j['app'] != app) return null;
-      return j.cast<String, dynamic>();
+      final m = j.cast<String, dynamic>();
+      if (_listFields.any((k) => m[k] != null && m[k] is! List) ||
+          _mapFields.any((k) => m[k] != null && m[k] is! Map)) {
+        return null;
+      }
+      return {
+        ...m,
+        if (m['favorites'] case final List f)
+          'favorites': {
+            for (final s in f)
+              if (s is String && s.trim().isNotEmpty) s.trim().toUpperCase(),
+          }.toList(),
+        if (m['notes'] case final Map n) 'notes': {for (final e in n.entries) '${e.key}'.trim().toUpperCase(): e.value},
+      };
     } catch (_) {
       return null;
     }
   }
 
-  /// Visszaállítás: a mentés és a mostani adatok uniója (a mostaniak elöl).
+  /// A törlési jelzések mezői: a mentéséi nem törölnek a mostani adatból.
+  static const _tombstoneFields = ['deleted', 'alerts_deleted', 'notes_deleted', 'favorites_removed', 'lists_removed'];
+
+  /// Visszaállítás: a mentés és a mostani adatok uniója. A mostani adatból semmi nem
+  /// vész el: a mentés törlési jelzései kimaradnak, és ami most is megvan (jegyzet,
+  /// készpénz, cél), az marad – a mentés csak a hiányzót pótolja, az eltérő mentett
+  /// jegyzet a mostani alá kerül.
   static Future<void> restore(AppServices s, Map<String, dynamic> backup) async {
     final now = SyncService.snapshotOf(
       preferences: s.preferences,
@@ -47,17 +89,19 @@ class Backup {
       notes: s.notes,
     );
     // A mentés után törölt (most hiányzó) tranzakciók, osztalékok, felaprózások,
-    // riasztások és jegyzetek visszajönnek: a törlési jelzésük kimarad, és a tétel
-    // újabbnak jelölve, hogy egy másik eszköz jelzése se vigye el újra. A most is
-    // meglévőt a szokásos összefésülés kezeli (az újabb nyer).
+    // riasztások, jegyzetek, kedvencek és listák visszajönnek: a helyi törlési
+    // jelzésük kimarad, és a tétel újabbnak jelölve, hogy egy másik eszköz jelzése
+    // se vigye el újra. A most is meglévőt a szokásos összefésülés kezeli (az újabb
+    // javítás nyer).
     Set<String> idsOf(List<String> keys) => {
       for (final key in keys)
         for (final m in (now[key] as List? ?? const [])) '${(m as Map)['id']}',
     };
+    final notesNow = (now['notes'] as Map? ?? const {});
     final present = {
       'deleted': idsOf(['lots', 'dividends', 'splits']),
       'alerts_deleted': idsOf(['alerts']),
-      'notes_deleted': {for (final k in (now['notes'] as Map? ?? const {}).keys) '$k'},
+      'notes_deleted': {for (final k in notesNow.keys) '$k'},
       'favorites_removed': {for (final f in (now['favorites'] as List? ?? const [])) '$f'},
       'lists_removed': _listKeys(now['watch_lists']),
     };
@@ -74,15 +118,41 @@ class Backup {
       for (final m in items is List ? items : const [])
         if (m is Map && back(tombKey, '${m['id']}')) {...m, 'edited': stamp} else m,
     ];
+    // Jegyzetek: ami csak a mentésben van, visszajön; az eltérő mentett szöveg a
+    // mostani alá kerül (mint tickerváltáskor), a mostani nem íródik felül.
+    final notes = <String, Object?>{};
+    for (final e in (backup['notes'] as Map? ?? const {}).entries) {
+      final symbol = '${e.key}';
+      final saved = StockNote.fromJson(e.value);
+      if (saved == null) continue;
+      final mine = StockNote.fromJson(notesNow[symbol]);
+      if (mine == null) {
+        notes[symbol] = back('notes_deleted', symbol) ? {...saved.toJson(), 'updated_at': stamp} : saved.toJson();
+      } else if (!mine.text.contains(saved.text.trim())) {
+        final text = '${mine.text.trimRight()}\n\n${saved.text.trim()}';
+        notes[symbol] = {'text': text.characters.take(NotesStore.maxLength).toString(), 'updated_at': stamp};
+      }
+    }
+    // Készpénz és célok: a mostani marad; a mentés csak a hiányzó pénznemet és célt
+    // pótolja (most bélyegezve, hogy egy korábbi helyi törlésnél is visszajöjjön).
+    final cashNow = PortfolioStore.parseCashMap(now['cash']);
+    final cash = {
+      for (final e in PortfolioStore.parseCashMap(backup['cash']).entries)
+        if (!cashNow.containsKey(e.key)) e.key: e.value,
+    };
+    final goalsNow = AppPreferences.parseGoals(now['goals']);
     final fromBackup = {
       ...backup,
+      for (final key in _tombstoneFields) key: const <String, String>{},
       for (final key in ['lots', 'dividends', 'splits']) key: reviveList(backup[key], 'deleted'),
       'alerts': reviveList(backup['alerts'], 'alerts_deleted'),
-      'notes': {
-        for (final e in (backup['notes'] as Map? ?? const {}).entries)
-          '${e.key}': e.value is Map && back('notes_deleted', '${e.key}')
-              ? {...e.value as Map, 'updated_at': stamp}
-              : e.value,
+      'notes': notes,
+      'cash': cash,
+      'cash_at': {for (final c in cash.keys) c: stamp},
+      'goals': {
+        for (final e in AppPreferences.parseGoals(backup['goals']).entries)
+          if (e.value.goal case final g? when goalsNow[e.key]?.goal == null)
+            e.key: {'amount': g.amount, 'currency': g.currency, 'at': stamp},
       },
       'favorites_added': {
         ...?(backup['favorites_added'] as Map?),
@@ -108,6 +178,7 @@ class Backup {
       ...SyncService.merge(current, fromBackup),
       'email_alerts': s.preferences.emailAlerts,
       'weekly_digest': s.preferences.weeklyDigest,
+      'switches_at': now['switches_at'],
     };
     await SyncService.applyTo(
       merged,
@@ -191,13 +262,17 @@ class BackupCard extends StatelessWidget {
               } catch (_) {}
               if (text == null) return;
               final backup = Backup.parse(text);
+              var ok = backup != null;
               if (backup != null) {
-                await Backup.restore(services, backup);
-                services.telemetry.track('backup_restored');
+                try {
+                  await Backup.restore(services, backup);
+                  services.telemetry.track('backup_restored');
+                } catch (e) {
+                  debugPrint('Visszaállítás nem sikerült: $e');
+                  ok = false;
+                }
               }
-              messenger.showSnackBar(
-                SnackBar(content: Text(backup == null ? l10n.backupInvalid : l10n.backupRestored)),
-              );
+              messenger.showSnackBar(SnackBar(content: Text(ok ? l10n.backupRestored : l10n.backupInvalid)));
             },
           ),
         ],

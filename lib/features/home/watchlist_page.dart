@@ -36,12 +36,20 @@ double? sinceAddedPercent(double price, List<PricePoint> pts, DateTime since) {
   return (price / base.close - 1) * 100;
 }
 
-/// Tickerek kiolvasása beillesztett szövegből: vessző, pontosvessző, szóköz vagy
-/// új sor választja el őket; a `$AAPL` alak is jó. Ismétlés és puszta szám nélkül.
+/// Tickerek kiolvasása beillesztett szövegből: szóköz, új sor, vessző, pontosvessző,
+/// kettőspont, idézőjel, zárójel vagy függőleges vonal választja el őket, a szavak
+/// végéről az írásjel lemarad; a `$AAPL` alak is jó. Folyó szövegben (nagy kezdőbetűs
+/// szó vagy az angol „I” jelzi, pl. „Apple (AAPL) és Microsoft (MSFT)”) csak a csupa
+/// nagybetűs szó ticker, az „I” és az „A” sem. Ismétlés és puszta szám nélkül.
 List<String> parseTickers(String text) {
+  final prose = RegExp(r'(?<!\p{L})(\p{Lu}\p{Ll}+|I)(?!\p{L})', unicode: true).hasMatch(text);
   final out = <String>[];
-  for (final t in text.toUpperCase().split(RegExp(r'[\s,;]+'))) {
-    final s = t.startsWith(r'$') ? t.substring(1) : t;
+  for (final raw in text.split(RegExp(r'''[\s,;:|()\[\]{}"'`]+'''))) {
+    var w = raw.replaceAll(RegExp(r'^[^A-Za-z0-9$]+|[^A-Za-z0-9]+$'), '');
+    final cashtag = w.startsWith(r'$');
+    if (cashtag) w = w.substring(1);
+    if (prose && !cashtag && (w != w.toUpperCase() || w == 'I' || w == 'A')) continue;
+    final s = w.toUpperCase();
     if (!RegExp(r'^[A-Z0-9][A-Z0-9.\-]{0,14}$').hasMatch(s) || !RegExp('[A-Z]').hasMatch(s)) continue;
     if (!out.contains(s)) out.add(s);
   }
@@ -107,26 +115,28 @@ class _WatchlistPageState extends State<WatchlistPage> {
   });
 
   List<String> _sorted(List<String> favorites) {
-    double change(String s) => _loaded[s]?.changePercent ?? double.negativeInfinity;
+    // Csökkenő kulcs szerint, egyenlőségnél a saját sorrendben (a List.sort nem stabil:
+    // a még betöltetlen sorok összekeverednének).
+    List<String> byDesc(double Function(String s) key) {
+      final pos = {for (final (i, s) in favorites.indexed) s: i};
+      return [...favorites]..sort((a, b) {
+        final c = key(b).compareTo(key(a));
+        return c != 0 ? c : pos[a]!.compareTo(pos[b]!);
+      });
+    }
+
     return switch (_sort) {
       WatchSort.own => favorites,
       WatchSort.name => [...favorites]..sort(),
-      WatchSort.gainers => [...favorites]..sort((a, b) => change(b).compareTo(change(a))),
-      WatchSort.losers =>
-        [...favorites]..sort((a, b) {
-          double c(String s) => _loaded[s]?.changePercent ?? double.infinity;
-          return c(a).compareTo(c(b));
-        }),
+      WatchSort.gainers => byDesc((s) => _loaded[s]?.changePercent ?? double.negativeInfinity),
+      WatchSort.losers => byDesc((s) => -(_loaded[s]?.changePercent ?? double.infinity)),
       // A felvétel óta legtöbbet emelkedett elöl; dátum vagy adat nélkül a végén.
-      WatchSort.since =>
-        [...favorites]..sort((a, b) {
-          double c(String s) =>
-              switch ((_loaded[s], _loadedHistory[s], AppServices.of(context).preferences.favoriteSince(s))) {
-                (final q?, final h?, final d?) => sinceAddedPercent(q.price, h.points, d) ?? double.negativeInfinity,
-                _ => double.negativeInfinity,
-              };
-          return c(b).compareTo(c(a));
-        }),
+      WatchSort.since => byDesc(
+        (s) => switch ((_loaded[s], _loadedHistory[s], AppServices.of(context).preferences.favoriteSince(s))) {
+          (final q?, final h?, final d?) => sinceAddedPercent(q.price, h.points, d) ?? double.negativeInfinity,
+          _ => double.negativeInfinity,
+        },
+      ),
     };
   }
 
@@ -377,7 +387,9 @@ class _WatchlistPageState extends State<WatchlistPage> {
         listenable: Listenable.merge([services.preferences, services.alerts, services.events, services.notes]),
         builder: (context, _) {
           final favorites = services.preferences.favorites;
-          if (favorites.isEmpty) {
+          final lists = services.preferences.watchLists;
+          // Kedvenc nélkül is elérhetők maradnak a saját listák.
+          if (favorites.isEmpty && lists.isEmpty) {
             return Center(
               child: Padding(
                 padding: const EdgeInsets.all(32),
@@ -389,7 +401,6 @@ class _WatchlistPageState extends State<WatchlistPage> {
               ),
             );
           }
-          final lists = services.preferences.watchLists;
           final current = lists.where((l) => l.name == _list).firstOrNull;
           if (_list != null && current == null) _list = null;
           final list = _sorted(current?.symbols ?? favorites);
@@ -478,7 +489,11 @@ class _WatchlistPageState extends State<WatchlistPage> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 12, 20, 4),
                   child: Text(
-                    current == null ? l10n.watchHint : l10n.watchListEmpty,
+                    current != null
+                        ? l10n.watchListEmpty
+                        : favorites.isEmpty
+                        ? l10n.noFavorites
+                        : l10n.watchHint,
                     style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                   ),
                 )

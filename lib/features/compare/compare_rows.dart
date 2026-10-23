@@ -7,7 +7,9 @@ import '../../l10n/generated/app_localizations.dart';
 import '../analysis/price_stats.dart';
 
 /// Melyik irány a jobb egy mutatónál (a kiemeléshez); `none`: nincs kiemelés.
-enum Better { higher, lower, none }
+/// `lower`: a kisebb pozitív (a veszteséges P/E nem „olcsó”); `lowerOrZero`: a
+/// kisebb, a nullát is beleértve (adósság nélkül a legjobb), a negatív nem.
+enum Better { higher, lower, lowerOrZero, none }
 
 /// Az összehasonlító táblázat egy sora: felirat, oszloponként a megjelenített
 /// érték, és a legjobb oszlop indexe (ha értelmezhető).
@@ -19,20 +21,27 @@ class CompareRow {
   final int? best;
 }
 
-/// A legjobb érték indexe: legalább két összevethető érték kell. A „kisebb a
-/// jobb” mutatóknál (P/E, P/S…) a nem pozitív érték (veszteség) nem nyerhet.
+/// A legjobb érték indexe: legalább két összevethető érték kell, és holtversenyben
+/// nincs kiemelés. A „kisebb a jobb” mutatóknál (P/E, P/S…) a nem pozitív érték
+/// (veszteség) nem nyerhet; az eladósodottságnál a nulla a legjobb.
 int? bestIndex(List<double?> values, Better better) {
   if (better == Better.none) return null;
   int? best;
   var count = 0;
+  var tied = false;
   for (var i = 0; i < values.length; i++) {
     final v = values[i];
-    if (v == null || (better == Better.lower && v <= 0)) continue;
+    if (v == null || (better == Better.lower && v <= 0) || (better == Better.lowerOrZero && v < 0)) continue;
     count++;
     final b = best == null ? null : values[best]!;
-    if (b == null || (better == Better.higher ? v > b : v < b)) best = i;
+    if (b == null || (better == Better.higher ? v > b : v < b)) {
+      best = i;
+      tied = false;
+    } else if (v == b) {
+      tied = true;
+    }
   }
-  return count >= 2 ? best : null;
+  return count >= 2 && !tied ? best : null;
 }
 
 /// Hány százalékkal van az ár a 200 napos mozgóátlag felett (+) vagy alatt (-).
@@ -116,7 +125,7 @@ List<CompareRow> buildCompareRows(
     row(l10n.labelGrossMargin, metric((m) => m.grossMargin), pct, Better.higher),
     row(l10n.labelNetMargin, metric((m) => m.netMargin), pct, Better.higher),
     row(l10n.labelRoe, metric((m) => m.roe), pct, Better.higher),
-    row(l10n.labelDebtToEquity, metric((m) => m.debtToEquity), num, Better.lower),
+    row(l10n.labelDebtToEquity, metric((m) => m.debtToEquity), num, Better.lowerOrZero),
     row(l10n.labelDividendYield, metric((m) => m.dividendYield), pct, Better.higher),
     // Kifizetési arány: nincs „jobb” irány (a magas fenntarthatatlan, a nagyon alacsony fukar).
     row(l10n.labelPayoutRatio, metric((m) => m.payoutRatio), pct, Better.none),

@@ -37,7 +37,8 @@ class _FavoritesStripState extends State<FavoritesStrip> {
       listenable: services.preferences,
       builder: (context, _) {
         final favorites = services.preferences.favorites;
-        if (favorites.isEmpty) return const SizedBox.shrink();
+        // Kedvenc nélkül csak akkor marad el, ha saját lista sincs (azokat innen lehet elérni).
+        if (favorites.isEmpty && services.preferences.watchLists.isEmpty) return const SizedBox.shrink();
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -64,6 +65,11 @@ class _FavoritesStripState extends State<FavoritesStrip> {
               ],
             ),
             const SizedBox(height: 4),
+            if (favorites.isEmpty)
+              Padding(
+                padding: const EdgeInsets.only(left: 4),
+                child: Text(l10n.noFavorites, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+              ),
             Wrap(
               spacing: 8,
               runSpacing: 8,
