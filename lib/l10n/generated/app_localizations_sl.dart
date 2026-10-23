@@ -2918,6 +2918,14 @@ class AppLocalizationsSl extends AppLocalizations {
       'Analiza je bila prekinjena, preden se je končala. Poskusite znova – ni se štela v vašo kvoto.';
 
   @override
+  String get errImageUnsupported =>
+      'Te slike ni mogoče prebrati. Shranite jo kot JPEG ali PNG in poskusite znova.';
+
+  @override
+  String get errRateLimited =>
+      'Preveč zahtev v kratkem času. Počakajte minuto in poskusite znova.';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

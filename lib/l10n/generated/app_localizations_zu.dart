@@ -2855,6 +2855,14 @@ class AppLocalizationsZu extends AppLocalizations {
       'Uhlaziyo lunqamuke lungakaqedi. Sicela uzame futhi – alusebenzisanga isabelo sakho.';
 
   @override
+  String get errImageUnsupported =>
+      'Lesi sithombe asifundeki. Sigcine njenge-JPEG noma i-PNG bese uzama futhi.';
+
+  @override
+  String get errRateLimited =>
+      'Izicelo eziningi kakhulu esikhathini esifushane. Sicela ulinde umzuzu bese uzama futhi.';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

@@ -845,5 +845,7 @@
   "referralErrSignIn": "Asup nganggo email anjeun pikeun nukeurkeun kode ti babaturan.",
   "referralErrFull": "Kode ieu geus ditukeurkeun nepi ka wates maksimal.",
   "portfolioGoalReachedBody": "Nilai portofolio anjeun ayeuna {value}.",
-  "errAiTruncated": "Analisis kapotong saméméh réngsé. Mangga cobaan deui – jatah anjeun henteu kapaké."
+  "errAiTruncated": "Analisis kapotong saméméh réngsé. Mangga cobaan deui – jatah anjeun henteu kapaké.",
+  "errImageUnsupported": "Gambar ieu teu tiasa dibaca. Simpen salaku JPEG atanapi PNG teras cobaan deui.",
+  "errRateLimited": "Kaleuleuwihi pamundut dina waktos anu pondok. Mangga antosan samenit teras cobaan deui."
 }

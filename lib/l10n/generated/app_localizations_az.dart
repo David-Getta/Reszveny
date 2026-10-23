@@ -2841,6 +2841,14 @@ class AppLocalizationsAz extends AppLocalizations {
       'Təhlil tamamlanmadan kəsildi. Yenidən cəhd edin – limitinizdən istifadə olunmadı.';
 
   @override
+  String get errImageUnsupported =>
+      'Bu şəkli oxumaq mümkün olmadı. Onu JPEG və ya PNG kimi saxlayın və yenidən cəhd edin.';
+
+  @override
+  String get errRateLimited =>
+      'Qısa müddətdə həddindən çox sorğu göndərildi. Bir dəqiqə gözləyin və yenidən cəhd edin.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

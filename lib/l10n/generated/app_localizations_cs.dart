@@ -2911,6 +2911,14 @@ class AppLocalizationsCs extends AppLocalizations {
       'Analýza byla přerušena dřív, než byla dokončena. Zkuste to znovu – do limitu se nezapočítala.';
 
   @override
+  String get errImageUnsupported =>
+      'Tento obrázek nelze přečíst. Uložte ho jako JPEG nebo PNG a zkuste to znovu.';
+
+  @override
+  String get errRateLimited =>
+      'Příliš mnoho požadavků v krátkém čase. Počkejte prosím minutu a zkuste to znovu.';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

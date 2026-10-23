@@ -845,5 +845,7 @@
   "referralErrSignIn": "Inicia sesión con tu correo para canjear el código de un amigo.",
   "referralErrFull": "Este código ya se ha canjeado el máximo de veces posible.",
   "portfolioGoalReachedBody": "Tu cartera ya vale {value}.",
-  "errAiTruncated": "El análisis se cortó antes de terminar. Inténtalo de nuevo; no se ha descontado de tu cuota."
+  "errAiTruncated": "El análisis se cortó antes de terminar. Inténtalo de nuevo; no se ha descontado de tu cuota.",
+  "errImageUnsupported": "No se puede leer esta imagen. Guárdala como JPEG o PNG e inténtalo de nuevo.",
+  "errRateLimited": "Demasiadas solicitudes en poco tiempo. Espera un minuto e inténtalo de nuevo."
 }

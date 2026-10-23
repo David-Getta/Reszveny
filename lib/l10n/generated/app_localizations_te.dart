@@ -2847,6 +2847,14 @@ class AppLocalizationsTe extends AppLocalizations {
       'విశ్లేషణ పూర్తికాకముందే మధ్యలో ఆగిపోయింది. దయచేసి మళ్లీ ప్రయత్నించండి – ఇది మీ కోటాను వినియోగించలేదు.';
 
   @override
+  String get errImageUnsupported =>
+      'ఈ చిత్రాన్ని చదవడం సాధ్యం కాదు. దీన్ని JPEG లేదా PNGగా సేవ్ చేసి మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String get errRateLimited =>
+      'తక్కువ సమయంలో చాలా ఎక్కువ అభ్యర్థనలు. దయచేసి ఒక నిమిషం వేచి ఉండి మళ్లీ ప్రయత్నించండి.';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

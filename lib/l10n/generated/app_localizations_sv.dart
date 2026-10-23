@@ -2842,6 +2842,14 @@ class AppLocalizationsSv extends AppLocalizations {
       'Analysen avbröts innan den var klar. Försök igen – den drog inget från din kvot.';
 
   @override
+  String get errImageUnsupported =>
+      'Bilden kan inte läsas. Spara den som JPEG eller PNG och försök igen.';
+
+  @override
+  String get errRateLimited =>
+      'För många förfrågningar på kort tid. Vänta en minut och försök igen.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

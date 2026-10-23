@@ -2862,6 +2862,14 @@ class AppLocalizationsMg extends AppLocalizations {
       'Tapaka ny fandalinana talohan\'ny nahavitany. Andramo indray azafady – tsy nanala tamin\'ny anjaranao izany.';
 
   @override
+  String get errImageUnsupported =>
+      'Tsy azo vakiana ity sary ity. Tehirizo ho JPEG na PNG izy ary andramo indray.';
+
+  @override
+  String get errRateLimited =>
+      'Be loatra ny fangatahana tao anatin\'ny fotoana fohy. Miandrasa iray minitra azafady ary andramo indray.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

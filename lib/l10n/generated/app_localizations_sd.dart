@@ -2831,6 +2831,14 @@ class AppLocalizationsSd extends AppLocalizations {
       'تجزيو مڪمل ٿيڻ کان اڳ ئي اڌ ۾ ڪٽجي ويو. مهرباني ڪري ٻيهر ڪوشش ڪريو – ان سان توهان جي ڪوٽا خرچ نه ٿي.';
 
   @override
+  String get errImageUnsupported =>
+      'هيءَ تصوير پڙهي نٿي سگهجي. ان کي JPEG يا PNG طور محفوظ ڪريو ۽ ٻيهر ڪوشش ڪريو.';
+
+  @override
+  String get errRateLimited =>
+      'ٿوري وقت ۾ تمام گهڻيون درخواستون. مهرباني ڪري هڪ منٽ انتظار ڪريو ۽ ٻيهر ڪوشش ڪريو.';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

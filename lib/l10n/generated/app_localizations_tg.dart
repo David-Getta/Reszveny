@@ -2842,6 +2842,14 @@ class AppLocalizationsTg extends AppLocalizations {
       'Таҳлил пеш аз анҷом ёфтан қатъ шуд. Лутфан, бори дигар кӯшиш кунед – аз ҳаҷми шумо чизе кам нашуд.';
 
   @override
+  String get errImageUnsupported =>
+      'Ин тасвирро хондан мумкин нест. Онро ҳамчун JPEG ё PNG нигоҳ доред ва бори дигар кӯшиш кунед.';
+
+  @override
+  String get errRateLimited =>
+      'Дар муддати кӯтоҳ дархостҳо аз ҳад зиёданд. Лутфан, як дақиқа интизор шавед ва бори дигар кӯшиш кунед.';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

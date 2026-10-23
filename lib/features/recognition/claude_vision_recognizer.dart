@@ -5,7 +5,10 @@ import 'package:http/http.dart' as http;
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import '../../core/models/stock_candidate.dart';
+import '../../core/util/text.dart';
+import '../analysis/claude_stock_analyst.dart' show ClaudeStockAnalyst;
 import '../capture/capture_service.dart';
+import 'listing_symbol.dart';
 import 'stock_recognizer.dart';
 
 /// Részvény-felismerés a Claude API látás-képességével.
@@ -41,7 +44,12 @@ class ClaudeVisionRecognizer implements StockRecognizer {
         'items': {
           'type': 'object',
           'properties': {
-            'symbol': {'type': 'string', 'description': 'Exchange ticker symbol in upper case, e.g. AAPL.'},
+            'symbol': {
+              'type': 'string',
+              'description':
+                  'Ticker in upper case as on Yahoo Finance: US listings without suffix (AAPL), others with the '
+                  'exchange suffix (OTP.BD, SIE.DE, 7203.T, VOD.L).',
+            },
             'company_name': {'type': 'string'},
             'exchange': {
               'type': ['string', 'null'],
@@ -59,14 +67,26 @@ class ClaudeVisionRecognizer implements StockRecognizer {
     'additionalProperties': false,
   };
 
-  static const String _instructions = '''
+  /// A ticker alakja: a piaci adatok (Finnhub) a Yahoo-féle tőzsdei utótagot várják.
+  static const String symbolRule =
+      'Write the symbol as Yahoo Finance does: US listings without a suffix (AAPL, BRK-B), other listings with '
+      'the exchange suffix (OTP.BD for Budapest, SIE.DE for Xetra, 7203.T for Tokyo, VOD.L for London).';
+
+  /// Legfeljebb ennyi jelölt és ennyi karakter átirat: a válasz (a gondolkodással
+  /// együtt) így a [maxTokens] alatt marad egy sűrű képernyőfotónál is.
+  static const maxCandidates = 10;
+  static const maxRawText = 1500;
+  static const maxTokens = 8000;
+
+  static const String _instructions =
+      '''
 The image shows a stock, a company or market data: a paper share certificate, a brokerage app screen, a newspaper, a logo, a ticker display or anything similar.
 Your task: identify which exchange-listed stock(s) it refers to.
-- Give the ticker symbol on the company's primary listing exchange, the company's full name and the exchange.
-- If several companies are visible, list all of them in decreasing order of confidence; the most likely one first.
+- Give the ticker symbol on the company's primary listing exchange, the company's full name and the exchange. $symbolRule
+- If several companies are visible, list them in decreasing order of confidence, the most likely one first; at most $maxCandidates.
 - If only a company name or logo is visible, infer the ticker; let confidence reflect the uncertainty.
 - If no stock can be identified, return an empty candidates list and describe what you see in summary.
-- Transcribe any readable text from the image into raw_text.''';
+- Transcribe any readable text from the image into raw_text, at most about $maxRawText characters (the most relevant part if there is more).''';
 
   @override
   String get name => 'Claude Vision';
@@ -98,17 +118,23 @@ Your task: identify which exchange-listed stock(s) it refers to.
       throw RecognitionException(AppErrorCode.recognitionUnreachable, cause: e);
     }
 
-    if (response.statusCode != 200) {
-      throw RecognitionException(AppErrorCode.recognitionHttp, detail: '${response.statusCode}', cause: response.body);
-    }
+    if (response.statusCode != 200) throw httpError(response);
     return parseResponse(response.body);
   }
+
+  /// A hibás HTTP-válasz üzenete: a keret (402) és a gyakoriság (429) a saját
+  /// üzenetével (előfizetés, várakozás), a többi a státuszkóddal.
+  static RecognitionException httpError(http.Response r) => switch (r.statusCode) {
+    402 => RecognitionException(ClaudeStockAnalyst.quotaErrorFor(r.body), cause: r.body),
+    429 => RecognitionException(AppErrorCode.rateLimited, cause: r.body),
+    _ => RecognitionException(AppErrorCode.recognitionHttp, detail: '${r.statusCode}', cause: r.body),
+  };
 
   /// A Messages API kérés törzse. Külön függvény, hogy tesztelhető legyen.
   Map<String, dynamic> buildRequestBody(CapturedImage image, {String outputLanguage = 'English'}) => {
     'model': config.anthropicModel,
-    // Rövid, strukturált választ várunk; ennyi bőven elég a JSON-nak.
-    'max_tokens': 4096,
+    // Rövid, strukturált választ várunk; a gondolkodás is ebből fogy.
+    'max_tokens': maxTokens,
     'output_config': {
       'effort': effort,
       'format': {'type': 'json_schema', 'schema': schema},
@@ -128,14 +154,18 @@ Your task: identify which exchange-listed stock(s) it refers to.
     ],
   };
 
-  /// A Messages API válaszából kiolvassa a strukturált eredményt.
+  /// A Messages API válaszából kiolvassa a strukturált eredményt. A sémától eltérő
+  /// válasz (pl. egy proxy hibája) [AppErrorCode.recognitionBadResponse], nem típushiba.
+  /// Az azonos tickerű jelöltek közül a legbiztosabb marad.
   static RecognitionResult parseResponse(String responseBody) {
-    final Map<String, dynamic> json;
+    const bad = RecognitionException(AppErrorCode.recognitionBadResponse);
+    final Object? json;
     try {
-      json = jsonDecode(responseBody) as Map<String, dynamic>;
+      json = jsonDecode(responseBody);
     } on FormatException catch (e) {
       throw RecognitionException(AppErrorCode.recognitionBadResponse, cause: e);
     }
+    if (json is! Map) throw bad;
 
     final stopReason = json['stop_reason'];
     if (stopReason == 'refusal') {
@@ -145,46 +175,52 @@ Your task: identify which exchange-listed stock(s) it refers to.
       throw const RecognitionException(AppErrorCode.recognitionTruncated);
     }
 
-    final content = (json['content'] as List?) ?? const [];
-    final text = content
-        .cast<Map<String, dynamic>>()
-        .where((b) => b['type'] == 'text')
-        .map((b) => b['text'] as String? ?? '')
-        .join();
+    final content = json['content'];
+    final text = [
+      for (final b in content is List ? content : const [])
+        if (b is Map && b['type'] == 'text' && b['text'] is String) b['text'] as String,
+    ].join();
     if (text.isEmpty) {
       throw const RecognitionException(AppErrorCode.recognitionEmpty);
     }
 
-    final Map<String, dynamic> payload;
+    final Object? payload;
     try {
-      payload = jsonDecode(text) as Map<String, dynamic>;
+      payload = jsonDecode(text);
     } on FormatException catch (e) {
       throw RecognitionException(AppErrorCode.recognitionBadResponse, cause: e);
     }
+    if (payload is! Map) throw bad;
 
-    final candidates =
-        ((payload['candidates'] as List?) ?? const [])
-            .cast<Map<String, dynamic>>()
-            .map(_candidateFromJson)
-            .where((c) => c.symbol.isNotEmpty)
-            .toList()
-          ..sort((a, b) => b.confidence.compareTo(a.confidence));
-
+    final raw = payload['candidates'];
+    final sorted = [
+      for (final c in raw is List ? raw : const [])
+        if (c is Map) ?_candidateFromJson(c),
+    ]..sort((a, b) => b.confidence.compareTo(a.confidence));
+    final seen = <String>{};
+    final rawText = asText(payload['raw_text'])?.trim() ?? '';
     return RecognitionResult(
-      candidates: candidates,
-      rawText: (payload['raw_text'] as String?)?.trim().isEmpty ?? true ? null : payload['raw_text'] as String,
-      summary: payload['summary'] as String?,
+      candidates: [
+        for (final c in sorted)
+          if (seen.add(c.symbol)) c,
+      ],
+      rawText: rawText.isEmpty ? null : rawText,
+      summary: asText(payload['summary']),
     );
   }
 
-  static StockCandidate _candidateFromJson(Map<String, dynamic> j) {
-    final confidence = (j['confidence'] as num?)?.toDouble() ?? 0;
+  static StockCandidate? _candidateFromJson(Map<dynamic, dynamic> j) {
+    final exchange = asText(j['exchange'])?.trim() ?? '';
+    final symbol = listingSymbol(asText(j['symbol']) ?? '', exchange.isEmpty ? null : exchange);
+    if (symbol.isEmpty) return null;
+    final c = j['confidence'];
+    final confidence = (c is num ? c.toDouble() : double.tryParse('$c')) ?? 0;
     return StockCandidate(
-      symbol: (j['symbol'] as String? ?? '').trim().toUpperCase(),
-      companyName: (j['company_name'] as String? ?? '').trim(),
-      exchange: (j['exchange'] as String?)?.trim().isEmpty ?? true ? null : j['exchange'] as String,
-      confidence: confidence.clamp(0, 1),
-      evidence: j['evidence'] as String?,
+      symbol: symbol,
+      companyName: asText(j['company_name'])?.trim() ?? '',
+      exchange: exchange.isEmpty ? null : exchange,
+      confidence: confidence.isFinite ? confidence.clamp(0, 1) : 0,
+      evidence: asText(j['evidence']),
     );
   }
 }

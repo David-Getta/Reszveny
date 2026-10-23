@@ -2837,6 +2837,14 @@ class AppLocalizationsBm extends AppLocalizations {
       'Sɛgɛsɛgɛli tigɛra sani a ka ban. A kɔrɔbɔ tugun – a ma foyi bɔ i ka hakɛ la.';
 
   @override
+  String get errImageUnsupported =>
+      'Nin ja in tɛ se ka kalan. A mara JPEG walima PNG ye ka a kɔrɔbɔ tugun.';
+
+  @override
+  String get errRateLimited =>
+      'Ɲininiw ka ca waati surun kɔnɔ. Miniti kelen makɔnɔ ka a kɔrɔbɔ tugun.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

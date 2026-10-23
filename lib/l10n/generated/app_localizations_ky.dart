@@ -2842,6 +2842,14 @@ class AppLocalizationsKy extends AppLocalizations {
       'Талдоо бүтө электе үзүлүп калды. Кайра аракет кылыңыз – лимитиңизден эч нерсе кемиген жок.';
 
   @override
+  String get errImageUnsupported =>
+      'Бул сүрөттү окуу мүмкүн эмес. Аны JPEG же PNG форматында сактап, кайра аракет кылыңыз.';
+
+  @override
+  String get errRateLimited =>
+      'Кыска убакытта өтө көп суроо-талап жөнөтүлдү. Бир мүнөт күтүп, кайра аракет кылыңыз.';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

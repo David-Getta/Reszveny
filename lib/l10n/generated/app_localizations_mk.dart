@@ -2861,6 +2861,14 @@ class AppLocalizationsMk extends AppLocalizations {
       'Анализата беше прекината пред да заврши. Обидете се повторно – не е потрошена од вашата квота.';
 
   @override
+  String get errImageUnsupported =>
+      'Оваа слика не може да се прочита. Зачувајте ја како JPEG или PNG и обидете се повторно.';
+
+  @override
+  String get errRateLimited =>
+      'Премногу барања за кратко време. Почекајте една минута и обидете се повторно.';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

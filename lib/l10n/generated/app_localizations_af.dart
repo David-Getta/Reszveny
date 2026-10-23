@@ -2845,6 +2845,14 @@ class AppLocalizationsAf extends AppLocalizations {
       'Die ontleding is afgesny voordat dit klaar was. Probeer asseblief weer – dit het nie jou toekenning gebruik nie.';
 
   @override
+  String get errImageUnsupported =>
+      'Hierdie prent kan nie gelees word nie. Stoor dit as JPEG of PNG en probeer weer.';
+
+  @override
+  String get errRateLimited =>
+      'Te veel versoeke in ’n kort tyd. Wag asseblief ’n minuut en probeer weer.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

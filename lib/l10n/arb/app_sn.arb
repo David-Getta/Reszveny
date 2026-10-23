@@ -845,5 +845,7 @@
   "referralErrSignIn": "Pinda neemail yako kuti ushandise kodhi yeshamwari.",
   "referralErrFull": "Kodhi iyi yatoshandiswa nguva dzose dzinobvumirwa.",
   "portfolioGoalReachedBody": "Potiforiyo yako yava kukosha {value}.",
-  "errAiTruncated": "Ongororo yakadimburwa isati yapera. Ndapota edza zvakare – haina kushandisa mwero wako."
+  "errAiTruncated": "Ongororo yakadimburwa isati yapera. Ndapota edza zvakare – haina kushandisa mwero wako.",
+  "errImageUnsupported": "Mufananidzo uyu haugone kuverengwa. Uchengete se JPEG kana PNG wobva waedza zvakare.",
+  "errRateLimited": "Zvikumbiro zvawandisa munguva pfupi. Ndapota mira miniti imwe wobva waedza zvakare."
 }

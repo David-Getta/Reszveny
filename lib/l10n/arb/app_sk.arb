@@ -845,5 +845,7 @@
   "referralErrSignIn": "Ak chceš uplatniť kód od priateľa, prihlás sa e-mailom.",
   "referralErrFull": "Tento kód už dosiahol maximálny počet uplatnení.",
   "portfolioGoalReachedBody": "Vaše portfólio má teraz hodnotu {value}.",
-  "errAiTruncated": "Analýza bola prerušená skôr, ako sa dokončila. Skúste to znova – do limitu sa nezapočítala."
+  "errAiTruncated": "Analýza bola prerušená skôr, ako sa dokončila. Skúste to znova – do limitu sa nezapočítala.",
+  "errImageUnsupported": "Tento obrázok sa nedá prečítať. Uložte ho ako JPEG alebo PNG a skúste to znova.",
+  "errRateLimited": "Príliš veľa požiadaviek v krátkom čase. Počkajte prosím minútu a skúste to znova."
 }

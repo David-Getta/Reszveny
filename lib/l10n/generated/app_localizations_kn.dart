@@ -2847,6 +2847,14 @@ class AppLocalizationsKn extends AppLocalizations {
       'ವಿಶ್ಲೇಷಣೆ ಪೂರ್ಣಗೊಳ್ಳುವ ಮೊದಲೇ ಕಡಿತಗೊಂಡಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ – ಇದು ನಿಮ್ಮ ಕೋಟಾವನ್ನು ಬಳಸಿಲ್ಲ.';
 
   @override
+  String get errImageUnsupported =>
+      'ಈ ಚಿತ್ರವನ್ನು ಓದಲು ಸಾಧ್ಯವಿಲ್ಲ. ಇದನ್ನು JPEG ಅಥವಾ PNG ಆಗಿ ಉಳಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String get errRateLimited =>
+      'ಕಡಿಮೆ ಸಮಯದಲ್ಲಿ ಹಲವಾರು ವಿನಂತಿಗಳು ಬಂದಿವೆ. ದಯವಿಟ್ಟು ಒಂದು ನಿಮಿಷ ಕಾಯಿರಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

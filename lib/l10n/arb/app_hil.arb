@@ -845,5 +845,7 @@
   "referralErrSignIn": "Mag-sign in gamit ang imo e-mail para magamit ang code sang imo abyan.",
   "referralErrFull": "Nagamit na ini nga code sa pinakamadamo nga beses nga ginatugot.",
   "portfolioGoalReachedBody": "Ang bili sang imo portfolio subong {value} na.",
-  "errAiTruncated": "Naputol ang analisis antes ini natapos. Palihog tilawi liwat – wala ini nagbuhin sa imo alokasyon."
+  "errAiTruncated": "Naputol ang analisis antes ini natapos. Palihog tilawi liwat – wala ini nagbuhin sa imo alokasyon.",
+  "errImageUnsupported": "Indi mabasa ini nga litrato. I-save ini subong JPEG ukon PNG kag tilawi liwat.",
+  "errRateLimited": "Sobra kadamo nga request sa malip-ot nga tion. Palihog hulat sang isa ka minuto kag tilawi liwat."
 }

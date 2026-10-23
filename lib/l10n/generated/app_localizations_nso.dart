@@ -2860,6 +2860,14 @@ class AppLocalizationsNso extends AppLocalizations {
       'Tshekatsheko e kgaogile pele e fela. Hle leka gape – ga e a šomiša kabelo ya gago.';
 
   @override
+  String get errImageUnsupported =>
+      'Seswantšho se ga se balege. Se boloke bjalo ka JPEG goba PNG gomme o leke gape.';
+
+  @override
+  String get errRateLimited =>
+      'Dikgopelo tše dintši kudu ka nako ye kopana. Hle leta motsotso gomme o leke gape.';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

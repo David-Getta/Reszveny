@@ -845,5 +845,7 @@
   "referralErrSignIn": "Buela ne e-mail webe bua kuenza nadi code wa mulunda.",
   "referralErrFull": "Bakadi bamane kuenza nadi code eu misangu yonso idi yanyishibue.",
   "portfolioGoalReachedBody": "Mpindieu, mushinga wa portefeuille webe udi {value}.",
-  "errAiTruncated": "Dikonkonona diakosoka kumpala kua kujika. Teta kabidi – kadiakangata tshintu mu tshitupa tshiebe."
+  "errAiTruncated": "Dikonkonona diakosoka kumpala kua kujika. Teta kabidi – kadiakangata tshintu mu tshitupa tshiebe.",
+  "errImageUnsupported": "Katuena mua kubala tshimfuanyi etshi to. Tshilama bu JPEG anyi PNG, pashishe teta kabidi.",
+  "errRateLimited": "Malomba a bungi mu tshikondo tshikese. Indila minite umue, pashishe teta kabidi."
 }

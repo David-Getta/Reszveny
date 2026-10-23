@@ -2843,6 +2843,14 @@ class AppLocalizationsUg extends AppLocalizations {
       'تەھلىل تاماملىنىشتىن بۇرۇن ئۈزۈلۈپ قالدى. قايتا سىناپ بېقىڭ – نورمىڭىزدىن ھېچنېمە كېمەيمىدى.';
 
   @override
+  String get errImageUnsupported =>
+      'بۇ رەسىمنى ئوقۇغىلى بولمىدى. ئۇنى JPEG ياكى PNG قىلىپ ساقلاپ قايتا سىناپ بېقىڭ.';
+
+  @override
+  String get errRateLimited =>
+      'قىسقا ۋاقىت ئىچىدە بەك كۆپ ئىلتىماس يوللاندى. بىر مىنۇت ساقلاپ قايتا سىناپ بېقىڭ.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

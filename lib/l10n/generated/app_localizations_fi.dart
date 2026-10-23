@@ -2842,6 +2842,14 @@ class AppLocalizationsFi extends AppLocalizations {
       'Analyysi katkesi ennen kuin se valmistui. Yritä uudelleen – se ei kuluttanut kiintiötäsi.';
 
   @override
+  String get errImageUnsupported =>
+      'Kuvaa ei voi lukea. Tallenna se JPEG- tai PNG-muodossa ja yritä uudelleen.';
+
+  @override
+  String get errRateLimited =>
+      'Liian monta pyyntöä lyhyessä ajassa. Odota minuutti ja yritä uudelleen.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

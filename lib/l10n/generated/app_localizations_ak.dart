@@ -2843,6 +2843,14 @@ class AppLocalizationsAk extends AppLocalizations {
       'Nhwehwɛmu no twaa mu ansa na ɛrewie. Yɛsrɛ wo, sɔ hwɛ bio – ɛmfaa wo dodow no bi.';
 
   @override
+  String get errImageUnsupported =>
+      'Yɛntumi nkenkan mfonini yi. Kora no sɛ JPEG anaa PNG na sɔ hwɛ bio.';
+
+  @override
+  String get errRateLimited =>
+      'Abisade dodow dodo wɔ bere tiaa mu. Yɛsrɛ wo, twɛn simma baako na sɔ hwɛ bio.';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

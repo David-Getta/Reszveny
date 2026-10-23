@@ -2843,6 +2843,14 @@ class AppLocalizationsSw extends AppLocalizations {
       'Uchambuzi ulikatizwa kabla haujakamilika. Tafadhali jaribu tena – haukutumia kiasi chako.';
 
   @override
+  String get errImageUnsupported =>
+      'Picha hii haiwezi kusomwa. Ihifadhi kama JPEG au PNG kisha ujaribu tena.';
+
+  @override
+  String get errRateLimited =>
+      'Maombi mengi mno kwa muda mfupi. Tafadhali subiri dakika moja kisha ujaribu tena.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

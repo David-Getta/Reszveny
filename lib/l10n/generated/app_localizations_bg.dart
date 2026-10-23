@@ -2842,6 +2842,14 @@ class AppLocalizationsBg extends AppLocalizations {
       'Анализът беше прекъснат, преди да завърши. Моля, опитайте отново – не е отчетен от лимита ви.';
 
   @override
+  String get errImageUnsupported =>
+      'Това изображение не може да бъде прочетено. Запазете го като JPEG или PNG и опитайте отново.';
+
+  @override
+  String get errRateLimited =>
+      'Твърде много заявки за кратко време. Моля, изчакайте една минута и опитайте отново.';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

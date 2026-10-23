@@ -845,5 +845,7 @@
   "referralErrSignIn": "Melde dich mit deiner E-Mail an, um einen Code von Freunden einzulösen.",
   "referralErrFull": "Dieser Code wurde bereits so oft wie möglich eingelöst.",
   "portfolioGoalReachedBody": "Dein Portfolio ist jetzt {value} wert.",
-  "errAiTruncated": "Die Analyse wurde abgebrochen, bevor sie fertig war. Bitte versuche es erneut – dein Kontingent wurde nicht belastet."
+  "errAiTruncated": "Die Analyse wurde abgebrochen, bevor sie fertig war. Bitte versuche es erneut – dein Kontingent wurde nicht belastet.",
+  "errImageUnsupported": "Dieses Bild kann nicht gelesen werden. Speichere es als JPEG oder PNG und versuche es erneut.",
+  "errRateLimited": "Zu viele Anfragen in kurzer Zeit. Bitte warte eine Minute und versuche es erneut."
 }

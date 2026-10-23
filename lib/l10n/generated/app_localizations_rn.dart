@@ -2851,6 +2851,14 @@ class AppLocalizationsRn extends AppLocalizations {
       'Isesangura ryaciwe hagati ritaraheza. Subira ugerageze – ntiryakoresheje ingano uhabwa.';
 
   @override
+  String get errImageUnsupported =>
+      'Iyi foto ntishobora gusomwa. Yibike nka JPEG canke PNG maze usubire ugerageze.';
+
+  @override
+  String get errRateLimited =>
+      'Hari ivyasabwe vyinshi cane mu kanya gato. Rindira umunota umwe maze usubire ugerageze.';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

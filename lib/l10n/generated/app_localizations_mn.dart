@@ -2840,6 +2840,14 @@ class AppLocalizationsMn extends AppLocalizations {
       'Шинжилгээ дуусахаасаа өмнө тасарсан. Дахин оролдоно уу – таны эрхээс хасагдаагүй.';
 
   @override
+  String get errImageUnsupported =>
+      'Энэ зургийг уншиж чадсангүй. JPEG эсвэл PNG хэлбэрээр хадгалаад дахин оролдоно уу.';
+
+  @override
+  String get errRateLimited =>
+      'Богино хугацаанд хэт олон хүсэлт илгээлээ. Нэг минут хүлээгээд дахин оролдоно уу.';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

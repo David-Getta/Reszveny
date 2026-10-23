@@ -2838,6 +2838,14 @@ class AppLocalizationsHi extends AppLocalizations {
       'विश्लेषण पूरा होने से पहले ही अधूरा रह गया। कृपया पुनः प्रयास करें – इससे आपका कोटा खर्च नहीं हुआ।';
 
   @override
+  String get errImageUnsupported =>
+      'यह छवि पढ़ी नहीं जा सकी। इसे JPEG या PNG के रूप में सेव करें और पुनः प्रयास करें।';
+
+  @override
+  String get errRateLimited =>
+      'कम समय में बहुत अधिक अनुरोध भेजे गए। कृपया एक मिनट प्रतीक्षा करें और पुनः प्रयास करें।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

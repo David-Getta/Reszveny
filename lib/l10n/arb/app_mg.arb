@@ -845,5 +845,7 @@
   "referralErrSignIn": "Midira amin'ny mailakao mba hampiasana kaodin'ny namana.",
   "referralErrFull": "Efa tratra ny fetran'ny fampiasana ity kaody ity.",
   "portfolioGoalReachedBody": "Ny sandan'ny kitapom-bolanao izao dia {value}.",
-  "errAiTruncated": "Tapaka ny fandalinana talohan'ny nahavitany. Andramo indray azafady – tsy nanala tamin'ny anjaranao izany."
+  "errAiTruncated": "Tapaka ny fandalinana talohan'ny nahavitany. Andramo indray azafady – tsy nanala tamin'ny anjaranao izany.",
+  "errImageUnsupported": "Tsy azo vakiana ity sary ity. Tehirizo ho JPEG na PNG izy ary andramo indray.",
+  "errRateLimited": "Be loatra ny fangatahana tao anatin'ny fotoana fohy. Miandrasa iray minitra azafady ary andramo indray."
 }

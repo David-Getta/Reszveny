@@ -2916,6 +2916,14 @@ class AppLocalizationsLt extends AppLocalizations {
       'Analizė nutrūko nepasibaigusi. Bandykite dar kartą – ji nebuvo įskaičiuota į jūsų limitą.';
 
   @override
+  String get errImageUnsupported =>
+      'Šio vaizdo nepavyksta nuskaityti. Išsaugokite jį JPEG arba PNG formatu ir bandykite dar kartą.';
+
+  @override
+  String get errRateLimited =>
+      'Per daug užklausų per trumpą laiką. Palaukite minutę ir bandykite dar kartą.';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

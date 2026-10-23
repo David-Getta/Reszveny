@@ -845,5 +845,7 @@
   "referralErrSignIn": "Mag-sign in gamit ang iyong email para i-redeem ang code ng kaibigan.",
   "referralErrFull": "Naabot na ng code na ito ang maximum na bilang ng pag-redeem.",
   "portfolioGoalReachedBody": "Nagkakahalaga na ng {value} ang portfolio mo.",
-  "errAiTruncated": "Naputol ang pagsusuri bago ito natapos. Pakisubukang muli – hindi ito nabawas sa iyong alokasyon."
+  "errAiTruncated": "Naputol ang pagsusuri bago ito natapos. Pakisubukang muli – hindi ito nabawas sa iyong alokasyon.",
+  "errImageUnsupported": "Hindi mabasa ang larawang ito. I-save ito bilang JPEG o PNG at subukang muli.",
+  "errRateLimited": "Masyadong maraming request sa maikling panahon. Maghintay muna ng isang minuto at subukang muli."
 }

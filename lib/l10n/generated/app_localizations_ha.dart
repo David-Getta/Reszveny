@@ -2848,6 +2848,14 @@ class AppLocalizationsHa extends AppLocalizations {
       'An katse nazarin kafin ya kammala. Da fatan a sake gwada – bai ci daga rabon ka ba.';
 
   @override
+  String get errImageUnsupported =>
+      'Ba a iya karanta wannan hoto ba. Ajiye shi a matsayin JPEG ko PNG sannan ka sake gwadawa.';
+
+  @override
+  String get errRateLimited =>
+      'Buƙatu sun yi yawa cikin ɗan lokaci. Da fatan a jira minti ɗaya sannan a sake gwadawa.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

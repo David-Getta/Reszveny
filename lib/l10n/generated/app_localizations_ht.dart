@@ -2839,6 +2839,14 @@ class AppLocalizationsHt extends AppLocalizations {
       'Analiz la koupe anvan li te fini. Tanpri eseye ankò – li pa t konte nan kota ou.';
 
   @override
+  String get errImageUnsupported =>
+      'Nou pa ka li imaj sa a. Anrejistre l an JPEG oswa PNG epi eseye ankò.';
+
+  @override
+  String get errRateLimited =>
+      'Twòp demann nan yon ti tan. Tanpri tann yon minit epi eseye ankò.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

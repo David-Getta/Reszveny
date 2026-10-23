@@ -2838,6 +2838,14 @@ class AppLocalizationsEn extends AppLocalizations {
       'The analysis was cut off before it was finished. Please try again – it did not use your allowance.';
 
   @override
+  String get errImageUnsupported =>
+      'This image can\'t be read. Save it as a JPEG or PNG and try again.';
+
+  @override
+  String get errRateLimited =>
+      'Too many requests in a short time. Please wait a minute and try again.';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

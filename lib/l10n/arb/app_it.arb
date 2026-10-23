@@ -845,5 +845,7 @@
   "referralErrSignIn": "Accedi con la tua email per riscattare il codice di un amico.",
   "referralErrFull": "Questo codice è già stato riscattato il numero massimo di volte.",
   "portfolioGoalReachedBody": "Il tuo portafoglio ora vale {value}.",
-  "errAiTruncated": "L’analisi si è interrotta prima di essere completata. Riprova – non è stata scalata dalla tua quota."
+  "errAiTruncated": "L’analisi si è interrotta prima di essere completata. Riprova – non è stata scalata dalla tua quota.",
+  "errImageUnsupported": "Impossibile leggere questa immagine. Salvala come JPEG o PNG e riprova.",
+  "errRateLimited": "Troppe richieste in poco tempo. Attendi un minuto e riprova."
 }

@@ -2843,6 +2843,14 @@ class AppLocalizationsKi extends AppLocalizations {
       'Ithuthuria rĩatinĩkire rĩtanathira. Geria rĩngĩ – rĩtiahũthĩrĩte mũigana waku.';
 
   @override
+  String get errImageUnsupported =>
+      'Mbica ĩno ndĩrathomeka. Mĩiga ta JPEG kana PNG ũcooke ũgerie rĩngĩ.';
+
+  @override
+  String get errRateLimited =>
+      'Mahoya maingĩ mũno ihinda inini. Etereera ndagĩka ĩmwe ũcooke ũgerie rĩngĩ.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

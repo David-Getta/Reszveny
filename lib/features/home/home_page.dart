@@ -152,7 +152,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     _debounce = Timer(suggestDelay, () async {
       List<StockCandidate> found = const [];
       try {
-        found = await services.marketData.search(q);
+        found = await services.marketData.search(DescriptionResolver.searchTerm(q));
       } catch (_) {
         // Javaslat nélkül is kereshet (Enterrel).
       }
@@ -180,7 +180,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   Future<void> _submit(String query) async {
     final services = AppServices.of(context);
     final l10n = AppLocalizations.of(context);
-    final q = query.trim();
+    final q = DescriptionResolver.searchTerm(query);
     if (q.isEmpty) return;
     _clearSuggestions();
     FocusScope.of(context).unfocus();
@@ -201,9 +201,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     if (!mounted) return;
     setState(() => _busy = false);
 
-    final looksLikeTicker = RegExp(r'^[A-Za-z.\-]{1,8}$').hasMatch(q);
     if (results.isEmpty) {
-      if (looksLikeTicker) {
+      if (DescriptionResolver.looksLikeTicker(q)) {
         _open(StockCandidate(symbol: q.toUpperCase(), companyName: q.toUpperCase(), confidence: 1));
       } else if (services.preferences.resolvedFor(q) case final r?) {
         // Korábban megfejtett leírás: AI nélkül.
@@ -237,8 +236,11 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       final language = SupportedLocales.languageFor(Localizations.localeOf(context));
       result = await services.descriptionResolver.resolve(q, outputLanguage: language.englishName);
       services.telemetry.track('description_resolved');
-    } catch (_) {
-      result = const RecognitionResult(candidates: []);
+    } catch (e) {
+      // A hiba oka (előfizetés, túl sok kérés, hálózat) látszik, nem „nincs találat”.
+      if (mounted) setState(() => _busy = false);
+      _showError(e);
+      return;
     }
     if (!mounted) return;
     setState(() => _busy = false);

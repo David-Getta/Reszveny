@@ -2843,6 +2843,14 @@ class AppLocalizationsCkb extends AppLocalizations {
       'شیکارییەکە پێش تەواوبوون بڕا. تکایە دووبارە هەوڵ بدەرەوە – لە بڕەکەت کەم نەکرایەوە.';
 
   @override
+  String get errImageUnsupported =>
+      'ئەم وێنەیە ناخوێنرێتەوە. وەک JPEG یان PNG پاشەکەوتی بکە و دووبارە هەوڵ بدەرەوە.';
+
+  @override
+  String get errRateLimited =>
+      'لە ماوەیەکی کورتدا داواکاریی زۆر نێردراوە. تکایە خولەکێک چاوەڕێ بکە و دووبارە هەوڵ بدەرەوە.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

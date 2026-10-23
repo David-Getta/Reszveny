@@ -164,7 +164,7 @@ class Api {
 
   /// Nagy kimenet (a formátumjavítás) csak egy friss elemzés után kérhető;
   /// egyébként (felismerés, fotó-import) ennyi bőven elég.
-  static const helperSmallMaxTokens = 4096;
+  static const helperSmallMaxTokens = 8000;
 
   /// A fotók base64-ben érkeznek; ennél nagyobb kérést nem továbbítunk.
   static const helperMaxBytes = 8 * 1024 * 1024;

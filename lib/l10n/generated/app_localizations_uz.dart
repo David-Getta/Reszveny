@@ -2844,6 +2844,14 @@ class AppLocalizationsUz extends AppLocalizations {
       'Tahlil tugallanmasdan uzilib qoldi. Qaytadan urinib koʻring – limitingizdan hech narsa sarflanmadi.';
 
   @override
+  String get errImageUnsupported =>
+      'Bu rasmni oʻqib boʻlmadi. Uni JPEG yoki PNG sifatida saqlang va qaytadan urinib koʻring.';
+
+  @override
+  String get errRateLimited =>
+      'Qisqa vaqt ichida juda koʻp soʻrov yuborildi. Bir daqiqa kuting va qaytadan urinib koʻring.';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

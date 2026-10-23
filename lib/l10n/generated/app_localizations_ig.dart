@@ -2833,6 +2833,14 @@ class AppLocalizationsIg extends AppLocalizations {
       'Nyocha ahụ kwụsịrị tupu o mechaa. Biko nwaa ọzọ – e wepụghị ihe ọ bụla n\'oke gị.';
 
   @override
+  String get errImageUnsupported =>
+      'Enweghị ike ịgụ onyonyo a. Chekwaa ya dị ka JPEG ma ọ bụ PNG wee nwaa ọzọ.';
+
+  @override
+  String get errRateLimited =>
+      'Arịrịọ dị ukwuu n\'ime obere oge. Biko chere otu nkeji wee nwaa ọzọ.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

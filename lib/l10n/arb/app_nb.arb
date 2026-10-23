@@ -845,5 +845,7 @@
   "referralErrSignIn": "Logg inn med e-postadressen din for å løse inn en venns kode.",
   "referralErrFull": "Denne koden er allerede løst inn maksimalt antall ganger.",
   "portfolioGoalReachedBody": "Porteføljen din er nå verdt {value}.",
-  "errAiTruncated": "Analysen ble avbrutt før den var ferdig. Prøv igjen – den brukte ikke av kvoten din."
+  "errAiTruncated": "Analysen ble avbrutt før den var ferdig. Prøv igjen – den brukte ikke av kvoten din.",
+  "errImageUnsupported": "Dette bildet kan ikke leses. Lagre det som JPEG eller PNG og prøv igjen.",
+  "errRateLimited": "For mange forespørsler på kort tid. Vent et minutt og prøv igjen."
 }

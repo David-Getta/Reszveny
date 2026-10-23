@@ -2841,6 +2841,14 @@ class AppLocalizationsNb extends AppLocalizations {
       'Analysen ble avbrutt før den var ferdig. Prøv igjen – den brukte ikke av kvoten din.';
 
   @override
+  String get errImageUnsupported =>
+      'Dette bildet kan ikke leses. Lagre det som JPEG eller PNG og prøv igjen.';
+
+  @override
+  String get errRateLimited =>
+      'For mange forespørsler på kort tid. Vent et minutt og prøv igjen.';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

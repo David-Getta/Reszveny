@@ -2852,6 +2852,14 @@ class AppLocalizationsTa extends AppLocalizations {
       'பகுப்பாய்வு முடிவதற்குள் பாதியில் நின்றுவிட்டது. மீண்டும் முயற்சிக்கவும் – இது உங்கள் ஒதுக்கீட்டைப் பயன்படுத்தவில்லை.';
 
   @override
+  String get errImageUnsupported =>
+      'இந்தப் படத்தைப் படிக்க முடியவில்லை. இதை JPEG அல்லது PNG ஆகச் சேமித்து மீண்டும் முயற்சிக்கவும்.';
+
+  @override
+  String get errRateLimited =>
+      'குறுகிய நேரத்தில் அதிகக் கோரிக்கைகள். ஒரு நிமிடம் காத்திருந்து மீண்டும் முயற்சிக்கவும்.';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

@@ -746,6 +746,8 @@
   "referralErrFull": "Ezt a kódot már annyiszor beváltották, ahányszor lehet.",
   "portfolioGoalReachedBody": "A portfóliód most {value} értékű.",
   "errAiTruncated": "Az elemzés befejezés előtt megszakadt. Próbáld újra – a keretedből nem vont le.",
+  "errImageUnsupported": "Ez a kép nem olvasható. Mentsd el JPEG vagy PNG formátumban, és próbáld újra.",
+  "errRateLimited": "Túl sok kérés rövid idő alatt. Várj egy percet, és próbáld újra.",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

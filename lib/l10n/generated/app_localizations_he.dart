@@ -2834,6 +2834,13 @@ class AppLocalizationsHe extends AppLocalizations {
       'הניתוח נקטע לפני שהסתיים. נסו שוב – הוא לא נוכה מהמכסה שלך.';
 
   @override
+  String get errImageUnsupported =>
+      'לא ניתן לקרוא את התמונה הזו. שמרו אותה כ-JPEG או כ-PNG ונסו שוב.';
+
+  @override
+  String get errRateLimited => 'יותר מדי בקשות בזמן קצר. המתינו דקה ונסו שוב.';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

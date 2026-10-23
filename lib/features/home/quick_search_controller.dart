@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import '../../core/desktop/quick_panel.dart';
+import '../../core/errors.dart';
 import '../../core/models/stock_candidate.dart';
 import '../recognition/description_resolver.dart';
 
@@ -17,6 +18,7 @@ class QuickSearchController implements QuickPanelHandler {
     required this.open,
     required this.pasteImage,
     required this.openWindow,
+    required this.describe,
     this.resolve,
     this.debounce = const Duration(milliseconds: 180),
   });
@@ -35,6 +37,9 @@ class QuickSearchController implements QuickPanelHandler {
   final Future<void> Function(StockCandidate candidate) open;
   final Future<void> Function() pasteImage;
   final Future<void> Function() openWindow;
+
+  /// Hiba (vagy „nincs találat”) a felhasználó nyelvén, a panel üzenetsorába.
+  final String Function(Object error) describe;
   final Duration debounce;
 
   static const maxSuggestions = 6;
@@ -61,7 +66,7 @@ class QuickSearchController implements QuickPanelHandler {
       if (id != _seq) return;
       List<StockCandidate> results;
       try {
-        results = await search(q);
+        results = await search(DescriptionResolver.searchTerm(q));
       } catch (_) {
         results = const [];
       }
@@ -83,25 +88,33 @@ class QuickSearchController implements QuickPanelHandler {
       await open(_known[symbol] ?? StockCandidate(symbol: symbol, companyName: symbol, confidence: 1));
       return;
     }
-    final q = text.trim();
+    final q = DescriptionResolver.searchTerm(text);
     if (q.isEmpty) return;
+    await panel.setMessage(null);
     await panel.setBusy(true);
-    List<StockCandidate> results;
+    var results = const <StockCandidate>[];
+    Object? error;
     try {
       results = await search(q);
-      if (results.isEmpty && resolve != null && DescriptionResolver.looksLikeDescription(q)) {
-        results = await resolve!(q);
-      }
     } catch (_) {
-      results = const [];
-    } finally {
-      await panel.setBusy(false);
+      // A kereső hibája után is jöhet a leírás megfejtése vagy a tickerként megnyitás.
     }
-    await open(
-      results.isNotEmpty
-          ? results.first
-          : StockCandidate(symbol: q.toUpperCase(), companyName: q.toUpperCase(), confidence: 1),
-    );
+    if (results.isEmpty && resolve != null && DescriptionResolver.looksLikeDescription(q)) {
+      try {
+        results = await resolve!(q);
+      } catch (e) {
+        error = e;
+      }
+    }
+    await panel.setBusy(false);
+    if (results.isNotEmpty) {
+      await open(results.first);
+    } else if (DescriptionResolver.looksLikeTicker(q)) {
+      await open(StockCandidate(symbol: q.toUpperCase(), companyName: q.toUpperCase(), confidence: 1));
+    } else {
+      // Leírás vagy elgépelés: nem nyitjuk meg tickerként (és nem kerül a legutóbbiak közé).
+      await panel.setMessage(describe(error ?? MarketDataException(AppErrorCode.noResults, detail: q)));
+    }
   }
 
   @override

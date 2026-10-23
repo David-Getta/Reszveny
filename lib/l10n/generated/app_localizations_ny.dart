@@ -2852,6 +2852,14 @@ class AppLocalizationsNy extends AppLocalizations {
       'Kusanthula kudadulidwa kusanathe. Chonde yesaninso – sikunagwiritse ntchito zomwe mumapatsidwa.';
 
   @override
+  String get errImageUnsupported =>
+      'Chithunzichi sichikuwerengeka. Chisungeni ngati JPEG kapena PNG ndipo yesaninso.';
+
+  @override
+  String get errRateLimited =>
+      'Zopempha zambiri kwambiri munthawi yochepa. Chonde dikirani mphindi imodzi ndipo yesaninso.';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

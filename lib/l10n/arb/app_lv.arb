@@ -845,5 +845,7 @@
   "referralErrSignIn": "Pierakstieties ar savu e-pastu, lai izmantotu drauga kodu.",
   "referralErrFull": "Šis kods jau izmantots maksimālo reižu skaitu.",
   "portfolioGoalReachedBody": "Jūsu portfeļa vērtība tagad ir {value}.",
-  "errAiTruncated": "Analīze tika pārtraukta, pirms tā bija pabeigta. Lūdzu, mēģiniet vēlreiz – tā netika ieskaitīta jūsu limitā."
+  "errAiTruncated": "Analīze tika pārtraukta, pirms tā bija pabeigta. Lūdzu, mēģiniet vēlreiz – tā netika ieskaitīta jūsu limitā.",
+  "errImageUnsupported": "Šo attēlu nevar nolasīt. Saglabājiet to JPEG vai PNG formātā un mēģiniet vēlreiz.",
+  "errRateLimited": "Pārāk daudz pieprasījumu īsā laikā. Lūdzu, uzgaidiet minūti un mēģiniet vēlreiz."
 }

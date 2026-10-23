@@ -2835,6 +2835,14 @@ class AppLocalizationsGu extends AppLocalizations {
       'વિશ્લેષણ પૂરું થાય તે પહેલાં જ અધૂરું રહી ગયું. કૃપા કરીને ફરી પ્રયાસ કરો – તેનાથી તમારો ક્વોટા વપરાયો નથી.';
 
   @override
+  String get errImageUnsupported =>
+      'આ છબી વાંચી શકાતી નથી. તેને JPEG અથવા PNG તરીકે સેવ કરો અને ફરી પ્રયાસ કરો.';
+
+  @override
+  String get errRateLimited =>
+      'ટૂંકા સમયમાં ઘણી બધી વિનંતીઓ મોકલાઈ. કૃપા કરીને એક મિનિટ રાહ જુઓ અને ફરી પ્રયાસ કરો.';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

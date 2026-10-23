@@ -2839,6 +2839,14 @@ class AppLocalizationsAs extends AppLocalizations {
       'বিশ্লেষণটো সম্পূৰ্ণ হোৱাৰ আগতেই কাটি গ\'ল। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক – ই আপোনাৰ কোটাৰ পৰা কটা হোৱা নাই।';
 
   @override
+  String get errImageUnsupported =>
+      'এই ছবিখন পঢ়িব পৰা নগ\'ল। ইয়াক JPEG বা PNG হিচাপে ছেভ কৰি পুনৰ চেষ্টা কৰক।';
+
+  @override
+  String get errRateLimited =>
+      'কম সময়ৰ ভিতৰত অত্যধিক অনুৰোধ পঠোৱা হৈছে। অনুগ্ৰহ কৰি এক মিনিট অপেক্ষা কৰি পুনৰ চেষ্টা কৰক।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

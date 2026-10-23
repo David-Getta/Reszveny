@@ -2836,6 +2836,14 @@ class AppLocalizationsOr extends AppLocalizations {
       'ବିଶ୍ଳେଷଣ ଶେଷ ହେବା ପୂର୍ବରୁ ଅଧାରେ କଟିଗଲା। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ – ଏଥିରେ ଆପଣଙ୍କ କୋଟା ଖର୍ଚ୍ଚ ହୋଇନାହିଁ।';
 
   @override
+  String get errImageUnsupported =>
+      'ଏହି ଛବିକୁ ପଢ଼ିହେଉନାହିଁ। ଏହାକୁ JPEG କିମ୍ବା PNG ଭାବେ ସେଭ କରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
+
+  @override
+  String get errRateLimited =>
+      'ଅଳ୍ପ ସମୟ ମଧ୍ୟରେ ବହୁତ ଅଧିକ ଅନୁରୋଧ। ଦୟାକରି ଏକ ମିନିଟ ଅପେକ୍ଷା କରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

@@ -2844,6 +2844,14 @@ class AppLocalizationsKu extends AppLocalizations {
       'Analîz berî ku biqede qut bû. Ji kerema xwe dîsa biceribîne – ji mafê te nehat kêmkirin.';
 
   @override
+  String get errImageUnsupported =>
+      'Ev wêne nayê xwendin. Wê wek JPEG an PNG tomar bike û dîsa biceribîne.';
+
+  @override
+  String get errRateLimited =>
+      'Di demeke kurt de gelek daxwaz hatin şandin. Ji kerema xwe deqeyekê bisekine û dîsa biceribîne.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

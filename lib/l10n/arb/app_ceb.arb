@@ -845,5 +845,7 @@
   "referralErrSignIn": "Mag-sign in gamit ang imong e-mail aron ma-redeem ang code sa usa ka higala.",
   "referralErrFull": "Naabot na niini nga code ang kinatas-ang gidaghanon sa pag-redeem.",
   "portfolioGoalReachedBody": "Nagkantidad na og {value} ang imong portfolio karon.",
-  "errAiTruncated": "Naputol ang pagtuki sa wala pa kini mahuman. Palihug sulayi pag-usab – wala kini makuha gikan sa imong alokasyon."
+  "errAiTruncated": "Naputol ang pagtuki sa wala pa kini mahuman. Palihug sulayi pag-usab – wala kini makuha gikan sa imong alokasyon.",
+  "errImageUnsupported": "Dili mabasa kini nga hulagway. I-save kini isip JPEG o PNG ug sulayi pag-usab.",
+  "errRateLimited": "Daghan kaayong request sa mubong panahon. Palihug paghulat og usa ka minuto ug sulayi pag-usab."
 }

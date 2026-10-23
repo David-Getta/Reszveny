@@ -2887,6 +2887,14 @@ class AppLocalizationsLv extends AppLocalizations {
       'Analīze tika pārtraukta, pirms tā bija pabeigta. Lūdzu, mēģiniet vēlreiz – tā netika ieskaitīta jūsu limitā.';
 
   @override
+  String get errImageUnsupported =>
+      'Šo attēlu nevar nolasīt. Saglabājiet to JPEG vai PNG formātā un mēģiniet vēlreiz.';
+
+  @override
+  String get errRateLimited =>
+      'Pārāk daudz pieprasījumu īsā laikā. Lūdzu, uzgaidiet minūti un mēģiniet vēlreiz.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

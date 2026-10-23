@@ -2919,6 +2919,14 @@ class AppLocalizationsUk extends AppLocalizations {
       'Аналіз обірвався до завершення. Спробуйте ще раз – з ліміту нічого не списано.';
 
   @override
+  String get errImageUnsupported =>
+      'Не вдається прочитати це зображення. Збережіть його у форматі JPEG або PNG і спробуйте ще раз.';
+
+  @override
+  String get errRateLimited =>
+      'Занадто багато запитів за короткий час. Зачекайте хвилину і спробуйте ще раз.';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

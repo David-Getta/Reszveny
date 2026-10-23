@@ -845,5 +845,7 @@
   "referralErrSignIn": "Ngena nge-imeyile yakho ukuze usebenzise ikhowudi yomhlobo.",
   "referralErrFull": "Le khowudi sele isetyenziswe amaxesha onke avumelekileyo.",
   "portfolioGoalReachedBody": "Ipotifoliyo yakho ngoku ixabisa {value}.",
-  "errAiTruncated": "Uhlalutyo lunqunyulwe lungekagqitywa. Nceda uzame kwakhona – alusebenzisanga umlinganiselo wakho."
+  "errAiTruncated": "Uhlalutyo lunqunyulwe lungekagqitywa. Nceda uzame kwakhona – alusebenzisanga umlinganiselo wakho.",
+  "errImageUnsupported": "Lo mfanekiso awufundeki. Wugcine njenge-JPEG okanye i-PNG uze uzame kwakhona.",
+  "errRateLimited": "Zininzi kakhulu izicelo ngexesha elifutshane. Nceda ulinde umzuzu uze uzame kwakhona."
 }

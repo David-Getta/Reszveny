@@ -845,5 +845,7 @@
   "referralErrSignIn": "Kɔta na e-mail na yo mpo na kosalela code ya moninga.",
   "referralErrFull": "Code oyo esalelami esili mbala nyonso oyo epesameli nzela.",
   "portfolioGoalReachedBody": "Sikoyo, motuya ya portefeuille na yo ezali {value}.",
-  "errAiTruncated": "Analyse ekatamaki liboso ya kosila. Meka lisusu – elongoli eloko te na eteni na yo."
+  "errAiTruncated": "Analyse ekatamaki liboso ya kosila. Meka lisusu – elongoli eloko te na eteni na yo.",
+  "errImageUnsupported": "Tokoki kotánga elilingi oyo te. Bomba yango lokola JPEG to PNG mpe meka lisusu.",
+  "errRateLimited": "Masɛngi ebele na ntango moke. Zela miniti moko mpe meka lisusu."
 }

@@ -2840,6 +2840,14 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Di analysis cut for middle before e finish. Abeg try again – e no use your allowance.';
 
   @override
+  String get errImageUnsupported =>
+      'We no fit read dis picture. Save am as JPEG or PNG and try again.';
+
+  @override
+  String get errRateLimited =>
+      'Too many request for short time. Abeg wait one minute and try again.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

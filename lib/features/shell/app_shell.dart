@@ -237,6 +237,7 @@ class _AppShellState extends State<AppShell> {
             favorites: () => services.preferences.favorites,
             recent: () => services.preferences.recent,
             recentTitle: () => AppLocalizations.of(context).recentSearches,
+            describe: (e) => errorMessage(AppLocalizations.of(context), e),
             open: _quickOpen,
             pasteImage: _quickPasteImage,
             openWindow: () async {

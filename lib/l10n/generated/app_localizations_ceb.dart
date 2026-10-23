@@ -2853,6 +2853,14 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Naputol ang pagtuki sa wala pa kini mahuman. Palihug sulayi pag-usab – wala kini makuha gikan sa imong alokasyon.';
 
   @override
+  String get errImageUnsupported =>
+      'Dili mabasa kini nga hulagway. I-save kini isip JPEG o PNG ug sulayi pag-usab.';
+
+  @override
+  String get errRateLimited =>
+      'Daghan kaayong request sa mubong panahon. Palihug paghulat og usa ka minuto ug sulayi pag-usab.';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

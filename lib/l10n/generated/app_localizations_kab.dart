@@ -2840,6 +2840,14 @@ class AppLocalizationsKab extends AppLocalizations {
       'Tasleḍt tegzem uqbel ad tfak. Ɛreḍ tikkelt-nniḍen – ur tettwaḥseb ara deg tesmekta-k.';
 
   @override
+  String get errImageUnsupported =>
+      'Tugna-a ur tettwaɣer ara. Sekles-itt am JPEG neɣ PNG syen ɛreḍ tikkelt-nniḍen.';
+
+  @override
+  String get errRateLimited =>
+      'Aṭas n yissutar deg wakud wezzilen. Ma ulac aɣilif, rǧu yiwet n tesdidt syen ɛreḍ tikkelt-nniḍen.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

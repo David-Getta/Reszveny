@@ -845,5 +845,7 @@
   "referralErrSignIn": "Prijavite se e-poštom da biste iskoristili kôd prijatelja.",
   "referralErrFull": "Ovaj je kôd već iskorišten najveći dopušteni broj puta.",
   "portfolioGoalReachedBody": "Vaš portfelj sada vrijedi {value}.",
-  "errAiTruncated": "Analiza je prekinuta prije nego što je dovršena. Pokušajte ponovno – nije potrošena vaša kvota."
+  "errAiTruncated": "Analiza je prekinuta prije nego što je dovršena. Pokušajte ponovno – nije potrošena vaša kvota.",
+  "errImageUnsupported": "Ova se slika ne može pročitati. Spremite je kao JPEG ili PNG i pokušajte ponovno.",
+  "errRateLimited": "Previše zahtjeva u kratkom vremenu. Pričekajte minutu i pokušajte ponovno."
 }

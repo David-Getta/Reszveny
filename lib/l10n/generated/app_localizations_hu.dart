@@ -2846,6 +2846,14 @@ class AppLocalizationsHu extends AppLocalizations {
       'Az elemzés befejezés előtt megszakadt. Próbáld újra – a keretedből nem vont le.';
 
   @override
+  String get errImageUnsupported =>
+      'Ez a kép nem olvasható. Mentsd el JPEG vagy PNG formátumban, és próbáld újra.';
+
+  @override
+  String get errRateLimited =>
+      'Túl sok kérés rövid idő alatt. Várj egy percet, és próbáld újra.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

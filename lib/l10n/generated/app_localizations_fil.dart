@@ -2849,6 +2849,14 @@ class AppLocalizationsFil extends AppLocalizations {
       'Naputol ang pagsusuri bago ito natapos. Pakisubukang muli – hindi ito nabawas sa iyong alokasyon.';
 
   @override
+  String get errImageUnsupported =>
+      'Hindi mabasa ang larawang ito. I-save ito bilang JPEG o PNG at subukang muli.';
+
+  @override
+  String get errRateLimited =>
+      'Masyadong maraming request sa maikling panahon. Maghintay muna ng isang minuto at subukang muli.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

@@ -845,5 +845,7 @@
   "referralErrSignIn": "Inicia sesión co teu correo para canxear o código dun amigo.",
   "referralErrFull": "Este código xa se canxeou o máximo de veces posible.",
   "portfolioGoalReachedBody": "A túa carteira xa vale {value}.",
-  "errAiTruncated": "A análise cortouse antes de rematar. Téntao de novo – non se descontou da túa cota."
+  "errAiTruncated": "A análise cortouse antes de rematar. Téntao de novo – non se descontou da túa cota.",
+  "errImageUnsupported": "Non se pode ler esta imaxe. Gárdaa como JPEG ou PNG e téntao de novo.",
+  "errRateLimited": "Demasiadas solicitudes en pouco tempo. Agarda un minuto e téntao de novo."
 }

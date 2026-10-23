@@ -2853,6 +2853,14 @@ class AppLocalizationsFr extends AppLocalizations {
       'L’analyse a été interrompue avant la fin. Veuillez réessayer – elle n’a pas été décomptée de votre quota.';
 
   @override
+  String get errImageUnsupported =>
+      'Impossible de lire cette image. Enregistrez-la au format JPEG ou PNG et réessayez.';
+
+  @override
+  String get errRateLimited =>
+      'Trop de requêtes en peu de temps. Veuillez patienter une minute et réessayer.';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

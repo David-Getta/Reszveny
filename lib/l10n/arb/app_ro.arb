@@ -845,5 +845,7 @@
   "referralErrSignIn": "Conectează-te cu e-mailul tău ca să folosești codul unui prieten.",
   "referralErrFull": "Acest cod a fost deja folosit de numărul maxim de ori.",
   "portfolioGoalReachedBody": "Portofoliul tău valorează acum {value}.",
-  "errAiTruncated": "Analiza a fost întreruptă înainte de a se termina. Încearcă din nou – nu a fost scăzută din cota ta."
+  "errAiTruncated": "Analiza a fost întreruptă înainte de a se termina. Încearcă din nou – nu a fost scăzută din cota ta.",
+  "errImageUnsupported": "Această imagine nu poate fi citită. Salvează-o ca JPEG sau PNG și încearcă din nou.",
+  "errRateLimited": "Prea multe solicitări într-un timp scurt. Așteaptă un minut și încearcă din nou."
 }

@@ -2839,6 +2839,14 @@ class AppLocalizationsBn extends AppLocalizations {
       'বিশ্লেষণটি শেষ হওয়ার আগেই কেটে গেছে। অনুগ্রহ করে আবার চেষ্টা করুন – এতে আপনার কোটা খরচ হয়নি।';
 
   @override
+  String get errImageUnsupported =>
+      'এই ছবিটি পড়া যাচ্ছে না। এটি JPEG বা PNG হিসেবে সেভ করে আবার চেষ্টা করুন।';
+
+  @override
+  String get errRateLimited =>
+      'অল্প সময়ে অত্যধিক অনুরোধ পাঠানো হয়েছে। অনুগ্রহ করে এক মিনিট অপেক্ষা করে আবার চেষ্টা করুন।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

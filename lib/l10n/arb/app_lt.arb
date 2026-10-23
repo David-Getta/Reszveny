@@ -845,5 +845,7 @@
   "referralErrSignIn": "Prisijunkite el. paštu, kad galėtumėte panaudoti draugo kodą.",
   "referralErrFull": "Šis kodas jau panaudotas didžiausią leistiną kartų skaičių.",
   "portfolioGoalReachedBody": "Jūsų portfelio vertė dabar – {value}.",
-  "errAiTruncated": "Analizė nutrūko nepasibaigusi. Bandykite dar kartą – ji nebuvo įskaičiuota į jūsų limitą."
+  "errAiTruncated": "Analizė nutrūko nepasibaigusi. Bandykite dar kartą – ji nebuvo įskaičiuota į jūsų limitą.",
+  "errImageUnsupported": "Šio vaizdo nepavyksta nuskaityti. Išsaugokite jį JPEG arba PNG formatu ir bandykite dar kartą.",
+  "errRateLimited": "Per daug užklausų per trumpą laiką. Palaukite minutę ir bandykite dar kartą."
 }

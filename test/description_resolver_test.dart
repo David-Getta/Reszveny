@@ -49,6 +49,15 @@ void main() {
     expect(DescriptionResolver.looksLikeDescription('BRK.B'), isFalse);
     expect(DescriptionResolver.looksLikeDescription('ab'), isFalse);
     expect(DescriptionResolver.looksLikeDescription('12345'), isFalse);
+    // A `$AAPL` és a számos ticker sem leírás (nem kérdezzük róla az AI-t).
+    expect(DescriptionResolver.looksLikeDescription(r'$AAPL'), isFalse);
+    expect(DescriptionResolver.looksLikeDescription('7203.T'), isFalse);
+    expect(DescriptionResolver.looksLikeTicker('OTP.BD'), isTrue);
+    expect(DescriptionResolver.looksLikeTicker('BRK-B'), isTrue);
+    expect(DescriptionResolver.looksLikeTicker('2024'), isFalse);
+    expect(DescriptionResolver.looksLikeTicker('gold etf'), isFalse);
+    expect(DescriptionResolver.searchTerm(r' $aapl '), 'aapl');
+    expect(DescriptionResolver.searchTerm(r'$'), r'$');
   });
 
   test('the request: the description, the language and the recognition schema', () {

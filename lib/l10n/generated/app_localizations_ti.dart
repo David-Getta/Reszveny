@@ -2801,6 +2801,14 @@ class AppLocalizationsTi extends AppLocalizations {
       'ትንተና ከይተዛዘመ ተቛሪጹ። በጃኹም ዳግማይ ፈትኑ – ካብ ብጽሒትኩም ዝጐደለ የለን።';
 
   @override
+  String get errImageUnsupported =>
+      'እዚ ስእሊ ክንበብ ኣይከኣለን። ከም JPEG ወይ PNG ዓቂብኩም ዳግማይ ፈትኑ።';
+
+  @override
+  String get errRateLimited =>
+      'ኣብ ሓጺር ግዜ ኣዝዮም ብዙሓት ሕቶታት። በጃኹም ሓንቲ ደቒቕ ተጸቢኹም ዳግማይ ፈትኑ።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

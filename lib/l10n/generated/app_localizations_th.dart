@@ -2807,6 +2807,14 @@ class AppLocalizationsTh extends AppLocalizations {
       'การวิเคราะห์ถูกตัดขาดก่อนเสร็จสมบูรณ์ โปรดลองอีกครั้ง – ไม่ได้ใช้โควตาของคุณ';
 
   @override
+  String get errImageUnsupported =>
+      'ไม่สามารถอ่านรูปภาพนี้ได้ โปรดบันทึกเป็น JPEG หรือ PNG แล้วลองอีกครั้ง';
+
+  @override
+  String get errRateLimited =>
+      'มีคำขอมากเกินไปในเวลาสั้นๆ โปรดรอสักหนึ่งนาทีแล้วลองอีกครั้ง';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

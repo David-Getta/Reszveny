@@ -2824,6 +2824,14 @@ class AppLocalizationsMos extends AppLocalizations {
       'Vɛɛsgã kɩɩsa hal t\'a pa sa ye. Le mak – a pa rɩ f vɛɛsã sõor ye.';
 
   @override
+  String get errImageUnsupported =>
+      'Foto kãngã pa tõe n karem ye. Ning-a JPEG bɩ PNG la f le mak.';
+
+  @override
+  String get errRateLimited =>
+      'Kosg wʋsg wakat bilf pʋgẽ. Gũ minit a yembre la f le mak.';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

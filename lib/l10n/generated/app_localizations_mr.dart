@@ -2838,6 +2838,14 @@ class AppLocalizationsMr extends AppLocalizations {
       'विश्लेषण पूर्ण होण्यापूर्वीच अर्धवट तुटले. कृपया पुन्हा प्रयत्न करा – यामुळे तुमचा कोटा वापरला गेला नाही.';
 
   @override
+  String get errImageUnsupported =>
+      'ही प्रतिमा वाचता येत नाही. ती JPEG किंवा PNG म्हणून सेव्ह करा आणि पुन्हा प्रयत्न करा.';
+
+  @override
+  String get errRateLimited =>
+      'कमी वेळात खूप जास्त विनंत्या आल्या. कृपया एक मिनिट थांबा आणि पुन्हा प्रयत्न करा.';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

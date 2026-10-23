@@ -2842,6 +2842,14 @@ class AppLocalizationsMs extends AppLocalizations {
       'Analisis terputus sebelum selesai. Sila cuba lagi – peruntukan anda tidak digunakan.';
 
   @override
+  String get errImageUnsupported =>
+      'Imej ini tidak dapat dibaca. Simpan sebagai JPEG atau PNG dan cuba lagi.';
+
+  @override
+  String get errRateLimited =>
+      'Terlalu banyak permintaan dalam masa yang singkat. Sila tunggu seminit dan cuba lagi.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

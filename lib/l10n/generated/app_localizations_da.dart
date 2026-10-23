@@ -2839,6 +2839,14 @@ class AppLocalizationsDa extends AppLocalizations {
       'Analysen blev afbrudt, før den var færdig. Prøv igen – den har ikke brugt af din kvote.';
 
   @override
+  String get errImageUnsupported =>
+      'Billedet kan ikke læses. Gem det som JPEG eller PNG, og prøv igen.';
+
+  @override
+  String get errRateLimited =>
+      'For mange forespørgsler på kort tid. Vent et minut, og prøv igen.';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

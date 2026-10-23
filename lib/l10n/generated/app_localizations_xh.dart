@@ -2854,6 +2854,14 @@ class AppLocalizationsXh extends AppLocalizations {
       'Uhlalutyo lunqunyulwe lungekagqitywa. Nceda uzame kwakhona – alusebenzisanga umlinganiselo wakho.';
 
   @override
+  String get errImageUnsupported =>
+      'Lo mfanekiso awufundeki. Wugcine njenge-JPEG okanye i-PNG uze uzame kwakhona.';
+
+  @override
+  String get errRateLimited =>
+      'Zininzi kakhulu izicelo ngexesha elifutshane. Nceda ulinde umzuzu uze uzame kwakhona.';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

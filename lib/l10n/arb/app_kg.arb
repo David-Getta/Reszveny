@@ -845,5 +845,7 @@
   "referralErrSignIn": "Kota na e-mail na nge sambu na kusadila code ya nduku.",
   "referralErrFull": "Bo me sadila dezia code yai mbala yonso ya bo me pesa nzila.",
   "portfolioGoalReachedBody": "Ntangu yai, ntalu ya portefeuille na nge kele {value}.",
-  "errAiTruncated": "Analyse izengwa na kati ntete ya kusukisa. Meka diaka – yo katulaka ve kima na kitini kiaku kia ngonda."
+  "errAiTruncated": "Analyse izengwa na kati ntete ya kusukisa. Meka diaka – yo katulaka ve kima na kitini kiaku kia ngonda.",
+  "errImageUnsupported": "Beto lendi ve kutanga kifwani kiaki ko. Bumba yo bonso JPEG to PNG, bosi meka diaka.",
+  "errRateLimited": "Tulombele mbala mingi na ntangu fioti. Vingila minuti mosi, bosi meka diaka."
 }

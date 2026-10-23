@@ -2837,6 +2837,14 @@ class AppLocalizationsFa extends AppLocalizations {
       'تحلیل پیش از تکمیل قطع شد. لطفاً دوباره تلاش کنید – از سهمیه شما کسر نشد.';
 
   @override
+  String get errImageUnsupported =>
+      'این تصویر قابل خواندن نیست. آن را با قالب JPEG یا PNG ذخیره کنید و دوباره تلاش کنید.';
+
+  @override
+  String get errRateLimited =>
+      'در مدت کوتاهی درخواست‌های زیادی ارسال شده است. لطفاً یک دقیقه صبر کنید و دوباره تلاش کنید.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

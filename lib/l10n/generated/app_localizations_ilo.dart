@@ -2862,6 +2862,14 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Naputed ti panangsukimat sakbay a nalpas. Pangngaasim ta padasem manen – saan a nabawasan ti alokasionmo.';
 
   @override
+  String get errImageUnsupported =>
+      'Saan a mabasa daytoy a ladawan. I-save daytoy kas JPEG wenno PNG ket padasem manen.';
+
+  @override
+  String get errRateLimited =>
+      'Adu unay ti request iti ababa a tiempo. Pangngaasim ta agurayka iti maysa a minuto ket padasem manen.';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

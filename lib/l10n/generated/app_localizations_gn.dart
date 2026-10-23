@@ -2847,6 +2847,14 @@ class AppLocalizationsGn extends AppLocalizations {
       'Jehesaʼỹijo oñekytĩ opa mboyve. Ehaʼã jey – ndojeporúi nde cupo.';
 
   @override
+  String get errImageUnsupported =>
+      'Ko taʼãnga ndaikatúi oñemoñeʼẽ. Eñongatu JPEG térã PNG ramo ha ehaʼã jey.';
+
+  @override
+  String get errRateLimited =>
+      'Hetaiterei mbaʼejerure sapyʼaitépe. Ehaʼarõmi peteĩ aravoʼi ha ehaʼã jey.';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

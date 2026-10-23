@@ -2865,6 +2865,14 @@ class AppLocalizationsGl extends AppLocalizations {
       'A análise cortouse antes de rematar. Téntao de novo – non se descontou da túa cota.';
 
   @override
+  String get errImageUnsupported =>
+      'Non se pode ler esta imaxe. Gárdaa como JPEG ou PNG e téntao de novo.';
+
+  @override
+  String get errRateLimited =>
+      'Demasiadas solicitudes en pouco tempo. Agarda un minuto e téntao de novo.';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

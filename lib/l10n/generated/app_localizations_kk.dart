@@ -2839,6 +2839,14 @@ class AppLocalizationsKk extends AppLocalizations {
       'Талдау аяқталмай үзіліп қалды. Қайталап көріңіз – лимитіңізден ештеңе есептелмеді.';
 
   @override
+  String get errImageUnsupported =>
+      'Бұл суретті оқу мүмкін емес. Оны JPEG немесе PNG пішімінде сақтап, қайталап көріңіз.';
+
+  @override
+  String get errRateLimited =>
+      'Қысқа уақытта тым көп сұрау жіберілді. Бір минут күтіп, қайталап көріңіз.';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

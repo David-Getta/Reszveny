@@ -845,5 +845,7 @@
   "referralErrSignIn": "Đăng nhập bằng email để đổi mã của một người bạn.",
   "referralErrFull": "Mã này đã được đổi đủ số lần tối đa.",
   "portfolioGoalReachedBody": "Danh mục của bạn hiện có giá trị {value}.",
-  "errAiTruncated": "Bài phân tích bị cắt ngang trước khi hoàn tất. Vui lòng thử lại – lượt này không trừ vào hạn mức của bạn."
+  "errAiTruncated": "Bài phân tích bị cắt ngang trước khi hoàn tất. Vui lòng thử lại – lượt này không trừ vào hạn mức của bạn.",
+  "errImageUnsupported": "Không thể đọc ảnh này. Hãy lưu ảnh dưới dạng JPEG hoặc PNG rồi thử lại.",
+  "errRateLimited": "Quá nhiều yêu cầu trong thời gian ngắn. Vui lòng đợi một phút rồi thử lại."
 }

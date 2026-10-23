@@ -2851,6 +2851,14 @@ class AppLocalizationsCa extends AppLocalizations {
       'L\'anàlisi s\'ha tallat abans d\'acabar. Torna-ho a provar – no s\'ha descomptat de la teva quota.';
 
   @override
+  String get errImageUnsupported =>
+      'Aquesta imatge no es pot llegir. Desa-la com a JPEG o PNG i torna-ho a provar.';
+
+  @override
+  String get errRateLimited =>
+      'Massa sol·licituds en poc temps. Espera un minut i torna-ho a provar.';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

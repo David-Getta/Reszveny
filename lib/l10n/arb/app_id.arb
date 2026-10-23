@@ -845,5 +845,7 @@
   "referralErrSignIn": "Masuk dengan email Anda untuk menukarkan kode teman.",
   "referralErrFull": "Kode ini sudah ditukarkan sebanyak batas maksimum.",
   "portfolioGoalReachedBody": "Nilai portofolio Anda kini {value}.",
-  "errAiTruncated": "Analisis terpotong sebelum selesai. Silakan coba lagi – kuota Anda tidak terpakai."
+  "errAiTruncated": "Analisis terpotong sebelum selesai. Silakan coba lagi – kuota Anda tidak terpakai.",
+  "errImageUnsupported": "Gambar ini tidak dapat dibaca. Simpan sebagai JPEG atau PNG, lalu coba lagi.",
+  "errRateLimited": "Terlalu banyak permintaan dalam waktu singkat. Mohon tunggu satu menit, lalu coba lagi."
 }

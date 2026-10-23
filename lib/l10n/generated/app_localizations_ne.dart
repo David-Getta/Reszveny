@@ -2838,6 +2838,14 @@ class AppLocalizationsNe extends AppLocalizations {
       'विश्लेषण पूरा हुनुअघि नै बीचमै काटियो। कृपया फेरि प्रयास गर्नुहोस् – यसले तपाईंको कोटा खर्च गरेको छैन।';
 
   @override
+  String get errImageUnsupported =>
+      'यो तस्बिर पढ्न सकिँदैन। यसलाई JPEG वा PNG का रूपमा सेभ गरेर फेरि प्रयास गर्नुहोस्।';
+
+  @override
+  String get errRateLimited =>
+      'छोटो समयमा धेरै अनुरोध पठाइए। कृपया एक मिनेट पर्खेर फेरि प्रयास गर्नुहोस्।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

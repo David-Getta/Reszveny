@@ -2833,6 +2833,14 @@ class AppLocalizationsMy extends AppLocalizations {
       'သုံးသပ်ချက် မပြီးဆုံးမီ ပြတ်တောက်သွားသည်။ ထပ်စမ်းကြည့်ပါ – သင့်ခွဲတမ်းကို မသုံးထားပါ။';
 
   @override
+  String get errImageUnsupported =>
+      'ဤပုံကို ဖတ်၍ မရပါ။ JPEG သို့မဟုတ် PNG အဖြစ် သိမ်းပြီး ထပ်စမ်းကြည့်ပါ။';
+
+  @override
+  String get errRateLimited =>
+      'အချိန်တိုအတွင်း တောင်းဆိုမှု များလွန်းနေသည်။ တစ်မိနစ်ခန့် စောင့်ပြီး ထပ်စမ်းကြည့်ပါ။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

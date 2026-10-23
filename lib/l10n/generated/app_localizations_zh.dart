@@ -2718,6 +2718,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get errAiTruncated => '分析在完成前被截断。请重试，本次未消耗您的配额。';
 
   @override
+  String get errImageUnsupported => '无法读取这张图片。请将其保存为 JPEG 或 PNG 格式后重试。';
+
+  @override
+  String get errRateLimited => '短时间内请求过多。请稍等一分钟后重试。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5803,6 +5809,12 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get errAiTruncated => '分析未完成便被截斷。請再試一次，今次未有扣除你的配額。';
+
+  @override
+  String get errImageUnsupported => '無法讀取這張圖片。請將其儲存為 JPEG 或 PNG 格式後再試一次。';
+
+  @override
+  String get errRateLimited => '短時間內請求過多。請稍等一分鐘後再試一次。';
 
   @override
   String get portfolioGoalSet => '設定目標';

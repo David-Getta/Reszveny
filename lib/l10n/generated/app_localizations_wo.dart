@@ -2833,6 +2833,14 @@ class AppLocalizationsWo extends AppLocalizations {
       'Saytu bi dagg na balaa muy jeex. Jéemaatal – jëlu dara ci sa dayo.';
 
   @override
+  String get errImageUnsupported =>
+      'Mënuñu a jàng nataal bii. Denc ko ni JPEG walla PNG te jéemaatal.';
+
+  @override
+  String get errRateLimited =>
+      'Laaj yi bari nañu lool ci diir bu gàtt. Xaaral benn minit te jéemaatal.';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

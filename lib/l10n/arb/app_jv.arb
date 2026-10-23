@@ -845,5 +845,7 @@
   "referralErrSignIn": "Mlebu nganggo emailmu supaya bisa nukarake kodhe saka kanca.",
   "referralErrFull": "Kodhe iki wis ditukarake nganti watesan maksimal.",
   "portfolioGoalReachedBody": "Nilai portofolio sampeyan saiki {value}.",
-  "errAiTruncated": "Analisis kepunggel sadurunge rampung. Mangga jajal maneh – kuota sampeyan ora kepotong."
+  "errAiTruncated": "Analisis kepunggel sadurunge rampung. Mangga jajal maneh – kuota sampeyan ora kepotong.",
+  "errImageUnsupported": "Gambar iki ora bisa diwaca. Simpen minangka JPEG utawa PNG lan jajal maneh.",
+  "errRateLimited": "Kakehan panjalukan ing wektu sing cendhak. Mangga ngenteni sak menit lan jajal maneh."
 }

@@ -2856,6 +2856,14 @@ class AppLocalizationsLn extends AppLocalizations {
       'Analyse ekatamaki liboso ya kosila. Meka lisusu – elongoli eloko te na eteni na yo.';
 
   @override
+  String get errImageUnsupported =>
+      'Tokoki kotánga elilingi oyo te. Bomba yango lokola JPEG to PNG mpe meka lisusu.';
+
+  @override
+  String get errRateLimited =>
+      'Masɛngi ebele na ntango moke. Zela miniti moko mpe meka lisusu.';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

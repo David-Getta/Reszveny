@@ -2842,6 +2842,14 @@ class AppLocalizationsTk extends AppLocalizations {
       'Seljerme tamamlanmanka kesildi. Gaýtadan synanyşyň – limitiňizden hiç zat aýrylmady.';
 
   @override
+  String get errImageUnsupported =>
+      'Bu suraty okap bolmaýar. Ony JPEG ýa-da PNG görnüşinde ýatda saklaň we gaýtadan synanyşyň.';
+
+  @override
+  String get errRateLimited =>
+      'Gysga wagtda gaty köp haýyş iberildi. Bir minut garaşyň we gaýtadan synanyşyň.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

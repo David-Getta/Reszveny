@@ -2847,6 +2847,14 @@ class AppLocalizationsEe extends AppLocalizations {
       'Numekuku la tso le titina hafi wòwu enu. Taflatse, gate kpɔ – mezã wò agbɔsɔsɔ aɖeke o.';
 
   @override
+  String get errImageUnsupported =>
+      'Womate ŋu xlẽ nɔnɔmetata sia o. Dzrae ɖo abe JPEG alo PNG ene eye nàgate kpɔ.';
+
+  @override
+  String get errRateLimited =>
+      'Biabia geɖe akpa le ɣeyiɣi kpui aɖe me. Taflatse, lala miniti ɖeka eye nàgate kpɔ.';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

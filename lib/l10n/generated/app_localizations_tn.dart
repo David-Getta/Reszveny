@@ -2861,6 +2861,14 @@ class AppLocalizationsTn extends AppLocalizations {
       'Tshekatsheko e kgaogile pele e fela. Tswee-tswee leka gape – ga e a dirisa kabelo ya gago.';
 
   @override
+  String get errImageUnsupported =>
+      'Setshwantsho se ga se balege. Se boloke jaaka JPEG kgotsa PNG mme o leke gape.';
+
+  @override
+  String get errRateLimited =>
+      'Dikopo di dintsi thata mo nakong e khutshwane. Tswee-tswee ema motsotso mme o leke gape.';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

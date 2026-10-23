@@ -2847,6 +2847,14 @@ class AppLocalizationsPt extends AppLocalizations {
       'A análise foi interrompida antes de terminar. Tente novamente – não foi descontada da sua quota.';
 
   @override
+  String get errImageUnsupported =>
+      'Não é possível ler esta imagem. Guarde-a como JPEG ou PNG e tente novamente.';
+
+  @override
+  String get errRateLimited =>
+      'Demasiados pedidos num curto espaço de tempo. Aguarde um minuto e tente novamente.';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

@@ -2850,6 +2850,14 @@ class AppLocalizationsSo extends AppLocalizations {
       'Falanqayntu way go\'day intaanay dhammaan. Fadlan isku day mar kale – kama aysan isticmaalin qoondadaada.';
 
   @override
+  String get errImageUnsupported =>
+      'Sawirkan lama akhriyi karo. U kaydi JPEG ama PNG oo isku day mar kale.';
+
+  @override
+  String get errRateLimited =>
+      'Codsiyo aad u badan muddo gaaban gudaheed. Fadlan sug hal daqiiqo oo isku day mar kale.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

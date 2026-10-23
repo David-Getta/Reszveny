@@ -2836,6 +2836,14 @@ class AppLocalizationsId extends AppLocalizations {
       'Analisis terpotong sebelum selesai. Silakan coba lagi – kuota Anda tidak terpakai.';
 
   @override
+  String get errImageUnsupported =>
+      'Gambar ini tidak dapat dibaca. Simpan sebagai JPEG atau PNG, lalu coba lagi.';
+
+  @override
+  String get errRateLimited =>
+      'Terlalu banyak permintaan dalam waktu singkat. Mohon tunggu satu menit, lalu coba lagi.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

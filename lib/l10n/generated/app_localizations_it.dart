@@ -2847,6 +2847,14 @@ class AppLocalizationsIt extends AppLocalizations {
       'L’analisi si è interrotta prima di essere completata. Riprova – non è stata scalata dalla tua quota.';
 
   @override
+  String get errImageUnsupported =>
+      'Impossibile leggere questa immagine. Salvala come JPEG o PNG e riprova.';
+
+  @override
+  String get errRateLimited =>
+      'Troppe richieste in poco tempo. Attendi un minuto e riprova.';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

@@ -845,5 +845,7 @@
   "referralErrSignIn": "Zaloguj się adresem e-mail, aby wykorzystać kod od znajomego.",
   "referralErrFull": "Ten kod został już wykorzystany maksymalną liczbę razy.",
   "portfolioGoalReachedBody": "Twój portfel jest teraz wart {value}.",
-  "errAiTruncated": "Analiza została ucięta przed zakończeniem. Spróbuj ponownie – nie wliczyła się do limitu."
+  "errAiTruncated": "Analiza została ucięta przed zakończeniem. Spróbuj ponownie – nie wliczyła się do limitu.",
+  "errImageUnsupported": "Nie można odczytać tego obrazu. Zapisz go jako JPEG lub PNG i spróbuj ponownie.",
+  "errRateLimited": "Zbyt wiele zapytań w krótkim czasie. Odczekaj minutę i spróbuj ponownie."
 }

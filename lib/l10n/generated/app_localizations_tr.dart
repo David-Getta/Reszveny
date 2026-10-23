@@ -2840,6 +2840,14 @@ class AppLocalizationsTr extends AppLocalizations {
       'Analiz tamamlanmadan kesildi. Lütfen tekrar deneyin – hakkınızdan düşülmedi.';
 
   @override
+  String get errImageUnsupported =>
+      'Bu görsel okunamıyor. JPEG veya PNG olarak kaydedip tekrar deneyin.';
+
+  @override
+  String get errRateLimited =>
+      'Kısa sürede çok fazla istek gönderildi. Lütfen bir dakika bekleyip tekrar deneyin.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

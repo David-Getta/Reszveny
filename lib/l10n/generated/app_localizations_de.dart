@@ -2855,6 +2855,14 @@ class AppLocalizationsDe extends AppLocalizations {
       'Die Analyse wurde abgebrochen, bevor sie fertig war. Bitte versuche es erneut – dein Kontingent wurde nicht belastet.';
 
   @override
+  String get errImageUnsupported =>
+      'Dieses Bild kann nicht gelesen werden. Speichere es als JPEG oder PNG und versuche es erneut.';
+
+  @override
+  String get errRateLimited =>
+      'Zu viele Anfragen in kurzer Zeit. Bitte warte eine Minute und versuche es erneut.';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

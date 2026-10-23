@@ -2856,6 +2856,14 @@ class AppLocalizationsQu extends AppLocalizations {
       'T\'aqwiyqa manaraq tukukuchkaptin kuchusqa karqan. Ama hina kaspa, huktawan ruway – manam kamachisqa yupayniykimanta qichusqachu.';
 
   @override
+  String get errImageUnsupported =>
+      'Kay rikch\'ayta mana ñawinchayta atikunchu. JPEG utaq PNG hina waqaychay, hinaspa huktawan ruway.';
+
+  @override
+  String get errRateLimited =>
+      'Pisi pachapi ancha achka mañakuykuna. Ama hina kaspa, huk minutota suyay, hinaspa huktawan ruway.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

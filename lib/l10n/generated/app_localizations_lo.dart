@@ -2812,6 +2812,14 @@ class AppLocalizationsLo extends AppLocalizations {
       'ການວິເຄາະຖືກຕັດຂາດກ່ອນສຳເລັດ ກະລຸນາລອງໃໝ່ – ບໍ່ໄດ້ໃຊ້ໂຄຕ້າຂອງທ່ານ';
 
   @override
+  String get errImageUnsupported =>
+      'ບໍ່ສາມາດອ່ານຮູບນີ້ໄດ້ ກະລຸນາບັນທຶກເປັນ JPEG ຫຼື PNG ແລ້ວລອງໃໝ່';
+
+  @override
+  String get errRateLimited =>
+      'ມີຄຳຮ້ອງຂໍຫຼາຍເກີນໄປໃນເວລາສັ້ນໆ ກະລຸນາລໍຖ້າໜຶ່ງນາທີແລ້ວລອງໃໝ່';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

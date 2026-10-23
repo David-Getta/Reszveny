@@ -2818,6 +2818,14 @@ class AppLocalizationsKm extends AppLocalizations {
       'ការវិភាគត្រូវបានកាត់ផ្ដាច់មុនពេលបញ្ចប់។ សូមព្យាយាមម្ដងទៀត – វាមិនបានប្រើកូតារបស់អ្នកទេ។';
 
   @override
+  String get errImageUnsupported =>
+      'មិនអាចអានរូបភាពនេះបានទេ។ សូមរក្សាទុកវាជា JPEG ឬ PNG ហើយព្យាយាមម្ដងទៀត។';
+
+  @override
+  String get errRateLimited =>
+      'សំណើច្រើនពេកក្នុងរយៈពេលខ្លី។ សូមរង់ចាំមួយនាទី ហើយព្យាយាមម្ដងទៀត។';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

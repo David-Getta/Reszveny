@@ -845,5 +845,7 @@
   "referralErrSignIn": "Dugg ak sa imeel ngir mën a jëfandikoo kood bu sa xarit.",
   "referralErrFull": "Kood bii jëfandikoo nañu ko ba mu àgg ci yamu bi.",
   "portfolioGoalReachedBody": "Léegi, njëgu sa aksiyoŋ yi tollu na ci {value}.",
-  "errAiTruncated": "Saytu bi dagg na balaa muy jeex. Jéemaatal – jëlu dara ci sa dayo."
+  "errAiTruncated": "Saytu bi dagg na balaa muy jeex. Jéemaatal – jëlu dara ci sa dayo.",
+  "errImageUnsupported": "Mënuñu a jàng nataal bii. Denc ko ni JPEG walla PNG te jéemaatal.",
+  "errRateLimited": "Laaj yi bari nañu lool ci diir bu gàtt. Xaaral benn minit te jéemaatal."
 }

@@ -845,5 +845,7 @@
   "referralErrSignIn": "Seŋo e e-mail maa ngam huutoraade kod sehil maa.",
   "referralErrFull": "Ndee kod huutoraama gila law laabi keewɗi ɗi nde waawi.",
   "portfolioGoalReachedBody": "Jooni, njaru aksiyoŋ maa ko {value}.",
-  "errAiTruncated": "Ƴeewndo ngo taƴaama hade mum timmude. Tiiɗno eto goɗngol – ɗum huutoraaki geɗal maa."
+  "errAiTruncated": "Ƴeewndo ngo taƴaama hade mum timmude. Tiiɗno eto goɗngol – ɗum huutoraaki geɗal maa.",
+  "errImageUnsupported": "Natal ngal waawaa janngeede. Danndu ngal no JPEG walla PNG refti eto goɗngol.",
+  "errRateLimited": "Ɗaɓɓitanɗe keewii e sahaa seeɗa. Tiiɗno muñ hojom gooto refti eto goɗngol."
 }

@@ -2853,6 +2853,14 @@ class AppLocalizationsMl extends AppLocalizations {
       'വിശകലനം പൂർത്തിയാകുന്നതിന് മുമ്പ് മുറിഞ്ഞുപോയി. വീണ്ടും ശ്രമിക്കുക – ഇത് നിങ്ങളുടെ ക്വാട്ടയിൽ നിന്ന് കുറച്ചിട്ടില്ല.';
 
   @override
+  String get errImageUnsupported =>
+      'ഈ ചിത്രം വായിക്കാനാകുന്നില്ല. ഇത് JPEG അല്ലെങ്കിൽ PNG ആയി സേവ് ചെയ്ത് വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String get errRateLimited =>
+      'കുറഞ്ഞ സമയത്തിനുള്ളിൽ വളരെയധികം അഭ്യർത്ഥനകൾ. ഒരു മിനിറ്റ് കാത്തിരുന്ന് വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

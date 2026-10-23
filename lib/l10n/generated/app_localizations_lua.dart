@@ -2853,6 +2853,14 @@ class AppLocalizationsLua extends AppLocalizations {
       'Dikonkonona diakosoka kumpala kua kujika. Teta kabidi – kadiakangata tshintu mu tshitupa tshiebe.';
 
   @override
+  String get errImageUnsupported =>
+      'Katuena mua kubala tshimfuanyi etshi to. Tshilama bu JPEG anyi PNG, pashishe teta kabidi.';
+
+  @override
+  String get errRateLimited =>
+      'Malomba a bungi mu tshikondo tshikese. Indila minite umue, pashishe teta kabidi.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

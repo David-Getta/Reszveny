@@ -2854,6 +2854,14 @@ class AppLocalizationsOm extends AppLocalizations {
       'Xiinxalli osoo hin xumuramin addaan cite. Maaloo irra deebi\'ii yaali – qooda kee irraa hin hir\'isne.';
 
   @override
+  String get errImageUnsupported =>
+      'Suuraan kun dubbifamuu hin danda\'u. Akka JPEG ykn PNG tti olkaa\'ii irra deebi\'ii yaali.';
+
+  @override
+  String get errRateLimited =>
+      'Yeroo gabaabaa keessatti gaaffiiwwan baay\'een ergamaniiru. Maaloo daqiiqaa tokko eegii irra deebi\'ii yaali.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

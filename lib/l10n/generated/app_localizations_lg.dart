@@ -2858,6 +2858,14 @@ class AppLocalizationsLg extends AppLocalizations {
       'Okwekenneenya kusaliddwako nga tekunnaggwa. Gezaako nate – tekukozesezza ku ky\'okkirizibwa.';
 
   @override
+  String get errImageUnsupported =>
+      'Ekifaananyi kino tekisobola kusomebwa. Kitereke nga JPEG oba PNG oddemu ogezeeko.';
+
+  @override
+  String get errRateLimited =>
+      'Okusaba kungi nnyo mu kaseera katono. Lindako eddakiika emu oddemu ogezeeko.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

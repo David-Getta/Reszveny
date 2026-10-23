@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.266)
+# Változásjegyzék (0.2.130 → 0.2.267)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,21 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Képfelismerés és keresés: egy tizenharmadik kódátnézés javításai
+
+- **0.2.267**: a felismert nem amerikai részvény a piaci adatok tickerével nyílik meg (OTP + Budapest → OTP.BD,
+  Toyota → 7203.T, Siemens → SIE.DE; eddig adat nélküli oldal, és a hibás ticker a kedvencekbe is bekerült). A
+  Windows-vágólap képernyőfotója (BMP) is felismerhető (eddig mindig hibás volt), a kép típusa a fájl tartalmából
+  jön (az iPhone HEIC-je, a TIFF, az Androidon átméretezett PNG nem megy rossz címkével), és asztali gépen, a
+  vágólapról is kicsinyítve megy fel (a nagy képernyőfotó eddig „HTTP 413”-at adott); az olvashatatlan képre
+  külön üzenet szól. Sűrű képernyőfotónál (30–40 sor) sem szakad meg a felismerés: legfeljebb 10 jelölt és
+  rövidebb átirat, nagyobb válaszkeret. Az előfizetés hiánya és a túl sok kérés a saját üzenetével jelenik meg
+  („HTTP 402” és „nincs találat” helyett), 120 nyelven. A gyorskereső és a gyorssáv egy meg nem fejtett leírást
+  nem nyit meg tickerként (és nem teszi a legutóbbiak közé), a kereső hibája után is megkérdezi az AI-t; a `$AAPL`
+  és a `7203.T` alak tickerként megy. A gyorssávban a Ctrl+V szöveget is beilleszt (eddig csak képet), és a
+  vágólap hibája sem marad kezeletlen. Az azonos tickerű jelöltek összevonva, a sémától eltérő válasz nem okoz
+  típushibát. A csak tesztben használt, pontatlan `TickerExtractor` kikerült.
 
 ## Kedvencek, listák, összehasonlítás, mentés: egy tizenkettedik kódátnézés javításai
 

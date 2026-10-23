@@ -845,5 +845,7 @@
   "referralErrSignIn": "Doʻstingiz kodini faollashtirish uchun e-pochtangiz bilan kiring.",
   "referralErrFull": "Bu kod foydalanish chegarasiga yetgan.",
   "portfolioGoalReachedBody": "Portfelingiz qiymati endi {value}.",
-  "errAiTruncated": "Tahlil tugallanmasdan uzilib qoldi. Qaytadan urinib koʻring – limitingizdan hech narsa sarflanmadi."
+  "errAiTruncated": "Tahlil tugallanmasdan uzilib qoldi. Qaytadan urinib koʻring – limitingizdan hech narsa sarflanmadi.",
+  "errImageUnsupported": "Bu rasmni oʻqib boʻlmadi. Uni JPEG yoki PNG sifatida saqlang va qaytadan urinib koʻring.",
+  "errRateLimited": "Qisqa vaqt ichida juda koʻp soʻrov yuborildi. Bir daqiqa kuting va qaytadan urinib koʻring."
 }

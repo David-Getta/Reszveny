@@ -2832,6 +2832,14 @@ class AppLocalizationsMai extends AppLocalizations {
       'विश्लेषण पूरा होबाक पहिने अधूरा रहि गेल। कृपया फेरसँ प्रयास करू – एहिसँ अहाँक कोटा खर्च नहि भेल।';
 
   @override
+  String get errImageUnsupported =>
+      'ई चित्र पढ़ल नहि जा सकल। एकरा JPEG वा PNG रूपमे सेव करू आ फेरसँ प्रयास करू।';
+
+  @override
+  String get errRateLimited =>
+      'कम समयमे बहुत बेसी अनुरोध पठाओल गेल। कृपया एक मिनट प्रतीक्षा करू आ फेरसँ प्रयास करू।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import '../../app_services.dart';
 import '../../core/errors.dart';
 import '../../core/models/stock_candidate.dart';
+import '../capture/capture_service.dart';
 import '../../l10n/error_messages.dart';
 import '../../l10n/supported_locales.dart';
 import '../recognition/description_resolver.dart';
@@ -38,20 +39,24 @@ class _QuickBarState extends State<QuickBar> {
     super.dispose();
   }
 
-  Future<void> _pasteImage() async {
+  /// Kép felismerése a vágólapról (a gombbal; [image]: a Ctrl+V már beolvasta).
+  Future<void> _pasteImage([CapturedImage? image]) async {
     final services = AppServices.of(context);
     final l10n = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
     if (_busy) return;
     final language = SupportedLocales.languageFor(Localizations.localeOf(context));
     setState(() => _busy = true);
     try {
-      final image = await services.capture.fromClipboard();
-      final result = await services.recognizer.recognize(image, outputLanguage: language.englishName);
+      final result = await services.recognizer.recognize(
+        image ?? await services.capture.fromClipboard(),
+        outputLanguage: language.englishName,
+      );
       services.telemetry.track('photo_recognized');
       if (!mounted) return;
       final best = result.best;
       if (best == null) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l10n.noCandidatesTitle)));
+        messenger.showSnackBar(SnackBar(content: Text(l10n.noCandidatesTitle)));
         return;
       }
       StockCandidate? chosen = best;
@@ -59,8 +64,9 @@ class _QuickBarState extends State<QuickBar> {
         chosen = await showCandidateSheet(context, result);
       }
       if (chosen != null) widget.onOpenSymbol(chosen);
-    } on AppException catch (e) {
-      if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(errorMessage(l10n, e))));
+    } catch (e) {
+      // Minden hiba üzenet (a vágólap-bővítmény hibája és a felismerésé is).
+      messenger.showSnackBar(SnackBar(content: Text(errorMessage(l10n, e))));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -68,11 +74,14 @@ class _QuickBarState extends State<QuickBar> {
 
   Future<void> _submit(String query) async {
     final services = AppServices.of(context);
-    final q = query.trim();
+    final l10n = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+    final q = DescriptionResolver.searchTerm(query);
     if (q.isEmpty || _busy) return;
     final language = SupportedLocales.languageFor(Localizations.localeOf(context));
     setState(() => _busy = true);
     List<StockCandidate> results = const [];
+    Object? error;
     try {
       results = await services.marketData.search(q);
     } catch (_) {
@@ -83,26 +92,51 @@ class _QuickBarState extends State<QuickBar> {
       try {
         results = (await services.descriptionResolver.resolve(q, outputLanguage: language.englishName)).candidates;
         services.telemetry.track('description_resolved');
-      } catch (_) {
-        results = const [];
+      } catch (e) {
+        error = e;
       }
     }
     if (!mounted) return;
     setState(() => _busy = false);
-    final chosen = results.isNotEmpty
-        ? results.first
-        : StockCandidate(symbol: q.toUpperCase(), companyName: q.toUpperCase(), confidence: 1);
+    final StockCandidate chosen;
+    if (results.isNotEmpty) {
+      chosen = results.first;
+    } else if (DescriptionResolver.looksLikeTicker(q)) {
+      chosen = StockCandidate(symbol: q.toUpperCase(), companyName: q.toUpperCase(), confidence: 1);
+    } else {
+      // Leírás vagy elgépelés: nem nyitjuk meg tickerként (és nem kerül a legutóbbiak közé).
+      final shown = error ?? MarketDataException(AppErrorCode.noResults, detail: q);
+      messenger.showSnackBar(SnackBar(content: Text(errorMessage(l10n, shown))));
+      return;
+    }
     _controller.clear();
     widget.onOpenSymbol(chosen);
   }
 
-  Future<void> _pasteIfImage() async {
+  /// Ctrl/⌘+V: kép esetén felismerés, egyébként a szöveg beillesztése a mezőbe (a
+  /// gyorsbillentyű elnyeli a mező saját beillesztését, ezért itt kell megtenni).
+  Future<void> _paste() async {
+    final services = AppServices.of(context);
+    final l10n = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+    CapturedImage? image;
     try {
-      await AppServices.of(context).capture.fromClipboard();
-    } on AppException {
-      return; // nincs kép: a mező szöveges beillesztése fut
+      image = await services.capture.fromClipboard();
+    } on AppException catch (e) {
+      // Van kép, de nem olvasható: az üzenet; nincs kép: a szöveg jön.
+      if (e.code != AppErrorCode.clipboardNoImage) {
+        messenger.showSnackBar(SnackBar(content: Text(errorMessage(l10n, e))));
+        return;
+      }
+    } catch (_) {
+      // A vágólap-bővítmény hibája (pl. foglalt vágólap): szövegként próbáljuk.
     }
-    await _pasteImage();
+    if (image != null) return _pasteImage(image);
+    final text = (await Clipboard.getData(Clipboard.kTextPlain))?.text?.replaceAll(RegExp(r'\s+'), ' ');
+    if (text == null || text.isEmpty || !mounted) return;
+    final v = _controller.value;
+    final at = v.selection.isValid ? v.selection : TextSelection.collapsed(offset: v.text.length);
+    _controller.value = v.replaced(at, text);
   }
 
   @override
@@ -114,8 +148,8 @@ class _QuickBarState extends State<QuickBar> {
       body: CallbackShortcuts(
         bindings: {
           const SingleActivator(LogicalKeyboardKey.escape): () => services.desktop.hideQuickBar(),
-          const SingleActivator(LogicalKeyboardKey.keyV, meta: true): _pasteIfImage,
-          const SingleActivator(LogicalKeyboardKey.keyV, control: true): _pasteIfImage,
+          const SingleActivator(LogicalKeyboardKey.keyV, meta: true): _paste,
+          const SingleActivator(LogicalKeyboardKey.keyV, control: true): _paste,
         },
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
@@ -136,7 +170,7 @@ class _QuickBarState extends State<QuickBar> {
                 tooltip: l10n.pasteImage,
                 icon: const Icon(Icons.content_paste_rounded, size: 18),
                 color: p.muted,
-                onPressed: _busy ? null : _pasteImage,
+                onPressed: _busy ? null : () => _pasteImage(),
               ),
               IconButton(
                 tooltip: l10n.openFullWindow,

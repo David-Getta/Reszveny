@@ -2753,6 +2753,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get errAiTruncated => '分析が完了する前に途中で切れました。もう一度お試しください。割り当ては消費されていません。';
 
   @override
+  String get errImageUnsupported => 'この画像を読み込めません。JPEGまたはPNGで保存して、もう一度お試しください。';
+
+  @override
+  String get errRateLimited => '短時間にリクエストが多すぎます。1分ほど待ってから、もう一度お試しください。';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

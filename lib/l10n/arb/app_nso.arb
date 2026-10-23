@@ -845,5 +845,7 @@
   "referralErrSignIn": "Tsena ka imeile ya gago gore o šomiše khoutu ya mogwera.",
   "referralErrFull": "Khoutu ye e šetše e šomišitšwe ga ntši ka mo go dumeletšwego.",
   "portfolioGoalReachedBody": "Boleng bja photefolio ya gago bjale ke {value}.",
-  "errAiTruncated": "Tshekatsheko e kgaogile pele e fela. Hle leka gape – ga e a šomiša kabelo ya gago."
+  "errAiTruncated": "Tshekatsheko e kgaogile pele e fela. Hle leka gape – ga e a šomiša kabelo ya gago.",
+  "errImageUnsupported": "Seswantšho se ga se balege. Se boloke bjalo ka JPEG goba PNG gomme o leke gape.",
+  "errRateLimited": "Dikgopelo tše dintši kudu ka nako ye kopana. Hle leta motsotso gomme o leke gape."
 }

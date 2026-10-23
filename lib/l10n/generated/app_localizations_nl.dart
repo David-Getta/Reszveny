@@ -2847,6 +2847,14 @@ class AppLocalizationsNl extends AppLocalizations {
       'De analyse is afgebroken voordat hij klaar was. Probeer het opnieuw – er is niets van je tegoed afgegaan.';
 
   @override
+  String get errImageUnsupported =>
+      'Deze afbeelding kan niet worden gelezen. Sla deze op als JPEG of PNG en probeer het opnieuw.';
+
+  @override
+  String get errRateLimited =>
+      'Te veel verzoeken in korte tijd. Wacht een minuut en probeer het opnieuw.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

@@ -2831,6 +2831,14 @@ class AppLocalizationsVi extends AppLocalizations {
       'Bài phân tích bị cắt ngang trước khi hoàn tất. Vui lòng thử lại – lượt này không trừ vào hạn mức của bạn.';
 
   @override
+  String get errImageUnsupported =>
+      'Không thể đọc ảnh này. Hãy lưu ảnh dưới dạng JPEG hoặc PNG rồi thử lại.';
+
+  @override
+  String get errRateLimited =>
+      'Quá nhiều yêu cầu trong thời gian ngắn. Vui lòng đợi một phút rồi thử lại.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

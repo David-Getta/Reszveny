@@ -2912,6 +2912,14 @@ class AppLocalizationsAr extends AppLocalizations {
       'انقطع التحليل قبل اكتماله. يرجى المحاولة مرة أخرى – لم يُحتسب من حصتك.';
 
   @override
+  String get errImageUnsupported =>
+      'تعذّرت قراءة هذه الصورة. احفظها بتنسيق JPEG أو PNG وحاول مرة أخرى.';
+
+  @override
+  String get errRateLimited =>
+      'طلبات كثيرة جداً خلال وقت قصير. يرجى الانتظار دقيقة ثم المحاولة مرة أخرى.';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

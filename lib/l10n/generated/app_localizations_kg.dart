@@ -2852,6 +2852,14 @@ class AppLocalizationsKg extends AppLocalizations {
       'Analyse izengwa na kati ntete ya kusukisa. Meka diaka – yo katulaka ve kima na kitini kiaku kia ngonda.';
 
   @override
+  String get errImageUnsupported =>
+      'Beto lendi ve kutanga kifwani kiaki ko. Bumba yo bonso JPEG to PNG, bosi meka diaka.';
+
+  @override
+  String get errRateLimited =>
+      'Tulombele mbala mingi na ntangu fioti. Vingila minuti mosi, bosi meka diaka.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

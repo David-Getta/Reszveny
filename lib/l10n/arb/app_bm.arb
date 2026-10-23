@@ -845,5 +845,7 @@
   "referralErrSignIn": "Don ni i ka e-mail ye walasa ka i teri ka kode labaara.",
   "referralErrFull": "Nin kode labaarala ka se a dan ma ka ban.",
   "portfolioGoalReachedBody": "Sisan i ka aksiyɔn kɛsu sɔngɔ ye {value} ye.",
-  "errAiTruncated": "Sɛgɛsɛgɛli tigɛra sani a ka ban. A kɔrɔbɔ tugun – a ma foyi bɔ i ka hakɛ la."
+  "errAiTruncated": "Sɛgɛsɛgɛli tigɛra sani a ka ban. A kɔrɔbɔ tugun – a ma foyi bɔ i ka hakɛ la.",
+  "errImageUnsupported": "Nin ja in tɛ se ka kalan. A mara JPEG walima PNG ye ka a kɔrɔbɔ tugun.",
+  "errRateLimited": "Ɲininiw ka ca waati surun kɔnɔ. Miniti kelen makɔnɔ ka a kɔrɔbɔ tugun."
 }

@@ -29,6 +29,8 @@ String errorMessage(AppLocalizations l10n, Object error) {
     AppErrorCode.aiBadResponse => l10n.errAiBadResponse,
     AppErrorCode.aiTruncated => l10n.errAiTruncated,
     AppErrorCode.clipboardNoImage => l10n.errClipboardNoImage,
+    AppErrorCode.imageUnsupported => l10n.errImageUnsupported,
+    AppErrorCode.rateLimited => l10n.errRateLimited,
     AppErrorCode.chartUnavailable => l10n.chartUnavailable,
     AppErrorCode.statementsUnavailable => l10n.statementsUnavailable,
     AppErrorCode.quotaExceeded => l10n.errQuotaExceeded,

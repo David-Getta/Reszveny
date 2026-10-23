@@ -2890,6 +2890,14 @@ class AppLocalizationsHr extends AppLocalizations {
       'Analiza je prekinuta prije nego što je dovršena. Pokušajte ponovno – nije potrošena vaša kvota.';
 
   @override
+  String get errImageUnsupported =>
+      'Ova se slika ne može pročitati. Spremite je kao JPEG ili PNG i pokušajte ponovno.';
+
+  @override
+  String get errRateLimited =>
+      'Previše zahtjeva u kratkom vremenu. Pričekajte minutu i pokušajte ponovno.';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

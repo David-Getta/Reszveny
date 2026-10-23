@@ -845,5 +845,7 @@
   "referralErrSignIn": "Kena ka imeile ya hao hore o sebedise khoutu ya motswalle.",
   "referralErrFull": "Khoutu ena e se e sebedisitswe ka makgetlo ohle a dumeletsweng.",
   "portfolioGoalReachedBody": "Boleng ba potefolio ya hao jwale ke {value}.",
-  "errAiTruncated": "Tlhahlobo e kgaohile pele e fela. Ka kopo leka hape – ha e a sebedisa kabelo ya hao."
+  "errAiTruncated": "Tlhahlobo e kgaohile pele e fela. Ka kopo leka hape – ha e a sebedisa kabelo ya hao.",
+  "errImageUnsupported": "Setshwantsho sena se ke ke sa balwa. Se boloke jwalo ka JPEG kapa PNG mme o leke hape.",
+  "errRateLimited": "Dikopo di ngata haholo ka nako e kgutshwane. Ka kopo ema motsotso mme o leke hape."
 }

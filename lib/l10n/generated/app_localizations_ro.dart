@@ -2884,6 +2884,14 @@ class AppLocalizationsRo extends AppLocalizations {
       'Analiza a fost întreruptă înainte de a se termina. Încearcă din nou – nu a fost scăzută din cota ta.';
 
   @override
+  String get errImageUnsupported =>
+      'Această imagine nu poate fi citită. Salvează-o ca JPEG sau PNG și încearcă din nou.';
+
+  @override
+  String get errRateLimited =>
+      'Prea multe solicitări într-un timp scurt. Așteaptă un minut și încearcă din nou.';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

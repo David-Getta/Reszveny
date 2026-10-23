@@ -2850,6 +2850,14 @@ class AppLocalizationsHy extends AppLocalizations {
       'Վերլուծությունն ընդհատվեց մինչև ավարտը։ Խնդրում ենք նորից փորձել – այն չի հաշվվել ձեր սահմանաչափից։';
 
   @override
+  String get errImageUnsupported =>
+      'Այս պատկերը հնարավոր չէ կարդալ։ Պահպանեք այն JPEG կամ PNG ձևաչափով և նորից փորձեք։';
+
+  @override
+  String get errRateLimited =>
+      'Կարճ ժամանակում չափազանց շատ հարցումներ են ուղարկվել։ Խնդրում ենք սպասել մեկ րոպե և նորից փորձել։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

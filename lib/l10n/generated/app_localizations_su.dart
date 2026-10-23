@@ -2843,6 +2843,14 @@ class AppLocalizationsSu extends AppLocalizations {
       'Analisis kapotong saméméh réngsé. Mangga cobaan deui – jatah anjeun henteu kapaké.';
 
   @override
+  String get errImageUnsupported =>
+      'Gambar ieu teu tiasa dibaca. Simpen salaku JPEG atanapi PNG teras cobaan deui.';
+
+  @override
+  String get errRateLimited =>
+      'Kaleuleuwihi pamundut dina waktos anu pondok. Mangga antosan samenit teras cobaan deui.';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

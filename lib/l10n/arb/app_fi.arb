@@ -845,5 +845,7 @@
   "referralErrSignIn": "Kirjaudu sisään sähköpostillasi lunastaaksesi ystävän koodin.",
   "referralErrFull": "Tämä koodi on jo lunastettu niin monta kertaa kuin mahdollista.",
   "portfolioGoalReachedBody": "Salkkusi arvo on nyt {value}.",
-  "errAiTruncated": "Analyysi katkesi ennen kuin se valmistui. Yritä uudelleen – se ei kuluttanut kiintiötäsi."
+  "errAiTruncated": "Analyysi katkesi ennen kuin se valmistui. Yritä uudelleen – se ei kuluttanut kiintiötäsi.",
+  "errImageUnsupported": "Kuvaa ei voi lukea. Tallenna se JPEG- tai PNG-muodossa ja yritä uudelleen.",
+  "errRateLimited": "Liian monta pyyntöä lyhyessä ajassa. Odota minuutti ja yritä uudelleen."
 }

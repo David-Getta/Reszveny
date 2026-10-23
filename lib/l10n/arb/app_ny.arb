@@ -845,5 +845,7 @@
   "referralErrSignIn": "Lowani ndi imelo yanu kuti mugwiritse ntchito khodi ya mnzanu.",
   "referralErrFull": "Khodi iyi yagwiritsidwa kale ntchito nthawi zonse zololedwa.",
   "portfolioGoalReachedBody": "Mtengo wa masheya anu tsopano ndi {value}.",
-  "errAiTruncated": "Kusanthula kudadulidwa kusanathe. Chonde yesaninso – sikunagwiritse ntchito zomwe mumapatsidwa."
+  "errAiTruncated": "Kusanthula kudadulidwa kusanathe. Chonde yesaninso – sikunagwiritse ntchito zomwe mumapatsidwa.",
+  "errImageUnsupported": "Chithunzichi sichikuwerengeka. Chisungeni ngati JPEG kapena PNG ndipo yesaninso.",
+  "errRateLimited": "Zopempha zambiri kwambiri munthawi yochepa. Chonde dikirani mphindi imodzi ndipo yesaninso."
 }

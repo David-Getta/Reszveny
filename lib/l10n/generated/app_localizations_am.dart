@@ -2803,6 +2803,14 @@ class AppLocalizationsAm extends AppLocalizations {
       'ትንተናው ከመጠናቀቁ በፊት ተቋርጧል። እባክዎ እንደገና ይሞክሩ – ከድርሻዎ ምንም አልተቀነሰም።';
 
   @override
+  String get errImageUnsupported =>
+      'ይህ ምስል ሊነበብ አልቻለም። እንደ JPEG ወይም PNG ያስቀምጡትና እንደገና ይሞክሩ።';
+
+  @override
+  String get errRateLimited =>
+      'በአጭር ጊዜ ውስጥ በጣም ብዙ ጥያቄዎች ተልከዋል። እባክዎ አንድ ደቂቃ ይጠብቁና እንደገና ይሞክሩ።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

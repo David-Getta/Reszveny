@@ -2837,6 +2837,14 @@ class AppLocalizationsFf extends AppLocalizations {
       'Ƴeewndo ngo taƴaama hade mum timmude. Tiiɗno eto goɗngol – ɗum huutoraaki geɗal maa.';
 
   @override
+  String get errImageUnsupported =>
+      'Natal ngal waawaa janngeede. Danndu ngal no JPEG walla PNG refti eto goɗngol.';
+
+  @override
+  String get errRateLimited =>
+      'Ɗaɓɓitanɗe keewii e sahaa seeɗa. Tiiɗno muñ hojom gooto refti eto goɗngol.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

@@ -2834,6 +2834,14 @@ class AppLocalizationsBho extends AppLocalizations {
       'विश्लेषण पूरा होखे से पहिले अधूरा रह गइल। कृपया फेर से कोसिस करीं – एह से राउर कोटा ना घटल।';
 
   @override
+  String get errImageUnsupported =>
+      'ई तस्वीर पढ़ल ना जा सकल। एकरा के JPEG भा PNG के रूप में सेव करीं आ फेर से कोसिस करीं।';
+
+  @override
+  String get errRateLimited =>
+      'कम समय में बहुत जादा अनुरोध भेजाइल बा। कृपया एक मिनट रुकीं आ फेर से कोसिस करीं।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

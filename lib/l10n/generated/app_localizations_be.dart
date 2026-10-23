@@ -2916,6 +2916,14 @@ class AppLocalizationsBe extends AppLocalizations {
       'Аналіз абарваўся, не скончыўшыся. Паспрабуйце яшчэ раз – з ліміту нічога не спісана.';
 
   @override
+  String get errImageUnsupported =>
+      'Не ўдалося прачытаць гэту выяву. Захавайце яе ў фармаце JPEG або PNG і паспрабуйце яшчэ раз.';
+
+  @override
+  String get errRateLimited =>
+      'Занадта шмат запытаў за кароткі час. Пачакайце хвіліну і паспрабуйце яшчэ раз.';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

@@ -64,6 +64,7 @@ void main() {
         open: (c) async => opened.add(c),
         pasteImage: () async {},
         openWindow: () async {},
+        describe: (e) => 'error: $e',
         debounce: const Duration(milliseconds: 50),
       );
     });
@@ -118,6 +119,7 @@ void main() {
         open: (cand) async => opened.add(cand),
         pasteImage: () async {},
         openWindow: () async {},
+        describe: (e) => 'error: $e',
       );
       await c.onSubmit('tech 100 etf', null);
       expect(resolved, ['tech 100 etf']);
@@ -126,6 +128,35 @@ void main() {
       await c.onSubmit('nvda', null);
       expect(resolved, hasLength(1));
       expect(opened.last.symbol, 'NVDA');
+      await c.onSubmit(r'$brk-b', null);
+      expect(opened.last.symbol, 'BRK-B');
+    });
+
+    test('a description nobody can place is not opened as a ticker; a failed search still asks the AI', () async {
+      final resolved = <String>[];
+      var fail = false;
+      final c = QuickSearchController(
+        panel: panel,
+        search: (q) async => fail ? throw Exception('offline') : const <StockCandidate>[],
+        resolve: (q) async {
+          resolved.add(q);
+          return const [];
+        },
+        favorites: () => const [],
+        recent: () => const [],
+        recentTitle: () => 'Recent',
+        open: (cand) async => opened.add(cand),
+        pasteImage: () async {},
+        openWindow: () async {},
+        describe: (e) => 'error: $e',
+      );
+      await c.onSubmit('the biggest hungarian bank', null);
+      expect(opened, isEmpty);
+      expect((_sent('setMessage').last.arguments as Map)['message'], contains('noResults'));
+      fail = true;
+      await c.onSubmit('gold etf', null);
+      expect(resolved, ['the biggest hungarian bank', 'gold etf']);
+      expect(opened, isEmpty);
     });
 
     test('a pending search is dropped once enter was pressed', () async {

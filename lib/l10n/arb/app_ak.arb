@@ -845,5 +845,7 @@
   "referralErrSignIn": "Fa wo email wura mu na woatumi de wo damfo bi code adi dwuma.",
   "referralErrFull": "Wɔde code yi adi dwuma mpɛn dodow a wɔma ho kwan no dedaw.",
   "portfolioGoalReachedBody": "Seesei wo nkyɛfa bo yɛ {value}.",
-  "errAiTruncated": "Nhwehwɛmu no twaa mu ansa na ɛrewie. Yɛsrɛ wo, sɔ hwɛ bio – ɛmfaa wo dodow no bi."
+  "errAiTruncated": "Nhwehwɛmu no twaa mu ansa na ɛrewie. Yɛsrɛ wo, sɔ hwɛ bio – ɛmfaa wo dodow no bi.",
+  "errImageUnsupported": "Yɛntumi nkenkan mfonini yi. Kora no sɛ JPEG anaa PNG na sɔ hwɛ bio.",
+  "errRateLimited": "Abisade dodow dodo wɔ bere tiaa mu. Yɛsrɛ wo, twɛn simma baako na sɔ hwɛ bio."
 }

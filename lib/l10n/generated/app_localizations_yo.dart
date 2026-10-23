@@ -2837,6 +2837,14 @@ class AppLocalizationsYo extends AppLocalizations {
       'Ìtúpalẹ̀ náà dáwọ́ dúró kí ó tó parí. Jọ̀ọ́ tún gbìyànjú – kò lo ìpín rẹ.';
 
   @override
+  String get errImageUnsupported =>
+      'A kò lè ka àwòrán yìí. Fi pamọ́ gẹ́gẹ́ bí JPEG tàbí PNG kí o sì tún gbìyànjú.';
+
+  @override
+  String get errRateLimited =>
+      'Ìbéèrè ti pọ̀ jù láàárín àkókò kúkúrú. Jọ̀ọ́ dúró fún ìṣẹ́jú kan kí o sì tún gbìyànjú.';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

@@ -2838,6 +2838,14 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਵਿਸ਼ਲੇਸ਼ਣ ਪੂਰਾ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਹੀ ਅਧੂਰਾ ਰਹਿ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ – ਇਸ ਨਾਲ ਤੁਹਾਡਾ ਕੋਟਾ ਨਹੀਂ ਵਰਤਿਆ ਗਿਆ।';
 
   @override
+  String get errImageUnsupported =>
+      'ਇਹ ਚਿੱਤਰ ਪੜ੍ਹਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ। ਇਸਨੂੰ JPEG ਜਾਂ PNG ਵਜੋਂ ਸੇਵ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get errRateLimited =>
+      'ਥੋੜ੍ਹੇ ਸਮੇਂ ਵਿੱਚ ਬਹੁਤ ਜ਼ਿਆਦਾ ਬੇਨਤੀਆਂ। ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਮਿੰਟ ਉਡੀਕ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

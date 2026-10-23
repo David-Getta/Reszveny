@@ -845,5 +845,7 @@
   "referralErrSignIn": "Dostuňyň koduny ulanmak üçin e-poçtaň bilen gir.",
   "referralErrFull": "Bu kody ulanmagyň çägi doldy.",
   "portfolioGoalReachedBody": "Portfeliňiziň gymmaty indi {value} boldy.",
-  "errAiTruncated": "Seljerme tamamlanmanka kesildi. Gaýtadan synanyşyň – limitiňizden hiç zat aýrylmady."
+  "errAiTruncated": "Seljerme tamamlanmanka kesildi. Gaýtadan synanyşyň – limitiňizden hiç zat aýrylmady.",
+  "errImageUnsupported": "Bu suraty okap bolmaýar. Ony JPEG ýa-da PNG görnüşinde ýatda saklaň we gaýtadan synanyşyň.",
+  "errRateLimited": "Gysga wagtda gaty köp haýyş iberildi. Bir minut garaşyň we gaýtadan synanyşyň."
 }

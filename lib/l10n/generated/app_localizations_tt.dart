@@ -2837,6 +2837,14 @@ class AppLocalizationsTt extends AppLocalizations {
       'Анализ тәмамланганчы өзелде. Зинһар, кабат тырышып карагыз – лимитыгыздан бернәрсә дә киметелмәде.';
 
   @override
+  String get errImageUnsupported =>
+      'Бу рәсемне укып булмый. Аны JPEG яки PNG итеп саклагыз һәм кабат тырышып карагыз.';
+
+  @override
+  String get errRateLimited =>
+      'Кыска вакыт эчендә артык күп сорау җибәрелде. Зинһар, бер минут көтегез һәм кабат тырышып карагыз.';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

@@ -845,5 +845,7 @@
   "referralErrSignIn": "Bir arkadaşının kodunu kullanmak için e-postanla giriş yap.",
   "referralErrFull": "Bu kod kullanım sınırına ulaştı.",
   "portfolioGoalReachedBody": "Portföyünüzün değeri artık {value}.",
-  "errAiTruncated": "Analiz tamamlanmadan kesildi. Lütfen tekrar deneyin – hakkınızdan düşülmedi."
+  "errAiTruncated": "Analiz tamamlanmadan kesildi. Lütfen tekrar deneyin – hakkınızdan düşülmedi.",
+  "errImageUnsupported": "Bu görsel okunamıyor. JPEG veya PNG olarak kaydedip tekrar deneyin.",
+  "errRateLimited": "Kısa sürede çok fazla istek gönderildi. Lütfen bir dakika bekleyip tekrar deneyin."
 }

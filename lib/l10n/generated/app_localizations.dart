@@ -4812,6 +4812,18 @@ abstract class AppLocalizations {
   /// **'The analysis was cut off before it was finished. Please try again – it did not use your allowance.'**
   String get errAiTruncated;
 
+  /// Error when a picked or pasted image cannot be decoded (unknown format such as HEIC/TIFF the device cannot read, or a damaged file).
+  ///
+  /// In en, this message translates to:
+  /// **'This image can\'t be read. Save it as a JPEG or PNG and try again.'**
+  String get errImageUnsupported;
+
+  /// Error when the server or the AI service refuses because of too many requests (HTTP 429).
+  ///
+  /// In en, this message translates to:
+  /// **'Too many requests in a short time. Please wait a minute and try again.'**
+  String get errRateLimited;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

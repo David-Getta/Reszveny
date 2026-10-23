@@ -2859,6 +2859,14 @@ class AppLocalizationsSt extends AppLocalizations {
       'Tlhahlobo e kgaohile pele e fela. Ka kopo leka hape – ha e a sebedisa kabelo ya hao.';
 
   @override
+  String get errImageUnsupported =>
+      'Setshwantsho sena se ke ke sa balwa. Se boloke jwalo ka JPEG kapa PNG mme o leke hape.';
+
+  @override
+  String get errRateLimited =>
+      'Dikopo di ngata haholo ka nako e kgutshwane. Ka kopo ema motsotso mme o leke hape.';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

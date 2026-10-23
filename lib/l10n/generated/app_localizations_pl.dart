@@ -2919,6 +2919,14 @@ class AppLocalizationsPl extends AppLocalizations {
       'Analiza została ucięta przed zakończeniem. Spróbuj ponownie – nie wliczyła się do limitu.';
 
   @override
+  String get errImageUnsupported =>
+      'Nie można odczytać tego obrazu. Zapisz go jako JPEG lub PNG i spróbuj ponownie.';
+
+  @override
+  String get errRateLimited =>
+      'Zbyt wiele zapytań w krótkim czasie. Odczekaj minutę i spróbuj ponownie.';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

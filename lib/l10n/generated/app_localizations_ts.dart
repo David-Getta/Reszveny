@@ -2864,6 +2864,14 @@ class AppLocalizationsTs extends AppLocalizations {
       'Nxopaxopo wu tsemekile wu nga si hela. Hi kombela u ringeta nakambe – a wu tirhisanga xiavelo xa wena.';
 
   @override
+  String get errImageUnsupported =>
+      'Xifaniso lexi a xi hlayeki. Xi hlayisi tanihi JPEG kumbe PNG kutani u ringeta nakambe.';
+
+  @override
+  String get errRateLimited =>
+      'Swikombelo swi tele ngopfu hi nkarhi wo koma. Hi kombela u rindza minete kutani u ringeta nakambe.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

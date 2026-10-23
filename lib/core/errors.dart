@@ -26,6 +26,12 @@ enum AppErrorCode {
   /// Az AI válasza a hosszkorláton megszakadt (nem teljes; a keret nem fogyott).
   aiTruncated,
   clipboardNoImage,
+
+  /// A kép nem olvasható (ismeretlen formátum vagy sérült fájl).
+  imageUnsupported,
+
+  /// Túl sok kérés rövid idő alatt (a szerver vagy az AI-szolgáltatás korlátja).
+  rateLimited,
   chartUnavailable,
   statementsUnavailable,
   quotaExceeded,

@@ -2832,6 +2832,14 @@ class AppLocalizationsPs extends AppLocalizations {
       'تحلیل له بشپړېدو مخکې پرې شو. مهرباني وکړئ بیا هڅه وکړئ – ستاسو له سهمیې څخه نه دی کم شوی.';
 
   @override
+  String get errImageUnsupported =>
+      'دا انځور نه شي لوستل کېدای. د JPEG یا PNG په توګه یې خوندي کړئ او بیا هڅه وکړئ.';
+
+  @override
+  String get errRateLimited =>
+      'په لنډ وخت کې ډېرې غوښتنې. مهرباني وکړئ یوه دقیقه انتظار وکړئ او بیا هڅه وکړئ.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

@@ -2840,6 +2840,14 @@ class AppLocalizationsKa extends AppLocalizations {
       'ანალიზი დასრულებამდე შეწყდა. სცადეთ ხელახლა – ეს თქვენს ლიმიტში არ ჩაითვალა.';
 
   @override
+  String get errImageUnsupported =>
+      'ამ სურათის წაკითხვა ვერ ხერხდება. შეინახეთ JPEG ან PNG ფორმატში და სცადეთ ხელახლა.';
+
+  @override
+  String get errRateLimited =>
+      'ძალიან ბევრი მოთხოვნა მოკლე დროში. დაიცადეთ ერთი წუთი და სცადეთ ხელახლა.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

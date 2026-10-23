@@ -2850,6 +2850,14 @@ class AppLocalizationsSn extends AppLocalizations {
       'Ongororo yakadimburwa isati yapera. Ndapota edza zvakare – haina kushandisa mwero wako.';
 
   @override
+  String get errImageUnsupported =>
+      'Mufananidzo uyu haugone kuverengwa. Uchengete se JPEG kana PNG wobva waedza zvakare.';
+
+  @override
+  String get errRateLimited =>
+      'Zvikumbiro zvawandisa munguva pfupi. Ndapota mira miniti imwe wobva waedza zvakare.';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

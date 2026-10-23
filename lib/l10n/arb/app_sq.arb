@@ -845,5 +845,7 @@
   "referralErrSignIn": "Hyr me email-in tënd për të aktivizuar kodin e një miku.",
   "referralErrFull": "Ky kod është aktivizuar tashmë numrin maksimal të herëve.",
   "portfolioGoalReachedBody": "Portofoli juaj tani vlen {value}.",
-  "errAiTruncated": "Analiza u ndërpre para se të përfundonte. Ju lutemi provoni përsëri – nuk u zbrit nga kuota juaj."
+  "errAiTruncated": "Analiza u ndërpre para se të përfundonte. Ju lutemi provoni përsëri – nuk u zbrit nga kuota juaj.",
+  "errImageUnsupported": "Ky imazh nuk mund të lexohet. Ruajeni si JPEG ose PNG dhe provoni përsëri.",
+  "errRateLimited": "Shumë kërkesa brenda një kohe të shkurtër. Ju lutemi prisni një minutë dhe provoni përsëri."
 }

@@ -2847,6 +2847,14 @@ class AppLocalizationsSq extends AppLocalizations {
       'Analiza u ndërpre para se të përfundonte. Ju lutemi provoni përsëri – nuk u zbrit nga kuota juaj.';
 
   @override
+  String get errImageUnsupported =>
+      'Ky imazh nuk mund të lexohet. Ruajeni si JPEG ose PNG dhe provoni përsëri.';
+
+  @override
+  String get errRateLimited =>
+      'Shumë kërkesa brenda një kohe të shkurtër. Ju lutemi prisni një minutë dhe provoni përsëri.';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

@@ -2843,6 +2843,14 @@ class AppLocalizationsJv extends AppLocalizations {
       'Analisis kepunggel sadurunge rampung. Mangga jajal maneh – kuota sampeyan ora kepotong.';
 
   @override
+  String get errImageUnsupported =>
+      'Gambar iki ora bisa diwaca. Simpen minangka JPEG utawa PNG lan jajal maneh.';
+
+  @override
+  String get errRateLimited =>
+      'Kakehan panjalukan ing wektu sing cendhak. Mangga ngenteni sak menit lan jajal maneh.';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

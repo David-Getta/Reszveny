@@ -845,5 +845,7 @@
   "referralErrSignIn": "Log masuk dengan e-mel anda untuk menebus kod rakan.",
   "referralErrFull": "Kod ini telah ditebus sebanyak had maksimum.",
   "portfolioGoalReachedBody": "Nilai portfolio anda kini {value}.",
-  "errAiTruncated": "Analisis terputus sebelum selesai. Sila cuba lagi – peruntukan anda tidak digunakan."
+  "errAiTruncated": "Analisis terputus sebelum selesai. Sila cuba lagi – peruntukan anda tidak digunakan.",
+  "errImageUnsupported": "Imej ini tidak dapat dibaca. Simpan sebagai JPEG atau PNG dan cuba lagi.",
+  "errRateLimited": "Terlalu banyak permintaan dalam masa yang singkat. Sila tunggu seminit dan cuba lagi."
 }

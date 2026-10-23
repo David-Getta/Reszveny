@@ -2859,6 +2859,14 @@ class AppLocalizationsHil extends AppLocalizations {
       'Naputol ang analisis antes ini natapos. Palihog tilawi liwat – wala ini nagbuhin sa imo alokasyon.';
 
   @override
+  String get errImageUnsupported =>
+      'Indi mabasa ini nga litrato. I-save ini subong JPEG ukon PNG kag tilawi liwat.';
+
+  @override
+  String get errRateLimited =>
+      'Sobra kadamo nga request sa malip-ot nga tion. Palihog hulat sang isa ka minuto kag tilawi liwat.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

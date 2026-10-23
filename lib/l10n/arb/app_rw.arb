@@ -845,5 +845,7 @@
   "referralErrSignIn": "Injira ukoresheje imeyili yawe kugira ngo ukoreshe kode y'inshuti.",
   "referralErrFull": "Iyi kode yamaze gukoreshwa inshuro zose zemewe.",
   "portfolioGoalReachedBody": "Ishoramari ryawe ubu rifite agaciro ka {value}.",
-  "errAiTruncated": "Isesengura ryaciwe hagati ritarangira. Ongera ugerageze – ntiryakoresheje ingano wemerewe."
+  "errAiTruncated": "Isesengura ryaciwe hagati ritarangira. Ongera ugerageze – ntiryakoresheje ingano wemerewe.",
+  "errImageUnsupported": "Iyi foto ntishobora gusomwa. Yibike nka JPEG cyangwa PNG maze wongere ugerageze.",
+  "errRateLimited": "Ubusabe bwinshi cyane mu gihe gito. Tegereza umunota umwe maze wongere ugerageze."
 }

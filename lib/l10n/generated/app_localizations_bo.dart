@@ -2829,6 +2829,14 @@ class AppLocalizationsBo extends AppLocalizations {
       'དབྱེ་ཞིབ་མ་གྲུབ་གོང་ནས་བར་ཆད་བྱུང་། ཡང་བསྐྱར་ཚོད་ལྟ་གནང་། འདིས་ཁྱེད་ཀྱི་ཚད་བཀག་བཀོལ་མེད།';
 
   @override
+  String get errImageUnsupported =>
+      'པར་རིས་འདི་ཀློག་མ་ཐུབ། JPEG ཡང་ན་ PNG རྣམ་གཞག་ཏུ་ཉར་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
+
+  @override
+  String get errRateLimited =>
+      'དུས་ཚོད་ཐུང་ངུའི་ནང་རེ་ཞུ་མང་དྲགས་འདུག སྐར་མ་གཅིག་སྒུག་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

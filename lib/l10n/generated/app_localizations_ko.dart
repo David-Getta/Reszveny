@@ -2764,6 +2764,13 @@ class AppLocalizationsKo extends AppLocalizations {
       '분석이 완료되기 전에 중간에 끊겼습니다. 다시 시도해 주세요. 할당량은 차감되지 않았습니다.';
 
   @override
+  String get errImageUnsupported =>
+      '이 이미지를 읽을 수 없습니다. JPEG 또는 PNG로 저장한 후 다시 시도해 주세요.';
+
+  @override
+  String get errRateLimited => '짧은 시간에 요청이 너무 많습니다. 1분 정도 기다린 후 다시 시도해 주세요.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

@@ -2840,6 +2840,14 @@ class AppLocalizationsUr extends AppLocalizations {
       'تجزیہ مکمل ہونے سے پہلے ہی ادھورا رہ گیا۔ براہ کرم دوبارہ کوشش کریں – اس سے آپ کا کوٹا استعمال نہیں ہوا۔';
 
   @override
+  String get errImageUnsupported =>
+      'یہ تصویر پڑھی نہیں جا سکتی۔ اسے JPEG یا PNG کے طور پر محفوظ کریں اور دوبارہ کوشش کریں۔';
+
+  @override
+  String get errRateLimited =>
+      'کم وقت میں بہت زیادہ درخواستیں۔ براہ کرم ایک منٹ انتظار کریں اور دوبارہ کوشش کریں۔';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

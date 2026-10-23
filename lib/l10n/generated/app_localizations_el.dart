@@ -2852,6 +2852,14 @@ class AppLocalizationsEl extends AppLocalizations {
       'Η ανάλυση διακόπηκε πριν ολοκληρωθεί. Δοκιμάστε ξανά – δεν προσμετρήθηκε στο όριό σας.';
 
   @override
+  String get errImageUnsupported =>
+      'Δεν είναι δυνατή η ανάγνωση αυτής της εικόνας. Αποθηκεύστε την ως JPEG ή PNG και δοκιμάστε ξανά.';
+
+  @override
+  String get errRateLimited =>
+      'Πάρα πολλά αιτήματα σε σύντομο χρονικό διάστημα. Περιμένετε ένα λεπτό και δοκιμάστε ξανά.';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override
