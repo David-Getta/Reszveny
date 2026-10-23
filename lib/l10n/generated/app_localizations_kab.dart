@@ -2759,6 +2759,13 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Ḍfer aqrab-ik';
+
+  @override
+  String get onboardBody4 =>
+      'Kter asifeḍ n broker-ik (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) neɣ rnu tiɣin d uznuzu s ufus: wali afaris-ik ɣer tama n umatar, dividendes-ik d ugzul n useggas i usmekti n tbaḍt.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

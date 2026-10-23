@@ -826,5 +826,7 @@
   "positionHeldSince": "מאז {date}",
   "lotPreviewWeight": "משקל בתיק לאחר העסקה: {after} (כעת {before})",
   "lotFromCash": "תשלום מהמזומן (כעת {amount})",
-  "lotToCash": "הוספה למזומן (כעת {amount})"
+  "lotToCash": "הוספה למזומן (כעת {amount})",
+  "onboardTitle4": "עקבו אחרי תיק ההשקעות",
+  "onboardBody4": "ייבאו את קובץ הייצוא של הברוקר (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) או הוסיפו עסקאות ידנית: ראו את התשואה שלכם לצד מדד, את הדיבידנדים ואת הסיכום השנתי לדוח המס."
 }

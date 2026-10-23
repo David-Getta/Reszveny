@@ -826,5 +826,7 @@
   "positionHeldSince": "efi {date}",
   "lotPreviewWeight": "Ɔfa wɔ portfolio no mu akyire: {after} (seesei {before})",
   "lotFromCash": "Fi sika a ɛda hɔ mu tua (seesei {amount})",
-  "lotToCash": "Fa ka sika a ɛda hɔ ho (seesei {amount})"
+  "lotToCash": "Fa ka sika a ɛda hɔ ho (seesei {amount})",
+  "onboardTitle4": "Hwɛ wo nkyɛfa so",
+  "onboardBody4": "Fa wo broker export no bra (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) anaa fa wo nsa kyerɛw w'adetɔ ne w'adetɔn: hu wo mfaso a wɔde toto index bi ho, wo dividend ne afe nsɛm tiawa ma w'apoobɔ ho nsɛm."
 }

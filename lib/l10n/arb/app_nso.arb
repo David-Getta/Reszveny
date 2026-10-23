@@ -826,5 +826,7 @@
   "positionHeldSince": "go tloga ka {date}",
   "lotPreviewWeight": "Karolo ya potefolio ka morago: {after} (bjale {before})",
   "lotFromCash": "Lefa ka tšhelete (bjale {amount})",
-  "lotToCash": "Oketša go tšhelete (bjale {amount})"
+  "lotToCash": "Oketša go tšhelete (bjale {amount})",
+  "onboardTitle4": "Latišiša photefolio ya gago",
+  "onboardBody4": "Tsenya faele ya export ya broker ya gago (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) goba o oketše dithekišano ka seatla: bona poelo ya gago e bapetšwa le index, dividende tša gago le kakaretšo ya ngwaga bakeng sa pego ya gago ya motšhelo."
 }

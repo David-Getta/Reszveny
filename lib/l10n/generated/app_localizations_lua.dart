@@ -2772,6 +2772,13 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Londa portefeuille webe';
+
+  @override
+  String get onboardBody4 =>
+      'Tuala export wa broker webe (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) anyi funda bisumba ne bisumbisha ne bianza: mona dipeta diebe ku luseke lua indice, dividende yebe ne tshikoso tsha tshidimu bua mukanda wa bitadi.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

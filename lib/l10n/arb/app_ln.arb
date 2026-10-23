@@ -826,5 +826,7 @@
   "positionHeldSince": "banda {date}",
   "lotPreviewWeight": "Ndambo ya portfolio na sima: {after} (sikoyo {before})",
   "lotFromCash": "Futa na mbɔngɔ ya mabɔkɔ (sikoyo {amount})",
-  "lotToCash": "Bakisa na mbɔngɔ ya mabɔkɔ (sikoyo {amount})"
+  "lotToCash": "Bakisa na mbɔngɔ ya mabɔkɔ (sikoyo {amount})",
+  "onboardTitle4": "Landa portefeuille na yo",
+  "onboardBody4": "Kotisa export ya broker na yo (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) to bakisa bosombi mpe boteki na maboko: talá litomba na yo pembeni ya indice moko, ba dividende na yo mpe bokuse ya mbula mpo na declaration ya mpako."
 }

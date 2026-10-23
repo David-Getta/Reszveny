@@ -2759,6 +2759,13 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'আপনার পোর্টফোলিও ট্র্যাক করুন';
+
+  @override
+  String get onboardBody4 =>
+      'আপনার ব্রোকারের এক্সপোর্ট ইম্পোর্ট করুন (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) বা হাতে লেনদেন যোগ করুন: একটি সূচকের পাশে আপনার রিটার্ন, আপনার ডিভিডেন্ড এবং কর রিটার্নের জন্য বার্ষিক সারাংশ দেখুন।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

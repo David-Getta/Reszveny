@@ -2760,6 +2760,13 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Keep eye for your portfolio';
+
+  @override
+  String get onboardBody4 =>
+      'Import your broker export (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) or add your buy and sell by hand: see your return side by side with one index, your dividends and yearly summary for your tax return.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

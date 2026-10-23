@@ -2760,6 +2760,13 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'اپنے پورٹ فولیو پر نظر رکھیں';
+
+  @override
+  String get onboardBody4 =>
+      'اپنے بروکر کی ایکسپورٹ فائل امپورٹ کریں (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) یا لین دین ہاتھ سے شامل کریں: کسی انڈیکس کے مقابلے میں اپنا ریٹرن، اپنے ڈیویڈنڈ اور ٹیکس ریٹرن کے لیے سالانہ خلاصہ دیکھیں۔';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

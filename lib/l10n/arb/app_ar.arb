@@ -826,5 +826,7 @@
   "positionHeldSince": "منذ {date}",
   "lotPreviewWeight": "الحصة من المحفظة بعد العملية: {after} (حاليًا {before})",
   "lotFromCash": "الدفع من النقد (حاليًا {amount})",
-  "lotToCash": "الإضافة إلى النقد (حاليًا {amount})"
+  "lotToCash": "الإضافة إلى النقد (حاليًا {amount})",
+  "onboardTitle4": "تابع محفظتك",
+  "onboardBody4": "استورد ملف التصدير من وسيطك (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) أو أضف صفقاتك يدويًا: شاهد عائدك مقارنةً بمؤشر، وتوزيعات أرباحك، وملخصًا سنويًا لإقرارك الضريبي."
 }

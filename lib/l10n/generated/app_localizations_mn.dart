@@ -2761,6 +2761,13 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Портфолиогоо хянаарай';
+
+  @override
+  String get onboardBody4 =>
+      'Брокерийнхоо экспортыг импортлоорой (Revolut, Trading 212, IBKR, DEGIRO, Schwab…), эсвэл гүйлгээгээ гараар нэмээрэй: индекстэй харьцуулсан өгөөж, ногдол ашиг болон татварын тайланд зориулсан жилийн хураангуйгаа хараарай.';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

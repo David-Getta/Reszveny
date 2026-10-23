@@ -826,5 +826,7 @@
   "positionHeldSince": "sejak {date}",
   "lotPreviewWeight": "Bahagian dalam portfolio selepas ini: {after} (kini {before})",
   "lotFromCash": "Bayar daripada tunai (kini {amount})",
-  "lotToCash": "Tambah kepada tunai (kini {amount})"
+  "lotToCash": "Tambah kepada tunai (kini {amount})",
+  "onboardTitle4": "Jejaki portfolio anda",
+  "onboardBody4": "Import eksport daripada broker anda (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) atau tambah transaksi secara manual: lihat pulangan anda berbanding indeks, dividen anda dan ringkasan tahunan untuk penyata cukai anda."
 }

@@ -826,5 +826,7 @@
   "positionHeldSince": "{date}થી",
   "lotPreviewWeight": "પછી પોર્ટફોલિયોમાં હિસ્સો: {after} (હાલ {before})",
   "lotFromCash": "રોકડમાંથી ચૂકવો (હાલ {amount})",
-  "lotToCash": "રોકડમાં ઉમેરો (હાલ {amount})"
+  "lotToCash": "રોકડમાં ઉમેરો (હાલ {amount})",
+  "onboardTitle4": "તમારા પોર્ટફોલિયો પર નજર રાખો",
+  "onboardBody4": "તમારા બ્રોકરનું એક્સપોર્ટ ઇમ્પોર્ટ કરો (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) અથવા વ્યવહારો હાથે ઉમેરો: કોઈ ઇન્ડેક્સની સાથે તમારું રિટર્ન, તમારા ડિવિડન્ડ અને ટેક્સ રિટર્ન માટે વાર્ષિક સારાંશ જુઓ."
 }

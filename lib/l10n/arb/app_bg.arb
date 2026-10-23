@@ -826,5 +826,7 @@
   "positionHeldSince": "от {date}",
   "lotPreviewWeight": "Дял в портфейла след това: {after} (сега {before})",
   "lotFromCash": "Плащане от кеша (сега {amount})",
-  "lotToCash": "Добавяне към кеша (сега {amount})"
+  "lotToCash": "Добавяне към кеша (сега {amount})",
+  "onboardTitle4": "Следете портфейла си",
+  "onboardBody4": "Импортирайте експорта от брокера си (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) или добавяйте сделки ръчно: вижте доходността си спрямо индекс, дивидентите си и годишно обобщение за данъчната декларация."
 }

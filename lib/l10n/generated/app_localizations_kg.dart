@@ -2771,6 +2771,13 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Landa portefeuille na nge';
+
+  @override
+  String get onboardBody4 =>
+      'Kotisa export ya broker na nge (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) to sonika kusumba ti kuteka na maboko: tala mbakulu na nge ti indice mosi, ba dividende na nge ye nkufi ya mvula sambu na mukanda ya mpaku.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

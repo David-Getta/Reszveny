@@ -2759,6 +2759,13 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Swiv pòtfèy ou';
+
+  @override
+  String get onboardBody4 =>
+      'Enpòte ekspò koutye w la (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) oswa ajoute tranzaksyon yo alamen: wè rannman ou bò kote yon endèks, dividann ou yo ak yon rezime anyèl pou deklarasyon taks ou.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

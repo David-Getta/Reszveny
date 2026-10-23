@@ -2773,6 +2773,13 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Poortfooliyoo kee hordofi';
+
+  @override
+  String get onboardBody4 =>
+      'Faayilii ekspoortii birookerii keetii galchi (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) yookiin bittaa fi gurgurtaa harkaan dabali: bu\'aa kee indeeksii tokko waliin wal bira qabamee, diviidendii kee fi cuunfaa waggaa gabaasa gibiraa keetiif ilaali.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

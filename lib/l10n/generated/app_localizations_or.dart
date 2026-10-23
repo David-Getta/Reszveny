@@ -2757,6 +2757,13 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓ ଉପରେ ନଜର ରଖନ୍ତୁ';
+
+  @override
+  String get onboardBody4 =>
+      'ଆପଣଙ୍କ ବ୍ରୋକରର ଏକ୍ସପୋର୍ଟ ଇମ୍ପୋର୍ଟ କରନ୍ତୁ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) କିମ୍ବା କାରବାର ହାତରେ ଯୋଡ଼ନ୍ତୁ: ଏକ ସୂଚକାଙ୍କ ତୁଳନାରେ ଆପଣଙ୍କ ରିଟର୍ନ, ଆପଣଙ୍କ ଡିଭିଡେଣ୍ଡ ଏବଂ ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ ବାର୍ଷିକ ସାରାଂଶ ଦେଖନ୍ତୁ।';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

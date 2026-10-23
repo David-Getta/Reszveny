@@ -2762,6 +2762,13 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Följ din portfölj';
+
+  @override
+  String get onboardBody4 =>
+      'Importera exporten från din mäklare (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) eller lägg till affärer manuellt: se din avkastning bredvid ett index, dina utdelningar och en årsöversikt till deklarationen.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

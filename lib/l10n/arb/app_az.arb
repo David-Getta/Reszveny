@@ -826,5 +826,7 @@
   "positionHeldSince": "{date} tarixindən",
   "lotPreviewWeight": "Sonra portfeldəki pay: {after} (hazırda {before})",
   "lotFromCash": "Nağd qalıqdan ödəyin (hazırda {amount})",
-  "lotToCash": "Nağd qalığa əlavə edin (hazırda {amount})"
+  "lotToCash": "Nağd qalığa əlavə edin (hazırda {amount})",
+  "onboardTitle4": "Portfelinizi izləyin",
+  "onboardBody4": "Brokerinizin ixrac faylını idxal edin (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) və ya əməliyyatları əl ilə əlavə edin: gəlirliliyinizi indekslə müqayisədə, dividendlərinizi və vergi bəyannaməsi üçün illik xülasəni görün."
 }

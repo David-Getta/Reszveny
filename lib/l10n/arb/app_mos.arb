@@ -826,5 +826,7 @@
   "positionHeldSince": "sẽn sɩng {date}",
   "lotPreviewWeight": "Portfolio wã pʋɩɩr rẽ poorẽ: {after} (masã {before})",
   "lotFromCash": "Yao ne ligdi (masã {amount})",
-  "lotToCash": "Paas ligdã pʋgẽ (masã {amount})"
+  "lotToCash": "Paas ligdã pʋgẽ (masã {amount})",
+  "onboardTitle4": "Gũus y portfey",
+  "onboardBody4": "Kẽes y broker-ã export (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) bɩ y gʋls y raaba la koosgo ne y nug: ges y nafa ne indɛks a yembre, y dividand la yʋʋmd fãa sõdbo lampo sebrã yĩnga."
 }

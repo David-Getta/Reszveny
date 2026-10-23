@@ -826,5 +826,7 @@
   "positionHeldSince": "از {date}",
   "lotPreviewWeight": "سهم از سبد پس از معامله: {after} (اکنون {before})",
   "lotFromCash": "پرداخت از نقد (اکنون {amount})",
-  "lotToCash": "افزودن به نقد (اکنون {amount})"
+  "lotToCash": "افزودن به نقد (اکنون {amount})",
+  "onboardTitle4": "سبد سهام خود را دنبال کنید",
+  "onboardBody4": "فایل خروجی کارگزارتان را وارد کنید (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) یا معاملات را دستی اضافه کنید: بازده خود را در کنار یک شاخص، سود سهامتان و خلاصه سالانه برای اظهارنامه مالیاتی ببینید."
 }

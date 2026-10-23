@@ -2768,6 +2768,13 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Bibiyi jakar hannun jarinka';
+
+  @override
+  String get onboardBody4 =>
+      'Shigo da fitarwar dillalinka (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ko ƙara ma\'amaloli da hannu: ga ribarka idan aka kwatanta da ma\'auni, rabon ribarka da taƙaitaccen bayanin shekara don bayanin harajinka.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

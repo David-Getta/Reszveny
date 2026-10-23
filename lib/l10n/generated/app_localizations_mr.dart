@@ -2759,6 +2759,13 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'तुमच्या पोर्टफोलिओवर लक्ष ठेवा';
+
+  @override
+  String get onboardBody4 =>
+      'तुमच्या ब्रोकरची एक्सपोर्ट फाइल इंपोर्ट करा (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) किंवा व्यवहार हाताने जोडा: एखाद्या निर्देशांकाच्या तुलनेत तुमचा परतावा, तुमचे लाभांश आणि कर विवरणपत्रासाठी वार्षिक सारांश पाहा.';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

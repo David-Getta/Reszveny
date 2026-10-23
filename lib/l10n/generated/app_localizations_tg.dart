@@ -2763,6 +2763,13 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Портфели худро пайгирӣ кунед';
+
+  @override
+  String get onboardBody4 =>
+      'Содироти брокери худро ворид кунед (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ё амалиётҳоро дастӣ илова кунед: даромаднокии худро дар муқоиса бо индекс, дивидендҳо ва ҷамъбасти солонаро барои эъломияи андоз бинед.';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

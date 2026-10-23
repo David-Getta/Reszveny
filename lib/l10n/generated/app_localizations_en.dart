@@ -2758,6 +2758,13 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Track your portfolio';
+
+  @override
+  String get onboardBody4 =>
+      'Import your broker\'s export (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) or add trades by hand: see your return next to an index, your dividends and an annual summary for your tax return.';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

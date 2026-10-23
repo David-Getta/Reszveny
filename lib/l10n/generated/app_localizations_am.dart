@@ -2725,6 +2725,13 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'ፖርትፎሊዮዎን ይከታተሉ';
+
+  @override
+  String get onboardBody4 =>
+      'የደላላዎን ወጪ ፋይል ያስመጡ (Revolut፣ Trading 212፣ IBKR፣ DEGIRO፣ Schwab…) ወይም ግብይቶችን በእጅ ያክሉ፤ ተመላሽዎን ከአንድ ኢንዴክስ ጋር ሲነጻጸር፣ የትርፍ ድርሻዎን እና ለግብር ማስታወቂያዎ ዓመታዊ ማጠቃለያ ይመልከቱ።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

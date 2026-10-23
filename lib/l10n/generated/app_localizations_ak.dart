@@ -2763,6 +2763,13 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Hwɛ wo nkyɛfa so';
+
+  @override
+  String get onboardBody4 =>
+      'Fa wo broker export no bra (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) anaa fa wo nsa kyerɛw w\'adetɔ ne w\'adetɔn: hu wo mfaso a wɔde toto index bi ho, wo dividend ne afe nsɛm tiawa ma w\'apoobɔ ho nsɛm.';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

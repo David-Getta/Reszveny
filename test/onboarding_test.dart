@@ -42,7 +42,7 @@ AppServices _services(AppPreferences prefs) => AppServices(
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
-  testWidgets('first launch: three onboarding pages, then the search; never again', (tester) async {
+  testWidgets('first launch: four onboarding pages, then the search; never again', (tester) async {
     tester.view.physicalSize = const Size(390, 844);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
@@ -54,6 +54,9 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('onboarding-next')));
     await tester.pumpAndSettle();
     expect(find.text('Understand it in minutes'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('onboarding-next')));
+    await tester.pumpAndSettle();
+    expect(find.text('Track your portfolio'), findsOneWidget);
     await tester.tap(find.byKey(const ValueKey('onboarding-next')));
     await tester.pumpAndSettle();
     expect(find.text('Stay on top of it'), findsOneWidget);

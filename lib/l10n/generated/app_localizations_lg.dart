@@ -2777,6 +2777,13 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Londoola emigabo gyo';
+
+  @override
+  String get onboardBody4 =>
+      'Leeta export ya broker wo (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) oba yongera bye wagula ne bye watunda n\'engalo: laba amagoba go nga gageraageranyizibwa ne index, dividendi zo n\'ebifunze by\'omwaka ku lipoota y\'omusolo.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

@@ -2767,6 +2767,13 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Sigue tu cartera';
+
+  @override
+  String get onboardBody4 =>
+      'Importa la exportación de tu bróker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o añade operaciones a mano: consulta tu rentabilidad frente a un índice, tus dividendos y un resumen anual para tu declaración de impuestos.';
+
+  @override
   String get portfolioGoalSet => 'Fijar un objetivo';
 
   @override

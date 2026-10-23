@@ -2761,6 +2761,13 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Følg med på porteføljen din';
+
+  @override
+  String get onboardBody4 =>
+      'Importer eksporten fra megleren din (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) eller legg inn handler manuelt: se avkastningen din ved siden av en indeks, utbyttene dine og en årsoversikt til skattemeldingen.';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

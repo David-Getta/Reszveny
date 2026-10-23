@@ -2772,6 +2772,13 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Παρακολουθήστε το χαρτοφυλάκιό σας';
+
+  @override
+  String get onboardBody4 =>
+      'Εισαγάγετε την εξαγωγή του χρηματιστή σας (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ή προσθέστε συναλλαγές χειροκίνητα: δείτε την απόδοσή σας δίπλα σε έναν δείκτη, τα μερίσματά σας και μια ετήσια σύνοψη για τη φορολογική σας δήλωση.';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

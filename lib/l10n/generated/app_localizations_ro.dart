@@ -2803,6 +2803,13 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Urmărește-ți portofoliul';
+
+  @override
+  String get onboardBody4 =>
+      'Importă exportul de la broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) sau adaugă tranzacțiile manual: vezi randamentul tău alături de un indice, dividendele și un rezumat anual pentru declarația fiscală.';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

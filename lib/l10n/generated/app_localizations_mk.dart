@@ -2781,6 +2781,13 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Следете го вашето портфолио';
+
+  @override
+  String get onboardBody4 =>
+      'Увезете го извозот од вашиот брокер (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) или рачно додајте трансакции: видете го вашиот принос во споредба со индекс, вашите дивиденди и годишен преглед за даночната пријава.';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

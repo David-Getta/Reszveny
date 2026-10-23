@@ -826,5 +826,7 @@
   "positionHeldSince": "од {date}",
   "lotPreviewWeight": "Удео у портфолију након тога: {after} (сада {before})",
   "lotFromCash": "Плати из готовине (сада {amount})",
-  "lotToCash": "Додај у готовину (сада {amount})"
+  "lotToCash": "Додај у готовину (сада {amount})",
+  "onboardTitle4": "Пратите свој портфолио",
+  "onboardBody4": "Увезите извоз од свог брокера (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) или ручно додајте трансакције: погледајте свој принос у поређењу са индексом, своје дивиденде и годишњи преглед за пореску пријаву."
 }

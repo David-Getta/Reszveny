@@ -2763,6 +2763,13 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Jejaki portfolio anda';
+
+  @override
+  String get onboardBody4 =>
+      'Import eksport daripada broker anda (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) atau tambah transaksi secara manual: lihat pulangan anda berbanding indeks, dividen anda dan ringkasan tahunan untuk penyata cukai anda.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

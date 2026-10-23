@@ -2757,6 +2757,13 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'I ka aksiyɔn kɛsu kɔlɔsi';
+
+  @override
+  String get onboardBody4 =>
+      'I ka broker ka export fayili lase (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) walima ka i ka sanniw ni feereliw sɛbɛn ni bolo ye: i ka tɔnɔ filɛ ka a sanga indɛkisi dɔ ma, i ka dividandiw ani san jatebɔ i ka nisɔngɔ dantigɛli kama.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

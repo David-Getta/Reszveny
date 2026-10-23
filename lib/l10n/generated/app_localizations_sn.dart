@@ -2769,6 +2769,13 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Tevera potiforiyo yako';
+
+  @override
+  String get onboardBody4 =>
+      'Pinza export yebroker wako (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kana kuti nyora zvawakatenga nezvawakatengesa nemaoko: ona pundutso yako ichienzaniswa neindex, madividendi ako uye pfupiso yegore yemushumo wako wemutero.';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

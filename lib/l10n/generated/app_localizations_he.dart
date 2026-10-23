@@ -2756,6 +2756,13 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'עקבו אחרי תיק ההשקעות';
+
+  @override
+  String get onboardBody4 =>
+      'ייבאו את קובץ הייצוא של הברוקר (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) או הוסיפו עסקאות ידנית: ראו את התשואה שלכם לצד מדד, את הדיבידנדים ואת הסיכום השנתי לדוח המס.';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

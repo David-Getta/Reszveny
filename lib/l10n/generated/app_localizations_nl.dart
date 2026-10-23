@@ -2767,6 +2767,13 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Volg je portefeuille';
+
+  @override
+  String get onboardBody4 =>
+      'Importeer de export van je broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) of voer transacties handmatig in: zie je rendement naast een index, je dividenden en een jaaroverzicht voor je belastingaangifte.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

@@ -2760,6 +2760,13 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Портфеліңізді бақылаңыз';
+
+  @override
+  String get onboardBody4 =>
+      'Брокеріңіздің экспортын импорттаңыз (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) немесе операцияларды қолмен қосыңыз: кірістілігіңізді индекспен салыстыра, дивидендтеріңізді және салық декларациясына арналған жылдық қорытындыны көріңіз.';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

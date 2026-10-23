@@ -2762,6 +2762,13 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Rũmĩrĩra hisa ciaku';
+
+  @override
+  String get onboardBody4 =>
+      'Rehe export ya broker waku (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kana wandĩke ũgũri na ũendia na guoko: ona uumithio waku ũgĩgerekanio na index, mĩgai yaku ya faida na ũhoro mũkuhĩ wa mwaka nĩ ũndũ wa ũhoro wa igooti.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

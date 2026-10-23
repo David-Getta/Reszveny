@@ -2641,6 +2641,13 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => '追踪你的投资组合';
+
+  @override
+  String get onboardBody4 =>
+      '导入券商的导出文件（Revolut、Trading 212、IBKR、DEGIRO、Schwab…），或手动添加交易：查看与指数对比的收益率、你的股息，以及可用于报税的年度汇总。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5649,6 +5656,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String lotToCash(String amount) {
     return '撥入現金（現時 $amount）';
   }
+
+  @override
+  String get onboardTitle4 => '追蹤你的投資組合';
+
+  @override
+  String get onboardBody4 =>
+      '匯入經紀商的匯出檔案（Revolut、Trading 212、IBKR、DEGIRO、Schwab…），或手動新增交易：查看與指數比較的回報率、你的股息，以及可用於報稅的年度摘要。';
 
   @override
   String get portfolioGoalSet => '設定目標';

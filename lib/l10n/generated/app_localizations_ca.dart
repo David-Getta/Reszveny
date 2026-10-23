@@ -2771,6 +2771,13 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Segueix la teva cartera';
+
+  @override
+  String get onboardBody4 =>
+      'Importa l\'exportació del teu bròquer (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o afegeix operacions a mà: mira la teva rendibilitat comparada amb un índex, els teus dividends i un resum anual per a la declaració d\'impostos.';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

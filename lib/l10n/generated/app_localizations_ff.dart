@@ -2756,6 +2756,13 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Jokku aksiyoŋ maa';
+
+  @override
+  String get onboardBody4 =>
+      'Naatnu export broker maa (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) walla ɓeydu soodgol e yeeyugol e junngo: yiy nafoore maa e fondaade e indeks, dividende maa e ciimtol hitaande ngam deftere lempo maa.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

@@ -826,5 +826,7 @@
   "positionHeldSince": "{date} ਤੋਂ",
   "lotPreviewWeight": "ਬਾਅਦ ਵਿੱਚ ਪੋਰਟਫ਼ੋਲੀਓ ਵਿੱਚ ਹਿੱਸਾ: {after} (ਹੁਣ {before})",
   "lotFromCash": "ਨਕਦ ਵਿੱਚੋਂ ਭੁਗਤਾਨ ਕਰੋ (ਹੁਣ {amount})",
-  "lotToCash": "ਨਕਦ ਵਿੱਚ ਜੋੜੋ (ਹੁਣ {amount})"
+  "lotToCash": "ਨਕਦ ਵਿੱਚ ਜੋੜੋ (ਹੁਣ {amount})",
+  "onboardTitle4": "ਆਪਣੇ ਪੋਰਟਫ਼ੋਲੀਓ 'ਤੇ ਨਜ਼ਰ ਰੱਖੋ",
+  "onboardBody4": "ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੀ ਐਕਸਪੋਰਟ ਫਾਈਲ ਇੰਪੋਰਟ ਕਰੋ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ਜਾਂ ਲੈਣ-ਦੇਣ ਹੱਥੀਂ ਸ਼ਾਮਲ ਕਰੋ: ਕਿਸੇ ਇੰਡੈਕਸ ਦੇ ਮੁਕਾਬਲੇ ਆਪਣਾ ਰਿਟਰਨ, ਆਪਣੇ ਡਿਵੀਡੈਂਡ ਅਤੇ ਟੈਕਸ ਰਿਟਰਨ ਲਈ ਸਾਲਾਨਾ ਸਾਰ ਵੇਖੋ।"
 }

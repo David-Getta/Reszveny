@@ -2767,6 +2767,13 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Kpɔ wò akpawo dzi';
+
+  @override
+  String get onboardBody4 =>
+      'Tsɔ wò broker ƒe export vɛ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) alo tsɔ asi ŋlɔ wò nuƒeƒle kple nudzadzrawo: kpɔ wò viɖe le index aɖe gbɔ, wò dividendwo kple ƒe ƒe ƒuƒoƒo na wò adzɔxexe ŋuti nyatakaka.';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

@@ -2769,6 +2769,13 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Subaybayan ang iyong portfolio';
+
+  @override
+  String get onboardBody4 =>
+      'I-import ang export ng iyong broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o idagdag nang manu-mano ang mga transaksyon: tingnan ang iyong kita katabi ng isang index, ang iyong mga dibidendo at taunang buod para sa iyong tax return.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

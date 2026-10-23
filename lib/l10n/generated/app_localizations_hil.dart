@@ -2778,6 +2778,13 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Bantayi ang imo portfolio';
+
+  @override
+  String get onboardBody4 =>
+      'I-import ang export sang imo broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ukon idugang sa kamot ang mga transaksyon: tan-awa ang imo kita tupad sa isa ka index, ang imo mga dibidendo kag tinuig nga sumaryo para sa imo tax return.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

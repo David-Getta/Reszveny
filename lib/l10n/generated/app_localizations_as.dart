@@ -2759,6 +2759,13 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'আপোনাৰ প\'ৰ্টফ\'লিঅ\'ৰ ওপৰত চকু ৰাখক';
+
+  @override
+  String get onboardBody4 =>
+      'আপোনাৰ ব্ৰ\'কাৰৰ এক্সপোৰ্ট আমদানি কৰক (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) বা লেনদেনসমূহ হাতে যোগ কৰক: এটা সূচকাংকৰ সৈতে তুলনা কৰি আপোনাৰ ৰিটাৰ্ণ, আপোনাৰ লাভাংশ আৰু কৰ ৰিটাৰ্ণৰ বাবে বাৰ্ষিক সাৰাংশ চাওক।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

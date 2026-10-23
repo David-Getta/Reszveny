@@ -2783,6 +2783,13 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Landzelela phothifoliyo ya wena';
+
+  @override
+  String get onboardBody4 =>
+      'Nghenisa fayili ya export ya broker wa wena (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kumbe u engetela swixaviwa ni swixavisiwa hi voko: vona mbuyelo wa wena loko wu pimanisiwa na index, tidividende ta wena ni nkatsakanyo wa lembe eka xiviko xa wena xa xibalo.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

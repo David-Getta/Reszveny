@@ -2782,6 +2782,13 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Bantayam ti portfolio-m';
+
+  @override
+  String get onboardBody4 =>
+      'I-import ti export ti broker-mo (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) wenno inayon dagiti transaksion babaen ti ima: kitaem ti ganansiam iti abay ti maysa nga index, dagiti dibidendom ken tinawen a pakabuklan para iti tax return-mo.';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

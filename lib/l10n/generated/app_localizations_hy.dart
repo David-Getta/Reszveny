@@ -2770,6 +2770,13 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Հետևեք ձեր պորտֆելին';
+
+  @override
+  String get onboardBody4 =>
+      'Ներմուծեք ձեր բրոքերի արտահանումը (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) կամ ավելացրեք գործարքները ձեռքով՝ տեսեք ձեր եկամտաբերությունը ինդեքսի համեմատ, ձեր շահաբաժինները և տարեկան ամփոփումը հարկային հայտարարագրի համար։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

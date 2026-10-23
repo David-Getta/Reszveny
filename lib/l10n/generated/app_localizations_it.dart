@@ -2767,6 +2767,13 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Segui il tuo portafoglio';
+
+  @override
+  String get onboardBody4 =>
+      'Importa l’esportazione del tuo broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o aggiungi le operazioni a mano: vedi il tuo rendimento accanto a un indice, i tuoi dividendi e un riepilogo annuale per la dichiarazione dei redditi.';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

@@ -2765,6 +2765,13 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Volg jou portefeulje';
+
+  @override
+  String get onboardBody4 =>
+      'Voer jou makelaar se uitvoer in (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) of voeg transaksies met die hand by: sien jou opbrengs naas ’n indeks, jou dividende en ’n jaaroorsig vir jou belastingopgawe.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

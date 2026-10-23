@@ -2754,6 +2754,13 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Soro portfolio gị';
+
+  @override
+  String get onboardBody4 =>
+      'Bubata export nke broker gị (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ma ọ bụ tinye azụmahịa n\'aka: hụ uru gị n\'akụkụ otu ndeksi, nkesa uru gị na nchịkọta afọ maka akụkọ ụtụ isi gị.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

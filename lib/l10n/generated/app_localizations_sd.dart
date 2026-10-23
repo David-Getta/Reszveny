@@ -2751,6 +2751,13 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'پنهنجي پورٽ فوليو تي نظر رکو';
+
+  @override
+  String get onboardBody4 =>
+      'پنهنجي بروڪر جي ايڪسپورٽ فائل امپورٽ ڪريو (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) يا ليڻ دين هٿ سان شامل ڪريو: ڪنهن انڊيڪس جي ڀيٽ ۾ پنهنجو رٽرن، پنهنجا ڊيويڊنڊ ۽ ٽيڪس ريٽرن لاءِ سالياني خلاصو ڏسو.';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

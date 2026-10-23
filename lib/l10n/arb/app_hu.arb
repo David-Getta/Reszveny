@@ -727,6 +727,8 @@
   "lotPreviewWeight": "Súly a portfólióban ezután: {after} (most {before})",
   "lotFromCash": "Készpénzből fizetve (most {amount})",
   "lotToCash": "A készpénzhez adva (most {amount})",
+  "onboardTitle4": "Kövesd a portfóliódat",
+  "onboardBody4": "Importáld a brókered exportját (Revolut, Trading 212, IBKR, DEGIRO, Schwab…), vagy rögzítsd kézzel: látod a hozamot egy indexhez mérve, az osztalékokat és az adóbevalláshoz az éves összesítőt.",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

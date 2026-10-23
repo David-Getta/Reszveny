@@ -2676,6 +2676,13 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'ポートフォリオを管理';
+
+  @override
+  String get onboardBody4 =>
+      '証券会社のエクスポート（Revolut、Trading 212、IBKR、DEGIRO、Schwab…）を取り込むか、取引を手動で追加。指数と比べたリターン、配当、確定申告に使える年間サマリーを確認できます。';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

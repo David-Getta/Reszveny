@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.230)
+# Változásjegyzék (0.2.130 → 0.2.231)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -99,6 +99,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 
 ## Kipróbálás
 
+- A **bevezető** (első indítás) negyedik oldala a portfólió: import a brókerektől, hozam indexhez mérve, osztalék,
+  éves összesítő az adóbevalláshoz.
 - **Minta-portfólió** az üres portfólió oldalon: egy gombbal betölthető (vételek, eladás, jutalék, osztalékok, TBSZ-számla),
   egy gombbal eltávolítható; a saját tételek maradnak.
 

@@ -826,5 +826,7 @@
   "positionHeldSince": "kuva {date}",
   "lotPreviewWeight": "Igice mu ishoramari hanyuma: {after} (ubu {before})",
   "lotFromCash": "Riha ukoresheje amafaranga (ubu {amount})",
-  "lotToCash": "Ongera ku mafaranga (ubu {amount})"
+  "lotToCash": "Ongera ku mafaranga (ubu {amount})",
+  "onboardTitle4": "Kurikirana ishoramari ryawe",
+  "onboardBody4": "Injiza export ya broker wawe (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) canke wandike ivyo waguze n'ivyo wagurishije n'ukuboko: raba inyungu yawe ugereranije na index, amadividende yawe n'incamake y'umwaka ku bijanye n'imenyekanisha ry'ikori."
 }

@@ -826,5 +826,7 @@
   "positionHeldSince": "od {date}",
   "lotPreviewWeight": "Udział w portfelu po transakcji: {after} (obecnie {before})",
   "lotFromCash": "Zapłać z gotówki (obecnie {amount})",
-  "lotToCash": "Dodaj do gotówki (obecnie {amount})"
+  "lotToCash": "Dodaj do gotówki (obecnie {amount})",
+  "onboardTitle4": "Śledź swój portfel",
+  "onboardBody4": "Zaimportuj eksport od swojego brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) lub dodaj transakcje ręcznie: zobacz swoją stopę zwrotu na tle indeksu, dywidendy i podsumowanie roczne do zeznania podatkowego."
 }

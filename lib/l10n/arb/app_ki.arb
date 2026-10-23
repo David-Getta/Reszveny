@@ -826,5 +826,7 @@
   "positionHeldSince": "kuuma {date}",
   "lotPreviewWeight": "Gĩcunjĩ kĩa portfolio thuutha: {after} (rĩu {before})",
   "lotFromCash": "Rĩha na mbeca cia moko (rĩu {amount})",
-  "lotToCash": "Ongerera mbeca-inĩ cia moko (rĩu {amount})"
+  "lotToCash": "Ongerera mbeca-inĩ cia moko (rĩu {amount})",
+  "onboardTitle4": "Rũmĩrĩra hisa ciaku",
+  "onboardBody4": "Rehe export ya broker waku (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kana wandĩke ũgũri na ũendia na guoko: ona uumithio waku ũgĩgerekanio na index, mĩgai yaku ya faida na ũhoro mũkuhĩ wa mwaka nĩ ũndũ wa ũhoro wa igooti."
 }

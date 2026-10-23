@@ -826,5 +826,7 @@
   "positionHeldSince": "自{date}起",
   "lotPreviewWeight": "交易後佔投資組合比例：{after}（現時 {before}）",
   "lotFromCash": "從現金支付（現時 {amount}）",
-  "lotToCash": "撥入現金（現時 {amount}）"
+  "lotToCash": "撥入現金（現時 {amount}）",
+  "onboardTitle4": "追蹤你的投資組合",
+  "onboardBody4": "匯入經紀商的匯出檔案（Revolut、Trading 212、IBKR、DEGIRO、Schwab…），或手動新增交易：查看與指數比較的回報率、你的股息，以及可用於報稅的年度摘要。"
 }

@@ -826,5 +826,7 @@
   "positionHeldSince": "自{date}起",
   "lotPreviewWeight": "交易后占投资组合比例：{after}（当前 {before}）",
   "lotFromCash": "从现金支付（当前 {amount}）",
-  "lotToCash": "计入现金（当前 {amount}）"
+  "lotToCash": "计入现金（当前 {amount}）",
+  "onboardTitle4": "追踪你的投资组合",
+  "onboardBody4": "导入券商的导出文件（Revolut、Trading 212、IBKR、DEGIRO、Schwab…），或手动添加交易：查看与指数对比的收益率、你的股息，以及可用于报税的年度汇总。"
 }

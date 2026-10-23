@@ -2775,6 +2775,13 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Portafolioykita qhaway';
+
+  @override
+  String get onboardBody4 =>
+      'Brokerniykipa exportninta apamuy (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) utaq rantiykunata rantikuykunatapas makiwan yapay: rendimientoykita huk índicewan tupachisqata, dividendoykikunata, impuesto willakuyniykipaq watapa pisichaytapas qhaway.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

@@ -826,5 +826,7 @@
   "positionHeldSince": "mula noong {date}",
   "lotPreviewWeight": "Bahagi sa portfolio pagkatapos: {after} (ngayon {before})",
   "lotFromCash": "Magbayad mula sa cash (ngayon {amount})",
-  "lotToCash": "Idagdag sa cash (ngayon {amount})"
+  "lotToCash": "Idagdag sa cash (ngayon {amount})",
+  "onboardTitle4": "Subaybayan ang iyong portfolio",
+  "onboardBody4": "I-import ang export ng iyong broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o idagdag nang manu-mano ang mga transaksyon: tingnan ang iyong kita katabi ng isang index, ang iyong mga dibidendo at taunang buod para sa iyong tax return."
 }

@@ -826,5 +826,7 @@
   "positionHeldSince": "kemgbe {date}",
   "lotPreviewWeight": "Òkè na pọtụfoliyo mgbe e mesịrị: {after} (ugbu a {before})",
   "lotFromCash": "Kwụọ site na ego ka ego (ugbu a {amount})",
-  "lotToCash": "Tinye na ego ka ego (ugbu a {amount})"
+  "lotToCash": "Tinye na ego ka ego (ugbu a {amount})",
+  "onboardTitle4": "Soro portfolio gị",
+  "onboardBody4": "Bubata export nke broker gị (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ma ọ bụ tinye azụmahịa n'aka: hụ uru gị n'akụkụ otu ndeksi, nkesa uru gị na nchịkọta afọ maka akụkọ ụtụ isi gị."
 }

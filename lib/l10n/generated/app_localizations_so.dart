@@ -2770,6 +2770,13 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'La soco portfoliyahaaga';
+
+  @override
+  String get onboardBody4 =>
+      'Soo deji faylka dhoofinta ee broker-kaaga (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ama gacanta ku dar macaamilada: arag faa\'iidadaada marka la barbardhigo tusmo, faa\'iido-saamiyadaada iyo soo koobid sannadeed oo loogu talagalay canshuur celintaada.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

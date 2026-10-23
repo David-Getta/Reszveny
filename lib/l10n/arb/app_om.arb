@@ -826,5 +826,7 @@
   "positionHeldSince": "{date} irraa kaasee",
   "lotPreviewWeight": "Qooda poortfooliyoo booda: {after} (amma {before})",
   "lotFromCash": "Maallaqa callaa irraa kaffali (amma {amount})",
-  "lotToCash": "Maallaqa callaatti dabali (amma {amount})"
+  "lotToCash": "Maallaqa callaatti dabali (amma {amount})",
+  "onboardTitle4": "Poortfooliyoo kee hordofi",
+  "onboardBody4": "Faayilii ekspoortii birookerii keetii galchi (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) yookiin bittaa fi gurgurtaa harkaan dabali: bu'aa kee indeeksii tokko waliin wal bira qabamee, diviidendii kee fi cuunfaa waggaa gabaasa gibiraa keetiif ilaali."
 }

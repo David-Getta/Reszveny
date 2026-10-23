@@ -2752,6 +2752,13 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Toppal say aksiyoŋ';
+
+  @override
+  String get onboardBody4 =>
+      'Indil export bu sa broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) walla nga bind sa jënd ak sa jaay ak sa loxo: gis sa benefis bu ñu méngale ak benn indeks, say dividande ak tënkub at mi ngir sa déclaration lempo.';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

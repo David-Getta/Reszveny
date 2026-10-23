@@ -2767,6 +2767,13 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'మీ పోర్ట్‌ఫోలియోను ట్రాక్ చేయండి';
+
+  @override
+  String get onboardBody4 =>
+      'మీ బ్రోకర్ ఎక్స్‌పోర్ట్‌ను ఇంపోర్ట్ చేయండి (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) లేదా లావాదేవీలను మాన్యువల్‌గా జోడించండి: ఒక సూచీతో పోల్చిన మీ రాబడి, మీ డివిడెండ్లు మరియు పన్ను రిటర్న్ కోసం వార్షిక సారాంశాన్ని చూడండి.';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

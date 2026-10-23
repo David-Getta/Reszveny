@@ -2764,6 +2764,13 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Portfolyoya xwe bişopîne';
+
+  @override
+  String get onboardBody4 =>
+      'Eksporta brokerê xwe import bike (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) an danûstandinan bi destan lê zêde bike: qezenca xwe li gorî îndeksekê, dividendên xwe û kurteya salane ji bo daxuyaniya bacê bibîne.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

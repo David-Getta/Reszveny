@@ -2773,6 +2773,13 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Bantayi ang imong portfolio';
+
+  @override
+  String get onboardBody4 =>
+      'I-import ang export sa imong broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o idugang nga manwal ang mga transaksyon: tan-awa ang imong kita tupad sa usa ka index, ang imong mga dibidendo ug tinuig nga katingbanan para sa imong tax return.';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

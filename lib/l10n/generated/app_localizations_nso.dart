@@ -2780,6 +2780,13 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Latišiša photefolio ya gago';
+
+  @override
+  String get onboardBody4 =>
+      'Tsenya faele ya export ya broker ya gago (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) goba o oketše dithekišano ka seatla: bona poelo ya gago e bapetšwa le index, dividende tša gago le kakaretšo ya ngwaga bakeng sa pego ya gago ya motšhelo.';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

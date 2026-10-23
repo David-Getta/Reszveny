@@ -2763,6 +2763,13 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Portfeliňizi yzarlaň';
+
+  @override
+  String get onboardBody4 =>
+      'Brokeriňiziň eksportyny import ediň (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ýa-da amallary el bilen goşuň: girdejililigiňizi indeks bilen deňeşdirip, diwidendleriňizi we salgyt beýannamasy üçin ýyllyk jemlemäni görüň.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

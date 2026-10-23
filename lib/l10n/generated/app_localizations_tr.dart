@@ -2761,6 +2761,13 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Portföyünüzü takip edin';
+
+  @override
+  String get onboardBody4 =>
+      'Aracı kurumunuzun dışa aktarım dosyasını içe aktarın (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) veya işlemleri elle ekleyin: getirinizi bir endeksle karşılaştırmalı olarak, temettülerinizi ve vergi beyannameniz için yıllık özeti görün.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

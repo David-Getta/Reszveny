@@ -826,5 +826,7 @@
   "positionHeldSince": "ካብ {date} ጀሚሩ",
   "lotPreviewWeight": "ድሕሪ ግብይት ክፋል ፖርትፎሊዮ፦ {after} (ሕጂ {before})",
   "lotFromCash": "ካብ ጥረ ገንዘብ ክፈል (ሕጂ {amount})",
-  "lotToCash": "ናብ ጥረ ገንዘብ ወስኽ (ሕጂ {amount})"
+  "lotToCash": "ናብ ጥረ ገንዘብ ወስኽ (ሕጂ {amount})",
+  "onboardTitle4": "ፖርትፎሊዮኹም ተኸታተሉ",
+  "onboardBody4": "ናይ ብሮከርኩም ኤክስፖርት ኣእትዉ (Revolut፣ Trading 212፣ IBKR፣ DEGIRO፣ Schwab…) ወይ ልውውጣት ብኢድኩም ወስኹ፤ ምስ ኢንዴክስ ዝተነጻጸረ ትርፊኹም፣ ድቪደንድኩምን ንናይ ግብሪ መግለጺኹም ዓመታዊ ጽማቝን ርኣዩ።"
 }

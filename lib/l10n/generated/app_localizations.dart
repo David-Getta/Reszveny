@@ -4699,6 +4699,18 @@ abstract class AppLocalizations {
   /// **'Add to cash (now {amount})'**
   String lotToCash(String amount);
 
+  /// Onboarding slide 3 of 4 (between the AI analysis slide and the alerts slide): title about portfolio tracking.
+  ///
+  /// In en, this message translates to:
+  /// **'Track your portfolio'**
+  String get onboardTitle4;
+
+  /// Onboarding slide about portfolio tracking. Keep the broker names as they are.
+  ///
+  /// In en, this message translates to:
+  /// **'Import your broker\'s export (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) or add trades by hand: see your return next to an index, your dividends and an annual summary for your tax return.'**
+  String get onboardBody4;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

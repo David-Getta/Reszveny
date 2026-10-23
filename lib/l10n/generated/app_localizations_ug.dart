@@ -2764,6 +2764,13 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'مەبلەغ بىرىكمىڭىزنى ئىز قوغلاڭ';
+
+  @override
+  String get onboardBody4 =>
+      'دەللالىڭىزنىڭ ئېكسپورت ھۆججىتىنى ئىمپورت قىلىڭ (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) ياكى سودىلارنى قولدا قوشۇڭ: كۆرسەتكۈچ بىلەن سېلىشتۇرۇلغان پايدا نىسبىتىڭىز، دىۋىدېندلىرىڭىز ۋە باج دوكلاتى ئۈچۈن يىللىق خۇلاسىنى كۆرۈڭ.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

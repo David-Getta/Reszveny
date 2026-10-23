@@ -2763,6 +2763,13 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'چاودێری پۆرتفۆلیۆکەت بکە';
+
+  @override
+  String get onboardBody4 =>
+      'هەناردەی بڕۆکەرەکەت هاوردە بکە (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) یان مامەڵەکان بە دەست زیاد بکە: قازانجەکەت بە بەراورد لەگەڵ ئیندێکسێک، پشکی قازانجەکانت و پوختەی ساڵانە بۆ ڕاپۆرتی باج ببینە.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

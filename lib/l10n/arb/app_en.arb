@@ -2399,6 +2399,14 @@
       }
     }
   },
+  "onboardTitle4": "Track your portfolio",
+  "@onboardTitle4": {
+    "description": "Onboarding slide 3 of 4 (between the AI analysis slide and the alerts slide): title about portfolio tracking."
+  },
+  "onboardBody4": "Import your broker's export (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) or add trades by hand: see your return next to an index, your dividends and an annual summary for your tax return.",
+  "@onboardBody4": {
+    "description": "Onboarding slide about portfolio tracking. Keep the broker names as they are."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

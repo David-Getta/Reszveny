@@ -2837,6 +2837,13 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Стежте за портфелем';
+
+  @override
+  String get onboardBody4 =>
+      'Імпортуйте вивантаження від брокера (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) або додавайте операції вручну: дивіться дохідність порівняно з індексом, дивіденди й річний підсумок для податкової декларації.';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

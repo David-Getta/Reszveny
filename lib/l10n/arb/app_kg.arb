@@ -826,5 +826,7 @@
   "positionHeldSince": "banda {date}",
   "lotPreviewWeight": "Ndambu ya portfolio na nima: {after} (ntangu yai {before})",
   "lotFromCash": "Futa na mbongo ya maboko (ntangu yai {amount})",
-  "lotToCash": "Yika na mbongo ya maboko (ntangu yai {amount})"
+  "lotToCash": "Yika na mbongo ya maboko (ntangu yai {amount})",
+  "onboardTitle4": "Landa portefeuille na nge",
+  "onboardBody4": "Kotisa export ya broker na nge (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) to sonika kusumba ti kuteka na maboko: tala mbakulu na nge ti indice mosi, ba dividende na nge ye nkufi ya mvula sambu na mukanda ya mpaku."
 }

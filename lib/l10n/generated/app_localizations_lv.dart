@@ -2805,6 +2805,13 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Sekojiet savam portfelim';
+
+  @override
+  String get onboardBody4 =>
+      'Importējiet sava brokera eksportu (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) vai pievienojiet darījumus manuāli: redziet savu ienesīgumu līdzās indeksam, savas dividendes un gada kopsavilkumu nodokļu deklarācijai.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

@@ -2738,6 +2738,13 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'តាមដានផលប័ត្ររបស់អ្នក';
+
+  @override
+  String get onboardBody4 =>
+      'នាំចូលឯកសារនាំចេញពីឈ្មួញកណ្តាលរបស់អ្នក (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ឬបន្ថែមប្រតិបត្តិការដោយដៃ៖ មើលទិន្នផលរបស់អ្នកធៀបនឹងសន្ទស្សន៍មួយ ភាគលាភរបស់អ្នក និងសេចក្តីសង្ខេបប្រចាំឆ្នាំសម្រាប់ការប្រកាសពន្ធ។';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

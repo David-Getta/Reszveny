@@ -826,5 +826,7 @@
   "positionHeldSince": "nuo {date}",
   "lotPreviewWeight": "Portfelio dalis po sandorio: {after} (dabar {before})",
   "lotFromCash": "Mokėti iš grynųjų (dabar {amount})",
-  "lotToCash": "Pridėti prie grynųjų (dabar {amount})"
+  "lotToCash": "Pridėti prie grynųjų (dabar {amount})",
+  "onboardTitle4": "Stebėkite savo portfelį",
+  "onboardBody4": "Importuokite savo brokerio eksportą (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) arba pridėkite sandorius ranka: matykite savo grąžą šalia indekso, dividendus ir metinę suvestinę mokesčių deklaracijai."
 }

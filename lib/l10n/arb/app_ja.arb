@@ -826,5 +826,7 @@
   "positionHeldSince": "{date}から",
   "lotPreviewWeight": "取引後のポートフォリオ比率：{after}（現在 {before}）",
   "lotFromCash": "現金から支払う（現在 {amount}）",
-  "lotToCash": "現金に加える（現在 {amount}）"
+  "lotToCash": "現金に加える（現在 {amount}）",
+  "onboardTitle4": "ポートフォリオを管理",
+  "onboardBody4": "証券会社のエクスポート（Revolut、Trading 212、IBKR、DEGIRO、Schwab…）を取り込むか、取引を手動で追加。指数と比べたリターン、配当、確定申告に使える年間サマリーを確認できます。"
 }

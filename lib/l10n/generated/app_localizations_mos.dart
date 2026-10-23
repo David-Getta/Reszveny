@@ -2746,6 +2746,13 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Gũus y portfey';
+
+  @override
+  String get onboardBody4 =>
+      'Kẽes y broker-ã export (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) bɩ y gʋls y raaba la koosgo ne y nug: ges y nafa ne indɛks a yembre, y dividand la yʋʋmd fãa sõdbo lampo sebrã yĩnga.';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

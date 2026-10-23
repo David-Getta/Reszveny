@@ -2755,6 +2755,13 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'તમારા પોર્ટફોલિયો પર નજર રાખો';
+
+  @override
+  String get onboardBody4 =>
+      'તમારા બ્રોકરનું એક્સપોર્ટ ઇમ્પોર્ટ કરો (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) અથવા વ્યવહારો હાથે ઉમેરો: કોઈ ઇન્ડેક્સની સાથે તમારું રિટર્ન, તમારા ડિવિડન્ડ અને ટેક્સ રિટર્ન માટે વાર્ષિક સારાંશ જુઓ.';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

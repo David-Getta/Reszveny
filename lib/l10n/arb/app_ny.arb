@@ -826,5 +826,7 @@
   "positionHeldSince": "kuyambira {date}",
   "lotPreviewWeight": "Gawo la potifoliyo pambuyo pake: {after} (pano {before})",
   "lotFromCash": "Lipirani kuchokera ku ndalama (pano {amount})",
-  "lotToCash": "Onjezani ku ndalama (pano {amount})"
+  "lotToCash": "Onjezani ku ndalama (pano {amount})",
+  "onboardTitle4": "Tsatirani masheya anu",
+  "onboardBody4": "Tengani fayilo ya export ya broker wanu (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kapena lowetsani zogula ndi zogulitsa pamanja: onani phindu lanu poyerekeza ndi index, madividendi anu ndi chidule cha pachaka cha msonkho wanu."
 }

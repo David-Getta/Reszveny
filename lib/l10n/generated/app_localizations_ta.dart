@@ -2772,6 +2772,13 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'உங்கள் போர்ட்ஃபோலியோவைக் கண்காணியுங்கள்';
+
+  @override
+  String get onboardBody4 =>
+      'உங்கள் புரோக்கரின் ஏற்றுமதி கோப்பை இறக்குமதி செய்யுங்கள் (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) அல்லது பரிவர்த்தனைகளைக் கைமுறையாகச் சேருங்கள்: ஒரு குறியீட்டுடன் ஒப்பிட்ட உங்கள் வருமானம், ஈவுத்தொகைகள் மற்றும் வரி தாக்கலுக்கான ஆண்டுச் சுருக்கத்தைப் பாருங்கள்.';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

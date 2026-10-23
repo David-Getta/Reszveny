@@ -2757,6 +2757,13 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'سبد سهام خود را دنبال کنید';
+
+  @override
+  String get onboardBody4 =>
+      'فایل خروجی کارگزارتان را وارد کنید (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) یا معاملات را دستی اضافه کنید: بازده خود را در کنار یک شاخص، سود سهامتان و خلاصه سالانه برای اظهارنامه مالیاتی ببینید.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

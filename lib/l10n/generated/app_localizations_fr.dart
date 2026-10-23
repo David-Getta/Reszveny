@@ -2773,6 +2773,13 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Suivez votre portefeuille';
+
+  @override
+  String get onboardBody4 =>
+      'Importez l’export de votre courtier (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ou ajoutez vos transactions à la main : voyez votre rendement face à un indice, vos dividendes et un récapitulatif annuel pour votre déclaration d’impôts.';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

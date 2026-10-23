@@ -2763,6 +2763,13 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Портфелиңизди көзөмөлдөңүз';
+
+  @override
+  String get onboardBody4 =>
+      'Брокериңиздин экспортун импорттоңуз (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) же транзакцияларды кол менен кошуңуз: кирешелүүлүгүңүздү индекс менен салыштырып, дивиденддериңизди жана салык декларациясы үчүн жылдык корутундуну көрүңүз.';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

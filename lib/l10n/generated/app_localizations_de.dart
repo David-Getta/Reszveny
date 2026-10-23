@@ -2775,6 +2775,13 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Behalte dein Portfolio im Blick';
+
+  @override
+  String get onboardBody4 =>
+      'Importiere den Export deines Brokers (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) oder trage Käufe und Verkäufe von Hand ein: Sieh deine Rendite im Vergleich zu einem Index, deine Dividenden und eine Jahresübersicht für die Steuererklärung.';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

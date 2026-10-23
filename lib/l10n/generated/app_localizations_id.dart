@@ -2756,6 +2756,13 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Pantau portofolio Anda';
+
+  @override
+  String get onboardBody4 =>
+      'Impor ekspor dari broker Anda (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) atau tambahkan transaksi secara manual: lihat imbal hasil Anda dibandingkan indeks, dividen Anda, dan ringkasan tahunan untuk pelaporan pajak.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

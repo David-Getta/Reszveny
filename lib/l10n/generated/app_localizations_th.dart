@@ -2727,6 +2727,13 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'ติดตามพอร์ตโฟลิโอของคุณ';
+
+  @override
+  String get onboardBody4 =>
+      'นำเข้าไฟล์ส่งออกจากโบรกเกอร์ของคุณ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) หรือเพิ่มรายการซื้อขายด้วยตนเอง ดูผลตอบแทนของคุณเทียบกับดัชนี เงินปันผล และสรุปรายปีสำหรับการยื่นภาษี';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

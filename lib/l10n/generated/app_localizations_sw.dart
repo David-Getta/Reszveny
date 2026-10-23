@@ -2763,6 +2763,13 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Fuatilia jalada lako la hisa';
+
+  @override
+  String get onboardBody4 =>
+      'Leta faili la broker wako (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) au ongeza miamala kwa mkono: ona faida yako ikilinganishwa na fahirisi, gawio lako na muhtasari wa mwaka kwa ripoti yako ya kodi.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

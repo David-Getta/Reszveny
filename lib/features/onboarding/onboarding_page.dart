@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 
-/// Az első indításkor egyszer: három rövid oldal arról, mire jó az app
-/// (lefotózott részvény → adatok, AI-elemzés forgatókönyvekkel, kedvencek,
-/// portfólió és riasztások). Átugorható; a végén a keresőhöz visz.
+/// Az első indításkor egyszer: négy rövid oldal arról, mire jó az app
+/// (lefotózott részvény → adatok, AI-elemzés forgatókönyvekkel, portfólió,
+/// kedvencek és riasztások). Átugorható; a végén a keresőhöz visz.
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key, required this.onDone});
 
@@ -19,6 +19,11 @@ class _OnboardingPageState extends State<OnboardingPage> {
   final _pages = PageController();
   int _index = 0;
 
+  /// Az oldalak száma (a [build] diáival egyezik).
+  static const _count = 4;
+
+  bool get _last => _index == _count - 1;
+
   @override
   void dispose() {
     _pages.dispose();
@@ -26,7 +31,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
   }
 
   void _next() {
-    if (_index == 2) {
+    if (_last) {
       widget.onDone();
       return;
     }
@@ -40,8 +45,11 @@ class _OnboardingPageState extends State<OnboardingPage> {
     final slides = [
       (Icons.photo_camera_rounded, l10n.onboardTitle1, l10n.onboardBody1),
       (Icons.auto_awesome_rounded, l10n.onboardTitle2, l10n.onboardBody2),
+      // A portfólió: import a brókerektől, hozam az indexhez mérve, osztalék, adó-összesítő.
+      (Icons.pie_chart_outline_rounded, l10n.onboardTitle4, l10n.onboardBody4),
       (Icons.notifications_active_rounded, l10n.onboardTitle3, l10n.onboardBody3),
     ];
+    assert(slides.length == _count);
     return Scaffold(
       key: const ValueKey('onboarding'),
       body: SafeArea(
@@ -92,7 +100,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       key: const ValueKey('onboarding-next'),
                       onPressed: _next,
                       style: FilledButton.styleFrom(padding: const EdgeInsets.symmetric(vertical: 14)),
-                      child: Text(_index == 2 ? l10n.onboardStart : l10n.onboardNext),
+                      child: Text(_last ? l10n.onboardStart : l10n.onboardNext),
                     ),
                   ),
                 ),

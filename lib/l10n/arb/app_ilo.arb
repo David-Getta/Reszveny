@@ -826,5 +826,7 @@
   "positionHeldSince": "manipud {date}",
   "lotPreviewWeight": "Paset ti portfolio kalpasanna: {after} (ita {before})",
   "lotFromCash": "Agbayad manipud iti cash (ita {amount})",
-  "lotToCash": "Inayon iti cash (ita {amount})"
+  "lotToCash": "Inayon iti cash (ita {amount})",
+  "onboardTitle4": "Bantayam ti portfolio-m",
+  "onboardBody4": "I-import ti export ti broker-mo (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) wenno inayon dagiti transaksion babaen ti ima: kitaem ti ganansiam iti abay ti maysa nga index, dagiti dibidendom ken tinawen a pakabuklan para iti tax return-mo."
 }

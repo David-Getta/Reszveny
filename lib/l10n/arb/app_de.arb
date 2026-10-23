@@ -826,5 +826,7 @@
   "positionHeldSince": "seit {date}",
   "lotPreviewWeight": "Anteil am Portfolio danach: {after} (bisher {before})",
   "lotFromCash": "Aus Cash bezahlen (bisher {amount})",
-  "lotToCash": "Zum Cash hinzufügen (bisher {amount})"
+  "lotToCash": "Zum Cash hinzufügen (bisher {amount})",
+  "onboardTitle4": "Behalte dein Portfolio im Blick",
+  "onboardBody4": "Importiere den Export deines Brokers (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) oder trage Käufe und Verkäufe von Hand ein: Sieh deine Rendite im Vergleich zu einem Index, deine Dividenden und eine Jahresübersicht für die Steuererklärung."
 }

@@ -2766,6 +2766,13 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Kövesd a portfóliódat';
+
+  @override
+  String get onboardBody4 =>
+      'Importáld a brókered exportját (Revolut, Trading 212, IBKR, DEGIRO, Schwab…), vagy rögzítsd kézzel: látod a hozamot egy indexhez mérve, az osztalékokat és az adóbevalláshoz az éves összesítőt.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

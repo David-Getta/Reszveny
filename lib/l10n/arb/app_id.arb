@@ -826,5 +826,7 @@
   "positionHeldSince": "sejak {date}",
   "lotPreviewWeight": "Porsi di portofolio setelahnya: {after} (saat ini {before})",
   "lotFromCash": "Bayar dari kas (saat ini {amount})",
-  "lotToCash": "Tambahkan ke kas (saat ini {amount})"
+  "lotToCash": "Tambahkan ke kas (saat ini {amount})",
+  "onboardTitle4": "Pantau portofolio Anda",
+  "onboardBody4": "Impor ekspor dari broker Anda (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) atau tambahkan transaksi secara manual: lihat imbal hasil Anda dibandingkan indeks, dividen Anda, dan ringkasan tahunan untuk pelaporan pajak."
 }

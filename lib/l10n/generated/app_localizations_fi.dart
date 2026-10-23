@@ -2762,6 +2762,13 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Seuraa salkkuasi';
+
+  @override
+  String get onboardBody4 =>
+      'Tuo välittäjäsi vientitiedosto (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) tai lisää kaupat käsin: näet tuottosi indeksin rinnalla, osinkosi ja vuosiyhteenvedon veroilmoitusta varten.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

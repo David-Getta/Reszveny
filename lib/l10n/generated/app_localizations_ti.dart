@@ -2723,6 +2723,13 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'ፖርትፎሊዮኹም ተኸታተሉ';
+
+  @override
+  String get onboardBody4 =>
+      'ናይ ብሮከርኩም ኤክስፖርት ኣእትዉ (Revolut፣ Trading 212፣ IBKR፣ DEGIRO፣ Schwab…) ወይ ልውውጣት ብኢድኩም ወስኹ፤ ምስ ኢንዴክስ ዝተነጻጸረ ትርፊኹም፣ ድቪደንድኩምን ንናይ ግብሪ መግለጺኹም ዓመታዊ ጽማቝን ርኣዩ።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

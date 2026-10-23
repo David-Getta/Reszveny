@@ -2732,6 +2732,13 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'ຕິດຕາມພອດໂຟລິໂອຂອງທ່ານ';
+
+  @override
+  String get onboardBody4 =>
+      'ນຳເຂົ້າໄຟລ໌ສົ່ງອອກຈາກໂບຣກເກີຂອງທ່ານ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ຫຼື ເພີ່ມທຸລະກຳດ້ວຍຕົນເອງ: ເບິ່ງຜົນຕອບແທນຂອງທ່ານທຽບກັບດັດຊະນີ, ເງິນປັນຜົນ ແລະ ສະຫຼຸບປະຈຳປີສຳລັບການຍື່ນພາສີ.';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

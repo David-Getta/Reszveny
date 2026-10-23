@@ -2762,6 +2762,13 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Portfelinizi izləyin';
+
+  @override
+  String get onboardBody4 =>
+      'Brokerinizin ixrac faylını idxal edin (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) və ya əməliyyatları əl ilə əlavə edin: gəlirliliyinizi indekslə müqayisədə, dividendlərinizi və vergi bəyannaməsi üçün illik xülasəni görün.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

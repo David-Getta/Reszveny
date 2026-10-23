@@ -2761,6 +2761,13 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'ადევნეთ თვალი თქვენს პორტფელს';
+
+  @override
+  String get onboardBody4 =>
+      'შემოიტანეთ თქვენი ბროკერის ექსპორტი (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ან ხელით დაამატეთ გარიგებები: ნახეთ თქვენი შემოსავლიანობა ინდექსთან შედარებით, დივიდენდები და წლიური შეჯამება საგადასახადო დეკლარაციისთვის.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

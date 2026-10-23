@@ -2771,6 +2771,13 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Tsatirani masheya anu';
+
+  @override
+  String get onboardBody4 =>
+      'Tengani fayilo ya export ya broker wanu (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kapena lowetsani zogula ndi zogulitsa pamanja: onani phindu lanu poyerekeza ndi index, madividendi anu ndi chidule cha pachaka cha msonkho wanu.';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

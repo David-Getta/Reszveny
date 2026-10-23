@@ -826,5 +826,7 @@
   "positionHeldSince": "{date} سے",
   "lotPreviewWeight": "بعد میں پورٹ فولیو میں حصہ: {after} (فی الحال {before})",
   "lotFromCash": "نقد سے ادائیگی کریں (فی الحال {amount})",
-  "lotToCash": "نقد میں شامل کریں (فی الحال {amount})"
+  "lotToCash": "نقد میں شامل کریں (فی الحال {amount})",
+  "onboardTitle4": "اپنے پورٹ فولیو پر نظر رکھیں",
+  "onboardBody4": "اپنے بروکر کی ایکسپورٹ فائل امپورٹ کریں (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) یا لین دین ہاتھ سے شامل کریں: کسی انڈیکس کے مقابلے میں اپنا ریٹرن، اپنے ڈیویڈنڈ اور ٹیکس ریٹرن کے لیے سالانہ خلاصہ دیکھیں۔"
 }

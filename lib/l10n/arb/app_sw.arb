@@ -826,5 +826,7 @@
   "positionHeldSince": "tangu {date}",
   "lotPreviewWeight": "Sehemu katika jalada la hisa baadaye: {after} (sasa {before})",
   "lotFromCash": "Lipa kutoka pesa taslimu (sasa {amount})",
-  "lotToCash": "Ongeza kwenye pesa taslimu (sasa {amount})"
+  "lotToCash": "Ongeza kwenye pesa taslimu (sasa {amount})",
+  "onboardTitle4": "Fuatilia jalada lako la hisa",
+  "onboardBody4": "Leta faili la broker wako (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) au ongeza miamala kwa mkono: ona faida yako ikilinganishwa na fahirisi, gawio lako na muhtasari wa mwaka kwa ripoti yako ya kodi."
 }

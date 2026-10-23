@@ -2773,6 +2773,13 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Landela iphothifoliyo yakho';
+
+  @override
+  String get onboardBody4 =>
+      'Ngenisa i-export ye-broker yakho (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) noma wengeze ukuthenga nokuthengisa ngesandla: bona inzuzo yakho uma iqhathaniswa ne-index, izabelo zakho zenzuzo nesifinyezo sonyaka sombiko wakho wentela.';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

@@ -826,5 +826,7 @@
   "positionHeldSince": "depuis le {date}",
   "lotPreviewWeight": "Poids dans le portefeuille après l’opération : {after} (actuellement {before})",
   "lotFromCash": "Payer avec les liquidités (actuellement {amount})",
-  "lotToCash": "Ajouter aux liquidités (actuellement {amount})"
+  "lotToCash": "Ajouter aux liquidités (actuellement {amount})",
+  "onboardTitle4": "Suivez votre portefeuille",
+  "onboardBody4": "Importez l’export de votre courtier (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ou ajoutez vos transactions à la main : voyez votre rendement face à un indice, vos dividendes et un récapitulatif annuel pour votre déclaration d’impôts."
 }

@@ -2837,6 +2837,13 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Śledź swój portfel';
+
+  @override
+  String get onboardBody4 =>
+      'Zaimportuj eksport od swojego brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) lub dodaj transakcje ręcznie: zobacz swoją stopę zwrotu na tle indeksu, dywidendy i podsumowanie roczne do zeznania podatkowego.';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

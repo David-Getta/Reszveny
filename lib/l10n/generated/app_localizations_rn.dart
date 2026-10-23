@@ -2770,6 +2770,13 @@ class AppLocalizationsRn extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Kurikirana ishoramari ryawe';
+
+  @override
+  String get onboardBody4 =>
+      'Injiza export ya broker wawe (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) canke wandike ivyo waguze n\'ivyo wagurishije n\'ukuboko: raba inyungu yawe ugereranije na index, amadividende yawe n\'incamake y\'umwaka ku bijanye n\'imenyekanisha ry\'ikori.';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

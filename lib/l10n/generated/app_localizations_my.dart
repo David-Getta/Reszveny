@@ -2751,6 +2751,13 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'သင့်ပေါ့ဖိုလီယိုကို စောင့်ကြည့်ပါ';
+
+  @override
+  String get onboardBody4 =>
+      'သင့်ဘရိုကာ၏ export ဖိုင်ကို တင်သွင်းပါ (Revolut၊ Trading 212၊ IBKR၊ DEGIRO၊ Schwab…) သို့မဟုတ် အရောင်းအဝယ်များကို ကိုယ်တိုင်ထည့်ပါ။ အညွှန်းကိန်းတစ်ခုနှင့် နှိုင်းယှဉ်ထားသော သင့်အမြတ်နှုန်း၊ အမြတ်ဝေစုများနှင့် အခွန်ဆောင်ရန်အတွက် နှစ်ပတ်လည် အနှစ်ချုပ်ကို ကြည့်ရှုနိုင်ပါသည်။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

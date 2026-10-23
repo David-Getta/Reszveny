@@ -826,5 +826,7 @@
   "positionHeldSince": "hatramin'ny {date}",
   "lotPreviewWeight": "Anjara ao amin'ny kitapom-bola aorian'izay: {after} (amin'izao {before})",
   "lotFromCash": "Handoa avy amin'ny vola (amin'izao {amount})",
-  "lotToCash": "Hanampy amin'ny vola (amin'izao {amount})"
+  "lotToCash": "Hanampy amin'ny vola (amin'izao {amount})",
+  "onboardTitle4": "Araho maso ny kitapom-bolanao",
+  "onboardBody4": "Ampidiro ny fanondranana avy amin'ny broker-nao (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) na ampio tanana ny fividianana sy fivarotana: jereo ny tombonao raha ampitahaina amin'ny index iray, ny dividandinao ary ny famintinana isan-taona ho an'ny fanambaranao hetra."
 }

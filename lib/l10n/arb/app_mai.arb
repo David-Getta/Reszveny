@@ -826,5 +826,7 @@
   "positionHeldSince": "{date}सँ",
   "lotPreviewWeight": "बादमे पोर्टफ़ोलियोमे हिस्सा: {after} (एखन {before})",
   "lotFromCash": "नकद सँ भुगतान करू (एखन {amount})",
-  "lotToCash": "नकद मे जोड़ू (एखन {amount})"
+  "lotToCash": "नकद मे जोड़ू (एखन {amount})",
+  "onboardTitle4": "अपन पोर्टफ़ोलियो पर नजरि राखू",
+  "onboardBody4": "अपन ब्रोकरक एक्सपोर्ट इम्पोर्ट करू (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) वा सौदा हाथसँ जोड़ू: कोनो इंडेक्सक तुलनामे अपन रिटर्न, अपन डिविडेंड आ कर रिटर्नक लेल वार्षिक सारांश देखू।"
 }

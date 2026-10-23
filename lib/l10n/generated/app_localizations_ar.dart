@@ -2830,6 +2830,13 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'تابع محفظتك';
+
+  @override
+  String get onboardBody4 =>
+      'استورد ملف التصدير من وسيطك (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) أو أضف صفقاتك يدويًا: شاهد عائدك مقارنةً بمؤشر، وتوزيعات أرباحك، وملخصًا سنويًا لإقرارك الضريبي.';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

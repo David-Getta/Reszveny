@@ -2836,6 +2836,13 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Spremljajte svoj portfelj';
+
+  @override
+  String get onboardBody4 =>
+      'Uvozite izvoz svojega borznega posrednika (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ali ročno dodajte posle: oglejte si svoj donos ob indeksu, dividende in letni povzetek za davčno napoved.';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

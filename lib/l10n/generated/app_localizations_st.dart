@@ -2778,6 +2778,13 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Latela potefolio ya hao';
+
+  @override
+  String get onboardBody4 =>
+      'Kenya faele ya export ya broker ya hao (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kapa o kenye ditheko le dithekiso ka letsoho: bona poelo ya hao ha e bapiswa le index, dividende tsa hao le kakaretso ya selemo bakeng sa tlaleho ya hao ya lekgetho.';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

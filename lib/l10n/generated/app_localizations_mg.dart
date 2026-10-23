@@ -2781,6 +2781,13 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Araho maso ny kitapom-bolanao';
+
+  @override
+  String get onboardBody4 =>
+      'Ampidiro ny fanondranana avy amin\'ny broker-nao (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) na ampio tanana ny fividianana sy fivarotana: jereo ny tombonao raha ampitahaina amin\'ny index iray, ny dividandinao ary ny famintinana isan-taona ho an\'ny fanambaranao hetra.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

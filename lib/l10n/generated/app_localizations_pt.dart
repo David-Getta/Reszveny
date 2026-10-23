@@ -2767,6 +2767,13 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'Acompanhe sua carteira';
+
+  @override
+  String get onboardBody4 =>
+      'Importe o extrato da sua corretora (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ou adicione operações manualmente: veja sua rentabilidade ao lado de um índice, seus dividendos e um resumo anual para a declaração de impostos.';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

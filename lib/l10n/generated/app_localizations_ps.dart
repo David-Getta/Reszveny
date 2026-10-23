@@ -2753,6 +2753,13 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'خپل پورټفولیو وڅارئ';
+
+  @override
+  String get onboardBody4 =>
+      'د خپل بروکر اکسپورټ وارد کړئ (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) یا راکړې ورکړې په لاس اضافه کړئ: د یوه شاخص په پرتله خپله ګټه، ډیویډنډونه او د مالیې د اظهارنامې لپاره کلنۍ لنډیز وګورئ.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

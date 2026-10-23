@@ -2758,6 +2758,13 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get onboardTitle4 => 'ඔබේ කළඹ නිරීක්ෂණය කරන්න';
+
+  @override
+  String get onboardBody4 =>
+      'ඔබේ බ්‍රෝකර්ගේ export ගොනුව import කරන්න (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) නැතහොත් ගනුදෙනු අතින් එක් කරන්න: දර්ශකයක් සමඟ සසඳමින් ඔබේ ප්‍රතිලාභය, ඔබේ ලාභාංශ සහ බදු වාර්තාව සඳහා වාර්ෂික සාරාංශය බලන්න.';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

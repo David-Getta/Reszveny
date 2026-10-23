@@ -826,5 +826,7 @@
   "positionHeldSince": "sedert {date}",
   "lotPreviewWeight": "Deel van die portefeulje daarna: {after} (tans {before})",
   "lotFromCash": "Betaal uit kontant (tans {amount})",
-  "lotToCash": "Voeg by kontant (tans {amount})"
+  "lotToCash": "Voeg by kontant (tans {amount})",
+  "onboardTitle4": "Volg jou portefeulje",
+  "onboardBody4": "Voer jou makelaar se uitvoer in (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) of voeg transaksies met die hand by: sien jou opbrengs naas ’n indeks, jou dividende en ’n jaaroorsig vir jou belastingopgawe."
 }

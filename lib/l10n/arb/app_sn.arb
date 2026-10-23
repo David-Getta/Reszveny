@@ -826,5 +826,7 @@
   "positionHeldSince": "kubvira {date}",
   "lotPreviewWeight": "Chikamu chepotifoliyo pashure: {after} (ikozvino {before})",
   "lotFromCash": "Bhadhara kubva pamari (ikozvino {amount})",
-  "lotToCash": "Wedzera kumari (ikozvino {amount})"
+  "lotToCash": "Wedzera kumari (ikozvino {amount})",
+  "onboardTitle4": "Tevera potiforiyo yako",
+  "onboardBody4": "Pinza export yebroker wako (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kana kuti nyora zvawakatenga nezvawakatengesa nemaoko: ona pundutso yako ichienzaniswa neindex, madividendi ako uye pfupiso yegore yemushumo wako wemutero."
 }

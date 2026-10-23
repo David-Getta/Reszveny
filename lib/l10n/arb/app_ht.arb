@@ -826,5 +826,7 @@
   "positionHeldSince": "depi {date}",
   "lotPreviewWeight": "Pòsyon nan pòtfèy la apre: {after} (kounye a {before})",
   "lotFromCash": "Peye ak lajan kach (kounye a {amount})",
-  "lotToCash": "Ajoute nan lajan kach (kounye a {amount})"
+  "lotToCash": "Ajoute nan lajan kach (kounye a {amount})",
+  "onboardTitle4": "Swiv pòtfèy ou",
+  "onboardBody4": "Enpòte ekspò koutye w la (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) oswa ajoute tranzaksyon yo alamen: wè rannman ou bò kote yon endèks, dividann ou yo ak yon rezime anyèl pou deklarasyon taks ou."
 }
