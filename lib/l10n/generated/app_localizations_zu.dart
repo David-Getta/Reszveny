@@ -324,7 +324,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'abahlaziyi abangu-$count',
-      one: 'umhlaziyi o-1',
+      one: 'umhlaziyi o-$count',
     );
     return '$_temp0';
   }
@@ -717,7 +717,7 @@ class AppLocalizationsZu extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Kusele izinsuku ezingu-$days zokuzama',
-      one: 'Kusele usuku olu-1 lokuzama',
+      one: 'Kusele usuku olu-$days lokuzama',
     );
     return '$_temp0';
   }
@@ -859,7 +859,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'isebenzisa izinhlaziyo ezingu-$count',
-      one: 'isebenzisa uhlaziyo olu-1',
+      one: 'isebenzisa uhlaziyo olu-$count',
     );
     return '$_temp0';
   }
@@ -895,7 +895,8 @@ class AppLocalizationsZu extends AppLocalizations {
       locale: localeName,
       other:
           'Ngohlelo lwakho ungasesha kuwebhu kuze kube izikhathi ezingu-$count ohlaziyweni ngalunye',
-      one: 'Ngohlelo lwakho ungasesha kuwebhu kanye ohlaziyweni ngalunye',
+      one:
+          'Ngohlelo lwakho ungasesha kuwebhu kuze kube isikhathi esingu-$count ohlaziyweni ngalunye',
     );
     return '$_temp0';
   }
@@ -911,7 +912,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'usesho lwewebhu kuze kube izikhathi ezingu-$count',
-      one: 'usesho lwewebhu kanye',
+      one: 'usesho lwewebhu kuze kube isikhathi esingu-$count',
     );
     return '$_temp0';
   }
@@ -922,7 +923,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Usesho lwewebhu izikhathi ezingu-$count ohlaziyweni ngalunye',
-      one: 'Usesho lwewebhu kanye ohlaziyweni ngalunye',
+      one: 'Usesho lwewebhu isikhathi esingu-$count ohlaziyweni ngalunye',
     );
     return '$_temp0';
   }
@@ -1082,7 +1083,7 @@ class AppLocalizationsZu extends AppLocalizations {
       years,
       locale: localeName,
       other: 'iminyaka engu-$years',
-      one: 'unyaka o-1',
+      one: 'unyaka o-$years',
     );
     return '$_temp0';
   }
@@ -1397,7 +1398,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'emahoreni angu-$count adlule',
-      one: 'ehoreni eli-1 eledlule',
+      one: 'ehoreni eli-$count eledlule',
     );
     return '$_temp0';
   }
@@ -1408,7 +1409,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ezinsukwini ezingu-$count ezedlule',
-      one: 'osukwini olu-1 oludlule',
+      one: 'osukwini olu-$count oludlule',
     );
     return '$_temp0';
   }
@@ -1472,7 +1473,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'izinhlaziyo ezengeziwe ezingu-$count',
-      one: 'uhlaziyo olulodwa olwengeziwe',
+      one: 'uhlaziyo olwengeziwe olungu-$count',
     );
     return 'Yabelana ngekhodi yakho. Umngane wakho uthola $_temp0 ngokushesha, nawe uthola okufanayo ngemuva kohlaziyo lwakhe lokuqala.';
   }
@@ -1497,7 +1498,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Kwengezwe izinhlaziyo ezingu-$count. Siyakwamukela!',
-      one: 'Kwengezwe uhlaziyo olulodwa. Siyakwamukela!',
+      one: 'Kwengezwe uhlaziyo olungu-$count. Siyakwamukela!',
     );
     return '$_temp0';
   }
@@ -1517,7 +1518,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'izinhlaziyo ezengeziwe ezingu-$count',
-      one: 'uhlaziyo olulodwa olwengeziwe',
+      one: 'uhlaziyo olwengeziwe olungu-$count',
     );
     return 'Ngihlaziya amasheya nge-WhatStock: thatha isithombe sesheya bese i-AI iyalichaza. Ngekhodi yami $code uthola $_temp0.';
   }
@@ -1636,7 +1637,7 @@ class AppLocalizationsZu extends AppLocalizations {
       days,
       locale: localeName,
       other: 'ngemva kwezinsuku ezingu-$days',
-      one: 'ngemva kosuku olu-1',
+      one: 'ngemva kosuku olu-$days',
     );
     return '$_temp0';
   }
@@ -1767,7 +1768,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Kweqiwe imigqa engu-$count',
-      one: 'Kweqiwe umugqa owodwa',
+      one: 'Kweqiwe umugqa ongu-$count',
     );
     return '$_temp0';
   }
@@ -2105,7 +2106,7 @@ class AppLocalizationsZu extends AppLocalizations {
       other:
           'Ilingana noma ingaphezu kwe-EPS elindelekile ku-$beats kumakota angu-$total okugcina',
       one:
-          'Ilingana noma ingaphezu kwe-EPS elindelekile ku-$beats kwikota engu-1',
+          'Ilingana noma ingaphezu kwe-EPS elindelekile ku-$beats kwikota engu-$total',
     );
     return '$_temp0';
   }
@@ -2172,7 +2173,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Engeza amasheya angu-$count',
-      one: 'Engeza isheya elilodwa',
+      one: 'Engeza isheya elingu-$count',
     );
     return '$_temp0';
   }
@@ -2226,7 +2227,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ukuthenga $count',
-      one: 'ukuthenga 1',
+      one: 'ukuthenga $count',
     );
     return '$_temp0';
   }
@@ -2237,7 +2238,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ukuthengisa $count',
-      one: 'ukuthengisa 1',
+      one: 'ukuthengisa $count',
     );
     return '$_temp0';
   }
@@ -2399,7 +2400,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Kusethwe izexwayiso ezingu-$count',
-      one: 'Kusethwe isexwayiso esisodwa',
+      one: 'Kusethwe isexwayiso esingu-$count',
     );
     return '$_temp0';
   }
@@ -2474,7 +2475,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Kwengezwe amasheya angu-$count',
-      one: 'Kwengezwe isheya elilodwa',
+      one: 'Kwengezwe isheya elingu-$count',
       zero: 'Awekho amasheya amasha',
     );
     return '$_temp0';
@@ -2676,7 +2677,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Kusethwe izexwayiso ezingu-$count',
-      one: 'Kusethwe isexwayiso esisodwa',
+      one: 'Kusethwe isexwayiso esingu-$count',
       zero: 'Isheya ngalinye selinaso lesi sexwayiso',
     );
     return '$_temp0';
@@ -2856,7 +2857,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Kususwe izexwayiso ezingu-$count',
-      one: 'Kususwe isexwayiso esisodwa',
+      one: 'Kususwe isexwayiso esingu-$count',
     );
     return '$_temp0';
   }
@@ -2992,7 +2993,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ukuhlukaniswa kwamasheya oku-$count kwengeziwe',
-      one: 'Ukuhlukaniswa kwamasheya oku-1 kwengeziwe',
+      one: 'Ukuhlukaniswa kwamasheya oku-$count kwengeziwe',
     );
     return '$_temp0';
   }
@@ -3003,7 +3004,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Izabelo zenzuzo ezi-$count zengeziwe',
-      one: 'Isabelo senzuzo esi-1 sengeziwe',
+      one: 'Isabelo senzuzo esi-$count sengeziwe',
     );
     return '$_temp0';
   }
@@ -3035,7 +3036,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Izexwayiso $count ziqalisiwe',
-      one: 'Isexwayiso 1 siqalisiwe',
+      one: 'Isexwayiso $count siqalisiwe',
     );
     return '$_temp0';
   }

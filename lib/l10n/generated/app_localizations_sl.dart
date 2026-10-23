@@ -2154,7 +2154,7 @@ class AppLocalizationsSl extends AppLocalizations {
       locale: localeName,
       other:
           'Enak ali višji od pričakovanega EPS v $beats od zadnjih $total četrtletij',
-      one: 'Enak ali višji od pričakovanega EPS v $beats od 1 četrtletja',
+      one: 'Enak ali višji od pričakovanega EPS v $beats od $total četrtletja',
     );
     return '$_temp0';
   }
@@ -3059,7 +3059,7 @@ class AppLocalizationsSl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Dodane delitve delnic: $count',
-      one: 'Dodana 1 delitev delnic',
+      one: 'Dodana $count delitev delnic',
     );
     return '$_temp0';
   }
@@ -3106,7 +3106,7 @@ class AppLocalizationsSl extends AppLocalizations {
       other: 'Sproženih $count opozoril',
       few: 'Sprožena $count opozorila',
       two: 'Sproženi $count opozorili',
-      one: 'Sproženo 1 opozorilo',
+      one: 'Sproženo $count opozorilo',
     );
     return '$_temp0';
   }

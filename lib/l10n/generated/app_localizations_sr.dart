@@ -2136,7 +2136,7 @@ class AppLocalizationsSr extends AppLocalizations {
           'На нивоу очекиваног EPS-а или изнад у $beats од последњих $total квартала',
       few:
           'На нивоу очекиваног EPS-а или изнад у $beats од последња $total квартала',
-      one: 'На нивоу очекиваног EPS-а или изнад у $beats од 1 квартала',
+      one: 'На нивоу очекиваног EPS-а или изнад у $beats од $total квартала',
     );
     return '$_temp0';
   }
@@ -3030,7 +3030,7 @@ class AppLocalizationsSr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Додато подела акција: $count',
-      one: 'Додата је 1 подела акција',
+      one: 'Додата је $count подела акција',
     );
     return '$_temp0';
   }

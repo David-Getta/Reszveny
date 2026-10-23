@@ -3059,7 +3059,7 @@ class AppLocalizationsRu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Добавлено сплитов акций: $count',
-      one: 'Добавлен 1 сплит акций',
+      one: 'Добавлен $count сплит акций',
     );
     return '$_temp0';
   }

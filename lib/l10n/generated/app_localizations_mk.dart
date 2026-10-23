@@ -2116,7 +2116,7 @@ class AppLocalizationsMk extends AppLocalizations {
       locale: localeName,
       other:
           'На или над очекуваниот EPS во $beats од последните $total квартали',
-      one: 'На или над очекуваниот EPS во $beats од 1 квартал',
+      one: 'На или над очекуваниот EPS во $beats од $total квартал',
     );
     return '$_temp0';
   }
@@ -2999,7 +2999,7 @@ class AppLocalizationsMk extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Додадени се $count поделби на акции',
-      one: 'Додадена е 1 поделба на акции',
+      one: 'Додадена е $count поделба на акции',
     );
     return '$_temp0';
   }
@@ -3010,7 +3010,7 @@ class AppLocalizationsMk extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Додадени се $count дивиденди',
-      one: 'Додадена е 1 дивиденда',
+      one: 'Додадена е $count дивиденда',
     );
     return '$_temp0';
   }
@@ -3042,7 +3042,7 @@ class AppLocalizationsMk extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Активирани $count аларми',
-      one: 'Активиран 1 аларм',
+      one: 'Активиран $count аларм',
     );
     return '$_temp0';
   }

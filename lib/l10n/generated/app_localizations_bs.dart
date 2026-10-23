@@ -2134,7 +2134,7 @@ class AppLocalizationsBs extends AppLocalizations {
       locale: localeName,
       other:
           'Na nivou očekivanog EPS-a ili iznad u $beats od posljednjih $total kvartala',
-      one: 'Na nivou očekivanog EPS-a ili iznad u $beats od 1 kvartala',
+      one: 'Na nivou očekivanog EPS-a ili iznad u $beats od $total kvartala',
     );
     return '$_temp0';
   }
@@ -3028,7 +3028,7 @@ class AppLocalizationsBs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Dodano je $count podjela dionica',
-      one: 'Dodana je 1 podjela dionica',
+      one: 'Dodana je $count podjela dionica',
     );
     return '$_temp0';
   }

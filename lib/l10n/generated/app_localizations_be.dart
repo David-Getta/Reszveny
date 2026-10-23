@@ -2150,7 +2150,7 @@ class AppLocalizationsBe extends AppLocalizations {
       locale: localeName,
       other:
           'На ўзроўні чаканага EPS або вышэй: $beats з апошніх $total кварталаў',
-      one: 'На ўзроўні чаканага EPS або вышэй: $beats з 1 квартала',
+      one: 'На ўзроўні чаканага EPS або вышэй: $beats з $total квартала',
     );
     return '$_temp0';
   }
@@ -3056,7 +3056,7 @@ class AppLocalizationsBe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Дададзена драбленняў акцый: $count',
-      one: 'Дададзена 1 дробленне акцый',
+      one: 'Дададзена $count дробленне акцый',
     );
     return '$_temp0';
   }

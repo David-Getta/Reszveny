@@ -323,7 +323,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count জন বিশ্লেষক',
-      one: '1 জন বিশ্লেষক',
+      one: '$count জন বিশ্লেষক',
     );
     return '$_temp0';
   }
@@ -712,7 +712,7 @@ class AppLocalizationsAs extends AppLocalizations {
       days,
       locale: localeName,
       other: 'ট্ৰায়েলৰ $days দিন বাকী',
-      one: 'ট্ৰায়েলৰ 1 দিন বাকী',
+      one: 'ট্ৰায়েলৰ $days দিন বাকী',
     );
     return '$_temp0';
   }
@@ -853,7 +853,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা বিশ্লেষণ খৰচ হয়',
-      one: '1টা বিশ্লেষণ খৰচ হয়',
+      one: '$countটা বিশ্লেষণ খৰচ হয়',
     );
     return '$_temp0';
   }
@@ -887,7 +887,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'আপোনাৰ প্লানত প্ৰতিটো বিশ্লেষণত সৰ্বাধিক $countটা ৱেব সন্ধান',
-      one: 'আপোনাৰ প্লানত প্ৰতিটো বিশ্লেষণত সৰ্বাধিক 1টা ৱেব সন্ধান',
+      one: 'আপোনাৰ প্লানত প্ৰতিটো বিশ্লেষণত সৰ্বাধিক $countটা ৱেব সন্ধান',
     );
     return '$_temp0';
   }
@@ -903,7 +903,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'সৰ্বাধিক $countটা ৱেব সন্ধান',
-      one: 'সৰ্বাধিক 1টা ৱেব সন্ধান',
+      one: 'সৰ্বাধিক $countটা ৱেব সন্ধান',
     );
     return '$_temp0';
   }
@@ -914,7 +914,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'প্ৰতিটো বিশ্লেষণত $countটা ৱেব সন্ধান',
-      one: 'প্ৰতিটো বিশ্লেষণত 1টা ৱেব সন্ধান',
+      one: 'প্ৰতিটো বিশ্লেষণত $countটা ৱেব সন্ধান',
     );
     return '$_temp0';
   }
@@ -1074,7 +1074,7 @@ class AppLocalizationsAs extends AppLocalizations {
       years,
       locale: localeName,
       other: '$years বছৰ',
-      one: '1 বছৰ',
+      one: '$years বছৰ',
     );
     return '$_temp0';
   }
@@ -1389,7 +1389,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ঘণ্টা আগতে',
-      one: '1 ঘণ্টা আগতে',
+      one: '$count ঘণ্টা আগতে',
     );
     return '$_temp0';
   }
@@ -1400,7 +1400,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count দিন আগতে',
-      one: '1 দিন আগতে',
+      one: '$count দিন আগতে',
     );
     return '$_temp0';
   }
@@ -1463,7 +1463,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা অতিৰিক্ত বিশ্লেষণ',
-      one: '1টা অতিৰিক্ত বিশ্লেষণ',
+      one: '$countটা অতিৰিক্ত বিশ্লেষণ',
     );
     return 'আপোনাৰ ক\'ড শ্বেয়াৰ কৰক। আপোনাৰ বন্ধুৱে লগে লগে $_temp0 পাব, আৰু তেওঁৰ প্ৰথম বিশ্লেষণৰ পিছত আপুনিও সমানেই পাব।';
   }
@@ -1488,7 +1488,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা অতিৰিক্ত বিশ্লেষণ যোগ কৰা হ\'ল। স্বাগতম!',
-      one: '1টা অতিৰিক্ত বিশ্লেষণ যোগ কৰা হ\'ল। স্বাগতম!',
+      one: '$countটা অতিৰিক্ত বিশ্লেষণ যোগ কৰা হ\'ল। স্বাগতম!',
     );
     return '$_temp0';
   }
@@ -1510,7 +1510,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা অতিৰিক্ত বিশ্লেষণ',
-      one: '1টা অতিৰিক্ত বিশ্লেষণ',
+      one: '$countটা অতিৰিক্ত বিশ্লেষণ',
     );
     return 'মই WhatStock-ৰে শ্বেয়াৰ বিশ্লেষণ কৰোঁ: এটা শ্বেয়াৰৰ ফটো তোলক আৰু AI-য়ে বুজাই দিব। মোৰ ক\'ড $code ব্যৱহাৰ কৰি আপুনি $_temp0 পাব।';
   }
@@ -1629,7 +1629,7 @@ class AppLocalizationsAs extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days দিনৰ পিছত',
-      one: '1 দিনৰ পিছত',
+      one: '$days দিনৰ পিছত',
     );
     return '$_temp0';
   }
@@ -1759,7 +1759,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা শাৰী এৰি দিয়া হ\'ল',
-      one: '1টা শাৰী এৰি দিয়া হ\'ল',
+      one: '$countটা শাৰী এৰি দিয়া হ\'ল',
     );
     return '$_temp0';
   }
@@ -2094,7 +2094,7 @@ class AppLocalizationsAs extends AppLocalizations {
       locale: localeName,
       other:
           'শেহতীয়া $totalটা ত্ৰৈমাসিকৰ $beatsটাত প্ৰত্যাশিত EPSৰ সমান বা অধিক',
-      one: '1টা ত্ৰৈমাসিকৰ $beatsটাত প্ৰত্যাশিত EPSৰ সমান বা অধিক',
+      one: '$totalটা ত্ৰৈমাসিকৰ $beatsটাত প্ৰত্যাশিত EPSৰ সমান বা অধিক',
     );
     return '$_temp0';
   }
@@ -2160,7 +2160,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা পজিচন যোগ কৰক',
-      one: '1টা পজিচন যোগ কৰক',
+      one: '$countটা পজিচন যোগ কৰক',
     );
     return '$_temp0';
   }
@@ -2214,7 +2214,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা ক্ৰয়',
-      one: '1টা ক্ৰয়',
+      one: '$countটা ক্ৰয়',
     );
     return '$_temp0';
   }
@@ -2225,7 +2225,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা বিক্ৰী',
-      one: '1টা বিক্ৰী',
+      one: '$countটা বিক্ৰী',
     );
     return '$_temp0';
   }
@@ -2387,7 +2387,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা সতৰ্কবাণী ছেট কৰা হ\'ল',
-      one: '1টা সতৰ্কবাণী ছেট কৰা হ\'ল',
+      one: '$countটা সতৰ্কবাণী ছেট কৰা হ\'ল',
     );
     return '$_temp0';
   }
@@ -2461,7 +2461,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা শ্বেয়াৰ যোগ কৰা হ\'ল',
-      one: '1টা শ্বেয়াৰ যোগ কৰা হ\'ল',
+      one: '$countটা শ্বেয়াৰ যোগ কৰা হ\'ল',
       zero: 'কোনো নতুন শ্বেয়াৰ নাই',
     );
     return '$_temp0';
@@ -2596,7 +2596,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা পজিচন',
-      one: '1টা পজিচন',
+      one: '$countটা পজিচন',
     );
     return '$_temp0';
   }
@@ -2662,7 +2662,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা ট্ৰেইলিং ষ্টপ ছেট কৰা হ\'ল',
-      one: '1টা ট্ৰেইলিং ষ্টপ ছেট কৰা হ\'ল',
+      one: '$countটা ট্ৰেইলিং ষ্টপ ছেট কৰা হ\'ল',
       zero: 'প্ৰতিটো পজিচনত ইতিমধ্যে ট্ৰেইলিং ষ্টপ আছে',
     );
     return '$_temp0';
@@ -2841,7 +2841,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা সতৰ্কবাণী মচা হ\'ল',
-      one: '1টা সতৰ্কবাণী মচা হ\'ল',
+      one: '$countটা সতৰ্কবাণী মচা হ\'ল',
     );
     return '$_temp0';
   }
@@ -2978,7 +2978,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count টা ষ্টক বিভাজন যোগ কৰা হ\'ল',
-      one: '1 টা ষ্টক বিভাজন যোগ কৰা হ\'ল',
+      one: '$count টা ষ্টক বিভাজন যোগ কৰা হ\'ল',
     );
     return '$_temp0';
   }
@@ -2989,7 +2989,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা লাভাংশ যোগ কৰা হ\'ল',
-      one: '1টা লাভাংশ যোগ কৰা হ\'ল',
+      one: '$countটা লাভাংশ যোগ কৰা হ\'ল',
     );
     return '$_temp0';
   }
@@ -3021,7 +3021,7 @@ class AppLocalizationsAs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$countটা সতৰ্কবাণী সক্ৰিয় হৈছে',
-      one: '1টা সতৰ্কবাণী সক্ৰিয় হৈছে',
+      one: '$countটা সতৰ্কবাণী সক্ৰিয় হৈছে',
     );
     return '$_temp0';
   }

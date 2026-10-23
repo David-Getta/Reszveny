@@ -2151,7 +2151,7 @@ class AppLocalizationsLt extends AppLocalizations {
       locale: localeName,
       other:
           'Ketvirčiai, kai EPS atitiko ar viršijo lūkesčius: $beats iš paskutinių $total',
-      one: 'EPS atitiko ar viršijo lūkesčius: $beats iš 1 ketvirčio',
+      one: 'EPS atitiko ar viršijo lūkesčius: $beats iš $total ketvirčio',
     );
     return '$_temp0';
   }
@@ -3056,7 +3056,7 @@ class AppLocalizationsLt extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Pridėta akcijų skaidymų: $count',
-      one: 'Pridėtas 1 akcijų skaidymas',
+      one: 'Pridėtas $count akcijų skaidymas',
     );
     return '$_temp0';
   }

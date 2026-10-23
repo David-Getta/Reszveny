@@ -324,7 +324,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਵਿਸ਼ਲੇਸ਼ਕ',
-      one: '1 ਵਿਸ਼ਲੇਸ਼ਕ',
+      one: '$count ਵਿਸ਼ਲੇਸ਼ਕ',
     );
     return '$_temp0';
   }
@@ -709,7 +709,7 @@ class AppLocalizationsPa extends AppLocalizations {
       days,
       locale: localeName,
       other: 'ਟ੍ਰਾਇਲ ਦੇ $days ਦਿਨ ਬਾਕੀ',
-      one: 'ਟ੍ਰਾਇਲ ਦਾ 1 ਦਿਨ ਬਾਕੀ',
+      one: 'ਟ੍ਰਾਇਲ ਦਾ $days ਦਿਨ ਬਾਕੀ',
     );
     return '$_temp0';
   }
@@ -850,7 +850,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਵਿਸ਼ਲੇਸ਼ਣ ਲੱਗਦੇ ਹਨ',
-      one: '1 ਵਿਸ਼ਲੇਸ਼ਣ ਲੱਗਦਾ ਹੈ',
+      one: '$count ਵਿਸ਼ਲੇਸ਼ਣ ਲੱਗਦਾ ਹੈ',
     );
     return '$_temp0';
   }
@@ -884,7 +884,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ਤੁਹਾਡੇ ਪਲਾਨ ਵਿੱਚ ਪ੍ਰਤੀ ਵਿਸ਼ਲੇਸ਼ਣ ਵੱਧ ਤੋਂ ਵੱਧ $count ਵੈੱਬ ਖੋਜਾਂ',
-      one: 'ਤੁਹਾਡੇ ਪਲਾਨ ਵਿੱਚ ਪ੍ਰਤੀ ਵਿਸ਼ਲੇਸ਼ਣ ਵੱਧ ਤੋਂ ਵੱਧ 1 ਵੈੱਬ ਖੋਜ',
+      one: 'ਤੁਹਾਡੇ ਪਲਾਨ ਵਿੱਚ ਪ੍ਰਤੀ ਵਿਸ਼ਲੇਸ਼ਣ ਵੱਧ ਤੋਂ ਵੱਧ $count ਵੈੱਬ ਖੋਜ',
     );
     return '$_temp0';
   }
@@ -900,7 +900,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ਵੱਧ ਤੋਂ ਵੱਧ $count ਵੈੱਬ ਖੋਜਾਂ',
-      one: 'ਵੱਧ ਤੋਂ ਵੱਧ 1 ਵੈੱਬ ਖੋਜ',
+      one: 'ਵੱਧ ਤੋਂ ਵੱਧ $count ਵੈੱਬ ਖੋਜ',
     );
     return '$_temp0';
   }
@@ -911,7 +911,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ਪ੍ਰਤੀ ਵਿਸ਼ਲੇਸ਼ਣ $count ਵੈੱਬ ਖੋਜਾਂ',
-      one: 'ਪ੍ਰਤੀ ਵਿਸ਼ਲੇਸ਼ਣ 1 ਵੈੱਬ ਖੋਜ',
+      one: 'ਪ੍ਰਤੀ ਵਿਸ਼ਲੇਸ਼ਣ $count ਵੈੱਬ ਖੋਜ',
     );
     return '$_temp0';
   }
@@ -1071,7 +1071,7 @@ class AppLocalizationsPa extends AppLocalizations {
       years,
       locale: localeName,
       other: '$years ਸਾਲ',
-      one: '1 ਸਾਲ',
+      one: '$years ਸਾਲ',
     );
     return '$_temp0';
   }
@@ -1386,7 +1386,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਘੰਟੇ ਪਹਿਲਾਂ',
-      one: '1 ਘੰਟਾ ਪਹਿਲਾਂ',
+      one: '$count ਘੰਟਾ ਪਹਿਲਾਂ',
     );
     return '$_temp0';
   }
@@ -1397,7 +1397,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਦਿਨ ਪਹਿਲਾਂ',
-      one: '1 ਦਿਨ ਪਹਿਲਾਂ',
+      one: '$count ਦਿਨ ਪਹਿਲਾਂ',
     );
     return '$_temp0';
   }
@@ -1460,7 +1460,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲਣਗੇ',
-      one: '1 ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲੇਗਾ',
+      one: '$count ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲੇਗਾ',
     );
     return 'ਆਪਣਾ ਕੋਡ ਸਾਂਝਾ ਕਰੋ। ਤੁਹਾਡੇ ਦੋਸਤ ਨੂੰ ਤੁਰੰਤ $_temp0, ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਪਹਿਲੇ ਵਿਸ਼ਲੇਸ਼ਣ ਤੋਂ ਬਾਅਦ ਤੁਹਾਨੂੰ ਵੀ ਇੰਨਾ ਹੀ ਮਿਲੇਗਾ।';
   }
@@ -1485,7 +1485,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਜੋੜੇ ਗਏ। ਜੀ ਆਇਆਂ ਨੂੰ!',
-      one: '1 ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਜੋੜਿਆ ਗਿਆ। ਜੀ ਆਇਆਂ ਨੂੰ!',
+      one: '$count ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਜੋੜਿਆ ਗਿਆ। ਜੀ ਆਇਆਂ ਨੂੰ!',
     );
     return '$_temp0';
   }
@@ -1507,7 +1507,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲਣਗੇ',
-      one: '1 ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲੇਗਾ',
+      one: '$count ਵਾਧੂ ਵਿਸ਼ਲੇਸ਼ਣ ਮਿਲੇਗਾ',
     );
     return 'WhatStock ਮੇਰੇ ਲਈ ਸ਼ੇਅਰਾਂ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਦਾ ਹੈ: ਸ਼ੇਅਰ ਦੀ ਫੋਟੋ ਖਿੱਚੋ ਅਤੇ AI ਉਸਨੂੰ ਸਮਝਾਉਂਦੀ ਹੈ। ਮੇਰੇ ਕੋਡ $code ਨਾਲ ਤੁਹਾਨੂੰ $_temp0।';
   }
@@ -1626,7 +1626,7 @@ class AppLocalizationsPa extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ਦਿਨਾਂ ਵਿੱਚ',
-      one: '1 ਦਿਨ ਵਿੱਚ',
+      one: '$days ਦਿਨ ਵਿੱਚ',
     );
     return '$_temp0';
   }
@@ -1757,7 +1757,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਲਾਈਨਾਂ ਛੱਡੀਆਂ ਗਈਆਂ',
-      one: '1 ਲਾਈਨ ਛੱਡੀ ਗਈ',
+      one: '$count ਲਾਈਨ ਛੱਡੀ ਗਈ',
     );
     return '$_temp0';
   }
@@ -2093,7 +2093,7 @@ class AppLocalizationsPa extends AppLocalizations {
       locale: localeName,
       other:
           'ਪਿਛਲੀਆਂ $total ਵਿੱਚੋਂ $beats ਤਿਮਾਹੀਆਂ ਵਿੱਚ ਉਮੀਦ ਕੀਤੇ EPS ਦੇ ਬਰਾਬਰ ਜਾਂ ਵੱਧ',
-      one: '1 ਵਿੱਚੋਂ $beats ਤਿਮਾਹੀ ਵਿੱਚ ਉਮੀਦ ਕੀਤੇ EPS ਦੇ ਬਰਾਬਰ ਜਾਂ ਵੱਧ',
+      one: '$total ਵਿੱਚੋਂ $beats ਤਿਮਾਹੀ ਵਿੱਚ ਉਮੀਦ ਕੀਤੇ EPS ਦੇ ਬਰਾਬਰ ਜਾਂ ਵੱਧ',
     );
     return '$_temp0';
   }
@@ -2159,7 +2159,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਪੁਜ਼ੀਸ਼ਨਾਂ ਜੋੜੋ',
-      one: '1 ਪੁਜ਼ੀਸ਼ਨ ਜੋੜੋ',
+      one: '$count ਪੁਜ਼ੀਸ਼ਨ ਜੋੜੋ',
     );
     return '$_temp0';
   }
@@ -2213,7 +2213,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਖਰੀਦਾਂ',
-      one: '1 ਖਰੀਦ',
+      one: '$count ਖਰੀਦ',
     );
     return '$_temp0';
   }
@@ -2224,7 +2224,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਵਿਕਰੀਆਂ',
-      one: '1 ਵਿਕਰੀ',
+      one: '$count ਵਿਕਰੀ',
     );
     return '$_temp0';
   }
@@ -2386,7 +2386,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਅਲਰਟ ਸੈੱਟ ਕੀਤੇ',
-      one: '1 ਅਲਰਟ ਸੈੱਟ ਕੀਤਾ',
+      one: '$count ਅਲਰਟ ਸੈੱਟ ਕੀਤਾ',
     );
     return '$_temp0';
   }
@@ -2460,7 +2460,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਸ਼ੇਅਰ ਜੋੜੇ ਗਏ',
-      one: '1 ਸ਼ੇਅਰ ਜੋੜਿਆ ਗਿਆ',
+      one: '$count ਸ਼ੇਅਰ ਜੋੜਿਆ ਗਿਆ',
       zero: 'ਕੋਈ ਨਵਾਂ ਸ਼ੇਅਰ ਨਹੀਂ',
     );
     return '$_temp0';
@@ -2661,7 +2661,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਟ੍ਰੇਲਿੰਗ ਸਟਾਪ ਸੈੱਟ ਕੀਤੇ',
-      one: '1 ਟ੍ਰੇਲਿੰਗ ਸਟਾਪ ਸੈੱਟ ਕੀਤਾ',
+      one: '$count ਟ੍ਰੇਲਿੰਗ ਸਟਾਪ ਸੈੱਟ ਕੀਤਾ',
       zero: 'ਹਰ ਪੁਜ਼ੀਸ਼ਨ \'ਤੇ ਪਹਿਲਾਂ ਹੀ ਟ੍ਰੇਲਿੰਗ ਸਟਾਪ ਹੈ',
     );
     return '$_temp0';
@@ -2840,7 +2840,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਅਲਰਟ ਸਾਫ਼ ਕੀਤੇ',
-      one: '1 ਅਲਰਟ ਸਾਫ਼ ਕੀਤਾ',
+      one: '$count ਅਲਰਟ ਸਾਫ਼ ਕੀਤਾ',
     );
     return '$_temp0';
   }
@@ -2977,7 +2977,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਸਟਾਕ ਸਪਲਿਟ ਜੋੜੇ ਗਏ',
-      one: '1 ਸਟਾਕ ਸਪਲਿਟ ਜੋੜਿਆ ਗਿਆ',
+      one: '$count ਸਟਾਕ ਸਪਲਿਟ ਜੋੜਿਆ ਗਿਆ',
     );
     return '$_temp0';
   }
@@ -2988,7 +2988,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਡਿਵੀਡੈਂਡ ਸ਼ਾਮਲ ਕੀਤੇ',
-      one: '1 ਡਿਵੀਡੈਂਡ ਸ਼ਾਮਲ ਕੀਤਾ',
+      one: '$count ਡਿਵੀਡੈਂਡ ਸ਼ਾਮਲ ਕੀਤਾ',
     );
     return '$_temp0';
   }
@@ -3020,7 +3020,7 @@ class AppLocalizationsPa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ਅਲਰਟ ਟ੍ਰਿਗਰ ਹੋਏ',
-      one: '1 ਅਲਰਟ ਟ੍ਰਿਗਰ ਹੋਇਆ',
+      one: '$count ਅਲਰਟ ਟ੍ਰਿਗਰ ਹੋਇਆ',
     );
     return '$_temp0';
   }

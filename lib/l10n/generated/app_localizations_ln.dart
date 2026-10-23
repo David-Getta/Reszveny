@@ -323,7 +323,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ba-analyste $count',
-      one: 'analyste 1',
+      one: 'analyste $count',
     );
     return '$_temp0';
   }
@@ -713,7 +713,7 @@ class AppLocalizationsLn extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Etikali mikɔlɔ $days ya komeka',
-      one: 'Etikali mokɔlɔ 1 ya komeka',
+      one: 'Etikali mokɔlɔ $days ya komeka',
     );
     return '$_temp0';
   }
@@ -856,7 +856,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'esalelaka ba-analyse $count',
-      one: 'esalelaka analyse 1',
+      one: 'esalelaka analyse $count',
     );
     return '$_temp0';
   }
@@ -892,7 +892,8 @@ class AppLocalizationsLn extends AppLocalizations {
       locale: localeName,
       other:
           'Tii mbala $count ya koluka na internet mpo na analyse moko na forfait na yo',
-      one: 'Tii mbala 1 ya koluka na internet mpo na analyse moko na forfait na yo',
+      one:
+          'Tii mbala $count ya koluka na internet mpo na analyse moko na forfait na yo',
     );
     return '$_temp0';
   }
@@ -908,7 +909,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'tii mbala $count ya koluka na internet',
-      one: 'tii mbala 1 ya koluka na internet',
+      one: 'tii mbala $count ya koluka na internet',
     );
     return '$_temp0';
   }
@@ -919,7 +920,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Mbala $count ya koluka na internet mpo na analyse moko',
-      one: 'Mbala 1 ya koluka na internet mpo na analyse moko',
+      one: 'Mbala $count ya koluka na internet mpo na analyse moko',
     );
     return '$_temp0';
   }
@@ -1079,7 +1080,7 @@ class AppLocalizationsLn extends AppLocalizations {
       years,
       locale: localeName,
       other: 'mibu $years',
-      one: 'mobu 1',
+      one: 'mobu $years',
     );
     return '$_temp0';
   }
@@ -1394,7 +1395,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'bangonga $count eleki',
-      one: 'ngonga 1 eleki',
+      one: 'ngonga $count eleki',
     );
     return '$_temp0';
   }
@@ -1405,7 +1406,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'mikɔlɔ $count eleki',
-      one: 'mokɔlɔ 1 eleki',
+      one: 'mokɔlɔ $count eleki',
     );
     return '$_temp0';
   }
@@ -1469,7 +1470,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ba-analyse $count ya kobakisa',
-      one: 'analyse 1 ya kobakisa',
+      one: 'analyse $count ya kobakisa',
     );
     return 'Kabola code na yo. Moninga na yo akozwa $_temp0 mbala moko, mpe yo okozwa ndenge moko nsima ya analyse na ye ya liboso.';
   }
@@ -1494,7 +1495,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ba-analyse $count ya kobakisa ebakisami. Boyei malamu!',
-      one: 'Analyse 1 ya kobakisa ebakisami. Boyei malamu!',
+      one: 'Analyse $count ya kobakisa ebakisami. Boyei malamu!',
     );
     return '$_temp0';
   }
@@ -1515,7 +1516,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ba-analyse $count ya kobakisa',
-      one: 'analyse 1 ya kobakisa',
+      one: 'analyse $count ya kobakisa',
     );
     return 'Nazali kotala ba-action na WhatStock: ozwa foto ya action mpe AI elimboli yango. Na code na ngai $code okozwa $_temp0.';
   }
@@ -1637,7 +1638,7 @@ class AppLocalizationsLn extends AppLocalizations {
       days,
       locale: localeName,
       other: 'nsima ya mikolo $days',
-      one: 'nsima ya mokolo 1',
+      one: 'nsima ya mokolo $days',
     );
     return '$_temp0';
   }
@@ -1767,7 +1768,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Milɔngɔ $count etikalaki',
-      one: 'Molɔngɔ 1 etikalaki',
+      one: 'Molɔngɔ $count etikalaki',
     );
     return '$_temp0';
   }
@@ -2105,7 +2106,8 @@ class AppLocalizationsLn extends AppLocalizations {
       locale: localeName,
       other:
           'Ekokani to eleki EPS oyo ezelamaki na $beats kati ya ba trimestre $total ya nsuka',
-      one: 'Ekokani to eleki EPS oyo ezelamaki na $beats kati ya trimestre 1',
+      one:
+          'Ekokani to eleki EPS oyo ezelamaki na $beats kati ya trimestre $total',
     );
     return '$_temp0';
   }
@@ -2172,7 +2174,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Bakisa biteni $count',
-      one: 'Bakisa eteni 1',
+      one: 'Bakisa eteni $count',
     );
     return '$_temp0';
   }
@@ -2226,7 +2228,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kosomba',
-      one: '1 kosomba',
+      one: '$count kosomba',
     );
     return '$_temp0';
   }
@@ -2237,7 +2239,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count koteka',
-      one: '1 koteka',
+      one: '$count koteka',
     );
     return '$_temp0';
   }
@@ -2400,7 +2402,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Makebisi $count etyami',
-      one: 'Likebisi 1 etyami',
+      one: 'Likebisi $count etyami',
     );
     return '$_temp0';
   }
@@ -2474,7 +2476,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Baaksyo $count ebakisami',
-      one: 'Aksyo 1 ebakisami',
+      one: 'Aksyo $count ebakisami',
       zero: 'Aksyo ya sika ezali te',
     );
     return '$_temp0';
@@ -2609,7 +2611,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Biteni $count',
-      one: 'Eteni 1',
+      one: 'Eteni $count',
     );
     return '$_temp0';
   }
@@ -2676,7 +2678,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Makebisi $count etyami',
-      one: 'Likebisi 1 etyami',
+      one: 'Likebisi $count etyami',
       zero: 'Eteni nyonso esili kozala na likebisi oyo',
     );
     return '$_temp0';
@@ -2856,7 +2858,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Makebisi $count elimwisami',
-      one: 'Likebisi 1 elimwisami',
+      one: 'Likebisi $count elimwisami',
     );
     return '$_temp0';
   }
@@ -2992,7 +2994,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Bokabolami ya ba share $count ebakisami',
-      one: 'Bokabolami ya ba share 1 ebakisami',
+      one: 'Bokabolami ya ba share $count ebakisami',
     );
     return '$_temp0';
   }
@@ -3003,7 +3005,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ba dividende $count ebakisami',
-      one: 'Dividende 1 ebakisami',
+      one: 'Dividende $count ebakisami',
     );
     return '$_temp0';
   }
@@ -3035,7 +3037,7 @@ class AppLocalizationsLn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Makebisi $count ebimaki',
-      one: 'Likebisi 1 ebimaki',
+      one: 'Likebisi $count ebimaki',
     );
     return '$_temp0';
   }

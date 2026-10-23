@@ -1401,7 +1401,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ora lasa izay',
-      one: '1 ora lasa izay',
+      one: '$count ora lasa izay',
     );
     return '$_temp0';
   }
@@ -1412,7 +1412,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count andro lasa izay',
-      one: '1 andro lasa izay',
+      one: '$count andro lasa izay',
     );
     return '$_temp0';
   }
@@ -1476,7 +1476,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count fandalinana fanampiny',
-      one: '1 fandalinana fanampiny',
+      one: '$count fandalinana fanampiny',
     );
     return 'Zarao ny kaodinao. Mahazo $_temp0 avy hatrany ny namanao, ary mahazo toy izany koa ianao aorian\'ny fandalinany voalohany.';
   }
@@ -1501,7 +1501,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Nampiana $count fandalinana fanampiny. Tongasoa!',
-      one: 'Nampiana 1 fandalinana fanampiny. Tongasoa!',
+      one: 'Nampiana $count fandalinana fanampiny. Tongasoa!',
     );
     return '$_temp0';
   }
@@ -1522,7 +1522,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count fandalinana fanampiny',
-      one: '1 fandalinana fanampiny',
+      one: '$count fandalinana fanampiny',
     );
     return 'Mandalina aksiona amin\'ny WhatStock aho: makà sary aksiona dia hazavain\'ny AI izany. Amin\'ny kaodiko $code dia mahazo $_temp0 ianao.';
   }
@@ -1642,7 +1642,7 @@ class AppLocalizationsMg extends AppLocalizations {
       days,
       locale: localeName,
       other: 'afaka $days andro',
-      one: 'afaka 1 andro',
+      one: 'afaka $days andro',
     );
     return '$_temp0';
   }
@@ -1773,7 +1773,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Nadingana andalana $count',
-      one: 'Nadingana andalana 1',
+      one: 'Nadingana andalana $count',
     );
     return '$_temp0';
   }
@@ -2111,7 +2111,7 @@ class AppLocalizationsMg extends AppLocalizations {
       other:
           'Nahatratra na nihoatra ny EPS notombanana tamin\'ny telovolana $beats amin\'ireo $total farany',
       one:
-          'Nahatratra na nihoatra ny EPS notombanana tamin\'ny telovolana $beats amin\'ny 1',
+          'Nahatratra na nihoatra ny EPS notombanana tamin\'ny telovolana $beats amin\'ny $total',
     );
     return '$_temp0';
   }
@@ -2178,7 +2178,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ampio fananana $count',
-      one: 'Ampio fananana 1',
+      one: 'Ampio fananana $count',
     );
     return '$_temp0';
   }
@@ -2233,7 +2233,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count fividianana',
-      one: '1 fividianana',
+      one: '$count fividianana',
     );
     return '$_temp0';
   }
@@ -2244,7 +2244,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count fivarotana',
-      one: '1 fivarotana',
+      one: '$count fivarotana',
     );
     return '$_temp0';
   }
@@ -2408,7 +2408,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Napetraka ny fampitandremana $count',
-      one: 'Napetraka ny fampitandremana 1',
+      one: 'Napetraka ny fampitandremana $count',
     );
     return '$_temp0';
   }
@@ -2482,7 +2482,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Nampiana anjara $count',
-      one: 'Nampiana anjara 1',
+      one: 'Nampiana anjara $count',
       zero: 'Tsy misy anjara vaovao',
     );
     return '$_temp0';
@@ -2684,7 +2684,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Napetraka ny fampitandremana $count',
-      one: 'Napetraka ny fampitandremana 1',
+      one: 'Napetraka ny fampitandremana $count',
       zero: 'Efa manana io fampitandremana io ny fananana rehetra',
     );
     return '$_temp0';
@@ -2864,7 +2864,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Voafafa ny fampitandremana $count',
-      one: 'Voafafa ny fampitandremana 1',
+      one: 'Voafafa ny fampitandremana $count',
     );
     return '$_temp0';
   }
@@ -3001,7 +3001,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Fizarana anjara $count nampiana',
-      one: 'Fizarana anjara 1 nampiana',
+      one: 'Fizarana anjara $count nampiana',
     );
     return '$_temp0';
   }
@@ -3012,7 +3012,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Dividandy $count nampiana',
-      one: 'Dividandy 1 nampiana',
+      one: 'Dividandy $count nampiana',
     );
     return '$_temp0';
   }
@@ -3044,7 +3044,7 @@ class AppLocalizationsMg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Fampitandremana $count nipoitra',
-      one: 'Fampitandremana 1 nipoitra',
+      one: 'Fampitandremana $count nipoitra',
     );
     return '$_temp0';
   }

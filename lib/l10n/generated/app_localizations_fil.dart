@@ -324,7 +324,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count analyst',
-      one: '1 analyst',
+      one: '$count analyst',
     );
     return '$_temp0';
   }
@@ -716,7 +716,7 @@ class AppLocalizationsFil extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days araw na natitira sa trial',
-      one: '1 araw na natitira sa trial',
+      one: '$days araw na natitira sa trial',
     );
     return '$_temp0';
   }
@@ -1080,7 +1080,7 @@ class AppLocalizationsFil extends AppLocalizations {
       years,
       locale: localeName,
       other: '$years taon',
-      one: '1 taon',
+      one: '$years taon',
     );
     return '$_temp0';
   }
@@ -1395,7 +1395,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count oras ang nakalipas',
-      one: '1 oras ang nakalipas',
+      one: '$count oras ang nakalipas',
     );
     return '$_temp0';
   }
@@ -1406,7 +1406,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count araw ang nakalipas',
-      one: '1 araw ang nakalipas',
+      one: '$count araw ang nakalipas',
     );
     return '$_temp0';
   }
@@ -1470,7 +1470,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dagdag na pagsusuri',
-      one: '1 dagdag na pagsusuri',
+      one: '$count dagdag na pagsusuri',
     );
     return 'Ibahagi ang iyong code. Makakatanggap agad ang kaibigan mo ng $_temp0, at ganoon din ang matatanggap mo pagkatapos ng kanyang unang pagsusuri.';
   }
@@ -1495,7 +1495,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Naidagdag ang $count dagdag na pagsusuri. Maligayang pagdating!',
-      one: 'Naidagdag ang 1 dagdag na pagsusuri. Maligayang pagdating!',
+      one: 'Naidagdag ang $count dagdag na pagsusuri. Maligayang pagdating!',
     );
     return '$_temp0';
   }
@@ -1517,7 +1517,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dagdag na pagsusuri',
-      one: '1 dagdag na pagsusuri',
+      one: '$count dagdag na pagsusuri',
     );
     return 'Sinusuri ko ang mga stock gamit ang WhatStock: kuhanan ng larawan ang isang stock at ipapaliwanag ito ng AI. Gamit ang code ko na $code, makakakuha ka ng $_temp0.';
   }
@@ -1636,7 +1636,7 @@ class AppLocalizationsFil extends AppLocalizations {
       days,
       locale: localeName,
       other: 'sa loob ng $days araw',
-      one: 'sa loob ng 1 araw',
+      one: 'sa loob ng $days araw',
     );
     return '$_temp0';
   }
@@ -1767,7 +1767,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Nilaktawan ang $count linya',
-      one: 'Nilaktawan ang 1 linya',
+      one: 'Nilaktawan ang $count linya',
     );
     return '$_temp0';
   }
@@ -2103,7 +2103,7 @@ class AppLocalizationsFil extends AppLocalizations {
       locale: localeName,
       other:
           'Pantay o higit sa inaasahang EPS sa $beats sa huling $total quarter',
-      one: 'Pantay o higit sa inaasahang EPS sa $beats sa 1 quarter',
+      one: 'Pantay o higit sa inaasahang EPS sa $beats sa $total quarter',
     );
     return '$_temp0';
   }
@@ -2170,7 +2170,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Idagdag ang $count posisyon',
-      one: 'Idagdag ang 1 posisyon',
+      one: 'Idagdag ang $count posisyon',
     );
     return '$_temp0';
   }
@@ -2224,7 +2224,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count pagbili',
-      one: '1 pagbili',
+      one: '$count pagbili',
     );
     return '$_temp0';
   }
@@ -2235,7 +2235,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count pagbenta',
-      one: '1 pagbenta',
+      one: '$count pagbenta',
     );
     return '$_temp0';
   }
@@ -2397,7 +2397,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Na-set ang $count alerto',
-      one: 'Na-set ang 1 alerto',
+      one: 'Na-set ang $count alerto',
     );
     return '$_temp0';
   }
@@ -2471,7 +2471,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Naidagdag ang $count stock',
-      one: 'Naidagdag ang 1 stock',
+      one: 'Naidagdag ang $count stock',
       zero: 'Walang bagong stock',
     );
     return '$_temp0';
@@ -2606,7 +2606,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count posisyon',
-      one: '1 posisyon',
+      one: '$count posisyon',
     );
     return '$_temp0';
   }
@@ -2672,7 +2672,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Na-set ang $count trailing stop',
-      one: 'Na-set ang 1 trailing stop',
+      one: 'Na-set ang $count trailing stop',
       zero: 'May trailing stop na ang bawat posisyon',
     );
     return '$_temp0';
@@ -2851,7 +2851,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Na-clear ang $count alerto',
-      one: 'Na-clear ang 1 alerto',
+      one: 'Na-clear ang $count alerto',
     );
     return '$_temp0';
   }
@@ -2988,7 +2988,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count stock split ang naidagdag',
-      one: '1 stock split ang naidagdag',
+      one: '$count stock split ang naidagdag',
     );
     return '$_temp0';
   }
@@ -2999,7 +2999,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dibidendo ang naidagdag',
-      one: '1 dibidendo ang naidagdag',
+      one: '$count dibidendo ang naidagdag',
     );
     return '$_temp0';
   }
@@ -3031,7 +3031,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count alerto ang na-trigger',
-      one: '1 alerto ang na-trigger',
+      one: '$count alerto ang na-trigger',
     );
     return '$_temp0';
   }

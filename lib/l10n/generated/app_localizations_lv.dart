@@ -2135,7 +2135,8 @@ class AppLocalizationsLv extends AppLocalizations {
       locale: localeName,
       other:
           'Ceturkšņi, kuros EPS atbilda prognozei vai pārsniedza to: $beats no pēdējiem $total',
-      one: 'EPS atbilda prognozei vai pārsniedza to: $beats no 1 ceturkšņa',
+      one:
+          'EPS atbilda prognozei vai pārsniedza to: $beats no $total ceturkšņa',
     );
     return '$_temp0';
   }
@@ -3025,7 +3026,7 @@ class AppLocalizationsLv extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Pievienotas $count akciju sadalīšanas',
-      one: 'Pievienota 1 akciju sadalīšana',
+      one: 'Pievienota $count akciju sadalīšana',
     );
     return '$_temp0';
   }

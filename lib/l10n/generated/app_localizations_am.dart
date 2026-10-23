@@ -322,7 +322,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ተንታኞች',
-      one: '1 ተንታኝ',
+      one: '$count ተንታኝ',
     );
     return '$_temp0';
   }
@@ -698,7 +698,7 @@ class AppLocalizationsAm extends AppLocalizations {
       days,
       locale: localeName,
       other: 'የሙከራ ጊዜ $days ቀናት ቀርተዋል',
-      one: 'የሙከራ ጊዜ 1 ቀን ቀርቷል',
+      one: 'የሙከራ ጊዜ $days ቀን ቀርቷል',
     );
     return '$_temp0';
   }
@@ -835,7 +835,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ትንተናዎች ይጠቀማል',
-      one: '1 ትንተና ይጠቀማል',
+      one: '$count ትንተና ይጠቀማል',
     );
     return '$_temp0';
   }
@@ -868,7 +868,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: 'በዕቅድዎ በእያንዳንዱ ትንተና እስከ $count የድር ፍለጋዎች',
-      one: 'በዕቅድዎ በእያንዳንዱ ትንተና እስከ 1 የድር ፍለጋ',
+      one: 'በዕቅድዎ በእያንዳንዱ ትንተና እስከ $count የድር ፍለጋ',
     );
     return '$_temp0';
   }
@@ -884,7 +884,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: 'እስከ $count የድር ፍለጋዎች',
-      one: 'እስከ 1 የድር ፍለጋ',
+      one: 'እስከ $count የድር ፍለጋ',
     );
     return '$_temp0';
   }
@@ -895,7 +895,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: 'በእያንዳንዱ ትንተና $count የድር ፍለጋዎች',
-      one: 'በእያንዳንዱ ትንተና 1 የድር ፍለጋ',
+      one: 'በእያንዳንዱ ትንተና $count የድር ፍለጋ',
     );
     return '$_temp0';
   }
@@ -1053,7 +1053,7 @@ class AppLocalizationsAm extends AppLocalizations {
       years,
       locale: localeName,
       other: '$years ዓመታት',
-      one: '1 ዓመት',
+      one: '$years ዓመት',
     );
     return '$_temp0';
   }
@@ -1366,7 +1366,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ከ$count ሰዓታት በፊት',
-      one: 'ከ1 ሰዓት በፊት',
+      one: 'ከ$count ሰዓት በፊት',
     );
     return '$_temp0';
   }
@@ -1377,7 +1377,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ከ$count ቀናት በፊት',
-      one: 'ከ1 ቀን በፊት',
+      one: 'ከ$count ቀን በፊት',
     );
     return '$_temp0';
   }
@@ -1440,7 +1440,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ተጨማሪ ትንተናዎች',
-      one: '1 ተጨማሪ ትንተና',
+      one: '$count ተጨማሪ ትንተና',
     );
     return 'ኮድዎን ያጋሩ። ጓደኛዎ ወዲያውኑ $_temp0 ያገኛል፤ እርስዎም ከመጀመሪያ ትንተናው በኋላ ተመሳሳዩን ያገኛሉ።';
   }
@@ -1465,7 +1465,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ተጨማሪ ትንተናዎች ታክለዋል። እንኳን ደህና መጡ!',
-      one: '1 ተጨማሪ ትንተና ታክሏል። እንኳን ደህና መጡ!',
+      one: '$count ተጨማሪ ትንተና ታክሏል። እንኳን ደህና መጡ!',
     );
     return '$_temp0';
   }
@@ -1485,7 +1485,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ተጨማሪ ትንተናዎች',
-      one: '1 ተጨማሪ ትንተና',
+      one: '$count ተጨማሪ ትንተና',
     );
     return 'አክሲዮኖችን በWhatStock እተነትናለሁ፦ የአክሲዮን ፎቶ ያንሱ፣ AI ያብራራዋል። በኮዴ $code $_temp0 ያገኛሉ።';
   }
@@ -1603,7 +1603,7 @@ class AppLocalizationsAm extends AppLocalizations {
       days,
       locale: localeName,
       other: 'በ$days ቀናት ውስጥ',
-      one: 'በ1 ቀን ውስጥ',
+      one: 'በ$days ቀን ውስጥ',
     );
     return '$_temp0';
   }
@@ -1732,7 +1732,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count መስመሮች ተዘለዋል',
-      one: '1 መስመር ተዘሏል',
+      one: '$count መስመር ተዘሏል',
     );
     return '$_temp0';
   }
@@ -2065,7 +2065,7 @@ class AppLocalizationsAm extends AppLocalizations {
       total,
       locale: localeName,
       other: 'ካለፉት $total ሩብ ዓመታት ውስጥ በ$beats ከሚጠበቀው EPS ጋር እኩል ወይም በላይ',
-      one: 'ከ1 ሩብ ዓመት ውስጥ በ$beats ከሚጠበቀው EPS ጋር እኩል ወይም በላይ',
+      one: 'ከ$total ሩብ ዓመት ውስጥ በ$beats ከሚጠበቀው EPS ጋር እኩል ወይም በላይ',
     );
     return '$_temp0';
   }
@@ -2131,7 +2131,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ይዞታዎችን አክል',
-      one: '1 ይዞታ አክል',
+      one: '$count ይዞታ አክል',
     );
     return '$_temp0';
   }
@@ -2185,7 +2185,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ግዢዎች',
-      one: '1 ግዢ',
+      one: '$count ግዢ',
     );
     return '$_temp0';
   }
@@ -2196,7 +2196,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ሽያጮች',
-      one: '1 ሽያጭ',
+      one: '$count ሽያጭ',
     );
     return '$_temp0';
   }
@@ -2356,7 +2356,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ማንቂያዎች ተቀናብረዋል',
-      one: '1 ማንቂያ ተቀናብሯል',
+      one: '$count ማንቂያ ተቀናብሯል',
     );
     return '$_temp0';
   }
@@ -2430,7 +2430,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count አክሲዮኖች ታክለዋል',
-      one: '1 አክሲዮን ታክሏል',
+      one: '$count አክሲዮን ታክሏል',
       zero: 'አዲስ አክሲዮን የለም',
     );
     return '$_temp0';
@@ -2564,7 +2564,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ይዞታዎች',
-      one: '1 ይዞታ',
+      one: '$count ይዞታ',
     );
     return '$_temp0';
   }
@@ -2630,7 +2630,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ማንቂያዎች ተቀናብረዋል',
-      one: '1 ማንቂያ ተቀናብሯል',
+      one: '$count ማንቂያ ተቀናብሯል',
       zero: 'ሁሉም ይዞታዎች ቀድሞውኑ ይህ ማንቂያ አላቸው',
     );
     return '$_temp0';
@@ -2807,7 +2807,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ማንቂያዎች ተሰርዘዋል',
-      one: '1 ማንቂያ ተሰርዟል',
+      one: '$count ማንቂያ ተሰርዟል',
     );
     return '$_temp0';
   }
@@ -2943,7 +2943,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count የአክሲዮን ክፍፍሎች ታክለዋል',
-      one: '1 የአክሲዮን ክፍፍል ታክሏል',
+      one: '$count የአክሲዮን ክፍፍል ታክሏል',
     );
     return '$_temp0';
   }
@@ -2954,7 +2954,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count የትርፍ ድርሻዎች ታክለዋል',
-      one: '1 የትርፍ ድርሻ ታክሏል',
+      one: '$count የትርፍ ድርሻ ታክሏል',
     );
     return '$_temp0';
   }
@@ -2986,7 +2986,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ማስጠንቀቂያዎች ተነሱ',
-      one: '1 ማስጠንቀቂያ ተነሳ',
+      one: '$count ማስጠንቀቂያ ተነሳ',
     );
     return '$_temp0';
   }

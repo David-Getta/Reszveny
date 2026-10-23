@@ -324,7 +324,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ವಿಶ್ಲೇಷಕರು',
-      one: '1 ವಿಶ್ಲೇಷಕ',
+      one: '$count ವಿಶ್ಲೇಷಕ',
     );
     return '$_temp0';
   }
@@ -714,7 +714,7 @@ class AppLocalizationsKn extends AppLocalizations {
       days,
       locale: localeName,
       other: 'ಪ್ರಾಯೋಗಿಕ ಅವಧಿಯ $days ದಿನಗಳು ಬಾಕಿ',
-      one: 'ಪ್ರಾಯೋಗಿಕ ಅವಧಿಯ 1 ದಿನ ಬಾಕಿ',
+      one: 'ಪ್ರಾಯೋಗಿಕ ಅವಧಿಯ $days ದಿನ ಬಾಕಿ',
     );
     return '$_temp0';
   }
@@ -856,7 +856,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ಬಳಸುತ್ತದೆ',
-      one: '1 ವಿಶ್ಲೇಷಣೆ ಬಳಸುತ್ತದೆ',
+      one: '$count ವಿಶ್ಲೇಷಣೆ ಬಳಸುತ್ತದೆ',
     );
     return '$_temp0';
   }
@@ -892,7 +892,7 @@ class AppLocalizationsKn extends AppLocalizations {
       locale: localeName,
       other:
           'ನಿಮ್ಮ ಪ್ಲಾನ್‌ನಲ್ಲಿ ಪ್ರತಿ ವಿಶ್ಲೇಷಣೆಗೆ ಗರಿಷ್ಠ $count ವೆಬ್ ಹುಡುಕಾಟಗಳು',
-      one: 'ನಿಮ್ಮ ಪ್ಲಾನ್‌ನಲ್ಲಿ ಪ್ರತಿ ವಿಶ್ಲೇಷಣೆಗೆ ಗರಿಷ್ಠ 1 ವೆಬ್ ಹುಡುಕಾಟ',
+      one: 'ನಿಮ್ಮ ಪ್ಲಾನ್‌ನಲ್ಲಿ ಪ್ರತಿ ವಿಶ್ಲೇಷಣೆಗೆ ಗರಿಷ್ಠ $count ವೆಬ್ ಹುಡುಕಾಟ',
     );
     return '$_temp0';
   }
@@ -908,7 +908,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ಗರಿಷ್ಠ $count ವೆಬ್ ಹುಡುಕಾಟಗಳು',
-      one: 'ಗರಿಷ್ಠ 1 ವೆಬ್ ಹುಡುಕಾಟ',
+      one: 'ಗರಿಷ್ಠ $count ವೆಬ್ ಹುಡುಕಾಟ',
     );
     return '$_temp0';
   }
@@ -919,7 +919,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ಪ್ರತಿ ವಿಶ್ಲೇಷಣೆಗೆ $count ವೆಬ್ ಹುಡುಕಾಟಗಳು',
-      one: 'ಪ್ರತಿ ವಿಶ್ಲೇಷಣೆಗೆ 1 ವೆಬ್ ಹುಡುಕಾಟ',
+      one: 'ಪ್ರತಿ ವಿಶ್ಲೇಷಣೆಗೆ $count ವೆಬ್ ಹುಡುಕಾಟ',
     );
     return '$_temp0';
   }
@@ -1079,7 +1079,7 @@ class AppLocalizationsKn extends AppLocalizations {
       years,
       locale: localeName,
       other: '$years ವರ್ಷಗಳು',
-      one: '1 ವರ್ಷ',
+      one: '$years ವರ್ಷ',
     );
     return '$_temp0';
   }
@@ -1394,7 +1394,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಗಂಟೆಗಳ ಹಿಂದೆ',
-      one: '1 ಗಂಟೆಯ ಹಿಂದೆ',
+      one: '$count ಗಂಟೆಯ ಹಿಂದೆ',
     );
     return '$_temp0';
   }
@@ -1405,7 +1405,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ದಿನಗಳ ಹಿಂದೆ',
-      one: '1 ದಿನದ ಹಿಂದೆ',
+      one: '$count ದಿನದ ಹಿಂದೆ',
     );
     return '$_temp0';
   }
@@ -1468,7 +1468,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಹೆಚ್ಚುವರಿ ವಿಶ್ಲೇಷಣೆಗಳು',
-      one: '1 ಹೆಚ್ಚುವರಿ ವಿಶ್ಲೇಷಣೆ',
+      one: '$count ಹೆಚ್ಚುವರಿ ವಿಶ್ಲೇಷಣೆ',
     );
     return 'ನಿಮ್ಮ ಕೋಡ್ ಹಂಚಿಕೊಳ್ಳಿ. ನಿಮ್ಮ ಸ್ನೇಹಿತರಿಗೆ ತಕ್ಷಣ $_temp0 ಸಿಗುತ್ತದೆ, ಅವರ ಮೊದಲ ವಿಶ್ಲೇಷಣೆಯ ನಂತರ ನಿಮಗೂ ಅಷ್ಟೇ ಸಿಗುತ್ತದೆ.';
   }
@@ -1493,7 +1493,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಹೆಚ್ಚುವರಿ ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ. ಸ್ವಾಗತ!',
-      one: '1 ಹೆಚ್ಚುವರಿ ವಿಶ್ಲೇಷಣೆ ಸೇರಿಸಲಾಗಿದೆ. ಸ್ವಾಗತ!',
+      one: '$count ಹೆಚ್ಚುವರಿ ವಿಶ್ಲೇಷಣೆ ಸೇರಿಸಲಾಗಿದೆ. ಸ್ವಾಗತ!',
     );
     return '$_temp0';
   }
@@ -1515,7 +1515,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಹೆಚ್ಚುವರಿ ವಿಶ್ಲೇಷಣೆಗಳು',
-      one: '1 ಹೆಚ್ಚುವರಿ ವಿಶ್ಲೇಷಣೆ',
+      one: '$count ಹೆಚ್ಚುವರಿ ವಿಶ್ಲೇಷಣೆ',
     );
     return 'ನಾನು WhatStock ಬಳಸಿ ಷೇರುಗಳನ್ನು ವಿಶ್ಲೇಷಿಸುತ್ತೇನೆ: ಷೇರಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ, AI ಅದನ್ನು ವಿವರಿಸುತ್ತದೆ. ನನ್ನ ಕೋಡ್ $code ಬಳಸಿದರೆ ನಿಮಗೆ $_temp0 ಸಿಗುತ್ತದೆ.';
   }
@@ -1634,7 +1634,7 @@ class AppLocalizationsKn extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ದಿನಗಳಲ್ಲಿ',
-      one: '1 ದಿನದಲ್ಲಿ',
+      one: '$days ದಿನದಲ್ಲಿ',
     );
     return '$_temp0';
   }
@@ -1764,7 +1764,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಸಾಲುಗಳನ್ನು ಬಿಟ್ಟುಬಿಡಲಾಗಿದೆ',
-      one: '1 ಸಾಲು ಬಿಟ್ಟುಬಿಡಲಾಗಿದೆ',
+      one: '$count ಸಾಲು ಬಿಟ್ಟುಬಿಡಲಾಗಿದೆ',
     );
     return '$_temp0';
   }
@@ -2102,7 +2102,7 @@ class AppLocalizationsKn extends AppLocalizations {
       locale: localeName,
       other:
           'ಕಳೆದ $total ತ್ರೈಮಾಸಿಕಗಳ ಪೈಕಿ $beats ರಲ್ಲಿ EPS ನಿರೀಕ್ಷೆಗೆ ಸಮ ಅಥವಾ ಹೆಚ್ಚು',
-      one: '1 ತ್ರೈಮಾಸಿಕದ ಪೈಕಿ $beats ರಲ್ಲಿ EPS ನಿರೀಕ್ಷೆಗೆ ಸಮ ಅಥವಾ ಹೆಚ್ಚು',
+      one: '$total ತ್ರೈಮಾಸಿಕದ ಪೈಕಿ $beats ರಲ್ಲಿ EPS ನಿರೀಕ್ಷೆಗೆ ಸಮ ಅಥವಾ ಹೆಚ್ಚು',
     );
     return '$_temp0';
   }
@@ -2168,7 +2168,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಪೊಸಿಷನ್‌ಗಳನ್ನು ಸೇರಿಸಿ',
-      one: '1 ಪೊಸಿಷನ್ ಸೇರಿಸಿ',
+      one: '$count ಪೊಸಿಷನ್ ಸೇರಿಸಿ',
     );
     return '$_temp0';
   }
@@ -2222,7 +2222,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಖರೀದಿಗಳು',
-      one: '1 ಖರೀದಿ',
+      one: '$count ಖರೀದಿ',
     );
     return '$_temp0';
   }
@@ -2233,7 +2233,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಮಾರಾಟಗಳು',
-      one: '1 ಮಾರಾಟ',
+      one: '$count ಮಾರಾಟ',
     );
     return '$_temp0';
   }
@@ -2395,7 +2395,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಎಚ್ಚರಿಕೆಗಳನ್ನು ಹೊಂದಿಸಲಾಗಿದೆ',
-      one: '1 ಎಚ್ಚರಿಕೆ ಹೊಂದಿಸಲಾಗಿದೆ',
+      one: '$count ಎಚ್ಚರಿಕೆ ಹೊಂದಿಸಲಾಗಿದೆ',
     );
     return '$_temp0';
   }
@@ -2469,7 +2469,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಷೇರುಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ',
-      one: '1 ಷೇರು ಸೇರಿಸಲಾಗಿದೆ',
+      one: '$count ಷೇರು ಸೇರಿಸಲಾಗಿದೆ',
       zero: 'ಹೊಸ ಷೇರುಗಳಿಲ್ಲ',
     );
     return '$_temp0';
@@ -2604,7 +2604,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಪೊಸಿಷನ್‌ಗಳು',
-      one: '1 ಪೊಸಿಷನ್',
+      one: '$count ಪೊಸಿಷನ್',
     );
     return '$_temp0';
   }
@@ -2670,7 +2670,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್‌ಗಳನ್ನು ಹೊಂದಿಸಲಾಗಿದೆ',
-      one: '1 ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್ ಹೊಂದಿಸಲಾಗಿದೆ',
+      one: '$count ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್ ಹೊಂದಿಸಲಾಗಿದೆ',
       zero: 'ಎಲ್ಲ ಪೊಸಿಷನ್‌ಗಳಿಗೂ ಈಗಾಗಲೇ ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್ ಇದೆ',
     );
     return '$_temp0';
@@ -2849,7 +2849,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಎಚ್ಚರಿಕೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ',
-      one: '1 ಎಚ್ಚರಿಕೆಯನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ',
+      one: '$count ಎಚ್ಚರಿಕೆಯನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ',
     );
     return '$_temp0';
   }
@@ -2986,7 +2986,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಸ್ಟಾಕ್ ಸ್ಪ್ಲಿಟ್‌ಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ',
-      one: '1 ಸ್ಟಾಕ್ ಸ್ಪ್ಲಿಟ್ ಸೇರಿಸಲಾಗಿದೆ',
+      one: '$count ಸ್ಟಾಕ್ ಸ್ಪ್ಲಿಟ್ ಸೇರಿಸಲಾಗಿದೆ',
     );
     return '$_temp0';
   }
@@ -2997,7 +2997,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ',
-      one: '1 ಡಿವಿಡೆಂಡ್ ಸೇರಿಸಲಾಗಿದೆ',
+      one: '$count ಡಿವಿಡೆಂಡ್ ಸೇರಿಸಲಾಗಿದೆ',
     );
     return '$_temp0';
   }
@@ -3030,7 +3030,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ಅಲರ್ಟ್‌ಗಳು ಟ್ರಿಗರ್ ಆಗಿವೆ',
-      one: '1 ಅಲರ್ಟ್ ಟ್ರಿಗರ್ ಆಗಿದೆ',
+      one: '$count ಅಲರ್ಟ್ ಟ್ರಿಗರ್ ಆಗಿದೆ',
     );
     return '$_temp0';
   }

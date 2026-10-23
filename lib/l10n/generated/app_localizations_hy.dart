@@ -1470,7 +1470,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count լրացուցիչ վերլուծություն',
-      one: '1 լրացուցիչ վերլուծություն',
+      one: '$count լրացուցիչ վերլուծություն',
     );
     return 'Կիսվեք ձեր կոդով։ Ձեր ընկերն անմիջապես կստանա $_temp0, իսկ դուք՝ նույնքան նրա առաջին վերլուծությունից հետո։';
   }
@@ -1495,7 +1495,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ավելացվեց $count լրացուցիչ վերլուծություն։ Բարի գալուստ։',
-      one: 'Ավելացվեց 1 լրացուցիչ վերլուծություն։ Բարի գալուստ։',
+      one: 'Ավելացվեց $count լրացուցիչ վերլուծություն։ Բարի գալուստ։',
     );
     return '$_temp0';
   }
@@ -1516,7 +1516,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count լրացուցիչ վերլուծություն',
-      one: '1 լրացուցիչ վերլուծություն',
+      one: '$count լրացուցիչ վերլուծություն',
     );
     return 'Ես բաժնետոմսերը վերլուծում եմ WhatStock-ով՝ լուսանկարում ես բաժնետոմսը, և AI-ն բացատրում է այն։ Իմ $code կոդով կստանաս $_temp0։';
   }
@@ -1636,7 +1636,7 @@ class AppLocalizationsHy extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days օր հետո',
-      one: '1 օր հետո',
+      one: '$days օր հետո',
     );
     return '$_temp0';
   }
@@ -1766,7 +1766,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Բաց թողնվեց $count տող',
-      one: 'Բաց թողնվեց 1 տող',
+      one: 'Բաց թողնվեց $count տող',
     );
     return '$_temp0';
   }
@@ -2103,7 +2103,7 @@ class AppLocalizationsHy extends AppLocalizations {
       locale: localeName,
       other:
           'EPS-ը սպասվածին հավասար կամ բարձր՝ վերջին $total եռամսյակից $beats-ում',
-      one: 'EPS-ը սպասվածին հավասար կամ բարձր՝ 1 եռամսյակից $beats-ում',
+      one: 'EPS-ը սպասվածին հավասար կամ բարձր՝ $total եռամսյակից $beats-ում',
     );
     return '$_temp0';
   }
@@ -2169,7 +2169,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ավելացնել $count դիրք',
-      one: 'Ավելացնել 1 դիրք',
+      one: 'Ավելացնել $count դիրք',
     );
     return '$_temp0';
   }
@@ -2223,7 +2223,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count գնում',
-      one: '1 գնում',
+      one: '$count գնում',
     );
     return '$_temp0';
   }
@@ -2234,7 +2234,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count վաճառք',
-      one: '1 վաճառք',
+      one: '$count վաճառք',
     );
     return '$_temp0';
   }
@@ -2396,7 +2396,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Սահմանվեց $count ծանուցում',
-      one: 'Սահմանվեց 1 ծանուցում',
+      one: 'Սահմանվեց $count ծանուցում',
     );
     return '$_temp0';
   }
@@ -2470,7 +2470,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ավելացվեց $count բաժնետոմս',
-      one: 'Ավելացվեց 1 բաժնետոմս',
+      one: 'Ավելացվեց $count բաժնետոմս',
       zero: 'Նոր բաժնետոմսեր չկան',
     );
     return '$_temp0';
@@ -2606,7 +2606,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count դիրք',
-      one: '1 դիրք',
+      one: '$count դիրք',
     );
     return '$_temp0';
   }
@@ -2673,7 +2673,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Սահմանվեց $count ծանուցում',
-      one: 'Սահմանվեց 1 ծանուցում',
+      one: 'Սահմանվեց $count ծանուցում',
       zero: 'Բոլոր դիրքերն արդեն ունեն այդ ծանուցումը',
     );
     return '$_temp0';
@@ -2852,7 +2852,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Մաքրվեց $count ծանուցում',
-      one: 'Մաքրվեց 1 ծանուցում',
+      one: 'Մաքրվեց $count ծանուցում',
     );
     return '$_temp0';
   }
@@ -2989,7 +2989,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ավելացվել է $count բաժնետոմսերի բաժանում',
-      one: 'Ավելացվել է 1 բաժնետոմսերի բաժանում',
+      one: 'Ավելացվել է $count բաժնետոմսերի բաժանում',
     );
     return '$_temp0';
   }
@@ -3000,7 +3000,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ավելացվել է $count շահաբաժին',
-      one: 'Ավելացվել է 1 շահաբաժին',
+      one: 'Ավելացվել է $count շահաբաժին',
     );
     return '$_temp0';
   }
@@ -3032,7 +3032,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Գործարկվել է $count ծանուցում',
-      one: 'Գործարկվել է 1 ծանուցում',
+      one: 'Գործարկվել է $count ծանուցում',
     );
     return '$_temp0';
   }

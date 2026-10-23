@@ -323,7 +323,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count تحلیلگر',
-      one: '1 تحلیلگر',
+      one: '$count تحلیلگر',
     );
     return '$_temp0';
   }
@@ -710,7 +710,7 @@ class AppLocalizationsFa extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days روز از دوره آزمایشی باقی مانده',
-      one: '1 روز از دوره آزمایشی باقی مانده',
+      one: '$days روز از دوره آزمایشی باقی مانده',
     );
     return '$_temp0';
   }
@@ -1387,7 +1387,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ساعت پیش',
-      one: '1 ساعت پیش',
+      one: '$count ساعت پیش',
     );
     return '$_temp0';
   }
@@ -1398,7 +1398,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count روز پیش',
-      one: '1 روز پیش',
+      one: '$count روز پیش',
     );
     return '$_temp0';
   }
@@ -1462,7 +1462,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count تحلیل اضافی',
-      one: '1 تحلیل اضافی',
+      one: '$count تحلیل اضافی',
     );
     return 'کد خود را به اشتراک بگذارید. دوستتان بلافاصله $_temp0 دریافت می‌کند و شما هم پس از نخستین تحلیل او همین مقدار را می‌گیرید.';
   }
@@ -1487,7 +1487,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count تحلیل اضافی افزوده شد. خوش آمدید!',
-      one: '1 تحلیل اضافی افزوده شد. خوش آمدید!',
+      one: '$count تحلیل اضافی افزوده شد. خوش آمدید!',
     );
     return '$_temp0';
   }
@@ -1508,7 +1508,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count تحلیل اضافی',
-      one: '1 تحلیل اضافی',
+      one: '$count تحلیل اضافی',
     );
     return 'من با WhatStock سهام را تحلیل می‌کنم: از یک سهم عکس بگیرید تا هوش مصنوعی آن را توضیح دهد. با کد من $code $_temp0 دریافت می‌کنید.';
   }
@@ -1627,7 +1627,7 @@ class AppLocalizationsFa extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days روز دیگر',
-      one: '1 روز دیگر',
+      one: '$days روز دیگر',
     );
     return '$_temp0';
   }
@@ -1757,7 +1757,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count خط نادیده گرفته شد',
-      one: '1 خط نادیده گرفته شد',
+      one: '$count خط نادیده گرفته شد',
     );
     return '$_temp0';
   }
@@ -2092,7 +2092,7 @@ class AppLocalizationsFa extends AppLocalizations {
       total,
       locale: localeName,
       other: 'برابر یا بالاتر از EPS مورد انتظار در $beats از $total فصل اخیر',
-      one: 'برابر یا بالاتر از EPS مورد انتظار در $beats از 1 فصل',
+      one: 'برابر یا بالاتر از EPS مورد انتظار در $beats از $total فصل',
     );
     return '$_temp0';
   }
@@ -2158,7 +2158,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'افزودن $count موقعیت',
-      one: 'افزودن 1 موقعیت',
+      one: 'افزودن $count موقعیت',
     );
     return '$_temp0';
   }
@@ -2212,7 +2212,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count خرید',
-      one: '1 خرید',
+      one: '$count خرید',
     );
     return '$_temp0';
   }
@@ -2223,7 +2223,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count فروش',
-      one: '1 فروش',
+      one: '$count فروش',
     );
     return '$_temp0';
   }
@@ -2385,7 +2385,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count هشدار تنظیم شد',
-      one: '1 هشدار تنظیم شد',
+      one: '$count هشدار تنظیم شد',
     );
     return '$_temp0';
   }
@@ -2459,7 +2459,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count سهم افزوده شد',
-      one: '1 سهم افزوده شد',
+      one: '$count سهم افزوده شد',
       zero: 'سهم جدیدی نیست',
     );
     return '$_temp0';
@@ -2594,7 +2594,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count موقعیت',
-      one: '1 موقعیت',
+      one: '$count موقعیت',
     );
     return '$_temp0';
   }
@@ -2660,7 +2660,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count حد ضرر متحرک تنظیم شد',
-      one: '1 حد ضرر متحرک تنظیم شد',
+      one: '$count حد ضرر متحرک تنظیم شد',
       zero: 'همه موقعیت‌ها از قبل حد ضرر متحرک دارند',
     );
     return '$_temp0';
@@ -2839,7 +2839,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count هشدار پاک شد',
-      one: '1 هشدار پاک شد',
+      one: '$count هشدار پاک شد',
     );
     return '$_temp0';
   }
@@ -2975,7 +2975,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count تجزیه سهام اضافه شد',
-      one: '1 تجزیه سهام اضافه شد',
+      one: '$count تجزیه سهام اضافه شد',
     );
     return '$_temp0';
   }
@@ -2986,7 +2986,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count سود سهام اضافه شد',
-      one: '1 سود سهام اضافه شد',
+      one: '$count سود سهام اضافه شد',
     );
     return '$_temp0';
   }
@@ -3018,7 +3018,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count هشدار فعال شد',
-      one: '۱ هشدار فعال شد',
+      one: '$count هشدار فعال شد',
     );
     return '$_temp0';
   }

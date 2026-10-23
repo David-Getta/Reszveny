@@ -325,7 +325,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count analystes',
-      one: '1 analyste',
+      one: '$count analyste',
     );
     return '$_temp0';
   }
@@ -718,7 +718,7 @@ class AppLocalizationsFr extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days jours d’essai restants',
-      one: '1 jour d’essai restant',
+      one: '$days jour d’essai restant',
     );
     return '$_temp0';
   }
@@ -860,7 +860,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'utilise $count analyses',
-      one: 'utilise 1 analyse',
+      one: 'utilise $count analyse',
     );
     return '$_temp0';
   }
@@ -895,7 +895,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Jusqu’à $count recherches web par analyse avec votre forfait',
-      one: 'Jusqu’à 1 recherche web par analyse avec votre forfait',
+      one: 'Jusqu’à $count recherche web par analyse avec votre forfait',
     );
     return '$_temp0';
   }
@@ -911,7 +911,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'jusqu’à $count recherches web',
-      one: 'jusqu’à 1 recherche web',
+      one: 'jusqu’à $count recherche web',
     );
     return '$_temp0';
   }
@@ -922,7 +922,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count recherches web par analyse',
-      one: '1 recherche web par analyse',
+      one: '$count recherche web par analyse',
     );
     return '$_temp0';
   }
@@ -1082,7 +1082,7 @@ class AppLocalizationsFr extends AppLocalizations {
       years,
       locale: localeName,
       other: '$years ans',
-      one: '1 an',
+      one: '$years an',
     );
     return '$_temp0';
   }
@@ -1397,7 +1397,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'il y a $count heures',
-      one: 'il y a 1 heure',
+      one: 'il y a $count heure',
     );
     return '$_temp0';
   }
@@ -1408,7 +1408,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'il y a $count jours',
-      one: 'il y a 1 jour',
+      one: 'il y a $count jour',
     );
     return '$_temp0';
   }
@@ -1472,7 +1472,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count analyses supplémentaires',
-      one: '1 analyse supplémentaire',
+      one: '$count analyse supplémentaire',
     );
     return 'Partagez votre code. Votre ami reçoit immédiatement $_temp0, et vous recevez la même chose après sa première analyse.';
   }
@@ -1497,7 +1497,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count analyses supplémentaires ajoutées. Bienvenue !',
-      one: '1 analyse supplémentaire ajoutée. Bienvenue !',
+      one: '$count analyse supplémentaire ajoutée. Bienvenue !',
     );
     return '$_temp0';
   }
@@ -1518,7 +1518,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count analyses supplémentaires',
-      one: '1 analyse supplémentaire',
+      one: '$count analyse supplémentaire',
     );
     return 'J’analyse des actions avec WhatStock : photographiez une action et l’IA vous l’explique. Avec mon code $code, vous obtenez $_temp0.';
   }
@@ -1639,7 +1639,7 @@ class AppLocalizationsFr extends AppLocalizations {
       days,
       locale: localeName,
       other: 'dans $days jours',
-      one: 'dans 1 jour',
+      one: 'dans $days jour',
     );
     return '$_temp0';
   }
@@ -1770,7 +1770,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count lignes ignorées',
-      one: '1 ligne ignorée',
+      one: '$count ligne ignorée',
     );
     return '$_temp0';
   }
@@ -2107,7 +2107,7 @@ class AppLocalizationsFr extends AppLocalizations {
       locale: localeName,
       other:
           'Égal ou supérieur au BPA attendu sur $beats des $total derniers trimestres',
-      one: 'Égal ou supérieur au BPA attendu sur $beats trimestre sur 1',
+      one: 'Égal ou supérieur au BPA attendu sur $beats trimestre sur $total',
     );
     return '$_temp0';
   }
@@ -2173,7 +2173,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ajouter $count positions',
-      one: 'Ajouter 1 position',
+      one: 'Ajouter $count position',
     );
     return '$_temp0';
   }
@@ -2227,7 +2227,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count achats',
-      one: '1 achat',
+      one: '$count achat',
     );
     return '$_temp0';
   }
@@ -2238,7 +2238,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ventes',
-      one: '1 vente',
+      one: '$count vente',
     );
     return '$_temp0';
   }
@@ -2400,7 +2400,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count alertes créées',
-      one: '1 alerte créée',
+      one: '$count alerte créée',
     );
     return '$_temp0';
   }
@@ -2475,7 +2475,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count actions ajoutées',
-      one: '1 action ajoutée',
+      one: '$count action ajoutée',
       zero: 'Aucune nouvelle action',
     );
     return '$_temp0';
@@ -2610,7 +2610,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count positions',
-      one: '1 position',
+      one: '$count position',
     );
     return '$_temp0';
   }
@@ -2676,7 +2676,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count stops suiveurs créés',
-      one: '1 stop suiveur créé',
+      one: '$count stop suiveur créé',
       zero: 'Toutes les positions ont déjà un stop suiveur',
     );
     return '$_temp0';
@@ -2855,7 +2855,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count alertes effacées',
-      one: '1 alerte effacée',
+      one: '$count alerte effacée',
     );
     return '$_temp0';
   }
@@ -2992,7 +2992,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count divisions d’actions ajoutées',
-      one: '1 division d’actions ajoutée',
+      one: '$count division d’actions ajoutée',
     );
     return '$_temp0';
   }
@@ -3003,7 +3003,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dividendes ajoutés',
-      one: '1 dividende ajouté',
+      one: '$count dividende ajouté',
     );
     return '$_temp0';
   }
@@ -3035,7 +3035,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count alertes déclenchées',
-      one: '1 alerte déclenchée',
+      one: '$count alerte déclenchée',
     );
     return '$_temp0';
   }

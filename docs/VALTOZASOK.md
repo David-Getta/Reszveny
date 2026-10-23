@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.237)
+# Változásjegyzék (0.2.130 → 0.2.238)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -140,6 +140,10 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   ékezetes számlanevek is jók legyenek; weben letöltésként. A saját import mindkét formát visszaolvassa.
 - **Az import visszavonható**: a végén megjelenő sávon egy koppintással mindaz törlődik, amit az import felvett
   (tranzakciók, osztalékok, felaprózások) – egy rossz fájl után nem kell tételenként takarítani.
+- **Darabszámok helyesen 26 nyelven**: ahol a nyelv „egyes” alakja más számot is jelent (franciául, portugálul,
+  hindiül a 0-t, oroszul, ukránul, horvátul a 21-et, 31-et, lettül a 10–20-at is), eddig „1 sor kihagyva” látszhatott
+  0 vagy 21 sorra; most mindenütt a tényleges szám áll (a szingaléz és zulu szövegek átírva), és egy teszt minden
+  nyelvre ellenőrzi.
 - **Javítások egy harmadik kódátnézés nyomán**: tranzakció vagy osztalék javítása után a portfólió oldal
   összesítői, az értékalakulás és az események is frissülnek (eddig az azonosító szerinti kulcs miatt a régi számok
   maradtak); a dátum nélküli tétel javításkor nem kap mai dátumot (különben egy későbbi eladás elé kerülhetett), a

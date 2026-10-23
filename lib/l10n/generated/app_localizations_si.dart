@@ -322,7 +322,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'විශ්ලේෂකයින් $count දෙනෙක්',
-      one: 'එක් විශ්ලේෂකයෙක්',
+      one: 'විශ්ලේෂකයින් $count දෙනෙක්',
     );
     return '$_temp0';
   }
@@ -712,7 +712,7 @@ class AppLocalizationsSi extends AppLocalizations {
       days,
       locale: localeName,
       other: 'අත්හදා බැලීමට තව දින $days ඉතිරියි',
-      one: 'අත්හදා බැලීමට තව දිනයක් ඉතිරියි',
+      one: 'අත්හදා බැලීමට තව දින $days ඉතිරියි',
     );
     return '$_temp0';
   }
@@ -853,7 +853,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'විශ්ලේෂණ $countක් වැය වේ',
-      one: 'විශ්ලේෂණ 1ක් වැය වේ',
+      one: 'විශ්ලේෂණ $countක් වැය වේ',
     );
     return '$_temp0';
   }
@@ -887,7 +887,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ඔබේ සැලසුම සමඟ විශ්ලේෂණයකට වෙබ් සෙවීම් $countක් දක්වා',
-      one: 'ඔබේ සැලසුම සමඟ විශ්ලේෂණයකට වෙබ් සෙවීම් 1ක් දක්වා',
+      one: 'ඔබේ සැලසුම සමඟ විශ්ලේෂණයකට වෙබ් සෙවීම් $countක් දක්වා',
     );
     return '$_temp0';
   }
@@ -903,7 +903,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'වෙබ් සෙවීම් $countක් දක්වා',
-      one: 'වෙබ් සෙවීම් 1ක් දක්වා',
+      one: 'වෙබ් සෙවීම් $countක් දක්වා',
     );
     return '$_temp0';
   }
@@ -914,7 +914,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'විශ්ලේෂණයකට වෙබ් සෙවීම් $count',
-      one: 'විශ්ලේෂණයකට වෙබ් සෙවීම් 1',
+      one: 'විශ්ලේෂණයකට වෙබ් සෙවීම් $count',
     );
     return '$_temp0';
   }
@@ -1074,7 +1074,7 @@ class AppLocalizationsSi extends AppLocalizations {
       years,
       locale: localeName,
       other: 'වසර $years',
-      one: 'වසර 1',
+      one: 'වසර $years',
     );
     return '$_temp0';
   }
@@ -1389,7 +1389,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'පැය $countකට පෙර',
-      one: 'පැයකට පෙර',
+      one: 'පැය $countකට පෙර',
     );
     return '$_temp0';
   }
@@ -1400,7 +1400,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'දින $countකට පෙර',
-      one: 'දිනකට පෙර',
+      one: 'දින $countකට පෙර',
     );
     return '$_temp0';
   }
@@ -1463,7 +1463,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'අමතර විශ්ලේෂණ $countක්',
-      one: 'අමතර විශ්ලේෂණයක්',
+      one: 'අමතර විශ්ලේෂණ $countක්',
     );
     return 'ඔබේ කේතය බෙදාගන්න. ඔබේ මිතුරාට වහාම $_temp0 ලැබෙන අතර, ඔවුන්ගේ පළමු විශ්ලේෂණයෙන් පසු ඔබටත් එපමණම ලැබේ.';
   }
@@ -1488,7 +1488,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'අමතර විශ්ලේෂණ $countක් එක් කළා. සාදරයෙන් පිළිගනිමු!',
-      one: 'අමතර විශ්ලේෂණයක් එක් කළා. සාදරයෙන් පිළිගනිමු!',
+      one: 'අමතර විශ්ලේෂණ $countක් එක් කළා. සාදරයෙන් පිළිගනිමු!',
     );
     return '$_temp0';
   }
@@ -1509,7 +1509,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'අමතර විශ්ලේෂණ $countක්',
-      one: 'අමතර විශ්ලේෂණයක්',
+      one: 'අමතර විශ්ලේෂණ $countක්',
     );
     return 'මම WhatStock සමඟ කොටස් විශ්ලේෂණය කරමි: කොටසක ඡායාරූපයක් ගන්න, AI එය පැහැදිලි කරයි. මගේ $code කේතය සමඟ ඔබට $_temp0 ලැබේ.';
   }
@@ -1628,7 +1628,7 @@ class AppLocalizationsSi extends AppLocalizations {
       days,
       locale: localeName,
       other: 'දින $daysකින්',
-      one: 'දින 1කින්',
+      one: 'දින $daysකින්',
     );
     return '$_temp0';
   }
@@ -1758,7 +1758,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'පේළි $countක් මඟ හැරියා',
-      one: 'පේළියක් මඟ හැරියා',
+      one: 'පේළි $countක් මඟ හැරියා',
     );
     return '$_temp0';
   }
@@ -2093,7 +2093,7 @@ class AppLocalizationsSi extends AppLocalizations {
       total,
       locale: localeName,
       other: 'පසුගිය කාර්තු $totalන් $beatsක අපේක්ෂිත EPS හා සමාන හෝ ඉහළ',
-      one: 'කාර්තු 1කින් $beatsක අපේක්ෂිත EPS හා සමාන හෝ ඉහළ',
+      one: 'කාර්තු $totalකින් $beatsක අපේක්ෂිත EPS හා සමාන හෝ ඉහළ',
     );
     return '$_temp0';
   }
@@ -2159,7 +2159,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'හිමිකම් $countක් එක් කරන්න',
-      one: 'හිමිකම් 1ක් එක් කරන්න',
+      one: 'හිමිකම් $countක් එක් කරන්න',
     );
     return '$_temp0';
   }
@@ -2213,7 +2213,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'මිලදී ගැනීම් $count',
-      one: 'මිලදී ගැනීම් 1',
+      one: 'මිලදී ගැනීම් $count',
     );
     return '$_temp0';
   }
@@ -2224,7 +2224,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'විකුණුම් $count',
-      one: 'විකුණුම් 1',
+      one: 'විකුණුම් $count',
     );
     return '$_temp0';
   }
@@ -2386,7 +2386,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ඇඟවීම් $countක් සැකසුවා',
-      one: 'ඇඟවීමක් සැකසුවා',
+      one: 'ඇඟවීම් $countක් සැකසුවා',
     );
     return '$_temp0';
   }
@@ -2460,7 +2460,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'කොටස් $countක් එක් කළා',
-      one: 'කොටසක් එක් කළා',
+      one: 'කොටස් $countක් එක් කළා',
       zero: 'නව කොටස් නැත',
     );
     return '$_temp0';
@@ -2661,7 +2661,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ඇඟවීම් $countක් සැකසුවා',
-      one: 'ඇඟවීමක් සැකසුවා',
+      one: 'ඇඟවීම් $countක් සැකසුවා',
       zero: 'සෑම ස්ථානයකටම දැනටමත් මෙම ඇඟවීම ඇත',
     );
     return '$_temp0';
@@ -2840,7 +2840,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ඇඟවීම් $countක් ඉවත් කළා',
-      one: 'ඇඟවීමක් ඉවත් කළා',
+      one: 'ඇඟවීම් $countක් ඉවත් කළා',
     );
     return '$_temp0';
   }
@@ -2976,7 +2976,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'කොටස් බෙදීම් $countක් එක් කළා',
-      one: 'කොටස් බෙදීම් 1ක් එක් කළා',
+      one: 'කොටස් බෙදීම් $countක් එක් කළා',
     );
     return '$_temp0';
   }
@@ -2987,7 +2987,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ලාභාංශ $countක් එක් කළා',
-      one: 'ලාභාංශ 1ක් එක් කළා',
+      one: 'ලාභාංශ $countක් එක් කළා',
     );
     return '$_temp0';
   }
@@ -3019,7 +3019,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ඇඟවීම් $countක් ක්‍රියාත්මක විය',
-      one: 'ඇඟවීම් 1ක් ක්‍රියාත්මක විය',
+      one: 'ඇඟවීම් $countක් ක්‍රියාත්මක විය',
     );
     return '$_temp0';
   }
