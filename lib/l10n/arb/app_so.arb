@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Ka saar tusaalaha",
   "portfolioStopsAll": "Digniinta hoos u dhaca heerka ugu sarreeya ee dhammaan haysashooyinka",
   "portfolioStopsDone": "{count, plural, =0{Haysasho kastaa horeba way leedahay digniintan} =1{1 digniin ayaa la dejiyay} other{{count} digniin ayaa la dejiyay}}",
-  "portfolioSinceSale": "{percent} tan iyo markii aad iibisay"
+  "portfolioSinceSale": "{percent} tan iyo markii aad iibisay",
+  "lotPreviewRealized": "Lagu xaqiijiyay iibkan (FIFO):",
+  "lotPreviewAverage": "Kharashka celceliska cusub: {after} (hadda {before})"
 }

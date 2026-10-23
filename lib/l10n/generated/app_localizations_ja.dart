@@ -2595,6 +2595,14 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'この売却の実現損益（FIFO）：';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return '新しい平均取得単価：$after（現在 $before）';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

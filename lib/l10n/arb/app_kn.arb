@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "ಮಾದರಿ ತೆಗೆದುಹಾಕಿ",
   "portfolioStopsAll": "ಎಲ್ಲ ಪೊಸಿಷನ್‌ಗಳಿಗೆ ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್",
   "portfolioStopsDone": "{count, plural, =0{ಎಲ್ಲ ಪೊಸಿಷನ್‌ಗಳಿಗೂ ಈಗಾಗಲೇ ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್ ಇದೆ} =1{1 ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್ ಹೊಂದಿಸಲಾಗಿದೆ} other{{count} ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್‌ಗಳನ್ನು ಹೊಂದಿಸಲಾಗಿದೆ}}",
-  "portfolioSinceSale": "ಮಾರಾಟದ ನಂತರ {percent}"
+  "portfolioSinceSale": "ಮಾರಾಟದ ನಂತರ {percent}",
+  "lotPreviewRealized": "ಈ ಮಾರಾಟದ ವಾಸ್ತವಿಕ ಲಾಭ-ನಷ್ಟ (FIFO):",
+  "lotPreviewAverage": "ಹೊಸ ಸರಾಸರಿ ವೆಚ್ಚ: {after} (ಈಗ {before})"
 }

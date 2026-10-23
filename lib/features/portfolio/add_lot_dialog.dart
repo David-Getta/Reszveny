@@ -6,7 +6,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/date_picker_row.dart';
 import 'account_field.dart';
-import 'portfolio_store.dart' show largestKey;
+import 'portfolio_store.dart' show PortfolioLot, largestKey;
 
 /// Szám a beviteli mezőbe: pont tizedesjellel, ezres tagolás nélkül, amit a
 /// [parseDecimal] változatlanul visszaolvas.
@@ -128,6 +128,65 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     super.initState();
     final p = widget.currentPrice;
     _price = TextEditingController(text: p == null ? '' : plainNumber(p));
+    // Az előnézet minden beírásra frissül (a „Mind” gomb kitöltésére is).
+    for (final c in [_quantity, _price, _fee]) {
+      c.addListener(_changed);
+    }
+  }
+
+  void _changed() => setState(() {});
+
+  /// Az előnézet: vételnél az új átlagár (ha már van a részvényből), eladásnál a
+  /// FIFO szerint várható realizált eredmény (a díjjal); `null`, ha még nem érvényes
+  /// a darabszám vagy az ár.
+  Widget? _preview(AppLocalizations l10n, Fmt fmt, AppPalette p, ThemeData theme) {
+    final q = parseDecimal(_quantity.text), price = parseDecimal(_price.text);
+    final fee = _fee.text.trim().isEmpty ? 0.0 : parseDecimal(_fee.text);
+    if (q == null || q <= 0 || price == null || price <= 0 || fee == null || fee < 0) return null;
+    if (_sellMax case final max? when q > max + 1e-9) return null;
+    final store = AppServices.of(context).portfolio;
+    final account = store.canonicalAccount(widget.sell ? _sellFrom : (_showAccount ? _account : null));
+    final lot = PortfolioLot(
+      id: '',
+      symbol: widget.symbol.toUpperCase(),
+      quantity: q,
+      price: price,
+      currency: widget.currency,
+      date: _date,
+      sell: widget.sell,
+      account: account,
+      fee: fee,
+    );
+    final style = theme.textTheme.bodySmall?.copyWith(color: p.muted);
+    if (widget.sell) {
+      // Az egész részvényen mérve: egy korábbi napra írt eladás a későbbiek párosítását is módosíthatja.
+      final (:before, :after) = store.preview(lot);
+      final gain = after.realizedGain - (before?.realizedGain ?? 0);
+      return Text.rich(
+        key: const ValueKey('lot-preview'),
+        TextSpan(
+          text: '${l10n.lotPreviewRealized} ',
+          children: [
+            TextSpan(
+              text: fmt.money(gain, widget.currency, withSign: true),
+              style: TextStyle(color: gainColor(p, gain), fontWeight: FontWeight.w600),
+            ),
+          ],
+        ),
+        style: style,
+      );
+    }
+    // Vételnél abban a nézetben, ahonnan a dialógus nyílt (számla-nézetben a vétel számlájáé).
+    final (:before, :after) = store.preview(lot, view: widget.account == null ? null : account);
+    if (before == null || before.isClosed) return null;
+    return Text(
+      l10n.lotPreviewAverage(
+        fmt.money(after.averageCost, widget.currency),
+        fmt.money(before.averageCost, widget.currency),
+      ),
+      key: const ValueKey('lot-preview'),
+      style: style,
+    );
   }
 
   @override
@@ -251,7 +310,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
               AccountField(
                 fieldKey: const ValueKey('lot-account'),
                 initial: widget.account,
-                onChanged: (v) => _account = v,
+                onChanged: (v) => setState(() => _account = v),
                 onSubmitted: _submit,
               ),
             // Díj (jutalék) egy összegben: ha már van díjas tranzakció, rögtön látszik.
@@ -288,6 +347,8 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                     ),
                 ],
               ),
+            // Mi változik: az új átlagár, illetve az eladás várható realizált eredménye.
+            if (_preview(l10n, fmt, p, theme) case final preview?) ...[const SizedBox(height: 12), preview],
           ],
         ),
       ),

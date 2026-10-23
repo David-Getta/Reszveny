@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Ondoa mfano",
   "portfolioStopsAll": "Arifa ya kushuka kutoka kilele kwa nafasi zote",
   "portfolioStopsDone": "{count, plural, =0{Kila nafasi tayari ina arifa hii} =1{Arifa 1 imewekwa} other{Arifa {count} zimewekwa}}",
-  "portfolioSinceSale": "{percent} tangu ulipouza"
+  "portfolioSinceSale": "{percent} tangu ulipouza",
+  "lotPreviewRealized": "Halisi kwenye mauzo haya (FIFO):",
+  "lotPreviewAverage": "Gharama mpya ya wastani: {after} (sasa {before})"
 }

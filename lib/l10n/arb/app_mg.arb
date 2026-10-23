@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Esory ny santionany",
   "portfolioStopsAll": "Fampitandremana fidinana avy amin'ny tampony ho an'ny fananana rehetra",
   "portfolioStopsDone": "{count, plural, =0{Efa manana io fampitandremana io ny fananana rehetra} =1{Napetraka ny fampitandremana 1} other{Napetraka ny fampitandremana {count}}}",
-  "portfolioSinceSale": "{percent} hatramin'ny nivarotanao"
+  "portfolioSinceSale": "{percent} hatramin'ny nivarotanao",
+  "lotPreviewRealized": "Tena azo tamin'ity fivarotana ity (FIFO):",
+  "lotPreviewAverage": "Vidiny antonony vaovao: {after} (amin'izao {before})"
 }

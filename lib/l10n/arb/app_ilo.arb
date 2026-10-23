@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Ikkaten ti sample",
   "portfolioStopsAll": "Trailing stop para iti amin a posision",
   "portfolioStopsDone": "{count, plural, =0{Addan trailing stop ti tunggal posision} =1{Naikabil ti 1 a trailing stop} other{Naikabil ti {count} a trailing stop}}",
-  "portfolioSinceSale": "{percent} manipud idi inlakom"
+  "portfolioSinceSale": "{percent} manipud idi inlakom",
+  "lotPreviewRealized": "Narealisar iti daytoy a panaglako (FIFO):",
+  "lotPreviewAverage": "Baro a promedio a gastos: {after} (ita {before})"
 }

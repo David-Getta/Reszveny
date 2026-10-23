@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Видалити демо-портфель",
   "portfolioStopsAll": "Трейлінг-стоп для всіх позицій",
   "portfolioStopsDone": "{count, plural, =0{Усі позиції вже мають трейлінг-стоп} =1{Встановлено 1 трейлінг-стоп} one{Встановлено {count} трейлінг-стоп} few{Встановлено {count} трейлінг-стопи} many{Встановлено {count} трейлінг-стопів} other{Встановлено {count} трейлінг-стопа}}",
-  "portfolioSinceSale": "{percent} від продажу"
+  "portfolioSinceSale": "{percent} від продажу",
+  "lotPreviewRealized": "Реалізовано за цим продажем (FIFO):",
+  "lotPreviewAverage": "Нова середня ціна купівлі: {after} (зараз {before})"
 }

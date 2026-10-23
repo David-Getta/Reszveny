@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Tloša mohlala",
   "portfolioStopsAll": "Temošo ya go wela go tšwa godimodimo go maemo ka moka",
   "portfolioStopsDone": "{count, plural, =0{Boemo bjo bongwe le bjo bongwe bo šetše bo na le temošo ye} =1{Go beilwe temošo e 1} other{Go beilwe ditemošo tše {count}}}",
-  "portfolioSinceSale": "{percent} go tloga ge o rekišitše"
+  "portfolioSinceSale": "{percent} go tloga ge o rekišitše",
+  "lotPreviewRealized": "E phethagetšego thekišong ye (FIFO):",
+  "lotPreviewAverage": "Theko ye mpsha ya magareng: {after} (bjale {before})"
 }

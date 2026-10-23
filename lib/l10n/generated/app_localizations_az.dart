@@ -2677,6 +2677,14 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Bu satışda reallaşan (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Yeni orta qiymət: $after (hazırda $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

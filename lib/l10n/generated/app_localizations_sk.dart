@@ -2745,6 +2745,14 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Realizované týmto predajom (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Nová priemerná nákupná cena: $after (teraz $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

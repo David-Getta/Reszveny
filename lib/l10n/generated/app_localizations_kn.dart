@@ -2682,6 +2682,14 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'ಈ ಮಾರಾಟದ ವಾಸ್ತವಿಕ ಲಾಭ-ನಷ್ಟ (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'ಹೊಸ ಸರಾಸರಿ ವೆಚ್ಚ: $after (ಈಗ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

@@ -2690,6 +2690,14 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Kay rantikuypi chiqaqpi tarisqa (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Musuq chawpi chanin: $after (kunan $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

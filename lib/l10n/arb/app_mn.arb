@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Жишээг хасах",
   "portfolioStopsAll": "Бүх эзэмшилд оргилоос унах сэрэмжлүүлэг",
   "portfolioStopsDone": "{count, plural, =0{Бүх эзэмшилд энэ сэрэмжлүүлэг аль хэдийн байна} =1{1 сэрэмжлүүлэг тохирууллаа} other{{count} сэрэмжлүүлэг тохирууллаа}}",
-  "portfolioSinceSale": "{percent} зарснаас хойш"
+  "portfolioSinceSale": "{percent} зарснаас хойш",
+  "lotPreviewRealized": "Энэ борлуулалтын бодит үр дүн (FIFO):",
+  "lotPreviewAverage": "Шинэ дундаж өртөг: {after} (одоо {before})"
 }

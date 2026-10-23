@@ -2669,6 +2669,14 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Đã thực hiện từ lần bán này (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Giá vốn TB mới: $after (hiện tại $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

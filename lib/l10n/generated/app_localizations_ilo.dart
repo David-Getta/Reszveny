@@ -2697,6 +2697,14 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Narealisar iti daytoy a panaglako (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Baro a promedio a gastos: $after (ita $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

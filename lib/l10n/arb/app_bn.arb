@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "নমুনা সরান",
   "portfolioStopsAll": "সব অবস্থানে ট্রেইলিং স্টপ",
   "portfolioStopsDone": "{count, plural, =0{প্রতিটি অবস্থানে ইতিমধ্যে ট্রেইলিং স্টপ আছে} =1{1টি ট্রেইলিং স্টপ সেট হয়েছে} other{{count}টি ট্রেইলিং স্টপ সেট হয়েছে}}",
-  "portfolioSinceSale": "বিক্রির পর থেকে {percent}"
+  "portfolioSinceSale": "বিক্রির পর থেকে {percent}",
+  "lotPreviewRealized": "এই বিক্রিতে আদায়কৃত (FIFO):",
+  "lotPreviewAverage": "নতুন গড় ক্রয়মূল্য: {after} (এখন {before})"
 }

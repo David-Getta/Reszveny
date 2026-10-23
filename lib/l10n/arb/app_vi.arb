@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Xóa danh mục mẫu",
   "portfolioStopsAll": "Trailing stop cho tất cả vị thế",
   "portfolioStopsDone": "{count, plural, =0{Mọi vị thế đã có trailing stop} =1{Đã đặt 1 trailing stop} other{Đã đặt {count} trailing stop}}",
-  "portfolioSinceSale": "{percent} kể từ khi bán"
+  "portfolioSinceSale": "{percent} kể từ khi bán",
+  "lotPreviewRealized": "Đã thực hiện từ lần bán này (FIFO):",
+  "lotPreviewAverage": "Giá vốn TB mới: {after} (hiện tại {before})"
 }

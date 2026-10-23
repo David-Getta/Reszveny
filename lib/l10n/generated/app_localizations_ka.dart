@@ -2676,6 +2676,14 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'ამ გაყიდვით რეალიზებული (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'ახალი საშუალო ფასი: $after (ახლა $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

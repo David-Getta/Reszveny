@@ -2559,6 +2559,14 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => '本次卖出已实现（FIFO）：';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return '新平均成本：$after（当前 $before）';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5484,6 +5492,14 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String portfolioSinceSale(String percent) {
     return '賣出後 $percent';
+  }
+
+  @override
+  String get lotPreviewRealized => '今次賣出已實現（FIFO）：';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return '新平均成本：$after（現時 $before）';
   }
 
   @override

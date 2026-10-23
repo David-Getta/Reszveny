@@ -2747,6 +2747,14 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Realizirano s to prodajo (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Nova povprečna cena: $after (zdaj $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

@@ -2605,6 +2605,14 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => '이번 매도 실현 손익(FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return '새 평균 단가: $after (현재 $before)';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

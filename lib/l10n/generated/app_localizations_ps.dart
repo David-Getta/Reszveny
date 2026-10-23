@@ -2668,6 +2668,14 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'په دې پلور کې تحقق شوې (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'نوی منځنی لګښت: $after (اوس $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

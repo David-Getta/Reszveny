@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Kuhaa ang sample",
   "portfolioStopsAll": "Trailing stop para sa tanan nga posisyon",
   "portfolioStopsDone": "{count, plural, =0{May trailing stop na ang kada posisyon} =1{Gin-set ang 1 ka trailing stop} other{Gin-set ang {count} ka trailing stop}}",
-  "portfolioSinceSale": "{percent} halin sang ginbaligya mo"
+  "portfolioSinceSale": "{percent} halin sang ginbaligya mo",
+  "lotPreviewRealized": "Narealisar sa sini nga pagbaligya (FIFO):",
+  "lotPreviewAverage": "Bag-o nga average nga gasto: {after} (subong {before})"
 }

@@ -2688,6 +2688,14 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Narealisar niining baligya (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Bag-ong kasagarang gasto: $after (karon $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

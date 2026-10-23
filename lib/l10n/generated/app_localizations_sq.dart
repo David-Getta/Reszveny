@@ -2682,6 +2682,14 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Realizuar nga kjo shitje (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Kosto e re mesatare: $after (tani $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

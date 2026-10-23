@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Poista esimerkki",
   "portfolioStopsAll": "Liukuva stop kaikille omistuksille",
   "portfolioStopsDone": "{count, plural, =0{Kaikilla omistuksilla on jo liukuva stop} =1{1 liukuva stop asetettu} other{{count} liukuvaa stopia asetettu}}",
-  "portfolioSinceSale": "{percent} myynnin jälkeen"
+  "portfolioSinceSale": "{percent} myynnin jälkeen",
+  "lotPreviewRealized": "Toteutunut tästä myynnistä (FIFO):",
+  "lotPreviewAverage": "Uusi keskihinta: {after} (nyt {before})"
 }

@@ -2686,6 +2686,14 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Realitzat en aquesta venda (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Nou cost mitjà: $after (ara $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

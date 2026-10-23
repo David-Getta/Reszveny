@@ -559,6 +559,9 @@ void main() {
     expect(find.text('Enter a number greater than zero.'), findsOneWidget);
     await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '10');
     await tester.enterText(find.byKey(const ValueKey('lot-price')), '200');
+    await tester.pump();
+    // Az első vételnél nincs mihez mérni: nincs előnézet.
+    expect(find.byKey(const ValueKey('lot-preview')), findsNothing);
     await tester.tap(find.widgetWithText(FilledButton, 'Add'));
     await tester.pumpAndSettle();
 
@@ -568,6 +571,16 @@ void main() {
     expect(find.text('+314.50 USD'), findsOneWidget); // 10 × 231,45 − 2 000
     expect(s.analysisOptions(symbol: 'AAPL').position!.averageCost, 200);
     expect(s.analysisOptions(symbol: 'MSFT').position, isNull);
+    // A következő vételnél az előnézet az új átlagárat mutatja.
+    await tester.tap(find.byTooltip('Add to portfolio'));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '10');
+    await tester.enterText(find.byKey(const ValueKey('lot-price')), '100');
+    await tester.pump();
+    expect(find.text('New average cost: 150.00 USD (now 200.00 USD)'), findsOneWidget);
+    await tester.tap(find.text('Cancel'));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.positionOf('AAPL')!.quantity, 10);
 
     await tester.pageBack();
     await tester.pumpAndSettle();
@@ -743,8 +756,13 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('lot-submit')));
     await tester.pumpAndSettle();
     expect(find.text('You hold 10'), findsOneWidget);
+    // Túl sok darabra nincs előnézet.
+    expect(find.byKey(const ValueKey('lot-preview')), findsNothing);
     await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '4');
     await tester.enterText(find.byKey(const ValueKey('lot-price')), '250');
+    await tester.pump();
+    // Az eladás előtt látszik, mennyi lesz a realizált eredmény (FIFO).
+    expect(find.text('Realized on this sale (FIFO): +200.00 USD'), findsOneWidget);
     await tester.tap(find.byKey(const ValueKey('lot-submit')));
     await tester.pumpAndSettle();
     expect(s.portfolio.positionOf('AAPL')!.quantity, 6);
@@ -1281,4 +1299,49 @@ void main() {
     expect(find.byKey(const ValueKey('lot-account')), findsOneWidget);
     expect(find.byKey(const ValueKey('lot-fee')), findsOneWidget, reason: 'ha már volt díj, az is');
   });
+
+  test(
+    'preview of a transaction: average in the account view, after a split, realized of a sale with its fee',
+    () async {
+      final store = PortfolioStore();
+      await store.add(
+        symbol: 'NVDA',
+        quantity: 10,
+        price: 100,
+        currency: 'USD',
+        date: DateTime(2024, 1, 2),
+        account: 'TBSZ',
+      );
+      await store.add(symbol: 'NVDA', quantity: 5, price: 200, currency: 'USD', date: DateTime(2024, 3, 1));
+      await store.addSplit(symbol: 'NVDA', from: 1, to: 2, date: DateTime(2024, 6, 1));
+      PortfolioLot lot(double q, double price, DateTime date, {String? account, bool sell = false, double fee = 0}) =>
+          PortfolioLot(
+            id: '',
+            symbol: 'NVDA',
+            quantity: q,
+            price: price,
+            currency: 'USD',
+            date: date,
+            account: account,
+            sell: sell,
+            fee: fee,
+          );
+      // A TBSZ nézetében: 20 × 50 után még 20 × 80.
+      var p = store.preview(lot(20, 80, DateTime(2024, 7, 1), account: 'TBSZ'), view: 'TBSZ');
+      expect(p.before!.averageCost, 50);
+      expect(p.after.averageCost, 65);
+      // A felaprózás előtti napra írt vétel is igazodik: 10 × 120 → 20 × 60.
+      p = store.preview(lot(10, 120, DateTime(2024, 2, 1), account: 'TBSZ'), view: 'TBSZ');
+      expect(p.after.averageCost, 55);
+      // Minden számla: (1000 + 1000 + 3000) / 60.
+      p = store.preview(lot(30, 100, DateTime(2024, 7, 1)));
+      expect(p.before!.averageCost, closeTo(2000 / 30, 1e-9));
+      expect(p.after.averageCost, closeTo(5000 / 60, 1e-9));
+      // Eladás a TBSZ-ről a díjjal: 5 × 70 − 10 − 5 × 50.
+      p = store.preview(lot(5, 70, DateTime(2024, 8, 1), account: 'TBSZ', sell: true, fee: 10));
+      expect(p.after.realizedGain - p.before!.realizedGain, closeTo(90, 1e-9));
+      // A tároló nem változik.
+      expect(store.lots, hasLength(2));
+    },
+  );
 }

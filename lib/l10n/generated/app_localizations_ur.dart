@@ -2675,6 +2675,14 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'اس فروخت پر حاصل شدہ (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'نئی اوسط لاگت: $after (فی الحال $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

@@ -2679,6 +2679,14 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'بۇ قېتىملىق سېتىشتا ئەمەلگە ئاشقان (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'يېڭى ئوتتۇرىچە تەننەرخ: $after (ھازىر $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

@@ -2687,6 +2687,14 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'இந்த விற்பனையில் ஈட்டியது (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'புதிய சராசரி விலை: $after (தற்போது $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

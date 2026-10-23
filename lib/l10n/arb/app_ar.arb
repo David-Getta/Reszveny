@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "إزالة المحفظة النموذجية",
   "portfolioStopsAll": "وقف متحرك لجميع المراكز",
   "portfolioStopsDone": "{count, plural, =0{لدى كل المراكز وقف متحرك بالفعل} =1{تم ضبط وقف متحرك لمركز واحد} =2{تم ضبط وقف متحرك لمركزين} few{تم ضبط وقف متحرك لـ {count} مراكز} many{تم ضبط وقف متحرك لـ {count} مركزًا} other{تم ضبط وقف متحرك لـ {count} مركز}}",
-  "portfolioSinceSale": "{percent} منذ البيع"
+  "portfolioSinceSale": "{percent} منذ البيع",
+  "lotPreviewRealized": "المحقق من هذا البيع (FIFO):",
+  "lotPreviewAverage": "متوسط التكلفة الجديد: {after} (حاليًا {before})"
 }

@@ -2718,6 +2718,14 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Realizēts šajā pārdošanā (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Jaunā vidējā cena: $after (tagad $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

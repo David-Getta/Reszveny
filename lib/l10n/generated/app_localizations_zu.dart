@@ -2688,6 +2688,14 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Okutholakele kulokhu kuthengisa (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Izindleko ezintsha ezimaphakathi: $after (manje $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

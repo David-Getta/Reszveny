@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "नमुना काढा",
   "portfolioStopsAll": "सर्व पोझिशन्ससाठी ट्रेलिंग स्टॉप",
   "portfolioStopsDone": "{count, plural, =0{प्रत्येक पोझिशनवर आधीच ट्रेलिंग स्टॉप आहे} =1{1 ट्रेलिंग स्टॉप सेट केला} other{{count} ट्रेलिंग स्टॉप सेट केले}}",
-  "portfolioSinceSale": "विकल्यापासून {percent}"
+  "portfolioSinceSale": "विकल्यापासून {percent}",
+  "lotPreviewRealized": "या विक्रीवर प्राप्त (FIFO):",
+  "lotPreviewAverage": "नवीन सरासरी खर्च: {after} (सध्या {before})"
 }

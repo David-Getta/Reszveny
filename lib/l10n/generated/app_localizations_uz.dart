@@ -2680,6 +2680,14 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Ushbu sotuvda amalga oshgan (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Yangi oʻrtacha narx: $after (hozir $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

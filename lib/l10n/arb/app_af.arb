@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Verwyder voorbeeld",
   "portfolioStopsAll": "Daal-van-piek-alarm vir alle posisies",
   "portfolioStopsDone": "{count, plural, =0{Elke posisie het reeds so 'n alarm} =1{1 alarm gestel} other{{count} alarms gestel}}",
-  "portfolioSinceSale": "{percent} sedert jy verkoop het"
+  "portfolioSinceSale": "{percent} sedert jy verkoop het",
+  "lotPreviewRealized": "Gerealiseer met hierdie verkoping (FIFO):",
+  "lotPreviewAverage": "Nuwe gemiddelde koste: {after} (tans {before})"
 }

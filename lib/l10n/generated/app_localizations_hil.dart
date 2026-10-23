@@ -2693,6 +2693,14 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Narealisar sa sini nga pagbaligya (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Bag-o nga average nga gasto: $after (subong $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

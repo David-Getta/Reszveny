@@ -2668,6 +2668,14 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'ဤရောင်းချမှုတွင် ရရှိပြီး (FIFO) -';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'ပျမ်းမျှ ကုန်ကျစရိတ် အသစ် - $after (ယခု $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

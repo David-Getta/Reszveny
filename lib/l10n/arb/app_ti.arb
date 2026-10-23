@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "ኣብነት ኣልግስ",
   "portfolioStopsAll": "ንኹሎም ዋንነታት ካብ ጫፍ ናይ ምውራድ መጠንቀቕታ",
   "portfolioStopsDone": "{count, plural, =0{ኩሉ ዋንነት ድሮ እዚ መጠንቀቕታ ኣለዎ} =1{1 መጠንቀቕታ ተቐሚጡ} other{{count} መጠንቀቕታታት ተቐሚጦም}}",
-  "portfolioSinceSale": "ካብ ዝሸጥኩምዎ ጀሚሩ {percent}"
+  "portfolioSinceSale": "ካብ ዝሸጥኩምዎ ጀሚሩ {percent}",
+  "lotPreviewRealized": "ካብዚ መሸጣ ዝተረጋገጸ (FIFO)፦",
+  "lotPreviewAverage": "ሓድሽ ማእከላይ ዋጋ ዕድጊ፦ {after} (ሕጂ {before})"
 }

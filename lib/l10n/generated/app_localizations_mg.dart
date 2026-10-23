@@ -2696,6 +2696,14 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Tena azo tamin\'ity fivarotana ity (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Vidiny antonony vaovao: $after (amin\'izao $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

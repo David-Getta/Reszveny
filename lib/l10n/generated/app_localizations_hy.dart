@@ -2685,6 +2685,14 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Այս վաճառքից իրացված (FIFO)՝';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Նոր միջին գին՝ $after (այժմ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

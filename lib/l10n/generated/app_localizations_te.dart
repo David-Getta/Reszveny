@@ -2682,6 +2682,14 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'ఈ అమ్మకంపై వాస్తవిక లాభనష్టం (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'కొత్త సగటు ధర: $after (ప్రస్తుతం $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

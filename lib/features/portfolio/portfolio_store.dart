@@ -661,6 +661,17 @@ class PortfolioStore extends ChangeNotifier {
   Position? positionIn(String symbol, String? account) =>
       _positionsOf(account).where((p) => p.symbol == symbol.toUpperCase()).firstOrNull;
 
+  /// Egy még nem rögzített tranzakció hatása a részvény pozíciójára (a felaprózásokkal
+  /// igazítva, ugyanazzal a FIFO-val): a pozíció a [view] számla nézetében (`null`:
+  /// mind) előtte és utána – a dialógus előnézetéhez (új átlagár, várható realizált).
+  ({Position? before, Position after}) preview(PortfolioLot lot, {String? view}) {
+    final s = lot.symbol.toUpperCase();
+    final added = _splits.fold(lot, (l, x) => x.apply(l));
+    final lots = [...adjustedLots.where((l) => l.symbol == s), added];
+    final all = Position(symbol: s, currency: lots.first.currency, lots: lots);
+    return (before: positionIn(s, view), after: view == null ? all : Position._view(all, view));
+  }
+
   /// A számla, amelyen a részvényből a legtöbb darab van (`null`, ha a legtöbb számla
   /// nélküli, vagy nincs belőle).
   String? mainAccountOf(String symbol) => largestKey<String?>(heldByAccount(symbol));

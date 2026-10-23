@@ -2676,6 +2676,14 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Энэ борлуулалтын бодит үр дүн (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Шинэ дундаж өртөг: $after (одоо $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

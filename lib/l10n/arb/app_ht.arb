@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Retire egzanp lan",
   "portfolioStopsAll": "Alèt bès depi pik la pou tout pozisyon yo",
   "portfolioStopsDone": "{count, plural, =0{Tout pozisyon yo gen alèt sa a deja} =1{Nou mete 1 alèt} other{Nou mete {count} alèt}}",
-  "portfolioSinceSale": "{percent} depi ou te vann"
+  "portfolioSinceSale": "{percent} depi ou te vann",
+  "lotPreviewRealized": "Reyalize sou vant sa a (FIFO):",
+  "lotPreviewAverage": "Nouvo pri mwayen: {after} (kounye a {before})"
 }

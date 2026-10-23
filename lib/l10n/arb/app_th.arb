@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "ลบตัวอย่าง",
   "portfolioStopsAll": "Trailing Stop สำหรับหุ้นที่ถือทั้งหมด",
   "portfolioStopsDone": "{count, plural, =0{หุ้นที่ถือทุกรายการมี Trailing Stop อยู่แล้ว} =1{ตั้ง Trailing Stop 1 รายการแล้ว} other{ตั้ง Trailing Stop {count} รายการแล้ว}}",
-  "portfolioSinceSale": "{percent} ตั้งแต่ขาย"
+  "portfolioSinceSale": "{percent} ตั้งแต่ขาย",
+  "lotPreviewRealized": "รับรู้แล้วจากการขายครั้งนี้ (FIFO):",
+  "lotPreviewAverage": "ต้นทุนเฉลี่ยใหม่: {after} (ปัจจุบัน {before})"
 }

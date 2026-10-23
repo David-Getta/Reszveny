@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Susa umzekelo",
   "portfolioStopsAll": "Isilumkiso sokwehla ukusuka encotsheni kuzo zonke iipozishini",
   "portfolioStopsDone": "{count, plural, =0{Ipozishini nganye sele inaso esi silumkiso} =1{Kusetwe isilumkiso esinye} other{Kusetwe izilumkiso ezi-{count}}}",
-  "portfolioSinceSale": "{percent} ukususela oko wasithengisa"
+  "portfolioSinceSale": "{percent} ukususela oko wasithengisa",
+  "lotPreviewRealized": "Efunyenweyo kule ntengiso (FIFO):",
+  "lotPreviewAverage": "Iindleko ezintsha eziphakathi: {after} (ngoku {before})"
 }

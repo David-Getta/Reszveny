@@ -2669,6 +2669,14 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Benefis bu wér ci jaay bii (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Njëg mu diggu mu bees: $after (léegi $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

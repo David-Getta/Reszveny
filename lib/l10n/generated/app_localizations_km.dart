@@ -2655,6 +2655,14 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'បានសម្រេចពីការលក់នេះ (FIFO)៖';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'ថ្លៃដើមមធ្យមថ្មី៖ $after (បច្ចុប្បន្ន $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

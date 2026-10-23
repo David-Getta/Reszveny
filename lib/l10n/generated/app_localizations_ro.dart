@@ -2716,6 +2716,14 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Realizat la această vânzare (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Preț mediu nou: $after (acum $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

@@ -2685,6 +2685,15 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized =>
+      'Dipeta dia bushuwa ku disumbisha edi (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Mushinga mupiamupia wa pankatshi: $after (mpindieu $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

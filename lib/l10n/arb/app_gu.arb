@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "નમૂનો કાઢી નાખો",
   "portfolioStopsAll": "બધી પોઝિશન માટે ટ્રેલિંગ સ્ટોપ",
   "portfolioStopsDone": "{count, plural, =0{દરેક પોઝિશન પર પહેલેથી ટ્રેલિંગ સ્ટોપ છે} =1{1 ટ્રેલિંગ સ્ટોપ સેટ કર્યો} other{{count} ટ્રેલિંગ સ્ટોપ સેટ કર્યા}}",
-  "portfolioSinceSale": "વેચ્યા પછીથી {percent}"
+  "portfolioSinceSale": "વેચ્યા પછીથી {percent}",
+  "lotPreviewRealized": "આ વેચાણ પર પ્રાપ્ત (FIFO):",
+  "lotPreviewAverage": "નવી સરેરાશ કિંમત: {after} (હાલ {before})"
 }

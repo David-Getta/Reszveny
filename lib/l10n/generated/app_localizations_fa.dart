@@ -2672,6 +2672,14 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'محقق‌شده در این فروش (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'میانگین بهای خرید جدید: $after (اکنون $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

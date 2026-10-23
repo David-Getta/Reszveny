@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Отстрани го примерот",
   "portfolioStopsAll": "Известување за пад од врвот за сите позиции",
   "portfolioStopsDone": "{count, plural, =0{Сите позиции веќе го имаат ова известување} =1{Поставено е 1 известување} one{Поставено е {count} известување} other{Поставени се {count} известувања}}",
-  "portfolioSinceSale": "{percent} од продажбата"
+  "portfolioSinceSale": "{percent} од продажбата",
+  "lotPreviewRealized": "Остварено со оваа продажба (FIFO):",
+  "lotPreviewAverage": "Нова просечна цена: {after} (сега {before})"
 }

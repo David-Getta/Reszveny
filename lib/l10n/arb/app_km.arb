@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "ដកគំរូចេញ",
   "portfolioStopsAll": "ការជូនដំណឹងពេលធ្លាក់ពីកំពូលសម្រាប់ការកាន់កាប់ទាំងអស់",
   "portfolioStopsDone": "{count, plural, =0{ការកាន់កាប់នីមួយៗមានការជូនដំណឹងនេះរួចហើយ} =1{បានកំណត់ការជូនដំណឹង 1} other{បានកំណត់ការជូនដំណឹង {count}}}",
-  "portfolioSinceSale": "{percent} ចាប់តាំងពីលក់"
+  "portfolioSinceSale": "{percent} ចាប់តាំងពីលក់",
+  "lotPreviewRealized": "បានសម្រេចពីការលក់នេះ (FIFO)៖",
+  "lotPreviewAverage": "ថ្លៃដើមមធ្យមថ្មី៖ {after} (បច្ចុប្បន្ន {before})"
 }

@@ -2682,6 +2682,14 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Viɖe si wokpɔ le nudzadzra sia me (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Asi titina yeye: $after (fifia $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

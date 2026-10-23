@@ -2678,6 +2678,14 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Бул сатуудан ишке ашкан (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Жаңы орточо баа: $after (азыр $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

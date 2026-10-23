@@ -2675,6 +2675,14 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Wetin you make for dis sale (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'New average price: $after (now $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

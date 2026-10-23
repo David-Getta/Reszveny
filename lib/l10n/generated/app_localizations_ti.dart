@@ -2637,6 +2637,14 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'ካብዚ መሸጣ ዝተረጋገጸ (FIFO)፦';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'ሓድሽ ማእከላይ ዋጋ ዕድጊ፦ $after (ሕጂ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

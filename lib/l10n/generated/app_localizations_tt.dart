@@ -2673,6 +2673,14 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Бу сатудан реальләшкән (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Яңа уртача бәя: $after (хәзер $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

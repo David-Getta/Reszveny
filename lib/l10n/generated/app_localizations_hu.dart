@@ -2681,6 +2681,14 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Ezen az eladáson realizált (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Új átlagár: $after (most $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

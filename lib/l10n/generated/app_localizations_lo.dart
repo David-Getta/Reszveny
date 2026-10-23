@@ -2649,6 +2649,14 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'ທີ່ເກີດຂຶ້ນຈິງຈາກການຂາຍນີ້ (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'ຕົ້ນທຶນສະເລ່ຍໃໝ່: $after (ປັດຈຸບັນ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

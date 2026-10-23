@@ -2695,6 +2695,14 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'E phethagetšego thekišong ye (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Theko ye mpsha ya magareng: $after (bjale $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "نمونہ ہٹائیں",
   "portfolioStopsAll": "تمام پوزیشنز کے لیے ٹریلنگ اسٹاپ",
   "portfolioStopsDone": "{count, plural, =0{ہر پوزیشن پر پہلے سے ٹریلنگ اسٹاپ موجود ہے} =1{1 ٹریلنگ اسٹاپ سیٹ کر دیا گیا} other{{count} ٹریلنگ اسٹاپ سیٹ کر دیے گئے}}",
-  "portfolioSinceSale": "{percent} فروخت کے بعد سے"
+  "portfolioSinceSale": "{percent} فروخت کے بعد سے",
+  "lotPreviewRealized": "اس فروخت پر حاصل شدہ (FIFO):",
+  "lotPreviewAverage": "نئی اوسط لاگت: {after} (فی الحال {before})"
 }

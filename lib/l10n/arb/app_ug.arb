@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "ئەۋرىشكىنى ئۆچۈرۈش",
   "portfolioStopsAll": "بارلىق پايلارغا چوققىدىن چۈشۈش ئاگاھلاندۇرۇشى",
   "portfolioStopsDone": "{count, plural, =0{ھەممە پايدا بۇ ئاگاھلاندۇرۇش ئاللىبۇرۇن بار} =1{1 ئاگاھلاندۇرۇش تەڭشەلدى} other{{count} ئاگاھلاندۇرۇش تەڭشەلدى}}",
-  "portfolioSinceSale": "{percent} ساتقاندىن بۇيان"
+  "portfolioSinceSale": "{percent} ساتقاندىن بۇيان",
+  "lotPreviewRealized": "بۇ قېتىملىق سېتىشتا ئەمەلگە ئاشقان (FIFO):",
+  "lotPreviewAverage": "يېڭى ئوتتۇرىچە تەننەرخ: {after} (ھازىر {before})"
 }

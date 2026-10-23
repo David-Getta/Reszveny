@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Cire misalin",
   "portfolioStopsAll": "Faɗakarwar faɗuwa daga ƙoli ga dukkan hannayen jari",
   "portfolioStopsDone": "{count, plural, =0{Kowane hannun jari yana da wannan faɗakarwa tuni} =1{An saita faɗakarwa 1} other{An saita faɗakarwa {count}}}",
-  "portfolioSinceSale": "{percent} tun da ka sayar"
+  "portfolioSinceSale": "{percent} tun da ka sayar",
+  "lotPreviewRealized": "Na zahiri a wannan sayarwa (FIFO):",
+  "lotPreviewAverage": "Sabon matsakaicin farashi: {after} (yanzu {before})"
 }

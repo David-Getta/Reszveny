@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "ନମୁନା ହଟାନ୍ତୁ",
   "portfolioStopsAll": "ସମସ୍ତ ପୋଜିସନ ପାଇଁ ଟ୍ରେଲିଂ ଷ୍ଟପ",
   "portfolioStopsDone": "{count, plural, =0{ପ୍ରତ୍ୟେକ ପୋଜିସନରେ ପୂର୍ବରୁ ଟ୍ରେଲିଂ ଷ୍ଟପ ଅଛି} =1{1ଟି ଟ୍ରେଲିଂ ଷ୍ଟପ ସେଟ୍ ହେଲା} other{{count}ଟି ଟ୍ରେଲିଂ ଷ୍ଟପ ସେଟ୍ ହେଲା}}",
-  "portfolioSinceSale": "ବିକ୍ରି ପରଠାରୁ {percent}"
+  "portfolioSinceSale": "ବିକ୍ରି ପରଠାରୁ {percent}",
+  "lotPreviewRealized": "ଏହି ବିକ୍ରିରେ ପ୍ରାପ୍ତ (FIFO):",
+  "lotPreviewAverage": "ନୂଆ ହାରାହାରି ଖର୍ଚ୍ଚ: {after} (ବର୍ତ୍ତମାନ {before})"
 }

@@ -2678,6 +2678,14 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Halisi kwenye mauzo haya (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Gharama mpya ya wastani: $after (sasa $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

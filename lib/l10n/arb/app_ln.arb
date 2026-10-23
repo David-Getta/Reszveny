@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Longola ndakisa",
   "portfolioStopsAll": "Likebisi ya bokiti uta na nsɔngɛ mpo na biteni nyonso",
   "portfolioStopsDone": "{count, plural, =0{Eteni nyonso esili kozala na likebisi oyo} =1{Likebisi 1 etyami} other{Makebisi {count} etyami}}",
-  "portfolioSinceSale": "{percent} banda oteki yango"
+  "portfolioSinceSale": "{percent} banda oteki yango",
+  "lotPreviewRealized": "Litomba ya solo na boteki oyo (FIFO):",
+  "lotPreviewAverage": "Ntalo ya sika ya katikati: {after} (sikoyo {before})"
 }

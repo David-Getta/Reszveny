@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "மாதிரியை நீக்கு",
   "portfolioStopsAll": "எல்லா நிலைகளுக்கும் டிரெய்லிங் ஸ்டாப்",
   "portfolioStopsDone": "{count, plural, =0{எல்லா நிலைகளுக்கும் ஏற்கெனவே டிரெய்லிங் ஸ்டாப் உள்ளது} =1{1 டிரெய்லிங் ஸ்டாப் அமைக்கப்பட்டது} other{{count} டிரெய்லிங் ஸ்டாப்கள் அமைக்கப்பட்டன}}",
-  "portfolioSinceSale": "விற்றதிலிருந்து {percent}"
+  "portfolioSinceSale": "விற்றதிலிருந்து {percent}",
+  "lotPreviewRealized": "இந்த விற்பனையில் ஈட்டியது (FIFO):",
+  "lotPreviewAverage": "புதிய சராசரி விலை: {after} (தற்போது {before})"
 }

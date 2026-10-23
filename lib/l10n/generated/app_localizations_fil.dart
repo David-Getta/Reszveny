@@ -2684,6 +2684,14 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Natamo sa bentang ito (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Bagong average na halaga: $after (ngayon $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

@@ -2671,6 +2671,14 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Uru enwetara n\'ire a (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Nkezi ọnụahịa ọhụrụ: $after (ugbu a $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

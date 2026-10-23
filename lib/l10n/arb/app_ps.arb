@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "نمونه لرې کړئ",
   "portfolioStopsAll": "د ټولو پوزیشنونو لپاره له لوړې کچې د ښکته کېدو خبرتیا",
   "portfolioStopsDone": "{count, plural, =0{ټول پوزیشنونه دمخه دا خبرتیا لري} =1{1 خبرتیا وټاکل شوه} other{{count} خبرتیاوې وټاکل شوې}}",
-  "portfolioSinceSale": "{percent} له پلور راهیسې"
+  "portfolioSinceSale": "{percent} له پلور راهیسې",
+  "lotPreviewRealized": "په دې پلور کې تحقق شوې (FIFO):",
+  "lotPreviewAverage": "نوی منځنی لګښت: {after} (اوس {before})"
 }

@@ -2688,6 +2688,14 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Litomba ya solo na boteki oyo (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Ntalo ya sika ya katikati: $after (sikoyo $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

@@ -2642,6 +2642,14 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'በዚህ ሽያጭ የተገኘ (FIFO)፦';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'አዲስ አማካይ ወጪ፦ $after (አሁን $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

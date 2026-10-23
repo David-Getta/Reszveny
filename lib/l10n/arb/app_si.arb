@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "නියැදිය ඉවත් කරන්න",
   "portfolioStopsAll": "සියලු ස්ථාන සඳහා උපරිමයෙන් පහත වැටීමේ ඇඟවීම",
   "portfolioStopsDone": "{count, plural, =0{සෑම ස්ථානයකටම දැනටමත් මෙම ඇඟවීම ඇත} =1{ඇඟවීමක් සැකසුවා} other{ඇඟවීම් {count}ක් සැකසුවා}}",
-  "portfolioSinceSale": "විකුණූ දින සිට {percent}"
+  "portfolioSinceSale": "විකුණූ දින සිට {percent}",
+  "lotPreviewRealized": "මෙම විකුණුමෙන් ලැබූ (FIFO):",
+  "lotPreviewAverage": "නව සාමාන්‍ය පිරිවැය: {after} (දැනට {before})"
 }

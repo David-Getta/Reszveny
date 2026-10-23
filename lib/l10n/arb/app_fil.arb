@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Alisin ang sample",
   "portfolioStopsAll": "Trailing stop para sa lahat ng posisyon",
   "portfolioStopsDone": "{count, plural, =0{May trailing stop na ang bawat posisyon} =1{Na-set ang 1 trailing stop} other{Na-set ang {count} trailing stop}}",
-  "portfolioSinceSale": "{percent} mula nang ibenta mo"
+  "portfolioSinceSale": "{percent} mula nang ibenta mo",
+  "lotPreviewRealized": "Natamo sa bentang ito (FIFO):",
+  "lotPreviewAverage": "Bagong average na halaga: {after} (ngayon {before})"
 }

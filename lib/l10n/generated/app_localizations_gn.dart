@@ -2682,6 +2682,14 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Ojehupytýva ko ñemúpe (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Tepy mbytegua pyahu: $after (koʼág̃a $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

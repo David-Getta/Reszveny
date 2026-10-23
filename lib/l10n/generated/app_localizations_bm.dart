@@ -2674,6 +2674,14 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Feere nin na sɔrɔlen (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Sɔngɔ cɛmancɛ kura: $after (sisan $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

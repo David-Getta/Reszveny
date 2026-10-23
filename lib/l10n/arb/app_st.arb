@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Tlosa mohlala",
   "portfolioStopsAll": "Temoso ya ho theoha ho tloha hodimodimo bakeng sa dishere tsohle",
   "portfolioStopsDone": "{count, plural, =0{Shere ka nngwe e se e ena le temoso ena} =1{Ho beilwe temoso e le nngwe} other{Ho beilwe ditemoso tse {count}}}",
-  "portfolioSinceSale": "{percent} ho tloha ha o e rekisitse"
+  "portfolioSinceSale": "{percent} ho tloha ha o e rekisitse",
+  "lotPreviewRealized": "E fumanehileng thekisong ena (FIFO):",
+  "lotPreviewAverage": "Theko e ncha ya karolelano: {after} (hona jwale {before})"
 }

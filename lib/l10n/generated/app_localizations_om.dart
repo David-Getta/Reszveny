@@ -2687,6 +2687,15 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized =>
+      'Gurgurtaa kana irratti kan dhugoome (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Baasii giddugaleessaa haaraa: $after (amma $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

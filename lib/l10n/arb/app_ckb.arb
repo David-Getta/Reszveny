@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "لابردنی نموونە",
   "portfolioStopsAll": "ئاگادارکردنەوەی دابەزین لە لووتکە بۆ هەموو پۆزیشنەکان",
   "portfolioStopsDone": "{count, plural, =0{هەموو پۆزیشنەکان پێشتر ئەم ئاگادارکردنەوەیەیان هەیە} =1{1 ئاگادارکردنەوە دانرا} other{{count} ئاگادارکردنەوە دانران}}",
-  "portfolioSinceSale": "{percent} لەو کاتەوەی فرۆشتت"
+  "portfolioSinceSale": "{percent} لەو کاتەوەی فرۆشتت",
+  "lotPreviewRealized": "بەدەستهاتوو لەم فرۆشتنە (FIFO):",
+  "lotPreviewAverage": "تێکڕای تێچووی نوێ: {after} (ئێستا {before})"
 }

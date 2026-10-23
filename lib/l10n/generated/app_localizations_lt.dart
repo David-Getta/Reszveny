@@ -2745,6 +2745,14 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Realizuota šiuo pardavimu (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Nauja vidutinė pirkimo kaina: $after (dabar $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

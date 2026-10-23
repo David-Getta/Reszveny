@@ -2674,6 +2674,14 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'या विक्रीवर प्राप्त (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'नवीन सरासरी खर्च: $after (सध्या $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Αφαίρεση δείγματος",
   "portfolioStopsAll": "Trailing stop για όλες τις θέσεις",
   "portfolioStopsDone": "{count, plural, =0{Όλες οι θέσεις έχουν ήδη trailing stop} =1{Ορίστηκε 1 trailing stop} other{Ορίστηκαν {count} trailing stop}}",
-  "portfolioSinceSale": "{percent} από την πώληση"
+  "portfolioSinceSale": "{percent} από την πώληση",
+  "lotPreviewRealized": "Πραγματοποιημένο από αυτή την πώληση (FIFO):",
+  "lotPreviewAverage": "Νέα μέση τιμή αγοράς: {after} (τώρα {before})"
 }

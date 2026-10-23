@@ -2689,6 +2689,14 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Efunyenweyo kule ntengiso (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Iindleko ezintsha eziphakathi: $after (ngoku $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

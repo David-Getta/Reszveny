@@ -2740,6 +2740,14 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Realizováno tímto prodejem (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Nová průměrná nákupní cena: $after (nyní $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

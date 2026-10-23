@@ -2680,6 +2680,14 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Terealisasi saka dodolan iki (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Rega rata-rata anyar: $after (saiki $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Yiis makrã",
   "portfolioStopsAll": "Kibay sigr n yi zʋʋgã aksiõ fãa yĩnga",
   "portfolioStopsDone": "{count, plural, =0{Aksiõ fãa tara kibay kãnga} =1{B ningame kibay a yembre} other{B ningame kibay {count}}}",
-  "portfolioSinceSale": "{percent} sẽn sɩng f sẽn koos-a"
+  "portfolioSinceSale": "{percent} sẽn sɩng f sẽn koos-a",
+  "lotPreviewRealized": "Nafa sẽn paame koosg kãngã (FIFO):",
+  "lotPreviewAverage": "Koosg sʋka paalga: {after} (masã {before})"
 }

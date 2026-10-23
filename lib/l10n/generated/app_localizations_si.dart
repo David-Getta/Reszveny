@@ -2673,6 +2673,14 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'මෙම විකුණුමෙන් ලැබූ (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'නව සාමාන්‍ය පිරිවැය: $after (දැනට $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

@@ -2678,6 +2678,14 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Bu satuwdan gazanylan (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Täze orta baha: $after (häzir $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

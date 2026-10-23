@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Comot sample",
   "portfolioStopsAll": "Trailing stop for all your stocks",
   "portfolioStopsDone": "{count, plural, =0{All your stocks don get trailing stop already} =1{We don set 1 trailing stop} one{We don set {count} trailing stop} other{We don set {count} trailing stops}}",
-  "portfolioSinceSale": "{percent} since you sell am"
+  "portfolioSinceSale": "{percent} since you sell am",
+  "lotPreviewRealized": "Wetin you make for dis sale (FIFO):",
+  "lotPreviewAverage": "New average price: {after} (now {before})"
 }

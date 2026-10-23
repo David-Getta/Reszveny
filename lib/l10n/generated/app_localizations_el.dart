@@ -2686,6 +2686,15 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized =>
+      'Πραγματοποιημένο από αυτή την πώληση (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Νέα μέση τιμή αγοράς: $after (τώρα $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

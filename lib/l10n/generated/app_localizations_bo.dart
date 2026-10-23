@@ -2665,6 +2665,14 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'འཚོང་བ་འདིའི་ལག་ཐོབ (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'ཆ་སྙོམས་མ་གནས་གསར་པ: $after (ད་ལྟ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

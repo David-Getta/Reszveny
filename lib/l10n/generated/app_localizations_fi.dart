@@ -2677,6 +2677,14 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Toteutunut tästä myynnistä (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Uusi keskihinta: $after (nyt $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

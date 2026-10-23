@@ -2697,6 +2697,15 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized =>
+      'Mbuyelo wa xiviri eka ku xavisa loku (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Avhareji ya nxavo leyintshwa: $after (sweswi $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

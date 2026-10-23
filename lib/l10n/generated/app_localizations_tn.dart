@@ -2695,6 +2695,14 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'E bonweng mo thekisong eno (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Palogare e ntšha ya tlhwatlhwa: $after (jaanong $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

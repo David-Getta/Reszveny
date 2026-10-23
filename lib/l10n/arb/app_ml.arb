@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "സാമ്പിൾ നീക്കം ചെയ്യുക",
   "portfolioStopsAll": "എല്ലാ പൊസിഷനുകൾക്കും ട്രെയിലിംഗ് സ്റ്റോപ്പ്",
   "portfolioStopsDone": "{count, plural, =0{എല്ലാ പൊസിഷനുകൾക്കും ഇതിനകം ട്രെയിലിംഗ് സ്റ്റോപ്പ് ഉണ്ട്} =1{1 ട്രെയിലിംഗ് സ്റ്റോപ്പ് സജ്ജമാക്കി} other{{count} ട്രെയിലിംഗ് സ്റ്റോപ്പുകൾ സജ്ജമാക്കി}}",
-  "portfolioSinceSale": "വിറ്റതുമുതൽ {percent}"
+  "portfolioSinceSale": "വിറ്റതുമുതൽ {percent}",
+  "lotPreviewRealized": "ഈ വിൽപ്പനയിൽ ലഭിച്ചത് (FIFO):",
+  "lotPreviewAverage": "പുതിയ ശരാശരി ചെലവ്: {after} (ഇപ്പോൾ {before})"
 }

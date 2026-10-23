@@ -709,6 +709,8 @@
   "portfolioStopsAll": "Követő stop minden pozícióra",
   "portfolioStopsDone": "{count, plural, =0{Minden pozíción van már követő stop} =1{1 követő stop beállítva} other{{count} követő stop beállítva}}",
   "portfolioSinceSale": "{percent} az eladás óta",
+  "lotPreviewRealized": "Ezen az eladáson realizált (FIFO):",
+  "lotPreviewAverage": "Új átlagár: {after} (most {before})",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

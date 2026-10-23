@@ -2671,6 +2671,14 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Heɓaande e ngal yeeyugol (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Coggu hakkunde kesu: $after (jooni $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

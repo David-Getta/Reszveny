@@ -2679,6 +2679,14 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Bidestxistî ji vê firotinê (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Lêçûna navînî ya nû: $after (niha $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

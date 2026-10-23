@@ -2673,6 +2673,14 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'ਇਸ ਵਿਕਰੀ ’ਤੇ ਪ੍ਰਾਪਤ (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'ਨਵੀਂ ਔਸਤ ਲਾਗਤ: $after (ਹੁਣ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

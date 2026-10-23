@@ -2691,6 +2691,14 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Amagoba agafunise ku kutunda kuno (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Ebbeeyi ya wakati empya: $after (kati $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Fjern eksempel",
   "portfolioStopsAll": "Trailing stop for alle beholdninger",
   "portfolioStopsDone": "{count, plural, =0{Alle beholdninger har allerede et trailing stop} =1{1 trailing stop oprettet} other{{count} trailing stops oprettet}}",
-  "portfolioSinceSale": "{percent} siden du solgte"
+  "portfolioSinceSale": "{percent} siden du solgte",
+  "lotPreviewRealized": "Realiseret ved dette salg (FIFO):",
+  "lotPreviewAverage": "Ny gns. købskurs: {after} (nu {before})"
 }

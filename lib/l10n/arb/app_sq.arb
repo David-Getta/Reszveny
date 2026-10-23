@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Hiq shembullin",
   "portfolioStopsAll": "Sinjalizim për rënie nga maja për të gjitha pozicionet",
   "portfolioStopsDone": "{count, plural, =0{Të gjitha pozicionet e kanë tashmë këtë sinjalizim} =1{U vendos 1 sinjalizim} other{U vendosën {count} sinjalizime}}",
-  "portfolioSinceSale": "{percent} që kur e shitët"
+  "portfolioSinceSale": "{percent} që kur e shitët",
+  "lotPreviewRealized": "Realizuar nga kjo shitje (FIFO):",
+  "lotPreviewAverage": "Kosto e re mesatare: {after} (tani {before})"
 }

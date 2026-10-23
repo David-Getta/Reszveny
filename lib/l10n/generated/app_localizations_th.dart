@@ -2644,6 +2644,14 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'รับรู้แล้วจากการขายครั้งนี้ (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'ต้นทุนเฉลี่ยใหม่: $after (ปัจจุบัน $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

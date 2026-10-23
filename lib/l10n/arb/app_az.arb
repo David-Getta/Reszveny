@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Nümunəni sil",
   "portfolioStopsAll": "Bütün mövqelər üçün izləyən stop",
   "portfolioStopsDone": "{count, plural, =0{Bütün mövqelərdə artıq izləyən stop var} =1{1 izləyən stop quruldu} other{{count} izləyən stop quruldu}}",
-  "portfolioSinceSale": "{percent} satışdan bəri"
+  "portfolioSinceSale": "{percent} satışdan bəri",
+  "lotPreviewRealized": "Bu satışda reallaşan (FIFO):",
+  "lotPreviewAverage": "Yeni orta qiymət: {after} (hazırda {before})"
 }

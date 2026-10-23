@@ -2666,6 +2666,14 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'هن وڪري تي حاصل ٿيل (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'نئين سراسري لاڳت: $after (هاڻي $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

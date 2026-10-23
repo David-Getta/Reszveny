@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Tlosa sekai",
   "portfolioStopsAll": "Tlhagiso ya go wela go tswa kwa godimodimo go dishere tsotlhe",
   "portfolioStopsDone": "{count, plural, =0{Shere nngwe le nngwe e setse e na le tlhagiso eno} =1{Go beilwe tlhagiso e le nngwe} other{Go beilwe ditlhagiso di le {count}}}",
-  "portfolioSinceSale": "{percent} go tloga fa o e rekisitse"
+  "portfolioSinceSale": "{percent} go tloga fa o e rekisitse",
+  "lotPreviewRealized": "E bonweng mo thekisong eno (FIFO):",
+  "lotPreviewAverage": "Palogare e ntšha ya tlhwatlhwa: {after} (jaanong {before})"
 }

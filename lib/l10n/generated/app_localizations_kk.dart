@@ -2675,6 +2675,14 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Осы сатудан іске асқан (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Жаңа орташа баға: $after (қазір $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

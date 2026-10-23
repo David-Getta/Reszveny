@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Misali bɔ a la",
   "portfolioStopsAll": "Sanfɛla jigin kunnafoni aksiyɔnw bɛɛ ye",
   "portfolioStopsDone": "{count, plural, =0{Kunnafoni in bɛ aksiyɔn bɛɛ kan kaban} =1{Kunnafoni 1 sigilen don} other{Kunnafoni {count} sigilen don}}",
-  "portfolioSinceSale": "{percent} kabini i y'a feere"
+  "portfolioSinceSale": "{percent} kabini i y'a feere",
+  "lotPreviewRealized": "Feere nin na sɔrɔlen (FIFO):",
+  "lotPreviewAverage": "Sɔngɔ cɛmancɛ kura: {after} (sisan {before})"
 }

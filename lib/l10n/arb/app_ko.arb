@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "샘플 삭제",
   "portfolioStopsAll": "모든 보유 종목에 트레일링 스탑",
   "portfolioStopsDone": "{count, plural, =0{모든 보유 종목에 이미 트레일링 스탑이 있습니다} =1{트레일링 스탑 1개가 설정되었습니다} other{트레일링 스탑 {count}개가 설정되었습니다}}",
-  "portfolioSinceSale": "매도 후 {percent}"
+  "portfolioSinceSale": "매도 후 {percent}",
+  "lotPreviewRealized": "이번 매도 실현 손익(FIFO):",
+  "lotPreviewAverage": "새 평균 단가: {after} (현재 {before})"
 }

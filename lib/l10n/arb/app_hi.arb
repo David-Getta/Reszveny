@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "नमूना हटाएँ",
   "portfolioStopsAll": "सभी पोज़िशन के लिए ट्रेलिंग स्टॉप",
   "portfolioStopsDone": "{count, plural, =0{हर पोज़िशन पर पहले से ट्रेलिंग स्टॉप है} =1{1 ट्रेलिंग स्टॉप सेट किया गया} other{{count} ट्रेलिंग स्टॉप सेट किए गए}}",
-  "portfolioSinceSale": "बेचने के बाद से {percent}"
+  "portfolioSinceSale": "बेचने के बाद से {percent}",
+  "lotPreviewRealized": "इस बिक्री पर प्राप्त (FIFO):",
+  "lotPreviewAverage": "नई औसत लागत: {after} (अभी {before})"
 }

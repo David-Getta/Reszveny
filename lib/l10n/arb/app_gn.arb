@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Embogue techapyrã",
   "portfolioStopsAll": "Momarandu oguejýramo yvateguágui opaite ereguerekóvape",
   "portfolioStopsDone": "{count, plural, =0{Opaite ereguerekóva oguereko voi ko momarandu} =1{Oñemohenda 1 momarandu} other{Oñemohenda {count} momarandu}}",
-  "portfolioSinceSale": "{percent} reñemu guive"
+  "portfolioSinceSale": "{percent} reñemu guive",
+  "lotPreviewRealized": "Ojehupytýva ko ñemúpe (FIFO):",
+  "lotPreviewAverage": "Tepy mbytegua pyahu: {after} (koʼág̃a {before})"
 }

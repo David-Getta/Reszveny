@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Far misaal bi",
   "portfolioStopsAll": "Artu wàcc ci kaw ga ngir aksiyoŋ yépp",
   "portfolioStopsDone": "{count, plural, =0{Aksiyoŋ yépp am nañu artu bii ba noppi} =1{Teg nañu 1 artu} other{Teg nañu {count} artu}}",
-  "portfolioSinceSale": "{percent} li dale ba nga ko jaay"
+  "portfolioSinceSale": "{percent} li dale ba nga ko jaay",
+  "lotPreviewRealized": "Benefis bu wér ci jaay bii (FIFO):",
+  "lotPreviewAverage": "Njëg mu diggu mu bees: {after} (léegi {before})"
 }

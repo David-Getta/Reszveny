@@ -2748,6 +2748,14 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Zrealizowane na tej sprzedaży (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Nowa średnia cena zakupu: $after (obecnie $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

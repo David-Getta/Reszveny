@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "နမူနာ ဖယ်ရှားရန်",
   "portfolioStopsAll": "ကိုင်ဆောင်ထားမှုအားလုံးအတွက် အမြင့်ဆုံးမှ ကျဆင်းမှု သတိပေးချက်",
   "portfolioStopsDone": "{count, plural, =0{ကိုင်ဆောင်ထားမှုတိုင်းတွင် ဤသတိပေးချက် ရှိပြီးသားဖြစ်သည်} =1{သတိပေးချက် 1 ခု သတ်မှတ်ပြီးပါပြီ} other{သတိပေးချက် {count} ခု သတ်မှတ်ပြီးပါပြီ}}",
-  "portfolioSinceSale": "ရောင်းပြီးကတည်းက {percent}"
+  "portfolioSinceSale": "ရောင်းပြီးကတည်းက {percent}",
+  "lotPreviewRealized": "ဤရောင်းချမှုတွင် ရရှိပြီး (FIFO) -",
+  "lotPreviewAverage": "ပျမ်းမျှ ကုန်ကျစရိတ် အသစ် - {after} (ယခု {before})"
 }

@@ -2674,6 +2674,14 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Reyalize sou vant sa a (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Nouvo pri mwayen: $after (kounye a $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

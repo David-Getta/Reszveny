@@ -2673,6 +2673,14 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Realized on this sale (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'New average cost: $after (now $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

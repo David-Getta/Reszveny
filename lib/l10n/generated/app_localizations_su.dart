@@ -2680,6 +2680,14 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Direalisasikeun tina jualan ieu (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Rata-rata harga beuli anyar: $after (ayeuna $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Odstrániť ukážku",
   "portfolioStopsAll": "Trailing stop pre všetky pozície",
   "portfolioStopsDone": "{count, plural, =0{Všetky pozície už majú trailing stop} =1{Nastavený 1 trailing stop} few{Nastavené {count} trailing stopy} many{Nastavené {count} trailing stopy} other{Nastavených {count} trailing stopov}}",
-  "portfolioSinceSale": "{percent} od predaja"
+  "portfolioSinceSale": "{percent} od predaja",
+  "lotPreviewRealized": "Realizované týmto predajom (FIFO):",
+  "lotPreviewAverage": "Nová priemerná nákupná cena: {after} (teraz {before})"
 }

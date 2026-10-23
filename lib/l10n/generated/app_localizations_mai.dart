@@ -2668,6 +2668,14 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'एहि बिक्रीपर प्राप्त (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'नव औसत लागत: $after (एखन $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

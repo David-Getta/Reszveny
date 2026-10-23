@@ -2683,6 +2683,14 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Na zahiri a wannan sayarwa (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Sabon matsakaicin farashi: $after (yanzu $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

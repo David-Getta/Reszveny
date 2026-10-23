@@ -2693,6 +2693,14 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'E fumanehileng thekisong ena (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Theko e ncha ya karolelano: $after (hona jwale $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

@@ -2670,6 +2670,14 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'एह बिक्री पर प्राप्त (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'नया औसत लागत: $after (अभी $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

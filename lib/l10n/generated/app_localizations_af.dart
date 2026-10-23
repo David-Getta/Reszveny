@@ -2680,6 +2680,14 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Gerealiseer met hierdie verkoping (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Nuwe gemiddelde koste: $after (tans $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

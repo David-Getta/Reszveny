@@ -2678,6 +2678,14 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Натиҷаи воқеии ин фурӯш (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Нархи нави миёнаи харид: $after (ҳозир $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

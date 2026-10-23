@@ -2676,6 +2676,14 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Realisert ved dette salget (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Ny snittkurs: $after (nå $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

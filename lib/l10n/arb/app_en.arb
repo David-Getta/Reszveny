@@ -2263,6 +2263,24 @@
       }
     }
   },
+  "lotPreviewRealized": "Realized on this sale (FIFO):",
+  "@lotPreviewRealized": {
+    "description": "Sell dialog preview: label before the expected realized gain or loss of this sale (matched first in, first out, after the fee), e.g. \"Realized on this sale (FIFO): +198.00 USD\"."
+  },
+  "lotPreviewAverage": "New average cost: {after} (now {before})",
+  "@lotPreviewAverage": {
+    "description": "Buy dialog preview: the average cost per share after this purchase and the current one, e.g. \"New average cost: 150.00 USD (now 100.00 USD)\".",
+    "placeholders": {
+      "after": {
+        "type": "String",
+        "example": "150.00 USD"
+      },
+      "before": {
+        "type": "String",
+        "example": "100.00 USD"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Pašalinti pavyzdį",
   "portfolioStopsAll": "Kritimo nuo piko įspėjimas visoms pozicijoms",
   "portfolioStopsDone": "{count, plural, =0{Visos pozicijos jau turi šį įspėjimą} =1{Nustatytas 1 įspėjimas} one{Nustatytas {count} įspėjimas} few{Nustatyti {count} įspėjimai} many{Nustatyta {count} įspėjimo} other{Nustatyta {count} įspėjimų}}",
-  "portfolioSinceSale": "{percent} nuo pardavimo"
+  "portfolioSinceSale": "{percent} nuo pardavimo",
+  "lotPreviewRealized": "Realizuota šiuo pardavimu (FIFO):",
+  "lotPreviewAverage": "Nauja vidutinė pirkimo kaina: {after} (dabar {before})"
 }

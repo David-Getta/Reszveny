@@ -2677,6 +2677,14 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Uumithio wa ma wa ũendia ũyũ (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Thogora mwerũ wa gatagatĩ: $after (rĩu $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

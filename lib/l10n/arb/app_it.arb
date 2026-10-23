@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Rimuovi esempio",
   "portfolioStopsAll": "Trailing stop su tutte le posizioni",
   "portfolioStopsDone": "{count, plural, =0{Tutte le posizioni hanno già un trailing stop} =1{1 trailing stop impostato} other{{count} trailing stop impostati}}",
-  "portfolioSinceSale": "{percent} dalla vendita"
+  "portfolioSinceSale": "{percent} dalla vendita",
+  "lotPreviewRealized": "Realizzato con questa vendita (FIFO):",
+  "lotPreviewAverage": "Nuovo prezzo medio: {after} (ora {before})"
 }

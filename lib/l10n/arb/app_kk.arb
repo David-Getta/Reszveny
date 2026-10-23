@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Үлгіні жою",
   "portfolioStopsAll": "Барлық позицияға трейлинг-стоп",
   "portfolioStopsDone": "{count, plural, =0{Барлық позицияда трейлинг-стоп бұрыннан бар} =1{1 трейлинг-стоп орнатылды} other{{count} трейлинг-стоп орнатылды}}",
-  "portfolioSinceSale": "{percent} сатқаннан бері"
+  "portfolioSinceSale": "{percent} сатқаннан бері",
+  "lotPreviewRealized": "Осы сатудан іске асқан (FIFO):",
+  "lotPreviewAverage": "Жаңа орташа баға: {after} (қазір {before})"
 }

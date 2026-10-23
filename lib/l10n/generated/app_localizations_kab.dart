@@ -2674,6 +2674,14 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Yettwaxedmen deg uznuzu-a (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Ssuma talemmast tamaynut: $after (tura $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

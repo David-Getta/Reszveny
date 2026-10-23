@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Susa isampula",
   "portfolioStopsAll": "Isexwayiso sokwehla kusuka esiqongweni kuwo wonke amasheya",
   "portfolioStopsDone": "{count, plural, =0{Isheya ngalinye selinaso lesi sexwayiso} =1{Kusethwe isexwayiso esisodwa} other{Kusethwe izexwayiso ezingu-{count}}}",
-  "portfolioSinceSale": "{percent} kusukela walithengisa"
+  "portfolioSinceSale": "{percent} kusukela walithengisa",
+  "lotPreviewRealized": "Okutholakele kulokhu kuthengisa (FIFO):",
+  "lotPreviewAverage": "Izindleko ezintsha ezimaphakathi: {after} (manje {before})"
 }

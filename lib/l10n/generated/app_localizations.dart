@@ -4591,6 +4591,18 @@ abstract class AppLocalizations {
   /// **'{percent} since you sold'**
   String portfolioSinceSale(String percent);
 
+  /// Sell dialog preview: label before the expected realized gain or loss of this sale (matched first in, first out, after the fee), e.g. "Realized on this sale (FIFO): +198.00 USD".
+  ///
+  /// In en, this message translates to:
+  /// **'Realized on this sale (FIFO):'**
+  String get lotPreviewRealized;
+
+  /// Buy dialog preview: the average cost per share after this purchase and the current one, e.g. "New average cost: 150.00 USD (now 100.00 USD)".
+  ///
+  /// In en, this message translates to:
+  /// **'New average cost: {after} (now {before})'**
+  String lotPreviewAverage(String after, String before);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

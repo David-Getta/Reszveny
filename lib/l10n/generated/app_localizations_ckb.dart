@@ -2678,6 +2678,14 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'بەدەستهاتوو لەم فرۆشتنە (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'تێکڕای تێچووی نوێ: $after (ئێستا $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

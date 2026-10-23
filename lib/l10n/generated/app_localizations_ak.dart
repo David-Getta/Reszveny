@@ -2678,6 +2678,14 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Mfaso a wonya wɔ saa adetɔn yi so (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Bo mfinimfini foforo: $after (seesei $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

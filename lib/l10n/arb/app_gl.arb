@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "Quitar o exemplo",
   "portfolioStopsAll": "Stop dinámico para todas as posicións",
   "portfolioStopsDone": "{count, plural, =0{Todas as posicións xa teñen un stop dinámico} =1{Creouse 1 stop dinámico} one{Creouse {count} stop dinámico} other{Creáronse {count} stops dinámicos}}",
-  "portfolioSinceSale": "{percent} desde a venda"
+  "portfolioSinceSale": "{percent} desde a venda",
+  "lotPreviewRealized": "Realizado nesta venda (FIFO):",
+  "lotPreviewAverage": "Novo custo medio: {after} (agora {before})"
 }

@@ -2685,6 +2685,14 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Lagu xaqiijiyay iibkan (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Kharashka celceliska cusub: $after (hadda $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

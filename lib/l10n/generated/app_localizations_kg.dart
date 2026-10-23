@@ -2686,6 +2686,14 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get lotPreviewRealized => 'Mbakulu ya kieleka na kuteka yai (FIFO):';
+
+  @override
+  String lotPreviewAverage(String after, String before) {
+    return 'Ntalu ya kati ya mpa: $after (ntangu yai $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

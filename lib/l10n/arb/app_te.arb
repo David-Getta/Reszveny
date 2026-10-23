@@ -808,5 +808,7 @@
   "portfolioSampleRemove": "నమూనాను తీసివేయి",
   "portfolioStopsAll": "అన్ని పొజిషన్లకు ట్రెయిలింగ్ స్టాప్",
   "portfolioStopsDone": "{count, plural, =0{ప్రతి పొజిషన్‌కు ఇప్పటికే ట్రెయిలింగ్ స్టాప్ ఉంది} =1{1 ట్రెయిలింగ్ స్టాప్ సెట్ చేయబడింది} other{{count} ట్రెయిలింగ్ స్టాప్‌లు సెట్ చేయబడ్డాయి}}",
-  "portfolioSinceSale": "అమ్మినప్పటి నుండి {percent}"
+  "portfolioSinceSale": "అమ్మినప్పటి నుండి {percent}",
+  "lotPreviewRealized": "ఈ అమ్మకంపై వాస్తవిక లాభనష్టం (FIFO):",
+  "lotPreviewAverage": "కొత్త సగటు ధర: {after} (ప్రస్తుతం {before})"
 }
