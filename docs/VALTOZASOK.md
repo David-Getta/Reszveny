@@ -122,13 +122,15 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 
 ## Minőség
 
-- Tizenegy kódátnézés és két egyszerűsítési átnézés javításai, bővített tesztek; 120 nyelven minden új szöveg.
+- Tizenhat kódátnézés és két egyszerűsítési átnézés javításai, bővített tesztek; 120 nyelven minden új szöveg.
 
 ## Bolti „Újdonságok” (rövid)
 
-**Magyar:** Kapott és várható osztalékok, bekerülési osztalékhozam, készpénz a brókernél, „Amíg távol
-voltál” kártya, „Miért mozog ma?” AI-magyarázat, technikai kép és jelzések, fogalomtár – mind 120 nyelven.
+**Magyar:** Számlák (pl. TBSZ) és jutalék a portfólióban, éves összesítő az adóbevalláshoz, új befizetés
+elosztása a célarányok szerint, teljesítmény megosztása képként; kapott és várható osztalékok, készpénz a
+brókernél, „Miért mozog ma?” AI-magyarázat, technikai kép és jelzések, fogalomtár – mind 120 nyelven.
 
-**English:** Dividends received and expected, yield on cost, cash at your broker, a “While you were away”
-card, “Why is it moving today?” AI explanations, a technical picture with signals, and a glossary – all in
+**English:** Accounts and fees in your portfolio, an annual summary for your tax return, splitting new money
+by your target weights, sharing your performance as an image; dividends received and expected, cash at your
+broker, “Why is it moving today?” AI explanations, a technical picture with signals and a glossary – all in
 120 languages.
