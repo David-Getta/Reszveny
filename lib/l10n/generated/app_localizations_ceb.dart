@@ -2646,6 +2646,13 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Pinakadakong pagkunhod';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Ang pinakadakong pagkunhod sa bili sa imong mga stock gikan sa usa ka naunang kinatas-an ngadto sa usa ka ulahing kinaubsan, nga walay epekto sa imong pagpalit ug pagbaligya (time-weighted). Gipakita niini kung unsa ka lawom nga pagkunhod ang naagian na sa imong portfolio.';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

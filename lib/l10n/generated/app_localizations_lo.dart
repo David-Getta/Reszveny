@@ -2606,6 +2606,13 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'ການຫຼຸດລົງສູງສຸດ';
+
+  @override
+  String get glossMaxDrawdown =>
+      'ການຫຼຸດລົງຫຼາຍທີ່ສຸດຂອງມູນຄ່າຮຸ້ນຂອງທ່ານ ຈາກຈຸດສູງສຸດກ່ອນໜ້າ ຫາຈຸດຕ່ຳສຸດພາຍຫຼັງ ໂດຍບໍ່ລວມຜົນຂອງການຊື້ ແລະ ຂາຍຂອງທ່ານ (ຖ່ວງນ້ຳໜັກຕາມເວລາ). ສະແດງໃຫ້ເຫັນວ່າພອດໂຟລິໂອຂອງທ່ານເຄີຍຜ່ານການຫຼຸດລົງເລິກປານໃດ.';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

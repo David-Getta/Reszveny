@@ -799,5 +799,7 @@
   "contributionHint": "Len nákupy, žiadne predaje: peniaze dostanú najskôr pozície, ktoré sú najviac pod svojím cieľom.",
   "contributionShares": "≈ {shares} ks",
   "contributionMissing": "Pre {symbols} nie je k dispozícii aktuálna cena: nie sú zahrnuté do rozdelenia.",
-  "portfolioGoalEta": "Ak ročný výnos vydrží ({rate}), cieľ dosiahnete okolo roku {year}."
+  "portfolioGoalEta": "Ak ročný výnos vydrží ({rate}), cieľ dosiahnete okolo roku {year}.",
+  "portfolioMaxDrawdown": "Najväčší prepad",
+  "glossMaxDrawdown": "Najväčší pokles hodnoty vašich akcií z predchádzajúceho vrcholu na neskoršie dno, bez vplyvu vašich nákupov a predajov (časovo vážený). Ukazuje, akým hlbokým prepadom už vaše portfólio prešlo."
 }

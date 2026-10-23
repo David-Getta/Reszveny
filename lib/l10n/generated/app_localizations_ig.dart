@@ -2629,6 +2629,13 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Ọdịda kachasị ukwuu';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Ọdịda kachasị ukwuu nke uru òkè gị site n\'ebe kachasị elu mbụ ruo n\'ebe kachasị ala e mesịrị, na-agụnyeghị mmetụta nke ịzụ na ire gị (a tụrụ ya dịka oge si dị). Ọ na-egosi ka ọdịda portfolio gị nwerela si mie emi.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

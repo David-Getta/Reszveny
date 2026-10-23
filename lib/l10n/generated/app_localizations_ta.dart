@@ -2645,6 +2645,13 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'மிகப்பெரிய வீழ்ச்சி';
+
+  @override
+  String get glossMaxDrawdown =>
+      'உங்கள் பங்குகளின் மதிப்பில் முந்தைய ஒரு உச்சத்திலிருந்து பிந்தைய ஒரு தாழ்வு வரை ஏற்பட்ட மிகப்பெரிய வீழ்ச்சி, உங்கள் வாங்குதல் மற்றும் விற்பனையின் தாக்கம் இல்லாமல் (கால-எடையிட்டது). உங்கள் போர்ட்ஃபோலியோ ஏற்கெனவே எவ்வளவு ஆழமான சரிவைச் சந்தித்துள்ளது என்பதைக் காட்டுகிறது.';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

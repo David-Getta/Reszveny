@@ -2650,6 +2650,13 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Ho theoha ho hoholo ka ho fetisisa';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Ho theoha ho hoholo ka ho fetisisa ha boleng ba dishere tsa hao ho tloha tlhorong ya pele ho fihla boemong bo tlase ba hamorao, ntle le phello ya ho reka le ho rekisa ha hao (ho lekantswe ka nako). Ho bontsha hore potefolio ya hao e se e theohile ka botebo bo bokae.';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

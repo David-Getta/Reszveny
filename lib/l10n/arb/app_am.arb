@@ -799,5 +799,7 @@
   "contributionHint": "ግዢ ብቻ፣ ሽያጭ የለም፦ ከዒላማቸው በጣም ወደ ኋላ የቀሩት ይዞታዎች ገንዘቡን መጀመሪያ ያገኛሉ።",
   "contributionShares": "≈ {shares} አክሲዮኖች",
   "contributionMissing": "ለ{symbols} የአሁኑ ዋጋ የለም፤ ከክፍፍሉ ውጭ ተደርገዋል።",
-  "portfolioGoalEta": "ዓመታዊ ተመላሹ ({rate}) እንዲሁ ከቀጠለ፣ በ{year} ገደማ ግቡ ላይ ይደርሳሉ።"
+  "portfolioGoalEta": "ዓመታዊ ተመላሹ ({rate}) እንዲሁ ከቀጠለ፣ በ{year} ገደማ ግቡ ላይ ይደርሳሉ።",
+  "portfolioMaxDrawdown": "ትልቁ ማሽቆልቆል",
+  "glossMaxDrawdown": "የአክሲዮኖችዎ ዋጋ ከቀደመ ከፍተኛ ደረጃ ወደ ኋለኛ ዝቅተኛ ደረጃ ያሳየው ትልቁ ማሽቆልቆል፣ የግዢና የሽያጭዎ ተጽዕኖ ሳይካተት (በጊዜ የተመዘነ)። ፖርትፎሊዮዎ እስካሁን ምን ያህል ጥልቅ ውድቀት እንዳሳለፈ ያሳያል።"
 }

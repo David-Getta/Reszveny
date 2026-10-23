@@ -2646,6 +2646,13 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Ukwehla okukhulu kakhulu';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Ukwehla okukhulu kakhulu kwexabiso lezabelo zakho ukusuka kwincopho yangaphambili ukuya kweyona ndawo iphantsi yamva, ngaphandle kwempembelelo yokuthenga nokuthengisa kwakho (kulinganiswe ngexesha). Kubonisa ukuba ipotifoliyo yakho sele yehle kangakanani ngokunzulu.';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

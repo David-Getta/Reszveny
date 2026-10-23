@@ -799,5 +799,7 @@
   "contributionHint": "Ngan ukur mésér, henteu ngajual: posisi anu panglangkung tebih di handapeun targetna nampi artos heula.",
   "contributionShares": "≈ {shares} saham",
   "contributionMissing": "Teu aya harga ayeuna pikeun {symbols}: teu diasupkeun kana pambagian.",
-  "portfolioGoalEta": "Upami imbal hasil taunan tetep ({rate}), anjeun bakal ngahontal target kira-kira taun {year}."
+  "portfolioGoalEta": "Upami imbal hasil taunan tetep ({rate}), anjeun bakal ngahontal target kira-kira taun {year}.",
+  "portfolioMaxDrawdown": "Turunna panggedéna",
+  "glossMaxDrawdown": "Turunna panggedéna ajén saham anjeun ti puncak saméméhna nepi ka titik panghandapna saterusna, tanpa pangaruh pameulian jeung pangjualan anjeun (ditimbang dumasar waktu). Ieu nunjukkeun sabaraha jero turunna anu kungsi dilakonan ku portofolio anjeun."
 }

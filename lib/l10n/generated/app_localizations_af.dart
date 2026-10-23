@@ -2638,6 +2638,13 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Grootste daling';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Die grootste daling in die waarde van jou aandele van \'n vroeëre hoogtepunt tot \'n latere laagtepunt, sonder die effek van jou aankope en verkope (tydgeweeg). Dit wys hoe diep \'n insinking jou portefeulje al deurgemaak het.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

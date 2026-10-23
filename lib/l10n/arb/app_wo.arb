@@ -799,5 +799,7 @@
   "contributionHint": "Jënd rekk, du jaay: aksiyoŋ yi gën a sore seen jubluwaay ci suuf ñoo jëkk a jot xaalis bi.",
   "contributionShares": "≈ {shares} aksiyoŋ",
   "contributionMissing": "Amul njëg bu léegi ngir {symbols}: boolewuñu leen ci séddale bi.",
-  "portfolioGoalEta": "Su benefis bu at bi desee noonu ({rate}), dinga agsi ci sa jublu ci wetu at {year}."
+  "portfolioGoalEta": "Su benefis bu at bi desee noonu ({rate}), dinga agsi ci sa jublu ci wetu at {year}.",
+  "portfolioMaxDrawdown": "Wàcc gi gëna mag",
+  "glossMaxDrawdown": "Wàcc gi gëna mag ci njëgu sa aksiyoŋ yi, dale ci benn kaw bu jiitu ba ci benn suuf bu ñëw ginnaaw, te say jënd ak say jaay bokkuñu ci (ñu natt ko ci jamono). Dafay wone ni sa aksiyoŋ yi wàcce bu xóot ba léegi."
 }

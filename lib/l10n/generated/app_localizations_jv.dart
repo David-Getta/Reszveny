@@ -2638,6 +2638,13 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Penurunan paling gedhe';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Penurunan paling gedhe regane saham sampeyan saka pucuk sadurunge nganti titik paling endhek sabanjure, tanpa pengaruh tuku lan adol sampeyan (ditimbang miturut wektu). Iki nuduhake sepira jero penurunan sing wis tau dialami portofolio sampeyan.';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

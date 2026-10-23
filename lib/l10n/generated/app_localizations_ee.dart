@@ -2639,6 +2639,13 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Asixɔxɔ ƒe ɖiɖi gãtɔ';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Wò akpawo ƒe asixɔxɔ ƒe ɖiɖi gãtɔ tso dzi aɖe si wòɖo do ŋgɔ va ɖo anyigba aɖe si wòɖo emegbe, eye womebu wò nuƒeƒle kple nudzadzra ƒe ŋusẽ ɖe eme o (wodzidze ɖe ɣeyiɣi nu). Efiana alesi wò akpawo ƒe asixɔxɔ ɖi va anyi do ŋgɔ xoxo.';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

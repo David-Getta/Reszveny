@@ -2642,6 +2642,13 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Pinakamalaking pagbaba';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Ang pinakamalaking pagbaba ng halaga ng mga stock mo mula sa isang naunang tuktok hanggang sa isang mas huling pinakamababa, nang walang epekto ng mga pagbili at pagbenta mo (time-weighted). Ipinapakita nito kung gaano kalalim na pagbagsak ang napagdaanan na ng portfolio mo.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

@@ -799,5 +799,7 @@
   "contributionHint": "Pagbakal lang, wala sing pagbaligya: ang mga posisyon nga pinakamalayo sa idalom sang ila target ang una nga makabaton sang kuwarta.",
   "contributionShares": "≈ {shares} ka share",
   "contributionMissing": "Wala sang presyo subong para sa {symbols}: wala ginlakip sa pagbinahin.",
-  "portfolioGoalEta": "Kon magpabilin ang tinuig nga kita ({rate}), maabot mo ang tulumuron mga tuig {year}."
+  "portfolioGoalEta": "Kon magpabilin ang tinuig nga kita ({rate}), maabot mo ang tulumuron mga tuig {year}.",
+  "portfolioMaxDrawdown": "Pinakadako nga pagbaba",
+  "glossMaxDrawdown": "Ang pinakadako nga pagbaba sang balor sang imo mga stock halin sa isa ka nauna nga pinakamataas pakadto sa isa ka ulihi nga pinakamanubo, nga wala sang epekto sang imo pagbakal kag pagbaligya (time-weighted). Ginapakita sini kon daw ano kadalom nga pagbaba ang naagihan na sang imo portfolio."
 }

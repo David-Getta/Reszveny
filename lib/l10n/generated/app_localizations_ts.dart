@@ -2654,6 +2654,13 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Ku hunguteka lokukulu ngopfu';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Ku hunguteka lokukulu ngopfu ka nkoka wa tixere ta wena ku suka eka nhlohlorhi ya khale ku ya eka xiyimo xa le hansi ngopfu xa endzhaku, handle ka vuyelo bya ku xava ni ku xavisa ka wena (ku pimiwile hi nkarhi). Swi kombisa leswaku phothifoliyo ya wena se yi tshame yi hunguteka ku fika kwihi.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

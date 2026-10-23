@@ -799,5 +799,7 @@
   "contributionHint": "Iibsasho kaliya, iib ma jiro: haysashooyinka sida ugu badan uga hooseeya hadafkooda ayaa lacagta hore u hela.",
   "contributionShares": "≈ {shares} saami",
   "contributionMissing": "{symbols} ma laha qiime hadda ah: lagama darin qaybinta.",
-  "portfolioGoalEta": "Haddii faa'iidada sannadlaha ahi sidan ku sii jirto ({rate}), waxaad gaadhi doontaa yoolka qiyaastii sannadka {year}."
+  "portfolioGoalEta": "Haddii faa'iidada sannadlaha ahi sidan ku sii jirto ({rate}), waxaad gaadhi doontaa yoolka qiyaastii sannadka {year}.",
+  "portfolioMaxDrawdown": "Hoos u dhaca ugu weyn",
+  "glossMaxDrawdown": "Hoos u dhaca ugu weyn ee qiimaha saamiyadaada, laga bilaabo heer sare oo hore ilaa heer hoose oo dambe, iyada oo aan la tixgelin saamaynta iibsashadaada iyo iibintaada (waqtiga lagu miisaamay). Waxay muujinaysaa inta uu le'eg yahay hoos u dhaca qoto dheer ee portfoliyadaadu horay u soo martay."
 }

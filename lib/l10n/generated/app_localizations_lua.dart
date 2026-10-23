@@ -2642,6 +2642,13 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Dipueka dinene menemene';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Dipueka dinene menemene dia mushinga wa actions yebe, kubangila ku mutu kua kumpala too ne panshi pashishe, kakuyi kubala bisumbu ne bisumbisha biebe (mupima bilondeshile tshikondo). Didi dileja mudi portefeuille webe muanji kupueka bikole.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

@@ -2210,6 +2210,14 @@
       }
     }
   },
+  "portfolioMaxDrawdown": "Largest drop",
+  "@portfolioMaxDrawdown": {
+    "description": "Figure on the portfolio history card: the biggest fall from a high to a later low (maximum drawdown), as a percentage, with the two dates."
+  },
+  "glossMaxDrawdown": "The biggest fall of your holdings from an earlier high to a later low, without the effect of your buying and selling (time-weighted). It shows how deep a dip your portfolio has already been through.",
+  "@glossMaxDrawdown": {
+    "description": "Explanation (ⓘ) of the largest drop (maximum drawdown) on the portfolio history card."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

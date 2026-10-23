@@ -2640,6 +2640,13 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Grootste daling';
+
+  @override
+  String get glossMaxDrawdown =>
+      'De grootste daling van de waarde van je aandelen van een eerdere piek tot een later dal, zonder het effect van je aankopen en verkopen (tijdgewogen). Het laat zien hoe diep je portefeuille al eens is gezakt.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

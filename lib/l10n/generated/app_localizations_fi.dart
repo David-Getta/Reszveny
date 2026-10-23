@@ -2635,6 +2635,13 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Suurin lasku';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Osakkeidesi arvon suurin lasku aiemmasta huipusta myöhempään pohjaan ilman ostojesi ja myyntiesi vaikutusta (aikapainotettu). Se näyttää, kuinka syvän notkahduksen salkkusi on jo kokenut.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

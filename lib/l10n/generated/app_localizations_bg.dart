@@ -2635,6 +2635,13 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Най-голям спад';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Най-големият спад в стойността на вашите акции от по-ранен връх до по-късно дъно, без ефекта от вашите покупки и продажби (претеглен по време). Показва колко дълбок спад вече е преживял портфейлът ви.';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

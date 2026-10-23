@@ -2627,6 +2627,13 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Mức sụt giảm tối đa';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Mức giảm lớn nhất của giá trị cổ phiếu bạn nắm giữ từ một đỉnh trước đó xuống một đáy sau đó, không tính ảnh hưởng của việc mua và bán của bạn (theo trọng số thời gian). Cho thấy danh mục của bạn đã từng trải qua đợt sụt giảm sâu đến mức nào.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

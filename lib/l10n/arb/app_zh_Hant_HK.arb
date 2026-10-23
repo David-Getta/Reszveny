@@ -799,5 +799,7 @@
   "contributionHint": "只買不賣：低於目標比例最多的持倉優先獲分配資金。",
   "contributionShares": "≈ {shares} 股",
   "contributionMissing": "{symbols}沒有目前股價，未有納入分配。",
-  "portfolioGoalEta": "若年化回報率維持不變（{rate}），預計約 {year} 年達成目標。"
+  "portfolioGoalEta": "若年化回報率維持不變（{rate}），預計約 {year} 年達成目標。",
+  "portfolioMaxDrawdown": "最大跌幅",
+  "glossMaxDrawdown": "你持股市值由先前高位至其後低位的最大跌幅，已剔除買入及賣出的影響（時間加權）。顯示你的投資組合曾經歷過多深的下跌。"
 }

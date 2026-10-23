@@ -2627,6 +2627,13 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Wàcc gi gëna mag';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Wàcc gi gëna mag ci njëgu sa aksiyoŋ yi, dale ci benn kaw bu jiitu ba ci benn suuf bu ñëw ginnaaw, te say jënd ak say jaay bokkuñu ci (ñu natt ko ci jamono). Dafay wone ni sa aksiyoŋ yi wàcce bu xóot ba léegi.';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

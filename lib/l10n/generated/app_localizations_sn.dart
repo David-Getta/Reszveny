@@ -2641,6 +2641,13 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Kudzikira kukuru kwazvo';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Kudzikira kukuru kwazvo kwekukosha kwemasheya ako kubva pakakwirira kwakambovapo kusvika pakaderera kwakazotevera, pasina mhedzisiro yekutenga nekutengesa kwako (kwakayerwa nenguva). Kunoratidza kuti potiforiyo yako yakambodzikira zvakadzama sei.';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

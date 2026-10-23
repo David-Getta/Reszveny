@@ -2646,6 +2646,13 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Igabanuka rinini kurusha andi';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Igabanuka rinini kurusha andi ry\'agaciro k\'imigabane yawe, kuva ku gasongero ka mbere kugera ku rwego rwo hasi rwakurikiyeho, hatitawe ku byo waguze n\'ibyo wagurishije (bipimwe hashingiwe ku gihe). Ryerekana uko ishoramari ryawe rimaze kumanuka cyane.';
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

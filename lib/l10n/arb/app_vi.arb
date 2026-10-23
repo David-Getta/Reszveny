@@ -799,5 +799,7 @@
   "contributionHint": "Chỉ mua, không bán: các vị thế thấp hơn mục tiêu nhiều nhất sẽ nhận tiền trước.",
   "contributionShares": "≈ {shares} cổ phiếu",
   "contributionMissing": "Không có giá hiện tại cho {symbols}: không được tính vào phần phân bổ.",
-  "portfolioGoalEta": "Nếu lợi nhuận hằng năm được duy trì ({rate}), bạn sẽ đạt mục tiêu vào khoảng năm {year}."
+  "portfolioGoalEta": "Nếu lợi nhuận hằng năm được duy trì ({rate}), bạn sẽ đạt mục tiêu vào khoảng năm {year}.",
+  "portfolioMaxDrawdown": "Mức sụt giảm tối đa",
+  "glossMaxDrawdown": "Mức giảm lớn nhất của giá trị cổ phiếu bạn nắm giữ từ một đỉnh trước đó xuống một đáy sau đó, không tính ảnh hưởng của việc mua và bán của bạn (theo trọng số thời gian). Cho thấy danh mục của bạn đã từng trải qua đợt sụt giảm sâu đến mức nào."
 }

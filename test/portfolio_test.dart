@@ -605,6 +605,50 @@ void main() {
     expect(portfolioValueHistory(const [], const {}, (_) => 1), isNull);
   });
 
+  test('largest drop: on the time-weighted index, so buying and selling do not count as gains or drops', () {
+    // 30 nap: 100 → 120 (10. nap), → 90 (20. nap), → 110.
+    final closes = [
+      for (var i = 0; i <= 10; i++) 100.0 + 2 * i,
+      for (var i = 1; i <= 10; i++) 120.0 - 3 * i,
+      for (var i = 1; i <= 10; i++) 90.0 + 2 * i,
+    ];
+    final histories = {
+      'AAA': PriceHistory(
+        symbol: 'AAA',
+        points: [for (final (i, c) in closes.indexed) PricePoint(time: DateTime(2026, 1, 1 + i), close: c)],
+      ),
+    };
+    PortfolioLot lot(String id, double q, int day, {bool sell = false}) => PortfolioLot(
+      id: id,
+      symbol: 'AAA',
+      quantity: q,
+      price: 100,
+      currency: 'USD',
+      date: DateTime(2026, 1, day),
+      sell: sell,
+    );
+    final dd = portfolioMaxDrawdown([lot('a', 10, 1)], histories, (_) => 1)!;
+    expect(dd.percent, closeTo(-25, 1e-9));
+    expect((dd.peak, dd.trough), (DateTime(2026, 1, 11), DateTime(2026, 1, 21)));
+    // Egy közbeni nagy vétel és egy eladás nem változtat rajta (időarányos).
+    final mixed = portfolioMaxDrawdown(
+      [lot('a', 10, 1), lot('b', 100, 15), lot('c', 50, 18, sell: true)],
+      histories,
+      (_) => 1,
+    )!;
+    expect(mixed.percent, closeTo(-25, 1e-9));
+    // Változatlan áron csak vételek és eladások: nincs visszaesés.
+    final flat = {
+      'AAA': PriceHistory(
+        symbol: 'AAA',
+        points: [for (var i = 0; i < 30; i++) PricePoint(time: DateTime(2026, 1, 1 + i), close: 100)],
+      ),
+    };
+    expect(portfolioMaxDrawdown([lot('a', 10, 1), lot('b', 5, 10, sell: true)], flat, (_) => 1), isNull);
+    // Túl rövid sor: nincs mit mondani.
+    expect(portfolioMaxDrawdown([lot('a', 10, 25)], histories, (_) => 1), isNull);
+  });
+
   test('S&P 500 comparison: each purchase amount goes into the index on its own day', () {
     PriceHistory h(String s, List<double> closes) => PriceHistory(
       symbol: s,

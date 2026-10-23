@@ -2633,6 +2633,13 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Biggest drop';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Di biggest fall for your stocks value from one high wey come first go one low wey come after, without di effect of your buy and sell (time-weighted). E dey show how deep di dip wey your portfolio don already pass through be.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

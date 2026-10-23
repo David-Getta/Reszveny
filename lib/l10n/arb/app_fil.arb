@@ -799,5 +799,7 @@
   "contributionHint": "Pagbili lang, walang pagbebenta: ang mga posisyong pinakamalayo sa ilalim ng kanilang target ang unang makakatanggap ng pera.",
   "contributionShares": "≈ {shares} share",
   "contributionMissing": "Walang kasalukuyang presyo para sa {symbols}: hindi isinama sa paghahati.",
-  "portfolioGoalEta": "Kung mananatili ang taunang kita ({rate}), maaabot mo ang layunin bandang {year}."
+  "portfolioGoalEta": "Kung mananatili ang taunang kita ({rate}), maaabot mo ang layunin bandang {year}.",
+  "portfolioMaxDrawdown": "Pinakamalaking pagbaba",
+  "glossMaxDrawdown": "Ang pinakamalaking pagbaba ng halaga ng mga stock mo mula sa isang naunang tuktok hanggang sa isang mas huling pinakamababa, nang walang epekto ng mga pagbili at pagbenta mo (time-weighted). Ipinapakita nito kung gaano kalalim na pagbagsak ang napagdaanan na ng portfolio mo."
 }

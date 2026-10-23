@@ -2653,6 +2653,13 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Fidinana lehibe indrindra';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Ny fidinana lehibe indrindra amin\'ny sandan\'ny aksionao, avy amin\'ny tampony teo aloha ka hatramin\'ny ambany indrindra taty aoriana, tsy misy ny fiantraikan\'ny fividiananao sy ny fivarotanao (voalanja araka ny fotoana). Asehony ny halalin\'ny fidinana efa niainan\'ny kitapom-bolanao.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

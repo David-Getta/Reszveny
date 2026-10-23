@@ -799,5 +799,7 @@
   "contributionHint": "Solo acquisti, nessuna vendita: le posizioni più sotto il loro obiettivo ricevono il denaro per prime.",
   "contributionShares": "≈ {shares} azioni",
   "contributionMissing": "Nessun prezzo attuale per {symbols}: esclusi dalla ripartizione.",
-  "portfolioGoalEta": "Se il rendimento annuo si mantiene ({rate}), raggiungerai l’obiettivo intorno al {year}."
+  "portfolioGoalEta": "Se il rendimento annuo si mantiene ({rate}), raggiungerai l’obiettivo intorno al {year}.",
+  "portfolioMaxDrawdown": "Calo massimo",
+  "glossMaxDrawdown": "Il calo più forte del valore delle tue azioni da un massimo precedente a un minimo successivo, senza l'effetto dei tuoi acquisti e delle tue vendite (ponderato nel tempo). Mostra quanto è stato profondo il ribasso che il tuo portafoglio ha già attraversato."
 }

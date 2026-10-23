@@ -799,5 +799,7 @@
   "contributionHint": "Kugura gusa, nta kugurisha: imigabane iri kure cyane munsi y'intego yayo ni yo ibona amafaranga mbere.",
   "contributionShares": "≈ imigabane {shares}",
   "contributionMissing": "Nta giciro cya none cya {symbols}: ntibibarirwa mu igabanywa.",
-  "portfolioGoalEta": "Niba inyungu ku mwaka igumye uko iri ({rate}), uzagera ku ntego hafi mu mwaka wa {year}."
+  "portfolioGoalEta": "Niba inyungu ku mwaka igumye uko iri ({rate}), uzagera ku ntego hafi mu mwaka wa {year}.",
+  "portfolioMaxDrawdown": "Igabanuka rinini kurusha andi",
+  "glossMaxDrawdown": "Igabanuka rinini kurusha andi ry'agaciro k'imigabane yawe, kuva ku gasongero ka mbere kugera ku rwego rwo hasi rwakurikiyeho, hatitawe ku byo waguze n'ibyo wagurishije (bipimwe hashingiwe ku gihe). Ryerekana uko ishoramari ryawe rimaze kumanuka cyane."
 }

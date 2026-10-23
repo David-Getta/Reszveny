@@ -2602,6 +2602,13 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'การลดลงสูงสุด';
+
+  @override
+  String get glossMaxDrawdown =>
+      'การลดลงมากที่สุดของมูลค่าหุ้นที่คุณถือ จากจุดสูงสุดก่อนหน้าไปจนถึงจุดต่ำสุดในภายหลัง โดยไม่นับผลจากการซื้อขายของคุณ (ถ่วงน้ำหนักตามเวลา) แสดงให้เห็นว่าพอร์ตของคุณเคยผ่านการร่วงลงลึกแค่ไหนมาแล้ว';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

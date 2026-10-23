@@ -2625,6 +2625,13 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'تر ټولو لوی کمښت';
+
+  @override
+  String get glossMaxDrawdown =>
+      'ستاسو د ونډو په ارزښت کې له یوې پخوانۍ لوړې کچې څخه تر یوې وروستۍ ټیټې کچې پورې تر ټولو لوی کمښت، ستاسو د پېرلو او پلورلو له اغېز پرته (د وخت له مخې وزن شوی). دا ښيي چې ستاسو پورټفولیو تر اوسه څومره ژور کمښت لیدلی دی.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

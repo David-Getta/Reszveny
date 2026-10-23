@@ -2625,6 +2625,13 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'အကြီးဆုံး ကျဆင်းမှု';
+
+  @override
+  String get glossMaxDrawdown =>
+      'သင့်ရှယ်ယာတန်ဖိုး ယခင်အမြင့်ဆုံးအဆင့်မှ နောက်ပိုင်း အနိမ့်ဆုံးအဆင့်အထိ အကြီးဆုံး ကျဆင်းမှု၊ သင်၏ ဝယ်ယူမှုနှင့် ရောင်းချမှုများ၏ သက်ရောက်မှု မပါဝင်ပါ (အချိန်ဖြင့် ချိန်ဆထားသည်)။ သင့်ပေါ့ဖိုလီယိုသည် ယခုအထိ မည်မျှ နက်ရှိုင်းသော ကျဆင်းမှုကို ဖြတ်သန်းခဲ့ပြီးဖြစ်သည်ကို ပြသည်။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

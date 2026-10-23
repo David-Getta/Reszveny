@@ -2644,6 +2644,13 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Gadi bu\'iinsa isa guddaa';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Gadi bu\'iinsa gatii aksiyoonota keetii isa guddaa, ol aantummaa duraa irraa hanga gadi aantummaa booda jiruutti, dhiibbaa bittaa fi gurgurtaa keetiin ala (yeroon madaalame). Poortfooliyoon kee hanga ammaatti gadi bu\'iinsa hammam gadi fagoo keessa akka darbe agarsiisa.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

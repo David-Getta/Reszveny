@@ -2563,6 +2563,13 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => '최대 낙폭';
+
+  @override
+  String get glossMaxDrawdown =>
+      '보유 종목 평가액이 이전 고점에서 이후 저점까지 가장 크게 떨어진 폭이에요. 매수·매도의 영향은 빼고 계산해요(시간가중). 포트폴리오가 지금까지 얼마나 깊은 하락을 겪었는지 보여 줘요.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

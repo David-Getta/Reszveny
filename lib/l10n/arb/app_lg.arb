@@ -799,5 +799,7 @@
   "contributionHint": "Kugula kwokka, tewali kutunda: emigabo egisinga okuba wansi w'ekigendererwa kyagyo gye gisooka okufuna ssente.",
   "contributionShares": "≈ emigabo {shares}",
   "contributionMissing": "Tewali bbeeyi ya kati eya {symbols}: tegibaliddwa mu kugabanya.",
-  "portfolioGoalEta": "Amagoba ga buli mwaka bwe ganaasigala bwe gatyo ({rate}), ojja kutuuka ku kiruubirirwa nga mu mwaka gwa {year}."
+  "portfolioGoalEta": "Amagoba ga buli mwaka bwe ganaasigala bwe gatyo ({rate}), ojja kutuuka ku kiruubirirwa nga mu mwaka gwa {year}.",
+  "portfolioMaxDrawdown": "Okugwa okusinga obunene",
+  "glossMaxDrawdown": "Okugwa okusinga obunene okw'omuwendo gw'emigabo gyo okuva ku ntikko eyasooka okutuuka wansi ennyo oluvannyuma, nga tobaliddemu bye wagula ne bye watunda (kipimiddwa ku biseera). Kiraga emigabo gyo bwe gyakagwa wansi ennyo."
 }

@@ -2701,6 +2701,13 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Najväčší prepad';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Najväčší pokles hodnoty vašich akcií z predchádzajúceho vrcholu na neskoršie dno, bez vplyvu vašich nákupov a predajov (časovo vážený). Ukazuje, akým hlbokým prepadom už vaše portfólio prešlo.';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

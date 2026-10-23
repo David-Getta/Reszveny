@@ -2638,6 +2638,13 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Eng katta pasayish';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Aksiyalaringiz qiymatining avvalgi choʻqqidan keyingi eng past nuqtagacha boʻlgan eng katta pasayishi, xarid va sotuvlaringiz taʼsirisiz (vaqt boʻyicha tortilgan). Portfelingiz allaqachon qanchalik chuqur pasayishni boshidan kechirganini koʻrsatadi.';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

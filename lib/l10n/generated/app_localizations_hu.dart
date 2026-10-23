@@ -2639,6 +2639,13 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Legnagyobb visszaesés';
+
+  @override
+  String get glossMaxDrawdown =>
+      'A részvényeid értékének legnagyobb esése egy korábbi csúcsról egy későbbi mélypontig, a vételeid és eladásaid hatása nélkül (időarányosan). Megmutatja, mekkora visszaesést élt már át a portfóliód.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

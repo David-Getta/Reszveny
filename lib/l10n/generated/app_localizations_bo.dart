@@ -2622,6 +2622,13 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'མར་ཆག་ཆེ་ཤོས';
+
+  @override
+  String get glossMaxDrawdown =>
+      'ཁྱེད་ཀྱི་ཧུར་ཁག་གི་རིན་ཐང་སྔོན་གྱི་མཐོ་ཚད་ཞིག་ནས་རྗེས་ཀྱི་དམའ་ཚད་ཞིག་བར་གྱི་མར་ཆག་ཆེ་ཤོས། ཁྱེད་ཀྱི་ཉོ་ཚོང་གི་ཤུགས་རྐྱེན་ཚུད་མེད། (དུས་ཚོད་ལྟར་ལྗིད་ཚད་བཞག་པ།) ཁྱེད་ཀྱི་མ་འཇོག་ཚོགས་སྡེབ་ཀྱིས་ད་བར་མར་ཆག་ཇི་ཙམ་ཟབ་པ་ཞིག་མྱོང་ཡོད་པ་སྟོན།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

@@ -2696,6 +2696,13 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Největší propad';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Největší pokles hodnoty vašich akcií z dřívějšího vrcholu na pozdější dno, bez vlivu vašich nákupů a prodejů (časově vážený). Ukazuje, jak hlubokým propadem už vaše portfolio prošlo.';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

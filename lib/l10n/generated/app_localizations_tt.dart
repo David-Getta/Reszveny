@@ -2631,6 +2631,13 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Иң зур төшү';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Акцияләрегез кыйммәтенең элеккеге иң югары ноктадан соңрак иң түбән ноктага кадәр иң зур төшүе, сатып алуларыгыз һәм сатуларыгызның йогынтысыннан башка (вакыт буенча үлчәнгән). Портфелегезнең инде никадәр тирән төшүне кичергәнен күрсәтә.';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

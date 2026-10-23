@@ -2645,6 +2645,13 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Kokita ya monene koleka';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Kokita ya monene koleka ya motuya ya ba-action na yo, longwa na likolo moko ya liboso kino na nse moko ya nsima, kozanga kotánga bosombi mpe boteki na yo (epimami na ntango). Emonisaka ndenge portefeuille na yo esilaki kokita na mozindo.';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

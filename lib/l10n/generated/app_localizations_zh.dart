@@ -2518,6 +2518,13 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => '最大回撤';
+
+  @override
+  String get glossMaxDrawdown =>
+      '您持仓股票市值从此前高点到之后低点的最大跌幅，已剔除买入和卖出的影响（时间加权）。它显示您的投资组合曾经历过多深的下跌。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5403,6 +5410,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String portfolioGoalEta(String rate, String year) {
     return '若年化回報率維持不變（$rate），預計約 $year 年達成目標。';
   }
+
+  @override
+  String get portfolioMaxDrawdown => '最大跌幅';
+
+  @override
+  String get glossMaxDrawdown =>
+      '你持股市值由先前高位至其後低位的最大跌幅，已剔除買入及賣出的影響（時間加權）。顯示你的投資組合曾經歷過多深的下跌。';
 
   @override
   String get portfolioGoalSet => '設定目標';

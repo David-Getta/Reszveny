@@ -2632,6 +2632,13 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Sɔngɔ jigin belebeba';
+
+  @override
+  String get glossMaxDrawdown =>
+      'I ka aksiyɔnw sɔngɔ jigin belebeba, ka bɔ sanfɛla dɔ la min tun bɛ yen fɔlɔ ka taa se duguma dɔ ma min nana kɔfɛ, i ka sanni ni i ka feereli nɔ tɛ jate a la (waati hakɛ jatelen). A bɛ a jira i ka aksiyɔn kɛsu jiginna ka taa duguma cogo min fɔlɔ.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

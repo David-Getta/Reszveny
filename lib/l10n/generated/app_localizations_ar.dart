@@ -2692,6 +2692,13 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'أكبر تراجع';
+
+  @override
+  String get glossMaxDrawdown =>
+      'أكبر هبوط في قيمة أسهمك من قمة سابقة إلى قاع لاحق، دون تأثير عمليات الشراء والبيع التي قمت بها (مرجّح زمنيًا). يُظهر مدى عمق التراجع الذي مرّت به محفظتك بالفعل.';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

@@ -2632,6 +2632,13 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Største fald';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Det største fald i værdien af dine aktier fra en tidligere top til en senere bund, uden effekten af dine køb og salg (tidsvægtet). Det viser, hvor dybt et dyk din portefølje allerede har været igennem.';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

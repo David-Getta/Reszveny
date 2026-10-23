@@ -2631,6 +2631,13 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Largest drop';
+
+  @override
+  String get glossMaxDrawdown =>
+      'The biggest fall of your holdings from an earlier high to a later low, without the effect of your buying and selling (time-weighted). It shows how deep a dip your portfolio has already been through.';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

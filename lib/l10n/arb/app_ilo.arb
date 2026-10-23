@@ -799,5 +799,7 @@
   "contributionHint": "Panaggatang laeng, awan ti panaglako: dagiti posision a kaadaywan iti baba ti targetda ti umuna a makaawat iti kuarta.",
   "contributionShares": "≈ {shares} a share",
   "contributionMissing": "Awan ti agdama a presio para iti {symbols}: saan a nairaman iti panagbingay.",
-  "portfolioGoalEta": "No agtalinaed ti tinawen a ganansia ({rate}), magun-odmo ti panggepmo iti agarup tawen {year}."
+  "portfolioGoalEta": "No agtalinaed ti tinawen a ganansia ({rate}), magun-odmo ti panggepmo iti agarup tawen {year}.",
+  "portfolioMaxDrawdown": "Kadakkelan a panagbaba",
+  "glossMaxDrawdown": "Ti kadakkelan a panagbaba ti pateg dagiti stock-mo manipud iti maysa a nasapsapa a kangatoan agingga iti maysa a naud-udi a kababaan, nga awan ti epekto dagiti gatang ken lako-mo (time-weighted). Ipakitana no kasano kauneg ti panagbaba a nalasatan ti portfolio-mo."
 }

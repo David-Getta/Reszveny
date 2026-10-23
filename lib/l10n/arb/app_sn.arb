@@ -799,5 +799,7 @@
   "contributionHint": "Kutenga chete, hapana kutengesa: masheya ari pasi zvikuru pechinangwa chawo anotanga kuwana mari.",
   "contributionShares": "≈ masheya {shares}",
   "contributionMissing": "Hapana mutengo wazvino we {symbols}: hazvina kuverengerwa mukugovera.",
-  "portfolioGoalEta": "Kana pundutso yegore ikaramba yakadaro ({rate}), uchasvika pachinangwa kunenge muna {year}."
+  "portfolioGoalEta": "Kana pundutso yegore ikaramba yakadaro ({rate}), uchasvika pachinangwa kunenge muna {year}.",
+  "portfolioMaxDrawdown": "Kudzikira kukuru kwazvo",
+  "glossMaxDrawdown": "Kudzikira kukuru kwazvo kwekukosha kwemasheya ako kubva pakakwirira kwakambovapo kusvika pakaderera kwakazotevera, pasina mhedzisiro yekutenga nekutengesa kwako (kwakayerwa nenguva). Kunoratidza kuti potiforiyo yako yakambodzikira zvakadzama sei."
 }

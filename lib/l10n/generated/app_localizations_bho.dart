@@ -2628,6 +2628,13 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'सबसे बड़ गिरावट';
+
+  @override
+  String get glossMaxDrawdown =>
+      'राउर शेयरन के मूल्य में पहिले के कवनो ऊँचाई से बाद के कवनो निचला स्तर तक के सबसे बड़ गिरावट, राउर खरीद-बिक्री के असर के बिना (समय-भारित)। ई देखावेला कि राउर पोर्टफ़ोलियो अब तक कतना गहिराह गिरावट झेल चुकल बा।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

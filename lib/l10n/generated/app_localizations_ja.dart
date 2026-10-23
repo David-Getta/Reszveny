@@ -2553,6 +2553,13 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => '最大下落率';
+
+  @override
+  String get glossMaxDrawdown =>
+      '保有株の評価額が、それ以前の高値からその後の安値までに下がった最大の幅。売買による影響は除いています（時間加重）。ポートフォリオがこれまでにどれほど深い下落を経験したかを示します。';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

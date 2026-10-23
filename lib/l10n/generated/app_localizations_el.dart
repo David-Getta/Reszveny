@@ -2644,6 +2644,13 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Μέγιστη πτώση';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Η μεγαλύτερη πτώση της αξίας των μετοχών σας από ένα προηγούμενο υψηλό σε ένα μεταγενέστερο χαμηλό, χωρίς την επίδραση των αγορών και πωλήσεών σας (χρονικά σταθμισμένη). Δείχνει πόσο βαθιά πτώση έχει ήδη περάσει το χαρτοφυλάκιό σας.';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

@@ -799,5 +799,7 @@
   "contributionHint": "Kuthengwa kuphela, akuthengiswa: iipozishini ezingaphantsi kakhulu kwenjongo yazo zifumana imali kuqala.",
   "contributionShares": "≈ izabelo {shares}",
   "contributionMissing": "Akukho xabiso langoku kwi-{symbols}: azibandakanywanga kulwabiwo.",
-  "portfolioGoalEta": "Ukuba inzuzo yonyaka ihlala injalo ({rate}), uya kufikelela usukelo lwakho malunga nonyaka ka-{year}."
+  "portfolioGoalEta": "Ukuba inzuzo yonyaka ihlala injalo ({rate}), uya kufikelela usukelo lwakho malunga nonyaka ka-{year}.",
+  "portfolioMaxDrawdown": "Ukwehla okukhulu kakhulu",
+  "glossMaxDrawdown": "Ukwehla okukhulu kakhulu kwexabiso lezabelo zakho ukusuka kwincopho yangaphambili ukuya kweyona ndawo iphantsi yamva, ngaphandle kwempembelelo yokuthenga nokuthengisa kwakho (kulinganiswe ngexesha). Kubonisa ukuba ipotifoliyo yakho sele yehle kangakanani ngokunzulu."
 }

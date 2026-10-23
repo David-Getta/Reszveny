@@ -799,5 +799,7 @@
   "contributionHint": "Vain ostoja, ei myyntejä: eniten tavoitteestaan jäljessä olevat omistukset saavat rahat ensin.",
   "contributionShares": "≈ {shares} osaketta",
   "contributionMissing": "Ei nykyistä hintaa kohteille {symbols}: jätetty jaon ulkopuolelle.",
-  "portfolioGoalEta": "Jos vuosituotto pysyy ennallaan ({rate}), saavutat tavoitteen noin vuonna {year}."
+  "portfolioGoalEta": "Jos vuosituotto pysyy ennallaan ({rate}), saavutat tavoitteen noin vuonna {year}.",
+  "portfolioMaxDrawdown": "Suurin lasku",
+  "glossMaxDrawdown": "Osakkeidesi arvon suurin lasku aiemmasta huipusta myöhempään pohjaan ilman ostojesi ja myyntiesi vaikutusta (aikapainotettu). Se näyttää, kuinka syvän notkahduksen salkkusi on jo kokenut."
 }

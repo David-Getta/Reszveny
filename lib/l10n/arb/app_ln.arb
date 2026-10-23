@@ -799,5 +799,7 @@
   "contributionHint": "Kosomba kaka, koteka te: ba-position oyo etikali mosika mingi na nse ya mokano na yango ekozwa mbɔngɔ liboso.",
   "contributionShares": "≈ ba-action {shares}",
   "contributionMissing": "Ntalo ya sikoyo ezali te mpo na {symbols}: etangami te na bokaboli.",
-  "portfolioGoalEta": "Soki litomba ya mobu etikali ndenge wana ({rate}), okokokisa mokano pene na mobu {year}."
+  "portfolioGoalEta": "Soki litomba ya mobu etikali ndenge wana ({rate}), okokokisa mokano pene na mobu {year}.",
+  "portfolioMaxDrawdown": "Kokita ya monene koleka",
+  "glossMaxDrawdown": "Kokita ya monene koleka ya motuya ya ba-action na yo, longwa na likolo moko ya liboso kino na nse moko ya nsima, kozanga kotánga bosombi mpe boteki na yo (epimami na ntango). Emonisaka ndenge portefeuille na yo esilaki kokita na mozindo."
 }

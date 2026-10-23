@@ -2658,6 +2658,13 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Caída máxima';
+
+  @override
+  String get glossMaxDrawdown =>
+      'A maior caída do valor das túas accións desde un máximo anterior ata un mínimo posterior, sen o efecto das túas compras e vendas (ponderada no tempo). Mostra canto de fonda foi a caída que xa atravesou a túa carteira.';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

@@ -2636,6 +2636,13 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Daketina herî mezin';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Daketina herî mezin a nirxa pişkên te ji lûtkeyeke berê heta asteke herî nizm a paşê, bêyî bandora kirîn û firotinên te (li gorî demê pîvandî). Nîşan dide ku portfolyoya te heta niha çiqas kûr daketiye.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

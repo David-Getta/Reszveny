@@ -799,5 +799,7 @@
   "contributionHint": "Pagpalit lang, walay pagbaligya: ang mga posisyon nga labing layo ubos sa ilang target ang unang makadawat sa kwarta.",
   "contributionShares": "≈ {shares} ka share",
   "contributionMissing": "Walay presyo karon alang sa {symbols}: wala iapil sa pagbahin.",
-  "portfolioGoalEta": "Kung magpabilin ang tinuig nga kita ({rate}), maabot nimo ang tumong mga tuig {year}."
+  "portfolioGoalEta": "Kung magpabilin ang tinuig nga kita ({rate}), maabot nimo ang tumong mga tuig {year}.",
+  "portfolioMaxDrawdown": "Pinakadakong pagkunhod",
+  "glossMaxDrawdown": "Ang pinakadakong pagkunhod sa bili sa imong mga stock gikan sa usa ka naunang kinatas-an ngadto sa usa ka ulahing kinaubsan, nga walay epekto sa imong pagpalit ug pagbaligya (time-weighted). Gipakita niini kung unsa ka lawom nga pagkunhod ang naagian na sa imong portfolio."
 }

@@ -2703,6 +2703,13 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Največji padec';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Največji padec vrednosti vaših delnic od prejšnjega vrha do poznejšega dna, brez vpliva vaših nakupov in prodaj (časovno tehtano). Pokaže, kako globok padec je vaš portfelj že doživel.';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

@@ -2634,6 +2634,13 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'უდიდესი ვარდნა';
+
+  @override
+  String get glossMaxDrawdown =>
+      'თქვენი აქციების ღირებულების უდიდესი ვარდნა ადრინდელი პიკიდან მოგვიანებით მინიმუმამდე, თქვენი ყიდვებისა და გაყიდვების გავლენის გარეშე (დროით შეწონილი). გვიჩვენებს, რამდენად ღრმა ვარდნა გადაიტანა უკვე თქვენმა პორტფელმა.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

@@ -2634,6 +2634,13 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Kũnyiha kũnene mũno';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Kũnyiha kũnene mũno kwa thogora wa hisa ciaku kuuma igũrũ rĩa mbere nginya hau thĩ thuutha, hatarĩ ũhoro wa kũgũra na kwendia gwaku (gũthimĩtwo na ihinda). Kuonanagia ũrĩa hisa ciaku ciagũĩte thĩ mũno hĩndĩ ĩhĩtũku.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

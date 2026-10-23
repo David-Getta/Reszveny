@@ -2648,6 +2648,13 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Okugwa okusinga obunene';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Okugwa okusinga obunene okw\'omuwendo gw\'emigabo gyo okuva ku ntikko eyasooka okutuuka wansi ennyo oluvannyuma, nga tobaliddemu bye wagula ne bye watunda (kipimiddwa ku biseera). Kiraga emigabo gyo bwe gyakagwa wansi ennyo.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

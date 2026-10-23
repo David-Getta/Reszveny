@@ -2640,6 +2640,13 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Faɗuwa mafi girma';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Faɗuwa mafi girma ta ƙimar hannun jarinka daga wani koli na baya zuwa wani ƙasa na gaba, ba tare da tasirin saye da sayarwarka ba (an auna da lokaci). Tana nuna zurfin faɗuwar da jakar hannun jarinka ta riga ta fuskanta.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

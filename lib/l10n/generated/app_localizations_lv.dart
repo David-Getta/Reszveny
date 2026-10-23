@@ -2675,6 +2675,13 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Lielākais kritums';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Lielākais jūsu akciju vērtības kritums no agrākas virsotnes līdz vēlākam zemākajam punktam, neņemot vērā jūsu pirkumu un pārdošanas ietekmi (laikā svērts). Tas parāda, cik dziļu kritumu jūsu portfelis jau ir piedzīvojis.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

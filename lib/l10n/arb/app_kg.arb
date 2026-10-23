@@ -799,5 +799,7 @@
   "contributionHint": "Kusumba kaka, kuteka ve: ba position yina me bikala nsi ya lukanu na yo kuluta ta baka mbongo ntete.",
   "contributionShares": "≈ action {shares}",
   "contributionMissing": "Ka kuena ntalu ya bubu ya {symbols} ko: bo me katula yo na kukabula.",
-  "portfolioGoalEta": "Kana mbakulu ya mvula bikala mutindu yai ({rate}), nge ta lungisa lukanu pene-pene na mvula {year}."
+  "portfolioGoalEta": "Kana mbakulu ya mvula bikala mutindu yai ({rate}), nge ta lungisa lukanu pene-pene na mvula {year}.",
+  "portfolioMaxDrawdown": "Kukulumuka ya nene kuluta",
+  "glossMaxDrawdown": "Kukulumuka ya nene kuluta ya ntalu ya ba actions na nge, katuka na zulu ya ntete tii na nsi ya nima, kukonda kutadila kusumba mpi kuteka na nge (bo me tala na ntangu). Yo ke monisa nki mutindu portefeuille na nge me kulumukaka dezia na nsi."
 }

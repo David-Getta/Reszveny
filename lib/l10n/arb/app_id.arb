@@ -799,5 +799,7 @@
   "contributionHint": "Hanya membeli, tanpa menjual: posisi yang paling jauh di bawah targetnya mendapat dana lebih dulu.",
   "contributionShares": "≈ {shares} saham",
   "contributionMissing": "Tidak ada harga terkini untuk {symbols}: tidak disertakan dalam pembagian.",
-  "portfolioGoalEta": "Jika imbal hasil tahunan bertahan ({rate}), Anda akan mencapai target sekitar tahun {year}."
+  "portfolioGoalEta": "Jika imbal hasil tahunan bertahan ({rate}), Anda akan mencapai target sekitar tahun {year}.",
+  "portfolioMaxDrawdown": "Penurunan terbesar",
+  "glossMaxDrawdown": "Penurunan terbesar nilai saham Anda dari puncak sebelumnya ke titik terendah sesudahnya, tanpa pengaruh pembelian dan penjualan Anda (tertimbang waktu). Ini menunjukkan seberapa dalam penurunan yang pernah dialami portofolio Anda."
 }

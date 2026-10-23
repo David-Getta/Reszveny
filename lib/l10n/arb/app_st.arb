@@ -799,5 +799,7 @@
   "contributionHint": "Ho reka feela, ha ho rekiswe: dishere tse ka tlase haholo ho sepheo sa tsona di fumana chelete pele.",
   "contributionShares": "≈ dishere tse {shares}",
   "contributionMissing": "Ha ho theko ya hona jwale ya {symbols}: ha di kenyelletswe kabong.",
-  "portfolioGoalEta": "Haeba poelo ya selemo e ka dula e le jwalo ({rate}), o tla fihlela sepheo sa hao hoo e ka bang ka selemo sa {year}."
+  "portfolioGoalEta": "Haeba poelo ya selemo e ka dula e le jwalo ({rate}), o tla fihlela sepheo sa hao hoo e ka bang ka selemo sa {year}.",
+  "portfolioMaxDrawdown": "Ho theoha ho hoholo ka ho fetisisa",
+  "glossMaxDrawdown": "Ho theoha ho hoholo ka ho fetisisa ha boleng ba dishere tsa hao ho tloha tlhorong ya pele ho fihla boemong bo tlase ba hamorao, ntle le phello ya ho reka le ho rekisa ha hao (ho lekantswe ka nako). Ho bontsha hore potefolio ya hao e se e theohile ka botebo bo bokae."
 }

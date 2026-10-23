@@ -799,5 +799,7 @@
   "contributionHint": "Tik pirkimai, jokių pardavimų: pinigus pirmiausia gauna pozicijos, labiausiai atsiliekančios nuo savo tikslo.",
   "contributionShares": "≈ {shares} vnt.",
   "contributionMissing": "Nėra dabartinės {symbols} kainos: neįtrauktos į paskirstymą.",
-  "portfolioGoalEta": "Jei metinė grąža išliks ({rate}), tikslą pasieksite apie {year} m."
+  "portfolioGoalEta": "Jei metinė grąža išliks ({rate}), tikslą pasieksite apie {year} m.",
+  "portfolioMaxDrawdown": "Didžiausias kritimas",
+  "glossMaxDrawdown": "Didžiausias jūsų akcijų vertės kritimas nuo ankstesnės viršūnės iki vėlesnės žemiausios vertės, neįskaitant jūsų pirkimų ir pardavimų poveikio (laiku svertinis). Rodo, kokį gilų nuosmukį jūsų portfelis jau yra patyręs."
 }

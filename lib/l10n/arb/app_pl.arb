@@ -799,5 +799,7 @@
   "contributionHint": "Tylko zakupy, bez sprzedaży: środki trafiają najpierw do pozycji, które są najdalej poniżej celu.",
   "contributionShares": "≈ {shares} szt.",
   "contributionMissing": "Brak aktualnej ceny dla {symbols}: pominięte w podziale.",
-  "portfolioGoalEta": "Jeśli roczna stopa zwrotu się utrzyma ({rate}), osiągniesz cel około {year} roku."
+  "portfolioGoalEta": "Jeśli roczna stopa zwrotu się utrzyma ({rate}), osiągniesz cel około {year} roku.",
+  "portfolioMaxDrawdown": "Największy spadek",
+  "glossMaxDrawdown": "Największy spadek wartości twoich akcji od wcześniejszego szczytu do późniejszego dołka, bez wpływu twoich zakupów i sprzedaży (ważony czasem). Pokazuje, jak głęboki spadek twój portfel już przeszedł."
 }

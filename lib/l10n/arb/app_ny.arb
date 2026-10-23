@@ -799,5 +799,7 @@
   "contributionHint": "Kugula kokha, osagulitsa: masheya omwe ali pansi kwambiri pa cholinga chawo amalandira ndalama poyamba.",
   "contributionShares": "≈ masheya {shares}",
   "contributionMissing": "Palibe mtengo wapano wa {symbols}: sanaphatikizidwe pogawa.",
-  "portfolioGoalEta": "Ngati phindu la pachaka likhalebe chomwechi ({rate}), mudzakwaniritsa cholinga pafupifupi chaka cha {year}."
+  "portfolioGoalEta": "Ngati phindu la pachaka likhalebe chomwechi ({rate}), mudzakwaniritsa cholinga pafupifupi chaka cha {year}.",
+  "portfolioMaxDrawdown": "Kutsika kwakukulu kwambiri",
+  "glossMaxDrawdown": "Kutsika kwakukulu kwambiri kwa mtengo wa masheya anu kuchokera pamwamba pomwe munali kale kufika pansi pomwe panabwera pambuyo pake, popanda zotsatira za kugula ndi kugulitsa kwanu (koyezedwa malinga ndi nthawi). Kumasonyeza kuti masheya anu atsika mozama bwanji kale."
 }

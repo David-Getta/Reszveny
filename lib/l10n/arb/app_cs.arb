@@ -799,5 +799,7 @@
   "contributionHint": "Jen nákupy, žádné prodeje: peníze dostanou nejdřív pozice, které nejvíc zaostávají za svým cílem.",
   "contributionShares": "≈ {shares} ks",
   "contributionMissing": "Pro {symbols} není k dispozici aktuální cena: nejsou zahrnuty do rozdělení.",
-  "portfolioGoalEta": "Pokud roční výnos vydrží ({rate}), dosáhnete cíle kolem roku {year}."
+  "portfolioGoalEta": "Pokud roční výnos vydrží ({rate}), dosáhnete cíle kolem roku {year}.",
+  "portfolioMaxDrawdown": "Největší propad",
+  "glossMaxDrawdown": "Největší pokles hodnoty vašich akcií z dřívějšího vrcholu na pozdější dno, bez vlivu vašich nákupů a prodejů (časově vážený). Ukazuje, jak hlubokým propadem už vaše portfolio prošlo."
 }

@@ -2632,6 +2632,13 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Pi gwo bès';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Pi gwo bès valè aksyon ou yo soti nan yon pi wo nivo anvan rive nan yon pi ba nivo apre, san efè acha ak vant ou yo (peze selon tan). Li montre ki jan bès pòtfèy ou a deja travèse a te fon.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

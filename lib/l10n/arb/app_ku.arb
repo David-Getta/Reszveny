@@ -799,5 +799,7 @@
   "contributionHint": "Tenê kirîn, bê firotin: pozîsyonên ku herî zêde di bin armanca xwe de ne, pêşî pere distînin.",
   "contributionShares": "≈ {shares} pişk",
   "contributionMissing": "Ji bo {symbols} bihayê niha tune: di dabeşkirinê de nayên hesibandin.",
-  "portfolioGoalEta": "Ger qezenca salane wisa bimîne ({rate}), tu dê nêzî sala {year} bigihîjî armancê."
+  "portfolioGoalEta": "Ger qezenca salane wisa bimîne ({rate}), tu dê nêzî sala {year} bigihîjî armancê.",
+  "portfolioMaxDrawdown": "Daketina herî mezin",
+  "glossMaxDrawdown": "Daketina herî mezin a nirxa pişkên te ji lûtkeyeke berê heta asteke herî nizm a paşê, bêyî bandora kirîn û firotinên te (li gorî demê pîvandî). Nîşan dide ku portfolyoya te heta niha çiqas kûr daketiye."
 }

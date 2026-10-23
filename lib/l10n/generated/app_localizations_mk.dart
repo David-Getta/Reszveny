@@ -2654,6 +2654,13 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Најголем пад';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Најголемиот пад на вредноста на вашите акции од претходен врв до подоцнежно дно, без влијание на вашите купувања и продажби (временски пондерирано). Покажува колку длабок пад веќе преживеало вашето портфолио.';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

@@ -2635,6 +2635,13 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Ən böyük eniş';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Səhmlərinizin dəyərinin əvvəlki zirvədən sonrakı ən aşağı nöqtəyə qədər ən böyük enişi, alış və satışlarınızın təsiri nəzərə alınmadan (zamana görə çəkili). Portfelinizin artıq nə qədər dərin eniş yaşadığını göstərir.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

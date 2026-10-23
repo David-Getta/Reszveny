@@ -2639,6 +2639,13 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Jeguejy tuichavéva';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Ne aksiõkuéra repy jeguejy tuichavéva, peteĩ yvatekue guive peteĩ ypykue upéi peve; ne jejogua ha ne ñemu ndojepapái (ojepesáva ára rupi). Ohechauka mba\'eichaitépa ne cartera oguejýma.';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

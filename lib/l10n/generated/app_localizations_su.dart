@@ -2638,6 +2638,13 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Turunna panggedéna';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Turunna panggedéna ajén saham anjeun ti puncak saméméhna nepi ka titik panghandapna saterusna, tanpa pangaruh pameulian jeung pangjualan anjeun (ditimbang dumasar waktu). Ieu nunjukkeun sabaraha jero turunna anu kungsi dilakonan ku portofolio anjeun.';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

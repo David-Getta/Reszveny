@@ -2704,6 +2704,13 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Максимальне просідання';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Найбільше падіння вартості ваших акцій від попереднього піку до пізнішого мінімуму без урахування ваших купівель і продажів (зважене за часом). Показує, яке глибоке просідання ваш портфель уже пережив.';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

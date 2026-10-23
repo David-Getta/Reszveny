@@ -2632,6 +2632,13 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Asubu ameqqran';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Asubu ameqqran n wazal n yiksyunen-ik seg usawen yezwaren ar wadda i d-yusan sakin, war ma nḥesb ayen i d-teɣiḍ d wayen i tzenzeḍ (yettwaktal s wakud). Yesskanay acḥal i yeɣli uqrab-ik yakan.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

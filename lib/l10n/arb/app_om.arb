@@ -799,5 +799,7 @@
   "contributionHint": "Bituu qofa, gurgurtaa hin qabu: qabiyyeewwan galma isaanii irraa baay'ee gadi jiran maallaqa dursanii argatu.",
   "contributionShares": "≈ aksiyoona {shares}",
   "contributionMissing": "Gatiin ammaa {symbols} hin jiru: qoodinsa keessa hin galle.",
-  "portfolioGoalEta": "Bu'aan waggaa akkasumatti yoo itti fufe ({rate}), kaayyoon kee gara bara {year} galma ni ga'a."
+  "portfolioGoalEta": "Bu'aan waggaa akkasumatti yoo itti fufe ({rate}), kaayyoon kee gara bara {year} galma ni ga'a.",
+  "portfolioMaxDrawdown": "Gadi bu'iinsa isa guddaa",
+  "glossMaxDrawdown": "Gadi bu'iinsa gatii aksiyoonota keetii isa guddaa, ol aantummaa duraa irraa hanga gadi aantummaa booda jiruutti, dhiibbaa bittaa fi gurgurtaa keetiin ala (yeroon madaalame). Poortfooliyoon kee hanga ammaatti gadi bu'iinsa hammam gadi fagoo keessa akka darbe agarsiisa."
 }

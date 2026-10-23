@@ -2635,6 +2635,13 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Största nedgång';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Den största nedgången i värdet på dina aktier från en tidigare topp till en senare botten, utan effekten av dina köp och försäljningar (tidsviktad). Den visar hur djup en nedgång din portfölj redan har gått igenom.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

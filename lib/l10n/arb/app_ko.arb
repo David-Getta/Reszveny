@@ -799,5 +799,7 @@
   "contributionHint": "매수만 하고 매도는 하지 않습니다. 목표 비중에 가장 못 미치는 종목부터 자금을 배분합니다.",
   "contributionShares": "≈ {shares}주",
   "contributionMissing": "{symbols}의 현재 가격이 없어 배분에서 제외했습니다.",
-  "portfolioGoalEta": "연 수익률({rate})이 유지되면 {year}년경 목표에 도달할 것으로 보여요."
+  "portfolioGoalEta": "연 수익률({rate})이 유지되면 {year}년경 목표에 도달할 것으로 보여요.",
+  "portfolioMaxDrawdown": "최대 낙폭",
+  "glossMaxDrawdown": "보유 종목 평가액이 이전 고점에서 이후 저점까지 가장 크게 떨어진 폭이에요. 매수·매도의 영향은 빼고 계산해요(시간가중). 포트폴리오가 지금까지 얼마나 깊은 하락을 겪었는지 보여 줘요."
 }

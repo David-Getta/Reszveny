@@ -2638,6 +2638,13 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Penurunan terbesar';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Penurunan terbesar nilai saham anda daripada puncak sebelumnya ke titik terendah selepasnya, tanpa kesan pembelian dan jualan anda (berwajaran masa). Ia menunjukkan sedalam mana kejatuhan yang pernah dilalui portfolio anda.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

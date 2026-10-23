@@ -799,5 +799,7 @@
   "contributionHint": "Mung tuku, ora ana adol: posisi sing paling adoh ing ngisor target-e oleh dhuwit luwih dhisik.",
   "contributionShares": "≈ {shares} saham",
   "contributionMissing": "Ora ana rega saiki kanggo {symbols}: ora dilebokake ing pambagian.",
-  "portfolioGoalEta": "Yen imbal hasil taunan tetep ({rate}), sampeyan bakal nggayuh target kira-kira taun {year}."
+  "portfolioGoalEta": "Yen imbal hasil taunan tetep ({rate}), sampeyan bakal nggayuh target kira-kira taun {year}.",
+  "portfolioMaxDrawdown": "Penurunan paling gedhe",
+  "glossMaxDrawdown": "Penurunan paling gedhe regane saham sampeyan saka pucuk sadurunge nganti titik paling endhek sabanjure, tanpa pengaruh tuku lan adol sampeyan (ditimbang miturut wektu). Iki nuduhake sepira jero penurunan sing wis tau dialami portofolio sampeyan."
 }

@@ -2704,6 +2704,13 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Największy spadek';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Największy spadek wartości twoich akcji od wcześniejszego szczytu do późniejszego dołka, bez wpływu twoich zakupów i sprzedaży (ważony czasem). Pokazuje, jak głęboki spadek twój portfel już przeszedł.';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

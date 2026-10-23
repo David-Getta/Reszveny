@@ -799,5 +799,7 @@
   "contributionHint": "Nur Käufe, keine Verkäufe: Die Positionen, die am weitesten unter ihrem Ziel liegen, bekommen das Geld zuerst.",
   "contributionShares": "≈ {shares} Aktien",
   "contributionMissing": "Kein aktueller Kurs für {symbols}: bei der Aufteilung nicht berücksichtigt.",
-  "portfolioGoalEta": "Bleibt die Jahresrendite bei {rate}, erreichst du dein Ziel etwa {year}."
+  "portfolioGoalEta": "Bleibt die Jahresrendite bei {rate}, erreichst du dein Ziel etwa {year}.",
+  "portfolioMaxDrawdown": "Maximaler Rückgang",
+  "glossMaxDrawdown": "Der größte Rückgang des Werts deiner Aktien von einem früheren Hoch bis zu einem späteren Tief, ohne den Effekt deiner Käufe und Verkäufe (zeitgewichtet). Er zeigt, wie tief dein Portfolio schon einmal eingebrochen ist."
 }

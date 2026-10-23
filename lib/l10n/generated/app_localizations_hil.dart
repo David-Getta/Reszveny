@@ -2651,6 +2651,13 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Pinakadako nga pagbaba';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Ang pinakadako nga pagbaba sang balor sang imo mga stock halin sa isa ka nauna nga pinakamataas pakadto sa isa ka ulihi nga pinakamanubo, nga wala sang epekto sang imo pagbakal kag pagbaligya (time-weighted). Ginapakita sini kon daw ano kadalom nga pagbaba ang naagihan na sang imo portfolio.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

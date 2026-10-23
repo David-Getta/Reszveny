@@ -799,5 +799,7 @@
   "contributionHint": "Jejogua añoite, ñemu ỹre: umi ereguerekóva opytavéva hupytyrã guýpe ohupyty raẽ pe viru.",
   "contributionShares": "≈ {shares} acción",
   "contributionMissing": "Ndaipóri {symbols} tepy ko'ag̃agua: noñemoingéi ñemboja'ópe.",
-  "portfolioGoalEta": "Rendimiento arýpe opytáramo péicha ({rate}), rehupytýta ne jehupytyrã ary {year} rupi."
+  "portfolioGoalEta": "Rendimiento arýpe opytáramo péicha ({rate}), rehupytýta ne jehupytyrã ary {year} rupi.",
+  "portfolioMaxDrawdown": "Jeguejy tuichavéva",
+  "glossMaxDrawdown": "Ne aksiõkuéra repy jeguejy tuichavéva, peteĩ yvatekue guive peteĩ ypykue upéi peve; ne jejogua ha ne ñemu ndojepapái (ojepesáva ára rupi). Ohechauka mba'eichaitépa ne cartera oguejýma."
 }

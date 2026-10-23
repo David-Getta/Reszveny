@@ -2647,6 +2647,13 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Aswan hatun urmay';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Accionniykikunap chaninpa aswan hatun urmaynin, ñawpaq hanaq kasqanmanta qhipa uray kasqankama, rantisqaykiq rantikusqaykiq kallpan mana yapasqa (pachawan llasachisqa). Portafolioyki ña hayk\'a ukhuta urmasqanta rikuchin.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

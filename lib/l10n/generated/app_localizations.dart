@@ -4537,6 +4537,18 @@ abstract class AppLocalizations {
   /// **'If the annual return holds ({rate}), you\'d reach it around {year}.'**
   String portfolioGoalEta(String rate, String year);
 
+  /// Figure on the portfolio history card: the biggest fall from a high to a later low (maximum drawdown), as a percentage, with the two dates.
+  ///
+  /// In en, this message translates to:
+  /// **'Largest drop'**
+  String get portfolioMaxDrawdown;
+
+  /// Explanation (ⓘ) of the largest drop (maximum drawdown) on the portfolio history card.
+  ///
+  /// In en, this message translates to:
+  /// **'The biggest fall of your holdings from an earlier high to a later low, without the effect of your buying and selling (time-weighted). It shows how deep a dip your portfolio has already been through.'**
+  String get glossMaxDrawdown;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

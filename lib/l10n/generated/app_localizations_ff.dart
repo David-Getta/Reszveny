@@ -2628,6 +2628,13 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Ustaare ɓurnde mawnude';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Ustaare ɓurnde mawnude e njoŋdi aksiyonji maa, gila e toownde adiinde haa e lesdi ɓadiindi, tawa soodu e yeeyu maa naatnaaka (peesaande e sahaa). Ina hollira no aksiyonji maa ustiri ko adii.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

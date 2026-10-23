@@ -2631,6 +2631,13 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'ਸਭ ਤੋਂ ਵੱਡੀ ਗਿਰਾਵਟ';
+
+  @override
+  String get glossMaxDrawdown =>
+      'ਤੁਹਾਡੇ ਸ਼ੇਅਰਾਂ ਦੇ ਮੁੱਲ ਵਿੱਚ ਪਹਿਲਾਂ ਦੇ ਕਿਸੇ ਸਿਖਰ ਤੋਂ ਬਾਅਦ ਦੇ ਕਿਸੇ ਹੇਠਲੇ ਪੱਧਰ ਤੱਕ ਦੀ ਸਭ ਤੋਂ ਵੱਡੀ ਗਿਰਾਵਟ, ਤੁਹਾਡੀ ਖ਼ਰੀਦ-ਵਿਕਰੀ ਦੇ ਅਸਰ ਤੋਂ ਬਿਨਾਂ (ਸਮਾਂ-ਭਾਰਿਤ)। ਇਹ ਦਿਖਾਉਂਦੀ ਹੈ ਕਿ ਤੁਹਾਡਾ ਪੋਰਟਫ਼ੋਲੀਓ ਹੁਣ ਤੱਕ ਕਿੰਨੀ ਡੂੰਘੀ ਗਿਰਾਵਟ ਝੱਲ ਚੁੱਕਾ ਹੈ।';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

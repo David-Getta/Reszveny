@@ -2600,6 +2600,13 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'ትልቁ ማሽቆልቆል';
+
+  @override
+  String get glossMaxDrawdown =>
+      'የአክሲዮኖችዎ ዋጋ ከቀደመ ከፍተኛ ደረጃ ወደ ኋለኛ ዝቅተኛ ደረጃ ያሳየው ትልቁ ማሽቆልቆል፣ የግዢና የሽያጭዎ ተጽዕኖ ሳይካተት (በጊዜ የተመዘነ)። ፖርትፎሊዮዎ እስካሁን ምን ያህል ጥልቅ ውድቀት እንዳሳለፈ ያሳያል።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

@@ -799,5 +799,7 @@
   "contributionHint": "Samo kupovina, bez prodaje: novac prvo dobijaju pozicije koje najviše zaostaju za svojim ciljem.",
   "contributionShares": "≈ {shares} kom.",
   "contributionMissing": "Nema trenutne cijene za {symbols}: nisu uključeni u raspodjelu.",
-  "portfolioGoalEta": "Ako godišnji prinos ostane takav ({rate}), cilj ćete dostići oko {year}. godine."
+  "portfolioGoalEta": "Ako godišnji prinos ostane takav ({rate}), cilj ćete dostići oko {year}. godine.",
+  "portfolioMaxDrawdown": "Najveći pad",
+  "glossMaxDrawdown": "Najveći pad vrijednosti vaših dionica s ranijeg vrha na kasnije dno, bez uticaja vaših kupovina i prodaja (vremenski ponderisano). Pokazuje koliko je dubok pad vaš portfolio već preživio."
 }

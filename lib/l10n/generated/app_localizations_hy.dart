@@ -2642,6 +2642,13 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Ամենամեծ անկում';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Ձեր բաժնետոմսերի արժեքի ամենամեծ անկումը ավելի վաղ գագաթնակետից մինչև ավելի ուշ նվազագույն կետ՝ առանց ձեր գնումների և վաճառքների ազդեցության (ժամանակով կշռված)։ Այն ցույց է տալիս, թե որքան խորը անկում է արդեն ապրել ձեր պորտֆելը։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

@@ -2640,6 +2640,13 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Calo massimo';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Il calo più forte del valore delle tue azioni da un massimo precedente a un minimo successivo, senza l\'effetto dei tuoi acquisti e delle tue vendite (ponderato nel tempo). Mostra quanto è stato profondo il ribasso che il tuo portafoglio ha già attraversato.';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

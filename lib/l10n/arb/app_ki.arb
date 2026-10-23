@@ -799,5 +799,7 @@
   "contributionHint": "Kũgũra tu, gũtirĩ kwendia: hisa iria ciagĩte mũno thĩ ya muoroto wacio nĩcio ikũheo mbeca mbere.",
   "contributionShares": "≈ hisa {shares}",
   "contributionMissing": "Gũtirĩ thogora wa rĩu wa {symbols}: itiigĩtwo thĩinĩ wa kũgayania.",
-  "portfolioGoalEta": "Uumithio wa mwaka ũngĩtũũra ũguo ({rate}), nĩ ũgakinyĩra muoroto ta mwaka wa {year}."
+  "portfolioGoalEta": "Uumithio wa mwaka ũngĩtũũra ũguo ({rate}), nĩ ũgakinyĩra muoroto ta mwaka wa {year}.",
+  "portfolioMaxDrawdown": "Kũnyiha kũnene mũno",
+  "glossMaxDrawdown": "Kũnyiha kũnene mũno kwa thogora wa hisa ciaku kuuma igũrũ rĩa mbere nginya hau thĩ thuutha, hatarĩ ũhoro wa kũgũra na kwendia gwaku (gũthimĩtwo na ihinda). Kuonanagia ũrĩa hisa ciaku ciagũĩte thĩ mũno hĩndĩ ĩhĩtũku."
 }

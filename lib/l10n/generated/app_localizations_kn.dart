@@ -2640,6 +2640,13 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'ಅತಿದೊಡ್ಡ ಕುಸಿತ';
+
+  @override
+  String get glossMaxDrawdown =>
+      'ನಿಮ್ಮ ಷೇರುಗಳ ಮೌಲ್ಯದಲ್ಲಿ ಹಿಂದಿನ ಒಂದು ಗರಿಷ್ಠ ಮಟ್ಟದಿಂದ ನಂತರದ ಕನಿಷ್ಠ ಮಟ್ಟದವರೆಗಿನ ಅತಿದೊಡ್ಡ ಕುಸಿತ, ನಿಮ್ಮ ಖರೀದಿ ಮತ್ತು ಮಾರಾಟದ ಪರಿಣಾಮವಿಲ್ಲದೆ (ಸಮಯ-ತೂಕದ). ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಈಗಾಗಲೇ ಎಷ್ಟು ಆಳವಾದ ಕುಸಿತವನ್ನು ಕಂಡಿದೆ ಎಂಬುದನ್ನು ಇದು ತೋರಿಸುತ್ತದೆ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

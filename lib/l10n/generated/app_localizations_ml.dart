@@ -2644,6 +2644,13 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'ഏറ്റവും വലിയ ഇടിവ്';
+
+  @override
+  String get glossMaxDrawdown =>
+      'നിങ്ങളുടെ ഓഹരികളുടെ മൂല്യത്തിൽ മുമ്പത്തെ ഒരു ഉയർന്ന നിലയിൽ നിന്ന് പിന്നീടുള്ള ഒരു താഴ്ന്ന നിലയിലേക്കുണ്ടായ ഏറ്റവും വലിയ ഇടിവ്, നിങ്ങളുടെ വാങ്ങലുകളുടെയും വിൽപ്പനകളുടെയും സ്വാധീനമില്ലാതെ (സമയ-ഭാരിതം). നിങ്ങളുടെ പോർട്ട്ഫോളിയോ ഇതിനകം എത്ര ആഴത്തിലുള്ള ഇടിവിലൂടെ കടന്നുപോയിട്ടുണ്ടെന്ന് ഇത് കാണിക്കുന്നു.';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

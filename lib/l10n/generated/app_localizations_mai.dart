@@ -2626,6 +2626,13 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'सभसँ पैघ गिरावट';
+
+  @override
+  String get glossMaxDrawdown =>
+      'अहाँक शेयरक मूल्यमे पहिलुका कोनो शिखरसँ बादक कोनो निचला स्तर धरिक सभसँ पैघ गिरावट, अहाँक कीनब-बेचबक प्रभावक बिना (समय-भारित)। ई देखबैत अछि जे अहाँक पोर्टफ़ोलियो एखन धरि कतेक गहींर गिरावट झेलि चुकल अछि।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

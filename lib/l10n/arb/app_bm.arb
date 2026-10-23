@@ -799,5 +799,7 @@
   "contributionHint": "San dɔrɔn, feere tɛ: aksiyɔn minnu tora kɔfɛ kosɛbɛ u ka laɲini na, olu bɛ wari sɔrɔ fɔlɔ.",
   "contributionShares": "≈ aksiyɔn {shares}",
   "contributionMissing": "{symbols} sisan sɔngɔ tɛ yen: u ma don tilali la.",
-  "portfolioGoalEta": "Ni san o san tɔnɔ tora ten ({rate}), i bɛna i ka laɲini sɔrɔ san {year} ɲɔgɔn na."
+  "portfolioGoalEta": "Ni san o san tɔnɔ tora ten ({rate}), i bɛna i ka laɲini sɔrɔ san {year} ɲɔgɔn na.",
+  "portfolioMaxDrawdown": "Sɔngɔ jigin belebeba",
+  "glossMaxDrawdown": "I ka aksiyɔnw sɔngɔ jigin belebeba, ka bɔ sanfɛla dɔ la min tun bɛ yen fɔlɔ ka taa se duguma dɔ ma min nana kɔfɛ, i ka sanni ni i ka feereli nɔ tɛ jate a la (waati hakɛ jatelen). A bɛ a jira i ka aksiyɔn kɛsu jiginna ka taa duguma cogo min fɔlɔ."
 }

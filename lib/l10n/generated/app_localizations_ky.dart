@@ -2636,6 +2636,13 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Эң чоң төмөндөө';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Акцияларыңыздын наркынын мурунку чокудан кийинки эң төмөнкү чекитке чейинки эң чоң төмөндөшү, сатып алууларыңыздын жана сатууларыңыздын таасирисиз (убакыт боюнча салмакталган). Портфелиңиз буга чейин канчалык терең төмөндөөнү башынан өткөргөнүн көрсөтөт.';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

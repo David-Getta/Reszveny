@@ -799,5 +799,7 @@
   "contributionHint": "Slegs aankope, geen verkope nie: die posisies wat die verste onder hul teiken is, kry die geld eerste.",
   "contributionShares": "≈ {shares} aandele",
   "contributionMissing": "Geen huidige prys vir {symbols} nie: uitgelaat uit die verdeling.",
-  "portfolioGoalEta": "As die jaarlikse opbrengs so bly ({rate}), bereik jy dit omstreeks {year}."
+  "portfolioGoalEta": "As die jaarlikse opbrengs so bly ({rate}), bereik jy dit omstreeks {year}.",
+  "portfolioMaxDrawdown": "Grootste daling",
+  "glossMaxDrawdown": "Die grootste daling in die waarde van jou aandele van 'n vroeëre hoogtepunt tot 'n latere laagtepunt, sonder die effek van jou aankope en verkope (tydgeweeg). Dit wys hoe diep 'n insinking jou portefeulje al deurgemaak het."
 }

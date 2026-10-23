@@ -2595,6 +2595,13 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'ዝዓበየ ውድቀት';
+
+  @override
+  String get glossMaxDrawdown =>
+      'ዝዓበየ ውድቀት ዋጋ ኣክስዮናትኩም ካብ ዝቐደመ ጫፍ ክሳብ ዝሰዓበ ትሕተዋይ ደረጃ፡ ብዘይ ጽልዋ ዕድጊትኩምን መሸጣኹምን (ብግዜ ዝተመዘነ)። ፖርትፎሊዮኹም ክሳብ ሕጂ ክንደይ ዝዓሞቐ ውድቀት ከም ዘሕለፈ የርኢ።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

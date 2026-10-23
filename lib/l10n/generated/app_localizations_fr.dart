@@ -2646,6 +2646,13 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Baisse maximale';
+
+  @override
+  String get glossMaxDrawdown =>
+      'La plus forte baisse de la valeur de vos actions entre un sommet antérieur et un creux ultérieur, sans l\'effet de vos achats et ventes (pondérée par le temps). Elle montre la profondeur du repli que votre portefeuille a déjà traversé.';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

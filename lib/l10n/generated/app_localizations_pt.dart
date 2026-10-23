@@ -2640,6 +2640,13 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Queda máxima';
+
+  @override
+  String get glossMaxDrawdown =>
+      'A maior queda do valor das suas ações de um pico anterior até um fundo posterior, sem o efeito das suas compras e vendas (ponderada pelo tempo). Mostra o quão profunda foi a queda que a sua carteira já atravessou.';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

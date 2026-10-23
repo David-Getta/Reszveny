@@ -2635,6 +2635,13 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'گەورەترین دابەزین';
+
+  @override
+  String get glossMaxDrawdown =>
+      'گەورەترین دابەزینی بەهای پشکەکانت لە لووتکەیەکی پێشووەوە بۆ نزمترین خاڵێکی دواتر، بەبێ کاریگەری کڕین و فرۆشتنەکانت (کێشکراو بە کات). نیشان دەدات پۆرتفۆلیۆکەت تا ئێستا چەند دابەزینێکی قووڵی بینیوە.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

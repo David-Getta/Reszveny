@@ -799,5 +799,7 @@
   "contributionHint": "Ịzụ naanị, enweghị ire: ihe ndị ị nwere kacha nọrọ n'azụ ebumnuche ha na-ebu ụzọ nweta ego ahụ.",
   "contributionShares": "≈ shares {shares}",
   "contributionMissing": "Enweghị ọnụahịa ugbu a maka {symbols}: etinyeghị ha na nkesa ahụ.",
-  "portfolioGoalEta": "Ọ bụrụ na uru kwa afọ adịgide otu a ({rate}), ị ga-emezu ebumnuche gị n'ihe dị ka afọ {year}."
+  "portfolioGoalEta": "Ọ bụrụ na uru kwa afọ adịgide otu a ({rate}), ị ga-emezu ebumnuche gị n'ihe dị ka afọ {year}.",
+  "portfolioMaxDrawdown": "Ọdịda kachasị ukwuu",
+  "glossMaxDrawdown": "Ọdịda kachasị ukwuu nke uru òkè gị site n'ebe kachasị elu mbụ ruo n'ebe kachasị ala e mesịrị, na-agụnyeghị mmetụta nke ịzụ na ire gị (a tụrụ ya dịka oge si dị). Ọ na-egosi ka ọdịda portfolio gị nwerela si mie emi."
 }

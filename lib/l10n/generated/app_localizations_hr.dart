@@ -2679,6 +2679,13 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Najveći pad';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Najveći pad vrijednosti vaših dionica s ranijeg vrha na kasnije dno, bez utjecaja vaših kupnji i prodaja (vremenski ponderirano). Pokazuje koliko je dubok pad vaš portfelj već prošao.';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

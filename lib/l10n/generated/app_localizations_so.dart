@@ -2642,6 +2642,13 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Hoos u dhaca ugu weyn';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Hoos u dhaca ugu weyn ee qiimaha saamiyadaada, laga bilaabo heer sare oo hore ilaa heer hoose oo dambe, iyada oo aan la tixgelin saamaynta iibsashadaada iyo iibintaada (waqtiga lagu miisaamay). Waxay muujinaysaa inta uu le\'eg yahay hoos u dhaca qoto dheer ee portfoliyadaadu horay u soo martay.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

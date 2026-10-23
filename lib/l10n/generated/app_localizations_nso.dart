@@ -2652,6 +2652,13 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Theogo ye kgolo kudu';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Theogo ye kgolo kudu ya boleng bja dišere tša gago go tloga sehloeng sa pele go fihla boemong bja fase kudu bja ka morago, ntle le khuetšo ya go reka le go rekiša ga gago (e lekanyeditšwe go ya ka nako). E bontšha gore photefolio ya gago e šetše e theogile ka mo go tseneletšego gakaakang.';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

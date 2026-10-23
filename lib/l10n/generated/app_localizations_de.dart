@@ -2648,6 +2648,13 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Maximaler Rückgang';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Der größte Rückgang des Werts deiner Aktien von einem früheren Hoch bis zu einem späteren Tief, ohne den Effekt deiner Käufe und Verkäufe (zeitgewichtet). Er zeigt, wie tief dein Portfolio schon einmal eingebrochen ist.';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

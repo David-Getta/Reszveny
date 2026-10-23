@@ -799,5 +799,7 @@
   "contributionHint": "Sooda tan, alaa yeeya: ko a jogii ɓurɗo woɗɗude faandaare mum heɓan ceede ɗee adan.",
   "contributionShares": "≈ aksiyoŋ {shares}",
   "contributionMissing": "Coggu jooni alaa wonande {symbols}: naatnaaka e feccugol.",
-  "portfolioGoalEta": "So nafoore hitaande ndee duumii ({rate}), a heɓay faandaare maa hono hitaande {year}."
+  "portfolioGoalEta": "So nafoore hitaande ndee duumii ({rate}), a heɓay faandaare maa hono hitaande {year}.",
+  "portfolioMaxDrawdown": "Ustaare ɓurnde mawnude",
+  "glossMaxDrawdown": "Ustaare ɓurnde mawnude e njoŋdi aksiyonji maa, gila e toownde adiinde haa e lesdi ɓadiindi, tawa soodu e yeeyu maa naatnaaka (peesaande e sahaa). Ina hollira no aksiyonji maa ustiri ko adii."
 }

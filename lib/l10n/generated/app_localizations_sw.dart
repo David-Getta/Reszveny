@@ -2635,6 +2635,13 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Kushuka kukubwa zaidi';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Kushuka kukubwa zaidi kwa thamani ya hisa zako kutoka kilele cha awali hadi kiwango cha chini cha baadaye, bila athari ya ununuzi na mauzo yako (kumepimwa kwa muda). Kunaonyesha jinsi jalada lako la hisa lilivyokwisha kushuka kwa kina.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

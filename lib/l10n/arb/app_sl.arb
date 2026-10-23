@@ -799,5 +799,7 @@
   "contributionHint": "Samo nakupi, brez prodaj: denar najprej dobijo pozicije, ki so najbolj pod svojim ciljem.",
   "contributionShares": "≈ {shares} delnic",
   "contributionMissing": "Ni trenutne cene za {symbols}: niso vključeni v razdelitev.",
-  "portfolioGoalEta": "Če se letni donos ohrani ({rate}), boste cilj dosegli okoli leta {year}."
+  "portfolioGoalEta": "Če se letni donos ohrani ({rate}), boste cilj dosegli okoli leta {year}.",
+  "portfolioMaxDrawdown": "Največji padec",
+  "glossMaxDrawdown": "Največji padec vrednosti vaših delnic od prejšnjega vrha do poznejšega dna, brez vpliva vaših nakupov in prodaj (časovno tehtano). Pokaže, kako globok padec je vaš portfelj že doživel."
 }

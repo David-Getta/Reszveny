@@ -2612,6 +2612,13 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'ការធ្លាក់ចុះធំបំផុត';
+
+  @override
+  String get glossMaxDrawdown =>
+      'ការធ្លាក់ចុះធំបំផុតនៃតម្លៃភាគហ៊ុនរបស់អ្នក ពីកម្រិតខ្ពស់មុន ទៅកម្រិតទាបនៅពេលក្រោយ ដោយមិនគិតពីឥទ្ធិពលនៃការទិញ និងលក់របស់អ្នក (ថ្លឹងតាមពេលវេលា)។ វាបង្ហាញថាផលប័ត្ររបស់អ្នកបានឆ្លងកាត់ការធ្លាក់ចុះជ្រៅប៉ុណ្ណាមកហើយ។';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

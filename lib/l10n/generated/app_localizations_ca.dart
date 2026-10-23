@@ -2644,6 +2644,13 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Caiguda màxima';
+
+  @override
+  String get glossMaxDrawdown =>
+      'La caiguda més gran del valor de les teves accions des d\'un màxim anterior fins a un mínim posterior, sense l\'efecte de les teves compres i vendes (ponderada en el temps). Mostra com de profunda ha estat la caiguda que ja ha patit la teva cartera.';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

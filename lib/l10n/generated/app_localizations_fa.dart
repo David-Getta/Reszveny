@@ -2630,6 +2630,13 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'بیشترین افت';
+
+  @override
+  String get glossMaxDrawdown =>
+      'بیشترین افت ارزش سهام شما از یک اوج قبلی تا یک کف بعدی، بدون اثر خرید و فروش‌های شما (وزن‌دهی‌شده بر اساس زمان). نشان می‌دهد سبد سهام شما تاکنون چه افت عمیقی را پشت سر گذاشته است.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

@@ -2632,6 +2632,13 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'সবচেয়ে বড় পতন';
+
+  @override
+  String get glossMaxDrawdown =>
+      'আপনার শেয়ারগুলোর মূল্যের আগের কোনো শীর্ষ থেকে পরের কোনো নিম্নবিন্দু পর্যন্ত সবচেয়ে বড় পতন, আপনার কেনাবেচার প্রভাব বাদ দিয়ে (সময়-ভারিত)। এটি দেখায় আপনার পোর্টফোলিও এর মধ্যেই কতটা গভীর পতনের মধ্য দিয়ে গেছে।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

@@ -799,5 +799,7 @@
   "contributionHint": "Só compras, sen vendas: as posicións máis por debaixo do seu obxectivo reciben primeiro o diñeiro.",
   "contributionShares": "≈ {shares} accións",
   "contributionMissing": "Non hai prezo actual para {symbols}: quedan fóra do reparto.",
-  "portfolioGoalEta": "Se a rendibilidade anual se mantén ({rate}), acadarás o obxectivo arredor de {year}."
+  "portfolioGoalEta": "Se a rendibilidade anual se mantén ({rate}), acadarás o obxectivo arredor de {year}.",
+  "portfolioMaxDrawdown": "Caída máxima",
+  "glossMaxDrawdown": "A maior caída do valor das túas accións desde un máximo anterior ata un mínimo posterior, sen o efecto das túas compras e vendas (ponderada no tempo). Mostra canto de fonda foi a caída que xa atravesou a túa carteira."
 }

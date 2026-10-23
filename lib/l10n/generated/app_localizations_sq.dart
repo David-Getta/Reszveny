@@ -2639,6 +2639,13 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Rënia më e madhe';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Rënia më e madhe e vlerës së aksioneve tuaja nga një kulm i mëparshëm në një minimum të mëvonshëm, pa efektin e blerjeve dhe shitjeve tuaja (e ponderuar me kohën). Tregon sa të thellë rënie ka kaluar tashmë portofoli juaj.';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

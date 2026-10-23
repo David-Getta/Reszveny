@@ -2643,6 +2643,13 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Kukulumuka ya nene kuluta';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Kukulumuka ya nene kuluta ya ntalu ya ba actions na nge, katuka na zulu ya ntete tii na nsi ya nima, kukonda kutadila kusumba mpi kuteka na nge (bo me tala na ntangu). Yo ke monisa nki mutindu portefeuille na nge me kulumukaka dezia na nsi.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

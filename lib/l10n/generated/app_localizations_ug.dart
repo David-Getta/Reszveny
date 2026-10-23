@@ -2636,6 +2636,13 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'ئەڭ چوڭ چۈشۈش';
+
+  @override
+  String get glossMaxDrawdown =>
+      'پايلىرىڭىز قىممىتىنىڭ ئىلگىرىكى ئەڭ يۇقىرى نۇقتىدىن كېيىنكى ئەڭ تۆۋەن نۇقتىغىچە بولغان ئەڭ چوڭ چۈشۈشى، سېتىۋېلىش ۋە سېتىشىڭىزنىڭ تەسىرىنى ھېسابقا ئالمىغاندا (ۋاقىت بىلەن ئۆلچەنگەن). مەبلەغ بىرىكمىڭىزنىڭ ھازىرغىچە قانچىلىك چوڭقۇر چۈشۈشنى بېشىدىن ئۆتكۈزگەنلىكىنى كۆرسىتىدۇ.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

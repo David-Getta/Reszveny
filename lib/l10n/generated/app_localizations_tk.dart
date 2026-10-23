@@ -2635,6 +2635,13 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'Iň uly pese gaçyş';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Paýnamalaryňyzyň gymmatynyň öňki iň ýokary derejeden soňky iň pes derejä çenli iň uly pese gaçyşy, satyn alyşlaryňyzyň we satyşlaryňyzyň täsiri hasaba alynmazdan (wagt boýunça agramlandyrylan). Portfeliňiziň eýýäm näçe çuň pese gaçyşy başdan geçirendigini görkezýär.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

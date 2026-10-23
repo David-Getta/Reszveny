@@ -2634,6 +2634,13 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get portfolioMaxDrawdown => 'En büyük düşüş';
+
+  @override
+  String get glossMaxDrawdown =>
+      'Hisselerinizin değerinin önceki bir zirveden sonraki bir dibe kadar yaşadığı en büyük düşüş; alım ve satımlarınızın etkisi olmadan (zaman ağırlıklı). Portföyünüzün şimdiye kadar ne kadar derin bir düşüş yaşadığını gösterir.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

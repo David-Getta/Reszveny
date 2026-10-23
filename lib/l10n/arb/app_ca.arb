@@ -799,5 +799,7 @@
   "contributionHint": "Només compres, cap venda: les posicions més per sota del seu objectiu reben els diners primer.",
   "contributionShares": "≈ {shares} accions",
   "contributionMissing": "No hi ha preu actual per a {symbols}: queden fora del repartiment.",
-  "portfolioGoalEta": "Si la rendibilitat anual es manté ({rate}), assoliràs l’objectiu cap al {year}."
+  "portfolioGoalEta": "Si la rendibilitat anual es manté ({rate}), assoliràs l’objectiu cap al {year}.",
+  "portfolioMaxDrawdown": "Caiguda màxima",
+  "glossMaxDrawdown": "La caiguda més gran del valor de les teves accions des d'un màxim anterior fins a un mínim posterior, sense l'efecte de les teves compres i vendes (ponderada en el temps). Mostra com de profunda ha estat la caiguda que ja ha patit la teva cartera."
 }
