@@ -85,4 +85,30 @@ void main() {
     expect(week.first.time, DateTime(2026, 7, 2));
     expect((week.last.close / week.first.close - 1) * 100, closeTo(PriceStats.returnOver(h.points, 7)!, 0.01));
   });
+
+  test('windows are counted in calendar days and years (daylight saving, leap day)', () {
+    // Helyi éjfélkor jegyzett pontok: a 7 napos ablak nem csúszik el egy órával egy nappal.
+    final pts = [for (var d = 1; d <= 40; d++) PricePoint(time: DateTime(2026, 3, d), close: 100.0 + d)];
+    final h = PriceHistory(symbol: 'X', points: pts);
+    expect(h.since(7).first.time, DateTime(2026, 4, 2));
+    expect(h.lastDays(7).first.time, DateTime(2026, 4, 2));
+    expect(daysBefore(DateTime(2026, 4, 3), 7), DateTime(2026, 3, 27));
+    expect(yearsBefore(DateTime(2028, 2, 29), 1), DateTime(2027, 2, 28));
+    expect(yearsBefore(DateTime(2026, 10, 23), 5), DateTime(2021, 10, 23));
+    // Kerekítés nélkül: a megjelenítés kerekít, egyszer.
+    final r = PriceStats.returnOver([
+      PricePoint(time: DateTime(2026, 1, 1), close: 100),
+      PricePoint(time: DateTime(2026, 1, 8), close: 101.2451),
+    ], 7);
+    expect(r, closeTo(1.2451, 1e-9));
+  });
+
+  test('YTD before the first trading day of the year is not last year\'s return', () {
+    final pts = [
+      PricePoint(time: DateTime(2025, 12, 31), close: 100),
+      PricePoint(time: DateTime(2026, 12, 31), close: 150),
+    ];
+    expect(PriceStats.ytd(pts, now: DateTime(2027, 1, 2)), isNull);
+    expect(PriceStats.ytd(pts, now: DateTime(2026, 12, 31)), closeTo(50, 1e-9));
+  });
 }

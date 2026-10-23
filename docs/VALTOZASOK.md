@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.271)
+# Változásjegyzék (0.2.130 → 0.2.272)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,19 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Részvényoldali számok és formázás: egy tizennyolcadik kódátnézés javításai
+
+- **0.2.272**: a hozamok és a grafikon időszakai naptári napokban és években számolnak. Eddig a nyári
+  időszámítás váltásakor egy nappal elcsúsztak (az 1 hetes hozam 5,56% volt 4,59% helyett), az 5 éves pedig
+  nem pontosan 5 év volt. Az idei hozam az év első kereskedési napja előtt nem a tavalyi teljes év. Jobbról
+  balra író nyelveken (arab, perzsa, héber, urdu…) az előjeles szám egy egységként jelenik meg (eddig „5%+”), az
+  52 hetes sáv és a grafikon dátumai nem tükröződnek rossz oldalra. Az S&P-összevetés egy amerikai ünnepnapon
+  az előző, nem a következő napi zárót használja. A tömör szám a kerekítés után vált egységet (999 999 → „1,00M”,
+  nem „1 000,00K”), nincs „-0,00%” (és piros „-0,0%” nyereség sem), a tört darabszám nem kap felesleges
+  nullákat, és a 0,00001 darab sem látszik nullának. A „Mi lett volna, ha…” nagy összegnél is pontos, a grafikon
+  tengelyfeliratai a látható sávhoz igazított tizedesekkel jelennek meg (45,10–45,60 nem „46 / 45 / 45”), az RSI
+  egy tizedessel (a 29,6 nem „30 · túladott”).
 
 ## Portfólió-számítások: egy tizenhetedik kódátnézés javításai
 

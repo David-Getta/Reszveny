@@ -10,20 +10,25 @@ import '../../core/models/price_history.dart';
 class PriceStats {
   PriceStats._();
 
+  /// Kerekítés; a nullára kerekedő negatív érték 0 (nem -0.0).
   static double _round(double v, [int digits = 2]) {
     final f = math.pow(10, digits);
-    return (v * f).roundToDouble() / f;
+    return (v * f).roundToDouble() / f + 0.0;
   }
+
+  static double? _roundOrNull(double? v) => v == null ? null : _round(v);
 
   /// A nap (a napi adatok naptári napok: nincs időzóna-átváltás, különben kelet felé egy nappal korábbi lenne).
   static String _date(DateTime t) =>
       '${t.year.toString().padLeft(4, '0')}-${t.month.toString().padLeft(2, '0')}-${t.day.toString().padLeft(2, '0')}';
 
   /// Idei hozam %-ban: az előző év utolsó záróárához mérve (ha a történet az év
-  /// első napjaiban kezdődik, az első ponthoz); `null`, ha nincs mihez mérni.
-  static double? ytd(List<PricePoint> pts) {
+  /// első napjaiban kezdődik, az első ponthoz); `null`, ha nincs mihez mérni, vagy
+  /// ([now] megadásával) az idei első kereskedési nap még nem volt.
+  static double? ytd(List<PricePoint> pts, {DateTime? now}) {
     if (pts.length < 2) return null;
     final last = pts.last;
+    if (now != null && last.time.year < now.year) return null;
     PricePoint? base;
     for (final p in pts) {
       if (p.time.year >= last.time.year) {
@@ -36,11 +41,26 @@ class PriceStats {
     return (last.close / base.close - 1) * 100;
   }
 
-  /// Hozam %-ban [days] naptári nap alatt (null, ha nincs elég adat).
-  static double? returnOver(List<PricePoint> pts, int days) {
+  /// Hozam %-ban [days] naptári nap alatt (null, ha nincs elég adat). Kerekítés
+  /// nélkül: a megjelenítés kerekít (egyszer).
+  static double? returnOver(List<PricePoint> pts, int days) =>
+      pts.isEmpty ? null : returnSince(pts, daysBefore(pts.last.time, days));
+
+  /// Hozam %-ban [years] naptári év alatt (null, ha nincs elég adat).
+  static double? returnOverYears(List<PricePoint> pts, int years) =>
+      pts.isEmpty ? null : returnSince(pts, yearsBefore(pts.last.time, years));
+
+  /// Hozam %-ban a [target] napon (vagy előtte) utolsó záróártól; `null`, ha a
+  /// történet ennél több mint 5 nappal később kezdődik.
+  static double? returnSince(List<PricePoint> pts, DateTime target) {
+    final base = baseAt(pts, target);
+    if (base == null) return null;
+    return (pts.last.close / base.close - 1) * 100;
+  }
+
+  /// A [target] napi (vagy előtte utolsó) záróár pontja; `null`, ha nincs elég adat.
+  static PricePoint? baseAt(List<PricePoint> pts, DateTime target) {
     if (pts.length < 2) return null;
-    final last = pts.last;
-    final target = last.time.subtract(Duration(days: days));
     if (pts.first.time.isAfter(target.add(const Duration(days: 5)))) return null;
     PricePoint? base;
     for (final p in pts) {
@@ -48,8 +68,7 @@ class PriceStats {
       base = p;
     }
     base ??= pts.first;
-    if (base.close == 0) return null;
-    return _round((last.close / base.close - 1) * 100);
+    return base.close == 0 ? null : base;
   }
 
   /// Egyszerű mozgóátlag az utolsó [n] záróárból.
@@ -136,11 +155,11 @@ class PriceStats {
     return {
       'last_close': _round(last.close, 4),
       'last_date': _date(last.time),
-      'return_1m_percent': returnOver(pts, 30),
-      'return_3m_percent': returnOver(pts, 91),
-      'return_6m_percent': returnOver(pts, 182),
-      'return_1y_percent': returnOver(pts, 365),
-      'return_3y_percent': returnOver(pts, 365 * 3),
+      'return_1m_percent': _roundOrNull(returnOver(pts, 30)),
+      'return_3m_percent': _roundOrNull(returnOver(pts, 91)),
+      'return_6m_percent': _roundOrNull(returnOver(pts, 182)),
+      'return_1y_percent': _roundOrNull(returnOverYears(pts, 1)),
+      'return_3y_percent': _roundOrNull(returnOverYears(pts, 3)),
       // Ugyanaz, mint a részvény oldalán: az előző év utolsó záróárától.
       if (ytd(pts) case final y?) 'return_ytd_percent': _round(y),
       'high_52w': _round(high52, 4),

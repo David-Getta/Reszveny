@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
@@ -69,14 +70,29 @@ class PriceChart extends StatefulWidget {
 }
 
 /// Az összevetés görbéje a fő görbe pontjaihoz igazítva: minden napra a
-/// legközelebbi korábbi (vagy első) benchmark-záróár, a fő görbe első árára
-/// skálázva. `null`, ha nincs elég adat.
+/// legutóbbi, azon a napon vagy előtte ismert (ha nincs, az első) benchmark-záróár –
+/// soha nem egy későbbi –, a fő görbe első árára skálázva. `null`, ha nincs elég adat.
 List<double>? alignBenchmark(List<PricePoint> points, List<PricePoint> bench) {
   if (points.length < 2 || bench.length < 2) return null;
-  final base = bench[nearestChartIndex(bench, points.first.time)].close;
+  final base = bench[_atOrBefore(bench, points.first.time)].close;
   if (base <= 0) return null;
   final scale = points.first.close / base;
-  return [for (final pt in points) bench[nearestChartIndex(bench, pt.time)].close * scale];
+  return [for (final pt in points) bench[_atOrBefore(bench, pt.time)].close * scale];
+}
+
+/// Az utolsó pont indexe, amelynek ideje legfeljebb [t] (ha egy sincs, 0).
+int _atOrBefore(List<PricePoint> points, DateTime t) {
+  var lo = 0, hi = points.length - 1, found = 0;
+  while (lo <= hi) {
+    final mid = (lo + hi) >> 1;
+    if (points[mid].time.isAfter(t)) {
+      hi = mid - 1;
+    } else {
+      found = mid;
+      lo = mid + 1;
+    }
+  }
+  return found;
 }
 
 class _PriceChartState extends State<PriceChart> {
@@ -120,13 +136,14 @@ class _PriceChartState extends State<PriceChart> {
     if (_hover != null) setState(() => _hover = null);
   }
 
-  // Ugyanazok a napok, mint a hozamsávban (a két szám így egyezik).
-  int _days(ChartRange r) => switch (r) {
-    ChartRange.week => 7,
-    ChartRange.month => 30,
-    ChartRange.threeMonths => 91,
-    ChartRange.year => 365,
-    ChartRange.fiveYears => 5 * 365 - 5,
+  // Ugyanazok az időszakok, mint a hozamsávban (a két szám így egyezik): naptári
+  // napok, az éveknél naptári évek.
+  DateTime _start(ChartRange r, DateTime last) => switch (r) {
+    ChartRange.week => daysBefore(last, 7),
+    ChartRange.month => daysBefore(last, 30),
+    ChartRange.threeMonths => daysBefore(last, 91),
+    ChartRange.year => yearsBefore(last, 1),
+    ChartRange.fiveYears => yearsBefore(last, 5),
   };
 
   @override
@@ -134,7 +151,8 @@ class _PriceChartState extends State<PriceChart> {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
-    final points = widget.history.since(_days(_range));
+    final all = widget.history.points;
+    final points = all.isEmpty ? const <PricePoint>[] : widget.history.sinceDate(_start(_range, all.last.time));
     final hover = _hover != null && _hover! < points.length ? _hover : null;
     final shownMarkers = points.length < 2
         ? const <ChartMarker>[]
@@ -308,20 +326,26 @@ class _PriceChartState extends State<PriceChart> {
           ),
           const SizedBox(height: 2),
         ],
+        // A grafikon balról jobbra halad (régi → új): a dátumok jobbról balra író
+        // nyelven is a görbe megfelelő végén.
         if (points.length >= 2)
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              for (final t in [points.first.time, points.last.time])
-                Flexible(
-                  child: Text(
-                    widget.fmt.date(t),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+          Directionality(
+            textDirection: TextDirection.ltr,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                for (final t in [points.first.time, points.last.time])
+                  Flexible(
+                    child: Text(
+                      widget.fmt.date(t),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      textDirection: Directionality.of(context),
+                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                    ),
                   ),
-                ),
-            ],
+              ],
+            ),
           ),
       ],
     );
@@ -441,8 +465,14 @@ class _LinePainter extends CustomPainter {
 
   static const rightPad = 56.0;
 
-  /// Tengelyfelirat: nagy számnál tömören (1,2M), hogy elférjen.
-  String _axis(double v) => v.abs() >= 100000 ? fmt.compact(v) : fmt.number(v, decimals: v.abs() < 10 ? 2 : 0);
+  /// Tengelyfelirat: nagy számnál tömören (1,2M), hogy elférjen; a tizedesek a
+  /// látható ársáv szélességéből, hogy a szomszédos vonalak felirata különbözzön.
+  String _axis(double v, double span) {
+    if (v.abs() >= 100000) return fmt.compact(v);
+    final step = span / 2;
+    final decimals = step <= 0 ? 2 : (1 - (math.log(step) / math.ln10).floor()).clamp(0, 6);
+    return fmt.number(v, decimals: decimals);
+  }
 
   /// A vízszintes helyhez (x) legközelebb eső pont indexe – idő szerint, mert a
   /// pontok az idő arányában helyezkednek el (hétvégi hézagokkal).
@@ -505,7 +535,7 @@ class _LinePainter extends CustomPainter {
       canvas.drawLine(Offset(0, y), Offset(w, y), gridPaint);
       final value = max - span * i / 2;
       final tp = TextPainter(
-        text: TextSpan(text: _axis(value), style: labelStyle),
+        text: TextSpan(text: _axis(value, span), style: labelStyle),
         textDirection: TextDirection.ltr,
       )..layout(maxWidth: rightPad - 6);
       tp.paint(canvas, Offset(w + 6, y - tp.height / 2));
@@ -522,7 +552,7 @@ class _LinePainter extends CustomPainter {
       }
       final tp = TextPainter(
         text: TextSpan(
-          text: '${l.label} ${_axis(l.price)}',
+          text: '${l.label} ${fmt.price(l.price, null)}',
           style: labelStyle.copyWith(color: l.color, fontWeight: FontWeight.w700),
         ),
         textDirection: TextDirection.ltr,

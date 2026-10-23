@@ -17,7 +17,7 @@ class ReturnsStrip extends StatelessWidget {
   /// Hozam az év eleje óta: az előző év utolsó záróárától. Ha nincs tavalyi
   /// adat, csak akkor az év első napjától, ha az január első hetébe esik
   /// (különben az év közepéről indulna, félrevezetően).
-  static double? ytd(List<PricePoint> pts) => PriceStats.ytd(pts);
+  static double? ytd(List<PricePoint> pts, {DateTime? now}) => PriceStats.ytd(pts, now: now);
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +29,9 @@ class ReturnsStrip extends StatelessWidget {
       (l10n.rangeOneWeek, PriceStats.returnOver(pts, 7)),
       (l10n.rangeOneMonth, PriceStats.returnOver(pts, 30)),
       (l10n.rangeThreeMonths, PriceStats.returnOver(pts, 91)),
-      (l10n.rangeYtd, ytd(pts)),
-      (l10n.rangeOneYear, PriceStats.returnOver(pts, 365)),
-      (l10n.rangeFiveYears, PriceStats.returnOver(pts, 5 * 365 - 5)),
+      (l10n.rangeYtd, ytd(pts, now: DateTime.now())),
+      (l10n.rangeOneYear, PriceStats.returnOverYears(pts, 1)),
+      (l10n.rangeFiveYears, PriceStats.returnOverYears(pts, 5)),
     ].where((e) => e.$2 != null).toList();
     if (items.isEmpty) return const SizedBox.shrink();
     return Padding(
@@ -47,12 +47,19 @@ class ReturnsStrip extends StatelessWidget {
                   const SizedBox(height: 2),
                   FittedBox(
                     fit: BoxFit.scaleDown,
-                    child: Text(
-                      fmt.percent(v, decimals: v!.abs() >= 100 ? 0 : 1, withSign: true),
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        fontWeight: FontWeight.w700,
-                        color: v >= 0 ? p.positive : p.negative,
-                      ),
+                    // A szín a kiírt (kerekített) értékhez igazodik: a „0,0%” nem piros.
+                    child: Builder(
+                      builder: (context) {
+                        final decimals = v!.abs() >= 100 ? 0 : 1;
+                        final shown = Fmt.roundTo(v, decimals);
+                        return Text(
+                          fmt.percent(shown, decimals: decimals, withSign: true),
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            fontWeight: FontWeight.w700,
+                            color: shown >= 0 ? p.positive : p.negative,
+                          ),
+                        );
+                      },
                     ),
                   ),
                 ],

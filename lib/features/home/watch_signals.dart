@@ -37,8 +37,9 @@ List<WatchSignal> watchSignals(Iterable<String> symbols, Map<String, PriceHistor
 
 /// Egy jelzés szövege a felhasználó nyelvén (a chipeken és az értesítésben).
 String describeSignal(AppLocalizations l10n, Fmt fmt, WatchSignal x) => switch (x.kind) {
-  WatchSignalKind.rsiOversold => l10n.signalRsiOversold(fmt.number(x.value, decimals: 0)),
-  WatchSignalKind.rsiOverbought => l10n.signalRsiOverbought(fmt.number(x.value, decimals: 0)),
+  // Egy tizedessel: a 29,6 ne „30 · túladott” legyen.
+  WatchSignalKind.rsiOversold => l10n.signalRsiOversold(fmt.number(x.value, decimals: 1)),
+  WatchSignalKind.rsiOverbought => l10n.signalRsiOverbought(fmt.number(x.value, decimals: 1)),
   WatchSignalKind.crossedAbove200 => l10n.signalCrossedAbove,
   WatchSignalKind.crossedBelow200 => l10n.signalCrossedBelow,
 };

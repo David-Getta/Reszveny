@@ -85,7 +85,7 @@ List<CompareRow> buildCompareRows(
     row(l10n.labelChange, [for (final d in stocks) d?.quote?.changePercent], signed, Better.none),
     row(
       l10n.compareReturn1y,
-      [for (final d in stocks) d?.history == null ? null : PriceStats.returnOver(d!.history!.points, 365)],
+      [for (final d in stocks) d?.history == null ? null : PriceStats.returnOverYears(d!.history!.points, 1)],
       signed,
       Better.higher,
     ),

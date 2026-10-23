@@ -26,8 +26,9 @@ class WhatIfCard extends StatefulWidget {
 
   /// Az összeg értéke ma, ha [years] éve fektették be (`null`, ha nincs ilyen régi adat).
   static double? valueToday(List<PricePoint> pts, double amount, int years) {
-    final r = PriceStats.returnOver(pts, years * 365 - (years > 1 ? 5 : 0));
-    return r == null ? null : amount * (1 + r / 100);
+    // A záróárak arányából (nem egy kerekített hozamból: nagy összegnél pontos).
+    final base = pts.isEmpty ? null : PriceStats.baseAt(pts, yearsBefore(pts.last.time, years));
+    return base == null ? null : amount * pts.last.close / base.close;
   }
 
   @override

@@ -25,4 +25,29 @@ void main() {
     expect(f.numberLocale, 'de');
     expect(f.number(1234.5), '1.234,50');
   });
+
+  test('rounding: no "-0.00", a unit up when it rounds to 1000, fractional shares without padding', () {
+    final f = Fmt('en');
+    expect(f.percent(-0.004), '0.00%');
+    expect(f.percent(-0.004, withSign: true), '0.00%');
+    expect(f.signed(-0.001), '0.00');
+    expect(f.money(-0.001, 'USD'), '0.00 USD');
+    expect(f.compact(999999), '1.00M');
+    expect(f.compact(999995000), '1.00B');
+    expect(f.compact(999.999), '1.00K');
+    expect(f.compact(1234), '1.23K');
+    expect(f.quantity(0.5), '0.5');
+    expect(f.quantity(2.12345), '2.1235');
+    expect(f.quantity(0.00001), '0.00001');
+    expect(f.quantity(10), '10');
+    expect(Fmt.roundTo(-0.04, 1), 0);
+  });
+
+  test('right-to-left languages: a signed number stays one left-to-right unit', () {
+    final ar = Fmt('ar');
+    expect(ar.percent(5, withSign: true), allOf(startsWith('\u2066'), endsWith('\u2069'), contains('5')));
+    final ckb = Fmt('ckb');
+    expect(ckb.percent(-5.5), '\u2066-5.50%\u2069');
+    expect(Fmt('en').percent(5, withSign: true), '+5.00%');
+  });
 }

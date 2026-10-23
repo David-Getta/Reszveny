@@ -102,6 +102,17 @@ void main() {
     // 400 → 416: +4%.
     expect(a.last, closeTo(104, 1e-9));
     expect(alignBenchmark(pts, bench.take(1).toList()), isNull);
+    // Egy amerikai ünnepnapon (nincs S&P-záró) az előző napi, nem a másnapi ár számít.
+    final stock = [
+      PricePoint(time: DateTime(2026, 5, 22), close: 50),
+      PricePoint(time: DateTime(2026, 5, 25), close: 50),
+      PricePoint(time: DateTime(2026, 5, 26), close: 50),
+    ];
+    final spx = [
+      PricePoint(time: DateTime(2026, 5, 22), close: 500),
+      PricePoint(time: DateTime(2026, 5, 26), close: 550),
+    ];
+    expect(alignBenchmark(stock, spx), [50, 50, closeTo(55, 1e-9)]);
   });
 
   testWidgets('the S&P 500 is loaded only when switched on and its change is shown', (tester) async {

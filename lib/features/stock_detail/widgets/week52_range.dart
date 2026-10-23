@@ -40,56 +40,64 @@ class Week52Range extends StatelessWidget {
       children: [
         Text(l10n.week52Range, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
         const SizedBox(height: 10),
-        LayoutBuilder(
-          builder: (context, c) {
-            const dot = 14.0;
-            final x = position * (c.maxWidth - dot);
-            return SizedBox(
-              height: dot,
-              child: Stack(
-                children: [
-                  Positioned.fill(
-                    top: dot / 2 - 3,
-                    bottom: dot / 2 - 3,
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(3),
-                        gradient: LinearGradient(
-                          colors: [p.negative.withValues(alpha: 0.55), p.positive.withValues(alpha: 0.55)],
+        // Az ársáv (mint egy számegyenes) jobbról balra író nyelven is balról jobbra
+        // nő: a jelölő, a színátmenet és a két felirat így ugyanazon az oldalon marad.
+        Directionality(
+          textDirection: TextDirection.ltr,
+          child: LayoutBuilder(
+            builder: (context, c) {
+              const dot = 14.0;
+              final x = position * (c.maxWidth - dot);
+              return SizedBox(
+                height: dot,
+                child: Stack(
+                  children: [
+                    Positioned.fill(
+                      top: dot / 2 - 3,
+                      bottom: dot / 2 - 3,
+                      child: DecoratedBox(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(3),
+                          gradient: LinearGradient(
+                            colors: [p.negative.withValues(alpha: 0.55), p.positive.withValues(alpha: 0.55)],
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                  Positioned(
-                    left: x,
-                    child: Container(
-                      key: const ValueKey('week52-marker'),
-                      width: dot,
-                      height: dot,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: theme.colorScheme.surface,
-                        border: Border.all(color: theme.colorScheme.onSurface, width: 2.5),
+                    Positioned(
+                      left: x,
+                      child: Container(
+                        key: const ValueKey('week52-marker'),
+                        width: dot,
+                        height: dot,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: theme.colorScheme.surface,
+                          border: Border.all(color: theme.colorScheme.onSurface, width: 2.5),
+                        ),
                       ),
                     ),
-                  ),
-                ],
-              ),
-            );
-          },
+                  ],
+                ),
+              );
+            },
+          ),
         ),
         const SizedBox(height: 6),
         // Fent a mélypont és a csúcs, alattuk középen a távolság (keskeny képernyőn is kifér).
-        Row(
-          children: [
-            Flexible(
-              child: Text(fmt.price(low, currency), style: muted, overflow: TextOverflow.ellipsis),
-            ),
-            const Spacer(),
-            Flexible(
-              child: Text(fmt.price(high, currency), style: muted, overflow: TextOverflow.ellipsis),
-            ),
-          ],
+        Directionality(
+          textDirection: TextDirection.ltr,
+          child: Row(
+            children: [
+              Flexible(
+                child: Text(fmt.price(low, currency), style: muted, overflow: TextOverflow.ellipsis),
+              ),
+              const Spacer(),
+              Flexible(
+                child: Text(fmt.price(high, currency), style: muted, overflow: TextOverflow.ellipsis),
+              ),
+            ],
+          ),
         ),
         const SizedBox(height: 2),
         Center(

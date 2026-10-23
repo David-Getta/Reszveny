@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:intl/intl.dart';
 
 /// Számok és dátumok formázása a felhasználó nyelvén.
@@ -7,10 +9,27 @@ import 'package:intl/intl.dart';
 class Fmt {
   Fmt(String locale, {this.na = 'n/a'})
     : numberLocale = NumberFormat.localeExists(locale) ? locale : _fallbackFor(locale, _dateLocaleExists),
-      dateLocale = _dateLocaleExists(locale) ? locale : _fallbackFor(locale, _dateLocaleExists);
+      dateLocale = _dateLocaleExists(locale) ? locale : _fallbackFor(locale, _dateLocaleExists),
+      _rtl = _rtlLanguages.contains(locale.split(RegExp('[_-]')).first);
 
   final String numberLocale;
   final String dateLocale;
+
+  /// Jobbról balra író nyelv: az előjeles számok balról jobbra írt egységként
+  /// (izolálva) kerülnek a szövegbe, különben a „+5%” „5%+”-ként jelenne meg.
+  final bool _rtl;
+  static const _rtlLanguages = {'ar', 'fa', 'he', 'iw', 'ur', 'ps', 'sd', 'ug', 'ckb', 'yi', 'dv'};
+
+  String _iso(String s) => _rtl ? '\u2066$s\u2069' : s;
+
+  /// A nyelv pluszjele (egyes nyelveken irányjelzővel).
+  String get _plus => NumberFormat.decimalPattern(numberLocale).symbols.PLUS_SIGN;
+
+  /// A [decimals] tizedesre kerekített érték (a nullára kerekedő negatív 0).
+  static double roundTo(num v, int decimals) {
+    final f = math.pow(10, decimals);
+    return (v * f).roundToDouble() / f + 0.0;
+  }
 
   /// Hiányzó adat jelölése (fordított szöveg).
   final String na;
@@ -33,13 +52,30 @@ class Fmt {
     return 'en';
   }
 
-  String number(num? v, {int decimals = 2}) {
-    if (v == null) return na;
-    return NumberFormat.decimalPatternDigits(locale: numberLocale, decimalDigits: decimals).format(v);
+  String number(num? v, {int decimals = 2}) => v == null ? na : _iso(_number(v, decimals));
+
+  /// A szám a nyelv formátumában; a nullára kerekedő negatív érték „0,00” (nem „-0,00”).
+  String _number(num v, int decimals) {
+    final shown = v.isFinite && roundTo(v, decimals) == 0 ? 0 : v;
+    return NumberFormat.decimalPatternDigits(locale: numberLocale, decimalDigits: decimals).format(shown);
   }
 
-  /// Darabszám: egész számnál tizedes nélkül, törtrésznél legfeljebb 4 tizedessel.
-  String quantity(double v) => number(v, decimals: v == v.roundToDouble() ? 0 : 4);
+  /// Előjeles szám: pozitívnál a nyelv pluszjele, és jobbról balra író nyelvnél egy egységként.
+  String _signed(num v, int decimals, {String suffix = ''}) {
+    final n = _number(v, decimals);
+    final positive = v.isFinite && roundTo(v, decimals) > 0;
+    return _iso('${positive ? _plus : ''}$n$suffix');
+  }
+
+  /// Darabszám: egész számnál tizedes nélkül, törtrésznél legfeljebb 4 tizedessel (a
+  /// felesleges nullák nélkül); egy 0,0001 alatti tört rész sem látszik nullának.
+  String quantity(double v) {
+    if (v == v.roundToDouble()) return number(v, decimals: 0);
+    final f = NumberFormat.decimalPattern(numberLocale)
+      ..minimumFractionDigits = 0
+      ..maximumFractionDigits = v.abs() < 0.0001 ? 8 : 4;
+    return _iso(f.format(v));
+  }
 
   /// A nyelv tizedesjele (pl. magyarul vessző).
   String get decimalSeparator => NumberFormat.decimalPattern(numberLocale).symbols.DECIMAL_SEP;
@@ -52,8 +88,7 @@ class Fmt {
   String money(num? v, String? currency, {bool withSign = false, bool showCurrency = true}) {
     if (v == null) return na;
     final whole = currency != null && wholeUnitCurrencies.contains(currency.toUpperCase()) && v.abs() >= 100;
-    final n = number(v, decimals: whole ? 0 : 2);
-    final s = withSign && v > 0 ? '+$n' : n;
+    final s = withSign ? _signed(v, whole ? 0 : 2) : number(v, decimals: whole ? 0 : 2);
     return currency == null || !showCurrency ? s : '$s $currency';
   }
 
@@ -65,35 +100,26 @@ class Fmt {
 
   /// Rövidített nagy számok: 1 234 567 890 → "1.23B". Az SI-szerű utótagok
   /// (K, M, B, T) nemzetközileg érthetők a pénzügyi felületeken.
+  /// Az utótag a kerekítés után dől el: a 999 999 „1,00M”, nem „1 000,00K”.
   String compact(num? v, {String? currency}) {
     if (v == null) return na;
-    final abs = v.abs();
-    final String s;
-    if (abs >= 1e12) {
-      s = '${number(v / 1e12)}T';
-    } else if (abs >= 1e9) {
-      s = '${number(v / 1e9)}B';
-    } else if (abs >= 1e6) {
-      s = '${number(v / 1e6)}M';
-    } else if (abs >= 1e3) {
-      s = '${number(v / 1e3)}K';
-    } else {
-      s = number(v);
+    const units = [(1.0, ''), (1e3, 'K'), (1e6, 'M'), (1e9, 'B'), (1e12, 'T')];
+    var i = 0;
+    while (i < units.length - 1 && v.abs() >= units[i + 1].$1) {
+      i++;
     }
+    if (i < units.length - 1 && roundTo(v.abs() / units[i].$1, 2) >= 1000) i++;
+    final (unit, suffix) = units[i];
+    final s = _iso('${_number(v / unit, 2)}$suffix');
     return currency == null ? s : '$s $currency';
   }
 
   String percent(num? v, {int decimals = 2, bool withSign = false}) {
     if (v == null) return na;
-    final sign = withSign && v > 0 ? '+' : '';
-    return '$sign${number(v, decimals: decimals)}%';
+    return withSign ? _signed(v, decimals, suffix: '%') : _iso('${_number(v, decimals)}%');
   }
 
-  String signed(num? v, {int decimals = 2}) {
-    if (v == null) return na;
-    final sign = v > 0 ? '+' : '';
-    return '$sign${number(v, decimals: decimals)}';
-  }
+  String signed(num? v, {int decimals = 2}) => v == null ? na : _signed(v, decimals);
 
   String date(DateTime? d) {
     if (d == null) return na;
