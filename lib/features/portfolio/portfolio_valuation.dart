@@ -41,7 +41,22 @@ class PositionValue {
   double? get value => price == null ? null : price! * position.quantity;
   double? get gain => value == null ? null : value! - position.cost;
   double? get gainPercent => gain == null || position.cost == 0 ? null : gain! / position.cost * 100;
-  double? get dayGain => dayChange == null ? null : dayChange! * position.quantity;
+
+  /// A mai eredmény: a napi változás a darabszámon, de a ma vett darabnál a vételi
+  /// árhoz, a ma eladottnál az eladási árig mérve (a tegnapi záróárhoz képest).
+  double? get dayGain {
+    final change = dayChange, now = price;
+    if (change == null) return null;
+    var gain = change * position.quantity;
+    if (now == null) return gain;
+    final close = now - change, today = DateTime.now();
+    for (final l in position.lots) {
+      final d = l.date;
+      if (d == null || d.year != today.year || d.month != today.month || d.day != today.day) continue;
+      gain += (l.sell ? 1 : -1) * (l.price - close) * l.quantity;
+    }
+    return gain;
+  }
 
   /// Benne van-e az összesítésben (van ár és árfolyam).
   bool get inTotal => value != null && rate != null;
@@ -364,9 +379,11 @@ List<RebalanceStep> rebalancePlan(PortfolioSnapshot s, Map<String, double> targe
   final total = s.totalValue;
   if (total <= 0) return const [];
   return [
+    // Ár vagy árfolyam nélküli pozíció nincs az összértékben: nem 0%, hanem ismeretlen.
     for (final r in s.rows)
-      if (targets[r.position.symbol.toUpperCase()] case final t?)
-        (symbol: r.position.symbol, current: r.weight * 100, target: t, amount: t / 100 * total - r.weight * total),
+      if (r.inTotal)
+        if (targets[r.position.symbol.toUpperCase()] case final t?)
+          (symbol: r.position.symbol, current: r.weight * 100, target: t, amount: t / 100 * total - r.weight * total),
   ]..sort((a, b) => b.amount.abs().compareTo(a.amount.abs()));
 }
 

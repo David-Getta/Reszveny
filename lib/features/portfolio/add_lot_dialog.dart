@@ -368,15 +368,31 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     }
     final useCash = _cashNow != null && _useCash;
     final note = _note.text.trim();
+    // Mint a javításnál: a beírt számok a mai (felaprózással igazított) egységben
+    // értendők – ahogy a listák, az eladási korlát és a kitöltött ár –, a tárolt alak
+    // a választott nap szerinti.
+    final stored = services.portfolio.storedLot(
+      PortfolioLot(
+        id: '',
+        symbol: widget.symbol.toUpperCase(),
+        quantity: q!,
+        price: p!,
+        currency: widget.currency,
+        date: _date,
+        sell: widget.sell,
+        account: _lotAccount,
+        fee: fee!,
+      ),
+    );
     await services.portfolio.add(
       symbol: widget.symbol,
-      quantity: q!,
-      price: p!,
+      quantity: stored.quantity,
+      price: stored.price,
       currency: widget.currency,
       date: _date,
       sell: widget.sell,
       account: _lotAccount,
-      fee: fee!,
+      fee: fee,
     );
     // A készpénz-egyenleg követi a tranzakciót (a díjjal együtt), a mostani egyenlegből
     // (egy közben, pl. szinkronnal érkezett változás nem vész el).

@@ -21,13 +21,18 @@ typedef SummaryRow = ({
 });
 
 /// Az évek, amelyekben volt eladás, osztalék vagy díj (az újabb elöl).
-List<int> summaryYears(PortfolioStore store) => {
-  for (final p in store.allPositions)
-    for (final s in p.sales) ?s.date?.year,
-  for (final d in store.dividends) ?d.date?.year,
-  for (final l in store.lots)
-    if (l.fee > 0) ?l.date?.year,
-}.toList()..sort((a, b) => b.compareTo(a));
+/// A jövőre rögzített (bejelentett) osztalék még nem számít: üres év nem jelenik meg.
+List<int> summaryYears(PortfolioStore store, {DateTime? now}) {
+  final today = now ?? DateTime.now();
+  return {
+    for (final p in store.allPositions)
+      for (final s in p.sales) ?s.date?.year,
+    for (final d in store.dividends)
+      if (d.date case final date? when !date.isAfter(today)) date.year,
+    for (final l in store.lots)
+      if (l.fee > 0) ?l.date?.year,
+  }.toList()..sort((a, b) => b.compareTo(a));
+}
 
 /// Egy év sorai számlánként és pénznemenként (a számla nélküliek elöl, aztán ábécérendben).
 List<SummaryRow> annualSummary(PortfolioStore store, int year) {

@@ -123,7 +123,7 @@ class PositionCard extends StatelessWidget {
                     label: l10n.portfolioDividendsReceived,
                     value: fmt.money(ds.fold<double>(0, (sum, d) => sum + d.amount), ccy),
                   ),
-                  if (yieldOnCost(ds, pos.cost, now: now) case final y?)
+                  if (yieldOnCost(ds, pos.cost, now: now, scale: services.portfolio.dividendScale) case final y?)
                     MetricFigure(
                       key: const ValueKey('position-yield-on-cost'),
                       label: l10n.labelYieldOnCost,

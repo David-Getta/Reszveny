@@ -230,7 +230,15 @@ BenchmarkComparison? benchmarkComparison(
   final idx = index.points;
   if (idx.length < 2) return null;
   final first = idx.first.time;
-  // Az adott napig utolsó ismert indexár (a sorozat előtti napra az első).
+  // Az index története (legfeljebb 5 év) előtti dátumú vétel nem vethető össze: a
+  // sorozat első ára mellett a portfólió hosszabb időszaka „verné” az indexet. (A
+  // dátum nélküli tétel – mint a grafikonon – a kezdettől számít.)
+  final tooOld = lots.any(
+    (l) =>
+        l.date != null && day(l.date!).isBefore(day(first)) && histories[l.symbol] != null && rate(l.currency) != null,
+  );
+  if (tooOld) return null;
+  // Az adott napig utolsó ismert indexár.
   double indexAt(DateTime d) {
     var v = idx.first.close;
     for (final p in idx) {

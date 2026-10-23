@@ -354,7 +354,7 @@ class Position {
     for (final l in lots) {
       byAccount.putIfAbsent(l.account, () => []).add(l);
     }
-    if (byAccount.length <= 1) return _fifoOf(lots);
+    if (byAccount.length <= 1) return _settle(_fifoOf(lots));
     final parts = [for (final l in byAccount.values) _fifoOf(l)];
     // A birtokolt tételek a vétel napja szerint (dátum nélküli elöl).
     final open = [for (final p in parts) ...p.open]..sort((a, b) => _byDate(a.date, b.date));
@@ -381,7 +381,32 @@ class Position {
       }
     }
     // Az eladások időrendben (dátum nélküli a végén).
-    return (open: open, sales: sales..sort(_saleOrder), unmatched: left);
+    return _settle((open: open, sales: sales..sort(_saleOrder), unmatched: left));
+  }
+
+  /// A még párosítatlan eladások (pl. a mai napra rögzített meglévő tétel mellé egy
+  /// korábbi napra beírt eladás) a megmaradt tételekből fogynak, a dátumtól függetlenül:
+  /// így a darabszám mindig a vételek és az eladások különbsége (mint a grafikonon),
+  /// és az eladás a realizált eredményben is megjelenik.
+  static _Fifo _settle(_Fifo f) {
+    if (f.unmatched.isEmpty) return f;
+    final sales = [...f.sales];
+    final left = <_Unmatched>[];
+    for (final u in f.unmatched) {
+      final (:matched, :cost) = _consume(f.open, u.quantity);
+      if (matched > 1e-9) sales.add(_sale(u, matched, cost));
+      if (u.quantity - matched > 1e-9) {
+        left.add((
+          id: u.id,
+          date: u.date,
+          quantity: u.quantity - matched,
+          price: u.price,
+          net: u.net,
+          account: u.account,
+        ));
+      }
+    }
+    return (open: f.open, sales: sales..sort(_saleOrder), unmatched: left);
   }
 
   /// Egy eladás [matched] darabja a FIFO szerinti [cost] bekerülési értékkel.
@@ -605,6 +630,26 @@ class PortfolioStore extends ChangeNotifier {
   /// Az [adjustedLot] visszafelé: a mai (felaprózás utáni) darabszámban és árban
   /// megadott tétel tárolt alakja, a napja utáni felaprózásokat visszacsinálva
   /// (javításkor a dialógus a látott számokkal dolgozik).
+  /// A részvényből [date] napján birtokolt darabszám (felaprózással igazítva, minden
+  /// számlán; a dátum nélküli tétel a kezdettől számít).
+  double quantityAt(String symbol, DateTime date) {
+    final s = symbol.toUpperCase();
+    var q = 0.0;
+    for (final l in adjustedLots) {
+      if (l.symbol == s && (l.date == null || !l.date!.isAfter(date))) q += l.signedQuantity;
+    }
+    return q;
+  }
+
+  /// Egy kapott osztalék a mai darabszámra arányosítva (a bekerülési hozamhoz): egy
+  /// azóta eladott vagy vett rész ne torzítsa. Dátum vagy akkori darab nélkül 1.
+  double dividendScale(DividendRecord d) {
+    final date = d.date;
+    if (date == null) return 1;
+    final then = quantityAt(d.symbol, date);
+    return then <= 1e-9 ? 1 : (quantityAt(d.symbol, DateTime(9999)) / then).clamp(0, double.infinity).toDouble();
+  }
+
   PortfolioLot storedLot(PortfolioLot l) => _splits.reversed.fold(l, (lot, s) => s.revert(lot));
 
   /// A tranzakciók és a felaprózások tartalma: ha változik (egy javítás is,
@@ -795,10 +840,11 @@ class PortfolioStore extends ChangeNotifier {
   /// Egy még nem rögzített tranzakció hatása a részvény pozíciójára (a felaprózásokkal
   /// igazítva, ugyanazzal a FIFO-val): a pozíció a [view] számla nézetében (`null`:
   /// mind) előtte és utána – a dialógus előnézetéhez (új átlagár, várható realizált).
+  ///
+  /// A [lot] a mai (felaprózással igazított) egységben van, mint a dialógusban.
   ({Position? before, Position after}) preview(PortfolioLot lot, {String? view}) {
     final s = lot.symbol.toUpperCase();
-    final added = _splits.fold(lot, (l, x) => x.apply(l));
-    final lots = [...adjustedLots.where((l) => l.symbol == s), added];
+    final lots = [...adjustedLots.where((l) => l.symbol == s), lot];
     final all = Position(symbol: s, currency: lots.first.currency, lots: lots);
     return (before: positionIn(s, view), after: view == null ? all : Position._view(all, view));
   }

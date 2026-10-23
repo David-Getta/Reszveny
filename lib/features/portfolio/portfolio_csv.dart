@@ -81,7 +81,9 @@ String dividendsCsv(List<DividendRecord> dividends) {
 
 /// A realizált nyereség eladásonként (FIFO), az adóbevalláshoz: dátum, ticker,
 /// darab, eladási ár, bevétel, bekerülési érték, nyereség és pénznem, időrendben.
-String realizedCsv(List<Position> positions) {
+/// A [stored] (tárolt) tételekből egy későbbi felaprózás előtti eladás a kötjegy
+/// szerinti darabbal és árral szerepel (az összegek ugyanazok).
+String realizedCsv(List<Position> positions, {Map<String, PortfolioLot> stored = const {}}) {
   // Legfeljebb 4 tizedes, a felesleges nullák (és a magányos pont) nélkül.
   String n(double v) {
     final t = v.toStringAsFixed(4).replaceFirst(RegExp(r'\.?0+$'), '');
@@ -98,12 +100,14 @@ String realizedCsv(List<Position> positions) {
     'date,symbol,quantity,sale_price,proceeds,cost_basis,gain,currency${withAccount ? ',account' : ''}\n',
   );
   for (final (p, s) in rows) {
+    final raw = stored[s.id];
+    final f = raw == null || s.price <= 0 ? 1.0 : raw.price / s.price;
     b.writeln(
       [
         s.date?.toIso8601String().substring(0, 10) ?? '',
         p.symbol,
-        n(s.quantity),
-        n(s.price),
+        n(s.quantity / f),
+        n(s.price * f),
         n(s.proceeds),
         n(s.cost),
         n(s.proceeds - s.cost),

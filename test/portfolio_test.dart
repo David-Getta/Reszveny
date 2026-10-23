@@ -581,7 +581,8 @@ void main() {
     expect(find.text('AAPL added to your portfolio.'), findsOneWidget);
     expect(s.portfolio.positionOf('AAPL')!.quantity, 10);
     expect(find.text('Your position'), findsOneWidget);
-    expect(find.text('+314.50 USD'), findsOneWidget); // 10 × 231,45 − 2 000
+    // 10 × 231,45 − 2 000; ma vett tételnél a mai eredmény is ennyi (a vételi árhoz mérve).
+    expect(find.text('+314.50 USD'), findsWidgets);
     expect(s.analysisOptions(symbol: 'AAPL').position!.averageCost, 200);
     expect(s.analysisOptions(symbol: 'MSFT').position, isNull);
     // A következő vételnél az előnézet az új átlagárat mutatja.
@@ -953,6 +954,8 @@ void main() {
     PositionValue row(String symbol, double w) => PositionValue(
       position: Position(symbol: symbol, currency: 'USD', lots: const []),
       weight: w,
+      price: 1,
+      rate: 1,
     );
     final snap = PortfolioSnapshot(
       currency: 'USD',
@@ -1393,9 +1396,10 @@ void main() {
       var p = store.preview(lot(20, 80, DateTime(2024, 7, 1), account: 'TBSZ'), view: 'TBSZ');
       expect(p.before!.averageCost, 50);
       expect(p.after.averageCost, 65);
-      // A felaprózás előtti napra írt vétel is igazodik: 10 × 120 → 20 × 60.
+      // A dialógus a mai (igazított) egységben dolgozik: a felaprózás előtti napra írt
+      // 10 × 120 is mai darab (mentéskor alakul vissza 5 × 240-re).
       p = store.preview(lot(10, 120, DateTime(2024, 2, 1), account: 'TBSZ'), view: 'TBSZ');
-      expect(p.after.averageCost, 55);
+      expect(p.after.averageCost, closeTo((1000 + 1200) / 30, 1e-9));
       // Minden számla: (1000 + 1000 + 3000) / 60.
       p = store.preview(lot(30, 100, DateTime(2024, 7, 1)));
       expect(p.before!.averageCost, closeTo(2000 / 30, 1e-9));

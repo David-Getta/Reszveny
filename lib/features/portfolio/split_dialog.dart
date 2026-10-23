@@ -48,7 +48,10 @@ class _SplitDialogState extends State<_SplitDialog> {
     final ratio = parseSplitRatio(_ratio.text);
     setState(() => _ratioError = ratio == null);
     if (ratio == null) return;
-    await AppServices.of(context).portfolio.addSplit(symbol: widget.symbol, from: ratio.$2, to: ratio.$1, date: _date);
+    final services = AppServices.of(context);
+    final split = await services.portfolio.addSplit(symbol: widget.symbol, from: ratio.$2, to: ratio.$1, date: _date);
+    // A részvény korábbi árriasztásai is az új egységben (különben azonnal szólnának).
+    if (split != null) await services.alerts.applySplit(split.symbol, from: split.from, to: split.to, date: split.date);
     if (mounted) Navigator.of(context).pop(true);
   }
 

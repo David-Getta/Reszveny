@@ -115,6 +115,7 @@ class DividendsCard extends StatelessWidget {
                         cost,
                         now: now,
                         rate: (d) => rate(d.currency),
+                        scale: services.portfolio.dividendScale,
                       );
                       // Évenként is, ha több évből van tétel (az adóbevalláshoz).
                       final years = {for (final d in all) ?d.date?.year}.toList()..sort((a, b) => b.compareTo(a));

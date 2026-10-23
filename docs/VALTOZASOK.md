@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.270)
+# Változásjegyzék (0.2.130 → 0.2.271)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,23 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Portfólió-számítások: egy tizenhetedik kódátnézés javításai
+
+- **0.2.271**: a vételnél korábbi napra rögzített eladás nem tűnik el (pl. a ma felvett meglévő tétel mellé
+  egy tavaszi eladás). Eddig a darabszám és a realizált eredmény úgy maradt, mintha az eladás meg sem
+  történt volna. Egy felaprózás előtti napra felvett tranzakció is a mai (igazított) számokkal értendő, mint
+  a javítása, a listák, az eladási korlát és a kitöltött ár (eddig a felvétel a kötjegy szerinti
+  számokat várta, így egy ilyen eladás kétszer igazodott). Az
+  újrasúlyozási terv nem javasol 100%-os eladást vagy vételt egy ár nélküli pozíció miatt. Az index
+  története (5 év) előtti vételnél nem jelenik meg félrevezető „+150 százalékpont” összevetés. A
+  bekerülési osztalékhozam a mai darabszámra arányosít (egy azóta eladott rész osztaléka nem növeli). Egy
+  felaprózás a részvény árriasztásait is az új egységbe viszi (eddig a követő stop azonnal szólt). A mai
+  eredmény a ma vett részvényt a vételi árától, a ma eladottat az eladási áráig méri. A realizált
+  nyereség CSV-je a felaprózás előtti eladást a kötjegy szerinti darabbal és árral mutatja. Az éves
+  összesítő nem nyílik egy csak jövőre bejelentett osztalékot tartalmazó üres évre, és február 29-én sem
+  marad ki egy március 1-jei osztalék. Ismert, nem javított: egy ticker különböző pénznemű tételei (CSV-ből)
+  átváltás nélkül adódnak össze, és a várható következő osztalék az utolsó kifizetés összege.
 
 ## Fiók-szinkron: egy tizenhatodik kódátnézés javításai
 

@@ -108,14 +108,18 @@ List<ExpectedDividend> expectedDividends(
 /// osztaléka a [cost] vételi értékhez mérve; `null`, ha nincs ilyen tétel. A
 /// [rate] a tétel pénznemének átváltása a [cost] pénznemére (`null`: a tétel
 /// kimarad); nélküle az összegek változatlanul adódnak össze.
+///
+/// A [scale] a tételt a mai darabszámra arányosítja (a kifizetéskori darabszámhoz
+/// képest): egy azóta eladott rész osztaléka nem a megmaradt darabok hozama.
 double? yieldOnCost(
   Iterable<DividendRecord> dividends,
   double cost, {
   required DateTime now,
   double? Function(DividendRecord d)? rate,
+  double Function(DividendRecord d)? scale,
 }) {
   if (cost <= 0) return null;
-  final sum = dividendsLast12Months(dividends, now: now, rate: rate);
+  final sum = dividendsLast12Months(dividends, now: now, rate: rate, scale: scale);
   return sum == null ? null : sum / cost * 100;
 }
 
@@ -123,7 +127,10 @@ double? yieldOnCost(
 /// hozzá kért árfolyamok ugyanezt az ablakot használják).
 Iterable<DividendRecord> dividendsInLast12Months(Iterable<DividendRecord> dividends, {required DateTime now}) {
   // Pontosan egy éve kapott tétel már nem számít (különben 366 nap: két éves kifizetés).
-  final from = DateTime(now.year - 1, now.month, now.day, now.hour, now.minute, now.second);
+  // Február 29-én az előző évben 28-a (különben március 1-jére csúszna, és egy
+  // március 1-jei kifizetés kimaradna).
+  final day = now.month == 2 && now.day == 29 ? 28 : now.day;
+  final from = DateTime(now.year - 1, now.month, day, now.hour, now.minute, now.second);
   return dividends.where((d) {
     final date = d.date;
     return date != null && date.isAfter(from) && !date.isAfter(now);
@@ -137,13 +144,14 @@ double? dividendsLast12Months(
   Iterable<DividendRecord> dividends, {
   required DateTime now,
   double? Function(DividendRecord d)? rate,
+  double Function(DividendRecord d)? scale,
 }) {
   var sum = 0.0;
   var any = false;
   for (final d in dividendsInLast12Months(dividends, now: now)) {
     final r = rate == null ? 1.0 : rate(d);
     if (r == null) continue;
-    sum += d.amount * r;
+    sum += d.amount * r * (scale?.call(d) ?? 1);
     any = true;
   }
   return any ? sum : null;

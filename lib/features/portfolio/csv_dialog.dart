@@ -59,7 +59,11 @@ class PortfolioCsvMenu extends StatelessWidget {
         } else if (v == 'summary') {
           if (context.mounted) await showAnnualSummary(context);
         } else if (v == 'realized') {
-          await _exportCsv(context, realizedCsv(services.portfolio.allPositions), 'WhatStock realized-gains.csv');
+          await _exportCsv(
+            context,
+            realizedCsv(services.portfolio.allPositions, stored: {for (final l in services.portfolio.lots) l.id: l}),
+            'WhatStock realized-gains.csv',
+          );
         } else if (v == 'photo') {
           if (context.mounted) await showHoldingsImport(context);
         } else if (context.mounted) {
@@ -195,6 +199,7 @@ Future<void> showPortfolioImport(BuildContext context) async {
   for (final s in result.splits) {
     if (await services.portfolio.addSplit(symbol: s.symbol, from: s.from, to: s.to, date: s.date) case final split?) {
       splitIds.add(split.id);
+      await services.alerts.applySplit(split.symbol, from: split.from, to: split.to, date: split.date);
     }
   }
   messenger

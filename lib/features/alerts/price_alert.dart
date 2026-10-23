@@ -138,6 +138,22 @@ class PriceAlert {
     modified: DateTime.now().toUtc(),
   );
 
+  /// Felaprózás után az új egységben ([factor] = régi darab / új darab): az árszint
+  /// (vagy a követő stop csúcsa) szorozva; a százalékos mozgás változatlan. A
+  /// módosítás ideje most (a szinkron így viszi tovább).
+  PriceAlert scaled(double factor) => PriceAlert(
+    id: id,
+    symbol: symbol,
+    kind: kind,
+    value: kind == AlertKind.above || kind == AlertKind.below ? value * factor : value,
+    currency: currency,
+    createdAt: createdAt,
+    triggeredAt: triggeredAt,
+    triggeredPrice: triggeredPrice,
+    peak: peak == null ? null : peak! * factor,
+    modified: DateTime.now().toUtc(),
+  );
+
   PriceAlert withPeak(double price) => PriceAlert(
     id: id,
     symbol: symbol,
@@ -349,6 +365,20 @@ class AlertStore extends ChangeNotifier {
       );
     }
     await _changed();
+  }
+
+  /// Felaprózás ([to] új részvény [from] régi helyett, [date] napon): a részvény
+  /// előtte beállított riasztásai az új egységben – különben a felaprózott ár azonnal
+  /// „teljesítené” őket (a követő stop csúcsa is).
+  Future<void> applySplit(String symbol, {required int from, required int to, required DateTime date}) async {
+    final s = symbol.trim().toUpperCase();
+    var changed = false;
+    for (final (i, a) in _alerts.indexed) {
+      if (a.symbol != s || a.kind == AlertKind.move || !a.createdAt.isBefore(date)) continue;
+      _alerts[i] = a.scaled(from / to);
+      changed = true;
+    }
+    if (changed) await _changed();
   }
 
   Future<void> markTriggered(String id, DateTime at, double price) => _replace(id, (a) => a.triggered(at, price));
