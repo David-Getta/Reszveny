@@ -9,7 +9,7 @@ import '../../widgets/metric_hint.dart';
 import '../stock_detail/widgets/section_card.dart';
 import 'annual_return.dart';
 import 'dividend_forecast.dart';
-import 'portfolio_page.dart';
+import 'purchases_sheet.dart';
 import 'portfolio_valuation.dart';
 
 /// Mennyi ideje tart egy pozíciót: teljes évek, a maradék teljes hónapok, és (egy

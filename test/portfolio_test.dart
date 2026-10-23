@@ -14,6 +14,7 @@ import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
 import 'package:reszveny/features/alerts/price_alert.dart';
 import 'package:reszveny/features/stock_detail/widgets/price_chart.dart';
 import 'package:reszveny/features/portfolio/add_lot_dialog.dart';
+import 'package:reszveny/features/portfolio/allocation_card.dart';
 import 'package:reszveny/features/portfolio/portfolio_page.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/portfolio/position_card.dart' show heldFor;

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.233)
+# Változásjegyzék (0.2.130 → 0.2.234)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
