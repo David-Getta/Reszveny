@@ -116,7 +116,14 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   /// A brókernél vezetett készpénz a kereskedés pénznemében (ha van): vételnél
   /// alapból levonódik, eladásnál hozzáadódik – kikapcsolható.
   late final double? _cashNow = AppServices.of(context).portfolio.cash[widget.currency.toUpperCase()];
-  bool _useCash = true;
+
+  /// A felhasználó választása; amíg nem nyúlt hozzá, csak a mai napra írt tranzakció
+  /// változtatja a készpénzt (egy régebbi tétel pótlásakor az egyenleg már tartalmazza).
+  bool? _useCashChoice;
+  bool get _useCash => _useCashChoice ?? DateUtils.isSameDay(_date, DateTime.now());
+
+  /// Mentés közben a gomb nem nyomható újra (dupla tranzakció ellen).
+  bool _saving = false;
   String? _feeError;
   late bool _showFee = AppServices.of(context).portfolio.lots.any((l) => l.fee > 0);
 
@@ -193,15 +200,18 @@ class _AddLotDialogState extends State<_AddLotDialog> {
       fee: fee,
     );
     final style = theme.textTheme.bodySmall?.copyWith(color: p.muted);
-    // A súly a portfólióban ezután (ha más is van benne – egyetlen pozíció mindig 100%).
+    // A súly a portfólióban ezután (ha más is van benne – egyetlen pozíció mindig 100%): a
+    // felaprózással igazított darabszámmal, és ha készpénzből megy, az összérték nem nő.
+    final overall = store.preview(lot);
     final weight = switch (_portfolio) {
       final snap? => weightChange(
         snap,
         widget.symbol,
-        q,
+        (overall.after.quantity - (overall.before?.quantity ?? 0)).abs(),
         sell: widget.sell,
         price: widget.currentPrice,
         currency: widget.currency,
+        cash: _cashNow != null && _useCash ? _cashNow : null,
       ),
       _ => null,
     };
@@ -219,7 +229,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
         : Column(crossAxisAlignment: CrossAxisAlignment.start, children: [main, const SizedBox(height: 4), weightLine]);
     if (widget.sell) {
       // Az egész részvényen mérve: egy korábbi napra írt eladás a későbbiek párosítását is módosíthatja.
-      final (:before, :after) = store.preview(lot);
+      final (:before, :after) = overall;
       final gain = after.realizedGain - (before?.realizedGain ?? 0);
       return withWeight(
         Text.rich(
@@ -277,8 +287,13 @@ class _AddLotDialogState extends State<_AddLotDialog> {
       _priceError = p == null || p <= 0 ? l10n.portfolioInvalidNumber : null;
       _feeError = fee == null || fee < 0 ? l10n.portfolioInvalidNumber : null;
     });
-    if (_quantityError != null || _priceError != null || _feeError != null) return;
-    await AppServices.of(context).portfolio.add(
+    if (_quantityError != null || _priceError != null || _feeError != null || _saving) return;
+    setState(() => _saving = true);
+    // A tárolók a dialógus bezárása után is frissülnek (a mentés ne maradjon félbe).
+    final services = AppServices.of(context);
+    final useCash = _cashNow != null && _useCash;
+    final note = _note.text.trim();
+    await services.portfolio.add(
       symbol: widget.symbol,
       quantity: q!,
       price: p!,
@@ -288,18 +303,19 @@ class _AddLotDialogState extends State<_AddLotDialog> {
       account: widget.sell ? _sellFrom : (_showAccount ? _account : null),
       fee: fee!,
     );
-    // A készpénz-egyenleg követi a tranzakciót (a díjjal együtt).
-    if (_cashNow case final cash? when _useCash && mounted) {
+    // A készpénz-egyenleg követi a tranzakciót (a díjjal együtt), a mostani egyenlegből
+    // (egy közben, pl. szinkronnal érkezett változás nem vész el).
+    if (useCash) {
+      final cash = services.portfolio.cash[widget.currency.toUpperCase()] ?? 0;
       final amount = q * p + (widget.sell ? -fee : fee);
-      await AppServices.of(context).portfolio.setCash(widget.currency, widget.sell ? cash + amount : cash - amount);
+      await services.portfolio.setCash(widget.currency, widget.sell ? cash + amount : cash - amount);
     }
     // A jegyzet a tranzakció adataival a részvény jegyzeteinek végére (befektetési napló).
-    if (_note.text.trim() case final text when text.isNotEmpty && mounted) {
-      final notes = AppServices.of(context).notes;
-      await notes.append(
+    if (note.isNotEmpty) {
+      await services.notes.append(
         widget.symbol,
         '${fmt.date(_date)} · ${widget.sell ? l10n.portfolioSold : l10n.lotNoteBought} '
-        '${fmt.quantity(q)} × ${fmt.money(p, widget.currency)}: $text',
+        '${fmt.quantity(q)} × ${fmt.money(p, widget.currency)}: $note',
       );
     }
     if (mounted) Navigator.of(context).pop(true);
@@ -401,7 +417,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
               CheckboxListTile(
                 key: const ValueKey('lot-cash'),
                 value: _useCash,
-                onChanged: (v) => setState(() => _useCash = v ?? false),
+                onChanged: (v) => setState(() => _useCashChoice = v ?? false),
                 contentPadding: EdgeInsets.zero,
                 dense: true,
                 controlAffinity: ListTileControlAffinity.leading,
@@ -479,7 +495,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
         TextButton(onPressed: () => Navigator.of(context).pop(false), child: Text(l10n.cancel)),
         FilledButton(
           key: const ValueKey('lot-submit'),
-          onPressed: _submit,
+          onPressed: _saving ? null : _submit,
           child: Text(widget.sell ? l10n.portfolioSell : l10n.portfolioAdd),
         ),
       ],

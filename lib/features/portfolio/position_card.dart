@@ -15,11 +15,13 @@ import 'portfolio_valuation.dart';
 /// Mennyi ideje tart egy pozíciót: teljes évek, a maradék teljes hónapok, és (egy
 /// hónapon belül) a napok – naptári napok szerint.
 ({int years, int months, int days}) heldFor(DateTime since, DateTime now) {
-  final from = DateTime(since.year, since.month, since.day), to = DateTime(now.year, now.month, now.day);
+  // UTC-napokkal: a téli-nyári óraátállítás nem rövidít meg egy napot.
+  final from = DateTime.utc(since.year, since.month, since.day), to = DateTime.utc(now.year, now.month, now.day);
   var months = (to.year - from.year) * 12 + to.month - from.month;
   if (to.day < from.day) months--;
   if (months < 0) months = 0;
-  return (years: months ~/ 12, months: months % 12, days: months == 0 ? to.difference(from).inDays : 0);
+  final days = months == 0 ? to.difference(from).inDays : 0;
+  return (years: months ~/ 12, months: months % 12, days: days < 0 ? 0 : days);
 }
 
 /// „A pozícióm” a részletes nézetben, ha a részvény a portfólióban van:

@@ -88,6 +88,20 @@ void main() {
     expect((w.before, w.after), (0.0, 20.0));
     // Ismeretlen pénznem árfolyam nélkül: nincs mit mondani.
     expect(weightChange(s, 'D', 1, sell: false, price: 10, currency: 'JPY'), isNull);
+    // Készpénzből: a vétel a készpénzen felüli részével növeli az összértéket (150 a 200-ból
+    // készpénzből: 250 az 450-ből), az eladás nem változtat rajta (50 a 400-ból).
+    w = weightChange(s, 'A', 15, sell: false, currency: 'USD', cash: 100)!;
+    expect(w.after, closeTo(250 / 450 * 100, 1e-9));
+    w = weightChange(s, 'A', 5, sell: true, currency: 'USD', cash: 0)!;
+    expect(w.after, closeTo(50 / 400 * 100, 1e-9));
+    // Birtokolt részvény ár nélkül: a mostani súlya nem ismert.
+    final noQuote = PortfolioSnapshot.compute(
+      store.positions,
+      quotes: const {'B': StockQuote(symbol: 'B', price: 10, change: 0)},
+      rate: (_, _) => 1,
+      currency: 'USD',
+    );
+    expect(weightChange(noQuote, 'A', 1, sell: false, price: 10, currency: 'USD'), isNull);
   });
 
   testWidgets('share the performance from the portfolio page: image and text, no amounts', (tester) async {

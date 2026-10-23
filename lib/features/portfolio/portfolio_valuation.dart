@@ -303,10 +303,13 @@ class PortfolioSnapshot {
 typedef RebalanceStep = ({String symbol, double current, double target, double amount});
 
 /// Egy részvény súlya a portfólió összértékében (%) egy vétel vagy eladás előtt és
-/// után, a mostani áron: a vétel új pénzként növeli, az eladás csökkenti az
-/// összértéket. Új pozíciónál a [price] és a [currency] kell (az árfolyam egy azonos
-/// pénznemű sorból vagy az összesítés pénzneméből). `null`, ha nincs ár, árfolyam
-/// vagy összérték.
+/// után, a mostani áron. A vétel új pénzként növeli, az eladás csökkenti az
+/// összértéket – ha a nyilvántartott készpénzből megy ([cash]: a kereskedés pénznemében
+/// lévő egyenleg), a vétel csak a készpénzen felüli részével növeli, az eladás nem
+/// változtat rajta (a bevétel a készpénzbe kerül). Új pozíciónál a [price] és a
+/// [currency] kell (az árfolyam egy azonos pénznemű sorból vagy az összesítés
+/// pénzneméből). `null`, ha nincs ár, árfolyam vagy összérték, vagy a birtokolt
+/// részvénynek most nincs ára (a mostani súlya nem ismert).
 ({double before, double after})? weightChange(
   PortfolioSnapshot s,
   String symbol,
@@ -314,8 +317,10 @@ typedef RebalanceStep = ({String symbol, double current, double target, double a
   required bool sell,
   double? price,
   required String currency,
+  double? cash,
 }) {
   final row = s.rows.where((r) => r.position.symbol == symbol.toUpperCase()).firstOrNull;
+  if (row != null && row.price == null) return null;
   final px = row?.price ?? price;
   final rate =
       row?.rate ??
@@ -323,7 +328,11 @@ typedef RebalanceStep = ({String symbol, double current, double target, double a
   if (px == null || px <= 0 || rate == null || s.totalValue <= 0) return null;
   final now = (row?.value ?? 0) * rate;
   final delta = quantity * px * rate * (sell ? -1 : 1);
-  final total = s.totalValue + delta;
+  final total = switch (cash) {
+    null => s.totalValue + delta,
+    _ when sell => s.totalValue,
+    final c => s.totalValue + math.max(0.0, delta - c * rate),
+  };
   if (total <= 0) return null;
   return (before: now / s.totalValue * 100, after: ((now + delta) / total * 100).clamp(0, 100).toDouble());
 }

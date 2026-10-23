@@ -17,6 +17,7 @@ import 'package:reszveny/features/portfolio/add_lot_dialog.dart';
 import 'package:reszveny/features/portfolio/portfolio_page.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/portfolio/position_card.dart' show heldFor;
+import 'package:reszveny/widgets/date_picker_row.dart';
 import 'package:reszveny/features/portfolio/portfolio_valuation.dart';
 
 import 'app_widget_test.dart' show services;
@@ -1403,6 +1404,9 @@ void main() {
     // Hónap végén: jan. 31-től febr. 28-ig még nem telt el egy hónap.
     expect(heldFor(DateTime(2025, 1, 31), DateTime(2025, 2, 28)), (years: 0, months: 0, days: 28));
     expect(heldFor(DateTime(2025, 10, 23, 18), DateTime(2025, 10, 23, 9)), (years: 0, months: 0, days: 0));
+    // Az óraátállítás hetében is teljes napok; jövőbeli dátumnál nem negatív.
+    expect(heldFor(DateTime(2026, 3, 25), DateTime(2026, 3, 30)), (years: 0, months: 0, days: 5));
+    expect(heldFor(DateTime(2026, 4, 10), DateTime(2026, 3, 30)), (years: 0, months: 0, days: 0));
   });
 
   testWidgets('my position card: how long the oldest shares still held have been owned', (tester) async {
@@ -1484,5 +1488,22 @@ void main() {
     await tester.pumpAndSettle();
     expect(s.portfolio.cash['USD'], 2999);
     expect(s.portfolio.positionOf('AAPL')!.quantity, 11);
+    // Egy régebbi tétel pótlása alapból nem változtat a mai egyenlegen.
+    await tester.tap(find.byTooltip('Add to portfolio'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byType(DatePickerRow));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byTooltip('Switch to input'));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField).last, '01/15/2025');
+    await tester.tap(find.text('OK'));
+    await tester.pumpAndSettle();
+    expect(tester.widget<CheckboxListTile>(find.byKey(const ValueKey('lot-cash'))).value, isFalse);
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '1');
+    await tester.enterText(find.byKey(const ValueKey('lot-price')), '150');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.cash['USD'], 2999);
+    expect(s.portfolio.positionOf('AAPL')!.quantity, 12);
   });
 }

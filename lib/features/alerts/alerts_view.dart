@@ -617,8 +617,11 @@ class _ActiveAlertsState extends State<_ActiveAlerts> {
         final prices = snap.data ?? const <String, double>{};
         // A kioldáshoz legközelebbi elöl (ár nélkül és a napi mozgás riasztás a végén, a
         // mostani sorrendben – a rendezés stabil).
-        double distance(PriceAlert a) =>
-            (prices[a.symbol] == null ? null : a.distancePercent(prices[a.symbol]!))?.abs() ?? double.infinity;
+        // A már túllépett szint (a következő ellenőrzés jelez) a legközelebbi: 0.
+        double distance(PriceAlert a) => switch (prices[a.symbol]) {
+          final px? when a.kind != AlertKind.move => a.distancePercent(px)?.abs() ?? 0,
+          _ => double.infinity,
+        };
         final order = {for (final (i, a) in widget.alerts.indexed) a.id: i};
         final sorted = [...widget.alerts]
           ..sort(

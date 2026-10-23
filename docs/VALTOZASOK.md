@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.229)
+# Változásjegyzék (0.2.130 → 0.2.230)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -192,6 +192,10 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **Akadálymentesség**: a keresőmező küldés-gombja nevet kapott a képernyőolvasónak; új teszt ellenőrzi, hogy a fő
   oldalakon (kezdőlap, portfólió, riasztások, beállítások, kedvencek, részvény oldal) minden koppintható elemnek van neve.
 
+- **Javítások egy második kódátnézés nyomán** (vétel/eladás dialógus): a súly-előnézet számol a készpénzből fizetéssel
+  és a felaprózással; egy korábbi napra pótolt tétel alapból nem változtat a mai készpénzen; dupla koppintásra sem
+  kerül be kétszer; a készpénz a mentéskori egyenlegből változik; a tartási idő az óraátállítás hetében is pontos; a
+  már túllépett szintű riasztás a lista elején.
 - Holland nyelven az RSI-jelzés „oververkocht / overgekocht” (eddig angolul maradt).
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven

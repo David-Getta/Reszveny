@@ -299,11 +299,13 @@ void main() {
     final far = await s.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 300, currency: 'USD');
     final near = await s.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 240, currency: 'USD');
     final move = await s.alerts.add(symbol: 'AAPL', kind: AlertKind.move, value: 5);
+    // A demó ár (231,45) már 230 fölött: a következő ellenőrzés jelez, így ez a legközelebbi.
+    final past = await s.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 230, currency: 'USD');
     await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Price alerts').first);
     await tester.pumpAndSettle();
     final order = [for (final e in find.byType(AlertTile).evaluate()) (e.widget as AlertTile).alert.id];
-    expect(order, [near.id, far.id, move.id]);
+    expect(order, [past.id, near.id, far.id, move.id]);
   });
 }
