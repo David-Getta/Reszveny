@@ -65,14 +65,19 @@ class _PortfolioSnapshotBuilderState extends State<PortfolioSnapshotBuilder> {
         final key = '$currency|${services.portfolio.holdingsKey}|$cash|${account ?? ''}';
         if (key != _key) {
           _key = key;
-          _future = PortfolioSnapshot.load(
-            positions,
-            marketData: services.marketData,
-            fx: services.fx,
-            currency: currency,
-            closed: services.portfolio.closedIn(account),
-            cash: cash,
-          ).then((s) => _last[account] = s);
+          _future =
+              PortfolioSnapshot.load(
+                positions,
+                marketData: services.marketData,
+                fx: services.fx,
+                currency: currency,
+                closed: services.portfolio.closedIn(account),
+                cash: cash,
+              ).then((s) {
+                // Egy közben elavult (lassabb, régebbi) lekérés nem írja felül az újabbat.
+                if (_key == key) _last[account] = s;
+                return s;
+              });
         }
         // A FutureBuilder az új lekérés alatt az előzőt (akár másik számláét) tartaná meg.
         return FutureBuilder<PortfolioSnapshot>(
@@ -545,7 +550,9 @@ class _AllocationCardState extends State<AllocationCard> {
         sums.update(e.key ?? noAccount, (v) => v + w, ifAbsent: () => w);
       }
     }
-    return _withCash([for (final e in sums.entries) (label: e.key, weight: e.value)]);
+    return _withCash(
+      [for (final e in sums.entries) (label: e.key, weight: e.value)]..sort((a, b) => b.weight.compareTo(a.weight)),
+    );
   }
 
   AllocationBy _by = AllocationBy.positions;
@@ -1174,7 +1181,11 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
           // Számla-nézetben csak annak a számlának a tranzakciói (az eladás is oda kerül).
           final lots = services.portfolio.adjustedLotsIn(account).where((l) => l.symbol == position.symbol).toList()
             ..sort((a, b) => (b.date ?? DateTime(0)).compareTo(a.date ?? DateTime(0)));
-          final now = Position(symbol: position.symbol, currency: position.currency, lots: lots);
+          // A pozíció a tárolóból (számla-nézetben a teljes FIFO számlára eső része), hogy a
+          // lap ugyanazt a darabszámot mutassa, mint az oldal.
+          final now =
+              services.portfolio.positionIn(position.symbol, account) ??
+              Position(symbol: position.symbol, currency: position.currency, lots: const []);
           // „Törölve · Visszavonás” sor a legutóbb törölt tételhez ([name]: a kulcsok előtagja).
           Widget undoRow(String name, String text, VoidCallback onUndo) => Padding(
             key: ValueKey('$name-removed'),

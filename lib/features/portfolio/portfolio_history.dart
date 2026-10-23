@@ -123,9 +123,11 @@ BenchmarkComparison? benchmarkComparison(
     // A díjjal együtt (a vétel többe került, az eladás kevesebbet hozott).
     final amount = l.cost * r;
     final at = indexAt(day(l.date ?? first));
-    if (amount <= 0 || at <= 0) continue;
+    if (at <= 0) continue;
+    // A darabszám akkor is változik, ha a díj elviszi az eladás teljes bevételét.
     held[l.symbol] = (held[l.symbol] ?? 0) + l.signedQuantity;
     lastValue[l.symbol] = pts.last.close * r;
+    if (amount <= 0) continue;
     if (l.sell) {
       cash += amount;
       units -= amount / at;

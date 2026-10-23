@@ -242,6 +242,54 @@ void main() {
       expect(s.cost, 750);
     });
 
+    test('a sale without shares on its own account uses the other accounts (older data)', () async {
+      SharedPreferences.setMockInitialValues({});
+      // Régebbi app: a TBSZ-es vétel eladása számla nélkül került rögzítésre.
+      final store = PortfolioStore(
+        lots: [
+          PortfolioLot(
+            id: 'b',
+            symbol: 'AAPL',
+            quantity: 10,
+            price: 100,
+            currency: 'USD',
+            date: DateTime(2024, 1, 2),
+            account: 'TBSZ',
+          ),
+          PortfolioLot(
+            id: 'c',
+            symbol: 'AAPL',
+            quantity: 5,
+            price: 120,
+            currency: 'USD',
+            date: DateTime(2025, 1, 2),
+            account: 'tbsz',
+          ),
+          PortfolioLot(
+            id: 's',
+            symbol: 'AAPL',
+            quantity: 10,
+            price: 150,
+            currency: 'USD',
+            date: DateTime(2025, 6, 2),
+            sell: true,
+          ),
+        ],
+      );
+      // A Minden számla nézet: 5 darab maradt (15 − 10), a nyereség 10 × 50.
+      final all = store.positionOf('AAPL')!;
+      expect((all.quantity, all.realizedGain), (5.0, 500.0));
+      expect(all.sales.single.account, isNull);
+      // A számla-nézetek a teljes FIFO-ból: a TBSZ tételei fogytak el, a „tbsz” 5 darabja maradt.
+      expect(store.positionsIn('TBSZ'), isEmpty);
+      expect(store.closedIn('TBSZ').single.realizedGain, 0);
+      expect(store.positionsIn('tbsz').single.quantity, 5);
+      expect(store.heldByAccount('AAPL'), {'tbsz': 5.0});
+      // A pontosan egyező, régebbi írásmód marad (nem kerül át a „TBSZ”-re).
+      expect(store.canonicalAccount('tbsz'), 'tbsz');
+      expect(store.canonicalAccount('Tbsz'), 'TBSZ');
+    });
+
     test('fees: added to the cost of a purchase, deducted from the proceeds of a sale', () async {
       SharedPreferences.setMockInitialValues({});
       final store = PortfolioStore();
