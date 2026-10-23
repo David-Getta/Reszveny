@@ -2859,6 +2859,14 @@ class AppLocalizationsRn extends AppLocalizations {
       'Hari ivyasabwe vyinshi cane mu kanya gato. Rindira umunota umwe maze usubire ugerageze.';
 
   @override
+  String get watchListNameTaken => 'Hari urutonde rufise iri zina.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Ushobora kugira intonde zigera kuri $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

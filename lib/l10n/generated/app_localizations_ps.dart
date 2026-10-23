@@ -2840,6 +2840,14 @@ class AppLocalizationsPs extends AppLocalizations {
       'په لنډ وخت کې ډېرې غوښتنې. مهرباني وکړئ یوه دقیقه انتظار وکړئ او بیا هڅه وکړئ.';
 
   @override
+  String get watchListNameTaken => 'په دې نوم یو لېست له مخکې شته.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'تاسو تر $max پورې لېستونه لرلی شئ.';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

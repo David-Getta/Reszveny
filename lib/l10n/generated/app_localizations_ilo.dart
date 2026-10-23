@@ -2870,6 +2870,15 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Adu unay ti request iti ababa a tiempo. Pangngaasim ta agurayka iti maysa a minuto ket padasem manen.';
 
   @override
+  String get watchListNameTaken =>
+      'Addan ti listaan nga addaan iti daytoy a nagan.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Mabalinmo ti agaddaan agingga iti $max a listaan.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

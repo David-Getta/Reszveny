@@ -2895,6 +2895,14 @@ class AppLocalizationsLv extends AppLocalizations {
       'Pārāk daudz pieprasījumu īsā laikā. Lūdzu, uzgaidiet minūti un mēģiniet vēlreiz.';
 
   @override
+  String get watchListNameTaken => 'Saraksts ar šādu nosaukumu jau pastāv.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Varat izveidot līdz $max sarakstiem.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

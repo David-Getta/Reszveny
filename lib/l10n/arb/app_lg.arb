@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Omuwendo gw'emigabo gyo kati guli {value}.",
   "errAiTruncated": "Okwekenneenya kusaliddwako nga tekunnaggwa. Gezaako nate – tekukozesezza ku ky'okkirizibwa.",
   "errImageUnsupported": "Ekifaananyi kino tekisobola kusomebwa. Kitereke nga JPEG oba PNG oddemu ogezeeko.",
-  "errRateLimited": "Okusaba kungi nnyo mu kaseera katono. Lindako eddakiika emu oddemu ogezeeko."
+  "errRateLimited": "Okusaba kungi nnyo mu kaseera katono. Lindako eddakiika emu oddemu ogezeeko.",
+  "watchListNameTaken": "Waliwo dda olukalala olulina erinnya lino.",
+  "watchListLimit": "Osobola okuba n'enkalala okutuuka ku {max}."
 }

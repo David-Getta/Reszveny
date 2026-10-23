@@ -2851,6 +2851,14 @@ class AppLocalizationsSw extends AppLocalizations {
       'Maombi mengi mno kwa muda mfupi. Tafadhali subiri dakika moja kisha ujaribu tena.';
 
   @override
+  String get watchListNameTaken => 'Tayari kuna orodha yenye jina hili.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Unaweza kuwa na hadi orodha $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

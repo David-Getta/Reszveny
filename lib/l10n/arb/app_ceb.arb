@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Nagkantidad na og {value} ang imong portfolio karon.",
   "errAiTruncated": "Naputol ang pagtuki sa wala pa kini mahuman. Palihug sulayi pag-usab – wala kini makuha gikan sa imong alokasyon.",
   "errImageUnsupported": "Dili mabasa kini nga hulagway. I-save kini isip JPEG o PNG ug sulayi pag-usab.",
-  "errRateLimited": "Daghan kaayong request sa mubong panahon. Palihug paghulat og usa ka minuto ug sulayi pag-usab."
+  "errRateLimited": "Daghan kaayong request sa mubong panahon. Palihug paghulat og usa ka minuto ug sulayi pag-usab.",
+  "watchListNameTaken": "Aduna nay lista nga kini ang ngalan.",
+  "watchListLimit": "Mahimo kang adunay hangtod {max} ka lista."
 }

@@ -2846,6 +2846,14 @@ class AppLocalizationsHi extends AppLocalizations {
       'कम समय में बहुत अधिक अनुरोध भेजे गए। कृपया एक मिनट प्रतीक्षा करें और पुनः प्रयास करें।';
 
   @override
+  String get watchListNameTaken => 'इस नाम की सूची पहले से मौजूद है।';
+
+  @override
+  String watchListLimit(int max) {
+    return 'आप अधिकतम $max सूचियाँ रख सकते हैं।';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

@@ -2855,6 +2855,14 @@ class AppLocalizationsNl extends AppLocalizations {
       'Te veel verzoeken in korte tijd. Wacht een minuut en probeer het opnieuw.';
 
   @override
+  String get watchListNameTaken => 'Er bestaat al een lijst met deze naam.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Je kunt maximaal $max lijsten hebben.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

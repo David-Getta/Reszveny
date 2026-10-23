@@ -2845,6 +2845,14 @@ class AppLocalizationsBm extends AppLocalizations {
       'Ɲininiw ka ca waati surun kɔnɔ. Miniti kelen makɔnɔ ka a kɔrɔbɔ tugun.';
 
   @override
+  String get watchListNameTaken => 'Lisi dɔ bɛ yen kaban ni nin tɔgɔ ye.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'I bɛ se ka lisi $max dɔrɔn de sɔrɔ.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

@@ -2845,6 +2845,14 @@ class AppLocalizationsTt extends AppLocalizations {
       'Кыска вакыт эчендә артык күп сорау җибәрелде. Зинһар, бер минут көтегез һәм кабат тырышып карагыз.';
 
   @override
+  String get watchListNameTaken => 'Мондый исемле исемлек бар инде.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Сезнең иң күбе $max исемлегегез була ала.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

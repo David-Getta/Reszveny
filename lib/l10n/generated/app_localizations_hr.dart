@@ -2898,6 +2898,14 @@ class AppLocalizationsHr extends AppLocalizations {
       'Previše zahtjeva u kratkom vremenu. Pričekajte minutu i pokušajte ponovno.';
 
   @override
+  String get watchListNameTaken => 'Popis s tim nazivom već postoji.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Možete imati najviše $max popisa.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

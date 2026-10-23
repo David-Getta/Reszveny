@@ -2848,6 +2848,14 @@ class AppLocalizationsUr extends AppLocalizations {
       'کم وقت میں بہت زیادہ درخواستیں۔ براہ کرم ایک منٹ انتظار کریں اور دوبارہ کوشش کریں۔';
 
   @override
+  String get watchListNameTaken => 'اس نام کی فہرست پہلے سے موجود ہے۔';
+
+  @override
+  String watchListLimit(int max) {
+    return 'آپ زیادہ سے زیادہ $max فہرستیں رکھ سکتے ہیں۔';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

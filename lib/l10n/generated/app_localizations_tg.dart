@@ -2850,6 +2850,14 @@ class AppLocalizationsTg extends AppLocalizations {
       'Дар муддати кӯтоҳ дархостҳо аз ҳад зиёданд. Лутфан, як дақиқа интизор шавед ва бори дигар кӯшиш кунед.';
 
   @override
+  String get watchListNameTaken => 'Рӯйхат бо ин ном аллакай вуҷуд дорад.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Шумо метавонед то $max рӯйхат дошта бошед.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

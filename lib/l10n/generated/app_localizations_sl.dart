@@ -2926,6 +2926,14 @@ class AppLocalizationsSl extends AppLocalizations {
       'Preveč zahtev v kratkem času. Počakajte minuto in poskusite znova.';
 
   @override
+  String get watchListNameTaken => 'Seznam s tem imenom že obstaja.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Največje število seznamov: $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

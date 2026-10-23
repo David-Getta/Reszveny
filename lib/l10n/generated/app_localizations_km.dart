@@ -2826,6 +2826,14 @@ class AppLocalizationsKm extends AppLocalizations {
       'សំណើច្រើនពេកក្នុងរយៈពេលខ្លី។ សូមរង់ចាំមួយនាទី ហើយព្យាយាមម្ដងទៀត។';
 
   @override
+  String get watchListNameTaken => 'មានបញ្ជីដែលមានឈ្មោះនេះរួចហើយ។';
+
+  @override
+  String watchListLimit(int max) {
+    return 'អ្នកអាចមានបញ្ជីបានរហូតដល់ $max។';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

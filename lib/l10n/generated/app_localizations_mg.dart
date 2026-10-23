@@ -2870,6 +2870,14 @@ class AppLocalizationsMg extends AppLocalizations {
       'Be loatra ny fangatahana tao anatin\'ny fotoana fohy. Miandrasa iray minitra azafady ary andramo indray.';
 
   @override
+  String get watchListNameTaken => 'Efa misy lisitra mitondra io anarana io.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Hatramin\'ny lisitra $max no azonao ananana.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

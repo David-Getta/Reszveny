@@ -2852,6 +2852,14 @@ class AppLocalizationsUz extends AppLocalizations {
       'Qisqa vaqt ichida juda koʻp soʻrov yuborildi. Bir daqiqa kuting va qaytadan urinib koʻring.';
 
   @override
+  String get watchListNameTaken => 'Bu nomdagi roʻyxat allaqachon mavjud.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Koʻpi bilan $max ta roʻyxatingiz boʻlishi mumkin.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

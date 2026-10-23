@@ -2848,6 +2848,14 @@ class AppLocalizationsTr extends AppLocalizations {
       'Kısa sürede çok fazla istek gönderildi. Lütfen bir dakika bekleyip tekrar deneyin.';
 
   @override
+  String get watchListNameTaken => 'Bu adda bir liste zaten var.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'En fazla $max listeniz olabilir.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

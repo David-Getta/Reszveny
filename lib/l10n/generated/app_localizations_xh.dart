@@ -2862,6 +2862,14 @@ class AppLocalizationsXh extends AppLocalizations {
       'Zininzi kakhulu izicelo ngexesha elifutshane. Nceda ulinde umzuzu uze uzame kwakhona.';
 
   @override
+  String get watchListNameTaken => 'Sele lukhona uluhlu olunaleli gama.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Ungaba nezintlu ezingafikelela kwi-$max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

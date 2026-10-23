@@ -2845,6 +2845,14 @@ class AppLocalizationsYo extends AppLocalizations {
       'Ìbéèrè ti pọ̀ jù láàárín àkókò kúkúrú. Jọ̀ọ́ dúró fún ìṣẹ́jú kan kí o sì tún gbìyànjú.';
 
   @override
+  String get watchListNameTaken => 'Àkójọ tí ó ní orúkọ yìí ti wà tẹ́lẹ̀.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'O lè ní àkójọ tó tó $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

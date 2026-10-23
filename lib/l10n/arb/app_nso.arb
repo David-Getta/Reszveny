@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Boleng bja photefolio ya gago bjale ke {value}.",
   "errAiTruncated": "Tshekatsheko e kgaogile pele e fela. Hle leka gape – ga e a šomiša kabelo ya gago.",
   "errImageUnsupported": "Seswantšho se ga se balege. Se boloke bjalo ka JPEG goba PNG gomme o leke gape.",
-  "errRateLimited": "Dikgopelo tše dintši kudu ka nako ye kopana. Hle leta motsotso gomme o leke gape."
+  "errRateLimited": "Dikgopelo tše dintši kudu ka nako ye kopana. Hle leta motsotso gomme o leke gape.",
+  "watchListNameTaken": "Go šetše go na le lenaneo leo le nago le leina le.",
+  "watchListLimit": "O ka ba le mananeo a sa fetego {max}."
 }

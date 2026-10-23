@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Nirxa portfolyoya te niha {value} e.",
   "errAiTruncated": "Analîz berî ku biqede qut bû. Ji kerema xwe dîsa biceribîne – ji mafê te nehat kêmkirin.",
   "errImageUnsupported": "Ev wêne nayê xwendin. Wê wek JPEG an PNG tomar bike û dîsa biceribîne.",
-  "errRateLimited": "Di demeke kurt de gelek daxwaz hatin şandin. Ji kerema xwe deqeyekê bisekine û dîsa biceribîne."
+  "errRateLimited": "Di demeke kurt de gelek daxwaz hatin şandin. Ji kerema xwe deqeyekê bisekine û dîsa biceribîne.",
+  "watchListNameTaken": "Lîsteyek bi vî navî jixwe heye.",
+  "watchListLimit": "Tu dikarî herî zêde {max} lîsteyan çêkî."
 }

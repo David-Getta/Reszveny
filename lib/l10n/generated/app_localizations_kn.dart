@@ -2855,6 +2855,14 @@ class AppLocalizationsKn extends AppLocalizations {
       'ಕಡಿಮೆ ಸಮಯದಲ್ಲಿ ಹಲವಾರು ವಿನಂತಿಗಳು ಬಂದಿವೆ. ದಯವಿಟ್ಟು ಒಂದು ನಿಮಿಷ ಕಾಯಿರಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
 
   @override
+  String get watchListNameTaken => 'ಈ ಹೆಸರಿನ ಪಟ್ಟಿ ಈಗಾಗಲೇ ಇದೆ.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'ನೀವು ಗರಿಷ್ಠ $max ಪಟ್ಟಿಗಳನ್ನು ಹೊಂದಬಹುದು.';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

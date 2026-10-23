@@ -2920,6 +2920,14 @@ class AppLocalizationsAr extends AppLocalizations {
       'طلبات كثيرة جداً خلال وقت قصير. يرجى الانتظار دقيقة ثم المحاولة مرة أخرى.';
 
   @override
+  String get watchListNameTaken => 'توجد قائمة بهذا الاسم بالفعل.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'يمكنك إنشاء ما يصل إلى $max قائمة.';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

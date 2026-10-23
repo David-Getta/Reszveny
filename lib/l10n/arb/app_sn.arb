@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Potiforiyo yako yava kukosha {value}.",
   "errAiTruncated": "Ongororo yakadimburwa isati yapera. Ndapota edza zvakare – haina kushandisa mwero wako.",
   "errImageUnsupported": "Mufananidzo uyu haugone kuverengwa. Uchengete se JPEG kana PNG wobva waedza zvakare.",
-  "errRateLimited": "Zvikumbiro zvawandisa munguva pfupi. Ndapota mira miniti imwe wobva waedza zvakare."
+  "errRateLimited": "Zvikumbiro zvawandisa munguva pfupi. Ndapota mira miniti imwe wobva waedza zvakare.",
+  "watchListNameTaken": "Rondedzero rine zita iri ratovepo.",
+  "watchListLimit": "Unogona kuva nemarondedzero anosvika {max}."
 }

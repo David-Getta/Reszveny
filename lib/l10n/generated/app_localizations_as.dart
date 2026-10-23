@@ -2847,6 +2847,14 @@ class AppLocalizationsAs extends AppLocalizations {
       'কম সময়ৰ ভিতৰত অত্যধিক অনুৰোধ পঠোৱা হৈছে। অনুগ্ৰহ কৰি এক মিনিট অপেক্ষা কৰি পুনৰ চেষ্টা কৰক।';
 
   @override
+  String get watchListNameTaken => 'এই নামৰ এখন তালিকা ইতিমধ্যে আছে।';
+
+  @override
+  String watchListLimit(int max) {
+    return 'আপুনি সৰ্বাধিক $maxখন তালিকা ৰাখিব পাৰে।';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

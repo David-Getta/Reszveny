@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Portföyünüzün değeri artık {value}.",
   "errAiTruncated": "Analiz tamamlanmadan kesildi. Lütfen tekrar deneyin – hakkınızdan düşülmedi.",
   "errImageUnsupported": "Bu görsel okunamıyor. JPEG veya PNG olarak kaydedip tekrar deneyin.",
-  "errRateLimited": "Kısa sürede çok fazla istek gönderildi. Lütfen bir dakika bekleyip tekrar deneyin."
+  "errRateLimited": "Kısa sürede çok fazla istek gönderildi. Lütfen bir dakika bekleyip tekrar deneyin.",
+  "watchListNameTaken": "Bu adda bir liste zaten var.",
+  "watchListLimit": "En fazla {max} listeniz olabilir."
 }

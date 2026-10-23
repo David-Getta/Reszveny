@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Salkkusi arvo on nyt {value}.",
   "errAiTruncated": "Analyysi katkesi ennen kuin se valmistui. Yritä uudelleen – se ei kuluttanut kiintiötäsi.",
   "errImageUnsupported": "Kuvaa ei voi lukea. Tallenna se JPEG- tai PNG-muodossa ja yritä uudelleen.",
-  "errRateLimited": "Liian monta pyyntöä lyhyessä ajassa. Odota minuutti ja yritä uudelleen."
+  "errRateLimited": "Liian monta pyyntöä lyhyessä ajassa. Odota minuutti ja yritä uudelleen.",
+  "watchListNameTaken": "Samanniminen lista on jo olemassa.",
+  "watchListLimit": "Voit luoda enintään {max} listaa."
 }

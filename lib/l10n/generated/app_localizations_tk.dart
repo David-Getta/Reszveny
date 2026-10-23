@@ -2850,6 +2850,14 @@ class AppLocalizationsTk extends AppLocalizations {
       'Gysga wagtda gaty köp haýyş iberildi. Bir minut garaşyň we gaýtadan synanyşyň.';
 
   @override
+  String get watchListNameTaken => 'Bu atly sanaw eýýäm bar.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Iň köp $max sanawyňyz bolup biler.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

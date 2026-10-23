@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "你的投資組合市值已達 {value}。",
   "errAiTruncated": "分析未完成便被截斷。請再試一次，今次未有扣除你的配額。",
   "errImageUnsupported": "無法讀取這張圖片。請將其儲存為 JPEG 或 PNG 格式後再試一次。",
-  "errRateLimited": "短時間內請求過多。請稍等一分鐘後再試一次。"
+  "errRateLimited": "短時間內請求過多。請稍等一分鐘後再試一次。",
+  "watchListNameTaken": "已有同名清單。",
+  "watchListLimit": "最多可建立 {max} 個清單。"
 }

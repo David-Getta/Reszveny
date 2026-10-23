@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Votre portefeuille vaut désormais {value}.",
   "errAiTruncated": "L’analyse a été interrompue avant la fin. Veuillez réessayer – elle n’a pas été décomptée de votre quota.",
   "errImageUnsupported": "Impossible de lire cette image. Enregistrez-la au format JPEG ou PNG et réessayez.",
-  "errRateLimited": "Trop de requêtes en peu de temps. Veuillez patienter une minute et réessayer."
+  "errRateLimited": "Trop de requêtes en peu de temps. Veuillez patienter une minute et réessayer.",
+  "watchListNameTaken": "Une liste porte déjà ce nom.",
+  "watchListLimit": "Vous pouvez avoir jusqu’à {max} listes."
 }

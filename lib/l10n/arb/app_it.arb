@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Il tuo portafoglio ora vale {value}.",
   "errAiTruncated": "L’analisi si è interrotta prima di essere completata. Riprova – non è stata scalata dalla tua quota.",
   "errImageUnsupported": "Impossibile leggere questa immagine. Salvala come JPEG o PNG e riprova.",
-  "errRateLimited": "Troppe richieste in poco tempo. Attendi un minuto e riprova."
+  "errRateLimited": "Troppe richieste in poco tempo. Attendi un minuto e riprova.",
+  "watchListNameTaken": "Esiste già una lista con questo nome.",
+  "watchListLimit": "Puoi avere fino a {max} liste."
 }

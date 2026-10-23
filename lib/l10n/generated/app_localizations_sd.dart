@@ -2839,6 +2839,14 @@ class AppLocalizationsSd extends AppLocalizations {
       'ٿوري وقت ۾ تمام گهڻيون درخواستون. مهرباني ڪري هڪ منٽ انتظار ڪريو ۽ ٻيهر ڪوشش ڪريو.';
 
   @override
+  String get watchListNameTaken => 'هن نالي سان فهرست اڳ ۾ ئي موجود آهي.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'توهان وڌ ۾ وڌ $max فهرستون رکي سگهو ٿا.';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

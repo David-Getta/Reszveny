@@ -2845,6 +2845,14 @@ class AppLocalizationsSi extends AppLocalizations {
       'කෙටි කාලයක් තුළ ඉල්ලීම් වැඩිය. කරුණාකර මිනිත්තුවක් රැඳී සිට නැවත උත්සාහ කරන්න.';
 
   @override
+  String get watchListNameTaken => 'මෙම නමින් ලැයිස්තුවක් දැනටමත් පවතී.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'ඔබට උපරිම ලැයිස්තු $maxක් තබා ගත හැක.';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

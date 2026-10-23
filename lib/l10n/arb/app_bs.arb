@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Vaš portfolio sada vrijedi {value}.",
   "errAiTruncated": "Analiza je prekinuta prije nego što je završena. Pokušajte ponovo – nije potrošena vaša kvota.",
   "errImageUnsupported": "Ova slika se ne može pročitati. Sačuvajte je kao JPEG ili PNG i pokušajte ponovo.",
-  "errRateLimited": "Previše zahtjeva u kratkom vremenu. Sačekajte minutu i pokušajte ponovo."
+  "errRateLimited": "Previše zahtjeva u kratkom vremenu. Sačekajte minutu i pokušajte ponovo.",
+  "watchListNameTaken": "Lista s ovim nazivom već postoji.",
+  "watchListLimit": "Možete imati najviše {max} lista."
 }

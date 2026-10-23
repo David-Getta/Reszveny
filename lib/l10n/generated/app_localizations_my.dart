@@ -2841,6 +2841,14 @@ class AppLocalizationsMy extends AppLocalizations {
       'အချိန်တိုအတွင်း တောင်းဆိုမှု များလွန်းနေသည်။ တစ်မိနစ်ခန့် စောင့်ပြီး ထပ်စမ်းကြည့်ပါ။';
 
   @override
+  String get watchListNameTaken => 'ဤအမည်ဖြင့် စာရင်းတစ်ခု ရှိပြီးသားဖြစ်သည်။';
+
+  @override
+  String watchListLimit(int max) {
+    return 'စာရင်း အများဆုံး $max ခုအထိ ထားနိုင်သည်။';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

@@ -2860,6 +2860,15 @@ class AppLocalizationsKg extends AppLocalizations {
       'Tulombele mbala mingi na ntangu fioti. Vingila minuti mosi, bosi meka diaka.';
 
   @override
+  String get watchListNameTaken =>
+      'Lisiti mosi ya kele ti zina yai kele dezia.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Nge lenda vanda ti ba lisiti tii $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

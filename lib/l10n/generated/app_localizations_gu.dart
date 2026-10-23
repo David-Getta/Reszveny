@@ -2843,6 +2843,14 @@ class AppLocalizationsGu extends AppLocalizations {
       'ટૂંકા સમયમાં ઘણી બધી વિનંતીઓ મોકલાઈ. કૃપા કરીને એક મિનિટ રાહ જુઓ અને ફરી પ્રયાસ કરો.';
 
   @override
+  String get watchListNameTaken => 'આ નામની યાદી પહેલેથી અસ્તિત્વમાં છે.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'તમે વધુમાં વધુ $max યાદીઓ રાખી શકો છો.';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

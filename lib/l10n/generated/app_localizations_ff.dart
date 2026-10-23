@@ -2845,6 +2845,14 @@ class AppLocalizationsFf extends AppLocalizations {
       'Ɗaɓɓitanɗe keewii e sahaa seeɗa. Tiiɗno muñ hojom gooto refti eto goɗngol.';
 
   @override
+  String get watchListNameTaken => 'Doggol jogiingol innde nde ena woodi gila.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Aɗa waawi jogaade doggi haa $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

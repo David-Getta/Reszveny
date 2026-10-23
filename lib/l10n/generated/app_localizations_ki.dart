@@ -2851,6 +2851,14 @@ class AppLocalizationsKi extends AppLocalizations {
       'Mahoya maingĩ mũno ihinda inini. Etereera ndagĩka ĩmwe ũcooke ũgerie rĩngĩ.';
 
   @override
+  String get watchListNameTaken => 'Orodha ĩrĩ na rĩĩtwa rĩrĩ nĩ ĩrĩ kuo.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Ũngĩkorwo na orodha nginya $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

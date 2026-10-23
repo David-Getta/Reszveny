@@ -2863,6 +2863,14 @@ class AppLocalizationsZu extends AppLocalizations {
       'Izicelo eziningi kakhulu esikhathini esifushane. Sicela ulinde umzuzu bese uzama futhi.';
 
   @override
+  String get watchListNameTaken => 'Uhlu olunaleli gama selukhona.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Ungaba nezinhlu ezingafika ku-$max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

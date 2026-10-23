@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Pòtfèy ou vo {value} kounye a.",
   "errAiTruncated": "Analiz la koupe anvan li te fini. Tanpri eseye ankò – li pa t konte nan kota ou.",
   "errImageUnsupported": "Nou pa ka li imaj sa a. Anrejistre l an JPEG oswa PNG epi eseye ankò.",
-  "errRateLimited": "Twòp demann nan yon ti tan. Tanpri tann yon minit epi eseye ankò."
+  "errRateLimited": "Twòp demann nan yon ti tan. Tanpri tann yon minit epi eseye ankò.",
+  "watchListNameTaken": "Gen yon lis ki gen non sa a deja.",
+  "watchListLimit": "Ou ka gen jiska {max} lis."
 }

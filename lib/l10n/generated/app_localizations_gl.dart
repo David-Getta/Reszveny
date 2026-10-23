@@ -2873,6 +2873,14 @@ class AppLocalizationsGl extends AppLocalizations {
       'Demasiadas solicitudes en pouco tempo. Agarda un minuto e téntao de novo.';
 
   @override
+  String get watchListNameTaken => 'Xa existe unha lista con este nome.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Podes ter ata $max listas.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

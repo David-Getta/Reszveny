@@ -2861,6 +2861,14 @@ class AppLocalizationsLua extends AppLocalizations {
       'Malomba a bungi mu tshikondo tshikese. Indila minite umue, pashishe teta kabidi.';
 
   @override
+  String get watchListNameTaken => 'Kudi kale liste ne dîna edi.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Udi mua kuenza liste too ne $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

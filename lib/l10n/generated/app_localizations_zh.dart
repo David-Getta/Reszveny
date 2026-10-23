@@ -2724,6 +2724,14 @@ class AppLocalizationsZh extends AppLocalizations {
   String get errRateLimited => '短时间内请求过多。请稍等一分钟后重试。';
 
   @override
+  String get watchListNameTaken => '已存在同名列表。';
+
+  @override
+  String watchListLimit(int max) {
+    return '最多可创建 $max 个列表。';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5815,6 +5823,14 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get errRateLimited => '短時間內請求過多。請稍等一分鐘後再試一次。';
+
+  @override
+  String get watchListNameTaken => '已有同名清單。';
+
+  @override
+  String watchListLimit(int max) {
+    return '最多可建立 $max 個清單。';
+  }
 
   @override
   String get portfolioGoalSet => '設定目標';

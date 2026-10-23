@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Fifia la, wò akpawo ƒe asi nye {value}.",
   "errAiTruncated": "Numekuku la tso le titina hafi wòwu enu. Taflatse, gate kpɔ – mezã wò agbɔsɔsɔ aɖeke o.",
   "errImageUnsupported": "Womate ŋu xlẽ nɔnɔmetata sia o. Dzrae ɖo abe JPEG alo PNG ene eye nàgate kpɔ.",
-  "errRateLimited": "Biabia geɖe akpa le ɣeyiɣi kpui aɖe me. Taflatse, lala miniti ɖeka eye nàgate kpɔ."
+  "errRateLimited": "Biabia geɖe akpa le ɣeyiɣi kpui aɖe me. Taflatse, lala miniti ɖeka eye nàgate kpɔ.",
+  "watchListNameTaken": "Xexlẽdzesi si ƒe ŋkɔe nye esia li xoxo.",
+  "watchListLimit": "Àte ŋu akpɔ xexlẽdzesiwo va se ɖe {max}."
 }

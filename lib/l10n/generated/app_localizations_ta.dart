@@ -2860,6 +2860,15 @@ class AppLocalizationsTa extends AppLocalizations {
       'குறுகிய நேரத்தில் அதிகக் கோரிக்கைகள். ஒரு நிமிடம் காத்திருந்து மீண்டும் முயற்சிக்கவும்.';
 
   @override
+  String get watchListNameTaken =>
+      'இந்தப் பெயரில் ஏற்கெனவே ஒரு பட்டியல் உள்ளது.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'அதிகபட்சம் $max பட்டியல்கள் வரை வைத்திருக்கலாம்.';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Din portefølje er nu {value} værd.",
   "errAiTruncated": "Analysen blev afbrudt, før den var færdig. Prøv igen – den har ikke brugt af din kvote.",
   "errImageUnsupported": "Billedet kan ikke læses. Gem det som JPEG eller PNG, og prøv igen.",
-  "errRateLimited": "For mange forespørgsler på kort tid. Vent et minut, og prøv igen."
+  "errRateLimited": "For mange forespørgsler på kort tid. Vent et minut, og prøv igen.",
+  "watchListNameTaken": "Der findes allerede en liste med dette navn.",
+  "watchListLimit": "Du kan have op til {max} lister."
 }

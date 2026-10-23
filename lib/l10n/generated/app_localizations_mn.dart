@@ -2848,6 +2848,14 @@ class AppLocalizationsMn extends AppLocalizations {
       'Богино хугацаанд хэт олон хүсэлт илгээлээ. Нэг минут хүлээгээд дахин оролдоно уу.';
 
   @override
+  String get watchListNameTaken => 'Ийм нэртэй жагсаалт аль хэдийн байна.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Та хамгийн ихдээ $max жагсаалттай байж болно.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

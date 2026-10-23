@@ -2839,6 +2839,14 @@ class AppLocalizationsVi extends AppLocalizations {
       'Quá nhiều yêu cầu trong thời gian ngắn. Vui lòng đợi một phút rồi thử lại.';
 
   @override
+  String get watchListNameTaken => 'Đã có danh sách với tên này.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Bạn có thể có tối đa $max danh sách.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

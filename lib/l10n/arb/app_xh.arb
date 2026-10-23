@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Ipotifoliyo yakho ngoku ixabisa {value}.",
   "errAiTruncated": "Uhlalutyo lunqunyulwe lungekagqitywa. Nceda uzame kwakhona – alusebenzisanga umlinganiselo wakho.",
   "errImageUnsupported": "Lo mfanekiso awufundeki. Wugcine njenge-JPEG okanye i-PNG uze uzame kwakhona.",
-  "errRateLimited": "Zininzi kakhulu izicelo ngexesha elifutshane. Nceda ulinde umzuzu uze uzame kwakhona."
+  "errRateLimited": "Zininzi kakhulu izicelo ngexesha elifutshane. Nceda ulinde umzuzu uze uzame kwakhona.",
+  "watchListNameTaken": "Sele lukhona uluhlu olunaleli gama.",
+  "watchListLimit": "Ungaba nezintlu ezingafikelela kwi-{max}."
 }

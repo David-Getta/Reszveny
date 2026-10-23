@@ -2899,6 +2899,14 @@ class AppLocalizationsSr extends AppLocalizations {
       'Превише захтева за кратко време. Сачекајте минут и покушајте поново.';
 
   @override
+  String get watchListNameTaken => 'Листа са овим називом већ постоји.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Највећи број листа је $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

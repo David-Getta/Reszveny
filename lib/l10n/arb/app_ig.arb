@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Ugbu a, uru portfolio gị bụ {value}.",
   "errAiTruncated": "Nyocha ahụ kwụsịrị tupu o mechaa. Biko nwaa ọzọ – e wepụghị ihe ọ bụla n'oke gị.",
   "errImageUnsupported": "Enweghị ike ịgụ onyonyo a. Chekwaa ya dị ka JPEG ma ọ bụ PNG wee nwaa ọzọ.",
-  "errRateLimited": "Arịrịọ dị ukwuu n'ime obere oge. Biko chere otu nkeji wee nwaa ọzọ."
+  "errRateLimited": "Arịrịọ dị ukwuu n'ime obere oge. Biko chere otu nkeji wee nwaa ọzọ.",
+  "watchListNameTaken": "Ndepụta nwere aha a adịlarị.",
+  "watchListLimit": "Ị nwere ike inwe ndepụta ruru {max}."
 }

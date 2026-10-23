@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Ti pateg ti portfoliom ita ket {value}.",
   "errAiTruncated": "Naputed ti panangsukimat sakbay a nalpas. Pangngaasim ta padasem manen – saan a nabawasan ti alokasionmo.",
   "errImageUnsupported": "Saan a mabasa daytoy a ladawan. I-save daytoy kas JPEG wenno PNG ket padasem manen.",
-  "errRateLimited": "Adu unay ti request iti ababa a tiempo. Pangngaasim ta agurayka iti maysa a minuto ket padasem manen."
+  "errRateLimited": "Adu unay ti request iti ababa a tiempo. Pangngaasim ta agurayka iti maysa a minuto ket padasem manen.",
+  "watchListNameTaken": "Addan ti listaan nga addaan iti daytoy a nagan.",
+  "watchListLimit": "Mabalinmo ti agaddaan agingga iti {max} a listaan."
 }

@@ -2849,6 +2849,14 @@ class AppLocalizationsAz extends AppLocalizations {
       'Qısa müddətdə həddindən çox sorğu göndərildi. Bir dəqiqə gözləyin və yenidən cəhd edin.';
 
   @override
+  String get watchListNameTaken => 'Bu adda siyahı artıq mövcuddur.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Ən çoxu $max siyahınız ola bilər.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

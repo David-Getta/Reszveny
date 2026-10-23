@@ -2847,6 +2847,14 @@ class AppLocalizationsHt extends AppLocalizations {
       'Twòp demann nan yon ti tan. Tanpri tann yon minit epi eseye ankò.';
 
   @override
+  String get watchListNameTaken => 'Gen yon lis ki gen non sa a deja.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Ou ka gen jiska $max lis.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

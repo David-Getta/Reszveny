@@ -4824,6 +4824,18 @@ abstract class AppLocalizations {
   /// **'Too many requests in a short time. Please wait a minute and try again.'**
   String get errRateLimited;
 
+  /// Error under the list name field: another of the user's own watch lists already has this name.
+  ///
+  /// In en, this message translates to:
+  /// **'A list with this name already exists.'**
+  String get watchListNameTaken;
+
+  /// Short message when the user tries to create a new watch list but already has the maximum number. {max} is a number like 20.
+  ///
+  /// In en, this message translates to:
+  /// **'You can have up to {max} lists.'**
+  String watchListLimit(int max);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

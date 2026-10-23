@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Ishoramari ryawe ubu rifite agaciro ka {value}.",
   "errAiTruncated": "Isesengura ryaciwe hagati ritarangira. Ongera ugerageze – ntiryakoresheje ingano wemerewe.",
   "errImageUnsupported": "Iyi foto ntishobora gusomwa. Yibike nka JPEG cyangwa PNG maze wongere ugerageze.",
-  "errRateLimited": "Ubusabe bwinshi cyane mu gihe gito. Tegereza umunota umwe maze wongere ugerageze."
+  "errRateLimited": "Ubusabe bwinshi cyane mu gihe gito. Tegereza umunota umwe maze wongere ugerageze.",
+  "watchListNameTaken": "Hari urutonde rufite iri zina.",
+  "watchListLimit": "Ushobora kugira intonde zigera kuri {max}."
 }

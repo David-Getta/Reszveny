@@ -2864,6 +2864,14 @@ class AppLocalizationsLn extends AppLocalizations {
       'Masɛngi ebele na ntango moke. Zela miniti moko mpe meka lisusu.';
 
   @override
+  String get watchListNameTaken => 'Liste moko na nkombo oyo esili kozala.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Okoki kozala na ba liste kino $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

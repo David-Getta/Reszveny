@@ -2846,6 +2846,14 @@ class AppLocalizationsEn extends AppLocalizations {
       'Too many requests in a short time. Please wait a minute and try again.';
 
   @override
+  String get watchListNameTaken => 'A list with this name already exists.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'You can have up to $max lists.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

@@ -123,3 +123,26 @@ String listingSymbol(String symbol, String? exchange) {
   final suffix = _suffixes[key];
   return suffix == null ? s : '$s$suffix';
 }
+
+/// A ticker utótagjából a kereskedés valószínű pénzneme (`OTP.BD` → HUF, `SIE.DE` →
+/// EUR); utótag nélkül (amerikai tőzsde) vagy ismeretlen utótagnál `null`.
+String? currencyForListing(String symbol) {
+  final dot = symbol.lastIndexOf('.');
+  if (dot <= 0) return null;
+  return switch (symbol.substring(dot).toUpperCase()) {
+    '.BD' => 'HUF',
+    '.DE' || '.F' || '.PA' || '.AS' || '.MI' || '.MC' || '.BR' || '.LS' || '.VI' || '.HE' || '.IR' => 'EUR',
+    '.L' => 'GBP',
+    '.SW' => 'CHF',
+    '.ST' => 'SEK',
+    '.OL' => 'NOK',
+    '.CO' => 'DKK',
+    '.WA' => 'PLN',
+    '.PR' => 'CZK',
+    '.TO' || '.V' => 'CAD',
+    '.AX' => 'AUD',
+    '.T' => 'JPY',
+    '.HK' => 'HKD',
+    _ => null,
+  };
+}

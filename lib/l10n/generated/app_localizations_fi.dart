@@ -2850,6 +2850,14 @@ class AppLocalizationsFi extends AppLocalizations {
       'Liian monta pyyntöä lyhyessä ajassa. Odota minuutti ja yritä uudelleen.';
 
   @override
+  String get watchListNameTaken => 'Samanniminen lista on jo olemassa.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Voit luoda enintään $max listaa.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

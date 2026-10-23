@@ -2844,6 +2844,14 @@ class AppLocalizationsOr extends AppLocalizations {
       'ଅଳ୍ପ ସମୟ ମଧ୍ୟରେ ବହୁତ ଅଧିକ ଅନୁରୋଧ। ଦୟାକରି ଏକ ମିନିଟ ଅପେକ୍ଷା କରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
 
   @override
+  String get watchListNameTaken => 'ଏହି ନାମରେ ଏକ ତାଲିକା ପୂର୍ବରୁ ଅଛି।';
+
+  @override
+  String watchListLimit(int max) {
+    return 'ଆପଣ ସର୍ବାଧିକ $maxଟି ତାଲିକା ରଖିପାରିବେ।';
+  }
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

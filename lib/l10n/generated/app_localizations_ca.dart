@@ -2859,6 +2859,14 @@ class AppLocalizationsCa extends AppLocalizations {
       'Massa sol·licituds en poc temps. Espera un minut i torna-ho a provar.';
 
   @override
+  String get watchListNameTaken => 'Ja existeix una llista amb aquest nom.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Pots tenir fins a $max llistes.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

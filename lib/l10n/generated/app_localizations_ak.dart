@@ -2851,6 +2851,14 @@ class AppLocalizationsAk extends AppLocalizations {
       'Abisade dodow dodo wɔ bere tiaa mu. Yɛsrɛ wo, twɛn simma baako na sɔ hwɛ bio.';
 
   @override
+  String get watchListNameTaken => 'Nhyehyɛe a ne din te sɛ yei wɔ hɔ dedaw.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Wubetumi anya nhyehyɛe kosi $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

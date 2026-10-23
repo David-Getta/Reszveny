@@ -2853,6 +2853,14 @@ class AppLocalizationsAf extends AppLocalizations {
       'Te veel versoeke in ’n kort tyd. Wag asseblief ’n minuut en probeer weer.';
 
   @override
+  String get watchListNameTaken => '\'n Lys met hierdie naam bestaan reeds.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Jy kan tot $max lyste hê.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

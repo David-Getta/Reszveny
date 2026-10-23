@@ -2850,6 +2850,14 @@ class AppLocalizationsKy extends AppLocalizations {
       'Кыска убакытта өтө көп суроо-талап жөнөтүлдү. Бир мүнөт күтүп, кайра аракет кылыңыз.';
 
   @override
+  String get watchListNameTaken => 'Мындай аталыштагы тизме мурунтан эле бар.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Эң көп дегенде $max тизме түзө аласыз.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

@@ -2850,6 +2850,14 @@ class AppLocalizationsBg extends AppLocalizations {
       'Твърде много заявки за кратко време. Моля, изчакайте една минута и опитайте отново.';
 
   @override
+  String get watchListNameTaken => 'Вече има списък с това име.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Можете да имате до $max списъка.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

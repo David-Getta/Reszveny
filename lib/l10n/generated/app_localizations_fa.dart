@@ -2845,6 +2845,14 @@ class AppLocalizationsFa extends AppLocalizations {
       'در مدت کوتاهی درخواست‌های زیادی ارسال شده است. لطفاً یک دقیقه صبر کنید و دوباره تلاش کنید.';
 
   @override
+  String get watchListNameTaken => 'فهرستی با این نام از قبل وجود دارد.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'حداکثر می‌توانید $max فهرست داشته باشید.';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

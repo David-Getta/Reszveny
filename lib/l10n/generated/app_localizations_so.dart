@@ -2858,6 +2858,14 @@ class AppLocalizationsSo extends AppLocalizations {
       'Codsiyo aad u badan muddo gaaban gudaheed. Fadlan sug hal daqiiqo oo isku day mar kale.';
 
   @override
+  String get watchListNameTaken => 'Liis magacan leh ayaa horey u jira.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Waxaad yeelan kartaa ilaa $max liis.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

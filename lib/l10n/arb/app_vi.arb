@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Danh mục của bạn hiện có giá trị {value}.",
   "errAiTruncated": "Bài phân tích bị cắt ngang trước khi hoàn tất. Vui lòng thử lại – lượt này không trừ vào hạn mức của bạn.",
   "errImageUnsupported": "Không thể đọc ảnh này. Hãy lưu ảnh dưới dạng JPEG hoặc PNG rồi thử lại.",
-  "errRateLimited": "Quá nhiều yêu cầu trong thời gian ngắn. Vui lòng đợi một phút rồi thử lại."
+  "errRateLimited": "Quá nhiều yêu cầu trong thời gian ngắn. Vui lòng đợi một phút rồi thử lại.",
+  "watchListNameTaken": "Đã có danh sách với tên này.",
+  "watchListLimit": "Bạn có thể có tối đa {max} danh sách."
 }

@@ -2892,6 +2892,14 @@ class AppLocalizationsRo extends AppLocalizations {
       'Prea multe solicitări într-un timp scurt. Așteaptă un minut și încearcă din nou.';
 
   @override
+  String get watchListNameTaken => 'Există deja o listă cu acest nume.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Numărul maxim de liste este $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

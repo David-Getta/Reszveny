@@ -2860,6 +2860,14 @@ class AppLocalizationsNy extends AppLocalizations {
       'Zopempha zambiri kwambiri munthawi yochepa. Chonde dikirani mphindi imodzi ndipo yesaninso.';
 
   @override
+  String get watchListNameTaken => 'Mndandanda wa dzina limeneli ulipo kale.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Mutha kukhala ndi mindandanda yofikira $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

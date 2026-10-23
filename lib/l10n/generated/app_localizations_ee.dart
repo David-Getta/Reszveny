@@ -2855,6 +2855,14 @@ class AppLocalizationsEe extends AppLocalizations {
       'Biabia geɖe akpa le ɣeyiɣi kpui aɖe me. Taflatse, lala miniti ɖeka eye nàgate kpɔ.';
 
   @override
+  String get watchListNameTaken => 'Xexlẽdzesi si ƒe ŋkɔe nye esia li xoxo.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Àte ŋu akpɔ xexlẽdzesiwo va se ɖe $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

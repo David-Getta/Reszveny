@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Portfelinizin dəyəri indi {value} təşkil edir.",
   "errAiTruncated": "Təhlil tamamlanmadan kəsildi. Yenidən cəhd edin – limitinizdən istifadə olunmadı.",
   "errImageUnsupported": "Bu şəkli oxumaq mümkün olmadı. Onu JPEG və ya PNG kimi saxlayın və yenidən cəhd edin.",
-  "errRateLimited": "Qısa müddətdə həddindən çox sorğu göndərildi. Bir dəqiqə gözləyin və yenidən cəhd edin."
+  "errRateLimited": "Qısa müddətdə həddindən çox sorğu göndərildi. Bir dəqiqə gözləyin və yenidən cəhd edin.",
+  "watchListNameTaken": "Bu adda siyahı artıq mövcuddur.",
+  "watchListLimit": "Ən çoxu {max} siyahınız ola bilər."
 }

@@ -2861,6 +2861,14 @@ class AppLocalizationsMl extends AppLocalizations {
       'കുറഞ്ഞ സമയത്തിനുള്ളിൽ വളരെയധികം അഭ്യർത്ഥനകൾ. ഒരു മിനിറ്റ് കാത്തിരുന്ന് വീണ്ടും ശ്രമിക്കുക.';
 
   @override
+  String get watchListNameTaken => 'ഈ പേരിൽ ഒരു ലിസ്റ്റ് ഇതിനകം നിലവിലുണ്ട്.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'നിങ്ങൾക്ക് പരമാവധി $max ലിസ്റ്റുകൾ വരെ ഉണ്ടാകാം.';
+  }
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

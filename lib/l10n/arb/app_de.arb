@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Dein Portfolio ist jetzt {value} wert.",
   "errAiTruncated": "Die Analyse wurde abgebrochen, bevor sie fertig war. Bitte versuche es erneut – dein Kontingent wurde nicht belastet.",
   "errImageUnsupported": "Dieses Bild kann nicht gelesen werden. Speichere es als JPEG oder PNG und versuche es erneut.",
-  "errRateLimited": "Zu viele Anfragen in kurzer Zeit. Bitte warte eine Minute und versuche es erneut."
+  "errRateLimited": "Zu viele Anfragen in kurzer Zeit. Bitte warte eine Minute und versuche es erneut.",
+  "watchListNameTaken": "Es gibt bereits eine Liste mit diesem Namen.",
+  "watchListLimit": "Du kannst bis zu {max} Listen haben."
 }

@@ -2867,6 +2867,15 @@ class AppLocalizationsSt extends AppLocalizations {
       'Dikopo di ngata haholo ka nako e kgutshwane. Ka kopo ema motsotso mme o leke hape.';
 
   @override
+  String get watchListNameTaken =>
+      'Lenane le nang le lebitso lena le se le ntse le le teng.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'O ka ba le manane a sa feteng $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

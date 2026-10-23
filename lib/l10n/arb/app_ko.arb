@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "포트폴리오 평가액이 이제 {value}입니다.",
   "errAiTruncated": "분석이 완료되기 전에 중간에 끊겼습니다. 다시 시도해 주세요. 할당량은 차감되지 않았습니다.",
   "errImageUnsupported": "이 이미지를 읽을 수 없습니다. JPEG 또는 PNG로 저장한 후 다시 시도해 주세요.",
-  "errRateLimited": "짧은 시간에 요청이 너무 많습니다. 1분 정도 기다린 후 다시 시도해 주세요."
+  "errRateLimited": "짧은 시간에 요청이 너무 많습니다. 1분 정도 기다린 후 다시 시도해 주세요.",
+  "watchListNameTaken": "같은 이름의 목록이 이미 있습니다.",
+  "watchListLimit": "목록은 최대 {max}개까지 만들 수 있습니다."
 }

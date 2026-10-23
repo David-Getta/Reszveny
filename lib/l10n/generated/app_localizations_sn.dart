@@ -2858,6 +2858,14 @@ class AppLocalizationsSn extends AppLocalizations {
       'Zvikumbiro zvawandisa munguva pfupi. Ndapota mira miniti imwe wobva waedza zvakare.';
 
   @override
+  String get watchListNameTaken => 'Rondedzero rine zita iri ratovepo.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Unogona kuva nemarondedzero anosvika $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

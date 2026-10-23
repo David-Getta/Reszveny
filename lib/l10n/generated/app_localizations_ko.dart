@@ -2771,6 +2771,14 @@ class AppLocalizationsKo extends AppLocalizations {
   String get errRateLimited => '짧은 시간에 요청이 너무 많습니다. 1분 정도 기다린 후 다시 시도해 주세요.';
 
   @override
+  String get watchListNameTaken => '같은 이름의 목록이 이미 있습니다.';
+
+  @override
+  String watchListLimit(int max) {
+    return '목록은 최대 $max개까지 만들 수 있습니다.';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

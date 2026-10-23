@@ -2858,6 +2858,14 @@ class AppLocalizationsHy extends AppLocalizations {
       'Կարճ ժամանակում չափազանց շատ հարցումներ են ուղարկվել։ Խնդրում ենք սպասել մեկ րոպե և նորից փորձել։';
 
   @override
+  String get watchListNameTaken => 'Այս անունով ցուցակ արդեն կա։';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Կարող եք ունենալ առավելագույնը $max ցուցակ։';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

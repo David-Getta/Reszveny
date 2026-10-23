@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Iye àpò ìdókòwò rẹ ti tó {value} báyìí.",
   "errAiTruncated": "Ìtúpalẹ̀ náà dáwọ́ dúró kí ó tó parí. Jọ̀ọ́ tún gbìyànjú – kò lo ìpín rẹ.",
   "errImageUnsupported": "A kò lè ka àwòrán yìí. Fi pamọ́ gẹ́gẹ́ bí JPEG tàbí PNG kí o sì tún gbìyànjú.",
-  "errRateLimited": "Ìbéèrè ti pọ̀ jù láàárín àkókò kúkúrú. Jọ̀ọ́ dúró fún ìṣẹ́jú kan kí o sì tún gbìyànjú."
+  "errRateLimited": "Ìbéèrè ti pọ̀ jù láàárín àkókò kúkúrú. Jọ̀ọ́ dúró fún ìṣẹ́jú kan kí o sì tún gbìyànjú.",
+  "watchListNameTaken": "Àkójọ tí ó ní orúkọ yìí ti wà tẹ́lẹ̀.",
+  "watchListLimit": "O lè ní àkójọ tó tó {max}."
 }

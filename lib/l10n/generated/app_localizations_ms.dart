@@ -2850,6 +2850,14 @@ class AppLocalizationsMs extends AppLocalizations {
       'Terlalu banyak permintaan dalam masa yang singkat. Sila tunggu seminit dan cuba lagi.';
 
   @override
+  String get watchListNameTaken => 'Senarai dengan nama ini sudah wujud.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Anda boleh mempunyai sehingga $max senarai.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Mtengo wa masheya anu tsopano ndi {value}.",
   "errAiTruncated": "Kusanthula kudadulidwa kusanathe. Chonde yesaninso – sikunagwiritse ntchito zomwe mumapatsidwa.",
   "errImageUnsupported": "Chithunzichi sichikuwerengeka. Chisungeni ngati JPEG kapena PNG ndipo yesaninso.",
-  "errRateLimited": "Zopempha zambiri kwambiri munthawi yochepa. Chonde dikirani mphindi imodzi ndipo yesaninso."
+  "errRateLimited": "Zopempha zambiri kwambiri munthawi yochepa. Chonde dikirani mphindi imodzi ndipo yesaninso.",
+  "watchListNameTaken": "Mndandanda wa dzina limeneli ulipo kale.",
+  "watchListLimit": "Mutha kukhala ndi mindandanda yofikira {max}."
 }

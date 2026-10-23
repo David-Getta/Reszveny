@@ -2861,6 +2861,14 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Daghan kaayong request sa mubong panahon. Palihug paghulat og usa ka minuto ug sulayi pag-usab.';
 
   @override
+  String get watchListNameTaken => 'Aduna nay lista nga kini ang ngalan.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Mahimo kang adunay hangtod $max ka lista.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

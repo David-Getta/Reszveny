@@ -2846,6 +2846,14 @@ class AppLocalizationsNe extends AppLocalizations {
       'छोटो समयमा धेरै अनुरोध पठाइए। कृपया एक मिनेट पर्खेर फेरि प्रयास गर्नुहोस्।';
 
   @override
+  String get watchListNameTaken => 'यो नामको सूची पहिल्यै छ।';
+
+  @override
+  String watchListLimit(int max) {
+    return 'तपाईं बढीमा $max वटा सूची राख्न सक्नुहुन्छ।';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

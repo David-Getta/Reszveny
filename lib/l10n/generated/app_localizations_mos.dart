@@ -2832,6 +2832,14 @@ class AppLocalizationsMos extends AppLocalizations {
       'Kosg wʋsg wakat bilf pʋgẽ. Gũ minit a yembre la f le mak.';
 
   @override
+  String get watchListNameTaken => 'Liste sẽn tar yʋʋr-kãngã beeme.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Fo pa tõe n tara listɛ n yɩɩg $max ye.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

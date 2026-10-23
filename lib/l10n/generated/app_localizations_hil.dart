@@ -2867,6 +2867,14 @@ class AppLocalizationsHil extends AppLocalizations {
       'Sobra kadamo nga request sa malip-ot nga tion. Palihog hulat sang isa ka minuto kag tilawi liwat.';
 
   @override
+  String get watchListNameTaken => 'May listahan na nga amo sini ang ngalan.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Puwede ka makahimo sang tubtob $max ka listahan.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

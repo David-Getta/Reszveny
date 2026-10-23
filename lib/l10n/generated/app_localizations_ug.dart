@@ -2851,6 +2851,14 @@ class AppLocalizationsUg extends AppLocalizations {
       'قىسقا ۋاقىت ئىچىدە بەك كۆپ ئىلتىماس يوللاندى. بىر مىنۇت ساقلاپ قايتا سىناپ بېقىڭ.';
 
   @override
+  String get watchListNameTaken => 'بۇ نامدىكى تىزىملىك ئاللىقاچان بار.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'ئەڭ كۆپ بولغاندا $max تىزىملىك قۇرالايسىز.';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

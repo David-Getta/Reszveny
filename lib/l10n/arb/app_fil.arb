@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Nagkakahalaga na ng {value} ang portfolio mo.",
   "errAiTruncated": "Naputol ang pagsusuri bago ito natapos. Pakisubukang muli – hindi ito nabawas sa iyong alokasyon.",
   "errImageUnsupported": "Hindi mabasa ang larawang ito. I-save ito bilang JPEG o PNG at subukang muli.",
-  "errRateLimited": "Masyadong maraming request sa maikling panahon. Maghintay muna ng isang minuto at subukang muli."
+  "errRateLimited": "Masyadong maraming request sa maikling panahon. Maghintay muna ng isang minuto at subukang muli.",
+  "watchListNameTaken": "May listahan na may ganitong pangalan.",
+  "watchListLimit": "Maaari kang magkaroon ng hanggang {max} listahan."
 }

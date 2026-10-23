@@ -2841,6 +2841,14 @@ class AppLocalizationsIg extends AppLocalizations {
       'Arịrịọ dị ukwuu n\'ime obere oge. Biko chere otu nkeji wee nwaa ọzọ.';
 
   @override
+  String get watchListNameTaken => 'Ndepụta nwere aha a adịlarị.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Ị nwere ike inwe ndepụta ruru $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

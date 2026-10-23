@@ -2848,6 +2848,14 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Too many request for short time. Abeg wait one minute and try again.';
 
   @override
+  String get watchListNameTaken => 'List wey get dis name don already dey.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'You fit get up to $max lists.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

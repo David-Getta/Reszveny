@@ -2862,6 +2862,14 @@ class AppLocalizationsOm extends AppLocalizations {
       'Yeroo gabaabaa keessatti gaaffiiwwan baay\'een ergamaniiru. Maaloo daqiiqaa tokko eegii irra deebi\'ii yaali.';
 
   @override
+  String get watchListNameTaken => 'Tarreen maqaa kanaan jiru duraanuu jira.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Tarreewwan hanga $max qabaachuu dandeessa.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

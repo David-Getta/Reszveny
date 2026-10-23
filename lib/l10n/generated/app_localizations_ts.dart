@@ -2872,6 +2872,14 @@ class AppLocalizationsTs extends AppLocalizations {
       'Swikombelo swi tele ngopfu hi nkarhi wo koma. Hi kombela u rindza minete kutani u ringeta nakambe.';
 
   @override
+  String get watchListNameTaken => 'Ku na nxaxamelo leyi nga ni vito leri se.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'U nga va na minxaxamelo yo fika eka $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

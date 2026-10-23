@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Gatiin poortfooliyoo keetii amma {value} ga'eera.",
   "errAiTruncated": "Xiinxalli osoo hin xumuramin addaan cite. Maaloo irra deebi'ii yaali – qooda kee irraa hin hir'isne.",
   "errImageUnsupported": "Suuraan kun dubbifamuu hin danda'u. Akka JPEG ykn PNG tti olkaa'ii irra deebi'ii yaali.",
-  "errRateLimited": "Yeroo gabaabaa keessatti gaaffiiwwan baay'een ergamaniiru. Maaloo daqiiqaa tokko eegii irra deebi'ii yaali."
+  "errRateLimited": "Yeroo gabaabaa keessatti gaaffiiwwan baay'een ergamaniiru. Maaloo daqiiqaa tokko eegii irra deebi'ii yaali.",
+  "watchListNameTaken": "Tarreen maqaa kanaan jiru duraanuu jira.",
+  "watchListLimit": "Tarreewwan hanga {max} qabaachuu dandeessa."
 }

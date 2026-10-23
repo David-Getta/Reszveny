@@ -2866,6 +2866,14 @@ class AppLocalizationsLg extends AppLocalizations {
       'Okusaba kungi nnyo mu kaseera katono. Lindako eddakiika emu oddemu ogezeeko.';
 
   @override
+  String get watchListNameTaken => 'Waliwo dda olukalala olulina erinnya lino.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Osobola okuba n\'enkalala okutuuka ku $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

@@ -2919,6 +2919,14 @@ class AppLocalizationsCs extends AppLocalizations {
       'Příliš mnoho požadavků v krátkém čase. Počkejte prosím minutu a zkuste to znovu.';
 
   @override
+  String get watchListNameTaken => 'Seznam s tímto názvem už existuje.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Můžete mít nejvýše $max seznamů.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

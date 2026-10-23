@@ -2842,6 +2842,14 @@ class AppLocalizationsBho extends AppLocalizations {
       'कम समय में बहुत जादा अनुरोध भेजाइल बा। कृपया एक मिनट रुकीं आ फेर से कोसिस करीं।';
 
   @override
+  String get watchListNameTaken => 'एह नाम के सूची पहिले से बा।';
+
+  @override
+  String watchListLimit(int max) {
+    return 'रउआ अधिकतम $max गो सूची रख सकत बानी।';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

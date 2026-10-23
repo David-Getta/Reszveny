@@ -2860,6 +2860,14 @@ class AppLocalizationsEl extends AppLocalizations {
       'Πάρα πολλά αιτήματα σε σύντομο χρονικό διάστημα. Περιμένετε ένα λεπτό και δοκιμάστε ξανά.';
 
   @override
+  String get watchListNameTaken => 'Υπάρχει ήδη λίστα με αυτό το όνομα.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Μπορείτε να έχετε έως $max λίστες.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

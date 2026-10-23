@@ -2924,6 +2924,14 @@ class AppLocalizationsBe extends AppLocalizations {
       'Занадта шмат запытаў за кароткі час. Пачакайце хвіліну і паспрабуйце яшчэ раз.';
 
   @override
+  String get watchListNameTaken => 'Спіс з такой назвай ужо існуе.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Можна мець да $max спісаў.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

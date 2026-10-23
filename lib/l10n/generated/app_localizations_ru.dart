@@ -2926,6 +2926,14 @@ class AppLocalizationsRu extends AppLocalizations {
       'Слишком много запросов за короткое время. Подождите минуту и попробуйте ещё раз.';
 
   @override
+  String get watchListNameTaken => 'Список с таким названием уже существует.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Максимум списков: $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

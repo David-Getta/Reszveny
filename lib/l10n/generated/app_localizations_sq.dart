@@ -2855,6 +2855,14 @@ class AppLocalizationsSq extends AppLocalizations {
       'Shumë kërkesa brenda një kohe të shkurtër. Ju lutemi prisni një minutë dhe provoni përsëri.';
 
   @override
+  String get watchListNameTaken => 'Ekziston tashmë një listë me këtë emër.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Mund të keni deri në $max lista.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

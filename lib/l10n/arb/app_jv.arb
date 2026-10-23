@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Nilai portofolio sampeyan saiki {value}.",
   "errAiTruncated": "Analisis kepunggel sadurunge rampung. Mangga jajal maneh – kuota sampeyan ora kepotong.",
   "errImageUnsupported": "Gambar iki ora bisa diwaca. Simpen minangka JPEG utawa PNG lan jajal maneh.",
-  "errRateLimited": "Kakehan panjalukan ing wektu sing cendhak. Mangga ngenteni sak menit lan jajal maneh."
+  "errRateLimited": "Kakehan panjalukan ing wektu sing cendhak. Mangga ngenteni sak menit lan jajal maneh.",
+  "watchListNameTaken": "Dhaptar kanthi jeneng iki wis ana.",
+  "watchListLimit": "Sampeyan bisa duwe nganti {max} dhaptar."
 }

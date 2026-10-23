@@ -2815,6 +2815,14 @@ class AppLocalizationsTh extends AppLocalizations {
       'มีคำขอมากเกินไปในเวลาสั้นๆ โปรดรอสักหนึ่งนาทีแล้วลองอีกครั้ง';
 
   @override
+  String get watchListNameTaken => 'มีรายการชื่อนี้อยู่แล้ว';
+
+  @override
+  String watchListLimit(int max) {
+    return 'คุณมีรายการได้สูงสุด $max รายการ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

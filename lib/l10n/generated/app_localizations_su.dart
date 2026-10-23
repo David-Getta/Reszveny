@@ -2851,6 +2851,14 @@ class AppLocalizationsSu extends AppLocalizations {
       'Kaleuleuwihi pamundut dina waktos anu pondok. Mangga antosan samenit teras cobaan deui.';
 
   @override
+  String get watchListNameTaken => 'Daptar kalayan ngaran ieu parantos aya.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Anjeun tiasa gaduh dugi ka $max daptar.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

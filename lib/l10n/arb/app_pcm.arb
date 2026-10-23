@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Your portfolio don reach {value} now.",
   "errAiTruncated": "Di analysis cut for middle before e finish. Abeg try again – e no use your allowance.",
   "errImageUnsupported": "We no fit read dis picture. Save am as JPEG or PNG and try again.",
-  "errRateLimited": "Too many request for short time. Abeg wait one minute and try again."
+  "errRateLimited": "Too many request for short time. Abeg wait one minute and try again.",
+  "watchListNameTaken": "List wey get dis name don already dey.",
+  "watchListLimit": "You fit get up to {max} lists."
 }

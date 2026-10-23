@@ -2869,6 +2869,15 @@ class AppLocalizationsTn extends AppLocalizations {
       'Dikopo di dintsi thata mo nakong e khutshwane. Tswee-tswee ema motsotso mme o leke gape.';
 
   @override
+  String get watchListNameTaken =>
+      'Lenaane le le nang le leina le le setse le le teng.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'O ka nna le manaane a a sa feteng $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

@@ -2840,6 +2840,14 @@ class AppLocalizationsMai extends AppLocalizations {
       'कम समयमे बहुत बेसी अनुरोध पठाओल गेल। कृपया एक मिनट प्रतीक्षा करू आ फेरसँ प्रयास करू।';
 
   @override
+  String get watchListNameTaken => 'एहि नामक सूची पहिनहिसँ अछि।';
+
+  @override
+  String watchListLimit(int max) {
+    return 'अहाँ अधिकतम $max टा सूची राखि सकैत छी।';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

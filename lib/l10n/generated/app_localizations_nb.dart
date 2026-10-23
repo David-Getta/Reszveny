@@ -2849,6 +2849,15 @@ class AppLocalizationsNb extends AppLocalizations {
       'For mange forespørsler på kort tid. Vent et minutt og prøv igjen.';
 
   @override
+  String get watchListNameTaken =>
+      'Det finnes allerede en liste med dette navnet.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Du kan ha opptil $max lister.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

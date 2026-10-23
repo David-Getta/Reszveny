@@ -2820,6 +2820,14 @@ class AppLocalizationsLo extends AppLocalizations {
       'ມີຄຳຮ້ອງຂໍຫຼາຍເກີນໄປໃນເວລາສັ້ນໆ ກະລຸນາລໍຖ້າໜຶ່ງນາທີແລ້ວລອງໃໝ່';
 
   @override
+  String get watchListNameTaken => 'ມີລາຍການທີ່ໃຊ້ຊື່ນີ້ແລ້ວ.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'ທ່ານສາມາດມີລາຍການໄດ້ສູງສຸດ $max ລາຍການ.';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

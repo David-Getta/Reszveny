@@ -2848,6 +2848,14 @@ class AppLocalizationsKab extends AppLocalizations {
       'Aṭas n yissutar deg wakud wezzilen. Ma ulac aɣilif, rǧu yiwet n tesdidt syen ɛreḍ tikkelt-nniḍen.';
 
   @override
+  String get watchListNameTaken => 'Tebdart s yisem-a tella yakan.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Tzemreḍ ad tesɛuḍ armi d $max n tebdarin.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

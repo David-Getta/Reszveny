@@ -2847,6 +2847,15 @@ class AppLocalizationsDa extends AppLocalizations {
       'For mange forespørgsler på kort tid. Vent et minut, og prøv igen.';
 
   @override
+  String get watchListNameTaken =>
+      'Der findes allerede en liste med dette navn.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Du kan have op til $max lister.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

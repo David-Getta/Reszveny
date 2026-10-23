@@ -2851,6 +2851,14 @@ class AppLocalizationsJv extends AppLocalizations {
       'Kakehan panjalukan ing wektu sing cendhak. Mangga ngenteni sak menit lan jajal maneh.';
 
   @override
+  String get watchListNameTaken => 'Dhaptar kanthi jeneng iki wis ana.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Sampeyan bisa duwe nganti $max dhaptar.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

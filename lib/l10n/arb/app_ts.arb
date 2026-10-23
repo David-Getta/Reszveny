@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Nkoka wa phothifoliyo ya wena sweswi i {value}.",
   "errAiTruncated": "Nxopaxopo wu tsemekile wu nga si hela. Hi kombela u ringeta nakambe – a wu tirhisanga xiavelo xa wena.",
   "errImageUnsupported": "Xifaniso lexi a xi hlayeki. Xi hlayisi tanihi JPEG kumbe PNG kutani u ringeta nakambe.",
-  "errRateLimited": "Swikombelo swi tele ngopfu hi nkarhi wo koma. Hi kombela u rindza minete kutani u ringeta nakambe."
+  "errRateLimited": "Swikombelo swi tele ngopfu hi nkarhi wo koma. Hi kombela u rindza minete kutani u ringeta nakambe.",
+  "watchListNameTaken": "Ku na nxaxamelo leyi nga ni vito leri se.",
+  "watchListLimit": "U nga va na minxaxamelo yo fika eka {max}."
 }

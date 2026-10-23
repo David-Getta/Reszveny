@@ -748,6 +748,8 @@
   "errAiTruncated": "Az elemzés befejezés előtt megszakadt. Próbáld újra – a keretedből nem vont le.",
   "errImageUnsupported": "Ez a kép nem olvasható. Mentsd el JPEG vagy PNG formátumban, és próbáld újra.",
   "errRateLimited": "Túl sok kérés rövid idő alatt. Várj egy percet, és próbáld újra.",
+  "watchListNameTaken": "Már van ilyen nevű lista.",
+  "watchListLimit": "Legfeljebb {max} listád lehet.",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

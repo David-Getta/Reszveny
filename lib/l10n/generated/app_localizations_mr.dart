@@ -2846,6 +2846,14 @@ class AppLocalizationsMr extends AppLocalizations {
       'कमी वेळात खूप जास्त विनंत्या आल्या. कृपया एक मिनिट थांबा आणि पुन्हा प्रयत्न करा.';
 
   @override
+  String get watchListNameTaken => 'या नावाची यादी आधीच अस्तित्वात आहे.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'तुम्ही जास्तीत जास्त $max याद्या ठेवू शकता.';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

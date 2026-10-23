@@ -2759,6 +2759,14 @@ class AppLocalizationsJa extends AppLocalizations {
   String get errRateLimited => '短時間にリクエストが多すぎます。1分ほど待ってから、もう一度お試しください。';
 
   @override
+  String get watchListNameTaken => 'この名前のリストはすでにあります。';
+
+  @override
+  String watchListLimit(int max) {
+    return 'リストは最大$max個まで作成できます。';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

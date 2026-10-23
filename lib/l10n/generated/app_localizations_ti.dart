@@ -2809,6 +2809,14 @@ class AppLocalizationsTi extends AppLocalizations {
       'ኣብ ሓጺር ግዜ ኣዝዮም ብዙሓት ሕቶታት። በጃኹም ሓንቲ ደቒቕ ተጸቢኹም ዳግማይ ፈትኑ።';
 
   @override
+  String get watchListNameTaken => 'በዚ ስም ዝርዝር ድሮ ኣሎ።';
+
+  @override
+  String watchListLimit(int max) {
+    return 'ክሳብ $max ዝርዝራት ክህልወኩም ይኽእል።';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

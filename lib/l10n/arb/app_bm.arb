@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Sisan i ka aksiyɔn kɛsu sɔngɔ ye {value} ye.",
   "errAiTruncated": "Sɛgɛsɛgɛli tigɛra sani a ka ban. A kɔrɔbɔ tugun – a ma foyi bɔ i ka hakɛ la.",
   "errImageUnsupported": "Nin ja in tɛ se ka kalan. A mara JPEG walima PNG ye ka a kɔrɔbɔ tugun.",
-  "errRateLimited": "Ɲininiw ka ca waati surun kɔnɔ. Miniti kelen makɔnɔ ka a kɔrɔbɔ tugun."
+  "errRateLimited": "Ɲininiw ka ca waati surun kɔnɔ. Miniti kelen makɔnɔ ka a kɔrɔbɔ tugun.",
+  "watchListNameTaken": "Lisi dɔ bɛ yen kaban ni nin tɔgɔ ye.",
+  "watchListLimit": "I bɛ se ka lisi {max} dɔrɔn de sɔrɔ."
 }

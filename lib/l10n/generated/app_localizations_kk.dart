@@ -2847,6 +2847,14 @@ class AppLocalizationsKk extends AppLocalizations {
       'Қысқа уақытта тым көп сұрау жіберілді. Бір минут күтіп, қайталап көріңіз.';
 
   @override
+  String get watchListNameTaken => 'Бұл атаумен тізім бұрыннан бар.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Ең көбі $max тізім жасай аласыз.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

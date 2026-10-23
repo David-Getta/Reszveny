@@ -2855,6 +2855,14 @@ class AppLocalizationsTe extends AppLocalizations {
       'తక్కువ సమయంలో చాలా ఎక్కువ అభ్యర్థనలు. దయచేసి ఒక నిమిషం వేచి ఉండి మళ్లీ ప్రయత్నించండి.';
 
   @override
+  String get watchListNameTaken => 'ఈ పేరుతో ఇప్పటికే ఒక జాబితా ఉంది.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'మీరు గరిష్ఠంగా $max జాబితాలు ఉంచుకోవచ్చు.';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

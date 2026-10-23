@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.277)
+# Változásjegyzék (0.2.130 → 0.2.278)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,20 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Részvényoldal, listák, összehasonlítás: egy huszonnegyedik kódátnézés javításai
+
+- **0.2.278**: töltés közben a „Portfólióhoz adás” vagy a riasztás gombjára kétszer koppintva nem nyílik két ablak
+  (mindkettő mentett volna). Cégprofil nélküli papírnál (ETF, sok nem amerikai részvény) a vétel pénzneme a
+  meglévő pozícióé, majd a tőzsdéé (pl. `OTP.BD` → HUF), nem automatikusan dollár. A lehúzásos frissítés nem
+  cseréli egész oldalas töltésjelzőre a részvényoldalt, és megmarad a választott grafikon-időszak. A telefonos és
+  a széles elrendezés közti váltás (tablet forgatása, ablak átméretezése) nem zárja be a portfólió, a riasztások
+  vagy a beállítások fülén megnyitott oldalt. A kedvencek visszavonása csak a levett részvényt teszi vissza a
+  régi helyére (a közben felvett kedvenc megmarad), a saját listáról levett részvény is a régi helyére kerül, és
+  egy egész lista törlése visszavonható. A foglalt listanevet a névablak jelzi és nyitva marad, a listakorlátot
+  üzenet jelzi (2 új szöveg, 120 nyelven). A teljes kedvenclista félóránként és előtérbe kerüléskor frissül, egy
+  sikertelen lekérés nem marad „n/a”. A részvényoldalról nyitott összehasonlításban is megnyitható egy oszlop
+  részvénye, és a be nem tölthető ticker oszlopa „n/a” jelzést kap.
 
 ## Nyilvános weboldalak: egy huszonharmadik kódátnézés javításai
 

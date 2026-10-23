@@ -2837,6 +2837,14 @@ class AppLocalizationsBo extends AppLocalizations {
       'དུས་ཚོད་ཐུང་ངུའི་ནང་རེ་ཞུ་མང་དྲགས་འདུག སྐར་མ་གཅིག་སྒུག་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
 
   @override
+  String get watchListNameTaken => 'མིང་འདི་ཅན་གྱི་ཐོ་ཡིག་སྔོན་ནས་ཡོད།';
+
+  @override
+  String watchListLimit(int max) {
+    return 'ཁྱེད་ཀྱིས་ཐོ་ཡིག་ཆེས་མང་ན་ $max བཟོ་ཆོག';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

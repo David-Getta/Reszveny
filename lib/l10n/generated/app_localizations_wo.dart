@@ -2841,6 +2841,14 @@ class AppLocalizationsWo extends AppLocalizations {
       'Laaj yi bari nañu lool ci diir bu gàtt. Xaaral benn minit te jéemaatal.';
 
   @override
+  String get watchListNameTaken => 'Benn limm bu am tur bii am na ba pare.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Mën nga am ba ci $max limm.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

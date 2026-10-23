@@ -37,6 +37,7 @@ import 'widgets/kv_table.dart';
 import 'widgets/peers_strip.dart';
 import 'widgets/price_chart.dart';
 import 'widgets/section_card.dart';
+import '../recognition/listing_symbol.dart';
 import 'widgets/returns_strip.dart';
 import 'widgets/statements_table.dart';
 import 'widgets/week52_range.dart';
@@ -91,8 +92,25 @@ class _StockDetailPageState extends State<StockDetailPage> {
     await showEarningsSummary(context, symbol: symbol, companyName: name ?? symbol, lastPeriod: period);
   }
 
+  /// Egy párbeszédablak nyitása folyamatban (töltés közbeni dupla koppintás ne
+  /// nyisson kettőt – mindkettő mentene).
+  bool _dialogBusy = false;
+
+  Future<void> _once(Future<void> Function() open) async {
+    if (_dialogBusy) return;
+    _dialogBusy = true;
+    try {
+      await open();
+    } finally {
+      _dialogBusy = false;
+    }
+  }
+
   /// Vétel rögzítése a betöltött árral és pénznemmel (ha még tölt, megvárja).
-  Future<void> _addToPortfolio() async {
+  Future<void> _addToPortfolio() => _once(_addToPortfolioNow);
+
+  Future<void> _addToPortfolioNow() async {
+    final services = AppServices.of(context);
     final l10n = AppLocalizations.of(context);
     final messenger = ScaffoldMessenger.of(context);
     StockDetails? d;
@@ -106,14 +124,18 @@ class _StockDetailPageState extends State<StockDetailPage> {
     final added = await showAddLotDialog(
       context,
       symbol: symbol,
-      currency: d?.currency ?? 'USD',
+      // Cégprofil nélkül (ETF, sok nem amerikai papír): a meglévő pozíció, majd a
+      // tőzsde pénzneme, csak végül dollár.
+      currency: d?.currency ?? services.portfolio.positionOf(symbol)?.currency ?? currencyForListing(symbol) ?? 'USD',
       currentPrice: d?.quote?.price,
     );
     if (added) messenger.showSnackBar(SnackBar(content: Text(l10n.portfolioAdded(symbol))));
   }
 
   /// Árfolyam-riasztás beállítása a betöltött árral és pénznemmel.
-  Future<void> _setAlert() async {
+  Future<void> _setAlert() => _once(_setAlertNow);
+
+  Future<void> _setAlertNow() async {
     final l10n = AppLocalizations.of(context);
     final messenger = ScaffoldMessenger.of(context);
     StockDetails? d;
@@ -158,7 +180,14 @@ class _StockDetailPageState extends State<StockDetailPage> {
             key: const ValueKey('compare-open'),
             tooltip: l10n.compareTitle,
             icon: const Icon(Icons.compare_arrows_rounded),
-            onPressed: () => ComparePage.open(context, [widget.candidate.symbol]),
+            onPressed: () => ComparePage.open(
+              context,
+              [widget.candidate.symbol],
+              onOpenSymbol: (c) {
+                AppServices.of(context).preferences.addRecent(c.symbol);
+                Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => StockDetailPage(candidate: c)));
+              },
+            ),
           ),
           IconButton(
             tooltip: l10n.addToPortfolio,
@@ -172,7 +201,8 @@ class _StockDetailPageState extends State<StockDetailPage> {
       body: FutureBuilder<StockDetails>(
         future: _future,
         builder: (context, snapshot) {
-          if (snapshot.connectionState != ConnectionState.done) {
+          // Frissítés közben a régi adat marad (a grafikon és a kártyák állapotával együtt).
+          if (snapshot.connectionState != ConnectionState.done && !snapshot.hasData) {
             return Center(
               child: Column(
                 mainAxisSize: MainAxisSize.min,

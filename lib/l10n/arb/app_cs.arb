@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Vaše portfolio má nyní hodnotu {value}.",
   "errAiTruncated": "Analýza byla přerušena dřív, než byla dokončena. Zkuste to znovu – do limitu se nezapočítala.",
   "errImageUnsupported": "Tento obrázek nelze přečíst. Uložte ho jako JPEG nebo PNG a zkuste to znovu.",
-  "errRateLimited": "Příliš mnoho požadavků v krátkém čase. Počkejte prosím minutu a zkuste to znovu."
+  "errRateLimited": "Příliš mnoho požadavků v krátkém čase. Počkejte prosím minutu a zkuste to znovu.",
+  "watchListNameTaken": "Seznam s tímto názvem už existuje.",
+  "watchListLimit": "Můžete mít nejvýše {max} seznamů."
 }

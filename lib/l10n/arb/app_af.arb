@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Jou portefeulje is nou {value} werd.",
   "errAiTruncated": "Die ontleding is afgesny voordat dit klaar was. Probeer asseblief weer – dit het nie jou toekenning gebruik nie.",
   "errImageUnsupported": "Hierdie prent kan nie gelees word nie. Stoor dit as JPEG of PNG en probeer weer.",
-  "errRateLimited": "Te veel versoeke in ’n kort tyd. Wag asseblief ’n minuut en probeer weer."
+  "errRateLimited": "Te veel versoeke in ’n kort tyd. Wag asseblief ’n minuut en probeer weer.",
+  "watchListNameTaken": "'n Lys met hierdie naam bestaan reeds.",
+  "watchListLimit": "Jy kan tot {max} lyste hê."
 }

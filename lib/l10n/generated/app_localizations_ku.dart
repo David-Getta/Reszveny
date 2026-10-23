@@ -2852,6 +2852,14 @@ class AppLocalizationsKu extends AppLocalizations {
       'Di demeke kurt de gelek daxwaz hatin şandin. Ji kerema xwe deqeyekê bisekine û dîsa biceribîne.';
 
   @override
+  String get watchListNameTaken => 'Lîsteyek bi vî navî jixwe heye.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Tu dikarî herî zêde $max lîsteyan çêkî.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

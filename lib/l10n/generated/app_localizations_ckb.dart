@@ -2851,6 +2851,14 @@ class AppLocalizationsCkb extends AppLocalizations {
       'لە ماوەیەکی کورتدا داواکاریی زۆر نێردراوە. تکایە خولەکێک چاوەڕێ بکە و دووبارە هەوڵ بدەرەوە.';
 
   @override
+  String get watchListNameTaken => 'لیستێک بەم ناوەوە پێشتر هەیە.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'دەتوانیت تا $max لیستت هەبێت.';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

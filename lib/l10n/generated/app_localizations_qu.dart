@@ -2864,6 +2864,14 @@ class AppLocalizationsQu extends AppLocalizations {
       'Pisi pachapi ancha achka mañakuykuna. Ama hina kaspa, huk minutota suyay, hinaspa huktawan ruway.';
 
   @override
+  String get watchListNameTaken => 'Kay sutiyuq lista kanñam.';
+
+  @override
+  String watchListLimit(int max) {
+    return '$max listakamallam kapusunkiman.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

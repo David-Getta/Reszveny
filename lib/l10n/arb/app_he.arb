@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "שווי התיק שלך עומד כעת על {value}.",
   "errAiTruncated": "הניתוח נקטע לפני שהסתיים. נסו שוב – הוא לא נוכה מהמכסה שלך.",
   "errImageUnsupported": "לא ניתן לקרוא את התמונה הזו. שמרו אותה כ-JPEG או כ-PNG ונסו שוב.",
-  "errRateLimited": "יותר מדי בקשות בזמן קצר. המתינו דקה ונסו שוב."
+  "errRateLimited": "יותר מדי בקשות בזמן קצר. המתינו דקה ונסו שוב.",
+  "watchListNameTaken": "כבר קיימת רשימה בשם הזה.",
+  "watchListLimit": "אפשר ליצור עד {max} רשימות."
 }

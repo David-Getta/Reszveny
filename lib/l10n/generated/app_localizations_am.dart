@@ -2811,6 +2811,14 @@ class AppLocalizationsAm extends AppLocalizations {
       'በአጭር ጊዜ ውስጥ በጣም ብዙ ጥያቄዎች ተልከዋል። እባክዎ አንድ ደቂቃ ይጠብቁና እንደገና ይሞክሩ።';
 
   @override
+  String get watchListNameTaken => 'ይህ ስም ያለው ዝርዝር አስቀድሞ አለ።';
+
+  @override
+  String watchListLimit(int max) {
+    return 'እስከ $max ዝርዝሮች ሊኖርዎት ይችላል።';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

@@ -2848,6 +2848,14 @@ class AppLocalizationsKa extends AppLocalizations {
       'ძალიან ბევრი მოთხოვნა მოკლე დროში. დაიცადეთ ერთი წუთი და სცადეთ ხელახლა.';
 
   @override
+  String get watchListNameTaken => 'ამ სახელით სია უკვე არსებობს.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'შეგიძლიათ გქონდეთ მაქსიმუმ $max სია.';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

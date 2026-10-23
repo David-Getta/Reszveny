@@ -44,9 +44,14 @@ class _ComparePageState extends State<ComparePage> {
   Future<List<StockDetails?>>? _all;
 
   /// Az oszlopok adatai együtt; egy részvény hibája nem dönti be a többit
-  /// (annak az oszlopa üres marad).
+  /// (annak az oszlopa „nem elérhető”). A részletek lekérése szakaszonként nyeli el
+  /// a hibát: ár és cégprofil nélkül (pl. elgépelt ticker) az oszlop sikertelen.
   void _combine() => _all = Future.wait([
-    for (final s in _symbols) _details[s]!.then<StockDetails?>((d) => d, onError: (Object _) => null),
+    for (final s in _symbols)
+      _details[s]!.then<StockDetails?>(
+        (d) => d.quote == null && d.profile == null ? null : d,
+        onError: (Object _) => null,
+      ),
   ]);
 
   /// A gyorsjelentés-adatok oszloponként (hiba vagy hiány esetén `null`).

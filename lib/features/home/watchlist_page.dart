@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../compare/compare_page.dart';
@@ -84,6 +86,13 @@ class _WatchlistPageState extends State<WatchlistPage> {
   /// A betöltött adatoktól függő rendezésnél az új adat átrendezi a listát.
   bool get _sortByData => _sort == WatchSort.gainers || _sort == WatchSort.losers || _sort == WatchSort.since;
 
+  /// Nyitva hagyva (asztali gépen) félóránként és előtérbe kerüléskor friss árak,
+  /// mint a kezdőképernyő kedvenceinél.
+  static const refreshEvery = Duration(minutes: 30);
+  Timer? _timer;
+  AppLifecycleListener? _lifecycle;
+  DateTime _loadedAt = DateTime.now();
+
   @override
   void initState() {
     super.initState();
@@ -92,27 +101,57 @@ class _WatchlistPageState extends State<WatchlistPage> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) AppServices.of(context).events.refresh();
     });
+    _timer = Timer.periodic(refreshEvery, (_) => _reload());
+    _lifecycle = AppLifecycleListener(
+      onResume: () {
+        if (DateTime.now().difference(_loadedAt) >= const Duration(minutes: 5)) _reload();
+      },
+    );
   }
 
-  Future<StockQuote> _quote(String s) => _quotes.putIfAbsent(s, () {
-    final f = AppServices.of(context).marketData.quote(s);
-    f.then((q) {
-      if (!mounted) return;
-      _loaded[s] = q;
-      if (_sortByData) setState(() {});
-    }, onError: (Object _) {});
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _lifecycle?.dispose();
+    super.dispose();
+  }
+
+  /// Újratöltés: a már betöltött adat a rendezéshez megmarad, amíg az új megjön.
+  void _reload() {
+    if (!mounted) return;
+    setState(() {
+      _quotes.clear();
+      _histories.clear();
+      _loadedAt = DateTime.now();
+    });
+  }
+
+  /// A sikertelen lekérés nem marad meg: a következő rajzolás újra próbálja.
+  Future<T> _cached<T>(Map<String, Future<T>> cache, String s, Future<T> Function() load, void Function(T) onLoaded) {
+    if (cache[s] case final f?) return f;
+    final f = Future.sync(load);
+    cache[s] = f;
+    f.then(
+      (v) {
+        if (mounted) onLoaded(v);
+      },
+      onError: (Object _) {
+        if (identical(cache[s], f)) cache.remove(s);
+      },
+    );
     return f;
+  }
+
+  Future<StockQuote> _quote(String s) => _cached(_quotes, s, () => AppServices.of(context).marketData.quote(s), (q) {
+    _loaded[s] = q;
+    if (_sortByData) setState(() {});
   });
 
-  Future<PriceHistory> _history(String s) => _histories.putIfAbsent(s, () {
-    final f = AppServices.of(context).marketData.history(s, years: 1);
-    f.then((h) {
-      if (!mounted) return;
-      _loadedHistory[s] = h;
-      if (_sort == WatchSort.since) setState(() {});
-    }, onError: (Object _) {});
-    return f;
-  });
+  Future<PriceHistory> _history(String s) =>
+      _cached(_histories, s, () => AppServices.of(context).marketData.history(s, years: 1), (h) {
+        _loadedHistory[s] = h;
+        if (_sort == WatchSort.since) setState(() {});
+      });
 
   List<String> _sorted(List<String> favorites) {
     // Csökkenő kulcs szerint, egyenlőségnél a saját sorrendben (a List.sort nem stabil:
@@ -147,19 +186,25 @@ class _WatchlistPageState extends State<WatchlistPage> {
     // Saját listában elhúzva csak a listáról kerül le.
     final list = _list;
     if (list != null) {
+      final at = prefs.watchLists.where((l) => l.name == list).firstOrNull?.symbols.indexOf(symbol.toUpperCase());
       await prefs.toggleInList(list, symbol);
       messenger
         ..hideCurrentSnackBar()
         ..showSnackBar(
           SnackBar(
             content: Text('$symbol · $list'),
-            action: SnackBarAction(label: l10n.undo, onPressed: () => prefs.toggleInList(list, symbol)),
+            // A régi helyére kerül vissza, nem a lista végére.
+            action: SnackBarAction(
+              label: l10n.undo,
+              onPressed: () => prefs.toggleInList(list, symbol, at: at == null || at < 0 ? null : at),
+            ),
           ),
         );
       return;
     }
-    final before = prefs.favorites;
-    // A visszavonás a felvételi napot is visszaadja („mióta figyeled”).
+    // A visszavonás csak ezt a részvényt teszi vissza a régi helyére, a felvételi
+    // napjával („mióta figyeled”) – a közben felvett kedvencek megmaradnak.
+    final at = prefs.favorites.indexOf(symbol.toUpperCase());
     final since = prefs.favoriteSince(symbol);
     await prefs.toggleFavorite(symbol);
     messenger
@@ -169,23 +214,33 @@ class _WatchlistPageState extends State<WatchlistPage> {
           content: Text('$symbol · ${l10n.removeFromFavorites}'),
           action: SnackBarAction(
             label: l10n.undo,
-            onPressed: () => prefs.setFavorites(before, since: {symbol.toUpperCase(): ?since}, restore: true),
+            onPressed: () => prefs.restoreFavorite(symbol, at: at < 0 ? 0 : at, since: since),
           ),
         ),
       );
   }
 
-  /// Lista neve egy kis ablakban (új listához vagy átnevezéshez).
+  /// Lista neve egy kis ablakban (új listához vagy átnevezéshez); a foglalt nevet
+  /// az ablak jelzi, és nyitva marad.
   Future<String?> _askListName({String initial = ''}) async {
+    final prefs = AppServices.of(context).preferences;
     final name = await showDialog<String>(
       context: context,
-      builder: (_) => _ListNameDialog(initial: initial),
+      builder: (_) => _ListNameDialog(
+        initial: initial,
+        taken: (n) => prefs.listNameTaken(n, except: initial.isEmpty ? null : initial),
+      ),
     );
     return name?.trim().isEmpty ?? true ? null : name!.trim();
   }
 
   Future<void> _newList({String? withSymbol}) async {
     final prefs = AppServices.of(context).preferences;
+    if (prefs.watchLists.length >= AppPreferences.maxLists) {
+      final l10n = AppLocalizations.of(context);
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l10n.watchListLimit(AppPreferences.maxLists))));
+      return;
+    }
     final name = await _askListName();
     if (name == null || !await prefs.addWatchList(name)) return;
     if (mounted) AppServices.of(context).telemetry.track('list_created');
@@ -303,8 +358,27 @@ class _WatchlistPageState extends State<WatchlistPage> {
       final name = await _askListName(initial: list);
       if (name != null && await prefs.renameWatchList(list, name) && mounted) setState(() => _list = name);
     } else {
+      // Visszavonható: a lista a tagjaival és a helyével együtt visszakerül.
+      final l10n = AppLocalizations.of(context);
+      final messenger = ScaffoldMessenger.of(context);
+      final index = prefs.watchLists.indexWhere((l) => l.name == list);
+      final removed = index < 0 ? null : prefs.watchLists[index];
       await prefs.removeWatchList(list);
       if (mounted) setState(() => _list = null);
+      if (removed == null) return;
+      messenger
+        ..hideCurrentSnackBar()
+        ..showSnackBar(
+          SnackBar(
+            content: Text('$list · ${l10n.watchListDelete}'),
+            action: SnackBarAction(
+              label: l10n.undo,
+              onPressed: () async {
+                if (await prefs.restoreWatchList(removed, at: index) && mounted) setState(() => _list = list);
+              },
+            ),
+          ),
+        );
     }
   }
 
@@ -646,9 +720,12 @@ class _ImportTickersDialogState extends State<_ImportTickersDialog> {
 }
 
 class _ListNameDialog extends StatefulWidget {
-  const _ListNameDialog({required this.initial});
+  const _ListNameDialog({required this.initial, required this.taken});
 
   final String initial;
+
+  /// Foglalt-e a név (egy másik lista már így hívják).
+  final bool Function(String name) taken;
 
   @override
   State<_ListNameDialog> createState() => _ListNameDialogState();
@@ -656,11 +733,21 @@ class _ListNameDialog extends StatefulWidget {
 
 class _ListNameDialogState extends State<_ListNameDialog> {
   late final _controller = TextEditingController(text: widget.initial);
+  bool _taken = false;
 
   @override
   void dispose() {
     _controller.dispose();
     super.dispose();
+  }
+
+  void _submit() {
+    final name = _controller.text.trim();
+    if (name.isNotEmpty && widget.taken(name)) {
+      setState(() => _taken = true);
+      return;
+    }
+    Navigator.of(context).pop(_controller.text);
   }
 
   @override
@@ -674,16 +761,15 @@ class _ListNameDialogState extends State<_ListNameDialog> {
         controller: _controller,
         autofocus: true,
         maxLength: AppPreferences.maxListName,
-        decoration: InputDecoration(labelText: l10n.watchListName),
-        onSubmitted: (v) => Navigator.of(context).pop(v),
+        decoration: InputDecoration(labelText: l10n.watchListName, errorText: _taken ? l10n.watchListNameTaken : null),
+        onChanged: (_) {
+          if (_taken) setState(() => _taken = false);
+        },
+        onSubmitted: (_) => _submit(),
       ),
       actions: [
         TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
-        FilledButton(
-          key: const ValueKey('watch-list-ok'),
-          onPressed: () => Navigator.of(context).pop(_controller.text),
-          child: Text(l10n.ok),
-        ),
+        FilledButton(key: const ValueKey('watch-list-ok'), onPressed: _submit, child: Text(l10n.ok)),
       ],
     );
   }

@@ -2924,6 +2924,14 @@ class AppLocalizationsLt extends AppLocalizations {
       'Per daug užklausų per trumpą laiką. Palaukite minutę ir bandykite dar kartą.';
 
   @override
+  String get watchListNameTaken => 'Sąrašas tokiu pavadinimu jau yra.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Galite turėti ne daugiau kaip $max sąrašų.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

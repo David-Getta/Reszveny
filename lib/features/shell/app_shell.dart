@@ -57,9 +57,10 @@ class _AppShellState extends State<AppShell> {
   int _tab = 0;
   final _tabKeys = [GlobalKey<NavigatorState>(), GlobalKey<NavigatorState>(), GlobalKey<NavigatorState>()];
   final Set<int> _visitedTabs = {0};
-  bool _wide = true;
 
-  NavigatorState? get _currentNav => (_wide || _tab == 0 ? _navigatorKey : _tabKeys[_tab - 1]).currentState;
+  /// A látható navigáció: a fülek verme széles elrendezésben is megmarad (és látszik),
+  /// ha a telefonos keretből egy fülön állva szélesedett ki az ablak.
+  NavigatorState? get _currentNav => (_tab == 0 ? _navigatorKey : _tabKeys[_tab - 1]).currentState;
 
   void _selectTab(int i) {
     if (i == _tab) {
@@ -79,7 +80,7 @@ class _AppShellState extends State<AppShell> {
     final nav = _currentNav;
     if (nav != null && nav.canPop()) {
       nav.pop();
-    } else if (!_wide && _tab != 0) {
+    } else if (_tab != 0) {
       setState(() => _tab = 0);
     } else {
       SystemNavigator.pop();
@@ -394,19 +395,27 @@ class _AppShellState extends State<AppShell> {
   }
 
   void _goHome() {
-    if (!_wide && _tab != 0) setState(() => _tab = 0);
+    if (_tab != 0) setState(() => _tab = 0);
     _navigatorKey.currentState?.popUntil((r) => r.isFirst);
   }
 
+  /// Az oldalsáv oldalai a fő navigációra kerülnek: előbb az látszódjon.
+  void _showMain() {
+    if (_tab != 0) setState(() => _tab = 0);
+  }
+
   void _openPortfolio() {
+    _showMain();
     _navigatorKey.currentState?.push(MaterialPageRoute<void>(builder: (_) => PortfolioPage(onOpenSymbol: _openSymbol)));
   }
 
   void _openAlerts() {
+    _showMain();
     _navigatorKey.currentState?.push(MaterialPageRoute<void>(builder: (_) => AlertsPage(onOpenSymbol: _openSymbol)));
   }
 
   void _openSettings() {
+    _showMain();
     _navigatorKey.currentState?.push(MaterialPageRoute<void>(builder: (_) => const SettingsPage()));
   }
 
@@ -462,7 +471,6 @@ extension on _AppShellState {
     builder: (context, constraints) {
       if (!AppServices.of(context).desktop.isQuickBar) _fullSize = constraints.biggest;
       final wide = constraints.maxWidth >= AppShell.sidebarBreakpoint;
-      _wide = wide;
       final content = Navigator(
         key: _navigatorKey,
         onGenerateRoute: (settings) => MaterialPageRoute<void>(
@@ -498,7 +506,7 @@ extension on _AppShellState {
                   onOpenAlerts: _openAlerts,
                   onShowShortcuts: _showShortcuts,
                 ),
-                Expanded(child: content),
+                Expanded(child: _tabStack(content)),
               ],
             ),
           ),
@@ -507,25 +515,31 @@ extension on _AppShellState {
     },
   );
 
-  /// Telefonos keret: a fülek tartalma és alul a menüsor (feliratokkal).
-  Widget _phoneShell(BuildContext context, Widget home) {
-    final l10n = AppLocalizations.of(context);
+  /// A fülek tartalma (mindkét elrendezésben ugyanaz, a vermek kulcsaival): a
+  /// telefonos és a széles keret közti váltás nem dobja el a fülön megnyitott oldalakat.
+  Widget _tabStack(Widget home) {
     Widget tab(int i, Widget root) => !_visitedTabs.contains(i)
         ? const SizedBox.shrink()
         : Navigator(
             key: _tabKeys[i - 1],
             onGenerateRoute: (settings) => MaterialPageRoute<void>(settings: settings, builder: (_) => root),
           );
+    return IndexedStack(
+      index: _tab,
+      children: [
+        home,
+        tab(1, PortfolioPage(onOpenSymbol: _openSymbol)),
+        tab(2, AlertsPage(onOpenSymbol: _openSymbol)),
+        tab(3, const SettingsPage()),
+      ],
+    );
+  }
+
+  /// Telefonos keret: a fülek tartalma és alul a menüsor (feliratokkal).
+  Widget _phoneShell(BuildContext context, Widget home) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
-      body: IndexedStack(
-        index: _tab,
-        children: [
-          home,
-          tab(1, PortfolioPage(onOpenSymbol: _openSymbol)),
-          tab(2, AlertsPage(onOpenSymbol: _openSymbol)),
-          tab(3, const SettingsPage()),
-        ],
-      ),
+      body: _tabStack(home),
       bottomNavigationBar: NavigationBar(
         key: const ValueKey('phone-nav'),
         selectedIndex: _tab,

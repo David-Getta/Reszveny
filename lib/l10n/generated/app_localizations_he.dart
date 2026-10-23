@@ -2841,6 +2841,14 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errRateLimited => 'יותר מדי בקשות בזמן קצר. המתינו דקה ונסו שוב.';
 
   @override
+  String get watchListNameTaken => 'כבר קיימת רשימה בשם הזה.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'אפשר ליצור עד $max רשימות.';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

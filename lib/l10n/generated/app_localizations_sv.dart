@@ -2850,6 +2850,15 @@ class AppLocalizationsSv extends AppLocalizations {
       'För många förfrågningar på kort tid. Vänta en minut och försök igen.';
 
   @override
+  String get watchListNameTaken =>
+      'Det finns redan en lista med det här namnet.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Du kan ha upp till $max listor.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

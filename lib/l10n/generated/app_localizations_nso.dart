@@ -2868,6 +2868,15 @@ class AppLocalizationsNso extends AppLocalizations {
       'Dikgopelo tše dintši kudu ka nako ye kopana. Hle leta motsotso gomme o leke gape.';
 
   @override
+  String get watchListNameTaken =>
+      'Go šetše go na le lenaneo leo le nago le leina le.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'O ka ba le mananeo a sa fetego $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

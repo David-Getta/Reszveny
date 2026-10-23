@@ -2856,6 +2856,14 @@ class AppLocalizationsHa extends AppLocalizations {
       'Buƙatu sun yi yawa cikin ɗan lokaci. Da fatan a jira minti ɗaya sannan a sake gwadawa.';
 
   @override
+  String get watchListNameTaken => 'Akwai jeri mai wannan suna tuni.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Za ka iya samun jeri har $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

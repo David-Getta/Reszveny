@@ -2844,6 +2844,14 @@ class AppLocalizationsId extends AppLocalizations {
       'Terlalu banyak permintaan dalam waktu singkat. Mohon tunggu satu menit, lalu coba lagi.';
 
   @override
+  String get watchListNameTaken => 'Daftar dengan nama ini sudah ada.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Anda dapat memiliki hingga $max daftar.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

@@ -2846,6 +2846,14 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਥੋੜ੍ਹੇ ਸਮੇਂ ਵਿੱਚ ਬਹੁਤ ਜ਼ਿਆਦਾ ਬੇਨਤੀਆਂ। ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਮਿੰਟ ਉਡੀਕ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
 
   @override
+  String get watchListNameTaken => 'ਇਸ ਨਾਮ ਦੀ ਸੂਚੀ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ।';
+
+  @override
+  String watchListLimit(int max) {
+    return 'ਤੁਸੀਂ ਵੱਧ ਤੋਂ ਵੱਧ $max ਸੂਚੀਆਂ ਰੱਖ ਸਕਦੇ ਹੋ।';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

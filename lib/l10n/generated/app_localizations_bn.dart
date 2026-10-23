@@ -2847,6 +2847,14 @@ class AppLocalizationsBn extends AppLocalizations {
       'অল্প সময়ে অত্যধিক অনুরোধ পাঠানো হয়েছে। অনুগ্রহ করে এক মিনিট অপেক্ষা করে আবার চেষ্টা করুন।';
 
   @override
+  String get watchListNameTaken => 'এই নামে একটি তালিকা আগে থেকেই আছে।';
+
+  @override
+  String watchListLimit(int max) {
+    return 'আপনি সর্বোচ্চ $maxটি তালিকা রাখতে পারেন।';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

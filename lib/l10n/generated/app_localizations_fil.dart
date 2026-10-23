@@ -2857,6 +2857,14 @@ class AppLocalizationsFil extends AppLocalizations {
       'Masyadong maraming request sa maikling panahon. Maghintay muna ng isang minuto at subukang muli.';
 
   @override
+  String get watchListNameTaken => 'May listahan na may ganitong pangalan.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Maaari kang magkaroon ng hanggang $max listahan.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

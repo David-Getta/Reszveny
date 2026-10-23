@@ -2855,6 +2855,14 @@ class AppLocalizationsIt extends AppLocalizations {
       'Troppe richieste in poco tempo. Attendi un minuto e riprova.';
 
   @override
+  String get watchListNameTaken => 'Esiste già una lista con questo nome.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Puoi avere fino a $max liste.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

@@ -2927,6 +2927,14 @@ class AppLocalizationsUk extends AppLocalizations {
       'Занадто багато запитів за короткий час. Зачекайте хвилину і спробуйте ще раз.';
 
   @override
+  String get watchListNameTaken => 'Список із такою назвою вже існує.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Максимум списків: $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

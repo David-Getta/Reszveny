@@ -847,5 +847,7 @@
   "portfolioGoalReachedBody": "Portofoliul tău valorează acum {value}.",
   "errAiTruncated": "Analiza a fost întreruptă înainte de a se termina. Încearcă din nou – nu a fost scăzută din cota ta.",
   "errImageUnsupported": "Această imagine nu poate fi citită. Salvează-o ca JPEG sau PNG și încearcă din nou.",
-  "errRateLimited": "Prea multe solicitări într-un timp scurt. Așteaptă un minut și încearcă din nou."
+  "errRateLimited": "Prea multe solicitări într-un timp scurt. Așteaptă un minut și încearcă din nou.",
+  "watchListNameTaken": "Există deja o listă cu acest nume.",
+  "watchListLimit": "Numărul maxim de liste este {max}."
 }

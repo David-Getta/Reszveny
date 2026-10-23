@@ -2855,6 +2855,14 @@ class AppLocalizationsGn extends AppLocalizations {
       'Hetaiterei mbaʼejerure sapyʼaitépe. Ehaʼarõmi peteĩ aravoʼi ha ehaʼã jey.';
 
   @override
+  String get watchListNameTaken => 'Oĩma peteĩ lista ko térandi.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Ikatu reguereko $max lista peve.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

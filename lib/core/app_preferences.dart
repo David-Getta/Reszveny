@@ -785,15 +785,48 @@ class AppPreferences extends ChangeNotifier {
     await _saveLists();
   }
 
+  /// Foglalt-e a listanév (kis- és nagybetűtől függetlenül); átnevezéskor a saját
+  /// régi neve ([except]) nem számít foglaltnak.
+  bool listNameTaken(String name, {String? except}) {
+    final l = _listNamed(name);
+    return l != null && l != (except == null ? null : _listNamed(except));
+  }
+
+  /// Egy törölt lista visszaállítása (visszavonás) a régi helyére, a tagjaival;
+  /// `false`, ha közben azonos nevű lista készült.
+  Future<bool> restoreWatchList(WatchList list, {int? at}) async {
+    if (_listNamed(list.name) != null) return false;
+    _lists.insert((at ?? _lists.length).clamp(0, _lists.length), list);
+    _listMark(listKey(list.name), added: true);
+    for (final s in list.symbols) {
+      _listMark(itemKey(list.name, s), added: true);
+    }
+    await _saveLists();
+    return true;
+  }
+
+  /// Egy levett kedvenc visszavétele (visszavonás) a régi helyére és felvételi napjával,
+  /// a közben történt többi változás (új kedvenc, átrendezés) megtartásával.
+  Future<void> restoreFavorite(String symbol, {required int at, DateTime? since}) async {
+    final s = symbol.trim().toUpperCase();
+    if (s.isEmpty || _favorites.contains(s)) return;
+    _favorites.insert(at.clamp(0, _favorites.length), s);
+    if (since != null) _favoriteSince[s] = since;
+    _markFavorite(s);
+    notifyListeners();
+    await _saveFavorites();
+  }
+
   /// Részvény fel- vagy levétele egy saját listáról; felvételkor kedvenc is lesz.
-  Future<void> toggleInList(String name, String symbol) async {
+  /// Az [at] a felvétel helye (visszavonáskor a régi), különben a lista vége.
+  Future<void> toggleInList(String name, String symbol, {int? at}) async {
     final l = _listNamed(name), s = symbol.trim().toUpperCase();
     if (l == null || s.isEmpty) return;
     final symbols = [...l.symbols];
     final removed = symbols.remove(s);
     _listMark(itemKey(l.name, s), added: !removed);
     if (!removed) {
-      symbols.add(s);
+      symbols.insert((at ?? symbols.length).clamp(0, symbols.length), s);
       if (!_favorites.contains(s)) {
         _favorites.insert(0, s);
         _markFavorite(s);

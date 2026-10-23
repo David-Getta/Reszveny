@@ -2924,6 +2924,14 @@ class AppLocalizationsSk extends AppLocalizations {
       'Príliš veľa požiadaviek v krátkom čase. Počkajte prosím minútu a skúste to znova.';
 
   @override
+  String get watchListNameTaken => 'Zoznam s týmto názvom už existuje.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Maximálny počet zoznamov: $max.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

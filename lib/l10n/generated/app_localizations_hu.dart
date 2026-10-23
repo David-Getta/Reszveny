@@ -2854,6 +2854,14 @@ class AppLocalizationsHu extends AppLocalizations {
       'Túl sok kérés rövid idő alatt. Várj egy percet, és próbáld újra.';
 
   @override
+  String get watchListNameTaken => 'Már van ilyen nevű lista.';
+
+  @override
+  String watchListLimit(int max) {
+    return 'Legfeljebb $max listád lehet.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override
