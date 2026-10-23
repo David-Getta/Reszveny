@@ -470,7 +470,7 @@
   "portfolioImport": "Nghenisa ku suka eka CSV",
   "portfolioImportHint": "Namarheta xixaviwa xin'we eka layini yin'wana na yin'wana: ticker, nhlayo, nxavo, muxaka wa mali, siku (YYYY-MM-DD). Tikholomo ti nga hambanisiwa hi tikhoma, tisemikholoni kumbe ti-tab; layini ya tinhloko a yi bohi.",
   "portfolioImportButton": "Nghenisa",
-  "portfolioImported": "{count, plural, =1{Ku engeteriwe xixaviwa xin'we} other{Ku engeteriwe swixaviwa swa {count}}}",
+  "portfolioImported": "{count, plural, =1{Ku engeteriwe xixaviwa kumbe xixavisiwa xin'we} other{Ku engeteriwe swixaviwa ni swixavisiwa swa {count}}}",
   "portfolioImportSkipped": "{count, plural, =1{Ku tluriwe layini yin'we} other{Ku tluriwe tilayini ta {count}}}",
   "syncInfo": "Phothifoliyo, leswi u swi rhandzaka, switiviso swa nxavo na tinotsi swi fambelanisiwa eka switirhisiwa swa wena hinkwaswo.",
   "syncLast": "Ku fambelanisa ko hetelela: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Cinca dividende · {symbol}",
   "activityTitle": "Swixaviwa ni swixavisiwa hinkwaswo",
   "activitySearchHint": "Hlawula hi ticker",
-  "activityNoMatch": "A ku na xixaviwa kumbe xixavisiwa lexi fambelanaka ni leswi u swi hlawuleke."
+  "activityNoMatch": "A ku na xixaviwa kumbe xixavisiwa lexi fambelanaka ni leswi u swi hlawuleke.",
+  "portfolioImportDuplicates": "{count, plural, =1{Xin'we xi tsariwile khale, a xi engeteriwanga} other{Swa {count} swi tsariwile khale, a swi engeteriwanga}}"
 }

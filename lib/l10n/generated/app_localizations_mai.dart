@@ -1742,8 +1742,8 @@ class AppLocalizationsMai extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count खरीदारी जोड़ल गेल',
-      one: '1 खरीदारी जोड़ल गेल',
+      other: '$count लेन-देन जोड़ल गेल',
+      one: '1 लेन-देन जोड़ल गेल',
     );
     return '$_temp0';
   }
@@ -2783,6 +2783,17 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'फ़िल्टर सँ कोनो लेन-देन मेल नहि खाइत अछि।';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count पहिनहिसँ दर्ज अछि, छोड़ल गेल',
+      one: '1 पहिनहिसँ दर्ज अछि, छोड़ल गेल',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';

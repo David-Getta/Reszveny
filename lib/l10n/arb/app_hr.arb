@@ -470,7 +470,7 @@
   "portfolioImport": "Uvezi iz CSV-a",
   "portfolioImportHint": "Zalijepite jednu kupnju po retku: ticker simbol, količina, cijena, valuta, datum (GGGG-MM-DD). Stupci mogu biti odvojeni zarezima, točkama sa zarezom ili tabulatorima; redak sa zaglavljem nije obavezan.",
   "portfolioImportButton": "Uvezi",
-  "portfolioImported": "{count, plural, one{Dodana je {count} kupnja} few{Dodane su {count} kupnje} other{Dodano je {count} kupnji}}",
+  "portfolioImported": "{count, plural, one{Dodana je {count} transakcija} few{Dodane su {count} transakcije} other{Dodano je {count} transakcija}}",
   "portfolioImportSkipped": "{count, plural, one{Preskočen je {count} redak} few{Preskočena su {count} retka} other{Preskočeno je {count} redaka}}",
   "syncInfo": "Portfelj, favoriti, obavijesti o cijeni i bilješke sinkroniziraju se na svim vašim uređajima.",
   "syncLast": "Posljednja sinkronizacija: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Uredi dividendu · {symbol}",
   "activityTitle": "Sve transakcije",
   "activitySearchHint": "Filtriraj po tickeru",
-  "activityNoMatch": "Nijedna transakcija ne odgovara filtru."
+  "activityNoMatch": "Nijedna transakcija ne odgovara filtru.",
+  "portfolioImportDuplicates": "{count, plural, one{Izostavljena je {count} već zabilježena} few{Izostavljene su {count} već zabilježene} other{Izostavljeno je {count} već zabilježenih}}"
 }

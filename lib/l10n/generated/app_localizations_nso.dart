@@ -1760,8 +1760,8 @@ class AppLocalizationsNso extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Go okeditšwe ditheko tše $count',
-      one: 'Go okeditšwe theko e 1',
+      other: 'Go okeditšwe dithekišano tše $count',
+      one: 'Go okeditšwe thekišano e 1',
     );
     return '$_temp0';
   }
@@ -2810,6 +2810,17 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Ga go thekišano ye e swanago le sefa.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tše $count di šetše di rekotilwe, ga se tša okelwa',
+      one: 'E 1 e šetše e rekotilwe, ga se ya okelwa',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Bea maikemišetšo';

@@ -470,7 +470,7 @@
   "portfolioImport": "Tsenya go tšwa go CSV",
   "portfolioImportHint": "Kgomaretša theko e tee mothalong o mongwe le o mongwe: leswao la ticker, bontši, tefelo, tšhelete, letšatšikgwedi (YYYY-MM-DD). Dikholomo di ka arogantšwa ka khoma, semikholone goba tab; mothalo wa dihlogo ke boikgethelo.",
   "portfolioImportButton": "Tsenya",
-  "portfolioImported": "{count, plural, =1{Go okeditšwe theko e 1} other{Go okeditšwe ditheko tše {count}}}",
+  "portfolioImported": "{count, plural, =1{Go okeditšwe thekišano e 1} other{Go okeditšwe dithekišano tše {count}}}",
   "portfolioImportSkipped": "{count, plural, =1{Go tlogetšwe mothalo o 1} other{Go tlogetšwe methalo ye {count}}}",
   "syncInfo": "Photefolio, tše di ratwago, ditemošo tša theko le dintlha di sinkronaišwa didirišweng tša gago ka moka.",
   "syncLast": "Go sinkronaiša ga mafelelo: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Lokiša dividende · {symbol}",
   "activityTitle": "Dithekišano ka moka",
   "activitySearchHint": "Sefa ka ticker",
-  "activityNoMatch": "Ga go thekišano ye e swanago le sefa."
+  "activityNoMatch": "Ga go thekišano ye e swanago le sefa.",
+  "portfolioImportDuplicates": "{count, plural, =1{E 1 e šetše e rekotilwe, ga se ya okelwa} other{Tše {count} di šetše di rekotilwe, ga se tša okelwa}}"
 }

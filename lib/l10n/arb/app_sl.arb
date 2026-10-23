@@ -470,7 +470,7 @@
   "portfolioImport": "Uvozi iz CSV",
   "portfolioImportHint": "Prilepite en nakup na vrstico: borzna oznaka, količina, cena, valuta, datum (LLLL-MM-DD). Stolpci so lahko ločeni z vejicami, podpičji ali tabulatorji; naslovna vrstica ni obvezna.",
   "portfolioImportButton": "Uvozi",
-  "portfolioImported": "{count, plural, one{Dodan je {count} nakup} two{Dodana sta {count} nakupa} few{Dodani so {count} nakupi} other{Dodanih je {count} nakupov}}",
+  "portfolioImported": "{count, plural, one{Dodana je {count} transakcija} two{Dodani sta {count} transakciji} few{Dodane so {count} transakcije} other{Dodanih je {count} transakcij}}",
   "portfolioImportSkipped": "{count, plural, one{Preskočena je {count} vrstica} two{Preskočeni sta {count} vrstici} few{Preskočene so {count} vrstice} other{Preskočenih je {count} vrstic}}",
   "syncInfo": "Portfelj, priljubljene, cenovna opozorila in zapiski se sinhronizirajo v vseh vaših napravah.",
   "syncLast": "Zadnja sinhronizacija: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Uredi dividendo · {symbol}",
   "activityTitle": "Vse transakcije",
   "activitySearchHint": "Filtriraj po oznaki",
-  "activityNoMatch": "Nobena transakcija se ne ujema s filtrom."
+  "activityNoMatch": "Nobena transakcija se ne ujema s filtrom.",
+  "portfolioImportDuplicates": "{count, plural, one{Izpuščena je {count} že zabeležena} two{Izpuščeni sta {count} že zabeleženi} few{Izpuščene so {count} že zabeležene} other{Izpuščenih je {count} že zabeleženih}}"
 }

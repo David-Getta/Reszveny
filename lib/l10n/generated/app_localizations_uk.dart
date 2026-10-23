@@ -1797,10 +1797,10 @@ class AppLocalizationsUk extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Додано $count купівлі',
-      many: 'Додано $count купівель',
-      few: 'Додано $count купівлі',
-      one: 'Додано $count купівлю',
+      other: 'Додано $count операції',
+      many: 'Додано $count операцій',
+      few: 'Додано $count операції',
+      one: 'Додано $count операцію',
     );
     return '$_temp0';
   }
@@ -2867,6 +2867,19 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Немає операцій, що відповідають фільтру.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count вже є, не додано',
+      many: '$count вже є, не додано',
+      few: '$count вже є, не додано',
+      one: '$count вже є, не додано',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Задати ціль';

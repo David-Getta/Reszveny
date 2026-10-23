@@ -470,7 +470,7 @@
   "portfolioImport": "Leta kutoka CSV",
   "portfolioImportHint": "Bandika ununuzi mmoja kwa kila mstari: ticker, idadi, bei, sarafu, tarehe (YYYY-MM-DD). Safu wima zinaweza kutenganishwa kwa koma, nukta-koma au tabo; mstari wa vichwa ni wa hiari.",
   "portfolioImportButton": "Leta",
-  "portfolioImported": "{count, plural, =1{Ununuzi 1 umeongezwa} other{Manunuzi {count} yameongezwa}}",
+  "portfolioImported": "{count, plural, =1{Muamala 1 umeongezwa} other{Miamala {count} imeongezwa}}",
   "portfolioImportSkipped": "{count, plural, =1{Mstari 1 umerukwa} other{Mistari {count} imerukwa}}",
   "syncInfo": "Jalada la hisa, vipendwa, arifa za bei na madokezo husawazishwa kwenye vifaa vyako vyote.",
   "syncLast": "Ilisawazishwa mwisho {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Hariri gawio · {symbol}",
   "activityTitle": "Miamala yote",
   "activitySearchHint": "Chuja kwa ticker",
-  "activityNoMatch": "Hakuna muamala unaolingana na kichujio."
+  "activityNoMatch": "Hakuna muamala unaolingana na kichujio.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 tayari umerekodiwa, haukuongezwa} other{{count} tayari imerekodiwa, haikuongezwa}}"
 }

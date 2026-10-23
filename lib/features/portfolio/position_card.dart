@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
+import '../../core/models/price_history.dart';
 import '../../core/models/stock_details.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
@@ -9,6 +10,7 @@ import '../../widgets/metric_hint.dart';
 import '../stock_detail/widgets/section_card.dart';
 import 'annual_return.dart';
 import 'dividend_forecast.dart';
+import 'portfolio_history.dart' show benchmarkComparison, benchmarkOf;
 import 'purchases_sheet.dart';
 import 'portfolio_valuation.dart';
 
@@ -138,8 +140,75 @@ class PositionCard extends StatelessWidget {
                           '${l10n.portfolioDividendAround(fmt.date(x.date))} · ${approxMoney(fmt, x.amount, x.currency)}',
                     ),
               ],
+              if (details.history case final h?) _VersusIndex(symbol: pos.symbol, currency: ccy, history: h),
             ],
           ),
+        );
+      },
+    );
+  }
+}
+
+/// A pozíció a választott indexhez mérve: mintha minden vétel összegét ugyanazon
+/// a napon az indexkövető alapba tetted volna (és eladáskor ugyanannyit vettél
+/// volna ki). Csak ha minden tételnek van dátuma, és az index-sor a legelső
+/// vételig visszaér; az index maga nem méri önmagát.
+class _VersusIndex extends StatefulWidget {
+  const _VersusIndex({required this.symbol, required this.currency, required this.history});
+
+  final String symbol;
+  final String currency;
+  final PriceHistory history;
+
+  @override
+  State<_VersusIndex> createState() => _VersusIndexState();
+}
+
+class _VersusIndexState extends State<_VersusIndex> {
+  Future<PriceHistory>? _index;
+  String? _indexSymbol;
+
+  @override
+  Widget build(BuildContext context) {
+    final services = AppServices.of(context);
+    // Az index a portfólió oldalán választható: a váltást itt is követi.
+    return ListenableBuilder(listenable: services.preferences, builder: (context, _) => _figure(context, services));
+  }
+
+  Widget _figure(BuildContext context, AppServices services) {
+    final bench = benchmarkOf(services.preferences.benchmark);
+    if (bench.symbol == widget.symbol.toUpperCase()) return const SizedBox.shrink();
+    // Indexváltáskor újratöltés (a gyorsítótárból, ha friss).
+    if (_indexSymbol != bench.symbol) {
+      _indexSymbol = bench.symbol;
+      _index = services.marketData.history(bench.symbol);
+    }
+    return FutureBuilder<PriceHistory>(
+      future: _index,
+      builder: (context, snap) {
+        final index = snap.data;
+        if (index == null || index.points.length < 2) return const SizedBox.shrink();
+        final lots = [
+          for (final l in services.portfolio.adjustedLots)
+            if (l.symbol == widget.symbol && l.currency == widget.currency) l,
+        ];
+        final start = index.points.first.time.subtract(const Duration(days: 7));
+        if (lots.isEmpty || lots.any((l) => l.date == null || l.date!.isBefore(start))) {
+          return const SizedBox.shrink();
+        }
+        final c = benchmarkComparison(lots, {widget.symbol: widget.history}, index, (_) => 1);
+        if (c == null) return const SizedBox.shrink();
+        final l10n = AppLocalizations.of(context);
+        final p = AppPalette.of(context);
+        final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
+        final points = fmt.number(c.difference.abs(), decimals: 1);
+        return MetricFigure(
+          key: const ValueKey('position-vs-index'),
+          label: l10n.benchmarkTitleIndex,
+          value: '${bench.name} ${fmt.percent(c.benchmarkGain, withSign: true)}',
+          sub: c.difference >= 0 ? l10n.benchmarkAhead(points) : l10n.benchmarkBehind(points),
+          subColor: gainColor(p, c.difference),
+          hint: l10n.benchmarkHintIndex,
         );
       },
     );

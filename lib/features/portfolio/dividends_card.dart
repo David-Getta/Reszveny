@@ -383,19 +383,23 @@ class _AddDividendDialog extends StatefulWidget {
 class _AddDividendDialogState extends State<_AddDividendDialog> {
   late final _symbol = TextEditingController(text: widget.symbol ?? '');
   // Javításkor a tárolt összeg pontosan (pl. 12,345), új felvételnél két tizedesre.
-  // A tizedesjel a nyelvé: a [parseAmount] a „12.345”-öt németül 12345-nek olvasná.
+  // Tizedesvesszős nyelven vesszővel: a [parseAmount] a „12.345”-öt németül
+  // 12345-nek olvasná (más tizedesjelet, pl. a perzsa „٫”-t nem ismer – ott pont).
   late final _amount = TextEditingController(
     text: switch ((widget.amount, widget.editing)) {
       (null, _) => '',
       (final a?, null) => a.toStringAsFixed(2),
-      (final a?, _) => exactNumber(
-        a,
-      ).replaceFirst('.', Fmt(Localizations.localeOf(context).toString()).decimalSeparator),
+      (final a?, _) => switch (Fmt(Localizations.localeOf(context).toString()).decimalSeparator) {
+        ',' => exactNumber(a).replaceFirst('.', ','),
+        _ => exactNumber(a),
+      },
     },
   );
   late final _currency = TextEditingController(text: widget.currency);
-  late DateTime _date = switch (widget.date) {
-    final d? when widget.editing != null || !d.isAfter(DateTime.now()) => d,
+  // Javításkor a tárolt nap marad (dátum nélkül is); újnál a megadott, ha nem jövőbeli.
+  late DateTime? _date = switch (widget.date) {
+    _ when widget.editing != null => widget.editing!.date,
+    final d? when !d.isAfter(DateTime.now()) => d,
     _ => DateTime.now(),
   };
   bool _saving = false;
@@ -405,12 +409,16 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
 
   /// A számla mezője (csak ha már van számla); alapból a megadott, különben ahol
   /// a részvényből a legtöbb van.
-  late String? _account =
+  late String? _account = switch (widget.editing) {
+    // Javításkor a tárolt számla (a számla nélküli is az marad).
+    final e? => e.account,
+    null =>
       widget.account ??
-      switch (widget.symbol) {
-        final s? => AppServices.of(context).portfolio.mainAccountOf(s),
-        _ => null,
-      };
+          switch (widget.symbol) {
+            final s? => AppServices.of(context).portfolio.mainAccountOf(s),
+            _ => null,
+          },
+  };
 
   static final _symbolPattern = RegExp(r'^[A-Z0-9][A-Z0-9.\-:^]{0,14}$');
 

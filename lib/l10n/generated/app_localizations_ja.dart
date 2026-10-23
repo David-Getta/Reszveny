@@ -1694,8 +1694,8 @@ class AppLocalizationsJa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count 件の購入を追加しました',
-      one: '1 件の購入を追加しました',
+      other: '$count 件の取引を追加しました',
+      one: '1 件の取引を追加しました',
     );
     return '$_temp0';
   }
@@ -2706,6 +2706,17 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get activityNoMatch => '絞り込み条件に一致する取引はありません。';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 件は記録済みのため除外しました',
+      one: '1 件は記録済みのため除外しました',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => '目標を設定';

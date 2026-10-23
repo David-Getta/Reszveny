@@ -470,7 +470,7 @@
   "portfolioImport": "Ներմուծել CSV-ից",
   "portfolioImportHint": "Տեղադրեք մեկ գնում յուրաքանչյուր տողում՝ թիքեր, քանակ, գին, արժույթ, ամսաթիվ (ՏՏՏՏ-ԱԱ-ՕՕ)։ Սյունակները կարող են բաժանվել ստորակետերով, կետ-ստորակետերով կամ ներդիրներով (tab)։ Վերնագրի տողը պարտադիր չէ։",
   "portfolioImportButton": "Ներմուծել",
-  "portfolioImported": "{count, plural, =1{Ավելացվեց 1 գնում} other{Ավելացվեց {count} գնում}}",
+  "portfolioImported": "{count, plural, one{Ավելացվեց {count} գործարք} other{Ավելացվեց {count} գործարք}}",
   "portfolioImportSkipped": "{count, plural, =1{Բաց թողնվեց 1 տող} other{Բաց թողնվեց {count} տող}}",
   "syncInfo": "Պորտֆելը, ընտրյալները, գնային ծանուցումները և նշումները համաժամացվում են ձեր բոլոր սարքերում։",
   "syncLast": "Վերջին համաժամացումը՝ {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Խմբագրել շահաբաժինը · {symbol}",
   "activityTitle": "Բոլոր գործարքները",
   "activitySearchHint": "Զտել ըստ թիքերի",
-  "activityNoMatch": "Զտիչին համապատասխանող գործարքներ չկան։"
+  "activityNoMatch": "Զտիչին համապատասխանող գործարքներ չկան։",
+  "portfolioImportDuplicates": "{count, plural, one{{count} արդեն գրանցված էր, չավելացվեց} other{{count} արդեն գրանցված էր, չավելացվեց}}"
 }

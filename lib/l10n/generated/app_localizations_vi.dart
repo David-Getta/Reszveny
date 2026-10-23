@@ -1742,8 +1742,8 @@ class AppLocalizationsVi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Đã thêm $count lần mua',
-      one: 'Đã thêm 1 lần mua',
+      other: 'Đã thêm $count giao dịch',
+      one: 'Đã thêm 1 giao dịch',
     );
     return '$_temp0';
   }
@@ -2782,6 +2782,17 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Không có giao dịch nào khớp với bộ lọc.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count mục đã được ghi trước đó, không thêm lại',
+      one: '1 mục đã được ghi trước đó, không thêm lại',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Đặt mục tiêu';

@@ -218,6 +218,53 @@ class CsvImport {
       if (l.isin case final i? when l.symbol.isEmpty) (isin: i, currency: l.currency),
   };
 
+  /// Csak a még nem rögzített sorok ([lots] és [dividends] a portfólióban már
+  /// meglévők), és hány maradt ki ismétlésként. Ugyanaz a sor (ticker, darab, ár,
+  /// nap, irány, számla; osztaléknál ticker, összeg, nap, számla) annyiszor marad ki,
+  /// ahányszor már rögzítve van: a fájlon belüli két azonos részteljesítés elsőre
+  /// mindkettő bekerül, a frissebb export újbóli beolvasásakor egyik sem.
+  ({CsvImport rest, int duplicates}) withoutRecorded(List<PortfolioLot> lots, List<DividendRecord> dividends) {
+    String day(DateTime? d) => d?.toIso8601String().substring(0, 10) ?? '';
+    // A számla kis- és nagybetűje nem számít (a tároló a meglévő írásmódot használja).
+    String acc(String? a) => a?.toLowerCase() ?? '';
+    String lotKey(String symbol, double q, double p, DateTime? d, bool sell, String? a) =>
+        '$symbol|$q|$p|${day(d)}|$sell|${acc(a)}';
+    String dividendKey(String symbol, double amount, DateTime? d, String? a) => '$symbol|$amount|${day(d)}|${acc(a)}';
+    final recorded = <String, int>{};
+    void count(String k) => recorded[k] = (recorded[k] ?? 0) + 1;
+    // Egy már rögzített példány „elhasználása”; `true`, ha volt ilyen.
+    bool take(String k) {
+      final n = recorded[k] ?? 0;
+      if (n > 0) recorded[k] = n - 1;
+      return n > 0;
+    }
+
+    for (final l in lots) {
+      count(lotKey(l.symbol, l.quantity, l.price, l.date, l.sell, l.account));
+    }
+    for (final d in dividends) {
+      count('d|${dividendKey(d.symbol, d.amount, d.date, d.account)}');
+    }
+    var duplicates = 0;
+    final newLots = <ImportedLot>[];
+    for (final l in this.lots) {
+      if (take(lotKey(l.symbol, l.quantity, l.price, l.date, l.sell, l.account))) {
+        duplicates++;
+      } else {
+        newLots.add(l);
+      }
+    }
+    final newDividends = <ImportedDividend>[];
+    for (final d in this.dividends) {
+      if (take('d|${dividendKey(d.symbol, d.amount, d.date, d.account)}')) {
+        duplicates++;
+      } else {
+        newDividends.add(d);
+      }
+    }
+    return (rest: CsvImport(newLots, skipped, dividends: newDividends, splits: splits), duplicates: duplicates);
+  }
+
   /// A ticker nélküli sorok a feloldott tickerrel ([symbols]: ISIN és pénznem →
   /// ticker); amit nem sikerült feloldani, kimarad (a kihagyottak közé számít).
   CsvImport withSymbols(Map<IsinKey, String> symbols) {

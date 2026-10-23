@@ -470,7 +470,7 @@
   "portfolioImport": "استيراد من CSV",
   "portfolioImportHint": "الصق عملية شراء واحدة في كل سطر: رمز السهم، الكمية، السعر، العملة، التاريخ (YYYY-MM-DD). يمكن فصل الأعمدة بفواصل أو فواصل منقوطة أو علامات جدولة؛ سطر العناوين اختياري.",
   "portfolioImportButton": "استيراد",
-  "portfolioImported": "{count, plural, =1{تمت إضافة عملية شراء واحدة} =2{تمت إضافة عمليتي شراء} few{تمت إضافة {count} عمليات شراء} many{تمت إضافة {count} عملية شراء} other{تمت إضافة {count} عملية شراء}}",
+  "portfolioImported": "{count, plural, =1{تمت إضافة معاملة واحدة} =2{تمت إضافة معاملتين} few{تمت إضافة {count} معاملات} many{تمت إضافة {count} معاملة} other{تمت إضافة {count} معاملة}}",
   "portfolioImportSkipped": "{count, plural, =1{تم تخطي سطر واحد} =2{تم تخطي سطرين} few{تم تخطي {count} أسطر} many{تم تخطي {count} سطراً} other{تم تخطي {count} سطر}}",
   "syncInfo": "تتم مزامنة المحفظة والمفضلة وتنبيهات السعر والملاحظات على جميع أجهزتك.",
   "syncLast": "آخر مزامنة {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "تعديل توزيعة الأرباح · {symbol}",
   "activityTitle": "جميع المعاملات",
   "activitySearchHint": "تصفية حسب رمز السهم",
-  "activityNoMatch": "لا توجد معاملات مطابقة لعامل التصفية."
+  "activityNoMatch": "لا توجد معاملات مطابقة لعامل التصفية.",
+  "portfolioImportDuplicates": "{count, plural, =1{واحدة مسجّلة مسبقًا، لم تُضَف} =2{اثنتان مسجّلتان مسبقًا، لم تُضافا} few{{count} مسجّلة مسبقًا، لم تُضَف} many{{count} مسجّلة مسبقًا، لم تُضَف} other{{count} مسجّلة مسبقًا، لم تُضَف}}"
 }

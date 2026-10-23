@@ -1784,9 +1784,9 @@ class AppLocalizationsHr extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Dodano je $count kupnji',
-      few: 'Dodane su $count kupnje',
-      one: 'Dodana je $count kupnja',
+      other: 'Dodano je $count transakcija',
+      few: 'Dodane su $count transakcije',
+      one: 'Dodana je $count transakcija',
     );
     return '$_temp0';
   }
@@ -2839,6 +2839,18 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Nijedna transakcija ne odgovara filtru.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izostavljeno je $count već zabilježenih',
+      few: 'Izostavljene su $count već zabilježene',
+      one: 'Izostavljena je $count već zabilježena',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Postavi cilj';

@@ -470,7 +470,7 @@
   "portfolioImport": "CSV ནས་ནང་འདྲེན།",
   "portfolioImportHint": "ཕྲེང་རེ་རེར་ཉོ་སྒྲུབ་རེ་སྦྱོར་རོགས། ཧུར་ཁག་ཨང་རྟགས། གྲངས་ཀ། རིན་གོང་། དངུལ་ལོར། ཚེས་གྲངས། (YYYY-MM-DD) ཀ་བ་རྣམས་ , དང་ ; ཡང་ན་ tab ཡིས་ཁ་འབྱེད་ཆོག མགོ་བྱང་གི་ཕྲེང་ནི་གདམ་ཀ་ཡིན།",
   "portfolioImportButton": "ནང་འདྲེན།",
-  "portfolioImported": "{count, plural, other{ཉོ་སྒྲུབ་ {count} ཁ་སྣོན་བྱས་ཟིན།}}",
+  "portfolioImported": "{count, plural, =1{ཉོ་འཚོང་ 1 ཁ་སྣོན་བྱས་ཟིན།} other{ཉོ་འཚོང་ {count} ཁ་སྣོན་བྱས་ཟིན།}}",
   "portfolioImportSkipped": "{count, plural, other{ཕྲེང་ {count} མཆོང་ཟིན།}}",
   "syncInfo": "མ་འཇོག་ཚོགས་སྡེབ་དང་། དགའ་མོས། གོང་ཚད་ཉེན་བརྡ། ཟིན་ཐོ་བཅས་ཁྱེད་ཀྱི་སྒྲིག་ཆས་ཚང་མར་མཉམ་སྒྲིག་བྱེད།",
   "syncLast": "མཐའ་མའི་མཉམ་སྒྲིག: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "ཁེ་བགོས་རྩོམ་སྒྲིག · {symbol}",
   "activityTitle": "ཉོ་འཚོང་ཡོངས།",
   "activitySearchHint": "ཨང་རྟགས་ལྟར་འདེམས་སྒྲུག",
-  "activityNoMatch": "འདེམས་སྒྲུག་དང་མཐུན་པའི་ཉོ་འཚོང་མེད།"
+  "activityNoMatch": "འདེམས་སྒྲུག་དང་མཐུན་པའི་ཉོ་འཚོང་མེད།",
+  "portfolioImportDuplicates": "{count, plural, =1{1 སྔར་ནས་ཐོ་འགོད་ཡོད་པས་ཁ་སྣོན་མ་བྱས།} other{{count} སྔར་ནས་ཐོ་འགོད་ཡོད་པས་ཁ་སྣོན་མ་བྱས།}}"
 }

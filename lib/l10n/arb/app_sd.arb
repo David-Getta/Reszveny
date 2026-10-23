@@ -470,7 +470,7 @@
   "portfolioImport": "CSV مان امپورٽ ڪريو",
   "portfolioImportHint": "هر قطار ۾ هڪ خريداري پيسٽ ڪريو: ٽڪر، مقدار، قيمت، ڪرنسي، تاريخ (YYYY-MM-DD). ڪالم ڪاما، سيمي ڪالن يا ٽيب سان الڳ ٿي سگهن ٿا؛ هيڊر واري قطار اختياري آهي.",
   "portfolioImportButton": "امپورٽ ڪريو",
-  "portfolioImported": "{count, plural, =1{1 خريداري شامل ڪئي وئي} other{{count} خريداريون شامل ڪيون ويون}}",
+  "portfolioImported": "{count, plural, =1{1 ليڻ دين شامل ڪيو ويو} other{{count} ليڻ دين شامل ڪيا ويا}}",
   "portfolioImportSkipped": "{count, plural, =1{1 قطار ڇڏي وئي} other{{count} قطارون ڇڏيون ويون}}",
   "syncInfo": "پورٽ فوليو، پسنديده، قيمت جا الرٽ ۽ نوٽس توهان جي سڀني ڊوائيسن تي سنڪ ٿين ٿا.",
   "syncLast": "آخري سنڪ: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "ڊيويڊنڊ ۾ ترميم ڪريو · {symbol}",
   "activityTitle": "سڀ ليڻ دين",
   "activitySearchHint": "ٽڪر مطابق فلٽر ڪريو",
-  "activityNoMatch": "فلٽر سان ڪو به ليڻ دين نه ٿو ملي."
+  "activityNoMatch": "فلٽر سان ڪو به ليڻ دين نه ٿو ملي.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 اڳ ۾ ئي رڪارڊ ٿيل آهي، شامل نه ڪيو ويو} other{{count} اڳ ۾ ئي رڪارڊ ٿيل آهن، شامل نه ڪيا ويا}}"
 }

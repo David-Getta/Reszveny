@@ -470,7 +470,7 @@
   "portfolioImport": "Ngenisa ukusuka kwi-CSV",
   "portfolioImportHint": "Ncamathisela into enye ethengiweyo kumgca ngamnye: uphawu lwe-ticker, isixa, ixabiso, imali, umhla (YYYY-MM-DD). Iikholamu zingahlulwa ngeekoma, iisemikholoni okanye iithebhu; umgca wesihloko awunyanzelekanga.",
   "portfolioImportButton": "Ngenisa",
-  "portfolioImported": "{count, plural, =1{Kongezwe into enye ethengiweyo} other{Kongezwe izinto ezithengiweyo ezi-{count}}}",
+  "portfolioImported": "{count, plural, =1{Kongezwe intengiselwano enye} other{Kongezwe iintengiselwano ezi-{count}}}",
   "portfolioImportSkipped": "{count, plural, =1{Kutsitywe umgca omnye} other{Kutsitywe imigca emi-{count}}}",
   "syncInfo": "Ipotifoliyo, ezithandwayo, izilumkiso zamaxabiso namanqaku zingqamaniswa kuzo zonke izixhobo zakho.",
   "syncLast": "Ukungqamanisa kokugqibela: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Hlela isahlulo · {symbol}",
   "activityTitle": "Zonke iintengiselwano",
   "activitySearchHint": "Hluza nge-ticker",
-  "activityNoMatch": "Akukho ntengiselwano ihambelana nesihluzi."
+  "activityNoMatch": "Akukho ntengiselwano ihambelana nesihluzi.",
+  "portfolioImportDuplicates": "{count, plural, =1{Enye sele irekhodiwe, ayongezwanga} other{Ezi-{count} sele zirekhodiwe, azongezwanga}}"
 }

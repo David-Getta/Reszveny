@@ -470,7 +470,7 @@
   "portfolioImport": "CSV ಯಿಂದ ಆಮದು ಮಾಡಿ",
   "portfolioImportHint": "ಪ್ರತಿ ಸಾಲಿಗೆ ಒಂದು ಖರೀದಿಯನ್ನು ಅಂಟಿಸಿ: ಟಿಕರ್ ಚಿಹ್ನೆ, ಪ್ರಮಾಣ, ಬೆಲೆ, ಕರೆನ್ಸಿ, ದಿನಾಂಕ (YYYY-MM-DD). ಕಾಲಮ್‌ಗಳನ್ನು ಅಲ್ಪವಿರಾಮ, ಅರ್ಧವಿರಾಮ ಅಥವಾ ಟ್ಯಾಬ್‌ಗಳಿಂದ ಬೇರ್ಪಡಿಸಬಹುದು; ಶೀರ್ಷಿಕೆ ಸಾಲು ಐಚ್ಛಿಕ.",
   "portfolioImportButton": "ಆಮದು ಮಾಡಿ",
-  "portfolioImported": "{count, plural, =1{1 ಖರೀದಿ ಸೇರಿಸಲಾಗಿದೆ} other{{count} ಖರೀದಿಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ}}",
+  "portfolioImported": "{count, plural, one{{count} ವಹಿವಾಟು ಸೇರಿಸಲಾಗಿದೆ} other{{count} ವಹಿವಾಟುಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ}}",
   "portfolioImportSkipped": "{count, plural, =1{1 ಸಾಲು ಬಿಟ್ಟುಬಿಡಲಾಗಿದೆ} other{{count} ಸಾಲುಗಳನ್ನು ಬಿಟ್ಟುಬಿಡಲಾಗಿದೆ}}",
   "syncInfo": "ಪೋರ್ಟ್‌ಫೋಲಿಯೊ, ಮೆಚ್ಚಿನವುಗಳು, ಬೆಲೆ ಅಲರ್ಟ್‌ಗಳು ಮತ್ತು ಟಿಪ್ಪಣಿಗಳು ನಿಮ್ಮ ಎಲ್ಲಾ ಸಾಧನಗಳಲ್ಲಿ ಸಿಂಕ್ ಆಗುತ್ತವೆ.",
   "syncLast": "ಕೊನೆಯ ಸಿಂಕ್: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "ಡಿವಿಡೆಂಡ್ ಎಡಿಟ್ ಮಾಡಿ · {symbol}",
   "activityTitle": "ಎಲ್ಲಾ ವಹಿವಾಟುಗಳು",
   "activitySearchHint": "ಟಿಕರ್ ಪ್ರಕಾರ ಫಿಲ್ಟರ್ ಮಾಡಿ",
-  "activityNoMatch": "ಫಿಲ್ಟರ್‌ಗೆ ಹೊಂದುವ ಯಾವುದೇ ವಹಿವಾಟುಗಳಿಲ್ಲ."
+  "activityNoMatch": "ಫಿಲ್ಟರ್‌ಗೆ ಹೊಂದುವ ಯಾವುದೇ ವಹಿವಾಟುಗಳಿಲ್ಲ.",
+  "portfolioImportDuplicates": "{count, plural, one{{count} ಈಗಾಗಲೇ ದಾಖಲಾಗಿದೆ, ಬಿಡಲಾಗಿದೆ} other{{count} ಈಗಾಗಲೇ ದಾಖಲಾಗಿವೆ, ಬಿಡಲಾಗಿದೆ}}"
 }

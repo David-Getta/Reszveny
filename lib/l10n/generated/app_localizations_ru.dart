@@ -1799,10 +1799,10 @@ class AppLocalizationsRu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Добавлено $count покупки',
-      many: 'Добавлено $count покупок',
-      few: 'Добавлено $count покупки',
-      one: 'Добавлена $count покупка',
+      other: 'Добавлено $count сделки',
+      many: 'Добавлено $count сделок',
+      few: 'Добавлено $count сделки',
+      one: 'Добавлена $count сделка',
     );
     return '$_temp0';
   }
@@ -2866,6 +2866,19 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Нет сделок, соответствующих фильтру.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count уже есть, не добавлено',
+      many: '$count уже есть, не добавлено',
+      few: '$count уже есть, не добавлены',
+      one: '$count уже есть, не добавлена',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Задать цель';

@@ -1778,9 +1778,9 @@ class AppLocalizationsRo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Au fost adăugate $count de cumpărări',
-      few: 'Au fost adăugate $count cumpărări',
-      one: 'A fost adăugată $count cumpărare',
+      other: 'Au fost adăugate $count de tranzacții',
+      few: 'Au fost adăugate $count tranzacții',
+      one: 'A fost adăugată $count tranzacție',
     );
     return '$_temp0';
   }
@@ -2833,6 +2833,18 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Nicio tranzacție nu se potrivește filtrului.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count deja înregistrate, excluse',
+      few: '$count deja înregistrate, excluse',
+      one: '$count deja înregistrată, exclusă',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Setează un obiectiv';

@@ -1757,8 +1757,8 @@ class AppLocalizationsCeb extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Nadugang ang $count ka pagpalit',
-      one: 'Nadugang ang 1 ka pagpalit',
+      other: 'Nadugang ang $count ka transaksyon',
+      one: 'Nadugang ang 1 ka transaksyon',
     );
     return '$_temp0';
   }
@@ -2803,6 +2803,17 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Walay transaksyon nga mitugma sa filter.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count narekord na, wala gilakip',
+      one: '1 narekord na, wala gilakip',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Pagbutang og tumong';

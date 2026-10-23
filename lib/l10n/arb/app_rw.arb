@@ -470,7 +470,7 @@
   "portfolioImport": "Injiza uvuye muri CSV",
   "portfolioImportHint": "Omekamo ikintu kimwe waguze kuri buri murongo: ticker, ingano, igiciro, ifaranga, itariki (YYYY-MM-DD). Inkingi zishobora gutandukanywa n'akitso, akabago n'akitso cyangwa tab; umurongo w'imitwe si itegeko.",
   "portfolioImportButton": "Injiza",
-  "portfolioImported": "{count, plural, =1{Hongewemo icyaguzwe 1} other{Hongewemo ibyaguzwe {count}}}",
+  "portfolioImported": "{count, plural, =1{Hongewemo igikorwa 1 cyo kugura cyangwa kugurisha} other{Hongewemo ibikorwa {count} byo kugura no kugurisha}}",
   "portfolioImportSkipped": "{count, plural, =1{Umurongo 1 wasimbutswe} other{Imirongo {count} yasimbutswe}}",
   "syncInfo": "Ishoramari, ibyo ukunda, imenyesha ry'ibiciro n'ibyo wanditse bihuzwa ku bikoresho byawe byose.",
   "syncLast": "Ihuza riheruka: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Hindura idividende · {symbol}",
   "activityTitle": "Ibyaguzwe n'ibyagurishijwe byose",
   "activitySearchHint": "Shungura ukurikije ticker",
-  "activityNoMatch": "Nta gikorwa cyo kugura cyangwa kugurisha gihuye n'ibyo washunguye."
+  "activityNoMatch": "Nta gikorwa cyo kugura cyangwa kugurisha gihuye n'ibyo washunguye.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 cyari gisanzwe cyanditswe, nticyongewemo} other{{count} byari bisanzwe byanditswe, ntibyongewemo}}"
 }

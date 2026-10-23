@@ -470,7 +470,7 @@
   "portfolioImport": "Lowetsani kuchokera ku CSV",
   "portfolioImportHint": "Matani chogula chimodzi pa mzere uliwonse: ticker, kuchuluka, mtengo, ndalama, tsiku (YYYY-MM-DD). Mizati ingalekanitsidwe ndi koma, semikoloni kapena tabu; mzere wa mitu ndi wosankha.",
   "portfolioImportButton": "Lowetsani",
-  "portfolioImported": "{count, plural, =1{Chogula 1 chawonjezedwa} other{Zogula {count} zawonjezedwa}}",
+  "portfolioImported": "{count, plural, =1{Kugula kapena kugulitsa 1 kwawonjezedwa} other{Zogula ndi zogulitsa {count} zawonjezedwa}}",
   "portfolioImportSkipped": "{count, plural, =1{Mzere 1 wadumphidwa} other{Mizere {count} yadumphidwa}}",
   "syncInfo": "Masheya anu, zokondedwa, zidziwitso za mtengo ndi zolemba zimalumikizidwa pa zipangizo zanu zonse.",
   "syncLast": "Kulumikiza komaliza: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Sinthani dividendi · {symbol}",
   "activityTitle": "Zogula ndi zogulitsa zonse",
   "activitySearchHint": "Sefani ndi ticker",
-  "activityNoMatch": "Palibe zogula kapena zogulitsa zofanana ndi zomwe mwasankha."
+  "activityNoMatch": "Palibe zogula kapena zogulitsa zofanana ndi zomwe mwasankha.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 chinalembedwa kale, sichinawonjezedwe} other{{count} zinalembedwa kale, sizinawonjezedwe}}"
 }

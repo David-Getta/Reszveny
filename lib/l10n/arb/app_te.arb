@@ -470,7 +470,7 @@
   "portfolioImport": "CSV నుండి దిగుమతి చేయి",
   "portfolioImportHint": "ప్రతి పంక్తికి ఒక కొనుగోలును అతికించండి: టికర్, పరిమాణం, ధర, కరెన్సీ, తేదీ (YYYY-MM-DD). నిలువు వరుసలను కామా, సెమికోలన్ లేదా ట్యాబ్‌తో వేరు చేయవచ్చు; శీర్షిక పంక్తి ఐచ్ఛికం.",
   "portfolioImportButton": "దిగుమతి చేయి",
-  "portfolioImported": "{count, plural, =1{1 కొనుగోలు జోడించబడింది} other{{count} కొనుగోళ్లు జోడించబడ్డాయి}}",
+  "portfolioImported": "{count, plural, =1{1 లావాదేవీ జోడించబడింది} other{{count} లావాదేవీలు జోడించబడ్డాయి}}",
   "portfolioImportSkipped": "{count, plural, =1{1 పంక్తి దాటవేయబడింది} other{{count} పంక్తులు దాటవేయబడ్డాయి}}",
   "syncInfo": "పోర్ట్‌ఫోలియో, ఇష్టమైనవి, ధర హెచ్చరికలు మరియు గమనికలు మీ అన్ని పరికరాల్లో సింక్ అవుతాయి.",
   "syncLast": "చివరి సింక్: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "డివిడెండ్‌ను సవరించండి · {symbol}",
   "activityTitle": "అన్ని లావాదేవీలు",
   "activitySearchHint": "టికర్ ప్రకారం ఫిల్టర్ చేయండి",
-  "activityNoMatch": "ఫిల్టర్‌కు సరిపోలే లావాదేవీలు లేవు."
+  "activityNoMatch": "ఫిల్టర్‌కు సరిపోలే లావాదేవీలు లేవు.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 ఇప్పటికే నమోదై ఉంది, జోడించలేదు} other{{count} ఇప్పటికే నమోదై ఉన్నాయి, జోడించలేదు}}"
 }

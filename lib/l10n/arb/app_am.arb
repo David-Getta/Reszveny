@@ -470,7 +470,7 @@
   "portfolioImport": "ከCSV አስመጣ",
   "portfolioImportHint": "በእያንዳንዱ መስመር አንድ ግዢ ይለጥፉ፦ የአክሲዮን ምልክት፣ ብዛት፣ ዋጋ፣ ምንዛሬ፣ ቀን (YYYY-MM-DD)። ዓምዶቹ በኮማ፣ በሴሚኮሎን ወይም በታብ ሊለያዩ ይችላሉ፤ የርዕስ መስመሩ አማራጭ ነው።",
   "portfolioImportButton": "አስመጣ",
-  "portfolioImported": "{count, plural, =1{1 ግዢ ታክሏል} other{{count} ግዢዎች ታክለዋል}}",
+  "portfolioImported": "{count, plural, one{{count} ግብይት ታክሏል} other{{count} ግብይቶች ታክለዋል}}",
   "portfolioImportSkipped": "{count, plural, =1{1 መስመር ተዘሏል} other{{count} መስመሮች ተዘለዋል}}",
   "syncInfo": "ፖርትፎሊዮ፣ ተወዳጆች፣ የዋጋ ማንቂያዎች እና ማስታወሻዎች በሁሉም መሣሪያዎችዎ ላይ ይሰምራሉ።",
   "syncLast": "ለመጨረሻ ጊዜ የሰመረው፦ {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "የትርፍ ድርሻ አርትዕ · {symbol}",
   "activityTitle": "ሁሉም ግብይቶች",
   "activitySearchHint": "በምልክት አጣራ",
-  "activityNoMatch": "ከማጣሪያው ጋር የሚዛመድ ግብይት የለም።"
+  "activityNoMatch": "ከማጣሪያው ጋር የሚዛመድ ግብይት የለም።",
+  "portfolioImportDuplicates": "{count, plural, one{{count} ቀድሞ ተመዝግቧል፣ ተትቷል} other{{count} ቀድመው ተመዝግበዋል፣ ተትተዋል}}"
 }

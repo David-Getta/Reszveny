@@ -470,7 +470,7 @@
   "portfolioImport": "CSVからインポート",
   "portfolioImportHint": "1行に1件の購入を貼り付けてください：ティッカーシンボル、数量、価格、通貨、日付（YYYY-MM-DD）。列はカンマ、セミコロン、タブのいずれかで区切れます。見出し行は省略できます。",
   "portfolioImportButton": "インポート",
-  "portfolioImported": "{count, plural, =1{1 件の購入を追加しました} other{{count} 件の購入を追加しました}}",
+  "portfolioImported": "{count, plural, =1{1 件の取引を追加しました} other{{count} 件の取引を追加しました}}",
   "portfolioImportSkipped": "{count, plural, =1{1 行をスキップしました} other{{count} 行をスキップしました}}",
   "syncInfo": "ポートフォリオ、お気に入り、価格アラート、メモはすべてのデバイスで同期されます。",
   "syncLast": "最終同期：{time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "配当を編集 · {symbol}",
   "activityTitle": "すべての取引",
   "activitySearchHint": "ティッカーで絞り込み",
-  "activityNoMatch": "絞り込み条件に一致する取引はありません。"
+  "activityNoMatch": "絞り込み条件に一致する取引はありません。",
+  "portfolioImportDuplicates": "{count, plural, =1{1 件は記録済みのため除外しました} other{{count} 件は記録済みのため除外しました}}"
 }

@@ -470,7 +470,7 @@
   "portfolioImport": "Kotisa katuka na CSV",
   "portfolioImportHint": "Tula kisumbi kimosi na konso ndonga: kidimbu kia ticker, kiteso, ntalu, mbongo, kilumbu (YYYY-MM-DD). Bakolonne lenda kabwana na virgule, point-virgule to tabulation; ndonga ya ntu ke ya mfunu ve.",
   "portfolioImportButton": "Kotisa",
-  "portfolioImported": "{count, plural, =1{Kisumbi 1 me kota} other{Bisumbi {count} me kota}}",
+  "portfolioImported": "{count, plural, =1{Kusumba to kuteka 1 me yikama} other{Kusumba ti kuteka {count} me yikama}}",
   "portfolioImportSkipped": "{count, plural, =1{Ndonga 1 me bikama} other{Bandonga {count} me bikama}}",
   "syncInfo": "Portefeuille, bizolwa, nkebisu za ntalu ye ba note ke vandaka mpila mosi na bisadilu na nge yonso.",
   "syncLast": "Synchronisation ya nsuka: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Soba dividende · {symbol}",
   "activityTitle": "Kusumba ti kuteka yonso",
   "activitySearchHint": "Pona na ticker",
-  "activityNoMatch": "Ka kuena kusumba to kuteka ifwanene ti kupona yai ko."
+  "activityNoMatch": "Ka kuena kusumba to kuteka ifwanene ti kupona yai ko.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 me sonikwa dezia, ba yikaka yo ve} other{{count} me sonikwa dezia, ba yikaka yo ve}}"
 }

@@ -1753,8 +1753,8 @@ class AppLocalizationsTe extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count కొనుగోళ్లు జోడించబడ్డాయి',
-      one: '1 కొనుగోలు జోడించబడింది',
+      other: '$count లావాదేవీలు జోడించబడ్డాయి',
+      one: '1 లావాదేవీ జోడించబడింది',
     );
     return '$_temp0';
   }
@@ -2797,6 +2797,17 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'ఫిల్టర్‌కు సరిపోలే లావాదేవీలు లేవు.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ఇప్పటికే నమోదై ఉన్నాయి, జోడించలేదు',
+      one: '1 ఇప్పటికే నమోదై ఉంది, జోడించలేదు',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';

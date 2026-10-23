@@ -470,7 +470,7 @@
   "portfolioImport": "Importera från CSV",
   "portfolioImportHint": "Klistra in ett köp per rad: ticker, antal, pris, valuta, datum (ÅÅÅÅ-MM-DD). Kolumnerna kan avgränsas med komma, semikolon eller tabb; rubrikraden är valfri.",
   "portfolioImportButton": "Importera",
-  "portfolioImported": "{count, plural, =1{1 köp har lagts till} other{{count} köp har lagts till}}",
+  "portfolioImported": "{count, plural, =1{1 transaktion har lagts till} other{{count} transaktioner har lagts till}}",
   "portfolioImportSkipped": "{count, plural, =1{1 rad hoppades över} other{{count} rader hoppades över}}",
   "syncInfo": "Portfölj, favoriter, kurslarm och anteckningar synkroniseras mellan alla dina enheter.",
   "syncLast": "Senast synkroniserad {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Redigera utdelning · {symbol}",
   "activityTitle": "Alla transaktioner",
   "activitySearchHint": "Filtrera efter ticker",
-  "activityNoMatch": "Inga transaktioner matchar filtret."
+  "activityNoMatch": "Inga transaktioner matchar filtret.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 redan registrerad, utelämnad} other{{count} redan registrerade, utelämnade}}"
 }

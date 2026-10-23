@@ -1753,8 +1753,8 @@ class AppLocalizationsGn extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Oñembojoaju $count jejogua',
-      one: 'Oñembojoaju 1 jejogua',
+      other: 'Oñembojoaju $count jejogua ha ñemu',
+      one: 'Oñembojoaju 1 jejogua térã ñemu',
     );
     return '$_temp0';
   }
@@ -2798,6 +2798,17 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get activityNoMatch =>
       'Ndaipóri jejogua térã ñemu ojojoguáva filtro ndive.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count oĩma oñemboguapýva, noñembojoajúi',
+      one: '1 oĩma oñemboguapýva, noñembojoajúi',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';

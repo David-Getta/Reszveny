@@ -470,7 +470,7 @@
   "portfolioImport": "Bueja kumbukila mu CSV",
   "portfolioImportHint": "Teka tshisumbu tshimue ku mulongo wonso: tshimanyinu tshia ticker, bungi, mushinga, mfranga, dituku (YYYY-MM-DD). Bikolone bidi mua kutapulula ne virgule, point-virgule anyi tabulation; mulongo wa mutu ki mbwa bualu bukole to.",
   "portfolioImportButton": "Bueja",
-  "portfolioImported": "{count, plural, =1{Tshisumbu 1 tshiabuejibua} other{Bisumbu {count} biabuejibua}}",
+  "portfolioImported": "{count, plural, =1{Kusumba anyi kusumbisha 1 kuabuejibua} other{Kusumba ne kusumbisha {count} kuabuejibua}}",
   "portfolioImportSkipped": "{count, plural, =1{Mulongo 1 mushiyibua} other{Milongo {count} mishiyibua}}",
   "syncInfo": "Portefeuille, biudi musue, alerte ya mushinga ne mifundu bidi bimue ku bintu biebe bionso.",
   "syncLast": "Synchronisation ya ndekelu: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Shintulula dividende · {symbol}",
   "activityTitle": "Kusumba ne kusumbisha kuonso",
   "activitySearchHint": "Sungula ku ticker",
-  "activityNoMatch": "Katuena bapete kusumba anyi kusumbisha kuakanyine ne disungula."
+  "activityNoMatch": "Katuena bapete kusumba anyi kusumbisha kuakanyine ne disungula.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 mufunda kale, kayi musakidibua} other{{count} mifunda kale, kayi misakidibua}}"
 }

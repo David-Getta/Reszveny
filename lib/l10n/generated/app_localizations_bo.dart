@@ -1739,7 +1739,8 @@ class AppLocalizationsBo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'ཉོ་སྒྲུབ་ $count ཁ་སྣོན་བྱས་ཟིན།',
+      other: 'ཉོ་འཚོང་ $count ཁ་སྣོན་བྱས་ཟིན།',
+      one: 'ཉོ་འཚོང་ 1 ཁ་སྣོན་བྱས་ཟིན།',
     );
     return '$_temp0';
   }
@@ -2778,6 +2779,17 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'འདེམས་སྒྲུག་དང་མཐུན་པའི་ཉོ་འཚོང་མེད།';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count སྔར་ནས་ཐོ་འགོད་ཡོད་པས་ཁ་སྣོན་མ་བྱས།',
+      one: '1 སྔར་ནས་ཐོ་འགོད་ཡོད་པས་ཁ་སྣོན་མ་བྱས།',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';

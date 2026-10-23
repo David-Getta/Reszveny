@@ -470,7 +470,7 @@
   "portfolioImport": "Importa des de CSV",
   "portfolioImportHint": "Enganxa una compra per línia: símbol, quantitat, preu, divisa, data (AAAA-MM-DD). Les columnes es poden separar amb comes, punts i comes o tabulacions; la fila de capçalera és opcional.",
   "portfolioImportButton": "Importa",
-  "portfolioImported": "{count, plural, =1{S’ha afegit 1 compra} other{S’han afegit {count} compres}}",
+  "portfolioImported": "{count, plural, =1{S’ha afegit 1 transacció} other{S’han afegit {count} transaccions}}",
   "portfolioImportSkipped": "{count, plural, =1{S’ha omès 1 línia} other{S’han omès {count} línies}}",
   "syncInfo": "La cartera, els favorits, les alertes de preu i les notes se sincronitzen a tots els teus dispositius.",
   "syncLast": "Última sincronització: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Edita el dividend · {symbol}",
   "activityTitle": "Totes les transaccions",
   "activitySearchHint": "Filtra per ticker",
-  "activityNoMatch": "Cap transacció no coincideix amb el filtre."
+  "activityNoMatch": "Cap transacció no coincideix amb el filtre.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 ja registrada, descartada} other{{count} ja registrades, descartades}}"
 }

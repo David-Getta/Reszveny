@@ -53,8 +53,9 @@ List<ActivityEntry> activityEntries(
           for (final l in store.lots)
             if (l.account == account) l.symbol,
         };
+  // A tranzakciók felaprózással igazítva, ahogy a pozíciókban látszanak.
   final all = [
-    for (final l in store.lots) ActivityEntry.lot(l),
+    for (final l in store.adjustedLots) ActivityEntry.lot(l),
     for (final d in store.dividends) ActivityEntry.dividend(d),
     for (final s in store.splits) ActivityEntry.split(s),
   ];
@@ -108,23 +109,36 @@ class _ActivityPageState extends State<ActivityPage> {
     final l10n = AppLocalizations.of(context);
     final portfolio = AppServices.of(context).portfolio;
     final messenger = ScaffoldMessenger.of(context);
-    final (String text, VoidCallback undo) = switch (e) {
-      ActivityEntry(lot: final l?) => (l10n.lotRemoved, () => portfolio.restore(l)),
-      ActivityEntry(dividend: final d?) => (l10n.portfolioDividendDeleted, () => portfolio.restoreDividend(d)),
-      ActivityEntry(split: final s?) => (l10n.portfolioSplitRemoved, () => portfolio.restoreSplit(s)),
+    // A tranzakció a listában igazítva látszik: a visszavonáshoz a tárolt alakja kell.
+    final (String text, VoidCallback? undo) = switch (e) {
+      ActivityEntry(lot: _?) => switch (await portfolio.remove(e.id)) {
+        final stored? => (l10n.lotRemoved, () => portfolio.restore(stored)),
+        null => (l10n.lotRemoved, null),
+      },
+      ActivityEntry(dividend: final d?) => (
+        l10n.portfolioDividendDeleted,
+        () {
+          portfolio.restoreDividend(d);
+        },
+      ),
+      ActivityEntry(split: final s?) => (
+        l10n.portfolioSplitRemoved,
+        () {
+          portfolio.restoreSplit(s);
+        },
+      ),
       _ => throw StateError('üres sor'),
     };
-    await switch (e.kind) {
-      ActivityKind.buy || ActivityKind.sell => portfolio.remove(e.id),
-      ActivityKind.dividend => portfolio.removeDividend(e.id),
-      ActivityKind.split => portfolio.removeSplit(e.id),
-    };
+    if (e.dividend != null) await portfolio.removeDividend(e.id);
+    if (e.split != null) await portfolio.removeSplit(e.id);
     messenger
       ..hideCurrentSnackBar()
       ..showSnackBar(
         SnackBar(
           content: Text(text),
-          action: SnackBarAction(key: const ValueKey('activity-undo'), label: l10n.undo, onPressed: undo),
+          action: undo == null
+              ? null
+              : SnackBarAction(key: const ValueKey('activity-undo'), label: l10n.undo, onPressed: undo),
         ),
       );
   }

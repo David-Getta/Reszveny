@@ -1755,8 +1755,8 @@ class AppLocalizationsZu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Kwengezwe okuthengiwe okungu-$count',
-      one: 'Kwengezwe okuthengiwe okukodwa',
+      other: 'Kwengezwe ukuthenga nokuthengisa okungu-$count',
+      one: 'Kwengezwe ukuthenga noma ukuthengisa okungu-$count',
     );
     return '$_temp0';
   }
@@ -2804,6 +2804,17 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get activityNoMatch =>
       'Akukho kuthenga noma kuthengisa okuhambisana nesihlungi.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Okungu-$count sekurekhodiwe, akwengezwanga',
+      one: 'Okungu-$count sekurekhodiwe, akwengezwanga',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Setha umgomo';

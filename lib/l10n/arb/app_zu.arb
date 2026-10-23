@@ -470,7 +470,7 @@
   "portfolioImport": "Ngenisa kusuka ku-CSV",
   "portfolioImportHint": "Namathisela okuthengiwe okukodwa emugqeni ngamunye: uphawu lwe-ticker, inani, intengo, imali, usuku (YYYY-MM-DD). Amakholomu angahlukaniswa ngokhefana, ngamasemikholoni noma ngamathebhu; umugqa wezihloko awuphoqelekile.",
   "portfolioImportButton": "Ngenisa",
-  "portfolioImported": "{count, plural, =1{Kwengezwe okuthengiwe okukodwa} other{Kwengezwe okuthengiwe okungu-{count}}}",
+  "portfolioImported": "{count, plural, one{Kwengezwe ukuthenga noma ukuthengisa okungu-{count}} other{Kwengezwe ukuthenga nokuthengisa okungu-{count}}}",
   "portfolioImportSkipped": "{count, plural, =1{Kweqiwe umugqa owodwa} other{Kweqiwe imigqa engu-{count}}}",
   "syncInfo": "Iphothifoliyo, izintandokazi, izexwayiso zentengo namanothi kuvumelaniswa kuwo wonke amadivayisi akho.",
   "syncLast": "Ukuvumelanisa kokugcina: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Hlela isabelo senzuzo · {symbol}",
   "activityTitle": "Konke ukuthenga nokuthengisa",
   "activitySearchHint": "Hlunga nge-ticker",
-  "activityNoMatch": "Akukho kuthenga noma kuthengisa okuhambisana nesihlungi."
+  "activityNoMatch": "Akukho kuthenga noma kuthengisa okuhambisana nesihlungi.",
+  "portfolioImportDuplicates": "{count, plural, one{Okungu-{count} sekurekhodiwe, akwengezwanga} other{Okungu-{count} sekurekhodiwe, akwengezwanga}}"
 }

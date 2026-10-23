@@ -1744,8 +1744,8 @@ class AppLocalizationsHe extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'נוספו $count רכישות',
-      one: 'נוספה רכישה אחת',
+      other: 'נוספו $count עסקאות',
+      one: 'נוספה עסקה אחת',
     );
     return '$_temp0';
   }
@@ -2786,6 +2786,17 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'אין עסקאות שתואמות את הסינון.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count כבר רשומות, לא נוספו',
+      one: 'אחת כבר רשומה, לא נוספה',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'הגדרת יעד';

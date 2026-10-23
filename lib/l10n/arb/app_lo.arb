@@ -470,7 +470,7 @@
   "portfolioImport": "ນຳເຂົ້າຈາກ CSV",
   "portfolioImportHint": "ວາງການຊື້ໜຶ່ງລາຍການຕໍ່ແຖວ: ສັນຍາລັກຮຸ້ນ, ຈຳນວນ, ລາຄາ, ສະກຸນເງິນ, ວັນທີ (YYYY-MM-DD). ຖັນສາມາດແຍກດ້ວຍເຄື່ອງໝາຍຈຸດ (,), ຈຸດໂຄ່ງ (;) ຫຼື ແທັບ; ແຖວຫົວຂໍ້ບໍ່ບັງຄັບ.",
   "portfolioImportButton": "ນຳເຂົ້າ",
-  "portfolioImported": "{count, plural, other{ເພີ່ມການຊື້ {count} ລາຍການແລ້ວ}}",
+  "portfolioImported": "{count, plural, =1{ເພີ່ມທຸລະກຳ 1 ລາຍການແລ້ວ} other{ເພີ່ມທຸລະກຳ {count} ລາຍການແລ້ວ}}",
   "portfolioImportSkipped": "{count, plural, other{ຂ້າມ {count} ແຖວແລ້ວ}}",
   "syncInfo": "ພອດໂຟລິໂອ, ລາຍການທີ່ມັກ, ການແຈ້ງເຕືອນລາຄາ ແລະ ບັນທຶກ ຈະຊິງຄ໌ໃນທຸກອຸປະກອນຂອງທ່ານ",
   "syncLast": "ຊິງຄ໌ຫຼ້າສຸດ {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "ແກ້ໄຂເງິນປັນຜົນ · {symbol}",
   "activityTitle": "ທຸລະກຳທັງໝົດ",
   "activitySearchHint": "ກັ່ນຕອງຕາມສັນຍາລັກ",
-  "activityNoMatch": "ບໍ່ມີທຸລະກຳທີ່ກົງກັບຕົວກັ່ນຕອງ"
+  "activityNoMatch": "ບໍ່ມີທຸລະກຳທີ່ກົງກັບຕົວກັ່ນຕອງ",
+  "portfolioImportDuplicates": "{count, plural, =1{1 ລາຍການບັນທຶກໄວ້ແລ້ວ, ບໍ່ໄດ້ເພີ່ມ} other{{count} ລາຍການບັນທຶກໄວ້ແລ້ວ, ບໍ່ໄດ້ເພີ່ມ}}"
 }

@@ -470,7 +470,7 @@
   "portfolioImport": "Importovat z CSV",
   "portfolioImportHint": "Vložte jeden nákup na řádek: ticker, množství, cena, měna, datum (RRRR-MM-DD). Sloupce mohou být oddělené čárkami, středníky nebo tabulátory; řádek se záhlavím je nepovinný.",
   "portfolioImportButton": "Importovat",
-  "portfolioImported": "{count, plural, =1{Přidán 1 nákup} few{Přidány {count} nákupy} many{Přidáno {count} nákupu} other{Přidáno {count} nákupů}}",
+  "portfolioImported": "{count, plural, =1{Přidána 1 transakce} few{Přidány {count} transakce} many{Přidáno {count} transakce} other{Přidáno {count} transakcí}}",
   "portfolioImportSkipped": "{count, plural, =1{Přeskočen 1 řádek} few{Přeskočeny {count} řádky} many{Přeskočeno {count} řádku} other{Přeskočeno {count} řádků}}",
   "syncInfo": "Portfolio, oblíbené, cenová upozornění a poznámky se synchronizují na všech vašich zařízeních.",
   "syncLast": "Poslední synchronizace: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Upravit dividendu · {symbol}",
   "activityTitle": "Všechny transakce",
   "activitySearchHint": "Filtrovat podle tickeru",
-  "activityNoMatch": "Filtru neodpovídají žádné transakce."
+  "activityNoMatch": "Filtru neodpovídají žádné transakce.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 již zaznamenaná vynechána} few{{count} již zaznamenané vynechány} many{{count} již zaznamenané vynecháno} other{{count} již zaznamenaných vynecháno}}"
 }

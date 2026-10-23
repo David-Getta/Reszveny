@@ -470,7 +470,7 @@
   "portfolioImport": "Egueru CSV-gui",
   "portfolioImportHint": "Emboja peteĩ jejogua peteĩteĩ línea-pe: símbolo, mboýpa, hepykue, pirapire, ára (AAAA-MM-DD). Umi columna ikatu oñembojaʼo coma, punto y coma térã tabulación rupive; línea ñepyrũ ndahaʼéi tekotevẽ.",
   "portfolioImportButton": "Egueru",
-  "portfolioImported": "{count, plural, =1{Oñembojoaju 1 jejogua} other{Oñembojoaju {count} jejogua}}",
+  "portfolioImported": "{count, plural, =1{Oñembojoaju 1 jejogua térã ñemu} other{Oñembojoaju {count} jejogua ha ñemu}}",
   "portfolioImportSkipped": "{count, plural, =1{Ojeheja 1 línea} other{Ojeheja {count} línea}}",
   "syncInfo": "Cartera, ojeguerohoryvéva, tepy maranduʼi ha jehaipyre ojoja opa ne mbaʼeʼokápe.",
   "syncLast": "Sincronización pahaguápe: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Emoambue dividendo · {symbol}",
   "activityTitle": "Opaite jejogua ha ñemu",
   "activitySearchHint": "Eheka símbolo rupi",
-  "activityNoMatch": "Ndaipóri jejogua térã ñemu ojojoguáva filtro ndive."
+  "activityNoMatch": "Ndaipóri jejogua térã ñemu ojojoguáva filtro ndive.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 oĩma oñemboguapýva, noñembojoajúi} other{{count} oĩma oñemboguapýva, noñembojoajúi}}"
 }

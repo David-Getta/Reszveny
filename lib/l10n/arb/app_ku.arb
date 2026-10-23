@@ -470,7 +470,7 @@
   "portfolioImport": "Ji CSV-ê têxe",
   "portfolioImportHint": "Di her rêzê de kirînek bixe: sembola pişkê, hejmar, biha, dirav, dîrok (SSSS-MM-RR). Stûn dikarin bi bêhnok, xalbêhnok an tabê werin veqetandin; rêza sernavê ne mecbûrî ye.",
   "portfolioImportButton": "Têxe",
-  "portfolioImported": "{count, plural, =1{1 kirîn hat zêdekirin} other{{count} kirîn hatin zêdekirin}}",
+  "portfolioImported": "{count, plural, =1{1 danûstandin hat zêdekirin} other{{count} danûstandin hatin zêdekirin}}",
   "portfolioImportSkipped": "{count, plural, =1{1 rêz hat derbaskirin} other{{count} rêz hatin derbaskirin}}",
   "syncInfo": "Portfolyo, bijare, hişyariyên bihayê û not li ser hemû amûrên te têne hevdemkirin.",
   "syncLast": "Hevdemkirina dawî: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Dividendê biguherîne · {symbol}",
   "activityTitle": "Hemû danûstandin",
   "activitySearchHint": "Li gorî sembolê parzûn bike",
-  "activityNoMatch": "Tu danûstandin bi parzûnê re li hev nayê."
+  "activityNoMatch": "Tu danûstandin bi parzûnê re li hev nayê.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 berê hatiye tomarkirin, nehat zêdekirin} other{{count} berê hatine tomarkirin, nehatin zêdekirin}}"
 }

@@ -470,7 +470,7 @@
   "portfolioImport": "Ingĩria kuuma CSV",
   "portfolioImportHint": "Ĩkĩra ũgũri ũmwe o mũhari-inĩ: ticker ya hisa, mũigana, thogora, mbeca, tarehe (YYYY-MM-DD). Mĩhari ĩrũgamĩte no yamũranio na koma, semicolon kana tab; mũhari wa kĩongo ti wa bata.",
   "portfolioImportButton": "Ingĩria",
-  "portfolioImported": "{count, plural, =1{Ũgũri 1 nĩ wongereirwo} other{Ũgũri {count} nĩ wongereirwo}}",
+  "portfolioImported": "{count, plural, =1{Ũgũri kana ũendia 1 nĩ wongereirwo} other{Ũgũri na ũendia {count} nĩ wongereirwo}}",
   "portfolioImportSkipped": "{count, plural, =1{Mũhari 1 nĩ wagũrũkwo} other{Mĩhari {count} nĩ yagũrũkwo}}",
   "syncInfo": "Hisa ciaku, iria wendete, imenyithia cia thogora na maandĩko ikoragwo o ũndũ ũmwe harĩ indo ciaku ciothe.",
   "syncLast": "Sync ya kũrigĩrĩria: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Garũra mũgai wa faida · {symbol}",
   "activityTitle": "Ũgũri na ũendia wothe",
   "activitySearchHint": "Thuura na ticker",
-  "activityNoMatch": "Gũtirĩ ũgũri kana ũendia ũiganaine na ũthuuri ũcio."
+  "activityNoMatch": "Gũtirĩ ũgũri kana ũendia ũiganaine na ũthuuri ũcio.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 yandĩkĩtwo o mbere, ndĩongereirwo} other{{count} ciandĩkĩtwo o mbere, itiongereirwo}}"
 }

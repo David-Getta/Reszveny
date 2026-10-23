@@ -470,7 +470,7 @@
   "portfolioImport": "Yingiza okuva mu CSV",
   "portfolioImportHint": "Teekamu ekyaguliddwa kimu ku buli lunyiriri: akabonero ka ticker, omuwendo, bbeeyi, ensimbi, olunaku (YYYY-MM-DD). Empagi ziyinza okwawulwamu koma, semikolon oba tab; olunyiriri lw'emitwe si lwa tteeka.",
   "portfolioImportButton": "Yingiza",
-  "portfolioImported": "{count, plural, =1{Ekyaguliddwa 1 kyongeddwako} other{Ebyaguliddwa {count} byongeddwako}}",
+  "portfolioImported": "{count, plural, =1{Ekyaguliddwa oba ekyatundiddwa 1 kyongeddwako} other{Ebyaguliddwa n'ebyatundiddwa {count} byongeddwako}}",
   "portfolioImportSkipped": "{count, plural, =1{Olunyiriri 1 lubuukiddwa} other{Ennyiriri {count} zibuukiddwa}}",
   "syncInfo": "Emigabo gyo, by'oyagala, okulabula ku bbeeyi n'ebiwandiiko bikwatagana ku byuma byo byonna.",
   "syncLast": "Okukwataganya okusembayo: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Kyusa dividendi · {symbol}",
   "activityTitle": "Byonna bye wagula ne bye watunda",
   "activitySearchHint": "Londa ng'okozesa ticker",
-  "activityNoMatch": "Tewali kyaguliddwa oba kyatundiddwa kikwatagana n'ekyo ky'olonze."
+  "activityNoMatch": "Tewali kyaguliddwa oba kyatundiddwa kikwatagana n'ekyo ky'olonze.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 kyali kyawandiikibwa dda, tekyongeddwako} other{{count} byali byawandiikibwa dda, tebyongeddwako}}"
 }

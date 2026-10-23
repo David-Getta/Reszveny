@@ -1798,10 +1798,10 @@ class AppLocalizationsLt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Pridėta $count pirkimų',
-      many: 'Pridėta $count pirkimo',
-      few: 'Pridėti $count pirkimai',
-      one: 'Pridėtas $count pirkimas',
+      other: 'Pridėta $count operacijų',
+      many: 'Pridėta $count operacijos',
+      few: 'Pridėtos $count operacijos',
+      one: 'Pridėta $count operacija',
     );
     return '$_temp0';
   }
@@ -2864,6 +2864,19 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Filtrą atitinkančių operacijų nėra.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jau įrašyta, neįtraukta',
+      many: '$count jau įrašyta, neįtraukta',
+      few: '$count jau įrašytos, neįtrauktos',
+      one: '$count jau įrašyta, neįtraukta',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Nustatyti tikslą';

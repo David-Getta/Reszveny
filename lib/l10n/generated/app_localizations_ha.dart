@@ -1753,8 +1753,8 @@ class AppLocalizationsHa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'An ƙara sayayya $count',
-      one: 'An ƙara sayayya 1',
+      other: 'An ƙara ma\'amaloli $count',
+      one: 'An ƙara ma\'amala 1',
     );
     return '$_temp0';
   }
@@ -2798,6 +2798,17 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Babu ma\'amalar da ta dace da tacewa.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count an riga an rubuta, an bar su',
+      one: '1 an riga an rubuta, an bar shi',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Saita buri';

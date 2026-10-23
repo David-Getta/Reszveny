@@ -1227,10 +1227,10 @@
   "portfolioImport": "Import from CSV",
   "portfolioImportHint": "Paste one purchase per line: ticker, quantity, price, currency, date (YYYY-MM-DD). Columns may be separated by commas, semicolons or tabs; the header row is optional.",
   "portfolioImportButton": "Import",
-  "portfolioImported": "{count, plural, =1{1 purchase added} other{{count} purchases added}}",
+  "portfolioImported": "{count, plural, =1{1 transaction added} other{{count} transactions added}}",
   "portfolioImportSkipped": "{count, plural, =1{1 line skipped} other{{count} lines skipped}}",
   "@portfolioImported": {
-    "description": "After importing: how many purchases were added.",
+    "description": "After importing: how many transactions (buys and sells) were added.",
     "placeholders": {
       "count": {
         "type": "int"
@@ -2446,6 +2446,15 @@
   "activityNoMatch": "No transactions match the filter.",
   "@activityNoMatch": {
     "description": "Shown on the all-transactions page when the ticker, type or account filter leaves nothing to show."
+  },
+  "portfolioImportDuplicates": "{count, plural, =1{1 already recorded, left out} other{{count} already recorded, left out}}",
+  "@portfolioImportDuplicates": {
+    "description": "After importing a broker export: how many rows were left out because the same transaction or dividend is already in the portfolio (e.g. when a newer export with the old rows is imported again). Shown after \"5 transactions added · \".",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",

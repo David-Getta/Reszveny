@@ -1756,8 +1756,8 @@ class AppLocalizationsEl extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Προστέθηκαν $count αγορές',
-      one: 'Προστέθηκε 1 αγορά',
+      other: 'Προστέθηκαν $count συναλλαγές',
+      one: 'Προστέθηκε 1 συναλλαγή',
     );
     return '$_temp0';
   }
@@ -2802,6 +2802,17 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Καμία συναλλαγή δεν ταιριάζει με το φίλτρο.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count υπάρχουν ήδη, δεν προστέθηκαν',
+      one: '1 υπάρχει ήδη, δεν προστέθηκε',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Ορισμός στόχου';

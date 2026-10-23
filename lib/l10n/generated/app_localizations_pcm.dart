@@ -1747,8 +1747,8 @@ class AppLocalizationsPcm extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'We don add $count tins wey you buy',
-      one: 'We don add $count tin wey you buy',
+      other: 'We don add $count buys and sells',
+      one: 'We don add $count buy or sell',
     );
     return '$_temp0';
   }
@@ -2790,6 +2790,17 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'No buy or sell match di filter.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count don already dey, we no add dem',
+      one: '$count don already dey, we no add am',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Put target';

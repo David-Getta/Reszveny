@@ -470,7 +470,7 @@
   "portfolioImport": "Gbé wọlé láti CSV",
   "portfolioImportHint": "Lẹ ìrajà kan mọ́ ìlà kọ̀ọ̀kan: àmì ìpín, iye ìpín, iye owó, owó, ọjọ́ (YYYY-MM-DD). A lè fi kọ́mà, sẹ̀míkólọ́nì tàbí táàbù ya àwọn ọ̀wọ̀n sọ́tọ̀; ìlà àkọlé kò pọn dandan.",
   "portfolioImportButton": "Gbé wọlé",
-  "portfolioImported": "{count, plural, =1{A ti fi ìrajà 1 kún un} other{A ti fi ìrajà {count} kún un}}",
+  "portfolioImported": "{count, plural, =1{A ti fi ìdúnàdúrà 1 kún un} other{A ti fi ìdúnàdúrà {count} kún un}}",
   "portfolioImportSkipped": "{count, plural, =1{A fo ìlà 1 sílẹ̀} other{A fo ìlà {count} sílẹ̀}}",
   "syncInfo": "Àpò ìdókòwò, àwọn ààyò, ìkìlọ̀ iye owó àti àwọn àkọsílẹ̀ ń múṣiṣẹ́pọ̀ lórí gbogbo ẹ̀rọ rẹ.",
   "syncLast": "Ìmúṣiṣẹ́pọ̀ tó kẹ́yìn: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Ṣàtúnṣe ìpín èrè · {symbol}",
   "activityTitle": "Gbogbo ìdúnàdúrà",
   "activitySearchHint": "Ṣàyàn nípa àmì ìpín",
-  "activityNoMatch": "Kò sí ìdúnàdúrà tó bá àṣàyàn náà mu."
+  "activityNoMatch": "Kò sí ìdúnàdúrà tó bá àṣàyàn náà mu.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 ti wà nínú àkọsílẹ̀ tẹ́lẹ̀, a kò fi kún un} other{{count} ti wà nínú àkọsílẹ̀ tẹ́lẹ̀, a kò fi wọ́n kún un}}"
 }

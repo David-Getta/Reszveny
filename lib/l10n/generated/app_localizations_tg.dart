@@ -1749,8 +1749,8 @@ class AppLocalizationsTg extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count харид илова шуд',
-      one: '1 харид илова шуд',
+      other: '$count амалиёт илова шуд',
+      one: '1 амалиёт илова шуд',
     );
     return '$_temp0';
   }
@@ -2793,6 +2793,17 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Ягон амалиёт ба филтр мувофиқ нест.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count аллакай сабт шудааст, илова нашуд',
+      one: '1 аллакай сабт шудааст, илова нашуд',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';

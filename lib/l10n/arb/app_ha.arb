@@ -470,7 +470,7 @@
   "portfolioImport": "Shigo da daga CSV",
   "portfolioImportHint": "Liƙa sayayya ɗaya a kowane layi: alamar ticker, yawa, farashi, nau'in kuɗi, kwanan wata (YYYY-MM-DD). Ana iya raba ginshiƙai da waƙafi, waƙafi mai digo ko tab; layin take ba dole ba ne.",
   "portfolioImportButton": "Shigo da",
-  "portfolioImported": "{count, plural, =1{An ƙara sayayya 1} other{An ƙara sayayya {count}}}",
+  "portfolioImported": "{count, plural, =1{An ƙara ma'amala 1} other{An ƙara ma'amaloli {count}}}",
   "portfolioImportSkipped": "{count, plural, =1{An tsallake layi 1} other{An tsallake layuka {count}}}",
   "syncInfo": "Ana daidaita jakar hannun jari, abubuwan da aka fi so, faɗakarwar farashi da bayanai a duk na'urorinka.",
   "syncLast": "Daidaitawa ta ƙarshe: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Gyara rabon riba · {symbol}",
   "activityTitle": "Dukkan ma'amaloli",
   "activitySearchHint": "Tace ta ticker",
-  "activityNoMatch": "Babu ma'amalar da ta dace da tacewa."
+  "activityNoMatch": "Babu ma'amalar da ta dace da tacewa.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 an riga an rubuta, an bar shi} other{{count} an riga an rubuta, an bar su}}"
 }

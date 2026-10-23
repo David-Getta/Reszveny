@@ -470,7 +470,7 @@
   "portfolioImport": "CSV irraa galchi",
   "portfolioImportHint": "Sarara tokkotti bittaa tokko maxxansi: mallattoo aksiyoonaa, baay'ina, gatii, maallaqa, guyyaa (YYYY-MM-DD). Utubaawwan qoodduu, qoodduu-tuqaa ykn tab'n addaan baafamuu danda'u; sararri mataduree dirqama miti.",
   "portfolioImportButton": "Galchi",
-  "portfolioImported": "{count, plural, =1{Bittaan 1 dabalameera} other{Bittaawwan {count} dabalamaniiru}}",
+  "portfolioImported": "{count, plural, =1{Bittaa yookiin gurgurtaa 1 dabalameera} other{Bittaa fi gurgurtaa {count} dabalamaniiru}}",
   "portfolioImportSkipped": "{count, plural, =1{Sararri 1 darbameera} other{Sararoonni {count} darbamaniiru}}",
   "syncInfo": "Poortfooliyoon, filatamoon, akeekkachiisni gatii fi yaadannoon meeshaalee kee hunda irratti walsimsiifamu.",
   "syncLast": "Walsimsiisa dhumaa: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Diviidendii gulaali · {symbol}",
   "activityTitle": "Bittaa fi gurgurtaa hunda",
   "activitySearchHint": "Mallattoon calali",
-  "activityNoMatch": "Bittaan ykn gurgurtaan calallii wajjin walsimu hin jiru."
+  "activityNoMatch": "Bittaan ykn gurgurtaan calallii wajjin walsimu hin jiru.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 duraan galmaa'eera, hin dabalamne} other{{count} duraan galmaa'aniiru, hin dabalamne}}"
 }

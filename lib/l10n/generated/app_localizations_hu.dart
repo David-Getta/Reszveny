@@ -1751,8 +1751,8 @@ class AppLocalizationsHu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count vétel hozzáadva',
-      one: '1 vétel hozzáadva',
+      other: '$count tranzakció hozzáadva',
+      one: '1 tranzakció hozzáadva',
     );
     return '$_temp0';
   }
@@ -2796,6 +2796,17 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Egy tranzakció sem felel meg a szűrésnek.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count már rögzítve volt, kimaradt',
+      one: '1 már rögzítve volt, kimaradt',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Cél kitűzése';

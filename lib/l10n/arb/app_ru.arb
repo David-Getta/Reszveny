@@ -470,7 +470,7 @@
   "portfolioImport": "Импорт из CSV",
   "portfolioImportHint": "Вставьте по одной покупке в строке: тикер, количество, цена, валюта, дата (ГГГГ-ММ-ДД). Столбцы можно разделять запятыми, точками с запятой или табуляцией; строка заголовка необязательна.",
   "portfolioImportButton": "Импортировать",
-  "portfolioImported": "{count, plural, one{Добавлена {count} покупка} few{Добавлено {count} покупки} many{Добавлено {count} покупок} other{Добавлено {count} покупки}}",
+  "portfolioImported": "{count, plural, one{Добавлена {count} сделка} few{Добавлено {count} сделки} many{Добавлено {count} сделок} other{Добавлено {count} сделки}}",
   "portfolioImportSkipped": "{count, plural, one{Пропущена {count} строка} few{Пропущено {count} строки} many{Пропущено {count} строк} other{Пропущено {count} строки}}",
   "syncInfo": "Портфель, избранное, ценовые оповещения и заметки синхронизируются на всех ваших устройствах.",
   "syncLast": "Последняя синхронизация: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Изменить дивиденд · {symbol}",
   "activityTitle": "Все сделки",
   "activitySearchHint": "Фильтр по тикеру",
-  "activityNoMatch": "Нет сделок, соответствующих фильтру."
+  "activityNoMatch": "Нет сделок, соответствующих фильтру.",
+  "portfolioImportDuplicates": "{count, plural, one{{count} уже есть, не добавлена} few{{count} уже есть, не добавлены} many{{count} уже есть, не добавлено} other{{count} уже есть, не добавлено}}"
 }

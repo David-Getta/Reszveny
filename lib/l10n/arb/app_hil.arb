@@ -470,7 +470,7 @@
   "portfolioImport": "I-import halin sa CSV",
   "portfolioImportHint": "I-paste ang isa ka ginbakal kada linya: ticker symbol, kadamuon, presyo, currency, petsa (YYYY-MM-DD). Ang mga kolum mahimo mabulag sang comma, semicolon ukon tab; opsyonal ang header nga linya.",
   "portfolioImportButton": "I-import",
-  "portfolioImported": "{count, plural, =1{Gindugang ang 1 ka ginbakal} other{Gindugang ang {count} ka ginbakal}}",
+  "portfolioImported": "{count, plural, =1{Gindugang ang 1 ka transaksyon} other{Gindugang ang {count} ka transaksyon}}",
   "portfolioImportSkipped": "{count, plural, =1{Ginlaktawan ang 1 ka linya} other{Ginlaktawan ang {count} ka linya}}",
   "syncInfo": "Ang portfolio, mga paborito, mga alerto sa presyo kag mga nota gina-sync sa tanan mo nga device.",
   "syncLast": "Katapusan nga na-sync {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "I-edit ang dibidendo · {symbol}",
   "activityTitle": "Tanan nga transaksyon",
   "activitySearchHint": "I-filter suno sa ticker",
-  "activityNoMatch": "Wala sang transaksyon nga nagtupong sa filter."
+  "activityNoMatch": "Wala sang transaksyon nga nagtupong sa filter.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 ang narekord na, wala ginlakip} other{{count} ang narekord na, wala ginlakip}}"
 }

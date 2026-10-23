@@ -163,18 +163,12 @@ Future<void> showPortfolioImport(BuildContext context) async {
   // Ticker nélküli export (DEGIRO): az ISIN-ekhez a kereső adja a tickert.
   final isins = parsed.isins;
   if (isins.isNotEmpty) messenger.showSnackBar(SnackBar(content: Text(l10n.loadingData)));
-  final result = isins.isEmpty ? parsed : parsed.withSymbols(await resolveIsins(services.marketData.search, isins));
-  // A számla is része a kulcsnak: ugyanaz a vétel két számlán két tranzakció
-  // (a kis- és nagybetű nem számít, a tároló a meglévő írásmódot használja).
-  String key(String symbol, double q, double p, DateTime? d, bool sell, String? account) =>
-      '$symbol|$q|$p|${d?.toIso8601String().substring(0, 10)}|$sell|${account?.toLowerCase() ?? ''}';
-  final existing = {
-    for (final l in services.portfolio.lots) key(l.symbol, l.quantity, l.price, l.date, l.sell, l.account),
-  };
+  final resolved = isins.isEmpty ? parsed : parsed.withSymbols(await resolveIsins(services.marketData.search, isins));
+  // A már rögzített sorok kimaradnak (a frissebb export újbóli beolvasása nem dupláz).
+  final (rest: result, :duplicates) = resolved.withoutRecorded(services.portfolio.lots, services.portfolio.dividends);
   // A felvett tételek azonosítói: az egész import egy koppintással visszavonható.
   final lotIds = <String>{}, dividendIds = <String>{}, splitIds = <String>{};
   for (final l in result.lots) {
-    if (!existing.add(key(l.symbol, l.quantity, l.price, l.date, l.sell, l.account))) continue;
     final lot = await services.portfolio.add(
       symbol: l.symbol,
       quantity: l.quantity,
@@ -187,12 +181,7 @@ Future<void> showPortfolioImport(BuildContext context) async {
     );
     lotIds.add(lot.id);
   }
-  // Kapott osztalékok: ugyanaz a tétel (ticker, összeg, dátum, számla) nem kerül be kétszer.
-  String dKey(String symbol, double amount, DateTime? d, String? account) =>
-      '$symbol|$amount|${d?.toIso8601String().substring(0, 10)}|${account?.toLowerCase() ?? ''}';
-  final existingDividends = {for (final d in services.portfolio.dividends) dKey(d.symbol, d.amount, d.date, d.account)};
   for (final d in result.dividends) {
-    if (!existingDividends.add(dKey(d.symbol, d.amount, d.date, d.account))) continue;
     final dividend = await services.portfolio.addDividend(
       symbol: d.symbol,
       amount: d.amount,
@@ -217,6 +206,7 @@ Future<void> showPortfolioImport(BuildContext context) async {
             l10n.portfolioImported(lotIds.length),
             if (dividendIds.isNotEmpty) l10n.portfolioDividendsImported(dividendIds.length),
             if (splitIds.isNotEmpty) l10n.portfolioSplitsImported(splitIds.length),
+            if (duplicates > 0) l10n.portfolioImportDuplicates(duplicates),
             if (result.skipped > 0) l10n.portfolioImportSkipped(result.skipped),
           ].join(' · '),
         ),

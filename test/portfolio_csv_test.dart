@@ -547,6 +547,53 @@ void main() {
     expect(realizedCsv([buys]), 'date,symbol,quantity,sale_price,proceeds,cost_basis,gain,currency\n');
   });
 
+  test('re-importing leaves out what is already recorded, once per recorded copy', () {
+    final recorded = [
+      PortfolioLot(id: 'a', symbol: 'AAPL', quantity: 5, price: 150, currency: 'USD', date: DateTime(2025, 3, 14)),
+      PortfolioLot(
+        id: 'b',
+        symbol: 'OTP',
+        quantity: 10,
+        price: 21000,
+        currency: 'HUF',
+        date: DateTime(2025, 4, 1),
+        account: 'TBSZ',
+      ),
+    ];
+    final dividends = [
+      DividendRecord(id: 'd', symbol: 'AAPL', amount: 1.3, currency: 'USD', date: DateTime(2025, 5, 15)),
+    ];
+    final parsed = CsvImport(
+      [
+        // Két azonos részteljesítés: az egyik már rögzítve van, a másik új.
+        ImportedLot(symbol: 'AAPL', quantity: 5, price: 150, currency: 'USD', date: DateTime(2025, 3, 14)),
+        ImportedLot(symbol: 'AAPL', quantity: 5, price: 150, currency: 'USD', date: DateTime(2025, 3, 14)),
+        // A számla kis- és nagybetűje nem számít; más számlán már új tétel.
+        ImportedLot(
+          symbol: 'OTP',
+          quantity: 10,
+          price: 21000,
+          currency: 'HUF',
+          date: DateTime(2025, 4, 1),
+          account: 'tbsz',
+        ),
+        ImportedLot(symbol: 'OTP', quantity: 10, price: 21000, currency: 'HUF', date: DateTime(2025, 4, 1)),
+      ],
+      1,
+      dividends: [
+        ImportedDividend(symbol: 'AAPL', amount: 1.3, currency: 'USD', date: DateTime(2025, 5, 15)),
+        ImportedDividend(symbol: 'AAPL', amount: 1.3, currency: 'USD', date: DateTime(2025, 8, 14)),
+      ],
+    );
+    final (:rest, :duplicates) = parsed.withoutRecorded(recorded, dividends);
+    expect(duplicates, 3);
+    expect(rest.lots.map((l) => (l.symbol, l.account)), [('AAPL', null), ('OTP', null)]);
+    expect(rest.dividends.single.date, DateTime(2025, 8, 14));
+    expect(rest.skipped, 1);
+    // Üres portfólióba a fájlon belüli két azonos sor mindkettő bekerül.
+    expect(parsed.withoutRecorded(const [], const []).rest.lots, hasLength(4));
+  });
+
   testWidgets('import from the empty portfolio, then export through the share sheet', (tester) async {
     tester.view.physicalSize = const Size(1200, 1600);
     tester.view.devicePixelRatio = 1;
@@ -575,7 +622,7 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('portfolio-import-ok')));
     await tester.pumpAndSettle();
     expect(s.portfolio.lots.map((l) => l.symbol), containsAll(['AAPL', 'MSFT']));
-    expect(find.text('2 purchases added · 1 line skipped'), findsOneWidget);
+    expect(find.text('2 transactions added · 1 line skipped'), findsOneWidget);
 
     // Az egész import egy koppintással visszavonható; utána újra beolvassuk.
     await tester.tap(find.byKey(const ValueKey('portfolio-import-undo')));
@@ -590,6 +637,24 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('portfolio-import-ok')));
     await tester.pumpAndSettle();
     expect(s.portfolio.lots, hasLength(2));
+
+    // Ugyanaz újra: a már rögzített sorok kimaradnak, nem duplázódnak.
+    await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-import')));
+    await tester.pumpAndSettle();
+    await tester.enterText(
+      find.byKey(const ValueKey('portfolio-import-text')),
+      'AAPL,10,180,USD,2025-03-14\nbroken\nMSFT,2,400,USD\nNVDA,1,120,USD',
+    );
+    await tester.tap(find.byKey(const ValueKey('portfolio-import-ok')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.lots, hasLength(3));
+    expect(find.text('1 transaction added · 2 already recorded, left out · 1 line skipped'), findsOneWidget);
+    // A visszavonás csak az új sort veszi ki.
+    await tester.tap(find.byKey(const ValueKey('portfolio-import-undo')).last);
+    await tester.pumpAndSettle();
+    expect(s.portfolio.lots.map((l) => l.symbol), unorderedEquals(['AAPL', 'MSFT']));
 
     await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
     await tester.pumpAndSettle();

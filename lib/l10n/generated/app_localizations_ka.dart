@@ -1749,8 +1749,8 @@ class AppLocalizationsKa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'დაემატა $count შენაძენი',
-      one: 'დაემატა 1 შენაძენი',
+      other: 'დაემატა $count ტრანზაქცია',
+      one: 'დაემატა 1 ტრანზაქცია',
     );
     return '$_temp0';
   }
@@ -2791,6 +2791,17 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'ფილტრს არცერთი ტრანზაქცია არ შეესაბამება.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count უკვე ჩაწერილია, არ დაემატა',
+      one: '1 უკვე ჩაწერილია, არ დაემატა',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'მიზნის დაყენება';

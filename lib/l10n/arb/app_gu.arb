@@ -470,7 +470,7 @@
   "portfolioImport": "CSVમાંથી આયાત કરો",
   "portfolioImportHint": "દરેક લાઇનમાં એક ખરીદી પેસ્ટ કરો: ટિકર સિમ્બોલ, જથ્થો, કિંમત, ચલણ, તારીખ (YYYY-MM-DD). કૉલમને અલ્પવિરામ, અર્ધવિરામ અથવા ટૅબથી અલગ કરી શકાય છે; હેડર લાઇન વૈકલ્પિક છે.",
   "portfolioImportButton": "આયાત કરો",
-  "portfolioImported": "{count, plural, =1{1 ખરીદી ઉમેરાઈ} other{{count} ખરીદીઓ ઉમેરાઈ}}",
+  "portfolioImported": "{count, plural, one{{count} વ્યવહાર ઉમેરાયો} other{{count} વ્યવહારો ઉમેરાયા}}",
   "portfolioImportSkipped": "{count, plural, =1{1 લાઇન છોડી દેવાઈ} other{{count} લાઇન છોડી દેવાઈ}}",
   "syncInfo": "પોર્ટફોલિયો, મનપસંદ, ભાવ અલર્ટ અને નોંધો તમારા બધા ડિવાઇસ પર સિંક થાય છે.",
   "syncLast": "છેલ્લે સિંક: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "ડિવિડન્ડ એડિટ કરો · {symbol}",
   "activityTitle": "બધા વ્યવહારો",
   "activitySearchHint": "ટિકર મુજબ ફિલ્ટર કરો",
-  "activityNoMatch": "ફિલ્ટર સાથે કોઈ વ્યવહાર મેળ ખાતો નથી."
+  "activityNoMatch": "ફિલ્ટર સાથે કોઈ વ્યવહાર મેળ ખાતો નથી.",
+  "portfolioImportDuplicates": "{count, plural, one{{count} પહેલેથી નોંધાયેલ, છોડી દેવાયો} other{{count} પહેલેથી નોંધાયેલા, છોડી દેવાયા}}"
 }

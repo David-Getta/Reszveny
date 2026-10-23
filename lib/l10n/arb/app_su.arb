@@ -470,7 +470,7 @@
   "portfolioImport": "Impor tina CSV",
   "portfolioImportHint": "Témpélkeun hiji pameulian per baris: kode saham, jumlah, harga, mata uang, tanggal (YYYY-MM-DD). Kolom bisa dipisahkeun ku koma, titik koma atawa tab; baris judul henteu wajib.",
   "portfolioImportButton": "Impor",
-  "portfolioImported": "{count, plural, =1{1 pameulian ditambahkeun} other{{count} pameulian ditambahkeun}}",
+  "portfolioImported": "{count, plural, =1{1 transaksi ditambahkeun} other{{count} transaksi ditambahkeun}}",
   "portfolioImportSkipped": "{count, plural, =1{1 baris dilewat} other{{count} baris dilewat}}",
   "syncInfo": "Portofolio, paporit, béwara harga, jeung catetan disingkronkeun di sadaya parangkat anjeun.",
   "syncLast": "Panungtungan disingkronkeun {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Robah dividen · {symbol}",
   "activityTitle": "Sadaya transaksi",
   "activitySearchHint": "Saring dumasar kode saham",
-  "activityNoMatch": "Teu aya transaksi nu cocog jeung saringan."
+  "activityNoMatch": "Teu aya transaksi nu cocog jeung saringan.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 parantos kacatet, teu dilebetkeun} other{{count} parantos kacatet, teu dilebetkeun}}"
 }

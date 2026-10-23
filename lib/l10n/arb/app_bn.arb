@@ -470,7 +470,7 @@
   "portfolioImport": "CSV থেকে ইমপোর্ট করুন",
   "portfolioImportHint": "প্রতি লাইনে একটি ক্রয় পেস্ট করুন: টিকার সিম্বল, পরিমাণ, দাম, মুদ্রা, তারিখ (YYYY-MM-DD)। কলামগুলো কমা, সেমিকোলন বা ট্যাব দিয়ে আলাদা করা যায়; হেডার লাইন ঐচ্ছিক।",
   "portfolioImportButton": "ইমপোর্ট করুন",
-  "portfolioImported": "{count, plural, =1{1টি ক্রয় যোগ হয়েছে} other{{count}টি ক্রয় যোগ হয়েছে}}",
+  "portfolioImported": "{count, plural, one{{count}টি লেনদেন যোগ হয়েছে} other{{count}টি লেনদেন যোগ হয়েছে}}",
   "portfolioImportSkipped": "{count, plural, =1{1টি লাইন বাদ দেওয়া হয়েছে} other{{count}টি লাইন বাদ দেওয়া হয়েছে}}",
   "syncInfo": "পোর্টফোলিও, পছন্দের তালিকা, দামের সতর্কতা ও নোট আপনার সব ডিভাইসে সিঙ্ক হয়।",
   "syncLast": "শেষ সিঙ্ক: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "ডিভিডেন্ড সম্পাদনা করুন · {symbol}",
   "activityTitle": "সব লেনদেন",
   "activitySearchHint": "টিকার দিয়ে ফিল্টার করুন",
-  "activityNoMatch": "ফিল্টারের সঙ্গে কোনো লেনদেন মেলেনি।"
+  "activityNoMatch": "ফিল্টারের সঙ্গে কোনো লেনদেন মেলেনি।",
+  "portfolioImportDuplicates": "{count, plural, one{{count}টি আগে থেকেই নথিভুক্ত, বাদ দেওয়া হয়েছে} other{{count}টি আগে থেকেই নথিভুক্ত, বাদ দেওয়া হয়েছে}}"
 }

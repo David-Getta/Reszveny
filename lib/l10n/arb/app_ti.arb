@@ -470,7 +470,7 @@
   "portfolioImport": "ካብ CSV ኣእቱ",
   "portfolioImportHint": "ኣብ ነፍሲ ወከፍ መስመር ሓደ ዕድጊ ለጥፍ፦ ምልክት ኣክሲዮን፣ ብዝሒ፣ ዋጋ፣ ባጤራ፣ ዕለት (YYYY-MM-DD)። ዓንድታት ብኮማ፣ ሰሚኮሎን ወይ ታብ ክፈላለዩ ይኽእሉ፤ መስመር ኣርእስቲ ግዴታ ኣይኮነን።",
   "portfolioImportButton": "ኣእቱ",
-  "portfolioImported": "{count, plural, =1{1 ዕድጊ ተወሲኹ} other{{count} ዕድግታት ተወሲኾም}}",
+  "portfolioImported": "{count, plural, =1{1 ልውውጥ ተወሲኹ} other{{count} ልውውጣት ተወሲኾም}}",
   "portfolioImportSkipped": "{count, plural, =1{1 መስመር ተዘሊሉ} other{{count} መስመራት ተዘሊሎም}}",
   "syncInfo": "ፖርትፎሊዮ፣ ዝተፈተዉ፣ መጠንቀቕታታት ዋጋን ማስታወሻታትን ኣብ ኩሉ መሳርሒታትኩም ይሰማምዑ።",
   "syncLast": "ናይ መወዳእታ ምስምማዕ፦ {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "ድቪደንድ ኣመዓራሪ · {symbol}",
   "activityTitle": "ኩሎም ልውውጣት",
   "activitySearchHint": "ብምልክት ምጽራይ",
-  "activityNoMatch": "ምስ መጻረዪ ዝሰማማዕ ልውውጥ የለን።"
+  "activityNoMatch": "ምስ መጻረዪ ዝሰማማዕ ልውውጥ የለን።",
+  "portfolioImportDuplicates": "{count, plural, =1{1 ድሮ ተመዝጊቡ ኣሎ፣ ኣይተወሰኸን} other{{count} ድሮ ተመዝጊቦም ኣለው፣ ኣይተወሰኹን}}"
 }

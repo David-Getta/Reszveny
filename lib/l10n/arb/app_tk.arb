@@ -470,7 +470,7 @@
   "portfolioImport": "CSV-den import et",
   "portfolioImportHint": "Her setire bir satyn alyş goý: tiker, mukdar, baha, walýuta, sene (ÝÝÝÝ-AA-GG). Sütünler otur, nokatly otur ýa-da tab bilen bölünip bilner; sözbaşy setiri hökman däl.",
   "portfolioImportButton": "Import et",
-  "portfolioImported": "{count, plural, =1{1 satyn alyş goşuldy} other{{count} satyn alyş goşuldy}}",
+  "portfolioImported": "{count, plural, =1{1 amal goşuldy} other{{count} amal goşuldy}}",
   "portfolioImportSkipped": "{count, plural, =1{1 setir geçildi} other{{count} setir geçildi}}",
   "syncInfo": "Portfel, saýlananlar, baha duýduryşlary we bellikler ähli enjamlaryňyzda sinhronlanýar.",
   "syncLast": "Soňky sinhronlama: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Diwidendi üýtget · {symbol}",
   "activityTitle": "Ähli amallar",
   "activitySearchHint": "Tiker boýunça süzgüçle",
-  "activityNoMatch": "Süzgüje laýyk amal ýok."
+  "activityNoMatch": "Süzgüje laýyk amal ýok.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 eýýäm ýazylan, goşulmady} other{{count} eýýäm ýazylan, goşulmady}}"
 }

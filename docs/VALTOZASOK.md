@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.236)
+# Változásjegyzék (0.2.130 → 0.2.237)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -87,6 +87,9 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Az **új vétel számlája** alapból a legutóbbi vételé (a mindig TBSZ-re vevőnek nem kell újra beírnia).
 - A jegyzetkártya és a portfólió lábjegyzete helyesen írja: az adat ezen a készüléken marad, **és a fiókodban, ha be
   vagy jelentkezve** (eddig „csak ezen a készüléken”).
+- **Indexhez mérve** a „Pozícióm” kártyán: mintha minden vétel összegét ugyanazon a napon a választott indexbe
+  (alapból S&P 500) tetted volna, és eladáskor ugyanannyit vettél volna ki – „S&P 500 +58,9% · 34,5 százalékponttal
+  jobb az indexnél”, ⓘ magyarázattal (csak dátumos vételeknél, ha az index-sor a legelső vételig visszaér).
 - **Tartási idő** a „Pozícióm” kártyán: mióta tartod a legrégebbi még birtokolt darabokat („Tartod: 1 év 7 hónap ·
   2024. márc. 4. óta”).
 - **Tranzakció javítása**: a tranzakciós lapon a ceruzával a darab, az ár, a dátum, a számla és a díj javítható
@@ -137,6 +140,16 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   ékezetes számlanevek is jók legyenek; weben letöltésként. A saját import mindkét formát visszaolvassa.
 - **Az import visszavonható**: a végén megjelenő sávon egy koppintással mindaz törlődik, amit az import felvett
   (tranzakciók, osztalékok, felaprózások) – egy rossz fájl után nem kell tételenként takarítani.
+- **Javítások egy harmadik kódátnézés nyomán**: tranzakció vagy osztalék javítása után a portfólió oldal
+  összesítői, az értékalakulás és az események is frissülnek (eddig az azonosító szerinti kulcs miatt a régi számok
+  maradtak); a dátum nélküli tétel javításkor nem kap mai dátumot (különben egy későbbi eladás elé kerülhetett), a
+  számla nélküli osztalék nem kap számlát; a felaprózás előtti vétel a listában látott (igazított) számokkal javítható,
+  és mentéskor visszaalakul; a jövőbeli vagy 1980 előtti tárolt nap nem akasztja meg a naptárt; perzsa és pastu nyelven
+  is menthető a kitöltött osztalékösszeg.
+- **Ismételt import duplikálás nélkül**: a frissebb (a régi sorokat is tartalmazó) bróker-export újbóli beolvasásakor
+  a már rögzített tranzakciók és osztalékok kimaradnak, és az import végén látszik, hány („2 már rögzítve volt,
+  kimaradt”); a fájlon belüli két azonos részteljesítés viszont elsőre mindkettő bekerül (eddig a második elveszett).
+  Az import összegzése „tranzakció hozzáadva” (az eladásokat is számolja, nem csak a vételeket).
 - **Import-javítások** (kódátnézés): a Fidelity műveletében az értékpapír neve nem számít műveletnek (az „ISHARES
   RUSSELL 2000” vétel, nem eladás; egy osztalék-ETF vétele nem osztalék); a Robinhood kétsoros leírása nem vágja
   ketté a sort; az amerikai export „1,000” darabja ezer; a Fidelity „Fees” oszlopa is díj; ugyanaz az ISIN dollárban

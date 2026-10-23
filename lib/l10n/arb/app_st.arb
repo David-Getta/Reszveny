@@ -470,7 +470,7 @@
   "portfolioImport": "Kenya ho tswa ho CSV",
   "portfolioImportHint": "Kgomaretsa theko e le nngwe moleng ka mong: ticker, palo, theko ya karolo, mofuta wa tjhelete, letsatsi (YYYY-MM-DD). Dikholomo di ka arohanngwa ka dikhoma, disemikholone kapa di-tab; mola wa dihlooho ha o a tlameha.",
   "portfolioImportButton": "Kenya",
-  "portfolioImported": "{count, plural, =1{Ho eketsitswe theko e le nngwe} other{Ho eketsitswe ditheko tse {count}}}",
+  "portfolioImported": "{count, plural, =1{Ho eketsitswe theko kapa thekiso e le nngwe} other{Ho eketsitswe ditheko le dithekiso tse {count}}}",
   "portfolioImportSkipped": "{count, plural, =1{Mola o le mong o tlotswe} other{Mela e {count} e tlotswe}}",
   "syncInfo": "Potefolio, tseo o di ratang, ditsebiso tsa theko le dintlha di a sinkronaeswa disebedisweng tsohle tsa hao.",
   "syncLast": "Ho sinkronaesa ha ho qetela: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Fetola dividende · {symbol}",
   "activityTitle": "Ditheko le dithekiso tsohle",
   "activitySearchHint": "Sefa ka ticker",
-  "activityNoMatch": "Ha ho theko kapa thekiso e tsamaellanang le sefa."
+  "activityNoMatch": "Ha ho theko kapa thekiso e tsamaellanang le sefa.",
+  "portfolioImportDuplicates": "{count, plural, =1{E le nngwe e se e tlalehilwe, ha e a eketswa} other{Tse {count} di se di tlalehilwe, ha di a eketswa}}"
 }

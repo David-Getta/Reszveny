@@ -166,7 +166,7 @@ class _YearDividendsState extends State<_YearDividends> {
   Future<double?>? _sum;
   String _key = '';
 
-  String get _wantedKey => [widget.currency, ...widget.dividends.map((d) => d.id)].join(',');
+  String get _wantedKey => [widget.currency, ...widget.dividends.map((d) => d.contentKey)].join(',');
 
   @override
   Widget build(BuildContext context) {

@@ -1743,8 +1743,8 @@ class AppLocalizationsFf extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Soodaaje $count ɓeydaama',
-      one: 'Soodaare 1 ɓeydaama',
+      other: 'Soodgol e yeeyugol $count ɓeydaama',
+      one: 'Soodgol walla yeeyugol 1 ɓeydaama',
     );
     return '$_temp0';
   }
@@ -2787,6 +2787,17 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get activityNoMatch =>
       'Alaa soodgol walla yeeyugol hawriingol e cuɓol maa.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count winndaama ko adii, ɓeydaaka',
+      one: '1 winndaama ko adii, ɓeydaaka',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Taƴto faandaare';

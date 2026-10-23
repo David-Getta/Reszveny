@@ -470,7 +470,7 @@
   "portfolioImport": "Duggal ko ci CSV",
   "portfolioImportHint": "Taqal benn jënd ci bépp rëdd: màndargay aksiyoŋ, lim, njëg, xeetu xaalis, bés (YYYY-MM-DD). Mën nañu xàjjale kolon yi ak wirgil, pwen-wirgil walla tab; rëddu bopp bi war-ul.",
   "portfolioImportButton": "Duggal",
-  "portfolioImported": "{count, plural, =1{Yokk nañu 1 jënd} other{Yokk nañu {count} jënd}}",
+  "portfolioImported": "{count, plural, =1{Yokk nañu 1 jënd walla jaay} other{Yokk nañu {count} jënd ak jaay}}",
   "portfolioImportSkipped": "{count, plural, =1{Wacc nañu 1 rëdd} other{Wacc nañu {count} rëdd}}",
   "syncInfo": "Sa aksiyoŋ yi, yi nga gënal, artu njëg yi ak say notu ñoo yem ci say masin yépp.",
   "syncLast": "Synchro mujj: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Soppi dividande bi · {symbol}",
   "activityTitle": "Jënd ak jaay yépp",
   "activitySearchHint": "Tànn ci màndarga",
-  "activityNoMatch": "Amul jënd walla jaay bu dëppoo ak li nga tànn."
+  "activityNoMatch": "Amul jënd walla jaay bu dëppoo ak li nga tànn.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 bindoon nañu ko ba noppi, yokkunu ko} other{{count} bindoon nañu leen ba noppi, yokkunu leen}}"
 }

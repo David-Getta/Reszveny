@@ -470,7 +470,7 @@
   "portfolioImport": "Importēt no CSV",
   "portfolioImportHint": "Ielīmējiet vienu pirkumu katrā rindā: akcijas simbols, daudzums, cena, valūta, datums (GGGG-MM-DD). Kolonnas var atdalīt ar komatiem, semikoliem vai tabulatoriem; galvenes rinda nav obligāta.",
   "portfolioImportButton": "Importēt",
-  "portfolioImported": "{count, plural, zero{Pievienoti {count} pirkumi} one{Pievienots {count} pirkums} other{Pievienoti {count} pirkumi}}",
+  "portfolioImported": "{count, plural, zero{Pievienoti {count} darījumi} one{Pievienots {count} darījums} other{Pievienoti {count} darījumi}}",
   "portfolioImportSkipped": "{count, plural, zero{Izlaistas {count} rindas} one{Izlaista {count} rinda} other{Izlaistas {count} rindas}}",
   "syncInfo": "Portfelis, izlase, cenu brīdinājumi un piezīmes tiek sinhronizēti visās jūsu ierīcēs.",
   "syncLast": "Pēdējā sinhronizācija: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Rediģēt dividendi · {symbol}",
   "activityTitle": "Visi darījumi",
   "activitySearchHint": "Filtrēt pēc simbola",
-  "activityNoMatch": "Filtram neatbilst neviens darījums."
+  "activityNoMatch": "Filtram neatbilst neviens darījums.",
+  "portfolioImportDuplicates": "{count, plural, zero{{count} jau reģistrēti, nav pievienoti} one{{count} jau reģistrēts, nav pievienots} other{{count} jau reģistrēti, nav pievienoti}}"
 }

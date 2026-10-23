@@ -1748,8 +1748,8 @@ class AppLocalizationsMn extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count худалдан авалт нэмэгдлээ',
-      one: '1 худалдан авалт нэмэгдлээ',
+      other: '$count гүйлгээ нэмэгдлээ',
+      one: '1 гүйлгээ нэмэгдлээ',
     );
     return '$_temp0';
   }
@@ -2791,6 +2791,17 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Шүүлтүүрт тохирох гүйлгээ олдсонгүй.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count аль хэдийн бүртгэгдсэн, нэмэгдсэнгүй',
+      one: '1 аль хэдийн бүртгэгдсэн, нэмэгдсэнгүй',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Зорилт тавих';

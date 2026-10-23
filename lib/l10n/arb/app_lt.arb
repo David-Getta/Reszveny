@@ -470,7 +470,7 @@
   "portfolioImport": "Importuoti iš CSV",
   "portfolioImportHint": "Įklijuokite po vieną pirkimą eilutėje: akcijos simbolis, kiekis, kaina, valiuta, data (MMMM-MM-DD). Stulpeliai gali būti atskirti kableliais, kabliataškiais arba tabuliacijos ženklais; antraštės eilutė neprivaloma.",
   "portfolioImportButton": "Importuoti",
-  "portfolioImported": "{count, plural, one{Pridėtas {count} pirkimas} few{Pridėti {count} pirkimai} many{Pridėta {count} pirkimo} other{Pridėta {count} pirkimų}}",
+  "portfolioImported": "{count, plural, one{Pridėta {count} operacija} few{Pridėtos {count} operacijos} many{Pridėta {count} operacijos} other{Pridėta {count} operacijų}}",
   "portfolioImportSkipped": "{count, plural, one{Praleista {count} eilutė} few{Praleistos {count} eilutės} many{Praleista {count} eilutės} other{Praleista {count} eilučių}}",
   "syncInfo": "Portfelis, mėgstamiausi, kainos įspėjimai ir užrašai sinchronizuojami visuose jūsų įrenginiuose.",
   "syncLast": "Paskutinį kartą sinchronizuota {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Redaguoti dividendą · {symbol}",
   "activityTitle": "Visos operacijos",
   "activitySearchHint": "Filtruoti pagal simbolį",
-  "activityNoMatch": "Filtrą atitinkančių operacijų nėra."
+  "activityNoMatch": "Filtrą atitinkančių operacijų nėra.",
+  "portfolioImportDuplicates": "{count, plural, one{{count} jau įrašyta, neįtraukta} few{{count} jau įrašytos, neįtrauktos} many{{count} jau įrašyta, neįtraukta} other{{count} jau įrašyta, neįtraukta}}"
 }

@@ -470,7 +470,7 @@
   "portfolioImport": "Nhập từ CSV",
   "portfolioImportHint": "Dán mỗi dòng một lần mua: mã cổ phiếu, số lượng, giá, tiền tệ, ngày (YYYY-MM-DD). Các cột có thể phân tách bằng dấu phẩy, dấu chấm phẩy hoặc tab; dòng tiêu đề là tùy chọn.",
   "portfolioImportButton": "Nhập",
-  "portfolioImported": "{count, plural, =1{Đã thêm 1 lần mua} other{Đã thêm {count} lần mua}}",
+  "portfolioImported": "{count, plural, =1{Đã thêm 1 giao dịch} other{Đã thêm {count} giao dịch}}",
   "portfolioImportSkipped": "{count, plural, =1{Đã bỏ qua 1 dòng} other{Đã bỏ qua {count} dòng}}",
   "syncInfo": "Danh mục, mục yêu thích, cảnh báo giá và ghi chú được đồng bộ hóa trên mọi thiết bị của bạn.",
   "syncLast": "Đồng bộ hóa lần cuối {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Sửa cổ tức · {symbol}",
   "activityTitle": "Tất cả giao dịch",
   "activitySearchHint": "Lọc theo mã cổ phiếu",
-  "activityNoMatch": "Không có giao dịch nào khớp với bộ lọc."
+  "activityNoMatch": "Không có giao dịch nào khớp với bộ lọc.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 mục đã được ghi trước đó, không thêm lại} other{{count} mục đã được ghi trước đó, không thêm lại}}"
 }

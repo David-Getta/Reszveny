@@ -1750,8 +1750,8 @@ class AppLocalizationsSu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count pameulian ditambahkeun',
-      one: '1 pameulian ditambahkeun',
+      other: '$count transaksi ditambahkeun',
+      one: '1 transaksi ditambahkeun',
     );
     return '$_temp0';
   }
@@ -2793,6 +2793,17 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Teu aya transaksi nu cocog jeung saringan.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count parantos kacatet, teu dilebetkeun',
+      one: '1 parantos kacatet, teu dilebetkeun',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Setél target';

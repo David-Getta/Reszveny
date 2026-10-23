@@ -470,7 +470,7 @@
   "portfolioImport": "CSV-тан импортлау",
   "portfolioImportHint": "Һәр юлга бер сатып алуны куегыз: тикер, саны, бәясе, валюта, дата (ЕЕЕЕ-АА-КК). Баганалар өтер, нокталы өтер яки табуляция белән аерылырга мөмкин; башлык юлы мәҗбүри түгел.",
   "portfolioImportButton": "Импортлау",
-  "portfolioImported": "{count, plural, =1{1 сатып алу өстәлде} other{{count} сатып алу өстәлде}}",
+  "portfolioImported": "{count, plural, =1{1 операция өстәлде} other{{count} операция өстәлде}}",
   "portfolioImportSkipped": "{count, plural, =1{1 юл калдырылды} other{{count} юл калдырылды}}",
   "syncInfo": "Портфель, сайланмалар, бәя искәртүләре һәм язмалар бөтен җайланмаларыгызда синхронлаштырыла.",
   "syncLast": "Соңгы синхронлаштыру: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Дивидендны үзгәртү · {symbol}",
   "activityTitle": "Барлык операцияләр",
   "activitySearchHint": "Тикер буенча фильтрлау",
-  "activityNoMatch": "Фильтрга туры килгән операция юк."
+  "activityNoMatch": "Фильтрга туры килгән операция юк.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 элек үк язылган, өстәлмәде} other{{count} элек үк язылган, өстәлмәде}}"
 }

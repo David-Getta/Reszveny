@@ -470,7 +470,7 @@
   "portfolioImport": "Kter seg CSV",
   "portfolioImportHint": "Senṭeḍ tiɣin, yiwet deg yal izirig: azamul n uksyun, tanecta, ssuma, tadrimt, azemz (YYYY-MM-DD). Tigejda zemrent ad ttwafrqent s tfeṛḍin, s tneqqiḍin-tfeṛḍin neɣ s tabulation; izirig n uqerru d afrayan.",
   "portfolioImportButton": "Kter",
-  "portfolioImported": "{count, plural, =1{Tettwarna-d 1 n tɣin} other{Ttwarnant-d {count} n tɣin}}",
+  "portfolioImported": "{count, plural, =1{1 n tɣin neɣ uznuzu yettwarna-d} other{{count} n tɣin d uznuzu ttwarnan-d}}",
   "portfolioImportSkipped": "{count, plural, =1{Yettwazgel 1 n yizirig} other{Ttwazeglen {count} n yizirigen}}",
   "syncInfo": "Aqrab, ismenyifen, ilɣa n ssuma d tezmilin mtawan deg yal ibenk-ik.",
   "syncLast": "Amtawi aneggaru: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Ẓreg dividende · {symbol}",
   "activityTitle": "Akk tiɣin d uznuzu",
   "activitySearchHint": "Sizdeg s uzamul",
-  "activityNoMatch": "Ulac tiɣin neɣ aznuzu i yemmenṭaḍen d imsizdeg."
+  "activityNoMatch": "Ulac tiɣin neɣ aznuzu i yemmenṭaḍen d imsizdeg.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 yella yakan, ur yettwarna ara} other{{count} llan yakan, ur ttwarnan ara}}"
 }

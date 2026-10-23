@@ -1752,8 +1752,8 @@ class AppLocalizationsKn extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count ಖರೀದಿಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ',
-      one: '1 ಖರೀದಿ ಸೇರಿಸಲಾಗಿದೆ',
+      other: '$count ವಹಿವಾಟುಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ',
+      one: '$count ವಹಿವಾಟು ಸೇರಿಸಲಾಗಿದೆ',
     );
     return '$_temp0';
   }
@@ -2797,6 +2797,17 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'ಫಿಲ್ಟರ್‌ಗೆ ಹೊಂದುವ ಯಾವುದೇ ವಹಿವಾಟುಗಳಿಲ್ಲ.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಈಗಾಗಲೇ ದಾಖಲಾಗಿವೆ, ಬಿಡಲಾಗಿದೆ',
+      one: '$count ಈಗಾಗಲೇ ದಾಖಲಾಗಿದೆ, ಬಿಡಲಾಗಿದೆ',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';

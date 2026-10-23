@@ -470,7 +470,7 @@
   "portfolioImport": "CSV'den içe aktar",
   "portfolioImportHint": "Her satıra bir alış yapıştır: hisse sembolü, adet, fiyat, para birimi, tarih (YYYY-AA-GG). Sütunlar virgül, noktalı virgül veya sekmeyle ayrılabilir; başlık satırı isteğe bağlıdır.",
   "portfolioImportButton": "İçe aktar",
-  "portfolioImported": "{count, plural, =1{1 alış eklendi} other{{count} alış eklendi}}",
+  "portfolioImported": "{count, plural, =1{1 işlem eklendi} other{{count} işlem eklendi}}",
   "portfolioImportSkipped": "{count, plural, =1{1 satır atlandı} other{{count} satır atlandı}}",
   "syncInfo": "Portföy, favoriler, fiyat alarmları ve notlar tüm cihazlarınızda senkronize edilir.",
   "syncLast": "Son senkronizasyon: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Temettüyü düzenle · {symbol}",
   "activityTitle": "Tüm işlemler",
   "activitySearchHint": "Sembole göre filtrele",
-  "activityNoMatch": "Filtreyle eşleşen işlem yok."
+  "activityNoMatch": "Filtreyle eşleşen işlem yok.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 zaten kayıtlı, eklenmedi} other{{count} zaten kayıtlı, eklenmedi}}"
 }

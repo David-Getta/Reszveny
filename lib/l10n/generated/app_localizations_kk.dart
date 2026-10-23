@@ -1747,8 +1747,8 @@ class AppLocalizationsKk extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count сатып алу қосылды',
-      one: '1 сатып алу қосылды',
+      other: '$count операция қосылды',
+      one: '1 операция қосылды',
     );
     return '$_temp0';
   }
@@ -2790,6 +2790,17 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Сүзгіге сәйкес операция жоқ.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count бұрыннан жазылған, қосылмады',
+      one: '1 бұрыннан жазылған, қосылмады',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Мақсат қою';

@@ -143,7 +143,7 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('holdings-add')));
     await tester.pumpAndSettle();
     expect(s.portfolio.lots.map((l) => (l.symbol, l.quantity, l.price, l.currency)), [('AAPL', 12.0, 150.2, 'USD')]);
-    expect(find.text('1 purchase added'), findsOneWidget);
+    expect(find.text('1 transaction added'), findsOneWidget);
   });
 
   testWidgets('a failed reading shows the error and adds nothing', (tester) async {

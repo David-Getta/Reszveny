@@ -470,7 +470,7 @@
   "portfolioImport": "Importér fra CSV",
   "portfolioImportHint": "Indsæt ét køb pr. linje: tickersymbol, antal, pris, valuta, dato (ÅÅÅÅ-MM-DD). Kolonner kan adskilles med kommaer, semikoloner eller tabulatorer; overskriftslinjen er valgfri.",
   "portfolioImportButton": "Importér",
-  "portfolioImported": "{count, plural, =1{1 køb tilføjet} other{{count} køb tilføjet}}",
+  "portfolioImported": "{count, plural, =1{1 transaktion tilføjet} other{{count} transaktioner tilføjet}}",
   "portfolioImportSkipped": "{count, plural, =1{1 linje sprunget over} other{{count} linjer sprunget over}}",
   "syncInfo": "Portefølje, favoritter, kursalarmer og noter synkroniseres på alle dine enheder.",
   "syncLast": "Sidst synkroniseret {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Rediger udbytte · {symbol}",
   "activityTitle": "Alle transaktioner",
   "activitySearchHint": "Filtrér efter ticker",
-  "activityNoMatch": "Ingen transaktioner matcher filteret."
+  "activityNoMatch": "Ingen transaktioner matcher filteret.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 allerede registreret, udeladt} other{{count} allerede registreret, udeladt}}"
 }

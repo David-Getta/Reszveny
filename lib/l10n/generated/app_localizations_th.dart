@@ -1725,7 +1725,8 @@ class AppLocalizationsTh extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'เพิ่มรายการซื้อ $count รายการแล้ว',
+      other: 'เพิ่มรายการซื้อขาย $count รายการแล้ว',
+      one: 'เพิ่มรายการซื้อขาย 1 รายการแล้ว',
     );
     return '$_temp0';
   }
@@ -2757,6 +2758,17 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'ไม่มีรายการซื้อขายที่ตรงกับตัวกรอง';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count รายการมีบันทึกอยู่แล้ว จึงไม่ได้เพิ่ม',
+      one: '1 รายการมีบันทึกอยู่แล้ว จึงไม่ได้เพิ่ม',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';

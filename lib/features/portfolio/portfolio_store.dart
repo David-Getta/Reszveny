@@ -60,6 +60,9 @@ class PortfolioLot {
   /// A birtokolt darabszám változása: vételnél +, eladásnál −.
   double get signedQuantity => sell ? -quantity : quantity;
 
+  /// Minden mező együtt: javításkor (azonos azonosító mellett) is változik.
+  String get contentKey => '$id|$symbol|$quantity|$price|$currency|${date?.millisecondsSinceEpoch}|$sell|$account|$fee';
+
   Map<String, dynamic> toJson() => {
     'id': id,
     'symbol': symbol,
@@ -110,6 +113,9 @@ class DividendRecord {
 
   /// A számla, amelyre az osztalék érkezett (`null`: nincs megadva).
   final String? account;
+
+  /// Minden mező együtt: javításkor (azonos azonosító mellett) is változik.
+  String get contentKey => '$id|$symbol|$amount|$currency|${date?.millisecondsSinceEpoch}|$account';
 
   Map<String, dynamic> toJson() => {
     'id': id,
@@ -194,6 +200,24 @@ class SplitRecord {
       // Egész számokkal, hogy az összevonás (1:10) se hagyjon lebegőpontos maradékot.
       quantity: l.quantity * to / from,
       price: l.price * from / to,
+      currency: l.currency,
+      date: l.date,
+      sell: l.sell,
+      account: l.account,
+      fee: l.fee,
+    );
+  }
+
+  /// Az [apply] visszafelé: a felaprózás utáni darabszámban megadott tétel
+  /// felaprózás előtti alakja.
+  PortfolioLot revert(PortfolioLot l) {
+    final at = l.date;
+    if (l.symbol != symbol || at == null || !at.isBefore(date)) return l;
+    return PortfolioLot(
+      id: l.id,
+      symbol: l.symbol,
+      quantity: l.quantity * from / to,
+      price: l.price * to / from,
       currency: l.currency,
       date: l.date,
       sell: l.sell,
@@ -519,15 +543,32 @@ class PortfolioStore extends ChangeNotifier {
     ]);
   }
 
-  /// A tranzakciók és a felaprózások azonosítói: ha változik, a pozíciókból
-  /// számolt (hálózatról töltött) adatokat újra kell számolni.
-  String get holdingsKey => '${_lots.map((l) => l.id).join(',')}|${_splits.map((s) => s.id).join(',')}';
+  /// Egy tétel a felaprózásokkal igazítva, ahogy a pozíciókban és a listákban látszik.
+  PortfolioLot adjustedLot(PortfolioLot l) => _splits.fold(l, (lot, s) => s.apply(lot));
+
+  /// Az [adjustedLot] visszafelé: a mai (felaprózás utáni) darabszámban és árban
+  /// megadott tétel tárolt alakja, a napja utáni felaprózásokat visszacsinálva
+  /// (javításkor a dialógus a látott számokkal dolgozik).
+  PortfolioLot storedLot(PortfolioLot l) => _splits.reversed.fold(l, (lot, s) => s.revert(lot));
+
+  /// A tranzakciók és a felaprózások tartalma: ha változik (egy javítás is,
+  /// azonos azonosítóval), a pozíciókból számolt (hálózatról töltött) adatokat
+  /// újra kell számolni.
+  String get holdingsKey => _holdingsKey ??=
+      '${_lots.map((l) => l.contentKey).join(',')}|${_splits.map((s) => '${s.id}|${s.label}|${s.date}').join(',')}';
+  String? _holdingsKey;
+
+  /// A kapott osztalékok tartalma (a javítás is számít).
+  String get dividendsKey => _dividendsContent ??= _dividends.map((d) => d.contentKey).join(',');
+  String? _dividendsContent;
 
   @override
   void notifyListeners() {
     _adjusted = null;
     _allPositions = null;
     _realizedBySale = null;
+    _holdingsKey = null;
+    _dividendsContent = null;
     _accounts = null;
     _views.clear();
     super.notifyListeners();

@@ -1441,6 +1441,30 @@ void main() {
     final held = find.byKey(const ValueKey('position-held'));
     expect(find.descendant(of: held, matching: find.text('$years$months')), findsOneWidget);
     expect(find.descendant(of: held, matching: find.text('since Mar 4, 2024')), findsOneWidget);
+    // Az indexhez mérve: mintha a vétel összegét ugyanazon a napon az S&P 500-ba tette volna.
+    final vs = find.byKey(const ValueKey('position-vs-index'));
+    expect(vs, findsOneWidget);
+    expect(
+      find.descendant(of: vs, matching: find.byKey(const ValueKey('hint-Compared with an index'))),
+      findsOneWidget,
+    );
+    expect(find.descendant(of: vs, matching: find.textContaining('S&P 500 ')), findsOneWidget);
+    expect(find.descendant(of: vs, matching: find.textContaining('percentage points')), findsOneWidget);
+  });
+
+  testWidgets('no index comparison for an undated purchase or for the index itself', (tester) async {
+    tester.view.physicalSize = const Size(1200, 4000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 150, currency: 'USD');
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField).first, 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    expect(find.text('Your position'), findsOneWidget);
+    expect(find.byKey(const ValueKey('position-vs-index')), findsNothing);
   });
 
   testWidgets('the trade preview shows the share of the portfolio afterwards', (tester) async {
@@ -1552,5 +1576,85 @@ void main() {
     final edited = s.portfolio.lots.single;
     expect((edited.id, edited.quantity, edited.price, edited.date), (lot.id, 12.0, 190.0, DateTime(2025, 5, 2)));
     expect(s.portfolio.cash['USD'], 1000, reason: 'a javítás nem mozgatja a készpénzt');
+    // Az oldal összesítői is frissülnek (az azonosító nem változott, a tartalma igen).
+    await tester.tapAt(const Offset(600, 40));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('avg. cost 190.00'), findsOneWidget);
+  });
+
+  test('a stored record changes the cache keys even when only its numbers change', () async {
+    final store = PortfolioStore();
+    final lot = await store.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD');
+    final d = await store.addDividend(symbol: 'AAPL', amount: 2, currency: 'USD');
+    final (h, k) = (store.holdingsKey, store.dividendsKey);
+    await store.replace(PortfolioLot(id: lot.id, symbol: 'AAPL', quantity: 12, price: 200, currency: 'USD'));
+    await store.replaceDividend(DividendRecord(id: d.id, symbol: 'AAPL', amount: 2.5, currency: 'USD'));
+    expect(store.holdingsKey, isNot(h));
+    expect(store.dividendsKey, isNot(k));
+  });
+
+  testWidgets('correcting an undated purchase keeps it undated, so a later sale still matches it', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    final buy = await s.portfolio.add(symbol: 'AAPL', quantity: 100, price: 150, currency: 'USD');
+    await s.portfolio.add(
+      symbol: 'AAPL',
+      quantity: 10,
+      price: 200,
+      currency: 'USD',
+      date: DateTime(2025, 9, 1),
+      sell: true,
+    );
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(ValueKey('lot-edit-${buy.id}')));
+    await tester.pumpAndSettle();
+    expect(find.descendant(of: find.byType(AlertDialog), matching: find.text('n/a')), findsOneWidget);
+    await tester.enterText(find.byKey(const ValueKey('lot-price')), '155');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    final edited = s.portfolio.lots.firstWhere((l) => l.id == buy.id);
+    expect((edited.price, edited.date), (155.0, null));
+    expect(s.portfolio.positionOf('AAPL')!.quantity, 90);
+  });
+
+  testWidgets('a purchase before a split is corrected in today\'s shares and stored as before the split', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    final lot = await s.portfolio.add(
+      symbol: 'NVDA',
+      quantity: 10,
+      price: 900,
+      currency: 'USD',
+      date: DateTime(2024, 1, 8),
+    );
+    await s.portfolio.addSplit(symbol: 'NVDA', from: 1, to: 10, date: DateTime(2024, 6, 10));
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-menu-NVDA')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(ValueKey('lot-edit-${lot.id}')));
+    await tester.pumpAndSettle();
+    // A dialógus a listában látott (igazított) számokat mutatja.
+    expect(tester.widget<TextField>(find.byKey(const ValueKey('lot-quantity'))).controller!.text, '100');
+    expect(tester.widget<TextField>(find.byKey(const ValueKey('lot-price'))).controller!.text, '90');
+    await tester.enterText(find.byKey(const ValueKey('lot-price')), '95');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    final stored = s.portfolio.lots.single;
+    expect((stored.quantity, stored.price), (10.0, 950.0), reason: 'a felaprózás előtti alakban tárolva');
+    expect(s.portfolio.positionOf('NVDA')!.quantity, 100);
   });
 }

@@ -470,7 +470,7 @@
   "portfolioImport": "CSV सँ आयात करू",
   "portfolioImportHint": "प्रति पाँती एकटा खरीदारी साटू: टिकर, संख्या, मूल्य, मुद्रा, तिथि (YYYY-MM-DD)। स्तम्भ कॉमा, सेमीकोलन वा टैब सँ अलग भ' सकैत अछि; शीर्ष पाँती वैकल्पिक अछि।",
   "portfolioImportButton": "आयात करू",
-  "portfolioImported": "{count, plural, =1{1 खरीदारी जोड़ल गेल} other{{count} खरीदारी जोड़ल गेल}}",
+  "portfolioImported": "{count, plural, =1{1 लेन-देन जोड़ल गेल} other{{count} लेन-देन जोड़ल गेल}}",
   "portfolioImportSkipped": "{count, plural, =1{1 पाँती छोड़ल गेल} other{{count} पाँती छोड़ल गेल}}",
   "syncInfo": "पोर्टफ़ोलियो, पसंदीदा, दाम अलर्ट आ नोट अहाँक सभ डिवाइस पर सिंक होइत अछि।",
   "syncLast": "अंतिम सिंक: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "डिविडेंड बदलू · {symbol}",
   "activityTitle": "सभ लेन-देन",
   "activitySearchHint": "टिकर सँ फ़िल्टर करू",
-  "activityNoMatch": "फ़िल्टर सँ कोनो लेन-देन मेल नहि खाइत अछि।"
+  "activityNoMatch": "फ़िल्टर सँ कोनो लेन-देन मेल नहि खाइत अछि।",
+  "portfolioImportDuplicates": "{count, plural, =1{1 पहिनहिसँ दर्ज अछि, छोड़ल गेल} other{{count} पहिनहिसँ दर्ज अछि, छोड़ल गेल}}"
 }

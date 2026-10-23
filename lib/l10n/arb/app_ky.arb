@@ -470,7 +470,7 @@
   "portfolioImport": "CSV'ден импорттоо",
   "portfolioImportHint": "Ар бир сапка бир сатып алууну коюңуз: тикер, саны, баасы, валюта, күнү (ЖЖЖЖ-АА-КК). Мамычалар үтүр, үтүрлүү чекит же табуляция менен бөлүнүшү мүмкүн; баш сап милдеттүү эмес.",
   "portfolioImportButton": "Импорттоо",
-  "portfolioImported": "{count, plural, =1{1 сатып алуу кошулду} other{{count} сатып алуу кошулду}}",
+  "portfolioImported": "{count, plural, =1{1 транзакция кошулду} other{{count} транзакция кошулду}}",
   "portfolioImportSkipped": "{count, plural, =1{1 сап өткөрүлүп жиберилди} other{{count} сап өткөрүлүп жиберилди}}",
   "syncInfo": "Портфель, тандалмалар, баа эскертмелери жана жазуулар бардык түзмөктөрүңүздө шайкештирилет.",
   "syncLast": "Акыркы шайкештирүү: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Дивидендди түзөтүү · {symbol}",
   "activityTitle": "Бардык транзакциялар",
   "activitySearchHint": "Тикер боюнча чыпкалоо",
-  "activityNoMatch": "Чыпкага дал келген транзакция жок."
+  "activityNoMatch": "Чыпкага дал келген транзакция жок.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 мурунтан жазылган, кошулган жок} other{{count} мурунтан жазылган, кошулган жок}}"
 }

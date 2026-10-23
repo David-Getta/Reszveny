@@ -470,7 +470,7 @@
   "portfolioImport": "នាំចូលពី CSV",
   "portfolioImportHint": "បិទភ្ជាប់ការទិញមួយក្នុងមួយបន្ទាត់៖ និមិត្តសញ្ញាភាគហ៊ុន បរិមាណ តម្លៃ រូបិយប័ណ្ណ កាលបរិច្ឆេទ (YYYY-MM-DD)។ ជួរឈរអាចបំបែកដោយសញ្ញាក្បៀស សញ្ញាចុចក្បៀស ឬថេប ហើយជួរក្បាលមិនចាំបាច់ទេ។",
   "portfolioImportButton": "នាំចូល",
-  "portfolioImported": "{count, plural, other{បានបន្ថែមការទិញ {count}}}",
+  "portfolioImported": "{count, plural, =1{បានបន្ថែមប្រតិបត្តិការ 1} other{បានបន្ថែមប្រតិបត្តិការ {count}}}",
   "portfolioImportSkipped": "{count, plural, other{បានរំលង {count} បន្ទាត់}}",
   "syncInfo": "ផលប័ត្រ ចំណូលចិត្ត ការជូនដំណឹងតម្លៃ និងកំណត់ចំណាំ ត្រូវបានធ្វើសមកាលកម្មនៅលើឧបករណ៍ទាំងអស់របស់អ្នក។",
   "syncLast": "ធ្វើសមកាលកម្មចុងក្រោយ៖ {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "កែភាគលាភ · {symbol}",
   "activityTitle": "ប្រតិបត្តិការទាំងអស់",
   "activitySearchHint": "ត្រងតាមនិមិត្តសញ្ញា",
-  "activityNoMatch": "គ្មានប្រតិបត្តិការដែលត្រូវនឹងតម្រងទេ។"
+  "activityNoMatch": "គ្មានប្រតិបត្តិការដែលត្រូវនឹងតម្រងទេ។",
+  "portfolioImportDuplicates": "{count, plural, =1{1 បានកត់ត្រារួចហើយ មិនបានបញ្ចូលទេ} other{{count} បានកត់ត្រារួចហើយ មិនបានបញ្ចូលទេ}}"
 }

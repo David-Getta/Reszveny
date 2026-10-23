@@ -1755,8 +1755,8 @@ class AppLocalizationsXh extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Kongezwe izinto ezithengiweyo ezi-$count',
-      one: 'Kongezwe into enye ethengiweyo',
+      other: 'Kongezwe iintengiselwano ezi-$count',
+      one: 'Kongezwe intengiselwano enye',
     );
     return '$_temp0';
   }
@@ -2804,6 +2804,17 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Akukho ntengiselwano ihambelana nesihluzi.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ezi-$count sele zirekhodiwe, azongezwanga',
+      one: 'Enye sele irekhodiwe, ayongezwanga',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Misela usukelo';

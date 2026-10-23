@@ -470,7 +470,7 @@
   "portfolioImport": "Importeren uit CSV",
   "portfolioImportHint": "Plak één aankoop per regel: ticker, aantal, prijs, valuta, datum (JJJJ-MM-DD). Kolommen mogen gescheiden zijn door komma's, puntkomma's of tabs; de kopregel is optioneel.",
   "portfolioImportButton": "Importeren",
-  "portfolioImported": "{count, plural, =1{1 aankoop toegevoegd} other{{count} aankopen toegevoegd}}",
+  "portfolioImported": "{count, plural, =1{1 transactie toegevoegd} other{{count} transacties toegevoegd}}",
   "portfolioImportSkipped": "{count, plural, =1{1 regel overgeslagen} other{{count} regels overgeslagen}}",
   "syncInfo": "Portefeuille, favorieten, koersalerts en notities worden op al je apparaten gesynchroniseerd.",
   "syncLast": "Laatst gesynchroniseerd {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Dividend bewerken · {symbol}",
   "activityTitle": "Alle transacties",
   "activitySearchHint": "Filter op ticker",
-  "activityNoMatch": "Geen transacties die aan het filter voldoen."
+  "activityNoMatch": "Geen transacties die aan het filter voldoen.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 al vastgelegd, weggelaten} other{{count} al vastgelegd, weggelaten}}"
 }

@@ -1749,8 +1749,8 @@ class AppLocalizationsFi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count ostoa lisätty',
-      one: '1 osto lisätty',
+      other: '$count tapahtumaa lisätty',
+      one: '1 tapahtuma lisätty',
     );
     return '$_temp0';
   }
@@ -2792,6 +2792,17 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Suodatinta vastaavia tapahtumia ei ole.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jo kirjattu, jätetty pois',
+      one: '1 jo kirjattu, jätetty pois',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Aseta tavoite';

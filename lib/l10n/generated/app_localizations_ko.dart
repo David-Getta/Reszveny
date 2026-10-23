@@ -1697,8 +1697,8 @@ class AppLocalizationsKo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '매수 $count건이 추가되었습니다',
-      one: '매수 1건이 추가되었습니다',
+      other: '거래 $count건이 추가되었습니다',
+      one: '거래 1건이 추가되었습니다',
     );
     return '$_temp0';
   }
@@ -2716,6 +2716,17 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get activityNoMatch => '필터와 일치하는 거래가 없습니다.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '이미 기록된 $count건은 제외되었습니다',
+      one: '이미 기록된 1건은 제외되었습니다',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => '목표 설정';

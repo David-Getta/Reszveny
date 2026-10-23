@@ -470,7 +470,7 @@
   "portfolioImport": "CSV-dən idxal et",
   "portfolioImportHint": "Hər sətirdə bir alış yapışdırın: tiker, miqdar, qiymət, valyuta, tarix (İİİİ-AA-GG). Sütunlar vergül, nöqtəli vergül və ya tabla ayrıla bilər; başlıq sətri məcburi deyil.",
   "portfolioImportButton": "İdxal et",
-  "portfolioImported": "{count, plural, =1{1 alış əlavə olundu} other{{count} alış əlavə olundu}}",
+  "portfolioImported": "{count, plural, =1{1 əməliyyat əlavə olundu} other{{count} əməliyyat əlavə olundu}}",
   "portfolioImportSkipped": "{count, plural, =1{1 sətir ötürüldü} other{{count} sətir ötürüldü}}",
   "syncInfo": "Portfel, seçilmişlər, qiymət bildirişləri və qeydlər bütün cihazlarınızda sinxronlaşdırılır.",
   "syncLast": "Son sinxronizasiya: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Dividendi redaktə et · {symbol}",
   "activityTitle": "Bütün əməliyyatlar",
   "activitySearchHint": "Tikerə görə filtrlə",
-  "activityNoMatch": "Filtrə uyğun əməliyyat yoxdur."
+  "activityNoMatch": "Filtrə uyğun əməliyyat yoxdur.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 artıq qeyd olunub, əlavə edilmədi} other{{count} artıq qeyd olunub, əlavə edilmədi}}"
 }

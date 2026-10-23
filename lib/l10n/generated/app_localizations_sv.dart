@@ -1748,8 +1748,8 @@ class AppLocalizationsSv extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count köp har lagts till',
-      one: '1 köp har lagts till',
+      other: '$count transaktioner har lagts till',
+      one: '1 transaktion har lagts till',
     );
     return '$_temp0';
   }
@@ -2792,6 +2792,17 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Inga transaktioner matchar filtret.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count redan registrerade, utelämnade',
+      one: '1 redan registrerad, utelämnad',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Sätt ett mål';

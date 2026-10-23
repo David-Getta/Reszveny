@@ -1720,8 +1720,8 @@ class AppLocalizationsAm extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count ግዢዎች ታክለዋል',
-      one: '1 ግዢ ታክሏል',
+      other: '$count ግብይቶች ታክለዋል',
+      one: '$count ግብይት ታክሏል',
     );
     return '$_temp0';
   }
@@ -2755,6 +2755,17 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'ከማጣሪያው ጋር የሚዛመድ ግብይት የለም።';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ቀድመው ተመዝግበዋል፣ ተትተዋል',
+      one: '$count ቀድሞ ተመዝግቧል፣ ተትቷል',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';

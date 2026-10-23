@@ -1747,8 +1747,8 @@ class AppLocalizationsCkb extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count کڕین زیادکران',
-      one: '1 کڕین زیادکرا',
+      other: '$count مامەڵە زیادکران',
+      one: '1 مامەڵە زیادکرا',
     );
     return '$_temp0';
   }
@@ -2793,6 +2793,17 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'هیچ مامەڵەیەک لەگەڵ پاڵاوتنەکە ناگونجێت.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پێشتر تۆمارکراون، زیاد نەکران',
+      one: '1 پێشتر تۆمارکراوە، زیاد نەکرا',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'دانانی ئامانج';

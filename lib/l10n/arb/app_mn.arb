@@ -470,7 +470,7 @@
   "portfolioImport": "CSV-ээс импортлох",
   "portfolioImportHint": "Мөр бүрт нэг худалдан авалт буулгана уу: тикер, тоо ширхэг, үнэ, валют, огноо (ЖЖЖЖ-СС-ӨӨ). Баганыг таслал, цэгтэй таслал эсвэл табаар тусгаарлаж болно; гарчгийн мөр заавал биш.",
   "portfolioImportButton": "Импортлох",
-  "portfolioImported": "{count, plural, =1{1 худалдан авалт нэмэгдлээ} other{{count} худалдан авалт нэмэгдлээ}}",
+  "portfolioImported": "{count, plural, =1{1 гүйлгээ нэмэгдлээ} other{{count} гүйлгээ нэмэгдлээ}}",
   "portfolioImportSkipped": "{count, plural, =1{1 мөр алгаслаа} other{{count} мөр алгаслаа}}",
   "syncInfo": "Портфолио, дуртай, үнийн сэрэмжлүүлэг болон тэмдэглэл таны бүх төхөөрөмж дээр синк хийгддэг.",
   "syncLast": "Сүүлд синк хийсэн: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Ногдол ашиг засах · {symbol}",
   "activityTitle": "Бүх гүйлгээ",
   "activitySearchHint": "Тикерээр шүүх",
-  "activityNoMatch": "Шүүлтүүрт тохирох гүйлгээ олдсонгүй."
+  "activityNoMatch": "Шүүлтүүрт тохирох гүйлгээ олдсонгүй.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 аль хэдийн бүртгэгдсэн, нэмэгдсэнгүй} other{{count} аль хэдийн бүртгэгдсэн, нэмэгдсэнгүй}}"
 }

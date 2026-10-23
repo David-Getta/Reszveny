@@ -470,7 +470,7 @@
   "portfolioImport": "Tuo CSV:stä",
   "portfolioImportHint": "Liitä yksi osto riviä kohden: osaketunnus, määrä, hinta, valuutta, päivämäärä (VVVV-KK-PP). Sarakkeet voi erottaa pilkuilla, puolipisteillä tai sarkaimilla; otsikkorivi on valinnainen.",
   "portfolioImportButton": "Tuo",
-  "portfolioImported": "{count, plural, =1{1 osto lisätty} other{{count} ostoa lisätty}}",
+  "portfolioImported": "{count, plural, =1{1 tapahtuma lisätty} other{{count} tapahtumaa lisätty}}",
   "portfolioImportSkipped": "{count, plural, =1{1 rivi ohitettu} other{{count} riviä ohitettu}}",
   "syncInfo": "Salkku, suosikit, kurssihälytykset ja muistiinpanot synkronoidaan kaikille laitteillesi.",
   "syncLast": "Synkronoitu viimeksi {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Muokkaa osinkoa · {symbol}",
   "activityTitle": "Kaikki tapahtumat",
   "activitySearchHint": "Suodata tunnuksella",
-  "activityNoMatch": "Suodatinta vastaavia tapahtumia ei ole."
+  "activityNoMatch": "Suodatinta vastaavia tapahtumia ei ole.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 jo kirjattu, jätetty pois} other{{count} jo kirjattu, jätetty pois}}"
 }

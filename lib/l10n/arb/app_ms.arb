@@ -470,7 +470,7 @@
   "portfolioImport": "Import daripada CSV",
   "portfolioImportHint": "Tampal satu pembelian setiap baris: ticker, kuantiti, harga, mata wang, tarikh (TTTT-BB-HH). Lajur boleh dipisahkan dengan koma, koma bertitik atau tab; baris pengepala adalah pilihan.",
   "portfolioImportButton": "Import",
-  "portfolioImported": "{count, plural, =1{1 pembelian ditambah} other{{count} pembelian ditambah}}",
+  "portfolioImported": "{count, plural, =1{1 transaksi ditambah} other{{count} transaksi ditambah}}",
   "portfolioImportSkipped": "{count, plural, =1{1 baris dilangkau} other{{count} baris dilangkau}}",
   "syncInfo": "Portfolio, kegemaran, amaran harga dan nota disegerakkan merentas semua peranti anda.",
   "syncLast": "Kali terakhir disegerakkan {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Edit dividen · {symbol}",
   "activityTitle": "Semua transaksi",
   "activitySearchHint": "Tapis mengikut ticker",
-  "activityNoMatch": "Tiada transaksi yang sepadan dengan penapis."
+  "activityNoMatch": "Tiada transaksi yang sepadan dengan penapis.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 sudah direkodkan, tidak dimasukkan} other{{count} sudah direkodkan, tidak dimasukkan}}"
 }

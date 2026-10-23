@@ -470,7 +470,7 @@
   "portfolioImport": "Don ka bɔ CSV la",
   "portfolioImportHint": "San kelen bila sira kelen kelen kan: aksiyɔn taamasiyɛn, hakɛ, sɔngɔ, wari suguya, don (YYYY-MM-DD). Kolɔnw bɛ se ka faran ni virgule, point-virgule walima tabulation ye; kunkan sira tɛ wajibi ye.",
   "portfolioImportButton": "Don",
-  "portfolioImported": "{count, plural, =1{San 1 farala a kan} other{San {count} farala a kan}}",
+  "portfolioImported": "{count, plural, =1{Sanni walima feereli 1 farala a kan} other{Sanni ni feereli {count} farala a kan}}",
   "portfolioImportSkipped": "{count, plural, =1{Sira 1 tɛmɛna} other{Sira {count} tɛmɛna}}",
   "syncInfo": "Aksiyɔn kɛsu, diyanyelenw, sɔngɔ lasɔminiw ani sɛbɛnniw bɛ kɛ kelen ye i ka minɛnw bɛɛ kan.",
   "syncLast": "Sync laban: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Dividandi yɛlɛma · {symbol}",
   "activityTitle": "Sanniw ni feereliw bɛɛ",
   "activitySearchHint": "Sugandi taamasiyɛn fɛ",
-  "activityNoMatch": "Sanni walima feereli si ma bɛn i ka sugandili ma."
+  "activityNoMatch": "Sanni walima feereli si ma bɛn i ka sugandili ma.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 sɛbɛnna kaban, a ma fara a kan} other{{count} sɛbɛnna kaban, u ma fara a kan}}"
 }

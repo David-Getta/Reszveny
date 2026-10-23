@@ -8,6 +8,7 @@ import 'package:reszveny/core/share/share_text.dart';
 import 'package:reszveny/core/util/formatters.dart';
 import 'package:reszveny/features/portfolio/dividend_forecast.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
+import 'package:reszveny/widgets/date_picker_row.dart';
 
 import 'app_widget_test.dart' show services;
 
@@ -656,5 +657,56 @@ void main() {
     await tester.pumpAndSettle();
     expect(s.portfolio.dividends.single.amount, 2.5);
     expect(find.textContaining('Dividends received: 2.50 USD'), findsOneWidget);
+  });
+
+  testWidgets('correcting a dividend keeps a missing date and account missing; a future date opens the picker', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(1200, 2600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.add(
+      symbol: 'AAPL',
+      quantity: 10,
+      price: 200,
+      currency: 'USD',
+      date: DateTime(2025, 5, 2),
+      account: 'TBSZ',
+    );
+    final d = await s.portfolio.addDividend(symbol: 'AAPL', amount: 2, currency: 'USD');
+    final future = await s.portfolio.addDividend(
+      symbol: 'AAPL',
+      amount: 3,
+      currency: 'USD',
+      date: DateTime.now().add(const Duration(days: 400)),
+    );
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    final edit = find.byKey(ValueKey('dividend-edit-${d.id}'));
+    await tester.ensureVisible(edit);
+    await tester.pumpAndSettle();
+    await tester.tap(edit);
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('dividend-amount')), '2.2');
+    await tester.tap(find.byKey(const ValueKey('dividend-submit')));
+    await tester.pumpAndSettle();
+    final edited = s.portfolio.dividends.firstWhere((x) => x.id == d.id);
+    expect((edited.amount, edited.date, edited.account), (2.2, null, null));
+
+    // A tartományon kívüli (jövőbeli) tárolt nap a mai napon nyitja a naptárt.
+    final editFuture = find.byKey(ValueKey('dividend-edit-${future.id}'));
+    await tester.ensureVisible(editFuture);
+    await tester.pumpAndSettle();
+    await tester.tap(editFuture);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byType(DatePickerRow));
+    await tester.pumpAndSettle();
+    expect(tester.takeException(), isNull);
+    expect(find.byType(DatePickerDialog), findsOneWidget);
+    await tester.tap(find.text('Cancel').last);
+    await tester.pumpAndSettle();
   });
 }

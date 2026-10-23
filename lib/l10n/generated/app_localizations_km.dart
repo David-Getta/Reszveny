@@ -1732,7 +1732,8 @@ class AppLocalizationsKm extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'បានបន្ថែមការទិញ $count',
+      other: 'បានបន្ថែមប្រតិបត្តិការ $count',
+      one: 'បានបន្ថែមប្រតិបត្តិការ 1',
     );
     return '$_temp0';
   }
@@ -2768,6 +2769,17 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'គ្មានប្រតិបត្តិការដែលត្រូវនឹងតម្រងទេ។';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count បានកត់ត្រារួចហើយ មិនបានបញ្ចូលទេ',
+      one: '1 បានកត់ត្រារួចហើយ មិនបានបញ្ចូលទេ',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';

@@ -1755,8 +1755,8 @@ class AppLocalizationsNy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Zogula $count zawonjezedwa',
-      one: 'Chogula 1 chawonjezedwa',
+      other: 'Zogula ndi zogulitsa $count zawonjezedwa',
+      one: 'Kugula kapena kugulitsa 1 kwawonjezedwa',
     );
     return '$_temp0';
   }
@@ -2802,6 +2802,17 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get activityNoMatch =>
       'Palibe zogula kapena zogulitsa zofanana ndi zomwe mwasankha.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count zinalembedwa kale, sizinawonjezedwe',
+      one: '1 chinalembedwa kale, sichinawonjezedwe',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Ikani cholinga';

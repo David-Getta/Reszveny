@@ -1750,8 +1750,8 @@ class AppLocalizationsKu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count kirîn hatin zêdekirin',
-      one: '1 kirîn hat zêdekirin',
+      other: '$count danûstandin hatin zêdekirin',
+      one: '1 danûstandin hat zêdekirin',
     );
     return '$_temp0';
   }
@@ -2794,6 +2794,17 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Tu danûstandin bi parzûnê re li hev nayê.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count berê hatine tomarkirin, nehatin zêdekirin',
+      one: '1 berê hatiye tomarkirin, nehat zêdekirin',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Armanc deyne';

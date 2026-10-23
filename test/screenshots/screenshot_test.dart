@@ -764,6 +764,33 @@ void main() {
     CollapseStore.instance.reset();
   });
 
+  testWidgets('my position on the stock page, compared with the index (hungarian)', (tester) async {
+    final portfolio = PortfolioStore(
+      lots: [
+        PortfolioLot(id: 'n1', symbol: 'NVDA', quantity: 20, price: 87.5, currency: 'USD', date: DateTime(2024, 3, 4)),
+        PortfolioLot(id: 'n2', symbol: 'NVDA', quantity: 10, price: 104, currency: 'USD', date: DateTime(2025, 4, 7)),
+        PortfolioLot(
+          id: 'n3',
+          symbol: 'NVDA',
+          quantity: 5,
+          price: 141.2,
+          currency: 'USD',
+          date: DateTime(2025, 1, 6),
+          sell: true,
+        ),
+      ],
+    );
+    await pumpApp(tester, _services(locale: const Locale('hu'), portfolio: portfolio), const Size(430, 1100));
+    await tester.enterText(find.byType(TextField), 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    final card = find.byKey(const ValueKey('position-transactions'));
+    await tester.scrollUntilVisible(card, 400, scrollable: find.byType(Scrollable).first);
+    Scrollable.ensureVisible(tester.element(card), alignment: 0.02);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'detail_position_phone_hu');
+  });
+
   testWidgets('long-term view on a phone (hungarian)', (tester) async {
     await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 1100));
     await tester.enterText(find.byType(TextField), 'NVDA');

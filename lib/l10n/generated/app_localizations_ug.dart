@@ -1750,8 +1750,8 @@ class AppLocalizationsUg extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count سېتىۋېلىش قوشۇلدى',
-      one: '1 سېتىۋېلىش قوشۇلدى',
+      other: '$count سودا قوشۇلدى',
+      one: '1 سودا قوشۇلدى',
     );
     return '$_temp0';
   }
@@ -2794,6 +2794,17 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'سۈزگۈچكە ماس كېلىدىغان سودا يوق.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ئاللىقاچان خاتىرىلەنگەن، قوشۇلمىدى',
+      one: '1 ئاللىقاچان خاتىرىلەنگەن، قوشۇلمىدى',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';

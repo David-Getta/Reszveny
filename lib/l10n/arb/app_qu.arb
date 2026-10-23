@@ -470,7 +470,7 @@
   "portfolioImport": "CSV-manta apamuy",
   "portfolioImportHint": "Sapa siqipi huk rantisqata k'askachiy: ticker, hayk'a, chanin, qullqi, p'unchaw (YYYY-MM-DD). Columnakunaqa comawan, punto y comawan utaq tabwan t'aqasqa kanman; uma siqiqa mana necesariochu.",
   "portfolioImportButton": "Apamuy",
-  "portfolioImported": "{count, plural, =1{1 rantisqa yapakun} other{{count} rantisqa yapakun}}",
+  "portfolioImported": "{count, plural, =1{1 rantiy rantikuy yapakun} other{{count} rantiy rantikuy yapakun}}",
   "portfolioImportSkipped": "{count, plural, =1{1 siqi saqisqa} other{{count} siqi saqisqa}}",
   "syncInfo": "Portafolio, munasqakuna, chanin willachiykuna, qillqasqakunapas llapan equipoykikunapi kaqllam.",
   "syncLast": "Qhipa sincronización: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Dividendota allichay · {symbol}",
   "activityTitle": "Llapan rantiy rantikuy",
   "activitySearchHint": "Ticker nisqawan akllay",
-  "activityNoMatch": "Mana ima rantiy rantikuypas akllasqaykiman tupanchu."
+  "activityNoMatch": "Mana ima rantiy rantikuypas akllasqaykiman tupanchu.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 ñam qillqasqaña, mana yapasqachu} other{{count} ñam qillqasqaña, mana yapasqachu}}"
 }

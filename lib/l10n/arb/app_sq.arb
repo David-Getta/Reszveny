@@ -470,7 +470,7 @@
   "portfolioImport": "Importo nga CSV",
   "portfolioImportHint": "Ngjit një blerje për rresht: simboli i aksionit, sasia, çmimi, monedha, data (VVVV-MM-DD). Kolonat mund të ndahen me presje, pikëpresje ose tabulacione; rreshti i titujve është opsional.",
   "portfolioImportButton": "Importo",
-  "portfolioImported": "{count, plural, =1{U shtua 1 blerje} other{U shtuan {count} blerje}}",
+  "portfolioImported": "{count, plural, =1{U shtua 1 transaksion} other{U shtuan {count} transaksione}}",
   "portfolioImportSkipped": "{count, plural, =1{U anashkalua 1 rresht} other{U anashkaluan {count} rreshta}}",
   "syncInfo": "Portofoli, të preferuarat, alarmet e çmimit dhe shënimet sinkronizohen në të gjitha pajisjet tuaja.",
   "syncLast": "Sinkronizimi i fundit: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Ndrysho dividendin · {symbol}",
   "activityTitle": "Të gjitha transaksionet",
   "activitySearchHint": "Filtro sipas simbolit",
-  "activityNoMatch": "Asnjë transaksion nuk përputhet me filtrin."
+  "activityNoMatch": "Asnjë transaksion nuk përputhet me filtrin.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 ishte regjistruar tashmë, u la jashtë} other{{count} ishin regjistruar tashmë, u lanë jashtë}}"
 }

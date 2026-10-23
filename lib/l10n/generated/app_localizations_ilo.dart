@@ -1763,8 +1763,8 @@ class AppLocalizationsIlo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Nainayon ti $count a gatang',
-      one: 'Nainayon ti 1 a gatang',
+      other: 'Nainayon ti $count a transaksion',
+      one: 'Nainayon ti 1 a transaksion',
     );
     return '$_temp0';
   }
@@ -2812,6 +2812,17 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Awan ti maitutop a transaksion iti filter.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ti nairekordnan, saan a nainayon',
+      one: '1 ti nairekordnan, saan a nainayon',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';

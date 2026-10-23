@@ -470,7 +470,7 @@
   "portfolioImport": "Увези од CSV",
   "portfolioImportHint": "Залепи по едно купување во секој ред: тикер, количина, цена, валута, датум (ГГГГ-ММ-ДД). Колоните може да се одделени со запирки, точка-запирки или табулатори; насловниот ред не е задолжителен.",
   "portfolioImportButton": "Увези",
-  "portfolioImported": "{count, plural, one{Додадено е {count} купување} other{Додадени се {count} купувања}}",
+  "portfolioImported": "{count, plural, one{Додадена е {count} трансакција} other{Додадени се {count} трансакции}}",
   "portfolioImportSkipped": "{count, plural, one{Прескокнат е {count} ред} other{Прескокнати се {count} редови}}",
   "syncInfo": "Портфолиото, омилените, ценовните известувања и белешките се синхронизираат на сите ваши уреди.",
   "syncLast": "Последна синхронизација: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Уреди дивиденда · {symbol}",
   "activityTitle": "Сите трансакции",
   "activitySearchHint": "Филтрирај по тикер",
-  "activityNoMatch": "Нема трансакции што одговараат на филтерот."
+  "activityNoMatch": "Нема трансакции што одговараат на филтерот.",
+  "portfolioImportDuplicates": "{count, plural, one{{count} веќе е евидентирана, не е додадена} other{{count} веќе се евидентирани, не се додадени}}"
 }

@@ -470,7 +470,7 @@
   "portfolioImport": "Ampidiro avy amin'ny CSV",
   "portfolioImportHint": "Apetaho fividianana iray isaky ny andalana: ticker, isa, vidiny, vola, daty (YYYY-MM-DD). Azo saraina amin'ny faingo, teboka misy faingo na tabulation ny tsanganana; tsy voatery ny andalana lohateny.",
   "portfolioImportButton": "Ampidiro",
-  "portfolioImported": "{count, plural, =1{Nampiana fividianana 1} other{Nampiana fividianana {count}}}",
+  "portfolioImported": "{count, plural, one{Nampiana fividianana na fivarotana {count}} other{Nampiana fividianana sy fivarotana {count}}}",
   "portfolioImportSkipped": "{count, plural, =1{Nadingana andalana 1} other{Nadingana andalana {count}}}",
   "syncInfo": "Ampifanarahina amin'ny fitaovanao rehetra ny kitapom-bola, ny ankafizina, ny fanairana vidiny ary ny naoty.",
   "syncLast": "Fampifanarahana farany: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Ovay ny dividandy · {symbol}",
   "activityTitle": "Ny fividianana sy fivarotana rehetra",
   "activitySearchHint": "Sivano araka ny ticker",
-  "activityNoMatch": "Tsy misy fividianana na fivarotana mifanaraka amin'ny sivana."
+  "activityNoMatch": "Tsy misy fividianana na fivarotana mifanaraka amin'ny sivana.",
+  "portfolioImportDuplicates": "{count, plural, one{{count} efa voarakitra, tsy nampiana} other{{count} efa voarakitra, tsy nampiana}}"
 }

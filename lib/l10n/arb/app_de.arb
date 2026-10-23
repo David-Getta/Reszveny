@@ -470,7 +470,7 @@
   "portfolioImport": "Aus CSV importieren",
   "portfolioImportHint": "Einen Kauf pro Zeile einfügen: Tickersymbol, Menge, Preis, Währung, Datum (JJJJ-MM-TT). Spalten können durch Kommas, Semikolons oder Tabulatoren getrennt sein; die Kopfzeile ist optional.",
   "portfolioImportButton": "Importieren",
-  "portfolioImported": "{count, plural, =1{1 Kauf hinzugefügt} other{{count} Käufe hinzugefügt}}",
+  "portfolioImported": "{count, plural, =1{1 Transaktion hinzugefügt} other{{count} Transaktionen hinzugefügt}}",
   "portfolioImportSkipped": "{count, plural, =1{1 Zeile übersprungen} other{{count} Zeilen übersprungen}}",
   "syncInfo": "Portfolio, Favoriten, Kursalarme und Notizen werden auf all deinen Geräten synchronisiert.",
   "syncLast": "Zuletzt synchronisiert: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Dividende bearbeiten · {symbol}",
   "activityTitle": "Alle Transaktionen",
   "activitySearchHint": "Nach Ticker filtern",
-  "activityNoMatch": "Keine Transaktionen passen zum Filter."
+  "activityNoMatch": "Keine Transaktionen passen zum Filter.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 bereits erfasst, ausgelassen} other{{count} bereits erfasst, ausgelassen}}"
 }

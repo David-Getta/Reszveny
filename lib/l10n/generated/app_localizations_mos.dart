@@ -1734,8 +1734,8 @@ class AppLocalizationsMos extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'B paasa raaba $count',
-      one: 'B paasa raab a yembre',
+      other: 'B paasa raaba la koosgo $count',
+      one: 'B paasa raab bɩ koosg a yembre',
     );
     return '$_temp0';
   }
@@ -2776,6 +2776,17 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Raaba bɩ koosgo ka zems ne yãkrã ye.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ra gʋlsa ne pĩnda, b pa paas-b ye',
+      one: 'A yembre ra gʋlsa ne pĩnda, b pa paas-a ye',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Ning raabo';

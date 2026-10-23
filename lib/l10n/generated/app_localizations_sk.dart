@@ -1799,10 +1799,10 @@ class AppLocalizationsSk extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Pridaných $count nákupov',
-      many: 'Pridané $count nákupu',
-      few: 'Pridané $count nákupy',
-      one: 'Pridaný 1 nákup',
+      other: 'Pridaných $count transakcií',
+      many: 'Pridané $count transakcie',
+      few: 'Pridané $count transakcie',
+      one: 'Pridaná 1 transakcia',
     );
     return '$_temp0';
   }
@@ -2864,6 +2864,19 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Filtru nezodpovedajú žiadne transakcie.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vynechaných $count už zaznamenaných',
+      many: 'Vynechané $count už zaznamenané',
+      few: 'Vynechané $count už zaznamenané',
+      one: 'Vynechaná 1 už zaznamenaná',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Nastaviť cieľ';

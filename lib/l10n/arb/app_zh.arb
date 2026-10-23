@@ -470,7 +470,7 @@
   "portfolioImport": "从 CSV 导入",
   "portfolioImportHint": "每行粘贴一笔买入：股票代码、数量、价格、货币、日期（YYYY-MM-DD）。各列可用逗号、分号或制表符分隔；标题行可省略。",
   "portfolioImportButton": "导入",
-  "portfolioImported": "{count, plural, =1{已添加 1 笔买入} other{已添加 {count} 笔买入}}",
+  "portfolioImported": "{count, plural, =1{已添加 1 笔交易} other{已添加 {count} 笔交易}}",
   "portfolioImportSkipped": "{count, plural, =1{已跳过 1 行} other{已跳过 {count} 行}}",
   "syncInfo": "投资组合、收藏、价格提醒和笔记会在你的所有设备间同步。",
   "syncLast": "上次同步：{time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "编辑股息 · {symbol}",
   "activityTitle": "全部交易记录",
   "activitySearchHint": "按股票代码筛选",
-  "activityNoMatch": "没有符合筛选条件的交易。"
+  "activityNoMatch": "没有符合筛选条件的交易。",
+  "portfolioImportDuplicates": "{count, plural, =1{1 笔已有记录，未重复添加} other{{count} 笔已有记录，未重复添加}}"
 }

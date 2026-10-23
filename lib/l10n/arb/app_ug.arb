@@ -470,7 +470,7 @@
   "portfolioImport": "CSV دىن كىرگۈزۈش",
   "portfolioImportHint": "ھەر قۇرغا بىر سېتىۋېلىشنى چاپلاڭ: پاي چېكى كودى، سان، باھا، پۇل بىرلىكى، چېسلا (YYYY-MM-DD). ئىستونلارنى پەش، چېكىتلىك پەش ياكى tab بىلەن ئايرىشقا بولىدۇ؛ ماۋزۇ قۇرى ئىختىيارىي.",
   "portfolioImportButton": "كىرگۈزۈش",
-  "portfolioImported": "{count, plural, =1{1 سېتىۋېلىش قوشۇلدى} other{{count} سېتىۋېلىش قوشۇلدى}}",
+  "portfolioImported": "{count, plural, =1{1 سودا قوشۇلدى} other{{count} سودا قوشۇلدى}}",
   "portfolioImportSkipped": "{count, plural, =1{1 قۇر ئاتلاپ ئۆتۈلدى} other{{count} قۇر ئاتلاپ ئۆتۈلدى}}",
   "syncInfo": "مەبلەغ بىرىكمىسى، يىغقۇچ، باھا ئاگاھلاندۇرۇشلىرى ۋە خاتىرىلەر بارلىق ئۈسكۈنىلىرىڭىزدە قەدەمداشلىنىدۇ.",
   "syncLast": "ئاخىرقى قەدەمداشلاش: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "دىۋىدېندنى تەھرىرلەش · {symbol}",
   "activityTitle": "بارلىق سودىلار",
   "activitySearchHint": "كود بويىچە سۈزۈش",
-  "activityNoMatch": "سۈزگۈچكە ماس كېلىدىغان سودا يوق."
+  "activityNoMatch": "سۈزگۈچكە ماس كېلىدىغان سودا يوق.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 ئاللىقاچان خاتىرىلەنگەن، قوشۇلمىدى} other{{count} ئاللىقاچان خاتىرىلەنگەن، قوشۇلمىدى}}"
 }

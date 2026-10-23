@@ -470,7 +470,7 @@
   "portfolioImport": "CSV වෙතින් ආනයනය කරන්න",
   "portfolioImportHint": "එක් පේළියකට එක් මිලදී ගැනීමක් අලවන්න: ටිකර්, ප්‍රමාණය, මිල, මුදල් ඒකකය, දිනය (YYYY-MM-DD). තීරු කොමා, අර්ධ විරාම හෝ ටැබ් මගින් වෙන් කළ හැක; ශීර්ෂ පේළිය අත්‍යවශ්‍ය නොවේ.",
   "portfolioImportButton": "ආනයනය කරන්න",
-  "portfolioImported": "{count, plural, =1{මිලදී ගැනීමක් එක් කළා} other{මිලදී ගැනීම් {count}ක් එක් කළා}}",
+  "portfolioImported": "{count, plural, one{ගනුදෙනු {count}ක් එක් කළා} other{ගනුදෙනු {count}ක් එක් කළා}}",
   "portfolioImportSkipped": "{count, plural, =1{පේළියක් මඟ හැරියා} other{පේළි {count}ක් මඟ හැරියා}}",
   "syncInfo": "කළඹ, ප්‍රියතම, මිල ඇඟවීම් සහ සටහන් ඔබේ සියලු උපාංගවල සමමුහුර්ත වේ.",
   "syncLast": "අවසන් සමමුහුර්තය: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "ලාභාංශය සංස්කරණය කරන්න · {symbol}",
   "activityTitle": "සියලු ගනුදෙනු",
   "activitySearchHint": "ටිකර් අනුව පෙරන්න",
-  "activityNoMatch": "පෙරහනට ගැළපෙන ගනුදෙනු නැත."
+  "activityNoMatch": "පෙරහනට ගැළපෙන ගනුදෙනු නැත.",
+  "portfolioImportDuplicates": "{count, plural, one{{count}ක් දැනටමත් සටහන් කර ඇත, එක් නොකළා} other{{count}ක් දැනටමත් සටහන් කර ඇත, එක් නොකළා}}"
 }

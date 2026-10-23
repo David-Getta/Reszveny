@@ -470,7 +470,7 @@
   "portfolioImport": "Importar de CSV",
   "portfolioImportHint": "Cole uma compra por linha: ticker, quantidade, preço, moeda, data (AAAA-MM-DD). As colunas podem ser separadas por vírgulas, ponto e vírgula ou tabulações; a linha de cabeçalho é opcional.",
   "portfolioImportButton": "Importar",
-  "portfolioImported": "{count, plural, =1{1 compra adicionada} other{{count} compras adicionadas}}",
+  "portfolioImported": "{count, plural, one{{count} transação adicionada} other{{count} transações adicionadas}}",
   "portfolioImportSkipped": "{count, plural, =1{1 linha ignorada} other{{count} linhas ignoradas}}",
   "syncInfo": "A carteira, os favoritos, os alertas de preço e as notas são sincronizados em todos os seus dispositivos.",
   "syncLast": "Última sincronização: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Editar dividendo · {symbol}",
   "activityTitle": "Todas as transações",
   "activitySearchHint": "Filtrar por ticker",
-  "activityNoMatch": "Nenhuma transação corresponde ao filtro."
+  "activityNoMatch": "Nenhuma transação corresponde ao filtro.",
+  "portfolioImportDuplicates": "{count, plural, one{{count} já registrada, descartada} other{{count} já registradas, descartadas}}"
 }

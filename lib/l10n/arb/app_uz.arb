@@ -470,7 +470,7 @@
   "portfolioImport": "CSV dan import qilish",
   "portfolioImportHint": "Har bir qatorga bitta xaridni joylang: tiker, miqdor, narx, valyuta, sana (YYYY-OO-KK). Ustunlar vergul, nuqtali vergul yoki tab bilan ajratilishi mumkin; sarlavha qatori ixtiyoriy.",
   "portfolioImportButton": "Import qilish",
-  "portfolioImported": "{count, plural, =1{1 ta xarid qoʻshildi} other{{count} ta xarid qoʻshildi}}",
+  "portfolioImported": "{count, plural, =1{1 ta operatsiya qoʻshildi} other{{count} ta operatsiya qoʻshildi}}",
   "portfolioImportSkipped": "{count, plural, =1{1 ta qator oʻtkazib yuborildi} other{{count} ta qator oʻtkazib yuborildi}}",
   "syncInfo": "Portfel, sevimlilar, narx bildirishnomalari va qaydlar barcha qurilmalaringizda sinxronlanadi.",
   "syncLast": "Oxirgi sinxronlash: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Dividendni tahrirlash · {symbol}",
   "activityTitle": "Barcha operatsiyalar",
   "activitySearchHint": "Tiker boʻyicha filtrlash",
-  "activityNoMatch": "Filtrga mos operatsiya topilmadi."
+  "activityNoMatch": "Filtrga mos operatsiya topilmadi.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 tasi allaqachon yozilgan, qoʻshilmadi} other{{count} tasi allaqachon yozilgan, qoʻshilmadi}}"
 }

@@ -1679,8 +1679,8 @@ class AppLocalizationsZh extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '已添加 $count 笔买入',
-      one: '已添加 1 笔买入',
+      other: '已添加 $count 笔交易',
+      one: '已添加 1 笔交易',
     );
     return '$_temp0';
   }
@@ -2671,6 +2671,17 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get activityNoMatch => '没有符合筛选条件的交易。';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 笔已有记录，未重复添加',
+      one: '1 笔已有记录，未重复添加',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => '设定目标';
@@ -4721,8 +4732,8 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '已加入 $count 筆買入',
-      one: '已加入 1 筆買入',
+      other: '已加入 $count 筆交易',
+      one: '已加入 1 筆交易',
     );
     return '$_temp0';
   }
@@ -5713,6 +5724,17 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get activityNoMatch => '沒有符合篩選條件的交易。';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 筆已有記錄，未重複加入',
+      one: '1 筆已有記錄，未重複加入',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => '設定目標';

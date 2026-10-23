@@ -470,7 +470,7 @@
   "portfolioImport": "Impor dari CSV",
   "portfolioImportHint": "Tempel satu pembelian per baris: kode saham, jumlah, harga, mata uang, tanggal (TTTT-BB-HH). Kolom dapat dipisahkan dengan koma, titik koma, atau tab; baris judul bersifat opsional.",
   "portfolioImportButton": "Impor",
-  "portfolioImported": "{count, plural, =1{1 pembelian ditambahkan} other{{count} pembelian ditambahkan}}",
+  "portfolioImported": "{count, plural, =1{1 transaksi ditambahkan} other{{count} transaksi ditambahkan}}",
   "portfolioImportSkipped": "{count, plural, =1{1 baris dilewati} other{{count} baris dilewati}}",
   "syncInfo": "Portofolio, favorit, peringatan harga, dan catatan disinkronkan di semua perangkat Anda.",
   "syncLast": "Terakhir disinkronkan {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Edit dividen · {symbol}",
   "activityTitle": "Semua transaksi",
   "activitySearchHint": "Filter menurut kode saham",
-  "activityNoMatch": "Tidak ada transaksi yang cocok dengan filter."
+  "activityNoMatch": "Tidak ada transaksi yang cocok dengan filter.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 sudah tercatat, tidak dimasukkan} other{{count} sudah tercatat, tidak dimasukkan}}"
 }

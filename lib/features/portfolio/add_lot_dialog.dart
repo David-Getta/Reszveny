@@ -86,10 +86,14 @@ Future<bool> showAddLotDialog(
 }
 
 /// Egy rögzített tranzakció javítása (darab, ár, dátum, számla, díj) ugyanabban a
-/// dialógusban, kitöltve; az azonosító marad. A tárolt (felaprózással nem igazított)
-/// tételt kell átadni. `true`, ha mentette.
-Future<bool> showEditLotDialog(BuildContext context, PortfolioLot lot) =>
-    showAddLotDialog(context, symbol: lot.symbol, currency: lot.currency, account: lot.account, editing: lot);
+/// dialógusban, kitöltve; az azonosító marad. A tárolt tételt kell átadni: a
+/// dialógus a felaprózással igazított (a listákban látott) számokat mutatja, és
+/// mentéskor visszaalakítja – így a „javítás” nem igazítja még egyszer. `true`,
+/// ha mentette.
+Future<bool> showEditLotDialog(BuildContext context, PortfolioLot lot) {
+  final shown = AppServices.of(context).portfolio.adjustedLot(lot);
+  return showAddLotDialog(context, symbol: lot.symbol, currency: lot.currency, account: lot.account, editing: shown);
+}
 
 class _AddLotDialog extends StatefulWidget {
   const _AddLotDialog({
@@ -124,7 +128,9 @@ class _AddLotDialog extends StatefulWidget {
 class _AddLotDialogState extends State<_AddLotDialog> {
   final _quantity = TextEditingController();
   late final TextEditingController _price;
-  late DateTime _date = widget.editing?.date ?? DateTime.now();
+  // Javításkor a tárolt nap marad (a dátum nélküli tétel is dátum nélküli, amíg
+  // nem választanak napot – különben az eladás elé kerülhetne).
+  late DateTime? _date = widget.editing == null ? DateTime.now() : widget.editing!.date;
   String? _quantityError;
   String? _priceError;
 
@@ -330,17 +336,20 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     // A tárolók a dialógus bezárása után is frissülnek (a mentés ne maradjon félbe).
     final services = AppServices.of(context);
     if (widget.editing case final e?) {
+      // A beírt (igazított) számok a választott nap szerinti tárolt alakban.
       await services.portfolio.replace(
-        PortfolioLot(
-          id: e.id,
-          symbol: e.symbol,
-          quantity: q!,
-          price: p!,
-          currency: e.currency,
-          date: _date,
-          sell: e.sell,
-          account: _lotAccount,
-          fee: fee!,
+        services.portfolio.storedLot(
+          PortfolioLot(
+            id: e.id,
+            symbol: e.symbol,
+            quantity: q!,
+            price: p!,
+            currency: e.currency,
+            date: _date,
+            sell: e.sell,
+            account: _lotAccount,
+            fee: fee!,
+          ),
         ),
       );
       if (mounted) Navigator.of(context).pop(true);

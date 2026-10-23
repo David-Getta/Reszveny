@@ -1748,8 +1748,8 @@ class AppLocalizationsAz extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count alış əlavə olundu',
-      one: '1 alış əlavə olundu',
+      other: '$count əməliyyat əlavə olundu',
+      one: '1 əməliyyat əlavə olundu',
     );
     return '$_temp0';
   }
@@ -2792,6 +2792,17 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Filtrə uyğun əməliyyat yoxdur.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count artıq qeyd olunub, əlavə edilmədi',
+      one: '1 artıq qeyd olunub, əlavə edilmədi',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Hədəf təyin et';

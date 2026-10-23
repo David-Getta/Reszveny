@@ -1716,8 +1716,8 @@ class AppLocalizationsTi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count ዕድግታት ተወሲኾም',
-      one: '1 ዕድጊ ተወሲኹ',
+      other: '$count ልውውጣት ተወሲኾም',
+      one: '1 ልውውጥ ተወሲኹ',
     );
     return '$_temp0';
   }
@@ -2753,6 +2753,17 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'ምስ መጻረዪ ዝሰማማዕ ልውውጥ የለን።';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ድሮ ተመዝጊቦም ኣለው፣ ኣይተወሰኹን',
+      one: '1 ድሮ ተመዝጊቡ ኣሎ፣ ኣይተወሰኸን',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';

@@ -1784,11 +1784,11 @@ class AppLocalizationsAr extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'تمت إضافة $count عملية شراء',
-      many: 'تمت إضافة $count عملية شراء',
-      few: 'تمت إضافة $count عمليات شراء',
-      two: 'تمت إضافة عمليتي شراء',
-      one: 'تمت إضافة عملية شراء واحدة',
+      other: 'تمت إضافة $count معاملة',
+      many: 'تمت إضافة $count معاملة',
+      few: 'تمت إضافة $count معاملات',
+      two: 'تمت إضافة معاملتين',
+      one: 'تمت إضافة معاملة واحدة',
     );
     return '$_temp0';
   }
@@ -2860,6 +2860,20 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'لا توجد معاملات مطابقة لعامل التصفية.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مسجّلة مسبقًا، لم تُضَف',
+      many: '$count مسجّلة مسبقًا، لم تُضَف',
+      few: '$count مسجّلة مسبقًا، لم تُضَف',
+      two: 'اثنتان مسجّلتان مسبقًا، لم تُضافا',
+      one: 'واحدة مسجّلة مسبقًا، لم تُضَف',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'تحديد هدف';

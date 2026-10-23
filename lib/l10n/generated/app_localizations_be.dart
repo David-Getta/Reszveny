@@ -1797,10 +1797,10 @@ class AppLocalizationsBe extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Дададзена $count пакупкі',
-      many: 'Дададзена $count пакупак',
-      few: 'Дададзены $count пакупкі',
-      one: 'Дададзена $count пакупка',
+      other: 'Дададзена $count аперацыі',
+      many: 'Дададзена $count аперацый',
+      few: 'Дададзены $count аперацыі',
+      one: 'Дададзена $count аперацыя',
     );
     return '$_temp0';
   }
@@ -2864,6 +2864,19 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Няма аперацый, якія адпавядаюць фільтру.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ужо ёсць, не дададзена',
+      many: '$count ужо ёсць, не дададзена',
+      few: '$count ужо ёсць, не дададзены',
+      one: '$count ужо ёсць, не дададзена',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Задаць мэту';

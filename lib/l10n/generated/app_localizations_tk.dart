@@ -1746,8 +1746,8 @@ class AppLocalizationsTk extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count satyn alyş goşuldy',
-      one: '1 satyn alyş goşuldy',
+      other: '$count amal goşuldy',
+      one: '1 amal goşuldy',
     );
     return '$_temp0';
   }
@@ -2793,6 +2793,17 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Süzgüje laýyk amal ýok.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count eýýäm ýazylan, goşulmady',
+      one: '1 eýýäm ýazylan, goşulmady',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Maksat goý';

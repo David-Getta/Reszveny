@@ -1749,8 +1749,8 @@ class AppLocalizationsKy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count сатып алуу кошулду',
-      one: '1 сатып алуу кошулду',
+      other: '$count транзакция кошулду',
+      one: '1 транзакция кошулду',
     );
     return '$_temp0';
   }
@@ -2793,6 +2793,17 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Чыпкага дал келген транзакция жок.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count мурунтан жазылган, кошулган жок',
+      one: '1 мурунтан жазылган, кошулган жок',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Максат коюу';

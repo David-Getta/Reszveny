@@ -470,7 +470,7 @@
   "portfolioImport": "Importer depuis un CSV",
   "portfolioImportHint": "Collez un achat par ligne : symbole, quantité, prix, devise, date (AAAA-MM-JJ). Les colonnes peuvent être séparées par des virgules, des points-virgules ou des tabulations ; la ligne d’en-tête est facultative.",
   "portfolioImportButton": "Importer",
-  "portfolioImported": "{count, plural, =1{1 achat ajouté} other{{count} achats ajoutés}}",
+  "portfolioImported": "{count, plural, one{{count} transaction ajoutée} other{{count} transactions ajoutées}}",
   "portfolioImportSkipped": "{count, plural, =1{1 ligne ignorée} other{{count} lignes ignorées}}",
   "syncInfo": "Le portefeuille, les favoris, les alertes de cours et les notes sont synchronisés sur tous vos appareils.",
   "syncLast": "Dernière synchronisation : {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Modifier le dividende · {symbol}",
   "activityTitle": "Toutes les transactions",
   "activitySearchHint": "Filtrer par ticker",
-  "activityNoMatch": "Aucune transaction ne correspond au filtre."
+  "activityNoMatch": "Aucune transaction ne correspond au filtre.",
+  "portfolioImportDuplicates": "{count, plural, one{{count} déjà enregistrée, écartée} other{{count} déjà enregistrées, écartées}}"
 }

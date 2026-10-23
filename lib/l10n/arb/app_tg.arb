@@ -470,7 +470,7 @@
   "portfolioImport": "Воридот аз CSV",
   "portfolioImportHint": "Дар ҳар сатр як харидро гузоред: тикер, миқдор, нарх, асъор, сана (СССС-ММ-РР). Сутунҳоро бо вергул, нуқтавергул ё табулятсия ҷудо кардан мумкин аст; сатри сарлавҳа ҳатмӣ нест.",
   "portfolioImportButton": "Ворид кардан",
-  "portfolioImported": "{count, plural, =1{1 харид илова шуд} other{{count} харид илова шуд}}",
+  "portfolioImported": "{count, plural, =1{1 амалиёт илова шуд} other{{count} амалиёт илова шуд}}",
   "portfolioImportSkipped": "{count, plural, =1{1 сатр гузаронида шуд} other{{count} сатр гузаронида шуд}}",
   "syncInfo": "Портфел, интихобшудаҳо, огоҳиҳои нарх ва қайдҳо дар ҳамаи дастгоҳҳои шумо ҳамоҳанг карда мешаванд.",
   "syncLast": "Ҳамоҳангсозии охирин: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Таҳрири дивиденд · {symbol}",
   "activityTitle": "Ҳамаи амалиётҳо",
   "activitySearchHint": "Филтр аз рӯи тикер",
-  "activityNoMatch": "Ягон амалиёт ба филтр мувофиқ нест."
+  "activityNoMatch": "Ягон амалиёт ба филтр мувофиқ нест.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 аллакай сабт шудааст, илова нашуд} other{{count} аллакай сабт шудааст, илова нашуд}}"
 }

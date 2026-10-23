@@ -470,7 +470,7 @@
   "portfolioImport": "นำเข้าจาก CSV",
   "portfolioImportHint": "วางรายการซื้อบรรทัดละหนึ่งรายการ: ชื่อย่อหุ้น, จำนวน, ราคา, สกุลเงิน, วันที่ (YYYY-MM-DD) คอลัมน์คั่นได้ด้วยจุลภาค อัฒภาค หรือแท็บ ส่วนแถวหัวตารางจะมีหรือไม่มีก็ได้",
   "portfolioImportButton": "นำเข้า",
-  "portfolioImported": "{count, plural, other{เพิ่มรายการซื้อ {count} รายการแล้ว}}",
+  "portfolioImported": "{count, plural, =1{เพิ่มรายการซื้อขาย 1 รายการแล้ว} other{เพิ่มรายการซื้อขาย {count} รายการแล้ว}}",
   "portfolioImportSkipped": "{count, plural, other{ข้าม {count} บรรทัด}}",
   "syncInfo": "พอร์ตโฟลิโอ รายการโปรด การแจ้งเตือนราคา และบันทึกจะซิงค์ในทุกอุปกรณ์ของคุณ",
   "syncLast": "ซิงค์ล่าสุด {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "แก้ไขเงินปันผล · {symbol}",
   "activityTitle": "รายการซื้อขายทั้งหมด",
   "activitySearchHint": "กรองตามชื่อย่อ",
-  "activityNoMatch": "ไม่มีรายการซื้อขายที่ตรงกับตัวกรอง"
+  "activityNoMatch": "ไม่มีรายการซื้อขายที่ตรงกับตัวกรอง",
+  "portfolioImportDuplicates": "{count, plural, =1{1 รายการมีบันทึกอยู่แล้ว จึงไม่ได้เพิ่ม} other{{count} รายการมีบันทึกอยู่แล้ว จึงไม่ได้เพิ่ม}}"
 }

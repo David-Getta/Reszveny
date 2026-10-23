@@ -470,7 +470,7 @@
   "portfolioImport": "وارد کردن از CSV",
   "portfolioImportHint": "در هر خط یک خرید جای‌گذاری کنید: نماد سهم، تعداد، قیمت، واحد پول، تاریخ (YYYY-MM-DD). ستون‌ها می‌توانند با ویرگول، نقطه‌ویرگول یا تب از هم جدا شوند؛ سطر عنوان اختیاری است.",
   "portfolioImportButton": "وارد کردن",
-  "portfolioImported": "{count, plural, =1{1 خرید افزوده شد} other{{count} خرید افزوده شد}}",
+  "portfolioImported": "{count, plural, one{{count} تراکنش افزوده شد} other{{count} تراکنش افزوده شد}}",
   "portfolioImportSkipped": "{count, plural, =1{1 خط نادیده گرفته شد} other{{count} خط نادیده گرفته شد}}",
   "syncInfo": "سبد سهام، علاقه‌مندی‌ها، هشدارهای قیمت و یادداشت‌ها در همه دستگاه‌های شما همگام‌سازی می‌شوند.",
   "syncLast": "آخرین همگام‌سازی: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "ویرایش سود سهام · {symbol}",
   "activityTitle": "همه تراکنش‌ها",
   "activitySearchHint": "فیلتر بر اساس نماد",
-  "activityNoMatch": "هیچ تراکنشی با فیلتر مطابقت ندارد."
+  "activityNoMatch": "هیچ تراکنشی با فیلتر مطابقت ندارد.",
+  "portfolioImportDuplicates": "{count, plural, one{{count} از قبل ثبت شده، کنار گذاشته شد} other{{count} از قبل ثبت شده، کنار گذاشته شد}}"
 }

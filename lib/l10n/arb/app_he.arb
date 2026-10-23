@@ -470,7 +470,7 @@
   "portfolioImport": "ייבוא מ-CSV",
   "portfolioImportHint": "יש להדביק רכישה אחת בכל שורה: סימול המניה, כמות, מחיר, מטבע, תאריך (YYYY-MM-DD). אפשר להפריד בין העמודות בפסיקים, בנקודה-פסיק או בטאבים; שורת הכותרת אינה חובה.",
   "portfolioImportButton": "ייבוא",
-  "portfolioImported": "{count, plural, =1{נוספה רכישה אחת} other{נוספו {count} רכישות}}",
+  "portfolioImported": "{count, plural, =1{נוספה עסקה אחת} other{נוספו {count} עסקאות}}",
   "portfolioImportSkipped": "{count, plural, =1{שורה אחת דולגה} other{{count} שורות דולגו}}",
   "syncInfo": "תיק ההשקעות, המועדפים, התראות המחיר וההערות מסונכרנים בכל המכשירים שלך.",
   "syncLast": "סונכרן לאחרונה {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "עריכת דיבידנד · {symbol}",
   "activityTitle": "כל העסקאות",
   "activitySearchHint": "סינון לפי סימול",
-  "activityNoMatch": "אין עסקאות שתואמות את הסינון."
+  "activityNoMatch": "אין עסקאות שתואמות את הסינון.",
+  "portfolioImportDuplicates": "{count, plural, =1{אחת כבר רשומה, לא נוספה} other{{count} כבר רשומות, לא נוספו}}"
 }

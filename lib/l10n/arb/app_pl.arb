@@ -470,7 +470,7 @@
   "portfolioImport": "Importuj z CSV",
   "portfolioImportHint": "Wklej jeden zakup w każdym wierszu: symbol giełdowy, liczba, cena, waluta, data (RRRR-MM-DD). Kolumny mogą być rozdzielone przecinkami, średnikami lub tabulatorami; wiersz nagłówka jest opcjonalny.",
   "portfolioImportButton": "Importuj",
-  "portfolioImported": "{count, plural, one{Dodano {count} zakup} few{Dodano {count} zakupy} many{Dodano {count} zakupów} other{Dodano {count} zakupu}}",
+  "portfolioImported": "{count, plural, one{Dodano {count} transakcję} few{Dodano {count} transakcje} many{Dodano {count} transakcji} other{Dodano {count} transakcji}}",
   "portfolioImportSkipped": "{count, plural, one{Pominięto {count} wiersz} few{Pominięto {count} wiersze} many{Pominięto {count} wierszy} other{Pominięto {count} wiersza}}",
   "syncInfo": "Portfel, ulubione, alerty cenowe i notatki są synchronizowane na wszystkich Twoich urządzeniach.",
   "syncLast": "Ostatnia synchronizacja: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Edytuj dywidendę · {symbol}",
   "activityTitle": "Wszystkie transakcje",
   "activitySearchHint": "Filtruj według tickera",
-  "activityNoMatch": "Żadna transakcja nie pasuje do filtra."
+  "activityNoMatch": "Żadna transakcja nie pasuje do filtra.",
+  "portfolioImportDuplicates": "{count, plural, one{{count} już istnieje, nie dodano} few{{count} już istnieją, nie dodano} many{{count} już istnieje, nie dodano} other{{count} już istnieje, nie dodano}}"
 }

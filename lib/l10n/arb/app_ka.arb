@@ -470,7 +470,7 @@
   "portfolioImport": "იმპორტი CSV-დან",
   "portfolioImportHint": "ჩასვით თითო შენაძენი თითო ხაზზე: ტიკერი, რაოდენობა, ფასი, ვალუტა, თარიღი (წწწწ-თთ-დდ). სვეტები შეიძლება გამოიყოს მძიმით, წერტილ-მძიმით ან ტაბულაციით; სათაურის ხაზი არასავალდებულოა.",
   "portfolioImportButton": "იმპორტი",
-  "portfolioImported": "{count, plural, =1{დაემატა 1 შენაძენი} other{დაემატა {count} შენაძენი}}",
+  "portfolioImported": "{count, plural, =1{დაემატა 1 ტრანზაქცია} other{დაემატა {count} ტრანზაქცია}}",
   "portfolioImportSkipped": "{count, plural, =1{გამოტოვდა 1 ხაზი} other{გამოტოვდა {count} ხაზი}}",
   "syncInfo": "პორტფელი, რჩეულები, ფასის შეტყობინებები და ჩანაწერები სინქრონიზდება ყველა თქვენს მოწყობილობაზე.",
   "syncLast": "ბოლო სინქრონიზაცია: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "დივიდენდის რედაქტირება · {symbol}",
   "activityTitle": "ყველა ტრანზაქცია",
   "activitySearchHint": "გაფილტვრა ტიკერით",
-  "activityNoMatch": "ფილტრს არცერთი ტრანზაქცია არ შეესაბამება."
+  "activityNoMatch": "ფილტრს არცერთი ტრანზაქცია არ შეესაბამება.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 უკვე ჩაწერილია, არ დაემატა} other{{count} უკვე ჩაწერილია, არ დაემატა}}"
 }

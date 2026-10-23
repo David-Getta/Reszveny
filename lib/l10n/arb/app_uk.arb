@@ -470,7 +470,7 @@
   "portfolioImport": "Імпорт із CSV",
   "portfolioImportHint": "Вставте по одній купівлі в рядок: тікер, кількість, ціна, валюта, дата (РРРР-ММ-ДД). Стовпці можна розділяти комами, крапками з комою або табуляцією; рядок заголовка необовʼязковий.",
   "portfolioImportButton": "Імпортувати",
-  "portfolioImported": "{count, plural, one{Додано {count} купівлю} few{Додано {count} купівлі} many{Додано {count} купівель} other{Додано {count} купівлі}}",
+  "portfolioImported": "{count, plural, one{Додано {count} операцію} few{Додано {count} операції} many{Додано {count} операцій} other{Додано {count} операції}}",
   "portfolioImportSkipped": "{count, plural, one{Пропущено {count} рядок} few{Пропущено {count} рядки} many{Пропущено {count} рядків} other{Пропущено {count} рядка}}",
   "syncInfo": "Портфель, обране, цінові сповіщення та нотатки синхронізуються на всіх ваших пристроях.",
   "syncLast": "Остання синхронізація: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Редагувати дивіденд · {symbol}",
   "activityTitle": "Усі операції",
   "activitySearchHint": "Фільтр за тікером",
-  "activityNoMatch": "Немає операцій, що відповідають фільтру."
+  "activityNoMatch": "Немає операцій, що відповідають фільтру.",
+  "portfolioImportDuplicates": "{count, plural, one{{count} вже є, не додано} few{{count} вже є, не додано} many{{count} вже є, не додано} other{{count} вже є, не додано}}"
 }

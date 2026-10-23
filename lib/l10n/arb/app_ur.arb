@@ -470,7 +470,7 @@
   "portfolioImport": "CSV سے امپورٹ کریں",
   "portfolioImportHint": "ہر سطر میں ایک خریداری پیسٹ کریں: ٹکر، مقدار، قیمت، کرنسی، تاریخ (YYYY-MM-DD)۔ کالموں کو کوما، سیمی کولن یا ٹیب سے الگ کیا جا سکتا ہے؛ ہیڈر کی سطر اختیاری ہے۔",
   "portfolioImportButton": "امپورٹ کریں",
-  "portfolioImported": "{count, plural, =1{1 خریداری شامل کر دی گئی} other{{count} خریداریاں شامل کر دی گئیں}}",
+  "portfolioImported": "{count, plural, =1{1 لین دین شامل کیا گیا} other{{count} لین دین شامل کیے گئے}}",
   "portfolioImportSkipped": "{count, plural, =1{1 سطر چھوڑ دی گئی} other{{count} سطریں چھوڑ دی گئیں}}",
   "syncInfo": "پورٹ فولیو، پسندیدہ، قیمت کے الرٹس اور نوٹس آپ کے تمام آلات پر سنک ہوتے ہیں۔",
   "syncLast": "آخری سنک: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "ڈیویڈنڈ میں ترمیم کریں · {symbol}",
   "activityTitle": "تمام لین دین",
   "activitySearchHint": "ٹکر کے مطابق فلٹر کریں",
-  "activityNoMatch": "فلٹر سے کوئی لین دین مطابقت نہیں رکھتا۔"
+  "activityNoMatch": "فلٹر سے کوئی لین دین مطابقت نہیں رکھتا۔",
+  "portfolioImportDuplicates": "{count, plural, =1{1 پہلے سے درج ہے، شامل نہیں کیا گیا} other{{count} پہلے سے درج ہیں، شامل نہیں کیے گئے}}"
 }

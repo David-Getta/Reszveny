@@ -1750,8 +1750,8 @@ class AppLocalizationsUz extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count ta xarid qoʻshildi',
-      one: '1 ta xarid qoʻshildi',
+      other: '$count ta operatsiya qoʻshildi',
+      one: '1 ta operatsiya qoʻshildi',
     );
     return '$_temp0';
   }
@@ -2795,6 +2795,17 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'Filtrga mos operatsiya topilmadi.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tasi allaqachon yozilgan, qoʻshilmadi',
+      one: '1 tasi allaqachon yozilgan, qoʻshilmadi',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'Maqsad belgilash';

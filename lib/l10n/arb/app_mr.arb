@@ -470,7 +470,7 @@
   "portfolioImport": "CSV मधून आयात करा",
   "portfolioImportHint": "प्रत्येक ओळीत एक खरेदी पेस्ट करा: टिकर, प्रमाण, किंमत, चलन, तारीख (YYYY-MM-DD). स्तंभ स्वल्पविराम, अर्धविराम किंवा टॅबने वेगळे करता येतात; शीर्षक ओळ ऐच्छिक आहे.",
   "portfolioImportButton": "आयात करा",
-  "portfolioImported": "{count, plural, =1{1 खरेदी जोडली} other{{count} खरेदी जोडल्या}}",
+  "portfolioImported": "{count, plural, =1{1 व्यवहार जोडला} other{{count} व्यवहार जोडले}}",
   "portfolioImportSkipped": "{count, plural, =1{1 ओळ वगळली} other{{count} ओळी वगळल्या}}",
   "syncInfo": "पोर्टफोलिओ, आवडते, किंमत सूचना आणि नोंदी तुमच्या सर्व डिव्हाइसवर सिंक होतात.",
   "syncLast": "शेवटचे सिंक: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "लाभांश संपादित करा · {symbol}",
   "activityTitle": "सर्व व्यवहार",
   "activitySearchHint": "टिकरनुसार फिल्टर करा",
-  "activityNoMatch": "फिल्टरशी जुळणारे कोणतेही व्यवहार नाहीत."
+  "activityNoMatch": "फिल्टरशी जुळणारे कोणतेही व्यवहार नाहीत.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 आधीच नोंदवलेला, जोडला नाही} other{{count} आधीच नोंदवलेले, जोडले नाहीत}}"
 }

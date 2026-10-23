@@ -3199,10 +3199,10 @@ abstract class AppLocalizations {
   /// **'Import'**
   String get portfolioImportButton;
 
-  /// After importing: how many purchases were added.
+  /// After importing: how many transactions (buys and sells) were added.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 purchase added} other{{count} purchases added}}'**
+  /// **'{count, plural, =1{1 transaction added} other{{count} transactions added}}'**
   String portfolioImported(int count);
 
   /// After importing: how many lines could not be read.
@@ -4752,6 +4752,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No transactions match the filter.'**
   String get activityNoMatch;
+
+  /// After importing a broker export: how many rows were left out because the same transaction or dividend is already in the portfolio (e.g. when a newer export with the old rows is imported again). Shown after "5 transactions added · ".
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 already recorded, left out} other{{count} already recorded, left out}}'**
+  String portfolioImportDuplicates(int count);
 
   /// No description provided for @portfolioGoalSet.
   ///

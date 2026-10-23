@@ -470,7 +470,7 @@
   "portfolioImport": "CSVৰ পৰা আমদানি কৰক",
   "portfolioImportHint": "প্ৰতিটো শাৰীত এটাকৈ ক্ৰয় পেষ্ট কৰক: টিকাৰ ছিম্বল, পৰিমাণ, মূল্য, মুদ্ৰা, তাৰিখ (YYYY-MM-DD)। স্তম্ভবোৰ কমা, ছেমিকলন বা টেবেৰে পৃথক কৰিব পাৰি; শিৰোনামৰ শাৰীটো ঐচ্ছিক।",
   "portfolioImportButton": "আমদানি কৰক",
-  "portfolioImported": "{count, plural, =1{1টা ক্ৰয় যোগ কৰা হ'ল} other{{count}টা ক্ৰয় যোগ কৰা হ'ল}}",
+  "portfolioImported": "{count, plural, one{{count}টা লেনদেন যোগ কৰা হ'ল} other{{count}টা লেনদেন যোগ কৰা হ'ল}}",
   "portfolioImportSkipped": "{count, plural, =1{1টা শাৰী এৰি দিয়া হ'ল} other{{count}টা শাৰী এৰি দিয়া হ'ল}}",
   "syncInfo": "প'ৰ্টফ'লিঅ', প্ৰিয়, দামৰ সতৰ্কবাণী আৰু টোকাসমূহ আপোনাৰ সকলো ডিভাইচত ছিংক হয়।",
   "syncLast": "শেষবাৰ ছিংক: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "লাভাংশ সম্পাদনা কৰক · {symbol}",
   "activityTitle": "সকলো লেনদেন",
   "activitySearchHint": "টিকাৰ অনুসৰি ফিল্টাৰ কৰক",
-  "activityNoMatch": "ফিল্টাৰৰ সৈতে কোনো লেনদেন মিল নাখালে।"
+  "activityNoMatch": "ফিল্টাৰৰ সৈতে কোনো লেনদেন মিল নাখালে।",
+  "portfolioImportDuplicates": "{count, plural, one{{count}টা আগতেই লিপিবদ্ধ, বাদ দিয়া হ'ল} other{{count}টা আগতেই লিপিবদ্ধ, বাদ দিয়া হ'ল}}"
 }

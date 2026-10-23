@@ -470,7 +470,7 @@
   "portfolioImport": "Enpòte soti nan CSV",
   "portfolioImportHint": "Kole yon acha pa liy: senbòl, kantite, pri, deviz, dat (AAAA-MM-JJ). Kolòn yo ka separe ak vigil, pwen vigil oswa tab; liy tèt la pa obligatwa.",
   "portfolioImportButton": "Enpòte",
-  "portfolioImported": "{count, plural, =1{Nou ajoute 1 acha} other{Nou ajoute {count} acha}}",
+  "portfolioImported": "{count, plural, =1{Nou ajoute 1 tranzaksyon} other{Nou ajoute {count} tranzaksyon}}",
   "portfolioImportSkipped": "{count, plural, =1{Nou sote 1 liy} other{Nou sote {count} liy}}",
   "syncInfo": "Pòtfèy, favori, alèt pri ak nòt yo senkronize sou tout aparèy ou yo.",
   "syncLast": "Dènye senkronizasyon: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Modifye dividann nan · {symbol}",
   "activityTitle": "Tout tranzaksyon yo",
   "activitySearchHint": "Filtre pa senbòl",
-  "activityNoMatch": "Pa gen tranzaksyon ki koresponn ak filt la."
+  "activityNoMatch": "Pa gen tranzaksyon ki koresponn ak filt la.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 te deja anrejistre, nou kite l deyò} other{{count} te deja anrejistre, nou kite yo deyò}}"
 }

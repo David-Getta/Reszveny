@@ -470,7 +470,7 @@
   "portfolioImport": "CSV ରୁ ଆମଦାନି କରନ୍ତୁ",
   "portfolioImportHint": "ପ୍ରତି ଧାଡ଼ିରେ ଗୋଟିଏ କ୍ରୟ ପେଷ୍ଟ କରନ୍ତୁ: ଟିକର, ପରିମାଣ, ମୂଲ୍ୟ, ମୁଦ୍ରା, ତାରିଖ (YYYY-MM-DD)। ସ୍ତମ୍ଭଗୁଡ଼ିକ କମା, ସେମିକୋଲନ କିମ୍ବା ଟ୍ୟାବ ଦ୍ୱାରା ଅଲଗା ହୋଇପାରେ; ଶୀର୍ଷ ଧାଡ଼ି ବୈକଳ୍ପିକ।",
   "portfolioImportButton": "ଆମଦାନି କରନ୍ତୁ",
-  "portfolioImported": "{count, plural, =1{1ଟି କ୍ରୟ ଯୋଡ଼ାଗଲା} other{{count}ଟି କ୍ରୟ ଯୋଡ଼ାଗଲା}}",
+  "portfolioImported": "{count, plural, =1{1ଟି କାରବାର ଯୋଡ଼ାଗଲା} other{{count}ଟି କାରବାର ଯୋଡ଼ାଗଲା}}",
   "portfolioImportSkipped": "{count, plural, =1{1ଟି ଧାଡ଼ି ବାଦ ଦିଆଗଲା} other{{count}ଟି ଧାଡ଼ି ବାଦ ଦିଆଗଲା}}",
   "syncInfo": "ପୋର୍ଟଫୋଲିଓ, ପସନ୍ଦ, ଦର ଆଲର୍ଟ ଓ ନୋଟ୍ ଆପଣଙ୍କ ସମସ୍ତ ଡିଭାଇସରେ ସିଙ୍କ ହୁଏ।",
   "syncLast": "ଶେଷ ସିଙ୍କ: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "ଡିଭିଡେଣ୍ଡ ଏଡିଟ କରନ୍ତୁ · {symbol}",
   "activityTitle": "ସମସ୍ତ କାରବାର",
   "activitySearchHint": "ଟିକର ଅନୁସାରେ ଫିଲ୍ଟର କରନ୍ତୁ",
-  "activityNoMatch": "ଫିଲ୍ଟର ସହ କୌଣସି କାରବାର ମେଳ ଖାଉନାହିଁ।"
+  "activityNoMatch": "ଫିଲ୍ଟର ସହ କୌଣସି କାରବାର ମେଳ ଖାଉନାହିଁ।",
+  "portfolioImportDuplicates": "{count, plural, =1{1ଟି ପୂର୍ବରୁ ରେକର୍ଡ ହୋଇଛି, ଯୋଡ଼ାଗଲା ନାହିଁ} other{{count}ଟି ପୂର୍ବରୁ ରେକର୍ଡ ହୋଇଛି, ଯୋଡ଼ାଗଲା ନାହିଁ}}"
 }

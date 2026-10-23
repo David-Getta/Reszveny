@@ -470,7 +470,7 @@
   "portfolioImport": "CSV से आयात करें",
   "portfolioImportHint": "हर पंक्ति में एक खरीदारी पेस्ट करें: टिकर सिंबल, मात्रा, कीमत, मुद्रा, तारीख (YYYY-MM-DD)। कॉलम कॉमा, सेमीकोलन या टैब से अलग किए जा सकते हैं; हेडर पंक्ति वैकल्पिक है।",
   "portfolioImportButton": "आयात करें",
-  "portfolioImported": "{count, plural, =1{1 खरीदारी जोड़ी गई} other{{count} खरीदारियाँ जोड़ी गईं}}",
+  "portfolioImported": "{count, plural, one{{count} लेन-देन जोड़ा गया} other{{count} लेन-देन जोड़े गए}}",
   "portfolioImportSkipped": "{count, plural, =1{1 पंक्ति छोड़ी गई} other{{count} पंक्तियाँ छोड़ी गईं}}",
   "syncInfo": "पोर्टफ़ोलियो, पसंदीदा, कीमत अलर्ट और नोट्स आपके सभी डिवाइस पर सिंक होते हैं।",
   "syncLast": "पिछला सिंक: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "डिविडेंड संपादित करें · {symbol}",
   "activityTitle": "सभी लेन-देन",
   "activitySearchHint": "टिकर से फ़िल्टर करें",
-  "activityNoMatch": "फ़िल्टर से कोई लेन-देन मेल नहीं खाता।"
+  "activityNoMatch": "फ़िल्टर से कोई लेन-देन मेल नहीं खाता।",
+  "portfolioImportDuplicates": "{count, plural, one{{count} पहले से दर्ज, छोड़ा गया} other{{count} पहले से दर्ज, छोड़े गए}}"
 }

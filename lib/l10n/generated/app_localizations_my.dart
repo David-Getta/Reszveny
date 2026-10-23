@@ -1743,7 +1743,8 @@ class AppLocalizationsMy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'ဝယ်ယူမှု $count ခု ထည့်ပြီးပါပြီ',
+      other: 'အရောင်းအဝယ် $count ခု ထည့်ပြီးပါပြီ',
+      one: 'အရောင်းအဝယ် 1 ခု ထည့်ပြီးပါပြီ',
     );
     return '$_temp0';
   }
@@ -2782,6 +2783,17 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get activityNoMatch =>
       'စစ်ထုတ်မှုနှင့် ကိုက်ညီသော အရောင်းအဝယ် မရှိပါ။';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ခု မှတ်တမ်းရှိပြီးသားဖြစ်၍ မထည့်ပါ',
+      one: '1 ခု မှတ်တမ်းရှိပြီးသားဖြစ်၍ မထည့်ပါ',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';

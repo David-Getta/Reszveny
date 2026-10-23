@@ -470,7 +470,7 @@
   "portfolioImport": "Xɔe tso CSV me",
   "portfolioImportHint": "Tsɔ nuƒeƒle ɖeka de fli ɖesiaɖe me: ticker dzesi, xexlẽme, asi, ga ƒomevi, ŋkeke (YYYY-MM-DD). Woate ŋu ama tsitreƒewo kple koma, semikolɔn alo tab; tanyaŋlɔ fli la mehiã o.",
   "portfolioImportButton": "Xɔe",
-  "portfolioImported": "{count, plural, =1{Wotsɔ nuƒeƒle 1 kpe ɖe eŋu} other{Wotsɔ nuƒeƒle {count} kpe ɖe eŋu}}",
+  "portfolioImported": "{count, plural, =1{Wotsɔ nuƒeƒle alo nudzadzra 1 kpe ɖe eŋu} other{Wotsɔ nuƒeƒle kple nudzadzra {count} kpe ɖe eŋu}}",
   "portfolioImportSkipped": "{count, plural, =1{Woɖe asi le fli 1 ŋu} other{Woɖe asi le fli {count} ŋu}}",
   "syncInfo": "Wò akpawo, lɔlɔ̃tɔwo, asi ŋuti nuxlɔ̃amewo kple nuŋlɔɖiwo sɔ le wò mɔ̃wo katã dzi.",
   "syncLast": "Sync mamlɛtɔ: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Trɔ dividend la · {symbol}",
   "activityTitle": "Nuƒeƒle kple nudzadzra katã",
   "activitySearchHint": "Tia le ticker nu",
-  "activityNoMatch": "Nuƒeƒle alo nudzadzra aɖeke mesɔ kple tiatia la o."
+  "activityNoMatch": "Nuƒeƒle alo nudzadzra aɖeke mesɔ kple tiatia la o.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 le eme xoxo, wometsɔe kpe ɖe eŋu o} other{{count} le eme xoxo, wometsɔ wo kpe ɖe eŋu o}}"
 }

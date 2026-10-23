@@ -470,7 +470,7 @@
   "portfolioImport": "Naatnu iwde e CSV",
   "portfolioImportHint": "Ɓortin soodaare wootere e kala diidol: kod aksiyoŋ, keewal, coggu, ceede, ñalnde (YYYY-MM-DD). Kolonuuji ina mbaawi seerndeede ko virgule, point-virgule walla tabulation; diidol tiitoonde ngol ko suɓaade.",
   "portfolioImportButton": "Naatnu",
-  "portfolioImported": "{count, plural, =1{Soodaare 1 ɓeydaama} other{Soodaaje {count} ɓeydaama}}",
+  "portfolioImported": "{count, plural, =1{Soodgol walla yeeyugol 1 ɓeydaama} other{Soodgol e yeeyugol {count} ɓeydaama}}",
   "portfolioImportSkipped": "{count, plural, =1{Diidol 1 acciraama} other{Diidi {count} acciraama}}",
   "syncInfo": "Aksiyoŋ maa, cuɓaaɗe maa, tintine coggu e binndi maa ko gooto e kala kaɓirgol maa.",
   "syncLast": "Sync sakkitiiɗo: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Waylu dividende · {symbol}",
   "activityTitle": "Soodgol e yeeyugol fof",
   "activitySearchHint": "Suɓo e kod",
-  "activityNoMatch": "Alaa soodgol walla yeeyugol hawriingol e cuɓol maa."
+  "activityNoMatch": "Alaa soodgol walla yeeyugol hawriingol e cuɓol maa.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 winndaama ko adii, ɓeydaaka} other{{count} winndaama ko adii, ɓeydaaka}}"
 }

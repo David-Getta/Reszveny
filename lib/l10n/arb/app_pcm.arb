@@ -470,7 +470,7 @@
   "portfolioImport": "Import from CSV",
   "portfolioImportHint": "Paste one tin wey you buy for each line: ticker, quantity, price, currency, date (YYYY-MM-DD). You fit use comma, semicolon or tab separate di columns; di header line no dey compulsory.",
   "portfolioImportButton": "Import",
-  "portfolioImported": "{count, plural, one{We don add {count} tin wey you buy} other{We don add {count} tins wey you buy}}",
+  "portfolioImported": "{count, plural, one{We don add {count} buy or sell} other{We don add {count} buys and sells}}",
   "portfolioImportSkipped": "{count, plural, one{We skip {count} line} other{We skip {count} lines}}",
   "syncInfo": "Portfolio, favourites, price alerts and notes dey sync for all your devices.",
   "syncLast": "Last sync {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "Change dividend · {symbol}",
   "activityTitle": "All di buy and sell",
   "activitySearchHint": "Filter am by ticker",
-  "activityNoMatch": "No buy or sell match di filter."
+  "activityNoMatch": "No buy or sell match di filter.",
+  "portfolioImportDuplicates": "{count, plural, one{{count} don already dey, we no add am} other{{count} don already dey, we no add dem}}"
 }

@@ -1745,8 +1745,8 @@ class AppLocalizationsFa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count خرید افزوده شد',
-      one: '1 خرید افزوده شد',
+      other: '$count تراکنش افزوده شد',
+      one: '$count تراکنش افزوده شد',
     );
     return '$_temp0';
   }
@@ -2787,6 +2787,17 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'هیچ تراکنشی با فیلتر مطابقت ندارد.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count از قبل ثبت شده، کنار گذاشته شد',
+      one: '$count از قبل ثبت شده، کنار گذاشته شد',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'تعیین هدف';

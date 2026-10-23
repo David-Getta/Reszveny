@@ -470,7 +470,7 @@
   "portfolioImport": "له CSV څخه واردول",
   "portfolioImportHint": "په هره کرښه کې یو پېرود ولګوئ: ټیکر، شمېر، بیه، پولي واحد، نېټه (YYYY-MM-DD). ستنې د کامې، سیمي کولن یا ټب په واسطه بېلېدای شي؛ د سرلیک کرښه اختیاري ده.",
   "portfolioImportButton": "واردول",
-  "portfolioImported": "{count, plural, =1{1 پېرود اضافه شو} other{{count} پېرودونه اضافه شول}}",
+  "portfolioImported": "{count, plural, =1{1 راکړه ورکړه اضافه شوه} other{{count} راکړې ورکړې اضافه شوې}}",
   "portfolioImportSkipped": "{count, plural, =1{1 کرښه پرېښودل شوه} other{{count} کرښې پرېښودل شوې}}",
   "syncInfo": "پورټفولیو، خوښې، د بیې خبرتیاوې او یادښتونه ستاسو په ټولو وسیلو کې همغږي کېږي.",
   "syncLast": "وروستی همغږي: {time}",
@@ -835,5 +835,6 @@
   "dividendEditTitle": "ډیویډنډ سم کړئ · {symbol}",
   "activityTitle": "ټولې راکړې ورکړې",
   "activitySearchHint": "د ټیکر له مخې فلټر کړئ",
-  "activityNoMatch": "هېڅ راکړه ورکړه له فلټر سره سمون نه لري."
+  "activityNoMatch": "هېڅ راکړه ورکړه له فلټر سره سمون نه لري.",
+  "portfolioImportDuplicates": "{count, plural, =1{1 مخکې ثبت ده، اضافه نه شوه} other{{count} مخکې ثبت دي، اضافه نه شوې}}"
 }

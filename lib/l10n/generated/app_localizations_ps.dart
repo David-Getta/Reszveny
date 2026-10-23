@@ -1742,8 +1742,8 @@ class AppLocalizationsPs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count پېرودونه اضافه شول',
-      one: '1 پېرود اضافه شو',
+      other: '$count راکړې ورکړې اضافه شوې',
+      one: '1 راکړه ورکړه اضافه شوه',
     );
     return '$_temp0';
   }
@@ -2783,6 +2783,17 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get activityNoMatch => 'هېڅ راکړه ورکړه له فلټر سره سمون نه لري.';
+
+  @override
+  String portfolioImportDuplicates(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مخکې ثبت دي، اضافه نه شوې',
+      one: '1 مخکې ثبت ده، اضافه نه شوه',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => 'موخه وټاکئ';
