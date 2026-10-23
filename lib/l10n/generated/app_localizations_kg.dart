@@ -2560,6 +2560,19 @@ class AppLocalizationsKg extends AppLocalizations {
   String get portfolioNoAccount => 'Konti ve';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Frè ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Yika frè';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Frè: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Vsi računi",
   "portfolioAccountNote": "Samo transakcije tega računa. Gotovina in dividende so prikazane pod Vsi računi.",
   "portfolioNoAccount": "Brez računa",
-  "allocationAccounts": "Računi"
+  "allocationAccounts": "Računi",
+  "portfolioFee": "Provizija ({currency})",
+  "portfolioFeeAdd": "Dodaj provizijo",
+  "portfolioFeeRow": "Provizija: {amount}"
 }

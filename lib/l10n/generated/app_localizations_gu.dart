@@ -2546,6 +2546,19 @@ class AppLocalizationsGu extends AppLocalizations {
   String get portfolioNoAccount => 'ખાતા વિના';
 
   @override
+  String portfolioFee(String currency) {
+    return 'બ્રોકરેજ ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'બ્રોકરેજ ઉમેરો';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'બ્રોકરેજ: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

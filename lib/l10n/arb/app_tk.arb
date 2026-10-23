@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Ähli hasaplar",
   "portfolioAccountNote": "Diňe şu hasabyň amallary. Nagt pul we diwidendler «Ähli hasaplar» bölüminde görkezilýär.",
   "portfolioNoAccount": "Hasapsyz",
-  "allocationAccounts": "Hasaplar"
+  "allocationAccounts": "Hasaplar",
+  "portfolioFee": "Komissiýa ({currency})",
+  "portfolioFeeAdd": "Komissiýa goş",
+  "portfolioFeeRow": "Komissiýa: {amount}"
 }

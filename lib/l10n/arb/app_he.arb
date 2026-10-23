@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "כל החשבונות",
   "portfolioAccountNote": "רק העסקאות של החשבון הזה. מזומן ודיבידנדים מוצגים תחת ״כל החשבונות״.",
   "portfolioNoAccount": "ללא חשבון",
-  "allocationAccounts": "חשבונות"
+  "allocationAccounts": "חשבונות",
+  "portfolioFee": "עמלה ({currency})",
+  "portfolioFeeAdd": "הוספת עמלה",
+  "portfolioFeeRow": "עמלה: {amount}"
 }

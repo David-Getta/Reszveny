@@ -2524,6 +2524,19 @@ class AppLocalizationsLo extends AppLocalizations {
   String get portfolioNoAccount => 'ບໍ່ມີບັນຊີ';
 
   @override
+  String portfolioFee(String currency) {
+    return 'ຄ່າທຳນຽມ ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'ເພີ່ມຄ່າທຳນຽມ';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'ຄ່າທຳນຽມ: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

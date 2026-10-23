@@ -2617,6 +2617,19 @@ class AppLocalizationsSk extends AppLocalizations {
   String get portfolioNoAccount => 'Bez účtu';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Poplatok ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Pridať poplatok';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Poplatok: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

@@ -2518,6 +2518,19 @@ class AppLocalizationsAm extends AppLocalizations {
   String get portfolioNoAccount => 'ያለ መለያ';
 
   @override
+  String portfolioFee(String currency) {
+    return 'ኮሚሽን ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'ኮሚሽን ያክሉ';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'ኮሚሽን፦ $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

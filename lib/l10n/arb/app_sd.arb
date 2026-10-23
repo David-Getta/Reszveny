@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "سڀ اڪائونٽ",
   "portfolioAccountNote": "صرف هن اڪائونٽ جي ليڻ دين. نقد ۽ ڊيويڊنڊ ”سڀ اڪائونٽ“ هيٺ ڏيکاريا وڃن ٿا.",
   "portfolioNoAccount": "ڪو اڪائونٽ ناهي",
-  "allocationAccounts": "اڪائونٽس"
+  "allocationAccounts": "اڪائونٽس",
+  "portfolioFee": "فيس ({currency})",
+  "portfolioFeeAdd": "فيس شامل ڪريو",
+  "portfolioFeeRow": "فيس: {amount}"
 }

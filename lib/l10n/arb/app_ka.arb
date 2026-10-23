@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "ყველა ანგარიში",
   "portfolioAccountNote": "მხოლოდ ამ ანგარიშის ტრანზაქციები. ნაღდი ფული და დივიდენდები ნაჩვენებია განყოფილებაში „ყველა ანგარიში“.",
   "portfolioNoAccount": "ანგარიშის გარეშე",
-  "allocationAccounts": "ანგარიშები"
+  "allocationAccounts": "ანგარიშები",
+  "portfolioFee": "საკომისიო ({currency})",
+  "portfolioFeeAdd": "საკომისიოს დამატება",
+  "portfolioFeeRow": "საკომისიო: {amount}"
 }

@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Akawunti zonna",
   "portfolioAccountNote": "Bye wagula ne bye watunda ku akawunti eno byokka. Ensimbi enkalu ne dividendi biragibwa wansi wa Akawunti zonna.",
   "portfolioNoAccount": "Tewali akawunti",
-  "allocationAccounts": "Akawunti"
+  "allocationAccounts": "Akawunti",
+  "portfolioFee": "Ebisale ({currency})",
+  "portfolioFeeAdd": "Yongerako ebisale",
+  "portfolioFeeRow": "Ebisale: {amount}"
 }

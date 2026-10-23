@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Semua akun",
   "portfolioAccountNote": "Hanya transaksi akun ini. Kas dan dividen ditampilkan di Semua akun.",
   "portfolioNoAccount": "Tanpa akun",
-  "allocationAccounts": "Akun"
+  "allocationAccounts": "Akun",
+  "portfolioFee": "Biaya transaksi ({currency})",
+  "portfolioFeeAdd": "Tambahkan biaya transaksi",
+  "portfolioFeeRow": "Biaya transaksi: {amount}"
 }

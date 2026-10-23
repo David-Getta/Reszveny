@@ -2559,6 +2559,19 @@ class AppLocalizationsHy extends AppLocalizations {
   String get portfolioNoAccount => 'Առանց հաշվի';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Միջնորդավճար ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Ավելացնել միջնորդավճար';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Միջնորդավճար՝ $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

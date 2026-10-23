@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Kõnte fãa",
   "portfolioAccountNote": "Kõntã-kãngã raaba la koosgo bal. Ligdi la dividand be \"Kõnte fãa\" pʋgẽ.",
   "portfolioNoAccount": "Kõnte ka be ye",
-  "allocationAccounts": "Kõnte"
+  "allocationAccounts": "Kõnte",
+  "portfolioFee": "Ligd sẽn yaod ({currency})",
+  "portfolioFeeAdd": "Paas ligd sẽn yaod",
+  "portfolioFeeRow": "Ligd sẽn yaod: {amount}"
 }

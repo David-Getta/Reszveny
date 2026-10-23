@@ -2543,6 +2543,19 @@ class AppLocalizationsMy extends AppLocalizations {
   String get portfolioNoAccount => 'အကောင့် မရှိ';
 
   @override
+  String portfolioFee(String currency) {
+    return 'ကော်မရှင်ခ ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'ကော်မရှင်ခ ထည့်ရန်';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'ကော်မရှင်ခ: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

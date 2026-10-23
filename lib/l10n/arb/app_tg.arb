@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Ҳамаи ҳисобҳо",
   "portfolioAccountNote": "Танҳо амалиётҳои ҳамин ҳисоб. Пули нақд ва дивидендҳо дар «Ҳамаи ҳисобҳо» нишон дода мешаванд.",
   "portfolioNoAccount": "Бе ҳисоб",
-  "allocationAccounts": "Ҳисобҳо"
+  "allocationAccounts": "Ҳисобҳо",
+  "portfolioFee": "Комиссия ({currency})",
+  "portfolioFeeAdd": "Комиссия илова кардан",
+  "portfolioFeeRow": "Комиссия: {amount}"
 }

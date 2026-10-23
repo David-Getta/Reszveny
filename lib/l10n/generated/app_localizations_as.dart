@@ -2549,6 +2549,19 @@ class AppLocalizationsAs extends AppLocalizations {
   String get portfolioNoAccount => 'একাউণ্ট নাই';
 
   @override
+  String portfolioFee(String currency) {
+    return 'কমিছন ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'কমিছন যোগ কৰক';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'কমিছন: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

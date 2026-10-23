@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Lahat ng account",
   "portfolioAccountNote": "Mga transaksyon lang ng account na ito. Makikita ang cash at dibidendo sa Lahat ng account.",
   "portfolioNoAccount": "Walang account",
-  "allocationAccounts": "Mga account"
+  "allocationAccounts": "Mga account",
+  "portfolioFee": "Komisyon ({currency})",
+  "portfolioFeeAdd": "Magdagdag ng komisyon",
+  "portfolioFeeRow": "Komisyon: {amount}"
 }

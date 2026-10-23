@@ -2559,6 +2559,19 @@ class AppLocalizationsNy extends AppLocalizations {
   String get portfolioNoAccount => 'Palibe akaunti';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Zolipiritsa ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Onjezani zolipiritsa';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Zolipiritsa: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

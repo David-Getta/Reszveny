@@ -2570,6 +2570,19 @@ class AppLocalizationsTn extends AppLocalizations {
   String get portfolioNoAccount => 'Ga go na akhaonto';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Tuelo ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Oketsa tuelo';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Tuelo: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

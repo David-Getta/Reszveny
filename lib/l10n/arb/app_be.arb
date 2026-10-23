@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Усе рахункі",
   "portfolioAccountNote": "Толькі аперацыі гэтага рахунку. Грошы і дывідэнды паказваюцца ў раздзеле «Усе рахункі».",
   "portfolioNoAccount": "Без рахунку",
-  "allocationAccounts": "Рахункі"
+  "allocationAccounts": "Рахункі",
+  "portfolioFee": "Камісія ({currency})",
+  "portfolioFeeAdd": "Дадаць камісію",
+  "portfolioFeeRow": "Камісія: {amount}"
 }

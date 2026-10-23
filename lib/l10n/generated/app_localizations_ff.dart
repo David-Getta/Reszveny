@@ -2546,6 +2546,19 @@ class AppLocalizationsFf extends AppLocalizations {
   String get portfolioNoAccount => 'Alaa konte';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Njoɓdi ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Ɓeydu njoɓdi';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Njoɓdi: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

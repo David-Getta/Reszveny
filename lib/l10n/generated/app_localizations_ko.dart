@@ -2481,6 +2481,19 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioNoAccount => '계좌 없음';
 
   @override
+  String portfolioFee(String currency) {
+    return '수수료($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => '수수료 추가';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return '수수료: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

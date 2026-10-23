@@ -2553,6 +2553,19 @@ class AppLocalizationsKu extends AppLocalizations {
   String get portfolioNoAccount => 'Bê hesab';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Komîsyon ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Komîsyonekê zêde bike';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Komîsyon: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

@@ -2546,6 +2546,19 @@ class AppLocalizationsIg extends AppLocalizations {
   String get portfolioNoAccount => 'Enweghị akaụntụ';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Ụgwọ ọrụ ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Tinye ụgwọ ọrụ';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Ụgwọ ọrụ: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Dukkan asusu",
   "portfolioAccountNote": "Ma'amalolin wannan asusu kawai. Ana nuna tsabar kuɗi da rabon riba a ƙarƙashin Dukkan asusu.",
   "portfolioNoAccount": "Babu asusu",
-  "allocationAccounts": "Asusu"
+  "allocationAccounts": "Asusu",
+  "portfolioFee": "Kuɗin dillali ({currency})",
+  "portfolioFeeAdd": "Ƙara kuɗin dillali",
+  "portfolioFeeRow": "Kuɗin dillali: {amount}"
 }

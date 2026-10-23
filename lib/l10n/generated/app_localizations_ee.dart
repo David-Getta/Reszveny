@@ -2556,6 +2556,19 @@ class AppLocalizationsEe extends AppLocalizations {
   String get portfolioNoAccount => 'Akɔnta manɔmee';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Fe ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Tsɔ fe aɖe kpe ɖe eŋu';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Fe: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

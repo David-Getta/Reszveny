@@ -2547,6 +2547,19 @@ class AppLocalizationsFa extends AppLocalizations {
   String get portfolioNoAccount => 'بدون حساب';
 
   @override
+  String portfolioFee(String currency) {
+    return 'کارمزد ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'افزودن کارمزد';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'کارمزد: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

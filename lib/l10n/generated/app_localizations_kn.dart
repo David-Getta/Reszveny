@@ -2557,6 +2557,19 @@ class AppLocalizationsKn extends AppLocalizations {
   String get portfolioNoAccount => 'ಖಾತೆ ಇಲ್ಲ';
 
   @override
+  String portfolioFee(String currency) {
+    return 'ಬ್ರೋಕರೇಜ್ ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'ಬ್ರೋಕರೇಜ್ ಸೇರಿಸಿ';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'ಬ್ರೋಕರೇಜ್: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

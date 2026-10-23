@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "ସମସ୍ତ ଆକାଉଣ୍ଟ",
   "portfolioAccountNote": "କେବଳ ଏହି ଆକାଉଣ୍ଟର କାରବାର। ନଗଦ ଓ ଡିଭିଡେଣ୍ଡ 'ସମସ୍ତ ଆକାଉଣ୍ଟ'ରେ ଦେଖାଯାଏ।",
   "portfolioNoAccount": "ଆକାଉଣ୍ଟ ନାହିଁ",
-  "allocationAccounts": "ଆକାଉଣ୍ଟ"
+  "allocationAccounts": "ଆକାଉଣ୍ଟ",
+  "portfolioFee": "ଶୁଳ୍କ ({currency})",
+  "portfolioFeeAdd": "ଶୁଳ୍କ ଯୋଡ଼ନ୍ତୁ",
+  "portfolioFeeRow": "ଶୁଳ୍କ: {amount}"
 }

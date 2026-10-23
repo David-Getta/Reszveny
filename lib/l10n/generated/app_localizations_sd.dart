@@ -2542,6 +2542,19 @@ class AppLocalizationsSd extends AppLocalizations {
   String get portfolioNoAccount => 'ڪو اڪائونٽ ناهي';
 
   @override
+  String portfolioFee(String currency) {
+    return 'فيس ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'فيس شامل ڪريو';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'فيس: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

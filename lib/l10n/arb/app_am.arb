@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "ሁሉም መለያዎች",
   "portfolioAccountNote": "የዚህ መለያ ግብይቶች ብቻ። ጥሬ ገንዘብ እና የትርፍ ድርሻዎች በ«ሁሉም መለያዎች» ስር ይታያሉ።",
   "portfolioNoAccount": "ያለ መለያ",
-  "allocationAccounts": "መለያዎች"
+  "allocationAccounts": "መለያዎች",
+  "portfolioFee": "ኮሚሽን ({currency})",
+  "portfolioFeeAdd": "ኮሚሽን ያክሉ",
+  "portfolioFeeRow": "ኮሚሽን፦ {amount}"
 }

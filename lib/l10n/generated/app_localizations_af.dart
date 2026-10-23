@@ -2555,6 +2555,19 @@ class AppLocalizationsAf extends AppLocalizations {
   String get portfolioNoAccount => 'Geen rekening';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Kommissie ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Voeg \'n kommissie by';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Kommissie: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

@@ -2568,6 +2568,19 @@ class AppLocalizationsHil extends AppLocalizations {
   String get portfolioNoAccount => 'Wala sing account';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Komisyon ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Idugang ang komisyon';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Komisyon: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

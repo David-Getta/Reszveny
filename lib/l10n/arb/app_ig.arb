@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Akaụntụ niile",
   "portfolioAccountNote": "Naanị azụmahịa akaụntụ a. A na-egosi ego ka ego na nkesa uru n'okpuru Akaụntụ niile.",
   "portfolioNoAccount": "Enweghị akaụntụ",
-  "allocationAccounts": "Akaụntụ"
+  "allocationAccounts": "Akaụntụ",
+  "portfolioFee": "Ụgwọ ọrụ ({currency})",
+  "portfolioFeeAdd": "Tinye ụgwọ ọrụ",
+  "portfolioFeeRow": "Ụgwọ ọrụ: {amount}"
 }

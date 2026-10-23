@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "គណនីទាំងអស់",
   "portfolioAccountNote": "មានតែប្រតិបត្តិការរបស់គណនីនេះប៉ុណ្ណោះ។ សាច់ប្រាក់ និងភាគលាភត្រូវបានបង្ហាញនៅក្រោម «គណនីទាំងអស់»។",
   "portfolioNoAccount": "គ្មានគណនី",
-  "allocationAccounts": "គណនី"
+  "allocationAccounts": "គណនី",
+  "portfolioFee": "កម្រៃជើងសារ ({currency})",
+  "portfolioFeeAdd": "បន្ថែមកម្រៃជើងសារ",
+  "portfolioFeeRow": "កម្រៃជើងសារ៖ {amount}"
 }

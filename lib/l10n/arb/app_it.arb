@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Tutti i conti",
   "portfolioAccountNote": "Solo le transazioni di questo conto. Liquidità e dividendi sono mostrati in Tutti i conti.",
   "portfolioNoAccount": "Senza conto",
-  "allocationAccounts": "Conti"
+  "allocationAccounts": "Conti",
+  "portfolioFee": "Commissione ({currency})",
+  "portfolioFeeAdd": "Aggiungi una commissione",
+  "portfolioFeeRow": "Commissione: {amount}"
 }

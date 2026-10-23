@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Akontaabu nyinaa",
   "portfolioAccountNote": "Saa akontaabu yi adetɔ ne adetɔn nko ara. Sika a ɛda hɔ ne dividend da adi wɔ Akontaabu nyinaa ase.",
   "portfolioNoAccount": "Akontaabu nni hɔ",
-  "allocationAccounts": "Akontaabu"
+  "allocationAccounts": "Akontaabu",
+  "portfolioFee": "Akatua ({currency})",
+  "portfolioFeeAdd": "Fa akatua bi ka ho",
+  "portfolioFeeRow": "Akatua: {amount}"
 }

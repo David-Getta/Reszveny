@@ -2562,6 +2562,19 @@ class AppLocalizationsEl extends AppLocalizations {
   String get portfolioNoAccount => 'Χωρίς λογαριασμό';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Προμήθεια ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Προσθήκη προμήθειας';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Προμήθεια: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

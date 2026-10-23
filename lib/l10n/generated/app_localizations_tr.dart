@@ -2551,6 +2551,19 @@ class AppLocalizationsTr extends AppLocalizations {
   String get portfolioNoAccount => 'Hesap yok';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Komisyon ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Komisyon ekle';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Komisyon: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

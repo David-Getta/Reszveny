@@ -2559,6 +2559,19 @@ class AppLocalizationsSo extends AppLocalizations {
   String get portfolioNoAccount => 'Akoon la\'aan';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Khidmad ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Ku dar khidmad';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Khidmad: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

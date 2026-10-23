@@ -2550,6 +2550,19 @@ class AppLocalizationsYo extends AppLocalizations {
   String get portfolioNoAccount => 'Kò sí àkáǹtì';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Owó iṣẹ́ ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Fi owó iṣẹ́ kún';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Owó iṣẹ́: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

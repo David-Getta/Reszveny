@@ -2557,6 +2557,19 @@ class AppLocalizationsIt extends AppLocalizations {
   String get portfolioNoAccount => 'Senza conto';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Commissione ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Aggiungi una commissione';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Commissione: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

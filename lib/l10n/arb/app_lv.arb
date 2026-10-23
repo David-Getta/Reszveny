@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Visi konti",
   "portfolioAccountNote": "Tikai šī konta darījumi. Nauda un dividendes tiek rādītas sadaļā “Visi konti”.",
   "portfolioNoAccount": "Bez konta",
-  "allocationAccounts": "Konti"
+  "allocationAccounts": "Konti",
+  "portfolioFee": "Komisija ({currency})",
+  "portfolioFeeAdd": "Pievienot komisiju",
+  "portfolioFeeRow": "Komisija: {amount}"
 }

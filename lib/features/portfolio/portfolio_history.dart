@@ -120,7 +120,8 @@ BenchmarkComparison? benchmarkComparison(
     final r = rate(l.currency);
     final pts = histories[l.symbol]?.points;
     if (r == null || pts == null || pts.isEmpty) continue;
-    final amount = l.quantity * l.price * r;
+    // A díjjal együtt (a vétel többe került, az eladás kevesebbet hozott).
+    final amount = l.cost * r;
     final at = indexAt(day(l.date ?? first));
     if (amount <= 0 || at <= 0) continue;
     held[l.symbol] = (held[l.symbol] ?? 0) + l.signedQuantity;

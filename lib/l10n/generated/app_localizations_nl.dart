@@ -2557,6 +2557,19 @@ class AppLocalizationsNl extends AppLocalizations {
   String get portfolioNoAccount => 'Geen rekening';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Transactiekosten ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Transactiekosten toevoegen';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Transactiekosten: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

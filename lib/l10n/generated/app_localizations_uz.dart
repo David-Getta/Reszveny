@@ -2556,6 +2556,19 @@ class AppLocalizationsUz extends AppLocalizations {
   String get portfolioNoAccount => 'Hisobsiz';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Komissiya ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Komissiya qoʻshish';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Komissiya: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

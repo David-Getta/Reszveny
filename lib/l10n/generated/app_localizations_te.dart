@@ -2557,6 +2557,19 @@ class AppLocalizationsTe extends AppLocalizations {
   String get portfolioNoAccount => 'ఖాతా లేదు';
 
   @override
+  String portfolioFee(String currency) {
+    return 'రుసుము ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'రుసుమును జోడించండి';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'రుసుము: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

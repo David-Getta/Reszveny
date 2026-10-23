@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Opaite cuenta",
   "portfolioAccountNote": "Ko cuenta jejogua ha ñemu añoite. Pirapire ha dividendo ojehechauka Opaite cuenta-pe.",
   "portfolioNoAccount": "Ndaipóri cuenta",
-  "allocationAccounts": "Cuentakuéra"
+  "allocationAccounts": "Cuentakuéra",
+  "portfolioFee": "Comisión ({currency})",
+  "portfolioFeeAdd": "Embojoapy peteĩ comisión",
+  "portfolioFeeRow": "Comisión: {amount}"
 }

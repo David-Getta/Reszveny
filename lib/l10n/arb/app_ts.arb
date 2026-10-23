@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Tiakhawunti hinkwato",
   "portfolioAccountNote": "Swixaviwa ni swixavisiwa swa akhawunti leyi ntsena. Mali na tidividende swi kombisiwa ehansi ka Tiakhawunti hinkwato.",
   "portfolioNoAccount": "A ku na akhawunti",
-  "allocationAccounts": "Tiakhawunti"
+  "allocationAccounts": "Tiakhawunti",
+  "portfolioFee": "Hakelo ({currency})",
+  "portfolioFeeAdd": "Engetela hakelo",
+  "portfolioFeeRow": "Hakelo: {amount}"
 }

@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Gbogbo àkáǹtì",
   "portfolioAccountNote": "Àwọn ìdúnàdúrà àkáǹtì yìí nìkan. Owó àti ìpín èrè wà lábẹ́ Gbogbo àkáǹtì.",
   "portfolioNoAccount": "Kò sí àkáǹtì",
-  "allocationAccounts": "Àkáǹtì"
+  "allocationAccounts": "Àkáǹtì",
+  "portfolioFee": "Owó iṣẹ́ ({currency})",
+  "portfolioFeeAdd": "Fi owó iṣẹ́ kún",
+  "portfolioFeeRow": "Owó iṣẹ́: {amount}"
 }

@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "အကောင့်အားလုံး",
   "portfolioAccountNote": "ဤအကောင့်၏ အရောင်းအဝယ်များသာ။ ငွေသားနှင့် အမြတ်ဝေစုများကို \"အကောင့်အားလုံး\" တွင် ပြသသည်။",
   "portfolioNoAccount": "အကောင့် မရှိ",
-  "allocationAccounts": "အကောင့်"
+  "allocationAccounts": "အကောင့်",
+  "portfolioFee": "ကော်မရှင်ခ ({currency})",
+  "portfolioFeeAdd": "ကော်မရှင်ခ ထည့်ရန်",
+  "portfolioFeeRow": "ကော်မရှင်ခ: {amount}"
 }

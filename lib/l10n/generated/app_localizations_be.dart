@@ -2617,6 +2617,19 @@ class AppLocalizationsBe extends AppLocalizations {
   String get portfolioNoAccount => 'Без рахунку';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Камісія ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Дадаць камісію';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Камісія: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

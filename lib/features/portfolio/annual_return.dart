@@ -55,7 +55,8 @@ double? positionsAnnualReturn(
     if (r == null) return null;
     for (final l in p.lots) {
       if (l.date == null) return null;
-      flows.add((date: l.date!, amount: (l.sell ? 1 : -1) * l.quantity * l.price * r));
+      // A díj is pénzmozgás: a vételnél többet fizettél, az eladásnál kevesebbet kaptál.
+      flows.add((date: l.date!, amount: (l.sell ? 1 : -1) * l.cost * r));
     }
   }
   if (flows.isEmpty || flows.any((f) => now.difference(f.date).inDays < 0)) return null;

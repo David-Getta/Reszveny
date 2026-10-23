@@ -2551,6 +2551,19 @@ class AppLocalizationsUr extends AppLocalizations {
   String get portfolioNoAccount => 'بغیر اکاؤنٹ';
 
   @override
+  String portfolioFee(String currency) {
+    return 'فیس ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'فیس شامل کریں';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'فیس: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

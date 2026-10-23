@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Alle rekeningen",
   "portfolioAccountNote": "Alleen transacties van deze rekening. Cash en dividend staan onder Alle rekeningen.",
   "portfolioNoAccount": "Geen rekening",
-  "allocationAccounts": "Rekeningen"
+  "allocationAccounts": "Rekeningen",
+  "portfolioFee": "Transactiekosten ({currency})",
+  "portfolioFeeAdd": "Transactiekosten toevoegen",
+  "portfolioFeeRow": "Transactiekosten: {amount}"
 }

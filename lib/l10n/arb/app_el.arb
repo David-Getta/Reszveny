@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Όλοι οι λογαριασμοί",
   "portfolioAccountNote": "Μόνο οι συναλλαγές αυτού του λογαριασμού. Τα μετρητά και τα μερίσματα εμφανίζονται στο «Όλοι οι λογαριασμοί».",
   "portfolioNoAccount": "Χωρίς λογαριασμό",
-  "allocationAccounts": "Λογαριασμοί"
+  "allocationAccounts": "Λογαριασμοί",
+  "portfolioFee": "Προμήθεια ({currency})",
+  "portfolioFeeAdd": "Προσθήκη προμήθειας",
+  "portfolioFeeRow": "Προμήθεια: {amount}"
 }

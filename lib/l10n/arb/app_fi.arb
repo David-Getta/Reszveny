@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Kaikki tilit",
   "portfolioAccountNote": "Vain tämän tilin tapahtumat. Käteinen ja osingot näkyvät kohdassa Kaikki tilit.",
   "portfolioNoAccount": "Ilman tiliä",
-  "allocationAccounts": "Tilit"
+  "allocationAccounts": "Tilit",
+  "portfolioFee": "Välityspalkkio ({currency})",
+  "portfolioFeeAdd": "Lisää välityspalkkio",
+  "portfolioFeeRow": "Välityspalkkio: {amount}"
 }

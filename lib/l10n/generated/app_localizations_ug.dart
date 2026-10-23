@@ -2554,6 +2554,19 @@ class AppLocalizationsUg extends AppLocalizations {
   String get portfolioNoAccount => 'ھېساباتسىز';
 
   @override
+  String portfolioFee(String currency) {
+    return 'رەسمىيەت ھەققى ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'رەسمىيەت ھەققى قوشۇش';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'رەسمىيەت ھەققى: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

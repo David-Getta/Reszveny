@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "全部账户",
   "portfolioAccountNote": "仅显示此账户的交易。现金和股息显示在“全部账户”下。",
   "portfolioNoAccount": "无账户",
-  "allocationAccounts": "账户"
+  "allocationAccounts": "账户",
+  "portfolioFee": "手续费 ({currency})",
+  "portfolioFeeAdd": "添加手续费",
+  "portfolioFeeRow": "手续费：{amount}"
 }

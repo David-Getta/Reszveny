@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Tots els comptes",
   "portfolioAccountNote": "Només les transaccions d’aquest compte. L’efectiu i els dividends es mostren a Tots els comptes.",
   "portfolioNoAccount": "Sense compte",
-  "allocationAccounts": "Comptes"
+  "allocationAccounts": "Comptes",
+  "portfolioFee": "Comissió ({currency})",
+  "portfolioFeeAdd": "Afegeix una comissió",
+  "portfolioFeeRow": "Comissió: {amount}"
 }

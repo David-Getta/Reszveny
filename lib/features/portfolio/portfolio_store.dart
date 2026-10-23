@@ -15,6 +15,7 @@ class PortfolioLot {
     this.date,
     this.sell = false,
     this.account,
+    this.fee = 0,
   });
 
   final String id;
@@ -33,6 +34,13 @@ class PortfolioLot {
   /// nincs megadva. A portfólió számlánként szűrhető.
   final String? account;
 
+  /// A tranzakció díja (jutalék) egy összegben, a részvény pénznemében; 0, ha nincs.
+  /// A vétel bekerülési értékéhez adódik, az eladás bevételéből levonódik.
+  final double fee;
+
+  /// Díj beolvasása: nem negatív, véges szám (különben 0).
+  static double cleanFee(Object? v) => v is num && v.isFinite && v > 0 ? v.toDouble() : 0;
+
   /// Számlanév beolvasása: a szóközök levágva, legfeljebb [maxAccountName]
   /// karakter; üresen `null`.
   static String? cleanAccount(Object? v) {
@@ -46,8 +54,8 @@ class PortfolioLot {
 
   static const maxAccountName = 30;
 
-  /// Vételnél a bekerülési érték, eladásnál a bevétel.
-  double get cost => quantity * price;
+  /// Vételnél a bekerülési érték, eladásnál a bevétel (a díjjal együtt).
+  double get cost => sell ? quantity * price - fee : quantity * price + fee;
 
   /// A birtokolt darabszám változása: vételnél +, eladásnál −.
   double get signedQuantity => sell ? -quantity : quantity;
@@ -61,6 +69,7 @@ class PortfolioLot {
     if (date != null) 'date': date!.toIso8601String().substring(0, 10),
     if (sell) 'side': 'sell',
     'account': ?account,
+    if (fee > 0) 'fee': fee,
   };
 
   static PortfolioLot? fromJson(Map<String, dynamic> j) {
@@ -76,6 +85,7 @@ class PortfolioLot {
       date: DateTime.tryParse(j['date'] as String? ?? ''),
       sell: j['side'] == 'sell',
       account: cleanAccount(j['account']),
+      fee: cleanFee(j['fee']),
     );
   }
 }
@@ -182,6 +192,7 @@ class SplitRecord {
       date: l.date,
       sell: l.sell,
       account: l.account,
+      fee: l.fee,
     );
   }
 }
@@ -255,18 +266,21 @@ class Position {
     final byYear = <int?, double>{};
     final sales = <Sale>[];
     for (final t in [...lots]..sort(order)) {
+      // A díj a darabokra elosztva: a vételnél a bekerülési árhoz adódik,
+      // az eladásnál a bevételből vonódik le.
       if (!t.sell) {
-        open.add((quantity: t.quantity, price: t.price, date: t.date));
+        open.add((quantity: t.quantity, price: t.price + t.fee / t.quantity, date: t.date));
         continue;
       }
+      final net = t.price - t.fee / t.quantity;
       var left = t.quantity;
       var cost = 0.0;
       while (left > 1e-9 && open.isNotEmpty) {
         final first = open.first;
         final take = left < first.quantity ? left : first.quantity;
         cost += take * first.price;
-        realized += take * (t.price - first.price);
-        byYear[t.date?.year] = (byYear[t.date?.year] ?? 0) + take * (t.price - first.price);
+        realized += take * (net - first.price);
+        byYear[t.date?.year] = (byYear[t.date?.year] ?? 0) + take * (net - first.price);
         sold += take;
         left -= take;
         if (first.quantity - take <= 1e-9) {
@@ -281,7 +295,7 @@ class Position {
           date: t.date,
           quantity: matched,
           price: t.price,
-          proceeds: matched * t.price,
+          proceeds: matched * net,
           cost: cost,
           account: t.account,
         ));
@@ -608,6 +622,7 @@ class PortfolioStore extends ChangeNotifier {
     DateTime? date,
     bool sell = false,
     String? account,
+    double fee = 0,
   }) async {
     final s = symbol.trim().toUpperCase();
     final lot = PortfolioLot(
@@ -619,6 +634,7 @@ class PortfolioStore extends ChangeNotifier {
       date: date,
       sell: sell,
       account: canonicalAccount(account),
+      fee: PortfolioLot.cleanFee(fee),
     );
     _lots.add(lot);
     notifyListeners();

@@ -2564,6 +2564,19 @@ class AppLocalizationsQu extends AppLocalizations {
   String get portfolioNoAccount => 'Mana cuentayuq';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Comisión ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Comisionta yapay';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Comisión: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

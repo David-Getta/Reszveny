@@ -2571,6 +2571,19 @@ class AppLocalizationsTs extends AppLocalizations {
   String get portfolioNoAccount => 'A ku na akhawunti';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Hakelo ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Engetela hakelo';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Hakelo: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

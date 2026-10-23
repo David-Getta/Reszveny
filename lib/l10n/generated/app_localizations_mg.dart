@@ -2570,6 +2570,19 @@ class AppLocalizationsMg extends AppLocalizations {
   String get portfolioNoAccount => 'Tsy misy kaonty';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Sarany ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Hanampy sarany';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Sarany: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

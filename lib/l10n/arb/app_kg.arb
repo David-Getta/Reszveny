@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Bakonti yonso",
   "portfolioAccountNote": "Kaka kusumba ti kuteka ya konti yai. Mbongo ya maboko ti ba dividende ke monika na Bakonti yonso.",
   "portfolioNoAccount": "Konti ve",
-  "allocationAccounts": "Bakonti"
+  "allocationAccounts": "Bakonti",
+  "portfolioFee": "Frè ({currency})",
+  "portfolioFeeAdd": "Yika frè",
+  "portfolioFeeRow": "Frè: {amount}"
 }

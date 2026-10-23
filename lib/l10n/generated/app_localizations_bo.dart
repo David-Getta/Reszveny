@@ -2540,6 +2540,19 @@ class AppLocalizationsBo extends AppLocalizations {
   String get portfolioNoAccount => 'རྩིས་ཁྲ་མེད།';
 
   @override
+  String portfolioFee(String currency) {
+    return 'གླ་ཆ ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'གླ་ཆ་སྣོན།';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'གླ་ཆ། $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

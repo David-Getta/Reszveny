@@ -2552,6 +2552,19 @@ class AppLocalizationsKi extends AppLocalizations {
   String get portfolioNoAccount => 'Hatarĩ akaũnti';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Marĩhi ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Ongerera marĩhi';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Marĩhi: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

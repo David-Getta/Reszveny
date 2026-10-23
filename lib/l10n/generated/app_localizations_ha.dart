@@ -2557,6 +2557,19 @@ class AppLocalizationsHa extends AppLocalizations {
   String get portfolioNoAccount => 'Babu asusu';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Kuɗin dillali ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Ƙara kuɗin dillali';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Kuɗin dillali: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

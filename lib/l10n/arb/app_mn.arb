@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Бүх данс",
   "portfolioAccountNote": "Зөвхөн энэ дансны гүйлгээ. Бэлэн мөнгө болон ногдол ашгийг «Бүх данс» хэсэгт харуулна.",
   "portfolioNoAccount": "Дансгүй",
-  "allocationAccounts": "Данс"
+  "allocationAccounts": "Данс",
+  "portfolioFee": "Шимтгэл ({currency})",
+  "portfolioFeeAdd": "Шимтгэл нэмэх",
+  "portfolioFeeRow": "Шимтгэл: {amount}"
 }

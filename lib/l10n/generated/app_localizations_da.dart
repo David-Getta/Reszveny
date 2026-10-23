@@ -2550,6 +2550,19 @@ class AppLocalizationsDa extends AppLocalizations {
   String get portfolioNoAccount => 'Uden konto';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Kurtage ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Tilføj kurtage';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Kurtage: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

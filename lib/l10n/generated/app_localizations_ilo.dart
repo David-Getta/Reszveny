@@ -2572,6 +2572,19 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get portfolioNoAccount => 'Awan ti account';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Komision ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Inayon ti komision';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Komision: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

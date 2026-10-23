@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Akaũnti ciothe",
   "portfolioAccountNote": "Ũgũri na ũendia wa akaũnti ĩno tu. Mbeca cia moko na mĩgai ya faida ionekaga harĩ Akaũnti ciothe.",
   "portfolioNoAccount": "Hatarĩ akaũnti",
-  "allocationAccounts": "Akaũnti"
+  "allocationAccounts": "Akaũnti",
+  "portfolioFee": "Marĩhi ({currency})",
+  "portfolioFeeAdd": "Ongerera marĩhi",
+  "portfolioFeeRow": "Marĩhi: {amount}"
 }

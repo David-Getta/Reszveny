@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "அனைத்து கணக்குகள்",
   "portfolioAccountNote": "இந்தக் கணக்கின் பரிவர்த்தனைகள் மட்டும். ரொக்கம் மற்றும் ஈவுத்தொகை 'அனைத்து கணக்குகள்' பிரிவில் காட்டப்படும்.",
   "portfolioNoAccount": "கணக்கு இல்லை",
-  "allocationAccounts": "கணக்குகள்"
+  "allocationAccounts": "கணக்குகள்",
+  "portfolioFee": "கட்டணம் ({currency})",
+  "portfolioFeeAdd": "கட்டணத்தைச் சேர்",
+  "portfolioFeeRow": "கட்டணம்: {amount}"
 }

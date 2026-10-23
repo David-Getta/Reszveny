@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "সকলো একাউণ্ট",
   "portfolioAccountNote": "কেৱল এই একাউণ্টৰ লেনদেন। নগদ আৰু লাভাংশ ‘সকলো একাউণ্ট’ত দেখুওৱা হয়।",
   "portfolioNoAccount": "একাউণ্ট নাই",
-  "allocationAccounts": "একাউণ্ট"
+  "allocationAccounts": "একাউণ্ট",
+  "portfolioFee": "কমিছন ({currency})",
+  "portfolioFeeAdd": "কমিছন যোগ কৰক",
+  "portfolioFeeRow": "কমিছন: {amount}"
 }

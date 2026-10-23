@@ -2549,6 +2549,19 @@ class AppLocalizationsHi extends AppLocalizations {
   String get portfolioNoAccount => 'कोई खाता नहीं';
 
   @override
+  String portfolioFee(String currency) {
+    return 'ब्रोकरेज ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'ब्रोकरेज जोड़ें';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'ब्रोकरेज: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

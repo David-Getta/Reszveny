@@ -2095,6 +2095,20 @@
   "@portfolioNoAccount": {
     "description": "Label for transactions recorded without an account (e.g. on the account choice when selling shares held in several accounts)."
   },
+  "portfolioFee": "Fee ({currency})",
+  "@portfolioFee": {
+    "description": "Optional field in the buy/sell dialog: the broker's fee (commission) for this transaction, one amount in the stock's currency. It is added to the cost of a purchase and deducted from the proceeds of a sale.",
+    "placeholders": { "currency": { "type": "String", "example": "USD" } }
+  },
+  "portfolioFeeAdd": "Add a fee",
+  "@portfolioFeeAdd": {
+    "description": "Small button in the buy/sell dialog that reveals the optional fee (commission) field."
+  },
+  "portfolioFeeRow": "Fee: {amount}",
+  "@portfolioFeeRow": {
+    "description": "Under a transaction in the list: the fee (commission) paid on it.",
+    "placeholders": { "amount": { "type": "String", "example": "4.95 USD" } }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

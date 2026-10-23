@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Konte yonso",
   "portfolioAccountNote": "Kusumba ne kusumbisha bia konte eyi nkayabi. Mfranga ya mu bianza ne dividende bidi bimueneka mu Konte yonso.",
   "portfolioNoAccount": "Kakuena konte",
-  "allocationAccounts": "Konte"
+  "allocationAccounts": "Konte",
+  "portfolioFee": "Makuta a mudimu ({currency})",
+  "portfolioFeeAdd": "Sakidila makuta a mudimu",
+  "portfolioFeeRow": "Makuta a mudimu: {amount}"
 }

@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Kabeh akun",
   "portfolioAccountNote": "Mung transaksi akun iki. Kas lan dividen ditampilake ing Kabeh akun.",
   "portfolioNoAccount": "Tanpa akun",
-  "allocationAccounts": "Akun"
+  "allocationAccounts": "Akun",
+  "portfolioFee": "Biaya transaksi ({currency})",
+  "portfolioFeeAdd": "Tambahake biaya transaksi",
+  "portfolioFeeRow": "Biaya transaksi: {amount}"
 }

@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Diakhaonto ka moka",
   "portfolioAccountNote": "Dithekišano tša akhaonto ye fela. Tšhelete le dividende di bontšhwa ka fase ga Diakhaonto ka moka.",
   "portfolioNoAccount": "Ga go na akhaonto",
-  "allocationAccounts": "Diakhaonto"
+  "allocationAccounts": "Diakhaonto",
+  "portfolioFee": "Tefelo ({currency})",
+  "portfolioFeeAdd": "Oketša tefelo",
+  "portfolioFeeRow": "Tefelo: {amount}"
 }

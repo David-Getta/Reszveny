@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Alla konton",
   "portfolioAccountNote": "Endast transaktioner på det här kontot. Kontanter och utdelningar visas under Alla konton.",
   "portfolioNoAccount": "Inget konto",
-  "allocationAccounts": "Konton"
+  "allocationAccounts": "Konton",
+  "portfolioFee": "Courtage ({currency})",
+  "portfolioFeeAdd": "Lägg till courtage",
+  "portfolioFeeRow": "Courtage: {amount}"
 }

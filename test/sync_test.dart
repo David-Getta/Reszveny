@@ -142,20 +142,24 @@ void main() {
     final server = _Server();
     SharedPreferences.setMockInitialValues({});
     final a = _Device(server);
-    await a.portfolio.add(symbol: 'OTP', quantity: 10, price: 30000, currency: 'HUF', account: 'TBSZ');
+    await a.portfolio.add(symbol: 'OTP', quantity: 10, price: 30000, currency: 'HUF', account: 'TBSZ', fee: 300);
     await a.sync.start();
     expect((server.data!['lots'] as List).single['account'], 'TBSZ');
-    // Egy régebbi app (a számlát nem ismeri) ugyanazt a tételt számla nélkül tölti fel.
+    // Egy régebbi app (a számlát és a díjat nem ismeri) ugyanazt a tételt nélkülük tölti fel.
     server.data = {
       ...server.data!,
       'lots': [
-        for (final l in server.data!['lots'] as List) {...(l as Map)}..remove('account'),
+        for (final l in server.data!['lots'] as List)
+          {...(l as Map)}
+            ..remove('account')
+            ..remove('fee'),
       ],
     };
     server.updatedAt = DateTime.utc(2026, 10, 16);
     await a.sync.syncNow();
-    expect(a.portfolio.lots.single.account, 'TBSZ');
+    expect((a.portfolio.lots.single.account, a.portfolio.lots.single.fee), ('TBSZ', 300.0));
     expect((server.data!['lots'] as List).single['account'], 'TBSZ');
+    expect((server.data!['lots'] as List).single['fee'], 300.0);
   });
 
   test('goals follow the account: the newer change wins, a removed goal does not come back', () async {

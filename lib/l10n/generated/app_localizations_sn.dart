@@ -2558,6 +2558,19 @@ class AppLocalizationsSn extends AppLocalizations {
   String get portfolioNoAccount => 'Hapana akaundi';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Mubhadharo ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Wedzera mubhadharo';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Mubhadharo: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

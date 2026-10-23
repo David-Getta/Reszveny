@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "All accounts",
   "portfolioAccountNote": "Na only dis account buy and sell. Cash and dividend dey show for All accounts.",
   "portfolioNoAccount": "No account",
-  "allocationAccounts": "Accounts"
+  "allocationAccounts": "Accounts",
+  "portfolioFee": "Charges ({currency})",
+  "portfolioFeeAdd": "Put charges",
+  "portfolioFeeRow": "Charges: {amount}"
 }

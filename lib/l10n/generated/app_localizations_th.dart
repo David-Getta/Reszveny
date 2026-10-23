@@ -2521,6 +2521,19 @@ class AppLocalizationsTh extends AppLocalizations {
   String get portfolioNoAccount => 'ไม่มีบัญชี';
 
   @override
+  String portfolioFee(String currency) {
+    return 'ค่าธรรมเนียม ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'เพิ่มค่าธรรมเนียม';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'ค่าธรรมเนียม: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

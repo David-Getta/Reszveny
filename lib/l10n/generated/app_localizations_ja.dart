@@ -2472,6 +2472,19 @@ class AppLocalizationsJa extends AppLocalizations {
   String get portfolioNoAccount => '口座なし';
 
   @override
+  String portfolioFee(String currency) {
+    return '手数料（$currency）';
+  }
+
+  @override
+  String get portfolioFeeAdd => '手数料を追加';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return '手数料：$amount';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

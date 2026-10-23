@@ -2552,6 +2552,19 @@ class AppLocalizationsAk extends AppLocalizations {
   String get portfolioNoAccount => 'Akontaabu nni hɔ';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Akatua ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Fa akatua bi ka ho';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Akatua: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

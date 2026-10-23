@@ -2537,6 +2537,19 @@ class AppLocalizationsMos extends AppLocalizations {
   String get portfolioNoAccount => 'Kõnte ka be ye';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Ligd sẽn yaod ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Paas ligd sẽn yaod';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Ligd sẽn yaod: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

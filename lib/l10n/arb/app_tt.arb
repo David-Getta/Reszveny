@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Барлык хисаплар",
   "portfolioAccountNote": "Бу хисапның операцияләре генә. Акча һәм дивидендлар «Барлык хисаплар» бүлегендә күрсәтелә.",
   "portfolioNoAccount": "Хисапсыз",
-  "allocationAccounts": "Хисаплар"
+  "allocationAccounts": "Хисаплар",
+  "portfolioFee": "Комиссия ({currency})",
+  "portfolioFeeAdd": "Комиссия өстәү",
+  "portfolioFeeRow": "Комиссия: {amount}"
 }

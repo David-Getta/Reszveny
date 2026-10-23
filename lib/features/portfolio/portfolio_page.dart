@@ -1337,7 +1337,11 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                         '${lot.sell ? '${l10n.portfolioSold} ' : ''}${qty(lot.quantity)} × ${fmt.money(lot.price, lot.currency)}',
                       ),
                       // Minden számla nézetében a tétel számlája is (ha van).
-                      subtitle: switch ([if (lot.date != null) fmt.date(lot.date), if (account == null) ?lot.account]) {
+                      subtitle: switch ([
+                        if (lot.date != null) fmt.date(lot.date),
+                        if (account == null) ?lot.account,
+                        if (lot.fee > 0) l10n.portfolioFeeRow(fmt.money(lot.fee, lot.currency)),
+                      ]) {
                         final parts when parts.isNotEmpty => Text(parts.join(' · ')),
                         _ => null,
                       },

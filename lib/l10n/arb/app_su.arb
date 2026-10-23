@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Sadaya akun",
   "portfolioAccountNote": "Ngan transaksi akun ieu. Tunai jeung dividen ditémbongkeun dina Sadaya akun.",
   "portfolioNoAccount": "Tanpa akun",
-  "allocationAccounts": "Akun"
+  "allocationAccounts": "Akun",
+  "portfolioFee": "Biaya ({currency})",
+  "portfolioFeeAdd": "Tambihkeun biaya",
+  "portfolioFeeRow": "Biaya: {amount}"
 }

@@ -2545,6 +2545,19 @@ class AppLocalizationsVi extends AppLocalizations {
   String get portfolioNoAccount => 'Không có tài khoản';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Phí giao dịch ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Thêm phí';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Phí: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

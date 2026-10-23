@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Všetky účty",
   "portfolioAccountNote": "Len transakcie tohto účtu. Hotovosť a dividendy nájdete v časti Všetky účty.",
   "portfolioNoAccount": "Bez účtu",
-  "allocationAccounts": "Účty"
+  "allocationAccounts": "Účty",
+  "portfolioFee": "Poplatok ({currency})",
+  "portfolioFeeAdd": "Pridať poplatok",
+  "portfolioFeeRow": "Poplatok: {amount}"
 }

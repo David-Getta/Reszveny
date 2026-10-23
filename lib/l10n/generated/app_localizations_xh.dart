@@ -2563,6 +2563,19 @@ class AppLocalizationsXh extends AppLocalizations {
   String get portfolioNoAccount => 'Akukho akhawunti';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Ifizi ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Yongeza ifizi';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Ifizi: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

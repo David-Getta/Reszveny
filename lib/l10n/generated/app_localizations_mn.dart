@@ -2551,6 +2551,19 @@ class AppLocalizationsMn extends AppLocalizations {
   String get portfolioNoAccount => 'Дансгүй';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Шимтгэл ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Шимтгэл нэмэх';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Шимтгэл: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

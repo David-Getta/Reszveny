@@ -835,6 +835,12 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('position-sell')));
     await tester.pumpAndSettle();
+    // A jutalék mezője is (egy gombbal kerül elő).
+    await tester.tap(find.byKey(const ValueKey('lot-fee-add')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '5');
+    await tester.enterText(find.byKey(const ValueKey('lot-fee')), '1,99');
+    await tester.pumpAndSettle();
     await _shot(tester, 'portfolio_sell_accounts_phone_hu');
   });
 

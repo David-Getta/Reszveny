@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Wszystkie rachunki",
   "portfolioAccountNote": "Tylko transakcje tego rachunku. Gotówkę i dywidendy zobaczysz po wybraniu „Wszystkie rachunki”.",
   "portfolioNoAccount": "Bez rachunku",
-  "allocationAccounts": "Rachunki"
+  "allocationAccounts": "Rachunki",
+  "portfolioFee": "Prowizja ({currency})",
+  "portfolioFeeAdd": "Dodaj prowizję",
+  "portfolioFeeRow": "Prowizja: {amount}"
 }

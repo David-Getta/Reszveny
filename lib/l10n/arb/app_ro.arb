@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Toate conturile",
   "portfolioAccountNote": "Doar tranzacțiile acestui cont. Numerarul și dividendele apar la Toate conturile.",
   "portfolioNoAccount": "Fără cont",
-  "allocationAccounts": "Conturi"
+  "allocationAccounts": "Conturi",
+  "portfolioFee": "Comision ({currency})",
+  "portfolioFeeAdd": "Adaugă un comision",
+  "portfolioFeeRow": "Comision: {amount}"
 }

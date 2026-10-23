@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Jate bɛɛ",
   "portfolioAccountNote": "Nin jate in ka sanniw ni feereliw dɔrɔn. Wari gansan ni dividandiw bɛ jira Jate bɛɛ kɔnɔ.",
   "portfolioNoAccount": "Jate si tɛ",
-  "allocationAccounts": "Jatew"
+  "allocationAccounts": "Jatew",
+  "portfolioFee": "Sara ({currency})",
+  "portfolioFeeAdd": "Sara dɔ fara a kan",
+  "portfolioFeeRow": "Sara: {amount}"
 }

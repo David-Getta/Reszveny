@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Semua akaun",
   "portfolioAccountNote": "Hanya transaksi akaun ini. Tunai dan dividen dipaparkan di bawah Semua akaun.",
   "portfolioNoAccount": "Tiada akaun",
-  "allocationAccounts": "Akaun"
+  "allocationAccounts": "Akaun",
+  "portfolioFee": "Yuran ({currency})",
+  "portfolioFeeAdd": "Tambah yuran",
+  "portfolioFeeRow": "Yuran: {amount}"
 }

@@ -2567,6 +2567,19 @@ class AppLocalizationsSt extends AppLocalizations {
   String get portfolioNoAccount => 'Ha ho akhaonto';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Tefello ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Eketsa tefello';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Tefello: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

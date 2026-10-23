@@ -2565,6 +2565,19 @@ class AppLocalizationsLg extends AppLocalizations {
   String get portfolioNoAccount => 'Tewali akawunti';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Ebisale ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Yongerako ebisale';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Ebisale: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

@@ -2562,6 +2562,19 @@ class AppLocalizationsZu extends AppLocalizations {
   String get portfolioNoAccount => 'Ayikho i-akhawunti';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Inkokhelo ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Engeza inkokhelo';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Inkokhelo: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

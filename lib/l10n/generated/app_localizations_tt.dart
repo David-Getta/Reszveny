@@ -2549,6 +2549,19 @@ class AppLocalizationsTt extends AppLocalizations {
   String get portfolioNoAccount => 'Хисапсыз';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Комиссия ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Комиссия өстәү';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Комиссия: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

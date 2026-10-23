@@ -4417,6 +4417,24 @@ abstract class AppLocalizations {
   /// **'No account'**
   String get portfolioNoAccount;
 
+  /// Optional field in the buy/sell dialog: the broker's fee (commission) for this transaction, one amount in the stock's currency. It is added to the cost of a purchase and deducted from the proceeds of a sale.
+  ///
+  /// In en, this message translates to:
+  /// **'Fee ({currency})'**
+  String portfolioFee(String currency);
+
+  /// Small button in the buy/sell dialog that reveals the optional fee (commission) field.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a fee'**
+  String get portfolioFeeAdd;
+
+  /// Under a transaction in the list: the fee (commission) paid on it.
+  ///
+  /// In en, this message translates to:
+  /// **'Fee: {amount}'**
+  String portfolioFeeRow(String amount);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

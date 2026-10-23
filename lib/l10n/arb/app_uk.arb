@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Усі рахунки",
   "portfolioAccountNote": "Лише операції цього рахунку. Кошти й дивіденди — у розділі «Усі рахунки».",
   "portfolioNoAccount": "Без рахунку",
-  "allocationAccounts": "Рахунки"
+  "allocationAccounts": "Рахунки",
+  "portfolioFee": "Комісія ({currency})",
+  "portfolioFeeAdd": "Додати комісію",
+  "portfolioFeeRow": "Комісія: {amount}"
 }

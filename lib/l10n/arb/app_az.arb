@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Bütün hesablar",
   "portfolioAccountNote": "Yalnız bu hesabın əməliyyatları. Nağd vəsait və dividendlər «Bütün hesablar» bölməsində göstərilir.",
   "portfolioNoAccount": "Hesabsız",
-  "allocationAccounts": "Hesablar"
+  "allocationAccounts": "Hesablar",
+  "portfolioFee": "Komissiya ({currency})",
+  "portfolioFeeAdd": "Komissiya əlavə edin",
+  "portfolioFeeRow": "Komissiya: {amount}"
 }

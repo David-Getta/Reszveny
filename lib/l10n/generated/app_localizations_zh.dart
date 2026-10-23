@@ -2438,6 +2438,19 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioNoAccount => '无账户';
 
   @override
+  String portfolioFee(String currency) {
+    return '手续费 ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => '添加手续费';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return '手续费：$amount';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5243,6 +5256,19 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioNoAccount => '無帳戶';
+
+  @override
+  String portfolioFee(String currency) {
+    return '佣金 ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => '新增佣金';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return '佣金：$amount';
+  }
 
   @override
   String get portfolioGoalSet => '設定目標';

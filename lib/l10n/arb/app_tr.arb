@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Tüm hesaplar",
   "portfolioAccountNote": "Yalnızca bu hesabın işlemleri. Nakit ve temettüler Tüm hesaplar altında gösterilir.",
   "portfolioNoAccount": "Hesap yok",
-  "allocationAccounts": "Hesaplar"
+  "allocationAccounts": "Hesaplar",
+  "portfolioFee": "Komisyon ({currency})",
+  "portfolioFeeAdd": "Komisyon ekle",
+  "portfolioFeeRow": "Komisyon: {amount}"
 }

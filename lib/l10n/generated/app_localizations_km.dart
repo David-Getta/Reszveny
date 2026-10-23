@@ -2530,6 +2530,19 @@ class AppLocalizationsKm extends AppLocalizations {
   String get portfolioNoAccount => 'គ្មានគណនី';
 
   @override
+  String portfolioFee(String currency) {
+    return 'កម្រៃជើងសារ ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'បន្ថែមកម្រៃជើងសារ';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'កម្រៃជើងសារ៖ $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

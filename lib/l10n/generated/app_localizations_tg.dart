@@ -2553,6 +2553,19 @@ class AppLocalizationsTg extends AppLocalizations {
   String get portfolioNoAccount => 'Бе ҳисоб';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Комиссия ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Комиссия илова кардан';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Комиссия: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

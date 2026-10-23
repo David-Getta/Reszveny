@@ -2561,6 +2561,19 @@ class AppLocalizationsMl extends AppLocalizations {
   String get portfolioNoAccount => 'അക്കൗണ്ട് ഇല്ല';
 
   @override
+  String portfolioFee(String currency) {
+    return 'ഫീസ് ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'ഫീസ് ചേർക്കുക';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'ഫീസ്: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

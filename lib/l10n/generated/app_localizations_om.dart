@@ -2561,6 +2561,19 @@ class AppLocalizationsOm extends AppLocalizations {
   String get portfolioNoAccount => 'Herrega malee';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Kaffaltii tajaajilaa ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Kaffaltii tajaajilaa dabali';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Kaffaltii tajaajilaa: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

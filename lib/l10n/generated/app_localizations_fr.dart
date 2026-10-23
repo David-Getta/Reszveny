@@ -2563,6 +2563,19 @@ class AppLocalizationsFr extends AppLocalizations {
   String get portfolioNoAccount => 'Sans compte';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Frais ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Ajouter des frais';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Frais : $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

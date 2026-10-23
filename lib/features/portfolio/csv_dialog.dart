@@ -127,6 +127,7 @@ Future<void> showPortfolioImport(BuildContext context) async {
       date: l.date,
       sell: l.sell,
       account: l.account,
+      fee: l.fee,
     );
     added++;
   }

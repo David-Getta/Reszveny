@@ -2562,6 +2562,19 @@ class AppLocalizationsTa extends AppLocalizations {
   String get portfolioNoAccount => 'கணக்கு இல்லை';
 
   @override
+  String portfolioFee(String currency) {
+    return 'கட்டணம் ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'கட்டணத்தைச் சேர்';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'கட்டணம்: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

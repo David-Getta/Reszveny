@@ -2559,6 +2559,19 @@ class AppLocalizationsFil extends AppLocalizations {
   String get portfolioNoAccount => 'Walang account';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Komisyon ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Magdagdag ng komisyon';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Komisyon: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

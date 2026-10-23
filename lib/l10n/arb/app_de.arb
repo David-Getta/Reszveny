@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Alle Konten",
   "portfolioAccountNote": "Nur Transaktionen dieses Kontos. Cash und Dividenden werden unter „Alle Konten“ angezeigt.",
   "portfolioNoAccount": "Ohne Konto",
-  "allocationAccounts": "Konten"
+  "allocationAccounts": "Konten",
+  "portfolioFee": "Gebühr ({currency})",
+  "portfolioFeeAdd": "Gebühr hinzufügen",
+  "portfolioFeeRow": "Gebühr: {amount}"
 }

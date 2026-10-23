@@ -2619,6 +2619,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get portfolioNoAccount => 'Без счёта';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Комиссия ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Добавить комиссию';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Комиссия: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

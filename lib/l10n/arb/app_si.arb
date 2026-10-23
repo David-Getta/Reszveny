@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "සියලු ගිණුම්",
   "portfolioAccountNote": "මෙම ගිණුමේ ගනුදෙනු පමණි. මුදල් සහ ලාභාංශ 'සියලු ගිණුම්' යටතේ පෙන්වයි.",
   "portfolioNoAccount": "ගිණුමක් නැත",
-  "allocationAccounts": "ගිණුම්"
+  "allocationAccounts": "ගිණුම්",
+  "portfolioFee": "ගාස්තුව ({currency})",
+  "portfolioFeeAdd": "ගාස්තුවක් එක් කරන්න",
+  "portfolioFeeRow": "ගාස්තුව: {amount}"
 }

@@ -13,9 +13,12 @@ String portfolioCsv(
   List<SplitRecord> splits = const [],
 }) {
   String n(double v) => v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toString();
-  // A számla oszlop csak akkor, ha van számlás tranzakció (a régi formátum marad).
+  // A számla és a díj oszlopa csak akkor, ha van ilyen tranzakció (a régi formátum marad).
   final withAccount = lots.any((l) => l.account != null);
-  final b = StringBuffer('symbol,quantity,price,currency,date,side${withAccount ? ',account' : ''}\n');
+  final withFee = lots.any((l) => l.fee > 0);
+  final b = StringBuffer(
+    'symbol,quantity,price,currency,date,side${withAccount ? ',account' : ''}${withFee ? ',fee' : ''}\n',
+  );
   for (final l in lots) {
     b.writeln(
       [
@@ -26,6 +29,7 @@ String portfolioCsv(
         l.date?.toIso8601String().substring(0, 10) ?? '',
         l.sell ? 'sell' : 'buy',
         if (withAccount) _csvField(l.account ?? ''),
+        if (withFee) l.fee > 0 ? n(l.fee) : '',
       ].join(','),
     );
   }
@@ -106,10 +110,14 @@ class ImportedLot {
     this.date,
     this.sell = false,
     this.account,
+    this.fee = 0,
   });
 
   /// A számla neve (saját exportból vagy „account” / „számla” oszlopból).
   final String? account;
+
+  /// A tranzakció díja (saját export „fee”, IBKR „Comm/Fee”, magyarul „jutalék” / „díj”).
+  final double fee;
 
   final String symbol;
   final double quantity;
@@ -218,6 +226,8 @@ const _roles = <String, Set<String>>{
   'totalcurrency': {'currencytotal'},
   // A számla (saját export „account”, magyarul „számla”).
   'account': {'account', 'accountname', 'szmla'},
+  // A tranzakció díja a kereskedés pénznemében (az IBKR negatívként írja).
+  'fee': {'fee', 'fees', 'commission', 'commissions', 'commfee', 'jutalk', 'dj'},
 };
 
 /// Fejlécsor felismerése: oszlopszerep → index, ha van ticker, darabszám és ár.
@@ -378,6 +388,7 @@ CsvImport _withHeader(
         date: _date(cell(f, 'date')),
         sell: sell,
         account: PortfolioLot.cleanAccount(cell(f, 'account')),
+        fee: PortfolioLot.cleanFee(_decimal(cell(f, 'fee'))?.abs()),
       ),
     );
   }

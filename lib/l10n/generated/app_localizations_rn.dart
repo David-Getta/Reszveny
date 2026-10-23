@@ -2560,6 +2560,19 @@ class AppLocalizationsRn extends AppLocalizations {
   String get portfolioNoAccount => 'Nta konti';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Komisiyo ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Ongerako komisiyo';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Komisiyo: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

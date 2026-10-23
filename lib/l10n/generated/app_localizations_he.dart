@@ -2543,6 +2543,19 @@ class AppLocalizationsHe extends AppLocalizations {
   String get portfolioNoAccount => 'ללא חשבון';
 
   @override
+  String portfolioFee(String currency) {
+    return 'עמלה ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'הוספת עמלה';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'עמלה: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

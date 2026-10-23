@@ -2553,6 +2553,19 @@ class AppLocalizationsSv extends AppLocalizations {
   String get portfolioNoAccount => 'Inget konto';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Courtage ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Lägg till courtage';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Courtage: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

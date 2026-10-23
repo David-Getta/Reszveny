@@ -2563,6 +2563,19 @@ class AppLocalizationsCeb extends AppLocalizations {
   String get portfolioNoAccount => 'Walay account';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Komisyon ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Idugang ang komisyon';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Komisyon: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "ทุกบัญชี",
   "portfolioAccountNote": "เฉพาะรายการซื้อขายของบัญชีนี้ เงินสดและเงินปันผลแสดงอยู่ใน “ทุกบัญชี”",
   "portfolioNoAccount": "ไม่มีบัญชี",
-  "allocationAccounts": "บัญชี"
+  "allocationAccounts": "บัญชี",
+  "portfolioFee": "ค่าธรรมเนียม ({currency})",
+  "portfolioFeeAdd": "เพิ่มค่าธรรมเนียม",
+  "portfolioFeeRow": "ค่าธรรมเนียม: {amount}"
 }

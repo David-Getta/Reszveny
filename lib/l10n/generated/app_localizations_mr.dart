@@ -2550,6 +2550,19 @@ class AppLocalizationsMr extends AppLocalizations {
   String get portfolioNoAccount => 'खाते नाही';
 
   @override
+  String portfolioFee(String currency) {
+    return 'शुल्क ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'शुल्क जोडा';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'शुल्क: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

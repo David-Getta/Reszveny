@@ -2513,6 +2513,19 @@ class AppLocalizationsTi extends AppLocalizations {
   String get portfolioNoAccount => 'ብዘይ ሕሳብ';
 
   @override
+  String portfolioFee(String currency) {
+    return 'ክፍሊት ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'ክፍሊት ወስኽ';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'ክፍሊት፦ $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

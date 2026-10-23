@@ -2552,6 +2552,19 @@ class AppLocalizationsTk extends AppLocalizations {
   String get portfolioNoAccount => 'Hasapsyz';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Komissiýa ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Komissiýa goş';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Komissiýa: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

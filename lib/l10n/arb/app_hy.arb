@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Բոլոր հաշիվները",
   "portfolioAccountNote": "Միայն այս հաշվի գործարքները։ Կանխիկը և շահաբաժինները ցուցադրվում են «Բոլոր հաշիվները» բաժնում։",
   "portfolioNoAccount": "Առանց հաշվի",
-  "allocationAccounts": "Հաշիվներ"
+  "allocationAccounts": "Հաշիվներ",
+  "portfolioFee": "Միջնորդավճար ({currency})",
+  "portfolioFeeAdd": "Ավելացնել միջնորդավճար",
+  "portfolioFeeRow": "Միջնորդավճար՝ {amount}"
 }

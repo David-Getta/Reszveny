@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Alle rekeninge",
   "portfolioAccountNote": "Slegs hierdie rekening se transaksies. Kontant en dividende word onder Alle rekeninge gewys.",
   "portfolioNoAccount": "Geen rekening",
-  "allocationAccounts": "Rekeninge"
+  "allocationAccounts": "Rekeninge",
+  "portfolioFee": "Kommissie ({currency})",
+  "portfolioFeeAdd": "Voeg 'n kommissie by",
+  "portfolioFeeRow": "Kommissie: {amount}"
 }

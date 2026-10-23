@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Hemû hesab",
   "portfolioAccountNote": "Tenê danûstandinên vî hesabî. Pereyê nexd û dividend di bin Hemû hesab de têne nîşandan.",
   "portfolioNoAccount": "Bê hesab",
-  "allocationAccounts": "Hesab"
+  "allocationAccounts": "Hesab",
+  "portfolioFee": "Komîsyon ({currency})",
+  "portfolioFeeAdd": "Komîsyonekê zêde bike",
+  "portfolioFeeRow": "Komîsyon: {amount}"
 }

@@ -2556,6 +2556,19 @@ class AppLocalizationsHu extends AppLocalizations {
   String get portfolioNoAccount => 'Számla nélkül';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Jutalék ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Jutalék megadása';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Jutalék: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

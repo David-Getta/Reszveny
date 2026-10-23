@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Ba compte nyonso",
   "portfolioAccountNote": "Kaka bosombi mpe boteki ya compte oyo. Mbɔngɔ ya mabɔkɔ mpe ba dividende ezali kolakisama na Ba compte nyonso.",
   "portfolioNoAccount": "Na compte te",
-  "allocationAccounts": "Ba-compte"
+  "allocationAccounts": "Ba-compte",
+  "portfolioFee": "Frais ({currency})",
+  "portfolioFeeAdd": "Bakisa frais",
+  "portfolioFeeRow": "Frais: {amount}"
 }

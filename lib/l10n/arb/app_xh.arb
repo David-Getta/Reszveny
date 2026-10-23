@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Zonke iiakhawunti",
   "portfolioAccountNote": "Iintengiselwano zale akhawunti kuphela. Imali nezahlulo ziboniswa phantsi kwe-\"Zonke iiakhawunti\".",
   "portfolioNoAccount": "Akukho akhawunti",
-  "allocationAccounts": "Iiakhawunti"
+  "allocationAccounts": "Iiakhawunti",
+  "portfolioFee": "Ifizi ({currency})",
+  "portfolioFeeAdd": "Yongeza ifizi",
+  "portfolioFeeRow": "Ifizi: {amount}"
 }

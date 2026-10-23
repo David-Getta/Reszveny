@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Të gjitha llogaritë",
   "portfolioAccountNote": "Vetëm transaksionet e kësaj llogarie. Paratë e gatshme dhe dividendët shfaqen te „Të gjitha llogaritë“.",
   "portfolioNoAccount": "Pa llogari",
-  "allocationAccounts": "Llogaritë"
+  "allocationAccounts": "Llogaritë",
+  "portfolioFee": "Komisioni ({currency})",
+  "portfolioFeeAdd": "Shto komision",
+  "portfolioFeeRow": "Komisioni: {amount}"
 }

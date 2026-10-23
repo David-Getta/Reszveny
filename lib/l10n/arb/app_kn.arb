@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "ಎಲ್ಲಾ ಖಾತೆಗಳು",
   "portfolioAccountNote": "ಈ ಖಾತೆಯ ವಹಿವಾಟುಗಳು ಮಾತ್ರ. ನಗದು ಮತ್ತು ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ‘ಎಲ್ಲಾ ಖಾತೆಗಳು’ ಅಡಿಯಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ.",
   "portfolioNoAccount": "ಖಾತೆ ಇಲ್ಲ",
-  "allocationAccounts": "ಖಾತೆಗಳು"
+  "allocationAccounts": "ಖಾತೆಗಳು",
+  "portfolioFee": "ಬ್ರೋಕರೇಜ್ ({currency})",
+  "portfolioFeeAdd": "ಬ್ರೋಕರೇಜ್ ಸೇರಿಸಿ",
+  "portfolioFeeRow": "ಬ್ರೋಕರೇಜ್: {amount}"
 }

@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Herregoota hunda",
   "portfolioAccountNote": "Bittaa fi gurgurtaa herrega kanaa qofa. Maallaqni callaa fi diviidendiin \"Herregoota hunda\" jalatti mul'atu.",
   "portfolioNoAccount": "Herrega malee",
-  "allocationAccounts": "Herregoota"
+  "allocationAccounts": "Herregoota",
+  "portfolioFee": "Kaffaltii tajaajilaa ({currency})",
+  "portfolioFeeAdd": "Kaffaltii tajaajilaa dabali",
+  "portfolioFeeRow": "Kaffaltii tajaajilaa: {amount}"
 }

@@ -2550,6 +2550,19 @@ class AppLocalizationsNe extends AppLocalizations {
   String get portfolioNoAccount => 'खाता छैन';
 
   @override
+  String portfolioFee(String currency) {
+    return 'शुल्क ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'शुल्क थप्नुहोस्';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'शुल्क: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

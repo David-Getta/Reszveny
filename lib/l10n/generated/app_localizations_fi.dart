@@ -2553,6 +2553,19 @@ class AppLocalizationsFi extends AppLocalizations {
   String get portfolioNoAccount => 'Ilman tiliä';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Välityspalkkio ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Lisää välityspalkkio';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Välityspalkkio: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

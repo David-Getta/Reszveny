@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Konti zose",
   "portfolioAccountNote": "Ivyaguzwe n'ivyagurishijwe vy'iyi konti gusa. Amafaranga n'amadividende vyerekanwa muri \"Konti zose\".",
   "portfolioNoAccount": "Nta konti",
-  "allocationAccounts": "Konti"
+  "allocationAccounts": "Konti",
+  "portfolioFee": "Komisiyo ({currency})",
+  "portfolioFeeAdd": "Ongerako komisiyo",
+  "portfolioFeeRow": "Komisiyo: {amount}"
 }

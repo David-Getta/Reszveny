@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Tất cả tài khoản",
   "portfolioAccountNote": "Chỉ giao dịch của tài khoản này. Tiền mặt và cổ tức hiển thị trong Tất cả tài khoản.",
   "portfolioNoAccount": "Không có tài khoản",
-  "allocationAccounts": "Tài khoản"
+  "allocationAccounts": "Tài khoản",
+  "portfolioFee": "Phí giao dịch ({currency})",
+  "portfolioFeeAdd": "Thêm phí",
+  "portfolioFeeRow": "Phí: {amount}"
 }

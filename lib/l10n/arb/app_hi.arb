@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "सभी खाते",
   "portfolioAccountNote": "सिर्फ़ इस खाते के लेन-देन। नकद और डिविडेंड ‘सभी खाते’ में दिखाए जाते हैं।",
   "portfolioNoAccount": "कोई खाता नहीं",
-  "allocationAccounts": "खाते"
+  "allocationAccounts": "खाते",
+  "portfolioFee": "ब्रोकरेज ({currency})",
+  "portfolioFeeAdd": "ब्रोकरेज जोड़ें",
+  "portfolioFeeRow": "ब्रोकरेज: {amount}"
 }

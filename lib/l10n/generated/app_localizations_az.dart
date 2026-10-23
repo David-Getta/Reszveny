@@ -2553,6 +2553,19 @@ class AppLocalizationsAz extends AppLocalizations {
   String get portfolioNoAccount => 'Hesabsız';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Komissiya ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Komissiya əlavə edin';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Komissiya: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

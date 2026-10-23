@@ -2556,6 +2556,19 @@ class AppLocalizationsGn extends AppLocalizations {
   String get portfolioNoAccount => 'Ndaipóri cuenta';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Comisión ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Embojoapy peteĩ comisión';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Comisión: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "सर्व खाती",
   "portfolioAccountNote": "फक्त या खात्याचे व्यवहार. रोख आणि लाभांश 'सर्व खाती' मध्ये दाखवले जातात.",
   "portfolioNoAccount": "खाते नाही",
-  "allocationAccounts": "खाती"
+  "allocationAccounts": "खाती",
+  "portfolioFee": "शुल्क ({currency})",
+  "portfolioFeeAdd": "शुल्क जोडा",
+  "portfolioFeeRow": "शुल्क: {amount}"
 }

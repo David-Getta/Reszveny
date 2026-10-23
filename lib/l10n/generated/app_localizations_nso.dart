@@ -2569,6 +2569,19 @@ class AppLocalizationsNso extends AppLocalizations {
   String get portfolioNoAccount => 'Ga go na akhaonto';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Tefelo ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Oketša tefelo';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Tefelo: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

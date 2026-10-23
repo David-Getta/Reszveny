@@ -2545,6 +2545,19 @@ class AppLocalizationsWo extends AppLocalizations {
   String get portfolioNoAccount => 'Amul kont';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Peyu liggéey ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Yokk peyu liggéey';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Peyu liggéey: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

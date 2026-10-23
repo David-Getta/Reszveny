@@ -2543,6 +2543,19 @@ class AppLocalizationsPs extends AppLocalizations {
   String get portfolioNoAccount => 'حساب نشته';
 
   @override
+  String portfolioFee(String currency) {
+    return 'فیس ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'فیس اضافه کړئ';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'فیس: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

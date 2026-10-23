@@ -2551,6 +2551,19 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get portfolioNoAccount => 'No account';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Charges ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Put charges';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Charges: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

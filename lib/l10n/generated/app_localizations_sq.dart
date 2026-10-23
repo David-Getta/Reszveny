@@ -2557,6 +2557,19 @@ class AppLocalizationsSq extends AppLocalizations {
   String get portfolioNoAccount => 'Pa llogari';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Komisioni ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Shto komision';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Komisioni: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

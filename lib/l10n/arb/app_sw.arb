@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Akaunti zote",
   "portfolioAccountNote": "Miamala ya akaunti hii pekee. Taslimu na gawio huonyeshwa chini ya Akaunti zote.",
   "portfolioNoAccount": "Bila akaunti",
-  "allocationAccounts": "Akaunti"
+  "allocationAccounts": "Akaunti",
+  "portfolioFee": "Ada ({currency})",
+  "portfolioFeeAdd": "Ongeza ada",
+  "portfolioFeeRow": "Ada: {amount}"
 }

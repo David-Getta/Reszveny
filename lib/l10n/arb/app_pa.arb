@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "ਸਾਰੇ ਖਾਤੇ",
   "portfolioAccountNote": "ਸਿਰਫ਼ ਇਸ ਖਾਤੇ ਦੇ ਲੈਣ-ਦੇਣ। ਨਕਦ ਅਤੇ ਡਿਵੀਡੈਂਡ ‘ਸਾਰੇ ਖਾਤੇ’ ਹੇਠ ਦਿਖਾਏ ਜਾਂਦੇ ਹਨ।",
   "portfolioNoAccount": "ਕੋਈ ਖਾਤਾ ਨਹੀਂ",
-  "allocationAccounts": "ਖਾਤੇ"
+  "allocationAccounts": "ਖਾਤੇ",
+  "portfolioFee": "ਫੀਸ ({currency})",
+  "portfolioFeeAdd": "ਫੀਸ ਸ਼ਾਮਲ ਕਰੋ",
+  "portfolioFeeRow": "ਫੀਸ: {amount}"
 }

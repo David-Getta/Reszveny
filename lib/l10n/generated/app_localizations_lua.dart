@@ -2559,6 +2559,19 @@ class AppLocalizationsLua extends AppLocalizations {
   String get portfolioNoAccount => 'Kakuena konte';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Makuta a mudimu ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Sakidila makuta a mudimu';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Makuta a mudimu: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

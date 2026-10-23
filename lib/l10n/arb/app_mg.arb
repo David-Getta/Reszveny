@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Kaonty rehetra",
   "portfolioAccountNote": "Ny fividianana sy fivarotana amin'ity kaonty ity ihany. Ny vola sy ny dividandy dia hita ao amin'ny « Kaonty rehetra ».",
   "portfolioNoAccount": "Tsy misy kaonty",
-  "allocationAccounts": "Kaonty"
+  "allocationAccounts": "Kaonty",
+  "portfolioFee": "Sarany ({currency})",
+  "portfolioFeeAdd": "Hanampy sarany",
+  "portfolioFeeRow": "Sarany: {amount}"
 }

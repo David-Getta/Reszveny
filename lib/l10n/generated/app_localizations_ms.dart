@@ -2556,6 +2556,19 @@ class AppLocalizationsMs extends AppLocalizations {
   String get portfolioNoAccount => 'Tiada akaun';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Yuran ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Tambah yuran';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Yuran: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

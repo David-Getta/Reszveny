@@ -2552,6 +2552,19 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get portfolioNoAccount => 'بێ هەژمار';
 
   @override
+  String portfolioFee(String currency) {
+    return 'کۆمیسیۆن ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'کۆمیسیۆنێک زیاد بکە';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'کۆمیسیۆن: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

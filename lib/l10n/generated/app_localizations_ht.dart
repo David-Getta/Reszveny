@@ -2549,6 +2549,19 @@ class AppLocalizationsHt extends AppLocalizations {
   String get portfolioNoAccount => 'San kont';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Komisyon ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Ajoute yon komisyon';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Komisyon: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

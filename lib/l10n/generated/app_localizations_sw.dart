@@ -2552,6 +2552,19 @@ class AppLocalizationsSw extends AppLocalizations {
   String get portfolioNoAccount => 'Bila akaunti';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Ada ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Ongeza ada';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Ada: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

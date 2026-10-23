@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Barcha hisoblar",
   "portfolioAccountNote": "Faqat shu hisob operatsiyalari. Naqd pul va dividendlar «Barcha hisoblar» boʻlimida koʻrsatiladi.",
   "portfolioNoAccount": "Hisobsiz",
-  "allocationAccounts": "Hisoblar"
+  "allocationAccounts": "Hisoblar",
+  "portfolioFee": "Komissiya ({currency})",
+  "portfolioFeeAdd": "Komissiya qoʻshish",
+  "portfolioFeeRow": "Komissiya: {amount}"
 }

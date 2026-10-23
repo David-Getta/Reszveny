@@ -2551,6 +2551,19 @@ class AppLocalizationsKk extends AppLocalizations {
   String get portfolioNoAccount => 'Шотсыз';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Комиссия ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Комиссия қосу';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Комиссия: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

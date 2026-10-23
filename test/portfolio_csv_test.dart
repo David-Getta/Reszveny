@@ -149,6 +149,22 @@ void main() {
     expect(parsePortfolioCsv('OTP;10;30000;HUF;2026-01-05;buy;300000.00').lots.single.account, isNull);
   });
 
+  test('fees: a fee column only when used; read back, and from an IBKR-style Comm/Fee column', () {
+    final lots = [
+      PortfolioLot(id: 'a', symbol: 'AAPL', quantity: 3, price: 200, currency: 'USD', fee: 1.5),
+      const PortfolioLot(id: 'b', symbol: 'MSFT', quantity: 1, price: 400, currency: 'USD'),
+    ];
+    final csv = portfolioCsv(lots);
+    expect(csv, startsWith('symbol,quantity,price,currency,date,side,fee\n'));
+    expect(csv, contains('AAPL,3,200,USD,,buy,1.5\n'));
+    expect(parsePortfolioCsv(csv).lots.map((l) => l.fee), [1.5, 0]);
+    // IBKR: a „Comm/Fee” negatív.
+    final ib = parsePortfolioCsv('Symbol,Quantity,T. Price,Comm/Fee,Currency\nAAPL,10,190.5,-1.25,USD');
+    expect(ib.lots.single.fee, 1.25);
+    // Magyar fejléc: „Jutalék”.
+    expect(parsePortfolioCsv('Ticker;Darab;Price;Quantity;Jutalék\nOTP;x;30000;10;500').lots.single.fee, 500);
+  });
+
   test('realized gains CSV: an account column when a sale has an account', () {
     final lots = [
       PortfolioLot(id: 'a', symbol: 'OTP', quantity: 10, price: 100, currency: 'HUF', date: DateTime(2024, 1, 2)),

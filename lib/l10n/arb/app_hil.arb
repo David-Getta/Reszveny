@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Tanan nga account",
   "portfolioAccountNote": "Mga transaksyon lang sini nga account. Ang cash kag dibidendo makita sa Tanan nga account.",
   "portfolioNoAccount": "Wala sing account",
-  "allocationAccounts": "Mga account"
+  "allocationAccounts": "Mga account",
+  "portfolioFee": "Komisyon ({currency})",
+  "portfolioFeeAdd": "Idugang ang komisyon",
+  "portfolioFeeRow": "Komisyon: {amount}"
 }

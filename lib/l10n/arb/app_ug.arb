@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "بارلىق ھېساباتلار",
   "portfolioAccountNote": "پەقەت بۇ ھېساباتنىڭ سودىلىرى. نەق پۇل ۋە دىۋىدېندلار «بارلىق ھېساباتلار» دا كۆرسىتىلىدۇ.",
   "portfolioNoAccount": "ھېساباتسىز",
-  "allocationAccounts": "ھېساباتلار"
+  "allocationAccounts": "ھېساباتلار",
+  "portfolioFee": "رەسمىيەت ھەققى ({currency})",
+  "portfolioFeeAdd": "رەسمىيەت ھەققى قوشۇش",
+  "portfolioFeeRow": "رەسمىيەت ھەققى: {amount}"
 }

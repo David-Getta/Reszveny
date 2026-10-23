@@ -2620,6 +2620,19 @@ class AppLocalizationsUk extends AppLocalizations {
   String get portfolioNoAccount => 'Без рахунку';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Комісія ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Додати комісію';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Комісія: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

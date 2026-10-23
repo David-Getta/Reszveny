@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Maakaundi ese",
   "portfolioAccountNote": "Zvakatengwa nezvakatengeswa muakaundi iyi chete. Mari nemadividendi zvinoratidzwa pasi pe\"Maakaundi ese\".",
   "portfolioNoAccount": "Hapana akaundi",
-  "allocationAccounts": "Maakaundi"
+  "allocationAccounts": "Maakaundi",
+  "portfolioFee": "Mubhadharo ({currency})",
+  "portfolioFeeAdd": "Wedzera mubhadharo",
+  "portfolioFeeRow": "Mubhadharo: {amount}"
 }

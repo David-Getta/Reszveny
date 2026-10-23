@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Kont yépp",
   "portfolioAccountNote": "Jënd ak jaay yu kont bii rekk. Xaalis ak dividande yi ñu ngi feeñ ci \"Kont yépp\".",
   "portfolioNoAccount": "Amul kont",
-  "allocationAccounts": "Kont yi"
+  "allocationAccounts": "Kont yi",
+  "portfolioFee": "Peyu liggéey ({currency})",
+  "portfolioFeeAdd": "Yokk peyu liggéey",
+  "portfolioFeeRow": "Peyu liggéey: {amount}"
 }

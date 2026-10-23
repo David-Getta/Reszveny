@@ -2597,6 +2597,19 @@ class AppLocalizationsSr extends AppLocalizations {
   String get portfolioNoAccount => 'Без рачуна';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Провизија ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Додај провизију';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Провизија: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

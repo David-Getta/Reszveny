@@ -75,6 +75,11 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   String? _quantityError;
   String? _priceError;
 
+  /// A díj (jutalék) mezője; amíg egyik tranzakciónak sincs díja, egy gomb mutatja meg.
+  final _fee = TextEditingController();
+  String? _feeError;
+  late bool _showFee = AppServices.of(context).portfolio.lots.any((l) => l.fee > 0);
+
   /// A számla mezője (az automatikus kiegészítés saját vezérlője); amíg nincs
   /// számla, egy „Számla megadása” gomb mutatja meg.
   TextEditingController? _accountField;
@@ -101,6 +106,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   void dispose() {
     _quantity.dispose();
     _price.dispose();
+    _fee.dispose();
     super.dispose();
   }
 
@@ -108,6 +114,8 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     final l10n = AppLocalizations.of(context);
     final q = parseDecimal(_quantity.text);
     final p = parseDecimal(_price.text);
+    // Üres díjmező: nincs díj.
+    final fee = _fee.text.trim().isEmpty ? 0.0 : parseDecimal(_fee.text);
     final max = _sellMax;
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     setState(() {
@@ -117,8 +125,9 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                 ? l10n.portfolioSellTooMany(fmt.number(max, decimals: max == max.roundToDouble() ? 0 : 4))
                 : null);
       _priceError = p == null || p <= 0 ? l10n.portfolioInvalidNumber : null;
+      _feeError = fee == null || fee < 0 ? l10n.portfolioInvalidNumber : null;
     });
-    if (_quantityError != null || _priceError != null) return;
+    if (_quantityError != null || _priceError != null || _feeError != null) return;
     await AppServices.of(context).portfolio.add(
       symbol: widget.symbol,
       quantity: q!,
@@ -127,6 +136,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
       date: _date,
       sell: widget.sell,
       account: widget.sell ? _sellFrom : (_showAccount ? (_accountField?.text ?? widget.account) : null),
+      fee: fee!,
     );
     if (mounted) Navigator.of(context).pop(true);
   }
@@ -234,17 +244,40 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                     onSubmitted: (_) => _submit(),
                   );
                 },
-              )
-            else
-              Align(
-                alignment: AlignmentDirectional.centerStart,
-                child: TextButton.icon(
-                  key: const ValueKey('lot-account-add'),
-                  onPressed: () => setState(() => _showAccount = true),
-                  style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: EdgeInsets.zero),
-                  icon: const Icon(Icons.account_balance_outlined, size: 18),
-                  label: Text(l10n.portfolioAccountAdd),
-                ),
+              ),
+            // Díj (jutalék) egy összegben: ha már van díjas tranzakció, rögtön látszik.
+            if (_showFee) ...[
+              const SizedBox(height: 12),
+              TextField(
+                key: const ValueKey('lot-fee'),
+                controller: _fee,
+                keyboardType: numberKeyboard,
+                decoration: InputDecoration(labelText: l10n.portfolioFee(widget.currency), errorText: _feeError),
+                onSubmitted: (_) => _submit(),
+              ),
+            ],
+            // A rejtett, nem kötelező mezők gombjai egy sorban.
+            if ((!widget.sell && !_showAccount) || !_showFee)
+              Wrap(
+                spacing: 16,
+                children: [
+                  if (!widget.sell && !_showAccount)
+                    TextButton.icon(
+                      key: const ValueKey('lot-account-add'),
+                      onPressed: () => setState(() => _showAccount = true),
+                      style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: EdgeInsets.zero),
+                      icon: const Icon(Icons.account_balance_outlined, size: 18),
+                      label: Text(l10n.portfolioAccountAdd),
+                    ),
+                  if (!_showFee)
+                    TextButton.icon(
+                      key: const ValueKey('lot-fee-add'),
+                      onPressed: () => setState(() => _showFee = true),
+                      style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: EdgeInsets.zero),
+                      icon: const Icon(Icons.request_quote_outlined, size: 18),
+                      label: Text(l10n.portfolioFeeAdd),
+                    ),
+                ],
               ),
           ],
         ),

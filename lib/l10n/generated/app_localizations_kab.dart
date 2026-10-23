@@ -2550,6 +2550,19 @@ class AppLocalizationsKab extends AppLocalizations {
   String get portfolioNoAccount => 'War amiḍan';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Ixelṣen ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Rnu ixelṣen';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Ixelṣen: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

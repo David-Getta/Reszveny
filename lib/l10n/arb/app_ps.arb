@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "ټول حسابونه",
   "portfolioAccountNote": "یوازې د دې حساب راکړې ورکړې. نغدې او ډیویډنډونه د «ټول حسابونه» لاندې ښودل کېږي.",
   "portfolioNoAccount": "حساب نشته",
-  "allocationAccounts": "حسابونه"
+  "allocationAccounts": "حسابونه",
+  "portfolioFee": "فیس ({currency})",
+  "portfolioFeeAdd": "فیس اضافه کړئ",
+  "portfolioFeeRow": "فیس: {amount}"
 }

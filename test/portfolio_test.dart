@@ -242,6 +242,39 @@ void main() {
       expect(s.cost, 750);
     });
 
+    test('fees: added to the cost of a purchase, deducted from the proceeds of a sale', () async {
+      SharedPreferences.setMockInitialValues({});
+      final store = PortfolioStore();
+      await store.add(symbol: 'AAPL', quantity: 10, price: 100, currency: 'USD', date: DateTime(2025, 1, 10), fee: 5);
+      await store.add(
+        symbol: 'AAPL',
+        quantity: 4,
+        price: 150,
+        currency: 'USD',
+        date: DateTime(2026, 2, 1),
+        sell: true,
+        fee: 2,
+      );
+      final aapl = store.positionOf('AAPL')!;
+      // Vétel: 1005 USD 10 darabra (100,50/db); eladás: 600 − 2 = 598 a 4 × 100,50 = 402 bekerülésre.
+      expect(aapl.averageCost, closeTo(100.5, 1e-9));
+      expect(aapl.cost, closeTo(603, 1e-9));
+      expect(aapl.realizedGain, closeTo(196, 1e-9));
+      expect(aapl.sales.single.proceeds, closeTo(598, 1e-9));
+      expect(aapl.sales.single.cost, closeTo(402, 1e-9));
+      expect(store.lots.first.cost, 1005);
+      expect(store.lots.last.cost, 598);
+      // Tárolva és visszaolvasva megmarad; a negatív vagy hibás díj nem díj.
+      final again = await PortfolioStore.load();
+      expect(again.lots.map((l) => l.fee), [5, 2]);
+      expect(PortfolioLot.fromJson({'symbol': 'A', 'quantity': 1, 'price': 1, 'fee': -3})!.fee, 0);
+      expect(PortfolioLot.fromJson({'symbol': 'A', 'quantity': 1, 'price': 1, 'fee': 'x'})!.fee, 0);
+      expect(PortfolioLot.fromJson({'symbol': 'A', 'quantity': 1, 'price': 1})!.toJson().containsKey('fee'), isFalse);
+      // A felaprózás a díjat nem szorozza: 20 db × 50,25, ebből a későbbi eladás 4 darabja kikerül.
+      await store.addSplit(symbol: 'AAPL', from: 1, to: 2, date: DateTime(2025, 6, 1));
+      expect(store.positionOf('AAPL')!.cost, closeTo(16 * 50.25, 1e-9));
+    });
+
     test('purchases survive a restart, and removing one updates the position', () async {
       final store = PortfolioStore();
       final first = await store.add(symbol: 'NVDA', quantity: 2, price: 100, currency: 'USD');
@@ -968,12 +1001,22 @@ void main() {
     await tester.pumpAndSettle();
     await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '3');
     await tester.enterText(find.byKey(const ValueKey('lot-account')), 'NYESZ');
+    // A díj is egy gombbal kerül elő; hibás értékkel nem ment.
+    expect(find.byKey(const ValueKey('lot-fee')), findsNothing);
+    await tester.tap(find.byKey(const ValueKey('lot-fee-add')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('lot-fee')), '-1');
     await tester.tap(find.byKey(const ValueKey('lot-submit')));
     await tester.pumpAndSettle();
-    expect(s.portfolio.lots.single.account, 'NYESZ');
+    expect(s.portfolio.lots, isEmpty);
+    await tester.enterText(find.byKey(const ValueKey('lot-fee')), '1,99');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    expect((s.portfolio.lots.single.account, s.portfolio.lots.single.fee), ('NYESZ', 1.99));
     // Ha már van számla, a mező rögtön látszik.
     await tester.tap(find.byTooltip('Add to portfolio'));
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('lot-account')), findsOneWidget);
+    expect(find.byKey(const ValueKey('lot-fee')), findsOneWidget, reason: 'ha már volt díj, az is');
   });
 }

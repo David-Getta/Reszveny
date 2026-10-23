@@ -2555,6 +2555,19 @@ class AppLocalizationsJv extends AppLocalizations {
   String get portfolioNoAccount => 'Tanpa akun';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Biaya transaksi ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Tambahake biaya transaksi';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Biaya transaksi: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

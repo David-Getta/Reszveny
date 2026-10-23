@@ -2549,6 +2549,19 @@ class AppLocalizationsBm extends AppLocalizations {
   String get portfolioNoAccount => 'Jate si tɛ';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Sara ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Sara dɔ fara a kan';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Sara: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

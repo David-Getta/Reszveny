@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Alle kontoer",
   "portfolioAccountNote": "Bare transaksjoner på denne kontoen. Kontanter og utbytte vises under Alle kontoer.",
   "portfolioNoAccount": "Ingen konto",
-  "allocationAccounts": "Kontoer"
+  "allocationAccounts": "Kontoer",
+  "portfolioFee": "Kurtasje ({currency})",
+  "portfolioFeeAdd": "Legg til kurtasje",
+  "portfolioFeeRow": "Kurtasje: {amount}"
 }

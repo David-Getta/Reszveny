@@ -2548,6 +2548,19 @@ class AppLocalizationsPa extends AppLocalizations {
   String get portfolioNoAccount => 'ਕੋਈ ਖਾਤਾ ਨਹੀਂ';
 
   @override
+  String portfolioFee(String currency) {
+    return 'ਫੀਸ ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'ਫੀਸ ਸ਼ਾਮਲ ਕਰੋ';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'ਫੀਸ: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

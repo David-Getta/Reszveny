@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "全部帳戶",
   "portfolioAccountNote": "只顯示此帳戶的交易。現金及股息會在「全部帳戶」下顯示。",
   "portfolioNoAccount": "無帳戶",
-  "allocationAccounts": "帳戶"
+  "allocationAccounts": "帳戶",
+  "portfolioFee": "佣金 ({currency})",
+  "portfolioFeeAdd": "新增佣金",
+  "portfolioFeeRow": "佣金：{amount}"
 }

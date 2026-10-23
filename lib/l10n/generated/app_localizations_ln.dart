@@ -2562,6 +2562,19 @@ class AppLocalizationsLn extends AppLocalizations {
   String get portfolioNoAccount => 'Na compte te';
 
   @override
+  String portfolioFee(String currency) {
+    return 'Frais ($currency)';
+  }
+
+  @override
+  String get portfolioFeeAdd => 'Bakisa frais';
+
+  @override
+  String portfolioFeeRow(String amount) {
+    return 'Frais: $amount';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

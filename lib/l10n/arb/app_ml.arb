@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "എല്ലാ അക്കൗണ്ടുകളും",
   "portfolioAccountNote": "ഈ അക്കൗണ്ടിലെ ഇടപാടുകൾ മാത്രം. പണവും ഡിവിഡന്റുകളും 'എല്ലാ അക്കൗണ്ടുകളും' എന്നതിൽ കാണിക്കുന്നു.",
   "portfolioNoAccount": "അക്കൗണ്ട് ഇല്ല",
-  "allocationAccounts": "അക്കൗണ്ടുകൾ"
+  "allocationAccounts": "അക്കൗണ്ടുകൾ",
+  "portfolioFee": "ഫീസ് ({currency})",
+  "portfolioFeeAdd": "ഫീസ് ചേർക്കുക",
+  "portfolioFeeRow": "ഫീസ്: {amount}"
 }

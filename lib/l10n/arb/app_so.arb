@@ -779,5 +779,8 @@
   "portfolioAccountsAll": "Dhammaan akoonnada",
   "portfolioAccountNote": "Kaliya macaamilada akoonkan. Lacagta caddaanka ah iyo faa'iido-saamiyada waxaa lagu muujiyaa \"Dhammaan akoonnada\".",
   "portfolioNoAccount": "Akoon la'aan",
-  "allocationAccounts": "Akoonnada"
+  "allocationAccounts": "Akoonnada",
+  "portfolioFee": "Khidmad ({currency})",
+  "portfolioFeeAdd": "Ku dar khidmad",
+  "portfolioFeeRow": "Khidmad: {amount}"
 }
