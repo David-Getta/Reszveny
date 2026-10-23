@@ -119,6 +119,22 @@ String realizedCsv(List<Position> positions) {
 /// tartalmazó szöveg idézőjelek között – a beolvasás soronként találgatja az elválasztót.
 String _csvField(String s) => RegExp(r'[,;\t"\n]').hasMatch(s) ? '"${s.replaceAll('"', '""')}"' : s;
 
+/// A CSV a táblázatkezelő helyi beállításához: tizedesvesszős nyelven (pl. magyarul)
+/// pontosvesszővel elválasztva és a tört számokban tizedesvesszővel – így a helyi
+/// Excel rögtön oszlopokra bontja –, különben változatlan. A saját import mindkettőt
+/// beolvassa.
+String localCsv(String csv, {required String decimalSeparator}) {
+  if (decimalSeparator != ',') return csv;
+  final fraction = RegExp(r'^-?\d+\.\d+$');
+  String field(String f) {
+    final v = fraction.hasMatch(f) ? f.replaceFirst('.', ',') : f;
+    return RegExp(r'[;"\n]').hasMatch(v) ? '"${v.replaceAll('"', '""')}"' : v;
+  }
+
+  return [for (final line in csv.split('\n')) line.isEmpty ? line : splitCsvLine(line, ',').map(field).join(';')]
+      .join('\n');
+}
+
 /// Egy beolvasott sor (még nem került a portfólióba).
 class ImportedLot {
   const ImportedLot({
@@ -481,7 +497,8 @@ DateTime? _date(String raw, {bool monthFirst = false}) {
 /// beállításnál).
 CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD', bool monthFirst = false}) {
   final lines = [
-    for (final l in text.split(RegExp(r'\r?\n')))
+    // A fájl eleji bájtsorrend-jel (BOM, pl. a saját exportban) nem a fejléc része.
+    for (final l in text.replaceFirst('\uFEFF', '').split(RegExp(r'\r?\n')))
       if (l.trim().isNotEmpty) l.trim(),
   ];
   // A fejléc nem mindig az első sor (pl. az IBKR kimutatásban szakaszok vannak).

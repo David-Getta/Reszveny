@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -520,9 +522,10 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
     await tester.pumpAndSettle();
     final shared = <String>[];
-    final previousShare = shareText;
-    shareText = (text, {subject, origin}) async => shared.add(text);
-    addTearDown(() => shareText = previousShare);
+    final previousShare = shareFile;
+    shareFile = (bytes, {required fileName, required mimeType, subject, origin}) async =>
+        shared.add(utf8.decode(bytes).replaceFirst('\uFEFF', ''));
+    addTearDown(() => shareFile = previousShare);
     await tester.tap(find.byKey(const ValueKey('portfolio-export-dividends')));
     await tester.pumpAndSettle();
     expect(shared.single, startsWith('date,symbol,amount,currency\n'));

@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -198,6 +200,33 @@ void main() {
     ]);
     // Az osztalék a nettó összeg (a forrásadó után).
     expect(lightyear.dividends.map((d) => (d.symbol, d.amount, d.date)), [('AAPL', 2.12, DateTime(2025, 5, 15))]);
+  });
+
+  test('export for a decimal-comma spreadsheet: semicolons and decimal commas, read back the same', () {
+    final lots = [
+      PortfolioLot(
+        id: 'a',
+        symbol: 'BRK.B',
+        quantity: 2.5,
+        price: 410.25,
+        currency: 'USD',
+        date: DateTime(2025, 3, 14),
+        account: 'TBSZ, 2025',
+        fee: 1.5,
+      ),
+      PortfolioLot(id: 'b', symbol: 'OTP', quantity: 10, price: 30000, currency: 'HUF', date: DateTime(2025, 4, 2)),
+    ];
+    final csv = portfolioCsv(lots);
+    expect(localCsv(csv, decimalSeparator: '.'), csv);
+    final hu = localCsv(csv, decimalSeparator: ',');
+    expect(hu.split('\n').first, 'symbol;quantity;price;currency;date;side;account;fee');
+    // A tört számok tizedesvesszővel, a ticker pontja és a dátum marad; a vesszős számlanév nem kell idézőjel.
+    expect(hu, contains('BRK.B;2,5;410,25;USD;2025-03-14;buy;TBSZ, 2025;1,5'));
+    final back = parsePortfolioCsv('﻿$hu');
+    expect(back.lots.map((l) => (l.symbol, l.quantity, l.price, l.account, l.fee)), [
+      ('BRK.B', 2.5, 410.25, 'TBSZ, 2025', 1.5),
+      ('OTP', 10.0, 30000.0, null, 0.0),
+    ]);
   });
 
   test('broker exports: Revolut, Trading 212 and Interactive Brokers, with sales; other rows are ignored', () {
@@ -499,10 +528,15 @@ void main() {
     tester.view.physicalSize = const Size(1200, 1600);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
+    // Az export CSV-fájlként megy (UTF-8 bájtsorrend-jellel); a tartalma szövegként.
     final shared = <String>[];
-    final original = shareText;
-    shareText = (text, {subject, origin}) async => shared.add(text);
-    addTearDown(() => shareText = original);
+    final names = <String>[];
+    final original = shareFile;
+    shareFile = (bytes, {required fileName, required mimeType, subject, origin}) async {
+      names.add(fileName);
+      shared.add(utf8.decode(bytes).replaceFirst('\uFEFF', ''));
+    };
+    addTearDown(() => shareFile = original);
     final s = services();
     await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
@@ -540,6 +574,7 @@ void main() {
     expect(find.byKey(const ValueKey('portfolio-export-realized')), findsNothing);
     await tester.tap(find.byKey(const ValueKey('portfolio-export')));
     await tester.pumpAndSettle();
+    expect(names.single, 'WhatStock portfolio.csv');
     expect(shared.single, startsWith('symbol,quantity,price,currency,date,side\n'));
     expect(shared.single, contains('AAPL,10,180,USD,2025-03-14'));
 

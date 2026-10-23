@@ -1,10 +1,12 @@
 import 'dart:convert';
+import 'dart:typed_data';
 
 import 'package:file_selector/file_selector.dart';
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
 import '../../core/share/share_text.dart';
+import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import 'annual_summary.dart';
@@ -27,16 +29,17 @@ class PortfolioCsvMenu extends StatelessWidget {
       icon: const Icon(Icons.more_vert_rounded),
       onSelected: (v) async {
         if (v == 'export') {
-          await shareText(
+          await _exportCsv(
+            context,
             portfolioCsv(
               services.portfolio.lots,
               dividends: services.portfolio.dividends,
               splits: services.portfolio.splits,
             ),
-            subject: 'WhatStock portfolio.csv',
+            'WhatStock portfolio.csv',
           );
         } else if (v == 'dividends') {
-          await shareText(dividendsCsv(services.portfolio.dividends), subject: 'WhatStock dividends.csv');
+          await _exportCsv(context, dividendsCsv(services.portfolio.dividends), 'WhatStock dividends.csv');
         } else if (v == 'cash') {
           if (context.mounted) {
             final positions = services.portfolio.positions;
@@ -53,7 +56,7 @@ class PortfolioCsvMenu extends StatelessWidget {
         } else if (v == 'summary') {
           if (context.mounted) await showAnnualSummary(context);
         } else if (v == 'realized') {
-          await shareText(realizedCsv(services.portfolio.allPositions), subject: 'WhatStock realized-gains.csv');
+          await _exportCsv(context, realizedCsv(services.portfolio.allPositions), 'WhatStock realized-gains.csv');
         } else if (v == 'photo') {
           if (context.mounted) await showHoldingsImport(context);
         } else if (context.mounted) {
@@ -116,6 +119,24 @@ class PortfolioCsvMenu extends StatelessWidget {
         ),
       ],
     );
+  }
+}
+
+/// Egy export megosztása CSV-fájlként, a nyelv számformátumával (tizedesvesszős
+/// nyelven pontosvesszővel – a helyi Excel így rögtön oszlopokra bontja), UTF-8
+/// bájtsorrend-jellel, hogy az ékezetes számlanevek is jól jelenjenek meg. Ha a
+/// platform nem tud fájlt megosztani, szövegként megy.
+Future<void> _exportCsv(BuildContext context, String csv, String fileName) async {
+  final text = localCsv(csv, decimalSeparator: Fmt(Localizations.localeOf(context).toString()).decimalSeparator);
+  try {
+    await shareFile(
+      Uint8List.fromList(utf8.encode('\uFEFF$text')),
+      fileName: fileName,
+      mimeType: 'text/csv',
+      subject: fileName,
+    );
+  } catch (_) {
+    await shareText(text, subject: fileName);
   }
 }
 

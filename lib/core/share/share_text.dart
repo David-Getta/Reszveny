@@ -36,6 +36,28 @@ ImageShareHandler shareImage = (png, {required fileName, text, subject, origin})
   );
 };
 
+/// Fájl megosztása (pl. CSV) a rendszer megosztás-menüjével – weben letöltésként;
+/// tesztben lecserélhető.
+typedef FileShareHandler = Future<void> Function(
+  Uint8List bytes, {
+  required String fileName,
+  required String mimeType,
+  String? subject,
+  Rect? origin,
+});
+
+FileShareHandler shareFile = (bytes, {required fileName, required mimeType, subject, origin}) async {
+  await SharePlus.instance.share(
+    ShareParams(
+      files: [XFile.fromData(bytes, mimeType: mimeType, name: fileName)],
+      fileNameOverrides: [fileName],
+      subject: subject,
+      sharePositionOrigin: origin,
+      downloadFallbackEnabled: true,
+    ),
+  );
+};
+
 /// A megosztott elemzés szövege: cím, lényeg, az összefoglaló első bekezdése,
 /// a kilátások pontjai és a jogi figyelmeztetés – mind a felhasználó nyelvén,
 /// ahogy az elemzés készült.
