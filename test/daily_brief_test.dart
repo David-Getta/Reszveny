@@ -195,4 +195,30 @@ void main() {
     expect(user, contains('"reports_in_days":3'));
     expect(user.indexOf('"reported"'), lessThan(user.indexOf('"symbol":"MSFT"')));
   });
+
+  test('an answer keeps only the text after the last search, not the model’s “I’ll look it up” note', () async {
+    final client = MockClient(
+      (req) async => http.Response(
+        jsonEncode({
+          'stop_reason': 'end_turn',
+          'content': [
+            {'type': 'text', 'text': "I'll look up the latest news."},
+            {'type': 'server_tool_use', 'name': 'web_search'},
+            {
+              'type': 'web_search_tool_result',
+              'content': [
+                {'type': 'web_search_result', 'url': 'https://news.example/a', 'title': 'A'},
+              ],
+            },
+            {'type': 'text', 'text': 'Apple rose 3% '},
+            {'type': 'text', 'text': 'after results.'},
+          ],
+        }),
+        200,
+        headers: {'content-type': 'application/json; charset=utf-8'},
+      ),
+    );
+    final r = await askWithSources(const AppConfig(backendUrl: 'https://x.test'), client, const {'messages': []});
+    expect(r.text, 'Apple rose 3% after results.');
+  });
 }

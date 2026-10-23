@@ -196,6 +196,9 @@ void main() {
     reply = () => http.Response(jsonEncode({'stop_reason': 'pause_turn', 'content': []}), 200);
     expect((await call('POST', '/v1/analyze', token: t, body: analyzeBody())).status, 200);
     expect(store.entitlement(uid).extra, 2, reason: 'a folytatás számít, nem a félbemaradt rész');
+    reply = () => http.Response(jsonEncode({'stop_reason': 'max_tokens', 'content': []}), 200);
+    expect((await call('POST', '/v1/analyze', token: t, body: analyzeBody())).status, 200);
+    expect(store.entitlement(uid).extra, 2, reason: 'a hosszkorláton megszakadt elemzés nem kerül pénzbe');
     expect((await call('POST', '/v1/analyze', token: t, raw: '{not json')).status, 400);
     expect(store.entitlement(uid).extra, 2);
   });

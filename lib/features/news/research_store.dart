@@ -19,12 +19,17 @@ class ResearchStore {
   final int maxStored;
   final DateTime Function() _clock;
 
+  /// A mentések sora: két egyszerre futó utánanézés ne írja felül egymás eredményét
+  /// (a mentés mindig a friss tárolt állapotra épül).
+  Future<void> _writes = Future.value();
+
   /// A tárolt eredmény, ha még friss; különben [fetch], és az eredmény mentése.
   Future<ResearchResult> get(String key, Future<ResearchResult> Function() fetch) async {
-    final stored = await _load();
-    if (stored[key] case final hit?) return hit.result;
+    if ((await _load())[key] case final hit?) return hit.result;
     final r = await fetch();
-    await _save({...stored, key: (at: _clock(), result: r)});
+    final write = _writes.then((_) async => _save({...await _load(), key: (at: _clock(), result: r)}));
+    _writes = write.catchError((_) {});
+    await write;
     return r;
   }
 

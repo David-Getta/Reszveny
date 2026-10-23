@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/util/tombstones.dart';
+import '../../core/util/text.dart';
 
 /// Egy részvényhez írt saját jegyzet (befektetési napló).
 class StockNote {
@@ -80,7 +81,7 @@ class NotesStore extends ChangeNotifier {
   /// Mentés (üres szövegnél törlés).
   Future<void> set(String symbol, String text) async {
     final s = symbol.toUpperCase();
-    final t = text.length > maxLength ? text.substring(0, maxLength) : text;
+    final t = clipText(text, maxLength);
     if (t.trim().isEmpty) {
       if (_notes.remove(s) == null) return;
       _deleted[s] = DateTime.now().toUtc();

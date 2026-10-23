@@ -10,6 +10,7 @@ import '../../core/models/stock_report.dart';
 import 'analysis_options.dart';
 import 'price_stats.dart';
 import 'stock_analyst.dart';
+import '../../core/util/text.dart';
 
 /// Átfogó részvény-elemzés a Claude API-val.
 ///
@@ -327,7 +328,7 @@ class ClaudeStockAnalyst implements StockAnalyst {
   /// A jegyzet egy sorban, legfeljebb 1000 karakter, idézőjel nélkül.
   static String _oneLine(String s) {
     final t = s.replaceAll(RegExp(r'\s+'), ' ').replaceAll('"', "'").trim();
-    return t.length <= 1000 ? t : t.substring(0, 1000);
+    return clipText(t, 1000);
   }
 
   static String _num(double v) =>
@@ -743,7 +744,7 @@ Check that all eleven sections are present, in order and in the requested langua
         'Here is the data already collected (JSON):\n${const JsonEncoder.withIndent('  ').convert(cleaned)}';
   }
 
-  static String _clip(String s, int max) => s.length <= max ? s : '${s.substring(0, max - 1)}…';
+  static String _clip(String s, int max) => s.length <= max ? s : '${clipText(s, max - 1)}…';
 
   static Object? _stripNulls(Object? v) {
     if (v is Map) {
@@ -778,16 +779,27 @@ Check that all eleven sections are present, in order and in the requested langua
     final payload = extractJsonObject(text);
     if (payload == null) throw const AnalysisException(AppErrorCode.aiBadResponse);
 
-    final sections = ((payload['sections'] as List?) ?? const [])
-        .map((s) => ReportSection.fromJson((s as Map).cast<String, dynamic>()))
-        .where((s) => !s.isEmpty)
-        .toList();
+    // A modell néha eltér a sémától (szöveg a lista helyett, URL-szöveg a forrás-objektum
+    // helyett): ami értelmezhető, átjön; ami nem, kimarad – és ha így nincs mit mutatni,
+    // a hiba a javító kört indítja (nem típushiba, ami elveszne).
+    final List<ReportSection> sections;
+    final List<ReportSource> sources;
+    try {
+      sections = [
+        for (final s in (payload['sections'] is List ? payload['sections'] as List : const []))
+          if (s is Map) ReportSection.fromJson(s.cast<String, dynamic>()),
+      ].where((s) => !s.isEmpty).toList();
+      sources = [
+        for (final s in (payload['sources'] is List ? payload['sources'] as List : const []))
+          if (s is Map)
+            ReportSource.fromJson(s.cast<String, dynamic>())
+          else if (s is String && s.trim().startsWith('http'))
+            ReportSource(title: s.trim(), url: s.trim()),
+      ].where((s) => s.url.startsWith('http')).toList();
+    } on TypeError {
+      throw const AnalysisException(AppErrorCode.aiBadResponse);
+    }
     if (sections.isEmpty) throw const AnalysisException(AppErrorCode.aiBadResponse);
-
-    final sources = ((payload['sources'] as List?) ?? const [])
-        .map((s) => ReportSource.fromJson((s as Map).cast<String, dynamic>()))
-        .where((s) => s.url.startsWith('http'))
-        .toList();
 
     // A megnyitott oldalakra biztosan épít az elemzés: ezek mindig bekerülnek.
     // A keresési találatok közül csak akkor, ha a modell (szinte) semmit nem

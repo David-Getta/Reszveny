@@ -317,10 +317,15 @@ Future<({String text, List<AskSource> sources})> askWithSources(
     final j = jsonDecode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
     if (j['stop_reason'] == 'refusal') throw const AnalysisException(AppErrorCode.aiRefused);
     final content = (j['content'] as List? ?? const []).whereType<Map>().toList();
-    text = [
-      for (final b in content)
+    String textOf(Iterable<Map> blocks) => [
+      for (final b in blocks)
         if (b['type'] == 'text') b['text'] as String? ?? '',
     ].join().trim();
+    // A keresés előtti bevezető („Utánanézek a híreknek.”) nem a válasz része: az
+    // utolsó keresési / oldalbetöltési eredmény utáni szöveg számít (ha az üres, az egész).
+    final lastTool = content.lastIndexWhere((b) => '${b['type']}'.endsWith('_tool_result'));
+    final answer = textOf(content.skip(lastTool + 1));
+    text = answer.isNotEmpty ? answer : textOf(content);
     void add(Object? url, Object? title) {
       if (url is! String || !url.startsWith('http') || sources.length >= maxSources) return;
       if (sources.any((s) => s.url == url)) return;

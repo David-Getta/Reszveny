@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.262)
+# Változásjegyzék (0.2.130 → 0.2.263)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## AI-elemzés: egy tizenegyedik kódátnézés javításai
+
+- **0.2.263**: a sémától eltérő válasz (a forrás URL-szövegként, a bekezdés szövegként a lista helyett) nem okoz
+  összeomlást: ami értelmezhető, bekerül, ha semmi, a javító kör fut (eddig típushiba, javítás nélkül, a keretből
+  levonva); nyelvváltás után a régi nyelvű elemzés a memóriából sem jön vissza, és új készül; a szöveg rövidítése
+  nem vág ketté emojit (az API elutasította volna a kérést); az „új eredmények jelentek meg” jelzés a jelentés
+  napján 22:00 UTC-től (Ázsiában és Ausztráliában eddig a megjelenés előtt jelzett); két egyszerre futó
+  utánanézés nem írja felül egymás mentett eredményét; a válaszban csak a keresés utáni szöveg marad (a „Utánanézek…”
+  bevezető nem ragad hozzá); a csak hónappal megadott esemény a helyén van az időrendben; a sikertelen
+  utánanézés nem okoz kezeletlen hibát (eddig minden hálózati hiba összeomlásként ment a telemetriába); a szerver
+  a hosszkorláton megszakadt elemzést nem vonja le a keretből.
 
 ## Piaci adatok és offline gyorsítótár: egy tizedik kódátnézés javításai
 

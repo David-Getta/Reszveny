@@ -6,6 +6,7 @@ import '../../core/app_preferences.dart';
 import '../../core/desktop/system_notifier.dart';
 import 'daily_brief.dart';
 import 'watch_news.dart';
+import '../../core/util/text.dart';
 
 /// Reggeli összefoglaló: ha be van kapcsolva, reggel 7 után (amíg az app fut)
 /// magától elkészül „A nap a részvényeiddel”, és asztali gépen értesítés jelzi.
@@ -53,7 +54,7 @@ class MorningBrief {
     // A kínai/japán mondatvég után nincs szóköz.
     final m = RegExp(r'^.+?([.!?](\s|$)|[。！？])').firstMatch(line);
     final s = (m?.group(0) ?? line).trim();
-    return s.length <= 180 ? s : '${s.substring(0, 179)}…';
+    return s.length <= 180 ? s : '${clipText(s, 179)}…';
   }
 
   /// Ellenőrzés most; igaz, ha elkészült egy új összefoglaló.

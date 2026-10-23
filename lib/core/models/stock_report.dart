@@ -170,8 +170,17 @@ class Catalyst {
   final String date;
   final String event;
 
-  /// Rendezéshez: a pontos dátum, ha értelmezhető.
+  /// A pontos dátum, ha értelmezhető.
   DateTime? get parsedDate => DateTime.tryParse(date);
+
+  /// Rendezéshez: a pontos dátum, vagy csak hónapnál (`2026-11`, a prompt megengedi)
+  /// a hónap első napja – így az időrendben a helyén van.
+  DateTime? get sortDate => parsedDate ?? _month(date);
+
+  static DateTime? _month(String s) {
+    final m = RegExp(r'^(\d{4})-(\d{2})$').firstMatch(s.trim());
+    return m == null ? null : DateTime(int.parse(m[1]!), int.parse(m[2]!));
+  }
 
   Map<String, dynamic> toJson() => {'date': date, 'event': event};
 
@@ -253,7 +262,7 @@ class ReportOutlook {
     final scenarios = _list(j['scenarios'], Scenario.fromJson)..sort((a, b) => a.kind.index.compareTo(b.kind.index));
     final catalysts = _list(j['catalysts'], Catalyst.fromJson)
       ..sort((a, b) {
-        final da = a.parsedDate, db = b.parsedDate;
+        final da = a.sortDate, db = b.sortDate;
         if (da == null && db == null) return 0;
         if (da == null) return 1;
         if (db == null) return -1;
@@ -390,14 +399,18 @@ class ReportSection {
   Map<String, dynamic> toJson() => {'kind': kind.name, 'title': title, 'paragraphs': paragraphs, 'bullets': bullets};
 
   factory ReportSection.fromJson(Map<String, dynamic> j) => ReportSection(
-    kind: ReportSectionKind.parse(j['kind'] as String?),
-    title: (j['title'] as String? ?? '').trim(),
+    kind: ReportSectionKind.parse(j['kind'] is String ? j['kind'] as String : null),
+    title: (j['title'] is String ? j['title'] as String : '').trim(),
     paragraphs: _strings(j['paragraphs']),
     bullets: _strings(j['bullets']),
   );
 
-  static List<String> _strings(Object? v) =>
-      ((v as List?) ?? const []).map((e) => e.toString().trim()).where((s) => s.isNotEmpty).toList();
+  /// Szövegek listája; egyetlen szöveg (a modell néha így küldi) egyelemű lista.
+  static List<String> _strings(Object? v) => switch (v) {
+    List() => v.map((e) => e.toString().trim()).where((s) => s.isNotEmpty).toList(),
+    String() when v.trim().isNotEmpty => [v.trim()],
+    _ => const [],
+  };
 }
 
 class ReportSource {

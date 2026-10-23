@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:http/http.dart' as http;
 
 import '../../core/config/app_config.dart';
@@ -16,10 +18,15 @@ Future<ResearchResult> cachedResearch({
   required Future<ResearchResult> Function() ask,
 }) {
   final f = cache[key] ??= store.get(key, ask);
-  f.catchError((Object _) {
-    cache.remove(key);
-    return (text: '', sources: const []) as ResearchResult;
-  });
+  // Hibánál a kulcs kiesik (újrapróbálható); a hibát a hívó kapja meg, itt csak elnyeljük.
+  unawaited(
+    f.then(
+      (_) {},
+      onError: (Object _) {
+        cache.remove(key);
+      },
+    ),
+  );
   return f;
 }
 

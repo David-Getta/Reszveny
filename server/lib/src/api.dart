@@ -1532,8 +1532,9 @@ class Api {
     if (body.length > analyzeMaxBytes) return _error(413, 'too_large');
     final raw = limitRequest(body, depth: depth, tier: e.tier, model: trialRun ? trialModel : anthropicModel);
     if (raw == null) return _error(400, 'bad_request');
-    // A keret a továbbítás előtt foglalódik; sikertelen vagy félbemaradt
-    // (pause_turn) válasznál visszajár – csak a befejezett elemzés kerül pénzbe.
+    // A keret a továbbítás előtt foglalódik; sikertelen, félbemaradt (pause_turn)
+    // vagy a hosszkorláton megszakadt (max_tokens) válasznál visszajár – csak a
+    // befejezett elemzés kerül pénzbe.
     final held = quota.reserve(uid, cost: depth.cost);
     if (held == null) return _error(402, 'quota_exceeded');
     final beta = allowedBeta(r.headers['anthropic-beta']);
@@ -1549,7 +1550,7 @@ class Api {
     try {
       j = (jsonDecode(upstream.body) as Map).cast<String, dynamic>();
     } catch (_) {}
-    if (upstream.statusCode != 200 || j?['stop_reason'] == 'pause_turn') {
+    if (upstream.statusCode != 200 || j?['stop_reason'] == 'pause_turn' || j?['stop_reason'] == 'max_tokens') {
       quota.refund(uid, held);
     } else {
       final usage = (j?['usage'] as Map?)?.cast<String, dynamic>();

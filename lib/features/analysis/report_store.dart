@@ -132,12 +132,13 @@ class ReportStore extends ChangeNotifier {
 
   bool isStale(StockReport r) => clock().difference(r.generatedAt) >= staleAfter || hasNewResults(r);
 
-  /// Igaz, ha az elemzés óta megjelent a cég következő gyorsjelentése (a
-  /// jelentés napja után egy nappal már biztosan kint van).
+  /// Igaz, ha az elemzés óta megjelent a cég következő gyorsjelentése: a jelentés
+  /// napján 22:00 UTC-kor már kint van (a New York-i zárás utáni is) – a helyi éjfél
+  /// nem jó határ, mert Ázsiában és Ausztráliában az a megjelenés előtt van.
   bool hasNewResults(StockReport r) {
     final e = r.nextEarnings;
     if (e == null || !e.isAfter(r.generatedAt.subtract(const Duration(days: 1)))) return false;
-    return !clock().isBefore(DateTime(e.year, e.month, e.day).add(const Duration(days: 1)));
+    return !clock().toUtc().isBefore(DateTime.utc(e.year, e.month, e.day, 22));
   }
 
   /// Igaz, ha a mentett elemzés régi, és még nem döntött róla a felhasználó:
@@ -206,7 +207,14 @@ class ReportStore extends ChangeNotifier {
   /// korát, és felajánlja a frissítést). Más nyelven készült elemzést nem.
   Future<StockReport?> restore(String symbol, {String? language}) async {
     final cached = _reports[symbol];
-    if (cached != null) return cached;
+    if (cached != null) {
+      if (language == null || cached.language == null || cached.language == language) return cached;
+      // Nyelvváltás után a memóriában lévő, más nyelvű elemzés sem látszik (mint a lemezről).
+      _reports.remove(symbol);
+      _previous.remove(symbol);
+      notifyListeners();
+      return null;
+    }
     try {
       final prefs = await SharedPreferences.getInstance();
       final raw = prefs.getString('$_prefix$symbol');
@@ -258,7 +266,9 @@ class ReportStore extends ChangeNotifier {
   }) async {
     final symbol = details.symbol;
     if (_loading.contains(symbol)) return;
-    if (!force && _reports[symbol] != null) return;
+    // A meglévő, más nyelvű elemzés nem tartja vissza az újat.
+    final existing = _reports[symbol];
+    if (!force && existing != null && (existing.language == null || existing.language == outputLanguage)) return;
     final ent = entitlements;
     if (ent != null) {
       final q = ent.check(cost: options.cost);

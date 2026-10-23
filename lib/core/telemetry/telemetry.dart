@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 
 import '../app_preferences.dart';
+import '../util/text.dart';
 
 /// Névtelen használati statisztika és hibajelentés a saját szerverre – csak a
 /// felhasználó hozzájárulásával. Eseménynevet és darabszámot küldünk (pl.
@@ -100,7 +101,7 @@ class Telemetry {
     _errors.clear();
   }
 
-  static String _clip(String s, int max) => s.length <= max ? s : s.substring(0, max);
+  static String _clip(String s, int max) => clipText(s, max);
 
   static final _email = RegExp(r'[\w.+-]+@[\w-]+\.[\w.-]+');
   static final _secret = RegExp(r'[A-Za-z0-9_\-]{32,}');

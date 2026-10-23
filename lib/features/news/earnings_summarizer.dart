@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:http/http.dart' as http;
 
 import '../../core/config/app_config.dart';
@@ -94,10 +96,15 @@ Rules:
         ),
       ),
     );
-    f.catchError((Object _) {
-      _cache.remove(key);
-      return (text: '', sources: const []) as ResearchResult;
-    });
+    // Hibánál a kulcs kiesik (újrapróbálható); a hibát a hívó kapja meg, itt csak elnyeljük.
+    unawaited(
+      f.then(
+        (_) {},
+        onError: (Object _) {
+          _cache.remove(key);
+        },
+      ),
+    );
     return f;
   }
 

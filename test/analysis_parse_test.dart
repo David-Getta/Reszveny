@@ -122,6 +122,53 @@ void main() {
     );
   });
 
+  test('off-schema replies: plain-string sources and paragraphs are read; nothing usable is a typed error', () {
+    final r = ClaudeStockAnalyst.parseResponse(
+      'AAPL',
+      response([
+        {
+          'type': 'text',
+          'text': jsonEncode({
+            'headline': 'H',
+            'sections': [
+              {'kind': 'summary', 'title': 'S', 'paragraphs': 'one paragraph'},
+              'not a section',
+            ],
+            'sources': ['https://ir.example', 42],
+          }),
+        },
+      ]),
+    );
+    expect(r.sections.single.paragraphs, ['one paragraph']);
+    expect(r.sources.map((s) => s.url), ['https://ir.example']);
+    expect(
+      () => ClaudeStockAnalyst.parseResponse(
+        'AAPL',
+        response([
+          {
+            'type': 'text',
+            'text': jsonEncode({
+              'headline': 'H',
+              'sections': ['x', 1],
+            }),
+          },
+        ]),
+      ),
+      throwsA(isA<AnalysisException>().having((e) => e.code, 'code', AppErrorCode.aiBadResponse)),
+    );
+  });
+
+  test('upcoming events dated only by month are in their place in time', () {
+    final o = ReportOutlook.fromJson({
+      'catalysts': [
+        {'date': '2027-02-15', 'event': 'Q4 results'},
+        {'date': '2026-11', 'event': 'Investor day'},
+        {'date': 'next year', 'event': 'Vague'},
+      ],
+    });
+    expect(o.catalysts.map((c) => c.event), ['Investor day', 'Q4 results', 'Vague']);
+  });
+
   test('system prompt v2.1 demands research plan, evidence discipline, hidden factors and the outlook', () {
     const p = ClaudeStockAnalyst.systemPrompt;
     expect(p, contains('"outlook"'));

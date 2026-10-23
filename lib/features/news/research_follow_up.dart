@@ -4,6 +4,7 @@ import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import 'daily_brief.dart' show AskSource, askWithSources;
 import 'research_store.dart';
+import '../../core/util/text.dart';
 
 /// Kérdés egy AI-kutatás (hírmagyarázat, gyorsjelentés-összefoglaló, „mi ez a
 /// papír?”) szövegéről: a modell a megkapott szövegből válaszol, és ha kell,
@@ -69,7 +70,7 @@ Rules:
       _client,
       requestBody(
         note: note,
-        question: q.length > maxQuestionChars ? q.substring(0, maxQuestionChars) : q,
+        question: clipText(q, maxQuestionChars),
         language: language,
         subject: subject,
         model: config.anthropicModel,
