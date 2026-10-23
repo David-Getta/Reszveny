@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.213)
+# Változásjegyzék (0.2.130 → 0.2.214)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -32,6 +32,9 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   évi osztalékkal; ha a cég nem fizet, ezt egy mondat mondja ki (az összehasonlításban is új sor).
 
 ## Kockázat
+
+- **Mi mozgatta ma a portfóliót**: az összérték-kártyán a két legnagyobb mai változás pozíciónként, a
+  megjelenítési pénznemben („Ma leginkább mozgott: NVDA +39 284 HUF · OTP +18 600 HUF”).
 
 - A **lezárt pozícióknál „az eladás óta”**: az ár változása az utolsó eladás óta (megérte-e eladni).
 - **Követő stop minden pozícióra** egy lépésben a portfólió menüjéből (−5 … −25%, a meglévők maradnak).

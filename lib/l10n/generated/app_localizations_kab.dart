@@ -2697,6 +2697,9 @@ class AppLocalizationsKab extends AppLocalizations {
   String get watchSortSince => 'S ubeddel seg wasmi yettwarna';
 
   @override
+  String get portfolioTodayMovers => 'Wid ibedlen akk ass-a:';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

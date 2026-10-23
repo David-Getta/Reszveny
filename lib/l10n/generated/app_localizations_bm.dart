@@ -2697,6 +2697,9 @@ class AppLocalizationsBm extends AppLocalizations {
   String get watchSortSince => 'Yɛlɛma kɔ kabini a farala';
 
   @override
+  String get portfolioTodayMovers => 'Minnu yɛlɛmana kosɛbɛ bi:';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

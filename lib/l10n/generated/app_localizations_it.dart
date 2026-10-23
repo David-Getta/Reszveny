@@ -2705,6 +2705,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get watchSortSince => 'Per variazione dall’aggiunta';
 
   @override
+  String get portfolioTodayMovers => 'Maggiori variazioni oggi:';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

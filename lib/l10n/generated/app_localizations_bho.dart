@@ -2693,6 +2693,9 @@ class AppLocalizationsBho extends AppLocalizations {
   String get watchSortSince => 'जोड़ला के बाद के बदलाव से';
 
   @override
+  String get portfolioTodayMovers => 'आज सबसे ज्यादा हिलल:';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

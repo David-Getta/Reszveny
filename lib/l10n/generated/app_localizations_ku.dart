@@ -2702,6 +2702,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String get watchSortSince => 'Li gorî guherînê ji dema zêdekirinê';
 
   @override
+  String get portfolioTodayMovers => 'Îro herî zêde guherîn:';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

@@ -2768,6 +2768,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get watchSortSince => 'Podľa zmeny od pridania';
 
   @override
+  String get portfolioTodayMovers => 'Dnes sa najviac pohli:';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

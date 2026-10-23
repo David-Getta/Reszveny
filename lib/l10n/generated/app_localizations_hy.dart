@@ -2708,6 +2708,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get watchSortSince => 'Ըստ փոփոխության՝ ավելացնելուց ի վեր';
 
   @override
+  String get portfolioTodayMovers => 'Այսօր ամենաշատը փոխվել են՝';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

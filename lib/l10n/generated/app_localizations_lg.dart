@@ -2715,6 +2715,9 @@ class AppLocalizationsLg extends AppLocalizations {
       'Okusinziira ku nkyukakyuka okuva lwe yagattibwako';
 
   @override
+  String get portfolioTodayMovers => 'Ebisinze okukyuka leero:';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

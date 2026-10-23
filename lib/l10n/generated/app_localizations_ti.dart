@@ -2660,6 +2660,9 @@ class AppLocalizationsTi extends AppLocalizations {
   String get watchSortSince => 'ብለውጢ ካብ ዝተወሰኸ ጀሚሩ';
 
   @override
+  String get portfolioTodayMovers => 'ሎሚ ዝበዝሐ ዝተንቀሳቐሱ፦';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

@@ -2692,6 +2692,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get watchSortSince => 'Theo thay đổi kể từ khi thêm';
 
   @override
+  String get portfolioTodayMovers => 'Biến động mạnh nhất hôm nay:';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

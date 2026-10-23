@@ -2691,6 +2691,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get watchSortSince => 'לפי שינוי מאז ההוספה';
 
   @override
+  String get portfolioTodayMovers => 'הכי זזו היום:';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

@@ -2720,6 +2720,9 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get watchSortSince => 'Babaen ti panagbaliw manipud idi inayon';
 
   @override
+  String get portfolioTodayMovers => 'Kaaduan ti gimmaraw ita nga aldaw:';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

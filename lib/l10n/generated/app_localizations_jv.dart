@@ -2703,6 +2703,9 @@ class AppLocalizationsJv extends AppLocalizations {
   String get watchSortSince => 'Miturut owah-owahan wiwit ditambahake';
 
   @override
+  String get portfolioTodayMovers => 'Paling obah dina iki:';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

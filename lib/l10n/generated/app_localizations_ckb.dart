@@ -2701,6 +2701,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get watchSortSince => 'بەپێی گۆڕان لە کاتی زیادکردنەوە';
 
   @override
+  String get portfolioTodayMovers => 'زۆرترین جووڵە ئەمڕۆ:';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

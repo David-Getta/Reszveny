@@ -814,5 +814,6 @@
   "portfolioYtdReturn": "Avkastning i år",
   "glossTwrYtd": "Tidsvektet avkastning siden årets start (eller siden ditt første kjøp, hvis det var i år): hver dag teller endringen i aksjene du eide den dagen, og dagene kjedes sammen – penger du setter inn eller tar ut, er ikke avkastning, så den kan sammenlignes med en indeks. Under: den valgte indeksen i samme periode.",
   "alertDistance": "Nå {price} · {percent} igjen",
-  "watchSortSince": "Etter endring siden lagt til"
+  "watchSortSince": "Etter endring siden lagt til",
+  "portfolioTodayMovers": "Beveget seg mest i dag:"
 }

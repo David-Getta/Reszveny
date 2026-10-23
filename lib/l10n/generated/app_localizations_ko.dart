@@ -2628,6 +2628,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get watchSortSince => '추가 후 등락률순';
 
   @override
+  String get portfolioTodayMovers => '오늘 가장 많이 움직인 종목:';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

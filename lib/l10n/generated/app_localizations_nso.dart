@@ -2718,6 +2718,9 @@ class AppLocalizationsNso extends AppLocalizations {
   String get watchSortSince => 'Ka phetogo go tloga ge e okeditšwe';
 
   @override
+  String get portfolioTodayMovers => 'Tše di šuthilego kudu lehono:';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

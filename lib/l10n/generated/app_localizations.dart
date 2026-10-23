@@ -4627,6 +4627,12 @@ abstract class AppLocalizations {
   /// **'By change since added'**
   String get watchSortSince;
 
+  /// Portfolio total card: label before the two positions that changed the portfolio value most today, e.g. "Moved most today: NVDA +82.00 USD · OTP −11.00 USD".
+  ///
+  /// In en, this message translates to:
+  /// **'Moved most today:'**
+  String get portfolioTodayMovers;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

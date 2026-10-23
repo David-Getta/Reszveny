@@ -2678,6 +2678,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get watchSortSince => 'តាមការប្រែប្រួលចាប់តាំងពីបន្ថែម';
 
   @override
+  String get portfolioTodayMovers => 'ប្រែប្រួលខ្លាំងជាងគេថ្ងៃនេះ៖';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

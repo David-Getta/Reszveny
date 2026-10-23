@@ -2710,6 +2710,9 @@ class AppLocalizationsMl extends AppLocalizations {
   String get watchSortSince => 'ചേർത്തതുമുതലുള്ള മാറ്റം പ്രകാരം';
 
   @override
+  String get portfolioTodayMovers => 'ഇന്ന് ഏറ്റവും കൂടുതൽ ചാഞ്ചാടിയവ:';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

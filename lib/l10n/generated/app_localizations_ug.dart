@@ -2702,6 +2702,9 @@ class AppLocalizationsUg extends AppLocalizations {
   String get watchSortSince => 'قوشقاندىن بۇيانقى ئۆزگىرىش بويىچە';
 
   @override
+  String get portfolioTodayMovers => 'بۈگۈن ئەڭ كۆپ ئۆزگەرگەنلەر:';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

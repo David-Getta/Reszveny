@@ -2711,6 +2711,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get watchSortSince => 'Ngoshintsho kusukela yengezwa';
 
   @override
+  String get portfolioTodayMovers => 'Ezinyakaze kakhulu namuhla:';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

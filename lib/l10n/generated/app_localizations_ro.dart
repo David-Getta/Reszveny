@@ -2739,6 +2739,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get watchSortSince => 'După variație de la adăugare';
 
   @override
+  String get portfolioTodayMovers => 'Cele mai mari mișcări azi:';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

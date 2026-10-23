@@ -2697,6 +2697,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String get watchSortSince => 'Nípa àyípadà láti ìgbà tí a ti fi kún un';
 
   @override
+  String get portfolioTodayMovers => 'Àwọn tó yí padà jù lónìí:';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

@@ -2696,6 +2696,9 @@ class AppLocalizationsTt extends AppLocalizations {
   String get watchSortSince => 'Өстәлгәннән бирле үзгәреш буенча';
 
   @override
+  String get portfolioTodayMovers => 'Бүген иң күп үзгәргәннәр:';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

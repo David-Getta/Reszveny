@@ -2705,6 +2705,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get watchSortSince => 'Op verandering sinds toevoeging';
 
   @override
+  String get portfolioTodayMovers => 'Vandaag het meest bewogen:';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

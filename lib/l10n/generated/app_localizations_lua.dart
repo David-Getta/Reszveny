@@ -2710,6 +2710,9 @@ class AppLocalizationsLua extends AppLocalizations {
       'Bilondeshile dishintuluka kubangila pawakayibueja';
 
   @override
+  String get portfolioTodayMovers => 'Bidi bishintuluke bikole lelu:';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

@@ -2770,6 +2770,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get watchSortSince => 'По изменению с момента добавления';
 
   @override
+  String get portfolioTodayMovers => 'Больше всего изменились сегодня:';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

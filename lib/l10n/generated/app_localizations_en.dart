@@ -2696,6 +2696,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get watchSortSince => 'By change since added';
 
   @override
+  String get portfolioTodayMovers => 'Moved most today:';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

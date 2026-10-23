@@ -814,5 +814,6 @@
   "portfolioYtdReturn": "Imbal hasil taun iki",
   "glossTwrYtd": "Imbal hasil ditimbang miturut wektu wiwit awal taun (utawa wiwit tukon pisanan sampeyan, yen kuwi taun iki): saben dina ngetung owah-owahan saham sing sampeyan duweni ing dina kuwi, lan dina-dinane dirangkai – dhuwit sing sampeyan lebokake utawa jupuk dudu imbal hasil, mula bisa dibandhingake karo indeks. Ing ngisore: indeks sing dipilih ing periode sing padha.",
   "alertDistance": "Saiki {price} · kurang {percent}",
-  "watchSortSince": "Miturut owah-owahan wiwit ditambahake"
+  "watchSortSince": "Miturut owah-owahan wiwit ditambahake",
+  "portfolioTodayMovers": "Paling obah dina iki:"
 }

@@ -2770,6 +2770,9 @@ class AppLocalizationsSl extends AppLocalizations {
   String get watchSortSince => 'Po spremembi od dodajanja';
 
   @override
+  String get portfolioTodayMovers => 'Danes so se najbolj premaknile:';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

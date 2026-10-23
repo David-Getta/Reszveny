@@ -2697,6 +2697,9 @@ class AppLocalizationsDa extends AppLocalizations {
   String get watchSortSince => 'Efter ændring siden tilføjelse';
 
   @override
+  String get portfolioTodayMovers => 'Bevægede sig mest i dag:';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

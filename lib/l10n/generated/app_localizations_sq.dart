@@ -2705,6 +2705,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get watchSortSince => 'Sipas ndryshimit që nga shtimi';
 
   @override
+  String get portfolioTodayMovers => 'Lëvizën më shumë sot:';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

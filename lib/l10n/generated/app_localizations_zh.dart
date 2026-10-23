@@ -2582,6 +2582,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get watchSortSince => '按添加以来涨跌幅';
 
   @override
+  String get portfolioTodayMovers => '今日变动最大：';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5531,6 +5534,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get watchSortSince => '按加入以來升跌幅';
+
+  @override
+  String get portfolioTodayMovers => '今日變動最大：';
 
   @override
   String get portfolioGoalSet => '設定目標';

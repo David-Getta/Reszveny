@@ -2719,6 +2719,9 @@ class AppLocalizationsMg extends AppLocalizations {
   String get watchSortSince => 'Araka ny fiovana hatramin\'ny nanampiana azy';
 
   @override
+  String get portfolioTodayMovers => 'Nihetsika indrindra androany:';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

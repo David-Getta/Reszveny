@@ -2763,6 +2763,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get watchSortSince => 'Podle změny od přidání';
 
   @override
+  String get portfolioTodayMovers => 'Dnes se nejvíc pohnuly:';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

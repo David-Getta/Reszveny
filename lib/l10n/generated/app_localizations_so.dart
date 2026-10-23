@@ -2708,6 +2708,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String get watchSortSince => 'Isbeddel ahaan tan iyo markii lagu daray';
 
   @override
+  String get portfolioTodayMovers => 'Kuwa ugu isbeddelka badan maanta:';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

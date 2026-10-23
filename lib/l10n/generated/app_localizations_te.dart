@@ -2705,6 +2705,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get watchSortSince => 'జోడించినప్పటి నుండి మార్పు ప్రకారం';
 
   @override
+  String get portfolioTodayMovers => 'ఈ రోజు ఎక్కువగా కదిలినవి:';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

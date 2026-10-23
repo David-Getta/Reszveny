@@ -814,5 +814,6 @@
   "portfolioYtdReturn": "Ienesīgums šogad",
   "glossTwrYtd": "Laikā svērts ienesīgums kopš gada sākuma (vai kopš jūsu pirmā pirkuma, ja tas bija šogad): katra diena ņem vērā to akciju izmaiņas, kas jums tajā dienā piederēja, un dienas tiek savirknētas kopā – nauda, ko iemaksājat vai izņemat, nav ienesīgums, tāpēc to var salīdzināt ar indeksu. Zem tā: izvēlētais indekss tajā pašā periodā.",
   "alertDistance": "Tagad {price} · vēl {percent}",
-  "watchSortSince": "Pēc izmaiņām kopš pievienošanas"
+  "watchSortSince": "Pēc izmaiņām kopš pievienošanas",
+  "portfolioTodayMovers": "Šodien visvairāk mainījās:"
 }

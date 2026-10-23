@@ -2710,6 +2710,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get watchSortSince => 'Κατά μεταβολή από την προσθήκη';
 
   @override
+  String get portfolioTodayMovers => 'Μεγαλύτερη κίνηση σήμερα:';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

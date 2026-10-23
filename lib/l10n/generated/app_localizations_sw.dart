@@ -2701,6 +2701,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get watchSortSince => 'Kwa badiliko tangu ilipoongezwa';
 
   @override
+  String get portfolioTodayMovers => 'Zilizosogea zaidi leo:';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

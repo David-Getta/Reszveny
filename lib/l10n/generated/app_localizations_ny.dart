@@ -2709,6 +2709,9 @@ class AppLocalizationsNy extends AppLocalizations {
       'Potsatira kusintha kuyambira pamene inawonjezedwa';
 
   @override
+  String get portfolioTodayMovers => 'Zasintha kwambiri lero:';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

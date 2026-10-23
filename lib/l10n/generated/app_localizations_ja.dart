@@ -2618,6 +2618,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get watchSortSince => '追加以降の騰落率順';
 
   @override
+  String get portfolioTodayMovers => '本日の変動上位：';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

@@ -2695,6 +2695,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get watchSortSince => 'بر اساس تغییر از زمان افزودن';
 
   @override
+  String get portfolioTodayMovers => 'بیشترین تغییر امروز:';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

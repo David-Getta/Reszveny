@@ -2689,6 +2689,9 @@ class AppLocalizationsSd extends AppLocalizations {
   String get watchSortSince => 'شامل ڪرڻ کان پوءِ تبديلي مطابق';
 
   @override
+  String get portfolioTodayMovers => 'اڄ سڀ کان وڌيڪ لاهه چاڙهه:';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

@@ -2703,6 +2703,9 @@ class AppLocalizationsAf extends AppLocalizations {
   String get watchSortSince => 'Volgens verandering sedert byvoeging';
 
   @override
+  String get portfolioTodayMovers => 'Het vandag die meeste beweeg:';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

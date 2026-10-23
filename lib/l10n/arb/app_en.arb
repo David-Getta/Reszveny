@@ -2307,6 +2307,10 @@
   "@watchSortSince": {
     "description": "Favorites sort option: by the price change since the stock was added to the favorites, largest gain first."
   },
+  "portfolioTodayMovers": "Moved most today:",
+  "@portfolioTodayMovers": {
+    "description": "Portfolio total card: label before the two positions that changed the portfolio value most today, e.g. \"Moved most today: NVDA +82.00 USD · OTP −11.00 USD\"."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

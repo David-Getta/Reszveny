@@ -2697,6 +2697,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get watchSortSince => 'যোগ করার পর থেকে পরিবর্তন অনুযায়ী';
 
   @override
+  String get portfolioTodayMovers => 'আজ সবচেয়ে বেশি নড়েছে:';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

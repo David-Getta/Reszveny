@@ -2667,6 +2667,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get watchSortSince => 'ตามการเปลี่ยนแปลงตั้งแต่เพิ่ม';
 
   @override
+  String get portfolioTodayMovers => 'เปลี่ยนแปลงมากที่สุดวันนี้:';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

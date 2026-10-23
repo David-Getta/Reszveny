@@ -814,5 +814,6 @@
   "portfolioYtdReturn": "今年のリターン",
   "glossTwrYtd": "年初来（今年初めて購入した場合はその日から）の時間加重リターン。毎日、その日に保有していた株の値動きを計算し、それを日ごとにつなぎ合わせます。入出金はリターンに含まれないため、指数と比較できます。下には、同じ期間の選択した指数を表示します。",
   "alertDistance": "現在 {price} · あと {percent}",
-  "watchSortSince": "追加以降の騰落率順"
+  "watchSortSince": "追加以降の騰落率順",
+  "portfolioTodayMovers": "本日の変動上位："
 }

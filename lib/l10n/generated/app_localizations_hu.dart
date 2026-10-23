@@ -2704,6 +2704,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get watchSortSince => 'Mióta figyeled szerint';
 
   @override
+  String get portfolioTodayMovers => 'Ma leginkább mozgott:';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

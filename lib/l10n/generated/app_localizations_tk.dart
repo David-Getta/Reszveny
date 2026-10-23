@@ -2701,6 +2701,9 @@ class AppLocalizationsTk extends AppLocalizations {
   String get watchSortSince => 'Goşulandan bäri üýtgeýiş boýunça';
 
   @override
+  String get portfolioTodayMovers => 'Şu gün iň köp üýtgänler:';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

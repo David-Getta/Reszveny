@@ -2709,6 +2709,9 @@ class AppLocalizationsKg extends AppLocalizations {
   String get watchSortSince => 'Na nsoba banda yo yikamaka';
 
   @override
+  String get portfolioTodayMovers => 'Yina me kukidika mingi unu:';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

@@ -390,6 +390,27 @@ class _PortfolioBody extends StatelessWidget {
                               ),
                           ],
                         ),
+                        // Mi mozgatta ma a portfóliót: a két legnagyobb mai változás pozíciónként.
+                        if (topDayMovers(s) case final movers when movers.isNotEmpty) ...[
+                          const SizedBox(height: 10),
+                          Text.rich(
+                            key: const ValueKey('portfolio-movers'),
+                            TextSpan(
+                              text: '${l10n.portfolioTodayMovers} ',
+                              children: [
+                                for (final (i, m) in movers.indexed) ...[
+                                  if (i > 0) const TextSpan(text: ' · '),
+                                  TextSpan(text: '${m.symbol} '),
+                                  TextSpan(
+                                    text: fmt.money(m.amount, ccy, withSign: true),
+                                    style: TextStyle(color: gainColor(p, m.amount), fontWeight: FontWeight.w600),
+                                  ),
+                                ],
+                              ],
+                            ),
+                            style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                          ),
+                        ],
                         if (s.annualDividend > 0) ...[
                           const SizedBox(height: 10),
                           Text(l10n.portfolioDividendNote, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),

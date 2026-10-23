@@ -2711,6 +2711,9 @@ class AppLocalizationsLn extends AppLocalizations {
   String get watchSortSince => 'Na bobongwani banda ebakisamaki';
 
   @override
+  String get portfolioTodayMovers => 'Oyo eningani mingi lɛlɔ:';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

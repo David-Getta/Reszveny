@@ -302,6 +302,18 @@ class PortfolioSnapshot {
 /// venni (+) vagy eladni (−) a portfólió pénznemében.
 typedef RebalanceStep = ({String symbol, double current, double target, double amount});
 
+/// A mai változás legnagyobb okozói: pozíciónként a mai változás a megjelenítési
+/// pénznemben, abszolút érték szerint csökkenő sorrendben, legfeljebb [n] darab.
+/// Üres, ha kevesebb mint két pozíció mozdult (egynél nincs mit kiemelni).
+List<({String symbol, double amount})> topDayMovers(PortfolioSnapshot s, {int n = 2}) {
+  final moved = [
+    for (final r in s.rows)
+      if ((r.dayGain, r.rate) case (final g?, final rate?) when r.inTotal && g != 0)
+        (symbol: r.position.symbol, amount: g * rate),
+  ]..sort((a, b) => b.amount.abs().compareTo(a.amount.abs()));
+  return moved.length < 2 ? const [] : moved.take(n).toList();
+}
+
 /// Újrasúlyozási terv a célarányokhoz (csak a céllal rendelkező pozíciók).
 /// A célt a teljes portfólió értékéhez mérjük – a készpénzzel együtt, így a
 /// vételekre a készpénz is „fedezet”.

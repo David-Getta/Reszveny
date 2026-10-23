@@ -2700,6 +2700,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get watchSortSince => 'Efter förändring sedan tillägg';
 
   @override
+  String get portfolioTodayMovers => 'Rörde sig mest i dag:';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

@@ -2744,6 +2744,9 @@ class AppLocalizationsBs extends AppLocalizations {
   String get watchSortSince => 'Po promjeni od dodavanja';
 
   @override
+  String get portfolioTodayMovers => 'Najveći pomaci danas:';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

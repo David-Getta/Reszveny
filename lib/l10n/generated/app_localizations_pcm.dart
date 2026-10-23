@@ -2698,6 +2698,9 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get watchSortSince => 'By change since you add am';
 
   @override
+  String get portfolioTodayMovers => 'Wetin move pass today:';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

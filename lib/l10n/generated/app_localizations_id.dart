@@ -2696,6 +2696,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get watchSortSince => 'Menurut perubahan sejak ditambahkan';
 
   @override
+  String get portfolioTodayMovers => 'Paling bergerak hari ini:';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

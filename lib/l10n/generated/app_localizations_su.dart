@@ -2703,6 +2703,9 @@ class AppLocalizationsSu extends AppLocalizations {
   String get watchSortSince => 'Dumasar parobahan ti saprak ditambahkeun';
 
   @override
+  String get portfolioTodayMovers => 'Paling gerak poé ieu:';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

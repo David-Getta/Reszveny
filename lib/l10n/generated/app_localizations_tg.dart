@@ -2701,6 +2701,9 @@ class AppLocalizationsTg extends AppLocalizations {
   String get watchSortSince => 'Аз рӯи тағйирот аз замони илова';
 
   @override
+  String get portfolioTodayMovers => 'Имрӯз бештар тағйир ёфтанд:';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

@@ -2700,6 +2700,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get watchSortSince => 'По промяна от добавянето';
 
   @override
+  String get portfolioTodayMovers => 'Най-голямо движение днес:';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

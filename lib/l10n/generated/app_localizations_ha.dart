@@ -2706,6 +2706,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String get watchSortSince => 'Ta canji tun da aka ƙara shi';
 
   @override
+  String get portfolioTodayMovers => 'Mafi motsi yau:';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

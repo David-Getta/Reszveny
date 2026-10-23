@@ -2699,6 +2699,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get watchSortSince => 'Нэмснээс хойших өөрчлөлтөөр';
 
   @override
+  String get portfolioTodayMovers => 'Өнөөдөр хамгийн их хөдөлсөн:';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

@@ -2707,6 +2707,9 @@ class AppLocalizationsSn extends AppLocalizations {
   String get watchSortSince => 'Nema shanduko kubvira pawakaiwedzera';
 
   @override
+  String get portfolioTodayMovers => 'Zvachinja zvakanyanya nhasi:';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

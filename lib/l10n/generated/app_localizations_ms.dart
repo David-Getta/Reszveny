@@ -2703,6 +2703,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get watchSortSince => 'Mengikut perubahan sejak ditambah';
 
   @override
+  String get portfolioTodayMovers => 'Paling banyak bergerak hari ini:';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

@@ -2701,6 +2701,9 @@ class AppLocalizationsKy extends AppLocalizations {
   String get watchSortSince => 'Кошулгандан берки өзгөрүү боюнча';
 
   @override
+  String get portfolioTodayMovers => 'Бүгүн эң көп өзгөргөндөр:';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

@@ -2698,6 +2698,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get watchSortSince => 'شامل کرنے کے بعد سے تبدیلی کے مطابق';
 
   @override
+  String get portfolioTodayMovers => 'آج سب سے زیادہ ہلنے والے:';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

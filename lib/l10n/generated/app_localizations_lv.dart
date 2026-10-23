@@ -2741,6 +2741,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get watchSortSince => 'Pēc izmaiņām kopš pievienošanas';
 
   @override
+  String get portfolioTodayMovers => 'Šodien visvairāk mainījās:';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

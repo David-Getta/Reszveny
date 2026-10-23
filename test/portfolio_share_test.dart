@@ -38,6 +38,28 @@ void main() {
     expect(top.first.weight, closeTo(60 / 210, 1e-9));
   });
 
+  test('moved most today: the largest changes by amount in the display currency; nothing with one mover', () {
+    final store = PortfolioStore(
+      lots: [
+        for (final (sym, q) in [('A', 10.0), ('B', 1.0), ('C', 100.0), ('D', 5.0)])
+          PortfolioLot(id: sym, symbol: sym, quantity: q, price: 10, currency: sym == 'C' ? 'EUR' : 'USD'),
+      ],
+    );
+    PortfolioSnapshot snap(Map<String, double> change) => PortfolioSnapshot.compute(
+      store.positions,
+      quotes: {
+        for (final sym in ['A', 'B', 'C', 'D']) sym: StockQuote(symbol: sym, price: 10, change: change[sym] ?? 0),
+      },
+      rate: (from, _) => from == 'EUR' ? 2 : 1,
+      currency: 'USD',
+    );
+    // A: +10, B: −30, C: −0,1 × 100 × 2 = −20, D: nem mozdult.
+    final m = topDayMovers(snap({'A': 1, 'B': -30, 'C': -0.1}));
+    expect(m.map((e) => e.symbol), ['B', 'C']);
+    expect(m.last.amount, closeTo(-20, 1e-9));
+    expect(topDayMovers(snap({'A': 1})), isEmpty);
+  });
+
   testWidgets('share the performance from the portfolio page: image and text, no amounts', (tester) async {
     tester.view.physicalSize = const Size(1200, 2400);
     tester.view.devicePixelRatio = 1;
