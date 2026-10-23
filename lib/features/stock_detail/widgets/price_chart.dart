@@ -358,7 +358,10 @@ class _LegendItem extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Icon(icon, size: 20, color: color),
-        Text(label, style: theme.textTheme.bodySmall?.copyWith(color: AppPalette.of(context).muted)),
+        // Nagy betűméretnél és hosszú fordításnál tördelődik.
+        Flexible(
+          child: Text(label, style: theme.textTheme.bodySmall?.copyWith(color: AppPalette.of(context).muted)),
+        ),
       ],
     );
   }

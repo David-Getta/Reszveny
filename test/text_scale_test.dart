@@ -17,7 +17,7 @@ import 'app_widget_test.dart' show services;
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
-  for (final lang in ['en', 'hu']) {
+  for (final lang in ['en', 'hu', 'de', 'ar', 'fi', 'ru', 'ja']) {
     testWidgets('large text (200%) on a small phone ($lang): no overflow on the main pages', (tester) async {
       tester.view.physicalSize = const Size(360, 780);
       tester.view.devicePixelRatio = 1;

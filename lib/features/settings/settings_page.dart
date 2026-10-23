@@ -27,6 +27,7 @@ import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
 import '../../widgets/centered_scroll.dart';
+import '../../widgets/fit_row.dart';
 
 /// Fiók törlése megerősítéssel; a készüléken tárolt adatok törlése is választható.
 Future<void> _confirmDeleteAccount(BuildContext context) async {
@@ -853,19 +854,26 @@ class _PortfolioMoveTile extends StatelessWidget {
       listenable: prefs,
       builder: (context, _) => ListTile(
         leading: const Icon(Icons.pie_chart_outline_rounded),
-        title: Text(l10n.portfolioMoveAlertTitle),
-        subtitle: Text(l10n.portfolioMoveAlertSubtitle),
-        trailing: DropdownButton<double>(
-          key: const ValueKey('portfolio-move-alert'),
-          value: prefs.portfolioMoveAlert,
-          underline: const SizedBox.shrink(),
-          items: [
-            DropdownMenuItem(value: 0, child: Text(l10n.portfolioMoveAlertOff)),
-            for (final v in AppPreferences.portfolioMoveSteps)
-              DropdownMenuItem(value: v, child: Text('±${fmt.percent(v, decimals: 0)}')),
-          ],
-          onChanged: (v) => prefs.setPortfolioMoveAlert(v ?? 0),
+        // A választó a cím sorában; nagy betűméretnél a cím alá kerül.
+        title: FitRow(
+          lead: Text(l10n.portfolioMoveAlertTitle),
+          // A saját szélessége, de ha az sem fér el (nagy betű, hosszú fordítás), a felirat rövidül.
+          trailing: IntrinsicWidth(
+            child: DropdownButton<double>(
+              key: const ValueKey('portfolio-move-alert'),
+              value: prefs.portfolioMoveAlert,
+              isExpanded: true,
+              underline: const SizedBox.shrink(),
+              items: [
+                DropdownMenuItem(value: 0, child: Text(l10n.portfolioMoveAlertOff, overflow: TextOverflow.ellipsis)),
+                for (final v in AppPreferences.portfolioMoveSteps)
+                  DropdownMenuItem(value: v, child: Text('±${fmt.percent(v, decimals: 0)}')),
+              ],
+              onChanged: (v) => prefs.setPortfolioMoveAlert(v ?? 0),
+            ),
+          ),
         ),
+        subtitle: Text(l10n.portfolioMoveAlertSubtitle),
       ),
     );
   }
