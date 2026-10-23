@@ -306,10 +306,14 @@ class _ImportDialogState extends State<_ImportDialog> {
         ),
         FilledButton(
           key: const ValueKey('portfolio-import-ok'),
-          // Amerikai nyelvi beállításnál a kétértelmű perjeles dátum hónappal kezdődik.
-          onPressed: () =>
-              Navigator.of(context)
-                  .pop(parsePortfolioCsv(_text.text, monthFirst: Localizations.localeOf(context).countryCode == 'US')),
+          // Amerikai rendszer-beállításnál (az app nyelve ország nélküli) a kétértelmű perjeles
+          // dátum hónappal kezdődik.
+          onPressed: () => Navigator.of(context).pop(
+            parsePortfolioCsv(
+              _text.text,
+              monthFirst: WidgetsBinding.instance.platformDispatcher.locale.countryCode == 'US',
+            ),
+          ),
           child: Text(l10n.portfolioImportButton),
         ),
       ],

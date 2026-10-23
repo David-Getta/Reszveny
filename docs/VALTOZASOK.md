@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.218)
+# Változásjegyzék (0.2.130 → 0.2.219)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -116,6 +116,11 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   ékezetes számlanevek is jók legyenek; weben letöltésként. A saját import mindkét formát visszaolvassa.
 - **Az import visszavonható**: a végén megjelenő sávon egy koppintással mindaz törlődik, amit az import felvett
   (tranzakciók, osztalékok, felaprózások) – egy rossz fájl után nem kell tételenként takarítani.
+- **Import-javítások** (kódátnézés): a Fidelity műveletében az értékpapír neve nem számít műveletnek (az „ISHARES
+  RUSSELL 2000” vétel, nem eladás; egy osztalék-ETF vétele nem osztalék); a Robinhood kétsoros leírása nem vágja
+  ketté a sort; az amerikai export „1,000” darabja ezer; a Fidelity „Fees” oszlopa is díj; ugyanaz az ISIN dollárban
+  és euróban két tőzsdei tickert kap (euróban a német/holland/francia… listát); az amerikai dátum-sorrend a rendszer
+  országából.
 - **Scalable Capital** (pontosvesszős, ISIN-es export: a megtakarítási terv vételként, a „Distribution” osztalékként,
   a visszavont megbízás kimarad) és **Lightyear** („CCY”, „Net Amt.” – az osztalék a forrásadó utáni összeg).
 

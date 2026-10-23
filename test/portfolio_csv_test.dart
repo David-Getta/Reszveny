@@ -54,6 +54,7 @@ void main() {
       '"Transactions  for account Individual ...123 as of 10/23/2025 04:10:00 PM ET"\n'
       '"Date","Action","Symbol","Description","Quantity","Price","Fees & Comm","Amount"\n'
       '"03/04/2025","Buy","AAPL","APPLE INC","10","\$182.50","\$0.05","-\$1825.05"\n'
+      '"03/05/2025","Buy","MSFT","MICROSOFT CORP","1,000","\$10.50","","-\$10,500.00"\n'
       '"05/15/2025 as of 05/14/2025","Qualified Dividend","AAPL","APPLE INC","","","","\$2.50"\n'
       '"05/15/2025","NRA Tax Adj","AAPL","APPLE INC","","","","-\$0.38"\n'
       '"06/02/2025","Reinvest Shares","AAPL","APPLE INC","0.01","\$200.00","","-\$2.00"\n'
@@ -61,8 +62,10 @@ void main() {
       '"09/30/2025","Bank Interest","","BANK INT 090125-093025","","","","\$0.11"\n'
       'Transactions Total,,,,,,,"-\$904.92"\n',
     );
+    // Az „1,000” ezer darab (amerikai ezres tagolás), nem egy.
     expect(schwab.lots.map((l) => (l.symbol, l.quantity, l.price, l.date, l.sell, l.fee)), [
       ('AAPL', 10.0, 182.5, DateTime(2025, 3, 4), false, 0.05),
+      ('MSFT', 1000.0, 10.5, DateTime(2025, 3, 5), false, 0.0),
       ('AAPL', 0.01, 200.0, DateTime(2025, 6, 2), false, 0.0),
       ('AAPL', 4.0, 230.0, DateTime(2025, 9, 12), true, 0.12),
     ]);
@@ -78,18 +81,26 @@ void main() {
       '02/03/2025,YOU BOUGHT MICROSOFT CORP (MSFT) (Cash),MSFT,MICROSOFT CORP,Cash,2,410.2,,,,-820.4,1000,02/04/2025\n'
       '06/12/2025,DIVIDEND RECEIVED MICROSOFT CORP (MSFT) (Cash),MSFT,MICROSOFT CORP,Cash,,,,,,1.66,1001.66,\n'
       '08/20/2025,YOU SOLD MICROSOFT CORP (MSFT) (Cash),MSFT,MICROSOFT CORP,Cash,-1,500,,0.02,,499.98,1501.64,08/21/2025\n'
+      '09/02/2025,YOU BOUGHT ISHARES RUSSELL 2000 ETF (IWM) (Cash),IWM,ISHARES RUSSELL 2000 ETF,Cash,3,220,,,,-660,841.64,09/03/2025\n'
+      '09/03/2025,YOU BOUGHT SCHWAB US DIVIDEND EQUITY ETF (SCHD) (Cash),SCHD,SCHWAB US DIVIDEND EQUITY ETF,Cash,10,27.5,'
+      ',,,-275,566.64,09/04/2025\n'
       '\n"The data and information in this spreadsheet is provided to you solely for your use."\n',
     );
     // Az egyértelmű nap (20) dönt: hónap/nap/év.
+    // Az értékpapír neve nem művelet: a „RUSSELL” nem eladás, a „DIVIDEND EQUITY ETF” nem osztalék.
     expect(fidelity.lots.map((l) => (l.symbol, l.quantity, l.price, l.date, l.sell)), [
       ('MSFT', 2.0, 410.2, DateTime(2025, 2, 3), false),
       ('MSFT', 1.0, 500.0, DateTime(2025, 8, 20), true),
+      ('IWM', 3.0, 220.0, DateTime(2025, 9, 2), false),
+      ('SCHD', 10.0, 27.5, DateTime(2025, 9, 3), false),
     ]);
+    // A „Fees ($)” oszlop is díj (a „Commission ($)” mellett).
+    expect(fidelity.lots[1].fee, 0.02);
     expect(fidelity.dividends.single.amount, 1.66);
 
     final robinhood = parsePortfolioCsv(
       '"Activity Date","Process Date","Settle Date","Instrument","Description","Trans Code","Quantity","Price","Amount"\n'
-      '"1/6/2025","1/6/2025","1/7/2025","NVDA","NVIDIA","Buy","5","\$140.00","(\$700.00)"\n'
+      '"1/6/2025","1/6/2025","1/7/2025","NVDA","NVIDIA\nCUSIP: 67066G104","Buy","5","\$140.00","(\$700.00)"\n'
       '"3/4/2025","3/4/2025","3/4/2025","NVDA","Cash Div: R/D 2025-03-01 P/D 2025-03-04","CDIV","","","\$0.05"\n'
       '"4/1/2025","4/1/2025","4/2/2025","NVDA","NVIDIA","Sell","2","\$110.00","\$220.00"\n'
       '"4/2/2025","4/2/2025","4/2/2025","","ACH Deposit","ACH","","","\$500.00"\n',
@@ -117,7 +128,11 @@ void main() {
       '1275.10,EUR,b2\n'
       '03-04-2025,10:00,SOMETHING UNLISTED,XS0000000009,TDG,TDG,5,10.00,EUR,-50.00,EUR,-50.00,EUR,,0.00,EUR,-50.00,EUR,c3\n',
     );
-    expect(degiro.isins, {'US0378331005': 'USD', 'NL0010273215': 'EUR', 'XS0000000009': 'EUR'});
+    expect(degiro.isins, {
+      (isin: 'US0378331005', currency: 'USD'),
+      (isin: 'NL0010273215', currency: 'EUR'),
+      (isin: 'XS0000000009', currency: 'EUR'),
+    });
     expect(degiro.lots.map((l) => (l.quantity, l.price, l.currency, l.date, l.sell)), [
       (10.0, 172.5, 'USD', DateTime(2025, 3, 14), false),
       (2.0, 640.0, 'EUR', DateTime(2025, 4, 2), true),
@@ -131,6 +146,7 @@ void main() {
     Future<List<StockCandidate>> search(String q) async => switch (q) {
       'US0378331005' => const [
         StockCandidate(symbol: 'AAPL', companyName: 'Apple Inc'),
+        StockCandidate(symbol: 'AAPL.SW', companyName: 'Apple Inc'),
         StockCandidate(symbol: 'APC.DE', companyName: 'Apple Inc'),
       ],
       'NL0010273215' => const [
@@ -140,7 +156,14 @@ void main() {
       _ => const <StockCandidate>[],
     };
     final symbols = await resolveIsins(search, degiro.isins);
-    expect(symbols, {'US0378331005': 'AAPL', 'NL0010273215': 'ASML.AS'});
+    expect(symbols, {
+      (isin: 'US0378331005', currency: 'USD'): 'AAPL',
+      (isin: 'NL0010273215', currency: 'EUR'): 'ASML.AS',
+    });
+    // Ugyanaz az ISIN euróban a pénznem tőzsdéjén (nem a svájci frankos listán).
+    expect(await resolveIsins(search, {(isin: 'US0378331005', currency: 'EUR')}), {
+      (isin: 'US0378331005', currency: 'EUR'): 'APC.DE',
+    });
     final resolved = degiro.withSymbols(symbols);
     expect(resolved.lots.map((l) => l.symbol), ['AAPL', 'ASML.AS']);
     expect(resolved.skipped, degiro.skipped + 1);
@@ -155,7 +178,7 @@ void main() {
       '20-05-2025,08:00,20-05-2025,ASML HOLDING,NL0010273215,Dividend,,EUR,3.68,EUR,503.68,\n',
     );
     expect(account.lots, isEmpty);
-    expect(account.isins, {'US0378331005': 'USD', 'NL0010273215': 'EUR'});
+    expect(account.isins, {(isin: 'US0378331005', currency: 'USD'), (isin: 'NL0010273215', currency: 'EUR')});
     final paid = account.withSymbols(symbols).dividends;
     expect(paid.map((d) => (d.symbol, d.currency, d.date)), [
       ('AAPL', 'USD', DateTime(2025, 5, 15)),

@@ -1,5 +1,5 @@
 import '../../core/models/stock_candidate.dart';
-import 'add_lot_dialog.dart' show parseDecimal;
+import 'add_lot_dialog.dart' show parseAmount, parseDecimal;
 import 'portfolio_store.dart';
 
 /// A portfólió tranzakciói CSV-ben (táblázatkezelőbe, másik appba):
@@ -209,23 +209,24 @@ class CsvImport {
   final List<ImportedSplit> splits;
   final int skipped;
 
-  /// A még ticker nélküli sorok ISIN-jei a kereskedés pénznemével (a feloldáshoz).
-  Map<String, String> get isins => {
+  /// A még ticker nélküli sorok ISIN-jei a kereskedés pénznemével (a feloldáshoz):
+  /// ugyanaz az ISIN két pénznemben (pl. NASDAQ és XETRA) két tőzsdei tickert kap.
+  Set<IsinKey> get isins => {
     for (final d in dividends)
-      if (d.isin case final i? when d.symbol.isEmpty) i: d.currency,
+      if (d.isin case final i? when d.symbol.isEmpty) (isin: i, currency: d.currency),
     for (final l in lots)
-      if (l.isin case final i? when l.symbol.isEmpty) i: l.currency,
+      if (l.isin case final i? when l.symbol.isEmpty) (isin: i, currency: l.currency),
   };
 
-  /// A ticker nélküli sorok a feloldott tickerrel ([symbols]: ISIN → ticker); amit
-  /// nem sikerült feloldani, kimarad (a kihagyottak közé számít).
-  CsvImport withSymbols(Map<String, String> symbols) {
+  /// A ticker nélküli sorok a feloldott tickerrel ([symbols]: ISIN és pénznem →
+  /// ticker); amit nem sikerült feloldani, kimarad (a kihagyottak közé számít).
+  CsvImport withSymbols(Map<IsinKey, String> symbols) {
     final out = <ImportedLot>[];
     var missing = 0;
     for (final l in lots) {
       if (l.symbol.isNotEmpty) {
         out.add(l);
-      } else if (symbols[l.isin] case final s?) {
+      } else if (symbols[(isin: l.isin ?? '', currency: l.currency)] case final s?) {
         out.add(
           ImportedLot(
             symbol: s,
@@ -247,7 +248,7 @@ class CsvImport {
     for (final d in dividends) {
       if (d.symbol.isNotEmpty) {
         paid.add(d);
-      } else if (symbols[d.isin] case final s?) {
+      } else if (symbols[(isin: d.isin ?? '', currency: d.currency)] case final s?) {
         paid.add(
           ImportedDividend(
             symbol: s,
@@ -266,24 +267,52 @@ class CsvImport {
   }
 }
 
-/// ISIN → ticker a piaci adatok keresőjével, ISIN-enként egyszer: a [isins] értéke a
-/// kereskedés pénzneme – nem dolláros kereskedésnél a helyi tőzsdei (pontos utótagú,
-/// pl. `ASML.AS`) találat az elsőbb, dollárosnál az utótag nélküli; ami nem oldható
-/// fel, kimarad.
-Future<Map<String, String>> resolveIsins(
+/// Egy ticker nélküli értékpapír a kereskedés pénznemével.
+typedef IsinKey = ({String isin, String currency});
+
+/// A pénznemhez illő tőzsdei utótagok (a kereső találatai közül ezek az elsőbbek).
+const _suffixes = <String, List<String>>{
+  'EUR': ['.DE', '.AS', '.PA', '.MI', '.MC', '.BR', '.LS', '.VI', '.HE', '.IR', '.F'],
+  'GBP': ['.L'],
+  'GBX': ['.L'],
+  'CHF': ['.SW'],
+  'HUF': ['.BD'],
+  'SEK': ['.ST'],
+  'NOK': ['.OL'],
+  'DKK': ['.CO'],
+  'PLN': ['.WA'],
+  'CZK': ['.PR'],
+  'CAD': ['.TO', '.V'],
+  'AUD': ['.AX'],
+  'JPY': ['.T'],
+  'HKD': ['.HK'],
+};
+
+/// ISIN → ticker a piaci adatok keresőjével, ISIN-enként egyszer, a kereskedés
+/// pénzneméhez illő tőzsdével: dollárban az utótag nélküli (amerikai) találat, más
+/// pénznemben a pénznem tőzsdéjének utótagja (euróban pl. `.DE`, `.AS`), annak
+/// híján bármely utótagos, végül az első; ami nem oldható fel, kimarad.
+Future<Map<IsinKey, String>> resolveIsins(
   Future<List<StockCandidate>> Function(String query) search,
-  Map<String, String> isins,
+  Set<IsinKey> keys,
 ) async {
-  final out = <String, String>{};
+  final found = <String, List<StockCandidate>>{};
   await Future.wait([
-    for (final e in isins.entries)
-      search(e.key).then((found) {
-        bool local(StockCandidate c) => c.symbol.contains('.') == (e.value != 'USD');
-        final best = found.where(local).firstOrNull ?? found.firstOrNull;
-        if (best != null && _symbol.hasMatch(best.symbol.toUpperCase())) out[e.key] = best.symbol.toUpperCase();
-      }, onError: (Object _) {}),
+    for (final isin in {for (final k in keys) k.isin})
+      search(isin).then((r) => found[isin] = r, onError: (Object _) => const <StockCandidate>[]),
   ]);
-  return out;
+  String? pick(List<StockCandidate> c, String currency) {
+    bool suffixed(StockCandidate x) => x.symbol.contains('.');
+    final preferred = _suffixes[currency] ?? const <String>[];
+    final best = currency == 'USD'
+        ? c.where((x) => !suffixed(x)).firstOrNull
+        : c.where((x) => preferred.any((p) => x.symbol.toUpperCase().endsWith(p))).firstOrNull ??
+              c.where(suffixed).firstOrNull;
+    final symbol = (best ?? c.firstOrNull)?.symbol.toUpperCase();
+    return symbol != null && _symbol.hasMatch(symbol) ? symbol : null;
+  }
+
+  return {for (final k in keys) k: ?pick(found[k.isin] ?? const [], k.currency)};
 }
 
 /// Saját export `split` sora: az új darab a darabszám, a régi az ár oszlopában, dátummal.
@@ -342,10 +371,14 @@ String _separator(String line) {
 /// Az eladás és a vétel magyarul és németül a „side” oszlopban, szó elején (a
 /// „kivétel”, „bevétel”, „Rückkauf” nem vétel); az eladás előbb, mert a „Verkauf”
 /// „kauf”-ot is tartalmaz.
-final _sellWords = RegExp(r'(^|[^\p{L}])(eladás|verkauf|sold)', unicode: true);
+final _sellWords = RegExp(r'(^|[^\p{L}])(eladás|verkauf)', unicode: true);
+
+/// Az angol eladás és vétel egész szóként (a „Russell” nem „sell”, a „Soldier” nem „sold”).
+final _sellVerb = RegExp(r'(^|[^a-z])(sell|sold)($|[^a-z])');
+final _buyVerb = RegExp(r'(^|[^a-z])(buy|bought)($|[^a-z])');
 // Az újrabefektetett osztalék darabjai (Schwab „Reinvest Shares”, Fidelity „Reinvestment”) is vétel;
 // A megtakarítási terv (Scalable Capital „Savings plan”, „Sparplan”) végrehajtása is vétel.
-final _buyWords = RegExp(r'(^|[^\p{L}])(vétel|vásárlás|kauf|bought|reinvest|savings plan|sparplan)', unicode: true);
+final _buyWords = RegExp(r'(^|[^\p{L}])(vétel|vásárlás|kauf|reinvest|savings plan|sparplan)', unicode: true);
 
 /// Osztaléksor (Schwab „Non-Qualified Div”, Robinhood „CDIV”, Scalable Capital „Distribution” is).
 final _dividendWords = RegExp(
@@ -391,6 +424,9 @@ const _roles = <String, Set<String>>{
   'symbol': {'symbol', 'ticker', 'instrument', 'szimblum', 'tickerkd', 'krzel'},
   // Ticker nélküli exportban (DEGIRO) az ISIN: a tickert az import oldja fel.
   'isin': {'isin'},
+  // Az értékpapír neve (Fidelity, Schwab): a műveletből kivágva, hogy a név ne számítson
+  // műveletnek (pl. „ISHARES RUSSELL 2000” nem „sell”, „US DIVIDEND EQUITY ETF” nem osztalék).
+  'description': {'description', 'securitydescription'},
   'quantity': {
     'quantity', 'qty', 'shares', 'noofshares', 'numberofshares', 'units', //
     'mennyisg', 'darab', 'darabszm', 'db', 'stck', 'stckzahl', 'anzahl', 'menge',
@@ -476,9 +512,9 @@ DateTime? _date(String raw, {bool monthFirst = false}) {
 }
 
 /// Ár, akár pénznemmel együtt („USD 182.50”, „182,50 EUR”): a szám és a pénznem.
-(double?, String?) _price(String raw) {
+(double?, String?) _price(String raw, [double? Function(String)? number]) {
   final ccy = RegExp(r'\b([A-Z]{3})\b').firstMatch(raw)?.group(1);
-  return (_decimal(raw), ccy);
+  return ((number ?? _decimal)(raw), ccy);
 }
 
 /// Beillesztett sorok beolvasása, megengedően: a mezőelválasztó tabulátor,
@@ -496,11 +532,8 @@ DateTime? _date(String raw, {bool monthFirst = false}) {
 /// híján az amerikai brókerek fejléce, végül a [monthFirst] (pl. amerikai nyelvi
 /// beállításnál).
 CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD', bool monthFirst = false}) {
-  final lines = [
-    // A fájl eleji bájtsorrend-jel (BOM, pl. a saját exportban) nem a fejléc része.
-    for (final l in text.replaceFirst('\uFEFF', '').split(RegExp(r'\r?\n')))
-      if (l.trim().isNotEmpty) l.trim(),
-  ];
+  // A fájl eleji bájtsorrend-jel (BOM, pl. a saját exportban) nem a fejléc része.
+  final lines = _records(text.replaceFirst('\uFEFF', ''));
   // A fejléc nem mindig az első sor (pl. az IBKR kimutatásban szakaszok vannak).
   for (final (i, line) in lines.take(30).indexed) {
     final sep = _separator(line);
@@ -513,6 +546,40 @@ CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD', bool m
     }
   }
   return _positional(lines, defaultCurrency);
+}
+
+/// A szöveg CSV-rekordjai: az idézőjeles mezőn belüli sortörés (pl. a Robinhood
+/// kétsoros leírása) nem kezd új rekordot, szóközzé válik; az üres sorok kimaradnak.
+/// Egy páratlan (lezáratlan) idézőjel legfeljebb öt sort fűz össze, utána a sorok
+/// külön maradnak.
+List<String> _records(String text) {
+  final out = <String>[];
+  final pending = <String>[];
+  var quotes = 0;
+  void flush({required bool joined}) {
+    if (joined) {
+      out.add(pending.join(' ').trim());
+    } else {
+      out.addAll(pending.map((l) => l.trim()));
+    }
+    pending.clear();
+    quotes = 0;
+  }
+
+  for (final l in text.split(RegExp(r'\r?\n'))) {
+    pending.add(l);
+    quotes += '"'.allMatches(l).length;
+    if (quotes.isEven) {
+      flush(joined: true);
+    } else if (pending.length >= 5) {
+      flush(joined: false);
+    }
+  }
+  flush(joined: false);
+  return [
+    for (final r in out)
+      if (r.isNotEmpty) r,
+  ];
 }
 
 /// Számlakivonat fejléce (DEGIRO „Account.csv”: Date, Product, ISIN, Description,
@@ -608,6 +675,13 @@ CsvImport _withHeader(
     for (final l in lines) cell(splitCsvLine(l, _separator(l)), 'date'),
   ], hint: us || monthFirst);
   DateTime? date(List<String> f) => _date(cell(f, 'date'), monthFirst: mdy);
+  // Az amerikai exportban a vessző ezres tagolás („1,000” darab), nem tizedesjel.
+  double? number(String raw) => us ? parseAmount(raw.replaceAll(_nonNumeric, ''), 'en') : _decimal(raw);
+  // Minden díj-oszlop összeadódik (Fidelity: „Commission ($)” és „Fees ($)”).
+  final feeCols = [
+    for (final (i, c) in header.indexed)
+      if (_roles['fee']!.contains(c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), ''))) i,
+  ];
 
   // Interactive Brokers kimutatás: „Trades,Header,…” után csak a „Trades,Data,…”
   // sorok számítanak; a „Dividends” szakasz sorai kapott osztalékok.
@@ -644,26 +718,34 @@ CsvImport _withHeader(
     // Visszavont, elutasított megbízás: nem tranzakció.
     if (_voidStatus.hasMatch(cell(f, 'status').toLowerCase())) continue;
     // Ha nincs „side” oszlop, a fejlécen túli első mező is lehet „sell”.
-    final side = (col.containsKey('side') ? cell(f, 'side') : (f.length > header.length ? f[header.length] : ''))
-        .toLowerCase();
-    final signed = _decimal(cell(f, 'quantity'));
+    var side = (col.containsKey('side') ? cell(f, 'side') : (f.length > header.length ? f[header.length] : ''))
+        .toLowerCase()
+        .trim();
+    // Az értékpapír neve nem művelet (Fidelity: „YOU BOUGHT ISHARES RUSSELL 2000 ETF (IWM)”).
+    final name = cell(f, 'description').trim().toLowerCase();
+    if (name.length > 2) side = side.replaceAll(name, ' ').trim();
+    final signed = number(cell(f, 'quantity'));
     bool? sell;
     if (side.isEmpty) {
       sell = signed != null && signed < 0;
-    } else if (side.contains('sell') || side == 's' || side == 'sld' || _sellWords.hasMatch(side)) {
+    } else if (_sellVerb.hasMatch(side) || side == 's' || side == 'sld' || _sellWords.hasMatch(side)) {
       sell = true;
-    } else if (side.contains('buy') || side == 'b' || side == 'bot' || _buyWords.hasMatch(side)) {
+    } else if (_buyVerb.hasMatch(side) || side == 'b' || side == 'bot' || _buyWords.hasMatch(side)) {
       sell = false;
     }
+    final (price, priceCcy) = _price(cell(f, 'price'), number);
+    // Vételi vagy eladási ige darabszámmal és árral: kereskedés, akkor is, ha a sorban
+    // osztalékra vagy adóra utaló szó van (pl. egy osztalék-ETF neve).
+    final trade = sell != null && (signed ?? 0) != 0 && (price ?? 0) > 0;
     final symbol = cell(f, 'symbol').toUpperCase();
     // Ticker nélkül az ISIN is elég (a tickert az import oldja fel).
     final isin = cell(f, 'isin').trim().toUpperCase();
     final byIsin = !_symbol.hasMatch(symbol) && _isin.hasMatch(isin);
     final known = _symbol.hasMatch(symbol) || byIsin;
-    final dividend = _dividendWords.hasMatch(side);
-    if (dividend || _taxWords.hasMatch(side)) {
+    final dividend = !trade && _dividendWords.hasMatch(side);
+    if (dividend || (!trade && _taxWords.hasMatch(side))) {
       // Kapott osztalék: a teljes összeg (ha nincs külön oszlopa, az ár oszlopában).
-      final (amount, amountCcy) = _price(col.containsKey('total') ? cell(f, 'total') : cell(f, 'price'));
+      final (amount, amountCcy) = _price(col.containsKey('total') ? cell(f, 'total') : cell(f, 'price'), number);
       final totalCcy = cell(f, 'totalcurrency').toUpperCase();
       final ccyCell = cell(f, 'currency').toUpperCase();
       final ccy = _currency.hasMatch(totalCcy)
@@ -705,7 +787,6 @@ CsvImport _withHeader(
     // Befizetés, díj stb.: nem vétel és nem eladás.
     if (sell == null) continue;
     final quantity = signed?.abs();
-    final (price, priceCcy) = _price(cell(f, 'price'));
     if (!known || quantity == null || quantity <= 0 || price == null || price <= 0) {
       skipped++;
       continue;
@@ -713,7 +794,8 @@ CsvImport _withHeader(
     final ccyCell = (priceCcyCol == null ? cell(f, 'currency') : at(f, priceCcyCol)).toUpperCase();
     final ccy = _currency.hasMatch(ccyCell) ? ccyCell : (priceCcy ?? defaultCurrency);
     // A más pénznemű díj (DEGIRO: az alapdevizában) az árfolyammal a kereskedés pénznemébe.
-    var fee = _decimal(cell(f, 'fee'))?.abs();
+    final fees = [for (final i in feeCols) ?number(at(f, i))];
+    var fee = fees.isEmpty ? null : fees.fold(0.0, (sum, v) => sum + v.abs());
     final feeCcy = at(f, feeCcyCol).toUpperCase();
     if (fee != null && _currency.hasMatch(feeCcy) && feeCcy != ccy) {
       final rate = _decimal(at(f, rateCol));
