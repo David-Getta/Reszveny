@@ -114,6 +114,18 @@ void main() {
     semantics.dispose();
   });
 
+  testWidgets('each quarter of the EPS chart reads out the reported and the expected EPS', (tester) async {
+    final semantics = tester.ensureSemantics();
+    await _openAapl(tester, _services(DemoMarketDataProvider(latency: Duration.zero)));
+    await tester.ensureVisible(find.byKey(const ValueKey('earnings-q-0')));
+    await tester.pumpAndSettle();
+    expect(
+      find.bySemanticsLabel(RegExp(r'^\w+ \d{4}, Reported EPS [\d.]+, Expected EPS [\d.]+, [+-−][\d.]+%$')),
+      findsNWidgets(4),
+    );
+    semantics.dispose();
+  });
+
   testWidgets('the earnings card on a stock page: next report, four quarters, beats', (tester) async {
     await _openAapl(tester, _services(DemoMarketDataProvider(latency: Duration.zero)));
     expect(find.byKey(const ValueKey('earnings-card')), findsOneWidget);

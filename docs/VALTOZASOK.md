@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.254)
+# Változásjegyzék (0.2.130 → 0.2.255)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -245,6 +245,9 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   angolul és magyarul végiggörgeti a fő oldalakat és dialógusokat (kezdőlap, kedvencek, események, portfólió,
   osztalék- és készpénz-dialógus, összes tranzakció, éves összesítő, követő stopok, riasztások, beállítások,
   fogalomtár, csomagok, részvény oldal és AI-elemzés, vétel- és riasztás-dialógus, összehasonlítás).
+- **Képernyőolvasó (0.2.255)**: a gyorsjelentés-diagram negyedévei egyben felolvashatók („2026. jún., Jelentett EPS
+  1,52, Várt EPS 1,47, +3,4%” – eddig a várt EPS kimaradt); az AI-kilátás sorai is a közös címke–érték elrendezést
+  használják (a bizonyossági címke a tördelt szöveg mellett marad).
 
 - **Javítások egy második kódátnézés nyomán** (vétel/eladás dialógus): a súly-előnézet számol a készpénzből fizetéssel
   és a felaprózással; egy korábbi napra pótolt tétel alapból nem változtat a mai készpénzen; dupla koppintásra sem

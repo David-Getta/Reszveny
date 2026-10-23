@@ -182,6 +182,7 @@ class _EpsChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
     final values = [
@@ -197,39 +198,51 @@ class _EpsChart extends StatelessWidget {
       children: [
         for (final (i, e) in quarters.indexed)
           Expanded(
-            child: Column(
-              key: ValueKey('earnings-q-$i'),
-              children: [
-                Text(
-                  e.surprise == null ? '' : fmt.percent(e.surprise, withSign: true, decimals: 1),
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    fontWeight: FontWeight.w700,
-                    color: e.beat == true ? p.positive : p.negative,
-                  ),
-                ),
-                const SizedBox(height: 4),
-                SizedBox(
-                  height: 84,
-                  width: double.infinity,
-                  child: CustomPaint(
-                    painter: _DotsPainter(
-                      estimate: (e.estimate! - lo) / (hi - lo),
-                      actual: (e.actual! - lo) / (hi - lo),
-                      guide: p.muted.withValues(alpha: 0.25),
-                      estimateColor: p.muted,
-                      actualColor: e.beat == true ? p.positive : p.negative,
+            // Képernyőolvasónak egyben: a negyedév, a jelentett és a várt EPS, a meglepetés.
+            child: Semantics(
+              container: true,
+              label: [
+                fmt.monthYear(e.period),
+                '${l10n.earningsReported} ${fmt.number(e.actual)}',
+                '${l10n.earningsExpected} ${fmt.number(e.estimate)}',
+                if (e.surprise != null) fmt.percent(e.surprise, withSign: true, decimals: 1),
+              ].join(', '),
+              child: ExcludeSemantics(
+                child: Column(
+                  key: ValueKey('earnings-q-$i'),
+                  children: [
+                    Text(
+                      e.surprise == null ? '' : fmt.percent(e.surprise, withSign: true, decimals: 1),
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        fontWeight: FontWeight.w700,
+                        color: e.beat == true ? p.positive : p.negative,
+                      ),
                     ),
-                  ),
+                    const SizedBox(height: 4),
+                    SizedBox(
+                      height: 84,
+                      width: double.infinity,
+                      child: CustomPaint(
+                        painter: _DotsPainter(
+                          estimate: (e.estimate! - lo) / (hi - lo),
+                          actual: (e.actual! - lo) / (hi - lo),
+                          guide: p.muted.withValues(alpha: 0.25),
+                          estimateColor: p.muted,
+                          actualColor: e.beat == true ? p.positive : p.negative,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(fmt.number(e.actual), style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13)),
+                    Text(
+                      fmt.monthYear(e.period),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 4),
-                Text(fmt.number(e.actual), style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13)),
-                Text(
-                  fmt.monthYear(e.period),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                ),
-              ],
+              ),
             ),
           ),
       ],

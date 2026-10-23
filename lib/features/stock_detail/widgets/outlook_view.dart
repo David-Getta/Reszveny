@@ -6,6 +6,7 @@ import '../../../core/models/stock_report.dart';
 import '../../../core/util/formatters.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../theme/app_theme.dart';
+import '../../../widgets/fit_row.dart';
 
 String scenarioLabel(AppLocalizations l10n, ScenarioKind k) => switch (k) {
   ScenarioKind.bull => l10n.scenarioBull,
@@ -172,7 +173,7 @@ class ScenarioChart extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _SplitLine(
+                FitRow(
                   lead: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -189,13 +190,13 @@ class ScenarioChart extends StatelessWidget {
                       Text('${s.probability.round()}%', style: theme.textTheme.labelLarge),
                     ],
                   ),
-                  trail: s.priceLow != null && s.priceHigh != null
+                  trailing: s.priceLow != null && s.priceHigh != null
                       ? Text(
                           '${fmt.price(s.priceLow, null)}–${fmt.price(s.priceHigh, ccy)}'
                           '${cur != null && cur > 0 ? '  (${fmt.percent((s.priceLow! / cur - 1) * 100, decimals: 0, withSign: true)} … ${fmt.percent((s.priceHigh! / cur - 1) * 100, decimals: 0, withSign: true)})' : ''}',
                           style: theme.textTheme.labelMedium,
                         )
-                      : null,
+                      : const SizedBox.shrink(),
                 ),
                 const SizedBox(height: 6),
                 SizedBox(
@@ -355,18 +356,18 @@ class LongTermChart extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _SplitLine(
+                FitRow(
                   lead: Text(
                     '${l10n.longTermYears(h.years)} · ${baseYear + h.years}',
                     style: theme.textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700),
                   ),
-                  trail: Text(
+                  trailing: Text(
                     '${_price(h.priceLow, withCurrency: false)}–${_price(h.priceHigh)}',
                     style: theme.textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w600),
                   ),
                 ),
                 const SizedBox(height: 4),
-                _SplitLine(
+                FitRow(
                   lead: Text(
                     [
                       // Teljes változás, zárójelben az évesített hozam.
@@ -377,7 +378,7 @@ class LongTermChart extends StatelessWidget {
                     ].join(' · '),
                     style: theme.textTheme.labelMedium,
                   ),
-                  trail: _Chip(
+                  trailing: _Chip(
                     color: switch (h.confidence) {
                       Confidence.high => p.positive,
                       Confidence.medium => p.accent,
@@ -535,28 +536,6 @@ class _FanPainter extends CustomPainter {
   @override
   bool shouldRepaint(_FanPainter old) =>
       old.horizons != horizons || old.current != current || old.fill != fill || old.labelStyle != labelStyle;
-}
-
-/// Címke balra, érték jobbra; ha együtt nem férnek el egy sorban (telefon,
-/// hosszú fordítás, nagy betűméret), az érték a következő sorba kerül.
-class _SplitLine extends StatelessWidget {
-  const _SplitLine({required this.lead, this.trail});
-
-  final Widget lead;
-  final Widget? trail;
-
-  // A teljes szélesség kell, különben a Wrap összehúzódik, és nem tolja jobbra az értéket.
-  @override
-  Widget build(BuildContext context) => SizedBox(
-    width: double.infinity,
-    child: Wrap(
-      alignment: WrapAlignment.spaceBetween,
-      crossAxisAlignment: WrapCrossAlignment.center,
-      spacing: 12,
-      runSpacing: 4,
-      children: [lead, ?trail],
-    ),
-  );
 }
 
 class _Chip extends StatelessWidget {
