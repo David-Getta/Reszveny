@@ -983,6 +983,26 @@ class PortfolioStore extends ChangeNotifier {
     await _save();
   }
 
+  /// Egy tranzakció javítása ugyanazzal az azonosítóval (a számla a már használt
+  /// írásmóddal); ha közben törölték, nem kerül vissza.
+  Future<void> replace(PortfolioLot lot) async {
+    final i = _lots.indexWhere((l) => l.id == lot.id);
+    if (i < 0) return;
+    _lots[i] = PortfolioLot(
+      id: lot.id,
+      symbol: lot.symbol.trim().toUpperCase(),
+      quantity: lot.quantity,
+      price: lot.price,
+      currency: lot.currency.trim().toUpperCase(),
+      date: lot.date,
+      sell: lot.sell,
+      account: canonicalAccount(lot.account),
+      fee: PortfolioLot.cleanFee(lot.fee),
+    );
+    notifyListeners();
+    await _save();
+  }
+
   /// Egy import visszavonása: a megadott azonosítójú tranzakciók, osztalékok és
   /// felaprózások törlése egyetlen mentéssel.
   Future<void> removeIds({

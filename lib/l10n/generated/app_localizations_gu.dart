@@ -2762,6 +2762,17 @@ class AppLocalizationsGu extends AppLocalizations {
       'તમારા બ્રોકરનું એક્સપોર્ટ ઇમ્પોર્ટ કરો (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) અથવા વ્યવહારો હાથે ઉમેરો: કોઈ ઇન્ડેક્સની સાથે તમારું રિટર્ન, તમારા ડિવિડન્ડ અને ટેક્સ રિટર્ન માટે વાર્ષિક સારાંશ જુઓ.';
 
   @override
+  String get lotEdit => 'એડિટ કરો';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'વ્યવહાર એડિટ કરો · $symbol';
+  }
+
+  @override
+  String get lotSave => 'સાચવો';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

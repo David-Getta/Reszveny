@@ -2789,6 +2789,17 @@ class AppLocalizationsIlo extends AppLocalizations {
       'I-import ti export ti broker-mo (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) wenno inayon dagiti transaksion babaen ti ima: kitaem ti ganansiam iti abay ti maysa nga index, dagiti dibidendom ken tinawen a pakabuklan para iti tax return-mo.';
 
   @override
+  String get lotEdit => 'I-edit';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'I-edit ti transaksion · $symbol';
+  }
+
+  @override
+  String get lotSave => 'I-save';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

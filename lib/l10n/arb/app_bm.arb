@@ -828,5 +828,8 @@
   "lotFromCash": "Sara ni wari gansan ye (sisan {amount})",
   "lotToCash": "A fara wari gansan kan (sisan {amount})",
   "onboardTitle4": "I ka aksiyɔn kɛsu kɔlɔsi",
-  "onboardBody4": "I ka broker ka export fayili lase (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) walima ka i ka sanniw ni feereliw sɛbɛn ni bolo ye: i ka tɔnɔ filɛ ka a sanga indɛkisi dɔ ma, i ka dividandiw ani san jatebɔ i ka nisɔngɔ dantigɛli kama."
+  "onboardBody4": "I ka broker ka export fayili lase (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) walima ka i ka sanniw ni feereliw sɛbɛn ni bolo ye: i ka tɔnɔ filɛ ka a sanga indɛkisi dɔ ma, i ka dividandiw ani san jatebɔ i ka nisɔngɔ dantigɛli kama.",
+  "lotEdit": "A yɛlɛma",
+  "lotEditTitle": "Sanni walima feereli yɛlɛma · {symbol}",
+  "lotSave": "A mara"
 }

@@ -828,5 +828,8 @@
   "lotFromCash": "Nagt puldan töle (häzir {amount})",
   "lotToCash": "Nagt pula goş (häzir {amount})",
   "onboardTitle4": "Portfeliňizi yzarlaň",
-  "onboardBody4": "Brokeriňiziň eksportyny import ediň (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ýa-da amallary el bilen goşuň: girdejililigiňizi indeks bilen deňeşdirip, diwidendleriňizi we salgyt beýannamasy üçin ýyllyk jemlemäni görüň."
+  "onboardBody4": "Brokeriňiziň eksportyny import ediň (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ýa-da amallary el bilen goşuň: girdejililigiňizi indeks bilen deňeşdirip, diwidendleriňizi we salgyt beýannamasy üçin ýyllyk jemlemäni görüň.",
+  "lotEdit": "Üýtget",
+  "lotEditTitle": "Amaly üýtget · {symbol}",
+  "lotSave": "Sakla"
 }

@@ -828,5 +828,8 @@
   "lotFromCash": "Bayri gikan sa cash (karon {amount})",
   "lotToCash": "Idugang sa cash (karon {amount})",
   "onboardTitle4": "Bantayi ang imong portfolio",
-  "onboardBody4": "I-import ang export sa imong broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o idugang nga manwal ang mga transaksyon: tan-awa ang imong kita tupad sa usa ka index, ang imong mga dibidendo ug tinuig nga katingbanan para sa imong tax return."
+  "onboardBody4": "I-import ang export sa imong broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o idugang nga manwal ang mga transaksyon: tan-awa ang imong kita tupad sa usa ka index, ang imong mga dibidendo ug tinuig nga katingbanan para sa imong tax return.",
+  "lotEdit": "Usba",
+  "lotEditTitle": "Usba ang transaksyon · {symbol}",
+  "lotSave": "I-save"
 }

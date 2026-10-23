@@ -2732,6 +2732,17 @@ class AppLocalizationsAm extends AppLocalizations {
       'የደላላዎን ወጪ ፋይል ያስመጡ (Revolut፣ Trading 212፣ IBKR፣ DEGIRO፣ Schwab…) ወይም ግብይቶችን በእጅ ያክሉ፤ ተመላሽዎን ከአንድ ኢንዴክስ ጋር ሲነጻጸር፣ የትርፍ ድርሻዎን እና ለግብር ማስታወቂያዎ ዓመታዊ ማጠቃለያ ይመልከቱ።';
 
   @override
+  String get lotEdit => 'አርትዕ';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'ግብይት አርትዕ · $symbol';
+  }
+
+  @override
+  String get lotSave => 'አስቀምጥ';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

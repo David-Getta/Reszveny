@@ -2782,6 +2782,17 @@ class AppLocalizationsQu extends AppLocalizations {
       'Brokerniykipa exportninta apamuy (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) utaq rantiykunata rantikuykunatapas makiwan yapay: rendimientoykita huk índicewan tupachisqata, dividendoykikunata, impuesto willakuyniykipaq watapa pisichaytapas qhaway.';
 
   @override
+  String get lotEdit => 'Allichay';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Rantiy rantikuyta allichay · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Waqaychay';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

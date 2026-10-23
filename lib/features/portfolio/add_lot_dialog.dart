@@ -65,6 +65,7 @@ Future<bool> showAddLotDialog(
   double? currentPrice,
   Map<String?, double>? holdings,
   String? account,
+  PortfolioLot? editing,
 }) async {
   final added = await showDialog<bool>(
     context: context,
@@ -74,13 +75,27 @@ Future<bool> showAddLotDialog(
       currentPrice: currentPrice,
       holdings: holdings,
       account: account,
+      editing: editing,
     ),
   );
   return added ?? false;
 }
 
+/// Egy rögzített tranzakció javítása (darab, ár, dátum, számla, díj) ugyanabban a
+/// dialógusban, kitöltve; az azonosító marad. A tárolt (felaprózással nem igazított)
+/// tételt kell átadni. `true`, ha mentette.
+Future<bool> showEditLotDialog(BuildContext context, PortfolioLot lot) =>
+    showAddLotDialog(context, symbol: lot.symbol, currency: lot.currency, account: lot.account, editing: lot);
+
 class _AddLotDialog extends StatefulWidget {
-  const _AddLotDialog({required this.symbol, required this.currency, this.currentPrice, this.holdings, this.account});
+  const _AddLotDialog({
+    required this.symbol,
+    required this.currency,
+    this.currentPrice,
+    this.holdings,
+    this.account,
+    this.editing,
+  });
 
   final String symbol;
   final String currency;
@@ -93,7 +108,10 @@ class _AddLotDialog extends StatefulWidget {
   /// az eladás ezek egyikéről megy, legfeljebb az ott birtokolt darabszámig.
   final Map<String?, double>? holdings;
 
-  bool get sell => holdings != null;
+  /// Javításnál a tárolt tétel (kitöltve; az azonosító marad, készpénz és jegyzet nélkül).
+  final PortfolioLot? editing;
+
+  bool get sell => holdings != null || (editing?.sell ?? false);
 
   @override
   State<_AddLotDialog> createState() => _AddLotDialogState();
@@ -102,7 +120,7 @@ class _AddLotDialog extends StatefulWidget {
 class _AddLotDialogState extends State<_AddLotDialog> {
   final _quantity = TextEditingController();
   late final TextEditingController _price;
-  DateTime _date = DateTime.now();
+  late DateTime _date = widget.editing?.date ?? DateTime.now();
   String? _quantityError;
   String? _priceError;
 
@@ -125,11 +143,13 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   /// Mentés közben a gomb nem nyomható újra (dupla tranzakció ellen).
   bool _saving = false;
   String? _feeError;
-  late bool _showFee = AppServices.of(context).portfolio.lots.any((l) => l.fee > 0);
+  late bool _showFee = (widget.editing?.fee ?? 0) > 0 || AppServices.of(context).portfolio.lots.any((l) => l.fee > 0);
 
   /// A számla mezőbe írt szöveg (vételnél alapból a legutóbbi vétel számlája); amíg
   /// nincs számla, a mezőt egy „Számla megadása” gomb mutatja meg.
-  late String? _account = widget.account ?? (widget.sell ? null : AppServices.of(context).portfolio.lastBuyAccount);
+  late String? _account =
+      widget.account ??
+      (widget.sell || widget.editing != null ? null : AppServices.of(context).portfolio.lastBuyAccount);
   late bool _showAccount = widget.account != null || AppServices.of(context).portfolio.accounts.isNotEmpty;
 
   /// Eladásnál a számla, amelyről elad: az előre megadott, különben ahol a legtöbb darab van.
@@ -138,14 +158,21 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     _ => widget.account,
   };
 
+  /// A tranzakció számlája: eladásnál a választott birtokló számla, különben a mező.
+  String? get _lotAccount => widget.holdings != null ? _sellFrom : (_showAccount ? _account : null);
+
   /// Ennél többet nem lehet eladni (a választott számlán birtokolt darabszám).
   double? get _sellMax => widget.holdings == null ? null : (widget.holdings![_sellFrom] ?? 0);
 
   @override
   void initState() {
     super.initState();
-    final p = widget.currentPrice;
+    final p = widget.editing?.price ?? widget.currentPrice;
     _price = TextEditingController(text: p == null ? '' : plainNumber(p));
+    if (widget.editing case final e?) {
+      _quantity.text = plainNumber(e.quantity);
+      if (e.fee > 0) _fee.text = plainNumber(e.fee);
+    }
     // Az előnézet minden beírásra frissül (a „Mind” gomb kitöltésére is).
     for (final c in [_quantity, _price, _fee]) {
       c.addListener(_changed);
@@ -182,12 +209,14 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   /// FIFO szerint várható realizált eredmény (a díjjal); `null`, ha még nem érvényes
   /// a darabszám vagy az ár.
   Widget? _preview(AppLocalizations l10n, Fmt fmt, AppPalette p, ThemeData theme) {
+    // Javításnál a régi tétel még a tárolóban van: az előnézet kétszer számolná.
+    if (widget.editing != null) return null;
     final q = parseDecimal(_quantity.text), price = parseDecimal(_price.text);
     final fee = _fee.text.trim().isEmpty ? 0.0 : parseDecimal(_fee.text);
     if (q == null || q <= 0 || price == null || price <= 0 || fee == null || fee < 0) return null;
     if (_sellMax case final max? when q > max + 1e-9) return null;
     final store = AppServices.of(context).portfolio;
-    final account = store.canonicalAccount(widget.sell ? _sellFrom : (_showAccount ? _account : null));
+    final account = store.canonicalAccount(_lotAccount);
     final lot = PortfolioLot(
       id: '',
       symbol: widget.symbol.toUpperCase(),
@@ -291,6 +320,23 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     setState(() => _saving = true);
     // A tárolók a dialógus bezárása után is frissülnek (a mentés ne maradjon félbe).
     final services = AppServices.of(context);
+    if (widget.editing case final e?) {
+      await services.portfolio.replace(
+        PortfolioLot(
+          id: e.id,
+          symbol: e.symbol,
+          quantity: q!,
+          price: p!,
+          currency: e.currency,
+          date: _date,
+          sell: e.sell,
+          account: _lotAccount,
+          fee: fee!,
+        ),
+      );
+      if (mounted) Navigator.of(context).pop(true);
+      return;
+    }
     final useCash = _cashNow != null && _useCash;
     final note = _note.text.trim();
     await services.portfolio.add(
@@ -300,7 +346,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
       currency: widget.currency,
       date: _date,
       sell: widget.sell,
-      account: widget.sell ? _sellFrom : (_showAccount ? _account : null),
+      account: _lotAccount,
       fee: fee!,
     );
     // A készpénz-egyenleg követi a tranzakciót (a díjjal együtt), a mostani egyenlegből
@@ -331,7 +377,11 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     return AlertDialog(
       // A nem kötelező mezőkkel (számla, díj, jegyzet) kis képernyőn is görgethető.
       scrollable: true,
-      title: Text(widget.sell ? l10n.portfolioSellTitle(widget.symbol) : l10n.portfolioAddTitle(widget.symbol)),
+      title: Text(
+        widget.editing != null
+            ? l10n.lotEditTitle(widget.symbol)
+            : (widget.sell ? l10n.portfolioSellTitle(widget.symbol) : l10n.portfolioAddTitle(widget.symbol)),
+      ),
       content: SizedBox(
         width: 360,
         child: Column(
@@ -413,7 +463,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                 onSubmitted: _submit,
               ),
             // Készpénzből fizetve / készpénzbe érkezve (ha a pénznemben van vezetett egyenleg).
-            if (_cashNow case final cash?)
+            if (_cashNow case final cash? when widget.editing == null)
               CheckboxListTile(
                 key: const ValueKey('lot-cash'),
                 value: _useCash,
@@ -456,7 +506,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
               ),
             ],
             // A rejtett, nem kötelező mezők gombjai egy sorban.
-            if ((!widget.sell && !_showAccount) || !_showFee || !_showNote)
+            if ((!widget.sell && !_showAccount) || !_showFee || (!_showNote && widget.editing == null))
               Wrap(
                 spacing: 16,
                 children: [
@@ -476,7 +526,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                       icon: const Icon(Icons.request_quote_outlined, size: 18),
                       label: Text(l10n.portfolioFeeAdd),
                     ),
-                  if (!_showNote)
+                  if (!_showNote && widget.editing == null)
                     TextButton.icon(
                       key: const ValueKey('lot-note-add'),
                       onPressed: () => setState(() => _showNote = true),
@@ -496,7 +546,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
         FilledButton(
           key: const ValueKey('lot-submit'),
           onPressed: _saving ? null : _submit,
-          child: Text(widget.sell ? l10n.portfolioSell : l10n.portfolioAdd),
+          child: Text(widget.editing != null ? l10n.lotSave : (widget.sell ? l10n.portfolioSell : l10n.portfolioAdd)),
         ),
       ],
     );

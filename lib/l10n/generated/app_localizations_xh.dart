@@ -2781,6 +2781,17 @@ class AppLocalizationsXh extends AppLocalizations {
       'Ngenisa i-export yebroker yakho (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) okanye wongeze iintengiselwano ngesandla: bona inzuzo yakho xa ithelekiswa ne-index, izahlulo zakho nesishwankathelo sonyaka sengxelo yerhafu.';
 
   @override
+  String get lotEdit => 'Hlela';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Hlela intengiselwano · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Gcina';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

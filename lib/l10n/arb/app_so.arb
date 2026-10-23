@@ -828,5 +828,8 @@
   "lotFromCash": "Ka bixi lacagta caddaanka (hadda {amount})",
   "lotToCash": "Ku dar lacagta caddaanka (hadda {amount})",
   "onboardTitle4": "La soco portfoliyahaaga",
-  "onboardBody4": "Soo deji faylka dhoofinta ee broker-kaaga (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ama gacanta ku dar macaamilada: arag faa'iidadaada marka la barbardhigo tusmo, faa'iido-saamiyadaada iyo soo koobid sannadeed oo loogu talagalay canshuur celintaada."
+  "onboardBody4": "Soo deji faylka dhoofinta ee broker-kaaga (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ama gacanta ku dar macaamilada: arag faa'iidadaada marka la barbardhigo tusmo, faa'iido-saamiyadaada iyo soo koobid sannadeed oo loogu talagalay canshuur celintaada.",
+  "lotEdit": "Wax ka beddel",
+  "lotEditTitle": "Wax ka beddel macaamilka · {symbol}",
+  "lotSave": "Kaydi"
 }

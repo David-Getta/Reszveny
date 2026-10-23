@@ -2763,6 +2763,17 @@ class AppLocalizationsId extends AppLocalizations {
       'Impor ekspor dari broker Anda (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) atau tambahkan transaksi secara manual: lihat imbal hasil Anda dibandingkan indeks, dividen Anda, dan ringkasan tahunan untuk pelaporan pajak.';
 
   @override
+  String get lotEdit => 'Edit';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Edit transaksi · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Simpan';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

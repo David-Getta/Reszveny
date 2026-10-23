@@ -2766,6 +2766,17 @@ class AppLocalizationsDa extends AppLocalizations {
       'Importér din brokers eksport (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) eller tilføj handler manuelt: se dit afkast ved siden af et indeks, dine udbytter og en årsoversigt til selvangivelsen.';
 
   @override
+  String get lotEdit => 'Rediger';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Rediger transaktion · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Gem';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

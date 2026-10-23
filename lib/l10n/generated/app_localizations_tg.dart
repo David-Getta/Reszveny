@@ -2770,6 +2770,17 @@ class AppLocalizationsTg extends AppLocalizations {
       'Содироти брокери худро ворид кунед (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ё амалиётҳоро дастӣ илова кунед: даромаднокии худро дар муқоиса бо индекс, дивидендҳо ва ҷамъбасти солонаро барои эъломияи андоз бинед.';
 
   @override
+  String get lotEdit => 'Таҳрир';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Таҳрири амалиёт · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Нигоҳ доштан';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

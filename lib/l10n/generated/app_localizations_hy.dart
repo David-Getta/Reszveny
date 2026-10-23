@@ -2777,6 +2777,17 @@ class AppLocalizationsHy extends AppLocalizations {
       'Ներմուծեք ձեր բրոքերի արտահանումը (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) կամ ավելացրեք գործարքները ձեռքով՝ տեսեք ձեր եկամտաբերությունը ինդեքսի համեմատ, ձեր շահաբաժինները և տարեկան ամփոփումը հարկային հայտարարագրի համար։';
 
   @override
+  String get lotEdit => 'Խմբագրել';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Խմբագրել գործարքը · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Պահել';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

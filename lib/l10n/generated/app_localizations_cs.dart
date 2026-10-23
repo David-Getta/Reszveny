@@ -2836,6 +2836,17 @@ class AppLocalizationsCs extends AppLocalizations {
       'Importujte export od svého brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) nebo zadejte obchody ručně: uvidíte svůj výnos ve srovnání s indexem, své dividendy i roční přehled pro daňové přiznání.';
 
   @override
+  String get lotEdit => 'Upravit';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Upravit transakci · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Uložit';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

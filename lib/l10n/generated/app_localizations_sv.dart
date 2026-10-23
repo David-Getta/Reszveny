@@ -2769,6 +2769,17 @@ class AppLocalizationsSv extends AppLocalizations {
       'Importera exporten från din mäklare (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) eller lägg till affärer manuellt: se din avkastning bredvid ett index, dina utdelningar och en årsöversikt till deklarationen.';
 
   @override
+  String get lotEdit => 'Redigera';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Redigera transaktion · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Spara';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

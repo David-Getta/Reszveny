@@ -2780,6 +2780,17 @@ class AppLocalizationsCeb extends AppLocalizations {
       'I-import ang export sa imong broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o idugang nga manwal ang mga transaksyon: tan-awa ang imong kita tupad sa usa ka index, ang imong mga dibidendo ug tinuig nga katingbanan para sa imong tax return.';
 
   @override
+  String get lotEdit => 'Usba';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Usba ang transaksyon · $symbol';
+  }
+
+  @override
+  String get lotSave => 'I-save';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

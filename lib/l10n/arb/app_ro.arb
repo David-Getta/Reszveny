@@ -828,5 +828,8 @@
   "lotFromCash": "Plătește din numerar (acum {amount})",
   "lotToCash": "Adaugă la numerar (acum {amount})",
   "onboardTitle4": "Urmărește-ți portofoliul",
-  "onboardBody4": "Importă exportul de la broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) sau adaugă tranzacțiile manual: vezi randamentul tău alături de un indice, dividendele și un rezumat anual pentru declarația fiscală."
+  "onboardBody4": "Importă exportul de la broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) sau adaugă tranzacțiile manual: vezi randamentul tău alături de un indice, dividendele și un rezumat anual pentru declarația fiscală.",
+  "lotEdit": "Editează",
+  "lotEditTitle": "Editează tranzacția · {symbol}",
+  "lotSave": "Salvează"
 }

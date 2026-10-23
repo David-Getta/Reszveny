@@ -2787,6 +2787,17 @@ class AppLocalizationsTn extends AppLocalizations {
       'Tsenya faele ya export ya broker wa gago (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kgotsa o tsenye ditheko le dithekiso ka seatla: bona poelo ya gago fa e bapisiwa le index, dividente tsa gago le kakaretso ya ngwaga go tlhagisa lekgetho la gago.';
 
   @override
+  String get lotEdit => 'Fetola';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Fetola theko kgotsa thekiso · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Boloka';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

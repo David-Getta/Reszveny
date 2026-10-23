@@ -828,5 +828,8 @@
   "lotFromCash": "Ishyura ukoresheje amafaranga (ubu {amount})",
   "lotToCash": "Ongera ku mafaranga (ubu {amount})",
   "onboardTitle4": "Kurikirana ishoramari ryawe",
-  "onboardBody4": "Injiza export ya broker wawe (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) cyangwa wandike ibyo waguze n'ibyo wagurishije n'intoki: reba inyungu yawe ugereranyije na index, amadividende yawe n'incamake y'umwaka ku imenyekanisha ry'umusoro."
+  "onboardBody4": "Injiza export ya broker wawe (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) cyangwa wandike ibyo waguze n'ibyo wagurishije n'intoki: reba inyungu yawe ugereranyije na index, amadividende yawe n'incamake y'umwaka ku imenyekanisha ry'umusoro.",
+  "lotEdit": "Hindura",
+  "lotEditTitle": "Hindura igikorwa cyo kugura cyangwa kugurisha · {symbol}",
+  "lotSave": "Bika"
 }

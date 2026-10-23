@@ -828,5 +828,8 @@
   "lotFromCash": "Paguaj nga paratë e gatshme (tani {amount})",
   "lotToCash": "Shto te paratë e gatshme (tani {amount})",
   "onboardTitle4": "Ndiqni portofolin tuaj",
-  "onboardBody4": "Importoni eksportin e brokerit tuaj (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ose shtoni transaksionet me dorë: shihni rendimentin tuaj krahasuar me një indeks, dividendët tuaj dhe një përmbledhje vjetore për deklaratën tatimore."
+  "onboardBody4": "Importoni eksportin e brokerit tuaj (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ose shtoni transaksionet me dorë: shihni rendimentin tuaj krahasuar me një indeks, dividendët tuaj dhe një përmbledhje vjetore për deklaratën tatimore.",
+  "lotEdit": "Ndrysho",
+  "lotEditTitle": "Ndrysho transaksionin · {symbol}",
+  "lotSave": "Ruaj"
 }

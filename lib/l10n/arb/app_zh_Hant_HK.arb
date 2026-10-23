@@ -828,5 +828,8 @@
   "lotFromCash": "從現金支付（現時 {amount}）",
   "lotToCash": "撥入現金（現時 {amount}）",
   "onboardTitle4": "追蹤你的投資組合",
-  "onboardBody4": "匯入經紀商的匯出檔案（Revolut、Trading 212、IBKR、DEGIRO、Schwab…），或手動新增交易：查看與指數比較的回報率、你的股息，以及可用於報稅的年度摘要。"
+  "onboardBody4": "匯入經紀商的匯出檔案（Revolut、Trading 212、IBKR、DEGIRO、Schwab…），或手動新增交易：查看與指數比較的回報率、你的股息，以及可用於報稅的年度摘要。",
+  "lotEdit": "編輯",
+  "lotEditTitle": "編輯交易 · {symbol}",
+  "lotSave": "儲存"
 }

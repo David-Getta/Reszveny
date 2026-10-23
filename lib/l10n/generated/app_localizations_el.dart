@@ -2779,6 +2779,17 @@ class AppLocalizationsEl extends AppLocalizations {
       'Εισαγάγετε την εξαγωγή του χρηματιστή σας (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ή προσθέστε συναλλαγές χειροκίνητα: δείτε την απόδοσή σας δίπλα σε έναν δείκτη, τα μερίσματά σας και μια ετήσια σύνοψη για τη φορολογική σας δήλωση.';
 
   @override
+  String get lotEdit => 'Επεξεργασία';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Επεξεργασία συναλλαγής · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Αποθήκευση';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

@@ -2760,6 +2760,17 @@ class AppLocalizationsPs extends AppLocalizations {
       'د خپل بروکر اکسپورټ وارد کړئ (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) یا راکړې ورکړې په لاس اضافه کړئ: د یوه شاخص په پرتله خپله ګټه، ډیویډنډونه او د مالیې د اظهارنامې لپاره کلنۍ لنډیز وګورئ.';
 
   @override
+  String get lotEdit => 'سمول';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'راکړه ورکړه سمه کړئ · $symbol';
+  }
+
+  @override
+  String get lotSave => 'خوندي کړئ';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

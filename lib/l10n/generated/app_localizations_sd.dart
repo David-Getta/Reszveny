@@ -2758,6 +2758,17 @@ class AppLocalizationsSd extends AppLocalizations {
       'پنهنجي بروڪر جي ايڪسپورٽ فائل امپورٽ ڪريو (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) يا ليڻ دين هٿ سان شامل ڪريو: ڪنهن انڊيڪس جي ڀيٽ ۾ پنهنجو رٽرن، پنهنجا ڊيويڊنڊ ۽ ٽيڪس ريٽرن لاءِ سالياني خلاصو ڏسو.';
 
   @override
+  String get lotEdit => 'ترميم ڪريو';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'ليڻ دين ۾ ترميم ڪريو · $symbol';
+  }
+
+  @override
+  String get lotSave => 'محفوظ ڪريو';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

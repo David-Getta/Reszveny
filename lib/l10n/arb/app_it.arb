@@ -828,5 +828,8 @@
   "lotFromCash": "Paga con la liquidità (ora {amount})",
   "lotToCash": "Aggiungi alla liquidità (ora {amount})",
   "onboardTitle4": "Segui il tuo portafoglio",
-  "onboardBody4": "Importa l’esportazione del tuo broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o aggiungi le operazioni a mano: vedi il tuo rendimento accanto a un indice, i tuoi dividendi e un riepilogo annuale per la dichiarazione dei redditi."
+  "onboardBody4": "Importa l’esportazione del tuo broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o aggiungi le operazioni a mano: vedi il tuo rendimento accanto a un indice, i tuoi dividendi e un riepilogo annuale per la dichiarazione dei redditi.",
+  "lotEdit": "Modifica",
+  "lotEditTitle": "Modifica transazione · {symbol}",
+  "lotSave": "Salva"
 }

@@ -828,5 +828,8 @@
   "lotFromCash": "Pagar com o caixa (agora {amount})",
   "lotToCash": "Adicionar ao caixa (agora {amount})",
   "onboardTitle4": "Acompanhe sua carteira",
-  "onboardBody4": "Importe o extrato da sua corretora (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ou adicione operações manualmente: veja sua rentabilidade ao lado de um índice, seus dividendos e um resumo anual para a declaração de impostos."
+  "onboardBody4": "Importe o extrato da sua corretora (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ou adicione operações manualmente: veja sua rentabilidade ao lado de um índice, seus dividendos e um resumo anual para a declaração de impostos.",
+  "lotEdit": "Editar",
+  "lotEditTitle": "Editar transação · {symbol}",
+  "lotSave": "Guardar"
 }

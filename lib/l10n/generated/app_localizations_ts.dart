@@ -2790,6 +2790,17 @@ class AppLocalizationsTs extends AppLocalizations {
       'Nghenisa fayili ya export ya broker wa wena (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kumbe u engetela swixaviwa ni swixavisiwa hi voko: vona mbuyelo wa wena loko wu pimanisiwa na index, tidividende ta wena ni nkatsakanyo wa lembe eka xiviko xa wena xa xibalo.';
 
   @override
+  String get lotEdit => 'Cinca';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Cinca xixaviwa kumbe xixavisiwa · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Hlayisa';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

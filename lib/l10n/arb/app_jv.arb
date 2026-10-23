@@ -828,5 +828,8 @@
   "lotFromCash": "Bayar saka kas (saiki {amount})",
   "lotToCash": "Tambahake menyang kas (saiki {amount})",
   "onboardTitle4": "Pantau portofoliomu",
-  "onboardBody4": "Impor ekspor saka brokermu (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) utawa tambahna transaksi kanthi manual: delengen imbal hasilmu dibandhingake karo indeks, dividenmu lan ringkesan taunan kanggo laporan pajeg."
+  "onboardBody4": "Impor ekspor saka brokermu (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) utawa tambahna transaksi kanthi manual: delengen imbal hasilmu dibandhingake karo indeks, dividenmu lan ringkesan taunan kanggo laporan pajeg.",
+  "lotEdit": "Owahi",
+  "lotEditTitle": "Owahi transaksi · {symbol}",
+  "lotSave": "Simpen"
 }

@@ -2739,6 +2739,17 @@ class AppLocalizationsLo extends AppLocalizations {
       'ນຳເຂົ້າໄຟລ໌ສົ່ງອອກຈາກໂບຣກເກີຂອງທ່ານ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ຫຼື ເພີ່ມທຸລະກຳດ້ວຍຕົນເອງ: ເບິ່ງຜົນຕອບແທນຂອງທ່ານທຽບກັບດັດຊະນີ, ເງິນປັນຜົນ ແລະ ສະຫຼຸບປະຈຳປີສຳລັບການຍື່ນພາສີ.';
 
   @override
+  String get lotEdit => 'ແກ້ໄຂ';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'ແກ້ໄຂທຸລະກຳ · $symbol';
+  }
+
+  @override
+  String get lotSave => 'ບັນທຶກ';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

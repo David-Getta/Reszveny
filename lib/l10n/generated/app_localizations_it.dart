@@ -2774,6 +2774,17 @@ class AppLocalizationsIt extends AppLocalizations {
       'Importa l’esportazione del tuo broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o aggiungi le operazioni a mano: vedi il tuo rendimento accanto a un indice, i tuoi dividendi e un riepilogo annuale per la dichiarazione dei redditi.';
 
   @override
+  String get lotEdit => 'Modifica';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Modifica transazione · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Salva';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

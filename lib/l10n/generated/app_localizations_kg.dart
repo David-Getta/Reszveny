@@ -2778,6 +2778,17 @@ class AppLocalizationsKg extends AppLocalizations {
       'Kotisa export ya broker na nge (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) to sonika kusumba ti kuteka na maboko: tala mbakulu na nge ti indice mosi, ba dividende na nge ye nkufi ya mvula sambu na mukanda ya mpaku.';
 
   @override
+  String get lotEdit => 'Soba';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Soba kusumba to kuteka · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Bumba';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

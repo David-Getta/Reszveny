@@ -2770,6 +2770,17 @@ class AppLocalizationsCkb extends AppLocalizations {
       'هەناردەی بڕۆکەرەکەت هاوردە بکە (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) یان مامەڵەکان بە دەست زیاد بکە: قازانجەکەت بە بەراورد لەگەڵ ئیندێکسێک، پشکی قازانجەکانت و پوختەی ساڵانە بۆ ڕاپۆرتی باج ببینە.';
 
   @override
+  String get lotEdit => 'دەستکاریکردن';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'دەستکاریکردنی مامەڵە · $symbol';
+  }
+
+  @override
+  String get lotSave => 'پاشەکەوتکردن';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

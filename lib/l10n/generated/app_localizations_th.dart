@@ -2734,6 +2734,17 @@ class AppLocalizationsTh extends AppLocalizations {
       'นำเข้าไฟล์ส่งออกจากโบรกเกอร์ของคุณ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) หรือเพิ่มรายการซื้อขายด้วยตนเอง ดูผลตอบแทนของคุณเทียบกับดัชนี เงินปันผล และสรุปรายปีสำหรับการยื่นภาษี';
 
   @override
+  String get lotEdit => 'แก้ไข';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'แก้ไขรายการซื้อขาย · $symbol';
+  }
+
+  @override
+  String get lotSave => 'บันทึก';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

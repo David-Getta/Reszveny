@@ -2693,6 +2693,17 @@ class AppLocalizationsKo extends AppLocalizations {
       '증권사 내보내기 파일(Revolut, Trading 212, IBKR, DEGIRO, Schwab…)을 가져오거나 거래를 직접 추가하세요. 지수와 비교한 수익률, 배당금, 세금 신고용 연간 요약을 확인할 수 있습니다.';
 
   @override
+  String get lotEdit => '수정';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return '거래 수정 · $symbol';
+  }
+
+  @override
+  String get lotSave => '저장';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

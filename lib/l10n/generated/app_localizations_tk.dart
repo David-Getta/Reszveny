@@ -2770,6 +2770,17 @@ class AppLocalizationsTk extends AppLocalizations {
       'Brokeriňiziň eksportyny import ediň (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ýa-da amallary el bilen goşuň: girdejililigiňizi indeks bilen deňeşdirip, diwidendleriňizi we salgyt beýannamasy üçin ýyllyk jemlemäni görüň.';
 
   @override
+  String get lotEdit => 'Üýtget';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Amaly üýtget · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Sakla';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

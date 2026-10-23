@@ -2772,6 +2772,17 @@ class AppLocalizationsUz extends AppLocalizations {
       'Brokeringiz eksportini import qiling (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) yoki operatsiyalarni qoʻlda qoʻshing: daromadliligingizni indeks bilan taqqoslab, dividendlaringizni va soliq deklaratsiyasi uchun yillik xulosani koʻring.';
 
   @override
+  String get lotEdit => 'Tahrirlash';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Operatsiyani tahrirlash · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Saqlash';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

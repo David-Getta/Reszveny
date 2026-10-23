@@ -828,5 +828,8 @@
   "lotFromCash": "Yoɓ e kaalis (jooni {amount})",
   "lotToCash": "Ɓeydu e kaalis (jooni {amount})",
   "onboardTitle4": "Jokku aksiyoŋ maa",
-  "onboardBody4": "Naatnu export broker maa (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) walla ɓeydu soodgol e yeeyugol e junngo: yiy nafoore maa e fondaade e indeks, dividende maa e ciimtol hitaande ngam deftere lempo maa."
+  "onboardBody4": "Naatnu export broker maa (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) walla ɓeydu soodgol e yeeyugol e junngo: yiy nafoore maa e fondaade e indeks, dividende maa e ciimtol hitaande ngam deftere lempo maa.",
+  "lotEdit": "Waylu",
+  "lotEditTitle": "Waylu soodgol walla yeeyugol · {symbol}",
+  "lotSave": "Mooftu"
 }

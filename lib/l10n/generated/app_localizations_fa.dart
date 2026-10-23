@@ -2764,6 +2764,17 @@ class AppLocalizationsFa extends AppLocalizations {
       'فایل خروجی کارگزارتان را وارد کنید (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) یا معاملات را دستی اضافه کنید: بازده خود را در کنار یک شاخص، سود سهامتان و خلاصه سالانه برای اظهارنامه مالیاتی ببینید.';
 
   @override
+  String get lotEdit => 'ویرایش';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'ویرایش تراکنش · $symbol';
+  }
+
+  @override
+  String get lotSave => 'ذخیره';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

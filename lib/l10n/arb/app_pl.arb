@@ -828,5 +828,8 @@
   "lotFromCash": "Zapłać z gotówki (obecnie {amount})",
   "lotToCash": "Dodaj do gotówki (obecnie {amount})",
   "onboardTitle4": "Śledź swój portfel",
-  "onboardBody4": "Zaimportuj eksport od swojego brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) lub dodaj transakcje ręcznie: zobacz swoją stopę zwrotu na tle indeksu, dywidendy i podsumowanie roczne do zeznania podatkowego."
+  "onboardBody4": "Zaimportuj eksport od swojego brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) lub dodaj transakcje ręcznie: zobacz swoją stopę zwrotu na tle indeksu, dywidendy i podsumowanie roczne do zeznania podatkowego.",
+  "lotEdit": "Edytuj",
+  "lotEditTitle": "Edytuj transakcję · {symbol}",
+  "lotSave": "Zapisz"
 }

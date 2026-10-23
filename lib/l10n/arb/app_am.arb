@@ -828,5 +828,8 @@
   "lotFromCash": "ከጥሬ ገንዘብ ይክፈሉ (አሁን {amount})",
   "lotToCash": "ወደ ጥሬ ገንዘብ ያክሉ (አሁን {amount})",
   "onboardTitle4": "ፖርትፎሊዮዎን ይከታተሉ",
-  "onboardBody4": "የደላላዎን ወጪ ፋይል ያስመጡ (Revolut፣ Trading 212፣ IBKR፣ DEGIRO፣ Schwab…) ወይም ግብይቶችን በእጅ ያክሉ፤ ተመላሽዎን ከአንድ ኢንዴክስ ጋር ሲነጻጸር፣ የትርፍ ድርሻዎን እና ለግብር ማስታወቂያዎ ዓመታዊ ማጠቃለያ ይመልከቱ።"
+  "onboardBody4": "የደላላዎን ወጪ ፋይል ያስመጡ (Revolut፣ Trading 212፣ IBKR፣ DEGIRO፣ Schwab…) ወይም ግብይቶችን በእጅ ያክሉ፤ ተመላሽዎን ከአንድ ኢንዴክስ ጋር ሲነጻጸር፣ የትርፍ ድርሻዎን እና ለግብር ማስታወቂያዎ ዓመታዊ ማጠቃለያ ይመልከቱ።",
+  "lotEdit": "አርትዕ",
+  "lotEditTitle": "ግብይት አርትዕ · {symbol}",
+  "lotSave": "አስቀምጥ"
 }

@@ -2768,6 +2768,17 @@ class AppLocalizationsTr extends AppLocalizations {
       'Aracı kurumunuzun dışa aktarım dosyasını içe aktarın (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) veya işlemleri elle ekleyin: getirinizi bir endeksle karşılaştırmalı olarak, temettülerinizi ve vergi beyannameniz için yıllık özeti görün.';
 
   @override
+  String get lotEdit => 'Düzenle';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'İşlemi düzenle · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Kaydet';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

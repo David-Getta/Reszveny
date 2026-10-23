@@ -2841,6 +2841,17 @@ class AppLocalizationsLt extends AppLocalizations {
       'Importuokite savo brokerio eksportą (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) arba pridėkite sandorius ranka: matykite savo grąžą šalia indekso, dividendus ir metinę suvestinę mokesčių deklaracijai.';
 
   @override
+  String get lotEdit => 'Redaguoti';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Redaguoti operaciją · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Išsaugoti';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

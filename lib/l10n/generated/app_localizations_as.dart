@@ -2766,6 +2766,17 @@ class AppLocalizationsAs extends AppLocalizations {
       'আপোনাৰ ব্ৰ\'কাৰৰ এক্সপোৰ্ট আমদানি কৰক (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) বা লেনদেনসমূহ হাতে যোগ কৰক: এটা সূচকাংকৰ সৈতে তুলনা কৰি আপোনাৰ ৰিটাৰ্ণ, আপোনাৰ লাভাংশ আৰু কৰ ৰিটাৰ্ণৰ বাবে বাৰ্ষিক সাৰাংশ চাওক।';
 
   @override
+  String get lotEdit => 'সম্পাদনা কৰক';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'লেনদেন সম্পাদনা কৰক · $symbol';
+  }
+
+  @override
+  String get lotSave => 'ছেভ কৰক';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

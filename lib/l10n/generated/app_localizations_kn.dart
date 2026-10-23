@@ -2774,6 +2774,17 @@ class AppLocalizationsKn extends AppLocalizations {
       'ನಿಮ್ಮ ಬ್ರೋಕರ್‌ನ ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಇಂಪೋರ್ಟ್ ಮಾಡಿ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ಅಥವಾ ವಹಿವಾಟುಗಳನ್ನು ಕೈಯಾರೆ ಸೇರಿಸಿ: ಸೂಚ್ಯಂಕದ ಜೊತೆ ಹೋಲಿಸಿದ ನಿಮ್ಮ ರಿಟರ್ನ್, ನಿಮ್ಮ ಡಿವಿಡೆಂಡ್‌ಗಳು ಮತ್ತು ತೆರಿಗೆ ರಿಟರ್ನ್‌ಗಾಗಿ ವಾರ್ಷಿಕ ಸಾರಾಂಶವನ್ನು ನೋಡಿ.';
 
   @override
+  String get lotEdit => 'ಎಡಿಟ್ ಮಾಡಿ';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'ವಹಿವಾಟು ಎಡಿಟ್ ಮಾಡಿ · $symbol';
+  }
+
+  @override
+  String get lotSave => 'ಉಳಿಸಿ';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

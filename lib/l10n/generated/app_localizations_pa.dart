@@ -2765,6 +2765,17 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੀ ਐਕਸਪੋਰਟ ਫਾਈਲ ਇੰਪੋਰਟ ਕਰੋ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ਜਾਂ ਲੈਣ-ਦੇਣ ਹੱਥੀਂ ਸ਼ਾਮਲ ਕਰੋ: ਕਿਸੇ ਇੰਡੈਕਸ ਦੇ ਮੁਕਾਬਲੇ ਆਪਣਾ ਰਿਟਰਨ, ਆਪਣੇ ਡਿਵੀਡੈਂਡ ਅਤੇ ਟੈਕਸ ਰਿਟਰਨ ਲਈ ਸਾਲਾਨਾ ਸਾਰ ਵੇਖੋ।';
 
   @override
+  String get lotEdit => 'ਸੋਧੋ';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'ਲੈਣ-ਦੇਣ ਸੋਧੋ · $symbol';
+  }
+
+  @override
+  String get lotSave => 'ਸੇਵ ਕਰੋ';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

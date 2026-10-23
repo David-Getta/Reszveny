@@ -2810,6 +2810,17 @@ class AppLocalizationsRo extends AppLocalizations {
       'Importă exportul de la broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) sau adaugă tranzacțiile manual: vezi randamentul tău alături de un indice, dividendele și un rezumat anual pentru declarația fiscală.';
 
   @override
+  String get lotEdit => 'Editează';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Editează tranzacția · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Salvează';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

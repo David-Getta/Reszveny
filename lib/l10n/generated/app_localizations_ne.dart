@@ -2766,6 +2766,17 @@ class AppLocalizationsNe extends AppLocalizations {
       'आफ्नो ब्रोकरको एक्सपोर्ट इम्पोर्ट गर्नुहोस् (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) वा कारोबार हातैले थप्नुहोस्: कुनै सूचकाङ्कसँग तुलना गरिएको आफ्नो प्रतिफल, लाभांश र कर विवरणका लागि वार्षिक सारांश हेर्नुहोस्।';
 
   @override
+  String get lotEdit => 'सम्पादन गर्नुहोस्';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'कारोबार सम्पादन गर्नुहोस् · $symbol';
+  }
+
+  @override
+  String get lotSave => 'सुरक्षित गर्नुहोस्';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

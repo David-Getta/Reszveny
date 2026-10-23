@@ -828,5 +828,8 @@
   "lotFromCash": "Hakela hi mali (sweswi {amount})",
   "lotToCash": "Engetela emalini (sweswi {amount})",
   "onboardTitle4": "Landzelela phothifoliyo ya wena",
-  "onboardBody4": "Nghenisa fayili ya export ya broker wa wena (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kumbe u engetela swixaviwa ni swixavisiwa hi voko: vona mbuyelo wa wena loko wu pimanisiwa na index, tidividende ta wena ni nkatsakanyo wa lembe eka xiviko xa wena xa xibalo."
+  "onboardBody4": "Nghenisa fayili ya export ya broker wa wena (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kumbe u engetela swixaviwa ni swixavisiwa hi voko: vona mbuyelo wa wena loko wu pimanisiwa na index, tidividende ta wena ni nkatsakanyo wa lembe eka xiviko xa wena xa xibalo.",
+  "lotEdit": "Cinca",
+  "lotEditTitle": "Cinca xixaviwa kumbe xixavisiwa · {symbol}",
+  "lotSave": "Hlayisa"
 }

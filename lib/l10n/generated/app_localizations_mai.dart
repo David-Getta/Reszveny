@@ -2760,6 +2760,17 @@ class AppLocalizationsMai extends AppLocalizations {
       'अपन ब्रोकरक एक्सपोर्ट इम्पोर्ट करू (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) वा सौदा हाथसँ जोड़ू: कोनो इंडेक्सक तुलनामे अपन रिटर्न, अपन डिविडेंड आ कर रिटर्नक लेल वार्षिक सारांश देखू।';
 
   @override
+  String get lotEdit => 'बदलू';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'लेन-देन बदलू · $symbol';
+  }
+
+  @override
+  String get lotSave => 'सेव करू';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

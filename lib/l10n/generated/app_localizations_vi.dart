@@ -2759,6 +2759,17 @@ class AppLocalizationsVi extends AppLocalizations {
       'Nhập file xuất từ công ty chứng khoán của bạn (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) hoặc tự thêm giao dịch: xem lợi nhuận của bạn so với một chỉ số, cổ tức và bản tổng kết năm để khai thuế.';
 
   @override
+  String get lotEdit => 'Sửa';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Sửa giao dịch · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Lưu';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

@@ -828,5 +828,8 @@
   "lotFromCash": "San láti inú owó (báyìí {amount})",
   "lotToCash": "Fi kún owó (báyìí {amount})",
   "onboardTitle4": "Tọpinpin àpò ìdókòwò rẹ",
-  "onboardBody4": "Gbé fáìlì export broker rẹ wọlé (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) tàbí fi àwọn ìdúnàdúrà kún pẹ̀lú ọwọ́: wo èrè rẹ ní ìfiwéra pẹ̀lú atọ́ka kan, àwọn ìpín èrè rẹ àti àkópọ̀ ọdún fún ìfisùn owó-orí rẹ."
+  "onboardBody4": "Gbé fáìlì export broker rẹ wọlé (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) tàbí fi àwọn ìdúnàdúrà kún pẹ̀lú ọwọ́: wo èrè rẹ ní ìfiwéra pẹ̀lú atọ́ka kan, àwọn ìpín èrè rẹ àti àkópọ̀ ọdún fún ìfisùn owó-orí rẹ.",
+  "lotEdit": "Ṣàtúnṣe",
+  "lotEditTitle": "Ṣàtúnṣe ìdúnàdúrà · {symbol}",
+  "lotSave": "Fi pamọ́"
 }

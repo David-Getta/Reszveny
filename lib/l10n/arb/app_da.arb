@@ -828,5 +828,8 @@
   "lotFromCash": "Betal fra kontanter (nu {amount})",
   "lotToCash": "Tilføj til kontanter (nu {amount})",
   "onboardTitle4": "Følg din portefølje",
-  "onboardBody4": "Importér din brokers eksport (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) eller tilføj handler manuelt: se dit afkast ved siden af et indeks, dine udbytter og en årsoversigt til selvangivelsen."
+  "onboardBody4": "Importér din brokers eksport (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) eller tilføj handler manuelt: se dit afkast ved siden af et indeks, dine udbytter og en årsoversigt til selvangivelsen.",
+  "lotEdit": "Rediger",
+  "lotEditTitle": "Rediger transaktion · {symbol}",
+  "lotSave": "Gem"
 }

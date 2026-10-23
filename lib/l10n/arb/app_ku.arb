@@ -828,5 +828,8 @@
   "lotFromCash": "Ji pereyê nexd bide (niha {amount})",
   "lotToCash": "Li pereyê nexd zêde bike (niha {amount})",
   "onboardTitle4": "Portfolyoya xwe bişopîne",
-  "onboardBody4": "Eksporta brokerê xwe import bike (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) an danûstandinan bi destan lê zêde bike: qezenca xwe li gorî îndeksekê, dividendên xwe û kurteya salane ji bo daxuyaniya bacê bibîne."
+  "onboardBody4": "Eksporta brokerê xwe import bike (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) an danûstandinan bi destan lê zêde bike: qezenca xwe li gorî îndeksekê, dividendên xwe û kurteya salane ji bo daxuyaniya bacê bibîne.",
+  "lotEdit": "Biguherîne",
+  "lotEditTitle": "Danûstandinê biguherîne · {symbol}",
+  "lotSave": "Tomar bike"
 }

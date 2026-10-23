@@ -2777,6 +2777,17 @@ class AppLocalizationsSo extends AppLocalizations {
       'Soo deji faylka dhoofinta ee broker-kaaga (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ama gacanta ku dar macaamilada: arag faa\'iidadaada marka la barbardhigo tusmo, faa\'iido-saamiyadaada iyo soo koobid sannadeed oo loogu talagalay canshuur celintaada.';
 
   @override
+  String get lotEdit => 'Wax ka beddel';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Wax ka beddel macaamilka · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Kaydi';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

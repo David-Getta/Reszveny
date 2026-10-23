@@ -828,5 +828,8 @@
   "lotFromCash": "Nakitten öde (şu an {amount})",
   "lotToCash": "Nakde ekle (şu an {amount})",
   "onboardTitle4": "Portföyünüzü takip edin",
-  "onboardBody4": "Aracı kurumunuzun dışa aktarım dosyasını içe aktarın (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) veya işlemleri elle ekleyin: getirinizi bir endeksle karşılaştırmalı olarak, temettülerinizi ve vergi beyannameniz için yıllık özeti görün."
+  "onboardBody4": "Aracı kurumunuzun dışa aktarım dosyasını içe aktarın (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) veya işlemleri elle ekleyin: getirinizi bir endeksle karşılaştırmalı olarak, temettülerinizi ve vergi beyannameniz için yıllık özeti görün.",
+  "lotEdit": "Düzenle",
+  "lotEditTitle": "İşlemi düzenle · {symbol}",
+  "lotSave": "Kaydet"
 }

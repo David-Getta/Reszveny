@@ -2844,6 +2844,17 @@ class AppLocalizationsPl extends AppLocalizations {
       'Zaimportuj eksport od swojego brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) lub dodaj transakcje ręcznie: zobacz swoją stopę zwrotu na tle indeksu, dywidendy i podsumowanie roczne do zeznania podatkowego.';
 
   @override
+  String get lotEdit => 'Edytuj';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Edytuj transakcję · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Zapisz';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

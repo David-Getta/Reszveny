@@ -2762,6 +2762,17 @@ class AppLocalizationsBho extends AppLocalizations {
       'आपन ब्रोकर के एक्सपोर्ट इम्पोर्ट करीं (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) भा सौदा हाथ से जोड़ीं: कवनो इंडेक्स के मुकाबले आपन रिटर्न, आपन डिविडेंड आ टैक्स रिटर्न खातिर सालाना सारांश देखीं।';
 
   @override
+  String get lotEdit => 'बदलीं';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'लेन-देन बदलीं · $symbol';
+  }
+
+  @override
+  String get lotSave => 'सेव करीं';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

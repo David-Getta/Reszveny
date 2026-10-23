@@ -2844,6 +2844,17 @@ class AppLocalizationsUk extends AppLocalizations {
       'Імпортуйте вивантаження від брокера (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) або додавайте операції вручну: дивіться дохідність порівняно з індексом, дивіденди й річний підсумок для податкової декларації.';
 
   @override
+  String get lotEdit => 'Редагувати';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Редагувати операцію · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Зберегти';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

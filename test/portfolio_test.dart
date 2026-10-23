@@ -1506,4 +1506,40 @@ void main() {
     expect(s.portfolio.cash['USD'], 2999);
     expect(s.portfolio.positionOf('AAPL')!.quantity, 12);
   });
+
+  testWidgets('a recorded transaction can be corrected in place: same id, new numbers', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.setCash('USD', 1000);
+    final lot = await s.portfolio.add(
+      symbol: 'AAPL',
+      quantity: 10,
+      price: 200,
+      currency: 'USD',
+      date: DateTime(2025, 5, 2),
+    );
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(ValueKey('lot-edit-${lot.id}')));
+    await tester.pumpAndSettle();
+    expect(find.text('Edit transaction · AAPL'), findsOneWidget);
+    // Kitöltve, készpénz-jelölő és jegyzet nélkül.
+    expect(tester.widget<TextField>(find.byKey(const ValueKey('lot-quantity'))).controller!.text, '10');
+    expect(tester.widget<TextField>(find.byKey(const ValueKey('lot-price'))).controller!.text, '200');
+    expect(find.byKey(const ValueKey('lot-cash')), findsNothing);
+    expect(find.byKey(const ValueKey('lot-note-add')), findsNothing);
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '12');
+    await tester.enterText(find.byKey(const ValueKey('lot-price')), '190');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    final edited = s.portfolio.lots.single;
+    expect((edited.id, edited.quantity, edited.price, edited.date), (lot.id, 12.0, 190.0, DateTime(2025, 5, 2)));
+    expect(s.portfolio.cash['USD'], 1000, reason: 'a javítás nem mozgatja a készpénzt');
+  });
 }

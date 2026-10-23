@@ -2774,6 +2774,17 @@ class AppLocalizationsEe extends AppLocalizations {
       'Tsɔ wò broker ƒe export vɛ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) alo tsɔ asi ŋlɔ wò nuƒeƒle kple nudzadzrawo: kpɔ wò viɖe le index aɖe gbɔ, wò dividendwo kple ƒe ƒe ƒuƒoƒo na wò adzɔxexe ŋuti nyatakaka.';
 
   @override
+  String get lotEdit => 'Trɔ';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Trɔ nuƒeƒle alo nudzadzra · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Dzra ɖo';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

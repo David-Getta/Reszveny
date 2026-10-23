@@ -2761,6 +2761,17 @@ class AppLocalizationsIg extends AppLocalizations {
       'Bubata export nke broker gị (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ma ọ bụ tinye azụmahịa n\'aka: hụ uru gị n\'akụkụ otu ndeksi, nkesa uru gị na nchịkọta afọ maka akụkọ ụtụ isi gị.';
 
   @override
+  String get lotEdit => 'Dezie';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Dezie azụmahịa · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Chekwaa';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

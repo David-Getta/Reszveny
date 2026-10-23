@@ -828,5 +828,8 @@
   "lotFromCash": "Maksāt no naudas atlikuma (tagad {amount})",
   "lotToCash": "Pievienot naudas atlikumam (tagad {amount})",
   "onboardTitle4": "Sekojiet savam portfelim",
-  "onboardBody4": "Importējiet sava brokera eksportu (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) vai pievienojiet darījumus manuāli: redziet savu ienesīgumu līdzās indeksam, savas dividendes un gada kopsavilkumu nodokļu deklarācijai."
+  "onboardBody4": "Importējiet sava brokera eksportu (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) vai pievienojiet darījumus manuāli: redziet savu ienesīgumu līdzās indeksam, savas dividendes un gada kopsavilkumu nodokļu deklarācijai.",
+  "lotEdit": "Rediģēt",
+  "lotEditTitle": "Rediģēt darījumu · {symbol}",
+  "lotSave": "Saglabāt"
 }

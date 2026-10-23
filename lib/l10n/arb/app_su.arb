@@ -828,5 +828,8 @@
   "lotFromCash": "Bayar tina tunai (ayeuna {amount})",
   "lotToCash": "Tambihkeun kana tunai (ayeuna {amount})",
   "onboardTitle4": "Pantau portofolio anjeun",
-  "onboardBody4": "Impor ékspor ti broker anjeun (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) atanapi tambihkeun transaksi sacara manual: tingali imbal hasil anjeun dibandingkeun jeung indéks, dividen anjeun sareng kasimpulan taunan pikeun laporan pajeg."
+  "onboardBody4": "Impor ékspor ti broker anjeun (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) atanapi tambihkeun transaksi sacara manual: tingali imbal hasil anjeun dibandingkeun jeung indéks, dividen anjeun sareng kasimpulan taunan pikeun laporan pajeg.",
+  "lotEdit": "Robah",
+  "lotEditTitle": "Robah transaksi · {symbol}",
+  "lotSave": "Simpen"
 }

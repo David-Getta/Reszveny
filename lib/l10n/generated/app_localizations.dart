@@ -4711,6 +4711,24 @@ abstract class AppLocalizations {
   /// **'Import your broker\'s export (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) or add trades by hand: see your return next to an index, your dividends and an annual summary for your tax return.'**
   String get onboardBody4;
 
+  /// Tooltip of the edit button next to a recorded transaction (buy or sell) on the transactions sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get lotEdit;
+
+  /// Title of the dialog that edits a recorded transaction, e.g. "Edit transaction · AAPL".
+  ///
+  /// In en, this message translates to:
+  /// **'Edit transaction · {symbol}'**
+  String lotEditTitle(String symbol);
+
+  /// Button that saves the edited transaction.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get lotSave;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

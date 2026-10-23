@@ -2767,6 +2767,17 @@ class AppLocalizationsUr extends AppLocalizations {
       'اپنے بروکر کی ایکسپورٹ فائل امپورٹ کریں (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) یا لین دین ہاتھ سے شامل کریں: کسی انڈیکس کے مقابلے میں اپنا ریٹرن، اپنے ڈیویڈنڈ اور ٹیکس ریٹرن کے لیے سالانہ خلاصہ دیکھیں۔';
 
   @override
+  String get lotEdit => 'ترمیم کریں';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'لین دین میں ترمیم کریں · $symbol';
+  }
+
+  @override
+  String get lotSave => 'محفوظ کریں';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

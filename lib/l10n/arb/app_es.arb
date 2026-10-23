@@ -828,5 +828,8 @@
   "lotFromCash": "Pagar con el efectivo (ahora {amount})",
   "lotToCash": "Añadir al efectivo (ahora {amount})",
   "onboardTitle4": "Sigue tu cartera",
-  "onboardBody4": "Importa la exportación de tu bróker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o añade operaciones a mano: consulta tu rentabilidad frente a un índice, tus dividendos y un resumen anual para tu declaración de impuestos."
+  "onboardBody4": "Importa la exportación de tu bróker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o añade operaciones a mano: consulta tu rentabilidad frente a un índice, tus dividendos y un resumen anual para tu declaración de impuestos.",
+  "lotEdit": "Editar",
+  "lotEditTitle": "Editar transacción · {symbol}",
+  "lotSave": "Guardar"
 }

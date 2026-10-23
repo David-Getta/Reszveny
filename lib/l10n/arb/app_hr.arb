@@ -828,5 +828,8 @@
   "lotFromCash": "Plati iz gotovine (sada {amount})",
   "lotToCash": "Dodaj u gotovinu (sada {amount})",
   "onboardTitle4": "Pratite svoj portfelj",
-  "onboardBody4": "Uvezite izvoz svog brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ili ručno dodajte transakcije: pogledajte svoj prinos u usporedbi s indeksom, svoje dividende i godišnji pregled za poreznu prijavu."
+  "onboardBody4": "Uvezite izvoz svog brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ili ručno dodajte transakcije: pogledajte svoj prinos u usporedbi s indeksom, svoje dividende i godišnji pregled za poreznu prijavu.",
+  "lotEdit": "Uredi",
+  "lotEditTitle": "Uredi transakciju · {symbol}",
+  "lotSave": "Spremi"
 }

@@ -828,5 +828,8 @@
   "lotFromCash": "ካብ ጥረ ገንዘብ ክፈል (ሕጂ {amount})",
   "lotToCash": "ናብ ጥረ ገንዘብ ወስኽ (ሕጂ {amount})",
   "onboardTitle4": "ፖርትፎሊዮኹም ተኸታተሉ",
-  "onboardBody4": "ናይ ብሮከርኩም ኤክስፖርት ኣእትዉ (Revolut፣ Trading 212፣ IBKR፣ DEGIRO፣ Schwab…) ወይ ልውውጣት ብኢድኩም ወስኹ፤ ምስ ኢንዴክስ ዝተነጻጸረ ትርፊኹም፣ ድቪደንድኩምን ንናይ ግብሪ መግለጺኹም ዓመታዊ ጽማቝን ርኣዩ።"
+  "onboardBody4": "ናይ ብሮከርኩም ኤክስፖርት ኣእትዉ (Revolut፣ Trading 212፣ IBKR፣ DEGIRO፣ Schwab…) ወይ ልውውጣት ብኢድኩም ወስኹ፤ ምስ ኢንዴክስ ዝተነጻጸረ ትርፊኹም፣ ድቪደንድኩምን ንናይ ግብሪ መግለጺኹም ዓመታዊ ጽማቝን ርኣዩ።",
+  "lotEdit": "ኣመዓራሪ",
+  "lotEditTitle": "ልውውጥ ኣመዓራሪ · {symbol}",
+  "lotSave": "ዓቅብ"
 }

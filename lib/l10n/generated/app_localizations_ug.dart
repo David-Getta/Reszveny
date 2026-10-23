@@ -2771,6 +2771,17 @@ class AppLocalizationsUg extends AppLocalizations {
       'دەللالىڭىزنىڭ ئېكسپورت ھۆججىتىنى ئىمپورت قىلىڭ (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) ياكى سودىلارنى قولدا قوشۇڭ: كۆرسەتكۈچ بىلەن سېلىشتۇرۇلغان پايدا نىسبىتىڭىز، دىۋىدېندلىرىڭىز ۋە باج دوكلاتى ئۈچۈن يىللىق خۇلاسىنى كۆرۈڭ.';
 
   @override
+  String get lotEdit => 'تەھرىرلەش';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'سودىنى تەھرىرلەش · $symbol';
+  }
+
+  @override
+  String get lotSave => 'ساقلاش';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

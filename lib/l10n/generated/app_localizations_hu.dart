@@ -2773,6 +2773,17 @@ class AppLocalizationsHu extends AppLocalizations {
       'Importáld a brókered exportját (Revolut, Trading 212, IBKR, DEGIRO, Schwab…), vagy rögzítsd kézzel: látod a hozamot egy indexhez mérve, az osztalékokat és az adóbevalláshoz az éves összesítőt.';
 
   @override
+  String get lotEdit => 'Szerkesztés';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Tranzakció javítása · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Mentés';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

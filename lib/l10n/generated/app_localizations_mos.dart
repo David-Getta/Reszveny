@@ -2753,6 +2753,17 @@ class AppLocalizationsMos extends AppLocalizations {
       'Kẽes y broker-ã export (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) bɩ y gʋls y raaba la koosgo ne y nug: ges y nafa ne indɛks a yembre, y dividand la yʋʋmd fãa sõdbo lampo sebrã yĩnga.';
 
   @override
+  String get lotEdit => 'Toeem';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Toeem raabã bɩ koosgã · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Bĩng';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

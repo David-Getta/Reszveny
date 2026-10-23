@@ -828,5 +828,8 @@
   "lotFromCash": "Betaal uit kontant (tans {amount})",
   "lotToCash": "Voeg by kontant (tans {amount})",
   "onboardTitle4": "Volg jou portefeulje",
-  "onboardBody4": "Voer jou makelaar se uitvoer in (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) of voeg transaksies met die hand by: sien jou opbrengs naas ’n indeks, jou dividende en ’n jaaroorsig vir jou belastingopgawe."
+  "onboardBody4": "Voer jou makelaar se uitvoer in (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) of voeg transaksies met die hand by: sien jou opbrengs naas ’n indeks, jou dividende en ’n jaaroorsig vir jou belastingopgawe.",
+  "lotEdit": "Wysig",
+  "lotEditTitle": "Wysig transaksie · {symbol}",
+  "lotSave": "Stoor"
 }

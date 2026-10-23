@@ -2780,6 +2780,17 @@ class AppLocalizationsOm extends AppLocalizations {
       'Faayilii ekspoortii birookerii keetii galchi (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) yookiin bittaa fi gurgurtaa harkaan dabali: bu\'aa kee indeeksii tokko waliin wal bira qabamee, diviidendii kee fi cuunfaa waggaa gabaasa gibiraa keetiif ilaali.';
 
   @override
+  String get lotEdit => 'Gulaali';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Bittaa ykn gurgurtaa gulaali · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Olkaa\'i';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

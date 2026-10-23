@@ -2770,6 +2770,17 @@ class AppLocalizationsMs extends AppLocalizations {
       'Import eksport daripada broker anda (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) atau tambah transaksi secara manual: lihat pulangan anda berbanding indeks, dividen anda dan ringkasan tahunan untuk penyata cukai anda.';
 
   @override
+  String get lotEdit => 'Edit';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Edit transaksi · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Simpan';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

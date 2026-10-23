@@ -2765,6 +2765,17 @@ class AppLocalizationsSi extends AppLocalizations {
       'ඔබේ බ්‍රෝකර්ගේ export ගොනුව import කරන්න (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) නැතහොත් ගනුදෙනු අතින් එක් කරන්න: දර්ශකයක් සමඟ සසඳමින් ඔබේ ප්‍රතිලාභය, ඔබේ ලාභාංශ සහ බදු වාර්තාව සඳහා වාර්ෂික සාරාංශය බලන්න.';
 
   @override
+  String get lotEdit => 'සංස්කරණය කරන්න';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'ගනුදෙනුව සංස්කරණය කරන්න · $symbol';
+  }
+
+  @override
+  String get lotSave => 'සුරකින්න';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

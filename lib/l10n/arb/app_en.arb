@@ -2407,6 +2407,24 @@
   "@onboardBody4": {
     "description": "Onboarding slide about portfolio tracking. Keep the broker names as they are."
   },
+  "lotEdit": "Edit",
+  "@lotEdit": {
+    "description": "Tooltip of the edit button next to a recorded transaction (buy or sell) on the transactions sheet."
+  },
+  "lotEditTitle": "Edit transaction · {symbol}",
+  "@lotEditTitle": {
+    "description": "Title of the dialog that edits a recorded transaction, e.g. \"Edit transaction · AAPL\".",
+    "placeholders": {
+      "symbol": {
+        "type": "String",
+        "example": "AAPL"
+      }
+    }
+  },
+  "lotSave": "Save",
+  "@lotSave": {
+    "description": "Button that saves the edited transaction."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

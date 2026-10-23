@@ -2778,6 +2778,17 @@ class AppLocalizationsCa extends AppLocalizations {
       'Importa l\'exportació del teu bròquer (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o afegeix operacions a mà: mira la teva rendibilitat comparada amb un índex, els teus dividends i un resum anual per a la declaració d\'impostos.';
 
   @override
+  String get lotEdit => 'Edita';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Edita la transacció · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Desa';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

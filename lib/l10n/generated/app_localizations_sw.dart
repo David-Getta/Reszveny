@@ -2770,6 +2770,17 @@ class AppLocalizationsSw extends AppLocalizations {
       'Leta faili la broker wako (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) au ongeza miamala kwa mkono: ona faida yako ikilinganishwa na fahirisi, gawio lako na muhtasari wa mwaka kwa ripoti yako ya kodi.';
 
   @override
+  String get lotEdit => 'Hariri';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Hariri muamala · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Hifadhi';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

@@ -2843,6 +2843,17 @@ class AppLocalizationsSl extends AppLocalizations {
       'Uvozite izvoz svojega borznega posrednika (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ali ročno dodajte posle: oglejte si svoj donos ob indeksu, dividende in letni povzetek za davčno napoved.';
 
   @override
+  String get lotEdit => 'Uredi';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Uredi transakcijo · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Shrani';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

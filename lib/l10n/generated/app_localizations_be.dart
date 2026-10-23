@@ -2841,6 +2841,17 @@ class AppLocalizationsBe extends AppLocalizations {
       'Імпартуйце экспарт вашага брокера (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) або дадавайце аперацыі ўручную: глядзіце даходнасць у параўнанні з індэксам, дывідэнды і гадавую зводку для падатковай дэкларацыі.';
 
   @override
+  String get lotEdit => 'Рэдагаваць';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Рэдагаваць аперацыю · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Захаваць';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

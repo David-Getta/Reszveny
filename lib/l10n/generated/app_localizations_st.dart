@@ -2785,6 +2785,17 @@ class AppLocalizationsSt extends AppLocalizations {
       'Kenya faele ya export ya broker ya hao (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kapa o kenye ditheko le dithekiso ka letsoho: bona poelo ya hao ha e bapiswa le index, dividende tsa hao le kakaretso ya selemo bakeng sa tlaleho ya hao ya lekgetho.';
 
   @override
+  String get lotEdit => 'Fetola';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Fetola theko kapa thekiso · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Boloka';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

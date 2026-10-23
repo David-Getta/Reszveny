@@ -2683,6 +2683,17 @@ class AppLocalizationsJa extends AppLocalizations {
       '証券会社のエクスポート（Revolut、Trading 212、IBKR、DEGIRO、Schwab…）を取り込むか、取引を手動で追加。指数と比べたリターン、配当、確定申告に使える年間サマリーを確認できます。';
 
   @override
+  String get lotEdit => '編集';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return '取引を編集 · $symbol';
+  }
+
+  @override
+  String get lotSave => '保存';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

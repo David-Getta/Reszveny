@@ -2781,6 +2781,17 @@ class AppLocalizationsRw extends AppLocalizations {
       'Injiza export ya broker wawe (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) cyangwa wandike ibyo waguze n\'ibyo wagurishije n\'intoki: reba inyungu yawe ugereranyije na index, amadividende yawe n\'incamake y\'umwaka ku imenyekanisha ry\'umusoro.';
 
   @override
+  String get lotEdit => 'Hindura';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Hindura igikorwa cyo kugura cyangwa kugurisha · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Bika';
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

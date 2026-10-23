@@ -2788,6 +2788,17 @@ class AppLocalizationsMk extends AppLocalizations {
       'Увезете го извозот од вашиот брокер (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) или рачно додајте трансакции: видете го вашиот принос во споредба со индекс, вашите дивиденди и годишен преглед за даночната пријава.';
 
   @override
+  String get lotEdit => 'Уреди';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Уреди трансакција · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Зачувај';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

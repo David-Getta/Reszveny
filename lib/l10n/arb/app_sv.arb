@@ -828,5 +828,8 @@
   "lotFromCash": "Betala från kontanter (nu {amount})",
   "lotToCash": "Lägg till i kontanter (nu {amount})",
   "onboardTitle4": "Följ din portfölj",
-  "onboardBody4": "Importera exporten från din mäklare (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) eller lägg till affärer manuellt: se din avkastning bredvid ett index, dina utdelningar och en årsöversikt till deklarationen."
+  "onboardBody4": "Importera exporten från din mäklare (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) eller lägg till affärer manuellt: se din avkastning bredvid ett index, dina utdelningar och en årsöversikt till deklarationen.",
+  "lotEdit": "Redigera",
+  "lotEditTitle": "Redigera transaktion · {symbol}",
+  "lotSave": "Spara"
 }

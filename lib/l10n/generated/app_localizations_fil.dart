@@ -2776,6 +2776,17 @@ class AppLocalizationsFil extends AppLocalizations {
       'I-import ang export ng iyong broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o idagdag nang manu-mano ang mga transaksyon: tingnan ang iyong kita katabi ng isang index, ang iyong mga dibidendo at taunang buod para sa iyong tax return.';
 
   @override
+  String get lotEdit => 'I-edit';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'I-edit ang transaksyon · $symbol';
+  }
+
+  @override
+  String get lotSave => 'I-save';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

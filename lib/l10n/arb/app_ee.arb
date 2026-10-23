@@ -828,5 +828,8 @@
   "lotFromCash": "Xe fe tso ga le asi me (fifia {amount})",
   "lotToCash": "Tsɔe kpe ɖe ga le asi ŋu (fifia {amount})",
   "onboardTitle4": "Kpɔ wò akpawo dzi",
-  "onboardBody4": "Tsɔ wò broker ƒe export vɛ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) alo tsɔ asi ŋlɔ wò nuƒeƒle kple nudzadzrawo: kpɔ wò viɖe le index aɖe gbɔ, wò dividendwo kple ƒe ƒe ƒuƒoƒo na wò adzɔxexe ŋuti nyatakaka."
+  "onboardBody4": "Tsɔ wò broker ƒe export vɛ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) alo tsɔ asi ŋlɔ wò nuƒeƒle kple nudzadzrawo: kpɔ wò viɖe le index aɖe gbɔ, wò dividendwo kple ƒe ƒe ƒuƒoƒo na wò adzɔxexe ŋuti nyatakaka.",
+  "lotEdit": "Trɔ",
+  "lotEditTitle": "Trɔ nuƒeƒle alo nudzadzra · {symbol}",
+  "lotSave": "Dzra ɖo"
 }

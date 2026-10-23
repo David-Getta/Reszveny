@@ -2758,6 +2758,17 @@ class AppLocalizationsMy extends AppLocalizations {
       'သင့်ဘရိုကာ၏ export ဖိုင်ကို တင်သွင်းပါ (Revolut၊ Trading 212၊ IBKR၊ DEGIRO၊ Schwab…) သို့မဟုတ် အရောင်းအဝယ်များကို ကိုယ်တိုင်ထည့်ပါ။ အညွှန်းကိန်းတစ်ခုနှင့် နှိုင်းယှဉ်ထားသော သင့်အမြတ်နှုန်း၊ အမြတ်ဝေစုများနှင့် အခွန်ဆောင်ရန်အတွက် နှစ်ပတ်လည် အနှစ်ချုပ်ကို ကြည့်ရှုနိုင်ပါသည်။';
 
   @override
+  String get lotEdit => 'ပြင်ရန်';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'အရောင်းအဝယ် ပြင်ရန် · $symbol';
+  }
+
+  @override
+  String get lotSave => 'သိမ်းရန်';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

@@ -828,5 +828,8 @@
   "lotFromCash": "Betalen uit cash (nu {amount})",
   "lotToCash": "Toevoegen aan cash (nu {amount})",
   "onboardTitle4": "Volg je portefeuille",
-  "onboardBody4": "Importeer de export van je broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) of voer transacties handmatig in: zie je rendement naast een index, je dividenden en een jaaroverzicht voor je belastingaangifte."
+  "onboardBody4": "Importeer de export van je broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) of voer transacties handmatig in: zie je rendement naast een index, je dividenden en een jaaroverzicht voor je belastingaangifte.",
+  "lotEdit": "Bewerken",
+  "lotEditTitle": "Transactie bewerken · {symbol}",
+  "lotSave": "Opslaan"
 }

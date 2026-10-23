@@ -2730,6 +2730,17 @@ class AppLocalizationsTi extends AppLocalizations {
       'ናይ ብሮከርኩም ኤክስፖርት ኣእትዉ (Revolut፣ Trading 212፣ IBKR፣ DEGIRO፣ Schwab…) ወይ ልውውጣት ብኢድኩም ወስኹ፤ ምስ ኢንዴክስ ዝተነጻጸረ ትርፊኹም፣ ድቪደንድኩምን ንናይ ግብሪ መግለጺኹም ዓመታዊ ጽማቝን ርኣዩ።';
 
   @override
+  String get lotEdit => 'ኣመዓራሪ';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'ልውውጥ ኣመዓራሪ · $symbol';
+  }
+
+  @override
+  String get lotSave => 'ዓቅብ';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

@@ -2648,6 +2648,17 @@ class AppLocalizationsZh extends AppLocalizations {
       '导入券商的导出文件（Revolut、Trading 212、IBKR、DEGIRO、Schwab…），或手动添加交易：查看与指数对比的收益率、你的股息，以及可用于报税的年度汇总。';
 
   @override
+  String get lotEdit => '编辑';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return '编辑交易 · $symbol';
+  }
+
+  @override
+  String get lotSave => '保存';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5663,6 +5674,17 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String get onboardBody4 =>
       '匯入經紀商的匯出檔案（Revolut、Trading 212、IBKR、DEGIRO、Schwab…），或手動新增交易：查看與指數比較的回報率、你的股息，以及可用於報稅的年度摘要。';
+
+  @override
+  String get lotEdit => '編輯';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return '編輯交易 · $symbol';
+  }
+
+  @override
+  String get lotSave => '儲存';
 
   @override
   String get portfolioGoalSet => '設定目標';

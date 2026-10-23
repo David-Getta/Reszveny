@@ -2766,6 +2766,17 @@ class AppLocalizationsBn extends AppLocalizations {
       'আপনার ব্রোকারের এক্সপোর্ট ইম্পোর্ট করুন (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) বা হাতে লেনদেন যোগ করুন: একটি সূচকের পাশে আপনার রিটার্ন, আপনার ডিভিডেন্ড এবং কর রিটার্নের জন্য বার্ষিক সারাংশ দেখুন।';
 
   @override
+  String get lotEdit => 'সম্পাদনা করুন';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'লেনদেন সম্পাদনা করুন · $symbol';
+  }
+
+  @override
+  String get lotSave => 'সেভ করুন';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

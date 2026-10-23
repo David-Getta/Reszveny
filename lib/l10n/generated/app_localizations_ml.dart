@@ -2779,6 +2779,17 @@ class AppLocalizationsMl extends AppLocalizations {
       'നിങ്ങളുടെ ബ്രോക്കറുടെ എക്സ്പോർട്ട് ഇംപോർട്ട് ചെയ്യൂ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) അല്ലെങ്കിൽ ഇടപാടുകൾ നേരിട്ട് ചേർക്കൂ: ഒരു സൂചികയുമായി താരതമ്യം ചെയ്ത നിങ്ങളുടെ റിട്ടേൺ, ഡിവിഡന്റുകൾ, നികുതി റിട്ടേണിനുള്ള വാർഷിക സംഗ്രഹം എന്നിവ കാണൂ.';
 
   @override
+  String get lotEdit => 'എഡിറ്റ് ചെയ്യുക';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'ഇടപാട് എഡിറ്റ് ചെയ്യുക · $symbol';
+  }
+
+  @override
+  String get lotSave => 'സേവ് ചെയ്യുക';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

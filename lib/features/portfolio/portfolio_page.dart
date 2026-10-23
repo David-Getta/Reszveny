@@ -1587,12 +1587,27 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                         final parts when parts.isNotEmpty => Text(parts.join(' · ')),
                         _ => null,
                       },
-                      trailing: TextButton.icon(
-                        // A lapon az igazított másolat látszik; a visszavonáshoz a tárolt tétel kell.
-                        onPressed: () async => removed.value = await services.portfolio.remove(lot.id),
-                        icon: const Icon(Icons.delete_outline_rounded, size: 18),
-                        label: Text(l10n.portfolioRemove),
-                        style: TextButton.styleFrom(foregroundColor: p.negative),
+                      trailing: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          // Javítás: a tárolt (nem igazított) tétellel, ugyanazzal az azonosítóval.
+                          IconButton(
+                            key: ValueKey('lot-edit-${lot.id}'),
+                            tooltip: l10n.lotEdit,
+                            icon: Icon(Icons.edit_outlined, size: 18, color: p.muted),
+                            onPressed: () {
+                              final stored = services.portfolio.lots.where((l) => l.id == lot.id).firstOrNull;
+                              if (stored != null) showEditLotDialog(context, stored);
+                            },
+                          ),
+                          TextButton.icon(
+                            // A lapon az igazított másolat látszik; a visszavonáshoz a tárolt tétel kell.
+                            onPressed: () async => removed.value = await services.portfolio.remove(lot.id),
+                            icon: const Icon(Icons.delete_outline_rounded, size: 18),
+                            label: Text(l10n.portfolioRemove),
+                            style: TextButton.styleFrom(foregroundColor: p.negative),
+                          ),
+                        ],
                       ),
                     ),
                   if (lots.isEmpty) Padding(padding: const EdgeInsets.all(20), child: Text(l10n.portfolioEmpty)),

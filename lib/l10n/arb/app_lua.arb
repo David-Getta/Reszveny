@@ -828,5 +828,8 @@
   "lotFromCash": "Futa ne mfranga ya mu bianza (mpindieu {amount})",
   "lotToCash": "Sakidila ku mfranga ya mu bianza (mpindieu {amount})",
   "onboardTitle4": "Londa portefeuille webe",
-  "onboardBody4": "Tuala export wa broker webe (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) anyi funda bisumba ne bisumbisha ne bianza: mona dipeta diebe ku luseke lua indice, dividende yebe ne tshikoso tsha tshidimu bua mukanda wa bitadi."
+  "onboardBody4": "Tuala export wa broker webe (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) anyi funda bisumba ne bisumbisha ne bianza: mona dipeta diebe ku luseke lua indice, dividende yebe ne tshikoso tsha tshidimu bua mukanda wa bitadi.",
+  "lotEdit": "Shintulula",
+  "lotEditTitle": "Shintulula kusumba anyi kusumbisha · {symbol}",
+  "lotSave": "Lama"
 }

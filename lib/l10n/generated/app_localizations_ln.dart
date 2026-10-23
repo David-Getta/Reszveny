@@ -2780,6 +2780,17 @@ class AppLocalizationsLn extends AppLocalizations {
       'Kotisa export ya broker na yo (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) to bakisa bosombi mpe boteki na maboko: talá litomba na yo pembeni ya indice moko, ba dividende na yo mpe bokuse ya mbula mpo na declaration ya mpako.';
 
   @override
+  String get lotEdit => 'Bongola';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Bongola bosombi to boteki · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Bomba';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

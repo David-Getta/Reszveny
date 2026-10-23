@@ -2769,6 +2769,17 @@ class AppLocalizationsAz extends AppLocalizations {
       'Brokerinizin ixrac faylını idxal edin (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) və ya əməliyyatları əl ilə əlavə edin: gəlirliliyinizi indekslə müqayisədə, dividendlərinizi və vergi bəyannaməsi üçün illik xülasəni görün.';
 
   @override
+  String get lotEdit => 'Redaktə et';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Əməliyyatı redaktə et · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Yadda saxla';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

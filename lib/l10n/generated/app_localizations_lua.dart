@@ -2779,6 +2779,17 @@ class AppLocalizationsLua extends AppLocalizations {
       'Tuala export wa broker webe (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) anyi funda bisumba ne bisumbisha ne bianza: mona dipeta diebe ku luseke lua indice, dividende yebe ne tshikoso tsha tshidimu bua mukanda wa bitadi.';
 
   @override
+  String get lotEdit => 'Shintulula';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Shintulula kusumba anyi kusumbisha · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Lama';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

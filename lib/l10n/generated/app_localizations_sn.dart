@@ -2776,6 +2776,17 @@ class AppLocalizationsSn extends AppLocalizations {
       'Pinza export yebroker wako (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kana kuti nyora zvawakatenga nezvawakatengesa nemaoko: ona pundutso yako ichienzaniswa neindex, madividendi ako uye pfupiso yegore yemushumo wako wemutero.';
 
   @override
+  String get lotEdit => 'Gadzirisa';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Gadzirisa kutenga kana kutengesa · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Chengetedza';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

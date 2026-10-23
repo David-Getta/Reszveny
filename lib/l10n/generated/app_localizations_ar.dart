@@ -2837,6 +2837,17 @@ class AppLocalizationsAr extends AppLocalizations {
       'استورد ملف التصدير من وسيطك (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) أو أضف صفقاتك يدويًا: شاهد عائدك مقارنةً بمؤشر، وتوزيعات أرباحك، وملخصًا سنويًا لإقرارك الضريبي.';
 
   @override
+  String get lotEdit => 'تعديل';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'تعديل المعاملة · $symbol';
+  }
+
+  @override
+  String get lotSave => 'حفظ';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

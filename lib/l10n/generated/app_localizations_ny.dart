@@ -2778,6 +2778,17 @@ class AppLocalizationsNy extends AppLocalizations {
       'Tengani fayilo ya export ya broker wanu (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kapena lowetsani zogula ndi zogulitsa pamanja: onani phindu lanu poyerekeza ndi index, madividendi anu ndi chidule cha pachaka cha msonkho wanu.';
 
   @override
+  String get lotEdit => 'Sinthani';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Sinthani kugula kapena kugulitsa · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Sungani';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

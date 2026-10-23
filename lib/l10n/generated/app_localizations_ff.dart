@@ -2763,6 +2763,17 @@ class AppLocalizationsFf extends AppLocalizations {
       'Naatnu export broker maa (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) walla ɓeydu soodgol e yeeyugol e junngo: yiy nafoore maa e fondaade e indeks, dividende maa e ciimtol hitaande ngam deftere lempo maa.';
 
   @override
+  String get lotEdit => 'Waylu';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Waylu soodgol walla yeeyugol · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Mooftu';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

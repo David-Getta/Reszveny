@@ -2767,6 +2767,17 @@ class AppLocalizationsKk extends AppLocalizations {
       'Брокеріңіздің экспортын импорттаңыз (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) немесе операцияларды қолмен қосыңыз: кірістілігіңізді индекспен салыстыра, дивидендтеріңізді және салық декларациясына арналған жылдық қорытындыны көріңіз.';
 
   @override
+  String get lotEdit => 'Өңдеу';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Операцияны өңдеу · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Сақтау';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

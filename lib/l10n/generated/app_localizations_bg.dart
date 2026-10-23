@@ -2769,6 +2769,17 @@ class AppLocalizationsBg extends AppLocalizations {
       'Импортирайте експорта от брокера си (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) или добавяйте сделки ръчно: вижте доходността си спрямо индекс, дивидентите си и годишно обобщение за данъчната декларация.';
 
   @override
+  String get lotEdit => 'Редактирай';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Редактирай транзакция · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Запази';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

@@ -2769,6 +2769,17 @@ class AppLocalizationsFi extends AppLocalizations {
       'Tuo välittäjäsi vientitiedosto (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) tai lisää kaupat käsin: näet tuottosi indeksin rinnalla, osinkosi ja vuosiyhteenvedon veroilmoitusta varten.';
 
   @override
+  String get lotEdit => 'Muokkaa';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Muokkaa tapahtumaa · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Tallenna';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

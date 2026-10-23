@@ -2767,6 +2767,17 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Import your broker export (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) or add your buy and sell by hand: see your return side by side with one index, your dividends and yearly summary for your tax return.';
 
   @override
+  String get lotEdit => 'Change';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Change buy or sell · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Save';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

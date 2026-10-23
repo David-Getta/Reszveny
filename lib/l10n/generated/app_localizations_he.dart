@@ -2763,6 +2763,17 @@ class AppLocalizationsHe extends AppLocalizations {
       'ייבאו את קובץ הייצוא של הברוקר (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) או הוסיפו עסקאות ידנית: ראו את התשואה שלכם לצד מדד, את הדיבידנדים ואת הסיכום השנתי לדוח המס.';
 
   @override
+  String get lotEdit => 'עריכה';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'עריכת עסקה · $symbol';
+  }
+
+  @override
+  String get lotSave => 'שמירה';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

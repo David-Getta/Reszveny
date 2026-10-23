@@ -2782,6 +2782,17 @@ class AppLocalizationsDe extends AppLocalizations {
       'Importiere den Export deines Brokers (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) oder trage Käufe und Verkäufe von Hand ein: Sieh deine Rendite im Vergleich zu einem Index, deine Dividenden und eine Jahresübersicht für die Steuererklärung.';
 
   @override
+  String get lotEdit => 'Bearbeiten';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Transaktion bearbeiten · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Speichern';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

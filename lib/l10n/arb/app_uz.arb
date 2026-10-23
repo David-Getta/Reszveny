@@ -828,5 +828,8 @@
   "lotFromCash": "Naqd puldan toʻlash (hozir {amount})",
   "lotToCash": "Naqd pulga qoʻshish (hozir {amount})",
   "onboardTitle4": "Portfelingizni kuzating",
-  "onboardBody4": "Brokeringiz eksportini import qiling (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) yoki operatsiyalarni qoʻlda qoʻshing: daromadliligingizni indeks bilan taqqoslab, dividendlaringizni va soliq deklaratsiyasi uchun yillik xulosani koʻring."
+  "onboardBody4": "Brokeringiz eksportini import qiling (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) yoki operatsiyalarni qoʻlda qoʻshing: daromadliligingizni indeks bilan taqqoslab, dividendlaringizni va soliq deklaratsiyasi uchun yillik xulosani koʻring.",
+  "lotEdit": "Tahrirlash",
+  "lotEditTitle": "Operatsiyani tahrirlash · {symbol}",
+  "lotSave": "Saqlash"
 }

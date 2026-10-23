@@ -2755,6 +2755,17 @@ class AppLocalizationsBo extends AppLocalizations {
       'ཁྱེད་ཀྱི་ཚོང་བར་གྱི་ཕྱིར་གཏོང་ཡིག་ཆ་ནང་འདྲེན་གནང་ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ཡང་ན་ཉོ་འཚོང་ལག་ཐོག་ནས་ཁ་སྣོན་གནང་། སྟོན་གྲངས་ཤིག་དང་བསྡུར་བའི་ཁྱེད་ཀྱི་ཁེ་འབབ་དང་། ཁེ་བགོས། ཁྲལ་འབབ་ཞུ་ཐོའི་ཆེད་ཀྱི་ལོ་འཁོར་བསྡུས་དོན་བཅས་གཟིགས་རོགས།';
 
   @override
+  String get lotEdit => 'རྩོམ་སྒྲིག';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'ཉོ་འཚོང་རྩོམ་སྒྲིག · $symbol';
+  }
+
+  @override
+  String get lotSave => 'ཉར་ཚགས།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

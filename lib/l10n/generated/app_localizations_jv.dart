@@ -2770,6 +2770,17 @@ class AppLocalizationsJv extends AppLocalizations {
       'Impor ekspor saka brokermu (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) utawa tambahna transaksi kanthi manual: delengen imbal hasilmu dibandhingake karo indeks, dividenmu lan ringkesan taunan kanggo laporan pajeg.';
 
   @override
+  String get lotEdit => 'Owahi';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Owahi transaksi · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Simpen';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

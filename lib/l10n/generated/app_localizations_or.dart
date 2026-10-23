@@ -2764,6 +2764,17 @@ class AppLocalizationsOr extends AppLocalizations {
       'ଆପଣଙ୍କ ବ୍ରୋକରର ଏକ୍ସପୋର୍ଟ ଇମ୍ପୋର୍ଟ କରନ୍ତୁ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) କିମ୍ବା କାରବାର ହାତରେ ଯୋଡ଼ନ୍ତୁ: ଏକ ସୂଚକାଙ୍କ ତୁଳନାରେ ଆପଣଙ୍କ ରିଟର୍ନ, ଆପଣଙ୍କ ଡିଭିଡେଣ୍ଡ ଏବଂ ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ ବାର୍ଷିକ ସାରାଂଶ ଦେଖନ୍ତୁ।';
 
   @override
+  String get lotEdit => 'ଏଡିଟ କରନ୍ତୁ';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'କାରବାର ଏଡିଟ କରନ୍ତୁ · $symbol';
+  }
+
+  @override
+  String get lotSave => 'ସେଭ୍ କରନ୍ତୁ';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

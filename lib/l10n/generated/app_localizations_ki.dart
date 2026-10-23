@@ -2769,6 +2769,17 @@ class AppLocalizationsKi extends AppLocalizations {
       'Rehe export ya broker waku (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kana wandĩke ũgũri na ũendia na guoko: ona uumithio waku ũgĩgerekanio na index, mĩgai yaku ya faida na ũhoro mũkuhĩ wa mwaka nĩ ũndũ wa ũhoro wa igooti.';
 
   @override
+  String get lotEdit => 'Garũra';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Garũra ũgũri kana ũendia · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Iga';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

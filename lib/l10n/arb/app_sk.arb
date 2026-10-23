@@ -828,5 +828,8 @@
   "lotFromCash": "Zaplatiť z hotovosti (teraz {amount})",
   "lotToCash": "Pripočítať k hotovosti (teraz {amount})",
   "onboardTitle4": "Sledujte svoje portfólio",
-  "onboardBody4": "Importujte export od svojho brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) alebo zadajte obchody ručne: uvidíte svoj výnos v porovnaní s indexom, svoje dividendy aj ročný prehľad na daňové priznanie."
+  "onboardBody4": "Importujte export od svojho brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) alebo zadajte obchody ručne: uvidíte svoj výnos v porovnaní s indexom, svoje dividendy aj ročný prehľad na daňové priznanie.",
+  "lotEdit": "Upraviť",
+  "lotEditTitle": "Upraviť transakciu · {symbol}",
+  "lotSave": "Uložiť"
 }

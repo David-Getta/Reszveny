@@ -2770,6 +2770,17 @@ class AppLocalizationsAk extends AppLocalizations {
       'Fa wo broker export no bra (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) anaa fa wo nsa kyerɛw w\'adetɔ ne w\'adetɔn: hu wo mfaso a wɔde toto index bi ho, wo dividend ne afe nsɛm tiawa ma w\'apoobɔ ho nsɛm.';
 
   @override
+  String get lotEdit => 'Sesa';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Sesa adetɔ anaa adetɔn · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Kora';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

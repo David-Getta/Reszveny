@@ -2772,6 +2772,17 @@ class AppLocalizationsAf extends AppLocalizations {
       'Voer jou makelaar se uitvoer in (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) of voeg transaksies met die hand by: sien jou opbrengs naas ’n indeks, jou dividende en ’n jaaroorsig vir jou belastingopgawe.';
 
   @override
+  String get lotEdit => 'Wysig';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Wysig transaksie · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Stoor';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

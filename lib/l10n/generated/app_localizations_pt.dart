@@ -2774,6 +2774,17 @@ class AppLocalizationsPt extends AppLocalizations {
       'Importe o extrato da sua corretora (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ou adicione operações manualmente: veja sua rentabilidade ao lado de um índice, seus dividendos e um resumo anual para a declaração de impostos.';
 
   @override
+  String get lotEdit => 'Editar';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Editar transação · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Guardar';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

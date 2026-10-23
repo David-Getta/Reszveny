@@ -2774,6 +2774,17 @@ class AppLocalizationsTe extends AppLocalizations {
       'మీ బ్రోకర్ ఎక్స్‌పోర్ట్‌ను ఇంపోర్ట్ చేయండి (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) లేదా లావాదేవీలను మాన్యువల్‌గా జోడించండి: ఒక సూచీతో పోల్చిన మీ రాబడి, మీ డివిడెండ్లు మరియు పన్ను రిటర్న్ కోసం వార్షిక సారాంశాన్ని చూడండి.';
 
   @override
+  String get lotEdit => 'సవరించండి';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'లావాదేవీని సవరించండి · $symbol';
+  }
+
+  @override
+  String get lotSave => 'సేవ్ చేయండి';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

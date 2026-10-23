@@ -2759,6 +2759,17 @@ class AppLocalizationsWo extends AppLocalizations {
       'Indil export bu sa broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) walla nga bind sa jënd ak sa jaay ak sa loxo: gis sa benefis bu ñu méngale ak benn indeks, say dividande ak tënkub at mi ngir sa déclaration lempo.';
 
   @override
+  String get lotEdit => 'Soppi';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Soppi jënd walla jaay bi · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Denc';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

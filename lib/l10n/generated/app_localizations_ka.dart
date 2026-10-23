@@ -2768,6 +2768,17 @@ class AppLocalizationsKa extends AppLocalizations {
       'შემოიტანეთ თქვენი ბროკერის ექსპორტი (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ან ხელით დაამატეთ გარიგებები: ნახეთ თქვენი შემოსავლიანობა ინდექსთან შედარებით, დივიდენდები და წლიური შეჯამება საგადასახადო დეკლარაციისთვის.';
 
   @override
+  String get lotEdit => 'რედაქტირება';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'ტრანზაქციის რედაქტირება · $symbol';
+  }
+
+  @override
+  String get lotSave => 'შენახვა';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

@@ -2774,6 +2774,17 @@ class AppLocalizationsSq extends AppLocalizations {
       'Importoni eksportin e brokerit tuaj (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ose shtoni transaksionet me dorë: shihni rendimentin tuaj krahasuar me një indeks, dividendët tuaj dhe një përmbledhje vjetore për deklaratën tatimore.';
 
   @override
+  String get lotEdit => 'Ndrysho';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Ndrysho transaksionin · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Ruaj';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

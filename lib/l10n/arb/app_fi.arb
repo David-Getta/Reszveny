@@ -828,5 +828,8 @@
   "lotFromCash": "Maksa käteisestä (nyt {amount})",
   "lotToCash": "Lisää käteiseen (nyt {amount})",
   "onboardTitle4": "Seuraa salkkuasi",
-  "onboardBody4": "Tuo välittäjäsi vientitiedosto (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) tai lisää kaupat käsin: näet tuottosi indeksin rinnalla, osinkosi ja vuosiyhteenvedon veroilmoitusta varten."
+  "onboardBody4": "Tuo välittäjäsi vientitiedosto (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) tai lisää kaupat käsin: näet tuottosi indeksin rinnalla, osinkosi ja vuosiyhteenvedon veroilmoitusta varten.",
+  "lotEdit": "Muokkaa",
+  "lotEditTitle": "Muokkaa tapahtumaa · {symbol}",
+  "lotSave": "Tallenna"
 }

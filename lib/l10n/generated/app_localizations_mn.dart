@@ -2768,6 +2768,17 @@ class AppLocalizationsMn extends AppLocalizations {
       'Брокерийнхоо экспортыг импортлоорой (Revolut, Trading 212, IBKR, DEGIRO, Schwab…), эсвэл гүйлгээгээ гараар нэмээрэй: индекстэй харьцуулсан өгөөж, ногдол ашиг болон татварын тайланд зориулсан жилийн хураангуйгаа хараарай.';
 
   @override
+  String get lotEdit => 'Засах';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Гүйлгээ засах · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Хадгалах';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

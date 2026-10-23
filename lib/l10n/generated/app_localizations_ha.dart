@@ -2775,6 +2775,17 @@ class AppLocalizationsHa extends AppLocalizations {
       'Shigo da fitarwar dillalinka (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ko ƙara ma\'amaloli da hannu: ga ribarka idan aka kwatanta da ma\'auni, rabon ribarka da taƙaitaccen bayanin shekara don bayanin harajinka.';
 
   @override
+  String get lotEdit => 'Gyara';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Gyara ma\'amala · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Ajiye';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

@@ -2788,6 +2788,17 @@ class AppLocalizationsMg extends AppLocalizations {
       'Ampidiro ny fanondranana avy amin\'ny broker-nao (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) na ampio tanana ny fividianana sy fivarotana: jereo ny tombonao raha ampitahaina amin\'ny index iray, ny dividandinao ary ny famintinana isan-taona ho an\'ny fanambaranao hetra.';
 
   @override
+  String get lotEdit => 'Ovay';
+
+  @override
+  String lotEditTitle(String symbol) {
+    return 'Ovay ny fividianana na fivarotana · $symbol';
+  }
+
+  @override
+  String get lotSave => 'Tehirizo';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override
