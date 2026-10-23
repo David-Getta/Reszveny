@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.276)
+# Változásjegyzék (0.2.130 → 0.2.277)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Nyilvános weboldalak: egy huszonharmadik kódátnézés javításai
+
+- **0.2.277**: ha a `PUBLIC_URL` perjellel végződik, a megosztási, leiratkozó és fizetési linkek sem lesznek
+  `//s/…` alakúak (eddig 404-et adtak). A böngésző nyelve szerint változó oldalak `Vary: Accept-Language` fejlécet
+  küldenek, így egy köztes gyorsítótár nem az első látogató nyelvét adja mindenkinek. Az admin JSON-végponton is
+  él a kulcstalálgatás korlátja, a válasz nem gyorsítótárazható, és a hibás admin-űrlap nem okoz szerverhibát. Az
+  előfizetés kezeléséből (lemondás, kártyacsere) visszatérve semleges oldal jön, nem „Sikeres fizetés”. A
+  kérésnapló nem írja ki a leiratkozó tokent és a megosztás azonosítóját. Ha az adatforrás nem válaszol, az üres
+  részvényoldal nem kerül nyilvános gyorsítótárba, és egy percig nem kérdezzük újra. A nyitóoldal og:url-je
+  megtartja a nyelvet, az indexelt oldalak kanonikus linket kapnak, és az ismeretlen részvény oldala nem a lejárt
+  megosztás szövegét mutatja.
 
 ## Árfolyamok és a részvényoldal kártyái: egy huszonkettedik kódátnézés javításai
 

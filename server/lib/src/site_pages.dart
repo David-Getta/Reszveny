@@ -105,6 +105,8 @@ String _head({
     '<meta property="og:site_name" content="WhatStock"><meta property="og:type" content="website">'
     '<meta property="og:title" content="${_attr(title)}"><meta property="og:description" content="${_attr(description)}">'
     '${url == null ? '' : '<meta property="og:url" content="${_attr(url)}">'}'
+    // A kereső egy változatot tekintsen eredetinek (`/stocks/aapl` és `?lang=` nélküli alakok helyett).
+    '${url == null || !index ? '' : '<link rel="canonical" href="${_attr(url)}">'}'
     '${image == null ? '<meta name="twitter:card" content="summary">' : '<meta property="og:image" content="${_attr(image)}">'
               '<meta property="og:image:type" content="image/png"><meta name="twitter:card" content="summary_large_image">'
               '<meta name="twitter:image" content="${_attr(image)}">'}'
@@ -180,6 +182,14 @@ String shareMissingPage() =>
     '${_head(lang: 'en', title: 'WhatStock', description: 'WhatStock', index: false)}'
     '<div class="card"><h1>×</h1><p>Ez a megosztás már nem érhető el. · This shared analysis is no longer available.</p>'
     '<a class="btn" href="/">WhatStock</a></div></main></body></html>';
+
+/// Nem ismert részvény oldala (csak a népszerű részvényeknek van oldala).
+String stockMissingPage(String lang) {
+  final hu = lang == 'hu';
+  return '${_head(lang: hu ? 'hu' : 'en', title: 'WhatStock', description: 'WhatStock', index: false)}'
+      '<div class="card"><h1>×</h1><p>${hu ? 'Ehhez a részvényhez nincs oldalunk – az appban bármelyiket megnézheted.' : 'We have no page for this stock – you can look up any stock in the app.'}</p>'
+      '<a class="btn" href="/stocks?lang=${hu ? 'hu' : 'en'}">${hu ? 'Részvények' : 'Stocks'}</a></div></main></body></html>';
+}
 
 /// A heti levél leiratkozó oldala (kétnyelvű): megerősítő gomb, majd a visszaigazolás.
 String unsubscribePage({required bool done, required bool known}) {
@@ -260,7 +270,7 @@ String landingPage({
             lang: lang,
             title: t['title']!,
             description: t['tagline']!,
-            url: publicUrl == null ? null : '$publicUrl/',
+            url: publicUrl == null ? null : '$publicUrl/?lang=$lang',
           ),
         )
         ..write('<div class="hero"><h1>WhatStock</h1><p>${_esc(t['tagline'])}</p></div>')

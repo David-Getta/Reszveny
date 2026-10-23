@@ -61,7 +61,7 @@ class Api {
     required this.verifier,
     Mailer? mailer,
     this.stripe,
-    this.publicUrl = 'http://localhost:8080',
+    String publicUrl = 'http://localhost:8080',
     http.Client? client,
     this.anthropicBaseUrl = 'https://api.anthropic.com',
     this.finnhubBaseUrl = 'https://finnhub.io/api/v1',
@@ -79,6 +79,8 @@ class Api {
     this.googleNotificationToken = '',
     this.trialPerIpPerDay = 10,
   }) : _client = client ?? http.Client(),
+       // A záró perjel nélkül (`…app/` → `…app`): különben minden link `//s/…` lenne.
+       publicUrl = publicUrl.replaceFirst(RegExp(r'/+$'), ''),
        mailer = mailer ?? ConsoleMailer(),
        quota = Quota(store),
        telemetry = TelemetryStore(store.database),
@@ -225,6 +227,8 @@ class Api {
       ..post('/v1/stripe/webhook', _stripeWebhook)
       ..get('/billing/success', (Request r) => _page('✓', 'Sikeres fizetés · Payment complete'))
       ..get('/billing/cancel', (Request r) => _page('×', 'A fizetés megszakadt · Payment cancelled'))
+      // Az előfizetés kezeléséből (lemondás, kártyacsere) vissza: semleges oldal.
+      ..get('/billing/return', (Request r) => _page('↩', 'WhatStock'))
       ..get('/healthz', (Request r) => Response.ok('ok'));
     return const Pipeline()
         .addMiddleware(_cors())
@@ -278,7 +282,7 @@ class Api {
     'display:grid;place-items:center;height:100vh;margin:0;text-align:center">'
     '<div><div style="font-size:48px;color:#D97757">$mark</div><h2>$text</h2>'
     '<p style="color:#A8A49B">Visszatérhetsz a WhatStock appba. · You can return to the WhatStock app.</p></div>',
-    headers: {'content-type': 'text/html; charset=utf-8'},
+    headers: {'content-type': 'text/html; charset=utf-8', 'x-robots-tag': 'noindex'},
   );
 
   Response _json(Object body, {int status = 200}) =>
@@ -295,10 +299,14 @@ class Api {
         final res = await inner(req);
         stdout.writeln(
           '${DateTime.now().toUtc().toIso8601String()}  ${watch.elapsed}  ${req.method.padRight(7)} '
-          '[${res.statusCode}] /${req.url.path}',
+          '[${res.statusCode}] /${logPath(req.url.path)}',
         );
         return res;
       };
+
+  /// A naplózott útvonal: a leiratkozó token és a megosztás azonosítója nélkül
+  /// (az útvonalban hordozott jogosultság se kerüljön a naplóba).
+  static String logPath(String path) => path.replaceFirstMapped(RegExp(r'^(u|s)/[^/]+'), (m) => '${m[1]}/…');
 
   /// A kérés törzsének legnagyobb mérete útvonalanként (a képes AI-kéréseknél
   /// nagyobb, máshol 1 MB): a túl nagy kérés be sem olvasódik (413).
@@ -648,7 +656,7 @@ class Api {
         closedPreview: invites.enabled,
         publicUrl: publicUrl,
       ),
-      headers: {'content-type': 'text/html; charset=utf-8'},
+      headers: {..._htmlType, 'vary': 'Accept-Language'},
     );
   }
 
@@ -657,7 +665,7 @@ class Api {
     final asked = (r.url.queryParameters['lang'] ?? r.headers['accept-language'] ?? '').toLowerCase();
     return Response.ok(
       pricingPage(lang: asked.startsWith('hu') ? 'hu' : 'en', askPerDay: askPerDayPaid, publicUrl: publicUrl),
-      headers: {'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=3600'},
+      headers: _langPage,
     );
   }
 
@@ -669,32 +677,42 @@ class Api {
   /// A fogalomtár oldala (a mutatók közérthető magyarázata, az app szövegei).
   Response _glossaryPage(Request r) => Response.ok(
     glossaryPage(lang: _pageLang(r), downloadBase: downloadBaseUrl, publicUrl: publicUrl),
-    headers: {'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=3600'},
+    headers: _langPage,
   );
 
   /// A minta-elemzés oldala (kitalált cég, az elemzés szerkezete).
   Response _samplePage(Request r) => Response.ok(
     samplePage(lang: _pageLang(r), downloadBase: downloadBaseUrl, publicUrl: publicUrl),
-    headers: {'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=3600'},
+    headers: _langPage,
   );
 
   Response _stocksIndex(Request r) => Response.ok(
     stocksIndexPage(lang: _pageLang(r), downloadBase: downloadBaseUrl, publicUrl: publicUrl),
-    headers: {'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=3600'},
+    headers: _langPage,
   );
 
   /// Egy népszerű részvény oldala; más tickerre 404 (nem nyílt Finnhub-proxy).
   Future<Response> _stockPage(Request r, String symbol) async {
     final sym = Uri.decodeComponent(symbol).toUpperCase();
-    if (!popularStocks.contains(sym)) return Response.notFound(shareMissingPage(), headers: _htmlType);
+    if (!popularStocks.contains(sym)) return Response.notFound(stockMissingPage(_pageLang(r)), headers: _htmlType);
     final facts = await _stockFacts(sym);
+    // Az adatforrás hibájakor (se név, se ár) az üres oldal nem kerül nyilvános gyorsítótárba.
+    final failed = facts.name == null && facts.price == null;
     return Response.ok(
       stockPage(facts, lang: _pageLang(r), downloadBase: downloadBaseUrl, publicUrl: publicUrl),
-      headers: {..._htmlType, 'cache-control': 'public, max-age=900'},
+      headers: {..._htmlType, 'cache-control': failed ? 'no-store' : 'public, max-age=900', 'vary': 'Accept-Language'},
     );
   }
 
   static const _htmlType = {'content-type': 'text/html; charset=utf-8'};
+
+  /// A böngésző nyelvétől függő, nyilvánosan gyorsítótárazható oldal: a `Vary`
+  /// nélkül egy köztes gyorsítótár az első látogató nyelvét adná mindenkinek.
+  static const _langPage = {
+    'content-type': 'text/html; charset=utf-8',
+    'cache-control': 'public, max-age=3600',
+    'vary': 'Accept-Language',
+  };
 
   /// Részvény-adatok gyorsítótára (1 óra), hogy a keresőrobotok ne fogyasszák a Finnhub-keretet.
   final _factsCache = <String, (DateTime, StockFacts)>{};
@@ -750,6 +768,9 @@ class Api {
     if (facts.name != null || facts.price != null) {
       final at = m.isEmpty ? DateTime.now().subtract(const Duration(minutes: 50)) : DateTime.now();
       _factsCache[symbol] = (at, facts);
+    } else {
+      // Hibánál egy percig nem kérdezzük újra (a korlátozó adatforrást ne terheljük tovább).
+      _factsCache[symbol] = (DateTime.now().subtract(const Duration(minutes: 59)), facts);
     }
     return facts;
   }
@@ -796,7 +817,12 @@ class Api {
     if (adminToken.isEmpty) return Response.notFound('not found');
     final ipKey = _ipKey(_clientIp(r) ?? '-');
     if (_adminFailures.blocked(ipKey)) return _error(429, 'rate_limited');
-    final key = Uri.splitQueryString(await r.readAsString())['key'];
+    String? key;
+    try {
+      key = Uri.splitQueryString(await r.readAsString())['key'];
+    } catch (_) {
+      key = null; // Hibás űrlap: rossz kulcsként számít.
+    }
     if (!_isAdmin(key)) {
       _adminFailures.hit(ipKey);
       return _html(adminLoginPage(wrong: true), status: 403);
@@ -819,9 +845,16 @@ class Api {
   /// Ugyanez JSON-ban, `Authorization: Bearer <ADMIN_TOKEN>` fejléccel (szkriptekhez).
   Response _adminStatsJson(Request r) {
     if (adminToken.isEmpty) return Response.notFound('not found');
-    if (!_isAdmin(_token(r))) return _error(403, 'forbidden');
+    // Ugyanaz a találgatás-korlát, mint az űrlapon.
+    final ipKey = _ipKey(_clientIp(r) ?? '-');
+    if (_adminFailures.blocked(ipKey)) return _error(429, 'rate_limited');
+    if (!_isAdmin(_token(r))) {
+      _adminFailures.hit(ipKey);
+      return _error(403, 'forbidden');
+    }
     final days = int.tryParse(r.url.queryParameters['days'] ?? '')?.clamp(1, 400) ?? 30;
-    return _json({...telemetry.stats(days: days), 'testers': _testerStats()});
+    return _json({...telemetry.stats(days: days), 'testers': _testerStats()})
+        .change(headers: {'cache-control': 'no-store'});
   }
 
   // ---- Szerver oldali riasztásfigyelés ----
@@ -1189,7 +1222,7 @@ class Api {
       final f = File('$legalDir/$name.$lang.md');
       if (!f.existsSync()) continue;
       final body = md.markdownToHtml(await f.readAsString(), extensionSet: md.ExtensionSet.gitHubWeb);
-      return Response.ok(_legalPage(body, lang), headers: {'content-type': 'text/html; charset=utf-8'});
+      return Response.ok(_legalPage(body, lang), headers: {..._htmlType, 'vary': 'Accept-Language'});
     }
     return Response.notFound(
       _legalPage('<h1>WhatStock</h1><p>Ez a dokumentum még nincs közzétéve. · Not published yet.</p>', 'hu'),
@@ -1249,7 +1282,7 @@ class Api {
     final customer = store.stripeOf(uid).customerId;
     if (customer == null) return _error(404, 'no_customer');
     try {
-      return _json({'url': await s.createPortalSession(customerId: customer, returnUrl: '$publicUrl/billing/success')});
+      return _json({'url': await s.createPortalSession(customerId: customer, returnUrl: '$publicUrl/billing/return')});
     } on StripeException catch (e) {
       return _error(502, 'stripe_error', e.message);
     }
