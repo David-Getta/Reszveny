@@ -371,6 +371,21 @@ void main() {
     expect(find.byKey(const ValueKey('watch-list-new')), findsOneWidget);
   });
 
+  test('deleting or renaming a list also marks its members, so an old device cannot bring them back', () async {
+    final p = AppPreferences();
+    await p.addWatchList('Tech');
+    await p.toggleInList('Tech', 'AAPL');
+    await p.removeWatchList('Tech');
+    expect(
+      p.listsRemovedJson.keys,
+      containsAll([AppPreferences.listKey('Tech'), AppPreferences.itemKey('Tech', 'AAPL')]),
+    );
+    await p.addWatchList('Chips');
+    await p.toggleInList('Chips', 'NVDA');
+    await p.renameWatchList('Chips', 'Semis');
+    expect(p.listsRemovedJson.keys, contains(AppPreferences.itemKey('Chips', 'NVDA')));
+  });
+
   test('favorites are kept upper-case and without repeats', () async {
     final p = AppPreferences();
     await p.setFavorites(['aapl', 'AAPL', ' msft', '']);

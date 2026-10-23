@@ -52,15 +52,25 @@ class _Server {
 }
 
 class _Device {
-  _Device(_Server server, {List<String> favorites = const []})
+  _Device(_Server server, {List<String> favorites = const [], String email = 'dave@example.com'})
     : preferences = AppPreferences(favorites: favorites),
       portfolio = PortfolioStore(),
       alerts = AlertStore(),
       notes = NotesStore() {
+    _connect(server, email);
+  }
+
+  /// Ugyanez az eszköz (ugyanazok a tárolók) egy másik fiókkal és szerverrel.
+  void switchTo(_Server server, String email) {
+    sync.dispose();
+    _connect(server, email);
+  }
+
+  void _connect(_Server server, String email) {
     final backend = BackendClient(baseUrl: 'https://api.test', inner: server.client, tokenLoader: () async => 'tok');
     sync = SyncService(
       backend: backend,
-      account: AccountController(backend: backend, entitlements: EntitlementService(), storedEmail: 'dave@example.com'),
+      account: AccountController(backend: backend, entitlements: EntitlementService(), storedEmail: email),
       preferences: preferences,
       portfolio: portfolio,
       alerts: alerts,
@@ -73,11 +83,11 @@ class _Device {
   final PortfolioStore portfolio;
   final AlertStore alerts;
   final NotesStore notes;
-  late final SyncService sync;
+  late SyncService sync;
 }
 
 void main() {
-  test('the e-mail switches: the later change wins; without times the local one, as before', () {
+  test('the e-mail switches: the later change wins; a device that never set them takes the account\'s', () {
     final older = DateTime.utc(2026, 10, 1).toIso8601String(), newer = DateTime.utc(2026, 10, 20).toIso8601String();
     // Az egyik eszközön kikapcsolta; a másikon helyi változás miatt összefésül – nem kapcsolja vissza.
     final off = SyncService.merge(
@@ -101,8 +111,100 @@ void main() {
       },
     );
     expect((on['email_alerts'], on['weekly_digest']), (true, false));
-    final legacy = SyncService.merge({'email_alerts': true}, {'email_alerts': false});
-    expect(legacy['email_alerts'], true);
+    // Egy új eszköz alapértékei (idő nélkül) nem írják felül a fiók beállítását.
+    final fresh = SyncService.merge(
+      {'email_alerts': true, 'weekly_digest': false},
+      {'email_alerts': false, 'weekly_digest': true},
+    );
+    expect((fresh['email_alerts'], fresh['weekly_digest']), (false, true));
+    // Régi csomag (a mező nélkül): a helyi marad.
+    expect(SyncService.merge({'email_alerts': false}, const {})['email_alerts'], false);
+  });
+
+  test('signing in to another account on this device does not carry the previous account\'s data over', () async {
+    SharedPreferences.setMockInitialValues({});
+    final first = _Server();
+    final d = _Device(first, favorites: ['AAPL']);
+    await d.portfolio.add(symbol: 'AAPL', quantity: 10, price: 180, currency: 'USD');
+    await d.notes.set('AAPL', 'private');
+    await d.sync.start();
+    expect((first.data!['lots'] as List), hasLength(1));
+
+    // Másik, még üres fiók: semmi nem kerül át, a készülék üresen indul.
+    final second = _Server();
+    d.switchTo(second, 'eve@example.com');
+    await d.sync.start();
+    expect(second.data!['lots'], isEmpty);
+    expect(second.data!['notes'], isEmpty);
+    expect(second.data!['favorites'], isEmpty);
+    expect(d.portfolio.lots, isEmpty);
+    expect(d.notes.of('AAPL'), isNull);
+
+    // Vissza az elsőre: a saját adatai jönnek vissza, a második fiók semmije nem kerül bele.
+    await d.preferences.setFavorites(['EVE']);
+    d.switchTo(first, 'dave@example.com');
+    await d.sync.start();
+    expect(d.portfolio.lots.single.symbol, 'AAPL');
+    expect(d.preferences.favorites, ['AAPL']);
+    expect(first.data!['favorites'], ['AAPL']);
+  });
+
+  test('portfolio targets: the newer whole setting wins, and removing them reaches the other device', () {
+    final older = DateTime.utc(2026, 10, 1).toIso8601String(), newer = DateTime.utc(2026, 10, 20).toIso8601String();
+    final cleared = SyncService.merge(
+      {
+        'targets': {'AAPL': 50.0, 'MSFT': 50.0},
+        'targets_at': older,
+      },
+      {'targets': <String, double>{}, 'targets_at': newer},
+    );
+    expect(cleared['targets'], isEmpty);
+    final edited = SyncService.merge(
+      {
+        'targets': {'AAPL': 100.0},
+        'targets_at': newer,
+      },
+      {
+        'targets': {'AAPL': 50.0, 'MSFT': 50.0},
+        'targets_at': older,
+      },
+    );
+    expect(edited['targets'], {'AAPL': 100.0});
+    expect(edited['targets_at'], newer);
+    // Régi csomagok (idő nélkül): tickerenként a helyi elöl, mint eddig.
+    expect(
+      SyncService.merge(
+        {
+          'targets': {'AAPL': 60.0},
+        },
+        {
+          'targets': {'AAPL': 40.0, 'KO': 40.0},
+        },
+      )['targets'],
+      {'AAPL': 60.0, 'KO': 40.0},
+    );
+  });
+
+  test('a downloaded package replaces the stores at once; a later local change is still to be uploaded', () async {
+    SharedPreferences.setMockInitialValues({});
+    final d = _Device(_Server());
+    final r = SyncService.applyNow(
+      {
+        ...SyncService.emptyPackage,
+        'favorites': ['NVDA'],
+        'lots': [
+          {'id': 'x', 'symbol': 'NVDA', 'quantity': 1, 'price': 100, 'currency': 'USD'},
+        ],
+      },
+      preferences: d.preferences,
+      portfolio: d.portfolio,
+      alerts: d.alerts,
+      notes: d.notes,
+    );
+    // Még a mentés előtt: minden tároló az új adatot mutatja.
+    expect(d.preferences.favorites, ['NVDA']);
+    expect(d.portfolio.lots.single.symbol, 'NVDA');
+    await r.saved;
   });
 
   test('two devices of one account end up with the same data; nothing is lost on conflicts', () async {

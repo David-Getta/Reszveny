@@ -6,8 +6,9 @@ library;
 const tombstoneDays = 180;
 
 /// Legfeljebb ennyi (a legújabb) jelzés megy tovább, hogy egy nagy import
-/// többszöri visszavonása se fújja fel a szinkron-csomagot (a szerveren 512 KB).
-const maxTombstones = 1000;
+/// többszöri visszavonása se fújja fel a szinkron-csomagot (a szerveren 2 MB);
+/// egy több ezer tételes import visszavonása is elfér benne.
+const maxTombstones = 5000;
 
 /// A jelzések JSON-alakja, a lejártak nélkül, a legújabbak közül [maxTombstones].
 Map<String, String> tombstonesJson(Map<String, DateTime> deleted, {DateTime? now}) {

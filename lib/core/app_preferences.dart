@@ -40,6 +40,7 @@ class AppPreferences extends ChangeNotifier {
     this.portfolioGoalNotified,
     List<WatchList> watchLists = const [],
     Map<String, double> targets = const {},
+    this.targetsAt,
     Map<String, String> sorts = const {},
     this.benchmark,
     Map<String, DateTime> favoriteSince = const {},
@@ -222,6 +223,7 @@ class AppPreferences extends ChangeNotifier {
   static const _portfolioMoveNotifiedKey = 'portfolio_move_notified';
   static const _portfolioGoalNotifiedKey = 'portfolio_goal_notified';
   static const _targetsKey = 'portfolio_targets';
+  static const _targetsAtKey = 'portfolio_targets_at';
   static const _goalKey = 'portfolio_goal';
   static const _dividendGoalKey = 'dividend_goal';
   static const _goalsAtKey = 'goals_at';
@@ -502,15 +504,18 @@ class AppPreferences extends ChangeNotifier {
   };
 
   /// A szinkronból kapott célok átvétele a csomag idejével (nem most bélyegezve).
-  Future<void> applyGoals(Map<String, ({({double amount, String currency})? goal, DateTime? at})> goals) async {
+  /// Mindkét cél a memóriában egyszerre cserélődik, a mentés utána fut.
+  Future<void> applyGoals(Map<String, ({({double amount, String currency})? goal, DateTime? at})> goals) {
+    final saves = <Future<void>>[];
     if (goals[goalPortfolio] case final g?) {
       portfolioGoal = g.goal;
-      await _saveGoal(goalPortfolio, _goalKey, g.goal, g.at, fromSync: true);
+      saves.add(_saveGoal(goalPortfolio, _goalKey, g.goal, g.at, fromSync: true));
     }
     if (goals[goalDividend] case final g?) {
       dividendGoal = g.goal;
-      await _saveGoal(goalDividend, _dividendGoalKey, g.goal, g.at, fromSync: true);
+      saves.add(_saveGoal(goalDividend, _dividendGoalKey, g.goal, g.at, fromSync: true));
     }
+    return Future.wait(saves);
   }
 
   /// Értesítés, ha a teljes portfólió egy nap alatt legalább ennyi %-ot mozdul (0: ki).
@@ -533,16 +538,28 @@ class AppPreferences extends ChangeNotifier {
   /// Célarányok a portfólióban (ticker → százalék).
   Map<String, double> get targets => Map.unmodifiable(_targets);
 
-  Future<void> setTargets(Map<String, double> targets) async {
+  /// A célarányok utolsó módosítása (a szinkronban az újabb teljes beállítás nyer,
+  /// a törlés is); `null`, ha ezen az eszközön még nem állították.
+  DateTime? targetsAt;
+
+  /// A célarányok cseréje. [fromSync] nélkül (a felhasználó állította) most
+  /// bélyegezve; a szinkron a csomag idejével hívja (idő nélkül a helyi marad).
+  Future<void> setTargets(Map<String, double> targets, {DateTime? at, bool fromSync = false}) async {
     _targets
       ..clear()
       ..addAll({
         for (final e in targets.entries)
           if (e.value > 0 && e.value <= 100) e.key.toUpperCase(): e.value,
       });
+    targetsAt = fromSync ? (at?.toUtc() ?? targetsAt) : DateTime.now().toUtc();
     notifyListeners();
-    await _save((p) => p.setString(_targetsKey, jsonEncode(_targets)));
+    await _saveTargets();
   }
+
+  Future<void> _saveTargets() => _save((p) async {
+    await p.setString(_targetsKey, jsonEncode(_targets));
+    await (targetsAt == null ? p.remove(_targetsAtKey) : p.setString(_targetsAtKey, targetsAt!.toIso8601String()));
+  });
 
   /// A tárolt célarányok beolvasása (hibás érték kimarad).
   static Map<String, double> parseTargets(Object? raw) {
@@ -645,6 +662,7 @@ class AppPreferences extends ChangeNotifier {
         portfolioGoalNotified: str(_portfolioGoalNotifiedKey),
         watchLists: WatchList.parseAll(str(_listsKey)),
         targets: parseTargets(str(_targetsKey)),
+        targetsAt: DateTime.tryParse(str(_targetsAtKey) ?? '')?.toUtc(),
         sorts: parseSorts(str(_sortsKey)),
         benchmark: str(_benchmarkKey),
         favoriteSince: parseFavoriteSince(str(_favoriteSinceKey)),
@@ -742,6 +760,7 @@ class AppPreferences extends ChangeNotifier {
       _listMark(listKey(l.name), added: false);
       _listMark(listKey(n), added: true);
       for (final s in l.symbols) {
+        _listMark(itemKey(l.name, s), added: false);
         _listMark(itemKey(n, s), added: true);
       }
     }
@@ -749,7 +768,14 @@ class AppPreferences extends ChangeNotifier {
     return true;
   }
 
+  /// A lista és a tagjai is töröltnek jelölve: egy újra létrehozott, azonos nevű
+  /// listába egy régi eszköz nem hozza vissza a régi tagokat.
   Future<void> removeWatchList(String name) async {
+    for (final l in _lists.where((l) => l.name.toLowerCase() == name.toLowerCase())) {
+      for (final s in l.symbols) {
+        _listMark(itemKey(l.name, s), added: false);
+      }
+    }
     _lists.removeWhere((l) => l.name.toLowerCase() == name.toLowerCase());
     _listMark(listKey(name), added: false);
     await _saveLists();
@@ -830,7 +856,10 @@ class AppPreferences extends ChangeNotifier {
       }
       _unmarkFavorite(f);
     }
-    if (_targets.remove(f) case final target?) _targets[t] = ((_targets[t] ?? 0) + target).clamp(0, 100).toDouble();
+    if (_targets.remove(f) case final target?) {
+      _targets[t] = ((_targets[t] ?? 0) + target).clamp(0, 100).toDouble();
+      targetsAt = DateTime.now().toUtc();
+    }
     for (final (n, l) in _lists.indexed) {
       if (!l.symbols.contains(f)) continue;
       _lists[n] = WatchList(name: l.name, symbols: {for (final s in l.symbols) s == f ? t : s}.toList());
@@ -838,7 +867,7 @@ class AppPreferences extends ChangeNotifier {
       _listMark(itemKey(l.name, t), added: true);
     }
     await _saveFavorites();
-    await _save((p) => p.setString(_targetsKey, jsonEncode(_targets)));
+    await _saveTargets();
     await _saveLists();
   }
 
@@ -1029,6 +1058,7 @@ class AppPreferences extends ChangeNotifier {
     _recent = [];
     _lists.clear();
     _targets.clear();
+    targetsAt = null;
     _sorts.clear();
     portfolioGoal = null;
     dividendGoal = null;
@@ -1045,6 +1075,7 @@ class AppPreferences extends ChangeNotifier {
         _recentKey,
         _listsKey,
         _targetsKey,
+        _targetsAtKey,
         _sortsKey,
         _goalKey,
         _dividendGoalKey,

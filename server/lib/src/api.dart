@@ -305,6 +305,7 @@ class Api {
   static int bodyLimit(String path) => switch (path) {
     'v1/analyze' || 'v1/anthropic/v1/messages' => analyzeMaxBytes,
     'v1/share' => 2 * 1024 * 1024,
+    'v1/sync' => syncMaxBytes + 64 * 1024,
     _ => 1024 * 1024,
   };
 
@@ -956,7 +957,7 @@ class Api {
   // ---- Szinkron (e-mailes fiókhoz) ----
 
   /// A szinkronizált adatok legnagyobb mérete.
-  static const syncMaxBytes = 512 * 1024;
+  static const syncMaxBytes = 2 * 1024 * 1024;
 
   Future<Response> _getSync(Request r) async {
     final uid = _userId(r);

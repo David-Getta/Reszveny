@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart' show AppLifecycleListener;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/app_preferences.dart';
@@ -86,12 +87,25 @@ class SyncService extends ChangeNotifier {
     _lastJson = jsonEncode(snapshot());
     _wasSignedIn = account.isSignedIn;
     account.addListener(_accountChanged);
+    // Visszatéréskor (előtérbe kerülve) friss adat a többi eszközről.
+    try {
+      _lifecycle = AppLifecycleListener(
+        onResume: () {
+          if (account.isSignedIn) unawaited(syncNow());
+        },
+      );
+    } catch (_) {
+      // Flutter-kötés nélkül (pl. egységtesztben) nincs életciklus-figyelés.
+    }
     if (account.isSignedIn) await syncNow();
   }
+
+  AppLifecycleListener? _lifecycle;
 
   @override
   void dispose() {
     _timer?.cancel();
+    _lifecycle?.dispose();
     for (final l in [preferences, portfolio, alerts, notes]) {
       l.removeListener(_localChanged);
     }
@@ -152,7 +166,9 @@ class SyncService extends ChangeNotifier {
     'favorites_added': preferences.favoritesAddedJson,
     'favorite_since': preferences.favoriteSinceJson,
     'watch_lists': [for (final l in preferences.watchLists) l.toJson()],
-    if (preferences.targets.isNotEmpty) 'targets': preferences.targets,
+    // Üresen is szerepel (a törlés is átjut), az idejével: az újabb teljes beállítás nyer.
+    'targets': preferences.targets,
+    'targets_at': ?preferences.targetsAt?.toIso8601String(),
     'goals': preferences.goalsJson,
     // A számla és a díj üresen is szerepel: így a javításkor törölt érték
     // megkülönböztethető attól, hogy egy régebbi app nem ismerte (az kihagyja).
@@ -166,7 +182,9 @@ class SyncService extends ChangeNotifier {
     'deleted': portfolio.deletedJson,
     'cash': portfolio.cash,
     'cash_at': portfolio.cashAtJson,
-    'alerts': [for (final a in alerts.alerts) a.toJson()],
+    // A tárolt sorrendben (az `alerts` nézet a legújabbat teszi előre; így egy másik
+    // eszköz nem fordítja meg minden szinkronnál).
+    'alerts': [for (final a in alerts.alerts.toList().reversed) a.toJson()],
     'alerts_deleted': alerts.deletedJson,
     'notes': {for (final e in notes.all.entries) e.key: e.value.toJson()},
     'notes_deleted': notes.deletedJson,
@@ -285,9 +303,11 @@ class SyncService extends ChangeNotifier {
     // nélkül (régi app, vagy sosem állították) a helyi, mint eddig.
     final localAt = parseTombstones(local['switches_at']), remoteAt = parseTombstones(remote['switches_at']);
     final switchesAt = unionTombstones(local['switches_at'], remote['switches_at']);
+    // Ha a helyi oldal még nem állította (nincs ideje: alapérték vagy régi app), a
+    // fiók értéke nyer – egy új eszköz alapértékei nem írják felül a beállítást.
     Object switchOf(String key, bool fallback) {
       final l = localAt[key], r = remoteAt[key];
-      final first = r != null && (l == null || r.isAfter(l)) ? remote : local;
+      final first = l == null || (r != null && r.isAfter(l)) ? remote : local;
       final second = identical(first, local) ? remote : local;
       return first[key] ?? second[key] ?? fallback;
     }
@@ -307,8 +327,7 @@ class SyncService extends ChangeNotifier {
       'watch_lists': lists.lists,
       'lists_removed': tombstonesJson(lists.removed),
       'lists_added': {for (final e in lists.added.entries) e.key: e.value.toUtc().toIso8601String()},
-      // Célarányok: tickerenként a helyi nyer.
-      'targets': {...AppPreferences.parseTargets(remote['targets']), ...AppPreferences.parseTargets(local['targets'])},
+      ...mergeTargets(local, remote),
       // Kedvencenként a felvételi nap: azonos tickernél a helyi marad (mint a többi tételnél) –
       // így egy levétel és újrafelvétel nem veszik el a másik eszköz régebbi napja miatt.
       'favorite_since': {
@@ -351,6 +370,19 @@ class SyncService extends ChangeNotifier {
       if (newest != null) at[c] = newest.toIso8601String();
     }
     return (cash: cash, at: at);
+  }
+
+  /// Célarányok: az újabb (időbélyeggel) teljes beállítás nyer, a törlés is; ha
+  /// egyik oldalnak sincs ideje (régi csomag), tickerenként a helyi elöl.
+  static Map<String, dynamic> mergeTargets(Map<String, dynamic> local, Map<String, dynamic> remote) {
+    final lt = DateTime.tryParse('${local['targets_at'] ?? ''}'),
+        rt = DateTime.tryParse('${remote['targets_at'] ?? ''}');
+    final l = AppPreferences.parseTargets(local['targets']), r = AppPreferences.parseTargets(remote['targets']);
+    final remoteWins = rt != null && (lt == null || rt.isAfter(lt));
+    return {
+      'targets': remoteWins ? r : (lt != null ? l : {...r, ...l}),
+      'targets_at': ?(remoteWins ? rt : lt)?.toUtc().toIso8601String(),
+    };
   }
 
   /// Célok (portfólió-célérték, havi osztalékcél): fajtánként az újabb módosítás
@@ -429,12 +461,16 @@ class SyncService extends ChangeNotifier {
   Future<bool> _apply(Map<String, dynamic> data) async {
     _applying = true;
     _lastJson = null;
+    final ({bool kept, Future<void> saved}) r;
     try {
-      return await applyTo(data, preferences: preferences, portfolio: portfolio, alerts: alerts, notes: notes);
+      r = applyNow(data, preferences: preferences, portfolio: portfolio, alerts: alerts, notes: notes);
     } finally {
+      // A csere után azonnal: a mentés alatt történt helyi változás már feltöltendő.
       _applying = false;
       _lastJson = jsonEncode(snapshot());
     }
+    await r.saved;
+    return r.kept;
   }
 
   /// Egy csomag átvétele a helyi tárolókba (a meglévők helyére). Igaz, ha egy
@@ -447,23 +483,41 @@ class SyncService extends ChangeNotifier {
     required AlertStore alerts,
     required NotesStore notes,
   }) async {
+    final r = applyNow(data, preferences: preferences, portfolio: portfolio, alerts: alerts, notes: notes);
+    await r.saved;
+    return r.kept;
+  }
+
+  /// Mint az [applyTo], de a tárolók memóriabeli cseréje szinkron, egy lépésben
+  /// történik (a mentés utána fut): közben nem kerülhet be egy helyi változás, amit a
+  /// csere felülírna vagy a szinkron „már feltöltöttnek” látna.
+  static ({bool kept, Future<void> saved}) applyNow(
+    Map<String, dynamic> data, {
+    required AppPreferences preferences,
+    required PortfolioStore portfolio,
+    required AlertStore alerts,
+    required NotesStore notes,
+  }) {
+    final saves = <Future<void>>[];
     // Régi csomagban nincs felvételi nap: akkor a helyiek maradnak (a kedvencekre szűkítve).
     final favorites = [for (final f in (data['favorites'] as List? ?? const [])) '$f'];
-    await preferences.setFavorites(favorites, since: AppPreferences.parseFavoriteSince(data['favorite_since']));
+    saves.add(preferences.setFavorites(favorites, since: AppPreferences.parseFavoriteSince(data['favorite_since'])));
     // A kedvencek jelzései a csomag szerint; régi csomagban nincsenek: a helyiek
     // maradnak, a csomagban szereplő kedvencek levételi jelzése nélkül.
-    await preferences.replaceFavoriteMarks(
-      removed: data['favorites_removed'] is Map
-          ? parseTombstones(data['favorites_removed'])
-          : _without(preferences.favoritesRemovedJson, favorites.map((f) => f.toUpperCase()).toSet()),
-      added: data['favorites_added'] is Map
-          ? parseTombstones(data['favorites_added'])
-          : parseTombstones(preferences.favoritesAddedJson),
+    saves.add(
+      preferences.replaceFavoriteMarks(
+        removed: data['favorites_removed'] is Map
+            ? parseTombstones(data['favorites_removed'])
+            : _without(preferences.favoritesRemovedJson, favorites.map((f) => f.toUpperCase()).toSet()),
+        added: data['favorites_added'] is Map
+            ? parseTombstones(data['favorites_added'])
+            : parseTombstones(preferences.favoritesAddedJson),
+      ),
     );
     // Régi csomagban nincs ilyen mező: akkor a helyi listák maradnak.
     if (data['watch_lists'] is List) {
       final lists = [for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)];
-      await preferences.setWatchLists(lists);
+      saves.add(preferences.setWatchLists(lists));
       // A listák jelzései a csomag szerint; régi csomagban nincsenek: a helyiek
       // maradnak, a csomagban szereplő listák és tagok levételi jelzése nélkül.
       final present = {
@@ -472,29 +526,43 @@ class SyncService extends ChangeNotifier {
           for (final s in l.symbols) AppPreferences.itemKey(l.name, s),
         ],
       };
-      await preferences.replaceListMarks(
-        removed: data['lists_removed'] is Map
-            ? parseTombstones(data['lists_removed'])
-            : _without(preferences.listsRemovedJson, present),
-        added: data['lists_added'] is Map
-            ? parseTombstones(data['lists_added'])
-            : parseTombstones(preferences.listsAddedJson),
+      saves.add(
+        preferences.replaceListMarks(
+          removed: data['lists_removed'] is Map
+              ? parseTombstones(data['lists_removed'])
+              : _without(preferences.listsRemovedJson, present),
+          added: data['lists_added'] is Map
+              ? parseTombstones(data['lists_added'])
+              : parseTombstones(preferences.listsAddedJson),
+        ),
       );
     }
-    if (data['targets'] is Map) await preferences.setTargets(AppPreferences.parseTargets(data['targets']));
+    if (data['targets'] is Map) {
+      saves.add(
+        preferences.setTargets(
+          AppPreferences.parseTargets(data['targets']),
+          at: DateTime.tryParse('${data['targets_at'] ?? ''}'),
+          fromSync: true,
+        ),
+      );
+    }
     // Régi csomagban nincs cél: akkor a helyiek maradnak.
-    if (data['goals'] is Map) await preferences.applyGoals(AppPreferences.parseGoals(data['goals']));
+    if (data['goals'] is Map) saves.add(preferences.applyGoals(AppPreferences.parseGoals(data['goals'])));
     if (data['cash'] is Map) {
-      await portfolio.replaceAllCash(
-        PortfolioStore.parseCashMap(data['cash']),
-        // Régi csomagban nincs időbélyeg: akkor a helyiek maradnak.
-        at: data['cash_at'] is Map ? PortfolioStore.parseCashAt(data['cash_at']) : null,
+      saves.add(
+        portfolio.replaceAllCash(
+          PortfolioStore.parseCashMap(data['cash']),
+          // Régi csomagban nincs időbélyeg: akkor a helyiek maradnak.
+          at: data['cash_at'] is Map ? PortfolioStore.parseCashAt(data['cash_at']) : null,
+        ),
       );
     }
-    await preferences.applySwitches(
-      emailAlerts: data['email_alerts'] != false,
-      weeklyDigest: data['weekly_digest'] == true,
-      at: parseTombstones(data['switches_at']),
+    saves.add(
+      preferences.applySwitches(
+        emailAlerts: data['email_alerts'] != false,
+        weeklyDigest: data['weekly_digest'] == true,
+        at: parseTombstones(data['switches_at']),
+      ),
     );
     // A számlát és a díjat nem ismerő (régebbi) app a tételt a mezők nélkül tölti
     // vissza: azonos tételnél ilyenkor a helyi számla és díj marad. Ha a mező ott
@@ -506,58 +574,70 @@ class SyncService extends ChangeNotifier {
     }
 
     final local = {for (final l in portfolio.lots) l.id: l};
-    await portfolio.replaceAll([
-      for (final j in _maps(data['lots']))
-        ?PortfolioLot.fromJson(
-          keep(j, {
-            if (local['${j['id']}'] case final l?) ...{
-              if (l.account case final a? when !j.containsKey('account')) 'account': a,
-              if (l.fee > 0 && !j.containsKey('fee')) 'fee': l.fee,
-            },
-          }),
-        ),
-    ]);
+    saves.add(
+      portfolio.replaceAll([
+        for (final j in _maps(data['lots']))
+          ?PortfolioLot.fromJson(
+            keep(j, {
+              if (local['${j['id']}'] case final l?) ...{
+                if (l.account case final a? when !j.containsKey('account')) 'account': a,
+                if (l.fee > 0 && !j.containsKey('fee')) 'fee': l.fee,
+              },
+            }),
+          ),
+      ]),
+    );
     // Régi csomagban (korábbi app) nincs osztaléklista: akkor a helyi marad.
     if (data['dividends'] is List) {
       // Az osztalék számlája is megmarad, ha egy régebbi app nélküle töltötte vissza.
       final localDividend = {for (final d in portfolio.dividends) d.id: d};
-      await portfolio.replaceAllDividends([
-        for (final j in _maps(data['dividends']))
-          ?DividendRecord.fromJson(
-            keep(j, {
-              if (localDividend['${j['id']}']?.account case final a? when !j.containsKey('account')) 'account': a,
-            }),
-          ),
-      ]);
+      saves.add(
+        portfolio.replaceAllDividends([
+          for (final j in _maps(data['dividends']))
+            ?DividendRecord.fromJson(
+              keep(j, {
+                if (localDividend['${j['id']}']?.account case final a? when !j.containsKey('account')) 'account': a,
+              }),
+            ),
+        ]),
+      );
     }
     if (data['splits'] is List) {
-      await portfolio.replaceAllSplits([for (final j in _maps(data['splits'])) ?SplitRecord.fromJson(j)]);
+      saves.add(portfolio.replaceAllSplits([for (final j in _maps(data['splits'])) ?SplitRecord.fromJson(j)]));
     }
     // A törlési jelzések a csomag szerint; régi csomagban nincsenek: a helyiek
     // maradnak, a csomagban szereplő tételeké nélkül (különben később törölnék).
-    await portfolio.replaceAllDeleted(
-      data['deleted'] is Map
-          ? parseTombstones(data['deleted'])
-          : _without(portfolio.deletedJson, {
-              for (final key in ['lots', 'dividends', 'splits'])
-                for (final j in _maps(data[key])) '${j['id']}',
-            }),
+    saves.add(
+      portfolio.replaceAllDeleted(
+        data['deleted'] is Map
+            ? parseTombstones(data['deleted'])
+            : _without(portfolio.deletedJson, {
+                for (final key in ['lots', 'dividends', 'splits'])
+                  for (final j in _maps(data[key])) '${j['id']}',
+              }),
+      ),
     );
-    await alerts.replaceAll([for (final j in _maps(data['alerts'])) ?PriceAlert.fromJson(j)]);
-    await alerts.replaceAllDeleted(
-      data['alerts_deleted'] is Map
-          ? parseTombstones(data['alerts_deleted'])
-          : _without(alerts.deletedJson, {for (final j in _maps(data['alerts'])) '${j['id']}'}),
+    saves.add(alerts.replaceAll([for (final j in _maps(data['alerts'])) ?PriceAlert.fromJson(j)]));
+    saves.add(
+      alerts.replaceAllDeleted(
+        data['alerts_deleted'] is Map
+            ? parseTombstones(data['alerts_deleted'])
+            : _without(alerts.deletedJson, {for (final j in _maps(data['alerts'])) '${j['id']}'}),
+      ),
     );
-    await notes.replaceAll({
-      for (final e in (data['notes'] as Map? ?? const {}).entries) '${e.key}': ?StockNote.fromJson(e.value),
-    });
-    await notes.replaceAllDeleted(
-      data['notes_deleted'] is Map
-          ? parseTombstones(data['notes_deleted'])
-          : _without(notes.deletedJson, {...?(data['notes'] as Map?)?.keys.map((k) => '$k')}),
+    saves.add(
+      notes.replaceAll({
+        for (final e in (data['notes'] as Map? ?? const {}).entries) '${e.key}': ?StockNote.fromJson(e.value),
+      }),
     );
-    return kept;
+    saves.add(
+      notes.replaceAllDeleted(
+        data['notes_deleted'] is Map
+            ? parseTombstones(data['notes_deleted'])
+            : _without(notes.deletedJson, {...?(data['notes'] as Map?)?.keys.map((k) => '$k')}),
+      ),
+    );
+    return (kept: kept, saved: Future.wait(saves));
   }
 
   /// Feltöltés csak akkor, ha a szerveren még a [base] változat van (különben 409).
@@ -597,20 +677,69 @@ class SyncService extends ChangeNotifier {
         }
       }
       _failed = false;
+      _retryDelay = retryStart;
+      // Futás közben is: egy másik eszköz változása magától is megérkezik.
+      _schedule(pullInterval);
     } catch (e) {
       debugPrint('Szinkron nem sikerült: $e');
       _failed = true;
+      // Újrapróbálás egyre ritkábban (ahogy a felület is ígéri).
+      _schedule(_retryDelay);
+      _retryDelay = _retryDelay * 2 > retryMax ? retryMax : _retryDelay * 2;
     } finally {
       _busy = false;
       notifyListeners();
     }
   }
 
+  static const retryStart = Duration(seconds: 30);
+  static const retryMax = Duration(minutes: 30);
+  static const pullInterval = Duration(minutes: 15);
+  Duration _retryDelay = retryStart;
+
+  void _schedule(Duration after) {
+    if (!account.isSignedIn) return;
+    _timer?.cancel();
+    _timer = Timer(after, () => unawaited(syncNow()));
+  }
+
+  /// Üres csomag: egy még üres fiókra váltva a készülék is üresen indul.
+  static const Map<String, dynamic> emptyPackage = {
+    'v': 1,
+    'favorites': <String>[],
+    'favorites_removed': <String, String>{},
+    'favorites_added': <String, String>{},
+    'favorite_since': <String, String>{},
+    'watch_lists': <Object>[],
+    'lists_removed': <String, String>{},
+    'lists_added': <String, String>{},
+    'targets': <String, double>{},
+    'targets_at': '1970-01-01T00:00:00.000Z',
+    'goals': {'portfolio': <String, Object>{}, 'dividend': <String, Object>{}},
+    'lots': <Object>[],
+    'dividends': <Object>[],
+    'splits': <Object>[],
+    'deleted': <String, String>{},
+    'cash': <String, double>{},
+    'cash_at': <String, String>{},
+    'alerts': <Object>[],
+    'alerts_deleted': <String, String>{},
+    'notes': <String, Object>{},
+    'notes_deleted': <String, String>{},
+  };
+
   Future<void> _syncOnce() async {
     final remote = await backend.getSync();
     final data = remote.data;
     final base = remote.updatedAt;
-    final firstHere = _syncedEmail != account.email;
+    if (_syncedEmail != null && _syncedEmail != account.email) {
+      // Másik fiók: a készüléken lévő adat az előzőé (ott megvan), nem kerül az újba.
+      // A készülék az új fiók adatait veszi át; üres fióknál üresen indul.
+      await _apply({...emptyPackage, ...?data});
+      await _push(snapshot(), base: base);
+      return;
+    }
+    final firstHere = _syncedEmail == null;
     if (data == null) {
       await _push(snapshot(), base: null);
     } else if (firstHere || (_dirty && base != null && _last != null && !base.isAtSameMomentAs(_last!))) {

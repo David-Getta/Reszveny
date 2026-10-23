@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.269)
+# Változásjegyzék (0.2.130 → 0.2.270)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,20 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Fiók-szinkron: egy tizenhatodik kódátnézés javításai
+
+- **0.2.270**: egy eszközön másik fiókba belépve az előző fiók adatai (tranzakciók, jegyzetek, riasztások) nem
+  kerülnek át az újba. Eddig összefésülte őket, és a szerver a másik fiók címére küldte a riasztásokat. A
+  készülék az új fiók adatait veszi át, üres fióknál üresen indul. Egy új eszköz alapértékei nem írják felül
+  a fiók e-mail-beállításait (riasztás, heti összefoglaló). A célarányok törlése is szinkronizálódik, és az
+  újabb beállítás nyer (eddig egy összefésülés visszahozta a régit). A letöltött adat egy lépésben cserélődik,
+  így a közben tett helyi változás nem vész el, és nem marad feltöltetlen. A sikertelen szinkron magától újra
+  próbálkozik (30 mp-től 30 percig ritkulva), futás közben 15 percenként és előtérbe kerüléskor is
+  szinkronizál. A törölt, majd újra létrehozott listába egy régi eszköz nem hozza vissza a régi tagokat. Egy
+  nagy import visszavonása után sem jön vissza tétel (5000 törlési jelzés fér el, a szerveren 2 MB a
+  csomag). A riasztások sorrendje nem fordul meg minden szinkronnál. Ismert, nem javított: egy régebbi
+  eszközön végzett tickerváltás visszahozhat egy közben másutt törölt tranzakciót.
 
 ## Számlázás és keretek: egy tizenötödik kódátnézés javításai
 

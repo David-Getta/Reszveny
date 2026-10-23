@@ -144,6 +144,8 @@ class Backup {
     final fromBackup = {
       ...backup,
       for (final key in _tombstoneFields) key: const <String, String>{},
+      // A célarányok idő nélkül: a mostaniak maradnak, a mentés csak a hiányzó tickert pótolja.
+      'targets_at': null,
       for (final key in ['lots', 'dividends', 'splits']) key: reviveList(backup[key], 'deleted'),
       'alerts': reviveList(backup['alerts'], 'alerts_deleted'),
       'notes': notes,
