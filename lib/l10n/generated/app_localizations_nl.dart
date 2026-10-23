@@ -3079,12 +3079,12 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String signalRsiOversold(String value) {
-    return 'RSI $value · oversold';
+    return 'RSI $value · oververkocht';
   }
 
   @override
   String signalRsiOverbought(String value) {
-    return 'RSI $value · overbought';
+    return 'RSI $value · overgekocht';
   }
 
   @override
