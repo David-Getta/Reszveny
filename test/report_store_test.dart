@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/core/models/stock_details.dart';
@@ -35,6 +37,21 @@ class _Analyst implements StockAnalyst {
   }
 }
 
+/// Az elemzés csak a [gate] után fejeződik be.
+class _SlowAnalyst extends _Analyst {
+  final gate = Completer<void>();
+
+  @override
+  Future<StockReport> analyze(
+    StockDetails details, {
+    String outputLanguage = 'English',
+    AnalysisOptions options = const AnalysisOptions(),
+  }) async {
+    await gate.future;
+    return super.analyze(details, outputLanguage: outputLanguage, options: options);
+  }
+}
+
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
@@ -62,6 +79,32 @@ void main() {
     expect(store.hasNewResults(r), isFalse);
     store.clock = () => DateTime.utc(2026, 10, 28, 22, 30);
     expect(store.hasNewResults(r), isTrue);
+  });
+
+  test('an analysis made on the report evening already has the results: no "new results" badge', () {
+    final store = ReportStore(analyst: _Analyst());
+    final evening = StockReport(
+      symbol: 'AAPL',
+      headline: 'h',
+      sections: const [],
+      generatedAt: DateTime.utc(2026, 10, 28, 22, 30),
+      nextEarnings: DateTime(2026, 10, 28),
+    );
+    store.clock = () => DateTime.utc(2026, 10, 28, 22, 31);
+    expect(store.hasNewResults(evening), isFalse);
+    expect(store.isStale(evening), isFalse);
+  });
+
+  test('wiping the local data while an analysis runs does not write it back', () async {
+    final analyst = _SlowAnalyst();
+    final store = ReportStore(analyst: analyst);
+    final running = store.generate(const StockDetails(symbol: 'AAPL'), outputLanguage: 'English');
+    await Future<void>.delayed(Duration.zero);
+    await store.clearCache();
+    analyst.gate.complete();
+    await running;
+    expect(store.report('AAPL'), isNull);
+    expect((await SharedPreferences.getInstance()).getKeys().where((k) => k.startsWith('report_')), isEmpty);
   });
 
   test('two lookups at once both keep their result after a restart', () async {

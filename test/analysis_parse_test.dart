@@ -512,7 +512,7 @@ void main() {
     expect(msg, contains('may be an ETF'));
     expect(ClaudeStockAnalyst.systemPrompt, contains('# If it is not an ordinary company share'));
     expect(ClaudeStockAnalyst.systemPrompt, contains('expense ratio'));
-    expect(ClaudeStockAnalyst.promptVersion, 'v2.5');
+    expect(ClaudeStockAnalyst.promptVersion, 'v2.6');
   });
 
   test('StockReport survives a JSON round trip (disk cache)', () {

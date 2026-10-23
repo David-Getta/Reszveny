@@ -52,17 +52,28 @@ class _AnalysisCardState extends State<AnalysisCard> {
     super.dispose();
   }
 
+  /// A legutóbb betöltött elemzés nyelve: nyelvváltáskor újra betöltjük (a más
+  /// nyelvű elrejtve), különben a nyitott oldal a régi nyelvűt mutatná.
+  String? _language;
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    if (_restored) return;
+    final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
+    if (_restored) {
+      if (language != _language) {
+        _language = language;
+        unawaited(AppServices.of(context).reports.restore(widget.details.symbol, language: language));
+      }
+      return;
+    }
     _restored = true;
+    _language = language;
     final services = AppServices.of(context);
     _services = services;
     services.reports.addViewer(widget.details.symbol, _visible);
     // A saját pozíció más pénznemű osztalékainak árfolyama előre (az elemzés indításakor már gyorsítótárból).
     unawaited(services.prefetchDividendRates(widget.details.symbol));
-    final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
     final restoring = services.reports.restore(widget.details.symbol, language: language);
     // Az előzményekből „új elemzés”-t kértek: a mentett betöltése után indul.
     if (services.reports.takeRefreshRequest(widget.details.symbol)) {

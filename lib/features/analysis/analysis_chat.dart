@@ -44,7 +44,8 @@ class AnalysisChat extends ChangeNotifier {
   final Map<String, List<ChatMessage>> _threads = {};
   final Set<String> _busy = {};
 
-  static String _key(StockReport r) => '${r.symbol}|${r.generatedAt.toIso8601String()}';
+  // UTC-ben: a frissen készült (helyi idejű) és a lemezről betöltött (UTC) példány ugyanaz.
+  static String _key(StockReport r) => '${r.symbol}|${r.generatedAt.toUtc().toIso8601String()}';
 
   /// Az elemzéshez tartozó beszélgetés (az app futása alatt megmarad).
   List<ChatMessage> thread(StockReport r) => List.unmodifiable(_threads[_key(r)] ?? const <ChatMessage>[]);

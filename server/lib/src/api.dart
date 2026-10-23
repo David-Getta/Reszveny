@@ -563,11 +563,14 @@ class Api {
         ..tier = null
         ..periodEnd = store.clock();
     }
-    store
-      ..save(a)
-      ..save(b)
-      ..movePurchases(from: from, into: into);
-    shares.moveUser(from: from, into: into);
+    // Egy tranzakcióban: egy hiba ne hagyjon félig összevont fiókot.
+    store.transaction(() {
+      store
+        ..save(a)
+        ..save(b)
+        ..movePurchases(from: from, into: into);
+      shares.moveUser(from: from, into: into);
+    });
   }
 
   // ---- Megosztás nyilvános linkkel ----
@@ -594,7 +597,10 @@ class Api {
       final isPng = image.length > 8 && List.generate(4, (i) => image![i]).join() == png.join();
       if (!isPng || image.length > ShareStore.maxImageBytes) return _error(400, 'bad_image');
     }
-    if (shares.createdToday(uid) >= ShareStore.perDay) return _error(429, 'share_limit');
+    // A napi korlát csak az új linkre vonatkozik: egy már megosztott elemzés újra megosztható.
+    if (shares.existing(uid, data) == null && shares.createdToday(uid) >= ShareStore.perDay) {
+      return _error(429, 'share_limit');
+    }
     // Megosztani elemzést lehet: csomag, élő próbaidő vagy extra elemzés kell.
     if (!quota.hasAccess(store.entitlement(uid))) return _error(402, 'no_plan');
     final id = shares.save(uid, data, image);
@@ -1949,7 +1955,9 @@ class Api {
     if (store.askCallsSince(uid, store.clock().subtract(const Duration(days: 1))) >= limit) {
       return _error(429, 'ask_limit');
     }
-    store.logAskCall(uid);
+    // A kérdés a továbbítás előtt számít (párhuzamos kérésekkel se lehessen túllépni),
+    // de egy sikertelen válasz nem fogyasztja a napi keretet.
+    final askId = store.logAskCall(uid);
     // Utánanézés (pl. a „Mit jelent ez?” hírmagyarázat): fizetős csomagban kevés
     // webkeresés és oldalmegnyitás; próbaidőben eszközök nélkül.
     final tools = trial ? null : askResearchTools(raw['tools']);
@@ -1961,8 +1969,15 @@ class Api {
       'output_config': {'effort': 'low'},
       'tools': ?tools,
     });
-    var upstream = await _forwardAnthropic(body, null);
-    if (tools != null && _rejectedWebFetch(upstream)) upstream = await _forwardAnthropic(withoutWebFetch(body), null);
+    http.Response upstream;
+    try {
+      upstream = await _forwardAnthropic(body, null);
+      if (tools != null && _rejectedWebFetch(upstream)) upstream = await _forwardAnthropic(withoutWebFetch(body), null);
+    } catch (_) {
+      store.removeAskCall(askId);
+      rethrow;
+    }
+    if (upstream.statusCode != 200) store.removeAskCall(askId);
     // Csak a kutatással (eszközökkel) készült, sikeres válasz kerül a megosztott tárba.
     if (cacheKey != null && tools != null && upstream.statusCode == 200 && _isCompleteAnswer(upstream.body)) {
       store.saveSharedAnswer(cacheKey, upstream.body, keepFor: sharedAnswerKeepFor);

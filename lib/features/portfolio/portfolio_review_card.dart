@@ -32,11 +32,19 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
   bool _loading = false;
   Object? _error;
 
+  /// A mentett elemzés csak az app nyelvén látszik (nyelvváltáskor újra betöltve).
+  String? _language;
+
   @override
-  void initState() {
-    super.initState();
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
+    if (language == _language) return;
+    _language = language;
     PortfolioReviewer.loadLast().then((r) {
-      if (mounted && r != null) setState(() => _report = r);
+      if (!mounted || _language != language) return;
+      final shown = r != null && (r.language == null || r.language == language) ? r : null;
+      if (shown != _report) setState(() => _report = shown);
     });
   }
 

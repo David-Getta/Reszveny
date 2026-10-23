@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.272)
+# Változásjegyzék (0.2.130 → 0.2.273)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,21 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## AI-jelentés, kérdések, megosztás: egy tizenkilencedik kódátnézés javításai
+
+- **0.2.273**: belépéskor nem hiúsul meg a fiók-összevonás, ha ugyanazt az elemzést mindkét fiókból
+  megosztották. Eddig 500-as hiba lett, félig összevont fiókkal, és a névtelen fiók linkje a fiók törlése után is
+  élt. Az összevonás most egy tranzakcióban fut. A jelentés napján este (a megjelenés után) készült elemzés nem
+  kap azonnal „új eredmények” jelzést. Eddig a frissen kifizetett elemzés el volt rejtve, és a „frissítés”
+  újra levont. A sikertelen válasz nem fogyasztja a napi kérdéskeretet, egy már megosztott elemzés a napi
+  korlát után is újra megosztható, és a nyilvános oldal nem vág ketté egy emojit. A megosztott kép a rendszer
+  nagyobb betűméretén sem veszíti el a láblécét és a „nem befektetési tanács” sort. Az elemzés kérdés-előzménye
+  és a 6 kérdéses keret nem indul újra a lemezről betöltött példánynál. Nyelvváltás után a nyitott
+  részvényoldal és a portfólió-elemzés kártyája sem mutatja a régi nyelvű elemzést. A helyi adatok törlése
+  közben futó elemzés nem íródik vissza, és teli tárnál a legrégebbi elemzések helyet adnak az újnak. Az azonos
+  árú kulcsszintek nem okoznak hibát. Az elemzés címébe és a „legvalószínűbb okba” nem kerül az olvasó saját
+  pozíciója és jegyzete (ezek nyilvánosan megoszthatók; prompt v2.6).
 
 ## Részvényoldali számok és formázás: egy tizennyolcadik kódátnézés javításai
 

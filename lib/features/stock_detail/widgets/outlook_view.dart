@@ -257,9 +257,14 @@ class ScenarioChart extends StatelessWidget {
             spacing: 6,
             runSpacing: 6,
             children: [
-              for (final k in outlook.keyLevels)
+              for (final (i, k) in outlook.keyLevels.indexed)
                 _Chip(
-                  key: ValueKey('key-level-${k.price}'),
+                  // Azonos árú szintek (pl. támasz és horgony): a későbbié az indexszel (egyedi kulcs).
+                  key: ValueKey(
+                    outlook.keyLevels.indexWhere((x) => x.price == k.price) == i
+                        ? 'key-level-${k.price}'
+                        : 'key-level-${k.price}-$i',
+                  ),
                   onTap: onLevelTap == null ? null : () => onLevelTap!(k),
                   color: switch (k.kind) {
                     KeyLevelKind.support => p.positive,

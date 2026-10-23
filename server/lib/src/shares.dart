@@ -119,6 +119,19 @@ class ShareStore {
 
   /// Fiók-összevonás: a névtelen eszközön készült megosztások a fiókhoz kerülnek
   /// (a fiók törlésekor velük együtt törlődnek).
-  void moveUser({required String from, required String into}) =>
-      _db.execute('UPDATE shares SET user_id = ? WHERE user_id = ?', [into, from]);
+  /// Ugyanannak az elemzésnek a megosztása mindkét fiókban: a fiókéban marad (az
+  /// egyedi index nem sérül), a névtelen fiók példánya törlődik.
+  void moveUser({required String from, required String into}) {
+    _db.execute('UPDATE OR IGNORE shares SET user_id = ? WHERE user_id = ?', [into, from]);
+    _db.execute('DELETE FROM shares WHERE user_id = ?', [from]);
+  }
+
+  /// A már meglévő link ugyanerre az elemzésre (az újramegosztás nem új link).
+  String? existing(String userId, Map<String, dynamic> data) {
+    final rows = _db.select('SELECT id FROM shares WHERE user_id = ? AND dedupe_key = ?', [
+      userId,
+      '${data['symbol']}|${data['generated_at']}',
+    ]);
+    return rows.isEmpty ? null : rows.first['id'] as String;
+  }
 }

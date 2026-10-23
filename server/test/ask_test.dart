@@ -13,8 +13,11 @@ void main() {
   late Store store;
   late Api api;
   late List<Map<String, dynamic>> upstream;
+  // A következő válasz állapota (alapból 200).
+  var status = 200;
 
   setUp(() {
+    status = 200;
     store = Store.inMemory();
     upstream = [];
     api = Api(
@@ -33,7 +36,7 @@ void main() {
               {'type': 'text', 'text': 'Answer.'},
             ],
           }),
-          200,
+          status,
         );
       }),
     );
@@ -199,6 +202,17 @@ void main() {
     await post('/v1/ask', trialReq, token: t2);
     await post('/v1/ask', trialReq, token: t2);
     expect(upstream, hasLength(5));
+  });
+
+  test('a question whose answer failed does not use up the daily limit', () async {
+    final (token, uid) = await newUser();
+    store.save(store.entitlement(uid)..tier = 'trial');
+    status = 529;
+    for (var i = 0; i < Api.askPerDayTrial; i++) {
+      expect((await post('/v1/ask', ask(['Q']), token: token)).$1, 529);
+    }
+    status = 200;
+    expect((await post('/v1/ask', ask(['Q']), token: token)).$1, 200);
   });
 
   test('daily limit, malformed conversations and accounts without a plan are refused', () async {

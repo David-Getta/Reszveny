@@ -33,8 +33,12 @@ class ReportStore extends ChangeNotifier {
     }
   }
 
+  /// Minden törléskor nő: egy közben futó elemzés eredménye nem íródik vissza.
+  int _epoch = 0;
+
   /// Minden elmentett elemzés törlése a memóriából és a lemezről.
   Future<void> clearCache() async {
+    _epoch++;
     _reports.clear();
     _previous.clear();
     notifyListeners();
@@ -135,10 +139,13 @@ class ReportStore extends ChangeNotifier {
   /// Igaz, ha az elemzés óta megjelent a cég következő gyorsjelentése: a jelentés
   /// napján 22:00 UTC-kor már kint van (a New York-i zárás utáni is) – a helyi éjfél
   /// nem jó határ, mert Ázsiában és Ausztráliában az a megjelenés előtt van.
+  /// Csak ha a megjelenés az elemzés után volt: a jelentés napján este készült
+  /// elemzés már az eredményekkel készült (a „következő” dátum aznap még a mai).
   bool hasNewResults(StockReport r) {
     final e = r.nextEarnings;
-    if (e == null || !e.isAfter(r.generatedAt.subtract(const Duration(days: 1)))) return false;
-    return !clock().toUtc().isBefore(DateTime.utc(e.year, e.month, e.day, 22));
+    if (e == null) return false;
+    final out = DateTime.utc(e.year, e.month, e.day, 22);
+    return r.generatedAt.toUtc().isBefore(out) && !clock().toUtc().isBefore(out);
   }
 
   /// Igaz, ha a mentett elemzés régi, és még nem döntött róla a felhasználó:
@@ -238,10 +245,10 @@ class ReportStore extends ChangeNotifier {
     }
   }
 
-  /// A [maxSaved]-nél több elmentett elemzésből a legrégebbieket törli.
-  Future<void> _prune(SharedPreferences prefs) async {
+  /// A [keep]-nél több elmentett elemzésből a legrégebbieket törli.
+  Future<void> _prune(SharedPreferences prefs, {int keep = maxSaved}) async {
     final keys = prefs.getKeys().where((k) => k.startsWith(_prefix)).toList();
-    if (keys.length <= maxSaved) return;
+    if (keys.length <= keep) return;
     final dated = <(String, DateTime)>[];
     for (final k in keys) {
       try {
@@ -252,7 +259,7 @@ class ReportStore extends ChangeNotifier {
       }
     }
     dated.sort((a, b) => b.$2.compareTo(a.$2));
-    for (final (k, _) in dated.skip(maxSaved)) {
+    for (final (k, _) in dated.skip(keep)) {
       await prefs.remove(k);
       await prefs.remove('$_prevPrefix${k.substring(_prefix.length)}');
     }
@@ -288,6 +295,7 @@ class ReportStore extends ChangeNotifier {
     _loadingSince[symbol] = clock();
     _errors.remove(symbol);
     notifyListeners();
+    final epoch = _epoch;
     try {
       final extras = await _loadExtras(symbol);
       final analyzed = await analyst.analyze(
@@ -298,6 +306,11 @@ class ReportStore extends ChangeNotifier {
       // A következő gyorsjelentés napját megjegyezzük: ha eltelik, jelezzük,
       // hogy az elemzés még a friss eredmények előtt készült.
       final r = analyzed.withNextEarnings(analyzed.nextEarnings ?? (extras ?? details.extras)?.nextEarnings?.date);
+      // Közben törölték a helyi adatokat (pl. fióktörlés): az eredmény nem íródik vissza.
+      if (epoch != _epoch) {
+        await entitlements?.consume(cost: options.cost);
+        return;
+      }
       // A felváltott elemzést megőrizzük az összevetéshez (azonos nyelven).
       final old = _reports[symbol];
       final keepOld = old != null && (old.language == null || r.language == null || old.language == r.language)
@@ -314,15 +327,26 @@ class ReportStore extends ChangeNotifier {
       completed.value = r;
       await entitlements?.consume(cost: options.cost);
       _notifyQuota();
-      try {
-        final prefs = await SharedPreferences.getInstance();
+      Future<void> write(SharedPreferences prefs) async {
         await prefs.setString('$_prefix$symbol', jsonEncode(r.toJson()));
         if (keepOld != null) {
           await prefs.setString('$_prevPrefix$symbol', jsonEncode(keepOld.toJson()));
         } else {
           await prefs.remove('$_prevPrefix$symbol');
         }
-        await _prune(prefs);
+      }
+
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        // Előbb a hely (egy teli tárban is elférjen az új), utána az írás; ha így sem
+        // fér el, a régebbiek felét elengedjük, és még egyszer próbáljuk.
+        await _prune(prefs, keep: maxSaved - 1);
+        try {
+          await write(prefs);
+        } catch (_) {
+          await _prune(prefs, keep: maxSaved ~/ 2);
+          await write(prefs);
+        }
       } catch (_) {
         // A gyorsítótár hibája nem akadályozza a megjelenítést.
       }

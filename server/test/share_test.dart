@@ -7,8 +7,10 @@ import 'package:test/test.dart';
 import 'package:whatstock_server/src/api.dart';
 import 'package:whatstock_server/src/db.dart';
 import 'package:whatstock_server/src/invites.dart';
+import 'package:whatstock_server/src/mailer.dart';
 import 'package:whatstock_server/src/plans.dart';
 import 'package:whatstock_server/src/purchase_verifier.dart';
+import 'package:whatstock_server/src/shares.dart';
 
 void main() {
   late Store store;
@@ -142,6 +144,61 @@ void main() {
     expect((await raw('DELETE', '/v1/account', token: t)).statusCode, 200);
     expect((await raw('GET', '/s/$id')).statusCode, 404);
   });
+
+  test(
+    'signing in with the same analysis shared on both accounts merges cleanly; re-sharing is never refused',
+    () async {
+      // E-mailes fiók, megosztás; kijelentkezve egy névtelen fiók ugyanazt megosztja; újra belépés.
+      final t = await newUser();
+      await raw('POST', '/v1/auth/email/start', body: {'email': 'a@x.io'});
+      final code = (api.mailer as ConsoleMailer).sent['a@x.io'] as String;
+      final signed = jsonDecode(
+        await (await raw(
+          'POST',
+          '/v1/auth/email/verify',
+          token: t,
+          body: {'email': 'a@x.io', 'code': code},
+        )).readAsString(),
+      );
+      final account = signed['token'] as String;
+      expect((await raw('POST', '/v1/share', token: account, body: share())).statusCode, 200);
+      final anon = await newUser();
+      final second = jsonDecode(await (await raw('POST', '/v1/share', token: anon, body: share())).readAsString());
+      await raw('POST', '/v1/auth/email/start', body: {'email': 'a@x.io'});
+      final code2 = (api.mailer as ConsoleMailer).sent['a@x.io'] as String;
+      final login = await raw('POST', '/v1/auth/email/verify', token: anon, body: {'email': 'a@x.io', 'code': code2});
+      expect(login.statusCode, 200);
+      // A névtelen fiók példánya nem marad gazdátlanul: a fiók törlésével minden link eltűnik.
+      final again = jsonDecode(await login.readAsString())['token'] as String;
+      expect((await raw('DELETE', '/v1/account', token: again)).statusCode, 200);
+      expect((await raw('GET', '/s/${second['id']}')).statusCode, 404);
+
+      // A napi korlát után is visszakapható egy már megosztott elemzés linkje.
+      final busy = await newUser();
+      for (var i = 0; i < ShareStore.perDay; i++) {
+        await raw(
+          'POST',
+          '/v1/share',
+          token: busy,
+          body: share(generatedAt: '2026-10-14T10:00:${i.toString().padLeft(2, '0')}Z'),
+        );
+      }
+      final repeat = await raw(
+        'POST',
+        '/v1/share',
+        token: busy,
+        body: share(generatedAt: '2026-10-14T10:00:00Z'),
+      );
+      expect(repeat.statusCode, 200);
+      final fresh = await raw(
+        'POST',
+        '/v1/share',
+        token: busy,
+        body: share(generatedAt: '2026-10-15T10:00:00Z'),
+      );
+      expect(fresh.statusCode, 429);
+    },
+  );
 
   test('the landing page: language from the browser, downloads, closed-preview note', () async {
     final hu = await (await raw('GET', '/', headers: {'accept-language': 'hu-HU,hu;q=0.9'})).readAsString();

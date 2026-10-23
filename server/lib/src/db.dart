@@ -787,12 +787,29 @@ class Store {
           as int;
 
   /// Egy kérdés naplózása; a két napnál régebbi sorokat közben törli.
-  void logAskCall(String userId) {
+  int logAskCall(String userId) {
     final now = clock().toUtc();
     _db.execute('INSERT INTO ask_calls (user_id, created_at) VALUES (?, ?)', [userId, now.toIso8601String()]);
+    final id = _db.lastInsertRowId;
     _db.execute('DELETE FROM ask_calls WHERE created_at < ?', [
       now.subtract(const Duration(days: 2)).toIso8601String(),
     ]);
+    return id;
+  }
+
+  /// Egy sikertelen kérdés nem számít a napi keretbe.
+  void removeAskCall(int id) => _db.execute('DELETE FROM ask_calls WHERE rowid = ?', [id]);
+
+  /// A [body] egy tranzakcióban (hibánál visszagörgetve).
+  void transaction(void Function() body) {
+    _db.execute('BEGIN');
+    try {
+      body();
+      _db.execute('COMMIT');
+    } catch (_) {
+      _db.execute('ROLLBACK');
+      rethrow;
+    }
   }
 
   /// Megosztott kutatási válasz (pl. egy cég negyedéves összefoglalója): ha

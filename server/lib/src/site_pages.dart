@@ -49,7 +49,11 @@ String _attr(Object? v) => const HtmlEscape(HtmlEscapeMode.attribute).convert('$
 
 String _str(Object? v, int max) {
   final s = (v is String ? v : '').trim();
-  return s.length <= max ? s : '${s.substring(0, max - 1)}…';
+  if (s.length <= max) return s;
+  // Egy emoji (helyettesítő pár) közepén nem vágunk: a magányos fele hibás karakter lenne.
+  var end = max - 1;
+  if (end > 0 && (s.codeUnitAt(end - 1) & 0xFC00) == 0xD800) end--;
+  return '${s.substring(0, end)}…';
 }
 
 /// Az app által küldött megosztás ellenőrzése és megtisztítása: csak az
