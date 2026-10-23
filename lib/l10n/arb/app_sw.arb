@@ -777,7 +777,7 @@
   "portfolioAccountHint": "k.m. TBSZ 2026 (si lazima)",
   "portfolioAccountAdd": "Bainisha akaunti",
   "portfolioAccountsAll": "Akaunti zote",
-  "portfolioAccountNote": "Miamala ya akaunti hii pekee. Taslimu na gawio huonyeshwa chini ya Akaunti zote.",
+  "portfolioAccountNote": "Miamala na gawio la akaunti hii pekee. Taslimu, malengo na uchambuzi wa AI huonyeshwa chini ya Akaunti zote.",
   "portfolioNoAccount": "Bila akaunti",
   "allocationAccounts": "Akaunti",
   "portfolioFee": "Ada ({currency})",

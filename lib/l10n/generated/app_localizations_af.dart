@@ -2549,7 +2549,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Slegs hierdie rekening se transaksies. Kontant en dividende word onder Alle rekeninge gewys.';
+      'Slegs hierdie rekening se transaksies en dividende. Kontant, doelwitte en die AI-ontleding word onder Alle rekeninge gewys.';
 
   @override
   String get portfolioNoAccount => 'Geen rekening';

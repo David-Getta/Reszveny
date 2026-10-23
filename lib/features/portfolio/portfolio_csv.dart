@@ -14,7 +14,7 @@ String portfolioCsv(
 }) {
   String n(double v) => v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toString();
   // A számla és a díj oszlopa csak akkor, ha van ilyen tranzakció (a régi formátum marad).
-  final withAccount = lots.any((l) => l.account != null);
+  final withAccount = lots.any((l) => l.account != null) || dividends.any((d) => d.account != null);
   final withFee = lots.any((l) => l.fee > 0);
   final b = StringBuffer(
     'symbol,quantity,price,currency,date,side${withAccount ? ',account' : ''}${withFee ? ',fee' : ''}\n',
@@ -35,7 +35,15 @@ String portfolioCsv(
   }
   for (final d in dividends) {
     b.writeln(
-      [d.symbol, '', n(d.amount), d.currency, d.date?.toIso8601String().substring(0, 10) ?? '', 'dividend'].join(','),
+      [
+        d.symbol,
+        '',
+        n(d.amount),
+        d.currency,
+        d.date?.toIso8601String().substring(0, 10) ?? '',
+        'dividend',
+        if (withAccount) _csvField(d.account ?? ''),
+      ].join(','),
     );
   }
   for (final s in splits) {
@@ -53,9 +61,19 @@ String dividendsCsv(List<DividendRecord> dividends) {
   }
 
   final rows = [...dividends]..sort((a, b) => (a.date ?? DateTime(9999)).compareTo(b.date ?? DateTime(9999)));
-  final b = StringBuffer('date,symbol,amount,currency\n');
+  // A számla oszlopa csak akkor, ha van számlás osztalék (pl. a TBSZ osztaléka másként adózik).
+  final withAccount = rows.any((d) => d.account != null);
+  final b = StringBuffer('date,symbol,amount,currency${withAccount ? ',account' : ''}\n');
   for (final d in rows) {
-    b.writeln([d.date?.toIso8601String().substring(0, 10) ?? '', d.symbol, n(d.amount), d.currency].join(','));
+    b.writeln(
+      [
+        d.date?.toIso8601String().substring(0, 10) ?? '',
+        d.symbol,
+        n(d.amount),
+        d.currency,
+        if (withAccount) _csvField(d.account ?? ''),
+      ].join(','),
+    );
   }
   return b.toString();
 }
@@ -129,7 +147,10 @@ class ImportedLot {
 
 /// Egy beolvasott osztaléksor (még nem került a portfólióba).
 class ImportedDividend {
-  const ImportedDividend({required this.symbol, required this.amount, required this.currency, this.date});
+  const ImportedDividend({required this.symbol, required this.amount, required this.currency, this.date, this.account});
+
+  /// A számla neve (saját exportból).
+  final String? account;
 
   final String symbol;
   final double amount;
@@ -354,7 +375,15 @@ CsvImport _withHeader(
           ? totalCcy
           : (amountCcy ?? (_currency.hasMatch(ccyCell) ? ccyCell : defaultCurrency));
       if (_symbol.hasMatch(symbol) && amount != null && amount > 0) {
-        dividends.add(ImportedDividend(symbol: symbol, amount: amount, currency: ccy, date: _date(cell(f, 'date'))));
+        dividends.add(
+          ImportedDividend(
+            symbol: symbol,
+            amount: amount,
+            currency: ccy,
+            date: _date(cell(f, 'date')),
+            account: PortfolioLot.cleanAccount(cell(f, 'account')),
+          ),
+        );
       } else {
         skipped++;
       }
@@ -396,7 +425,7 @@ CsvImport _withHeader(
   final net = [
     for (final d in dividends)
       if (d.amount + (withholding[_dayKey(d)] ?? 0) case final a when a > 0)
-        ImportedDividend(symbol: d.symbol, amount: a, currency: d.currency, date: d.date),
+        ImportedDividend(symbol: d.symbol, amount: a, currency: d.currency, date: d.date, account: d.account),
   ];
   return CsvImport(lots, skipped, dividends: net, splits: splits);
 }
@@ -435,7 +464,14 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
       final ccy = f.length > 3 && _currency.hasMatch(f[3].toUpperCase()) ? f[3].toUpperCase() : defaultCurrency;
       if (_symbol.hasMatch(symbol) && amount != null && amount > 0) {
         dividends.add(
-          ImportedDividend(symbol: symbol, amount: amount, currency: ccy, date: f.length > 4 ? _date(f[4]) : null),
+          ImportedDividend(
+            symbol: symbol,
+            amount: amount,
+            currency: ccy,
+            date: f.length > 4 ? _date(f[4]) : null,
+            // Fejléc nélkül a hetedik oszlop a számla (saját export).
+            account: f.length > 6 && _accountLike.hasMatch(f[6]) ? PortfolioLot.cleanAccount(f[6]) : null,
+          ),
         );
       } else {
         skipped++;

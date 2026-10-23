@@ -2545,7 +2545,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'صرف اس اکاؤنٹ کے لین دین۔ نقد اور ڈیویڈنڈ ”تمام اکاؤنٹس“ کے تحت دکھائے جاتے ہیں۔';
+      'صرف اس اکاؤنٹ کے لین دین اور ڈیویڈنڈ۔ نقد، اہداف اور AI جائزہ ”تمام اکاؤنٹس“ کے تحت دکھائے جاتے ہیں۔';
 
   @override
   String get portfolioNoAccount => 'بغیر اکاؤنٹ';

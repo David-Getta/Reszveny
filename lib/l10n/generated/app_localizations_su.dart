@@ -2550,7 +2550,7 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Ngan transaksi akun ieu. Tunai jeung dividen ditémbongkeun dina Sadaya akun.';
+      'Ngan transaksi jeung dividen akun ieu. Tunai, target jeung tinjauan AI ditémbongkeun dina Sadaya akun.';
 
   @override
   String get portfolioNoAccount => 'Tanpa akun';

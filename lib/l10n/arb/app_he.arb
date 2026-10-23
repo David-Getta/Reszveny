@@ -777,7 +777,7 @@
   "portfolioAccountHint": "למשל קופת גמל להשקעה (לא חובה)",
   "portfolioAccountAdd": "ציון חשבון",
   "portfolioAccountsAll": "כל החשבונות",
-  "portfolioAccountNote": "רק העסקאות של החשבון הזה. מזומן ודיבידנדים מוצגים תחת ״כל החשבונות״.",
+  "portfolioAccountNote": "רק העסקאות והדיבידנדים של החשבון הזה. מזומן, יעדים וסקירת ה-AI מוצגים תחת ״כל החשבונות״.",
   "portfolioNoAccount": "ללא חשבון",
   "allocationAccounts": "חשבונות",
   "portfolioFee": "עמלה ({currency})",

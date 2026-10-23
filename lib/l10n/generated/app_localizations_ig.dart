@@ -2540,7 +2540,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Naanị azụmahịa akaụntụ a. A na-egosi ego ka ego na nkesa uru n\'okpuru Akaụntụ niile.';
+      'Naanị azụmahịa na nkesa uru akaụntụ a. A na-egosi ego ka ego, ebumnuche na nyocha AI n\'okpuru Akaụntụ niile.';
 
   @override
   String get portfolioNoAccount => 'Enweghị akaụntụ';

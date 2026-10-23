@@ -777,7 +777,7 @@
   "portfolioAccountHint": "ឧ. TBSZ 2026 (ស្រេចចិត្ត)",
   "portfolioAccountAdd": "បញ្ជាក់គណនី",
   "portfolioAccountsAll": "គណនីទាំងអស់",
-  "portfolioAccountNote": "មានតែប្រតិបត្តិការរបស់គណនីនេះប៉ុណ្ណោះ។ សាច់ប្រាក់ និងភាគលាភត្រូវបានបង្ហាញនៅក្រោម «គណនីទាំងអស់»។",
+  "portfolioAccountNote": "មានតែប្រតិបត្តិការ និងភាគលាភរបស់គណនីនេះប៉ុណ្ណោះ។ សាច់ប្រាក់ គោលដៅ និងការពិនិត្យដោយ AI ត្រូវបានបង្ហាញនៅក្រោម «គណនីទាំងអស់»។",
   "portfolioNoAccount": "គ្មានគណនី",
   "allocationAccounts": "គណនី",
   "portfolioFee": "កម្រៃជើងសារ ({currency})",

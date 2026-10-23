@@ -2562,7 +2562,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Mga transaksyon lang sini nga account. Ang cash kag dibidendo makita sa Tanan nga account.';
+      'Mga transaksyon kag dibidendo lang sini nga account. Ang cash, mga tulumuron kag ang analisis sang AI makita sa Tanan nga account.';
 
   @override
   String get portfolioNoAccount => 'Wala sing account';

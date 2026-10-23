@@ -777,7 +777,7 @@
   "portfolioAccountHint": "umz. TFSA (ayinyanzelekanga)",
   "portfolioAccountAdd": "Chaza iakhawunti",
   "portfolioAccountsAll": "Zonke iiakhawunti",
-  "portfolioAccountNote": "Iintengiselwano zale akhawunti kuphela. Imali nezahlulo ziboniswa phantsi kwe-\"Zonke iiakhawunti\".",
+  "portfolioAccountNote": "Iintengiselwano nezahlulo zale akhawunti kuphela. Imali, usukelo kunye nohlalutyo lwe-AI ziboniswa phantsi kwe-\"Zonke iiakhawunti\".",
   "portfolioNoAccount": "Akukho akhawunti",
   "allocationAccounts": "Iiakhawunti",
   "portfolioFee": "Ifizi ({currency})",

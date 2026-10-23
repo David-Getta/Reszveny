@@ -777,7 +777,7 @@
   "portfolioAccountHint": "მაგ. TBSZ 2026 (არასავალდებულო)",
   "portfolioAccountAdd": "ანგარიშის მითითება",
   "portfolioAccountsAll": "ყველა ანგარიში",
-  "portfolioAccountNote": "მხოლოდ ამ ანგარიშის ტრანზაქციები. ნაღდი ფული და დივიდენდები ნაჩვენებია განყოფილებაში „ყველა ანგარიში“.",
+  "portfolioAccountNote": "მხოლოდ ამ ანგარიშის ტრანზაქციები და დივიდენდები. ნაღდი ფული, მიზნები და AI ანალიზი ნაჩვენებია განყოფილებაში „ყველა ანგარიში“.",
   "portfolioNoAccount": "ანგარიშის გარეშე",
   "allocationAccounts": "ანგარიშები",
   "portfolioFee": "საკომისიო ({currency})",

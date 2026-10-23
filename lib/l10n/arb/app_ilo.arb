@@ -777,7 +777,7 @@
   "portfolioAccountHint": "kas iti PERA (opsional)",
   "portfolioAccountAdd": "Ituding ti account",
   "portfolioAccountsAll": "Amin nga account",
-  "portfolioAccountNote": "Dagiti transaksion laeng daytoy nga account. Makita ti cash ken dibidendo iti Amin nga account.",
+  "portfolioAccountNote": "Dagiti transaksion ken dibidendo laeng daytoy nga account. Makita ti cash, dagiti panggep ken ti panangsukimat ti AI iti Amin nga account.",
   "portfolioNoAccount": "Awan ti account",
   "allocationAccounts": "Account",
   "portfolioFee": "Komision ({currency})",

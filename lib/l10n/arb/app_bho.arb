@@ -777,7 +777,7 @@
   "portfolioAccountHint": "जइसे TBSZ 2026 (वैकल्पिक)",
   "portfolioAccountAdd": "खाता बताईं",
   "portfolioAccountsAll": "सब खाता",
-  "portfolioAccountNote": "खाली एह खाता के लेन-देन। नकद आ डिविडेंड ‘सब खाता’ में देखावल जाला।",
+  "portfolioAccountNote": "खाली एह खाता के लेन-देन आ डिविडेंड। नकद, लक्ष्य आ AI समीक्षा ‘सब खाता’ में देखावल जाला।",
   "portfolioNoAccount": "कवनो खाता ना",
   "allocationAccounts": "खाता",
   "portfolioFee": "ब्रोकरेज ({currency})",

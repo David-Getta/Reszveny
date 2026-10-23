@@ -2613,7 +2613,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Только сделки по этому счёту. Денежные средства и дивиденды — в разделе «Все счета».';
+      'Только сделки и дивиденды по этому счёту. Денежные средства, цели и ИИ-анализ — в разделе «Все счета».';
 
   @override
   String get portfolioNoAccount => 'Без счёта';

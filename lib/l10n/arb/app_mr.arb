@@ -777,7 +777,7 @@
   "portfolioAccountHint": "उदा. NPS (ऐच्छिक)",
   "portfolioAccountAdd": "खाते नमूद करा",
   "portfolioAccountsAll": "सर्व खाती",
-  "portfolioAccountNote": "फक्त या खात्याचे व्यवहार. रोख आणि लाभांश 'सर्व खाती' मध्ये दाखवले जातात.",
+  "portfolioAccountNote": "फक्त या खात्याचे व्यवहार आणि लाभांश. रोख, लक्ष्ये आणि AI आढावा 'सर्व खाती' मध्ये दाखवले जातात.",
   "portfolioNoAccount": "खाते नाही",
   "allocationAccounts": "खाती",
   "portfolioFee": "शुल्क ({currency})",

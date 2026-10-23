@@ -4408,7 +4408,7 @@ abstract class AppLocalizations {
   /// Note under the account filter when a single account is selected on the portfolio page.
   ///
   /// In en, this message translates to:
-  /// **'Only this account\'s transactions. Cash and dividends are shown under All accounts.'**
+  /// **'Only this account\'s transactions and dividends. Cash, goals and the AI review are under All accounts.'**
   String get portfolioAccountNote;
 
   /// Label for transactions recorded without an account (e.g. on the account choice when selling shares held in several accounts).

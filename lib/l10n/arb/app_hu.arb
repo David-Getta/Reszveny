@@ -678,7 +678,7 @@
   "portfolioAccountHint": "pl. TBSZ 2026 (nem kötelező)",
   "portfolioAccountAdd": "Számla megadása",
   "portfolioAccountsAll": "Minden számla",
-  "portfolioAccountNote": "Csak ennek a számlának a tranzakciói. A készpénz és az osztalékok a „Minden számla” nézetben látszanak.",
+  "portfolioAccountNote": "Csak ennek a számlának a tranzakciói és osztalékai. A készpénz, a célok és az AI-elemzés a „Minden számla” nézetben látszanak.",
   "portfolioNoAccount": "Számla nélkül",
   "portfolioFee": "Jutalék ({currency})",
   "portfolioFeeAdd": "Jutalék megadása",

@@ -2553,7 +2553,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Zogula ndi zogulitsa za akaunti iyi zokha. Ndalama ndi madividendi zikuwonetsedwa pansi pa Maakaunti onse.';
+      'Zogula ndi zogulitsa za akaunti iyi zokha, komanso madividendi ake. Ndalama, zolinga ndi kusanthula kwa AI zikuwonetsedwa pansi pa Maakaunti onse.';
 
   @override
   String get portfolioNoAccount => 'Palibe akaunti';

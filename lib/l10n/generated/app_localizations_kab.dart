@@ -2544,7 +2544,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Ala tiɣin d uznuzu n umiḍan-a. Idrimen n ufus d dividendes ttbanen deg Akk imiḍanen.';
+      'Ala tiɣin, uznuzu d dividendes n umiḍan-a. Idrimen n ufus, iswan d tesleḍt s AI ttbanen deg Akk imiḍanen.';
 
   @override
   String get portfolioNoAccount => 'War amiḍan';

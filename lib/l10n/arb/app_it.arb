@@ -777,7 +777,7 @@
   "portfolioAccountHint": "es. PIR (facoltativo)",
   "portfolioAccountAdd": "Indica un conto",
   "portfolioAccountsAll": "Tutti i conti",
-  "portfolioAccountNote": "Solo le transazioni di questo conto. Liquidità e dividendi sono mostrati in Tutti i conti.",
+  "portfolioAccountNote": "Solo le transazioni e i dividendi di questo conto. Liquidità, obiettivi e revisione con IA sono mostrati in Tutti i conti.",
   "portfolioNoAccount": "Senza conto",
   "allocationAccounts": "Conti",
   "portfolioFee": "Commissione ({currency})",

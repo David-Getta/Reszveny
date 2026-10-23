@@ -2546,7 +2546,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'تەنها مامەڵەکانی ئەم هەژمارە. پارەی کاش و پشکی قازانج لە «هەموو هەژمارەکان» پیشان دەدرێن.';
+      'تەنها مامەڵەکان و پشکی قازانجی ئەم هەژمارە. پارەی کاش، ئامانجەکان و شیکاریی AI لە «هەموو هەژمارەکان» پیشان دەدرێن.';
 
   @override
   String get portfolioNoAccount => 'بێ هەژمار';

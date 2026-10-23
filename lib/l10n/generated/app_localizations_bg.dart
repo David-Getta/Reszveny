@@ -2547,7 +2547,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Само транзакциите по тази сметка. Кешът и дивидентите се показват във „Всички сметки“.';
+      'Само транзакциите и дивидентите по тази сметка. Кешът, целите и AI анализът се показват във „Всички сметки“.';
 
   @override
   String get portfolioNoAccount => 'Без сметка';

@@ -2551,7 +2551,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Alleen transacties van deze rekening. Cash en dividend staan onder Alle rekeningen.';
+      'Alleen transacties en dividend van deze rekening. Cash, doelen en de AI-analyse staan onder Alle rekeningen.';
 
   @override
   String get portfolioNoAccount => 'Geen rekening';

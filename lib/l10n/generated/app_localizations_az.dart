@@ -2547,7 +2547,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Yalnız bu hesabın əməliyyatları. Nağd vəsait və dividendlər «Bütün hesablar» bölməsində göstərilir.';
+      'Yalnız bu hesabın əməliyyatları və dividendləri. Nağd vəsait, hədəflər və AI təhlili «Bütün hesablar» bölməsində göstərilir.';
 
   @override
   String get portfolioNoAccount => 'Hesabsız';

@@ -777,7 +777,7 @@
   "portfolioAccountHint": "нпр. TBSZ 2026 (опционо)",
   "portfolioAccountAdd": "Наведи рачун",
   "portfolioAccountsAll": "Сви рачуни",
-  "portfolioAccountNote": "Само трансакције овог рачуна. Готовина и дивиденде приказују се у делу „Сви рачуни“.",
+  "portfolioAccountNote": "Само трансакције и дивиденде овог рачуна. Готовина, циљеви и AI анализа приказују се у делу „Сви рачуни“.",
   "portfolioNoAccount": "Без рачуна",
   "allocationAccounts": "Рачуни",
   "portfolioFee": "Провизија ({currency})",

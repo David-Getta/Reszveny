@@ -2591,7 +2591,7 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Само трансакције овог рачуна. Готовина и дивиденде приказују се у делу „Сви рачуни“.';
+      'Само трансакције и дивиденде овог рачуна. Готовина, циљеви и AI анализа приказују се у делу „Сви рачуни“.';
 
   @override
   String get portfolioNoAccount => 'Без рачуна';

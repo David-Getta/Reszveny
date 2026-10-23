@@ -2551,7 +2551,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Vetëm transaksionet e kësaj llogarie. Paratë e gatshme dhe dividendët shfaqen te „Të gjitha llogaritë“.';
+      'Vetëm transaksionet dhe dividendët e kësaj llogarie. Paratë e gatshme, objektivat dhe analiza me AI shfaqen te „Të gjitha llogaritë“.';
 
   @override
   String get portfolioNoAccount => 'Pa llogari';

@@ -777,7 +777,7 @@
   "portfolioAccountHint": "f.eks. Aktiesparekonto (valgfrit)",
   "portfolioAccountAdd": "Angiv en konto",
   "portfolioAccountsAll": "Alle konti",
-  "portfolioAccountNote": "Kun transaktioner på denne konto. Kontanter og udbytte vises under Alle konti.",
+  "portfolioAccountNote": "Kun transaktioner og udbytte på denne konto. Kontanter, mål og AI-analysen vises under Alle konti.",
   "portfolioNoAccount": "Uden konto",
   "allocationAccounts": "Konti",
   "portfolioFee": "Kurtage ({currency})",

@@ -2540,7 +2540,7 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'खाली एह खाता के लेन-देन। नकद आ डिविडेंड ‘सब खाता’ में देखावल जाला।';
+      'खाली एह खाता के लेन-देन आ डिविडेंड। नकद, लक्ष्य आ AI समीक्षा ‘सब खाता’ में देखावल जाला।';
 
   @override
   String get portfolioNoAccount => 'कवनो खाता ना';

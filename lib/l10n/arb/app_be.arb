@@ -777,7 +777,7 @@
   "portfolioAccountHint": "напр. TBSZ 2026 (неабавязкова)",
   "portfolioAccountAdd": "Пазначыць рахунак",
   "portfolioAccountsAll": "Усе рахункі",
-  "portfolioAccountNote": "Толькі аперацыі гэтага рахунку. Грошы і дывідэнды паказваюцца ў раздзеле «Усе рахункі».",
+  "portfolioAccountNote": "Толькі аперацыі і дывідэнды гэтага рахунку. Грошы, мэты і AI-аналіз паказваюцца ў раздзеле «Усе рахункі».",
   "portfolioNoAccount": "Без рахунку",
   "allocationAccounts": "Рахункі",
   "portfolioFee": "Камісія ({currency})",

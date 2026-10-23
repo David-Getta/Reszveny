@@ -777,7 +777,7 @@
   "portfolioAccountHint": "örn. BES (isteğe bağlı)",
   "portfolioAccountAdd": "Hesap belirt",
   "portfolioAccountsAll": "Tüm hesaplar",
-  "portfolioAccountNote": "Yalnızca bu hesabın işlemleri. Nakit ve temettüler Tüm hesaplar altında gösterilir.",
+  "portfolioAccountNote": "Yalnızca bu hesabın işlemleri ve temettüleri. Nakit, hedefler ve yapay zekâ analizi Tüm hesaplar altında gösterilir.",
   "portfolioNoAccount": "Hesap yok",
   "allocationAccounts": "Hesaplar",
   "portfolioFee": "Komisyon ({currency})",

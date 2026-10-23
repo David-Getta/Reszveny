@@ -777,7 +777,7 @@
   "portfolioAccountHint": "isb. TFSA (akuphoqelekile)",
   "portfolioAccountAdd": "Cacisa i-akhawunti",
   "portfolioAccountsAll": "Wonke ama-akhawunti",
-  "portfolioAccountNote": "Ukuthenga nokuthengisa kwale akhawunti kuphela. Imali nezabelo zenzuzo kuboniswa ngaphansi kokuthi Wonke ama-akhawunti.",
+  "portfolioAccountNote": "Ukuthenga, ukuthengisa nezabelo zenzuzo zale akhawunti kuphela. Imali, imigomo nohlaziyo lwe-AI kuboniswa ngaphansi kokuthi Wonke ama-akhawunti.",
   "portfolioNoAccount": "Ayikho i-akhawunti",
   "allocationAccounts": "Ama-akhawunti",
   "portfolioFee": "Inkokhelo ({currency})",

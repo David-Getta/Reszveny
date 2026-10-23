@@ -777,7 +777,7 @@
   "portfolioAccountHint": "mwachitsanzo: TBSZ 2026 (ngati mukufuna)",
   "portfolioAccountAdd": "Tchulani akaunti",
   "portfolioAccountsAll": "Maakaunti onse",
-  "portfolioAccountNote": "Zogula ndi zogulitsa za akaunti iyi zokha. Ndalama ndi madividendi zikuwonetsedwa pansi pa Maakaunti onse.",
+  "portfolioAccountNote": "Zogula ndi zogulitsa za akaunti iyi zokha, komanso madividendi ake. Ndalama, zolinga ndi kusanthula kwa AI zikuwonetsedwa pansi pa Maakaunti onse.",
   "portfolioNoAccount": "Palibe akaunti",
   "allocationAccounts": "Maakaunti",
   "portfolioFee": "Zolipiritsa ({currency})",

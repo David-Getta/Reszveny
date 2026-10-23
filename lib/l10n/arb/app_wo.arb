@@ -777,7 +777,7 @@
   "portfolioAccountHint": "misaal: TBSZ 2026 (bu la neexee)",
   "portfolioAccountAdd": "Tànn kont",
   "portfolioAccountsAll": "Kont yépp",
-  "portfolioAccountNote": "Jënd ak jaay yu kont bii rekk. Xaalis ak dividande yi ñu ngi feeñ ci \"Kont yépp\".",
+  "portfolioAccountNote": "Jënd, jaay ak dividande yu kont bii rekk. Xaalis, jublu yi ak saytu AI bi ñu ngi feeñ ci \"Kont yépp\".",
   "portfolioNoAccount": "Amul kont",
   "allocationAccounts": "Kont yi",
   "portfolioFee": "Peyu liggéey ({currency})",

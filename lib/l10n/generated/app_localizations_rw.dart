@@ -2557,7 +2557,7 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Ibyaguzwe n\'ibyagurishijwe kuri iyi konti gusa. Amafaranga n\'amadividende bigaragara muri \"Konti zose\".';
+      'Ibyaguzwe, ibyagurishijwe n\'amadividende kuri iyi konti gusa. Amafaranga, intego n\'isesengura rya AI bigaragara muri \"Konti zose\".';
 
   @override
   String get portfolioNoAccount => 'Nta konti';

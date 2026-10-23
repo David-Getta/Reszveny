@@ -777,7 +777,7 @@
   "portfolioAccountHint": "ọmụmaatụ TBSZ 2026 (nhọrọ)",
   "portfolioAccountAdd": "Kọwaa akaụntụ",
   "portfolioAccountsAll": "Akaụntụ niile",
-  "portfolioAccountNote": "Naanị azụmahịa akaụntụ a. A na-egosi ego ka ego na nkesa uru n'okpuru Akaụntụ niile.",
+  "portfolioAccountNote": "Naanị azụmahịa na nkesa uru akaụntụ a. A na-egosi ego ka ego, ebumnuche na nyocha AI n'okpuru Akaụntụ niile.",
   "portfolioNoAccount": "Enweghị akaụntụ",
   "allocationAccounts": "Akaụntụ",
   "portfolioFee": "Ụgwọ ọrụ ({currency})",

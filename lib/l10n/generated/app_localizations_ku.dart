@@ -2547,7 +2547,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Tenê danûstandinên vî hesabî. Pereyê nexd û dividend di bin Hemû hesab de têne nîşandan.';
+      'Tenê danûstandin û dividendên vî hesabî. Pereyê nexd, armanc û analîza AI di bin Hemû hesab de têne nîşandan.';
 
   @override
   String get portfolioNoAccount => 'Bê hesab';

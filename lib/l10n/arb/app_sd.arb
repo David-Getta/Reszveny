@@ -777,7 +777,7 @@
   "portfolioAccountHint": "مثال طور TBSZ 2026 (اختياري)",
   "portfolioAccountAdd": "اڪائونٽ ٻڌايو",
   "portfolioAccountsAll": "سڀ اڪائونٽ",
-  "portfolioAccountNote": "صرف هن اڪائونٽ جي ليڻ دين. نقد ۽ ڊيويڊنڊ ”سڀ اڪائونٽ“ هيٺ ڏيکاريا وڃن ٿا.",
+  "portfolioAccountNote": "صرف هن اڪائونٽ جي ليڻ دين ۽ ڊيويڊنڊ. نقد، مقصد ۽ AI جائزو ”سڀ اڪائونٽ“ هيٺ ڏيکاريا وڃن ٿا.",
   "portfolioNoAccount": "ڪو اڪائونٽ ناهي",
   "allocationAccounts": "اڪائونٽس",
   "portfolioFee": "فيس ({currency})",

@@ -2613,7 +2613,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Samo transakcije tega računa. Gotovina in dividende so prikazane pod Vsi računi.';
+      'Samo transakcije in dividende tega računa. Gotovina, cilji in analiza z AI so prikazani pod Vsi računi.';
 
   @override
   String get portfolioNoAccount => 'Brez računa';

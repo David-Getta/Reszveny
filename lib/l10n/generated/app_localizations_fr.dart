@@ -2557,7 +2557,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Uniquement les transactions de ce compte. Les liquidités et les dividendes figurent dans Tous les comptes.';
+      'Uniquement les transactions et les dividendes de ce compte. Les liquidités, les objectifs et la revue par IA figurent dans Tous les comptes.';
 
   @override
   String get portfolioNoAccount => 'Sans compte';

@@ -937,6 +937,12 @@ void main() {
       date: DateTime(2025, 5, 2),
     );
     await s.portfolio.add(symbol: 'MSFT', quantity: 2, price: 400, currency: 'USD', date: DateTime(2025, 5, 2));
+    final msftDividend = await s.portfolio.addDividend(
+      symbol: 'MSFT',
+      amount: 2,
+      currency: 'USD',
+      date: DateTime(2026, 3, 1),
+    );
     await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Portfolio').first);
@@ -959,14 +965,33 @@ void main() {
     expect(find.byKey(const ValueKey('position-menu-AAPL')), findsOneWidget);
     expect(find.byKey(const ValueKey('position-menu-MSFT')), findsNothing);
     expect(
-      find.text("Only this account's transactions. Cash and dividends are shown under All accounts."),
+      find.text(
+        "Only this account's transactions and dividends. Cash, goals and the AI review are under All accounts.",
+      ),
       findsOneWidget,
     );
-    expect(find.byKey(const ValueKey('portfolio-dividends-received')), findsNothing);
     expect(find.byKey(const ValueKey('goal-set')), findsNothing, reason: 'a cél az egész portfólióra szól');
     expect(find.byKey(const ValueKey('portfolio-review')), findsNothing, reason: 'az AI-elemzés is');
+    // Az osztalékok a számlára szűrve; a havi osztalékcél az egész portfólióé.
+    expect(find.byKey(const ValueKey('portfolio-dividends-received')), findsOneWidget);
+    expect(find.byKey(ValueKey('dividend-${msftDividend.id}')), findsNothing);
+    expect(find.byKey(const ValueKey('dividend-goal-set')), findsNothing);
+    final addDividend = find.byKey(const ValueKey('dividend-add'));
+    await tester.ensureVisible(addDividend);
+    await tester.pumpAndSettle();
+    await tester.tap(addDividend);
+    await tester.pumpAndSettle();
+    expect(find.widgetWithText(TextField, 'TBSZ'), findsOneWidget, reason: 'a számla kitöltve');
+    await tester.enterText(find.byKey(const ValueKey('dividend-symbol')), 'AAPL');
+    await tester.enterText(find.byKey(const ValueKey('dividend-amount')), '3');
+    await tester.tap(find.byKey(const ValueKey('dividend-submit')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.dividendsIn('TBSZ').single.amount, 3);
+    expect(s.portfolio.dividendsIn(null), hasLength(2));
 
     // Eladás a TBSZ-nézetből: a dialógusban a számla kitöltve, az eladás oda kerül.
+    await tester.ensureVisible(find.byKey(const ValueKey('position-menu-AAPL')));
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
     await tester.pumpAndSettle();
     expect(find.text('AAPL · Transactions · TBSZ'), findsOneWidget);
@@ -983,6 +1008,8 @@ void main() {
     await tester.tapAt(const Offset(600, 40));
     await tester.pumpAndSettle();
 
+    await tester.ensureVisible(find.byKey(const ValueKey('account-*')));
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('account-*')));
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('position-menu-MSFT')), findsOneWidget);

@@ -2538,7 +2538,7 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'मात्र एहि खाताक लेन-देन। नकद आ डिविडेंड ‘सभ खाता’मे देखाओल जाइत अछि।';
+      'मात्र एहि खाताक लेन-देन आ डिविडेंड। नकद, लक्ष्य आ AI समीक्षा ‘सभ खाता’मे देखाओल जाइत अछि।';
 
   @override
   String get portfolioNoAccount => 'कोनो खाता नहि';

@@ -2545,7 +2545,7 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Тек осы шоттың операциялары. Қолма-қол қаражат пен дивидендтер «Барлық шоттар» бөлімінде көрсетіледі.';
+      'Тек осы шоттың операциялары мен дивидендтері. Қолма-қол қаражат, мақсаттар және AI талдауы «Барлық шоттар» бөлімінде көрсетіледі.';
 
   @override
   String get portfolioNoAccount => 'Шотсыз';

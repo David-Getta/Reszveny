@@ -777,7 +777,7 @@
   "portfolioAccountHint": "masalan, TBSZ 2026 (ixtiyoriy)",
   "portfolioAccountAdd": "Hisobni koʻrsatish",
   "portfolioAccountsAll": "Barcha hisoblar",
-  "portfolioAccountNote": "Faqat shu hisob operatsiyalari. Naqd pul va dividendlar «Barcha hisoblar» boʻlimida koʻrsatiladi.",
+  "portfolioAccountNote": "Faqat shu hisob operatsiyalari va dividendlari. Naqd pul, maqsadlar va AI tahlili «Barcha hisoblar» boʻlimida koʻrsatiladi.",
   "portfolioNoAccount": "Hisobsiz",
   "allocationAccounts": "Hisoblar",
   "portfolioFee": "Komissiya ({currency})",

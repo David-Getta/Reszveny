@@ -2566,7 +2566,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Dagiti transaksion laeng daytoy nga account. Makita ti cash ken dibidendo iti Amin nga account.';
+      'Dagiti transaksion ken dibidendo laeng daytoy nga account. Makita ti cash, dagiti panggep ken ti panangsukimat ti AI iti Amin nga account.';
 
   @override
   String get portfolioNoAccount => 'Awan ti account';

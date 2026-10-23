@@ -2545,7 +2545,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Yalnızca bu hesabın işlemleri. Nakit ve temettüler Tüm hesaplar altında gösterilir.';
+      'Yalnızca bu hesabın işlemleri ve temettüleri. Nakit, hedefler ve yapay zekâ analizi Tüm hesaplar altında gösterilir.';
 
   @override
   String get portfolioNoAccount => 'Hesap yok';

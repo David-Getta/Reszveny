@@ -2549,7 +2549,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Mung transaksi akun iki. Kas lan dividen ditampilake ing Kabeh akun.';
+      'Mung transaksi lan dividen akun iki. Kas, target, lan tinjauan AI ditampilake ing Kabeh akun.';
 
   @override
   String get portfolioNoAccount => 'Tanpa akun';

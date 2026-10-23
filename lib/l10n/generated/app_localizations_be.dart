@@ -2611,7 +2611,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Толькі аперацыі гэтага рахунку. Грошы і дывідэнды паказваюцца ў раздзеле «Усе рахункі».';
+      'Толькі аперацыі і дывідэнды гэтага рахунку. Грошы, мэты і AI-аналіз паказваюцца ў раздзеле «Усе рахункі».';
 
   @override
   String get portfolioNoAccount => 'Без рахунку';

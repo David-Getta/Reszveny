@@ -2547,7 +2547,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Endast transaktioner på det här kontot. Kontanter och utdelningar visas under Alla konton.';
+      'Endast transaktioner och utdelningar på det här kontot. Kontanter, mål och AI-analysen visas under Alla konton.';
 
   @override
   String get portfolioNoAccount => 'Inget konto';

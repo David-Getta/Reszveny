@@ -777,7 +777,7 @@
   "portfolioAccountHint": "لکه TBSZ 2026 (اختیاري)",
   "portfolioAccountAdd": "حساب وټاکئ",
   "portfolioAccountsAll": "ټول حسابونه",
-  "portfolioAccountNote": "یوازې د دې حساب راکړې ورکړې. نغدې او ډیویډنډونه د «ټول حسابونه» لاندې ښودل کېږي.",
+  "portfolioAccountNote": "یوازې د دې حساب راکړې ورکړې او ډیویډنډونه. نغدې، موخې او د AI بیاکتنه د «ټول حسابونه» لاندې ښودل کېږي.",
   "portfolioNoAccount": "حساب نشته",
   "allocationAccounts": "حسابونه",
   "portfolioFee": "فیس ({currency})",

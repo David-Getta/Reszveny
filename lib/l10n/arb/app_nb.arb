@@ -777,7 +777,7 @@
   "portfolioAccountHint": "f.eks. ASK (valgfritt)",
   "portfolioAccountAdd": "Angi konto",
   "portfolioAccountsAll": "Alle kontoer",
-  "portfolioAccountNote": "Bare transaksjoner på denne kontoen. Kontanter og utbytte vises under Alle kontoer.",
+  "portfolioAccountNote": "Bare transaksjoner og utbytte på denne kontoen. Kontanter, mål og AI-analysen vises under Alle kontoer.",
   "portfolioNoAccount": "Ingen konto",
   "allocationAccounts": "Kontoer",
   "portfolioFee": "Kurtasje ({currency})",

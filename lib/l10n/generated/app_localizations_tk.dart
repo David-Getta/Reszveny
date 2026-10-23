@@ -2546,7 +2546,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Diňe şu hasabyň amallary. Nagt pul we diwidendler «Ähli hasaplar» bölüminde görkezilýär.';
+      'Diňe şu hasabyň amallary we diwidendleri. Nagt pul, maksatlar we AI seljermesi «Ähli hasaplar» bölüminde görkezilýär.';
 
   @override
   String get portfolioNoAccount => 'Hasapsyz';

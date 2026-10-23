@@ -777,7 +777,7 @@
   "portfolioAccountHint": "ж.нь TBSZ 2026 (заавал биш)",
   "portfolioAccountAdd": "Данс заах",
   "portfolioAccountsAll": "Бүх данс",
-  "portfolioAccountNote": "Зөвхөн энэ дансны гүйлгээ. Бэлэн мөнгө болон ногдол ашгийг «Бүх данс» хэсэгт харуулна.",
+  "portfolioAccountNote": "Зөвхөн энэ дансны гүйлгээ ба ногдол ашиг. Бэлэн мөнгө, зорилт болон AI шинжилгээг «Бүх данс» хэсэгт харуулна.",
   "portfolioNoAccount": "Дансгүй",
   "allocationAccounts": "Данс",
   "portfolioFee": "Шимтгэл ({currency})",

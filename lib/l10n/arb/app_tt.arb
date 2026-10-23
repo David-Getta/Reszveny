@@ -777,7 +777,7 @@
   "portfolioAccountHint": "мәс., ИИС (мәҗбүри түгел)",
   "portfolioAccountAdd": "Хисапны күрсәтү",
   "portfolioAccountsAll": "Барлык хисаплар",
-  "portfolioAccountNote": "Бу хисапның операцияләре генә. Акча һәм дивидендлар «Барлык хисаплар» бүлегендә күрсәтелә.",
+  "portfolioAccountNote": "Бу хисапның операцияләре һәм дивидендлары гына. Акча, максатлар һәм AI анализы «Барлык хисаплар» бүлегендә күрсәтелә.",
   "portfolioNoAccount": "Хисапсыз",
   "allocationAccounts": "Хисаплар",
   "portfolioFee": "Комиссия ({currency})",

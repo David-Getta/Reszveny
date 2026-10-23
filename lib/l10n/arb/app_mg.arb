@@ -777,7 +777,7 @@
   "portfolioAccountHint": "oh. TBSZ 2026 (tsy voatery)",
   "portfolioAccountAdd": "Hamaritra kaonty",
   "portfolioAccountsAll": "Kaonty rehetra",
-  "portfolioAccountNote": "Ny fividianana sy fivarotana amin'ity kaonty ity ihany. Ny vola sy ny dividandy dia hita ao amin'ny « Kaonty rehetra ».",
+  "portfolioAccountNote": "Ny fividianana sy fivarotana ary ny dividandy amin'ity kaonty ity ihany. Ny vola, ny tanjona ary ny fandalinana AI dia hita ao amin'ny « Kaonty rehetra ».",
   "portfolioNoAccount": "Tsy misy kaonty",
   "allocationAccounts": "Kaonty",
   "portfolioFee": "Sarany ({currency})",

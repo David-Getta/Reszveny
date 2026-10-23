@@ -777,7 +777,7 @@
   "portfolioAccountHint": "ví dụ: TBSZ 2026 (không bắt buộc)",
   "portfolioAccountAdd": "Chỉ định tài khoản",
   "portfolioAccountsAll": "Tất cả tài khoản",
-  "portfolioAccountNote": "Chỉ giao dịch của tài khoản này. Tiền mặt và cổ tức hiển thị trong Tất cả tài khoản.",
+  "portfolioAccountNote": "Chỉ giao dịch và cổ tức của tài khoản này. Tiền mặt, mục tiêu và đánh giá bằng AI hiển thị trong Tất cả tài khoản.",
   "portfolioNoAccount": "Không có tài khoản",
   "allocationAccounts": "Tài khoản",
   "portfolioFee": "Phí giao dịch ({currency})",

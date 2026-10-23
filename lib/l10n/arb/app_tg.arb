@@ -777,7 +777,7 @@
   "portfolioAccountHint": "мас., TBSZ 2026 (ихтиёрӣ)",
   "portfolioAccountAdd": "Ҳисобро муайян кардан",
   "portfolioAccountsAll": "Ҳамаи ҳисобҳо",
-  "portfolioAccountNote": "Танҳо амалиётҳои ҳамин ҳисоб. Пули нақд ва дивидендҳо дар «Ҳамаи ҳисобҳо» нишон дода мешаванд.",
+  "portfolioAccountNote": "Танҳо амалиётҳо ва дивидендҳои ҳамин ҳисоб. Пули нақд, ҳадафҳо ва таҳлили AI дар «Ҳамаи ҳисобҳо» нишон дода мешаванд.",
   "portfolioNoAccount": "Бе ҳисоб",
   "allocationAccounts": "Ҳисобҳо",
   "portfolioFee": "Комиссия ({currency})",

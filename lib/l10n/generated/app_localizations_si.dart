@@ -2542,7 +2542,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'මෙම ගිණුමේ ගනුදෙනු පමණි. මුදල් සහ ලාභාංශ \'සියලු ගිණුම්\' යටතේ පෙන්වයි.';
+      'මෙම ගිණුමේ ගනුදෙනු සහ ලාභාංශ පමණි. මුදල්, ඉලක්ක සහ AI සමාලෝචනය \'සියලු ගිණුම්\' යටතේ පෙන්වයි.';
 
   @override
   String get portfolioNoAccount => 'ගිණුමක් නැත';

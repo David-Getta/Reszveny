@@ -777,7 +777,7 @@
   "portfolioAccountHint": "urugero: TBSZ 2026 (si itegeko)",
   "portfolioAccountAdd": "Erekana konti",
   "portfolioAccountsAll": "Konti zose",
-  "portfolioAccountNote": "Ibyaguzwe n'ibyagurishijwe kuri iyi konti gusa. Amafaranga n'amadividende bigaragara muri \"Konti zose\".",
+  "portfolioAccountNote": "Ibyaguzwe, ibyagurishijwe n'amadividende kuri iyi konti gusa. Amafaranga, intego n'isesengura rya AI bigaragara muri \"Konti zose\".",
   "portfolioNoAccount": "Nta konti",
   "allocationAccounts": "Konti",
   "portfolioFee": "Komisiyo ({currency})",

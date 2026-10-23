@@ -777,7 +777,7 @@
   "portfolioAccountHint": "p. ej. Cuenta de valores (opcional)",
   "portfolioAccountAdd": "Indicar una cuenta",
   "portfolioAccountsAll": "Todas las cuentas",
-  "portfolioAccountNote": "Solo las transacciones de esta cuenta. El efectivo y los dividendos se muestran en Todas las cuentas.",
+  "portfolioAccountNote": "Solo las transacciones y los dividendos de esta cuenta. El efectivo, los objetivos y la revisión con IA se muestran en Todas las cuentas.",
   "portfolioNoAccount": "Sin cuenta",
   "allocationAccounts": "Cuentas",
   "portfolioFee": "Comisión ({currency})",

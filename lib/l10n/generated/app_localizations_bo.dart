@@ -2534,7 +2534,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'རྩིས་ཁྲ་འདིའི་ཉོ་འཚོང་ཁོ་ན། དངུལ་རྐྱང་དང་ཁེ་བགོས་ནི་རྩིས་ཁྲ་ཡོངས་ཀྱི་འོག་ཏུ་སྟོན་གྱི་ཡོད།';
+      'རྩིས་ཁྲ་འདིའི་ཉོ་འཚོང་དང་ཁེ་བགོས་ཁོ་ན། དངུལ་རྐྱང་དང་། དམིགས་ཚད། AI དབྱེ་ཞིབ་བཅས་རྩིས་ཁྲ་ཡོངས་ཀྱི་འོག་ཏུ་སྟོན་གྱི་ཡོད།';
 
   @override
   String get portfolioNoAccount => 'རྩིས་ཁྲ་མེད།';

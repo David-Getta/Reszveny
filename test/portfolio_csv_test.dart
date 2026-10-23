@@ -165,6 +165,29 @@ void main() {
     expect(parsePortfolioCsv('Ticker;Darab;Price;Quantity;Jutalék\nOTP;x;30000;10;500').lots.single.fee, 500);
   });
 
+  test('dividends with an account: in both CSVs, read back with the account', () {
+    final dividends = [
+      DividendRecord(
+        id: 'd1',
+        symbol: 'OTP',
+        amount: 24000,
+        currency: 'HUF',
+        date: DateTime(2025, 6, 2),
+        account: 'TBSZ',
+      ),
+      DividendRecord(id: 'd2', symbol: 'AAPL', amount: 0.75, currency: 'USD', date: DateTime(2026, 2, 13)),
+    ];
+    final csv = portfolioCsv(const [], dividends: dividends);
+    expect(csv, startsWith('symbol,quantity,price,currency,date,side,account\n'));
+    expect(csv, contains('OTP,,24000,HUF,2025-06-02,dividend,TBSZ\n'));
+    expect(parsePortfolioCsv(csv).dividends.map((d) => (d.symbol, d.account)), [('OTP', 'TBSZ'), ('AAPL', null)]);
+    expect(dividendsCsv(dividends).split('\n').take(2), [
+      'date,symbol,amount,currency,account',
+      '2025-06-02,OTP,24000,HUF,TBSZ',
+    ]);
+    expect(dividendsCsv([dividends.last]), startsWith('date,symbol,amount,currency\n'));
+  });
+
   test('realized gains CSV: an account column when a sale has an account', () {
     final lots = [
       PortfolioLot(id: 'a', symbol: 'OTP', quantity: 10, price: 100, currency: 'HUF', date: DateTime(2024, 1, 2)),

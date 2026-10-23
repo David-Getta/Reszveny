@@ -777,7 +777,7 @@
   "portfolioAccountHint": "ଯେପରି NPS (ବୈକଳ୍ପିକ)",
   "portfolioAccountAdd": "ଆକାଉଣ୍ଟ ଉଲ୍ଲେଖ କରନ୍ତୁ",
   "portfolioAccountsAll": "ସମସ୍ତ ଆକାଉଣ୍ଟ",
-  "portfolioAccountNote": "କେବଳ ଏହି ଆକାଉଣ୍ଟର କାରବାର। ନଗଦ ଓ ଡିଭିଡେଣ୍ଡ 'ସମସ୍ତ ଆକାଉଣ୍ଟ'ରେ ଦେଖାଯାଏ।",
+  "portfolioAccountNote": "କେବଳ ଏହି ଆକାଉଣ୍ଟର କାରବାର ଓ ଡିଭିଡେଣ୍ଡ। ନଗଦ, ଲକ୍ଷ୍ୟ ଓ AI ସମୀକ୍ଷା 'ସମସ୍ତ ଆକାଉଣ୍ଟ'ରେ ଦେଖାଯାଏ।",
   "portfolioNoAccount": "ଆକାଉଣ୍ଟ ନାହିଁ",
   "allocationAccounts": "ଆକାଉଣ୍ଟ",
   "portfolioFee": "ଶୁଳ୍କ ({currency})",

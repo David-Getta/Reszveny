@@ -2543,7 +2543,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'শুধু এই অ্যাকাউন্টের লেনদেন। নগদ ও ডিভিডেন্ড ‘সব অ্যাকাউন্ট’-এ দেখানো হয়।';
+      'শুধু এই অ্যাকাউন্টের লেনদেন ও ডিভিডেন্ড। নগদ, লক্ষ্য ও AI পর্যালোচনা ‘সব অ্যাকাউন্ট’-এ দেখানো হয়।';
 
   @override
   String get portfolioNoAccount => 'অ্যাকাউন্ট ছাড়া';

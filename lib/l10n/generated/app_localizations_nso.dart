@@ -2563,7 +2563,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Dithekišano tša akhaonto ye fela. Tšhelete le dividende di bontšhwa ka fase ga Diakhaonto ka moka.';
+      'Dithekišano le dividende tša akhaonto ye fela. Tšhelete, maikemišetšo le tshekatsheko ya AI di bontšhwa ka fase ga Diakhaonto ka moka.';
 
   @override
   String get portfolioNoAccount => 'Ga go na akhaonto';

@@ -2543,7 +2543,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Nin jate in ka sanniw ni feereliw dɔrɔn. Wari gansan ni dividandiw bɛ jira Jate bɛɛ kɔnɔ.';
+      'Nin jate in ka sanniw, feereliw ni dividandiw dɔrɔn. Wari gansan, laɲiniw ni AI sɛgɛsɛgɛli bɛ jira Jate bɛɛ kɔnɔ.';
 
   @override
   String get portfolioNoAccount => 'Jate si tɛ';

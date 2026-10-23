@@ -2553,7 +2553,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Kusumba ne kusumbisha bia konte eyi nkayabi. Mfranga ya mu bianza ne dividende bidi bimueneka mu Konte yonso.';
+      'Kusumba, kusumbisha ne dividende bia konte eyi nkayabi. Mfranga ya mu bianza, bipatshila ne dikonkonona dia AI bidi bimueneka mu Konte yonso.';
 
   @override
   String get portfolioNoAccount => 'Kakuena konte';

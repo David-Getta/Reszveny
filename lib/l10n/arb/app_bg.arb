@@ -777,7 +777,7 @@
   "portfolioAccountHint": "напр. TBSZ 2026 (по избор)",
   "portfolioAccountAdd": "Посочете сметка",
   "portfolioAccountsAll": "Всички сметки",
-  "portfolioAccountNote": "Само транзакциите по тази сметка. Кешът и дивидентите се показват във „Всички сметки“.",
+  "portfolioAccountNote": "Само транзакциите и дивидентите по тази сметка. Кешът, целите и AI анализът се показват във „Всички сметки“.",
   "portfolioNoAccount": "Без сметка",
   "allocationAccounts": "Сметки",
   "portfolioFee": "Комисиона ({currency})",

@@ -143,6 +143,7 @@ void main() {
     SharedPreferences.setMockInitialValues({});
     final a = _Device(server);
     await a.portfolio.add(symbol: 'OTP', quantity: 10, price: 30000, currency: 'HUF', account: 'TBSZ', fee: 300);
+    await a.portfolio.addDividend(symbol: 'OTP', amount: 2400, currency: 'HUF', account: 'TBSZ');
     await a.sync.start();
     expect((server.data!['lots'] as List).single['account'], 'TBSZ');
     // Egy régebbi app (a számlát és a díjat nem ismeri) ugyanazt a tételt nélkülük tölti fel.
@@ -154,12 +155,17 @@ void main() {
             ..remove('account')
             ..remove('fee'),
       ],
+      'dividends': [
+        for (final d in server.data!['dividends'] as List) {...(d as Map)}..remove('account'),
+      ],
     };
     server.updatedAt = DateTime.utc(2026, 10, 16);
     await a.sync.syncNow();
     expect((a.portfolio.lots.single.account, a.portfolio.lots.single.fee), ('TBSZ', 300.0));
     expect((server.data!['lots'] as List).single['account'], 'TBSZ');
     expect((server.data!['lots'] as List).single['fee'], 300.0);
+    expect(a.portfolio.dividends.single.account, 'TBSZ');
+    expect((server.data!['dividends'] as List).single['account'], 'TBSZ');
   });
 
   test('goals follow the account: the newer change wins, a removed goal does not come back', () async {

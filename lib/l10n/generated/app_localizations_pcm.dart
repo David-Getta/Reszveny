@@ -2545,7 +2545,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Na only dis account buy and sell. Cash and dividend dey show for All accounts.';
+      'Na only dis account buy and sell plus dividend. Cash, targets and AI check dey show for All accounts.';
 
   @override
   String get portfolioNoAccount => 'No account';

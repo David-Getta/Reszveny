@@ -777,7 +777,7 @@
   "portfolioAccountHint": "ex.: PGBL (opcional)",
   "portfolioAccountAdd": "Informar conta",
   "portfolioAccountsAll": "Todas as contas",
-  "portfolioAccountNote": "Apenas as transações desta conta. Caixa e dividendos aparecem em Todas as contas.",
+  "portfolioAccountNote": "Apenas as transações e os dividendos desta conta. Caixa, metas e a revisão com IA aparecem em Todas as contas.",
   "portfolioNoAccount": "Sem conta",
   "allocationAccounts": "Contas",
   "portfolioFee": "Comissão ({currency})",

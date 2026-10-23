@@ -2087,7 +2087,7 @@
   "@portfolioAccountsAll": {
     "description": "First chip of the account filter on the portfolio page: show every account together."
   },
-  "portfolioAccountNote": "Only this account's transactions. Cash and dividends are shown under All accounts.",
+  "portfolioAccountNote": "Only this account's transactions and dividends. Cash, goals and the AI review are under All accounts.",
   "@portfolioAccountNote": {
     "description": "Note under the account filter when a single account is selected on the portfolio page."
   },

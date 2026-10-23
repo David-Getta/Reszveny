@@ -2557,7 +2557,7 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Mga transaksyon lang niini nga account. Ang cash ug dibidendo makita sa Tanang account.';
+      'Mga transaksyon ug dibidendo lang niini nga account. Ang cash, mga tumong ug ang pagtuki sa AI makita sa Tanang account.';
 
   @override
   String get portfolioNoAccount => 'Walay account';

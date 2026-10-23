@@ -2554,7 +2554,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Kaka kusumba ti kuteka ya konti yai. Mbongo ya maboko ti ba dividende ke monika na Bakonti yonso.';
+      'Kaka kusumba, kuteka ti ba dividende ya konti yai. Mbongo ya maboko, ba lukanu ti analyse ya AI ke monika na Bakonti yonso.';
 
   @override
   String get portfolioNoAccount => 'Konti ve';

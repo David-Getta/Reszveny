@@ -2555,7 +2555,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'ഈ അക്കൗണ്ടിലെ ഇടപാടുകൾ മാത്രം. പണവും ഡിവിഡന്റുകളും \'എല്ലാ അക്കൗണ്ടുകളും\' എന്നതിൽ കാണിക്കുന്നു.';
+      'ഈ അക്കൗണ്ടിലെ ഇടപാടുകളും ഡിവിഡന്റുകളും മാത്രം. പണം, ലക്ഷ്യങ്ങൾ, AI അവലോകനം എന്നിവ \'എല്ലാ അക്കൗണ്ടുകളും\' എന്നതിൽ കാണിക്കുന്നു.';
 
   @override
   String get portfolioNoAccount => 'അക്കൗണ്ട് ഇല്ല';

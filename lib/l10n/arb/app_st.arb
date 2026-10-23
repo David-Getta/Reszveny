@@ -777,7 +777,7 @@
   "portfolioAccountHint": "mohl. TFSA (ha ho qobellwe)",
   "portfolioAccountAdd": "Bontsha akhaonto",
   "portfolioAccountsAll": "Diakhaonto tsohle",
-  "portfolioAccountNote": "Ditheko le dithekiso tsa akhaonto ena feela. Chelete le dividende di bontshwa tlasa Diakhaonto tsohle.",
+  "portfolioAccountNote": "Ditheko, dithekiso le dividende tsa akhaonto ena feela. Chelete, dipheo le tlhahlobo ya AI di bontshwa tlasa Diakhaonto tsohle.",
   "portfolioNoAccount": "Ha ho akhaonto",
   "allocationAccounts": "Diakhaonto",
   "portfolioFee": "Tefello ({currency})",

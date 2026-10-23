@@ -2544,7 +2544,7 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'यस खाताको कारोबार मात्र। नगद र लाभांश \'सबै खाता\' अन्तर्गत देखाइन्छ।';
+      'यस खाताको कारोबार र लाभांश मात्र। नगद, लक्ष्य र AI समीक्षा \'सबै खाता\' अन्तर्गत देखाइन्छ।';
 
   @override
   String get portfolioNoAccount => 'खाता छैन';

@@ -777,7 +777,7 @@
   "portfolioAccountHint": "мысалы, TBSZ 2026 (міндетті емес)",
   "portfolioAccountAdd": "Шотты көрсету",
   "portfolioAccountsAll": "Барлық шоттар",
-  "portfolioAccountNote": "Тек осы шоттың операциялары. Қолма-қол қаражат пен дивидендтер «Барлық шоттар» бөлімінде көрсетіледі.",
+  "portfolioAccountNote": "Тек осы шоттың операциялары мен дивидендтері. Қолма-қол қаражат, мақсаттар және AI талдауы «Барлық шоттар» бөлімінде көрсетіледі.",
   "portfolioNoAccount": "Шотсыз",
   "allocationAccounts": "Шоттар",
   "portfolioFee": "Комиссия ({currency})",

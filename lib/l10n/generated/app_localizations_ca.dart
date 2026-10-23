@@ -2555,7 +2555,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Només les transaccions d’aquest compte. L’efectiu i els dividends es mostren a Tots els comptes.';
+      'Només les transaccions i els dividends d’aquest compte. L’efectiu, els objectius i la revisió amb IA es mostren a Tots els comptes.';
 
   @override
   String get portfolioNoAccount => 'Sense compte';

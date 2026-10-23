@@ -777,7 +777,7 @@
   "portfolioAccountHint": "p. ex. PEA (facultatif)",
   "portfolioAccountAdd": "Préciser un compte",
   "portfolioAccountsAll": "Tous les comptes",
-  "portfolioAccountNote": "Uniquement les transactions de ce compte. Les liquidités et les dividendes figurent dans Tous les comptes.",
+  "portfolioAccountNote": "Uniquement les transactions et les dividendes de ce compte. Les liquidités, les objectifs et la revue par IA figurent dans Tous les comptes.",
   "portfolioNoAccount": "Sans compte",
   "allocationAccounts": "Comptes",
   "portfolioFee": "Frais ({currency})",

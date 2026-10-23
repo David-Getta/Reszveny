@@ -777,7 +777,7 @@
   "portfolioAccountHint": "mbandu: TBSZ 2026 (kana nge zola)",
   "portfolioAccountAdd": "Songa konti",
   "portfolioAccountsAll": "Bakonti yonso",
-  "portfolioAccountNote": "Kaka kusumba ti kuteka ya konti yai. Mbongo ya maboko ti ba dividende ke monika na Bakonti yonso.",
+  "portfolioAccountNote": "Kaka kusumba, kuteka ti ba dividende ya konti yai. Mbongo ya maboko, ba lukanu ti analyse ya AI ke monika na Bakonti yonso.",
   "portfolioNoAccount": "Konti ve",
   "allocationAccounts": "Bakonti",
   "portfolioFee": "Frè ({currency})",

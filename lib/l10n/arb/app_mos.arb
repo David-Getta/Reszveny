@@ -777,7 +777,7 @@
   "portfolioAccountHint": "wala TBSZ 2026 (f sã n data)",
   "portfolioAccountAdd": "Wilg kõnte",
   "portfolioAccountsAll": "Kõnte fãa",
-  "portfolioAccountNote": "Kõntã-kãngã raaba la koosgo bal. Ligdi la dividand be \"Kõnte fãa\" pʋgẽ.",
+  "portfolioAccountNote": "Kõntã-kãngã raaba, koosgo la dividand bal. Ligdi, raabo la AI vɛɛsgo be \"Kõnte fãa\" pʋgẽ.",
   "portfolioNoAccount": "Kõnte ka be ye",
   "allocationAccounts": "Kõnte",
   "portfolioFee": "Ligd sẽn yaod ({currency})",

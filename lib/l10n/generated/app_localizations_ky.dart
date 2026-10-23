@@ -2548,7 +2548,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Ушул эсептин транзакциялары гана. Нак акча жана дивиденддер «Бардык эсептер» бөлүмүндө көрсөтүлөт.';
+      'Ушул эсептин транзакциялары жана дивиденддери гана. Нак акча, максаттар жана AI талдоосу «Бардык эсептер» бөлүмүндө көрсөтүлөт.';
 
   @override
   String get portfolioNoAccount => 'Эсепсиз';

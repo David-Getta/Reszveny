@@ -407,7 +407,7 @@ class _PortfolioBody extends StatelessWidget {
                   ),
                 ],
                 // Az osztalékok nem számlához kötöttek: számla-nézetben nem látszanak.
-                if (account == null) DividendsCard(currency: ccy, annualDividend: s.annualDividend),
+                DividendsCard(currency: ccy, annualDividend: s.annualDividend, account: account),
                 if (s.closed.isNotEmpty) ...[
                   Padding(
                     padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),
@@ -1181,6 +1181,11 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
           // Számla-nézetben csak annak a számlának a tranzakciói (az eladás is oda kerül).
           final lots = services.portfolio.adjustedLotsIn(account).where((l) => l.symbol == position.symbol).toList()
             ..sort((a, b) => (b.date ?? DateTime(0)).compareTo(a.date ?? DateTime(0)));
+          // A részvény kapott osztalékai (számla-nézetben csak a számláé).
+          final dividends = [
+            for (final d in services.portfolio.dividendsOf(position.symbol))
+              if (account == null || d.account == account) d,
+          ];
           // A pozíció a tárolóból (számla-nézetben a teljes FIFO számlára eső része), hogy a
           // lap ugyanazt a darabszámot mutassa, mint az oldal.
           final now =
@@ -1220,8 +1225,12 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                           key: const ValueKey('position-dividend'),
                           tooltip: l10n.portfolioAddDividend,
                           icon: const Icon(Icons.payments_outlined),
-                          onPressed: () =>
-                              showAddDividendDialog(context, symbol: position.symbol, currency: position.currency),
+                          onPressed: () => showAddDividendDialog(
+                            context,
+                            symbol: position.symbol,
+                            currency: position.currency,
+                            account: account,
+                          ),
                         ),
                         // Részvényfelaprózás rögzítése ehhez a részvényhez.
                         IconButton(
@@ -1268,8 +1277,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                         style: TextStyle(color: gainColor(p, now.realizedGain), fontWeight: FontWeight.w600),
                       ),
                     ),
-                  if (services.portfolio.dividendsOf(position.symbol).where((d) => d.currency == position.currency)
-                      case final ds when ds.isNotEmpty)
+                  if (dividends.where((d) => d.currency == position.currency) case final ds when ds.isNotEmpty)
                     Padding(
                       key: const ValueKey('position-dividends-sum'),
                       padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
@@ -1280,7 +1288,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                       ),
                     ),
                   // A részvény kapott osztalékai tételenként (az újabb elöl, legfeljebb hat), minden pénznemben.
-                  for (final d in services.portfolio.dividendsOf(position.symbol).take(6))
+                  for (final d in dividends.take(6))
                     ListTile(
                       key: ValueKey('sheet-dividend-${d.id}'),
                       dense: true,

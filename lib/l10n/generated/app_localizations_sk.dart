@@ -2611,7 +2611,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Len transakcie tohto účtu. Hotovosť a dividendy nájdete v časti Všetky účty.';
+      'Len transakcie a dividendy tohto účtu. Hotovosť, ciele a AI analýzu nájdete v časti Všetky účty.';
 
   @override
   String get portfolioNoAccount => 'Bez účtu';

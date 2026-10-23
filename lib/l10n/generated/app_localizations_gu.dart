@@ -2540,7 +2540,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'ફક્ત આ ખાતાના વ્યવહારો. રોકડ અને ડિવિડન્ડ ‘બધાં ખાતાં’માં દેખાય છે.';
+      'ફક્ત આ ખાતાના વ્યવહારો અને ડિવિડન્ડ. રોકડ, લક્ષ્યો અને AI સમીક્ષા ‘બધાં ખાતાં’માં દેખાય છે.';
 
   @override
   String get portfolioNoAccount => 'ખાતા વિના';

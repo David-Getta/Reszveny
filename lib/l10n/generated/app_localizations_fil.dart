@@ -2553,7 +2553,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Mga transaksyon lang ng account na ito. Makikita ang cash at dibidendo sa Lahat ng account.';
+      'Mga transaksyon at dibidendo lang ng account na ito. Makikita ang cash, mga layunin at ang pagsusuri ng AI sa Lahat ng account.';
 
   @override
   String get portfolioNoAccount => 'Walang account';

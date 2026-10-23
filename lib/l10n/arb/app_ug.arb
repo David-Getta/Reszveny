@@ -777,7 +777,7 @@
   "portfolioAccountHint": "مەسىلەن TBSZ 2026 (ئىختىيارىي)",
   "portfolioAccountAdd": "ھېسابات بەلگىلەش",
   "portfolioAccountsAll": "بارلىق ھېساباتلار",
-  "portfolioAccountNote": "پەقەت بۇ ھېساباتنىڭ سودىلىرى. نەق پۇل ۋە دىۋىدېندلار «بارلىق ھېساباتلار» دا كۆرسىتىلىدۇ.",
+  "portfolioAccountNote": "پەقەت بۇ ھېساباتنىڭ سودىلىرى ۋە دىۋىدېندلىرى. نەق پۇل، نىشانلار ۋە AI تەھلىلى «بارلىق ھېساباتلار» دا كۆرسىتىلىدۇ.",
   "portfolioNoAccount": "ھېساباتسىز",
   "allocationAccounts": "ھېساباتلار",
   "portfolioFee": "رەسمىيەت ھەققى ({currency})",

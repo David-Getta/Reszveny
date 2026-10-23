@@ -777,7 +777,7 @@
   "portfolioAccountHint": "مثلاً TBSZ 2026 (اختیاری)",
   "portfolioAccountAdd": "تعیین حساب",
   "portfolioAccountsAll": "همه حساب‌ها",
-  "portfolioAccountNote": "فقط تراکنش‌های این حساب. نقد و سود سهام در «همه حساب‌ها» نمایش داده می‌شوند.",
+  "portfolioAccountNote": "فقط تراکنش‌ها و سود سهام این حساب. نقد، اهداف و بررسی هوش مصنوعی در «همه حساب‌ها» نمایش داده می‌شوند.",
   "portfolioNoAccount": "بدون حساب",
   "allocationAccounts": "حساب‌ها",
   "portfolioFee": "کارمزد ({currency})",

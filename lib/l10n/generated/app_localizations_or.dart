@@ -2542,7 +2542,7 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'କେବଳ ଏହି ଆକାଉଣ୍ଟର କାରବାର। ନଗଦ ଓ ଡିଭିଡେଣ୍ଡ \'ସମସ୍ତ ଆକାଉଣ୍ଟ\'ରେ ଦେଖାଯାଏ।';
+      'କେବଳ ଏହି ଆକାଉଣ୍ଟର କାରବାର ଓ ଡିଭିଡେଣ୍ଡ। ନଗଦ, ଲକ୍ଷ୍ୟ ଓ AI ସମୀକ୍ଷା \'ସମସ୍ତ ଆକାଉଣ୍ଟ\'ରେ ଦେଖାଯାଏ।';
 
   @override
   String get portfolioNoAccount => 'ଆକାଉଣ୍ଟ ନାହିଁ';

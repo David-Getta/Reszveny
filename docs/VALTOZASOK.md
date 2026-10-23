@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.188)
+# Változásjegyzék (0.2.130 → 0.2.189)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -49,6 +49,9 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Ha egy eladásnak a saját számláján nincs vétele (pl. régebben számla nélkül rögzített eladás TBSZ-es vételre), a
   többi számla legrégebbi tételeiből fogy – a darabszám mindig egyezik a grafikonéval; a számla-nézetek a teljes
   FIFO-ból számolnak, így a számlák összeadódnak.
+- **Osztalékok számlánként**: az osztalék rögzítésekor számla adható (alapból ahol a legtöbb darab van, számla-nézetben
+  az a számla); a számla-nézetben a „Kapott osztalékok” kártya a számla osztalékait, várható kifizetéseit és havi
+  diagramját mutatja; az osztalék-CSV-kben számla-oszlop; szinkronban (régebbi app sem törli).
 - **Megoszlás számlák szerint**: a megoszlás-kártyán új „Számlák” nézet (pl. TBSZ 2026 32% · Normál 68%).
 - **Tranzakciós díj (jutalék)**: a vételhez és az eladáshoz megadható; a bekerülési értékbe, a realizált nyereségbe
   (az adó-CSV-be is) és az éves hozamba beszámít; a bróker-exportok díj-oszlopa (IBKR „Comm/Fee”) importáláskor

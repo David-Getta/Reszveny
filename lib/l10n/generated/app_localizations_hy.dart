@@ -2553,7 +2553,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Միայն այս հաշվի գործարքները։ Կանխիկը և շահաբաժինները ցուցադրվում են «Բոլոր հաշիվները» բաժնում։';
+      'Միայն այս հաշվի գործարքներն ու շահաբաժինները։ Կանխիկը, նպատակները և AI վերլուծությունը ցուցադրվում են «Բոլոր հաշիվները» բաժնում։';
 
   @override
   String get portfolioNoAccount => 'Առանց հաշվի';

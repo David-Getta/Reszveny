@@ -99,6 +99,7 @@ class DividendRecord {
     required this.amount,
     required this.currency,
     this.date,
+    this.account,
   });
 
   final String id;
@@ -107,12 +108,16 @@ class DividendRecord {
   final String currency;
   final DateTime? date;
 
+  /// A számla, amelyre az osztalék érkezett (`null`: nincs megadva).
+  final String? account;
+
   Map<String, dynamic> toJson() => {
     'id': id,
     'symbol': symbol,
     'amount': amount,
     'currency': currency,
     if (date != null) 'date': date!.toIso8601String().substring(0, 10),
+    'account': ?account,
   };
 
   static DividendRecord? fromJson(Map<String, dynamic> j) {
@@ -125,6 +130,7 @@ class DividendRecord {
       amount: a.toDouble(),
       currency: (j['currency'] as String? ?? 'USD').toUpperCase(),
       date: DateTime.tryParse(j['date'] as String? ?? ''),
+      account: PortfolioLot.cleanAccount(j['account']),
     );
   }
 }
@@ -641,7 +647,16 @@ class PortfolioStore extends ChangeNotifier {
 
   /// A használt számlák neve ábécérendben (a szűrőhöz); üres, ha egyik
   /// tranzakciónak sincs számlája.
-  List<String> get accounts => ({for (final l in _lots) ?l.account}.toList()..sort());
+  List<String> get accounts =>
+      ({for (final l in _lots) ?l.account, for (final d in _dividends) ?d.account}.toList()..sort());
+
+  /// Egy számla kapott osztalékai ([account] `null`: mind), az újabb elöl.
+  List<DividendRecord> dividendsIn(String? account) => account == null
+      ? dividends
+      : [
+          for (final d in _dividends)
+            if (d.account == account) d,
+        ];
 
   /// Egy számla még birtokolt pozíciói ([account] `null`: mind); a FIFO a
   /// számlán belül számol, ahogy a bróker is.
@@ -773,6 +788,7 @@ class PortfolioStore extends ChangeNotifier {
     required double amount,
     required String currency,
     DateTime? date,
+    String? account,
   }) async {
     final s = symbol.trim().toUpperCase();
     final d = DividendRecord(
@@ -781,6 +797,7 @@ class PortfolioStore extends ChangeNotifier {
       amount: amount,
       currency: currency.toUpperCase(),
       date: date,
+      account: canonicalAccount(account),
     );
     _dividends
       ..add(d)

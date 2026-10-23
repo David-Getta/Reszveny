@@ -2543,7 +2543,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Only this account\'s transactions. Cash and dividends are shown under All accounts.';
+      'Only this account\'s transactions and dividends. Cash, goals and the AI review are under All accounts.';
 
   @override
   String get portfolioNoAccount => 'No account';

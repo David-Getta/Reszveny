@@ -2610,7 +2610,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Tik šios sąskaitos operacijos. Grynieji pinigai ir dividendai rodomi skiltyje „Visos sąskaitos“.';
+      'Tik šios sąskaitos operacijos ir dividendai. Grynieji pinigai, tikslai ir DI analizė rodomi skiltyje „Visos sąskaitos“.';
 
   @override
   String get portfolioNoAccount => 'Be sąskaitos';

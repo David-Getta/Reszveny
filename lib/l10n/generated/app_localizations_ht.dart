@@ -2543,7 +2543,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Se sèlman tranzaksyon kont sa a. Lajan kach ak dividann yo parèt nan Tout kont yo.';
+      'Se sèlman tranzaksyon ak dividann kont sa a. Lajan kach, objektif ak analiz AI parèt nan Tout kont yo.';
 
   @override
   String get portfolioNoAccount => 'San kont';

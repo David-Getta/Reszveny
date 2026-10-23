@@ -777,7 +777,7 @@
   "portfolioAccountHint": "مثلاً TBSZ 2026 (اختیاری)",
   "portfolioAccountAdd": "اکاؤنٹ بتائیں",
   "portfolioAccountsAll": "تمام اکاؤنٹس",
-  "portfolioAccountNote": "صرف اس اکاؤنٹ کے لین دین۔ نقد اور ڈیویڈنڈ ”تمام اکاؤنٹس“ کے تحت دکھائے جاتے ہیں۔",
+  "portfolioAccountNote": "صرف اس اکاؤنٹ کے لین دین اور ڈیویڈنڈ۔ نقد، اہداف اور AI جائزہ ”تمام اکاؤنٹس“ کے تحت دکھائے جاتے ہیں۔",
   "portfolioNoAccount": "بغیر اکاؤنٹ",
   "allocationAccounts": "اکاؤنٹس",
   "portfolioFee": "فیس ({currency})",

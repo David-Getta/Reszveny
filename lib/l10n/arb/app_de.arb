@@ -777,7 +777,7 @@
   "portfolioAccountHint": "z. B. Depot (optional)",
   "portfolioAccountAdd": "Konto angeben",
   "portfolioAccountsAll": "Alle Konten",
-  "portfolioAccountNote": "Nur Transaktionen dieses Kontos. Cash und Dividenden werden unter „Alle Konten“ angezeigt.",
+  "portfolioAccountNote": "Nur Transaktionen und Dividenden dieses Kontos. Cash, Ziele und die KI-Analyse werden unter „Alle Konten“ angezeigt.",
   "portfolioNoAccount": "Ohne Konto",
   "allocationAccounts": "Konten",
   "portfolioFee": "Gebühr ({currency})",

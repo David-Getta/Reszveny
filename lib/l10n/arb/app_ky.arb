@@ -777,7 +777,7 @@
   "portfolioAccountHint": "мис., TBSZ 2026 (милдеттүү эмес)",
   "portfolioAccountAdd": "Эсепти көрсөтүү",
   "portfolioAccountsAll": "Бардык эсептер",
-  "portfolioAccountNote": "Ушул эсептин транзакциялары гана. Нак акча жана дивиденддер «Бардык эсептер» бөлүмүндө көрсөтүлөт.",
+  "portfolioAccountNote": "Ушул эсептин транзакциялары жана дивиденддери гана. Нак акча, максаттар жана AI талдоосу «Бардык эсептер» бөлүмүндө көрсөтүлөт.",
   "portfolioNoAccount": "Эсепсиз",
   "allocationAccounts": "Эсептер",
   "portfolioFee": "Комиссия ({currency})",

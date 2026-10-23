@@ -2559,7 +2559,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Bye wagula ne bye watunda ku akawunti eno byokka. Ensimbi enkalu ne dividendi biragibwa wansi wa Akawunti zonna.';
+      'Bye wagula, bye watunda ne dividendi ku akawunti eno byokka. Ensimbi enkalu, ebiruubirirwa n\'okwekenneenya kwa AI biragibwa wansi wa Akawunti zonna.';
 
   @override
   String get portfolioNoAccount => 'Tewali akawunti';

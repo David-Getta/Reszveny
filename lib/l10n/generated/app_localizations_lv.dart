@@ -2586,7 +2586,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Tikai šī konta darījumi. Nauda un dividendes tiek rādītas sadaļā “Visi konti”.';
+      'Tikai šī konta darījumi un dividendes. Nauda, mērķi un AI analīze tiek rādīti sadaļā “Visi konti”.';
 
   @override
   String get portfolioNoAccount => 'Bez konta';

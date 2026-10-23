@@ -777,7 +777,7 @@
   "portfolioAccountHint": "ဥပမာ TBSZ 2026 (ရွေးချယ်နိုင်သည်)",
   "portfolioAccountAdd": "အကောင့် သတ်မှတ်ရန်",
   "portfolioAccountsAll": "အကောင့်အားလုံး",
-  "portfolioAccountNote": "ဤအကောင့်၏ အရောင်းအဝယ်များသာ။ ငွေသားနှင့် အမြတ်ဝေစုများကို \"အကောင့်အားလုံး\" တွင် ပြသသည်။",
+  "portfolioAccountNote": "ဤအကောင့်၏ အရောင်းအဝယ်များနှင့် အမြတ်ဝေစုများသာ။ ငွေသား၊ ပန်းတိုင်များနှင့် AI သုံးသပ်ချက်ကို \"အကောင့်အားလုံး\" တွင် ပြသသည်။",
   "portfolioNoAccount": "အကောင့် မရှိ",
   "allocationAccounts": "အကောင့်",
   "portfolioFee": "ကော်မရှင်ခ ({currency})",

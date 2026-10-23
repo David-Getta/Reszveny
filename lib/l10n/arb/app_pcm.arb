@@ -777,7 +777,7 @@
   "portfolioAccountHint": "like TBSZ 2026 (if you want)",
   "portfolioAccountAdd": "Put account",
   "portfolioAccountsAll": "All accounts",
-  "portfolioAccountNote": "Na only dis account buy and sell. Cash and dividend dey show for All accounts.",
+  "portfolioAccountNote": "Na only dis account buy and sell plus dividend. Cash, targets and AI check dey show for All accounts.",
   "portfolioNoAccount": "No account",
   "allocationAccounts": "Accounts",
   "portfolioFee": "Charges ({currency})",

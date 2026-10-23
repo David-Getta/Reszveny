@@ -777,7 +777,7 @@
   "portfolioAccountHint": "np. IKE (opcjonalnie)",
   "portfolioAccountAdd": "Podaj rachunek",
   "portfolioAccountsAll": "Wszystkie rachunki",
-  "portfolioAccountNote": "Tylko transakcje tego rachunku. Gotówkę i dywidendy zobaczysz po wybraniu „Wszystkie rachunki”.",
+  "portfolioAccountNote": "Tylko transakcje i dywidendy tego rachunku. Gotówkę, cele i analizę AI zobaczysz po wybraniu „Wszystkie rachunki”.",
   "portfolioNoAccount": "Bez rachunku",
   "allocationAccounts": "Rachunki",
   "portfolioFee": "Prowizja ({currency})",

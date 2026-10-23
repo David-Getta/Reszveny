@@ -2552,7 +2552,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Zvakatengwa nezvakatengeswa muakaundi iyi chete. Mari nemadividendi zvinoratidzwa pasi pe\"Maakaundi ese\".';
+      'Zvakatengwa, zvakatengeswa nemadividendi muakaundi iyi chete. Mari, zvinangwa neongororo yeAI zvinoratidzwa pasi pe\"Maakaundi ese\".';
 
   @override
   String get portfolioNoAccount => 'Hapana akaundi';

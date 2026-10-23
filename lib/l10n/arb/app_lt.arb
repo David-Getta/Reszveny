@@ -777,7 +777,7 @@
   "portfolioAccountHint": "pvz. investicinė sąskaita (neprivaloma)",
   "portfolioAccountAdd": "Nurodyti sąskaitą",
   "portfolioAccountsAll": "Visos sąskaitos",
-  "portfolioAccountNote": "Tik šios sąskaitos operacijos. Grynieji pinigai ir dividendai rodomi skiltyje „Visos sąskaitos“.",
+  "portfolioAccountNote": "Tik šios sąskaitos operacijos ir dividendai. Grynieji pinigai, tikslai ir DI analizė rodomi skiltyje „Visos sąskaitos“.",
   "portfolioNoAccount": "Be sąskaitos",
   "allocationAccounts": "Sąskaitos",
   "portfolioFee": "Komisiniai ({currency})",

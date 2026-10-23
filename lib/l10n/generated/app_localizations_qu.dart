@@ -2558,7 +2558,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Kay cuentapa rantiy rantikuyninkunalla. Qullqi, dividendokunapas «Llapan cuentakuna» nisqapim rikhurin.';
+      'Kay cuentapa rantiy rantikuyninkunalla dividendonkunallapas. Qullqi, hayparinakuna, AI t\'aqwiypas «Llapan cuentakuna» nisqapim rikhurin.';
 
   @override
   String get portfolioNoAccount => 'Mana cuentayuq';

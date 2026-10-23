@@ -2542,7 +2542,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Hanya transaksi akun ini. Kas dan dividen ditampilkan di Semua akun.';
+      'Hanya transaksi dan dividen akun ini. Kas, target, dan tinjauan AI ditampilkan di Semua akun.';
 
   @override
   String get portfolioNoAccount => 'Tanpa akun';

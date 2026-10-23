@@ -2600,7 +2600,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'معاملات هذا الحساب فقط. يظهر النقد وتوزيعات الأرباح ضمن «جميع الحسابات».';
+      'معاملات هذا الحساب وتوزيعات أرباحه فقط. يظهر النقد والأهداف ومراجعة الذكاء الاصطناعي ضمن «جميع الحسابات».';
 
   @override
   String get portfolioNoAccount => 'بدون حساب';

@@ -777,7 +777,7 @@
   "portfolioAccountHint": "conto: TBSZ 2026 (ora wajib)",
   "portfolioAccountAdd": "Temtokake akun",
   "portfolioAccountsAll": "Kabeh akun",
-  "portfolioAccountNote": "Mung transaksi akun iki. Kas lan dividen ditampilake ing Kabeh akun.",
+  "portfolioAccountNote": "Mung transaksi lan dividen akun iki. Kas, target, lan tinjauan AI ditampilake ing Kabeh akun.",
   "portfolioNoAccount": "Tanpa akun",
   "allocationAccounts": "Akun",
   "portfolioFee": "Biaya transaksi ({currency})",

@@ -777,7 +777,7 @@
   "portfolioAccountHint": "π.χ. TBSZ 2026 (προαιρετικό)",
   "portfolioAccountAdd": "Ορισμός λογαριασμού",
   "portfolioAccountsAll": "Όλοι οι λογαριασμοί",
-  "portfolioAccountNote": "Μόνο οι συναλλαγές αυτού του λογαριασμού. Τα μετρητά και τα μερίσματα εμφανίζονται στο «Όλοι οι λογαριασμοί».",
+  "portfolioAccountNote": "Μόνο οι συναλλαγές και τα μερίσματα αυτού του λογαριασμού. Τα μετρητά, οι στόχοι και η ανάλυση AI εμφανίζονται στο «Όλοι οι λογαριασμοί».",
   "portfolioNoAccount": "Χωρίς λογαριασμό",
   "allocationAccounts": "Λογαριασμοί",
   "portfolioFee": "Προμήθεια ({currency})",

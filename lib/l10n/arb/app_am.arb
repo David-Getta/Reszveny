@@ -777,7 +777,7 @@
   "portfolioAccountHint": "ለምሳሌ TBSZ 2026 (አማራጭ)",
   "portfolioAccountAdd": "መለያ ይግለጹ",
   "portfolioAccountsAll": "ሁሉም መለያዎች",
-  "portfolioAccountNote": "የዚህ መለያ ግብይቶች ብቻ። ጥሬ ገንዘብ እና የትርፍ ድርሻዎች በ«ሁሉም መለያዎች» ስር ይታያሉ።",
+  "portfolioAccountNote": "የዚህ መለያ ግብይቶች እና የትርፍ ድርሻዎች ብቻ። ጥሬ ገንዘብ፣ ግቦች እና የAI ትንተና በ«ሁሉም መለያዎች» ስር ይታያሉ።",
   "portfolioNoAccount": "ያለ መለያ",
   "allocationAccounts": "መለያዎች",
   "portfolioFee": "ኮሚሽን ({currency})",

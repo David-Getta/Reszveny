@@ -2550,7 +2550,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Csak ennek a számlának a tranzakciói. A készpénz és az osztalékok a „Minden számla” nézetben látszanak.';
+      'Csak ennek a számlának a tranzakciói és osztalékai. A készpénz, a célok és az AI-elemzés a „Minden számla” nézetben látszanak.';
 
   @override
   String get portfolioNoAccount => 'Számla nélkül';

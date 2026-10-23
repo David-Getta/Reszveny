@@ -2546,7 +2546,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Ũgũri na ũendia wa akaũnti ĩno tu. Mbeca cia moko na mĩgai ya faida ionekaga harĩ Akaũnti ciothe.';
+      'Ũgũri, ũendia na mĩgai ya faida ya akaũnti ĩno tu. Mbeca cia moko, mĩoroto na ũthuthuria wa AI ionekaga harĩ Akaũnti ciothe.';
 
   @override
   String get portfolioNoAccount => 'Hatarĩ akaũnti';

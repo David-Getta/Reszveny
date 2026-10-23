@@ -2541,7 +2541,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'فقط تراکنش‌های این حساب. نقد و سود سهام در «همه حساب‌ها» نمایش داده می‌شوند.';
+      'فقط تراکنش‌ها و سود سهام این حساب. نقد، اهداف و بررسی هوش مصنوعی در «همه حساب‌ها» نمایش داده می‌شوند.';
 
   @override
   String get portfolioNoAccount => 'بدون حساب';

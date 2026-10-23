@@ -2544,7 +2544,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Àwọn ìdúnàdúrà àkáǹtì yìí nìkan. Owó àti ìpín èrè wà lábẹ́ Gbogbo àkáǹtì.';
+      'Àwọn ìdúnàdúrà àti ìpín èrè àkáǹtì yìí nìkan. Owó, àwọn àfojúsùn àti ìtúpalẹ̀ AI wà lábẹ́ Gbogbo àkáǹtì.';
 
   @override
   String get portfolioNoAccount => 'Kò sí àkáǹtì';

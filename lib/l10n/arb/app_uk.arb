@@ -777,7 +777,7 @@
   "portfolioAccountHint": "напр. TBSZ 2026 (необов’язково)",
   "portfolioAccountAdd": "Указати рахунок",
   "portfolioAccountsAll": "Усі рахунки",
-  "portfolioAccountNote": "Лише операції цього рахунку. Кошти й дивіденди — у розділі «Усі рахунки».",
+  "portfolioAccountNote": "Лише операції та дивіденди цього рахунку. Кошти, цілі й ШІ-аналіз — у розділі «Усі рахунки».",
   "portfolioNoAccount": "Без рахунку",
   "allocationAccounts": "Рахунки",
   "portfolioFee": "Комісія ({currency})",

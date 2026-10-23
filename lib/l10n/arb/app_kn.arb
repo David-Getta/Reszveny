@@ -777,7 +777,7 @@
   "portfolioAccountHint": "ಉದಾ. TBSZ 2026 (ಐಚ್ಛಿಕ)",
   "portfolioAccountAdd": "ಖಾತೆಯನ್ನು ನಮೂದಿಸಿ",
   "portfolioAccountsAll": "ಎಲ್ಲಾ ಖಾತೆಗಳು",
-  "portfolioAccountNote": "ಈ ಖಾತೆಯ ವಹಿವಾಟುಗಳು ಮಾತ್ರ. ನಗದು ಮತ್ತು ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ‘ಎಲ್ಲಾ ಖಾತೆಗಳು’ ಅಡಿಯಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ.",
+  "portfolioAccountNote": "ಈ ಖಾತೆಯ ವಹಿವಾಟುಗಳು ಮತ್ತು ಡಿವಿಡೆಂಡ್‌ಗಳು ಮಾತ್ರ. ನಗದು, ಗುರಿಗಳು ಮತ್ತು AI ವಿಮರ್ಶೆಯನ್ನು ‘ಎಲ್ಲಾ ಖಾತೆಗಳು’ ಅಡಿಯಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ.",
   "portfolioNoAccount": "ಖಾತೆ ಇಲ್ಲ",
   "allocationAccounts": "ಖಾತೆಗಳು",
   "portfolioFee": "ಬ್ರೋಕರೇಜ್ ({currency})",

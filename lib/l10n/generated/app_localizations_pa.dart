@@ -2542,7 +2542,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'ਸਿਰਫ਼ ਇਸ ਖਾਤੇ ਦੇ ਲੈਣ-ਦੇਣ। ਨਕਦ ਅਤੇ ਡਿਵੀਡੈਂਡ ‘ਸਾਰੇ ਖਾਤੇ’ ਹੇਠ ਦਿਖਾਏ ਜਾਂਦੇ ਹਨ।';
+      'ਸਿਰਫ਼ ਇਸ ਖਾਤੇ ਦੇ ਲੈਣ-ਦੇਣ ਅਤੇ ਡਿਵੀਡੈਂਡ। ਨਕਦ, ਟੀਚੇ ਅਤੇ AI ਸਮੀਖਿਆ ‘ਸਾਰੇ ਖਾਤੇ’ ਹੇਠ ਦਿਖਾਏ ਜਾਂਦੇ ਹਨ।';
 
   @override
   String get portfolioNoAccount => 'ਕੋਈ ਖਾਤਾ ਨਹੀਂ';

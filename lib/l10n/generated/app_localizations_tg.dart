@@ -2547,7 +2547,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Танҳо амалиётҳои ҳамин ҳисоб. Пули нақд ва дивидендҳо дар «Ҳамаи ҳисобҳо» нишон дода мешаванд.';
+      'Танҳо амалиётҳо ва дивидендҳои ҳамин ҳисоб. Пули нақд, ҳадафҳо ва таҳлили AI дар «Ҳамаи ҳисобҳо» нишон дода мешаванд.';
 
   @override
   String get portfolioNoAccount => 'Бе ҳисоб';

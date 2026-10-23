@@ -2553,7 +2553,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Kaliya macaamilada akoonkan. Lacagta caddaanka ah iyo faa\'iido-saamiyada waxaa lagu muujiyaa \"Dhammaan akoonnada\".';
+      'Kaliya macaamilada iyo faa\'iido-saamiyada akoonkan. Lacagta caddaanka ah, yoolalka iyo dib-u-eegista AI waxaa lagu muujiyaa \"Dhammaan akoonnada\".';
 
   @override
   String get portfolioNoAccount => 'Akoon la\'aan';

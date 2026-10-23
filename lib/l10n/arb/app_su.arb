@@ -777,7 +777,7 @@
   "portfolioAccountHint": "conto: TBSZ 2026 (opsional)",
   "portfolioAccountAdd": "Tangtukeun akun",
   "portfolioAccountsAll": "Sadaya akun",
-  "portfolioAccountNote": "Ngan transaksi akun ieu. Tunai jeung dividen ditémbongkeun dina Sadaya akun.",
+  "portfolioAccountNote": "Ngan transaksi jeung dividen akun ieu. Tunai, target jeung tinjauan AI ditémbongkeun dina Sadaya akun.",
   "portfolioNoAccount": "Tanpa akun",
   "allocationAccounts": "Akun",
   "portfolioFee": "Biaya ({currency})",

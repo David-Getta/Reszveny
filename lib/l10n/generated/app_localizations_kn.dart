@@ -2551,7 +2551,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'ಈ ಖಾತೆಯ ವಹಿವಾಟುಗಳು ಮಾತ್ರ. ನಗದು ಮತ್ತು ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ‘ಎಲ್ಲಾ ಖಾತೆಗಳು’ ಅಡಿಯಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ.';
+      'ಈ ಖಾತೆಯ ವಹಿವಾಟುಗಳು ಮತ್ತು ಡಿವಿಡೆಂಡ್‌ಗಳು ಮಾತ್ರ. ನಗದು, ಗುರಿಗಳು ಮತ್ತು AI ವಿಮರ್ಶೆಯನ್ನು ‘ಎಲ್ಲಾ ಖಾತೆಗಳು’ ಅಡಿಯಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ.';
 
   @override
   String get portfolioNoAccount => 'ಖಾತೆ ಇಲ್ಲ';

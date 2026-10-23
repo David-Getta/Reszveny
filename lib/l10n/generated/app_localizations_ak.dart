@@ -2546,7 +2546,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get portfolioAccountNote =>
-      'Saa akontaabu yi adetɔ ne adetɔn nko ara. Sika a ɛda hɔ ne dividend da adi wɔ Akontaabu nyinaa ase.';
+      'Saa akontaabu yi adetɔ, adetɔn ne dividend nko ara. Sika a ɛda hɔ, botaeɛ ne AI nhwehwɛmu da adi wɔ Akontaabu nyinaa ase.';
 
   @override
   String get portfolioNoAccount => 'Akontaabu nni hɔ';

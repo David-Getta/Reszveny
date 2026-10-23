@@ -777,7 +777,7 @@
   "portfolioAccountHint": "npr. TBSZ 2026 (neobavezno)",
   "portfolioAccountAdd": "Navedite račun",
   "portfolioAccountsAll": "Svi računi",
-  "portfolioAccountNote": "Samo transakcije ovog računa. Gotovina i dividende prikazuju se pod „Svi računi“.",
+  "portfolioAccountNote": "Samo transakcije i dividende ovog računa. Gotovina, ciljevi i AI analiza prikazuju se pod „Svi računi“.",
   "portfolioNoAccount": "Bez računa",
   "allocationAccounts": "Računi",
   "portfolioFee": "Provizija ({currency})",

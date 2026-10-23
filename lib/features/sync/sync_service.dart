@@ -276,11 +276,20 @@ class SyncService extends ChangeNotifier {
       for (final j in (data['lots'] is List ? data['lots'] as List : const []))
         if (j is Map) '${j['id']}': j,
     };
+    final remoteDividends = {
+      for (final j in (data['dividends'] is List ? data['dividends'] as List : const []))
+        if (j is Map) '${j['id']}': j,
+    };
     return portfolio.lots.any(
-      (l) =>
-          (l.account != null && PortfolioLot.cleanAccount(remote[l.id]?['account']) == null) ||
-          (l.fee > 0 && PortfolioLot.cleanFee(remote[l.id]?['fee']) == 0),
-    );
+          (l) =>
+              (l.account != null && PortfolioLot.cleanAccount(remote[l.id]?['account']) == null) ||
+              (l.fee > 0 && PortfolioLot.cleanFee(remote[l.id]?['fee']) == 0),
+        ) ||
+        // Régi csomagban nincs osztaléklista: akkor a helyi marad, nincs mit visszaküldeni.
+        (data['dividends'] is List &&
+            portfolio.dividends.any(
+              (d) => d.account != null && PortfolioLot.cleanAccount(remoteDividends[d.id]?['account']) == null,
+            ));
   }
 
   Future<void> _apply(Map<String, dynamic> data) async {
@@ -338,7 +347,16 @@ class SyncService extends ChangeNotifier {
     ]);
     // Régi csomagban (korábbi app) nincs osztaléklista: akkor a helyi marad.
     if (data['dividends'] is List) {
-      await portfolio.replaceAllDividends([for (final j in maps(data['dividends'])) ?DividendRecord.fromJson(j)]);
+      // Az osztalék számlája is megmarad, ha egy régebbi app nélküle töltötte vissza.
+      final localDividend = {for (final d in portfolio.dividends) d.id: d};
+      await portfolio.replaceAllDividends([
+        for (final j in maps(data['dividends']))
+          ?DividendRecord.fromJson({
+            ...j,
+            if (localDividend['${j['id']}']?.account case final a? when PortfolioLot.cleanAccount(j['account']) == null)
+              'account': a,
+          }),
+      ]);
     }
     if (data['splits'] is List) {
       await portfolio.replaceAllSplits([for (final j in maps(data['splits'])) ?SplitRecord.fromJson(j)]);

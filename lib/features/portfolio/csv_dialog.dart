@@ -131,13 +131,20 @@ Future<void> showPortfolioImport(BuildContext context) async {
     );
     added++;
   }
-  // Kapott osztalékok: ugyanaz a tétel (ticker, összeg, dátum) nem kerül be kétszer.
-  String dKey(String symbol, double amount, DateTime? d) => '$symbol|$amount|${d?.toIso8601String().substring(0, 10)}';
-  final existingDividends = {for (final d in services.portfolio.dividends) dKey(d.symbol, d.amount, d.date)};
+  // Kapott osztalékok: ugyanaz a tétel (ticker, összeg, dátum, számla) nem kerül be kétszer.
+  String dKey(String symbol, double amount, DateTime? d, String? account) =>
+      '$symbol|$amount|${d?.toIso8601String().substring(0, 10)}|${account?.toLowerCase() ?? ''}';
+  final existingDividends = {for (final d in services.portfolio.dividends) dKey(d.symbol, d.amount, d.date, d.account)};
   var addedDividends = 0;
   for (final d in result.dividends) {
-    if (!existingDividends.add(dKey(d.symbol, d.amount, d.date))) continue;
-    await services.portfolio.addDividend(symbol: d.symbol, amount: d.amount, currency: d.currency, date: d.date);
+    if (!existingDividends.add(dKey(d.symbol, d.amount, d.date, d.account))) continue;
+    await services.portfolio.addDividend(
+      symbol: d.symbol,
+      amount: d.amount,
+      currency: d.currency,
+      date: d.date,
+      account: d.account,
+    );
     addedDividends++;
   }
   // Felaprózások (saját exportból): a tároló nem veszi fel kétszer ugyanazt (ticker, nap, arány).

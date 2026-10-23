@@ -17,10 +17,13 @@ import 'portfolio_store.dart';
 /// osztalék a portfólió pénznemében (a mai árfolyamon átváltva), az utolsó
 /// tételek listája törléssel (visszavonható), és kézi felvétel.
 class DividendsCard extends StatelessWidget {
-  const DividendsCard({super.key, required this.currency, this.annualDividend = 0});
+  const DividendsCard({super.key, required this.currency, this.annualDividend = 0, this.account});
 
   /// A portfólió összesítésének pénzneme.
   final String currency;
+
+  /// Csak ennek a számlának az osztalékai és pozíciói (`null`: mind, a havi céllal).
+  final String? account;
 
   /// A még birtokolt részvények várható évi osztaléka a mai hozamokból, a
   /// [currency] pénznemben (a havi osztalékcél haladásához).
@@ -41,8 +44,8 @@ class DividendsCard extends StatelessWidget {
     return ListenableBuilder(
       listenable: services.portfolio,
       builder: (context, _) {
-        final all = services.portfolio.dividends;
-        final positions = services.portfolio.positions;
+        final all = services.portfolio.dividendsIn(account);
+        final positions = services.portfolio.positionsIn(account);
         final now = DateTime.now();
         final year = now.year;
         // Várható következő kifizetések a még birtokolt részvényekre, a rögzítettek ritmusából.
@@ -68,7 +71,7 @@ class DividendsCard extends StatelessWidget {
                       key: const ValueKey('dividend-add'),
                       tooltip: l10n.portfolioAddDividend,
                       icon: const Icon(Icons.add_rounded),
-                      onPressed: () => showAddDividendDialog(context, currency: currency),
+                      onPressed: () => showAddDividendDialog(context, currency: currency, account: account),
                     ),
                   ],
                 ),
@@ -212,6 +215,7 @@ class DividendsCard extends StatelessWidget {
                                 currency: x.currency,
                                 amount: x.amount,
                                 date: x.date,
+                                account: account,
                               ),
                             ),
                           ],
@@ -236,9 +240,11 @@ class DividendsCard extends StatelessWidget {
                               text: d.symbol,
                               style: const TextStyle(fontWeight: FontWeight.w600),
                               children: [
-                                if (d.date != null)
+                                // Minden számla nézetében a tétel számlája is (ha van).
+                                if ([if (d.date != null) fmt.date(d.date!), if (account == null) ?d.account].join(' · ')
+                                    case final meta when meta.isNotEmpty)
                                   TextSpan(
-                                    text: '  ${fmt.date(d.date!)}',
+                                    text: '  $meta',
                                     style: TextStyle(color: p.muted, fontWeight: FontWeight.normal),
                                   ),
                               ],
@@ -264,8 +270,9 @@ class DividendsCard extends StatelessWidget {
                     ),
                   ),
                 ],
-                // Havi osztalékcél: a mai hozamokból várható évi osztalék havi átlaga a célhoz.
-                _DividendGoal(currency: currency, monthly: annualDividend / 12, fmt: fmt),
+                // Havi osztalékcél: a mai hozamokból várható évi osztalék havi átlaga a célhoz
+                // (az egész portfólióra szól, számla-nézetben nincs).
+                if (account == null) _DividendGoal(currency: currency, monthly: annualDividend / 12, fmt: fmt),
               ],
             ),
           ),
@@ -302,6 +309,7 @@ Future<bool> showAddDividendDialog(
   required String currency,
   double? amount,
   DateTime? date,
+  String? account,
 }) async {
   final services = AppServices.of(context);
   // Ismert részvénynél a pozíció pénzneme a valószínű; különben az összesítésé.
@@ -310,13 +318,16 @@ Future<bool> showAddDividendDialog(
       : (services.portfolio.positionOf(symbol)?.currency ?? currency);
   final added = await showDialog<bool>(
     context: context,
-    builder: (_) => _AddDividendDialog(symbol: symbol, currency: ccy, amount: amount, date: date),
+    builder: (_) => _AddDividendDialog(symbol: symbol, currency: ccy, amount: amount, date: date, account: account),
   );
   return added ?? false;
 }
 
 class _AddDividendDialog extends StatefulWidget {
-  const _AddDividendDialog({this.symbol, required this.currency, this.amount, this.date});
+  const _AddDividendDialog({this.symbol, required this.currency, this.amount, this.date, this.account});
+
+  /// Előre kitöltött számla (pl. a portfólió oldalon választott számla).
+  final String? account;
 
   final String? symbol;
   final String currency;
@@ -339,6 +350,18 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
   String? _amountError;
   bool _currencyError = false;
 
+  /// A számla mezője (csak ha már van számla); alapból a megadott, különben ahol
+  /// a részvényből a legtöbb van.
+  TextEditingController? _accountField;
+  late final String? _initialAccount =
+      widget.account ??
+      switch (widget.symbol) {
+        final s? => (AppServices.of(
+          context,
+        ).portfolio.heldByAccount(s).entries.toList()..sort((a, b) => b.value.compareTo(a.value))).firstOrNull?.key,
+        _ => null,
+      };
+
   static final _symbolPattern = RegExp(r'^[A-Z0-9][A-Z0-9.\-:^]{0,14}$');
 
   @override
@@ -360,7 +383,8 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
       _currencyError = !RegExp(r'^[A-Z]{3}$').hasMatch(ccy);
     });
     if (_symbolError || _amountError != null || _currencyError) return;
-    await AppServices.of(context).portfolio.addDividend(symbol: symbol, amount: amount!, currency: ccy, date: _date);
+    await AppServices.of(context).portfolio
+        .addDividend(symbol: symbol, amount: amount!, currency: ccy, date: _date, account: _accountField?.text);
     if (mounted) Navigator.of(context).pop(true);
   }
 
@@ -419,6 +443,30 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
             ),
             const SizedBox(height: 12),
             DatePickerRow(label: l10n.portfolioDividendDate, date: _date, onChanged: (d) => setState(() => _date = d)),
+            // Számla (ha már van): a meglévők közül kiegészítve; nem kötelező.
+            if (AppServices.of(context).portfolio.accounts case final accounts when accounts.isNotEmpty)
+              Autocomplete<String>(
+                initialValue: TextEditingValue(text: _initialAccount ?? ''),
+                optionsBuilder: (v) {
+                  final q = v.text.trim().toLowerCase();
+                  return accounts.where((a) => a.toLowerCase().contains(q));
+                },
+                fieldViewBuilder: (context, controller, focusNode, _) {
+                  _accountField = controller;
+                  return TextField(
+                    key: const ValueKey('dividend-account'),
+                    controller: controller,
+                    focusNode: focusNode,
+                    maxLength: PortfolioLot.maxAccountName,
+                    decoration: InputDecoration(
+                      labelText: l10n.portfolioAccount,
+                      hintText: l10n.portfolioAccountHint,
+                      counterText: '',
+                    ),
+                    onSubmitted: (_) => _submit(),
+                  );
+                },
+              ),
           ],
         ),
       ),
