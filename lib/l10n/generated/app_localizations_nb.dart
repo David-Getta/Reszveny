@@ -2691,6 +2691,11 @@ class AppLocalizationsNb extends AppLocalizations {
       'Tidsvektet avkastning siden årets start (eller siden ditt første kjøp, hvis det var i år): hver dag teller endringen i aksjene du eide den dagen, og dagene kjedes sammen – penger du setter inn eller tar ut, er ikke avkastning, så den kan sammenlignes med en indeks. Under: den valgte indeksen i samme periode.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Nå $price · $percent igjen';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

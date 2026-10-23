@@ -2684,6 +2684,11 @@ class AppLocalizationsWo extends AppLocalizations {
       'Benefis bu ñu natt ci jamono dale ci ndoorteelu at mi (walla dale ci sa jënd bu jëkk, su amee ci at mii): bés bu nekk dafay waññ coppitey aksiyoŋ yi nga yoroon bés boobu, te bés yi dañuy lënkalante – xaalis bi ngay def walla ngay génne du benefis, moo tax mën nañu ko méngale ak benn indeks. Ci suufam: indeks bi ñu tànn ci jamono jooju.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Léegi $price · $percent des na';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

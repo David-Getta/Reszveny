@@ -51,6 +51,24 @@ class PriceAlert {
 
   bool get isActive => triggeredAt == null;
 
+  /// Az ár, amelynél a riasztás kiold a mostani [price] mellett: a célár, követő stopnál
+  /// a csúcs (vagy a mostani ár, ha az magasabb) a küszöbbel csökkentve; a napi
+  /// mozgásnak nincs ilyen szintje.
+  double? triggerPrice(double price) => switch (kind) {
+    AlertKind.above || AlertKind.below => value,
+    AlertKind.trailing => (peak != null && peak! > price ? peak! : price) * (1 - value / 100),
+    AlertKind.move => null,
+  };
+
+  /// Mennyit kell még mozdulnia az árnak a kioldásig (%, előjellel: emelkedés vagy esés);
+  /// `null`, ha nincs szintje, vagy az ár már túl van rajta (a következő ellenőrzés jelez).
+  double? distancePercent(double price) {
+    final level = triggerPrice(price);
+    if (level == null || price <= 0) return null;
+    final d = (level / price - 1) * 100;
+    return (kind == AlertKind.above ? d > 0 : d < 0) ? d : null;
+  }
+
   /// Teljesül-e a feltétel az adott árfolyamnál.
   bool isHit(StockQuote q) => switch (kind) {
     AlertKind.above => q.price >= value,

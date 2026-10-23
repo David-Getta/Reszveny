@@ -2289,6 +2289,20 @@
   "@glossTwrYtd": {
     "description": "Info text for the portfolio's time-weighted return this year (also in the glossary)."
   },
+  "alertDistance": "Now {price} · {percent} to go",
+  "@alertDistance": {
+    "description": "Under an active price alert: the current price and how much the price still has to move (signed percent) until the alert fires, e.g. \"Now 231.45 USD · +4.2% to go\".",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "example": "231.45 USD"
+      },
+      "percent": {
+        "type": "String",
+        "example": "+4.2%"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

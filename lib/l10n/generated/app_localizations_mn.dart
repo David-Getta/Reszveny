@@ -2691,6 +2691,11 @@ class AppLocalizationsMn extends AppLocalizations {
       'Оны эхнээс (эсвэл анхны худалдан авалт тань энэ жил байсан бол түүнээс хойш) хугацаагаар жигнэсэн өгөөж: өдөр бүр тухайн өдөр танд байсан хувьцаануудын өөрчлөлтийг тооцож, өдрүүдийг хооронд нь гинжлэн холбоно – таны оруулсан эсвэл гаргасан мөнгө өгөөж биш тул үүнийг индекстэй харьцуулж болно. Доор нь: ижил хугацааны сонгосон индекс.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Одоо $price · $percent үлдсэн';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

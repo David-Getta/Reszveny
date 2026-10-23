@@ -2713,6 +2713,11 @@ class AppLocalizationsTs extends AppLocalizations {
       'Mbuyelo lowu pimiweke hi nkarhi ku sukela eku sunguleni ka lembe (kumbe ku sukela loko u xava ro sungula, loko swi endlekile lembe leri): siku rin\'wana ni rin\'wana ri hlayela ku cinca ka tixere leti a u ri na tona hi siku rero, kutani masiku ma hlanganisiwa – mali leyi u yi nghenisaka kumbe u yi humesaka a hi mbuyelo, hikwalaho wu nga pimanisiwa na index. Ehansi ka wona: index leyi hlawuriweke eka nkarhi lowu fanaka.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Sweswi $price · ku sale $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

@@ -2691,6 +2691,11 @@ class AppLocalizationsTr extends AppLocalizations {
       'Yılbaşından bu yana (veya ilk alımınız bu yıl olduysa o tarihten bu yana) zaman ağırlıklı getiri: her gün, o gün elinizde bulunan hisselerin değişimini hesaba katar ve günler birbirine zincirlenir – yatırdığınız veya çektiğiniz para getiri değildir, bu yüzden bir endeksle karşılaştırılabilir. Altında: aynı dönemde seçilen endeks.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Şu an $price · $percent kaldı';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

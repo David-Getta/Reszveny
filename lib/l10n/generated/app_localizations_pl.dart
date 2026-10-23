@@ -2763,6 +2763,11 @@ class AppLocalizationsPl extends AppLocalizations {
       'Stopa zwrotu ważona czasem od początku roku (lub od twojego pierwszego zakupu, jeśli był w tym roku): każdy dzień uwzględnia zmianę akcji posiadanych tego dnia, a kolejne dni są łączone łańcuchowo – pieniądze wpłacane lub wypłacane nie są traktowane jako zysk, więc można ją porównać z indeksem. Pod nią: wybrany indeks w tym samym okresie.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Obecnie $price · brakuje $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

@@ -2697,6 +2697,11 @@ class AppLocalizationsIt extends AppLocalizations {
       'Rendimento ponderato nel tempo dall\'inizio dell\'anno (o dal tuo primo acquisto, se è avvenuto quest\'anno): ogni giorno conta la variazione delle azioni che possedevi quel giorno, e i giorni vengono concatenati – il denaro che versi o prelevi non è rendimento, quindi si può confrontare con un indice. Sotto: l\'indice scelto nello stesso periodo.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Ora $price · ancora $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

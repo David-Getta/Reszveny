@@ -2710,6 +2710,11 @@ class AppLocalizationsNso extends AppLocalizations {
       'Poelo ye e lekanyeditšwego go ya ka nako go tloga mathomong a ngwaga (goba go tloga theko ya gago ya mathomo, ge e bile ngwageng wo): letšatši le lengwe le le lengwe le bala phetogo ya dišere tšeo o bego o na le tšona letšatšing leo, gomme matšatši a kgokagantšhwa – tšhelete yeo o e tsenyago goba o e ntšhago ga se poelo, ka fao e ka bapetšwa le index. Ka fase ga yona: index ye e kgethilwego nakong yona yeo.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Bjale $price · go šetše $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

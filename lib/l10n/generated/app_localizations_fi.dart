@@ -2692,6 +2692,11 @@ class AppLocalizationsFi extends AppLocalizations {
       'Aikapainotettu tuotto vuoden alusta (tai ensimmäisestä ostostasi, jos se oli tänä vuonna): jokainen päivä laskee niiden osakkeiden muutoksen, jotka omistit sinä päivänä, ja päivät ketjutetaan yhteen – sijoittamasi tai nostamasi raha ei ole tuottoa, joten sitä voi verrata indeksiin. Alla: valittu indeksi samalla ajanjaksolla.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Nyt $price · $percent jäljellä';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

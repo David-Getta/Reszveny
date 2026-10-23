@@ -812,5 +812,6 @@
   "lotPreviewRealized": "Feere nin na sɔrɔlen (FIFO):",
   "lotPreviewAverage": "Sɔngɔ cɛmancɛ kura: {after} (sisan {before})",
   "portfolioYtdReturn": "Ɲinan tɔnɔ",
-  "glossTwrYtd": "Tɔnɔ min jatelen don waati hakɛ la kabini san daminɛ (walima kabini i ka sanni fɔlɔ, n'o kɛra ɲinan): don o don bɛ i ka aksiyɔn minnu tun bɛ i bolo o don, olu sɔngɔ yɛlɛma jate, ani donw bɛ tugu ɲɔgɔn na – wari min bɛ i bila a la walima ka bɔ a la, o tɛ tɔnɔ ye, o la a bɛ se ka suma ni indɛkisi dɔ ye. A jukɔrɔ: indɛkisi min sugandira, o waati kelen in na."
+  "glossTwrYtd": "Tɔnɔ min jatelen don waati hakɛ la kabini san daminɛ (walima kabini i ka sanni fɔlɔ, n'o kɛra ɲinan): don o don bɛ i ka aksiyɔn minnu tun bɛ i bolo o don, olu sɔngɔ yɛlɛma jate, ani donw bɛ tugu ɲɔgɔn na – wari min bɛ i bila a la walima ka bɔ a la, o tɛ tɔnɔ ye, o la a bɛ se ka suma ni indɛkisi dɔ ye. A jukɔrɔ: indɛkisi min sugandira, o waati kelen in na.",
+  "alertDistance": "Sisan {price} · {percent} de to"
 }

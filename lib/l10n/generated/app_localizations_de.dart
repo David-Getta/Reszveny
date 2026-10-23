@@ -2705,6 +2705,11 @@ class AppLocalizationsDe extends AppLocalizations {
       'Zeitgewichtete Rendite seit Jahresbeginn (oder seit deinem ersten Kauf, falls der in diesem Jahr war): Jeder Tag zählt die Veränderung der Aktien, die du an diesem Tag gehalten hast, und die Tage werden miteinander verkettet – Geld, das du einzahlst oder abhebst, ist keine Rendite, daher lässt sie sich mit einem Index vergleichen. Darunter: der gewählte Index im selben Zeitraum.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Jetzt $price · noch $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

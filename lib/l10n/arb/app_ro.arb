@@ -812,5 +812,6 @@
   "lotPreviewRealized": "Realizat la această vânzare (FIFO):",
   "lotPreviewAverage": "Preț mediu nou: {after} (acum {before})",
   "portfolioYtdReturn": "Randament anul acesta",
-  "glossTwrYtd": "Randament ponderat în timp de la începutul anului (sau de la prima ta cumpărare, dacă a fost anul acesta): fiecare zi ia în calcul variația acțiunilor pe care le dețineai în ziua respectivă, iar zilele sunt înlănțuite – banii pe care îi depui sau îi retragi nu sunt randament, așa că poate fi comparat cu un indice. Dedesubt: indicele ales pentru aceeași perioadă."
+  "glossTwrYtd": "Randament ponderat în timp de la începutul anului (sau de la prima ta cumpărare, dacă a fost anul acesta): fiecare zi ia în calcul variația acțiunilor pe care le dețineai în ziua respectivă, iar zilele sunt înlănțuite – banii pe care îi depui sau îi retragi nu sunt randament, așa că poate fi comparat cu un indice. Dedesubt: indicele ales pentru aceeași perioadă.",
+  "alertDistance": "Acum {price} · încă {percent}"
 }

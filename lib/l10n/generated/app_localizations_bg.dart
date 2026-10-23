@@ -2692,6 +2692,11 @@ class AppLocalizationsBg extends AppLocalizations {
       'Претеглена по време доходност от началото на годината (или от първата ви покупка, ако е била тази година): всеки ден отчита промяната на акциите, които сте държали в този ден, а дните се свързват във верига – парите, които внасяте или теглите, не са доходност, затова тя може да се сравни с индекс. Под нея: избраният индекс за същия период.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Сега $price · остават $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

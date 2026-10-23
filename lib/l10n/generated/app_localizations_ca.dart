@@ -2701,6 +2701,11 @@ class AppLocalizationsCa extends AppLocalizations {
       'Rendibilitat ponderada en el temps des de l\'inici de l\'any (o des de la teva primera compra, si va ser aquest any): cada dia compta el canvi de les accions que tenies aquell dia, i els dies s\'encadenen – els diners que hi poses o en treus no són rendibilitat, de manera que es pot comparar amb un índex. A sota: l\'índex triat en el mateix període.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Ara $price · falta $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

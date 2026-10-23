@@ -2700,6 +2700,11 @@ class AppLocalizationsSo extends AppLocalizations {
       'Faa\'iidada waqtiga lagu miisaamay laga soo bilaabo bilowga sannadka (ama laga soo bilaabo iibsashadaada ugu horreysay, haddii ay sannadkan ahayd): maalin kasta waxay xisaabisaa isbeddelka saamiyadii aad haysatay maalintaas, maalmahana waa la isku xiriiriyaa – lacagta aad gelisid ama aad la baxdid faa\'iido ma aha, sidaas darteed waxaa lala barbardhigi karaa tusmo. Hoostiisa: tusmada la doortay isla muddadaas.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Hadda $price · $percent ayaa haray';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

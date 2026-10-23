@@ -2689,6 +2689,11 @@ class AppLocalizationsYo extends AppLocalizations {
       'Èrè tí a wọ̀n pẹ̀lú àkókò láti ìbẹ̀rẹ̀ ọdún (tàbí láti ìgbà ìrajà rẹ àkọ́kọ́, tí ó bá jẹ́ ọdún yìí): ọjọ́ kọ̀ọ̀kan ń ka ìyípadà àwọn ìpín tí o ní lọ́jọ́ náà, a sì ń so àwọn ọjọ́ náà pọ̀ bí ẹ̀wọ̀n – owó tí o fi sí i tàbí tí o yọ kúrò kì í ṣe èrè, nítorí náà a lè fi wé atọ́ka kan. Nísàlẹ̀ rẹ̀: atọ́ka tí a yàn ní àkókò kan náà.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Báyìí $price · $percent ló kù';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

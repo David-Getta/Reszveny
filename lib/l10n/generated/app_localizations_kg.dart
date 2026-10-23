@@ -2701,6 +2701,11 @@ class AppLocalizationsKg extends AppLocalizations {
       'Mbakulu ya bo me tala na ntangu katuka na luyantiku ya mvula (to katuka na kusumba na nge ya ntete, kana yo salamaka na mvula yai): konso kilumbu ke tanga nsoba ya ba actions yina nge vandaka na yo na kilumbu yina, mpi ba kilumbu ke kangamaka mosi na nkaka – mbongo yina nge ke tula to ke katula kele ve mbakulu, yo yina bo lenda fwanikisa yo ti indice mosi. Na nsi: indice yina nge solaka na ntangu yina mosi.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Ntangu yai $price · $percent me bikala';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

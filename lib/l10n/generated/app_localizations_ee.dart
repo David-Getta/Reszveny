@@ -2697,6 +2697,11 @@ class AppLocalizationsEe extends AppLocalizations {
       'Viɖe si wodzidze ɖe ɣeyiɣi nu tso ƒea ƒe gɔmedzedze (alo tso wò nuƒeƒle gbãtɔ, ne ƒe sia mee wònye): ŋkeke ɖe sia ɖe bua akpa siwo nèlé ɖe asi ŋkeke ma dzi ƒe tɔtrɔ, eye wotsɔa ŋkekeawo kpena ɖe wo nɔewo ŋu – ga si nèdea eme alo èɖena le eme la menye viɖe o, eyata woate ŋu atsɔe asɔ kple index aɖe. Le ete: index si nètia le ɣeyiɣi ma ke me.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Fifia $price · $percent susɔ';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

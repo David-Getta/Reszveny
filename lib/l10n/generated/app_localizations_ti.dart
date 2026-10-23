@@ -2652,6 +2652,11 @@ class AppLocalizationsTi extends AppLocalizations {
       'ካብ መጀመርታ ዓመት (ወይ ቀዳማይ ዕድጊትኩም ሎሚ ዓመት እንተ ኾይኑ ካብኡ) ብግዜ ዝተመዘነ ትርፊ፦ ነፍሲ ወከፍ መዓልቲ ነቶም በታ መዓልቲ ዝሓዝኩምዎም ኣክስዮናት ለውጢ ይቖጽር፣ መዓልትታት ድማ ብሰንሰለት ይተኣሳሰራ – እተእትውዎ ወይ እተውጽእዎ ገንዘብ ትርፊ ኣይኮነን፣ ስለዚ ምስ ኢንዴክስ ክነጻጸር ይኽእል። ኣብ ታሕቲ፦ እቲ ዝተመርጸ ኢንዴክስ ኣብ ተመሳሳሊ እዋን።';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'ሕጂ $price · $percent ተሪፉ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

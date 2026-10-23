@@ -2688,6 +2688,11 @@ class AppLocalizationsHi extends AppLocalizations {
       'साल की शुरुआत से (या आपकी पहली ख़रीद से, अगर वह इसी साल हुई थी) समय-भारित रिटर्न: हर दिन उस दिन आपके पास रहे शेयरों का बदलाव गिना जाता है, और दिनों को एक-दूसरे से जोड़ा जाता है – आप जो पैसा डालते या निकालते हैं वह रिटर्न नहीं है, इसलिए इसकी तुलना किसी इंडेक्स से की जा सकती है। नीचे: उसी अवधि में चुना गया इंडेक्स।';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'अभी $price · $percent बाकी';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

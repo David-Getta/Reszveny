@@ -2688,6 +2688,11 @@ class AppLocalizationsSi extends AppLocalizations {
       'වසරේ ආරම්භයේ සිට (නැතහොත් ඔබේ පළමු මිලදී ගැනීම මේ වසරේ නම් එදා සිට) කාල-බර තැබූ ප්‍රතිලාභය: සෑම දිනකම එදින ඔබ සතුව තිබූ කොටස්වල වෙනස ගණනය කරන අතර, දින එකිනෙක දාමයක් ලෙස සම්බන්ධ කෙරේ – ඔබ තැන්පත් කරන හෝ ආපසු ගන්නා මුදල් ප්‍රතිලාභයක් නොවේ, එබැවින් එය දර්ශකයක් සමඟ සැසඳිය හැක. පහතින්: එම කාලය තුළ තෝරාගත් දර්ශකය.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'දැන් $price · තව $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

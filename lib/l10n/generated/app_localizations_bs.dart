@@ -2736,6 +2736,11 @@ class AppLocalizationsBs extends AppLocalizations {
       'Vremenski ponderisani prinos od početka godine (ili od vaše prve kupovine, ako je bila ove godine): svaki dan računa promjenu dionica koje ste tog dana imali, a dani se nadovezuju jedan na drugi – novac koji uplatite ili isplatite nije prinos, pa se može porediti s indeksom. Ispod: odabrani indeks za isti period.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Sada $price · još $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

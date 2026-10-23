@@ -2705,6 +2705,11 @@ class AppLocalizationsQu extends AppLocalizations {
       'Pachawan llasachisqa rendimiento wata qallariymanta (utaq ñawpaq rantisqaykimanta, kay watapi karqan chayqa): sapa p\'unchaw chay p\'unchaw hap\'isqayki accionkunap tikrakuyninta yupan, p\'unchawkunataq watasqa hina tinkichisqa – churasqayki utaq hurqusqayki qullqiqa manan rendimientochu, chayrayku huk índicewan tupachiyta atikun. Uranpi: akllasqa índice kikin pachapi.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Kunan $price · $percent puchun';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

@@ -812,5 +812,6 @@
   "lotPreviewRealized": "Ivyabonetse muri iri gurisha (FIFO):",
   "lotPreviewAverage": "Igiciro mpuzandengo gishasha: {after} (ubu {before})",
   "portfolioYtdReturn": "Inyungu y'uyu mwaka",
-  "glossTwrYtd": "Inyungu ipimwe hakurikijwe igihe kuva intango y'umwaka (canke kuva igihe waguze ubwa mbere, nimba vyabaye uyu mwaka): umusi wose uharura ihinduka ry'imigabane wari ufise uwo musi, hanyuma imisi igafatanywa nk'umunyororo – amahera ushizemwo canke ukuyemwo si inyungu, ni co gituma ishobora kugereranywa na index. Munsi yayo: index yatowe mu gihe nk'ico nyene."
+  "glossTwrYtd": "Inyungu ipimwe hakurikijwe igihe kuva intango y'umwaka (canke kuva igihe waguze ubwa mbere, nimba vyabaye uyu mwaka): umusi wose uharura ihinduka ry'imigabane wari ufise uwo musi, hanyuma imisi igafatanywa nk'umunyororo – amahera ushizemwo canke ukuyemwo si inyungu, ni co gituma ishobora kugereranywa na index. Munsi yayo: index yatowe mu gihe nk'ico nyene.",
+  "alertDistance": "Ubu {price} · hasigaye {percent}"
 }

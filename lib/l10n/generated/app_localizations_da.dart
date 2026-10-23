@@ -2689,6 +2689,11 @@ class AppLocalizationsDa extends AppLocalizations {
       'Tidsvægtet afkast siden årets start (eller siden dit første køb, hvis det var i år): hver dag tæller ændringen i de aktier, du ejede den dag, og dagene kædes sammen – penge, du sætter ind eller hæver, er ikke afkast, så det kan sammenlignes med et indeks. Nedenunder: det valgte indeks i samme periode.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Nu $price · $percent tilbage';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

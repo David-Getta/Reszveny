@@ -812,5 +812,6 @@
   "lotPreviewRealized": "Okutholakele kulokhu kuthengisa (FIFO):",
   "lotPreviewAverage": "Izindleko ezintsha ezimaphakathi: {after} (manje {before})",
   "portfolioYtdReturn": "Inzuzo yalo nyaka",
-  "glossTwrYtd": "Inzuzo ekalwe ngesikhathi kusukela ekuqaleni konyaka (noma kusukela ekuthengeni kwakho kokuqala, uma kwakungalo nyaka): usuku ngalunye lubala ushintsho lwamasheya obunawo ngalolo suku, futhi izinsuku zixhunywa njengeketango – imali oyifakayo noma oyikhiphayo akuyona inzuzo, ngakho ingaqhathaniswa ne-index. Ngaphansi kwayo: i-index ekhethiwe esikhathini esifanayo."
+  "glossTwrYtd": "Inzuzo ekalwe ngesikhathi kusukela ekuqaleni konyaka (noma kusukela ekuthengeni kwakho kokuqala, uma kwakungalo nyaka): usuku ngalunye lubala ushintsho lwamasheya obunawo ngalolo suku, futhi izinsuku zixhunywa njengeketango – imali oyifakayo noma oyikhiphayo akuyona inzuzo, ngakho ingaqhathaniswa ne-index. Ngaphansi kwayo: i-index ekhethiwe esikhathini esifanayo.",
+  "alertDistance": "Manje {price} · kusele {percent}"
 }

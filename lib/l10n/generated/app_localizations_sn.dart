@@ -2699,6 +2699,11 @@ class AppLocalizationsSn extends AppLocalizations {
       'Pundutso yakayerwa nenguva kubva pakutanga kwegore (kana kubva pawakatanga kutenga, kana zvakaitika gore rino): zuva rega rega rinoverenga shanduko yemasheya awaive nawo zuva iroro, uye mazuva anobatanidzwa sengetani – mari yaunoisa kana kubvisa haisi pundutso, saka inogona kuenzaniswa neindex. Pazasi payo: index yakasarudzwa munguva imwe chete iyoyo.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Ikozvino $price · pasara $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

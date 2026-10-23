@@ -2688,6 +2688,11 @@ class AppLocalizationsEn extends AppLocalizations {
       'Time-weighted return since the start of the year (or since your first purchase, if that was this year): each day counts the change of the stocks you held that day, and the days are chained together – money you put in or take out is not return, so it can be compared with an index. Below it: the chosen index over the same period.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Now $price · $percent to go';
+  }
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

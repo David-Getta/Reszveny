@@ -812,5 +812,6 @@
   "lotPreviewRealized": "Toteutunut tästä myynnistä (FIFO):",
   "lotPreviewAverage": "Uusi keskihinta: {after} (nyt {before})",
   "portfolioYtdReturn": "Tuotto tänä vuonna",
-  "glossTwrYtd": "Aikapainotettu tuotto vuoden alusta (tai ensimmäisestä ostostasi, jos se oli tänä vuonna): jokainen päivä laskee niiden osakkeiden muutoksen, jotka omistit sinä päivänä, ja päivät ketjutetaan yhteen – sijoittamasi tai nostamasi raha ei ole tuottoa, joten sitä voi verrata indeksiin. Alla: valittu indeksi samalla ajanjaksolla."
+  "glossTwrYtd": "Aikapainotettu tuotto vuoden alusta (tai ensimmäisestä ostostasi, jos se oli tänä vuonna): jokainen päivä laskee niiden osakkeiden muutoksen, jotka omistit sinä päivänä, ja päivät ketjutetaan yhteen – sijoittamasi tai nostamasi raha ei ole tuottoa, joten sitä voi verrata indeksiin. Alla: valittu indeksi samalla ajanjaksolla.",
+  "alertDistance": "Nyt {price} · {percent} jäljellä"
 }

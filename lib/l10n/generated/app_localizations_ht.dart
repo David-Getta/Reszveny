@@ -2689,6 +2689,11 @@ class AppLocalizationsHt extends AppLocalizations {
       'Rannman peze selon tan depi kòmansman ane a (oswa depi premye acha ou, si se te ane sa a): chak jou konte chanjman aksyon ou te genyen jou sa a, epi jou yo mare youn ak lòt – lajan ou mete oswa ou retire se pa rannman, kidonk li ka konpare ak yon endèks. Anba l: endèks ou chwazi a pou menm peryòd la.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Kounye a $price · rete $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

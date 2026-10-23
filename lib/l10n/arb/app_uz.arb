@@ -812,5 +812,6 @@
   "lotPreviewRealized": "Ushbu sotuvda amalga oshgan (FIFO):",
   "lotPreviewAverage": "Yangi oʻrtacha narx: {after} (hozir {before})",
   "portfolioYtdReturn": "Shu yilgi daromadlilik",
-  "glossTwrYtd": "Yil boshidan buyon (yoki birinchi xaridingiz shu yil boʻlgan boʻlsa, oʻshandan buyon) vaqt boʻyicha tortilgan daromadlilik: har bir kun oʻsha kuni sizda boʻlgan aksiyalarning oʻzgarishini hisoblaydi, kunlar esa bir-biriga zanjirdek ulanadi – siz kiritgan yoki chiqargan pul daromad emas, shuning uchun uni indeks bilan taqqoslash mumkin. Ostida: oʻsha davrdagi tanlangan indeks."
+  "glossTwrYtd": "Yil boshidan buyon (yoki birinchi xaridingiz shu yil boʻlgan boʻlsa, oʻshandan buyon) vaqt boʻyicha tortilgan daromadlilik: har bir kun oʻsha kuni sizda boʻlgan aksiyalarning oʻzgarishini hisoblaydi, kunlar esa bir-biriga zanjirdek ulanadi – siz kiritgan yoki chiqargan pul daromad emas, shuning uchun uni indeks bilan taqqoslash mumkin. Ostida: oʻsha davrdagi tanlangan indeks.",
+  "alertDistance": "Hozir {price} · {percent} qoldi"
 }

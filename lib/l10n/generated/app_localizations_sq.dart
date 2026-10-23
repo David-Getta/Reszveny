@@ -2697,6 +2697,11 @@ class AppLocalizationsSq extends AppLocalizations {
       'Rendimenti i ponderuar me kohën që nga fillimi i vitit (ose që nga blerja juaj e parë, nëse ishte këtë vit): çdo ditë llogarit ndryshimin e aksioneve që zotëronit atë ditë, dhe ditët lidhen zinxhir me njëra-tjetrën – paratë që depozitoni ose tërhiqni nuk janë rendiment, ndaj mund të krahasohet me një indeks. Poshtë tij: indeksi i zgjedhur për të njëjtën periudhë.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Tani $price · edhe $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

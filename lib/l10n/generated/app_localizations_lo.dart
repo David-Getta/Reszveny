@@ -2664,6 +2664,11 @@ class AppLocalizationsLo extends AppLocalizations {
       'ຜົນຕອບແທນຖ່ວງນ້ຳໜັກຕາມເວລາ ນັບແຕ່ຕົ້ນປີ (ຫຼື ນັບແຕ່ການຊື້ຄັ້ງທຳອິດຂອງທ່ານ ຖ້າເປັນປີນີ້): ແຕ່ລະມື້ຄິດໄລ່ການປ່ຽນແປງຂອງຮຸ້ນທີ່ທ່ານຖືໃນມື້ນັ້ນ ແລະ ມື້ຕ່າງໆຈະຖືກເຊື່ອມຕໍ່ກັນ – ເງິນທີ່ທ່ານໃສ່ເຂົ້າ ຫຼື ຖອນອອກ ບໍ່ແມ່ນຜົນຕອບແທນ ດັ່ງນັ້ນຈຶ່ງສາມາດທຽບກັບດັດຊະນີໄດ້. ດ້ານລຸ່ມ: ດັດຊະນີທີ່ເລືອກ ໃນຊ່ວງເວລາດຽວກັນ.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'ປັດຈຸບັນ $price · ເຫຼືອ $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

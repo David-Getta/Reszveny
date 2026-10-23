@@ -2692,6 +2692,11 @@ class AppLocalizationsAz extends AppLocalizations {
       'İlin əvvəlindən (və ya ilk alışınız bu il olubsa, ondan bəri) zamana görə çəkili gəlirlilik: hər gün həmin gün sahib olduğunuz səhmlərin dəyişməsini hesablayır və günlər bir-birinə zəncirlənir – qoyduğunuz və ya çıxardığınız pul gəlirlilik deyil, buna görə onu indekslə müqayisə etmək olar. Altında: eyni dövr üçün seçilmiş indeks.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Hazırda $price · $percent qalıb';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

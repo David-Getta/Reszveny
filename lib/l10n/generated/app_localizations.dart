@@ -4615,6 +4615,12 @@ abstract class AppLocalizations {
   /// **'Time-weighted return since the start of the year (or since your first purchase, if that was this year): each day counts the change of the stocks you held that day, and the days are chained together – money you put in or take out is not return, so it can be compared with an index. Below it: the chosen index over the same period.'**
   String get glossTwrYtd;
 
+  /// Under an active price alert: the current price and how much the price still has to move (signed percent) until the alert fires, e.g. "Now 231.45 USD · +4.2% to go".
+  ///
+  /// In en, this message translates to:
+  /// **'Now {price} · {percent} to go'**
+  String alertDistance(String price, String percent);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

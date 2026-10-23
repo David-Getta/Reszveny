@@ -2703,6 +2703,11 @@ class AppLocalizationsZu extends AppLocalizations {
       'Inzuzo ekalwe ngesikhathi kusukela ekuqaleni konyaka (noma kusukela ekuthengeni kwakho kokuqala, uma kwakungalo nyaka): usuku ngalunye lubala ushintsho lwamasheya obunawo ngalolo suku, futhi izinsuku zixhunywa njengeketango – imali oyifakayo noma oyikhiphayo akuyona inzuzo, ngakho ingaqhathaniswa ne-index. Ngaphansi kwayo: i-index ekhethiwe esikhathini esifanayo.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Manje $price · kusele $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

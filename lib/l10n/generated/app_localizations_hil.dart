@@ -2708,6 +2708,11 @@ class AppLocalizationsHil extends AppLocalizations {
       'Time-weighted nga kita halin sa umpisa sang tuig (ukon halin sa imo una nga pagbakal, kon sini nga tuig ini): ang kada adlaw nagaisip sang pagbag-o sang mga stock nga ginhuptan mo sadto nga adlaw, kag ang mga adlaw ginakadena sa isa kag isa – ang kuwarta nga ginabutang mo ukon ginakuha indi kita, gani mahimo ini ikumparar sa isa ka index. Sa idalom sini: ang napili nga index sa amo man nga tion.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Subong $price · $percent pa ang kulang';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

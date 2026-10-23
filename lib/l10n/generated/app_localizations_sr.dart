@@ -2738,6 +2738,11 @@ class AppLocalizationsSr extends AppLocalizations {
       'Временски пондерисан принос од почетка године (или од ваше прве куповине, ако је била ове године): сваки дан рачуна промену акција које сте тог дана поседовали, а дани се надовезују један на други – новац који уплатите или исплатите није принос, па се може поредити са индексом. Испод: изабрани индекс за исти период.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Сада $price · још $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

@@ -2690,6 +2690,11 @@ class AppLocalizationsUr extends AppLocalizations {
       'سال کے آغاز سے (یا آپ کی پہلی خریداری سے، اگر وہ اسی سال ہوئی تھی) وقت کے لحاظ سے وزنی ریٹرن: ہر دن اس دن آپ کے پاس موجود حصص کی تبدیلی کو شمار کرتا ہے، اور دنوں کو ایک دوسرے سے جوڑا جاتا ہے – جو رقم آپ ڈالتے یا نکالتے ہیں وہ ریٹرن نہیں، اس لیے اس کا موازنہ کسی انڈیکس سے کیا جا سکتا ہے۔ نیچے: اسی مدت میں منتخب کردہ انڈیکس۔';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'فی الحال $price · $percent باقی';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

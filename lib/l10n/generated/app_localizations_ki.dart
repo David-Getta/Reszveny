@@ -2692,6 +2692,11 @@ class AppLocalizationsKi extends AppLocalizations {
       'Uumithio ũthimĩtwo na ihinda kuuma kĩambĩrĩria kĩa mwaka (kana kuuma ũgũri waku wa mbere, angĩkorwo warĩ mwaka ũyũ): o mũthenya ũtaraga ũgarũrũku wa hisa iria warĩ nacio mũthenya ũcio, na mĩthenya ĩkanyitanio ta mũnyororo – mbeeca iria ũikagia kana ũrutaga ti uumithio, nĩ ũndũ ũcio no ũgerekanio na index. Rungu rwaguo: index ĩrĩa ĩthuurĩtwo ihinda o rĩu.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Rĩu $price · $percent itigaire';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

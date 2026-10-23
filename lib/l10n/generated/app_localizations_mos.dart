@@ -2676,6 +2676,11 @@ class AppLocalizationsMos extends AppLocalizations {
       'Nafa sẽn mak ne wakato, sɩngr yʋʋmã sɩngrẽ (bɩ sɩngr f raab a yembr pipi wã, a sã n da yaa yʋʋm-kãngã): rasem fãa geelda f aksiõ rãmb nins f sẽn da tar rasem kãngã toeeg-toeegre, la b lagemda rasmã taab poor – ligd ning f sẽn ningd bɩ f sẽn yiisd ka nafa ye, rẽ n so tɩ b tõe n makẽ-a ne indɛks. A tẽngr: indɛks ning b sẽn yiis wakat kãng pʋgẽ.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Masã $price · $percent n kell';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

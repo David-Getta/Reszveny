@@ -2752,6 +2752,11 @@ class AppLocalizationsAr extends AppLocalizations {
       'العائد المرجّح زمنيًا منذ بداية العام (أو منذ أول عملية شراء لك إن كانت هذا العام): يحتسب كل يوم تغيّر الأسهم التي كنت تملكها في ذلك اليوم، ثم تُربط الأيام ببعضها – الأموال التي تودعها أو تسحبها ليست عائدًا، لذا يمكن مقارنته بمؤشر. وتحته: المؤشر المختار خلال الفترة نفسها.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'حاليًا $price · يتبقى $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

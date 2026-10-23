@@ -2695,6 +2695,11 @@ class AppLocalizationsJv extends AppLocalizations {
       'Imbal hasil ditimbang miturut wektu wiwit awal taun (utawa wiwit tukon pisanan sampeyan, yen kuwi taun iki): saben dina ngetung owah-owahan saham sing sampeyan duweni ing dina kuwi, lan dina-dinane dirangkai – dhuwit sing sampeyan lebokake utawa jupuk dudu imbal hasil, mula bisa dibandhingake karo indeks. Ing ngisore: indeks sing dipilih ing periode sing padha.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Saiki $price · kurang $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

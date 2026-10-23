@@ -2689,6 +2689,11 @@ class AppLocalizationsNe extends AppLocalizations {
       'वर्षको सुरुदेखि (वा तपाईंको पहिलो खरिद यसै वर्ष भएको भए त्यसदेखि) समय-भारित प्रतिफल: हरेक दिन त्यस दिन तपाईंसँग भएका सेयरहरूको परिवर्तन गणना गर्छ, र दिनहरूलाई एकअर्कासँग जोडिन्छ – तपाईंले हाल्ने वा निकाल्ने पैसा प्रतिफल होइन, त्यसैले यसलाई कुनै सूचकाङ्कसँग तुलना गर्न सकिन्छ। तल: उही अवधिको छानिएको सूचकाङ्क।';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'अहिले $price · $percent बाँकी';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

@@ -2704,6 +2704,11 @@ class AppLocalizationsXh extends AppLocalizations {
       'Inzuzo elinganiswe ngexesha ukususela ekuqaleni konyaka (okanye ukususela ekuthengeni kwakho kokuqala, ukuba bekukulo nyaka): usuku ngalunye lubala utshintsho lwezabelo obunazo ngolo suku, kwaye iintsuku zidityaniswa njengetyathanga – imali oyifakayo okanye oyikhuphayo ayiyonzuzo, ngoko ke inokuthelekiswa ne-index. Ngezantsi kwayo: i-index ekhethiweyo kwisithuba esifanayo.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Ngoku $price · kusele $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

@@ -2697,6 +2697,11 @@ class AppLocalizationsEs extends AppLocalizations {
       'Rentabilidad ponderada en el tiempo desde el inicio del año (o desde tu primera compra, si fue este año): cada día cuenta la variación de las acciones que tenías ese día, y los días se encadenan – el dinero que ingresas o retiras no es rentabilidad, así que se puede comparar con un índice. Debajo: el índice elegido en el mismo periodo.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Ahora $price · falta $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Fijar un objetivo';
 
   @override

@@ -2691,6 +2691,11 @@ class AppLocalizationsKa extends AppLocalizations {
       'დროით შეწონილი შემოსავლიანობა წლის დასაწყისიდან (ან თქვენი პირველი ყიდვიდან, თუ ის წელს მოხდა): ყოველი დღე ითვლის იმ აქციების ცვლილებას, რომლებიც იმ დღეს გქონდათ, და დღეები ერთმანეთს ჯაჭვად ებმის – ფული, რომელსაც შეიტანთ ან გაიტანთ, შემოსავლიანობა არ არის, ამიტომ მისი შედარება ინდექსთან შეიძლება. ქვემოთ: არჩეული ინდექსი იმავე პერიოდში.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'ახლა $price · დარჩა $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

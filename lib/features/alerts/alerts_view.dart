@@ -299,11 +299,14 @@ class _AlertDialogState extends State<_AlertDialog> {
 /// Egy riasztás sora: leírás, állapot (aktív / teljesült mikor, milyen áron),
 /// újraélesítés és törlés.
 class AlertTile extends StatelessWidget {
-  const AlertTile({super.key, required this.alert, this.showSymbol = false, this.onOpen});
+  const AlertTile({super.key, required this.alert, this.showSymbol = false, this.onOpen, this.price});
 
   final PriceAlert alert;
   final bool showSymbol;
   final VoidCallback? onOpen;
+
+  /// A mostani ár (ha ismert): aktív riasztásnál a kioldásig hátralévő változáshoz.
+  final double? price;
 
   @override
   Widget build(BuildContext context) {
@@ -321,9 +324,17 @@ class AlertTile extends StatelessWidget {
         color: a.isActive ? p.accent : p.positive,
       ),
       title: Text(showSymbol ? '${a.symbol} · $desc' : desc, style: const TextStyle(fontWeight: FontWeight.w600)),
-      subtitle: a.isActive
-          ? null
-          : Text(l10n.alertTriggeredAt(fmt.dateTime(a.triggeredAt), fmt.price(a.triggeredPrice, a.currency))),
+      subtitle: switch ((a.isActive, price)) {
+        (false, _) => Text(l10n.alertTriggeredAt(fmt.dateTime(a.triggeredAt), fmt.price(a.triggeredPrice, a.currency))),
+        (true, final now?) when a.distancePercent(now) != null => Text(
+          l10n.alertDistance(
+            fmt.price(now, a.currency),
+            fmt.percent(a.distancePercent(now), decimals: 1, withSign: true),
+          ),
+          key: ValueKey('alert-distance-${a.id}'),
+        ),
+        _ => null,
+      },
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -379,9 +390,12 @@ class AlertTile extends StatelessWidget {
 
 /// A részvény riasztásai a részletes nézetben (csak ha van).
 class SymbolAlertsCard extends StatelessWidget {
-  const SymbolAlertsCard({super.key, required this.symbol});
+  const SymbolAlertsCard({super.key, required this.symbol, this.price});
 
   final String symbol;
+
+  /// A részvény mostani ára (ha ismert): a kioldásig hátralévő változáshoz.
+  final double? price;
 
   @override
   Widget build(BuildContext context) {
@@ -396,7 +410,10 @@ class SymbolAlertsCard extends StatelessWidget {
           title: l10n.priceAlerts,
           child: Column(
             children: [
-              for (final (i, a) in alerts.indexed) ...[if (i > 0) const Divider(height: 1), AlertTile(alert: a)],
+              for (final (i, a) in alerts.indexed) ...[
+                if (i > 0) const Divider(height: 1),
+                AlertTile(alert: a, price: price),
+              ],
             ],
           ),
         );
@@ -458,19 +475,11 @@ class AlertsPage extends StatelessWidget {
           final all = services.alerts.alerts;
           final active = all.where((a) => a.isActive).toList();
           final triggered = all.where((a) => !a.isActive).toList();
-          Widget group(List<PriceAlert> items) => Card(
-            child: Column(
-              children: [
-                for (final (i, a) in items.indexed) ...[
-                  if (i > 0) const Divider(height: 1),
-                  AlertTile(
-                    alert: a,
-                    showSymbol: true,
-                    onOpen: () => onOpenSymbol(StockCandidate(symbol: a.symbol, companyName: a.symbol, confidence: 1)),
-                  ),
-                ],
-              ],
-            ),
+          Widget tile(PriceAlert a, [double? price]) => AlertTile(
+            alert: a,
+            showSymbol: true,
+            price: price,
+            onOpen: () => onOpenSymbol(StockCandidate(symbol: a.symbol, companyName: a.symbol, confidence: 1)),
           );
           return ListView(
             padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
@@ -496,10 +505,10 @@ class AlertsPage extends StatelessWidget {
                             ],
                           ),
                         ),
-                      if (active.isNotEmpty) group(active),
+                      if (active.isNotEmpty) _ActiveAlerts(alerts: active, tile: tile),
                       if (triggered.isNotEmpty) ...[
                         const SizedBox(height: 12),
-                        group(triggered),
+                        _alertCard([for (final a in triggered) tile(a)]),
                         Align(
                           alignment: AlignmentDirectional.centerEnd,
                           child: TextButton.icon(
@@ -558,6 +567,53 @@ class AlertsPage extends StatelessWidget {
           );
         },
       ),
+    );
+  }
+}
+
+Widget _alertCard(List<Widget> tiles) => Card(
+  child: Column(
+    children: [
+      for (final (i, t) in tiles.indexed) ...[if (i > 0) const Divider(height: 1), t],
+    ],
+  ),
+);
+
+/// Az aktív riasztások kártyája a mostani árakkal (a kioldásig hátralévő változáshoz);
+/// az árak a tickerek változásáig egyszer töltődnek.
+class _ActiveAlerts extends StatefulWidget {
+  const _ActiveAlerts({required this.alerts, required this.tile});
+
+  final List<PriceAlert> alerts;
+  final Widget Function(PriceAlert alert, [double? price]) tile;
+
+  @override
+  State<_ActiveAlerts> createState() => _ActiveAlertsState();
+}
+
+class _ActiveAlertsState extends State<_ActiveAlerts> {
+  String? _key;
+  Future<Map<String, double>>? _prices;
+
+  Future<Map<String, double>> _load(List<String> symbols) async {
+    final market = AppServices.of(context).marketData;
+    final prices = <String, double>{};
+    await Future.wait([
+      for (final s in symbols) market.quote(s).then((q) => prices[s] = q.price).then((_) {}, onError: (Object _) {}),
+    ]);
+    return prices;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final symbols = {for (final a in widget.alerts) a.symbol}.toList()..sort();
+    if (symbols.join(',') != _key) {
+      _key = symbols.join(',');
+      _prices = _load(symbols);
+    }
+    return FutureBuilder<Map<String, double>>(
+      future: _prices,
+      builder: (context, snap) => _alertCard([for (final a in widget.alerts) widget.tile(a, snap.data?[a.symbol])]),
     );
   }
 }

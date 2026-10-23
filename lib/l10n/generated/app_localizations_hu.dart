@@ -2696,6 +2696,11 @@ class AppLocalizationsHu extends AppLocalizations {
       'Időarányos hozam az év elejétől (vagy az első vételtől, ha az idén volt): minden nap az aznap birtokolt részvények változása számít, és a napok összeláncolódnak – a befizetés és a kivét nem hozam, így összevethető egy indexszel. Alatta a választott index ugyanerre az időszakra.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Most $price · még $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

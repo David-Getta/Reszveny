@@ -2760,6 +2760,11 @@ class AppLocalizationsBe extends AppLocalizations {
       'Узважаная па часе даходнасць з пачатку года (або з вашай першай куплі, калі яна была сёлета): кожны дзень улічвае змену акцый, якія вы мелі ў той дзень, а дні злучаюцца ў ланцуг – грошы, якія вы ўносіце ці выводзіце, не з\'яўляюцца даходнасцю, таму яе можна параўнаць з індэксам. Пад ёй: выбраны індэкс за той жа перыяд.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Зараз $price · засталося $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

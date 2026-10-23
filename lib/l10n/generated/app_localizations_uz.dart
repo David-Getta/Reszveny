@@ -2695,6 +2695,11 @@ class AppLocalizationsUz extends AppLocalizations {
       'Yil boshidan buyon (yoki birinchi xaridingiz shu yil boʻlgan boʻlsa, oʻshandan buyon) vaqt boʻyicha tortilgan daromadlilik: har bir kun oʻsha kuni sizda boʻlgan aksiyalarning oʻzgarishini hisoblaydi, kunlar esa bir-biriga zanjirdek ulanadi – siz kiritgan yoki chiqargan pul daromad emas, shuning uchun uni indeks bilan taqqoslash mumkin. Ostida: oʻsha davrdagi tanlangan indeks.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Hozir $price · $percent qoldi';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

@@ -315,7 +315,7 @@ class _DetailsBody extends StatelessWidget {
       PositionCard(details: d),
 
       // Árfolyam-riasztások (ha van)
-      SymbolAlertsCard(symbol: d.symbol),
+      SymbolAlertsCard(symbol: d.symbol, price: d.quote?.price),
 
       // AI-elemzés
       AnalysisCard(details: d),

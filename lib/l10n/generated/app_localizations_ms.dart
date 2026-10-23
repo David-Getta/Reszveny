@@ -2695,6 +2695,11 @@ class AppLocalizationsMs extends AppLocalizations {
       'Pulangan berwajaran masa sejak awal tahun (atau sejak pembelian pertama anda, jika ia berlaku tahun ini): setiap hari mengira perubahan saham yang anda pegang pada hari itu, dan hari-hari itu dirangkaikan – wang yang anda masukkan atau keluarkan bukan pulangan, jadi ia boleh dibandingkan dengan indeks. Di bawahnya: indeks yang dipilih bagi tempoh yang sama.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Kini $price · $percent lagi';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

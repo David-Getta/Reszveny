@@ -2690,6 +2690,11 @@ class AppLocalizationsKk extends AppLocalizations {
       'Жыл басынан бергі (немесе алғашқы сатып алуыңыз биыл болса, содан бергі) уақыт бойынша өлшенген кірістілік: әр күн сол күні сізде болған акциялардың өзгерісін есептейді, ал күндер бір-біріне тізбектеледі – сіз салған немесе шығарған ақша кірістілік емес, сондықтан оны индекспен салыстыруға болады. Астында: сол кезеңдегі таңдалған индекс.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Қазір $price · $percent қалды';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

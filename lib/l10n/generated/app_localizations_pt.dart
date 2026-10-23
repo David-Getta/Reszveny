@@ -2697,6 +2697,11 @@ class AppLocalizationsPt extends AppLocalizations {
       'Rentabilidade ponderada pelo tempo desde o início do ano (ou desde a sua primeira compra, se foi este ano): cada dia conta a variação das ações que detinha nesse dia, e os dias são encadeados – o dinheiro que deposita ou retira não é rentabilidade, por isso pode ser comparada com um índice. Abaixo: o índice escolhido no mesmo período.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Agora $price · falta $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

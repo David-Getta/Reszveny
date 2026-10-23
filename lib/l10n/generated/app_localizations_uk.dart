@@ -2763,6 +2763,11 @@ class AppLocalizationsUk extends AppLocalizations {
       'Зважена за часом дохідність від початку року (або від вашої першої купівлі, якщо вона була цього року): кожен день враховує зміну акцій, якими ви володіли того дня, а дні з\'єднуються в ланцюжок – гроші, які ви вносите або виводите, не є дохідністю, тому її можна порівняти з індексом. Під нею: вибраний індекс за той самий період.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Зараз $price · залишилося $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

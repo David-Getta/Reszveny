@@ -2693,6 +2693,11 @@ class AppLocalizationsCkb extends AppLocalizations {
       'قازانجی کێشکراو بە کات لە سەرەتای ساڵەوە (یان لە یەکەم کڕینتەوە، ئەگەر ئەمساڵ بووبێت): هەر ڕۆژێک گۆڕانی ئەو پشکانە دەژمێرێت کە ئەو ڕۆژە هەتبوون، و ڕۆژەکان بە زنجیرە بە یەکەوە دەبەسترێن – ئەو پارەیەی دایدەنێیت یان دەیکێشیتەوە قازانج نییە، بۆیە دەتوانرێت لەگەڵ ئیندێکسێک بەراورد بکرێت. لە خوارەوە: ئیندێکسی هەڵبژێردراو لە هەمان ماوەدا.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'ئێستا $price · $percent ماوە';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

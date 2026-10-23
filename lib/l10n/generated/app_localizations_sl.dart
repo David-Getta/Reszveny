@@ -2762,6 +2762,11 @@ class AppLocalizationsSl extends AppLocalizations {
       'Časovno tehtan donos od začetka leta (ali od vašega prvega nakupa, če je bil letos): vsak dan upošteva spremembo delnic, ki ste jih imeli tisti dan, dnevi pa se verižno povežejo – denar, ki ga vplačate ali dvignete, ni donos, zato ga je mogoče primerjati z indeksom. Pod njim: izbrani indeks v istem obdobju.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Zdaj $price · še $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

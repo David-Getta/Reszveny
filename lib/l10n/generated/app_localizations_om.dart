@@ -2703,6 +2703,11 @@ class AppLocalizationsOm extends AppLocalizations {
       'Bu\'aa yeroon madaalame jalqaba waggaa irraa (yookiin bittaa kee isa jalqabaa irraa, yoo bara kana ture): guyyaan tokkoon tokkoon jijjiirama aksiyoonota guyyaa sana qabaatte herrega, guyyoonnis walitti hidhamu – maallaqni ati galchitu ykn baaftu bu\'aa miti, kanaaf indeeksii tokko waliin wal bira qabamuu danda\'a. Jala isaatti: indeeksii filatame yeroo walfakkaataa keessatti.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Amma $price · $percent hafeera';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

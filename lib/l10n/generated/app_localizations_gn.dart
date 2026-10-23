@@ -2697,6 +2697,11 @@ class AppLocalizationsGn extends AppLocalizations {
       'Rendimiento ojepesáva ára rupi ary ñepyrũ guive (térã ne jejogua peteĩha guive, oikóramo ko ary): ára ha ára ojepapa umi aksiõ rerekóva upe árape iñambue, ha umi ára oñembojoaju – pirapire remoĩva térã reguenohẽva ndaha\'éi rendimiento, upévare ikatu ojeporombojoja peteĩ índice ndive. Iguýpe: índice reiporavóva upe período javeve.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Koʼág̃a $price · opyta $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

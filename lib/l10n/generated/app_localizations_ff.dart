@@ -2686,6 +2686,11 @@ class AppLocalizationsFf extends AppLocalizations {
       'Nafoore peesaande e sahaa gila fuɗɗoode hitaande nde (walla gila e soodu maa arandeere, so tawii ko hitaande ndee): ñalnde kala ina limoo waylo aksiyonji ɗi njogi-ɗaa ñalnde ndeen, ñalɗi ɗin ina jokkondiree – kaalis mo naatnataa walla mo ittataa wonaa nafoore, ɗum noon ina waawi fondeede e indeks. E les mum: indeks suɓaandi ndin e oon sahaa gooto.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Jooni $price · $percent heddii';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

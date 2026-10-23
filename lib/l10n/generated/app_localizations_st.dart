@@ -2708,6 +2708,11 @@ class AppLocalizationsSt extends AppLocalizations {
       'Poelo e lekantsweng ka nako ho tloha qalong ya selemo (kapa ho tloha theko ya hao ya pele, haeba e bile selemong sena): letsatsi le leng le le leng le bala phetoho ya dishere tseo o neng o na le tsona letsatsing leo, mme matsatsi a hokahanngwa – tjhelete eo o e kenyang kapa o e ntshang hase poelo, kahoo e ka bapiswa le index. Ka tlasa yona: index e kgethilweng nakong yona eo.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Hona jwale $price · ho setse $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

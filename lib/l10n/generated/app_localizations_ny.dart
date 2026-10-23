@@ -2700,6 +2700,11 @@ class AppLocalizationsNy extends AppLocalizations {
       'Phindu loyezedwa malinga ndi nthawi kuyambira kuchiyambi kwa chaka (kapena kuyambira pomwe munagula koyamba, ngati zinali chaka chino): tsiku lililonse limawerengera kusintha kwa masheya omwe munali nawo tsiku limenelo, ndipo masiku amalumikizidwa pamodzi – ndalama zomwe mumayika kapena kutulutsa si phindu, choncho lingayerekezedwe ndi index. Pansi pake: index yomwe yasankhidwa nthawi yomweyo.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Pano $price · kwatsala $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

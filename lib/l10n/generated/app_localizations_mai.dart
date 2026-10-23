@@ -2683,6 +2683,11 @@ class AppLocalizationsMai extends AppLocalizations {
       'सालक शुरुआतसँ (वा अहाँक पहिल कीनबसँ, जँ ओ एही साल भेल छल) समय-भारित रिटर्न: प्रत्येक दिन ओहि दिन अहाँ लग रहल शेयरक बदलाव गनैत अछि, आ दिन सभकेँ एक-दोसरसँ जोड़ल जाइत अछि – जे पाइ अहाँ डालैत छी वा निकालैत छी से रिटर्न नहि अछि, तेँ एकर तुलना कोनो इंडेक्ससँ कयल जा सकैत अछि। नीचाँ: ओही अवधिमे चुनल इंडेक्स।';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'एखन $price · $percent बाँकी';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

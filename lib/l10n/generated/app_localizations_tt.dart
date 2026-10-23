@@ -2688,6 +2688,11 @@ class AppLocalizationsTt extends AppLocalizations {
       'Ел башыннан бирле (яки беренче сатып алуыгыз быел булса, шуннан бирле) вакыт буенча үлчәнгән керемлелек: һәр көн ул көнне сездә булган акцияләрнең үзгәрешен исәпли, ә көннәр бер-берсенә чылбыр итеп тоташтырыла – сез керткән яки чыгарган акча керем түгел, шуңа күрә аны индекс белән чагыштырырга мөмкин. Астында: шул ук чордагы сайланган индекс.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Хәзер $price · $percent калды';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

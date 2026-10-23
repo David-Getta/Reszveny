@@ -2703,6 +2703,11 @@ class AppLocalizationsLn extends AppLocalizations {
       'Litomba epimami na ntango banda ebandeli ya mbula (to banda bosombi na yo ya liboso, soki esalemaki na mbula oyo): mokolo moko na moko etángaka mbongwana ya ba-action oyo ozalaki na yango na mokolo yango, mpe mikolo ekangisami moko na mosusu – mbongo oyo otyaka to obimisaka ezali litomba te, yango wana ekoki kokokanisama na indice moko. Na nse: indice oyo eponami na eleko kaka wana.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Sikoyo $price · etikali $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

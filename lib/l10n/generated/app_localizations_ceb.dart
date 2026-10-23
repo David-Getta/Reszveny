@@ -2703,6 +2703,11 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Time-weighted nga kita sukad sa sinugdanan sa tuig (o sukad sa imong unang pagpalit, kon karong tuiga kini): ang matag adlaw nag-ihap sa kausaban sa mga stock nga imong gihuptan nianang adlawa, ug ang mga adlaw gikadena-kadena – ang kuwarta nga imong ibutang o kuhaon dili kita, busa mahimo kining itandi sa usa ka index. Sa ubos niini: ang napiling index sa samang yugto.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Karon $price · $percent pa ang kulang';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

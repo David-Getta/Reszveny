@@ -2699,6 +2699,11 @@ class AppLocalizationsFil extends AppLocalizations {
       'Time-weighted na kita mula sa simula ng taon (o mula sa una mong pagbili, kung ngayong taon iyon): binibilang ng bawat araw ang pagbabago ng mga stock na hawak mo noong araw na iyon, at pinagdudugtong-dugtong ang mga araw – hindi kita ang perang idinedeposito o iwini-withdraw mo, kaya maikukumpara ito sa isang index. Sa ibaba nito: ang napiling index sa parehong panahon.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Ngayon $price · $percent pa ang kulang';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

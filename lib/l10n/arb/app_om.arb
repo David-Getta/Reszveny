@@ -812,5 +812,6 @@
   "lotPreviewRealized": "Gurgurtaa kana irratti kan dhugoome (FIFO):",
   "lotPreviewAverage": "Baasii giddugaleessaa haaraa: {after} (amma {before})",
   "portfolioYtdReturn": "Bu'aa bara kanaa",
-  "glossTwrYtd": "Bu'aa yeroon madaalame jalqaba waggaa irraa (yookiin bittaa kee isa jalqabaa irraa, yoo bara kana ture): guyyaan tokkoon tokkoon jijjiirama aksiyoonota guyyaa sana qabaatte herrega, guyyoonnis walitti hidhamu – maallaqni ati galchitu ykn baaftu bu'aa miti, kanaaf indeeksii tokko waliin wal bira qabamuu danda'a. Jala isaatti: indeeksii filatame yeroo walfakkaataa keessatti."
+  "glossTwrYtd": "Bu'aa yeroon madaalame jalqaba waggaa irraa (yookiin bittaa kee isa jalqabaa irraa, yoo bara kana ture): guyyaan tokkoon tokkoon jijjiirama aksiyoonota guyyaa sana qabaatte herrega, guyyoonnis walitti hidhamu – maallaqni ati galchitu ykn baaftu bu'aa miti, kanaaf indeeksii tokko waliin wal bira qabamuu danda'a. Jala isaatti: indeeksii filatame yeroo walfakkaataa keessatti.",
+  "alertDistance": "Amma {price} · {percent} hafeera"
 }

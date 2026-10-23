@@ -2657,6 +2657,11 @@ class AppLocalizationsAm extends AppLocalizations {
       'ከዓመቱ መጀመሪያ ጀምሮ (ወይም የመጀመሪያ ግዢዎ በዚህ ዓመት ከሆነ ከዚያ ጀምሮ) በጊዜ የተመዘነ ተመላሽ፦ እያንዳንዱ ቀን በዚያ ቀን የያዟቸውን አክሲዮኖች ለውጥ ይቆጥራል፣ ቀኖቹም እርስ በርስ ይያያዛሉ – የሚያስገቡት ወይም የሚያወጡት ገንዘብ ተመላሽ አይደለም፣ ስለዚህ ከኢንዴክስ ጋር ሊነጻጸር ይችላል። ከሥሩ፦ የተመረጠው ኢንዴክስ በተመሳሳይ ጊዜ ውስጥ።';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'አሁን $price · $percent ቀርቷል';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

@@ -2683,6 +2683,11 @@ class AppLocalizationsHe extends AppLocalizations {
       'תשואה משוקללת זמן מתחילת השנה (או מהקנייה הראשונה שלך, אם הייתה השנה): כל יום מחשב את השינוי במניות שהחזקת באותו יום, והימים משורשרים זה לזה – כסף שאתה מפקיד או מושך אינו תשואה, ולכן אפשר להשוות אותה למדד. מתחת: המדד שנבחר באותה תקופה.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'כעת $price · נותרו $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

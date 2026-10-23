@@ -41,6 +41,15 @@ void main() {
     expect(PriceAlert.alreadyMet(AlertKind.above, 240, 231.45), isFalse);
     expect(PriceAlert.alreadyMet(AlertKind.above, 240, null), isFalse);
     expect(PriceAlert.alreadyMet(AlertKind.move, 1, 231.45), isFalse);
+    // A kioldásig hátralévő változás; a már túllépett szintnél és a napi mozgásnál nincs.
+    expect(alert(AlertKind.above, 240).distancePercent(200), closeTo(20, 1e-9));
+    expect(alert(AlertKind.below, 180).distancePercent(200), closeTo(-10, 1e-9));
+    expect(alert(AlertKind.above, 240).distancePercent(250), isNull);
+    expect(alert(AlertKind.move, 5).distancePercent(200), isNull);
+    // Követő stop: a csúcstól (csúcs nélkül a mostani ártól) a küszöbbel lejjebb.
+    expect(alert(AlertKind.trailing, 10).distancePercent(200), closeTo(-10, 1e-9));
+    expect(alert(AlertKind.trailing, 10).withPeak(250).distancePercent(240), closeTo(-6.25, 1e-9));
+    expect(alert(AlertKind.trailing, 10).withPeak(250).distancePercent(200), isNull);
   });
 
   test('alerts survive a restart; triggering and re-arming change the state', () async {
@@ -205,6 +214,8 @@ void main() {
     expect(find.text('Alert set for AAPL.'), findsOneWidget);
     expect(find.text('Price alerts'), findsOneWidget);
     expect(find.text('Above 232.00 USD'), findsOneWidget);
+    // A részvény oldalán is látszik, mennyi van még hátra (232 / 231,45).
+    expect(find.text('Now 231.45 USD · +0.2% to go'), findsOneWidget);
 
     // A demó ár 231,45, így nem teljesül; a szintet lejjebb téve igen.
     final a = s.alerts.alerts.single;
@@ -258,6 +269,8 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('Price alerts').first);
     await tester.pumpAndSettle();
+    // Az aktív riasztás alatt a mostani ár és a kioldásig hátralévő változás (300 / 231,45).
+    expect(find.text('Now 231.45 USD · +29.6% to go'), findsOneWidget);
 
     await tester.tap(find.byKey(ValueKey('alert-delete-${keep.id}')));
     await tester.pumpAndSettle();

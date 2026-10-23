@@ -2755,6 +2755,11 @@ class AppLocalizationsCs extends AppLocalizations {
       'Časově vážený výnos od začátku roku (nebo od vašeho prvního nákupu, pokud proběhl letos): každý den započítá změnu akcií, které jste ten den drželi, a dny se na sebe řetězí – peníze, které vložíte nebo vyberete, nejsou výnos, takže jej lze srovnat s indexem. Pod ním: zvolený index za stejné období.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Nyní $price · zbývá $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

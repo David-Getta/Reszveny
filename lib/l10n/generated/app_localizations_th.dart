@@ -2659,6 +2659,11 @@ class AppLocalizationsTh extends AppLocalizations {
       'ผลตอบแทนแบบถ่วงน้ำหนักตามเวลาตั้งแต่ต้นปี (หรือตั้งแต่การซื้อครั้งแรกของคุณ หากเกิดขึ้นในปีนี้): แต่ละวันจะคิดการเปลี่ยนแปลงของหุ้นที่คุณถือในวันนั้น แล้วนำแต่ละวันมาต่อกันเป็นลูกโซ่ – เงินที่คุณฝากเข้าหรือถอนออกไม่ใช่ผลตอบแทน จึงเทียบกับดัชนีได้ ด้านล่าง: ดัชนีที่เลือกในช่วงเวลาเดียวกัน';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'ตอนนี้ $price · อีก $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

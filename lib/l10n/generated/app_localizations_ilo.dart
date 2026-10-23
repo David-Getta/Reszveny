@@ -2712,6 +2712,11 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Time-weighted a ganansia manipud iti rugi ti tawen (wenno manipud iti umuna a gatangmo, no daytoy a tawen dayta): tunggal aldaw ket bilangenna ti panagbaliw dagiti stock nga adda kenka iti dayta nga aldaw, ken mapagsisilpo dagiti aldaw – ti kuarta nga ikabil wenno alaem ket saan a ganansia, isu a mabalin a maikompara iti maysa nga index. Iti baba: ti napili nga index iti isu met laeng a periodo.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Ita $price · kurang pay ti $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

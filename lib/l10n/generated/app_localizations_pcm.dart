@@ -2690,6 +2690,11 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Time-weighted return from di start of di year (or from your first buy, if na dis year e happen): every day dey count how di stocks wey you hold dat day change, and dem dey join di days togeda – money wey you put inside or comot no be return, so you fit compare am with one index. For under: di index wey you choose for di same period.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Now $price · $percent remain';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

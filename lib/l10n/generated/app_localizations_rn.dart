@@ -2700,6 +2700,11 @@ class AppLocalizationsRn extends AppLocalizations {
       'Inyungu ipimwe hakurikijwe igihe kuva intango y\'umwaka (canke kuva igihe waguze ubwa mbere, nimba vyabaye uyu mwaka): umusi wose uharura ihinduka ry\'imigabane wari ufise uwo musi, hanyuma imisi igafatanywa nk\'umunyororo – amahera ushizemwo canke ukuyemwo si inyungu, ni co gituma ishobora kugereranywa na index. Munsi yayo: index yatowe mu gihe nk\'ico nyene.';
 
   @override
+  String alertDistance(String price, String percent) {
+    return 'Ubu $price · hasigaye $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override
