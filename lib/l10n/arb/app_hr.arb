@@ -815,5 +815,9 @@
   "glossTwrYtd": "Vremenski ponderirani prinos od početka godine (ili od vaše prve kupnje, ako je bila ove godine): svaki dan računa promjenu dionica koje ste tog dana držali, a dani se nadovezuju jedan na drugi – novac koji uplatite ili podignete nije prinos, pa se može usporediti s indeksom. Ispod: odabrani indeks u istom razdoblju.",
   "alertDistance": "Sada {price} · još {percent}",
   "watchSortSince": "Po promjeni od dodavanja",
-  "portfolioTodayMovers": "Najveći pomaci danas:"
+  "portfolioTodayMovers": "Najveći pomaci danas:",
+  "lotNoteAdd": "Dodajte bilješku",
+  "lotNoteBuyHint": "Zašto kupujete? Upisuje se u bilješke o dionici, s datumom.",
+  "lotNoteSellHint": "Zašto prodajete? Upisuje se u bilješke o dionici, s datumom.",
+  "lotNoteBought": "Kupljeno"
 }

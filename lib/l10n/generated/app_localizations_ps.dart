@@ -2694,6 +2694,20 @@ class AppLocalizationsPs extends AppLocalizations {
   String get portfolioTodayMovers => 'نن تر ټولو ډېر بدلون:';
 
   @override
+  String get lotNoteAdd => 'یادښت اضافه کړئ';
+
+  @override
+  String get lotNoteBuyHint =>
+      'ولې یې اخلئ؟ د نېټې سره د ونډې یادښتونو ته ورزیاتېږي.';
+
+  @override
+  String get lotNoteSellHint =>
+      'ولې یې پلورئ؟ د نېټې سره د ونډې یادښتونو ته ورزیاتېږي.';
+
+  @override
+  String get lotNoteBought => 'وپېرل شو';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

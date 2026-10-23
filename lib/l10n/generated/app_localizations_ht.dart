@@ -2700,6 +2700,20 @@ class AppLocalizationsHt extends AppLocalizations {
   String get portfolioTodayMovers => 'Sa ki bouje plis jodi a:';
 
   @override
+  String get lotNoteAdd => 'Ajoute yon nòt';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Poukisa w ap achte? L ap ale nan nòt aksyon an, ak dat la.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Poukisa w ap vann? L ap ale nan nòt aksyon an, ak dat la.';
+
+  @override
+  String get lotNoteBought => 'Achte';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

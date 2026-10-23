@@ -2708,6 +2708,20 @@ class AppLocalizationsSq extends AppLocalizations {
   String get portfolioTodayMovers => 'Lëvizën më shumë sot:';
 
   @override
+  String get lotNoteAdd => 'Shto një shënim';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Pse po blini? Shtohet te shënimet e aksionit, me datën.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Pse po shitni? Shtohet te shënimet e aksionit, me datën.';
+
+  @override
+  String get lotNoteBought => 'Blerë';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

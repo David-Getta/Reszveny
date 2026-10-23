@@ -815,5 +815,9 @@
   "glossTwrYtd": "Faa'iidada waqtiga lagu miisaamay laga soo bilaabo bilowga sannadka (ama laga soo bilaabo iibsashadaada ugu horreysay, haddii ay sannadkan ahayd): maalin kasta waxay xisaabisaa isbeddelka saamiyadii aad haysatay maalintaas, maalmahana waa la isku xiriiriyaa – lacagta aad gelisid ama aad la baxdid faa'iido ma aha, sidaas darteed waxaa lala barbardhigi karaa tusmo. Hoostiisa: tusmada la doortay isla muddadaas.",
   "alertDistance": "Hadda {price} · {percent} ayaa haray",
   "watchSortSince": "Isbeddel ahaan tan iyo markii lagu daray",
-  "portfolioTodayMovers": "Kuwa ugu isbeddelka badan maanta:"
+  "portfolioTodayMovers": "Kuwa ugu isbeddelka badan maanta:",
+  "lotNoteAdd": "Ku dar qoraal",
+  "lotNoteBuyHint": "Maxaad u iibsanaysaa? Waxaa lagu darayaa qoraallada saamiga, taariikhda oo la socota.",
+  "lotNoteSellHint": "Maxaad u iibinaysaa? Waxaa lagu darayaa qoraallada saamiga, taariikhda oo la socota.",
+  "lotNoteBought": "La iibsaday"
 }

@@ -2697,6 +2697,20 @@ class AppLocalizationsFf extends AppLocalizations {
   String get portfolioTodayMovers => 'Ɓurɓe wayleede hannde:';
 
   @override
+  String get lotNoteAdd => 'Ɓeydu binndi';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Ko waɗi a soodata ɗum? Ɗum naatat e binndi aksiyoŋ oo, wondude e ñalnde.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Ko waɗi a yeeyata ɗum? Ɗum naatat e binndi aksiyoŋ oo, wondude e ñalnde.';
+
+  @override
+  String get lotNoteBought => 'Soodaama';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

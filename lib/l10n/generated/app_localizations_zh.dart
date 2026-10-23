@@ -2585,6 +2585,18 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioTodayMovers => '今日变动最大：';
 
   @override
+  String get lotNoteAdd => '添加笔记';
+
+  @override
+  String get lotNoteBuyHint => '为什么买入？会连同日期记入该股票的笔记。';
+
+  @override
+  String get lotNoteSellHint => '为什么卖出？会连同日期记入该股票的笔记。';
+
+  @override
+  String get lotNoteBought => '买入';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5537,6 +5549,18 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioTodayMovers => '今日變動最大：';
+
+  @override
+  String get lotNoteAdd => '新增筆記';
+
+  @override
+  String get lotNoteBuyHint => '為何買入？會連同日期記入此股票的筆記。';
+
+  @override
+  String get lotNoteSellHint => '為何賣出？會連同日期記入此股票的筆記。';
+
+  @override
+  String get lotNoteBought => '買入';
 
   @override
   String get portfolioGoalSet => '設定目標';

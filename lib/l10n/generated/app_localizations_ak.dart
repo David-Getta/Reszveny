@@ -2704,6 +2704,20 @@ class AppLocalizationsAk extends AppLocalizations {
   String get portfolioTodayMovers => 'Deɛ asesa kɛseɛ ɛnnɛ:';
 
   @override
+  String get lotNoteAdd => 'Fa nkyerɛwee bi ka ho';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Adɛn nti na woretɔ? Ɛbɛkɔ kyɛfa no nkyerɛwee mu, ne da no ka ho.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Adɛn nti na woretɔn? Ɛbɛkɔ kyɛfa no nkyerɛwee mu, ne da no ka ho.';
+
+  @override
+  String get lotNoteBought => 'Woatɔ';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

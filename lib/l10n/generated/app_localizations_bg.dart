@@ -2703,6 +2703,20 @@ class AppLocalizationsBg extends AppLocalizations {
   String get portfolioTodayMovers => 'Най-голямо движение днес:';
 
   @override
+  String get lotNoteAdd => 'Добавете бележка';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Защо купувате? Записва се в бележките за акцията с датата.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Защо продавате? Записва се в бележките за акцията с датата.';
+
+  @override
+  String get lotNoteBought => 'Купени';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

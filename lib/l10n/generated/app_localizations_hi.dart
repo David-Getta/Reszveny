@@ -2699,6 +2699,20 @@ class AppLocalizationsHi extends AppLocalizations {
   String get portfolioTodayMovers => 'आज सबसे ज़्यादा हिले:';
 
   @override
+  String get lotNoteAdd => 'नोट जोड़ें';
+
+  @override
+  String get lotNoteBuyHint =>
+      'आप क्यों खरीद रहे हैं? यह तारीख के साथ शेयर के नोट्स में जुड़ जाएगा।';
+
+  @override
+  String get lotNoteSellHint =>
+      'आप क्यों बेच रहे हैं? यह तारीख के साथ शेयर के नोट्स में जुड़ जाएगा।';
+
+  @override
+  String get lotNoteBought => 'खरीदा';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

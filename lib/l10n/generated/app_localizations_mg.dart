@@ -2722,6 +2722,20 @@ class AppLocalizationsMg extends AppLocalizations {
   String get portfolioTodayMovers => 'Nihetsika indrindra androany:';
 
   @override
+  String get lotNoteAdd => 'Hanampy naoty';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Nahoana ianao no mividy? Hiditra ao amin\'ny naotin\'ny aksiona miaraka amin\'ny daty izany.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Nahoana ianao no mivarotra? Hiditra ao amin\'ny naotin\'ny aksiona miaraka amin\'ny daty izany.';
+
+  @override
+  String get lotNoteBought => 'Novidiana';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

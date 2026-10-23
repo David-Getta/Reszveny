@@ -815,5 +815,9 @@
   "glossTwrYtd": "Pundutso yakayerwa nenguva kubva pakutanga kwegore (kana kubva pawakatanga kutenga, kana zvakaitika gore rino): zuva rega rega rinoverenga shanduko yemasheya awaive nawo zuva iroro, uye mazuva anobatanidzwa sengetani – mari yaunoisa kana kubvisa haisi pundutso, saka inogona kuenzaniswa neindex. Pazasi payo: index yakasarudzwa munguva imwe chete iyoyo.",
   "alertDistance": "Ikozvino {price} · pasara {percent}",
   "watchSortSince": "Nema shanduko kubvira pawakaiwedzera",
-  "portfolioTodayMovers": "Zvachinja zvakanyanya nhasi:"
+  "portfolioTodayMovers": "Zvachinja zvakanyanya nhasi:",
+  "lotNoteAdd": "Wedzera chinyorwa",
+  "lotNoteBuyHint": "Uri kutengerei? Zvichaiswa muzvinyorwa zvesheya, pamwe nezuva.",
+  "lotNoteSellHint": "Uri kutengeserei? Zvichaiswa muzvinyorwa zvesheya, pamwe nezuva.",
+  "lotNoteBought": "Zvatengwa"
 }

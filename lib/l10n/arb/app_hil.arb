@@ -815,5 +815,9 @@
   "glossTwrYtd": "Time-weighted nga kita halin sa umpisa sang tuig (ukon halin sa imo una nga pagbakal, kon sini nga tuig ini): ang kada adlaw nagaisip sang pagbag-o sang mga stock nga ginhuptan mo sadto nga adlaw, kag ang mga adlaw ginakadena sa isa kag isa – ang kuwarta nga ginabutang mo ukon ginakuha indi kita, gani mahimo ini ikumparar sa isa ka index. Sa idalom sini: ang napili nga index sa amo man nga tion.",
   "alertDistance": "Subong {price} · {percent} pa ang kulang",
   "watchSortSince": "Suno sa pagbag-o halin sang gindugang",
-  "portfolioTodayMovers": "Pinakanaghulag subong:"
+  "portfolioTodayMovers": "Pinakanaghulag subong:",
+  "lotNoteAdd": "Idugang ang nota",
+  "lotNoteBuyHint": "Ngaa nagabakal ka? Mapakadto ini sa mga nota sang stock, upod ang petsa.",
+  "lotNoteSellHint": "Ngaa nagabaligya ka? Mapakadto ini sa mga nota sang stock, upod ang petsa.",
+  "lotNoteBought": "Ginbakal"
 }

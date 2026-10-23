@@ -2694,6 +2694,20 @@ class AppLocalizationsMai extends AppLocalizations {
   String get portfolioTodayMovers => 'आइ सभसँ बेसी हिलल:';
 
   @override
+  String get lotNoteAdd => 'नोट जोड़ू';
+
+  @override
+  String get lotNoteBuyHint =>
+      'अहाँ किएक कीनि रहल छी? ई तिथिक संग शेयरक नोटमे जुड़ि जाएत।';
+
+  @override
+  String get lotNoteSellHint =>
+      'अहाँ किएक बेचि रहल छी? ई तिथिक संग शेयरक नोटमे जुड़ि जाएत।';
+
+  @override
+  String get lotNoteBought => 'कीनल';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

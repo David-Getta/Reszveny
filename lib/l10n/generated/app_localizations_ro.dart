@@ -2742,6 +2742,20 @@ class AppLocalizationsRo extends AppLocalizations {
   String get portfolioTodayMovers => 'Cele mai mari mișcări azi:';
 
   @override
+  String get lotNoteAdd => 'Adaugă o notiță';
+
+  @override
+  String get lotNoteBuyHint =>
+      'De ce cumperi? Intră în notițele acțiunii, cu data.';
+
+  @override
+  String get lotNoteSellHint =>
+      'De ce vinzi? Intră în notițele acțiunii, cu data.';
+
+  @override
+  String get lotNoteBought => 'Cumpărat';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

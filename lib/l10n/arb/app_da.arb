@@ -815,5 +815,9 @@
   "glossTwrYtd": "Tidsvægtet afkast siden årets start (eller siden dit første køb, hvis det var i år): hver dag tæller ændringen i de aktier, du ejede den dag, og dagene kædes sammen – penge, du sætter ind eller hæver, er ikke afkast, så det kan sammenlignes med et indeks. Nedenunder: det valgte indeks i samme periode.",
   "alertDistance": "Nu {price} · {percent} tilbage",
   "watchSortSince": "Efter ændring siden tilføjelse",
-  "portfolioTodayMovers": "Bevægede sig mest i dag:"
+  "portfolioTodayMovers": "Bevægede sig mest i dag:",
+  "lotNoteAdd": "Tilføj en note",
+  "lotNoteBuyHint": "Hvorfor køber du? Det kommer med i aktiens noter med datoen.",
+  "lotNoteSellHint": "Hvorfor sælger du? Det kommer med i aktiens noter med datoen.",
+  "lotNoteBought": "Købt"
 }

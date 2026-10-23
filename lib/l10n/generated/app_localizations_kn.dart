@@ -2708,6 +2708,20 @@ class AppLocalizationsKn extends AppLocalizations {
   String get portfolioTodayMovers => 'ಇಂದು ಹೆಚ್ಚು ಏರಿಳಿತ ಕಂಡವು:';
 
   @override
+  String get lotNoteAdd => 'ಟಿಪ್ಪಣಿ ಸೇರಿಸಿ';
+
+  @override
+  String get lotNoteBuyHint =>
+      'ಏಕೆ ಖರೀದಿಸುತ್ತಿದ್ದೀರಿ? ಇದು ದಿನಾಂಕದೊಂದಿಗೆ ಷೇರಿನ ಟಿಪ್ಪಣಿಗಳಿಗೆ ಸೇರುತ್ತದೆ.';
+
+  @override
+  String get lotNoteSellHint =>
+      'ಏಕೆ ಮಾರುತ್ತಿದ್ದೀರಿ? ಇದು ದಿನಾಂಕದೊಂದಿಗೆ ಷೇರಿನ ಟಿಪ್ಪಣಿಗಳಿಗೆ ಸೇರುತ್ತದೆ.';
+
+  @override
+  String get lotNoteBought => 'ಖರೀದಿ';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

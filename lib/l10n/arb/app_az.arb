@@ -815,5 +815,9 @@
   "glossTwrYtd": "İlin əvvəlindən (və ya ilk alışınız bu il olubsa, ondan bəri) zamana görə çəkili gəlirlilik: hər gün həmin gün sahib olduğunuz səhmlərin dəyişməsini hesablayır və günlər bir-birinə zəncirlənir – qoyduğunuz və ya çıxardığınız pul gəlirlilik deyil, buna görə onu indekslə müqayisə etmək olar. Altında: eyni dövr üçün seçilmiş indeks.",
   "alertDistance": "Hazırda {price} · {percent} qalıb",
   "watchSortSince": "Əlavə ediləndən bəri dəyişməyə görə",
-  "portfolioTodayMovers": "Bu gün ən çox dəyişənlər:"
+  "portfolioTodayMovers": "Bu gün ən çox dəyişənlər:",
+  "lotNoteAdd": "Qeyd əlavə edin",
+  "lotNoteBuyHint": "Niyə alırsınız? Tarixlə birlikdə səhmin qeydlərinə əlavə olunur.",
+  "lotNoteSellHint": "Niyə satırsınız? Tarixlə birlikdə səhmin qeydlərinə əlavə olunur.",
+  "lotNoteBought": "Alındı"
 }

@@ -815,5 +815,9 @@
   "glossTwrYtd": "Nafoore peesaande e sahaa gila fuɗɗoode hitaande nde (walla gila e soodu maa arandeere, so tawii ko hitaande ndee): ñalnde kala ina limoo waylo aksiyonji ɗi njogi-ɗaa ñalnde ndeen, ñalɗi ɗin ina jokkondiree – kaalis mo naatnataa walla mo ittataa wonaa nafoore, ɗum noon ina waawi fondeede e indeks. E les mum: indeks suɓaandi ndin e oon sahaa gooto.",
   "alertDistance": "Jooni {price} · {percent} heddii",
   "watchSortSince": "E waylo gila nde ɓeyduɗaa ɗum",
-  "portfolioTodayMovers": "Ɓurɓe wayleede hannde:"
+  "portfolioTodayMovers": "Ɓurɓe wayleede hannde:",
+  "lotNoteAdd": "Ɓeydu binndi",
+  "lotNoteBuyHint": "Ko waɗi a soodata ɗum? Ɗum naatat e binndi aksiyoŋ oo, wondude e ñalnde.",
+  "lotNoteSellHint": "Ko waɗi a yeeyata ɗum? Ɗum naatat e binndi aksiyoŋ oo, wondude e ñalnde.",
+  "lotNoteBought": "Soodaama"
 }

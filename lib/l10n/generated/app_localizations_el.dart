@@ -2713,6 +2713,20 @@ class AppLocalizationsEl extends AppLocalizations {
   String get portfolioTodayMovers => 'Μεγαλύτερη κίνηση σήμερα:';
 
   @override
+  String get lotNoteAdd => 'Προσθήκη σημείωσης';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Γιατί αγοράζετε; Καταχωρίζεται στις σημειώσεις της μετοχής με την ημερομηνία.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Γιατί πουλάτε; Καταχωρίζεται στις σημειώσεις της μετοχής με την ημερομηνία.';
+
+  @override
+  String get lotNoteBought => 'Αγοράστηκαν';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

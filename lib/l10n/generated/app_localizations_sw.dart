@@ -2704,6 +2704,20 @@ class AppLocalizationsSw extends AppLocalizations {
   String get portfolioTodayMovers => 'Zilizosogea zaidi leo:';
 
   @override
+  String get lotNoteAdd => 'Ongeza dokezo';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Kwa nini unanunua? Litaingia kwenye madokezo ya hisa, pamoja na tarehe.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Kwa nini unauza? Litaingia kwenye madokezo ya hisa, pamoja na tarehe.';
+
+  @override
+  String get lotNoteBought => 'Umenunua';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

@@ -2700,6 +2700,20 @@ class AppLocalizationsDa extends AppLocalizations {
   String get portfolioTodayMovers => 'Bevægede sig mest i dag:';
 
   @override
+  String get lotNoteAdd => 'Tilføj en note';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Hvorfor køber du? Det kommer med i aktiens noter med datoen.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Hvorfor sælger du? Det kommer med i aktiens noter med datoen.';
+
+  @override
+  String get lotNoteBought => 'Købt';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

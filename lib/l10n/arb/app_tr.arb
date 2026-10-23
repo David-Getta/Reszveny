@@ -815,5 +815,9 @@
   "glossTwrYtd": "Yılbaşından bu yana (veya ilk alımınız bu yıl olduysa o tarihten bu yana) zaman ağırlıklı getiri: her gün, o gün elinizde bulunan hisselerin değişimini hesaba katar ve günler birbirine zincirlenir – yatırdığınız veya çektiğiniz para getiri değildir, bu yüzden bir endeksle karşılaştırılabilir. Altında: aynı dönemde seçilen endeks.",
   "alertDistance": "Şu an {price} · {percent} kaldı",
   "watchSortSince": "Eklendiğinden beri değişime göre",
-  "portfolioTodayMovers": "Bugün en çok hareket edenler:"
+  "portfolioTodayMovers": "Bugün en çok hareket edenler:",
+  "lotNoteAdd": "Not ekle",
+  "lotNoteBuyHint": "Neden alıyorsunuz? Tarihiyle birlikte hissenin notlarına eklenir.",
+  "lotNoteSellHint": "Neden satıyorsunuz? Tarihiyle birlikte hissenin notlarına eklenir.",
+  "lotNoteBought": "Alış"
 }

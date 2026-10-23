@@ -2773,6 +2773,20 @@ class AppLocalizationsSl extends AppLocalizations {
   String get portfolioTodayMovers => 'Danes so se najbolj premaknile:';
 
   @override
+  String get lotNoteAdd => 'Dodaj zapisek';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Zakaj kupujete? Shrani se med zapiske o delnici, z datumom.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Zakaj prodajate? Shrani se med zapiske o delnici, z datumom.';
+
+  @override
+  String get lotNoteBought => 'Kupljeno';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

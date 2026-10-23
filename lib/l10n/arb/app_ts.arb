@@ -815,5 +815,9 @@
   "glossTwrYtd": "Mbuyelo lowu pimiweke hi nkarhi ku sukela eku sunguleni ka lembe (kumbe ku sukela loko u xava ro sungula, loko swi endlekile lembe leri): siku rin'wana ni rin'wana ri hlayela ku cinca ka tixere leti a u ri na tona hi siku rero, kutani masiku ma hlanganisiwa – mali leyi u yi nghenisaka kumbe u yi humesaka a hi mbuyelo, hikwalaho wu nga pimanisiwa na index. Ehansi ka wona: index leyi hlawuriweke eka nkarhi lowu fanaka.",
   "alertDistance": "Sweswi {price} · ku sale {percent}",
   "watchSortSince": "Hi ncinco ku sukela loko yi engeteriwile",
-  "portfolioTodayMovers": "Leswi cincekeke ngopfu namuntlha:"
+  "portfolioTodayMovers": "Leswi cincekeke ngopfu namuntlha:",
+  "lotNoteAdd": "Engetela notsi",
+  "lotNoteBuyHint": "Hikwalaho ka yini u xava? Yi ta nghena eka tinotsi ta xere, swin'we ni siku.",
+  "lotNoteSellHint": "Hikwalaho ka yini u xavisa? Yi ta nghena eka tinotsi ta xere, swin'we ni siku.",
+  "lotNoteBought": "Swi xaviwile"
 }

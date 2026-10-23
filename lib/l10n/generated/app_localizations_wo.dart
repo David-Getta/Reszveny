@@ -2695,6 +2695,20 @@ class AppLocalizationsWo extends AppLocalizations {
   String get portfolioTodayMovers => 'Yi gëna coppiteeg tey:';
 
   @override
+  String get lotNoteAdd => 'Yokk benn notu';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Lu tax ngay jënd? Dina dugg ci notu aksiyoŋ bi, ak bés bi.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Lu tax ngay jaay? Dina dugg ci notu aksiyoŋ bi, ak bés bi.';
+
+  @override
+  String get lotNoteBought => 'Jënde';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

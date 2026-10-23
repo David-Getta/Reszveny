@@ -2702,6 +2702,20 @@ class AppLocalizationsNb extends AppLocalizations {
   String get portfolioTodayMovers => 'Beveget seg mest i dag:';
 
   @override
+  String get lotNoteAdd => 'Legg til et notat';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Hvorfor kjøper du? Det havner i aksjens notater, med dato.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Hvorfor selger du? Det havner i aksjens notater, med dato.';
+
+  @override
+  String get lotNoteBought => 'Kjøpt';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

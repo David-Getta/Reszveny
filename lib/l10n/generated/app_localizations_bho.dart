@@ -2696,6 +2696,20 @@ class AppLocalizationsBho extends AppLocalizations {
   String get portfolioTodayMovers => 'आज सबसे ज्यादा हिलल:';
 
   @override
+  String get lotNoteAdd => 'नोट जोड़ीं';
+
+  @override
+  String get lotNoteBuyHint =>
+      'रउआ काहे खरीदत बानी? ई तारीख के साथे शेयर के नोट में जुड़ जाई।';
+
+  @override
+  String get lotNoteSellHint =>
+      'रउआ काहे बेचत बानी? ई तारीख के साथे शेयर के नोट में जुड़ जाई।';
+
+  @override
+  String get lotNoteBought => 'खरीदल';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

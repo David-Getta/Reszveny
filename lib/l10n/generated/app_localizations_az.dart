@@ -2703,6 +2703,20 @@ class AppLocalizationsAz extends AppLocalizations {
   String get portfolioTodayMovers => 'Bu gün ən çox dəyişənlər:';
 
   @override
+  String get lotNoteAdd => 'Qeyd əlavə edin';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Niyə alırsınız? Tarixlə birlikdə səhmin qeydlərinə əlavə olunur.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Niyə satırsınız? Tarixlə birlikdə səhmin qeydlərinə əlavə olunur.';
+
+  @override
+  String get lotNoteBought => 'Alındı';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

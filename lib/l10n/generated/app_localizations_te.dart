@@ -2708,6 +2708,20 @@ class AppLocalizationsTe extends AppLocalizations {
   String get portfolioTodayMovers => 'ఈ రోజు ఎక్కువగా కదిలినవి:';
 
   @override
+  String get lotNoteAdd => 'గమనికను జోడించండి';
+
+  @override
+  String get lotNoteBuyHint =>
+      'ఎందుకు కొంటున్నారు? ఇది తేదీతో పాటు స్టాక్ గమనికలలో చేరుతుంది.';
+
+  @override
+  String get lotNoteSellHint =>
+      'ఎందుకు అమ్ముతున్నారు? ఇది తేదీతో పాటు స్టాక్ గమనికలలో చేరుతుంది.';
+
+  @override
+  String get lotNoteBought => 'కొన్నారు';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

@@ -2712,6 +2712,20 @@ class AppLocalizationsCa extends AppLocalizations {
   String get portfolioTodayMovers => 'Més moviment avui:';
 
   @override
+  String get lotNoteAdd => 'Afegeix una nota';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Per què compres? S’afegeix a les notes de l’acció, amb la data.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Per què vens? S’afegeix a les notes de l’acció, amb la data.';
+
+  @override
+  String get lotNoteBought => 'Compra';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

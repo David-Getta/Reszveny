@@ -2704,6 +2704,20 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get portfolioTodayMovers => 'زۆرترین جووڵە ئەمڕۆ:';
 
   @override
+  String get lotNoteAdd => 'تێبینییەک زیاد بکە';
+
+  @override
+  String get lotNoteBuyHint =>
+      'بۆچی دەیکڕیت؟ لەگەڵ بەروارەکە دەچێتە ناو تێبینییەکانی پشکەکە.';
+
+  @override
+  String get lotNoteSellHint =>
+      'بۆچی دەیفرۆشیت؟ لەگەڵ بەروارەکە دەچێتە ناو تێبینییەکانی پشکەکە.';
+
+  @override
+  String get lotNoteBought => 'کڕدرا';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

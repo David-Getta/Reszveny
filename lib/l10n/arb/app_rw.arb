@@ -815,5 +815,9 @@
   "glossTwrYtd": "Inyungu ipimwe hashingiwe ku gihe kuva mu ntangiriro z'umwaka (cyangwa kuva waguze bwa mbere, niba byarabaye uyu mwaka): buri munsi ubara ihinduka ry'imigabane wari ufite uwo munsi, maze iminsi igafatanywa nk'urunigi – amafaranga ushyiramo cyangwa ukuramo si inyungu, ni yo mpamvu ishobora kugereranywa na index. Munsi yayo: index yatoranyijwe mu gihe kimwe.",
   "alertDistance": "Ubu {price} · hasigaye {percent}",
   "watchSortSince": "Ukurikije ihinduka kuva wawushyiramo",
-  "portfolioTodayMovers": "Ibyahindutse cyane uyu munsi:"
+  "portfolioTodayMovers": "Ibyahindutse cyane uyu munsi:",
+  "lotNoteAdd": "Ongeraho inyandiko",
+  "lotNoteBuyHint": "Kuki uri kugura? Bizajya mu byo wanditse ku mugabane, hamwe n'itariki.",
+  "lotNoteSellHint": "Kuki uri kugurisha? Bizajya mu byo wanditse ku mugabane, hamwe n'itariki.",
+  "lotNoteBought": "Byaguzwe"
 }

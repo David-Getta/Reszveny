@@ -2696,6 +2696,20 @@ class AppLocalizationsGu extends AppLocalizations {
   String get portfolioTodayMovers => 'આજે સૌથી વધુ વધઘટ:';
 
   @override
+  String get lotNoteAdd => 'નોંધ ઉમેરો';
+
+  @override
+  String get lotNoteBuyHint =>
+      'તમે કેમ ખરીદો છો? તે તારીખ સાથે શેરની નોંધોમાં ઉમેરાશે.';
+
+  @override
+  String get lotNoteSellHint =>
+      'તમે કેમ વેચો છો? તે તારીખ સાથે શેરની નોંધોમાં ઉમેરાશે.';
+
+  @override
+  String get lotNoteBought => 'ખરીદ્યા';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

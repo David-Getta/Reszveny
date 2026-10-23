@@ -2706,6 +2706,20 @@ class AppLocalizationsMs extends AppLocalizations {
   String get portfolioTodayMovers => 'Paling banyak bergerak hari ini:';
 
   @override
+  String get lotNoteAdd => 'Tambah nota';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Mengapa anda membeli? Ia akan dimasukkan ke dalam nota saham, bersama tarikhnya.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Mengapa anda menjual? Ia akan dimasukkan ke dalam nota saham, bersama tarikhnya.';
+
+  @override
+  String get lotNoteBought => 'Dibeli';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

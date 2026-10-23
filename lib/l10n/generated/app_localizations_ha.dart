@@ -2709,6 +2709,20 @@ class AppLocalizationsHa extends AppLocalizations {
   String get portfolioTodayMovers => 'Mafi motsi yau:';
 
   @override
+  String get lotNoteAdd => 'Ƙara bayani';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Me ya sa kake saye? Za a saka shi cikin bayanan hannun jarin, tare da kwanan wata.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Me ya sa kake sayarwa? Za a saka shi cikin bayanan hannun jarin, tare da kwanan wata.';
+
+  @override
+  String get lotNoteBought => 'An saya';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

@@ -2711,6 +2711,20 @@ class AppLocalizationsSo extends AppLocalizations {
   String get portfolioTodayMovers => 'Kuwa ugu isbeddelka badan maanta:';
 
   @override
+  String get lotNoteAdd => 'Ku dar qoraal';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Maxaad u iibsanaysaa? Waxaa lagu darayaa qoraallada saamiga, taariikhda oo la socota.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Maxaad u iibinaysaa? Waxaa lagu darayaa qoraallada saamiga, taariikhda oo la socota.';
+
+  @override
+  String get lotNoteBought => 'La iibsaday';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

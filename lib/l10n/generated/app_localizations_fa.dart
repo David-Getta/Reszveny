@@ -2698,6 +2698,20 @@ class AppLocalizationsFa extends AppLocalizations {
   String get portfolioTodayMovers => 'بیشترین تغییر امروز:';
 
   @override
+  String get lotNoteAdd => 'افزودن یادداشت';
+
+  @override
+  String get lotNoteBuyHint =>
+      'چرا می‌خرید؟ همراه با تاریخ به یادداشت‌های این سهم اضافه می‌شود.';
+
+  @override
+  String get lotNoteSellHint =>
+      'چرا می‌فروشید؟ همراه با تاریخ به یادداشت‌های این سهم اضافه می‌شود.';
+
+  @override
+  String get lotNoteBought => 'خرید';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

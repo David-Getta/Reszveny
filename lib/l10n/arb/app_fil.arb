@@ -815,5 +815,9 @@
   "glossTwrYtd": "Time-weighted na kita mula sa simula ng taon (o mula sa una mong pagbili, kung ngayong taon iyon): binibilang ng bawat araw ang pagbabago ng mga stock na hawak mo noong araw na iyon, at pinagdudugtong-dugtong ang mga araw – hindi kita ang perang idinedeposito o iwini-withdraw mo, kaya maikukumpara ito sa isang index. Sa ibaba nito: ang napiling index sa parehong panahon.",
   "alertDistance": "Ngayon {price} · {percent} pa ang kulang",
   "watchSortSince": "Ayon sa pagbabago mula nang idagdag",
-  "portfolioTodayMovers": "Pinakagumalaw ngayon:"
+  "portfolioTodayMovers": "Pinakagumalaw ngayon:",
+  "lotNoteAdd": "Magdagdag ng tala",
+  "lotNoteBuyHint": "Bakit ka bumibili? Mapupunta ito sa mga tala ng stock, kasama ang petsa.",
+  "lotNoteSellHint": "Bakit ka nagbebenta? Mapupunta ito sa mga tala ng stock, kasama ang petsa.",
+  "lotNoteBought": "Nabili"
 }

@@ -2621,6 +2621,18 @@ class AppLocalizationsJa extends AppLocalizations {
   String get portfolioTodayMovers => '本日の変動上位：';
 
   @override
+  String get lotNoteAdd => 'メモを追加';
+
+  @override
+  String get lotNoteBuyHint => '購入の理由は？日付付きで銘柄のメモに追加されます。';
+
+  @override
+  String get lotNoteSellHint => '売却の理由は？日付付きで銘柄のメモに追加されます。';
+
+  @override
+  String get lotNoteBought => '購入';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

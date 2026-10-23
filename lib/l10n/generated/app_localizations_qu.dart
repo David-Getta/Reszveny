@@ -2716,6 +2716,20 @@ class AppLocalizationsQu extends AppLocalizations {
   String get portfolioTodayMovers => 'Kunan aswan kuyurqan:';
 
   @override
+  String get lotNoteAdd => 'Qillqasqata yapay';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Imaraykutaq rantinki? Accionpa qillqasqankunaman yapakunqa, p\'unchawninwan.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Imaraykutaq rantikunki? Accionpa qillqasqankunaman yapakunqa, p\'unchawninwan.';
+
+  @override
+  String get lotNoteBought => 'Rantisqa';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

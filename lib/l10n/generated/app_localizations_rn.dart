@@ -2711,6 +2711,20 @@ class AppLocalizationsRn extends AppLocalizations {
   String get portfolioTodayMovers => 'Ivyahindutse cane uno musi:';
 
   @override
+  String get lotNoteAdd => 'Ongerako icandiko';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Ni kubera iki uriko uragura? Bizoja mu vyo wanditse ku mugabane, hamwe n\'itarike.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Ni kubera iki uriko uragurisha? Bizoja mu vyo wanditse ku mugabane, hamwe n\'itarike.';
+
+  @override
+  String get lotNoteBought => 'Vyaguzwe';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

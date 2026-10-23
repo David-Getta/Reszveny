@@ -2707,6 +2707,20 @@ class AppLocalizationsHu extends AppLocalizations {
   String get portfolioTodayMovers => 'Ma leginkább mozgott:';
 
   @override
+  String get lotNoteAdd => 'Jegyzet hozzáadása';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Miért veszed? A részvény jegyzeteibe kerül, dátummal.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Miért adod el? A részvény jegyzeteibe kerül, dátummal.';
+
+  @override
+  String get lotNoteBought => 'Vétel';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

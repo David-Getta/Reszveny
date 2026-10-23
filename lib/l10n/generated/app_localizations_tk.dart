@@ -2704,6 +2704,20 @@ class AppLocalizationsTk extends AppLocalizations {
   String get portfolioTodayMovers => 'Şu gün iň köp üýtgänler:';
 
   @override
+  String get lotNoteAdd => 'Bellik goş';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Näme üçin satyn alýarsyňyz? Sene bilen paýnamanyň belliklerine goşulýar.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Näme üçin satýarsyňyz? Sene bilen paýnamanyň belliklerine goşulýar.';
+
+  @override
+  String get lotNoteBought => 'Satyn alyndy';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

@@ -2681,6 +2681,20 @@ class AppLocalizationsKm extends AppLocalizations {
   String get portfolioTodayMovers => 'ប្រែប្រួលខ្លាំងជាងគេថ្ងៃនេះ៖';
 
   @override
+  String get lotNoteAdd => 'បន្ថែមកំណត់ចំណាំ';
+
+  @override
+  String get lotNoteBuyHint =>
+      'ហេតុអ្វីអ្នកទិញ? វានឹងចូលទៅក្នុងកំណត់ចំណាំរបស់ភាគហ៊ុន រួមជាមួយកាលបរិច្ឆេទ។';
+
+  @override
+  String get lotNoteSellHint =>
+      'ហេតុអ្វីអ្នកលក់? វានឹងចូលទៅក្នុងកំណត់ចំណាំរបស់ភាគហ៊ុន រួមជាមួយកាលបរិច្ឆេទ។';
+
+  @override
+  String get lotNoteBought => 'បានទិញ';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

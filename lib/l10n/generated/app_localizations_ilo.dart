@@ -2723,6 +2723,20 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get portfolioTodayMovers => 'Kaaduan ti gimmaraw ita nga aldaw:';
 
   @override
+  String get lotNoteAdd => 'Inayon ti nota';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Apay a gumatangka? Mainayon daytoy kadagiti nota ti stock, agraman ti petsa.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Apay a aglakoka? Mainayon daytoy kadagiti nota ti stock, agraman ti petsa.';
+
+  @override
+  String get lotNoteBought => 'Nagatang';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

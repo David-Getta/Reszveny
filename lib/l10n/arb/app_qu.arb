@@ -815,5 +815,9 @@
   "glossTwrYtd": "Pachawan llasachisqa rendimiento wata qallariymanta (utaq ñawpaq rantisqaykimanta, kay watapi karqan chayqa): sapa p'unchaw chay p'unchaw hap'isqayki accionkunap tikrakuyninta yupan, p'unchawkunataq watasqa hina tinkichisqa – churasqayki utaq hurqusqayki qullqiqa manan rendimientochu, chayrayku huk índicewan tupachiyta atikun. Uranpi: akllasqa índice kikin pachapi.",
   "alertDistance": "Kunan {price} · {percent} puchun",
   "watchSortSince": "Yapasqaykimanta hukyayman hina",
-  "portfolioTodayMovers": "Kunan aswan kuyurqan:"
+  "portfolioTodayMovers": "Kunan aswan kuyurqan:",
+  "lotNoteAdd": "Qillqasqata yapay",
+  "lotNoteBuyHint": "Imaraykutaq rantinki? Accionpa qillqasqankunaman yapakunqa, p'unchawninwan.",
+  "lotNoteSellHint": "Imaraykutaq rantikunki? Accionpa qillqasqankunaman yapakunqa, p'unchawninwan.",
+  "lotNoteBought": "Rantisqa"
 }

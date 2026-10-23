@@ -2699,6 +2699,20 @@ class AppLocalizationsId extends AppLocalizations {
   String get portfolioTodayMovers => 'Paling bergerak hari ini:';
 
   @override
+  String get lotNoteAdd => 'Tambahkan catatan';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Mengapa Anda membeli? Akan ditambahkan ke catatan saham, beserta tanggalnya.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Mengapa Anda menjual? Akan ditambahkan ke catatan saham, beserta tanggalnya.';
+
+  @override
+  String get lotNoteBought => 'Dibeli';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

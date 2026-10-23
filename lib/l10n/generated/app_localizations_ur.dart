@@ -2701,6 +2701,20 @@ class AppLocalizationsUr extends AppLocalizations {
   String get portfolioTodayMovers => 'آج سب سے زیادہ ہلنے والے:';
 
   @override
+  String get lotNoteAdd => 'نوٹ شامل کریں';
+
+  @override
+  String get lotNoteBuyHint =>
+      'آپ کیوں خرید رہے ہیں؟ یہ تاریخ کے ساتھ شیئر کے نوٹس میں شامل ہو جائے گا۔';
+
+  @override
+  String get lotNoteSellHint =>
+      'آپ کیوں بیچ رہے ہیں؟ یہ تاریخ کے ساتھ شیئر کے نوٹس میں شامل ہو جائے گا۔';
+
+  @override
+  String get lotNoteBought => 'خرید شدہ';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

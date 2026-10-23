@@ -2763,6 +2763,20 @@ class AppLocalizationsAr extends AppLocalizations {
   String get portfolioTodayMovers => 'الأكثر تحركًا اليوم:';
 
   @override
+  String get lotNoteAdd => 'إضافة ملاحظة';
+
+  @override
+  String get lotNoteBuyHint =>
+      'لماذا تشتري؟ ستُضاف إلى ملاحظات السهم مع التاريخ.';
+
+  @override
+  String get lotNoteSellHint =>
+      'لماذا تبيع؟ ستُضاف إلى ملاحظات السهم مع التاريخ.';
+
+  @override
+  String get lotNoteBought => 'شراء';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

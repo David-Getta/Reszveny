@@ -2748,6 +2748,20 @@ class AppLocalizationsHr extends AppLocalizations {
   String get portfolioTodayMovers => 'Najveći pomaci danas:';
 
   @override
+  String get lotNoteAdd => 'Dodajte bilješku';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Zašto kupujete? Upisuje se u bilješke o dionici, s datumom.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Zašto prodajete? Upisuje se u bilješke o dionici, s datumom.';
+
+  @override
+  String get lotNoteBought => 'Kupljeno';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

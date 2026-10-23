@@ -815,5 +815,9 @@
   "glossTwrYtd": "Mbakulu ya bo me tala na ntangu katuka na luyantiku ya mvula (to katuka na kusumba na nge ya ntete, kana yo salamaka na mvula yai): konso kilumbu ke tanga nsoba ya ba actions yina nge vandaka na yo na kilumbu yina, mpi ba kilumbu ke kangamaka mosi na nkaka – mbongo yina nge ke tula to ke katula kele ve mbakulu, yo yina bo lenda fwanikisa yo ti indice mosi. Na nsi: indice yina nge solaka na ntangu yina mosi.",
   "alertDistance": "Ntangu yai {price} · {percent} me bikala",
   "watchSortSince": "Na nsoba banda yo yikamaka",
-  "portfolioTodayMovers": "Yina me kukidika mingi unu:"
+  "portfolioTodayMovers": "Yina me kukidika mingi unu:",
+  "lotNoteAdd": "Yika note",
+  "lotNoteBuyHint": "Sambu na nki nge ke sumba? Yo ta kota na ba note ya action, ti kilumbu.",
+  "lotNoteSellHint": "Sambu na nki nge ke teka? Yo ta kota na ba note ya action, ti kilumbu.",
+  "lotNoteBought": "Me sumbama"
 }

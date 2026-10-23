@@ -2692,6 +2692,20 @@ class AppLocalizationsSd extends AppLocalizations {
   String get portfolioTodayMovers => 'اڄ سڀ کان وڌيڪ لاهه چاڙهه:';
 
   @override
+  String get lotNoteAdd => 'نوٽ شامل ڪريو';
+
+  @override
+  String get lotNoteBuyHint =>
+      'توهان ڇو خريد ڪري رهيا آهيو؟ اهو تاريخ سان گڏ شيئر جي نوٽس ۾ شامل ٿيندو.';
+
+  @override
+  String get lotNoteSellHint =>
+      'توهان ڇو وڪڻي رهيا آهيو؟ اهو تاريخ سان گڏ شيئر جي نوٽس ۾ شامل ٿيندو.';
+
+  @override
+  String get lotNoteBought => 'خريد ٿيو';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

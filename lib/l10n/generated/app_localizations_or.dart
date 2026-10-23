@@ -2698,6 +2698,20 @@ class AppLocalizationsOr extends AppLocalizations {
   String get portfolioTodayMovers => 'ଆଜି ସର୍ବାଧିକ ହଲଚଲ:';
 
   @override
+  String get lotNoteAdd => 'ନୋଟ୍ ଯୋଡ଼ନ୍ତୁ';
+
+  @override
+  String get lotNoteBuyHint =>
+      'ଆପଣ କାହିଁକି କିଣୁଛନ୍ତି? ଏହା ତାରିଖ ସହିତ ସେୟାରର ନୋଟ୍‌ରେ ଯୋଡ଼ିହେବ।';
+
+  @override
+  String get lotNoteSellHint =>
+      'ଆପଣ କାହିଁକି ବିକ୍ରି କରୁଛନ୍ତି? ଏହା ତାରିଖ ସହିତ ସେୟାରର ନୋଟ୍‌ରେ ଯୋଡ଼ିହେବ।';
+
+  @override
+  String get lotNoteBought => 'କିଣାଗଲା';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

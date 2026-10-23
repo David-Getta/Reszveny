@@ -2713,6 +2713,20 @@ class AppLocalizationsMl extends AppLocalizations {
   String get portfolioTodayMovers => 'ഇന്ന് ഏറ്റവും കൂടുതൽ ചാഞ്ചാടിയവ:';
 
   @override
+  String get lotNoteAdd => 'കുറിപ്പ് ചേർക്കുക';
+
+  @override
+  String get lotNoteBuyHint =>
+      'എന്തിനാണ് വാങ്ങുന്നത്? തീയതിയോടൊപ്പം ഇത് ഓഹരിയുടെ കുറിപ്പുകളിൽ ചേർക്കും.';
+
+  @override
+  String get lotNoteSellHint =>
+      'എന്തിനാണ് വിൽക്കുന്നത്? തീയതിയോടൊപ്പം ഇത് ഓഹരിയുടെ കുറിപ്പുകളിൽ ചേർക്കും.';
+
+  @override
+  String get lotNoteBought => 'വാങ്ങി';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

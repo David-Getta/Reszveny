@@ -2710,6 +2710,20 @@ class AppLocalizationsSn extends AppLocalizations {
   String get portfolioTodayMovers => 'Zvachinja zvakanyanya nhasi:';
 
   @override
+  String get lotNoteAdd => 'Wedzera chinyorwa';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Uri kutengerei? Zvichaiswa muzvinyorwa zvesheya, pamwe nezuva.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Uri kutengeserei? Zvichaiswa muzvinyorwa zvesheya, pamwe nezuva.';
+
+  @override
+  String get lotNoteBought => 'Zvatengwa';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

@@ -2702,6 +2702,20 @@ class AppLocalizationsTr extends AppLocalizations {
   String get portfolioTodayMovers => 'Bugün en çok hareket edenler:';
 
   @override
+  String get lotNoteAdd => 'Not ekle';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Neden alıyorsunuz? Tarihiyle birlikte hissenin notlarına eklenir.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Neden satıyorsunuz? Tarihiyle birlikte hissenin notlarına eklenir.';
+
+  @override
+  String get lotNoteBought => 'Alış';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

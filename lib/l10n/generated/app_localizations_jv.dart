@@ -2706,6 +2706,20 @@ class AppLocalizationsJv extends AppLocalizations {
   String get portfolioTodayMovers => 'Paling obah dina iki:';
 
   @override
+  String get lotNoteAdd => 'Tambahake cathetan';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Kenapa sampeyan tuku? Bakal mlebu cathetan saham, karo tanggale.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Kenapa sampeyan adol? Bakal mlebu cathetan saham, karo tanggale.';
+
+  @override
+  String get lotNoteBought => 'Dituku';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

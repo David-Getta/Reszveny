@@ -2694,6 +2694,20 @@ class AppLocalizationsMy extends AppLocalizations {
   String get portfolioTodayMovers => 'ယနေ့ အပြောင်းလဲအများဆုံး -';
 
   @override
+  String get lotNoteAdd => 'မှတ်စု ထည့်ရန်';
+
+  @override
+  String get lotNoteBuyHint =>
+      'ဘာကြောင့် ဝယ်တာလဲ။ ရက်စွဲနှင့်အတူ ရှယ်ယာ၏ မှတ်စုများထဲသို့ ထည့်သွင်းပါမည်။';
+
+  @override
+  String get lotNoteSellHint =>
+      'ဘာကြောင့် ရောင်းတာလဲ။ ရက်စွဲနှင့်အတူ ရှယ်ယာ၏ မှတ်စုများထဲသို့ ထည့်သွင်းပါမည်။';
+
+  @override
+  String get lotNoteBought => 'ဝယ်ပြီး';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

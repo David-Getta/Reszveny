@@ -2705,6 +2705,20 @@ class AppLocalizationsUg extends AppLocalizations {
   String get portfolioTodayMovers => 'بۈگۈن ئەڭ كۆپ ئۆزگەرگەنلەر:';
 
   @override
+  String get lotNoteAdd => 'خاتىرە قوشۇش';
+
+  @override
+  String get lotNoteBuyHint =>
+      'نېمىشقا سېتىۋالىسىز؟ چېسلاسى بىلەن پاي چېكىنىڭ خاتىرىلىرىگە قوشۇلىدۇ.';
+
+  @override
+  String get lotNoteSellHint =>
+      'نېمىشقا ساتىسىز؟ چېسلاسى بىلەن پاي چېكىنىڭ خاتىرىلىرىگە قوشۇلىدۇ.';
+
+  @override
+  String get lotNoteBought => 'سېتىۋېلىندى';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

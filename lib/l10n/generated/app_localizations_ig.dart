@@ -2697,6 +2697,20 @@ class AppLocalizationsIg extends AppLocalizations {
   String get portfolioTodayMovers => 'Ndị gbanwere kacha taa:';
 
   @override
+  String get lotNoteAdd => 'Tinye ndetu';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Gịnị mere ị na-azụ ya? Ọ ga-abanye na ndetu stock a, ya na ụbọchị.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Gịnị mere ị na-ere ya? Ọ ga-abanye na ndetu stock a, ya na ụbọchị.';
+
+  @override
+  String get lotNoteBought => 'E zụrụ';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

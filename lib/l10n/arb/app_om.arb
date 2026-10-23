@@ -815,5 +815,9 @@
   "glossTwrYtd": "Bu'aa yeroon madaalame jalqaba waggaa irraa (yookiin bittaa kee isa jalqabaa irraa, yoo bara kana ture): guyyaan tokkoon tokkoon jijjiirama aksiyoonota guyyaa sana qabaatte herrega, guyyoonnis walitti hidhamu – maallaqni ati galchitu ykn baaftu bu'aa miti, kanaaf indeeksii tokko waliin wal bira qabamuu danda'a. Jala isaatti: indeeksii filatame yeroo walfakkaataa keessatti.",
   "alertDistance": "Amma {price} · {percent} hafeera",
   "watchSortSince": "Jijjiirama erga dabalamee as",
-  "portfolioTodayMovers": "Har'a kan baay'ee socho'an:"
+  "portfolioTodayMovers": "Har'a kan baay'ee socho'an:",
+  "lotNoteAdd": "Yaadannoo dabali",
+  "lotNoteBuyHint": "Maaliif bitta? Guyyaa wajjin yaadannoo aksiyoonaa keessatti galmaa'a.",
+  "lotNoteSellHint": "Maaliif gurgurta? Guyyaa wajjin yaadannoo aksiyoonaa keessatti galmaa'a.",
+  "lotNoteBought": "Bitame"
 }

@@ -815,5 +815,9 @@
   "glossTwrYtd": "Tydgeweegde opbrengs sedert die begin van die jaar (of sedert jou eerste aankoop, as dit vanjaar was): elke dag tel die verandering van die aandele wat jy daardie dag gehou het, en die dae word aan mekaar geskakel – geld wat jy instort of onttrek, is nie opbrengs nie, dus kan dit met 'n indeks vergelyk word. Daaronder: die gekose indeks oor dieselfde tydperk.",
   "alertDistance": "Tans {price} · nog {percent} te gaan",
   "watchSortSince": "Volgens verandering sedert byvoeging",
-  "portfolioTodayMovers": "Het vandag die meeste beweeg:"
+  "portfolioTodayMovers": "Het vandag die meeste beweeg:",
+  "lotNoteAdd": "Voeg 'n nota by",
+  "lotNoteBuyHint": "Hoekom koop jy? Dit gaan met die datum in die aandeel se notas.",
+  "lotNoteSellHint": "Hoekom verkoop jy? Dit gaan met die datum in die aandeel se notas.",
+  "lotNoteBought": "Gekoop"
 }

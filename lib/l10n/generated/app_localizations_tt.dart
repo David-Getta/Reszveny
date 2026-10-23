@@ -2699,6 +2699,20 @@ class AppLocalizationsTt extends AppLocalizations {
   String get portfolioTodayMovers => 'Бүген иң күп үзгәргәннәр:';
 
   @override
+  String get lotNoteAdd => 'Язма өстәү';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Ни өчен сатып аласыз? Ул датасы белән акциянең язмаларына өстәлә.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Ни өчен сатасыз? Ул датасы белән акциянең язмаларына өстәлә.';
+
+  @override
+  String get lotNoteBought => 'Сатып алынды';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

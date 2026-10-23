@@ -2700,6 +2700,20 @@ class AppLocalizationsKab extends AppLocalizations {
   String get portfolioTodayMovers => 'Wid ibedlen akk ass-a:';
 
   @override
+  String get lotNoteAdd => 'Rnu tazmilt';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Acimi i tettaɣeḍ? Ad tettwarnu ɣer tezmilin n uksyun, s uzemz.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Acimi i tettzenzeḍ? Ad tettwarnu ɣer tezmilin n uksyun, s uzemz.';
+
+  @override
+  String get lotNoteBought => 'Yettwaɣ';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

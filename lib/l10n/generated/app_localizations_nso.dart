@@ -2721,6 +2721,20 @@ class AppLocalizationsNso extends AppLocalizations {
   String get portfolioTodayMovers => 'Tše di šuthilego kudu lehono:';
 
   @override
+  String get lotNoteAdd => 'Oketša ntlha';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Ke ka baka la eng o reka? E tla tsena dintlheng tša šere, gotee le letšatšikgwedi.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Ke ka baka la eng o rekiša? E tla tsena dintlheng tša šere, gotee le letšatšikgwedi.';
+
+  @override
+  String get lotNoteBought => 'E rekilwe';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

@@ -2708,6 +2708,20 @@ class AppLocalizationsEs extends AppLocalizations {
   String get portfolioTodayMovers => 'Mayor movimiento hoy:';
 
   @override
+  String get lotNoteAdd => 'Añadir una nota';
+
+  @override
+  String get lotNoteBuyHint =>
+      '¿Por qué compras? Se añade a las notas de la acción, con la fecha.';
+
+  @override
+  String get lotNoteSellHint =>
+      '¿Por qué vendes? Se añade a las notas de la acción, con la fecha.';
+
+  @override
+  String get lotNoteBought => 'Compra';
+
+  @override
   String get portfolioGoalSet => 'Fijar un objetivo';
 
   @override

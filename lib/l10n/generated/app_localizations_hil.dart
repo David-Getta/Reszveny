@@ -2719,6 +2719,20 @@ class AppLocalizationsHil extends AppLocalizations {
   String get portfolioTodayMovers => 'Pinakanaghulag subong:';
 
   @override
+  String get lotNoteAdd => 'Idugang ang nota';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Ngaa nagabakal ka? Mapakadto ini sa mga nota sang stock, upod ang petsa.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Ngaa nagabaligya ka? Mapakadto ini sa mga nota sang stock, upod ang petsa.';
+
+  @override
+  String get lotNoteBought => 'Ginbakal';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

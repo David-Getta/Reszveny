@@ -2702,6 +2702,20 @@ class AppLocalizationsMn extends AppLocalizations {
   String get portfolioTodayMovers => 'Өнөөдөр хамгийн их хөдөлсөн:';
 
   @override
+  String get lotNoteAdd => 'Тэмдэглэл нэмэх';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Яагаад худалдаж авч байна вэ? Огноотойгоо хамт хувьцааны тэмдэглэлд нэмэгдэнэ.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Яагаад зарж байна вэ? Огноотойгоо хамт хувьцааны тэмдэглэлд нэмэгдэнэ.';
+
+  @override
+  String get lotNoteBought => 'Авсан';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

@@ -815,5 +815,9 @@
   "glossTwrYtd": "Rendimiento ojepesáva ára rupi ary ñepyrũ guive (térã ne jejogua peteĩha guive, oikóramo ko ary): ára ha ára ojepapa umi aksiõ rerekóva upe árape iñambue, ha umi ára oñembojoaju – pirapire remoĩva térã reguenohẽva ndaha'éi rendimiento, upévare ikatu ojeporombojoja peteĩ índice ndive. Iguýpe: índice reiporavóva upe período javeve.",
   "alertDistance": "Koʼág̃a {price} · opyta {percent}",
   "watchSortSince": "Ñemoambue rupi rembojuaju guive",
-  "portfolioTodayMovers": "Oñemonguʼevéva ko árape:"
+  "portfolioTodayMovers": "Oñemonguʼevéva ko árape:",
+  "lotNoteAdd": "Embojoapy peteĩ jehaipy",
+  "lotNoteBuyHint": "¿Mbaʼérepa rejogua? Oike acción jehaipyrekuérape, arange ndive.",
+  "lotNoteSellHint": "¿Mbaʼérepa reñemu? Oike acción jehaipyrekuérape, arange ndive.",
+  "lotNoteBought": "Jejogua"
 }

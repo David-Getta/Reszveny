@@ -2771,6 +2771,20 @@ class AppLocalizationsSk extends AppLocalizations {
   String get portfolioTodayMovers => 'Dnes sa najviac pohli:';
 
   @override
+  String get lotNoteAdd => 'Pridať poznámku';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Prečo kupujete? Uloží sa do poznámok k akcii aj s dátumom.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Prečo predávate? Uloží sa do poznámok k akcii aj s dátumom.';
+
+  @override
+  String get lotNoteBought => 'Kúpené';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

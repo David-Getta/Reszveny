@@ -2726,6 +2726,20 @@ class AppLocalizationsGl extends AppLocalizations {
   String get portfolioTodayMovers => 'Máis movemento hoxe:';
 
   @override
+  String get lotNoteAdd => 'Engadir unha nota';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Por que compras? Engádese ás notas da acción, coa data.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Por que vendes? Engádese ás notas da acción, coa data.';
+
+  @override
+  String get lotNoteBought => 'Comprado';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

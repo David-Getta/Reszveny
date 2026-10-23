@@ -2703,6 +2703,20 @@ class AppLocalizationsFi extends AppLocalizations {
   String get portfolioTodayMovers => 'Liikkuivat tänään eniten:';
 
   @override
+  String get lotNoteAdd => 'Lisää muistiinpano';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Miksi ostat? Tallentuu osakkeen muistiinpanoihin päivämäärän kanssa.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Miksi myyt? Tallentuu osakkeen muistiinpanoihin päivämäärän kanssa.';
+
+  @override
+  String get lotNoteBought => 'Ostettu';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

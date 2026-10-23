@@ -815,5 +815,9 @@
   "glossTwrYtd": "Časovo vážený výnos od začiatku roka (alebo od vášho prvého nákupu, ak bol tento rok): každý deň započíta zmenu akcií, ktoré ste v ten deň držali, a dni sa na seba reťazia – peniaze, ktoré vložíte alebo vyberiete, nie sú výnos, takže ho možno porovnať s indexom. Pod ním: zvolený index za rovnaké obdobie.",
   "alertDistance": "Teraz {price} · zostáva {percent}",
   "watchSortSince": "Podľa zmeny od pridania",
-  "portfolioTodayMovers": "Dnes sa najviac pohli:"
+  "portfolioTodayMovers": "Dnes sa najviac pohli:",
+  "lotNoteAdd": "Pridať poznámku",
+  "lotNoteBuyHint": "Prečo kupujete? Uloží sa do poznámok k akcii aj s dátumom.",
+  "lotNoteSellHint": "Prečo predávate? Uloží sa do poznámok k akcii aj s dátumom.",
+  "lotNoteBought": "Kúpené"
 }

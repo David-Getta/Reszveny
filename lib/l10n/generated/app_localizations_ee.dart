@@ -2708,6 +2708,20 @@ class AppLocalizationsEe extends AppLocalizations {
   String get portfolioTodayMovers => 'Siwo trɔ wu egbe:';
 
   @override
+  String get lotNoteAdd => 'Tsɔ nuŋlɔɖi aɖe kpe ɖe eŋu';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Nukatae nèle eƒlem? Woaŋlɔe ɖe akpa la ƒe nuŋlɔɖiwo me kple ŋkeke la.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Nukatae nèle edzram? Woaŋlɔe ɖe akpa la ƒe nuŋlɔɖiwo me kple ŋkeke la.';
+
+  @override
+  String get lotNoteBought => 'Woƒlee';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

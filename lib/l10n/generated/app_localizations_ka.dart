@@ -2702,6 +2702,20 @@ class AppLocalizationsKa extends AppLocalizations {
   String get portfolioTodayMovers => 'დღეს ყველაზე მეტად შეიცვალა:';
 
   @override
+  String get lotNoteAdd => 'ჩანაწერის დამატება';
+
+  @override
+  String get lotNoteBuyHint =>
+      'რატომ ყიდულობთ? თარიღთან ერთად აქციის ჩანაწერებში დაემატება.';
+
+  @override
+  String get lotNoteSellHint =>
+      'რატომ ყიდით? თარიღთან ერთად აქციის ჩანაწერებში დაემატება.';
+
+  @override
+  String get lotNoteBought => 'შეძენილია';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

@@ -2713,6 +2713,20 @@ class AppLocalizationsLua extends AppLocalizations {
   String get portfolioTodayMovers => 'Bidi bishintuluke bikole lelu:';
 
   @override
+  String get lotNoteAdd => 'Sakidila mufundu';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Bua tshinyi udi usumba? Bidi bifundibua mu mifundu ya action pamue ne dituku.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Bua tshinyi udi usumbisha? Bidi bifundibua mu mifundu ya action pamue ne dituku.';
+
+  @override
+  String get lotNoteBought => 'Musumba';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

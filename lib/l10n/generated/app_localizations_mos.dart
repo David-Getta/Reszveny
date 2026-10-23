@@ -2687,6 +2687,20 @@ class AppLocalizationsMos extends AppLocalizations {
   String get portfolioTodayMovers => 'Sẽn toeem wʋsg rũnda:';
 
   @override
+  String get lotNoteAdd => 'Paas gʋlsgo';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Bõe yĩng tɩ f raada? A na n kẽe aksiõ gʋlsgã pʋgẽ ne a daarã.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Bõe yĩng tɩ f koosda? A na n kẽe aksiõ gʋlsgã pʋgẽ ne a daarã.';
+
+  @override
+  String get lotNoteBought => 'B raa';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

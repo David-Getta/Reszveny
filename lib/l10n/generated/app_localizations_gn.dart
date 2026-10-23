@@ -2708,6 +2708,20 @@ class AppLocalizationsGn extends AppLocalizations {
   String get portfolioTodayMovers => 'Oñemonguʼevéva ko árape:';
 
   @override
+  String get lotNoteAdd => 'Embojoapy peteĩ jehaipy';
+
+  @override
+  String get lotNoteBuyHint =>
+      '¿Mbaʼérepa rejogua? Oike acción jehaipyrekuérape, arange ndive.';
+
+  @override
+  String get lotNoteSellHint =>
+      '¿Mbaʼérepa reñemu? Oike acción jehaipyrekuérape, arange ndive.';
+
+  @override
+  String get lotNoteBought => 'Jejogua';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

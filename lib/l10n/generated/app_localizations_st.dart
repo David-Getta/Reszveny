@@ -2719,6 +2719,20 @@ class AppLocalizationsSt extends AppLocalizations {
   String get portfolioTodayMovers => 'Tse fetohileng haholo kajeno:';
 
   @override
+  String get lotNoteAdd => 'Eketsa ntlha';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Hobaneng o reka? E tla kena dintlheng tsa shere, hammoho le letsatsi.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Hobaneng o rekisa? E tla kena dintlheng tsa shere, hammoho le letsatsi.';
+
+  @override
+  String get lotNoteBought => 'E rekilwe';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

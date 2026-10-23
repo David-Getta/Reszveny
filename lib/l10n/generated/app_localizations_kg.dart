@@ -2712,6 +2712,20 @@ class AppLocalizationsKg extends AppLocalizations {
   String get portfolioTodayMovers => 'Yina me kukidika mingi unu:';
 
   @override
+  String get lotNoteAdd => 'Yika note';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Sambu na nki nge ke sumba? Yo ta kota na ba note ya action, ti kilumbu.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Sambu na nki nge ke teka? Yo ta kota na ba note ya action, ti kilumbu.';
+
+  @override
+  String get lotNoteBought => 'Me sumbama';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

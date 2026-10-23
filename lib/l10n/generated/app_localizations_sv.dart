@@ -2703,6 +2703,20 @@ class AppLocalizationsSv extends AppLocalizations {
   String get portfolioTodayMovers => 'Rörde sig mest i dag:';
 
   @override
+  String get lotNoteAdd => 'Lägg till en anteckning';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Varför köper du? Det hamnar i aktiens anteckningar, med datum.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Varför säljer du? Det hamnar i aktiens anteckningar, med datum.';
+
+  @override
+  String get lotNoteBought => 'Köpt';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

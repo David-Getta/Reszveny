@@ -815,5 +815,9 @@
   "glossTwrYtd": "Rannman peze selon tan depi kòmansman ane a (oswa depi premye acha ou, si se te ane sa a): chak jou konte chanjman aksyon ou te genyen jou sa a, epi jou yo mare youn ak lòt – lajan ou mete oswa ou retire se pa rannman, kidonk li ka konpare ak yon endèks. Anba l: endèks ou chwazi a pou menm peryòd la.",
   "alertDistance": "Kounye a {price} · rete {percent}",
   "watchSortSince": "Pa varyasyon depi ou te ajoute l",
-  "portfolioTodayMovers": "Sa ki bouje plis jodi a:"
+  "portfolioTodayMovers": "Sa ki bouje plis jodi a:",
+  "lotNoteAdd": "Ajoute yon nòt",
+  "lotNoteBuyHint": "Poukisa w ap achte? L ap ale nan nòt aksyon an, ak dat la.",
+  "lotNoteSellHint": "Poukisa w ap vann? L ap ale nan nòt aksyon an, ak dat la.",
+  "lotNoteBought": "Achte"
 }

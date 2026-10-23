@@ -2699,6 +2699,20 @@ class AppLocalizationsPa extends AppLocalizations {
   String get portfolioTodayMovers => 'ਅੱਜ ਸਭ ਤੋਂ ਵੱਧ ਬਦਲਾਅ:';
 
   @override
+  String get lotNoteAdd => 'ਨੋਟ ਸ਼ਾਮਲ ਕਰੋ';
+
+  @override
+  String get lotNoteBuyHint =>
+      'ਤੁਸੀਂ ਕਿਉਂ ਖਰੀਦ ਰਹੇ ਹੋ? ਇਹ ਮਿਤੀ ਸਮੇਤ ਸ਼ੇਅਰ ਦੇ ਨੋਟਾਂ ਵਿੱਚ ਜੁੜ ਜਾਵੇਗਾ।';
+
+  @override
+  String get lotNoteSellHint =>
+      'ਤੁਸੀਂ ਕਿਉਂ ਵੇਚ ਰਹੇ ਹੋ? ਇਹ ਮਿਤੀ ਸਮੇਤ ਸ਼ੇਅਰ ਦੇ ਨੋਟਾਂ ਵਿੱਚ ਜੁੜ ਜਾਵੇਗਾ।';
+
+  @override
+  String get lotNoteBought => 'ਖਰੀਦੇ';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

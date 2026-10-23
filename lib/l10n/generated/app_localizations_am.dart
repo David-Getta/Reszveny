@@ -2668,6 +2668,18 @@ class AppLocalizationsAm extends AppLocalizations {
   String get portfolioTodayMovers => 'ዛሬ ከፍተኛ ለውጥ ያሳዩ፦';
 
   @override
+  String get lotNoteAdd => 'ማስታወሻ ያክሉ';
+
+  @override
+  String get lotNoteBuyHint => 'ለምን ይገዛሉ? ከቀኑ ጋር ወደ አክሲዮኑ ማስታወሻዎች ይገባል።';
+
+  @override
+  String get lotNoteSellHint => 'ለምን ይሸጣሉ? ከቀኑ ጋር ወደ አክሲዮኑ ማስታወሻዎች ይገባል።';
+
+  @override
+  String get lotNoteBought => 'ተገዝቷል';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

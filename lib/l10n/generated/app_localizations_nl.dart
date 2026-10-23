@@ -2708,6 +2708,20 @@ class AppLocalizationsNl extends AppLocalizations {
   String get portfolioTodayMovers => 'Vandaag het meest bewogen:';
 
   @override
+  String get lotNoteAdd => 'Notitie toevoegen';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Waarom koop je? Dit komt met de datum in de notities bij het aandeel.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Waarom verkoop je? Dit komt met de datum in de notities bij het aandeel.';
+
+  @override
+  String get lotNoteBought => 'Gekocht';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

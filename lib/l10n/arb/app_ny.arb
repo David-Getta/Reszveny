@@ -815,5 +815,9 @@
   "glossTwrYtd": "Phindu loyezedwa malinga ndi nthawi kuyambira kuchiyambi kwa chaka (kapena kuyambira pomwe munagula koyamba, ngati zinali chaka chino): tsiku lililonse limawerengera kusintha kwa masheya omwe munali nawo tsiku limenelo, ndipo masiku amalumikizidwa pamodzi – ndalama zomwe mumayika kapena kutulutsa si phindu, choncho lingayerekezedwe ndi index. Pansi pake: index yomwe yasankhidwa nthawi yomweyo.",
   "alertDistance": "Pano {price} · kwatsala {percent}",
   "watchSortSince": "Potsatira kusintha kuyambira pamene inawonjezedwa",
-  "portfolioTodayMovers": "Zasintha kwambiri lero:"
+  "portfolioTodayMovers": "Zasintha kwambiri lero:",
+  "lotNoteAdd": "Onjezani cholemba",
+  "lotNoteBuyHint": "Chifukwa chiyani mukugula? Chidzalowa m'zolemba za sheya, pamodzi ndi tsiku.",
+  "lotNoteSellHint": "Chifukwa chiyani mukugulitsa? Chidzalowa m'zolemba za sheya, pamodzi ndi tsiku.",
+  "lotNoteBought": "Zagulidwa"
 }

@@ -2724,6 +2724,20 @@ class AppLocalizationsTs extends AppLocalizations {
   String get portfolioTodayMovers => 'Leswi cincekeke ngopfu namuntlha:';
 
   @override
+  String get lotNoteAdd => 'Engetela notsi';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Hikwalaho ka yini u xava? Yi ta nghena eka tinotsi ta xere, swin\'we ni siku.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Hikwalaho ka yini u xavisa? Yi ta nghena eka tinotsi ta xere, swin\'we ni siku.';
+
+  @override
+  String get lotNoteBought => 'Swi xaviwile';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

@@ -2713,6 +2713,20 @@ class AppLocalizationsTa extends AppLocalizations {
   String get portfolioTodayMovers => 'இன்று அதிகம் மாறியவை:';
 
   @override
+  String get lotNoteAdd => 'குறிப்பைச் சேர்';
+
+  @override
+  String get lotNoteBuyHint =>
+      'ஏன் வாங்குகிறீர்கள்? இது தேதியுடன் பங்கின் குறிப்புகளில் சேர்க்கப்படும்.';
+
+  @override
+  String get lotNoteSellHint =>
+      'ஏன் விற்கிறீர்கள்? இது தேதியுடன் பங்கின் குறிப்புகளில் சேர்க்கப்படும்.';
+
+  @override
+  String get lotNoteBought => 'வாங்கியது';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

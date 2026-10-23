@@ -815,5 +815,9 @@
   "glossTwrYtd": "Uru a tụrụ dịka oge si dị site na mmalite afọ (ma ọ bụ site n'ịzụ ahịa mbụ gị, ọ bụrụ na ọ bụ n'afọ a): ụbọchị ọ bụla na-agụ mgbanwe nke òkè ị jidere n'ụbọchị ahụ, a na-ejikọkwa ụbọchị ndị ahụ ọnụ – ego ị tinyere ma ọ bụ wepụ abụghị uru, ya mere enwere ike iji ya tụnyere ndeksi. N'okpuru ya: ndeksi a họọrọ n'otu oge ahụ.",
   "alertDistance": "Ugbu a {price} · {percent} fọdụrụ",
   "watchSortSince": "Site na mgbanwe kemgbe etinyere ya",
-  "portfolioTodayMovers": "Ndị gbanwere kacha taa:"
+  "portfolioTodayMovers": "Ndị gbanwere kacha taa:",
+  "lotNoteAdd": "Tinye ndetu",
+  "lotNoteBuyHint": "Gịnị mere ị na-azụ ya? Ọ ga-abanye na ndetu stock a, ya na ụbọchị.",
+  "lotNoteSellHint": "Gịnị mere ị na-ere ya? Ọ ga-abanye na ndetu stock a, ya na ụbọchị.",
+  "lotNoteBought": "E zụrụ"
 }

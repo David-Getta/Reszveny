@@ -2695,6 +2695,20 @@ class AppLocalizationsVi extends AppLocalizations {
   String get portfolioTodayMovers => 'Biến động mạnh nhất hôm nay:';
 
   @override
+  String get lotNoteAdd => 'Thêm ghi chú';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Vì sao bạn mua? Nội dung sẽ được thêm vào ghi chú của cổ phiếu, kèm ngày.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Vì sao bạn bán? Nội dung sẽ được thêm vào ghi chú của cổ phiếu, kèm ngày.';
+
+  @override
+  String get lotNoteBought => 'Đã mua';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

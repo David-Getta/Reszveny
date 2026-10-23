@@ -2701,6 +2701,20 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get portfolioTodayMovers => 'Wetin move pass today:';
 
   @override
+  String get lotNoteAdd => 'Add note';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Why you dey buy? E go enter di stock notes, with di date.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Why you dey sell? E go enter di stock notes, with di date.';
+
+  @override
+  String get lotNoteBought => 'Bought';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

@@ -2670,6 +2670,20 @@ class AppLocalizationsTh extends AppLocalizations {
   String get portfolioTodayMovers => 'เปลี่ยนแปลงมากที่สุดวันนี้:';
 
   @override
+  String get lotNoteAdd => 'เพิ่มบันทึก';
+
+  @override
+  String get lotNoteBuyHint =>
+      'ซื้อเพราะอะไร จะเพิ่มลงในบันทึกของหุ้นพร้อมวันที่';
+
+  @override
+  String get lotNoteSellHint =>
+      'ขายเพราะอะไร จะเพิ่มลงในบันทึกของหุ้นพร้อมวันที่';
+
+  @override
+  String get lotNoteBought => 'ซื้อ';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

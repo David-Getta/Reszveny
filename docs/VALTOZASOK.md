@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.217)
+# Változásjegyzék (0.2.130 → 0.2.218)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -81,6 +81,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **Tranzakciós díj (jutalék)**: a vételhez és az eladáshoz megadható; a bekerülési értékbe, a realizált nyereségbe
   (az adó-CSV-be is) és az éves hozamba beszámít; a bróker-exportok díj-oszlopa (IBKR „Comm/Fee”) importáláskor
   bekerül; szinkronban, mentésben és a CSV-ben is.
+- **Jegyzet a tranzakcióhoz** (befektetési napló): a vétel/eladás dialógusban „Jegyzet hozzáadása” – a „miért veszed /
+  adod el” a részvény jegyzeteinek végére kerül, dátummal, darabszámmal és árral; szinkronban, az AI-elemzés is látja.
 - **Előnézet rögzítés előtt** a vétel/eladás dialógusban: vételnél az új átlagár („Új átlagár: 150,00 USD (most
   200,00 USD)”, abban a nézetben, ahonnan nyílt), eladásnál a FIFO szerint ezen az eladáson realizált eredmény a
   jutalékkal (zölden / pirosan) – a felaprózásokkal és a számlákkal is úgy, ahogy rögzítés után lesz.

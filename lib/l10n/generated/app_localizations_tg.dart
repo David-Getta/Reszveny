@@ -2704,6 +2704,20 @@ class AppLocalizationsTg extends AppLocalizations {
   String get portfolioTodayMovers => 'Имрӯз бештар тағйир ёфтанд:';
 
   @override
+  String get lotNoteAdd => 'Илова кардани қайд';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Чаро мехаред? Бо сана ба қайдҳои саҳмия илова мешавад.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Чаро мефурӯшед? Бо сана ба қайдҳои саҳмия илова мешавад.';
+
+  @override
+  String get lotNoteBought => 'Харида шуд';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

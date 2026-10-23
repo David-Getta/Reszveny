@@ -815,5 +815,9 @@
   "glossTwrYtd": "Rendement pondéré par le temps depuis le début de l'année (ou depuis votre premier achat, s'il date de cette année) : chaque jour compte la variation des actions que vous déteniez ce jour-là, et les jours sont enchaînés – l'argent que vous versez ou retirez n'est pas du rendement, il peut donc être comparé à un indice. En dessous : l'indice choisi sur la même période.",
   "alertDistance": "Actuellement {price} · encore {percent}",
   "watchSortSince": "Par variation depuis l’ajout",
-  "portfolioTodayMovers": "Plus fortes variations du jour :"
+  "portfolioTodayMovers": "Plus fortes variations du jour :",
+  "lotNoteAdd": "Ajouter une note",
+  "lotNoteBuyHint": "Pourquoi achetez-vous ? Elle s’ajoute aux notes de l’action, avec la date.",
+  "lotNoteSellHint": "Pourquoi vendez-vous ? Elle s’ajoute aux notes de l’action, avec la date.",
+  "lotNoteBought": "Acheté"
 }

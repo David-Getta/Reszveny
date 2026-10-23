@@ -2691,6 +2691,20 @@ class AppLocalizationsBo extends AppLocalizations {
   String get portfolioTodayMovers => 'དེ་རིང་འགྱུར་བ་ཆེ་ཤོས:';
 
   @override
+  String get lotNoteAdd => 'ཟིན་ཐོ་སྣོན།';
+
+  @override
+  String get lotNoteBuyHint =>
+      'ཁྱེད་ཀྱིས་ཅིའི་ཕྱིར་ཉོ་གི་ཡིན་ནམ། འདི་ཚེས་གྲངས་དང་བཅས་ཧུར་ཁག་གི་ཟིན་ཐོའི་ནང་འཇུག་གི་རེད།';
+
+  @override
+  String get lotNoteSellHint =>
+      'ཁྱེད་ཀྱིས་ཅིའི་ཕྱིར་འཚོང་གི་ཡིན་ནམ། འདི་ཚེས་གྲངས་དང་བཅས་ཧུར་ཁག་གི་ཟིན་ཐོའི་ནང་འཇུག་གི་རེད།';
+
+  @override
+  String get lotNoteBought => 'ཉོས་ཟིན';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

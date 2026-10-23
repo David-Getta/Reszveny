@@ -2714,6 +2714,20 @@ class AppLocalizationsCeb extends AppLocalizations {
   String get portfolioTodayMovers => 'Labing milihok karon:';
 
   @override
+  String get lotNoteAdd => 'Idugang ang nota';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Nganong mopalit ka? Ma-apil kini sa mga nota sa stock, uban ang petsa.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Nganong mobaligya ka? Ma-apil kini sa mga nota sa stock, uban ang petsa.';
+
+  @override
+  String get lotNoteBought => 'Gipalit';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

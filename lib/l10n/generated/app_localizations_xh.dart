@@ -2715,6 +2715,20 @@ class AppLocalizationsXh extends AppLocalizations {
   String get portfolioTodayMovers => 'Ezishukume kakhulu namhlanje:';
 
   @override
+  String get lotNoteAdd => 'Yongeza inqaku';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Kutheni usithenga? Kuya kongezwa kumanqaku esabelo, kunye nomhla.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Kutheni usithengisa? Kuya kongezwa kumanqaku esabelo, kunye nomhla.';
+
+  @override
+  String get lotNoteBought => 'Kuthengiwe';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

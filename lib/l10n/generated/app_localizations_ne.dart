@@ -2700,6 +2700,20 @@ class AppLocalizationsNe extends AppLocalizations {
   String get portfolioTodayMovers => 'आज सबैभन्दा बढी उतारचढाव:';
 
   @override
+  String get lotNoteAdd => 'टिपोट थप्नुहोस्';
+
+  @override
+  String get lotNoteBuyHint =>
+      'किन किन्दै हुनुहुन्छ? यो मितिसहित सेयरका टिपोटहरूमा थपिन्छ।';
+
+  @override
+  String get lotNoteSellHint =>
+      'किन बेच्दै हुनुहुन्छ? यो मितिसहित सेयरका टिपोटहरूमा थपिन्छ।';
+
+  @override
+  String get lotNoteBought => 'किनियो';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

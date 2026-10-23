@@ -2699,6 +2699,20 @@ class AppLocalizationsEn extends AppLocalizations {
   String get portfolioTodayMovers => 'Moved most today:';
 
   @override
+  String get lotNoteAdd => 'Add a note';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Why are you buying? It goes into the stock\'s notes, with the date.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Why are you selling? It goes into the stock\'s notes, with the date.';
+
+  @override
+  String get lotNoteBought => 'Bought';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

@@ -2703,6 +2703,20 @@ class AppLocalizationsKi extends AppLocalizations {
   String get portfolioTodayMovers => 'Iria ciagarũrũka mũno ũmũthĩ:';
 
   @override
+  String get lotNoteAdd => 'Ongerera ĩandĩko';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Nĩ kĩ gĩgũtũma ũgũre? Rĩkũongererwo maandĩko-inĩ ma hisa, hamwe na mũthenya.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Nĩ kĩ gĩgũtũma wendie? Rĩkũongererwo maandĩko-inĩ ma hisa, hamwe na mũthenya.';
+
+  @override
+  String get lotNoteBought => 'Yagũrwo';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

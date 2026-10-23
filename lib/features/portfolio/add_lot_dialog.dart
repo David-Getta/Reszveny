@@ -106,6 +106,10 @@ class _AddLotDialogState extends State<_AddLotDialog> {
 
   /// A díj (jutalék) mezője; amíg egyik tranzakciónak sincs díja, egy gomb mutatja meg.
   final _fee = TextEditingController();
+
+  /// Opcionális jegyzet (miért veszi / adja el): a részvény jegyzeteinek végére kerül, dátummal.
+  final _note = TextEditingController();
+  bool _showNote = false;
   String? _feeError;
   late bool _showFee = AppServices.of(context).portfolio.lots.any((l) => l.fee > 0);
 
@@ -194,6 +198,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     _quantity.dispose();
     _price.dispose();
     _fee.dispose();
+    _note.dispose();
     super.dispose();
   }
 
@@ -223,6 +228,15 @@ class _AddLotDialogState extends State<_AddLotDialog> {
       account: widget.sell ? _sellFrom : (_showAccount ? _account : null),
       fee: fee!,
     );
+    // A jegyzet a tranzakció adataival a részvény jegyzeteinek végére (befektetési napló).
+    if (_note.text.trim() case final text when text.isNotEmpty && mounted) {
+      final notes = AppServices.of(context).notes;
+      await notes.append(
+        widget.symbol,
+        '${fmt.date(_date)} · ${widget.sell ? l10n.portfolioSold : l10n.lotNoteBought} '
+        '${fmt.quantity(q)} × ${fmt.money(p, widget.currency)}: $text',
+      );
+    }
     if (mounted) Navigator.of(context).pop(true);
   }
 
@@ -234,6 +248,8 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     const numberKeyboard = TextInputType.numberWithOptions(decimal: true);
     return AlertDialog(
+      // A nem kötelező mezőkkel (számla, díj, jegyzet) kis képernyőn is görgethető.
+      scrollable: true,
       title: Text(widget.sell ? l10n.portfolioSellTitle(widget.symbol) : l10n.portfolioAddTitle(widget.symbol)),
       content: SizedBox(
         width: 360,
@@ -324,8 +340,25 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                 onSubmitted: (_) => _submit(),
               ),
             ],
+            if (_showNote) ...[
+              const SizedBox(height: 12),
+              TextField(
+                key: const ValueKey('lot-note'),
+                controller: _note,
+                autofocus: true,
+                minLines: 1,
+                maxLines: 4,
+                maxLength: 500,
+                textCapitalization: TextCapitalization.sentences,
+                decoration: InputDecoration(
+                  labelText: l10n.lotNoteAdd,
+                  hintText: widget.sell ? l10n.lotNoteSellHint : l10n.lotNoteBuyHint,
+                  hintMaxLines: 2,
+                ),
+              ),
+            ],
             // A rejtett, nem kötelező mezők gombjai egy sorban.
-            if ((!widget.sell && !_showAccount) || !_showFee)
+            if ((!widget.sell && !_showAccount) || !_showFee || !_showNote)
               Wrap(
                 spacing: 16,
                 children: [
@@ -344,6 +377,14 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                       style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: EdgeInsets.zero),
                       icon: const Icon(Icons.request_quote_outlined, size: 18),
                       label: Text(l10n.portfolioFeeAdd),
+                    ),
+                  if (!_showNote)
+                    TextButton.icon(
+                      key: const ValueKey('lot-note-add'),
+                      onPressed: () => setState(() => _showNote = true),
+                      style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: EdgeInsets.zero),
+                      icon: const Icon(Icons.edit_note_rounded, size: 18),
+                      label: Text(l10n.lotNoteAdd),
                     ),
                 ],
               ),

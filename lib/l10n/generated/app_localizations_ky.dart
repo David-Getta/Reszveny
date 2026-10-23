@@ -2704,6 +2704,20 @@ class AppLocalizationsKy extends AppLocalizations {
   String get portfolioTodayMovers => 'Бүгүн эң көп өзгөргөндөр:';
 
   @override
+  String get lotNoteAdd => 'Жазуу кошуу';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Эмне үчүн сатып алып жатасыз? Ал күнү менен акциянын жазууларына кошулат.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Эмне үчүн сатып жатасыз? Ал күнү менен акциянын жазууларына кошулат.';
+
+  @override
+  String get lotNoteBought => 'Сатып алынды';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

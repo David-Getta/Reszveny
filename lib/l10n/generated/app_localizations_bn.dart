@@ -2700,6 +2700,20 @@ class AppLocalizationsBn extends AppLocalizations {
   String get portfolioTodayMovers => 'আজ সবচেয়ে বেশি নড়েছে:';
 
   @override
+  String get lotNoteAdd => 'নোট যোগ করুন';
+
+  @override
+  String get lotNoteBuyHint =>
+      'কেন কিনছেন? এটি তারিখসহ শেয়ারটির নোটে যোগ হবে।';
+
+  @override
+  String get lotNoteSellHint =>
+      'কেন বিক্রি করছেন? এটি তারিখসহ শেয়ারটির নোটে যোগ হবে।';
+
+  @override
+  String get lotNoteBought => 'কেনা';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

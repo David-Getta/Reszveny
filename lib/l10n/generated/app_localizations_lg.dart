@@ -2718,6 +2718,20 @@ class AppLocalizationsLg extends AppLocalizations {
   String get portfolioTodayMovers => 'Ebisinze okukyuka leero:';
 
   @override
+  String get lotNoteAdd => 'Yongerako ekiwandiiko';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Lwaki ogula? Kijja kuyingira mu biwandiiko by\'omugabo, n\'olunaku.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Lwaki otunda? Kijja kuyingira mu biwandiiko by\'omugabo, n\'olunaku.';
+
+  @override
+  String get lotNoteBought => 'Wagula';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

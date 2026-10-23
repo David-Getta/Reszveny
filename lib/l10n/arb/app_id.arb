@@ -815,5 +815,9 @@
   "glossTwrYtd": "Imbal hasil tertimbang waktu sejak awal tahun (atau sejak pembelian pertama Anda, jika itu tahun ini): setiap hari menghitung perubahan saham yang Anda miliki pada hari itu, lalu hari-hari tersebut dirangkai – uang yang Anda setor atau tarik bukan imbal hasil, sehingga dapat dibandingkan dengan indeks. Di bawahnya: indeks yang dipilih pada periode yang sama.",
   "alertDistance": "Saat ini {price} · {percent} lagi",
   "watchSortSince": "Menurut perubahan sejak ditambahkan",
-  "portfolioTodayMovers": "Paling bergerak hari ini:"
+  "portfolioTodayMovers": "Paling bergerak hari ini:",
+  "lotNoteAdd": "Tambahkan catatan",
+  "lotNoteBuyHint": "Mengapa Anda membeli? Akan ditambahkan ke catatan saham, beserta tanggalnya.",
+  "lotNoteSellHint": "Mengapa Anda menjual? Akan ditambahkan ke catatan saham, beserta tanggalnya.",
+  "lotNoteBought": "Dibeli"
 }

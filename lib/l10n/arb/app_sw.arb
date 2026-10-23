@@ -815,5 +815,9 @@
   "glossTwrYtd": "Faida iliyopimwa kwa muda tangu mwanzo wa mwaka (au tangu ununuzi wako wa kwanza, ikiwa ulikuwa mwaka huu): kila siku huhesabu mabadiliko ya hisa ulizokuwa nazo siku hiyo, na siku huunganishwa pamoja kama mnyororo – pesa unazoweka au kutoa si faida, hivyo inaweza kulinganishwa na fahirisi. Chini yake: fahirisi iliyochaguliwa katika kipindi hicho hicho.",
   "alertDistance": "Sasa {price} · imebaki {percent}",
   "watchSortSince": "Kwa badiliko tangu ilipoongezwa",
-  "portfolioTodayMovers": "Zilizosogea zaidi leo:"
+  "portfolioTodayMovers": "Zilizosogea zaidi leo:",
+  "lotNoteAdd": "Ongeza dokezo",
+  "lotNoteBuyHint": "Kwa nini unanunua? Litaingia kwenye madokezo ya hisa, pamoja na tarehe.",
+  "lotNoteSellHint": "Kwa nini unauza? Litaingia kwenye madokezo ya hisa, pamoja na tarehe.",
+  "lotNoteBought": "Umenunua"
 }

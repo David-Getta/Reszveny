@@ -2663,6 +2663,20 @@ class AppLocalizationsTi extends AppLocalizations {
   String get portfolioTodayMovers => 'ሎሚ ዝበዝሐ ዝተንቀሳቐሱ፦';
 
   @override
+  String get lotNoteAdd => 'ማስታወሻ ወስኽ';
+
+  @override
+  String get lotNoteBuyHint =>
+      'ስለምንታይ ትገዝኡ ኣለኹም? ምስ ዕለቱ ናብ ማስታወሻታት እቲ ኣክሲዮን ይኣቱ።';
+
+  @override
+  String get lotNoteSellHint =>
+      'ስለምንታይ ትሸጡ ኣለኹም? ምስ ዕለቱ ናብ ማስታወሻታት እቲ ኣክሲዮን ይኣቱ።';
+
+  @override
+  String get lotNoteBought => 'ተዓዲጉ';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

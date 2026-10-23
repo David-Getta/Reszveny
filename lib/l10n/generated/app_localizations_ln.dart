@@ -2714,6 +2714,20 @@ class AppLocalizationsLn extends AppLocalizations {
   String get portfolioTodayMovers => 'Oyo eningani mingi lɛlɔ:';
 
   @override
+  String get lotNoteAdd => 'Bakisa note';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Mpo na nini ozali kosomba? Ekokɔta na ba note ya action, elongo na mokɔlɔ.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Mpo na nini ozali koteka? Ekokɔta na ba note ya action, elongo na mokɔlɔ.';
+
+  @override
+  String get lotNoteBought => 'Esombami';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

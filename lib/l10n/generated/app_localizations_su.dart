@@ -2706,6 +2706,20 @@ class AppLocalizationsSu extends AppLocalizations {
   String get portfolioTodayMovers => 'Paling gerak poé ieu:';
 
   @override
+  String get lotNoteAdd => 'Tambihkeun catetan';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Naha anjeun mésér? Bakal lebet kana catetan saham, sareng tanggalna.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Naha anjeun ngajual? Bakal lebet kana catetan saham, sareng tanggalna.';
+
+  @override
+  String get lotNoteBought => 'Dibeuli';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

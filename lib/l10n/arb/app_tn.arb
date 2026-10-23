@@ -815,5 +815,9 @@
   "glossTwrYtd": "Poelo e e lekantsweng ka nako go tloga kwa tshimologong ya ngwaga (kgotsa go tloga theko ya gago ya ntlha, fa e ne e le ngwaga ono): letsatsi lengwe le lengwe le bala phetogo ya dishere tse o neng o na le tsone ka letsatsi leo, mme malatsi a golaganngwa – madi a o a tsenyang kgotsa o a ntshang ga se poelo, ka jalo e ka bapisiwa le index. Fa tlase ga yone: index e e tlhophilweng mo nakong e e tshwanang.",
   "alertDistance": "Jaanong {price} · go setse {percent}",
   "watchSortSince": "Ka phetogo go tloga fa e tsentswe",
-  "portfolioTodayMovers": "Tse di fetogileng thata gompieno:"
+  "portfolioTodayMovers": "Tse di fetogileng thata gompieno:",
+  "lotNoteAdd": "Oketsa ntlha",
+  "lotNoteBuyHint": "Goreng o reka? E tla tsena mo dintlheng tsa shere, mmogo le letlha.",
+  "lotNoteSellHint": "Goreng o rekisa? E tla tsena mo dintlheng tsa shere, mmogo le letlha.",
+  "lotNoteBought": "E rekilwe"
 }

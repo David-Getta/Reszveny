@@ -2712,6 +2712,20 @@ class AppLocalizationsNy extends AppLocalizations {
   String get portfolioTodayMovers => 'Zasintha kwambiri lero:';
 
   @override
+  String get lotNoteAdd => 'Onjezani cholemba';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Chifukwa chiyani mukugula? Chidzalowa m\'zolemba za sheya, pamodzi ndi tsiku.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Chifukwa chiyani mukugulitsa? Chidzalowa m\'zolemba za sheya, pamodzi ndi tsiku.';
+
+  @override
+  String get lotNoteBought => 'Zagulidwa';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

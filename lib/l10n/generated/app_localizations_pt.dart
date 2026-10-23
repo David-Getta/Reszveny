@@ -2708,6 +2708,20 @@ class AppLocalizationsPt extends AppLocalizations {
   String get portfolioTodayMovers => 'Maiores variações hoje:';
 
   @override
+  String get lotNoteAdd => 'Adicionar nota';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Porquê comprar? Fica registado nas notas da ação, com a data.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Porquê vender? Fica registado nas notas da ação, com a data.';
+
+  @override
+  String get lotNoteBought => 'Compra';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

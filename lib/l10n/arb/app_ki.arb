@@ -815,5 +815,9 @@
   "glossTwrYtd": "Uumithio ũthimĩtwo na ihinda kuuma kĩambĩrĩria kĩa mwaka (kana kuuma ũgũri waku wa mbere, angĩkorwo warĩ mwaka ũyũ): o mũthenya ũtaraga ũgarũrũku wa hisa iria warĩ nacio mũthenya ũcio, na mĩthenya ĩkanyitanio ta mũnyororo – mbeeca iria ũikagia kana ũrutaga ti uumithio, nĩ ũndũ ũcio no ũgerekanio na index. Rungu rwaguo: index ĩrĩa ĩthuurĩtwo ihinda o rĩu.",
   "alertDistance": "Rĩu {price} · {percent} itigaire",
   "watchSortSince": "Kũringana na ũgarũrũku kuuma rĩrĩa yongereirwo",
-  "portfolioTodayMovers": "Iria ciagarũrũka mũno ũmũthĩ:"
+  "portfolioTodayMovers": "Iria ciagarũrũka mũno ũmũthĩ:",
+  "lotNoteAdd": "Ongerera ĩandĩko",
+  "lotNoteBuyHint": "Nĩ kĩ gĩgũtũma ũgũre? Rĩkũongererwo maandĩko-inĩ ma hisa, hamwe na mũthenya.",
+  "lotNoteSellHint": "Nĩ kĩ gĩgũtũma wendie? Rĩkũongererwo maandĩko-inĩ ma hisa, hamwe na mũthenya.",
+  "lotNoteBought": "Yagũrwo"
 }

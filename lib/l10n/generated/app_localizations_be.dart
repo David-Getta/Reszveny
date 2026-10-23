@@ -2771,6 +2771,20 @@ class AppLocalizationsBe extends AppLocalizations {
   String get portfolioTodayMovers => 'Найбольш змяніліся сёння:';
 
   @override
+  String get lotNoteAdd => 'Дадаць нататку';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Чаму вы купляеце? Гэта трапіць у нататкі да акцыі разам з датай.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Чаму вы прадаеце? Гэта трапіць у нататкі да акцыі разам з датай.';
+
+  @override
+  String get lotNoteBought => 'Куплена';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

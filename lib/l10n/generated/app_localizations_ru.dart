@@ -2773,6 +2773,20 @@ class AppLocalizationsRu extends AppLocalizations {
   String get portfolioTodayMovers => 'Больше всего изменились сегодня:';
 
   @override
+  String get lotNoteAdd => 'Добавить заметку';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Почему вы покупаете? Попадёт в заметки к акции, с датой.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Почему вы продаёте? Попадёт в заметки к акции, с датой.';
+
+  @override
+  String get lotNoteBought => 'Куплено';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

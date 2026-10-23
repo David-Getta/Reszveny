@@ -2699,6 +2699,20 @@ class AppLocalizationsSi extends AppLocalizations {
   String get portfolioTodayMovers => 'අද වැඩියෙන්ම වෙනස් වූ:';
 
   @override
+  String get lotNoteAdd => 'සටහනක් එක් කරන්න';
+
+  @override
+  String get lotNoteBuyHint =>
+      'ඔබ මිලදී ගන්නේ ඇයි? එය දිනය සමඟ කොටසේ සටහන්වලට එක් වේ.';
+
+  @override
+  String get lotNoteSellHint =>
+      'ඔබ විකුණන්නේ ඇයි? එය දිනය සමඟ කොටසේ සටහන්වලට එක් වේ.';
+
+  @override
+  String get lotNoteBought => 'මිලදී ගන්නා ලදී';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

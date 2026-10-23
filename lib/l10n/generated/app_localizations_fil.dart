@@ -2710,6 +2710,20 @@ class AppLocalizationsFil extends AppLocalizations {
   String get portfolioTodayMovers => 'Pinakagumalaw ngayon:';
 
   @override
+  String get lotNoteAdd => 'Magdagdag ng tala';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Bakit ka bumibili? Mapupunta ito sa mga tala ng stock, kasama ang petsa.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Bakit ka nagbebenta? Mapupunta ito sa mga tala ng stock, kasama ang petsa.';
+
+  @override
+  String get lotNoteBought => 'Nabili';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

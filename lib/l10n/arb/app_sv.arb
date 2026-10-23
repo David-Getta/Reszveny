@@ -815,5 +815,9 @@
   "glossTwrYtd": "Tidsviktad avkastning sedan årets början (eller sedan ditt första köp, om det var i år): varje dag räknar förändringen i de aktier du ägde den dagen, och dagarna kedjas ihop – pengar du sätter in eller tar ut är inte avkastning, så den kan jämföras med ett index. Under: det valda indexet under samma period.",
   "alertDistance": "Nu {price} · {percent} kvar",
   "watchSortSince": "Efter förändring sedan tillägg",
-  "portfolioTodayMovers": "Rörde sig mest i dag:"
+  "portfolioTodayMovers": "Rörde sig mest i dag:",
+  "lotNoteAdd": "Lägg till en anteckning",
+  "lotNoteBuyHint": "Varför köper du? Det hamnar i aktiens anteckningar, med datum.",
+  "lotNoteSellHint": "Varför säljer du? Det hamnar i aktiens anteckningar, med datum.",
+  "lotNoteBought": "Köpt"
 }

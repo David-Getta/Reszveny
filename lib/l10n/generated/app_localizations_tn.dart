@@ -2721,6 +2721,20 @@ class AppLocalizationsTn extends AppLocalizations {
   String get portfolioTodayMovers => 'Tse di fetogileng thata gompieno:';
 
   @override
+  String get lotNoteAdd => 'Oketsa ntlha';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Goreng o reka? E tla tsena mo dintlheng tsa shere, mmogo le letlha.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Goreng o rekisa? E tla tsena mo dintlheng tsa shere, mmogo le letlha.';
+
+  @override
+  String get lotNoteBought => 'E rekilwe';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

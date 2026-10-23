@@ -4633,6 +4633,30 @@ abstract class AppLocalizations {
   /// **'Moved most today:'**
   String get portfolioTodayMovers;
 
+  /// Buy/sell dialog: button and field label for an optional note on the transaction (it is appended to the stock's own notes).
+  ///
+  /// In en, this message translates to:
+  /// **'Add a note'**
+  String get lotNoteAdd;
+
+  /// Hint in the optional note field of the buy dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Why are you buying? It goes into the stock\'s notes, with the date.'**
+  String get lotNoteBuyHint;
+
+  /// Hint in the optional note field of the sell dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Why are you selling? It goes into the stock\'s notes, with the date.'**
+  String get lotNoteSellHint;
+
+  /// Word at the start of a note entry written from the buy dialog, e.g. "Oct 23, 2026 · Bought 10 × 172.50 USD: …" (the sell entry uses "Sold").
+  ///
+  /// In en, this message translates to:
+  /// **'Bought'**
+  String get lotNoteBought;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

@@ -2744,6 +2744,20 @@ class AppLocalizationsLv extends AppLocalizations {
   String get portfolioTodayMovers => 'Šodien visvairāk mainījās:';
 
   @override
+  String get lotNoteAdd => 'Pievienot piezīmi';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Kāpēc jūs pērkat? Tiks pievienots akcijas piezīmēm ar datumu.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Kāpēc jūs pārdodat? Tiks pievienots akcijas piezīmēm ar datumu.';
+
+  @override
+  String get lotNoteBought => 'Nopirkts';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

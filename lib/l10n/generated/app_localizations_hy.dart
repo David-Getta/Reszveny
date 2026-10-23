@@ -2711,6 +2711,20 @@ class AppLocalizationsHy extends AppLocalizations {
   String get portfolioTodayMovers => 'Այսօր ամենաշատը փոխվել են՝';
 
   @override
+  String get lotNoteAdd => 'Ավելացնել նշում';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Ինչո՞ւ եք գնում։ Այն ամսաթվով կավելանա բաժնետոմսի նշումներին։';
+
+  @override
+  String get lotNoteSellHint =>
+      'Ինչո՞ւ եք վաճառում։ Այն ամսաթվով կավելանա բաժնետոմսի նշումներին։';
+
+  @override
+  String get lotNoteBought => 'Գնված';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

@@ -799,9 +799,17 @@ void main() {
     await tester.pump();
     // Az eladás előtt látszik, mennyi lesz a realizált eredmény (FIFO).
     expect(find.text('Realized on this sale (FIFO): +200.00 USD'), findsOneWidget);
+    // Az indok a részvény jegyzeteinek végére kerül, a tranzakció adataival.
+    await s.notes.set('AAPL', 'Long-term hold.');
+    await tester.tap(find.byKey(const ValueKey('lot-note-add')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('lot-note')), 'Taking some profit.');
     await tester.tap(find.byKey(const ValueKey('lot-submit')));
     await tester.pumpAndSettle();
     expect(s.portfolio.positionOf('AAPL')!.quantity, 6);
+    final note = s.notes.of('AAPL')!.text;
+    expect(note, startsWith('Long-term hold.\n\n'));
+    expect(note, endsWith(' · Sold 4 × 250.00 USD: Taking some profit.'));
     expect(find.textContaining('Sold 4'), findsOneWidget);
     expect(find.text('Realized: +200.00 USD'), findsOneWidget);
 

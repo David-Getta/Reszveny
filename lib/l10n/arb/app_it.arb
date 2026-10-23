@@ -815,5 +815,9 @@
   "glossTwrYtd": "Rendimento ponderato nel tempo dall'inizio dell'anno (o dal tuo primo acquisto, se è avvenuto quest'anno): ogni giorno conta la variazione delle azioni che possedevi quel giorno, e i giorni vengono concatenati – il denaro che versi o prelevi non è rendimento, quindi si può confrontare con un indice. Sotto: l'indice scelto nello stesso periodo.",
   "alertDistance": "Ora {price} · ancora {percent}",
   "watchSortSince": "Per variazione dall’aggiunta",
-  "portfolioTodayMovers": "Maggiori variazioni oggi:"
+  "portfolioTodayMovers": "Maggiori variazioni oggi:",
+  "lotNoteAdd": "Aggiungi una nota",
+  "lotNoteBuyHint": "Perché compri? Finisce nelle note dell’azione, con la data.",
+  "lotNoteSellHint": "Perché vendi? Finisce nelle note dell’azione, con la data.",
+  "lotNoteBought": "Acquisto"
 }

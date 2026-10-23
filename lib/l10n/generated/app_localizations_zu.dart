@@ -2714,6 +2714,20 @@ class AppLocalizationsZu extends AppLocalizations {
   String get portfolioTodayMovers => 'Ezinyakaze kakhulu namuhla:';
 
   @override
+  String get lotNoteAdd => 'Engeza inothi';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Ulithengelani? Kuzongezwa kumanothi esheya, kanye nosuku.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Ulithengiselani? Kuzongezwa kumanothi esheya, kanye nosuku.';
+
+  @override
+  String get lotNoteBought => 'Kuthengiwe';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

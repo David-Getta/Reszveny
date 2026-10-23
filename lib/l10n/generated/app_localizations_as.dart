@@ -2700,6 +2700,20 @@ class AppLocalizationsAs extends AppLocalizations {
   String get portfolioTodayMovers => 'আজি আটাইতকৈ বেছি লৰচৰ:';
 
   @override
+  String get lotNoteAdd => 'টোকা যোগ কৰক';
+
+  @override
+  String get lotNoteBuyHint =>
+      'আপুনি কিয় কিনিছে? ই তাৰিখসহ শ্বেয়াৰটোৰ টোকাসমূহত যোগ হ\'ব।';
+
+  @override
+  String get lotNoteSellHint =>
+      'আপুনি কিয় বিক্ৰী কৰিছে? ই তাৰিখসহ শ্বেয়াৰটোৰ টোকাসমূহত যোগ হ\'ব।';
+
+  @override
+  String get lotNoteBought => 'ক্ৰয়';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

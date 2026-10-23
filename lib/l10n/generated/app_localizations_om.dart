@@ -2714,6 +2714,20 @@ class AppLocalizationsOm extends AppLocalizations {
   String get portfolioTodayMovers => 'Har\'a kan baay\'ee socho\'an:';
 
   @override
+  String get lotNoteAdd => 'Yaadannoo dabali';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Maaliif bitta? Guyyaa wajjin yaadannoo aksiyoonaa keessatti galmaa\'a.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Maaliif gurgurta? Guyyaa wajjin yaadannoo aksiyoonaa keessatti galmaa\'a.';
+
+  @override
+  String get lotNoteBought => 'Bitame';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

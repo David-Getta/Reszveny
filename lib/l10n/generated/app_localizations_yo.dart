@@ -2700,6 +2700,20 @@ class AppLocalizationsYo extends AppLocalizations {
   String get portfolioTodayMovers => 'Àwọn tó yí padà jù lónìí:';
 
   @override
+  String get lotNoteAdd => 'Fi àkọsílẹ̀ kún';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Kí ló dé tí o fi ń rà á? A ó fi kún àwọn àkọsílẹ̀ ìpín náà, pẹ̀lú ọjọ́.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Kí ló dé tí o fi ń tà á? A ó fi kún àwọn àkọsílẹ̀ ìpín náà, pẹ̀lú ọjọ́.';
+
+  @override
+  String get lotNoteBought => 'Rírà';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

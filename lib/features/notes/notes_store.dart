@@ -46,6 +46,12 @@ class NotesStore extends ChangeNotifier {
 
   StockNote? of(String symbol) => _notes[symbol.toUpperCase()];
 
+  /// Egy bejegyzés a jegyzet végére (üres sorral elválasztva), pl. a vétel indoka.
+  Future<void> append(String symbol, String entry) {
+    final existing = of(symbol)?.text.trimRight() ?? '';
+    return set(symbol, existing.isEmpty ? entry : '$existing\n\n$entry');
+  }
+
   /// Mentés (üres szövegnél törlés).
   Future<void> set(String symbol, String text) async {
     final s = symbol.toUpperCase();

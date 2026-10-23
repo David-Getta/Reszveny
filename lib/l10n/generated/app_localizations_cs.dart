@@ -2766,6 +2766,20 @@ class AppLocalizationsCs extends AppLocalizations {
   String get portfolioTodayMovers => 'Dnes se nejvíc pohnuly:';
 
   @override
+  String get lotNoteAdd => 'Přidat poznámku';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Proč kupujete? Uloží se do poznámek k akcii i s datem.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Proč prodáváte? Uloží se do poznámek k akcii i s datem.';
+
+  @override
+  String get lotNoteBought => 'Koupeno';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

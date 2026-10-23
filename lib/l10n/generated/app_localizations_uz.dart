@@ -2706,6 +2706,20 @@ class AppLocalizationsUz extends AppLocalizations {
   String get portfolioTodayMovers => 'Bugun eng koʻp oʻzgarganlar:';
 
   @override
+  String get lotNoteAdd => 'Qayd qoʻshish';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Nega sotib olyapsiz? Sana bilan aksiya qaydlariga qoʻshiladi.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Nega sotyapsiz? Sana bilan aksiya qaydlariga qoʻshiladi.';
+
+  @override
+  String get lotNoteBought => 'Sotib olindi';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

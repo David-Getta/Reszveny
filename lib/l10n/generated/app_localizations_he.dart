@@ -2694,6 +2694,20 @@ class AppLocalizationsHe extends AppLocalizations {
   String get portfolioTodayMovers => 'הכי זזו היום:';
 
   @override
+  String get lotNoteAdd => 'הוספת הערה';
+
+  @override
+  String get lotNoteBuyHint =>
+      'למה קונים? זה יירשם בהערות של המניה, עם התאריך.';
+
+  @override
+  String get lotNoteSellHint =>
+      'למה מוכרים? זה יירשם בהערות של המניה, עם התאריך.';
+
+  @override
+  String get lotNoteBought => 'נקנו';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

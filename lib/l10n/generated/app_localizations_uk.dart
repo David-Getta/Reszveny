@@ -2774,6 +2774,20 @@ class AppLocalizationsUk extends AppLocalizations {
   String get portfolioTodayMovers => 'Найбільше змінилися сьогодні:';
 
   @override
+  String get lotNoteAdd => 'Додати нотатку';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Чому ви купуєте? Потрапить у нотатки до акції, з датою.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Чому ви продаєте? Потрапить у нотатки до акції, з датою.';
+
+  @override
+  String get lotNoteBought => 'Куплено';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

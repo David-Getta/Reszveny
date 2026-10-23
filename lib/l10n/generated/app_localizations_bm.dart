@@ -2700,6 +2700,20 @@ class AppLocalizationsBm extends AppLocalizations {
   String get portfolioTodayMovers => 'Minnu yɛlɛmana kosɛbɛ bi:';
 
   @override
+  String get lotNoteAdd => 'Sɛbɛnni dɔ fara a kan';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Mun na i b\'a san? A bɛ don aksiyɔn ka sɛbɛnniw na ni don ye.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Mun na i b\'a feere? A bɛ don aksiyɔn ka sɛbɛnniw na ni don ye.';
+
+  @override
+  String get lotNoteBought => 'Sannen';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

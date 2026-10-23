@@ -2722,6 +2722,20 @@ class AppLocalizationsMk extends AppLocalizations {
   String get portfolioTodayMovers => 'Најмногу се поместија денес:';
 
   @override
+  String get lotNoteAdd => 'Додај белешка';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Зошто купувате? Се запишува во белешките за акцијата, со датумот.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Зошто продавате? Се запишува во белешките за акцијата, со датумот.';
+
+  @override
+  String get lotNoteBought => 'Купено';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

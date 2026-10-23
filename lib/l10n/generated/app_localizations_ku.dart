@@ -2705,6 +2705,20 @@ class AppLocalizationsKu extends AppLocalizations {
   String get portfolioTodayMovers => 'Îro herî zêde guherîn:';
 
   @override
+  String get lotNoteAdd => 'Notekê zêde bike';
+
+  @override
+  String get lotNoteBuyHint =>
+      'Tu çima dikirî? Bi dîrokê re dikeve notên pişkê.';
+
+  @override
+  String get lotNoteSellHint =>
+      'Tu çima difiroşî? Bi dîrokê re dikeve notên pişkê.';
+
+  @override
+  String get lotNoteBought => 'Hate kirîn';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

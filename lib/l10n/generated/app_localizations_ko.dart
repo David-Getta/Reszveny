@@ -2631,6 +2631,18 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioTodayMovers => '오늘 가장 많이 움직인 종목:';
 
   @override
+  String get lotNoteAdd => '메모 추가';
+
+  @override
+  String get lotNoteBuyHint => '왜 매수하나요? 날짜와 함께 종목 메모에 추가됩니다.';
+
+  @override
+  String get lotNoteSellHint => '왜 매도하나요? 날짜와 함께 종목 메모에 추가됩니다.';
+
+  @override
+  String get lotNoteBought => '매수';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

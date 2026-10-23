@@ -2700,6 +2700,20 @@ class AppLocalizationsMr extends AppLocalizations {
   String get portfolioTodayMovers => 'आज सर्वाधिक हललेले:';
 
   @override
+  String get lotNoteAdd => 'नोंद जोडा';
+
+  @override
+  String get lotNoteBuyHint =>
+      'तुम्ही का खरेदी करत आहात? ही नोंद तारखेसह शेअरच्या नोंदींमध्ये जोडली जाईल.';
+
+  @override
+  String get lotNoteSellHint =>
+      'तुम्ही का विकत आहात? ही नोंद तारखेसह शेअरच्या नोंदींमध्ये जोडली जाईल.';
+
+  @override
+  String get lotNoteBought => 'खरेदी केले';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override
