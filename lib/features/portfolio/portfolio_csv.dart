@@ -381,8 +381,16 @@ final _currency = RegExp(r'^[A-Z]{3}$');
 final _isin = RegExp(r'^[A-Z]{2}[A-Z0-9]{9}[0-9]$');
 final _nonNumeric = RegExp(r'[^0-9,.\-]');
 
-/// Szám egy cellából, a pénznemjelek, szóközök és egyéb jelek nélkül.
-double? _decimal(String s) => parseDecimal(s.replaceAll(_nonNumeric, ''));
+/// Egy cella számjegyei, előjellel: a pénznemjelek, szóközök és egyéb jelek nélkül; a
+/// könyvelési zárójel („(10)”, „($1,234.00)”) és a tipográfiai mínusz (U+2212) negatív.
+String _numeric(String s) {
+  final t = s.trim().replaceAll('\u2212', '-');
+  final digits = t.replaceAll(_nonNumeric, '');
+  return t.startsWith('(') && t.endsWith(')') && !digits.startsWith('-') ? '-$digits' : digits;
+}
+
+/// Szám egy cellából (lásd [_numeric]).
+double? _decimal(String s) => parseDecimal(_numeric(s));
 
 /// Egy CSV-sor mezői: idézőjelek között az elválasztó és a `""` is lehet a mezőben.
 List<String> splitCsvLine(String line, String sep) {
@@ -433,8 +441,13 @@ final _dividendWords = RegExp(
   unicode: true,
 );
 
-/// Forrásadó-sor (Schwab „NRA Tax Adj”, Fidelity „Foreign Tax Paid”, Robinhood „DTAX”).
-final _taxWords = RegExp(r'(^|[^\p{L}])(tax|dtax)($|[^\p{L}])', unicode: true);
+/// Forrásadó-sor (Schwab „NRA Tax Adj”, Fidelity „Foreign Tax Paid”, Robinhood „DTAX”,
+/// Revolut „Dividend Tax”, „Osztalékadó”, „Forrásadó”, „Quellensteuer”, „Dividendensteuer”).
+/// Az „adó” csak összetételben vagy önállóan (az „eladó” nem adó).
+final _taxWords = RegExp(
+  r'(^|[^\p{L}])(tax|dtax|withholding|adó)($|[^\p{L}])|(osztalék|forrás)adó|steuer',
+  unicode: true,
+);
 
 /// Az amerikai brókerek exportjának oszlopai (Schwab, Fidelity, Robinhood): ezekben a
 /// perjeles dátum hónappal kezdődik (`10/15/2024`).
@@ -443,7 +456,7 @@ const _usHeaders = {'feescomm', 'rundate', 'activitydate', 'transcode'};
 /// Nem teljesült megbízás állapota (Scalable Capital „Cancelled”, „Rejected”).
 final _voidStatus = RegExp(r'cancel|reject|fail|storniert|abgelehnt|törölt|elutasít');
 
-final _slashDate = RegExp(r'^(\d{1,2})/(\d{1,2})/\d{4}');
+final _slashDate = RegExp(r'^(\d{1,2})/(\d{1,2})/(\d{4}|\d{2})(?!\d)');
 
 /// Hónappal kezdődnek-e a perjeles dátumok: ha valamelyikben a második tag 12 fölött
 /// van, igen; ha az első, nem; ha egyik sem dönt, a [hint].
@@ -534,26 +547,29 @@ Map<String, int>? _header(List<String> cells) {
 }
 
 /// Dátum a gyakori alakokban: `2024-03-14…`, `2024.03.14.`, `20240314`, `14/03/2024`, `14.03.2024`,
-/// `14-03-2024`
-/// ([monthFirst] esetén a perjeles `03/14/2024`).
+/// `14-03-2024`, kétjegyű évvel is (`14.03.24`, `3/14/25`)
+/// ([monthFirst] esetén a perjeles `03/14/2024`). A nem létező nap (`2025-02-30`) nem dátum.
 DateTime? _date(String raw, {bool monthFirst = false}) {
   final s = raw.trim();
+  DateTime? valid(int y, int m, int d) {
+    final t = DateTime(y, m, d);
+    return t.year == y && t.month == m && t.day == d ? t : null;
+  }
+
+  int n(String? v) => int.parse(v!);
   final iso = RegExp(r'^(\d{4})-(\d{2})-(\d{2})').firstMatch(s);
-  if (iso != null) return DateTime.tryParse('${iso[1]}-${iso[2]}-${iso[3]}');
+  if (iso != null) return valid(n(iso[1]), n(iso[2]), n(iso[3]));
   // Magyar (és ázsiai) sorrend: „2025.03.14.”, „2025. 03. 14.”, „2025/03/14”.
   final ymd = RegExp(r'^(\d{4})[./]\s?(\d{1,2})[./]\s?(\d{1,2})').firstMatch(s);
-  if (ymd != null) {
-    final y = int.parse(ymd[1]!), m = int.parse(ymd[2]!), d = int.parse(ymd[3]!);
-    if (m >= 1 && m <= 12 && d >= 1 && d <= 31) return DateTime(y, m, d);
-  }
+  if (ymd != null) return valid(n(ymd[1]), n(ymd[2]), n(ymd[3]));
   final compact = RegExp(r'^(\d{4})(\d{2})(\d{2})(\D|$)').firstMatch(s);
-  if (compact != null) return DateTime.tryParse('${compact[1]}-${compact[2]}-${compact[3]}');
-  final eu = RegExp(r'^(\d{1,2})([./-])(\d{1,2})[./-](\d{4})').firstMatch(s);
+  if (compact != null) return valid(n(compact[1]), n(compact[2]), n(compact[3]));
+  final eu = RegExp(r'^(\d{1,2})([./-])(\d{1,2})[./-](\d{4}|\d{2})(?!\d)').firstMatch(s);
   if (eu != null) {
     // Perjellel az amerikai sorrend is lehet (hónap/nap/év); ponttal mindig nap.hónap.év.
     final swap = monthFirst && eu[2] == '/';
-    final d = int.parse(eu[swap ? 3 : 1]!), m = int.parse(eu[swap ? 1 : 3]!), y = int.parse(eu[4]!);
-    if (m >= 1 && m <= 12 && d >= 1 && d <= 31) return DateTime(y, m, d);
+    final y = n(eu[4]);
+    return valid(y < 100 ? 2000 + y : y, n(eu[swap ? 1 : 3]), n(eu[swap ? 3 : 1]));
   }
   return null;
 }
@@ -581,10 +597,13 @@ DateTime? _date(String raw, {bool monthFirst = false}) {
 CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD', bool monthFirst = false}) {
   // A fájl eleji bájtsorrend-jel (BOM, pl. a saját exportban) nem a fejléc része.
   final lines = _records(text.replaceFirst('\uFEFF', ''));
-  // A fejléc nem mindig az első sor (pl. az IBKR kimutatásban szakaszok vannak).
-  for (final (i, line) in lines.take(30).indexed) {
+  // A fejléc nem mindig az első sor: az első 30 sorban bármilyen fejléc, utána csak az
+  // IBKR-kimutatás szakaszfejléce („Trades,Header,…” – előtte sok más szakasz lehet).
+  for (final (i, line) in lines.indexed) {
     final sep = _separator(line);
-    final h = _header(splitCsvLine(line, sep));
+    final cells = splitCsvLine(line, sep);
+    if (i >= 30 && (cells.length < 2 || cells[1].toLowerCase() != 'header')) continue;
+    final h = _header(cells);
     if (h != null) {
       return _withHeader(lines.skip(i + 1), sep, h, splitCsvLine(line, sep), defaultCurrency, monthFirst: monthFirst);
     }
@@ -679,15 +698,7 @@ CsvImport _statement(Iterable<String> lines, Map<String, int> col, {required boo
       gross.add(ImportedDividend(symbol: '', amount: amount, currency: ccy, date: date, isin: isin));
     }
   }
-  return CsvImport(
-    const [],
-    skipped,
-    dividends: [
-      for (final d in gross)
-        if (d.amount + (tax[_dayKey(d.isin!, d.currency, d.date)] ?? 0) case final a when a > 0)
-          ImportedDividend(symbol: '', amount: a, currency: d.currency, date: d.date, isin: d.isin),
-    ],
-  );
+  return CsvImport(const [], skipped, dividends: _netOfTax(gross, tax, (d) => _dayKey(d.isin!, d.currency, d.date)));
 }
 
 CsvImport _withHeader(
@@ -698,6 +709,7 @@ CsvImport _withHeader(
   String defaultCurrency, {
   required bool monthFirst,
 }) {
+  String norm(String c) => c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), '');
   final lots = <ImportedLot>[];
   final dividends = <ImportedDividend>[];
   final splits = <ImportedSplit>[];
@@ -714,25 +726,47 @@ CsvImport _withHeader(
   };
   final priceCcyCol = col.containsKey('currency') ? null : unnamedAfter('price');
   final feeCcyCol = unnamedAfter('fee');
-  final rateCol = header.indexWhere((c) => c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), '') == 'exchangerate');
+  final rateCol = header.indexWhere((c) => norm(c) == 'exchangerate');
   String at(List<String> f, int? i) => i == null || i < 0 || i >= f.length ? '' : f[i].trim();
-
-  final us = header.any((c) => _usHeaders.contains(c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), '')));
-  final mdy = _monthFirst([
-    for (final l in lines) cell(splitCsvLine(l, _separator(l)), 'date'),
-  ], hint: us || monthFirst);
-  DateTime? date(List<String> f) => _date(cell(f, 'date'), monthFirst: mdy);
-  // Az amerikai exportban a vessző ezres tagolás („1,000” darab), nem tizedesjel.
-  double? number(String raw) => us ? parseAmount(raw.replaceAll(_nonNumeric, ''), 'en') : _decimal(raw);
-  // Minden díj-oszlop összeadódik (Fidelity: „Commission ($)” és „Fees ($)”).
-  final feeCols = [
-    for (final (i, c) in header.indexed)
-      if (_roles['fee']!.contains(c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), ''))) i,
-  ];
 
   // Interactive Brokers kimutatás: „Trades,Header,…” után csak a „Trades,Data,…”
   // sorok számítanak; a „Dividends” szakasz sorai kapott osztalékok.
   final sections = header.length > 1 && header[1].toLowerCase() == 'header';
+  final us = header.any((c) => _usHeaders.contains(norm(c)));
+  final mdy = _monthFirst([
+    for (final l in lines) cell(splitCsvLine(l, _separator(l)), 'date'),
+  ], hint: us || monthFirst);
+  DateTime? date(List<String> f) => _date(cell(f, 'date'), monthFirst: mdy);
+  // Ezres tagolás: az amerikai exportban, az IBKR-kimutatásban és a vesszővel tagolt
+  // fájlban a vessző („1,000” darab, „"£1,234"”); a pontosvesszős fájlban, ha a
+  // tizedesjel vessző (valamelyik számban vessző után számjegy jön), a pont („1.000”).
+  final commaDecimal =
+      !(us || sections || sep == ',') &&
+      lines.any((l) {
+        final f = splitCsvLine(l, _separator(l));
+        return ['quantity', 'price', 'total'].any((r) => RegExp(r'\d,\d').hasMatch(cell(f, r)));
+      });
+  final grouping = us || sections || sep == ',' ? 'en' : (commaDecimal ? 'de' : null);
+  double? number(String raw) => grouping == null ? _decimal(raw) : parseAmount(_numeric(raw), grouping);
+  // Minden díj-oszlop összeadódik (Fidelity: „Commission ($)” és „Fees ($)”).
+  var feeCols = [
+    for (final (i, c) in header.indexed)
+      if (_roles['fee']!.contains(norm(c))) i,
+  ];
+  // Az IBKR a kereskedéseket eszközfajtánként külön fejléccel írja (más oszlopokkal), és
+  // a sorok fajtáját is jelöli: csak a részvény-megbízás (Order) számít – a devizaváltás
+  // (Forex), az opció és a lezárt tétel részletezése (ClosedLot) nem vétel és nem eladás.
+  int? discCol, assetCol;
+  void useHeader(List<String> h) {
+    discCol = h.indexWhere((c) => norm(c) == 'datadiscriminator');
+    assetCol = h.indexWhere((c) => norm(c) == 'assetcategory');
+    feeCols = [
+      for (final (i, c) in h.indexed)
+        if (_roles['fee']!.contains(norm(c))) i,
+    ];
+  }
+
+  useHeader(header);
   Map<String, int>? dividendCols, taxCols;
   // Forrásadó (IBKR „Withholding Tax” szakasz): részvény és nap szerint, negatív összeg.
   final withholding = <String, double>{};
@@ -761,7 +795,23 @@ CsvImport _withHeader(
       }
       continue;
     }
+    if (sections && f.length > 1 && f[0] == header[0] && f[1].toLowerCase() == 'header') {
+      if (_header(f) case final h?) {
+        col = h;
+        useHeader(f);
+      }
+      continue;
+    }
     if (sections && (f.length < 2 || f[0] != header[0] || f[1].toLowerCase() != 'data')) continue;
+    if (sections) {
+      final disc = at(f, discCol).toLowerCase(), asset = at(f, assetCol).toLowerCase();
+      if (disc.isNotEmpty && disc != 'order' && disc != 'trade') continue;
+      if (asset.isNotEmpty && asset != 'stocks') {
+        // A devizaváltás csendben kimarad; más eszköz (opció, határidős) kihagyott sorként jelzett.
+        if (asset != 'forex') skipped++;
+        continue;
+      }
+    }
     // Visszavont, elutasított megbízás: nem tranzakció.
     if (_voidStatus.hasMatch(cell(f, 'status').toLowerCase())) continue;
     // Ha nincs „side” oszlop, a fejlécen túli első mező is lehet „sell”.
@@ -770,7 +820,7 @@ CsvImport _withHeader(
         .trim();
     // Az értékpapír neve nem művelet (Fidelity: „YOU BOUGHT ISHARES RUSSELL 2000 ETF (IWM)”).
     final name = cell(f, 'description').trim().toLowerCase();
-    if (name.length > 2) side = side.replaceAll(name, ' ').trim();
+    if (name.length > 2 && side != name) side = side.replaceAll(name, ' ').trim();
     final signed = number(cell(f, 'quantity'));
     bool? sell;
     if (side.isEmpty) {
@@ -789,8 +839,10 @@ CsvImport _withHeader(
     final isin = cell(f, 'isin').trim().toUpperCase();
     final byIsin = !_symbol.hasMatch(symbol) && _isin.hasMatch(isin);
     final known = _symbol.hasMatch(symbol) || byIsin;
-    final dividend = !trade && _dividendWords.hasMatch(side);
-    if (dividend || (!trade && _taxWords.hasMatch(side))) {
+    // Az adósor előbb: a „Dividend Tax”, az „Osztalékadó” nem osztalék.
+    final tax = !trade && _taxWords.hasMatch(side);
+    final dividend = !trade && !tax && _dividendWords.hasMatch(side);
+    if (dividend || tax) {
       // Kapott osztalék: a teljes összeg (ha nincs külön oszlopa, az ár oszlopában).
       final (amount, amountCcy) = _price(col.containsKey('total') ? cell(f, 'total') : cell(f, 'price'), number);
       final totalCcy = cell(f, 'totalcurrency').toUpperCase();
@@ -831,6 +883,12 @@ CsvImport _withHeader(
       }
       continue;
     }
+    // A bróker felaprózás-sora (Revolut „STOCK SPLIT”, Schwab „Stock Split”, Robinhood „SPL”)
+    // nem tartalmazza az arányt: kihagyott sorként jelezzük, a felaprózás kézzel rögzíthető.
+    if (side.contains('split') || side == 'spl') {
+      skipped++;
+      continue;
+    }
     // Befizetés, díj stb.: nem vétel és nem eladás.
     if (sell == null) continue;
     final quantity = signed?.abs();
@@ -863,9 +921,26 @@ CsvImport _withHeader(
     );
   }
   // A bruttó osztalékból a forrásadó levonva: ami a számlára érkezett.
-  final net = [
-    for (final d in dividends)
-      if (d.amount + (withholding[_dayKey(d.isin ?? d.symbol, d.currency, d.date)] ?? 0) case final a when a > 0)
+  final net = _netOfTax(dividends, withholding, (d) => _dayKey(d.isin ?? d.symbol, d.currency, d.date));
+  return CsvImport(lots, skipped, dividends: net, splits: splits);
+}
+
+/// A bruttó osztaléksorok nettója: az ugyanarra a részvényre, pénznemre és napra eső
+/// adó (negatív összeg) a sorok között arányosan oszlik meg (két osztaléksor és két
+/// adósor egy napon: a nettó összesen bruttó − adó, nem kétszer levonva). Ha az adó
+/// eléri a bruttót, a nap sorai kimaradnak.
+List<ImportedDividend> _netOfTax(
+  List<ImportedDividend> gross,
+  Map<String, double> tax,
+  String Function(ImportedDividend d) key,
+) {
+  final total = <String, double>{};
+  for (final d in gross) {
+    total[key(d)] = (total[key(d)] ?? 0) + d.amount;
+  }
+  return [
+    for (final d in gross)
+      if (d.amount * (1 + (tax[key(d)] ?? 0) / total[key(d)]!) case final a when a > 1e-9)
         ImportedDividend(
           symbol: d.symbol,
           amount: a,
@@ -875,7 +950,6 @@ CsvImport _withHeader(
           isin: d.isin,
         ),
   ];
-  return CsvImport(lots, skipped, dividends: net, splits: splits);
 }
 
 String _dayKey(String symbol, String currency, DateTime? date) =>

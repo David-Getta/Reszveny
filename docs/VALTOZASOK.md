@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.256)
+# Változásjegyzék (0.2.130 → 0.2.257)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,19 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Import: egy hatodik kódátnézés javításai
+
+- **0.2.257**: az Interactive Brokers teljes kimutatása akkor is beolvasódik, ha a „Trades” szakasz előtt sok más
+  szakasz van (eddig a 30. sor után nem kereste); csak a részvény-megbízások számítanak (a devizaváltás és a
+  lezárt tételek részletezése nem vétel – eddig az is bekerült), és az eszközfajtánként ismételt fejlécet is
+  követi; az osztalék forrásadója naponként egyszer, arányosan vonódik le (két osztalék- és két adósor egy
+  napon eddig kétszer); az „Osztalékadó”, „Forrásadó”, „Dividendensteuer”, „Dividend Tax” sor adó, nem osztalék;
+  ezres tagolás a vesszővel tagolt fájlban („1,000”, „£1,234”) és a tizedesvesszős pontosvesszős fájlban
+  („1.000”); a könyvelési zárójel („(10)”) és a tipográfiai mínusz negatív; kétjegyű év („3/14/25”), a nem
+  létező nap („2025-02-30”) nem dátum; a bróker felaprózás-sora kihagyottként jelzett (kézzel rögzíthető); a
+  Scalable befizetése nem „kihagyott sor”; a képernyőképes importban a hiányos sort a teljes váltja, és a „-”
+  nem ticker.
 
 ## Szerver: számlázás és keretek (biztonsági átnézés)
 

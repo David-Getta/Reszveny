@@ -315,6 +315,81 @@ void main() {
     ]);
   });
 
+  test('IBKR statement: the Trades header after many sections, thousands separators, only stock orders', () {
+    final ibkr = parsePortfolioCsv(
+      'Statement,Header,Field Name,Field Value\n'
+      '${'Net Asset Value,Data,Stock,1000,1100\n' * 35}'
+      'Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,Proceeds\n'
+      'Trades,Data,Order,Stocks,USD,SPY,"2025-03-14, 10:31:12","1,000",500.5,-500500\n'
+      'Trades,Data,ClosedLot,Stocks,USD,AAPL,2024-01-02,50,150,\n'
+      'Trades,Data,Order,Forex,USD,EUR.USD,"2025-03-14, 10:31:12","25,000",1.0845,\n'
+      'Trades,Data,Order,Equity and Index Options,USD,AAPL 250620C00200000,"2025-03-14, 10:31:12",1,3.5,\n',
+    );
+    expect(ibkr.lots.map((l) => (l.symbol, l.quantity, l.price)), [('SPY', 1000.0, 500.5)]);
+    // Az opciós sor kihagyottként jelzett; a devizaváltás és a lezárt tétel csendben kimarad.
+    expect(ibkr.skipped, 1);
+  });
+
+  test('dividend tax rows: netted once per day, also in Hungarian and German, before the dividend words', () {
+    // Schwab: két osztaléksor és két adósor egy napon – a nettó összesen 10 − 1,5.
+    final schwab = parsePortfolioCsv(
+      'Date,Action,Symbol,Description,Quantity,Price,Fees & Comm,Amount\n'
+      '05/15/2025,Qualified Dividend,VTI,VANGUARD TOTAL STOCK MARKET ETF,,,,\$8.00\n'
+      '05/15/2025,Non-Qualified Div,VTI,VANGUARD TOTAL STOCK MARKET ETF,,,,\$2.00\n'
+      '05/15/2025,NRA Tax Adj,VTI,VANGUARD TOTAL STOCK MARKET ETF,,,,-\$1.20\n'
+      '05/15/2025,NRA Tax Adj,VTI,VANGUARD TOTAL STOCK MARKET ETF,,,,-\$0.30\n',
+    );
+    expect((schwab.dividends.fold(0.0, (s, d) => s + d.amount) * 100).round(), 850);
+    final hu = parsePortfolioCsv(
+      'Ticker;Darab;Árfolyam;Összeg;Irány;Dátum\n'
+      'MOL;;;1000;Osztalék;2025.05.02\n'
+      'MOL;;;150;Osztalékadó;2025.05.02\n',
+      defaultCurrency: 'HUF',
+    );
+    expect(hu.dividends.map((d) => (d.symbol, d.amount)), [('MOL', 850.0)]);
+    final de = parsePortfolioCsv(
+      'Ticker;Darab;Árfolyam;Összeg;Irány;Dátum\n'
+      'SAP;;;10;Dividende;2025.05.02\n'
+      'SAP;;;2,5;Dividendensteuer;2025.05.02\n',
+      defaultCurrency: 'EUR',
+    );
+    expect(de.dividends.map((d) => (d.symbol, d.amount)), [('SAP', 7.5)]);
+  });
+
+  test('numbers: thousands separators in comma and semicolon files, accounting negatives, two-digit years', () {
+    final uk = parsePortfolioCsv('Ticker,Quantity,Price,Currency\nULVR.L,10,"£1,234",GBP\n');
+    expect(uk.lots.single.price, 1234);
+    final de = parsePortfolioCsv('Kürzel;Stück;Kurs;Währung\nSAP;1.000;180,50;EUR\n');
+    expect((de.lots.single.quantity, de.lots.single.price), (1000.0, 180.5));
+    // Pontos tizedesjelű pontosvesszős fájlban a pont tizedesjel marad.
+    final dot = parsePortfolioCsv('Ticker;Quantity;Price;Currency\nAAPL;1.5;180.25;USD\n');
+    expect((dot.lots.single.quantity, dot.lots.single.price), (1.5, 180.25));
+    final paren = parsePortfolioCsv('Ticker,Quantity,Price,Currency\nAAPL,(10),180,USD\nMSFT,−10,400,USD\n');
+    expect(paren.lots.map((l) => (l.symbol, l.quantity, l.sell)), [('AAPL', 10.0, true), ('MSFT', 10.0, true)]);
+    final dates = parsePortfolioCsv(
+      'Date,Action,Symbol,Quantity,Price,Fees & Comm,Amount\n'
+      '3/14/25,Buy,AAPL,1,180,,\n'
+      '2025-02-30,Buy,MSFT,1,400,,\n',
+    );
+    expect(dates.lots.map((l) => (l.symbol, l.date)), [('AAPL', DateTime(2025, 3, 14)), ('MSFT', null)]);
+  });
+
+  test('broker split rows are reported as skipped; Scalable deposits are ignored silently', () {
+    final revolut = parsePortfolioCsv(
+      'Date,Ticker,Type,Quantity,Price per share,Total Amount,Currency,FX Rate\n'
+      '2024-06-01T10:00:00.000Z,NVDA,BUY - MARKET,1,USD 1200,USD 1200,USD,1.00\n'
+      '2024-06-10T10:00:00.000Z,NVDA,STOCK SPLIT,9,,USD 0,USD,1.00\n',
+    );
+    expect(revolut.lots, hasLength(1));
+    expect(revolut.skipped, 1);
+    final scalable = parsePortfolioCsv(
+      'date;time;status;reference;description;assetType;type;isin;shares;price;amount;fee;tax;currency\n'
+      '2025-01-02;10:00:00;Executed;"R1";"Deposit";Cash;Deposit;;;;500,00;;;EUR\n'
+      '2025-01-03;10:00:00;Executed;"R2";"Withdrawal";Cash;Withdrawal;;;;-100,00;;;EUR\n',
+    );
+    expect(scalable.skipped, 0);
+  });
+
   test('quoted fields keep their commas and quotes', () {
     expect(splitCsvLine('a,"b, c",d', ','), ['a', 'b, c', 'd']);
     expect(splitCsvLine('"x ""y""",1', ','), ['x "y"', '1']);

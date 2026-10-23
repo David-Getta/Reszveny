@@ -148,7 +148,8 @@ Use dot as the decimal separator and no thousands separators. Skip cash, totals,
     final merged = <String, ReadHolding>{};
     for (final r in rows.whereType<Map>()) {
       final symbol = '${r['symbol'] ?? ''}'.trim().toUpperCase();
-      if (symbol.isEmpty || !RegExp(r'^[A-Z0-9.\-:]{1,15}$').hasMatch(symbol)) continue;
+      // Betűvel vagy számmal kezdődik (a „-” vagy „.” helykitöltő nem ticker).
+      if (!RegExp(r'^[A-Z0-9][A-Z0-9.\-:]{0,14}$').hasMatch(symbol)) continue;
       final cur = '${r['currency'] ?? ''}'.trim().toUpperCase();
       final h = ReadHolding(
         symbol: symbol,
@@ -167,8 +168,9 @@ Use dot as the decimal separator and no thousands separators. Skip cash, totals,
           averagePrice: (prev.quantity! * prev.averagePrice! + h.quantity! * h.averagePrice!) / q,
           currency: prev.currency,
         );
-      } else {
-        merged.putIfAbsent(symbol, () => h);
+      } else if (prev == null || (!prev.complete && h.complete)) {
+        // A hiányos sort a később talált teljes sor váltja (az a felvehető).
+        merged[symbol] = h;
       }
     }
     return merged.values.take(maxHoldings).toList();

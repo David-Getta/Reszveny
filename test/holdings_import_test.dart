@@ -116,6 +116,18 @@ void main() {
     );
   });
 
+  test('the reply: a complete row replaces an incomplete one; placeholder symbols are dropped', () {
+    final h = HoldingsReader.parseResponse(
+      _response([
+        {'symbol': 'AAPL', 'company_name': 'Apple', 'quantity': 10, 'average_price': null, 'currency': 'USD'},
+        {'symbol': 'AAPL', 'company_name': 'Apple', 'quantity': 30, 'average_price': 170, 'currency': 'USD'},
+        {'symbol': '-', 'company_name': '?', 'quantity': 3, 'average_price': 12, 'currency': 'USD'},
+        {'symbol': '.', 'company_name': '?', 'quantity': 3, 'average_price': 12, 'currency': 'USD'},
+      ]),
+    );
+    expect(h.map((x) => (x.symbol, x.quantity, x.averagePrice)), [('AAPL', 30.0, 170.0)]);
+  });
+
   test('the request: image first, structured output, no tools', () {
     final body = HoldingsReader(config: const AppConfig())
         .buildRequestBody(CapturedImage(bytes: Uint8List.fromList([1, 2]), mimeType: 'image/png'));
