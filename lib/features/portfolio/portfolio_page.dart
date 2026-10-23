@@ -288,7 +288,12 @@ class _PortfolioBody extends StatelessWidget {
                           TextButton(
                             key: const ValueKey('portfolio-sample-remove'),
                             onPressed: () => AppServices.of(context).portfolio.removeSample(),
-                            child: Text(l10n.portfolioSampleRemove),
+                            // A színezett sávon a szöveg színe olvashatóbb, mint a kiemelő szín.
+                            style: TextButton.styleFrom(foregroundColor: AppPalette.of(context).text),
+                            child: Text(
+                              l10n.portfolioSampleRemove,
+                              style: const TextStyle(fontWeight: FontWeight.w700),
+                            ),
                           ),
                         ],
                       ),

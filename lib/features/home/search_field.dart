@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 
 /// A Claude-stílusú, lekerekített „pirula” keresősáv: bal oldalon ikon-
@@ -108,15 +109,19 @@ class _SearchFieldState extends State<SearchField> {
               AnimatedOpacity(
                 duration: const Duration(milliseconds: 150),
                 opacity: _hasText && widget.enabled ? 1 : 0.45,
-                child: Material(
-                  color: p.accent,
-                  shape: const CircleBorder(),
-                  child: InkWell(
-                    customBorder: const CircleBorder(),
-                    onTap: widget.enabled ? _submit : null,
-                    child: const Padding(
-                      padding: EdgeInsets.all(8),
-                      child: Icon(Icons.arrow_upward_rounded, color: Colors.white, size: 20),
+                // Képernyőolvasónak (és egérrel rámutatva) a gomb neve.
+                child: Tooltip(
+                  message: AppLocalizations.of(context).lookUp,
+                  child: Material(
+                    color: p.accent,
+                    shape: const CircleBorder(),
+                    child: InkWell(
+                      customBorder: const CircleBorder(),
+                      onTap: widget.enabled ? _submit : null,
+                      child: const Padding(
+                        padding: EdgeInsets.all(8),
+                        child: Icon(Icons.arrow_upward_rounded, color: Colors.white, size: 20),
+                      ),
                     ),
                   ),
                 ),
