@@ -112,6 +112,11 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   /// Opcionális jegyzet (miért veszi / adja el): a részvény jegyzeteinek végére kerül, dátummal.
   final _note = TextEditingController();
   bool _showNote = false;
+
+  /// A brókernél vezetett készpénz a kereskedés pénznemében (ha van): vételnél
+  /// alapból levonódik, eladásnál hozzáadódik – kikapcsolható.
+  late final double? _cashNow = AppServices.of(context).portfolio.cash[widget.currency.toUpperCase()];
+  bool _useCash = true;
   String? _feeError;
   late bool _showFee = AppServices.of(context).portfolio.lots.any((l) => l.fee > 0);
 
@@ -283,6 +288,11 @@ class _AddLotDialogState extends State<_AddLotDialog> {
       account: widget.sell ? _sellFrom : (_showAccount ? _account : null),
       fee: fee!,
     );
+    // A készpénz-egyenleg követi a tranzakciót (a díjjal együtt).
+    if (_cashNow case final cash? when _useCash && mounted) {
+      final amount = q * p + (widget.sell ? -fee : fee);
+      await AppServices.of(context).portfolio.setCash(widget.currency, widget.sell ? cash + amount : cash - amount);
+    }
     // A jegyzet a tranzakció adataival a részvény jegyzeteinek végére (befektetési napló).
     if (_note.text.trim() case final text when text.isNotEmpty && mounted) {
       final notes = AppServices.of(context).notes;
@@ -385,6 +395,21 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                 initial: _account,
                 onChanged: (v) => setState(() => _account = v),
                 onSubmitted: _submit,
+              ),
+            // Készpénzből fizetve / készpénzbe érkezve (ha a pénznemben van vezetett egyenleg).
+            if (_cashNow case final cash?)
+              CheckboxListTile(
+                key: const ValueKey('lot-cash'),
+                value: _useCash,
+                onChanged: (v) => setState(() => _useCash = v ?? false),
+                contentPadding: EdgeInsets.zero,
+                dense: true,
+                controlAffinity: ListTileControlAffinity.leading,
+                title: Text(
+                  widget.sell
+                      ? l10n.lotToCash(fmt.money(cash, widget.currency))
+                      : l10n.lotFromCash(fmt.money(cash, widget.currency)),
+                ),
               ),
             // Díj (jutalék) egy összegben: ha már van díjas tranzakció, rögtön látszik.
             if (_showFee) ...[

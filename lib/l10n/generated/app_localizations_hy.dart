@@ -2760,6 +2760,16 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Վճարել կանխիկից (այժմ $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Ավելացնել կանխիկին (այժմ $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

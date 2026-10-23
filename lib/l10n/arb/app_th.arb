@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{{months} เดือน}}",
   "durationDays": "{days, plural, other{{days} วัน}}",
   "positionHeldSince": "ตั้งแต่ {date}",
-  "lotPreviewWeight": "สัดส่วนในพอร์ตหลังจากนี้: {after} (ปัจจุบัน {before})"
+  "lotPreviewWeight": "สัดส่วนในพอร์ตหลังจากนี้: {after} (ปัจจุบัน {before})",
+  "lotFromCash": "จ่ายจากเงินสด (ปัจจุบัน {amount})",
+  "lotToCash": "เพิ่มเข้าเงินสด (ปัจจุบัน {amount})"
 }

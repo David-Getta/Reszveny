@@ -2826,6 +2826,16 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Оплатить из денежных средств (сейчас $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Зачислить в денежные средства (сейчас $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

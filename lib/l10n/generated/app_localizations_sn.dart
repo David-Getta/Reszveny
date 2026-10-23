@@ -2759,6 +2759,16 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Bhadhara kubva pamari (ikozvino $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Wedzera kumari (ikozvino $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

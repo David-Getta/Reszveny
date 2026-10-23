@@ -2752,6 +2752,16 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Nağd qalıqdan ödəyin (hazırda $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Nağd qalığa əlavə edin (hazırda $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{kalo {months}}}",
   "durationDays": "{days, plural, other{tile {days}}}",
   "positionHeldSince": "kabini {date}",
-  "lotPreviewWeight": "Tilayɔrɔ portfolio kɔnɔ o kɔfɛ: {after} (sisan {before})"
+  "lotPreviewWeight": "Tilayɔrɔ portfolio kɔnɔ o kɔfɛ: {after} (sisan {before})",
+  "lotFromCash": "Sara ni wari gansan ye (sisan {amount})",
+  "lotToCash": "A fara wari gansan kan (sisan {amount})"
 }

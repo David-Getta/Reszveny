@@ -2757,6 +2757,16 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'ನಗದಿನಿಂದ ಪಾವತಿಸಿ (ಈಗ $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'ನಗದಿಗೆ ಸೇರಿಸಿ (ಈಗ $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

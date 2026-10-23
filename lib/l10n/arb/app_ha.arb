@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{wata {months}} other{watanni {months}}}",
   "durationDays": "{days, plural, one{kwana {days}} other{kwanaki {days}}}",
   "positionHeldSince": "tun {date}",
-  "lotPreviewWeight": "Kaso a jakar hannun jari bayan haka: {after} (yanzu {before})"
+  "lotPreviewWeight": "Kaso a jakar hannun jari bayan haka: {after} (yanzu {before})",
+  "lotFromCash": "Biya daga tsabar kuɗi (yanzu {amount})",
+  "lotToCash": "Ƙara zuwa tsabar kuɗi (yanzu {amount})"
 }

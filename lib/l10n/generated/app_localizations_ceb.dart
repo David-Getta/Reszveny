@@ -2763,6 +2763,16 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Bayri gikan sa cash (karon $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Idugang sa cash (karon $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

@@ -2751,6 +2751,16 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Бэлэн мөнгөнөөс төлөх (одоо $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Бэлэн мөнгөнд нэмэх (одоо $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

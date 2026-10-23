@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} mes} other{{months} mesos}}",
   "durationDays": "{days, plural, one{{days} dia} other{{days} dies}}",
   "positionHeldSince": "des del {date}",
-  "lotPreviewWeight": "Pes a la cartera després: {after} (ara {before})"
+  "lotPreviewWeight": "Pes a la cartera després: {after} (ara {before})",
+  "lotFromCash": "Paga amb l'efectiu (ara {amount})",
+  "lotToCash": "Afegeix a l'efectiu (ara {amount})"
 }

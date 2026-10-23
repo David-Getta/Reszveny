@@ -2753,6 +2753,16 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Пардохт аз пули нақд (ҳозир $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Илова ба пули нақд (ҳозир $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

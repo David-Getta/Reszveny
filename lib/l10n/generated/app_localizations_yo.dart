@@ -2747,6 +2747,16 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'San láti inú owó (báyìí $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Fi kún owó (báyìí $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

@@ -2741,6 +2741,16 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'ငွေသားမှ ပေးချေရန် (ယခု $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'ငွေသားထဲ ထည့်ရန် (ယခု $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

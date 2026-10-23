@@ -2747,6 +2747,16 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'پرداخت از نقد (اکنون $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'افزودن به نقد (اکنون $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

@@ -2768,6 +2768,16 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Lefa ka chelete (hona jwale $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Eketsa cheleteng (hona jwale $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

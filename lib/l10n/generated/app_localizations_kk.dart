@@ -2750,6 +2750,16 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Қолма-қол қаражаттан төлеу (қазір $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Қолма-қол қаражатқа қосу (қазір $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

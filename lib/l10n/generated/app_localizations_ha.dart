@@ -2758,6 +2758,16 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Biya daga tsabar kuɗi (yanzu $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Ƙara zuwa tsabar kuɗi (yanzu $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

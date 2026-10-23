@@ -2753,6 +2753,16 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Fi sika a ɛda hɔ mu tua (seesei $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Fa ka sika a ɛda hɔ ho (seesei $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

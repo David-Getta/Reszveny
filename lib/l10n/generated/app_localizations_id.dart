@@ -2746,6 +2746,16 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Bayar dari kas (saat ini $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Tambahkan ke kas (saat ini $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

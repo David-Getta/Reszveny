@@ -2762,6 +2762,16 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Πληρωμή από μετρητά (τώρα $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Προσθήκη στα μετρητά (τώρα $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

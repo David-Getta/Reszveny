@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} മാസം} other{{months} മാസം}}",
   "durationDays": "{days, plural, one{{days} ദിവസം} other{{days} ദിവസം}}",
   "positionHeldSince": "{date} മുതൽ",
-  "lotPreviewWeight": "പിന്നീട് പോർട്ട്ഫോളിയോയിലെ പങ്ക്: {after} (ഇപ്പോൾ {before})"
+  "lotPreviewWeight": "പിന്നീട് പോർട്ട്ഫോളിയോയിലെ പങ്ക്: {after} (ഇപ്പോൾ {before})",
+  "lotFromCash": "പണത്തിൽ നിന്ന് അടയ്ക്കുക (ഇപ്പോൾ {amount})",
+  "lotToCash": "പണത്തിലേക്ക് ചേർക്കുക (ഇപ്പോൾ {amount})"
 }

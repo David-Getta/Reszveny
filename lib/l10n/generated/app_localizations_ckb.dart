@@ -2753,6 +2753,16 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'پارەدان لە پارەی کاش (ئێستا $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'زیادکردن بۆ پارەی کاش (ئێستا $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

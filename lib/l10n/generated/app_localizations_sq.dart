@@ -2757,6 +2757,16 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Paguaj nga paratë e gatshme (tani $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Shto te paratë e gatshme (tani $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

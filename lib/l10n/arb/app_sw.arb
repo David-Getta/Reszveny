@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{mwezi {months}} other{miezi {months}}}",
   "durationDays": "{days, plural, one{siku {days}} other{siku {days}}}",
   "positionHeldSince": "tangu {date}",
-  "lotPreviewWeight": "Sehemu katika jalada la hisa baadaye: {after} (sasa {before})"
+  "lotPreviewWeight": "Sehemu katika jalada la hisa baadaye: {after} (sasa {before})",
+  "lotFromCash": "Lipa kutoka pesa taslimu (sasa {amount})",
+  "lotToCash": "Ongeza kwenye pesa taslimu (sasa {amount})"
 }

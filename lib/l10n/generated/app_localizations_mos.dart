@@ -2736,6 +2736,16 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Yao ne ligdi (masã $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Paas ligdã pʋgẽ (masã $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

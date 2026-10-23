@@ -2763,6 +2763,16 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Futa na mbɔngɔ ya mabɔkɔ (sikoyo $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Bakisa na mbɔngɔ ya mabɔkɔ (sikoyo $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

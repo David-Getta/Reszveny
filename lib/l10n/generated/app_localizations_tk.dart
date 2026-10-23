@@ -2753,6 +2753,16 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Nagt puldan töle (häzir $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Nagt pula goş (häzir $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

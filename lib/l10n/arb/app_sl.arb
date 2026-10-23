@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} mesec} two{{months} meseca} few{{months} meseci} other{{months} mesecev}}",
   "durationDays": "{days, plural, one{{days} dan} two{{days} dneva} few{{days} dnevi} other{{days} dni}}",
   "positionHeldSince": "od {date}",
-  "lotPreviewWeight": "Delež v portfelju nato: {after} (zdaj {before})"
+  "lotPreviewWeight": "Delež v portfelju nato: {after} (zdaj {before})",
+  "lotFromCash": "Plačaj iz gotovine (zdaj {amount})",
+  "lotToCash": "Dodaj h gotovini (zdaj {amount})"
 }

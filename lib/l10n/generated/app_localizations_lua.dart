@@ -2762,6 +2762,16 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Futa ne mfranga ya mu bianza (mpindieu $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Sakidila ku mfranga ya mu bianza (mpindieu $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{kgwedi e {months}} other{dikgwedi tše {months}}}",
   "durationDays": "{days, plural, one{letšatši le {days}} other{matšatši a {days}}}",
   "positionHeldSince": "go tloga ka {date}",
-  "lotPreviewWeight": "Karolo ya potefolio ka morago: {after} (bjale {before})"
+  "lotPreviewWeight": "Karolo ya potefolio ka morago: {after} (bjale {before})",
+  "lotFromCash": "Lefa ka tšhelete (bjale {amount})",
+  "lotToCash": "Oketša go tšhelete (bjale {amount})"
 }

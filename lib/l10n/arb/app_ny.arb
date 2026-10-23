@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{mwezi {months}} other{miyezi {months}}}",
   "durationDays": "{days, plural, one{tsiku {days}} other{masiku {days}}}",
   "positionHeldSince": "kuyambira {date}",
-  "lotPreviewWeight": "Gawo la potifoliyo pambuyo pake: {after} (pano {before})"
+  "lotPreviewWeight": "Gawo la potifoliyo pambuyo pake: {after} (pano {before})",
+  "lotFromCash": "Lipirani kuchokera ku ndalama (pano {amount})",
+  "lotToCash": "Onjezani ku ndalama (pano {amount})"
 }

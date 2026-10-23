@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} месец} other{{months} месеци}}",
   "durationDays": "{days, plural, one{{days} ден} other{{days} дена}}",
   "positionHeldSince": "од {date}",
-  "lotPreviewWeight": "Удел во портфолиото потоа: {after} (сега {before})"
+  "lotPreviewWeight": "Удел во портфолиото потоа: {after} (сега {before})",
+  "lotFromCash": "Плати од готовина (сега {amount})",
+  "lotToCash": "Додај во готовина (сега {amount})"
 }

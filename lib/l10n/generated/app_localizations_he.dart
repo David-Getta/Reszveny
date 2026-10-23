@@ -2746,6 +2746,16 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'תשלום מהמזומן (כעת $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'הוספה למזומן (כעת $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

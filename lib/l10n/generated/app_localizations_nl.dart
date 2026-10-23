@@ -2757,6 +2757,16 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Betalen uit cash (nu $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Toevoegen aan cash (nu $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

@@ -2762,6 +2762,16 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'ரொக்கத்திலிருந்து செலுத்து (தற்போது $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'ரொக்கத்தில் சேர் (தற்போது $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

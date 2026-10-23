@@ -1450,4 +1450,39 @@ void main() {
     expect(find.byKey(const ValueKey('lot-preview-weight')), findsOneWidget);
     expect(find.textContaining('Share of the portfolio afterwards: 0.0% (now '), findsOneWidget);
   });
+
+  testWidgets('cash kept in the app follows a purchase and a sale (with the fee), and can be left out', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.setCash('USD', 5000);
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField).first, 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byTooltip('Add to portfolio'));
+    await tester.pumpAndSettle();
+    expect(find.text('Pay from cash (now 5,000.00 USD)'), findsOneWidget);
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '10');
+    await tester.enterText(find.byKey(const ValueKey('lot-price')), '200');
+    await tester.tap(find.byKey(const ValueKey('lot-fee-add')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('lot-fee')), '1');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    // 5000 − (10 × 200 + 1)
+    expect(s.portfolio.cash['USD'], 2999);
+    // Kikapcsolva a készpénz nem változik.
+    await tester.tap(find.byTooltip('Add to portfolio'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('lot-cash')));
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '1');
+    await tester.enterText(find.byKey(const ValueKey('lot-price')), '200');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.cash['USD'], 2999);
+    expect(s.portfolio.positionOf('AAPL')!.quantity, 11);
+  });
 }

@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} месец} other{{months} месеца}}",
   "durationDays": "{days, plural, one{{days} ден} other{{days} дни}}",
   "positionHeldSince": "от {date}",
-  "lotPreviewWeight": "Дял в портфейла след това: {after} (сега {before})"
+  "lotPreviewWeight": "Дял в портфейла след това: {after} (сега {before})",
+  "lotFromCash": "Плащане от кеша (сега {amount})",
+  "lotToCash": "Добавяне към кеша (сега {amount})"
 }

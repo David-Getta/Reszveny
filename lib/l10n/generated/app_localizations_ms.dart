@@ -2753,6 +2753,16 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Bayar daripada tunai (kini $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Tambah kepada tunai (kini $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

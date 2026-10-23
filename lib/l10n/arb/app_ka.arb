@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} თვე} other{{months} თვე}}",
   "durationDays": "{days, plural, one{{days} დღე} other{{days} დღე}}",
   "positionHeldSince": "{date}-დან",
-  "lotPreviewWeight": "წილი პორტფელში შემდეგ: {after} (ახლა {before})"
+  "lotPreviewWeight": "წილი პორტფელში შემდეგ: {after} (ახლა {before})",
+  "lotFromCash": "გადახდა ნაღდი ფულიდან (ახლა {amount})",
+  "lotToCash": "ნაღდ ფულზე დამატება (ახლა {amount})"
 }

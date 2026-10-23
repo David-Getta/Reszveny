@@ -2728,6 +2728,16 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'បង់ពីសាច់ប្រាក់ (បច្ចុប្បន្ន $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'បន្ថែមទៅសាច់ប្រាក់ (បច្ចុប្បន្ន $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

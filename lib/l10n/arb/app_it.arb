@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} mese} other{{months} mesi}}",
   "durationDays": "{days, plural, one{{days} giorno} other{{days} giorni}}",
   "positionHeldSince": "dal {date}",
-  "lotPreviewWeight": "Peso in portafoglio dopo l’operazione: {after} (ora {before})"
+  "lotPreviewWeight": "Peso in portafoglio dopo l’operazione: {after} (ora {before})",
+  "lotFromCash": "Paga con la liquidità (ora {amount})",
+  "lotToCash": "Aggiungi alla liquidità (ora {amount})"
 }

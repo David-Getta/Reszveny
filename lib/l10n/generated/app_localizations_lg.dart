@@ -2767,6 +2767,16 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Sasula okuva mu nsimbi enkalu (kati $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Yongera ku nsimbi enkalu (kati $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

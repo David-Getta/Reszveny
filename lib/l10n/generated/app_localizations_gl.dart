@@ -2775,6 +2775,16 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Pagar co efectivo (agora $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Engadir ao efectivo (agora $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

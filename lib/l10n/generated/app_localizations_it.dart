@@ -2757,6 +2757,16 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Paga con la liquidità (ora $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Aggiungi alla liquidità (ora $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

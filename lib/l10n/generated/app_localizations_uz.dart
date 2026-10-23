@@ -2755,6 +2755,16 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Naqd puldan toʻlash (hozir $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Naqd pulga qoʻshish (hozir $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

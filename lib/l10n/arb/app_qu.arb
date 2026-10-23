@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} killa} other{{months} killa}}",
   "durationDays": "{days, plural, one{{days} p'unchaw} other{{days} p'unchaw}}",
   "positionHeldSince": "{date}manta pacha",
-  "lotPreviewWeight": "Portafoliopi rakin chaymanta: {after} (kunan {before})"
+  "lotPreviewWeight": "Portafoliopi rakin chaymanta: {after} (kunan {before})",
+  "lotFromCash": "Qullqimanta pagay (kunan {amount})",
+  "lotToCash": "Qullqiman yapay (kunan {amount})"
 }

@@ -2750,6 +2750,16 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'نقد سے ادائیگی کریں (فی الحال $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'نقد میں شامل کریں (فی الحال $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

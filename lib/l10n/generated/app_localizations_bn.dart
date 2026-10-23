@@ -2749,6 +2749,16 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'নগদ থেকে পরিশোধ করুন (এখন $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'নগদে যোগ করুন (এখন $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

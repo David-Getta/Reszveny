@@ -2753,6 +2753,16 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Нак акчадан төлөө (азыр $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Нак акчага кошуу (азыр $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

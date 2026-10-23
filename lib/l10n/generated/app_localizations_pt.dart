@@ -2757,6 +2757,16 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Pagar com o caixa (agora $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Adicionar ao caixa (agora $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

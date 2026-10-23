@@ -2760,6 +2760,16 @@ class AppLocalizationsRn extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Riha ukoresheje amafaranga (ubu $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Ongera ku mafaranga (ubu $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

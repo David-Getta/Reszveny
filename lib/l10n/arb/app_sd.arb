@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} مهينو} other{{months} مهينا}}",
   "durationDays": "{days, plural, one{{days} ڏينهن} other{{days} ڏينهن}}",
   "positionHeldSince": "{date} کان",
-  "lotPreviewWeight": "پوءِ پورٽ فوليو ۾ حصو: {after} (هاڻي {before})"
+  "lotPreviewWeight": "پوءِ پورٽ فوليو ۾ حصو: {after} (هاڻي {before})",
+  "lotFromCash": "نقد مان ادا ڪريو (هاڻي {amount})",
+  "lotToCash": "نقد ۾ شامل ڪريو (هاڻي {amount})"
 }

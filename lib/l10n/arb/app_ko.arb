@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{{months}개월}}",
   "durationDays": "{days, plural, other{{days}일}}",
   "positionHeldSince": "{date}부터",
-  "lotPreviewWeight": "거래 후 포트폴리오 비중: {after} (현재 {before})"
+  "lotPreviewWeight": "거래 후 포트폴리오 비중: {after} (현재 {before})",
+  "lotFromCash": "현금에서 지불 (현재 {amount})",
+  "lotToCash": "현금에 추가 (현재 {amount})"
 }

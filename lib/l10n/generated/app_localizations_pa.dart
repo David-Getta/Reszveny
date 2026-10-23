@@ -2748,6 +2748,16 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'ਨਕਦ ਵਿੱਚੋਂ ਭੁਗਤਾਨ ਕਰੋ (ਹੁਣ $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'ਨਕਦ ਵਿੱਚ ਜੋੜੋ (ਹੁਣ $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

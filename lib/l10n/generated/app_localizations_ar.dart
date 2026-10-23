@@ -2820,6 +2820,16 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'الدفع من النقد (حاليًا $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'الإضافة إلى النقد (حاليًا $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

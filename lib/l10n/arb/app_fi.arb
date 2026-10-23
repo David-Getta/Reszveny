@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} kuukausi} other{{months} kuukautta}}",
   "durationDays": "{days, plural, one{{days} päivä} other{{days} päivää}}",
   "positionHeldSince": "{date} alkaen",
-  "lotPreviewWeight": "Osuus salkusta tämän jälkeen: {after} (nyt {before})"
+  "lotPreviewWeight": "Osuus salkusta tämän jälkeen: {after} (nyt {before})",
+  "lotFromCash": "Maksa käteisestä (nyt {amount})",
+  "lotToCash": "Lisää käteiseen (nyt {amount})"
 }

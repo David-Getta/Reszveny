@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} ወር} other{{months} ወራት}}",
   "durationDays": "{days, plural, one{{days} ቀን} other{{days} ቀናት}}",
   "positionHeldSince": "ከ{date} ጀምሮ",
-  "lotPreviewWeight": "ከግብይቱ በኋላ የፖርትፎሊዮ ድርሻ፦ {after} (አሁን {before})"
+  "lotPreviewWeight": "ከግብይቱ በኋላ የፖርትፎሊዮ ድርሻ፦ {after} (አሁን {before})",
+  "lotFromCash": "ከጥሬ ገንዘብ ይክፈሉ (አሁን {amount})",
+  "lotToCash": "ወደ ጥሬ ገንዘብ ያክሉ (አሁን {amount})"
 }

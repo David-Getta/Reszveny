@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} a bulan} other{{months} a bulan}}",
   "durationDays": "{days, plural, one{{days} nga aldaw} other{{days} nga aldaw}}",
   "positionHeldSince": "manipud {date}",
-  "lotPreviewWeight": "Paset ti portfolio kalpasanna: {after} (ita {before})"
+  "lotPreviewWeight": "Paset ti portfolio kalpasanna: {after} (ita {before})",
+  "lotFromCash": "Agbayad manipud iti cash (ita {amount})",
+  "lotToCash": "Inayon iti cash (ita {amount})"
 }

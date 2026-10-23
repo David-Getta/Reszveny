@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} månad} other{{months} månader}}",
   "durationDays": "{days, plural, one{{days} dag} other{{days} dagar}}",
   "positionHeldSince": "sedan {date}",
-  "lotPreviewWeight": "Andel av portföljen efteråt: {after} (nu {before})"
+  "lotPreviewWeight": "Andel av portföljen efteråt: {after} (nu {before})",
+  "lotFromCash": "Betala från kontanter (nu {amount})",
+  "lotToCash": "Lägg till i kontanter (nu {amount})"
 }

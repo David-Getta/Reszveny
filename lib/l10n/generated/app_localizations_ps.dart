@@ -2743,6 +2743,16 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'له نغدو څخه تادیه کړئ (اوس $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'نغدو ته اضافه کړئ (اوس $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

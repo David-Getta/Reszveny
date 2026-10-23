@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{חודש אחד} two{חודשיים} other{{months} חודשים}}",
   "durationDays": "{days, plural, one{יום אחד} two{יומיים} other{{days} ימים}}",
   "positionHeldSince": "מאז {date}",
-  "lotPreviewWeight": "משקל בתיק לאחר העסקה: {after} (כעת {before})"
+  "lotPreviewWeight": "משקל בתיק לאחר העסקה: {after} (כעת {before})",
+  "lotFromCash": "תשלום מהמזומן (כעת {amount})",
+  "lotToCash": "הוספה למזומן (כעת {amount})"
 }

@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} నెల} other{{months} నెలలు}}",
   "durationDays": "{days, plural, one{{days} రోజు} other{{days} రోజులు}}",
   "positionHeldSince": "{date} నుండి",
-  "lotPreviewWeight": "తర్వాత పోర్ట్‌ఫోలియోలో వాటా: {after} (ప్రస్తుతం {before})"
+  "lotPreviewWeight": "తర్వాత పోర్ట్‌ఫోలియోలో వాటా: {after} (ప్రస్తుతం {before})",
+  "lotFromCash": "నగదు నుండి చెల్లించండి (ప్రస్తుతం {amount})",
+  "lotToCash": "నగదుకు జోడించండి (ప్రస్తుతం {amount})"
 }

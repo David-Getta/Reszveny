@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{oṣù {months}}}",
   "durationDays": "{days, plural, other{ọjọ́ {days}}}",
   "positionHeldSince": "láti {date}",
-  "lotPreviewWeight": "Ìpín nínú àpò ìdókòwò lẹ́yìn náà: {after} (báyìí {before})"
+  "lotPreviewWeight": "Ìpín nínú àpò ìdókòwò lẹ́yìn náà: {after} (báyìí {before})",
+  "lotFromCash": "San láti inú owó (báyìí {amount})",
+  "lotToCash": "Fi kún owó (báyìí {amount})"
 }

@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} महिना} other{{months} महिना}}",
   "durationDays": "{days, plural, one{{days} दिन} other{{days} दिन}}",
   "positionHeldSince": "{date} देखि",
-  "lotPreviewWeight": "पछि पोर्टफोलियोमा हिस्सा: {after} (अहिले {before})"
+  "lotPreviewWeight": "पछि पोर्टफोलियोमा हिस्सा: {after} (अहिले {before})",
+  "lotFromCash": "नगदबाट भुक्तानी गर्नुहोस् (अहिले {amount})",
+  "lotToCash": "नगदमा थप्नुहोस् (अहिले {amount})"
 }

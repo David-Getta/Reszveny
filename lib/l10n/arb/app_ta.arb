@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} மாதம்} other{{months} மாதங்கள்}}",
   "durationDays": "{days, plural, one{{days} நாள்} other{{days} நாட்கள்}}",
   "positionHeldSince": "{date} முதல்",
-  "lotPreviewWeight": "பின்னர் போர்ட்ஃபோலியோவில் பங்கு: {after} (தற்போது {before})"
+  "lotPreviewWeight": "பின்னர் போர்ட்ஃபோலியோவில் பங்கு: {after} (தற்போது {before})",
+  "lotFromCash": "ரொக்கத்திலிருந்து செலுத்து (தற்போது {amount})",
+  "lotToCash": "ரொக்கத்தில் சேர் (தற்போது {amount})"
 }

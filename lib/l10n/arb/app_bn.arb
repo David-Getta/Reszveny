@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} মাস} other{{months} মাস}}",
   "durationDays": "{days, plural, one{{days} দিন} other{{days} দিন}}",
   "positionHeldSince": "{date} থেকে",
-  "lotPreviewWeight": "পরে পোর্টফোলিওতে অংশ: {after} (এখন {before})"
+  "lotPreviewWeight": "পরে পোর্টফোলিওতে অংশ: {after} (এখন {before})",
+  "lotFromCash": "নগদ থেকে পরিশোধ করুন (এখন {amount})",
+  "lotToCash": "নগদে যোগ করুন (এখন {amount})"
 }

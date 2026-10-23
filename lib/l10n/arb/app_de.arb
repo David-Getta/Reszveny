@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} Monat} other{{months} Monate}}",
   "durationDays": "{days, plural, one{{days} Tag} other{{days} Tage}}",
   "positionHeldSince": "seit {date}",
-  "lotPreviewWeight": "Anteil am Portfolio danach: {after} (bisher {before})"
+  "lotPreviewWeight": "Anteil am Portfolio danach: {after} (bisher {before})",
+  "lotFromCash": "Aus Cash bezahlen (bisher {amount})",
+  "lotToCash": "Zum Cash hinzufügen (bisher {amount})"
 }

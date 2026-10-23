@@ -2666,6 +2666,16 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return '現金から支払う（現在 $amount）';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return '現金に加える（現在 $amount）';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

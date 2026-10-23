@@ -2717,6 +2717,16 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'จ่ายจากเงินสด (ปัจจุบัน $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'เพิ่มเข้าเงินสด (ปัจจุบัน $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

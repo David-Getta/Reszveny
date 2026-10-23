@@ -2379,6 +2379,26 @@
       }
     }
   },
+  "lotFromCash": "Pay from cash (now {amount})",
+  "@lotFromCash": {
+    "description": "Buy dialog checkbox: take the cost (with the fee) from the cash balance kept in the app for this currency; {amount} is the balance now.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "2,500.00 USD"
+      }
+    }
+  },
+  "lotToCash": "Add to cash (now {amount})",
+  "@lotToCash": {
+    "description": "Sell dialog checkbox: add the proceeds (after the fee) to the cash balance kept in the app for this currency; {amount} is the balance now.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "2,500.00 USD"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

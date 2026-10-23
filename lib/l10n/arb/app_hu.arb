@@ -725,6 +725,8 @@
   "durationDays": "{days, plural, one{1 nap} other{{days} nap}}",
   "positionHeldSince": "{date} óta",
   "lotPreviewWeight": "Súly a portfólióban ezután: {after} (most {before})",
+  "lotFromCash": "Készpénzből fizetve (most {amount})",
+  "lotToCash": "A készpénzhez adva (most {amount})",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

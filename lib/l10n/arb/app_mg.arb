@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} volana} other{{months} volana}}",
   "durationDays": "{days, plural, one{{days} andro} other{{days} andro}}",
   "positionHeldSince": "hatramin'ny {date}",
-  "lotPreviewWeight": "Anjara ao amin'ny kitapom-bola aorian'izay: {after} (amin'izao {before})"
+  "lotPreviewWeight": "Anjara ao amin'ny kitapom-bola aorian'izay: {after} (amin'izao {before})",
+  "lotFromCash": "Handoa avy amin'ny vola (amin'izao {amount})",
+  "lotToCash": "Hanampy amin'ny vola (amin'izao {amount})"
 }

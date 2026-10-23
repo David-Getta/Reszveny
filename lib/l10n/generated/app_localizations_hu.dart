@@ -2756,6 +2756,16 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Készpénzből fizetve (most $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'A készpénzhez adva (most $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

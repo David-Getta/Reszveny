@@ -2764,6 +2764,16 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Hlawula ngemali (ngoku $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Yongeza kwimali (ngoku $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

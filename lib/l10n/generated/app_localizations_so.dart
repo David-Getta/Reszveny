@@ -2760,6 +2760,16 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Ka bixi lacagta caddaanka (hadda $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Ku dar lacagta caddaanka (hadda $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

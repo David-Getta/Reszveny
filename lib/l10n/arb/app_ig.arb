@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{ọnwa {months}}}",
   "durationDays": "{days, plural, other{ụbọchị {days}}}",
   "positionHeldSince": "kemgbe {date}",
-  "lotPreviewWeight": "Òkè na pọtụfoliyo mgbe e mesịrị: {after} (ugbu a {before})"
+  "lotPreviewWeight": "Òkè na pọtụfoliyo mgbe e mesịrị: {after} (ugbu a {before})",
+  "lotFromCash": "Kwụọ site na ego ka ego (ugbu a {amount})",
+  "lotToCash": "Tinye na ego ka ego (ugbu a {amount})"
 }

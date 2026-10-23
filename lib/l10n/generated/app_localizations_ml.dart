@@ -2762,6 +2762,16 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'പണത്തിൽ നിന്ന് അടയ്ക്കുക (ഇപ്പോൾ $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'പണത്തിലേക്ക് ചേർക്കുക (ഇപ്പോൾ $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

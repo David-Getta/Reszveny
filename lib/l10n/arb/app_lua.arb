@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{ngondo {months}} other{ngondo {months}}}",
   "durationDays": "{days, plural, one{dituku {days}} other{matuku {days}}}",
   "positionHeldSince": "kubangila ku {date}",
-  "lotPreviewWeight": "Tshitupa tshia portfolio pashishe: {after} (mpindieu {before})"
+  "lotPreviewWeight": "Tshitupa tshia portfolio pashishe: {after} (mpindieu {before})",
+  "lotFromCash": "Futa ne mfranga ya mu bianza (mpindieu {amount})",
+  "lotToCash": "Sakidila ku mfranga ya mu bianza (mpindieu {amount})"
 }

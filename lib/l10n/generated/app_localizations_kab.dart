@@ -2749,6 +2749,16 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Xelleṣ seg idrimen n ufus (tura $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Rnu ɣer idrimen n ufus (tura $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

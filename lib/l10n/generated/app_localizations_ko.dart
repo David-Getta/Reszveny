@@ -2676,6 +2676,16 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return '현금에서 지불 (현재 $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return '현금에 추가 (현재 $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

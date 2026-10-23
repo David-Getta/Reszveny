@@ -2746,6 +2746,16 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Yoɓ e kaalis (jooni $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Ɓeydu e kaalis (jooni $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

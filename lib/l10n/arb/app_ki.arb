@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{mweri {months}} other{mĩeri {months}}}",
   "durationDays": "{days, plural, one{mũthenya {days}} other{mĩthenya {days}}}",
   "positionHeldSince": "kuuma {date}",
-  "lotPreviewWeight": "Gĩcunjĩ kĩa portfolio thuutha: {after} (rĩu {before})"
+  "lotPreviewWeight": "Gĩcunjĩ kĩa portfolio thuutha: {after} (rĩu {before})",
+  "lotFromCash": "Rĩha na mbeca cia moko (rĩu {amount})",
+  "lotToCash": "Ongerera mbeca-inĩ cia moko (rĩu {amount})"
 }

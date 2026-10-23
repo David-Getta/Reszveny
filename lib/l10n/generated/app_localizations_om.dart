@@ -2763,6 +2763,16 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Maallaqa callaa irraa kaffali (amma $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Maallaqa callaatti dabali (amma $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

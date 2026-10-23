@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} bil} other{{months} bilood}}",
   "durationDays": "{days, plural, one{{days} maalin} other{{days} maalmood}}",
   "positionHeldSince": "laga bilaabo {date}",
-  "lotPreviewWeight": "Qaybta portfoliyada kadib: {after} (hadda {before})"
+  "lotPreviewWeight": "Qaybta portfoliyada kadib: {after} (hadda {before})",
+  "lotFromCash": "Ka bixi lacagta caddaanka (hadda {amount})",
+  "lotToCash": "Ku dar lacagta caddaanka (hadda {amount})"
 }

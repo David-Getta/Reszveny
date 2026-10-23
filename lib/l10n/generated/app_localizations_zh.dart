@@ -2631,6 +2631,16 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return '从现金支付（当前 $amount）';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return '计入现金（当前 $amount）';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5628,6 +5638,16 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String lotPreviewWeight(String after, String before) {
     return '交易後佔投資組合比例：$after（現時 $before）';
+  }
+
+  @override
+  String lotFromCash(String amount) {
+    return '從現金支付（現時 $amount）';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return '撥入現金（現時 $amount）';
   }
 
   @override

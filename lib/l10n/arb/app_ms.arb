@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{{months} bulan}}",
   "durationDays": "{days, plural, other{{days} hari}}",
   "positionHeldSince": "sejak {date}",
-  "lotPreviewWeight": "Bahagian dalam portfolio selepas ini: {after} (kini {before})"
+  "lotPreviewWeight": "Bahagian dalam portfolio selepas ini: {after} (kini {before})",
+  "lotFromCash": "Bayar daripada tunai (kini {amount})",
+  "lotToCash": "Tambah kepada tunai (kini {amount})"
 }

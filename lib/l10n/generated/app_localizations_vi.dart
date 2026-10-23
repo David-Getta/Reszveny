@@ -2742,6 +2742,16 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Thanh toán từ tiền mặt (hiện tại $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Cộng vào tiền mặt (hiện tại $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

@@ -2757,6 +2757,16 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'నగదు నుండి చెల్లించండి (ప్రస్తుతం $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'నగదుకు జోడించండి (ప్రస్తుతం $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

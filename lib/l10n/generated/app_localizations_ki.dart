@@ -2752,6 +2752,16 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Rĩha na mbeca cia moko (rĩu $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Ongerera mbeca-inĩ cia moko (rĩu $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

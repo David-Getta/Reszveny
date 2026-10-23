@@ -2751,6 +2751,16 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Betal fra kontanter (nå $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Legg til i kontanter (nå $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

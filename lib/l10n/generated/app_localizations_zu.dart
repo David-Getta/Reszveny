@@ -2763,6 +2763,16 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Khokha ngemali (manje $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Engeza emalini (manje $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

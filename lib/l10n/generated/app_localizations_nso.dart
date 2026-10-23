@@ -2770,6 +2770,16 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Lefa ka tšhelete (bjale $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Oketša go tšhelete (bjale $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

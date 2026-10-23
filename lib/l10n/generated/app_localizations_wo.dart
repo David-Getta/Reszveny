@@ -2742,6 +2742,16 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Fey ak xaalis bi (léegi $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Yokk ko ci xaalis bi (léegi $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

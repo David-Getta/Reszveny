@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{{months} ខែ}}",
   "durationDays": "{days, plural, other{{days} ថ្ងៃ}}",
   "positionHeldSince": "ចាប់ពី {date}",
-  "lotPreviewWeight": "ចំណែកក្នុងផលប័ត្របន្ទាប់ពីនេះ៖ {after} (បច្ចុប្បន្ន {before})"
+  "lotPreviewWeight": "ចំណែកក្នុងផលប័ត្របន្ទាប់ពីនេះ៖ {after} (បច្ចុប្បន្ន {before})",
+  "lotFromCash": "បង់ពីសាច់ប្រាក់ (បច្ចុប្បន្ន {amount})",
+  "lotToCash": "បន្ថែមទៅសាច់ប្រាក់ (បច្ចុប្បន្ន {amount})"
 }

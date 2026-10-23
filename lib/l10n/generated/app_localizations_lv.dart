@@ -2795,6 +2795,16 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Maksāt no naudas atlikuma (tagad $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Pievienot naudas atlikumam (tagad $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

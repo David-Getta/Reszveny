@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} n wayyur} other{{months} n wayyuren}}",
   "durationDays": "{days, plural, one{{days} n wass} other{{days} n wussan}}",
   "positionHeldSince": "seg {date}",
-  "lotPreviewWeight": "Aḥric deg upurtfulyu sakin: {after} (tura {before})"
+  "lotPreviewWeight": "Aḥric deg upurtfulyu sakin: {after} (tura {before})",
+  "lotFromCash": "Xelleṣ seg idrimen n ufus (tura {amount})",
+  "lotToCash": "Rnu ɣer idrimen n ufus (tura {amount})"
 }

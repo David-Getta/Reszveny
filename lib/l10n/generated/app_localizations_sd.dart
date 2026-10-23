@@ -2741,6 +2741,16 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'نقد مان ادا ڪريو (هاڻي $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'نقد ۾ شامل ڪريو (هاڻي $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

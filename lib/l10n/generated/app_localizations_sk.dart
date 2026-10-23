@@ -2824,6 +2824,16 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Zaplatiť z hotovosti (teraz $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Pripočítať k hotovosti (teraz $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

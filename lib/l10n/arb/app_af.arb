@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} maand} other{{months} maande}}",
   "durationDays": "{days, plural, one{{days} dag} other{{days} dae}}",
   "positionHeldSince": "sedert {date}",
-  "lotPreviewWeight": "Deel van die portefeulje daarna: {after} (tans {before})"
+  "lotPreviewWeight": "Deel van die portefeulje daarna: {after} (tans {before})",
+  "lotFromCash": "Betaal uit kontant (tans {amount})",
+  "lotToCash": "Voeg by kontant (tans {amount})"
 }

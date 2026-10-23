@@ -2826,6 +2826,16 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Plačaj iz gotovine (zdaj $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Dodaj h gotovini (zdaj $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

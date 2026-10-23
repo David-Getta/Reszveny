@@ -2770,6 +2770,16 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Duela ka madi (jaanong $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Oketsa mo madi (jaanong $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

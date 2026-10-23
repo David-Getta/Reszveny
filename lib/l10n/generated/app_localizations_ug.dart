@@ -2754,6 +2754,16 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'نەق پۇلدىن تۆلەش (ھازىر $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'نەق پۇلغا قوشۇش (ھازىر $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

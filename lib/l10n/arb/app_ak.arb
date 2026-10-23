@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{bosome {months}} other{bosome {months}}}",
   "durationDays": "{days, plural, one{da {days}} other{nna {days}}}",
   "positionHeldSince": "efi {date}",
-  "lotPreviewWeight": "Ɔfa wɔ portfolio no mu akyire: {after} (seesei {before})"
+  "lotPreviewWeight": "Ɔfa wɔ portfolio no mu akyire: {after} (seesei {before})",
+  "lotFromCash": "Fi sika a ɛda hɔ mu tua (seesei {amount})",
+  "lotToCash": "Fa ka sika a ɛda hɔ ho (seesei {amount})"
 }

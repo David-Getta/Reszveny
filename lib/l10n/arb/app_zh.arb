@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{{months}个月}}",
   "durationDays": "{days, plural, other{{days}天}}",
   "positionHeldSince": "自{date}起",
-  "lotPreviewWeight": "交易后占投资组合比例：{after}（当前 {before}）"
+  "lotPreviewWeight": "交易后占投资组合比例：{after}（当前 {before}）",
+  "lotFromCash": "从现金支付（当前 {amount}）",
+  "lotToCash": "计入现金（当前 {amount}）"
 }

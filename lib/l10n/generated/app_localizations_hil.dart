@@ -2768,6 +2768,16 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Magbayad halin sa cash (subong $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Idugang sa cash (subong $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

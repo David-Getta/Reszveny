@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{{months} လ}}",
   "durationDays": "{days, plural, other{{days} ရက်}}",
   "positionHeldSince": "{date} မှစ၍",
-  "lotPreviewWeight": "အရောင်းအဝယ်ပြီးနောက် ပေါ့ဖိုလီယို အချိုး - {after} (ယခု {before})"
+  "lotPreviewWeight": "အရောင်းအဝယ်ပြီးနောက် ပေါ့ဖိုလီယို အချိုး - {after} (ယခု {before})",
+  "lotFromCash": "ငွေသားမှ ပေးချေရန် (ယခု {amount})",
+  "lotToCash": "ငွေသားထဲ ထည့်ရန် (ယခု {amount})"
 }

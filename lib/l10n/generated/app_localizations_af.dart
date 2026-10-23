@@ -2755,6 +2755,16 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Betaal uit kontant (tans $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Voeg by kontant (tans $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

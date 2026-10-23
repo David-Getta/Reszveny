@@ -2765,6 +2765,16 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Qullqimanta pagay (kunan $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Qullqiman yapay (kunan $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

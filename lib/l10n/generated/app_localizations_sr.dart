@@ -2800,6 +2800,16 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Плати из готовине (сада $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Додај у готовину (сада $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

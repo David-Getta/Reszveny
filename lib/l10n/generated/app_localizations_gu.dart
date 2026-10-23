@@ -2745,6 +2745,16 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'રોકડમાંથી ચૂકવો (હાલ $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'રોકડમાં ઉમેરો (હાલ $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

@@ -2743,6 +2743,16 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'नकद सँ भुगतान करू (एखन $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'नकद मे जोड़ू (एखन $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

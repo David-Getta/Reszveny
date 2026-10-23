@@ -2753,6 +2753,16 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Bayar saka kas (saiki $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Tambahake menyang kas (saiki $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} ай} other{{months} ай}}",
   "durationDays": "{days, plural, one{{days} күн} other{{days} күн}}",
   "positionHeldSince": "{date} баштап",
-  "lotPreviewWeight": "Кийин портфелдеги үлүш: {after} (азыр {before})"
+  "lotPreviewWeight": "Кийин портфелдеги үлүш: {after} (азыр {before})",
+  "lotFromCash": "Нак акчадан төлөө (азыр {amount})",
+  "lotToCash": "Нак акчага кошуу (азыр {amount})"
 }

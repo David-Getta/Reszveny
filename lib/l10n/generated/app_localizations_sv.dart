@@ -2752,6 +2752,16 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Betala från kontanter (nu $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Lägg till i kontanter (nu $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

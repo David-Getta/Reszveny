@@ -2754,6 +2754,16 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Ji pereyê nexd bide (niha $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Li pereyê nexd zêde bike (niha $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{ukwezi {months}} other{amezi {months}}}",
   "durationDays": "{days, plural, one{umunsi {days}} other{iminsi {days}}}",
   "positionHeldSince": "kuva {date}",
-  "lotPreviewWeight": "Igice mu ishoramari nyuma: {after} (ubu {before})"
+  "lotPreviewWeight": "Igice mu ishoramari nyuma: {after} (ubu {before})",
+  "lotFromCash": "Ishyura ukoresheje amafaranga (ubu {amount})",
+  "lotToCash": "Ongera ku mafaranga (ubu {amount})"
 }

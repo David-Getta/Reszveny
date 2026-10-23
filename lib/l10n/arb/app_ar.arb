@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, zero{{months} شهر} one{شهر واحد} two{شهران} few{{months} أشهر} many{{months} شهرًا} other{{months} شهر}}",
   "durationDays": "{days, plural, zero{{days} يوم} one{يوم واحد} two{يومان} few{{days} أيام} many{{days} يومًا} other{{days} يوم}}",
   "positionHeldSince": "منذ {date}",
-  "lotPreviewWeight": "الحصة من المحفظة بعد العملية: {after} (حاليًا {before})"
+  "lotPreviewWeight": "الحصة من المحفظة بعد العملية: {after} (حاليًا {before})",
+  "lotFromCash": "الدفع من النقد (حاليًا {amount})",
+  "lotToCash": "الإضافة إلى النقد (حاليًا {amount})"
 }

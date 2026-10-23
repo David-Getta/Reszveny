@@ -2772,6 +2772,16 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Agbayad manipud iti cash (ita $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Inayon iti cash (ita $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

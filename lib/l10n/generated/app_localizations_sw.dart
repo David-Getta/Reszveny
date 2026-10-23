@@ -2753,6 +2753,16 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Lipa kutoka pesa taslimu (sasa $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Ongeza kwenye pesa taslimu (sasa $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

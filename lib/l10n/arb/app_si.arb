@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{මාස {months}} other{මාස {months}}}",
   "durationDays": "{days, plural, one{දින {days}} other{දින {days}}}",
   "positionHeldSince": "{date} සිට",
-  "lotPreviewWeight": "ගනුදෙනුවෙන් පසු කළඹේ කොටස: {after} (දැනට {before})"
+  "lotPreviewWeight": "ගනුදෙනුවෙන් පසු කළඹේ කොටස: {after} (දැනට {before})",
+  "lotFromCash": "මුදල්වලින් ගෙවන්න (දැනට {amount})",
+  "lotToCash": "මුදල්වලට එක් කරන්න (දැනට {amount})"
 }

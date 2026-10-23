@@ -2747,6 +2747,16 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Sara ni wari gansan ye (sisan $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'A fara wari gansan kan (sisan $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

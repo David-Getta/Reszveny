@@ -2749,6 +2749,16 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Peye ak lajan kach (kounye a $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Ajoute nan lajan kach (kounye a $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

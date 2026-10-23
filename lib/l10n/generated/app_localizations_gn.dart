@@ -2757,6 +2757,16 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Ehepymeʼẽ pirapirégui (koʼág̃a $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Embojoapy pirapirépe (koʼág̃a $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

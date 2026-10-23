@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{ji'a {months}} other{ji'a {months}}}",
   "durationDays": "{days, plural, one{guyyaa {days}} other{guyyaa {days}}}",
   "positionHeldSince": "{date} irraa kaasee",
-  "lotPreviewWeight": "Qooda poortfooliyoo booda: {after} (amma {before})"
+  "lotPreviewWeight": "Qooda poortfooliyoo booda: {after} (amma {before})",
+  "lotFromCash": "Maallaqa callaa irraa kaffali (amma {amount})",
+  "lotToCash": "Maallaqa callaatti dabali (amma {amount})"
 }

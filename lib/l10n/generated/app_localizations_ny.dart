@@ -2761,6 +2761,16 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Lipirani kuchokera ku ndalama (pano $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Onjezani ku ndalama (pano $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

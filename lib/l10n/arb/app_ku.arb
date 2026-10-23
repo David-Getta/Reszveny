@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} meh} other{{months} meh}}",
   "durationDays": "{days, plural, one{{days} roj} other{{days} roj}}",
   "positionHeldSince": "ji {date} ve",
-  "lotPreviewWeight": "Para di portfoliyoyê de piştre: {after} (niha {before})"
+  "lotPreviewWeight": "Para di portfoliyoyê de piştre: {after} (niha {before})",
+  "lotFromCash": "Ji pereyê nexd bide (niha {amount})",
+  "lotToCash": "Li pereyê nexd zêde bike (niha {amount})"
 }

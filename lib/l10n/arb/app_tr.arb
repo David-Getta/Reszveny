@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} ay} other{{months} ay}}",
   "durationDays": "{days, plural, one{{days} gün} other{{days} gün}}",
   "positionHeldSince": "{date} tarihinden beri",
-  "lotPreviewWeight": "İşlem sonrası portföy payı: {after} (şu an {before})"
+  "lotPreviewWeight": "İşlem sonrası portföy payı: {after} (şu an {before})",
+  "lotFromCash": "Nakitten öde (şu an {amount})",
+  "lotToCash": "Nakde ekle (şu an {amount})"
 }

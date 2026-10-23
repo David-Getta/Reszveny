@@ -2759,6 +2759,16 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Magbayad mula sa cash (ngayon $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Idagdag sa cash (ngayon $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

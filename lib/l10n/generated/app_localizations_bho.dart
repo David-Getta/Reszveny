@@ -2745,6 +2745,16 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'नकद से भुगतान करीं (अभी $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'नकद में जोड़ीं (अभी $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

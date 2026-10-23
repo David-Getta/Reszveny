@@ -2827,6 +2827,16 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Оплатити з коштів (зараз $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Зарахувати до коштів (зараз $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

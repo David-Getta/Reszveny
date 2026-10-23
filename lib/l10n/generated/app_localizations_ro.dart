@@ -2793,6 +2793,16 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Plătește din numerar (acum $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Adaugă la numerar (acum $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

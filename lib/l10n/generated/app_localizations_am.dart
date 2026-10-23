@@ -2715,6 +2715,16 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'ከጥሬ ገንዘብ ይክፈሉ (አሁን $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'ወደ ጥሬ ገንዘብ ያክሉ (አሁን $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

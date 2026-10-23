@@ -4687,6 +4687,18 @@ abstract class AppLocalizations {
   /// **'Share of the portfolio afterwards: {after} (now {before})'**
   String lotPreviewWeight(String after, String before);
 
+  /// Buy dialog checkbox: take the cost (with the fee) from the cash balance kept in the app for this currency; {amount} is the balance now.
+  ///
+  /// In en, this message translates to:
+  /// **'Pay from cash (now {amount})'**
+  String lotFromCash(String amount);
+
+  /// Sell dialog checkbox: add the proceeds (after the fee) to the cash balance kept in the app for this currency; {amount} is the balance now.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to cash (now {amount})'**
+  String lotToCash(String amount);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

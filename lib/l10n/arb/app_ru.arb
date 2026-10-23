@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} месяц} few{{months} месяца} many{{months} месяцев} other{{months} месяца}}",
   "durationDays": "{days, plural, one{{days} день} few{{days} дня} many{{days} дней} other{{days} дня}}",
   "positionHeldSince": "с {date}",
-  "lotPreviewWeight": "Доля в портфеле после сделки: {after} (сейчас {before})"
+  "lotPreviewWeight": "Доля в портфеле после сделки: {after} (сейчас {before})",
+  "lotFromCash": "Оплатить из денежных средств (сейчас {amount})",
+  "lotToCash": "Зачислить в денежные средства (сейчас {amount})"
 }

@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} mjesec} few{{months} mjeseca} other{{months} mjeseci}}",
   "durationDays": "{days, plural, one{{days} dan} few{{days} dana} other{{days} dana}}",
   "positionHeldSince": "od {date}",
-  "lotPreviewWeight": "Udio u portfelju nakon toga: {after} (sada {before})"
+  "lotPreviewWeight": "Udio u portfelju nakon toga: {after} (sada {before})",
+  "lotFromCash": "Plati iz gotovine (sada {amount})",
+  "lotToCash": "Dodaj u gotovinu (sada {amount})"
 }

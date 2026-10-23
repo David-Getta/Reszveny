@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} میاشت} other{{months} میاشتې}}",
   "durationDays": "{days, plural, one{{days} ورځ} other{{days} ورځې}}",
   "positionHeldSince": "له {date} راهیسې",
-  "lotPreviewWeight": "وروسته په پورټفولیو کې برخه: {after} (اوس {before})"
+  "lotPreviewWeight": "وروسته په پورټفولیو کې برخه: {after} (اوس {before})",
+  "lotFromCash": "له نغدو څخه تادیه کړئ (اوس {amount})",
+  "lotToCash": "نغدو ته اضافه کړئ (اوس {amount})"
 }

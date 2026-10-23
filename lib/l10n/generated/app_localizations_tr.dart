@@ -2751,6 +2751,16 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Nakitten öde (şu an $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Nakde ekle (şu an $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

@@ -2713,6 +2713,16 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'ካብ ጥረ ገንዘብ ክፈል (ሕጂ $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'ናብ ጥረ ገንዘብ ወስኽ (ሕጂ $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

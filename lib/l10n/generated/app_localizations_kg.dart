@@ -2761,6 +2761,16 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Futa na mbongo ya maboko (ntangu yai $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Yika na mbongo ya maboko (ntangu yai $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

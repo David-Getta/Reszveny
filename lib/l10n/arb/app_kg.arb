@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{ngonda {months}} other{ngonda {months}}}",
   "durationDays": "{days, plural, one{kilumbu {days}} other{bilumbu {days}}}",
   "positionHeldSince": "banda {date}",
-  "lotPreviewWeight": "Ndambu ya portfolio na nima: {after} (ntangu yai {before})"
+  "lotPreviewWeight": "Ndambu ya portfolio na nima: {after} (ntangu yai {before})",
+  "lotFromCash": "Futa na mbongo ya maboko (ntangu yai {amount})",
+  "lotToCash": "Yika na mbongo ya maboko (ntangu yai {amount})"
 }

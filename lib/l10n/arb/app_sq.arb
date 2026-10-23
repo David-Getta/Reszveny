@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} muaj} other{{months} muaj}}",
   "durationDays": "{days, plural, one{{days} ditë} other{{days} ditë}}",
   "positionHeldSince": "që nga {date}",
-  "lotPreviewWeight": "Pesha në portofol më pas: {after} (tani {before})"
+  "lotPreviewWeight": "Pesha në portofol më pas: {after} (tani {before})",
+  "lotFromCash": "Paguaj nga paratë e gatshme (tani {amount})",
+  "lotToCash": "Shto te paratë e gatshme (tani {amount})"
 }

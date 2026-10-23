@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{{months} tháng}}",
   "durationDays": "{days, plural, other{{days} ngày}}",
   "positionHeldSince": "từ {date}",
-  "lotPreviewWeight": "Tỷ trọng trong danh mục sau giao dịch: {after} (hiện tại {before})"
+  "lotPreviewWeight": "Tỷ trọng trong danh mục sau giao dịch: {after} (hiện tại {before})",
+  "lotFromCash": "Thanh toán từ tiền mặt (hiện tại {amount})",
+  "lotToCash": "Cộng vào tiền mặt (hiện tại {amount})"
 }

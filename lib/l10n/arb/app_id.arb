@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{{months} bulan}}",
   "durationDays": "{days, plural, other{{days} hari}}",
   "positionHeldSince": "sejak {date}",
-  "lotPreviewWeight": "Porsi di portofolio setelahnya: {after} (saat ini {before})"
+  "lotPreviewWeight": "Porsi di portofolio setelahnya: {after} (saat ini {before})",
+  "lotFromCash": "Bayar dari kas (saat ini {amount})",
+  "lotToCash": "Tambahkan ke kas (saat ini {amount})"
 }

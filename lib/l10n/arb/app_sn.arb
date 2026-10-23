@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{mwedzi {months}} other{mwedzi {months}}}",
   "durationDays": "{days, plural, one{zuva {days}} other{mazuva {days}}}",
   "positionHeldSince": "kubvira {date}",
-  "lotPreviewWeight": "Chikamu chepotifoliyo pashure: {after} (ikozvino {before})"
+  "lotPreviewWeight": "Chikamu chepotifoliyo pashure: {after} (ikozvino {before})",
+  "lotFromCash": "Bhadhara kubva pamari (ikozvino {amount})",
+  "lotToCash": "Wedzera kumari (ikozvino {amount})"
 }

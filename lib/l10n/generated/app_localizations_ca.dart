@@ -2761,6 +2761,16 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Paga amb l\'efectiu (ara $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Afegeix a l\'efectiu (ara $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

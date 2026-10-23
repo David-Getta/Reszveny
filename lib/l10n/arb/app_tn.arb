@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{kgwedi e le {months}} other{dikgwedi di le {months}}}",
   "durationDays": "{days, plural, one{letsatsi le le {days}} other{malatsi a le {days}}}",
   "positionHeldSince": "go tloga ka {date}",
-  "lotPreviewWeight": "Karolo ya potefolio morago: {after} (jaanong {before})"
+  "lotPreviewWeight": "Karolo ya potefolio morago: {after} (jaanong {before})",
+  "lotFromCash": "Duela ka madi (jaanong {amount})",
+  "lotToCash": "Oketsa mo madi (jaanong {amount})"
 }

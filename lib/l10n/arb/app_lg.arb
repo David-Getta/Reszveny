@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{omwezi {months}} other{emyezi {months}}}",
   "durationDays": "{days, plural, one{olunaku {days}} other{ennaku {days}}}",
   "positionHeldSince": "okuva ku {date}",
-  "lotPreviewWeight": "Ekitundu ky'omu portfolio oluvannyuma: {after} (kati {before})"
+  "lotPreviewWeight": "Ekitundu ky'omu portfolio oluvannyuma: {after} (kati {before})",
+  "lotFromCash": "Sasula okuva mu nsimbi enkalu (kati {amount})",
+  "lotToCash": "Yongera ku nsimbi enkalu (kati {amount})"
 }

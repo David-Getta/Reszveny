@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} ወርሒ} other{{months} ኣዋርሕ}}",
   "durationDays": "{days, plural, one{{days} መዓልቲ} other{{days} መዓልታት}}",
   "positionHeldSince": "ካብ {date} ጀሚሩ",
-  "lotPreviewWeight": "ድሕሪ ግብይት ክፋል ፖርትፎሊዮ፦ {after} (ሕጂ {before})"
+  "lotPreviewWeight": "ድሕሪ ግብይት ክፋል ፖርትፎሊዮ፦ {after} (ሕጂ {before})",
+  "lotFromCash": "ካብ ጥረ ገንዘብ ክፈል (ሕጂ {amount})",
+  "lotToCash": "ናብ ጥረ ገንዘብ ወስኽ (ሕጂ {amount})"
 }

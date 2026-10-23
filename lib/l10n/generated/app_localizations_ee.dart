@@ -2757,6 +2757,16 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Xe fe tso ga le asi me (fifia $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Tsɔe kpe ɖe ga le asi ŋu (fifia $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

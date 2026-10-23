@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{{months}か月}}",
   "durationDays": "{days, plural, other{{days}日}}",
   "positionHeldSince": "{date}から",
-  "lotPreviewWeight": "取引後のポートフォリオ比率：{after}（現在 {before}）"
+  "lotPreviewWeight": "取引後のポートフォリオ比率：{after}（現在 {before}）",
+  "lotFromCash": "現金から支払う（現在 {amount}）",
+  "lotToCash": "現金に加える（現在 {amount}）"
 }

@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{{months} sasi}}",
   "durationDays": "{days, plural, other{{days} dina}}",
   "positionHeldSince": "wiwit {date}",
-  "lotPreviewWeight": "Bagean ing portofolio sakwise: {after} (saiki {before})"
+  "lotPreviewWeight": "Bagean ing portofolio sakwise: {after} (saiki {before})",
+  "lotFromCash": "Bayar saka kas (saiki {amount})",
+  "lotToCash": "Tambahake menyang kas (saiki {amount})"
 }

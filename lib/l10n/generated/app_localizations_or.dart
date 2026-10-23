@@ -2747,6 +2747,16 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'ନଗଦରୁ ପୈଠ କରନ୍ତୁ (ବର୍ତ୍ତମାନ $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'ନଗଦରେ ଯୋଡ଼ନ୍ତୁ (ବର୍ତ୍ତମାନ $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

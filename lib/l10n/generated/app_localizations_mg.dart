@@ -2771,6 +2771,16 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Handoa avy amin\'ny vola (amin\'izao $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Hanampy amin\'ny vola (amin\'izao $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

@@ -2749,6 +2749,16 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Betal fra kontanter (nu $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Tilføj til kontanter (nu $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

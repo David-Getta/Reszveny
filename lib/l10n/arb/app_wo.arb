@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{{months} weer}}",
   "durationDays": "{days, plural, other{{days} fan}}",
   "positionHeldSince": "li dale {date}",
-  "lotPreviewWeight": "Wàll ci portefeuille bi ginnaaw bi: {after} (léegi {before})"
+  "lotPreviewWeight": "Wàll ci portefeuille bi ginnaaw bi: {after} (léegi {before})",
+  "lotFromCash": "Fey ak xaalis bi (léegi {amount})",
+  "lotToCash": "Yokk ko ci xaalis bi (léegi {amount})"
 }

@@ -2751,6 +2751,16 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'გადახდა ნაღდი ფულიდან (ახლა $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'ნაღდ ფულზე დამატება (ახლა $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

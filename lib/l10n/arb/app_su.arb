@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, other{{months} bulan}}",
   "durationDays": "{days, plural, other{{days} poé}}",
   "positionHeldSince": "ti saprak {date}",
-  "lotPreviewWeight": "Bagian dina portofolio saenggeusna: {after} (ayeuna {before})"
+  "lotPreviewWeight": "Bagian dina portofolio saenggeusna: {after} (ayeuna {before})",
+  "lotFromCash": "Bayar tina tunai (ayeuna {amount})",
+  "lotToCash": "Tambihkeun kana tunai (ayeuna {amount})"
 }

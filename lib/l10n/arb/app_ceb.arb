@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} ka bulan} other{{months} ka bulan}}",
   "durationDays": "{days, plural, one{{days} ka adlaw} other{{days} ka adlaw}}",
   "positionHeldSince": "sukad sa {date}",
-  "lotPreviewWeight": "Bahin sa portfolio human niini: {after} (karon {before})"
+  "lotPreviewWeight": "Bahin sa portfolio human niini: {after} (karon {before})",
+  "lotFromCash": "Bayri gikan sa cash (karon {amount})",
+  "lotToCash": "Idugang sa cash (karon {amount})"
 }

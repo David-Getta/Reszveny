@@ -2738,6 +2738,16 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'དངུལ་རྐྱང་ནས་སྤྲོད (ད་ལྟ $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'དངུལ་རྐྱང་ལ་སྣོན (ད་ལྟ $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

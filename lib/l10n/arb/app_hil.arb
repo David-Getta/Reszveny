@@ -824,5 +824,7 @@
   "durationMonths": "{months, plural, one{{months} ka bulan} other{{months} ka bulan}}",
   "durationDays": "{days, plural, one{{days} ka adlaw} other{{days} ka adlaw}}",
   "positionHeldSince": "halin sang {date}",
-  "lotPreviewWeight": "Bahin sa portfolio pagkatapos sini: {after} (subong {before})"
+  "lotPreviewWeight": "Bahin sa portfolio pagkatapos sini: {after} (subong {before})",
+  "lotFromCash": "Magbayad halin sa cash (subong {amount})",
+  "lotToCash": "Idugang sa cash (subong {amount})"
 }

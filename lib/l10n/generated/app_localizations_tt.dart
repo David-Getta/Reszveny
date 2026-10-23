@@ -2748,6 +2748,16 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Акчадан түләү (хәзер $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Акчага өстәү (хәзер $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

@@ -2722,6 +2722,16 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'ຈ່າຍຈາກເງິນສົດ (ປັດຈຸບັນ $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'ເພີ່ມເຂົ້າເງິນສົດ (ປັດຈຸບັນ $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

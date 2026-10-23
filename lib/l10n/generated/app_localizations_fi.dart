@@ -2752,6 +2752,16 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Maksa käteisestä (nyt $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Lisää käteiseen (nyt $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

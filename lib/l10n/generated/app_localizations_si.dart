@@ -2748,6 +2748,16 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'මුදල්වලින් ගෙවන්න (දැනට $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'මුදල්වලට එක් කරන්න (දැනට $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

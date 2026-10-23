@@ -2753,6 +2753,16 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String lotFromCash(String amount) {
+    return 'Bayar tina tunai (ayeuna $amount)';
+  }
+
+  @override
+  String lotToCash(String amount) {
+    return 'Tambihkeun kana tunai (ayeuna $amount)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override
