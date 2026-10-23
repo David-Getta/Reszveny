@@ -113,9 +113,9 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   String? _feeError;
   late bool _showFee = AppServices.of(context).portfolio.lots.any((l) => l.fee > 0);
 
-  /// A számla mezőbe írt szöveg; amíg nincs számla, a mezőt egy „Számla
-  /// megadása” gomb mutatja meg.
-  late String? _account = widget.account;
+  /// A számla mezőbe írt szöveg (vételnél alapból a legutóbbi vétel számlája); amíg
+  /// nincs számla, a mezőt egy „Számla megadása” gomb mutatja meg.
+  late String? _account = widget.account ?? (widget.sell ? null : AppServices.of(context).portfolio.lastBuyAccount);
   late bool _showAccount = widget.account != null || AppServices.of(context).portfolio.accounts.isNotEmpty;
 
   /// Eladásnál a számla, amelyről elad: az előre megadott, különben ahol a legtöbb darab van.
@@ -325,7 +325,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
             else if (_showAccount)
               AccountField(
                 fieldKey: const ValueKey('lot-account'),
-                initial: widget.account,
+                initial: _account,
                 onChanged: (v) => setState(() => _account = v),
                 onSubmitted: _submit,
               ),

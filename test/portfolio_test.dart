@@ -1343,6 +1343,12 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('lot-account')), findsOneWidget);
     expect(find.byKey(const ValueKey('lot-fee')), findsOneWidget, reason: 'ha már volt díj, az is');
+    // Alapból a legutóbbi vétel számlája van kitöltve.
+    expect(tester.widget<TextField>(find.byKey(const ValueKey('lot-account'))).controller!.text, 'NYESZ');
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '1');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.lots.map((l) => l.account), ['NYESZ', 'NYESZ']);
   });
 
   test(

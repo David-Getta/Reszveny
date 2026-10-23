@@ -21,7 +21,8 @@ class StockNote {
 }
 
 /// Saját jegyzetek részvényenként: miért vette, mire figyel, mi lenne az
-/// eladási ok. Csak a készüléken tárolódik; az AI-elemzés is megkapja.
+/// eladási ok. A készüléken tárolódik (belépett fióknál szinkronizálva); az
+/// AI-elemzés is megkapja.
 class NotesStore extends ChangeNotifier {
   NotesStore([Map<String, StockNote>? notes]) : _notes = {...?notes};
 

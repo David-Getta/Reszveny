@@ -672,6 +672,17 @@ class PortfolioStore extends ChangeNotifier {
     return (before: positionIn(s, view), after: view == null ? all : Position._view(all, view));
   }
 
+  /// A legutóbbi (legkésőbbi dátumú) vétel számlája – az új vétel alapértéke, hogy
+  /// a mindig ugyanarra a számlára (pl. TBSZ) vevőnek ne kelljen újra beírnia.
+  String? get lastBuyAccount {
+    PortfolioLot? last;
+    for (final l in _lots) {
+      if (l.sell || l.id.startsWith(samplePrefix)) continue;
+      if (last == null || !(l.date ?? DateTime(0)).isBefore(last.date ?? DateTime(0))) last = l;
+    }
+    return last?.account;
+  }
+
   /// A számla, amelyen a részvényből a legtöbb darab van (`null`, ha a legtöbb számla
   /// nélküli, vagy nincs belőle).
   String? mainAccountOf(String symbol) => largestKey<String?>(heldByAccount(symbol));
