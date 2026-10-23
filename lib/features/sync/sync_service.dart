@@ -52,6 +52,10 @@ class SyncService extends ChangeNotifier {
   DateTime? _last;
   String? _syncedEmail;
   bool _dirty = false;
+
+  /// A helyi változások száma: a feltöltés végén ebből látszik, változott-e
+  /// közben valami (akkor nem jelöljük tisztának).
+  int _changes = 0;
   bool _applying = false;
   bool _busy = false;
   bool _failed = false;
@@ -106,6 +110,7 @@ class SyncService extends ChangeNotifier {
     final json = jsonEncode(snapshot());
     if (json == _lastJson) return;
     _lastJson = json;
+    _changes++;
     // Kijelentkezve is megjegyezzük, hogy volt változás (belépéskor összefésüljük).
     _setDirty(true);
     if (!account.isSignedIn) return;
@@ -248,6 +253,18 @@ class SyncService extends ChangeNotifier {
       },
     );
     final cash = mergeCash(local, remote);
+    final lots = byId(local['lots'], remote['lots']);
+    final dividends = byId(local['dividends'], remote['dividends']);
+    final splits = _uniqueSplits(byId(local['splits'], remote['splits']));
+    // A megmaradt (a törlés után visszaállított vagy javított) tétel jelzése
+    // eltűnik, hogy később (pl. egy régebbi app vagy egy mentés után) ne törölje.
+    final kept = {
+      for (final e in [...lots, ...dividends, ...splits]) '${e['id']}',
+    };
+    deleted.removeWhere((id, _) => kept.contains(id));
+    final keptAlerts = {for (final a in alertsMerged) '${a['id']}'};
+    alertsDeleted.removeWhere((id, _) => keptAlerts.contains(id));
+    notesDeleted.removeWhere((symbol, _) => mergedNotes.containsKey(symbol));
     return {
       'v': 1,
       'lang': ?(local['lang'] ?? remote['lang']),
@@ -269,9 +286,9 @@ class SyncService extends ChangeNotifier {
           e.key: e.value.toIso8601String().substring(0, 10),
       },
       'goals': mergeGoals(local['goals'], remote['goals']),
-      'lots': byId(local['lots'], remote['lots']),
-      'dividends': byId(local['dividends'], remote['dividends']),
-      'splits': _uniqueSplits(byId(local['splits'], remote['splits'])),
+      'lots': lots,
+      'dividends': dividends,
+      'splits': splits,
       'deleted': tombstonesJson(deleted),
       'cash': cash.cash,
       'cash_at': cash.at,
@@ -320,6 +337,12 @@ class SyncService extends ChangeNotifier {
 
   /// Felaprózások: két eszközön rögzítve más az azonosító, de ugyanaz (ticker, nap,
   /// arány) csak egyszer maradhat – kétszer alkalmazva a darabszám hibás lenne.
+  /// Helyi törlési jelzések a megadott azonosítók nélkül.
+  static Map<String, DateTime> _without(Map<String, String> deleted, Set<String> ids) => {
+    for (final e in parseTombstones(deleted).entries)
+      if (!ids.contains(e.key)) e.key: e.value,
+  };
+
   static List<Map<String, dynamic>> _uniqueSplits(List<Map<String, dynamic>> splits) {
     final seen = <String>{};
     return [
@@ -422,23 +445,47 @@ class SyncService extends ChangeNotifier {
     if (data['splits'] is List) {
       await portfolio.replaceAllSplits([for (final j in _maps(data['splits'])) ?SplitRecord.fromJson(j)]);
     }
-    // A törlési jelzések a csomag szerint (régi csomagban nincs: a helyiek maradnak).
-    if (data['deleted'] is Map) await portfolio.replaceAllDeleted(parseTombstones(data['deleted']));
+    // A törlési jelzések a csomag szerint; régi csomagban nincsenek: a helyiek
+    // maradnak, a csomagban szereplő tételeké nélkül (különben később törölnék).
+    await portfolio.replaceAllDeleted(
+      data['deleted'] is Map
+          ? parseTombstones(data['deleted'])
+          : _without(portfolio.deletedJson, {
+              for (final key in ['lots', 'dividends', 'splits'])
+                for (final j in _maps(data[key])) '${j['id']}',
+            }),
+    );
     await alerts.replaceAll([for (final j in _maps(data['alerts'])) ?PriceAlert.fromJson(j)]);
-    if (data['alerts_deleted'] is Map) await alerts.replaceAllDeleted(parseTombstones(data['alerts_deleted']));
+    await alerts.replaceAllDeleted(
+      data['alerts_deleted'] is Map
+          ? parseTombstones(data['alerts_deleted'])
+          : _without(alerts.deletedJson, {for (final j in _maps(data['alerts'])) '${j['id']}'}),
+    );
     await notes.replaceAll({
       for (final e in (data['notes'] as Map? ?? const {}).entries) '${e.key}': ?StockNote.fromJson(e.value),
     });
-    if (data['notes_deleted'] is Map) await notes.replaceAllDeleted(parseTombstones(data['notes_deleted']));
+    await notes.replaceAllDeleted(
+      data['notes_deleted'] is Map
+          ? parseTombstones(data['notes_deleted'])
+          : _without(notes.deletedJson, {...?(data['notes'] as Map?)?.keys.map((k) => '$k')}),
+    );
     return kept;
   }
 
   /// Feltöltés csak akkor, ha a szerveren még a [base] változat van (különben 409).
   Future<void> _push(Map<String, dynamic> data, {required DateTime? base}) async {
+    final changes = _changes;
     final at = await backend.putSync(data, conditional: true, base: base);
     _last = at;
     _syncedEmail = account.email;
-    _setDirty(false);
+    // A feltöltés közben történt változás még nem ment fel: piszkos marad, és
+    // hamarosan újra szinkronizálunk.
+    if (_changes == changes) {
+      _setDirty(false);
+    } else if (account.isSignedIn) {
+      _timer?.cancel();
+      _timer = Timer(pushDelay, () => unawaited(syncNow()));
+    }
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_lastKey, at.toIso8601String());
     await prefs.setString(_emailKey, account.email ?? '');

@@ -160,7 +160,14 @@ class DividendRecord {
 /// (10:1 = tízszerezés, 1:10 = összevonás). A [date] előtti tranzakciók
 /// darabszáma szorzódik, darabonkénti ára osztódik – a bekerülési érték marad.
 class SplitRecord {
-  const SplitRecord({required this.id, required this.symbol, required this.from, required this.to, required this.date});
+  const SplitRecord({
+    required this.id,
+    required this.symbol,
+    required this.from,
+    required this.to,
+    required this.date,
+    this.edited,
+  });
 
   final String id;
   final String symbol;
@@ -169,6 +176,10 @@ class SplitRecord {
 
   /// A felaprózás napja (éjfél): a létrehozáskor (`addSplit`, `fromJson`) kerekítve.
   final DateTime date;
+
+  /// Mikor állították vissza utoljára (visszavonás, mentés): szinkronkor egy
+  /// korábbi törlési jelzés nem viszi el.
+  final DateTime? edited;
 
   /// Érvényes arány: mindkét oldal legalább 1, és nem egyenlők. Minden belépési
   /// pont (dialógus, CSV, tároló, szinkron) ezt használja.
@@ -187,6 +198,7 @@ class SplitRecord {
     'from': from,
     'to': to,
     'date': date.toIso8601String().substring(0, 10),
+    if (edited != null) 'edited': edited!.toUtc().toIso8601String(),
   };
 
   static SplitRecord? fromJson(Map<String, dynamic> j) {
@@ -200,6 +212,7 @@ class SplitRecord {
       from: from,
       to: to,
       date: DateTime(date.year, date.month, date.day),
+      edited: DateTime.tryParse(j['edited'] as String? ?? ''),
     );
   }
 
@@ -902,6 +915,8 @@ class PortfolioStore extends ChangeNotifier {
     // Újratöltéskor a korábbi minta-tételek helyére (nem ismétlődnek az azonosítók).
     _dropSample();
     final today = now ?? DateTime.now();
+    // Újabbnak jelölve, hogy egy korábbi eltávolítás szinkronizált jelzése ne vigye el.
+    final stamp = DateTime.now().toUtc();
     DateTime ago(int days) {
       final d = today.subtract(Duration(days: days));
       return DateTime(d.year, d.month, d.day);
@@ -918,6 +933,7 @@ class PortfolioStore extends ChangeNotifier {
           sell: sell,
           account: symbol == 'OTP' ? 'TBSZ' : null,
           fee: ccy == 'USD' ? 1.5 : 0,
+          edited: stamp,
         );
     _lots.addAll([
       lot('a1', 'AAPL', 12, 168.40, 'USD', 700),
@@ -935,6 +951,7 @@ class PortfolioStore extends ChangeNotifier {
             amount: i == 0 ? 3.0 : 2.0,
             currency: 'USD',
             date: ago(days),
+            edited: stamp,
           ),
         DividendRecord(
           id: '${samplePrefix}otp',
@@ -943,6 +960,7 @@ class PortfolioStore extends ChangeNotifier {
           currency: 'HUF',
           date: ago(150),
           account: 'TBSZ',
+          edited: stamp,
         ),
       ])
       ..sort(_newestFirst);
@@ -1099,8 +1117,11 @@ class PortfolioStore extends ChangeNotifier {
   Future<void> restoreSplit(SplitRecord s) async {
     if (_splits.any((x) => x.id == s.id || x.key == s.key)) return;
     _deleted.remove(s.id);
+    // Újabbnak jelölve, hogy egy már szinkronizált törlési jelzés se vigye el.
     _splits
-      ..add(s)
+      ..add(
+        SplitRecord(id: s.id, symbol: s.symbol, from: s.from, to: s.to, date: s.date, edited: DateTime.now().toUtc()),
+      )
       ..sort(_oldestFirst);
     notifyListeners();
     await _save();

@@ -45,16 +45,34 @@ class Backup {
       alerts: s.alerts,
       notes: s.notes,
     );
-    // A mentés után törölt tételek visszajönnek: a törlési jelzésük kimarad, és
-    // a tétel újabbnak jelölve, hogy egy másik eszköz jelzése se vigye el újra.
+    // A mentés után törölt (most hiányzó) tételek visszajönnek: a törlési jelzésük
+    // kimarad, és a tétel újabbnak jelölve, hogy egy másik eszköz jelzése se vigye
+    // el újra. A most is meglévőt a szokásos összefésülés kezeli (az újabb nyer).
     final deleted = (now['deleted'] as Map? ?? const {}).cast<String, dynamic>();
+    final present = {
+      for (final key in ['lots', 'dividends', 'splits'])
+        for (final m in (now[key] as List? ?? const [])) '${(m as Map)['id']}',
+    };
     final stamp = DateTime.now().toUtc().toIso8601String();
     final revived = <String>{};
-    List<Object?> revive(Object? items) => [
-      for (final m in items is List ? items : const [])
-        if (m is Map && deleted.containsKey('${m['id']}') && revived.add('${m['id']}')) {...m, 'edited': stamp} else m,
-    ];
-    final fromBackup = {...backup, 'lots': revive(backup['lots']), 'dividends': revive(backup['dividends'])};
+    List<Object?> revive(Object? items) {
+      final out = <Object?>[];
+      for (final m in items is List ? items : const []) {
+        final id = m is Map ? '${m['id']}' : '';
+        if (m is Map && deleted.containsKey(id) && !present.contains(id)) {
+          revived.add(id);
+          out.add({...m, 'edited': stamp});
+        } else {
+          out.add(m);
+        }
+      }
+      return out;
+    }
+
+    final fromBackup = {
+      ...backup,
+      for (final key in ['lots', 'dividends', 'splits']) key: revive(backup[key]),
+    };
     final current = {
       ...now,
       'deleted': {

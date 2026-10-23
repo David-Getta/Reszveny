@@ -5,13 +5,22 @@ library;
 
 const tombstoneDays = 180;
 
-/// A jelzések JSON-alakja, a lejártak nélkül.
+/// Legfeljebb ennyi (a legújabb) jelzés megy tovább, hogy egy nagy import
+/// többszöri visszavonása se fújja fel a szinkron-csomagot (a szerveren 512 KB).
+const maxTombstones = 1000;
+
+/// A jelzések JSON-alakja, a lejártak nélkül, a legújabbak közül [maxTombstones].
 Map<String, String> tombstonesJson(Map<String, DateTime> deleted, {DateTime? now}) {
   final cutoff = (now ?? DateTime.now()).toUtc().subtract(const Duration(days: tombstoneDays));
-  return {
+  final live = [
     for (final e in deleted.entries)
-      if (e.value.isAfter(cutoff)) e.key: e.value.toUtc().toIso8601String(),
-  };
+      if (e.value.isAfter(cutoff)) e,
+  ];
+  if (live.length > maxTombstones) {
+    live.sort((a, b) => b.value.compareTo(a.value));
+    live.removeRange(maxTombstones, live.length);
+  }
+  return {for (final e in live) e.key: e.value.toUtc().toIso8601String()};
 }
 
 /// Jelzések beolvasása (a hibás bejegyzés kimarad).
