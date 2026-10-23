@@ -56,15 +56,14 @@ class _CandidateList extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(c.companyName),
+                        // A bizonyosság itt (nem a sor végén): nagy betűméretnél a sor vége
+                        // elfogyasztaná a teljes szélességet.
+                        Text(l10n.confidencePercent((c.confidence * 100).round()), style: theme.textTheme.bodySmall),
                         if (c.evidence != null) Text(c.evidence!, style: theme.textTheme.bodySmall),
                       ],
                     ),
-                    trailing: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(l10n.confidencePercent((c.confidence * 100).round())),
-                        if (candidates.length > 1)
-                          IconButton(
+                    trailing: candidates.length > 1
+                        ? IconButton(
                             key: ValueKey('cand-fav-${c.symbol}'),
                             tooltip: prefs.isFavorite(c.symbol) ? l10n.removeFromFavorites : l10n.addToFavorites,
                             icon: Icon(
@@ -72,9 +71,8 @@ class _CandidateList extends StatelessWidget {
                               color: prefs.isFavorite(c.symbol) ? theme.colorScheme.primary : null,
                             ),
                             onPressed: () => prefs.toggleFavorite(c.symbol),
-                          ),
-                      ],
-                    ),
+                          )
+                        : null,
                     onTap: () => Navigator.of(context).pop(c),
                   ),
                 ),

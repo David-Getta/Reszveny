@@ -130,9 +130,14 @@ class _UpcomingEventsSectionState extends State<UpcomingEventsSection> {
       listenable: services.events,
       builder: (context, _) {
         final now = DateTime.now();
-        final soon = services.events.events
+        // Az éjfél előtt betöltött lista tegnapi eseménye már nem „ma”.
+        final upcoming = services.events.events.where((e) => calendarDaysBetween(now, e.date) >= 0).toList();
+        final within = upcoming
             .where((e) => calendarDaysBetween(now, e.date) < UpcomingEventsSection.shownDays)
             .toList();
+        // Ha 30 napon belül nincs, a legközelebbi akkor is látszik (és vele a „Mind”: a
+        // lista és a naptár-export a jelentési szezonok között is elérhető).
+        final soon = within.isNotEmpty ? within : upcoming.take(1).toList();
         if (soon.isEmpty) return const SizedBox.shrink();
         return Column(
           key: const ValueKey('home-events'),
@@ -211,7 +216,14 @@ class EventTile extends StatelessWidget {
       ),
       title: Row(
         children: [
-          Text(e.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
+          Flexible(
+            child: Text(
+              e.symbol,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(fontWeight: FontWeight.w700),
+            ),
+          ),
           const SizedBox(width: 8),
           Expanded(
             child: Text(
@@ -282,7 +294,9 @@ class EventsPage extends StatelessWidget {
       body: ListenableBuilder(
         listenable: services.events,
         builder: (context, _) {
-          final events = services.events.events;
+          // A már elmúlt (éjfél előtt betöltött) események nélkül.
+          final now = DateTime.now();
+          final events = services.events.events.where((e) => calendarDaysBetween(now, e.date) >= 0).toList();
           return RefreshIndicator(
             onRefresh: () => services.events.refresh(force: true),
             child: CenteredScroll(

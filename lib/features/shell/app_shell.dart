@@ -41,7 +41,7 @@ import '../../core/util/dates.dart';
 class AppShell extends StatefulWidget {
   const AppShell({super.key});
 
-  static const double sidebarBreakpoint = 860;
+  static const double sidebarBreakpoint = HomePage.sidebarBreakpoint;
   static const double sidebarWidth = 248;
 
   @override
@@ -212,6 +212,12 @@ class _AppShellState extends State<AppShell> {
     if (page == null || !mounted) return;
     await _services!.desktop.showFullWindow();
     if (!mounted) return;
+    // Telefonos elrendezésben a Portfólió fül (nem a keresés fülére tett új oldal).
+    if (page == ShellPage.portfolio && MediaQuery.sizeOf(context).width < AppShell.sidebarBreakpoint) {
+      if (_tab != 1) _selectTab(1);
+      _tabKeys[0].currentState?.popUntil((r) => r.isFirst);
+      return;
+    }
     _goHome();
     if (page == ShellPage.portfolio) _openPortfolio();
   }
@@ -475,7 +481,8 @@ extension on _AppShellState {
         key: _navigatorKey,
         onGenerateRoute: (settings) => MaterialPageRoute<void>(
           settings: settings,
-          builder: (_) => HomePage(onOpenSymbol: _openSymbol, showAppBarActions: !wide),
+          // Az elrendezést a kezdőlap maga követi (forgatás, átméretezés után is).
+          builder: (_) => HomePage(onOpenSymbol: _openSymbol),
         ),
       );
       if (!wide) {

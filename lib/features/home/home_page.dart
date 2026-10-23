@@ -36,12 +36,17 @@ import 'history_section.dart';
 /// Kezdőképernyő: nagy üdvözlő sor és egy keresősáv (ticker vagy cégnév,
 /// kép csatolása, kamera) – a Claude kezdőképernyőjének mintájára.
 class HomePage extends StatefulWidget {
-  const HomePage({super.key, required this.onOpenSymbol, this.showAppBarActions = true});
+  const HomePage({super.key, required this.onOpenSymbol, this.showAppBarActions});
 
   final ValueChanged<StockCandidate> onOpenSymbol;
 
   /// Keskeny elrendezésben (nincs oldalsáv) a beállítások az AppBarban.
-  final bool showAppBarActions;
+  /// Telefonos elrendezés (saját fejléccel és gyorsgombokkal); `null`: az ablak
+  /// szélességéből, így forgatás és átméretezés után is a mostani elrendezéshez igazodik.
+  final bool? showAppBarActions;
+
+  /// Az oldalsáv ettől a szélességtől látszik (mint a keretnél).
+  static const double sidebarBreakpoint = 860;
 
   /// Jelzés a keresőmező fókuszálására (billentyűparancsból); minden érték új kérés.
   static final focusSearch = ValueNotifier<int>(0);
@@ -109,8 +114,15 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     super.dispose();
   }
 
+  /// A javaslatkérések sorszáma: a törlés (Enter, választás) után megérkező régi
+  /// találat ne jelenjen meg újra az eredmények fölött.
+  int _suggestSeq = 0;
+
+  bool get _showActions => widget.showAppBarActions ?? MediaQuery.sizeOf(context).width < HomePage.sidebarBreakpoint;
+
   void _clearSuggestions() {
     _debounce?.cancel();
+    _suggestSeq++;
     _suggestFor = '';
     if (_suggestions.isNotEmpty || _aiSuggestion != null) {
       setState(() {
@@ -137,18 +149,22 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     final services = AppServices.of(context);
     final prefs = services.preferences;
     final upper = q.toUpperCase();
+    // Tickerenként egyszer (két leírás – „gold etf”, „gold fund” – ugyanarra mutathat,
+    // és a sorok kulcsa a ticker).
+    final localSeen = <String>{};
     final local = [
       for (final s in {...prefs.favorites, ...prefs.recent})
-        if (s.startsWith(upper)) StockCandidate(symbol: s, companyName: s, confidence: 1),
+        if (s.startsWith(upper) && localSeen.add(s)) StockCandidate(symbol: s, companyName: s, confidence: 1),
       // Korábban megfejtett leírás („tech 100 etf” → QQQ): azonnal, AI nélkül.
       for (final r in prefs.resolvedStartingWith(q))
-        StockCandidate(symbol: r.symbol, companyName: r.name, confidence: 1),
+        if (localSeen.add(r.symbol)) StockCandidate(symbol: r.symbol, companyName: r.name, confidence: 1),
     ].take(3).toList();
     setState(() {
       _suggestions = local;
       _aiSuggestion = null;
     });
     final canAsk = DescriptionResolver.looksLikeDescription(q) && services.config.hasAnthropicKey;
+    final seq = ++_suggestSeq;
     _debounce = Timer(suggestDelay, () async {
       List<StockCandidate> found = const [];
       try {
@@ -156,7 +172,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       } catch (_) {
         // Javaslat nélkül is kereshet (Enterrel).
       }
-      if (!mounted || _query.text.trim() != q) return;
+      if (!mounted || _query.text.trim() != q || seq != _suggestSeq) return;
       final seen = {for (final c in local) c.symbol};
       setState(() {
         _suggestions = [
@@ -342,7 +358,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     final supportsCamera = services.capture.supportsCamera;
 
     return Scaffold(
-      appBar: widget.showAppBarActions
+      appBar: _showActions
           ? desktopAppBar(context, hasSidebar: false, title: Text(l10n.appTitle))
           : PreferredSize(preferredSize: const Size.fromHeight(28), child: const WindowDragArea()),
       body: CallbackShortcuts(
@@ -362,7 +378,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const UpdateBanner(),
-                  if (widget.showAppBarActions)
+                  if (_showActions)
                     const Align(alignment: AlignmentDirectional.centerStart, child: UsageChip(compact: true)),
                   const SizedBox(height: 48),
                   Row(
@@ -383,32 +399,47 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                     ],
                   ),
                   const SizedBox(height: 28),
-                  SearchField(
-                    controller: _query,
-                    focusNode: _searchFocus,
-                    hint: l10n.searchHint,
-                    autofocus: true,
-                    enabled: !_busy,
-                    onSubmitted: _submit,
-                    leading: [
-                      _PillAction(
-                        icon: Icons.add_photo_alternate_outlined,
-                        tooltip: l10n.attachImage,
-                        onTap: _busy ? null : () => _capture(false),
+                  // Esc a keresőmezőben: a javaslatok és a találatok eltűnnek.
+                  Shortcuts(
+                    shortcuts: homeShortcuts,
+                    child: Actions(
+                      actions: {
+                        ClearResultsIntent: CallbackAction<ClearResultsIntent>(
+                          onInvoke: (_) {
+                            _clearSuggestions();
+                            setState(() => _results = null);
+                            return null;
+                          },
+                        ),
+                      },
+                      child: SearchField(
+                        controller: _query,
+                        focusNode: _searchFocus,
+                        hint: l10n.searchHint,
+                        autofocus: true,
+                        enabled: !_busy,
+                        onSubmitted: _submit,
+                        leading: [
+                          _PillAction(
+                            icon: Icons.add_photo_alternate_outlined,
+                            tooltip: l10n.attachImage,
+                            onTap: _busy ? null : () => _capture(false),
+                          ),
+                          if (supportsCamera)
+                            _PillAction(
+                              icon: Icons.photo_camera_outlined,
+                              tooltip: l10n.takePhoto,
+                              onTap: _busy ? null : () => _capture(true),
+                            ),
+                          if (DesktopIntegration.isSupported)
+                            _PillAction(
+                              icon: Icons.content_paste_rounded,
+                              tooltip: l10n.pasteImage,
+                              onTap: _busy ? null : _pasteImage,
+                            ),
+                        ],
                       ),
-                      if (supportsCamera)
-                        _PillAction(
-                          icon: Icons.photo_camera_outlined,
-                          tooltip: l10n.takePhoto,
-                          onTap: _busy ? null : () => _capture(true),
-                        ),
-                      if (DesktopIntegration.isSupported)
-                        _PillAction(
-                          icon: Icons.content_paste_rounded,
-                          tooltip: l10n.pasteImage,
-                          onTap: _busy ? null : _pasteImage,
-                        ),
-                    ],
+                    ),
                   ),
                   if ((_suggestions.isNotEmpty || _aiSuggestion != null) && !_busy)
                     Card(
@@ -478,7 +509,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                           if (show('portfolio')) PortfolioSummaryCard(onOpenSymbol: widget.onOpenSymbol),
                           if (show('favorites')) FavoritesStrip(onOpenSymbol: widget.onOpenSymbol),
                           // Telefonon nincs oldalsáv: a legutóbbiak itt látszanak.
-                          if (widget.showAppBarActions) RecentChips(onOpenSymbol: widget.onOpenSymbol),
+                          if (_showActions) RecentChips(onOpenSymbol: widget.onOpenSymbol),
                           if (show('events')) UpcomingEventsSection(onOpenSymbol: widget.onOpenSymbol),
                           if (show('results')) RecentResultsSection(onOpenSymbol: widget.onOpenSymbol),
                           if (show('news')) WatchNewsSection(onOpenSymbol: widget.onOpenSymbol),
@@ -492,7 +523,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                     const SizedBox(height: 24),
                     _DemoBanner(symbols: DemoMarketDataProvider.supportedSymbols.join(', ')),
                   ],
-                  if (DesktopIntegration.isSupported && widget.showAppBarActions) ...[
+                  if (DesktopIntegration.isSupported && _showActions) ...[
                     const SizedBox(height: 24),
                     Text(
                       hotkeyHintText(l10n, services),

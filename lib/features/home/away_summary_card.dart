@@ -120,7 +120,7 @@ class AwaySummaryCard extends StatelessWidget {
                         children: [
                           Icon(Icons.notifications_active_outlined, size: 16, color: p.accent),
                           const SizedBox(width: 6),
-                          Text(l10n.awayAlerts(r.alertsTriggered), style: theme.textTheme.bodyMedium),
+                          Flexible(child: Text(l10n.awayAlerts(r.alertsTriggered), style: theme.textTheme.bodyMedium)),
                           Icon(Icons.chevron_right_rounded, size: 16, color: p.muted),
                         ],
                       ),

@@ -66,6 +66,8 @@ class EventsService extends ChangeNotifier {
     // Új vétel, eladás vagy osztalék: a lista a gyorsítótárból azonnal frissül
     // (a már ismert gyorsjelentés-dátumokhoz nem kell új lekérés).
     portfolio.addListener(_onPortfolioChanged);
+    // A kedvencek változása is (új kedvenc dátuma, levett kedvenc eltűnése).
+    preferences.addListener(_onPortfolioChanged);
   }
 
   final MarketDataProvider marketData;
@@ -107,7 +109,7 @@ class EventsService extends ChangeNotifier {
 
   /// Amire a lista épül a portfólióból: a tranzakciók és az osztalékok
   /// (a javításuk is). Más változás (készpénz, jegyzet) nem indít újraépítést.
-  String _fingerprint() => '${portfolio.holdingsKey}|${portfolio.dividendsKey}';
+  String _fingerprint() => '${portfolio.holdingsKey}|${portfolio.dividendsKey}|${preferences.favorites.join(',')}';
   String _seen = '';
 
   /// Új vétel, eladás vagy osztalék: a lista a gyorsítótárból újraépül; lekérés
@@ -127,6 +129,7 @@ class EventsService extends ChangeNotifier {
   @override
   void dispose() {
     portfolio.removeListener(_onPortfolioChanged);
+    preferences.removeListener(_onPortfolioChanged);
     super.dispose();
   }
 

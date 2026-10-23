@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.280)
+# Változásjegyzék (0.2.130 → 0.2.281)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Kezdőképernyő: egy huszonhetedik kódátnézés javításai
+
+- **0.2.281**: a keresési javaslatok nem omlanak össze, ha két korábban megfejtett leírás („gold etf”, „gold
+  fund”) ugyanarra a részvényre mutat, és egy Enter után későn megérkező javaslat sem takarja el a találatokat;
+  Esc törli a találatokat. A felismert jelöltek választólapja nagy betűméretnél (200%) keskeny telefonon is
+  kirajzolódik. A kezdőlap forgatás és ablak-átméretezés után is a mostani elrendezést követi (eddig a telefonos
+  nézetből hiányoztak a legutóbbi keresések, a szélesen pedig kétszer látszottak). Telefonon a portfólió-értesítés
+  a Portfólió fület nyitja meg (eddig a keresés fülére került egy második portfólió-oldal). A közelgő események a
+  kedvencek változását is követik, a „Mind” és a naptár-export akkor is elérhető, ha 30 napon belül nincs
+  esemény, és az éjfél előtt betöltött tegnapi esemény nem „ma”. Keskeny képernyőn, nagy betűvel a távollét
+  riasztás-sora, a mentett elemzés sora és az osztalék-esemény sora sem csordul túl.
 
 ## Portfólió-felület: egy huszonhatodik kódátnézés javításai
 
