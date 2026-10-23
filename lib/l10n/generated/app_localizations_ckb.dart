@@ -2647,6 +2647,16 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'تاقیکردنەوە بە پۆرتفۆلیۆی نموونە';
+
+  @override
+  String get portfolioSampleBanner =>
+      'ئەمە پۆرتفۆلیۆیەکی نموونەیە. کڕینەکانی خۆت لە تەنیشتیەوە زیاد بکە، یان لایببە.';
+
+  @override
+  String get portfolioSampleRemove => 'لابردنی نموونە';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

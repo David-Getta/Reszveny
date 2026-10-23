@@ -2648,6 +2648,16 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Санҷидан бо портфели намунавӣ';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ин портфели намунавӣ аст. Дар паҳлӯи он харидҳои худро илова кунед ё онро хориҷ кунед.';
+
+  @override
+  String get portfolioSampleRemove => 'Хориҷ кардани намуна';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

@@ -765,6 +765,74 @@ class PortfolioStore extends ChangeNotifier {
   }
 
   /// Az összes vétel cseréje (szinkronkor a fiók adataira).
+  /// A minta-portfólió tételeinek azonosító-előtagja (így egy gombbal eltávolítható).
+  static const samplePrefix = 'sample_';
+
+  /// Van-e minta-tétel a portfólióban.
+  bool get hasSample =>
+      _lots.any((l) => l.id.startsWith(samplePrefix)) || _dividends.any((d) => d.id.startsWith(samplePrefix));
+
+  /// Minta-portfólió kipróbáláshoz: néhány vétel (egy részvény TBSZ-számlán),
+  /// egy eladás, jutalék és negyedéves osztalékok – a dátumok a mai naphoz
+  /// képest, így az éves hozam, az értékalakulás és a várható osztalék is látszik.
+  Future<void> loadSample({DateTime? now}) async {
+    final today = now ?? DateTime.now();
+    DateTime ago(int days) {
+      final d = today.subtract(Duration(days: days));
+      return DateTime(d.year, d.month, d.day);
+    }
+
+    PortfolioLot lot(String id, String symbol, double q, double price, String ccy, int days, {bool sell = false}) =>
+        PortfolioLot(
+          id: '$samplePrefix$id',
+          symbol: symbol,
+          quantity: q,
+          price: price,
+          currency: ccy,
+          date: ago(days),
+          sell: sell,
+          account: symbol == 'OTP' ? 'TBSZ' : null,
+          fee: ccy == 'USD' ? 1.5 : 0,
+        );
+    _lots.addAll([
+      lot('a1', 'AAPL', 12, 168.40, 'USD', 700),
+      lot('a2', 'AAPL', 4, 231.20, 'USD', 120, sell: true),
+      lot('n1', 'NVDA', 20, 121.80, 'USD', 600),
+      lot('m1', 'MSFT', 4, 415.00, 'USD', 300),
+      lot('o1', 'OTP', 60, 24150, 'HUF', 520),
+    ]);
+    _dividends
+      ..addAll([
+        for (final (i, days) in [290, 200, 110, 20].indexed)
+          DividendRecord(
+            id: '${samplePrefix}d$i',
+            symbol: 'AAPL',
+            amount: i == 0 ? 3.0 : 2.0,
+            currency: 'USD',
+            date: ago(days),
+          ),
+        DividendRecord(
+          id: '${samplePrefix}otp',
+          symbol: 'OTP',
+          amount: 22260,
+          currency: 'HUF',
+          date: ago(150),
+          account: 'TBSZ',
+        ),
+      ])
+      ..sort(_newestFirst);
+    notifyListeners();
+    await _save();
+  }
+
+  /// A minta-portfólió eltávolítása (a saját tételek maradnak).
+  Future<void> removeSample() async {
+    _lots.removeWhere((l) => l.id.startsWith(samplePrefix));
+    _dividends.removeWhere((d) => d.id.startsWith(samplePrefix));
+    notifyListeners();
+    await _save();
+  }
+
   Future<void> replaceAll(List<PortfolioLot> lots) async {
     _lots
       ..clear()

@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Haeba poelo ya selemo e ka dula e le jwalo ({rate}), o tla fihlela sepheo sa hao hoo e ka bang ka selemo sa {year}.",
   "portfolioMaxDrawdown": "Ho theoha ho hoholo ka ho fetisisa",
   "glossMaxDrawdown": "Ho theoha ho hoholo ka ho fetisisa ha boleng ba dishere tsa hao ho tloha tlhorong ya pele ho fihla boemong bo tlase ba hamorao, ntle le phello ya ho reka le ho rekisa ha hao (ho lekantswe ka nako). Ho bontsha hore potefolio ya hao e se e theohile ka botebo bo bokae.",
-  "watchSince": "Ho tloha ha o e kentse ho tseo o di ratang ({date})"
+  "watchSince": "Ho tloha ha o e kentse ho tseo o di ratang ({date})",
+  "portfolioSampleTry": "Leka ka potefolio ya mohlala",
+  "portfolioSampleBanner": "Ena ke potefolio ya mohlala. Kenya ditheko tsa hao pela yona, kapa o e tlose.",
+  "portfolioSampleRemove": "Tlosa mohlala"
 }

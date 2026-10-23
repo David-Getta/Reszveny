@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Niba inyungu ku mwaka igumye uko iri ({rate}), uzagera ku ntego hafi mu mwaka wa {year}.",
   "portfolioMaxDrawdown": "Igabanuka rinini kurusha andi",
   "glossMaxDrawdown": "Igabanuka rinini kurusha andi ry'agaciro k'imigabane yawe, kuva ku gasongero ka mbere kugera ku rwego rwo hasi rwakurikiyeho, hatitawe ku byo waguze n'ibyo wagurishije (bipimwe hashingiwe ku gihe). Ryerekana uko ishoramari ryawe rimaze kumanuka cyane.",
-  "watchSince": "Kuva wawushyira mu byo ukunda ({date})"
+  "watchSince": "Kuva wawushyira mu byo ukunda ({date})",
+  "portfolioSampleTry": "Gerageza n'ishoramari ry'icyitegererezo",
+  "portfolioSampleBanner": "Iri ni ishoramari ry'icyitegererezo. Ongeramo ibyo waguze ubwawe, cyangwa urikureho.",
+  "portfolioSampleRemove": "Kuramo icyitegererezo"
 }

@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Hvis det årlige afkast holder ({rate}), når du målet omkring {year}.",
   "portfolioMaxDrawdown": "Største fald",
   "glossMaxDrawdown": "Det største fald i værdien af dine aktier fra en tidligere top til en senere bund, uden effekten af dine køb og salg (tidsvægtet). Det viser, hvor dybt et dyk din portefølje allerede har været igennem.",
-  "watchSince": "Siden du føjede den til favoritter ({date})"
+  "watchSince": "Siden du føjede den til favoritter ({date})",
+  "portfolioSampleTry": "Prøv med en eksempelportefølje",
+  "portfolioSampleBanner": "Dette er en eksempelportefølje. Tilføj dine egne køb ved siden af, eller fjern den.",
+  "portfolioSampleRemove": "Fjern eksempel"
 }

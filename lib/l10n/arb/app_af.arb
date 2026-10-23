@@ -802,5 +802,8 @@
   "portfolioGoalEta": "As die jaarlikse opbrengs so bly ({rate}), bereik jy dit omstreeks {year}.",
   "portfolioMaxDrawdown": "Grootste daling",
   "glossMaxDrawdown": "Die grootste daling in die waarde van jou aandele van 'n vroeëre hoogtepunt tot 'n latere laagtepunt, sonder die effek van jou aankope en verkope (tydgeweeg). Dit wys hoe diep 'n insinking jou portefeulje al deurgemaak het.",
-  "watchSince": "Sedert jy dit by gunstelinge gevoeg het ({date})"
+  "watchSince": "Sedert jy dit by gunstelinge gevoeg het ({date})",
+  "portfolioSampleTry": "Probeer met ’n voorbeeldportefeulje",
+  "portfolioSampleBanner": "Dit is ’n voorbeeldportefeulje. Voeg jou eie aankope daarby, of verwyder dit.",
+  "portfolioSampleRemove": "Verwyder voorbeeld"
 }

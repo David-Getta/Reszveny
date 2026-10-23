@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Ýyllyk girdejililik şeýle galsa ({rate}), maksada takmynan {year} ýyl töwereginde ýetersiňiz.",
   "portfolioMaxDrawdown": "Iň uly pese gaçyş",
   "glossMaxDrawdown": "Paýnamalaryňyzyň gymmatynyň öňki iň ýokary derejeden soňky iň pes derejä çenli iň uly pese gaçyşy, satyn alyşlaryňyzyň we satyşlaryňyzyň täsiri hasaba alynmazdan (wagt boýunça agramlandyrylan). Portfeliňiziň eýýäm näçe çuň pese gaçyşy başdan geçirendigini görkezýär.",
-  "watchSince": "Saýlananlara goşanyňyzdan bäri ({date})"
+  "watchSince": "Saýlananlara goşanyňyzdan bäri ({date})",
+  "portfolioSampleTry": "Nusga portfel bilen synap gör",
+  "portfolioSampleBanner": "Bu nusga portfel. Onuň ýanyna öz satyn alyşlaryňyzy goşuň ýa-da ony aýyryň.",
+  "portfolioSampleRemove": "Nusgany aýyr"
 }

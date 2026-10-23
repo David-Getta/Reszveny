@@ -2607,6 +2607,16 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'ብናይ ኣብነት ፖርትፎሊዮ ፈትን';
+
+  @override
+  String get portfolioSampleBanner =>
+      'እዚ ናይ ኣብነት ፖርትፎሊዮ እዩ። ናይ ገዛእ ርእስኹም ዕድግታት ኣብ ጎኑ ወስኹ፣ ወይ ኣልግስዎ።';
+
+  @override
+  String get portfolioSampleRemove => 'ኣብነት ኣልግስ';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

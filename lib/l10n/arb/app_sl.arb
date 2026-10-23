@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Če se letni donos ohrani ({rate}), boste cilj dosegli okoli leta {year}.",
   "portfolioMaxDrawdown": "Največji padec",
   "glossMaxDrawdown": "Največji padec vrednosti vaših delnic od prejšnjega vrha do poznejšega dna, brez vpliva vaših nakupov in prodaj (časovno tehtano). Pokaže, kako globok padec je vaš portfelj že doživel.",
-  "watchSince": "Od dodajanja med priljubljene ({date})"
+  "watchSince": "Od dodajanja med priljubljene ({date})",
+  "portfolioSampleTry": "Preizkusi z vzorčnim portfeljem",
+  "portfolioSampleBanner": "To je vzorčni portfelj. Poleg njega dodajte svoje nakupe ali ga odstranite.",
+  "portfolioSampleRemove": "Odstrani vzorec"
 }

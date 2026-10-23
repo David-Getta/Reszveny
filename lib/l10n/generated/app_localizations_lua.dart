@@ -2654,6 +2654,16 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Teta ne portefeuille wa tshilejilu';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Eu udi portefeuille wa tshilejilu. Bueja bintu biuvua musumbe ku luseke luende, anyi umbusha.';
+
+  @override
+  String get portfolioSampleRemove => 'Umbusha tshilejilu';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

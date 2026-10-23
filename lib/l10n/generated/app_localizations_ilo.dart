@@ -2667,6 +2667,16 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Padasen babaen ti sample a portfolio';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Daytoy ket sample a portfolio. Inayon dagiti bukodmo a gatang iti abayna, wenno ikkaten daytoy.';
+
+  @override
+  String get portfolioSampleRemove => 'Ikkaten ti sample';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

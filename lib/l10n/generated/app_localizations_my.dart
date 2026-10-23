@@ -2637,6 +2637,16 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'နမူနာ ပေါ့ဖိုလီယိုဖြင့် စမ်းကြည့်ရန်';
+
+  @override
+  String get portfolioSampleBanner =>
+      'ဤသည်မှာ နမူနာ ပေါ့ဖိုလီယို ဖြစ်သည်။ ၎င်းနှင့်အတူ သင့်ကိုယ်ပိုင် ဝယ်ယူမှုများကို ထည့်ပါ၊ သို့မဟုတ် ၎င်းကို ဖယ်ရှားပါ။';
+
+  @override
+  String get portfolioSampleRemove => 'နမူနာ ဖယ်ရှားရန်';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

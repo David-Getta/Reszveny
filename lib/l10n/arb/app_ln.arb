@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Soki litomba ya mobu etikali ndenge wana ({rate}), okokokisa mokano pene na mobu {year}.",
   "portfolioMaxDrawdown": "Kokita ya monene koleka",
   "glossMaxDrawdown": "Kokita ya monene koleka ya motuya ya ba-action na yo, longwa na likolo moko ya liboso kino na nse moko ya nsima, kozanga kotánga bosombi mpe boteki na yo (epimami na ntango). Emonisaka ndenge portefeuille na yo esilaki kokita na mozindo.",
-  "watchSince": "Banda obakisaki yango na oyo olingaka ({date})"
+  "watchSince": "Banda obakisaki yango na oyo olingaka ({date})",
+  "portfolioSampleTry": "Meka na portefeuille ya ndakisa",
+  "portfolioSampleBanner": "Oyo ezali portefeuille ya ndakisa. Bakisa biloko osombaki yo moko pembeni na yango, to longola yango.",
+  "portfolioSampleRemove": "Longola ndakisa"
 }

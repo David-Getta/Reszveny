@@ -2654,6 +2654,16 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Subukan gamit ang sample na portfolio';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Isa itong sample na portfolio. Idagdag ang sarili mong mga binili sa tabi nito, o alisin ito.';
+
+  @override
+  String get portfolioSampleRemove => 'Alisin ang sample';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

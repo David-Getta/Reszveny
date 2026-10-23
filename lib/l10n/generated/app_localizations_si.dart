@@ -2643,6 +2643,16 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'නියැදි කළඹකින් අත්හදා බලන්න';
+
+  @override
+  String get portfolioSampleBanner =>
+      'මෙය නියැදි කළඹකි. ඒ සමඟ ඔබේම මිලදී ගැනීම් එක් කරන්න, නැතහොත් එය ඉවත් කරන්න.';
+
+  @override
+  String get portfolioSampleRemove => 'නියැදිය ඉවත් කරන්න';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

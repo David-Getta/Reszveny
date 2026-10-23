@@ -2716,6 +2716,16 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Wypróbuj na przykładowym portfelu';
+
+  @override
+  String get portfolioSampleBanner =>
+      'To jest przykładowy portfel. Dodaj obok własne zakupy albo go usuń.';
+
+  @override
+  String get portfolioSampleRemove => 'Usuń przykład';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

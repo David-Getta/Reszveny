@@ -2645,6 +2645,16 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Try am with sample portfolio';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Dis na sample portfolio. Add wetin you buy join am, or comot am.';
+
+  @override
+  String get portfolioSampleRemove => 'Comot sample';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

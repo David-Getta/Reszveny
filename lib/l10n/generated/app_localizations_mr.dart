@@ -2644,6 +2644,16 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'नमुना पोर्टफोलिओसह वापरून पहा';
+
+  @override
+  String get portfolioSampleBanner =>
+      'हा नमुना पोर्टफोलिओ आहे. त्यासोबत तुमची स्वतःची खरेदी जोडा, किंवा तो काढा.';
+
+  @override
+  String get portfolioSampleRemove => 'नमुना काढा';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

@@ -2652,6 +2652,16 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'నమూనా పోర్ట్‌ఫోలియోతో ప్రయత్నించు';
+
+  @override
+  String get portfolioSampleBanner =>
+      'ఇది నమూనా పోర్ట్‌ఫోలియో. దీనితో పాటు మీ సొంత కొనుగోళ్లను జోడించండి, లేదా దీన్ని తీసివేయండి.';
+
+  @override
+  String get portfolioSampleRemove => 'నమూనాను తీసివేయి';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

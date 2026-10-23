@@ -2647,6 +2647,16 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Jaribu ukitumia jalada la mfano';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Hili ni jalada la hisa la mfano. Ongeza ununuzi wako mwenyewe kando yake, au liondoe.';
+
+  @override
+  String get portfolioSampleRemove => 'Ondoa mfano';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

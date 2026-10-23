@@ -4555,6 +4555,24 @@ abstract class AppLocalizations {
   /// **'Since you added it ({date})'**
   String watchSince(String date);
 
+  /// Button on the empty portfolio page: loads a few sample purchases, a sale and dividends to try the features; it can be removed with one tap.
+  ///
+  /// In en, this message translates to:
+  /// **'Try with a sample portfolio'**
+  String get portfolioSampleTry;
+
+  /// Banner on the portfolio page while the sample portfolio is loaded.
+  ///
+  /// In en, this message translates to:
+  /// **'This is a sample portfolio. Add your own purchases next to it, or remove it.'**
+  String get portfolioSampleBanner;
+
+  /// Button in the sample portfolio banner: removes the sample transactions and dividends (your own stay).
+  ///
+  /// In en, this message translates to:
+  /// **'Remove sample'**
+  String get portfolioSampleRemove;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

@@ -2712,6 +2712,16 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Išbandyti su pavyzdiniu portfeliu';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Tai pavyzdinis portfelis. Pridėkite prie jo savo pirkimus arba jį pašalinkite.';
+
+  @override
+  String get portfolioSampleRemove => 'Pašalinti pavyzdį';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Su benefis bu at bi desee noonu ({rate}), dinga agsi ci sa jublu ci wetu at {year}.",
   "portfolioMaxDrawdown": "Wàcc gi gëna mag",
   "glossMaxDrawdown": "Wàcc gi gëna mag ci njëgu sa aksiyoŋ yi, dale ci benn kaw bu jiitu ba ci benn suuf bu ñëw ginnaaw, te say jënd ak say jaay bokkuñu ci (ñu natt ko ci jamono). Dafay wone ni sa aksiyoŋ yi wàcce bu xóot ba léegi.",
-  "watchSince": "Li dale ba nga ko yokk ci yi ma gënal ({date})"
+  "watchSince": "Li dale ba nga ko yokk ci yi ma gënal ({date})",
+  "portfolioSampleTry": "Jéem ak aksiyoŋ yu misaal",
+  "portfolioSampleBanner": "Lii ay aksiyoŋ yu misaal la. Yokk li nga jënd ci wetam, walla far ko.",
+  "portfolioSampleRemove": "Far misaal bi"
 }

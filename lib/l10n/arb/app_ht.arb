@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Si rannman anyèl la kenbe ({rate}), w ap rive nan objektif la anviwon {year}.",
   "portfolioMaxDrawdown": "Pi gwo bès",
   "glossMaxDrawdown": "Pi gwo bès valè aksyon ou yo soti nan yon pi wo nivo anvan rive nan yon pi ba nivo apre, san efè acha ak vant ou yo (peze selon tan). Li montre ki jan bès pòtfèy ou a deja travèse a te fon.",
-  "watchSince": "Depi ou te ajoute l nan favori ({date})"
+  "watchSince": "Depi ou te ajoute l nan favori ({date})",
+  "portfolioSampleTry": "Eseye ak yon pòtfèy egzanp",
+  "portfolioSampleBanner": "Sa a se yon pòtfèy egzanp. Ajoute pwòp acha ou yo bò kote l, oswa retire l.",
+  "portfolioSampleRemove": "Retire egzanp lan"
 }

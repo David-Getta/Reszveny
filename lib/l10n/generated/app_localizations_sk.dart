@@ -2713,6 +2713,16 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Vyskúšať s ukážkovým portfóliom';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Toto je ukážkové portfólio. Pridajte k nemu svoje vlastné nákupy alebo ho odstráňte.';
+
+  @override
+  String get portfolioSampleRemove => 'Odstrániť ukážku';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

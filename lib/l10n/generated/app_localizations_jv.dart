@@ -2650,6 +2650,16 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Coba nganggo portofolio conto';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Iki portofolio conto. Tambahake tukon sampeyan dhewe ing sandhinge, utawa busak.';
+
+  @override
+  String get portfolioSampleRemove => 'Busak conto';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

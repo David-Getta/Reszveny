@@ -802,5 +802,8 @@
   "portfolioGoalEta": "若年化回報率維持不變（{rate}），預計約 {year} 年達成目標。",
   "portfolioMaxDrawdown": "最大跌幅",
   "glossMaxDrawdown": "你持股市值由先前高位至其後低位的最大跌幅，已剔除買入及賣出的影響（時間加權）。顯示你的投資組合曾經歷過多深的下跌。",
-  "watchSince": "自加入收藏以來（{date}）"
+  "watchSince": "自加入收藏以來（{date}）",
+  "portfolioSampleTry": "用示範投資組合試用",
+  "portfolioSampleBanner": "這是示範投資組合。你可以另外加入自己的買入記錄，或將其移除。",
+  "portfolioSampleRemove": "移除示範"
 }

@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Yıllık getiri böyle sürerse ({rate}), hedefe {year} yılı civarında ulaşırsınız.",
   "portfolioMaxDrawdown": "En büyük düşüş",
   "glossMaxDrawdown": "Hisselerinizin değerinin önceki bir zirveden sonraki bir dibe kadar yaşadığı en büyük düşüş; alım ve satımlarınızın etkisi olmadan (zaman ağırlıklı). Portföyünüzün şimdiye kadar ne kadar derin bir düşüş yaşadığını gösterir.",
-  "watchSince": "Favorilere eklediğinizden bu yana ({date})"
+  "watchSince": "Favorilere eklediğinizden bu yana ({date})",
+  "portfolioSampleTry": "Örnek portföyle dene",
+  "portfolioSampleBanner": "Bu bir örnek portföy. Yanına kendi alımlarınızı ekleyin ya da onu kaldırın.",
+  "portfolioSampleRemove": "Örneği kaldır"
 }

@@ -2650,6 +2650,16 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Cobian ku portofolio conto';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ieu portofolio conto. Tambahkeun pameser anjeun nyalira di gigireunana, atanapi piceun.';
+
+  @override
+  String get portfolioSampleRemove => 'Piceun conto';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

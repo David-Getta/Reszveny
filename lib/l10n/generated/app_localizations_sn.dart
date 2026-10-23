@@ -2653,6 +2653,16 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Edza nepotiforiyo yemuenzaniso';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Iyi ipotiforiyo yemuenzaniso. Wedzera zvawakatenga iwe pachako padivi payo, kana kuti uibvise.';
+
+  @override
+  String get portfolioSampleRemove => 'Bvisa muenzaniso';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

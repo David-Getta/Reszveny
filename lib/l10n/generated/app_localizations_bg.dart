@@ -2647,6 +2647,16 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Опитайте с примерен портфейл';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Това е примерен портфейл. Добавете собствените си покупки до него или го премахнете.';
+
+  @override
+  String get portfolioSampleRemove => 'Премахни примера';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

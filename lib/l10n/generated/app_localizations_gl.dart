@@ -2670,6 +2670,16 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Probar cunha carteira de exemplo';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Esta é unha carteira de exemplo. Engade as túas propias compras xunto a ela ou quítaa.';
+
+  @override
+  String get portfolioSampleRemove => 'Quitar o exemplo';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

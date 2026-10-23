@@ -2655,6 +2655,16 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Meka na portefeuille ya mbandu';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Yai kele portefeuille ya mbandu. Yika bima nge sumbaka pembeni na yo, to katula yo.';
+
+  @override
+  String get portfolioSampleRemove => 'Katula mbandu';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

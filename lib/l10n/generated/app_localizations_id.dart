@@ -2643,6 +2643,16 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Coba dengan portofolio contoh';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ini adalah portofolio contoh. Tambahkan pembelian Anda sendiri di sampingnya, atau hapus portofolio ini.';
+
+  @override
+  String get portfolioSampleRemove => 'Hapus contoh';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

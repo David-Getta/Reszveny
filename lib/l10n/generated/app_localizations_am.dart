@@ -2612,6 +2612,16 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'በናሙና ፖርትፎሊዮ ሞክር';
+
+  @override
+  String get portfolioSampleBanner =>
+      'ይህ የናሙና ፖርትፎሊዮ ነው። የራስዎን ግዢዎች ከጎኑ ያክሉ፣ ወይም ያስወግዱት።';
+
+  @override
+  String get portfolioSampleRemove => 'ናሙናውን አስወግድ';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Se a rendibilidade anual se mantén ({rate}), acadarás o obxectivo arredor de {year}.",
   "portfolioMaxDrawdown": "Caída máxima",
   "glossMaxDrawdown": "A maior caída do valor das túas accións desde un máximo anterior ata un mínimo posterior, sen o efecto das túas compras e vendas (ponderada no tempo). Mostra canto de fonda foi a caída que xa atravesou a túa carteira.",
-  "watchSince": "Desde que a engadiches a favoritos ({date})"
+  "watchSince": "Desde que a engadiches a favoritos ({date})",
+  "portfolioSampleTry": "Probar cunha carteira de exemplo",
+  "portfolioSampleBanner": "Esta é unha carteira de exemplo. Engade as túas propias compras xunto a ela ou quítaa.",
+  "portfolioSampleRemove": "Quitar o exemplo"
 }

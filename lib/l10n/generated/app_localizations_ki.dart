@@ -2646,6 +2646,16 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Geria na hisa cia mũhiano';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ici nĩ hisa cia mũhiano. Ongerera ũgũri waku mwene hamwe nacio, kana ũcirute.';
+
+  @override
+  String get portfolioSampleRemove => 'Ruta mũhiano';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

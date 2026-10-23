@@ -2652,6 +2652,16 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'ಮಾದರಿ ಪೋರ್ಟ್‌ಫೋಲಿಯೊದೊಂದಿಗೆ ಪ್ರಯತ್ನಿಸಿ';
+
+  @override
+  String get portfolioSampleBanner =>
+      'ಇದು ಮಾದರಿ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ. ಇದರ ಜೊತೆಗೆ ನಿಮ್ಮ ಸ್ವಂತ ಖರೀದಿಗಳನ್ನು ಸೇರಿಸಿ, ಅಥವಾ ಇದನ್ನು ತೆಗೆದುಹಾಕಿ.';
+
+  @override
+  String get portfolioSampleRemove => 'ಮಾದರಿ ತೆಗೆದುಹಾಕಿ';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

@@ -2631,6 +2631,16 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Maan n ges ne makr portfey';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Yaa makr portfey. Paas bũmb ning f sẽn da a sẽɛgẽ, bɩ f yiis-a.';
+
+  @override
+  String get portfolioSampleRemove => 'Yiis makrã';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

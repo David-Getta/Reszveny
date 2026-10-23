@@ -2644,6 +2644,16 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Eseye ak yon pòtfèy egzanp';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Sa a se yon pòtfèy egzanp. Ajoute pwòp acha ou yo bò kote l, oswa retire l.';
+
+  @override
+  String get portfolioSampleRemove => 'Retire egzanp lan';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

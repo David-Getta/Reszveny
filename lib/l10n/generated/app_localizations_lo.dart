@@ -2618,6 +2618,16 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'ທົດລອງດ້ວຍພອດໂຟລິໂອຕົວຢ່າງ';
+
+  @override
+  String get portfolioSampleBanner =>
+      'ນີ້ແມ່ນພອດໂຟລິໂອຕົວຢ່າງ ທ່ານສາມາດເພີ່ມການຊື້ຂອງທ່ານເອງໄປພ້ອມກັນ ຫຼື ລຶບມັນອອກ';
+
+  @override
+  String get portfolioSampleRemove => 'ລຶບຕົວຢ່າງ';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

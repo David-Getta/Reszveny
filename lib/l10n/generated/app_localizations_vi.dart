@@ -2639,6 +2639,16 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Dùng thử với danh mục mẫu';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Đây là danh mục mẫu. Hãy thêm các khoản mua của bạn bên cạnh, hoặc xóa danh mục này.';
+
+  @override
+  String get portfolioSampleRemove => 'Xóa danh mục mẫu';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

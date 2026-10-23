@@ -2644,6 +2644,16 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Prøv med en eksempelportefølje';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Dette er en eksempelportefølje. Tilføj dine egne køb ved siden af, eller fjern den.';
+
+  @override
+  String get portfolioSampleRemove => 'Fjern eksempel';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

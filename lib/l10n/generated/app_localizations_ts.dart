@@ -2666,6 +2666,16 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Ringeta hi phothifoliyo ya xikombiso';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Leyi i phothifoliyo ya xikombiso. Engetela leswi u swi xaveke etlhelo ka yona, kumbe u yi susa.';
+
+  @override
+  String get portfolioSampleRemove => 'Susa xikombiso';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

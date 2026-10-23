@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Si le rendement annuel se maintient ({rate}), vous atteindrez l’objectif vers {year}.",
   "portfolioMaxDrawdown": "Baisse maximale",
   "glossMaxDrawdown": "La plus forte baisse de la valeur de vos actions entre un sommet antérieur et un creux ultérieur, sans l'effet de vos achats et ventes (pondérée par le temps). Elle montre la profondeur du repli que votre portefeuille a déjà traversé.",
-  "watchSince": "Depuis l’ajout aux favoris ({date})"
+  "watchSince": "Depuis l’ajout aux favoris ({date})",
+  "portfolioSampleTry": "Essayer avec un portefeuille d’exemple",
+  "portfolioSampleBanner": "Ceci est un portefeuille d’exemple. Ajoutez vos propres achats à côté, ou supprimez-le.",
+  "portfolioSampleRemove": "Supprimer l’exemple"
 }

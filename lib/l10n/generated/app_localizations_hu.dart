@@ -2651,6 +2651,16 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Kipróbálom egy minta-portfólióval';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ez egy minta-portfólió. Mellé veheted a saját vételeidet, vagy eltávolíthatod.';
+
+  @override
+  String get portfolioSampleRemove => 'Minta eltávolítása';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

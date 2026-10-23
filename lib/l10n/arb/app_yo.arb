@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Bí èrè ọdọọdún bá dúró bẹ́ẹ̀ ({rate}), o máa dé àfojúsùn rẹ ní nǹkan bí ọdún {year}.",
   "portfolioMaxDrawdown": "Ìsọ̀kalẹ̀ tó tóbi jù lọ",
   "glossMaxDrawdown": "Ìsọ̀kalẹ̀ tó tóbi jù lọ nínú iye àwọn ìpín rẹ láti orí góńgó kan tẹ́lẹ̀ dé ìsàlẹ̀ kan lẹ́yìn náà, láìka ipa ìrajà àti ìtajà rẹ sí (tí a wọ̀n pẹ̀lú àkókò). Ó fi hàn bí ìsọ̀kalẹ̀ tí àpò ìdókòwò rẹ ti là kọjá ṣe jìn tó.",
-  "watchSince": "Láti ìgbà tí o ti fi kún àwọn ààyò ({date})"
+  "watchSince": "Láti ìgbà tí o ti fi kún àwọn ààyò ({date})",
+  "portfolioSampleTry": "Gbìyànjú pẹ̀lú àpò ìdókòwò àpẹẹrẹ",
+  "portfolioSampleBanner": "Àpò ìdókòwò àpẹẹrẹ nìyí. Fi àwọn ìrajà tìrẹ kún un, tàbí yọ ọ́ kúrò.",
+  "portfolioSampleRemove": "Yọ àpẹẹrẹ kúrò"
 }

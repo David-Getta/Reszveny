@@ -802,5 +802,8 @@
   "portfolioGoalEta": "若年化收益率保持不变（{rate}），预计约 {year} 年达成目标。",
   "portfolioMaxDrawdown": "最大回撤",
   "glossMaxDrawdown": "您持仓股票市值从此前高点到之后低点的最大跌幅，已剔除买入和卖出的影响（时间加权）。它显示您的投资组合曾经历过多深的下跌。",
-  "watchSince": "自添加到收藏以来（{date}）"
+  "watchSince": "自添加到收藏以来（{date}）",
+  "portfolioSampleTry": "用示例投资组合试用",
+  "portfolioSampleBanner": "这是示例投资组合。您可以在旁边添加自己的买入记录，或将其移除。",
+  "portfolioSampleRemove": "移除示例"
 }

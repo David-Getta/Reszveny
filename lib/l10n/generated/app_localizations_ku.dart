@@ -2648,6 +2648,16 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Bi portfolyoyeke mînak biceribîne';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ev portfolyoyeke mînak e. Kirînên xwe li kêleka wê zêde bike, an wê rake.';
+
+  @override
+  String get portfolioSampleRemove => 'Mînakê rake';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

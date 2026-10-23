@@ -2640,6 +2640,16 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'नमूना पोर्टफ़ोलियो से आजमाईं';
+
+  @override
+  String get portfolioSampleBanner =>
+      'ई एगो नमूना पोर्टफ़ोलियो ह। एकरा संगे आपन खरीदारी जोड़ीं, भा एकरा हटाईं।';
+
+  @override
+  String get portfolioSampleRemove => 'नमूना हटाईं';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

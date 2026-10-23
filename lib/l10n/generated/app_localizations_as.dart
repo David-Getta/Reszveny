@@ -2644,6 +2644,16 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'নমুনা প\'ৰ্টফ\'লিঅ\'ৰে চেষ্টা কৰক';
+
+  @override
+  String get portfolioSampleBanner =>
+      'এইটো এটা নমুনা প\'ৰ্টফ\'লিঅ\'। ইয়াৰ লগতে নিজৰ ক্ৰয়সমূহ যোগ কৰক, বা ইয়াক আঁতৰাওক।';
+
+  @override
+  String get portfolioSampleRemove => 'নমুনা আঁতৰাওক';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

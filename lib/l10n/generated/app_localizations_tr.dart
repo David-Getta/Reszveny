@@ -2646,6 +2646,16 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Örnek portföyle dene';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Bu bir örnek portföy. Yanına kendi alımlarınızı ekleyin ya da onu kaldırın.';
+
+  @override
+  String get portfolioSampleRemove => 'Örneği kaldır';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

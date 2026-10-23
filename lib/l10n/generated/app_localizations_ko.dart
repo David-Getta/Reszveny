@@ -2575,6 +2575,16 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => '샘플 포트폴리오로 체험하기';
+
+  @override
+  String get portfolioSampleBanner =>
+      '샘플 포트폴리오입니다. 내 매수 내역을 함께 추가하거나 샘플을 삭제하세요.';
+
+  @override
+  String get portfolioSampleRemove => '샘플 삭제';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

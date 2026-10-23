@@ -2650,6 +2650,16 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Namuna portfel bilan sinab koʻrish';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Bu namuna portfel. Uning yoniga oʻz xaridlaringizni qoʻshing yoki uni olib tashlang.';
+
+  @override
+  String get portfolioSampleRemove => 'Namunani olib tashlash';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

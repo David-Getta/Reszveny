@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Uma inzuzo yonyaka ihlala injalo ({rate}), uzofinyelela umgomo wakho cishe ngonyaka ka-{year}.",
   "portfolioMaxDrawdown": "Ukwehla okukhulu kakhulu",
   "glossMaxDrawdown": "Ukwehla okukhulu kakhulu kwenani lamasheya akho kusuka esiqongweni sangaphambilini kuya ezingeni eliphansi kakhulu langemuva, ngaphandle komthelela wokuthenga nokuthengisa kwakho (kukalwe ngesikhathi). Kukhombisa ukuthi iphothifoliyo yakho isike yehla kangakanani ngokujulile.",
-  "watchSince": "Kusukela walengeza kuzintandokazi ({date})"
+  "watchSince": "Kusukela walengeza kuzintandokazi ({date})",
+  "portfolioSampleTry": "Zama ngephothifoliyo yesampula",
+  "portfolioSampleBanner": "Lena iphothifoliyo yesampula. Engeza okuthengile kwakho eceleni kwayo, noma uyisuse.",
+  "portfolioSampleRemove": "Susa isampula"
 }

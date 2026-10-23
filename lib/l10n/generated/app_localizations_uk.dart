@@ -2716,6 +2716,16 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Спробувати на демо-портфелі';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Це демо-портфель. Додайте поруч свої покупки або видаліть його.';
+
+  @override
+  String get portfolioSampleRemove => 'Видалити демо-портфель';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

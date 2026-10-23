@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Yen imbal hasil taunan tetep ({rate}), sampeyan bakal nggayuh target kira-kira taun {year}.",
   "portfolioMaxDrawdown": "Penurunan paling gedhe",
   "glossMaxDrawdown": "Penurunan paling gedhe regane saham sampeyan saka pucuk sadurunge nganti titik paling endhek sabanjure, tanpa pengaruh tuku lan adol sampeyan (ditimbang miturut wektu). Iki nuduhake sepira jero penurunan sing wis tau dialami portofolio sampeyan.",
-  "watchSince": "Wiwit ditambahake menyang favorit ({date})"
+  "watchSince": "Wiwit ditambahake menyang favorit ({date})",
+  "portfolioSampleTry": "Coba nganggo portofolio conto",
+  "portfolioSampleBanner": "Iki portofolio conto. Tambahake tukon sampeyan dhewe ing sandhinge, utawa busak.",
+  "portfolioSampleRemove": "Busak conto"
 }

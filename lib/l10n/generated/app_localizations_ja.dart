@@ -2565,6 +2565,16 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'サンプルのポートフォリオで試す';
+
+  @override
+  String get portfolioSampleBanner =>
+      'これはサンプルのポートフォリオです。自分の購入を追加するか、サンプルを削除してください。';
+
+  @override
+  String get portfolioSampleRemove => 'サンプルを削除';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

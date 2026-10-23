@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Upami imbal hasil taunan tetep ({rate}), anjeun bakal ngahontal target kira-kira taun {year}.",
   "portfolioMaxDrawdown": "Turunna panggedéna",
   "glossMaxDrawdown": "Turunna panggedéna ajén saham anjeun ti puncak saméméhna nepi ka titik panghandapna saterusna, tanpa pangaruh pameulian jeung pangjualan anjeun (ditimbang dumasar waktu). Ieu nunjukkeun sabaraha jero turunna anu kungsi dilakonan ku portofolio anjeun.",
-  "watchSince": "Ti saprak ditambahkeun ka paporit ({date})"
+  "watchSince": "Ti saprak ditambahkeun ka paporit ({date})",
+  "portfolioSampleTry": "Cobian ku portofolio conto",
+  "portfolioSampleBanner": "Ieu portofolio conto. Tambahkeun pameser anjeun nyalira di gigireunana, atanapi piceun.",
+  "portfolioSampleRemove": "Piceun conto"
 }

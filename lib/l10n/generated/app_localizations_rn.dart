@@ -2654,6 +2654,16 @@ class AppLocalizationsRn extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Gerageza n\'ishoramari ry\'akarorero';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Iri ni ishoramari ry\'akarorero. Shiramwo n\'ivyo waguze ubwawe, canke urikureko.';
+
+  @override
+  String get portfolioSampleRemove => 'Kuramwo akarorero';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

@@ -2228,6 +2228,18 @@
       }
     }
   },
+  "portfolioSampleTry": "Try with a sample portfolio",
+  "@portfolioSampleTry": {
+    "description": "Button on the empty portfolio page: loads a few sample purchases, a sale and dividends to try the features; it can be removed with one tap."
+  },
+  "portfolioSampleBanner": "This is a sample portfolio. Add your own purchases next to it, or remove it.",
+  "@portfolioSampleBanner": {
+    "description": "Banner on the portfolio page while the sample portfolio is loaded."
+  },
+  "portfolioSampleRemove": "Remove sample",
+  "@portfolioSampleRemove": {
+    "description": "Button in the sample portfolio banner: removes the sample transactions and dividends (your own stay)."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

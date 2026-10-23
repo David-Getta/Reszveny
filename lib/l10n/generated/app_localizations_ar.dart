@@ -2704,6 +2704,16 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'تجربة محفظة نموذجية';
+
+  @override
+  String get portfolioSampleBanner =>
+      'هذه محفظة نموذجية. أضف مشترياتك الخاصة إلى جانبها، أو أزلها.';
+
+  @override
+  String get portfolioSampleRemove => 'إزالة المحفظة النموذجية';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

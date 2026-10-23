@@ -2664,6 +2664,16 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Leka ka potefolio ya sekai';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Eno ke potefolio ya sekai. Tsenya ditheko tsa gago fa thoko ga yone, kgotsa o e tlose.';
+
+  @override
+  String get portfolioSampleRemove => 'Tlosa sekai';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

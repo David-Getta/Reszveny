@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Si la rendibilitat anual es manté ({rate}), assoliràs l’objectiu cap al {year}.",
   "portfolioMaxDrawdown": "Caiguda màxima",
   "glossMaxDrawdown": "La caiguda més gran del valor de les teves accions des d'un màxim anterior fins a un mínim posterior, sense l'efecte de les teves compres i vendes (ponderada en el temps). Mostra com de profunda ha estat la caiguda que ja ha patit la teva cartera.",
-  "watchSince": "Des que la vas afegir als favorits ({date})"
+  "watchSince": "Des que la vas afegir als favorits ({date})",
+  "portfolioSampleTry": "Prova amb una cartera d’exemple",
+  "portfolioSampleBanner": "Aquesta és una cartera d’exemple. Afegeix-hi les teves pròpies compres o elimina-la.",
+  "portfolioSampleRemove": "Elimina l’exemple"
 }

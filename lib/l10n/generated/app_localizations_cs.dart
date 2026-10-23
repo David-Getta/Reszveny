@@ -2708,6 +2708,16 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Vyzkoušet s ukázkovým portfoliem';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Toto je ukázkové portfolio. Přidejte k němu své vlastní nákupy, nebo ho odeberte.';
+
+  @override
+  String get portfolioSampleRemove => 'Odebrat ukázku';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

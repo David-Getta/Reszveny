@@ -2634,6 +2634,16 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'དཔེ་གཞིའི་མ་འཇོག་ཚོགས་སྡེབ་ཀྱིས་ཚོད་ལྟ།';
+
+  @override
+  String get portfolioSampleBanner =>
+      'འདི་ནི་དཔེ་གཞིའི་མ་འཇོག་ཚོགས་སྡེབ་ཅིག་ཡིན། དེའི་འགྲམ་དུ་ཁྱེད་རང་གི་ཉོ་སྒྲུབ་སྣོན་པའམ། ཡང་ན་དེ་སུབ།';
+
+  @override
+  String get portfolioSampleRemove => 'དཔེ་གཞི་སུབ';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

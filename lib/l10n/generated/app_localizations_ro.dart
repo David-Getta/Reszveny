@@ -2685,6 +2685,16 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Încearcă cu un portofoliu de exemplu';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Acesta este un portofoliu de exemplu. Adaugă alături achizițiile tale sau elimină-l.';
+
+  @override
+  String get portfolioSampleRemove => 'Elimină exemplul';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Pokud roční výnos vydrží ({rate}), dosáhnete cíle kolem roku {year}.",
   "portfolioMaxDrawdown": "Největší propad",
   "glossMaxDrawdown": "Největší pokles hodnoty vašich akcií z dřívějšího vrcholu na pozdější dno, bez vlivu vašich nákupů a prodejů (časově vážený). Ukazuje, jak hlubokým propadem už vaše portfolio prošlo.",
-  "watchSince": "Od přidání do oblíbených ({date})"
+  "watchSince": "Od přidání do oblíbených ({date})",
+  "portfolioSampleTry": "Vyzkoušet s ukázkovým portfoliem",
+  "portfolioSampleBanner": "Toto je ukázkové portfolio. Přidejte k němu své vlastní nákupy, nebo ho odeberte.",
+  "portfolioSampleRemove": "Odebrat ukázku"
 }

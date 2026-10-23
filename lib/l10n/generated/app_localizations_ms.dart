@@ -2650,6 +2650,16 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Cuba dengan portfolio sampel';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ini ialah portfolio sampel. Tambah belian anda sendiri di sebelahnya, atau alih keluar portfolio ini.';
+
+  @override
+  String get portfolioSampleRemove => 'Alih keluar sampel';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

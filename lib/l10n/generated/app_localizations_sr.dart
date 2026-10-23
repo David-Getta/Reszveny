@@ -2692,6 +2692,16 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Испробај на примеру портфолија';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ово је пример портфолија. Додајте поред њега своје куповине или га уклоните.';
+
+  @override
+  String get portfolioSampleRemove => 'Уклони пример';
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

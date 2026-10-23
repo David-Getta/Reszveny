@@ -2637,6 +2637,16 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'د نمونه پورټفولیو سره ازمویل';
+
+  @override
+  String get portfolioSampleBanner =>
+      'دا یو نمونه پورټفولیو ده. خپلې پېرودنې ورسره ورزیاتې کړئ، یا یې لرې کړئ.';
+
+  @override
+  String get portfolioSampleRemove => 'نمونه لرې کړئ';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

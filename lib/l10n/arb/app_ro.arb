@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Dacă randamentul anual se menține ({rate}), îți vei atinge obiectivul în jurul anului {year}.",
   "portfolioMaxDrawdown": "Scădere maximă",
   "glossMaxDrawdown": "Cea mai mare scădere a valorii acțiunilor tale de la un vârf anterior la un minim ulterior, fără efectul cumpărărilor și vânzărilor tale (ponderată în timp). Arată cât de adâncă a fost scăderea prin care a trecut deja portofoliul tău.",
-  "watchSince": "De la adăugarea la favorite ({date})"
+  "watchSince": "De la adăugarea la favorite ({date})",
+  "portfolioSampleTry": "Încearcă cu un portofoliu de exemplu",
+  "portfolioSampleBanner": "Acesta este un portofoliu de exemplu. Adaugă alături achizițiile tale sau elimină-l.",
+  "portfolioSampleRemove": "Elimină exemplul"
 }

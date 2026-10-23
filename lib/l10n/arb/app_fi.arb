@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Jos vuosituotto pysyy ennallaan ({rate}), saavutat tavoitteen noin vuonna {year}.",
   "portfolioMaxDrawdown": "Suurin lasku",
   "glossMaxDrawdown": "Osakkeidesi arvon suurin lasku aiemmasta huipusta myöhempään pohjaan ilman ostojesi ja myyntiesi vaikutusta (aikapainotettu). Se näyttää, kuinka syvän notkahduksen salkkusi on jo kokenut.",
-  "watchSince": "Suosikkeihin lisäämisen jälkeen ({date})"
+  "watchSince": "Suosikkeihin lisäämisen jälkeen ({date})",
+  "portfolioSampleTry": "Kokeile esimerkkisalkulla",
+  "portfolioSampleBanner": "Tämä on esimerkkisalkku. Lisää omat ostosi sen rinnalle tai poista se.",
+  "portfolioSampleRemove": "Poista esimerkki"
 }

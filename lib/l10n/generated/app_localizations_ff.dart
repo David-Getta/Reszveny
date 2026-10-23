@@ -2640,6 +2640,16 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Etu e aksiyoŋ yeru';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ɗum ko aksiyoŋ yeru. Ɓeydu ko a soodi e sara mum, walla ittu ɗum.';
+
+  @override
+  String get portfolioSampleRemove => 'Ittu yeru';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

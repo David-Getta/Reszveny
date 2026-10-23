@@ -2651,6 +2651,16 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Provo me një portofol shembull';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ky është një portofol shembull. Shtoni pranë tij blerjet tuaja ose hiqeni.';
+
+  @override
+  String get portfolioSampleRemove => 'Hiq shembullin';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

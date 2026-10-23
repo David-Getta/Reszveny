@@ -802,5 +802,8 @@
   "portfolioGoalEta": "So nafoore hitaande ndee duumii ({rate}), a heɓay faandaare maa hono hitaande {year}.",
   "portfolioMaxDrawdown": "Ustaare ɓurnde mawnude",
   "glossMaxDrawdown": "Ustaare ɓurnde mawnude e njoŋdi aksiyonji maa, gila e toownde adiinde haa e lesdi ɓadiindi, tawa soodu e yeeyu maa naatnaaka (peesaande e sahaa). Ina hollira no aksiyonji maa ustiri ko adii.",
-  "watchSince": "Gila nde ɓeyduɗaa ɗum e cuɓaaɗe ({date})"
+  "watchSince": "Gila nde ɓeyduɗaa ɗum e cuɓaaɗe ({date})",
+  "portfolioSampleTry": "Etu e aksiyoŋ yeru",
+  "portfolioSampleBanner": "Ɗum ko aksiyoŋ yeru. Ɓeydu ko a soodi e sara mum, walla ittu ɗum.",
+  "portfolioSampleRemove": "Ittu yeru"
 }

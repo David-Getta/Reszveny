@@ -2638,6 +2638,16 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'नमूना पोर्टफ़ोलियोसँ आजमाउ';
+
+  @override
+  String get portfolioSampleBanner =>
+      'ई एकटा नमूना पोर्टफ़ोलियो अछि। एकर संग अपन खरीदारी जोड़ू, वा एकरा हटाउ।';
+
+  @override
+  String get portfolioSampleRemove => 'नमूना हटाउ';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

@@ -802,5 +802,8 @@
   "portfolioGoalEta": "ዓመታዊ ተመላሹ ({rate}) እንዲሁ ከቀጠለ፣ በ{year} ገደማ ግቡ ላይ ይደርሳሉ።",
   "portfolioMaxDrawdown": "ትልቁ ማሽቆልቆል",
   "glossMaxDrawdown": "የአክሲዮኖችዎ ዋጋ ከቀደመ ከፍተኛ ደረጃ ወደ ኋለኛ ዝቅተኛ ደረጃ ያሳየው ትልቁ ማሽቆልቆል፣ የግዢና የሽያጭዎ ተጽዕኖ ሳይካተት (በጊዜ የተመዘነ)። ፖርትፎሊዮዎ እስካሁን ምን ያህል ጥልቅ ውድቀት እንዳሳለፈ ያሳያል።",
-  "watchSince": "ወደ ተወዳጆች ካከሉት ወዲህ ({date})"
+  "watchSince": "ወደ ተወዳጆች ካከሉት ወዲህ ({date})",
+  "portfolioSampleTry": "በናሙና ፖርትፎሊዮ ሞክር",
+  "portfolioSampleBanner": "ይህ የናሙና ፖርትፎሊዮ ነው። የራስዎን ግዢዎች ከጎኑ ያክሉ፣ ወይም ያስወግዱት።",
+  "portfolioSampleRemove": "ናሙናውን አስወግድ"
 }

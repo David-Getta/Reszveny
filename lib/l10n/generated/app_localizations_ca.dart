@@ -2656,6 +2656,16 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Prova amb una cartera d’exemple';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Aquesta és una cartera d’exemple. Afegeix-hi les teves pròpies compres o elimina-la.';
+
+  @override
+  String get portfolioSampleRemove => 'Elimina l’exemple';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

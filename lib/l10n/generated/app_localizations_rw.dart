@@ -2658,6 +2658,16 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Gerageza n\'ishoramari ry\'icyitegererezo';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Iri ni ishoramari ry\'icyitegererezo. Ongeramo ibyo waguze ubwawe, cyangwa urikureho.';
+
+  @override
+  String get portfolioSampleRemove => 'Kuramo icyitegererezo';
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

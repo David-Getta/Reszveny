@@ -2644,6 +2644,16 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'नमुना पोर्टफोलियोसँग प्रयास गर्नुहोस्';
+
+  @override
+  String get portfolioSampleBanner =>
+      'यो नमुना पोर्टफोलियो हो। यसको साथमा आफ्नै खरिदहरू थप्नुहोस्, वा यसलाई हटाउनुहोस्।';
+
+  @override
+  String get portfolioSampleRemove => 'नमुना हटाउनुहोस्';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

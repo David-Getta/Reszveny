@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Ngati phindu la pachaka likhalebe chomwechi ({rate}), mudzakwaniritsa cholinga pafupifupi chaka cha {year}.",
   "portfolioMaxDrawdown": "Kutsika kwakukulu kwambiri",
   "glossMaxDrawdown": "Kutsika kwakukulu kwambiri kwa mtengo wa masheya anu kuchokera pamwamba pomwe munali kale kufika pansi pomwe panabwera pambuyo pake, popanda zotsatira za kugula ndi kugulitsa kwanu (koyezedwa malinga ndi nthawi). Kumasonyeza kuti masheya anu atsika mozama bwanji kale.",
-  "watchSince": "Kuyambira pamene munaiwonjeza ku zokondedwa ({date})"
+  "watchSince": "Kuyambira pamene munaiwonjeza ku zokondedwa ({date})",
+  "portfolioSampleTry": "Yesani ndi masheya achitsanzo",
+  "portfolioSampleBanner": "Awa ndi masheya achitsanzo. Onjezani zomwe munagula inuyo pambali pake, kapena muwachotse.",
+  "portfolioSampleRemove": "Chotsani chitsanzo"
 }

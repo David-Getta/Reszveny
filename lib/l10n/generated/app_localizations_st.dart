@@ -2662,6 +2662,16 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Leka ka potefolio ya mohlala';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ena ke potefolio ya mohlala. Kenya ditheko tsa hao pela yona, kapa o e tlose.';
+
+  @override
+  String get portfolioSampleRemove => 'Tlosa mohlala';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

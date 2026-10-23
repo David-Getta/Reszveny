@@ -2715,6 +2715,16 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Preizkusi z vzorčnim portfeljem';
+
+  @override
+  String get portfolioSampleBanner =>
+      'To je vzorčni portfelj. Poleg njega dodajte svoje nakupe ali ga odstranite.';
+
+  @override
+  String get portfolioSampleRemove => 'Odstrani vzorec';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

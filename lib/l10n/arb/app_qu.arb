@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Watapaq rendimiento kaqlla kaptinqa ({rate}), yaqa {year} watapi hayparinaykiman chayanki.",
   "portfolioMaxDrawdown": "Aswan hatun urmay",
   "glossMaxDrawdown": "Accionniykikunap chaninpa aswan hatun urmaynin, ñawpaq hanaq kasqanmanta qhipa uray kasqankama, rantisqaykiq rantikusqaykiq kallpan mana yapasqa (pachawan llasachisqa). Portafolioyki ña hayk'a ukhuta urmasqanta rikuchin.",
-  "watchSince": "Munasqakunaman yapasqaykimanta ({date})"
+  "watchSince": "Munasqakunaman yapasqaykimanta ({date})",
+  "portfolioSampleTry": "Muestra portafoliowan llamiy",
+  "portfolioSampleBanner": "Kayqa muestra portafolio. Kikiykiq rantisqaykikunata waqtanman yapay, utaq hurquy.",
+  "portfolioSampleRemove": "Muestrata hurquy"
 }

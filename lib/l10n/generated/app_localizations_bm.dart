@@ -2644,6 +2644,16 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'A kɔrɔbɔ ni misali aksiyɔn kɛsu ye';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Nin ye misali aksiyɔn kɛsu ye. I yɛrɛ ka sanniw fara a kɛrɛ fɛ, walima a bɔ yen.';
+
+  @override
+  String get portfolioSampleRemove => 'Misali bɔ a la';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

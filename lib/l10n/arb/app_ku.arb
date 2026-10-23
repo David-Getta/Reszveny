@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Ger qezenca salane wisa bimîne ({rate}), tu dê nêzî sala {year} bigihîjî armancê.",
   "portfolioMaxDrawdown": "Daketina herî mezin",
   "glossMaxDrawdown": "Daketina herî mezin a nirxa pişkên te ji lûtkeyeke berê heta asteke herî nizm a paşê, bêyî bandora kirîn û firotinên te (li gorî demê pîvandî). Nîşan dide ku portfolyoya te heta niha çiqas kûr daketiye.",
-  "watchSince": "Ji dema ku te li bijareyan zêde kir ({date})"
+  "watchSince": "Ji dema ku te li bijareyan zêde kir ({date})",
+  "portfolioSampleTry": "Bi portfolyoyeke mînak biceribîne",
+  "portfolioSampleBanner": "Ev portfolyoyeke mînak e. Kirînên xwe li kêleka wê zêde bike, an wê rake.",
+  "portfolioSampleRemove": "Mînakê rake"
 }

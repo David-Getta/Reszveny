@@ -2647,6 +2647,16 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Nümunə portfellə sına';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Bu nümunə portfeldir. Yanına öz alışlarınızı əlavə edin və ya onu silin.';
+
+  @override
+  String get portfolioSampleRemove => 'Nümunəni sil';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

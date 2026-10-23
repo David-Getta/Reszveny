@@ -2665,6 +2665,16 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Andramo amin\'ny kitapom-bola santionany';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Kitapom-bola santionany ity. Ampio eo anilany ny fividiananao manokana, na esory izy.';
+
+  @override
+  String get portfolioSampleRemove => 'Esory ny santionany';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

@@ -2656,6 +2656,16 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Poortfooliyoo fakkeenyaatiin yaali';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Kun poortfooliyoo fakkeenyaati. Bittaawwan kee cinaa isaatti dabali, ykn isa haqi.';
+
+  @override
+  String get portfolioSampleRemove => 'Fakkeenya haqi';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

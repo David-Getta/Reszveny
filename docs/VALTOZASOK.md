@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.199)
+# Változásjegyzék (0.2.130 → 0.2.200)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -67,6 +67,11 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **Tranzakciós díj (jutalék)**: a vételhez és az eladáshoz megadható; a bekerülési értékbe, a realizált nyereségbe
   (az adó-CSV-be is) és az éves hozamba beszámít; a bróker-exportok díj-oszlopa (IBKR „Comm/Fee”) importáláskor
   bekerül; szinkronban, mentésben és a CSV-ben is.
+
+## Kipróbálás
+
+- **Minta-portfólió** az üres portfólió oldalon: egy gombbal betölthető (vételek, eladás, jutalék, osztalékok, TBSZ-számla),
+  egy gombbal eltávolítható; a saját tételek maradnak.
 
 ## Import
 

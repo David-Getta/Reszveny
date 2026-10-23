@@ -2658,6 +2658,16 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Sulayi gamit ang sample nga portfolio';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Kini usa ka sample nga portfolio. Idugang ang imong kaugalingong mga gipalit tupad niini, o tangtanga kini.';
+
+  @override
+  String get portfolioSampleRemove => 'Tangtanga ang sample';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

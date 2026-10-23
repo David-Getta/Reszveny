@@ -2646,6 +2646,16 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Жишээ портфолиогоор туршиж үзэх';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Энэ бол жишээ портфолио. Та хажууд нь өөрийн худалдан авалтаа нэмэх эсвэл үүнийг хасах боломжтой.';
+
+  @override
+  String get portfolioSampleRemove => 'Жишээг хасах';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

@@ -2654,6 +2654,16 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Փորձել օրինակային պորտֆելով';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Սա օրինակային պորտֆել է։ Ավելացրեք ձեր սեփական գնումները դրա կողքին կամ հեռացրեք այն։';
+
+  @override
+  String get portfolioSampleRemove => 'Հեռացնել օրինակը';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

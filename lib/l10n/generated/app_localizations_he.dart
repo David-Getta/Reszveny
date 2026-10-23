@@ -2638,6 +2638,16 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'ניסיון עם תיק לדוגמה';
+
+  @override
+  String get portfolioSampleBanner =>
+      'זהו תיק לדוגמה. אפשר להוסיף לצדו את הרכישות שלך, או להסיר אותו.';
+
+  @override
+  String get portfolioSampleRemove => 'הסרת הדוגמה';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

@@ -2643,6 +2643,16 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Try with a sample portfolio';
+
+  @override
+  String get portfolioSampleBanner =>
+      'This is a sample portfolio. Add your own purchases next to it, or remove it.';
+
+  @override
+  String get portfolioSampleRemove => 'Remove sample';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

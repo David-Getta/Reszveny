@@ -2646,6 +2646,16 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'სანიმუშო პორტფელით გამოცდა';
+
+  @override
+  String get portfolioSampleBanner =>
+      'ეს სანიმუშო პორტფელია. დაამატეთ მის გვერდით თქვენი შენაძენები ან წაშალეთ იგი.';
+
+  @override
+  String get portfolioSampleRemove => 'ნიმუშის წაშლა';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

@@ -2647,6 +2647,16 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Kokeile esimerkkisalkulla';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Tämä on esimerkkisalkku. Lisää omat ostosi sen rinnalle tai poista se.';
+
+  @override
+  String get portfolioSampleRemove => 'Poista esimerkki';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

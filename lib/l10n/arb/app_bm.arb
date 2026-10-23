@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Ni san o san tɔnɔ tora ten ({rate}), i bɛna i ka laɲini sɔrɔ san {year} ɲɔgɔn na.",
   "portfolioMaxDrawdown": "Sɔngɔ jigin belebeba",
   "glossMaxDrawdown": "I ka aksiyɔnw sɔngɔ jigin belebeba, ka bɔ sanfɛla dɔ la min tun bɛ yen fɔlɔ ka taa se duguma dɔ ma min nana kɔfɛ, i ka sanni ni i ka feereli nɔ tɛ jate a la (waati hakɛ jatelen). A bɛ a jira i ka aksiyɔn kɛsu jiginna ka taa duguma cogo min fɔlɔ.",
-  "watchSince": "Kabini i y'a fara diyanyelenw kan ({date})"
+  "watchSince": "Kabini i y'a fara diyanyelenw kan ({date})",
+  "portfolioSampleTry": "A kɔrɔbɔ ni misali aksiyɔn kɛsu ye",
+  "portfolioSampleBanner": "Nin ye misali aksiyɔn kɛsu ye. I yɛrɛ ka sanniw fara a kɛrɛ fɛ, walima a bɔ yen.",
+  "portfolioSampleRemove": "Misali bɔ a la"
 }

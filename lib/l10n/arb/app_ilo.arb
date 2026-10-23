@@ -802,5 +802,8 @@
   "portfolioGoalEta": "No agtalinaed ti tinawen a ganansia ({rate}), magun-odmo ti panggepmo iti agarup tawen {year}.",
   "portfolioMaxDrawdown": "Kadakkelan a panagbaba",
   "glossMaxDrawdown": "Ti kadakkelan a panagbaba ti pateg dagiti stock-mo manipud iti maysa a nasapsapa a kangatoan agingga iti maysa a naud-udi a kababaan, nga awan ti epekto dagiti gatang ken lako-mo (time-weighted). Ipakitana no kasano kauneg ti panagbaba a nalasatan ti portfolio-mo.",
-  "watchSince": "Manipud idi inayonmo kadagiti paborito ({date})"
+  "watchSince": "Manipud idi inayonmo kadagiti paborito ({date})",
+  "portfolioSampleTry": "Padasen babaen ti sample a portfolio",
+  "portfolioSampleBanner": "Daytoy ket sample a portfolio. Inayon dagiti bukodmo a gatang iti abayna, wenno ikkaten daytoy.",
+  "portfolioSampleRemove": "Ikkaten ti sample"
 }

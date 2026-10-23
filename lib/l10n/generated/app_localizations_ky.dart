@@ -2648,6 +2648,16 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Үлгү портфель менен сынап көрүү';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Бул – үлгү портфель. Анын жанына өз сатып алууларыңызды кошуңуз же аны өчүрүңүз.';
+
+  @override
+  String get portfolioSampleRemove => 'Үлгүнү өчүрүү';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

@@ -230,6 +230,14 @@ class _EmptyPortfolio extends StatelessWidget {
                 ),
               ],
             ),
+            const SizedBox(height: 8),
+            // Kipróbálás minta-adatokkal: egy gombbal betölthető, egy gombbal eltávolítható.
+            OutlinedButton.icon(
+              key: const ValueKey('portfolio-empty-sample'),
+              onPressed: () => AppServices.of(context).portfolio.loadSample(),
+              icon: const Icon(Icons.science_outlined, size: 18),
+              label: Text(l10n.portfolioSampleTry),
+            ),
           ],
         ),
       ),
@@ -265,6 +273,27 @@ class _PortfolioBody extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                // Minta-portfólió: jól látható jelzés és egy gomb az eltávolításához.
+                if (AppServices.of(context).portfolio.hasSample)
+                  Card(
+                    key: const ValueKey('portfolio-sample'),
+                    color: AppPalette.of(context).accent.withValues(alpha: 0.12),
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 10, 8, 10),
+                      child: Row(
+                        children: [
+                          Icon(Icons.science_outlined, size: 20, color: AppPalette.of(context).accent),
+                          const SizedBox(width: 10),
+                          Expanded(child: Text(l10n.portfolioSampleBanner)),
+                          TextButton(
+                            key: const ValueKey('portfolio-sample-remove'),
+                            onPressed: () => AppServices.of(context).portfolio.removeSample(),
+                            child: Text(l10n.portfolioSampleRemove),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 // Számlák (ha legalább egy tranzakciónak van): szűrés egy számlára.
                 if (AppServices.of(context).portfolio.accounts case final accounts when accounts.isNotEmpty) ...[
                   Wrap(

@@ -2647,6 +2647,16 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Fa nhwɛso nkyɛfa sɔ hwɛ';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Eyi yɛ nhwɛso nkyɛfa. Fa wo ankasa adetɔ ka ho, anaa yi no fi hɔ.';
+
+  @override
+  String get portfolioSampleRemove => 'Yi nhwɛso no fi hɔ';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

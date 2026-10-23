@@ -2640,6 +2640,16 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'નમૂના પોર્ટફોલિયો સાથે અજમાવો';
+
+  @override
+  String get portfolioSampleBanner =>
+      'આ એક નમૂના પોર્ટફોલિયો છે. તેની સાથે તમારી પોતાની ખરીદીઓ ઉમેરો, અથવા તેને કાઢી નાખો.';
+
+  @override
+  String get portfolioSampleRemove => 'નમૂનો કાઢી નાખો';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

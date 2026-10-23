@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Kung mananatili ang taunang kita ({rate}), maaabot mo ang layunin bandang {year}.",
   "portfolioMaxDrawdown": "Pinakamalaking pagbaba",
   "glossMaxDrawdown": "Ang pinakamalaking pagbaba ng halaga ng mga stock mo mula sa isang naunang tuktok hanggang sa isang mas huling pinakamababa, nang walang epekto ng mga pagbili at pagbenta mo (time-weighted). Ipinapakita nito kung gaano kalalim na pagbagsak ang napagdaanan na ng portfolio mo.",
-  "watchSince": "Mula nang idagdag mo sa mga paborito ({date})"
+  "watchSince": "Mula nang idagdag mo sa mga paborito ({date})",
+  "portfolioSampleTry": "Subukan gamit ang sample na portfolio",
+  "portfolioSampleBanner": "Isa itong sample na portfolio. Idagdag ang sarili mong mga binili sa tabi nito, o alisin ito.",
+  "portfolioSampleRemove": "Alisin ang sample"
 }

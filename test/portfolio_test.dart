@@ -1131,6 +1131,38 @@ void main() {
     expect(find.byKey(const ValueKey('position-menu-MSFT')), findsOneWidget);
   });
 
+  testWidgets('a sample portfolio from the empty page, then removed with one tap; own purchases stay', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    SharedPreferences.setMockInitialValues({});
+    final s = services();
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-empty-sample')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.hasSample, isTrue);
+    expect(find.byKey(const ValueKey('portfolio-sample')), findsOneWidget);
+    expect(find.byKey(const ValueKey('position-menu-AAPL')), findsOneWidget);
+    // A negyedéves osztalékokból várható kifizetés, a TBSZ-en lévő OTP-vel számla is.
+    expect(find.byKey(const ValueKey('dividend-expected-AAPL')), findsOneWidget);
+    expect(s.portfolio.accounts, ['TBSZ']);
+    expect(s.portfolio.positionOf('AAPL')!.quantity, 8);
+    // Saját vétel mellé, majd a minta eltávolítása: a saját marad.
+    await s.portfolio.add(symbol: 'MSFT', quantity: 1, price: 400, currency: 'USD');
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-sample-remove')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.hasSample, isFalse);
+    expect(s.portfolio.lots.single.symbol, 'MSFT');
+    expect(s.portfolio.dividends, isEmpty);
+    expect(find.byKey(const ValueKey('portfolio-sample')), findsNothing);
+    // A háttérben indított késleltetett frissítések (események, emlékeztetők) lefutnak.
+    await tester.pump(const Duration(minutes: 1));
+  });
+
   testWidgets('selling from all accounts: choose the account; at most what is held there', (tester) async {
     tester.view.physicalSize = const Size(1200, 2600);
     tester.view.devicePixelRatio = 1;

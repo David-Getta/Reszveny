@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Kung magpabilin ang tinuig nga kita ({rate}), maabot nimo ang tumong mga tuig {year}.",
   "portfolioMaxDrawdown": "Pinakadakong pagkunhod",
   "glossMaxDrawdown": "Ang pinakadakong pagkunhod sa bili sa imong mga stock gikan sa usa ka naunang kinatas-an ngadto sa usa ka ulahing kinaubsan, nga walay epekto sa imong pagpalit ug pagbaligya (time-weighted). Gipakita niini kung unsa ka lawom nga pagkunhod ang naagian na sa imong portfolio.",
-  "watchSince": "Sukad nimo kini gidugang sa mga paborito ({date})"
+  "watchSince": "Sukad nimo kini gidugang sa mga paborito ({date})",
+  "portfolioSampleTry": "Sulayi gamit ang sample nga portfolio",
+  "portfolioSampleBanner": "Kini usa ka sample nga portfolio. Idugang ang imong kaugalingong mga gipalit tupad niini, o tangtanga kini.",
+  "portfolioSampleRemove": "Tangtanga ang sample"
 }

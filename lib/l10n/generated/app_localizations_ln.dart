@@ -2657,6 +2657,16 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Meka na portefeuille ya ndakisa';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Oyo ezali portefeuille ya ndakisa. Bakisa biloko osombaki yo moko pembeni na yango, to longola yango.';
+
+  @override
+  String get portfolioSampleRemove => 'Longola ndakisa';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

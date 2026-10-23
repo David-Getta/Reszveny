@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Als het jaarrendement zo blijft ({rate}), bereik je je doel rond {year}.",
   "portfolioMaxDrawdown": "Grootste daling",
   "glossMaxDrawdown": "De grootste daling van de waarde van je aandelen van een eerdere piek tot een later dal, zonder het effect van je aankopen en verkopen (tijdgewogen). Het laat zien hoe diep je portefeuille al eens is gezakt.",
-  "watchSince": "Sinds toevoeging aan favorieten ({date})"
+  "watchSince": "Sinds toevoeging aan favorieten ({date})",
+  "portfolioSampleTry": "Proberen met een voorbeeldportefeuille",
+  "portfolioSampleBanner": "Dit is een voorbeeldportefeuille. Voeg je eigen aankopen ernaast toe, of verwijder hem.",
+  "portfolioSampleRemove": "Voorbeeld verwijderen"
 }

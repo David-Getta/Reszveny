@@ -2651,6 +2651,16 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Eñehaʼã cartera techapyrã reheve';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Kóva haʼe peteĩ cartera techapyrã. Embojuaju ne jogua ijykére, térã embogue.';
+
+  @override
+  String get portfolioSampleRemove => 'Embogue techapyrã';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

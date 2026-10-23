@@ -2713,6 +2713,16 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Паспрабаваць з дэманстрацыйным партфелем';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Гэта дэманстрацыйны партфель. Дадайце побач свае пакупкі або выдаліце яго.';
+
+  @override
+  String get portfolioSampleRemove => 'Выдаліць дэма-партфель';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

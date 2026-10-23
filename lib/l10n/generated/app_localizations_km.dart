@@ -2624,6 +2624,16 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'សាកល្បងជាមួយផលប័ត្រគំរូ';
+
+  @override
+  String get portfolioSampleBanner =>
+      'នេះជាផលប័ត្រគំរូ។ បន្ថែមការទិញផ្ទាល់ខ្លួនរបស់អ្នកនៅក្បែរវា ឬដកវាចេញ។';
+
+  @override
+  String get portfolioSampleRemove => 'ដកគំរូចេញ';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

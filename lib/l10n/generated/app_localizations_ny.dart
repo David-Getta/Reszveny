@@ -2654,6 +2654,16 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Yesani ndi masheya achitsanzo';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Awa ndi masheya achitsanzo. Onjezani zomwe munagula inuyo pambali pake, kapena muwachotse.';
+
+  @override
+  String get portfolioSampleRemove => 'Chotsani chitsanzo';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

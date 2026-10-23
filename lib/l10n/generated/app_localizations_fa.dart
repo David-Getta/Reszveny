@@ -2642,6 +2642,16 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'امتحان کردن با سبد سهام نمونه';
+
+  @override
+  String get portfolioSampleBanner =>
+      'این یک سبد سهام نمونه است. خریدهای خودتان را در کنار آن اضافه کنید، یا آن را حذف کنید.';
+
+  @override
+  String get portfolioSampleRemove => 'حذف نمونه';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

@@ -2636,6 +2636,16 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'نموني جي پورٽ فوليو سان آزمايو';
+
+  @override
+  String get portfolioSampleBanner =>
+      'هي هڪ نموني جو پورٽ فوليو آهي. ان سان گڏ پنهنجون خريداريون شامل ڪريو، يا ان کي هٽايو.';
+
+  @override
+  String get portfolioSampleRemove => 'نمونو هٽايو';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

@@ -2656,6 +2656,16 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Δοκιμή με ενδεικτικό χαρτοφυλάκιο';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Αυτό είναι ένα ενδεικτικό χαρτοφυλάκιο. Προσθέστε δίπλα του τις δικές σας αγορές ή αφαιρέστε το.';
+
+  @override
+  String get portfolioSampleRemove => 'Αφαίρεση δείγματος';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

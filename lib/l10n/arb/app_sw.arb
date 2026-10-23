@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Faida ya mwaka ikiendelea hivi ({rate}), utafikia lengo lako karibu mwaka {year}.",
   "portfolioMaxDrawdown": "Kushuka kukubwa zaidi",
   "glossMaxDrawdown": "Kushuka kukubwa zaidi kwa thamani ya hisa zako kutoka kilele cha awali hadi kiwango cha chini cha baadaye, bila athari ya ununuzi na mauzo yako (kumepimwa kwa muda). Kunaonyesha jinsi jalada lako la hisa lilivyokwisha kushuka kwa kina.",
-  "watchSince": "Tangu ulipoiongeza kwenye vipendwa ({date})"
+  "watchSince": "Tangu ulipoiongeza kwenye vipendwa ({date})",
+  "portfolioSampleTry": "Jaribu ukitumia jalada la mfano",
+  "portfolioSampleBanner": "Hili ni jalada la hisa la mfano. Ongeza ununuzi wako mwenyewe kando yake, au liondoe.",
+  "portfolioSampleRemove": "Ondoa mfano"
 }

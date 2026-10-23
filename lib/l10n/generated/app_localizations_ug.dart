@@ -2648,6 +2648,16 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'ئەۋرىشكە بىرىكمە بىلەن سىناش';
+
+  @override
+  String get portfolioSampleBanner =>
+      'بۇ ئەۋرىشكە مەبلەغ بىرىكمىسى. ئۇنىڭ يېنىغا ئۆزىڭىزنىڭ سېتىۋېلىشلىرىنى قوشۇڭ ياكى ئۇنى ئۆچۈرۈڭ.';
+
+  @override
+  String get portfolioSampleRemove => 'ئەۋرىشكىنى ئۆچۈرۈش';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

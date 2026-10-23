@@ -802,5 +802,8 @@
   "portfolioGoalEta": "If the yearly return still dey like this ({rate}), you go hit your target around {year}.",
   "portfolioMaxDrawdown": "Biggest drop",
   "glossMaxDrawdown": "Di biggest fall for your stocks value from one high wey come first go one low wey come after, without di effect of your buy and sell (time-weighted). E dey show how deep di dip wey your portfolio don already pass through be.",
-  "watchSince": "Since you add am to favourites ({date})"
+  "watchSince": "Since you add am to favourites ({date})",
+  "portfolioSampleTry": "Try am with sample portfolio",
+  "portfolioSampleBanner": "Dis na sample portfolio. Add wetin you buy join am, or comot am.",
+  "portfolioSampleRemove": "Comot sample"
 }

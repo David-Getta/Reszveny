@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Rendimiento arýpe opytáramo péicha ({rate}), rehupytýta ne jehupytyrã ary {year} rupi.",
   "portfolioMaxDrawdown": "Jeguejy tuichavéva",
   "glossMaxDrawdown": "Ne aksiõkuéra repy jeguejy tuichavéva, peteĩ yvatekue guive peteĩ ypykue upéi peve; ne jejogua ha ne ñemu ndojepapái (ojepesáva ára rupi). Ohechauka mba'eichaitépa ne cartera oguejýma.",
-  "watchSince": "Ojeguerohoryvévape rembojuaju guive ({date})"
+  "watchSince": "Ojeguerohoryvévape rembojuaju guive ({date})",
+  "portfolioSampleTry": "Eñehaʼã cartera techapyrã reheve",
+  "portfolioSampleBanner": "Kóva haʼe peteĩ cartera techapyrã. Embojuaju ne jogua ijykére, térã embogue.",
+  "portfolioSampleRemove": "Embogue techapyrã"
 }

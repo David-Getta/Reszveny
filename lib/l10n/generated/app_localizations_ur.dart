@@ -2645,6 +2645,16 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'نمونہ پورٹ فولیو کے ساتھ آزمائیں';
+
+  @override
+  String get portfolioSampleBanner =>
+      'یہ ایک نمونہ پورٹ فولیو ہے۔ اس کے ساتھ اپنی خریداریاں شامل کریں، یا اسے ہٹائیں۔';
+
+  @override
+  String get portfolioSampleRemove => 'نمونہ ہٹائیں';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

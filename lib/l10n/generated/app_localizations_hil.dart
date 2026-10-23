@@ -2663,6 +2663,16 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Tilawi gamit ang sample nga portfolio';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Sample nga portfolio ini. Idugang ang imo kaugalingon nga mga ginbakal sa tupad sini, ukon kuhaa ini.';
+
+  @override
+  String get portfolioSampleRemove => 'Kuhaa ang sample';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

@@ -2641,6 +2641,16 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Nwalee ya na portfolio ọmụmaatụ';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Nke a bụ portfolio ọmụmaatụ. Tinye ihe gị onwe gị zụrụ n\'akụkụ ya, ma ọ bụ wepụ ya.';
+
+  @override
+  String get portfolioSampleRemove => 'Wepụ ọmụmaatụ';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

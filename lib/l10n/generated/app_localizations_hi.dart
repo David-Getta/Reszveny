@@ -2643,6 +2643,16 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'नमूना पोर्टफ़ोलियो से आज़माएँ';
+
+  @override
+  String get portfolioSampleBanner =>
+      'यह एक नमूना पोर्टफ़ोलियो है। इसके साथ अपनी खरीदारियाँ जोड़ें, या इसे हटाएँ।';
+
+  @override
+  String get portfolioSampleRemove => 'नमूना हटाएँ';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

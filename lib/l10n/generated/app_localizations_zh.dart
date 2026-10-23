@@ -2530,6 +2530,15 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => '用示例投资组合试用';
+
+  @override
+  String get portfolioSampleBanner => '这是示例投资组合。您可以在旁边添加自己的买入记录，或将其移除。';
+
+  @override
+  String get portfolioSampleRemove => '移除示例';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5427,6 +5436,15 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String watchSince(String date) {
     return '自加入收藏以來（$date）';
   }
+
+  @override
+  String get portfolioSampleTry => '用示範投資組合試用';
+
+  @override
+  String get portfolioSampleBanner => '這是示範投資組合。你可以另外加入自己的買入記錄，或將其移除。';
+
+  @override
+  String get portfolioSampleRemove => '移除示範';
 
   @override
   String get portfolioGoalSet => '設定目標';

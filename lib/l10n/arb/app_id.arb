@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Jika imbal hasil tahunan bertahan ({rate}), Anda akan mencapai target sekitar tahun {year}.",
   "portfolioMaxDrawdown": "Penurunan terbesar",
   "glossMaxDrawdown": "Penurunan terbesar nilai saham Anda dari puncak sebelumnya ke titik terendah sesudahnya, tanpa pengaruh pembelian dan penjualan Anda (tertimbang waktu). Ini menunjukkan seberapa dalam penurunan yang pernah dialami portofolio Anda.",
-  "watchSince": "Sejak ditambahkan ke favorit ({date})"
+  "watchSince": "Sejak ditambahkan ke favorit ({date})",
+  "portfolioSampleTry": "Coba dengan portofolio contoh",
+  "portfolioSampleBanner": "Ini adalah portofolio contoh. Tambahkan pembelian Anda sendiri di sampingnya, atau hapus portofolio ini.",
+  "portfolioSampleRemove": "Hapus contoh"
 }

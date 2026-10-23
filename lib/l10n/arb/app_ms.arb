@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Jika pulangan tahunan kekal ({rate}), anda akan mencapai sasaran sekitar tahun {year}.",
   "portfolioMaxDrawdown": "Penurunan terbesar",
   "glossMaxDrawdown": "Penurunan terbesar nilai saham anda daripada puncak sebelumnya ke titik terendah selepasnya, tanpa kesan pembelian dan jualan anda (berwajaran masa). Ia menunjukkan sedalam mana kejatuhan yang pernah dilalui portfolio anda.",
-  "watchSince": "Sejak ditambah ke kegemaran ({date})"
+  "watchSince": "Sejak ditambah ke kegemaran ({date})",
+  "portfolioSampleTry": "Cuba dengan portfolio sampel",
+  "portfolioSampleBanner": "Ini ialah portfolio sampel. Tambah belian anda sendiri di sebelahnya, atau alih keluar portfolio ini.",
+  "portfolioSampleRemove": "Alih keluar sampel"
 }

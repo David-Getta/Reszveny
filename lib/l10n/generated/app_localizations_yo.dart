@@ -2644,6 +2644,16 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Gbìyànjú pẹ̀lú àpò ìdókòwò àpẹẹrẹ';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Àpò ìdókòwò àpẹẹrẹ nìyí. Fi àwọn ìrajà tìrẹ kún un, tàbí yọ ọ́ kúrò.';
+
+  @override
+  String get portfolioSampleRemove => 'Yọ àpẹẹrẹ kúrò';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

@@ -2639,6 +2639,16 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Jéem ak aksiyoŋ yu misaal';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Lii ay aksiyoŋ yu misaal la. Yokk li nga jënd ci wetam, walla far ko.';
+
+  @override
+  String get portfolioSampleRemove => 'Far misaal bi';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

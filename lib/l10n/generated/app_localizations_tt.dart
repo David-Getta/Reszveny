@@ -2643,6 +2643,16 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Үрнәк портфель белән сынап карау';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Бу – үрнәк портфель. Аның янына үз сатып алуларыгызны өстәгез яки аны бетерегез.';
+
+  @override
+  String get portfolioSampleRemove => 'Үрнәкне бетерү';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

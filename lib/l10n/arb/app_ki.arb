@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Uumithio wa mwaka ũngĩtũũra ũguo ({rate}), nĩ ũgakinyĩra muoroto ta mwaka wa {year}.",
   "portfolioMaxDrawdown": "Kũnyiha kũnene mũno",
   "glossMaxDrawdown": "Kũnyiha kũnene mũno kwa thogora wa hisa ciaku kuuma igũrũ rĩa mbere nginya hau thĩ thuutha, hatarĩ ũhoro wa kũgũra na kwendia gwaku (gũthimĩtwo na ihinda). Kuonanagia ũrĩa hisa ciaku ciagũĩte thĩ mũno hĩndĩ ĩhĩtũku.",
-  "watchSince": "Kuuma rĩrĩa woongereire harĩ iria wendete ({date})"
+  "watchSince": "Kuuma rĩrĩa woongereire harĩ iria wendete ({date})",
+  "portfolioSampleTry": "Geria na hisa cia mũhiano",
+  "portfolioSampleBanner": "Ici nĩ hisa cia mũhiano. Ongerera ũgũri waku mwene hamwe nacio, kana ũcirute.",
+  "portfolioSampleRemove": "Ruta mũhiano"
 }

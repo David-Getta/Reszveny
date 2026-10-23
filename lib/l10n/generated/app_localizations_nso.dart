@@ -2664,6 +2664,16 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Leka ka photefolio ya mohlala';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ye ke photefolio ya mohlala. Oketša tše o di rekilego ka bowena kgauswi le yona, goba o e tloše.';
+
+  @override
+  String get portfolioSampleRemove => 'Tloša mohlala';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

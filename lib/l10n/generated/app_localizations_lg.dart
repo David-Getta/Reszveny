@@ -2660,6 +2660,16 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Gezesa n\'emigabo egy\'okulabirako';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Gino migabo gya kulabirako. Gattako bye wagula ggwe kennyini, oba gigyewo.';
+
+  @override
+  String get portfolioSampleRemove => 'Ggyawo eby\'okulabirako';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

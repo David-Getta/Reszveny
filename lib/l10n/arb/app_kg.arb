@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Kana mbakulu ya mvula bikala mutindu yai ({rate}), nge ta lungisa lukanu pene-pene na mvula {year}.",
   "portfolioMaxDrawdown": "Kukulumuka ya nene kuluta",
   "glossMaxDrawdown": "Kukulumuka ya nene kuluta ya ntalu ya ba actions na nge, katuka na zulu ya ntete tii na nsi ya nima, kukonda kutadila kusumba mpi kuteka na nge (bo me tala na ntangu). Yo ke monisa nki mutindu portefeuille na nge me kulumukaka dezia na nsi.",
-  "watchSince": "Banda nge yikaka yo mu bizolwa ({date})"
+  "watchSince": "Banda nge yikaka yo mu bizolwa ({date})",
+  "portfolioSampleTry": "Meka na portefeuille ya mbandu",
+  "portfolioSampleBanner": "Yai kele portefeuille ya mbandu. Yika bima nge sumbaka pembeni na yo, to katula yo.",
+  "portfolioSampleRemove": "Katula mbandu"
 }

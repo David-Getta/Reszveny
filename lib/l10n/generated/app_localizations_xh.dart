@@ -2658,6 +2658,16 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Zama ngepotifoliyo yomzekelo';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Le yipotifoliyo yomzekelo. Yongeza ozithengileyo ecaleni kwayo, okanye uyisuse.';
+
+  @override
+  String get portfolioSampleRemove => 'Susa umzekelo';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

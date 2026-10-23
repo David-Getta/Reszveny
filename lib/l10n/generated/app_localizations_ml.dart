@@ -2656,6 +2656,17 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry =>
+      'സാമ്പിൾ പോർട്ട്ഫോളിയോ ഉപയോഗിച്ച് പരീക്ഷിക്കുക';
+
+  @override
+  String get portfolioSampleBanner =>
+      'ഇതൊരു സാമ്പിൾ പോർട്ട്ഫോളിയോ ആണ്. ഇതിനൊപ്പം നിങ്ങളുടെ സ്വന്തം വാങ്ങലുകൾ ചേർക്കുക, അല്ലെങ്കിൽ ഇത് നീക്കം ചെയ്യുക.';
+
+  @override
+  String get portfolioSampleRemove => 'സാമ്പിൾ നീക്കം ചെയ്യുക';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

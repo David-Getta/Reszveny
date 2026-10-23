@@ -802,5 +802,8 @@
   "portfolioGoalEta": "年率リターン（{rate}）が続けば、{year}年ごろに目標達成の見込みです。",
   "portfolioMaxDrawdown": "最大下落率",
   "glossMaxDrawdown": "保有株の評価額が、それ以前の高値からその後の安値までに下がった最大の幅。売買による影響は除いています（時間加重）。ポートフォリオがこれまでにどれほど深い下落を経験したかを示します。",
-  "watchSince": "お気に入り追加（{date}）以降"
+  "watchSince": "お気に入り追加（{date}）以降",
+  "portfolioSampleTry": "サンプルのポートフォリオで試す",
+  "portfolioSampleBanner": "これはサンプルのポートフォリオです。自分の購入を追加するか、サンプルを削除してください。",
+  "portfolioSampleRemove": "サンプルを削除"
 }

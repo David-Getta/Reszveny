@@ -2647,6 +2647,16 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Nusga portfel bilen synap gör';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Bu nusga portfel. Onuň ýanyna öz satyn alyşlaryňyzy goşuň ýa-da ony aýyryň.';
+
+  @override
+  String get portfolioSampleRemove => 'Nusgany aýyr';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

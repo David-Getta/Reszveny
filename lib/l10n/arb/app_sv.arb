@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Om den årliga avkastningen håller i sig ({rate}), når du målet runt {year}.",
   "portfolioMaxDrawdown": "Största nedgång",
   "glossMaxDrawdown": "Den största nedgången i värdet på dina aktier från en tidigare topp till en senare botten, utan effekten av dina köp och försäljningar (tidsviktad). Den visar hur djup en nedgång din portfölj redan har gått igenom.",
-  "watchSince": "Sedan du lade till den i favoriter ({date})"
+  "watchSince": "Sedan du lade till den i favoriter ({date})",
+  "portfolioSampleTry": "Testa med en exempelportfölj",
+  "portfolioSampleBanner": "Det här är en exempelportfölj. Lägg till dina egna köp bredvid, eller ta bort den.",
+  "portfolioSampleRemove": "Ta bort exemplet"
 }

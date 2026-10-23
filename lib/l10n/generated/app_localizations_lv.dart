@@ -2687,6 +2687,16 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Izmēģināt ar parauga portfeli';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Šis ir parauga portfelis. Pievienojiet tam blakus savus pirkumus vai noņemiet to.';
+
+  @override
+  String get portfolioSampleRemove => 'Noņemt paraugu';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

@@ -2654,6 +2654,16 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Ku tijaabi portfoliyo tusaale ah';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Kani waa portfoliyo tusaale ah. Ku dar iibsashooyinkaaga agtiisa, ama ka saar.';
+
+  @override
+  String get portfolioSampleRemove => 'Ka saar tusaalaha';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

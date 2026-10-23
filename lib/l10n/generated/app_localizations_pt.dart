@@ -2652,6 +2652,16 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Experimentar com uma carteira de exemplo';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Esta é uma carteira de exemplo. Adicione as suas próprias compras ao lado ou remova-a.';
+
+  @override
+  String get portfolioSampleRemove => 'Remover exemplo';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

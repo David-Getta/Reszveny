@@ -2652,6 +2652,16 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Gwada da jakar hannun jari ta misali';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Wannan jakar hannun jari ce ta misali. Ƙara sayayyarka a gefenta, ko ka cire ta.';
+
+  @override
+  String get portfolioSampleRemove => 'Cire misalin';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

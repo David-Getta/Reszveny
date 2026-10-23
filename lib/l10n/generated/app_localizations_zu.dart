@@ -2657,6 +2657,16 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Zama ngephothifoliyo yesampula';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Lena iphothifoliyo yesampula. Engeza okuthengile kwakho eceleni kwayo, noma uyisuse.';
+
+  @override
+  String get portfolioSampleRemove => 'Susa isampula';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

@@ -2657,6 +2657,16 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'மாதிரி போர்ட்ஃபோலியோவுடன் முயற்சி செய்';
+
+  @override
+  String get portfolioSampleBanner =>
+      'இது ஒரு மாதிரி போர்ட்ஃபோலியோ. இதனுடன் உங்கள் சொந்த வாங்குதல்களைச் சேர்க்கவும், அல்லது இதை நீக்கவும்.';
+
+  @override
+  String get portfolioSampleRemove => 'மாதிரியை நீக்கு';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

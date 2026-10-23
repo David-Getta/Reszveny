@@ -840,6 +840,18 @@ void main() {
     await _shot(tester, 'portfolio_contribution_phone_hu');
   });
 
+  testWidgets('trying the app with a sample portfolio on a phone (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'), currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_empty_phone_hu');
+    await tester.tap(find.byKey(const ValueKey('portfolio-empty-sample')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_sample_phone_hu');
+    await tester.pump(const Duration(minutes: 1));
+  });
+
   testWidgets('annual summary on a phone (hungarian)', (tester) async {
     final portfolio = PortfolioStore(
       lots: [

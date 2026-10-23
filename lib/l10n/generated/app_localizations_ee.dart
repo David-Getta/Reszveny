@@ -2651,6 +2651,16 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Te ekpɔ kple kpɔɖeŋu akpawo';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Esia nye kpɔɖeŋu akpawo. Tsɔ wò ŋutɔ ƒe nuƒeƒlewo kpe ɖe eŋu, alo ɖe eɖa.';
+
+  @override
+  String get portfolioSampleRemove => 'Ɖe kpɔɖeŋu ɖa';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

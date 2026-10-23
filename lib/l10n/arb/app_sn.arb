@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Kana pundutso yegore ikaramba yakadaro ({rate}), uchasvika pachinangwa kunenge muna {year}.",
   "portfolioMaxDrawdown": "Kudzikira kukuru kwazvo",
   "glossMaxDrawdown": "Kudzikira kukuru kwazvo kwekukosha kwemasheya ako kubva pakakwirira kwakambovapo kusvika pakaderera kwakazotevera, pasina mhedzisiro yekutenga nekutengesa kwako (kwakayerwa nenguva). Kunoratidza kuti potiforiyo yako yakambodzikira zvakadzama sei.",
-  "watchSince": "Kubvira pawakaiwedzera kune zvaunofarira ({date})"
+  "watchSince": "Kubvira pawakaiwedzera kune zvaunofarira ({date})",
+  "portfolioSampleTry": "Edza nepotiforiyo yemuenzaniso",
+  "portfolioSampleBanner": "Iyi ipotiforiyo yemuenzaniso. Wedzera zvawakatenga iwe pachako padivi payo, kana kuti uibvise.",
+  "portfolioSampleRemove": "Bvisa muenzaniso"
 }

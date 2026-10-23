@@ -2652,6 +2652,16 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Proberen met een voorbeeldportefeuille';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Dit is een voorbeeldportefeuille. Voeg je eigen aankopen ernaast toe, of verwijder hem.';
+
+  @override
+  String get portfolioSampleRemove => 'Voorbeeld verwijderen';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

@@ -2691,6 +2691,16 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Isprobaj s oglednim portfeljem';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ovo je ogledni portfelj. Dodajte uz njega svoje kupnje ili ga uklonite.';
+
+  @override
+  String get portfolioSampleRemove => 'Ukloni ogledni portfelj';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

@@ -2659,6 +2659,16 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Muestra portafoliowan llamiy';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Kayqa muestra portafolio. Kikiykiq rantisqaykikunata waqtanman yapay, utaq hurquy.';
+
+  @override
+  String get portfolioSampleRemove => 'Muestrata hurquy';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

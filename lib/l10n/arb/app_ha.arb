@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Idan ribar shekara ta ci gaba haka ({rate}), za ka cimma burinka kusan shekarar {year}.",
   "portfolioMaxDrawdown": "Faɗuwa mafi girma",
   "glossMaxDrawdown": "Faɗuwa mafi girma ta ƙimar hannun jarinka daga wani koli na baya zuwa wani ƙasa na gaba, ba tare da tasirin saye da sayarwarka ba (an auna da lokaci). Tana nuna zurfin faɗuwar da jakar hannun jarinka ta riga ta fuskanta.",
-  "watchSince": "Tun da ka ƙara shi zuwa abubuwan da aka fi so ({date})"
+  "watchSince": "Tun da ka ƙara shi zuwa abubuwan da aka fi so ({date})",
+  "portfolioSampleTry": "Gwada da jakar hannun jari ta misali",
+  "portfolioSampleBanner": "Wannan jakar hannun jari ce ta misali. Ƙara sayayyarka a gefenta, ko ka cire ta.",
+  "portfolioSampleRemove": "Cire misalin"
 }

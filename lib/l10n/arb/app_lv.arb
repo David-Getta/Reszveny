@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Ja gada ienesīgums saglabāsies ({rate}), mērķi sasniegsiet ap {year}. gadu.",
   "portfolioMaxDrawdown": "Lielākais kritums",
   "glossMaxDrawdown": "Lielākais jūsu akciju vērtības kritums no agrākas virsotnes līdz vēlākam zemākajam punktam, neņemot vērā jūsu pirkumu un pārdošanas ietekmi (laikā svērts). Tas parāda, cik dziļu kritumu jūsu portfelis jau ir piedzīvojis.",
-  "watchSince": "Kopš pievienošanas izlasei ({date})"
+  "watchSince": "Kopš pievienošanas izlasei ({date})",
+  "portfolioSampleTry": "Izmēģināt ar parauga portfeli",
+  "portfolioSampleBanner": "Šis ir parauga portfelis. Pievienojiet tam blakus savus pirkumus vai noņemiet to.",
+  "portfolioSampleRemove": "Noņemt paraugu"
 }

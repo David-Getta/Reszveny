@@ -2647,6 +2647,16 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Testa med en exempelportfölj';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Det här är en exempelportfölj. Lägg till dina egna köp bredvid, eller ta bort den.';
+
+  @override
+  String get portfolioSampleRemove => 'Ta bort exemplet';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

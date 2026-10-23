@@ -2644,6 +2644,16 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Ɛreḍ s uqrab n umedya';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Wagi d aqrab n umedya. Rnu tiɣin-ik ɣer tama-s, neɣ kkes-it.';
+
+  @override
+  String get portfolioSampleRemove => 'Kkes amedya';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

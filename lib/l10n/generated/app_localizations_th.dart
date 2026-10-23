@@ -2614,6 +2614,16 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'ลองใช้พอร์ตโฟลิโอตัวอย่าง';
+
+  @override
+  String get portfolioSampleBanner =>
+      'นี่คือพอร์ตโฟลิโอตัวอย่าง เพิ่มการซื้อของคุณเองควบคู่ไปได้ หรือจะลบออกก็ได้';
+
+  @override
+  String get portfolioSampleRemove => 'ลบตัวอย่าง';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

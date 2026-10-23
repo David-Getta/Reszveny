@@ -802,5 +802,8 @@
   "portfolioGoalEta": "Bleibt die Jahresrendite bei {rate}, erreichst du dein Ziel etwa {year}.",
   "portfolioMaxDrawdown": "Maximaler Rückgang",
   "glossMaxDrawdown": "Der größte Rückgang des Werts deiner Aktien von einem früheren Hoch bis zu einem späteren Tief, ohne den Effekt deiner Käufe und Verkäufe (zeitgewichtet). Er zeigt, wie tief dein Portfolio schon einmal eingebrochen ist.",
-  "watchSince": "Seit dem Hinzufügen zu den Favoriten ({date})"
+  "watchSince": "Seit dem Hinzufügen zu den Favoriten ({date})",
+  "portfolioSampleTry": "Mit Beispielportfolio ausprobieren",
+  "portfolioSampleBanner": "Das ist ein Beispielportfolio. Füge daneben deine eigenen Käufe hinzu oder entferne es.",
+  "portfolioSampleRemove": "Beispiel entfernen"
 }

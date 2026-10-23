@@ -2690,6 +2690,16 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
+  String get portfolioSampleTry => 'Isprobaj s primjerom portfolija';
+
+  @override
+  String get portfolioSampleBanner =>
+      'Ovo je primjer portfolija. Dodajte pored njega svoje kupovine ili ga uklonite.';
+
+  @override
+  String get portfolioSampleRemove => 'Ukloni primjer';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override
