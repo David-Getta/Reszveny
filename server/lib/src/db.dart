@@ -105,6 +105,10 @@ class Store {
         user_id TEXT PRIMARY KEY,
         sent_at TEXT NOT NULL
       );
+      CREATE TABLE IF NOT EXISTS digest_unsubscribe (
+        token TEXT PRIMARY KEY,
+        user_id TEXT NOT NULL UNIQUE
+      );
       CREATE TABLE IF NOT EXISTS trial_grants (
         ip_hash TEXT NOT NULL,
         created_at TEXT NOT NULL
@@ -248,7 +252,9 @@ class Store {
         as int;
   }
 
-  static const maxDailyLoginFailures = 15;
+  /// Hibás kódok naponta címenként, minden kérőtől együtt: csak végső korlát (a
+  /// kérőnkénti 15-öt az API tartja), hogy egy idegen ne zárhassa ki a cím gazdáját.
+  static const maxDailyLoginFailures = 50;
 
   /// Új 6 jegyű belépőkód (10 percig érvényes); a korábbiak érvénytelenek lesznek.
   String createLoginCode(String email) {
@@ -308,9 +314,15 @@ class Store {
       _db.execute('DELETE FROM ask_calls WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM user_sync WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM digest_log WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM digest_unsubscribe WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM tester_redemptions WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [userId]);
-      _db.execute('DELETE FROM referrals WHERE referee_id = ? OR referrer_id = ?', [userId, userId]);
+      // Az ajánlás sora névtelenítve marad (nem törlődik): különben a másik fél újra
+      // beválthatna egy kódot (a meghívott), illetve az ajánló kerete újraindulna.
+      _db.execute("UPDATE referrals SET referee_id = 'deleted:' || lower(hex(randomblob(8))) WHERE referee_id = ?", [
+        userId,
+      ]);
+      _db.execute('UPDATE referrals SET referrer_id = ? WHERE referrer_id = ?', [deletedUser, userId]);
       if (email != null) _db.execute('DELETE FROM login_codes WHERE email = ?', [email]);
       _db.execute('UPDATE purchases SET user_id = ? WHERE user_id = ?', [deletedUser, userId]);
       _db.execute('DELETE FROM users WHERE id = ?', [userId]);
@@ -355,6 +367,11 @@ class Store {
     _db.execute('DELETE FROM sessions WHERE user_id = ?', [from]);
     // Az elsődleges token is (a hash helyére egy semmivel nem egyező érték).
     _db.execute('UPDATE users SET token_hash = ? WHERE id = ?', ['revoked:$from', from]);
+    // A névtelen fiók használati naplója is a fiókhoz kerül (a fiók törlésekor vele
+    // együtt törlődik); a kérés-korlátok sorai elvesznek.
+    _db.execute('UPDATE usage_log SET user_id = ? WHERE user_id = ?', [into, from]);
+    _db.execute('DELETE FROM helper_calls WHERE user_id = ?', [from]);
+    _db.execute('DELETE FROM ask_calls WHERE user_id = ?', [from]);
   }
 
   void clearStripeSubscription(String userId) =>
@@ -652,6 +669,21 @@ class Store {
   DateTime? lastDigest(String userId) {
     final rows = _db.select('SELECT sent_at FROM digest_log WHERE user_id = ?', [userId]);
     return rows.isEmpty ? null : DateTime.parse(rows.first['sent_at'] as String);
+  }
+
+  /// A heti levél leiratkozó linkjének (véletlen, nem kitalálható) azonosítója; az
+  /// első kéréskor jön létre, utána ugyanaz marad.
+  String unsubscribeToken(String userId) {
+    final rows = _db.select('SELECT token FROM digest_unsubscribe WHERE user_id = ?', [userId]);
+    if (rows.isNotEmpty) return rows.first['token'] as String;
+    final token = List.generate(16, (_) => _rng.nextInt(256).toRadixString(16).padLeft(2, '0')).join();
+    _db.execute('INSERT INTO digest_unsubscribe (token, user_id) VALUES (?, ?)', [token, userId]);
+    return token;
+  }
+
+  String? userForUnsubscribe(String token) {
+    final rows = _db.select('SELECT user_id FROM digest_unsubscribe WHERE token = ?', [token]);
+    return rows.isEmpty ? null : rows.first['user_id'] as String;
   }
 
   void markDigest(String userId) => _db.execute(

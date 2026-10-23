@@ -35,8 +35,13 @@ class DigestSender {
     this.headline,
     this.results,
     this.pause = Duration.zero,
+    this.unsubscribeBase,
     DateTime Function()? clock,
   }) : _clock = clock ?? DateTime.now;
+
+  /// Ha meg van adva (pl. `https://…/u`), a levélben és a `List-Unsubscribe`
+  /// fejlécben egykattintásos leiratkozó link (az app nélkül is ki lehet kapcsolni).
+  final String? unsubscribeBase;
 
   final Store store;
   final Mailer mailer;
@@ -279,8 +284,12 @@ class DigestSender {
           if (last != null && now.difference(last) < minGap) continue;
           final s = symbolsOf(data);
           if (s.portfolio.isEmpty && s.favorites.isEmpty) continue;
+          // A fiók csak akkor kerül a körbe, ha minden részvénye belefér a keretbe –
+          // különben a következő körben, csonkítás nélkül (egymagában túl nagy fiók elsőként).
+          final mine = {...s.portfolio, ...s.favorites};
+          if (symbols.isNotEmpty && symbols.union(mine).length > maxSymbolsPerRound) continue;
           accounts.add((userId: a.userId, email: a.email, data: data));
-          symbols.addAll([...s.portfolio, ...s.favorites]);
+          symbols.addAll(mine);
         } catch (_) {
           // Sérült csomag: kihagyjuk.
         }
@@ -353,17 +362,43 @@ class DigestSender {
               ),
         ];
         final portfolio = lines(s.portfolio), favorites = lines(s.favorites);
-        if (portfolio.isEmpty && favorites.isEmpty) continue;
+        if (portfolio.isEmpty && favorites.isEmpty) {
+          // Egyik részvényére sincs adat (pl. nem jegyzett tickerek): erre a hétre kész,
+          // különben minden körben elölről venné, és a keretet a többiek elől enné el.
+          store.markDigest(acc.userId);
+          continue;
+        }
+        // A lekérések akár percekig tartanak: közben törölhette a fiókját, kikapcsolhatta
+        // a levelet vagy nyelvet válthatott – a friss adatból döntünk.
+        final current = store.syncData(acc.userId);
+        final email = store.emailOf(acc.userId);
+        if (current == null || email == null) continue;
+        final Map<String, dynamic> data;
+        try {
+          data = (jsonDecode(current.data) as Map).cast<String, dynamic>();
+        } catch (_) {
+          continue;
+        }
+        if (data['weekly_digest'] != true) continue;
+        final unsubscribe = unsubscribeBase == null ? null : '$unsubscribeBase/${store.unsubscribeToken(acc.userId)}';
         try {
           final (subject, text) = digestEmail(
             portfolio,
             favorites,
-            hu: acc.data['lang'] == 'hu',
-            dividends: dividendsOf(acc.data, now: now),
-            yearToDate: dividendsYearToDate(acc.data, now: now),
-            expected: expectedDividendsOf(acc.data, now: now),
+            hu: data['lang'] == 'hu',
+            dividends: dividendsOf(data, now: now),
+            yearToDate: dividendsYearToDate(data, now: now),
+            expected: expectedDividendsOf(data, now: now),
+            unsubscribeUrl: unsubscribe,
           );
-          await mailer.send(acc.email, subject: subject, text: text);
+          await mailer.send(
+            email,
+            subject: subject,
+            text: text,
+            headers: unsubscribe == null
+                ? null
+                : {'List-Unsubscribe': '<$unsubscribe>', 'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click'},
+          );
           store.markDigest(acc.userId);
           sent++;
         } catch (e) {
@@ -411,6 +446,7 @@ class DigestSender {
     List<DigestDividend> dividends = const [],
     List<DigestDividend> expected = const [],
     Map<String, double> yearToDate = const {},
+    String? unsubscribeUrl,
   }) {
     int byChange(DigestLine a, DigestLine b) => (b.weekChange ?? -1e9).compareTo(a.weekChange ?? -1e9);
     portfolio = [...portfolio]..sort(byChange);
@@ -549,6 +585,9 @@ class DigestSender {
             ? 'A heti összefoglalót az appban, a Beállításokban kapcsolhatod ki. Ez nem befektetési tanács.'
             : 'You can turn off the weekly summary in the app, in Settings. This is not investment advice.',
       );
+    if (unsubscribeUrl != null) {
+      b.writeln(hu ? 'Leiratkozás egy kattintással: $unsubscribeUrl' : 'Unsubscribe in one click: $unsubscribeUrl');
+    }
     return (subject, b.toString());
   }
 }

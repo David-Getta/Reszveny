@@ -104,13 +104,21 @@ class ShareStore {
     );
   }
 
+  /// A link képe; a lejárt megosztásé már nem (mint az oldala).
   Uint8List? image(String id) {
-    final rows = _db.select('SELECT image FROM shares WHERE id = ?', [id]);
+    final rows = _db.select('SELECT image, created_at FROM shares WHERE id = ?', [id]);
     if (rows.isEmpty) return null;
+    final created = DateTime.parse(rows.first['created_at'] as String);
+    if (clock().toUtc().difference(created) > keep) return null;
     final v = rows.first['image'];
     return v is Uint8List ? v : null;
   }
 
   /// Fiók törlésekor a megosztásai is törlődnek.
   void deleteUser(String userId) => _db.execute('DELETE FROM shares WHERE user_id = ?', [userId]);
+
+  /// Fiók-összevonás: a névtelen eszközön készült megosztások a fiókhoz kerülnek
+  /// (a fiók törlésekor velük együtt törlődnek).
+  void moveUser({required String from, required String into}) =>
+      _db.execute('UPDATE shares SET user_id = ? WHERE user_id = ?', [into, from]);
 }

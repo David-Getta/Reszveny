@@ -100,6 +100,16 @@ void main() {
     expect(await img.read().expand((c) => c).toList(), png);
   });
 
+  test('an expired share has neither its page nor its picture', () async {
+    final t = await newUser();
+    final id =
+        jsonDecode(await (await raw('POST', '/v1/share', token: t, body: share())).readAsString())['id'] as String;
+    final created = store.clock();
+    store.clock = () => created.add(const Duration(days: 210));
+    expect((await raw('GET', '/s/$id')).statusCode, 404);
+    expect((await raw('GET', '/s/$id.png')).statusCode, 404);
+  });
+
   test('sharing the same analysis again gives the same link, a new analysis a new one', () async {
     final t = await newUser();
     Future<String> idOf(Map<String, dynamic> b) async =>

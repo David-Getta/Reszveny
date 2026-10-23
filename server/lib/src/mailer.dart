@@ -7,13 +7,14 @@ import 'package:http/http.dart' as http;
 abstract interface class Mailer {
   Future<void> sendLoginCode(String email, String code);
 
-  Future<void> send(String email, {required String subject, required String text});
+  /// [headers]: további levélfejlécek (pl. `List-Unsubscribe`).
+  Future<void> send(String email, {required String subject, required String text, Map<String, String>? headers});
 }
 
 /// Fejlesztéshez: a kódot a szerver naplójába írja, és megjegyzi (tesztek).
 class ConsoleMailer implements Mailer {
   final sent = <String, String>{};
-  final messages = <({String to, String subject, String text})>[];
+  final messages = <({String to, String subject, String text, Map<String, String> headers})>[];
 
   @override
   Future<void> sendLoginCode(String email, String code) async {
@@ -22,8 +23,8 @@ class ConsoleMailer implements Mailer {
   }
 
   @override
-  Future<void> send(String email, {required String subject, required String text}) async {
-    messages.add((to: email, subject: subject, text: text));
+  Future<void> send(String email, {required String subject, required String text, Map<String, String>? headers}) async {
+    messages.add((to: email, subject: subject, text: text, headers: headers ?? const {}));
     stdout.writeln('[mail] $email: $subject');
   }
 }
@@ -54,7 +55,7 @@ class ResendMailer implements Mailer {
   }
 
   @override
-  Future<void> send(String email, {required String subject, required String text}) async {
+  Future<void> send(String email, {required String subject, required String text, Map<String, String>? headers}) async {
     final res = await _client.post(
       Uri.parse('https://api.resend.com/emails'),
       headers: {'authorization': 'Bearer $apiKey', 'content-type': 'application/json'},
@@ -63,6 +64,7 @@ class ResendMailer implements Mailer {
         'to': [email],
         'subject': subject,
         'text': text,
+        'headers': ?headers,
       }),
     );
     if (res.statusCode >= 300) throw HttpException('Resend ${res.statusCode}: ${res.body}');

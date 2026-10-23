@@ -565,6 +565,86 @@ void main() {
     expect(r.status, anyOf(402, 400));
     if (r.status == 400) fail('a megosztás tartalma itt nem számít: előbb a jogosultság');
   });
+
+  test('wrong codes from one address do not lock the owner out from another', () async {
+    const attacker = {'x-forwarded-for': '203.0.113.5'};
+    const owner = {'x-forwarded-for': '198.51.100.7'};
+    for (var round = 0; round < 4; round++) {
+      await call('POST', '/v1/auth/email/start', body: {'email': 'victim@x.io'}, headers: attacker);
+      for (var i = 0; i < 5; i++) {
+        await call(
+          'POST',
+          '/v1/auth/email/verify',
+          body: {'email': 'victim@x.io', 'code': '000000'},
+          headers: attacker,
+        );
+      }
+      now = now.add(const Duration(minutes: 13));
+    }
+    await call('POST', '/v1/auth/email/start', body: {'email': 'victim@x.io'}, headers: owner);
+    final code = mailer.sent['victim@x.io']!;
+    final r = await call('POST', '/v1/auth/email/verify', body: {'email': 'victim@x.io', 'code': code}, headers: owner);
+    expect(r.status, 200);
+  });
+
+  test('malformed login fields and deeply nested sync data are 400s, not 500s', () async {
+    final e = await call('POST', '/v1/auth/email/verify', body: {'email': 42, 'code': 123456});
+    expect(e.status, 401);
+    final s = await call('POST', '/v1/auth/email/start', body: {'email': 42});
+    expect(s.status, 400);
+    final t = (await login('deep@x.io'))['token'] as String;
+    final deep = '{"data":{"x":${'[' * 5000}${']' * 5000}}}';
+    final r = await call('PUT', '/v1/sync', token: t, raw: deep);
+    expect(r.status, 400);
+  });
+
+  test('shares made before signing in to an account go with it when the account is deleted', () async {
+    final (t, uid) = await anon();
+    store.save(
+      store.entitlement(uid)
+        ..tier = 'pro'
+        ..periodStart = now
+        ..periodEnd = now.add(const Duration(days: 30)),
+    );
+    final created = await call(
+      'POST',
+      '/v1/share',
+      token: t,
+      body: {'symbol': 'AAPL', 'name': 'Apple', 'language': 'en', 'summary': 'x', 'headline': 'h'},
+    );
+    expect(created.status, 200, reason: '${created.body}');
+    final id = created.body['id'] as String;
+    // Másik eszközön már van fiók; ez az eszköz belép oda (összevonás), majd törli.
+    final first = await login('owner@x.io');
+    final merged = await login('owner@x.io', token: t);
+    expect(merged['user_id'], first['user_id']);
+    expect((await call('DELETE', '/v1/account', token: merged['token'] as String)).status, 200);
+    expect((await call('GET', '/s/$id')).status, 404);
+  });
+
+  test('the weekly summary unsubscribe link: a confirmation page, then the switch goes off (with its time)', () async {
+    final t = (await login('sub@x.io'))['token'] as String;
+    final uid = store.userIdForEmail('sub@x.io')!;
+    await call(
+      'PUT',
+      '/v1/sync',
+      token: t,
+      body: {
+        'data': {
+          'weekly_digest': true,
+          'favorites': ['AAPL'],
+        },
+      },
+    );
+    final token = store.unsubscribeToken(uid);
+    expect((await call('GET', '/u/$token')).status, 200);
+    expect((jsonDecode(store.syncData(uid)!.data) as Map)['weekly_digest'], true, reason: 'GET nem iratkoztat le');
+    expect((await call('POST', '/u/$token', raw: 'List-Unsubscribe=One-Click')).status, 200);
+    final data = jsonDecode(store.syncData(uid)!.data) as Map;
+    expect(data['weekly_digest'], false);
+    expect((data['switches_at'] as Map)['weekly_digest'], isNotNull);
+    expect((await call('GET', '/u/${'0' * 32}')).status, 404);
+  });
 }
 
 /// Ellenőrző, amely mindent elfogad, a megadott lejárattal.

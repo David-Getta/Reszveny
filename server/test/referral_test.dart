@@ -116,6 +116,24 @@ void main() {
     expect(stats['rewarded'], 2);
   });
 
+  test('a deleted referrer does not let the friend redeem again; a deleted friend still counts for the cap', () async {
+    final alice = await newUser();
+    final bob = await newUser();
+    final bobCode = (await call('GET', '/v1/referral', token: bob)).body['code'];
+    expect((await call('POST', '/v1/referral/redeem', token: alice, body: {'code': bobCode})).status, 200);
+    expect((await call('DELETE', '/v1/account', token: bob)).status, 200);
+    final carol = await newUser();
+    final carolCode = (await call('GET', '/v1/referral', token: carol)).body['code'];
+    final again = await call('POST', '/v1/referral/redeem', token: alice, body: {'code': carolCode});
+    expect((again.status, again.body['error']), (409, 'already_redeemed'));
+    expect(await extra(alice), 5);
+    // Carol meghívottja törli a fiókját: Carol meghívottjai között továbbra is számít.
+    final dave = await newUser();
+    await call('POST', '/v1/referral/redeem', token: dave, body: {'code': carolCode});
+    await call('DELETE', '/v1/account', token: dave);
+    expect((await call('GET', '/v1/referral', token: carol)).body['invited'], 1);
+  });
+
   test('throwaway anonymous accounts cannot collect the friend bonus', () async {
     final alice = await newUser();
     final code = (await call('GET', '/v1/referral', token: alice)).body['code'];

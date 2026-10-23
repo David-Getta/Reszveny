@@ -111,6 +111,94 @@ void main() {
     expect(await sender().sendDue(), 1);
   });
 
+  test('an account without usable lines is done for the week and does not starve the others', () async {
+    for (var i = 0; i < 3; i++) {
+      account('junk$i@example.com', {
+        'weekly_digest': true,
+        'favorites': ['JUNK$i'],
+      });
+    }
+    account('dave@example.com', {
+      'weekly_digest': true,
+      'favorites': ['AAPL'],
+    });
+    expect(await sender().sendDue(), 1);
+    expect(mailer.messages.single.to, 'dave@example.com');
+    // A következő órában a nem jegyzett tickereket már nem kérdezi újra.
+    asked.clear();
+    now = monday.add(const Duration(hours: 1));
+    expect(await sender().sendDue(), 0);
+    expect(asked, isEmpty);
+  });
+
+  test('an account whose stocks do not fit into this round waits for the next one, not cut short', () async {
+    // Fiókonként legfeljebb 15 részvény: tíz ilyen fiók (150) mellé a tizenegyedik már
+    // nem fér egy körbe – a következőben jön, csonkítás nélkül.
+    for (var i = 0; i < 10; i++) {
+      account('big$i@example.com', {
+        'weekly_digest': true,
+        'lots': [for (var j = 0; j < 15; j++) lot('S$i-$j', 'USD')],
+      });
+    }
+    account('dave@example.com', {
+      'weekly_digest': true,
+      'favorites': ['AAPL', 'MSFT', 'NVDA', 'OTP', 'X1', 'X2', 'X3', 'X4', 'X5', 'X6'],
+    });
+    await sender().sendDue();
+    expect(asked.length, lessThanOrEqualTo(DigestSender.maxSymbolsPerRound));
+    asked.clear();
+    now = monday.add(const Duration(hours: 1));
+    await sender().sendDue();
+    expect(asked, isNotEmpty, reason: 'a kimaradt fiók a második körben jön');
+    final mail = mailer.messages.where((m) => m.to == 'dave@example.com').single;
+    for (final sym in ['AAPL', 'MSFT', 'NVDA', 'OTP']) {
+      expect(mail.text, contains(sym));
+    }
+  });
+
+  test('deleted or switched off during the lookups: no e-mail; the unsubscribe link and headers', () async {
+    final gone = account('gone@example.com', {
+      'weekly_digest': true,
+      'favorites': ['AAPL'],
+    });
+    final off = account('off@example.com', {
+      'weekly_digest': true,
+      'favorites': ['MSFT'],
+    });
+    account('dave@example.com', {
+      'weekly_digest': true,
+      'favorites': ['NVDA'],
+    });
+    var first = true;
+    final s = DigestSender(
+      store: store,
+      mailer: mailer,
+      week: (sym) async {
+        if (first) {
+          first = false;
+          store.deleteUser(gone);
+          store.saveSyncData(
+            off,
+            jsonEncode({
+              'weekly_digest': false,
+              'favorites': ['MSFT'],
+            }),
+          );
+        }
+        return moves[sym];
+      },
+      earnings: (sym, from, to) async => null,
+      unsubscribeBase: 'https://w.test/u',
+      clock: () => now,
+    );
+    expect(await s.sendDue(), 1);
+    final mail = mailer.messages.single;
+    expect(mail.to, 'dave@example.com');
+    final link = RegExp(r'https://w\.test/u/[0-9a-f]{32}').firstMatch(mail.text)![0]!;
+    expect(mail.headers['List-Unsubscribe'], '<$link>');
+    expect(mail.headers['List-Unsubscribe-Post'], 'List-Unsubscribe=One-Click');
+  });
+
   test('technical signals from the closes: RSI extremes, a cross of the 200-day average this week', () {
     final falling = [for (var i = 0; i < 220; i++) 100.0, for (var i = 1; i <= 10; i++) 100.0 - i * 0.3];
     expect(signalOf(falling)?.kind, DigestSignalKind.rsiOversold);

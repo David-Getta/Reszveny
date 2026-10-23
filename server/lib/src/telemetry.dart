@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:crypto/crypto.dart';
 import 'package:sqlite3/sqlite3.dart';
@@ -7,8 +8,23 @@ import 'package:sqlite3/sqlite3.dart';
 /// hozzájárulásával küldi az app). Napi összesítést tárolunk: eseménynév,
 /// platform, verzió, darabszám. A napi aktív felhasználókat naponta más sóval
 /// képzett hash számolja, így két nap adata nem köthető össze, és a fiókhoz
-/// sem. A hibákból az üzenet és a veremnyom marad meg, összevonva.
+/// sem: a só véletlen, csak a memóriában van, és a nap végén elvész (az
+/// adatbázisból a felhasználók listájával sem számolható vissza). A hibákból az üzenet és a veremnyom marad meg, összevonva.
 class TelemetryStore {
+  /// A napi só: véletlen, csak az adott napra (a korábbiak elvesznek). Újraindításkor
+  /// új só jön – aznap ugyanaz a felhasználó legfeljebb kétszer számít.
+  String? _saltDay;
+  List<int> _salt = const [];
+
+  List<int> _saltOf(String day) {
+    if (_saltDay != day) {
+      final rng = Random.secure();
+      _salt = List.generate(32, (_) => rng.nextInt(256));
+      _saltDay = day;
+    }
+    return _salt;
+  }
+
   TelemetryStore(this._db) {
     _db.execute('''
       CREATE TABLE IF NOT EXISTS event_counts (
@@ -134,7 +150,7 @@ class TelemetryStore {
     try {
       _db.execute('INSERT OR IGNORE INTO daily_users (day, user_hash, platform) VALUES (?, ?, ?)', [
         day,
-        sha256.convert(utf8.encode('$day:$userId')).toString(),
+        Hmac(sha256, _saltOf(day)).convert(utf8.encode(userId)).toString(),
         platform,
       ]);
       final events = batch['events'];

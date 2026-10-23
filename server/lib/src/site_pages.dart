@@ -177,6 +177,19 @@ String shareMissingPage() =>
     '<div class="card"><h1>×</h1><p>Ez a megosztás már nem érhető el. · This shared analysis is no longer available.</p>'
     '<a class="btn" href="/">WhatStock</a></div></main></body></html>';
 
+/// A heti levél leiratkozó oldala (kétnyelvű): megerősítő gomb, majd a visszaigazolás.
+String unsubscribePage({required bool done, required bool known}) {
+  final body = !known
+      ? '<h1>×</h1><p>Ez a leiratkozó link nem érvényes. · This unsubscribe link is not valid.</p>'
+      : done
+      ? '<h1>✓</h1><p>Leiratkoztál a heti összefoglalóról. Az appban, a Beállításokban újra bekapcsolhatod. · '
+            'You are unsubscribed from the weekly summary. You can turn it back on in the app, in Settings.</p>'
+      : '<h1>WhatStock</h1><p>Leiratkozol a heti összefoglalóról? · Unsubscribe from the weekly summary?</p>'
+            '<form method="post"><button class="btn" type="submit">Leiratkozás · Unsubscribe</button></form>';
+  return '${_head(lang: 'en', title: 'WhatStock', description: 'WhatStock', index: false)}'
+      '<div class="card">$body</div></main></body></html>';
+}
+
 /// A nyitóoldal szövegei (magyar és angol).
 const _site = {
   'hu': {

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.260)
+# Változásjegyzék (0.2.130 → 0.2.261)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,20 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Szerver: heti levél, megosztás, belépés – egy kilencedik kódátnézés javításai
+
+- **0.2.261**: a fióktörlés nem törli a másik fél ajánlási sorát (eddig egy eldobható ajánló törlésével a meghívott
+  újra és újra beválthatott egy kódot – korlátlan extra elemzés); a belépés előtti névtelen eszközön készült
+  megosztások és használati napló az összevont fiókkal együtt törlődnek; a hibás kódok korlátja kérőnként (IP) és
+  címenként számít, így egy idegen nem zárhatja ki a cím gazdáját, és IP-nként óránként legfeljebb 20 kód kérhető;
+  a levelező hibaüzenete nem megy ki a kérőnek; a heti levél: az adat nélküli fiók nem éli fel minden körben a
+  keretet (eddig a mögötte állók sosem kapták meg), a keretbe nem férő fiók a következő körre marad (nem csonkítva),
+  küldés előtt a friss adatból dönt (közben törölt fióknak, kikapcsolt levélnek nem megy), és egykattintásos
+  leiratkozó link került bele (`List-Unsubscribe` fejléccel; a link megerősítő oldalt ad, a leiratkozás a gombbal);
+  a lejárt megosztás képe sem érhető el; a túl mélyen egymásba ágyazott szinkron-csomag 400 (nem 500); a
+  telemetria napi sója véletlen és csak a memóriában van (a felhasználók listájából nem számolható vissza); a nem
+  szöveges e-mail vagy kód nem okoz szerverhibát.
 
 ## Események, naptár, osztalék-előrejelzés: egy nyolcadik kódátnézés javításai
 

@@ -81,7 +81,8 @@ class Api {
        mailer = mailer ?? ConsoleMailer(),
        quota = Quota(store),
        telemetry = TelemetryStore(store.database),
-       shares = ShareStore(store.database);
+       // A megosztások ugyanazt az órát használják, mint az adatbázis (tesztben is).
+       shares = ShareStore(store.database)..clock = (() => store.clock());
 
   /// Megosztott elemzések nyilvános linkjei (`/s/<id>`).
   final ShareStore shares;
@@ -193,6 +194,8 @@ class Api {
       ..post('/v1/telemetry', _telemetry)
       ..post('/v1/share', _createShare)
       ..get('/s/<id>', _sharePage)
+      ..get('/u/<token>', _unsubscribePage)
+      ..post('/u/<token>', _unsubscribe)
       ..get('/', _landing)
       ..get('/pricing', _pricingPage)
       ..get('/sample', _samplePage)
@@ -462,17 +465,29 @@ class Api {
 
   static final _emailRe = RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$');
 
+  /// Belépési kód kérése IP-címenként óránként (sok címre is): egy kérő ne
+  /// merítse ki mások napi kódkeretét.
+  late final _codeRequests = RateLimiter(20, const Duration(hours: 1), clock: () => store.clock());
+
+  /// Hibás kódok naponta kérőnként (IP) és címenként: a találgatás korlátja, amely
+  /// a cím gazdáját (más IP-ről) nem zárja ki.
+  late final _loginFailures = RateLimiter(15, const Duration(days: 1), clock: () => store.clock());
+
   Future<Response> _emailStart(Request r) async {
-    final email = Store.normalizeEmail((await _body(r))['email'] as String? ?? '');
+    final raw = (await _body(r))['email'];
+    final email = Store.normalizeEmail(raw is String ? raw : '');
     if (!_emailRe.hasMatch(email)) return _error(400, 'invalid_email');
     if (store.recentCodeCount(email) >= 5 || store.recentCodeCount(email, within: const Duration(days: 1)) >= 10) {
       return _error(429, 'too_many_codes');
     }
+    if (!_codeRequests.allow(_ipKey(_clientIp(r) ?? '-'))) return _error(429, 'too_many_codes');
     final code = store.createLoginCode(email);
     try {
       await mailer.sendLoginCode(email, code);
     } catch (e) {
-      return _error(502, 'mail_failed', '$e');
+      // A levelező válasza (pl. a fiók adatai) nem megy ki a kérőnek, csak a naplóba.
+      stderr.writeln('Belépési kód e-mail nem ment ki: $e');
+      return _error(502, 'mail_failed');
     }
     return _json({'sent': true});
   }
@@ -482,9 +497,15 @@ class Api {
   /// tokenjét kapja, az itt gyűlt extra elemzések és a fizetős csomag átkerülnek.
   Future<Response> _emailVerify(Request r) async {
     final body = await _body(r);
-    final email = Store.normalizeEmail(body['email'] as String? ?? '');
-    final code = body['code'] as String? ?? '';
-    if (!store.verifyLoginCode(email, code)) return _error(401, 'invalid_code');
+    final rawEmail = body['email'], rawCode = body['code'];
+    final email = Store.normalizeEmail(rawEmail is String ? rawEmail : '');
+    final code = rawCode is String ? rawCode : (rawCode is int ? '$rawCode' : '');
+    final failureKey = '${_ipKey(_clientIp(r) ?? '-')}|$email';
+    if (_loginFailures.blocked(failureKey)) return _error(401, 'invalid_code');
+    if (!store.verifyLoginCode(email, code)) {
+      _loginFailures.hit(failureKey);
+      return _error(401, 'invalid_code');
+    }
 
     final current = _userId(r);
     final existing = store.userIdForEmail(email);
@@ -537,6 +558,7 @@ class Api {
       ..save(a)
       ..save(b)
       ..movePurchases(from: from, into: into);
+    shares.moveUser(from: from, into: into);
   }
 
   // ---- Megosztás nyilvános linkkel ----
@@ -809,6 +831,7 @@ class Api {
     headline: _latestHeadline,
     results: _lastResult,
     pause: twelveDataApiKey.isEmpty ? const Duration(seconds: 1) : const Duration(seconds: 8),
+    unsubscribeBase: '$publicUrl/u',
   );
 
   Future<WeekMove?> _weekMove(String symbol) async {
@@ -952,7 +975,7 @@ class Api {
       return _error(400, 'bad_request');
     }
     final data = body is Map ? body['data'] : null;
-    if (data is! Map) return _error(400, 'bad_request');
+    if (data is! Map || _tooDeep(data)) return _error(400, 'bad_request');
     if (body is Map && body.containsKey('base')) {
       final base = DateTime.tryParse('${body['base'] ?? ''}');
       final current = store.syncData(uid)?.updatedAt;
@@ -961,6 +984,51 @@ class Api {
     }
     final at = store.saveSyncData(uid, jsonEncode(data));
     return _json({'updated_at': at.toIso8601String()});
+  }
+
+  /// Túl mélyen egymásba ágyazott JSON (az app csomagja néhány szint mély): a
+  /// mentéskori kódolás rekurzív, egy 10 000 szint mély tömb veremtúlcsordulást okozna.
+  static bool _tooDeep(Object? v, [int depth = 0]) {
+    if (depth > 32) return true;
+    if (v is Map) return v.values.any((x) => _tooDeep(x, depth + 1));
+    if (v is List) return v.any((x) => _tooDeep(x, depth + 1));
+    return false;
+  }
+
+  // ---- Heti levél: leiratkozás ----
+
+  static final _unsubscribeToken = RegExp(r'^[0-9a-f]{32}$');
+
+  /// A leiratkozó link GET-re megerősítő oldalt ad (a levelezők linkellenőrzője ne
+  /// iratkoztasson le), a leiratkozás POST-ra történik (a gomb, vagy a levelező
+  /// egykattintásos `List-Unsubscribe-Post` kérése).
+  Response _unsubscribePage(Request r, String token) {
+    if (!_unsubscribeToken.hasMatch(token) || store.userForUnsubscribe(token) == null) {
+      return _html(unsubscribePage(done: false, known: false), status: 404);
+    }
+    return _html(unsubscribePage(done: false, known: true));
+  }
+
+  Response _unsubscribe(Request r, String token) {
+    final uid = _unsubscribeToken.hasMatch(token) ? store.userForUnsubscribe(token) : null;
+    if (uid == null) return _html(unsubscribePage(done: false, known: false), status: 404);
+    final row = store.syncData(uid);
+    if (row != null) {
+      try {
+        final data = (jsonDecode(row.data) as Map).cast<String, dynamic>();
+        if (data['weekly_digest'] != false) {
+          // A kapcsoló ideje is: a készülékek a következő szinkronnál átveszik (a később állított nyer).
+          final at = data['switches_at'] is Map
+              ? (data['switches_at'] as Map).cast<String, dynamic>()
+              : <String, dynamic>{};
+          data
+            ..['weekly_digest'] = false
+            ..['switches_at'] = {...at, 'weekly_digest': store.clock().toUtc().toIso8601String()};
+          store.saveSyncData(uid, jsonEncode(data));
+        }
+      } catch (_) {}
+    }
+    return _html(unsubscribePage(done: true, known: true));
   }
 
   // ---- Ajánlói program ----
