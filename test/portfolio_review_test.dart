@@ -68,6 +68,24 @@ void main() {
     expect(user, contains('Language: Hungarian'));
     expect(user, contains('Today: 2026-10-15'));
     expect(user, contains('"total_value":5319150'));
+
+    // Teljesítmény: csak a megadott kulcsok; a prompt elmagyarázza őket.
+    final withPerformance = PortfolioReviewer.requestBody(
+      holdings: const [],
+      currency: 'HUF',
+      totalValue: 1,
+      invested: 1,
+      performance: const {'annual_return_pct': 12.3, 'return_this_year_pct': 8.1, 'max_drawdown_pct': -14.2},
+      language: 'English',
+      today: DateTime(2026, 10, 15),
+    );
+    expect(
+      ((withPerformance['messages'] as List).single as Map)['content'],
+      contains('"performance":{"annual_return_pct":12.3,"return_this_year_pct":8.1,"max_drawdown_pct":-14.2}'),
+    );
+    expect(user, isNot(contains('"performance"')));
+    expect(PortfolioReviewer.systemPrompt, contains('return_this_year_pct'));
+    expect(PortfolioReviewer.systemPrompt, contains('max_drawdown_pct'));
     expect(user, contains('"symbol":"AAPL","sector":"Technology","currency":"USD","weight_pct":62.5'));
     // Cégprofil nélküli pozíció (ETF): jelzés az adatokban és a szabály a promptban.
     expect(ReviewHolding(symbol: 'QQQ', weight: 10, currency: 'USD').toJson()['note'], contains('probably an ETF'));
@@ -179,6 +197,12 @@ void main() {
     expect((sent.single['headers'] as Map)['x-whatstock-depth'], 'brief');
     final user = (((sent.single['body'] as Map)['messages'] as List).single as Map)['content'] as String;
     expect(user, contains('"symbol":"AAPL","name":"Apple Inc."'));
+    // A teljesítmény is: a legnagyobb visszaesés, és (ha van idei adat) az idei hozam a választott indexszel.
+    expect(user, contains('"max_drawdown_pct":-'));
+    if (workdayThisYear) {
+      expect(user, contains('"return_this_year_pct":'));
+      expect(user, contains('"benchmark":"Nasdaq 100"'));
+    }
     expect((await PortfolioReviewer.loadLast())?.headline, 'Two thirds of the value rides on US tech.');
 
     // Kérdezni is lehet róla, a portfólió saját címével.

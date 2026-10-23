@@ -11,6 +11,7 @@ import '../../theme/app_theme.dart';
 import '../billing/paywall_page.dart';
 import '../stock_detail/widgets/ask_sheet.dart';
 import '../stock_detail/widgets/section_card.dart';
+import 'portfolio_history.dart' show PortfolioHistoryData, benchmarkOf, loadPortfolioHistory;
 import 'portfolio_review.dart';
 import 'dividend_forecast.dart' show convertedDividends, dividendsInLast12Months, expectedDividends;
 import 'portfolio_valuation.dart';
@@ -48,9 +49,17 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
     });
     services.telemetry.track('portfolio_review');
     try {
+      // Az értékalakulás adatai (a gyorsítótárazott idősorokból); hiba esetén nélkülük.
+      final history = await loadPortfolioHistory(
+        services,
+        widget.snapshot,
+      ).then<PortfolioHistoryData?>((h) => h, onError: (Object _) => null);
       final r = await services.portfolioReviewer.review(
         widget.snapshot,
         language: language,
+        thisYear: history?.ytd,
+        benchmark: history == null ? null : benchmarkOf(history.symbol).name,
+        maxDrawdown: history?.drawdown?.percent,
         dividendsReceived: await _dividendsReceived(services),
         // Csak a még nem esedékes kifizetések (a türelmi időben lévő, lejárt nem „várható”).
         expectedDividends: expectedDividends(

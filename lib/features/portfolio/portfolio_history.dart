@@ -296,6 +296,48 @@ final benchmarkSymbol = benchmarks.first.symbol;
   return count == 0 ? null : (above: above, count: count);
 }
 
+/// Az értékalakulás-kártya adatai a pillanatkép pozícióiból ([account] számláé,
+/// `null`: mind): a választott index, az idősorok (a gyorsítótárból, ha friss) és az
+/// árfolyamok alapján – a kártya és az AI-portfólióelemzés is ebből dolgozik.
+Future<PortfolioHistoryData> loadPortfolioHistory(
+  AppServices services,
+  PortfolioSnapshot snapshot, {
+  String? account,
+}) async {
+  final symbol = benchmarkOf(services.preferences.benchmark).symbol;
+  // A felaprózásokkal igazított tételek (az árfolyam-idősor is igazított).
+  final lots = services.portfolio.adjustedLotsIn(account);
+  final histories = <String, PriceHistory>{};
+  PriceHistory? index;
+  await Future.wait([
+    for (final s in {for (final l in lots) l.symbol})
+      services.marketData.history(s).then((h) => histories[s] = h).then((_) {}, onError: (Object _) {}),
+    services.marketData.history(symbol).then((h) => index = h).then((_) {}, onError: (Object _) {}),
+  ]);
+  final rates = <String, double>{for (final r in snapshot.rows) r.position.currency: ?r.rate};
+  // A már eladott, más pénznemű pozíciók árfolyama is kell (a múltbeli értékhez és a visszaeséshez).
+  final missing = {for (final l in lots) l.currency}..removeAll({...rates.keys, snapshot.currency});
+  if (missing.isNotEmpty) {
+    try {
+      rates.addAll(await services.fx.ratesFor(missing, snapshot.currency));
+    } catch (_) {
+      // Árfolyam nélkül ezek kimaradnak, mint eddig.
+    }
+  }
+  double? rate(String c) => c == snapshot.currency ? 1.0 : rates[c];
+  final i = index;
+  final twr = portfolioTwrIndex(lots, histories, rate);
+  return (
+    drawdown: maxDrawdownOf(twr),
+    ytd: ytdReturn(twr, i, DateTime.now()),
+    history: portfolioValueHistory(lots, histories, rate),
+    bench: i == null ? null : benchmarkComparison(lots, histories, i, rate),
+    trend: portfolioTrend([for (final p in services.portfolio.positionsIn(account)) p.symbol], histories),
+    symbol: symbol,
+    indexMissing: i == null || i.points.isEmpty,
+  );
+}
+
 /// „Értékalakulás” kártya a portfólió oldalán: a teljes érték grafikonja
 /// időtáv-választóval, a befektetett összeg szaggatott vonalával.
 class PortfolioHistoryCard extends StatefulWidget {
@@ -312,42 +354,7 @@ class PortfolioHistoryCard extends StatefulWidget {
 
 class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
   String? _key;
-  Future<_History>? _future;
-
-  Future<_History> _load(AppServices services) async {
-    final symbol = benchmarkOf(services.preferences.benchmark).symbol;
-    // A felaprózásokkal igazított tételek (az árfolyam-idősor is igazított).
-    final lots = services.portfolio.adjustedLotsIn(widget.account);
-    final histories = <String, PriceHistory>{};
-    PriceHistory? index;
-    await Future.wait([
-      for (final s in {for (final l in lots) l.symbol})
-        services.marketData.history(s).then((h) => histories[s] = h).then((_) {}, onError: (Object _) {}),
-      services.marketData.history(symbol).then((h) => index = h).then((_) {}, onError: (Object _) {}),
-    ]);
-    final rates = <String, double>{for (final r in widget.snapshot.rows) r.position.currency: ?r.rate};
-    // A már eladott, más pénznemű pozíciók árfolyama is kell (a múltbeli értékhez és a visszaeséshez).
-    final missing = {for (final l in lots) l.currency}..removeAll({...rates.keys, widget.snapshot.currency});
-    if (missing.isNotEmpty) {
-      try {
-        rates.addAll(await services.fx.ratesFor(missing, widget.snapshot.currency));
-      } catch (_) {
-        // Árfolyam nélkül ezek kimaradnak, mint eddig.
-      }
-    }
-    double? rate(String c) => c == widget.snapshot.currency ? 1.0 : rates[c];
-    final i = index;
-    final twr = portfolioTwrIndex(lots, histories, rate);
-    return (
-      drawdown: maxDrawdownOf(twr),
-      ytd: ytdReturn(twr, i, DateTime.now()),
-      history: portfolioValueHistory(lots, histories, rate),
-      bench: i == null ? null : benchmarkComparison(lots, histories, i, rate),
-      trend: portfolioTrend([for (final p in services.portfolio.positionsIn(widget.account)) p.symbol], histories),
-      symbol: symbol,
-      indexMissing: i == null || i.points.isEmpty,
-    );
-  }
+  Future<PortfolioHistoryData>? _future;
 
   @override
   Widget build(BuildContext context) {
@@ -361,9 +368,9 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
         '${widget.snapshot.currency}|${services.portfolio.holdingsKey}|${bench0.symbol}|${widget.account ?? ''}';
     if (key != _key) {
       _key = key;
-      _future = _load(services);
+      _future = loadPortfolioHistory(services, widget.snapshot, account: widget.account);
     }
-    return FutureBuilder<_History>(
+    return FutureBuilder<PortfolioHistoryData>(
       future: _future,
       builder: (context, snap) {
         final data = snap.data;
@@ -530,7 +537,7 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
 
 /// Az értékalakulás-kártya betöltött adatai: a grafikon, az index-összevetés, a
 /// trendkép, az index, amellyel számoltunk, és hogy annak idősora hiányzott-e.
-typedef _History = ({
+typedef PortfolioHistoryData = ({
   ({double percent, DateTime peak, DateTime trough})? drawdown,
   ({double percent, double? benchmark})? ytd,
   PriceHistory? history,

@@ -120,10 +120,10 @@ You are an independent portfolio analyst. The reader holds the stocks listed in 
 Work only from the provided data and your general knowledge (no web access); give anything from memory its approximate date. Be concrete: name the stocks, use the weights and numbers given, and compute shares of the total where useful (sector weights, top-3 weight, currency split). Describe trade-offs and scenarios rather than telling the reader what to buy or sell, because you do not know their situation, goals or tax position; where a change could make sense, say what it would depend on.
 
 Write in the requested language the way a native financial journalist would, plainly and without jargon (explain a term the first time you use it). Sections, in this order (kind: content):
-- summary: 2-3 sentences on the overall picture and the single most important point.
+- summary: 2-3 sentences on the overall picture and the single most important point. If "performance" is given, say briefly how the portfolio has done: "annual_return_pct" is the money-weighted annual return since the first purchase; "return_this_year_pct" is the time-weighted return this year (money put in or taken out is not return), with "benchmark_this_year_pct" for the named "benchmark" index over the same days. Do not judge the future from past returns.
 - diversification: concentration (largest positions, top-3 weight; "top3_weight_pct" is computed for you as the share of the three largest positions in the value of the stocks, excluding cash, so it can be higher than the sum of their "weight_pct", which counts cash in the total), sector and country spread, and what is missing; if "cash" is given (uninvested money in the portfolio currency), say what share of the whole it is and what it means. A holding marked with a "note" has no company profile: it is probably an ETF or a fund – treat it as a basket (the index or theme it tracks, from its ticker and your knowledge), count its exposure in the sector and country spread accordingly, and say what you assumed.
 - currency: the currency split and what a move in the main currencies would do to the reader's home-currency value.
-- risks: risks shared by several positions (same theme, supplier, rate sensitivity, valuation level, beta – "portfolio_beta" is the value-weighted beta of the stocks, when given), and the biggest single point of failure.
+- risks: risks shared by several positions (same theme, supplier, rate sensitivity, valuation level, beta – "portfolio_beta" is the value-weighted beta of the stocks, when given), and the biggest single point of failure; "max_drawdown_pct" in "performance", when given, is the deepest time-weighted fall from a peak the portfolio has already been through – use it as a reminder of what a bad stretch looked like.
 - income: dividend yield of the portfolio and of the main payers; if "dividends_received_12m" is given (cash actually received in the last 12 months, in the portfolio currency), compare it with what the yield implies and with "invested" (yield on cost); if "expected_dividends" is given (the next payments the app expects from the rhythm of the recorded ones, with amount and currency), mention the nearest ones briefly and treat them as estimates; skip the section only if no position pays and nothing was received.
 - consider: 3-5 bullets of things worth considering, each with the reason and what it depends on (not instructions).
 
@@ -140,6 +140,7 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
     double? beta,
     double? top3Weight,
     List<Map<String, dynamic>> expectedDividends = const [],
+    Map<String, Object> performance = const {},
     required String language,
     required DateTime today,
     String model = '',
@@ -172,6 +173,8 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
               'top3_weight_pct': ?top3Weight == null ? null : (top3Weight * 100).round(),
               // A rögzített kifizetések ritmusából várható következő osztalékok (legfeljebb hat).
               if (expectedDividends.isNotEmpty) 'expected_dividends': expectedDividends.take(6).toList(),
+              // Teljesítmény: pénzsúlyozott éves hozam, idei időarányos hozam az indexszel, legnagyobb visszaesés.
+              if (performance.isNotEmpty) 'performance': performance,
               'positions': [for (final h in holdings) h.toJson()],
             })}',
       },
@@ -212,12 +215,17 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
     },
   };
 
+  static double _pct(double v) => double.parse(v.toStringAsFixed(1));
+
   /// Az elemzés elkészítése és elmentése.
   Future<StockReport> review(
     PortfolioSnapshot snapshot, {
     required String language,
     double? dividendsReceived,
     List<ExpectedDividend> expectedDividends = const [],
+    ({double percent, double? benchmark})? thisYear,
+    String? benchmark,
+    double? maxDrawdown,
   }) async {
     if (!config.hasAnthropicKey) throw const AnalysisException(AppErrorCode.aiNotConfigured);
     final body = requestBody(
@@ -239,6 +247,17 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
             'currency': x.currency,
           },
       ],
+      performance: {
+        if (snapshot.annualReturn case final r?) 'annual_return_pct': _pct(r * 100),
+        if (thisYear case final y?) ...{
+          'return_this_year_pct': _pct(y.percent),
+          if ((benchmark, y.benchmark) case (final name?, final b?)) ...{
+            'benchmark': name,
+            'benchmark_this_year_pct': _pct(b),
+          },
+        },
+        'max_drawdown_pct': ?maxDrawdown == null ? null : _pct(maxDrawdown),
+      },
       language: language,
       today: _clock(),
       model: config.anthropicModel,
