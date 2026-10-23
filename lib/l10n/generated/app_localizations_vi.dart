@@ -1106,7 +1106,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Chỉ lưu trên thiết bị này. Tổng được quy đổi theo tỷ giá tham chiếu của ECB; giá có thể bị trễ.';
+      'Lưu trên thiết bị này và trong tài khoản của bạn nếu bạn đã đăng nhập. Tổng được quy đổi theo tỷ giá tham chiếu của ECB; giá có thể bị trễ.';
 
   @override
   String get addToPortfolio => 'Thêm vào danh mục';
@@ -1714,7 +1714,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Chỉ lưu trên thiết bị này. Phân tích AI có xét đến ghi chú của bạn.';
+      'Lưu trên thiết bị này và trong tài khoản của bạn nếu bạn đã đăng nhập. Phân tích AI có xét đến ghi chú của bạn.';
 
   @override
   String notesSaved(String date) {

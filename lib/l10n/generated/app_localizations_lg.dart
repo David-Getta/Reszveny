@@ -1120,7 +1120,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Bitereddwa ku kyuma kino kyokka. Omugatte gukyusibwa ku miwendo gya ECB; ebbeeyi ziyinza okulwawo.';
+      'Bitereddwa ku kyuma kino, ne ku akawunti yo bw\'oba oyingidde. Omugatte gukyusibwa ku miwendo gya ECB; ebbeeyi ziyinza okulwawo.';
 
   @override
   String get addToPortfolio => 'Gattako ku migabo gyo';
@@ -1731,7 +1731,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Bitereddwa ku kyuma kino kyokka. Okwekenneenya kwa AI kutunuulira ebiwandiiko byo.';
+      'Bitereddwa ku kyuma kino, ne ku akawunti yo bw\'oba oyingidde. Okwekenneenya kwa AI kutunuulira ebiwandiiko byo.';
 
   @override
   String notesSaved(String date) {

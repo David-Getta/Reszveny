@@ -1116,7 +1116,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Bilama anu mu tshintu etshi. Mishinga yonso idi ishintuluibua ku taux wa BCE; mishinga idi mua kulua bitekete.';
+      'Bilama mu tshintu etshi, ne mu compte webe biwikala mubuele. Mishinga yonso idi ishintuluibua ku taux wa BCE; mishinga idi mua kulua bitekete.';
 
   @override
   String get addToPortfolio => 'Bueja mu portefeuille';
@@ -1724,7 +1724,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Bilama anu mu tshintu etshi. Dikonkonona dia AI didi diangata mifundu yebe.';
+      'Bilama mu tshintu etshi, ne mu compte webe biwikala mubuele. Dikonkonona dia AI didi diangata mifundu yebe.';
 
   @override
   String notesSaved(String date) {

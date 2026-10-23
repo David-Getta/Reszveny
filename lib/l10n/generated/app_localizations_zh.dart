@@ -1065,7 +1065,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioEmpty => '这里还没有内容。打开一只股票并点按“添加到投资组合”，即可跟踪你的持仓。';
 
   @override
-  String get portfolioLocalNote => '仅保存在此设备上。合计按欧洲央行参考汇率换算；价格可能有延迟。';
+  String get portfolioLocalNote =>
+      '保存在此设备上，登录后也会保存在您的账户中。合计按欧洲央行参考汇率换算；价格可能有延迟。';
 
   @override
   String get addToPortfolio => '添加到投资组合';
@@ -1650,7 +1651,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get notesHint => '您为什么买入？在关注什么？什么情况下会卖出？';
 
   @override
-  String get notesInfo => '仅保存在此设备上。AI 分析会参考您的笔记。';
+  String get notesInfo => '保存在此设备上，登录后也会保存在您的账户中。AI 分析会参考您的笔记。';
 
   @override
   String notesSaved(String date) {
@@ -4059,7 +4060,8 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get portfolioEmpty => '這裡暫時未有內容。打開一隻股票並點一下「加入投資組合」，即可追蹤你的持倉。';
 
   @override
-  String get portfolioLocalNote => '只會儲存在此裝置上。總計以歐洲央行參考匯率換算；股價可能有延遲。';
+  String get portfolioLocalNote =>
+      '儲存在此裝置上，登入後亦會儲存在你的帳戶。總計以歐洲央行參考匯率換算；股價可能有延遲。';
 
   @override
   String get addToPortfolio => '加入投資組合';
@@ -4644,7 +4646,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get notesHint => '你為何買入？正在留意甚麼？甚麼情況下會賣出？';
 
   @override
-  String get notesInfo => '只會儲存在此裝置上。AI 分析會參考你的筆記。';
+  String get notesInfo => '儲存在此裝置上，登入後亦會儲存在你的帳戶。AI 分析會參考你的筆記。';
 
   @override
   String notesSaved(String date) {

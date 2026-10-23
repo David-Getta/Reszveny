@@ -1117,7 +1117,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Sa device na ito lang naka-save. Kino-convert ang mga kabuuan gamit ang mga reference rate ng ECB; maaaring naantala ang mga presyo.';
+      'Naka-save sa device na ito, at sa iyong account kung naka-sign in ka. Kino-convert ang mga kabuuan gamit ang mga reference rate ng ECB; maaaring naantala ang mga presyo.';
 
   @override
   String get addToPortfolio => 'Idagdag sa portfolio';
@@ -1727,7 +1727,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Sa device na ito lang naka-save. Isinasaalang-alang ng pagsusuri ng AI ang iyong mga tala.';
+      'Naka-save sa device na ito, at sa iyong account kung naka-sign in ka. Isinasaalang-alang ng pagsusuri ng AI ang iyong mga tala.';
 
   @override
   String notesSaved(String date) {

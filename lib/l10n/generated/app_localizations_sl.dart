@@ -1152,7 +1152,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Shranjeno samo v tej napravi. Skupni zneski so preračunani po referenčnih tečajih ECB; cene so lahko zakasnjene.';
+      'Shranjeno v tej napravi in, če ste prijavljeni, v vašem računu. Skupni zneski so preračunani po referenčnih tečajih ECB; cene so lahko zakasnjene.';
 
   @override
   String get addToPortfolio => 'Dodaj v portfelj';
@@ -1773,7 +1773,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Shranjeno samo v tej napravi. Analiza AI upošteva vaše zapiske.';
+      'Shranjeno v tej napravi in, če ste prijavljeni, v vašem računu. Analiza AI upošteva vaše zapiske.';
 
   @override
   String notesSaved(String date) {

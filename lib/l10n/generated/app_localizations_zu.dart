@@ -1119,7 +1119,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Kugcinwe kule divayisi kuphela. Izingqikithi ziguqulwa ngamazinga okuqhathanisa e-ECB; izintengo zingase zibambezeleke.';
+      'Kugcinwe kule divayisi, nakwi-akhawunti yakho uma ungene ngemvume. Izingqikithi ziguqulwa ngamazinga okuqhathanisa e-ECB; izintengo zingase zibambezeleke.';
 
   @override
   String get addToPortfolio => 'Engeza kuphothifoliyo';
@@ -1727,7 +1727,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Kugcinwe kule divayisi kuphela. Uhlaziyo lwe-AI lubheka amanothi akho.';
+      'Kugcinwe kule divayisi, nakwi-akhawunti yakho uma ungene ngemvume. Uhlaziyo lwe-AI lubheka amanothi akho.';
 
   @override
   String notesSaved(String date) {

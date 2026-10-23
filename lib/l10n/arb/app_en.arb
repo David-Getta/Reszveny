@@ -639,7 +639,10 @@
   "longTermNote": "Long-term ranges rest on the stated assumptions and widen with time. Prices exclude dividends. Rough judgements, not predictions.",
   "portfolio": "Portfolio",
   "portfolioEmpty": "Nothing here yet. Open a stock and tap “Add to portfolio” to follow what you own.",
-  "portfolioLocalNote": "Stored only on this device. Totals are converted at ECB reference rates; prices may be delayed.",
+  "portfolioLocalNote": "Kept on this device, and in your account if you're signed in. Totals are converted at ECB reference rates; prices may be delayed.",
+  "@portfolioLocalNote": {
+    "description": "Footnote on the portfolio page: where the data is kept (this device, and the account when signed in), how totals are converted, and that prices may be delayed."
+  },
   "addToPortfolio": "Add to portfolio",
   "portfolioAddTitle": "Add {symbol}",
   "@portfolioAddTitle": {
@@ -1203,7 +1206,10 @@
   },
   "notesTitle": "My notes",
   "notesHint": "Why did you buy it, what are you watching, what would make you sell?",
-  "notesInfo": "Stored only on this device. The AI analysis takes your notes into account.",
+  "notesInfo": "Kept on this device, and in your account if you're signed in. The AI analysis takes your notes into account.",
+  "@notesInfo": {
+    "description": "Under the personal notes field on a stock page: where the notes are kept (this device, and the account when signed in) and that the AI analysis reads them."
+  },
   "notesSaved": "Saved {date}",
   "@notesSaved": {
     "description": "When the note was last saved; date is a formatted date and time.",

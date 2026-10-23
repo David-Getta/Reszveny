@@ -1111,7 +1111,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Yalnız bu cihazda saxlanılır. Cəmlər AMB-nin istinad məzənnələri ilə çevrilir; qiymətlər gecikə bilər.';
+      'Bu cihazda və daxil olmusunuzsa, hesabınızda saxlanılır. Cəmlər AMB-nin istinad məzənnələri ilə çevrilir; qiymətlər gecikə bilər.';
 
   @override
   String get addToPortfolio => 'Portfelə əlavə et';
@@ -1720,7 +1720,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Yalnız bu cihazda saxlanılır. AI təhlili qeydlərinizi nəzərə alır.';
+      'Bu cihazda və daxil olmusunuzsa, hesabınızda saxlanılır. AI təhlili qeydlərinizi nəzərə alır.';
 
   @override
   String notesSaved(String date) {

@@ -1117,7 +1117,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Zasungidwa pa chipangizo ichi chokha. Ziwerengero zonse zimasinthidwa pa mitengo ya ECB; mitengo ingachedwe.';
+      'Zasungidwa pa chipangizo ichi, komanso mu akaunti yanu ngati mwalowa. Ziwerengero zonse zimasinthidwa pa mitengo ya ECB; mitengo ingachedwe.';
 
   @override
   String get addToPortfolio => 'Onjezani ku masheya anu';
@@ -1727,7 +1727,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Zasungidwa pa chipangizo ichi chokha. Kusanthula kwa AI kumaganizira zolemba zanu.';
+      'Zasungidwa pa chipangizo ichi, komanso mu akaunti yanu ngati mwalowa. Kusanthula kwa AI kumaganizira zolemba zanu.';
 
   @override
   String notesSaved(String date) {

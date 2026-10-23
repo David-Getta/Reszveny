@@ -1151,7 +1151,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Saugoma tik šiame įrenginyje. Sumos perskaičiuojamos ECB orientaciniais kursais; kainos gali vėluoti.';
+      'Saugoma šiame įrenginyje ir, jei esate prisijungę, jūsų paskyroje. Sumos perskaičiuojamos ECB orientaciniais kursais; kainos gali vėluoti.';
 
   @override
   String get addToPortfolio => 'Pridėti į portfelį';
@@ -1770,7 +1770,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Saugoma tik šiame įrenginyje. DI analizė atsižvelgia į jūsų užrašus.';
+      'Saugoma šiame įrenginyje ir, jei esate prisijungę, jūsų paskyroje. DI analizė atsižvelgia į jūsų užrašus.';
 
   @override
   String notesSaved(String date) {

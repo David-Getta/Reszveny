@@ -1110,7 +1110,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Gemmes kun på denne enhed. Summer omregnes til ECB’s referencekurser; kurser kan være forsinkede.';
+      'Gemmes på denne enhed og på din konto, hvis du er logget ind. Summer omregnes til ECB’s referencekurser; kurser kan være forsinkede.';
 
   @override
   String get addToPortfolio => 'Føj til portefølje';
@@ -1717,7 +1717,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Gemmes kun på denne enhed. AI-analysen tager højde for dine noter.';
+      'Gemmes på denne enhed og på din konto, hvis du er logget ind. AI-analysen tager højde for dine noter.';
 
   @override
   String notesSaved(String date) {

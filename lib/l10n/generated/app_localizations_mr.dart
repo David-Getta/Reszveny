@@ -1110,7 +1110,7 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'फक्त याच डिव्हाइसवर जतन होते. एकूण रक्कम ECB च्या संदर्भ दरांनी रूपांतरित होते; किमती उशिरा येऊ शकतात.';
+      'या डिव्हाइसवर आणि साइन इन केले असल्यास तुमच्या खात्यात जतन होते. एकूण रक्कम ECB च्या संदर्भ दरांनी रूपांतरित होते; किमती उशिरा येऊ शकतात.';
 
   @override
   String get addToPortfolio => 'पोर्टफोलिओमध्ये जोडा';
@@ -1718,7 +1718,7 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'फक्त याच डिव्हाइसवर जतन होते. AI विश्लेषण तुमच्या नोंदी विचारात घेते.';
+      'या डिव्हाइसवर आणि साइन इन केले असल्यास तुमच्या खात्यात जतन होते. AI विश्लेषण तुमच्या नोंदी विचारात घेते.';
 
   @override
   String notesSaved(String date) {

@@ -1142,7 +1142,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Sprema se samo na ovom uređaju. Zbrojevi se preračunavaju po referentnim tečajevima ESB-a; cijene mogu kasniti.';
+      'Sprema se na ovom uređaju i, ako ste prijavljeni, na vašem računu. Zbrojevi se preračunavaju po referentnim tečajevima ESB-a; cijene mogu kasniti.';
 
   @override
   String get addToPortfolio => 'Dodaj u portfelj';
@@ -1756,7 +1756,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Sprema se samo na ovom uređaju. AI analiza uzima u obzir vaše bilješke.';
+      'Sprema se na ovom uređaju i, ako ste prijavljeni, na vašem računu. AI analiza uzima u obzir vaše bilješke.';
 
   @override
   String notesSaved(String date) {

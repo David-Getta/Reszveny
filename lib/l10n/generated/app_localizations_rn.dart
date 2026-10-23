@@ -1117,7 +1117,7 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Bibitswe kuri iki gikoresho gusa. Igiteranyo giharurwa ku bipimo fatizo vya ECB; ibiciro birashobora gutebuka.';
+      'Bibitswe kuri iki gikoresho, no kuri konti yawe nimba winjiye. Igiteranyo giharurwa ku bipimo fatizo vya ECB; ibiciro birashobora gutebuka.';
 
   @override
   String get addToPortfolio => 'Shira mu ishoramari';
@@ -1726,7 +1726,7 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Bibitswe kuri iki gikoresho gusa. Isesangura rya AI ryitaho ivyo wanditse.';
+      'Bibitswe kuri iki gikoresho, no kuri konti yawe nimba winjiye. Isesangura rya AI ryitaho ivyo wanditse.';
 
   @override
   String notesSaved(String date) {

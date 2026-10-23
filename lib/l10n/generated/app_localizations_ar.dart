@@ -1131,7 +1131,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'تُحفظ على هذا الجهاز فقط. تُحوَّل الإجماليات بأسعار الصرف المرجعية للبنك المركزي الأوروبي؛ وقد تتأخر الأسعار.';
+      'تُحفظ على هذا الجهاز، وفي حسابك إذا سجّلت الدخول. تُحوَّل الإجماليات بأسعار الصرف المرجعية للبنك المركزي الأوروبي؛ وقد تتأخر الأسعار.';
 
   @override
   String get addToPortfolio => 'إضافة إلى المحفظة';
@@ -1756,7 +1756,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'تُحفظ على هذا الجهاز فقط. يأخذ التحليل بالذكاء الاصطناعي ملاحظاتك في الاعتبار.';
+      'تُحفظ على هذا الجهاز، وفي حسابك إذا سجّلت الدخول. يأخذ التحليل بالذكاء الاصطناعي ملاحظاتك في الاعتبار.';
 
   @override
   String notesSaved(String date) {

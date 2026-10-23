@@ -1120,7 +1120,7 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'E bolokilwe mo sedirisiweng seno fela. Dipalogotlhe di fetolwa ka diseelo tsa tshupetso tsa ECB; ditlhwatlhwa di ka diega.';
+      'E bolokilwe mo sedirisiweng seno, le mo akhaontong ya gago fa o tsene. Dipalogotlhe di fetolwa ka diseelo tsa tshupetso tsa ECB; ditlhwatlhwa di ka diega.';
 
   @override
   String get addToPortfolio => 'Tsenya mo potefoliong';
@@ -1730,7 +1730,7 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'E bolokilwe mo sedirisiweng seno fela. Tshekatsheko ya AI e tsaya dintlha tsa gago tsia.';
+      'E bolokilwe mo sedirisiweng seno, le mo akhaontong ya gago fa o tsene. Tshekatsheko ya AI e tsaya dintlha tsa gago tsia.';
 
   @override
   String notesSaved(String date) {

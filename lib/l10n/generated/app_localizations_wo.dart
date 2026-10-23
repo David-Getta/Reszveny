@@ -1109,7 +1109,7 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Ci masin bii rekk lañu ko denc. Mboolem yi ñu ngi leen weccee ak njëgu BCE; njëg yi mën nañoo yéex.';
+      'Ci masin bii lañu ko denc, ak ci sa kont bu fekkee dugg nga. Mboolem yi ñu ngi leen weccee ak njëgu BCE; njëg yi mën nañoo yéex.';
 
   @override
   String get addToPortfolio => 'Yokk ci sama aksiyoŋ yi';
@@ -1714,7 +1714,7 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Ci masin bii rekk lañu ko denc. Saytu AI bi dafay jëfandikoo sa notu yi.';
+      'Ci masin bii lañu ko denc, ak ci sa kont bu fekkee dugg nga. Saytu AI bi dafay jëfandikoo sa notu yi.';
 
   @override
   String notesSaved(String date) {

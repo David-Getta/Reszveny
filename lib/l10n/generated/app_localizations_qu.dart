@@ -1118,7 +1118,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Kay equipollapim waqaychasqa. Llapan yupaykunaqa BCEpa referencia tasankunawan tikrasqa; chaninkunaqa qhipa kanman.';
+      'Kay equipopi waqaychasqa, yaykusqa kaspaqa cuentaykipipas. Llapan yupaykunaqa BCEpa referencia tasankunawan tikrasqa; chaninkunaqa qhipa kanman.';
 
   @override
   String get addToPortfolio => 'Portafolioman yapay';
@@ -1729,7 +1729,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Kay equipollapim waqaychasqa. AI t\'aqwiyqa qillqasqaykikunata qhawarin.';
+      'Kay equipopi waqaychasqa, yaykusqa kaspaqa cuentaykipipas. AI t\'aqwiyqa qillqasqaykikunata qhawarin.';
 
   @override
   String notesSaved(String date) {

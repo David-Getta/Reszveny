@@ -1112,7 +1112,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Ɛkora wɔ mfiri yi so nko ara. Wɔde ECB sesa bo sesa nkɔntaabu nyinaa; bo no betumi akyɛ.';
+      'Ɛkora wɔ mfiri yi so, ne wo akawnt mu nso sɛ woawura mu a. Wɔde ECB sesa bo sesa nkɔntaabu nyinaa; bo no betumi akyɛ.';
 
   @override
   String get addToPortfolio => 'Fa ka wo nkyɛfa ho';
@@ -1720,7 +1720,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Ɛkora wɔ mfiri yi so nko ara. AI nhwehwɛmu no de wo nkyerɛwee no bɛka ho.';
+      'Ɛkora wɔ mfiri yi so, ne wo akawnt mu nso sɛ woawura mu a. AI nhwehwɛmu no de wo nkyerɛwee no bɛka ho.';
 
   @override
   String notesSaved(String date) {

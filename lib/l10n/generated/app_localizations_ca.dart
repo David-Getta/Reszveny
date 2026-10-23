@@ -1116,7 +1116,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Es desa només en aquest dispositiu. Els totals es converteixen als tipus de referència del BCE; els preus poden anar amb retard.';
+      'Es desa en aquest dispositiu i, si has iniciat la sessió, al teu compte. Els totals es converteixen als tipus de referència del BCE; els preus poden anar amb retard.';
 
   @override
   String get addToPortfolio => 'Afegeix a la cartera';
@@ -1728,7 +1728,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Es desa només en aquest dispositiu. L’anàlisi amb IA té en compte les teves notes.';
+      'Es desa en aquest dispositiu i, si has iniciat la sessió, al teu compte. L’anàlisi amb IA té en compte les teves notes.';
 
   @override
   String notesSaved(String date) {

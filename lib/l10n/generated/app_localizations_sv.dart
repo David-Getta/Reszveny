@@ -1112,7 +1112,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Sparas bara på den här enheten. Summorna räknas om till ECB:s referenskurser; kurserna kan vara fördröjda.';
+      'Sparas på den här enheten och i ditt konto om du är inloggad. Summorna räknas om till ECB:s referenskurser; kurserna kan vara fördröjda.';
 
   @override
   String get addToPortfolio => 'Lägg till i portföljen';
@@ -1720,7 +1720,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Sparas bara på den här enheten. AI-analysen tar hänsyn till dina anteckningar.';
+      'Sparas på den här enheten och i ditt konto om du är inloggad. AI-analysen tar hänsyn till dina anteckningar.';
 
   @override
   String notesSaved(String date) {

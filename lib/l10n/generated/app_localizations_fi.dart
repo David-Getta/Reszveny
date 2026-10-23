@@ -1114,7 +1114,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Tallennetaan vain tälle laitteelle. Summat muunnetaan EKP:n viitekursseilla; kurssit voivat olla viiveellisiä.';
+      'Tallennetaan tälle laitteelle ja tilillesi, jos olet kirjautunut. Summat muunnetaan EKP:n viitekursseilla; kurssit voivat olla viiveellisiä.';
 
   @override
   String get addToPortfolio => 'Lisää salkkuun';
@@ -1721,7 +1721,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Tallennetaan vain tälle laitteelle. Tekoälyanalyysi ottaa muistiinpanosi huomioon.';
+      'Tallennetaan tälle laitteelle ja tilillesi, jos olet kirjautunut. Tekoälyanalyysi ottaa muistiinpanosi huomioon.';
 
   @override
   String notesSaved(String date) {

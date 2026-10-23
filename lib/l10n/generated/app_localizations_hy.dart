@@ -1117,7 +1117,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Պահվում է միայն այս սարքում։ Ընդհանուր գումարները փոխարկվում են ԵԿԲ-ի հղումային փոխարժեքներով, իսկ գները կարող են ուշանալ։';
+      'Պահվում է այս սարքում, իսկ եթե մուտք եք գործել՝ նաև ձեր հաշվում։ Ընդհանուր գումարները փոխարկվում են ԵԿԲ-ի հղումային փոխարժեքներով, իսկ գները կարող են ուշանալ։';
 
   @override
   String get addToPortfolio => 'Ավելացնել պորտֆելում';
@@ -1726,7 +1726,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Պահվում է միայն այս սարքում։ AI վերլուծությունը հաշվի է առնում ձեր նշումները։';
+      'Պահվում է այս սարքում, իսկ եթե մուտք եք գործել՝ նաև ձեր հաշվում։ AI վերլուծությունը հաշվի է առնում ձեր նշումները։';
 
   @override
   String notesSaved(String date) {

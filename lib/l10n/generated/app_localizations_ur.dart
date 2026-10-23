@@ -1111,7 +1111,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'صرف اسی ڈیوائس پر محفوظ ہوتا ہے۔ مجموعے ای سی بی کے حوالہ جاتی نرخوں پر تبدیل کیے جاتے ہیں؛ قیمتوں میں تاخیر ہو سکتی ہے۔';
+      'اسی ڈیوائس پر، اور سائن ان ہونے پر آپ کے اکاؤنٹ میں بھی محفوظ ہوتا ہے۔ مجموعے ای سی بی کے حوالہ جاتی نرخوں پر تبدیل کیے جاتے ہیں؛ قیمتوں میں تاخیر ہو سکتی ہے۔';
 
   @override
   String get addToPortfolio => 'پورٹ فولیو میں شامل کریں';
@@ -1719,7 +1719,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'صرف اسی ڈیوائس پر محفوظ ہوتا ہے۔ AI تجزیہ آپ کے نوٹس کو مدِنظر رکھتا ہے۔';
+      'اسی ڈیوائس پر، اور سائن ان ہونے پر آپ کے اکاؤنٹ میں بھی محفوظ ہوتا ہے۔ AI تجزیہ آپ کے نوٹس کو مدِنظر رکھتا ہے۔';
 
   @override
   String notesSaved(String date) {

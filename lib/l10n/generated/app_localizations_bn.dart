@@ -1113,7 +1113,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'শুধু এই ডিভাইসেই সংরক্ষিত হয়। মোট হিসাব ইসিবি-র রেফারেন্স হারে রূপান্তরিত হয়; দাম দেরিতে আসতে পারে।';
+      'এই ডিভাইসে এবং সাইন ইন করা থাকলে আপনার অ্যাকাউন্টে সংরক্ষিত হয়। মোট হিসাব ইসিবি-র রেফারেন্স হারে রূপান্তরিত হয়; দাম দেরিতে আসতে পারে।';
 
   @override
   String get addToPortfolio => 'পোর্টফোলিওতে যোগ করুন';
@@ -1719,7 +1719,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'শুধু এই ডিভাইসেই সংরক্ষিত হয়। AI বিশ্লেষণ আপনার নোটগুলো বিবেচনায় নেয়।';
+      'এই ডিভাইসে এবং সাইন ইন করা থাকলে আপনার অ্যাকাউন্টে সংরক্ষিত হয়। AI বিশ্লেষণ আপনার নোটগুলো বিবেচনায় নেয়।';
 
   @override
   String notesSaved(String date) {

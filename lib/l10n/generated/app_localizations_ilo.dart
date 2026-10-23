@@ -1121,7 +1121,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Naidulin laeng iti daytoy a device. Mai-convert dagiti dagup babaen ti reference rate ti ECB; mabalin a naladaw dagiti presio.';
+      'Naidulin iti daytoy a device, ken iti accountmo no naka-sign in ka. Mai-convert dagiti dagup babaen ti reference rate ti ECB; mabalin a naladaw dagiti presio.';
 
   @override
   String get addToPortfolio => 'Inayon iti portfolio';
@@ -1735,7 +1735,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Naidulin laeng iti daytoy a device. Ikonsiderar ti panangsukimat ti AI dagiti notam.';
+      'Naidulin iti daytoy a device, ken iti accountmo no naka-sign in ka. Ikonsiderar ti panangsukimat ti AI dagiti notam.';
 
   @override
   String notesSaved(String date) {

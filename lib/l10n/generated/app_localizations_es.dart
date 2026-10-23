@@ -1114,7 +1114,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Se guarda solo en este dispositivo. Los totales se convierten a los tipos de referencia del BCE; los precios pueden ir con retraso.';
+      'Se guarda en este dispositivo y, si has iniciado sesión, en tu cuenta. Los totales se convierten a los tipos de referencia del BCE; los precios pueden ir con retraso.';
 
   @override
   String get addToPortfolio => 'Añadir a la cartera';
@@ -1724,7 +1724,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Se guarda solo en este dispositivo. El análisis con IA tiene en cuenta tus notas.';
+      'Se guarda en este dispositivo y, si has iniciado sesión, en tu cuenta. El análisis con IA tiene en cuenta tus notas.';
 
   @override
   String notesSaved(String date) {

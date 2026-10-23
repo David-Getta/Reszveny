@@ -1121,7 +1121,7 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Swi hlayisiwile eka xitirhisiwa lexi ntsena. Mihlanganelo yi cinciwa hi mimpimo ya xikombo ya ECB; minxavo yi nga ha hlwela.';
+      'Swi hlayisiwile eka xitirhisiwa lexi, ni le ka akhawunti ya wena loko u nghenile. Mihlanganelo yi cinciwa hi mimpimo ya xikombo ya ECB; minxavo yi nga ha hlwela.';
 
   @override
   String get addToPortfolio => 'Engetela eka phothifoliyo';
@@ -1731,7 +1731,7 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Swi hlayisiwile eka xitirhisiwa lexi ntsena. Nxopaxopo wa AI wu tekela enhlokweni tinotsi ta wena.';
+      'Swi hlayisiwile eka xitirhisiwa lexi, ni le ka akhawunti ya wena loko u nghenile. Nxopaxopo wa AI wu tekela enhlokweni tinotsi ta wena.';
 
   @override
   String notesSaved(String date) {

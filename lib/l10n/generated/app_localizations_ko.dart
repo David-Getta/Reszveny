@@ -1076,7 +1076,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      '이 기기에만 저장됩니다. 합계는 ECB 기준 환율로 환산되며, 가격은 지연될 수 있습니다.';
+      '이 기기와, 로그인한 경우 계정에 저장됩니다. 합계는 ECB 기준 환율로 환산되며, 가격은 지연될 수 있습니다.';
 
   @override
   String get addToPortfolio => '포트폴리오에 추가';
@@ -1669,7 +1669,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get notesHint => '왜 샀나요? 무엇을 지켜보고 있나요? 어떤 경우에 팔 건가요?';
 
   @override
-  String get notesInfo => '이 기기에만 저장됩니다. AI 분석에 메모 내용이 반영됩니다.';
+  String get notesInfo => '이 기기와, 로그인한 경우 계정에 저장됩니다. AI 분석에 메모 내용이 반영됩니다.';
 
   @override
   String notesSaved(String date) {

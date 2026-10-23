@@ -1113,7 +1113,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'ინახება მხოლოდ ამ მოწყობილობაზე. ჯამები გადაიანგარიშება ECB-ის საცნობარო კურსებით; ფასები შეიძლება დაგვიანებული იყოს.';
+      'ინახება ამ მოწყობილობაზე და, თუ შესული ხართ, თქვენს ანგარიშში. ჯამები გადაიანგარიშება ECB-ის საცნობარო კურსებით; ფასები შეიძლება დაგვიანებული იყოს.';
 
   @override
   String get addToPortfolio => 'პორტფელში დამატება';
@@ -1721,7 +1721,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'ინახება მხოლოდ ამ მოწყობილობაზე. AI ანალიზი ითვალისწინებს თქვენს ჩანაწერებს.';
+      'ინახება ამ მოწყობილობაზე და, თუ შესული ხართ, თქვენს ანგარიშში. AI ანალიზი ითვალისწინებს თქვენს ჩანაწერებს.';
 
   @override
   String notesSaved(String date) {

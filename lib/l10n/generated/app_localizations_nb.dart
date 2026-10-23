@@ -1111,7 +1111,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Lagres bare på denne enheten. Summene regnes om til ECBs referansekurser; kursene kan være forsinket.';
+      'Lagres på denne enheten og i kontoen din hvis du er logget inn. Summene regnes om til ECBs referansekurser; kursene kan være forsinket.';
 
   @override
   String get addToPortfolio => 'Legg til i porteføljen';
@@ -1719,7 +1719,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Lagres bare på denne enheten. AI-analysen tar hensyn til notatene dine.';
+      'Lagres på denne enheten og i kontoen din hvis du er logget inn. AI-analysen tar hensyn til notatene dine.';
 
   @override
   String notesSaved(String date) {

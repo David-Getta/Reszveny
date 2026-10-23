@@ -1119,7 +1119,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Enregistré uniquement sur cet appareil. Les totaux sont convertis aux cours de référence de la BCE ; les cours peuvent être différés.';
+      'Enregistré sur cet appareil et, si vous êtes connecté, dans votre compte. Les totaux sont convertis aux cours de référence de la BCE ; les cours peuvent être différés.';
 
   @override
   String get addToPortfolio => 'Ajouter au portefeuille';
@@ -1730,7 +1730,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Enregistré uniquement sur cet appareil. L’analyse IA tient compte de vos notes.';
+      'Enregistré sur cet appareil et, si vous êtes connecté, dans votre compte. L’analyse IA tient compte de vos notes.';
 
   @override
   String notesSaved(String date) {

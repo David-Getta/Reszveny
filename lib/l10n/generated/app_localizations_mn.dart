@@ -1111,7 +1111,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Зөвхөн энэ төхөөрөмжид хадгалагдана. Нийт дүнг Европын Төв Банкны лавлах ханшаар хөрвүүлнэ; үнэ хоцрогдсон байж болно.';
+      'Энэ төхөөрөмжид, нэвтэрсэн бол таны бүртгэлд хадгалагдана. Нийт дүнг Европын Төв Банкны лавлах ханшаар хөрвүүлнэ; үнэ хоцрогдсон байж болно.';
 
   @override
   String get addToPortfolio => 'Портфолиод нэмэх';
@@ -1720,7 +1720,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Зөвхөн энэ төхөөрөмжид хадгалагдана. AI шинжилгээ таны тэмдэглэлийг харгалзан үзнэ.';
+      'Энэ төхөөрөмжид, нэвтэрсэн бол таны бүртгэлд хадгалагдана. AI шинжилгээ таны тэмдэглэлийг харгалзан үзнэ.';
 
   @override
   String notesSaved(String date) {

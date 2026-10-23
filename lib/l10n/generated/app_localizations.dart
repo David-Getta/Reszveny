@@ -2203,10 +2203,10 @@ abstract class AppLocalizations {
   /// **'Nothing here yet. Open a stock and tap “Add to portfolio” to follow what you own.'**
   String get portfolioEmpty;
 
-  /// No description provided for @portfolioLocalNote.
+  /// Footnote on the portfolio page: where the data is kept (this device, and the account when signed in), how totals are converted, and that prices may be delayed.
   ///
   /// In en, this message translates to:
-  /// **'Stored only on this device. Totals are converted at ECB reference rates; prices may be delayed.'**
+  /// **'Kept on this device, and in your account if you\'re signed in. Totals are converted at ECB reference rates; prices may be delayed.'**
   String get portfolioLocalNote;
 
   /// No description provided for @addToPortfolio.
@@ -3157,10 +3157,10 @@ abstract class AppLocalizations {
   /// **'Why did you buy it, what are you watching, what would make you sell?'**
   String get notesHint;
 
-  /// No description provided for @notesInfo.
+  /// Under the personal notes field on a stock page: where the notes are kept (this device, and the account when signed in) and that the AI analysis reads them.
   ///
   /// In en, this message translates to:
-  /// **'Stored only on this device. The AI analysis takes your notes into account.'**
+  /// **'Kept on this device, and in your account if you\'re signed in. The AI analysis takes your notes into account.'**
   String get notesInfo;
 
   /// When the note was last saved; date is a formatted date and time.

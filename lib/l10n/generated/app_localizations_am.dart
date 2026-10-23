@@ -1090,7 +1090,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'በዚህ መሣሪያ ላይ ብቻ ይቀመጣል። ድምሮቹ በECB የማጣቀሻ ተመኖች ይቀየራሉ፤ ዋጋዎች ሊዘገዩ ይችላሉ።';
+      'በዚህ መሣሪያ ላይ እና ከገቡ በመለያዎ ውስጥ ይቀመጣል። ድምሮቹ በECB የማጣቀሻ ተመኖች ይቀየራሉ፤ ዋጋዎች ሊዘገዩ ይችላሉ።';
 
   @override
   String get addToPortfolio => 'ወደ ፖርትፎሊዮ አክል';
@@ -1692,7 +1692,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'በዚህ መሣሪያ ላይ ብቻ ይቀመጣል። የAI ትንተናው ማስታወሻዎችዎን ግምት ውስጥ ያስገባል።';
+      'በዚህ መሣሪያ ላይ እና ከገቡ በመለያዎ ውስጥ ይቀመጣል። የAI ትንተናው ማስታወሻዎችዎን ግምት ውስጥ ያስገባል።';
 
   @override
   String notesSaved(String date) {

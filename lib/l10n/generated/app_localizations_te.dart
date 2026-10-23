@@ -1115,7 +1115,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'ఈ పరికరంలో మాత్రమే నిల్వ అవుతుంది. మొత్తాలు ECB రిఫరెన్స్ రేట్లతో మార్చబడతాయి; ధరలు ఆలస్యంగా ఉండవచ్చు.';
+      'ఈ పరికరంలో, మీరు సైన్ ఇన్ చేసి ఉంటే మీ ఖాతాలో కూడా నిల్వ అవుతుంది. మొత్తాలు ECB రిఫరెన్స్ రేట్లతో మార్చబడతాయి; ధరలు ఆలస్యంగా ఉండవచ్చు.';
 
   @override
   String get addToPortfolio => 'పోర్ట్‌ఫోలియోకు జోడించు';
@@ -1725,7 +1725,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'ఈ పరికరంలో మాత్రమే నిల్వ అవుతుంది. AI విశ్లేషణ మీ గమనికలను పరిగణనలోకి తీసుకుంటుంది.';
+      'ఈ పరికరంలో, మీరు సైన్ ఇన్ చేసి ఉంటే మీ ఖాతాలో కూడా నిల్వ అవుతుంది. AI విశ్లేషణ మీ గమనికలను పరిగణనలోకి తీసుకుంటుంది.';
 
   @override
   String notesSaved(String date) {

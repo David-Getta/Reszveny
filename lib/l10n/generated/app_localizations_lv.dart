@@ -1141,7 +1141,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Saglabāts tikai šajā ierīcē. Kopsummas tiek pārrēķinātas pēc ECB atsauces kursiem; cenas var būt novēlotas.';
+      'Saglabāts šajā ierīcē un, ja esat pierakstījies, arī jūsu kontā. Kopsummas tiek pārrēķinātas pēc ECB atsauces kursiem; cenas var būt novēlotas.';
 
   @override
   String get addToPortfolio => 'Pievienot portfelim';
@@ -1756,7 +1756,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Saglabāts tikai šajā ierīcē. AI analīze ņem vērā jūsu piezīmes.';
+      'Saglabāts šajā ierīcē un, ja esat pierakstījies, arī jūsu kontā. AI analīze ņem vērā jūsu piezīmes.';
 
   @override
   String notesSaved(String date) {

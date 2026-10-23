@@ -1108,7 +1108,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'ફક્ત આ ડિવાઇસ પર સાચવેલું છે. કુલ રકમ ECBના સંદર્ભ દરે રૂપાંતરિત થાય છે; ભાવ વિલંબિત હોઈ શકે છે.';
+      'આ ડિવાઇસ પર અને સાઇન ઇન હો તો તમારા એકાઉન્ટમાં સાચવેલું છે. કુલ રકમ ECBના સંદર્ભ દરે રૂપાંતરિત થાય છે; ભાવ વિલંબિત હોઈ શકે છે.';
 
   @override
   String get addToPortfolio => 'પોર્ટફોલિયોમાં ઉમેરો';
@@ -1716,7 +1716,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'ફક્ત આ ડિવાઇસ પર સાચવેલું છે. AI વિશ્લેષણ તમારી નોંધોને ધ્યાનમાં લે છે.';
+      'આ ડિવાઇસ પર અને સાઇન ઇન હો તો તમારા એકાઉન્ટમાં સાચવેલું છે. AI વિશ્લેષણ તમારી નોંધોને ધ્યાનમાં લે છે.';
 
   @override
   String notesSaved(String date) {

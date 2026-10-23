@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.221)
+# Változásjegyzék (0.2.130 → 0.2.222)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -82,6 +82,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   (az adó-CSV-be is) és az éves hozamba beszámít; a bróker-exportok díj-oszlopa (IBKR „Comm/Fee”) importáláskor
   bekerül; szinkronban, mentésben és a CSV-ben is.
 - Az **új vétel számlája** alapból a legutóbbi vételé (a mindig TBSZ-re vevőnek nem kell újra beírnia).
+- A jegyzetkártya és a portfólió lábjegyzete helyesen írja: az adat ezen a készüléken marad, **és a fiókodban, ha be
+  vagy jelentkezve** (eddig „csak ezen a készüléken”).
 - **Tartási idő** a „Pozícióm” kártyán: mióta tartod a legrégebbi még birtokolt darabokat („Tartod: 1 év 7 hónap ·
   2024. márc. 4. óta”).
 - **Jegyzet a tranzakcióhoz** (befektetési napló): a vétel/eladás dialógusban „Jegyzet hozzáadása” – a „miért veszed /

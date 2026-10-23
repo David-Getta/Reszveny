@@ -1119,7 +1119,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Sa sini lang nga device natipon. Ang mga kabilogan gin-convert gamit ang reference rate sang ECB; mahimo nga ulihi ang mga presyo.';
+      'Natipon sa sini nga device, kag sa imo account kon naka-sign in ka. Ang mga kabilogan gin-convert gamit ang reference rate sang ECB; mahimo nga ulihi ang mga presyo.';
 
   @override
   String get addToPortfolio => 'Idugang sa portfolio';
@@ -1732,7 +1732,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Sa sini lang nga device natipon. Ginakonsiderar sang analisis sang AI ang imo mga nota.';
+      'Natipon sa sini nga device, kag sa imo account kon naka-sign in ka. Ginakonsiderar sang analisis sang AI ang imo mga nota.';
 
   @override
   String notesSaved(String date) {

@@ -1109,7 +1109,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'נשמר רק במכשיר הזה. הסכומים מומרים לפי שערי הייחוס של ה-ECB; המחירים עשויים להיות מעוכבים.';
+      'נשמר במכשיר הזה, וגם בחשבון שלך אם נכנסת אליו. הסכומים מומרים לפי שערי הייחוס של ה-ECB; המחירים עשויים להיות מעוכבים.';
 
   @override
   String get addToPortfolio => 'הוספה לתיק';
@@ -1715,7 +1715,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get notesHint => 'למה קנית, אחרי מה לעקוב, מה יגרום לך למכור?';
 
   @override
-  String get notesInfo => 'נשמר רק במכשיר הזה. ניתוח ה-AI מתחשב בהערות שלך.';
+  String get notesInfo =>
+      'נשמר במכשיר הזה, וגם בחשבון שלך אם נכנסת אליו. ניתוח ה-AI מתחשב בהערות שלך.';
 
   @override
   String notesSaved(String date) {

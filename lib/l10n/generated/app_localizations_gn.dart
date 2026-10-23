@@ -1115,7 +1115,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Oñeñongatu ko mbaʼeʼokápe añoite. Opaite oñemoambue BCE ñemoambue repy rupi; tepy ikatu og̃uahẽ tarde.';
+      'Oñeñongatu ko mbaʼeʼokápe, ha nde mbaʼetépe avei reike ramo. Opaite oñemoambue BCE ñemoambue repy rupi; tepy ikatu og̃uahẽ tarde.';
 
   @override
   String get addToPortfolio => 'Embojuaju carterape';
@@ -1725,7 +1725,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Oñeñongatu ko mbaʼeʼokápe añoite. AI jehesaʼỹijo ohecha ne jehaipyrekuéra.';
+      'Oñeñongatu ko mbaʼeʼokápe, ha nde mbaʼetépe avei reike ramo. AI jehesaʼỹijo ohecha ne jehaipyrekuéra.';
 
   @override
   String notesSaved(String date) {

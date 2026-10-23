@@ -1114,7 +1114,7 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Ngan disimpen dina parangkat ieu. Total dirobah maké kurs rujukan ECB; harga bisa waé telat.';
+      'Disimpen dina parangkat ieu, sareng dina akun anjeun upami anjeun parantos asup. Total dirobah maké kurs rujukan ECB; harga bisa waé telat.';
 
   @override
   String get addToPortfolio => 'Tambahkeun ka portofolio';
@@ -1722,7 +1722,7 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Ngan disimpen dina parangkat ieu. Analisis AI merhatikeun catetan anjeun.';
+      'Disimpen dina parangkat ieu, sareng dina akun anjeun upami anjeun parantos asup. Analisis AI merhatikeun catetan anjeun.';
 
   @override
   String notesSaved(String date) {

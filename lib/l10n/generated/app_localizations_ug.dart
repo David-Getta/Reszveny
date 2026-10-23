@@ -1115,7 +1115,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'پەقەت مۇشۇ ئۈسكۈنىدە ساقلىنىدۇ. جەمئىي سوممىلار ECB نىڭ پايدىلىنىش نىسبىتى بويىچە ئالماشتۇرۇلىدۇ؛ باھالار كېچىكىشى مۇمكىن.';
+      'مۇشۇ ئۈسكۈنىدە، كىرگەن بولسىڭىز ھېساباتىڭىزدىمۇ ساقلىنىدۇ. جەمئىي سوممىلار ECB نىڭ پايدىلىنىش نىسبىتى بويىچە ئالماشتۇرۇلىدۇ؛ باھالار كېچىكىشى مۇمكىن.';
 
   @override
   String get addToPortfolio => 'بىرىكمىگە قوشۇش';
@@ -1722,7 +1722,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'پەقەت مۇشۇ ئۈسكۈنىدە ساقلىنىدۇ. AI تەھلىلى خاتىرىلىرىڭىزنى نەزەردە تۇتىدۇ.';
+      'مۇشۇ ئۈسكۈنىدە، كىرگەن بولسىڭىز ھېساباتىڭىزدىمۇ ساقلىنىدۇ. AI تەھلىلى خاتىرىلىرىڭىزنى نەزەردە تۇتىدۇ.';
 
   @override
   String notesSaved(String date) {

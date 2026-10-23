@@ -1111,7 +1111,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Yalnızca bu cihazda saklanır. Toplamlar ECB referans kurlarıyla çevrilir; fiyatlar gecikmeli olabilir.';
+      'Bu cihazda ve giriş yaptıysanız hesabınızda saklanır. Toplamlar ECB referans kurlarıyla çevrilir; fiyatlar gecikmeli olabilir.';
 
   @override
   String get addToPortfolio => 'Portföye ekle';
@@ -1719,7 +1719,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Yalnızca bu cihazda saklanır. Yapay zekâ analizi notlarınızı dikkate alır.';
+      'Bu cihazda ve giriş yaptıysanız hesabınızda saklanır. Yapay zekâ analizi notlarınızı dikkate alır.';
 
   @override
   String notesSaved(String date) {

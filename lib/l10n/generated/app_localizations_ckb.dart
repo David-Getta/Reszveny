@@ -1111,7 +1111,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'تەنها لەسەر ئەم ئامێرە پاشەکەوت دەکرێت. کۆکان بە نرخە سەرچاوەییەکانی ECB دەگۆڕدرێن؛ لەوانەیە نرخەکان دواکەوتوو بن.';
+      'لەسەر ئەم ئامێرە و، ئەگەر چوویتە ژوورەوە، لە هەژمارەکەتدا پاشەکەوت دەکرێت. کۆکان بە نرخە سەرچاوەییەکانی ECB دەگۆڕدرێن؛ لەوانەیە نرخەکان دواکەوتوو بن.';
 
   @override
   String get addToPortfolio => 'زیادکردن بۆ پۆرتفۆلیۆ';
@@ -1719,7 +1719,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'تەنها لەسەر ئەم ئامێرە پاشەکەوت دەکرێت. شیکاریی AI تێبینییەکانت لەبەرچاو دەگرێت.';
+      'لەسەر ئەم ئامێرە و، ئەگەر چوویتە ژوورەوە، لە هەژمارەکەتدا پاشەکەوت دەکرێت. شیکاریی AI تێبینییەکانت لەبەرچاو دەگرێت.';
 
   @override
   String notesSaved(String date) {

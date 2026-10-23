@@ -1110,7 +1110,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'केवल इसी डिवाइस पर सहेजा जाता है। कुल योग ECB की संदर्भ दरों पर बदले जाते हैं; कीमतें देर से आ सकती हैं।';
+      'इसी डिवाइस पर, और साइन इन होने पर आपके खाते में भी सहेजा जाता है। कुल योग ECB की संदर्भ दरों पर बदले जाते हैं; कीमतें देर से आ सकती हैं।';
 
   @override
   String get addToPortfolio => 'पोर्टफ़ोलियो में जोड़ें';
@@ -1718,7 +1718,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'केवल इसी डिवाइस पर सहेजा जाता है। AI विश्लेषण आपके नोट्स को ध्यान में रखता है।';
+      'इसी डिवाइस पर, और साइन इन होने पर आपके खाते में भी सहेजा जाता है। AI विश्लेषण आपके नोट्स को ध्यान में रखता है।';
 
   @override
   String notesSaved(String date) {

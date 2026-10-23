@@ -1152,7 +1152,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Zapisywane tylko na tym urządzeniu. Sumy są przeliczane po kursach referencyjnych EBC; ceny mogą być opóźnione.';
+      'Zapisywane na tym urządzeniu, a po zalogowaniu także na twoim koncie. Sumy są przeliczane po kursach referencyjnych EBC; ceny mogą być opóźnione.';
 
   @override
   String get addToPortfolio => 'Dodaj do portfela';
@@ -1773,7 +1773,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Zapisywane tylko na tym urządzeniu. Analiza AI uwzględnia twoje notatki.';
+      'Zapisywane na tym urządzeniu, a po zalogowaniu także na twoim koncie. Analiza AI uwzględnia twoje notatki.';
 
   @override
   String notesSaved(String date) {

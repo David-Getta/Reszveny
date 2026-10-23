@@ -1117,7 +1117,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Ilundwa kaka mu kisadilu kiaki. Ntalu zawonso zisobwanga mu taux ya BCE; ntalu zilenda kwiza na nima.';
+      'Ilundwa mu kisadilu kiaki, mpi mu compte na nge kana nge me kota. Ntalu zawonso zisobwanga mu taux ya BCE; ntalu zilenda kwiza na nima.';
 
   @override
   String get addToPortfolio => 'Yika mu portefeuille';
@@ -1726,7 +1726,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Ilundwa kaka mu kisadilu kiaki. Analyse ya AI ke tadilaka ba note na nge.';
+      'Ilundwa mu kisadilu kiaki, mpi mu compte na nge kana nge me kota. Analyse ya AI ke tadilaka ba note na nge.';
 
   @override
   String notesSaved(String date) {

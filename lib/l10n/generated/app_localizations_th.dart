@@ -1098,7 +1098,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'จัดเก็บไว้ในอุปกรณ์นี้เท่านั้น ยอดรวมแปลงค่าตามอัตราอ้างอิงของ ECB ราคาอาจล่าช้า';
+      'จัดเก็บไว้ในอุปกรณ์นี้ และในบัญชีของคุณหากลงชื่อเข้าใช้อยู่ ยอดรวมแปลงค่าตามอัตราอ้างอิงของ ECB ราคาอาจล่าช้า';
 
   @override
   String get addToPortfolio => 'เพิ่มในพอร์ตโฟลิโอ';
@@ -1697,7 +1697,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'จัดเก็บไว้ในอุปกรณ์นี้เท่านั้น การวิเคราะห์ด้วย AI จะนำบันทึกของคุณมาพิจารณา';
+      'จัดเก็บไว้ในอุปกรณ์นี้ และในบัญชีของคุณหากลงชื่อเข้าใช้อยู่ การวิเคราะห์ด้วย AI จะนำบันทึกของคุณมาพิจารณา';
 
   @override
   String notesSaved(String date) {

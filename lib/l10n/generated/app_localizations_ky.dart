@@ -1113,7 +1113,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Ушул түзмөктө гана сакталат. Жыйынтыктар ECB маалымдама курстары боюнча которулат; баалар кечигиши мүмкүн.';
+      'Ушул түзмөктө жана, кирген болсоңуз, аккаунтуңузда сакталат. Жыйынтыктар ECB маалымдама курстары боюнча которулат; баалар кечигиши мүмкүн.';
 
   @override
   String get addToPortfolio => 'Портфелге кошуу';
@@ -1721,7 +1721,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Ушул түзмөктө гана сакталат. AI талдоосу жазууларыңызды эске алат.';
+      'Ушул түзмөктө жана, кирген болсоңуз, аккаунтуңузда сакталат. AI талдоосу жазууларыңызды эске алат.';
 
   @override
   String notesSaved(String date) {

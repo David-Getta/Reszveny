@@ -1107,7 +1107,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'یوازې په همدې وسیله کې ساتل کېږي. ټولې اندازې د ECB د حوالې نرخونو سره بدلېږي؛ بیې ښايي ځنډېدلې وي.';
+      'په همدې وسیله کې، او که ننوتي یاست، ستاسو په حساب کې ساتل کېږي. ټولې اندازې د ECB د حوالې نرخونو سره بدلېږي؛ بیې ښايي ځنډېدلې وي.';
 
   @override
   String get addToPortfolio => 'پورټفولیو ته ورزیات کړئ';
@@ -1714,7 +1714,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'یوازې په همدې وسیله کې ساتل کېږي. AI تحلیل ستاسو یادښتونه په پام کې نیسي.';
+      'په همدې وسیله کې، او که ننوتي یاست، ستاسو په حساب کې ساتل کېږي. AI تحلیل ستاسو یادښتونه په پام کې نیسي.';
 
   @override
   String notesSaved(String date) {

@@ -1150,7 +1150,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Зберігається лише на цьому пристрої. Підсумки перераховуються за довідковими курсами ЄЦБ; ціни можуть надходити із затримкою.';
+      'Зберігається на цьому пристрої, а якщо ви ввійшли, — і у вашому обліковому записі. Підсумки перераховуються за довідковими курсами ЄЦБ; ціни можуть надходити із затримкою.';
 
   @override
   String get addToPortfolio => 'Додати до портфеля';
@@ -1769,7 +1769,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Зберігається лише на цьому пристрої. ШІ-аналіз враховує ваші нотатки.';
+      'Зберігається на цьому пристрої, а якщо ви ввійшли, — і у вашому обліковому записі. ШІ-аналіз враховує ваші нотатки.';
 
   @override
   String notesSaved(String date) {

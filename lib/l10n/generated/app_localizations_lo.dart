@@ -1099,7 +1099,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'ເກັບໄວ້ໃນອຸປະກອນນີ້ເທົ່ານັ້ນ ຍອດລວມແປງຄ່າຕາມອັດຕາອ້າງອີງຂອງ ECB ລາຄາອາດຊັກຊ້າ';
+      'ເກັບໄວ້ໃນອຸປະກອນນີ້ ແລະ ໃນບັນຊີຂອງທ່ານ ຫາກທ່ານເຂົ້າສູ່ລະບົບແລ້ວ ຍອດລວມແປງຄ່າຕາມອັດຕາອ້າງອີງຂອງ ECB ລາຄາອາດຊັກຊ້າ';
 
   @override
   String get addToPortfolio => 'ເພີ່ມໃສ່ພອດໂຟລິໂອ';
@@ -1700,7 +1700,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'ເກັບໄວ້ໃນອຸປະກອນນີ້ເທົ່ານັ້ນ ການວິເຄາະດ້ວຍ AI ຈະພິຈາລະນາບັນທຶກຂອງທ່ານ';
+      'ເກັບໄວ້ໃນອຸປະກອນນີ້ ແລະ ໃນບັນຊີຂອງທ່ານ ຫາກທ່ານເຂົ້າສູ່ລະບົບແລ້ວ ການວິເຄາະດ້ວຍ AI ຈະພິຈາລະນາບັນທຶກຂອງທ່ານ';
 
   @override
   String notesSaved(String date) {

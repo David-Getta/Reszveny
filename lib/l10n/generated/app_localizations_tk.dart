@@ -1111,7 +1111,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Diňe şu enjamda saklanýar. Jemler ÝMB-niň salgylanma hümmetleri boýunça hasaplanýar; bahalar gijikdirilen bolup biler.';
+      'Şu enjamda we, hasaba giren bolsaňyz, hasabyňyzda saklanýar. Jemler ÝMB-niň salgylanma hümmetleri boýunça hasaplanýar; bahalar gijikdirilen bolup biler.';
 
   @override
   String get addToPortfolio => 'Portfele goş';
@@ -1718,7 +1718,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Diňe şu enjamda saklanýar. AI seljermesi bellikleriňizi göz öňünde tutýar.';
+      'Şu enjamda we, hasaba giren bolsaňyz, hasabyňyzda saklanýar. AI seljermesi bellikleriňizi göz öňünde tutýar.';
 
   @override
   String notesSaved(String date) {

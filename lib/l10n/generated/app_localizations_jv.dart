@@ -1113,7 +1113,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Mung disimpen ing piranti iki. Total diowahi nganggo kurs referensi ECB; rega bisa telat.';
+      'Disimpen ing piranti iki, lan ing akun sampeyan yen sampeyan wis mlebu. Total diowahi nganggo kurs referensi ECB; rega bisa telat.';
 
   @override
   String get addToPortfolio => 'Tambahake menyang portofolio';
@@ -1721,7 +1721,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Mung disimpen ing piranti iki. Analisis AI nggatekake cathetan sampeyan.';
+      'Disimpen ing piranti iki, lan ing akun sampeyan yen sampeyan wis mlebu. Analisis AI nggatekake cathetan sampeyan.';
 
   @override
   String notesSaved(String date) {

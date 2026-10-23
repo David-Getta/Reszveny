@@ -1113,7 +1113,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Huhifadhiwa kwenye kifaa hiki pekee. Jumla hubadilishwa kwa viwango vya marejeleo vya ECB; bei zinaweza kuchelewa.';
+      'Huhifadhiwa kwenye kifaa hiki, na kwenye akaunti yako ikiwa umeingia. Jumla hubadilishwa kwa viwango vya marejeleo vya ECB; bei zinaweza kuchelewa.';
 
   @override
   String get addToPortfolio => 'Ongeza kwenye jalada';
@@ -1720,7 +1720,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Huhifadhiwa kwenye kifaa hiki pekee. Uchambuzi wa AI huzingatia madokezo yako.';
+      'Huhifadhiwa kwenye kifaa hiki, na kwenye akaunti yako ikiwa umeingia. Uchambuzi wa AI huzingatia madokezo yako.';
 
   @override
   String notesSaved(String date) {

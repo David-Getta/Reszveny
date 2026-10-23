@@ -1108,7 +1108,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Hanya disimpan di perangkat ini. Total dikonversi dengan kurs acuan ECB; harga mungkin tertunda.';
+      'Disimpan di perangkat ini, dan di akun Anda jika Anda sudah masuk. Total dikonversi dengan kurs acuan ECB; harga mungkin tertunda.';
 
   @override
   String get addToPortfolio => 'Tambahkan ke portofolio';
@@ -1716,7 +1716,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Hanya disimpan di perangkat ini. Analisis AI mempertimbangkan catatan Anda.';
+      'Disimpan di perangkat ini, dan di akun Anda jika Anda sudah masuk. Analisis AI mempertimbangkan catatan Anda.';
 
   @override
   String notesSaved(String date) {

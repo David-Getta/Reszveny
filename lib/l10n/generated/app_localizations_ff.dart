@@ -1109,7 +1109,7 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Ina mooftaa e ngol kaɓirgol tan. Kuuɓal ina waylitee e coggu weccitgol ECB; coggu ina waawi ɓooyde.';
+      'Ina mooftaa e ngol kaɓirgol, e nder konte maa so a seŋii. Kuuɓal ina waylitee e coggu weccitgol ECB; coggu ina waawi ɓooyde.';
 
   @override
   String get addToPortfolio => 'Ɓeydu e aksiyoŋ am';
@@ -1715,7 +1715,7 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Ina mooftaa e ngol kaɓirgol tan. Ƴeewndo AI ina jogitoo binndi maa.';
+      'Ina mooftaa e ngol kaɓirgol, e nder konte maa so a seŋii. Ƴeewndo AI ina jogitoo binndi maa.';
 
   @override
   String notesSaved(String date) {

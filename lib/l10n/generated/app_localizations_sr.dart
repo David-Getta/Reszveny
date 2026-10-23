@@ -1140,7 +1140,7 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Чува се само на овом уређају. Збирови се прерачунавају по референтним курсевима ЕЦБ; цене могу каснити.';
+      'Чува се на овом уређају и, ако сте пријављени, на вашем налогу. Збирови се прерачунавају по референтним курсевима ЕЦБ; цене могу каснити.';
 
   @override
   String get addToPortfolio => 'Додај у портфолио';
@@ -1755,7 +1755,7 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Чува се само на овом уређају. AI анализа узима у обзир ваше белешке.';
+      'Чува се на овом уређају и, ако сте пријављени, на вашем налогу. AI анализа узима у обзир ваше белешке.';
 
   @override
   String notesSaved(String date) {

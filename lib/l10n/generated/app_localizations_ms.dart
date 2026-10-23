@@ -1115,7 +1115,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Disimpan pada peranti ini sahaja. Jumlah ditukar pada kadar rujukan ECB; harga mungkin tertangguh.';
+      'Disimpan pada peranti ini, dan dalam akaun anda jika anda log masuk. Jumlah ditukar pada kadar rujukan ECB; harga mungkin tertangguh.';
 
   @override
   String get addToPortfolio => 'Tambah ke portfolio';
@@ -1723,7 +1723,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Disimpan pada peranti ini sahaja. Analisis AI mengambil kira nota anda.';
+      'Disimpan pada peranti ini, dan dalam akaun anda jika anda log masuk. Analisis AI mengambil kira nota anda.';
 
   @override
   String notesSaved(String date) {

@@ -1113,7 +1113,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Ĩigĩtwo kĩndũ-inĩ gĩkĩ tu. Mũigana wothe ũgarũrĩtwo na thogora wa ECB; thogora no ũcererwo.';
+      'Ĩigĩtwo kĩndũ-inĩ gĩkĩ, na akaunti-inĩ yaku angĩkorwo nĩũtoonyete. Mũigana wothe ũgarũrĩtwo na thogora wa ECB; thogora no ũcererwo.';
 
   @override
   String get addToPortfolio => 'Ongerera harĩ hisa ciaku';
@@ -1720,7 +1720,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Ĩigĩtwo kĩndũ-inĩ gĩkĩ tu. Ũthuthuria wa AI nĩ ũtaranagia maandĩko maku.';
+      'Ĩigĩtwo kĩndũ-inĩ gĩkĩ, na akaunti-inĩ yaku angĩkorwo nĩũtoonyete. Ũthuthuria wa AI nĩ ũtaranagia maandĩko maku.';
 
   @override
   String notesSaved(String date) {

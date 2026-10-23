@@ -1117,7 +1117,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Ana adana shi a wannan na’ura kawai. Ana canza jimillar da farashin musayar ECB; farashi na iya jinkiri.';
+      'Ana adana shi a wannan na’ura, da kuma a asusunka idan ka shiga. Ana canza jimillar da farashin musayar ECB; farashi na iya jinkiri.';
 
   @override
   String get addToPortfolio => 'Ƙara zuwa jaka';
@@ -1725,7 +1725,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Ana adana shi a wannan na’ura kawai. Nazarin AI yana la’akari da bayananka.';
+      'Ana adana shi a wannan na’ura, da kuma a asusunka idan ka shiga. Nazarin AI yana la’akari da bayananka.';
 
   @override
   String notesSaved(String date) {

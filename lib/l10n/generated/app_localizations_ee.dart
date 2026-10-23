@@ -1115,7 +1115,7 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Wodzra wo ɖo ɖe mɔ̃ sia ko dzi. Wotrɔ akɔntabubu blibowo kple ECB ƒe gatɔtrɔ asiwo; asiwo ate ŋu atsi megbe.';
+      'Wodzra wo ɖo ɖe mɔ̃ sia dzi, eye ne ège ɖe eme la, ɖe wò akɔnta me hã. Wotrɔ akɔntabubu blibowo kple ECB ƒe gatɔtrɔ asiwo; asiwo ate ŋu atsi megbe.';
 
   @override
   String get addToPortfolio => 'Tsɔ kpe ɖe nye akpawo ŋu';
@@ -1724,7 +1724,7 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Wodzra wo ɖo ɖe mɔ̃ sia ko dzi. AI numekuku la bua wò nuŋlɔɖiwo ŋu.';
+      'Wodzra wo ɖo ɖe mɔ̃ sia dzi, eye ne ège ɖe eme la, ɖe wò akɔnta me hã. AI numekuku la bua wò nuŋlɔɖiwo ŋu.';
 
   @override
   String notesSaved(String date) {

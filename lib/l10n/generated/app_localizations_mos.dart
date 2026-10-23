@@ -1100,7 +1100,7 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'B tall-a aparɛy kãngã zugu bala. B teekda ligd fãa ne BCE teekre; koosgã tõe n kaoos n wa.';
+      'B tall-a aparɛy kãngã zugu, la f kõntã pʋgẽ me, f sã n kẽ. B teekda ligd fãa ne BCE teekre; koosgã tõe n kaoos n wa.';
 
   @override
   String get addToPortfolio => 'Paas portfey pʋgẽ';
@@ -1706,7 +1706,7 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'B tall-a aparɛy kãngã zugu bala. AI vɛɛsgã get f gʋlsgã.';
+      'B tall-a aparɛy kãngã zugu, la f kõntã pʋgẽ me, f sã n kẽ. AI vɛɛsgã get f gʋlsgã.';
 
   @override
   String notesSaved(String date) {

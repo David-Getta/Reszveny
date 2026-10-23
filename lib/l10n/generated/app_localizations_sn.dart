@@ -1117,7 +1117,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Zvakachengetwa pamudziyo uyu chete. Huwandu hwose hunoshandurwa nemitengo yereferensi yeECB; mitengo inogona kunonoka.';
+      'Zvakachengetwa pamudziyo uyu, uye muakaundi yako kana wapinda. Huwandu hwose hunoshandurwa nemitengo yereferensi yeECB; mitengo inogona kunonoka.';
 
   @override
   String get addToPortfolio => 'Wedzera kupotiforiyo';
@@ -1726,7 +1726,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Zvakachengetwa pamudziyo uyu chete. Ongororo yeAI inotarisa zvinyorwa zvako.';
+      'Zvakachengetwa pamudziyo uyu, uye muakaundi yako kana wapinda. Ongororo yeAI inotarisa zvinyorwa zvako.';
 
   @override
   String notesSaved(String date) {

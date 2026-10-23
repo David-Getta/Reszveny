@@ -1149,7 +1149,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Ukladá sa iba v tomto zariadení. Súčty sa prepočítavajú referenčnými kurzami ECB; ceny môžu byť oneskorené.';
+      'Ukladá sa v tomto zariadení, a ak ste prihlásení, aj vo vašom účte. Súčty sa prepočítavajú referenčnými kurzami ECB; ceny môžu byť oneskorené.';
 
   @override
   String get addToPortfolio => 'Pridať do portfólia';
@@ -1771,7 +1771,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Ukladá sa iba v tomto zariadení. AI analýza berie vaše poznámky do úvahy.';
+      'Ukladá sa v tomto zariadení, a ak ste prihlásení, aj vo vašom účte. AI analýza berie vaše poznámky do úvahy.';
 
   @override
   String notesSaved(String date) {

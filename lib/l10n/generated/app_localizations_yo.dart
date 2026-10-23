@@ -1111,7 +1111,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Orí ẹ̀rọ yìí nìkan ni a tọ́jú rẹ̀ sí. A ṣe ìyípadà àpapọ̀ pẹ̀lú ìwọ̀n ìtọ́kasí ECB; iye owó lè pẹ́ dé.';
+      'A tọ́jú rẹ̀ sórí ẹ̀rọ yìí, àti sínú àkáǹtì rẹ tí o bá ti wọlé. A ṣe ìyípadà àpapọ̀ pẹ̀lú ìwọ̀n ìtọ́kasí ECB; iye owó lè pẹ́ dé.';
 
   @override
   String get addToPortfolio => 'Fi kún àpò ìdókòwò';
@@ -1719,7 +1719,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Orí ẹ̀rọ yìí nìkan ni a tọ́jú rẹ̀ sí. Ìtúpalẹ̀ AI máa ń ro àwọn àkọsílẹ̀ rẹ mọ́ ọn.';
+      'A tọ́jú rẹ̀ sórí ẹ̀rọ yìí, àti sínú àkáǹtì rẹ tí o bá ti wọlé. Ìtúpalẹ̀ AI máa ń ro àwọn àkọsílẹ̀ rẹ mọ́ ọn.';
 
   @override
   String notesSaved(String date) {

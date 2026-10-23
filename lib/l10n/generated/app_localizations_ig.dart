@@ -1109,7 +1109,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'E chekwara ya naanị na ngwaọrụ a. A na-agbanwe ngụkọta site n\'ọnụego ntụaka ECB; ọnụahịa nwere ike igbu oge.';
+      'E chekwara ya na ngwaọrụ a, nakwa n\'akaụntụ gị ma ọ bụrụ na ị banyela. A na-agbanwe ngụkọta site n\'ọnụego ntụaka ECB; ọnụahịa nwere ike igbu oge.';
 
   @override
   String get addToPortfolio => 'Tinye na portfolio';
@@ -1714,7 +1714,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'E chekwara ya naanị na ngwaọrụ a. Nyocha AI na-atụle ndetu gị.';
+      'E chekwara ya na ngwaọrụ a, nakwa n\'akaụntụ gị ma ọ bụrụ na ị banyela. Nyocha AI na-atụle ndetu gị.';
 
   @override
   String notesSaved(String date) {

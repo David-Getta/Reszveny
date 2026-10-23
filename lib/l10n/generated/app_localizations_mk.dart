@@ -1131,7 +1131,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Се чува само на овој уред. Збировите се пресметуваат по референтните курсеви на ЕЦБ; цените може да доцнат.';
+      'Се чува на овој уред и, ако сте најавени, во вашата сметка. Збировите се пресметуваат по референтните курсеви на ЕЦБ; цените може да доцнат.';
 
   @override
   String get addToPortfolio => 'Додај во портфолио';
@@ -1739,7 +1739,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Се чува само на овој уред. AI-анализата ги зема предвид вашите белешки.';
+      'Се чува на овој уред и, ако сте најавени, во вашата сметка. AI-анализата ги зема предвид вашите белешки.';
 
   @override
   String notesSaved(String date) {

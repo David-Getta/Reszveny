@@ -1118,7 +1118,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Igcinwe kwesi sixhobo kuphela. Iitotali ziguqulwa ngamazinga esalathiso e-ECB; amaxabiso asenokulibaziseka.';
+      'Igcinwe kwesi sixhobo, nakwiakhawunti yakho ukuba ungenile. Iitotali ziguqulwa ngamazinga esalathiso e-ECB; amaxabiso asenokulibaziseka.';
 
   @override
   String get addToPortfolio => 'Yongeza kwipotifoliyo';
@@ -1727,7 +1727,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Igcinwe kwesi sixhobo kuphela. Uhlalutyo lwe-AI luthathela ingqalelo amanqaku akho.';
+      'Igcinwe kwesi sixhobo, nakwiakhawunti yakho ukuba ungenile. Uhlalutyo lwe-AI luthathela ingqalelo amanqaku akho.';
 
   @override
   String notesSaved(String date) {

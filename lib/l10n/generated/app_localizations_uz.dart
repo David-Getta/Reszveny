@@ -1113,7 +1113,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Faqat shu qurilmada saqlanadi. Jami summalar YeMB maʼlumotnoma kurslari boʻyicha hisoblanadi; narxlar kechikishi mumkin.';
+      'Shu qurilmada va, hisobga kirgan boʻlsangiz, hisobingizda saqlanadi. Jami summalar YeMB maʼlumotnoma kurslari boʻyicha hisoblanadi; narxlar kechikishi mumkin.';
 
   @override
   String get addToPortfolio => 'Portfelga qoʻshish';
@@ -1722,7 +1722,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Faqat shu qurilmada saqlanadi. AI tahlili qaydlaringizni hisobga oladi.';
+      'Shu qurilmada va, hisobga kirgan boʻlsangiz, hisobingizda saqlanadi. AI tahlili qaydlaringizni hisobga oladi.';
 
   @override
   String notesSaved(String date) {

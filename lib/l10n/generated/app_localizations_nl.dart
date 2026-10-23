@@ -1115,7 +1115,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Alleen op dit apparaat opgeslagen. Totalen worden omgerekend tegen ECB-referentiekoersen; koersen kunnen vertraagd zijn.';
+      'Opgeslagen op dit apparaat en, als je bent ingelogd, in je account. Totalen worden omgerekend tegen ECB-referentiekoersen; koersen kunnen vertraagd zijn.';
 
   @override
   String get addToPortfolio => 'Toevoegen aan portefeuille';
@@ -1725,7 +1725,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Alleen op dit apparaat opgeslagen. De AI-analyse houdt rekening met je notities.';
+      'Opgeslagen op dit apparaat en, als je bent ingelogd, in je account. De AI-analyse houdt rekening met je notities.';
 
   @override
   String notesSaved(String date) {

@@ -1110,7 +1110,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Anrejistre sèlman sou aparèy sa a. Total yo konvèti ak to referans BCE a; pri yo ka an reta.';
+      'Anrejistre sou aparèy sa a, ak nan kont ou si ou konekte. Total yo konvèti ak to referans BCE a; pri yo ka an reta.';
 
   @override
   String get addToPortfolio => 'Ajoute nan pòtfèy';
@@ -1717,7 +1717,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Anrejistre sèlman sou aparèy sa a. Analiz AI a pran nòt ou yo an kont.';
+      'Anrejistre sou aparèy sa a, ak nan kont ou si ou konekte. Analiz AI a pran nòt ou yo an kont.';
 
   @override
   String notesSaved(String date) {

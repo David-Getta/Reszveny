@@ -1112,7 +1112,7 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Тек осы құрылғыда сақталады. Жиынтықтар ЕОБ анықтамалық бағамдары бойынша есептеледі; бағалар кешігуі мүмкін.';
+      'Осы құрылғыда, ал аккаунтқа кірген болсаңыз, аккаунтыңызда да сақталады. Жиынтықтар ЕОБ анықтамалық бағамдары бойынша есептеледі; бағалар кешігуі мүмкін.';
 
   @override
   String get addToPortfolio => 'Портфельге қосу';
@@ -1719,7 +1719,7 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Тек осы құрылғыда сақталады. AI талдауы жазбаларыңызды ескереді.';
+      'Осы құрылғыда, ал аккаунтқа кірген болсаңыз, аккаунтыңызда да сақталады. AI талдауы жазбаларыңызды ескереді.';
 
   @override
   String notesSaved(String date) {

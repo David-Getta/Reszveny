@@ -1117,7 +1117,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Waxaa lagu kaydiyaa qalabkan oo keliya. Wadarta waxaa lagu beddelaa sicirrada tixraaca ECB; qiimayaashu way dib u dhici karaan.';
+      'Waxaa lagu kaydiyaa qalabkan, iyo akoonkaaga haddii aad gashay. Wadarta waxaa lagu beddelaa sicirrada tixraaca ECB; qiimayaashu way dib u dhici karaan.';
 
   @override
   String get addToPortfolio => 'Ku dar portfoliyo';
@@ -1727,7 +1727,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Waxaa lagu kaydiyaa qalabkan oo keliya. Falanqaynta AI waxay tixgelisaa qoraalladaada.';
+      'Waxaa lagu kaydiyaa qalabkan, iyo akoonkaaga haddii aad gashay. Falanqaynta AI waxay tixgelisaa qoraalladaada.';
 
   @override
   String notesSaved(String date) {

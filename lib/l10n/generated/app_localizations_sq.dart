@@ -1117,7 +1117,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Ruhet vetëm në këtë pajisje. Totalet konvertohen me kurset e referencës së BQE-së; çmimet mund të vonohen.';
+      'Ruhet në këtë pajisje dhe, nëse keni hyrë, në llogarinë tuaj. Totalet konvertohen me kurset e referencës së BQE-së; çmimet mund të vonohen.';
 
   @override
   String get addToPortfolio => 'Shto në portofol';
@@ -1725,7 +1725,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Ruhet vetëm në këtë pajisje. Analiza me AI merr parasysh shënimet tuaja.';
+      'Ruhet në këtë pajisje dhe, nëse keni hyrë, në llogarinë tuaj. Analiza me AI merr parasysh shënimet tuaja.';
 
   @override
   String notesSaved(String date) {

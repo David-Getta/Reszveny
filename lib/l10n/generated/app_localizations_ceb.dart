@@ -1117,7 +1117,7 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Niini lang nga device gitipigan. Ang mga total gi-convert gamit ang reference rate sa ECB; ang mga presyo mahimong nalangan.';
+      'Gitipigan niini nga device, ug sa imong account kon naka-sign in ka. Ang mga total gi-convert gamit ang reference rate sa ECB; ang mga presyo mahimong nalangan.';
 
   @override
   String get addToPortfolio => 'Idugang sa portfolio';
@@ -1729,7 +1729,7 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Niini lang nga device gitipigan. Gikonsiderar sa pagtuki sa AI ang imong mga nota.';
+      'Gitipigan niini nga device, ug sa imong account kon naka-sign in ka. Gikonsiderar sa pagtuki sa AI ang imong mga nota.';
 
   @override
   String notesSaved(String date) {

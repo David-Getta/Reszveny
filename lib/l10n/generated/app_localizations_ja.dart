@@ -1074,7 +1074,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'この端末にのみ保存されます。合計はECBの参照レートで換算され、株価は遅延している場合があります。';
+      'この端末と、サインインしている場合はアカウントに保存されます。合計はECBの参照レートで換算され、株価は遅延している場合があります。';
 
   @override
   String get addToPortfolio => 'ポートフォリオに追加';
@@ -1666,7 +1666,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get notesHint => '購入した理由、注目している点、売却する条件は？';
 
   @override
-  String get notesInfo => 'この端末にのみ保存されます。AI 分析はメモの内容を考慮します。';
+  String get notesInfo => 'この端末と、サインインしている場合はアカウントに保存されます。AI 分析はメモの内容を考慮します。';
 
   @override
   String notesSaved(String date) {

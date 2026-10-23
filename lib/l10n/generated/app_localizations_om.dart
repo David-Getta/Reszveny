@@ -1116,7 +1116,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Meeshaa kana qofa irratti kuufama. Waliigalli sharafa wabii ECB tiin jijjiirama; gatiin tursiifamuu danda\'a.';
+      'Meeshaa kana irratti, yoo seente immoo herrega kee keessatti kuufama. Waliigalli sharafa wabii ECB tiin jijjiirama; gatiin tursiifamuu danda\'a.';
 
   @override
   String get addToPortfolio => 'Poortfooliyootti dabali';
@@ -1727,7 +1727,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Meeshaa kana qofa irratti kuufama. Xiinxalli AI yaadannoo kee tilmaama keessa galcha.';
+      'Meeshaa kana irratti, yoo seente immoo herrega kee keessatti kuufama. Xiinxalli AI yaadannoo kee tilmaama keessa galcha.';
 
   @override
   String notesSaved(String date) {

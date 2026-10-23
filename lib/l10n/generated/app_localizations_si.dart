@@ -1111,7 +1111,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'මෙම උපාංගයේ පමණක් ගබඩා වේ. මුළු අගයන් ECB යොමු අනුපාත අනුව පරිවර්තනය කෙරේ; මිල ප්‍රමාද විය හැක.';
+      'මෙම උපාංගයේ සහ ඔබ පුරනය වී ඇත්නම් ඔබේ ගිණුමේ ගබඩා වේ. මුළු අගයන් ECB යොමු අනුපාත අනුව පරිවර්තනය කෙරේ; මිල ප්‍රමාද විය හැක.';
 
   @override
   String get addToPortfolio => 'කළඹට එක් කරන්න';
@@ -1718,7 +1718,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'මෙම උපාංගයේ පමණක් ගබඩා වේ. AI විශ්ලේෂණය ඔබේ සටහන් සැලකිල්ලට ගනී.';
+      'මෙම උපාංගයේ සහ ඔබ පුරනය වී ඇත්නම් ඔබේ ගිණුමේ ගබඩා වේ. AI විශ්ලේෂණය ඔබේ සටහන් සැලකිල්ලට ගනී.';
 
   @override
   String notesSaved(String date) {

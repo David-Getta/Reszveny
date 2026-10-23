@@ -1117,7 +1117,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Csak ezen a készüléken tárolódik. Az összesítés ECB-árfolyamon számol; az árak késhetnek.';
+      'Ezen a készüléken marad, és a fiókodban, ha be vagy jelentkezve. Az összesítés ECB-árfolyamon számol; az árak késhetnek.';
 
   @override
   String get addToPortfolio => 'Hozzáadás a portfólióhoz';
@@ -1723,7 +1723,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Csak ezen a készüléken tárolódik. Az AI-elemzés figyelembe veszi a jegyzeteidet.';
+      'Ezen a készüléken marad, és a fiókodban, ha be vagy jelentkezve. Az AI-elemzés figyelembe veszi a jegyzeteidet.';
 
   @override
   String notesSaved(String date) {

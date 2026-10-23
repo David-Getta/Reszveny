@@ -1106,7 +1106,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'صرف هن ڊوائيس تي محفوظ ٿئي ٿو. مجموعا ECB جي حوالي واري شرح تي تبديل ڪيا وڃن ٿا؛ قيمتن ۾ دير ٿي سگهي ٿي.';
+      'هن ڊوائيس تي، ۽ سائن ان هجڻ تي توهان جي اڪائونٽ ۾ محفوظ ٿئي ٿو. مجموعا ECB جي حوالي واري شرح تي تبديل ڪيا وڃن ٿا؛ قيمتن ۾ دير ٿي سگهي ٿي.';
 
   @override
   String get addToPortfolio => 'پورٽ فوليو ۾ شامل ڪريو';
@@ -1713,7 +1713,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'صرف هن ڊوائيس تي محفوظ ٿئي ٿو. AI تجزيو توهان جا نوٽس نظر ۾ رکي ٿو.';
+      'هن ڊوائيس تي، ۽ سائن ان هجڻ تي توهان جي اڪائونٽ ۾ محفوظ ٿئي ٿو. AI تجزيو توهان جا نوٽس نظر ۾ رکي ٿو.';
 
   @override
   String notesSaved(String date) {

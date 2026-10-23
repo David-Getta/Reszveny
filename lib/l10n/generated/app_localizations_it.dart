@@ -1113,7 +1113,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Salvato solo su questo dispositivo. I totali sono convertiti ai cambi di riferimento BCE; i prezzi possono essere ritardati.';
+      'Salvato su questo dispositivo e, se hai effettuato l’accesso, nel tuo account. I totali sono convertiti ai cambi di riferimento BCE; i prezzi possono essere ritardati.';
 
   @override
   String get addToPortfolio => 'Aggiungi al portafoglio';
@@ -1724,7 +1724,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Salvato solo su questo dispositivo. L’analisi IA tiene conto delle tue note.';
+      'Salvato su questo dispositivo e, se hai effettuato l’accesso, nel tuo account. L’analisi IA tiene conto delle tue note.';
 
   @override
   String notesSaved(String date) {

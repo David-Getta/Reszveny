@@ -1115,7 +1115,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Slegs op hierdie toestel gestoor. Totale word teen ESB-verwysingskoerse omgeskakel; pryse kan vertraag wees.';
+      'Op hierdie toestel gestoor, en in jou rekening as jy aangemeld is. Totale word teen ESB-verwysingskoerse omgeskakel; pryse kan vertraag wees.';
 
   @override
   String get addToPortfolio => 'Voeg by portefeulje';
@@ -1723,7 +1723,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Slegs op hierdie toestel gestoor. Die AI-ontleding neem jou notas in ag.';
+      'Op hierdie toestel gestoor, en in jou rekening as jy aangemeld is. Die AI-ontleding neem jou notas in ag.';
 
   @override
   String notesSaved(String date) {

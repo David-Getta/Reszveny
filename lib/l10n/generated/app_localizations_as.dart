@@ -1111,7 +1111,7 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'কেৱল এই ডিভাইচতে সংৰক্ষিত। মুঠ হিচাপ ECBৰ ৰেফাৰেন্স হাৰত ৰূপান্তৰ কৰা হয়; দাম পলমকৈ আহিব পাৰে।';
+      'এই ডিভাইচত আৰু ছাইন ইন কৰিলে আপোনাৰ একাউণ্টত সংৰক্ষিত। মুঠ হিচাপ ECBৰ ৰেফাৰেন্স হাৰত ৰূপান্তৰ কৰা হয়; দাম পলমকৈ আহিব পাৰে।';
 
   @override
   String get addToPortfolio => 'প\'ৰ্টফ\'লিঅ\'ত যোগ কৰক';
@@ -1719,7 +1719,7 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'কেৱল এই ডিভাইচতে সংৰক্ষিত। AI বিশ্লেষণে আপোনাৰ টোকাসমূহ বিবেচনা কৰে।';
+      'এই ডিভাইচত আৰু ছাইন ইন কৰিলে আপোনাৰ একাউণ্টত সংৰক্ষিত। AI বিশ্লেষণে আপোনাৰ টোকাসমূহ বিবেচনা কৰে।';
 
   @override
   String notesSaved(String date) {

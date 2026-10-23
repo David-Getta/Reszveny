@@ -1111,7 +1111,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'A marala nin minɛn in dɔrɔn de kan. Hakɛ bɛɛ lajɛlenw falenna ni BCE ka wari falen hakɛw ye; sɔngɔw bɛ se ka sumaya.';
+      'A marala nin minɛn in kan, ani i ka kɔnti la ni i donna. Hakɛ bɛɛ lajɛlenw falenna ni BCE ka wari falen hakɛw ye; sɔngɔw bɛ se ka sumaya.';
 
   @override
   String get addToPortfolio => 'Fara aksiyɔn kɛsu kan';
@@ -1717,7 +1717,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'A marala nin minɛn in dɔrɔn de kan. AI sɛgɛsɛgɛli bɛ i ka sɛbɛnniw jateminɛ.';
+      'A marala nin minɛn in kan, ani i ka kɔnti la ni i donna. AI sɛgɛsɛgɛli bɛ i ka sɛbɛnniw jateminɛ.';
 
   @override
   String notesSaved(String date) {

@@ -1114,7 +1114,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Tenê li ser vê amûrê tê tomarkirin. Kom bi rêjeyên referansê yên ECB tên guhertin; dibe ku biha dereng bin.';
+      'Li ser vê amûrê û, heke tu têketî bî, di hesabê te de tê tomarkirin. Kom bi rêjeyên referansê yên ECB tên guhertin; dibe ku biha dereng bin.';
 
   @override
   String get addToPortfolio => 'Li portfolyoyê zêde bike';
@@ -1722,7 +1722,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Tenê li ser vê amûrê tê tomarkirin. Analîza AI notên te li ber çavan digire.';
+      'Li ser vê amûrê û, heke tu têketî bî, di hesabê te de tê tomarkirin. Analîza AI notên te li ber çavan digire.';
 
   @override
   String notesSaved(String date) {

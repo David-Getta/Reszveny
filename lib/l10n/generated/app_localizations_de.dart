@@ -1121,7 +1121,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Nur auf diesem Gerät gespeichert. Summen werden zu EZB-Referenzkursen umgerechnet; Kurse können verzögert sein.';
+      'Auf diesem Gerät gespeichert und in deinem Konto, wenn du angemeldet bist. Summen werden zu EZB-Referenzkursen umgerechnet; Kurse können verzögert sein.';
 
   @override
   String get addToPortfolio => 'Zum Portfolio hinzufügen';
@@ -1731,7 +1731,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Nur auf diesem Gerät gespeichert. Die KI-Analyse berücksichtigt deine Notizen.';
+      'Auf diesem Gerät gespeichert und in deinem Konto, wenn du angemeldet bist. Die KI-Analyse berücksichtigt deine Notizen.';
 
   @override
   String notesSaved(String date) {

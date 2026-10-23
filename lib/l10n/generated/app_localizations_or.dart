@@ -1108,7 +1108,7 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'କେବଳ ଏହି ଡିଭାଇସରେ ସଞ୍ଚିତ। ମୋଟ ହିସାବ ECB ରେଫରେନ୍ସ ହାରରେ ରୂପାନ୍ତରିତ ହୁଏ; ଦର ବିଳମ୍ବିତ ହୋଇପାରେ।';
+      'ଏହି ଡିଭାଇସରେ ଏବଂ ସାଇନ ଇନ କରିଥିଲେ ଆପଣଙ୍କ ଆକାଉଣ୍ଟରେ ସଞ୍ଚିତ। ମୋଟ ହିସାବ ECB ରେଫରେନ୍ସ ହାରରେ ରୂପାନ୍ତରିତ ହୁଏ; ଦର ବିଳମ୍ବିତ ହୋଇପାରେ।';
 
   @override
   String get addToPortfolio => 'ପୋର୍ଟଫୋଲିଓରେ ଯୋଡ଼ନ୍ତୁ';
@@ -1716,7 +1716,7 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'କେବଳ ଏହି ଡିଭାଇସରେ ସଞ୍ଚିତ। AI ବିଶ୍ଳେଷଣ ଆପଣଙ୍କ ନୋଟ୍‌କୁ ବିଚାରକୁ ନିଏ।';
+      'ଏହି ଡିଭାଇସରେ ଏବଂ ସାଇନ ଇନ କରିଥିଲେ ଆପଣଙ୍କ ଆକାଉଣ୍ଟରେ ସଞ୍ଚିତ। AI ବିଶ୍ଳେଷଣ ଆପଣଙ୍କ ନୋଟ୍‌କୁ ବିଚାରକୁ ନିଏ।';
 
   @override
   String notesSaved(String date) {

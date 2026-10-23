@@ -1111,7 +1111,7 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'यो डिभाइसमा मात्र सुरक्षित हुन्छ। कुल योग ECB को सन्दर्भ दरमा रूपान्तरण गरिन्छ; मूल्य ढिलो हुन सक्छ।';
+      'यो डिभाइसमा, र साइन इन गर्नुभएको छ भने तपाईंको खातामा पनि सुरक्षित हुन्छ। कुल योग ECB को सन्दर्भ दरमा रूपान्तरण गरिन्छ; मूल्य ढिलो हुन सक्छ।';
 
   @override
   String get addToPortfolio => 'पोर्टफोलियोमा थप्नुहोस्';
@@ -1721,7 +1721,7 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'यो डिभाइसमा मात्र सुरक्षित हुन्छ। AI विश्लेषणले तपाईंका टिपोटहरूलाई ध्यानमा राख्छ।';
+      'यो डिभाइसमा, र साइन इन गर्नुभएको छ भने तपाईंको खातामा पनि सुरक्षित हुन्छ। AI विश्लेषणले तपाईंका टिपोटहरूलाई ध्यानमा राख्छ।';
 
   @override
   String notesSaved(String date) {

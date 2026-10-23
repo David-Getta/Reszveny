@@ -1116,7 +1116,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ. ಒಟ್ಟು ಮೊತ್ತಗಳನ್ನು ECB ಉಲ್ಲೇಖ ದರಗಳಲ್ಲಿ ಪರಿವರ್ತಿಸಲಾಗುತ್ತದೆ; ಬೆಲೆಗಳು ವಿಳಂಬವಾಗಿರಬಹುದು.';
+      'ಈ ಸಾಧನದಲ್ಲಿ ಮತ್ತು ನೀವು ಸೈನ್ ಇನ್ ಆಗಿದ್ದರೆ ನಿಮ್ಮ ಖಾತೆಯಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ. ಒಟ್ಟು ಮೊತ್ತಗಳನ್ನು ECB ಉಲ್ಲೇಖ ದರಗಳಲ್ಲಿ ಪರಿವರ್ತಿಸಲಾಗುತ್ತದೆ; ಬೆಲೆಗಳು ವಿಳಂಬವಾಗಿರಬಹುದು.';
 
   @override
   String get addToPortfolio => 'ಪೋರ್ಟ್‌ಫೋಲಿಯೊಗೆ ಸೇರಿಸಿ';
@@ -1724,7 +1724,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ. AI ವಿಶ್ಲೇಷಣೆ ನಿಮ್ಮ ಟಿಪ್ಪಣಿಗಳನ್ನು ಪರಿಗಣಿಸುತ್ತದೆ.';
+      'ಈ ಸಾಧನದಲ್ಲಿ ಮತ್ತು ನೀವು ಸೈನ್ ಇನ್ ಆಗಿದ್ದರೆ ನಿಮ್ಮ ಖಾತೆಯಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ. AI ವಿಶ್ಲೇಷಣೆ ನಿಮ್ಮ ಟಿಪ್ಪಣಿಗಳನ್ನು ಪರಿಗಣಿಸುತ್ತದೆ.';
 
   @override
   String notesSaved(String date) {

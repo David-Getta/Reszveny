@@ -1151,7 +1151,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Хранится только на этом устройстве. Итоги пересчитываются по справочным курсам ЕЦБ; цены могут быть с задержкой.';
+      'Хранится на этом устройстве, а если вы вошли — и в вашем аккаунте. Итоги пересчитываются по справочным курсам ЕЦБ; цены могут быть с задержкой.';
 
   @override
   String get addToPortfolio => 'Добавить в портфель';
@@ -1771,7 +1771,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Хранится только на этом устройстве. ИИ-анализ учитывает ваши заметки.';
+      'Хранится на этом устройстве, а если вы вошли — и в вашем аккаунте. ИИ-анализ учитывает ваши заметки.';
 
   @override
   String notesSaved(String date) {

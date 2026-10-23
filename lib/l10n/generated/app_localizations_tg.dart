@@ -1113,7 +1113,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Танҳо дар ҳамин дастгоҳ нигоҳ дошта мешавад. Ҷамъбастҳо бо қурбҳои истинодии ECB табдил дода мешаванд; нархҳо метавонанд бо таъхир бошанд.';
+      'Дар ҳамин дастгоҳ ва, агар ворид шуда бошед, дар ҳисоби шумо нигоҳ дошта мешавад. Ҷамъбастҳо бо қурбҳои истинодии ECB табдил дода мешаванд; нархҳо метавонанд бо таъхир бошанд.';
 
   @override
   String get addToPortfolio => 'Илова ба портфел';
@@ -1721,7 +1721,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Танҳо дар ҳамин дастгоҳ нигоҳ дошта мешавад. Таҳлили AI қайдҳои шуморо ба назар мегирад.';
+      'Дар ҳамин дастгоҳ ва, агар ворид шуда бошед, дар ҳисоби шумо нигоҳ дошта мешавад. Таҳлили AI қайдҳои шуморо ба назар мегирад.';
 
   @override
   String notesSaved(String date) {

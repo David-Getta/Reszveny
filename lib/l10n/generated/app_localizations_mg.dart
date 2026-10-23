@@ -1122,7 +1122,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Voatahiry amin\'ity fitaovana ity ihany. Novaina araka ny sandam-bola fanondroan\'ny BCE ny fitambarany; mety ho tara ny vidiny.';
+      'Voatahiry amin\'ity fitaovana ity, ary ao amin\'ny kaontinao raha tafiditra ianao. Novaina araka ny sandam-bola fanondroan\'ny BCE ny fitambarany; mety ho tara ny vidiny.';
 
   @override
   String get addToPortfolio => 'Ampio amin\'ny kitapom-bola';
@@ -1733,7 +1733,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Voatahiry amin\'ity fitaovana ity ihany. Raisin\'ny fandalinana AI an-tsaina ny naotinao.';
+      'Voatahiry amin\'ity fitaovana ity, ary ao amin\'ny kaontinao raha tafiditra ianao. Raisin\'ny fandalinana AI an-tsaina ny naotinao.';
 
   @override
   String notesSaved(String date) {

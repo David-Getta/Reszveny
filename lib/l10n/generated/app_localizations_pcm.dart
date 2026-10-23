@@ -1112,7 +1112,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Na only dis device e dey. We convert di totals wit ECB reference rate; price fit late.';
+      'E dey for dis device, and for your account if you don sign in. We convert di totals wit ECB reference rate; price fit late.';
 
   @override
   String get addToPortfolio => 'Put am for portfolio';
@@ -1719,7 +1719,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Na only dis device e dey. Di AI analysis dey consider your notes.';
+      'E dey for dis device, and for your account if you don sign in. Di AI analysis dey consider your notes.';
 
   @override
   String notesSaved(String date) {

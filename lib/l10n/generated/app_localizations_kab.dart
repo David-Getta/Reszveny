@@ -1110,7 +1110,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Yettwasekles kan deg yibenk-a. Imḍanen ttwabeddlen s wazalen n tmuɣli n BCE; ssuma tezmer ad teɛṭel.';
+      'Yettwasekles deg yibenk-a, akked deg umiḍan-ik ma tekcmeḍ. Imḍanen ttwabeddlen s wazalen n tmuɣli n BCE; ssuma tezmer ad teɛṭel.';
 
   @override
   String get addToPortfolio => 'Rnu ɣer uqrab';
@@ -1718,7 +1718,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Yettwasekles kan deg yibenk-a. Tasleḍt s AI tettak azal i tezmilin-ik.';
+      'Yettwasekles deg yibenk-a, akked deg umiḍan-ik ma tekcmeḍ. Tasleḍt s AI tettak azal i tezmilin-ik.';
 
   @override
   String notesSaved(String date) {

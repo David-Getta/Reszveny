@@ -1106,7 +1106,7 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'केवल एही डिवाइस पर सहेजल जाइत अछि। कुल योग ECB क संदर्भ दर पर बदलल जाइत अछि; दाममे देरी भऽ सकैत अछि।';
+      'एही डिवाइस पर, आ साइन इन रहला पर अहाँक खातामे सेहो सहेजल जाइत अछि। कुल योग ECB क संदर्भ दर पर बदलल जाइत अछि; दाममे देरी भऽ सकैत अछि।';
 
   @override
   String get addToPortfolio => 'पोर्टफ़ोलियोमे जोड़ू';
@@ -1714,7 +1714,7 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'केवल एही डिवाइस पर सहेजल जाइत अछि। AI विश्लेषण अहाँक नोटकेँ ध्यानमे रखैत अछि।';
+      'एही डिवाइस पर, आ साइन इन रहला पर अहाँक खातामे सेहो सहेजल जाइत अछि। AI विश्लेषण अहाँक नोटकेँ ध्यानमे रखैत अछि।';
 
   @override
   String notesSaved(String date) {

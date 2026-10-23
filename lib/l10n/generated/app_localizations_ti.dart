@@ -1088,7 +1088,7 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'ኣብዚ መሳርሒ ጥራይ ይዕቀብ። ድምራት ብመወከሲ መጠናት ECB ይቕየሩ፤ ዋጋታት ክደናጎዩ ይኽእሉ።';
+      'ኣብዚ መሳርሒን፣ እንተ ኣቲኹም ድማ ኣብ ሕሳብኩምን ይዕቀብ። ድምራት ብመወከሲ መጠናት ECB ይቕየሩ፤ ዋጋታት ክደናጎዩ ይኽእሉ።';
 
   @override
   String get addToPortfolio => 'ናብ ፖርትፎሊዮ ወስኽ';
@@ -1687,7 +1687,8 @@ class AppLocalizationsTi extends AppLocalizations {
       'ስለምንታይ ገዚእኩምዎ፣ እንታይ ትከታተሉ ኣለኹም፣ እንታይ እንተ ኣጋጢሙ ክትሸጡ ኢኹም?';
 
   @override
-  String get notesInfo => 'ኣብዚ መሳርሒ ጥራይ ይዕቀብ። ትንተና AI ንማስታወሻታትኩም ኣብ ግምት የእትዎ።';
+  String get notesInfo =>
+      'ኣብዚ መሳርሒን፣ እንተ ኣቲኹም ድማ ኣብ ሕሳብኩምን ይዕቀብ። ትንተና AI ንማስታወሻታትኩም ኣብ ግምት የእትዎ።';
 
   @override
   String notesSaved(String date) {

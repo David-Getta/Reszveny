@@ -1136,7 +1136,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Salvat doar pe acest dispozitiv. Totalurile sunt convertite la cursurile de referință BCE; prețurile pot fi întârziate.';
+      'Salvat pe acest dispozitiv și, dacă ești conectat, în contul tău. Totalurile sunt convertite la cursurile de referință BCE; prețurile pot fi întârziate.';
 
   @override
   String get addToPortfolio => 'Adaugă în portofoliu';
@@ -1750,7 +1750,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Salvat doar pe acest dispozitiv. Analiza AI ține cont de notițele tale.';
+      'Salvat pe acest dispozitiv și, dacă ești conectat, în contul tău. Analiza AI ține cont de notițele tale.';
 
   @override
   String notesSaved(String date) {

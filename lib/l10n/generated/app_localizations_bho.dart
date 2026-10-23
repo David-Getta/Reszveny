@@ -1107,7 +1107,7 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'खाली एही डिवाइस पर सहेजल जाला। कुल जोड़ ECB के संदर्भ दर पर बदलल जाला; दाम में देरी हो सकेला।';
+      'एही डिवाइस पर, आ साइन इन रहला पर राउर खाता में भी सहेजल जाला। कुल जोड़ ECB के संदर्भ दर पर बदलल जाला; दाम में देरी हो सकेला।';
 
   @override
   String get addToPortfolio => 'पोर्टफ़ोलियो में जोड़ीं';
@@ -1715,7 +1715,7 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'खाली एही डिवाइस पर सहेजल जाला। AI विश्लेषण रउआ नोट के ध्यान में राखेला।';
+      'एही डिवाइस पर, आ साइन इन रहला पर राउर खाता में भी सहेजल जाला। AI विश्लेषण रउआ नोट के ध्यान में राखेला।';
 
   @override
   String notesSaved(String date) {

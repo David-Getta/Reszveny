@@ -1108,7 +1108,7 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Бу җайланмада гына саклана. Гомуми суммалар ECB белешмә курслары буенча күчерелә; бәяләр соңга калырга мөмкин.';
+      'Бу җайланмада, ә кергән булсагыз, аккаунтыгызда да саклана. Гомуми суммалар ECB белешмә курслары буенча күчерелә; бәяләр соңга калырга мөмкин.';
 
   @override
   String get addToPortfolio => 'Портфельгә өстәү';
@@ -1715,7 +1715,7 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Бу җайланмада гына саклана. AI анализы язмаларыгызны исәпкә ала.';
+      'Бу җайланмада, ә кергән булсагыз, аккаунтыгызда да саклана. AI анализы язмаларыгызны исәпкә ала.';
 
   @override
   String notesSaved(String date) {

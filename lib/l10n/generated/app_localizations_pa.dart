@@ -1108,7 +1108,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'ਸਿਰਫ਼ ਇਸੇ ਡਿਵਾਈਸ ’ਤੇ ਸੁਰੱਖਿਅਤ ਹੈ। ਕੁੱਲ ਜੋੜ ECB ਦੀਆਂ ਸੰਦਰਭ ਦਰਾਂ ’ਤੇ ਬਦਲੇ ਜਾਂਦੇ ਹਨ; ਕੀਮਤਾਂ ਦੇਰੀ ਨਾਲ ਹੋ ਸਕਦੀਆਂ ਹਨ।';
+      'ਇਸ ਡਿਵਾਈਸ ’ਤੇ, ਅਤੇ ਸਾਈਨ ਇਨ ਹੋਣ ’ਤੇ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਸੁਰੱਖਿਅਤ ਹੈ। ਕੁੱਲ ਜੋੜ ECB ਦੀਆਂ ਸੰਦਰਭ ਦਰਾਂ ’ਤੇ ਬਦਲੇ ਜਾਂਦੇ ਹਨ; ਕੀਮਤਾਂ ਦੇਰੀ ਨਾਲ ਹੋ ਸਕਦੀਆਂ ਹਨ।';
 
   @override
   String get addToPortfolio => 'ਪੋਰਟਫ਼ੋਲੀਓ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ';
@@ -1717,7 +1717,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'ਸਿਰਫ਼ ਇਸੇ ਡਿਵਾਈਸ ’ਤੇ ਸੁਰੱਖਿਅਤ ਹੈ। AI ਵਿਸ਼ਲੇਸ਼ਣ ਤੁਹਾਡੇ ਨੋਟਾਂ ਨੂੰ ਧਿਆਨ ਵਿੱਚ ਰੱਖਦਾ ਹੈ।';
+      'ਇਸ ਡਿਵਾਈਸ ’ਤੇ, ਅਤੇ ਸਾਈਨ ਇਨ ਹੋਣ ’ਤੇ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਸੁਰੱਖਿਅਤ ਹੈ। AI ਵਿਸ਼ਲੇਸ਼ਣ ਤੁਹਾਡੇ ਨੋਟਾਂ ਨੂੰ ਧਿਆਨ ਵਿੱਚ ਰੱਖਦਾ ਹੈ।';
 
   @override
   String notesSaved(String date) {

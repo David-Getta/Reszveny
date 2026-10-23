@@ -1109,7 +1109,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'فقط روی همین دستگاه ذخیره می‌شود. جمع‌ها با نرخ‌های مرجع بانک مرکزی اروپا تبدیل می‌شوند؛ قیمت‌ها ممکن است با تأخیر باشند.';
+      'روی همین دستگاه و، اگر وارد شده باشید، در حساب کاربری‌تان ذخیره می‌شود. جمع‌ها با نرخ‌های مرجع بانک مرکزی اروپا تبدیل می‌شوند؛ قیمت‌ها ممکن است با تأخیر باشند.';
 
   @override
   String get addToPortfolio => 'افزودن به سبد';
@@ -1717,7 +1717,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'فقط روی همین دستگاه ذخیره می‌شود. تحلیل هوش مصنوعی یادداشت‌های شما را در نظر می‌گیرد.';
+      'روی همین دستگاه و، اگر وارد شده باشید، در حساب کاربری‌تان ذخیره می‌شود. تحلیل هوش مصنوعی یادداشت‌های شما را در نظر می‌گیرد.';
 
   @override
   String notesSaved(String date) {

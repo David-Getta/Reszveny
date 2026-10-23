@@ -1116,7 +1116,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Ebombami kaka na esaleli oyo. Mitango mobimba ebongolami na ba-taux ya référence ya BCE; ntalo ekoki koya na retard.';
+      'Ebombami na esaleli oyo, mpe na compte na yo soki okɔti. Mitango mobimba ebongolami na ba-taux ya référence ya BCE; ntalo ekoki koya na retard.';
 
   @override
   String get addToPortfolio => 'Bakisa na portefeuille';
@@ -1727,7 +1727,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Ebombami kaka na esaleli oyo. Analyse ya AI ezwaka ba note na yo na motuya.';
+      'Ebombami na esaleli oyo, mpe na compte na yo soki okɔti. Analyse ya AI ezwaka ba note na yo na motuya.';
 
   @override
   String notesSaved(String date) {

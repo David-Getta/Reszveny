@@ -1111,7 +1111,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'Stored only on this device. Totals are converted at ECB reference rates; prices may be delayed.';
+      'Kept on this device, and in your account if you\'re signed in. Totals are converted at ECB reference rates; prices may be delayed.';
 
   @override
   String get addToPortfolio => 'Add to portfolio';
@@ -1718,7 +1718,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'Stored only on this device. The AI analysis takes your notes into account.';
+      'Kept on this device, and in your account if you\'re signed in. The AI analysis takes your notes into account.';
 
   @override
   String notesSaved(String date) {

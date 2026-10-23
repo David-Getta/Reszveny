@@ -1103,7 +1103,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get portfolioLocalNote =>
-      'រក្សាទុកតែនៅលើឧបករណ៍នេះប៉ុណ្ណោះ។ ចំនួនសរុបត្រូវបានប្ដូរតាមអត្រាយោងរបស់ ECB ហើយតម្លៃអាចយឺត។';
+      'រក្សាទុកនៅលើឧបករណ៍នេះ និងក្នុងគណនីរបស់អ្នក ប្រសិនបើអ្នកបានចូលគណនី។ ចំនួនសរុបត្រូវបានប្ដូរតាមអត្រាយោងរបស់ ECB ហើយតម្លៃអាចយឺត។';
 
   @override
   String get addToPortfolio => 'បន្ថែមទៅផលប័ត្រ';
@@ -1704,7 +1704,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get notesInfo =>
-      'រក្សាទុកតែនៅលើឧបករណ៍នេះប៉ុណ្ណោះ។ ការវិភាគ AI គិតគូរពីកំណត់ចំណាំរបស់អ្នក។';
+      'រក្សាទុកនៅលើឧបករណ៍នេះ និងក្នុងគណនីរបស់អ្នក ប្រសិនបើអ្នកបានចូលគណនី។ ការវិភាគ AI គិតគូរពីកំណត់ចំណាំរបស់អ្នក។';
 
   @override
   String notesSaved(String date) {
