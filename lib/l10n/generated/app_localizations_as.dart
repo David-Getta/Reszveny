@@ -1897,7 +1897,7 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212 আৰু Interactive Brokers ৰ এক্সপৰ্টো বিক্ৰীসহ চিনাক্ত কৰা হয়; লভ্যাংশ আৰু জমা এৰি দিয়া হয়।';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity আৰু Robinhood ৰ এক্সপৰ্টো বিক্ৰী আৰু লভ্যাংশসহ (উৎসত কটা কৰ বাদ দি) চিনাক্ত কৰা হয়; জমা এৰি দিয়া হয়।';
 
   @override
   String get portfolioImportFile => 'এটা ফাইল বাছক';

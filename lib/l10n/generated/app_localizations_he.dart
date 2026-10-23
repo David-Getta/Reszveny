@@ -1891,7 +1891,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'גם קובצי ייצוא מ-Revolut, Trading 212 ו-Interactive Brokers מזוהים, כולל מכירות; דיבידנדים והפקדות מדולגים.';
+      'גם קובצי ייצוא מ-Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ו-Robinhood מזוהים, כולל מכירות ודיבידנדים (בניכוי מס במקור); הפקדות מדולגות.';
 
   @override
   String get portfolioImportFile => 'בחירת קובץ';

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.209)
+# Változásjegyzék (0.2.130 → 0.2.210)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -98,6 +98,10 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   újrabefektetett osztalék darabjai, kapott osztalékok a külön soros forrásadóval csökkentve; a perjeles dátum
   sorrendjét (hónap/nap vagy nap/hónap) a fájl dönti el, ennek híján az amerikai fejléc, végül az amerikai nyelvi
   beállítás.
+- **DEGIRO-export** (Transactions.csv): ticker helyett ISIN van benne – a tickert az import a keresővel oldja fel (nem
+  dolláros kereskedésnél a helyi tőzsde tickere, pl. ASML.AS); az ár melletti pénznem, a kötőjeles dátum
+  („14-03-2025”), az alapdevizában fizetett díj az árfolyammal átváltva. Az import-dialógus szövege mind a hét
+  brókert felsorolja, 120 nyelven.
 
 ## Megosztás
 

@@ -1898,7 +1898,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Myös palveluiden Revolut, Trading 212 ja Interactive Brokers viennit tunnistetaan myynteineen; osingot ja talletukset ohitetaan.';
+      'Myös palveluiden Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ja Robinhood viennit tunnistetaan myynteineen ja osinkoineen (lähdeveron jälkeen); talletukset ohitetaan.';
 
   @override
   String get portfolioImportFile => 'Valitse tiedosto';

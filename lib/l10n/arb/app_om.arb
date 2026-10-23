@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Gurgurtaan jalqaba bittaawwan kee warra durii waliin walsimsiifama (FIFO), gatii jijjiirraa har'aatiin jijjiirama. Gabaasa gibiraa keetiif, ibsa daldalaa (broker) kee fayyadami.",
   "staleNewResults": "Xiinxala kanaa booda bu'aan kurmaanaa haaraan maxxanfameera ({symbol}, {date}).",
   "newResultsBadge": "Bu'aa haaraa",
-  "portfolioImportBrokers": "Ergiinsi Revolut, Trading 212 fi Interactive Brokers irraa dhufan gurgurtaa wajjin ni beekamu; qooda bu'aa fi kuusaan ni darbamu.",
+  "portfolioImportBrokers": "Ergiinsi Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity fi Robinhood irraa dhufan gurgurtaa fi qooda bu'aa (erga gibirri qabame hir'atee booda) wajjin ni beekamu; kuusaan ni darbamu.",
   "portfolioImportFile": "Faayilii filadhu",
   "offlineBanner": "Walqunnamtiin hin jiru – odeeffannoon dhuma irratti olkaa'ame agarsiifamaa jira ({time}).",
   "glossMarketCap": "Gatii dhaabbatichi guutummaatti gabaa aksiyoonaa irratti qabu: gatii aksiyoonaa × baay'ina aksiyoonotaa.",

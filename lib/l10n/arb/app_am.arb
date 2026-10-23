@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "ሽያጮች በመጀመሪያ ከቀደሙት ግዢዎችዎ ጋር ይዛመዳሉ (FIFO)፣ በዛሬው የምንዛሪ ተመን ይቀየራሉ። ለግብር ማስታወቂያዎ የደላላዎን መግለጫ ይጠቀሙ።",
   "staleNewResults": "ከዚህ ትንተና በኋላ አዲስ የሩብ ዓመት ውጤቶች ታትመዋል ({symbol}፣ {date})።",
   "newResultsBadge": "አዲስ ውጤቶች",
-  "portfolioImportBrokers": "ከRevolut፣ Trading 212 እና Interactive Brokers የተላኩ ፋይሎችም ከሽያጮች ጋር ይታወቃሉ፤ የትርፍ ድርሻ እና ተቀማጭ ገንዘብ ይዘለላሉ።",
+  "portfolioImportBrokers": "ከRevolut፣ Trading 212፣ Interactive Brokers፣ DEGIRO፣ Schwab፣ Fidelity እና Robinhood የተላኩ ፋይሎችም ከሽያጮች እና ከትርፍ ድርሻ (ተቀናሽ ግብር ከተቀነሰ በኋላ) ጋር ይታወቃሉ፤ ተቀማጭ ገንዘብ ይዘለላል።",
   "portfolioImportFile": "ፋይል ይምረጡ",
   "offlineBanner": "ግንኙነት የለም – ለመጨረሻ ጊዜ የተቀመጠው መረጃ እየታየ ነው ({time})።",
   "glossMarketCap": "መላው ኩባንያ በአክሲዮን ገበያ ላይ ያለው ዋጋ፦ የአክሲዮን ዋጋ × የአክሲዮኖች ብዛት።",

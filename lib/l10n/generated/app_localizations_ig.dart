@@ -1890,7 +1890,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'A na-amatakwa mbupụ sitere na Revolut, Trading 212 na Interactive Brokers, ya na ihe e rere; a na-awụfe dividend na ego e tinyere.';
+      'A na-amatakwa mbupụ sitere na Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity na Robinhood, ya na ihe e rere na dividend (mgbe e wepụrụ ụtụ isi e jidere); a na-awụfe ego e tinyere.';
 
   @override
   String get portfolioImportFile => 'Họrọ faịlụ';

@@ -1901,7 +1901,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Ana kuma gane fitarwa daga Revolut, Trading 212 da Interactive Brokers, tare da sayarwa; ana tsallake rabon riba da ajiya.';
+      'Ana kuma gane fitarwa daga Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity da Robinhood, tare da sayarwa da rabon riba (bayan cire harajin da aka riƙe); ana tsallake ajiya.';
 
   @override
   String get portfolioImportFile => 'Zaɓi fayil';

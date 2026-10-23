@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Penjualan dicocogkeun heula jeung pameulian anjeun nu pangkolotna (FIFO), dirobih nganggo kurs dinten ieu. Pikeun laporan pajeg, anggo laporan ti broker anjeun.",
   "staleNewResults": "Ti saprak analisis ieu, laporan kuartalan anyar geus medal ({symbol}, {date}).",
   "newResultsBadge": "Laporan anyar",
-  "portfolioImportBrokers": "Ékspor ti Revolut, Trading 212 sareng Interactive Brokers ogé dikenal, kaasup penjualan; dividén sareng setoran dilangkungan.",
+  "portfolioImportBrokers": "Ékspor ti Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity sareng Robinhood ogé dikenal, kaasup penjualan sareng dividén (sanggeus dipotong pajeg); setoran dilangkungan.",
   "portfolioImportFile": "Pilih file",
   "offlineBanner": "Teu aya sambungan – nembongkeun data anu panungtungan disimpen ({time}).",
   "glossMarketCap": "Sabaraha ajén sakabéh pausahaan di pasar saham: harga saham × jumlah saham.",

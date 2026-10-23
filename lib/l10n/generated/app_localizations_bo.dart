@@ -1887,7 +1887,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut དང་ Trading 212 དང་ Interactive Brokers ནས་ཕྱིར་འདྲེན་བྱས་པའི་ཡིག་ཆ་ཡང་བཙོང་བ་དང་བཅས་ངོས་འཛིན་བྱེད། ཁེ་བགོ་དང་དངུལ་འཇོག་ནི་བཞག་ནས་འགྲོ།';
+      'Revolut དང་ Trading 212 དང་ Interactive Brokers དང་ DEGIRO དང་ Schwab དང་ Fidelity དང་ Robinhood ནས་ཕྱིར་འདྲེན་བྱས་པའི་ཡིག་ཆ་ཡང་བཙོང་བ་དང་ཁེ་བགོ་ (ཁུངས་ནས་བཅད་པའི་ཁྲལ་ཕུད་རྗེས) བཅས་ངོས་འཛིན་བྱེད། དངུལ་འཇོག་ནི་བཞག་ནས་འགྲོ།';
 
   @override
   String get portfolioImportFile => 'ཡིག་ཆ་ཞིག་འདེམས།';

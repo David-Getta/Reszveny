@@ -1902,7 +1902,7 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Ivyasohowe bivuye muri Revolut, Trading 212 na Interactive Brokers na vyo biramenyekana, hamwe n\'ivyagurishijwe; inyungu ku migabane n\'amafaranga yashizwemwo birasimbwa.';
+      'Ivyasohowe bivuye muri Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity na Robinhood na vyo biramenyekana, hamwe n\'ivyagurishijwe n\'inyungu ku migabane (hamaze gukurwamwo ikori ryafashwe); amafaranga yashizwemwo arasimbwa.';
 
   @override
   String get portfolioImportFile => 'Hitamwo idosiye';

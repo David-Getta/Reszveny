@@ -1839,7 +1839,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut、Trading 212、Interactive Brokers のエクスポートも売却を含めて認識されます。配当と入金はスキップされます。';
+      'Revolut、Trading 212、Interactive Brokers、DEGIRO、Schwab、Fidelity、Robinhood のエクスポートも、売却と配当（源泉徴収税控除後）を含めて認識されます。入金はスキップされます。';
 
   @override
   String get portfolioImportFile => 'ファイルを選択';

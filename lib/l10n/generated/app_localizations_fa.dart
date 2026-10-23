@@ -1894,7 +1894,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'خروجی‌های Revolut، Trading 212 و Interactive Brokers هم همراه با فروش‌ها شناسایی می‌شوند؛ سود نقدی و واریزها نادیده گرفته می‌شوند.';
+      'خروجی‌های Revolut، Trading 212، Interactive Brokers، DEGIRO، Schwab، Fidelity و Robinhood هم همراه با فروش‌ها و سود نقدی (پس از کسر مالیات در مبدأ) شناسایی می‌شوند؛ واریزها نادیده گرفته می‌شوند.';
 
   @override
   String get portfolioImportFile => 'انتخاب فایل';

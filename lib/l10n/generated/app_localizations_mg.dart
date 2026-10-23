@@ -1910,7 +1910,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Fantatra ihany koa ny fanondranana avy amin\'ny Revolut, Trading 212 ary Interactive Brokers, miaraka amin\'ny varotra; dinganina ny dividenda sy ny petrabola.';
+      'Fantatra ihany koa ny fanondranana avy amin\'ny Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ary Robinhood, miaraka amin\'ny varotra sy ny dividenda (rehefa nesorina ny hetra notazonina); dinganina ny petrabola.';
 
   @override
   String get portfolioImportFile => 'Mifidiana rakitra';

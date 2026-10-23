@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "การขายจะจับคู่กับการซื้อที่เก่าที่สุดของคุณก่อน (FIFO) และแปลงค่าด้วยอัตราแลกเปลี่ยนของวันนี้ สำหรับการยื่นภาษี โปรดใช้รายงานจากโบรกเกอร์ของคุณ",
   "staleNewResults": "หลังจากการวิเคราะห์นี้ มีการประกาศผลประกอบการรายไตรมาสใหม่แล้ว ({symbol}, {date})",
   "newResultsBadge": "ผลประกอบการใหม่",
-  "portfolioImportBrokers": "รองรับไฟล์ส่งออกจาก Revolut, Trading 212 และ Interactive Brokers ด้วย รวมถึงรายการขาย ส่วนเงินปันผลและการฝากเงินจะถูกข้าม",
+  "portfolioImportBrokers": "รองรับไฟล์ส่งออกจาก Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity และ Robinhood ด้วย รวมถึงรายการขายและเงินปันผล (หลังหักภาษี ณ ที่จ่าย) ส่วนการฝากเงินจะถูกข้าม",
   "portfolioImportFile": "เลือกไฟล์",
   "offlineBanner": "ไม่มีการเชื่อมต่อ – กำลังแสดงข้อมูลที่บันทึกไว้ล่าสุด ({time})",
   "glossMarketCap": "มูลค่าของทั้งบริษัทในตลาดหุ้น: ราคาหุ้น × จำนวนหุ้น",

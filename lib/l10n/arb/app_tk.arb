@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Satuwlar ilki bilen iň köne satyn alyşlaryňyz bilen deňeşdirilýär (FIFO) we şu günüň walýuta hümmeti boýunça öwrülýär. Salgyt beýannamasy üçin brokeriňiziň hasabatyny ulanyň.",
   "staleNewResults": "Bu seljermeden soň täze çärýek hasabaty çap edildi ({symbol}, {date}).",
   "newResultsBadge": "Täze hasabat",
-  "portfolioImportBrokers": "Revolut, Trading 212 we Interactive Brokers eksportlary hem satuwlar bilen bilelikde tanalýar; diwidendler we goýumlar geçilýär.",
+  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity we Robinhood eksportlary hem satuwlar we diwidendler (çeşmede saklanan salgyt aýrylyp) bilen bilelikde tanalýar; goýumlar geçilýär.",
   "portfolioImportFile": "Faýl saýla",
   "offlineBanner": "Baglanyşyk ýok – iň soňky ýatda saklanan maglumatlar görkezilýär ({time}).",
   "glossMarketCap": "Tutuş kompaniýanyň biržadaky bahasy: paýnamanyň bahasy × paýnamalaryň sany.",

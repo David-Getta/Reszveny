@@ -1895,7 +1895,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'E dey sabi exports from Revolut, Trading 212 and Interactive Brokers too, plus di sales; e dey skip dividend and deposit.';
+      'E dey sabi exports from Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity and Robinhood too, plus di sales and dividend (after dem don remove withholding tax); e dey skip deposit.';
 
   @override
   String get portfolioImportFile => 'Choose file';

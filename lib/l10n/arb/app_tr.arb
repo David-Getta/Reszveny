@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Satışlar önce en eski alışlarınızla eşleştirilir (FIFO) ve bugünkü döviz kuruyla çevrilir. Vergi beyannameniz için aracı kurumunuzun ekstresini kullanın.",
   "staleNewResults": "Bu analizden sonra yeni çeyrek bilançosu açıklandı ({symbol}, {date}).",
   "newResultsBadge": "Yeni bilanço",
-  "portfolioImportBrokers": "Revolut, Trading 212 ve Interactive Brokers dışa aktarımları da satışlarla birlikte tanınır; temettüler ve para yatırmalar atlanır.",
+  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ve Robinhood dışa aktarımları da satışlar ve temettülerle (stopaj düşülmüş olarak) birlikte tanınır; para yatırmalar atlanır.",
   "portfolioImportFile": "Dosya seç",
   "offlineBanner": "Bağlantı yok – en son kaydedilen veriler gösteriliyor ({time}).",
   "glossMarketCap": "Şirketin tamamının borsadaki değeri: hisse fiyatı × hisse sayısı.",

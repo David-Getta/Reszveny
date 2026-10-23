@@ -1908,7 +1908,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Exporte von Revolut, Trading 212 und Interactive Brokers werden ebenfalls erkannt, inklusive Verkäufen; Dividenden und Einzahlungen werden übersprungen.';
+      'Exporte von Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity und Robinhood werden ebenfalls erkannt, inklusive Verkäufen und Dividenden (abzüglich Quellensteuer); Einzahlungen werden übersprungen.';
 
   @override
   String get portfolioImportFile => 'Datei auswählen';

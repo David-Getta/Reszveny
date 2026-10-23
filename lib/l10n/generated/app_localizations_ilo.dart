@@ -1912,7 +1912,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Mabigbig met dagiti export manipud iti Revolut, Trading 212 ken Interactive Brokers, agraman dagiti nailako; malaksawan dagiti dibidendo ken deposito.';
+      'Mabigbig met dagiti export manipud iti Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ken Robinhood, agraman dagiti nailako ken dibidendo (nakissayan ti withholding tax); malaksawan dagiti deposito.';
 
   @override
   String get portfolioImportFile => 'Agpili iti file';

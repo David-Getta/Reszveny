@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Zogulitsa zimayamba kufananizidwa ndi zogula zanu zakale kwambiri (FIFO), kusinthidwa pa mtengo wosinthira ndalama wa lero. Pa msonkho wanu, gwiritsani ntchito chikalata cha broker wanu.",
   "staleNewResults": "Kuyambira kusanthula kumeneku, zotsatira zatsopano za kotala zasindikizidwa ({symbol}, {date}).",
   "newResultsBadge": "Zotsatira zatsopano",
-  "portfolioImportBrokers": "Zotumiza kunja zochokera ku Revolut, Trading 212 ndi Interactive Brokers zimadziwikanso, pamodzi ndi zogulitsa; gawo la phindu ndi ndalama zosungitsa zimadumphidwa.",
+  "portfolioImportBrokers": "Zotumiza kunja zochokera ku Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ndi Robinhood zimadziwikanso, pamodzi ndi zogulitsa ndi gawo la phindu (msonkho wosungidwa utachotsedwa); ndalama zosungitsa zimadumphidwa.",
   "portfolioImportFile": "Sankhani fayilo",
   "offlineBanner": "Palibe intaneti – tikuwonetsa deta yomaliza yosungidwa ({time}).",
   "glossMarketCap": "Mtengo wa kampani yonse pa msika wa masheya: mtengo wa sheya × chiwerengero cha masheya.",

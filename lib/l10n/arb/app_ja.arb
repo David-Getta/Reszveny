@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "売却は古い購入分から順に充当され（FIFO）、本日の為替レートで換算されます。確定申告には証券会社の取引報告書をご利用ください。",
   "staleNewResults": "この分析の後、新しい四半期決算が発表されました（{symbol}、{date}）。",
   "newResultsBadge": "新しい決算",
-  "portfolioImportBrokers": "Revolut、Trading 212、Interactive Brokers のエクスポートも売却を含めて認識されます。配当と入金はスキップされます。",
+  "portfolioImportBrokers": "Revolut、Trading 212、Interactive Brokers、DEGIRO、Schwab、Fidelity、Robinhood のエクスポートも、売却と配当（源泉徴収税控除後）を含めて認識されます。入金はスキップされます。",
   "portfolioImportFile": "ファイルを選択",
   "offlineBanner": "オフライン – 最後に保存したデータを表示しています（{time}）。",
   "glossMarketCap": "株式市場での会社全体の価値：株価 × 発行済株式数。",

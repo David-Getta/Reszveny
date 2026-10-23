@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Bisumbisha bidi bitangidibua kumpala ne biuvua musumbe bia kale menemene (FIFO), bishintulula ku mushinga wa dishintuluija dia lelu. Bua mukanda wa bitadi, enza mudimu ne mukanda wa broker webe.",
   "staleNewResults": "Kubangila ku dikonkonona edi, mapeta mapia a ngondo isatu mmapatuke ({symbol}, {date}).",
   "newResultsBadge": "Mapeta mapia",
-  "portfolioImportBrokers": "Bidi bimanyisha kabidi bintu bidi bipatuka mu Revolut, Trading 212 ne Interactive Brokers, pamue ne bisumbishibua; dividende ne makuta adibu batula bidi bishiyibua.",
+  "portfolioImportBrokers": "Bidi bimanyisha kabidi bintu bidi bipatuka mu Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ne Robinhood, pamue ne bisumbishibua ne dividende (panyima pa kumbusha mpaku); makuta adibu batula bidi bishiyibua.",
   "portfolioImportFile": "Sungula fichier",
   "offlineBanner": "Kakuena connexion to – tudi tuleja mamanyisha a ndekelu akavua mabika ({time}).",
   "glossMarketCap": "Mushinga wa kompanyi mujima ku bourse: mushinga wa action × bungi bua ba-action.",

@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Pardavimai pirmiausia priskiriami seniausiems jūsų pirkimams (FIFO) ir perskaičiuojami pagal šiandienos valiutos kursą. Mokesčių deklaracijai naudokite savo brokerio išrašą.",
   "staleNewResults": "Po šios analizės paskelbti nauji ketvirčio rezultatai ({symbol}, {date}).",
   "newResultsBadge": "Nauji rezultatai",
-  "portfolioImportBrokers": "Taip pat atpažįstami Revolut, Trading 212 ir Interactive Brokers eksportai, įskaitant pardavimus; dividendai ir įnašai praleidžiami.",
+  "portfolioImportBrokers": "Taip pat atpažįstami Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ir Robinhood eksportai, įskaitant pardavimus ir dividendus (atskaičius prie šaltinio išskaičiuotą mokestį); įnašai praleidžiami.",
   "portfolioImportFile": "Pasirinkti failą",
   "offlineBanner": "Nėra ryšio – rodomi paskutiniai išsaugoti duomenys ({time}).",
   "glossMarketCap": "Kiek visa bendrovė vertinama akcijų rinkoje: akcijos kaina × akcijų skaičius.",

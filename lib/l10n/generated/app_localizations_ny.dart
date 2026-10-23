@@ -1903,7 +1903,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Zotumiza kunja zochokera ku Revolut, Trading 212 ndi Interactive Brokers zimadziwikanso, pamodzi ndi zogulitsa; gawo la phindu ndi ndalama zosungitsa zimadumphidwa.';
+      'Zotumiza kunja zochokera ku Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ndi Robinhood zimadziwikanso, pamodzi ndi zogulitsa ndi gawo la phindu (msonkho wosungidwa utachotsedwa); ndalama zosungitsa zimadumphidwa.';
 
   @override
   String get portfolioImportFile => 'Sankhani fayilo';

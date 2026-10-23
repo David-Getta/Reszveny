@@ -1902,7 +1902,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212, Interactive Brokers ఎగుమతులు కూడా అమ్మకాలతో సహా గుర్తించబడతాయి; డివిడెండ్లు, డిపాజిట్లు దాటవేయబడతాయి.';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity, Robinhood ఎగుమతులు కూడా అమ్మకాలు, డివిడెండ్లతో (మూలం వద్ద మినహాయించిన పన్ను తీసివేసి) సహా గుర్తించబడతాయి; డిపాజిట్లు దాటవేయబడతాయి.';
 
   @override
   String get portfolioImportFile => 'ఫైల్‌ను ఎంచుకోండి';

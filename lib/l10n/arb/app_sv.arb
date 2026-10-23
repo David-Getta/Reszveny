@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Försäljningar avräknas först mot dina äldsta köp (FIFO) och räknas om till dagens växelkurs. Använd din mäklares årsbesked till deklarationen.",
   "staleNewResults": "Sedan den här analysen har en ny kvartalsrapport publicerats ({symbol}, {date}).",
   "newResultsBadge": "Ny rapport",
-  "portfolioImportBrokers": "Exporter från Revolut, Trading 212 och Interactive Brokers känns också igen, med försäljningar; utdelningar och insättningar hoppas över.",
+  "portfolioImportBrokers": "Exporter från Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity och Robinhood känns också igen, med försäljningar och utdelningar (efter källskatt); insättningar hoppas över.",
   "portfolioImportFile": "Välj en fil",
   "offlineBanner": "Ingen anslutning – visar senast sparade data ({time}).",
   "glossMarketCap": "Vad hela bolaget är värt på börsen: aktiekurs × antal aktier.",

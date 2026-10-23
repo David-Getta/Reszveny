@@ -1909,7 +1909,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Diromelwantle go tšwa go Revolut, Trading 212 le Interactive Brokers le tšona di a lemogwa, gotee le dithekišo; dividende le dipeeletšo di a tlogelwa.';
+      'Diromelwantle go tšwa go Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity le Robinhood le tšona di a lemogwa, gotee le dithekišo le dividende (ka morago ga go ntšhwa ga motšhelo wo o swerwego); dipeeletšo di a tlogelwa.';
 
   @override
   String get portfolioImportFile => 'Kgetha faele';

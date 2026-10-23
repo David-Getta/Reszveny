@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "መሸጣታት መጀመርታ ምስ ዝበለጸ ዝኣረገ ዕድግታትኩም ይዛመዱ (FIFO)፣ ብናይ ሎሚ ናይ ገንዘብ ምልውዋጥ ዋጋ ይቕየሩ። ንናይ ግብሪ መግለጺኹም፣ ናይ ደላላኹም መግለጺ ተጠቐሙ።",
   "staleNewResults": "ድሕሪ እዚ ትንተና ሓድሽ ናይ ርብዒ ዓመት ውጽኢታት ተሓቲሙ ኣሎ ({symbol}፣ {date})።",
   "newResultsBadge": "ሓድሽ ውጽኢት",
-  "portfolioImportBrokers": "ካብ Revolut፣ Trading 212ን Interactive Brokersን ዝወጹ ፋይላት እውን ምስ መሸጣታት ይልለዩ፤ ብጽሒት ትርፍን ተቐማጢ ገንዘብን ይሕለፉ።",
+  "portfolioImportBrokers": "ካብ Revolut፣ Trading 212፣ Interactive Brokers፣ DEGIRO፣ Schwab፣ Fidelityን Robinhoodን ዝወጹ ፋይላት እውን ምስ መሸጣታትን ብጽሒት ትርፍን (ተቖራጺ ግብሪ ድሕሪ ምቕናስ) ይልለዩ፤ ተቐማጢ ገንዘብ ይሕለፍ።",
   "portfolioImportFile": "ፋይል ምረጽ",
   "offlineBanner": "ርክብ የለን – እቲ ናይ መወዳእታ ዝተዓቀበ ሓበሬታ ይርአ ኣሎ ({time})።",
   "glossMarketCap": "ብምሉኡ እቲ ኩባንያ ኣብ ዕዳጋ ኣክሲዮን ዘለዎ ዋጋ፦ ዋጋ ኣክሲዮን × ብዝሒ ኣክሲዮናት።",

@@ -1874,7 +1874,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'ການສົ່ງອອກຈາກ Revolut, Trading 212 ແລະ Interactive Brokers ກໍຖືກຮັບຮູ້ເຊັ່ນກັນ ລວມທັງການຂາຍ; ເງິນປັນຜົນ ແລະ ການຝາກເງິນຈະຖືກຂ້າມ.';
+      'ການສົ່ງອອກຈາກ Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ແລະ Robinhood ກໍຖືກຮັບຮູ້ເຊັ່ນກັນ ລວມທັງການຂາຍ ແລະ ເງິນປັນຜົນ (ຫຼັງຫັກອາກອນ ນ ທີ່ຈ່າຍ); ການຝາກເງິນຈະຖືກຂ້າມ.';
 
   @override
   String get portfolioImportFile => 'ເລືອກໄຟລ໌';

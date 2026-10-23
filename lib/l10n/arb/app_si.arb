@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "විකුණුම් පළමුව ඔබේ පැරණිතම මිලදී ගැනීම් සමඟ ගළපනු ලැබේ (FIFO), අද විනිමය අනුපාතයට පරිවර්තනය කර. බදු වාර්තාව සඳහා ඔබේ තැරැව්කරුගේ ප්‍රකාශය භාවිත කරන්න.",
   "staleNewResults": "මෙම විශ්ලේෂණයෙන් පසු නව කාර්තුමය ප්‍රතිඵල ප්‍රකාශයට පත් කර ඇත ({symbol}, {date}).",
   "newResultsBadge": "නව ප්‍රතිඵල",
-  "portfolioImportBrokers": "Revolut, Trading 212 සහ Interactive Brokers අපනයනද විකුණුම් සමඟ හඳුනා ගැනේ; ලාභාංශ සහ තැන්පතු මඟ හරිනු ලැබේ.",
+  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity සහ Robinhood අපනයනද විකුණුම් සහ ලාභාංශ (රඳවා ගැනීමේ බද්ද අඩු කළ පසු) සමඟ හඳුනා ගැනේ; තැන්පතු මඟ හරිනු ලැබේ.",
   "portfolioImportFile": "ගොනුවක් තෝරන්න",
   "offlineBanner": "සම්බන්ධතාවක් නැත – අවසන් වරට සුරැකි දත්ත පෙන්වයි ({time}).",
   "glossMarketCap": "කොටස් වෙළඳපොළේ මුළු සමාගමේම වටිනාකම: කොටසක මිල × කොටස් ගණන.",

@@ -1899,7 +1899,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212 va Interactive Brokers eksportlari ham sotuvlar bilan birga taniladi; dividendlar va depozitlar o‘tkazib yuboriladi.';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity va Robinhood eksportlari ham sotuvlar va dividendlar (to‘lov manbaidan ushlangan soliq chegirilib) bilan birga taniladi; depozitlar o‘tkazib yuboriladi.';
 
   @override
   String get portfolioImportFile => 'Fayl tanlash';

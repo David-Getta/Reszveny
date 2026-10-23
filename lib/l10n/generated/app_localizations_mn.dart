@@ -1896,7 +1896,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212, Interactive Brokers-ийн экспортыг мөн борлуулалттай нь хамт танина; ногдол ашиг болон орлогыг алгасна.';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity, Robinhood-ийн экспортыг мөн борлуулалт болон ногдол ашгийн (эх үүсвэрт суутгасан татварыг хассан) хамт танина; орлогыг алгасна.';
 
   @override
   String get portfolioImportFile => 'Файл сонгох';

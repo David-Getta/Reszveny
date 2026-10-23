@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Itinutugma muna ang mga pagbenta sa pinakaluma mong mga pagbili (FIFO), na-convert sa palitan ngayon. Para sa iyong tax return, gamitin ang statement ng iyong broker.",
   "staleNewResults": "May bagong quarterly na resulta na nailathala mula nang gawin ang pagsusuring ito ({symbol}, {date}).",
   "newResultsBadge": "Bagong resulta",
-  "portfolioImportBrokers": "Nakikilala rin ang mga export mula sa Revolut, Trading 212 at Interactive Brokers, kasama ang mga benta; nilalaktawan ang mga dibidendo at deposito.",
+  "portfolioImportBrokers": "Nakikilala rin ang mga export mula sa Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity at Robinhood, kasama ang mga benta at dibidendo (bawas na ang withholding tax); nilalaktawan ang mga deposito.",
   "portfolioImportFile": "Pumili ng file",
   "offlineBanner": "Walang koneksyon – ipinapakita ang huling na-save na data ({time}).",
   "glossMarketCap": "Kung magkano ang halaga ng buong kumpanya sa stock market: presyo ng share × bilang ng shares.",

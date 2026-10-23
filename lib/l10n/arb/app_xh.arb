@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Ezithengisiweyo zidityaniswa kuqala nezona zinto zindala uzithengileyo (FIFO), ziguqulwe ngexabiso lotshintshiselwano lanamhlanje. Kwingxelo yerhafu, sebenzisa ingxelo yebroker yakho.",
   "staleNewResults": "Ukususela kolu hlalutyo, kupapashwe iziphumo ezitsha zekota ({symbol}, {date}).",
   "newResultsBadge": "Iziphumo ezitsha",
-  "portfolioImportBrokers": "Iithumelo eziphuma kwi-Revolut, Trading 212 kunye ne-Interactive Brokers nazo ziyaqondwa, kunye nokuthengisa; ii-dividend kunye needipozithi ziyatsitywa.",
+  "portfolioImportBrokers": "Iithumelo eziphuma kwi-Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity kunye ne-Robinhood nazo ziyaqondwa, kunye nokuthengisa nee-dividend (emva kokutsalwa kwerhafu ebanjwayo); iidipozithi ziyatsitywa.",
   "portfolioImportFile": "Khetha ifayile",
   "offlineBanner": "Akukho qhagamshelo – kuboniswa idatha egcinwe ekugqibeleni ({time}).",
   "glossMarketCap": "Ixabiso lenkampani yonke kwimarike yezabelo: ixabiso lesabelo × inani lezabelo.",

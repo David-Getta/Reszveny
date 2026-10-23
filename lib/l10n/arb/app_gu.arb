@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "વેચાણ પહેલા તમારી સૌથી જૂની ખરીદીઓ સાથે મેળવવામાં આવે છે (FIFO), આજના વિનિમય દરે રૂપાંતરિત. તમારા ટેક્સ રિટર્ન માટે તમારા બ્રોકરના સ્ટેટમેન્ટનો ઉપયોગ કરો.",
   "staleNewResults": "આ વિશ્લેષણ પછી નવાં ત્રિમાસિક પરિણામો જાહેર થયાં છે ({symbol}, {date}).",
   "newResultsBadge": "નવાં પરિણામો",
-  "portfolioImportBrokers": "Revolut, Trading 212 અને Interactive Brokers ના એક્સપોર્ટ પણ વેચાણ સહિત ઓળખાય છે; ડિવિડન્ડ અને જમા રકમ છોડી દેવાય છે.",
+  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity અને Robinhood ના એક્સપોર્ટ પણ વેચાણ અને ડિવિડન્ડ (સ્રોત પર કપાયેલો કર બાદ કરીને) સહિત ઓળખાય છે; જમા રકમ છોડી દેવાય છે.",
   "portfolioImportFile": "ફાઇલ પસંદ કરો",
   "offlineBanner": "કનેક્શન નથી – છેલ્લે સાચવેલો ડેટા બતાવવામાં આવે છે ({time}).",
   "glossMarketCap": "શેરબજારમાં આખી કંપનીની કિંમત: શેરનો ભાવ × શેરની સંખ્યા.",

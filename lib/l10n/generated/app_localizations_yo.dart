@@ -1895,7 +1895,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'A tún ń dá àwọn àgbéjáde láti Revolut, Trading 212 àti Interactive Brokers mọ̀, pẹ̀lú àwọn títà; a máa ń fo èrè ìpín àti owó ìfipamọ́ sílẹ̀.';
+      'A tún ń dá àwọn àgbéjáde láti Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity àti Robinhood mọ̀, pẹ̀lú àwọn títà àti èrè ìpín (lẹ́yìn yíyọ owó-orí tí a dá dúró); a máa ń fo owó ìfipamọ́ sílẹ̀.';
 
   @override
   String get portfolioImportFile => 'Yan fáìlì kan';

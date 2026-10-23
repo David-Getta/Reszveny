@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Pārdošanas vispirms tiek sasaistītas ar jūsu vecākajiem pirkumiem (FIFO) un pārrēķinātas pēc šodienas valūtas kursa. Nodokļu deklarācijai izmantojiet sava brokera izrakstu.",
   "staleNewResults": "Kopš šīs analīzes publicēti jauni ceturkšņa rezultāti ({symbol}, {date}).",
   "newResultsBadge": "Jauni rezultāti",
-  "portfolioImportBrokers": "Tiek atpazīti arī Revolut, Trading 212 un Interactive Brokers eksporti, ieskaitot pārdošanas; dividendes un iemaksas tiek izlaistas.",
+  "portfolioImportBrokers": "Tiek atpazīti arī Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity un Robinhood eksporti, ieskaitot pārdošanas un dividendes (atskaitot ieturēto nodokli); iemaksas tiek izlaistas.",
   "portfolioImportFile": "Izvēlēties failu",
   "offlineBanner": "Nav savienojuma – tiek rādīti pēdējie saglabātie dati ({time}).",
   "glossMarketCap": "Cik vērts ir viss uzņēmums akciju tirgū: akcijas cena × akciju skaits.",

@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Sotuvlar avval eng eski xaridlaringiz bilan moslashtiriladi (FIFO) va bugungi valyuta kursida hisoblanadi. Soliq deklaratsiyasi uchun brokeringiz koʻchirmasidan foydalaning.",
   "staleNewResults": "Ushbu tahlildan keyin yangi choraklik hisobot eʼlon qilindi ({symbol}, {date}).",
   "newResultsBadge": "Yangi hisobot",
-  "portfolioImportBrokers": "Revolut, Trading 212 va Interactive Brokers eksportlari ham sotuvlar bilan birga taniladi; dividendlar va depozitlar o‘tkazib yuboriladi.",
+  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity va Robinhood eksportlari ham sotuvlar va dividendlar (to‘lov manbaidan ushlangan soliq chegirilib) bilan birga taniladi; depozitlar o‘tkazib yuboriladi.",
   "portfolioImportFile": "Fayl tanlash",
   "offlineBanner": "Aloqa yo‘q – oxirgi saqlangan ma’lumotlar ko‘rsatilmoqda ({time}).",
   "glossMarketCap": "Butun kompaniyaning birjadagi qiymati: aksiya narxi × aksiyalar soni.",

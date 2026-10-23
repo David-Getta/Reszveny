@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Predaje sa najprv priraďujú k vašim najstarším nákupom (FIFO) a prepočítavajú sa dnešným kurzom. Na daňové priznanie použite výpis od svojho brokera.",
   "staleNewResults": "Od tejto analýzy boli zverejnené nové štvrťročné výsledky ({symbol}, {date}).",
   "newResultsBadge": "Nové výsledky",
-  "portfolioImportBrokers": "Rozpoznávajú sa aj exporty z Revolut, Trading 212 a Interactive Brokers vrátane predajov; dividendy a vklady sa preskakujú.",
+  "portfolioImportBrokers": "Rozpoznávajú sa aj exporty z Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity a Robinhood vrátane predajov a dividend (po odpočítaní zrážkovej dane); vklady sa preskakujú.",
   "portfolioImportFile": "Vybrať súbor",
   "offlineBanner": "Bez pripojenia – zobrazujú sa naposledy uložené údaje ({time}).",
   "glossMarketCap": "Koľko je celá firma hodná na burze: cena akcie × počet akcií.",

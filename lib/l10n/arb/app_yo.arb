@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "A máa ń kọ́kọ́ so títà mọ́ àwọn ìrajà rẹ tó pẹ́ jù lọ (FIFO), a sì ń yí i padà ní ìwọ̀n pàṣípààrọ̀ ti òní. Fún ìfisùn owó-orí rẹ, lo ìwé ìṣirò alágbàtà rẹ.",
   "staleNewResults": "Láti ìgbà ìtúpalẹ̀ yìí, àbájáde ìdámẹ́rin ọdún tuntun ti jáde ({symbol}, {date}).",
   "newResultsBadge": "Àbájáde tuntun",
-  "portfolioImportBrokers": "A tún ń dá àwọn àgbéjáde láti Revolut, Trading 212 àti Interactive Brokers mọ̀, pẹ̀lú àwọn títà; a máa ń fo èrè ìpín àti owó ìfipamọ́ sílẹ̀.",
+  "portfolioImportBrokers": "A tún ń dá àwọn àgbéjáde láti Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity àti Robinhood mọ̀, pẹ̀lú àwọn títà àti èrè ìpín (lẹ́yìn yíyọ owó-orí tí a dá dúró); a máa ń fo owó ìfipamọ́ sílẹ̀.",
   "portfolioImportFile": "Yan fáìlì kan",
   "offlineBanner": "Kò sí ìsopọ̀ – à ń fi dátà tí a fipamọ́ kẹ́yìn hàn ({time}).",
   "glossMarketCap": "Iye tí gbogbo ilé-iṣẹ́ náà tó lórí ọjà ìpín: iye owó ìpín × iye ìpín.",

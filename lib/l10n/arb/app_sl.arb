@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Prodaje se najprej povežejo z vašimi najstarejšimi nakupi (FIFO) in preračunajo po današnjem tečaju. Za davčno napoved uporabite izpisek svojega borznega posrednika.",
   "staleNewResults": "Od te analize so bili objavljeni novi četrtletni rezultati ({symbol}, {date}).",
   "newResultsBadge": "Novi rezultati",
-  "portfolioImportBrokers": "Prepoznani so tudi izvozi iz Revolut, Trading 212 in Interactive Brokers, skupaj s prodajami; dividende in pologi se preskočijo.",
+  "portfolioImportBrokers": "Prepoznani so tudi izvozi iz Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity in Robinhood, skupaj s prodajami in dividendami (po odbitku davčnega odtegljaja); pologi se preskočijo.",
   "portfolioImportFile": "Izberite datoteko",
   "offlineBanner": "Ni povezave – prikazani so nazadnje shranjeni podatki ({time}).",
   "glossMarketCap": "Koliko je vredno celotno podjetje na borzi: cena delnice × število delnic.",

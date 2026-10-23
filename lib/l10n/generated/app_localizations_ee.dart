@@ -1901,7 +1901,7 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Wodzea Revolut, Trading 212 kple Interactive Brokers ƒe agbalẽ siwo wotso ɖe go hã, kple nusiwo wodzra; wogblea viɖemama kple ga siwo wotsɔ de ɖi ɖi.';
+      'Wodzea Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity kple Robinhood ƒe agbalẽ siwo wotso ɖe go hã, kple nusiwo wodzra kple viɖemama (le adzɔ si wolé ɖe eme ɖeɖe megbe); wogblea ga siwo wotsɔ de ɖi ɖi.';
 
   @override
   String get portfolioImportFile => 'Tia faɛl aɖe';

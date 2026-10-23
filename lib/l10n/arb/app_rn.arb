@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Ivyagurishijwe bibanza guhuzwa n'ivyo waguze kera kuruta (FIFO), bigahindurwa ku giciro c'ivunjisha c'uyu munsi. Ku bijanye n'imenyekanisha ry'ikori, koresha icemezo c'umuhuza wawe (broker).",
   "staleNewResults": "Kuva iri suzuma ryakorwa, ivyavuye mu gihembwe bishasha vyarasohotse ({symbol}, {date}).",
   "newResultsBadge": "Ivyavuye bishasha",
-  "portfolioImportBrokers": "Ivyasohowe bivuye muri Revolut, Trading 212 na Interactive Brokers na vyo biramenyekana, hamwe n'ivyagurishijwe; inyungu ku migabane n'amafaranga yashizwemwo birasimbwa.",
+  "portfolioImportBrokers": "Ivyasohowe bivuye muri Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity na Robinhood na vyo biramenyekana, hamwe n'ivyagurishijwe n'inyungu ku migabane (hamaze gukurwamwo ikori ryafashwe); amafaranga yashizwemwo arasimbwa.",
   "portfolioImportFile": "Hitamwo idosiye",
   "offlineBanner": "Nta interineti – amakuru aheruka kubikwa ni yo yerekanwa ({time}).",
   "glossMarketCap": "Agaciro k'isosiyete yose ku isoko ry'imigabane: igiciro c'umugabane × igitigiri c'imigabane.",

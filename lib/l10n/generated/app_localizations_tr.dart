@@ -1896,7 +1896,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212 ve Interactive Brokers dışa aktarımları da satışlarla birlikte tanınır; temettüler ve para yatırmalar atlanır.';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ve Robinhood dışa aktarımları da satışlar ve temettülerle (stopaj düşülmüş olarak) birlikte tanınır; para yatırmalar atlanır.';
 
   @override
   String get portfolioImportFile => 'Dosya seç';

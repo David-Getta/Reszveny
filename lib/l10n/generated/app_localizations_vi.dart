@@ -1891,7 +1891,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Tệp xuất từ Revolut, Trading 212 và Interactive Brokers cũng được nhận diện, kèm cả giao dịch bán; cổ tức và tiền nạp được bỏ qua.';
+      'Tệp xuất từ Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity và Robinhood cũng được nhận diện, kèm cả giao dịch bán và cổ tức (đã trừ thuế khấu trừ tại nguồn); tiền nạp được bỏ qua.';
 
   @override
   String get portfolioImportFile => 'Chọn tệp';

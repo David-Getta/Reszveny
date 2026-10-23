@@ -1905,7 +1905,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Αναγνωρίζονται επίσης οι εξαγωγές από Revolut, Trading 212 και Interactive Brokers, μαζί με τις πωλήσεις· τα μερίσματα και οι καταθέσεις παραλείπονται.';
+      'Αναγνωρίζονται επίσης οι εξαγωγές από Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity και Robinhood, μαζί με τις πωλήσεις και τα μερίσματα (μετά την παρακράτηση φόρου)· οι καταθέσεις παραλείπονται.';
 
   @override
   String get portfolioImportFile => 'Επιλέξτε αρχείο';

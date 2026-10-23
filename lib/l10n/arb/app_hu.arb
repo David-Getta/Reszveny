@@ -515,7 +515,7 @@
   "portfolioRealizedHint": "Az eladások a legrégebbi vételeidből fogynak (FIFO), a mai árfolyamon átváltva. Az adóbevalláshoz a brókered kimutatását használd.",
   "staleNewResults": "Az elemzés óta új gyorsjelentés jelent meg ({symbol}, {date}).",
   "newResultsBadge": "Új gyorsjelentés",
-  "portfolioImportBrokers": "A Revolut, a Trading 212 és az Interactive Brokers exportját is felismeri, az eladásokkal együtt; az osztalékot és a befizetést kihagyja.",
+  "portfolioImportBrokers": "A Revolut, a Trading 212, az Interactive Brokers, a DEGIRO, a Schwab, a Fidelity és a Robinhood exportját is felismeri, az eladásokkal és az osztalékokkal (a forrásadóval csökkentve) együtt; a befizetést kihagyja.",
   "portfolioImportFile": "Fájl kiválasztása",
   "offlineBanner": "Nincs kapcsolat – a legutóbb mentett adatok látszanak ({time}).",
   "glossMarketCap": "Mennyit ér az egész cég a tőzsdén: árfolyam × részvények száma.",

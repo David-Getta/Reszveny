@@ -1950,7 +1950,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Таксама распазнаюцца экспарты з Revolut, Trading 212 і Interactive Brokers, разам з продажамі; дывідэнды і папаўненні прапускаюцца.';
+      'Таксама распазнаюцца экспарты з Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity і Robinhood, разам з продажамі і дывідэндамі (за вылікам падатку, утрыманага ў крыніцы); папаўненні прапускаюцца.';
 
   @override
   String get portfolioImportFile => 'Выбраць файл';

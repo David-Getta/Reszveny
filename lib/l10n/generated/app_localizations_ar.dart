@@ -1938,7 +1938,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'يتم التعرف أيضًا على ملفات التصدير من Revolut وTrading 212 وInteractive Brokers، مع عمليات البيع؛ ويتم تخطي التوزيعات والإيداعات.';
+      'يتم التعرف أيضًا على ملفات التصدير من Revolut وTrading 212 وInteractive Brokers وDEGIRO وSchwab وFidelity وRobinhood، مع عمليات البيع والتوزيعات (بعد خصم ضريبة الاستقطاع)؛ ويتم تخطي الإيداعات.';
 
   @override
   String get portfolioImportFile => 'اختر ملفًا';

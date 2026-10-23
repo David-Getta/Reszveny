@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Wotsɔa nudzadzrawo sɔna kple wò nuƒeƒle xoxotɔwo gbã (FIFO), eye wotrɔa wo ɖe egbe ƒe gatsɔtsɔli asi nu. Na wò adzɔxexe ŋuti nyatakaka la, zã wò broker ƒe agbalẽ.",
   "staleNewResults": "Wota ɣleti etɔ̃ akɔntabubu yeye tso esime wowɔ numekuku sia ({symbol}, {date}).",
   "newResultsBadge": "Akɔntabubu yeye",
-  "portfolioImportBrokers": "Wodzea Revolut, Trading 212 kple Interactive Brokers ƒe agbalẽ siwo wotso ɖe go hã, kple nusiwo wodzra; wogblea viɖemama kple ga siwo wotsɔ de ɖi ɖi.",
+  "portfolioImportBrokers": "Wodzea Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity kple Robinhood ƒe agbalẽ siwo wotso ɖe go hã, kple nusiwo wodzra kple viɖemama (le adzɔ si wolé ɖe eme ɖeɖe megbe); wogblea ga siwo wotsɔ de ɖi ɖi.",
   "portfolioImportFile": "Tia faɛl aɖe",
   "offlineBanner": "Kadodo aɖeke meli o – nyatakaka siwo wodzra ɖo mlɛtɔ la ko le ɖeɖem fia ({time}).",
   "glossMarketCap": "Alesi dɔwɔƒea katã xɔ asi le akpawo ƒe asi me: akpa ƒe asi × akpawo ƒe xexlẽme.",

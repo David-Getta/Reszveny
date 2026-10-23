@@ -1901,7 +1901,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Bidi bimanyisha kabidi bintu bidi bipatuka mu Revolut, Trading 212 ne Interactive Brokers, pamue ne bisumbishibua; dividende ne makuta adibu batula bidi bishiyibua.';
+      'Bidi bimanyisha kabidi bintu bidi bipatuka mu Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ne Robinhood, pamue ne bisumbishibua ne dividende (panyima pa kumbusha mpaku); makuta adibu batula bidi bishiyibua.';
 
   @override
   String get portfolioImportFile => 'Sungula fichier';

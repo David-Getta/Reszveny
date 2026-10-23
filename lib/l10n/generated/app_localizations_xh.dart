@@ -1904,7 +1904,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Iithumelo eziphuma kwi-Revolut, Trading 212 kunye ne-Interactive Brokers nazo ziyaqondwa, kunye nokuthengisa; ii-dividend kunye needipozithi ziyatsitywa.';
+      'Iithumelo eziphuma kwi-Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity kunye ne-Robinhood nazo ziyaqondwa, kunye nokuthengisa nee-dividend (emva kokutsalwa kwerhafu ebanjwayo); iidipozithi ziyatsitywa.';
 
   @override
   String get portfolioImportFile => 'Khetha ifayile';

@@ -1842,7 +1842,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212, Interactive Brokers의 내보내기 파일도 매도 내역과 함께 인식됩니다. 배당과 입금은 건너뜁니다.';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity, Robinhood의 내보내기 파일도 매도 내역 및 배당(원천징수세 차감 후)과 함께 인식됩니다. 입금은 건너뜁니다.';
 
   @override
   String get portfolioImportFile => '파일 선택';

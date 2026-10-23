@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Boteki ekokanisamaka liboso na bosombi na yo ya kala koleka (FIFO), ebongolami na motuya ya mbongo ya lelo. Mpo na declaration ya mpako, salelá rapɔrɔ ya broker na yo.",
   "staleNewResults": "Banda analyse oyo, ba résultats ya sika ya trimestre ebimi ({symbol}, {date}).",
   "newResultsBadge": "Résultats ya sika",
-  "portfolioImportBrokers": "Ba-export ya Revolut, Trading 212 mpe Interactive Brokers mpe eyebanaka, elongo na biteki; dividende mpe mbongo oyo etiamaki ezali kolekisama.",
+  "portfolioImportBrokers": "Ba-export ya Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity mpe Robinhood mpe eyebanaka, elongo na biteki mpe dividende (sima ya kolongola mpako oyo ekatamaka); mbongo oyo etiamaki ezali kolekisama.",
   "portfolioImportFile": "Pona fisyé moko",
   "offlineBanner": "Connexion ezali te – tozali kolakisa ba-donnée ya nsuka oyo ebombamaki ({time}).",
   "glossMarketCap": "Motuya ya kompanyi mobimba na bourse: ntalo ya action × motango ya ba-action.",

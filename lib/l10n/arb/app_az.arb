@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Satışlar əvvəlcə ən köhnə alışlarınızla uyğunlaşdırılır (FIFO) və bugünkü məzənnə ilə çevrilir. Vergi bəyannaməsi üçün brokerinizin hesabatından istifadə edin.",
   "staleNewResults": "Bu təhlildən sonra yeni rüblük hesabat dərc olunub ({symbol}, {date}).",
   "newResultsBadge": "Yeni hesabat",
-  "portfolioImportBrokers": "Revolut, Trading 212 və Interactive Brokers ixracları da satışlarla birlikdə tanınır; dividendlər və depozitlər ötürülür.",
+  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity və Robinhood ixracları da satışlar və dividendlərlə (ödəmə mənbəyində tutulan vergi çıxılmaqla) birlikdə tanınır; depozitlər ötürülür.",
   "portfolioImportFile": "Fayl seçin",
   "offlineBanner": "Bağlantı yoxdur – son saxlanılan məlumatlar göstərilir ({time}).",
   "glossMarketCap": "Bütün şirkətin birjada nə qədər dəyərli olduğu: səhm qiyməti × səhmlərin sayı.",

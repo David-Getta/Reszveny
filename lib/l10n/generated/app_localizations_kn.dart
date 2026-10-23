@@ -1902,7 +1902,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212 ಮತ್ತು Interactive Brokers ನ ರಫ್ತುಗಳನ್ನೂ ಮಾರಾಟಗಳ ಸಹಿತ ಗುರುತಿಸಲಾಗುತ್ತದೆ; ಡಿವಿಡೆಂಡ್ ಮತ್ತು ಠೇವಣಿಗಳನ್ನು ಬಿಟ್ಟುಬಿಡಲಾಗುತ್ತದೆ.';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ಮತ್ತು Robinhood ನ ರಫ್ತುಗಳನ್ನೂ ಮಾರಾಟಗಳು ಮತ್ತು ಡಿವಿಡೆಂಡ್ (ಮೂಲದಲ್ಲಿ ಕಡಿತವಾದ ತೆರಿಗೆ ಕಳೆದು) ಸಹಿತ ಗುರುತಿಸಲಾಗುತ್ತದೆ; ಠೇವಣಿಗಳನ್ನು ಬಿಟ್ಟುಬಿಡಲಾಗುತ್ತದೆ.';
 
   @override
   String get portfolioImportFile => 'ಫೈಲ್ ಆಯ್ಕೆಮಾಡಿ';

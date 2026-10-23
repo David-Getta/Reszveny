@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Prodaje se najprije uparuju s vašim najstarijim kupnjama (FIFO) i preračunavaju po današnjem tečaju. Za poreznu prijavu koristite izvadak svog brokera.",
   "staleNewResults": "Od ove analize objavljeni su novi tromjesečni rezultati ({symbol}, {date}).",
   "newResultsBadge": "Novi rezultati",
-  "portfolioImportBrokers": "Prepoznaju se i izvozi iz Revolut, Trading 212 i Interactive Brokers, zajedno s prodajama; dividende i uplate se preskaču.",
+  "portfolioImportBrokers": "Prepoznaju se i izvozi iz Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity i Robinhood, zajedno s prodajama i dividendama (umanjenima za porez po odbitku); uplate se preskaču.",
   "portfolioImportFile": "Odaberite datoteku",
   "offlineBanner": "Nema veze – prikazani su posljednji spremljeni podaci ({time}).",
   "glossMarketCap": "Koliko cijela tvrtka vrijedi na burzi: cijena dionice × broj dionica.",

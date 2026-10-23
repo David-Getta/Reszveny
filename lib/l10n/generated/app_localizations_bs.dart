@@ -1934,7 +1934,7 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Prepoznaju se i izvozi iz Revolut, Trading 212 i Interactive Brokers, zajedno s prodajama; dividende i uplate se preskaču.';
+      'Prepoznaju se i izvozi iz Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity i Robinhood, zajedno s prodajama i dividendama (umanjenim za porez po odbitku); uplate se preskaču.';
 
   @override
   String get portfolioImportFile => 'Odaberite datoteku';

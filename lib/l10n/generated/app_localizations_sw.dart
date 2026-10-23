@@ -1897,7 +1897,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Faili zilizotolewa kutoka Revolut, Trading 212 na Interactive Brokers pia zinatambuliwa, pamoja na mauzo; gawio na amana zinarukwa.';
+      'Faili zilizotolewa kutoka Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity na Robinhood pia zinatambuliwa, pamoja na mauzo na gawio (baada ya kukatwa kodi ya zuio); amana zinarukwa.';
 
   @override
   String get portfolioImportFile => 'Chagua faili';

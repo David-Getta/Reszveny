@@ -1906,7 +1906,7 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Mailhan usab ang mga export gikan sa Revolut, Trading 212 ug Interactive Brokers, apil ang mga gibaligya; ang mga dibidendo ug deposito laktawan.';
+      'Mailhan usab ang mga export gikan sa Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ug Robinhood, apil ang mga gibaligya ug dibidendo (kuhaan na sa withholding tax); ang mga deposito laktawan.';
 
   @override
   String get portfolioImportFile => 'Pagpili og file';

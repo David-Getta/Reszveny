@@ -1904,7 +1904,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Bo ke zaba mpi mikanda ya ke basika na Revolut, Trading 212 ti Interactive Brokers, ti mitekisa; dividende ti mbongo ya bo ke tula ke bikama.';
+      'Bo ke zaba mpi mikanda ya ke basika na Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ti Robinhood, ti mitekisa ti dividende (na nima ya kukatula mpaku); mbongo ya bo ke tula ke bikama.';
 
   @override
   String get portfolioImportFile => 'Pona fisye mosi';

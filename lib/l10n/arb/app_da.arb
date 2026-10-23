@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Salg modregnes først i dine ældste køb (FIFO) og omregnes til dagens valutakurs. Brug din mæglers opgørelse til selvangivelsen.",
   "staleNewResults": "Siden denne analyse er der offentliggjort nyt kvartalsregnskab ({symbol}, {date}).",
   "newResultsBadge": "Nyt regnskab",
-  "portfolioImportBrokers": "Eksporter fra Revolut, Trading 212 og Interactive Brokers genkendes også, med salg; udbytte og indbetalinger springes over.",
+  "portfolioImportBrokers": "Eksporter fra Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity og Robinhood genkendes også, med salg og udbytte (fratrukket kildeskat); indbetalinger springes over.",
   "portfolioImportFile": "Vælg en fil",
   "offlineBanner": "Ingen forbindelse – viser de senest gemte data ({time}).",
   "glossMarketCap": "Hvad hele selskabet er værd på aktiemarkedet: aktiekurs × antal aktier.",

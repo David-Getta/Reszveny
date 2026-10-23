@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "فرۆشتنەکان سەرەتا لەگەڵ کۆنترین کڕینەکانت ڕێکدەخرێن (FIFO)، و بە نرخی ئاڵوگۆڕی ئەمڕۆ دەگۆڕدرێن. بۆ ڕاپۆرتی باج، کەشفی بڕۆکەرەکەت بەکاربهێنە.",
   "staleNewResults": "لە دوای ئەم شیکارییەوە ئەنجامی وەرزیی نوێ بڵاوکراوەتەوە ({symbol}، {date}).",
   "newResultsBadge": "ئەنجامی نوێ",
-  "portfolioImportBrokers": "هەناردەکانی Revolut، Trading 212 و Interactive Brokers یش لەگەڵ فرۆشتنەکان دەناسرێنەوە؛ قازانجی پشک و پارە دانان پشتگوێ دەخرێن.",
+  "portfolioImportBrokers": "هەناردەکانی Revolut، Trading 212، Interactive Brokers، DEGIRO، Schwab، Fidelity و Robinhood یش لەگەڵ فرۆشتن و قازانجی پشک (دوای لێبڕینی باجی سەرچاوە) دەناسرێنەوە؛ پارە دانان پشتگوێ دەخرێت.",
   "portfolioImportFile": "فایلێک هەڵبژێرە",
   "offlineBanner": "پەیوەندی نییە – دوایین داتای پاشەکەوتکراو پیشان دەدرێت ({time}).",
   "glossMarketCap": "کۆی کۆمپانیاکە لە بازاڕی پشکدا چەندی بەهایە: نرخی پشک × ژمارەی پشکەکان.",

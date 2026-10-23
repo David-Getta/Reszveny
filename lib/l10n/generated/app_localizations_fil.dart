@@ -1903,7 +1903,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Nakikilala rin ang mga export mula sa Revolut, Trading 212 at Interactive Brokers, kasama ang mga benta; nilalaktawan ang mga dibidendo at deposito.';
+      'Nakikilala rin ang mga export mula sa Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity at Robinhood, kasama ang mga benta at dibidendo (bawas na ang withholding tax); nilalaktawan ang mga deposito.';
 
   @override
   String get portfolioImportFile => 'Pumili ng file';

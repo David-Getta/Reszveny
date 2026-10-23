@@ -1900,7 +1900,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Uitvoere van Revolut, Trading 212 en Interactive Brokers word ook herken, met verkope; dividende en deposito\'s word oorgeslaan.';
+      'Uitvoere van Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity en Robinhood word ook herken, met verkope en dividende (ná aftrek van terughoubelasting); deposito\'s word oorgeslaan.';
 
   @override
   String get portfolioImportFile => 'Kies \'n lêer';

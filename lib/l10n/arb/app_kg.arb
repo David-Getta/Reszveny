@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Bo ke tadila ntete kuteka ti kusumba na nge ya ntama kibeni (FIFO), bo me soba yo na ntalu ya nsobolo ya bubu yai. Sambu na mukanda ya mpaku, sadila mukanda ya broker na nge.",
   "staleNewResults": "Banda analyse yai, ba résultats ya mpa ya trimestre me basika ({symbol}, {date}).",
   "newResultsBadge": "Résultats ya mpa",
-  "portfolioImportBrokers": "Bo ke zaba mpi mikanda ya ke basika na Revolut, Trading 212 ti Interactive Brokers, ti mitekisa; dividende ti mbongo ya bo ke tula ke bikama.",
+  "portfolioImportBrokers": "Bo ke zaba mpi mikanda ya ke basika na Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ti Robinhood, ti mitekisa ti dividende (na nima ya kukatula mpaku); mbongo ya bo ke tula ke bikama.",
   "portfolioImportFile": "Pona fisye mosi",
   "offlineBanner": "Kuvwanda ve na connexion – beto ke monisa bansangu ya nsuka ya bo bumbaka ({time}).",
   "glossMarketCap": "Ntalu ya kompani yonso mu bourse: ntalu ya action × kutanga ya ba action.",

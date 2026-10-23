@@ -1906,7 +1906,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212, Interactive Brokers nisqakunamanta exportasqakunatapas riqsinmi, rantikusqakunawan; dividendokunata, churasqa qullqitapas saqinmi.';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity, Robinhood nisqakunamanta exportasqakunatapas riqsinmi, rantikusqakunawan dividendokunawan (retenisqa impuesto qichusqa); churasqa qullqitaqa saqinmi.';
 
   @override
   String get portfolioImportFile => 'Huk archivota akllay';

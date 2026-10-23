@@ -1905,7 +1905,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Ba-export ya Revolut, Trading 212 mpe Interactive Brokers mpe eyebanaka, elongo na biteki; dividende mpe mbongo oyo etiamaki ezali kolekisama.';
+      'Ba-export ya Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity mpe Robinhood mpe eyebanaka, elongo na biteki mpe dividende (sima ya kolongola mpako oyo ekatamaka); mbongo oyo etiamaki ezali kolekisama.';
 
   @override
   String get portfolioImportFile => 'Pona fisyé moko';

@@ -3430,7 +3430,7 @@ abstract class AppLocalizations {
   /// Note in the portfolio import dialog. Keep the broker names as they are.
   ///
   /// In en, this message translates to:
-  /// **'Exports from Revolut, Trading 212 and Interactive Brokers are recognised too, with sales; dividends and deposits are skipped.'**
+  /// **'Exports from Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity and Robinhood are recognised too, with sales and dividends (net of withholding tax); deposits are skipped.'**
   String get portfolioImportBrokers;
 
   /// Button in the portfolio import dialog: pick a CSV file instead of pasting.

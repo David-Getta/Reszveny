@@ -1,3 +1,4 @@
+import '../../core/models/stock_candidate.dart';
 import 'add_lot_dialog.dart' show parseDecimal;
 import 'portfolio_store.dart';
 
@@ -129,6 +130,7 @@ class ImportedLot {
     this.sell = false,
     this.account,
     this.fee = 0,
+    this.isin,
   });
 
   /// A számla neve (saját exportból vagy „account” / „számla” oszlopból).
@@ -136,6 +138,10 @@ class ImportedLot {
 
   /// A tranzakció díja (saját export „fee”, IBKR „Comm/Fee”, magyarul „jutalék” / „díj”).
   final double fee;
+
+  /// Ticker nélküli exportban (DEGIRO) az értékpapír ISIN-je: a tickert az import
+  /// a keresővel oldja fel ([CsvImport.withSymbols]); addig a [symbol] üres.
+  final String? isin;
 
   final String symbol;
   final double quantity;
@@ -176,6 +182,61 @@ class CsvImport {
   final List<ImportedDividend> dividends;
   final List<ImportedSplit> splits;
   final int skipped;
+
+  /// A még ticker nélküli sorok ISIN-jei a kereskedés pénznemével (a feloldáshoz).
+  Map<String, String> get isins => {
+    for (final l in lots)
+      if (l.isin case final i? when l.symbol.isEmpty) i: l.currency,
+  };
+
+  /// A ticker nélküli sorok a feloldott tickerrel ([symbols]: ISIN → ticker); amit
+  /// nem sikerült feloldani, kimarad (a kihagyottak közé számít).
+  CsvImport withSymbols(Map<String, String> symbols) {
+    final out = <ImportedLot>[];
+    var missing = 0;
+    for (final l in lots) {
+      if (l.symbol.isNotEmpty) {
+        out.add(l);
+      } else if (symbols[l.isin] case final s?) {
+        out.add(
+          ImportedLot(
+            symbol: s,
+            quantity: l.quantity,
+            price: l.price,
+            currency: l.currency,
+            date: l.date,
+            sell: l.sell,
+            account: l.account,
+            fee: l.fee,
+            isin: l.isin,
+          ),
+        );
+      } else {
+        missing++;
+      }
+    }
+    return CsvImport(out, skipped + missing, dividends: dividends, splits: splits);
+  }
+}
+
+/// ISIN → ticker a piaci adatok keresőjével, ISIN-enként egyszer: a [isins] értéke a
+/// kereskedés pénzneme – nem dolláros kereskedésnél a helyi tőzsdei (pontos utótagú,
+/// pl. `ASML.AS`) találat az elsőbb, dollárosnál az utótag nélküli; ami nem oldható
+/// fel, kimarad.
+Future<Map<String, String>> resolveIsins(
+  Future<List<StockCandidate>> Function(String query) search,
+  Map<String, String> isins,
+) async {
+  final out = <String, String>{};
+  await Future.wait([
+    for (final e in isins.entries)
+      search(e.key).then((found) {
+        bool local(StockCandidate c) => c.symbol.contains('.') == (e.value != 'USD');
+        final best = found.where(local).firstOrNull ?? found.firstOrNull;
+        if (best != null && _symbol.hasMatch(best.symbol.toUpperCase())) out[e.key] = best.symbol.toUpperCase();
+      }, onError: (Object _) {}),
+  ]);
+  return out;
 }
 
 /// Saját export `split` sora: az új darab a darabszám, a régi az ár oszlopában, dátummal.
@@ -194,6 +255,7 @@ ImportedSplit? _split(String symbol, String to, String from, String date) {
 
 final _symbol = RegExp(r'^[A-Z0-9][A-Z0-9.\-:^]{0,14}$');
 final _currency = RegExp(r'^[A-Z]{3}$');
+final _isin = RegExp(r'^[A-Z]{2}[A-Z0-9]{9}[0-9]$');
 final _nonNumeric = RegExp(r'[^0-9,.\-]');
 
 /// Szám egy cellából, a pénznemjelek, szóközök és egyéb jelek nélkül.
@@ -273,6 +335,8 @@ String? _positionalAccount(List<String> f) =>
 /// táblázatokhoz magyar és német fejlécek is.
 const _roles = <String, Set<String>>{
   'symbol': {'symbol', 'ticker', 'instrument', 'szimblum', 'tickerkd', 'krzel'},
+  // Ticker nélküli exportban (DEGIRO) az ISIN: a tickert az import oldja fel.
+  'isin': {'isin'},
   'quantity': {
     'quantity', 'qty', 'shares', 'noofshares', 'numberofshares', 'units', //
     'mennyisg', 'darab', 'darabszm', 'db', 'stck', 'stckzahl', 'anzahl', 'menge',
@@ -297,7 +361,7 @@ const _roles = <String, Set<String>>{
   'account': {'account', 'accountname', 'szmla', 'konto', 'depot'},
   // A tranzakció díja a kereskedés pénznemében (az IBKR negatívként írja).
   'fee': {
-    'fee', 'fees', 'feescomm', 'commission', 'commissions', 'commfee', //
+    'fee', 'fees', 'feescomm', 'commission', 'commissions', 'commfee', 'transactionandorthirdpartyfees', //
     'jutalk', 'dj', 'gebhr', 'gebhren', 'provision',
   },
 };
@@ -309,7 +373,7 @@ const _weakRoles = <String, Set<String>>{
   'side': {'tpus', 'typ', 'art'},
 };
 
-/// Fejlécsor felismerése: oszlopszerep → index, ha van ticker, darabszám és ár.
+/// Fejlécsor felismerése: oszlopszerep → index, ha van ticker (vagy ISIN), darabszám és ár.
 Map<String, int>? _header(List<String> cells) {
   final found = <String, int>{};
   for (final roles in [_roles, _weakRoles]) {
@@ -320,10 +384,15 @@ Map<String, int>? _header(List<String> cells) {
       }
     }
   }
-  return found.containsKey('symbol') && found.containsKey('quantity') && found.containsKey('price') ? found : null;
+  return (found.containsKey('symbol') || found.containsKey('isin')) &&
+          found.containsKey('quantity') &&
+          found.containsKey('price')
+      ? found
+      : null;
 }
 
-/// Dátum a gyakori alakokban: `2024-03-14…`, `2024.03.14.`, `20240314`, `14/03/2024`, `14.03.2024`
+/// Dátum a gyakori alakokban: `2024-03-14…`, `2024.03.14.`, `20240314`, `14/03/2024`, `14.03.2024`,
+/// `14-03-2024`
 /// ([monthFirst] esetén a perjeles `03/14/2024`).
 DateTime? _date(String raw, {bool monthFirst = false}) {
   final s = raw.trim();
@@ -337,7 +406,7 @@ DateTime? _date(String raw, {bool monthFirst = false}) {
   }
   final compact = RegExp(r'^(\d{4})(\d{2})(\d{2})(\D|$)').firstMatch(s);
   if (compact != null) return DateTime.tryParse('${compact[1]}-${compact[2]}-${compact[3]}');
-  final eu = RegExp(r'^(\d{1,2})([./])(\d{1,2})[./](\d{4})').firstMatch(s);
+  final eu = RegExp(r'^(\d{1,2})([./-])(\d{1,2})[./-](\d{4})').firstMatch(s);
   if (eu != null) {
     // Perjellel az amerikai sorrend is lehet (hónap/nap/év); ponttal mindig nap.hónap.év.
     final swap = monthFirst && eu[2] == '/';
@@ -399,6 +468,16 @@ CsvImport _withHeader(
     final i = col[role];
     return i == null || i >= f.length ? '' : f[i];
   }
+
+  // A DEGIRO az ár és a díj pénznemét a mellettük álló, név nélküli oszlopba írja.
+  int? unnamedAfter(String role) => switch (col[role]) {
+    final i? when i + 1 < header.length && header[i + 1].trim().isEmpty => i + 1,
+    _ => null,
+  };
+  final priceCcyCol = col.containsKey('currency') ? null : unnamedAfter('price');
+  final feeCcyCol = unnamedAfter('fee');
+  final rateCol = header.indexWhere((c) => c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), '') == 'exchangerate');
+  String at(List<String> f, int? i) => i == null || i < 0 || i >= f.length ? '' : f[i].trim();
 
   final us = header.any((c) => _usHeaders.contains(c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), '')));
   final mdy = _monthFirst([
@@ -496,22 +575,33 @@ CsvImport _withHeader(
     if (sell == null) continue;
     final quantity = signed?.abs();
     final (price, priceCcy) = _price(cell(f, 'price'));
-    if (!_symbol.hasMatch(symbol) || quantity == null || quantity <= 0 || price == null || price <= 0) {
+    // Ticker nélkül az ISIN is elég (a tickert az import oldja fel).
+    final isin = cell(f, 'isin').trim().toUpperCase();
+    final byIsin = !_symbol.hasMatch(symbol) && _isin.hasMatch(isin);
+    if ((!_symbol.hasMatch(symbol) && !byIsin) || quantity == null || quantity <= 0 || price == null || price <= 0) {
       skipped++;
       continue;
     }
-    final ccyCell = cell(f, 'currency').toUpperCase();
+    final ccyCell = (priceCcyCol == null ? cell(f, 'currency') : at(f, priceCcyCol)).toUpperCase();
     final ccy = _currency.hasMatch(ccyCell) ? ccyCell : (priceCcy ?? defaultCurrency);
+    // A más pénznemű díj (DEGIRO: az alapdevizában) az árfolyammal a kereskedés pénznemébe.
+    var fee = _decimal(cell(f, 'fee'))?.abs();
+    final feeCcy = at(f, feeCcyCol).toUpperCase();
+    if (fee != null && _currency.hasMatch(feeCcy) && feeCcy != ccy) {
+      final rate = _decimal(at(f, rateCol));
+      fee = rate != null && rate > 0 ? fee * rate : null;
+    }
     lots.add(
       ImportedLot(
-        symbol: symbol,
+        symbol: byIsin ? '' : symbol,
         quantity: quantity,
         price: price,
         currency: ccy,
         date: date(f),
         sell: sell,
         account: PortfolioLot.cleanAccount(cell(f, 'account')),
-        fee: PortfolioLot.cleanFee(_decimal(cell(f, 'fee'))?.abs()),
+        fee: PortfolioLot.cleanFee(fee),
+        isin: byIsin ? isin : null,
       ),
     );
   }

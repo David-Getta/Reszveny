@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Swixavisiwa swi sungula ku fambisiwa ni swixaviwa swa wena swa khale ngopfu (FIFO), swi cinciwa hi mpimo wa ku cincana mali wa namuntlha. Eka xiviko xa wena xa xibalo, tirhisa xitatimende xa broker ya wena.",
   "staleNewResults": "Ku sukela eka nxopaxopo lowu, ku humesiwile mbuyelo lowuntshwa wa kotara ({symbol}, {date}).",
   "newResultsBadge": "Mbuyelo lowuntshwa",
-  "portfolioImportBrokers": "Swo humesiwa eka Revolut, Trading 212 na Interactive Brokers na swona swa tiveka, swin'we ni leswi xavisiweke; dividende ni mali leyi vekiweke swa tlulamiwa.",
+  "portfolioImportBrokers": "Swo humesiwa eka Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity na Robinhood na swona swa tiveka, swin'we ni leswi xavisiweke ni dividende (endzhaku ka ku susiwa ka xibalo lexi khomiweke); mali leyi vekiweke ya tlulamiwa.",
   "portfolioImportFile": "Hlawula fayili",
   "offlineBanner": "Ku hava vuhlanganisi – ku kombisiwa data yo hetelela leyi hlayisiweke ({time}).",
   "glossMarketCap": "Nkoka wa khampani hinkwayo eka makete wa tixere: nxavo wa xere × nhlayo ya tixere.",

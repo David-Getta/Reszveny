@@ -1907,7 +1907,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Ho tsejoa le diromelwantle tse tswang ho Revolut, Trading 212 le Interactive Brokers, hammoho le thekiso; dividende le dipeheletso di a tlolwa.';
+      'Ho tsejoa le diromelwantle tse tswang ho Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity le Robinhood, hammoho le thekiso le dividende (kamora ho ntshwa ha lekgetho le tshwerweng); dipeheletso di a tlolwa.';
 
   @override
   String get portfolioImportFile => 'Kgetha faele';

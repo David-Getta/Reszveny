@@ -1902,7 +1902,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Njihen edhe eksportet nga Revolut, Trading 212 dhe Interactive Brokers, bashkë me shitjet; dividendët dhe depozitat anashkalohen.';
+      'Njihen edhe eksportet nga Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity dhe Robinhood, bashkë me shitjet dhe dividendët (pas zbritjes së tatimit në burim); depozitat anashkalohen.';
 
   @override
   String get portfolioImportFile => 'Zgjidh një skedar';

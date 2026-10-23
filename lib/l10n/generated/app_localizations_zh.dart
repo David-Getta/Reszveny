@@ -1821,7 +1821,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      '也能识别 Revolut、Trading 212 和 Interactive Brokers 的导出文件，包括卖出记录；股息和入金会被跳过。';
+      '也能识别 Revolut、Trading 212、Interactive Brokers、DEGIRO、Schwab、Fidelity 和 Robinhood 的导出文件，包括卖出记录和股息（已扣除预扣税）；入金会被跳过。';
 
   @override
   String get portfolioImportFile => '选择文件';
@@ -4769,7 +4769,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioImportBrokers =>
-      '亦能識別 Revolut、Trading 212 及 Interactive Brokers 的匯出檔案，包括賣出記錄；股息及入金會略過。';
+      '亦能識別 Revolut、Trading 212、Interactive Brokers、DEGIRO、Schwab、Fidelity 及 Robinhood 的匯出檔案，包括賣出記錄及股息（已扣除預扣稅）；入金會略過。';
 
   @override
   String get portfolioImportFile => '選擇檔案';

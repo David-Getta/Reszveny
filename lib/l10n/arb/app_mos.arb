@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "B sẽn koosã, b sɩngda n zĩndgda ne f raab kʋdemdã (FIFO), n lebg ne rũndã ligd teedgo. Lampo sebrã yĩnga, tʋm ne f broker sebrã.",
   "staleNewResults": "Hal sẽn maan vaeesg kãngã, b yiisa ligd-yɛl paalse ({symbol}, {date}).",
   "newResultsBadge": "Ligd-yɛl paalse",
-  "portfolioImportBrokers": "B miẽ a Revolut, Trading 212 la Interactive Brokers sɛb-rãmba me, ne koosgã; dividãnd la ligd sẽn ning-b n ka kẽesd ye.",
+  "portfolioImportBrokers": "B miẽ a Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity la Robinhood sɛb-rãmba me, ne koosgã la dividãnd (b sẽn yiis lampo wã poore); ligd sẽn ning-b n ka kẽesd ye.",
   "portfolioImportFile": "Yãk fiise",
   "offlineBanner": "Kõneksõ ka be ye – d wilgdame bãngr sẽn yaa sɛɛb n bĩngame ({time}).",
   "glossMarketCap": "Kʋmpaani wã fãa yõod burs raagẽ: aksiõ yõodo × aksiõ sõore.",

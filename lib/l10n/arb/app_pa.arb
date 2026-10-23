@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "ਵਿਕਰੀਆਂ ਨੂੰ ਪਹਿਲਾਂ ਤੁਹਾਡੀਆਂ ਸਭ ਤੋਂ ਪੁਰਾਣੀਆਂ ਖ਼ਰੀਦਾਂ ਨਾਲ ਮਿਲਾਇਆ ਜਾਂਦਾ ਹੈ (FIFO), ਅੱਜ ਦੀ ਵਟਾਂਦਰਾ ਦਰ 'ਤੇ ਬਦਲ ਕੇ। ਟੈਕਸ ਰਿਟਰਨ ਲਈ ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੀ ਸਟੇਟਮੈਂਟ ਵਰਤੋ।",
   "staleNewResults": "ਇਸ ਵਿਸ਼ਲੇਸ਼ਣ ਤੋਂ ਬਾਅਦ ਨਵੇਂ ਤਿਮਾਹੀ ਨਤੀਜੇ ਜਾਰੀ ਹੋਏ ਹਨ ({symbol}, {date})।",
   "newResultsBadge": "ਨਵੇਂ ਨਤੀਜੇ",
-  "portfolioImportBrokers": "Revolut, Trading 212 ਅਤੇ Interactive Brokers ਦੇ ਐਕਸਪੋਰਟ ਵੀ ਵਿਕਰੀਆਂ ਸਮੇਤ ਪਛਾਣੇ ਜਾਂਦੇ ਹਨ; ਲਾਭਅੰਸ਼ ਅਤੇ ਜਮ੍ਹਾਂ ਛੱਡ ਦਿੱਤੇ ਜਾਂਦੇ ਹਨ।",
+  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ਅਤੇ Robinhood ਦੇ ਐਕਸਪੋਰਟ ਵੀ ਵਿਕਰੀਆਂ ਅਤੇ ਲਾਭਅੰਸ਼ (ਸਰੋਤ 'ਤੇ ਕੱਟਿਆ ਟੈਕਸ ਘਟਾ ਕੇ) ਸਮੇਤ ਪਛਾਣੇ ਜਾਂਦੇ ਹਨ; ਜਮ੍ਹਾਂ ਛੱਡ ਦਿੱਤੇ ਜਾਂਦੇ ਹਨ।",
   "portfolioImportFile": "ਫ਼ਾਈਲ ਚੁਣੋ",
   "offlineBanner": "ਕੋਈ ਕਨੈਕਸ਼ਨ ਨਹੀਂ – ਆਖਰੀ ਵਾਰ ਸੰਭਾਲਿਆ ਡਾਟਾ ਦਿਖਾਇਆ ਜਾ ਰਿਹਾ ਹੈ ({time})।",
   "glossMarketCap": "ਸ਼ੇਅਰ ਬਾਜ਼ਾਰ ਵਿੱਚ ਪੂਰੀ ਕੰਪਨੀ ਦੀ ਕੀਮਤ ਕਿੰਨੀ ਹੈ: ਸ਼ੇਅਰ ਦਾ ਭਾਅ × ਸ਼ੇਅਰਾਂ ਦੀ ਗਿਣਤੀ।",

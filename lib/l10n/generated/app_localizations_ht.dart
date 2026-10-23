@@ -1894,7 +1894,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Ekspòtasyon Revolut, Trading 212 ak Interactive Brokers rekonèt tou, ansanm ak vant yo; dividann ak depo yo sote.';
+      'Ekspòtasyon Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ak Robinhood rekonèt tou, ansanm ak vant yo ak dividann yo (apre yo retire taks ki retni alasous la); depo yo sote.';
 
   @override
   String get portfolioImportFile => 'Chwazi yon fichye';

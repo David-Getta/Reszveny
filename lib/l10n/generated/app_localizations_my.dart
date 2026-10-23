@@ -1889,7 +1889,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut၊ Trading 212 နှင့် Interactive Brokers မှ ထုတ်ယူထားသော ဖိုင်များကိုလည်း ရောင်းချမှုများနှင့်အတူ မှတ်သိနိုင်သည်။ အမြတ်ဝေစုနှင့် ငွေသွင်းမှုများကို ကျော်သွားသည်။';
+      'Revolut၊ Trading 212၊ Interactive Brokers၊ DEGIRO၊ Schwab၊ Fidelity နှင့် Robinhood မှ ထုတ်ယူထားသော ဖိုင်များကိုလည်း ရောင်းချမှုများနှင့် အမြတ်ဝေစု (ကြိုတင်နုတ်ယူသည့် အခွန်နုတ်ပြီး) နှင့်အတူ မှတ်သိနိုင်သည်။ ငွေသွင်းမှုများကို ကျော်သွားသည်။';
 
   @override
   String get portfolioImportFile => 'ဖိုင်ရွေးရန်';

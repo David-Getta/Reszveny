@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Iibabka marka hore waxaa lala jaanqaadaa iibsashooyinkaaga ugu da'da weyn (FIFO), waxaana lagu beddelaa sicirka sarrifka maanta. Canshuur celintaada, isticmaal warbixinta dillaalkaaga.",
   "staleNewResults": "Tan iyo falanqayntan, natiijooyin rubuc sanadeed oo cusub ayaa la daabacay ({symbol}, {date}).",
   "newResultsBadge": "Natiijooyin cusub",
-  "portfolioImportBrokers": "Dhoofinta Revolut, Trading 212 iyo Interactive Brokers sidoo kale waa la aqoonsadaa, oo ay la socdaan iibka; qaybta faa'iidada iyo dhigaalka waa laga boodaa.",
+  "portfolioImportBrokers": "Dhoofinta Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity iyo Robinhood sidoo kale waa la aqoonsadaa, oo ay la socdaan iibka iyo qaybta faa'iidada (marka laga jaro canshuurta la qabto); dhigaalka waa laga boodaa.",
   "portfolioImportFile": "Dooro fayl",
   "offlineBanner": "Xiriir ma jiro – waxaa la muujinayaa xogtii ugu dambeysay ee la keydiyay ({time}).",
   "glossMarketCap": "Inta ay shirkadda oo dhan ku qiimaysan tahay suuqa saamiyada: qiimaha saamiga × tirada saamiyada.",

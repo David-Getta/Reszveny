@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "賣出優先與最早的買入配對（FIFO），按今日匯率換算。報稅時請以經紀的結單為準。",
   "staleNewResults": "此分析之後已公佈新一季業績（{symbol}，{date}）。",
   "newResultsBadge": "新業績",
-  "portfolioImportBrokers": "亦能識別 Revolut、Trading 212 及 Interactive Brokers 的匯出檔案，包括賣出記錄；股息及入金會略過。",
+  "portfolioImportBrokers": "亦能識別 Revolut、Trading 212、Interactive Brokers、DEGIRO、Schwab、Fidelity 及 Robinhood 的匯出檔案，包括賣出記錄及股息（已扣除預扣稅）；入金會略過。",
   "portfolioImportFile": "選擇檔案",
   "offlineBanner": "沒有網絡連線 – 正在顯示上次儲存的數據（{time}）。",
   "glossMarketCap": "整間公司在股市上的價值：股價 × 股份數目。",

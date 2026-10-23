@@ -1909,7 +1909,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Makilala man ang mga export halin sa Revolut, Trading 212 kag Interactive Brokers, upod ang mga ginbaligya; ginalaktawan ang mga dibidendo kag deposito.';
+      'Makilala man ang mga export halin sa Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity kag Robinhood, upod ang mga ginbaligya kag dibidendo (bawas na ang withholding tax); ginalaktawan ang mga deposito.';
 
   @override
   String get portfolioImportFile => 'Magpili sang file';

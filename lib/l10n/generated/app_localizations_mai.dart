@@ -1891,7 +1891,7 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212 आ Interactive Brokers क एक्सपोर्ट सेहो बिक्री सहित चिन्हल जाइत अछि; लाभांश आ जमा छोड़ि देल जाइत अछि।';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity आ Robinhood क एक्सपोर्ट सेहो बिक्री आ लाभांश (स्रोत पर कटल कर घटाकऽ) सहित चिन्हल जाइत अछि; जमा छोड़ि देल जाइत अछि।';
 
   @override
   String get portfolioImportFile => 'फाइल चुनू';

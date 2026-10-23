@@ -1908,7 +1908,7 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Swo humesiwa eka Revolut, Trading 212 na Interactive Brokers na swona swa tiveka, swin\'we ni leswi xavisiweke; dividende ni mali leyi vekiweke swa tlulamiwa.';
+      'Swo humesiwa eka Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity na Robinhood na swona swa tiveka, swin\'we ni leswi xavisiweke ni dividende (endzhaku ka ku susiwa ka xibalo lexi khomiweke); mali leyi vekiweke ya tlulamiwa.';
 
   @override
   String get portfolioImportFile => 'Hlawula fayili';

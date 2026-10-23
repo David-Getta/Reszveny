@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Feereliw bɛ bɛn i ka sanni kɔrɔw ma fɔlɔ (FIFO), ka falen bi wari falen sɔngɔ la. I ka nisɔngɔ dantigɛli kama, i ka broker ka sɛbɛn baara.",
   "staleNewResults": "Kabini nin sɛgɛsɛgɛli kɛra, kalo saba jatebɔ kura bɔra ({symbol}, {date}).",
   "newResultsBadge": "Jatebɔ kura",
-  "portfolioImportBrokers": "Revolut, Trading 212 ani Interactive Brokers ka bɔliw fana bɛ dɔn, feereliw fana; tɔnɔ tilaliw ni wari donniw bɛ to yen.",
+  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ani Robinhood ka bɔliw fana bɛ dɔn, feereliw ni tɔnɔ tilaliw fana (lanpo tigɛlen bɔlen u la); wari donniw bɛ to yen.",
   "portfolioImportFile": "Fisiye dɔ sugandi",
   "offlineBanner": "Jɛɲɔgɔnya tɛ yen – kunnafoni laban minnu marala, olu de bɛ yira ({time}).",
   "glossMarketCap": "Sosiyete bɛɛ ka nafa ye min ye sugu kan: aksiyɔn sɔngɔ × aksiyɔnw hakɛ.",

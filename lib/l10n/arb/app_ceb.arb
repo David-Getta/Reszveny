@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Ang mga pagbaligya ipares una sa imong pinakaunang mga pagpalit (FIFO), gi-convert sa exchange rate karon. Para sa imong tax return, gamita ang statement sa imong broker.",
   "staleNewResults": "Sukad niining pagtuki, may bag-ong quarterly nga resulta nga gipatik ({symbol}, {date}).",
   "newResultsBadge": "Bag-ong resulta",
-  "portfolioImportBrokers": "Mailhan usab ang mga export gikan sa Revolut, Trading 212 ug Interactive Brokers, apil ang mga gibaligya; ang mga dibidendo ug deposito laktawan.",
+  "portfolioImportBrokers": "Mailhan usab ang mga export gikan sa Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ug Robinhood, apil ang mga gibaligya ug dibidendo (kuhaan na sa withholding tax); ang mga deposito laktawan.",
   "portfolioImportFile": "Pagpili og file",
   "offlineBanner": "Walay koneksyon – gipakita ang katapusang na-save nga datos ({time}).",
   "glossMarketCap": "Pila ang bili sa tibuok kompanya sa stock market: presyo sa share × gidaghanon sa shares.",

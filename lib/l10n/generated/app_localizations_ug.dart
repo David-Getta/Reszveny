@@ -1899,7 +1899,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut، Trading 212 ۋە Interactive Brokers نىڭ چىقىرىلغان ھۆججەتلىرىمۇ سېتىشلار بىلەن بىللە تونۇلىدۇ؛ پايدا ئۈلۈشى ۋە ئامانەتلەر ئاتلاپ ئۆتۈلىدۇ.';
+      'Revolut، Trading 212، Interactive Brokers، DEGIRO، Schwab، Fidelity ۋە Robinhood نىڭ چىقىرىلغان ھۆججەتلىرىمۇ سېتىشلار ۋە پايدا ئۈلۈشى (مەنبەدە تۇتۇپ قېلىنغان باج چىقىرىۋېتىلگەندىن كېيىن) بىلەن بىللە تونۇلىدۇ؛ ئامانەتلەر ئاتلاپ ئۆتۈلىدۇ.';
 
   @override
   String get portfolioImportFile => 'ھۆججەت تاللاش';

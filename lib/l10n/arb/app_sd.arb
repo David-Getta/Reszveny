@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "وڪرو پهريان توهان جي سڀ کان پراڻين خريدارين سان ملايو ويندو آهي (FIFO)، اڄ جي مٽاسٽا جي شرح تي تبديل ڪري. ٽيڪس ريٽرن لاءِ پنهنجي بروڪر جو بيان استعمال ڪريو.",
   "staleNewResults": "هن تجزيي کان پوءِ نوان ٽماهي نتيجا جاري ٿيا آهن ({symbol}، {date}).",
   "newResultsBadge": "نوان نتيجا",
-  "portfolioImportBrokers": "Revolut، Trading 212 ۽ Interactive Brokers جا ايڪسپورٽ به وڪري سميت سڃاتا وڃن ٿا؛ ڊيويڊنڊ ۽ جمع ٿيل رقم ڇڏي ڏني وڃي ٿي.",
+  "portfolioImportBrokers": "Revolut، Trading 212، Interactive Brokers، DEGIRO، Schwab، Fidelity ۽ Robinhood جا ايڪسپورٽ به وڪري ۽ ڊيويڊنڊ سميت (ذريعي تي ڪٽيل ٽيڪس گهٽائي) سڃاتا وڃن ٿا؛ جمع ٿيل رقم ڇڏي ڏني وڃي ٿي.",
   "portfolioImportFile": "فائل چونڊيو",
   "offlineBanner": "ڪنيڪشن ناهي – آخري محفوظ ڪيل ڊيٽا ڏيکاري پئي وڃي ({time}).",
   "glossMarketCap": "اسٽاڪ مارڪيٽ ۾ سڄي ڪمپني جي قيمت ڪيتري آهي: شيئر جي قيمت × شيئرن جو تعداد.",

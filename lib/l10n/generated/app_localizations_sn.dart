@@ -1902,7 +1902,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Zvinobviswa kubva kuRevolut, Trading 212 neInteractive Brokers zvinozivikanwawo, pamwe chete nezvatengeswa; dhividhendi nemari yakaiswa zvinosvetuka.';
+      'Zvinobviswa kubva kuRevolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity neRobinhood zvinozivikanwawo, pamwe chete nezvatengeswa nedhividhendi (mushure mekubviswa kwemutero unobatwa); mari yakaiswa inosvetuka.';
 
   @override
   String get portfolioImportFile => 'Sarudza faira';

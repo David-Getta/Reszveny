@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Sprzedaże są najpierw przypisywane do najstarszych zakupów (FIFO) i przeliczane po dzisiejszym kursie. Do zeznania podatkowego użyj wyciągu od swojego brokera.",
   "staleNewResults": "Od tej analizy opublikowano nowe wyniki kwartalne ({symbol}, {date}).",
   "newResultsBadge": "Nowe wyniki",
-  "portfolioImportBrokers": "Rozpoznawane są też eksporty z Revolut, Trading 212 i Interactive Brokers, łącznie ze sprzedażą; dywidendy i wpłaty są pomijane.",
+  "portfolioImportBrokers": "Rozpoznawane są też eksporty z Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity i Robinhood, łącznie ze sprzedażą i dywidendami (po potrąceniu podatku u źródła); wpłaty są pomijane.",
   "portfolioImportFile": "Wybierz plik",
   "offlineBanner": "Brak połączenia – wyświetlane są ostatnio zapisane dane ({time}).",
   "glossMarketCap": "Ile cała spółka jest warta na giełdzie: cena akcji × liczba akcji.",

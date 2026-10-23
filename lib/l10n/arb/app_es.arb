@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Las ventas se asignan primero a tus compras más antiguas (FIFO) y se convierten al tipo de cambio de hoy. Para tu declaración de impuestos, usa el extracto de tu bróker.",
   "staleNewResults": "Desde este análisis se han publicado nuevos resultados trimestrales ({symbol}, {date}).",
   "newResultsBadge": "Nuevos resultados",
-  "portfolioImportBrokers": "También se reconocen las exportaciones de Revolut, Trading 212 e Interactive Brokers, con las ventas; los dividendos y los depósitos se omiten.",
+  "portfolioImportBrokers": "También se reconocen las exportaciones de Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity y Robinhood, con las ventas y los dividendos (netos de la retención en origen); los depósitos se omiten.",
   "portfolioImportFile": "Elige un archivo",
   "offlineBanner": "Sin conexión – se muestran los últimos datos guardados ({time}).",
   "glossMarketCap": "Lo que vale toda la empresa en bolsa: precio de la acción × número de acciones.",

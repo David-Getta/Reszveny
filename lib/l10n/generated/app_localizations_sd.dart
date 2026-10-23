@@ -1890,7 +1890,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut، Trading 212 ۽ Interactive Brokers جا ايڪسپورٽ به وڪري سميت سڃاتا وڃن ٿا؛ ڊيويڊنڊ ۽ جمع ٿيل رقم ڇڏي ڏني وڃي ٿي.';
+      'Revolut، Trading 212، Interactive Brokers، DEGIRO، Schwab، Fidelity ۽ Robinhood جا ايڪسپورٽ به وڪري ۽ ڊيويڊنڊ سميت (ذريعي تي ڪٽيل ٽيڪس گهٽائي) سڃاتا وڃن ٿا؛ جمع ٿيل رقم ڇڏي ڏني وڃي ٿي.';
 
   @override
   String get portfolioImportFile => 'فائل چونڊيو';

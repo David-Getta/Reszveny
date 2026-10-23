@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
+import 'package:reszveny/core/models/stock_candidate.dart';
 import 'package:reszveny/core/share/share_text.dart';
 import 'package:reszveny/features/portfolio/portfolio_csv.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
@@ -102,6 +103,45 @@ void main() {
     const neutral = 'Date,Symbol,Quantity,Price\n03/04/2025,OTP,10,30000\n';
     expect(parsePortfolioCsv(neutral).lots.single.date, DateTime(2025, 4, 3));
     expect(parsePortfolioCsv(neutral, monthFirst: true).lots.single.date, DateTime(2025, 3, 4));
+  });
+
+  test('DEGIRO: ISIN instead of a ticker, resolved by search; currency next to the price, fee converted', () async {
+    final degiro = parsePortfolioCsv(
+      'Date,Time,Product,ISIN,Reference exchange,Venue,Quantity,Price,,Local value,,Value,,Exchange rate,'
+      'Transaction and/or third party fees,,Total,,Order ID\n'
+      '14-03-2025,15:31,APPLE INC,US0378331005,NDQ,XNAS,10,172.50,USD,-1725.00,USD,-1590.56,EUR,1.0845,-1.00,EUR,'
+      '-1591.56,EUR,a1\n'
+      '02-04-2025,09:05,ASML HOLDING,NL0010273215,EAM,XAMS,-2,640.00,EUR,1280.00,EUR,1280.00,EUR,,-4.90,EUR,'
+      '1275.10,EUR,b2\n'
+      '03-04-2025,10:00,SOMETHING UNLISTED,XS0000000009,TDG,TDG,5,10.00,EUR,-50.00,EUR,-50.00,EUR,,0.00,EUR,-50.00,EUR,c3\n',
+    );
+    expect(degiro.isins, {'US0378331005': 'USD', 'NL0010273215': 'EUR', 'XS0000000009': 'EUR'});
+    expect(degiro.lots.map((l) => (l.quantity, l.price, l.currency, l.date, l.sell)), [
+      (10.0, 172.5, 'USD', DateTime(2025, 3, 14), false),
+      (2.0, 640.0, 'EUR', DateTime(2025, 4, 2), true),
+      (5.0, 10.0, 'EUR', DateTime(2025, 4, 3), false),
+    ]);
+    // Az euróban fizetett díj dollárban (1,00 × 1,0845); az azonos pénznemű változatlan.
+    expect(degiro.lots[0].fee, closeTo(1.0845, 1e-9));
+    expect(degiro.lots[1].fee, 4.9);
+
+    // Nem dolláros kereskedésnél a helyi tőzsde tickere az elsőbb; ami nem található, kimarad.
+    Future<List<StockCandidate>> search(String q) async => switch (q) {
+      'US0378331005' => const [
+        StockCandidate(symbol: 'AAPL', companyName: 'Apple Inc'),
+        StockCandidate(symbol: 'APC.DE', companyName: 'Apple Inc'),
+      ],
+      'NL0010273215' => const [
+        StockCandidate(symbol: 'ASML', companyName: 'ASML Holding'),
+        StockCandidate(symbol: 'ASML.AS', companyName: 'ASML Holding'),
+      ],
+      _ => const <StockCandidate>[],
+    };
+    final symbols = await resolveIsins(search, degiro.isins);
+    expect(symbols, {'US0378331005': 'AAPL', 'NL0010273215': 'ASML.AS'});
+    final resolved = degiro.withSymbols(symbols);
+    expect(resolved.lots.map((l) => l.symbol), ['AAPL', 'ASML.AS']);
+    expect(resolved.skipped, degiro.skipped + 1);
   });
 
   test('broker exports: Revolut, Trading 212 and Interactive Brokers, with sales; other rows are ignored', () {

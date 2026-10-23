@@ -1898,7 +1898,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Ekspor saka Revolut, Trading 212 lan Interactive Brokers uga dikenali, kalebu dodolan; dividen lan setoran dilewati.';
+      'Ekspor saka Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity lan Robinhood uga dikenali, kalebu dodolan lan dividen (sawise dipotong pajak); setoran dilewati.';
 
   @override
   String get portfolioImportFile => 'Pilih file';

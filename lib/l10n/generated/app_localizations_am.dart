@@ -1868,7 +1868,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'ከRevolut፣ Trading 212 እና Interactive Brokers የተላኩ ፋይሎችም ከሽያጮች ጋር ይታወቃሉ፤ የትርፍ ድርሻ እና ተቀማጭ ገንዘብ ይዘለላሉ።';
+      'ከRevolut፣ Trading 212፣ Interactive Brokers፣ DEGIRO፣ Schwab፣ Fidelity እና Robinhood የተላኩ ፋይሎችም ከሽያጮች እና ከትርፍ ድርሻ (ተቀናሽ ግብር ከተቀነሰ በኋላ) ጋር ይታወቃሉ፤ ተቀማጭ ገንዘብ ይዘለላል።';
 
   @override
   String get portfolioImportFile => 'ፋይል ይምረጡ';

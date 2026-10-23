@@ -1904,7 +1904,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212, Interactive Brokers എന്നിവയുടെ എക്സ്പോർട്ടുകളും വിൽപ്പനകൾ ഉൾപ്പെടെ തിരിച്ചറിയും; ലാഭവിഹിതവും നിക്ഷേപങ്ങളും ഒഴിവാക്കും.';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity, Robinhood എന്നിവയുടെ എക്സ്പോർട്ടുകളും വിൽപ്പനകളും ലാഭവിഹിതവും (സ്രോതസ്സിൽ പിടിച്ച നികുതി കിഴിച്ച്) ഉൾപ്പെടെ തിരിച്ചറിയും; നിക്ഷേപങ്ങൾ ഒഴിവാക്കും.';
 
   @override
   String get portfolioImportFile => 'ഒരു ഫയൽ തിരഞ്ഞെടുക്കുക';

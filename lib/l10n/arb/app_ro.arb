@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Vânzările sunt asociate mai întâi celor mai vechi cumpărări (FIFO) și convertite la cursul de schimb de azi. Pentru declarația fiscală, folosește extrasul brokerului tău.",
   "staleNewResults": "De la această analiză au fost publicate noi rezultate trimestriale ({symbol}, {date}).",
   "newResultsBadge": "Rezultate noi",
-  "portfolioImportBrokers": "Sunt recunoscute și exporturile din Revolut, Trading 212 și Interactive Brokers, inclusiv vânzările; dividendele și depunerile sunt omise.",
+  "portfolioImportBrokers": "Sunt recunoscute și exporturile din Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity și Robinhood, inclusiv vânzările și dividendele (nete de impozitul reținut la sursă); depunerile sunt omise.",
   "portfolioImportFile": "Alege un fișier",
   "offlineBanner": "Nicio conexiune – se afișează ultimele date salvate ({time}).",
   "glossMarketCap": "Cât valorează întreaga companie la bursă: prețul acțiunii × numărul de acțiuni.",

@@ -1898,7 +1898,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'ასევე ამოიცნობა Revolut-ის, Trading 212-ისა და Interactive Brokers-ის ექსპორტები, გაყიდვების ჩათვლით; დივიდენდები და შენატანები გამოტოვებულია.';
+      'ასევე ამოიცნობა Revolut-ის, Trading 212-ის, Interactive Brokers-ის, DEGIRO-ს, Schwab-ის, Fidelity-ისა და Robinhood-ის ექსპორტები, გაყიდვებისა და დივიდენდების (წყაროსთან დაკავებული გადასახადის გამოკლებით) ჩათვლით; შენატანები გამოტოვებულია.';
 
   @override
   String get portfolioImportFile => 'აირჩიეთ ფაილი';

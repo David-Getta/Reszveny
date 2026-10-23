@@ -1900,7 +1900,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'A Revolut, a Trading 212 és az Interactive Brokers exportját is felismeri, az eladásokkal együtt; az osztalékot és a befizetést kihagyja.';
+      'A Revolut, a Trading 212, az Interactive Brokers, a DEGIRO, a Schwab, a Fidelity és a Robinhood exportját is felismeri, az eladásokkal és az osztalékokkal (a forrásadóval csökkentve) együtt; a befizetést kihagyja.';
 
   @override
   String get portfolioImportFile => 'Fájl kiválasztása';

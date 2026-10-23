@@ -1899,7 +1899,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Derxistinên ji Revolut, Trading 212 û Interactive Brokers jî tên naskirin, bi firotinan re; dîvîdend û razandin tên derbaskirin.';
+      'Derxistinên ji Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity û Robinhood jî tên naskirin, bi firotin û dîvîdendan re (piştî birîna baca ji çavkaniyê); razandin tên derbaskirin.';
 
   @override
   String get portfolioImportFile => 'Pelekê hilbijêre';

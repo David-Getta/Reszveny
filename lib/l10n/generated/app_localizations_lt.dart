@@ -1951,7 +1951,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Taip pat atpažįstami Revolut, Trading 212 ir Interactive Brokers eksportai, įskaitant pardavimus; dividendai ir įnašai praleidžiami.';
+      'Taip pat atpažįstami Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ir Robinhood eksportai, įskaitant pardavimus ir dividendus (atskaičius prie šaltinio išskaičiuotą mokestį); įnašai praleidžiami.';
 
   @override
   String get portfolioImportFile => 'Pasirinkti failą';

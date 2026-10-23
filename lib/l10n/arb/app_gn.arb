@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Ñemu oñembojoja raẽ ne jejogua tujavéva ndive (FIFO), oñemoambuéva ko árape cambio repýpe. Ne declaración de impuestos-rã, eipuru nde bróker extracto.",
   "staleNewResults": "Ko ñehesaʼỹijo rire, oñemoherakuã resultado trimestral pyahu ({symbol}, {date}).",
   "newResultsBadge": "Resultado pyahu",
-  "portfolioImportBrokers": "Ojekuaa avei Revolut, Trading 212 ha Interactive Brokers exportación, ñemu ndive; dividendo ha depósito ojepoi.",
+  "portfolioImportBrokers": "Ojekuaa avei Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ha Robinhood exportación, ñemu ha dividendo ndive (ojepe'a rire impuesto retención); depósito ojepoi.",
   "portfolioImportFile": "Eiporavo peteĩ archivo",
   "offlineBanner": "Ndaipóri ñanduti – ojehechauka umi mbaʼekuaarã oñeñongatu pahaguéva ({time}).",
   "glossMarketCap": "Mboýpa hepy pe empresa tuichakue bolsa-pe: acción repy × acción papapy.",

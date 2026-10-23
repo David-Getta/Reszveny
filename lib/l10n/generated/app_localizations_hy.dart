@@ -1903,7 +1903,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Ճանաչվում են նաև Revolut-ի, Trading 212-ի և Interactive Brokers-ի արտահանումները՝ վաճառքների հետ միասին. շահաբաժիններն ու մուտքերը բաց են թողնվում։';
+      'Ճանաչվում են նաև Revolut-ի, Trading 212-ի, Interactive Brokers-ի, DEGIRO-յի, Schwab-ի, Fidelity-ի և Robinhood-ի արտահանումները՝ վաճառքների և շահաբաժինների հետ միասին (աղբյուրի մոտ պահված հարկը հանած). մուտքերը բաց են թողնվում։';
 
   @override
   String get portfolioImportFile => 'Ընտրել ֆայլ';

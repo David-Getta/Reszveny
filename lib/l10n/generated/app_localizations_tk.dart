@@ -1895,7 +1895,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212 we Interactive Brokers eksportlary hem satuwlar bilen bilelikde tanalýar; diwidendler we goýumlar geçilýär.';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity we Robinhood eksportlary hem satuwlar we diwidendler (çeşmede saklanan salgyt aýrylyp) bilen bilelikde tanalýar; goýumlar geçilýär.';
 
   @override
   String get portfolioImportFile => 'Faýl saýla';

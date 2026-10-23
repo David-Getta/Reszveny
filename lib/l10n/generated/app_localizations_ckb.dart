@@ -1896,7 +1896,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'هەناردەکانی Revolut، Trading 212 و Interactive Brokers یش لەگەڵ فرۆشتنەکان دەناسرێنەوە؛ قازانجی پشک و پارە دانان پشتگوێ دەخرێن.';
+      'هەناردەکانی Revolut، Trading 212، Interactive Brokers، DEGIRO، Schwab، Fidelity و Robinhood یش لەگەڵ فرۆشتن و قازانجی پشک (دوای لێبڕینی باجی سەرچاوە) دەناسرێنەوە؛ پارە دانان پشتگوێ دەخرێت.';
 
   @override
   String get portfolioImportFile => 'فایلێک هەڵبژێرە';

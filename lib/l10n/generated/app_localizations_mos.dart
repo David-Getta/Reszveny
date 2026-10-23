@@ -1882,7 +1882,7 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'B miẽ a Revolut, Trading 212 la Interactive Brokers sɛb-rãmba me, ne koosgã; dividãnd la ligd sẽn ning-b n ka kẽesd ye.';
+      'B miẽ a Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity la Robinhood sɛb-rãmba me, ne koosgã la dividãnd (b sẽn yiis lampo wã poore); ligd sẽn ning-b n ka kẽesd ye.';
 
   @override
   String get portfolioImportFile => 'Yãk fiise';

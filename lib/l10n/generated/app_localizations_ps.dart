@@ -1890,7 +1890,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'د Revolut، Trading 212 او Interactive Brokers صادرات هم د پلور سره پېژندل کېږي؛ د ونډې ګټه او زیرمې پرېښودل کېږي.';
+      'د Revolut، Trading 212، Interactive Brokers، DEGIRO، Schwab، Fidelity او Robinhood صادرات هم د پلور او د ونډې ګټې سره (د وضع شوې مالیې له کمولو وروسته) پېژندل کېږي؛ زیرمې پرېښودل کېږي.';
 
   @override
   String get portfolioImportFile => 'فایل وټاکئ';

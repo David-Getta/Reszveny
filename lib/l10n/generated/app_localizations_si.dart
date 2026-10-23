@@ -1895,7 +1895,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212 සහ Interactive Brokers අපනයනද විකුණුම් සමඟ හඳුනා ගැනේ; ලාභාංශ සහ තැන්පතු මඟ හරිනු ලැබේ.';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity සහ Robinhood අපනයනද විකුණුම් සහ ලාභාංශ (රඳවා ගැනීමේ බද්ද අඩු කළ පසු) සමඟ හඳුනා ගැනේ; තැන්පතු මඟ හරිනු ලැබේ.';
 
   @override
   String get portfolioImportFile => 'ගොනුවක් තෝරන්න';

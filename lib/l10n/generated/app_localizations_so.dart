@@ -1904,7 +1904,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Dhoofinta Revolut, Trading 212 iyo Interactive Brokers sidoo kale waa la aqoonsadaa, oo ay la socdaan iibka; qaybta faa\'iidada iyo dhigaalka waa laga boodaa.';
+      'Dhoofinta Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity iyo Robinhood sidoo kale waa la aqoonsadaa, oo ay la socdaan iibka iyo qaybta faa\'iidada (marka laga jaro canshuurta la qabto); dhigaalka waa laga boodaa.';
 
   @override
   String get portfolioImportFile => 'Dooro fayl';

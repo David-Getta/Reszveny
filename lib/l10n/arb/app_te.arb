@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "అమ్మకాలు ముందుగా మీ అత్యంత పాత కొనుగోళ్లతో సరిపోల్చబడతాయి (FIFO), నేటి మారకపు రేటులో మార్చబడతాయి. పన్ను రిటర్న్ కోసం మీ బ్రోకర్ స్టేట్‌మెంట్‌ను ఉపయోగించండి.",
   "staleNewResults": "ఈ విశ్లేషణ తర్వాత కొత్త త్రైమాసిక ఫలితాలు విడుదలయ్యాయి ({symbol}, {date}).",
   "newResultsBadge": "కొత్త ఫలితాలు",
-  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers ఎగుమతులు కూడా అమ్మకాలతో సహా గుర్తించబడతాయి; డివిడెండ్లు, డిపాజిట్లు దాటవేయబడతాయి.",
+  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity, Robinhood ఎగుమతులు కూడా అమ్మకాలు, డివిడెండ్లతో (మూలం వద్ద మినహాయించిన పన్ను తీసివేసి) సహా గుర్తించబడతాయి; డిపాజిట్లు దాటవేయబడతాయి.",
   "portfolioImportFile": "ఫైల్‌ను ఎంచుకోండి",
   "offlineBanner": "కనెక్షన్ లేదు – చివరిగా సేవ్ చేసిన డేటా చూపబడుతోంది ({time}).",
   "glossMarketCap": "స్టాక్ మార్కెట్‌లో మొత్తం కంపెనీ విలువ: షేర్ ధర × షేర్ల సంఖ్య.",

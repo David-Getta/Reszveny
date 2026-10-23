@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Сатулар башта иң иске сатып алуларыгыз белән чагыштырыла (FIFO) һәм бүгенге алмашу курсы буенча күчерелә. Салым декларациясе өчен брокерыгызның өземтәсен кулланыгыз.",
   "staleNewResults": "Бу анализдан соң яңа квартал хисабы басылды ({symbol}, {date}).",
   "newResultsBadge": "Яңа хисап",
-  "portfolioImportBrokers": "Revolut, Trading 212 һәм Interactive Brokers экспортлары да сатулар белән бергә таныла; дивидендлар һәм кертемнәр төшереп калдырыла.",
+  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity һәм Robinhood экспортлары да сатулар һәм дивидендлар (чыганакта тотып калынган салым чыгарылып) белән бергә таныла; кертемнәр төшереп калдырыла.",
   "portfolioImportFile": "Файл сайлау",
   "offlineBanner": "Тоташу юк – соңгы сакланган мәгълүматлар күрсәтелә ({time}).",
   "glossMarketCap": "Бөтен компаниянең биржадагы бәясе: акция бәясе × акцияләр саны.",

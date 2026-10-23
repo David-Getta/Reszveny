@@ -1895,7 +1895,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Ttwassnen daɣen yisifeḍ n Revolut, Trading 212 d Interactive Brokers, s yizenzen; dividand d yidrimen yettwaserrsen ttwazeglen.';
+      'Ttwassnen daɣen yisifeḍ n Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity d Robinhood, s yizenzen d dividand (mbeɛd tukksa n tbezrit deg uɣbalu); idrimen yettwaserrsen ttwazeglen.';
 
   @override
   String get portfolioImportFile => 'Fren afaylu';

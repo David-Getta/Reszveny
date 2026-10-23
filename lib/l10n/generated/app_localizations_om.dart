@@ -1904,7 +1904,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Ergiinsi Revolut, Trading 212 fi Interactive Brokers irraa dhufan gurgurtaa wajjin ni beekamu; qooda bu\'aa fi kuusaan ni darbamu.';
+      'Ergiinsi Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity fi Robinhood irraa dhufan gurgurtaa fi qooda bu\'aa (erga gibirri qabame hir\'atee booda) wajjin ni beekamu; kuusaan ni darbamu.';
 
   @override
   String get portfolioImportFile => 'Faayilii filadhu';

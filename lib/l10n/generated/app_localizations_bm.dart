@@ -1893,7 +1893,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212 ani Interactive Brokers ka bɔliw fana bɛ dɔn, feereliw fana; tɔnɔ tilaliw ni wari donniw bɛ to yen.';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ani Robinhood ka bɔliw fana bɛ dɔn, feereliw ni tɔnɔ tilaliw fana (lanpo tigɛlen bɔlen u la); wari donniw bɛ to yen.';
 
   @override
   String get portfolioImportFile => 'Fisiye dɔ sugandi';

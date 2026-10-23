@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Dodolan dicocogake dhisik karo tukon sing paling lawas (FIFO), diowahi nganggo kurs dina iki. Kanggo laporan pajeg, gunakake laporan saka broker sampeyan.",
   "staleNewResults": "Wiwit analisis iki, laporan kuartalan anyar wis metu ({symbol}, {date}).",
   "newResultsBadge": "Laporan anyar",
-  "portfolioImportBrokers": "Ekspor saka Revolut, Trading 212 lan Interactive Brokers uga dikenali, kalebu dodolan; dividen lan setoran dilewati.",
+  "portfolioImportBrokers": "Ekspor saka Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity lan Robinhood uga dikenali, kalebu dodolan lan dividen (sawise dipotong pajak); setoran dilewati.",
   "portfolioImportFile": "Pilih file",
   "offlineBanner": "Ora ana sambungan – nampilaké data sing pungkasan disimpen ({time}).",
   "glossMarketCap": "Pira regane kabeh perusahaan ing pasar saham: rega saham × cacahe saham.",

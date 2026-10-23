@@ -1879,7 +1879,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'ការនាំចេញពី Revolut, Trading 212 និង Interactive Brokers ក៏ត្រូវបានស្គាល់ដែរ រួមទាំងការលក់; ភាគលាភ និងការដាក់ប្រាក់ត្រូវបានរំលង។';
+      'ការនាំចេញពី Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity និង Robinhood ក៏ត្រូវបានស្គាល់ដែរ រួមទាំងការលក់ និងភាគលាភ (ក្រោយកាត់ពន្ធកាត់ទុក); ការដាក់ប្រាក់ត្រូវបានរំលង។';
 
   @override
   String get portfolioImportFile => 'ជ្រើសរើសឯកសារ';

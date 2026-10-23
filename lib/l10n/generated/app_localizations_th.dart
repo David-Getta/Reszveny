@@ -1871,7 +1871,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'รองรับไฟล์ส่งออกจาก Revolut, Trading 212 และ Interactive Brokers ด้วย รวมถึงรายการขาย ส่วนเงินปันผลและการฝากเงินจะถูกข้าม';
+      'รองรับไฟล์ส่งออกจาก Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity และ Robinhood ด้วย รวมถึงรายการขายและเงินปันผล (หลังหักภาษี ณ ที่จ่าย) ส่วนการฝากเงินจะถูกข้าม';
 
   @override
   String get portfolioImportFile => 'เลือกไฟล์';

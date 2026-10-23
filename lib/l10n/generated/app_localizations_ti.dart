@@ -1863,7 +1863,7 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'ካብ Revolut፣ Trading 212ን Interactive Brokersን ዝወጹ ፋይላት እውን ምስ መሸጣታት ይልለዩ፤ ብጽሒት ትርፍን ተቐማጢ ገንዘብን ይሕለፉ።';
+      'ካብ Revolut፣ Trading 212፣ Interactive Brokers፣ DEGIRO፣ Schwab፣ Fidelityን Robinhoodን ዝወጹ ፋይላት እውን ምስ መሸጣታትን ብጽሒት ትርፍን (ተቖራጺ ግብሪ ድሕሪ ምቕናስ) ይልለዩ፤ ተቐማጢ ገንዘብ ይሕለፍ።';
 
   @override
   String get portfolioImportFile => 'ፋይል ምረጽ';

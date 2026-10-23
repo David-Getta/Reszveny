@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Ampifandraisina amin'ny fividiananao tranainy indrindra aloha ny fivarotana (FIFO), novaina araka ny sandam-bola androany. Ho an'ny fanambaranao hetra, ampiasao ny tatitra avy amin'ny broker-nao.",
   "staleNewResults": "Nisy vokatra telovolana vaovao navoaka taorian'ity fanadihadiana ity ({symbol}, {date}).",
   "newResultsBadge": "Vokatra vaovao",
-  "portfolioImportBrokers": "Fantatra ihany koa ny fanondranana avy amin'ny Revolut, Trading 212 ary Interactive Brokers, miaraka amin'ny varotra; dinganina ny dividenda sy ny petrabola.",
+  "portfolioImportBrokers": "Fantatra ihany koa ny fanondranana avy amin'ny Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ary Robinhood, miaraka amin'ny varotra sy ny dividenda (rehefa nesorina ny hetra notazonina); dinganina ny petrabola.",
   "portfolioImportFile": "Mifidiana rakitra",
   "offlineBanner": "Tsy misy fifandraisana – aseho ny angona voatahiry farany ({time}).",
   "glossMarketCap": "Ny vidin'ny orinasa manontolo eny an-tsena: vidin'ny aksiona × isan'ny aksiona.",

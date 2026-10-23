@@ -1897,7 +1897,7 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212 र Interactive Brokers का निर्यात पनि बिक्रीसहित चिनिन्छन्; लाभांश र जम्मा छोडिन्छन्।';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity र Robinhood का निर्यात पनि बिक्री र लाभांश (स्रोतमा कट्टी गरिएको कर घटाएर) सहित चिनिन्छन्; जम्मा छोडिन्छन्।';
 
   @override
   String get portfolioImportFile => 'फाइल छान्नुहोस्';

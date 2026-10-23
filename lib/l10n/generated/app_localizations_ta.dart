@@ -1906,7 +1906,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Revolut, Trading 212, Interactive Brokers ஏற்றுமதிகளும் விற்பனைகளுடன் அடையாளம் காணப்படும்; ஈவுத்தொகையும் வைப்புகளும் தவிர்க்கப்படும்.';
+      'Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity, Robinhood ஏற்றுமதிகளும் விற்பனைகள், ஈவுத்தொகை (மூலத்தில் பிடித்த வரி கழித்து) ஆகியவற்றுடன் அடையாளம் காணப்படும்; வைப்புகள் தவிர்க்கப்படும்.';
 
   @override
   String get portfolioImportFile => 'கோப்பைத் தேர்ந்தெடுக்கவும்';

@@ -1907,7 +1907,7 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Diromelwakuntle go tswa mo Revolut, Trading 212 le Interactive Brokers le tsone di a lemogwa, mmogo le dithekiso; dividende le dipolokelo di a tlolwa.';
+      'Diromelwakuntle go tswa mo Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity le Robinhood le tsone di a lemogwa, mmogo le dithekiso le dividende (morago ga go ntshiwa ga lekgetho le le tshwerweng); dipolokelo di a tlolwa.';
 
   @override
   String get portfolioImportFile => 'Tlhopha faele';

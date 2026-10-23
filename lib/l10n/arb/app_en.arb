@@ -1392,7 +1392,7 @@
   "@newResultsBadge": {
     "description": "Small badge on a saved analysis in the list: the company has reported quarterly results since the analysis."
   },
-  "portfolioImportBrokers": "Exports from Revolut, Trading 212 and Interactive Brokers are recognised too, with sales; dividends and deposits are skipped.",
+  "portfolioImportBrokers": "Exports from Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity and Robinhood are recognised too, with sales and dividends (net of withholding tax); deposits are skipped.",
   "@portfolioImportBrokers": {
     "description": "Note in the portfolio import dialog. Keep the broker names as they are."
   },

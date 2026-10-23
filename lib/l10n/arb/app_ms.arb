@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Jualan dipadankan dahulu dengan pembelian tertua anda (FIFO), ditukar pada kadar pertukaran hari ini. Untuk penyata cukai anda, gunakan penyata broker anda.",
   "staleNewResults": "Sejak analisis ini, keputusan suku tahunan baharu telah diterbitkan ({symbol}, {date}).",
   "newResultsBadge": "Keputusan baharu",
-  "portfolioImportBrokers": "Eksport daripada Revolut, Trading 212 dan Interactive Brokers juga dikenali, termasuk jualan; dividen dan deposit dilangkau.",
+  "portfolioImportBrokers": "Eksport daripada Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity dan Robinhood juga dikenali, termasuk jualan dan dividen (selepas ditolak cukai pegangan); deposit dilangkau.",
   "portfolioImportFile": "Pilih fail",
   "offlineBanner": "Tiada sambungan – memaparkan data yang terakhir disimpan ({time}).",
   "glossMarketCap": "Nilai keseluruhan syarikat di pasaran saham: harga saham × bilangan saham.",

@@ -1904,7 +1904,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Okuthunyelwa ngaphandle kwe-Revolut, Trading 212 ne-Interactive Brokers nakho kuyaqashelwa, kanye nokuthengisa; ama-dividend namadiphozithi ayeqiwa.';
+      'Okuthunyelwa ngaphandle kwe-Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ne-Robinhood nakho kuyaqashelwa, kanye nokuthengisa nama-dividend (ngemuva kokudonswa kwentela egodliwe); amadiphozithi ayeqiwa.';
 
   @override
   String get portfolioImportFile => 'Khetha ifayela';

@@ -1891,7 +1891,7 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Ɗoftaaɗe Revolut, Trading 212 e Interactive Brokers kadi ina heftinee, wondude e coggu; geɗal nafoore e njoɓdi ina acceede.';
+      'Ɗoftaaɗe Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity e Robinhood kadi ina heftinee, wondude e coggu e geɗal nafoore (caggal ittude lempo ɓamtaaɗo); njoɓdi ina acceede.';
 
   @override
   String get portfolioImportFile => 'Suɓo fiilde';

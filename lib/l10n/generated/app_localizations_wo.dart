@@ -1890,7 +1890,7 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Dañu xam itam export yu Revolut, Trading 212 ak Interactive Brokers, ak njaay yi; dividand yi ak xaalis bi ñu dugal, dañu leen di bàyyi.';
+      'Dañu xam itam export yu Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ak Robinhood, ak njaay yi ak dividand yi (bu ñu wàññee lempo bi ñu jël ci cosaan); xaalis bi ñu dugal, dañu koy bàyyi.';
 
   @override
   String get portfolioImportFile => 'Tànnal ab fichier';

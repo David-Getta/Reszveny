@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "پلورونه لومړی ستاسو له تر ټولو زړو پېرودونو سره سمون ورکول کېږي (FIFO)، د نن ورځې د اسعارو په نرخ اړول کېږي. د مالیې د اظهارنامې لپاره د خپل بروکر بیان وکاروئ.",
   "staleNewResults": "له دې تحلیل وروسته نوې درې میاشتنۍ پایلې خپرې شوې دي ({symbol}، {date}).",
   "newResultsBadge": "نوې پایلې",
-  "portfolioImportBrokers": "د Revolut، Trading 212 او Interactive Brokers صادرات هم د پلور سره پېژندل کېږي؛ د ونډې ګټه او زیرمې پرېښودل کېږي.",
+  "portfolioImportBrokers": "د Revolut، Trading 212، Interactive Brokers، DEGIRO، Schwab، Fidelity او Robinhood صادرات هم د پلور او د ونډې ګټې سره (د وضع شوې مالیې له کمولو وروسته) پېژندل کېږي؛ زیرمې پرېښودل کېږي.",
   "portfolioImportFile": "فایل وټاکئ",
   "offlineBanner": "اتصال نشته – وروستي خوندي شوي معلومات ښودل کېږي ({time}).",
   "glossMarketCap": "ټول شرکت په سټاک بازار کې څومره ارزي: د ونډې بیه × د ونډو شمېر.",

@@ -1898,7 +1898,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Содироти Revolut, Trading 212 ва Interactive Brokers низ бо фурӯшҳо шинохта мешаванд; дивидендҳо ва воридоти пулӣ сарфи назар карда мешаванд.';
+      'Содироти Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ва Robinhood низ бо фурӯшҳо ва дивидендҳо (пас аз тарҳи андози дар манбаъ ситонидашуда) шинохта мешаванд; воридоти пулӣ сарфи назар карда мешаванд.';
 
   @override
   String get portfolioImportFile => 'Интихоби файл';

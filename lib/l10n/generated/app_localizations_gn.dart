@@ -1901,7 +1901,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Ojekuaa avei Revolut, Trading 212 ha Interactive Brokers exportación, ñemu ndive; dividendo ha depósito ojepoi.';
+      'Ojekuaa avei Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ha Robinhood exportación, ñemu ha dividendo ndive (ojepe\'a rire impuesto retención); depósito ojepoi.';
 
   @override
   String get portfolioImportFile => 'Eiporavo peteĩ archivo';

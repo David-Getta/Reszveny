@@ -127,8 +127,12 @@ Future<void> showPortfolioImport(BuildContext context) async {
   final l10n = AppLocalizations.of(context);
   final messenger = ScaffoldMessenger.of(context);
   final services = AppServices.of(context);
-  final result = await showDialog<CsvImport>(context: context, builder: (_) => const _ImportDialog());
-  if (result == null) return;
+  final parsed = await showDialog<CsvImport>(context: context, builder: (_) => const _ImportDialog());
+  if (parsed == null) return;
+  // Ticker nélküli export (DEGIRO): az ISIN-ekhez a kereső adja a tickert.
+  final isins = parsed.isins;
+  if (isins.isNotEmpty) messenger.showSnackBar(SnackBar(content: Text(l10n.loadingData)));
+  final result = isins.isEmpty ? parsed : parsed.withSymbols(await resolveIsins(services.marketData.search, isins));
   // A számla is része a kulcsnak: ugyanaz a vétel két számlán két tranzakció
   // (a kis- és nagybetű nem számít, a tároló a meglévő írásmódot használja).
   String key(String symbol, double q, double p, DateTime? d, bool sell, String? account) =>
@@ -174,18 +178,20 @@ Future<void> showPortfolioImport(BuildContext context) async {
       addedSplits++;
     }
   }
-  messenger.showSnackBar(
-    SnackBar(
-      content: Text(
-        [
-          l10n.portfolioImported(added),
-          if (addedDividends > 0) l10n.portfolioDividendsImported(addedDividends),
-          if (addedSplits > 0) l10n.portfolioSplitsImported(addedSplits),
-          if (result.skipped > 0) l10n.portfolioImportSkipped(result.skipped),
-        ].join(' · '),
+  messenger
+    ..hideCurrentSnackBar()
+    ..showSnackBar(
+      SnackBar(
+        content: Text(
+          [
+            l10n.portfolioImported(added),
+            if (addedDividends > 0) l10n.portfolioDividendsImported(addedDividends),
+            if (addedSplits > 0) l10n.portfolioSplitsImported(addedSplits),
+            if (result.skipped > 0) l10n.portfolioImportSkipped(result.skipped),
+          ].join(' · '),
+        ),
       ),
-    ),
-  );
+    );
 }
 
 class _ImportDialog extends StatefulWidget {

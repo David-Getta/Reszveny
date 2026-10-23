@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Wɔde nea wotɔn no hyia w'adetɔ a edi kan no ho kan (FIFO), na wɔsesa no ɛnnɛ sika sesa bo so. Fa wo broker no krataa di dwuma ma w'apoobɔ ho nsɛm.",
   "staleNewResults": "Wɔayi akontaabu foforo a ɛfa abosome mmiɛnsa ho adi fi bere a wɔyɛɛ nhwehwɛmu yi ({symbol}, {date}).",
   "newResultsBadge": "Akontaabu foforo",
-  "portfolioImportBrokers": "Wɔhu Revolut, Trading 212 ne Interactive Brokers nkrataa a wɔde fi mu nso, a nneɛma a wɔtɔn ka ho; wɔgyaw mfaso kyɛ ne sika a wɔde to mu.",
+  "portfolioImportBrokers": "Wɔhu Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ne Robinhood nkrataa a wɔde fi mu nso, a nneɛma a wɔtɔn ne mfaso kyɛ (a wɔatwa towtua a ɛfa ho afi mu) ka ho; wɔgyaw sika a wɔde to mu.",
   "portfolioImportFile": "Paw fael bi",
   "offlineBanner": "Nkitahodi biara nni hɔ – yɛrekyerɛ data a yɛkoraa no akyire yi ({time}).",
   "glossMarketCap": "Sɛnea adwumakuw no nyinaa som bo wɔ dwa so: kyɛfa boɔ × nkyɛfa dodow.",

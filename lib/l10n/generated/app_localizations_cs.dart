@@ -1947,7 +1947,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Rozpoznány jsou i exporty z Revolut, Trading 212 a Interactive Brokers, včetně prodejů; dividendy a vklady se přeskakují.';
+      'Rozpoznány jsou i exporty z Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity a Robinhood, včetně prodejů a dividend (po odečtení srážkové daně); vklady se přeskakují.';
 
   @override
   String get portfolioImportFile => 'Vybrat soubor';

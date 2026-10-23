@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Rantikusqakunaqa ñawpaqta aswan ñawpa rantisqaykikunawan tupachisqa (FIFO), kunan p'unchawpa cambionwan tikrasqa. Impuesto willakuynikipaq, brókerniykipa extractonta llamk'achiy.",
   "staleNewResults": "Kay t'aqwiy ruwasqa qhipaman, kimsa killapi musuq lluqsiykuna willakun ({symbol}, {date}).",
   "newResultsBadge": "Musuq lluqsiykuna",
-  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers nisqakunamanta exportasqakunatapas riqsinmi, rantikusqakunawan; dividendokunata, churasqa qullqitapas saqinmi.",
+  "portfolioImportBrokers": "Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity, Robinhood nisqakunamanta exportasqakunatapas riqsinmi, rantikusqakunawan dividendokunawan (retenisqa impuesto qichusqa); churasqa qullqitaqa saqinmi.",
   "portfolioImportFile": "Huk archivota akllay",
   "offlineBanner": "Mana t'inkiy kanchu – qhipa waqaychasqa datos rikuchikuchkan ({time}).",
   "glossMarketCap": "Llapan empresa hayk'a chaniyuq bolsapi: accionpa chanin × accionkunap yupaynin.",

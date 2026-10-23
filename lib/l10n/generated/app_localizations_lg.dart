@@ -1908,7 +1908,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Ebifulumizibwa okuva mu Revolut, Trading 212 ne Interactive Brokers nabyo bitegeerebwa, nga mw\'otwalidde n\'ebyatundibwa; amagoba ku migabo n\'ensimbi ezateekebwamu bisuulibwa.';
+      'Ebifulumizibwa okuva mu Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity ne Robinhood nabyo bitegeerebwa, nga mw\'otwalidde ebyatundibwa n\'amagoba ku migabo (ng\'omusolo ogusalibwako guggyiddwamu); ensimbi ezateekebwamu zisuulibwa.';
 
   @override
   String get portfolioImportFile => 'Londa fayiro';

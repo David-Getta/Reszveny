@@ -506,7 +506,7 @@
   "portfolioRealizedHint": "Verkope word eers teen jou oudste aankope afgespeel (FIFO), omgeskakel teen vandag se wisselkoers. Gebruik jou makelaar se staat vir jou belastingopgawe.",
   "staleNewResults": "Sedert hierdie ontleding is nuwe kwartaalresultate gepubliseer ({symbol}, {date}).",
   "newResultsBadge": "Nuwe resultate",
-  "portfolioImportBrokers": "Uitvoere van Revolut, Trading 212 en Interactive Brokers word ook herken, met verkope; dividende en deposito's word oorgeslaan.",
+  "portfolioImportBrokers": "Uitvoere van Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity en Robinhood word ook herken, met verkope en dividende (ná aftrek van terughoubelasting); deposito's word oorgeslaan.",
   "portfolioImportFile": "Kies 'n lêer",
   "offlineBanner": "Geen verbinding nie – die laaste gestoorde data word gewys ({time}).",
   "glossMarketCap": "Wat die hele maatskappy op die aandelemark werd is: aandeelprys × aantal aandele.",

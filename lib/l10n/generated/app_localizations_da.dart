@@ -1894,7 +1894,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get portfolioImportBrokers =>
-      'Eksporter fra Revolut, Trading 212 og Interactive Brokers genkendes også, med salg; udbytte og indbetalinger springes over.';
+      'Eksporter fra Revolut, Trading 212, Interactive Brokers, DEGIRO, Schwab, Fidelity og Robinhood genkendes også, med salg og udbytte (fratrukket kildeskat); indbetalinger springes over.';
 
   @override
   String get portfolioImportFile => 'Vælg en fil';
