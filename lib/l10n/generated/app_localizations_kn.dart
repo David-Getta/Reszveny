@@ -2702,6 +2702,9 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'ಸೇರಿಸಿದಾಗಿನಿಂದ ಬದಲಾವಣೆ ಪ್ರಕಾರ';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

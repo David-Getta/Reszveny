@@ -2716,6 +2716,9 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'По промена од додавањето';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

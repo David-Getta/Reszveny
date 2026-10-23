@@ -2693,6 +2693,9 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'जोड़ने के बाद से बदलाव के अनुसार';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

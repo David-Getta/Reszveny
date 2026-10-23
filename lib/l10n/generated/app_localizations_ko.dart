@@ -2625,6 +2625,9 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => '추가 후 등락률순';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

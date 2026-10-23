@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:reszveny/features/compare/compare_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
+import 'package:reszveny/core/models/price_history.dart';
 import 'package:reszveny/core/app_preferences.dart';
 import 'package:reszveny/core/share/share_text.dart';
 import 'package:reszveny/features/alerts/price_alert.dart';
@@ -71,6 +72,55 @@ void main() {
     await tester.tap(find.text('Undo'));
     await tester.pumpAndSettle();
     expect(s.preferences.favoriteSince('AAPL'), day);
+  });
+
+  test('change since added: from the close on the day (or the next trading day); not before the series', () {
+    final pts = [
+      for (final (d, c) in [(3, 100.0), (6, 110.0), (7, 120.0)])
+        PricePoint(time: DateTime.utc(2026, 1, d, 21), close: c),
+    ];
+    // Hétvégén felvéve: a következő kereskedési nap (jan. 6.) záróárához.
+    expect(sinceAddedPercent(132, pts, DateTime(2026, 1, 4)), closeTo(20, 1e-9));
+    expect(sinceAddedPercent(132, pts, DateTime(2026, 1, 3)), closeTo(32, 1e-9));
+    // A sorozat előtt felvéve, vagy még nincs utána nap: nincs mit mondani.
+    expect(sinceAddedPercent(132, pts, DateTime(2025, 12, 1)), isNull);
+    expect(sinceAddedPercent(132, pts, DateTime(2026, 1, 7)), isNull);
+  });
+
+  testWidgets('favorites sorted by the change since added; those without a date at the end', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    final today = DateTime.now();
+    DateTime ago(int days) => DateTime(today.year, today.month, today.day - days);
+    await s.preferences.setFavorites(
+      ['OTP', 'MSFT', 'AAPL', 'NVDA'],
+      since: {'AAPL': ago(200), 'MSFT': ago(30), 'NVDA': ago(90)},
+    );
+    // A várt sorrend a demó adatokból.
+    final pct = <String, double>{};
+    await tester.runAsync(() async {
+      for (final sym in ['AAPL', 'MSFT', 'NVDA']) {
+        final q = await s.marketData.quote(sym);
+        final h = await s.marketData.history(sym, years: 1);
+        pct[sym] = sinceAddedPercent(q.price, h.points, s.preferences.favoriteSince(sym)!)!;
+      }
+    });
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('favorites-see-all')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('watch-sort')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('watch-sort-since')));
+    await tester.pumpAndSettle();
+    final order = [
+      for (final e in find.byWidgetPredicate((w) => w is Dismissible).evaluate())
+        ((e.widget as Dismissible).key! as ValueKey<String>).value.substring(6),
+    ];
+    expect(order, [...(pct.keys.toList()..sort((a, b) => pct[b]!.compareTo(pct[a]!))), 'OTP']);
+    expect(s.preferences.sortOf('watch'), 'since');
   });
 
   testWidgets('the favorites page: sort by daily change, remove with undo, reorder', (tester) async {

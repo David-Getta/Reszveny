@@ -2768,6 +2768,9 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'За зміною від додавання';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

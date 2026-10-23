@@ -813,5 +813,6 @@
   "lotPreviewAverage": "新平均成本：{after}（当前 {before}）",
   "portfolioYtdReturn": "今年收益率",
   "glossTwrYtd": "自年初起（若首次买入在今年，则自首次买入起）的时间加权收益率：每天计算您当天持有股票的涨跌，再将各天串联起来——您存入或取出的资金不算收益，因此可以与指数进行比较。下方显示同一期间所选指数的表现。",
-  "alertDistance": "当前 {price} · 还差 {percent}"
+  "alertDistance": "当前 {price} · 还差 {percent}",
+  "watchSortSince": "按添加以来涨跌幅"
 }

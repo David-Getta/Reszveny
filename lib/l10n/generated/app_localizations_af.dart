@@ -2700,6 +2700,9 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Volgens verandering sedert byvoeging';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

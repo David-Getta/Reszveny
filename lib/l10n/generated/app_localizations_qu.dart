@@ -2710,6 +2710,9 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Yapasqaykimanta hukyayman hina';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

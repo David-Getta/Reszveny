@@ -2713,6 +2713,9 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Suno sa pagbag-o halin sang gindugang';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

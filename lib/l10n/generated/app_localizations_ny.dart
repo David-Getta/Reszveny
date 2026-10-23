@@ -2705,6 +2705,10 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince =>
+      'Potsatira kusintha kuyambira pamene inawonjezedwa';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

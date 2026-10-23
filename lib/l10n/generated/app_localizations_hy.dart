@@ -2705,6 +2705,9 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Ըստ փոփոխության՝ ավելացնելուց ի վեր';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

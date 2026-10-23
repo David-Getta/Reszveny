@@ -2768,6 +2768,9 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Według zmiany od dodania';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

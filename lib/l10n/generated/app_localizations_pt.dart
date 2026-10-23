@@ -2702,6 +2702,9 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Por variação desde a adição';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

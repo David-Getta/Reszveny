@@ -2692,6 +2692,9 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'بر اساس تغییر از زمان افزودن';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

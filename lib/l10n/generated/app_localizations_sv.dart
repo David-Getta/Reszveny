@@ -2697,6 +2697,9 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Efter förändring sedan tillägg';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

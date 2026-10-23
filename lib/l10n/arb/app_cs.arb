@@ -813,5 +813,6 @@
   "lotPreviewAverage": "Nová průměrná nákupní cena: {after} (nyní {before})",
   "portfolioYtdReturn": "Výnos letos",
   "glossTwrYtd": "Časově vážený výnos od začátku roku (nebo od vašeho prvního nákupu, pokud proběhl letos): každý den započítá změnu akcií, které jste ten den drželi, a dny se na sebe řetězí – peníze, které vložíte nebo vyberete, nejsou výnos, takže jej lze srovnat s indexem. Pod ním: zvolený index za stejné období.",
-  "alertDistance": "Nyní {price} · zbývá {percent}"
+  "alertDistance": "Nyní {price} · zbývá {percent}",
+  "watchSortSince": "Podle změny od přidání"
 }

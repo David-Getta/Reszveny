@@ -2579,6 +2579,9 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => '按添加以来涨跌幅';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5525,6 +5528,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String alertDistance(String price, String percent) {
     return '現價 $price · 尚差 $percent';
   }
+
+  @override
+  String get watchSortSince => '按加入以來升跌幅';
 
   @override
   String get portfolioGoalSet => '設定目標';

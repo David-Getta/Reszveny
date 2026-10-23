@@ -2694,6 +2694,9 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Pa varyasyon depi ou te ajoute l';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

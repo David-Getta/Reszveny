@@ -2704,6 +2704,9 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Ayon sa pagbabago mula nang idagdag';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

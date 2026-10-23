@@ -2707,6 +2707,9 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'ചേർത്തതുമുതലുള്ള മാറ്റം പ്രകാരം';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

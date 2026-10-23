@@ -21,7 +21,19 @@ import '../portfolio/add_lot_dialog.dart' show parseDecimal;
 import 'watch_signals.dart';
 
 /// A figyelőlista rendezése.
-enum WatchSort { own, gainers, losers, name }
+enum WatchSort { own, gainers, losers, since, name }
+
+/// A felvétel óta eltelt változás (%): a mostani ár a felvétel napi (vagy utána első)
+/// záróárhoz képest, naptári nap szerint (a napi gyertya időbélyege UTC, a felvétel
+/// napja helyi). `null`, ha a sorozat a felvétel után kezdődik, vagy még nincs
+/// a felvétel utáni nap.
+double? sinceAddedPercent(double price, List<PricePoint> pts, DateTime since) {
+  DateTime dayOf(PricePoint x) => DateTime(x.time.year, x.time.month, x.time.day);
+  if (pts.isEmpty || dayOf(pts.first).isAfter(since) || !dayOf(pts.last).isAfter(since)) return null;
+  final base = pts.where((x) => !dayOf(x).isBefore(since)).firstOrNull;
+  if (base == null || base.close <= 0) return null;
+  return (price / base.close - 1) * 100;
+}
 
 /// Tickerek kiolvasása beillesztett szövegből: vessző, pontosvessző, szóköz vagy
 /// új sor választja el őket; a `$AAPL` alak is jó. Ismétlés és puszta szám nélkül.
@@ -58,6 +70,10 @@ class _WatchlistPageState extends State<WatchlistPage> {
   final Map<String, Future<StockQuote>> _quotes = {};
   final Map<String, Future<PriceHistory>> _histories = {};
   final Map<String, StockQuote> _loaded = {};
+  final Map<String, PriceHistory> _loadedHistory = {};
+
+  /// A betöltött adatoktól függő rendezésnél az új adat átrendezi a listát.
+  bool get _sortByData => _sort == WatchSort.gainers || _sort == WatchSort.losers || _sort == WatchSort.since;
 
   @override
   void initState() {
@@ -74,13 +90,20 @@ class _WatchlistPageState extends State<WatchlistPage> {
     f.then((q) {
       if (!mounted) return;
       _loaded[s] = q;
-      if (_sort == WatchSort.gainers || _sort == WatchSort.losers) setState(() {});
+      if (_sortByData) setState(() {});
     }, onError: (Object _) {});
     return f;
   });
 
-  Future<PriceHistory> _history(String s) =>
-      _histories.putIfAbsent(s, () => AppServices.of(context).marketData.history(s, years: 1));
+  Future<PriceHistory> _history(String s) => _histories.putIfAbsent(s, () {
+    final f = AppServices.of(context).marketData.history(s, years: 1);
+    f.then((h) {
+      if (!mounted) return;
+      _loadedHistory[s] = h;
+      if (_sort == WatchSort.since) setState(() {});
+    }, onError: (Object _) {});
+    return f;
+  });
 
   List<String> _sorted(List<String> favorites) {
     double change(String s) => _loaded[s]?.changePercent ?? double.negativeInfinity;
@@ -92,6 +115,16 @@ class _WatchlistPageState extends State<WatchlistPage> {
         [...favorites]..sort((a, b) {
           double c(String s) => _loaded[s]?.changePercent ?? double.infinity;
           return c(a).compareTo(c(b));
+        }),
+      // A felvétel óta legtöbbet emelkedett elöl; dátum vagy adat nélkül a végén.
+      WatchSort.since =>
+        [...favorites]..sort((a, b) {
+          double c(String s) =>
+              switch ((_loaded[s], _loadedHistory[s], AppServices.of(context).preferences.favoriteSince(s))) {
+                (final q?, final h?, final d?) => sinceAddedPercent(q.price, h.points, d) ?? double.negativeInfinity,
+                _ => double.negativeInfinity,
+              };
+          return c(b).compareTo(c(a));
         }),
     };
   }
@@ -309,6 +342,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
                 (WatchSort.own, l10n.watchSortOwn),
                 (WatchSort.gainers, l10n.watchSortGainers),
                 (WatchSort.losers, l10n.watchSortLosers),
+                (WatchSort.since, l10n.watchSortSince),
                 (WatchSort.name, l10n.watchSortName),
               ])
                 PopupMenuItem(key: ValueKey('watch-sort-${v.name}'), value: v, child: Text(label)),
@@ -846,15 +880,8 @@ class _WatchRow extends StatelessWidget {
                           FutureBuilder<PriceHistory>(
                             future: history,
                             builder: (context, h) {
-                              final pts = h.data?.points ?? const <PricePoint>[];
-                              // Naptári nap szerint (a napi gyertya időbélyege UTC, a felvétel napja helyi).
-                              DateTime dayOf(PricePoint x) => DateTime(x.time.year, x.time.month, x.time.day);
-                              if (pts.isEmpty || dayOf(pts.first).isAfter(since)) return const SizedBox.shrink();
-                              final base = pts.where((x) => !dayOf(x).isBefore(since)).firstOrNull;
-                              if (base == null || base.close <= 0 || !dayOf(pts.last).isAfter(since)) {
-                                return const SizedBox.shrink();
-                              }
-                              final pct = (q.price / base.close - 1) * 100;
+                              final pct = sinceAddedPercent(q.price, h.data?.points ?? const [], since);
+                              if (pct == null) return const SizedBox.shrink();
                               return Tooltip(
                                 message: l10n.watchSince(fmt.date(since)),
                                 child: Row(

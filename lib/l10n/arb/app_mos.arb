@@ -813,5 +813,6 @@
   "lotPreviewAverage": "Koosg sʋka paalga: {after} (masã {before})",
   "portfolioYtdReturn": "Yʋʋm-kãngã nafa",
   "glossTwrYtd": "Nafa sẽn mak ne wakato, sɩngr yʋʋmã sɩngrẽ (bɩ sɩngr f raab a yembr pipi wã, a sã n da yaa yʋʋm-kãngã): rasem fãa geelda f aksiõ rãmb nins f sẽn da tar rasem kãngã toeeg-toeegre, la b lagemda rasmã taab poor – ligd ning f sẽn ningd bɩ f sẽn yiisd ka nafa ye, rẽ n so tɩ b tõe n makẽ-a ne indɛks. A tẽngr: indɛks ning b sẽn yiis wakat kãng pʋgẽ.",
-  "alertDistance": "Masã {price} · {percent} n kell"
+  "alertDistance": "Masã {price} · {percent} n kell",
+  "watchSortSince": "Toeeme sẽn sɩng f sẽn paas-a"
 }

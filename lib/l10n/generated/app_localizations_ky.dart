@@ -2698,6 +2698,9 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Кошулгандан берки өзгөрүү боюнча';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

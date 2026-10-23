@@ -2697,6 +2697,9 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Kũringana na ũgarũrũku kuuma rĩrĩa yongereirwo';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

@@ -2690,6 +2690,9 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'ઉમેર્યા પછીના ફેરફાર મુજબ';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

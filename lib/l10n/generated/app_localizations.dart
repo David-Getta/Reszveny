@@ -4621,6 +4621,12 @@ abstract class AppLocalizations {
   /// **'Now {price} · {percent} to go'**
   String alertDistance(String price, String percent);
 
+  /// Favorites sort option: by the price change since the stock was added to the favorites, largest gain first.
+  ///
+  /// In en, this message translates to:
+  /// **'By change since added'**
+  String get watchSortSince;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

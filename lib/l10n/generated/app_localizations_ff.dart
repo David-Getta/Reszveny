@@ -2691,6 +2691,9 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'E waylo gila nde ɓeyduɗaa ɗum';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

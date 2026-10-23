@@ -2760,6 +2760,9 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Podle změny od přidání';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

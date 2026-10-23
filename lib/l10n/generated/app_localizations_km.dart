@@ -2675,6 +2675,9 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'តាមការប្រែប្រួលចាប់តាំងពីបន្ថែម';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

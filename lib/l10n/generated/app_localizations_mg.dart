@@ -2716,6 +2716,9 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Araka ny fiovana hatramin\'ny nanampiana azy';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

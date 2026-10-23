@@ -2669,6 +2669,9 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'ຕາມການປ່ຽນແປງນັບແຕ່ເພີ່ມ';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

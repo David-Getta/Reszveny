@@ -813,5 +813,6 @@
   "lotPreviewAverage": "Nauja vidutinė pirkimo kaina: {after} (dabar {before})",
   "portfolioYtdReturn": "Grąža šiemet",
   "glossTwrYtd": "Laiku svertinė grąža nuo metų pradžios (arba nuo jūsų pirmojo pirkimo, jei jis buvo šiemet): kiekviena diena įskaičiuoja tą dieną turėtų akcijų pokytį, o dienos sujungiamos į grandinę – pinigai, kuriuos įnešate ar išsiimate, nėra grąža, todėl ją galima palyginti su indeksu. Žemiau: pasirinktas indeksas per tą patį laikotarpį.",
-  "alertDistance": "Dabar {price} · liko {percent}"
+  "alertDistance": "Dabar {price} · liko {percent}",
+  "watchSortSince": "Pagal pokytį nuo įtraukimo"
 }

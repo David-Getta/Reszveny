@@ -2688,6 +2688,9 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'ထည့်ခဲ့ချိန်ကတည်းက ပြောင်းလဲမှုအလိုက်';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

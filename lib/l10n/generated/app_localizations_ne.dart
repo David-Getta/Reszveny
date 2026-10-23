@@ -2694,6 +2694,9 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'थपेदेखिको परिवर्तन अनुसार';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

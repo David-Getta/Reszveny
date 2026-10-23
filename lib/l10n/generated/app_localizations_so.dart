@@ -2705,6 +2705,9 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Isbeddel ahaan tan iyo markii lagu daray';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

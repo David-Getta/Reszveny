@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.212)
+# Változásjegyzék (0.2.130 → 0.2.213)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -124,6 +124,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 
 - **„Mióta figyeled”** a Kedvencek listán: a felvétel óta eltelt árváltozás az ár alatt („★ +1,3%”), a felvétel napja
   szinkronban és a mentésben.
+- A Kedvencek **rendezhetők „mióta figyeled” szerint** is: a felvétel óta legtöbbet emelkedett elöl, a dátum
+  nélküliek a végén.
 
 - **„Amíg távol voltál”** kártya: a nagy mozgások, a megszólalt riasztások, a közben megjelent eredmények és
   a portfólió változása a legutóbbi látogatás óta (előtérbe kerüléskor is).

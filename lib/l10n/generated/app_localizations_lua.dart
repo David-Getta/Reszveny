@@ -2706,6 +2706,10 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince =>
+      'Bilondeshile dishintuluka kubangila pawakayibueja';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

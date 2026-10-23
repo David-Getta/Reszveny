@@ -2691,6 +2691,9 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Site na mgbanwe kemgbe etinyere ya';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

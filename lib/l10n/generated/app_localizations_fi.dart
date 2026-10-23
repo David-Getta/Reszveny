@@ -2697,6 +2697,9 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Muutoksen mukaan lisäämisestä lähtien';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

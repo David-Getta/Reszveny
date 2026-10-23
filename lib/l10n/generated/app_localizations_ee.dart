@@ -2702,6 +2702,9 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Le tɔtrɔ nu tso esime wotsɔe kpe ɖe eŋu';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

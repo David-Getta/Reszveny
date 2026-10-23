@@ -2700,6 +2700,9 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Dumasar parobahan ti saprak ditambahkeun';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

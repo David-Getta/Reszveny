@@ -813,5 +813,6 @@
   "lotPreviewAverage": "Musuq chawpi chanin: {after} (kunan {before})",
   "portfolioYtdReturn": "Kay wata rendimiento",
   "glossTwrYtd": "Pachawan llasachisqa rendimiento wata qallariymanta (utaq ñawpaq rantisqaykimanta, kay watapi karqan chayqa): sapa p'unchaw chay p'unchaw hap'isqayki accionkunap tikrakuyninta yupan, p'unchawkunataq watasqa hina tinkichisqa – churasqayki utaq hurqusqayki qullqiqa manan rendimientochu, chayrayku huk índicewan tupachiyta atikun. Uranpi: akllasqa índice kikin pachapi.",
-  "alertDistance": "Kunan {price} · {percent} puchun"
+  "alertDistance": "Kunan {price} · {percent} puchun",
+  "watchSortSince": "Yapasqaykimanta hukyayman hina"
 }

@@ -2662,6 +2662,9 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'ከታከለ ወዲህ ባለው ለውጥ';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

@@ -2708,6 +2708,9 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Jijjiirama erga dabalamee as';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

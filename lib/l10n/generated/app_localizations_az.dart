@@ -2697,6 +2697,9 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Əlavə ediləndən bəri dəyişməyə görə';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

@@ -2707,6 +2707,9 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'சேர்த்ததிலிருந்து மாற்றத்தின்படி';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

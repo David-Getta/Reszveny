@@ -2685,6 +2685,9 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'བསྣན་ནས་བཟུང་བའི་འགྱུར་ལྡོག་ལྟར';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

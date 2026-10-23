@@ -813,5 +813,6 @@
   "lotPreviewAverage": "新平均成本：{after}（現時 {before}）",
   "portfolioYtdReturn": "今年回報率",
   "glossTwrYtd": "由年初起（如首次買入在今年，則由首次買入起）的時間加權回報率：每日計算你當日持有股票的升跌，再將各日串連起來——你存入或提取的資金不計作回報，因此可與指數比較。下方顯示同期所選指數的表現。",
-  "alertDistance": "現價 {price} · 尚差 {percent}"
+  "alertDistance": "現價 {price} · 尚差 {percent}",
+  "watchSortSince": "按加入以來升跌幅"
 }

@@ -2706,6 +2706,9 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Na nsoba banda yo yikamaka';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

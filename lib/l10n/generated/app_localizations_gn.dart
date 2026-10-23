@@ -2702,6 +2702,9 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Ñemoambue rupi rembojuaju guive';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

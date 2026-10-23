@@ -2698,6 +2698,9 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Nsakrae so efi bere a wode kaa ho';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

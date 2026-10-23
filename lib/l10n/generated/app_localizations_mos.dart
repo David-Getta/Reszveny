@@ -2681,6 +2681,9 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Toeeme sẽn sɩng f sẽn paas-a';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

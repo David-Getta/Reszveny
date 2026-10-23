@@ -2708,6 +2708,9 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Sumala sa kausaban sukad gidugang';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

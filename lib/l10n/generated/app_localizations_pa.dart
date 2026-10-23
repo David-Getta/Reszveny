@@ -2693,6 +2693,9 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'ਸ਼ਾਮਲ ਕਰਨ ਤੋਂ ਬਾਅਦ ਬਦਲਾਅ ਅਨੁਸਾਰ';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

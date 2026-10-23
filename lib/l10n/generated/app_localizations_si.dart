@@ -2693,6 +2693,9 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'එක් කළ දින සිට වෙනස අනුව';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

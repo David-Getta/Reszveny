@@ -2765,6 +2765,9 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Па змене з часу дадання';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

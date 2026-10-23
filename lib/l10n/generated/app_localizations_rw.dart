@@ -2709,6 +2709,9 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Ukurikije ihinduka kuva wawushyiramo';
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

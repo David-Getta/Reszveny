@@ -2698,6 +2698,9 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Аз рӯи тағйирот аз замони илова';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

@@ -2695,6 +2695,9 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Қосылғаннан бергі өзгеріс бойынша';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

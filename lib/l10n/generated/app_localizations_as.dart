@@ -2694,6 +2694,9 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'যোগ কৰাৰ পৰা পৰিৱৰ্তন অনুসৰি';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

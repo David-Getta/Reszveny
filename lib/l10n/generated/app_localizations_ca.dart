@@ -2706,6 +2706,9 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Per variació des que la vas afegir';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

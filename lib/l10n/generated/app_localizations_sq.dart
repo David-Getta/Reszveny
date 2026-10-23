@@ -2702,6 +2702,9 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Sipas ndryshimit që nga shtimi';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

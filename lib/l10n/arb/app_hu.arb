@@ -714,6 +714,7 @@
   "portfolioYtdReturn": "Idei hozam",
   "glossTwrYtd": "Időarányos hozam az év elejétől (vagy az első vételtől, ha az idén volt): minden nap az aznap birtokolt részvények változása számít, és a napok összeláncolódnak – a befizetés és a kivét nem hozam, így összevethető egy indexszel. Alatta a választott index ugyanerre az időszakra.",
   "alertDistance": "Most {price} · még {percent}",
+  "watchSortSince": "Mióta figyeled szerint",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

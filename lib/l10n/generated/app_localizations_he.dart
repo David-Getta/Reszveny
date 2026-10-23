@@ -2688,6 +2688,9 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'לפי שינוי מאז ההוספה';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

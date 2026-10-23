@@ -2700,6 +2700,9 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Mengikut perubahan sejak ditambah';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

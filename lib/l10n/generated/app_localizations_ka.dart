@@ -2696,6 +2696,9 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'ცვლილებით დამატების შემდეგ';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

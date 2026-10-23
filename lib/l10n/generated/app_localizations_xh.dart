@@ -2709,6 +2709,9 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Ngotshintsho ukususela oko yongezwa';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

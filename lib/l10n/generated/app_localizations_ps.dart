@@ -2688,6 +2688,9 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'له ورزیاتولو راهیسې د بدلون له مخې';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

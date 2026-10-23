@@ -2698,6 +2698,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'بەپێی گۆڕان لە کاتی زیادکردنەوە';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

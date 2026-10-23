@@ -813,5 +813,6 @@
   "lotPreviewAverage": "Iindleko ezintsha eziphakathi: {after} (ngoku {before})",
   "portfolioYtdReturn": "Inzuzo yalo nyaka",
   "glossTwrYtd": "Inzuzo elinganiswe ngexesha ukususela ekuqaleni konyaka (okanye ukususela ekuthengeni kwakho kokuqala, ukuba bekukulo nyaka): usuku ngalunye lubala utshintsho lwezabelo obunazo ngolo suku, kwaye iintsuku zidityaniswa njengetyathanga – imali oyifakayo okanye oyikhuphayo ayiyonzuzo, ngoko ke inokuthelekiswa ne-index. Ngezantsi kwayo: i-index ekhethiweyo kwisithuba esifanayo.",
-  "alertDistance": "Ngoku {price} · kusele {percent}"
+  "alertDistance": "Ngoku {price} · kusele {percent}",
+  "watchSortSince": "Ngotshintsho ukususela oko yongezwa"
 }

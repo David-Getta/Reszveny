@@ -2303,6 +2303,10 @@
       }
     }
   },
+  "watchSortSince": "By change since added",
+  "@watchSortSince": {
+    "description": "Favorites sort option: by the price change since the stock was added to the favorites, largest gain first."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

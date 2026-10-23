@@ -2696,6 +2696,9 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Etter endring siden lagt til';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

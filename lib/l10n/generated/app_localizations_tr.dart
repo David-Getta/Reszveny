@@ -2696,6 +2696,9 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Eklendiğinden beri değişime göre';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

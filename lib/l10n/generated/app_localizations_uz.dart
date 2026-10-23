@@ -2700,6 +2700,9 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Qoʻshilgandan beri oʻzgarish boʻyicha';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

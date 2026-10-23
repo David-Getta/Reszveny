@@ -2711,6 +2711,10 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince =>
+      'Okusinziira ku nkyukakyuka okuva lwe yagattibwako';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

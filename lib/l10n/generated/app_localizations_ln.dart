@@ -2708,6 +2708,9 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'Na bobongwani banda ebakisamaki';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

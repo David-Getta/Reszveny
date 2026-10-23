@@ -2688,6 +2688,9 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get watchSortSince => 'जोड़लाक बादक बदलाव अनुसार';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override
