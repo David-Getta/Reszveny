@@ -57,6 +57,7 @@ class _SplitDialogState extends State<_SplitDialog> {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
     return AlertDialog(
+      scrollable: true,
       title: Text(l10n.portfolioSplitTitle(widget.symbol)),
       content: SizedBox(
         width: 360,

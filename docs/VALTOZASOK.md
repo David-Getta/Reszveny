@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.253)
+# Változásjegyzék (0.2.130 → 0.2.254)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -237,6 +237,14 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 
 - **Akadálymentesség**: a keresőmező küldés-gombja nevet kapott a képernyőolvasónak; új teszt ellenőrzi, hogy a fő
   oldalakon (kezdőlap, portfólió, riasztások, beállítások, kedvencek, részvény oldal) minden koppintható elemnek van neve.
+- **Nagy betűméret (0.2.254)**: 200%-os rendszer-betűméretnél, kis telefonon (360 pt) sem csúszik ki semmi. A
+  címke–összeg sorok (kapott és várható osztalékok, realizált nyereség évenként, dátumválasztó, versenytársak,
+  bennfentes ügyletek, „Összes tranzakció”, minta-portfólió sáv) új közös elrendezéssel készülnek: ha az összeg nem
+  fér a címke mellé, alá kerül, a sor végéhez igazítva (normál méretnél minden a régi helyén marad); a többsoros
+  dialógusok görgethetők; a csomagkártyák magassága a tartalomhoz igazodik, nagy betűnél egy oszlopban. Új teszt
+  angolul és magyarul végiggörgeti a fő oldalakat és dialógusokat (kezdőlap, kedvencek, események, portfólió,
+  osztalék- és készpénz-dialógus, összes tranzakció, éves összesítő, követő stopok, riasztások, beállítások,
+  fogalomtár, csomagok, részvény oldal és AI-elemzés, vétel- és riasztás-dialógus, összehasonlítás).
 
 - **Javítások egy második kódátnézés nyomán** (vétel/eladás dialógus): a súly-előnézet számol a készpénzből fizetéssel
   és a felaprózással; egy korábbi napra pótolt tétel alapból nem változtat a mai készpénzen; dupla koppintásra sem

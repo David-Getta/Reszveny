@@ -205,17 +205,8 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
                     child: Padding(padding: const EdgeInsets.all(16), child: Text(l10n.billingUnavailable)),
                   )
                 else
-                  GridView(
-                    shrinkWrap: true,
-                    physics: const NeverScrollableScrollPhysics(),
-                    // Rögzített kártyamagasság: a pipás lista és a gomb minden
-                    // nyelven és betűméretnél elfér.
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: yearly ? 2 : (wide ? 4 : 2),
-                      mainAxisSpacing: 12,
-                      crossAxisSpacing: 12,
-                      mainAxisExtent: 300 * MediaQuery.textScalerOf(context).scale(1).clamp(1.0, 1.6),
-                    ),
+                  _PlanGrid(
+                    columns: yearly ? 2 : (wide ? 4 : 2),
                     children: [
                       for (final spec in specs)
                         if ((yearly ? spec.yearlyProductId : spec.productId) case final id?)
@@ -401,6 +392,50 @@ class _StatusCard extends StatelessWidget {
   }
 }
 
+/// A csomagkártyák rácsa: soronként egyforma magas kártyák, a magasság a tartalomhoz
+/// igazodik (minden nyelven és betűméretnél elfér a pipás lista és a gomb). Nagy
+/// betűméretnél kevesebb oszlop, hogy a kártya ne legyen túl keskeny.
+class _PlanGrid extends StatelessWidget {
+  const _PlanGrid({required this.columns, required this.children});
+
+  final int columns;
+  final List<Widget> children;
+
+  static const _gap = 12.0;
+
+  /// Ennél keskenyebb kártya (normál betűméretnél) nem fér el jól.
+  static const _minCardWidth = 150.0;
+
+  @override
+  Widget build(BuildContext context) {
+    final scale = MediaQuery.textScalerOf(context).scale(1).clamp(1.0, 3.0);
+    return LayoutBuilder(
+      builder: (context, c) {
+        final fit = ((c.maxWidth + _gap) / (_minCardWidth * scale + _gap)).floor();
+        final cols = fit.clamp(1, columns);
+        return Column(
+          children: [
+            for (var i = 0; i < children.length; i += cols) ...[
+              if (i > 0) const SizedBox(height: _gap),
+              IntrinsicHeight(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    for (var j = i; j < i + cols; j++) ...[
+                      if (j > i) const SizedBox(width: _gap),
+                      Expanded(child: j < children.length ? children[j] : const SizedBox.shrink()),
+                    ],
+                  ],
+                ),
+              ),
+            ],
+          ],
+        );
+      },
+    );
+  }
+}
+
 class _PlanCard extends StatelessWidget {
   const _PlanCard({
     required this.spec,
@@ -539,12 +574,15 @@ class _PackChip extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(l10n.extraCredits(n), style: const TextStyle(fontWeight: FontWeight.w600)),
-              Text(product.price, style: TextStyle(color: p.muted, fontSize: 12)),
-            ],
+          // Nagy betűméretnél a felirat tördelődik, a gomb a helyén marad.
+          Flexible(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(l10n.extraCredits(n), style: const TextStyle(fontWeight: FontWeight.w600)),
+                Text(product.price, style: TextStyle(color: p.muted, fontSize: 12)),
+              ],
+            ),
           ),
           const SizedBox(width: 12),
           FilledButton.tonal(onPressed: busy ? null : onBuy, child: Text(l10n.buy)),

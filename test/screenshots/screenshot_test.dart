@@ -50,6 +50,7 @@ import 'package:reszveny/features/stock_detail/widgets/outlook_view.dart';
 import 'package:reszveny/l10n/generated/app_localizations.dart';
 import 'package:reszveny/theme/app_theme.dart';
 import 'package:reszveny/widgets/collapsible.dart';
+import 'package:reszveny/widgets/fit_row.dart';
 
 /// Képernyőképek a felületről a teszt-harnessben (valódi betűkkel). Csak
 /// kézzel futtatjuk: `flutter test --tags screenshot --dart-define=SHOTS=<mappa>`.
@@ -1132,6 +1133,29 @@ void main() {
     await Scrollable.ensureVisible(tester.element(goal), alignment: 0.7);
     await tester.pumpAndSettle();
     await _shot(tester, 'portfolio_dividend_goal_phone_hu');
+  });
+
+  testWidgets('large text (200%) on a small phone (hungarian)', (tester) async {
+    tester.platformDispatcher.textScaleFactorTestValue = 2.0;
+    addTearDown(tester.platformDispatcher.clearTextScaleFactorTestValue);
+    final portfolio = _samplePortfolio();
+    await portfolio.addDividend(symbol: 'AAPL', amount: 4.68, currency: 'USD', date: DateTime(2026, 8, 14));
+    await portfolio.addDividend(symbol: 'MSFT', amount: 3.64, currency: 'USD', date: DateTime(2026, 9, 11));
+    await portfolio.addDividend(symbol: 'OTP', amount: 58800, currency: 'HUF', date: DateTime(2026, 6, 2));
+    final s = _services(locale: const Locale('hu'), portfolio: portfolio, currency: 'HUF');
+    await pumpApp(tester, s, const Size(360, 780));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    final card = find.byKey(const ValueKey('portfolio-dividends-received'));
+    for (var i = 0; i < 40 && card.evaluate().isEmpty; i++) {
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+      await tester.pumpAndSettle();
+    }
+    // A kapott osztalékok sorai: az összeg a dátum alá tördelődik.
+    final row = find.descendant(of: card, matching: find.byType(FitRow));
+    await Scrollable.ensureVisible(tester.element(row.first), alignment: 0.15);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'large_text_dividends_phone_hu');
   });
 
   testWidgets('selling shares on a phone (hungarian)', (tester) async {

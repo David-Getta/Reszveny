@@ -27,6 +27,7 @@ Future<void> showShortcutsDialog(BuildContext context) {
       final p = AppPalette.of(context);
       final theme = Theme.of(context);
       return AlertDialog(
+        scrollable: true,
         key: const ValueKey('shortcuts-dialog'),
         title: Text(l10n.shortcutsTitle),
         content: SizedBox(

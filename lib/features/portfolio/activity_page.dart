@@ -9,6 +9,7 @@ import '../../app_services.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/fit_row.dart';
 import 'add_lot_dialog.dart' show showEditLotDialog;
 import 'dividends_card.dart' show showEditDividendDialog;
 import 'portfolio_store.dart';
@@ -295,60 +296,55 @@ class _ActivityList extends StatelessWidget {
         ActivityKind.dividend => Icons.payments_outlined,
         ActivityKind.split => Icons.call_split_rounded,
       }, color: kind == ActivityKind.buy || kind == ActivityKind.split ? p.muted : p.accent),
-      title: Text.rich(
-        TextSpan(
-          text: e.symbol,
-          style: const TextStyle(fontWeight: FontWeight.w600),
-          children: [
-            TextSpan(
-              text: '  ${_kindLabel(l10n, kind)}',
-              style: TextStyle(color: p.muted, fontWeight: FontWeight.normal),
-            ),
-          ],
+      // Az összeg a cím sorában, a realizált nyereség a részletek sorában; ha nem fér el
+      // (nagy betűméret), a sor alá kerül.
+      title: FitRow(
+        lead: Text.rich(
+          TextSpan(
+            text: e.symbol,
+            style: const TextStyle(fontWeight: FontWeight.w600),
+            children: [
+              TextSpan(
+                text: '  ${_kindLabel(l10n, kind)}',
+                style: TextStyle(color: p.muted, fontWeight: FontWeight.normal),
+              ),
+            ],
+          ),
         ),
+        trailing: amount == null
+            ? const SizedBox.shrink()
+            : Text(
+                amount,
+                style: TextStyle(fontWeight: FontWeight.w600, color: kind == ActivityKind.dividend ? p.positive : null),
+              ),
       ),
-      subtitle: Text(details.join(' · ')),
+      subtitle: FitRow(
+        lead: Text(details.join(' · ')),
+        // Eladásnál a realizált nyereség (FIFO szerint, díjjal).
+        trailing: switch (realized[e.id]) {
+          final r? when kind == ActivityKind.sell => Tooltip(
+            message: l10n.portfolioRealized,
+            child: Text(
+              fmt.money(r.gain, r.currency, withSign: true),
+              key: ValueKey('activity-realized-${e.id}'),
+              style: TextStyle(fontSize: 12, color: gainColor(p, r.gain)),
+            ),
+          ),
+          _ => const SizedBox.shrink(),
+        },
+      ),
       // Koppintva javítható (a felaprózás csak törölhető).
       onTap: switch (e) {
         ActivityEntry(lot: final l?) => () => showEditLotDialog(context, l),
         ActivityEntry(dividend: final d?) => () => showEditDividendDialog(context, d),
         _ => null,
       },
-      trailing: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          if (amount != null)
-            Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Text(
-                  amount,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w600,
-                    color: kind == ActivityKind.dividend ? p.positive : null,
-                  ),
-                ),
-                // Eladásnál alatta a realizált nyereség (FIFO szerint, díjjal).
-                if (realized[e.id] case final r? when kind == ActivityKind.sell)
-                  Tooltip(
-                    message: l10n.portfolioRealized,
-                    child: Text(
-                      fmt.money(r.gain, r.currency, withSign: true),
-                      key: ValueKey('activity-realized-${e.id}'),
-                      style: TextStyle(fontSize: 12, color: gainColor(p, r.gain)),
-                    ),
-                  ),
-              ],
-            ),
-          IconButton(
-            key: ValueKey('activity-delete-${e.id}'),
-            tooltip: l10n.portfolioRemove,
-            visualDensity: VisualDensity.compact,
-            icon: Icon(Icons.close_rounded, size: 18, color: p.muted),
-            onPressed: () => onDelete(e),
-          ),
-        ],
+      trailing: IconButton(
+        key: ValueKey('activity-delete-${e.id}'),
+        tooltip: l10n.portfolioRemove,
+        visualDensity: VisualDensity.compact,
+        icon: Icon(Icons.close_rounded, size: 18, color: p.muted),
+        onPressed: () => onDelete(e),
       ),
     );
   }

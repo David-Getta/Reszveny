@@ -57,6 +57,7 @@ class _CashDialogState extends State<_CashDialog> {
     final services = AppServices.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     return AlertDialog(
+      scrollable: true,
       title: Text(l10n.portfolioCashTitle),
       content: SizedBox(
         width: 360,

@@ -172,6 +172,7 @@ class _GoalDialogState extends State<_GoalDialog> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return AlertDialog(
+      scrollable: true,
       title: Text(widget.title),
       content: TextField(
         key: const ValueKey('goal-amount'),

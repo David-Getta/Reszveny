@@ -72,6 +72,7 @@ class _StopsDialogState extends State<_StopsDialog> {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
     return AlertDialog(
+      scrollable: true,
       title: Text(l10n.portfolioStopsAll),
       content: SizedBox(
         width: 380,

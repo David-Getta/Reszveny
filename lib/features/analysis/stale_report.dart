@@ -59,6 +59,7 @@ Future<bool?> askStaleChoice(BuildContext context, StockReport report) {
   return showDialog<bool>(
     context: context,
     builder: (context) => AlertDialog(
+      scrollable: true,
       icon: const Icon(Icons.update_rounded),
       title: Text(l10n.staleTitle),
       content: Column(

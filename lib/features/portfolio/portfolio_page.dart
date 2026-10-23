@@ -8,6 +8,7 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
+import '../../widgets/fit_row.dart';
 import '../../widgets/metric_hint.dart';
 import 'allocation_card.dart';
 import 'purchases_sheet.dart';
@@ -432,14 +433,12 @@ class _PortfolioBody extends StatelessWidget {
                                 ..sort((a, b) => (b.key ?? 0).compareTo(a.key ?? 0))))
                             Padding(
                               padding: const EdgeInsets.symmetric(vertical: 4),
-                              child: Row(
-                                children: [
-                                  Expanded(child: Text(e.key == null ? l10n.notAvailable : '${e.key}')),
-                                  Text(
-                                    fmt.money(e.value, ccy, withSign: true),
-                                    style: TextStyle(color: gainColor(p, e.value), fontWeight: FontWeight.w600),
-                                  ),
-                                ],
+                              child: FitRow(
+                                lead: Text(e.key == null ? l10n.notAvailable : '${e.key}'),
+                                trailing: Text(
+                                  fmt.money(e.value, ccy, withSign: true),
+                                  style: TextStyle(color: gainColor(p, e.value), fontWeight: FontWeight.w600),
+                                ),
                               ),
                             ),
                           const SizedBox(height: 4),
@@ -525,19 +524,21 @@ class _SampleBanner extends StatelessWidget {
       color: p.accent.withValues(alpha: 0.12),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(16, 10, 8, 10),
-        child: Row(
-          children: [
-            Icon(Icons.science_outlined, size: 20, color: p.accent),
-            const SizedBox(width: 10),
-            Expanded(child: Text(l10n.portfolioSampleBanner)),
-            TextButton(
-              key: const ValueKey('portfolio-sample-remove'),
-              onPressed: () => AppServices.of(context).portfolio.removeSample(),
-              // A színezett sávon a szöveg színe olvashatóbb, mint a kiemelő szín.
-              style: TextButton.styleFrom(foregroundColor: p.text),
-              child: Text(l10n.portfolioSampleRemove, style: const TextStyle(fontWeight: FontWeight.w700)),
-            ),
-          ],
+        child: FitRow(
+          lead: Row(
+            children: [
+              Icon(Icons.science_outlined, size: 20, color: p.accent),
+              const SizedBox(width: 10),
+              Expanded(child: Text(l10n.portfolioSampleBanner)),
+            ],
+          ),
+          trailing: TextButton(
+            key: const ValueKey('portfolio-sample-remove'),
+            onPressed: () => AppServices.of(context).portfolio.removeSample(),
+            // A színezett sávon a szöveg színe olvashatóbb, mint a kiemelő szín.
+            style: TextButton.styleFrom(foregroundColor: p.text),
+            child: Text(l10n.portfolioSampleRemove, style: const TextStyle(fontWeight: FontWeight.w700)),
+          ),
         ),
       ),
     );

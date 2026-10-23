@@ -49,6 +49,7 @@ class _TickerChangeDialogState extends State<_TickerChangeDialog> {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
     return AlertDialog(
+      scrollable: true,
       title: Text(l10n.tickerChangeTitle(widget.symbol)),
       content: SizedBox(
         width: 360,

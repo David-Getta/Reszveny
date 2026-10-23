@@ -5,6 +5,7 @@ import '../../../core/models/stock_candidate.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../theme/app_theme.dart';
 import '../../compare/compare_page.dart';
+import '../../../widgets/fit_row.dart';
 
 /// „Hasonló cégek”: a versenytársak tickerei; koppintásra megnyílnak, a gomb
 /// a mostani részvénnyel együtt az összehasonlítást nyitja meg.
@@ -50,22 +51,18 @@ class _PeersStripState extends State<PeersStrip> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Text(l10n.peersTitle, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
-                  ),
-                  TextButton.icon(
-                    key: const ValueKey('peers-compare'),
-                    style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
-                    onPressed: () => ComparePage.open(context, [
-                      widget.symbol,
-                      ...peers.take(ComparePage.maxStocks - 1),
-                    ], onOpenSymbol: widget.onOpenSymbol),
-                    icon: const Icon(Icons.compare_arrows_rounded, size: 18),
-                    label: Text(l10n.compareTitle),
-                  ),
-                ],
+              FitRow(
+                lead: Text(l10n.peersTitle, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
+                trailing: TextButton.icon(
+                  key: const ValueKey('peers-compare'),
+                  style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
+                  onPressed: () => ComparePage.open(context, [
+                    widget.symbol,
+                    ...peers.take(ComparePage.maxStocks - 1),
+                  ], onOpenSymbol: widget.onOpenSymbol),
+                  icon: const Icon(Icons.compare_arrows_rounded, size: 18),
+                  label: Text(l10n.compareTitle),
+                ),
               ),
               const SizedBox(height: 4),
               Wrap(

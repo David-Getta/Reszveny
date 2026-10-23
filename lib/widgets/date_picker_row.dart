@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../core/util/formatters.dart';
 import '../l10n/generated/app_localizations.dart';
 import '../theme/app_theme.dart';
+import 'fit_row.dart';
 
 /// Dátumválasztó sor a dialógusokban: ikon, halvány címke és a kiválasztott
 /// nap; koppintásra naptár 1980-tól ma-ig (jövőbeli nap nem választható).
@@ -35,15 +36,17 @@ class DatePickerRow extends StatelessWidget {
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 8),
-        child: Row(
-          children: [
-            Icon(Icons.event_outlined, size: 18, color: p.muted),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text(label, style: TextStyle(color: p.muted)),
-            ),
-            Text(fmt.date(date), style: const TextStyle(fontWeight: FontWeight.w600)),
-          ],
+        child: FitRow(
+          lead: Row(
+            children: [
+              Icon(Icons.event_outlined, size: 18, color: p.muted),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(label, style: TextStyle(color: p.muted)),
+              ),
+            ],
+          ),
+          trailing: Text(fmt.date(date), style: const TextStyle(fontWeight: FontWeight.w600)),
         ),
       ),
     );

@@ -537,6 +537,7 @@ class _MoveAlertDialogState extends State<_MoveAlertDialog> {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
     return AlertDialog(
+      scrollable: true,
       title: Text(l10n.watchAlertAll),
       content: Column(
         mainAxisSize: MainAxisSize.min,
@@ -650,6 +651,7 @@ class _ListNameDialogState extends State<_ListNameDialog> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return AlertDialog(
+      scrollable: true,
       title: Text(widget.initial.isEmpty ? l10n.watchListNew : l10n.watchListRename),
       content: TextField(
         key: const ValueKey('watch-list-name'),

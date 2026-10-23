@@ -6,6 +6,7 @@ import '../../../core/util/formatters.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../theme/app_theme.dart';
 import 'section_card.dart';
+import '../../../widgets/fit_row.dart';
 
 /// „Bennfentes ügyletek”: a vezetők és igazgatók nyílt piaci vételei és
 /// eladásai az elmúlt 90 napban (SEC Form 4). Ha nincs adat (pl. nem
@@ -78,14 +79,17 @@ class _InsidersCardState extends State<InsidersCard> {
                   ListTile(
                     contentPadding: EdgeInsets.zero,
                     dense: true,
-                    title: Text(t.name.isEmpty ? '—' : t.name, maxLines: 1, overflow: TextOverflow.ellipsis),
+                    // A vétel/eladás a név sorában; nagy betűméretnél a név alá kerül.
+                    title: FitRow(
+                      lead: Text(t.name.isEmpty ? '—' : t.name, maxLines: 1, overflow: TextOverflow.ellipsis),
+                      trailing: Text(
+                        '${t.code == 'P' ? l10n.insiderBuy : l10n.insiderSell} ${fmt.compact(t.change.abs())}',
+                        style: TextStyle(color: t.code == 'P' ? p.positive : p.negative, fontWeight: FontWeight.w600),
+                      ),
+                    ),
                     subtitle: Text(
                       [fmt.date(t.date), if (t.price != null) fmt.price(t.price, widget.currency)].join(' · '),
                       style: muted,
-                    ),
-                    trailing: Text(
-                      '${t.code == 'P' ? l10n.insiderBuy : l10n.insiderSell} ${fmt.compact(t.change.abs())}',
-                      style: TextStyle(color: t.code == 'P' ? p.positive : p.negative, fontWeight: FontWeight.w600),
                     ),
                   ),
               ],

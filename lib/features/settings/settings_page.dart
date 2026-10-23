@@ -39,6 +39,7 @@ Future<void> _confirmDeleteAccount(BuildContext context) async {
     context: context,
     builder: (context) => StatefulBuilder(
       builder: (context, setState) => AlertDialog(
+        scrollable: true,
         title: Text(l10n.deleteAccountTitle),
         content: SizedBox(
           width: 420,

@@ -7,6 +7,7 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/date_picker_row.dart';
+import '../../widgets/fit_row.dart';
 import '../../widgets/metric_hint.dart';
 import 'account_field.dart';
 import 'add_lot_dialog.dart' show exactNumber, parseAmount;
@@ -187,53 +188,56 @@ class DividendsCard extends StatelessWidget {
                       Padding(
                         key: ValueKey('dividend-expected-${x.symbol}'),
                         padding: const EdgeInsets.only(right: 8, top: 4),
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: Text.rich(
+                        child: FitRow(
+                          lead: Text.rich(
+                            TextSpan(
+                              text: x.symbol,
+                              style: const TextStyle(fontWeight: FontWeight.w600),
+                              children: [
                                 TextSpan(
-                                  text: x.symbol,
-                                  style: const TextStyle(fontWeight: FontWeight.w600),
-                                  children: [
-                                    TextSpan(
-                                      text: '  ${l10n.portfolioDividendAround(fmt.date(x.date))}',
-                                      style: TextStyle(color: p.muted, fontWeight: FontWeight.normal),
-                                    ),
-                                  ],
+                                  text: '  ${l10n.portfolioDividendAround(fmt.date(x.date))}',
+                                  style: TextStyle(color: p.muted, fontWeight: FontWeight.normal),
                                 ),
+                              ],
+                            ),
+                          ),
+                          trailing: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Flexible(
+                                child: Text(approxMoney(fmt, x.amount, x.currency), style: TextStyle(color: p.muted)),
                               ),
-                            ),
-                            Text(approxMoney(fmt, x.amount, x.currency), style: TextStyle(color: p.muted)),
-                            // Megérkezett: egy koppintással rögzíthető a várható adatokkal előre kitöltve.
-                            IconButton(
-                              key: ValueKey('dividend-expected-add-${x.symbol}'),
-                              tooltip: l10n.portfolioAddDividend,
-                              visualDensity: VisualDensity.compact,
-                              icon: Icon(Icons.add_circle_outline_rounded, size: 18, color: p.muted),
-                              // Több számlán érkező kifizetésnél a legnagyobb rész a saját számlájára
-                              // (a többi a számla nézetéből vagy kézzel rögzíthető).
-                              onPressed: () {
-                                // Csak a részvényt még tartó számlák közül (ha van ilyen rész).
-                                final holders = services.portfolio.heldByAccount(x.symbol).keys.toSet();
-                                final candidates = {
-                                  for (final e in x.byAccount.entries)
-                                    if (holders.contains(e.key)) e.key: e.value,
-                                };
-                                final mainKey = largestKey<String?>(candidates);
-                                final part = account != null || candidates.isEmpty
-                                    ? null
-                                    : (key: mainKey, value: candidates[mainKey]!);
-                                showAddDividendDialog(
-                                  context,
-                                  symbol: x.symbol,
-                                  currency: x.currency,
-                                  amount: part?.value ?? x.amount,
-                                  date: x.date,
-                                  account: part?.key ?? account,
-                                );
-                              },
-                            ),
-                          ],
+                              // Megérkezett: egy koppintással rögzíthető a várható adatokkal előre kitöltve.
+                              IconButton(
+                                key: ValueKey('dividend-expected-add-${x.symbol}'),
+                                tooltip: l10n.portfolioAddDividend,
+                                visualDensity: VisualDensity.compact,
+                                icon: Icon(Icons.add_circle_outline_rounded, size: 18, color: p.muted),
+                                // Több számlán érkező kifizetésnél a legnagyobb rész a saját számlájára
+                                // (a többi a számla nézetéből vagy kézzel rögzíthető).
+                                onPressed: () {
+                                  // Csak a részvényt még tartó számlák közül (ha van ilyen rész).
+                                  final holders = services.portfolio.heldByAccount(x.symbol).keys.toSet();
+                                  final candidates = {
+                                    for (final e in x.byAccount.entries)
+                                      if (holders.contains(e.key)) e.key: e.value,
+                                  };
+                                  final mainKey = largestKey<String?>(candidates);
+                                  final part = account != null || candidates.isEmpty
+                                      ? null
+                                      : (key: mainKey, value: candidates[mainKey]!);
+                                  showAddDividendDialog(
+                                    context,
+                                    symbol: x.symbol,
+                                    currency: x.currency,
+                                    amount: part?.value ?? x.amount,
+                                    date: x.date,
+                                    account: part?.key ?? account,
+                                  );
+                                },
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     Padding(
@@ -246,42 +250,48 @@ class DividendsCard extends StatelessWidget {
                   ],
                   const SizedBox(height: 8),
                   for (final d in all.take(maxListed))
-                    Row(
+                    FitRow(
                       key: ValueKey('dividend-${d.id}'),
-                      children: [
-                        Expanded(
-                          child: Text.rich(
-                            TextSpan(
-                              text: d.symbol,
+                      lead: Text.rich(
+                        TextSpan(
+                          text: d.symbol,
+                          style: const TextStyle(fontWeight: FontWeight.w600),
+                          children: [
+                            // Minden számla nézetében a tétel számlája is (ha van).
+                            if ([if (d.date != null) fmt.date(d.date!), if (account == null) ?d.account].join(' · ')
+                                case final meta when meta.isNotEmpty)
+                              TextSpan(
+                                text: '  $meta',
+                                style: TextStyle(color: p.muted, fontWeight: FontWeight.normal),
+                              ),
+                          ],
+                        ),
+                      ),
+                      trailing: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Flexible(
+                            child: Text(
+                              fmt.money(d.amount, d.currency),
                               style: const TextStyle(fontWeight: FontWeight.w600),
-                              children: [
-                                // Minden számla nézetében a tétel számlája is (ha van).
-                                if ([if (d.date != null) fmt.date(d.date!), if (account == null) ?d.account].join(' · ')
-                                    case final meta when meta.isNotEmpty)
-                                  TextSpan(
-                                    text: '  $meta',
-                                    style: TextStyle(color: p.muted, fontWeight: FontWeight.normal),
-                                  ),
-                              ],
                             ),
                           ),
-                        ),
-                        Text(fmt.money(d.amount, d.currency), style: const TextStyle(fontWeight: FontWeight.w600)),
-                        IconButton(
-                          key: ValueKey('dividend-edit-${d.id}'),
-                          tooltip: l10n.lotEdit,
-                          visualDensity: VisualDensity.compact,
-                          icon: Icon(Icons.edit_outlined, size: 18, color: p.muted),
-                          onPressed: () => showEditDividendDialog(context, d),
-                        ),
-                        IconButton(
-                          key: ValueKey('dividend-delete-${d.id}'),
-                          tooltip: l10n.portfolioRemove,
-                          visualDensity: VisualDensity.compact,
-                          icon: Icon(Icons.close_rounded, size: 18, color: p.muted),
-                          onPressed: () => _delete(context, d),
-                        ),
-                      ],
+                          IconButton(
+                            key: ValueKey('dividend-edit-${d.id}'),
+                            tooltip: l10n.lotEdit,
+                            visualDensity: VisualDensity.compact,
+                            icon: Icon(Icons.edit_outlined, size: 18, color: p.muted),
+                            onPressed: () => showEditDividendDialog(context, d),
+                          ),
+                          IconButton(
+                            key: ValueKey('dividend-delete-${d.id}'),
+                            tooltip: l10n.portfolioRemove,
+                            visualDensity: VisualDensity.compact,
+                            icon: Icon(Icons.close_rounded, size: 18, color: p.muted),
+                            onPressed: () => _delete(context, d),
+                          ),
+                        ],
+                      ),
                     ),
                   const SizedBox(height: 4),
                   Padding(
@@ -457,6 +467,7 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return AlertDialog(
+      scrollable: true,
       title: Text(switch (widget.editing) {
         final e? => l10n.dividendEditTitle(e.symbol),
         null => l10n.portfolioAddDividend,

@@ -344,6 +344,7 @@ class _PickDialogState extends State<_PickDialog> {
     final prefs = AppServices.of(context).preferences;
     final quick = {...prefs.favorites, ...prefs.recent}.where((s) => !widget.exclude.contains(s)).take(10).toList();
     return AlertDialog(
+      scrollable: true,
       title: Text(l10n.compareAdd),
       content: Column(
         mainAxisSize: MainAxisSize.min,

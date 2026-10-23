@@ -306,6 +306,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     await showDialog<void>(
       context: context,
       builder: (context) => AlertDialog(
+        scrollable: true,
         title: Text(l10n.noCandidatesTitle),
         content: Column(
           mainAxisSize: MainAxisSize.min,

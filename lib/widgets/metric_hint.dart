@@ -7,6 +7,7 @@ import '../theme/app_theme.dart';
 Future<void> explainMetric(BuildContext context, String label, String text) => showDialog<void>(
   context: context,
   builder: (context) => AlertDialog(
+    scrollable: true,
     title: Text(label),
     content: Text(text),
     actions: [

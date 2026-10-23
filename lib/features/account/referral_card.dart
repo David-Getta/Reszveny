@@ -205,6 +205,7 @@ class _RedeemDialogState extends State<_RedeemDialog> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return AlertDialog(
+      scrollable: true,
       title: Text(l10n.referralHaveCode),
       content: TextField(
         key: const ValueKey('referral-input'),
