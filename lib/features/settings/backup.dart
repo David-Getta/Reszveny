@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
+import '../../core/app_preferences.dart';
 import '../../core/share/save_file.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../sync/sync_service.dart';
@@ -58,6 +59,7 @@ class Backup {
       'alerts_deleted': idsOf(['alerts']),
       'notes_deleted': {for (final k in (now['notes'] as Map? ?? const {}).keys) '$k'},
       'favorites_removed': {for (final f in (now['favorites'] as List? ?? const [])) '$f'},
+      'lists_removed': _listKeys(now['watch_lists']),
     };
     final revived = {for (final k in present.keys) k: <String>{}};
     // Visszajön-e (és ha igen, feljegyzi).
@@ -87,6 +89,11 @@ class Backup {
         for (final f in (backup['favorites'] as List? ?? const []))
           if (back('favorites_removed', '$f')) '$f': stamp,
       },
+      'lists_added': {
+        ...?(backup['lists_added'] as Map?),
+        for (final k in _listKeys(backup['watch_lists']))
+          if (back('lists_removed', k)) k: stamp,
+      },
     };
     final current = {
       ...now,
@@ -111,6 +118,15 @@ class Backup {
     );
   }
 }
+
+/// A saját listák és tagjaik szinkron-kulcsai egy csomagból.
+Set<String> _listKeys(Object? lists) => {
+  for (final l in lists is List ? lists : const [])
+    if (WatchList.fromJson(l) case final w?) ...[
+      AppPreferences.listKey(w.name),
+      for (final s in w.symbols) AppPreferences.itemKey(w.name, s),
+    ],
+};
 
 /// Mentés fájlba: asztali gépen mentés-ablakkal, máshol a megosztás-menüvel. Tesztben lecserélhető.
 typedef BackupSaver = Future<void> Function(Uint8List bytes, String fileName);

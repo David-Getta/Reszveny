@@ -145,6 +145,8 @@ class SyncService extends ChangeNotifier {
     'email_alerts': preferences.emailAlerts,
     'weekly_digest': preferences.weeklyDigest,
     'favorites': preferences.favorites,
+    'lists_removed': preferences.listsRemovedJson,
+    'lists_added': preferences.listsAddedJson,
     'favorites_removed': preferences.favoritesRemovedJson,
     'favorites_added': preferences.favoritesAddedJson,
     'favorite_since': preferences.favoriteSinceJson,
@@ -268,6 +270,7 @@ class SyncService extends ChangeNotifier {
     ];
     favRemoved.removeWhere((f, _) => favorites.contains(f));
     favAdded.removeWhere((f, _) => !favorites.contains(f));
+    final lists = _mergeLists(local, remote);
     final lots = byId(local['lots'], remote['lots']);
     final dividends = byId(local['dividends'], remote['dividends']);
     final splits = _uniqueSplits(byId(local['splits'], remote['splits']));
@@ -288,7 +291,9 @@ class SyncService extends ChangeNotifier {
       'favorites': favorites,
       'favorites_removed': tombstonesJson(favRemoved),
       'favorites_added': {for (final e in favAdded.entries) e.key: e.value.toUtc().toIso8601String()},
-      'watch_lists': _mergeLists(local['watch_lists'], remote['watch_lists']),
+      'watch_lists': lists.lists,
+      'lists_removed': tombstonesJson(lists.removed),
+      'lists_added': {for (final e in lists.added.entries) e.key: e.value.toUtc().toIso8601String()},
       // Célarányok: tickerenként a helyi nyer.
       'targets': {...AppPreferences.parseTargets(remote['targets']), ...AppPreferences.parseTargets(local['targets'])},
       // Kedvencenként a felvételi nap: azonos tickernél a helyi marad (mint a többi tételnél) –
@@ -368,17 +373,43 @@ class SyncService extends ChangeNotifier {
 
   /// Saját listák: név szerint (kis- és nagybetűtől függetlenül) összevonva, a
   /// helyiek elöl; azonos listánál a tickerek uniója.
-  static List<Map<String, dynamic>> _mergeLists(Object? local, Object? remote) {
+  /// Saját listák: név szerint (kisbetűvel) a két oldal uniója, tagonként is –
+  /// kivéve a törölt listát és a listáról levett részvényt, hacsak utána újra
+  /// létre nem hozták / fel nem vették.
+  static ({List<Map<String, dynamic>> lists, Map<String, DateTime> removed, Map<String, DateTime> added}) _mergeLists(
+    Map<String, dynamic> local,
+    Map<String, dynamic> remote,
+  ) {
+    final removed = unionTombstones(local['lists_removed'], remote['lists_removed']);
+    final added = unionTombstones(local['lists_added'], remote['lists_added']);
+    bool alive(String key) => switch (removed[key]) {
+      final at? => added[key]?.isAfter(at) ?? false,
+      null => true,
+    };
     final merged = <String, WatchList>{};
-    for (final raw in [...?(local as List?), ...?(remote as List?)]) {
+    for (final raw in [...?(local['watch_lists'] as List?), ...?(remote['watch_lists'] as List?)]) {
       final l = WatchList.fromJson(raw);
-      if (l == null) continue;
+      if (l == null || !alive(AppPreferences.listKey(l.name))) continue;
       final prev = merged[l.name.toLowerCase()];
-      merged[l.name.toLowerCase()] = prev == null
-          ? l
-          : WatchList(name: prev.name, symbols: {...prev.symbols, ...l.symbols}.toList());
+      final symbols = prev == null ? l.symbols : {...prev.symbols, ...l.symbols}.toList();
+      merged[l.name.toLowerCase()] = WatchList(
+        name: prev?.name ?? l.name,
+        symbols: [
+          for (final s in symbols)
+            if (alive(AppPreferences.itemKey(l.name, s))) s,
+        ],
+      );
     }
-    return [for (final l in merged.values) l.toJson()];
+    // A megmaradtak jelzése eltűnik, a felvételi idő csak a meglévőknél marad.
+    final keys = {
+      for (final l in merged.values) ...[
+        AppPreferences.listKey(l.name),
+        for (final s in l.symbols) AppPreferences.itemKey(l.name, s),
+      ],
+    };
+    removed.removeWhere((k, _) => keys.contains(k));
+    added.removeWhere((k, _) => !keys.contains(k));
+    return (lists: [for (final l in merged.values) l.toJson()], removed: removed, added: added);
   }
 
   /// A csomag átvétele; igaz, ha egy tételen megmaradt a helyi számla vagy díj.
@@ -418,7 +449,24 @@ class SyncService extends ChangeNotifier {
     );
     // Régi csomagban nincs ilyen mező: akkor a helyi listák maradnak.
     if (data['watch_lists'] is List) {
-      await preferences.setWatchLists([for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)]);
+      final lists = [for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)];
+      await preferences.setWatchLists(lists);
+      // A listák jelzései a csomag szerint; régi csomagban nincsenek: a helyiek
+      // maradnak, a csomagban szereplő listák és tagok levételi jelzése nélkül.
+      final present = {
+        for (final l in lists) ...[
+          AppPreferences.listKey(l.name),
+          for (final s in l.symbols) AppPreferences.itemKey(l.name, s),
+        ],
+      };
+      await preferences.replaceListMarks(
+        removed: data['lists_removed'] is Map
+            ? parseTombstones(data['lists_removed'])
+            : _without(preferences.listsRemovedJson, present),
+        added: data['lists_added'] is Map
+            ? parseTombstones(data['lists_added'])
+            : parseTombstones(preferences.listsAddedJson),
+      );
     }
     if (data['targets'] is Map) await preferences.setTargets(AppPreferences.parseTargets(data['targets']));
     // Régi csomagban nincs cél: akkor a helyiek maradnak.

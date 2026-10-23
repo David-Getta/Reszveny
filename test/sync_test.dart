@@ -470,6 +470,38 @@ void main() {
     expect(b.preferences.favorites, contains('NVDA'));
   });
 
+  test('lists: a deleted list or a removed member does not come back; renamed lists do not double', () async {
+    final server = _Server();
+    SharedPreferences.setMockInitialValues({});
+    final a = _Device(server);
+    await a.preferences.addWatchList('Tech');
+    await a.preferences.toggleInList('Tech', 'AAPL');
+    await a.preferences.toggleInList('Tech', 'MSFT');
+    await a.preferences.addWatchList('Old');
+    await a.sync.start();
+    SharedPreferences.setMockInitialValues({});
+    final b = _Device(server);
+    await b.sync.start();
+    expect(b.preferences.watchLists.map((l) => l.name), ['Tech', 'Old']);
+
+    // A: MSFT le a Tech-ről, az „Old” lista törölve; B közben mást változtat.
+    await a.preferences.toggleInList('Tech', 'MSFT');
+    await a.preferences.removeWatchList('Old');
+    await a.sync.syncNow();
+    await b.portfolio.setCash('USD', 1);
+    await b.sync.syncNow();
+    await a.sync.syncNow();
+    for (final d in [a, b]) {
+      expect(d.preferences.watchLists.map((l) => '${l.name}: ${l.symbols.join(',')}'), ['Tech: AAPL']);
+    }
+    // B átnevezi „Growth”-ra; A közben változtat: nem lesz két lista.
+    await b.preferences.renameWatchList('Tech', 'Growth');
+    await b.sync.syncNow();
+    await a.portfolio.setCash('EUR', 1);
+    await a.sync.syncNow();
+    expect(a.preferences.watchLists.map((l) => '${l.name}: ${l.symbols.join(',')}'), ['Growth: AAPL']);
+  });
+
   test('goals follow the account: the newer change wins, a removed goal does not come back', () async {
     final server = _Server();
     SharedPreferences.setMockInitialValues({});

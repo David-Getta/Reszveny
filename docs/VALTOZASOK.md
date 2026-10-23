@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.247)
+# Változásjegyzék (0.2.130 → 0.2.248)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -166,7 +166,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   Egy ötödik átnézés nyomán: a riasztás offline szerkesztését nem írja felül a szerver későbbi jelölése a régi
   beállítás szerint, a szigorított követő stop régi csúcsa nem jön vissza (különben azonnal riasztana), és a mentésből
   visszaállítás a mentés után törölt riasztást és jegyzetet is visszahozza. A levett kedvenc sem tér vissza a másik
-  eszköz régi listájából (az újra felvett és a visszavont levétel megmarad, a mentésből visszaállítás visszahozza).
+  eszköz régi listájából (az újra felvett és a visszavont levétel megmarad, a mentésből visszaállítás visszahozza);
+  ugyanígy a törölt saját lista és a listáról levett részvény, az átnevezett lista pedig nem duplázódik.
 - **Ismételt import duplikálás nélkül**: a frissebb (a régi sorokat is tartalmazó) bróker-export újbóli beolvasásakor
   a már rögzített tranzakciók és osztalékok kimaradnak, és az import végén látszik, hány („2 már rögzítve volt,
   kimaradt”); a fájlon belüli két azonos részteljesítés viszont elsőre mindkettő bekerül (eddig a második elveszett).

@@ -44,7 +44,11 @@ class AppPreferences extends ChangeNotifier {
     Map<String, DateTime> favoriteSince = const {},
     Map<String, DateTime> favoritesRemoved = const {},
     Map<String, DateTime> favoritesAdded = const {},
+    Map<String, DateTime> listsRemoved = const {},
+    Map<String, DateTime> listsAdded = const {},
   }) : _favoriteSince = Map.of(favoriteSince),
+       _listsRemoved = Map.of(listsRemoved),
+       _listsAdded = Map.of(listsAdded),
        _favoritesRemoved = Map.of(favoritesRemoved),
        _favoritesAdded = Map.of(favoritesAdded),
        _hiddenHome = Set.of(hiddenHome),
@@ -76,6 +80,55 @@ class AppPreferences extends ChangeNotifier {
     for (final e in _favoritesAdded.entries)
       if (_favorites.contains(e.key)) e.key: e.value.toUtc().toIso8601String(),
   };
+
+  static const _listsRemovedKey = 'lists_removed';
+  static const _listsAddedKey = 'lists_added';
+
+  /// A saját listák szinkronjához: mikor törölték a listát (`list:<név>`) vagy
+  /// vették le róla a részvényt (`item:<név>|<TICKER>`), illetve mikor hozták
+  /// létre / vették fel (a név kisbetűsen). Így a másik eszköz régi példánya nem
+  /// hozza vissza, ami törölve lett.
+  final Map<String, DateTime> _listsRemoved;
+  final Map<String, DateTime> _listsAdded;
+
+  static String listKey(String name) => 'list:${name.trim().toLowerCase()}';
+  static String itemKey(String name, String symbol) => 'item:${name.trim().toLowerCase()}|${symbol.toUpperCase()}';
+
+  /// A jelenlegi listák és tagjaik kulcsai.
+  Set<String> get _listKeys => {
+    for (final l in _lists) ...[listKey(l.name), for (final s in l.symbols) itemKey(l.name, s)],
+  };
+
+  Map<String, String> get listsRemovedJson => tombstonesJson(_listsRemoved);
+  Map<String, String> get listsAddedJson {
+    final keys = _listKeys;
+    return {
+      for (final e in _listsAdded.entries)
+        if (keys.contains(e.key)) e.key: e.value.toUtc().toIso8601String(),
+    };
+  }
+
+  void _listMark(String key, {required bool added}) {
+    final now = DateTime.now().toUtc();
+    if (added) {
+      _listsAdded[key] = now;
+      _listsRemoved.remove(key);
+    } else {
+      _listsRemoved[key] = now;
+      _listsAdded.remove(key);
+    }
+  }
+
+  /// A listák jelzéseinek cseréje (szinkronkor a fiók állapotára).
+  Future<void> replaceListMarks({required Map<String, DateTime> removed, required Map<String, DateTime> added}) async {
+    _listsRemoved
+      ..clear()
+      ..addAll(removed);
+    _listsAdded
+      ..clear()
+      ..addAll(added);
+    await _saveLists();
+  }
 
   /// A jelzések cseréje (szinkronkor a fiók állapotára).
   Future<void> replaceFavoriteMarks({
@@ -554,6 +607,8 @@ class AppPreferences extends ChangeNotifier {
         favoriteSince: parseFavoriteSince(prefs.getString(_favoriteSinceKey)),
         favoritesRemoved: _parseMarks(prefs.getString(_favoritesRemovedKey)),
         favoritesAdded: _parseMarks(prefs.getString(_favoritesAddedKey)),
+        listsRemoved: _parseMarks(prefs.getString(_listsRemovedKey)),
+        listsAdded: _parseMarks(prefs.getString(_listsAddedKey)),
       );
       loaded._loadResolved(prefs.getStringList(_resolvedKey));
       return loaded;
@@ -605,6 +660,7 @@ class AppPreferences extends ChangeNotifier {
     final n = name.trim();
     if (n.isEmpty || n.length > maxListName || _lists.length >= maxLists || _listNamed(n) != null) return false;
     _lists.add(WatchList(name: n));
+    _listMark(listKey(n), added: true);
     await _saveLists();
     return true;
   }
@@ -615,12 +671,21 @@ class AppPreferences extends ChangeNotifier {
     final other = _listNamed(n);
     if (other != null && other != l) return false;
     _lists[_lists.indexOf(l)] = WatchList(name: n, symbols: l.symbols);
+    // Átnevezés: a régi név törölt, az új (a tagjaival) most létrehozott.
+    if (listKey(l.name) != listKey(n)) {
+      _listMark(listKey(l.name), added: false);
+      _listMark(listKey(n), added: true);
+      for (final s in l.symbols) {
+        _listMark(itemKey(n, s), added: true);
+      }
+    }
     await _saveLists();
     return true;
   }
 
   Future<void> removeWatchList(String name) async {
     _lists.removeWhere((l) => l.name.toLowerCase() == name.toLowerCase());
+    _listMark(listKey(name), added: false);
     await _saveLists();
   }
 
@@ -629,7 +694,9 @@ class AppPreferences extends ChangeNotifier {
     final l = _listNamed(name), s = symbol.trim().toUpperCase();
     if (l == null || s.isEmpty) return;
     final symbols = [...l.symbols];
-    if (!symbols.remove(s)) {
+    final removed = symbols.remove(s);
+    _listMark(itemKey(l.name, s), added: !removed);
+    if (!removed) {
       symbols.add(s);
       if (!_favorites.contains(s)) {
         _favorites.insert(0, s);
@@ -658,17 +725,14 @@ class AppPreferences extends ChangeNotifier {
       }
       if (l != null && !inList.contains(s)) {
         inList.add(s);
+        _listMark(itemKey(l.name, s), added: true);
         isNew = true;
       }
       if (isNew) added++;
     }
     if (l != null) _lists[_lists.indexOf(l)] = WatchList(name: l.name, symbols: inList);
-    notifyListeners();
-    await _save((p) async {
-      await p.setStringList(_favoritesKey, _favorites);
-      await p.setString(_favoriteSinceKey, jsonEncode(favoriteSinceJson));
-      await p.setString(_listsKey, jsonEncode([for (final l in _lists) l.toJson()]));
-    });
+    await _saveFavorites();
+    await _saveLists();
     return added;
   }
 
@@ -702,6 +766,8 @@ class AppPreferences extends ChangeNotifier {
     for (final (n, l) in _lists.indexed) {
       if (!l.symbols.contains(f)) continue;
       _lists[n] = WatchList(name: l.name, symbols: {for (final s in l.symbols) s == f ? t : s}.toList());
+      _listMark(itemKey(l.name, f), added: false);
+      _listMark(itemKey(l.name, t), added: true);
     }
     await _saveFavorites();
     await _save((p) => p.setString(_targetsKey, jsonEncode(_targets)));
@@ -713,7 +779,11 @@ class AppPreferences extends ChangeNotifier {
 
   Future<void> _saveLists() async {
     notifyListeners();
-    await _save((p) => p.setString(_listsKey, jsonEncode([for (final l in _lists) l.toJson()])));
+    await _save((p) async {
+      await p.setString(_listsKey, jsonEncode([for (final l in _lists) l.toJson()]));
+      await p.setString(_listsRemovedKey, jsonEncode(listsRemovedJson));
+      await p.setString(_listsAddedKey, jsonEncode(listsAddedJson));
+    });
   }
 
   Future<void> setMorningBrief(bool enabled) async {
@@ -880,6 +950,8 @@ class AppPreferences extends ChangeNotifier {
     _favoriteSince.clear();
     _favoritesRemoved.clear();
     _favoritesAdded.clear();
+    _listsRemoved.clear();
+    _listsAdded.clear();
     _recent = [];
     _lists.clear();
     _targets.clear();
@@ -894,6 +966,8 @@ class AppPreferences extends ChangeNotifier {
         _favoriteSinceKey,
         _favoritesRemovedKey,
         _favoritesAddedKey,
+        _listsRemovedKey,
+        _listsAddedKey,
         _recentKey,
         _listsKey,
         _targetsKey,

@@ -55,6 +55,16 @@ void main() {
     expect(a.notes.deletedJson, isEmpty);
   });
 
+  test('restoring brings back a list deleted after the backup', () async {
+    final a = services();
+    await a.preferences.addWatchList('Tech');
+    await a.preferences.toggleInList('Tech', 'NVDA');
+    final file = jsonEncode(Backup.data(a));
+    await a.preferences.removeWatchList('Tech');
+    await Backup.restore(a, Backup.parse(file)!);
+    expect(a.preferences.watchLists.map((l) => '${l.name}: ${l.symbols.join(',')}'), ['Tech: NVDA']);
+  });
+
   test('restoring brings back a favorite removed after the backup', () async {
     final a = services();
     await a.preferences.setFavorites(['AAPL', 'MSFT']);
