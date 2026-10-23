@@ -169,6 +169,37 @@ void main() {
     expect(german.dividends.single.amount, 3.68);
   });
 
+  test('Scalable Capital and Lightyear: savings plans are buys, distributions are dividends, cancelled orders skipped', () {
+    final scalable = parsePortfolioCsv(
+      'date;time;status;reference;description;assetType;type;isin;shares;price;amount;fee;tax;currency\n'
+      '2025-03-14;10:31:12;Executed;"SC-1";"Apple";Security;Buy;US0378331005;10;160,50;-1605,00;0,99;0,00;EUR\n'
+      '2025-04-02;09:00:00;Executed;"SC-2";"Apple";Security;Savings plan;US0378331005;0,5;150,00;-75,00;0,00;0,00;EUR\n'
+      '2025-04-03;09:00:00;Cancelled;"SC-3";"Apple";Security;Buy;US0378331005;5;150,00;-750,00;0,00;0,00;EUR\n'
+      '2025-05-15;08:00:00;Executed;"SC-4";"Apple";Security;Distribution;US0378331005;;;1,86;0,00;0,32;EUR\n'
+      '2025-06-01;08:00:00;Executed;"SC-5";"Deposit";Cash;Deposit;;;;500,00;0,00;0,00;EUR\n',
+    );
+    expect(scalable.lots.map((l) => (l.isin, l.quantity, l.price, l.currency, l.fee, l.sell)), [
+      ('US0378331005', 10.0, 160.5, 'EUR', 0.99, false),
+      ('US0378331005', 0.5, 150.0, 'EUR', 0.0, false),
+    ]);
+    expect(scalable.dividends.map((d) => (d.isin, d.amount, d.currency, d.date)), [
+      ('US0378331005', 1.86, 'EUR', DateTime(2025, 5, 15)),
+    ]);
+
+    final lightyear = parsePortfolioCsv(
+      'Date,Reference,Ticker,ISIN,Type,Quantity,CCY,Price/share,Gross Amount,FX Rate,Fee,Net Amt.,Tax Amt.\n'
+      '14/03/2025 10:31:12,OR-1,AAPL,US0378331005,Buy,10,USD,172.50,1725.00,,1.00,1726.00,\n'
+      '15/05/2025 09:00:00,DV-1,AAPL,US0378331005,Dividend,,USD,,2.50,,,2.12,0.38\n'
+      '02/06/2025 15:00:00,OR-2,AAPL,US0378331005,Sell,4,USD,200.00,800.00,,1.00,799.00,\n',
+    );
+    expect(lightyear.lots.map((l) => (l.symbol, l.quantity, l.price, l.currency, l.date, l.sell, l.fee)), [
+      ('AAPL', 10.0, 172.5, 'USD', DateTime(2025, 3, 14), false, 1.0),
+      ('AAPL', 4.0, 200.0, 'USD', DateTime(2025, 6, 2), true, 1.0),
+    ]);
+    // Az osztalék a nettó összeg (a forrásadó után).
+    expect(lightyear.dividends.map((d) => (d.symbol, d.amount, d.date)), [('AAPL', 2.12, DateTime(2025, 5, 15))]);
+  });
+
   test('broker exports: Revolut, Trading 212 and Interactive Brokers, with sales; other rows are ignored', () {
     final revolut = parsePortfolioCsv(
       'Date,Ticker,Type,Quantity,Price per share,Total Amount,Currency,FX Rate\n'

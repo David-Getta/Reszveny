@@ -327,11 +327,15 @@ String _separator(String line) {
 /// „kivétel”, „bevétel”, „Rückkauf” nem vétel); az eladás előbb, mert a „Verkauf”
 /// „kauf”-ot is tartalmaz.
 final _sellWords = RegExp(r'(^|[^\p{L}])(eladás|verkauf|sold)', unicode: true);
-// Az újrabefektetett osztalék darabjai (Schwab „Reinvest Shares”, Fidelity „Reinvestment”) is vétel.
-final _buyWords = RegExp(r'(^|[^\p{L}])(vétel|vásárlás|kauf|bought|reinvest)', unicode: true);
+// Az újrabefektetett osztalék darabjai (Schwab „Reinvest Shares”, Fidelity „Reinvestment”) is vétel;
+// A megtakarítási terv (Scalable Capital „Savings plan”, „Sparplan”) végrehajtása is vétel.
+final _buyWords = RegExp(r'(^|[^\p{L}])(vétel|vásárlás|kauf|bought|reinvest|savings plan|sparplan)', unicode: true);
 
-/// Osztaléksor (Schwab „Non-Qualified Div”, Robinhood „CDIV” is).
-final _dividendWords = RegExp(r'dividend|osztalék|(^|[^\p{L}])c?div($|[^\p{L}])', unicode: true);
+/// Osztaléksor (Schwab „Non-Qualified Div”, Robinhood „CDIV”, Scalable Capital „Distribution” is).
+final _dividendWords = RegExp(
+  r'dividend|osztalék|distribution|ausschüttung|(^|[^\p{L}])c?div($|[^\p{L}])',
+  unicode: true,
+);
 
 /// Forrásadó-sor (Schwab „NRA Tax Adj”, Fidelity „Foreign Tax Paid”, Robinhood „DTAX”).
 final _taxWords = RegExp(r'(^|[^\p{L}])(tax|dtax)($|[^\p{L}])', unicode: true);
@@ -339,6 +343,9 @@ final _taxWords = RegExp(r'(^|[^\p{L}])(tax|dtax)($|[^\p{L}])', unicode: true);
 /// Az amerikai brókerek exportjának oszlopai (Schwab, Fidelity, Robinhood): ezekben a
 /// perjeles dátum hónappal kezdődik (`10/15/2024`).
 const _usHeaders = {'feescomm', 'rundate', 'activitydate', 'transcode'};
+
+/// Nem teljesült megbízás állapota (Scalable Capital „Cancelled”, „Rejected”).
+final _voidStatus = RegExp(r'cancel|reject|fail|storniert|abgelehnt|törölt|elutasít');
 
 final _slashDate = RegExp(r'^(\d{1,2})/(\d{1,2})/\d{4}');
 
@@ -376,7 +383,12 @@ const _roles = <String, Set<String>>{
     'price', 'pricepershare', 'priceshare', 'tprice', 'tradeprice', 'unitprice', 'shareprice', //
     'egysgr', 'vtelir', 'eladsir', 'ausfhrungskurs',
   },
-  'currency': {'currency', 'currencypriceshare', 'pricecurrency', 'currencyprimary', 'pnznem', 'deviza', 'whrung'},
+  'currency': {
+    'currency', 'ccy', 'currencypriceshare', 'pricecurrency', 'currencyprimary', //
+    'pnznem', 'deviza', 'whrung',
+  },
+  // A megbízás állapota (Scalable Capital): a visszavont vagy elutasított sor kimarad.
+  'status': {'status', 'sttusz'},
   'date': {
     'date', 'time', 'datetime', 'tradedate', 'rundate', 'activitydate', //
     'dtum', 'teljestsdtuma', 'ktsnap', 'datum', 'handelstag',
@@ -385,8 +397,8 @@ const _roles = <String, Set<String>>{
     'type', 'action', 'side', 'buysell', 'transactiontype', 'transcode', //
     'irny', 'mvelet', 'transaktionsart', 'geschftsart',
   },
-  // Az osztaléksor összege (Revolut „Total Amount”, Trading 212 „Total”).
-  'total': {'total', 'totalamount', 'amount', 'netamount', 'sszeg', 'betrag'},
+  // Az osztaléksor összege (Revolut „Total Amount”, Trading 212 „Total”, Lightyear „Net Amt.”).
+  'total': {'total', 'totalamount', 'amount', 'netamount', 'netamt', 'sszeg', 'betrag'},
   'totalcurrency': {'currencytotal'},
   // A számla (saját export „account”, magyarul „számla”).
   'account': {'account', 'accountname', 'szmla', 'konto', 'depot'},
@@ -612,6 +624,8 @@ CsvImport _withHeader(
       continue;
     }
     if (sections && (f.length < 2 || f[0] != header[0] || f[1].toLowerCase() != 'data')) continue;
+    // Visszavont, elutasított megbízás: nem tranzakció.
+    if (_voidStatus.hasMatch(cell(f, 'status').toLowerCase())) continue;
     // Ha nincs „side” oszlop, a fejlécen túli első mező is lehet „sell”.
     final side = (col.containsKey('side') ? cell(f, 'side') : (f.length > header.length ? f[header.length] : ''))
         .toLowerCase();
@@ -625,6 +639,10 @@ CsvImport _withHeader(
       sell = false;
     }
     final symbol = cell(f, 'symbol').toUpperCase();
+    // Ticker nélkül az ISIN is elég (a tickert az import oldja fel).
+    final isin = cell(f, 'isin').trim().toUpperCase();
+    final byIsin = !_symbol.hasMatch(symbol) && _isin.hasMatch(isin);
+    final known = _symbol.hasMatch(symbol) || byIsin;
     final dividend = _dividendWords.hasMatch(side);
     if (dividend || _taxWords.hasMatch(side)) {
       // Kapott osztalék: a teljes összeg (ha nincs külön oszlopa, az ár oszlopában).
@@ -636,20 +654,21 @@ CsvImport _withHeader(
           : (amountCcy ?? (_currency.hasMatch(ccyCell) ? ccyCell : defaultCurrency));
       if (!dividend) {
         // Forrásadó külön sorban: az aznapi osztalékból levonva (az előjelétől függetlenül).
-        if (_symbol.hasMatch(symbol) && amount != null && amount != 0) {
-          final key = _dayKey(symbol, ccy, date(f));
+        if (known && amount != null && amount != 0) {
+          final key = _dayKey(byIsin ? isin : symbol, ccy, date(f));
           withholding[key] = (withholding[key] ?? 0) - amount.abs();
         }
         continue;
       }
-      if (_symbol.hasMatch(symbol) && amount != null && amount > 0) {
+      if (known && amount != null && amount > 0) {
         dividends.add(
           ImportedDividend(
-            symbol: symbol,
+            symbol: byIsin ? '' : symbol,
             amount: amount,
             currency: ccy,
             date: date(f),
             account: PortfolioLot.cleanAccount(cell(f, 'account')),
+            isin: byIsin ? isin : null,
           ),
         );
       } else {
@@ -670,10 +689,7 @@ CsvImport _withHeader(
     if (sell == null) continue;
     final quantity = signed?.abs();
     final (price, priceCcy) = _price(cell(f, 'price'));
-    // Ticker nélkül az ISIN is elég (a tickert az import oldja fel).
-    final isin = cell(f, 'isin').trim().toUpperCase();
-    final byIsin = !_symbol.hasMatch(symbol) && _isin.hasMatch(isin);
-    if ((!_symbol.hasMatch(symbol) && !byIsin) || quantity == null || quantity <= 0 || price == null || price <= 0) {
+    if (!known || quantity == null || quantity <= 0 || price == null || price <= 0) {
       skipped++;
       continue;
     }
@@ -703,8 +719,15 @@ CsvImport _withHeader(
   // A bruttó osztalékból a forrásadó levonva: ami a számlára érkezett.
   final net = [
     for (final d in dividends)
-      if (d.amount + (withholding[_dayKey(d.symbol, d.currency, d.date)] ?? 0) case final a when a > 0)
-        ImportedDividend(symbol: d.symbol, amount: a, currency: d.currency, date: d.date, account: d.account),
+      if (d.amount + (withholding[_dayKey(d.isin ?? d.symbol, d.currency, d.date)] ?? 0) case final a when a > 0)
+        ImportedDividend(
+          symbol: d.symbol,
+          amount: a,
+          currency: d.currency,
+          date: d.date,
+          account: d.account,
+          isin: d.isin,
+        ),
   ];
   return CsvImport(lots, skipped, dividends: net, splits: splits);
 }
