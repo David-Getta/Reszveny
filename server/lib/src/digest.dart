@@ -82,7 +82,16 @@ class DigestSender {
 
   void start(Duration every) {
     _timer?.cancel();
-    _timer = Timer.periodic(every, (_) => unawaited(sendDue()));
+    // Egy kör hibája ne állítsa le a szervert (kezeletlen aszinkron hiba).
+    _timer = Timer.periodic(
+      every,
+      (_) => unawaited(
+        sendDue().catchError((Object e) {
+          stderr.writeln('Heti összefoglaló hiba: $e');
+          return 0;
+        }),
+      ),
+    );
   }
 
   void stop() => _timer?.cancel();

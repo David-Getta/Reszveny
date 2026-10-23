@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.278)
+# Változásjegyzék (0.2.130 → 0.2.279)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,21 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Szerver: riasztások, levelek, indítás – egy huszonötödik kódátnézés javításai
+
+- **0.2.279**: egy riasztásfigyelő kör közben feltöltött hibás szinkroncsomag nem állítja le a szervert (eddig
+  kezeletlen hiba volt), és a többi fiók riasztásai is kimennek. A riasztás-e-mailek sorba kerülnek, és csak
+  sikeres küldés után törlődnek: egy levelezőhiba (pl. 429) után a következő kör újra próbálja, a küldések
+  között szünet van. A levelező hívásai 20 másodperc után feladják, így egy elakadt hívás sem állítja meg végleg
+  a figyelést. A riasztás-e-mail egy kattintással leiratkozható (`List-Unsubscribe`), az appban a Riasztások
+  oldalon kapcsolható vissza. A nem amerikai, Twelve Data-árazott papírok (pl. OTP.BD) riasztásai a szerveren is
+  teljesülnek. A valódi HTTP-szerveren a darabolt (hossz nélküli) kérések nem adnak 500-at. Ismeretlen
+  `VERIFY_MODE` (pl. `STORE`) esetén a szerver nem indul el, ahelyett hogy minden vásárlást elfogadna, és az üresen
+  hagyott környezeti változó az alapértéket kapja (üres `DATABASE_PATH` eddig ideiglenes adatbázist jelentett).
+  Újratelepítéskor a szerver befejezi a futó kéréseket és rendben lezárja az adatbázist. A sebességkorlátozó a
+  régi bejegyzéseit takarítja, a két napnál régebbi belépőkódok törlődnek, és új indexek gyorsítják a kódok és a
+  használati napló lekérdezését.
 
 ## Részvényoldal, listák, összehasonlítás: egy huszonnegyedik kódátnézés javításai
 

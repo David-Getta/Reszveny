@@ -325,7 +325,8 @@ class Api {
         if (length != null || req.method == 'GET' || req.method == 'OPTIONS') return inner(req);
         // Darabolt (hossz nélküli) törzs: olvasás közben vágjuk el.
         var seen = 0;
-        final capped = req.read().transform(
+        // A dart:io törzse `Stream<Uint8List>`: `cast` nélkül a `transform` futásidőben elhasal (500).
+        final capped = req.read().cast<List<int>>().transform(
           StreamTransformer<List<int>, List<int>>.fromHandlers(
             handleData: (chunk, sink) {
               seen += chunk.length;
@@ -860,7 +861,31 @@ class Api {
   // ---- Szerver oldali riasztásfigyelés ----
 
   /// A szinkronizált riasztások figyelője (a Finnhub `/quote` árával).
-  late final AlertWatcher alertWatcher = AlertWatcher(store: store, mailer: mailer, quote: _finnhubQuote);
+  late final AlertWatcher alertWatcher = AlertWatcher(
+    store: store,
+    mailer: mailer,
+    quote: _alertQuote,
+    unsubscribeBase: '$publicUrl/u',
+    clock: () => store.clock(),
+  );
+
+  /// A riasztásokhoz is ugyanaz az ár, mint az appban: a Finnhubnál nem jegyzett (nem
+  /// amerikai) papíroknál a Twelve Data.
+  Future<Quote?> _alertQuote(String symbol) async {
+    final q = await _finnhubQuote(symbol);
+    if (q != null || twelveDataApiKey.isEmpty) return q;
+    final td = await _twelveDataQuote(symbol);
+    final c = td?['c'];
+    if (c is! num || c <= 0) return null;
+    final dp = td!['dp'];
+    final last = td['last_quote_at'];
+    return (
+      price: c.toDouble(),
+      changePercent: dp is num ? dp.toDouble() : null,
+      // A napi gyertya kezdete nem a kötés ideje: csak az utolsó jegyzés idejét használjuk.
+      time: last is num && last > 0 ? DateTime.fromMillisecondsSinceEpoch((last * 1000).round(), isUtc: true) : null,
+    );
+  }
 
   Future<Quote?> _finnhubQuote(String symbol) async {
     final res = await _client
@@ -1065,33 +1090,39 @@ class Api {
   /// A leiratkozó link GET-re megerősítő oldalt ad (a levelezők linkellenőrzője ne
   /// iratkoztasson le), a leiratkozás POST-ra történik (a gomb, vagy a levelező
   /// egykattintásos `List-Unsubscribe-Post` kérése).
+  /// `?kind=alerts`: a riasztás-e-mailekről, különben a heti összefoglalóról.
+  static bool _alertsKind(Request r) => r.url.queryParameters['kind'] == 'alerts';
+
   Response _unsubscribePage(Request r, String token) {
+    final alerts = _alertsKind(r);
     if (!_unsubscribeToken.hasMatch(token) || store.userForUnsubscribe(token) == null) {
-      return _html(unsubscribePage(done: false, known: false), status: 404);
+      return _html(unsubscribePage(done: false, known: false, alerts: alerts), status: 404);
     }
-    return _html(unsubscribePage(done: false, known: true));
+    return _html(unsubscribePage(done: false, known: true, alerts: alerts));
   }
 
   Response _unsubscribe(Request r, String token) {
+    final alerts = _alertsKind(r);
     final uid = _unsubscribeToken.hasMatch(token) ? store.userForUnsubscribe(token) : null;
-    if (uid == null) return _html(unsubscribePage(done: false, known: false), status: 404);
+    if (uid == null) return _html(unsubscribePage(done: false, known: false, alerts: alerts), status: 404);
+    final key = alerts ? 'email_alerts' : 'weekly_digest';
     final row = store.syncData(uid);
     if (row != null) {
       try {
         final data = (jsonDecode(row.data) as Map).cast<String, dynamic>();
-        if (data['weekly_digest'] != false) {
+        if (data[key] != false) {
           // A kapcsoló ideje is: a készülékek a következő szinkronnál átveszik (a később állított nyer).
           final at = data['switches_at'] is Map
               ? (data['switches_at'] as Map).cast<String, dynamic>()
               : <String, dynamic>{};
           data
-            ..['weekly_digest'] = false
-            ..['switches_at'] = {...at, 'weekly_digest': store.clock().toUtc().toIso8601String()};
+            ..[key] = false
+            ..['switches_at'] = {...at, key: store.clock().toUtc().toIso8601String()};
           store.saveSyncData(uid, jsonEncode(data));
         }
       } catch (_) {}
     }
-    return _html(unsubscribePage(done: true, known: true));
+    return _html(unsubscribePage(done: true, known: true, alerts: alerts));
   }
 
   // ---- Ajánlói program ----
@@ -2232,6 +2263,10 @@ class Api {
       'o': n('open'),
       'pc': n('previous_close'),
       't': ts is num ? ts.toInt() : int.tryParse('$ts'),
+      'last_quote_at': switch (j['last_quote_at']) {
+        final num v => v.toInt(),
+        final v => int.tryParse('${v ?? ''}'),
+      },
     };
   }
 

@@ -19,6 +19,8 @@ class AlertWatcher {
     required this.mailer,
     required this.quote,
     this.quotePause = const Duration(seconds: 1),
+    this.sendPause = const Duration(milliseconds: 600),
+    this.unsubscribeBase,
     DateTime Function()? clock,
   }) : _clock = clock ?? DateTime.now;
 
@@ -26,6 +28,17 @@ class AlertWatcher {
   final Mailer mailer;
   final QuoteLookup quote;
   final DateTime Function() _clock;
+
+  /// Szünet két e-mail között: a levelező másodpercenkénti kerete (Resend: 2/s) egy
+  /// nagy piaci esésnél se teljen be.
+  final Duration sendPause;
+
+  /// A leiratkozó linkek alapcíme (`…/u`); nélküle nincs `List-Unsubscribe`.
+  final String? unsubscribeBase;
+
+  /// Egy sorban álló levél ennyi sikertelen próba vagy ennyi idő után elmarad.
+  static const maxMailAttempts = 5;
+  static const mailExpiry = Duration(days: 1);
 
   /// Egy körben legfeljebb ennyi részvény árát kérdezzük le (a piaci API kerete miatt);
   /// ha több van, a következő kör a folytatással kezd (körbeforogva mind sorra kerül).
@@ -43,7 +56,16 @@ class AlertWatcher {
 
   void start(Duration every) {
     _timer?.cancel();
-    _timer = Timer.periodic(every, (_) => unawaited(checkOnce()));
+    // Egy kör hibája ne állítsa le a szervert (kezeletlen aszinkron hiba).
+    _timer = Timer.periodic(
+      every,
+      (_) => unawaited(
+        checkOnce().catchError((Object e) {
+          stderr.writeln('Riasztásfigyelés hiba: $e');
+          return 0;
+        }),
+      ),
+    );
   }
 
   void stop() => _timer?.cancel();
@@ -112,49 +134,93 @@ class AlertWatcher {
           if (q != null && q.price > 0) quotes[s] = q;
         } catch (_) {}
       }
-      var sent = 0;
       final now = _clock().toUtc();
       for (final acc in accounts) {
-        // Az árak lekérése alatt egy készülék közben feltölthetett: a jelölés a
-        // friss csomagon fut, és a beolvasás és a mentés között nincs várakozás
-        // (az SQLite-hívások szinkronok), így egy közbeni feltöltés sem vész el.
-        final fresh = store.syncData(acc.userId);
-        if (fresh == null) continue;
-        final Map<String, dynamic> data;
+        // Egy fiók hibás csomagja nem akasztja meg a többiekét.
         try {
-          data = (jsonDecode(fresh.data) as Map).cast<String, dynamic>();
-        } catch (_) {
-          continue;
-        }
-        if (data['email_alerts'] == false) continue;
-        final hits = <Map>[];
-        var peaks = false;
-        for (final al in (data['alerts'] as List? ?? const [])) {
-          if (!_active(al)) continue;
-          final q = quotes['${(al as Map)['symbol']}'.toUpperCase()];
-          if (q == null) continue;
-          if (_raisePeak(al, q.price)) peaks = true;
-          if (!_hit(al, q)) continue;
-          al['triggered_at'] = now.toIso8601String();
-          al['triggered_price'] = q.price;
-          al['triggered_change'] = q.changePercent;
-          hits.add(al);
-        }
-        // Csak új csúcs: elmentjük, e-mail nélkül.
-        if (hits.isNotEmpty || peaks) store.saveSyncData(acc.userId, jsonEncode(data));
-        if (hits.isEmpty) continue;
-        try {
-          final (subject, text) = alertEmail(hits, hu: data['lang'] == 'hu');
-          await mailer.send(acc.email, subject: subject, text: text);
-          sent++;
+          _mark(acc.userId, quotes, now);
         } catch (e) {
-          stderr.writeln('Riasztás-e-mail nem ment ki: $e');
+          stderr.writeln('Riasztások jelölése nem sikerült (${acc.userId}): $e');
         }
       }
-      return sent;
+      return await _sendQueued();
     } finally {
       _running = false;
     }
+  }
+
+  /// A teljesült riasztások jelölése a fiók friss csomagjában, és a levél sorba állítása.
+  /// Az árak lekérése alatt egy készülék közben feltölthetett: a jelölés a friss csomagon
+  /// fut, és a beolvasás és a mentés között nincs várakozás (az SQLite-hívások szinkronok),
+  /// így egy közbeni feltöltés sem vész el.
+  void _mark(String userId, Map<String, Quote> quotes, DateTime now) {
+    final fresh = store.syncData(userId);
+    if (fresh == null) return;
+    final Object? decoded;
+    try {
+      decoded = jsonDecode(fresh.data);
+    } catch (_) {
+      return;
+    }
+    if (decoded is! Map) return;
+    final data = decoded.cast<String, dynamic>();
+    if (data['email_alerts'] == false) return;
+    final list = data['alerts'];
+    if (list is! List) return;
+    final hits = <Map>[];
+    var peaks = false;
+    for (final al in list) {
+      if (!_active(al)) continue;
+      final q = quotes['${(al as Map)['symbol']}'.toUpperCase()];
+      if (q == null) continue;
+      if (_raisePeak(al, q.price)) peaks = true;
+      if (!_hit(al, q)) continue;
+      al['triggered_at'] = now.toIso8601String();
+      al['triggered_price'] = q.price;
+      al['triggered_change'] = q.changePercent;
+      hits.add(al);
+    }
+    // Csak új csúcs: elmentjük, e-mail nélkül.
+    if (hits.isEmpty && !peaks) return;
+    store.saveSyncData(userId, jsonEncode(data));
+    if (hits.isEmpty) return;
+    final (subject, text) = alertEmail(hits, hu: data['lang'] == 'hu');
+    store.enqueueAlertMail(userId, subject: subject, body: text);
+  }
+
+  /// A sorban álló levelek küldése (az előző körök sikertelenjei is); sikeres küldés
+  /// után törlődnek, hiba esetén a következő kör újra próbálja. Az elküldöttek száma.
+  Future<int> _sendQueued() async {
+    var sent = 0;
+    // A sor időbélyegei az adatbázis órájával készülnek.
+    final now = store.clock().toUtc();
+    for (final (i, m) in store.pendingAlertMails().indexed) {
+      final email = store.emailOf(m.userId);
+      if (email == null || m.attempts >= maxMailAttempts || now.difference(m.createdAt) > mailExpiry) {
+        store.deleteAlertMail(m.id);
+        continue;
+      }
+      if (i > 0 && sendPause > Duration.zero) await Future<void>.delayed(sendPause);
+      final unsubscribe = unsubscribeBase == null
+          ? null
+          : '$unsubscribeBase/${store.unsubscribeToken(m.userId)}?kind=alerts';
+      try {
+        await mailer.send(
+          email,
+          subject: m.subject,
+          text: unsubscribe == null ? m.body : '${m.body}\n$unsubscribe\n',
+          headers: unsubscribe == null
+              ? null
+              : {'List-Unsubscribe': '<$unsubscribe>', 'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click'},
+        );
+        store.deleteAlertMail(m.id);
+        sent++;
+      } catch (e) {
+        store.failedAlertMail(m.id);
+        stderr.writeln('Riasztás-e-mail nem ment ki (újrapróbáljuk): $e');
+      }
+    }
+    return sent;
   }
 
   static String _n(Object? v) {

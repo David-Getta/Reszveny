@@ -84,12 +84,22 @@ class Store {
         attempts INTEGER NOT NULL DEFAULT 0,
         created_at TEXT NOT NULL
       );
+      CREATE INDEX IF NOT EXISTS login_codes_email ON login_codes(email, created_at);
       CREATE TABLE IF NOT EXISTS usage_log (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         user_id TEXT NOT NULL,
         symbol TEXT,
         input_tokens INTEGER,
         output_tokens INTEGER,
+        created_at TEXT NOT NULL
+      );
+      CREATE INDEX IF NOT EXISTS usage_log_user ON usage_log(user_id, created_at);
+      CREATE TABLE IF NOT EXISTS alert_mail_queue (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id TEXT NOT NULL,
+        subject TEXT NOT NULL,
+        body TEXT NOT NULL,
+        attempts INTEGER NOT NULL DEFAULT 0,
         created_at TEXT NOT NULL
       );
       CREATE TABLE IF NOT EXISTS helper_calls (
@@ -280,6 +290,11 @@ class Store {
     final e = normalizeEmail(email);
     final code = (_rng.nextInt(900000) + 100000).toString();
     final now = clock();
+    // A két napnál régebbi kódok törlése (a napi korlát csak az utolsó napot nézi): a soha
+    // be nem lépett címek se maradjanak meg.
+    _db.execute('DELETE FROM login_codes WHERE created_at < ?', [
+      now.subtract(const Duration(days: 2)).toUtc().toIso8601String(),
+    ]);
     _db.execute('UPDATE login_codes SET expires_at = ? WHERE email = ?', [now.toUtc().toIso8601String(), e]);
     _db.execute('INSERT INTO login_codes (email, code_hash, expires_at, attempts, created_at) VALUES (?, ?, ?, 0, ?)', [
       e,
@@ -338,6 +353,7 @@ class Store {
       _db.execute('DELETE FROM analysis_holds WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM invite_devices WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM alert_mail_queue WHERE user_id = ?', [userId]);
       // Az ajánlás sora névtelenítve marad (nem törlődik): különben a másik fél újra
       // beválthatna egy kódot (a meghívott), illetve az ajánló kerete újraindulna.
       _db.execute("UPDATE referrals SET referee_id = 'deleted:' || lower(hex(randomblob(8))) WHERE referee_id = ?", [
@@ -850,6 +866,32 @@ class Store {
     ]);
     _db.execute('DELETE FROM shared_answers WHERE created_at < ?', [now.subtract(keepFor).toIso8601String()]);
   }
+
+  // ---- Riasztás-e-mailek sora ----
+  // A teljesült riasztás levele sorba kerül, és csak sikeres küldés után törlődik:
+  // egy levelezőhiba (pl. 429) ne vigye el végleg az értesítést.
+
+  void enqueueAlertMail(String userId, {required String subject, required String body}) => _db.execute(
+    'INSERT INTO alert_mail_queue (user_id, subject, body, attempts, created_at) VALUES (?, ?, ?, 0, ?)',
+    [userId, subject, body, clock().toUtc().toIso8601String()],
+  );
+
+  List<({int id, String userId, String subject, String body, int attempts, DateTime createdAt})> pendingAlertMails() =>
+      [
+        for (final r in _db.select('SELECT * FROM alert_mail_queue ORDER BY id'))
+          (
+            id: r['id'] as int,
+            userId: r['user_id'] as String,
+            subject: r['subject'] as String,
+            body: r['body'] as String,
+            attempts: r['attempts'] as int,
+            createdAt: DateTime.parse(r['created_at'] as String),
+          ),
+      ];
+
+  void deleteAlertMail(int id) => _db.execute('DELETE FROM alert_mail_queue WHERE id = ?', [id]);
+
+  void failedAlertMail(int id) => _db.execute('UPDATE alert_mail_queue SET attempts = attempts + 1 WHERE id = ?', [id]);
 
   void close() => _db.close();
 

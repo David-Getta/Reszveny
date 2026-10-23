@@ -29,15 +29,27 @@ import 'package:whatstock_server/src/stripe.dart';
 /// helyén beváltva csomagot adnak fizetés nélkül,
 /// DIGEST_CHECK_MINUTES (60): ilyen gyakran nézi, kinek esedékes a hétfői heti összefoglaló (0 = ki).
 Future<void> main() async {
-  final env = Platform.environment;
+  // Az üres (csak szóközből álló) érték nincs beállítva: egy üresen hagyott Railway-változó
+  // ne írja felül az alapértéket (pl. üres DATABASE_PATH = ideiglenes adatbázis).
+  final env = {
+    for (final e in Platform.environment.entries)
+      if (e.value.trim().isNotEmpty) e.key: e.value.trim(),
+  };
   final anthropic = env['ANTHROPIC_API_KEY'] ?? '';
   final finnhub = env['FINNHUB_API_KEY'] ?? '';
   if (anthropic.isEmpty || finnhub.isEmpty) {
     stderr.writeln('Hiányzó ANTHROPIC_API_KEY vagy FINNHUB_API_KEY környezeti változó.');
     exit(2);
   }
+  // Csak a két ismert érték: egy elgépelés (`STORE`, `prod`) ne kapcsolja be csendben a
+  // mindent elfogadó fejlesztői ellenőrzést.
+  final verifyMode = (env['VERIFY_MODE'] ?? 'dev').toLowerCase();
+  if (verifyMode != 'dev' && verifyMode != 'store') {
+    stderr.writeln('Ismeretlen VERIFY_MODE: "$verifyMode" (dev vagy store).');
+    exit(2);
+  }
   final store = Store.open(env['DATABASE_PATH'] ?? 'whatstock.db');
-  final verifier = (env['VERIFY_MODE'] ?? 'dev') == 'store' ? _storeVerifier(env) : const DevVerifier();
+  final verifier = verifyMode == 'store' ? _storeVerifier(env) : const DevVerifier();
   final port0 = env['PORT'] ?? '8080';
   final resend = env['RESEND_API_KEY'] ?? '';
   final stripeKey = env['STRIPE_SECRET_KEY'] ?? '';
@@ -87,6 +99,21 @@ Future<void> main() async {
     'WhatStock backend fut: http://${server.address.host}:${server.port} (verify: ${verifier.runtimeType}, '
     'meghívókódok: ${invites.enabled ? invites.length : 'nincs, nyitott'})',
   );
+  // Újratelepítéskor (SIGTERM) a futó kérések befejeződnek, az időzítők leállnak, és az
+  // adatbázis rendben záródik.
+  var stopping = false;
+  for (final signal in [ProcessSignal.sigterm, ProcessSignal.sigint]) {
+    signal.watch().listen((_) async {
+      if (stopping) return;
+      stopping = true;
+      stdout.writeln('Leállítás ($signal)…');
+      api.alertWatcher.stop();
+      api.digestSender.stop();
+      await server.close();
+      store.close();
+      exit(0);
+    });
+  }
 }
 
 /// Éles bolti ellenőrzés a beállított boltokhoz; amelyik nincs beállítva, annak a

@@ -37,36 +37,43 @@ class ResendMailer implements Mailer {
   final String from;
   final http.Client _client;
 
+  /// Egy elakadt hívás ne tartsa fel örökre a riasztás- és a levélküldő kört.
+  static const timeout = Duration(seconds: 20);
+
   @override
   Future<void> sendLoginCode(String email, String code) async {
-    final res = await _client.post(
-      Uri.parse('https://api.resend.com/emails'),
-      headers: {'authorization': 'Bearer $apiKey', 'content-type': 'application/json'},
-      body: jsonEncode({
-        'from': from,
-        'to': [email],
-        'subject': 'WhatStock belépőkód: $code',
-        'text':
-            'A WhatStock belépőkódod: $code\n\nYour WhatStock sign-in code: $code\n\n'
-            'A kód 10 percig érvényes. / The code is valid for 10 minutes.',
-      }),
-    );
+    final res = await _client
+        .post(
+          Uri.parse('https://api.resend.com/emails'),
+          headers: {'authorization': 'Bearer $apiKey', 'content-type': 'application/json'},
+          body: jsonEncode({
+            'from': from,
+            'to': [email],
+            'subject': 'WhatStock belépőkód: $code',
+            'text':
+                'A WhatStock belépőkódod: $code\n\nYour WhatStock sign-in code: $code\n\n'
+                'A kód 10 percig érvényes. / The code is valid for 10 minutes.',
+          }),
+        )
+        .timeout(timeout);
     if (res.statusCode >= 300) throw HttpException('Resend ${res.statusCode}: ${res.body}');
   }
 
   @override
   Future<void> send(String email, {required String subject, required String text, Map<String, String>? headers}) async {
-    final res = await _client.post(
-      Uri.parse('https://api.resend.com/emails'),
-      headers: {'authorization': 'Bearer $apiKey', 'content-type': 'application/json'},
-      body: jsonEncode({
-        'from': from,
-        'to': [email],
-        'subject': subject,
-        'text': text,
-        'headers': ?headers,
-      }),
-    );
+    final res = await _client
+        .post(
+          Uri.parse('https://api.resend.com/emails'),
+          headers: {'authorization': 'Bearer $apiKey', 'content-type': 'application/json'},
+          body: jsonEncode({
+            'from': from,
+            'to': [email],
+            'subject': subject,
+            'text': text,
+            'headers': ?headers,
+          }),
+        )
+        .timeout(timeout);
     if (res.statusCode >= 300) throw HttpException('Resend ${res.statusCode}: ${res.body}');
   }
 }

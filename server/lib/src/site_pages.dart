@@ -192,13 +192,17 @@ String stockMissingPage(String lang) {
 }
 
 /// A heti levél leiratkozó oldala (kétnyelvű): megerősítő gomb, majd a visszaigazolás.
-String unsubscribePage({required bool done, required bool known}) {
+String unsubscribePage({required bool done, required bool known, bool alerts = false}) {
+  // [alerts]: a riasztás-e-mailekről (az appban a Riasztások oldalon kapcsolható vissza).
+  final (huWhat, enWhat, huWhere, enWhere) = alerts
+      ? ('a riasztás-e-mailekről', 'price alert e-mails', 'a Riasztások oldalon', 'on the Price alerts page')
+      : ('a heti összefoglalóról', 'the weekly summary', 'a Beállításokban', 'in Settings');
   final body = !known
       ? '<h1>×</h1><p>Ez a leiratkozó link nem érvényes. · This unsubscribe link is not valid.</p>'
       : done
-      ? '<h1>✓</h1><p>Leiratkoztál a heti összefoglalóról. Az appban, a Beállításokban újra bekapcsolhatod. · '
-            'You are unsubscribed from the weekly summary. You can turn it back on in the app, in Settings.</p>'
-      : '<h1>WhatStock</h1><p>Leiratkozol a heti összefoglalóról? · Unsubscribe from the weekly summary?</p>'
+      ? '<h1>✓</h1><p>Leiratkoztál $huWhat. Az appban, $huWhere újra bekapcsolhatod. · '
+            'You are unsubscribed from $enWhat. You can turn it back on in the app, $enWhere.</p>'
+      : '<h1>WhatStock</h1><p>Leiratkozol $huWhat? · Unsubscribe from $enWhat?</p>'
             '<form method="post"><button class="btn" type="submit">Leiratkozás · Unsubscribe</button></form>';
   return '${_head(lang: 'en', title: 'WhatStock', description: 'WhatStock', index: false)}'
       '<div class="card">$body</div></main></body></html>';
