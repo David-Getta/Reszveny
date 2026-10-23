@@ -2841,6 +2841,10 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Die ontleding is afgesny voordat dit klaar was. Probeer asseblief weer – dit het nie jou toekenning gebruik nie.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

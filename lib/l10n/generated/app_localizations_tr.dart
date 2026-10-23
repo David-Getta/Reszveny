@@ -2836,6 +2836,10 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analiz tamamlanmadan kesildi. Lütfen tekrar deneyin – hakkınızdan düşülmedi.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

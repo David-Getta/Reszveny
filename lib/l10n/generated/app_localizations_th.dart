@@ -2803,6 +2803,10 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'การวิเคราะห์ถูกตัดขาดก่อนเสร็จสมบูรณ์ โปรดลองอีกครั้ง – ไม่ได้ใช้โควตาของคุณ';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

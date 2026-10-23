@@ -2829,6 +2829,10 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'သုံးသပ်ချက် မပြီးဆုံးမီ ပြတ်တောက်သွားသည်။ ထပ်စမ်းကြည့်ပါ – သင့်ခွဲတမ်းကို မသုံးထားပါ။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

@@ -2837,6 +2837,10 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Təhlil tamamlanmadan kəsildi. Yenidən cəhd edin – limitinizdən istifadə olunmadı.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

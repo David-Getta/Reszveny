@@ -844,5 +844,6 @@
   "tickerChanged": "Perkelta į {symbol}",
   "referralErrSignIn": "Prisijunkite el. paštu, kad galėtumėte panaudoti draugo kodą.",
   "referralErrFull": "Šis kodas jau panaudotas didžiausią leistiną kartų skaičių.",
-  "portfolioGoalReachedBody": "Jūsų portfelio vertė dabar – {value}."
+  "portfolioGoalReachedBody": "Jūsų portfelio vertė dabar – {value}.",
+  "errAiTruncated": "Analizė nutrūko nepasibaigusi. Bandykite dar kartą – ji nebuvo įskaičiuota į jūsų limitą."
 }

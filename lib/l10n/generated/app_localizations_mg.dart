@@ -2858,6 +2858,10 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Tapaka ny fandalinana talohan\'ny nahavitany. Andramo indray azafady – tsy nanala tamin\'ny anjaranao izany.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

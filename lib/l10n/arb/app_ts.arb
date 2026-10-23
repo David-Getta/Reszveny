@@ -844,5 +844,6 @@
   "tickerChanged": "Swi rhurheriwile eka {symbol}",
   "referralErrSignIn": "Nghena hi imeyili ya wena leswaku u tirhisa khodi ya munghana.",
   "referralErrFull": "Khodi leyi yi tirhisiwile khale minkarhi hinkwayo leyi pfumeleriwaka.",
-  "portfolioGoalReachedBody": "Nkoka wa phothifoliyo ya wena sweswi i {value}."
+  "portfolioGoalReachedBody": "Nkoka wa phothifoliyo ya wena sweswi i {value}.",
+  "errAiTruncated": "Nxopaxopo wu tsemekile wu nga si hela. Hi kombela u ringeta nakambe – a wu tirhisanga xiavelo xa wena."
 }

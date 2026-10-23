@@ -844,5 +844,6 @@
   "tickerChanged": "Verplaatst naar {symbol}",
   "referralErrSignIn": "Log in met je e-mailadres om een code van een vriend in te wisselen.",
   "referralErrFull": "Deze code is al het maximale aantal keren ingewisseld.",
-  "portfolioGoalReachedBody": "Je portefeuille is nu {value} waard."
+  "portfolioGoalReachedBody": "Je portefeuille is nu {value} waard.",
+  "errAiTruncated": "De analyse is afgebroken voordat hij klaar was. Probeer het opnieuw – er is niets van je tegoed afgegaan."
 }

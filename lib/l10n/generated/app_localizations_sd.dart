@@ -2827,6 +2827,10 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'تجزيو مڪمل ٿيڻ کان اڳ ئي اڌ ۾ ڪٽجي ويو. مهرباني ڪري ٻيهر ڪوشش ڪريو – ان سان توهان جي ڪوٽا خرچ نه ٿي.';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

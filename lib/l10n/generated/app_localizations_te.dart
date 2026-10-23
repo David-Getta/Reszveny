@@ -2843,6 +2843,10 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'విశ్లేషణ పూర్తికాకముందే మధ్యలో ఆగిపోయింది. దయచేసి మళ్లీ ప్రయత్నించండి – ఇది మీ కోటాను వినియోగించలేదు.';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

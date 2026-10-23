@@ -844,5 +844,6 @@
   "tickerChanged": "Spostato su {symbol}",
   "referralErrSignIn": "Accedi con la tua email per riscattare il codice di un amico.",
   "referralErrFull": "Questo codice è già stato riscattato il numero massimo di volte.",
-  "portfolioGoalReachedBody": "Il tuo portafoglio ora vale {value}."
+  "portfolioGoalReachedBody": "Il tuo portafoglio ora vale {value}.",
+  "errAiTruncated": "L’analisi si è interrotta prima di essere completata. Riprova – non è stata scalata dalla tua quota."
 }

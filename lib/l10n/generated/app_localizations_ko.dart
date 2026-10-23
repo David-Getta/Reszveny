@@ -2760,6 +2760,10 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      '분석이 완료되기 전에 중간에 끊겼습니다. 다시 시도해 주세요. 할당량은 차감되지 않았습니다.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

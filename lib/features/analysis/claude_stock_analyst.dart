@@ -773,6 +773,9 @@ Check that all eleven sections are present, in order and in the requested langua
   }) {
     final stop = json['stop_reason'];
     if (stop == 'refusal') throw const AnalysisException(AppErrorCode.aiRefused);
+    // A hosszkorláton megszakadt válasz nem teljes elemzés (a javító kör csak üres
+    // részeket adna hozzá): hiba, és a szerver nem vonja le a keretből.
+    if (stop == 'max_tokens') throw const AnalysisException(AppErrorCode.aiTruncated);
 
     final content = ((json['content'] as List?) ?? const []).cast<Map<String, dynamic>>();
     final text = content.where((b) => b['type'] == 'text').map((b) => b['text'] as String? ?? '').join();

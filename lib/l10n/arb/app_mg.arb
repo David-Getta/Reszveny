@@ -844,5 +844,6 @@
   "tickerChanged": "Nafindra any amin'ny {symbol}",
   "referralErrSignIn": "Midira amin'ny mailakao mba hampiasana kaodin'ny namana.",
   "referralErrFull": "Efa tratra ny fetran'ny fampiasana ity kaody ity.",
-  "portfolioGoalReachedBody": "Ny sandan'ny kitapom-bolanao izao dia {value}."
+  "portfolioGoalReachedBody": "Ny sandan'ny kitapom-bolanao izao dia {value}.",
+  "errAiTruncated": "Tapaka ny fandalinana talohan'ny nahavitany. Andramo indray azafady – tsy nanala tamin'ny anjaranao izany."
 }

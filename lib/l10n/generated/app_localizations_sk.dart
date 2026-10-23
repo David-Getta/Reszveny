@@ -2912,6 +2912,10 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analýza bola prerušená skôr, ako sa dokončila. Skúste to znova – do limitu sa nezapočítala.';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

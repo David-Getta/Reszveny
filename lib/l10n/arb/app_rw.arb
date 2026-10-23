@@ -844,5 +844,6 @@
   "tickerChanged": "Byimuriwe kuri {symbol}",
   "referralErrSignIn": "Injira ukoresheje imeyili yawe kugira ngo ukoreshe kode y'inshuti.",
   "referralErrFull": "Iyi kode yamaze gukoreshwa inshuro zose zemewe.",
-  "portfolioGoalReachedBody": "Ishoramari ryawe ubu rifite agaciro ka {value}."
+  "portfolioGoalReachedBody": "Ishoramari ryawe ubu rifite agaciro ka {value}.",
+  "errAiTruncated": "Isesengura ryaciwe hagati ritarangira. Ongera ugerageze – ntiryakoresheje ingano wemerewe."
 }

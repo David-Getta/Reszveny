@@ -2849,6 +2849,10 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Dikonkonona diakosoka kumpala kua kujika. Teta kabidi – kadiakangata tshintu mu tshitupa tshiebe.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

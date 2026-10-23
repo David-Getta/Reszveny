@@ -2880,6 +2880,10 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analiza a fost întreruptă înainte de a se termina. Încearcă din nou – nu a fost scăzută din cota ta.';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

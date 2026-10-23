@@ -2858,6 +2858,10 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Naputed ti panangsukimat sakbay a nalpas. Pangngaasim ta padasem manen – saan a nabawasan ti alokasionmo.';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

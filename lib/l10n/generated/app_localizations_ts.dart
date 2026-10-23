@@ -2860,6 +2860,10 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Nxopaxopo wu tsemekile wu nga si hela. Hi kombela u ringeta nakambe – a wu tirhisanga xiavelo xa wena.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

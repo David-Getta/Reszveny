@@ -844,5 +844,6 @@
   "tickerChanged": "ናብ {symbol} ተሰጋጊሩ",
   "referralErrSignIn": "ናይ ዓርኪ ኮድ ንምጥቃም ብኢመይልካ እቶ።",
   "referralErrFull": "እዚ ኮድ ድሮ ክሳብ ዝተፈቕደሉ ብዝሒ ተጠቒሙ እዩ።",
-  "portfolioGoalReachedBody": "ዋጋ ፖርትፎሊዮኹም ሕጂ {value} በጺሑ ኣሎ።"
+  "portfolioGoalReachedBody": "ዋጋ ፖርትፎሊዮኹም ሕጂ {value} በጺሑ ኣሎ።",
+  "errAiTruncated": "ትንተና ከይተዛዘመ ተቛሪጹ። በጃኹም ዳግማይ ፈትኑ – ካብ ብጽሒትኩም ዝጐደለ የለን።"
 }

@@ -2842,6 +2842,10 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Az elemzés befejezés előtt megszakadt. Próbáld újra – a keretedből nem vont le.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

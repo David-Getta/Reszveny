@@ -2797,6 +2797,10 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'ትንተና ከይተዛዘመ ተቛሪጹ። በጃኹም ዳግማይ ፈትኑ – ካብ ብጽሒትኩም ዝጐደለ የለን።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

@@ -844,5 +844,6 @@
   "tickerChanged": "{symbol} tikerine geçirildi",
   "referralErrSignIn": "Dostuňyň koduny ulanmak üçin e-poçtaň bilen gir.",
   "referralErrFull": "Bu kody ulanmagyň çägi doldy.",
-  "portfolioGoalReachedBody": "Portfeliňiziň gymmaty indi {value} boldy."
+  "portfolioGoalReachedBody": "Portfeliňiziň gymmaty indi {value} boldy.",
+  "errAiTruncated": "Seljerme tamamlanmanka kesildi. Gaýtadan synanyşyň – limitiňizden hiç zat aýrylmady."
 }

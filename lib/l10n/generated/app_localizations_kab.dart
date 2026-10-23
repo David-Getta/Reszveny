@@ -2836,6 +2836,10 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Tasleḍt tegzem uqbel ad tfak. Ɛreḍ tikkelt-nniḍen – ur tettwaḥseb ara deg tesmekta-k.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

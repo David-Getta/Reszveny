@@ -844,5 +844,6 @@
   "tickerChanged": "Naiyalis iti {symbol}",
   "referralErrSignIn": "Ag-sign in babaen ti e-mailmo tapno mausarmo ti kodigo ti gayyem.",
   "referralErrFull": "Nausaren daytoy a kodigo iti kaadu a maipalubos.",
-  "portfolioGoalReachedBody": "Ti pateg ti portfoliom ita ket {value}."
+  "portfolioGoalReachedBody": "Ti pateg ti portfoliom ita ket {value}.",
+  "errAiTruncated": "Naputed ti panangsukimat sakbay a nalpas. Pangngaasim ta padasem manen – saan a nabawasan ti alokasionmo."
 }

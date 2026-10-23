@@ -844,5 +844,6 @@
   "tickerChanged": "{symbol} වෙත ගෙන ගියා",
   "referralErrSignIn": "මිතුරෙකුගේ කේතයක් භාවිත කිරීමට ඔබේ ඊමේල් සමඟ පුරන්න.",
   "referralErrFull": "මෙම කේතය දැනටමත් උපරිම වාර ගණනක් භාවිත කර ඇත.",
-  "portfolioGoalReachedBody": "ඔබේ කළඹේ වටිනාකම දැන් {value} වේ."
+  "portfolioGoalReachedBody": "ඔබේ කළඹේ වටිනාකම දැන් {value} වේ.",
+  "errAiTruncated": "විශ්ලේෂණය අවසන් වීමට පෙර අතරමග නතර විය. කරුණාකර නැවත උත්සාහ කරන්න – එය ඔබේ සීමාවෙන් අඩු කළේ නැත."
 }

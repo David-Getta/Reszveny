@@ -2834,6 +2834,10 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'विश्लेषण पूरा होने से पहले ही अधूरा रह गया। कृपया पुनः प्रयास करें – इससे आपका कोटा खर्च नहीं हुआ।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

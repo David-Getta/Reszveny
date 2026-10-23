@@ -844,5 +844,6 @@
   "tickerChanged": "Ginbalhin sa {symbol}",
   "referralErrSignIn": "Mag-sign in gamit ang imo e-mail para magamit ang code sang imo abyan.",
   "referralErrFull": "Nagamit na ini nga code sa pinakamadamo nga beses nga ginatugot.",
-  "portfolioGoalReachedBody": "Ang bili sang imo portfolio subong {value} na."
+  "portfolioGoalReachedBody": "Ang bili sang imo portfolio subong {value} na.",
+  "errAiTruncated": "Naputol ang analisis antes ini natapos. Palihog tilawi liwat – wala ini nagbuhin sa imo alokasyon."
 }

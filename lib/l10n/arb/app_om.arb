@@ -844,5 +844,6 @@
   "tickerChanged": "Gara {symbol}-tti dabarfameera",
   "referralErrSignIn": "Koodii hiriyaa fayyadamuuf imeelii keetiin seeni.",
   "referralErrFull": "Koodiin kun daangaa itti fayyadamaa isaa ga'eera.",
-  "portfolioGoalReachedBody": "Gatiin poortfooliyoo keetii amma {value} ga'eera."
+  "portfolioGoalReachedBody": "Gatiin poortfooliyoo keetii amma {value} ga'eera.",
+  "errAiTruncated": "Xiinxalli osoo hin xumuramin addaan cite. Maaloo irra deebi'ii yaali – qooda kee irraa hin hir'isne."
 }

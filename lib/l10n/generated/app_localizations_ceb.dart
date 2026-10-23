@@ -2849,6 +2849,10 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Naputol ang pagtuki sa wala pa kini mahuman. Palihug sulayi pag-usab – wala kini makuha gikan sa imong alokasyon.';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

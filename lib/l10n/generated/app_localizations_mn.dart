@@ -2836,6 +2836,10 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Шинжилгээ дуусахаасаа өмнө тасарсан. Дахин оролдоно уу – таны эрхээс хасагдаагүй.';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

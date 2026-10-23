@@ -2843,6 +2843,10 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Numekuku la tso le titina hafi wòwu enu. Taflatse, gate kpɔ – mezã wò agbɔsɔsɔ aɖeke o.';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

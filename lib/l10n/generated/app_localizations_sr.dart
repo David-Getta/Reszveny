@@ -2887,6 +2887,10 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Анализа је прекинута пре него што је завршена. Покушајте поново – није потрошена ваша квота.';
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

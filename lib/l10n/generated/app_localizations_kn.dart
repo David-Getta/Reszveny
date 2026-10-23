@@ -2843,6 +2843,10 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'ವಿಶ್ಲೇಷಣೆ ಪೂರ್ಣಗೊಳ್ಳುವ ಮೊದಲೇ ಕಡಿತಗೊಂಡಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ – ಇದು ನಿಮ್ಮ ಕೋಟಾವನ್ನು ಬಳಸಿಲ್ಲ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

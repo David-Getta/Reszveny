@@ -844,5 +844,6 @@
   "tickerChanged": "Dipindahkan ke {symbol}",
   "referralErrSignIn": "Masuk dengan email Anda untuk menukarkan kode teman.",
   "referralErrFull": "Kode ini sudah ditukarkan sebanyak batas maksimum.",
-  "portfolioGoalReachedBody": "Nilai portofolio Anda kini {value}."
+  "portfolioGoalReachedBody": "Nilai portofolio Anda kini {value}.",
+  "errAiTruncated": "Analisis terpotong sebelum selesai. Silakan coba lagi – kuota Anda tidak terpakai."
 }

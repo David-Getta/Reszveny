@@ -2843,6 +2843,10 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'De analyse is afgebroken voordat hij klaar was. Probeer het opnieuw – er is niets van je tegoed afgegaan.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

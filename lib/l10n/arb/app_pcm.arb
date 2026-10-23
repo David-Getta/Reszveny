@@ -844,5 +844,6 @@
   "tickerChanged": "E don move go {symbol}",
   "referralErrSignIn": "Sign in with your e-mail make you fit use padi code.",
   "referralErrFull": "Dem don use dis code reach di maximum times wey e fit take.",
-  "portfolioGoalReachedBody": "Your portfolio don reach {value} now."
+  "portfolioGoalReachedBody": "Your portfolio don reach {value} now.",
+  "errAiTruncated": "Di analysis cut for middle before e finish. Abeg try again – e no use your allowance."
 }

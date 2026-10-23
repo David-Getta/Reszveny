@@ -2838,6 +2838,10 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Seljerme tamamlanmanka kesildi. Gaýtadan synanyşyň – limitiňizden hiç zat aýrylmady.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

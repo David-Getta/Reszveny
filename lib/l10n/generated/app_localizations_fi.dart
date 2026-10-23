@@ -2838,6 +2838,10 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analyysi katkesi ennen kuin se valmistui. Yritä uudelleen – se ei kuluttanut kiintiötäsi.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

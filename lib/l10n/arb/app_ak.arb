@@ -844,5 +844,6 @@
   "tickerChanged": "Wɔatu akɔ {symbol} so",
   "referralErrSignIn": "Fa wo email wura mu na woatumi de wo damfo bi code adi dwuma.",
   "referralErrFull": "Wɔde code yi adi dwuma mpɛn dodow a wɔma ho kwan no dedaw.",
-  "portfolioGoalReachedBody": "Seesei wo nkyɛfa bo yɛ {value}."
+  "portfolioGoalReachedBody": "Seesei wo nkyɛfa bo yɛ {value}.",
+  "errAiTruncated": "Nhwehwɛmu no twaa mu ansa na ɛrewie. Yɛsrɛ wo, sɔ hwɛ bio – ɛmfaa wo dodow no bi."
 }

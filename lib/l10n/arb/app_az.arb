@@ -844,5 +844,6 @@
   "tickerChanged": "{symbol} tikerinə köçürüldü",
   "referralErrSignIn": "Dostunuzun kodunu aktivləşdirmək üçün e-poçtunuzla daxil olun.",
   "referralErrFull": "Bu kod artıq maksimum sayda aktivləşdirilib.",
-  "portfolioGoalReachedBody": "Portfelinizin dəyəri indi {value} təşkil edir."
+  "portfolioGoalReachedBody": "Portfelinizin dəyəri indi {value} təşkil edir.",
+  "errAiTruncated": "Təhlil tamamlanmadan kəsildi. Yenidən cəhd edin – limitinizdən istifadə olunmadı."
 }

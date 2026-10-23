@@ -2830,6 +2830,10 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'विश्लेषण पूरा होखे से पहिले अधूरा रह गइल। कृपया फेर से कोसिस करीं – एह से राउर कोटा ना घटल।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

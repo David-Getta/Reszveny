@@ -2715,6 +2715,9 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated => '分析在完成前被截断。请重试，本次未消耗您的配额。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5797,6 +5800,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String portfolioGoalReachedBody(String value) {
     return '你的投資組合市值已達 $value。';
   }
+
+  @override
+  String get errAiTruncated => '分析未完成便被截斷。請再試一次，今次未有扣除你的配額。';
 
   @override
   String get portfolioGoalSet => '設定目標';

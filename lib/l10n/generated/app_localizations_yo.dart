@@ -2833,6 +2833,10 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Ìtúpalẹ̀ náà dáwọ́ dúró kí ó tó parí. Jọ̀ọ́ tún gbìyànjú – kò lo ìpín rẹ.';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

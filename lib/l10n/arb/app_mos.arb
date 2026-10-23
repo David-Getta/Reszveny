@@ -844,5 +844,6 @@
   "tickerChanged": "B tʋgame {symbol} zugu",
   "referralErrSignIn": "Kẽ ne f e-mail n tõe n tʋm ne f zoa kõodã.",
   "referralErrFull": "B tʋma ne kõod kãngã sor fãa b sẽn sak pĩnda.",
-  "portfolioGoalReachedBody": "Masã, f portfey yõodã yaa {value}."
+  "portfolioGoalReachedBody": "Masã, f portfey yõodã yaa {value}.",
+  "errAiTruncated": "Vɛɛsgã kɩɩsa hal t'a pa sa ye. Le mak – a pa rɩ f vɛɛsã sõor ye."
 }

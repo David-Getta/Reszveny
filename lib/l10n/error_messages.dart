@@ -27,6 +27,7 @@ String errorMessage(AppLocalizations l10n, Object error) {
     AppErrorCode.aiHttp => l10n.errAiHttp(d),
     AppErrorCode.aiRefused => l10n.errAiRefused,
     AppErrorCode.aiBadResponse => l10n.errAiBadResponse,
+    AppErrorCode.aiTruncated => l10n.errAiTruncated,
     AppErrorCode.clipboardNoImage => l10n.errClipboardNoImage,
     AppErrorCode.chartUnavailable => l10n.chartUnavailable,
     AppErrorCode.statementsUnavailable => l10n.statementsUnavailable,

@@ -844,5 +844,6 @@
   "tickerChanged": "{symbol}-man astasqa",
   "referralErrSignIn": "Correoykiwan yaykuy, huk masiykiq kódigonta llamk'achinaykipaq.",
   "referralErrFull": "Kay kódigoqa ñam llamk'achisqaña tukuy atikusqan kutikama.",
-  "portfolioGoalReachedBody": "Portafolioykiqa kunan {value} chaniyuqña."
+  "portfolioGoalReachedBody": "Portafolioykiqa kunan {value} chaniyuqña.",
+  "errAiTruncated": "T'aqwiyqa manaraq tukukuchkaptin kuchusqa karqan. Ama hina kaspa, huktawan ruway – manam kamachisqa yupayniykimanta qichusqachu."
 }

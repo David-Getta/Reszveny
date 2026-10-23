@@ -844,5 +844,6 @@
   "tickerChanged": "Gibalhin ngadto sa {symbol}",
   "referralErrSignIn": "Mag-sign in gamit ang imong e-mail aron ma-redeem ang code sa usa ka higala.",
   "referralErrFull": "Naabot na niini nga code ang kinatas-ang gidaghanon sa pag-redeem.",
-  "portfolioGoalReachedBody": "Nagkantidad na og {value} ang imong portfolio karon."
+  "portfolioGoalReachedBody": "Nagkantidad na og {value} ang imong portfolio karon.",
+  "errAiTruncated": "Naputol ang pagtuki sa wala pa kini mahuman. Palihug sulayi pag-usab – wala kini makuha gikan sa imong alokasyon."
 }

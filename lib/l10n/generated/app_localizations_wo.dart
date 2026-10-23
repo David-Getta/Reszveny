@@ -2829,6 +2829,10 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Saytu bi dagg na balaa muy jeex. Jéemaatal – jëlu dara ci sa dayo.';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

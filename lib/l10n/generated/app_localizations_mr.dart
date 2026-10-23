@@ -2834,6 +2834,10 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'विश्लेषण पूर्ण होण्यापूर्वीच अर्धवट तुटले. कृपया पुन्हा प्रयत्न करा – यामुळे तुमचा कोटा वापरला गेला नाही.';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

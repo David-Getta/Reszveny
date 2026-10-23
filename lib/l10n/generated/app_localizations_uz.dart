@@ -2840,6 +2840,10 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Tahlil tugallanmasdan uzilib qoldi. Qaytadan urinib koʻring – limitingizdan hech narsa sarflanmadi.';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

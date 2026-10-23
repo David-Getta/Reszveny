@@ -745,6 +745,7 @@
   "referralErrSignIn": "Egy barát kódjának beváltásához lépj be az e-mail-címeddel.",
   "referralErrFull": "Ezt a kódot már annyiszor beváltották, ahányszor lehet.",
   "portfolioGoalReachedBody": "A portfóliód most {value} értékű.",
+  "errAiTruncated": "Az elemzés befejezés előtt megszakadt. Próbáld újra – a keretedből nem vont le.",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

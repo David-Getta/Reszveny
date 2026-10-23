@@ -2835,6 +2835,10 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analysen blev afbrudt, før den var færdig. Prøv igen – den har ikke brugt af din kvote.';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

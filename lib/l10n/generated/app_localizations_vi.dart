@@ -2827,6 +2827,10 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Bài phân tích bị cắt ngang trước khi hoàn tất. Vui lòng thử lại – lượt này không trừ vào hạn mức của bạn.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

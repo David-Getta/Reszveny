@@ -844,5 +844,6 @@
   "tickerChanged": "S’ha traslladat a {symbol}",
   "referralErrSignIn": "Inicia la sessió amb el teu correu per bescanviar el codi d’un amic.",
   "referralErrFull": "Aquest codi ja s’ha bescanviat el màxim de vegades possible.",
-  "portfolioGoalReachedBody": "La teva cartera ara val {value}."
+  "portfolioGoalReachedBody": "La teva cartera ara val {value}.",
+  "errAiTruncated": "L'anàlisi s'ha tallat abans d'acabar. Torna-ho a provar – no s'ha descomptat de la teva quota."
 }

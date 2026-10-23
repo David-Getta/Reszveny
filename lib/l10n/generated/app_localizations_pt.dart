@@ -2843,6 +2843,10 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'A análise foi interrompida antes de terminar. Tente novamente – não foi descontada da sua quota.';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

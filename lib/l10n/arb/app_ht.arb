@@ -844,5 +844,6 @@
   "tickerChanged": "Deplase sou {symbol}",
   "referralErrSignIn": "Konekte ak imèl ou pou w ka itilize kòd yon zanmi.",
   "referralErrFull": "Kòd sa a deja rive nan limit kantite fwa li ka itilize.",
-  "portfolioGoalReachedBody": "Pòtfèy ou vo {value} kounye a."
+  "portfolioGoalReachedBody": "Pòtfèy ou vo {value} kounye a.",
+  "errAiTruncated": "Analiz la koupe anvan li te fini. Tanpri eseye ankò – li pa t konte nan kota ou."
 }

@@ -2856,6 +2856,10 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Tshekatsheko e kgaogile pele e fela. Hle leka gape – ga e a šomiša kabelo ya gago.';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

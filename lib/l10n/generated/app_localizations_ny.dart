@@ -2848,6 +2848,10 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Kusanthula kudadulidwa kusanathe. Chonde yesaninso – sikunagwiritse ntchito zomwe mumapatsidwa.';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

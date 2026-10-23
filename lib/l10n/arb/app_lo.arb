@@ -844,5 +844,6 @@
   "tickerChanged": "ຍ້າຍໄປ {symbol} ແລ້ວ",
   "referralErrSignIn": "ເຂົ້າສູ່ລະບົບດ້ວຍອີເມວຂອງທ່ານ ເພື່ອໃຊ້ລະຫັດຂອງໝູ່",
   "referralErrFull": "ລະຫັດນີ້ຖືກໃຊ້ຄົບຈຳນວນສູງສຸດແລ້ວ",
-  "portfolioGoalReachedBody": "ຕອນນີ້ພອດໂຟລິໂອຂອງທ່ານມີມູນຄ່າ {value} ແລ້ວ"
+  "portfolioGoalReachedBody": "ຕອນນີ້ພອດໂຟລິໂອຂອງທ່ານມີມູນຄ່າ {value} ແລ້ວ",
+  "errAiTruncated": "ການວິເຄາະຖືກຕັດຂາດກ່ອນສຳເລັດ ກະລຸນາລອງໃໝ່ – ບໍ່ໄດ້ໃຊ້ໂຄຕ້າຂອງທ່ານ"
 }

@@ -2849,6 +2849,10 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'വിശകലനം പൂർത്തിയാകുന്നതിന് മുമ്പ് മുറിഞ്ഞുപോയി. വീണ്ടും ശ്രമിക്കുക – ഇത് നിങ്ങളുടെ ക്വാട്ടയിൽ നിന്ന് കുറച്ചിട്ടില്ല.';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

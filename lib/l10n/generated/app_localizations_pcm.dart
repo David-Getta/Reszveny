@@ -2836,6 +2836,10 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Di analysis cut for middle before e finish. Abeg try again – e no use your allowance.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

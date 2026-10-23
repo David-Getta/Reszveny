@@ -844,5 +844,6 @@
   "tickerChanged": "Akwagara na {symbol}",
   "referralErrSignIn": "Jiri email gị banye ka ị jiri koodu enyi gị.",
   "referralErrFull": "E jirila koodu a ruo ugboro kachasị ekwere.",
-  "portfolioGoalReachedBody": "Ugbu a, uru portfolio gị bụ {value}."
+  "portfolioGoalReachedBody": "Ugbu a, uru portfolio gị bụ {value}.",
+  "errAiTruncated": "Nyocha ahụ kwụsịrị tupu o mechaa. Biko nwaa ọzọ – e wepụghị ihe ọ bụla n'oke gị."
 }

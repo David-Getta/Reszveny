@@ -844,5 +844,6 @@
   "tickerChanged": "{symbol} тикеріне көшірілді",
   "referralErrSignIn": "Досыңыздың кодын қолдану үшін электрондық поштаңызбен кіріңіз.",
   "referralErrFull": "Бұл код қолдану шегіне жетті.",
-  "portfolioGoalReachedBody": "Портфеліңіздің құны енді {value}."
+  "portfolioGoalReachedBody": "Портфеліңіздің құны енді {value}.",
+  "errAiTruncated": "Талдау аяқталмай үзіліп қалды. Қайталап көріңіз – лимитіңізден ештеңе есептелмеді."
 }

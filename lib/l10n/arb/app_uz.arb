@@ -844,5 +844,6 @@
   "tickerChanged": "{symbol} tikeriga koʻchirildi",
   "referralErrSignIn": "Doʻstingiz kodini faollashtirish uchun e-pochtangiz bilan kiring.",
   "referralErrFull": "Bu kod foydalanish chegarasiga yetgan.",
-  "portfolioGoalReachedBody": "Portfelingiz qiymati endi {value}."
+  "portfolioGoalReachedBody": "Portfelingiz qiymati endi {value}.",
+  "errAiTruncated": "Tahlil tugallanmasdan uzilib qoldi. Qaytadan urinib koʻring – limitingizdan hech narsa sarflanmadi."
 }

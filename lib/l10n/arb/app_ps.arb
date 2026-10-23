@@ -844,5 +844,6 @@
   "tickerChanged": "{symbol} ته ولېږدول شو",
   "referralErrSignIn": "د ملګري د کوډ کارولو لپاره په خپل برېښنالیک ننوځئ.",
   "referralErrFull": "دا کوډ دمخه په اعظمي شمېر کارول شوی دی.",
-  "portfolioGoalReachedBody": "ستاسو د پورټفولیو ارزښت اوس {value} دی."
+  "portfolioGoalReachedBody": "ستاسو د پورټفولیو ارزښت اوس {value} دی.",
+  "errAiTruncated": "تحلیل له بشپړېدو مخکې پرې شو. مهرباني وکړئ بیا هڅه وکړئ – ستاسو له سهمیې څخه نه دی کم شوی."
 }

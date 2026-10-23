@@ -4806,6 +4806,12 @@ abstract class AppLocalizations {
   /// **'Your portfolio is now worth {value}.'**
   String portfolioGoalReachedBody(String value);
 
+  /// Error when the AI analysis reply hit the length limit and was incomplete; the user was not charged.
+  ///
+  /// In en, this message translates to:
+  /// **'The analysis was cut off before it was finished. Please try again – it did not use your allowance.'**
+  String get errAiTruncated;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

@@ -2848,6 +2848,10 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analyse izengwa na kati ntete ya kusukisa. Meka diaka – yo katulaka ve kima na kitini kiaku kia ngonda.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

@@ -844,5 +844,6 @@
   "tickerChanged": "Kufuduselwe ku-{symbol}",
   "referralErrSignIn": "Ngena nge-imeyile yakho ukuze usebenzise ikhowudi yomhlobo.",
   "referralErrFull": "Le khowudi sele isetyenziswe amaxesha onke avumelekileyo.",
-  "portfolioGoalReachedBody": "Ipotifoliyo yakho ngoku ixabisa {value}."
+  "portfolioGoalReachedBody": "Ipotifoliyo yakho ngoku ixabisa {value}.",
+  "errAiTruncated": "Uhlalutyo lunqunyulwe lungekagqitywa. Nceda uzame kwakhona – alusebenzisanga umlinganiselo wakho."
 }

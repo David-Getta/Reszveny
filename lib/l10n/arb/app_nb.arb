@@ -844,5 +844,6 @@
   "tickerChanged": "Flyttet til {symbol}",
   "referralErrSignIn": "Logg inn med e-postadressen din for å løse inn en venns kode.",
   "referralErrFull": "Denne koden er allerede løst inn maksimalt antall ganger.",
-  "portfolioGoalReachedBody": "Porteføljen din er nå verdt {value}."
+  "portfolioGoalReachedBody": "Porteføljen din er nå verdt {value}.",
+  "errAiTruncated": "Analysen ble avbrutt før den var ferdig. Prøv igjen – den brukte ikke av kvoten din."
 }

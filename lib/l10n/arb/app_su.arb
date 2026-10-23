@@ -844,5 +844,6 @@
   "tickerChanged": "Dipindahkeun ka {symbol}",
   "referralErrSignIn": "Asup nganggo email anjeun pikeun nukeurkeun kode ti babaturan.",
   "referralErrFull": "Kode ieu geus ditukeurkeun nepi ka wates maksimal.",
-  "portfolioGoalReachedBody": "Nilai portofolio anjeun ayeuna {value}."
+  "portfolioGoalReachedBody": "Nilai portofolio anjeun ayeuna {value}.",
+  "errAiTruncated": "Analisis kapotong saméméh réngsé. Mangga cobaan deui – jatah anjeun henteu kapaké."
 }

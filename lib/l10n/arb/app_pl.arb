@@ -844,5 +844,6 @@
   "tickerChanged": "Przeniesiono na {symbol}",
   "referralErrSignIn": "Zaloguj się adresem e-mail, aby wykorzystać kod od znajomego.",
   "referralErrFull": "Ten kod został już wykorzystany maksymalną liczbę razy.",
-  "portfolioGoalReachedBody": "Twój portfel jest teraz wart {value}."
+  "portfolioGoalReachedBody": "Twój portfel jest teraz wart {value}.",
+  "errAiTruncated": "Analiza została ucięta przed zakończeniem. Spróbuj ponownie – nie wliczyła się do limitu."
 }

@@ -844,5 +844,6 @@
   "tickerChanged": "Flyttat till {symbol}",
   "referralErrSignIn": "Logga in med din e-postadress för att lösa in en väns kod.",
   "referralErrFull": "Koden har redan lösts in det maximala antalet gånger.",
-  "portfolioGoalReachedBody": "Din portfölj är nu värd {value}."
+  "portfolioGoalReachedBody": "Din portfölj är nu värd {value}.",
+  "errAiTruncated": "Analysen avbröts innan den var klar. Försök igen – den drog inget från din kvot."
 }

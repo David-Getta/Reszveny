@@ -844,5 +844,6 @@
   "tickerChanged": "Wotsɔe yi {symbol} dzi",
   "referralErrSignIn": "Ge ɖe eme kple wò e-mail be nàte ŋu azã xɔ̃wò ƒe code.",
   "referralErrFull": "Wozã code sia zi gbogbo si wòɖe mɔ ɖo xoxo.",
-  "portfolioGoalReachedBody": "Fifia la, wò akpawo ƒe asi nye {value}."
+  "portfolioGoalReachedBody": "Fifia la, wò akpawo ƒe asi nye {value}.",
+  "errAiTruncated": "Numekuku la tso le titina hafi wòwu enu. Taflatse, gate kpɔ – mezã wò agbɔsɔsɔ aɖeke o."
 }

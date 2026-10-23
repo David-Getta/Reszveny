@@ -2844,6 +2844,10 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'An katse nazarin kafin ya kammala. Da fatan a sake gwada – bai ci daga rabon ka ba.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

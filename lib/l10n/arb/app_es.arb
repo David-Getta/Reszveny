@@ -844,5 +844,6 @@
   "tickerChanged": "Trasladado a {symbol}",
   "referralErrSignIn": "Inicia sesión con tu correo para canjear el código de un amigo.",
   "referralErrFull": "Este código ya se ha canjeado el máximo de veces posible.",
-  "portfolioGoalReachedBody": "Tu cartera ya vale {value}."
+  "portfolioGoalReachedBody": "Tu cartera ya vale {value}.",
+  "errAiTruncated": "El análisis se cortó antes de terminar. Inténtalo de nuevo; no se ha descontado de tu cuota."
 }

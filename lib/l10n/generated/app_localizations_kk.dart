@@ -2835,6 +2835,10 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Талдау аяқталмай үзіліп қалды. Қайталап көріңіз – лимитіңізден ештеңе есептелмеді.';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

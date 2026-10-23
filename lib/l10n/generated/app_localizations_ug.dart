@@ -2839,6 +2839,10 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'تەھلىل تاماملىنىشتىن بۇرۇن ئۈزۈلۈپ قالدى. قايتا سىناپ بېقىڭ – نورمىڭىزدىن ھېچنېمە كېمەيمىدى.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

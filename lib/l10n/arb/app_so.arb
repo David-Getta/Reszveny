@@ -844,5 +844,6 @@
   "tickerChanged": "Waxaa loo wareejiyay {symbol}",
   "referralErrSignIn": "Ku gal iimaylkaaga si aad u isticmaasho koodhka saaxiib.",
   "referralErrFull": "Koodhkan waxaa horay loo isticmaalay inta ugu badan ee la oggol yahay.",
-  "portfolioGoalReachedBody": "Qiimaha portfoliyadaada hadda waa {value}."
+  "portfolioGoalReachedBody": "Qiimaha portfoliyadaada hadda waa {value}.",
+  "errAiTruncated": "Falanqayntu way go'day intaanay dhammaan. Fadlan isku day mar kale – kama aysan isticmaalin qoondadaada."
 }

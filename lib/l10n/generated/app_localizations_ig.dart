@@ -2829,6 +2829,10 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Nyocha ahụ kwụsịrị tupu o mechaa. Biko nwaa ọzọ – e wepụghị ihe ọ bụla n\'oke gị.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

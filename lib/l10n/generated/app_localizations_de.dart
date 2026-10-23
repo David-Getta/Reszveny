@@ -2851,6 +2851,10 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Die Analyse wurde abgebrochen, bevor sie fertig war. Bitte versuche es erneut – dein Kontingent wurde nicht belastet.';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

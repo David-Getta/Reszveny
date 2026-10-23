@@ -2850,6 +2850,10 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Uhlalutyo lunqunyulwe lungekagqitywa. Nceda uzame kwakhona – alusebenzisanga umlinganiselo wakho.';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

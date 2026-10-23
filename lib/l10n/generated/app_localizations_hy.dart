@@ -2846,6 +2846,10 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Վերլուծությունն ընդհատվեց մինչև ավարտը։ Խնդրում ենք նորից փորձել – այն չի հաշվվել ձեր սահմանաչափից։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

@@ -2839,6 +2839,10 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Nhwehwɛmu no twaa mu ansa na ɛrewie. Yɛsrɛ wo, sɔ hwɛ bio – ɛmfaa wo dodow no bi.';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

@@ -844,5 +844,6 @@
   "tickerChanged": "Geskuif na {symbol}",
   "referralErrSignIn": "Meld met jou e-posadres aan om ’n vriend se kode in te los.",
   "referralErrFull": "Hierdie kode is reeds die maksimum aantal kere ingelos.",
-  "portfolioGoalReachedBody": "Jou portefeulje is nou {value} werd."
+  "portfolioGoalReachedBody": "Jou portefeulje is nou {value} werd.",
+  "errAiTruncated": "Die ontleding is afgesny voordat dit klaar was. Probeer asseblief weer – dit het nie jou toekenning gebruik nie."
 }

@@ -2851,6 +2851,10 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Uhlaziyo lunqamuke lungakaqedi. Sicela uzame futhi – alusebenzisanga isabelo sakho.';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

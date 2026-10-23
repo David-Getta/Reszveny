@@ -2857,6 +2857,10 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Tshekatsheko e kgaogile pele e fela. Tswee-tswee leka gape – ga e a dirisa kabelo ya gago.';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

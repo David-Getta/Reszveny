@@ -844,5 +844,6 @@
   "tickerChanged": "Премештено на {symbol}",
   "referralErrSignIn": "Пријави се имејлом да искористиш код пријатеља.",
   "referralErrFull": "Овај код је већ искоришћен максималан број пута.",
-  "portfolioGoalReachedBody": "Ваш портфолио сада вреди {value}."
+  "portfolioGoalReachedBody": "Ваш портфолио сада вреди {value}.",
+  "errAiTruncated": "Анализа је прекинута пре него што је завршена. Покушајте поново – није потрошена ваша квота."
 }

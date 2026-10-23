@@ -844,5 +844,6 @@
   "tickerChanged": "E fudusetswe kwa {symbol}",
   "referralErrSignIn": "Tsena ka imeile ya gago gore o dirise khoutu ya tsala.",
   "referralErrFull": "Khoutu e e setse e dirisitswe makgetlo otlhe a a letleletsweng.",
-  "portfolioGoalReachedBody": "Boleng jwa potefolio ya gago jaanong ke {value}."
+  "portfolioGoalReachedBody": "Boleng jwa potefolio ya gago jaanong ke {value}.",
+  "errAiTruncated": "Tshekatsheko e kgaogile pele e fela. Tswee-tswee leka gape – ga e a dirisa kabelo ya gago."
 }

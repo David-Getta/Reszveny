@@ -2833,6 +2833,10 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Sɛgɛsɛgɛli tigɛra sani a ka ban. A kɔrɔbɔ tugun – a ma foyi bɔ i ka hakɛ la.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

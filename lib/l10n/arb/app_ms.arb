@@ -844,5 +844,6 @@
   "tickerChanged": "Dipindahkan ke {symbol}",
   "referralErrSignIn": "Log masuk dengan e-mel anda untuk menebus kod rakan.",
   "referralErrFull": "Kod ini telah ditebus sebanyak had maksimum.",
-  "portfolioGoalReachedBody": "Nilai portfolio anda kini {value}."
+  "portfolioGoalReachedBody": "Nilai portfolio anda kini {value}.",
+  "errAiTruncated": "Analisis terputus sebelum selesai. Sila cuba lagi – peruntukan anda tidak digunakan."
 }

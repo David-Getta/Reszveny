@@ -2831,6 +2831,10 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'વિશ્લેષણ પૂરું થાય તે પહેલાં જ અધૂરું રહી ગયું. કૃપા કરીને ફરી પ્રયાસ કરો – તેનાથી તમારો ક્વોટા વપરાયો નથી.';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

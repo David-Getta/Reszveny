@@ -2833,6 +2833,10 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'විශ්ලේෂණය අවසන් වීමට පෙර අතරමග නතර විය. කරුණාකර නැවත උත්සාහ කරන්න – එය ඔබේ සීමාවෙන් අඩු කළේ නැත.';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

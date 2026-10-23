@@ -844,5 +844,6 @@
   "tickerChanged": "已转移到 {symbol}",
   "referralErrSignIn": "请用电子邮件登录后再兑换好友的邀请码。",
   "referralErrFull": "该邀请码已达到兑换次数上限。",
-  "portfolioGoalReachedBody": "您的投资组合市值已达 {value}。"
+  "portfolioGoalReachedBody": "您的投资组合市值已达 {value}。",
+  "errAiTruncated": "分析在完成前被截断。请重试，本次未消耗您的配额。"
 }

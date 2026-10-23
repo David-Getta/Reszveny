@@ -2838,6 +2838,10 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Таҳлил пеш аз анҷом ёфтан қатъ шуд. Лутфан, бори дигар кӯшиш кунед – аз ҳаҷми шумо чизе кам нашуд.';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

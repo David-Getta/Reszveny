@@ -2838,6 +2838,10 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Талдоо бүтө электе үзүлүп калды. Кайра аракет кылыңыз – лимитиңизден эч нерсе кемиген жок.';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

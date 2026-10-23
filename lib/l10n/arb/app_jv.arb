@@ -844,5 +844,6 @@
   "tickerChanged": "Dipindhah menyang {symbol}",
   "referralErrSignIn": "Mlebu nganggo emailmu supaya bisa nukarake kodhe saka kanca.",
   "referralErrFull": "Kodhe iki wis ditukarake nganti watesan maksimal.",
-  "portfolioGoalReachedBody": "Nilai portofolio sampeyan saiki {value}."
+  "portfolioGoalReachedBody": "Nilai portofolio sampeyan saiki {value}.",
+  "errAiTruncated": "Analisis kepunggel sadurunge rampung. Mangga jajal maneh – kuota sampeyan ora kepotong."
 }

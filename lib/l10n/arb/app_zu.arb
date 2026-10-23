@@ -844,5 +844,6 @@
   "tickerChanged": "Kudluliselwe ku-{symbol}",
   "referralErrSignIn": "Ngena ngemvume nge-imeyili yakho ukuze usebenzise ikhodi yomngane.",
   "referralErrFull": "Le khodi isivele isetshenziswe izikhathi zonke ezivumelekile.",
-  "portfolioGoalReachedBody": "Inani lephothifoliyo yakho manje lingu-{value}."
+  "portfolioGoalReachedBody": "Inani lephothifoliyo yakho manje lingu-{value}.",
+  "errAiTruncated": "Uhlaziyo lunqamuke lungakaqedi. Sicela uzame futhi – alusebenzisanga isabelo sakho."
 }

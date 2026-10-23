@@ -844,5 +844,6 @@
   "tickerChanged": "ወደ {symbol} ተዛውሯል",
   "referralErrSignIn": "የጓደኛን ኮድ ለመጠቀም በኢሜይልዎ ይግቡ።",
   "referralErrFull": "ይህ ኮድ የሚፈቀደውን ያህል ጊዜ ጥቅም ላይ ውሏል።",
-  "portfolioGoalReachedBody": "ፖርትፎሊዮዎ አሁን {value} ዋጋ አለው።"
+  "portfolioGoalReachedBody": "ፖርትፎሊዮዎ አሁን {value} ዋጋ አለው።",
+  "errAiTruncated": "ትንተናው ከመጠናቀቁ በፊት ተቋርጧል። እባክዎ እንደገና ይሞክሩ – ከድርሻዎ ምንም አልተቀነሰም።"
 }

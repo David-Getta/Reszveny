@@ -2914,6 +2914,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Анализ прервался до завершения. Попробуйте ещё раз – из лимита ничего не списано.';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

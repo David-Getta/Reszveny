@@ -2834,6 +2834,10 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'विश्लेषण पूरा हुनुअघि नै बीचमै काटियो। कृपया फेरि प्रयास गर्नुहोस् – यसले तपाईंको कोटा खर्च गरेको छैन।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

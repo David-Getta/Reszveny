@@ -844,5 +844,6 @@
   "tickerChanged": "U zhvendos te {symbol}",
   "referralErrSignIn": "Hyr me email-in tënd për të aktivizuar kodin e një miku.",
   "referralErrFull": "Ky kod është aktivizuar tashmë numrin maksimal të herëve.",
-  "portfolioGoalReachedBody": "Portofoli juaj tani vlen {value}."
+  "portfolioGoalReachedBody": "Portofoli juaj tani vlen {value}.",
+  "errAiTruncated": "Analiza u ndërpre para se të përfundonte. Ju lutemi provoni përsëri – nuk u zbrit nga kuota juaj."
 }

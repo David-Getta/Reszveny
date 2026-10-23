@@ -2836,6 +2836,10 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'ანალიზი დასრულებამდე შეწყდა. სცადეთ ხელახლა – ეს თქვენს ლიმიტში არ ჩაითვალა.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

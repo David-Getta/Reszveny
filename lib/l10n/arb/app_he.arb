@@ -844,5 +844,6 @@
   "tickerChanged": "הועבר ל-{symbol}",
   "referralErrSignIn": "היכנסו עם האימייל שלכם כדי לממש קוד של חבר.",
   "referralErrFull": "הקוד הזה כבר מומש את מספר הפעמים המרבי.",
-  "portfolioGoalReachedBody": "שווי התיק שלך עומד כעת על {value}."
+  "portfolioGoalReachedBody": "שווי התיק שלך עומד כעת על {value}.",
+  "errAiTruncated": "הניתוח נקטע לפני שהסתיים. נסו שוב – הוא לא נוכה מהמכסה שלך."
 }

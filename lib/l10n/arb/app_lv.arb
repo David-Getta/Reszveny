@@ -844,5 +844,6 @@
   "tickerChanged": "Pārcelts uz {symbol}",
   "referralErrSignIn": "Pierakstieties ar savu e-pastu, lai izmantotu drauga kodu.",
   "referralErrFull": "Šis kods jau izmantots maksimālo reižu skaitu.",
-  "portfolioGoalReachedBody": "Jūsu portfeļa vērtība tagad ir {value}."
+  "portfolioGoalReachedBody": "Jūsu portfeļa vērtība tagad ir {value}.",
+  "errAiTruncated": "Analīze tika pārtraukta, pirms tā bija pabeigta. Lūdzu, mēģiniet vēlreiz – tā netika ieskaitīta jūsu limitā."
 }

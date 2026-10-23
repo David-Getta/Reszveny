@@ -844,5 +844,6 @@
   "tickerChanged": "Перенесено на {symbol}",
   "referralErrSignIn": "Войдите по электронной почте, чтобы активировать код друга.",
   "referralErrFull": "Этот код уже активирован максимальное число раз.",
-  "portfolioGoalReachedBody": "Ваш портфель теперь стоит {value}."
+  "portfolioGoalReachedBody": "Ваш портфель теперь стоит {value}.",
+  "errAiTruncated": "Анализ прервался до завершения. Попробуйте ещё раз – из лимита ничего не списано."
 }

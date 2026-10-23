@@ -2830,6 +2830,10 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'הניתוח נקטע לפני שהסתיים. נסו שוב – הוא לא נוכה מהמכסה שלך.';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

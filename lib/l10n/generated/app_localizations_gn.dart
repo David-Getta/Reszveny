@@ -2843,6 +2843,10 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Jehesaʼỹijo oñekytĩ opa mboyve. Ehaʼã jey – ndojeporúi nde cupo.';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

@@ -2855,6 +2855,10 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Tlhahlobo e kgaohile pele e fela. Ka kopo leka hape – ha e a sebedisa kabelo ya hao.';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

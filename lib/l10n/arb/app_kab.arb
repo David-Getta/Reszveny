@@ -844,5 +844,6 @@
   "tickerChanged": "Yettwasmutti ɣer {symbol}",
   "referralErrSignIn": "Kcem s imayl-ik akken ad tesqedceḍ tangalt n umdakel.",
   "referralErrFull": "Tangalt-a tewweḍ yakan ɣer tlisa n useqdec-is.",
-  "portfolioGoalReachedBody": "Tura, azal n uqrab-ik d {value}."
+  "portfolioGoalReachedBody": "Tura, azal n uqrab-ik d {value}.",
+  "errAiTruncated": "Tasleḍt tegzem uqbel ad tfak. Ɛreḍ tikkelt-nniḍen – ur tettwaḥseb ara deg tesmekta-k."
 }

@@ -844,5 +844,6 @@
   "tickerChanged": "Siirretty tunnukselle {symbol}",
   "referralErrSignIn": "Kirjaudu sisään sähköpostillasi lunastaaksesi ystävän koodin.",
   "referralErrFull": "Tämä koodi on jo lunastettu niin monta kertaa kuin mahdollista.",
-  "portfolioGoalReachedBody": "Salkkusi arvo on nyt {value}."
+  "portfolioGoalReachedBody": "Salkkusi arvo on nyt {value}.",
+  "errAiTruncated": "Analyysi katkesi ennen kuin se valmistui. Yritä uudelleen – se ei kuluttanut kiintiötäsi."
 }

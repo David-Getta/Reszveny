@@ -844,5 +844,6 @@
   "tickerChanged": "Преместено към {symbol}",
   "referralErrSignIn": "Влезте с имейла си, за да използвате код от приятел.",
   "referralErrFull": "Този код вече е използван максималния брой пъти.",
-  "portfolioGoalReachedBody": "Портфейлът ви вече струва {value}."
+  "portfolioGoalReachedBody": "Портфейлът ви вече струва {value}.",
+  "errAiTruncated": "Анализът беше прекъснат, преди да завърши. Моля, опитайте отново – не е отчетен от лимита ви."
 }

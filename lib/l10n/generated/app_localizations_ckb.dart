@@ -2839,6 +2839,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'شیکارییەکە پێش تەواوبوون بڕا. تکایە دووبارە هەوڵ بدەرەوە – لە بڕەکەت کەم نەکرایەوە.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

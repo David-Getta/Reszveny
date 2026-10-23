@@ -844,5 +844,6 @@
   "tickerChanged": "E fallisetswe ho {symbol}",
   "referralErrSignIn": "Kena ka imeile ya hao hore o sebedise khoutu ya motswalle.",
   "referralErrFull": "Khoutu ena e se e sebedisitswe ka makgetlo ohle a dumeletsweng.",
-  "portfolioGoalReachedBody": "Boleng ba potefolio ya hao jwale ke {value}."
+  "portfolioGoalReachedBody": "Boleng ba potefolio ya hao jwale ke {value}.",
+  "errAiTruncated": "Tlhahlobo e kgaohile pele e fela. Ka kopo leka hape – ha e a sebedisa kabelo ya hao."
 }

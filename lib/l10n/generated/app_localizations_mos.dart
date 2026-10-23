@@ -2820,6 +2820,10 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Vɛɛsgã kɩɩsa hal t\'a pa sa ye. Le mak – a pa rɩ f vɛɛsã sõor ye.';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

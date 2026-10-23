@@ -2843,6 +2843,10 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'El análisis se cortó antes de terminar. Inténtalo de nuevo; no se ha descontado de tu cuota.';
+
+  @override
   String get portfolioGoalSet => 'Fijar un objetivo';
 
   @override

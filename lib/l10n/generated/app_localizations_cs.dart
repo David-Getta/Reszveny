@@ -2907,6 +2907,10 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analýza byla přerušena dřív, než byla dokončena. Zkuste to znovu – do limitu se nezapočítala.';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

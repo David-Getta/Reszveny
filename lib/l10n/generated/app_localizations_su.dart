@@ -2839,6 +2839,10 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analisis kapotong saméméh réngsé. Mangga cobaan deui – jatah anjeun henteu kapaké.';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

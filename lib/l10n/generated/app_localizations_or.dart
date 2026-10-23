@@ -2832,6 +2832,10 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'ବିଶ୍ଳେଷଣ ଶେଷ ହେବା ପୂର୍ବରୁ ଅଧାରେ କଟିଗଲା। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ – ଏଥିରେ ଆପଣଙ୍କ କୋଟା ଖର୍ଚ୍ଚ ହୋଇନାହିଁ।';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

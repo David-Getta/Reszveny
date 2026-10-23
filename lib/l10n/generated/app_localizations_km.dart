@@ -2814,6 +2814,10 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'ការវិភាគត្រូវបានកាត់ផ្ដាច់មុនពេលបញ្ចប់។ សូមព្យាយាមម្ដងទៀត – វាមិនបានប្រើកូតារបស់អ្នកទេ។';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

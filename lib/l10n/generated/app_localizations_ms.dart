@@ -2838,6 +2838,10 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analisis terputus sebelum selesai. Sila cuba lagi – peruntukan anda tidak digunakan.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

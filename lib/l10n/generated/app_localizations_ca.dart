@@ -2847,6 +2847,10 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'L\'anàlisi s\'ha tallat abans d\'acabar. Torna-ho a provar – no s\'ha descomptat de la teva quota.';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

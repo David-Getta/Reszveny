@@ -2839,6 +2839,10 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Uchambuzi ulikatizwa kabla haujakamilika. Tafadhali jaribu tena – haukutumia kiasi chako.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

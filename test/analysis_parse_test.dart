@@ -156,6 +156,16 @@ void main() {
       ),
       throwsA(isA<AnalysisException>().having((e) => e.code, 'code', AppErrorCode.aiBadResponse)),
     );
+    // A hosszkorláton megszakadt válasz nem teljes elemzés.
+    expect(
+      () => ClaudeStockAnalyst.parseResponse(
+        'AAPL',
+        response([
+          {'type': 'text', 'text': jsonEncode(sample)},
+        ], stop: 'max_tokens'),
+      ),
+      throwsA(isA<AnalysisException>().having((e) => e.code, 'code', AppErrorCode.aiTruncated)),
+    );
   });
 
   test('upcoming events dated only by month are in their place in time', () {

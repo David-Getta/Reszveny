@@ -844,5 +844,6 @@
   "tickerChanged": "Toxu na ci {symbol}",
   "referralErrSignIn": "Dugg ak sa imeel ngir mën a jëfandikoo kood bu sa xarit.",
   "referralErrFull": "Kood bii jëfandikoo nañu ko ba mu àgg ci yamu bi.",
-  "portfolioGoalReachedBody": "Léegi, njëgu sa aksiyoŋ yi tollu na ci {value}."
+  "portfolioGoalReachedBody": "Léegi, njëgu sa aksiyoŋ yi tollu na ci {value}.",
+  "errAiTruncated": "Saytu bi dagg na balaa muy jeex. Jéemaatal – jëlu dara ci sa dayo."
 }

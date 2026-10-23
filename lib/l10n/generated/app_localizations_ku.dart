@@ -2840,6 +2840,10 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analîz berî ku biqede qut bû. Ji kerema xwe dîsa biceribîne – ji mafê te nehat kêmkirin.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

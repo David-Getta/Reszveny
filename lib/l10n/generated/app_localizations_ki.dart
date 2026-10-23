@@ -2839,6 +2839,10 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Ithuthuria rĩatinĩkire rĩtanathira. Geria rĩngĩ – rĩtiahũthĩrĩte mũigana waku.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

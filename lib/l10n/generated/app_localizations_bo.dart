@@ -2825,6 +2825,10 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'དབྱེ་ཞིབ་མ་གྲུབ་གོང་ནས་བར་ཆད་བྱུང་། ཡང་བསྐྱར་ཚོད་ལྟ་གནང་། འདིས་ཁྱེད་ཀྱི་ཚད་བཀག་བཀོལ་མེད།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

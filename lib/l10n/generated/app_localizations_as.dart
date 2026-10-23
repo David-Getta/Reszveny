@@ -2835,6 +2835,10 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'বিশ্লেষণটো সম্পূৰ্ণ হোৱাৰ আগতেই কাটি গ\'ল। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক – ই আপোনাৰ কোটাৰ পৰা কটা হোৱা নাই।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

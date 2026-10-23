@@ -2915,6 +2915,10 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Аналіз обірвався до завершення. Спробуйте ще раз – з ліміту нічого не списано.';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

@@ -844,5 +844,6 @@
   "tickerChanged": "به {symbol} منتقل شد",
   "referralErrSignIn": "برای اعمال کد یک دوست، با ایمیل خود وارد شوید.",
   "referralErrFull": "این کد قبلاً به حداکثر تعداد دفعات مجاز اعمال شده است.",
-  "portfolioGoalReachedBody": "ارزش سبد سهام شما اکنون {value} است."
+  "portfolioGoalReachedBody": "ارزش سبد سهام شما اکنون {value} است.",
+  "errAiTruncated": "تحلیل پیش از تکمیل قطع شد. لطفاً دوباره تلاش کنید – از سهمیه شما کسر نشد."
 }

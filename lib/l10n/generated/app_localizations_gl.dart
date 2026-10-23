@@ -2861,6 +2861,10 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'A análise cortouse antes de rematar. Téntao de novo – non se descontou da túa cota.';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

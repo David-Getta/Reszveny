@@ -2838,6 +2838,10 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analysen avbröts innan den var klar. Försök igen – den drog inget från din kvot.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

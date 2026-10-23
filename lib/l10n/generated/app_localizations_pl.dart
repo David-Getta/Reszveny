@@ -2915,6 +2915,10 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analiza została ucięta przed zakończeniem. Spróbuj ponownie – nie wliczyła się do limitu.';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

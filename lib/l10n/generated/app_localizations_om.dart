@@ -2850,6 +2850,10 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Xiinxalli osoo hin xumuramin addaan cite. Maaloo irra deebi\'ii yaali – qooda kee irraa hin hir\'isne.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

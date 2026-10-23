@@ -2833,6 +2833,10 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Ƴeewndo ngo taƴaama hade mum timmude. Tiiɗno eto goɗngol – ɗum huutoraaki geɗal maa.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

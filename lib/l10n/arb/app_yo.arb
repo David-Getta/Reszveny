@@ -844,5 +844,6 @@
   "tickerChanged": "A ti gbé e lọ sí {symbol}",
   "referralErrSignIn": "Wọlé pẹ̀lú ímeèlì rẹ láti lo kóòdù ọ̀rẹ́ kan.",
   "referralErrFull": "Wọ́n ti lo kóòdù yìí dé iye ìgbà tó pọ̀ jù lọ tí a gbà láàyè.",
-  "portfolioGoalReachedBody": "Iye àpò ìdókòwò rẹ ti tó {value} báyìí."
+  "portfolioGoalReachedBody": "Iye àpò ìdókòwò rẹ ti tó {value} báyìí.",
+  "errAiTruncated": "Ìtúpalẹ̀ náà dáwọ́ dúró kí ó tó parí. Jọ̀ọ́ tún gbìyànjú – kò lo ìpín rẹ."
 }

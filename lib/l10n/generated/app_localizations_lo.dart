@@ -2808,6 +2808,10 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'ການວິເຄາະຖືກຕັດຂາດກ່ອນສຳເລັດ ກະລຸນາລອງໃໝ່ – ບໍ່ໄດ້ໃຊ້ໂຄຕ້າຂອງທ່ານ';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

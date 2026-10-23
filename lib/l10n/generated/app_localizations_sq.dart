@@ -2843,6 +2843,10 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analiza u ndërpre para se të përfundonte. Ju lutemi provoni përsëri – nuk u zbrit nga kuota juaj.';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

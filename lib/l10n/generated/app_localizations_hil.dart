@@ -2855,6 +2855,10 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Naputol ang analisis antes ini natapos. Palihog tilawi liwat – wala ini nagbuhin sa imo alokasyon.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

@@ -2845,6 +2845,10 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Naputol ang pagsusuri bago ito natapos. Pakisubukang muli – hindi ito nabawas sa iyong alokasyon.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

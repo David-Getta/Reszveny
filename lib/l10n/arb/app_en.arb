@@ -2506,6 +2506,8 @@
       }
     }
   },
+  "errAiTruncated": "The analysis was cut off before it was finished. Please try again – it did not use your allowance.",
+  "@errAiTruncated": {"description": "Error when the AI analysis reply hit the length limit and was incomplete; the user was not charged."},
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

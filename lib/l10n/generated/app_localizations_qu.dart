@@ -2852,6 +2852,10 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'T\'aqwiyqa manaraq tukukuchkaptin kuchusqa karqan. Ama hina kaspa, huktawan ruway – manam kamachisqa yupayniykimanta qichusqachu.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

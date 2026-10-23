@@ -2912,6 +2912,10 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analizė nutrūko nepasibaigusi. Bandykite dar kartą – ji nebuvo įskaičiuota į jūsų limitą.';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

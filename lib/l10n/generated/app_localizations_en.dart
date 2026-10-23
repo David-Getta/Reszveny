@@ -2834,6 +2834,10 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'The analysis was cut off before it was finished. Please try again – it did not use your allowance.';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

@@ -2883,6 +2883,10 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analīze tika pārtraukta, pirms tā bija pabeigta. Lūdzu, mēģiniet vēlreiz – tā netika ieskaitīta jūsu limitā.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

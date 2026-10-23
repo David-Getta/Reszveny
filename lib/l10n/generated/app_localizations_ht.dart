@@ -2835,6 +2835,10 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analiz la koupe anvan li te fini. Tanpri eseye ankò – li pa t konte nan kota ou.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

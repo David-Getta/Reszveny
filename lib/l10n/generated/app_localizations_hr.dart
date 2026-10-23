@@ -2886,6 +2886,10 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analiza je prekinuta prije nego što je dovršena. Pokušajte ponovno – nije potrošena vaša kvota.';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

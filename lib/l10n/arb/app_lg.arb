@@ -844,5 +844,6 @@
   "tickerChanged": "Bitwaliddwa ku {symbol}",
   "referralErrSignIn": "Yingira n'email yo osobole okukozesa koodi ya mukwano gwo.",
   "referralErrFull": "Koodi eno ekozeseddwa dda emirundi gyonna egikkirizibwa.",
-  "portfolioGoalReachedBody": "Omuwendo gw'emigabo gyo kati guli {value}."
+  "portfolioGoalReachedBody": "Omuwendo gw'emigabo gyo kati guli {value}.",
+  "errAiTruncated": "Okwekenneenya kusaliddwako nga tekunnaggwa. Gezaako nate – tekukozesezza ku ky'okkirizibwa."
 }

@@ -2833,6 +2833,10 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'تحلیل پیش از تکمیل قطع شد. لطفاً دوباره تلاش کنید – از سهمیه شما کسر نشد.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

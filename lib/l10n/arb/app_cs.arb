@@ -844,5 +844,6 @@
   "tickerChanged": "Přesunuto na {symbol}",
   "referralErrSignIn": "Pro uplatnění kódu od přítele se přihlaste e-mailem.",
   "referralErrFull": "Tento kód už dosáhl maximálního počtu uplatnění.",
-  "portfolioGoalReachedBody": "Vaše portfolio má nyní hodnotu {value}."
+  "portfolioGoalReachedBody": "Vaše portfolio má nyní hodnotu {value}.",
+  "errAiTruncated": "Analýza byla přerušena dřív, než byla dokončena. Zkuste to znovu – do limitu se nezapočítala."
 }

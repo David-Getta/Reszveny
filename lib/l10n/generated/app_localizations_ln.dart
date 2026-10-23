@@ -2852,6 +2852,10 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analyse ekatamaki liboso ya kosila. Meka lisusu – elongoli eloko te na eteni na yo.';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

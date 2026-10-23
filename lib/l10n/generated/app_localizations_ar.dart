@@ -2908,6 +2908,10 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'انقطع التحليل قبل اكتماله. يرجى المحاولة مرة أخرى – لم يُحتسب من حصتك.';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

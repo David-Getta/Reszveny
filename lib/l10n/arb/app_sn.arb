@@ -844,5 +844,6 @@
   "tickerChanged": "Zvatamisirwa kuna {symbol}",
   "referralErrSignIn": "Pinda neemail yako kuti ushandise kodhi yeshamwari.",
   "referralErrFull": "Kodhi iyi yatoshandiswa nguva dzose dzinobvumirwa.",
-  "portfolioGoalReachedBody": "Potiforiyo yako yava kukosha {value}."
+  "portfolioGoalReachedBody": "Potiforiyo yako yava kukosha {value}.",
+  "errAiTruncated": "Ongororo yakadimburwa isati yapera. Ndapota edza zvakare – haina kushandisa mwero wako."
 }

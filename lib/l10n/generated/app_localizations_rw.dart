@@ -2851,6 +2851,10 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Isesengura ryaciwe hagati ritarangira. Ongera ugerageze – ntiryakoresheje ingano wemerewe.';
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

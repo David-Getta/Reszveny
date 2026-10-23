@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.263)
+# Változásjegyzék (0.2.130 → 0.2.264)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -272,6 +272,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   bevezető nem ragad hozzá); a csak hónappal megadott esemény a helyén van az időrendben; a sikertelen
   utánanézés nem okoz kezeletlen hibát (eddig minden hálózati hiba összeomlásként ment a telemetriába); a szerver
   a hosszkorláton megszakadt elemzést nem vonja le a keretből.
+- **0.2.264**: a hosszkorláton megszakadt elemzés nem mentődik teljesként (eddig a javító kör üres részekkel
+  „kiegészítette”): külön hibaüzenet kéri az újrapróbálást, és jelzi, hogy a keretből nem vont le – 120 nyelven.
 
 ## Piaci adatok és offline gyorsítótár: egy tizedik kódátnézés javításai
 

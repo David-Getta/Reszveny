@@ -2836,6 +2836,10 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'تجزیہ مکمل ہونے سے پہلے ہی ادھورا رہ گیا۔ براہ کرم دوبارہ کوشش کریں – اس سے آپ کا کوٹا استعمال نہیں ہوا۔';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

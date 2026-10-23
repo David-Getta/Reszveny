@@ -2839,6 +2839,10 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analisis kepunggel sadurunge rampung. Mangga jajal maneh – kuota sampeyan ora kepotong.';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

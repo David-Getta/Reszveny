@@ -844,5 +844,6 @@
   "tickerChanged": "تم النقل إلى {symbol}",
   "referralErrSignIn": "سجّل الدخول ببريدك الإلكتروني لتفعيل رمز صديق.",
   "referralErrFull": "بلغ هذا الرمز الحد الأقصى لعدد مرات التفعيل.",
-  "portfolioGoalReachedBody": "تبلغ قيمة محفظتك الآن {value}."
+  "portfolioGoalReachedBody": "تبلغ قيمة محفظتك الآن {value}.",
+  "errAiTruncated": "انقطع التحليل قبل اكتماله. يرجى المحاولة مرة أخرى – لم يُحتسب من حصتك."
 }

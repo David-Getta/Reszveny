@@ -844,5 +844,6 @@
   "tickerChanged": "Hat guhastin bo {symbol}",
   "referralErrSignIn": "Bi e-nameya xwe têkeve da ku koda hevalekî bi kar bînî.",
   "referralErrFull": "Ev kod berê bi qasî herî zêde hatiye bikaranîn.",
-  "portfolioGoalReachedBody": "Nirxa portfolyoya te niha {value} e."
+  "portfolioGoalReachedBody": "Nirxa portfolyoya te niha {value} e.",
+  "errAiTruncated": "Analîz berî ku biqede qut bû. Ji kerema xwe dîsa biceribîne – ji mafê te nehat kêmkirin."
 }

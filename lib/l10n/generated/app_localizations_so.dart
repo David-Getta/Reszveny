@@ -2846,6 +2846,10 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Falanqayntu way go\'day intaanay dhammaan. Fadlan isku day mar kale – kama aysan isticmaalin qoondadaada.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

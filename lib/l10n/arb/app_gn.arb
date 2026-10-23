@@ -844,5 +844,6 @@
   "tickerChanged": "Oñembohasa {symbol}-pe",
   "referralErrSignIn": "Eike ne correo reheve reiporu hag̃ua ne angirũ código.",
   "referralErrFull": "Ko código ojeporúma opaite jey ikatuháicha.",
-  "portfolioGoalReachedBody": "Koʼág̃a nde cartera hepykue {value}."
+  "portfolioGoalReachedBody": "Koʼág̃a nde cartera hepykue {value}.",
+  "errAiTruncated": "Jehesaʼỹijo oñekytĩ opa mboyve. Ehaʼã jey – ndojeporúi nde cupo."
 }

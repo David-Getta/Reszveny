@@ -2912,6 +2912,10 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Аналіз абарваўся, не скончыўшыся. Паспрабуйце яшчэ раз – з ліміту нічога не спісана.';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

@@ -2832,6 +2832,10 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Analisis terpotong sebelum selesai. Silakan coba lagi – kuota Anda tidak terpakai.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

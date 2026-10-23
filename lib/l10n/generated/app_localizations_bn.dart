@@ -2835,6 +2835,10 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'বিশ্লেষণটি শেষ হওয়ার আগেই কেটে গেছে। অনুগ্রহ করে আবার চেষ্টা করুন – এতে আপনার কোটা খরচ হয়নি।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

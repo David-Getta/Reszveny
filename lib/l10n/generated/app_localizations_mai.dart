@@ -2828,6 +2828,10 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'विश्लेषण पूरा होबाक पहिने अधूरा रहि गेल। कृपया फेरसँ प्रयास करू – एहिसँ अहाँक कोटा खर्च नहि भेल।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

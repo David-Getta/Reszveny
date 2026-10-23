@@ -2833,6 +2833,10 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Анализ тәмамланганчы өзелде. Зинһар, кабат тырышып карагыз – лимитыгыздан бернәрсә дә киметелмәде.';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

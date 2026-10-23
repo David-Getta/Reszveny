@@ -2843,6 +2843,10 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'L’analisi si è interrotta prima di essere completata. Riprova – non è stata scalata dalla tua quota.';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

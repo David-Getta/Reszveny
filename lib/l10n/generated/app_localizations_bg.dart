@@ -2838,6 +2838,10 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Анализът беше прекъснат, преди да завърши. Моля, опитайте отново – не е отчетен от лимита ви.';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

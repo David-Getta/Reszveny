@@ -2848,6 +2848,10 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Η ανάλυση διακόπηκε πριν ολοκληρωθεί. Δοκιμάστε ξανά – δεν προσμετρήθηκε στο όριό σας.';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

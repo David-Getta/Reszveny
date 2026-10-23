@@ -2849,6 +2849,10 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'L’analyse a été interrompue avant la fin. Veuillez réessayer – elle n’a pas été décomptée de votre quota.';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

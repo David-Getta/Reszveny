@@ -22,6 +22,9 @@ enum AppErrorCode {
   aiHttp,
   aiRefused,
   aiBadResponse,
+
+  /// Az AI válasza a hosszkorláton megszakadt (nem teljes; a keret nem fogyott).
+  aiTruncated,
   clipboardNoImage,
   chartUnavailable,
   statementsUnavailable,

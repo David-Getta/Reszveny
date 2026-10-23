@@ -2799,6 +2799,10 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'ትንተናው ከመጠናቀቁ በፊት ተቋርጧል። እባክዎ እንደገና ይሞክሩ – ከድርሻዎ ምንም አልተቀነሰም።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

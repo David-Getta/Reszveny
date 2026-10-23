@@ -844,5 +844,6 @@
   "tickerChanged": "Biakuya ku {symbol}",
   "referralErrSignIn": "Buela ne e-mail webe bua kuenza nadi code wa mulunda.",
   "referralErrFull": "Bakadi bamane kuenza nadi code eu misangu yonso idi yanyishibue.",
-  "portfolioGoalReachedBody": "Mpindieu, mushinga wa portefeuille webe udi {value}."
+  "portfolioGoalReachedBody": "Mpindieu, mushinga wa portefeuille webe udi {value}.",
+  "errAiTruncated": "Dikonkonona diakosoka kumpala kua kujika. Teta kabidi – kadiakangata tshintu mu tshitupa tshiebe."
 }

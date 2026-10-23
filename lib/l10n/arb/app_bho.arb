@@ -844,5 +844,6 @@
   "tickerChanged": "{symbol} पर ले जाइल गइल",
   "referralErrSignIn": "कवनो दोस्त के कोड भुनावे खातिर अपना ई-मेल से साइन इन करीं।",
   "referralErrFull": "ई कोड पहिलहीं अधिकतम बेर भुनावल जा चुकल बा।",
-  "portfolioGoalReachedBody": "अब राउर पोर्टफ़ोलियो के मूल्य {value} बा।"
+  "portfolioGoalReachedBody": "अब राउर पोर्टफ़ोलियो के मूल्य {value} बा।",
+  "errAiTruncated": "विश्लेषण पूरा होखे से पहिले अधूरा रह गइल। कृपया फेर से कोसिस करीं – एह से राउर कोटा ना घटल।"
 }

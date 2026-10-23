@@ -2828,6 +2828,10 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'تحلیل له بشپړېدو مخکې پرې شو. مهرباني وکړئ بیا هڅه وکړئ – ستاسو له سهمیې څخه نه دی کم شوی.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

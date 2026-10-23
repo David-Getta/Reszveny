@@ -2854,6 +2854,10 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'Okwekenneenya kusaliddwako nga tekunnaggwa. Gezaako nate – tekukozesezza ku ky\'okkirizibwa.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

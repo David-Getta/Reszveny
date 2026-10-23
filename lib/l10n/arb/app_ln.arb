@@ -844,5 +844,6 @@
   "tickerChanged": "Etindami na {symbol}",
   "referralErrSignIn": "Kɔta na e-mail na yo mpo na kosalela code ya moninga.",
   "referralErrFull": "Code oyo esalelami esili mbala nyonso oyo epesameli nzela.",
-  "portfolioGoalReachedBody": "Sikoyo, motuya ya portefeuille na yo ezali {value}."
+  "portfolioGoalReachedBody": "Sikoyo, motuya ya portefeuille na yo ezali {value}.",
+  "errAiTruncated": "Analyse ekatamaki liboso ya kosila. Meka lisusu – elongoli eloko te na eteni na yo."
 }

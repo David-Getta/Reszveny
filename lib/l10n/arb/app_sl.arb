@@ -844,5 +844,6 @@
   "tickerChanged": "Preneseno na {symbol}",
   "referralErrSignIn": "Prijavi se z e-pošto, da unovčiš kodo prijatelja.",
   "referralErrFull": "Ta koda je dosegla največje število unovčitev.",
-  "portfolioGoalReachedBody": "Vaš portfelj je zdaj vreden {value}."
+  "portfolioGoalReachedBody": "Vaš portfelj je zdaj vreden {value}.",
+  "errAiTruncated": "Analiza je bila prekinjena, preden se je končala. Poskusite znova – ni se štela v vašo kvoto."
 }

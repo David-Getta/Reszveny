@@ -2834,6 +2834,10 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get errAiTruncated =>
+      'ਵਿਸ਼ਲੇਸ਼ਣ ਪੂਰਾ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਹੀ ਅਧੂਰਾ ਰਹਿ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ – ਇਸ ਨਾਲ ਤੁਹਾਡਾ ਕੋਟਾ ਨਹੀਂ ਵਰਤਿਆ ਗਿਆ।';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override
