@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.242)
+# Változásjegyzék (0.2.130 → 0.2.243)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -154,7 +154,10 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   elleni védelem visszaírta). Ha mindkét eszközön volt változás, azonos tételnél a később javított változat nyer (eddig
   a helyi, így a másik eszközön végzett javítás elveszhetett), és a törölt tranzakció, osztalék vagy felaprózás sem
   támad fel a másik eszköz régi példányából (törlési jelzés fél évig; a visszavonás és a mentésből visszaállítás
-  továbbra is visszahozza).
+  továbbra is visszahozza). Ugyanez a riasztásokra és a jegyzetekre is; az újraélesített riasztást a szerver korábbi
+  „teljesült” jelölése nem írja felül. Két eszköz egyidejű feltöltése sem írja felül egymást (a szerver elutasítja a
+  régi változatra épülő feltöltést, az app újra letölt és összefésül), és a szerver riasztásfigyelője sem írhat vissza
+  régi adatot egy közbeni feltöltés helyére.
 - **Ismételt import duplikálás nélkül**: a frissebb (a régi sorokat is tartalmazó) bróker-export újbóli beolvasásakor
   a már rögzített tranzakciók és osztalékok kimaradnak, és az import végén látszik, hány („2 már rögzítve volt,
   kimaradt”); a fájlon belüli két azonos részteljesítés viszont elsőre mindkettő bekerül (eddig a második elveszett).

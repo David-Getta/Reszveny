@@ -18,13 +18,31 @@ class _Server {
   Map<String, dynamic>? data;
   DateTime? updatedAt;
   var writes = 0;
+  var conflicts = 0;
+
+  /// Egyszer, a következő letöltés után fut: egy másik író (eszköz) közbeiktatása.
+  void Function()? afterNextGet;
 
   http.Client get client => MockClient((req) async {
     if (req.url.path == '/v1/sync' && req.method == 'GET') {
-      return http.Response(jsonEncode({'data': data, 'updated_at': updatedAt?.toIso8601String()}), 200);
+      final res = http.Response(jsonEncode({'data': data, 'updated_at': updatedAt?.toIso8601String()}), 200);
+      final hook = afterNextGet;
+      afterNextGet = null;
+      hook?.call();
+      return res;
     }
     if (req.url.path == '/v1/sync' && req.method == 'PUT') {
-      data = ((jsonDecode(req.body) as Map)['data'] as Map).cast<String, dynamic>();
+      final body = jsonDecode(req.body) as Map;
+      // Mint a szerver: a megadott alapváltozattól eltérő állapotra nem ír.
+      if (body.containsKey('base')) {
+        final base = DateTime.tryParse('${body['base'] ?? ''}');
+        final same = updatedAt == null ? base == null : base != null && base.isAtSameMomentAs(updatedAt!);
+        if (!same) {
+          conflicts++;
+          return http.Response(jsonEncode({'error': 'conflict'}), 409);
+        }
+      }
+      data = (body['data'] as Map).cast<String, dynamic>();
       writes++;
       updatedAt = DateTime.utc(2026, 10, 15, 9, 0, writes);
       return http.Response(jsonEncode({'updated_at': updatedAt!.toIso8601String()}), 200);
@@ -285,6 +303,75 @@ void main() {
     final lot = await store.add(symbol: 'AAPL', quantity: 1, price: 100, currency: 'USD');
     await store.remove(lot.id);
     expect((await PortfolioStore.load()).deletedJson.keys.toSet(), {'new', lot.id});
+  });
+
+  test('a write by someone else between download and upload is not overwritten: refused, merged, retried', () async {
+    final server = _Server();
+    SharedPreferences.setMockInitialValues({});
+    final a = _Device(server);
+    await a.sync.start();
+    await a.portfolio.add(symbol: 'AAPL', quantity: 1, price: 180, currency: 'USD');
+    // A letöltés után egy másik eszköz feltölt (új kedvenc).
+    server.afterNextGet = () {
+      server.data = {
+        ...server.data!,
+        'favorites': ['NVDA'],
+      };
+      server.updatedAt = DateTime.utc(2026, 10, 15, 10);
+    };
+    await a.sync.syncNow();
+    expect(server.conflicts, 1);
+    expect(a.sync.failed, isFalse);
+    expect(server.data!['favorites'], ['NVDA'], reason: 'a másik eszköz kedvence megmaradt');
+    expect((server.data!['lots'] as List).single['symbol'], 'AAPL');
+    expect(a.preferences.favorites, ['NVDA']);
+  });
+
+  test('alerts: a re-arm after the server marked it wins; a later server mark wins over an older edit', () {
+    Map<String, dynamic> side(Map<String, dynamic> extra) => {
+      'alerts': [
+        {'id': 'x', 'symbol': 'AAPL', 'kind': 'above', 'value': 250, 'created_at': '2026-10-01T00:00:00Z', ...extra},
+      ],
+    };
+    final triggered = side({'triggered_at': '2026-10-10T12:00:00Z', 'triggered_price': 251});
+    final rearmed = side({'edited': '2026-10-11T08:00:00Z'});
+    final untouched = side({});
+    List merged(Map<String, dynamic> l, Map<String, dynamic> r) => SyncService.merge(l, r)['alerts'] as List;
+    expect(merged(rearmed, triggered).single['triggered_at'], isNull, reason: 'újraélesítve a jelölés után');
+    expect(merged(triggered, rearmed).single['triggered_at'], isNull);
+    expect(merged(untouched, triggered).single['triggered_at'], isNotNull, reason: 'a kiküldött nem éled újra');
+    final markedLater = side({'edited': '2026-10-11T08:00:00Z', 'triggered_at': '2026-10-12T15:00:00Z'});
+    expect(merged(rearmed, markedLater).single['triggered_at'], isNotNull);
+  });
+
+  test('a deleted note or alert is not brought back by the other device\'s older copy', () async {
+    final server = _Server();
+    SharedPreferences.setMockInitialValues({});
+    final a = _Device(server);
+    await a.notes.set('AAPL', 'Services growth.');
+    final alert = await a.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 250, currency: 'USD');
+    await a.sync.start();
+    SharedPreferences.setMockInitialValues({});
+    final b = _Device(server);
+    await b.sync.start();
+    expect((b.notes.of('AAPL')?.text, b.alerts.alerts.length), ('Services growth.', 1));
+
+    // A törli; B közben mást változtat, és utóbb szinkronizál.
+    await a.notes.set('AAPL', '');
+    await a.alerts.remove(alert.id);
+    await a.sync.syncNow();
+    await b.preferences.toggleFavorite('MSFT');
+    await b.sync.syncNow();
+    await a.sync.syncNow();
+    for (final d in [a, b]) {
+      expect(d.notes.of('AAPL'), isNull);
+      expect(d.alerts.alerts, isEmpty);
+    }
+    // Újraírt jegyzet a törlés után: az megmarad.
+    await b.notes.set('AAPL', 'Bought again.');
+    await b.sync.syncNow();
+    await a.sync.syncNow();
+    expect(a.notes.of('AAPL')?.text, 'Bought again.');
   });
 
   test('goals follow the account: the newer change wins, a removed goal does not come back', () async {

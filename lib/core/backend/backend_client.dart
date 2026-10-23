@@ -324,12 +324,14 @@ class BackendClient {
   }
 
   /// `PUT /v1/sync` → a teljes adatcsomag mentése; a válasz a szerver ideje.
-  Future<DateTime> putSync(Map<String, dynamic> data) async {
+  /// [conditional] esetén csak akkor, ha a szerveren még a [base] változat van
+  /// (`null`: még nem volt adat); ha közben más írt, `BackendException(409, 'conflict')`.
+  Future<DateTime> putSync(Map<String, dynamic> data, {bool conditional = false, DateTime? base}) async {
     final res = await _authorized(
       (h) => _inner.put(
         Uri.parse('$baseUrl/v1/sync'),
         headers: {...h, 'content-type': 'application/json'},
-        body: jsonEncode({'data': data}),
+        body: jsonEncode({'data': data, if (conditional) 'base': base?.toUtc().toIso8601String()}),
       ),
     );
     return DateTime.parse(_decode(res)['updated_at'] as String);

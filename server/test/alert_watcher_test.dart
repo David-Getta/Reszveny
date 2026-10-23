@@ -90,6 +90,39 @@ void main() {
     expect(mailer.messages, hasLength(1));
   });
 
+  test('an upload while the prices are fetched is not lost; the marks land on the fresh data', () async {
+    final dave = account('dave@example.com', {
+      'alerts': [alert('a1', 'AAPL', 'above', 250), alert('a2', 'MSFT', 'above', 500)],
+    });
+    quotes = {'AAPL': (price: 251.2, changePercent: 1.1), 'MSFT': (price: 410.0, changePercent: 0.2)};
+    var uploaded = false;
+    final w = AlertWatcher(
+      store: store,
+      mailer: mailer,
+      quote: (s) async {
+        // Egy készülék épp most tölt fel: új tétel, és az MSFT-riasztást törölte.
+        if (!uploaded) {
+          uploaded = true;
+          store.saveSyncData(
+            dave,
+            jsonEncode({
+              'lots': [
+                {'id': 'l1', 'symbol': 'OTP', 'quantity': 1, 'price': 30000, 'currency': 'HUF'},
+              ],
+              'alerts': [alert('a1', 'AAPL', 'above', 250)],
+            }),
+          );
+        }
+        return quotes[s];
+      },
+      clock: () => DateTime.utc(2026, 10, 15, 14),
+    );
+    expect(await w.checkOnce(), 1);
+    final saved = jsonDecode(store.syncData(dave)!.data) as Map;
+    expect((saved['lots'] as List).single['id'], 'l1', reason: 'a közbeni feltöltés megmaradt');
+    expect((saved['alerts'] as List).map((a) => (a['id'], a['triggered_at'] != null)), [('a1', true)]);
+  });
+
   test('English e-mail for one alert; unknown prices and accounts without e-mail are skipped', () async {
     account('ann@example.com', {
       'lang': 'en',

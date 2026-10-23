@@ -813,7 +813,11 @@ class Api {
     return _json({'data': s == null ? null : jsonDecode(s.data), 'updated_at': s?.updatedAt.toIso8601String()});
   }
 
-  /// A teljes adatcsomag felülírása (az utolsó írás nyer; az összefésülést az app végzi).
+  /// A teljes adatcsomag felülírása (az összefésülést az app végzi). Ha a kérés
+  /// megadja, melyik változatra épít (`base`: a letöltött `updated_at`, vagy `null`,
+  /// ha még nem volt adat), és azóta más írt, 409 – az app újra letölt és
+  /// összefésül, így két eszköz egyidejű feltöltése sem írja felül egymást.
+  /// `base` nélkül (régebbi app) az utolsó írás nyer.
   Future<Response> _putSync(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
@@ -828,6 +832,12 @@ class Api {
     }
     final data = body is Map ? body['data'] : null;
     if (data is! Map) return _error(400, 'bad_request');
+    if (body is Map && body.containsKey('base')) {
+      final base = DateTime.tryParse('${body['base'] ?? ''}');
+      final current = store.syncData(uid)?.updatedAt;
+      final same = current == null ? base == null : base != null && base.isAtSameMomentAs(current);
+      if (!same) return _json({'error': 'conflict', 'updated_at': current?.toIso8601String()}, status: 409);
+    }
     final at = store.saveSyncData(uid, jsonEncode(data));
     return _json({'updated_at': at.toIso8601String()});
   }

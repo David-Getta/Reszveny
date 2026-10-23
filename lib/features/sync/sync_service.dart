@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/app_preferences.dart';
 import '../../core/backend/backend_client.dart';
+import '../../core/util/tombstones.dart';
 import '../account/account_controller.dart';
 import '../alerts/price_alert.dart';
 import '../notes/notes_store.dart';
@@ -156,7 +157,9 @@ class SyncService extends ChangeNotifier {
     'cash': portfolio.cash,
     'cash_at': portfolio.cashAtJson,
     'alerts': [for (final a in alerts.alerts) a.toJson()],
+    'alerts_deleted': alerts.deletedJson,
     'notes': {for (final e in notes.all.entries) e.key: e.value.toJson()},
+    'notes_deleted': notes.deletedJson,
   };
 
   /// Két csomag uniója: a helyi elemek elöl, azonos azonosítónál a később
@@ -165,11 +168,7 @@ class SyncService extends ChangeNotifier {
     DateTime edited(Map<String, dynamic> e) => DateTime.tryParse('${e['edited'] ?? ''}') ?? DateTime(0);
     // Törlési jelzések: a két oldal uniója (azonosítónként a későbbi); a törölt
     // tétel nem támad fel a másik oldal régi példányából – csak ha később javították.
-    final deleted = {...PortfolioStore.parseDeleted(remote['deleted'])};
-    for (final e in PortfolioStore.parseDeleted(local['deleted']).entries) {
-      if (deleted[e.key] case final r? when r.isAfter(e.value)) continue;
-      deleted[e.key] = e.value;
-    }
+    final deleted = unionTombstones(local['deleted'], remote['deleted']);
     List<Map<String, dynamic>> byId(Object? a, Object? b) {
       final out = <String, Map<String, dynamic>>{};
       for (final e in [..._maps(a), ..._maps(b)]) {
@@ -196,8 +195,24 @@ class SyncService extends ChangeNotifier {
       if (l == null) continue;
       if (r == null || !r.updatedAt.isAfter(l.updatedAt)) mergedNotes[e.key] = e.value;
     }
-    // Riasztásnál a teljesült változat nyer (a szerver is megjelölhette), hogy
-    // egy már kiküldött riasztás ne éledjen újra.
+    // A törölt jegyzet csak akkor marad, ha a törlés után írták.
+    final notesDeleted = unionTombstones(local['notes_deleted'], remote['notes_deleted']);
+    mergedNotes.removeWhere(
+      (symbol, n) => switch ((notesDeleted[symbol], StockNote.fromJson(n))) {
+        (final at?, final note?) => !note.updatedAt.isAfter(at),
+        _ => false,
+      },
+    );
+    // Riasztás: azonosítónként a később változott (szerkesztés, újraélesítés vagy
+    // teljesülés ideje) nyer; egyezésnél a teljesült (a szerver is megjelölhette),
+    // hogy egy már kiküldött riasztás ne éledjen újra. Két aktív példánál a
+    // követő stop magasabb csúcsa marad.
+    DateTime? at(Object? v) => DateTime.tryParse('${v ?? ''}');
+    DateTime changed(Map<String, dynamic> a) {
+      final times = [?at(a['edited']), ?at(a['triggered_at'])];
+      return times.isEmpty ? DateTime(0) : times.reduce((x, y) => y.isAfter(x) ? y : x);
+    }
+
     final alertsMerged = <Map<String, dynamic>>[];
     final alertIndex = <String, int>{};
     for (final a in [..._maps(local['alerts']), ..._maps(remote['alerts'])]) {
@@ -205,14 +220,33 @@ class SyncService extends ChangeNotifier {
       if (i == null) {
         alertIndex['${a['id']}'] = alertsMerged.length;
         alertsMerged.add(a);
-      } else if (alertsMerged[i]['triggered_at'] == null && a['triggered_at'] != null) {
-        alertsMerged[i] = a;
-      } else if (alertsMerged[i]['triggered_at'] == null && a['peak'] is num) {
-        // Követő stop: a két oldal közül a magasabb csúcs marad.
-        final mine = alertsMerged[i]['peak'];
-        if (mine is! num || (a['peak'] as num) > mine) alertsMerged[i] = {...alertsMerged[i], 'peak': a['peak']};
+        continue;
       }
+      final cur = alertsMerged[i];
+      final (ca, cc) = (changed(a), changed(cur));
+      final pick = ca.isAfter(cc) || (!cc.isAfter(ca) && cur['triggered_at'] == null && a['triggered_at'] != null)
+          ? a
+          : cur;
+      final other = identical(pick, a) ? cur : a;
+      // Követő stop: a két oldal közül a magasabb csúcs marad (ha mindkettő aktív).
+      if (pick['triggered_at'] == null && other['triggered_at'] == null && other['peak'] is num) {
+        final mine = pick['peak'];
+        if (mine is! num || (other['peak'] as num) > mine) {
+          alertsMerged[i] = {...pick, 'peak': other['peak']};
+          continue;
+        }
+      }
+      alertsMerged[i] = pick;
     }
+    // A törölt riasztás csak akkor marad, ha a törlés után szerkesztették (a
+    // szerver jelölése nem számít: az a törlésről még nem tudhatott).
+    final alertsDeleted = unionTombstones(local['alerts_deleted'], remote['alerts_deleted']);
+    alertsMerged.removeWhere(
+      (a) => switch ((alertsDeleted['${a['id']}'], at(a['edited']))) {
+        (final gone?, final edited) => edited == null || !edited.isAfter(gone),
+        _ => false,
+      },
+    );
     final cash = mergeCash(local, remote);
     return {
       'v': 1,
@@ -238,11 +272,13 @@ class SyncService extends ChangeNotifier {
       'lots': byId(local['lots'], remote['lots']),
       'dividends': byId(local['dividends'], remote['dividends']),
       'splits': _uniqueSplits(byId(local['splits'], remote['splits'])),
-      'deleted': {for (final e in deleted.entries) e.key: e.value.toUtc().toIso8601String()},
+      'deleted': tombstonesJson(deleted),
       'cash': cash.cash,
       'cash_at': cash.at,
       'alerts': alertsMerged,
+      'alerts_deleted': tombstonesJson(alertsDeleted),
       'notes': mergedNotes,
+      'notes_deleted': tombstonesJson(notesDeleted),
     };
   }
 
@@ -387,16 +423,19 @@ class SyncService extends ChangeNotifier {
       await portfolio.replaceAllSplits([for (final j in _maps(data['splits'])) ?SplitRecord.fromJson(j)]);
     }
     // A törlési jelzések a csomag szerint (régi csomagban nincs: a helyiek maradnak).
-    if (data['deleted'] is Map) await portfolio.replaceAllDeleted(PortfolioStore.parseDeleted(data['deleted']));
+    if (data['deleted'] is Map) await portfolio.replaceAllDeleted(parseTombstones(data['deleted']));
     await alerts.replaceAll([for (final j in _maps(data['alerts'])) ?PriceAlert.fromJson(j)]);
+    if (data['alerts_deleted'] is Map) await alerts.replaceAllDeleted(parseTombstones(data['alerts_deleted']));
     await notes.replaceAll({
       for (final e in (data['notes'] as Map? ?? const {}).entries) '${e.key}': ?StockNote.fromJson(e.value),
     });
+    if (data['notes_deleted'] is Map) await notes.replaceAllDeleted(parseTombstones(data['notes_deleted']));
     return kept;
   }
 
-  Future<void> _push(Map<String, dynamic> data) async {
-    final at = await backend.putSync(data);
+  /// Feltöltés csak akkor, ha a szerveren még a [base] változat van (különben 409).
+  Future<void> _push(Map<String, dynamic> data, {required DateTime? base}) async {
+    final at = await backend.putSync(data, conditional: true, base: base);
     _last = at;
     _syncedEmail = account.email;
     _setDirty(false);
@@ -405,32 +444,22 @@ class SyncService extends ChangeNotifier {
     await prefs.setString(_emailKey, account.email ?? '');
   }
 
-  /// Szinkron most: letöltés, szükség szerint összefésülés, feltöltés.
+  /// Szinkron most: letöltés, szükség szerint összefésülés, feltöltés. Ha a
+  /// letöltés és a feltöltés között más is írt (egy másik eszköz vagy a szerver
+  /// riasztásfigyelője), a szerver elutasítja: újra letöltjük és összefésüljük.
   Future<void> syncNow() async {
     if (!account.isSignedIn || _busy) return;
     _timer?.cancel();
     _busy = true;
     notifyListeners();
     try {
-      final remote = await backend.getSync();
-      final data = remote.data;
-      final firstHere = _syncedEmail != account.email;
-      if (data == null) {
-        await _push(snapshot());
-      } else if (firstHere ||
-          (_dirty && remote.updatedAt != null && _last != null && remote.updatedAt!.isAfter(_last!))) {
-        // Első belépés ezen az eszközön, vagy mindkét oldalon volt változás.
-        final merged = merge(snapshot(), data);
-        await _apply(merged);
-        await _push(merged);
-      } else if (remote.updatedAt != null && (_last == null || remote.updatedAt!.isAfter(_last!))) {
-        final kept = await _apply(data);
-        _last = remote.updatedAt;
-        (await SharedPreferences.getInstance()).setString(_lastKey, _last!.toIso8601String());
-        // Régebbi app számla vagy díj nélkül töltötte vissza a tételeket: a megtartottak visszamennek.
-        if (kept) await _push(snapshot());
-      } else if (_dirty) {
-        await _push(snapshot());
+      for (var attempt = 1; ; attempt++) {
+        try {
+          await _syncOnce();
+          break;
+        } on BackendException catch (e) {
+          if (e.status != 409 || attempt >= 3) rethrow;
+        }
       }
       _failed = false;
     } catch (e) {
@@ -439,6 +468,29 @@ class SyncService extends ChangeNotifier {
     } finally {
       _busy = false;
       notifyListeners();
+    }
+  }
+
+  Future<void> _syncOnce() async {
+    final remote = await backend.getSync();
+    final data = remote.data;
+    final base = remote.updatedAt;
+    final firstHere = _syncedEmail != account.email;
+    if (data == null) {
+      await _push(snapshot(), base: null);
+    } else if (firstHere || (_dirty && base != null && _last != null && base.isAfter(_last!))) {
+      // Első belépés ezen az eszközön, vagy mindkét oldalon volt változás.
+      final merged = merge(snapshot(), data);
+      await _apply(merged);
+      await _push(merged, base: base);
+    } else if (base != null && (_last == null || base.isAfter(_last!))) {
+      final kept = await _apply(data);
+      _last = base;
+      (await SharedPreferences.getInstance()).setString(_lastKey, base.toIso8601String());
+      // Régebbi app számla vagy díj nélkül töltötte vissza a tételeket: a megtartottak visszamennek.
+      if (kept) await _push(snapshot(), base: base);
+    } else if (_dirty) {
+      await _push(snapshot(), base: base);
     }
   }
 }

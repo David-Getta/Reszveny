@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/models/stock_quote.dart';
+import '../../core/util/tombstones.dart';
 
 /// Mikor szóljon a riasztás: az ár egy szint fölé megy, alá esik, a napi
 /// változás (bármelyik irányba) eléri a megadott százalékot, vagy (követő stop)
@@ -30,6 +31,7 @@ class PriceAlert {
     this.triggeredAt,
     this.triggeredPrice,
     this.peak,
+    this.modified,
   });
 
   final String id;
@@ -45,6 +47,10 @@ class PriceAlert {
 
   /// Követő stopnál a riasztás óta látott legmagasabb ár.
   final double? peak;
+
+  /// A felhasználó utolsó módosítása (szerkesztés, újraélesítés, visszaállítás);
+  /// szinkronkor a később módosított változat nyer – egy közben teljesült is.
+  final DateTime? modified;
 
   /// Követő stopnál az a szint, ahol szól (a csúcs alatt [value] százalékkal).
   double? get trailingLevel => kind == AlertKind.trailing && peak != null ? peak! * (1 - value / 100) : null;
@@ -95,11 +101,19 @@ class PriceAlert {
     triggeredAt: at,
     triggeredPrice: price,
     peak: peak,
+    modified: modified,
   );
 
   /// Újraélesítéskor a követő stop csúcsa a következő árnál indul újra.
-  PriceAlert rearmed() =>
-      PriceAlert(id: id, symbol: symbol, kind: kind, value: value, currency: currency, createdAt: createdAt);
+  PriceAlert rearmed() => PriceAlert(
+    id: id,
+    symbol: symbol,
+    kind: kind,
+    value: value,
+    currency: currency,
+    createdAt: createdAt,
+    modified: DateTime.now().toUtc(),
+  );
 
   /// Szerkesztett változat ugyanazzal az azonosítóval (a szinkron így felülírja,
   /// nem duplázza); újra aktív.
@@ -111,6 +125,7 @@ class PriceAlert {
     currency: currency,
     createdAt: createdAt,
     peak: kind == AlertKind.trailing ? peak : null,
+    modified: DateTime.now().toUtc(),
   );
 
   PriceAlert withPeak(double price) => PriceAlert(
@@ -123,6 +138,7 @@ class PriceAlert {
     triggeredAt: triggeredAt,
     triggeredPrice: triggeredPrice,
     peak: price,
+    modified: modified,
   );
 
   Map<String, dynamic> toJson() => {
@@ -135,6 +151,7 @@ class PriceAlert {
     if (triggeredAt != null) 'triggered_at': triggeredAt!.toUtc().toIso8601String(),
     'triggered_price': ?triggeredPrice,
     'peak': ?peak,
+    if (modified != null) 'edited': modified!.toUtc().toIso8601String(),
   };
 
   static PriceAlert? fromJson(Map<String, dynamic> j) {
@@ -154,17 +171,35 @@ class PriceAlert {
       triggeredAt: DateTime.tryParse(j['triggered_at'] as String? ?? ''),
       triggeredPrice: tp is num ? tp.toDouble() : null,
       peak: peak is num && peak > 0 ? peak.toDouble() : null,
+      modified: DateTime.tryParse(j['edited'] as String? ?? ''),
     );
   }
 }
 
 /// A riasztások tárolása a készüléken (SharedPreferences).
 class AlertStore extends ChangeNotifier {
-  AlertStore({List<PriceAlert> alerts = const []}) : _alerts = List.of(alerts);
+  AlertStore({List<PriceAlert> alerts = const [], Map<String, DateTime> deleted = const {}})
+    : _alerts = List.of(alerts),
+      _deleted = Map.of(deleted);
 
   static const _key = 'price_alerts';
+  static const _deletedKey = 'price_alerts_deleted';
 
   final List<PriceAlert> _alerts;
+
+  /// A törölt riasztások azonosítói a törlés idejével (UTC), hogy szinkronkor a
+  /// másik eszköz régi példánya ne támassza fel őket; fél év után elhagyhatók.
+  final Map<String, DateTime> _deleted;
+
+  Map<String, String> get deletedJson => tombstonesJson(_deleted);
+
+  /// A törlési jelzések cseréje (szinkronkor a fiók állapotára).
+  Future<void> replaceAllDeleted(Map<String, DateTime> deleted) async {
+    _deleted
+      ..clear()
+      ..addAll(deleted);
+    await _changed(notify: false);
+  }
 
   /// Legújabb elöl.
   List<PriceAlert> get alerts => List.unmodifiable(_alerts.reversed);
@@ -180,8 +215,13 @@ class AlertStore extends ChangeNotifier {
 
   static Future<AlertStore> load() async {
     try {
-      final raw = (await SharedPreferences.getInstance()).getString(_key);
-      return AlertStore(alerts: raw == null ? const [] : parse(raw));
+      final prefs = await SharedPreferences.getInstance();
+      final raw = prefs.getString(_key);
+      Map<String, DateTime> deleted = const {};
+      try {
+        deleted = parseTombstones(jsonDecode(prefs.getString(_deletedKey) ?? '{}'));
+      } catch (_) {}
+      return AlertStore(alerts: raw == null ? const [] : parse(raw), deleted: deleted);
     } catch (_) {
       return AlertStore();
     }
@@ -229,13 +269,29 @@ class AlertStore extends ChangeNotifier {
   /// Minden riasztás törlése (fióktörléskor, ha a felhasználó ezt is kéri).
   Future<void> clear() async {
     _alerts.clear();
+    _deleted.clear();
     await _changed();
   }
 
-  /// Egy törölt riasztás visszaállítása (visszavonás), változatlanul.
+  /// Egy törölt riasztás visszaállítása (visszavonás); újabbnak jelölve, hogy egy
+  /// már szinkronizált törlés se vigye el.
   Future<void> restore(PriceAlert alert) async {
     if (_alerts.any((a) => a.id == alert.id)) return;
-    _alerts.add(alert);
+    _deleted.remove(alert.id);
+    _alerts.add(
+      PriceAlert(
+        id: alert.id,
+        symbol: alert.symbol,
+        kind: alert.kind,
+        value: alert.value,
+        currency: alert.currency,
+        createdAt: alert.createdAt,
+        triggeredAt: alert.triggeredAt,
+        triggeredPrice: alert.triggeredPrice,
+        peak: alert.peak,
+        modified: DateTime.now().toUtc(),
+      ),
+    );
     await _changed();
   }
 
@@ -244,13 +300,22 @@ class AlertStore extends ChangeNotifier {
     final gone = _alerts.where((a) => !a.isActive).toList();
     if (gone.isEmpty) return gone;
     _alerts.removeWhere((a) => !a.isActive);
+    _tombstone(gone.map((a) => a.id));
     await _changed();
     return gone;
   }
 
   Future<void> remove(String id) async {
     _alerts.removeWhere((a) => a.id == id);
+    _tombstone([id]);
     await _changed();
+  }
+
+  void _tombstone(Iterable<String> ids) {
+    final now = DateTime.now().toUtc();
+    for (final id in ids) {
+      _deleted[id] = now;
+    }
   }
 
   Future<void> markTriggered(String id, DateTime at, double price) => _replace(id, (a) => a.triggered(at, price));
@@ -271,11 +336,14 @@ class AlertStore extends ChangeNotifier {
     await _changed();
   }
 
-  Future<void> _changed() async {
-    notifyListeners();
+  Future<void> _changed({bool notify = true}) async {
+    if (notify) notifyListeners();
     try {
       final prefs = await SharedPreferences.getInstance();
-      await prefs.setString(_key, jsonEncode(_alerts.map((a) => a.toJson()).toList()));
+      await Future.wait([
+        prefs.setString(_key, jsonEncode(_alerts.map((a) => a.toJson()).toList())),
+        prefs.setString(_deletedKey, jsonEncode(deletedJson)),
+      ]);
     } catch (_) {
       // A tárolás hibája nem akadályozza a működést.
     }

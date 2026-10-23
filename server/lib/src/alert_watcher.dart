@@ -64,7 +64,7 @@ class AlertWatcher {
     if (_running) return 0;
     _running = true;
     try {
-      final accounts = <({String userId, String email, Map<String, dynamic> data})>[];
+      final accounts = <({String userId, String email})>[];
       final symbols = <String>{};
       for (final a in store.syncedAccounts()) {
         try {
@@ -72,7 +72,7 @@ class AlertWatcher {
           if (data['email_alerts'] == false) continue;
           final alerts = (data['alerts'] as List?)?.where(_active).toList() ?? const [];
           if (alerts.isEmpty) continue;
-          accounts.add((userId: a.userId, email: a.email, data: data));
+          accounts.add((userId: a.userId, email: a.email));
           for (final al in alerts) {
             symbols.add('${(al as Map)['symbol']}'.toUpperCase());
           }
@@ -90,9 +90,21 @@ class AlertWatcher {
       var sent = 0;
       final now = _clock().toUtc();
       for (final acc in accounts) {
+        // Az árak lekérése alatt egy készülék közben feltölthetett: a jelölés a
+        // friss csomagon fut, és a beolvasás és a mentés között nincs várakozás
+        // (az SQLite-hívások szinkronok), így egy közbeni feltöltés sem vész el.
+        final fresh = store.syncData(acc.userId);
+        if (fresh == null) continue;
+        final Map<String, dynamic> data;
+        try {
+          data = (jsonDecode(fresh.data) as Map).cast<String, dynamic>();
+        } catch (_) {
+          continue;
+        }
+        if (data['email_alerts'] == false) continue;
         final hits = <Map>[];
         var peaks = false;
-        for (final al in (acc.data['alerts'] as List)) {
+        for (final al in (data['alerts'] as List? ?? const [])) {
           if (!_active(al)) continue;
           final q = quotes['${(al as Map)['symbol']}'.toUpperCase()];
           if (q == null) continue;
@@ -103,14 +115,11 @@ class AlertWatcher {
           al['triggered_change'] = q.changePercent;
           hits.add(al);
         }
-        if (hits.isEmpty) {
-          // Csak új csúcs: elmentjük, e-mail nélkül.
-          if (peaks) store.saveSyncData(acc.userId, jsonEncode(acc.data));
-          continue;
-        }
-        store.saveSyncData(acc.userId, jsonEncode(acc.data));
+        // Csak új csúcs: elmentjük, e-mail nélkül.
+        if (hits.isNotEmpty || peaks) store.saveSyncData(acc.userId, jsonEncode(data));
+        if (hits.isEmpty) continue;
         try {
-          final (subject, text) = alertEmail(hits, hu: acc.data['lang'] == 'hu');
+          final (subject, text) = alertEmail(hits, hu: data['lang'] == 'hu');
           await mailer.send(acc.email, subject: subject, text: text);
           sent++;
         } catch (e) {

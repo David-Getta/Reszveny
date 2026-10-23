@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/tombstones.dart';
+
 /// Egy részvényhez írt saját jegyzet (befektetési napló).
 class StockNote {
   const StockNote({required this.text, required this.updatedAt});
@@ -24,9 +26,26 @@ class StockNote {
 /// eladási ok. A készüléken tárolódik (belépett fióknál szinkronizálva); az
 /// AI-elemzés is megkapja.
 class NotesStore extends ChangeNotifier {
-  NotesStore([Map<String, StockNote>? notes]) : _notes = {...?notes};
+  NotesStore([Map<String, StockNote>? notes, Map<String, DateTime>? deleted])
+    : _notes = {...?notes},
+      _deleted = {...?deleted};
 
   static const _key = 'stock_notes';
+  static const _deletedKey = 'stock_notes_deleted';
+
+  /// A törölt jegyzetek tickerei a törlés idejével (UTC): szinkronkor a másik
+  /// eszköz régebbi jegyzete nem támad fel.
+  final Map<String, DateTime> _deleted;
+
+  Map<String, String> get deletedJson => tombstonesJson(_deleted);
+
+  /// A törlési jelzések cseréje (szinkronkor a fiók állapotára).
+  Future<void> replaceAllDeleted(Map<String, DateTime> deleted) async {
+    _deleted
+      ..clear()
+      ..addAll(deleted);
+    await _save();
+  }
 
   /// Egy jegyzet legfeljebb ennyi karakter.
   /// Elég egy-két mentett AI-jegyzetnek is a saját sorok mellett.
@@ -36,10 +55,15 @@ class NotesStore extends ChangeNotifier {
 
   static Future<NotesStore> load() async {
     try {
-      final raw = (await SharedPreferences.getInstance()).getString(_key);
-      if (raw == null) return NotesStore();
+      final prefs = await SharedPreferences.getInstance();
+      Map<String, DateTime> deleted = const {};
+      try {
+        deleted = parseTombstones(jsonDecode(prefs.getString(_deletedKey) ?? '{}'));
+      } catch (_) {}
+      final raw = prefs.getString(_key);
+      if (raw == null) return NotesStore(null, deleted);
       final j = jsonDecode(raw) as Map;
-      return NotesStore({for (final e in j.entries) '${e.key}': ?StockNote.fromJson(e.value)});
+      return NotesStore({for (final e in j.entries) '${e.key}': ?StockNote.fromJson(e.value)}, deleted);
     } catch (_) {
       return NotesStore();
     }
@@ -59,9 +83,11 @@ class NotesStore extends ChangeNotifier {
     final t = text.length > maxLength ? text.substring(0, maxLength) : text;
     if (t.trim().isEmpty) {
       if (_notes.remove(s) == null) return;
+      _deleted[s] = DateTime.now().toUtc();
     } else {
       if (_notes[s]?.text == t) return;
       _notes[s] = StockNote(text: t, updatedAt: DateTime.now());
+      _deleted.remove(s);
     }
     notifyListeners();
     await _save();
@@ -80,6 +106,7 @@ class NotesStore extends ChangeNotifier {
 
   Future<void> clear() async {
     _notes.clear();
+    _deleted.clear();
     notifyListeners();
     await _save();
   }
@@ -87,7 +114,10 @@ class NotesStore extends ChangeNotifier {
   Future<void> _save() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-      await prefs.setString(_key, jsonEncode({for (final e in _notes.entries) e.key: e.value.toJson()}));
+      await Future.wait([
+        prefs.setString(_key, jsonEncode({for (final e in _notes.entries) e.key: e.value.toJson()})),
+        prefs.setString(_deletedKey, jsonEncode(deletedJson)),
+      ]);
     } catch (_) {
       // A tárolás hibája nem akadályozza a működést.
     }

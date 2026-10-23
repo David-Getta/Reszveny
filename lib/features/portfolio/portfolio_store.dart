@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/tombstones.dart';
+
 /// Egy tranzakció: vétel (vagy [sell] esetén eladás) – hány darab, milyen
 /// áron (a részvény saját pénznemében), mikor.
 class PortfolioLot {
@@ -510,24 +512,10 @@ class PortfolioStore extends ChangeNotifier {
 
   /// A törölt tranzakciók, osztalékok és felaprózások azonosítói a törlés idejével
   /// (UTC): szinkronkor a másik eszköz régi példánya nem támasztja fel őket.
-  /// [tombstoneDays] napnál régebbi jelzés elhagyható.
   final Map<String, DateTime> _deleted;
-  static const tombstoneDays = 180;
 
-  /// A törlési jelzések a szinkronhoz és a mentéshez (a régiek nélkül).
-  Map<String, String> get deletedJson {
-    final cutoff = DateTime.now().toUtc().subtract(const Duration(days: tombstoneDays));
-    return {
-      for (final e in _deleted.entries)
-        if (e.value.isAfter(cutoff)) e.key: e.value.toUtc().toIso8601String(),
-    };
-  }
-
-  /// Törlési jelzések beolvasása (a hibás bejegyzés kimarad).
-  static Map<String, DateTime> parseDeleted(Object? j) => {
-    if (j is Map)
-      for (final e in j.entries) '${e.key}': ?DateTime.tryParse('${e.value}'),
-  };
+  /// A törlési jelzések a szinkronhoz és a mentéshez (a lejártak nélkül).
+  Map<String, String> get deletedJson => tombstonesJson(_deleted);
 
   void _tombstone(Iterable<String> ids) {
     final now = DateTime.now().toUtc();
@@ -672,7 +660,7 @@ class PortfolioStore extends ChangeNotifier {
       Map<String, DateTime> deleted = const {};
       try {
         final raw = prefs.getString(_deletedKey);
-        if (raw != null) deleted = parseDeleted(jsonDecode(raw));
+        if (raw != null) deleted = parseTombstones(jsonDecode(raw));
       } catch (_) {
         // Sérült törlési jelzések: üres (legfeljebb egy régi tétel támadhat fel).
       }
