@@ -302,7 +302,8 @@ class _AnalysisCardState extends State<AnalysisCard> {
 }
 
 /// Árfolyam-riasztás az elemzés egyik kulcsszintjéből: a mostani ár fölötti
-/// szintnél „fölé megy”, az alattinál „alá esik”, az értékkel előre kitöltve.
+/// szintnél „fölé megy”, az alattinál „alá esik”, az értékkel előre kitöltve. A
+/// mostani ár a friss árfolyam (az elemzés napokkal korábbi ára csak tartalék).
 Future<void> alertFromKeyLevel(
   BuildContext context, {
   required String symbol,
@@ -311,7 +312,14 @@ Future<void> alertFromKeyLevel(
 }) async {
   final l10n = AppLocalizations.of(context);
   final messenger = ScaffoldMessenger.of(context);
-  final cur = outlook.currentPrice;
+  final marketData = AppServices.of(context).marketData;
+  double? cur;
+  try {
+    cur = (await marketData.quote(symbol)).price;
+  } catch (_) {
+    cur = outlook.currentPrice;
+  }
+  if (!context.mounted) return;
   final above = cur == null ? level.kind != KeyLevelKind.support : level.price >= cur;
   final created = await showAlertDialog(
     context,

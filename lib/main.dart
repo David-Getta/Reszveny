@@ -61,13 +61,13 @@ Future<void> main() async {
   runApp(WhatStockApp(services: services));
   telemetry.track('app_open');
   // Belépett fióknál a portfólió, a kedvencek, a riasztások és a jegyzetek szinkronja.
-  services.sync?.start();
+  final firstSync = services.sync?.start();
   // Frissítés-ellenőrzés a háttérben, az első képkocka után.
   services.updates.initialize(autoInstall: preferences.autoUpdate);
   // Backend-módban a szerver szerinti csomag és keret átvétele.
   services.syncEntitlements();
   // Árfolyam-riasztások figyelése (5 percenként, amíg az app fut).
-  services.alertMonitor.start();
+  services.alertMonitor.start(after: firstSync);
   // Gyorsjelentés előtti napon értesítés (asztali gépen).
   if (SystemNotifier.isSupported) {
     services.earningsReminder.start();

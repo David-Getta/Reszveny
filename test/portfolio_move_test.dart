@@ -59,6 +59,43 @@ void main() {
     },
   );
 
+  test('the move of a trading day is notified once: not again the next morning, but the next day’s move is', () async {
+    final p = store();
+    final prefs = AppPreferences(portfolioMoveAlert: 3);
+    final notifier = FakeNotifier();
+    var now = DateTime(2026, 10, 15, 16); // csütörtök
+    var change = {'AAPL': -4.0, 'NVDA': -3.0};
+    var session = DateTime.utc(2026, 10, 15, 14);
+    final w = PortfolioMoveWatcher(
+      portfolio: p,
+      preferences: prefs,
+      notifier: notifier,
+      snapshot: () async => PortfolioSnapshot.compute(
+        p.positions,
+        quotes: {
+          for (final e in change.entries)
+            e.key: StockQuote(symbol: e.key, price: 100 + e.value, change: e.value, timestamp: session),
+        },
+        rate: (_, _) => 1,
+        currency: 'USD',
+      ),
+      describe: (s) => (title: 'move ${s.dayGainPercent!.toStringAsFixed(1)}', body: ''),
+      clock: () => now,
+    );
+    expect(await w.check(), isTrue);
+    // A zárás: −4,5%; péntek hajnalban még a csütörtöki árak látszanak – nem szól újra.
+    change = {'AAPL': -5.0, 'NVDA': -4.0};
+    session = DateTime.utc(2026, 10, 15, 20);
+    now = DateTime(2026, 10, 16, 0, 20);
+    expect(await w.check(), isFalse);
+    // Péntek délután az aznapi mozgás (−3,8%) már új kereskedési nap: szól.
+    change = {'AAPL': -4.0, 'NVDA': -3.6};
+    session = DateTime.utc(2026, 10, 16, 14);
+    now = DateTime(2026, 10, 16, 16);
+    expect(await w.check(), isTrue);
+    expect(notifier.sent.map((n) => n.title), ['move -3.5', 'move -3.8']);
+  });
+
   test('notifies once a day above the threshold, not on weekends, not twice for the same move', () async {
     final p = store();
     final prefs = AppPreferences(portfolioMoveAlert: 3);

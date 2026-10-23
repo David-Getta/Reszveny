@@ -79,9 +79,14 @@ class PriceAlert {
   bool isHit(StockQuote q) => switch (kind) {
     AlertKind.above => q.price >= value,
     AlertKind.below => q.price <= value,
-    AlertKind.move => (q.changePercent ?? 0).abs() >= value,
+    // A napi mozgás csak az élesítés utáni kereskedésből: hétvégén, ünnepnapon és
+    // nyitás előtt még az előző nap mozgása látszik, az nem szól.
+    AlertKind.move => (q.changePercent ?? 0).abs() >= value && (q.timestamp?.isAfter(armedAt) ?? true),
     AlertKind.trailing => trailingLevel != null && q.price <= trailingLevel!,
   };
+
+  /// Mikor élesítették utoljára (létrehozás, szerkesztés vagy újraélesítés).
+  DateTime get armedAt => modified ?? createdAt;
 
   /// Már a létrehozáskor teljesülne-e (pl. „240 fölé” a 250-es árnál);
   /// az ilyen riasztás értelmetlen, a felület nem engedi.

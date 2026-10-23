@@ -63,7 +63,12 @@ class PortfolioSnapshot {
     this.cash = 0,
     this.cashByCurrency = const {},
     this.beta,
+    this.quoteTime,
   });
+
+  /// A legfrissebb ár ideje (UTC): ennek a kereskedési napnak a mozgása a [dayGain]
+  /// (hétvégén, ünnepnapon és nyitás előtt még az előző napé).
+  final DateTime? quoteTime;
 
   /// A részvények értékkel súlyozott bétája (a bétával rendelkező pozíciókból):
   /// nagyjából hány százalékot mozdul a portfólió részvényrésze, ha a piac 1%-ot.
@@ -169,8 +174,10 @@ class PortfolioSnapshot {
       addRealized(p, r);
       closedRows.add((position: p, realized: r == null ? null : p.realizedGain * r));
     }
+    DateTime? latest;
     for (final p in positions) {
       final q = quotes[p.symbol];
+      if (q?.timestamp case final t? when latest == null || t.isAfter(latest)) latest = t;
       final r = rateOf(p.currency);
       addRealized(p, r);
       final row = PositionValue(
@@ -229,6 +236,7 @@ class PortfolioSnapshot {
       cash: cashValue,
       cashByCurrency: cashByCurrency,
       beta: betaBase > 0 && betaBase >= value * minBetaCoverage ? betaSum / betaBase : null,
+      quoteTime: latest,
     );
   }
 

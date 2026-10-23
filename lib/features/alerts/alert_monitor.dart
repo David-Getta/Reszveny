@@ -64,10 +64,17 @@ class AlertMonitor extends ChangeNotifier {
     return true;
   }
 
-  /// Rendszeres ellenőrzés indítása (az első rögtön lefut).
-  void start() {
+  /// Rendszeres ellenőrzés indítása. Az első rögtön lefut – vagy ha [after] meg van
+  /// adva (az első szinkron), utána (legfeljebb 20 mp várakozással): a szerver által
+  /// közben már jelzett (e-mailben elküldött) riasztás így nem szól újra az asztalon.
+  void start({Future<void>? after}) {
     _timer ??= Timer.periodic(interval, (_) => check());
-    check();
+    unawaited(() async {
+      try {
+        await after?.timeout(const Duration(seconds: 20));
+      } catch (_) {}
+      await check();
+    }());
   }
 
   /// Ellenőrzés most. Egy részvény árának hibája nem állítja meg a többit.
@@ -88,9 +95,15 @@ class AlertMonitor extends ChangeNotifier {
           debugPrint('Riasztás: ${e.key} ára nem érhető el: $err');
           continue;
         }
+        // Az ár lekérése alatt a riasztás változhatott (szerkesztés, törlés, szinkron):
+        // csak a változatlan, még aktív példány számít.
+        bool unchanged(PriceAlert a) => switch (store.active.where((x) => x.id == a.id).firstOrNull) {
+          final now? => now.modified == a.modified && now.kind == a.kind && now.value == a.value,
+          null => false,
+        };
         // Követő stop: előbb a csúcs frissül (a riasztás óta látott legmagasabb ár).
         final checked = <PriceAlert>[];
-        for (final a in e.value) {
+        for (final a in e.value.where(unchanged)) {
           if (a.kind == AlertKind.trailing && (a.peak == null || q.price > a.peak!)) {
             await store.raisePeak(a.id, q.price);
             checked.add(a.withPeak(q.price));
@@ -99,6 +112,7 @@ class AlertMonitor extends ChangeNotifier {
           }
         }
         for (final a in checked.where((a) => a.isHit(q))) {
+          if (!unchanged(a)) continue;
           await store.markTriggered(a.id, _clock(), q.price);
           hits.add(AlertHit(alert: a, quote: q));
         }

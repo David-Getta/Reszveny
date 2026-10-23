@@ -26,9 +26,12 @@ class _Market extends DemoMarketDataProvider {
   /// A jelentés után megjelenő eredmény (tesztben kézzel állítható).
   final results = <String, EarningsSurprise>{};
 
+  /// A korábbi negyedévek (a Finnhub előzménye: a legújabb elöl).
+  final older = <String, List<EarningsSurprise>>{};
+
   @override
   Future<EarningsOverview> earnings(String symbol) async =>
-      EarningsOverview(history: [?results[symbol]], next: await nextEarnings(symbol));
+      EarningsOverview(history: [?results[symbol], ...?older[symbol]], next: await nextEarnings(symbol));
 }
 
 void main() {
@@ -99,6 +102,33 @@ void main() {
     expect(notifier.sent.last.title, 'AAPL beat');
     expect(await reminder(market, notifier, prefs, clock: () => later).check(), isEmpty);
   });
+
+  test(
+    'the result is a newer quarter than the one known at the reminder (a bank reports two weeks after it)',
+    () async {
+      final report = today.add(const Duration(days: 1));
+      final market = _Market({'JPM': report});
+      // Az előző negyedév vége 106 nappal a jelentés előtt: belefér a 120 napos ablakba.
+      market.older['JPM'] = [
+        EarningsSurprise(period: report.subtract(const Duration(days: 106)), actual: 4.4, estimate: 4.1),
+      ];
+      final notifier = FakeNotifier();
+      final prefs = AppPreferences(favorites: const ['JPM']);
+      await reminder(market, notifier, prefs).check();
+      expect(notifier.sent.single.title, 'JPM tomorrow');
+      // A jelentés napján még csak az előző negyedév van meg: csend.
+      expect(await reminder(market, notifier, prefs, clock: () => report).check(), isEmpty);
+      // Megjelent az új negyedév: arról szól.
+      market.results['JPM'] = EarningsSurprise(
+        period: report.subtract(const Duration(days: 14)),
+        actual: 5.1,
+        estimate: 4.9,
+      );
+      final later = report.add(const Duration(days: 1));
+      expect(await reminder(market, notifier, prefs, clock: () => later).check(), hasLength(1));
+      expect(notifier.sent.last.body, '5.1');
+    },
+  );
 
   test('off in Settings, or nothing watched: no notification', () async {
     final market = _Market({'AAPL': today.add(const Duration(days: 1))});

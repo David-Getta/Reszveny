@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.258)
+# Változásjegyzék (0.2.130 → 0.2.259)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,20 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Riasztások és értesítések: egy hetedik kódátnézés javításai
+
+- **0.2.259**: a gyorsjelentés-eredmény értesítése csak az emlékeztetéskor ismertnél újabb negyedévről szól (egy
+  bank két héttel a negyedév vége után jelent – eddig a jelentés napján az előző negyedévet küldte „újként”, és a
+  valódit már nem); a portfólió-mozgás riasztás egy kereskedési napról egyszer szól (másnap hajnalban nem ismétli
+  a tegnapit, és a valódi mai mozgás nem vész el); a napi mozgás riasztás csak az élesítés utáni kötésre szól
+  (hétvégén létrehozva nem süt el a pénteki mozgásra – az appban és a szerver e-mailjében sem); a szerver
+  riasztásfigyelője 200 ticker fölött körbeforog, és szünetet tart a lekérések között; az e-mailes riasztás és a
+  heti összefoglaló kapcsolójánál a később állított nyer (egy másik eszköz nem kapcsolja vissza); az ár betöltése
+  alatt szerkesztett riasztást az új beállítás szerint ítéli meg; induláskor az első ellenőrzés az első szinkron
+  után fut (a szerver által már elküldött riasztás nem szól újra); a követő stop szerkesztésekor a csúcs megmarad;
+  a kulcsszintből készült riasztás a friss árral dönt fölé/alá; a napi mozgás riasztás árszintre váltva megkapja
+  a részvény pénznemét.
 
 ## Webes változat
 

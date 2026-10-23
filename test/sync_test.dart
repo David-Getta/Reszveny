@@ -77,6 +77,34 @@ class _Device {
 }
 
 void main() {
+  test('the e-mail switches: the later change wins; without times the local one, as before', () {
+    final older = DateTime.utc(2026, 10, 1).toIso8601String(), newer = DateTime.utc(2026, 10, 20).toIso8601String();
+    // Az egyik eszközön kikapcsolta; a másikon helyi változás miatt összefésül – nem kapcsolja vissza.
+    final off = SyncService.merge(
+      {'email_alerts': true, 'switches_at': {}},
+      {
+        'email_alerts': false,
+        'switches_at': {'email_alerts': newer},
+      },
+    );
+    expect((off['email_alerts'], (off['switches_at'] as Map)['email_alerts']), (false, newer));
+    final on = SyncService.merge(
+      {
+        'email_alerts': true,
+        'weekly_digest': true,
+        'switches_at': {'email_alerts': newer, 'weekly_digest': older},
+      },
+      {
+        'email_alerts': false,
+        'weekly_digest': false,
+        'switches_at': {'email_alerts': older, 'weekly_digest': newer},
+      },
+    );
+    expect((on['email_alerts'], on['weekly_digest']), (true, false));
+    final legacy = SyncService.merge({'email_alerts': true}, {'email_alerts': false});
+    expect(legacy['email_alerts'], true);
+  });
+
   test('two devices of one account end up with the same data; nothing is lost on conflicts', () async {
     final server = _Server();
 

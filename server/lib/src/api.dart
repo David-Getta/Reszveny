@@ -778,7 +778,7 @@ class Api {
   /// A szinkronizált riasztások figyelője (a Finnhub `/quote` árával).
   late final AlertWatcher alertWatcher = AlertWatcher(store: store, mailer: mailer, quote: _finnhubQuote);
 
-  Future<({double price, double? changePercent})?> _finnhubQuote(String symbol) async {
+  Future<Quote?> _finnhubQuote(String symbol) async {
     final res = await _client
         .get(
           Uri.parse('$finnhubBaseUrl/quote').replace(queryParameters: {'symbol': symbol}),
@@ -789,8 +789,13 @@ class Api {
     final j = jsonDecode(res.body);
     final c = j is Map ? j['c'] : null;
     final dp = j is Map ? j['dp'] : null;
+    final t = j is Map ? j['t'] : null;
     if (c is! num || c <= 0) return null;
-    return (price: c.toDouble(), changePercent: dp is num ? dp.toDouble() : null);
+    return (
+      price: c.toDouble(),
+      changePercent: dp is num ? dp.toDouble() : null,
+      time: t is num && t > 0 ? DateTime.fromMillisecondsSinceEpoch((t * 1000).round(), isUtc: true) : null,
+    );
   }
 
   /// A heti összefoglaló küldője. Twelve Data kulccsal a heti változást is

@@ -5,24 +5,38 @@ import 'dart:io';
 import 'db.dart';
 import 'mailer.dart';
 
-/// Egy részvény aktuális ára és napi változása (%).
-typedef QuoteLookup = Future<({double price, double? changePercent})?> Function(String symbol);
+/// Egy részvény aktuális ára, napi változása (%) és az utolsó kötés ideje.
+typedef Quote = ({double price, double? changePercent, DateTime? time});
+typedef QuoteLookup = Future<Quote?> Function(String symbol);
 
 /// Árfolyam-riasztások figyelése a szerveren, az e-mailes fiókok szinkronizált
 /// riasztásai alapján: ha egy teljesül, megjelöljük (a készülékek a következő
 /// szinkronnál átveszik), és e-mailt küldünk – akkor is, ha az app nincs nyitva.
 /// A felhasználó az appban kikapcsolhatja (`email_alerts: false`).
 class AlertWatcher {
-  AlertWatcher({required this.store, required this.mailer, required this.quote, DateTime Function()? clock})
-    : _clock = clock ?? DateTime.now;
+  AlertWatcher({
+    required this.store,
+    required this.mailer,
+    required this.quote,
+    this.quotePause = const Duration(seconds: 1),
+    DateTime Function()? clock,
+  }) : _clock = clock ?? DateTime.now;
 
   final Store store;
   final Mailer mailer;
   final QuoteLookup quote;
   final DateTime Function() _clock;
 
-  /// Egy körben legfeljebb ennyi részvény árát kérdezzük le (a piaci API kerete miatt).
+  /// Egy körben legfeljebb ennyi részvény árát kérdezzük le (a piaci API kerete miatt);
+  /// ha több van, a következő kör a folytatással kezd (körbeforogva mind sorra kerül).
   static const maxSymbolsPerRound = 200;
+
+  /// Szünet két árlekérés között: a piaci API percenkénti keretét (60/perc) a
+  /// riasztásfigyelő egymaga ne merítse ki.
+  final Duration quotePause;
+
+  /// Hol tart a körbeforgás (a rendezett tickerlistában).
+  int _cursor = 0;
 
   Timer? _timer;
   bool _running = false;
@@ -34,13 +48,17 @@ class AlertWatcher {
 
   void stop() => _timer?.cancel();
 
-  static bool _hit(Map a, double price, double? changePercent) {
+  static bool _hit(Map a, Quote q) {
     final v = a['value'];
     if (v is! num) return false;
+    final price = q.price;
+    // A napi mozgás csak az élesítés (létrehozás, szerkesztés) utáni kötésből: hétvégén
+    // és nyitás előtt még az előző nap mozgása látszik.
+    final armed = DateTime.tryParse('${a['edited'] ?? a['created_at'] ?? ''}');
     return switch (a['kind']) {
       'above' => price >= v,
       'below' => price <= v,
-      'move' => (changePercent ?? 0).abs() >= v,
+      'move' => (q.changePercent ?? 0).abs() >= v && (q.time == null || armed == null || q.time!.isAfter(armed)),
       // Követő stop: a csúcsot a hívó előbb frissíti ([_raisePeak]).
       'trailing' => a['peak'] is num && price <= (a['peak'] as num) * (1 - v / 100),
       _ => false,
@@ -80,8 +98,14 @@ class AlertWatcher {
           // Sérült csomag: kihagyjuk.
         }
       }
-      final quotes = <String, ({double price, double? changePercent})>{};
-      for (final s in symbols.take(maxSymbolsPerRound)) {
+      final quotes = <String, Quote>{};
+      final all = symbols.toList()..sort();
+      final batch = all.length <= maxSymbolsPerRound
+          ? all
+          : [for (var i = 0; i < maxSymbolsPerRound; i++) all[(_cursor + i) % all.length]];
+      if (all.length > maxSymbolsPerRound) _cursor = (_cursor + maxSymbolsPerRound) % all.length;
+      for (final (i, s) in batch.indexed) {
+        if (i > 0 && quotePause > Duration.zero) await Future<void>.delayed(quotePause);
         try {
           final q = await quote(s);
           if (q != null && q.price > 0) quotes[s] = q;
@@ -109,7 +133,7 @@ class AlertWatcher {
           final q = quotes['${(al as Map)['symbol']}'.toUpperCase()];
           if (q == null) continue;
           if (_raisePeak(al, q.price)) peaks = true;
-          if (!_hit(al, q.price, q.changePercent)) continue;
+          if (!_hit(al, q)) continue;
           al['triggered_at'] = now.toIso8601String();
           al['triggered_price'] = q.price;
           al['triggered_change'] = q.changePercent;

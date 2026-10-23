@@ -144,6 +144,7 @@ class SyncService extends ChangeNotifier {
     'lang': ?language,
     'email_alerts': preferences.emailAlerts,
     'weekly_digest': preferences.weeklyDigest,
+    'switches_at': preferences.switchesAtJson,
     'favorites': preferences.favorites,
     'lists_removed': preferences.listsRemovedJson,
     'lists_added': preferences.listsAddedJson,
@@ -280,14 +281,26 @@ class SyncService extends ChangeNotifier {
       for (final e in [...lots, ...dividends, ...splits]) '${e['id']}',
     };
     deleted.removeWhere((id, _) => kept.contains(id));
+    // A kapcsolók (e-mailes riasztás, heti összefoglaló): a később állított nyer; idő
+    // nélkül (régi app, vagy sosem állították) a helyi, mint eddig.
+    final localAt = parseTombstones(local['switches_at']), remoteAt = parseTombstones(remote['switches_at']);
+    final switchesAt = unionTombstones(local['switches_at'], remote['switches_at']);
+    Object switchOf(String key, bool fallback) {
+      final l = localAt[key], r = remoteAt[key];
+      final first = r != null && (l == null || r.isAfter(l)) ? remote : local;
+      final second = identical(first, local) ? remote : local;
+      return first[key] ?? second[key] ?? fallback;
+    }
+
     final keptAlerts = {for (final a in alertsMerged) '${a['id']}'};
     alertsDeleted.removeWhere((id, _) => keptAlerts.contains(id));
     notesDeleted.removeWhere((symbol, _) => mergedNotes.containsKey(symbol));
     return {
       'v': 1,
       'lang': ?(local['lang'] ?? remote['lang']),
-      'email_alerts': local['email_alerts'] ?? remote['email_alerts'] ?? true,
-      'weekly_digest': local['weekly_digest'] ?? remote['weekly_digest'] ?? false,
+      'email_alerts': switchOf('email_alerts', true),
+      'weekly_digest': switchOf('weekly_digest', false),
+      'switches_at': {for (final e in switchesAt.entries) e.key: e.value.toUtc().toIso8601String()},
       'favorites': favorites,
       'favorites_removed': tombstonesJson(favRemoved),
       'favorites_added': {for (final e in favAdded.entries) e.key: e.value.toUtc().toIso8601String()},
@@ -478,8 +491,11 @@ class SyncService extends ChangeNotifier {
         at: data['cash_at'] is Map ? PortfolioStore.parseCashAt(data['cash_at']) : null,
       );
     }
-    await preferences.setEmailAlerts(data['email_alerts'] != false);
-    await preferences.setWeeklyDigest(data['weekly_digest'] == true);
+    await preferences.applySwitches(
+      emailAlerts: data['email_alerts'] != false,
+      weeklyDigest: data['weekly_digest'] == true,
+      at: parseTombstones(data['switches_at']),
+    );
     // A számlát és a díjat nem ismerő (régebbi) app a tételt a mezők nélkül tölti
     // vissza: azonos tételnél ilyenkor a helyi számla és díj marad. Ha a mező ott
     // van (üresen is), az a javított érték – az nyer.

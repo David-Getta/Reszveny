@@ -47,7 +47,9 @@ class AppPreferences extends ChangeNotifier {
     Map<String, DateTime> favoritesAdded = const {},
     Map<String, DateTime> listsRemoved = const {},
     Map<String, DateTime> listsAdded = const {},
+    Map<String, DateTime> switchesAt = const {},
   }) : _favoriteSince = Map.of(favoriteSince),
+       _switchesAt = Map.of(switchesAt),
        _listsRemoved = Map.of(listsRemoved),
        _listsAdded = Map.of(listsAdded),
        _favoritesRemoved = Map.of(favoritesRemoved),
@@ -208,6 +210,10 @@ class AppPreferences extends ChangeNotifier {
   static const _telemetryKey = 'telemetry_consent';
   static const _emailAlertsKey = 'email_alerts';
   static const _weeklyDigestKey = 'weekly_digest';
+
+  /// A szinkronizált kapcsolók (e-mailes riasztás, heti összefoglaló) utolsó
+  /// állításának ideje: az összefésülésnél a később állított nyer.
+  static const _switchesAtKey = 'switches_at';
   static const _earningsRemindersKey = 'earnings_reminders';
   static const _dividendRemindersKey = 'dividend_reminders';
   static const _signalAlertsKey = 'signal_alerts';
@@ -293,6 +299,13 @@ class AppPreferences extends ChangeNotifier {
 
   /// Belépve hétfőnként e-mailes összefoglaló a kedvencekről és a portfólióról.
   bool weeklyDigest;
+
+  final Map<String, DateTime> _switchesAt;
+
+  /// A kapcsolók állításának ideje a szinkron-csomagba (UTC).
+  Map<String, String> get switchesAtJson => {
+    for (final e in _switchesAt.entries) e.key: e.value.toUtc().toIso8601String(),
+  };
 
   /// Asztali értesítés a figyelt részvények gyorsjelentése előtti napon.
   bool earningsReminders;
@@ -595,6 +608,7 @@ class AppPreferences extends ChangeNotifier {
         telemetryConsent: prefs.getBool(_telemetryKey),
         emailAlerts: prefs.getBool(_emailAlertsKey) ?? true,
         weeklyDigest: prefs.getBool(_weeklyDigestKey) ?? false,
+        switchesAt: _parseMarks(prefs.getString(_switchesAtKey)),
         earningsReminders: prefs.getBool(_earningsRemindersKey) ?? true,
         dividendReminders: prefs.getBool(_dividendRemindersKey) ?? true,
         signalAlerts: prefs.getBool(_signalAlertsKey) ?? true,
@@ -650,15 +664,36 @@ class AppPreferences extends ChangeNotifier {
   Future<void> setEmailAlerts(bool enabled) async {
     if (emailAlerts == enabled) return;
     emailAlerts = enabled;
-    notifyListeners();
-    await _save((p) => p.setBool(_emailAlertsKey, enabled));
+    _switchesAt[_emailAlertsKey] = DateTime.now().toUtc();
+    await _saveSwitches();
   }
 
   Future<void> setWeeklyDigest(bool enabled) async {
     if (weeklyDigest == enabled) return;
     weeklyDigest = enabled;
+    _switchesAt[_weeklyDigestKey] = DateTime.now().toUtc();
+    await _saveSwitches();
+  }
+
+  /// A szinkronból: a kapcsolók értéke és állításuk ideje (a régi csomagban idő nélkül).
+  Future<void> applySwitches({
+    required bool emailAlerts,
+    required bool weeklyDigest,
+    Map<String, DateTime> at = const {},
+  }) async {
+    this.emailAlerts = emailAlerts;
+    this.weeklyDigest = weeklyDigest;
+    _switchesAt.addAll(at);
+    await _saveSwitches();
+  }
+
+  Future<void> _saveSwitches() async {
     notifyListeners();
-    await _save((p) => p.setBool(_weeklyDigestKey, enabled));
+    await _save((p) async {
+      await p.setBool(_emailAlertsKey, emailAlerts);
+      await p.setBool(_weeklyDigestKey, weeklyDigest);
+      await p.setString(_switchesAtKey, jsonEncode(switchesAtJson));
+    });
   }
 
   /// Új saját lista; `false`, ha a név üres, foglalt vagy elérte a [maxLists]-et.

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -12,6 +14,20 @@ import 'package:reszveny/features/sync/sync_service.dart';
 import 'app_widget_test.dart' show FakeNotifier, services;
 
 /// Kézzel állítható ár (követő stop teszteléséhez).
+/// Az árat csak kérésre adja vissza: a lekérés alatt a riasztás szerkeszthető.
+class _Gated extends DemoMarketDataProvider {
+  _Gated() : super(latency: Duration.zero);
+
+  final gate = Completer<void>();
+  double price = 231;
+
+  @override
+  Future<StockQuote> quote(String symbol) async {
+    await gate.future;
+    return StockQuote(symbol: symbol, price: price, changePercent: 0);
+  }
+}
+
 class _Moving extends DemoMarketDataProvider {
   _Moving() : super(latency: Duration.zero);
 
@@ -254,6 +270,87 @@ void main() {
     expect(s.alerts.alerts.single.id, a.id);
     expect(s.alerts.alerts.single.value, 320);
     expect(s.alerts.alerts.single.isActive, isTrue);
+  });
+
+  test('an alert edited while its price loads is judged by the new setting, not marked with the old one', () async {
+    final store = AlertStore();
+    final a = await store.add(symbol: 'AAPL', kind: AlertKind.above, value: 230, currency: 'USD');
+    final market = _Gated();
+    final notifier = FakeNotifier();
+    final monitor = AlertMonitor(
+      store: store,
+      marketData: market,
+      notifier: notifier,
+      describe: (h) => (title: '${h.alert.value}', body: ''),
+    );
+    final check = monitor.check();
+    await store.edit(a.id, kind: AlertKind.above, value: 300, currency: 'USD');
+    market.gate.complete();
+    expect(await check, isEmpty);
+    expect(notifier.sent, isEmpty);
+    expect((store.alerts.single.value, store.alerts.single.isActive), (300.0, true));
+  });
+
+  test('a daily move from before the alert was set does not fire; a trade after it does', () {
+    final armed = DateTime.utc(2026, 10, 17, 10); // szombat
+    final a = PriceAlert(id: 'm', symbol: 'NVDA', kind: AlertKind.move, value: 5, createdAt: armed);
+    final friday = StockQuote(
+      symbol: 'NVDA',
+      price: 190,
+      changePercent: -6.2,
+      timestamp: DateTime.utc(2026, 10, 16, 20),
+    );
+    final monday = StockQuote(
+      symbol: 'NVDA',
+      price: 178,
+      changePercent: -6.3,
+      timestamp: DateTime.utc(2026, 10, 19, 14),
+    );
+    expect(a.isHit(friday), isFalse);
+    expect(a.isHit(monday), isTrue);
+    // Újraélesítés után az új időponttól számít.
+    expect(a.rearmed().armedAt.isAfter(armed), isTrue);
+  });
+
+  testWidgets('editing a trailing stop keeps its peak: tightening it brings the level closer', (tester) async {
+    tester.view.physicalSize = const Size(1200, 1600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    final a = await s.alerts.add(symbol: 'AAPL', kind: AlertKind.trailing, value: 10, currency: 'USD', peak: 250);
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Price alerts').first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(ValueKey('alert-edit-${a.id}')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('alert-value')), '7');
+    await tester.tap(find.text('Set alert'));
+    await tester.pumpAndSettle();
+    final edited = s.alerts.alerts.single;
+    // A demó ára 231,45 – a csúcs 250 marad, a szint 232,5 (nem 215,25).
+    expect(edited.peak, 250);
+    expect(edited.trailingLevel, closeTo(232.5, 1e-9));
+  });
+
+  testWidgets('a daily-move alert edited into a price level gets the stock’s currency', (tester) async {
+    tester.view.physicalSize = const Size(1200, 1600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    final a = await s.alerts.add(symbol: 'AAPL', kind: AlertKind.move, value: 5);
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Price alerts').first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(ValueKey('alert-edit-${a.id}')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('alert-kind-above')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('alert-value')), '300');
+    await tester.tap(find.text('Set alert'));
+    await tester.pumpAndSettle();
+    expect((s.alerts.alerts.single.kind, s.alerts.alerts.single.currency), (AlertKind.above, 'USD'));
   });
 
   testWidgets('deleting an alert can be undone; triggered alerts are cleared at once', (tester) async {

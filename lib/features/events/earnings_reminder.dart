@@ -43,6 +43,10 @@ class EarningsReminder {
 
   static const _key = 'earnings_reminded';
 
+  /// Az emlékeztetéskor ismert legutolsó jelentett negyedév (`TICKER|nap|negyedév vége`):
+  /// az eredmény-értesítés csak ennél újabb negyedévről szól.
+  static const _knownKey = 'earnings_known_period';
+
   Timer? _timer, _first;
   bool _checking = false;
 
@@ -99,9 +103,10 @@ class EarningsReminder {
         if (await notifier.show(id: id, title: text.title, body: text.body)) {
           done.add(id);
           sent.add(id);
+          if (e.kind == UpcomingEventKind.earnings) await _rememberKnown(prefs, e.symbol, _day(e.date));
         }
       }
-      if (earnings) sent.addAll(await _results(done, today));
+      if (earnings) sent.addAll(await _results(done, today, _known(prefs)));
       if (sent.isNotEmpty) {
         // A régi (egy hétnél korábbi) jelentések azonosítói kikerülnek.
         final cutoff = today.subtract(const Duration(days: 7)).toIso8601String().substring(0, 10);
@@ -118,9 +123,38 @@ class EarningsReminder {
     return sent;
   }
 
+  /// Az emlékeztetéskor ismert negyedévek (`TICKER|nap` → a negyedév vége).
+  static Map<String, DateTime> _known(SharedPreferences prefs) => {
+    for (final e in prefs.getStringList(_knownKey) ?? const <String>[])
+      if (e.split('|') case [final symbol, final day, final period]) '$symbol|$day': ?DateTime.tryParse(period),
+  };
+
+  /// Megjegyzi a jelentés előtt már ismert legutolsó negyedévet (az egy hétnél
+  /// régebbi bejegyzések kikerülnek).
+  Future<void> _rememberKnown(SharedPreferences prefs, String symbol, String day) async {
+    try {
+      final latest = (await events.marketData.earnings(symbol)).history
+          .where((h) => h.actual != null)
+          .map((h) => h.period)
+          .fold<DateTime?>(null, (a, b) => a == null || b.isAfter(a) ? b : a);
+      final cutoff = _day(_clock().subtract(const Duration(days: 7)));
+      await prefs.setStringList(_knownKey, [
+        for (final e in prefs.getStringList(_knownKey) ?? const <String>[])
+          if (e.split('|') case [final s, final d, _] when s != symbol || d != day)
+            if (d.compareTo(cutoff) >= 0) e,
+        '$symbol|$day|${latest == null ? '' : _day(latest)}',
+      ]);
+    } catch (e) {
+      debugPrint('Gyorsjelentés-előzmény ($symbol): $e');
+    }
+  }
+
   /// A jelentés után (legfeljebb 4 napig) egyszer szól az eredményről, ha az
-  /// előtte való napon emlékeztettünk rá, és már megjelent a jelentett EPS.
-  Future<List<String>> _results(Set<String> done, DateTime today) async {
+  /// előtte való napon emlékeztettünk rá, és már megjelent a jelentett EPS – egy
+  /// újabb negyedévé, mint ami az emlékeztetéskor ismert volt (a Finnhub előzményében
+  /// az előző negyedév is ott van: egy bank a negyedév vége után két héttel jelent,
+  /// így az előző negyedév is a 120 napos ablakba esne).
+  Future<List<String>> _results(Set<String> done, DateTime today, Map<String, DateTime> known) async {
     final describe = describeResult;
     if (describe == null) return const [];
     final sent = <String>[];
@@ -134,9 +168,13 @@ class EarningsReminder {
       if (age < 0 || age > 4 || done.contains(resultId)) continue;
       try {
         final history = (await events.marketData.earnings(symbol)).history;
+        final before = known['$symbol|${id.substring(id.length - 10)}'];
+        // Ismert előzmény nélkül (régebbi emlékeztető) szűkebb ablak: 75 nap.
+        final window = before == null ? 75 : 120;
         final r = history
             .where((h) => h.actual != null && h.estimate != null && !h.period.isAfter(day))
-            .where((h) => day.difference(h.period).inDays <= 120)
+            .where((h) => day.difference(h.period).inDays <= window)
+            .where((h) => before == null || h.period.isAfter(before))
             .firstOrNull;
         if (r == null) continue;
         final text = describe(symbol, r);

@@ -147,7 +147,12 @@ class _AlertDialogState extends State<_AlertDialog> {
     final services = AppServices.of(context);
     final currency = _kind == AlertKind.move ? null : (widget.editing?.currency ?? widget.currency);
     if (widget.editing case final e?) {
-      await services.alerts.edit(e.id, kind: _kind, value: v!, currency: currency, peak: widget.currentPrice ?? e.peak);
+      // Követő stopnál a csúcs megmarad (a mostani árnál alacsonyabbra nem esik): a
+      // szigorítás (10% → 7%) így közelebb hozza a szintet, nem távolabb.
+      final peak = e.kind == AlertKind.trailing && _kind == AlertKind.trailing
+          ? [?e.peak, ?widget.currentPrice].fold<double?>(null, (m, x) => m == null || x > m ? x : m)
+          : widget.currentPrice ?? e.peak;
+      await services.alerts.edit(e.id, kind: _kind, value: v!, currency: currency, peak: peak);
     } else {
       await services.alerts.add(
         symbol: widget.symbol,
@@ -186,6 +191,7 @@ class _AlertDialogState extends State<_AlertDialog> {
                 children: [
                   for (final k in AlertKind.values)
                     ChoiceChip(
+                      key: ValueKey('alert-kind-${k.name}'),
                       label: Text(switch (k) {
                         AlertKind.above => l10n.alertKindAbove,
                         AlertKind.below => l10n.alertKindBelow,
@@ -345,17 +351,14 @@ class AlertTile extends StatelessWidget {
               icon: Icon(Icons.edit_outlined, color: p.muted),
               onPressed: () async {
                 double? price;
+                // A napi mozgás riasztásnak nincs pénzneme: árszintre váltáskor a cégé kell.
+                var currency = a.currency;
                 try {
                   price = (await services.marketData.quote(a.symbol)).price;
+                  currency ??= (await services.marketData.profile(a.symbol)).currency;
                 } catch (_) {}
                 if (context.mounted) {
-                  await showAlertDialog(
-                    context,
-                    symbol: a.symbol,
-                    currency: a.currency,
-                    currentPrice: price,
-                    editing: a,
-                  );
+                  await showAlertDialog(context, symbol: a.symbol, currency: currency, currentPrice: price, editing: a);
                 }
               },
             ),

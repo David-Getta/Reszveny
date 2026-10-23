@@ -8,7 +8,7 @@ import 'package:whatstock_server/src/mailer.dart';
 void main() {
   late Store store;
   late ConsoleMailer mailer;
-  late Map<String, ({double price, double? changePercent})> quotes;
+  late Map<String, Quote> quotes;
   late List<String> asked;
 
   setUp(() {
@@ -25,6 +25,7 @@ void main() {
       asked.add(s);
       return quotes[s];
     },
+    quotePause: Duration.zero,
     clock: () => DateTime.utc(2026, 10, 15, 14),
   );
 
@@ -61,9 +62,9 @@ void main() {
       'alerts': [alert('b1', 'AAPL', 'above', 1)],
     });
     quotes = {
-      'AAPL': (price: 251.2, changePercent: 1.1),
-      'MSFT': (price: 410.0, changePercent: -0.4),
-      'NVDA': (price: 190.0, changePercent: -6.2),
+      'AAPL': (price: 251.2, changePercent: 1.1, time: null),
+      'MSFT': (price: 410.0, changePercent: -0.4, time: null),
+      'NVDA': (price: 190.0, changePercent: -6.2, time: null),
     };
     final w = watcher();
     expect(await w.checkOnce(), 1);
@@ -94,11 +95,15 @@ void main() {
     final dave = account('dave@example.com', {
       'alerts': [alert('a1', 'AAPL', 'above', 250), alert('a2', 'MSFT', 'above', 500)],
     });
-    quotes = {'AAPL': (price: 251.2, changePercent: 1.1), 'MSFT': (price: 410.0, changePercent: 0.2)};
+    quotes = {
+      'AAPL': (price: 251.2, changePercent: 1.1, time: null),
+      'MSFT': (price: 410.0, changePercent: 0.2, time: null),
+    };
     var uploaded = false;
     final w = AlertWatcher(
       store: store,
       mailer: mailer,
+      quotePause: Duration.zero,
       quote: (s) async {
         // Egy készülék épp most tölt fel: új tétel, és az MSFT-riasztást törölte.
         if (!uploaded) {
@@ -135,7 +140,7 @@ void main() {
         'alerts': [alert('d1', 'TSLA', 'below', 999)],
       }),
     );
-    quotes = {'TSLA': (price: 280.0, changePercent: -3.0)};
+    quotes = {'TSLA': (price: 280.0, changePercent: -3.0, time: null)};
     expect(await watcher().checkOnce(), 1);
     final mail = mailer.messages.single;
     expect(mail.subject, 'WhatStock alert: TSLA');
@@ -151,16 +156,46 @@ void main() {
     });
     List alerts() => (jsonDecode(store.syncData(id)!.data) as Map)['alerts'] as List;
 
-    quotes = {'AMD': (price: 120.0, changePercent: 2.0)};
+    quotes = {'AMD': (price: 120.0, changePercent: 2.0, time: null)};
     expect(await watcher().checkOnce(), 0);
     expect(alerts().single['peak'], 120);
 
     // 120 × 0,9 = 108: a 110 még nem, a 107 már szól.
-    quotes = {'AMD': (price: 110.0, changePercent: -8.0)};
+    quotes = {'AMD': (price: 110.0, changePercent: -8.0, time: null)};
     expect(await watcher().checkOnce(), 0);
-    quotes = {'AMD': (price: 107.0, changePercent: -2.7)};
+    quotes = {'AMD': (price: 107.0, changePercent: -2.7, time: null)};
     expect(await watcher().checkOnce(), 1);
     expect(mailer.messages.single.text, contains('AMD: 107 USD – fell 10% from its 120 USD peak.'));
     expect(alerts().single['triggered_at'], isNotNull);
+  });
+
+  test('more symbols than one round takes: the next round continues, so every symbol gets its turn', () async {
+    final n = AlertWatcher.maxSymbolsPerRound + 1;
+    account('eve@example.com', {
+      'alerts': [for (var i = 0; i < n; i++) alert('a$i', 'S${i.toString().padLeft(3, '0')}', 'above', 1000)],
+    });
+    final w = watcher();
+    await w.checkOnce();
+    expect(asked, hasLength(AlertWatcher.maxSymbolsPerRound));
+    final last = 'S${(n - 1).toString().padLeft(3, '0')}';
+    expect(asked, isNot(contains(last)));
+    asked.clear();
+    await w.checkOnce();
+    expect(asked.first, last, reason: 'a második kör az elsőből kimaradttal kezd');
+  });
+
+  test('a daily move from before the alert was set (weekend, before the open) does not fire', () async {
+    final id = account('fay@example.com', {
+      'alerts': [
+        {...alert('m1', 'NVDA', 'move', 5), 'created_at': '2026-10-17T10:00:00.000Z'},
+      ],
+    });
+    // Szombat: a pénteki (az élesítés előtti) kötés −6,2%-a.
+    quotes = {'NVDA': (price: 190.0, changePercent: -6.2, time: DateTime.utc(2026, 10, 16, 20))};
+    expect(await watcher().checkOnce(), 0);
+    // Hétfő: egy új kötés után már szól.
+    quotes = {'NVDA': (price: 178.0, changePercent: -6.3, time: DateTime.utc(2026, 10, 19, 14))};
+    expect(await watcher().checkOnce(), 1);
+    expect(((jsonDecode(store.syncData(id)!.data) as Map)['alerts'] as List).single['triggered_at'], isNotNull);
   });
 }

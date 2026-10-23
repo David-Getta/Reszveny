@@ -9,9 +9,9 @@ import 'portfolio_valuation.dart';
 
 /// Portfólió-riasztás: ha a teljes portfólió egy nap alatt legalább a beállított
 /// %-ot mozdul (fel vagy le), egy értesítés jelzi – naponta legfeljebb egyszer,
-/// hétvégén nem. Ha a mozgás ugyanaz, mint a legutóbb jelzett (pl. hétfő reggel
-/// még a pénteki árak látszanak), nem szól újra. A kitűzött portfólió-cél
-/// elérésekor is szól, célonként egyszer.
+/// hétvégén nem, és egy kereskedési napról (a legfrissebb ár UTC-napja) csak egyszer:
+/// másnap reggel, ünnepnapon még az előző nap mozgása látszik, arról nem szól újra.
+/// A kitűzött portfólió-cél elérésekor is szól, célonként egyszer.
 class PortfolioMoveWatcher {
   PortfolioMoveWatcher({
     required this.portfolio,
@@ -81,10 +81,15 @@ class PortfolioMoveWatcher {
       }
       final move = s.dayGainPercent;
       if (!moveDue || move == null || move.abs() < threshold || s.hasExcluded) return sent;
-      if (last != null && last.length == 2 && last[1] == _rounded(move)) return sent;
+      final session = s.quoteTime?.toUtc().toIso8601String().substring(0, 10);
+      if (last != null && last.length >= 3 && session != null && last[2] == session) return sent;
+      // Kereskedési nap nélkül (vagy a régi, két tagú jelzésnél): ugyanaz a kerekített mozgás nem új.
+      if (last != null && last.length >= 2 && (session == null || last.length == 2) && last[1] == _rounded(move)) {
+        return sent;
+      }
       final text = describe(s);
       await notifier.show(id: 'portfolio-move-$day', title: text.title, body: text.body);
-      await preferences.setPortfolioMoveNotified('$day|${_rounded(move)}');
+      await preferences.setPortfolioMoveNotified('$day|${_rounded(move)}${session == null ? '' : '|$session'}');
       onNotified?.call();
       return true;
     } catch (e) {
