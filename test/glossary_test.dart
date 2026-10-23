@@ -11,9 +11,9 @@ import 'app_widget_test.dart' show services;
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
-  test('every language explains every metric, under its own label', () {
+  test('every language explains every metric, under its own label', () async {
     for (final lang in SupportedLocales.all) {
-      final l10n = lookupAppLocalizations(lang.locale);
+      final l10n = await lookupAppLocalizations(lang.locale);
       final g = metricGlossary(l10n);
       expect(g.length, 34, reason: '${lang.locale}: labels must be distinct');
       expect(g.values.every((v) => v.trim().isNotEmpty), isTrue, reason: '${lang.locale}');

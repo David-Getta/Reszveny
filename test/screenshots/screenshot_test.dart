@@ -1934,7 +1934,7 @@ void main() {
   for (final lang in _storeLangs) {
     for (final device in _storeDevices) {
       testWidgets('store ${device.name} $lang', (tester) async {
-        final l10n = lookupAppLocalizations(Locale(lang));
+        final l10n = await lookupAppLocalizations(Locale(lang));
         // A 4. kép: gyorsjelentés-összefoglaló kérdéssel (a válasz utánzat, a bolti nyelveken).
         const aiConfig = AppConfig(backendUrl: 'https://api.test');
         final aiClient = MockClient((req) async {

@@ -47,7 +47,7 @@ void main() {
   test('rows from real details: values in each stock’s format and the winners', () async {
     final market = DemoMarketDataProvider(latency: Duration.zero);
     final stocks = [await market.details('AAPL'), await market.details('MSFT'), null];
-    final rows = buildCompareRows(lookupAppLocalizations(const Locale('en')), Fmt('en'), stocks);
+    final rows = buildCompareRows(await lookupAppLocalizations(const Locale('en')), Fmt('en'), stocks);
     final pe = rows.firstWhere((r) => r.label == 'P/E (trailing)');
     expect(pe.values[0], '35.20');
     expect(pe.values[2], isNull);
@@ -65,7 +65,7 @@ void main() {
     // Gyorsjelentés-adatokkal két sor több: a meglepetés (a nagyobb nyer) és a következő nap.
     expect(rows.any((r) => r.label == 'Next report'), isFalse);
     final withEarnings = buildCompareRows(
-      lookupAppLocalizations(const Locale('en')),
+      await lookupAppLocalizations(const Locale('en')),
       Fmt('en'),
       stocks,
       earnings: [await market.earnings('AAPL'), await market.earnings('MSFT'), null],

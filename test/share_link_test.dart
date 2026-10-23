@@ -73,11 +73,11 @@ class _Analyst implements StockAnalyst {
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
-  test('the public part of a shared analysis, in the reader’s language', () {
+  test('the public part of a shared analysis, in the reader’s language', () async {
     final p = sharePayload(
       _report('AAPL'),
       companyName: 'Apple Inc.',
-      l10n: lookupAppLocalizations(const Locale('en')),
+      l10n: await lookupAppLocalizations(const Locale('en')),
       fmt: Fmt('en'),
       lang: 'en',
       image: Uint8List.fromList([1, 2, 3]),

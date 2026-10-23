@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reszveny/app.dart';
 import 'package:reszveny/core/models/price_history.dart';
 import 'package:reszveny/core/util/formatters.dart';
 import 'package:reszveny/features/stock_detail/widgets/returns_strip.dart';
@@ -21,7 +22,7 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         theme: AppTheme.build(Brightness.light),
-        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        localizationsDelegates: WhatStockApp.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
         home: Scaffold(
           body: SizedBox(
@@ -61,7 +62,7 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         theme: AppTheme.build(Brightness.light),
-        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        localizationsDelegates: WhatStockApp.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
         home: Scaffold(
           body: ReturnsStrip(

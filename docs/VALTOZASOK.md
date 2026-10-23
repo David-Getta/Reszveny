@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.257)
+# Változásjegyzék (0.2.130 → 0.2.258)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,13 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Webes változat
+
+- **0.2.258**: a webes változat fő fájlja 16,7 MB helyett 5,3 MB – a 120 nyelv szövegei külön, igény szerint
+  töltődnek (csak a választott nyelv, 50–200 KB); induláskor a saját nyelv előre betöltődik, így nincs üres első
+  képkocka (a szövegirány-delegate eddig minden platformon egy képkockányi késést okozott – javítva); az
+  értesítések szövegei is az előre betöltött nyelvből jönnek, nyelvváltáskor újratöltve.
 
 ## Import: egy hatodik kódátnézés javításai
 

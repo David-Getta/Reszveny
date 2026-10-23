@@ -39,8 +39,8 @@ void main() {
     expect(s.next, DateTime.utc(2026, 11, 27, 18));
   });
 
-  test('short durations', () {
-    final l10n = lookupAppLocalizations(const Locale('en'));
+  test('short durations', () async {
+    final l10n = await lookupAppLocalizations(const Locale('en'));
     expect(shortDuration(l10n, const Duration(minutes: 45)), '45 min');
     expect(shortDuration(l10n, const Duration(hours: 2, minutes: 15)), '2 h 15 min');
     expect(shortDuration(l10n, const Duration(days: 2, hours: 3, minutes: 59)), '2 d 3 h');

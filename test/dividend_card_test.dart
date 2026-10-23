@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
 import 'package:reszveny/core/models/stock_metrics.dart';
 import 'package:reszveny/features/stock_detail/widgets/dividend_card.dart';
@@ -19,7 +20,7 @@ void main() {
         services: s,
         child: MaterialApp(
           theme: AppTheme.build(Brightness.light),
-          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          localizationsDelegates: WhatStockApp.localizationsDelegates,
           supportedLocales: AppLocalizations.supportedLocales,
           home: Scaffold(
             body: SingleChildScrollView(

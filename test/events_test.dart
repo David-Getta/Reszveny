@@ -222,8 +222,8 @@ void main() {
     s.dispose();
   });
 
-  test('a dividend event in the calendar export: title, estimated amount and a stable uid', () {
-    final l10n = lookupAppLocalizations(const Locale('en'));
+  test('a dividend event in the calendar export: title, estimated amount and a stable uid', () async {
+    final l10n = await lookupAppLocalizations(const Locale('en'));
     final fmt = Fmt('en', na: 'n/a');
     final entries = calendarEntries(l10n, fmt, [
       UpcomingEvent(

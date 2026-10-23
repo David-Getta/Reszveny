@@ -61,7 +61,10 @@ import 'features/recognition/claude_vision_recognizer.dart';
 import 'features/recognition/description_resolver.dart';
 import 'features/recognition/stock_recognizer.dart';
 import 'features/updates/update_service.dart';
+import 'l10n/app_l10n_delegate.dart';
 import 'l10n/generated/app_localizations.dart';
+// Az angol szövegek mindig a fő csomagban vannak (tartalék, amíg a választott nyelv betöltődik).
+import 'l10n/generated/app_localizations_en.dart';
 import 'l10n/supported_locales.dart';
 
 /// Az app szolgáltatásainak egy helyen összerakott példányai. Egyszerű
@@ -132,6 +135,7 @@ class AppServices {
       fx: this.fx,
     );
     away.displayCurrency = () => displayCurrency(locale.effective(WidgetsBinding.instance.platformDispatcher.locale));
+    locale.addListener(() => unawaited(loadTexts()));
     brief =
         dailyBrief?.call(news) ??
         DailyBrief(config: config, marketData: marketData, news: news, client: backend?.authenticated);
@@ -436,16 +440,33 @@ class AppServices {
     );
   }
 
+  /// Az értesítések szövegei az app nyelvén. A webes változatban a nyelvek igény
+  /// szerint töltődnek (külön fájlban), ezért előre betöltjük: induláskor és
+  /// nyelvváltáskor ([loadTexts]); addig angolul.
+  AppLocalizations? _texts;
+  Locale? _textsLocale;
+
+  Locale get _appLocale => locale.effective(WidgetsBinding.instance.platformDispatcher.locale);
+
+  /// Az app nyelvének szövegei az értesítésekhez (a felületen kívül).
+  Future<void> loadTexts() async {
+    final l = _appLocale;
+    AppLocalizations texts;
+    try {
+      texts = await AppL10nDelegate.preload(l);
+    } catch (_) {
+      texts = AppLocalizationsEn();
+    }
+    _texts = texts;
+    _textsLocale = l;
+  }
+
   /// Az app nyelve és szövegei (értesítésekhez, a felületen kívül).
   (AppLocalizations, Fmt) _l10n() {
-    final device = WidgetsBinding.instance.platformDispatcher.locale;
-    final appLocale = locale.effective(device);
-    AppLocalizations l10n;
-    try {
-      l10n = lookupAppLocalizations(appLocale);
-    } catch (_) {
-      l10n = lookupAppLocalizations(SupportedLocales.fallback);
-    }
+    final appLocale = _appLocale;
+    // A rendszer nyelve közben változhatott: a következő értesítéstől az új nyelven.
+    if (_textsLocale != appLocale) unawaited(loadTexts());
+    final l10n = _texts ?? AppLocalizationsEn();
     return (l10n, Fmt(appLocale.toString(), na: l10n.notAvailable));
   }
 

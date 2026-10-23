@@ -1,129 +1,128 @@
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
-import 'app_localizations_af.dart';
-import 'app_localizations_ak.dart';
-import 'app_localizations_am.dart';
-import 'app_localizations_ar.dart';
-import 'app_localizations_as.dart';
-import 'app_localizations_az.dart';
-import 'app_localizations_be.dart';
-import 'app_localizations_bg.dart';
-import 'app_localizations_bho.dart';
-import 'app_localizations_bm.dart';
-import 'app_localizations_bn.dart';
-import 'app_localizations_bo.dart';
-import 'app_localizations_bs.dart';
-import 'app_localizations_ca.dart';
-import 'app_localizations_ceb.dart';
-import 'app_localizations_ckb.dart';
-import 'app_localizations_cs.dart';
-import 'app_localizations_da.dart';
-import 'app_localizations_de.dart';
-import 'app_localizations_ee.dart';
-import 'app_localizations_el.dart';
-import 'app_localizations_en.dart';
-import 'app_localizations_es.dart';
-import 'app_localizations_fa.dart';
-import 'app_localizations_ff.dart';
-import 'app_localizations_fi.dart';
-import 'app_localizations_fil.dart';
-import 'app_localizations_fr.dart';
-import 'app_localizations_gl.dart';
-import 'app_localizations_gn.dart';
-import 'app_localizations_gu.dart';
-import 'app_localizations_ha.dart';
-import 'app_localizations_he.dart';
-import 'app_localizations_hi.dart';
-import 'app_localizations_hil.dart';
-import 'app_localizations_hr.dart';
-import 'app_localizations_ht.dart';
-import 'app_localizations_hu.dart';
-import 'app_localizations_hy.dart';
-import 'app_localizations_id.dart';
-import 'app_localizations_ig.dart';
-import 'app_localizations_ilo.dart';
-import 'app_localizations_it.dart';
-import 'app_localizations_ja.dart';
-import 'app_localizations_jv.dart';
-import 'app_localizations_ka.dart';
-import 'app_localizations_kab.dart';
-import 'app_localizations_kg.dart';
-import 'app_localizations_ki.dart';
-import 'app_localizations_kk.dart';
-import 'app_localizations_km.dart';
-import 'app_localizations_kn.dart';
-import 'app_localizations_ko.dart';
-import 'app_localizations_ku.dart';
-import 'app_localizations_ky.dart';
-import 'app_localizations_lg.dart';
-import 'app_localizations_ln.dart';
-import 'app_localizations_lo.dart';
-import 'app_localizations_lt.dart';
-import 'app_localizations_lua.dart';
-import 'app_localizations_lv.dart';
-import 'app_localizations_mai.dart';
-import 'app_localizations_mg.dart';
-import 'app_localizations_mk.dart';
-import 'app_localizations_ml.dart';
-import 'app_localizations_mn.dart';
-import 'app_localizations_mos.dart';
-import 'app_localizations_mr.dart';
-import 'app_localizations_ms.dart';
-import 'app_localizations_my.dart';
-import 'app_localizations_nb.dart';
-import 'app_localizations_ne.dart';
-import 'app_localizations_nl.dart';
-import 'app_localizations_nso.dart';
-import 'app_localizations_ny.dart';
-import 'app_localizations_om.dart';
-import 'app_localizations_or.dart';
-import 'app_localizations_pa.dart';
-import 'app_localizations_pcm.dart';
-import 'app_localizations_pl.dart';
-import 'app_localizations_ps.dart';
-import 'app_localizations_pt.dart';
-import 'app_localizations_qu.dart';
-import 'app_localizations_rn.dart';
-import 'app_localizations_ro.dart';
-import 'app_localizations_ru.dart';
-import 'app_localizations_rw.dart';
-import 'app_localizations_sd.dart';
-import 'app_localizations_si.dart';
-import 'app_localizations_sk.dart';
-import 'app_localizations_sl.dart';
-import 'app_localizations_sn.dart';
-import 'app_localizations_so.dart';
-import 'app_localizations_sq.dart';
-import 'app_localizations_sr.dart';
-import 'app_localizations_st.dart';
-import 'app_localizations_su.dart';
-import 'app_localizations_sv.dart';
-import 'app_localizations_sw.dart';
-import 'app_localizations_ta.dart';
-import 'app_localizations_te.dart';
-import 'app_localizations_tg.dart';
-import 'app_localizations_th.dart';
-import 'app_localizations_ti.dart';
-import 'app_localizations_tk.dart';
-import 'app_localizations_tn.dart';
-import 'app_localizations_tr.dart';
-import 'app_localizations_ts.dart';
-import 'app_localizations_tt.dart';
-import 'app_localizations_ug.dart';
-import 'app_localizations_uk.dart';
-import 'app_localizations_ur.dart';
-import 'app_localizations_uz.dart';
-import 'app_localizations_vi.dart';
-import 'app_localizations_wo.dart';
-import 'app_localizations_xh.dart';
-import 'app_localizations_yo.dart';
-import 'app_localizations_zh.dart';
-import 'app_localizations_zu.dart';
+import 'app_localizations_af.dart' deferred as app_localizations_af;
+import 'app_localizations_ak.dart' deferred as app_localizations_ak;
+import 'app_localizations_am.dart' deferred as app_localizations_am;
+import 'app_localizations_ar.dart' deferred as app_localizations_ar;
+import 'app_localizations_as.dart' deferred as app_localizations_as;
+import 'app_localizations_az.dart' deferred as app_localizations_az;
+import 'app_localizations_be.dart' deferred as app_localizations_be;
+import 'app_localizations_bg.dart' deferred as app_localizations_bg;
+import 'app_localizations_bho.dart' deferred as app_localizations_bho;
+import 'app_localizations_bm.dart' deferred as app_localizations_bm;
+import 'app_localizations_bn.dart' deferred as app_localizations_bn;
+import 'app_localizations_bo.dart' deferred as app_localizations_bo;
+import 'app_localizations_bs.dart' deferred as app_localizations_bs;
+import 'app_localizations_ca.dart' deferred as app_localizations_ca;
+import 'app_localizations_ceb.dart' deferred as app_localizations_ceb;
+import 'app_localizations_ckb.dart' deferred as app_localizations_ckb;
+import 'app_localizations_cs.dart' deferred as app_localizations_cs;
+import 'app_localizations_da.dart' deferred as app_localizations_da;
+import 'app_localizations_de.dart' deferred as app_localizations_de;
+import 'app_localizations_ee.dart' deferred as app_localizations_ee;
+import 'app_localizations_el.dart' deferred as app_localizations_el;
+import 'app_localizations_en.dart' deferred as app_localizations_en;
+import 'app_localizations_es.dart' deferred as app_localizations_es;
+import 'app_localizations_fa.dart' deferred as app_localizations_fa;
+import 'app_localizations_ff.dart' deferred as app_localizations_ff;
+import 'app_localizations_fi.dart' deferred as app_localizations_fi;
+import 'app_localizations_fil.dart' deferred as app_localizations_fil;
+import 'app_localizations_fr.dart' deferred as app_localizations_fr;
+import 'app_localizations_gl.dart' deferred as app_localizations_gl;
+import 'app_localizations_gn.dart' deferred as app_localizations_gn;
+import 'app_localizations_gu.dart' deferred as app_localizations_gu;
+import 'app_localizations_ha.dart' deferred as app_localizations_ha;
+import 'app_localizations_he.dart' deferred as app_localizations_he;
+import 'app_localizations_hi.dart' deferred as app_localizations_hi;
+import 'app_localizations_hil.dart' deferred as app_localizations_hil;
+import 'app_localizations_hr.dart' deferred as app_localizations_hr;
+import 'app_localizations_ht.dart' deferred as app_localizations_ht;
+import 'app_localizations_hu.dart' deferred as app_localizations_hu;
+import 'app_localizations_hy.dart' deferred as app_localizations_hy;
+import 'app_localizations_id.dart' deferred as app_localizations_id;
+import 'app_localizations_ig.dart' deferred as app_localizations_ig;
+import 'app_localizations_ilo.dart' deferred as app_localizations_ilo;
+import 'app_localizations_it.dart' deferred as app_localizations_it;
+import 'app_localizations_ja.dart' deferred as app_localizations_ja;
+import 'app_localizations_jv.dart' deferred as app_localizations_jv;
+import 'app_localizations_ka.dart' deferred as app_localizations_ka;
+import 'app_localizations_kab.dart' deferred as app_localizations_kab;
+import 'app_localizations_kg.dart' deferred as app_localizations_kg;
+import 'app_localizations_ki.dart' deferred as app_localizations_ki;
+import 'app_localizations_kk.dart' deferred as app_localizations_kk;
+import 'app_localizations_km.dart' deferred as app_localizations_km;
+import 'app_localizations_kn.dart' deferred as app_localizations_kn;
+import 'app_localizations_ko.dart' deferred as app_localizations_ko;
+import 'app_localizations_ku.dart' deferred as app_localizations_ku;
+import 'app_localizations_ky.dart' deferred as app_localizations_ky;
+import 'app_localizations_lg.dart' deferred as app_localizations_lg;
+import 'app_localizations_ln.dart' deferred as app_localizations_ln;
+import 'app_localizations_lo.dart' deferred as app_localizations_lo;
+import 'app_localizations_lt.dart' deferred as app_localizations_lt;
+import 'app_localizations_lua.dart' deferred as app_localizations_lua;
+import 'app_localizations_lv.dart' deferred as app_localizations_lv;
+import 'app_localizations_mai.dart' deferred as app_localizations_mai;
+import 'app_localizations_mg.dart' deferred as app_localizations_mg;
+import 'app_localizations_mk.dart' deferred as app_localizations_mk;
+import 'app_localizations_ml.dart' deferred as app_localizations_ml;
+import 'app_localizations_mn.dart' deferred as app_localizations_mn;
+import 'app_localizations_mos.dart' deferred as app_localizations_mos;
+import 'app_localizations_mr.dart' deferred as app_localizations_mr;
+import 'app_localizations_ms.dart' deferred as app_localizations_ms;
+import 'app_localizations_my.dart' deferred as app_localizations_my;
+import 'app_localizations_nb.dart' deferred as app_localizations_nb;
+import 'app_localizations_ne.dart' deferred as app_localizations_ne;
+import 'app_localizations_nl.dart' deferred as app_localizations_nl;
+import 'app_localizations_nso.dart' deferred as app_localizations_nso;
+import 'app_localizations_ny.dart' deferred as app_localizations_ny;
+import 'app_localizations_om.dart' deferred as app_localizations_om;
+import 'app_localizations_or.dart' deferred as app_localizations_or;
+import 'app_localizations_pa.dart' deferred as app_localizations_pa;
+import 'app_localizations_pcm.dart' deferred as app_localizations_pcm;
+import 'app_localizations_pl.dart' deferred as app_localizations_pl;
+import 'app_localizations_ps.dart' deferred as app_localizations_ps;
+import 'app_localizations_pt.dart' deferred as app_localizations_pt;
+import 'app_localizations_qu.dart' deferred as app_localizations_qu;
+import 'app_localizations_rn.dart' deferred as app_localizations_rn;
+import 'app_localizations_ro.dart' deferred as app_localizations_ro;
+import 'app_localizations_ru.dart' deferred as app_localizations_ru;
+import 'app_localizations_rw.dart' deferred as app_localizations_rw;
+import 'app_localizations_sd.dart' deferred as app_localizations_sd;
+import 'app_localizations_si.dart' deferred as app_localizations_si;
+import 'app_localizations_sk.dart' deferred as app_localizations_sk;
+import 'app_localizations_sl.dart' deferred as app_localizations_sl;
+import 'app_localizations_sn.dart' deferred as app_localizations_sn;
+import 'app_localizations_so.dart' deferred as app_localizations_so;
+import 'app_localizations_sq.dart' deferred as app_localizations_sq;
+import 'app_localizations_sr.dart' deferred as app_localizations_sr;
+import 'app_localizations_st.dart' deferred as app_localizations_st;
+import 'app_localizations_su.dart' deferred as app_localizations_su;
+import 'app_localizations_sv.dart' deferred as app_localizations_sv;
+import 'app_localizations_sw.dart' deferred as app_localizations_sw;
+import 'app_localizations_ta.dart' deferred as app_localizations_ta;
+import 'app_localizations_te.dart' deferred as app_localizations_te;
+import 'app_localizations_tg.dart' deferred as app_localizations_tg;
+import 'app_localizations_th.dart' deferred as app_localizations_th;
+import 'app_localizations_ti.dart' deferred as app_localizations_ti;
+import 'app_localizations_tk.dart' deferred as app_localizations_tk;
+import 'app_localizations_tn.dart' deferred as app_localizations_tn;
+import 'app_localizations_tr.dart' deferred as app_localizations_tr;
+import 'app_localizations_ts.dart' deferred as app_localizations_ts;
+import 'app_localizations_tt.dart' deferred as app_localizations_tt;
+import 'app_localizations_ug.dart' deferred as app_localizations_ug;
+import 'app_localizations_uk.dart' deferred as app_localizations_uk;
+import 'app_localizations_ur.dart' deferred as app_localizations_ur;
+import 'app_localizations_uz.dart' deferred as app_localizations_uz;
+import 'app_localizations_vi.dart' deferred as app_localizations_vi;
+import 'app_localizations_wo.dart' deferred as app_localizations_wo;
+import 'app_localizations_xh.dart' deferred as app_localizations_xh;
+import 'app_localizations_yo.dart' deferred as app_localizations_yo;
+import 'app_localizations_zh.dart' deferred as app_localizations_zh;
+import 'app_localizations_zu.dart' deferred as app_localizations_zu;
 
 // ignore_for_file: type=lint
 
@@ -5414,7 +5413,7 @@ class _AppLocalizationsDelegate
 
   @override
   Future<AppLocalizations> load(Locale locale) {
-    return SynchronousFuture<AppLocalizations>(lookupAppLocalizations(locale));
+    return lookupAppLocalizations(locale);
   }
 
   @override
@@ -5544,253 +5543,493 @@ class _AppLocalizationsDelegate
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
-AppLocalizations lookupAppLocalizations(Locale locale) {
+Future<AppLocalizations> lookupAppLocalizations(Locale locale) {
   // Lookup logic when language+script+country codes are specified.
   switch (locale.toString()) {
     case 'zh_Hant_HK':
-      return AppLocalizationsZhHantHk();
+      return app_localizations_zh.loadLibrary().then(
+        (dynamic _) => app_localizations_zh.AppLocalizationsZhHantHk(),
+      );
   }
 
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
     case 'af':
-      return AppLocalizationsAf();
+      return app_localizations_af.loadLibrary().then(
+        (dynamic _) => app_localizations_af.AppLocalizationsAf(),
+      );
     case 'ak':
-      return AppLocalizationsAk();
+      return app_localizations_ak.loadLibrary().then(
+        (dynamic _) => app_localizations_ak.AppLocalizationsAk(),
+      );
     case 'am':
-      return AppLocalizationsAm();
+      return app_localizations_am.loadLibrary().then(
+        (dynamic _) => app_localizations_am.AppLocalizationsAm(),
+      );
     case 'ar':
-      return AppLocalizationsAr();
+      return app_localizations_ar.loadLibrary().then(
+        (dynamic _) => app_localizations_ar.AppLocalizationsAr(),
+      );
     case 'as':
-      return AppLocalizationsAs();
+      return app_localizations_as.loadLibrary().then(
+        (dynamic _) => app_localizations_as.AppLocalizationsAs(),
+      );
     case 'az':
-      return AppLocalizationsAz();
+      return app_localizations_az.loadLibrary().then(
+        (dynamic _) => app_localizations_az.AppLocalizationsAz(),
+      );
     case 'be':
-      return AppLocalizationsBe();
+      return app_localizations_be.loadLibrary().then(
+        (dynamic _) => app_localizations_be.AppLocalizationsBe(),
+      );
     case 'bg':
-      return AppLocalizationsBg();
+      return app_localizations_bg.loadLibrary().then(
+        (dynamic _) => app_localizations_bg.AppLocalizationsBg(),
+      );
     case 'bho':
-      return AppLocalizationsBho();
+      return app_localizations_bho.loadLibrary().then(
+        (dynamic _) => app_localizations_bho.AppLocalizationsBho(),
+      );
     case 'bm':
-      return AppLocalizationsBm();
+      return app_localizations_bm.loadLibrary().then(
+        (dynamic _) => app_localizations_bm.AppLocalizationsBm(),
+      );
     case 'bn':
-      return AppLocalizationsBn();
+      return app_localizations_bn.loadLibrary().then(
+        (dynamic _) => app_localizations_bn.AppLocalizationsBn(),
+      );
     case 'bo':
-      return AppLocalizationsBo();
+      return app_localizations_bo.loadLibrary().then(
+        (dynamic _) => app_localizations_bo.AppLocalizationsBo(),
+      );
     case 'bs':
-      return AppLocalizationsBs();
+      return app_localizations_bs.loadLibrary().then(
+        (dynamic _) => app_localizations_bs.AppLocalizationsBs(),
+      );
     case 'ca':
-      return AppLocalizationsCa();
+      return app_localizations_ca.loadLibrary().then(
+        (dynamic _) => app_localizations_ca.AppLocalizationsCa(),
+      );
     case 'ceb':
-      return AppLocalizationsCeb();
+      return app_localizations_ceb.loadLibrary().then(
+        (dynamic _) => app_localizations_ceb.AppLocalizationsCeb(),
+      );
     case 'ckb':
-      return AppLocalizationsCkb();
+      return app_localizations_ckb.loadLibrary().then(
+        (dynamic _) => app_localizations_ckb.AppLocalizationsCkb(),
+      );
     case 'cs':
-      return AppLocalizationsCs();
+      return app_localizations_cs.loadLibrary().then(
+        (dynamic _) => app_localizations_cs.AppLocalizationsCs(),
+      );
     case 'da':
-      return AppLocalizationsDa();
+      return app_localizations_da.loadLibrary().then(
+        (dynamic _) => app_localizations_da.AppLocalizationsDa(),
+      );
     case 'de':
-      return AppLocalizationsDe();
+      return app_localizations_de.loadLibrary().then(
+        (dynamic _) => app_localizations_de.AppLocalizationsDe(),
+      );
     case 'ee':
-      return AppLocalizationsEe();
+      return app_localizations_ee.loadLibrary().then(
+        (dynamic _) => app_localizations_ee.AppLocalizationsEe(),
+      );
     case 'el':
-      return AppLocalizationsEl();
+      return app_localizations_el.loadLibrary().then(
+        (dynamic _) => app_localizations_el.AppLocalizationsEl(),
+      );
     case 'en':
-      return AppLocalizationsEn();
+      return app_localizations_en.loadLibrary().then(
+        (dynamic _) => app_localizations_en.AppLocalizationsEn(),
+      );
     case 'es':
-      return AppLocalizationsEs();
+      return app_localizations_es.loadLibrary().then(
+        (dynamic _) => app_localizations_es.AppLocalizationsEs(),
+      );
     case 'fa':
-      return AppLocalizationsFa();
+      return app_localizations_fa.loadLibrary().then(
+        (dynamic _) => app_localizations_fa.AppLocalizationsFa(),
+      );
     case 'ff':
-      return AppLocalizationsFf();
+      return app_localizations_ff.loadLibrary().then(
+        (dynamic _) => app_localizations_ff.AppLocalizationsFf(),
+      );
     case 'fi':
-      return AppLocalizationsFi();
+      return app_localizations_fi.loadLibrary().then(
+        (dynamic _) => app_localizations_fi.AppLocalizationsFi(),
+      );
     case 'fil':
-      return AppLocalizationsFil();
+      return app_localizations_fil.loadLibrary().then(
+        (dynamic _) => app_localizations_fil.AppLocalizationsFil(),
+      );
     case 'fr':
-      return AppLocalizationsFr();
+      return app_localizations_fr.loadLibrary().then(
+        (dynamic _) => app_localizations_fr.AppLocalizationsFr(),
+      );
     case 'gl':
-      return AppLocalizationsGl();
+      return app_localizations_gl.loadLibrary().then(
+        (dynamic _) => app_localizations_gl.AppLocalizationsGl(),
+      );
     case 'gn':
-      return AppLocalizationsGn();
+      return app_localizations_gn.loadLibrary().then(
+        (dynamic _) => app_localizations_gn.AppLocalizationsGn(),
+      );
     case 'gu':
-      return AppLocalizationsGu();
+      return app_localizations_gu.loadLibrary().then(
+        (dynamic _) => app_localizations_gu.AppLocalizationsGu(),
+      );
     case 'ha':
-      return AppLocalizationsHa();
+      return app_localizations_ha.loadLibrary().then(
+        (dynamic _) => app_localizations_ha.AppLocalizationsHa(),
+      );
     case 'he':
-      return AppLocalizationsHe();
+      return app_localizations_he.loadLibrary().then(
+        (dynamic _) => app_localizations_he.AppLocalizationsHe(),
+      );
     case 'hi':
-      return AppLocalizationsHi();
+      return app_localizations_hi.loadLibrary().then(
+        (dynamic _) => app_localizations_hi.AppLocalizationsHi(),
+      );
     case 'hil':
-      return AppLocalizationsHil();
+      return app_localizations_hil.loadLibrary().then(
+        (dynamic _) => app_localizations_hil.AppLocalizationsHil(),
+      );
     case 'hr':
-      return AppLocalizationsHr();
+      return app_localizations_hr.loadLibrary().then(
+        (dynamic _) => app_localizations_hr.AppLocalizationsHr(),
+      );
     case 'ht':
-      return AppLocalizationsHt();
+      return app_localizations_ht.loadLibrary().then(
+        (dynamic _) => app_localizations_ht.AppLocalizationsHt(),
+      );
     case 'hu':
-      return AppLocalizationsHu();
+      return app_localizations_hu.loadLibrary().then(
+        (dynamic _) => app_localizations_hu.AppLocalizationsHu(),
+      );
     case 'hy':
-      return AppLocalizationsHy();
+      return app_localizations_hy.loadLibrary().then(
+        (dynamic _) => app_localizations_hy.AppLocalizationsHy(),
+      );
     case 'id':
-      return AppLocalizationsId();
+      return app_localizations_id.loadLibrary().then(
+        (dynamic _) => app_localizations_id.AppLocalizationsId(),
+      );
     case 'ig':
-      return AppLocalizationsIg();
+      return app_localizations_ig.loadLibrary().then(
+        (dynamic _) => app_localizations_ig.AppLocalizationsIg(),
+      );
     case 'ilo':
-      return AppLocalizationsIlo();
+      return app_localizations_ilo.loadLibrary().then(
+        (dynamic _) => app_localizations_ilo.AppLocalizationsIlo(),
+      );
     case 'it':
-      return AppLocalizationsIt();
+      return app_localizations_it.loadLibrary().then(
+        (dynamic _) => app_localizations_it.AppLocalizationsIt(),
+      );
     case 'ja':
-      return AppLocalizationsJa();
+      return app_localizations_ja.loadLibrary().then(
+        (dynamic _) => app_localizations_ja.AppLocalizationsJa(),
+      );
     case 'jv':
-      return AppLocalizationsJv();
+      return app_localizations_jv.loadLibrary().then(
+        (dynamic _) => app_localizations_jv.AppLocalizationsJv(),
+      );
     case 'ka':
-      return AppLocalizationsKa();
+      return app_localizations_ka.loadLibrary().then(
+        (dynamic _) => app_localizations_ka.AppLocalizationsKa(),
+      );
     case 'kab':
-      return AppLocalizationsKab();
+      return app_localizations_kab.loadLibrary().then(
+        (dynamic _) => app_localizations_kab.AppLocalizationsKab(),
+      );
     case 'kg':
-      return AppLocalizationsKg();
+      return app_localizations_kg.loadLibrary().then(
+        (dynamic _) => app_localizations_kg.AppLocalizationsKg(),
+      );
     case 'ki':
-      return AppLocalizationsKi();
+      return app_localizations_ki.loadLibrary().then(
+        (dynamic _) => app_localizations_ki.AppLocalizationsKi(),
+      );
     case 'kk':
-      return AppLocalizationsKk();
+      return app_localizations_kk.loadLibrary().then(
+        (dynamic _) => app_localizations_kk.AppLocalizationsKk(),
+      );
     case 'km':
-      return AppLocalizationsKm();
+      return app_localizations_km.loadLibrary().then(
+        (dynamic _) => app_localizations_km.AppLocalizationsKm(),
+      );
     case 'kn':
-      return AppLocalizationsKn();
+      return app_localizations_kn.loadLibrary().then(
+        (dynamic _) => app_localizations_kn.AppLocalizationsKn(),
+      );
     case 'ko':
-      return AppLocalizationsKo();
+      return app_localizations_ko.loadLibrary().then(
+        (dynamic _) => app_localizations_ko.AppLocalizationsKo(),
+      );
     case 'ku':
-      return AppLocalizationsKu();
+      return app_localizations_ku.loadLibrary().then(
+        (dynamic _) => app_localizations_ku.AppLocalizationsKu(),
+      );
     case 'ky':
-      return AppLocalizationsKy();
+      return app_localizations_ky.loadLibrary().then(
+        (dynamic _) => app_localizations_ky.AppLocalizationsKy(),
+      );
     case 'lg':
-      return AppLocalizationsLg();
+      return app_localizations_lg.loadLibrary().then(
+        (dynamic _) => app_localizations_lg.AppLocalizationsLg(),
+      );
     case 'ln':
-      return AppLocalizationsLn();
+      return app_localizations_ln.loadLibrary().then(
+        (dynamic _) => app_localizations_ln.AppLocalizationsLn(),
+      );
     case 'lo':
-      return AppLocalizationsLo();
+      return app_localizations_lo.loadLibrary().then(
+        (dynamic _) => app_localizations_lo.AppLocalizationsLo(),
+      );
     case 'lt':
-      return AppLocalizationsLt();
+      return app_localizations_lt.loadLibrary().then(
+        (dynamic _) => app_localizations_lt.AppLocalizationsLt(),
+      );
     case 'lua':
-      return AppLocalizationsLua();
+      return app_localizations_lua.loadLibrary().then(
+        (dynamic _) => app_localizations_lua.AppLocalizationsLua(),
+      );
     case 'lv':
-      return AppLocalizationsLv();
+      return app_localizations_lv.loadLibrary().then(
+        (dynamic _) => app_localizations_lv.AppLocalizationsLv(),
+      );
     case 'mai':
-      return AppLocalizationsMai();
+      return app_localizations_mai.loadLibrary().then(
+        (dynamic _) => app_localizations_mai.AppLocalizationsMai(),
+      );
     case 'mg':
-      return AppLocalizationsMg();
+      return app_localizations_mg.loadLibrary().then(
+        (dynamic _) => app_localizations_mg.AppLocalizationsMg(),
+      );
     case 'mk':
-      return AppLocalizationsMk();
+      return app_localizations_mk.loadLibrary().then(
+        (dynamic _) => app_localizations_mk.AppLocalizationsMk(),
+      );
     case 'ml':
-      return AppLocalizationsMl();
+      return app_localizations_ml.loadLibrary().then(
+        (dynamic _) => app_localizations_ml.AppLocalizationsMl(),
+      );
     case 'mn':
-      return AppLocalizationsMn();
+      return app_localizations_mn.loadLibrary().then(
+        (dynamic _) => app_localizations_mn.AppLocalizationsMn(),
+      );
     case 'mos':
-      return AppLocalizationsMos();
+      return app_localizations_mos.loadLibrary().then(
+        (dynamic _) => app_localizations_mos.AppLocalizationsMos(),
+      );
     case 'mr':
-      return AppLocalizationsMr();
+      return app_localizations_mr.loadLibrary().then(
+        (dynamic _) => app_localizations_mr.AppLocalizationsMr(),
+      );
     case 'ms':
-      return AppLocalizationsMs();
+      return app_localizations_ms.loadLibrary().then(
+        (dynamic _) => app_localizations_ms.AppLocalizationsMs(),
+      );
     case 'my':
-      return AppLocalizationsMy();
+      return app_localizations_my.loadLibrary().then(
+        (dynamic _) => app_localizations_my.AppLocalizationsMy(),
+      );
     case 'nb':
-      return AppLocalizationsNb();
+      return app_localizations_nb.loadLibrary().then(
+        (dynamic _) => app_localizations_nb.AppLocalizationsNb(),
+      );
     case 'ne':
-      return AppLocalizationsNe();
+      return app_localizations_ne.loadLibrary().then(
+        (dynamic _) => app_localizations_ne.AppLocalizationsNe(),
+      );
     case 'nl':
-      return AppLocalizationsNl();
+      return app_localizations_nl.loadLibrary().then(
+        (dynamic _) => app_localizations_nl.AppLocalizationsNl(),
+      );
     case 'nso':
-      return AppLocalizationsNso();
+      return app_localizations_nso.loadLibrary().then(
+        (dynamic _) => app_localizations_nso.AppLocalizationsNso(),
+      );
     case 'ny':
-      return AppLocalizationsNy();
+      return app_localizations_ny.loadLibrary().then(
+        (dynamic _) => app_localizations_ny.AppLocalizationsNy(),
+      );
     case 'om':
-      return AppLocalizationsOm();
+      return app_localizations_om.loadLibrary().then(
+        (dynamic _) => app_localizations_om.AppLocalizationsOm(),
+      );
     case 'or':
-      return AppLocalizationsOr();
+      return app_localizations_or.loadLibrary().then(
+        (dynamic _) => app_localizations_or.AppLocalizationsOr(),
+      );
     case 'pa':
-      return AppLocalizationsPa();
+      return app_localizations_pa.loadLibrary().then(
+        (dynamic _) => app_localizations_pa.AppLocalizationsPa(),
+      );
     case 'pcm':
-      return AppLocalizationsPcm();
+      return app_localizations_pcm.loadLibrary().then(
+        (dynamic _) => app_localizations_pcm.AppLocalizationsPcm(),
+      );
     case 'pl':
-      return AppLocalizationsPl();
+      return app_localizations_pl.loadLibrary().then(
+        (dynamic _) => app_localizations_pl.AppLocalizationsPl(),
+      );
     case 'ps':
-      return AppLocalizationsPs();
+      return app_localizations_ps.loadLibrary().then(
+        (dynamic _) => app_localizations_ps.AppLocalizationsPs(),
+      );
     case 'pt':
-      return AppLocalizationsPt();
+      return app_localizations_pt.loadLibrary().then(
+        (dynamic _) => app_localizations_pt.AppLocalizationsPt(),
+      );
     case 'qu':
-      return AppLocalizationsQu();
+      return app_localizations_qu.loadLibrary().then(
+        (dynamic _) => app_localizations_qu.AppLocalizationsQu(),
+      );
     case 'rn':
-      return AppLocalizationsRn();
+      return app_localizations_rn.loadLibrary().then(
+        (dynamic _) => app_localizations_rn.AppLocalizationsRn(),
+      );
     case 'ro':
-      return AppLocalizationsRo();
+      return app_localizations_ro.loadLibrary().then(
+        (dynamic _) => app_localizations_ro.AppLocalizationsRo(),
+      );
     case 'ru':
-      return AppLocalizationsRu();
+      return app_localizations_ru.loadLibrary().then(
+        (dynamic _) => app_localizations_ru.AppLocalizationsRu(),
+      );
     case 'rw':
-      return AppLocalizationsRw();
+      return app_localizations_rw.loadLibrary().then(
+        (dynamic _) => app_localizations_rw.AppLocalizationsRw(),
+      );
     case 'sd':
-      return AppLocalizationsSd();
+      return app_localizations_sd.loadLibrary().then(
+        (dynamic _) => app_localizations_sd.AppLocalizationsSd(),
+      );
     case 'si':
-      return AppLocalizationsSi();
+      return app_localizations_si.loadLibrary().then(
+        (dynamic _) => app_localizations_si.AppLocalizationsSi(),
+      );
     case 'sk':
-      return AppLocalizationsSk();
+      return app_localizations_sk.loadLibrary().then(
+        (dynamic _) => app_localizations_sk.AppLocalizationsSk(),
+      );
     case 'sl':
-      return AppLocalizationsSl();
+      return app_localizations_sl.loadLibrary().then(
+        (dynamic _) => app_localizations_sl.AppLocalizationsSl(),
+      );
     case 'sn':
-      return AppLocalizationsSn();
+      return app_localizations_sn.loadLibrary().then(
+        (dynamic _) => app_localizations_sn.AppLocalizationsSn(),
+      );
     case 'so':
-      return AppLocalizationsSo();
+      return app_localizations_so.loadLibrary().then(
+        (dynamic _) => app_localizations_so.AppLocalizationsSo(),
+      );
     case 'sq':
-      return AppLocalizationsSq();
+      return app_localizations_sq.loadLibrary().then(
+        (dynamic _) => app_localizations_sq.AppLocalizationsSq(),
+      );
     case 'sr':
-      return AppLocalizationsSr();
+      return app_localizations_sr.loadLibrary().then(
+        (dynamic _) => app_localizations_sr.AppLocalizationsSr(),
+      );
     case 'st':
-      return AppLocalizationsSt();
+      return app_localizations_st.loadLibrary().then(
+        (dynamic _) => app_localizations_st.AppLocalizationsSt(),
+      );
     case 'su':
-      return AppLocalizationsSu();
+      return app_localizations_su.loadLibrary().then(
+        (dynamic _) => app_localizations_su.AppLocalizationsSu(),
+      );
     case 'sv':
-      return AppLocalizationsSv();
+      return app_localizations_sv.loadLibrary().then(
+        (dynamic _) => app_localizations_sv.AppLocalizationsSv(),
+      );
     case 'sw':
-      return AppLocalizationsSw();
+      return app_localizations_sw.loadLibrary().then(
+        (dynamic _) => app_localizations_sw.AppLocalizationsSw(),
+      );
     case 'ta':
-      return AppLocalizationsTa();
+      return app_localizations_ta.loadLibrary().then(
+        (dynamic _) => app_localizations_ta.AppLocalizationsTa(),
+      );
     case 'te':
-      return AppLocalizationsTe();
+      return app_localizations_te.loadLibrary().then(
+        (dynamic _) => app_localizations_te.AppLocalizationsTe(),
+      );
     case 'tg':
-      return AppLocalizationsTg();
+      return app_localizations_tg.loadLibrary().then(
+        (dynamic _) => app_localizations_tg.AppLocalizationsTg(),
+      );
     case 'th':
-      return AppLocalizationsTh();
+      return app_localizations_th.loadLibrary().then(
+        (dynamic _) => app_localizations_th.AppLocalizationsTh(),
+      );
     case 'ti':
-      return AppLocalizationsTi();
+      return app_localizations_ti.loadLibrary().then(
+        (dynamic _) => app_localizations_ti.AppLocalizationsTi(),
+      );
     case 'tk':
-      return AppLocalizationsTk();
+      return app_localizations_tk.loadLibrary().then(
+        (dynamic _) => app_localizations_tk.AppLocalizationsTk(),
+      );
     case 'tn':
-      return AppLocalizationsTn();
+      return app_localizations_tn.loadLibrary().then(
+        (dynamic _) => app_localizations_tn.AppLocalizationsTn(),
+      );
     case 'tr':
-      return AppLocalizationsTr();
+      return app_localizations_tr.loadLibrary().then(
+        (dynamic _) => app_localizations_tr.AppLocalizationsTr(),
+      );
     case 'ts':
-      return AppLocalizationsTs();
+      return app_localizations_ts.loadLibrary().then(
+        (dynamic _) => app_localizations_ts.AppLocalizationsTs(),
+      );
     case 'tt':
-      return AppLocalizationsTt();
+      return app_localizations_tt.loadLibrary().then(
+        (dynamic _) => app_localizations_tt.AppLocalizationsTt(),
+      );
     case 'ug':
-      return AppLocalizationsUg();
+      return app_localizations_ug.loadLibrary().then(
+        (dynamic _) => app_localizations_ug.AppLocalizationsUg(),
+      );
     case 'uk':
-      return AppLocalizationsUk();
+      return app_localizations_uk.loadLibrary().then(
+        (dynamic _) => app_localizations_uk.AppLocalizationsUk(),
+      );
     case 'ur':
-      return AppLocalizationsUr();
+      return app_localizations_ur.loadLibrary().then(
+        (dynamic _) => app_localizations_ur.AppLocalizationsUr(),
+      );
     case 'uz':
-      return AppLocalizationsUz();
+      return app_localizations_uz.loadLibrary().then(
+        (dynamic _) => app_localizations_uz.AppLocalizationsUz(),
+      );
     case 'vi':
-      return AppLocalizationsVi();
+      return app_localizations_vi.loadLibrary().then(
+        (dynamic _) => app_localizations_vi.AppLocalizationsVi(),
+      );
     case 'wo':
-      return AppLocalizationsWo();
+      return app_localizations_wo.loadLibrary().then(
+        (dynamic _) => app_localizations_wo.AppLocalizationsWo(),
+      );
     case 'xh':
-      return AppLocalizationsXh();
+      return app_localizations_xh.loadLibrary().then(
+        (dynamic _) => app_localizations_xh.AppLocalizationsXh(),
+      );
     case 'yo':
-      return AppLocalizationsYo();
+      return app_localizations_yo.loadLibrary().then(
+        (dynamic _) => app_localizations_yo.AppLocalizationsYo(),
+      );
     case 'zh':
-      return AppLocalizationsZh();
+      return app_localizations_zh.loadLibrary().then(
+        (dynamic _) => app_localizations_zh.AppLocalizationsZh(),
+      );
     case 'zu':
-      return AppLocalizationsZu();
+      return app_localizations_zu.loadLibrary().then(
+        (dynamic _) => app_localizations_zu.AppLocalizationsZu(),
+      );
   }
 
   throw FlutterError(

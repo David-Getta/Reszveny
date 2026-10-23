@@ -4,6 +4,7 @@ import 'app_services.dart';
 import 'features/invite/invite_page.dart';
 import 'features/onboarding/onboarding_page.dart';
 import 'features/shell/app_shell.dart';
+import 'l10n/app_l10n_delegate.dart';
 import 'l10n/fallback_delegates.dart';
 import 'l10n/generated/app_localizations.dart';
 import 'l10n/supported_locales.dart';
@@ -16,7 +17,7 @@ class WhatStockApp extends StatelessWidget {
 
   /// A fordítások delegate-jei (tesztekben is használjuk).
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = [
-    AppLocalizations.delegate,
+    AppL10nDelegate(),
     ...fallbackGlobalDelegates,
   ];
 

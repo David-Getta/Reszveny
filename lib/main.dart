@@ -57,6 +57,7 @@ Future<void> main() async {
   };
   // Háttérbe kerüléskor elküldjük, ami összegyűlt.
   AppLifecycleListener(onHide: telemetry.flush, onDetach: telemetry.flush);
+  await services.loadTexts();
   runApp(WhatStockApp(services: services));
   telemetry.track('app_open');
   // Belépett fióknál a portfólió, a kedvencek, a riasztások és a jegyzetek szinkronja.

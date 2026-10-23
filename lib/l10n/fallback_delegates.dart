@@ -34,13 +34,13 @@ class DirectionalWidgetsLocalizationsDelegate extends LocalizationsDelegate<Widg
   @override
   bool isSupported(Locale locale) => true;
 
+  // `then`-nel: a beépített delegate szinkron tölt, így ez is (nincs üres első képkocka).
   @override
-  Future<WidgetsLocalizations> load(Locale locale) async {
-    final loaded = await _inner.load(locale);
+  Future<WidgetsLocalizations> load(Locale locale) => _inner.load(locale).then((loaded) {
     final rtl = SupportedLocales.isRtl(locale);
     if (rtl == (loaded.textDirection == TextDirection.rtl)) return loaded;
     return rtl ? const _RtlWidgetsLocalizations() : const DefaultWidgetsLocalizations();
-  }
+  });
 
   @override
   bool shouldReload(covariant LocalizationsDelegate<WidgetsLocalizations> old) => false;
