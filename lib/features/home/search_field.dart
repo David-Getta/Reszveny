@@ -110,17 +110,26 @@ class _SearchFieldState extends State<SearchField> {
                 duration: const Duration(milliseconds: 150),
                 opacity: _hasText && widget.enabled ? 1 : 0.45,
                 // Képernyőolvasónak (és egérrel rámutatva) a gomb neve.
-                child: Tooltip(
-                  message: AppLocalizations.of(context).lookUp,
-                  child: Material(
-                    color: p.accent,
-                    shape: const CircleBorder(),
-                    child: InkWell(
-                      customBorder: const CircleBorder(),
+                // Gombként jelenik meg, és legalább 48×48-as a koppintási felülete (a kör 36 pont).
+                child: Semantics(
+                  button: true,
+                  child: Tooltip(
+                    message: AppLocalizations.of(context).lookUp,
+                    child: InkResponse(
                       onTap: widget.enabled ? _submit : null,
-                      child: const Padding(
-                        padding: EdgeInsets.all(8),
-                        child: Icon(Icons.arrow_upward_rounded, color: Colors.white, size: 20),
+                      radius: 24,
+                      child: SizedBox.square(
+                        dimension: 48,
+                        child: Center(
+                          child: Material(
+                            color: p.accent,
+                            shape: const CircleBorder(),
+                            child: const Padding(
+                              padding: EdgeInsets.all(8),
+                              child: Icon(Icons.arrow_upward_rounded, color: Colors.white, size: 20),
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ),

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.281)
+# Változásjegyzék (0.2.130 → 0.2.282)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Akadálymentesség és jobbról balra író nyelvek: egy huszonnyolcadik kódátnézés javításai
+
+- **0.2.282**: arab, héber és perzsa felületen az adatforrás angol szövegei (cégnév, cégleírás, hírcímek) balról
+  jobbra futnak, így a mondatvégi pont nem ugrik az elejére („.Apple Inc”). A portfólió sorainak ikonja, az
+  osztalékok évenkénti változása, az AI-portfólióelemzés felsoroláspontjai, több kártya és a lapok fejléce
+  irányfüggő térközt kap; a széles nézet oldalsávjának elválasztó vonala a tartalom felé esik, és az összecsukott
+  szakasz nyila a címe felé mutat. Képernyőolvasóval: a keresés gombja 48×48-as gomb, a „Miért mozog ma?” jel
+  nagyobb koppintási felületet kap, a kedvencek, a piacok, a portfóliókártya és -sorok, a csomag-jelző, a
+  figyelőlista sorai és a mutatók ⓘ-jelölői gombként jelennek meg, a nyelvkereső törlőgombja nevet kap, és az
+  elemzői vélemények havi grafikonja számokkal is elmondja a megoszlást. A kabil és a macedón fordításban néhány,
+  más írásrendszerbe tartozó hasonló betű javítva.
 
 ## Kezdőképernyő: egy huszonhetedik kódátnézés javításai
 

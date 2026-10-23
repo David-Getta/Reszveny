@@ -159,7 +159,7 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(top: 7, right: 8),
+                        padding: const EdgeInsetsDirectional.only(top: 7, end: 8),
                         child: Icon(Icons.circle, size: 6, color: p.accent),
                       ),
                       Expanded(child: Text(b, style: theme.textTheme.bodyMedium?.copyWith(height: 1.45))),

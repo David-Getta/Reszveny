@@ -172,7 +172,7 @@ class _AskSheetState extends State<_AskSheet> {
               SafeArea(
                 top: false,
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(12, 8, 8, 8),
+                  padding: const EdgeInsetsDirectional.fromSTEB(12, 8, 8, 8),
                   child: Row(
                     children: [
                       Expanded(

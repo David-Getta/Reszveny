@@ -818,201 +818,206 @@ class _WatchRow extends StatelessWidget {
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     return Material(
       color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 8, 10),
-          child: Row(
-            children: [
-              SizedBox(
-                width: 72,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Row(
-                      children: [
-                        Flexible(
-                          child: Text(
-                            symbol,
-                            overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(fontWeight: FontWeight.w700),
-                          ),
-                        ),
-                        if (hasAlert)
-                          Padding(
-                            padding: const EdgeInsetsDirectional.only(start: 3),
-                            child: Tooltip(
-                              message: l10n.priceAlerts,
-                              child: Icon(
-                                Icons.notifications_active_rounded,
-                                key: ValueKey('watch-alert-$symbol'),
-                                size: 13,
-                                color: p.accent,
-                              ),
+      child: Semantics(
+        button: true,
+        child: InkWell(
+          onTap: onTap,
+          child: Padding(
+            padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 8, 10),
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 72,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Row(
+                        children: [
+                          Flexible(
+                            child: Text(
+                              symbol,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(fontWeight: FontWeight.w700),
                             ),
                           ),
-                        if (hasNote)
-                          Padding(
-                            padding: const EdgeInsetsDirectional.only(start: 3),
-                            child: Tooltip(
-                              message: l10n.notesTitle,
-                              child: Icon(
-                                Icons.sticky_note_2_outlined,
-                                key: ValueKey('watch-note-$symbol'),
-                                size: 12,
-                                color: p.muted,
-                              ),
-                            ),
-                          ),
-                      ],
-                    ),
-                    if (result case final r? when earnings == null && r.result.surprise != null)
-                      Tooltip(
-                        message:
-                            '${r.result.beat == true ? l10n.earningsResultBeat(symbol) : l10n.earningsResultMiss(symbol)}'
-                            ' · ${l10n.earningsResultBody(fmt.number(r.result.actual), fmt.number(r.result.estimate))}',
-                        child: Row(
-                          key: ValueKey('watch-result-$symbol'),
-                          children: [
-                            Icon(
-                              r.result.beat == true ? Icons.trending_up_rounded : Icons.trending_down_rounded,
-                              size: 11,
-                              color: r.result.beat == true ? p.positive : p.negative,
-                            ),
-                            const SizedBox(width: 3),
-                            Flexible(
-                              child: Text(
-                                'EPS ${fmt.percent(r.result.surprise, withSign: true, decimals: 1)}',
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: theme.textTheme.labelSmall?.copyWith(
-                                  color: r.result.beat == true ? p.positive : p.negative,
+                          if (hasAlert)
+                            Padding(
+                              padding: const EdgeInsetsDirectional.only(start: 3),
+                              child: Tooltip(
+                                message: l10n.priceAlerts,
+                                child: Icon(
+                                  Icons.notifications_active_rounded,
+                                  key: ValueKey('watch-alert-$symbol'),
+                                  size: 13,
+                                  color: p.accent,
                                 ),
                               ),
                             ),
-                          ],
-                        ),
-                      ),
-                    if (earnings case final e?)
-                      Tooltip(
-                        message: '${l10n.eventEarnings} · ${fmt.date(e.date)}',
-                        child: Row(
-                          key: ValueKey('watch-earnings-$symbol'),
-                          children: [
-                            Icon(Icons.event_note_rounded, size: 11, color: p.accent),
-                            const SizedBox(width: 3),
-                            Flexible(
-                              child: Text(
-                                eventWhen(l10n, e.date, DateTime.now()),
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: theme.textTheme.labelSmall?.copyWith(color: p.accent),
+                          if (hasNote)
+                            Padding(
+                              padding: const EdgeInsetsDirectional.only(start: 3),
+                              child: Tooltip(
+                                message: l10n.notesTitle,
+                                child: Icon(
+                                  Icons.sticky_note_2_outlined,
+                                  key: ValueKey('watch-note-$symbol'),
+                                  size: 12,
+                                  color: p.muted,
+                                ),
                               ),
                             ),
-                          ],
-                        ),
+                        ],
                       ),
-                  ],
+                      if (result case final r? when earnings == null && r.result.surprise != null)
+                        Tooltip(
+                          message:
+                              '${r.result.beat == true ? l10n.earningsResultBeat(symbol) : l10n.earningsResultMiss(symbol)}'
+                              ' · ${l10n.earningsResultBody(fmt.number(r.result.actual), fmt.number(r.result.estimate))}',
+                          child: Row(
+                            key: ValueKey('watch-result-$symbol'),
+                            children: [
+                              Icon(
+                                r.result.beat == true ? Icons.trending_up_rounded : Icons.trending_down_rounded,
+                                size: 11,
+                                color: r.result.beat == true ? p.positive : p.negative,
+                              ),
+                              const SizedBox(width: 3),
+                              Flexible(
+                                child: Text(
+                                  'EPS ${fmt.percent(r.result.surprise, withSign: true, decimals: 1)}',
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: theme.textTheme.labelSmall?.copyWith(
+                                    color: r.result.beat == true ? p.positive : p.negative,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      if (earnings case final e?)
+                        Tooltip(
+                          message: '${l10n.eventEarnings} · ${fmt.date(e.date)}',
+                          child: Row(
+                            key: ValueKey('watch-earnings-$symbol'),
+                            children: [
+                              Icon(Icons.event_note_rounded, size: 11, color: p.accent),
+                              const SizedBox(width: 3),
+                              Flexible(
+                                child: Text(
+                                  eventWhen(l10n, e.date, DateTime.now()),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: theme.textTheme.labelSmall?.copyWith(color: p.accent),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                    ],
+                  ),
                 ),
-              ),
-              Expanded(
-                child: FutureBuilder<PriceHistory>(
-                  future: history,
+                Expanded(
+                  child: FutureBuilder<PriceHistory>(
+                    future: history,
+                    builder: (context, snap) {
+                      final pts = snap.data?.lastDays(30) ?? const [];
+                      if (pts.length < 2) return const SizedBox(height: 32);
+                      final up = pts.last.close >= pts.first.close;
+                      return SizedBox(
+                        height: 32,
+                        child: CustomPaint(
+                          painter: _Spark([for (final x in pts) x.close], up ? p.positive : p.negative),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+                const SizedBox(width: 12),
+                FutureBuilder<StockQuote>(
+                  future: quote,
                   builder: (context, snap) {
-                    final pts = snap.data?.lastDays(30) ?? const [];
-                    if (pts.length < 2) return const SizedBox(height: 32);
-                    final up = pts.last.close >= pts.first.close;
+                    final q = snap.data;
                     return SizedBox(
-                      height: 32,
-                      child: CustomPaint(painter: _Spark([for (final x in pts) x.close], up ? p.positive : p.negative)),
+                      width: 110,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text(
+                            q == null ? (snap.hasError ? l10n.notAvailable : '…') : fmt.number(q.price),
+                            style: const TextStyle(fontWeight: FontWeight.w600),
+                          ),
+                          if (q != null)
+                            // Nagy napi mozgásnál koppintásra „Miért mozog ma?”.
+                            if (q.changePercent case final pct? when pct.abs() >= MoveExplainer.minMovePercent)
+                              InkWell(
+                                key: ValueKey('watch-move-$symbol'),
+                                borderRadius: BorderRadius.circular(6),
+                                onTap: () =>
+                                    showMoveExplanation(context, symbol: symbol, name: symbol, changePercent: pct),
+                                // Keskeny telefonon, nagy betűvel kicsinyítve fér el.
+                                child: FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  alignment: Alignment.centerRight,
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Tooltip(
+                                        message: l10n.moveWhyButton,
+                                        child: Icon(Icons.auto_awesome_outlined, size: 12, color: p.accent),
+                                      ),
+                                      const SizedBox(width: 3),
+                                      Text(
+                                        fmt.percent(pct, withSign: true),
+                                        style: theme.textTheme.bodySmall?.copyWith(
+                                          color: q.isUp ? p.positive : p.negative,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            else
+                              Text(
+                                fmt.percent(q.changePercent, withSign: true),
+                                style: theme.textTheme.bodySmall?.copyWith(color: q.isUp ? p.positive : p.negative),
+                              ),
+                          // „Mióta figyeled”: a felvétel napi (vagy utána első) záróárhoz képest.
+                          if ((q, since) case (final q?, final since?))
+                            FutureBuilder<PriceHistory>(
+                              future: history,
+                              builder: (context, h) {
+                                final pct = sinceAddedPercent(q.price, h.data?.points ?? const [], since);
+                                if (pct == null) return const SizedBox.shrink();
+                                return Tooltip(
+                                  message: l10n.watchSince(fmt.date(since)),
+                                  child: Row(
+                                    key: ValueKey('watch-since-$symbol'),
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Icon(Icons.star_rounded, size: 10, color: p.muted),
+                                      const SizedBox(width: 2),
+                                      Text(
+                                        fmt.percent(pct, withSign: true, decimals: 1),
+                                        style: theme.textTheme.labelSmall?.copyWith(
+                                          color: pct >= 0 ? p.positive : p.negative,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                              },
+                            ),
+                        ],
+                      ),
                     );
                   },
                 ),
-              ),
-              const SizedBox(width: 12),
-              FutureBuilder<StockQuote>(
-                future: quote,
-                builder: (context, snap) {
-                  final q = snap.data;
-                  return SizedBox(
-                    width: 110,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          q == null ? (snap.hasError ? l10n.notAvailable : '…') : fmt.number(q.price),
-                          style: const TextStyle(fontWeight: FontWeight.w600),
-                        ),
-                        if (q != null)
-                          // Nagy napi mozgásnál koppintásra „Miért mozog ma?”.
-                          if (q.changePercent case final pct? when pct.abs() >= MoveExplainer.minMovePercent)
-                            InkWell(
-                              key: ValueKey('watch-move-$symbol'),
-                              borderRadius: BorderRadius.circular(6),
-                              onTap: () =>
-                                  showMoveExplanation(context, symbol: symbol, name: symbol, changePercent: pct),
-                              // Keskeny telefonon, nagy betűvel kicsinyítve fér el.
-                              child: FittedBox(
-                                fit: BoxFit.scaleDown,
-                                alignment: Alignment.centerRight,
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Tooltip(
-                                      message: l10n.moveWhyButton,
-                                      child: Icon(Icons.auto_awesome_outlined, size: 12, color: p.accent),
-                                    ),
-                                    const SizedBox(width: 3),
-                                    Text(
-                                      fmt.percent(pct, withSign: true),
-                                      style: theme.textTheme.bodySmall?.copyWith(
-                                        color: q.isUp ? p.positive : p.negative,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            )
-                          else
-                            Text(
-                              fmt.percent(q.changePercent, withSign: true),
-                              style: theme.textTheme.bodySmall?.copyWith(color: q.isUp ? p.positive : p.negative),
-                            ),
-                        // „Mióta figyeled”: a felvétel napi (vagy utána első) záróárhoz képest.
-                        if ((q, since) case (final q?, final since?))
-                          FutureBuilder<PriceHistory>(
-                            future: history,
-                            builder: (context, h) {
-                              final pct = sinceAddedPercent(q.price, h.data?.points ?? const [], since);
-                              if (pct == null) return const SizedBox.shrink();
-                              return Tooltip(
-                                message: l10n.watchSince(fmt.date(since)),
-                                child: Row(
-                                  key: ValueKey('watch-since-$symbol'),
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Icon(Icons.star_rounded, size: 10, color: p.muted),
-                                    const SizedBox(width: 2),
-                                    Text(
-                                      fmt.percent(pct, withSign: true, decimals: 1),
-                                      style: theme.textTheme.labelSmall?.copyWith(
-                                        color: pct >= 0 ? p.positive : p.negative,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              );
-                            },
-                          ),
-                      ],
-                    ),
-                  );
-                },
-              ),
-              ?trailing,
-              if (trailing == null) const SizedBox(width: 8),
-            ],
+                ?trailing,
+                if (trailing == null) const SizedBox(width: 8),
+              ],
+            ),
           ),
         ),
       ),

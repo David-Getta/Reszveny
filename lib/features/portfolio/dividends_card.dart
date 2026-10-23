@@ -59,7 +59,7 @@ class DividendsCard extends StatelessWidget {
         return Card(
           key: const ValueKey('portfolio-dividends-received'),
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(16, 8, 8, 12),
+            padding: const EdgeInsetsDirectional.fromSTEB(16, 8, 8, 12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -171,7 +171,7 @@ class DividendsCard extends StatelessWidget {
                                     if (y < year && byYear.containsKey(y - 1))
                                       if (yearChange(byYear[y]!, byYear[y - 1]!) case final c?)
                                         Padding(
-                                          padding: const EdgeInsets.only(right: 10),
+                                          padding: const EdgeInsetsDirectional.only(end: 10),
                                           child: Text(
                                             fmt.percent(c, withSign: true, decimals: 0),
                                             key: ValueKey('dividends-year-change-$y'),
@@ -310,7 +310,7 @@ class DividendsCard extends StatelessWidget {
                     ),
                   const SizedBox(height: 4),
                   Padding(
-                    padding: const EdgeInsets.only(right: 8),
+                    padding: const EdgeInsetsDirectional.only(end: 8),
                     child: Text(
                       l10n.portfolioDividendsHint,
                       style: theme.textTheme.bodySmall?.copyWith(color: p.muted),

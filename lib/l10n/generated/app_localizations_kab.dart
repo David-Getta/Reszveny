@@ -1522,7 +1522,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get onboardBody1 =>
-      'Agdil n usnas n broker, taɣmist neɣ alugu n tkebbanit yekfa: WhatStock ad yeεqel aksyun, ad k-d-yesken ssuma-s, udlif-is d yimḍanen-is igejdanen.';
+      'Agdil n usnas n broker, taɣmist neɣ alugu n tkebbanit yekfa: WhatStock ad yeɛqel aksyun, ad k-d-yesken ssuma-s, udlif-is d yimḍanen-is igejdanen.';
 
   @override
   String get onboardTitle2 => 'Fhem-it deg kra n tesdatin';
@@ -1860,7 +1860,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String portfolioSellTooMany(String quantity) {
-    return 'Tesεiḍ $quantity';
+    return 'Tesɛiḍ $quantity';
   }
 
   @override
@@ -2337,7 +2337,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get targetsHint =>
-      'Sbadu acḥal n uḥric seg upurtfulyu ara yesεu yal iksyun. Eǧǧ urti d ilem ma ulac iswi. Syin asnas ad ak-d-yesken d acu ara taɣeḍ neɣ ara tzenzeḍ akken ad tawḍeḍ ɣer din.';
+      'Sbadu acḥal n uḥric seg upurtfulyu ara yesɛu yal iksyun. Eǧǧ urti d ilem ma ulac iswi. Syin asnas ad ak-d-yesken d acu ara taɣeḍ neɣ ara tzenzeḍ akken ad tawḍeḍ ɣer din.';
 
   @override
   String targetsSum(String percent) {

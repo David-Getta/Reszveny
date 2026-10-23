@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../app_services.dart';
+import '../../core/util/bidi.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
@@ -139,7 +140,12 @@ class WatchNewsTile extends StatelessWidget {
           ),
         ),
       ),
-      title: Text(n.headline, maxLines: 2, overflow: TextOverflow.ellipsis),
+      title: Text(
+        n.headline,
+        textDirection: contentDirection(n.headline),
+        maxLines: 2,
+        overflow: TextOverflow.ellipsis,
+      ),
       subtitle: Text(
         [?n.source, analysisAgeText(l10n, n.publishedAt)].join(' · '),
         style: theme.textTheme.bodySmall?.copyWith(color: p.muted),

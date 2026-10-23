@@ -304,7 +304,7 @@ class _PortfolioBody extends StatelessWidget {
                   ),
                   if (account != null)
                     Padding(
-                      padding: const EdgeInsets.only(top: 4, left: 4),
+                      padding: const EdgeInsetsDirectional.only(top: 4, start: 4),
                       child: Text(
                         l10n.portfolioAccountNote,
                         style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
@@ -523,7 +523,7 @@ class _SampleBanner extends StatelessWidget {
       key: const ValueKey('portfolio-sample'),
       color: p.accent.withValues(alpha: 0.12),
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(16, 10, 8, 10),
+        padding: const EdgeInsetsDirectional.fromSTEB(16, 10, 8, 10),
         child: FitRow(
           lead: Row(
             children: [
@@ -648,7 +648,7 @@ class _PositionsSectionState extends State<_PositionsSection> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Padding(
-          padding: const EdgeInsets.fromLTRB(4, 8, 0, 0),
+          padding: const EdgeInsetsDirectional.fromSTEB(4, 8, 0, 0),
           child: Row(
             children: [
               Expanded(
@@ -721,80 +721,83 @@ class _PositionTile extends StatelessWidget {
     final theme = Theme.of(context);
     final pos = row.position;
     final ccy = pos.currency;
-    return InkWell(
-      onTap: () => onOpenSymbol(StockCandidate(symbol: pos.symbol, companyName: pos.symbol, confidence: 1)),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(16, 12, 4, 12),
-        child: Row(
-          children: [
-            CircleAvatar(
-              radius: 18,
-              backgroundColor: p.accent.withValues(alpha: 0.16),
-              foregroundColor: p.accent,
-              child: Text(
-                pos.symbol.substring(0, pos.symbol.length.clamp(0, 2)),
-                style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13),
+    return Semantics(
+      button: true,
+      child: InkWell(
+        onTap: () => onOpenSymbol(StockCandidate(symbol: pos.symbol, companyName: pos.symbol, confidence: 1)),
+        child: Padding(
+          padding: const EdgeInsetsDirectional.fromSTEB(16, 12, 4, 12),
+          child: Row(
+            children: [
+              CircleAvatar(
+                radius: 18,
+                backgroundColor: p.accent.withValues(alpha: 0.16),
+                foregroundColor: p.accent,
+                child: Text(
+                  pos.symbol.substring(0, pos.symbol.length.clamp(0, 2)),
+                  style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13),
+                ),
               ),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(pos.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
-                  Text(
-                    '${fmt.quantity(pos.quantity)} × '
-                    '${fmt.money(row.price, ccy)} · ${l10n.portfolioAvgCost(fmt.money(pos.averageCost, ccy, showCurrency: false))}',
-                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                  ),
-                  if (row.annualDividend case final d?)
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(pos.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
                     Text(
-                      l10n.positionDividend(fmt.money(d, ccy)),
-                      style: theme.textTheme.bodySmall?.copyWith(color: p.positive),
+                      '${fmt.quantity(pos.quantity)} × '
+                      '${fmt.money(row.price, ccy)} · ${l10n.portfolioAvgCost(fmt.money(pos.averageCost, ccy, showCurrency: false))}',
+                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                     ),
-                  // Friss negyedéves eredmény (mint a Kedvencek listán): „EPS +2,7%”.
-                  if (AppServices.of(context).events.recent.where((r) => r.symbol == pos.symbol).firstOrNull
-                      case final r? when r.result.surprise != null)
-                    Tooltip(
-                      message:
-                          '${r.result.beat == true ? l10n.earningsResultBeat(pos.symbol) : l10n.earningsResultMiss(pos.symbol)}'
-                          ' · ${l10n.earningsResultBody(fmt.number(r.result.actual), fmt.number(r.result.estimate))}',
-                      child: Text(
-                        'EPS ${fmt.percent(r.result.surprise, withSign: true, decimals: 1)}',
-                        key: ValueKey('position-result-${pos.symbol}'),
-                        style: theme.textTheme.labelSmall?.copyWith(
-                          color: r.result.beat == true ? p.positive : p.negative,
+                    if (row.annualDividend case final d?)
+                      Text(
+                        l10n.positionDividend(fmt.money(d, ccy)),
+                        style: theme.textTheme.bodySmall?.copyWith(color: p.positive),
+                      ),
+                    // Friss negyedéves eredmény (mint a Kedvencek listán): „EPS +2,7%”.
+                    if (AppServices.of(context).events.recent.where((r) => r.symbol == pos.symbol).firstOrNull
+                        case final r? when r.result.surprise != null)
+                      Tooltip(
+                        message:
+                            '${r.result.beat == true ? l10n.earningsResultBeat(pos.symbol) : l10n.earningsResultMiss(pos.symbol)}'
+                            ' · ${l10n.earningsResultBody(fmt.number(r.result.actual), fmt.number(r.result.estimate))}',
+                        child: Text(
+                          'EPS ${fmt.percent(r.result.surprise, withSign: true, decimals: 1)}',
+                          key: ValueKey('position-result-${pos.symbol}'),
+                          style: theme.textTheme.labelSmall?.copyWith(
+                            color: r.result.beat == true ? p.positive : p.negative,
+                          ),
                         ),
                       ),
-                    ),
-                ],
-              ),
-            ),
-            const SizedBox(width: 8),
-            // Keskeny képernyőn a számok kicsinyülnek, nem lógnak ki.
-            Flexible(
-              child: FittedBox(
-                fit: BoxFit.scaleDown,
-                alignment: AlignmentDirectional.centerEnd,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    Text(fmt.money(row.value, ccy), style: const TextStyle(fontWeight: FontWeight.w600)),
-                    Text(
-                      '${fmt.money(row.gain, ccy, withSign: true, showCurrency: false)} (${fmt.percent(row.gainPercent, withSign: true)})',
-                      style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, row.gain)),
-                    ),
                   ],
                 ),
               ),
-            ),
-            IconButton(
-              key: ValueKey('position-menu-${pos.symbol}'),
-              tooltip: l10n.portfolioTransactions,
-              icon: Icon(Icons.more_vert_rounded, color: p.muted),
-              onPressed: () => showPurchasesSheet(context, pos, currentPrice: row.price, account: account),
-            ),
-          ],
+              const SizedBox(width: 8),
+              // Keskeny képernyőn a számok kicsinyülnek, nem lógnak ki.
+              Flexible(
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  alignment: AlignmentDirectional.centerEnd,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text(fmt.money(row.value, ccy), style: const TextStyle(fontWeight: FontWeight.w600)),
+                      Text(
+                        '${fmt.money(row.gain, ccy, withSign: true, showCurrency: false)} (${fmt.percent(row.gainPercent, withSign: true)})',
+                        style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, row.gain)),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              IconButton(
+                key: ValueKey('position-menu-${pos.symbol}'),
+                tooltip: l10n.portfolioTransactions,
+                icon: Icon(Icons.more_vert_rounded, color: p.muted),
+                onPressed: () => showPurchasesSheet(context, pos, currentPrice: row.price, account: account),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -829,72 +832,76 @@ class PortfolioSummaryCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 side: BorderSide(color: p.border),
               ),
-              child: InkWell(
-                borderRadius: BorderRadius.circular(12),
-                onTap: () =>
-                    Navigator.of(context)
-                        .push(MaterialPageRoute<void>(builder: (_) => PortfolioPage(onOpenSymbol: onOpenSymbol))),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                  child: Row(
-                    children: [
-                      Icon(Icons.pie_chart_outline_rounded, color: p.accent),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(l10n.portfolio, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
-                            Text(
-                              s == null ? '…' : (s.unknown ? l10n.notAvailable : fmt.money(s.totalValue, s.currency)),
-                              style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
-                            ),
-                            // Ár nélküli papírok (pl. nem USA-részvény): nevesítve, nem csak „n/a”.
-                            if (s != null && s.hasExcluded)
+              child: Semantics(
+                button: true,
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(12),
+                  onTap: () =>
+                      Navigator.of(context)
+                          .push(MaterialPageRoute<void>(builder: (_) => PortfolioPage(onOpenSymbol: onOpenSymbol))),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    child: Row(
+                      children: [
+                        Icon(Icons.pie_chart_outline_rounded, color: p.accent),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(l10n.portfolio, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
                               Text(
-                                l10n.portfolioNoPriceFor(
-                                  s.rows.where((r) => !r.inTotal).map((r) => r.position.symbol).join(', '),
+                                s == null ? '…' : (s.unknown ? l10n.notAvailable : fmt.money(s.totalValue, s.currency)),
+                                style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
+                              ),
+                              // Ár nélküli papírok (pl. nem USA-részvény): nevesítve, nem csak „n/a”.
+                              if (s != null && s.hasExcluded)
+                                Text(
+                                  l10n.portfolioNoPriceFor(
+                                    s.rows.where((r) => !r.inTotal).map((r) => r.position.symbol).join(', '),
+                                  ),
+                                  key: const ValueKey('portfolio-no-price'),
+                                  style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                                 ),
-                                key: const ValueKey('portfolio-no-price'),
-                                style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                              ),
-                            // A változások az érték alatt, hogy keskeny képernyőn se lógjanak ki.
-                            if (s != null && !s.unknown)
-                              Wrap(
-                                spacing: 12,
-                                children: [
-                                  Text(
-                                    '${l10n.portfolioToday} ${fmt.percent(s.dayGainPercent, withSign: true)}',
-                                    style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, s.dayGain)),
-                                  ),
-                                  Text(
-                                    '${l10n.portfolioGainLoss} ${fmt.percent(s.gainPercent, withSign: true)}',
-                                    style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, s.gain)),
-                                  ),
-                                  // Az idén kapott osztalék a portfólió pénznemében (ha van).
-                                  // A bejelentett (jövőbeli) kifizetés még nem kapott osztalék.
-                                  if (services.portfolio.dividends
-                                          .where(
-                                            (d) =>
-                                                d.date?.year == DateTime.now().year && !d.date!.isAfter(DateTime.now()),
-                                          )
-                                          .toList()
-                                      case final ds when ds.isNotEmpty)
-                                    _YearDividends(dividends: ds, currency: s.currency, fmt: fmt),
-                                ],
-                              ),
-                            // Mi mozgatta ma: a két legnagyobb mai változás (ha legalább kettő mozdult).
-                            if (s != null && !s.unknown && topDayMovers(s).isNotEmpty)
-                              Padding(
-                                padding: const EdgeInsets.only(top: 2),
-                                child: _TodayMovers(snapshot: s, fmt: fmt),
-                              ),
-                          ],
+                              // A változások az érték alatt, hogy keskeny képernyőn se lógjanak ki.
+                              if (s != null && !s.unknown)
+                                Wrap(
+                                  spacing: 12,
+                                  children: [
+                                    Text(
+                                      '${l10n.portfolioToday} ${fmt.percent(s.dayGainPercent, withSign: true)}',
+                                      style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, s.dayGain)),
+                                    ),
+                                    Text(
+                                      '${l10n.portfolioGainLoss} ${fmt.percent(s.gainPercent, withSign: true)}',
+                                      style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, s.gain)),
+                                    ),
+                                    // Az idén kapott osztalék a portfólió pénznemében (ha van).
+                                    // A bejelentett (jövőbeli) kifizetés még nem kapott osztalék.
+                                    if (services.portfolio.dividends
+                                            .where(
+                                              (d) =>
+                                                  d.date?.year == DateTime.now().year &&
+                                                  !d.date!.isAfter(DateTime.now()),
+                                            )
+                                            .toList()
+                                        case final ds when ds.isNotEmpty)
+                                      _YearDividends(dividends: ds, currency: s.currency, fmt: fmt),
+                                  ],
+                                ),
+                              // Mi mozgatta ma: a két legnagyobb mai változás (ha legalább kettő mozdult).
+                              if (s != null && !s.unknown && topDayMovers(s).isNotEmpty)
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 2),
+                                  child: _TodayMovers(snapshot: s, fmt: fmt),
+                                ),
+                            ],
+                          ),
                         ),
-                      ),
-                      const SizedBox(width: 4),
-                      Icon(Icons.chevron_right_rounded, color: p.muted),
-                    ],
+                        const SizedBox(width: 4),
+                        Icon(Icons.chevron_right_rounded, color: p.muted),
+                      ],
+                    ),
                   ),
                 ),
               ),

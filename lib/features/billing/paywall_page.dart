@@ -570,7 +570,7 @@ class _PackChip extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: p.border),
       ),
-      padding: const EdgeInsets.fromLTRB(14, 10, 10, 10),
+      padding: const EdgeInsetsDirectional.fromSTEB(14, 10, 10, 10),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [

@@ -343,7 +343,7 @@ class EventsPage extends StatelessWidget {
                   if (services.events.recent.isNotEmpty) ...[
                     const SizedBox(height: 24),
                     Padding(
-                      padding: const EdgeInsets.only(left: 4, bottom: 8),
+                      padding: const EdgeInsetsDirectional.only(start: 4, bottom: 8),
                       child: Text(
                         l10n.eventsRecentResults,
                         style: theme.textTheme.labelLarge?.copyWith(color: p.muted),

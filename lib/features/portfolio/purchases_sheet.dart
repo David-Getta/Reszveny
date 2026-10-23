@@ -47,7 +47,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
           // „Törölve · Visszavonás” sor a legutóbb törölt tételhez ([name]: a kulcsok előtagja).
           Widget undoRow(String name, String text, VoidCallback onUndo) => Padding(
             key: ValueKey('$name-removed'),
-            padding: const EdgeInsets.fromLTRB(20, 0, 12, 8),
+            padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 12, 8),
             child: Row(
               children: [
                 Expanded(
@@ -64,7 +64,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                 shrinkWrap: true,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 0, 12, 8),
+                    padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 12, 8),
                     child: Row(
                       children: [
                         Expanded(

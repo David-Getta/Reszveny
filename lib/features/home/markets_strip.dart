@@ -134,10 +134,10 @@ class _MarketsStripState extends State<MarketsStrip> {
           children: [
             const SizedBox(height: 24),
             Padding(
-              padding: const EdgeInsets.only(left: 4),
+              padding: const EdgeInsetsDirectional.only(start: 4),
               child: Text(l10n.marketsToday, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
             ),
-            Padding(padding: const EdgeInsets.fromLTRB(4, 2, 0, 8), child: _MarketStatus()),
+            Padding(padding: const EdgeInsetsDirectional.fromSTEB(4, 2, 0, 8), child: _MarketStatus()),
             Row(
               children: [
                 for (final (i, (symbol, name)) in MarketsStrip.markets.indexed)
@@ -151,65 +151,72 @@ class _MarketsStripState extends State<MarketsStrip> {
                             borderRadius: BorderRadius.circular(12),
                             side: BorderSide(color: p.border),
                           ),
-                          child: InkWell(
-                            key: ValueKey('market-$symbol'),
-                            borderRadius: BorderRadius.circular(12),
-                            // Demó módban csak az árfolyam van meg, részletes adat nincs.
-                            onTap: services.config.isDemoMode
-                                ? null
-                                : () => widget.onOpenSymbol(StockCandidate(symbol: symbol, companyName: name)),
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 9),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    name,
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13),
-                                  ),
-                                  const SizedBox(height: 2),
-                                  Row(
-                                    children: [
-                                      // Keskeny telefonon, nagy betűvel kicsinyítve fér el.
-                                      Flexible(
-                                        child: FittedBox(
-                                          fit: BoxFit.scaleDown,
-                                          alignment: AlignmentDirectional.centerStart,
-                                          child: Text(
-                                            fmt.percent(q.changePercent, withSign: true),
-                                            style: theme.textTheme.bodySmall?.copyWith(
-                                              color: (q.changePercent ?? 0) >= 0 ? p.positive : p.negative,
-                                              fontWeight: FontWeight.w600,
+                          child: Semantics(
+                            button: true,
+                            child: InkWell(
+                              key: ValueKey('market-$symbol'),
+                              borderRadius: BorderRadius.circular(12),
+                              // Demó módban csak az árfolyam van meg, részletes adat nincs.
+                              onTap: services.config.isDemoMode
+                                  ? null
+                                  : () => widget.onOpenSymbol(StockCandidate(symbol: symbol, companyName: name)),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 9),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      name,
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13),
+                                    ),
+                                    const SizedBox(height: 2),
+                                    Row(
+                                      children: [
+                                        // Keskeny telefonon, nagy betűvel kicsinyítve fér el.
+                                        Flexible(
+                                          child: FittedBox(
+                                            fit: BoxFit.scaleDown,
+                                            alignment: AlignmentDirectional.centerStart,
+                                            child: Text(
+                                              fmt.percent(q.changePercent, withSign: true),
+                                              style: theme.textTheme.bodySmall?.copyWith(
+                                                color: (q.changePercent ?? 0) >= 0 ? p.positive : p.negative,
+                                                fontWeight: FontWeight.w600,
+                                              ),
                                             ),
                                           ),
                                         ),
-                                      ),
-                                      // Nagy piaci mozgásnál: „Miért mozog ma?” az indexre.
-                                      if (q.changePercent case final pct? when MarketsStrip.showsWhy(pct)) ...[
-                                        const SizedBox(width: 4),
-                                        InkWell(
-                                          key: ValueKey('market-why-$symbol'),
-                                          borderRadius: BorderRadius.circular(8),
-                                          onTap: () => showMoveExplanation(
-                                            context,
-                                            symbol: symbol,
-                                            name: name,
-                                            changePercent: pct,
-                                          ),
-                                          child: Tooltip(
-                                            message: l10n.moveWhyButton,
-                                            child: Padding(
-                                              padding: const EdgeInsets.all(2),
-                                              child: Icon(Icons.auto_awesome_outlined, size: 13, color: p.accent),
+                                        // Nagy piaci mozgásnál: „Miért mozog ma?” az indexre.
+                                        if (q.changePercent case final pct? when MarketsStrip.showsWhy(pct)) ...[
+                                          const SizedBox(width: 4),
+                                          Semantics(
+                                            button: true,
+                                            child: InkWell(
+                                              key: ValueKey('market-why-$symbol'),
+                                              borderRadius: BorderRadius.circular(8),
+                                              onTap: () => showMoveExplanation(
+                                                context,
+                                                symbol: symbol,
+                                                name: name,
+                                                changePercent: pct,
+                                              ),
+                                              child: Tooltip(
+                                                message: l10n.moveWhyButton,
+                                                // Legalább 32×32-es koppintási felület (a jel maga kicsi).
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(9),
+                                                  child: Icon(Icons.auto_awesome_outlined, size: 14, color: p.accent),
+                                                ),
+                                              ),
                                             ),
                                           ),
-                                        ),
+                                        ],
                                       ],
-                                    ],
-                                  ),
-                                ],
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
@@ -228,7 +235,7 @@ class _MarketsStripState extends State<MarketsStrip> {
                 final prev = rates.length > 1 ? rates[rates.length - 2] : null;
                 final change = prev == null ? null : (last.rate / prev.rate - 1) * 100;
                 return Padding(
-                  padding: const EdgeInsets.fromLTRB(4, 8, 0, 0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(4, 8, 0, 0),
                   child: Text.rich(
                     TextSpan(
                       children: [

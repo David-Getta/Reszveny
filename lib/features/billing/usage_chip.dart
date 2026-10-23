@@ -49,36 +49,39 @@ class UsageChip extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             side: BorderSide(color: warn ? p.negative.withValues(alpha: 0.5) : p.border),
           ),
-          child: InkWell(
-            borderRadius: BorderRadius.circular(12),
-            onTap: () => PaywallPage.open(context),
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 12, vertical: compact ? 8 : 10),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(Icons.workspace_premium_outlined, size: 18, color: warn ? p.negative : p.accent),
-                  const SizedBox(width: 8),
-                  Flexible(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          label,
-                          style: const TextStyle(fontWeight: FontWeight.w600),
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                        Text(
-                          detail,
-                          style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 2,
-                        ),
-                      ],
+          child: Semantics(
+            button: true,
+            child: InkWell(
+              borderRadius: BorderRadius.circular(12),
+              onTap: () => PaywallPage.open(context),
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: compact ? 8 : 10),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.workspace_premium_outlined, size: 18, color: warn ? p.negative : p.accent),
+                    const SizedBox(width: 8),
+                    Flexible(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            label,
+                            style: const TextStyle(fontWeight: FontWeight.w600),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          Text(
+                            detail,
+                            style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 2,
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),

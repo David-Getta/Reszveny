@@ -1702,7 +1702,7 @@ class AppLocalizationsMk extends AppLocalizations {
       'Клучни бројки една до друга; најдобрата вредност во секој ред е истакната. Износите се во сопствената валута на секоја акција.';
 
   @override
-  String get compareNoAnalysis => 'Сè уште нема анализа';
+  String get compareNoAnalysis => 'Сѐ уште нема анализа';
 
   @override
   String get portfolioDividends => 'Годишни дивиденди';
@@ -1992,7 +1992,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get glossRoa =>
-      'Поврат на средствата: годишна добивка ÷ сè што поседува компанијата. Споредувајте во иста индустрија.';
+      'Поврат на средствата: годишна добивка ÷ сѐ што поседува компанијата. Споредувајте во иста индустрија.';
 
   @override
   String get glossDebtToEquity =>
@@ -2294,7 +2294,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get watchListEmpty =>
-      'Во оваа листа сè уште нема акции. Допрете го копчето за листа до акцијата за да ја додадете.';
+      'Во оваа листа сѐ уште нема акции. Допрете го копчето за листа до акцијата за да ја додадете.';
 
   @override
   String get portfolioAskTitle => 'Прашања за вашето портфолио';
@@ -2904,7 +2904,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get alertEdit => 'Уреди известување';
 
   @override
-  String get positionOpenLots => 'Сè уште во сопственост (прво најстарите)';
+  String get positionOpenLots => 'Сѐ уште во сопственост (прво најстарите)';
 
   @override
   String get lotRemoved => 'Трансакцијата е избришана';
@@ -3019,7 +3019,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get portfolioDividendsEmpty =>
-      'Сè уште нема евидентирани дивиденди. Додајте ги рачно или увезете го извозот од вашиот брокер – се преземаат и редовите со дивиденди.';
+      'Сѐ уште нема евидентирани дивиденди. Додајте ги рачно или увезете го извозот од вашиот брокер – се преземаат и редовите со дивиденди.';
 
   @override
   String get portfolioSplit => 'Поделба на акции';

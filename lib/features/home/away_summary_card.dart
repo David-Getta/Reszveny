@@ -32,7 +32,7 @@ class AwaySummaryCard extends StatelessWidget {
         return Card(
           key: const ValueKey('home-away'),
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(16, 8, 8, 14),
+            padding: const EdgeInsetsDirectional.fromSTEB(16, 8, 8, 14),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

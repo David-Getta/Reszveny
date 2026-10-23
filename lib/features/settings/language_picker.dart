@@ -76,6 +76,7 @@ class _LanguagePickerBodyState extends State<_LanguagePickerBody> {
               suffixIcon: _query.isEmpty
                   ? null
                   : IconButton(
+                      tooltip: MaterialLocalizations.of(context).clearButtonTooltip,
                       icon: const Icon(Icons.close_rounded),
                       onPressed: () {
                         _controller.clear();

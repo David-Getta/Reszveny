@@ -95,7 +95,7 @@ class _FavoritesStripState extends State<FavoritesStrip> {
               children: [
                 Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 4),
+                    padding: const EdgeInsetsDirectional.only(start: 4),
                     child: Text(l10n.favorites, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
                   ),
                 ),
@@ -114,7 +114,7 @@ class _FavoritesStripState extends State<FavoritesStrip> {
             const SizedBox(height: 4),
             if (favorites.isEmpty)
               Padding(
-                padding: const EdgeInsets.only(left: 4),
+                padding: const EdgeInsetsDirectional.only(start: 4),
                 child: Text(l10n.noFavorites, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
               ),
             Wrap(
@@ -133,61 +133,68 @@ class _FavoritesStripState extends State<FavoritesStrip> {
                           borderRadius: BorderRadius.circular(12),
                           side: BorderSide(color: p.border),
                         ),
-                        child: InkWell(
-                          borderRadius: BorderRadius.circular(12),
-                          onTap: () => widget.onOpenSymbol(StockCandidate(symbol: s, companyName: s, confidence: 1)),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Icon(Icons.star_rounded, size: 14, color: p.accent),
-                                    const SizedBox(width: 4),
-                                    Text(s, style: const TextStyle(fontWeight: FontWeight.w700)),
-                                  ],
-                                ),
-                                const SizedBox(height: 2),
-                                if (q != null)
+                        child: Semantics(
+                          button: true,
+                          child: InkWell(
+                            borderRadius: BorderRadius.circular(12),
+                            onTap: () => widget.onOpenSymbol(StockCandidate(symbol: s, companyName: s, confidence: 1)),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
                                   Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      // Nagy betűméretnél a kártya szélességében tördelődik.
-                                      Flexible(
-                                        child: Text(
-                                          '${fmt.number(q.price)}  ${fmt.percent(q.changePercent, withSign: true)}',
-                                          style: theme.textTheme.bodySmall?.copyWith(
-                                            color: up ? p.positive : p.negative,
-                                          ),
-                                        ),
-                                      ),
-                                      // Nagy napi mozgásnál: „Miért mozog ma?”
-                                      if (q.changePercent case final pct?
-                                          when pct.abs() >= MoveExplainer.minMovePercent)
-                                        InkWell(
-                                          key: ValueKey('fav-move-$s'),
-                                          borderRadius: BorderRadius.circular(8),
-                                          onTap: () =>
-                                              showMoveExplanation(context, symbol: s, name: s, changePercent: pct),
-                                          child: Tooltip(
-                                            message: l10n.moveWhyButton,
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional.only(start: 6),
-                                              child: Icon(Icons.auto_awesome_outlined, size: 13, color: p.accent),
+                                      Icon(Icons.star_rounded, size: 14, color: p.accent),
+                                      const SizedBox(width: 4),
+                                      Text(s, style: const TextStyle(fontWeight: FontWeight.w700)),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 2),
+                                  if (q != null)
+                                    Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        // Nagy betűméretnél a kártya szélességében tördelődik.
+                                        Flexible(
+                                          child: Text(
+                                            '${fmt.number(q.price)}  ${fmt.percent(q.changePercent, withSign: true)}',
+                                            style: theme.textTheme.bodySmall?.copyWith(
+                                              color: up ? p.positive : p.negative,
                                             ),
                                           ),
                                         ),
-                                    ],
-                                  )
-                                else
-                                  Text(
-                                    snap.hasError ? l10n.notAvailable : '…',
-                                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                                  ),
-                              ],
+                                        // Nagy napi mozgásnál: „Miért mozog ma?”
+                                        if (q.changePercent case final pct?
+                                            when pct.abs() >= MoveExplainer.minMovePercent)
+                                          Semantics(
+                                            button: true,
+                                            child: InkWell(
+                                              key: ValueKey('fav-move-$s'),
+                                              borderRadius: BorderRadius.circular(8),
+                                              onTap: () =>
+                                                  showMoveExplanation(context, symbol: s, name: s, changePercent: pct),
+                                              child: Tooltip(
+                                                message: l10n.moveWhyButton,
+                                                // Legalább 32×32-es koppintási felület (a jel maga kicsi).
+                                                child: Padding(
+                                                  padding: const EdgeInsetsDirectional.fromSTEB(6, 9, 9, 9),
+                                                  child: Icon(Icons.auto_awesome_outlined, size: 14, color: p.accent),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                      ],
+                                    )
+                                  else
+                                    Text(
+                                      snap.hasError ? l10n.notAvailable : '…',
+                                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                                    ),
+                                ],
+                              ),
                             ),
                           ),
                         ),

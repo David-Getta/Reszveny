@@ -42,30 +42,35 @@ class HintedLabel extends StatelessWidget {
       );
     }
     final theme = Theme.of(context);
-    return InkWell(
-      key: ValueKey('hint-$label'),
-      borderRadius: BorderRadius.circular(6),
-      onTap: () => explainMetric(context, label, hint),
-      child: Padding(
-        padding: padding,
-        child: Text.rich(
-          TextSpan(
-            text: '$label ',
-            children: [
-              WidgetSpan(
-                alignment: PlaceholderAlignment.middle,
-                child: Tooltip(
-                  message: AppLocalizations.of(context).glossTitle,
-                  child: Icon(
-                    Icons.info_outline_rounded,
-                    size: 14,
-                    color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.7),
+    return Semantics(
+      button: true,
+      child: InkWell(
+        key: ValueKey('hint-$label'),
+        borderRadius: BorderRadius.circular(6),
+        onTap: () => explainMetric(context, label, hint),
+        child: Padding(
+          padding: padding,
+          child: Text.rich(
+            TextSpan(
+              text: label,
+              children: [
+                // Térköz szóköz nélkül: a képernyőolvasó címkéje ne végződjön szóközre.
+                const WidgetSpan(child: SizedBox(width: 4)),
+                WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: Tooltip(
+                    message: AppLocalizations.of(context).glossTitle,
+                    child: Icon(
+                      Icons.info_outline_rounded,
+                      size: 14,
+                      color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.7),
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
+            style: style,
           ),
-          style: style,
         ),
       ),
     );

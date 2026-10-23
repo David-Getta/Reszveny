@@ -605,7 +605,8 @@ class _Sidebar extends StatelessWidget {
       width: AppShell.sidebarWidth,
       decoration: BoxDecoration(
         color: p.sidebar,
-        border: Border(right: BorderSide(color: p.border)),
+        // Jobbról balra író nyelven a tartalom felé eső oldalon (a sáv vége).
+        border: BorderDirectional(end: BorderSide(color: p.border)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

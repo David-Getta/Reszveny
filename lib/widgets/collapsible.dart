@@ -56,16 +56,21 @@ class CollapsibleHeader extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 2),
-          child: Row(
-            children: [
-              Expanded(child: child),
-              if (trailing case final t?) ...[const SizedBox(width: 8), t, const SizedBox(width: 4)],
-              AnimatedRotation(
-                turns: collapsed ? -0.25 : 0,
-                duration: const Duration(milliseconds: 180),
-                child: Icon(Icons.expand_more_rounded, size: 22, color: color),
-              ),
-            ],
+          // Legalább 40 pont magas koppintási felület (nem csak a címsor magassága).
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 40),
+            child: Row(
+              children: [
+                Expanded(child: child),
+                if (trailing case final t?) ...[const SizedBox(width: 8), t, const SizedBox(width: 4)],
+                AnimatedRotation(
+                  // Összecsukva a cím felé mutat: jobbról balra író nyelven a másik irányba.
+                  turns: collapsed ? (Directionality.of(context) == TextDirection.rtl ? 0.25 : -0.25) : 0,
+                  duration: const Duration(milliseconds: 180),
+                  child: Icon(Icons.expand_more_rounded, size: 22, color: color),
+                ),
+              ],
+            ),
           ),
         ),
       ),

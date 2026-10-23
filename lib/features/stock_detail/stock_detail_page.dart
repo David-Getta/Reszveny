@@ -42,6 +42,7 @@ import 'widgets/returns_strip.dart';
 import 'widgets/statements_table.dart';
 import 'widgets/week52_range.dart';
 import 'widgets/what_if_card.dart';
+import '../../core/util/bidi.dart';
 import '../../widgets/centered_scroll.dart';
 
 /// A részletes nézet: minden tudnivaló egy részvényről, szekciókra bontva.
@@ -289,7 +290,11 @@ class _DetailsBody extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(p?.name ?? candidate.companyName, style: theme.textTheme.headlineSmall),
+                      Text(
+                        p?.name ?? candidate.companyName,
+                        textDirection: contentDirection(p?.name ?? candidate.companyName),
+                        style: theme.textTheme.headlineSmall,
+                      ),
                       Text(
                         [d.symbol, if (p?.exchange != null) p!.exchange!].join(' · '),
                         style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
@@ -562,7 +567,10 @@ class _DetailsBody extends StatelessWidget {
             : Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  if (p?.description != null) ...[Text(p!.description!), const SizedBox(height: 12)],
+                  if (p?.description != null) ...[
+                    Text(p!.description!, textDirection: contentDirection(p.description!)),
+                    const SizedBox(height: 12),
+                  ],
                   KvTable(
                     hideMissing: true,
                     rows: [
@@ -598,7 +606,7 @@ class _DetailsBody extends StatelessWidget {
                   for (final n in d.news.take(10))
                     ListTile(
                       contentPadding: EdgeInsets.zero,
-                      title: Text(n.headline),
+                      title: Text(n.headline, textDirection: contentDirection(n.headline)),
                       subtitle: Text([if (n.source != null) n.source!, fmt.dateTime(n.publishedAt)].join(' · ')),
                       // „Mit jelent ez?” – rövid AI-magyarázat; a sorra koppintva a cikk nyílik.
                       trailing: IconButton(
@@ -741,36 +749,63 @@ class _ConsensusView extends StatelessWidget {
             children: [
               for (final m in [...c.history.reversed, c])
                 Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 6),
-                    child: Column(
-                      children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(4),
-                          child: SizedBox(
-                            height: 64,
-                            child: Column(
-                              children: [
-                                for (final (_, count, color) in [
-                                  (0, m.strongBuy, bars[0].$3),
-                                  (1, m.buy, bars[1].$3),
-                                  (2, m.hold, bars[2].$3),
-                                  (3, m.sell, bars[3].$3),
-                                  (4, m.strongSell, bars[4].$3),
-                                ])
-                                  if (count > 0)
-                                    Expanded(
-                                      flex: count,
-                                      child: Container(color: color),
-                                    ),
-                                if (m.total == 0) const Spacer(),
-                              ],
+                  // A hónap megoszlása szövegben is (képernyőolvasó, rámutatás): ne csak a szín hordozza.
+                  child: Semantics(
+                    label: [
+                      fmt.monthShort(m.period),
+                      for (final (label, count) in [
+                        (bars[0].$1, m.strongBuy),
+                        (bars[1].$1, m.buy),
+                        (bars[2].$1, m.hold),
+                        (bars[3].$1, m.sell),
+                        (bars[4].$1, m.strongSell),
+                      ])
+                        if (count > 0) '$label: $count',
+                    ].join(', '),
+                    excludeSemantics: true,
+                    child: Tooltip(
+                      message: [
+                        for (final (label, count) in [
+                          (bars[0].$1, m.strongBuy),
+                          (bars[1].$1, m.buy),
+                          (bars[2].$1, m.hold),
+                          (bars[3].$1, m.sell),
+                          (bars[4].$1, m.strongSell),
+                        ])
+                          if (count > 0) '$label: $count',
+                      ].join('\n'),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 6),
+                        child: Column(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(4),
+                              child: SizedBox(
+                                height: 64,
+                                child: Column(
+                                  children: [
+                                    for (final (_, count, color) in [
+                                      (0, m.strongBuy, bars[0].$3),
+                                      (1, m.buy, bars[1].$3),
+                                      (2, m.hold, bars[2].$3),
+                                      (3, m.sell, bars[3].$3),
+                                      (4, m.strongSell, bars[4].$3),
+                                    ])
+                                      if (count > 0)
+                                        Expanded(
+                                          flex: count,
+                                          child: Container(color: color),
+                                        ),
+                                    if (m.total == 0) const Spacer(),
+                                  ],
+                                ),
+                              ),
                             ),
-                          ),
+                            const SizedBox(height: 4),
+                            Text(fmt.monthShort(m.period), style: theme.textTheme.bodySmall),
+                          ],
                         ),
-                        const SizedBox(height: 4),
-                        Text(fmt.monthShort(m.period), style: theme.textTheme.bodySmall),
-                      ],
+                      ),
                     ),
                   ),
                 ),
