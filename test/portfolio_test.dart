@@ -1582,6 +1582,38 @@ void main() {
     expect(find.textContaining('avg. cost 190.00'), findsOneWidget);
   });
 
+  testWidgets('a corrected sale is limited to what the account holds plus the sale itself', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 150, currency: 'USD', date: DateTime(2025, 1, 2));
+    final sale = await s.portfolio.add(
+      symbol: 'AAPL',
+      quantity: 4,
+      price: 200,
+      currency: 'USD',
+      date: DateTime(2025, 6, 2),
+      sell: true,
+    );
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(ValueKey('lot-edit-${sale.id}')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '11');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    expect(find.text('You hold 10'), findsOneWidget, reason: '6 birtokolt + a 4 eladott');
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '10');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.lots.firstWhere((l) => l.id == sale.id).quantity, 10);
+  });
+
   test('a stored record changes the cache keys even when only its numbers change', () async {
     final store = PortfolioStore();
     final lot = await store.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD');

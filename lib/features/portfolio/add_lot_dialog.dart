@@ -316,13 +316,24 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     super.dispose();
   }
 
+  /// Javított eladásnál legfeljebb a számlán most birtokolt darab plusz maga az
+  /// eladás (ha ugyanarról a számláról marad); vételnél nincs felső határ.
+  double? _editedSellMax() {
+    final e = widget.editing;
+    if (e == null || !e.sell) return null;
+    final portfolio = AppServices.of(context).portfolio;
+    final account = portfolio.canonicalAccount(_lotAccount);
+    final held = portfolio.heldByAccount(e.symbol)[account] ?? 0;
+    return held + (portfolio.canonicalAccount(e.account) == account ? e.quantity : 0);
+  }
+
   Future<void> _submit() async {
     final l10n = AppLocalizations.of(context);
     final q = parseDecimal(_quantity.text);
     final p = parseDecimal(_price.text);
     // Üres díjmező: nincs díj.
     final fee = _fee.text.trim().isEmpty ? 0.0 : parseDecimal(_fee.text);
-    final max = _sellMax;
+    final max = _sellMax ?? _editedSellMax();
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     setState(() {
       _quantityError = q == null || q <= 0
