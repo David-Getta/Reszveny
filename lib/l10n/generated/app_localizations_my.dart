@@ -2663,6 +2663,11 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return 'ရောင်းပြီးကတည်းက $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

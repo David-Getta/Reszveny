@@ -2677,6 +2677,11 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return 'అమ్మినప్పటి నుండి $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

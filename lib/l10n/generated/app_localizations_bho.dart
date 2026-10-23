@@ -2665,6 +2665,11 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return 'बेचला के बाद से $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

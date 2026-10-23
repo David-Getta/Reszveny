@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "這是示範投資組合。你可以另外加入自己的買入記錄，或將其移除。",
   "portfolioSampleRemove": "移除示範",
   "portfolioStopsAll": "為所有持倉設定追蹤止蝕",
-  "portfolioStopsDone": "{count, plural, =0{所有持倉均已設定追蹤止蝕} =1{已設定 1 個追蹤止蝕} other{已設定 {count} 個追蹤止蝕}}"
+  "portfolioStopsDone": "{count, plural, =0{所有持倉均已設定追蹤止蝕} =1{已設定 1 個追蹤止蝕} other{已設定 {count} 個追蹤止蝕}}",
+  "portfolioSinceSale": "賣出後 {percent}"
 }

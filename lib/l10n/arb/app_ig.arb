@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Nke a bụ portfolio ọmụmaatụ. Tinye ihe gị onwe gị zụrụ n'akụkụ ya, ma ọ bụ wepụ ya.",
   "portfolioSampleRemove": "Wepụ ọmụmaatụ",
   "portfolioStopsAll": "Ọkwa ọdịda site n'elu maka òkè niile",
-  "portfolioStopsDone": "{count, plural, =0{Òkè ọ bụla enwelarị ọkwa a} =1{Edobere ọkwa 1} other{Edobere ọkwa {count}}}"
+  "portfolioStopsDone": "{count, plural, =0{Òkè ọ bụla enwelarị ọkwa a} =1{Edobere ọkwa 1} other{Edobere ọkwa {count}}}",
+  "portfolioSinceSale": "{percent} kemgbe i rere ya"
 }

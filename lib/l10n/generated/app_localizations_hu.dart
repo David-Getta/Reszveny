@@ -2676,6 +2676,11 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent az eladás óta';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

@@ -2684,6 +2684,11 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent ukususela oko wasithengisa';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

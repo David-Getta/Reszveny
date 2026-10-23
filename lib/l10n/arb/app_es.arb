@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Esta es una cartera de ejemplo. Añade tus propias compras junto a ella o elimínala.",
   "portfolioSampleRemove": "Eliminar ejemplo",
   "portfolioStopsAll": "Stop dinámico para todas las posiciones",
-  "portfolioStopsDone": "{count, plural, =0{Todas las posiciones ya tienen un stop dinámico} =1{Se ha creado 1 stop dinámico} other{Se han creado {count} stops dinámicos}}"
+  "portfolioStopsDone": "{count, plural, =0{Todas las posiciones ya tienen un stop dinámico} =1{Se ha creado 1 stop dinámico} other{Se han creado {count} stops dinámicos}}",
+  "portfolioSinceSale": "{percent} desde que vendiste"
 }

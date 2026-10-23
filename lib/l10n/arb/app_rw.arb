@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Iri ni ishoramari ry'icyitegererezo. Ongeramo ibyo waguze ubwawe, cyangwa urikureho.",
   "portfolioSampleRemove": "Kuramo icyitegererezo",
   "portfolioStopsAll": "Imenyesha ryo kumanuka kuva ku isonga ku migabane yose",
-  "portfolioStopsDone": "{count, plural, =0{Imigabane yose isanzwe ifite iri menyesha} =1{Hashyizweho imenyesha 1} other{Hashyizweho amamenyesha {count}}}"
+  "portfolioStopsDone": "{count, plural, =0{Imigabane yose isanzwe ifite iri menyesha} =1{Hashyizweho imenyesha 1} other{Hashyizweho amamenyesha {count}}}",
+  "portfolioSinceSale": "{percent} kuva wawugurisha"
 }

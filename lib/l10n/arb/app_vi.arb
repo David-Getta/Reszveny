@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Đây là danh mục mẫu. Hãy thêm các khoản mua của bạn bên cạnh, hoặc xóa danh mục này.",
   "portfolioSampleRemove": "Xóa danh mục mẫu",
   "portfolioStopsAll": "Trailing stop cho tất cả vị thế",
-  "portfolioStopsDone": "{count, plural, =0{Mọi vị thế đã có trailing stop} =1{Đã đặt 1 trailing stop} other{Đã đặt {count} trailing stop}}"
+  "portfolioStopsDone": "{count, plural, =0{Mọi vị thế đã có trailing stop} =1{Đã đặt 1 trailing stop} other{Đã đặt {count} trailing stop}}",
+  "portfolioSinceSale": "{percent} kể từ khi bán"
 }

@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Tämä on esimerkkisalkku. Lisää omat ostosi sen rinnalle tai poista se.",
   "portfolioSampleRemove": "Poista esimerkki",
   "portfolioStopsAll": "Liukuva stop kaikille omistuksille",
-  "portfolioStopsDone": "{count, plural, =0{Kaikilla omistuksilla on jo liukuva stop} =1{1 liukuva stop asetettu} other{{count} liukuvaa stopia asetettu}}"
+  "portfolioStopsDone": "{count, plural, =0{Kaikilla omistuksilla on jo liukuva stop} =1{1 liukuva stop asetettu} other{{count} liukuvaa stopia asetettu}}",
+  "portfolioSinceSale": "{percent} myynnin jälkeen"
 }

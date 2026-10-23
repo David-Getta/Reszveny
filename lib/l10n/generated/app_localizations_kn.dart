@@ -2677,6 +2677,11 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return 'ಮಾರಾಟದ ನಂತರ $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

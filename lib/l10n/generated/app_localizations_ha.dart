@@ -2678,6 +2678,11 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent tun da ka sayar';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

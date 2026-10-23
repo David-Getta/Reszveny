@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "این یک سبد سهام نمونه است. خریدهای خودتان را در کنار آن اضافه کنید، یا آن را حذف کنید.",
   "portfolioSampleRemove": "حذف نمونه",
   "portfolioStopsAll": "حد ضرر متحرک برای همه موقعیت‌ها",
-  "portfolioStopsDone": "{count, plural, =0{همه موقعیت‌ها از قبل حد ضرر متحرک دارند} =1{1 حد ضرر متحرک تنظیم شد} other{{count} حد ضرر متحرک تنظیم شد}}"
+  "portfolioStopsDone": "{count, plural, =0{همه موقعیت‌ها از قبل حد ضرر متحرک دارند} =1{1 حد ضرر متحرک تنظیم شد} other{{count} حد ضرر متحرک تنظیم شد}}",
+  "portfolioSinceSale": "{percent} از زمان فروش"
 }

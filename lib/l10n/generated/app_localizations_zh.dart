@@ -2554,6 +2554,11 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '卖出后 $percent';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5474,6 +5479,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
       zero: '所有持倉均已設定追蹤止蝕',
     );
     return '$_temp0';
+  }
+
+  @override
+  String portfolioSinceSale(String percent) {
+    return '賣出後 $percent';
   }
 
   @override

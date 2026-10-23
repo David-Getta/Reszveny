@@ -2674,6 +2674,11 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent ji dema firotinê ve';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

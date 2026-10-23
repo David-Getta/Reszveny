@@ -2632,6 +2632,11 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return 'ካብ ዝሸጥኩምዎ ጀሚሩ $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

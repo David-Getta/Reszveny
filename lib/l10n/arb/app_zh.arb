@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "这是示例投资组合。您可以在旁边添加自己的买入记录，或将其移除。",
   "portfolioSampleRemove": "移除示例",
   "portfolioStopsAll": "为所有持仓设置跟踪止损",
-  "portfolioStopsDone": "{count, plural, =0{所有持仓都已设置跟踪止损} =1{已设置 1 个跟踪止损} other{已设置 {count} 个跟踪止损}}"
+  "portfolioStopsDone": "{count, plural, =0{所有持仓都已设置跟踪止损} =1{已设置 1 个跟踪止损} other{已设置 {count} 个跟踪止损}}",
+  "portfolioSinceSale": "卖出后 {percent}"
 }

@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Ini ialah portfolio sampel. Tambah belian anda sendiri di sebelahnya, atau alih keluar portfolio ini.",
   "portfolioSampleRemove": "Alih keluar sampel",
   "portfolioStopsAll": "Trailing stop untuk semua pegangan",
-  "portfolioStopsDone": "{count, plural, =0{Semua pegangan sudah mempunyai trailing stop} =1{1 trailing stop ditetapkan} other{{count} trailing stop ditetapkan}}"
+  "portfolioStopsDone": "{count, plural, =0{Semua pegangan sudah mempunyai trailing stop} =1{1 trailing stop ditetapkan} other{{count} trailing stop ditetapkan}}",
+  "portfolioSinceSale": "{percent} sejak dijual"
 }

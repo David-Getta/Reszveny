@@ -2673,6 +2673,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent لەو کاتەوەی فرۆشتت';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

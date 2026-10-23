@@ -2666,6 +2666,11 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent gila nde yeeyuɗaa';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

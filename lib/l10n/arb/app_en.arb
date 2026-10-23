@@ -2253,6 +2253,16 @@
       }
     }
   },
+  "portfolioSinceSale": "{percent} since you sold",
+  "@portfolioSinceSale": {
+    "description": "On a fully sold position: how much the price has moved since the last sale, e.g. \"+23.0% since you sold\".",
+    "placeholders": {
+      "percent": {
+        "type": "String",
+        "example": "+23.0%"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

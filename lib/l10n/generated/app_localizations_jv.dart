@@ -2675,6 +2675,11 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent wiwit didol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

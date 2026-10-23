@@ -2677,6 +2677,11 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent desde a venda';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../compare/compare_page.dart';
 import '../../app_services.dart';
 import '../../core/models/stock_candidate.dart';
+import '../../core/models/stock_quote.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/terms.dart';
@@ -483,7 +484,7 @@ class _PortfolioBody extends StatelessWidget {
                           if (i > 0) const Divider(height: 1),
                           ListTile(
                             title: Text(c.position.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
-                            subtitle: Text(l10n.portfolioClosedNote),
+                            subtitle: _SinceSale(position: c.position, fmt: fmt),
                             trailing: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -541,6 +542,42 @@ List<Color> allocationColors(AppPalette p) => [
   const Color(0xFF5FB3A8),
   p.muted,
 ];
+
+/// A lezárt pozíció alcíme: „Minden darabot eladtál”, és ha van ár, az ár változása
+/// az utolsó eladás óta (megérte-e eladni) – a részvény saját pénznemében.
+class _SinceSale extends StatelessWidget {
+  const _SinceSale({required this.position, required this.fmt});
+
+  final Position position;
+  final Fmt fmt;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final last = position.sales.lastOrNull;
+    return FutureBuilder<StockQuote>(
+      future: last == null ? null : AppServices.of(context).marketData.quote(position.symbol),
+      builder: (context, snap) {
+        final q = snap.data;
+        if (last == null || q == null || last.price <= 0) return Text(l10n.portfolioClosedNote);
+        final pct = (q.price / last.price - 1) * 100;
+        return Text.rich(
+          key: ValueKey('closed-since-${position.symbol}'),
+          TextSpan(
+            text: '${l10n.portfolioClosedNote} · ',
+            children: [
+              TextSpan(
+                text: l10n.portfolioSinceSale(fmt.percent(pct, withSign: true)),
+                style: TextStyle(color: gainColor(p, pct), fontWeight: FontWeight.w600),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
 
 /// Mi szerint mutassuk a megoszlást.
 enum AllocationBy { positions, sectors, countries, currencies, accounts }

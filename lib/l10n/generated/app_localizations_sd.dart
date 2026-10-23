@@ -2661,6 +2661,11 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent وڪري کان پوءِ';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

@@ -2673,6 +2673,11 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent satanyňyzdan bäri';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

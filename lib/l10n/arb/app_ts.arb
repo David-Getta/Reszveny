@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Leyi i phothifoliyo ya xikombiso. Engetela leswi u swi xaveke etlhelo ka yona, kumbe u yi susa.",
   "portfolioSampleRemove": "Susa xikombiso",
   "portfolioStopsAll": "Xitsundzuxo xa ku wela ku suka ehenhla eka tixere hinkwato",
-  "portfolioStopsDone": "{count, plural, =0{Xere yin'wana na yin'wana se yi na xitsundzuxo lexi} =1{Ku vekiwe xitsundzuxo xin'we} other{Ku vekiwe switsundzuxo swa {count}}}"
+  "portfolioStopsDone": "{count, plural, =0{Xere yin'wana na yin'wana se yi na xitsundzuxo lexi} =1{Ku vekiwe xitsundzuxo xin'we} other{Ku vekiwe switsundzuxo swa {count}}}",
+  "portfolioSinceSale": "{percent} ku sukela loko u yi xavisile"
 }

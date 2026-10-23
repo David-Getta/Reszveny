@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "এটি একটি নমুনা পোর্টফোলিও। এর পাশাপাশি নিজের ক্রয় যোগ করুন, অথবা এটি সরান।",
   "portfolioSampleRemove": "নমুনা সরান",
   "portfolioStopsAll": "সব অবস্থানে ট্রেইলিং স্টপ",
-  "portfolioStopsDone": "{count, plural, =0{প্রতিটি অবস্থানে ইতিমধ্যে ট্রেইলিং স্টপ আছে} =1{1টি ট্রেইলিং স্টপ সেট হয়েছে} other{{count}টি ট্রেইলিং স্টপ সেট হয়েছে}}"
+  "portfolioStopsDone": "{count, plural, =0{প্রতিটি অবস্থানে ইতিমধ্যে ট্রেইলিং স্টপ আছে} =1{1টি ট্রেইলিং স্টপ সেট হয়েছে} other{{count}টি ট্রেইলিং স্টপ সেট হয়েছে}}",
+  "portfolioSinceSale": "বিক্রির পর থেকে {percent}"
 }

@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "זהו תיק לדוגמה. אפשר להוסיף לצדו את הרכישות שלך, או להסיר אותו.",
   "portfolioSampleRemove": "הסרת הדוגמה",
   "portfolioStopsAll": "סטופ נגרר לכל הפוזיציות",
-  "portfolioStopsDone": "{count, plural, =0{לכל הפוזיציות כבר יש סטופ נגרר} =1{הוגדר סטופ נגרר אחד} other{הוגדרו {count} סטופים נגררים}}"
+  "portfolioStopsDone": "{count, plural, =0{לכל הפוזיציות כבר יש סטופ נגרר} =1{הוגדר סטופ נגרר אחד} other{הוגדרו {count} סטופים נגררים}}",
+  "portfolioSinceSale": "{percent} מאז המכירה"
 }

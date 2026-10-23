@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "यो नमुना पोर्टफोलियो हो। यसको साथमा आफ्नै खरिदहरू थप्नुहोस्, वा यसलाई हटाउनुहोस्।",
   "portfolioSampleRemove": "नमुना हटाउनुहोस्",
   "portfolioStopsAll": "सबै पोजिसनका लागि ट्रेलिङ स्टप",
-  "portfolioStopsDone": "{count, plural, =0{हरेक पोजिसनमा पहिले नै ट्रेलिङ स्टप छ} =1{1 ट्रेलिङ स्टप सेट गरियो} other{{count} ट्रेलिङ स्टप सेट गरिए}}"
+  "portfolioStopsDone": "{count, plural, =0{हरेक पोजिसनमा पहिले नै ट्रेलिङ स्टप छ} =1{1 ट्रेलिङ स्टप सेट गरियो} other{{count} ट्रेलिङ स्टप सेट गरिए}}",
+  "portfolioSinceSale": "बेचेदेखि {percent}"
 }

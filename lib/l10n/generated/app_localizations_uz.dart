@@ -2675,6 +2675,11 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent sotganingizdan beri';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

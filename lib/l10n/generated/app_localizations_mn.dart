@@ -2671,6 +2671,11 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent зарснаас хойш';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

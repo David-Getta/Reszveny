@@ -2685,6 +2685,11 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent rantikusqaykimanta';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

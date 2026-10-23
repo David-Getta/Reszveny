@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Esta é uma carteira de exemplo. Adicione as suas próprias compras ao lado ou remova-a.",
   "portfolioSampleRemove": "Remover exemplo",
   "portfolioStopsAll": "Stop móvel para todas as posições",
-  "portfolioStopsDone": "{count, plural, =0{Todas as posições já têm stop móvel} =1{1 stop móvel definido} other{{count} stops móveis definidos}}"
+  "portfolioStopsDone": "{count, plural, =0{Todas as posições já têm stop móvel} =1{1 stop móvel definido} other{{count} stops móveis definidos}}",
+  "portfolioSinceSale": "{percent} desde a venda"
 }

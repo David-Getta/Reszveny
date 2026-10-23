@@ -2673,6 +2673,11 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent сатканыңыздан бери';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

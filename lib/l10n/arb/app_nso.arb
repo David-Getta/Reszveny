@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Ye ke photefolio ya mohlala. Oketša tše o di rekilego ka bowena kgauswi le yona, goba o e tloše.",
   "portfolioSampleRemove": "Tloša mohlala",
   "portfolioStopsAll": "Temošo ya go wela go tšwa godimodimo go maemo ka moka",
-  "portfolioStopsDone": "{count, plural, =0{Boemo bjo bongwe le bjo bongwe bo šetše bo na le temošo ye} =1{Go beilwe temošo e 1} other{Go beilwe ditemošo tše {count}}}"
+  "portfolioStopsDone": "{count, plural, =0{Boemo bjo bongwe le bjo bongwe bo šetše bo na le temošo ye} =1{Go beilwe temošo e 1} other{Go beilwe ditemošo tše {count}}}",
+  "portfolioSinceSale": "{percent} go tloga ge o rekišitše"
 }

@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "ეს სანიმუშო პორტფელია. დაამატეთ მის გვერდით თქვენი შენაძენები ან წაშალეთ იგი.",
   "portfolioSampleRemove": "ნიმუშის წაშლა",
   "portfolioStopsAll": "ტრეილინგ სტოპი ყველა პოზიციისთვის",
-  "portfolioStopsDone": "{count, plural, =0{ყველა პოზიციას უკვე აქვს ტრეილინგ სტოპი} =1{დაყენდა 1 ტრეილინგ სტოპი} other{დაყენდა {count} ტრეილინგ სტოპი}}"
+  "portfolioStopsDone": "{count, plural, =0{ყველა პოზიციას უკვე აქვს ტრეილინგ სტოპი} =1{დაყენდა 1 ტრეილინგ სტოპი} other{დაყენდა {count} ტრეილინგ სტოპი}}",
+  "portfolioSinceSale": "{percent} გაყიდვის შემდეგ"
 }

@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Eyi yɛ nhwɛso nkyɛfa. Fa wo ankasa adetɔ ka ho, anaa yi no fi hɔ.",
   "portfolioSampleRemove": "Yi nhwɛso no fi hɔ",
   "portfolioStopsAll": "Kɔkɔbɔ a ɛfa ntew fi soro pɛn ho ma nkyɛfa nyinaa",
-  "portfolioStopsDone": "{count, plural, =0{Kyɛfa biara wɔ saa kɔkɔbɔ yi dedaw} =1{Wɔde kɔkɔbɔ 1 asi hɔ} other{Wɔde kɔkɔbɔ {count} asi hɔ}}"
+  "portfolioStopsDone": "{count, plural, =0{Kyɛfa biara wɔ saa kɔkɔbɔ yi dedaw} =1{Wɔde kɔkɔbɔ 1 asi hɔ} other{Wɔde kɔkɔbɔ {count} asi hɔ}}",
+  "portfolioSinceSale": "{percent} efi bere a wotɔnee"
 }

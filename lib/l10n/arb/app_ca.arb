@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Aquesta és una cartera d’exemple. Afegeix-hi les teves pròpies compres o elimina-la.",
   "portfolioSampleRemove": "Elimina l’exemple",
   "portfolioStopsAll": "Stop dinàmic per a totes les posicions",
-  "portfolioStopsDone": "{count, plural, =0{Totes les posicions ja tenen un stop dinàmic} =1{S’ha definit 1 stop dinàmic} other{S’han definit {count} stops dinàmics}}"
+  "portfolioStopsDone": "{count, plural, =0{Totes les posicions ja tenen un stop dinàmic} =1{S’ha definit 1 stop dinàmic} other{S’han definit {count} stops dinàmics}}",
+  "portfolioSinceSale": "{percent} des de la venda"
 }

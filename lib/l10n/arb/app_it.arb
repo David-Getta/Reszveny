@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Questo è un portafoglio di esempio. Aggiungi accanto i tuoi acquisti o rimuovilo.",
   "portfolioSampleRemove": "Rimuovi esempio",
   "portfolioStopsAll": "Trailing stop su tutte le posizioni",
-  "portfolioStopsDone": "{count, plural, =0{Tutte le posizioni hanno già un trailing stop} =1{1 trailing stop impostato} other{{count} trailing stop impostati}}"
+  "portfolioStopsDone": "{count, plural, =0{Tutte le posizioni hanno già un trailing stop} =1{1 trailing stop impostato} other{{count} trailing stop impostati}}",
+  "portfolioSinceSale": "{percent} dalla vendita"
 }

@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Iki portofolio conto. Tambahake tukon sampeyan dhewe ing sandhinge, utawa busak.",
   "portfolioSampleRemove": "Busak conto",
   "portfolioStopsAll": "Trailing stop kanggo kabèh posisi",
-  "portfolioStopsDone": "{count, plural, =0{Kabèh posisi wis duwé trailing stop} =1{1 trailing stop wis dipasang} other{{count} trailing stop wis dipasang}}"
+  "portfolioStopsDone": "{count, plural, =0{Kabèh posisi wis duwé trailing stop} =1{1 trailing stop wis dipasang} other{{count} trailing stop wis dipasang}}",
+  "portfolioSinceSale": "{percent} wiwit didol"
 }

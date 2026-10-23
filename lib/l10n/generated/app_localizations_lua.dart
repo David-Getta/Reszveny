@@ -2680,6 +2680,11 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent kubangila pawakayisumbisha';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

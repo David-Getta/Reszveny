@@ -2688,6 +2688,11 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent halin sang ginbaligya mo';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

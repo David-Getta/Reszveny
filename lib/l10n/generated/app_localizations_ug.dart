@@ -2674,6 +2674,11 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent ساتقاندىن بۇيان';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

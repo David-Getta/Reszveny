@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "これはサンプルのポートフォリオです。自分の購入を追加するか、サンプルを削除してください。",
   "portfolioSampleRemove": "サンプルを削除",
   "portfolioStopsAll": "全保有銘柄にトレーリングストップ",
-  "portfolioStopsDone": "{count, plural, =0{すべての保有銘柄にトレーリングストップが設定済みです} =1{1 件のトレーリングストップを設定しました} other{{count} 件のトレーリングストップを設定しました}}"
+  "portfolioStopsDone": "{count, plural, =0{すべての保有銘柄にトレーリングストップが設定済みです} =1{1 件のトレーリングストップを設定しました} other{{count} 件のトレーリングストップを設定しました}}",
+  "portfolioSinceSale": "売却後 {percent}"
 }

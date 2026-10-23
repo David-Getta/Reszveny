@@ -2671,6 +2671,11 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent გაყიდვის შემდეგ';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

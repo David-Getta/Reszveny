@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "ई एकटा नमूना पोर्टफ़ोलियो अछि। एकर संग अपन खरीदारी जोड़ू, वा एकरा हटाउ।",
   "portfolioSampleRemove": "नमूना हटाउ",
   "portfolioStopsAll": "सभ पोजीशन लेल ट्रेलिंग स्टॉप",
-  "portfolioStopsDone": "{count, plural, =0{सभ पोजीशन पर पहिनहिसँ ट्रेलिंग स्टॉप लागल अछि} =1{1 ट्रेलिंग स्टॉप लगाओल गेल} other{{count} ट्रेलिंग स्टॉप लगाओल गेल}}"
+  "portfolioStopsDone": "{count, plural, =0{सभ पोजीशन पर पहिनहिसँ ट्रेलिंग स्टॉप लागल अछि} =1{1 ट्रेलिंग स्टॉप लगाओल गेल} other{{count} ट्रेलिंग स्टॉप लगाओल गेल}}",
+  "portfolioSinceSale": "बेचलाक बादसँ {percent}"
 }

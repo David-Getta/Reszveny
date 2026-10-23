@@ -1131,6 +1131,31 @@ void main() {
     expect(find.byKey(const ValueKey('position-menu-MSFT')), findsOneWidget);
   });
 
+  testWidgets('a closed position shows how the price moved since the last sale', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 100, currency: 'USD', date: DateTime(2025, 1, 2));
+    await s.portfolio.add(
+      symbol: 'AAPL',
+      quantity: 10,
+      price: 200,
+      currency: 'USD',
+      date: DateTime(2025, 6, 2),
+      sell: true,
+    );
+    await s.portfolio.add(symbol: 'MSFT', quantity: 1, price: 400, currency: 'USD');
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    final since = find.byKey(const ValueKey('closed-since-AAPL'));
+    await tester.ensureVisible(since);
+    // A demó ára 231,45: 200-hoz képest +15,72% (a 15,725 lebegőpontosan lefelé kerekedik).
+    expect(tester.widget<Text>(since).textSpan!.toPlainText(), 'All shares sold · +15.72% since you sold');
+  });
+
   testWidgets('a sample portfolio from the empty page, then removed with one tap; own purchases stay', (tester) async {
     tester.view.physicalSize = const Size(1200, 2600);
     tester.view.devicePixelRatio = 1;

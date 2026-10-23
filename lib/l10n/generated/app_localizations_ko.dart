@@ -2600,6 +2600,11 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '매도 후 $percent';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

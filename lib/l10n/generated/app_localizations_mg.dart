@@ -2691,6 +2691,11 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent hatramin\'ny nivarotanao';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

@@ -4585,6 +4585,12 @@ abstract class AppLocalizations {
   /// **'{count, plural, =0{Every position already has a trailing stop} =1{1 trailing stop set} other{{count} trailing stops set}}'**
   String portfolioStopsDone(int count);
 
+  /// On a fully sold position: how much the price has moved since the last sale, e.g. "+23.0% since you sold".
+  ///
+  /// In en, this message translates to:
+  /// **'{percent} since you sold'**
+  String portfolioSinceSale(String percent);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

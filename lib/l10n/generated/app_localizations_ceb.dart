@@ -2683,6 +2683,11 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent sukad nimo kini gibaligya';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

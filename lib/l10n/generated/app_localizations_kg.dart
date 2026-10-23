@@ -2681,6 +2681,11 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent banda nge tekaka yo';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Ин портфели намунавӣ аст. Дар паҳлӯи он харидҳои худро илова кунед ё онро хориҷ кунед.",
   "portfolioSampleRemove": "Хориҷ кардани намуна",
   "portfolioStopsAll": "Огоҳии афтиш аз авҷ барои ҳамаи мавқеъҳо",
-  "portfolioStopsDone": "{count, plural, =0{Ҳамаи мавқеъҳо аллакай ин огоҳиро доранд} =1{1 огоҳӣ гузошта шуд} other{{count} огоҳӣ гузошта шуд}}"
+  "portfolioStopsDone": "{count, plural, =0{Ҳамаи мавқеъҳо аллакай ин огоҳиро доранд} =1{1 огоҳӣ гузошта шуд} other{{count} огоҳӣ гузошта шуд}}",
+  "portfolioSinceSale": "{percent} аз замони фурӯш"
 }

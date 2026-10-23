@@ -2656,6 +2656,11 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent sẽn sɩng f sẽn koos-a';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

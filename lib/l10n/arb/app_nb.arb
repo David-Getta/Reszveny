@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Dette er en eksempelportefølje. Legg til dine egne kjøp ved siden av, eller fjern den.",
   "portfolioSampleRemove": "Fjern eksempelet",
   "portfolioStopsAll": "Trailing stop for alle beholdninger",
-  "portfolioStopsDone": "{count, plural, =0{Alle beholdninger har allerede trailing stop} =1{1 trailing stop opprettet} other{{count} trailing stop opprettet}}"
+  "portfolioStopsDone": "{count, plural, =0{Alle beholdninger har allerede trailing stop} =1{1 trailing stop opprettet} other{{count} trailing stop opprettet}}",
+  "portfolioSinceSale": "{percent} siden du solgte"
 }

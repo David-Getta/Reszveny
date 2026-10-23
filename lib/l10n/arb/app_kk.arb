@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Бұл – үлгі портфель. Оның жанына өз сатып алуларыңызды қосыңыз немесе оны жойыңыз.",
   "portfolioSampleRemove": "Үлгіні жою",
   "portfolioStopsAll": "Барлық позицияға трейлинг-стоп",
-  "portfolioStopsDone": "{count, plural, =0{Барлық позицияда трейлинг-стоп бұрыннан бар} =1{1 трейлинг-стоп орнатылды} other{{count} трейлинг-стоп орнатылды}}"
+  "portfolioStopsDone": "{count, plural, =0{Барлық позицияда трейлинг-стоп бұрыннан бар} =1{1 трейлинг-стоп орнатылды} other{{count} трейлинг-стоп орнатылды}}",
+  "portfolioSinceSale": "{percent} сатқаннан бері"
 }

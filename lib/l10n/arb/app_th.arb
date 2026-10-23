@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "นี่คือพอร์ตโฟลิโอตัวอย่าง เพิ่มการซื้อของคุณเองควบคู่ไปได้ หรือจะลบออกก็ได้",
   "portfolioSampleRemove": "ลบตัวอย่าง",
   "portfolioStopsAll": "Trailing Stop สำหรับหุ้นที่ถือทั้งหมด",
-  "portfolioStopsDone": "{count, plural, =0{หุ้นที่ถือทุกรายการมี Trailing Stop อยู่แล้ว} =1{ตั้ง Trailing Stop 1 รายการแล้ว} other{ตั้ง Trailing Stop {count} รายการแล้ว}}"
+  "portfolioStopsDone": "{count, plural, =0{หุ้นที่ถือทุกรายการมี Trailing Stop อยู่แล้ว} =1{ตั้ง Trailing Stop 1 รายการแล้ว} other{ตั้ง Trailing Stop {count} รายการแล้ว}}",
+  "portfolioSinceSale": "{percent} ตั้งแต่ขาย"
 }

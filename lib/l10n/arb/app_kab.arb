@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Wagi d aqrab n umedya. Rnu tiɣin-ik ɣer tama-s, neɣ kkes-it.",
   "portfolioSampleRemove": "Kkes amedya",
   "portfolioStopsAll": "Alɣu n uɣelluy seg tqacuct i yimukan meṛṛa",
-  "portfolioStopsDone": "{count, plural, =0{Yal adeg yesɛa yakan alɣu-agi} =1{Yettwasbadu 1 n walɣu} other{Ttwasbadun {count} n walɣuten}}"
+  "portfolioStopsDone": "{count, plural, =0{Yal adeg yesɛa yakan alɣu-agi} =1{Yettwasbadu 1 n walɣu} other{Ttwasbadun {count} n walɣuten}}",
+  "portfolioSinceSale": "{percent} seg wasmi i t-tzenzeḍ"
 }

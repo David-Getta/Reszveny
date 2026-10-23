@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Sa a se yon pòtfèy egzanp. Ajoute pwòp acha ou yo bò kote l, oswa retire l.",
   "portfolioSampleRemove": "Retire egzanp lan",
   "portfolioStopsAll": "Alèt bès depi pik la pou tout pozisyon yo",
-  "portfolioStopsDone": "{count, plural, =0{Tout pozisyon yo gen alèt sa a deja} =1{Nou mete 1 alèt} other{Nou mete {count} alèt}}"
+  "portfolioStopsDone": "{count, plural, =0{Tout pozisyon yo gen alèt sa a deja} =1{Nou mete 1 alèt} other{Nou mete {count} alèt}}",
+  "portfolioSinceSale": "{percent} depi ou te vann"
 }

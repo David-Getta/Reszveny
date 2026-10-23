@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Tai pavyzdinis portfelis. Pridėkite prie jo savo pirkimus arba jį pašalinkite.",
   "portfolioSampleRemove": "Pašalinti pavyzdį",
   "portfolioStopsAll": "Kritimo nuo piko įspėjimas visoms pozicijoms",
-  "portfolioStopsDone": "{count, plural, =0{Visos pozicijos jau turi šį įspėjimą} =1{Nustatytas 1 įspėjimas} one{Nustatytas {count} įspėjimas} few{Nustatyti {count} įspėjimai} many{Nustatyta {count} įspėjimo} other{Nustatyta {count} įspėjimų}}"
+  "portfolioStopsDone": "{count, plural, =0{Visos pozicijos jau turi šį įspėjimą} =1{Nustatytas 1 įspėjimas} one{Nustatytas {count} įspėjimas} few{Nustatyti {count} įspėjimai} many{Nustatyta {count} įspėjimo} other{Nustatyta {count} įspėjimų}}",
+  "portfolioSinceSale": "{percent} nuo pardavimo"
 }

@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Kun poortfooliyoo fakkeenyaati. Bittaawwan kee cinaa isaatti dabali, ykn isa haqi.",
   "portfolioSampleRemove": "Fakkeenya haqi",
   "portfolioStopsAll": "Akeekkachiisa ol'aanaa irraa bu'uu qabiyyeewwan hundaaf",
-  "portfolioStopsDone": "{count, plural, =0{Qabiyyeen hundi duraanuu akeekkachiisa kana qaba} =1{Akeekkachiisni 1 qindaa'eera} other{Akeekkachiisni {count} qindaa'aniiru}}"
+  "portfolioStopsDone": "{count, plural, =0{Qabiyyeen hundi duraanuu akeekkachiisa kana qaba} =1{Akeekkachiisni 1 qindaa'eera} other{Akeekkachiisni {count} qindaa'aniiru}}",
+  "portfolioSinceSale": "{percent} erga gurgurtee as"
 }

@@ -2669,6 +2669,11 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent seg wasmi i t-tzenzeḍ';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

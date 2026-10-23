@@ -2670,6 +2670,11 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent since you sell am';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

@@ -2650,6 +2650,11 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent ចាប់តាំងពីលក់';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

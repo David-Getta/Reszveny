@@ -2667,6 +2667,11 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return 'ବିକ୍ରି ପରଠାରୁ $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

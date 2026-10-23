@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "To jest przykładowy portfel. Dodaj obok własne zakupy albo go usuń.",
   "portfolioSampleRemove": "Usuń przykład",
   "portfolioStopsAll": "Trailing stop dla wszystkich pozycji",
-  "portfolioStopsDone": "{count, plural, =0{Wszystkie pozycje mają już trailing stop} =1{Ustawiono 1 trailing stop} one{Ustawiono {count} trailing stop} few{Ustawiono {count} trailing stopy} many{Ustawiono {count} trailing stopów} other{Ustawiono {count} trailing stopu}}"
+  "portfolioStopsDone": "{count, plural, =0{Wszystkie pozycje mają już trailing stop} =1{Ustawiono 1 trailing stop} one{Ustawiono {count} trailing stop} few{Ustawiono {count} trailing stopy} many{Ustawiono {count} trailing stopów} other{Ustawiono {count} trailing stopu}}",
+  "portfolioSinceSale": "{percent} od sprzedaży"
 }

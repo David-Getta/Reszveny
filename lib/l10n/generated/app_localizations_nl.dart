@@ -2677,6 +2677,11 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent sinds de verkoop';
+  }
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

@@ -2670,6 +2670,11 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent فروخت کے بعد سے';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

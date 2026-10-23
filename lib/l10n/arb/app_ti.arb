@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "እዚ ናይ ኣብነት ፖርትፎሊዮ እዩ። ናይ ገዛእ ርእስኹም ዕድግታት ኣብ ጎኑ ወስኹ፣ ወይ ኣልግስዎ።",
   "portfolioSampleRemove": "ኣብነት ኣልግስ",
   "portfolioStopsAll": "ንኹሎም ዋንነታት ካብ ጫፍ ናይ ምውራድ መጠንቀቕታ",
-  "portfolioStopsDone": "{count, plural, =0{ኩሉ ዋንነት ድሮ እዚ መጠንቀቕታ ኣለዎ} =1{1 መጠንቀቕታ ተቐሚጡ} other{{count} መጠንቀቕታታት ተቐሚጦም}}"
+  "portfolioStopsDone": "{count, plural, =0{ኩሉ ዋንነት ድሮ እዚ መጠንቀቕታ ኣለዎ} =1{1 መጠንቀቕታ ተቐሚጡ} other{{count} መጠንቀቕታታት ተቐሚጦም}}",
+  "portfolioSinceSale": "ካብ ዝሸጥኩምዎ ጀሚሩ {percent}"
 }

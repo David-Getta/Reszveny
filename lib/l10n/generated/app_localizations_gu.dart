@@ -2665,6 +2665,11 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return 'વેચ્યા પછીથી $percent';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

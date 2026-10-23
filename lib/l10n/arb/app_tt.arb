@@ -807,5 +807,6 @@
   "portfolioSampleBanner": "Бу – үрнәк портфель. Аның янына үз сатып алуларыгызны өстәгез яки аны бетерегез.",
   "portfolioSampleRemove": "Үрнәкне бетерү",
   "portfolioStopsAll": "Барлык позицияләр өчен трейлинг-стоп",
-  "portfolioStopsDone": "{count, plural, =0{Барлык позицияләрдә дә трейлинг-стоп бар инде} =1{1 трейлинг-стоп куелды} other{{count} трейлинг-стоп куелды}}"
+  "portfolioStopsDone": "{count, plural, =0{Барлык позицияләрдә дә трейлинг-стоп бар инде} =1{1 трейлинг-стоп куелды} other{{count} трейлинг-стоп куелды}}",
+  "portfolioSinceSale": "{percent} сатканнан бирле"
 }

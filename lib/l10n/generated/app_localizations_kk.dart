@@ -2670,6 +2670,11 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String portfolioSinceSale(String percent) {
+    return '$percent сатқаннан бері';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override
