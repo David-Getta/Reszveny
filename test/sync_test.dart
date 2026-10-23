@@ -235,6 +235,58 @@ void main() {
     expect(a.portfolio.lots, hasLength(2));
   });
 
+  test('both devices changed: a deletion is not undone by the other device\'s old copy; an undo still wins', () async {
+    final server = _Server();
+    SharedPreferences.setMockInitialValues({});
+    final a = _Device(server);
+    final x = await a.portfolio.add(symbol: 'AAPL', quantity: 10, price: 180, currency: 'USD');
+    final y = await a.portfolio.add(symbol: 'MSFT', quantity: 2, price: 400, currency: 'USD');
+    await a.sync.start();
+    SharedPreferences.setMockInitialValues({});
+    final b = _Device(server);
+    await b.sync.start();
+    expect(b.portfolio.lots, hasLength(2));
+
+    // A törli X-et; B közben (még X-szel) osztalékot vesz fel, és utóbb szinkronizál.
+    await a.portfolio.remove(x.id);
+    await a.sync.syncNow();
+    await b.portfolio.addDividend(symbol: 'MSFT', amount: 1.5, currency: 'USD');
+    await b.sync.syncNow();
+    expect(b.portfolio.lots.map((l) => l.id), [y.id], reason: 'X nem támad fel');
+    await a.sync.syncNow();
+    expect(a.portfolio.lots.map((l) => l.id), [y.id]);
+    expect(a.portfolio.dividends, hasLength(1));
+
+    // A törli Y-t, feltölti, majd visszavonja; B közben változtat: a visszavont törlés nem nyer.
+    await a.portfolio.remove(y.id);
+    await a.sync.syncNow();
+    final undone = a.portfolio.deletedJson.containsKey(y.id);
+    expect(undone, isTrue);
+    await a.portfolio.restore(y);
+    await b.portfolio.setCash('USD', 100);
+    await b.sync.syncNow();
+    await a.sync.syncNow();
+    await b.sync.syncNow();
+    expect(a.portfolio.lots.map((l) => l.id), [y.id]);
+    expect(b.portfolio.lots.map((l) => l.id), [y.id]);
+    expect(a.portfolio.deletedJson.containsKey(x.id), isTrue);
+  });
+
+  test('deletion marks survive a restart and are dropped after half a year', () async {
+    SharedPreferences.setMockInitialValues({
+      'portfolio_deleted': jsonEncode({
+        'old': DateTime.now().toUtc().subtract(const Duration(days: 200)).toIso8601String(),
+        'new': DateTime.now().toUtc().subtract(const Duration(days: 3)).toIso8601String(),
+        'bad': 'x',
+      }),
+    });
+    final store = await PortfolioStore.load();
+    expect(store.deletedJson.keys, ['new']);
+    final lot = await store.add(symbol: 'AAPL', quantity: 1, price: 100, currency: 'USD');
+    await store.remove(lot.id);
+    expect((await PortfolioStore.load()).deletedJson.keys.toSet(), {'new', lot.id});
+  });
+
   test('goals follow the account: the newer change wins, a removed goal does not come back', () async {
     final server = _Server();
     SharedPreferences.setMockInitialValues({});

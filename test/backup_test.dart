@@ -40,6 +40,22 @@ void main() {
     expect(Backup.parse('not json'), isNull);
   });
 
+  test('restoring brings back what was deleted after the backup; other deletions stay deleted', () async {
+    final a = services();
+    final kept = await a.portfolio.add(symbol: 'AAPL', quantity: 3, price: 180, currency: 'USD');
+    final other = await a.portfolio.add(symbol: 'MSFT', quantity: 1, price: 400, currency: 'USD');
+    final file = jsonEncode(Backup.data(a));
+    await a.portfolio.remove(kept.id);
+    final gone = await a.portfolio.add(symbol: 'NVDA', quantity: 1, price: 120, currency: 'USD');
+    await a.portfolio.remove(gone.id);
+    expect(a.portfolio.deletedJson.keys.toSet(), {kept.id, gone.id});
+
+    await Backup.restore(a, Backup.parse(file)!);
+    expect(a.portfolio.lots.map((l) => l.id).toSet(), {kept.id, other.id});
+    expect(a.portfolio.lots.firstWhere((l) => l.id == kept.id).edited, isNotNull, reason: 'újabbnak jelölve');
+    expect(a.portfolio.deletedJson.keys, [gone.id]);
+  });
+
   testWidgets('settings: save a backup file and restore from one', (tester) async {
     tester.view.physicalSize = const Size(1200, 4000);
     tester.view.devicePixelRatio = 1;

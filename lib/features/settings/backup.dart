@@ -45,9 +45,26 @@ class Backup {
       alerts: s.alerts,
       notes: s.notes,
     );
+    // A mentés után törölt tételek visszajönnek: a törlési jelzésük kimarad, és
+    // a tétel újabbnak jelölve, hogy egy másik eszköz jelzése se vigye el újra.
+    final deleted = (now['deleted'] as Map? ?? const {}).cast<String, dynamic>();
+    final stamp = DateTime.now().toUtc().toIso8601String();
+    final revived = <String>{};
+    List<Object?> revive(Object? items) => [
+      for (final m in items is List ? items : const [])
+        if (m is Map && deleted.containsKey('${m['id']}') && revived.add('${m['id']}')) {...m, 'edited': stamp} else m,
+    ];
+    final fromBackup = {...backup, 'lots': revive(backup['lots']), 'dividends': revive(backup['dividends'])};
+    final current = {
+      ...now,
+      'deleted': {
+        for (final e in deleted.entries)
+          if (!revived.contains(e.key)) e.key: e.value,
+      },
+    };
     // A beállítások (e-mailes riasztás, heti összefoglaló) maradnak, ahogy most vannak.
     final merged = {
-      ...SyncService.merge(now, backup),
+      ...SyncService.merge(current, fromBackup),
       'email_alerts': s.preferences.emailAlerts,
       'weekly_digest': s.preferences.weeklyDigest,
     };

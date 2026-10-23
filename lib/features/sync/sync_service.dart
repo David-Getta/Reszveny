@@ -152,6 +152,7 @@ class SyncService extends ChangeNotifier {
       for (final d in portfolio.dividends) {...d.toJson(), 'account': d.account},
     ],
     'splits': [for (final s in portfolio.splits) s.toJson()],
+    'deleted': portfolio.deletedJson,
     'cash': portfolio.cash,
     'cash_at': portfolio.cashAtJson,
     'alerts': [for (final a in alerts.alerts) a.toJson()],
@@ -162,6 +163,13 @@ class SyncService extends ChangeNotifier {
   /// javított (egyezésnél vagy javítás nélkül a helyi) marad; jegyzetnél az újabb.
   static Map<String, dynamic> merge(Map<String, dynamic> local, Map<String, dynamic> remote) {
     DateTime edited(Map<String, dynamic> e) => DateTime.tryParse('${e['edited'] ?? ''}') ?? DateTime(0);
+    // Törlési jelzések: a két oldal uniója (azonosítónként a későbbi); a törölt
+    // tétel nem támad fel a másik oldal régi példányából – csak ha később javították.
+    final deleted = {...PortfolioStore.parseDeleted(remote['deleted'])};
+    for (final e in PortfolioStore.parseDeleted(local['deleted']).entries) {
+      if (deleted[e.key] case final r? when r.isAfter(e.value)) continue;
+      deleted[e.key] = e.value;
+    }
     List<Map<String, dynamic>> byId(Object? a, Object? b) {
       final out = <String, Map<String, dynamic>>{};
       for (final e in [..._maps(a), ..._maps(b)]) {
@@ -169,7 +177,14 @@ class SyncService extends ChangeNotifier {
         if (out[id] case final prev? when !edited(e).isAfter(edited(prev))) continue;
         out[id] = e;
       }
-      return out.values.toList();
+      bool gone(Map<String, dynamic> e) => switch (deleted['${e['id']}']) {
+        final at? => !edited(e).isAfter(at),
+        null => false,
+      };
+      return [
+        for (final e in out.values)
+          if (!gone(e)) e,
+      ];
     }
 
     final notesL = (local['notes'] as Map? ?? const {}).cast<String, dynamic>();
@@ -223,6 +238,7 @@ class SyncService extends ChangeNotifier {
       'lots': byId(local['lots'], remote['lots']),
       'dividends': byId(local['dividends'], remote['dividends']),
       'splits': _uniqueSplits(byId(local['splits'], remote['splits'])),
+      'deleted': {for (final e in deleted.entries) e.key: e.value.toUtc().toIso8601String()},
       'cash': cash.cash,
       'cash_at': cash.at,
       'alerts': alertsMerged,
@@ -370,6 +386,8 @@ class SyncService extends ChangeNotifier {
     if (data['splits'] is List) {
       await portfolio.replaceAllSplits([for (final j in _maps(data['splits'])) ?SplitRecord.fromJson(j)]);
     }
+    // A törlési jelzések a csomag szerint (régi csomagban nincs: a helyiek maradnak).
+    if (data['deleted'] is Map) await portfolio.replaceAllDeleted(PortfolioStore.parseDeleted(data['deleted']));
     await alerts.replaceAll([for (final j in _maps(data['alerts'])) ?PriceAlert.fromJson(j)]);
     await notes.replaceAll({
       for (final e in (data['notes'] as Map? ?? const {}).entries) '${e.key}': ?StockNote.fromJson(e.value),

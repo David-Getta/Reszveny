@@ -478,10 +478,12 @@ class PortfolioStore extends ChangeNotifier {
     List<SplitRecord> splits = const [],
     Map<String, double> cash = const {},
     Map<String, DateTime> cashAt = const {},
+    Map<String, DateTime> deleted = const {},
   }) : _lots = List.of(lots),
        _dividends = List.of(dividends)..sort(_newestFirst),
        _splits = _unique(splits)..sort(_oldestFirst),
-       _cash = _entries(cash, cashAt);
+       _cash = _entries(cash, cashAt),
+       _deleted = Map.of(deleted);
 
   /// A felaprózások ismétlés nélkül (azonos kulcsnál az első marad).
   static List<SplitRecord> _unique(Iterable<SplitRecord> splits) {
@@ -504,6 +506,43 @@ class PortfolioStore extends ChangeNotifier {
   static const _cashKey = 'portfolio_cash';
   static const _cashAtKey = 'portfolio_cash_at';
   static const _splitsKey = 'portfolio_splits';
+  static const _deletedKey = 'portfolio_deleted';
+
+  /// A törölt tranzakciók, osztalékok és felaprózások azonosítói a törlés idejével
+  /// (UTC): szinkronkor a másik eszköz régi példánya nem támasztja fel őket.
+  /// [tombstoneDays] napnál régebbi jelzés elhagyható.
+  final Map<String, DateTime> _deleted;
+  static const tombstoneDays = 180;
+
+  /// A törlési jelzések a szinkronhoz és a mentéshez (a régiek nélkül).
+  Map<String, String> get deletedJson {
+    final cutoff = DateTime.now().toUtc().subtract(const Duration(days: tombstoneDays));
+    return {
+      for (final e in _deleted.entries)
+        if (e.value.isAfter(cutoff)) e.key: e.value.toUtc().toIso8601String(),
+    };
+  }
+
+  /// Törlési jelzések beolvasása (a hibás bejegyzés kimarad).
+  static Map<String, DateTime> parseDeleted(Object? j) => {
+    if (j is Map)
+      for (final e in j.entries) '${e.key}': ?DateTime.tryParse('${e.value}'),
+  };
+
+  void _tombstone(Iterable<String> ids) {
+    final now = DateTime.now().toUtc();
+    for (final id in ids) {
+      _deleted[id] = now;
+    }
+  }
+
+  /// A törlési jelzések cseréje (szinkronkor a fiók állapotára).
+  Future<void> replaceAllDeleted(Map<String, DateTime> deleted) async {
+    _deleted
+      ..clear()
+      ..addAll(deleted);
+    await _save();
+  }
 
   final List<PortfolioLot> _lots;
   final List<DividendRecord> _dividends;
@@ -630,12 +669,20 @@ class PortfolioStore extends ChangeNotifier {
       } catch (_) {
         // Sérült készpénz-egyenleg: üres.
       }
+      Map<String, DateTime> deleted = const {};
+      try {
+        final raw = prefs.getString(_deletedKey);
+        if (raw != null) deleted = parseDeleted(jsonDecode(raw));
+      } catch (_) {
+        // Sérült törlési jelzések: üres (legfeljebb egy régi tétel támadhat fel).
+      }
       return PortfolioStore(
         lots: read(_key, parse),
         dividends: read(_dividendsKey, parseDividends),
         splits: read(_splitsKey, parseSplits),
         cash: cash,
         cashAt: cashAt,
+        deleted: deleted,
       );
     } catch (_) {
       return PortfolioStore();
@@ -911,12 +958,20 @@ class PortfolioStore extends ChangeNotifier {
         ),
       ])
       ..sort(_newestFirst);
+    // Az újra betöltött minta azonosítói nem töröltek többé.
+    _deleted.removeWhere((id, _) => id.startsWith(samplePrefix));
     notifyListeners();
     await _save();
   }
 
   /// A minta-portfólió eltávolítása (a saját tételek maradnak).
   Future<void> removeSample() async {
+    _tombstone([
+      for (final l in _lots)
+        if (l.id.startsWith(samplePrefix)) l.id,
+      for (final d in _dividends)
+        if (d.id.startsWith(samplePrefix)) d.id,
+    ]);
     _dropSample();
     notifyListeners();
     await _save();
@@ -942,6 +997,7 @@ class PortfolioStore extends ChangeNotifier {
     _dividends.clear();
     _splits.clear();
     _cash.clear();
+    _deleted.clear();
     notifyListeners();
     await _save();
   }
@@ -972,6 +1028,7 @@ class PortfolioStore extends ChangeNotifier {
 
   Future<void> removeDividend(String id) async {
     _dividends.removeWhere((d) => d.id == id);
+    _tombstone([id]);
     notifyListeners();
     await _save();
   }
@@ -979,8 +1036,20 @@ class PortfolioStore extends ChangeNotifier {
   /// Egy törölt osztalék visszaállítása (visszavonás), változatlan azonosítóval.
   Future<void> restoreDividend(DividendRecord d) async {
     if (_dividends.any((x) => x.id == d.id)) return;
+    _deleted.remove(d.id);
+    // Újabbnak jelölve, hogy egy már szinkronizált törlési jelzés se vigye el.
     _dividends
-      ..add(d)
+      ..add(
+        DividendRecord(
+          id: d.id,
+          symbol: d.symbol,
+          amount: d.amount,
+          currency: d.currency,
+          date: d.date,
+          account: d.account,
+          edited: DateTime.now().toUtc(),
+        ),
+      )
       ..sort(_newestFirst);
     notifyListeners();
     await _save();
@@ -1033,6 +1102,7 @@ class PortfolioStore extends ChangeNotifier {
 
   Future<void> removeSplit(String id) async {
     _splits.removeWhere((s) => s.id == id);
+    _tombstone([id]);
     notifyListeners();
     await _save();
   }
@@ -1040,6 +1110,7 @@ class PortfolioStore extends ChangeNotifier {
   /// Egy törölt felaprózás visszaállítása (visszavonás), változatlan azonosítóval.
   Future<void> restoreSplit(SplitRecord s) async {
     if (_splits.any((x) => x.id == s.id || x.key == s.key)) return;
+    _deleted.remove(s.id);
     _splits
       ..add(s)
       ..sort(_oldestFirst);
@@ -1091,7 +1162,22 @@ class PortfolioStore extends ChangeNotifier {
   /// Egy törölt tranzakció visszaállítása (visszavonás), változatlan azonosítóval.
   Future<void> restore(PortfolioLot lot) async {
     if (_lots.any((l) => l.id == lot.id)) return;
-    _lots.add(lot);
+    _deleted.remove(lot.id);
+    // Újabbnak jelölve, hogy egy már szinkronizált törlési jelzés se vigye el.
+    _lots.add(
+      PortfolioLot(
+        id: lot.id,
+        symbol: lot.symbol,
+        quantity: lot.quantity,
+        price: lot.price,
+        currency: lot.currency,
+        date: lot.date,
+        sell: lot.sell,
+        account: lot.account,
+        fee: lot.fee,
+        edited: DateTime.now().toUtc(),
+      ),
+    );
     notifyListeners();
     await _save();
   }
@@ -1127,6 +1213,7 @@ class PortfolioStore extends ChangeNotifier {
     _lots.removeWhere((l) => lots.contains(l.id));
     _dividends.removeWhere((d) => dividends.contains(d.id));
     _splits.removeWhere((s) => splits.contains(s.id));
+    _tombstone([...lots, ...dividends, ...splits]);
     notifyListeners();
     await _save();
   }
@@ -1136,6 +1223,7 @@ class PortfolioStore extends ChangeNotifier {
   Future<PortfolioLot?> remove(String id) async {
     final stored = _lots.where((l) => l.id == id).firstOrNull;
     _lots.removeWhere((l) => l.id == id);
+    _tombstone([id]);
     notifyListeners();
     await _save();
     return stored;
@@ -1150,6 +1238,7 @@ class PortfolioStore extends ChangeNotifier {
         prefs.setString(_splitsKey, jsonEncode(_splits.map((s) => s.toJson()).toList())),
         prefs.setString(_cashKey, jsonEncode(cash)),
         prefs.setString(_cashAtKey, jsonEncode(cashAtJson)),
+        prefs.setString(_deletedKey, jsonEncode(deletedJson)),
       ]);
     } catch (_) {
       // A tárolás hibája nem akadályozza a működést.
