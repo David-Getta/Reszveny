@@ -153,10 +153,20 @@ class ImportedLot {
 
 /// Egy beolvasott osztaléksor (még nem került a portfólióba).
 class ImportedDividend {
-  const ImportedDividend({required this.symbol, required this.amount, required this.currency, this.date, this.account});
+  const ImportedDividend({
+    required this.symbol,
+    required this.amount,
+    required this.currency,
+    this.date,
+    this.account,
+    this.isin,
+  });
 
   /// A számla neve (saját exportból).
   final String? account;
+
+  /// Ticker nélküli exportban (DEGIRO számlakivonat) az ISIN; addig a [symbol] üres.
+  final String? isin;
 
   final String symbol;
   final double amount;
@@ -185,6 +195,8 @@ class CsvImport {
 
   /// A még ticker nélküli sorok ISIN-jei a kereskedés pénznemével (a feloldáshoz).
   Map<String, String> get isins => {
+    for (final d in dividends)
+      if (d.isin case final i? when d.symbol.isEmpty) i: d.currency,
     for (final l in lots)
       if (l.isin case final i? when l.symbol.isEmpty) i: l.currency,
   };
@@ -215,7 +227,26 @@ class CsvImport {
         missing++;
       }
     }
-    return CsvImport(out, skipped + missing, dividends: dividends, splits: splits);
+    final paid = <ImportedDividend>[];
+    for (final d in dividends) {
+      if (d.symbol.isNotEmpty) {
+        paid.add(d);
+      } else if (symbols[d.isin] case final s?) {
+        paid.add(
+          ImportedDividend(
+            symbol: s,
+            amount: d.amount,
+            currency: d.currency,
+            date: d.date,
+            account: d.account,
+            isin: d.isin,
+          ),
+        );
+      } else {
+        missing++;
+      }
+    }
+    return CsvImport(out, skipped + missing, dividends: paid, splits: splits);
   }
 }
 
@@ -448,8 +479,72 @@ CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD', bool m
     if (h != null) {
       return _withHeader(lines.skip(i + 1), sep, h, splitCsvLine(line, sep), defaultCurrency, monthFirst: monthFirst);
     }
+    if (_statementHeader(splitCsvLine(line, sep)) case final c?) {
+      return _statement(lines.skip(i + 1), c, monthFirst: monthFirst);
+    }
   }
   return _positional(lines, defaultCurrency);
+}
+
+/// Számlakivonat fejléce (DEGIRO „Account.csv”: Date, Product, ISIN, Description,
+/// Change + név nélküli összeg-oszlop – angolul, németül és hollandul): oszlopszerep → index.
+Map<String, int>? _statementHeader(List<String> cells) {
+  const names = {
+    'date': {'date', 'datum'},
+    'isin': {'isin'},
+    'description': {'description', 'beschreibung', 'omschrijving'},
+    'change': {'change', 'nderung', 'mutatie'},
+  };
+  final found = <String, int>{};
+  for (final (i, c) in cells.indexed) {
+    final n = c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), '');
+    for (final e in names.entries) {
+      if (!found.containsKey(e.key) && e.value.contains(n)) found[e.key] = i;
+    }
+  }
+  return found.length == names.length ? found : null;
+}
+
+/// Osztalékadó a számlakivonatban („Dividend Tax”, „Dividendensteuer”, „Dividendbelasting”).
+final _statementTax = RegExp(r'tax|steuer|belasting');
+
+/// A számlakivonat osztaléksorai (a „Change” oszlopban a pénznem, mellette az összeg):
+/// kapott osztalék ISIN-nel, az aznapi osztalékadóval csökkentve; a többi sor
+/// (befizetés, díj, átváltás) kimarad.
+CsvImport _statement(Iterable<String> lines, Map<String, int> col, {required bool monthFirst}) {
+  final rows = [for (final l in lines) splitCsvLine(l, _separator(l))];
+  String cell(List<String> f, int i) => i < f.length ? f[i].trim() : '';
+  final mdy = _monthFirst([for (final f in rows) cell(f, col['date']!)], hint: monthFirst);
+  final gross = <ImportedDividend>[];
+  final tax = <String, double>{};
+  var skipped = 0;
+  for (final f in rows) {
+    final desc = cell(f, col['description']!).toLowerCase();
+    if (!desc.contains('dividend')) continue;
+    final isin = cell(f, col['isin']!).toUpperCase();
+    final ccy = cell(f, col['change']!).toUpperCase();
+    final amount = _decimal(cell(f, col['change']! + 1));
+    final date = _date(cell(f, col['date']!), monthFirst: mdy);
+    if (!_isin.hasMatch(isin) || !_currency.hasMatch(ccy) || amount == null || amount == 0) {
+      skipped++;
+      continue;
+    }
+    if (_statementTax.hasMatch(desc)) {
+      final key = _dayKey(isin, ccy, date);
+      tax[key] = (tax[key] ?? 0) - amount.abs();
+    } else if (amount > 0) {
+      gross.add(ImportedDividend(symbol: '', amount: amount, currency: ccy, date: date, isin: isin));
+    }
+  }
+  return CsvImport(
+    const [],
+    skipped,
+    dividends: [
+      for (final d in gross)
+        if (d.amount + (tax[_dayKey(d.isin!, d.currency, d.date)] ?? 0) case final a when a > 0)
+          ImportedDividend(symbol: '', amount: a, currency: d.currency, date: d.date, isin: d.isin),
+    ],
+  );
 }
 
 CsvImport _withHeader(

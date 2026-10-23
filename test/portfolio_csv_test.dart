@@ -142,6 +142,31 @@ void main() {
     final resolved = degiro.withSymbols(symbols);
     expect(resolved.lots.map((l) => l.symbol), ['AAPL', 'ASML.AS']);
     expect(resolved.skipped, degiro.skipped + 1);
+
+    // A számlakivonat (Account.csv) osztalékai: a pénznem a „Change”, az összeg a mellette lévő oszlopban;
+    // az aznapi osztalékadó levonva, a befizetés kimarad.
+    final account = parsePortfolioCsv(
+      'Date,Time,Value date,Product,ISIN,Description,FX,Change,,Balance,,Order Id\n'
+      '15-05-2025,07:32,14-05-2025,APPLE INC,US0378331005,Dividend Tax,,USD,-0.38,USD,2.12,\n'
+      '15-05-2025,07:32,14-05-2025,APPLE INC,US0378331005,Dividend,,USD,2.50,USD,2.50,\n'
+      '16-05-2025,08:00,16-05-2025,,,Deposit,,EUR,500.00,EUR,500.00,\n'
+      '20-05-2025,08:00,20-05-2025,ASML HOLDING,NL0010273215,Dividend,,EUR,3.68,EUR,503.68,\n',
+    );
+    expect(account.lots, isEmpty);
+    expect(account.isins, {'US0378331005': 'USD', 'NL0010273215': 'EUR'});
+    final paid = account.withSymbols(symbols).dividends;
+    expect(paid.map((d) => (d.symbol, d.currency, d.date)), [
+      ('AAPL', 'USD', DateTime(2025, 5, 15)),
+      ('ASML.AS', 'EUR', DateTime(2025, 5, 20)),
+    ]);
+    expect(paid.first.amount, closeTo(2.12, 1e-9));
+    expect(paid.last.amount, 3.68);
+    // Német nyelvű kivonat is.
+    final german = parsePortfolioCsv(
+      'Datum,Uhrzeit,Valutadatum,Produkt,ISIN,Beschreibung,FX,Änderung,,Saldo,,Order-ID\n'
+      '20-05-2025,08:00,20-05-2025,ASML HOLDING,NL0010273215,Dividende,,EUR,"3,68",EUR,"503,68",\n',
+    );
+    expect(german.dividends.single.amount, 3.68);
   });
 
   test('broker exports: Revolut, Trading 212 and Interactive Brokers, with sales; other rows are ignored', () {

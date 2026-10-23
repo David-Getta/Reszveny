@@ -866,6 +866,19 @@ void main() {
     await _shot(tester, 'portfolio_history_phone_hu');
   });
 
+  testWidgets('importing a broker export on a phone (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'), portfolio: _samplePortfolio(), currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-import')));
+    await tester.pumpAndSettle();
+    // A beillesztett szöveg monospace betűi a teszt-környezetben nem rajzolódnak ki: üres mező.
+    await _shot(tester, 'portfolio_import_phone_hu');
+  });
+
   testWidgets('trailing stops for all positions on a phone (hungarian)', (tester) async {
     final s = _services(locale: const Locale('hu'), portfolio: _samplePortfolio(), currency: 'HUF');
     await pumpApp(tester, s, const Size(430, 1000));

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.210)
+# Változásjegyzék (0.2.130 → 0.2.211)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -102,6 +102,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   dolláros kereskedésnél a helyi tőzsde tickere, pl. ASML.AS); az ár melletti pénznem, a kötőjeles dátum
   („14-03-2025”), az alapdevizában fizetett díj az árfolyammal átváltva. Az import-dialógus szövege mind a hét
   brókert felsorolja, 120 nyelven.
+- A **DEGIRO számlakivonata** (Account.csv – angol, német vagy holland nyelvű) is beolvasható: a „Dividend” sorok
+  kapott osztalékként, az aznapi „Dividend Tax” levonva, a tickert ugyanúgy ISIN-ből; a többi sor kimarad.
 
 ## Megosztás
 
