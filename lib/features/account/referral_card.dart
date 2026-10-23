@@ -27,6 +27,28 @@ class _ReferralCardState extends State<ReferralCard> {
   /// háttérben frissül).
   bool _redeemedNow = false;
 
+  /// Belépés, kilépés vagy fióktörlés után a másik fiók kódja jön.
+  late String? _email = widget.account.email;
+
+  @override
+  void initState() {
+    super.initState();
+    widget.account.addListener(_accountChanged);
+  }
+
+  @override
+  void dispose() {
+    widget.account.removeListener(_accountChanged);
+    super.dispose();
+  }
+
+  void _accountChanged() {
+    if (!mounted || widget.account.email == _email) return;
+    _email = widget.account.email;
+    _redeemedNow = false;
+    _reload();
+  }
+
   void _reload() {
     final next = widget.backend.referral();
     setState(() {
@@ -185,17 +207,19 @@ class _RedeemDialogState extends State<_RedeemDialog> {
       await widget.account.redeemReferral(_code.text);
       if (mounted) Navigator.of(context).pop(true);
     } on BackendException catch (e) {
+      if (!mounted) return;
       setState(
         () => _error = switch (e.code) {
           'own_code' => l10n.referralErrOwn,
           'already_redeemed' => l10n.referralErrAlready,
           'sign_in_required' => l10n.referralErrSignIn,
           'code_full' || 'tester_code_full' => l10n.referralErrFull,
+          'rate_limited' => l10n.errRateLimited,
           _ => l10n.referralErrUnknown,
         },
       );
     } catch (_) {
-      setState(() => _error = l10n.errorGeneric);
+      if (mounted) setState(() => _error = l10n.errorGeneric);
     } finally {
       if (mounted) setState(() => _busy = false);
     }

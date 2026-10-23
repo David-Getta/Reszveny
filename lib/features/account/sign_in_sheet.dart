@@ -67,9 +67,9 @@ class _SignInFlowState extends State<_SignInFlow> {
     });
     try {
       await widget.account.startLogin(email);
-      setState(() => _codeSent = true);
+      if (mounted) setState(() => _codeSent = true);
     } catch (_) {
-      setState(() => _error = l10n.errSignInFailed);
+      if (mounted) setState(() => _error = l10n.errSignInFailed);
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -85,9 +85,9 @@ class _SignInFlowState extends State<_SignInFlow> {
       await widget.account.verify(_email.text.trim(), _code.text.trim());
       if (mounted) Navigator.of(context).pop(true);
     } on BackendException catch (e) {
-      setState(() => _error = e.code == 'invalid_code' ? l10n.errInvalidCode : l10n.errSignInFailed);
+      if (mounted) setState(() => _error = e.code == 'invalid_code' ? l10n.errInvalidCode : l10n.errSignInFailed);
     } catch (_) {
-      setState(() => _error = l10n.errSignInFailed);
+      if (mounted) setState(() => _error = l10n.errSignInFailed);
     } finally {
       if (mounted) setState(() => _busy = false);
     }

@@ -67,6 +67,8 @@ class TelemetryStore {
     'purchase_done',
     'share_image',
     'share_text',
+    'portfolio_share_image',
+    'bulk_stops',
     'alert_created',
     'telemetry_on',
     'ask_question',

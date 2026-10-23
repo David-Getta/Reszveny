@@ -113,6 +113,18 @@ class SyncService extends ChangeNotifier {
     super.dispose();
   }
 
+  /// A fiók törlése után: a készüléken megtartott adat már nem egy másik fiókhoz
+  /// tartozik, így a következő belépés első belépésként összefésül (nem cseréli le).
+  Future<void> forgetAccount() async {
+    _syncedEmail = null;
+    _last = null;
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove(_emailKey);
+      await prefs.remove(_lastKey);
+    } catch (_) {}
+  }
+
   void _accountChanged() {
     final now = account.isSignedIn;
     if (now && !_wasSignedIn) unawaited(syncNow());

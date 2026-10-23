@@ -28,9 +28,15 @@ class AccountController extends ChangeNotifier {
     }
   }
 
+  /// Belépés, kilépés és törlés lépteti: egy közben futó [refresh] régi (másik
+  /// fiókhoz tartozó) válasza ilyenkor eldobódik.
+  int _generation = 0;
+
   /// A szerver szerinti fiók- és jogosultság-állapot átvétele.
   Future<void> refresh() async {
+    final gen = _generation;
     final a = await backend.account();
+    if (gen != _generation) return;
     await entitlements.replace(a.entitlements);
     await _setEmail(a.email);
   }
@@ -46,15 +52,21 @@ class AccountController extends ChangeNotifier {
   /// Kód ellenőrzése; hibánál [BackendException]-t dob (`invalid_code`).
   Future<void> verify(String email, String code) async {
     final a = await backend.verifyEmailLogin(email, code);
+    _generation++;
     await entitlements.replace(a.entitlements);
     await _setEmail(a.email);
   }
 
   Future<void> signOut() async {
     await backend.logout();
+    final gen = ++_generation;
     await _setEmail(null);
+    // A fiók csomagja nem marad a készüléken (hálózat nélkül sem); az új névtelen
+    // fiók állapota utána jön.
+    await entitlements.replace(const EntitlementState());
     try {
-      await entitlements.replace((await backend.account()).entitlements);
+      final a = await backend.account();
+      if (gen == _generation) await entitlements.replace(a.entitlements);
     } catch (e) {
       debugPrint('Jogosultság frissítése kijelentkezés után nem sikerült: $e');
     }
@@ -64,6 +76,7 @@ class AccountController extends ChangeNotifier {
   /// jogosultság üres lesz (a fel nem használt elemzések elvesznek).
   Future<void> deleteAccount() async {
     await backend.deleteAccount();
+    _generation++;
     await _setEmail(null);
     await entitlements.replace(const EntitlementState());
   }

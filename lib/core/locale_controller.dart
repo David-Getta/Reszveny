@@ -15,6 +15,19 @@ class LocaleController extends ChangeNotifier {
   /// Az éppen érvényes nyelv: a választott, vagy a rendszerből feloldott.
   Locale effective(Locale? deviceLocale) => _override ?? SupportedLocales.resolve(deviceLocale);
 
+  /// A készülék nyelvei közül az első támogatott (ugyanígy választ az app felülete is):
+  /// `[et-EE, ru-EE]` esetén orosz, nem a tartalék angol.
+  static Locale resolveList(List<Locale>? deviceLocales) {
+    for (final l in deviceLocales ?? const <Locale>[]) {
+      final resolved = SupportedLocales.resolve(l);
+      if (resolved != SupportedLocales.fallback || l.languageCode == 'en') return resolved;
+    }
+    return SupportedLocales.fallback;
+  }
+
+  /// Az érvényes nyelv a készülék teljes nyelvlistájából (értesítések, AI-szövegek).
+  Locale effectiveFor(List<Locale> deviceLocales) => _override ?? resolveList(deviceLocales);
+
   static Future<LocaleController> load() async {
     try {
       final prefs = await SharedPreferences.getInstance();

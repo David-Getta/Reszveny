@@ -172,6 +172,10 @@ class Store {
     if (!ecols.contains('paid_through')) _db.execute('ALTER TABLE entitlements ADD COLUMN paid_through TEXT');
     final pcols = _db.select('PRAGMA table_info(purchases)').map((r) => r['name'] as String).toSet();
     if (!pcols.contains('link_key')) _db.execute('ALTER TABLE purchases ADD COLUMN link_key TEXT');
+    // A beváltó postafiókjának lenyomata: a fiók törlése után is megmarad (újra-beváltás ellen).
+    final rcols = _db.select('PRAGMA table_info(referrals)').map((r) => r['name'] as String).toSet();
+    if (!rcols.contains('mailbox_hash')) _db.execute('ALTER TABLE referrals ADD COLUMN mailbox_hash TEXT');
+    _db.execute('CREATE INDEX IF NOT EXISTS referrals_mailbox ON referrals(mailbox_hash)');
     _db.execute('CREATE INDEX IF NOT EXISTS purchases_link ON purchases(platform, link_key)');
   }
 
@@ -230,8 +234,13 @@ class Store {
     return token;
   }
 
-  /// Token visszavonása (kijelentkezés).
-  void revokeToken(String token) => _db.execute('DELETE FROM sessions WHERE token_hash = ?', [hashToken(token)]);
+  /// Token visszavonása (kijelentkezés): a munkamenet-token, vagy ha ez a fiók
+  /// elsődleges tokenje (az eszköz, amelyen a fiók névtelenül indult), az is.
+  void revokeToken(String token) {
+    final h = hashToken(token);
+    _db.execute('DELETE FROM sessions WHERE token_hash = ?', [h]);
+    _db.execute("UPDATE users SET token_hash = 'revoked:' || id WHERE token_hash = ?", [h]);
+  }
 
   // ---- Fiók ----
 
@@ -328,6 +337,7 @@ class Store {
       _db.execute('DELETE FROM tester_redemptions WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM analysis_holds WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM invite_devices WHERE user_id = ?', [userId]);
       // Az ajánlás sora névtelenítve marad (nem törlődik): különben a másik fél újra
       // beválthatna egy kódot (a meghívott), illetve az ajánló kerete újraindulna.
       _db.execute("UPDATE referrals SET referee_id = 'deleted:' || lower(hex(randomblob(8))) WHERE referee_id = ?", [
@@ -387,6 +397,9 @@ class Store {
     _db.execute('UPDATE OR IGNORE tester_redemptions SET user_id = ? WHERE user_id = ?', [into, from]);
     _db.execute('DELETE FROM tester_redemptions WHERE user_id = ?', [from]);
     _db.execute('UPDATE analysis_holds SET user_id = ? WHERE user_id = ?', [into, from]);
+    // A meghívó „eszközei” is: a beolvadt névtelen fiók nem foglal tovább helyet.
+    _db.execute('UPDATE OR IGNORE invite_devices SET user_id = ? WHERE user_id = ?', [into, from]);
+    _db.execute('DELETE FROM invite_devices WHERE user_id = ?', [from]);
   }
 
   void clearStripeSubscription(String userId) =>
@@ -599,10 +612,15 @@ class Store {
   bool hasRedeemedReferral(String refereeId) =>
       _db.select('SELECT 1 FROM referrals WHERE referee_id = ?', [refereeId]).isNotEmpty;
 
-  void addReferral({required String refereeId, required String referrerId}) => _db.execute(
-    'INSERT INTO referrals (referee_id, referrer_id, created_at) VALUES (?, ?, ?)',
-    [refereeId, referrerId, clock().toUtc().toIso8601String()],
+  /// [mailbox]: a beváltó normalizált postafiókja (csak a lenyomata kerül tárolásra).
+  void addReferral({required String refereeId, required String referrerId, String? mailbox}) => _db.execute(
+    'INSERT INTO referrals (referee_id, referrer_id, created_at, mailbox_hash) VALUES (?, ?, ?, ?)',
+    [refereeId, referrerId, clock().toUtc().toIso8601String(), mailbox == null ? null : hashToken(mailbox)],
   );
+
+  /// Beváltott-e már ajánlókódot ez a (normalizált) postafiók – törölt fiókkal is.
+  bool mailboxRedeemedReferral(String mailbox) =>
+      _db.select('SELECT 1 FROM referrals WHERE mailbox_hash = ? LIMIT 1', [hashToken(mailbox)]).isNotEmpty;
 
   /// (meghívottak, akik után már jutalmat kapott)
   (int, int) referralStats(String referrerId) {

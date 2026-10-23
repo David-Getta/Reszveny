@@ -56,7 +56,8 @@ class Telemetry {
     if (!enabled) return;
     final message = scrub(_clip('${error.runtimeType}: $error', 500));
     final trace = scrub(_clip(stack?.toString() ?? '', 4000));
-    if (!_seenErrors.add(message) || _errors.length >= maxErrors) return;
+    // Teli csomagnál nem jegyezzük meg látottnak: a következő csomagban még elmehet.
+    if (_errors.length >= maxErrors || !_seenErrors.add(message)) return;
     _errors.add({'message': message, 'stack': trace});
     _schedule();
   }

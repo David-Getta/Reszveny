@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.274)
+# Változásjegyzék (0.2.130 → 0.2.275)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,22 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Fiók, belépés, meghívó: egy huszonegyedik kódátnézés javításai
+
+- **0.2.275**: aki beváltott egy ajánlókódot, annak a szinkron többé nem hiúsul meg 409-cel (a beváltás
+  ellenőrzése tévedésből a feltöltésbe is bekerült). Ha a fiók törlésekor a helyi adatok megtartását választja,
+  és utána másik e-mail-címmel lép be, a megtartott portfólió nem törlődik, hanem első belépésként összefésül. A
+  zárt előzetesben a ki- és bejelentkezés nem fogyasztja el a meghívó eszközhelyeit (a beolvadt és a törölt fiók
+  felszabadítja). A kijelentkezés annak az eszköznek a tokenjét is visszavonja, amelyen a fiók indult. Egy közben
+  futó fiókfrissítés nem írja felül a be- vagy kijelentkezést, és kijelentkezéskor hálózat nélkül sem marad a
+  fizetős csomag a készüléken. A fiók törlése után ugyanazzal a postafiókkal nem váltható be újra ajánlókód. Más
+  IP-ről érkező kérések nem zárhatják ki a cím gazdáját a belépőkódokból, és az ajánló- és tesztelői kódok
+  találgatása korlátozott. A helyi adatok törlése a begépelt keresési leírásokat és az értesítések nyomait is
+  törli. Az ajánló kártya belépés után az új fiók kódját mutatja. Az értesítések és a reggeli összefoglaló nyelve
+  a készülék teljes nyelvlistájából jön, ugyanúgy, mint a felületé. A bejelentkezési lap bezárása kódküldés
+  közben nem okoz hibát. A szerver a portfólió-kép megosztását és a tömeges stop-loss beállítást is számolja, és
+  egy teli hibacsomagból kimaradt hiba a következőben elmegy.
 
 ## Hírek és napi összefoglaló: egy huszadik kódátnézés javításai
 

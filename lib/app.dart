@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'app_services.dart';
+import 'core/locale_controller.dart';
 import 'features/invite/invite_page.dart';
 import 'features/onboarding/onboarding_page.dart';
 import 'features/shell/app_shell.dart';
@@ -38,14 +39,8 @@ class WhatStockApp extends StatelessWidget {
             locale: services.locale.override,
             supportedLocales: SupportedLocales.locales,
             localizationsDelegates: localizationsDelegates,
-            localeListResolutionCallback: (deviceLocales, supported) {
-              if (services.locale.override != null) return services.locale.override;
-              for (final l in deviceLocales ?? const <Locale>[]) {
-                final resolved = SupportedLocales.resolve(l);
-                if (resolved != SupportedLocales.fallback || l.languageCode == 'en') return resolved;
-              }
-              return SupportedLocales.fallback;
-            },
+            localeListResolutionCallback: (deviceLocales, supported) =>
+                services.locale.override ?? LocaleController.resolveList(deviceLocales),
             // Zárt előzetesben (a szerver meghívókódot kér) a meghívókód-képernyő,
             // és minden képernyő alján „Bizalmas előzetes” vízjel.
             builder: backend == null

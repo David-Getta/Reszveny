@@ -135,7 +135,7 @@ class AppServices {
       events: events,
       fx: this.fx,
     );
-    away.displayCurrency = () => displayCurrency(locale.effective(WidgetsBinding.instance.platformDispatcher.locale));
+    away.displayCurrency = () => displayCurrency(_appLocale);
     locale.addListener(() => unawaited(loadTexts()));
     brief =
         dailyBrief?.call(news) ??
@@ -143,9 +143,7 @@ class AppServices {
     // A közelmúlt gyorsjelentései is (a friss eredményhez), a közeliek mellett.
     brief.upcoming ??= () => [...events.recentEarnings, ...events.events];
     brief.fx ??= () {
-      final pair = FxService.homePair(
-        displayCurrency(locale.effective(WidgetsBinding.instance.platformDispatcher.locale)),
-      );
+      final pair = FxService.homePair(displayCurrency(_appLocale));
       return this.fx.recent(pair.$1, pair.$2);
     };
     alertMonitor = AlertMonitor(
@@ -159,8 +157,7 @@ class AppServices {
       news: news,
       preferences: preferences,
       notifier: alertMonitor.notifier,
-      language: () =>
-          SupportedLocales.languageFor(locale.effective(WidgetsBinding.instance.platformDispatcher.locale)).englishName,
+      language: () => SupportedLocales.languageFor(_appLocale).englishName,
       title: () => _l10n().$1.briefTitle,
       onMade: () => this.telemetry.track('morning_brief'),
     );
@@ -406,6 +403,7 @@ class AppServices {
   /// is (portfólió, riasztások, kedvencek, előzmények, elmentett elemzések).
   Future<void> deleteAccount({required bool wipeLocalData}) async {
     await account?.deleteAccount();
+    await sync?.forgetAccount();
     if (wipeLocalData) {
       await portfolio.clear();
       await alerts.clear();
@@ -479,7 +477,7 @@ class AppServices {
   AppLocalizations? _texts;
   Locale? _textsLocale;
 
-  Locale get _appLocale => locale.effective(WidgetsBinding.instance.platformDispatcher.locale);
+  Locale get _appLocale => locale.effectiveFor(WidgetsBinding.instance.platformDispatcher.locales);
 
   /// Az app nyelvének szövegei az értesítésekhez (a felületen kívül).
   Future<void> loadTexts() async {
@@ -507,12 +505,11 @@ class AppServices {
   /// szerinti összesítő pénznemben.
   Future<PortfolioSnapshot> portfolioSnapshot() {
     final positions = portfolio.positions;
-    final device = WidgetsBinding.instance.platformDispatcher.locale;
     return PortfolioSnapshot.load(
       positions,
       marketData: marketData,
       fx: fx,
-      currency: PortfolioSnapshot.totalCurrency(positions, displayCurrency(locale.effective(device))),
+      currency: PortfolioSnapshot.totalCurrency(positions, displayCurrency(_appLocale)),
       cash: portfolio.cash,
     );
   }

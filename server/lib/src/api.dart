@@ -479,14 +479,28 @@ class Api {
   /// a cím gazdáját (más IP-ről) nem zárja ki.
   late final _loginFailures = RateLimiter(15, const Duration(days: 1), clock: () => store.clock());
 
+  /// Ugyanarra a címre kérőnként (IP) óránként és naponta ennyi kód: egy idegen
+  /// kérő nem zárhatja ki a cím gazdáját (az a saját IP-jéről kap kódot).
+  late final _codesPerAddress = RateLimiter(5, const Duration(hours: 1), clock: () => store.clock());
+  late final _codesPerAddressDaily = RateLimiter(10, const Duration(days: 1), clock: () => store.clock());
+
+  /// Egy címre összesen naponta legfeljebb ennyi kód (a postafiók elárasztása ellen),
+  /// jóval a kérőnkénti korlát fölött.
+  static const codesPerAddressPerDay = 40;
+
   Future<Response> _emailStart(Request r) async {
     final raw = (await _body(r))['email'];
     final email = Store.normalizeEmail(raw is String ? raw : '');
     if (!_emailRe.hasMatch(email)) return _error(400, 'invalid_email');
-    if (store.recentCodeCount(email) >= 5 || store.recentCodeCount(email, within: const Duration(days: 1)) >= 10) {
+    if (store.recentCodeCount(email, within: const Duration(days: 1)) >= codesPerAddressPerDay) {
       return _error(429, 'too_many_codes');
     }
-    if (!_codeRequests.allow(_ipKey(_clientIp(r) ?? '-'))) return _error(429, 'too_many_codes');
+    final ipKey = _ipKey(_clientIp(r) ?? '-');
+    final pair = '$ipKey|$email';
+    if (_codesPerAddress.blocked(pair) || _codesPerAddressDaily.blocked(pair)) return _error(429, 'too_many_codes');
+    if (!_codeRequests.allow(ipKey)) return _error(429, 'too_many_codes');
+    _codesPerAddress.hit(pair);
+    _codesPerAddressDaily.hit(pair);
     final code = store.createLoginCode(email);
     try {
       await mailer.sendLoginCode(email, code);
@@ -982,11 +996,6 @@ class Api {
     if (uid == null) return _error(401, 'unauthorized');
     final email = store.emailOf(uid);
     if (email == null) return _error(403, 'sign_in_required');
-    // Ugyanaz a postafiók más alakban (`név+1@`, Gmailnél pontokkal) sem válthat be újra.
-    final mailbox = normalizedMailbox(email);
-    if (store.referralRedeemerEmails().any((e) => normalizedMailbox(e) == mailbox)) {
-      return _error(409, 'already_redeemed');
-    }
     final raw = await r.readAsString();
     if (raw.length > syncMaxBytes) return _error(413, 'too_large');
     final Object? body;
@@ -1070,9 +1079,15 @@ class Api {
 
   /// Egy barát kódjának beváltása: a meghívott azonnal megkapja az extra
   /// elemzéseket; fiókonként egyszer, saját kód nem váltható be.
+  /// Hibás ajánló- és tesztelői kódok fiókonként és IP-címenként óránként: a kézzel
+  /// választott tesztelői kódok ne legyenek kitalálhatók.
+  late final _redeemFailures = RateLimiter(10, const Duration(hours: 1), clock: () => store.clock());
+
   Future<Response> _redeemReferral(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
+    final ipKey = 'ip|${_ipKey(_clientIp(r) ?? '-')}', userKey = 'uid|$uid';
+    if (_redeemFailures.blocked(ipKey) || _redeemFailures.blocked(userKey)) return _error(429, 'rate_limited');
     final code = (await _body(r))['code'] as String? ?? '';
     // Tesztelői kód: a megadott csomag a megadott napokra, fizetés nélkül.
     if (testers.find(code) case final t?) {
@@ -1096,7 +1111,12 @@ class Api {
       return _json({'entitlements': store.entitlement(uid).toJson(), 'bonus': 0, 'tester': t.label});
     }
     final referrer = store.userIdForReferralCode(code);
-    if (referrer == null) return _error(404, 'unknown_code');
+    if (referrer == null) {
+      _redeemFailures
+        ..hit(ipKey)
+        ..hit(userKey);
+      return _error(404, 'unknown_code');
+    }
     if (referrer == uid) return _error(400, 'own_code');
     if (store.hasRedeemedReferral(uid)) return _error(409, 'already_redeemed');
     // Eldobható névtelen fiókokkal ne lehessen bónuszt gyűjteni: e-mailes fiók
@@ -1104,12 +1124,14 @@ class Api {
     final email = store.emailOf(uid);
     if (email == null) return _error(403, 'sign_in_required');
     // Ugyanaz a postafiók más alakban (`név+1@`, Gmailnél pontokkal) sem válthat be újra.
+    // A fiók törlése után ugyanazzal a címmel sem (a lenyomat megmarad).
     final mailbox = normalizedMailbox(email);
-    if (store.referralRedeemerEmails().any((e) => normalizedMailbox(e) == mailbox)) {
+    if (store.mailboxRedeemedReferral(mailbox) ||
+        store.referralRedeemerEmails().any((e) => normalizedMailbox(e) == mailbox)) {
       return _error(409, 'already_redeemed');
     }
     if (store.referralStats(referrer).$1 >= referralMax) return _error(409, 'code_full');
-    store.addReferral(refereeId: uid, referrerId: referrer);
+    store.addReferral(refereeId: uid, referrerId: referrer, mailbox: mailbox);
     final e = store.entitlement(uid);
     store.save(e..extra += referralBonus);
     return _json({'entitlements': store.entitlement(uid).toJson(), 'bonus': referralBonus});

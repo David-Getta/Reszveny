@@ -1063,9 +1063,16 @@ class AppPreferences extends ChangeNotifier {
     portfolioGoal = null;
     dividendGoal = null;
     _goalsAt.clear();
+    // A begépelt keresési leírások és az értesítések nyomai (célösszeg, napi mozgás) is.
+    _resolved.clear();
+    portfolioMoveNotified = null;
+    portfolioGoalNotified = null;
     notifyListeners();
     await _save((p) async {
       for (final k in [
+        _resolvedKey,
+        _portfolioMoveNotifiedKey,
+        _portfolioGoalNotifiedKey,
         _favoritesKey,
         _favoriteSinceKey,
         _favoritesRemovedKey,
