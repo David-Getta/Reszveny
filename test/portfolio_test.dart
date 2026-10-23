@@ -496,6 +496,10 @@ void main() {
     expect(parseAmount('1 500,50', 'hu'), 1500.5);
     expect(parseAmount('1.234,56', 'de'), 1234.56);
     expect(parseAmount('Infinity', 'en'), isNull);
+    // Indiai tagolás: kétjegyű csoportok, az utolsó háromjegyű.
+    expect(parseAmount('1,00,000', 'en'), 100000);
+    expect(parseAmount('12,34,56,789', 'en'), 123456789);
+    expect(parseAmount('1' * 320, 'en'), isNull, reason: 'túl nagy szám');
   });
 
   test('the analysis is told about the reader’s own position, without being asked for advice', () {
@@ -647,6 +651,16 @@ void main() {
     expect(portfolioMaxDrawdown([lot('a', 10, 1), lot('b', 5, 10, sell: true)], flat, (_) => 1), isNull);
     // Túl rövid sor: nincs mit mondani.
     expect(portfolioMaxDrawdown([lot('a', 10, 25)], histories, (_) => 1), isNull);
+    // Egy hibás, 0-s záróár nem rögzíti −100%-on.
+    final broken = {
+      'AAA': PriceHistory(
+        symbol: 'AAA',
+        points: [
+          for (final (i, c) in closes.indexed) PricePoint(time: DateTime(2026, 1, 1 + i), close: i == 5 ? 0 : c),
+        ],
+      ),
+    };
+    expect(portfolioMaxDrawdown([lot('a', 10, 1)], broken, (_) => 1)!.percent, closeTo(-25, 1e-9));
   });
 
   test('S&P 500 comparison: each purchase amount goes into the index on its own day', () {

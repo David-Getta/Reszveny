@@ -315,12 +315,13 @@ List<RebalanceStep> rebalancePlan(PortfolioSnapshot s, Map<String, double> targe
   ]..sort((a, b) => b.amount.abs().compareTo(a.amount.abs()));
 }
 
-/// A cél becsült éve a mostani éves hozammal ([annualReturn], tört), kamatos
-/// kamattal és további befizetés nélkül; `null`, ha a hozam nem pozitív, a cél
-/// már teljesült, vagy 50 évnél messzebb volna (az ilyen becslés semmitmondó).
-int? goalYear(double current, double goal, double annualReturn, DateTime now) {
-  if (annualReturn <= 0 || current <= 0 || goal <= current) return null;
-  final years = math.log(goal / current) / math.log(1 + annualReturn);
+/// A cél becsült éve a mostani éves hozammal ([annualReturn], tört): a részvények
+/// ([stocks]) kamatos kamattal nőnek, a készpénz ([cash]) nem; további befizetés
+/// nélkül. `null`, ha a hozam nem pozitív, nincs részvény, a cél már teljesült,
+/// vagy 50 évnél messzebb volna (az ilyen becslés semmitmondó).
+int? goalYear(double stocks, double goal, double annualReturn, DateTime now, {double cash = 0}) {
+  if (annualReturn <= 0 || stocks <= 0 || goal <= stocks + cash) return null;
+  final years = math.log((goal - cash) / stocks) / math.log(1 + annualReturn);
   if (!years.isFinite || years > 50) return null;
   return now.add(Duration(days: (years * 365.25).round())).year;
 }

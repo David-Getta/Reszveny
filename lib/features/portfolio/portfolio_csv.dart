@@ -230,10 +230,11 @@ String _separator(String line) {
   return bare.contains('\t') ? '\t' : (bare.contains(';') ? ';' : ',');
 }
 
-/// Az eladás és a vétel magyarul és németül a „side” oszlopban (az eladás előbb:
-/// a „Verkauf” „kauf”-ot is tartalmaz).
-const _sellWords = ['eladás', 'verkauf'];
-const _buyWords = ['vétel', 'vásárlás', 'kauf'];
+/// Az eladás és a vétel magyarul és németül a „side” oszlopban, szó elején (a
+/// „kivétel”, „bevétel”, „Rückkauf” nem vétel); az eladás előbb, mert a „Verkauf”
+/// „kauf”-ot is tartalmaz.
+final _sellWords = RegExp(r'(^|[^\p{L}])(eladás|verkauf)', unicode: true);
+final _buyWords = RegExp(r'(^|[^\p{L}])(vétel|vásárlás|kauf)', unicode: true);
 
 /// Fejléc nélküli sorban a hetedik oszlop csak akkor számla, ha betű is van benne
 /// (egy összeg-oszlop, pl. „1500.00” vagy „$1,500”, nem az).
@@ -250,16 +251,16 @@ const _roles = <String, Set<String>>{
   },
   'price': {
     'price', 'pricepershare', 'priceshare', 'tprice', 'tradeprice', 'unitprice', 'shareprice', //
-    'rfolyam', 'egysgr', 'vtelir', 'eladsir', 'kurs', 'preis', 'ausfhrungskurs',
+    'egysgr', 'vtelir', 'eladsir', 'ausfhrungskurs',
   },
   'currency': {'currency', 'currencypriceshare', 'pricecurrency', 'currencyprimary', 'pnznem', 'deviza', 'whrung'},
   'date': {'date', 'time', 'datetime', 'tradedate', 'dtum', 'teljestsdtuma', 'ktsnap', 'datum', 'handelstag'},
   'side': {
     'type', 'action', 'side', 'buysell', 'transactiontype', //
-    'irny', 'mvelet', 'tpus', 'typ', 'art', 'transaktionsart', 'geschftsart',
+    'irny', 'mvelet', 'transaktionsart', 'geschftsart',
   },
   // Az osztaléksor összege (Revolut „Total Amount”, Trading 212 „Total”).
-  'total': {'total', 'totalamount', 'amount', 'netamount'},
+  'total': {'total', 'totalamount', 'amount', 'netamount', 'sszeg', 'betrag'},
   'totalcurrency': {'currencytotal'},
   // A számla (saját export „account”, magyarul „számla”).
   'account': {'account', 'accountname', 'szmla', 'konto', 'depot'},
@@ -267,13 +268,22 @@ const _roles = <String, Set<String>>{
   'fee': {'fee', 'fees', 'commission', 'commissions', 'commfee', 'jutalk', 'dj', 'gebhr', 'gebhren', 'provision'},
 };
 
+/// Általános oszlopnevek: csak ha nincs egyértelműbb (pl. a „Típus” lehet az
+/// eszköz fajtája is, az „Árfolyam” a mai ár is egy saját táblázatban).
+const _weakRoles = <String, Set<String>>{
+  'price': {'rfolyam', 'kurs', 'preis'},
+  'side': {'tpus', 'typ', 'art'},
+};
+
 /// Fejlécsor felismerése: oszlopszerep → index, ha van ticker, darabszám és ár.
 Map<String, int>? _header(List<String> cells) {
   final found = <String, int>{};
-  for (final (i, c) in cells.indexed) {
-    final n = c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), '');
-    for (final e in _roles.entries) {
-      if (!found.containsKey(e.key) && e.value.contains(n)) found[e.key] = i;
+  for (final roles in [_roles, _weakRoles]) {
+    for (final (i, c) in cells.indexed) {
+      final n = c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), '');
+      for (final e in roles.entries) {
+        if (!found.containsKey(e.key) && e.value.contains(n)) found[e.key] = i;
+      }
     }
   }
   return found.containsKey('symbol') && found.containsKey('quantity') && found.containsKey('price') ? found : null;
@@ -382,9 +392,9 @@ CsvImport _withHeader(
     bool? sell;
     if (side.isEmpty) {
       sell = signed != null && signed < 0;
-    } else if (side.contains('sell') || side == 's' || side == 'sld' || _sellWords.any(side.contains)) {
+    } else if (side.contains('sell') || side == 's' || side == 'sld' || _sellWords.hasMatch(side)) {
       sell = true;
-    } else if (side.contains('buy') || side == 'b' || side == 'bot' || _buyWords.any(side.contains)) {
+    } else if (side.contains('buy') || side == 'b' || side == 'bot' || _buyWords.hasMatch(side)) {
       sell = false;
     }
     final symbol = cell(f, 'symbol').toUpperCase();

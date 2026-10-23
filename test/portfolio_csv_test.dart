@@ -214,6 +214,22 @@ void main() {
     expect(de.lots.first.date, DateTime(2024, 3, 14));
   });
 
+  test('generic column names only when nothing clearer; side words only at a word start', () {
+    // A „Típus” az eszköz fajtája: az „Irány” a vétel/eladás oszlopa.
+    final typed = parsePortfolioCsv('Szimbólum;Típus;Irány;Darab;Árfolyam\nOTP;Részvény;Vétel;10;30000');
+    expect(typed.lots.single.sell, isFalse);
+    // A „Vételi ár” egyértelműbb, mint az „Árfolyam” (ami a mai ár is lehet).
+    expect(parsePortfolioCsv('Ticker;Darab;Árfolyam;Vételi ár\nOTP;10;32000;30000').lots.single.price, 30000);
+    // A „kivétel” és a „Rückkauf” nem vétel (és nem is eladás: kimarad).
+    expect(parsePortfolioCsv('Ticker;Darab;Árfolyam;Irány\nOTP;10;30000;Értékpapír kivétel').lots, isEmpty);
+    expect(parsePortfolioCsv('Kürzel;Stück;Kurs;Typ\nSAP;3;200;Rückkauf').lots, isEmpty);
+    // Osztaléksor magyar „Összeg” oszloppal: a teljes összeg, nem az ár.
+    expect(
+      parsePortfolioCsv('Ticker;Darab;Árfolyam;Összeg;Irány\nMOL;100;0,25;25;Osztalék').dividends.single.amount,
+      25,
+    );
+  });
+
   test('realized gains CSV: an account column when a sale has an account', () {
     final lots = [
       PortfolioLot(id: 'a', symbol: 'OTP', quantity: 10, price: 100, currency: 'HUF', date: DateTime(2024, 1, 2)),

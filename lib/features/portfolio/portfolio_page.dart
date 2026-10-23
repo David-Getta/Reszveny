@@ -1639,11 +1639,13 @@ class _GoalBar extends StatelessWidget {
         fmt: fmt,
         // A mostani éves hozammal mikor érhető el (befizetés nélkül, kamatos kamattal).
         footnote: switch ((prefs.portfolioGoal, snapshot.annualReturn)) {
+          // Az éves hozam a részvényeké: a készpénz nem nő vele.
           (final g?, final r?) when g.currency == snapshot.currency => switch (goalYear(
-            snapshot.totalValue,
+            snapshot.value,
             g.amount,
             r,
             DateTime.now(),
+            cash: snapshot.cash,
           )) {
             final y? => l10n.portfolioGoalEta(fmt.percent(r * 100, withSign: true), '$y'),
             _ => null,

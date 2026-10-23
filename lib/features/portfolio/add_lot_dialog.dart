@@ -35,9 +35,12 @@ double? parseAmount(String input, String locale) {
   final s = input.trim().replaceAll(RegExp(r"[\s\u00a0\u202f']"), '');
   final decimal = NumberFormat.decimalPattern(Fmt(locale).numberLocale).symbols.DECIMAL_SEP;
   final group = decimal == ',' ? '.' : ',';
-  // Az első csoport nem kezdődhet 0-val: a „0.125” tizedestört, nem 125.
-  if (!s.contains(decimal) && RegExp('^-?[1-9]\\d{0,2}(${RegExp.escape(group)}\\d{3})+\$').hasMatch(s)) {
-    return double.tryParse(s.replaceAll(group, ''));
+  // Az első csoport nem kezdődhet 0-val: a „0.125” tizedestört, nem 125. Az indiai
+  // tagolás („1,00,000”) kétjegyű csoportjai is: az utolsó csoport mindig háromjegyű.
+  final g = RegExp.escape(group);
+  if (!s.contains(decimal) && RegExp('^-?[1-9]\\d{0,2}(($g\\d{3})+|($g\\d{2})+$g\\d{3})\$').hasMatch(s)) {
+    final v = double.tryParse(s.replaceAll(group, ''));
+    return v != null && v.isFinite ? v : null;
   }
   return parseDecimal(input);
 }

@@ -92,31 +92,36 @@ PriceHistory? portfolioValueHistory(
       if (histories[l.symbol]?.points.isNotEmpty == true && rate(l.currency) != null) l,
   ];
   if (usable.isEmpty) return null;
+  final symbols = {for (final l in usable) l.symbol};
   final days = <DateTime>{
-    for (final s in {for (final l in usable) l.symbol})
+    for (final s in symbols)
       for (final p in histories[s]!.points) day(p.time),
   }.toList()..sort();
-  final ccy = {for (final l in usable) l.symbol: l.currency};
+  final rateOf = {for (final l in usable) l.symbol: rate(l.currency)!};
+  // A tranzakciók időrendben (dátum nélküli elöl): a darabszám napról napra, növekményesen.
+  final ordered = [...usable]..sort((a, b) => (a.date ?? DateTime(0)).compareTo(b.date ?? DateTime(0)));
+  var next = 0;
   final idx = <String, int>{};
   final last = <String, double>{};
+  final held = <String, double>{};
   Map<String, double>? prevHeld;
   var prevLast = <String, double>{};
   var index = 1.0, peak = 1.0, worst = 0.0, n = 0;
   DateTime? peakDay, worstPeak, worstTrough;
   for (final d in days) {
-    for (final s in {for (final l in usable) l.symbol}) {
+    for (final s in symbols) {
       final pts = histories[s]!.points;
       var i = idx[s] ?? 0;
       while (i < pts.length && !day(pts[i].time).isAfter(d)) {
-        last[s] = pts[i].close;
+        // A hibás (nem pozitív) záróár kimarad: az előző ismert ár marad.
+        if (pts[i].close > 0) last[s] = pts[i].close;
         i++;
       }
       idx[s] = i;
     }
-    // A nap végén birtokolt darabszám (dátum nélküli tétel az elejétől).
-    final held = <String, double>{};
-    for (final l in usable) {
-      if (l.date != null && day(l.date!).isAfter(d)) continue;
+    // A nap végéig történt tranzakciók (dátum nélküli az elejétől).
+    while (next < ordered.length && (ordered[next].date == null || !day(ordered[next].date!).isAfter(d))) {
+      final l = ordered[next++];
       held[l.symbol] = (held[l.symbol] ?? 0) + l.signedQuantity;
     }
     final before = prevHeld;
@@ -126,8 +131,8 @@ PriceHistory? portfolioValueHistory(
       for (final e in before.entries) {
         final now = last[e.key], then = prevLast[e.key];
         if (e.value <= 0 || now == null || then == null) continue;
-        today += e.value * now * rate(ccy[e.key]!)!;
-        yesterday += e.value * then * rate(ccy[e.key]!)!;
+        today += e.value * now * rateOf[e.key]!;
+        yesterday += e.value * then * rateOf[e.key]!;
       }
       if (yesterday > 0) {
         index *= today / yesterday;
@@ -146,8 +151,8 @@ PriceHistory? portfolioValueHistory(
     }
     if (held.values.any((q) => q > 0)) {
       // Az első birtokolt nap a kiinduló csúcs.
-      if (prevHeld == null || !prevHeld.values.any((q) => q > 0)) peakDay ??= d;
-      prevHeld = held;
+      peakDay ??= d;
+      prevHeld = Map.of(held);
     } else {
       prevHeld = null;
     }
@@ -283,6 +288,15 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
       services.marketData.history(symbol).then((h) => index = h).then((_) {}, onError: (Object _) {}),
     ]);
     final rates = <String, double>{for (final r in widget.snapshot.rows) r.position.currency: ?r.rate};
+    // A már eladott, más pénznemű pozíciók árfolyama is kell (a múltbeli értékhez és a visszaeséshez).
+    final missing = {for (final l in lots) l.currency}..removeAll({...rates.keys, widget.snapshot.currency});
+    if (missing.isNotEmpty) {
+      try {
+        rates.addAll(await services.fx.ratesFor(missing, widget.snapshot.currency));
+      } catch (_) {
+        // Árfolyam nélkül ezek kimaradnak, mint eddig.
+      }
+    }
     double? rate(String c) => c == widget.snapshot.currency ? 1.0 : rates[c];
     final i = index;
     return (

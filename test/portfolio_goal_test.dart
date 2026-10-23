@@ -34,6 +34,11 @@ void main() {
     expect(goalYear(10000, 20000, -0.05, now), isNull);
     expect(goalYear(30000, 20000, 0.10, now), isNull, reason: 'már teljesült');
     expect(goalYear(100, 1e9, 0.01, now), isNull, reason: '50 évnél messzebb');
+    // A készpénz nem nő a részvények hozamával: 10 000 részvény + 40 000 készpénz → 100 000 évi 15%-kal
+    // a részvényeknek 60 000-ig kell nőniük (ln 6 / ln 1,15 ≈ 12,8 év), nem 50 000 duplázódása.
+    expect(goalYear(10000, 100000, 0.15, now, cash: 40000), 2039);
+    expect(goalYear(10000, 55000, 0.15, now, cash: 40000), 2029);
+    expect(goalYear(10000, 50000, 0.15, now, cash: 40000), isNull, reason: 'készpénzzel együtt már teljesült');
   });
 
   testWidgets('the goal bar says when the goal would be reached at today\'s annual return', (tester) async {
