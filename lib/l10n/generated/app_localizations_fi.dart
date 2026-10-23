@@ -2685,6 +2685,13 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Tuotto tänä vuonna';
+
+  @override
+  String get glossTwrYtd =>
+      'Aikapainotettu tuotto vuoden alusta (tai ensimmäisestä ostostasi, jos se oli tänä vuonna): jokainen päivä laskee niiden osakkeiden muutoksen, jotka omistit sinä päivänä, ja päivät ketjutetaan yhteen – sijoittamasi tai nostamasi raha ei ole tuottoa, joten sitä voi verrata indeksiin. Alla: valittu indeksi samalla ajanjaksolla.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

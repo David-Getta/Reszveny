@@ -2685,6 +2685,13 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Avkastning i år';
+
+  @override
+  String get glossTwrYtd =>
+      'Tidsviktad avkastning sedan årets början (eller sedan ditt första köp, om det var i år): varje dag räknar förändringen i de aktier du ägde den dagen, och dagarna kedjas ihop – pengar du sätter in eller tar ut är inte avkastning, så den kan jämföras med ett index. Under: det valda indexet under samma period.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

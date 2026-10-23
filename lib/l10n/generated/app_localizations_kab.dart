@@ -2682,6 +2682,13 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Afaris n useggas-a';
+
+  @override
+  String get glossTwrYtd =>
+      'Afaris yettwaktalen s wakud seg tazwara n useggas (neɣ seg wayen i d-teɣiḍ tikkelt tamezwarut, ma yella d aseggas-a): yal ass yettḥesab abeddel n yiksyunen i tesɛiḍ ass-nni, ussan ttwaqqnen wa ɣer wa – idrimen i d-tesserseḍ neɣ i d-tekkseḍ mačči d afaris, ihi yezmer ad yettwasnemhel d umatar. Ddaw-s: amatar yettwafernen deg yiwet n tallit.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

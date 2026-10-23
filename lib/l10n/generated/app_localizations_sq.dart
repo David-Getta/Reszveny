@@ -2690,6 +2690,13 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Rendimenti këtë vit';
+
+  @override
+  String get glossTwrYtd =>
+      'Rendimenti i ponderuar me kohën që nga fillimi i vitit (ose që nga blerja juaj e parë, nëse ishte këtë vit): çdo ditë llogarit ndryshimin e aksioneve që zotëronit atë ditë, dhe ditët lidhen zinxhir me njëra-tjetrën – paratë që depozitoni ose tërhiqni nuk janë rendiment, ndaj mund të krahasohet me një indeks. Poshtë tij: indeksi i zgjedhur për të njëjtën periudhë.';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

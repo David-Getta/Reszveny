@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Kaikilla omistuksilla on jo liukuva stop} =1{1 liukuva stop asetettu} other{{count} liukuvaa stopia asetettu}}",
   "portfolioSinceSale": "{percent} myynnin jälkeen",
   "lotPreviewRealized": "Toteutunut tästä myynnistä (FIFO):",
-  "lotPreviewAverage": "Uusi keskihinta: {after} (nyt {before})"
+  "lotPreviewAverage": "Uusi keskihinta: {after} (nyt {before})",
+  "portfolioYtdReturn": "Tuotto tänä vuonna",
+  "glossTwrYtd": "Aikapainotettu tuotto vuoden alusta (tai ensimmäisestä ostostasi, jos se oli tänä vuonna): jokainen päivä laskee niiden osakkeiden muutoksen, jotka omistit sinä päivänä, ja päivät ketjutetaan yhteen – sijoittamasi tai nostamasi raha ei ole tuottoa, joten sitä voi verrata indeksiin. Alla: valittu indeksi samalla ajanjaksolla."
 }

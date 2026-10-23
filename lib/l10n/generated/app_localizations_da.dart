@@ -2682,6 +2682,13 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Afkast i år';
+
+  @override
+  String get glossTwrYtd =>
+      'Tidsvægtet afkast siden årets start (eller siden dit første køb, hvis det var i år): hver dag tæller ændringen i de aktier, du ejede den dag, og dagene kædes sammen – penge, du sætter ind eller hæver, er ikke afkast, så det kan sammenlignes med et indeks. Nedenunder: det valgte indeks i samme periode.';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

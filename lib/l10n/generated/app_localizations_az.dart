@@ -2685,6 +2685,13 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Bu ilki gəlirlilik';
+
+  @override
+  String get glossTwrYtd =>
+      'İlin əvvəlindən (və ya ilk alışınız bu il olubsa, ondan bəri) zamana görə çəkili gəlirlilik: hər gün həmin gün sahib olduğunuz səhmlərin dəyişməsini hesablayır və günlər bir-birinə zəncirlənir – qoyduğunuz və ya çıxardığınız pul gəlirlilik deyil, buna görə onu indekslə müqayisə etmək olar. Altında: eyni dövr üçün seçilmiş indeks.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Sve pozicije već imaju to upozorenje} =1{Postavljeno je 1 upozorenje} one{Postavljeno je {count} upozorenje} few{Postavljena su {count} upozorenja} other{Postavljeno je {count} upozorenja}}",
   "portfolioSinceSale": "{percent} od prodaje",
   "lotPreviewRealized": "Ostvareno ovom prodajom (FIFO):",
-  "lotPreviewAverage": "Nova prosječna cijena: {after} (sada {before})"
+  "lotPreviewAverage": "Nova prosječna cijena: {after} (sada {before})",
+  "portfolioYtdReturn": "Prinos ove godine",
+  "glossTwrYtd": "Vremenski ponderisani prinos od početka godine (ili od vaše prve kupovine, ako je bila ove godine): svaki dan računa promjenu dionica koje ste tog dana imali, a dani se nadovezuju jedan na drugi – novac koji uplatite ili isplatite nije prinos, pa se može porediti s indeksom. Ispod: odabrani indeks za isti period."
 }

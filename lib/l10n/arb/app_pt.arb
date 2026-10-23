@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Todas as posições já têm stop móvel} =1{1 stop móvel definido} other{{count} stops móveis definidos}}",
   "portfolioSinceSale": "{percent} desde a venda",
   "lotPreviewRealized": "Realizado nesta venda (FIFO):",
-  "lotPreviewAverage": "Novo custo médio: {after} (agora {before})"
+  "lotPreviewAverage": "Novo custo médio: {after} (agora {before})",
+  "portfolioYtdReturn": "Rentabilidade este ano",
+  "glossTwrYtd": "Rentabilidade ponderada pelo tempo desde o início do ano (ou desde a sua primeira compra, se foi este ano): cada dia conta a variação das ações que detinha nesse dia, e os dias são encadeados – o dinheiro que deposita ou retira não é rentabilidade, por isso pode ser comparada com um índice. Abaixo: o índice escolhido no mesmo período."
 }

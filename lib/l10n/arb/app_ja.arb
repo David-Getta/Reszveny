@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{すべての保有銘柄にトレーリングストップが設定済みです} =1{1 件のトレーリングストップを設定しました} other{{count} 件のトレーリングストップを設定しました}}",
   "portfolioSinceSale": "売却後 {percent}",
   "lotPreviewRealized": "この売却の実現損益（FIFO）：",
-  "lotPreviewAverage": "新しい平均取得単価：{after}（現在 {before}）"
+  "lotPreviewAverage": "新しい平均取得単価：{after}（現在 {before}）",
+  "portfolioYtdReturn": "今年のリターン",
+  "glossTwrYtd": "年初来（今年初めて購入した場合はその日から）の時間加重リターン。毎日、その日に保有していた株の値動きを計算し、それを日ごとにつなぎ合わせます。入出金はリターンに含まれないため、指数と比較できます。下には、同じ期間の選択した指数を表示します。"
 }

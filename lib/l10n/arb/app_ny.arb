@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Sheya iliyonse ili kale ndi chenjezo ili} =1{Chenjezo 1 lakhazikitsidwa} other{Machenjezo {count} akhazikitsidwa}}",
   "portfolioSinceSale": "{percent} kuyambira pamene munagulitsa",
   "lotPreviewRealized": "Phindu lenileni pa kugulitsa uku (FIFO):",
-  "lotPreviewAverage": "Mtengo watsopano wapakatikati: {after} (pano {before})"
+  "lotPreviewAverage": "Mtengo watsopano wapakatikati: {after} (pano {before})",
+  "portfolioYtdReturn": "Phindu la chaka chino",
+  "glossTwrYtd": "Phindu loyezedwa malinga ndi nthawi kuyambira kuchiyambi kwa chaka (kapena kuyambira pomwe munagula koyamba, ngati zinali chaka chino): tsiku lililonse limawerengera kusintha kwa masheya omwe munali nawo tsiku limenelo, ndipo masiku amalumikizidwa pamodzi – ndalama zomwe mumayika kapena kutulutsa si phindu, choncho lingayerekezedwe ndi index. Pansi pake: index yomwe yasankhidwa nthawi yomweyo."
 }

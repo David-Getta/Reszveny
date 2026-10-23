@@ -2690,6 +2690,13 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'ఈ సంవత్సరం రాబడి';
+
+  @override
+  String get glossTwrYtd =>
+      'సంవత్సరం ప్రారంభం నుంచి (లేదా మీ మొదటి కొనుగోలు ఈ సంవత్సరమే జరిగితే అప్పటి నుంచి) కాల-భారిత రాబడి: ప్రతి రోజు ఆ రోజు మీ దగ్గర ఉన్న షేర్ల మార్పును లెక్కిస్తుంది, రోజులను ఒకదానికొకటి గొలుసులా కలుపుతారు – మీరు జమ చేసే లేదా ఉపసంహరించే డబ్బు రాబడి కాదు, కాబట్టి దీన్ని ఒక సూచీతో పోల్చవచ్చు. కింద: అదే కాలంలో ఎంచుకున్న సూచీ.';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

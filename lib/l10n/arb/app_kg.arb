@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Bitini yonso kele dezia ti lukebisu yai} =1{Lukebisu 1 me tulama} other{Bukebisu {count} me tulama}}",
   "portfolioSinceSale": "{percent} banda nge tekaka yo",
   "lotPreviewRealized": "Mbakulu ya kieleka na kuteka yai (FIFO):",
-  "lotPreviewAverage": "Ntalu ya kati ya mpa: {after} (ntangu yai {before})"
+  "lotPreviewAverage": "Ntalu ya kati ya mpa: {after} (ntangu yai {before})",
+  "portfolioYtdReturn": "Mbakulu ya mvula yai",
+  "glossTwrYtd": "Mbakulu ya bo me tala na ntangu katuka na luyantiku ya mvula (to katuka na kusumba na nge ya ntete, kana yo salamaka na mvula yai): konso kilumbu ke tanga nsoba ya ba actions yina nge vandaka na yo na kilumbu yina, mpi ba kilumbu ke kangamaka mosi na nkaka – mbongo yina nge ke tula to ke katula kele ve mbakulu, yo yina bo lenda fwanikisa yo ti indice mosi. Na nsi: indice yina nge solaka na ntangu yina mosi."
 }

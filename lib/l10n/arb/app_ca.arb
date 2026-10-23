@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Totes les posicions ja tenen un stop dinàmic} =1{S’ha definit 1 stop dinàmic} other{S’han definit {count} stops dinàmics}}",
   "portfolioSinceSale": "{percent} des de la venda",
   "lotPreviewRealized": "Realitzat en aquesta venda (FIFO):",
-  "lotPreviewAverage": "Nou cost mitjà: {after} (ara {before})"
+  "lotPreviewAverage": "Nou cost mitjà: {after} (ara {before})",
+  "portfolioYtdReturn": "Rendibilitat aquest any",
+  "glossTwrYtd": "Rendibilitat ponderada en el temps des de l'inici de l'any (o des de la teva primera compra, si va ser aquest any): cada dia compta el canvi de les accions que tenies aquell dia, i els dies s'encadenen – els diners que hi poses o en treus no són rendibilitat, de manera que es pot comparar amb un índex. A sota: l'índex triat en el mateix període."
 }

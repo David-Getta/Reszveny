@@ -2704,6 +2704,13 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Tombony amin\'ity taona ity';
+
+  @override
+  String get glossTwrYtd =>
+      'Tombony voalanja araka ny fotoana hatramin\'ny fiandohan\'ny taona (na hatramin\'ny fividiananao voalohany, raha tamin\'ity taona ity izany): isan\'andro dia kajiana ny fiovan\'ny aksiona nananao tamin\'io andro io, ary ampifandraisina toy ny rojo ireo andro – ny vola apetrakao na alainao dia tsy tombony, ka azo ampitahaina amin\'ny index iray izy. Eo ambaniny: ilay index nofidina nandritra io fotoana io ihany.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
+import 'package:reszveny/features/settings/glossary_page.dart';
 
 import 'app_widget_test.dart' show services;
 
@@ -22,6 +23,12 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Glossary'), findsWidgets);
     expect(find.byKey(const ValueKey('glossary-P/E (trailing)')), findsOneWidget);
+    // A lista ábécérendben, lustán épül: a lejjebb lévő mutatóhoz görgetni kell.
+    await tester.scrollUntilVisible(
+      find.byKey(const ValueKey('glossary-RSI (14 days)')),
+      300,
+      scrollable: find.descendant(of: find.byType(GlossaryPage), matching: find.byType(Scrollable)).last,
+    );
     expect(find.byKey(const ValueKey('glossary-RSI (14 days)')), findsOneWidget);
     await tester.enterText(find.byKey(const ValueKey('glossary-search')), 'rsi');
     await tester.pumpAndSettle();

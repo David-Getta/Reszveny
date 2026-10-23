@@ -35,4 +35,6 @@ Map<String, String> metricGlossary(AppLocalizations l10n) => {
   l10n.labelDividendGrowth5y: l10n.glossDividendGrowth5y,
   l10n.portfolioBeta: l10n.glossPortfolioBeta,
   l10n.portfolioTop3: l10n.glossPortfolioTop3,
+  l10n.portfolioYtdReturn: l10n.glossTwrYtd,
+  l10n.portfolioMaxDrawdown: l10n.glossMaxDrawdown,
 };

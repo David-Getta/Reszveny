@@ -2726,6 +2726,13 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Ienesīgums šogad';
+
+  @override
+  String get glossTwrYtd =>
+      'Laikā svērts ienesīgums kopš gada sākuma (vai kopš jūsu pirmā pirkuma, ja tas bija šogad): katra diena ņem vērā to akciju izmaiņas, kas jums tajā dienā piederēja, un dienas tiek savirknētas kopā – nauda, ko iemaksājat vai izņemat, nav ienesīgums, tāpēc to var salīdzināt ar indeksu. Zem tā: izvēlētais indekss tajā pašā periodā.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

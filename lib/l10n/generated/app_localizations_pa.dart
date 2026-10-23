@@ -2681,6 +2681,13 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'ਇਸ ਸਾਲ ਦਾ ਰਿਟਰਨ';
+
+  @override
+  String get glossTwrYtd =>
+      'ਸਾਲ ਦੀ ਸ਼ੁਰੂਆਤ ਤੋਂ (ਜਾਂ ਤੁਹਾਡੀ ਪਹਿਲੀ ਖ਼ਰੀਦ ਤੋਂ, ਜੇ ਉਹ ਇਸੇ ਸਾਲ ਹੋਈ ਸੀ) ਸਮਾਂ-ਭਾਰਿਤ ਰਿਟਰਨ: ਹਰ ਦਿਨ ਉਸ ਦਿਨ ਤੁਹਾਡੇ ਕੋਲ ਰਹੇ ਸ਼ੇਅਰਾਂ ਦਾ ਬਦਲਾਅ ਗਿਣਿਆ ਜਾਂਦਾ ਹੈ, ਅਤੇ ਦਿਨਾਂ ਨੂੰ ਇੱਕ-ਦੂਜੇ ਨਾਲ ਜੋੜਿਆ ਜਾਂਦਾ ਹੈ – ਤੁਸੀਂ ਜੋ ਪੈਸਾ ਪਾਉਂਦੇ ਜਾਂ ਕੱਢਦੇ ਹੋ ਉਹ ਰਿਟਰਨ ਨਹੀਂ ਹੈ, ਇਸ ਲਈ ਇਸ ਦੀ ਤੁਲਨਾ ਕਿਸੇ ਇੰਡੈਕਸ ਨਾਲ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ। ਹੇਠਾਂ: ਉਸੇ ਮਿਆਦ ਵਿੱਚ ਚੁਣਿਆ ਗਿਆ ਇੰਡੈਕਸ।';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

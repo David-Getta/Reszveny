@@ -2696,6 +2696,13 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Rendement cette année';
+
+  @override
+  String get glossTwrYtd =>
+      'Rendement pondéré par le temps depuis le début de l\'année (ou depuis votre premier achat, s\'il date de cette année) : chaque jour compte la variation des actions que vous déteniez ce jour-là, et les jours sont enchaînés – l\'argent que vous versez ou retirez n\'est pas du rendement, il peut donc être comparé à un indice. En dessous : l\'indice choisi sur la même période.';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

@@ -2650,6 +2650,13 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'የዚህ ዓመት ተመላሽ';
+
+  @override
+  String get glossTwrYtd =>
+      'ከዓመቱ መጀመሪያ ጀምሮ (ወይም የመጀመሪያ ግዢዎ በዚህ ዓመት ከሆነ ከዚያ ጀምሮ) በጊዜ የተመዘነ ተመላሽ፦ እያንዳንዱ ቀን በዚያ ቀን የያዟቸውን አክሲዮኖች ለውጥ ይቆጥራል፣ ቀኖቹም እርስ በርስ ይያያዛሉ – የሚያስገቡት ወይም የሚያወጡት ገንዘብ ተመላሽ አይደለም፣ ስለዚህ ከኢንዴክስ ጋር ሊነጻጸር ይችላል። ከሥሩ፦ የተመረጠው ኢንዴክስ በተመሳሳይ ጊዜ ውስጥ።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

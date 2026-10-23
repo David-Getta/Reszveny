@@ -74,28 +74,26 @@ PriceHistory? portfolioValueHistory(
   return points.length < 2 ? null : PriceHistory(symbol: 'PORTFOLIO', points: points);
 }
 
-/// A legnagyobb visszaesés a portfólió időarányos értékindexén – a vételek és az
-/// eladások hatása nélkül: minden nap az előző napi darabszámok mai és tegnapi
-/// záróáron vett értékének aránya láncolódik. Egy korábbi csúcstól a későbbi
-/// mélypontig, százalékban (negatív), a két nappal. `null`, ha nincs legalább
-/// [minDays] nap adat, vagy az esés [minDrop]%-nál kisebb.
-({double percent, DateTime peak, DateTime trough})? portfolioMaxDrawdown(
+DateTime _day(DateTime t) => DateTime(t.year, t.month, t.day);
+
+/// A portfólió időarányos értékindexe (TWR): minden nap az előző napi darabszámok
+/// mai és tegnapi záróáron vett értékének aránya láncolódik, így a vételek és az
+/// eladások nem számítanak hozamnak (vagy esésnek). Az első birtokolt napon 1;
+/// üres, ha nincs használható adat.
+List<PricePoint> portfolioTwrIndex(
   List<PortfolioLot> lots,
   Map<String, PriceHistory> histories,
-  double? Function(String currency) rate, {
-  int minDays = 20,
-  double minDrop = 1,
-}) {
-  DateTime day(DateTime t) => DateTime(t.year, t.month, t.day);
+  double? Function(String currency) rate,
+) {
   final usable = [
     for (final l in lots)
       if (histories[l.symbol]?.points.isNotEmpty == true && rate(l.currency) != null) l,
   ];
-  if (usable.isEmpty) return null;
+  if (usable.isEmpty) return const [];
   final symbols = {for (final l in usable) l.symbol};
   final days = <DateTime>{
     for (final s in symbols)
-      for (final p in histories[s]!.points) day(p.time),
+      for (final p in histories[s]!.points) _day(p.time),
   }.toList()..sort();
   final rateOf = {for (final l in usable) l.symbol: rate(l.currency)!};
   // A tranzakciók időrendben (dátum nélküli elöl): a darabszám napról napra, növekményesen.
@@ -106,13 +104,13 @@ PriceHistory? portfolioValueHistory(
   final held = <String, double>{};
   Map<String, double>? prevHeld;
   var prevLast = <String, double>{};
-  var index = 1.0, peak = 1.0, worst = 0.0, n = 0;
-  DateTime? peakDay, worstPeak, worstTrough;
+  var index = 1.0;
+  final points = <PricePoint>[];
   for (final d in days) {
     for (final s in symbols) {
       final pts = histories[s]!.points;
       var i = idx[s] ?? 0;
-      while (i < pts.length && !day(pts[i].time).isAfter(d)) {
+      while (i < pts.length && !_day(pts[i].time).isAfter(d)) {
         // A hibás (nem pozitív) záróár kimarad: az előző ismert ár marad.
         if (pts[i].close > 0) last[s] = pts[i].close;
         i++;
@@ -120,12 +118,11 @@ PriceHistory? portfolioValueHistory(
       idx[s] = i;
     }
     // A nap végéig történt tranzakciók (dátum nélküli az elejétől).
-    while (next < ordered.length && (ordered[next].date == null || !day(ordered[next].date!).isAfter(d))) {
+    while (next < ordered.length && (ordered[next].date == null || !_day(ordered[next].date!).isAfter(d))) {
       final l = ordered[next++];
       held[l.symbol] = (held[l.symbol] ?? 0) + l.signedQuantity;
     }
-    final before = prevHeld;
-    if (before != null) {
+    if (prevHeld case final before?) {
       // A tegnapi darabszámok ma és tegnap: a napi hozam a pénzmozgások nélkül.
       var today = 0.0, yesterday = 0.0;
       for (final e in before.entries) {
@@ -136,30 +133,71 @@ PriceHistory? portfolioValueHistory(
       }
       if (yesterday > 0) {
         index *= today / yesterday;
-        n++;
-        if (index > peak) {
-          peak = index;
-          peakDay = d;
-        }
-        final dd = (index / peak - 1) * 100;
-        if (dd < worst) {
-          worst = dd;
-          worstPeak = peakDay;
-          worstTrough = d;
-        }
+        points.add(PricePoint(time: d, close: index));
       }
     }
     if (held.values.any((q) => q > 0)) {
-      // Az első birtokolt nap a kiinduló csúcs.
-      peakDay ??= d;
+      // Az első birtokolt nap a kiindulás.
+      if (points.isEmpty) points.add(PricePoint(time: d, close: 1));
       prevHeld = Map.of(held);
     } else {
       prevHeld = null;
     }
     prevLast = Map.of(last);
   }
-  if (n < minDays || worst > -minDrop || worstPeak == null || worstTrough == null) return null;
-  return (percent: worst, peak: worstPeak, trough: worstTrough);
+  return points;
+}
+
+/// A legnagyobb visszaesés a portfólió időarányos értékindexén ([portfolioTwrIndex])
+/// – a vételek és az eladások hatása nélkül: egy korábbi csúcstól a későbbi
+/// mélypontig, százalékban (negatív), a két nappal. `null`, ha nincs legalább
+/// [minDays] nap adat, vagy az esés [minDrop]%-nál kisebb.
+({double percent, DateTime peak, DateTime trough})? portfolioMaxDrawdown(
+  List<PortfolioLot> lots,
+  Map<String, PriceHistory> histories,
+  double? Function(String currency) rate, {
+  int minDays = 20,
+  double minDrop = 1,
+}) => maxDrawdownOf(portfolioTwrIndex(lots, histories, rate), minDays: minDays, minDrop: minDrop);
+
+/// A legnagyobb visszaesés egy index-sorban (az első pont a kiinduló csúcs).
+({double percent, DateTime peak, DateTime trough})? maxDrawdownOf(
+  List<PricePoint> index, {
+  int minDays = 20,
+  double minDrop = 1,
+}) {
+  if (index.length - 1 < minDays) return null;
+  var peak = index.first;
+  var worst = 0.0;
+  ({DateTime peak, DateTime trough})? at;
+  for (final p in index.skip(1)) {
+    if (p.close > peak.close) peak = p;
+    final dd = (p.close / peak.close - 1) * 100;
+    if (dd < worst) {
+      worst = dd;
+      at = (peak: peak.time, trough: p.time);
+    }
+  }
+  if (at == null || worst > -minDrop) return null;
+  return (percent: worst, peak: at.peak, trough: at.trough);
+}
+
+/// Az idei időarányos hozam (%) az index-sorból: az előző év utolsó pontjához mérve
+/// (ha a portfólió idén indult, a kezdőnaphoz), és ugyanarra az időszakra a
+/// [benchmark] hozama. `null`, ha idén még nincs összevethető pont.
+({double percent, double? benchmark})? ytdReturn(List<PricePoint> index, PriceHistory? benchmark, DateTime now) {
+  final jan1 = DateTime(now.year);
+  if (index.length < 2 || index.last.time.isBefore(jan1)) return null;
+  final base = index.where((p) => p.time.isBefore(jan1)).lastOrNull ?? index.first;
+  final end = index.last;
+  if (identical(base, end) || base.close <= 0) return null;
+  final pts = benchmark?.points ?? const <PricePoint>[];
+  double? closeOn(DateTime d) => pts.where((p) => !_day(p.time).isAfter(d)).lastOrNull?.close;
+  final b0 = closeOn(base.time), b1 = closeOn(end.time);
+  return (
+    percent: (end.close / base.close - 1) * 100,
+    benchmark: b0 == null || b1 == null || b0 <= 0 ? null : (b1 / b0 - 1) * 100,
+  );
 }
 
 /// A portfólió és az S&P 500 összevetése: mintha minden vétel összegét a vétel
@@ -299,8 +337,10 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
     }
     double? rate(String c) => c == widget.snapshot.currency ? 1.0 : rates[c];
     final i = index;
+    final twr = portfolioTwrIndex(lots, histories, rate);
     return (
-      drawdown: portfolioMaxDrawdown(lots, histories, rate),
+      drawdown: maxDrawdownOf(twr),
+      ytd: ytdReturn(twr, i, DateTime.now()),
       history: portfolioValueHistory(lots, histories, rate),
       bench: i == null ? null : benchmarkComparison(lots, histories, i, rate),
       trend: portfolioTrend([for (final p in services.portfolio.positionsIn(widget.account)) p.symbol], histories),
@@ -371,16 +411,38 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
                     ],
                   ),
                 ],
-                // A legnagyobb visszaesés (a vételek és eladások hatása nélkül), a csúcs és a mélypont napjával.
-                if (data.drawdown case final dd?) ...[
+                // Az idei időarányos hozam (az index ugyanerre az időszakra), és a legnagyobb
+                // visszaesés a csúcs és a mélypont napjával – mindkettő a vételek és eladások hatása nélkül.
+                if (data.ytd != null || data.drawdown != null) ...[
                   const SizedBox(height: 12),
-                  MetricFigure(
-                    key: const ValueKey('portfolio-drawdown'),
-                    label: l10n.portfolioMaxDrawdown,
-                    value: fmt.percent(dd.percent, decimals: 1),
-                    sub: '${fmt.date(dd.peak)} – ${fmt.date(dd.trough)}',
-                    color: p.negative,
-                    hint: l10n.glossMaxDrawdown,
+                  Wrap(
+                    spacing: 28,
+                    runSpacing: 12,
+                    children: [
+                      if (data.ytd case final y?)
+                        MetricFigure(
+                          key: const ValueKey('portfolio-ytd'),
+                          label: l10n.portfolioYtdReturn,
+                          value: fmt.percent(y.percent, decimals: 1, withSign: true),
+                          sub: switch (y.benchmark) {
+                            final b? =>
+                              '${benchmarkOf(data.symbol).name}: ${fmt.percent(b, decimals: 1, withSign: true)}',
+                            _ => null,
+                          },
+                          color: gainColor(p, y.percent),
+                          subColor: p.muted,
+                          hint: l10n.glossTwrYtd,
+                        ),
+                      if (data.drawdown case final dd?)
+                        MetricFigure(
+                          key: const ValueKey('portfolio-drawdown'),
+                          label: l10n.portfolioMaxDrawdown,
+                          value: fmt.percent(dd.percent, decimals: 1),
+                          sub: '${fmt.date(dd.peak)} – ${fmt.date(dd.trough)}',
+                          color: p.negative,
+                          hint: l10n.glossMaxDrawdown,
+                        ),
+                    ],
                   ),
                 ],
                 // A választó akkor is látszik, ha az index nem töltődött be (vissza lehessen váltani).
@@ -470,6 +532,7 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
 /// trendkép, az index, amellyel számoltunk, és hogy annak idősora hiányzott-e.
 typedef _History = ({
   ({double percent, DateTime peak, DateTime trough})? drawdown,
+  ({double percent, double? benchmark})? ytd,
   PriceHistory? history,
   BenchmarkComparison? bench,
   ({int above, int count})? trend,

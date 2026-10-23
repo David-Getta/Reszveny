@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Semua pegangan sudah mempunyai trailing stop} =1{1 trailing stop ditetapkan} other{{count} trailing stop ditetapkan}}",
   "portfolioSinceSale": "{percent} sejak dijual",
   "lotPreviewRealized": "Direalisasi daripada jualan ini (FIFO):",
-  "lotPreviewAverage": "Kos purata baharu: {after} (kini {before})"
+  "lotPreviewAverage": "Kos purata baharu: {after} (kini {before})",
+  "portfolioYtdReturn": "Pulangan tahun ini",
+  "glossTwrYtd": "Pulangan berwajaran masa sejak awal tahun (atau sejak pembelian pertama anda, jika ia berlaku tahun ini): setiap hari mengira perubahan saham yang anda pegang pada hari itu, dan hari-hari itu dirangkaikan – wang yang anda masukkan atau keluarkan bukan pulangan, jadi ia boleh dibandingkan dengan indeks. Di bawahnya: indeks yang dipilih bagi tempoh yang sama."
 }

@@ -2753,6 +2753,13 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Даходнасць за гэты год';
+
+  @override
+  String get glossTwrYtd =>
+      'Узважаная па часе даходнасць з пачатку года (або з вашай першай куплі, калі яна была сёлета): кожны дзень улічвае змену акцый, якія вы мелі ў той дзень, а дні злучаюцца ў ланцуг – грошы, якія вы ўносіце ці выводзіце, не з\'яўляюцца даходнасцю, таму яе можна параўнаць з індэксам. Пад ёй: выбраны індэкс за той жа перыяд.';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

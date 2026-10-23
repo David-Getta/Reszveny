@@ -2692,6 +2692,13 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Kita ngayong taon';
+
+  @override
+  String get glossTwrYtd =>
+      'Time-weighted na kita mula sa simula ng taon (o mula sa una mong pagbili, kung ngayong taon iyon): binibilang ng bawat araw ang pagbabago ng mga stock na hawak mo noong araw na iyon, at pinagdudugtong-dugtong ang mga araw – hindi kita ang perang idinedeposito o iwini-withdraw mo, kaya maikukumpara ito sa isang index. Sa ibaba nito: ang napiling index sa parehong panahon.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

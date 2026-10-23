@@ -2686,6 +2686,13 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Afe yi mfaso';
+
+  @override
+  String get glossTwrYtd =>
+      'Mfaso a wɔakari no bere so fi afe no mfiase (anaa fi wo adetɔ a edi kan, sɛ ɛyɛ afe yi a): da biara kan nkyɛfa a na wokura da no nsakrae, na wɔka nna no bom – sika a wode hyɛ mu anaa woyi fi mu nyɛ mfaso, enti wobɛtumi de atoto index bi ho. Ɛno ase: index a woapaw no wɔ bere koro no ara mu.';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

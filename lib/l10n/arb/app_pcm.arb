@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{All your stocks don get trailing stop already} =1{We don set 1 trailing stop} one{We don set {count} trailing stop} other{We don set {count} trailing stops}}",
   "portfolioSinceSale": "{percent} since you sell am",
   "lotPreviewRealized": "Wetin you make for dis sale (FIFO):",
-  "lotPreviewAverage": "New average price: {after} (now {before})"
+  "lotPreviewAverage": "New average price: {after} (now {before})",
+  "portfolioYtdReturn": "Return dis year",
+  "glossTwrYtd": "Time-weighted return from di start of di year (or from your first buy, if na dis year e happen): every day dey count how di stocks wey you hold dat day change, and dem dey join di days togeda – money wey you put inside or comot no be return, so you fit compare am with one index. For under: di index wey you choose for di same period."
 }

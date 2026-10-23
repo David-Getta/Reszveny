@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Haysasho kastaa horeba way leedahay digniintan} =1{1 digniin ayaa la dejiyay} other{{count} digniin ayaa la dejiyay}}",
   "portfolioSinceSale": "{percent} tan iyo markii aad iibisay",
   "lotPreviewRealized": "Lagu xaqiijiyay iibkan (FIFO):",
-  "lotPreviewAverage": "Kharashka celceliska cusub: {after} (hadda {before})"
+  "lotPreviewAverage": "Kharashka celceliska cusub: {after} (hadda {before})",
+  "portfolioYtdReturn": "Faa'iidada sannadkan",
+  "glossTwrYtd": "Faa'iidada waqtiga lagu miisaamay laga soo bilaabo bilowga sannadka (ama laga soo bilaabo iibsashadaada ugu horreysay, haddii ay sannadkan ahayd): maalin kasta waxay xisaabisaa isbeddelka saamiyadii aad haysatay maalintaas, maalmahana waa la isku xiriiriyaa – lacagta aad gelisid ama aad la baxdid faa'iido ma aha, sidaas darteed waxaa lala barbardhigi karaa tusmo. Hoostiisa: tusmada la doortay isla muddadaas."
 }

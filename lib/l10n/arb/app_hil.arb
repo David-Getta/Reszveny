@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{May trailing stop na ang kada posisyon} =1{Gin-set ang 1 ka trailing stop} other{Gin-set ang {count} ka trailing stop}}",
   "portfolioSinceSale": "{percent} halin sang ginbaligya mo",
   "lotPreviewRealized": "Narealisar sa sini nga pagbaligya (FIFO):",
-  "lotPreviewAverage": "Bag-o nga average nga gasto: {after} (subong {before})"
+  "lotPreviewAverage": "Bag-o nga average nga gasto: {after} (subong {before})",
+  "portfolioYtdReturn": "Kita sini nga tuig",
+  "glossTwrYtd": "Time-weighted nga kita halin sa umpisa sang tuig (ukon halin sa imo una nga pagbakal, kon sini nga tuig ini): ang kada adlaw nagaisip sang pagbag-o sang mga stock nga ginhuptan mo sadto nga adlaw, kag ang mga adlaw ginakadena sa isa kag isa – ang kuwarta nga ginabutang mo ukon ginakuha indi kita, gani mahimo ini ikumparar sa isa ka index. Sa idalom sini: ang napili nga index sa amo man nga tion."
 }

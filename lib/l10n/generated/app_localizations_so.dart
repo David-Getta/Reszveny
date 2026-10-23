@@ -2693,6 +2693,13 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Faa\'iidada sannadkan';
+
+  @override
+  String get glossTwrYtd =>
+      'Faa\'iidada waqtiga lagu miisaamay laga soo bilaabo bilowga sannadka (ama laga soo bilaabo iibsashadaada ugu horreysay, haddii ay sannadkan ahayd): maalin kasta waxay xisaabisaa isbeddelka saamiyadii aad haysatay maalintaas, maalmahana waa la isku xiriiriyaa – lacagta aad gelisid ama aad la baxdid faa\'iido ma aha, sidaas darteed waxaa lala barbardhigi karaa tusmo. Hoostiisa: tusmada la doortay isla muddadaas.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

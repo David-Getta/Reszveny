@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Vse pozicije že imajo to opozorilo} =1{Nastavljeno je 1 opozorilo} one{Nastavljeno je {count} opozorilo} two{Nastavljeni sta {count} opozorili} few{Nastavljena so {count} opozorila} other{Nastavljenih je {count} opozoril}}",
   "portfolioSinceSale": "{percent} od prodaje",
   "lotPreviewRealized": "Realizirano s to prodajo (FIFO):",
-  "lotPreviewAverage": "Nova povprečna cena: {after} (zdaj {before})"
+  "lotPreviewAverage": "Nova povprečna cena: {after} (zdaj {before})",
+  "portfolioYtdReturn": "Donos letos",
+  "glossTwrYtd": "Časovno tehtan donos od začetka leta (ali od vašega prvega nakupa, če je bil letos): vsak dan upošteva spremembo delnic, ki ste jih imeli tisti dan, dnevi pa se verižno povežejo – denar, ki ga vplačate ali dvignete, ni donos, zato ga je mogoče primerjati z indeksom. Pod njim: izbrani indeks v istem obdobju."
 }

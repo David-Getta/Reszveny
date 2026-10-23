@@ -2686,6 +2686,13 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Şu ýylyň girdejililigi';
+
+  @override
+  String get glossTwrYtd =>
+      'Ýylyň başyndan bäri (ýa-da ilkinji satyn alşyňyz şu ýyl bolan bolsa, şondan bäri) wagt boýunça agramlandyrylan girdejililik: her gün şol gün sizde bolan paýnamalaryň üýtgeşmesini hasaplaýar we günler biri-birine zynjyr ýaly birikdirilýär – goýýan ýa-da çykarýan puluňyz girdeji däl, şonuň üçin ony indeks bilen deňeşdirip bolýar. Aşagynda: şol bir döwürde saýlanan indeks.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

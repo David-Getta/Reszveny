@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Nuxlɔ̃ame sia le akpa ɖesiaɖe ŋu xoxo} =1{Woɖo nuxlɔ̃ame 1} other{Woɖo nuxlɔ̃ame {count}}}",
   "portfolioSinceSale": "{percent} tso esime nèdzrae",
   "lotPreviewRealized": "Viɖe si wokpɔ le nudzadzra sia me (FIFO):",
-  "lotPreviewAverage": "Asi titina yeye: {after} (fifia {before})"
+  "lotPreviewAverage": "Asi titina yeye: {after} (fifia {before})",
+  "portfolioYtdReturn": "Viɖe le ƒe sia me",
+  "glossTwrYtd": "Viɖe si wodzidze ɖe ɣeyiɣi nu tso ƒea ƒe gɔmedzedze (alo tso wò nuƒeƒle gbãtɔ, ne ƒe sia mee wònye): ŋkeke ɖe sia ɖe bua akpa siwo nèlé ɖe asi ŋkeke ma dzi ƒe tɔtrɔ, eye wotsɔa ŋkekeawo kpena ɖe wo nɔewo ŋu – ga si nèdea eme alo èɖena le eme la menye viɖe o, eyata woate ŋu atsɔe asɔ kple index aɖe. Le ete: index si nètia le ɣeyiɣi ma ke me."
 }

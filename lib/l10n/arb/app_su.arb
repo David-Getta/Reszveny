@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Sadaya posisi parantos gaduh trailing stop} =1{1 trailing stop dipasang} other{{count} trailing stop dipasang}}",
   "portfolioSinceSale": "{percent} ti saprak dijual",
   "lotPreviewRealized": "Direalisasikeun tina jualan ieu (FIFO):",
-  "lotPreviewAverage": "Rata-rata harga beuli anyar: {after} (ayeuna {before})"
+  "lotPreviewAverage": "Rata-rata harga beuli anyar: {after} (ayeuna {before})",
+  "portfolioYtdReturn": "Imbal hasil taun ieu",
+  "glossTwrYtd": "Imbal hasil ditimbang dumasar waktu ti awal taun (atawa ti pameulian munggaran anjeun, upami éta taun ieu): unggal dinten ngitung parobahan saham anu anjeun gaduh dina dinten éta, sarta dinten-dintenna disambungkeun – artos anu anjeun lebetkeun atanapi candak sanés imbal hasil, ku kituna tiasa dibandingkeun jeung indéks. Di handapeunana: indéks anu dipilih dina période anu sami."
 }

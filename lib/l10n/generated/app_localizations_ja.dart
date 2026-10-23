@@ -2603,6 +2603,13 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => '今年のリターン';
+
+  @override
+  String get glossTwrYtd =>
+      '年初来（今年初めて購入した場合はその日から）の時間加重リターン。毎日、その日に保有していた株の値動きを計算し、それを日ごとにつなぎ合わせます。入出金はリターンに含まれないため、指数と比較できます。下には、同じ期間の選択した指数を表示します。';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

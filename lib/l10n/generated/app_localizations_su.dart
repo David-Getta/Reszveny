@@ -2688,6 +2688,13 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Imbal hasil taun ieu';
+
+  @override
+  String get glossTwrYtd =>
+      'Imbal hasil ditimbang dumasar waktu ti awal taun (atawa ti pameulian munggaran anjeun, upami éta taun ieu): unggal dinten ngitung parobahan saham anu anjeun gaduh dina dinten éta, sarta dinten-dintenna disambungkeun – artos anu anjeun lebetkeun atanapi candak sanés imbal hasil, ku kituna tiasa dibandingkeun jeung indéks. Di handapeunana: indéks anu dipilih dina période anu sami.';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

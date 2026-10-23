@@ -2679,6 +2679,13 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Nafoore hitaande ndee';
+
+  @override
+  String get glossTwrYtd =>
+      'Nafoore peesaande e sahaa gila fuɗɗoode hitaande nde (walla gila e soodu maa arandeere, so tawii ko hitaande ndee): ñalnde kala ina limoo waylo aksiyonji ɗi njogi-ɗaa ñalnde ndeen, ñalɗi ɗin ina jokkondiree – kaalis mo naatnataa walla mo ittataa wonaa nafoore, ɗum noon ina waawi fondeede e indeks. E les mum: indeks suɓaandi ndin e oon sahaa gooto.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

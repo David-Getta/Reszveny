@@ -676,6 +676,42 @@ void main() {
     expect(portfolioMaxDrawdown([lot('a', 10, 1)], broken, (_) => 1)!.percent, closeTo(-25, 1e-9));
   });
 
+  test('return this year: time-weighted from the last close of last year, the index over the same days', () {
+    // 2025. dec. 20-tól 2026. jan. 20-ig: decemberben 100, januárban naponta +0,5 (jan. 20.: 109,5).
+    final days = [for (var k = 0; k < 32; k++) DateTime(2025, 12, 20 + k)];
+    double close(DateTime d) => d.year == 2025 ? 100 : 100 + (d.day - 1) * 0.5;
+    final histories = {
+      'AAA': PriceHistory(
+        symbol: 'AAA',
+        points: [for (final d in days) PricePoint(time: d, close: close(d))],
+      ),
+    };
+    // Az index: decemberben 200, januárban naponta +1.
+    final index = PriceHistory(
+      symbol: 'SPY',
+      points: [for (final d in days) PricePoint(time: d, close: d.year == 2025 ? 200 : 200.0 + d.day - 1)],
+    );
+    PortfolioLot lot(String id, double q, DateTime date) =>
+        PortfolioLot(id: id, symbol: 'AAA', quantity: q, price: 100, currency: 'USD', date: date);
+    final now = DateTime(2026, 1, 20);
+    // Egy januári nagy vétel nem hozam: a hozam az árváltozás (109,5 / 100).
+    final twr = portfolioTwrIndex(
+      [lot('a', 10, DateTime(2025, 12, 20)), lot('b', 90, DateTime(2026, 1, 10))],
+      histories,
+      (_) => 1,
+    );
+    final y = ytdReturn(twr, index, now)!;
+    expect(y.percent, closeTo(9.5, 1e-9));
+    expect(y.benchmark, closeTo(219 / 200 * 100 - 100, 1e-9));
+    // Idén indult portfólió: az első birtokolt naptól (jan. 5.: 102), az index ugyanattól a naptól.
+    final late = ytdReturn(portfolioTwrIndex([lot('a', 10, DateTime(2026, 1, 5))], histories, (_) => 1), index, now)!;
+    expect(late.percent, closeTo((109.5 / 102 - 1) * 100, 1e-9));
+    expect(late.benchmark, closeTo((219 / 204 - 1) * 100, 1e-9));
+    // Index nélkül csak a saját hozam; tavalyi adatokkal idén nincs mit mondani.
+    expect(ytdReturn(twr, null, now)!.benchmark, isNull);
+    expect(ytdReturn(twr, index, DateTime(2027, 2, 1)), isNull);
+  });
+
   test('S&P 500 comparison: each purchase amount goes into the index on its own day', () {
     PriceHistory h(String s, List<double> closes) => PriceHistory(
       symbol: s,

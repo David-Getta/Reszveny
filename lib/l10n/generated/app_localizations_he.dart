@@ -2676,6 +2676,13 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'תשואה השנה';
+
+  @override
+  String get glossTwrYtd =>
+      'תשואה משוקללת זמן מתחילת השנה (או מהקנייה הראשונה שלך, אם הייתה השנה): כל יום מחשב את השינוי במניות שהחזקת באותו יום, והימים משורשרים זה לזה – כסף שאתה מפקיד או מושך אינו תשואה, ולכן אפשר להשוות אותה למדד. מתחת: המדד שנבחר באותה תקופה.';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

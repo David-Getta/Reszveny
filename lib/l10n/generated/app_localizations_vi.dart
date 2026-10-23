@@ -2677,6 +2677,13 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Lợi nhuận năm nay';
+
+  @override
+  String get glossTwrYtd =>
+      'Lợi nhuận theo trọng số thời gian từ đầu năm (hoặc từ lần mua đầu tiên của bạn, nếu đó là trong năm nay): mỗi ngày tính mức thay đổi của các cổ phiếu bạn nắm giữ vào ngày đó, và các ngày được nối tiếp với nhau – tiền bạn nạp vào hoặc rút ra không phải là lợi nhuận, nên có thể so sánh với một chỉ số. Bên dưới: chỉ số đã chọn trong cùng kỳ.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

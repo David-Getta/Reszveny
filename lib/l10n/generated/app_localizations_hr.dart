@@ -2730,6 +2730,13 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Prinos ove godine';
+
+  @override
+  String get glossTwrYtd =>
+      'Vremenski ponderirani prinos od početka godine (ili od vaše prve kupnje, ako je bila ove godine): svaki dan računa promjenu dionica koje ste tog dana držali, a dani se nadovezuju jedan na drugi – novac koji uplatite ili podignete nije prinos, pa se može usporediti s indeksom. Ispod: odabrani indeks u istom razdoblju.';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

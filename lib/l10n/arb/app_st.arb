@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Shere ka nngwe e se e ena le temoso ena} =1{Ho beilwe temoso e le nngwe} other{Ho beilwe ditemoso tse {count}}}",
   "portfolioSinceSale": "{percent} ho tloha ha o e rekisitse",
   "lotPreviewRealized": "E fumanehileng thekisong ena (FIFO):",
-  "lotPreviewAverage": "Theko e ncha ya karolelano: {after} (hona jwale {before})"
+  "lotPreviewAverage": "Theko e ncha ya karolelano: {after} (hona jwale {before})",
+  "portfolioYtdReturn": "Poelo ya selemo sena",
+  "glossTwrYtd": "Poelo e lekantsweng ka nako ho tloha qalong ya selemo (kapa ho tloha theko ya hao ya pele, haeba e bile selemong sena): letsatsi le leng le le leng le bala phetoho ya dishere tseo o neng o na le tsona letsatsing leo, mme matsatsi a hokahanngwa – tjhelete eo o e kenyang kapa o e ntshang hase poelo, kahoo e ka bapiswa le index. Ka tlasa yona: index e kgethilweng nakong yona eo."
 }

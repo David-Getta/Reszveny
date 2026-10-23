@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Semua posisi sudah memiliki trailing stop} =1{1 trailing stop dipasang} other{{count} trailing stop dipasang}}",
   "portfolioSinceSale": "{percent} sejak dijual",
   "lotPreviewRealized": "Terealisasi dari penjualan ini (FIFO):",
-  "lotPreviewAverage": "Harga rata-rata baru: {after} (saat ini {before})"
+  "lotPreviewAverage": "Harga rata-rata baru: {after} (saat ini {before})",
+  "portfolioYtdReturn": "Imbal hasil tahun ini",
+  "glossTwrYtd": "Imbal hasil tertimbang waktu sejak awal tahun (atau sejak pembelian pertama Anda, jika itu tahun ini): setiap hari menghitung perubahan saham yang Anda miliki pada hari itu, lalu hari-hari tersebut dirangkai – uang yang Anda setor atau tarik bukan imbal hasil, sehingga dapat dibandingkan dengan indeks. Di bawahnya: indeks yang dipilih pada periode yang sama."
 }

@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Sheya yega yega yatova neyambiro iri} =1{Yambiro 1 raiswa} other{Yambiro {count} dzaiswa}}",
   "portfolioSinceSale": "{percent} kubvira pawakaitengesa",
   "lotPreviewRealized": "Pundutso chaiyo pakutengesa uku (FIFO):",
-  "lotPreviewAverage": "Avhareji itsva yemutengo: {after} (ikozvino {before})"
+  "lotPreviewAverage": "Avhareji itsva yemutengo: {after} (ikozvino {before})",
+  "portfolioYtdReturn": "Pundutso yegore rino",
+  "glossTwrYtd": "Pundutso yakayerwa nenguva kubva pakutanga kwegore (kana kubva pawakatanga kutenga, kana zvakaitika gore rino): zuva rega rega rinoverenga shanduko yemasheya awaive nawo zuva iroro, uye mazuva anobatanidzwa sengetani – mari yaunoisa kana kubvisa haisi pundutso, saka inogona kuenzaniswa neindex. Pazasi payo: index yakasarudzwa munguva imwe chete iyoyo."
 }

@@ -2613,6 +2613,13 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => '올해 수익률';
+
+  @override
+  String get glossTwrYtd =>
+      '연초부터(올해 처음 매수했다면 첫 매수일부터)의 시간가중 수익률이에요. 매일 그날 보유한 종목의 변동을 계산하고 그 날들을 이어서 연결해요. 입금하거나 출금한 돈은 수익이 아니므로 지수와 비교할 수 있어요. 아래에는 같은 기간의 선택한 지수가 표시돼요.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

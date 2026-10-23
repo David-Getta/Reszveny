@@ -2699,6 +2699,13 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Amagoba g\'omwaka guno';
+
+  @override
+  String get glossTwrYtd =>
+      'Amagoba agapimiddwa ku biseera okuva ku ntandikwa y\'omwaka (oba okuva lwe wasooka okugula, bwe kiba nga kyali mu mwaka guno): buli lunaku lubala enkyukakyuka y\'emigabo gye wali nagyo ku lunaku olwo, era ennaku zigattibwa wamu ng\'olujegere – ssente z\'oteekamu oba z\'oggyamu si magoba, n\'olwekyo gasobola okugeraageranyizibwa ne index. Wansi waago: index eyalondeddwa mu biseera ebyo bye bimu.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

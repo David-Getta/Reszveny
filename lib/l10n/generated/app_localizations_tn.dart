@@ -2703,6 +2703,13 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Poelo ya ngwaga ono';
+
+  @override
+  String get glossTwrYtd =>
+      'Poelo e e lekantsweng ka nako go tloga kwa tshimologong ya ngwaga (kgotsa go tloga theko ya gago ya ntlha, fa e ne e le ngwaga ono): letsatsi lengwe le lengwe le bala phetogo ya dishere tse o neng o na le tsone ka letsatsi leo, mme malatsi a golaganngwa – madi a o a tsenyang kgotsa o a ntshang ga se poelo, ka jalo e ka bapisiwa le index. Fa tlase ga yone: index e e tlhophilweng mo nakong e e tshwanang.';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

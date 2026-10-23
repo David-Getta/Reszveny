@@ -2694,6 +2694,13 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Dipeta dia tshidimu etshi';
+
+  @override
+  String get glossTwrYtd =>
+      'Dipeta dipima bilondeshile tshikondo kubangila ku ntuadijilu wa tshidimu (anyi kubangila ku tshisumbu tshiebe tshia kumpala, bikalaku mu tshidimu etshi): dituku dionso didi dibala dishintuluka dia actions uvua nadi mu dituku adi, ne matuku onso alamakajibua umue ku mukuabu – makuta audi ubueja anyi upatula kaena dipeta, nunku badi mua kudifuanyikija ne indice. Muinshi muadi: indice musungula mu tshikondo atshi tshimue.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

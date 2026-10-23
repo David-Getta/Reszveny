@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Tout pozisyon yo gen alèt sa a deja} =1{Nou mete 1 alèt} other{Nou mete {count} alèt}}",
   "portfolioSinceSale": "{percent} depi ou te vann",
   "lotPreviewRealized": "Reyalize sou vant sa a (FIFO):",
-  "lotPreviewAverage": "Nouvo pri mwayen: {after} (kounye a {before})"
+  "lotPreviewAverage": "Nouvo pri mwayen: {after} (kounye a {before})",
+  "portfolioYtdReturn": "Rannman ane sa a",
+  "glossTwrYtd": "Rannman peze selon tan depi kòmansman ane a (oswa depi premye acha ou, si se te ane sa a): chak jou konte chanjman aksyon ou te genyen jou sa a, epi jou yo mare youn ak lòt – lajan ou mete oswa ou retire se pa rannman, kidonk li ka konpare ak yon endèks. Anba l: endèks ou chwazi a pou menm peryòd la."
 }

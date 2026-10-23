@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Tutte le posizioni hanno già un trailing stop} =1{1 trailing stop impostato} other{{count} trailing stop impostati}}",
   "portfolioSinceSale": "{percent} dalla vendita",
   "lotPreviewRealized": "Realizzato con questa vendita (FIFO):",
-  "lotPreviewAverage": "Nuovo prezzo medio: {after} (ora {before})"
+  "lotPreviewAverage": "Nuovo prezzo medio: {after} (ora {before})",
+  "portfolioYtdReturn": "Rendimento quest’anno",
+  "glossTwrYtd": "Rendimento ponderato nel tempo dall'inizio dell'anno (o dal tuo primo acquisto, se è avvenuto quest'anno): ogni giorno conta la variazione delle azioni che possedevi quel giorno, e i giorni vengono concatenati – il denaro che versi o prelevi non è rendimento, quindi si può confrontare con un indice. Sotto: l'indice scelto nello stesso periodo."
 }

@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Tüm pozisyonlarda zaten iz süren stop var} =1{1 iz süren stop kuruldu} other{{count} iz süren stop kuruldu}}",
   "portfolioSinceSale": "{percent} satıştan bu yana",
   "lotPreviewRealized": "Bu satışta gerçekleşen (FIFO):",
-  "lotPreviewAverage": "Yeni ortalama maliyet: {after} (şu an {before})"
+  "lotPreviewAverage": "Yeni ortalama maliyet: {after} (şu an {before})",
+  "portfolioYtdReturn": "Bu yılki getiri",
+  "glossTwrYtd": "Yılbaşından bu yana (veya ilk alımınız bu yıl olduysa o tarihten bu yana) zaman ağırlıklı getiri: her gün, o gün elinizde bulunan hisselerin değişimini hesaba katar ve günler birbirine zincirlenir – yatırdığınız veya çektiğiniz para getiri değildir, bu yüzden bir endeksle karşılaştırılabilir. Altında: aynı dönemde seçilen endeks."
 }

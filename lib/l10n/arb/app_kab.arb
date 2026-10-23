@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Yal adeg yesɛa yakan alɣu-agi} =1{Yettwasbadu 1 n walɣu} other{Ttwasbadun {count} n walɣuten}}",
   "portfolioSinceSale": "{percent} seg wasmi i t-tzenzeḍ",
   "lotPreviewRealized": "Yettwaxedmen deg uznuzu-a (FIFO):",
-  "lotPreviewAverage": "Ssuma talemmast tamaynut: {after} (tura {before})"
+  "lotPreviewAverage": "Ssuma talemmast tamaynut: {after} (tura {before})",
+  "portfolioYtdReturn": "Afaris n useggas-a",
+  "glossTwrYtd": "Afaris yettwaktalen s wakud seg tazwara n useggas (neɣ seg wayen i d-teɣiḍ tikkelt tamezwarut, ma yella d aseggas-a): yal ass yettḥesab abeddel n yiksyunen i tesɛiḍ ass-nni, ussan ttwaqqnen wa ɣer wa – idrimen i d-tesserseḍ neɣ i d-tekkseḍ mačči d afaris, ihi yezmer ad yettwasnemhel d umatar. Ddaw-s: amatar yettwafernen deg yiwet n tallit."
 }

@@ -2724,6 +2724,13 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Randament anul acesta';
+
+  @override
+  String get glossTwrYtd =>
+      'Randament ponderat în timp de la începutul anului (sau de la prima ta cumpărare, dacă a fost anul acesta): fiecare zi ia în calcul variația acțiunilor pe care le dețineai în ziua respectivă, iar zilele sunt înlănțuite – banii pe care îi depui sau îi retragi nu sunt randament, așa că poate fi comparat cu un indice. Dedesubt: indicele ales pentru aceeași perioadă.';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

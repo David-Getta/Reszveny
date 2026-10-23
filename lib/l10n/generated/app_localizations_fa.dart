@@ -2680,6 +2680,13 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'بازده امسال';
+
+  @override
+  String get glossTwrYtd =>
+      'بازده وزن‌دهی‌شده بر اساس زمان از ابتدای سال (یا از نخستین خرید شما، اگر امسال بوده باشد): هر روز تغییر سهامی را که آن روز داشتید حساب می‌کند و روزها به هم زنجیر می‌شوند – پولی که واریز یا برداشت می‌کنید بازده نیست، بنابراین می‌توان آن را با یک شاخص مقایسه کرد. زیر آن: شاخص انتخاب‌شده در همان دوره.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

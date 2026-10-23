@@ -2678,6 +2678,13 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'આ વર્ષનું રિટર્ન';
+
+  @override
+  String get glossTwrYtd =>
+      'વર્ષની શરૂઆતથી (અથવા તમારી પ્રથમ ખરીદીથી, જો તે આ વર્ષે થઈ હોય) સમય-ભારિત રિટર્ન: દરેક દિવસ તે દિવસે તમારી પાસે રહેલા શેરના ફેરફારને ગણે છે, અને દિવસોને એકબીજા સાથે જોડવામાં આવે છે – તમે જમા કરો કે ઉપાડો તે પૈસા રિટર્ન નથી, તેથી તેની સરખામણી કોઈ ઇન્ડેક્સ સાથે કરી શકાય છે. નીચે: એ જ સમયગાળામાં પસંદ કરેલો ઇન્ડેક્સ.';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

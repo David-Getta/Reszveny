@@ -2684,6 +2684,13 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Bu yılki getiri';
+
+  @override
+  String get glossTwrYtd =>
+      'Yılbaşından bu yana (veya ilk alımınız bu yıl olduysa o tarihten bu yana) zaman ağırlıklı getiri: her gün, o gün elinizde bulunan hisselerin değişimini hesaba katar ve günler birbirine zincirlenir – yatırdığınız veya çektiğiniz para getiri değildir, bu yüzden bir endeksle karşılaştırılabilir. Altında: aynı dönemde seçilen endeks.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

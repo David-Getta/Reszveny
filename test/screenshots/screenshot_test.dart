@@ -852,6 +852,20 @@ void main() {
     await tester.pump(const Duration(minutes: 1));
   });
 
+  testWidgets('value history with the return this year on a phone (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'), portfolio: _samplePortfolio(), currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    final ytd = find.byKey(const ValueKey('portfolio-ytd'));
+    await tester.scrollUntilVisible(ytd, 300, scrollable: find.byType(Scrollable).first);
+    await tester.pumpAndSettle();
+    // A kártya teteje (a grafikon) is látsszon.
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, 420));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_history_phone_hu');
+  });
+
   testWidgets('trailing stops for all positions on a phone (hungarian)', (tester) async {
     final s = _services(locale: const Locale('hu'), portfolio: _samplePortfolio(), currency: 'HUF');
     await pumpApp(tester, s, const Size(430, 1000));

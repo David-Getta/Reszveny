@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Aksiyoŋ yépp am nañu artu bii ba noppi} =1{Teg nañu 1 artu} other{Teg nañu {count} artu}}",
   "portfolioSinceSale": "{percent} li dale ba nga ko jaay",
   "lotPreviewRealized": "Benefis bu wér ci jaay bii (FIFO):",
-  "lotPreviewAverage": "Njëg mu diggu mu bees: {after} (léegi {before})"
+  "lotPreviewAverage": "Njëg mu diggu mu bees: {after} (léegi {before})",
+  "portfolioYtdReturn": "Benefis bu at mii",
+  "glossTwrYtd": "Benefis bu ñu natt ci jamono dale ci ndoorteelu at mi (walla dale ci sa jënd bu jëkk, su amee ci at mii): bés bu nekk dafay waññ coppitey aksiyoŋ yi nga yoroon bés boobu, te bés yi dañuy lënkalante – xaalis bi ngay def walla ngay génne du benefis, moo tax mën nañu ko méngale ak benn indeks. Ci suufam: indeks bi ñu tànn ci jamono jooju."
 }

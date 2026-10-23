@@ -109,6 +109,14 @@ const glossaryEntries = <String, List<(String, String)>>{
       'A 3 legnagyobb pozíció',
       'A részvényeid értékének mekkora része van a három legnagyobb pozíciódban. Minél magasabb, annál jobban fájhat egyetlen cég rossz híre az egész portfóliónak.',
     ),
+    (
+      'Idei hozam',
+      'Időarányos hozam az év elejétől (vagy az első vételtől, ha az idén volt): minden nap az aznap birtokolt részvények változása számít, és a napok összeláncolódnak – a befizetés és a kivét nem hozam, így összevethető egy indexszel. Alatta a választott index ugyanerre az időszakra.',
+    ),
+    (
+      'Legnagyobb visszaesés',
+      'A részvényeid értékének legnagyobb esése egy korábbi csúcsról egy későbbi mélypontig, a vételeid és eladásaid hatása nélkül (időarányosan). Megmutatja, mekkora visszaesést élt már át a portfóliód.',
+    ),
   ],
   'en': [
     ('Market cap', 'What the whole company is worth on the stock market: share price × number of shares.'),
@@ -217,6 +225,14 @@ const glossaryEntries = <String, List<(String, String)>>{
     (
       'Top 3 positions',
       'How much of your stocks\' value sits in your three largest positions. The higher it is, the more bad news at a single company can hurt the whole portfolio.',
+    ),
+    (
+      'Return this year',
+      'Time-weighted return since the start of the year (or since your first purchase, if that was this year): each day counts the change of the stocks you held that day, and the days are chained together – money you put in or take out is not return, so it can be compared with an index. Below it: the chosen index over the same period.',
+    ),
+    (
+      'Largest drop',
+      'The biggest fall of your holdings from an earlier high to a later low, without the effect of your buying and selling (time-weighted). It shows how deep a dip your portfolio has already been through.',
     ),
   ],
 };

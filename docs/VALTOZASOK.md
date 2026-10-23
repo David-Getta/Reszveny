@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.206)
+# Változásjegyzék (0.2.130 → 0.2.207)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -38,13 +38,16 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 
 - **Legnagyobb visszaesés** az értékalakulás-kártyán (a vételek és eladások hatása nélkül, időarányosan), a csúcs és
   a mélypont napjával, ⓘ magyarázattal.
+- **Idei hozam** az értékalakulás-kártyán: időarányosan (a befizetés és a kivét nem hozam), az év elejétől vagy az első
+  idei vételtől, alatta a választott index ugyanerre az időszakra („S&P 500: +12,1%”), ⓘ magyarázattal; a fogalomtárban
+  (az appban és a weboldalon) mostantól 34 mutató, a legnagyobb visszaeséssel együtt.
 
 - A **portfólió-cél becsült elérése** a cél-sáv alatt a mostani éves hozammal („kb. 2029 táján éred el”).
 - **Új befizetés elosztása** a célarányok szerint: a befektetendő összegből csak vétel, először a céljuktól leginkább
   elmaradó pozíciók kapnak; pozíciónként az összeg és nagyjából hány darab.
 
 - A megoszlás-kártya alján a **portfólió-béta** (a részvények bétája az értékükkel súlyozva) és **a 3
-  legnagyobb pozíció súlya**, ⓘ magyarázattal (a fogalomtár 32 mutatója); az AI-portfólióelemzés is megkapja.
+  legnagyobb pozíció súlya**, ⓘ magyarázattal (a fogalomtár mutatói között); az AI-portfólióelemzés is megkapja.
 - **Összehasonlítás egy koppintással**: a pozíciók fejlécéből a 3 legnagyobb pozíció, a kedvencekből az első 3.
 - Az értékalakulás-kártyán az összevetés indexe választható: **S&P 500, Nasdaq 100 vagy Dow Jones** (megjegyezve).
 
@@ -119,7 +122,7 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   összehasonlításban (köztük a kifizetési arány), trendkép a portfólió-grafikonon.
 - **„Jelzések”** sáv a Kedvencek oldalon (RSI szélsőség, a 200 napos átlag átlépése), napi
   rendszerértesítés asztali gépen (kikapcsolható), a heti e-mailben is.
-- **Fogalomtár** a Beállításokban: 32 mutató közérthető magyarázata, kereshetően; ⓘ a kártyák számainál.
+- **Fogalomtár** a Beállításokban: 34 mutató közérthető magyarázata, kereshetően; ⓘ a kártyák számainál.
 
 ## Események
 
@@ -131,7 +134,7 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **Minta-elemzés** oldal (`/sample`, magyar és angol): egy illusztratív elemzés kitalált cégen mutatja az
   elemzés szerkezetét; a nyitóoldalról és a láblécből linkelve, a sitemapben.
 - A népszerű részvények oldalain **fő mutatók** is: P/E, osztalékhozam, béta, 52 hetes sáv.
-- **Fogalomtár** a weboldalon (`/glossary`): a 32 mutató magyarázata magyarul és angolul, a részvény-oldalakról linkelve.
+- **Fogalomtár** a weboldalon (`/glossary`): a 34 mutató magyarázata magyarul és angolul, a részvény-oldalakról linkelve.
 
 ## Bolti előkészítés
 

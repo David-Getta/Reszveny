@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Visos pozicijos jau turi šį įspėjimą} =1{Nustatytas 1 įspėjimas} one{Nustatytas {count} įspėjimas} few{Nustatyti {count} įspėjimai} many{Nustatyta {count} įspėjimo} other{Nustatyta {count} įspėjimų}}",
   "portfolioSinceSale": "{percent} nuo pardavimo",
   "lotPreviewRealized": "Realizuota šiuo pardavimu (FIFO):",
-  "lotPreviewAverage": "Nauja vidutinė pirkimo kaina: {after} (dabar {before})"
+  "lotPreviewAverage": "Nauja vidutinė pirkimo kaina: {after} (dabar {before})",
+  "portfolioYtdReturn": "Grąža šiemet",
+  "glossTwrYtd": "Laiku svertinė grąža nuo metų pradžios (arba nuo jūsų pirmojo pirkimo, jei jis buvo šiemet): kiekviena diena įskaičiuoja tą dieną turėtų akcijų pokytį, o dienos sujungiamos į grandinę – pinigai, kuriuos įnešate ar išsiimate, nėra grąža, todėl ją galima palyginti su indeksu. Žemiau: pasirinktas indeksas per tą patį laikotarpį."
 }

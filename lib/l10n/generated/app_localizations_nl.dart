@@ -2690,6 +2690,13 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Rendement dit jaar';
+
+  @override
+  String get glossTwrYtd =>
+      'Tijdgewogen rendement sinds het begin van het jaar (of sinds je eerste aankoop, als die dit jaar was): elke dag telt de verandering van de aandelen die je die dag had, en de dagen worden aan elkaar geschakeld – geld dat je stort of opneemt is geen rendement, dus het is te vergelijken met een index. Daaronder: de gekozen index over dezelfde periode.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

@@ -2676,6 +2676,13 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'د سږکال ګټه';
+
+  @override
+  String get glossTwrYtd =>
+      'د کال له پیل راهیسې (یا ستاسو له لومړي پېرلو راهیسې، که هغه سږکال وي) د وخت له مخې وزن شوې ګټه: هره ورځ د هغو ونډو بدلون حسابوي چې تاسو په هغه ورځ درلودې، او ورځې یو له بل سره د ځنځیر په څېر نښلول کېږي – هغه پیسې چې تاسو یې اچوئ یا باسئ ګټه نه ده، نو له یوه شاخص سره پرتله کېدای شي. لاندې: په همدې موده کې ټاکل شوی شاخص.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

@@ -4603,6 +4603,18 @@ abstract class AppLocalizations {
   /// **'New average cost: {after} (now {before})'**
   String lotPreviewAverage(String after, String before);
 
+  /// Portfolio value history card: label of the time-weighted return since January 1 (deposits and withdrawals excluded).
+  ///
+  /// In en, this message translates to:
+  /// **'Return this year'**
+  String get portfolioYtdReturn;
+
+  /// Info text for the portfolio's time-weighted return this year (also in the glossary).
+  ///
+  /// In en, this message translates to:
+  /// **'Time-weighted return since the start of the year (or since your first purchase, if that was this year): each day counts the change of the stocks you held that day, and the days are chained together – money you put in or take out is not return, so it can be compared with an index. Below it: the chosen index over the same period.'**
+  String get glossTwrYtd;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

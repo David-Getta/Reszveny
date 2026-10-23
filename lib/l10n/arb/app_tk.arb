@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Ähli pozisiýalarda bu duýduryş eýýäm bar} =1{1 duýduryş goýuldy} other{{count} duýduryş goýuldy}}",
   "portfolioSinceSale": "{percent} satanyňyzdan bäri",
   "lotPreviewRealized": "Bu satuwdan gazanylan (FIFO):",
-  "lotPreviewAverage": "Täze orta baha: {after} (häzir {before})"
+  "lotPreviewAverage": "Täze orta baha: {after} (häzir {before})",
+  "portfolioYtdReturn": "Şu ýylyň girdejililigi",
+  "glossTwrYtd": "Ýylyň başyndan bäri (ýa-da ilkinji satyn alşyňyz şu ýyl bolan bolsa, şondan bäri) wagt boýunça agramlandyrylan girdejililik: her gün şol gün sizde bolan paýnamalaryň üýtgeşmesini hasaplaýar we günler biri-birine zynjyr ýaly birikdirilýär – goýýan ýa-da çykarýan puluňyz girdeji däl, şonuň üçin ony indeks bilen deňeşdirip bolýar. Aşagynda: şol bir döwürde saýlanan indeks."
 }

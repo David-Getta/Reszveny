@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Ipozishini nganye sele inaso esi silumkiso} =1{Kusetwe isilumkiso esinye} other{Kusetwe izilumkiso ezi-{count}}}",
   "portfolioSinceSale": "{percent} ukususela oko wasithengisa",
   "lotPreviewRealized": "Efunyenweyo kule ntengiso (FIFO):",
-  "lotPreviewAverage": "Iindleko ezintsha eziphakathi: {after} (ngoku {before})"
+  "lotPreviewAverage": "Iindleko ezintsha eziphakathi: {after} (ngoku {before})",
+  "portfolioYtdReturn": "Inzuzo yalo nyaka",
+  "glossTwrYtd": "Inzuzo elinganiswe ngexesha ukususela ekuqaleni konyaka (okanye ukususela ekuthengeni kwakho kokuqala, ukuba bekukulo nyaka): usuku ngalunye lubala utshintsho lwezabelo obunazo ngolo suku, kwaye iintsuku zidityaniswa njengetyathanga – imali oyifakayo okanye oyikhuphayo ayiyonzuzo, ngoko ke inokuthelekiswa ne-index. Ngezantsi kwayo: i-index ekhethiweyo kwisithuba esifanayo."
 }

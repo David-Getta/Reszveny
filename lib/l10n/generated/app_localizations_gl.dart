@@ -2708,6 +2708,13 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Rendibilidade este ano';
+
+  @override
+  String get glossTwrYtd =>
+      'Rendibilidade ponderada no tempo desde o comezo do ano (ou desde a túa primeira compra, se foi este ano): cada día conta a variación das accións que tiñas ese día, e os días encadéanse – o diñeiro que metes ou retiras non é rendibilidade, polo que se pode comparar cun índice. Debaixo: o índice escollido no mesmo período.';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{May trailing stop na ang bawat posisyon} =1{Na-set ang 1 trailing stop} other{Na-set ang {count} trailing stop}}",
   "portfolioSinceSale": "{percent} mula nang ibenta mo",
   "lotPreviewRealized": "Natamo sa bentang ito (FIFO):",
-  "lotPreviewAverage": "Bagong average na halaga: {after} (ngayon {before})"
+  "lotPreviewAverage": "Bagong average na halaga: {after} (ngayon {before})",
+  "portfolioYtdReturn": "Kita ngayong taon",
+  "glossTwrYtd": "Time-weighted na kita mula sa simula ng taon (o mula sa una mong pagbili, kung ngayong taon iyon): binibilang ng bawat araw ang pagbabago ng mga stock na hawak mo noong araw na iyon, at pinagdudugtong-dugtong ang mga araw – hindi kita ang perang idinedeposito o iwini-withdraw mo, kaya maikukumpara ito sa isang index. Sa ibaba nito: ang napiling index sa parehong panahon."
 }

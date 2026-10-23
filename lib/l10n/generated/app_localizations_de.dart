@@ -2698,6 +2698,13 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Rendite in diesem Jahr';
+
+  @override
+  String get glossTwrYtd =>
+      'Zeitgewichtete Rendite seit Jahresbeginn (oder seit deinem ersten Kauf, falls der in diesem Jahr war): Jeder Tag zählt die Veränderung der Aktien, die du an diesem Tag gehalten hast, und die Tage werden miteinander verkettet – Geld, das du einzahlst oder abhebst, ist keine Rendite, daher lässt sie sich mit einem Index vergleichen. Darunter: der gewählte Index im selben Zeitraum.';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

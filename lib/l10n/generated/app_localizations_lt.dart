@@ -2753,6 +2753,13 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Grąža šiemet';
+
+  @override
+  String get glossTwrYtd =>
+      'Laiku svertinė grąža nuo metų pradžios (arba nuo jūsų pirmojo pirkimo, jei jis buvo šiemet): kiekviena diena įskaičiuoja tą dieną turėtų akcijų pokytį, o dienos sujungiamos į grandinę – pinigai, kuriuos įnešate ar išsiimate, nėra grąža, todėl ją galima palyginti su indeksu. Žemiau: pasirinktas indeksas per tą patį laikotarpį.';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

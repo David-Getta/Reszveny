@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Aksiyoŋ kala ena jogii jeertinol ngol} =1{Jeertinol 1 teeltaama} other{Jeertine {count} teeltaama}}",
   "portfolioSinceSale": "{percent} gila nde yeeyuɗaa",
   "lotPreviewRealized": "Heɓaande e ngal yeeyugol (FIFO):",
-  "lotPreviewAverage": "Coggu hakkunde kesu: {after} (jooni {before})"
+  "lotPreviewAverage": "Coggu hakkunde kesu: {after} (jooni {before})",
+  "portfolioYtdReturn": "Nafoore hitaande ndee",
+  "glossTwrYtd": "Nafoore peesaande e sahaa gila fuɗɗoode hitaande nde (walla gila e soodu maa arandeere, so tawii ko hitaande ndee): ñalnde kala ina limoo waylo aksiyonji ɗi njogi-ɗaa ñalnde ndeen, ñalɗi ɗin ina jokkondiree – kaalis mo naatnataa walla mo ittataa wonaa nafoore, ɗum noon ina waawi fondeede e indeks. E les mum: indeks suɓaandi ndin e oon sahaa gooto."
 }

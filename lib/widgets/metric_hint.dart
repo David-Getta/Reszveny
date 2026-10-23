@@ -74,12 +74,23 @@ class HintedLabel extends StatelessWidget {
 /// Egy mutató a kártyákon: halvány címke (magyarázattal ⓘ), alatta a vastag
 /// érték és opcionális kiegészítő sor.
 class MetricFigure extends StatelessWidget {
-  const MetricFigure({super.key, required this.label, required this.value, this.sub, this.color, this.hint});
+  const MetricFigure({
+    super.key,
+    required this.label,
+    required this.value,
+    this.sub,
+    this.color,
+    this.subColor,
+    this.hint,
+  });
 
   final String label;
   final String value;
   final String? sub;
   final Color? color;
+
+  /// Az alsor színe (alapból mint az értéké, annak híján halvány).
+  final Color? subColor;
   final String? hint;
 
   @override
@@ -100,7 +111,7 @@ class MetricFigure extends StatelessWidget {
           value,
           style: theme.textTheme.titleSmall?.copyWith(color: color, fontWeight: FontWeight.w700),
         ),
-        if (sub != null) Text(sub!, style: theme.textTheme.bodySmall?.copyWith(color: color ?? p.muted)),
+        if (sub != null) Text(sub!, style: theme.textTheme.bodySmall?.copyWith(color: subColor ?? color ?? p.muted)),
       ],
     );
   }

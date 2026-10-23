@@ -2690,6 +2690,13 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'ಈ ವರ್ಷದ ರಿಟರ್ನ್';
+
+  @override
+  String get glossTwrYtd =>
+      'ವರ್ಷದ ಆರಂಭದಿಂದ (ಅಥವಾ ನಿಮ್ಮ ಮೊದಲ ಖರೀದಿ ಈ ವರ್ಷವೇ ಆಗಿದ್ದರೆ ಅಂದಿನಿಂದ) ಸಮಯ-ತೂಕದ ರಿಟರ್ನ್: ಪ್ರತಿ ದಿನ ಆ ದಿನ ನಿಮ್ಮ ಬಳಿ ಇದ್ದ ಷೇರುಗಳ ಬದಲಾವಣೆಯನ್ನು ಎಣಿಸುತ್ತದೆ, ಮತ್ತು ದಿನಗಳನ್ನು ಒಂದಕ್ಕೊಂದು ಜೋಡಿಸಲಾಗುತ್ತದೆ – ನೀವು ಹಾಕುವ ಅಥವಾ ತೆಗೆಯುವ ಹಣ ರಿಟರ್ನ್ ಅಲ್ಲ, ಆದ್ದರಿಂದ ಇದನ್ನು ಸೂಚ್ಯಂಕದೊಂದಿಗೆ ಹೋಲಿಸಬಹುದು. ಕೆಳಗೆ: ಅದೇ ಅವಧಿಯಲ್ಲಿ ಆಯ್ಕೆ ಮಾಡಿದ ಸೂಚ್ಯಂಕ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

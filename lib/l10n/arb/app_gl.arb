@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Todas as posicións xa teñen un stop dinámico} =1{Creouse 1 stop dinámico} one{Creouse {count} stop dinámico} other{Creáronse {count} stops dinámicos}}",
   "portfolioSinceSale": "{percent} desde a venda",
   "lotPreviewRealized": "Realizado nesta venda (FIFO):",
-  "lotPreviewAverage": "Novo custo medio: {after} (agora {before})"
+  "lotPreviewAverage": "Novo custo medio: {after} (agora {before})",
+  "portfolioYtdReturn": "Rendibilidade este ano",
+  "glossTwrYtd": "Rendibilidade ponderada no tempo desde o comezo do ano (ou desde a túa primeira compra, se foi este ano): cada día conta a variación das accións que tiñas ese día, e os días encadéanse – o diñeiro que metes ou retiras non é rendibilidade, polo que se pode comparar cun índice. Debaixo: o índice escollido no mesmo período."
 }

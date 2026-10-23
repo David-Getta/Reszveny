@@ -2645,6 +2645,13 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'ናይ ሎሚ ዓመት ትርፊ';
+
+  @override
+  String get glossTwrYtd =>
+      'ካብ መጀመርታ ዓመት (ወይ ቀዳማይ ዕድጊትኩም ሎሚ ዓመት እንተ ኾይኑ ካብኡ) ብግዜ ዝተመዘነ ትርፊ፦ ነፍሲ ወከፍ መዓልቲ ነቶም በታ መዓልቲ ዝሓዝኩምዎም ኣክስዮናት ለውጢ ይቖጽር፣ መዓልትታት ድማ ብሰንሰለት ይተኣሳሰራ – እተእትውዎ ወይ እተውጽእዎ ገንዘብ ትርፊ ኣይኮነን፣ ስለዚ ምስ ኢንዴክስ ክነጻጸር ይኽእል። ኣብ ታሕቲ፦ እቲ ዝተመርጸ ኢንዴክስ ኣብ ተመሳሳሊ እዋን።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

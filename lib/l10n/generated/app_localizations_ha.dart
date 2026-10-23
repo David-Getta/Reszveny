@@ -2691,6 +2691,13 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Ribar bana';
+
+  @override
+  String get glossTwrYtd =>
+      'Riba da aka auna da lokaci tun farkon shekara (ko tun sayayyarka ta farko, idan a bana ne): kowace rana tana ƙidaya canjin hannayen jarin da kake riƙe da su a ranar, kuma ana haɗa ranakun a jere – kuɗin da ka saka ko ka cire ba riba ba ne, don haka ana iya kwatanta ta da ma\'auni. A ƙasanta: ma\'aunin da aka zaɓa a wannan lokaci ɗaya.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

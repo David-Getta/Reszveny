@@ -2567,6 +2567,13 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => '今年收益率';
+
+  @override
+  String get glossTwrYtd =>
+      '自年初起（若首次买入在今年，则自首次买入起）的时间加权收益率：每天计算您当天持有股票的涨跌，再将各天串联起来——您存入或取出的资金不算收益，因此可以与指数进行比较。下方显示同一期间所选指数的表现。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5501,6 +5508,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String lotPreviewAverage(String after, String before) {
     return '新平均成本：$after（現時 $before）';
   }
+
+  @override
+  String get portfolioYtdReturn => '今年回報率';
+
+  @override
+  String get glossTwrYtd =>
+      '由年初起（如首次買入在今年，則由首次買入起）的時間加權回報率：每日計算你當日持有股票的升跌，再將各日串連起來——你存入或提取的資金不計作回報，因此可與指數比較。下方顯示同期所選指數的表現。';
 
   @override
   String get portfolioGoalSet => '設定目標';

@@ -2682,6 +2682,13 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Rannman ane sa a';
+
+  @override
+  String get glossTwrYtd =>
+      'Rannman peze selon tan depi kòmansman ane a (oswa depi premye acha ou, si se te ane sa a): chak jou konte chanjman aksyon ou te genyen jou sa a, epi jou yo mare youn ak lòt – lajan ou mete oswa ou retire se pa rannman, kidonk li ka konpare ak yon endèks. Anba l: endèks ou chwazi a pou menm peryòd la.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

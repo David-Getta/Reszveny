@@ -2753,6 +2753,13 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Výnos tento rok';
+
+  @override
+  String get glossTwrYtd =>
+      'Časovo vážený výnos od začiatku roka (alebo od vášho prvého nákupu, ak bol tento rok): každý deň započíta zmenu akcií, ktoré ste v ten deň držali, a dni sa na seba reťazia – peniaze, ktoré vložíte alebo vyberiete, nie sú výnos, takže ho možno porovnať s indexom. Pod ním: zvolený index za rovnaké obdobie.';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

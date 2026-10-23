@@ -2697,6 +2697,13 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Inzuzo yalo nyaka';
+
+  @override
+  String get glossTwrYtd =>
+      'Inzuzo elinganiswe ngexesha ukususela ekuqaleni konyaka (okanye ukususela ekuthengeni kwakho kokuqala, ukuba bekukulo nyaka): usuku ngalunye lubala utshintsho lwezabelo obunazo ngolo suku, kwaye iintsuku zidityaniswa njengetyathanga – imali oyifakayo okanye oyikhuphayo ayiyonzuzo, ngoko ke inokuthelekiswa ne-index. Ngezantsi kwayo: i-index ekhethiweyo kwisithuba esifanayo.';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

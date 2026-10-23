@@ -2682,6 +2682,13 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'এ বছরের রিটার্ন';
+
+  @override
+  String get glossTwrYtd =>
+      'বছরের শুরু থেকে (অথবা আপনার প্রথম কেনা থেকে, যদি তা এ বছরেই হয়) সময়-ভারিত রিটার্ন: প্রতিটি দিন সেদিন আপনার কাছে থাকা শেয়ারগুলোর পরিবর্তন গণনা করে, আর দিনগুলো একটির পর একটি জুড়ে দেওয়া হয় – আপনি যে টাকা জমা দেন বা তুলে নেন তা রিটার্ন নয়, তাই এটিকে একটি সূচকের সাথে তুলনা করা যায়। নিচে: একই সময়ে বেছে নেওয়া সূচক।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

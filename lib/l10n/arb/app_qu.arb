@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{Llapa posicionkunaqa kay willayniyuqñam} =1{1 willay churasqa} other{{count} willay churasqa}}",
   "portfolioSinceSale": "{percent} rantikusqaykimanta",
   "lotPreviewRealized": "Kay rantikuypi chiqaqpi tarisqa (FIFO):",
-  "lotPreviewAverage": "Musuq chawpi chanin: {after} (kunan {before})"
+  "lotPreviewAverage": "Musuq chawpi chanin: {after} (kunan {before})",
+  "portfolioYtdReturn": "Kay wata rendimiento",
+  "glossTwrYtd": "Pachawan llasachisqa rendimiento wata qallariymanta (utaq ñawpaq rantisqaykimanta, kay watapi karqan chayqa): sapa p'unchaw chay p'unchaw hap'isqayki accionkunap tikrakuyninta yupan, p'unchawkunataq watasqa hina tinkichisqa – churasqayki utaq hurqusqayki qullqiqa manan rendimientochu, chayrayku huk índicewan tupachiyta atikun. Uranpi: akllasqa índice kikin pachapi."
 }

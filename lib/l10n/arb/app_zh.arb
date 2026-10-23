@@ -810,5 +810,7 @@
   "portfolioStopsDone": "{count, plural, =0{所有持仓都已设置跟踪止损} =1{已设置 1 个跟踪止损} other{已设置 {count} 个跟踪止损}}",
   "portfolioSinceSale": "卖出后 {percent}",
   "lotPreviewRealized": "本次卖出已实现（FIFO）：",
-  "lotPreviewAverage": "新平均成本：{after}（当前 {before}）"
+  "lotPreviewAverage": "新平均成本：{after}（当前 {before}）",
+  "portfolioYtdReturn": "今年收益率",
+  "glossTwrYtd": "自年初起（若首次买入在今年，则自首次买入起）的时间加权收益率：每天计算您当天持有股票的涨跌，再将各天串联起来——您存入或取出的资金不算收益，因此可以与指数进行比较。下方显示同一期间所选指数的表现。"
 }

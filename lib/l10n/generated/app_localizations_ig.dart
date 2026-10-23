@@ -2679,6 +2679,13 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Uru afọ a';
+
+  @override
+  String get glossTwrYtd =>
+      'Uru a tụrụ dịka oge si dị site na mmalite afọ (ma ọ bụ site n\'ịzụ ahịa mbụ gị, ọ bụrụ na ọ bụ n\'afọ a): ụbọchị ọ bụla na-agụ mgbanwe nke òkè ị jidere n\'ụbọchị ahụ, a na-ejikọkwa ụbọchị ndị ahụ ọnụ – ego ị tinyere ma ọ bụ wepụ abụghị uru, ya mere enwere ike iji ya tụnyere ndeksi. N\'okpuru ya: ndeksi a họọrọ n\'otu oge ahụ.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

@@ -2674,6 +2674,13 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'هن سال جو رٽرن';
+
+  @override
+  String get glossTwrYtd =>
+      'سال جي شروعات کان (يا توهان جي پهرين خريداري کان، جيڪڏهن اها هن سال ٿي هئي) وقت جي وزن وارو رٽرن: هر ڏينهن انهيءَ ڏينهن توهان وٽ موجود شيئرز جي تبديلي ڳڻي ٿو، ۽ ڏينهن هڪ ٻئي سان جوڙيا وڃن ٿا – جيڪي پئسا توهان وجهو ٿا يا ڪڍو ٿا اهي رٽرن ناهن، تنهن ڪري ان جي ڀيٽ ڪنهن انڊيڪس سان ڪري سگهجي ٿي. هيٺ: ساڳئي عرصي ۾ چونڊيل انڊيڪس.';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

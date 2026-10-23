@@ -2687,6 +2687,13 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Qezenca îsal';
+
+  @override
+  String get glossTwrYtd =>
+      'Qezenca li gorî demê pîvandî ji destpêka salê ve (an ji kirîna te ya yekem ve, heke ew îsal bû): her roj guherîna wan pişkan dihesibîne ku te wê rojê hebûn, û roj bi hev ve tên girêdan – pereyê ku tu dixî an derdixî ne qezenc e, ji ber vê yekê dikare bi îndeksekê re were berhevkirin. Li jêr: îndeksa hilbijartî di heman demê de.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

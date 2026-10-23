@@ -2688,6 +2688,13 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Opbrengs vanjaar';
+
+  @override
+  String get glossTwrYtd =>
+      'Tydgeweegde opbrengs sedert die begin van die jaar (of sedert jou eerste aankoop, as dit vanjaar was): elke dag tel die verandering van die aandele wat jy daardie dag gehou het, en die dae word aan mekaar geskakel – geld wat jy instort of onttrek, is nie opbrengs nie, dus kan dit met \'n indeks vergelyk word. Daaronder: die gekose indeks oor dieselfde tydperk.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

@@ -2698,6 +2698,13 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Kay wata rendimiento';
+
+  @override
+  String get glossTwrYtd =>
+      'Pachawan llasachisqa rendimiento wata qallariymanta (utaq ñawpaq rantisqaykimanta, kay watapi karqan chayqa): sapa p\'unchaw chay p\'unchaw hap\'isqayki accionkunap tikrakuyninta yupan, p\'unchawkunataq watasqa hina tinkichisqa – churasqayki utaq hurqusqayki qullqiqa manan rendimientochu, chayrayku huk índicewan tupachiyta atikun. Uranpi: akllasqa índice kikin pachapi.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

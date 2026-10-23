@@ -2681,6 +2681,13 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Imbal hasil tahun ini';
+
+  @override
+  String get glossTwrYtd =>
+      'Imbal hasil tertimbang waktu sejak awal tahun (atau sejak pembelian pertama Anda, jika itu tahun ini): setiap hari menghitung perubahan saham yang Anda miliki pada hari itu, lalu hari-hari tersebut dirangkai – uang yang Anda setor atau tarik bukan imbal hasil, sehingga dapat dibandingkan dengan indeks. Di bawahnya: indeks yang dipilih pada periode yang sama.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

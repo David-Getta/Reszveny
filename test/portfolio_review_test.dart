@@ -156,6 +156,18 @@ void main() {
       find.descendant(of: find.byKey(const ValueKey('portfolio-benchmark')), matching: find.text('Nasdaq 100')),
       findsOneWidget,
     );
+    // Az idei időarányos hozam mellett a választott index ugyanerre az időszakra (a minta-sorozat
+    // munkanapos: az év első napjaiban, munkanap nélkül, még nincs idei pont).
+    final today = DateTime.now();
+    final workdayThisYear = [
+      for (var d = DateTime(today.year); !d.isAfter(today); d = d.add(const Duration(days: 1))) d,
+    ].any((d) => d.weekday <= DateTime.friday);
+    if (workdayThisYear) {
+      expect(
+        find.descendant(of: find.byKey(const ValueKey('portfolio-ytd')), matching: find.textContaining('Nasdaq 100: ')),
+        findsOneWidget,
+      );
+    }
     expect(benchmarkOf('nincs ilyen').symbol, 'SPY');
     await tester.tap(find.byKey(const ValueKey('portfolio-review-run')));
     await tester.pumpAndSettle();

@@ -2686,6 +2686,13 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get portfolioYtdReturn => 'Faida ya mwaka huu';
+
+  @override
+  String get glossTwrYtd =>
+      'Faida iliyopimwa kwa muda tangu mwanzo wa mwaka (au tangu ununuzi wako wa kwanza, ikiwa ulikuwa mwaka huu): kila siku huhesabu mabadiliko ya hisa ulizokuwa nazo siku hiyo, na siku huunganishwa pamoja kama mnyororo – pesa unazoweka au kutoa si faida, hivyo inaweza kulinganishwa na fahirisi. Chini yake: fahirisi iliyochaguliwa katika kipindi hicho hicho.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override
