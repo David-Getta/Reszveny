@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.222)
+# Változásjegyzék (0.2.130 → 0.2.223)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -81,6 +81,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **Tranzakciós díj (jutalék)**: a vételhez és az eladáshoz megadható; a bekerülési értékbe, a realizált nyereségbe
   (az adó-CSV-be is) és az éves hozamba beszámít; a bróker-exportok díj-oszlopa (IBKR „Comm/Fee”) importáláskor
   bekerül; szinkronban, mentésben és a CSV-ben is.
+- A vétel/eladás dialógus jelzi a **héten belüli gyorsjelentést** („Negyedéves gyorsjelentés · holnap · zárás után”):
+  a döntés előtt jó tudni, hogy az ár a szokásosnál jobban mozoghat.
 - Az **új vétel számlája** alapból a legutóbbi vételé (a mindig TBSZ-re vevőnek nem kell újra beírnia).
 - A jegyzetkártya és a portfólió lábjegyzete helyesen írja: az adat ezen a készüléken marad, **és a fiókodban, ha be
   vagy jelentkezve** (eddig „csak ezen a készüléken”).

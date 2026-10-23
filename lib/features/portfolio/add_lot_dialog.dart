@@ -5,6 +5,7 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/date_picker_row.dart';
+import '../stock_detail/widgets/earnings_soon_line.dart';
 import 'account_field.dart';
 import 'portfolio_store.dart' show PortfolioLot, largestKey;
 
@@ -257,6 +258,8 @@ class _AddLotDialogState extends State<_AddLotDialog> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Közelgő gyorsjelentés: a döntés előtt jó tudni, hogy az ár a szokásosnál jobban mozoghat.
+            EarningsSoonLine(symbol: widget.symbol),
             TextField(
               key: const ValueKey('lot-quantity'),
               controller: _quantity,

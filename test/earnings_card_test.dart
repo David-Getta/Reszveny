@@ -137,6 +137,13 @@ void main() {
       ),
       findsOneWidget,
     );
+    // A vétel dialógusában is ott van: a döntés előtt jó tudni.
+    await tester.tap(find.byTooltip('Add to portfolio'));
+    await tester.pumpAndSettle();
+    expect(
+      find.descendant(of: find.byType(AlertDialog), matching: find.byKey(const ValueKey('earnings-soon'))),
+      findsOneWidget,
+    );
   });
 
   testWidgets('no earnings or insider data: no cards', (tester) async {
