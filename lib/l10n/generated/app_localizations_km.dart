@@ -2802,6 +2802,13 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'ចូលគណនីដោយប្រើអ៊ីមែលរបស់អ្នក ដើម្បីប្រើកូដរបស់មិត្តភក្តិ។';
+
+  @override
+  String get referralErrFull => 'កូដនេះត្រូវបានប្រើអស់ចំនួនដងអតិបរមារួចហើយ។';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

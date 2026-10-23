@@ -2828,6 +2828,13 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Doʻstingiz kodini faollashtirish uchun e-pochtangiz bilan kiring.';
+
+  @override
+  String get referralErrFull => 'Bu kod foydalanish chegarasiga yetgan.';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

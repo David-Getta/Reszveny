@@ -841,5 +841,7 @@
   "tickerChangeTitle": "टिकर बदलाव · {symbol}",
   "tickerChangeNew": "नया टिकर",
   "tickerChangeHint": "जब कोई कंपनी अपना टिकर बदलती है (जैसे FB → META): सभी लेन-देन, डिविडेंड, स्टॉक स्प्लिट, नोट और अलर्ट नए टिकर पर चले जाते हैं।",
-  "tickerChanged": "{symbol} पर ले जाया गया"
+  "tickerChanged": "{symbol} पर ले जाया गया",
+  "referralErrSignIn": "किसी दोस्त का कोड रिडीम करने के लिए अपने ई-मेल से साइन इन करें।",
+  "referralErrFull": "यह कोड पहले ही अधिकतम बार रिडीम किया जा चुका है।"
 }

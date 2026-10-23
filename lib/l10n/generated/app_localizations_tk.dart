@@ -2826,6 +2826,13 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Dostuňyň koduny ulanmak üçin e-poçtaň bilen gir.';
+
+  @override
+  String get referralErrFull => 'Bu kody ulanmagyň çägi doldy.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

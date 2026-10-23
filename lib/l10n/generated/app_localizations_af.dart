@@ -2828,6 +2828,14 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Meld met jou e-posadres aan om ’n vriend se kode in te los.';
+
+  @override
+  String get referralErrFull =>
+      'Hierdie kode is reeds die maksimum aantal kere ingelos.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

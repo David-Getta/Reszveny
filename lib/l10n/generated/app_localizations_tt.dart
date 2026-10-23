@@ -2821,6 +2821,13 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Дустыгызның кодын куллану өчен электрон почтагыз белән керегез.';
+
+  @override
+  String get referralErrFull => 'Бу код куллану чигенә җитте.';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

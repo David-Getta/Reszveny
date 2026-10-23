@@ -2832,6 +2832,14 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Mag-sign in gamit ang iyong email para i-redeem ang code ng kaibigan.';
+
+  @override
+  String get referralErrFull =>
+      'Naabot na ng code na ito ang maximum na bilang ng pag-redeem.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

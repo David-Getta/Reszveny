@@ -2894,6 +2894,14 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Pro uplatnění kódu od přítele se přihlaste e-mailem.';
+
+  @override
+  String get referralErrFull =>
+      'Tento kód už dosáhl maximálního počtu uplatnění.';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

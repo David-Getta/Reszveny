@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Kusintha ticker · {symbol}",
   "tickerChangeNew": "Ticker yatsopano",
   "tickerChangeHint": "Kampani ikasintha ticker yake (mwachitsanzo: FB → META): zogula ndi zogulitsa zonse, madividendi, kugawa masheya, cholemba ndi zidziwitso zimasamukira ku ticker yatsopano.",
-  "tickerChanged": "Zasamutsidwa ku {symbol}"
+  "tickerChanged": "Zasamutsidwa ku {symbol}",
+  "referralErrSignIn": "Lowani ndi imelo yanu kuti mugwiritse ntchito khodi ya mnzanu.",
+  "referralErrFull": "Khodi iyi yagwiritsidwa kale ntchito nthawi zonse zololedwa."
 }

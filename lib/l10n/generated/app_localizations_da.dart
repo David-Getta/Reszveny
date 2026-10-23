@@ -2822,6 +2822,14 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Log ind med din e-mail for at indløse en vens kode.';
+
+  @override
+  String get referralErrFull =>
+      'Koden er allerede indløst det maksimale antal gange.';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Tickerwechsel · {symbol}",
   "tickerChangeNew": "Neuer Ticker",
   "tickerChangeHint": "Wenn ein Unternehmen seinen Ticker ändert (z. B. FB → META): Alle Transaktionen, Dividenden, Aktiensplits, die Notiz und die Alarme werden auf den neuen übertragen.",
-  "tickerChanged": "Auf {symbol} übertragen"
+  "tickerChanged": "Auf {symbol} übertragen",
+  "referralErrSignIn": "Melde dich mit deiner E-Mail an, um einen Code von Freunden einzulösen.",
+  "referralErrFull": "Dieser Code wurde bereits so oft wie möglich eingelöst."
 }

@@ -2872,6 +2872,14 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Prijavite se e-mailom da iskoristite kod prijatelja.';
+
+  @override
+  String get referralErrFull =>
+      'Ovaj kod je već iskorišten najveći dozvoljeni broj puta.';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

@@ -2826,6 +2826,14 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Asup nganggo email anjeun pikeun nukeurkeun kode ti babaturan.';
+
+  @override
+  String get referralErrFull =>
+      'Kode ieu geus ditukeurkeun nepi ka wates maksimal.';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

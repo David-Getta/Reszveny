@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Pag-usab sa ticker · {symbol}",
   "tickerChangeNew": "Bag-ong ticker",
   "tickerChangeHint": "Kon usbon sa kompanya ang ticker niini (pananglitan FB → META): ang tanang transaksyon, dibidendo, stock split, ang nota ug ang mga alerto mabalhin sa bag-o.",
-  "tickerChanged": "Gibalhin ngadto sa {symbol}"
+  "tickerChanged": "Gibalhin ngadto sa {symbol}",
+  "referralErrSignIn": "Mag-sign in gamit ang imong e-mail aron ma-redeem ang code sa usa ka higala.",
+  "referralErrFull": "Naabot na niini nga code ang kinatas-ang gidaghanon sa pag-redeem."
 }

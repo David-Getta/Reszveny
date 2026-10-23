@@ -2816,6 +2816,13 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'मित्रक कोड रिडीम करबाक लेल अपन ई-मेलसँ साइन इन करू।';
+
+  @override
+  String get referralErrFull => 'ई कोड पहिनहि अधिकतम बेर रिडीम भऽ चुकल अछि।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

@@ -2845,6 +2845,14 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Ag-sign in babaen ti e-mailmo tapno mausarmo ti kodigo ti gayyem.';
+
+  @override
+  String get referralErrFull =>
+      'Nausaren daytoy a kodigo iti kaadu a maipalubos.';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

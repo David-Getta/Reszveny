@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Simbola maiņa · {symbol}",
   "tickerChangeNew": "Jaunais simbols",
   "tickerChangeHint": "Kad uzņēmums maina savu simbolu (piem., FB → META): visi darījumi, dividendes, akciju sadalīšanas, piezīme un brīdinājumi tiek pārcelti uz jauno.",
-  "tickerChanged": "Pārcelts uz {symbol}"
+  "tickerChanged": "Pārcelts uz {symbol}",
+  "referralErrSignIn": "Pierakstieties ar savu e-pastu, lai izmantotu drauga kodu.",
+  "referralErrFull": "Šis kods jau izmantots maksimālo reižu skaitu."
 }

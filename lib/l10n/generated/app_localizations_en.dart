@@ -2821,6 +2821,14 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Sign in with your email to redeem a friend\'s code.';
+
+  @override
+  String get referralErrFull =>
+      'This code has already been used as many times as it can be.';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

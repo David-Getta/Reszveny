@@ -2833,6 +2833,14 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Pinda neemail yako kuti ushandise kodhi yeshamwari.';
+
+  @override
+  String get referralErrFull =>
+      'Kodhi iyi yatoshandiswa nguva dzose dzinobvumirwa.';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

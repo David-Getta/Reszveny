@@ -2826,6 +2826,14 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'بە ئیمەیڵەکەت بچۆ ژوورەوە بۆ ئەوەی کۆدی هاوڕێیەک بەکاربهێنیت.';
+
+  @override
+  String get referralErrFull =>
+      'ئەم کۆدە پێشتر بە زۆرترین ژمارەی ڕێگەپێدراو بەکارهاتووە.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

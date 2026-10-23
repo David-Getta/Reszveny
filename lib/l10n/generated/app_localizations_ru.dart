@@ -2901,6 +2901,14 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Войдите по электронной почте, чтобы активировать код друга.';
+
+  @override
+  String get referralErrFull =>
+      'Этот код уже активирован максимальное число раз.';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

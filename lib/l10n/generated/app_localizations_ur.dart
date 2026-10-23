@@ -2823,6 +2823,14 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'کسی دوست کا کوڈ استعمال کرنے کے لیے اپنے ای میل سے سائن ان کریں۔';
+
+  @override
+  String get referralErrFull =>
+      'یہ کوڈ پہلے ہی زیادہ سے زیادہ بار استعمال ہو چکا ہے۔';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

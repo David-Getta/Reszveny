@@ -2819,6 +2819,14 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Masuk dengan email Anda untuk menukarkan kode teman.';
+
+  @override
+  String get referralErrFull =>
+      'Kode ini sudah ditukarkan sebanyak batas maksimum.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

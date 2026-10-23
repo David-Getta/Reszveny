@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Símbolo ñemoambue · {symbol}",
   "tickerChangeNew": "Símbolo pyahu",
   "tickerChangeHint": "Peteĩ empresa omoambuévo isímbolo (techapyrã FB → META): opaite jejogua ha ñemu, dividendo, acción ñembojaʼo, jehaipy ha maranduʼi ohasa símbolo pyahúpe.",
-  "tickerChanged": "Oñembohasa {symbol}-pe"
+  "tickerChanged": "Oñembohasa {symbol}-pe",
+  "referralErrSignIn": "Eike ne correo reheve reiporu hag̃ua ne angirũ código.",
+  "referralErrFull": "Ko código ojeporúma opaite jey ikatuháicha."
 }

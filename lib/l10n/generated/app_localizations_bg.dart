@@ -2825,6 +2825,14 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Влезте с имейла си, за да използвате код от приятел.';
+
+  @override
+  String get referralErrFull =>
+      'Този код вече е използван максималния брой пъти.';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

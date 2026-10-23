@@ -2822,6 +2822,13 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'मित्राचा कोड रिडीम करण्यासाठी तुमच्या ई-मेलने साइन इन करा.';
+
+  @override
+  String get referralErrFull => 'हा कोड आधीच कमाल वेळा रिडीम झाला आहे.';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

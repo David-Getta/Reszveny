@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Canjin ticker · {symbol}",
   "tickerChangeNew": "Sabon ticker",
   "tickerChangeHint": "Idan kamfani ya canza ticker ɗinsa (misali FB → META): duk ma'amaloli, rabon riba, rabon hannun jari, bayanin da faɗakarwar za su koma sabon ticker.",
-  "tickerChanged": "An mayar zuwa {symbol}"
+  "tickerChanged": "An mayar zuwa {symbol}",
+  "referralErrSignIn": "Shiga da imel ɗinka don yin amfani da lambar abokinka.",
+  "referralErrFull": "An riga an yi amfani da wannan lambar iyakar adadin da aka yarda."
 }

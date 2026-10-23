@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Simbolio keitimas · {symbol}",
   "tickerChangeNew": "Naujas simbolis",
   "tickerChangeHint": "Kai bendrovė pakeičia savo simbolį (pvz., FB → META): visos operacijos, dividendai, akcijų skaidymai, užrašas ir įspėjimai perkeliami į naująjį.",
-  "tickerChanged": "Perkelta į {symbol}"
+  "tickerChanged": "Perkelta į {symbol}",
+  "referralErrSignIn": "Prisijunkite el. paštu, kad galėtumėte panaudoti draugo kodą.",
+  "referralErrFull": "Šis kodas jau panaudotas didžiausią leistiną kartų skaičių."
 }

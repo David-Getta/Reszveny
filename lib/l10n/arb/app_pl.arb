@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Zmiana tickera · {symbol}",
   "tickerChangeNew": "Nowy ticker",
   "tickerChangeHint": "Gdy spółka zmienia ticker (np. FB → META): wszystkie transakcje, dywidendy, splity akcji, notatka i alerty są przenoszone na nowy.",
-  "tickerChanged": "Przeniesiono na {symbol}"
+  "tickerChanged": "Przeniesiono na {symbol}",
+  "referralErrSignIn": "Zaloguj się adresem e-mail, aby wykorzystać kod od znajomego.",
+  "referralErrFull": "Ten kod został już wykorzystany maksymalną liczbę razy."
 }

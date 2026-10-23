@@ -2815,6 +2815,13 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Đăng nhập bằng email để đổi mã của một người bạn.';
+
+  @override
+  String get referralErrFull => 'Mã này đã được đổi đủ số lần tối đa.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

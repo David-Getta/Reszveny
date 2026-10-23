@@ -4789,6 +4789,18 @@ abstract class AppLocalizations {
   /// **'Moved to {symbol}'**
   String tickerChanged(String symbol);
 
+  /// Error when redeeming a friend's referral code without being signed in with an email address.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with your email to redeem a friend\'s code.'**
+  String get referralErrSignIn;
+
+  /// Error when a referral (or tester) code has reached its maximum number of redemptions.
+  ///
+  /// In en, this message translates to:
+  /// **'This code has already been used as many times as it can be.'**
+  String get referralErrFull;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

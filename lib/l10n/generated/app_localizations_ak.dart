@@ -2826,6 +2826,14 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Fa wo email wura mu na woatumi de wo damfo bi code adi dwuma.';
+
+  @override
+  String get referralErrFull =>
+      'Wɔde code yi adi dwuma mpɛn dodow a wɔma ho kwan no dedaw.';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

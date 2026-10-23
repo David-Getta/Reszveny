@@ -2899,6 +2899,14 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Увайдзіце праз электронную пошту, каб актываваць код сябра.';
+
+  @override
+  String get referralErrFull =>
+      'Гэты код ужо актываваны максімальную колькасць разоў.';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Ndryshim simboli · {symbol}",
   "tickerChangeNew": "Simboli i ri",
   "tickerChangeHint": "Kur një kompani ndryshon simbolin (p.sh. FB → META): të gjitha transaksionet, dividendët, ndarjet e aksioneve, shënimi dhe alarmet kalojnë te i riu.",
-  "tickerChanged": "U zhvendos te {symbol}"
+  "tickerChanged": "U zhvendos te {symbol}",
+  "referralErrSignIn": "Hyr me email-in tënd për të aktivizuar kodin e një miku.",
+  "referralErrFull": "Ky kod është aktivizuar tashmë numrin maksimal të herëve."
 }

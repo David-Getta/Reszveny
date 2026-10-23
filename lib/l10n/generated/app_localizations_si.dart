@@ -2821,6 +2821,13 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'මිතුරෙකුගේ කේතයක් භාවිත කිරීමට ඔබේ ඊමේල් සමඟ පුරන්න.';
+
+  @override
+  String get referralErrFull => 'මෙම කේතය දැනටමත් උපරිම වාර ගණනක් භාවිත කර ඇත.';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

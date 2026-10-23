@@ -2835,6 +2835,14 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Lowani ndi imelo yanu kuti mugwiritse ntchito khodi ya mnzanu.';
+
+  @override
+  String get referralErrFull =>
+      'Khodi iyi yagwiritsidwa kale ntchito nthawi zonse zololedwa.';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

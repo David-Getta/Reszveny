@@ -841,5 +841,7 @@
   "tickerChangeTitle": "تغيير رمز السهم · {symbol}",
   "tickerChangeNew": "رمز السهم الجديد",
   "tickerChangeHint": "عندما تغيّر شركة رمز سهمها (مثل FB → META): تنتقل جميع المعاملات وتوزيعات الأرباح وتجزئات الأسهم والملاحظة والتنبيهات إلى الرمز الجديد.",
-  "tickerChanged": "تم النقل إلى {symbol}"
+  "tickerChanged": "تم النقل إلى {symbol}",
+  "referralErrSignIn": "سجّل الدخول ببريدك الإلكتروني لتفعيل رمز صديق.",
+  "referralErrFull": "بلغ هذا الرمز الحد الأقصى لعدد مرات التفعيل."
 }

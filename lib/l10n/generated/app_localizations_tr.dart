@@ -2824,6 +2824,13 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Bir arkadaşının kodunu kullanmak için e-postanla giriş yap.';
+
+  @override
+  String get referralErrFull => 'Bu kod kullanım sınırına ulaştı.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

@@ -2788,6 +2788,12 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn => 'የጓደኛን ኮድ ለመጠቀም በኢሜይልዎ ይግቡ።';
+
+  @override
+  String get referralErrFull => 'ይህ ኮድ የሚፈቀደውን ያህል ጊዜ ጥቅም ላይ ውሏል።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

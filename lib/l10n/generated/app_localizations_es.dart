@@ -2830,6 +2830,14 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Inicia sesión con tu correo para canjear el código de un amigo.';
+
+  @override
+  String get referralErrFull =>
+      'Este código ya se ha canjeado el máximo de veces posible.';
+
+  @override
   String get portfolioGoalSet => 'Fijar un objetivo';
 
   @override

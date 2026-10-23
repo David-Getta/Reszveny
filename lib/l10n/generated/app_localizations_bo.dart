@@ -2812,6 +2812,14 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'གྲོགས་པོའི་ཨང་རྟགས་བེད་སྤྱོད་བྱེད་པར་ཁྱེད་ཀྱི་གློག་འཕྲིན་གྱིས་ནང་འཛུལ་གནང་།';
+
+  @override
+  String get referralErrFull =>
+      'ཨང་རྟགས་འདི་བེད་སྤྱོད་ཆོག་པའི་ཐེངས་གྲངས་ཡོངས་རྫོགས་བེད་སྤྱོད་བྱས་ཟིན།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

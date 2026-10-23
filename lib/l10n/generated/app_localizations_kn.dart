@@ -2830,6 +2830,14 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'ಸ್ನೇಹಿತರ ಕೋಡ್ ರಿಡೀಮ್ ಮಾಡಲು ನಿಮ್ಮ ಇಮೇಲ್‌ನೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ.';
+
+  @override
+  String get referralErrFull =>
+      'ಈ ಕೋಡ್ ಅನ್ನು ಈಗಾಗಲೇ ಗರಿಷ್ಠ ಬಾರಿ ರಿಡೀಮ್ ಮಾಡಲಾಗಿದೆ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

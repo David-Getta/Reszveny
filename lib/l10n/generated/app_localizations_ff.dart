@@ -2820,6 +2820,14 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Seŋo e e-mail maa ngam huutoraade kod sehil maa.';
+
+  @override
+  String get referralErrFull =>
+      'Ndee kod huutoraama gila law laabi keewɗi ɗi nde waawi.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

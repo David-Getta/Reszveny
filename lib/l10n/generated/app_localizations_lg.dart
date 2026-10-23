@@ -2841,6 +2841,14 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Yingira n\'email yo osobole okukozesa koodi ya mukwano gwo.';
+
+  @override
+  String get referralErrFull =>
+      'Koodi eno ekozeseddwa dda emirundi gyonna egikkirizibwa.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

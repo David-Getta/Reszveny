@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Kuchinja ticker · {symbol}",
   "tickerChangeNew": "Ticker itsva",
   "tickerChangeHint": "Kambani painochinja ticker yayo (sem. FB → META): zvese zvakatengwa nezvakatengeswa, madividendi, kupatsanura masheya, chinyorwa nezviziviso zvinotamisirwa kuticker itsva.",
-  "tickerChanged": "Zvatamisirwa kuna {symbol}"
+  "tickerChanged": "Zvatamisirwa kuna {symbol}",
+  "referralErrSignIn": "Pinda neemail yako kuti ushandise kodhi yeshamwari.",
+  "referralErrFull": "Kodhi iyi yatoshandiswa nguva dzose dzinobvumirwa."
 }

@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Abeddel n uzamul · {symbol}",
   "tickerChangeNew": "Azamul amaynut",
   "tickerChangeHint": "Mi ara tbeddel tkebbanit azamul-is (amedya FB → META): akk tiɣin d uznuzu, dividendes, beṭṭu n yimuren, tazmilt d yilɣa ad ddun ɣer uzamul amaynut.",
-  "tickerChanged": "Yettwasmutti ɣer {symbol}"
+  "tickerChanged": "Yettwasmutti ɣer {symbol}",
+  "referralErrSignIn": "Kcem s imayl-ik akken ad tesqedceḍ tangalt n umdakel.",
+  "referralErrFull": "Tangalt-a tewweḍ yakan ɣer tlisa n useqdec-is."
 }

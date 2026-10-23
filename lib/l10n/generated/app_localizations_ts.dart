@@ -2847,6 +2847,14 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Nghena hi imeyili ya wena leswaku u tirhisa khodi ya munghana.';
+
+  @override
+  String get referralErrFull =>
+      'Khodi leyi yi tirhisiwile khale minkarhi hinkwayo leyi pfumeleriwaka.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

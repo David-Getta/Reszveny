@@ -2824,6 +2824,14 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Logg inn med e-postadressen din for å løse inn en venns kode.';
+
+  @override
+  String get referralErrFull =>
+      'Denne koden er allerede løst inn maksimalt antall ganger.';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

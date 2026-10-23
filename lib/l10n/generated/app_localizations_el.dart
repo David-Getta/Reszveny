@@ -2835,6 +2835,14 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Συνδεθείτε με το email σας για να εξαργυρώσετε τον κωδικό ενός φίλου.';
+
+  @override
+  String get referralErrFull =>
+      'Αυτός ο κωδικός έχει ήδη εξαργυρωθεί τον μέγιστο αριθμό φορών.';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

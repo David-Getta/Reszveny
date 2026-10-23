@@ -2704,6 +2704,12 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn => '请用电子邮件登录后再兑换好友的邀请码。';
+
+  @override
+  String get referralErrFull => '该邀请码已达到兑换次数上限。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5775,6 +5781,12 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String tickerChanged(String symbol) {
     return '已轉移至 $symbol';
   }
+
+  @override
+  String get referralErrSignIn => '請以電郵登入，才可兌換朋友的邀請碼。';
+
+  @override
+  String get referralErrFull => '此邀請碼已達兌換次數上限。';
 
   @override
   String get portfolioGoalSet => '設定目標';

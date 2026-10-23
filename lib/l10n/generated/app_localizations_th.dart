@@ -2791,6 +2791,13 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'ลงชื่อเข้าใช้ด้วยอีเมลของคุณเพื่อใช้โค้ดของเพื่อน';
+
+  @override
+  String get referralErrFull => 'โค้ดนี้ถูกใช้ครบจำนวนครั้งสูงสุดแล้ว';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

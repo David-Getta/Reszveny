@@ -2823,6 +2823,14 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Sign in with your e-mail make you fit use padi code.';
+
+  @override
+  String get referralErrFull =>
+      'Dem don use dis code reach di maximum times wey e fit take.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

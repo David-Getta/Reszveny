@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Phetošo ya ticker · {symbol}",
   "tickerChangeNew": "Ticker ye mpsha",
   "tickerChangeHint": "Ge khamphani e fetoša ticker ya yona (mohl. FB → META): dithekišano ka moka, dividende, dikaroganyo tša dišere, ntlha le ditemošo di šuthišetšwa go ticker ye mpsha.",
-  "tickerChanged": "E šuthišeditšwe go {symbol}"
+  "tickerChanged": "E šuthišeditšwe go {symbol}",
+  "referralErrSignIn": "Tsena ka imeile ya gago gore o šomiše khoutu ya mogwera.",
+  "referralErrFull": "Khoutu ye e šetše e šomišitšwe ga ntši ka mo go dumeletšwego."
 }

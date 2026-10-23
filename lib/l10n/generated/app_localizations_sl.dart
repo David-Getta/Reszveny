@@ -2901,6 +2901,14 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Prijavi se z e-pošto, da unovčiš kodo prijatelja.';
+
+  @override
+  String get referralErrFull =>
+      'Ta koda je dosegla največje število unovčitev.';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

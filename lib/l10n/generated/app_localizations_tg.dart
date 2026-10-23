@@ -2826,6 +2826,13 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Барои фаъол кардани коди дӯст бо почтаи электронии худ ворид шавед.';
+
+  @override
+  String get referralErrFull => 'Ин код ба ҳадди ниҳоии истифода расидааст.';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

@@ -2817,6 +2817,13 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Jiri email gị banye ka ị jiri koodu enyi gị.';
+
+  @override
+  String get referralErrFull => 'E jirila koodu a ruo ugboro kachasị ekwere.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

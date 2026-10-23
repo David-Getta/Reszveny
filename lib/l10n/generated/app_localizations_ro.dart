@@ -2867,6 +2867,14 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Conectează-te cu e-mailul tău ca să folosești codul unui prieten.';
+
+  @override
+  String get referralErrFull =>
+      'Acest cod a fost deja folosit de numărul maxim de ori.';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

@@ -2826,6 +2826,14 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Mlebu nganggo emailmu supaya bisa nukarake kodhe saka kanca.';
+
+  @override
+  String get referralErrFull =>
+      'Kodhe iki wis ditukarake nganti watesan maksimal.';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

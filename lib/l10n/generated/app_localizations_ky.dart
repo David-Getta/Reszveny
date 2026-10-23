@@ -2826,6 +2826,13 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Досуңуздун кодун колдонуу үчүн электрондук почтаңыз менен кириңиз.';
+
+  @override
+  String get referralErrFull => 'Бул код колдонуу чегине жетти.';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

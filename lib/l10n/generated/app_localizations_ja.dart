@@ -2739,6 +2739,12 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn => '友達のコードを使用するには、メールアドレスでサインインしてください。';
+
+  @override
+  String get referralErrFull => 'このコードは使用回数の上限に達しています。';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

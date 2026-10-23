@@ -2821,6 +2821,14 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'किसी दोस्त का कोड रिडीम करने के लिए अपने ई-मेल से साइन इन करें।';
+
+  @override
+  String get referralErrFull =>
+      'यह कोड पहले ही अधिकतम बार रिडीम किया जा चुका है।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

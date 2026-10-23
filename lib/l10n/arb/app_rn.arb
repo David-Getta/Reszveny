@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Ihindurwa rya ticker · {symbol}",
   "tickerChangeNew": "Ticker nshasha",
   "tickerChangeHint": "Iyo isosiyete ihinduye ticker yayo (akarorero: FB → META): ivyaguzwe n'ivyagurishijwe vyose, amadividende, amagabanywa y'imigabane, icandiko n'amamenyesha vyimurirwa kuri ticker nshasha.",
-  "tickerChanged": "Vyimuriwe kuri {symbol}"
+  "tickerChanged": "Vyimuriwe kuri {symbol}",
+  "referralErrSignIn": "Injira ukoresheje imeyili yawe kugira ukoreshe kode y'umugenzi.",
+  "referralErrFull": "Iyi kode yamaze gukoreshwa incuro zose zemewe."
 }

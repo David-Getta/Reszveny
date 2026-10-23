@@ -2899,6 +2899,14 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Prisijunkite el. paštu, kad galėtumėte panaudoti draugo kodą.';
+
+  @override
+  String get referralErrFull =>
+      'Šis kodas jau panaudotas didžiausią leistiną kartų skaičių.';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

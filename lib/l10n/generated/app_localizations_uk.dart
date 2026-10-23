@@ -2902,6 +2902,14 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Увійдіть з електронною поштою, щоб активувати код друга.';
+
+  @override
+  String get referralErrFull =>
+      'Цей код уже активовано максимальну кількість разів.';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

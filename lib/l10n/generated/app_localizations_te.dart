@@ -2830,6 +2830,14 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'స్నేహితుని కోడ్‌ను రీడీమ్ చేయడానికి మీ ఈమెయిల్‌తో సైన్ ఇన్ చేయండి.';
+
+  @override
+  String get referralErrFull =>
+      'ఈ కోడ్ ఇప్పటికే గరిష్ఠ సార్లు రీడీమ్ చేయబడింది.';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

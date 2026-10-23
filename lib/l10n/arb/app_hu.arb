@@ -742,6 +742,8 @@
   "tickerChangeNew": "Új ticker",
   "tickerChangeHint": "Ha egy cég tickert vált (pl. FB → META): minden tranzakció, osztalék, felaprózás, a jegyzet és a riasztások átkerülnek az újra.",
   "tickerChanged": "Áthelyezve: {symbol}",
+  "referralErrSignIn": "Egy barát kódjának beváltásához lépj be az e-mail-címeddel.",
+  "referralErrFull": "Ezt a kódot már annyiszor beváltották, ahányszor lehet.",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

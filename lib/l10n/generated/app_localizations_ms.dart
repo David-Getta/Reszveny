@@ -2826,6 +2826,13 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Log masuk dengan e-mel anda untuk menebus kod rakan.';
+
+  @override
+  String get referralErrFull => 'Kod ini telah ditebus sebanyak had maksimum.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

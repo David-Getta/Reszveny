@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Tickerbytte · {symbol}",
   "tickerChangeNew": "Ny ticker",
   "tickerChangeHint": "Når et selskap bytter ticker (f.eks. FB → META): alle transaksjoner, utbytte, aksjesplitter, notatet og varslene flyttes til den nye.",
-  "tickerChanged": "Flyttet til {symbol}"
+  "tickerChanged": "Flyttet til {symbol}",
+  "referralErrSignIn": "Logg inn med e-postadressen din for å løse inn en venns kode.",
+  "referralErrFull": "Denne koden er allerede løst inn maksimalt antall ganger."
 }

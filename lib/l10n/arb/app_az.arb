@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Tiker dəyişikliyi · {symbol}",
   "tickerChangeNew": "Yeni tiker",
   "tickerChangeHint": "Şirkət tikerini dəyişdikdə (məs. FB → META): bütün əməliyyatlar, dividendlər, səhm bölünmələri, qeyd və bildirişlər yeni tikerə keçir.",
-  "tickerChanged": "{symbol} tikerinə köçürüldü"
+  "tickerChanged": "{symbol} tikerinə köçürüldü",
+  "referralErrSignIn": "Dostunuzun kodunu aktivləşdirmək üçün e-poçtunuzla daxil olun.",
+  "referralErrFull": "Bu kod artıq maksimum sayda aktivləşdirilib."
 }

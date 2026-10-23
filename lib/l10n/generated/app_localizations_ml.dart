@@ -2836,6 +2836,14 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'സുഹൃത്തിന്റെ കോഡ് റിഡീം ചെയ്യാൻ നിങ്ങളുടെ ഇമെയിൽ ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക.';
+
+  @override
+  String get referralErrFull =>
+      'ഈ കോഡ് ഇതിനകം പരമാവധി തവണ റിഡീം ചെയ്തുകഴിഞ്ഞു.';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

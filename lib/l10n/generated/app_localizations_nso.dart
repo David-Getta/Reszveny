@@ -2843,6 +2843,14 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Tsena ka imeile ya gago gore o šomiše khoutu ya mogwera.';
+
+  @override
+  String get referralErrFull =>
+      'Khoutu ye e šetše e šomišitšwe ga ntši ka mo go dumeletšwego.';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

@@ -2837,6 +2837,14 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Ngena nge-imeyile yakho ukuze usebenzise ikhowudi yomhlobo.';
+
+  @override
+  String get referralErrFull =>
+      'Le khowudi sele isetyenziswe amaxesha onke avumelekileyo.';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

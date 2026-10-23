@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Phetogo ya ticker · {symbol}",
   "tickerChangeNew": "Ticker e ntšha",
   "tickerChangeHint": "Fa khampani e fetola ticker ya yone (jaaka FB → META): ditheko le dithekiso tsotlhe, dividente, dikgaoganyo tsa dishere, ntlha le dikitsiso di fudusediwa kwa ticker e ntšha.",
-  "tickerChanged": "E fudusetswe kwa {symbol}"
+  "tickerChanged": "E fudusetswe kwa {symbol}",
+  "referralErrSignIn": "Tsena ka imeile ya gago gore o dirise khoutu ya tsala.",
+  "referralErrFull": "Khoutu e e setse e dirisitswe makgetlo otlhe a a letleletsweng."
 }

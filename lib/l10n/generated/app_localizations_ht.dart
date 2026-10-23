@@ -2822,6 +2822,14 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Konekte ak imèl ou pou w ka itilize kòd yon zanmi.';
+
+  @override
+  String get referralErrFull =>
+      'Kòd sa a deja rive nan limit kantite fwa li ka itilize.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

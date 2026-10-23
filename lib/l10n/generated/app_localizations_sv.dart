@@ -2825,6 +2825,14 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Logga in med din e-postadress för att lösa in en väns kod.';
+
+  @override
+  String get referralErrFull =>
+      'Koden har redan lösts in det maximala antalet gånger.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

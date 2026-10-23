@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Pertukaran ticker · {symbol}",
   "tickerChangeNew": "Ticker baharu",
   "tickerChangeHint": "Apabila syarikat menukar tickernya (cth. FB → META): semua transaksi, dividen, pecahan saham, nota dan amaran dipindahkan ke ticker baharu.",
-  "tickerChanged": "Dipindahkan ke {symbol}"
+  "tickerChanged": "Dipindahkan ke {symbol}",
+  "referralErrSignIn": "Log masuk dengan e-mel anda untuk menebus kod rakan.",
+  "referralErrFull": "Kod ini telah ditebus sebanyak had maksimum."
 }

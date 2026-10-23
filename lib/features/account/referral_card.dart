@@ -189,6 +189,8 @@ class _RedeemDialogState extends State<_RedeemDialog> {
         () => _error = switch (e.code) {
           'own_code' => l10n.referralErrOwn,
           'already_redeemed' => l10n.referralErrAlready,
+          'sign_in_required' => l10n.referralErrSignIn,
+          'code_full' || 'tester_code_full' => l10n.referralErrFull,
           _ => l10n.referralErrUnknown,
         },
       );

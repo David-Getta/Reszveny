@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Kobongola ticker · {symbol}",
   "tickerChangeNew": "Ticker ya sika",
   "tickerChangeHint": "Soki kompanyi ebongoli ticker na yango (ndakisa FB → META): bosombi mpe boteki nyonso, ba dividende, bokabolami ya ba share, note mpe makebisi ekokende na ticker ya sika.",
-  "tickerChanged": "Etindami na {symbol}"
+  "tickerChanged": "Etindami na {symbol}",
+  "referralErrSignIn": "Kɔta na e-mail na yo mpo na kosalela code ya moninga.",
+  "referralErrFull": "Code oyo esalelami esili mbala nyonso oyo epesameli nzela."
 }

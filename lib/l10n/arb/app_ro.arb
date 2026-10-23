@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Schimbare de simbol · {symbol}",
   "tickerChangeNew": "Simbol nou",
   "tickerChangeHint": "Când o companie își schimbă simbolul (ex. FB → META): toate tranzacțiile, dividendele, divizările de acțiuni, notița și alertele se mută la noul simbol.",
-  "tickerChanged": "Mutat la {symbol}"
+  "tickerChanged": "Mutat la {symbol}",
+  "referralErrSignIn": "Conectează-te cu e-mailul tău ca să folosești codul unui prieten.",
+  "referralErrFull": "Acest cod a fost deja folosit de numărul maxim de ori."
 }

@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Taamasiyɛn yɛlɛmali · {symbol}",
   "tickerChangeNew": "Taamasiyɛn kura",
   "tickerChangeHint": "Ni sosiyete dɔ ye a ka taamasiyɛn yɛlɛma (i n'a fɔ FB → META): sanniw ni feereliw bɛɛ, dividandiw, share tilaliw, sɛbɛnni ani lasɔminiw bɛɛ bɛ taa taamasiyɛn kura kan.",
-  "tickerChanged": "A taara {symbol} kan"
+  "tickerChanged": "A taara {symbol} kan",
+  "referralErrSignIn": "Don ni i ka e-mail ye walasa ka i teri ka kode labaara.",
+  "referralErrFull": "Nin kode labaarala ka se a dan ma ka ban."
 }

@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Aandeelkodeverandering · {symbol}",
   "tickerChangeNew": "Nuwe aandeelkode",
   "tickerChangeHint": "Wanneer 'n maatskappy sy aandeelkode verander (bv. FB → META): alle transaksies, dividende, aandelesplitsings, die nota en die waarskuwings skuif na die nuwe een.",
-  "tickerChanged": "Geskuif na {symbol}"
+  "tickerChanged": "Geskuif na {symbol}",
+  "referralErrSignIn": "Meld met jou e-posadres aan om ’n vriend se kode in te los.",
+  "referralErrFull": "Hierdie kode is reeds die maksimum aantal kere ingelos."
 }

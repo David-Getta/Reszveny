@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Soppi màndarga · {symbol}",
   "tickerChangeNew": "Màndarga bu bees",
   "tickerChangeHint": "Bu sosete soppee màndargaam (misaal: FB → META): jënd ak jaay yépp, dividande yi, xaaj aksiyoŋ yi, notu bi ak artu yi dinañu toxu ci màndarga bu bees bi.",
-  "tickerChanged": "Toxu na ci {symbol}"
+  "tickerChanged": "Toxu na ci {symbol}",
+  "referralErrSignIn": "Dugg ak sa imeel ngir mën a jëfandikoo kood bu sa xarit.",
+  "referralErrFull": "Kood bii jëfandikoo nañu ko ba mu àgg ci yamu bi."
 }

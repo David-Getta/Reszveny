@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Mgbanwe ticker · {symbol}",
   "tickerChangeNew": "Ticker ọhụrụ",
   "tickerChangeHint": "Mgbe ụlọ ọrụ gbanwere ticker ya (dịka FB → META): azụmahịa niile, nkesa uru, nkewa shea, ndetu na ọkwa niile na-akwaga na ticker ọhụrụ ahụ.",
-  "tickerChanged": "Akwagara na {symbol}"
+  "tickerChanged": "Akwagara na {symbol}",
+  "referralErrSignIn": "Jiri email gị banye ka ị jiri koodu enyi gị.",
+  "referralErrFull": "E jirila koodu a ruo ugboro kachasị ekwere."
 }

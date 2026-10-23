@@ -2827,6 +2827,14 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Bi e-nameya xwe têkeve da ku koda hevalekî bi kar bînî.';
+
+  @override
+  String get referralErrFull =>
+      'Ev kod berê bi qasî herî zêde hatiye bikaranîn.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

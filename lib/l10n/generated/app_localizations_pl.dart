@@ -2902,6 +2902,14 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Zaloguj się adresem e-mail, aby wykorzystać kod od znajomego.';
+
+  @override
+  String get referralErrFull =>
+      'Ten kod został już wykorzystany maksymalną liczbę razy.';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

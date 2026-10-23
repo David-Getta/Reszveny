@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Parobahan kode saham · {symbol}",
   "tickerChangeNew": "Kode saham anyar",
   "tickerChangeHint": "Upami perusahaan ngarobih kode sahamna (conto: FB → META): sadaya transaksi, dividen, pamecahan saham, catetan sareng béwara dipindahkeun ka kode anu anyar.",
-  "tickerChanged": "Dipindahkeun ka {symbol}"
+  "tickerChanged": "Dipindahkeun ka {symbol}",
+  "referralErrSignIn": "Asup nganggo email anjeun pikeun nukeurkeun kode ti babaturan.",
+  "referralErrFull": "Kode ieu geus ditukeurkeun nepi ka wates maksimal."
 }

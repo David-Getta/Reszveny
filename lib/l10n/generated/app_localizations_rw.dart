@@ -2838,6 +2838,14 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Injira ukoresheje imeyili yawe kugira ngo ukoreshe kode y\'inshuti.';
+
+  @override
+  String get referralErrFull =>
+      'Iyi kode yamaze gukoreshwa inshuro zose zemewe.';
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

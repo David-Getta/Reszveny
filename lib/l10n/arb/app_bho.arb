@@ -841,5 +841,7 @@
   "tickerChangeTitle": "टिकर बदलाव · {symbol}",
   "tickerChangeNew": "नया टिकर",
   "tickerChangeHint": "जब कवनो कंपनी आपन टिकर बदलेले (जइसे FB → META): सगरी लेन-देन, डिविडेंड, स्टॉक स्प्लिट, नोट आ अलर्ट नया टिकर पर चल जाला।",
-  "tickerChanged": "{symbol} पर ले जाइल गइल"
+  "tickerChanged": "{symbol} पर ले जाइल गइल",
+  "referralErrSignIn": "कवनो दोस्त के कोड भुनावे खातिर अपना ई-मेल से साइन इन करीं।",
+  "referralErrFull": "ई कोड पहिलहीं अधिकतम बेर भुनावल जा चुकल बा।"
 }

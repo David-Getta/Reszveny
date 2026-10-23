@@ -2833,6 +2833,14 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Ku gal iimaylkaaga si aad u isticmaasho koodhka saaxiib.';
+
+  @override
+  String get referralErrFull =>
+      'Koodhkan waxaa horay loo isticmaalay inta ugu badan ee la oggol yahay.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

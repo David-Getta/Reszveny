@@ -2838,6 +2838,14 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Melde dich mit deiner E-Mail an, um einen Code von Freunden einzulösen.';
+
+  @override
+  String get referralErrFull =>
+      'Dieser Code wurde bereits so oft wie möglich eingelöst.';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

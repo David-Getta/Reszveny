@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Tickerwijziging · {symbol}",
   "tickerChangeNew": "Nieuwe ticker",
   "tickerChangeHint": "Als een bedrijf zijn ticker wijzigt (bijv. FB → META): alle transacties, dividenden, aandelensplitsingen, de notitie en de alerts gaan over naar de nieuwe.",
-  "tickerChanged": "Verplaatst naar {symbol}"
+  "tickerChanged": "Verplaatst naar {symbol}",
+  "referralErrSignIn": "Log in met je e-mailadres om een code van een vriend in te wisselen.",
+  "referralErrFull": "Deze code is al het maximale aantal keren ingewisseld."
 }

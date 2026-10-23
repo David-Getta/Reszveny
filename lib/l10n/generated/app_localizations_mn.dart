@@ -2824,6 +2824,13 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Найзынхаа кодыг ашиглахын тулд имэйлээрээ нэвтэрнэ үү.';
+
+  @override
+  String get referralErrFull => 'Энэ кодыг ашиглах хязгаар дууссан байна.';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

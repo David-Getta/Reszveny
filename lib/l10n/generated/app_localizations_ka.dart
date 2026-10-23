@@ -2824,6 +2824,13 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'შედით ელფოსტით, რომ მეგობრის კოდი გააქტიუროთ.';
+
+  @override
+  String get referralErrFull => 'ამ კოდის გამოყენების ლიმიტი ამოიწურა.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

@@ -2749,6 +2749,12 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn => '친구 코드를 사용하려면 이메일로 로그인하세요.';
+
+  @override
+  String get referralErrFull => '이 코드는 사용 가능 횟수를 모두 소진했습니다.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

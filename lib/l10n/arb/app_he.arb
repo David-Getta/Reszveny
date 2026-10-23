@@ -841,5 +841,7 @@
   "tickerChangeTitle": "שינוי סימול · {symbol}",
   "tickerChangeNew": "סימול חדש",
   "tickerChangeHint": "כשחברה משנה את הסימול שלה (למשל FB → META): כל העסקאות, הדיבידנדים, פיצולי המניות, ההערה וההתראות עוברים לסימול החדש.",
-  "tickerChanged": "הועבר ל-{symbol}"
+  "tickerChanged": "הועבר ל-{symbol}",
+  "referralErrSignIn": "היכנסו עם האימייל שלכם כדי לממש קוד של חבר.",
+  "referralErrFull": "הקוד הזה כבר מומש את מספר הפעמים המרבי."
 }

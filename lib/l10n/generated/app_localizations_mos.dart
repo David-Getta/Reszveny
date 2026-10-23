@@ -2809,6 +2809,12 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn => 'Kẽ ne f e-mail n tõe n tʋm ne f zoa kõodã.';
+
+  @override
+  String get referralErrFull => 'B tʋma ne kõod kãngã sor fãa b sẽn sak pĩnda.';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

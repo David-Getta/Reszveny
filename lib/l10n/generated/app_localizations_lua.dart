@@ -2836,6 +2836,14 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Buela ne e-mail webe bua kuenza nadi code wa mulunda.';
+
+  @override
+  String get referralErrFull =>
+      'Bakadi bamane kuenza nadi code eu misangu yonso idi yanyishibue.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

@@ -2826,6 +2826,14 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Ingia kwa barua pepe yako ili utumie msimbo wa rafiki.';
+
+  @override
+  String get referralErrFull =>
+      'Msimbo huu tayari umetumika mara nyingi kadiri inavyoruhusiwa.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

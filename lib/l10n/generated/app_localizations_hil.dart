@@ -2842,6 +2842,14 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Mag-sign in gamit ang imo e-mail para magamit ang code sang imo abyan.';
+
+  @override
+  String get referralErrFull =>
+      'Nagamit na ini nga code sa pinakamadamo nga beses nga ginatugot.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

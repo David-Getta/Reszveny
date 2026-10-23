@@ -841,5 +841,7 @@
   "tickerChangeTitle": "टिकर परिवर्तन · {symbol}",
   "tickerChangeNew": "नयाँ टिकर",
   "tickerChangeHint": "कुनै कम्पनीले आफ्नो टिकर बदल्दा (जस्तै FB → META): सबै कारोबार, लाभांश, स्टक स्प्लिट, टिपोट र अलर्ट नयाँ टिकरमा सारिन्छन्।",
-  "tickerChanged": "{symbol} मा सारियो"
+  "tickerChanged": "{symbol} मा सारियो",
+  "referralErrSignIn": "साथीको कोड रिडिम गर्न आफ्नो इमेलबाट साइन इन गर्नुहोस्।",
+  "referralErrFull": "यो कोड पहिल्यै अधिकतम पटक रिडिम भइसकेको छ।"
 }

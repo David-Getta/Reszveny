@@ -2821,6 +2821,13 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Don ni i ka e-mail ye walasa ka i teri ka kode labaara.';
+
+  @override
+  String get referralErrFull => 'Nin kode labaarala ka se a dan ma ka ban.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

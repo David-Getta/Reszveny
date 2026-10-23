@@ -2839,6 +2839,14 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Correoykiwan yaykuy, huk masiykiq kódigonta llamk\'achinaykipaq.';
+
+  @override
+  String get referralErrFull =>
+      'Kay kódigoqa ñam llamk\'achisqaña tukuy atikusqan kutikama.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

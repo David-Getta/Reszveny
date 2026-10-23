@@ -2835,6 +2835,14 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Kota na e-mail na nge sambu na kusadila code ya nduku.';
+
+  @override
+  String get referralErrFull =>
+      'Bo me sadila dezia code yai mbala yonso ya bo me pesa nzila.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

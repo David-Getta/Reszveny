@@ -2488,6 +2488,14 @@
       }
     }
   },
+  "referralErrSignIn": "Sign in with your email to redeem a friend's code.",
+  "@referralErrSignIn": {
+    "description": "Error when redeeming a friend's referral code without being signed in with an email address."
+  },
+  "referralErrFull": "This code has already been used as many times as it can be.",
+  "@referralErrFull": {
+    "description": "Error when a referral (or tester) code has reached its maximum number of redemptions."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

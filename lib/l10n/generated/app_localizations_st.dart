@@ -2842,6 +2842,14 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Kena ka imeile ya hao hore o sebedise khoutu ya motswalle.';
+
+  @override
+  String get referralErrFull =>
+      'Khoutu ena e se e sebedisitswe ka makgetlo ohle a dumeletsweng.';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

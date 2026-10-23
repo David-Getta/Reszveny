@@ -2845,6 +2845,14 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Midira amin\'ny mailakao mba hampiasana kaodin\'ny namana.';
+
+  @override
+  String get referralErrFull =>
+      'Efa tratra ny fetran\'ny fampiasana ity kaody ity.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

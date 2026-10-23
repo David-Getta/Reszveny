@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Perubahan kode saham · {symbol}",
   "tickerChangeNew": "Kode saham baru",
   "tickerChangeHint": "Saat perusahaan mengganti kode sahamnya (mis. FB → META): semua transaksi, dividen, pemecahan saham, catatan, dan peringatan dipindahkan ke kode yang baru.",
-  "tickerChanged": "Dipindahkan ke {symbol}"
+  "tickerChanged": "Dipindahkan ke {symbol}",
+  "referralErrSignIn": "Masuk dengan email Anda untuk menukarkan kode teman.",
+  "referralErrFull": "Kode ini sudah ditukarkan sebanyak batas maksimum."
 }

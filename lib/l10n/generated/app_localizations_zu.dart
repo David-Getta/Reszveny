@@ -2838,6 +2838,14 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Ngena ngemvume nge-imeyili yakho ukuze usebenzise ikhodi yomngane.';
+
+  @override
+  String get referralErrFull =>
+      'Le khodi isivele isetshenziswe izikhathi zonke ezivumelekile.';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

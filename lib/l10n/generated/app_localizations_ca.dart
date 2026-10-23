@@ -2834,6 +2834,14 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Inicia la sessió amb el teu correu per bescanviar el codi d’un amic.';
+
+  @override
+  String get referralErrFull =>
+      'Aquest codi ja s’ha bescanviat el màxim de vegades possible.';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

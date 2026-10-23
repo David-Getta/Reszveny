@@ -2835,6 +2835,14 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'நண்பரின் குறியீட்டைப் பயன்படுத்த உங்கள் மின்னஞ்சல் மூலம் உள்நுழையவும்.';
+
+  @override
+  String get referralErrFull =>
+      'இந்தக் குறியீடு ஏற்கனவே அதிகபட்ச முறை பயன்படுத்தப்பட்டுவிட்டது.';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

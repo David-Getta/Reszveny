@@ -2827,6 +2827,13 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'دوستىڭىزنىڭ كودىنى ئىشلىتىش ئۈچۈن ئېلخېتىڭىز بىلەن كىرىڭ.';
+
+  @override
+  String get referralErrFull => 'بۇ كودنىڭ ئىشلىتىش چېكى توشتى.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

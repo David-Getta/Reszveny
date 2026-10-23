@@ -2786,6 +2786,12 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn => 'ናይ ዓርኪ ኮድ ንምጥቃም ብኢመይልካ እቶ።';
+
+  @override
+  String get referralErrFull => 'እዚ ኮድ ድሮ ክሳብ ዝተፈቕደሉ ብዝሒ ተጠቒሙ እዩ።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

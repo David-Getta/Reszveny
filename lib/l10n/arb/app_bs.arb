@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Promjena tikera · {symbol}",
   "tickerChangeNew": "Novi tiker",
   "tickerChangeHint": "Kada kompanija promijeni tiker (npr. FB → META): sve transakcije, dividende, podjele dionica, bilješka i obavještenja prelaze na novi.",
-  "tickerChanged": "Premješteno na {symbol}"
+  "tickerChanged": "Premješteno na {symbol}",
+  "referralErrSignIn": "Prijavite se e-mailom da iskoristite kod prijatelja.",
+  "referralErrFull": "Ovaj kod je već iskorišten najveći dozvoljeni broj puta."
 }

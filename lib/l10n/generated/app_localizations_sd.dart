@@ -2814,6 +2814,14 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'ڪنهن دوست جو ڪوڊ استعمال ڪرڻ لاءِ پنهنجي اي ميل سان سائن ان ڪريو.';
+
+  @override
+  String get referralErrFull =>
+      'هي ڪوڊ اڳ ۾ ئي وڌ کان وڌ ڀيرا استعمال ٿي چڪو آهي.';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

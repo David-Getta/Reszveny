@@ -2820,6 +2820,13 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'ବନ୍ଧୁଙ୍କ କୋଡ ରିଡିମ କରିବା ପାଇଁ ଆପଣଙ୍କ ଇମେଲ ସହ ସାଇନ ଇନ କରନ୍ତୁ।';
+
+  @override
+  String get referralErrFull => 'ଏହି କୋଡ ପୂର୍ବରୁ ସର୍ବାଧିକ ଥର ରିଡିମ ହୋଇସାରିଛି।';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

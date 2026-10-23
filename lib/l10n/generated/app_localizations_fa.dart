@@ -2820,6 +2820,14 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'برای اعمال کد یک دوست، با ایمیل خود وارد شوید.';
+
+  @override
+  String get referralErrFull =>
+      'این کد قبلاً به حداکثر تعداد دفعات مجاز اعمال شده است.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

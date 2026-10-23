@@ -2816,6 +2816,13 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'د ملګري د کوډ کارولو لپاره په خپل برېښنالیک ننوځئ.';
+
+  @override
+  String get referralErrFull => 'دا کوډ دمخه په اعظمي شمېر کارول شوی دی.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

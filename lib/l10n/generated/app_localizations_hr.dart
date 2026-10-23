@@ -2873,6 +2873,14 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Prijavite se e-poštom da biste iskoristili kôd prijatelja.';
+
+  @override
+  String get referralErrFull =>
+      'Ovaj je kôd već iskorišten najveći dopušteni broj puta.';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

@@ -2896,6 +2896,13 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'سجّل الدخول ببريدك الإلكتروني لتفعيل رمز صديق.';
+
+  @override
+  String get referralErrFull => 'بلغ هذا الرمز الحد الأقصى لعدد مرات التفعيل.';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

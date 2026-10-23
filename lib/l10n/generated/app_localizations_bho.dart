@@ -2818,6 +2818,13 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'कवनो दोस्त के कोड भुनावे खातिर अपना ई-मेल से साइन इन करीं।';
+
+  @override
+  String get referralErrFull => 'ई कोड पहिलहीं अधिकतम बेर भुनावल जा चुकल बा।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

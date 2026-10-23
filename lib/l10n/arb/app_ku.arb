@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Guhertina sembolê · {symbol}",
   "tickerChangeNew": "Sembola nû",
   "tickerChangeHint": "Dema ku şirketek sembola xwe diguherîne (mînak FB → META): hemû danûstandin, dividend, dabeşkirinên paran, not û hişyarî derbasî sembola nû dibin.",
-  "tickerChanged": "Hat guhastin bo {symbol}"
+  "tickerChanged": "Hat guhastin bo {symbol}",
+  "referralErrSignIn": "Bi e-nameya xwe têkeve da ku koda hevalekî bi kar bînî.",
+  "referralErrFull": "Ev kod berê bi qasî herî zêde hatiye bikaranîn."
 }

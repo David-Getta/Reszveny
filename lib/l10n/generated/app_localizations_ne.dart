@@ -2822,6 +2822,13 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'साथीको कोड रिडिम गर्न आफ्नो इमेलबाट साइन इन गर्नुहोस्।';
+
+  @override
+  String get referralErrFull => 'यो कोड पहिल्यै अधिकतम पटक रिडिम भइसकेको छ।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

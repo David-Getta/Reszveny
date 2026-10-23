@@ -2825,6 +2825,14 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Kirjaudu sisään sähköpostillasi lunastaaksesi ystävän koodin.';
+
+  @override
+  String get referralErrFull =>
+      'Tämä koodi on jo lunastettu niin monta kertaa kuin mahdollista.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

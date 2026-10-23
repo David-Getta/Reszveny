@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Jijjiirama mallattoo · {symbol}",
   "tickerChangeNew": "Mallattoo haaraa",
   "tickerChangeHint": "Yeroo dhaabbanni tokko mallattoo isaa jijjiiru (fkn. FB → META): bittaa fi gurgurtaan hundi, diviidendiin, qoqqoodinsi aksiyoonaa, yaadannoon fi akeekkachiisni gara mallattoo haaraatti ni ce'u.",
-  "tickerChanged": "Gara {symbol}-tti dabarfameera"
+  "tickerChanged": "Gara {symbol}-tti dabarfameera",
+  "referralErrSignIn": "Koodii hiriyaa fayyadamuuf imeelii keetiin seeni.",
+  "referralErrFull": "Koodiin kun daangaa itti fayyadamaa isaa ga'eera."
 }

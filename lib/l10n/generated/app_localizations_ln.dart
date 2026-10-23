@@ -2839,6 +2839,14 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Kɔta na e-mail na yo mpo na kosalela code ya moninga.';
+
+  @override
+  String get referralErrFull =>
+      'Code oyo esalelami esili mbala nyonso oyo epesameli nzela.';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

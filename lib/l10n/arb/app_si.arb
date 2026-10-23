@@ -841,5 +841,7 @@
   "tickerChangeTitle": "ටිකර් වෙනස් කිරීම · {symbol}",
   "tickerChangeNew": "නව ටිකර්",
   "tickerChangeHint": "සමාගමක් සිය ටිකර් වෙනස් කළ විට (උදා. FB → META): සියලු ගනුදෙනු, ලාභාංශ, කොටස් බෙදීම්, සටහන සහ ඇඟවීම් නව ටිකර් වෙත ගෙන යයි.",
-  "tickerChanged": "{symbol} වෙත ගෙන ගියා"
+  "tickerChanged": "{symbol} වෙත ගෙන ගියා",
+  "referralErrSignIn": "මිතුරෙකුගේ කේතයක් භාවිත කිරීමට ඔබේ ඊමේල් සමඟ පුරන්න.",
+  "referralErrFull": "මෙම කේතය දැනටමත් උපරිම වාර ගණනක් භාවිත කර ඇත."
 }

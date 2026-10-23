@@ -2819,6 +2819,12 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn => 'היכנסו עם האימייל שלכם כדי לממש קוד של חבר.';
+
+  @override
+  String get referralErrFull => 'הקוד הזה כבר מומש את מספר הפעמים המרבי.';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

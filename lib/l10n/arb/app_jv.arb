@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Ganti kode saham · {symbol}",
   "tickerChangeNew": "Kode saham anyar",
   "tickerChangeHint": "Yèn perusahaan ngganti kode sahamé (upamane FB → META): kabèh transaksi, dividen, pamecahan saham, cathetan lan pèngetan dipindhah menyang kode sing anyar.",
-  "tickerChanged": "Dipindhah menyang {symbol}"
+  "tickerChanged": "Dipindhah menyang {symbol}",
+  "referralErrSignIn": "Mlebu nganggo emailmu supaya bisa nukarake kodhe saka kanca.",
+  "referralErrFull": "Kodhe iki wis ditukarake nganti watesan maksimal."
 }

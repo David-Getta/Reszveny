@@ -2848,6 +2848,14 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Inicia sesión co teu correo para canxear o código dun amigo.';
+
+  @override
+  String get referralErrFull =>
+      'Este código xa se canxeou o máximo de veces posible.';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

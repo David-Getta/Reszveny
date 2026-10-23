@@ -2816,6 +2816,14 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'သူငယ်ချင်း၏ ကုဒ်ကို အသုံးပြုရန် သင့်အီးမေးလ်ဖြင့် လက်မှတ်ထိုးဝင်ပါ။';
+
+  @override
+  String get referralErrFull =>
+      'ဤကုဒ်ကို အများဆုံးအသုံးပြုနိုင်သည့် အကြိမ်အရေအတွက်အထိ အသုံးပြုပြီးဖြစ်သည်။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

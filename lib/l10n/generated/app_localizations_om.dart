@@ -2837,6 +2837,14 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Koodii hiriyaa fayyadamuuf imeelii keetiin seeni.';
+
+  @override
+  String get referralErrFull =>
+      'Koodiin kun daangaa itti fayyadamaa isaa ga\'eera.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

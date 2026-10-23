@@ -2899,6 +2899,14 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Ak chceš uplatniť kód od priateľa, prihlás sa e-mailom.';
+
+  @override
+  String get referralErrFull =>
+      'Tento kód už dosiahol maximálny počet uplatnení.';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

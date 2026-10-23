@@ -2870,6 +2870,14 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Pierakstieties ar savu e-pastu, lai izmantotu drauga kodu.';
+
+  @override
+  String get referralErrFull =>
+      'Šis kods jau izmantots maksimālo reižu skaitu.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

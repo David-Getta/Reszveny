@@ -2831,6 +2831,14 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Shiga da imel ɗinka don yin amfani da lambar abokinka.';
+
+  @override
+  String get referralErrFull =>
+      'An riga an yi amfani da wannan lambar iyakar adadin da aka yarda.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

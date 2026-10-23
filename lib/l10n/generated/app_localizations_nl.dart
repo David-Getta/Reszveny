@@ -2830,6 +2830,14 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Log in met je e-mailadres om een code van een vriend in te wisselen.';
+
+  @override
+  String get referralErrFull =>
+      'Deze code is al het maximale aantal keren ingewisseld.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

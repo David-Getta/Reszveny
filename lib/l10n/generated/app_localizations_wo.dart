@@ -2816,6 +2816,14 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Dugg ak sa imeel ngir mën a jëfandikoo kood bu sa xarit.';
+
+  @override
+  String get referralErrFull =>
+      'Kood bii jëfandikoo nañu ko ba mu àgg ci yamu bi.';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

@@ -2823,6 +2823,13 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Досыңыздың кодын қолдану үшін электрондық поштаңызбен кіріңіз.';
+
+  @override
+  String get referralErrFull => 'Бұл код қолдану шегіне жетті.';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

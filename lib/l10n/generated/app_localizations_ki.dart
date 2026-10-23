@@ -2826,6 +2826,14 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Toonya na e-mail yaku nĩguo ũhũthĩre kodi ya mũrata.';
+
+  @override
+  String get referralErrFull =>
+      'Kodi ĩno nĩ yahũthĩrwo maita mothe marĩa yetĩkĩrĩtio.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

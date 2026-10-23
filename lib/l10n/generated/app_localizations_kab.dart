@@ -2823,6 +2823,14 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Kcem s imayl-ik akken ad tesqedceḍ tangalt n umdakel.';
+
+  @override
+  String get referralErrFull =>
+      'Tangalt-a tewweḍ yakan ɣer tlisa n useqdec-is.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

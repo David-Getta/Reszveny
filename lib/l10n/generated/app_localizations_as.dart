@@ -2822,6 +2822,14 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'বন্ধুৰ ক\'ড ব্যৱহাৰ কৰিবলৈ আপোনাৰ ই-মেইলেৰে ছাইন ইন কৰক।';
+
+  @override
+  String get referralErrFull =>
+      'এই ক\'ডটো ইতিমধ্যে সৰ্বাধিক সংখ্যকবাৰ ব্যৱহাৰ কৰা হৈছে।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

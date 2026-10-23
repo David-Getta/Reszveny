@@ -2825,6 +2825,13 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Dostunuzun kodunu aktivləşdirmək üçün e-poçtunuzla daxil olun.';
+
+  @override
+  String get referralErrFull => 'Bu kod artıq maksimum sayda aktivləşdirilib.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

@@ -2844,6 +2844,14 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Tsena ka imeile ya gago gore o dirise khoutu ya tsala.';
+
+  @override
+  String get referralErrFull =>
+      'Khoutu e e setse e dirisitswe makgetlo otlhe a a letleletsweng.';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

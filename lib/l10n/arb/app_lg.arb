@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Okukyusa ticker · {symbol}",
   "tickerChangeNew": "Ticker empya",
   "tickerChangeHint": "Kkampuni bw'ekyusa ticker yaayo (okugeza FB → META): byonna bye wagula ne bye watunda, dividendi, okugabanya emigabo, ekiwandiiko n'okulabula bitwalibwa ku ticker empya.",
-  "tickerChanged": "Bitwaliddwa ku {symbol}"
+  "tickerChanged": "Bitwaliddwa ku {symbol}",
+  "referralErrSignIn": "Yingira n'email yo osobole okukozesa koodi ya mukwano gwo.",
+  "referralErrFull": "Koodi eno ekozeseddwa dda emirundi gyonna egikkirizibwa."
 }

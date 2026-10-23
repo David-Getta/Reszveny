@@ -2829,6 +2829,14 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Egy barát kódjának beváltásához lépj be az e-mail-címeddel.';
+
+  @override
+  String get referralErrFull =>
+      'Ezt a kódot már annyiszor beváltották, ahányszor lehet.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

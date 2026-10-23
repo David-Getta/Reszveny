@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Canvi de ticker · {symbol}",
   "tickerChangeNew": "Nou ticker",
   "tickerChangeHint": "Quan una empresa canvia de ticker (p. ex. FB → META): totes les transaccions, els dividends, els desdoblaments d’accions, la nota i les alertes passen al nou.",
-  "tickerChanged": "S’ha traslladat a {symbol}"
+  "tickerChanged": "S’ha traslladat a {symbol}",
+  "referralErrSignIn": "Inicia la sessió amb el teu correu per bescanviar el codi d’un amic.",
+  "referralErrFull": "Aquest codi ja s’ha bescanviat el màxim de vegades possible."
 }

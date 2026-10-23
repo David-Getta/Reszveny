@@ -2830,6 +2830,14 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Inicie sessão com o seu e-mail para resgatar o código de um amigo.';
+
+  @override
+  String get referralErrFull =>
+      'Este código já foi resgatado o número máximo de vezes.';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

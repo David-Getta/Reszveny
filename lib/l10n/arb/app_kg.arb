@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Kusoba ticker · {symbol}",
   "tickerChangeNew": "Ticker ya mpa",
   "tickerChangeHint": "Kana kompani me soba ticker na yo (mbandu FB → META): kusumba ti kuteka yonso, ba dividende, kukabula ba share, note ti nkebisu yonso ke kwenda na ticker ya mpa.",
-  "tickerChanged": "Me nata na {symbol}"
+  "tickerChanged": "Me nata na {symbol}",
+  "referralErrSignIn": "Kota na e-mail na nge sambu na kusadila code ya nduku.",
+  "referralErrFull": "Bo me sadila dezia code yai mbala yonso ya bo me pesa nzila."
 }

@@ -2836,6 +2836,14 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Mag-sign in gamit ang imong e-mail aron ma-redeem ang code sa usa ka higala.';
+
+  @override
+  String get referralErrFull =>
+      'Naabot na niini nga code ang kinatas-ang gidaghanon sa pag-redeem.';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

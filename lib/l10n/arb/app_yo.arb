@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Ìyípadà àmì ìpín · {symbol}",
   "tickerChangeNew": "Àmì ìpín tuntun",
   "tickerChangeHint": "Nígbà tí ilé-iṣẹ́ kan bá yí àmì ìpín rẹ̀ padà (àpẹẹrẹ: FB → META): gbogbo ìdúnàdúrà, ìpín èrè, pípín ìpín, àkọsílẹ̀ àti ìkìlọ̀ ni a ó gbé lọ sí àmì ìpín tuntun náà.",
-  "tickerChanged": "A ti gbé e lọ sí {symbol}"
+  "tickerChanged": "A ti gbé e lọ sí {symbol}",
+  "referralErrSignIn": "Wọlé pẹ̀lú ímeèlì rẹ láti lo kóòdù ọ̀rẹ́ kan.",
+  "referralErrFull": "Wọ́n ti lo kóòdù yìí dé iye ìgbà tó pọ̀ jù lọ tí a gbà láàyè."
 }

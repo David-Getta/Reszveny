@@ -2822,6 +2822,14 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'বন্ধুর কোড রিডিম করতে আপনার ই-মেইল দিয়ে সাইন ইন করুন।';
+
+  @override
+  String get referralErrFull =>
+      'এই কোডটি ইতিমধ্যে সর্বোচ্চ সংখ্যকবার রিডিম করা হয়েছে।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

@@ -841,5 +841,7 @@
   "tickerChangeTitle": "更改股票代號 · {symbol}",
   "tickerChangeNew": "新股票代號",
   "tickerChangeHint": "公司更改股票代號時（例如 FB → META），所有交易、股息、股票分拆、筆記及提示都會轉移至新代號。",
-  "tickerChanged": "已轉移至 {symbol}"
+  "tickerChanged": "已轉移至 {symbol}",
+  "referralErrSignIn": "請以電郵登入，才可兌換朋友的邀請碼。",
+  "referralErrFull": "此邀請碼已達兌換次數上限。"
 }

@@ -2796,6 +2796,13 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'ເຂົ້າສູ່ລະບົບດ້ວຍອີເມວຂອງທ່ານ ເພື່ອໃຊ້ລະຫັດຂອງໝູ່';
+
+  @override
+  String get referralErrFull => 'ລະຫັດນີ້ຖືກໃຊ້ຄົບຈຳນວນສູງສຸດແລ້ວ';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

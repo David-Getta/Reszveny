@@ -841,5 +841,7 @@
   "tickerChangeTitle": "Bãnde toeengo · {symbol}",
   "tickerChangeNew": "Bãnde paalga",
   "tickerChangeHint": "Sasa ning sosayete toeemd a bãnde (wala FB → META): raaba la koosgo fãa, dividand, paart pʋɩɩbo, gʋlsgã la gũusgã fãa kẽnda bãnde paalgã zugu.",
-  "tickerChanged": "B tʋgame {symbol} zugu"
+  "tickerChanged": "B tʋgame {symbol} zugu",
+  "referralErrSignIn": "Kẽ ne f e-mail n tõe n tʋm ne f zoa kõodã.",
+  "referralErrFull": "B tʋma ne kõod kãngã sor fãa b sẽn sak pĩnda."
 }

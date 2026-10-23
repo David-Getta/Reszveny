@@ -2836,6 +2836,14 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Connectez-vous avec votre e-mail pour utiliser le code d’un ami.';
+
+  @override
+  String get referralErrFull =>
+      'Ce code a déjà été utilisé le nombre maximal de fois.';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

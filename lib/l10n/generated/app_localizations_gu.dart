@@ -2818,6 +2818,14 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'મિત્રનો કોડ રિડીમ કરવા તમારા ઈ-મેઇલથી સાઇન ઇન કરો.';
+
+  @override
+  String get referralErrFull =>
+      'આ કોડ પહેલેથી જ મહત્તમ વખત રિડીમ થઈ ચૂક્યો છે.';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

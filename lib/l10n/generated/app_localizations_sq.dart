@@ -2830,6 +2830,14 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Hyr me email-in tënd për të aktivizuar kodin e një miku.';
+
+  @override
+  String get referralErrFull =>
+      'Ky kod është aktivizuar tashmë numrin maksimal të herëve.';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

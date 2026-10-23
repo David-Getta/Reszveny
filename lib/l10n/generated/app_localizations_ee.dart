@@ -2831,6 +2831,13 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Ge ɖe eme kple wò e-mail be nàte ŋu azã xɔ̃wò ƒe code.';
+
+  @override
+  String get referralErrFull => 'Wozã code sia zi gbogbo si wòɖe mɔ ɖo xoxo.';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

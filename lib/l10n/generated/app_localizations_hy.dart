@@ -2833,6 +2833,14 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Մուտք գործեք ձեր էլ. փոստով՝ ընկերոջ կոդն ակտիվացնելու համար։';
+
+  @override
+  String get referralErrFull =>
+      'Այս կոդն արդեն ակտիվացվել է առավելագույն թվով անգամ։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

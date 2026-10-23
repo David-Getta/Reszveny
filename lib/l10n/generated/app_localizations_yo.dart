@@ -2820,6 +2820,14 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String get referralErrSignIn =>
+      'Wọlé pẹ̀lú ímeèlì rẹ láti lo kóòdù ọ̀rẹ́ kan.';
+
+  @override
+  String get referralErrFull =>
+      'Wọ́n ti lo kóòdù yìí dé iye ìgbà tó pọ̀ jù lọ tí a gbà láàyè.';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override
