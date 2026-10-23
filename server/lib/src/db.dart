@@ -321,6 +321,22 @@ class Store {
     }
   }
 
+  /// Fiók-összevonás: a [from] vásárlásai és Stripe-azonosítói (ha az [into]-nak
+  /// még nincs) az [into]-hoz kerülnek, a [from] munkamenetei megszűnnek – így
+  /// egy vásárlás nem tehet fizetőssé több fiókot, és a bolti értesítések
+  /// (megújítás, visszatérítés) az új gazdához érkeznek.
+  void movePurchases({required String from, required String into}) {
+    _db.execute('UPDATE purchases SET user_id = ? WHERE user_id = ?', [into, from]);
+    final a = stripeOf(from), b = stripeOf(into);
+    if (b.customerId == null && a.customerId != null) {
+      setStripe(into, customerId: a.customerId, subscriptionId: a.subscriptionId);
+      _db.execute('UPDATE users SET stripe_customer_id = NULL, stripe_subscription_id = NULL WHERE id = ?', [from]);
+    }
+    _db.execute('DELETE FROM sessions WHERE user_id = ?', [from]);
+    // Az elsődleges token is (a hash helyére egy semmivel nem egyező érték).
+    _db.execute('UPDATE users SET token_hash = ? WHERE id = ?', ['revoked:$from', from]);
+  }
+
   String? userIdForStripeCustomer(String customerId) {
     final r = _db.select('SELECT id FROM users WHERE stripe_customer_id = ?', [customerId]);
     return r.isEmpty ? null : r.first['id'] as String;
@@ -360,6 +376,13 @@ class Store {
     save(e);
     return e;
   }
+
+  /// A felhasználás és az extra elemzések módosítása különbséggel (a sor többi
+  /// mezőjét nem írja felül; a felhasználás nem megy nulla alá).
+  void addUsage(String userId, {int used = 0, int extra = 0}) => _db.execute(
+    'UPDATE entitlements SET used = MAX(0, used + ?), extra = extra + ? WHERE user_id = ?',
+    [used, extra, userId],
+  );
 
   void save(Entitlement e) {
     _db.execute(

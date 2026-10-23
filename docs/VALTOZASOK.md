@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.248)
+# Változásjegyzék (0.2.130 → 0.2.249)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -246,6 +246,16 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Szerver: számlázás és keretek (biztonsági átnézés)
+
+- **0.2.249**: az elemzés kerete a továbbítás előtt, atomian foglalódik (párhuzamos kérések nem költhetik el kétszer
+  ugyanazt, a közben jóváírt vásárlás nem vész el), sikertelen vagy félbemaradt válasznál visszajár; a `stream` kérés
+  nem tesz ingyenessé egy elemzést; értelmezhetetlen kérés 400, 8 MB-os méretkorlát; csak az app által használt
+  béta-funkció megy tovább; a kérdés és a segédhívás csomagot, élő próbaidőt vagy extra elemzést kér; a próbaidő
+  IP-korlátja nem kerülhető meg hamis továbbítási fejléccel; a tesztelői kód újra beváltva nem indul újra; a bolti
+  értesítések átjutnak a meghívó-kapun; bejelentkezéskor a névtelen fiók fizetős csomagja és vásárlásai átköltöznek
+  (nem másolódnak), a régi token érvénytelen.
 
 ## Bolti „Újdonságok” (rövid)
 

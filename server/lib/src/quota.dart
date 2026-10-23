@@ -18,6 +18,10 @@ class Quota {
   /// A következő elemzés a próbaidő keretéből megy-e (nem a megvett extrából).
   bool drawsFromTrial(Entitlement e) => e.tier == 'trial' && !_trialExpired(e) && e.used < PlanSpec.trialAnalyses;
 
+  /// Van-e hozzáférés a mellékfunkciókhoz (kérdés, segédhívás): csomag, élő
+  /// próbaidő vagy megvett extra elemzés.
+  bool hasAccess(Entitlement e) => e.extra > 0 || (e.tier != null && !_trialExpired(e));
+
   /// Most felhasználható elemzések: időszaki maradék + extra.
   int available(Entitlement e) {
     final q = _periodQuota(e);
@@ -34,15 +38,23 @@ class Quota {
     return QuotaResult.exhausted;
   }
 
-  /// [cost] elemzés levonása (előbb a keret, a maradék az extrából). Hamis, ha nincs elég.
-  bool consume(Entitlement e, {int cost = 1}) {
-    if (check(e, cost: cost) != QuotaResult.ok) return false;
+  /// [cost] elemzés lefoglalása a továbbítás előtt (előbb a keret, a maradék az
+  /// extrából): a friss sorból, a beolvasás és az írás között várakozás nélkül,
+  /// és csak a két számlálót módosítva – így párhuzamos kérések sem költhetik el
+  /// kétszer ugyanazt, és egy közben jóváírt vásárlás sem vész el. `null`, ha
+  /// nincs elég.
+  ({int period, int extra})? reserve(String userId, {int cost = 1}) {
+    final e = store.entitlement(userId);
+    if (check(e, cost: cost) != QuotaResult.ok) return null;
     final fromPeriod = (_periodQuota(e) - e.used).clamp(0, cost);
-    e.used += fromPeriod;
-    e.extra -= cost - fromPeriod;
-    store.save(e);
-    return true;
+    final held = (period: fromPeriod, extra: cost - fromPeriod);
+    store.addUsage(userId, used: held.period, extra: -held.extra);
+    return held;
   }
+
+  /// Egy foglalás visszaadása (sikertelen vagy félbemaradt elemzésnél).
+  void refund(String userId, ({int period, int extra}) held) =>
+      store.addUsage(userId, used: -held.period, extra: held.extra);
 
   /// Visszatérítés / visszavonás: előfizetésnél az időszak azonnal véget ér,
   /// csomagnál a hozzá tartozó extra elemzések (amennyi még megvan) elvesznek.

@@ -80,7 +80,7 @@ void main() {
 
   test('page fetching is kept but capped by depth and page size; unknown fields are dropped', () {
     for (final (depth, uses) in [(Depth.brief, 1), (Depth.standard, 2), (Depth.deep, 4)]) {
-      final body = jsonDecode(Api.limitRequest(jsonEncode(greedy), depth: depth, tier: 'pro')) as Map;
+      final body = jsonDecode(Api.limitRequest(jsonEncode(greedy), depth: depth, tier: 'pro')!) as Map;
       final fetch = (body['tools'] as List).last as Map;
       expect(fetch, {
         'type': 'web_fetch_20260209',

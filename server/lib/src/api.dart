@@ -160,6 +160,9 @@ class Api {
   /// A fotók base64-ben érkeznek; ennél nagyobb kérést nem továbbítunk.
   static const helperMaxBytes = 8 * 1024 * 1024;
 
+  /// Az elemzés kérésének legnagyobb mérete (képpel együtt).
+  static const analyzeMaxBytes = 8 * 1024 * 1024;
+
   /// Szöveg legfeljebb ennyi karakter (egy teljes részletes elemzés is belefér),
   /// kép legfeljebb egy kérésenként; így egy hívás bemenete is korlátos.
   static const helperMaxTextChars = 120000;
@@ -301,7 +304,10 @@ class Api {
       (inner) => (req) async {
         if (!invites.enabled || req.method == 'OPTIONS') return inner(req);
         final path = req.url.path;
-        if (!path.startsWith('v1/') || path == 'v1/stripe/webhook') return inner(req);
+        // A fizetési szolgáltatók értesítései (Stripe, App Store, Google Play) nem hordoznak meghívót.
+        if (!path.startsWith('v1/') || path == 'v1/stripe/webhook' || path.startsWith('v1/stores/')) {
+          return inner(req);
+        }
         final sent = req.headers[inviteHeader];
         final invite = invites.find(sent);
         if (invite == null) {
@@ -335,13 +341,31 @@ class Api {
     });
   }
 
-  /// A kliens IP-címe: a Railway (és más proxy) az `x-forwarded-for` első
-  /// elemében adja át; közvetlen kapcsolatnál a socket címe.
+  /// A kliens IP-címe: a proxy (Railway) az `x-forwarded-for` végére fűzi a
+  /// valódi címet – az elejére a kliens bármit írhat –, ezért a jobbról első
+  /// nyilvános cím (a belső hálózati ugrások kimaradnak); közvetlen
+  /// kapcsolatnál a socket címe.
   static String? _clientIp(Request r) {
-    final fwd = r.headers['x-forwarded-for']?.split(',').first.trim();
-    if (fwd != null && fwd.isNotEmpty) return fwd;
+    final hops = (r.headers['x-forwarded-for'] ?? '').split(',').map((h) => h.trim()).where((h) => h.isNotEmpty);
+    final fwd = hops.toList().reversed.where((h) => !_privateAddress(h)).firstOrNull;
+    if (fwd != null) return fwd;
     final info = r.context['shelf.io.connection_info'];
     return info is HttpConnectionInfo ? info.remoteAddress.address : null;
+  }
+
+  /// Belső hálózati (proxy-) cím: privát, helyi, CGNAT vagy egyedi helyi IPv6.
+  static bool _privateAddress(String ip) {
+    final a = InternetAddress.tryParse(ip);
+    if (a == null) return true;
+    if (a.isLoopback || a.isLinkLocal) return true;
+    final b = a.rawAddress;
+    if (a.type == InternetAddressType.IPv4) {
+      return b[0] == 10 ||
+          (b[0] == 172 && b[1] >= 16 && b[1] < 32) ||
+          (b[0] == 192 && b[1] == 168) ||
+          (b[0] == 100 && b[1] >= 64 && b[1] < 128);
+    }
+    return (b[0] & 0xfe) == 0xfc;
   }
 
   /// Próbaidő-visszaélés ellen: ha erről a címről ma már [trialPerIpPerDay]
@@ -419,6 +443,10 @@ class Api {
     return _json({'token': token, ..._account(uid)});
   }
 
+  /// A névtelen fiók átkerül a meglévőbe: az extra elemzések összeadódnak, a
+  /// fizetős csomag átköltözik (ha a meglévőnek nincs), a vásárlások és a
+  /// Stripe-azonosítók is; a névtelen fiók csomagja megszűnik, a tokenje
+  /// érvénytelen – egy vásárlás így csak egy fiókot tesz fizetőssé.
   void _merge({required String from, required String into}) {
     final a = store.entitlement(from);
     final b = store.entitlement(into);
@@ -433,9 +461,15 @@ class Api {
         ..used = a.used;
     }
     a.extra = 0;
+    if (aPaid) {
+      a
+        ..tier = null
+        ..periodEnd = store.clock();
+    }
     store
       ..save(a)
-      ..save(b);
+      ..save(b)
+      ..movePurchases(from: from, into: into);
   }
 
   // ---- Megosztás nyilvános linkkel ----
@@ -867,7 +901,9 @@ class Api {
     // Tesztelői kód: a megadott csomag a megadott napokra, fizetés nélkül.
     if (testers.find(code) case final t?) {
       final used = store.testerRedemptions(t.code, uid);
-      if (!used.mine && used.count >= t.maxAccounts) return _error(409, 'tester_code_full');
+      // Újra beváltva nem indul újra (a felhasználás és a lejárat marad).
+      if (used.mine) return _json({'entitlements': store.entitlement(uid).toJson(), 'bonus': 0, 'tester': t.label});
+      if (used.count >= t.maxAccounts) return _error(409, 'tester_code_full');
       store.addTesterRedemption(t.code, uid);
       final now = store.clock();
       final e = store.entitlement(uid)
@@ -1258,28 +1294,34 @@ class Api {
         _ => 'quota_exceeded',
       });
     }
-    final raw = limitRequest(
-      await r.readAsString(),
-      depth: depth,
-      tier: e.tier,
-      model: trialRun ? trialModel : anthropicModel,
-    );
-    var upstream = await _forwardAnthropic(raw, r.headers['anthropic-beta']);
-    if (_rejectedWebFetch(upstream)) {
-      upstream = await _forwardAnthropic(withoutWebFetch(raw), r.headers['anthropic-beta']);
+    final body = await r.readAsString();
+    if (body.length > analyzeMaxBytes) return _error(413, 'too_large');
+    final raw = limitRequest(body, depth: depth, tier: e.tier, model: trialRun ? trialModel : anthropicModel);
+    if (raw == null) return _error(400, 'bad_request');
+    // A keret a továbbítás előtt foglalódik; sikertelen vagy félbemaradt
+    // (pause_turn) válasznál visszajár – csak a befejezett elemzés kerül pénzbe.
+    final held = quota.reserve(uid, cost: depth.cost);
+    if (held == null) return _error(402, 'quota_exceeded');
+    final beta = allowedBeta(r.headers['anthropic-beta']);
+    http.Response upstream;
+    try {
+      upstream = await _forwardAnthropic(raw, beta);
+      if (_rejectedWebFetch(upstream)) upstream = await _forwardAnthropic(withoutWebFetch(raw), beta);
+    } catch (_) {
+      quota.refund(uid, held);
+      rethrow;
     }
-    if (upstream.statusCode == 200) {
-      // Csak a befejezett (nem pause_turn) választ számoljuk el.
-      try {
-        final j = jsonDecode(upstream.body) as Map<String, dynamic>;
-        if (j['stop_reason'] != 'pause_turn') {
-          quota.consume(e, cost: depth.cost);
-          final usage = (j['usage'] as Map?)?.cast<String, dynamic>();
-          store.logUsage(uid, _symbolFrom(raw), usage?['input_tokens'] as int?, usage?['output_tokens'] as int?);
-          if (invite != null) store.logInviteUsage(invite.code);
-          _rewardReferrer(uid);
-        }
-      } catch (_) {}
+    Map<String, dynamic>? j;
+    try {
+      j = (jsonDecode(upstream.body) as Map).cast<String, dynamic>();
+    } catch (_) {}
+    if (upstream.statusCode != 200 || j?['stop_reason'] == 'pause_turn') {
+      quota.refund(uid, held);
+    } else {
+      final usage = (j?['usage'] as Map?)?.cast<String, dynamic>();
+      store.logUsage(uid, _symbolFrom(raw), usage?['input_tokens'] as int?, usage?['output_tokens'] as int?);
+      if (invite != null) store.logInviteUsage(invite.code);
+      _rewardReferrer(uid);
     }
     return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
   }
@@ -1288,7 +1330,8 @@ class Api {
   /// modell, a `max_tokens`, a webkeresés és az oldalmegnyitás `max_uses`-a, és
   /// a megnyitott oldal mérete nem lehet nagyobb a megengedettnél; más eszköz
   /// nem fut, így a kliens nem tud drágább elemzést kérni, mint amiért fizet.
-  static String limitRequest(
+  /// `null`, ha a kérés nem értelmezhető (nem engedjük át ellenőrizetlenül).
+  static String? limitRequest(
     String raw, {
     required Depth depth,
     required String? tier,
@@ -1298,9 +1341,11 @@ class Api {
     try {
       body = (jsonDecode(raw) as Map).cast<String, dynamic>();
     } catch (_) {
-      return raw;
+      return null;
     }
     body['model'] = model;
+    // Folyamatos (SSE) válasz nem kérhető: az elszámoláshoz a teljes válasz kell.
+    body.remove('stream');
     final maxTokens = body['max_tokens'];
     body['max_tokens'] = maxTokens is int && maxTokens < depth.maxTokens ? maxTokens : depth.maxTokens;
     final allowed = depth.searchesFor(tier);
@@ -1450,7 +1495,7 @@ class Api {
     final req = checkAskRequest(raw);
     if (req == null) return _error(400, 'bad_request');
     final e = store.entitlement(uid);
-    if (e.tier == null && e.extra <= 0) return _error(402, 'no_plan');
+    if (!quota.hasAccess(e)) return _error(402, 'no_plan');
     // Megosztott válasz (pl. egy cég negyedéves összefoglalója adott nyelven):
     // ha már valaki lekérte, mindenki ugyanazt kapja, kérés és keret nélkül.
     final cacheKey = sharedCacheKey(raw['shared_cache']);
@@ -1536,11 +1581,25 @@ class Api {
         store.helperCallsSince(uid, now.subtract(const Duration(days: 1))) >= helperPerDay) {
       return _error(429, 'rate_limited', 'Too many requests, please try again later.');
     }
+    // Csomag (vagy élő próbaidő, vagy extra elemzés) nélkül nincs segédhívás.
+    if (!quota.hasAccess(store.entitlement(uid))) return _error(402, 'no_plan');
     final body = limitHelperRequest(raw, model: anthropicModel);
     if (body == null) return _error(400, 'bad_request');
     store.logHelperCall(uid);
-    final upstream = await _forwardAnthropic(body, r.headers['anthropic-beta']);
+    final upstream = await _forwardAnthropic(body, allowedBeta(r.headers['anthropic-beta']));
     return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
+  }
+
+  /// Az app által használt béta-funkciók; más (pl. drágább) bétát nem engedünk át.
+  static const allowedBetas = {'server-side-fallback-2026-07-01'};
+
+  /// A kliens `anthropic-beta` fejlécéből csak az engedélyezettek.
+  static String? allowedBeta(String? header) {
+    final kept = [
+      for (final b in (header ?? '').split(','))
+        if (allowedBetas.contains(b.trim())) b.trim(),
+    ];
+    return kept.isEmpty ? null : kept.join(',');
   }
 
   Future<http.Response> _forwardAnthropic(String body, String? beta) => _client.post(

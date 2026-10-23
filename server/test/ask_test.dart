@@ -186,6 +186,12 @@ void main() {
     expect(Api.sharedCacheKey('a b'), isNull);
     expect(Api.sharedCacheKey('short'), isNull);
     expect(Api.sharedCacheKey('news|abc123|English'), 'news|abc123|English');
+    // (Élő próbaidő: a lejárt próbaidővel nem lehet kérdezni.)
+    store.save(
+      store.entitlement(u2)
+        ..tier = 'trial'
+        ..periodEnd = store.clock().add(const Duration(days: 3)),
+    );
     final trialReq = {
       ...ask(['Q']),
       'shared_cache': 'news|trial-only|English',
