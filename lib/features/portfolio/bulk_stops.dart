@@ -10,8 +10,8 @@ const stopPercents = [5.0, 10.0, 15.0, 20.0, 25.0];
 
 /// Követő stop (esés a csúcstól) egyszerre minden birtokolt pozícióra, amelyiken
 /// még nincs aktív ilyen riasztás: a csúcs a riasztás első ellenőrzésekor az
-/// akkori ár, onnan követi az árat felfelé. A létrehozott riasztások száma.
-Future<int> addTrailingStops(AppServices services, double percent) async {
+/// akkori ár, onnan követi az árat felfelé. A létrehozott riasztások (a visszavonáshoz).
+Future<List<PriceAlert>> addTrailingStops(AppServices services, double percent) async {
   final covered = {
     for (final a in services.alerts.active)
       if (a.kind == AlertKind.trailing) a.symbol,
@@ -20,13 +20,14 @@ Future<int> addTrailingStops(AppServices services, double percent) async {
     for (final p in services.portfolio.positions)
       if (!covered.contains(p.symbol)) p,
   ];
-  for (final p in todo) {
-    await services.alerts.add(symbol: p.symbol, kind: AlertKind.trailing, value: percent, currency: p.currency);
-  }
-  return todo.length;
+  return [
+    for (final p in todo)
+      await services.alerts.add(symbol: p.symbol, kind: AlertKind.trailing, value: percent, currency: p.currency),
+  ];
 }
 
-/// A küszöb választása, majd a riasztások létrehozása; a végén egy sáv mondja meg, hány lett.
+/// A küszöb választása, majd a riasztások létrehozása; a végén egy sáv mondja meg, hány lett
+/// (visszavonással).
 Future<void> showBulkStops(BuildContext context) async {
   final services = AppServices.of(context);
   final l10n = AppLocalizations.of(context);
@@ -37,7 +38,23 @@ Future<void> showBulkStops(BuildContext context) async {
   services.telemetry.track('bulk_stops');
   messenger
     ..hideCurrentSnackBar()
-    ..showSnackBar(SnackBar(content: Text(l10n.portfolioStopsDone(added))));
+    ..showSnackBar(
+      SnackBar(
+        content: Text(l10n.portfolioStopsDone(added.length)),
+        // Egy koppintással mind visszavonható.
+        action: added.isEmpty
+            ? null
+            : SnackBarAction(
+                key: const ValueKey('stops-undo'),
+                label: l10n.undo,
+                onPressed: () async {
+                  for (final a in added) {
+                    await services.alerts.remove(a.id);
+                  }
+                },
+              ),
+      ),
+    );
 }
 
 class _StopsDialog extends StatefulWidget {

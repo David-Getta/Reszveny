@@ -32,6 +32,18 @@ void main() {
     final aapl = s.alerts.forSymbol('AAPL').single;
     expect((aapl.kind, aapl.value, aapl.currency), (AlertKind.trailing, 20.0, 'USD'));
     expect(s.alerts.forSymbol('MSFT'), hasLength(1), reason: 'a meglévő marad, nem duplázódik');
+    // Visszavonható: a létrehozott törlődik, a korábbi marad; utána újra beállítjuk.
+    await tester.tap(find.byKey(const ValueKey('stops-undo')));
+    await tester.pumpAndSettle();
+    expect(s.alerts.forSymbol('AAPL'), isEmpty);
+    expect(s.alerts.forSymbol('MSFT'), hasLength(1));
+    await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-stops')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('stops-save')));
+    await tester.pumpAndSettle();
+    expect(s.alerts.forSymbol('AAPL'), hasLength(1));
     // Ismét: már mindenen van.
     await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
     await tester.pumpAndSettle();

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.223)
+# Változásjegyzék (0.2.130 → 0.2.224)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -39,7 +39,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   megjelenítési pénznemben („Ma leginkább mozgott: NVDA +39 284 HUF · OTP +18 600 HUF”).
 
 - A **lezárt pozícióknál „az eladás óta”**: az ár változása az utolsó eladás óta (megérte-e eladni).
-- **Követő stop minden pozícióra** egy lépésben a portfólió menüjéből (−5 … −25%, a meglévők maradnak).
+- **Követő stop minden pozícióra** egy lépésben a portfólió menüjéből (−5 … −25%, a meglévők maradnak); a végén
+  egy koppintással visszavonható.
 - **Távolság a riasztásig**: a Riasztások oldalon és a részvény oldalán minden aktív riasztás alatt a mostani ár és
   hogy mennyit kell még mozdulnia a kioldásig („Most 231,45 USD · még +4,2%”); követő stopnál a csúcstól számolt
   szintig.
