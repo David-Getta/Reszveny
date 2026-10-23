@@ -972,6 +972,20 @@ class PortfolioStore extends ChangeNotifier {
     await _save();
   }
 
+  /// Egy import visszavonása: a megadott azonosítójú tranzakciók, osztalékok és
+  /// felaprózások törlése egyetlen mentéssel.
+  Future<void> removeIds({
+    Set<String> lots = const {},
+    Set<String> dividends = const {},
+    Set<String> splits = const {},
+  }) async {
+    _lots.removeWhere((l) => lots.contains(l.id));
+    _dividends.removeWhere((d) => dividends.contains(d.id));
+    _splits.removeWhere((s) => splits.contains(s.id));
+    notifyListeners();
+    await _save();
+  }
+
   /// Egy tranzakció törlése; a tárolt (a felaprózásokkal nem igazított) tételt
   /// adja vissza, hogy a visszavonás azt mentse vissza, ne a megjelenített másolatot.
   Future<PortfolioLot?> remove(String id) async {

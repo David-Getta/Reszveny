@@ -520,6 +520,20 @@ void main() {
     expect(s.portfolio.lots.map((l) => l.symbol), containsAll(['AAPL', 'MSFT']));
     expect(find.text('2 purchases added · 1 line skipped'), findsOneWidget);
 
+    // Az egész import egy koppintással visszavonható; utána újra beolvassuk.
+    await tester.tap(find.byKey(const ValueKey('portfolio-import-undo')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.lots, isEmpty);
+    await tester.tap(find.byKey(const ValueKey('portfolio-empty-import')));
+    await tester.pumpAndSettle();
+    await tester.enterText(
+      find.byKey(const ValueKey('portfolio-import-text')),
+      'AAPL,10,180,USD,2025-03-14\nbroken\nMSFT,2,400,USD',
+    );
+    await tester.tap(find.byKey(const ValueKey('portfolio-import-ok')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.lots, hasLength(2));
+
     await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
     await tester.pumpAndSettle();
     // Eladás nélkül nincs mit exportálni a realizált nyereségből.

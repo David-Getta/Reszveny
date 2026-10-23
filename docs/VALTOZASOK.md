@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.214)
+# Változásjegyzék (0.2.130 → 0.2.215)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -107,6 +107,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   brókert felsorolja, 120 nyelven.
 - A **DEGIRO számlakivonata** (Account.csv – angol, német vagy holland nyelvű) is beolvasható: a „Dividend” sorok
   kapott osztalékként, az aznapi „Dividend Tax” levonva, a tickert ugyanúgy ISIN-ből; a többi sor kimarad.
+- **Az import visszavonható**: a végén megjelenő sávon egy koppintással mindaz törlődik, amit az import felvett
+  (tranzakciók, osztalékok, felaprózások) – egy rossz fájl után nem kell tételenként takarítani.
 - **Scalable Capital** (pontosvesszős, ISIN-es export: a megtakarítási terv vételként, a „Distribution” osztalékként,
   a visszavont megbízás kimarad) és **Lightyear** („CCY”, „Net Amt.” – az osztalék a forrásadó utáni összeg).
 

@@ -140,10 +140,11 @@ Future<void> showPortfolioImport(BuildContext context) async {
   final existing = {
     for (final l in services.portfolio.lots) key(l.symbol, l.quantity, l.price, l.date, l.sell, l.account),
   };
-  var added = 0;
+  // A felvett tételek azonosítói: az egész import egy koppintással visszavonható.
+  final lotIds = <String>{}, dividendIds = <String>{}, splitIds = <String>{};
   for (final l in result.lots) {
     if (!existing.add(key(l.symbol, l.quantity, l.price, l.date, l.sell, l.account))) continue;
-    await services.portfolio.add(
+    final lot = await services.portfolio.add(
       symbol: l.symbol,
       quantity: l.quantity,
       price: l.price,
@@ -153,29 +154,27 @@ Future<void> showPortfolioImport(BuildContext context) async {
       account: l.account,
       fee: l.fee,
     );
-    added++;
+    lotIds.add(lot.id);
   }
   // Kapott osztalékok: ugyanaz a tétel (ticker, összeg, dátum, számla) nem kerül be kétszer.
   String dKey(String symbol, double amount, DateTime? d, String? account) =>
       '$symbol|$amount|${d?.toIso8601String().substring(0, 10)}|${account?.toLowerCase() ?? ''}';
   final existingDividends = {for (final d in services.portfolio.dividends) dKey(d.symbol, d.amount, d.date, d.account)};
-  var addedDividends = 0;
   for (final d in result.dividends) {
     if (!existingDividends.add(dKey(d.symbol, d.amount, d.date, d.account))) continue;
-    await services.portfolio.addDividend(
+    final dividend = await services.portfolio.addDividend(
       symbol: d.symbol,
       amount: d.amount,
       currency: d.currency,
       date: d.date,
       account: d.account,
     );
-    addedDividends++;
+    dividendIds.add(dividend.id);
   }
   // Felaprózások (saját exportból): a tároló nem veszi fel kétszer ugyanazt (ticker, nap, arány).
-  var addedSplits = 0;
   for (final s in result.splits) {
-    if (await services.portfolio.addSplit(symbol: s.symbol, from: s.from, to: s.to, date: s.date) != null) {
-      addedSplits++;
+    if (await services.portfolio.addSplit(symbol: s.symbol, from: s.from, to: s.to, date: s.date) case final split?) {
+      splitIds.add(split.id);
     }
   }
   messenger
@@ -184,12 +183,19 @@ Future<void> showPortfolioImport(BuildContext context) async {
       SnackBar(
         content: Text(
           [
-            l10n.portfolioImported(added),
-            if (addedDividends > 0) l10n.portfolioDividendsImported(addedDividends),
-            if (addedSplits > 0) l10n.portfolioSplitsImported(addedSplits),
+            l10n.portfolioImported(lotIds.length),
+            if (dividendIds.isNotEmpty) l10n.portfolioDividendsImported(dividendIds.length),
+            if (splitIds.isNotEmpty) l10n.portfolioSplitsImported(splitIds.length),
             if (result.skipped > 0) l10n.portfolioImportSkipped(result.skipped),
           ].join(' · '),
         ),
+        action: lotIds.isEmpty && dividendIds.isEmpty && splitIds.isEmpty
+            ? null
+            : SnackBarAction(
+                key: const ValueKey('portfolio-import-undo'),
+                label: l10n.undo,
+                onPressed: () => services.portfolio.removeIds(lots: lotIds, dividends: dividendIds, splits: splitIds),
+              ),
       ),
     );
 }
