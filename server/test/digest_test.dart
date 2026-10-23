@@ -399,6 +399,19 @@ void main() {
     expect(DigestSender.expectedDividendsOf(data, now: DateTime.utc(2026, 9, 1)), isEmpty);
   });
 
+  test('an announced (future-dated) dividend is the next one, with its exact amount', () {
+    final data = {
+      'lots': [lot('AAPL', 'USD')],
+      'dividends': [
+        {'symbol': 'AAPL', 'amount': 2.6, 'currency': 'USD', 'date': '2026-05-14'},
+        {'symbol': 'AAPL', 'amount': 2.6, 'currency': 'USD', 'date': '2026-08-13'},
+        {'symbol': 'AAPL', 'amount': 2.8, 'currency': 'USD', 'date': '2026-10-28'},
+      ],
+    };
+    final next = DigestSender.expectedDividendsOf(data, now: monday);
+    expect(next.map((d) => (d.symbol, d.amount, d.date)), [('AAPL', 2.8, DateTime.utc(2026, 10, 28))]);
+  });
+
   test('symbols: portfolio first, favorites without duplicates, at most 15', () {
     final s = DigestSender.symbolsOf({
       'lots': [

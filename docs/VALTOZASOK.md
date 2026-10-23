@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.264)
+# Változásjegyzék (0.2.130 → 0.2.265)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -311,6 +311,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   összes kapott osztalékba, sem az éves összesítőbe; a 12 havi osztalék nem számolja kétszer az éves kifizetést;
   az árfolyam 12 óráig marad meg a lekéréstől (eddig az ECB-nap szerint akár 3,5 napig, ünnep után pedig
   egyáltalán nem); egyedi kulcsok a két pénznemű osztalék-soroknak.
+- **0.2.265**: a heti levél „Várható osztalékok” része is a bejelentett (jövőre rögzített) kifizetést mutatja a
+  pontos összeggel, mint az app.
 
 ## Riasztások és értesítések: egy hetedik kódátnézés javításai
 

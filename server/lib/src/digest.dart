@@ -219,6 +219,13 @@ class DigestSender {
           amountOn[day] = e.value[day]!;
         }
       }
+      // A jövőre rögzített (bejelentett) kifizetés maga a következő, pontos összeggel – mint az appban.
+      if (paidOn.where((d) => d.isAfter(today)).firstOrNull case final announced?) {
+        if (!announced.isAfter(until)) {
+          out.add((symbol: e.key.$1, amount: amountOn[announced]!, currency: e.key.$2, date: announced));
+        }
+        continue;
+      }
       if (paidOn.length < 2) continue;
       // A legutóbbi legfeljebb négy távolság mediánja: a régi, ritkás előzmény ne torzítson.
       final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays];
