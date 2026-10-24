@@ -20,6 +20,10 @@ import '../../core/util/text.dart';
 /// megkeres. A válasz egy rögzített szerkezetű JSON, amit szekciókként
 /// jelenítünk meg.
 class ClaudeStockAnalyst implements StockAnalyst {
+  /// Egy pillanat naptári napja (ÉÉÉÉ-HH-NN) a saját mezőiből: helyi időnél a
+  /// felhasználó napja, ugyanúgy, mint a „today” – így a hírek napja is ahhoz mérhető.
+  static String _localDay(DateTime t) => DateTime(t.year, t.month, t.day).toIso8601String().substring(0, 10);
+
   ClaudeStockAnalyst({required this.config, http.Client? client}) : _client = client ?? http.Client();
 
   final AppConfig config;
@@ -666,7 +670,8 @@ Check that all eleven sections are present, in order and in the requested langua
     final c = d.consensus;
     final data = <String, dynamic>{
       'symbol': d.symbol,
-      'today': (now ?? DateTime.now()).toUtc().toIso8601String().substring(0, 10),
+      // A felhasználó naptári napja (UTC-ben Amerikában este már a holnapi volna).
+      'today': _localDay(now ?? DateTime.now()),
       'as_of': (d.fetchedAt ?? now ?? DateTime.now()).toUtc().toIso8601String(),
       'reader': {
         'language': outputLanguage,
@@ -750,7 +755,7 @@ Check that all eleven sections are present, in order and in the requested langua
       'recent_news': [
         for (final n in d.news.take(25))
           {
-            'date': n.publishedAt.toUtc().toIso8601String().substring(0, 10),
+            'date': _localDay(n.publishedAt.toLocal()),
             'source': n.source,
             'headline': n.headline,
             if (n.summary != null) 'summary': _clip(n.summary!, 300),

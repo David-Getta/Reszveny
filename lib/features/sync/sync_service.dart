@@ -96,7 +96,11 @@ class SyncService extends ChangeNotifier {
     try {
       _lifecycle = AppLifecycleListener(
         onResume: () {
-          if (account.isSignedIn) unawaited(syncNow());
+          // Asztali gépen minden ablakfókusz „visszatérés”: egy percen belül nem kér újra
+          // (a helyi változás úgyis magától feltöltődik).
+          final ran = _ranAt;
+          if (!account.isSignedIn || (ran != null && DateTime.now().difference(ran) < resumeMinGap)) return;
+          unawaited(syncNow());
         },
       );
     } catch (_) {
@@ -717,9 +721,14 @@ class SyncService extends ChangeNotifier {
       _retryDelay = _retryDelay * 2 > retryMax ? retryMax : _retryDelay * 2;
     } finally {
       _busy = false;
+      _ranAt = DateTime.now();
       notifyListeners();
     }
   }
+
+  /// A legutóbbi szinkron vége (helyi idő), a visszatéréskori ritkításhoz.
+  DateTime? _ranAt;
+  static const resumeMinGap = Duration(minutes: 1);
 
   static const retryStart = Duration(seconds: 30);
   static const retryMax = Duration(minutes: 30);

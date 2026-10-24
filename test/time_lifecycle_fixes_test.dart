@@ -14,6 +14,7 @@ import 'package:reszveny/core/models/stock_quote.dart';
 import 'package:reszveny/core/models/stock_report.dart';
 import 'package:reszveny/core/util/us_market_hours.dart';
 import 'package:reszveny/features/account/account_controller.dart';
+import 'package:reszveny/features/alerts/price_alert.dart';
 import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
 import 'package:reszveny/features/analysis/report_store.dart';
 import 'package:reszveny/features/billing/billing_service.dart';
@@ -28,6 +29,7 @@ import 'package:reszveny/features/news/daily_brief.dart';
 import 'package:reszveny/features/news/morning_brief.dart';
 import 'package:reszveny/features/news/watch_news.dart';
 import 'package:reszveny/features/notes/notes_card.dart';
+import 'package:reszveny/features/portfolio/dividend_forecast.dart';
 import 'package:reszveny/features/portfolio/portfolio_move_watcher.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/portfolio/portfolio_valuation.dart';
@@ -294,5 +296,27 @@ void main() {
           ];
     await brief.generate(symbols: ['AAPL', 'MSFT'], language: 'English');
     expect(sent.single, isNot(contains('"reported"')));
+  });
+
+  test('an alert set on the split day before the opening bell is moved to the new units', () async {
+    // A felaprózás napján reggel (helyben, UTC-ben) beállítva, a New York-i nyitás (13:30 UTC) előtt.
+    final alerts = AlertStore(
+      alerts: [
+        PriceAlert(
+          id: 'a',
+          symbol: 'NVDA',
+          kind: AlertKind.above,
+          value: 1000,
+          createdAt: DateTime.utc(2026, 6, 10, 6),
+        ),
+      ],
+    );
+    await alerts.applySplit('NVDA', from: 1, to: 10, date: DateTime(2026, 6, 10));
+    expect(alerts.alerts.single.value, 100);
+  });
+
+  test('dividend gaps are counted in calendar days', () {
+    // 91 naptári nap (márciusi óraátállítással együtt is).
+    expect(medianRecentGap([DateTime(2026, 1, 15), DateTime(2026, 4, 16)]), 91);
   });
 }

@@ -192,7 +192,9 @@ String approxMoney(Fmt fmt, double amount, String currency) => '~ ${fmt.money(am
 /// [recentGaps] utolsó távolság): egy régi, ritkás előzmény ne torzítsa a mai
 /// ritmust; döntetlennél a legutóbbi távolsághoz közelebbi. Legalább két nap kell.
 int medianRecentGap(List<DateTime> paidOn, {int recentGaps = 4}) {
-  final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays];
+  // Naptári napokkal: egy óraátállítást átívelő távolság sem lesz egy nappal rövidebb
+  // (a szerveren UTC-ben számol, a kettő így ugyanazt a ritmust adja).
+  final gaps = [for (var i = 1; i < paidOn.length; i++) calendarDaysBetween(paidOn[i - 1], paidOn[i])];
   final recent = gaps.length > recentGaps ? gaps.sublist(gaps.length - recentGaps) : gaps;
   // Páros számú távolságnál a két középső közül a legutóbbi távolsághoz közelebbi
   // nyer: ritmusváltásnál (bármelyik irányban) az újabb ritmus.

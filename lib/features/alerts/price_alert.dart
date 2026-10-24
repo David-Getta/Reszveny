@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/us_market_hours.dart';
 import '../../core/models/stock_quote.dart';
 import '../../core/util/text.dart';
 import '../../core/util/tombstones.dart';
@@ -386,9 +387,12 @@ class AlertStore extends ChangeNotifier {
   /// „teljesítené” őket (a követő stop csúcsa is).
   Future<void> applySplit(String symbol, {required int from, required int to, required DateTime date}) async {
     final s = symbol.trim().toUpperCase();
+    // A felaprózás a napja nyitásával él (New York): az előtte – helyben akár már
+    // aznap – beállított riasztás még a régi egységben van.
+    final effective = UsMarketHours.utcOf(DateTime(date.year, date.month, date.day, 9, 30));
     var changed = false;
     for (final (i, a) in _alerts.indexed) {
-      if (a.symbol != s || a.kind == AlertKind.move || !a.createdAt.isBefore(date)) continue;
+      if (a.symbol != s || a.kind == AlertKind.move || !a.createdAt.isBefore(effective)) continue;
       _alerts[i] = a.scaled(from / to);
       changed = true;
     }

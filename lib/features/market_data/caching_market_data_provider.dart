@@ -198,18 +198,24 @@ class CachingMarketDataProvider extends MarketDataProvider {
     'history$years',
     symbol,
     () => inner.history(symbol, years: years),
+    // A gyertya napja dátumként (ÉÉÉÉ-HH-NN): időbélyeggel egy időzóna-váltás (utazás)
+    // után minden nap eggyel elcsúszna. A régi (időbélyeges) bejegyzés is olvasható.
     (h) => {
       'symbol': h.symbol,
-      't': [for (final p in h.points) p.time.millisecondsSinceEpoch ~/ 1000],
+      'd': [
+        for (final p in h.points) DateTime(p.time.year, p.time.month, p.time.day).toIso8601String().substring(0, 10),
+      ],
       'c': [for (final p in h.points) p.close],
     },
     (j) {
-      final t = (j['t'] as List).cast<num>(), c = (j['c'] as List).cast<num>();
+      final c = (j['c'] as List).cast<num>();
+      final days = j['d'] is List
+          ? [for (final d in (j['d'] as List).cast<String>()) DateTime.parse(d)]
+          : [for (final t in (j['t'] as List).cast<num>()) DateTime.fromMillisecondsSinceEpoch(t.toInt() * 1000)];
       return PriceHistory(
         symbol: j['symbol'] as String,
         points: [
-          for (var i = 0; i < t.length && i < c.length; i++)
-            PricePoint(time: DateTime.fromMillisecondsSinceEpoch(t[i].toInt() * 1000), close: c[i].toDouble()),
+          for (var i = 0; i < days.length && i < c.length; i++) PricePoint(time: days[i], close: c[i].toDouble()),
         ],
       );
     },

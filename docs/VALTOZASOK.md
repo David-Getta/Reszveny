@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.286)
+# Változásjegyzék (0.2.130 → 0.2.287)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,16 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Időzónák: a „gyanús” pontok lezárása
+
+- **0.2.287**: a felaprózás napján, de a New York-i nyitás előtt (Európában, Ázsiában reggel) beállított
+  árriasztás is az új egységbe kerül (eddig a régi szinten maradt, és azonnal vagy soha nem szólt). Az osztalékok
+  ritmusa naptári napokkal számolódik (egy óraátállítás nem rövidíti meg a távolságot, az app és a heti e-mail
+  ugyanazt a ritmust adja). Az AI-elemzés a felhasználó naptári napját és a hírek helyi napját kapja (Amerikában
+  este eddig a holnapi dátumot). A mentett árfolyamgrafikon napjai dátumként tárolódnak (utazás, időzóna-váltás
+  után sem csúszik el minden nap eggyel). Asztali gépen az ablak minden fókuszba kerülése nem indít külön
+  szinkront (legfeljebb percenként egyet).
 
 ## Időzónák és életciklus: a harmincegyedik és harminckettedik kódátnézés javításai
 
