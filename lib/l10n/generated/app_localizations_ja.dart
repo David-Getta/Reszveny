@@ -2782,6 +2782,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get backupFailed => 'バックアップを保存できませんでした。もう一度お試しください。';
 
   @override
+  String get syncTooLarge =>
+      'データが大きすぎるため、アカウントと同期できません。不要になった取引やメモを削除すると、再試行します。';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

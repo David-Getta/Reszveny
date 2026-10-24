@@ -2869,6 +2869,10 @@ class AppLocalizationsOr extends AppLocalizations {
       'ବ୍ୟାକଅପ୍ ସେଭ୍ ହୋଇପାରିଲା ନାହିଁ। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
 
   @override
+  String get syncTooLarge =>
+      'ଆପଣଙ୍କ ଡାଟା ଆପଣଙ୍କ ଆକାଉଣ୍ଟ ସହ ସିଙ୍କ କରିବା ପାଇଁ ବହୁତ ବଡ଼। ଆଉ ଆବଶ୍ୟକ ନଥିବା କାରବାର ବା ନୋଟ୍ ଡିଲିଟ କରନ୍ତୁ, ତା\'ପରେ ଏହା ପୁଣି ଚେଷ୍ଟା କରିବ।';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

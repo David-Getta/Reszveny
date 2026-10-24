@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Bonyane {quantity} – palo yeo e šetše e rekišitšwe",
   "restoreNothing": "Ga go a hwetšwa tše o di rekilego pele gore di bušetšwe.",
   "manageSubscriptionElsewhere": "Ga go na ngwadišo ye e ka laolwago mo. Ngwadišo ye e rekilwego go App Store goba Google Play e laolwa go dipeakanyo tša lebenkele.",
-  "backupFailed": "Polokelo ya thekgo e be e sa kgone go bolokwa. Hle leka gape."
+  "backupFailed": "Polokelo ya thekgo e be e sa kgone go bolokwa. Hle leka gape.",
+  "syncTooLarge": "Data ya gago e kgolo kudu go ka sinkronaišwa le akhaonto ya gago. Phumola dithekišano goba dintlha tšeo o sa di nyakego gape, gomme go tla lekwa gape."
 }

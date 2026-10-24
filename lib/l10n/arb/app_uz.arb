@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Kamida {quantity} – shuncha allaqachon sotilgan",
   "restoreNothing": "Tiklash uchun avvalgi xaridlar topilmadi.",
   "manageSubscriptionElsewhere": "Bu yerda boshqariladigan obuna yoʻq. App Store yoki Google Play orqali sotib olingan obuna doʻkon sozlamalarida boshqariladi.",
-  "backupFailed": "Zaxira nusxani saqlab boʻlmadi. Qaytadan urinib koʻring."
+  "backupFailed": "Zaxira nusxani saqlab boʻlmadi. Qaytadan urinib koʻring.",
+  "syncTooLarge": "Maʼlumotlaringiz hisobingiz bilan sinxronlash uchun juda katta. Endi kerak boʻlmagan operatsiyalar yoki qaydlarni oʻchiring, shunda qayta urinib koʻriladi."
 }

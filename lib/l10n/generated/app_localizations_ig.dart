@@ -2865,6 +2865,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get backupFailed => 'Enweghị ike ichekwa ndabere ahụ. Biko nwaa ọzọ.';
 
   @override
+  String get syncTooLarge =>
+      'Data gị buru oke ibu imekọrịta ya na akaụntụ gị. Hichapụ azụmahịa ma ọ bụ ndetu ndị ị na-achọghịzi, ọ ga-anwa ọzọ.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

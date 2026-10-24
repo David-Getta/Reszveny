@@ -2869,6 +2869,10 @@ class AppLocalizationsId extends AppLocalizations {
       'Cadangan tidak dapat disimpan. Silakan coba lagi.';
 
   @override
+  String get syncTooLarge =>
+      'Data Anda terlalu besar untuk disinkronkan dengan akun Anda. Hapus transaksi atau catatan yang tidak lagi Anda perlukan, lalu sinkronisasi akan dicoba lagi.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

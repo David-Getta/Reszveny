@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Ó kéré tán {quantity} – iye bẹ́ẹ̀ ni a ti tà tẹ́lẹ̀",
   "restoreNothing": "A kò rí ohun tí o ti rà tẹ́lẹ̀ láti dá padà.",
   "manageSubscriptionElsewhere": "Kò sí àsansílẹ̀ kankan láti ṣàkóso níbí. Àsansílẹ̀ tí o rà nínú App Store tàbí Google Play ni a ń ṣàkóso nínú ètò ilé ìtajà.",
-  "backupFailed": "A kò lè fi ẹ̀dà ìpamọ́ pamọ́. Jọ̀ọ́ tún gbìyànjú."
+  "backupFailed": "A kò lè fi ẹ̀dà ìpamọ́ pamọ́. Jọ̀ọ́ tún gbìyànjú.",
+  "syncTooLarge": "Dátà rẹ ti tóbi jù láti múṣiṣẹ́pọ̀ pẹ̀lú àkáǹtì rẹ. Pa àwọn ìdúnàdúrà tàbí àkọsílẹ̀ tí o kò nílò mọ́ rẹ́, yóò sì tún gbìyànjú."
 }

@@ -2876,6 +2876,10 @@ class AppLocalizationsSw extends AppLocalizations {
       'Nakala rudufu haikuweza kuhifadhiwa. Tafadhali jaribu tena.';
 
   @override
+  String get syncTooLarge =>
+      'Data yako ni kubwa mno kusawazishwa na akaunti yako. Futa miamala au madokezo usiyoyahitaji tena, kisha itajaribu tena.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

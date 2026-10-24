@@ -2951,6 +2951,10 @@ class AppLocalizationsRu extends AppLocalizations {
       'Не удалось сохранить резервную копию. Попробуйте ещё раз.';
 
   @override
+  String get syncTooLarge =>
+      'Ваши данные слишком велики для синхронизации с аккаунтом. Удалите ненужные сделки или заметки, и попытка будет повторена.';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

@@ -2794,6 +2794,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get backupFailed => '백업을 저장할 수 없습니다. 다시 시도해 주세요.';
 
   @override
+  String get syncTooLarge =>
+      '데이터가 너무 커서 계정과 동기화할 수 없습니다. 더 이상 필요 없는 거래나 메모를 삭제하면 다시 시도합니다.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

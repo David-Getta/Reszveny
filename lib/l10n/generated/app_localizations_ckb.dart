@@ -2875,6 +2875,10 @@ class AppLocalizationsCkb extends AppLocalizations {
       'یەدەگەکە پاشەکەوت نەکرا. تکایە دووبارە هەوڵ بدەرەوە.';
 
   @override
+  String get syncTooLarge =>
+      'داتاکانت زۆر گەورەن بۆ هاوکاتکردن لەگەڵ هەژمارەکەت. ئەو مامەڵە یان تێبینییانەی چیتر پێویستت پێیان نییە بیانسڕەوە، ئینجا دووبارە هەوڵ دەدرێتەوە.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

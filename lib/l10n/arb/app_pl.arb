@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Co najmniej {quantity} – tyle już sprzedano",
   "restoreNothing": "Nie znaleziono wcześniejszych zakupów do przywrócenia.",
   "manageSubscriptionElsewhere": "Nie ma tu subskrypcji do zarządzania. Subskrypcją kupioną w App Store lub Google Play zarządza się w ustawieniach sklepu.",
-  "backupFailed": "Nie udało się zapisać kopii zapasowej. Spróbuj ponownie."
+  "backupFailed": "Nie udało się zapisać kopii zapasowej. Spróbuj ponownie.",
+  "syncTooLarge": "Twoje dane są zbyt duże, aby zsynchronizować je z kontem. Usuń niepotrzebne już transakcje lub notatki, a synchronizacja zostanie ponowiona."
 }

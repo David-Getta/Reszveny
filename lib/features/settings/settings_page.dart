@@ -179,7 +179,10 @@ class SettingsPage extends StatelessWidget {
                                         leading: const Icon(Icons.sync_rounded),
                                         title: Text(l10n.syncInfo),
                                         subtitle: sync.failed
-                                            ? Text(l10n.syncFailed, style: TextStyle(color: p.negative))
+                                            ? Text(
+                                                sync.tooLarge ? l10n.syncTooLarge : l10n.syncFailed,
+                                                style: TextStyle(color: p.negative),
+                                              )
                                             : sync.lastSynced == null
                                             ? null
                                             : Text(

@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "At least {quantity} – dat many don already sell",
   "restoreNothing": "We no see any purchase wey you don make before to bring back.",
   "manageSubscriptionElsewhere": "No subscription dey here to manage. Subscription wey you buy for App Store or Google Play, na for di store settings you go manage am.",
-  "backupFailed": "Di backup no fit save. Abeg try again."
+  "backupFailed": "Di backup no fit save. Abeg try again.",
+  "syncTooLarge": "Your data too big to sync with your account. Delete di buy and sell or notes wey you no need again, and e go try again."
 }

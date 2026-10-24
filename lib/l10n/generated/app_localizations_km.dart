@@ -2850,6 +2850,10 @@ class AppLocalizationsKm extends AppLocalizations {
       'មិនអាចរក្សាទុកការបម្រុងទុកបានទេ។ សូមព្យាយាមម្ដងទៀត។';
 
   @override
+  String get syncTooLarge =>
+      'ទិន្នន័យរបស់អ្នកធំពេក មិនអាចធ្វើសមកាលកម្មជាមួយគណនីរបស់អ្នកបានទេ។ លុបប្រតិបត្តិការ ឬកំណត់ចំណាំដែលអ្នកលែងត្រូវការ ហើយវានឹងព្យាយាមម្តងទៀត។';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

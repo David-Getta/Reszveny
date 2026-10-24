@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Cel puțin {quantity} – atâtea au fost deja vândute",
   "restoreNothing": "Nu au fost găsite achiziții anterioare de restabilit.",
   "manageSubscriptionElsewhere": "Nu există niciun abonament de gestionat aici. Un abonament cumpărat din App Store sau Google Play se gestionează din setările magazinului.",
-  "backupFailed": "Backupul nu a putut fi salvat. Încearcă din nou."
+  "backupFailed": "Backupul nu a putut fi salvat. Încearcă din nou.",
+  "syncTooLarge": "Datele tale sunt prea mari pentru a fi sincronizate cu contul tău. Șterge tranzacțiile sau notițele de care nu mai ai nevoie și se va reîncerca."
 }

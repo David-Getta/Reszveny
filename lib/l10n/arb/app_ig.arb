@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Opekata mpe {quantity} – e reela ọnụ ọgụgụ ahụ",
   "restoreNothing": "Ahụghị ihe ọ bụla i zụrụ na mbụ a ga-eweghachi.",
   "manageSubscriptionElsewhere": "Enweghị ndenye aha a ga-ajikwa ebe a. Ndenye aha e zụrụ na App Store ma ọ bụ Google Play ka a na-ajikwa na ntọala ụlọ ahịa ahụ.",
-  "backupFailed": "Enweghị ike ichekwa ndabere ahụ. Biko nwaa ọzọ."
+  "backupFailed": "Enweghị ike ichekwa ndabere ahụ. Biko nwaa ọzọ.",
+  "syncTooLarge": "Data gị buru oke ibu imekọrịta ya na akaụntụ gị. Hichapụ azụmahịa ma ọ bụ ndetu ndị ị na-achọghịzi, ọ ga-anwa ọzọ."
 }

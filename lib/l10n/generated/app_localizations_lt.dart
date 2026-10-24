@@ -2949,6 +2949,10 @@ class AppLocalizationsLt extends AppLocalizations {
       'Atsarginės kopijos išsaugoti nepavyko. Bandykite dar kartą.';
 
   @override
+  String get syncTooLarge =>
+      'Jūsų duomenys per dideli, kad būtų sinchronizuojami su jūsų paskyra. Ištrinkite nebereikalingas operacijas ar užrašus ir bus bandoma dar kartą.';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

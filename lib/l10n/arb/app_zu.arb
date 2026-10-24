@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Okungenani {quantity} – amasheya angaka asethengisiwe",
   "restoreNothing": "Akukho okuthengwe ngaphambilini okutholakele ukuze kubuyiselwe.",
   "manageSubscriptionElsewhere": "Akukho ukubhalisa okungaphathwa lapha. Ukubhalisa okuthengwe ku-App Store noma ku-Google Play kuphathwa kuzilungiselelo zesitolo.",
-  "backupFailed": "Isipele asikwazanga ukulondolozwa. Sicela uzame futhi."
+  "backupFailed": "Isipele asikwazanga ukulondolozwa. Sicela uzame futhi.",
+  "syncTooLarge": "Idatha yakho inkulu kakhulu ukuthi ivumelaniswe ne-akhawunti yakho. Susa ukuthenga nokuthengisa noma amanothi ongasawadingi, bese kuzozama futhi."
 }

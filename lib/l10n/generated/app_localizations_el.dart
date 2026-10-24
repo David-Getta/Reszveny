@@ -2885,6 +2885,10 @@ class AppLocalizationsEl extends AppLocalizations {
       'Δεν ήταν δυνατή η αποθήκευση του αντιγράφου ασφαλείας. Δοκιμάστε ξανά.';
 
   @override
+  String get syncTooLarge =>
+      'Τα δεδομένα σας είναι πολύ μεγάλα για συγχρονισμό με τον λογαριασμό σας. Διαγράψτε συναλλαγές ή σημειώσεις που δεν χρειάζεστε πια και θα γίνει νέα προσπάθεια.';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

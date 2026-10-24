@@ -2884,6 +2884,10 @@ class AppLocalizationsCa extends AppLocalizations {
       'No s’ha pogut desar la còpia de seguretat. Torna-ho a provar.';
 
   @override
+  String get syncTooLarge =>
+      'Les teves dades són massa grans per sincronitzar-les amb el teu compte. Elimina les transaccions o notes que ja no necessitis i es tornarà a provar.';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

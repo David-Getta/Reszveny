@@ -2889,6 +2889,10 @@ class AppLocalizationsQu extends AppLocalizations {
       'Waqaychasqaqa manam waqaychakuyta atirqanchu. Ama hina kaspa, huktawan ruway.';
 
   @override
+  String get syncTooLarge =>
+      'Datosniykiqa nisyu hatunmi cuentaykiwan sincronizanapaq. Manaña munasqayki rantiy rantikuykunata utaq qillqasqakunata pichay, hinaspa yapamanta kallpachakunqa.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

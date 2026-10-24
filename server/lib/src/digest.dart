@@ -98,15 +98,21 @@ class DigestSender {
 
   /// A még birtokolt darabszám tickerenként (vétel +, eladás −) és a tételek
   /// pénzneme a szinkronizált csomag tranzakcióiból.
-  static ({Map<String, double> held, Map<String, String> currencies}) holdingsOf(Map<String, dynamic> data) {
+  static ({Map<String, double> held, Map<String, String> currencies}) holdingsOf(
+    Map<String, dynamic> data, {
+    DateTime? at,
+  }) {
     final held = <String, double>{}, currencies = <String, String>{};
     final splits = _splitsOf(data);
     for (final l in (data['lots'] as List? ?? const [])) {
       if (l is! Map || l['symbol'] is! String || l['quantity'] is! num || _isSample(l)) continue;
       final s = (l['symbol'] as String).toUpperCase();
       var q = (l['quantity'] as num).toDouble();
+      final date = DateTime.tryParse('${l['date']}');
+      // Az [at] napján birtokolt darab: az utána dátumozott tétel még nem számít.
+      if (at != null && date != null && DateTime.utc(date.year, date.month, date.day).isAfter(at)) continue;
       // A felaprózás napja előtti, dátumozott tétel darabszáma × új/régi; a dátum nélküli változatlan.
-      if (DateTime.tryParse('${l['date']}') case final date?) {
+      if (date != null) {
         for (final sp in splits[s] ?? const <({DateTime date, int from, int to})>[]) {
           if (date.isBefore(sp.date)) q = q * sp.to / sp.from;
         }
@@ -201,13 +207,14 @@ class DigestSender {
   /// együtt kell változtatni): tickerenként és pénznemenként egy sorozat,
   /// legalább két dátumozott tétel; a köztük lévő medián távolságból havi /
   /// negyedéves / féléves / éves ritmus; a következő = az utolsó + ritmus naptári hónapokban, az
-  /// utolsó összeggel. Időrendben.
+  /// utolsó összeggel, a kifizetés napján birtokolt darabhoz képest a mai darabszámra
+  /// arányosítva. Időrendben.
   static List<DigestDividend> expectedDividendsOf(Map<String, dynamic> data, {required DateTime now, int days = 14}) {
-    final held = holdingsOf(data).held.keys.toSet();
+    final held = holdingsOf(data).held;
     // (ticker, pénznem) → nap → összeg; az egy napon rögzített tételek együtt.
     final series = <(String, String), Map<DateTime, double>>{};
     for (final d in _dividendRecords(data)) {
-      if (!held.contains(d.symbol)) continue;
+      if (!held.containsKey(d.symbol)) continue;
       final day = DateTime.utc(d.date.year, d.date.month, d.date.day);
       final byDay = series[(d.symbol, d.currency)] ??= {};
       byDay[day] = (byDay[day] ?? 0) + d.amount;
@@ -242,7 +249,10 @@ class DigestSender {
       if (period == null) continue;
       final next = _addMonths(paidOn.last, period);
       if (next.isBefore(today) || next.isAfter(until)) continue;
-      out.add((symbol: e.key.$1, amount: amountOn[paidOn.last]!, currency: e.key.$2, date: next));
+      // Egy azóta vett vagy eladott rész: a mai darabszámra arányosítva – mint az appban.
+      final then = holdingsOf(data, at: paidOn.last).held[e.key.$1];
+      final scale = then == null ? 1.0 : held[e.key.$1]! / then;
+      out.add((symbol: e.key.$1, amount: amountOn[paidOn.last]! * scale, currency: e.key.$2, date: next));
     }
     return out..sort((a, b) {
       final byDate = a.date.compareTo(b.date);

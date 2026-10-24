@@ -2872,6 +2872,10 @@ class AppLocalizationsDa extends AppLocalizations {
   String get backupFailed => 'Sikkerhedskopien kunne ikke gemmes. Prøv igen.';
 
   @override
+  String get syncTooLarge =>
+      'Dine data er for store til at blive synkroniseret med din konto. Slet transaktioner eller noter, du ikke længere har brug for, så prøves der igen.';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

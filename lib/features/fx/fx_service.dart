@@ -140,6 +140,50 @@ class FxService extends ChangeNotifier {
     });
   }
 
+  /// A múltbeli napok árfolyamai: a sikeres válasz a munkamenet végéig megmarad
+  /// (egy lezárt nap árfolyama nem változik).
+  final Map<String, Future<FxRate?>> _onDay = {};
+
+  /// Árfolyam [from] → [to] a [day] napján (az ECB aznapi, hétvégén és ünnepnapon
+  /// az előző jegyzése; a mai vagy jövőbeli napra a legfrissebb): egy régi
+  /// tranzakció átváltásához. `null`, ha azonos pénznem, nem támogatott, vagy nem
+  /// érhető el.
+  Future<FxRate?> rateOn(String from, String to, DateTime day) {
+    final now = DateTime.now();
+    if (!DateTime(day.year, day.month, day.day).isBefore(DateTime(now.year, now.month, now.day))) {
+      return rate(from, to);
+    }
+    final (f, ff) = major(from);
+    final (t, tf) = major(to);
+    final scale = ff / tf;
+    if (!isSupported(f) || !isSupported(t)) return Future.value(null);
+    if (f == t) return Future.value(scale == 1 ? null : FxRate(from: from, to: to, rate: scale, date: day));
+    final d =
+        '${day.year.toString().padLeft(4, '0')}-${day.month.toString().padLeft(2, '0')}-'
+        '${day.day.toString().padLeft(2, '0')}';
+    final key = '$f>$t@$d';
+    if (_onDay[key] case final cached?) return cached;
+    final future = () async {
+      try {
+        final res = await _client
+            .get(Uri.parse('$baseUrl/$d').replace(queryParameters: {'from': f, 'to': t}))
+            .timeout(const Duration(seconds: 15));
+        if (res.statusCode != 200) return null;
+        final r = parseLatest(jsonDecode(res.body) as Map<String, dynamic>, f, t);
+        return r == null ? null : FxRate(from: from, to: to, rate: r.rate * scale, date: r.date);
+      } catch (e) {
+        debugPrint('Árfolyam lekérése nem sikerült ($key): $e');
+        return null;
+      }
+    }();
+    _onDay[key] = future;
+    // A sikertelen lekérés nem marad meg: legközelebb újra próbálja.
+    future.then((r) {
+      if (r == null) _onDay.remove(key);
+    });
+    return future;
+  }
+
   /// A „saját” devizapár: a dollár a megjelenítési pénznemben (USD/HUF); ha az
   /// dollár vagy nem jegyzett, akkor EUR/USD.
   static (String, String) homePair(String? displayCurrency) {

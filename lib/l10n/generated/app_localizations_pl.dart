@@ -2952,6 +2952,10 @@ class AppLocalizationsPl extends AppLocalizations {
       'Nie udało się zapisać kopii zapasowej. Spróbuj ponownie.';
 
   @override
+  String get syncTooLarge =>
+      'Twoje dane są zbyt duże, aby zsynchronizować je z kontem. Usuń niepotrzebne już transakcje lub notatki, a synchronizacja zostanie ponowiona.';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

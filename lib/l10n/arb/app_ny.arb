@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Osachepera {quantity} – masheya amenewo agulitsidwa kale",
   "restoreNothing": "Palibe zogula zakale zomwe zapezeka kuti zibwezeretsedwe.",
   "manageSubscriptionElsewhere": "Palibe kulembetsa koti muyang'anire pano. Kulembetsa komwe munagula mu App Store kapena Google Play kumayang'aniridwa mu zokonda za sitolo.",
-  "backupFailed": "Zosunga zobwezera sizinathe kusungidwa. Chonde yesaninso."
+  "backupFailed": "Zosunga zobwezera sizinathe kusungidwa. Chonde yesaninso.",
+  "syncTooLarge": "Deta yanu ndi yayikulu kwambiri kuti ilumikizidwe ndi akaunti yanu. Chotsani zogula ndi zogulitsa kapena zolemba zomwe simukuzifunanso, ndipo kudzayesanso."
 }

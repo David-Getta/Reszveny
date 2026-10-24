@@ -2875,6 +2875,10 @@ class AppLocalizationsBg extends AppLocalizations {
       'Резервното копие не можа да бъде запазено. Моля, опитайте отново.';
 
   @override
+  String get syncTooLarge =>
+      'Данните ви са твърде големи, за да се синхронизират с акаунта ви. Изтрийте транзакции или бележки, които вече не са ви нужни, и ще бъде опитано отново.';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

@@ -2883,6 +2883,10 @@ class AppLocalizationsHy extends AppLocalizations {
       'Չհաջողվեց պահել պահուստային պատճենը։ Խնդրում ենք նորից փորձել։';
 
   @override
+  String get syncTooLarge =>
+      'Ձեր տվյալները չափազանց մեծ են՝ ձեր հաշվի հետ համաժամացնելու համար։ Ջնջեք այն գործարքները կամ նշումները, որոնք այլևս պետք չեն, և կրկին փորձ կարվի։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

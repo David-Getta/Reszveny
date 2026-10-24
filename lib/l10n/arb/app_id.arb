@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Minimal {quantity} – sebanyak itu sudah terjual",
   "restoreNothing": "Tidak ditemukan pembelian sebelumnya untuk dipulihkan.",
   "manageSubscriptionElsewhere": "Tidak ada langganan untuk dikelola di sini. Langganan yang dibeli di App Store atau Google Play dikelola di pengaturan toko.",
-  "backupFailed": "Cadangan tidak dapat disimpan. Silakan coba lagi."
+  "backupFailed": "Cadangan tidak dapat disimpan. Silakan coba lagi.",
+  "syncTooLarge": "Data Anda terlalu besar untuk disinkronkan dengan akun Anda. Hapus transaksi atau catatan yang tidak lagi Anda perlukan, lalu sinkronisasi akan dicoba lagi."
 }

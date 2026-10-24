@@ -754,6 +754,7 @@
   "restoreNothing": "Nem találtunk visszaállítható korábbi vásárlást.",
   "manageSubscriptionElsewhere": "Itt nincs kezelhető előfizetés. Az App Store-ban vagy a Google Playen vett előfizetést a bolt beállításaiban kezelheted.",
   "backupFailed": "A mentés nem sikerült. Próbáld újra.",
+  "syncTooLarge": "Az adataid túl nagyok a fiókos szinkronhoz. Törölj a már nem szükséges tranzakciók vagy jegyzetek közül, és újra megpróbálja.",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

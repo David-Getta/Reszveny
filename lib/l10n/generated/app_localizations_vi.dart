@@ -2863,6 +2863,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get backupFailed => 'Không thể lưu bản sao lưu. Vui lòng thử lại.';
 
   @override
+  String get syncTooLarge =>
+      'Dữ liệu của bạn quá lớn để đồng bộ hóa với tài khoản. Hãy xóa các giao dịch hoặc ghi chú không còn cần đến, ứng dụng sẽ thử lại.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

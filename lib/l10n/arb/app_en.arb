@@ -2524,6 +2524,10 @@
   "@manageSubscriptionElsewhere": {"description": "Shown when the user taps \"Manage subscription\" but there is no browser (Stripe) subscription on the account."},
   "backupFailed": "The backup could not be saved. Please try again.",
   "@backupFailed": {"description": "Error after saving the backup file failed (e.g. no permission or disk full)."},
+  "syncTooLarge": "Your data is too large to sync with your account. Delete transactions or notes you no longer need, and it will try again.",
+  "@syncTooLarge": {
+    "description": "Shown under the sync row in Settings when the server rejected the upload because the synced data is over its size limit (about 2 MB)."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

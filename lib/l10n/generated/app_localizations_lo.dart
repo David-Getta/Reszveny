@@ -2843,6 +2843,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get backupFailed => 'ບໍ່ສາມາດບັນທຶກການສຳຮອງຂໍ້ມູນໄດ້. ກະລຸນາລອງໃໝ່.';
 
   @override
+  String get syncTooLarge =>
+      'ຂໍ້ມູນຂອງທ່ານໃຫຍ່ເກີນໄປທີ່ຈະຊິງຄ໌ກັບບັນຊີຂອງທ່ານ. ລຶບທຸລະກຳ ຫຼື ບັນທຶກທີ່ທ່ານບໍ່ຕ້ອງການອີກແລ້ວ ແລ້ວຈະລອງໃໝ່';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

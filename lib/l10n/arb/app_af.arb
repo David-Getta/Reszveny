@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Ten minste {quantity} – soveel is reeds verkoop",
   "restoreNothing": "Geen vorige aankope is gevind om te herstel nie.",
   "manageSubscriptionElsewhere": "Hier is geen intekening om te bestuur nie. ’n Intekening wat in die App Store of Google Play gekoop is, word in die winkel se instellings bestuur.",
-  "backupFailed": "Die rugsteun kon nie gestoor word nie. Probeer asseblief weer."
+  "backupFailed": "Die rugsteun kon nie gestoor word nie. Probeer asseblief weer.",
+  "syncTooLarge": "Jou data is te groot om met jou rekening te sinkroniseer. Vee transaksies of notas uit wat jy nie meer nodig het nie, en dit sal weer probeer."
 }

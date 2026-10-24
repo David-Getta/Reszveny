@@ -2880,6 +2880,10 @@ class AppLocalizationsIt extends AppLocalizations {
       'Non è stato possibile salvare il backup. Riprova.';
 
   @override
+  String get syncTooLarge =>
+      'I tuoi dati sono troppo grandi per essere sincronizzati con il tuo account. Elimina le transazioni o le note che non ti servono più e la sincronizzazione verrà ritentata.';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

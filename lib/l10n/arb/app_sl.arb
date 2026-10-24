@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Vsaj {quantity} – toliko jih je že prodanih",
   "restoreNothing": "Ni bilo najdenih prejšnjih nakupov za obnovitev.",
   "manageSubscriptionElsewhere": "Tu ni naročnine za upravljanje. Naročnino, kupljeno v App Store ali Google Play, upravljate v nastavitvah trgovine.",
-  "backupFailed": "Varnostne kopije ni bilo mogoče shraniti. Poskusite znova."
+  "backupFailed": "Varnostne kopije ni bilo mogoče shraniti. Poskusite znova.",
+  "syncTooLarge": "Vaši podatki so preveliki za sinhronizacijo z vašim računom. Izbrišite transakcije ali zapiske, ki jih ne potrebujete več, in sinhronizacija se bo poskusila znova."
 }

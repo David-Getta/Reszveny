@@ -2887,6 +2887,10 @@ class AppLocalizationsOm extends AppLocalizations {
       'Kuusaan deebii olkaa\'amuu hin dandeenye. Maaloo irra deebi\'ii yaali.';
 
   @override
+  String get syncTooLarge =>
+      'Odeeffannoon kee herrega kee waliin walsimsiisuuf baay\'ee guddaadha. Bittaa fi gurgurtaa ykn yaadannoo kana booda hin barbaachisne haqi, achiis irra deebi\'ee yaala.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

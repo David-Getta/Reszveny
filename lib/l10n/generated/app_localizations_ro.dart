@@ -2916,6 +2916,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get backupFailed => 'Backupul nu a putut fi salvat. Încearcă din nou.';
 
   @override
+  String get syncTooLarge =>
+      'Datele tale sunt prea mari pentru a fi sincronizate cu contul tău. Șterge tranzacțiile sau notițele de care nu mai ai nevoie și se va reîncerca.';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

@@ -2889,6 +2889,10 @@ class AppLocalizationsLn extends AppLocalizations {
       'Kopi ya kobomba ekokaki kobombama te. Meka lisusu.';
 
   @override
+  String get syncTooLarge =>
+      'Ba données na yo eleki monene mpo na synchronisation na compte na yo. Limwisa bosombi mpe boteki to ba note oyo osengeli na yango lisusu te, mpe ekomeka lisusu.';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

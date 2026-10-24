@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Najmenej {quantity} – toľko už bolo predaných",
   "restoreNothing": "Nenašli sa žiadne predchádzajúce nákupy na obnovenie.",
   "manageSubscriptionElsewhere": "Nie je tu žiadne predplatné na spravovanie. Predplatné kúpené v App Store alebo Google Play sa spravuje v nastaveniach obchodu.",
-  "backupFailed": "Zálohu sa nepodarilo uložiť. Skúste to znova."
+  "backupFailed": "Zálohu sa nepodarilo uložiť. Skúste to znova.",
+  "syncTooLarge": "Vaše údaje sú príliš veľké na synchronizáciu s vaším účtom. Odstráňte transakcie alebo poznámky, ktoré už nepotrebujete, a skúsi sa to znova."
 }

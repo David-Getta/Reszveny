@@ -2870,6 +2870,10 @@ class AppLocalizationsHi extends AppLocalizations {
   String get backupFailed => 'बैकअप सेव नहीं हो सका। कृपया पुनः प्रयास करें।';
 
   @override
+  String get syncTooLarge =>
+      'आपका डेटा आपके खाते के साथ सिंक करने के लिए बहुत बड़ा है। जिन लेन-देन या नोट्स की अब ज़रूरत नहीं है, उन्हें हटाएँ, फिर यह दोबारा कोशिश करेगा।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

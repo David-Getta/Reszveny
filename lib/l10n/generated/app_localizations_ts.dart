@@ -2897,6 +2897,10 @@ class AppLocalizationsTs extends AppLocalizations {
       'Nkopi yo hlayisa a yi kotanga ku hlayisiwa. Hi kombela u ringeta nakambe.';
 
   @override
+  String get syncTooLarge =>
+      'Data ya wena yi kulu ngopfu ku fambelanisiwa ni akhawunti ya wena. Sula swixaviwa ni swixavisiwa kumbe tinotsi leti u nga ha ti lavi, kutani ku ta ringetiwa nakambe.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

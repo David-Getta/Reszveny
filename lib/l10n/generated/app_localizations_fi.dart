@@ -2874,6 +2874,10 @@ class AppLocalizationsFi extends AppLocalizations {
       'Varmuuskopiota ei voitu tallentaa. Yritä uudelleen.';
 
   @override
+  String get syncTooLarge =>
+      'Tietosi ovat liian suuret synkronoitaviksi tilillesi. Poista tapahtumia tai muistiinpanoja, joita et enää tarvitse, niin synkronointia yritetään uudelleen.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

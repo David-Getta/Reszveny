@@ -18,6 +18,7 @@ import '../../widgets/desktop_chrome.dart';
 import '../alerts/alerts_view.dart';
 import '../alerts/price_alert.dart';
 import '../portfolio/add_lot_dialog.dart';
+import '../portfolio/portfolio_store.dart' show storedCurrency;
 import '../portfolio/position_card.dart';
 import '../recognition/stock_recognizer.dart';
 import 'widgets/analysis_card.dart';
@@ -122,13 +123,15 @@ class _StockDetailPageState extends State<StockDetailPage> {
     }
     if (!mounted) return;
     final symbol = widget.candidate.symbol.toUpperCase();
+    // Egy ticker tételei egy pénznemben: a már rögzítetteké nyer (különben a pozíció
+    // átváltás nélkül adná össze őket); a mai ár csak azonos pénznemben előtöltés.
+    final held = services.portfolio.currencyOf(symbol);
     final added = await showAddLotDialog(
       context,
       symbol: symbol,
-      // Cégprofil nélkül (ETF, sok nem amerikai papír): a meglévő pozíció, majd a
-      // tőzsde pénzneme, csak végül dollár.
-      currency: d?.currency ?? services.portfolio.positionOf(symbol)?.currency ?? currencyForListing(symbol) ?? 'USD',
-      currentPrice: d?.quote?.price,
+      // Cégprofil nélkül (ETF, sok nem amerikai papír): a tőzsde pénzneme, csak végül dollár.
+      currency: held ?? d?.currency ?? currencyForListing(symbol) ?? 'USD',
+      currentPrice: held == null || held == storedCurrency(d?.currency ?? held) ? d?.quote?.price : null,
     );
     if (added) messenger.showSnackBar(SnackBar(content: Text(l10n.portfolioAdded(symbol))));
   }

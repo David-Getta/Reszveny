@@ -2951,6 +2951,10 @@ class AppLocalizationsSl extends AppLocalizations {
       'Varnostne kopije ni bilo mogoče shraniti. Poskusite znova.';
 
   @override
+  String get syncTooLarge =>
+      'Vaši podatki so preveliki za sinhronizacijo z vašim računom. Izbrišite transakcije ali zapiske, ki jih ne potrebujete več, in sinhronizacija se bo poskusila znova.';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Saʼivévo {quantity} – oñemuma upe papy",
   "restoreNothing": "Ndojejuhúi jejogua yma ikatúva oñembojevy.",
   "manageSubscriptionElsewhere": "Ndaipóri ápe ñemboheraguapy eñangareko hag̃ua. Ñemboheraguapy ojejoguáva App Store térã Google Play-pe oñeñangareko ñemuha ñembohekópe.",
-  "backupFailed": "Ndaikatúi oñeñongatu mbaʼekuaarã. Ehaʼã jey."
+  "backupFailed": "Ndaikatúi oñeñongatu mbaʼekuaarã. Ehaʼã jey.",
+  "syncTooLarge": "Ne marandukuéra tuichaiterei oñesincroniza hag̃ua nde mbaʼetépe. Embogue jejogua ha ñemu térã jehaipyre ndereikotevẽvéima, ha oñehaʼã jeýta."
 }

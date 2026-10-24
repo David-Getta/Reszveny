@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Polo menos {quantity} – xa se venderon tantas",
   "restoreNothing": "Non se atoparon compras anteriores para restaurar.",
   "manageSubscriptionElsewhere": "Aquí non hai ningunha subscrición que xestionar. Unha subscrición mercada na App Store ou en Google Play xestiónase na configuración da tenda.",
-  "backupFailed": "Non se puido gardar a copia de seguranza. Téntao de novo."
+  "backupFailed": "Non se puido gardar a copia de seguranza. Téntao de novo.",
+  "syncTooLarge": "Os teus datos son demasiado grandes para sincronizalos coa túa conta. Elimina as transaccións ou notas que xa non necesites e volverase tentar."
 }

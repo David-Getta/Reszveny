@@ -33,6 +33,7 @@ class PriceAlert {
     this.triggeredPrice,
     this.peak,
     this.modified,
+    this.renamed,
   });
 
   final String id;
@@ -52,6 +53,11 @@ class PriceAlert {
   /// A felhasználó utolsó módosítása (szerkesztés, újraélesítés, visszaállítás);
   /// szinkronkor a később módosított változat nyer – egy közben teljesült is.
   final DateTime? modified;
+
+  /// Az utolsó tickerváltás ideje (UTC): szinkronkor ez is számít az újabb
+  /// változathoz, de egy másutt közben törölt riasztást nem hoz vissza, és nem
+  /// élesít újra.
+  final DateTime? renamed;
 
   /// Követő stopnál az a szint, ahol szól (a csúcs alatt [value] százalékkal).
   double? get trailingLevel => kind == AlertKind.trailing && peak != null ? peak! * (1 - value / 100) : null;
@@ -112,6 +118,7 @@ class PriceAlert {
     triggeredPrice: price,
     peak: peak,
     modified: modified,
+    renamed: renamed,
   );
 
   /// Újraélesítéskor a követő stop csúcsa a következő árnál indul újra.
@@ -123,6 +130,7 @@ class PriceAlert {
     currency: currency,
     createdAt: createdAt,
     modified: DateTime.now().toUtc(),
+    renamed: renamed,
   );
 
   /// Szerkesztett változat ugyanazzal az azonosítóval (a szinkron így felülírja,
@@ -136,6 +144,7 @@ class PriceAlert {
     createdAt: createdAt,
     peak: kind == AlertKind.trailing ? peak : null,
     modified: DateTime.now().toUtc(),
+    renamed: renamed,
   );
 
   /// Felaprózás után az új egységben ([factor] = régi darab / új darab): az árszint
@@ -152,6 +161,7 @@ class PriceAlert {
     triggeredPrice: triggeredPrice,
     peak: peak == null ? null : peak! * factor,
     modified: DateTime.now().toUtc(),
+    renamed: renamed,
   );
 
   PriceAlert withPeak(double price) => PriceAlert(
@@ -165,6 +175,7 @@ class PriceAlert {
     triggeredPrice: triggeredPrice,
     peak: price,
     modified: modified,
+    renamed: renamed,
   );
 
   Map<String, dynamic> toJson() => {
@@ -178,6 +189,7 @@ class PriceAlert {
     'triggered_price': ?triggeredPrice,
     'peak': ?peak,
     if (modified != null) 'edited': modified!.toUtc().toIso8601String(),
+    if (renamed != null) 'renamed': renamed!.toUtc().toIso8601String(),
   };
 
   static PriceAlert? fromJson(Map<String, dynamic> j) {
@@ -198,6 +210,7 @@ class PriceAlert {
       triggeredPrice: tp is num ? tp.toDouble() : null,
       peak: peak is num && peak > 0 ? peak.toDouble() : null,
       modified: DateTime.tryParse(asText(j['edited']) ?? ''),
+      renamed: DateTime.tryParse(asText(j['renamed']) ?? ''),
     );
   }
 }
@@ -361,7 +374,8 @@ class AlertStore extends ChangeNotifier {
         triggeredAt: a.triggeredAt,
         triggeredPrice: a.triggeredPrice,
         peak: a.peak,
-        modified: stamp,
+        modified: a.modified,
+        renamed: stamp,
       );
     }
     await _changed();

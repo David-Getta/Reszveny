@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "{quantity} walima ka caya – o hakɛ feerela kaban",
   "restoreNothing": "Sanni kɔrɔ si ma sɔrɔ min bɛ se ka segin.",
   "manageSubscriptionElsewhere": "Abɔnɛman si tɛ yan ka ɲɛnabɔ. Abɔnɛman min sanna App Store walima Google Play la, o bɛ ɲɛnabɔ butiki labɛnw kɔnɔ.",
-  "backupFailed": "Kopi lamaralen ma se ka mara. A kɔrɔbɔ tugun."
+  "backupFailed": "Kopi lamaralen ma se ka mara. A kɔrɔbɔ tugun.",
+  "syncTooLarge": "I ka kunnafoniw ka bon kojugu ka kɛ kelen ye i ka kɔnti la. Sanniw ni feereliw walima sɛbɛnniw minnu tɛ i mago ye tun, olu jɔsi, o kɔ a bɛ segin ka a kɛ."
 }

@@ -2873,6 +2873,10 @@ class AppLocalizationsAz extends AppLocalizations {
       'Ehtiyat nüsxəni saxlamaq mümkün olmadı. Yenidən cəhd edin.';
 
   @override
+  String get syncTooLarge =>
+      'Məlumatlarınız hesabınızla sinxronlaşdırmaq üçün çox böyükdür. Artıq lazım olmayan əməliyyatları və ya qeydləri silin, yenidən cəhd ediləcək.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

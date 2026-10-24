@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Kanenge {quantity} – masheya akadaro akatotengeswa",
   "restoreNothing": "Hapana zvawakatenga kare zvawanikwa kuti zvidzorerwe.",
   "manageSubscriptionElsewhere": "Hapana kunyoresa kwekutarisira pano. Kunyoresa kwawakatenga muApp Store kana Google Play kunotarisirwa mumarongero echitoro.",
-  "backupFailed": "Bhakapu haina kukwanisa kuchengetedzwa. Ndapota edza zvakare."
+  "backupFailed": "Bhakapu haina kukwanisa kuchengetedzwa. Ndapota edza zvakare.",
+  "syncTooLarge": "Data yako yakawandisa kuti iwiriraniswe neakaundi yako. Dzima zvakatengwa nezvakatengeswa kana zvinyorwa zvausisade, uye kuchaedza zvakare."
 }

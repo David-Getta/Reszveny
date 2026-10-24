@@ -2886,6 +2886,10 @@ class AppLocalizationsTa extends AppLocalizations {
       'காப்புப்பிரதியைச் சேமிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்.';
 
   @override
+  String get syncTooLarge =>
+      'உங்கள் தரவு உங்கள் கணக்குடன் ஒத்திசைக்க முடியாத அளவுக்குப் பெரிதாக உள்ளது. இனி தேவைப்படாத பரிவர்த்தனைகளையோ குறிப்புகளையோ நீக்கவும், பிறகு மீண்டும் முயலும்.';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

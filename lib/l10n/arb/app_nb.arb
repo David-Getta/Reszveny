@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Minst {quantity} – så mange er allerede solgt",
   "restoreNothing": "Fant ingen tidligere kjøp å gjenopprette.",
   "manageSubscriptionElsewhere": "Det finnes ikke noe abonnement å administrere her. Et abonnement kjøpt i App Store eller Google Play administreres i butikkens innstillinger.",
-  "backupFailed": "Sikkerhetskopien kunne ikke lagres. Prøv igjen."
+  "backupFailed": "Sikkerhetskopien kunne ikke lagres. Prøv igjen.",
+  "syncTooLarge": "Dataene dine er for store til å synkroniseres med kontoen din. Slett transaksjoner eller notater du ikke lenger trenger, så prøves det på nytt."
 }

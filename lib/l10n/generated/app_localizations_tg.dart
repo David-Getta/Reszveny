@@ -2875,6 +2875,10 @@ class AppLocalizationsTg extends AppLocalizations {
       'Нусхаи эҳтиётӣ нигоҳ дошта нашуд. Лутфан, бори дигар кӯшиш кунед.';
 
   @override
+  String get syncTooLarge =>
+      'Маълумоти шумо барои ҳамоҳангсозӣ бо ҳисобатон аз ҳад калон аст. Амалиётҳо ё қайдҳоеро, ки дигар лозим нестанд, нест кунед ва дубора кӯшиш карда мешавад.';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

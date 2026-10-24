@@ -2876,6 +2876,10 @@ class AppLocalizationsUz extends AppLocalizations {
       'Zaxira nusxani saqlab boʻlmadi. Qaytadan urinib koʻring.';
 
   @override
+  String get syncTooLarge =>
+      'Maʼlumotlaringiz hisobingiz bilan sinxronlash uchun juda katta. Endi kerak boʻlmagan operatsiyalar yoki qaydlarni oʻchiring, shunda qayta urinib koʻriladi.';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

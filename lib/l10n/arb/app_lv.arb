@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Vismaz {quantity} – tik daudz jau ir pārdots",
   "restoreNothing": "Netika atrasti iepriekšēji pirkumi, ko atjaunot.",
   "manageSubscriptionElsewhere": "Šeit nav abonementa, ko pārvaldīt. App Store vai Google Play iegādāts abonements tiek pārvaldīts veikala iestatījumos.",
-  "backupFailed": "Dublējumu neizdevās saglabāt. Lūdzu, mēģiniet vēlreiz."
+  "backupFailed": "Dublējumu neizdevās saglabāt. Lūdzu, mēģiniet vēlreiz.",
+  "syncTooLarge": "Jūsu dati ir pārāk lieli, lai tos sinhronizētu ar jūsu kontu. Izdzēsiet darījumus vai piezīmes, kas jums vairs nav vajadzīgas, un tiks mēģināts vēlreiz."
 }

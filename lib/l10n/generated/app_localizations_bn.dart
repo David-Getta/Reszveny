@@ -2872,6 +2872,10 @@ class AppLocalizationsBn extends AppLocalizations {
       'ব্যাকআপ সেভ করা যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন।';
 
   @override
+  String get syncTooLarge =>
+      'আপনার ডেটা অ্যাকাউন্টের সাথে সিঙ্ক করার জন্য খুব বড়। যেসব লেনদেন বা নোট আর দরকার নেই সেগুলো মুছুন, তারপর এটি আবার চেষ্টা করবে।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

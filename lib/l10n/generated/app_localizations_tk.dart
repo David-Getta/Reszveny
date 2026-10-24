@@ -2874,6 +2874,10 @@ class AppLocalizationsTk extends AppLocalizations {
       'Ätiýaçlyk nusgany saklap bolmady. Gaýtadan synanyşyň.';
 
   @override
+  String get syncTooLarge =>
+      'Maglumatlaryňyz hasabyňyz bilen sinhronlamak üçin örän uly. Indi gerek däl amallary ýa-da bellikleri pozuň, şonda täzeden synanyşylar.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

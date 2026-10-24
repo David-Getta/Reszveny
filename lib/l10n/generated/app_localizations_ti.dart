@@ -2832,6 +2832,10 @@ class AppLocalizationsTi extends AppLocalizations {
   String get backupFailed => 'ምትኪእ ቅዳሕ ክዕቀብ ኣይከኣለን። በጃኹም ዳግማይ ፈትኑ።';
 
   @override
+  String get syncTooLarge =>
+      'ሓበሬታኹም ምስ ሕሳብኩም ንምስምማዕ ኣዝዩ ዓብዩ እዩ። ዘየድልየኩም ልውውጣት ወይ ማስታወሻታት ሰርዙ፣ ድሕሪኡ እንደገና ክፍተን እዩ።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

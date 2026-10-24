@@ -2865,6 +2865,10 @@ class AppLocalizationsBho extends AppLocalizations {
   String get backupFailed => 'बैकअप सेव ना हो सकल। कृपया फेर से कोसिस करीं।';
 
   @override
+  String get syncTooLarge =>
+      'राउर डेटा खाता से सिंक करे खातिर बहुत बड़ बा। जवन लेन-देन भा नोट के अब जरूरत नइखे, ओके मिटाईं, फेर ई दोबारा कोसिस करी।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

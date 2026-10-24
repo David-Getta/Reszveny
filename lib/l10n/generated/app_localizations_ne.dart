@@ -2870,6 +2870,10 @@ class AppLocalizationsNe extends AppLocalizations {
       'ब्याकअप सुरक्षित गर्न सकिएन। कृपया फेरि प्रयास गर्नुहोस्।';
 
   @override
+  String get syncTooLarge =>
+      'तपाईंको डेटा तपाईंको खातासँग सिंक गर्न धेरै ठूलो छ। अब नचाहिने कारोबार वा टिपोटहरू मेटाउनुहोस्, अनि यो फेरि प्रयास हुनेछ।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

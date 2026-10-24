@@ -2944,6 +2944,10 @@ class AppLocalizationsAr extends AppLocalizations {
       'تعذر حفظ النسخة الاحتياطية. يرجى المحاولة مرة أخرى.';
 
   @override
+  String get syncTooLarge =>
+      'بياناتك كبيرة جدًا بحيث تتعذّر مزامنتها مع حسابك. احذف المعاملات أو الملاحظات التي لم تعد بحاجة إليها، وستتم إعادة المحاولة.';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

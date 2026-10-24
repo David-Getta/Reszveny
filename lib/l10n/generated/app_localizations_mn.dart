@@ -2871,6 +2871,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get backupFailed => 'Нөөцийг хадгалж чадсангүй. Дахин оролдоно уу.';
 
   @override
+  String get syncTooLarge =>
+      'Таны өгөгдөл хэтэрхий том тул бүртгэлтэй тань синк хийх боломжгүй байна. Хэрэггүй болсон гүйлгээ эсвэл тэмдэглэлээ устгавал дахин оролдоно.';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

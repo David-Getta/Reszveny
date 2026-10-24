@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Ugu yaraan {quantity} – intaas ayaa horay loo iibiyay",
   "restoreNothing": "Lama helin iibsasho hore oo la soo celin karo.",
   "manageSubscriptionElsewhere": "Halkan ma jiro rukummo la maamuli karo. Rukummada laga iibsaday App Store ama Google Play waxaa lagu maamulaa dejinta dukaanka.",
-  "backupFailed": "Nuqulka kaydka lama kaydin karin. Fadlan isku day mar kale."
+  "backupFailed": "Nuqulka kaydka lama kaydin karin. Fadlan isku day mar kale.",
+  "syncTooLarge": "Xogtaadu aad bay u weyn tahay in lagu waafajiyo akoonkaaga. Tirtir macaamilada ama qoraallada aadan mar dambe u baahnayn, kadibna dib ayay isugu dayi doontaa."
 }

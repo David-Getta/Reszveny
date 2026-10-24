@@ -2838,6 +2838,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get backupFailed => 'ไม่สามารถบันทึกข้อมูลสำรองได้ โปรดลองอีกครั้ง';
 
   @override
+  String get syncTooLarge =>
+      'ข้อมูลของคุณมีขนาดใหญ่เกินกว่าจะซิงค์กับบัญชีได้ ลบรายการซื้อขายหรือบันทึกที่ไม่ต้องการแล้ว จากนั้นระบบจะลองอีกครั้ง';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

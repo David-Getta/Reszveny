@@ -2880,6 +2880,10 @@ class AppLocalizationsHa extends AppLocalizations {
   String get backupFailed => 'Ba a iya adana ajiyar ba. Da fatan a sake gwada.';
 
   @override
+  String get syncTooLarge =>
+      'Bayananka sun yi yawa matuƙa don daidaitawa da asusunka. Share ma\'amaloli ko bayanan da ba ka buƙata yanzu, sai a sake gwadawa.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "{quantity} to koleka – motango yango esili kotekama",
   "restoreNothing": "Bosombi ya kala moko te emonani mpo na kozongisa.",
   "manageSubscriptionElsewhere": "Abonnement moko te ezali awa ya kokamba. Abonnement oyo osombaki na App Store to Google Play ekambamaka na ba-paramètre ya store.",
-  "backupFailed": "Kopi ya kobomba ekokaki kobombama te. Meka lisusu."
+  "backupFailed": "Kopi ya kobomba ekokaki kobombama te. Meka lisusu.",
+  "syncTooLarge": "Ba données na yo eleki monene mpo na synchronisation na compte na yo. Limwisa bosombi mpe boteki to ba note oyo osengeli na yango lisusu te, mpe ekomeka lisusu."
 }

@@ -2948,6 +2948,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get backupFailed => 'Zálohu sa nepodarilo uložiť. Skúste to znova.';
 
   @override
+  String get syncTooLarge =>
+      'Vaše údaje sú príliš veľké na synchronizáciu s vaším účtom. Odstráňte transakcie alebo poznámky, ktoré už nepotrebujete, a skúsi sa to znova.';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

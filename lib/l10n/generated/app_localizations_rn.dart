@@ -2884,6 +2884,10 @@ class AppLocalizationsRn extends AppLocalizations {
       'Ububiko bw\'ingoboka ntibwashoboye kubikwa. Subira ugerageze.';
 
   @override
+  String get syncTooLarge =>
+      'Amakuru yawe ni menshi cane ku buryo adashobora guhuzwa na konti yawe. Futa ivyaguzwe n\'ivyagurishijwe canke ivyo wanditse utagikeneye, hanyuma bizosubira kugerageza.';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

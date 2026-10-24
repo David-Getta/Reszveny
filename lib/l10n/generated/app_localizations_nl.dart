@@ -2880,6 +2880,10 @@ class AppLocalizationsNl extends AppLocalizations {
       'De back-up kon niet worden opgeslagen. Probeer het opnieuw.';
 
   @override
+  String get syncTooLarge =>
+      'Je gegevens zijn te groot om met je account te synchroniseren. Verwijder transacties of notities die je niet meer nodig hebt, dan wordt het opnieuw geprobeerd.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

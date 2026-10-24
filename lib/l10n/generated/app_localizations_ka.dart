@@ -2872,6 +2872,10 @@ class AppLocalizationsKa extends AppLocalizations {
       'სარეზერვო ასლის შენახვა ვერ მოხერხდა. სცადეთ ხელახლა.';
 
   @override
+  String get syncTooLarge =>
+      'თქვენი მონაცემები ზედმეტად დიდია ანგარიშთან სინქრონიზაციისთვის. წაშალეთ ტრანზაქციები ან ჩანაწერები, რომლებიც აღარ გჭირდებათ, და ხელახლა ცდა მოხდება.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

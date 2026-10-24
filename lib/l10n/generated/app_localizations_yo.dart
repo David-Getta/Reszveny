@@ -2869,6 +2869,10 @@ class AppLocalizationsYo extends AppLocalizations {
       'A kò lè fi ẹ̀dà ìpamọ́ pamọ́. Jọ̀ọ́ tún gbìyànjú.';
 
   @override
+  String get syncTooLarge =>
+      'Dátà rẹ ti tóbi jù láti múṣiṣẹ́pọ̀ pẹ̀lú àkáǹtì rẹ. Pa àwọn ìdúnàdúrà tàbí àkọsílẹ̀ tí o kò nílò mọ́ rẹ́, yóò sì tún gbìyànjú.';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

@@ -2870,6 +2870,10 @@ class AppLocalizationsSi extends AppLocalizations {
       'උපස්ථය සුරැකිය නොහැකි විය. කරුණාකර නැවත උත්සාහ කරන්න.';
 
   @override
+  String get syncTooLarge =>
+      'ඔබේ දත්ත ඔබේ ගිණුම සමඟ සමමුහුර්ත කළ නොහැකි තරම් විශාලයි. තවදුරටත් අවශ්‍ය නැති ගනුදෙනු හෝ සටහන් මකන්න, එවිට එය නැවත උත්සාහ කරනු ඇත.';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

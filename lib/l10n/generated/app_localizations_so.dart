@@ -2882,6 +2882,10 @@ class AppLocalizationsSo extends AppLocalizations {
       'Nuqulka kaydka lama kaydin karin. Fadlan isku day mar kale.';
 
   @override
+  String get syncTooLarge =>
+      'Xogtaadu aad bay u weyn tahay in lagu waafajiyo akoonkaaga. Tirtir macaamilada ama qoraallada aadan mar dambe u baahnayn, kadibna dib ayay isugu dayi doontaa.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

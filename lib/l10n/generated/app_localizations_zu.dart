@@ -2888,6 +2888,10 @@ class AppLocalizationsZu extends AppLocalizations {
       'Isipele asikwazanga ukulondolozwa. Sicela uzame futhi.';
 
   @override
+  String get syncTooLarge =>
+      'Idatha yakho inkulu kakhulu ukuthi ivumelaniswe ne-akhawunti yakho. Susa ukuthenga nokuthengisa noma amanothi ongasawadingi, bese kuzozama futhi.';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

@@ -2864,6 +2864,10 @@ class AppLocalizationsMai extends AppLocalizations {
   String get backupFailed => 'बैकअप सेव नहि भऽ सकल। कृपया फेरसँ प्रयास करू।';
 
   @override
+  String get syncTooLarge =>
+      'अहाँक डेटा खाता संग सिंक करबाक लेल बहुत पैघ अछि। जे लेन-देन वा नोटक आब काज नहि अछि, से मेटाउ, तखन ई फेर प्रयास करत।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

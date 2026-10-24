@@ -2875,6 +2875,10 @@ class AppLocalizationsKi extends AppLocalizations {
   String get backupFailed => 'Mbaka ndĩngĩahotire kũigwo. Geria rĩngĩ.';
 
   @override
+  String get syncTooLarge =>
+      'Data yaku nĩ nene mũno gũtũma ĩkorwo o ũndũ ũmwe na akaunti yaku. Eheria ũgũri na ũendia kana maandĩko marĩa ũtabatarĩte rĩngĩ, nayo nĩ ĩkũgeria rĩngĩ.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

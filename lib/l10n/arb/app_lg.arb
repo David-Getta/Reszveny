@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Waakiri {quantity} – omuwendo ogwo gwatundiddwa dda",
   "restoreNothing": "Tewali bye wagula edda ebizuuliddwa okuzzaawo.",
   "manageSubscriptionElsewhere": "Wano tewali kwewandiisa kwa kuddukanya. Okwewandiisa okwagulwa mu App Store oba Google Play kuddukanyizibwa mu nsengeka z'edduuka.",
-  "backupFailed": "Kkopi ey'obukuumi tesobodde kuterekebwa. Gezaako nate."
+  "backupFailed": "Kkopi ey'obukuumi tesobodde kuterekebwa. Gezaako nate.",
+  "syncTooLarge": "Data yo nnene nnyo okukwataganyizibwa n'akawunti yo. Sangula bye wagula ne bye watunda oba ebiwandiiko by'otokyetaaga, olwo kujja kuddamu okugezaako."
 }

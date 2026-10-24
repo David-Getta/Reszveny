@@ -6,6 +6,15 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../core/util/text.dart';
 import '../../core/util/tombstones.dart';
 
+/// A tárolt pénznemkód: nagybetűs, de a pennyben (`GBp`) és centben (`ZAc`)
+/// jegyzett ár kódja az egyértelmű nagybetűs alakra vált (GBX, ZAC) – a
+/// nagybetűsítés különben fontot (GBP) csinálna belőle, százszoros értékkel.
+String storedCurrency(String code) => switch (code.trim()) {
+  'GBp' => 'GBX',
+  'ZAc' => 'ZAC',
+  final c => c.toUpperCase(),
+};
+
 /// Egy tranzakció: vétel (vagy [sell] esetén eladás) – hány darab, milyen
 /// áron (a részvény saját pénznemében), mikor.
 class PortfolioLot {
@@ -20,6 +29,7 @@ class PortfolioLot {
     this.account,
     this.fee = 0,
     this.edited,
+    this.renamed,
   });
 
   final String id;
@@ -29,6 +39,11 @@ class PortfolioLot {
   /// Az utolsó javítás ideje (UTC); `null`, ha nem javították. Szinkronkor azonos
   /// azonosítónál az újabb javítás nyer.
   final DateTime? edited;
+
+  /// Az utolsó tickerváltás ideje (UTC): szinkronkor azonos azonosítónál ez is
+  /// számít az újabb változathoz, de egy másutt közben törölt tételt nem hoz
+  /// vissza (az nem a tétel javítása).
+  final DateTime? renamed;
 
   /// Darabonkénti vétel- vagy eladási ár a részvény pénznemében.
   final double price;
@@ -82,6 +97,7 @@ class PortfolioLot {
     'account': ?account,
     if (fee > 0) 'fee': fee,
     if (edited != null) 'edited': edited!.toUtc().toIso8601String(),
+    if (renamed != null) 'renamed': renamed!.toUtc().toIso8601String(),
   };
 
   static PortfolioLot? fromJson(Map<String, dynamic> j) {
@@ -93,12 +109,13 @@ class PortfolioLot {
       symbol: symbol,
       quantity: q.toDouble(),
       price: p.toDouble(),
-      currency: (asText(j['currency']) ?? 'USD').toUpperCase(),
+      currency: storedCurrency(asText(j['currency']) ?? 'USD'),
       date: DateTime.tryParse(asText(j['date']) ?? ''),
       sell: j['side'] == 'sell',
       account: cleanAccount(j['account']),
       fee: cleanFee(j['fee']),
       edited: DateTime.tryParse(asText(j['edited']) ?? ''),
+      renamed: DateTime.tryParse(asText(j['renamed']) ?? ''),
     );
   }
 }
@@ -114,6 +131,7 @@ class DividendRecord {
     this.date,
     this.account,
     this.edited,
+    this.renamed,
   });
 
   final String id;
@@ -122,6 +140,9 @@ class DividendRecord {
 
   /// Az utolsó javítás ideje (UTC); `null`, ha nem javították.
   final DateTime? edited;
+
+  /// Az utolsó tickerváltás ideje (UTC), mint a [PortfolioLot.renamed].
+  final DateTime? renamed;
   final String currency;
   final DateTime? date;
 
@@ -139,6 +160,7 @@ class DividendRecord {
     if (date != null) 'date': date!.toIso8601String().substring(0, 10),
     'account': ?account,
     if (edited != null) 'edited': edited!.toUtc().toIso8601String(),
+    if (renamed != null) 'renamed': renamed!.toUtc().toIso8601String(),
   };
 
   static DividendRecord? fromJson(Map<String, dynamic> j) {
@@ -149,10 +171,11 @@ class DividendRecord {
       id: asText(j['id']) ?? '${symbol}_d${DateTime.now().microsecondsSinceEpoch}',
       symbol: symbol,
       amount: a.toDouble(),
-      currency: (asText(j['currency']) ?? 'USD').toUpperCase(),
+      currency: storedCurrency(asText(j['currency']) ?? 'USD'),
       date: DateTime.tryParse(asText(j['date']) ?? ''),
       account: PortfolioLot.cleanAccount(j['account']),
       edited: DateTime.tryParse(asText(j['edited']) ?? ''),
+      renamed: DateTime.tryParse(asText(j['renamed']) ?? ''),
     );
   }
 }
@@ -168,12 +191,16 @@ class SplitRecord {
     required this.to,
     required this.date,
     this.edited,
+    this.renamed,
   });
 
   final String id;
   final String symbol;
   final int from;
   final int to;
+
+  /// Az utolsó tickerváltás ideje (UTC), mint a [PortfolioLot.renamed].
+  final DateTime? renamed;
 
   /// A felaprózás napja (éjfél): a létrehozáskor (`addSplit`, `fromJson`) kerekítve.
   final DateTime date;
@@ -200,6 +227,7 @@ class SplitRecord {
     'to': to,
     'date': date.toIso8601String().substring(0, 10),
     if (edited != null) 'edited': edited!.toUtc().toIso8601String(),
+    if (renamed != null) 'renamed': renamed!.toUtc().toIso8601String(),
   };
 
   static SplitRecord? fromJson(Map<String, dynamic> j) {
@@ -214,6 +242,7 @@ class SplitRecord {
       to: to,
       date: DateTime(date.year, date.month, date.day),
       edited: DateTime.tryParse(asText(j['edited']) ?? ''),
+      renamed: DateTime.tryParse(asText(j['renamed']) ?? ''),
     );
   }
 
@@ -235,6 +264,7 @@ class SplitRecord {
       account: l.account,
       fee: l.fee,
       edited: l.edited,
+      renamed: l.renamed,
     );
   }
 
@@ -254,6 +284,7 @@ class SplitRecord {
       account: l.account,
       fee: l.fee,
       edited: l.edited,
+      renamed: l.renamed,
     );
   }
 }
@@ -627,29 +658,33 @@ class PortfolioStore extends ChangeNotifier {
   /// Egy tétel a felaprózásokkal igazítva, ahogy a pozíciókban és a listákban látszik.
   PortfolioLot adjustedLot(PortfolioLot l) => _splits.fold(l, (lot, s) => s.apply(lot));
 
-  /// Az [adjustedLot] visszafelé: a mai (felaprózás utáni) darabszámban és árban
-  /// megadott tétel tárolt alakja, a napja utáni felaprózásokat visszacsinálva
-  /// (javításkor a dialógus a látott számokkal dolgozik).
-  /// A részvényből [date] napján birtokolt darabszám (felaprózással igazítva, minden
-  /// számlán; a dátum nélküli tétel a kezdettől számít).
-  double quantityAt(String symbol, DateTime date) {
+  /// A részvényből [date] napján birtokolt darabszám (felaprózással igazítva; az
+  /// [account] számlán, `null`: minden számlán; a dátum nélküli tétel a kezdettől számít).
+  double quantityAt(String symbol, DateTime date, {String? account}) {
     final s = symbol.toUpperCase();
     var q = 0.0;
     for (final l in adjustedLots) {
-      if (l.symbol == s && (l.date == null || !l.date!.isAfter(date))) q += l.signedQuantity;
+      if (l.symbol != s || (account != null && l.account != account)) continue;
+      if (l.date == null || !l.date!.isAfter(date)) q += l.signedQuantity;
     }
     return q;
   }
 
-  /// Egy kapott osztalék a mai darabszámra arányosítva (a bekerülési hozamhoz): egy
-  /// azóta eladott vagy vett rész ne torzítsa. Dátum vagy akkori darab nélkül 1.
-  double dividendScale(DividendRecord d) {
-    final date = d.date;
-    if (date == null) return 1;
-    final then = quantityAt(d.symbol, date);
-    return then <= 1e-9 ? 1 : (quantityAt(d.symbol, DateTime(9999)) / then).clamp(0, double.infinity).toDouble();
+  /// A mai darabszám a [date] napján birtokolthoz képest (az [account] mint a
+  /// [quantityAt]-nál): egy azóta eladott vagy vett rész arányosításához. Akkori darab nélkül 1.
+  double holdingScale(String symbol, DateTime date, {String? account}) {
+    final then = quantityAt(symbol, date, account: account);
+    if (then <= 1e-9) return 1;
+    return (quantityAt(symbol, DateTime(9999), account: account) / then).clamp(0, double.infinity).toDouble();
   }
 
+  /// Egy kapott osztalék a mai darabszámra arányosítva (a bekerülési hozamhoz): egy
+  /// azóta eladott vagy vett rész ne torzítsa. Dátum vagy akkori darab nélkül 1.
+  double dividendScale(DividendRecord d) => d.date == null ? 1 : holdingScale(d.symbol, d.date!);
+
+  /// Az [adjustedLot] visszafelé: a mai (felaprózás utáni) darabszámban és árban
+  /// megadott tétel tárolt alakja, a napja utáni felaprózásokat visszacsinálva
+  /// (javításkor a dialógus a látott számokkal dolgozik).
   PortfolioLot storedLot(PortfolioLot l) => _splits.reversed.fold(l, (lot, s) => s.revert(lot));
 
   /// A tranzakciók és a felaprózások tartalma: ha változik (egy javítás is,
@@ -918,6 +953,13 @@ class PortfolioStore extends ChangeNotifier {
     return [for (final e in bySymbol.entries) Position(symbol: e.key, currency: e.value.first.currency, lots: e.value)];
   }
 
+  /// A ticker tételeinek pénzneme: az elsőként rögzítetté, ahogy a pozíció is
+  /// számol (egy új tétel ebben kerüljön be); `null`, ha még nincs tétele.
+  String? currencyOf(String symbol) {
+    final s = symbol.toUpperCase();
+    return _lots.where((l) => l.symbol == s).firstOrNull?.currency;
+  }
+
   Position? positionOf(String symbol) {
     final s = symbol.toUpperCase();
     return positions.where((p) => p.symbol == s).firstOrNull;
@@ -961,7 +1003,7 @@ class PortfolioStore extends ChangeNotifier {
       symbol: s,
       quantity: quantity,
       price: price,
-      currency: currency.toUpperCase(),
+      currency: storedCurrency(currency),
       date: date,
       sell: sell,
       account: canonicalAccount(account),
@@ -1092,7 +1134,7 @@ class PortfolioStore extends ChangeNotifier {
       id: '${s}_d${DateTime.now().microsecondsSinceEpoch}',
       symbol: s,
       amount: amount,
-      currency: currency.toUpperCase(),
+      currency: storedCurrency(currency),
       date: date,
       account: canonicalAccount(account),
     );
@@ -1142,7 +1184,7 @@ class PortfolioStore extends ChangeNotifier {
       id: d.id,
       symbol: d.symbol.trim().toUpperCase(),
       amount: d.amount,
-      currency: d.currency.trim().toUpperCase(),
+      currency: storedCurrency(d.currency),
       date: d.date,
       account: canonicalAccount(d.account),
       edited: DateTime.now().toUtc(),
@@ -1213,7 +1255,7 @@ class PortfolioStore extends ChangeNotifier {
   /// összeg figyelmen kívül marad (JSON-ba sem menne).
   Future<void> setCash(String currency, double amount) async {
     if (!amount.isFinite) return;
-    final c = currency.trim().toUpperCase();
+    final c = storedCurrency(currency);
     _cash[c] = (amount: amount > 0 ? amount : 0, at: DateTime.now().toUtc());
     notifyListeners();
     await _save();
@@ -1273,7 +1315,7 @@ class PortfolioStore extends ChangeNotifier {
       symbol: lot.symbol.trim().toUpperCase(),
       quantity: lot.quantity,
       price: lot.price,
-      currency: lot.currency.trim().toUpperCase(),
+      currency: storedCurrency(lot.currency),
       date: lot.date,
       sell: lot.sell,
       account: canonicalAccount(lot.account),
@@ -1285,8 +1327,9 @@ class PortfolioStore extends ChangeNotifier {
   }
 
   /// Tickerváltás (pl. átnevezett cég): a részvény minden tranzakciója, osztaléka és
-  /// felaprózása az új tickerre kerül, ugyanazzal az azonosítóval, újabbnak jelölve
-  /// (a szinkron így a másik eszközre is átviszi). Az áthelyezett tételek számát adja.
+  /// felaprózása az új tickerre kerül, ugyanazzal az azonosítóval, a váltás idejével
+  /// (a szinkron így a másik eszközre is átviszi; egy közben másutt törölt tételt
+  /// viszont nem hoz vissza). Az áthelyezett tételek számát adja.
   Future<int> renameSymbol(String from, String to) async {
     final f = from.trim().toUpperCase(), t = to.trim().toUpperCase();
     if (f == t || t.isEmpty) return 0;
@@ -1305,7 +1348,8 @@ class PortfolioStore extends ChangeNotifier {
         sell: l.sell,
         account: l.account,
         fee: l.fee,
-        edited: stamp,
+        edited: l.edited,
+        renamed: stamp,
       );
     }
     for (final (i, d) in _dividends.indexed) {
@@ -1318,12 +1362,14 @@ class PortfolioStore extends ChangeNotifier {
         currency: d.currency,
         date: d.date,
         account: d.account,
-        edited: stamp,
+        edited: d.edited,
+        renamed: stamp,
       );
     }
     final renamed = [
       for (final s in _splits)
-        if (s.symbol == f) SplitRecord(id: s.id, symbol: t, from: s.from, to: s.to, date: s.date, edited: stamp),
+        if (s.symbol == f)
+          SplitRecord(id: s.id, symbol: t, from: s.from, to: s.to, date: s.date, edited: s.edited, renamed: stamp),
     ];
     moved += renamed.length;
     // Ha az új tickeren már rögzítve volt ugyanaz a felaprózás, az marad; a

@@ -7,6 +7,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../capture/capture_service.dart';
 import 'holdings_reader.dart';
+import 'portfolio_store.dart' show storedCurrency;
 
 /// Portfólió importálása a bróker „Pozícióim” képernyőjének képéről: kép
 /// kiválasztása vagy beillesztése, beolvasás, majd átnézés és kijelölt sorok
@@ -76,22 +77,27 @@ Future<void> showHoldingsImport(BuildContext context) async {
       if (l.date == null && !l.sell) key(l.symbol, l.quantity, l.price),
   };
   var added = 0;
-  for (final h in chosen) {
-    if (!existing.add(key(h.symbol, h.quantity!, h.averagePrice!))) continue;
-    var currency = h.currency;
-    if (currency == null) {
-      try {
-        currency = (await services.marketData.profile(h.symbol)).currency;
-      } catch (_) {}
+  // Egy kötegben: egyetlen értesítés és mentés a végén.
+  await services.portfolio.batch(() async {
+    for (final h in chosen) {
+      if (!existing.add(key(h.symbol, h.quantity!, h.averagePrice!))) continue;
+      var currency = h.currency;
+      if (currency == null) {
+        try {
+          currency = (await services.marketData.profile(h.symbol)).currency;
+        } catch (_) {}
+      }
+      var ccy = storedCurrency(currency ?? 'USD'), price = h.averagePrice!;
+      // Egy ticker tételei egy pénznemben: a meglévő pozícióéban, a mai árfolyamon átváltva.
+      if (services.portfolio.currencyOf(h.symbol) case final held? when held != ccy) {
+        if ((await services.fx.rate(ccy, held))?.rate case final r? when r.isFinite && r > 0) {
+          (ccy, price) = (held, price * r);
+        }
+      }
+      await services.portfolio.add(symbol: h.symbol, quantity: h.quantity!, price: price, currency: ccy);
+      added++;
     }
-    await services.portfolio.add(
-      symbol: h.symbol,
-      quantity: h.quantity!,
-      price: h.averagePrice!,
-      currency: currency ?? 'USD',
-    );
-    added++;
-  }
+  });
   messenger.showSnackBar(SnackBar(content: Text(l10n.portfolioImported(added))));
 }
 

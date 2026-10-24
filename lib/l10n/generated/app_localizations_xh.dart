@@ -2887,6 +2887,10 @@ class AppLocalizationsXh extends AppLocalizations {
       'Ikopi yokhuseleko ayikwazanga ukugcinwa. Nceda uzame kwakhona.';
 
   @override
+  String get syncTooLarge =>
+      'Idatha yakho inkulu kakhulu ukuba ingqamaniswe neakhawunti yakho. Cima iintengiselwano okanye amanqaku ongasawadingiyo, kwaye kuza kuzama kwakhona.';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

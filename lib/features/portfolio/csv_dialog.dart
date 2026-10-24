@@ -168,8 +168,13 @@ Future<void> showPortfolioImport(BuildContext context) async {
   final isins = parsed.isins;
   if (isins.isNotEmpty) messenger.showSnackBar(SnackBar(content: Text(l10n.loadingData)));
   final resolved = isins.isEmpty ? parsed : parsed.withSymbols(await resolveIsins(services.marketData.search, isins));
+  // Egy ticker tételei egy pénznemben: a más pénznemű sor a napja árfolyamán átváltva.
+  final aligned = await resolved.inOneCurrency(
+    services.portfolio.currencyOf,
+    (from, to, day) async => (await services.fx.rateOn(from, to, day))?.rate,
+  );
   // A már rögzített sorok kimaradnak (a frissebb export újbóli beolvasása nem dupláz).
-  final (rest: result, :duplicates) = resolved.withoutRecorded(services.portfolio.lots, services.portfolio.dividends);
+  final (rest: result, :duplicates) = aligned.withoutRecorded(services.portfolio.lots, services.portfolio.dividends);
   // A felvett tételek azonosítói: az egész import egy koppintással visszavonható.
   final lotIds = <String>{}, dividendIds = <String>{}, splitIds = <String>{};
   // Egy kötegben: egyetlen értesítés és mentés a végén (nem tételenként).

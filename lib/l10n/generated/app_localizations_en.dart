@@ -2869,6 +2869,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get backupFailed => 'The backup could not be saved. Please try again.';
 
   @override
+  String get syncTooLarge =>
+      'Your data is too large to sync with your account. Delete transactions or notes you no longer need, and it will try again.';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

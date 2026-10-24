@@ -2880,6 +2880,10 @@ class AppLocalizationsSq extends AppLocalizations {
       'Kopja rezervë nuk mund të ruhej. Ju lutemi provoni përsëri.';
 
   @override
+  String get syncTooLarge =>
+      'Të dhënat tuaja janë shumë të mëdha për t’u sinkronizuar me llogarinë tuaj. Fshini transaksionet ose shënimet që nuk ju duhen më dhe do të provohet përsëri.';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

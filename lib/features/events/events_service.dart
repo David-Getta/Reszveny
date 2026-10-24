@@ -271,6 +271,7 @@ class EventsService extends ChangeNotifier {
       now: today,
       grace: Duration.zero,
       horizon: const Duration(days: horizonDays),
+      scale: portfolio.holdingScale,
     )) {
       list.add(
         UpcomingEvent(

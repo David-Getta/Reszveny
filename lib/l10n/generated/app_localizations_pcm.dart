@@ -2872,6 +2872,10 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get backupFailed => 'Di backup no fit save. Abeg try again.';
 
   @override
+  String get syncTooLarge =>
+      'Your data too big to sync with your account. Delete di buy and sell or notes wey you no need again, and e go try again.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

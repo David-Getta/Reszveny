@@ -75,6 +75,7 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
           services.portfolio.heldSymbols,
           now: DateTime.now(),
           grace: Duration.zero,
+          scale: services.portfolio.holdingScale,
         ),
       );
       if (mounted) setState(() => _report = r);

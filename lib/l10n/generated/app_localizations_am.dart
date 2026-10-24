@@ -2834,6 +2834,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get backupFailed => 'ምትኬው ሊቀመጥ አልቻለም። እባክዎ እንደገና ይሞክሩ።';
 
   @override
+  String get syncTooLarge =>
+      'ውሂብዎ ከመለያዎ ጋር ለማስመር በጣም ትልቅ ነው። ከእንግዲህ የማያስፈልጉዎትን ግብይቶች ወይም ማስታወሻዎች ይሰርዙ፣ ከዚያ እንደገና ይሞከራል።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

@@ -2920,6 +2920,10 @@ class AppLocalizationsLv extends AppLocalizations {
       'Dublējumu neizdevās saglabāt. Lūdzu, mēģiniet vēlreiz.';
 
   @override
+  String get syncTooLarge =>
+      'Jūsu dati ir pārāk lieli, lai tos sinhronizētu ar jūsu kontu. Izdzēsiet darījumus vai piezīmes, kas jums vairs nav vajadzīgas, un tiks mēģināts vēlreiz.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

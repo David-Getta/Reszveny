@@ -2880,6 +2880,10 @@ class AppLocalizationsKn extends AppLocalizations {
       'ಬ್ಯಾಕಪ್ ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
 
   @override
+  String get syncTooLarge =>
+      'ನಿಮ್ಮ ಡೇಟಾ ನಿಮ್ಮ ಖಾತೆಯೊಂದಿಗೆ ಸಿಂಕ್ ಮಾಡಲು ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ. ಇನ್ನು ಅಗತ್ಯವಿಲ್ಲದ ವಹಿವಾಟುಗಳು ಅಥವಾ ಟಿಪ್ಪಣಿಗಳನ್ನು ಅಳಿಸಿ, ಆಗ ಇದು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸುತ್ತದೆ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

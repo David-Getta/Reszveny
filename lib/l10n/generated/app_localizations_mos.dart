@@ -2855,6 +2855,10 @@ class AppLocalizationsMos extends AppLocalizations {
   String get backupFailed => 'B pa tõog n bilg sẽn bʋʋd n bilgã ye. Le mak.';
 
   @override
+  String get syncTooLarge =>
+      'F bãngrã wʋsgame n yɩɩda, b pa tõe n yaa a yembr ne f kõntã ye. Yẽes raaba la koosgo bɩ gʋlsg nins f sẽn pa le rat ye, la a na n le maan a meng.';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

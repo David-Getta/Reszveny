@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "En az {quantity} – bu kadarı zaten satıldı",
   "restoreNothing": "Geri yüklenecek önceki bir satın alma bulunamadı.",
   "manageSubscriptionElsewhere": "Burada yönetilecek bir abonelik yok. App Store veya Google Play üzerinden alınan abonelik, mağaza ayarlarından yönetilir.",
-  "backupFailed": "Yedek kaydedilemedi. Lütfen tekrar deneyin."
+  "backupFailed": "Yedek kaydedilemedi. Lütfen tekrar deneyin.",
+  "syncTooLarge": "Verileriniz hesabınızla senkronize edilemeyecek kadar büyük. Artık ihtiyacınız olmayan işlemleri veya notları silin, ardından yeniden denenecek."
 }

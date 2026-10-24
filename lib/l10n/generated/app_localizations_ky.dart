@@ -2875,6 +2875,10 @@ class AppLocalizationsKy extends AppLocalizations {
       'Камдык көчүрмөнү сактоо мүмкүн болгон жок. Кайра аракет кылыңыз.';
 
   @override
+  String get syncTooLarge =>
+      'Маалыматтарыңыз аккаунт менен шайкештирүү үчүн өтө чоң. Мындан ары керексиз транзакцияларды же жазууларды өчүрүңүз, ошондо кайра аракет кылынат.';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

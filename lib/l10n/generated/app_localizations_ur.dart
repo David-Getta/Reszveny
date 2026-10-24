@@ -2872,6 +2872,10 @@ class AppLocalizationsUr extends AppLocalizations {
       'بیک اپ محفوظ نہیں ہو سکا۔ براہ کرم دوبارہ کوشش کریں۔';
 
   @override
+  String get syncTooLarge =>
+      'آپ کا ڈیٹا آپ کے اکاؤنٹ کے ساتھ سنک کرنے کے لیے بہت بڑا ہے۔ وہ لین دین یا نوٹس حذف کریں جن کی اب ضرورت نہیں، پھر یہ دوبارہ کوشش کرے گا۔';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

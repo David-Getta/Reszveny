@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Almeno {quantity} – tante ne sono già state vendute",
   "restoreNothing": "Non sono stati trovati acquisti precedenti da ripristinare.",
   "manageSubscriptionElsewhere": "Qui non c’è nessun abbonamento da gestire. Un abbonamento acquistato su App Store o Google Play si gestisce nelle impostazioni dello store.",
-  "backupFailed": "Non è stato possibile salvare il backup. Riprova."
+  "backupFailed": "Non è stato possibile salvare il backup. Riprova.",
+  "syncTooLarge": "I tuoi dati sono troppo grandi per essere sincronizzati con il tuo account. Elimina le transazioni o le note che non ti servono più e la sincronizzazione verrà ritentata."
 }

@@ -2894,6 +2894,10 @@ class AppLocalizationsMk extends AppLocalizations {
       'Резервната копија не можеше да се зачува. Обидете се повторно.';
 
   @override
+  String get syncTooLarge =>
+      'Вашите податоци се преголеми за синхронизација со вашата сметка. Избришете трансакции или белешки што повеќе не ви требаат и ќе се обиде повторно.';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

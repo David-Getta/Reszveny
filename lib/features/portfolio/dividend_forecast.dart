@@ -28,7 +28,8 @@ const payoutWindowDays = 7;
 /// negyedéves / féléves / éves ritmus adódik (a legutóbbi legfeljebb négy
 /// távolságból), a következő = az utolsó + ritmus naptári hónapokban (a hónap
 /// napja marad; ha nincs ilyen nap, a hónap utolsó napja), az összeg az utolsó
-/// kifizetés. Ami már [grace]-nél régebben lett volna esedékes, kimarad
+/// kifizetés – a [scale] (ha van) a kifizetés napján birtokolt darabhoz képest a
+/// mai darabszámra arányosítja (egy azóta vett vagy eladott rész). Ami már [grace]-nél régebben lett volna esedékes, kimarad
 /// (valószínűleg nem lett rögzítve, vagy elmaradt), ahogy a [horizon]-nál
 /// távolabbi is. Ha a sorozatban van jövőre rögzített (bejelentett) kifizetés, a
 /// következő az ([announced]), nem a becslés. Dátum, azon belül ticker szerint rendezve.
@@ -42,6 +43,7 @@ List<ExpectedDividend> expectedDividends(
   required DateTime now,
   Duration horizon = const Duration(days: 180),
   Duration grace = const Duration(days: 21),
+  double Function(String symbol, DateTime day)? scale,
 }) {
   final held = {for (final s in heldSymbols) s.toUpperCase()};
   // (ticker, pénznem) → nap → számla → összeg.
@@ -87,13 +89,17 @@ List<ExpectedDividend> expectedDividends(
     final last = payouts.last;
     final next = addMonths(last.day, period);
     if (next.isBefore(now.subtract(grace)) || next.isAfter(now.add(horizon))) continue;
+    final f = scale?.call(e.key.$1, last.day) ?? 1;
+    final parts = {for (final p in last.parts.entries) p.key: p.value * f};
+    final amount = parts.values.fold(0.0, (s, v) => s + v);
+    if (amount <= 1e-9) continue;
     out.add((
       symbol: e.key.$1,
       date: next,
-      amount: last.parts.values.fold(0.0, (s, v) => s + v),
+      amount: amount,
       currency: e.key.$2,
       periodMonths: period,
-      byAccount: last.parts,
+      byAccount: parts,
       announced: false,
     ));
   }

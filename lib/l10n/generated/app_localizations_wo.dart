@@ -2864,6 +2864,10 @@ class AppLocalizationsWo extends AppLocalizations {
   String get backupFailed => 'Mënuñu denc kaaraange bi. Jéemaatal.';
 
   @override
+  String get syncTooLarge =>
+      'Sa xibaar yi dañoo bari lool, mënuñu leen a yemale ak sa kont. Far jënd ak jaay walla notu yi nga soxlaatul, kon dina jéemaat.';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

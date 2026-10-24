@@ -2883,6 +2883,10 @@ class AppLocalizationsSn extends AppLocalizations {
       'Bhakapu haina kukwanisa kuchengetedzwa. Ndapota edza zvakare.';
 
   @override
+  String get syncTooLarge =>
+      'Data yako yakawandisa kuti iwiriraniswe neakaundi yako. Dzima zvakatengwa nezvakatengeswa kana zvinyorwa zvausisade, uye kuchaedza zvakare.';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

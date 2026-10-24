@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Bonyane {quantity} – palo eo e se e rekisitswe",
   "restoreNothing": "Ha ho ditheko tsa pele tse fumanweng hore di kgutliswe.",
   "manageSubscriptionElsewhere": "Ha ho ingodiso eo o ka e laolang mona. Ingodiso e rekilweng ho App Store kapa Google Play e laolwa ditlhophisong tsa lebenkele.",
-  "backupFailed": "Polokelo ya tshehetso ha e a kgona ho bolokwa. Ka kopo leka hape."
+  "backupFailed": "Polokelo ya tshehetso ha e a kgona ho bolokwa. Ka kopo leka hape.",
+  "syncTooLarge": "Data ya hao e kgolo haholo hore e ka sinkronaeswa le akhaonto ya hao. Hlakola ditheko le dithekiso kapa dintlha tseo o sa di hlokeng hape, mme ho tla lekwa hape."
 }

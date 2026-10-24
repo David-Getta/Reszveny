@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Iň az {quantity} – şonça eýýäm satyldy",
   "restoreNothing": "Dikeltmek üçin öňki satyn alyş tapylmady.",
   "manageSubscriptionElsewhere": "Bu ýerde dolandyrmak üçin abuna ýok. App Store ýa-da Google Play arkaly satyn alnan abuna dükanyň sazlamalarynda dolandyrylýar.",
-  "backupFailed": "Ätiýaçlyk nusgany saklap bolmady. Gaýtadan synanyşyň."
+  "backupFailed": "Ätiýaçlyk nusgany saklap bolmady. Gaýtadan synanyşyň.",
+  "syncTooLarge": "Maglumatlaryňyz hasabyňyz bilen sinhronlamak üçin örän uly. Indi gerek däl amallary ýa-da bellikleri pozuň, şonda täzeden synanyşylar."
 }

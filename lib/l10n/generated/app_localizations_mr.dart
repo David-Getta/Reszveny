@@ -2871,6 +2871,10 @@ class AppLocalizationsMr extends AppLocalizations {
       'बॅकअप जतन होऊ शकला नाही. कृपया पुन्हा प्रयत्न करा.';
 
   @override
+  String get syncTooLarge =>
+      'तुमचा डेटा तुमच्या खात्याशी सिंक करण्यासाठी खूप मोठा आहे. आता गरज नसलेले व्यवहार किंवा नोंदी हटवा, मग ते पुन्हा प्रयत्न करेल.';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

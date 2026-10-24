@@ -2870,6 +2870,10 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਬੈਕਅੱਪ ਸੇਵ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
 
   @override
+  String get syncTooLarge =>
+      'ਤੁਹਾਡਾ ਡਾਟਾ ਤੁਹਾਡੇ ਖਾਤੇ ਨਾਲ ਸਿੰਕ ਕਰਨ ਲਈ ਬਹੁਤ ਵੱਡਾ ਹੈ। ਜਿਨ੍ਹਾਂ ਲੈਣ-ਦੇਣ ਜਾਂ ਨੋਟਾਂ ਦੀ ਹੁਣ ਲੋੜ ਨਹੀਂ, ਉਹ ਮਿਟਾਓ, ਫਿਰ ਇਹ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੇਗਾ।';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

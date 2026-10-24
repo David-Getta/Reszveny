@@ -131,7 +131,8 @@ class PositionCard extends StatelessWidget {
                       hint: l10n.glossYieldOnCost,
                     ),
                 ],
-                if (expectedDividends(all, [pos.symbol], now: now) case final next when next.isNotEmpty)
+                if (expectedDividends(all, [pos.symbol], now: now, scale: services.portfolio.holdingScale)
+                    case final next when next.isNotEmpty)
                   if (next.firstWhere((x) => x.currency == ccy, orElse: () => next.first) case final x)
                     MetricFigure(
                       key: const ValueKey('position-dividend-next'),

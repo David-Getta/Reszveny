@@ -2875,6 +2875,10 @@ class AppLocalizationsSu extends AppLocalizations {
   String get backupFailed => 'Cadangan teu bisa disimpen. Mangga cobaan deui.';
 
   @override
+  String get syncTooLarge =>
+      'Data anjeun kagedéan pikeun disingkronkeun sareng akun anjeun. Pupus transaksi atanapi catetan anu tos teu diperyogikeun, teras bakal dicobian deui.';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

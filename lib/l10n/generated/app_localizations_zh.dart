@@ -2747,6 +2747,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get backupFailed => '无法保存备份。请重试。';
 
   @override
+  String get syncTooLarge => '数据过大，无法与账户同步。删除不再需要的交易记录或笔记后，将自动重试。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5861,6 +5864,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get backupFailed => '無法儲存備份。請再試一次。';
+
+  @override
+  String get syncTooLarge => '資料過大，無法與帳戶同步。刪除不再需要的交易記錄或筆記後，系統會自動重試。';
 
   @override
   String get portfolioGoalSet => '設定目標';

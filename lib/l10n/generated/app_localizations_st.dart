@@ -2893,6 +2893,10 @@ class AppLocalizationsSt extends AppLocalizations {
       'Polokelo ya tshehetso ha e a kgona ho bolokwa. Ka kopo leka hape.';
 
   @override
+  String get syncTooLarge =>
+      'Data ya hao e kgolo haholo hore e ka sinkronaeswa le akhaonto ya hao. Hlakola ditheko le dithekiso kapa dintlha tseo o sa di hlokeng hape, mme ho tla lekwa hape.';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Ít nhất {quantity} – đã bán chừng ấy cổ phiếu rồi",
   "restoreNothing": "Không tìm thấy giao dịch mua trước đây nào để khôi phục.",
   "manageSubscriptionElsewhere": "Không có gói đăng ký nào để quản lý tại đây. Gói đăng ký mua qua App Store hoặc Google Play được quản lý trong phần cài đặt của cửa hàng.",
-  "backupFailed": "Không thể lưu bản sao lưu. Vui lòng thử lại."
+  "backupFailed": "Không thể lưu bản sao lưu. Vui lòng thử lại.",
+  "syncTooLarge": "Dữ liệu của bạn quá lớn để đồng bộ hóa với tài khoản. Hãy xóa các giao dịch hoặc ghi chú không còn cần đến, ứng dụng sẽ thử lại."
 }

@@ -2864,6 +2864,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get backupFailed => 'အရန်ကို သိမ်း၍ မရပါ။ ထပ်စမ်းကြည့်ပါ။';
 
   @override
+  String get syncTooLarge =>
+      'သင့်ဒေတာသည် သင့်အကောင့်နှင့် စင့်ခ်လုပ်ရန် ကြီးလွန်းနေသည်။ မလိုအပ်တော့သော အရောင်းအဝယ်များ သို့မဟုတ် မှတ်စုများကို ဖျက်ပါ၊ ထို့နောက် ထပ်မံကြိုးစားပါမည်။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

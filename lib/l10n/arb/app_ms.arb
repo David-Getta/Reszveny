@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Sekurang-kurangnya {quantity} – sebanyak itu sudah dijual",
   "restoreNothing": "Tiada pembelian terdahulu ditemui untuk dipulihkan.",
   "manageSubscriptionElsewhere": "Tiada langganan untuk diurus di sini. Langganan yang dibeli di App Store atau Google Play diurus dalam tetapan gedung.",
-  "backupFailed": "Sandaran tidak dapat disimpan. Sila cuba lagi."
+  "backupFailed": "Sandaran tidak dapat disimpan. Sila cuba lagi.",
+  "syncTooLarge": "Data anda terlalu besar untuk disegerakkan dengan akaun anda. Padam transaksi atau nota yang tidak diperlukan lagi, dan ia akan cuba lagi."
 }

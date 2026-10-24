@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "{quantity} ya teti – wodzra nenema gbegbe xoxo",
   "restoreNothing": "Míekpɔ nu aɖeke si nèƒle do ŋgɔ be míagaxɔe o.",
   "manageSubscriptionElsewhere": "Subscription aɖeke mele afii be nàkpɔ edzi o. Subscription si nèƒle le App Store alo Google Play la, wokpɔa edzi le store la ƒe ɖoɖowo me.",
-  "backupFailed": "Míete ŋu dzra kɔpi la ɖo o. Taflatse, gate kpɔ."
+  "backupFailed": "Míete ŋu dzra kɔpi la ɖo o. Taflatse, gate kpɔ.",
+  "syncTooLarge": "Wò nyatakakawo lolo akpa be woasɔ kple wò akɔnta. Tutu nuƒeƒle kple nudzadzra alo nuŋlɔɖi siwo mèhiã azɔ o la ɖa, eye agagbugbɔ adze agbagba."
 }

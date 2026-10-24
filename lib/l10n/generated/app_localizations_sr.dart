@@ -2923,6 +2923,10 @@ class AppLocalizationsSr extends AppLocalizations {
       'Резервну копију није било могуће сачувати. Покушајте поново.';
 
   @override
+  String get syncTooLarge =>
+      'Ваши подаци су превелики за синхронизацију са налогом. Обришите трансакције или белешке које вам више нису потребне и поново ће се покушати.';
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

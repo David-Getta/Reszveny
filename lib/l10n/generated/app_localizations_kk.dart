@@ -2872,6 +2872,10 @@ class AppLocalizationsKk extends AppLocalizations {
       'Сақтық көшірмені сақтау мүмкін болмады. Қайталап көріңіз.';
 
   @override
+  String get syncTooLarge =>
+      'Деректеріңіз аккаунтпен синхрондау үшін тым үлкен. Енді қажет емес операцияларды немесе жазбаларды жойыңыз, сонда қайта әрекет жасалады.';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

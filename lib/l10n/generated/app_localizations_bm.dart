@@ -2868,6 +2868,10 @@ class AppLocalizationsBm extends AppLocalizations {
   String get backupFailed => 'Kopi lamaralen ma se ka mara. A kɔrɔbɔ tugun.';
 
   @override
+  String get syncTooLarge =>
+      'I ka kunnafoniw ka bon kojugu ka kɛ kelen ye i ka kɔnti la. Sanniw ni feereliw walima sɛbɛnniw minnu tɛ i mago ye tun, olu jɔsi, o kɔ a bɛ segin ka a kɛ.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

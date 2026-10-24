@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Nibura {quantity} – iyo migabane yamaze kugurishwa",
   "restoreNothing": "Nta vyo waguze imbere vyabonetse ngo bigarurwe.",
   "manageSubscriptionElsewhere": "Ng'aha nta yandikisha ryo kugenzura. Iyandikisha waguze muri App Store canke Google Play rigenzurirwa mu vyo gutunganya vy'iduka.",
-  "backupFailed": "Ububiko bw'ingoboka ntibwashoboye kubikwa. Subira ugerageze."
+  "backupFailed": "Ububiko bw'ingoboka ntibwashoboye kubikwa. Subira ugerageze.",
+  "syncTooLarge": "Amakuru yawe ni menshi cane ku buryo adashobora guhuzwa na konti yawe. Futa ivyaguzwe n'ivyagurishijwe canke ivyo wanditse utagikeneye, hanyuma bizosubira kugerageza."
 }

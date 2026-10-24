@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "不能少于已卖出的 {quantity}",
   "restoreNothing": "未找到可恢复的以往购买记录。",
   "manageSubscriptionElsewhere": "此处没有可管理的订阅。在 App Store 或 Google Play 购买的订阅需在商店设置中管理。",
-  "backupFailed": "无法保存备份。请重试。"
+  "backupFailed": "无法保存备份。请重试。",
+  "syncTooLarge": "数据过大，无法与账户同步。删除不再需要的交易记录或笔记后，将自动重试。"
 }

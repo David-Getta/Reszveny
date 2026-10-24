@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Paling ora {quantity} – samono wis didol",
   "restoreNothing": "Ora ana tukon sadurungé sing bisa dipulihaké.",
   "manageSubscriptionElsewhere": "Ora ana langganan sing bisa diatur ing kéné. Langganan sing dituku ing App Store utawa Google Play diatur ing setelan toko.",
-  "backupFailed": "Cadhangan ora bisa disimpen. Mangga jajal maneh."
+  "backupFailed": "Cadhangan ora bisa disimpen. Mangga jajal maneh.",
+  "syncTooLarge": "Data sampeyan kegedhèn kanggo disinkronaké karo akun sampeyan. Busak transaksi utawa cathetan sing wis ora dibutuhaké, banjur bakal dicoba manèh."
 }

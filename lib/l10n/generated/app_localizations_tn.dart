@@ -2895,6 +2895,10 @@ class AppLocalizationsTn extends AppLocalizations {
       'Polokelo ya tshireletso ga e a kgona go bolokwa. Tswee-tswee leka gape.';
 
   @override
+  String get syncTooLarge =>
+      'Data ya gago e kgolo thata go ka tsamaisanngwa le akhaonto ya gago. Phimola ditheko le dithekiso kgotsa dintlha tse o sa di tlhokeng gape, mme go tla lekwa gape.';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

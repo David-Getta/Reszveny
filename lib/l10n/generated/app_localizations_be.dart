@@ -2948,6 +2948,10 @@ class AppLocalizationsBe extends AppLocalizations {
       'Не ўдалося захаваць рэзервовую копію. Паспрабуйце яшчэ раз.';
 
   @override
+  String get syncTooLarge =>
+      'Вашы даныя занадта вялікія для сінхранізацыі з уліковым запісам. Выдаліце аперацыі або нататкі, якія вам больш не патрэбныя, і спроба паўторыцца.';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

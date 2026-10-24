@@ -33,7 +33,7 @@ void main() {
 
     expect(s.portfolio.lots.map((l) => l.symbol).toSet(), {'META'});
     final moved = s.portfolio.lots.firstWhere((l) => l.id == lot.id);
-    expect(moved.edited, isNotNull, reason: 'a szinkron az újat viszi át');
+    expect(moved.renamed, isNotNull, reason: 'a szinkron az újat viszi át');
     expect(s.portfolio.positionOf('META')!.quantity, 22, reason: 'a felaprózás is átjött: 10×2 + 2');
     expect(s.portfolio.dividends.single.symbol, 'META');
     expect(s.portfolio.splits.single.symbol, 'META');

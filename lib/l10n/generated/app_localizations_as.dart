@@ -2871,6 +2871,10 @@ class AppLocalizationsAs extends AppLocalizations {
       'বেকআপ ছেভ কৰিব পৰা নগ\'ল। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক।';
 
   @override
+  String get syncTooLarge =>
+      'আপোনাৰ ডেটা আপোনাৰ একাউণ্টৰ সৈতে ছিংক কৰিবলৈ অতি ডাঙৰ। আৰু প্ৰয়োজন নোহোৱা লেনদেন বা টোকা মচক, তেতিয়া ই পুনৰ চেষ্টা কৰিব।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

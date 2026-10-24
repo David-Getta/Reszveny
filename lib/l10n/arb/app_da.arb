@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Mindst {quantity} – så mange er allerede solgt",
   "restoreNothing": "Der blev ikke fundet tidligere køb at gendanne.",
   "manageSubscriptionElsewhere": "Der er intet abonnement at administrere her. Et abonnement købt i App Store eller Google Play administreres i butikkens indstillinger.",
-  "backupFailed": "Sikkerhedskopien kunne ikke gemmes. Prøv igen."
+  "backupFailed": "Sikkerhedskopien kunne ikke gemmes. Prøv igen.",
+  "syncTooLarge": "Dine data er for store til at blive synkroniseret med din konto. Slet transaktioner eller noter, du ikke længere har brug for, så prøves der igen."
 }

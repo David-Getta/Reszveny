@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "እንተወሓደ {quantity} – እዚ ዝኣክል ድሮ ተሸይጡ ኣሎ",
   "restoreNothing": "ክምለስ ዝኽእል ቅድሚ ሕጂ ዝተገበረ ዕድጊ ኣይተረኽበን።",
   "manageSubscriptionElsewhere": "ኣብዚ ዝመሓደር ምዝገባ የለን። ኣብ App Store ወይ Google Play ዝተዓደገ ምዝገባ ኣብ ቅጥዕታት መኽዘን ይመሓደር።",
-  "backupFailed": "ምትኪእ ቅዳሕ ክዕቀብ ኣይከኣለን። በጃኹም ዳግማይ ፈትኑ።"
+  "backupFailed": "ምትኪእ ቅዳሕ ክዕቀብ ኣይከኣለን። በጃኹም ዳግማይ ፈትኑ።",
+  "syncTooLarge": "ሓበሬታኹም ምስ ሕሳብኩም ንምስምማዕ ኣዝዩ ዓብዩ እዩ። ዘየድልየኩም ልውውጣት ወይ ማስታወሻታት ሰርዙ፣ ድሕሪኡ እንደገና ክፍተን እዩ።"
 }

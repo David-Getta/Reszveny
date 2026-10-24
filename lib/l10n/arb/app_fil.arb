@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Hindi bababa sa {quantity} – naibenta na ang ganoon karami",
   "restoreNothing": "Walang nakitang naunang binili na mare-restore.",
   "manageSubscriptionElsewhere": "Walang subscription na mapapamahalaan dito. Ang subscription na binili sa App Store o Google Play ay pinamamahalaan sa settings ng store.",
-  "backupFailed": "Hindi ma-save ang backup. Pakisubukang muli."
+  "backupFailed": "Hindi ma-save ang backup. Pakisubukang muli.",
+  "syncTooLarge": "Masyadong malaki ang iyong data para ma-sync sa iyong account. Burahin ang mga transaksyon o tala na hindi mo na kailangan, at susubukan itong muli."
 }

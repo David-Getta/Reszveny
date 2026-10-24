@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Anyɛ yiye koraa {quantity} – woatɔn saa dodow no dedaw",
   "restoreNothing": "Yɛanhu nea wotɔɔ kane biara a yɛbɛsan de aba.",
   "manageSubscriptionElsewhere": "Subscription biara nni ha a wobɛhwɛ so. Subscription a wotɔɔ wɔ App Store anaa Google Play mu no, wohwɛ so wɔ store no nhyehyɛe mu.",
-  "backupFailed": "Yɛantumi ankora akorae no. Yɛsrɛ wo, sɔ hwɛ bio."
+  "backupFailed": "Yɛantumi ankora akorae no. Yɛsrɛ wo, sɔ hwɛ bio.",
+  "syncTooLarge": "Wo data no dɔɔso dodo a ɛrentumi nyɛ sync ne wo akawnt. Popa adetɔ ne adetɔn anaa nkyerɛwee a wonhia bio, na ɛbɛsan abɔ mmɔden bio."
 }

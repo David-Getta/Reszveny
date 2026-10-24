@@ -2881,6 +2881,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get backupFailed => 'Hindi ma-save ang backup. Pakisubukang muli.';
 
   @override
+  String get syncTooLarge =>
+      'Masyadong malaki ang iyong data para ma-sync sa iyong account. Burahin ang mga transaksyon o tala na hindi mo na kailangan, at susubukan itong muli.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

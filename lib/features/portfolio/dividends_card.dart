@@ -53,7 +53,12 @@ class DividendsCard extends StatelessWidget {
         // A kapott összegekben a jövőre rögzített (bejelentett) kifizetés még nincs benne.
         final received = all.where((d) => !(d.date?.isAfter(now) ?? false)).toList();
         // Várható következő kifizetések a még birtokolt részvényekre, a rögzítettek ritmusából.
-        final expected = expectedDividends(all, positions.map((x) => x.symbol), now: now);
+        final expected = expectedDividends(
+          all,
+          positions.map((x) => x.symbol),
+          now: now,
+          scale: (s, day) => services.portfolio.holdingScale(s, day, account: account),
+        );
         // Az osztalékok és a nyitott pozíciók pénznemei (a bekerülési osztalékhozamhoz is).
         final currencies = {for (final d in all) d.currency, for (final x in positions) x.currency}..remove(currency);
         return Card(

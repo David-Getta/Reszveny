@@ -2878,6 +2878,10 @@ class AppLocalizationsAf extends AppLocalizations {
       'Die rugsteun kon nie gestoor word nie. Probeer asseblief weer.';
 
   @override
+  String get syncTooLarge =>
+      'Jou data is te groot om met jou rekening te sinkroniseer. Vee transaksies of notas uit wat jy nie meer nodig het nie, en dit sal weer probeer.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

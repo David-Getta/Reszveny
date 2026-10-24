@@ -2868,6 +2868,10 @@ class AppLocalizationsFf extends AppLocalizations {
   String get backupFailed => 'Horiima danndude kopi ndi. Tiiɗno eto goɗngol.';
 
   @override
+  String get syncTooLarge =>
+      'Keɓe maa ina mawni no feewi ngam sync e konte maa. Momtu soodgol e yeeyugol walla binndi ɗi a haajaaki kadi, ɗum fuɗɗittoto.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

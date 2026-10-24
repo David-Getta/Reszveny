@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Labing gamay {quantity} – nabaligya na ang ingon niana kadaghan",
   "restoreNothing": "Walay nakit-ang nangaging napalit nga ma-restore.",
   "manageSubscriptionElsewhere": "Walay subscription nga madumala dinhi. Ang subscription nga gipalit sa App Store o Google Play gidumala sa mga setting sa store.",
-  "backupFailed": "Dili ma-save ang backup. Palihug sulayi pag-usab."
+  "backupFailed": "Dili ma-save ang backup. Palihug sulayi pag-usab.",
+  "syncTooLarge": "Dako kaayo ang imong data aron ma-sync sa imong account. Papasa ang mga transaksyon o nota nga dili na nimo kinahanglan, ug mosulay kini pag-usab."
 }

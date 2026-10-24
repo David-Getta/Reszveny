@@ -2869,6 +2869,10 @@ class AppLocalizationsTt extends AppLocalizations {
       'Резерв күчермәне саклап булмады. Зинһар, кабат тырышып карагыз.';
 
   @override
+  String get syncTooLarge =>
+      'Мәгълүматларыгыз аккаунтыгыз белән синхронлаштыру өчен артык зур. Кирәкмәгән операцияләрне яки язмаларны бетерегез, шуннан соң кабат омтылыш ясалачак.';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

@@ -2874,6 +2874,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get backupFailed => 'Säkerhetskopian kunde inte sparas. Försök igen.';
 
   @override
+  String get syncTooLarge =>
+      'Dina data är för stora för att synkroniseras med ditt konto. Radera transaktioner eller anteckningar du inte längre behöver, så görs ett nytt försök.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

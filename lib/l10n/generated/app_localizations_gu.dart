@@ -2868,6 +2868,10 @@ class AppLocalizationsGu extends AppLocalizations {
       'બેકઅપ સેવ થઈ શક્યો નથી. કૃપા કરીને ફરી પ્રયાસ કરો.';
 
   @override
+  String get syncTooLarge =>
+      'તમારો ડેટા તમારા એકાઉન્ટ સાથે સિંક કરવા માટે ખૂબ મોટો છે. જે વ્યવહારો અથવા નોંધોની હવે જરૂર નથી તે ડિલીટ કરો, પછી તે ફરી પ્રયાસ કરશે.';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

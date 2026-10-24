@@ -2874,6 +2874,10 @@ class AppLocalizationsAk extends AppLocalizations {
   String get backupFailed => 'Yɛantumi ankora akorae no. Yɛsrɛ wo, sɔ hwɛ bio.';
 
   @override
+  String get syncTooLarge =>
+      'Wo data no dɔɔso dodo a ɛrentumi nyɛ sync ne wo akawnt. Popa adetɔ ne adetɔn anaa nkyerɛwee a wonhia bio, na ɛbɛsan abɔ mmɔden bio.';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

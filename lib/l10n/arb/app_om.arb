@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Yoo xiqqaate {quantity} – hammana duraan gurguramaniiru",
   "restoreNothing": "Bittaan kanaan dura deebi'uu danda'u hin argamne.",
   "manageSubscriptionElsewhere": "Asitti miseensummaan bulchamu hin jiru. Miseensummaan App Store ykn Google Play irraa bitame qindaa'ina kuusaa keessatti bulchama.",
-  "backupFailed": "Kuusaan deebii olkaa'amuu hin dandeenye. Maaloo irra deebi'ii yaali."
+  "backupFailed": "Kuusaan deebii olkaa'amuu hin dandeenye. Maaloo irra deebi'ii yaali.",
+  "syncTooLarge": "Odeeffannoon kee herrega kee waliin walsimsiisuuf baay'ee guddaadha. Bittaa fi gurgurtaa ykn yaadannoo kana booda hin barbaachisne haqi, achiis irra deebi'ee yaala."
 }

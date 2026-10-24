@@ -2878,6 +2878,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get backupFailed => 'A mentés nem sikerült. Próbáld újra.';
 
   @override
+  String get syncTooLarge =>
+      'Az adataid túl nagyok a fiókos szinkronhoz. Törölj a már nem szükséges tranzakciók vagy jegyzetek közül, és újra megpróbálja.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

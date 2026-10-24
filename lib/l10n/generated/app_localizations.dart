@@ -4860,6 +4860,12 @@ abstract class AppLocalizations {
   /// **'The backup could not be saved. Please try again.'**
   String get backupFailed;
 
+  /// Shown under the sync row in Settings when the server rejected the upload because the synced data is over its size limit (about 2 MB).
+  ///
+  /// In en, this message translates to:
+  /// **'Your data is too large to sync with your account. Delete transactions or notes you no longer need, and it will try again.'**
+  String get syncTooLarge;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

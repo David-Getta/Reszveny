@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Herî kêm {quantity} – ew qas berê hatin firotin",
   "restoreNothing": "Ti kirînên berê yên ku werin vegerandin nehatin dîtin.",
   "manageSubscriptionElsewhere": "Li vir ti abonetî tune ye ku were birêvebirin. Abonetiya ku ji App Store an Google Play hatiye kirîn, di mîhengên firotgehê de tê birêvebirin.",
-  "backupFailed": "Paşeke nehat tomarkirin. Ji kerema xwe dîsa biceribîne."
+  "backupFailed": "Paşeke nehat tomarkirin. Ji kerema xwe dîsa biceribîne.",
+  "syncTooLarge": "Daneyên te ji bo hevdemkirina bi hesabê te re pir mezin in. Danûstandin an notên ku êdî ne hewce ne jê bibe, û ew ê dîsa biceribîne."
 }

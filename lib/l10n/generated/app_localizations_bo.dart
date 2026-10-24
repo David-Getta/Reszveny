@@ -2861,6 +2861,10 @@ class AppLocalizationsBo extends AppLocalizations {
   String get backupFailed => 'གྲབས་ཉར་ཉར་ཚགས་བྱེད་མ་ཐུབ། ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
 
   @override
+  String get syncTooLarge =>
+      'ཁྱེད་ཀྱི་གཞི་གྲངས་ཆེ་དྲགས་པས་རྩིས་ཁྲ་དང་མཉམ་སྒྲིག་བྱེད་མི་ཐུབ། ད་ནས་མི་དགོས་པའི་ཉོ་འཚོང་ངམ་ཟིན་ཐོ་སུབ་དང་། བསྐྱར་དུ་ཚོད་ལྟ་བྱེད་ངེས།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

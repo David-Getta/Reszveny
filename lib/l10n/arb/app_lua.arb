@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "{quantity} anyi kupita – bungi abu mbusumbishibue kale",
   "restoreNothing": "Katuena bapete bintu biuvua musumbe kale bua kubipingaja.",
   "manageSubscriptionElsewhere": "Kakuena abonnement wa kulombola muaba eu to. Abonnement uvua musumbe mu App Store anyi Google Play udi ulombodibua mu malongolola a store.",
-  "backupFailed": "Katuena mua kulama kopi. Teta kabidi."
+  "backupFailed": "Katuena mua kulama kopi. Teta kabidi.",
+  "syncTooLarge": "Ba données biebe bidi binene bikole bua synchronisation ne compte webe. Jimija kusumba ne kusumbisha anyi mifundu iudi kuyi ne dijinga nayi kabidi, neyikebe kabidi."
 }

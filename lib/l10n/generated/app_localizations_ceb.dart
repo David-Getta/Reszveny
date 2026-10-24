@@ -2886,6 +2886,10 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Dili ma-save ang backup. Palihug sulayi pag-usab.';
 
   @override
+  String get syncTooLarge =>
+      'Dako kaayo ang imong data aron ma-sync sa imong account. Papasa ang mga transaksyon o nota nga dili na nimo kinahanglan, ug mosulay kini pag-usab.';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

@@ -2886,6 +2886,10 @@ class AppLocalizationsMl extends AppLocalizations {
       'ബാക്കപ്പ് സേവ് ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കുക.';
 
   @override
+  String get syncTooLarge =>
+      'നിങ്ങളുടെ ഡാറ്റ അക്കൗണ്ടുമായി സമന്വയിപ്പിക്കാൻ കഴിയാത്തത്ര വലുതാണ്. ഇനി ആവശ്യമില്ലാത്ത ഇടപാടുകളോ കുറിപ്പുകളോ ഇല്ലാതാക്കുക, തുടർന്ന് ഇത് വീണ്ടും ശ്രമിക്കും.';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

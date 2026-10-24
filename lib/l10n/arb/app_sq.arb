@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Të paktën {quantity} – kaq janë shitur tashmë",
   "restoreNothing": "Nuk u gjetën blerje të mëparshme për t’u rikthyer.",
   "manageSubscriptionElsewhere": "Këtu nuk ka abonim për t’u menaxhuar. Një abonim i blerë në App Store ose Google Play menaxhohet te cilësimet e dyqanit.",
-  "backupFailed": "Kopja rezervë nuk mund të ruhej. Ju lutemi provoni përsëri."
+  "backupFailed": "Kopja rezervë nuk mund të ruhej. Ju lutemi provoni përsëri.",
+  "syncTooLarge": "Të dhënat tuaja janë shumë të mëdha për t’u sinkronizuar me llogarinë tuaj. Fshini transaksionet ose shënimet që nuk ju duhen më dhe do të provohet përsëri."
 }

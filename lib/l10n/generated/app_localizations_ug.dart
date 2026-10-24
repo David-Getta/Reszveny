@@ -2875,6 +2875,10 @@ class AppLocalizationsUg extends AppLocalizations {
   String get backupFailed => 'زاپاسنى ساقلىغىلى بولمىدى. قايتا سىناپ بېقىڭ.';
 
   @override
+  String get syncTooLarge =>
+      'سانلىق مەلۇماتلىرىڭىز ھېساباتىڭىز بىلەن قەدەمداشلاشقا بەك چوڭ. ئەمدى كېرەك بولمىغان سودىلار ياكى خاتىرىلەرنى ئۆچۈرۈڭ، ئاندىن قايتا سىنايدۇ.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

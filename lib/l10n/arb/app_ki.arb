@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "{quantity} kana makĩria – icio nĩciendetwo",
   "restoreNothing": "Gũtirĩ indo iria wagũrire mbere ciaoneka cia gũcookia.",
   "manageSubscriptionElsewhere": "Gũkũ gũtirĩ ũiyandĩkithio wa kũrũgamĩrĩra. Ũiyandĩkithio ũrĩa wagũrire App Store kana Google Play ũrũgamagĩrĩrwo mĩtaratara-inĩ ya store.",
-  "backupFailed": "Mbaka ndĩngĩahotire kũigwo. Geria rĩngĩ."
+  "backupFailed": "Mbaka ndĩngĩahotire kũigwo. Geria rĩngĩ.",
+  "syncTooLarge": "Data yaku nĩ nene mũno gũtũma ĩkorwo o ũndũ ũmwe na akaunti yaku. Eheria ũgũri na ũendia kana maandĩko marĩa ũtabatarĩte rĩngĩ, nayo nĩ ĩkũgeria rĩngĩ."
 }

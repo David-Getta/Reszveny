@@ -2878,6 +2878,10 @@ class AppLocalizationsGn extends AppLocalizations {
   String get backupFailed => 'Ndaikatúi oñeñongatu mbaʼekuaarã. Ehaʼã jey.';
 
   @override
+  String get syncTooLarge =>
+      'Ne marandukuéra tuichaiterei oñesincroniza hag̃ua nde mbaʼetépe. Embogue jejogua ha ñemu térã jehaipyre ndereikotevẽvéima, ha oñehaʼã jeýta.';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

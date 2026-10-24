@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.284)
+# Változásjegyzék (0.2.130 → 0.2.285)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Régóta nyitott hibák javítása
+
+- **0.2.285**: a várható következő osztalék a mai darabszámra arányosít (az utolsó kifizetés óta vett vagy eladott
+  rész már benne van) – az appban, az Események naptárban, az AI-portfólióelemzésben és a heti e-mailben is. Egy
+  ticker más pénznemű importált sora (CSV, bróker-export, képernyőkép) a tranzakció napjának ECB-árfolyamán a
+  meglévő pozíció pénznemébe váltva kerül be (eddig átváltás nélkül adódott össze); egy korábbi, átváltás nélküli
+  import sorait ismétlésként felismeri, és a részvény oldaláról felvett vétel is a pozíció pénznemében indul. A
+  pennyben (GBp) és centben (ZAc) jegyzett ár nem fontként (százszoros értékkel) tárolódik. Egy régebbi eszközön
+  végzett tickerváltás nem hozza vissza a közben másutt törölt tranzakciót, osztalékot, felaprózást vagy riasztást,
+  és a riasztást sem élesíti újra. Ha a szinkronizált adat túl nagy a szervernek, a Beállítások ezt mondják meg
+  (mit érdemes törölni), nem újrapróbálást ígérnek.
 
 ## Teljesítmény: egy harmincadik kódátnézés javításai
 

@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Ma drus {quantity} – amḍan-agi yettwazenz yakan",
   "restoreNothing": "Ur d-nufi ara tiɣin yezrin ara d-nerr.",
   "manageSubscriptionElsewhere": "Ulac ajerred ara tesfekreḍ dagi. Ajerred i yettwaɣen deg App Store neɣ Google Play yettwasefrak deg yiɣewwaṛen n tḥanut.",
-  "backupFailed": "Ur yezmir ara ad yettwasekles uḥraz. Ɛreḍ tikkelt-nniḍen."
+  "backupFailed": "Ur yezmir ara ad yettwasekles uḥraz. Ɛreḍ tikkelt-nniḍen.",
+  "syncTooLarge": "Isefka-k mqqren aṭas akken ad mtawin d umiḍan-ik. Kkes tiɣin d uznuzu neɣ tizmilin ur tesriḍ ara tura, ad yettwaɛreḍ tikkelt nniḍen."
 }

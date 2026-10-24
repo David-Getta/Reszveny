@@ -2885,6 +2885,10 @@ class AppLocalizationsLua extends AppLocalizations {
   String get backupFailed => 'Katuena mua kulama kopi. Teta kabidi.';
 
   @override
+  String get syncTooLarge =>
+      'Ba données biebe bidi binene bikole bua synchronisation ne compte webe. Jimija kusumba ne kusumbisha anyi mifundu iudi kuyi ne dijinga nayi kabidi, neyikebe kabidi.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

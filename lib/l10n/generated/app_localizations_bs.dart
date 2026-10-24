@@ -2921,6 +2921,10 @@ class AppLocalizationsBs extends AppLocalizations {
       'Sigurnosnu kopiju nije moguće sačuvati. Pokušajte ponovo.';
 
   @override
+  String get syncTooLarge =>
+      'Vaši podaci su preveliki za sinhronizaciju s vašim računom. Izbrišite transakcije ili bilješke koje vam više ne trebaju i ponovo će se pokušati.';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

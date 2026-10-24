@@ -2877,6 +2877,10 @@ class AppLocalizationsKu extends AppLocalizations {
       'Paşeke nehat tomarkirin. Ji kerema xwe dîsa biceribîne.';
 
   @override
+  String get syncTooLarge =>
+      'Daneyên te ji bo hevdemkirina bi hesabê te re pir mezin in. Danûstandin an notên ku êdî ne hewce ne jê bibe, û ew ê dîsa biceribîne.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

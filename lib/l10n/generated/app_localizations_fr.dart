@@ -2886,6 +2886,10 @@ class AppLocalizationsFr extends AppLocalizations {
       'La sauvegarde n’a pas pu être enregistrée. Veuillez réessayer.';
 
   @override
+  String get syncTooLarge =>
+      'Vos données sont trop volumineuses pour être synchronisées avec votre compte. Supprimez les transactions ou notes dont vous n’avez plus besoin, et une nouvelle tentative aura lieu.';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

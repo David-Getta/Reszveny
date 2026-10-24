@@ -2872,6 +2872,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get backupFailed => 'Yedek kaydedilemedi. Lütfen tekrar deneyin.';
 
   @override
+  String get syncTooLarge =>
+      'Verileriniz hesabınızla senkronize edilemeyecek kadar büyük. Artık ihtiyacınız olmayan işlemleri veya notları silin, ardından yeniden denenecek.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

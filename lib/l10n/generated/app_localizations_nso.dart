@@ -2894,6 +2894,10 @@ class AppLocalizationsNso extends AppLocalizations {
       'Polokelo ya thekgo e be e sa kgone go bolokwa. Hle leka gape.';
 
   @override
+  String get syncTooLarge =>
+      'Data ya gago e kgolo kudu go ka sinkronaišwa le akhaonto ya gago. Phumola dithekišano goba dintlha tšeo o sa di nyakego gape, gomme go tla lekwa gape.';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

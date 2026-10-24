@@ -2864,6 +2864,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get backupFailed => 'بیک اپ خوندي نه شو. مهرباني وکړئ بیا هڅه وکړئ.';
 
   @override
+  String get syncTooLarge =>
+      'ستاسو معلومات دومره ډېر دي چې له حساب سره همغږي کېدای نه شي. هغه راکړې ورکړې یا یادښتونه ړنګ کړئ چې نور ورته اړتیا نه لرئ، بیا به هڅه وشي.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

@@ -2874,6 +2874,10 @@ class AppLocalizationsJv extends AppLocalizations {
   String get backupFailed => 'Cadhangan ora bisa disimpen. Mangga jajal maneh.';
 
   @override
+  String get syncTooLarge =>
+      'Data sampeyan kegedhèn kanggo disinkronaké karo akun sampeyan. Busak transaksi utawa cathetan sing wis ora dibutuhaké, banjur bakal dicoba manèh.';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

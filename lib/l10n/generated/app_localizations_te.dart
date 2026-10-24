@@ -2880,6 +2880,10 @@ class AppLocalizationsTe extends AppLocalizations {
       'బ్యాకప్‌ను సేవ్ చేయలేకపోయాం. దయచేసి మళ్లీ ప్రయత్నించండి.';
 
   @override
+  String get syncTooLarge =>
+      'మీ డేటా మీ ఖాతాతో సింక్ చేయడానికి చాలా పెద్దదిగా ఉంది. ఇకపై అవసరం లేని లావాదేవీలు లేదా గమనికలను తొలగించండి, అప్పుడు ఇది మళ్లీ ప్రయత్నిస్తుంది.';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

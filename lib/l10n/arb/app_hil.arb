@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Labing diutay {quantity} – nabaligya na ang amo sina kadamo",
   "restoreNothing": "Wala sang nakita nga nauna nga ginbakal nga mabalik.",
   "manageSubscriptionElsewhere": "Wala sang subscription nga madumalahan diri. Ang subscription nga ginbakal sa App Store ukon Google Play ginadumalahan sa mga setting sang store.",
-  "backupFailed": "Indi ma-save ang backup. Palihog tilawi liwat."
+  "backupFailed": "Indi ma-save ang backup. Palihog tilawi liwat.",
+  "syncTooLarge": "Daku gid ang imo data para ma-sync sa imo account. Panasa ang mga transaksyon ukon nota nga indi mo na kinahanglan, kag tilawan ini liwat."
 }

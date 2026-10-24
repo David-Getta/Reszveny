@@ -2864,6 +2864,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get backupFailed => 'לא ניתן היה לשמור את הגיבוי. נסו שוב.';
 
   @override
+  String get syncTooLarge =>
+      'הנתונים שלך גדולים מדי לסנכרון עם החשבון שלך. יש למחוק עסקאות או הערות שאינן נחוצות לך עוד, ואז ייעשה ניסיון חוזר.';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

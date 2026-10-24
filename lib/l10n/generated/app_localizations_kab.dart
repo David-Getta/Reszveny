@@ -2872,6 +2872,10 @@ class AppLocalizationsKab extends AppLocalizations {
       'Ur yezmir ara ad yettwasekles uḥraz. Ɛreḍ tikkelt-nniḍen.';
 
   @override
+  String get syncTooLarge =>
+      'Isefka-k mqqren aṭas akken ad mtawin d umiḍan-ik. Kkes tiɣin d uznuzu neɣ tizmilin ur tesriḍ ara tura, ad yettwaɛreḍ tikkelt nniḍen.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

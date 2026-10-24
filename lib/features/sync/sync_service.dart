@@ -71,6 +71,11 @@ class SyncService extends ChangeNotifier {
   DateTime? get lastSynced => _last;
   bool get busy => _busy;
   bool get failed => _failed;
+
+  /// A legutóbbi feltöltést a szerver túl nagynak találta (413): az újrapróbálás
+  /// magától nem segít, a felület megmondja, mit lehet tenni.
+  bool get tooLarge => _tooLarge;
+  bool _tooLarge = false;
   bool get enabled => account.isSignedIn;
 
   /// Indításkor: állapot betöltése, figyelés, és ha be van lépve, szinkron.
@@ -208,14 +213,20 @@ class SyncService extends ChangeNotifier {
   /// javított (egyezésnél vagy javítás nélkül a helyi) marad; jegyzetnél az újabb.
   static Map<String, dynamic> merge(Map<String, dynamic> local, Map<String, dynamic> remote) {
     DateTime edited(Map<String, dynamic> e) => DateTime.tryParse('${e['edited'] ?? ''}') ?? DateTime(0);
+    // Az újabb változat: a javítás vagy a tickerváltás ideje, amelyik későbbi.
+    DateTime changed(Map<String, dynamic> e) => switch (DateTime.tryParse('${e['renamed'] ?? ''}')) {
+      final r? when r.isAfter(edited(e)) => r,
+      _ => edited(e),
+    };
     // Törlési jelzések: a két oldal uniója (azonosítónként a későbbi); a törölt
-    // tétel nem támad fel a másik oldal régi példányából – csak ha később javították.
+    // tétel nem támad fel a másik oldal régi példányából – csak ha később javították
+    // (egy régi eszközön végzett tickerváltás nem javítás).
     final deleted = unionTombstones(local['deleted'], remote['deleted']);
     List<Map<String, dynamic>> byId(Object? a, Object? b) {
       final out = <String, Map<String, dynamic>>{};
       for (final e in [..._maps(a), ..._maps(b)]) {
         final id = '${e['id']}';
-        if (out[id] case final prev? when !edited(e).isAfter(edited(prev))) continue;
+        if (out[id] case final prev? when !changed(e).isAfter(changed(prev))) continue;
         out[id] = e;
       }
       bool gone(Map<String, dynamic> e) => switch (deleted['${e['id']}']) {
@@ -251,7 +262,8 @@ class SyncService extends ChangeNotifier {
     // szerver is megjelölhette), hogy egy már kiküldött riasztás ne éledjen újra;
     // két aktív példánál a követő stop magasabb csúcsa marad.
     DateTime? at(Object? v) => DateTime.tryParse('${v ?? ''}');
-    DateTime edit(Map<String, dynamic> a) => at(a['edited']) ?? DateTime(0);
+    // A javítás vagy a tickerváltás ideje, amelyik későbbi (a törlés ellen csak a javítás véd).
+    DateTime edit(Map<String, dynamic> a) => changed(a);
 
     final alertsMerged = <Map<String, dynamic>>[];
     final alertIndex = <String, int>{};
@@ -691,14 +703,17 @@ class SyncService extends ChangeNotifier {
         }
       }
       _failed = false;
+      _tooLarge = false;
       _retryDelay = retryStart;
       // Futás közben is: egy másik eszköz változása magától is megérkezik.
       _schedule(pullInterval);
     } catch (e) {
       debugPrint('Szinkron nem sikerült: $e');
       _failed = true;
-      // Újrapróbálás egyre ritkábban (ahogy a felület is ígéri).
-      _schedule(_retryDelay);
+      _tooLarge = e is BackendException && e.status == 413;
+      // Újrapróbálás egyre ritkábban (ahogy a felület is ígéri); a túl nagy csomag
+      // csak egy törlés után fér fel (az a változással magától indul), addig ritkán.
+      _schedule(_tooLarge ? retryMax : _retryDelay);
       _retryDelay = _retryDelay * 2 > retryMax ? retryMax : _retryDelay * 2;
     } finally {
       _busy = false;

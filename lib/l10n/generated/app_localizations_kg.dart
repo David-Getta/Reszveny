@@ -2886,6 +2886,10 @@ class AppLocalizationsKg extends AppLocalizations {
       'Kopi ya kubumba ka kulendi bumbama ko. Meka diaka.';
 
   @override
+  String get syncTooLarge =>
+      'Ba données na nge me luta nene sambu na synchronisation ti compte na nge. Zimbisa kusumba ti kuteka to ba note yina nge ke vandaka diaka ve na mfunu, yo ta meka diaka.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

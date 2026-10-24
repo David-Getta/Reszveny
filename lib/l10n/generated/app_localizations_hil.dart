@@ -2891,6 +2891,10 @@ class AppLocalizationsHil extends AppLocalizations {
   String get backupFailed => 'Indi ma-save ang backup. Palihog tilawi liwat.';
 
   @override
+  String get syncTooLarge =>
+      'Daku gid ang imo data para ma-sync sa imo account. Panasa ang mga transaksyon ukon nota nga indi mo na kinahanglan, kag tilawan ini liwat.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

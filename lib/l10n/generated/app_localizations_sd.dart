@@ -2863,6 +2863,10 @@ class AppLocalizationsSd extends AppLocalizations {
       'بيڪ اپ محفوظ نه ٿي سگهيو. مهرباني ڪري ٻيهر ڪوشش ڪريو.';
 
   @override
+  String get syncTooLarge =>
+      'توهان جو ڊيٽا توهان جي اڪائونٽ سان سنڪ ڪرڻ لاءِ تمام وڏو آهي. اهي ليڻ دين يا نوٽس ميٽيو جن جي هاڻي ضرورت ناهي، پوءِ اهو ٻيهر ڪوشش ڪندو.';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

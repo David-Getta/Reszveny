@@ -2894,6 +2894,10 @@ class AppLocalizationsMg extends AppLocalizations {
       'Tsy voatahiry ny fitahirizana. Andramo indray azafady.';
 
   @override
+  String get syncTooLarge =>
+      'Lehibe loatra ny angonao ka tsy azo ampifanarahana amin\'ny kaontinao. Fafao ny fividianana sy fivarotana na ny naoty tsy ilainao intsony, dia hiezaka indray izy.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

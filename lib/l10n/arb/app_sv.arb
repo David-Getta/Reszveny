@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Minst {quantity} – så många är redan sålda",
   "restoreNothing": "Inga tidigare köp hittades att återställa.",
   "manageSubscriptionElsewhere": "Det finns ingen prenumeration att hantera här. En prenumeration som köpts i App Store eller Google Play hanteras i butikens inställningar.",
-  "backupFailed": "Säkerhetskopian kunde inte sparas. Försök igen."
+  "backupFailed": "Säkerhetskopian kunde inte sparas. Försök igen.",
+  "syncTooLarge": "Dina data är för stora för att synkroniseras med ditt konto. Radera transaktioner eller anteckningar du inte längre behöver, så görs ett nytt försök."
 }

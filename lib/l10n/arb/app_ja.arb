@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "{quantity}以上にしてください（その数はすでに売却済みです）",
   "restoreNothing": "復元できる過去の購入は見つかりませんでした。",
   "manageSubscriptionElsewhere": "ここで管理できるサブスクリプションはありません。App StoreまたはGoogle Playで購入したサブスクリプションは、ストアの設定で管理します。",
-  "backupFailed": "バックアップを保存できませんでした。もう一度お試しください。"
+  "backupFailed": "バックアップを保存できませんでした。もう一度お試しください。",
+  "syncTooLarge": "データが大きすぎるため、アカウントと同期できません。不要になった取引やメモを削除すると、再試行します。"
 }

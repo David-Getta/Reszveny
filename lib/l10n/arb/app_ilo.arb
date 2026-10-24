@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Di kumurang iti {quantity} – kasta kaadu ti nailakon",
   "restoreNothing": "Awan ti nasarakan a nagatang idi a maisubli.",
   "manageSubscriptionElsewhere": "Awan ti subscription a maimaneho ditoy. Ti subscription a nagatang iti App Store wenno Google Play ket maimaneho iti setting ti store.",
-  "backupFailed": "Saan a ma-save ti backup. Pangngaasim ta padasem manen."
+  "backupFailed": "Saan a ma-save ti backup. Pangngaasim ta padasem manen.",
+  "syncTooLarge": "Dakkel unay ti datam tapno mai-sync iti accountmo. Punasem dagiti transaksion wenno nota a saanmonton a kasapulan, ket padasenna manen."
 }

@@ -2874,6 +2874,10 @@ class AppLocalizationsMs extends AppLocalizations {
   String get backupFailed => 'Sandaran tidak dapat disimpan. Sila cuba lagi.';
 
   @override
+  String get syncTooLarge =>
+      'Data anda terlalu besar untuk disegerakkan dengan akaun anda. Padam transaksi atau nota yang tidak diperlukan lagi, dan ia akan cuba lagi.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Ubuncinane {quantity} – izabelo ezingako sele zithengisiwe",
   "restoreNothing": "Akufunyanwanga zinto zithengiweyo ngaphambili ukuze zibuyiselwe.",
   "manageSubscriptionElsewhere": "Akukho mrhumo unokulawulwa apha. Umrhumo othengwe kwi-App Store okanye kwi-Google Play ulawulwa kwiisetingi zevenkile.",
-  "backupFailed": "Ikopi yokhuseleko ayikwazanga ukugcinwa. Nceda uzame kwakhona."
+  "backupFailed": "Ikopi yokhuseleko ayikwazanga ukugcinwa. Nceda uzame kwakhona.",
+  "syncTooLarge": "Idatha yakho inkulu kakhulu ukuba ingqamaniswe neakhawunti yakho. Cima iintengiselwano okanye amanqaku ongasawadingiyo, kwaye kuza kuzama kwakhona."
 }

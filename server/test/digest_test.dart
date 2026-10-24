@@ -490,4 +490,42 @@ void main() {
     );
     expect(Api.latestHeadline({'error': 'x'}), isNull);
   });
+
+  test('the expected dividend follows the shares bought or sold since the last payment', () {
+    final now = DateTime.utc(2026, 10, 19, 7);
+    Map<String, dynamic> data(List<Map<String, Object>> extra) => {
+      'lots': [
+        {'symbol': 'KO', 'quantity': 10, 'price': 60, 'currency': 'USD', 'date': '2025-01-10T00:00:00.000'},
+        ...extra,
+      ],
+      'dividends': [
+        {'symbol': 'KO', 'amount': 5.0, 'currency': 'USD', 'date': '2026-04-30'},
+        {'symbol': 'KO', 'amount': 5.0, 'currency': 'USD', 'date': '2026-07-30'},
+      ],
+    };
+    double next(List<Map<String, Object>> extra) =>
+        DigestSender.expectedDividendsOf(data(extra), now: now).single.amount;
+    expect(next([]), 5.0);
+    // Azóta tízzel több: kétszer annyi.
+    expect(
+      next([
+        {'symbol': 'KO', 'quantity': 10, 'price': 62, 'currency': 'USD', 'date': '2026-08-20T00:00:00.000'},
+      ]),
+      closeTo(10.0, 1e-9),
+    );
+    // Azóta a fele eladva: fele annyi.
+    expect(
+      next([
+        {
+          'symbol': 'KO',
+          'quantity': 5,
+          'price': 65,
+          'currency': 'USD',
+          'date': '2026-09-01T00:00:00.000',
+          'side': 'sell',
+        },
+      ]),
+      closeTo(2.5, 1e-9),
+    );
+  });
 }

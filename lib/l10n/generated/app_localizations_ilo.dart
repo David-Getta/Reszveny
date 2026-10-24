@@ -2895,6 +2895,10 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Saan a ma-save ti backup. Pangngaasim ta padasem manen.';
 
   @override
+  String get syncTooLarge =>
+      'Dakkel unay ti datam tapno mai-sync iti accountmo. Punasem dagiti transaksion wenno nota a saanmonton a kasapulan, ket padasenna manen.';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

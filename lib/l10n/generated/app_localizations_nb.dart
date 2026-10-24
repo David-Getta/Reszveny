@@ -2873,6 +2873,10 @@ class AppLocalizationsNb extends AppLocalizations {
   String get backupFailed => 'Sikkerhetskopien kunne ikke lagres. Prøv igjen.';
 
   @override
+  String get syncTooLarge =>
+      'Dataene dine er for store til å synkroniseres med kontoen din. Slett transaksjoner eller notater du ikke lenger trenger, så prøves det på nytt.';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

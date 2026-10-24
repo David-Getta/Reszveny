@@ -853,5 +853,6 @@
   "portfolioBuyBelowSold": "Ko famɗi fof {quantity} – ndee limoore yeeyaama ɓooyii",
   "restoreNothing": "Yiytaaka ko a soodiino adii ngam artirde.",
   "manageSubscriptionElsewhere": "Alaa abonmaa toppitetee ɗoo. Abonmaa soodaaɗo e App Store walla Google Play ina toppitee e teelte bitik ngon.",
-  "backupFailed": "Horiima danndude kopi ndi. Tiiɗno eto goɗngol."
+  "backupFailed": "Horiima danndude kopi ndi. Tiiɗno eto goɗngol.",
+  "syncTooLarge": "Keɓe maa ina mawni no feewi ngam sync e konte maa. Momtu soodgol e yeeyugol walla binndi ɗi a haajaaki kadi, ɗum fuɗɗittoto."
 }

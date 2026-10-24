@@ -2885,6 +2885,10 @@ class AppLocalizationsNy extends AppLocalizations {
       'Zosunga zobwezera sizinathe kusungidwa. Chonde yesaninso.';
 
   @override
+  String get syncTooLarge =>
+      'Deta yanu ndi yayikulu kwambiri kuti ilumikizidwe ndi akaunti yanu. Chotsani zogula ndi zogulitsa kapena zolemba zomwe simukuzifunanso, ndipo kudzayesanso.';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

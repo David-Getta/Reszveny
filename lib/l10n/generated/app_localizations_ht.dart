@@ -2871,6 +2871,10 @@ class AppLocalizationsHt extends AppLocalizations {
       'Nou pa t ka anrejistre sovgad la. Tanpri eseye ankò.';
 
   @override
+  String get syncTooLarge =>
+      'Done ou yo twò gwo pou senkronize ak kont ou. Efase tranzaksyon oswa nòt ou pa bezwen ankò, epi l ap eseye ankò.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

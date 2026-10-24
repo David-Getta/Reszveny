@@ -2890,6 +2890,10 @@ class AppLocalizationsLg extends AppLocalizations {
       'Kkopi ey\'obukuumi tesobodde kuterekebwa. Gezaako nate.';
 
   @override
+  String get syncTooLarge =>
+      'Data yo nnene nnyo okukwataganyizibwa n\'akawunti yo. Sangula bye wagula ne bye watunda oba ebiwandiiko by\'otokyetaaga, olwo kujja kuddamu okugezaako.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

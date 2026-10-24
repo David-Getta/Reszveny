@@ -2868,6 +2868,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get backupFailed => 'نسخهٔ پشتیبان ذخیره نشد. لطفاً دوباره تلاش کنید.';
 
   @override
+  String get syncTooLarge =>
+      'داده‌های شما برای همگام‌سازی با حسابتان بیش از حد بزرگ است. تراکنش‌ها یا یادداشت‌هایی را که دیگر لازم ندارید حذف کنید تا دوباره تلاش شود.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override
