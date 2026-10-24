@@ -861,5 +861,6 @@
   "signOutTitle": "Nĩ ũrenda kuuma?",
   "signOutBody": "Hisa ciaku, orodha ciaku, imenyithia cia thogora na maandĩko maku nĩ igũikara akaunti-inĩ yaku, na nĩ ikũeherio kĩndũ-inĩ gĩkĩ. Toonya rĩngĩ nĩguo ũcicookie.",
   "signOutUnsaved": "Mĩgarũrũku ĩmwe ndĩnahota kũigwo akaunti-inĩ yaku (gũtirĩ connection?). Ũngiuma rĩu, nĩ ĩkũũra.",
-  "signOutAnyway": "Uma o na kũrĩ ũguo"
+  "signOutAnyway": "Uma o na kũrĩ ũguo",
+  "fileTooLarge": "Faili ĩno nĩ nene mũno gũtũma ĩhingũrwo haha."
 }

@@ -2937,6 +2937,9 @@ class AppLocalizationsTs extends AppLocalizations {
   String get signOutAnyway => 'Huma hambiswiritano';
 
   @override
+  String get fileTooLarge => 'Fayili leyi i kulu ngopfu ku pfuriwa laha.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

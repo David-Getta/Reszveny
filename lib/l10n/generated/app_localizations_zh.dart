@@ -2781,6 +2781,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get signOutAnyway => '仍要退出登录';
 
   @override
+  String get fileTooLarge => '此文件过大，无法在此打开。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5929,6 +5932,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get signOutAnyway => '仍要登出';
+
+  @override
+  String get fileTooLarge => '此檔案過大，無法在此開啟。';
 
   @override
   String get portfolioGoalSet => '設定目標';

@@ -151,9 +151,10 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('earnings-summary-sheet')), findsOneWidget);
     expect(find.text('Apple beat expectations: revenue grew 8%.'), findsOneWidget);
-    expect(find.text('Apple Q3 results · investor.apple.com'), findsOneWidget);
-    // Az IR-oldal hivatalos forrás.
-    expect(find.byKey(const ValueKey('source-tag-official')), findsOneWidget);
+    expect(find.text('investor.apple.com'), findsOneWidget);
+    expect(find.text('Apple Q3 results'), findsOneWidget);
+    // Az `investor.` gépnév bárkié lehet: ismert webhely nélkül nincs „Hivatalos” címke.
+    expect(find.byKey(const ValueKey('source-tag-official')), findsNothing);
     expect(calls, 1);
     // Megosztás szövegként: cím, szöveg, források, megjegyzés.
     final shared = <String>[];

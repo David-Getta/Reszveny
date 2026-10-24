@@ -2911,6 +2911,9 @@ class AppLocalizationsHt extends AppLocalizations {
   String get signOutAnyway => 'Dekonekte kanmenm';
 
   @override
+  String get fileTooLarge => 'Fichye sa a twò gwo pou louvri isit la.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

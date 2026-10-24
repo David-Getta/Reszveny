@@ -2918,6 +2918,9 @@ class AppLocalizationsGn extends AppLocalizations {
   String get signOutAnyway => 'Esẽ jepe';
 
   @override
+  String get fileTooLarge => 'Ko archivo tuichaiterei ojepeʼa hag̃ua koʼápe.';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

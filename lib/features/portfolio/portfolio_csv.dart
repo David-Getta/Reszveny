@@ -23,13 +23,13 @@ String portfolioCsv(
   for (final l in lots) {
     b.writeln(
       [
-        l.symbol,
+        _csvText(l.symbol),
         n(l.quantity),
         n(l.price),
-        l.currency,
+        _csvText(l.currency),
         l.date?.toIso8601String().substring(0, 10) ?? '',
         l.sell ? 'sell' : 'buy',
-        if (withAccount) _csvField(l.account ?? ''),
+        if (withAccount) _csvText(l.account ?? ''),
         if (withFee) l.fee > 0 ? n(l.fee) : '',
       ].join(','),
     );
@@ -37,18 +37,18 @@ String portfolioCsv(
   for (final d in dividends) {
     b.writeln(
       [
-        d.symbol,
+        _csvText(d.symbol),
         '',
         n(d.amount),
-        d.currency,
+        _csvText(d.currency),
         d.date?.toIso8601String().substring(0, 10) ?? '',
         'dividend',
-        if (withAccount) _csvField(d.account ?? ''),
+        if (withAccount) _csvText(d.account ?? ''),
       ].join(','),
     );
   }
   for (final s in splits) {
-    b.writeln([s.symbol, s.to, s.from, '', s.date.toIso8601String().substring(0, 10), 'split'].join(','));
+    b.writeln([_csvText(s.symbol), s.to, s.from, '', s.date.toIso8601String().substring(0, 10), 'split'].join(','));
   }
   return b.toString();
 }
@@ -74,10 +74,10 @@ String dividendsCsv(List<DividendRecord> dividends, {DateTime? now}) {
     b.writeln(
       [
         d.date?.toIso8601String().substring(0, 10) ?? '',
-        d.symbol,
+        _csvText(d.symbol),
         n(d.amount),
-        d.currency,
-        if (withAccount) _csvField(d.account ?? ''),
+        _csvText(d.currency),
+        if (withAccount) _csvText(d.account ?? ''),
       ].join(','),
     );
   }
@@ -110,14 +110,14 @@ String realizedCsv(List<Position> positions, {Map<String, PortfolioLot> stored =
     b.writeln(
       [
         s.date?.toIso8601String().substring(0, 10) ?? '',
-        p.symbol,
+        _csvText(p.symbol),
         n(s.quantity / f),
         n(s.price * f),
         n(s.proceeds),
         n(s.cost),
         n(s.proceeds - s.cost),
-        p.currency,
-        if (withAccount) _csvField(s.account ?? ''),
+        _csvText(p.currency),
+        if (withAccount) _csvText(s.account ?? ''),
       ].join(','),
     );
   }
@@ -127,6 +127,11 @@ String realizedCsv(List<Position> positions, {Map<String, PortfolioLot> stored =
 /// CSV-mező: elválasztójelet (vessző, pontosvessző, tab), idézőjelet vagy sortörést
 /// tartalmazó szöveg idézőjelek között – a beolvasás soronként találgatja az elválasztót.
 String _csvField(String s) => RegExp(r'[,;\t"\n]').hasMatch(s) ? '"${s.replaceAll('"', '""')}"' : s;
+
+/// Szöveges cella (ticker, pénznem, számla): ami képletként indulna (`=`, `+`, `-`, `@`,
+/// tab, kocsivissza), aposztrófot kap elé – egy importált vagy szinkronból jött
+/// `=HYPERLINK(…)` a táblázatkezelőben ne fusson le.
+String _csvText(String s) => _csvField(RegExp(r'^[=+\-@\t\r]').hasMatch(s) ? "'$s" : s);
 
 /// A CSV a táblázatkezelő helyi beállításához: tizedesvesszős nyelven (pl. magyarul)
 /// pontosvesszővel elválasztva és a tört számokban tizedesvesszővel – így a helyi

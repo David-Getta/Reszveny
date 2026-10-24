@@ -2991,6 +2991,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get signOutAnyway => 'Всё равно выйти';
 
   @override
+  String get fileTooLarge =>
+      'Этот файл слишком большой, чтобы открыть его здесь.';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

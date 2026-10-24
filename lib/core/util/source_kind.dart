@@ -40,17 +40,11 @@ SourceKind? sourceKindOf(String url) {
   final host = uri?.host.toLowerCase().replaceFirst(RegExp(r'^www\.'), '') ?? '';
   if (host.isEmpty) return null;
   bool any(List<String> domains) => domains.any((d) => host == d || host.endsWith('.$d'));
-  // A cég befektetői oldala: ir.cég.com, investor(s).cég.com.
-  if (any(_official) || host.endsWith('.gov') || RegExp(r'^(ir|investors?)\.').hasMatch(host)) {
-    return SourceKind.official;
-  }
+  // Csak ismert webhely kap jelzést: az `ir.` / `investors.` gépnév vagy egy `/investors`
+  // útvonal bárkinek kiosztható (ir.pump-and-dump.biz), így nem jelenthet „hivatalost”.
+  if (any(_official) || host.endsWith('.gov')) return SourceKind.official;
   if (any(_pressRelease)) return SourceKind.pressRelease;
   if (any(_majorNews)) return SourceKind.majorNews;
   if (any(_opinion)) return SourceKind.opinion;
-  // Ismeretlen webhelyen a cég saját oldalai az útvonalról: befektetői oldal,
-  // illetve sajtószoba (pl. apple.com/newsroom).
-  final path = uri!.path.toLowerCase();
-  if (RegExp(r'^/(investors?|investor-relations)(/|$)').hasMatch(path)) return SourceKind.official;
-  if (RegExp(r'^/(newsroom|press-releases?|pressroom)(/|$)').hasMatch(path)) return SourceKind.pressRelease;
   return null;
 }

@@ -2934,6 +2934,9 @@ class AppLocalizationsNso extends AppLocalizations {
   String get signOutAnyway => 'Tšwa le ge go le bjalo';
 
   @override
+  String get fileTooLarge => 'Faele ye e kgolo kudu go ka bulwa mo.';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

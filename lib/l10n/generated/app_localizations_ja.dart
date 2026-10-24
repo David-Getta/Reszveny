@@ -2819,6 +2819,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get signOutAnyway => 'それでもサインアウト';
 
   @override
+  String get fileTooLarge => 'このファイルは大きすぎるため、ここでは開けません。';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

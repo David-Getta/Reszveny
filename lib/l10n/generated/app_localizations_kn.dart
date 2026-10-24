@@ -2920,6 +2920,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get signOutAnyway => 'ಆದರೂ ಸೈನ್ ಔಟ್ ಮಾಡಿ';
 
   @override
+  String get fileTooLarge => 'ಈ ಫೈಲ್ ಇಲ್ಲಿ ತೆರೆಯಲು ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

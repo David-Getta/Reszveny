@@ -2871,6 +2871,9 @@ class AppLocalizationsTi extends AppLocalizations {
   String get signOutAnyway => 'ብዘየገድስ ውጻእ';
 
   @override
+  String get fileTooLarge => 'እዚ ፋይል ኣብዚ ንምኽፋቱ ኣዝዩ ዓብዩ እዩ።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

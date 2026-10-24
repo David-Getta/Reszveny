@@ -352,10 +352,18 @@ class ReportStore extends ChangeNotifier {
       completed.value = r;
       await entitlements?.consume(cost: options.cost);
       _notifyQuota();
+      // A kódolás a helyfoglalás előtt: egy nem kódolható jelentés miatt ne törlődjenek a
+      // régebbi mentett elemzések (az nem helyhiány).
+      final String encoded, encodedOld;
+      try {
+        (encoded, encodedOld) = (jsonEncode(r.toJson()), keepOld == null ? '' : jsonEncode(keepOld.toJson()));
+      } catch (_) {
+        return;
+      }
       Future<void> write(SharedPreferences prefs) async {
-        await prefs.setString('$_prefix$symbol', jsonEncode(r.toJson()));
+        await prefs.setString('$_prefix$symbol', encoded);
         if (keepOld != null) {
-          await prefs.setString('$_prevPrefix$symbol', jsonEncode(keepOld.toJson()));
+          await prefs.setString('$_prevPrefix$symbol', encodedOld);
         } else {
           await prefs.remove('$_prevPrefix$symbol');
         }

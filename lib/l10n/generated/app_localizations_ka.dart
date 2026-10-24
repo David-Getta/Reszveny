@@ -2912,6 +2912,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get signOutAnyway => 'მაინც გასვლა';
 
   @override
+  String get fileTooLarge => 'ეს ფაილი ზედმეტად დიდია აქ გასახსნელად.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

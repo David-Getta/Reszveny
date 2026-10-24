@@ -861,5 +861,6 @@
   "signOutTitle": "Mag-sign out?",
   "signOutBody": "Ang imo portfolio, mga listahan, mga alerto sa presyo kag mga nota magapabilin sa imo account kag kuhaon sa sini nga device. Mag-sign in liwat para mabawi ini.",
   "signOutUnsaved": "Wala ma-save sa imo account ang iban nga mga pagbag-o (wala sing koneksyon?). Kon mag-sign out ka subong, madula ini.",
-  "signOutAnyway": "Mag-sign out gihapon"
+  "signOutAnyway": "Mag-sign out gihapon",
+  "fileTooLarge": "Daku gid ini nga file para mabuksan diri."
 }

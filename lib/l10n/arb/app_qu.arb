@@ -861,5 +861,6 @@
   "signOutTitle": "Cuentamanta lluqsinkichu?",
   "signOutBody": "Portafolioyki, listaykikuna, chanin willachiykunayki, qillqasqaykikunapas cuentaykipim qhipanqa, kay equipomantataq qichukunqa. Kutichinaykipaq huktawan yaykuy.",
   "signOutUnsaved": "Wakin tikraykunaqa manam cuentaykipi waqaychakuyta atirqanchu (manachu t'inkiy kan?). Kunan lluqsispaqa chinkanqam.",
-  "signOutAnyway": "Chaywanpas lluqsiy"
+  "signOutAnyway": "Chaywanpas lluqsiy",
+  "fileTooLarge": "Kay archivoqa nisyu hatunmi kaypi kicharinapaq."
 }

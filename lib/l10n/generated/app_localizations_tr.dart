@@ -2912,6 +2912,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get signOutAnyway => 'Yine de çıkış yap';
 
   @override
+  String get fileTooLarge => 'Bu dosya burada açılamayacak kadar büyük.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

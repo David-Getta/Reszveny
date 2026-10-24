@@ -66,7 +66,8 @@ Rules:
         'content': [
           'Language: $language',
           'Stock: ${companyName.isEmpty ? symbol : '$companyName ($symbol)'}',
-          'Today: ${today.toIso8601String().substring(0, 10)}',
+          // Hónapra kerekítve: a szerver csak a pontosan egyező kérést osztja meg.
+          'Current month: ${today.toIso8601String().substring(0, 7)}',
           if (lastPeriod != null) 'Last quarter in our data ended: ${lastPeriod.toIso8601String().substring(0, 10)}',
           'Summarize the most recent quarterly results.',
         ].join('\n'),

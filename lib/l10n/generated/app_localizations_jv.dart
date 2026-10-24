@@ -2913,6 +2913,9 @@ class AppLocalizationsJv extends AppLocalizations {
   String get signOutAnyway => 'Tetep metu';
 
   @override
+  String get fileTooLarge => 'File iki kegedhèn kanggo dibukak ing kene.';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

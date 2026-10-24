@@ -1052,8 +1052,12 @@ class PortfolioStore extends ChangeNotifier {
       account: canonicalAccount(account),
       fee: PortfolioLot.cleanFee(fee),
     );
+    final known = _accounts;
     _lots.add(lot);
     notifyListeners();
+    // Már ismert (vagy nincs) számla: a számlák listája nem változott – egy sok ezer soros
+    // import ne építse újra tételenként (különben négyzetesen lassul).
+    if (known != null && (lot.account == null || known.contains(lot.account))) _accounts = known;
     await _save();
     return lot;
   }

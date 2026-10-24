@@ -2911,6 +2911,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get signOutAnyway => 'Гэсэн ч гарах';
 
   @override
+  String get fileTooLarge => 'Энэ файл хэтэрхий том тул энд нээх боломжгүй.';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

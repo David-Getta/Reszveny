@@ -2904,6 +2904,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get signOutAnyway => 'မည်သို့ပင်ဖြစ်စေ ထွက်ရန်';
 
   @override
+  String get fileTooLarge => 'ဤဖိုင်သည် ဤနေရာတွင် ဖွင့်ရန် ကြီးလွန်းသည်။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

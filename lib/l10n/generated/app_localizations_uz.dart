@@ -2916,6 +2916,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get signOutAnyway => 'Baribir chiqish';
 
   @override
+  String get fileTooLarge => 'Bu fayl bu yerda ochish uchun juda katta.';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

@@ -2930,6 +2930,9 @@ class AppLocalizationsLg extends AppLocalizations {
   String get signOutAnyway => 'Fuluma wadde kiri kityo';
 
   @override
+  String get fileTooLarge => 'Fayiro eno nnene nnyo okugiggulira wano.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

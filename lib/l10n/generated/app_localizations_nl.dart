@@ -2920,6 +2920,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get signOutAnyway => 'Toch uitloggen';
 
   @override
+  String get fileTooLarge => 'Dit bestand is te groot om hier te openen.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

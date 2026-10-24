@@ -861,5 +861,6 @@
   "signOutTitle": "Udi musue kupatuka?",
   "signOutBody": "Portefeuille webe, ma-liste, alerte ya mushinga ne mifundu yebe bidi bishala mu compte webe, ne nebiumushibue mu tshintu etshi. Buela kabidi bua kubipeta kabidi.",
   "signOutUnsaved": "Bishintulula bimue kabiena bilame mu compte webe (kakuena connexion to?). Biwapatuka katataka, nebijimine.",
-  "signOutAnyway": "Patuka nansha nanku"
+  "signOutAnyway": "Patuka nansha nanku",
+  "fileTooLarge": "Fichier eu udi munene bikole bua kumubulula muaba eu."
 }

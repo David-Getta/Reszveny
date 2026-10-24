@@ -2890,6 +2890,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get signOutAnyway => 'នៅតែចាកចេញ';
 
   @override
+  String get fileTooLarge => 'ឯកសារនេះធំពេក មិនអាចបើកនៅទីនេះបានទេ។';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

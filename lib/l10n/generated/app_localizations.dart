@@ -4908,6 +4908,12 @@ abstract class AppLocalizations {
   /// **'Sign out anyway'**
   String get signOutAnyway;
 
+  /// Shown when a chosen CSV or backup file exceeds the size limit.
+  ///
+  /// In en, this message translates to:
+  /// **'This file is too large to open here.'**
+  String get fileTooLarge;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

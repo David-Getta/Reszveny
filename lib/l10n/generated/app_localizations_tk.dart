@@ -2914,6 +2914,9 @@ class AppLocalizationsTk extends AppLocalizations {
   String get signOutAnyway => 'Barybir çyk';
 
   @override
+  String get fileTooLarge => 'Bu faýl bu ýerde açmak üçin örän uly.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

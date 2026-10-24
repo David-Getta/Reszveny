@@ -2908,6 +2908,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get signOutAnyway => 'خروج در هر حال';
 
   @override
+  String get fileTooLarge =>
+      'این فایل برای باز شدن در اینجا بیش از حد بزرگ است.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

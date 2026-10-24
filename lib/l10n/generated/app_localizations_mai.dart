@@ -2904,6 +2904,9 @@ class AppLocalizationsMai extends AppLocalizations {
   String get signOutAnyway => 'तैयो साइन आउट करू';
 
   @override
+  String get fileTooLarge => 'ई फाइल एतय खोलबाक लेल बहुत पैघ अछि।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

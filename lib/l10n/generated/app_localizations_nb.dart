@@ -2911,6 +2911,9 @@ class AppLocalizationsNb extends AppLocalizations {
   String get signOutAnyway => 'Logg ut likevel';
 
   @override
+  String get fileTooLarge => 'Denne filen er for stor til å åpnes her.';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

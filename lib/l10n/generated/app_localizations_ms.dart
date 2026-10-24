@@ -2914,6 +2914,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get signOutAnyway => 'Log keluar juga';
 
   @override
+  String get fileTooLarge => 'Fail ini terlalu besar untuk dibuka di sini.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

@@ -2908,6 +2908,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get signOutAnyway => 'છતાં સાઇન આઉટ કરો';
 
   @override
+  String get fileTooLarge => 'આ ફાઇલ અહીં ખોલવા માટે ખૂબ મોટી છે.';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

@@ -2908,6 +2908,9 @@ class AppLocalizationsBm extends AppLocalizations {
   String get signOutAnyway => 'Bɔ kɔnti la o bɛɛ n\'a ta';
 
   @override
+  String get fileTooLarge => 'Nin fisiye ka bon kojugu ka a dayɛlɛ yan.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

@@ -2878,6 +2878,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get signOutAnyway => 'ออกจากระบบเลย';
 
   @override
+  String get fileTooLarge => 'ไฟล์นี้มีขนาดใหญ่เกินกว่าจะเปิดที่นี่ได้';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

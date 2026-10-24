@@ -861,5 +861,6 @@
   "signOutTitle": "O nyaka go tšwa?",
   "signOutBody": "Photefolio ya gago, mananeo, ditemošo tša theko le dintlha di šala akhaontong ya gago gomme di tlošwa sedirišweng se. Tsena gape gore o di hwetše morago.",
   "signOutUnsaved": "Diphetogo tše dingwe di be di sa kgone go bolokwa akhaontong ya gago (ga go na kgokagano?). Ge o ka tšwa bjale, di tla lahlega.",
-  "signOutAnyway": "Tšwa le ge go le bjalo"
+  "signOutAnyway": "Tšwa le ge go le bjalo",
+  "fileTooLarge": "Faele ye e kgolo kudu go ka bulwa mo."
 }

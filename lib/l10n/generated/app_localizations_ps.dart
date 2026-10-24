@@ -2904,6 +2904,9 @@ class AppLocalizationsPs extends AppLocalizations {
   String get signOutAnyway => 'بیا هم له حساب وتل';
 
   @override
+  String get fileTooLarge => 'دا فایل دلته د پرانیستلو لپاره ډېر لوی دی.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

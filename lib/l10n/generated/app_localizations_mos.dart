@@ -2895,6 +2895,10 @@ class AppLocalizationsMos extends AppLocalizations {
   String get signOutAnyway => 'Yi baa ne rẽ';
 
   @override
+  String get fileTooLarge =>
+      'Fiyie kãngã yaa bedr n yɩɩda, b pa tõe n yaool-a ka ye.';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

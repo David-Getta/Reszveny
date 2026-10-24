@@ -861,5 +861,6 @@
   "signOutTitle": "¿Cerrar sesión?",
   "signOutBody": "Tu cartera, tus listas, alertas de precio y notas se quedan en tu cuenta y se eliminan de este dispositivo. Vuelve a iniciar sesión para recuperarlas.",
   "signOutUnsaved": "Algunos cambios no se pudieron guardar en tu cuenta (¿sin conexión?). Si cierras sesión ahora, se perderán.",
-  "signOutAnyway": "Cerrar sesión igualmente"
+  "signOutAnyway": "Cerrar sesión igualmente",
+  "fileTooLarge": "Este archivo es demasiado grande para abrirlo aquí."
 }

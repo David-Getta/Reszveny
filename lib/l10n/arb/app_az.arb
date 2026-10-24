@@ -861,5 +861,6 @@
   "signOutTitle": "Hesabdan çıxılsın?",
   "signOutBody": "Portfeliniz, siyahılarınız, qiymət bildirişləriniz və qeydləriniz hesabınızda qalır və bu cihazdan silinir. Onları geri qaytarmaq üçün yenidən daxil olun.",
   "signOutUnsaved": "Bəzi dəyişikliklər hesabınızda saxlanıla bilmədi (bağlantı yoxdur?). İndi çıxış etsəniz, onlar itəcək.",
-  "signOutAnyway": "Yenə də çıxış et"
+  "signOutAnyway": "Yenə də çıxış et",
+  "fileTooLarge": "Bu fayl burada açmaq üçün çox böyükdür."
 }

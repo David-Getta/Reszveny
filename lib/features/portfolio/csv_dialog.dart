@@ -253,6 +253,9 @@ class _ImportDialog extends StatefulWidget {
   State<_ImportDialog> createState() => _ImportDialogState();
 }
 
+/// A beolvasható CSV legnagyobb mérete (egy több éves bróker-export is jóval kisebb).
+const maxImportBytes = 3 * 1024 * 1024;
+
 class _ImportDialogState extends State<_ImportDialog> {
   final _text = TextEditingController();
 
@@ -269,6 +272,14 @@ class _ImportDialogState extends State<_ImportDialog> {
         ],
       );
       if (file == null) return;
+      // Egy több megabájtos fájl a szövegmezőben és a beolvasáskor megakasztaná az appot.
+      if (await file.length() > maxImportBytes) {
+        if (mounted) {
+          ScaffoldMessenger.of(context)
+              .showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).fileTooLarge)));
+        }
+        return;
+      }
       final bytes = await file.readAsBytes();
       // UTF-8 (BOM nélkül), különben Latin-1 (régebbi Excel-exportok).
       var text = utf8.decode(bytes, allowMalformed: true);

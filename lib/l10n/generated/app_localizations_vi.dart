@@ -2903,6 +2903,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get signOutAnyway => 'Vẫn đăng xuất';
 
   @override
+  String get fileTooLarge => 'Tệp này quá lớn để mở tại đây.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

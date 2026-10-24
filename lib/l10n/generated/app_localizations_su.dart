@@ -2915,6 +2915,9 @@ class AppLocalizationsSu extends AppLocalizations {
   String get signOutAnyway => 'Tetep kaluar';
 
   @override
+  String get fileTooLarge => 'File ieu kagedéan pikeun dibuka di dieu.';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

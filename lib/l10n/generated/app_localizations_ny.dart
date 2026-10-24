@@ -2925,6 +2925,10 @@ class AppLocalizationsNy extends AppLocalizations {
   String get signOutAnyway => 'Tulukanibe';
 
   @override
+  String get fileTooLarge =>
+      'Fayilo iyi ndi yayikulu kwambiri kuti itsegulidwe pano.';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

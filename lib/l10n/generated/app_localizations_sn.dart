@@ -2923,6 +2923,10 @@ class AppLocalizationsSn extends AppLocalizations {
   String get signOutAnyway => 'Buda zvakadaro';
 
   @override
+  String get fileTooLarge =>
+      'Faira iyi yakakura zvakanyanya kuti ivhurwe pano.';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

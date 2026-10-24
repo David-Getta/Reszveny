@@ -2988,6 +2988,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get signOutAnyway => 'Aj tak sa odhlásiť';
 
   @override
+  String get fileTooLarge =>
+      'Tento súbor je príliš veľký, aby sa dal tu otvoriť.';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

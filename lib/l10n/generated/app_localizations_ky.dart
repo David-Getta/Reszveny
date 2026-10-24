@@ -2915,6 +2915,9 @@ class AppLocalizationsKy extends AppLocalizations {
   String get signOutAnyway => 'Баары бир чыгуу';
 
   @override
+  String get fileTooLarge => 'Бул файл бул жерде ачуу үчүн өтө чоң.';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

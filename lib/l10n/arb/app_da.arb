@@ -861,5 +861,6 @@
   "signOutTitle": "Vil du logge ud?",
   "signOutBody": "Din portefølje, dine lister, kursalarmer og noter forbliver på din konto og fjernes fra denne enhed. Log ind igen for at få dem tilbage.",
   "signOutUnsaved": "Nogle ændringer kunne ikke gemmes på din konto (ingen forbindelse?). Hvis du logger ud nu, går de tabt.",
-  "signOutAnyway": "Log ud alligevel"
+  "signOutAnyway": "Log ud alligevel",
+  "fileTooLarge": "Denne fil er for stor til at åbne her."
 }

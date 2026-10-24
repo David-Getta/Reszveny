@@ -2933,6 +2933,9 @@ class AppLocalizationsSt extends AppLocalizations {
   String get signOutAnyway => 'Tswa leha ho le jwalo';
 
   @override
+  String get fileTooLarge => 'Faele ena e kgolo haholo hore e ka bulwa mona.';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

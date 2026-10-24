@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
+import '../../core/util/links.dart';
 import '../../app_services.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
@@ -33,7 +33,7 @@ class UpdateBanner extends StatelessWidget {
             action = l10n.updateNow;
             onAction = url == null
                 ? (u.channel == UpdateChannel.sparkle ? u.installDownloaded : null)
-                : () => launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+                : () => openWeb(url);
           case UpdateStatus.downloading:
             text = l10n.updateDownloading;
             action = null;

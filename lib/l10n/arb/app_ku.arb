@@ -861,5 +861,6 @@
   "signOutTitle": "Tu derdikevî?",
   "signOutBody": "Portfolyo, lîste, hişyariyên bihayê û notên te di hesabê te de dimînin û ji vê amûrê têne rakirin. Ji bo ku tu wan vegerînî, dîsa têkeve.",
   "signOutUnsaved": "Hin guhertin di hesabê te de nehatin tomarkirin (girêdan tune?). Heke tu niha derkevî, ew ê winda bibin.",
-  "signOutAnyway": "Dîsa jî derkeve"
+  "signOutAnyway": "Dîsa jî derkeve",
+  "fileTooLarge": "Ev pel ji bo vekirinê li vir pir mezin e."
 }

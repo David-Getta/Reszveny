@@ -2912,6 +2912,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get signOutAnyway => 'پھر بھی سائن آؤٹ کریں';
 
   @override
+  String get fileTooLarge => 'یہ فائل یہاں کھولنے کے لیے بہت بڑی ہے۔';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

@@ -2914,6 +2914,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get signOutAnyway => 'Kirjaudu silti ulos';
 
   @override
+  String get fileTooLarge => 'Tämä tiedosto on liian suuri avattavaksi täällä.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

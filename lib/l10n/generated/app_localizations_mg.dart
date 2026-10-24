@@ -2934,6 +2934,10 @@ class AppLocalizationsMg extends AppLocalizations {
   String get signOutAnyway => 'Hivoaka ihany';
 
   @override
+  String get fileTooLarge =>
+      'Lehibe loatra ity rakitra ity ka tsy azo sokafana eto.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

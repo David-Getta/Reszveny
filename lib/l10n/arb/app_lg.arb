@@ -861,5 +861,6 @@
   "signOutTitle": "Oyagala okufuluma?",
   "signOutBody": "Emigabo gyo, enkalala zo, okulabula ku bbeeyi n'ebiwandiiko byo bisigala ku akawunti yo, era bijjibwa ku kyuma kino. Yingira nate okubiddizaawo.",
   "signOutUnsaved": "Enkyukakyuka ezimu tezisobodde kuterekebwa ku akawunti yo (tewali yintaneeti?). Bw'onofuluma kati, zijja kubula.",
-  "signOutAnyway": "Fuluma wadde kiri kityo"
+  "signOutAnyway": "Fuluma wadde kiri kityo",
+  "fileTooLarge": "Fayiro eno nnene nnyo okugiggulira wano."
 }

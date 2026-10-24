@@ -2992,6 +2992,9 @@ class AppLocalizationsPl extends AppLocalizations {
   String get signOutAnyway => 'Wyloguj się mimo to';
 
   @override
+  String get fileTooLarge => 'Ten plik jest za duży, aby go tu otworzyć.';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

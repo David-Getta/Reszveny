@@ -861,5 +861,6 @@
   "signOutTitle": "Uitloggen?",
   "signOutBody": "Je portefeuille, lijsten, koersalerts en notities blijven in je account en worden van dit apparaat verwijderd. Log opnieuw in om ze terug te krijgen.",
   "signOutUnsaved": "Sommige wijzigingen konden niet in je account worden opgeslagen (geen verbinding?). Als je nu uitlogt, gaan ze verloren.",
-  "signOutAnyway": "Toch uitloggen"
+  "signOutAnyway": "Toch uitloggen",
+  "fileTooLarge": "Dit bestand is te groot om hier te openen."
 }

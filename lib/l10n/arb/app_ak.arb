@@ -861,5 +861,6 @@
   "signOutTitle": "Wopɛ sɛ wofi mu?",
   "signOutBody": "Wo nkyɛfa, nhyehyɛe, bo ho kɔkɔbɔ ne nkyerɛwee bɛkɔ so atena wo akawnt mu, na wɔbeyi afi mfiri yi so. San wura mu bio na woanya bio.",
   "signOutUnsaved": "Nsakrae binom antumi ankora wɔ wo akawnt mu (nkitahodi nni hɔ?). Sɛ wofi mu seesei a, ɛbɛyera.",
-  "signOutAnyway": "Fi mu ara"
+  "signOutAnyway": "Fi mu ara",
+  "fileTooLarge": "Saa fael yi yɛ kɛse dodo a wontumi mmue wɔ ha."
 }

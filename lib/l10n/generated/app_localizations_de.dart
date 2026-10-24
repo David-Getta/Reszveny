@@ -2929,6 +2929,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get signOutAnyway => 'Trotzdem abmelden';
 
   @override
+  String get fileTooLarge => 'Diese Datei ist zu groß, um sie hier zu öffnen.';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

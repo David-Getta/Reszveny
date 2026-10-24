@@ -241,8 +241,14 @@ BackupPicker pickBackupFile = () async {
       XTypeGroup(label: 'JSON', extensions: ['json'], uniformTypeIdentifiers: ['public.json']),
     ],
   );
-  return file == null ? null : utf8.decode(await file.readAsBytes(), allowMalformed: true);
+  if (file == null) return null;
+  // Egy mentés jóval kisebb; egy óriási (vagy nem mentés) fájl ne akassza meg az appot.
+  if (await file.length() > maxBackupBytes) throw const FormatException('too large');
+  return utf8.decode(await file.readAsBytes(), allowMalformed: true);
 };
+
+/// A beolvasható mentés legnagyobb mérete.
+const maxBackupBytes = 20 * 1024 * 1024;
 
 /// A Beállítások „Biztonsági mentés” kártyája.
 class BackupCard extends StatelessWidget {
@@ -286,6 +292,9 @@ class BackupCard extends StatelessWidget {
               String? text;
               try {
                 text = await pickBackupFile();
+              } on FormatException {
+                messenger.showSnackBar(SnackBar(content: Text(l10n.fileTooLarge)));
+                return;
               } catch (_) {}
               if (text == null) return;
               final backup = Backup.parse(text);

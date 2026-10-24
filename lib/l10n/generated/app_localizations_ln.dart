@@ -2929,6 +2929,10 @@ class AppLocalizationsLn extends AppLocalizations {
   String get signOutAnyway => 'Bima kaka';
 
   @override
+  String get fileTooLarge =>
+      'Fisyé oyo eleki monene mpo na kofungola yango awa.';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

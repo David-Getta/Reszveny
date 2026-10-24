@@ -861,5 +861,6 @@
   "signOutTitle": "Uzolele kubasika?",
   "signOutBody": "Portefeuille na nge, ba lisiti, nkebisu za ntalu ye ba note na nge ta bikala na compte na nge, kansi bo ta katula yo na kisadilu kiaki. Kota diaka sambu na kuzwa yo diaka.",
   "signOutUnsaved": "Bansoba yankaka me lembana kubumbana na compte na nge (connexion kele ve?). Kana nge basika ntangu yai, yo ta vila.",
-  "signOutAnyway": "Basika kaka"
+  "signOutAnyway": "Basika kaka",
+  "fileTooLarge": "Fisye yai kele nene mingi sambu na kukangula yo awa."
 }

@@ -2912,6 +2912,9 @@ class AppLocalizationsKk extends AppLocalizations {
   String get signOutAnyway => 'Бәрібір шығу';
 
   @override
+  String get fileTooLarge => 'Бұл файл мұнда ашу үшін тым үлкен.';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

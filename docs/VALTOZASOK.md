@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.296)
+# Változásjegyzék (0.2.130 → 0.2.297)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,22 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Külső tartalom és szerződés: a negyvenharmadik és negyvennegyedik kódátnézés javításai
+
+- **0.2.297**: a hírek, az AI forrásai és a frissítési értesítés linkjei csak weboldalt nyitnak meg (`https`/
+  `http`): egy `file:` vagy más saját sémájú cím nem indíthat programot a gépen; a frissítés letöltési címe csak
+  `https` lehet. A forrásoknál elöl, saját sorban látszik a webhely, ahová a link visz, így egy félrevezető cím
+  nem takarhatja el; a „Hivatalos” címkét csak ismert webhely kapja (egy `ir.`-rel kezdődő vagy `/investors`
+  útvonalú oldal bárkié lehet). Egy végtelen szám az AI válaszában már nem törli a mentett elemzéseket. A CSV-
+  exportban a képletnek látszó szöveg (pl. egy importált `=HYPERLINK(…)` számlanév) aposztrófot kap, így a
+  táblázatkezelő nem futtatja. Túl nagy CSV- vagy mentésfájlt az app nem nyit meg (szól), és a sok ezer soros,
+  számlás import sem lassul négyzetesen. A szerver a Twelve Data tartalékárát akkor is rendes válaszként adja,
+  ha a Finnhub hibát jelzett, és az ár valódi idejével – így a nem amerikai részvények ára és ma beállított
+  riasztása is működik. Az utolsó extra elemzés után a formátumjavítás nem kér előfizetést. A megosztott AI-
+  magyarázatok (instrumentum, gyorsjelentés, napi mozgás) kérése már tényleg megosztható (nem napra pontos),
+  így kevesebb fizetős hívás és kérdés-keret fogy. A belépésnél a bemásolt cím láthatatlan jelei kimaradnak, és
+  a hibás cím, a túl sok kérés és a levélküldési hiba külön üzenetet kap.
 
 ## Frissítés régebbi változatról: a negyvenkettedik kódátnézés javításai
 

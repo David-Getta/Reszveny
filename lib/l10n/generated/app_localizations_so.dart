@@ -2922,6 +2922,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get signOutAnyway => 'Si kastaba ka bax';
 
   @override
+  String get fileTooLarge =>
+      'Faylkani aad buu u weyn yahay in halkan lagu furo.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

@@ -2992,6 +2992,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get signOutAnyway => 'Усе одно вийти';
 
   @override
+  String get fileTooLarge => 'Цей файл завеликий, щоб відкрити його тут.';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

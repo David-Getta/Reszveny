@@ -2872,6 +2872,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get signOutAnyway => 'ለማንኛውም ውጣ';
 
   @override
+  String get fileTooLarge => 'ይህ ፋይል እዚህ ለመክፈት በጣም ትልቅ ነው።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

@@ -861,5 +861,6 @@
   "signOutTitle": "要退出登录吗？",
   "signOutBody": "您的投资组合、列表、价格提醒和笔记会保留在您的账户中，并从此设备上移除。重新登录即可恢复。",
   "signOutUnsaved": "部分更改未能保存到您的账户（网络未连接？）。如果现在退出登录，这些更改将会丢失。",
-  "signOutAnyway": "仍要退出登录"
+  "signOutAnyway": "仍要退出登录",
+  "fileTooLarge": "此文件过大，无法在此打开。"
 }

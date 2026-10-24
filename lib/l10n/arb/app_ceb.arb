@@ -861,5 +861,6 @@
   "signOutTitle": "Mag-sign out?",
   "signOutBody": "Ang imong portfolio, mga lista, mga alerto sa presyo ug mga nota magpabilin sa imong account ug pagatangtangon gikan niini nga device. Pag-sign in pag-usab aron mabalik kini.",
   "signOutUnsaved": "Ang pipila ka kausaban wala ma-save sa imong account (walay koneksyon?). Kon mag-sign out ka karon, mawala kini.",
-  "signOutAnyway": "Mag-sign out gihapon"
+  "signOutAnyway": "Mag-sign out gihapon",
+  "fileTooLarge": "Dako kaayo kini nga file aron maablihan dinhi."
 }

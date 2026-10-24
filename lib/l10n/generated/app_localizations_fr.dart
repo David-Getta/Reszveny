@@ -2926,6 +2926,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get signOutAnyway => 'Se déconnecter quand même';
 
   @override
+  String get fileTooLarge =>
+      'Ce fichier est trop volumineux pour être ouvert ici.';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

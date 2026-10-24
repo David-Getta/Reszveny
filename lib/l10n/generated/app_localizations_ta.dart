@@ -2926,6 +2926,10 @@ class AppLocalizationsTa extends AppLocalizations {
   String get signOutAnyway => 'எப்படியும் வெளியேறு';
 
   @override
+  String get fileTooLarge =>
+      'இந்தக் கோப்பு இங்கே திறக்க முடியாத அளவுக்குப் பெரிதாக உள்ளது.';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

@@ -861,5 +861,6 @@
   "signOutTitle": "Vai izrakstīties?",
   "signOutBody": "Jūsu portfelis, saraksti, cenu brīdinājumi un piezīmes paliek jūsu kontā un tiek noņemti no šīs ierīces. Pierakstieties vēlreiz, lai tos atgūtu.",
   "signOutUnsaved": "Dažas izmaiņas neizdevās saglabāt jūsu kontā (nav savienojuma?). Ja izrakstīsieties tagad, tās tiks zaudētas.",
-  "signOutAnyway": "Tomēr izrakstīties"
+  "signOutAnyway": "Tomēr izrakstīties",
+  "fileTooLarge": "Šis fails ir pārāk liels, lai to atvērtu šeit."
 }

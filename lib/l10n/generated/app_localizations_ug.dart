@@ -2915,6 +2915,9 @@ class AppLocalizationsUg extends AppLocalizations {
   String get signOutAnyway => 'يەنىلا چىقىش';
 
   @override
+  String get fileTooLarge => 'بۇ ھۆججەت بەك چوڭ، بۇ يەردە ئاچقىلى بولمايدۇ.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

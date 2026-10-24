@@ -2883,6 +2883,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get signOutAnyway => 'ອອກຈາກລະບົບເລີຍ';
 
   @override
+  String get fileTooLarge => 'ໄຟລ໌ນີ້ໃຫຍ່ເກີນໄປທີ່ຈະເປີດຢູ່ນີ້.';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

@@ -63,7 +63,8 @@ Rules:
           'Language: $language',
           'Ticker: ${symbol.toUpperCase()}${name.isNotEmpty && name.toUpperCase() != symbol.toUpperCase() ? ' ($name)' : ''}',
           if (exchange != null && exchange.isNotEmpty) 'Exchange: $exchange',
-          'Today: ${today.toIso8601String().substring(0, 10)}',
+          // Hónapra kerekítve: a szerver csak a pontosan egyező kérést osztja meg.
+          'Current month: ${today.toIso8601String().substring(0, 7)}',
           'Explain what this instrument is.',
         ].join('\n'),
       },

@@ -2983,6 +2983,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get signOutAnyway => 'Přesto se odhlásit';
 
   @override
+  String get fileTooLarge =>
+      'Tento soubor je příliš velký, aby se dal zde otevřít.';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

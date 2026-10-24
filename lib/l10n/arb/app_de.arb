@@ -861,5 +861,6 @@
   "signOutTitle": "Abmelden?",
   "signOutBody": "Dein Portfolio, deine Listen, Kursalarme und Notizen bleiben in deinem Konto und werden von diesem Gerät entfernt. Melde dich wieder an, um sie zurückzubekommen.",
   "signOutUnsaved": "Einige Änderungen konnten nicht in deinem Konto gespeichert werden (keine Verbindung?). Wenn du dich jetzt abmeldest, gehen sie verloren.",
-  "signOutAnyway": "Trotzdem abmelden"
+  "signOutAnyway": "Trotzdem abmelden",
+  "fileTooLarge": "Diese Datei ist zu groß, um sie hier zu öffnen."
 }

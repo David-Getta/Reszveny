@@ -861,5 +861,6 @@
   "signOutTitle": "Metu saka akun?",
   "signOutBody": "Portofolio, dhaptar, pèngetan rega, lan cathetan sampeyan tetep ana ing akun sampeyan lan dibusak saka piranti iki. Mlebu manèh kanggo mbalèkaké.",
   "signOutUnsaved": "Sawetara owah-owahan ora bisa disimpen ing akun sampeyan (ora ana sambungan?). Yen sampeyan metu saiki, owah-owahan kasebut bakal ilang.",
-  "signOutAnyway": "Tetep metu"
+  "signOutAnyway": "Tetep metu",
+  "fileTooLarge": "File iki kegedhèn kanggo dibukak ing kene."
 }

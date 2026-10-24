@@ -47,6 +47,22 @@ class _SignInFlowState extends State<_SignInFlow> {
 
   static final _emailRe = RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$');
 
+  /// Bemásolt címből a láthatatlan jelek (nulla szélességű szóköz, irányjelek, BOM) is
+  /// kimaradnak: a szerver az ilyen címet mindig elutasítaná.
+  static final _invisible = RegExp('[\u00AD\u200B-\u200F\u202A-\u202E\u2060-\u2064\uFEFF]');
+
+  String get _cleanEmail => _email.text.replaceAll(_invisible, '').trim();
+
+  /// A szerver hibakódja a felhasználónak: hibás cím, túl sok kérés, egyéb.
+  String _message(AppLocalizations l10n, Object e) => switch (e) {
+    BackendException(code: 'invalid_code') => l10n.errInvalidCode,
+    BackendException(code: 'invalid_email') => l10n.errInvalidEmail,
+    BackendException(status: 429) => l10n.errRateLimited,
+    // A levélküldő hibája nem a felhasználó kapcsolatán múlik.
+    BackendException(code: 'mail_failed') => l10n.errorGeneric,
+    _ => l10n.errSignInFailed,
+  };
+
   @override
   void dispose() {
     _email.dispose();
@@ -56,7 +72,7 @@ class _SignInFlowState extends State<_SignInFlow> {
 
   Future<void> _send() async {
     final l10n = AppLocalizations.of(context);
-    final email = _email.text.trim();
+    final email = _cleanEmail;
     if (!_emailRe.hasMatch(email)) {
       setState(() => _error = l10n.errInvalidEmail);
       return;
@@ -68,8 +84,8 @@ class _SignInFlowState extends State<_SignInFlow> {
     try {
       await widget.account.startLogin(email);
       if (mounted) setState(() => _codeSent = true);
-    } catch (_) {
-      if (mounted) setState(() => _error = l10n.errSignInFailed);
+    } catch (e) {
+      if (mounted) setState(() => _error = _message(l10n, e));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -82,12 +98,10 @@ class _SignInFlowState extends State<_SignInFlow> {
       _error = null;
     });
     try {
-      await widget.account.verify(_email.text.trim(), _code.text.trim());
+      await widget.account.verify(_cleanEmail, _code.text.trim());
       if (mounted) Navigator.of(context).pop(true);
-    } on BackendException catch (e) {
-      if (mounted) setState(() => _error = e.code == 'invalid_code' ? l10n.errInvalidCode : l10n.errSignInFailed);
-    } catch (_) {
-      if (mounted) setState(() => _error = l10n.errSignInFailed);
+    } catch (e) {
+      if (mounted) setState(() => _error = _message(l10n, e));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -110,7 +124,7 @@ class _SignInFlowState extends State<_SignInFlow> {
           Text(l10n.signInTitle, style: theme.textTheme.titleLarge, textAlign: TextAlign.center),
           const SizedBox(height: 6),
           Text(
-            _codeSent ? l10n.codeSentTo(_email.text.trim()) : l10n.accountBenefit,
+            _codeSent ? l10n.codeSentTo(_cleanEmail) : l10n.accountBenefit,
             style: muted,
             textAlign: TextAlign.center,
           ),

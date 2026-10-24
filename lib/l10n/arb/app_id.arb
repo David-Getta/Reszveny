@@ -861,5 +861,6 @@
   "signOutTitle": "Keluar dari akun?",
   "signOutBody": "Portofolio, daftar, peringatan harga, dan catatan Anda tetap ada di akun Anda dan dihapus dari perangkat ini. Masuk lagi untuk mendapatkannya kembali.",
   "signOutUnsaved": "Beberapa perubahan tidak dapat disimpan ke akun Anda (tidak ada koneksi?). Jika Anda keluar sekarang, perubahan tersebut akan hilang.",
-  "signOutAnyway": "Tetap keluar"
+  "signOutAnyway": "Tetap keluar",
+  "fileTooLarge": "File ini terlalu besar untuk dibuka di sini."
 }

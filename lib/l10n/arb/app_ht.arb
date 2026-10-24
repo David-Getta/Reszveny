@@ -861,5 +861,6 @@
   "signOutTitle": "Dekonekte?",
   "signOutBody": "Pòtfèy ou, lis ou yo, alèt pri ou yo ak nòt ou yo rete nan kont ou, epi y ap retire yo sou aparèy sa a. Konekte ankò pou w rekipere yo.",
   "signOutUnsaved": "Gen kèk chanjman ki pa t ka anrejistre nan kont ou (pa gen koneksyon?). Si ou dekonekte kounye a, y ap pèdi.",
-  "signOutAnyway": "Dekonekte kanmenm"
+  "signOutAnyway": "Dekonekte kanmenm",
+  "fileTooLarge": "Fichye sa a twò gwo pou louvri isit la."
 }

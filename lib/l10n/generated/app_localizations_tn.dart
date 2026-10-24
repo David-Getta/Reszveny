@@ -2935,6 +2935,9 @@ class AppLocalizationsTn extends AppLocalizations {
   String get signOutAnyway => 'Tswa le fa go ntse jalo';
 
   @override
+  String get fileTooLarge => 'Faele eno e kgolo thata go ka bulwa fano.';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

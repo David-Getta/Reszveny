@@ -861,5 +861,6 @@
   "signOutTitle": "I bɛ bɔ kɔnti la wa?",
   "signOutBody": "I ka aksiyɔn kɛsu, lisiw, sɔngɔ lasɔminiw ani sɛbɛnniw bɛ to i ka kɔnti la, u bɛ bɔ nin minɛn in kan. Don tugun walasa ka u sɔrɔ kokura.",
   "signOutUnsaved": "Falenni dɔw ma se ka mara i ka kɔnti la (jɛɲɔgɔnya tɛ yen wa?). Ni i bɔra sisan, u bɛna tunun.",
-  "signOutAnyway": "Bɔ kɔnti la o bɛɛ n'a ta"
+  "signOutAnyway": "Bɔ kɔnti la o bɛɛ n'a ta",
+  "fileTooLarge": "Nin fisiye ka bon kojugu ka a dayɛlɛ yan."
 }

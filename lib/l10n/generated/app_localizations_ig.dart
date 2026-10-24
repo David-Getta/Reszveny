@@ -2905,6 +2905,9 @@ class AppLocalizationsIg extends AppLocalizations {
   String get signOutAnyway => 'Pụọ n\'agbanyeghị';
 
   @override
+  String get fileTooLarge => 'Faịlụ a buru oke ibu imeghe ya ebe a.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

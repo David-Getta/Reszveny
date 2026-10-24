@@ -861,5 +861,6 @@
   "signOutTitle": "Đăng xuất?",
   "signOutBody": "Danh mục, danh sách, cảnh báo giá và ghi chú của bạn vẫn được giữ trong tài khoản và sẽ bị xóa khỏi thiết bị này. Đăng nhập lại để lấy lại chúng.",
   "signOutUnsaved": "Một số thay đổi chưa thể lưu vào tài khoản của bạn (không có kết nối?). Nếu đăng xuất bây giờ, chúng sẽ bị mất.",
-  "signOutAnyway": "Vẫn đăng xuất"
+  "signOutAnyway": "Vẫn đăng xuất",
+  "fileTooLarge": "Tệp này quá lớn để mở tại đây."
 }

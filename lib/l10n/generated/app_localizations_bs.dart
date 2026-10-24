@@ -2961,6 +2961,9 @@ class AppLocalizationsBs extends AppLocalizations {
   String get signOutAnyway => 'Ipak se odjavi';
 
   @override
+  String get fileTooLarge => 'Ovaj fajl je prevelik da bi se ovdje otvorio.';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

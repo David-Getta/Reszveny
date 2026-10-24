@@ -2910,6 +2910,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get signOutAnyway => 'කෙසේ වෙතත් වරන්න';
 
   @override
+  String get fileTooLarge => 'මෙම ගොනුව මෙහි විවෘත කළ නොහැකි තරම් විශාලයි.';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

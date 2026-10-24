@@ -204,7 +204,9 @@ void main() {
     await tester.pumpAndSettle();
     expect(questions, ['What is the biggest risk?']);
     expect(find.text('China demand is the biggest risk: about a fifth of revenue.'), findsOneWidget);
-    expect(find.text('China sales report · www.ft.com'), findsOneWidget);
+    // A webhely elöl, saját sorban; alatta a cím.
+    expect(find.text('ft.com'), findsOneWidget);
+    expect(find.text('China sales report'), findsOneWidget);
     expect(find.byKey(const ValueKey('ask-suggest-0')), findsNothing);
 
     await tester.enterText(find.byKey(const ValueKey('ask-input')), 'And regulation?');

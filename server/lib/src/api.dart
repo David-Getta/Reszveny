@@ -2285,15 +2285,16 @@ class Api {
     if (raw.length > helperMaxBytes) return _error(413, 'too_large');
     final now = store.clock();
     final e = store.entitlement(uid);
-    // Csomag (vagy élő próbaidő, vagy extra elemzés) nélkül nincs segédhívás.
-    if (!quota.hasAccess(e)) return _error(402, 'no_plan');
+    final recentAnalysis = store.hasUsageSince(uid, now.subtract(const Duration(hours: 1)));
+    // Csomag (vagy élő próbaidő, vagy extra elemzés) nélkül nincs segédhívás – kivéve a
+    // most kifizetett elemzés folytatását (pl. a JSON-javítás az utolsó extra elemzés után).
+    if (!quota.hasAccess(e) && !recentAnalysis) return _error(402, 'no_plan');
     final trial = e.tier == null || e.tier == 'trial';
     if (store.helperCallsSince(uid, now.subtract(const Duration(hours: 1))) >= helperPerHour ||
         store.helperCallsSince(uid, now.subtract(const Duration(days: 1))) >=
             (trial ? helperPerDayTrial : helperPerDay)) {
       return _error(429, 'rate_limited', 'Too many requests, please try again later.');
     }
-    final recentAnalysis = store.hasUsageSince(uid, now.subtract(const Duration(hours: 1)));
     final body = limitHelperRequest(
       raw,
       // Próbaidőben az olcsóbb modell (mint az elemzésnél és a kérdésnél).
@@ -2384,17 +2385,20 @@ class Api {
       return _error(504, 'upstream_timeout');
     }
     var body = upstream.body;
+    var status = upstream.statusCode;
     // A Finnhub ingyenes csomagja csak USA-részvényeket áraz: ha nincs ár (c = 0),
     // a Twelve Data is megpróbálható (a nem USA-tőzsdékhez annak fizetős csomagja kell).
+    // A tartalék ára érvényes válasz (200) akkor is, ha a Finnhub hibát adott (429, 403):
+    // az app különben eldobná.
     if (path == 'quote' && twelveDataApiKey.isNotEmpty && !_hasFinnhubPrice(upstream)) {
       final td = await _twelveDataQuote(symbol);
-      if (td != null) body = jsonEncode(td);
+      if (td != null) (body, status) = (jsonEncode(td), 200);
     }
-    if (path == 'quote' && upstream.statusCode == 200 && symbol.isNotEmpty) {
+    if (path == 'quote' && status == 200 && symbol.isNotEmpty) {
       if (_quotes.length > 5000) _quotes.clear();
       _quotes[symbol] = (at: now, body: body);
     }
-    return Response(upstream.statusCode, body: body, headers: {'content-type': 'application/json'});
+    return Response(status, body: body, headers: {'content-type': 'application/json'});
   }
 
   static bool _hasFinnhubPrice(http.Response res) {
@@ -2429,6 +2433,10 @@ class Api {
     final c = n('close');
     if (c == null || c <= 0) return null;
     final ts = j['timestamp'];
+    final last = switch (j['last_quote_at']) {
+      final num v => v.toInt(),
+      final v => int.tryParse('${v ?? ''}'),
+    };
     return {
       'c': c,
       'd': n('change'),
@@ -2437,11 +2445,10 @@ class Api {
       'l': n('low'),
       'o': n('open'),
       'pc': n('previous_close'),
-      't': ts is num ? ts.toInt() : int.tryParse('$ts'),
-      'last_quote_at': switch (j['last_quote_at']) {
-        final num v => v.toInt(),
-        final v => int.tryParse('${v ?? ''}'),
-      },
+      // Az ár ideje: a `timestamp` a napi gyertya kezdete (éjfél), a valódi idő a
+      // `last_quote_at` – az app ebből dönti el, teljesülhet-e egy ma beállított riasztás.
+      't': last ?? (ts is num ? ts.toInt() : int.tryParse('$ts')),
+      'last_quote_at': last,
     };
   }
 

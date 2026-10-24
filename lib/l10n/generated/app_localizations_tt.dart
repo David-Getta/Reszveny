@@ -2909,6 +2909,9 @@ class AppLocalizationsTt extends AppLocalizations {
   String get signOutAnyway => 'Барыбер чыгу';
 
   @override
+  String get fileTooLarge => 'Бу файл монда ачу өчен артык зур.';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

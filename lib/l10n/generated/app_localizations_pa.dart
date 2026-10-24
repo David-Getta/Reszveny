@@ -2910,6 +2910,9 @@ class AppLocalizationsPa extends AppLocalizations {
   String get signOutAnyway => 'ਫਿਰ ਵੀ ਸਾਈਨ ਆਊਟ ਕਰੋ';
 
   @override
+  String get fileTooLarge => 'ਇਹ ਫ਼ਾਈਲ ਇੱਥੇ ਖੋਲ੍ਹਣ ਲਈ ਬਹੁਤ ਵੱਡੀ ਹੈ।';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

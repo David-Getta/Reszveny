@@ -2917,6 +2917,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String get signOutAnyway => 'Dîsa jî derkeve';
 
   @override
+  String get fileTooLarge => 'Ev pel ji bo vekirinê li vir pir mezin e.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

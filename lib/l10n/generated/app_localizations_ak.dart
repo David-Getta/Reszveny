@@ -2914,6 +2914,9 @@ class AppLocalizationsAk extends AppLocalizations {
   String get signOutAnyway => 'Fi mu ara';
 
   @override
+  String get fileTooLarge => 'Saa fael yi yɛ kɛse dodo a wontumi mmue wɔ ha.';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

@@ -2912,6 +2912,9 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get signOutAnyway => 'Sign out anyhow';
 
   @override
+  String get fileTooLarge => 'Dis file too big to open for here.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

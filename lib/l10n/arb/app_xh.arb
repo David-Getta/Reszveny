@@ -861,5 +861,6 @@
   "signOutTitle": "Ufuna ukuphuma?",
   "signOutBody": "Ipotifoliyo yakho, uluhlu, izilumkiso zamaxabiso namanqaku zihlala kwiakhawunti yakho kwaye zisuswa kwesi sixhobo. Ngena kwakhona ukuze uzibuyise.",
   "signOutUnsaved": "Olunye utshintsho alukwazanga ukugcinwa kwiakhawunti yakho (akukho qhagamshelo?). Ukuba uphuma ngoku, luya kulahleka.",
-  "signOutAnyway": "Phuma noko"
+  "signOutAnyway": "Phuma noko",
+  "fileTooLarge": "Le fayile inkulu kakhulu ukuba ivulwe apha."
 }

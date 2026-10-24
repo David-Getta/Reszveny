@@ -2920,6 +2920,10 @@ class AppLocalizationsHa extends AppLocalizations {
   String get signOutAnyway => 'Fita duk da haka';
 
   @override
+  String get fileTooLarge =>
+      'Wannan fayil ya yi girma matuƙa don a buɗe shi a nan.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

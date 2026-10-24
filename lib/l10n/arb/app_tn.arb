@@ -861,5 +861,6 @@
   "signOutTitle": "O batla go tswa?",
   "signOutBody": "Potefolio ya gago, manaane, dikitsiso tsa tlhwatlhwa le dintlha di sala mo akhaontong ya gago mme di tlosiwa mo sedirisiweng se. Tsena gape gore o di bone gape.",
   "signOutUnsaved": "Diphetogo dingwe ga di a kgona go bolokwa mo akhaontong ya gago (ga go na kgolagano?). Fa o tswa jaanong, di tla latlhega.",
-  "signOutAnyway": "Tswa le fa go ntse jalo"
+  "signOutAnyway": "Tswa le fa go ntse jalo",
+  "fileTooLarge": "Faele eno e kgolo thata go ka bulwa fano."
 }

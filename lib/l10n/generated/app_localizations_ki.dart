@@ -2915,6 +2915,9 @@ class AppLocalizationsKi extends AppLocalizations {
   String get signOutAnyway => 'Uma o na kũrĩ ũguo';
 
   @override
+  String get fileTooLarge => 'Faili ĩno nĩ nene mũno gũtũma ĩhingũrwo haha.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

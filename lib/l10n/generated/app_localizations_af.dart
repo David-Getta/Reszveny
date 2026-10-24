@@ -2918,6 +2918,9 @@ class AppLocalizationsAf extends AppLocalizations {
   String get signOutAnyway => 'Meld tog af';
 
   @override
+  String get fileTooLarge => 'Hierdie lêer is te groot om hier oop te maak.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

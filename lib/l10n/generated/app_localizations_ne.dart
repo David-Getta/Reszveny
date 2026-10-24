@@ -2910,6 +2910,9 @@ class AppLocalizationsNe extends AppLocalizations {
   String get signOutAnyway => 'जे भए पनि साइन आउट गर्नुहोस्';
 
   @override
+  String get fileTooLarge => 'यो फाइल यहाँ खोल्न धेरै ठूलो छ।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

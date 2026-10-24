@@ -2831,6 +2831,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get signOutAnyway => '그래도 로그아웃';
 
   @override
+  String get fileTooLarge => '이 파일은 너무 커서 여기서 열 수 없습니다.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

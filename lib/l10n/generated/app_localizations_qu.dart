@@ -2929,6 +2929,9 @@ class AppLocalizationsQu extends AppLocalizations {
   String get signOutAnyway => 'Chaywanpas lluqsiy';
 
   @override
+  String get fileTooLarge => 'Kay archivoqa nisyu hatunmi kaypi kicharinapaq.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

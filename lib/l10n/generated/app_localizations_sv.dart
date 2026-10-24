@@ -2912,6 +2912,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get signOutAnyway => 'Logga ut ändå';
 
   @override
+  String get fileTooLarge => 'Den här filen är för stor för att öppnas här.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

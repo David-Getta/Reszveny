@@ -57,7 +57,7 @@ void main() {
     final user = ((body['messages'] as List).single as Map)['content'] as String;
     expect(user, contains('Stock: NVDA (NVIDIA Corp)'));
     expect(user, contains('Today: 2026-10-21'));
-    expect(user, contains('Move today: +4.2%'));
+    expect(user, contains('Move today: up 2.5% or more'));
     expect(user, contains('Language: Hungarian'));
     expect(body['shared_cache'], 'move|NVDA|2026-10-21|+1|Hungarian');
     expect(((body['tools'] as List).first as Map)['max_uses'], MoveExplainer.maxSearches);

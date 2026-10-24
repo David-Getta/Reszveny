@@ -2927,6 +2927,10 @@ class AppLocalizationsOm extends AppLocalizations {
   String get signOutAnyway => 'Ta\'us ba\'i';
 
   @override
+  String get fileTooLarge =>
+      'Faayiliin kun asitti banamuuf baay\'ee guddaadha.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

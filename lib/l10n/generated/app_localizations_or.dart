@@ -2909,6 +2909,9 @@ class AppLocalizationsOr extends AppLocalizations {
   String get signOutAnyway => 'ତଥାପି ସାଇନ ଆଉଟ କରନ୍ତୁ';
 
   @override
+  String get fileTooLarge => 'ଏହି ଫାଇଲଟି ଏଠାରେ ଖୋଲିବା ପାଇଁ ବହୁତ ବଡ଼।';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

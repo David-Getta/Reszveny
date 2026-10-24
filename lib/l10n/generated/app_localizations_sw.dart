@@ -2916,6 +2916,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get signOutAnyway => 'Toka hata hivyo';
 
   @override
+  String get fileTooLarge => 'Faili hii ni kubwa mno kufunguliwa hapa.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

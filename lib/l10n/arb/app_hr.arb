@@ -861,5 +861,6 @@
   "signOutTitle": "Odjaviti se?",
   "signOutBody": "Vaš portfelj, popisi, obavijesti o cijeni i bilješke ostaju na vašem računu i uklanjaju se s ovog uređaja. Ponovno se prijavite da biste ih vratili.",
   "signOutUnsaved": "Neke promjene nije bilo moguće spremiti na vaš račun (nema veze?). Ako se sada odjavite, bit će izgubljene.",
-  "signOutAnyway": "Svejedno se odjavi"
+  "signOutAnyway": "Svejedno se odjavi",
+  "fileTooLarge": "Ova je datoteka prevelika da bi se ovdje otvorila."
 }

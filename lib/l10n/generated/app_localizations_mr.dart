@@ -2911,6 +2911,9 @@ class AppLocalizationsMr extends AppLocalizations {
   String get signOutAnyway => 'तरीही साइन आउट करा';
 
   @override
+  String get fileTooLarge => 'ही फाइल येथे उघडण्यासाठी खूप मोठी आहे.';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

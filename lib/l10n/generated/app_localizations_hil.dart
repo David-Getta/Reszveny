@@ -2931,6 +2931,9 @@ class AppLocalizationsHil extends AppLocalizations {
   String get signOutAnyway => 'Mag-sign out gihapon';
 
   @override
+  String get fileTooLarge => 'Daku gid ini nga file para mabuksan diri.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

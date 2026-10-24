@@ -861,5 +861,6 @@
   "signOutTitle": "要登出嗎？",
   "signOutBody": "你的投資組合、清單、價格提示和筆記會保留在你的帳戶中，並會從此裝置移除。重新登入即可取回。",
   "signOutUnsaved": "部分變更未能儲存至你的帳戶（沒有網絡連線？）。如現在登出，這些變更將會遺失。",
-  "signOutAnyway": "仍要登出"
+  "signOutAnyway": "仍要登出",
+  "fileTooLarge": "此檔案過大，無法在此開啟。"
 }

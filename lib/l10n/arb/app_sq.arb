@@ -861,5 +861,6 @@
   "signOutTitle": "Të dilni nga llogaria?",
   "signOutBody": "Portofoli, listat, alarmet e çmimit dhe shënimet tuaja mbeten në llogarinë tuaj dhe hiqen nga kjo pajisje. Hyni përsëri për t’i rikthyer.",
   "signOutUnsaved": "Disa ndryshime nuk mund të ruheshin në llogarinë tuaj (nuk ka lidhje?). Nëse dilni tani, ato do të humbasin.",
-  "signOutAnyway": "Dil gjithsesi"
+  "signOutAnyway": "Dil gjithsesi",
+  "fileTooLarge": "Ky skedar është shumë i madh për t’u hapur këtu."
 }

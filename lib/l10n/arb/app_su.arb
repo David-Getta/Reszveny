@@ -861,5 +861,6 @@
   "signOutTitle": "Kaluar?",
   "signOutBody": "Portofolio, daptar, béwara harga, jeung catetan anjeun tetep aya dina akun anjeun sarta dipiceun tina parangkat ieu. Asup deui pikeun meunangkeun deui.",
   "signOutUnsaved": "Sababaraha parobahan teu bisa disimpen ka akun anjeun (teu aya sambungan?). Upami anjeun kaluar ayeuna, parobahan éta bakal leungit.",
-  "signOutAnyway": "Tetep kaluar"
+  "signOutAnyway": "Tetep kaluar",
+  "fileTooLarge": "File ieu kagedéan pikeun dibuka di dieu."
 }

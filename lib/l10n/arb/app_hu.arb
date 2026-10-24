@@ -762,6 +762,7 @@
   "signOutBody": "A portfóliód, a listáid, az árfolyam-riasztásaid és a jegyzeteid a fiókodban maradnak, erről a készülékről pedig törlődnek. Újra belépve visszakapod őket.",
   "signOutUnsaved": "Néhány változást nem sikerült feltölteni a fiókodba (nincs kapcsolat?). Ha most kijelentkezel, elvesznek.",
   "signOutAnyway": "Kijelentkezés így is",
+  "fileTooLarge": "Ez a fájl túl nagy ahhoz, hogy itt megnyíljon.",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfóliócél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

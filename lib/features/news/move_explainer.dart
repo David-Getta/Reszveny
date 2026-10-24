@@ -45,7 +45,11 @@ Rules:
     required DateTime today,
     String model = '',
   }) {
-    final day = today.toIso8601String().substring(0, 10);
+    // A kérés szövege is csak a megosztás kulcsából áll (kereskedési nap, a mozgás
+    // sávja): a szerver csak a pontosan egyező kérést osztja meg.
+    final day = UsMarketHours.sessionDate(today.toUtc()).toIso8601String().substring(0, 10);
+    final step = (changePercent / minMovePercent).truncate();
+    final band = (step.abs() * minMovePercent).toStringAsFixed(1);
     return {
       'model': model,
       'max_tokens': 1200,
@@ -67,7 +71,7 @@ Rules:
             'Language: $language',
             'Stock: ${symbol.toUpperCase()}${name.isNotEmpty && name.toUpperCase() != symbol.toUpperCase() ? ' ($name)' : ''}',
             'Today: $day',
-            'Move today: ${changePercent >= 0 ? '+' : ''}${changePercent.toStringAsFixed(1)}%',
+            'Move today: ${changePercent >= 0 ? 'up' : 'down'} $band% or more',
             'Why is it moving?',
           ].join('\n'),
         },

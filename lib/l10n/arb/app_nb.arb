@@ -861,5 +861,6 @@
   "signOutTitle": "Logge ut?",
   "signOutBody": "Porteføljen, listene, kursvarslene og notatene dine blir værende i kontoen din og fjernes fra denne enheten. Logg inn igjen for å få dem tilbake.",
   "signOutUnsaved": "Noen endringer kunne ikke lagres i kontoen din (ingen tilkobling?). Hvis du logger ut nå, går de tapt.",
-  "signOutAnyway": "Logg ut likevel"
+  "signOutAnyway": "Logg ut likevel",
+  "fileTooLarge": "Denne filen er for stor til å åpnes her."
 }

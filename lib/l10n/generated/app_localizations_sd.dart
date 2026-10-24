@@ -2903,6 +2903,9 @@ class AppLocalizationsSd extends AppLocalizations {
   String get signOutAnyway => 'پوءِ به سائن آئوٽ ڪريو';
 
   @override
+  String get fileTooLarge => 'هي فائل هتي کولڻ لاءِ تمام وڏي آهي.';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

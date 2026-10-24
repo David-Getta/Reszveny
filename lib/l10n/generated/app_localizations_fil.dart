@@ -2921,6 +2921,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get signOutAnyway => 'Mag-sign out pa rin';
 
   @override
+  String get fileTooLarge =>
+      'Masyadong malaki ang file na ito para mabuksan dito.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

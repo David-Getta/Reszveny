@@ -2920,6 +2920,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get signOutAnyway => 'అయినా సైన్ అవుట్';
 
   @override
+  String get fileTooLarge => 'ఈ ఫైల్ ఇక్కడ తెరవడానికి చాలా పెద్దదిగా ఉంది.';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

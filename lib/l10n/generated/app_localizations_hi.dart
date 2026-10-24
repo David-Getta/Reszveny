@@ -2910,6 +2910,9 @@ class AppLocalizationsHi extends AppLocalizations {
   String get signOutAnyway => 'फिर भी साइन आउट करें';
 
   @override
+  String get fileTooLarge => 'यह फ़ाइल यहाँ खोलने के लिए बहुत बड़ी है।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

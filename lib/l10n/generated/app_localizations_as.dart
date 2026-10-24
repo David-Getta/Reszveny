@@ -2911,6 +2911,9 @@ class AppLocalizationsAs extends AppLocalizations {
   String get signOutAnyway => 'তথাপিও ছাইন আউট কৰক';
 
   @override
+  String get fileTooLarge => 'এই ফাইলটো ইয়াত খুলিবলৈ অতি ডাঙৰ।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

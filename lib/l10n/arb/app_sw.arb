@@ -861,5 +861,6 @@
   "signOutTitle": "Ungependa kutoka?",
   "signOutBody": "Jalada lako la hisa, orodha, arifa za bei na madokezo hubaki kwenye akaunti yako na huondolewa kwenye kifaa hiki. Ingia tena ili uvirejeshe.",
   "signOutUnsaved": "Baadhi ya mabadiliko hayakuweza kuhifadhiwa kwenye akaunti yako (hakuna muunganisho?). Ukitoka sasa, yatapotea.",
-  "signOutAnyway": "Toka hata hivyo"
+  "signOutAnyway": "Toka hata hivyo",
+  "fileTooLarge": "Faili hii ni kubwa mno kufunguliwa hapa."
 }

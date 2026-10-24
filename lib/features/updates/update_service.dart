@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:in_app_update/in_app_update.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
+import '../../core/util/links.dart';
 import '../../core/config/app_config.dart';
 import 'app_version.dart';
 
@@ -104,6 +105,8 @@ class UpdateService extends ChangeNotifier with UpdaterListener {
     if (channel == UpdateChannel.sparkle) {
       try {
         autoUpdater.addListener(this);
+        // Csak https-en (a jegyzék a telepítő címét adja).
+        if (safeWebUri(config.updateAppcastUrl)?.scheme != 'https') return;
         await autoUpdater.setFeedURL(config.updateAppcastUrl);
         await autoUpdater.setScheduledCheckInterval(3600);
         if (_autoInstall) await autoUpdater.checkForUpdates(inBackground: true);
@@ -209,12 +212,15 @@ class UpdateService extends ChangeNotifier with UpdaterListener {
   }
 
   /// A kiáltvány: `{"version":"1.2.0+12","notes":"…","urls":{"macos":"…","android":"…"}}`.
+  /// A letöltési cím csak `https` lehet: egy hamisított vagy hibás jegyzék ne vigyen
+  /// titkosítatlan (vagy más sémájú) címre.
   static UpdateManifest parseManifest(Map<String, dynamic> j, String platform) {
     final urls = (j['urls'] as Map?)?.cast<String, dynamic>() ?? const {};
+    final url = (urls[platform] as String?) ?? (j['url'] as String?);
     return UpdateManifest(
       version: (j['version'] as String? ?? '').trim(),
       notes: j['notes'] as String?,
-      url: (urls[platform] as String?) ?? (j['url'] as String?),
+      url: safeWebUri(url)?.scheme == 'https' ? url!.trim() : null,
     );
   }
 

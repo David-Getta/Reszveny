@@ -861,5 +861,6 @@
   "signOutTitle": "Atsijungti?",
   "signOutBody": "Jūsų portfelis, sąrašai, kainos įspėjimai ir užrašai lieka jūsų paskyroje ir pašalinami iš šio įrenginio. Prisijunkite dar kartą, kad juos susigrąžintumėte.",
   "signOutUnsaved": "Kai kurių pakeitimų nepavyko išsaugoti jūsų paskyroje (nėra ryšio?). Jei atsijungsite dabar, jie bus prarasti.",
-  "signOutAnyway": "Vis tiek atsijungti"
+  "signOutAnyway": "Vis tiek atsijungti",
+  "fileTooLarge": "Šis failas per didelis, kad būtų atidarytas čia."
 }

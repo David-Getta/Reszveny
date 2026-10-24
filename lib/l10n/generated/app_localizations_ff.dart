@@ -2908,6 +2908,10 @@ class AppLocalizationsFf extends AppLocalizations {
   String get signOutAnyway => 'Seŋto tan';
 
   @override
+  String get fileTooLarge =>
+      'Ndee fiyannde ina mawni no feewi ngam udditde ɗoo.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

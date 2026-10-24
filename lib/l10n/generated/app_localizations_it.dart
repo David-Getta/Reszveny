@@ -2920,6 +2920,10 @@ class AppLocalizationsIt extends AppLocalizations {
   String get signOutAnyway => 'Esci comunque';
 
   @override
+  String get fileTooLarge =>
+      'Questo file è troppo grande per essere aperto qui.';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

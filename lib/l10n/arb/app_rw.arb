@@ -861,5 +861,6 @@
   "signOutTitle": "Urashaka gusohoka?",
   "signOutBody": "Ishoramari ryawe, intonde, imenyesha ry'ibiciro n'ibyo wanditse bigumye kuri konti yawe kandi bivanwa kuri iki gikoresho. Ongera winjire kugira ngo ubisubirane.",
   "signOutUnsaved": "Impinduka zimwe ntizashoboye kubikwa kuri konti yawe (nta murandasi?). Nusohoka ubu, zizatakara.",
-  "signOutAnyway": "Sohoka uko biri kose"
+  "signOutAnyway": "Sohoka uko biri kose",
+  "fileTooLarge": "Iyi dosiye ni nini cyane ku buryo idashobora gufungurwa hano."
 }

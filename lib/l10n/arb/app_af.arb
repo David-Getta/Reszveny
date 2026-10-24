@@ -861,5 +861,6 @@
   "signOutTitle": "Meld af?",
   "signOutBody": "Jou portefeulje, lyste, pryswaarskuwings en notas bly in jou rekening en word van hierdie toestel verwyder. Meld weer aan om dit terug te kry.",
   "signOutUnsaved": "Sommige veranderinge kon nie in jou rekening gestoor word nie (geen verbinding nie?). As jy nou afmeld, gaan dit verlore.",
-  "signOutAnyway": "Meld tog af"
+  "signOutAnyway": "Meld tog af",
+  "fileTooLarge": "Hierdie lêer is te groot om hier oop te maak."
 }

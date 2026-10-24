@@ -861,5 +861,6 @@
   "signOutTitle": "¿Resẽsépa?",
   "signOutBody": "Ne cartera, ne listakuéra, tepy maranduʼi ha ne jehaipyrekuéra opytáta nde mbaʼetépe ha oñembogue ko mbaʼeʼokágui. Eike jey reguereko jey hag̃ua.",
   "signOutUnsaved": "Oĩ ñemoambue ndaikatúiva oñeñongatu nde mbaʼetépe (¿ndaipóri ñanduti?). Resẽ ramo koʼág̃a, okañýta.",
-  "signOutAnyway": "Esẽ jepe"
+  "signOutAnyway": "Esẽ jepe",
+  "fileTooLarge": "Ko archivo tuichaiterei ojepeʼa hag̃ua koʼápe."
 }

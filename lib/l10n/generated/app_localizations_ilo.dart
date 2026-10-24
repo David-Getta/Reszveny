@@ -2935,6 +2935,9 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get signOutAnyway => 'Ag-sign out latta';
 
   @override
+  String get fileTooLarge => 'Dakkel unay daytoy a file tapno maluktan ditoy.';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

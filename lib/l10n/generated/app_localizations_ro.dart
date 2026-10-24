@@ -2956,6 +2956,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get signOutAnyway => 'Deconectează-te oricum';
 
   @override
+  String get fileTooLarge =>
+      'Acest fișier este prea mare pentru a fi deschis aici.';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

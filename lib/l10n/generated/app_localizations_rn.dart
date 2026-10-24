@@ -2924,6 +2924,10 @@ class AppLocalizationsRn extends AppLocalizations {
   String get signOutAnyway => 'Sohoka uko biri kwose';
 
   @override
+  String get fileTooLarge =>
+      'Iyi dosiye ni nini cane ku buryo idashobora kwugururwa hano.';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

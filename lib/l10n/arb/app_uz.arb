@@ -861,5 +861,6 @@
   "signOutTitle": "Chiqasizmi?",
   "signOutBody": "Portfelingiz, roʻyxatlaringiz, narx bildirishnomalari va qaydlaringiz hisobingizda qoladi va bu qurilmadan oʻchiriladi. Ularni qaytarish uchun qayta kiring.",
   "signOutUnsaved": "Baʼzi oʻzgarishlarni hisobingizga saqlab boʻlmadi (aloqa yoʻqmi?). Hozir chiqsangiz, ular yoʻqoladi.",
-  "signOutAnyway": "Baribir chiqish"
+  "signOutAnyway": "Baribir chiqish",
+  "fileTooLarge": "Bu fayl bu yerda ochish uchun juda katta."
 }

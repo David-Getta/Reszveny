@@ -861,5 +861,6 @@
   "signOutTitle": "Kirjaudutaanko ulos?",
   "signOutBody": "Salkkusi, listasi, kurssihälytyksesi ja muistiinpanosi säilyvät tililläsi ja poistetaan tältä laitteelta. Saat ne takaisin kirjautumalla uudelleen sisään.",
   "signOutUnsaved": "Joitakin muutoksia ei voitu tallentaa tilillesi (ei yhteyttä?). Jos kirjaudut nyt ulos, ne menetetään.",
-  "signOutAnyway": "Kirjaudu silti ulos"
+  "signOutAnyway": "Kirjaudu silti ulos",
+  "fileTooLarge": "Tämä tiedosto on liian suuri avattavaksi täällä."
 }

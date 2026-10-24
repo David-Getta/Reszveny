@@ -861,5 +861,6 @@
   "signOutTitle": "Çıkış yapılsın mı?",
   "signOutBody": "Portföyünüz, listeleriniz, fiyat alarmlarınız ve notlarınız hesabınızda kalır ve bu cihazdan kaldırılır. Geri almak için yeniden giriş yapın.",
   "signOutUnsaved": "Bazı değişiklikler hesabınıza kaydedilemedi (bağlantı yok mu?). Şimdi çıkış yaparsanız kaybolacaklar.",
-  "signOutAnyway": "Yine de çıkış yap"
+  "signOutAnyway": "Yine de çıkış yap",
+  "fileTooLarge": "Bu dosya burada açılamayacak kadar büyük."
 }

@@ -2924,6 +2924,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get signOutAnyway => 'Tanca la sessió igualment';
 
   @override
+  String get fileTooLarge => 'Aquest fitxer és massa gran per obrir-lo aquí.';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

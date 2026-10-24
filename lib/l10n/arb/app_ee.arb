@@ -861,5 +861,6 @@
   "signOutTitle": "Àdo le eme?",
   "signOutBody": "Wò akpawo, xexlẽdzesiwo, asi ŋuti nuxlɔ̃amewo kple nuŋlɔɖiwo anɔ wò akɔnta me, eye woaɖe wo ɖa le mɔ̃ sia dzi. Gage ɖe eme ake be nàxɔ wo.",
   "signOutUnsaved": "Womete ŋu dzra tɔtrɔ aɖewo ɖo ɖe wò akɔnta me o (kadodo aɖeke meli oa?). Ne èdo le eme fifia la, woabu.",
-  "signOutAnyway": "Do le eme ko"
+  "signOutAnyway": "Do le eme ko",
+  "fileTooLarge": "Faɛl sia lolo akpa be woaʋui le afi sia."
 }

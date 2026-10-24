@@ -2909,6 +2909,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get signOutAnyway => 'Tetap keluar';
 
   @override
+  String get fileTooLarge => 'File ini terlalu besar untuk dibuka di sini.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

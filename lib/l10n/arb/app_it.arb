@@ -861,5 +861,6 @@
   "signOutTitle": "Uscire dall’account?",
   "signOutBody": "Il tuo portafoglio, le liste, gli avvisi di prezzo e le note restano nel tuo account e vengono rimossi da questo dispositivo. Accedi di nuovo per recuperarli.",
   "signOutUnsaved": "Alcune modifiche non sono state salvate nel tuo account (nessuna connessione?). Se esci ora, andranno perse.",
-  "signOutAnyway": "Esci comunque"
+  "signOutAnyway": "Esci comunque",
+  "fileTooLarge": "Questo file è troppo grande per essere aperto qui."
 }

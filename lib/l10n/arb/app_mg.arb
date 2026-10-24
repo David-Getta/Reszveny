@@ -861,5 +861,6 @@
   "signOutTitle": "Hivoaka?",
   "signOutBody": "Mijanona ao amin'ny kaontinao ny kitapom-bolanao, ny lisitrao, ny fanairana vidiny ary ny naotinao, fa esorina amin'ity fitaovana ity. Midira indray mba hahazoana azy ireo indray.",
   "signOutUnsaved": "Misy fanovana sasany tsy voatahiry tao amin'ny kaontinao (tsy misy fifandraisana ve?). Raha mivoaka ianao izao dia ho very izy ireo.",
-  "signOutAnyway": "Hivoaka ihany"
+  "signOutAnyway": "Hivoaka ihany",
+  "fileTooLarge": "Lehibe loatra ity rakitra ity ka tsy azo sokafana eto."
 }

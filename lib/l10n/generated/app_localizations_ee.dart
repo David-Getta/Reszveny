@@ -2918,6 +2918,9 @@ class AppLocalizationsEe extends AppLocalizations {
   String get signOutAnyway => 'Do le eme ko';
 
   @override
+  String get fileTooLarge => 'Faɛl sia lolo akpa be woaʋui le afi sia.';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

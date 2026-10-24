@@ -2925,6 +2925,10 @@ class AppLocalizationsLua extends AppLocalizations {
   String get signOutAnyway => 'Patuka nansha nanku';
 
   @override
+  String get fileTooLarge =>
+      'Fichier eu udi munene bikole bua kumubulula muaba eu.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

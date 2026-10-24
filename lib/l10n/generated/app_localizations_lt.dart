@@ -2989,6 +2989,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get signOutAnyway => 'Vis tiek atsijungti';
 
   @override
+  String get fileTooLarge => 'Šis failas per didelis, kad būtų atidarytas čia.';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

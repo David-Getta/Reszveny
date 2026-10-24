@@ -2909,6 +2909,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String get signOutAnyway => 'Jáde bẹ́ẹ̀ náà';
 
   @override
+  String get fileTooLarge => 'Fáìlì yìí ti tóbi jù láti ṣí níbí.';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

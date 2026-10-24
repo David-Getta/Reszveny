@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
+import '../../core/util/links.dart';
 import '../../app_services.dart';
 import '../../core/util/bidi.dart';
 import '../../core/models/stock_candidate.dart';
@@ -156,12 +156,7 @@ class WatchNewsTile extends StatelessWidget {
         icon: Icon(Icons.auto_awesome_outlined, size: 20, color: p.accent),
         onPressed: () => showNewsExplanation(context, news),
       ),
-      onTap: n.url.isEmpty
-          ? null
-          : () async {
-              final uri = Uri.tryParse(n.url);
-              if (uri != null) await launchUrl(uri, mode: LaunchMode.externalApplication);
-            },
+      onTap: safeWebUri(n.url) == null ? null : () => openWeb(n.url),
     );
   }
 }

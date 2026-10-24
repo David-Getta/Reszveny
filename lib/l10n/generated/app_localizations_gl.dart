@@ -2938,6 +2938,10 @@ class AppLocalizationsGl extends AppLocalizations {
   String get signOutAnyway => 'Pechar sesión igualmente';
 
   @override
+  String get fileTooLarge =>
+      'Este ficheiro é demasiado grande para abrilo aquí.';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

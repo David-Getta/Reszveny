@@ -861,5 +861,6 @@
   "signOutTitle": "U lava ku huma?",
   "signOutBody": "Phothifoliyo ya wena, minxaxamelo, switiviso swa nxavo na tinotsi swi tshama eka akhawunti ya wena kutani swi susiwa eka xitirhisiwa lexi. Nghena nakambe leswaku u swi kuma nakambe.",
   "signOutUnsaved": "Swin'wana swa ku cinca a swi kotanga ku hlayisiwa eka akhawunti ya wena (ku hava vuhlanganisi?). Loko u huma sweswi, swi ta lahleka.",
-  "signOutAnyway": "Huma hambiswiritano"
+  "signOutAnyway": "Huma hambiswiritano",
+  "fileTooLarge": "Fayili leyi i kulu ngopfu ku pfuriwa laha."
 }

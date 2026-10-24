@@ -2915,6 +2915,10 @@ class AppLocalizationsTg extends AppLocalizations {
   String get signOutAnyway => 'Бо вуҷуди ин баромадан';
 
   @override
+  String get fileTooLarge =>
+      'Ин файл барои дар ин ҷо кушодан аз ҳад калон аст.';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

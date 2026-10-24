@@ -861,5 +861,6 @@
   "signOutTitle": "Log keluar?",
   "signOutBody": "Portfolio, senarai, amaran harga dan nota anda kekal dalam akaun anda dan dialih keluar daripada peranti ini. Log masuk semula untuk mendapatkannya kembali.",
   "signOutUnsaved": "Sesetengah perubahan tidak dapat disimpan ke akaun anda (tiada sambungan?). Jika anda log keluar sekarang, perubahan itu akan hilang.",
-  "signOutAnyway": "Log keluar juga"
+  "signOutAnyway": "Log keluar juga",
+  "fileTooLarge": "Fail ini terlalu besar untuk dibuka di sini."
 }

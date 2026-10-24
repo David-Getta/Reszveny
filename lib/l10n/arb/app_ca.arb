@@ -861,5 +861,6 @@
   "signOutTitle": "Vols tancar la sessió?",
   "signOutBody": "La cartera, les llistes, les alertes de preu i les notes es queden al teu compte i s'eliminen d'aquest dispositiu. Torna a iniciar la sessió per recuperar-les.",
   "signOutUnsaved": "Alguns canvis no s'han pogut desar al teu compte (no hi ha connexió?). Si tanques la sessió ara, es perdran.",
-  "signOutAnyway": "Tanca la sessió igualment"
+  "signOutAnyway": "Tanca la sessió igualment",
+  "fileTooLarge": "Aquest fitxer és massa gran per obrir-lo aquí."
 }

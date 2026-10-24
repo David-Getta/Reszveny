@@ -2988,6 +2988,9 @@ class AppLocalizationsBe extends AppLocalizations {
   String get signOutAnyway => 'Усё роўна выйсці';
 
   @override
+  String get fileTooLarge => 'Гэты файл занадта вялікі, каб адкрыць яго тут.';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

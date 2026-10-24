@@ -861,5 +861,6 @@
   "signOutTitle": "Génn ci kont bi?",
   "signOutBody": "Sa aksiyoŋ yi, sa limm yi, sa artu njëg yi ak sa notu yi dañuy des ci sa kont, waaye dinañu leen far ci masin bii. Duggaatal ngir gisaat leen.",
   "signOutUnsaved": "Am na ay coppite yu ñu mënul denc ci sa kont (amul internet?). Soo génnee leegi, dinañu réer.",
-  "signOutAnyway": "Génn rekk"
+  "signOutAnyway": "Génn rekk",
+  "fileTooLarge": "Fiise bii dafa rëy lool, mënuñu ko ubbi fii."
 }

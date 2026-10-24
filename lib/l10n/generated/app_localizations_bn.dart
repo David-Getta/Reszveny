@@ -2912,6 +2912,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get signOutAnyway => 'তবুও সাইন আউট করুন';
 
   @override
+  String get fileTooLarge => 'এই ফাইলটি এখানে খোলার জন্য খুব বড়।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

@@ -861,5 +861,6 @@
   "signOutTitle": "Logga ut?",
   "signOutBody": "Din portfölj, dina listor, kurslarm och anteckningar finns kvar i ditt konto och tas bort från den här enheten. Logga in igen för att få tillbaka dem.",
   "signOutUnsaved": "Vissa ändringar kunde inte sparas i ditt konto (ingen anslutning?). Om du loggar ut nu går de förlorade.",
-  "signOutAnyway": "Logga ut ändå"
+  "signOutAnyway": "Logga ut ändå",
+  "fileTooLarge": "Den här filen är för stor för att öppnas här."
 }

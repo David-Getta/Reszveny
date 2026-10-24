@@ -2912,6 +2912,9 @@ class AppLocalizationsDa extends AppLocalizations {
   String get signOutAnyway => 'Log ud alligevel';
 
   @override
+  String get fileTooLarge => 'Denne fil er for stor til at åbne her.';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
+import '../core/util/links.dart';
 import '../core/util/source_kind.dart';
 import '../features/news/daily_brief.dart' show AskSource;
 import '../l10n/generated/app_localizations.dart';
@@ -30,10 +30,7 @@ class SourceLinks extends StatelessWidget {
         for (final (i, s) in sources.indexed)
           InkWell(
             key: ValueKey('$keyPrefix-$i'),
-            onTap: () {
-              final uri = Uri.tryParse(s.url);
-              if (uri != null) launchUrl(uri, mode: LaunchMode.externalApplication);
-            },
+            onTap: () => openWeb(s.url),
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 5),
               child: Row(
@@ -41,13 +38,10 @@ class SourceLinks extends StatelessWidget {
                 children: [
                   Icon(Icons.link_rounded, size: 16, color: p.accent),
                   const SizedBox(width: 6),
+                  // A gép elöl, saját sorban: egy hosszú (az AI-tól vagy az oldaltól kapott) cím
+                  // ne tolhassa ki, hová visz a link.
                   Expanded(
-                    child: Text(
-                      '${s.title} · ${Uri.tryParse(s.url)?.host ?? ''}',
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: theme.textTheme.bodySmall?.copyWith(color: p.accent),
-                    ),
+                    child: SourceTitle(title: s.title, url: s.url, style: theme.textTheme.bodySmall, color: p.accent),
                   ),
                   SourceTag(url: s.url),
                 ],
@@ -61,6 +55,48 @@ class SourceLinks extends StatelessWidget {
 
 /// Kis címke a forrás jellegéről (hivatalos, sajtóközlemény, vezető hírforrás,
 /// vélemény); ismeretlen webhelynél semmi.
+/// Egy forrás neve a gépével: a gép elöl, saját, nem rövidülő sorban (oda visz a link
+/// valójában), alatta a cím – egy félrevezető (pl. hivatalosnak mondott) cím így nem
+/// takarhatja el, hová vezet.
+class SourceTitle extends StatelessWidget {
+  const SourceTitle({
+    super.key,
+    required this.title,
+    required this.url,
+    required this.color,
+    this.style,
+    this.titleLines = 2,
+  });
+
+  final String title;
+  final String url;
+  final Color color;
+  final TextStyle? style;
+  final int titleLines;
+
+  @override
+  Widget build(BuildContext context) {
+    final host = (safeWebUri(url)?.host ?? '').replaceFirst(RegExp(r'^www\.'), '');
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        if (host.isNotEmpty)
+          Text(
+            host,
+            style: style?.copyWith(color: color, fontWeight: FontWeight.w600),
+          ),
+        if (title.trim().isNotEmpty)
+          Text(
+            title,
+            maxLines: titleLines,
+            overflow: TextOverflow.ellipsis,
+            style: style?.copyWith(color: color),
+          ),
+      ],
+    );
+  }
+}
+
 class SourceTag extends StatelessWidget {
   const SourceTag({super.key, required this.url});
 

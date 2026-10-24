@@ -861,5 +861,6 @@
   "signOutTitle": "F rat n yi bɩ?",
   "signOutBody": "Fo portfey, fo listɛ, fo koosg gũusgo la fo gʋlsgo na n pa fo kõntã pʋgẽ, la b na n yiis-b aparɛy kãngã zugu. Le kẽ n paam-b lame.",
   "signOutUnsaved": "Toeeg-toeeg kẽer pa tõog n bilg fo kõntã pʋgẽ ye (kõneksõ ka be ye?). F sã n yi masã, b na n bõrame.",
-  "signOutAnyway": "Yi baa ne rẽ"
+  "signOutAnyway": "Yi baa ne rẽ",
+  "fileTooLarge": "Fiyie kãngã yaa bedr n yɩɩda, b pa tõe n yaool-a ka ye."
 }

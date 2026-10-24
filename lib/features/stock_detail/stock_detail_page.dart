@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
+import '../../core/util/links.dart';
 import '../market_data/offline_banner.dart';
 import 'metric_glossary.dart';
 import '../compare/compare_page.dart';
@@ -684,8 +684,7 @@ class _DetailsBody extends StatelessWidget {
 
   Future<void> _open(BuildContext context, String url) async {
     final l10n = AppLocalizations.of(context);
-    final uri = Uri.tryParse(url);
-    final ok = uri != null && await launchUrl(uri, mode: LaunchMode.externalApplication);
+    final ok = await openWeb(url);
     if (!ok && context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l10n.openLinkFailed)));
     }

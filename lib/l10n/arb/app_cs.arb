@@ -861,5 +861,6 @@
   "signOutTitle": "Odhlásit se?",
   "signOutBody": "Vaše portfolio, seznamy, cenová upozornění a poznámky zůstanou ve vašem účtu a z tohoto zařízení se odstraní. Po opětovném přihlášení je zase získáte.",
   "signOutUnsaved": "Některé změny se nepodařilo uložit do vašeho účtu (chybí připojení?). Pokud se nyní odhlásíte, budou ztraceny.",
-  "signOutAnyway": "Přesto se odhlásit"
+  "signOutAnyway": "Přesto se odhlásit",
+  "fileTooLarge": "Tento soubor je příliš velký, aby se dal zde otevřít."
 }

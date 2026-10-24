@@ -2912,6 +2912,9 @@ class AppLocalizationsKab extends AppLocalizations {
   String get signOutAnyway => 'Ffeɣ ɣas akken';
 
   @override
+  String get fileTooLarge => 'Afaylu-a meqqer aṭas akken ad yettwaldi da.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

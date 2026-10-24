@@ -2927,6 +2927,9 @@ class AppLocalizationsXh extends AppLocalizations {
   String get signOutAnyway => 'Phuma noko';
 
   @override
+  String get fileTooLarge => 'Le fayile inkulu kakhulu ukuba ivulwe apha.';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

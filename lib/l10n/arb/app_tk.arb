@@ -861,5 +861,6 @@
   "signOutTitle": "Çykmalymy?",
   "signOutBody": "Portfeliňiz, sanawlaryňyz, baha duýduryşlaryňyz we bellikleriňiz hasabyňyzda galýar we bu enjamdan aýrylýar. Olary yzyna almak üçin täzeden giriň.",
   "signOutUnsaved": "Käbir üýtgeşmeleri hasabyňyzda saklap bolmady (baglanyşyk ýokmy?). Häzir çyksaňyz, olar ýiter.",
-  "signOutAnyway": "Barybir çyk"
+  "signOutAnyway": "Barybir çyk",
+  "fileTooLarge": "Bu faýl bu ýerde açmak üçin örän uly."
 }

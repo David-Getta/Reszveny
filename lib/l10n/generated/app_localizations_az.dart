@@ -2913,6 +2913,9 @@ class AppLocalizationsAz extends AppLocalizations {
   String get signOutAnyway => 'Yenə də çıxış et';
 
   @override
+  String get fileTooLarge => 'Bu fayl burada açmaq üçün çox böyükdür.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

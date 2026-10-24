@@ -861,5 +861,6 @@
   "signOutTitle": "Ṣé o fẹ́ jáde?",
   "signOutBody": "Àpò ìdókòwò rẹ, àwọn àkójọ, ìkìlọ̀ iye owó àti àwọn àkọsílẹ̀ rẹ yóò wà nínú àkáǹtì rẹ, a ó sì yọ wọ́n kúrò lórí ẹ̀rọ yìí. Tún wọlé láti rí wọn padà.",
   "signOutUnsaved": "A kò lè fi àwọn àyípadà kan pamọ́ sínú àkáǹtì rẹ (kò sí ìsopọ̀?). Tí o bá jáde báyìí, wọn yóò sọnù.",
-  "signOutAnyway": "Jáde bẹ́ẹ̀ náà"
+  "signOutAnyway": "Jáde bẹ́ẹ̀ náà",
+  "fileTooLarge": "Fáìlì yìí ti tóbi jù láti ṣí níbí."
 }

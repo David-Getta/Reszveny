@@ -861,5 +861,6 @@
   "signOutTitle": "Za ka fita?",
   "signOutBody": "Jakar hannun jarinka, jerorinka, faɗakarwar farashi da bayananka za su kasance a asusunka, kuma za a cire su daga wannan na'ura. Sake shiga don dawo da su.",
   "signOutUnsaved": "Ba a iya adana wasu canje-canje a asusunka ba (babu haɗi?). Idan ka fita yanzu, za su ɓace.",
-  "signOutAnyway": "Fita duk da haka"
+  "signOutAnyway": "Fita duk da haka",
+  "fileTooLarge": "Wannan fayil ya yi girma matuƙa don a buɗe shi a nan."
 }

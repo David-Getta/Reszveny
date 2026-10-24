@@ -861,5 +861,6 @@
   "signOutTitle": "Mag-sign out?",
   "signOutBody": "Mananatili sa iyong account ang iyong portfolio, mga listahan, mga alerto sa presyo at mga tala, at aalisin ang mga ito sa device na ito. Mag-sign in muli para maibalik ang mga ito.",
   "signOutUnsaved": "Hindi na-save sa iyong account ang ilang pagbabago (walang koneksyon?). Kapag nag-sign out ka ngayon, mawawala ang mga ito.",
-  "signOutAnyway": "Mag-sign out pa rin"
+  "signOutAnyway": "Mag-sign out pa rin",
+  "fileTooLarge": "Masyadong malaki ang file na ito para mabuksan dito."
 }

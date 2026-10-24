@@ -861,5 +861,6 @@
   "signOutTitle": "Ag-sign out?",
   "signOutBody": "Agtalinaed iti accountmo ti portfoliom, dagiti listaam, dagiti alerto ti presio ken dagiti notam, ket maikkatdanto iti daytoy a device. Ag-sign in manen tapno maisubli dagitoy.",
   "signOutUnsaved": "Adda dagiti panagbalbaliw a saan a naidulin iti accountmo (awan ti koneksion?). No ag-sign out ka ita, mapukawdanto.",
-  "signOutAnyway": "Ag-sign out latta"
+  "signOutAnyway": "Ag-sign out latta",
+  "fileTooLarge": "Dakkel unay daytoy a file tapno maluktan ditoy."
 }

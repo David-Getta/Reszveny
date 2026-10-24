@@ -2926,6 +2926,9 @@ class AppLocalizationsCeb extends AppLocalizations {
   String get signOutAnyway => 'Mag-sign out gihapon';
 
   @override
+  String get fileTooLarge => 'Dako kaayo kini nga file aron maablihan dinhi.';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

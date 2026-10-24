@@ -2960,6 +2960,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get signOutAnyway => 'Tomēr izrakstīties';
 
   @override
+  String get fileTooLarge => 'Šis fails ir pārāk liels, lai to atvērtu šeit.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

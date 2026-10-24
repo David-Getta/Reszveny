@@ -2928,6 +2928,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get signOutAnyway => 'Phuma noma kunjalo';
 
   @override
+  String get fileTooLarge =>
+      'Leli fayela likhulu kakhulu ukuthi livulwe lapha.';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

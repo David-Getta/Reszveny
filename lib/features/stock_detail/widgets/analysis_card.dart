@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
+import '../../../core/util/links.dart';
 import '../../../app_services.dart';
 import '../../../core/errors.dart';
 import '../../../features/analysis/analysis_options.dart';
@@ -18,7 +18,7 @@ import '../../../l10n/error_messages.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../l10n/supported_locales.dart';
 import '../../../theme/app_theme.dart';
-import '../../../widgets/source_links.dart' show SourceTag;
+import '../../../widgets/source_links.dart' show SourceTag, SourceTitle;
 import 'outlook_view.dart';
 import 'ask_sheet.dart';
 import 'report_changes.dart';
@@ -273,7 +273,7 @@ class _AnalysisCardState extends State<AnalysisCard> {
                   const SizedBox(height: 6),
                   for (final src in report.sources.take(12))
                     InkWell(
-                      onTap: () => launchUrl(Uri.parse(src.url), mode: LaunchMode.externalApplication),
+                      onTap: () => openWeb(src.url),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(vertical: 3),
                         child: Row(
@@ -282,11 +282,12 @@ class _AnalysisCardState extends State<AnalysisCard> {
                             Icon(Icons.link_rounded, size: 16, color: p.muted),
                             const SizedBox(width: 6),
                             Expanded(
-                              child: Text(
-                                src.title.isEmpty ? src.url : src.title,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: theme.textTheme.bodySmall?.copyWith(color: p.accent),
+                              child: SourceTitle(
+                                title: src.title,
+                                url: src.url,
+                                style: theme.textTheme.bodySmall,
+                                color: p.accent,
+                                titleLines: 1,
                               ),
                             ),
                             SourceTag(url: src.url),

@@ -2904,6 +2904,9 @@ class AppLocalizationsWo extends AppLocalizations {
   String get signOutAnyway => 'Génn rekk';
 
   @override
+  String get fileTooLarge => 'Fiise bii dafa rëy lool, mënuñu ko ubbi fii.';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

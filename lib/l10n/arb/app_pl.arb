@@ -861,5 +861,6 @@
   "signOutTitle": "Wylogować się?",
   "signOutBody": "Twój portfel, listy, alerty cenowe i notatki pozostaną na Twoim koncie i zostaną usunięte z tego urządzenia. Zaloguj się ponownie, aby je odzyskać.",
   "signOutUnsaved": "Niektórych zmian nie udało się zapisać na Twoim koncie (brak połączenia?). Jeśli wylogujesz się teraz, zostaną utracone.",
-  "signOutAnyway": "Wyloguj się mimo to"
+  "signOutAnyway": "Wyloguj się mimo to",
+  "fileTooLarge": "Ten plik jest za duży, aby go tu otworzyć."
 }

@@ -2915,6 +2915,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get signOutAnyway => 'بەهەرحاڵ بچۆ دەرەوە';
 
   @override
+  String get fileTooLarge => 'ئەم فایلە زۆر گەورەیە بۆ کردنەوە لێرە.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

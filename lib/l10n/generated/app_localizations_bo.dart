@@ -2901,6 +2901,9 @@ class AppLocalizationsBo extends AppLocalizations {
   String get signOutAnyway => 'གང་ལྟར་ཡང་ཕྱིར་འཐོན';
 
   @override
+  String get fileTooLarge => 'ཡིག་ཆ་འདི་ཆེ་དྲགས་པས་འདིར་ཁ་ཕྱེ་མི་ཐུབ།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

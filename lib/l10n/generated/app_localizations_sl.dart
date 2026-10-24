@@ -2991,6 +2991,9 @@ class AppLocalizationsSl extends AppLocalizations {
   String get signOutAnyway => 'Vseeno se odjavi';
 
   @override
+  String get fileTooLarge => 'Ta datoteka je prevelika, da bi jo odprli tukaj.';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

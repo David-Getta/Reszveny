@@ -861,5 +861,6 @@
   "signOutTitle": "You wan sign out?",
   "signOutBody": "Your portfolio, lists, price alerts and notes go still dey your account, but we go comot dem from dis device. Sign in again to get dem back.",
   "signOutUnsaved": "Some changes no fit save for your account (no connection?). If you sign out now, dem go loss.",
-  "signOutAnyway": "Sign out anyhow"
+  "signOutAnyway": "Sign out anyhow",
+  "fileTooLarge": "Dis file too big to open for here."
 }

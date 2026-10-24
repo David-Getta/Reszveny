@@ -145,7 +145,8 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('instrument-sheet')), findsOneWidget);
     expect(find.textContaining('QQQ tracks the Nasdaq-100'), findsOneWidget);
-    expect(find.text('Invesco QQQ · www.invesco.com'), findsOneWidget);
+    expect(find.text('invesco.com'), findsOneWidget);
+    expect(find.text('Invesco QQQ'), findsWidgets);
     expect(calls, 1);
   });
 

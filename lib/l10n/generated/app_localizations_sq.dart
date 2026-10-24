@@ -2924,6 +2924,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get signOutAnyway => 'Dil gjithsesi';
 
   @override
+  String get fileTooLarge => 'Ky skedar është shumë i madh për t’u hapur këtu.';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

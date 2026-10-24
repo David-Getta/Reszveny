@@ -861,5 +861,6 @@
   "signOutTitle": "Queres pechar sesión?",
   "signOutBody": "A túa carteira, as listas, as alertas de prezo e as notas quedan na túa conta e elimínanse deste dispositivo. Volve iniciar sesión para recuperalas.",
   "signOutUnsaved": "Algúns cambios non se puideron gardar na túa conta (sen conexión?). Se pechas sesión agora, perderanse.",
-  "signOutAnyway": "Pechar sesión igualmente"
+  "signOutAnyway": "Pechar sesión igualmente",
+  "fileTooLarge": "Este ficheiro é demasiado grande para abrilo aquí."
 }

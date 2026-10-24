@@ -2905,6 +2905,9 @@ class AppLocalizationsBho extends AppLocalizations {
   String get signOutAnyway => 'तबो साइन आउट करीं';
 
   @override
+  String get fileTooLarge => 'ई फाइल इहाँ खोले खातिर बहुत बड़ बा।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

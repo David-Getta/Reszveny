@@ -2926,6 +2926,10 @@ class AppLocalizationsKg extends AppLocalizations {
   String get signOutAnyway => 'Basika kaka';
 
   @override
+  String get fileTooLarge =>
+      'Fisye yai kele nene mingi sambu na kukangula yo awa.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

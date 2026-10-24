@@ -861,5 +861,6 @@
   "signOutTitle": "Se déconnecter ?",
   "signOutBody": "Votre portefeuille, vos listes, vos alertes de cours et vos notes restent dans votre compte et sont supprimés de cet appareil. Reconnectez-vous pour les retrouver.",
   "signOutUnsaved": "Certaines modifications n’ont pas pu être enregistrées dans votre compte (pas de connexion ?). Si vous vous déconnectez maintenant, elles seront perdues.",
-  "signOutAnyway": "Se déconnecter quand même"
+  "signOutAnyway": "Se déconnecter quand même",
+  "fileTooLarge": "Ce fichier est trop volumineux pour être ouvert ici."
 }

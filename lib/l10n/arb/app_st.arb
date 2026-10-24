@@ -861,5 +861,6 @@
   "signOutTitle": "O batla ho tswa?",
   "signOutBody": "Potefolio ya hao, manane, ditsebiso tsa theko le dintlha di sala akhaontong ya hao mme di tloswa sesebedisweng sena. Kena hape hore o di fumane hape.",
   "signOutUnsaved": "Diphetoho tse ding ha di a kgona ho bolokwa akhaontong ya hao (ha ho kgokahano?). Ha o ka tswa jwale, di tla lahleha.",
-  "signOutAnyway": "Tswa leha ho le jwalo"
+  "signOutAnyway": "Tswa leha ho le jwalo",
+  "fileTooLarge": "Faele ena e kgolo haholo hore e ka bulwa mona."
 }

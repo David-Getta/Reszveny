@@ -861,5 +861,6 @@
   "signOutTitle": "Unoda kubuda here?",
   "signOutBody": "Potiforiyo yako, marondedzero, zviziviso zvemutengo nezvinyorwa zvinoramba zviri muakaundi yako uye zvinobviswa pamudziyo uyu. Pinda zvakare kuti uzviwanezve.",
   "signOutUnsaved": "Dzimwe shanduko hadzina kukwanisa kuchengetwa muakaundi yako (hapana kubatana?). Ukabuda iye zvino, dzicharasika.",
-  "signOutAnyway": "Buda zvakadaro"
+  "signOutAnyway": "Buda zvakadaro",
+  "fileTooLarge": "Faira iyi yakakura zvakanyanya kuti ivhurwe pano."
 }

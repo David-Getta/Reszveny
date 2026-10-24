@@ -2909,6 +2909,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get signOutAnyway => 'Sign out anyway';
 
   @override
+  String get fileTooLarge => 'This file is too large to open here.';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

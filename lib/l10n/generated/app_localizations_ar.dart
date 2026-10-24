@@ -2984,6 +2984,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get signOutAnyway => 'تسجيل الخروج على أي حال';
 
   @override
+  String get fileTooLarge => 'هذا الملف كبير جدًا بحيث يتعذّر فتحه هنا.';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

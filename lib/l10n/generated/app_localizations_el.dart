@@ -2925,6 +2925,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get signOutAnyway => 'Αποσύνδεση παρ\' όλα αυτά';
 
   @override
+  String get fileTooLarge =>
+      'Αυτό το αρχείο είναι πολύ μεγάλο για να ανοίξει εδώ.';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

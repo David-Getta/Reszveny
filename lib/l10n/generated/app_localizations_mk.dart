@@ -2934,6 +2934,9 @@ class AppLocalizationsMk extends AppLocalizations {
   String get signOutAnyway => 'Сепак одјави се';
 
   @override
+  String get fileTooLarge => 'Оваа датотека е преголема за да се отвори овде.';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

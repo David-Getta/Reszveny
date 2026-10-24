@@ -81,7 +81,12 @@ class StockReport {
   );
 }
 
-double? _num(Object? v) => v is num ? v.toDouble() : (v is String ? double.tryParse(v) : null);
+/// Szám az AI válaszából; a nem véges (`1e999`, `"NaN"`) érték hiányzónak számít – egy
+/// végtelen ár se a grafikont, se a mentést (JSON) ne törje el.
+double? _num(Object? v) => switch (v is num ? v.toDouble() : (v is String ? double.tryParse(v) : null)) {
+  final d? when d.isFinite => d,
+  _ => null,
+};
 
 enum ScenarioKind {
   bull,

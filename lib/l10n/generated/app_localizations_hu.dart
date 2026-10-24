@@ -2916,6 +2916,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get signOutAnyway => 'Kijelentkezés így is';
 
   @override
+  String get fileTooLarge => 'Ez a fájl túl nagy ahhoz, hogy itt megnyíljon.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

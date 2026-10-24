@@ -861,5 +861,6 @@
   "signOutTitle": "Ị chọrọ ịpụ?",
   "signOutBody": "Portfolio gị, ndepụta gị, ọkwa ọnụahịa na ndetu gị ga-anọgide n'akaụntụ gị, a ga-ewepụkwa ha na ngwaọrụ a. Banye ọzọ ka i nwetaghachi ha.",
   "signOutUnsaved": "Enweghị ike ichekwa ụfọdụ mgbanwe n'akaụntụ gị (enweghị njikọ?). Ọ bụrụ na ị pụọ ugbu a, ha ga-efu.",
-  "signOutAnyway": "Pụọ n'agbanyeghị"
+  "signOutAnyway": "Pụọ n'agbanyeghị",
+  "fileTooLarge": "Faịlụ a buru oke ibu imeghe ya ebe a."
 }

@@ -861,5 +861,6 @@
   "signOutTitle": "Ad teffɣeḍ?",
   "signOutBody": "Aqrab-ik, tibdarin-ik, ilɣa n ssuma d tezmilin-ik ad qqimen deg umiḍan-ik, ad ttwakksen seg yibenk-a. Kcem tikkelt nniḍen akken ad ten-id-terreḍ.",
   "signOutUnsaved": "Kra n yisnifal ur ttwaseklesen ara deg umiḍan-ik (ulac tuqqna?). Ma teffɣeḍ tura, ad ruḥen.",
-  "signOutAnyway": "Ffeɣ ɣas akken"
+  "signOutAnyway": "Ffeɣ ɣas akken",
+  "fileTooLarge": "Afaylu-a meqqer aṭas akken ad yettwaldi da."
 }

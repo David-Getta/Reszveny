@@ -861,5 +861,6 @@
   "signOutTitle": "Terminar sessão?",
   "signOutBody": "A sua carteira, listas, alertas de preço e notas ficam na sua conta e são removidos deste dispositivo. Inicie sessão novamente para os recuperar.",
   "signOutUnsaved": "Não foi possível guardar algumas alterações na sua conta (sem ligação?). Se terminar sessão agora, serão perdidas.",
-  "signOutAnyway": "Terminar mesmo assim"
+  "signOutAnyway": "Terminar mesmo assim",
+  "fileTooLarge": "Este ficheiro é grande demais para ser aberto aqui."
 }

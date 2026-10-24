@@ -861,5 +861,6 @@
   "signOutTitle": "Te deconectezi?",
   "signOutBody": "Portofoliul, listele, alertele de preț și notițele tale rămân în cont și sunt șterse de pe acest dispozitiv. Conectează-te din nou ca să le recuperezi.",
   "signOutUnsaved": "Unele modificări nu au putut fi salvate în cont (nicio conexiune?). Dacă te deconectezi acum, se vor pierde.",
-  "signOutAnyway": "Deconectează-te oricum"
+  "signOutAnyway": "Deconectează-te oricum",
+  "fileTooLarge": "Acest fișier este prea mare pentru a fi deschis aici."
 }

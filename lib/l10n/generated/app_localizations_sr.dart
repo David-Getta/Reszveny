@@ -2963,6 +2963,10 @@ class AppLocalizationsSr extends AppLocalizations {
   String get signOutAnyway => 'Ипак се одјави';
 
   @override
+  String get fileTooLarge =>
+      'Ова датотека је превелика да би се отворила овде.';
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

@@ -2923,6 +2923,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get signOutAnyway => 'Այնուամենայնիվ դուրս գալ';
 
   @override
+  String get fileTooLarge => 'Այս ֆայլը չափազանց մեծ է այստեղ բացելու համար։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override
