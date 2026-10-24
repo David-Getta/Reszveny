@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/ids.dart';
 import '../../core/util/text.dart';
 import '../../core/util/tombstones.dart';
 
@@ -106,7 +107,7 @@ class PortfolioLot {
     // A nem véges szám (JSON-ban 1e309 = végtelen) sem: a mentést és a szinkront is megakasztaná.
     if (symbol.isEmpty || q is! num || p is! num || !q.isFinite || !p.isFinite || q <= 0 || p <= 0) return null;
     return PortfolioLot(
-      id: asText(j['id']) ?? '${symbol}_${DateTime.now().microsecondsSinceEpoch}',
+      id: asText(j['id']) ?? '${symbol}_${uniqueMicros()}',
       symbol: symbol,
       quantity: q.toDouble(),
       price: p.toDouble(),
@@ -169,7 +170,7 @@ class DividendRecord {
     final a = j['amount'];
     if (symbol.isEmpty || a is! num || !a.isFinite || a <= 0) return null;
     return DividendRecord(
-      id: asText(j['id']) ?? '${symbol}_d${DateTime.now().microsecondsSinceEpoch}',
+      id: asText(j['id']) ?? '${symbol}_d${uniqueMicros()}',
       symbol: symbol,
       amount: a.toDouble(),
       currency: storedCurrency(asText(j['currency']) ?? 'USD'),
@@ -237,7 +238,7 @@ class SplitRecord {
     final date = DateTime.tryParse(asText(j['date']) ?? '');
     if (symbol.isEmpty || from is! int || to is! int || !validRatio(from, to) || date == null) return null;
     return SplitRecord(
-      id: asText(j['id']) ?? '${symbol}_s${DateTime.now().microsecondsSinceEpoch}',
+      id: asText(j['id']) ?? '${symbol}_s${uniqueMicros()}',
       symbol: symbol,
       from: from,
       to: to,
@@ -717,6 +718,10 @@ class PortfolioStore extends ChangeNotifier {
   }
 
   int _batch = 0;
+
+  /// Egy köteg (import) fut: a szinkron addig ne cserélje le a tárolót (a köteg
+  /// tételei még nem jelezték magukat változásként).
+  bool get batching => _batch > 0;
   bool _batchChanged = false;
 
   /// Kötegelt módosítás (pl. egy bróker-export importja): a közben hívott
@@ -1000,7 +1005,7 @@ class PortfolioStore extends ChangeNotifier {
   }) async {
     final s = symbol.trim().toUpperCase();
     final lot = PortfolioLot(
-      id: '${s}_${DateTime.now().microsecondsSinceEpoch}',
+      id: '${s}_${uniqueMicros()}',
       symbol: s,
       quantity: quantity,
       price: price,
@@ -1132,7 +1137,7 @@ class PortfolioStore extends ChangeNotifier {
   }) async {
     final s = symbol.trim().toUpperCase();
     final d = DividendRecord(
-      id: '${s}_d${DateTime.now().microsecondsSinceEpoch}',
+      id: '${s}_d${uniqueMicros()}',
       symbol: s,
       amount: amount,
       currency: storedCurrency(currency),
@@ -1206,7 +1211,7 @@ class PortfolioStore extends ChangeNotifier {
     if (!SplitRecord.validRatio(from, to)) return null;
     final s = symbol.trim().toUpperCase();
     final split = SplitRecord(
-      id: '${s}_s${DateTime.now().microsecondsSinceEpoch}',
+      id: '${s}_s${uniqueMicros()}',
       symbol: s,
       from: from,
       to: to,

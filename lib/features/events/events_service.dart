@@ -156,8 +156,21 @@ class EventsService extends ChangeNotifier {
 
   /// A figyelt részvények gyorsjelentés-dátumainak (és előzményének) lekérése a
   /// gyorsítótár mellé, aztán a lista összeállítása.
-  Future<void> refresh({bool force = false}) async {
-    if (_loading) return;
+  ///
+  /// Ha már fut egy frissítés, a hívó azt várja meg (nem tér vissza azonnal a régi
+  /// listával); a kényszerített frissítés utána még egyszer lefut.
+  Future<void> refresh({bool force = false}) {
+    if (_running case final running?) return force ? running.then((_) => refresh(force: true)) : running;
+    final run = _refreshOnce(force: force);
+    _running = run;
+    return run.whenComplete(() {
+      if (identical(_running, run)) _running = null;
+    });
+  }
+
+  Future<void>? _running;
+
+  Future<void> _refreshOnce({bool force = false}) async {
     _loading = true;
     final started = _fingerprint();
     _seen = started;
@@ -203,7 +216,7 @@ class EventsService extends ChangeNotifier {
       notifyListeners();
     }
     // Közben változott a portfólió: még egy kör (az új részvény dátumával).
-    if (_fingerprint() != started) await refresh();
+    if (_fingerprint() != started) await _refreshOnce();
   }
 
   /// Újraépítés hálózat nélkül (pl. az osztalék-emlékeztetőnek, ha a

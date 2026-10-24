@@ -128,6 +128,8 @@ class _FavoritesStripState extends State<FavoritesStrip> {
                 // minden billentyűleütés és mentés az összeset újrarajzolná.
                 for (final s in favorites.take(FavoritesStrip.shownCount))
                   FutureBuilder<StockQuote>(
+                    // Tickerenként: egy elöl beszúrt új kedvenc ne kapja meg a régi első árát.
+                    key: ValueKey(s),
                     future: _quote(s),
                     builder: (context, snap) {
                       final q = snap.data;

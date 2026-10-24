@@ -1083,6 +1083,8 @@ class _SignalsStripState extends State<_SignalsStrip> {
       _signals = _compute(List.of(widget.symbols));
     }
     return FutureBuilder<List<WatchSignal>>(
+      // Listaváltáskor az előző lista jelzései ne maradjanak kint, amíg az új számol.
+      key: ValueKey(key),
       future: _signals,
       builder: (context, snap) {
         final signals = snap.data ?? const <WatchSignal>[];

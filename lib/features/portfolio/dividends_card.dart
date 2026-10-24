@@ -95,7 +95,8 @@ class DividendsCard extends StatelessWidget {
                 else ...[
                   // Összesítés: a más pénznemű tételek a mai árfolyamon.
                   FutureBuilder<Map<String, double>>(
-                    key: ValueKey(currencies.join(',')),
+                    // A célpénznem is a kulcsban: váltáskor a régi árfolyamok ne számoljanak az új alatt.
+                    key: ValueKey('$currency|${currencies.join(',')}'),
                     future: _rates(services, currencies),
                     builder: (context, snap) {
                       final rates = snap.data;

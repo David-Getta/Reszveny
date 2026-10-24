@@ -178,6 +178,8 @@ class _YearDividendsState extends State<_YearDividends> {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
     return FutureBuilder<double?>(
+      // Pénznemenként: váltáskor a régi összeg ne látsszon az új pénznem jelével.
+      key: ValueKey(widget.currency),
       future: _sum,
       builder: (context, snap) => snap.data == null
           ? const SizedBox.shrink()

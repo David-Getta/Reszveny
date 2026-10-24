@@ -681,9 +681,8 @@ class SyncService extends ChangeNotifier {
     // hamarosan újra szinkronizálunk.
     if (_changes == changes) {
       _setDirty(false);
-    } else if (account.isSignedIn) {
-      _timer?.cancel();
-      _timer = Timer(pushDelay, () => unawaited(syncNow()));
+    } else {
+      _rerun = true;
     }
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_lastKey, at.toIso8601String());
@@ -694,7 +693,17 @@ class SyncService extends ChangeNotifier {
   /// letöltés és a feltöltés között más is írt (egy másik eszköz vagy a szerver
   /// riasztásfigyelője), a szerver elutasítja: újra letöltjük és összefésüljük.
   Future<void> syncNow() async {
-    if (!account.isSignedIn || _busy) return;
+    if (!account.isSignedIn) return;
+    // Futás közben kért szinkron (egy közben tett változás): a mostani után hamarosan újra.
+    if (_busy) {
+      _rerun = true;
+      return;
+    }
+    // Import közben nem: a köteg végén a változás magától szinkronizál.
+    if (portfolio.batching) {
+      _schedule(pushDelay);
+      return;
+    }
     _timer?.cancel();
     _busy = true;
     notifyListeners();
@@ -710,8 +719,10 @@ class SyncService extends ChangeNotifier {
       _failed = false;
       _tooLarge = false;
       _retryDelay = retryStart;
-      // Futás közben is: egy másik eszköz változása magától is megérkezik.
-      _schedule(pullInterval);
+      // Futás közben is: egy másik eszköz változása magától is megérkezik; a közben
+      // tett (még fel nem töltött) változás pedig hamarosan.
+      _schedule(_rerun ? pushDelay : pullInterval);
+      _rerun = false;
     } catch (e) {
       debugPrint('Szinkron nem sikerült: $e');
       _failed = true;
@@ -720,6 +731,7 @@ class SyncService extends ChangeNotifier {
       // csak egy törlés után fér fel (az a változással magától indul), addig ritkán.
       _schedule(_tooLarge ? retryMax : _retryDelay);
       _retryDelay = _retryDelay * 2 > retryMax ? retryMax : _retryDelay * 2;
+      _rerun = false;
     } finally {
       _busy = false;
       _ranAt = DateTime.now();
@@ -729,6 +741,9 @@ class SyncService extends ChangeNotifier {
 
   /// A legutóbbi szinkron vége (helyi idő), a visszatéréskori ritkításhoz.
   DateTime? _ranAt;
+
+  /// Futás közben változás történt vagy új szinkront kértek: a végén hamarosan újra.
+  bool _rerun = false;
   static const resumeMinGap = Duration(minutes: 1);
 
   static const retryStart = Duration(seconds: 30);
@@ -769,6 +784,11 @@ class SyncService extends ChangeNotifier {
 
   Future<void> _syncOnce() async {
     final remote = await backend.getSync();
+    // A letöltés alatt indult egy import: most nem cserélünk (a köteg végén újra).
+    if (portfolio.batching) {
+      _rerun = true;
+      return;
+    }
     final data = remote.data;
     final base = remote.updatedAt;
     if (_syncedEmail != null && _syncedEmail != account.email) {
@@ -783,9 +803,9 @@ class SyncService extends ChangeNotifier {
       await _push(snapshot(), base: null);
     } else if (firstHere || (_dirty && base != null && _last != null && !base.isAtSameMomentAs(_last!))) {
       // Első belépés ezen az eszközön, vagy mindkét oldalon volt változás.
-      final merged = merge(snapshot(), data);
-      await _apply(merged);
-      await _push(merged, base: base);
+      await _apply(merge(snapshot(), data));
+      // A mentés alatt tett helyi változás is felmegy: a mostani állapot, nem az összefésült.
+      await _push(snapshot(), base: base);
     } else if (base != null && (_last == null || !base.isAtSameMomentAs(_last!))) {
       final kept = await _apply(data);
       _last = base;

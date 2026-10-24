@@ -401,6 +401,9 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
       _future = loadPortfolioHistory(services, widget.snapshot, account: widget.account);
     }
     return FutureBuilder<PortfolioHistoryData>(
+      // Más pénznemben vagy számlán a régi adat nem látszhat az új címke alatt (a
+      // töltés alatt üres); egy új tétel vagy indexváltás után a régi marad, amíg tölt.
+      key: ValueKey('${widget.snapshot.currency}|${widget.account ?? ''}'),
       future: _future,
       builder: (context, snap) {
         final data = snap.data;

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/ids.dart';
 import '../../core/util/us_market_hours.dart';
 import '../../core/models/stock_quote.dart';
 import '../../core/util/text.dart';
@@ -201,7 +202,7 @@ class PriceAlert {
     final tp = j['triggered_price'];
     final peak = j['peak'];
     return PriceAlert(
-      id: asText(j['id']) ?? '${symbol}_${DateTime.now().microsecondsSinceEpoch}',
+      id: asText(j['id']) ?? '${symbol}_${uniqueMicros()}',
       symbol: symbol,
       kind: kind,
       value: value.toDouble(),
@@ -285,7 +286,7 @@ class AlertStore extends ChangeNotifier {
   }) async {
     final s = symbol.trim().toUpperCase();
     final alert = PriceAlert(
-      id: '${s}_${DateTime.now().microsecondsSinceEpoch}',
+      id: '${s}_${uniqueMicros()}',
       symbol: s,
       kind: kind,
       value: value,

@@ -232,7 +232,14 @@ class BillingController extends ChangeNotifier {
     } catch (_) {}
   }
 
-  static Future<void> _remember(BillingEvent e) async {
+  /// A függő bizonylatok listájának módosításai sorban: két egyszerre érkező
+  /// (visszaállított) vásárlás olvasás–írása ne írja felül egymást.
+  static Future<void> _pendingQueue = Future.value();
+
+  static Future<void> _serial(Future<void> Function() body) =>
+      _pendingQueue = _pendingQueue.then((_) => body()).catchError((Object _) {});
+
+  static Future<void> _remember(BillingEvent e) => _serial(() async {
     final data = e.verificationData;
     if (data == null || data.isEmpty) return;
     final items = await _pending();
@@ -241,16 +248,16 @@ class BillingController extends ChangeNotifier {
       ...items,
       {'product_id': e.productId, 'platform': e.platform, 'data': data},
     ]);
-  }
+  });
 
-  static Future<void> _forget(BillingEvent e) async {
+  static Future<void> _forget(BillingEvent e) => _serial(() async {
     final items = await _pending();
     final kept = [
       for (final m in items)
         if (m['data'] != e.verificationData) m,
     ];
     if (kept.length != items.length) await _savePending(kept);
-  }
+  });
 
   /// Belépés után újrapróbálja a megszakadt vásárlást.
   Future<void> retry(StoreProduct p) => buy(p);

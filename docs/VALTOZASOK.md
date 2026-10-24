@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.289)
+# Változásjegyzék (0.2.130 → 0.2.290)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,19 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## App: versenyhelyzetek – a harmincötödik kódátnézés javításai
+
+- **0.2.290**: egy import (CSV, bróker-export, képernyőkép) közben induló szinkron nem cseréli le a portfóliót (eddig
+  a már beolvasott tételek egy része elveszhetett); az összefésülés mentése közben tett változás is feltöltődik
+  (eddig feltöltöttnek jelölődött, és egy másik eszköz változása felülírta); a szinkron közben tett változás pár
+  másodperc múlva felmegy (eddig akár 15 percig várt). A portfólió-grafikon pénznem- vagy számlaváltás után nem
+  mutatja a régi számait az új címke alatt; ugyanígy a pozíció indexösszevetése, az osztalékok összege és a
+  kezdőlap idei osztaléka váltáskor, a kedvencek jelzései listaváltáskor. A kezdőlapon egy új kedvenc nem kapja
+  meg az előző első kedvenc árát. Az egyszerre érkező visszaállított vásárlások bizonylata mind megmarad az
+  újrapróbáláshoz. A gyorsjelentés-emlékeztető és a lehúzásos frissítés megvárja a már futó naptárfrissítést (nem
+  a régi, üres listával dolgozik). Az egy ciklusban (import, tömeges riasztás) létrehozott tételek azonosítója a
+  böngészős appban sem ismétlődik.
 
 ## Szerver: párhuzamos kérések – a harminchatodik kódátnézés javításai
 

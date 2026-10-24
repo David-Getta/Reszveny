@@ -191,6 +191,8 @@ class _VersusIndexState extends State<_VersusIndex> {
       _index = services.marketData.history(bench.symbol);
     }
     return FutureBuilder<PriceHistory>(
+      // Indexenként: váltás után a régi index sora ne látsszon az új neve alatt.
+      key: ValueKey(bench.symbol),
       future: _index,
       builder: (context, snap) {
         final index = snap.data;
