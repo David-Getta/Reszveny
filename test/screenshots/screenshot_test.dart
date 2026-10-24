@@ -1425,6 +1425,11 @@ void main() {
     await _shot(tester, 'delete_account_dialog_hu');
     await tester.tap(find.text('Mégse'));
     await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('sign-out')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'sign_out_dialog_hu');
+    await tester.tap(find.text('Mégse'));
+    await tester.pumpAndSettle();
     final privacy = find.text('Adatkezelési tájékoztató');
     await tester.scrollUntilVisible(privacy, 300, scrollable: find.byType(Scrollable).last);
     await tester.pumpAndSettle();
