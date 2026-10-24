@@ -19,6 +19,11 @@ List<Map<String, dynamic>> _maps(Object? v) => [
     if (e is Map) e.cast<String, dynamic>(),
 ];
 
+/// A csomag egy mezője listaként, ill. térképként; más típusnál üres – egy hibás
+/// (más app vagy kézzel írt) csomag ne akassza meg minden szinkront.
+List<Object?> _list(Object? v) => v is List ? v : const [];
+Map<String, dynamic> _map(Object? v) => v is Map ? {for (final e in v.entries) '${e.key}': e.value} : const {};
+
 /// A portfólió, a kedvencek, a riasztások és a jegyzetek szinkronja az
 /// e-mailes fiókkal, így minden eszközön ugyanazok. Az utolsó írás nyer; ha
 /// mindkét oldalon volt változás (vagy ezen az eszközön most lép be először),
@@ -216,9 +221,9 @@ class SyncService extends ChangeNotifier {
   /// Két csomag uniója: a helyi elemek elöl, azonos azonosítónál a később
   /// javított (egyezésnél vagy javítás nélkül a helyi) marad; jegyzetnél az újabb.
   static Map<String, dynamic> merge(Map<String, dynamic> local, Map<String, dynamic> remote) {
-    DateTime edited(Map<String, dynamic> e) => DateTime.tryParse('${e['edited'] ?? ''}') ?? DateTime(0);
+    DateTime edited(Map<String, dynamic> e) => parseStamp(e['edited']) ?? DateTime(0);
     // Az újabb változat: a javítás vagy a tickerváltás ideje, amelyik későbbi.
-    DateTime changed(Map<String, dynamic> e) => switch (DateTime.tryParse('${e['renamed'] ?? ''}')) {
+    DateTime changed(Map<String, dynamic> e) => switch (parseStamp(e['renamed'])) {
       final r? when r.isAfter(edited(e)) => r,
       _ => edited(e),
     };
@@ -243,8 +248,8 @@ class SyncService extends ChangeNotifier {
       ];
     }
 
-    final notesL = (local['notes'] as Map? ?? const {}).cast<String, dynamic>();
-    final notesR = (remote['notes'] as Map? ?? const {}).cast<String, dynamic>();
+    final notesL = _map(local['notes']);
+    final notesR = _map(remote['notes']);
     final mergedNotes = <String, dynamic>{...notesR};
     for (final e in notesL.entries) {
       final r = StockNote.fromJson(notesR[e.key]);
@@ -298,7 +303,7 @@ class SyncService extends ChangeNotifier {
     // szerver jelölése nem számít: az a törlésről még nem tudhatott).
     final alertsDeleted = unionTombstones(local['alerts_deleted'], remote['alerts_deleted']);
     alertsMerged.removeWhere(
-      (a) => switch ((alertsDeleted['${a['id']}'], at(a['edited']))) {
+      (a) => switch ((alertsDeleted['${a['id']}'], parseStamp(a['edited']))) {
         (final gone?, final edited) => edited == null || !edited.isAfter(gone),
         _ => false,
       },
@@ -309,7 +314,7 @@ class SyncService extends ChangeNotifier {
     final favAdded = unionTombstones(local['favorites_added'], remote['favorites_added']);
     final favorites = [
       for (final f in {
-        for (final f in [...?(local['favorites'] as List?), ...?(remote['favorites'] as List?)]) '$f',
+        for (final f in [..._list(local['favorites']), ..._list(remote['favorites'])]) '$f',
       })
         if (switch (favRemoved[f]) {
           final removed? => favAdded[f]?.isAfter(removed) ?? false,
@@ -462,7 +467,7 @@ class SyncService extends ChangeNotifier {
       null => true,
     };
     final merged = <String, WatchList>{};
-    for (final raw in [...?(local['watch_lists'] as List?), ...?(remote['watch_lists'] as List?)]) {
+    for (final raw in [..._list(local['watch_lists']), ..._list(remote['watch_lists'])]) {
       final l = WatchList.fromJson(raw);
       if (l == null || !alive(AppPreferences.listKey(l.name))) continue;
       final prev = merged[l.name.toLowerCase()];
@@ -530,7 +535,7 @@ class SyncService extends ChangeNotifier {
   }) {
     final saves = <Future<void>>[];
     // Régi csomagban nincs felvételi nap: akkor a helyiek maradnak (a kedvencekre szűkítve).
-    final favorites = [for (final f in (data['favorites'] as List? ?? const [])) '$f'];
+    final favorites = [for (final f in _list(data['favorites'])) '$f'];
     saves.add(preferences.setFavorites(favorites, since: AppPreferences.parseFavoriteSince(data['favorite_since'])));
     // A kedvencek jelzései a csomag szerint; régi csomagban nincsenek: a helyiek
     // maradnak, a csomagban szereplő kedvencek levételi jelzése nélkül.
@@ -655,16 +660,12 @@ class SyncService extends ChangeNotifier {
             : _without(alerts.deletedJson, {for (final j in _maps(data['alerts'])) '${j['id']}'}),
       ),
     );
-    saves.add(
-      notes.replaceAll({
-        for (final e in (data['notes'] as Map? ?? const {}).entries) '${e.key}': ?StockNote.fromJson(e.value),
-      }),
-    );
+    saves.add(notes.replaceAll({for (final e in _map(data['notes']).entries) e.key: ?StockNote.fromJson(e.value)}));
     saves.add(
       notes.replaceAllDeleted(
         data['notes_deleted'] is Map
             ? parseTombstones(data['notes_deleted'])
-            : _without(notes.deletedJson, {...?(data['notes'] as Map?)?.keys.map((k) => '$k')}),
+            : _without(notes.deletedJson, {..._map(data['notes']).keys}),
       ),
     );
     return (kept: kept, saved: Future.wait(saves));

@@ -432,10 +432,15 @@ final _currency = RegExp(r'^[A-Z]{3}$');
 final _isin = RegExp(r'^[A-Z]{2}[A-Z0-9]{9}[0-9]$');
 final _nonNumeric = RegExp(r'[^0-9,.\-]');
 
+/// Tudományos alak (táblázatkezelőből: „1.5E+3”, „1,2E-4”).
+final _scientific = RegExp(r'^[+-]?\d+([.,]\d+)?[eE][+-]?\d+$');
+
 /// Egy cella számjegyei, előjellel: a pénznemjelek, szóközök és egyéb jelek nélkül; a
 /// könyvelési zárójel („(10)”, „($1,234.00)”) és a tipográfiai mínusz (U+2212) negatív.
 String _numeric(String s) {
   final t = s.trim().replaceAll('\u2212', '-');
+  // A kitevő nem hagyható el (az „1.5E+3” különben 1,53 lenne).
+  if (_scientific.hasMatch(t)) return t.replaceFirst(',', '.');
   final digits = t.replaceAll(_nonNumeric, '');
   return t.startsWith('(') && t.endsWith(')') && !digits.startsWith('-') ? '-$digits' : digits;
 }

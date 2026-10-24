@@ -302,6 +302,17 @@ class ReportStore extends ChangeNotifier {
                 _ => AppErrorCode.quotaExceeded,
               });
         notifyListeners();
+        // A helyi állapot elavult lehet (máshol vett csomag, ajánlói jóváírás, megújulás):
+        // a szerverről frissítve a hiba eltűnik, és a következő koppintás már átmegy.
+        if (onQuotaChanged case final sync?) {
+          sync()
+              .then((_) {
+                if (ent.check(cost: options.cost) == QuotaCheck.ok && _errors.remove(symbol) != null) {
+                  notifyListeners();
+                }
+              })
+              .catchError((Object e) => debugPrint('Jogosultság frissítése nem sikerült: $e'));
+        }
         return;
       }
     }

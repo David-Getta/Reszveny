@@ -128,6 +128,9 @@ class CachingMarketDataProvider extends MarketDataProvider {
           final j = jsonDecode(raw) as Map<String, dynamic>;
           final value = decode((j['v'] as Map).cast<String, dynamic>());
           _setStale(key, DateTime.tryParse(j['at'] as String? ?? '') ?? _clock());
+          // A régi adat nem marad a memóriában: a hálózat visszatérte után a frissítés
+          // (vagy az Újra gomb) tényleg újra kérjen, ne a [dataMemo] végéig ezt adja.
+          _memo.remove('${kind}_${symbol.toUpperCase()}');
           return value;
         }
       } catch (_) {}

@@ -30,10 +30,11 @@ String fieldNumber(String plain, String locale) =>
 /// „Mind” gombnál: a 0,12345678 tört részvény ne változzon mentéskor).
 String exactNumber(double v) => v == v.roundToDouble() && v.abs() < 1e15 ? v.toStringAsFixed(0) : v.toString();
 
-/// Szám beolvasása a felhasználó írásmódjában: „1 234,5”, „1,234.5”, „12,5”.
-/// Ha pont és vessző is van, az utolsó a tizedesjel. `null`, ha nem szám.
+/// Szám beolvasása a felhasználó írásmódjában: „1 234,5”, „1,234.5”, „12,5”, más
+/// írás számjegyeivel is („۱۲۳٫۵”). Ha pont és vessző is van, az utolsó a
+/// tizedesjel. `null`, ha nem szám.
 double? parseDecimal(String input) {
-  var s = input.replaceAll(_digitSpaces, '');
+  var s = _normalizeNumber(input);
   final dot = s.lastIndexOf('.'), comma = s.lastIndexOf(',');
   if (dot >= 0 && comma >= 0) {
     final decimal = dot > comma ? '.' : ',';
@@ -49,8 +50,12 @@ double? parseDecimal(String input) {
 /// számjegy jön („5,000” angolul, „100.000” magyarul), az ezres tagolás; minden
 /// más esetben, mint a [parseDecimal].
 double? parseAmount(String input, String locale) {
-  final s = input.trim().replaceAll(_digitSpaces, '');
-  final decimal = Fmt(locale).decimalSeparator;
+  final s = _normalizeNumber(input);
+  // Az arab tizedesjel (٫) a beolvasáskor pont.
+  final decimal = switch (Fmt(locale).decimalSeparator) {
+    '\u066b' => '.',
+    final d => d,
+  };
   final group = decimal == ',' ? '.' : ',';
   if (!s.contains(decimal) && _grouped[group]!.hasMatch(s)) {
     final v = double.tryParse(s.replaceAll(group, ''));
@@ -61,6 +66,31 @@ double? parseAmount(String input, String locale) {
 
 /// A számjegyek közti tagoló szóközök és aposztróf („1 234”, „1'234”).
 final _digitSpaces = RegExp(r"[\s\u00a0\u202f']");
+
+/// A tízes számjegyblokkok kezdete (0) a nem latin írásokban: arab, perzsa, nko,
+/// dévanágari, bengáli, gurmukhi, gudzsaráti, orija, tamil, telugu, kannada,
+/// malajálam, szingaléz, thai, lao, tibeti, burmai, khmer, mongol, teljes szélességű.
+const _digitZeros = [
+  0x0660, 0x06f0, 0x07c0, 0x0966, 0x09e6, 0x0a66, 0x0ae6, 0x0b66, 0x0be6, 0x0c66, //
+  0x0ce6, 0x0d66, 0x0de6, 0x0e50, 0x0ed0, 0x0f20, 0x1040, 0x17e0, 0x1810, 0xff10,
+];
+
+/// A beírt szám egységes alakja: a más írások számjegyei ASCII-re, az arab
+/// tizedesjel (٫) pontra, az arab ezres jel (٬), a tagoló szóközök és a vezető „+” nélkül.
+String _normalizeNumber(String input) {
+  final b = StringBuffer();
+  for (final r in input.trim().runes) {
+    if (r == 0x066c) continue;
+    if (r == 0x066b) {
+      b.write('.');
+      continue;
+    }
+    final zero = _digitZeros.where((z) => r >= z && r <= z + 9).firstOrNull;
+    b.writeCharCode(zero == null ? r : 0x30 + r - zero);
+  }
+  final s = b.toString().replaceAll(_digitSpaces, '');
+  return s.startsWith('+') ? s.substring(1) : s;
+}
 
 /// Ezres tagolású egész szám ponttal vagy vesszővel. Az első csoport nem kezdődhet
 /// 0-val: a „0.125” tizedestört, nem 125. Az indiai tagolás („1,00,000”) kétjegyű

@@ -103,7 +103,8 @@ class PortfolioLot {
   static PortfolioLot? fromJson(Map<String, dynamic> j) {
     final symbol = (asText(j['symbol']) ?? '').trim().toUpperCase();
     final q = j['quantity'], p = j['price'];
-    if (symbol.isEmpty || q is! num || p is! num || q <= 0 || p <= 0) return null;
+    // A nem véges szám (JSON-ban 1e309 = végtelen) sem: a mentést és a szinkront is megakasztaná.
+    if (symbol.isEmpty || q is! num || p is! num || !q.isFinite || !p.isFinite || q <= 0 || p <= 0) return null;
     return PortfolioLot(
       id: asText(j['id']) ?? '${symbol}_${DateTime.now().microsecondsSinceEpoch}',
       symbol: symbol,
@@ -114,8 +115,8 @@ class PortfolioLot {
       sell: j['side'] == 'sell',
       account: cleanAccount(j['account']),
       fee: cleanFee(j['fee']),
-      edited: DateTime.tryParse(asText(j['edited']) ?? ''),
-      renamed: DateTime.tryParse(asText(j['renamed']) ?? ''),
+      edited: parseStamp(asText(j['edited'])),
+      renamed: parseStamp(asText(j['renamed'])),
     );
   }
 }
@@ -166,7 +167,7 @@ class DividendRecord {
   static DividendRecord? fromJson(Map<String, dynamic> j) {
     final symbol = (asText(j['symbol']) ?? '').trim().toUpperCase();
     final a = j['amount'];
-    if (symbol.isEmpty || a is! num || a <= 0) return null;
+    if (symbol.isEmpty || a is! num || !a.isFinite || a <= 0) return null;
     return DividendRecord(
       id: asText(j['id']) ?? '${symbol}_d${DateTime.now().microsecondsSinceEpoch}',
       symbol: symbol,
@@ -174,8 +175,8 @@ class DividendRecord {
       currency: storedCurrency(asText(j['currency']) ?? 'USD'),
       date: DateTime.tryParse(asText(j['date']) ?? ''),
       account: PortfolioLot.cleanAccount(j['account']),
-      edited: DateTime.tryParse(asText(j['edited']) ?? ''),
-      renamed: DateTime.tryParse(asText(j['renamed']) ?? ''),
+      edited: parseStamp(asText(j['edited'])),
+      renamed: parseStamp(asText(j['renamed'])),
     );
   }
 }
@@ -241,8 +242,8 @@ class SplitRecord {
       from: from,
       to: to,
       date: DateTime(date.year, date.month, date.day),
-      edited: DateTime.tryParse(asText(j['edited']) ?? ''),
-      renamed: DateTime.tryParse(asText(j['renamed']) ?? ''),
+      edited: parseStamp(asText(j['edited'])),
+      renamed: parseStamp(asText(j['renamed'])),
     );
   }
 

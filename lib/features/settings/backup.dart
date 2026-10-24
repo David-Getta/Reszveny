@@ -242,8 +242,9 @@ class BackupCard extends StatelessWidget {
             onTap: () async {
               final messenger = ScaffoldMessenger.of(context);
               final now = DateTime.now();
-              final text = const JsonEncoder.withIndent(' ').convert(Backup.data(services, now: now));
               try {
+                // A kódolás is a hibakezelésen belül: egy hibás érték se maradjon üzenet nélkül.
+                final text = const JsonEncoder.withIndent(' ').convert(Backup.data(services, now: now));
                 await saveBackupFile(Uint8List.fromList(utf8.encode(text)), Backup.fileName(now));
                 services.telemetry.track('backup_saved');
               } catch (e) {

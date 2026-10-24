@@ -11,6 +11,7 @@ import '../../core/models/stock_quote.dart';
 import '../analysis/claude_stock_analyst.dart';
 import '../events/events_service.dart';
 import '../fx/fx_service.dart';
+import '../market_data/caching_market_data_provider.dart';
 import '../market_data/market_data_provider.dart';
 import 'watch_news.dart';
 import '../../core/util/dates.dart';
@@ -179,6 +180,21 @@ Rules:
       final quotes = await Future.wait([
         for (final s in picked) marketData.quote(s).then<StockQuote?>((q) => q, onError: (Object _) => null),
       ]);
+      // A gyorsítótárból (hálózati hiba után) adott régi ár mozgása nem a mai: kimarad.
+      // Ha egyetlen friss ár sincs, nem készül „mai” összefoglaló (később újra próbálja).
+      final market = marketData;
+      if (market is CachingMarketDataProvider) {
+        var stale = 0;
+        for (final (i, s) in picked.indexed) {
+          if (quotes[i] != null && market.quoteIsStale(s)) {
+            quotes[i] = null;
+            stale++;
+          }
+        }
+        if (stale > 0 && quotes.every((q) => q == null)) {
+          throw const MarketDataException(AppErrorCode.marketUnreachable);
+        }
+      }
       // A gyorsjelentés-naptár New York-i dátumú: keletebbre egy aznapi, zárás utáni
       // jelentés még nem „tegnapi” (és nincs friss eredménye).
       final day = UsMarketHours.eventToday(today);
@@ -346,6 +362,11 @@ Future<({String text, List<AskSource> sources})> askWithSources(
   try {
     final j = jsonDecode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
     if (j['stop_reason'] == 'refusal') throw const AnalysisException(AppErrorCode.aiRefused);
+    // A hosszkorláton elvágott vagy a keresés közben félbehagyott (`pause_turn`) válasz
+    // nem kész: hiba, hogy se a felületre, se a tárba ne kerüljön késznek.
+    if (j['stop_reason'] == 'max_tokens' || j['stop_reason'] == 'pause_turn') {
+      throw const AnalysisException(AppErrorCode.aiTruncated);
+    }
     final content = (j['content'] as List? ?? const []).whereType<Map>().toList();
     String textOf(Iterable<Map> blocks) => [
       for (final b in blocks)

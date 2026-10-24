@@ -478,7 +478,12 @@ class Api {
 
   // ---- Fiók: belépés e-mail + kód ----
 
-  static final _emailRe = RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$');
+  /// Egy e-mail-cím: legfeljebb 254 karakter (RFC 5321), és nincs benne láthatatlan
+  /// formázójel (nulla szélességű szóköz, irányjel) – az ugyanarra a postafiókra egy
+  /// második fiókot nyitna.
+  static final _emailRe = RegExp(
+    r'^(?=.{3,254}$)[^@\s\u200b-\u200f\u2028-\u202e\u2060\ufeff]+@[^@\s\u200b-\u200f\u2028-\u202e\u2060\ufeff]+\.[^@\s\u200b-\u200f\u2028-\u202e\u2060\ufeff]+$',
+  );
 
   /// Belépési kód kérése IP-címenként óránként (sok címre is): egy kérő ne
   /// merítse ki mások napi kódkeretét.
@@ -1054,11 +1059,13 @@ class Api {
     if (uid == null) return _error(401, 'unauthorized');
     final email = store.emailOf(uid);
     if (email == null) return _error(403, 'sign_in_required');
-    final raw = await r.readAsString();
-    if (raw.length > syncMaxBytes) return _error(413, 'too_large');
     final Object? body;
     try {
+      final raw = await r.readAsString();
+      if (raw.length > syncMaxBytes) return _error(413, 'too_large');
       body = jsonDecode(raw);
+    } on _TooLarge {
+      rethrow;
     } catch (_) {
       return _error(400, 'bad_request');
     }
@@ -1070,7 +1077,14 @@ class Api {
       final same = current == null ? base == null : base != null && base.isAtSameMomentAs(current);
       if (!same) return _json({'error': 'conflict', 'updated_at': current?.toIso8601String()}, status: 409);
     }
-    final at = store.saveSyncData(uid, jsonEncode(data));
+    // A JSON-ban végtelenné olvasott szám (1e309) nem kódolható vissza: hibás kérés.
+    final String encoded;
+    try {
+      encoded = jsonEncode(data);
+    } catch (_) {
+      return _error(400, 'bad_request');
+    }
+    final at = store.saveSyncData(uid, encoded);
     return _json({'updated_at': at.toIso8601String()});
   }
 
@@ -1152,7 +1166,7 @@ class Api {
     if (uid == null) return _error(401, 'unauthorized');
     final ipKey = 'ip|${_ipKey(_clientIp(r) ?? '-')}', userKey = 'uid|$uid';
     if (_redeemFailures.blocked(ipKey) || _redeemFailures.blocked(userKey)) return _error(429, 'rate_limited');
-    final code = (await _body(r))['code'] as String? ?? '';
+    final code = _str((await _body(r))['code']);
     // Tesztelői kód: a megadott csomag a megadott napokra, fizetés nélkül.
     if (testers.find(code) case final t?) {
       final used = store.testerRedemptions(t.code, uid);
@@ -1279,7 +1293,7 @@ class Api {
     if (s == null) return _error(503, 'billing_unavailable');
     final email = store.emailOf(uid);
     if (email == null) return _error(403, 'login_required');
-    final productId = (await _body(r))['product_id'] as String? ?? '';
+    final productId = _str((await _body(r))['product_id']);
     final isSub = PlanSpec.byProductId(productId) != null;
     if (!isSub && !PlanSpec.packs.containsKey(productId)) return _error(400, 'unknown_product');
     // Élő Stripe-előfizetés mellé nem indul második (a váltás a portálon megy):
@@ -1472,9 +1486,9 @@ class Api {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
     final body = await _body(r);
-    final platform = body['platform'] as String? ?? '';
-    final productId = body['product_id'] as String? ?? '';
-    final data = body['verification_data'] as String? ?? '';
+    final platform = _str(body['platform']);
+    final productId = _str(body['product_id']);
+    final data = _str(body['verification_data']);
     if (PlanSpec.byProductId(productId) == null && !PlanSpec.packs.containsKey(productId)) {
       return _error(400, 'unknown_product');
     }
@@ -1568,9 +1582,9 @@ class Api {
   Future<Response> _appleNotification(Request r) async {
     final apple = _stores?.apple;
     if (apple == null) return Response.notFound('not found');
-    final note = jwsPayload((await _body(r))['signedPayload'] as String? ?? '');
+    final note = jwsPayload(_str((await _body(r))['signedPayload']));
     final data = note?['data'];
-    final claimed = jwsPayload(data is Map ? data['signedTransactionInfo'] as String? ?? '' : '');
+    final claimed = jwsPayload(data is Map ? _str(data['signedTransactionInfo']) : '');
     final id = claimed?['transactionId']?.toString();
     if (id == null) return _json({'ok': true, 'ignored': true});
     try {
@@ -1609,7 +1623,7 @@ class Api {
     final message = (await _body(r))['message'];
     Map<String, dynamic>? note;
     try {
-      final data = message is Map ? message['data'] as String? : null;
+      final data = message is Map && message['data'] is String ? message['data'] as String : null;
       note = (jsonDecode(utf8.decode(base64Decode(data ?? ''))) as Map).cast<String, dynamic>();
     } catch (_) {
       return _json({'ok': true, 'ignored': true});
@@ -1723,7 +1737,12 @@ class Api {
     _expireTester(uid);
     final e = store.entitlement(uid);
     final invite = _invite(r);
-    final body = await r.readAsString();
+    final String body;
+    try {
+      body = await r.readAsString();
+    } on FormatException {
+      return _Answer.error(400, 'bad_request');
+    }
     if (body.length > analyzeMaxBytes) return _Answer.error(413, 'too_large');
     final token = r.headers['x-whatstock-continuation'] ?? (_continues(body) ? _latestContinuationOf(uid) : null);
     final cont = token == null ? null : _continuations.remove(token);
@@ -1881,9 +1900,9 @@ class Api {
     if (tools is List) {
       body['tools'] = [
         for (final t in tools)
-          if (t is Map && (t['type'] as String? ?? '').startsWith('web_search'))
+          if (t is Map && _str(t['type']).startsWith('web_search'))
             {...t, 'max_uses': cap(t['max_uses'], allowed)}
-          else if (t is Map && (t['type'] as String? ?? '').startsWith('web_fetch'))
+          else if (t is Map && _str(t['type']).startsWith('web_fetch'))
             {
               'type': t['type'],
               'name': t['name'] ?? 'web_fetch',
@@ -1910,7 +1929,7 @@ class Api {
     if (tools is List) {
       body['tools'] = [
         for (final t in tools)
-          if (!(t is Map && (t['type'] as String? ?? '').startsWith('web_fetch'))) t,
+          if (!(t is Map && _str(t['type']).startsWith('web_fetch'))) t,
       ];
     }
     return jsonEncode(body);
@@ -2115,7 +2134,12 @@ class Api {
   Future<Response> _anthropicPassthrough(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
-    final raw = await r.readAsString();
+    final String raw;
+    try {
+      raw = await r.readAsString();
+    } on FormatException {
+      return _error(400, 'bad_request');
+    }
     if (raw.length > helperMaxBytes) return _error(413, 'too_large');
     final now = store.clock();
     final e = store.entitlement(uid);
@@ -2135,8 +2159,17 @@ class Api {
       maxOutput: recentAnalysis ? helperMaxTokens : helperSmallMaxTokens,
     );
     if (body == null) return _error(400, 'bad_request');
-    store.logHelperCall(uid);
-    final upstream = await _forwardAnthropic(body, allowedBeta(r.headers['anthropic-beta']));
+    // Csak a sikeres hívás számít: egy szolgáltatói kimaradás (529) alatti újrapróbálás
+    // ne fogyassza el az órás és a napi keretet.
+    final callId = store.logHelperCall(uid);
+    final http.Response upstream;
+    try {
+      upstream = await _forwardAnthropic(body, allowedBeta(r.headers['anthropic-beta']));
+    } catch (_) {
+      store.removeHelperCall(callId);
+      rethrow;
+    }
+    if (upstream.statusCode != 200) store.removeHelperCall(callId);
     return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
   }
 
@@ -2377,14 +2410,20 @@ class Api {
   }
 
   static Future<Map<String, dynamic>> _body(Request r) async {
-    final s = await r.readAsString();
-    if (s.isEmpty) return const {};
+    // A hibás UTF-8 vagy JSON üres kérésnek számít (400 a hívónál, nem 500).
     try {
+      final s = await r.readAsString();
+      if (s.isEmpty) return const {};
       return (jsonDecode(s) as Map).cast<String, dynamic>();
+    } on _TooLarge {
+      rethrow; // a méretkorlát 413-at ad
     } catch (_) {
       return const {};
     }
   }
+
+  /// Egy kérésmező szövegként; más típusnál üres (a rossz típus 400, nem 500).
+  static String _str(Object? v) => v is String ? v : '';
 
   /// A kérésben küldött adat-JSON-ból kiolvassa a tickert a naplóhoz.
   static String? _symbolFrom(String raw) {

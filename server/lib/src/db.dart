@@ -734,14 +734,20 @@ class Store {
           ]).first['n']
           as int;
 
-  /// Egy segéd-hívás naplózása; a két napnál régebbi sorokat közben törli.
-  void logHelperCall(String userId) {
+  /// Egy segéd-hívás naplózása; a két napnál régebbi sorokat közben törli. A sor
+  /// azonosítója a [removeHelperCall]-hoz.
+  int logHelperCall(String userId) {
     final now = clock().toUtc();
     _db.execute('INSERT INTO helper_calls (user_id, created_at) VALUES (?, ?)', [userId, now.toIso8601String()]);
+    final id = _db.lastInsertRowId;
     _db.execute('DELETE FROM helper_calls WHERE created_at < ?', [
       now.subtract(const Duration(days: 2)).toIso8601String(),
     ]);
+    return id;
   }
+
+  /// Egy sikertelen (a modell oldalán elbukott) segéd-hívás nem számít a keretbe.
+  void removeHelperCall(int id) => _db.execute('DELETE FROM helper_calls WHERE rowid = ?', [id]);
 
   /// A fiók szinkronizált adatai (portfólió, kedvencek, riasztások, jegyzetek), vagy `null`.
   ({String data, DateTime updatedAt})? syncData(String userId) {

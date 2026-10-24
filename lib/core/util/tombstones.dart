@@ -24,10 +24,20 @@ Map<String, String> tombstonesJson(Map<String, DateTime> deleted, {DateTime? now
   return {for (final e in live) e.key: e.value.toUtc().toIso8601String()};
 }
 
-/// Jelzések beolvasása (a hibás bejegyzés kimarad).
+/// Egy változás vagy törlés ideje a szinkronhoz. A napnál távolabbi jövőbeli idő
+/// (nagyon rossz órájú eszköz, kézzel írt mentés: „2999-01-01”) nem érvényes – az a
+/// változat különben minden későbbit legyőzne, és a törlése sem maradna meg; a pár
+/// órás óraeltérés belefér. `null`, ha nincs, nem dátum, vagy ilyen jövőbeli.
+DateTime? parseStamp(Object? v, {DateTime? now}) {
+  final t = v == null ? null : DateTime.tryParse('$v');
+  if (t == null) return null;
+  return t.isAfter((now ?? DateTime.now()).toUtc().add(const Duration(days: 1))) ? null : t;
+}
+
+/// Jelzések beolvasása (a hibás és a távoli jövőbeli bejegyzés kimarad).
 Map<String, DateTime> parseTombstones(Object? j) => {
   if (j is Map)
-    for (final e in j.entries) '${e.key}': ?DateTime.tryParse('${e.value}'),
+    for (final e in j.entries) '${e.key}': ?parseStamp(e.value),
 };
 
 /// Két oldal jelzéseinek uniója; azonosítónként a későbbi törlés.

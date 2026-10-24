@@ -251,7 +251,10 @@ class BackendClient {
   /// munkamenetet nyit.
   Future<void> logout() async {
     try {
-      await _inner.post(Uri.parse('$baseUrl/v1/auth/logout'), headers: await authHeaders());
+      // Időkorláttal: egy nem válaszoló szerver miatt se ragadjon bent a fiók.
+      await _inner
+          .post(Uri.parse('$baseUrl/v1/auth/logout'), headers: await authHeaders())
+          .timeout(const Duration(seconds: 10));
     } catch (_) {
       // Hálózati hiba esetén is kijelentkeztetjük az eszközt.
     }

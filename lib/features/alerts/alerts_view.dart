@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
 import '../../app_services.dart';
 import '../../core/models/stock_candidate.dart';
@@ -7,7 +6,7 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
-import '../portfolio/add_lot_dialog.dart' show parseDecimal;
+import '../portfolio/add_lot_dialog.dart' show exactNumber, fieldNumber, parseAmount;
 import '../stock_detail/widgets/section_card.dart';
 import 'price_alert.dart';
 
@@ -119,25 +118,25 @@ class _AlertDialogState extends State<_AlertDialog> {
           AlertKind.move => 5.0,
           AlertKind.trailing => 10.0,
         };
-    // Az alapértelmezett ±5% kerek szám; a megadott szint (pl. 52 hetes csúcs) pontos marad.
+    // Az alapértelmezett ±5% kerek szám; a megadott szint (pl. 52 hetes csúcs, a
+    // szerkesztett riasztás) pontosan, kerekítés nélkül – mentéskor ne változzon.
     final text = v == null
         ? ''
-        : ((value == null && v >= 100) || v == v.roundToDouble()
-              ? v.toStringAsFixed(0)
-              : v.toStringAsFixed(v < 1 ? 4 : 2));
-    // A nyelv tizedesjelével (pl. magyarul vessző); a beolvasás mindkettőt érti.
-    final comma = NumberFormat.decimalPattern(Fmt(Localizations.localeOf(context).toString()).numberLocale)
-        .symbols
-        .DECIMAL_SEP;
-    _value.text = text.replaceAll('.', comma);
+        : value != null
+        ? exactNumber(v)
+        : (v >= 100 || v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(v < 1 ? 4 : 2));
+    // A nyelv tizedesjelével (vesszős nyelven vesszővel), ahogy a beolvasás visszaolvassa.
+    _value.text = fieldNumber(text, Localizations.localeOf(context).toString());
     _error = null;
   }
 
   Future<void> _submit() async {
     final l10n = AppLocalizations.of(context);
-    final v = parseDecimal(_value.text);
+    // Ezres tagolással is („1,150” angolul, „25.000” magyarul), mint a többi pénzmező.
+    final v = parseAmount(_value.text, Localizations.localeOf(context).toString());
     String? error;
-    if (v == null || v <= 0) {
+    // A 100%-os vagy nagyobb követő stop soha nem szólna (a szint nulla vagy negatív).
+    if (v == null || v <= 0 || (_kind == AlertKind.trailing && v >= 100)) {
       error = l10n.portfolioInvalidNumber;
     } else if (PriceAlert.alreadyMet(_kind, v, widget.currentPrice)) {
       error = l10n.alertAlreadyMet;

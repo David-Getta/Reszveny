@@ -19,7 +19,7 @@ class StockNote {
     if (j is! Map) return null;
     final text = j['text'];
     if (text is! String || text.trim().isEmpty) return null;
-    return StockNote(text: text, updatedAt: DateTime.tryParse('${j['updated_at']}') ?? DateTime.now());
+    return StockNote(text: text, updatedAt: parseStamp(j['updated_at']) ?? DateTime.now());
   }
 }
 

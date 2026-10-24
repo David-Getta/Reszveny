@@ -117,9 +117,8 @@ Use dot as the decimal separator and no thousands separators. Skip cash, totals,
     } on Exception catch (e) {
       throw RecognitionException(AppErrorCode.recognitionUnreachable, cause: e);
     }
-    if (res.statusCode != 200) {
-      throw RecognitionException(AppErrorCode.recognitionHttp, detail: '${res.statusCode}', cause: res.body);
-    }
+    // Ugyanazok az üzenetek, mint a fotós felismerésnél (lejárt próbaidő, túl sok kérés…).
+    if (res.statusCode != 200) throw ClaudeVisionRecognizer.httpError(res);
     return parseResponse(utf8.decode(res.bodyBytes));
   }
 

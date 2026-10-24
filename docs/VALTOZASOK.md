@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.287)
+# Változásjegyzék (0.2.130 → 0.2.288)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,24 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Bevitel és hibakezelés: a harmincharmadik és harmincnegyedik kódátnézés javításai
+
+- **0.2.288**: az árfolyam-riasztás szintje ezres tagolással is jól olvasódik (angolul az „1,150” eddig 1,15 lett,
+  magyarul a „25.000” 25); a szerkesztett riasztás szintje mentéskor nem kerekedik; a 100%-os vagy nagyobb követő
+  stop nem menthető (soha nem szólna). Minden számmező érti a más írások számjegyeit (perzsa, arab, hindi, bengáli…),
+  az arab tizedesjelet és a vezető „+” jelet (perzsául és pastuul a riasztás eddig nem volt menthető). A CSV
+  tudományos alakú száma („1.5E+3”) a kitevővel olvasódik. Egy mentésből vagy szinkronból érkező végtelen szám
+  (1e309) nem kerül be (eddig utána semmi sem mentődött), a távoli jövőbe dátumozott változás nem teszi
+  törölhetetlenné a tételt, és a hibás típusú mező nem akasztja meg a szinkront. A szerver a rossz típusú vagy
+  nem UTF-8 kérésre 400-at ad (nem 500-at), a túl hosszú vagy láthatatlan jelet tartalmazó e-mail-címet
+  elutasítja, és a szolgáltatói hibával végződő segédhívás nem fogyasztja a keretet. Egy sikertelen frissítés nem
+  törli fél napra az ismert gyorsjelentés-dátumokat; a hálózat visszatérte után a frissítés tényleg újra kér (nem a
+  tíz percig megjegyzett offline másolatot adja); a napi összefoglaló nem készül el régi, gyorsítótárazott árakból;
+  a hosszkorláton elvágott vagy keresés közben félbehagyott AI-válasz hiba, nem kész válasz. A „nincs több
+  elemzés” üzenetnél az app a szerverről is ellenőrzi a keretet; a kijelentkezés nem várhat örökké a szerverre; a
+  képernyőképes import lejárt próbaidőnél és túl sok kérésnél ugyanazt mondja, mint a fotós felismerés; a mentés
+  fájlba hibánál üzenetet ad.
 
 ## Időzónák: a „gyanús” pontok lezárása
 

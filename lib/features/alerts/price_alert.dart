@@ -197,7 +197,7 @@ class PriceAlert {
     final symbol = (asText(j['symbol']) ?? '').trim().toUpperCase();
     final kind = AlertKind.parse(j['kind']);
     final value = j['value'];
-    if (symbol.isEmpty || kind == null || value is! num || value <= 0) return null;
+    if (symbol.isEmpty || kind == null || value is! num || !value.isFinite || value <= 0) return null;
     final tp = j['triggered_price'];
     final peak = j['peak'];
     return PriceAlert(
@@ -208,10 +208,10 @@ class PriceAlert {
       currency: asText(j['currency']),
       createdAt: DateTime.tryParse(asText(j['created_at']) ?? '') ?? DateTime.now(),
       triggeredAt: DateTime.tryParse(asText(j['triggered_at']) ?? ''),
-      triggeredPrice: tp is num ? tp.toDouble() : null,
-      peak: peak is num && peak > 0 ? peak.toDouble() : null,
-      modified: DateTime.tryParse(asText(j['edited']) ?? ''),
-      renamed: DateTime.tryParse(asText(j['renamed']) ?? ''),
+      triggeredPrice: tp is num && tp.isFinite ? tp.toDouble() : null,
+      peak: peak is num && peak.isFinite && peak > 0 ? peak.toDouble() : null,
+      modified: parseStamp(asText(j['edited'])),
+      renamed: parseStamp(asText(j['renamed'])),
     );
   }
 }

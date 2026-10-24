@@ -125,10 +125,12 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
   Future<EarningsOverview> earnings(String symbol, {DateTime? now}) async {
     final today = now ?? DateTime.now();
     String d(DateTime t) => t.toIso8601String().substring(0, 10);
+    Object? failure;
     Future<Object?> safe(String path, Map<String, String> q) async {
       try {
         return await _get(path, q);
-      } catch (_) {
+      } catch (e) {
+        failure = e;
         return null;
       }
     }
@@ -141,6 +143,9 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
         'to': d(today.add(const Duration(days: 120))),
       }),
     ]);
+    // Mindkettő elbukott (pl. 429): hiba, nem üres eredmény – különben a hívó (az
+    // eseménynaptár) fél napra elfelejtené a már ismert jelentésnapot.
+    if (r[0] == null && r[1] == null && failure != null) throw failure!;
     final x = parseAnalysisExtras(symbol, earnings: r[0], calendar: r[1], now: today);
     return EarningsOverview(history: x.earnings, next: x.nextEarnings);
   }
