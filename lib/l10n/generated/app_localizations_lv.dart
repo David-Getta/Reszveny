@@ -2946,6 +2946,20 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Vai izrakstīties?';
+
+  @override
+  String get signOutBody =>
+      'Jūsu portfelis, saraksti, cenu brīdinājumi un piezīmes paliek jūsu kontā un tiek noņemti no šīs ierīces. Pierakstieties vēlreiz, lai tos atgūtu.';
+
+  @override
+  String get signOutUnsaved =>
+      'Dažas izmaiņas neizdevās saglabāt jūsu kontā (nav savienojuma?). Ja izrakstīsieties tagad, tās tiks zaudētas.';
+
+  @override
+  String get signOutAnyway => 'Tomēr izrakstīties';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

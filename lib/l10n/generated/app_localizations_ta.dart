@@ -2912,6 +2912,20 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'வெளியேற வேண்டுமா?';
+
+  @override
+  String get signOutBody =>
+      'உங்கள் போர்ட்ஃபோலியோ, பட்டியல்கள், விலை எச்சரிக்கைகள், குறிப்புகள் ஆகியவை உங்கள் கணக்கில் இருக்கும், இந்தச் சாதனத்திலிருந்து அகற்றப்படும். அவற்றைத் திரும்பப் பெற மீண்டும் உள்நுழையவும்.';
+
+  @override
+  String get signOutUnsaved =>
+      'சில மாற்றங்களை உங்கள் கணக்கில் சேமிக்க முடியவில்லை (இணைப்பு இல்லையா?). இப்போது வெளியேறினால், அவை இழக்கப்படும்.';
+
+  @override
+  String get signOutAnyway => 'எப்படியும் வெளியேறு';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

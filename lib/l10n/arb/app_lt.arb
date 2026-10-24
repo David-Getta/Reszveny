@@ -857,5 +857,9 @@
   "syncTooLarge": "Jūsų duomenys per dideli, kad būtų sinchronizuojami su jūsų paskyra. Ištrinkite nebereikalingas operacijas ar užrašus ir bus bandoma dar kartą.",
   "noteFull": "Šios akcijos užrašai pilni, todėl šis įrašas nepridėtas. Sutrumpinkite užrašus ir bandykite dar kartą.",
   "portfolioNoRateFor": "Nėra {symbols} valiutos kurso.",
-  "dividendsNotConverted": "{count, plural, =1{{count} dividendas ({currencies}) neturi valiutos kurso ir neįtraukiamas į sumas.} other{Dividendų be valiutos kurso ({currencies}): {count}. Jie neįtraukiami į sumas.}}"
+  "dividendsNotConverted": "{count, plural, =1{{count} dividendas ({currencies}) neturi valiutos kurso ir neįtraukiamas į sumas.} other{Dividendų be valiutos kurso ({currencies}): {count}. Jie neįtraukiami į sumas.}}",
+  "signOutTitle": "Atsijungti?",
+  "signOutBody": "Jūsų portfelis, sąrašai, kainos įspėjimai ir užrašai lieka jūsų paskyroje ir pašalinami iš šio įrenginio. Prisijunkite dar kartą, kad juos susigrąžintumėte.",
+  "signOutUnsaved": "Kai kurių pakeitimų nepavyko išsaugoti jūsų paskyroje (nėra ryšio?). Jei atsijungsite dabar, jie bus prarasti.",
+  "signOutAnyway": "Vis tiek atsijungti"
 }

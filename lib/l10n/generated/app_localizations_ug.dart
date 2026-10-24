@@ -2901,6 +2901,20 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'چىقامسىز؟';
+
+  @override
+  String get signOutBody =>
+      'مەبلەغ بىرىكمىڭىز، تىزىملىكلىرىڭىز، باھا ئاگاھلاندۇرۇشلىرى ۋە خاتىرىلىرىڭىز ھېساباتىڭىزدا ساقلىنىپ قالىدۇ ھەمدە بۇ ئۈسكۈنىدىن ئۆچۈرۈلىدۇ. ئۇلارنى قايتۇرۇۋېلىش ئۈچۈن قايتا كىرىڭ.';
+
+  @override
+  String get signOutUnsaved =>
+      'بەزى ئۆزگەرتىشلەرنى ھېساباتىڭىزغا ساقلىغىلى بولمىدى (ئۇلىنىش يوقمۇ؟). ھازىر چىقسىڭىز، ئۇلار يوقىلىدۇ.';
+
+  @override
+  String get signOutAnyway => 'يەنىلا چىقىش';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

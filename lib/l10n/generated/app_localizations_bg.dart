@@ -2901,6 +2901,20 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Да излезете ли от акаунта?';
+
+  @override
+  String get signOutBody =>
+      'Портфейлът, списъците, ценовите известия и бележките ви остават в акаунта ви и се премахват от това устройство. Влезте отново, за да ги върнете.';
+
+  @override
+  String get signOutUnsaved =>
+      'Някои промени не можаха да бъдат запазени в акаунта ви (няма връзка?). Ако излезете сега, те ще бъдат загубени.';
+
+  @override
+  String get signOutAnyway => 'Изход въпреки това';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

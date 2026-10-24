@@ -2921,6 +2921,20 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'O batla go tswa?';
+
+  @override
+  String get signOutBody =>
+      'Potefolio ya gago, manaane, dikitsiso tsa tlhwatlhwa le dintlha di sala mo akhaontong ya gago mme di tlosiwa mo sedirisiweng se. Tsena gape gore o di bone gape.';
+
+  @override
+  String get signOutUnsaved =>
+      'Diphetogo dingwe ga di a kgona go bolokwa mo akhaontong ya gago (ga go na kgolagano?). Fa o tswa jaanong, di tla latlhega.';
+
+  @override
+  String get signOutAnyway => 'Tswa le fa go ntse jalo';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

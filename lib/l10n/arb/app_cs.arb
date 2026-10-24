@@ -857,5 +857,9 @@
   "syncTooLarge": "Vaše data jsou příliš velká na synchronizaci s vaším účtem. Smažte transakce nebo poznámky, které už nepotřebujete, a zkusí se to znovu.",
   "noteFull": "Poznámky k této akcii jsou plné, proto tento záznam nebyl přidán. Zkraťte poznámky a zkuste to znovu.",
   "portfolioNoRateFor": "Pro {symbols} není k dispozici směnný kurz.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividenda v {currencies} nemá směnný kurz, a proto není zahrnuta v součtech.} other{Dividendy v {currencies} ({count}) nemají směnný kurz, a proto nejsou zahrnuty v součtech.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividenda v {currencies} nemá směnný kurz, a proto není zahrnuta v součtech.} other{Dividendy v {currencies} ({count}) nemají směnný kurz, a proto nejsou zahrnuty v součtech.}}",
+  "signOutTitle": "Odhlásit se?",
+  "signOutBody": "Vaše portfolio, seznamy, cenová upozornění a poznámky zůstanou ve vašem účtu a z tohoto zařízení se odstraní. Po opětovném přihlášení je zase získáte.",
+  "signOutUnsaved": "Některé změny se nepodařilo uložit do vašeho účtu (chybí připojení?). Pokud se nyní odhlásíte, budou ztraceny.",
+  "signOutAnyway": "Přesto se odhlásit"
 }

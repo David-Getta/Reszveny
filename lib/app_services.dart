@@ -193,6 +193,7 @@ class AppServices {
     };
     final b0 = backend;
     account = b0 == null ? null : AccountController(backend: b0, entitlements: entitlements, storedEmail: accountEmail);
+    if (account case final acc?) b0?.onSessionLost = () => unawaited(acc.sessionLost());
     // Fizetés, mint a Claude-nál: telefonon a platform boltja (App Store /
     // Play, demó tartalékkal, amíg nincs felvett termék), asztali gépen és
     // weben böngészős fizetés a fiókhoz (Stripe), backend nélkül demó bolt.
@@ -240,6 +241,8 @@ class AppServices {
               verificationData: e.verificationData ?? '',
             ),
       onPurchased: () => this.telemetry.track('purchase_done'),
+      owner: () => account?.email ?? '',
+      generation: () => account?.generation ?? 0,
     );
     // Egy korábban (hálózati hiba miatt) ellenőrizetlenül maradt vásárlás újra.
     if (b != null) unawaited(billingController.retryPending());
@@ -433,25 +436,44 @@ class AppServices {
   Future<void> deleteAccount({required bool wipeLocalData}) async {
     await account?.deleteAccount();
     await sync?.forgetAccount();
-    if (wipeLocalData) {
-      await portfolio.clear();
-      await alerts.clear();
-      await preferences.clearPersonalData();
-      await reports.clearCache();
-      await notes.clear();
-      await PortfolioReviewer.clearLast();
-      await brief.forget();
-      await CachingMarketDataProvider.clear();
-      // Az AI-utánanézések, a kérdezz-vissza beszélgetések és a távollét-pillanatkép is.
-      try {
-        final prefs = await SharedPreferences.getInstance();
-        for (final k in wipedKeys) {
-          await prefs.remove(k);
-        }
-      } catch (_) {}
-    }
+    if (wipeLocalData) await _wipeLocalData();
     // Az app névtelen fiókkal megy tovább; a friss állapotot a szerver adja.
     await syncEntitlements();
+  }
+
+  /// Kijelentkezés: előbb felmegy, ami még nem ment fel, aztán a fiók adatai
+  /// (portfólió, listák, riasztások, jegyzetek, elemzések) lekerülnek a készülékről –
+  /// a fiókban megmaradnak, és belépéskor visszajönnek. Így a következő belépő (akár
+  /// egy másik fiók) nem látja és nem kapja meg őket; a kijelentkezve tett változások
+  /// pedig a következő belépéskor összefésülődnek. Hamis, ha a feltöltés nem sikerült,
+  /// és [force] nélkül nem lépett ki (a felület megkérdezi, kilépjen-e így is).
+  Future<bool> signOut({bool force = false}) async {
+    final a = account;
+    if (a == null) return true;
+    if (!(await sync?.flush() ?? true) && !force) return false;
+    await a.signOut();
+    await _wipeLocalData();
+    await sync?.forgetAccount();
+    return true;
+  }
+
+  Future<void> _wipeLocalData() async {
+    await portfolio.clear();
+    await alerts.clear();
+    await preferences.clearPersonalData();
+    await reports.clearCache();
+    await notes.clear();
+    await PortfolioReviewer.clearLast();
+    await brief.forget();
+    await CachingMarketDataProvider.clear();
+    chat.clear();
+    // Az AI-utánanézések, a kérdezz-vissza beszélgetések és a távollét-pillanatkép is.
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      for (final k in wipedKeys) {
+        await prefs.remove(k);
+      }
+    } catch (_) {}
   }
 
   /// A jogi szöveg címe az app nyelvén (`?lang=hu|en`); üres, ha nincs ilyen cím.

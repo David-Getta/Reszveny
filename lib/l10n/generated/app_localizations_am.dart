@@ -2858,6 +2858,20 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'ከመለያዎ ይውጡ?';
+
+  @override
+  String get signOutBody =>
+      'ፖርትፎሊዮዎ፣ ዝርዝሮችዎ፣ የዋጋ ማንቂያዎችዎ እና ማስታወሻዎችዎ በመለያዎ ውስጥ ይቆያሉ፤ ከዚህ መሣሪያ ግን ይወገዳሉ። መልሰው ለማግኘት እንደገና ይግቡ።';
+
+  @override
+  String get signOutUnsaved =>
+      'አንዳንድ ለውጦች በመለያዎ ላይ ሊቀመጡ አልቻሉም (ግንኙነት የለም?)። አሁን ከወጡ ይጠፋሉ።';
+
+  @override
+  String get signOutAnyway => 'ለማንኛውም ውጣ';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

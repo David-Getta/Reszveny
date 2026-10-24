@@ -2898,6 +2898,20 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Аккаунттан шығу керек пе?';
+
+  @override
+  String get signOutBody =>
+      'Портфеліңіз, тізімдеріңіз, баға ескертулеріңіз және жазбаларыңыз аккаунтыңызда қалады және осы құрылғыдан жойылады. Оларды қайтару үшін қайта кіріңіз.';
+
+  @override
+  String get signOutUnsaved =>
+      'Кейбір өзгерістерді аккаунтыңызға сақтау мүмкін болмады (байланыс жоқ па?). Қазір шықсаңыз, олар жоғалады.';
+
+  @override
+  String get signOutAnyway => 'Бәрібір шығу';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

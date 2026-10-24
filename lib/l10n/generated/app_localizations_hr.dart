@@ -2948,6 +2948,20 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Odjaviti se?';
+
+  @override
+  String get signOutBody =>
+      'Vaš portfelj, popisi, obavijesti o cijeni i bilješke ostaju na vašem računu i uklanjaju se s ovog uređaja. Ponovno se prijavite da biste ih vratili.';
+
+  @override
+  String get signOutUnsaved =>
+      'Neke promjene nije bilo moguće spremiti na vaš račun (nema veze?). Ako se sada odjavite, bit će izgubljene.';
+
+  @override
+  String get signOutAnyway => 'Svejedno se odjavi';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

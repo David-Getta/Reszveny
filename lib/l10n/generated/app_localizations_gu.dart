@@ -2894,6 +2894,20 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'સાઇન આઉટ કરવું છે?';
+
+  @override
+  String get signOutBody =>
+      'તમારો પોર્ટફોલિયો, યાદીઓ, ભાવ અલર્ટ અને નોંધો તમારા એકાઉન્ટમાં રહેશે અને આ ડિવાઇસમાંથી દૂર કરવામાં આવશે. તેમને પાછા મેળવવા માટે ફરી સાઇન ઇન કરો.';
+
+  @override
+  String get signOutUnsaved =>
+      'કેટલાક ફેરફારો તમારા એકાઉન્ટમાં સાચવી શકાયા નથી (કનેક્શન નથી?). જો તમે અત્યારે સાઇન આઉટ કરશો, તો તે ખોવાઈ જશે.';
+
+  @override
+  String get signOutAnyway => 'છતાં સાઇન આઉટ કરો';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

@@ -857,5 +857,9 @@
   "syncTooLarge": "Keɓe maa ina mawni no feewi ngam sync e konte maa. Momtu soodgol e yeeyugol walla binndi ɗi a haajaaki kadi, ɗum fuɗɗittoto.",
   "noteFull": "Binndi aksiyoŋ oo heewii, ɗuum waɗi ndee binndol ɓeydaaka. Ustu binndi ɗii, eto kadi.",
   "portfolioNoRateFor": "Coggu weccitgol alaa wonande {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Dividende 1 e {currencies} alaa coggu weccitgol, ɗuum waɗi o naatnaaka e kuuɓal.} other{Dividendeeji {count} e {currencies} alaa coggu weccitgol, ɗuum waɗi ɗi naatnaaka e kuuɓal.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividende 1 e {currencies} alaa coggu weccitgol, ɗuum waɗi o naatnaaka e kuuɓal.} other{Dividendeeji {count} e {currencies} alaa coggu weccitgol, ɗuum waɗi ɗi naatnaaka e kuuɓal.}}",
+  "signOutTitle": "Seŋto?",
+  "signOutBody": "Aksiyoŋ maa, doggi maa, tintine coggu e binndi maa ina keddoo e nder konte maa, kono ina momtee e ngol kaɓirgol. Seŋo kadi ngam heɓtude ɗum en.",
+  "signOutUnsaved": "Won e baylitte mooftaaki e nder konte maa (ceŋagol alaa?). So a seŋtii jooni, ɗe majjat.",
+  "signOutAnyway": "Seŋto tan"
 }

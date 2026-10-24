@@ -2889,6 +2889,20 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'سائن آئوٽ ڪريو؟';
+
+  @override
+  String get signOutBody =>
+      'توهان جو پورٽ فوليو، فهرستون، قيمت جا الرٽ ۽ نوٽس توهان جي اڪائونٽ ۾ رهن ٿا ۽ هن ڊوائيس تان هٽايا وڃن ٿا. انهن کي واپس حاصل ڪرڻ لاءِ ٻيهر سائن ان ڪريو.';
+
+  @override
+  String get signOutUnsaved =>
+      'ڪجهه تبديليون توهان جي اڪائونٽ ۾ محفوظ نه ٿي سگهيون (ڪنيڪشن ناهي؟). جيڪڏهن توهان هاڻي سائن آئوٽ ڪيو ته اهي ضايع ٿي وينديون.';
+
+  @override
+  String get signOutAnyway => 'پوءِ به سائن آئوٽ ڪريو';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

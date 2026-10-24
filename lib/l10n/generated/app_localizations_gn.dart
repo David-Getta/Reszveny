@@ -2904,6 +2904,20 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => '¿Resẽsépa?';
+
+  @override
+  String get signOutBody =>
+      'Ne cartera, ne listakuéra, tepy maranduʼi ha ne jehaipyrekuéra opytáta nde mbaʼetépe ha oñembogue ko mbaʼeʼokágui. Eike jey reguereko jey hag̃ua.';
+
+  @override
+  String get signOutUnsaved =>
+      'Oĩ ñemoambue ndaikatúiva oñeñongatu nde mbaʼetépe (¿ndaipóri ñanduti?). Resẽ ramo koʼág̃a, okañýta.';
+
+  @override
+  String get signOutAnyway => 'Esẽ jepe';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

@@ -2911,6 +2911,20 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Αποσύνδεση;';
+
+  @override
+  String get signOutBody =>
+      'Το χαρτοφυλάκιο, οι λίστες, οι ειδοποιήσεις τιμής και οι σημειώσεις σας παραμένουν στον λογαριασμό σας και αφαιρούνται από αυτή τη συσκευή. Συνδεθείτε ξανά για να τα επαναφέρετε.';
+
+  @override
+  String get signOutUnsaved =>
+      'Ορισμένες αλλαγές δεν ήταν δυνατό να αποθηκευτούν στον λογαριασμό σας (δεν υπάρχει σύνδεση;). Αν αποσυνδεθείτε τώρα, θα χαθούν.';
+
+  @override
+  String get signOutAnyway => 'Αποσύνδεση παρ\' όλα αυτά';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

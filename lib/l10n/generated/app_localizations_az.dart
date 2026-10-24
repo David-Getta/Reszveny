@@ -2899,6 +2899,20 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Hesabdan çıxılsın?';
+
+  @override
+  String get signOutBody =>
+      'Portfeliniz, siyahılarınız, qiymət bildirişləriniz və qeydləriniz hesabınızda qalır və bu cihazdan silinir. Onları geri qaytarmaq üçün yenidən daxil olun.';
+
+  @override
+  String get signOutUnsaved =>
+      'Bəzi dəyişikliklər hesabınızda saxlanıla bilmədi (bağlantı yoxdur?). İndi çıxış etsəniz, onlar itəcək.';
+
+  @override
+  String get signOutAnyway => 'Yenə də çıxış et';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

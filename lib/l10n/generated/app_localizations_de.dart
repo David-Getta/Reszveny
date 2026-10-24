@@ -2915,6 +2915,20 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Abmelden?';
+
+  @override
+  String get signOutBody =>
+      'Dein Portfolio, deine Listen, Kursalarme und Notizen bleiben in deinem Konto und werden von diesem Gerät entfernt. Melde dich wieder an, um sie zurückzubekommen.';
+
+  @override
+  String get signOutUnsaved =>
+      'Einige Änderungen konnten nicht in deinem Konto gespeichert werden (keine Verbindung?). Wenn du dich jetzt abmeldest, gehen sie verloren.';
+
+  @override
+  String get signOutAnyway => 'Trotzdem abmelden';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

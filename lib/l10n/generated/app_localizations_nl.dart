@@ -2906,6 +2906,20 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Uitloggen?';
+
+  @override
+  String get signOutBody =>
+      'Je portefeuille, lijsten, koersalerts en notities blijven in je account en worden van dit apparaat verwijderd. Log opnieuw in om ze terug te krijgen.';
+
+  @override
+  String get signOutUnsaved =>
+      'Sommige wijzigingen konden niet in je account worden opgeslagen (geen verbinding?). Als je nu uitlogt, gaan ze verloren.';
+
+  @override
+  String get signOutAnyway => 'Toch uitloggen';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

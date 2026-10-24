@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.294)
+# Változásjegyzék (0.2.130 → 0.2.295)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,22 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Fiókváltás: a negyvenegyedik kódátnézés javításai
+
+- **0.2.295**: kijelentkezéskor az app előbb feltölti a még fel nem töltött változásokat, aztán – megerősítés
+  után – a fiók adatai (portfólió, listák, riasztások, jegyzetek, elemzések, AI-beszélgetések) lekerülnek a
+  készülékről; a fiókban megmaradnak, és újra belépve visszajönnek. Ha a feltöltés nem sikerül, az app szól,
+  mielőtt bármi elveszne. Egy feltöltés közben történt kijelentkezés után a következő (akár másik) fiókba már
+  nem kerülhet át az előző portfóliója, és a letöltés közbeni kijelentkezés sem írja felül a készüléket. A
+  kijelentkezve tett változások a következő belépéskor a fiókba kerülnek. Egy másik fiókban vett, még
+  ellenőrizetlen vásárlást az app csak annak a fióknak küld el újra; a kijelentkezés után érkező vásárlás- és
+  ajánlókód-válasz nem kerül a készülékre. Ha a fiókot egy másik eszközön törölték, ez az eszköz kijelentkezik
+  (nem mutatja tovább a régi csomagot). Első belépéskor a kétszer begépelt vétel nem duplázza a pozíciót, a
+  két külön írt jegyzet egymás után megmarad, a készpénz, a célarány és a célok pedig a fiókéi maradnak. A
+  szerveren a belépés előtt megosztott ajánlókód a fiókhoz kerül, és a belépés előtt vett magasabb csomag sem
+  vész el. A hibajelentés az ékezetes e-mail-címeket és a fájlutak felhasználónevét is kitakarja; a
+  levélküldő hibaválasza cím nélkül kerül a szerver naplójába.
 
 ## Szélsőséges adatok: a negyvenedik kódátnézés javításai
 

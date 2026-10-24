@@ -2906,6 +2906,20 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Za ka fita?';
+
+  @override
+  String get signOutBody =>
+      'Jakar hannun jarinka, jerorinka, faɗakarwar farashi da bayananka za su kasance a asusunka, kuma za a cire su daga wannan na\'ura. Sake shiga don dawo da su.';
+
+  @override
+  String get signOutUnsaved =>
+      'Ba a iya adana wasu canje-canje a asusunka ba (babu haɗi?). Idan ka fita yanzu, za su ɓace.';
+
+  @override
+  String get signOutAnyway => 'Fita duk da haka';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

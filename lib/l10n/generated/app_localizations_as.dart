@@ -2897,6 +2897,20 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'ছাইন আউট কৰিবনে?';
+
+  @override
+  String get signOutBody =>
+      'আপোনাৰ প\'ৰ্টফ\'লিঅ\', তালিকা, দামৰ সতৰ্কবাণী আৰু টোকাসমূহ আপোনাৰ একাউণ্টত থাকিব আৰু এই ডিভাইচৰ পৰা আঁতৰোৱা হ\'ব। সেইবোৰ ঘূৰাই পাবলৈ পুনৰ ছাইন ইন কৰক।';
+
+  @override
+  String get signOutUnsaved =>
+      'কিছুমান পৰিৱৰ্তন আপোনাৰ একাউণ্টত ছেভ কৰিব পৰা নগ\'ল (সংযোগ নাই নেকি?)। এতিয়া ছাইন আউট কৰিলে সেইবোৰ হেৰাই যাব।';
+
+  @override
+  String get signOutAnyway => 'তথাপিও ছাইন আউট কৰক';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

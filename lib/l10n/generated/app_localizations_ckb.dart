@@ -2901,6 +2901,20 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'دەتەوێت بچیتە دەرەوە؟';
+
+  @override
+  String get signOutBody =>
+      'پۆرتفۆلیۆ، لیستەکان، ئاگادارکەرەوەکانی نرخ و تێبینییەکانت لە هەژمارەکەتدا دەمێننەوە و لەم ئامێرە دەسڕدرێنەوە. دووبارە بچۆ ژوورەوە بۆ ئەوەی بیانگەڕێنیتەوە.';
+
+  @override
+  String get signOutUnsaved =>
+      'هەندێک گۆڕانکاری لە هەژمارەکەتدا پاشەکەوت نەکران (پەیوەندی نییە؟). ئەگەر ئێستا بچیتە دەرەوە، لەدەست دەچن.';
+
+  @override
+  String get signOutAnyway => 'بەهەرحاڵ بچۆ دەرەوە';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

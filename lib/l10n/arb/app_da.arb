@@ -857,5 +857,9 @@
   "syncTooLarge": "Dine data er for store til at blive synkroniseret med din konto. Slet transaktioner eller noter, du ikke længere har brug for, så prøves der igen.",
   "noteFull": "Aktiens noter er fyldt op, så dette indlæg blev ikke tilføjet. Forkort noterne, og prøv igen.",
   "portfolioNoRateFor": "Ingen valutakurs for {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 udbyttebetaling i {currencies} har ingen valutakurs og er ikke med i summerne.} other{{count} udbyttebetalinger i {currencies} har ingen valutakurs og er ikke med i summerne.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 udbyttebetaling i {currencies} har ingen valutakurs og er ikke med i summerne.} other{{count} udbyttebetalinger i {currencies} har ingen valutakurs og er ikke med i summerne.}}",
+  "signOutTitle": "Vil du logge ud?",
+  "signOutBody": "Din portefølje, dine lister, kursalarmer og noter forbliver på din konto og fjernes fra denne enhed. Log ind igen for at få dem tilbage.",
+  "signOutUnsaved": "Nogle ændringer kunne ikke gemmes på din konto (ingen forbindelse?). Hvis du logger ud nu, går de tabt.",
+  "signOutAnyway": "Log ud alligevel"
 }

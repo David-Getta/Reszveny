@@ -857,5 +857,9 @@
   "syncTooLarge": "資料過大，無法與帳戶同步。刪除不再需要的交易記錄或筆記後，系統會自動重試。",
   "noteFull": "此股票的筆記已滿，這項內容未有加入。請縮短筆記後再試一次。",
   "portfolioNoRateFor": "{symbols}沒有匯率。",
-  "dividendsNotConverted": "{count, plural, =1{1 筆以{currencies}計的股息沒有匯率，未計入總計。} other{{count} 筆以{currencies}計的股息沒有匯率，未計入總計。}}"
+  "dividendsNotConverted": "{count, plural, =1{1 筆以{currencies}計的股息沒有匯率，未計入總計。} other{{count} 筆以{currencies}計的股息沒有匯率，未計入總計。}}",
+  "signOutTitle": "要登出嗎？",
+  "signOutBody": "你的投資組合、清單、價格提示和筆記會保留在你的帳戶中，並會從此裝置移除。重新登入即可取回。",
+  "signOutUnsaved": "部分變更未能儲存至你的帳戶（沒有網絡連線？）。如現在登出，這些變更將會遺失。",
+  "signOutAnyway": "仍要登出"
 }

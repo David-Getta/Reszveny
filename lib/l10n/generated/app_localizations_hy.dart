@@ -2909,6 +2909,20 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Դուրս գա՞լ հաշվից';
+
+  @override
+  String get signOutBody =>
+      'Ձեր պորտֆելը, ցուցակները, գնային ծանուցումները և նշումները մնում են ձեր հաշվում և հեռացվում են այս սարքից։ Մուտք գործեք կրկին՝ դրանք վերադարձնելու համար։';
+
+  @override
+  String get signOutUnsaved =>
+      'Որոշ փոփոխություններ չհաջողվեց պահել ձեր հաշվում (կապ չկա՞)։ Եթե հիմա դուրս գաք, դրանք կկորչեն։';
+
+  @override
+  String get signOutAnyway => 'Այնուամենայնիվ դուրս գալ';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

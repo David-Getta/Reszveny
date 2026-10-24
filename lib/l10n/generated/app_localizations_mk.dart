@@ -2920,6 +2920,20 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Да се одјавите?';
+
+  @override
+  String get signOutBody =>
+      'Вашето портфолио, листите, ценовните известувања и белешките остануваат во вашата сметка и се отстрануваат од овој уред. Најавете се повторно за да ги вратите.';
+
+  @override
+  String get signOutUnsaved =>
+      'Некои промени не можеа да се зачуваат во вашата сметка (нема врска?). Ако се одјавите сега, ќе бидат изгубени.';
+
+  @override
+  String get signOutAnyway => 'Сепак одјави се';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

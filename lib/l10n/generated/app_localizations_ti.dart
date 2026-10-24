@@ -2857,6 +2857,20 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'ክትወጹ ትደልዩ ዶ?';
+
+  @override
+  String get signOutBody =>
+      'ፖርትፎሊዮኹም፣ ዝርዝራትኩም፣ መጠንቀቕታታት ዋጋን ማስታወሻታትኩምን ኣብ ሕሳብኩም ይጸንሑ፣ ካብዚ መሳርሒ ድማ ይእለዩ። ንምምላሶም ደጊምኩም እተዉ።';
+
+  @override
+  String get signOutUnsaved =>
+      'ገለ ለውጥታት ኣብ ሕሳብኩም ክዕቀቡ ኣይከኣሉን (ርክብ የለን ድዩ?)። ሕጂ እንተ ወጺእኩም፣ ክጠፍኡ እዮም።';
+
+  @override
+  String get signOutAnyway => 'ብዘየገድስ ውጻእ';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

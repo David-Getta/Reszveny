@@ -857,5 +857,9 @@
   "syncTooLarge": "Dátà rẹ ti tóbi jù láti múṣiṣẹ́pọ̀ pẹ̀lú àkáǹtì rẹ. Pa àwọn ìdúnàdúrà tàbí àkọsílẹ̀ tí o kò nílò mọ́ rẹ́, yóò sì tún gbìyànjú.",
   "noteFull": "Àkọsílẹ̀ ìpín yìí ti kún, nítorí náà a kò fi èyí kún un. Dín àkọsílẹ̀ náà kù kí o sì tún gbìyànjú.",
   "portfolioNoRateFor": "Kò sí ìwọ̀n pàṣípààrọ̀ fún {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Ìpín èrè 1 ní {currencies} kò ní ìwọ̀n pàṣípààrọ̀, a kò sì kà á mọ́ àpapọ̀.} other{Ìpín èrè {count} ní {currencies} kò ní ìwọ̀n pàṣípààrọ̀, a kò sì kà wọ́n mọ́ àpapọ̀.}}"
+  "dividendsNotConverted": "{count, plural, =1{Ìpín èrè 1 ní {currencies} kò ní ìwọ̀n pàṣípààrọ̀, a kò sì kà á mọ́ àpapọ̀.} other{Ìpín èrè {count} ní {currencies} kò ní ìwọ̀n pàṣípààrọ̀, a kò sì kà wọ́n mọ́ àpapọ̀.}}",
+  "signOutTitle": "Ṣé o fẹ́ jáde?",
+  "signOutBody": "Àpò ìdókòwò rẹ, àwọn àkójọ, ìkìlọ̀ iye owó àti àwọn àkọsílẹ̀ rẹ yóò wà nínú àkáǹtì rẹ, a ó sì yọ wọ́n kúrò lórí ẹ̀rọ yìí. Tún wọlé láti rí wọn padà.",
+  "signOutUnsaved": "A kò lè fi àwọn àyípadà kan pamọ́ sínú àkáǹtì rẹ (kò sí ìsopọ̀?). Tí o bá jáde báyìí, wọn yóò sọnù.",
+  "signOutAnyway": "Jáde bẹ́ẹ̀ náà"
 }

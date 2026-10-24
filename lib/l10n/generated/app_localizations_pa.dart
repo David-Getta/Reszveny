@@ -2896,6 +2896,20 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'ਸਾਈਨ ਆਊਟ ਕਰਨਾ ਹੈ?';
+
+  @override
+  String get signOutBody =>
+      'ਤੁਹਾਡਾ ਪੋਰਟਫ਼ੋਲੀਓ, ਸੂਚੀਆਂ, ਕੀਮਤ ਅਲਰਟ ਅਤੇ ਨੋਟ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਰਹਿੰਦੇ ਹਨ ਅਤੇ ਇਸ ਡਿਵਾਈਸ ਤੋਂ ਹਟਾ ਦਿੱਤੇ ਜਾਂਦੇ ਹਨ। ਇਹਨਾਂ ਨੂੰ ਵਾਪਸ ਲੈਣ ਲਈ ਦੁਬਾਰਾ ਸਾਈਨ ਇਨ ਕਰੋ।';
+
+  @override
+  String get signOutUnsaved =>
+      'ਕੁਝ ਤਬਦੀਲੀਆਂ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਸੇਵ ਨਹੀਂ ਹੋ ਸਕੀਆਂ (ਕੋਈ ਕਨੈਕਸ਼ਨ ਨਹੀਂ?)। ਜੇ ਤੁਸੀਂ ਹੁਣ ਸਾਈਨ ਆਊਟ ਕਰਦੇ ਹੋ, ਤਾਂ ਇਹ ਗੁੰਮ ਹੋ ਜਾਣਗੀਆਂ।';
+
+  @override
+  String get signOutAnyway => 'ਫਿਰ ਵੀ ਸਾਈਨ ਆਊਟ ਕਰੋ';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

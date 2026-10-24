@@ -2896,6 +2896,20 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'වරනවාද?';
+
+  @override
+  String get signOutBody =>
+      'ඔබේ කළඹ, ලැයිස්තු, මිල ඇඟවීම් සහ සටහන් ඔබේ ගිණුමේ රැඳී ඇති අතර මෙම උපාංගයෙන් ඉවත් කෙරේ. ඒවා නැවත ලබා ගැනීමට නැවත පුරන්න.';
+
+  @override
+  String get signOutUnsaved =>
+      'සමහර වෙනස්කම් ඔබේ ගිණුමට සුරැකිය නොහැකි විය (සම්බන්ධතාවක් නැද්ද?). ඔබ දැන් වැරුවහොත්, ඒවා නැති වනු ඇත.';
+
+  @override
+  String get signOutAnyway => 'කෙසේ වෙතත් වරන්න';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

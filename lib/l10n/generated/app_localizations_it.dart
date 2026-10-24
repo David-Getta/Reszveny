@@ -2906,6 +2906,20 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Uscire dall’account?';
+
+  @override
+  String get signOutBody =>
+      'Il tuo portafoglio, le liste, gli avvisi di prezzo e le note restano nel tuo account e vengono rimossi da questo dispositivo. Accedi di nuovo per recuperarli.';
+
+  @override
+  String get signOutUnsaved =>
+      'Alcune modifiche non sono state salvate nel tuo account (nessuna connessione?). Se esci ora, andranno perse.';
+
+  @override
+  String get signOutAnyway => 'Esci comunque';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

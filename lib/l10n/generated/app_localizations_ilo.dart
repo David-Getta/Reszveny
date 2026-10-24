@@ -2921,6 +2921,20 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Ag-sign out?';
+
+  @override
+  String get signOutBody =>
+      'Agtalinaed iti accountmo ti portfoliom, dagiti listaam, dagiti alerto ti presio ken dagiti notam, ket maikkatdanto iti daytoy a device. Ag-sign in manen tapno maisubli dagitoy.';
+
+  @override
+  String get signOutUnsaved =>
+      'Adda dagiti panagbalbaliw a saan a naidulin iti accountmo (awan ti koneksion?). No ag-sign out ka ita, mapukawdanto.';
+
+  @override
+  String get signOutAnyway => 'Ag-sign out latta';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

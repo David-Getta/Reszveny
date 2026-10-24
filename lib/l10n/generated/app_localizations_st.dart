@@ -2919,6 +2919,20 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'O batla ho tswa?';
+
+  @override
+  String get signOutBody =>
+      'Potefolio ya hao, manane, ditsebiso tsa theko le dintlha di sala akhaontong ya hao mme di tloswa sesebedisweng sena. Kena hape hore o di fumane hape.';
+
+  @override
+  String get signOutUnsaved =>
+      'Diphetoho tse ding ha di a kgona ho bolokwa akhaontong ya hao (ha ho kgokahano?). Ha o ka tswa jwale, di tla lahleha.';
+
+  @override
+  String get signOutAnyway => 'Tswa leha ho le jwalo';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

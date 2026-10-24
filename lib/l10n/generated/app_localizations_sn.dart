@@ -2909,6 +2909,20 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Unoda kubuda here?';
+
+  @override
+  String get signOutBody =>
+      'Potiforiyo yako, marondedzero, zviziviso zvemutengo nezvinyorwa zvinoramba zviri muakaundi yako uye zvinobviswa pamudziyo uyu. Pinda zvakare kuti uzviwanezve.';
+
+  @override
+  String get signOutUnsaved =>
+      'Dzimwe shanduko hadzina kukwanisa kuchengetwa muakaundi yako (hapana kubatana?). Ukabuda iye zvino, dzicharasika.';
+
+  @override
+  String get signOutAnyway => 'Buda zvakadaro';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

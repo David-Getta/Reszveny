@@ -857,5 +857,9 @@
   "syncTooLarge": "Ne marandukuéra tuichaiterei oñesincroniza hag̃ua nde mbaʼetépe. Embogue jejogua ha ñemu térã jehaipyre ndereikotevẽvéima, ha oñehaʼã jeýta.",
   "noteFull": "Ko acción jehaipyrekuéra henyhẽma, upévare noñembojoajúi ko jehaipy. Embomichĩve jehaipyrekuéra ha ehaʼã jey.",
   "portfolioNoRateFor": "Ndaipóri {symbols} ñemoambue repy.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividendo {currencies}-pe ndorekói ñemoambue repy, upévare noñembopapái opaitépe.} other{{count} dividendo {currencies}-pe ndorekói ñemoambue repy, upévare noñembopapái opaitépe.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividendo {currencies}-pe ndorekói ñemoambue repy, upévare noñembopapái opaitépe.} other{{count} dividendo {currencies}-pe ndorekói ñemoambue repy, upévare noñembopapái opaitépe.}}",
+  "signOutTitle": "¿Resẽsépa?",
+  "signOutBody": "Ne cartera, ne listakuéra, tepy maranduʼi ha ne jehaipyrekuéra opytáta nde mbaʼetépe ha oñembogue ko mbaʼeʼokágui. Eike jey reguereko jey hag̃ua.",
+  "signOutUnsaved": "Oĩ ñemoambue ndaikatúiva oñeñongatu nde mbaʼetépe (¿ndaipóri ñanduti?). Resẽ ramo koʼág̃a, okañýta.",
+  "signOutAnyway": "Esẽ jepe"
 }

@@ -2890,6 +2890,20 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'လက်မှတ်ထိုးထွက်မလား။';
+
+  @override
+  String get signOutBody =>
+      'သင့်ပေါ့ဖိုလီယို၊ စာရင်းများ၊ ဈေးနှုန်း သတိပေးချက်များနှင့် မှတ်စုများသည် သင့်အကောင့်တွင် ဆက်ရှိနေပြီး ဤစက်မှ ဖယ်ရှားပါမည်။ ၎င်းတို့ကို ပြန်ရရန် ထပ်မံ လက်မှတ်ထိုးဝင်ပါ။';
+
+  @override
+  String get signOutUnsaved =>
+      'အပြောင်းအလဲအချို့ကို သင့်အကောင့်တွင် သိမ်း၍ မရပါ (ချိတ်ဆက်မှု မရှိဘူးလား)။ ယခု လက်မှတ်ထိုးထွက်ပါက ၎င်းတို့ ပျောက်သွားပါမည်။';
+
+  @override
+  String get signOutAnyway => 'မည်သို့ပင်ဖြစ်စေ ထွက်ရန်';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

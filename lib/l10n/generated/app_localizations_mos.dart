@@ -2881,6 +2881,20 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'F rat n yi bɩ?';
+
+  @override
+  String get signOutBody =>
+      'Fo portfey, fo listɛ, fo koosg gũusgo la fo gʋlsgo na n pa fo kõntã pʋgẽ, la b na n yiis-b aparɛy kãngã zugu. Le kẽ n paam-b lame.';
+
+  @override
+  String get signOutUnsaved =>
+      'Toeeg-toeeg kẽer pa tõog n bilg fo kõntã pʋgẽ ye (kõneksõ ka be ye?). F sã n yi masã, b na n bõrame.';
+
+  @override
+  String get signOutAnyway => 'Yi baa ne rẽ';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

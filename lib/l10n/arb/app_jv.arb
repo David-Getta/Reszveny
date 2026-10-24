@@ -857,5 +857,9 @@
   "syncTooLarge": "Data sampeyan kegedhèn kanggo disinkronaké karo akun sampeyan. Busak transaksi utawa cathetan sing wis ora dibutuhaké, banjur bakal dicoba manèh.",
   "noteFull": "Cathetan kanggo saham iki wis kebak, mula entri iki ora ditambahake. Cekakna cathetane banjur coba maneh.",
   "portfolioNoRateFor": "Ora ana kurs kanggo {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividen ing {currencies} ora duwe kurs lan ora diétung ing total.} other{{count} dividen ing {currencies} ora duwe kurs lan ora diétung ing total.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividen ing {currencies} ora duwe kurs lan ora diétung ing total.} other{{count} dividen ing {currencies} ora duwe kurs lan ora diétung ing total.}}",
+  "signOutTitle": "Metu saka akun?",
+  "signOutBody": "Portofolio, dhaptar, pèngetan rega, lan cathetan sampeyan tetep ana ing akun sampeyan lan dibusak saka piranti iki. Mlebu manèh kanggo mbalèkaké.",
+  "signOutUnsaved": "Sawetara owah-owahan ora bisa disimpen ing akun sampeyan (ora ana sambungan?). Yen sampeyan metu saiki, owah-owahan kasebut bakal ilang.",
+  "signOutAnyway": "Tetep metu"
 }

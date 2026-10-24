@@ -857,5 +857,9 @@
   "syncTooLarge": "Məlumatlarınız hesabınızla sinxronlaşdırmaq üçün çox böyükdür. Artıq lazım olmayan əməliyyatları və ya qeydləri silin, yenidən cəhd ediləcək.",
   "noteFull": "Bu səhmin qeydləri doludur, ona görə də bu yazı əlavə olunmadı. Qeydləri qısaldın və yenidən cəhd edin.",
   "portfolioNoRateFor": "{symbols} üçün məzənnə yoxdur.",
-  "dividendsNotConverted": "{count, plural, =1{{currencies} ilə ödənilmiş 1 dividend üçün məzənnə yoxdur, ona görə də cəmlərə daxil edilmir.} other{{currencies} ilə ödənilmiş {count} dividend üçün məzənnə yoxdur, ona görə də cəmlərə daxil edilmir.}}"
+  "dividendsNotConverted": "{count, plural, =1{{currencies} ilə ödənilmiş 1 dividend üçün məzənnə yoxdur, ona görə də cəmlərə daxil edilmir.} other{{currencies} ilə ödənilmiş {count} dividend üçün məzənnə yoxdur, ona görə də cəmlərə daxil edilmir.}}",
+  "signOutTitle": "Hesabdan çıxılsın?",
+  "signOutBody": "Portfeliniz, siyahılarınız, qiymət bildirişləriniz və qeydləriniz hesabınızda qalır və bu cihazdan silinir. Onları geri qaytarmaq üçün yenidən daxil olun.",
+  "signOutUnsaved": "Bəzi dəyişikliklər hesabınızda saxlanıla bilmədi (bağlantı yoxdur?). İndi çıxış etsəniz, onlar itəcək.",
+  "signOutAnyway": "Yenə də çıxış et"
 }

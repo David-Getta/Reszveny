@@ -857,5 +857,9 @@
   "syncTooLarge": "Je gegevens zijn te groot om met je account te synchroniseren. Verwijder transacties of notities die je niet meer nodig hebt, dan wordt het opnieuw geprobeerd.",
   "noteFull": "De notitie bij dit aandeel is vol, dus deze tekst is niet toegevoegd. Maak de notitie korter en probeer het opnieuw.",
   "portfolioNoRateFor": "Geen wisselkoers voor {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividend in {currencies} heeft geen wisselkoers en telt niet mee in de totalen.} other{{count} dividenden in {currencies} hebben geen wisselkoers en tellen niet mee in de totalen.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividend in {currencies} heeft geen wisselkoers en telt niet mee in de totalen.} other{{count} dividenden in {currencies} hebben geen wisselkoers en tellen niet mee in de totalen.}}",
+  "signOutTitle": "Uitloggen?",
+  "signOutBody": "Je portefeuille, lijsten, koersalerts en notities blijven in je account en worden van dit apparaat verwijderd. Log opnieuw in om ze terug te krijgen.",
+  "signOutUnsaved": "Sommige wijzigingen konden niet in je account worden opgeslagen (geen verbinding?). Als je nu uitlogt, gaan ze verloren.",
+  "signOutAnyway": "Toch uitloggen"
 }

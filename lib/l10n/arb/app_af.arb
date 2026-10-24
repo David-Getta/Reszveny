@@ -857,5 +857,9 @@
   "syncTooLarge": "Jou data is te groot om met jou rekening te sinkroniseer. Vee transaksies of notas uit wat jy nie meer nodig het nie, en dit sal weer probeer.",
   "noteFull": "Die aandeel se notas is vol, dus is hierdie inskrywing nie bygevoeg nie. Kort die notas in en probeer weer.",
   "portfolioNoRateFor": "Geen wisselkoers vir {symbols} nie.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividend in {currencies} het geen wisselkoers nie en word nie by die totale ingereken nie.} other{{count} dividende in {currencies} het geen wisselkoers nie en word nie by die totale ingereken nie.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividend in {currencies} het geen wisselkoers nie en word nie by die totale ingereken nie.} other{{count} dividende in {currencies} het geen wisselkoers nie en word nie by die totale ingereken nie.}}",
+  "signOutTitle": "Meld af?",
+  "signOutBody": "Jou portefeulje, lyste, pryswaarskuwings en notas bly in jou rekening en word van hierdie toestel verwyder. Meld weer aan om dit terug te kry.",
+  "signOutUnsaved": "Sommige veranderinge kon nie in jou rekening gestoor word nie (geen verbinding nie?). As jy nou afmeld, gaan dit verlore.",
+  "signOutAnyway": "Meld tog af"
 }

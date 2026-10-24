@@ -857,5 +857,9 @@
   "syncTooLarge": "Your data too big to sync with your account. Delete di buy and sell or notes wey you no need again, and e go try again.",
   "noteFull": "Di note for dis stock don full, so we no add dis one. Make di note short small and try again.",
   "portfolioNoRateFor": "{symbols} no get exchange rate.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividend for {currencies} no get exchange rate, so e no dey inside di totals.} other{{count} dividends for {currencies} no get exchange rate, so dem no dey inside di totals.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividend for {currencies} no get exchange rate, so e no dey inside di totals.} other{{count} dividends for {currencies} no get exchange rate, so dem no dey inside di totals.}}",
+  "signOutTitle": "You wan sign out?",
+  "signOutBody": "Your portfolio, lists, price alerts and notes go still dey your account, but we go comot dem from dis device. Sign in again to get dem back.",
+  "signOutUnsaved": "Some changes no fit save for your account (no connection?). If you sign out now, dem go loss.",
+  "signOutAnyway": "Sign out anyhow"
 }

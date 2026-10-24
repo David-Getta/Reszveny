@@ -2949,6 +2949,20 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Одјавити се?';
+
+  @override
+  String get signOutBody =>
+      'Ваш портфолио, листе, обавештења о цени и белешке остају на вашем налогу и уклањају се са овог уређаја. Пријавите се поново да бисте их вратили.';
+
+  @override
+  String get signOutUnsaved =>
+      'Неке измене није било могуће сачувати на вашем налогу (нема везе?). Ако се сада одјавите, биће изгубљене.';
+
+  @override
+  String get signOutAnyway => 'Ипак се одјави';
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

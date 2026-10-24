@@ -2917,6 +2917,20 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Mag-sign out?';
+
+  @override
+  String get signOutBody =>
+      'Ang imo portfolio, mga listahan, mga alerto sa presyo kag mga nota magapabilin sa imo account kag kuhaon sa sini nga device. Mag-sign in liwat para mabawi ini.';
+
+  @override
+  String get signOutUnsaved =>
+      'Wala ma-save sa imo account ang iban nga mga pagbag-o (wala sing koneksyon?). Kon mag-sign out ka subong, madula ini.';
+
+  @override
+  String get signOutAnyway => 'Mag-sign out gihapon';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

@@ -2889,6 +2889,20 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Đăng xuất?';
+
+  @override
+  String get signOutBody =>
+      'Danh mục, danh sách, cảnh báo giá và ghi chú của bạn vẫn được giữ trong tài khoản và sẽ bị xóa khỏi thiết bị này. Đăng nhập lại để lấy lại chúng.';
+
+  @override
+  String get signOutUnsaved =>
+      'Một số thay đổi chưa thể lưu vào tài khoản của bạn (không có kết nối?). Nếu đăng xuất bây giờ, chúng sẽ bị mất.';
+
+  @override
+  String get signOutAnyway => 'Vẫn đăng xuất';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

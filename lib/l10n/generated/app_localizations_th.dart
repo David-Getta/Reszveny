@@ -2864,6 +2864,20 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'ออกจากระบบหรือไม่';
+
+  @override
+  String get signOutBody =>
+      'พอร์ตโฟลิโอ รายการ การแจ้งเตือนราคา และบันทึกของคุณจะยังอยู่ในบัญชี และจะถูกลบออกจากอุปกรณ์นี้ ลงชื่อเข้าใช้อีกครั้งเพื่อเรียกคืน';
+
+  @override
+  String get signOutUnsaved =>
+      'การเปลี่ยนแปลงบางส่วนบันทึกลงในบัญชีของคุณไม่ได้ (ไม่มีการเชื่อมต่อใช่ไหม) หากออกจากระบบตอนนี้ การเปลี่ยนแปลงเหล่านั้นจะหายไป';
+
+  @override
+  String get signOutAnyway => 'ออกจากระบบเลย';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter/widgets.dart' show AppLifecycleListener;
+import 'package:flutter/widgets.dart' show AppLifecycleListener, StringCharacters;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/app_preferences.dart';
@@ -76,6 +76,22 @@ class SyncService extends ChangeNotifier {
   DateTime? get lastSynced => _last;
   bool get busy => _busy;
   bool get failed => _failed;
+
+  /// Van-e még fel nem töltött helyi változás.
+  bool get dirty => _dirty;
+
+  /// A futó szinkron vége (kijelentkezés előtt ezt várjuk meg).
+  Completer<void>? _run;
+
+  /// Kijelentkezés előtt: a futó szinkron megvárása, majd a még fel nem töltött
+  /// változások felküldése. Igaz, ha minden fent van a fiókban.
+  Future<bool> flush() async {
+    for (var r = _run; r != null; r = _run) {
+      await r.future;
+    }
+    if (_dirty && account.isSignedIn) await syncNow();
+    return !_dirty;
+  }
 
   /// A legutóbbi feltöltést a szerver túl nagynak találta (413): az újrapróbálás
   /// magától nem segít, a felület megmondja, mit lehet tenni.
@@ -220,7 +236,16 @@ class SyncService extends ChangeNotifier {
 
   /// Két csomag uniója: a helyi elemek elöl, azonos azonosítónál a később
   /// javított (egyezésnél vagy javítás nélkül a helyi) marad; jegyzetnél az újabb.
-  static Map<String, dynamic> merge(Map<String, dynamic> local, Map<String, dynamic> remote) {
+  ///
+  /// [firstSignIn]: az eszköz első belépése egy fiókba, amelyben már van adat. Ilyenkor
+  /// a két oldal egymástól függetlenül készült: a kétszer begépelt (azonos tartalmú)
+  /// tétel csak egyszer marad, a két különböző jegyzet egymás után, a készpénznél, a
+  /// célaránynál és a céloknál pedig a fiók értéke marad (nem a frissebb helyi).
+  static Map<String, dynamic> merge(
+    Map<String, dynamic> local,
+    Map<String, dynamic> remote, {
+    bool firstSignIn = false,
+  }) {
     DateTime edited(Map<String, dynamic> e) => parseStamp(e['edited']) ?? DateTime(0);
     // Az újabb változat: a javítás vagy a tickerváltás ideje, amelyik későbbi.
     DateTime changed(Map<String, dynamic> e) => switch (parseStamp(e['renamed'])) {
@@ -255,7 +280,17 @@ class SyncService extends ChangeNotifier {
       final r = StockNote.fromJson(notesR[e.key]);
       final l = StockNote.fromJson(e.value);
       if (l == null) continue;
-      if (r == null || !r.updatedAt.isAfter(l.updatedAt)) mergedNotes[e.key] = e.value;
+      if (firstSignIn && r != null && !r.text.contains(l.text.trim())) {
+        // Két külön írt jegyzet: egyik sem vész el (a fiókbeli elöl).
+        final text = l.text.contains(r.text.trim()) ? l.text : '${r.text.trimRight()}\n\n${l.text}';
+        final newer = l.updatedAt.isAfter(r.updatedAt) ? l.updatedAt : r.updatedAt;
+        mergedNotes[e.key] = StockNote(
+          text: text.characters.take(NotesStore.maxLength).toString(),
+          updatedAt: newer,
+        ).toJson();
+      } else if (r == null || (!firstSignIn && !r.updatedAt.isAfter(l.updatedAt))) {
+        mergedNotes[e.key] = e.value;
+      }
     }
     // A törölt jegyzet csak akkor marad, ha a törlés után írták.
     final notesDeleted = unionTombstones(local['notes_deleted'], remote['notes_deleted']);
@@ -308,7 +343,7 @@ class SyncService extends ChangeNotifier {
         _ => false,
       },
     );
-    final cash = mergeCash(local, remote);
+    final cash = mergeCash(local, remote, preferRemote: firstSignIn);
     // Kedvencek: a két oldal uniója, kivéve amit levettek, és utána nem vették fel újra.
     final favRemoved = unionTombstones(local['favorites_removed'], remote['favorites_removed']);
     final favAdded = unionTombstones(local['favorites_added'], remote['favorites_added']);
@@ -325,8 +360,11 @@ class SyncService extends ChangeNotifier {
     favRemoved.removeWhere((f, _) => favorites.contains(f));
     favAdded.removeWhere((f, _) => !favorites.contains(f));
     final lists = _mergeLists(local, remote);
-    final lots = byId(local['lots'], remote['lots']);
-    final dividends = byId(local['dividends'], remote['dividends']);
+    final (localLots, localDividends) = firstSignIn
+        ? (_withoutTwins(local['lots'], remote['lots']), _withoutTwins(local['dividends'], remote['dividends']))
+        : (local['lots'], local['dividends']);
+    final lots = byId(localLots, remote['lots']);
+    final dividends = byId(localDividends, remote['dividends']);
     final splits = _uniqueSplits(byId(local['splits'], remote['splits']));
     // A megmaradt (a törlés után visszaállított vagy javított) tétel jelzése
     // eltűnik, hogy később (pl. egy régebbi app vagy egy mentés után) ne törölje.
@@ -362,7 +400,7 @@ class SyncService extends ChangeNotifier {
       'watch_lists': lists.lists,
       'lists_removed': tombstonesJson(lists.removed),
       'lists_added': {for (final e in lists.added.entries) e.key: e.value.toUtc().toIso8601String()},
-      ...mergeTargets(local, remote),
+      ...mergeTargets(local, remote, preferRemote: firstSignIn),
       // Kedvencenként a felvételi nap: azonos tickernél a helyi marad (mint a többi tételnél) –
       // így egy levétel és újrafelvétel nem veszik el a másik eszköz régebbi napja miatt.
       'favorite_since': {
@@ -372,7 +410,7 @@ class SyncService extends ChangeNotifier {
         }.entries)
           e.key: e.value.toIso8601String().substring(0, 10),
       },
-      'goals': mergeGoals(local['goals'], remote['goals']),
+      'goals': mergeGoals(local['goals'], remote['goals'], preferRemote: firstSignIn),
       'lots': lots,
       'dividends': dividends,
       'splits': splits,
@@ -389,17 +427,19 @@ class SyncService extends ChangeNotifier {
   /// Készpénz: pénznemenként az újabb módosítás nyer – a törlés is, így egy másik
   /// készülék régebbi egyenlege nem éleszti újra. Időbélyeg nélkül (régi csomag)
   /// a helyi nyer, és ami csak a távoliban van, megmarad.
+  /// [preferRemote] (első belépés): ahol a fióknak van egyenlege, az marad.
   static ({Map<String, double> cash, Map<String, String> at}) mergeCash(
     Map<String, dynamic> local,
-    Map<String, dynamic> remote,
-  ) {
+    Map<String, dynamic> remote, {
+    bool preferRemote = false,
+  }) {
     final lc = PortfolioStore.parseCashMap(local['cash']), rc = PortfolioStore.parseCashMap(remote['cash']);
     final la = PortfolioStore.parseCashAt(local['cash_at']), ra = PortfolioStore.parseCashAt(remote['cash_at']);
     final cash = <String, double>{}, at = <String, String>{};
     for (final c in {...lc.keys, ...rc.keys, ...la.keys, ...ra.keys}) {
       final lt = la[c], rt = ra[c];
-      final remoteWins = rt != null && (lt == null || rt.isAfter(lt));
-      final v = lt == null && rt == null ? (lc[c] ?? rc[c]) : (remoteWins ? rc[c] : lc[c]);
+      final remoteWins = (preferRemote && rc.containsKey(c)) || (rt != null && (lt == null || rt.isAfter(lt)));
+      final v = lt == null && rt == null && !remoteWins ? (lc[c] ?? rc[c]) : (remoteWins ? rc[c] : lc[c]);
       if (v != null) cash[c] = v;
       final newest = remoteWins ? rt : (lt ?? rt);
       if (newest != null) at[c] = newest.toIso8601String();
@@ -409,30 +449,71 @@ class SyncService extends ChangeNotifier {
 
   /// Célarányok: az újabb (időbélyeggel) teljes beállítás nyer, a törlés is; ha
   /// egyik oldalnak sincs ideje (régi csomag), tickerenként a helyi elöl.
-  static Map<String, dynamic> mergeTargets(Map<String, dynamic> local, Map<String, dynamic> remote) {
+  /// [preferRemote] (első belépés): ha a fióknak van beállítása, az marad.
+  static Map<String, dynamic> mergeTargets(
+    Map<String, dynamic> local,
+    Map<String, dynamic> remote, {
+    bool preferRemote = false,
+  }) {
     final lt = DateTime.tryParse('${local['targets_at'] ?? ''}'),
         rt = DateTime.tryParse('${remote['targets_at'] ?? ''}');
     final l = AppPreferences.parseTargets(local['targets']), r = AppPreferences.parseTargets(remote['targets']);
-    final remoteWins = rt != null && (lt == null || rt.isAfter(lt));
+    final remoteWins = (preferRemote && r.isNotEmpty) || (rt != null && (lt == null || rt.isAfter(lt)));
     return {
       'targets': remoteWins ? r : (lt != null ? l : {...r, ...l}),
-      'targets_at': ?(remoteWins ? rt : lt)?.toUtc().toIso8601String(),
+      'targets_at': ?(remoteWins ? (rt ?? lt) : lt)?.toUtc().toIso8601String(),
     };
   }
 
   /// Célok (portfólió-célérték, havi osztalékcél): fajtánként az újabb módosítás
   /// nyer – a törlés is, így egy másik készülék régebbi célja nem éled újra.
   /// Időbélyeg nélkül (régi csomag) a helyi nyer, ha van.
-  static Map<String, dynamic> mergeGoals(Object? local, Object? remote) {
+  /// [preferRemote] (első belépés): fajtánként a fiók célja marad, ha van.
+  static Map<String, dynamic> mergeGoals(Object? local, Object? remote, {bool preferRemote = false}) {
     final l = local is Map ? local : const {}, r = remote is Map ? remote : const {};
     final lp = AppPreferences.parseGoals(l), rp = AppPreferences.parseGoals(r);
     return {
       for (final kind in {...lp.keys, ...rp.keys})
         kind: switch ((lp[kind]?.at, rp[kind]?.at)) {
+          _ when preferRemote && rp[kind] != null => r[kind],
           (final lt, final rt?) when lt == null || rt.isAfter(lt) => r[kind],
           _ => l[kind] ?? r[kind],
         },
     };
+  }
+
+  /// A helyi tételek a fiókban már meglévő (más azonosítójú, de azonos tartalmú)
+  /// párjuk nélkül: első belépéskor egy kétszer begépelt vétel ne duplázza a pozíciót.
+  /// Darabra párosít – két azonos helyi tételből csak annyi esik ki, ahány a fiókban van.
+  static List<Map<String, dynamic>> _withoutTwins(Object? local, Object? remote) {
+    String content(Map<String, dynamic> e) {
+      final keys = e.keys.where((k) => k != 'id' && k != 'edited' && k != 'renamed').toList()..sort();
+      // Számként egységesen (egy régebbi app 10-et írhatott 10.0 helyett).
+      return jsonEncode([
+        for (final k in keys) [k, e[k] is num ? (e[k] as num).toDouble() : e[k]],
+      ]);
+    }
+
+    final remoteList = _maps(remote), localList = _maps(local);
+    final ids = {for (final r in remoteList) '${r['id']}'};
+    final spare = <String, int>{};
+    for (final r in remoteList) {
+      spare.update(content(r), (n) => n + 1, ifAbsent: () => 1);
+    }
+    // Az azonos azonosítójú (már szinkronizált) tétel a saját párja.
+    for (final l in localList) {
+      if (ids.contains('${l['id']}')) spare.update(content(l), (n) => n - 1, ifAbsent: () => -1);
+    }
+    final kept = <Map<String, dynamic>>[];
+    for (final l in localList) {
+      final k = content(l);
+      if (!ids.contains('${l['id']}') && (spare[k] ?? 0) > 0) {
+        spare[k] = spare[k]! - 1;
+        continue;
+      }
+      kept.add(l);
+    }
+    return kept;
   }
 
   /// Felaprózások: két eszközön rögzítve más az azonosító, de ugyanaz (ticker, nap,
@@ -672,11 +753,13 @@ class SyncService extends ChangeNotifier {
   }
 
   /// Feltöltés csak akkor, ha a szerveren még a [base] változat van (különben 409).
-  Future<void> _push(Map<String, dynamic> data, {required DateTime? base}) async {
+  /// Az [email] fiókjába: ha közben kijelentkeztek, a csomag akkor is az övé lett
+  /// (a következő, másik fiókos belépés így nem fésüli bele az új fiókba).
+  Future<void> _push(Map<String, dynamic> data, {required DateTime? base, required String? email}) async {
     final changes = _changes;
     final at = await backend.putSync(data, conditional: true, base: base);
     _last = at;
-    _syncedEmail = account.email;
+    _syncedEmail = email;
     // A feltöltés közben történt változás még nem ment fel: piszkos marad, és
     // hamarosan újra szinkronizálunk.
     if (_changes == changes) {
@@ -686,7 +769,7 @@ class SyncService extends ChangeNotifier {
     }
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_lastKey, at.toIso8601String());
-    await prefs.setString(_emailKey, account.email ?? '');
+    await prefs.setString(_emailKey, email ?? '');
   }
 
   /// Szinkron most: letöltés, szükség szerint összefésülés, feltöltés. Ha a
@@ -706,6 +789,7 @@ class SyncService extends ChangeNotifier {
     }
     _timer?.cancel();
     _busy = true;
+    final run = _run = Completer<void>();
     notifyListeners();
     try {
       for (var attempt = 1; ; attempt++) {
@@ -735,6 +819,8 @@ class SyncService extends ChangeNotifier {
     } finally {
       _busy = false;
       _ranAt = DateTime.now();
+      _run = null;
+      run.complete();
       notifyListeners();
     }
   }
@@ -783,7 +869,11 @@ class SyncService extends ChangeNotifier {
   };
 
   Future<void> _syncOnce() async {
+    // A fiók, amelyhez ez a kör tartozik: ha közben kilépnek (vagy másik fiókba lépnek),
+    // a válasz már nem érvényes – se a készülékre, se a másik fiókba nem kerül.
+    final email = account.email;
     final remote = await backend.getSync();
+    if (account.email != email) return;
     // A letöltés alatt indult egy import: most nem cserélünk (a köteg végén újra).
     if (portfolio.batching) {
       _rerun = true;
@@ -795,25 +885,25 @@ class SyncService extends ChangeNotifier {
       // Másik fiók: a készüléken lévő adat az előzőé (ott megvan), nem kerül az újba.
       // A készülék az új fiók adatait veszi át; üres fióknál üresen indul.
       await _apply({...emptyPackage, ...?data});
-      await _push(snapshot(), base: base);
+      if (account.email == email) await _push(snapshot(), base: base, email: email);
       return;
     }
     final firstHere = _syncedEmail == null;
     if (data == null) {
-      await _push(snapshot(), base: null);
+      await _push(snapshot(), base: null, email: email);
     } else if (firstHere || (_dirty && base != null && _last != null && !base.isAtSameMomentAs(_last!))) {
       // Első belépés ezen az eszközön, vagy mindkét oldalon volt változás.
-      await _apply(merge(snapshot(), data));
+      await _apply(merge(snapshot(), data, firstSignIn: firstHere));
       // A mentés alatt tett helyi változás is felmegy: a mostani állapot, nem az összefésült.
-      await _push(snapshot(), base: base);
+      if (account.email == email) await _push(snapshot(), base: base, email: email);
     } else if (base != null && (_last == null || !base.isAtSameMomentAs(_last!))) {
       final kept = await _apply(data);
       _last = base;
       (await SharedPreferences.getInstance()).setString(_lastKey, base.toIso8601String());
       // Régebbi app számla vagy díj nélkül töltötte vissza a tételeket: a megtartottak visszamennek.
-      if (kept) await _push(snapshot(), base: base);
+      if (kept && account.email == email) await _push(snapshot(), base: base, email: email);
     } else if (_dirty) {
-      await _push(snapshot(), base: base);
+      await _push(snapshot(), base: base, email: email);
     }
   }
 }

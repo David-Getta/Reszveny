@@ -857,5 +857,9 @@
   "syncTooLarge": "Data yako ni kubwa mno kusawazishwa na akaunti yako. Futa miamala au madokezo usiyoyahitaji tena, kisha itajaribu tena.",
   "noteFull": "Dokezo la hisa hii limejaa, kwa hivyo ingizo hili halikuongezwa. Fupisha dokezo kisha ujaribu tena.",
   "portfolioNoRateFor": "Hakuna kiwango cha ubadilishaji kwa {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Gawio 1 kwa {currencies} halina kiwango cha ubadilishaji na halijajumuishwa kwenye jumla.} other{Magawio {count} kwa {currencies} hayana kiwango cha ubadilishaji na hayajajumuishwa kwenye jumla.}}"
+  "dividendsNotConverted": "{count, plural, =1{Gawio 1 kwa {currencies} halina kiwango cha ubadilishaji na halijajumuishwa kwenye jumla.} other{Magawio {count} kwa {currencies} hayana kiwango cha ubadilishaji na hayajajumuishwa kwenye jumla.}}",
+  "signOutTitle": "Ungependa kutoka?",
+  "signOutBody": "Jalada lako la hisa, orodha, arifa za bei na madokezo hubaki kwenye akaunti yako na huondolewa kwenye kifaa hiki. Ingia tena ili uvirejeshe.",
+  "signOutUnsaved": "Baadhi ya mabadiliko hayakuweza kuhifadhiwa kwenye akaunti yako (hakuna muunganisho?). Ukitoka sasa, yatapotea.",
+  "signOutAnyway": "Toka hata hivyo"
 }

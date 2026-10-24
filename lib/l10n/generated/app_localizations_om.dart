@@ -2913,6 +2913,20 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Ba\'uu barbaaddaa?';
+
+  @override
+  String get signOutBody =>
+      'Poortfooliyoon, tarreewwan, akeekkachiisni gatii fi yaadannoon kee herrega kee keessatti hafu, meeshaa kana irraa immoo ni haqamu. Isaan deebifachuuf irra deebi\'ii seeni.';
+
+  @override
+  String get signOutUnsaved =>
+      'Jijjiiramoonni tokko tokko herrega kee keessatti olkaa\'amuu hin dandeenye (walqunnamtiin hin jiruu?). Amma yoo baate, ni badu.';
+
+  @override
+  String get signOutAnyway => 'Ta\'us ba\'i';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

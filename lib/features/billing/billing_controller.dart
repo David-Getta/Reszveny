@@ -18,6 +18,8 @@ class BillingController extends ChangeNotifier {
     required this.entitlements,
     this.verifier,
     this.onPurchased,
+    this.owner,
+    this.generation,
     this.restoreGrace = const Duration(seconds: 4),
   }) {
     _sub = billing.events.listen(_onEvent);
@@ -32,6 +34,15 @@ class BillingController extends ChangeNotifier {
 
   /// Sikeres vásárlás után (statisztikához).
   final void Function()? onPurchased;
+
+  /// A belépett fiók e-mail címe (névtelenül üres): a függő bizonylat csak annak a
+  /// fióknak küldhető újra, amelyikben vették – kilépés és másik fiókos belépés után
+  /// ne a másik fiók kapja meg.
+  final String Function()? owner;
+
+  /// A fiókváltások számlálója: ha az ellenőrzés alatt kiléptek, a válasz (a régi
+  /// fiók csomagja) nem kerül erre a készülékre.
+  final int Function()? generation;
 
   String? _verifyError;
 
@@ -174,8 +185,10 @@ class BillingController extends ChangeNotifier {
   /// Ellenőrzés a szerveren. Ha a szerver döntött (jóváírta vagy érvénytelennek
   /// találta), a bizonylat törlődik a várólistáról; ha nem érhető el, marad.
   Future<_Verified> _verify(PurchaseVerifier v, BillingEvent e) async {
+    final gen = generation?.call();
     try {
-      await entitlements.replace(await v(e));
+      final granted = await v(e);
+      if (gen == generation?.call()) await entitlements.replace(granted);
       _verifyError = null;
       await _forget(e);
       return _Verified.ok;
@@ -202,7 +215,12 @@ class BillingController extends ChangeNotifier {
   Future<void> retryPending() async {
     final v = verifier;
     if (v == null) return;
+    final me = owner?.call() ?? '';
     for (final p in await _pending()) {
+      // Egy másik fiókban vett csomag megvárja, amíg az a fiók újra belép. A névtelenül
+      // vett az épp belépett fiókhoz tartozik (belépéskor a névtelen fiók beleolvad).
+      final of = p['owner'] as String? ?? '';
+      if (of.isNotEmpty && of != me) continue;
       await _verify(
         v,
         BillingEvent(
@@ -239,14 +257,14 @@ class BillingController extends ChangeNotifier {
   static Future<void> _serial(Future<void> Function() body) =>
       _pendingQueue = _pendingQueue.then((_) => body()).catchError((Object _) {});
 
-  static Future<void> _remember(BillingEvent e) => _serial(() async {
+  Future<void> _remember(BillingEvent e) => _serial(() async {
     final data = e.verificationData;
     if (data == null || data.isEmpty) return;
     final items = await _pending();
     if (items.any((m) => m['data'] == data)) return;
     await _savePending([
       ...items,
-      {'product_id': e.productId, 'platform': e.platform, 'data': data},
+      {'product_id': e.productId, 'platform': e.platform, 'data': data, 'owner': owner?.call() ?? ''},
     ]);
   });
 

@@ -857,5 +857,9 @@
   "syncTooLarge": "Deine Daten sind zu groß, um mit deinem Konto synchronisiert zu werden. Lösche Transaktionen oder Notizen, die du nicht mehr brauchst, dann wird es erneut versucht.",
   "noteFull": "Die Notizen zu dieser Aktie sind voll, deshalb wurde dieser Eintrag nicht hinzugefügt. Kürze die Notizen und versuche es erneut.",
   "portfolioNoRateFor": "Kein Wechselkurs für {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 Dividende in {currencies} hat keinen Wechselkurs und ist nicht in den Summen enthalten.} other{{count} Dividenden in {currencies} haben keinen Wechselkurs und sind nicht in den Summen enthalten.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 Dividende in {currencies} hat keinen Wechselkurs und ist nicht in den Summen enthalten.} other{{count} Dividenden in {currencies} haben keinen Wechselkurs und sind nicht in den Summen enthalten.}}",
+  "signOutTitle": "Abmelden?",
+  "signOutBody": "Dein Portfolio, deine Listen, Kursalarme und Notizen bleiben in deinem Konto und werden von diesem Gerät entfernt. Melde dich wieder an, um sie zurückzubekommen.",
+  "signOutUnsaved": "Einige Änderungen konnten nicht in deinem Konto gespeichert werden (keine Verbindung?). Wenn du dich jetzt abmeldest, gehen sie verloren.",
+  "signOutAnyway": "Trotzdem abmelden"
 }

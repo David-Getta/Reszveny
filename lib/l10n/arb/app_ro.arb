@@ -857,5 +857,9 @@
   "syncTooLarge": "Datele tale sunt prea mari pentru a fi sincronizate cu contul tău. Șterge tranzacțiile sau notițele de care nu mai ai nevoie și se va reîncerca.",
   "noteFull": "Notița acestei acțiuni este plină, așa că această intrare nu a fost adăugată. Scurtează notița și încearcă din nou.",
   "portfolioNoRateFor": "Nu există curs de schimb pentru {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividend în {currencies} nu are curs de schimb și nu este inclus în totaluri.} other{Dividendele în {currencies} fără curs de schimb nu sunt incluse în totaluri: {count}.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividend în {currencies} nu are curs de schimb și nu este inclus în totaluri.} other{Dividendele în {currencies} fără curs de schimb nu sunt incluse în totaluri: {count}.}}",
+  "signOutTitle": "Te deconectezi?",
+  "signOutBody": "Portofoliul, listele, alertele de preț și notițele tale rămân în cont și sunt șterse de pe acest dispozitiv. Conectează-te din nou ca să le recuperezi.",
+  "signOutUnsaved": "Unele modificări nu au putut fi salvate în cont (nicio conexiune?). Dacă te deconectezi acum, se vor pierde.",
+  "signOutAnyway": "Deconectează-te oricum"
 }

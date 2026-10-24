@@ -857,5 +857,9 @@
   "syncTooLarge": "Sa xibaar yi dañoo bari lool, mënuñu leen a yemale ak sa kont. Far jënd ak jaay walla notu yi nga soxlaatul, kon dina jéemaat.",
   "noteFull": "Notu aksiyoŋ bii fees na, kon yokkunu bind bii. Gàttal notu bi te jéemaatal.",
   "portfolioNoRateFor": "Amul weccit ngir {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividande ci {currencies} amul weccit, kon boolewuñu ko ci mboolem yi.} other{{count} dividande ci {currencies} amuñu weccit, kon boolewuñu leen ci mboolem yi.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividande ci {currencies} amul weccit, kon boolewuñu ko ci mboolem yi.} other{{count} dividande ci {currencies} amuñu weccit, kon boolewuñu leen ci mboolem yi.}}",
+  "signOutTitle": "Génn ci kont bi?",
+  "signOutBody": "Sa aksiyoŋ yi, sa limm yi, sa artu njëg yi ak sa notu yi dañuy des ci sa kont, waaye dinañu leen far ci masin bii. Duggaatal ngir gisaat leen.",
+  "signOutUnsaved": "Am na ay coppite yu ñu mënul denc ci sa kont (amul internet?). Soo génnee leegi, dinañu réer.",
+  "signOutAnyway": "Génn rekk"
 }

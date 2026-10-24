@@ -857,5 +857,9 @@
   "syncTooLarge": "Done ou yo twò gwo pou senkronize ak kont ou. Efase tranzaksyon oswa nòt ou pa bezwen ankò, epi l ap eseye ankò.",
   "noteFull": "Nòt aksyon sa a plen, kidonk antre sa a pa t ajoute. Fè nòt yo pi kout epi eseye ankò.",
   "portfolioNoRateFor": "Pa gen to chanj pou {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividann nan {currencies} pa gen to chanj, kidonk li pa konte nan total yo.} other{{count} dividann nan {currencies} pa gen to chanj, kidonk yo pa konte nan total yo.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividann nan {currencies} pa gen to chanj, kidonk li pa konte nan total yo.} other{{count} dividann nan {currencies} pa gen to chanj, kidonk yo pa konte nan total yo.}}",
+  "signOutTitle": "Dekonekte?",
+  "signOutBody": "Pòtfèy ou, lis ou yo, alèt pri ou yo ak nòt ou yo rete nan kont ou, epi y ap retire yo sou aparèy sa a. Konekte ankò pou w rekipere yo.",
+  "signOutUnsaved": "Gen kèk chanjman ki pa t ka anrejistre nan kont ou (pa gen koneksyon?). Si ou dekonekte kounye a, y ap pèdi.",
+  "signOutAnyway": "Dekonekte kanmenm"
 }

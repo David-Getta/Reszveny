@@ -2890,6 +2890,20 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Génn ci kont bi?';
+
+  @override
+  String get signOutBody =>
+      'Sa aksiyoŋ yi, sa limm yi, sa artu njëg yi ak sa notu yi dañuy des ci sa kont, waaye dinañu leen far ci masin bii. Duggaatal ngir gisaat leen.';
+
+  @override
+  String get signOutUnsaved =>
+      'Am na ay coppite yu ñu mënul denc ci sa kont (amul internet?). Soo génnee leegi, dinañu réer.';
+
+  @override
+  String get signOutAnyway => 'Génn rekk';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

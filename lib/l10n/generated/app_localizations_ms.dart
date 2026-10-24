@@ -2900,6 +2900,20 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Log keluar?';
+
+  @override
+  String get signOutBody =>
+      'Portfolio, senarai, amaran harga dan nota anda kekal dalam akaun anda dan dialih keluar daripada peranti ini. Log masuk semula untuk mendapatkannya kembali.';
+
+  @override
+  String get signOutUnsaved =>
+      'Sesetengah perubahan tidak dapat disimpan ke akaun anda (tiada sambungan?). Jika anda log keluar sekarang, perubahan itu akan hilang.';
+
+  @override
+  String get signOutAnyway => 'Log keluar juga';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

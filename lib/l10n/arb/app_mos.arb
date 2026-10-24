@@ -857,5 +857,9 @@
   "syncTooLarge": "F bãngrã wʋsgame n yɩɩda, b pa tõe n yaa a yembr ne f kõntã ye. Yẽes raaba la koosgo bɩ gʋlsg nins f sẽn pa le rat ye, la a na n le maan a meng.",
   "noteFull": "Aksiõ kãngã gʋlsgã pida, rẽ n so tɩ b pa paas gʋlsg kãngã ye. Bilg gʋlsgã la f le mak.",
   "portfolioNoRateFor": "{symbols} teekre ka be ye.",
-  "dividendsNotConverted": "{count, plural, =1{Dividand 1 sẽn be {currencies} pʋgẽ ka tar teekre ye, b pa kẽes-a sõdgã pʋgẽ ye.} other{Dividand {count} sẽn be {currencies} pʋgẽ ka tar teekre ye, b pa kẽes-b sõdgã pʋgẽ ye.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividand 1 sẽn be {currencies} pʋgẽ ka tar teekre ye, b pa kẽes-a sõdgã pʋgẽ ye.} other{Dividand {count} sẽn be {currencies} pʋgẽ ka tar teekre ye, b pa kẽes-b sõdgã pʋgẽ ye.}}",
+  "signOutTitle": "F rat n yi bɩ?",
+  "signOutBody": "Fo portfey, fo listɛ, fo koosg gũusgo la fo gʋlsgo na n pa fo kõntã pʋgẽ, la b na n yiis-b aparɛy kãngã zugu. Le kẽ n paam-b lame.",
+  "signOutUnsaved": "Toeeg-toeeg kẽer pa tõog n bilg fo kõntã pʋgẽ ye (kõneksõ ka be ye?). F sã n yi masã, b na n bõrame.",
+  "signOutAnyway": "Yi baa ne rẽ"
 }

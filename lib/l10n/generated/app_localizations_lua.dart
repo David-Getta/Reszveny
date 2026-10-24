@@ -2911,6 +2911,20 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Udi musue kupatuka?';
+
+  @override
+  String get signOutBody =>
+      'Portefeuille webe, ma-liste, alerte ya mushinga ne mifundu yebe bidi bishala mu compte webe, ne nebiumushibue mu tshintu etshi. Buela kabidi bua kubipeta kabidi.';
+
+  @override
+  String get signOutUnsaved =>
+      'Bishintulula bimue kabiena bilame mu compte webe (kakuena connexion to?). Biwapatuka katataka, nebijimine.';
+
+  @override
+  String get signOutAnyway => 'Patuka nansha nanku';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

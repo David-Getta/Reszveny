@@ -857,5 +857,9 @@
   "syncTooLarge": "Data ya gago e kgolo kudu go ka sinkronaišwa le akhaonto ya gago. Phumola dithekišano goba dintlha tšeo o sa di nyakego gape, gomme go tla lekwa gape.",
   "noteFull": "Ntlha ya šere ye e tletše, ka fao tsenyo ye ga se ya okelwa. Khutsofatša ntlha gomme o leke gape.",
   "portfolioNoRateFor": "Ga go na tekanyo ya phetošo ya tšhelete ya {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Dividende e 1 ka {currencies} ga e na tekanyo ya phetošo ya tšhelete, ka fao ga e akaretšwe go palomoka.} other{Dividende tše {count} ka {currencies} ga di na tekanyo ya phetošo ya tšhelete, ka fao ga di akaretšwe go palomoka.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividende e 1 ka {currencies} ga e na tekanyo ya phetošo ya tšhelete, ka fao ga e akaretšwe go palomoka.} other{Dividende tše {count} ka {currencies} ga di na tekanyo ya phetošo ya tšhelete, ka fao ga di akaretšwe go palomoka.}}",
+  "signOutTitle": "O nyaka go tšwa?",
+  "signOutBody": "Photefolio ya gago, mananeo, ditemošo tša theko le dintlha di šala akhaontong ya gago gomme di tlošwa sedirišweng se. Tsena gape gore o di hwetše morago.",
+  "signOutUnsaved": "Diphetogo tše dingwe di be di sa kgone go bolokwa akhaontong ya gago (ga go na kgokagano?). Ge o ka tšwa bjale, di tla lahlega.",
+  "signOutAnyway": "Tšwa le ge go le bjalo"
 }

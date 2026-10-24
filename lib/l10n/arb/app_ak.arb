@@ -857,5 +857,9 @@
   "syncTooLarge": "Wo data no dɔɔso dodo a ɛrentumi nyɛ sync ne wo akawnt. Popa adetɔ ne adetɔn anaa nkyerɛwee a wonhia bio, na ɛbɛsan abɔ mmɔden bio.",
   "noteFull": "Kyɛfa yi nkyerɛwee no ayɛ ma, enti wɔamfa nsɛm foforo yi anka ho. Yɛ nkyerɛwee no tiawa na sɔ hwɛ bio.",
   "portfolioNoRateFor": "Sesa bo biara nni hɔ mma {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Dividend 1 a ɛwɔ {currencies} mu nni sesa bo, enti ɛnka nkɔntaabu no ho.} other{Dividend {count} a ɛwɔ {currencies} mu nni sesa bo, enti ɛnka nkɔntaabu no ho.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividend 1 a ɛwɔ {currencies} mu nni sesa bo, enti ɛnka nkɔntaabu no ho.} other{Dividend {count} a ɛwɔ {currencies} mu nni sesa bo, enti ɛnka nkɔntaabu no ho.}}",
+  "signOutTitle": "Wopɛ sɛ wofi mu?",
+  "signOutBody": "Wo nkyɛfa, nhyehyɛe, bo ho kɔkɔbɔ ne nkyerɛwee bɛkɔ so atena wo akawnt mu, na wɔbeyi afi mfiri yi so. San wura mu bio na woanya bio.",
+  "signOutUnsaved": "Nsakrae binom antumi ankora wɔ wo akawnt mu (nkitahodi nni hɔ?). Sɛ wofi mu seesei a, ɛbɛyera.",
+  "signOutAnyway": "Fi mu ara"
 }

@@ -857,5 +857,9 @@
   "syncTooLarge": "Daneyên te ji bo hevdemkirina bi hesabê te re pir mezin in. Danûstandin an notên ku êdî ne hewce ne jê bibe, û ew ê dîsa biceribîne.",
   "noteFull": "Notên vê pişkê tije ne, ji ber vê yekê ev tomar nehat zêdekirin. Notan kurt bike û dîsa biceribîne.",
   "portfolioNoRateFor": "Ji bo {symbols} rêjeya diravan tune.",
-  "dividendsNotConverted": "{count, plural, =1{Ji bo 1 dividenda bi {currencies} rêjeya diravan tune, loma di komê de nayê hesibandin.} other{Ji bo {count} dividendên bi {currencies} rêjeya diravan tune, loma di komê de nayên hesibandin.}}"
+  "dividendsNotConverted": "{count, plural, =1{Ji bo 1 dividenda bi {currencies} rêjeya diravan tune, loma di komê de nayê hesibandin.} other{Ji bo {count} dividendên bi {currencies} rêjeya diravan tune, loma di komê de nayên hesibandin.}}",
+  "signOutTitle": "Tu derdikevî?",
+  "signOutBody": "Portfolyo, lîste, hişyariyên bihayê û notên te di hesabê te de dimînin û ji vê amûrê têne rakirin. Ji bo ku tu wan vegerînî, dîsa têkeve.",
+  "signOutUnsaved": "Hin guhertin di hesabê te de nehatin tomarkirin (girêdan tune?). Heke tu niha derkevî, ew ê winda bibin.",
+  "signOutAnyway": "Dîsa jî derkeve"
 }

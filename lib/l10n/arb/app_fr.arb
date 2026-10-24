@@ -857,5 +857,9 @@
   "syncTooLarge": "Vos données sont trop volumineuses pour être synchronisées avec votre compte. Supprimez les transactions ou notes dont vous n’avez plus besoin, et une nouvelle tentative aura lieu.",
   "noteFull": "Les notes de cette action sont pleines, cette entrée n’a donc pas été ajoutée. Raccourcissez les notes et réessayez.",
   "portfolioNoRateFor": "Pas de taux de change pour {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{{count} dividende en {currencies} n’a pas de taux de change et n’est pas compté dans les totaux.} other{{count} dividendes en {currencies} n’ont pas de taux de change et ne sont pas comptés dans les totaux.}}"
+  "dividendsNotConverted": "{count, plural, =1{{count} dividende en {currencies} n’a pas de taux de change et n’est pas compté dans les totaux.} other{{count} dividendes en {currencies} n’ont pas de taux de change et ne sont pas comptés dans les totaux.}}",
+  "signOutTitle": "Se déconnecter ?",
+  "signOutBody": "Votre portefeuille, vos listes, vos alertes de cours et vos notes restent dans votre compte et sont supprimés de cet appareil. Reconnectez-vous pour les retrouver.",
+  "signOutUnsaved": "Certaines modifications n’ont pas pu être enregistrées dans votre compte (pas de connexion ?). Si vous vous déconnectez maintenant, elles seront perdues.",
+  "signOutAnyway": "Se déconnecter quand même"
 }

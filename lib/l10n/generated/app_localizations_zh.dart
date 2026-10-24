@@ -2769,6 +2769,18 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => '要退出登录吗？';
+
+  @override
+  String get signOutBody => '您的投资组合、列表、价格提醒和笔记会保留在您的账户中，并从此设备上移除。重新登录即可恢复。';
+
+  @override
+  String get signOutUnsaved => '部分更改未能保存到您的账户（网络未连接？）。如果现在退出登录，这些更改将会丢失。';
+
+  @override
+  String get signOutAnyway => '仍要退出登录';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5905,6 +5917,18 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
     );
     return '$_temp0';
   }
+
+  @override
+  String get signOutTitle => '要登出嗎？';
+
+  @override
+  String get signOutBody => '你的投資組合、清單、價格提示和筆記會保留在你的帳戶中，並會從此裝置移除。重新登入即可取回。';
+
+  @override
+  String get signOutUnsaved => '部分變更未能儲存至你的帳戶（沒有網絡連線？）。如現在登出，這些變更將會遺失。';
+
+  @override
+  String get signOutAnyway => '仍要登出';
 
   @override
   String get portfolioGoalSet => '設定目標';

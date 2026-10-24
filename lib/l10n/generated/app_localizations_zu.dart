@@ -2914,6 +2914,20 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Ufuna ukuphuma?';
+
+  @override
+  String get signOutBody =>
+      'Iphothifoliyo yakho, uhlu, izexwayiso zentengo namanothi akho kuhlala ku-akhawunti yakho futhi kususwa kule divayisi. Ngena futhi ukuze ukubuyise.';
+
+  @override
+  String get signOutUnsaved =>
+      'Ezinye izinguquko azikwazanga ukulondolozwa ku-akhawunti yakho (alukho uxhumano?). Uma uphuma manje, zizolahleka.';
+
+  @override
+  String get signOutAnyway => 'Phuma noma kunjalo';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

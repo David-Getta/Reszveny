@@ -2900,6 +2900,20 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Wopɛ sɛ wofi mu?';
+
+  @override
+  String get signOutBody =>
+      'Wo nkyɛfa, nhyehyɛe, bo ho kɔkɔbɔ ne nkyerɛwee bɛkɔ so atena wo akawnt mu, na wɔbeyi afi mfiri yi so. San wura mu bio na woanya bio.';
+
+  @override
+  String get signOutUnsaved =>
+      'Nsakrae binom antumi ankora wɔ wo akawnt mu (nkitahodi nni hɔ?). Sɛ wofi mu seesei a, ɛbɛyera.';
+
+  @override
+  String get signOutAnyway => 'Fi mu ara';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

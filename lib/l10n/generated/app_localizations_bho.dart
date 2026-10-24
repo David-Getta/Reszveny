@@ -2891,6 +2891,20 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'का रउआ साइन आउट करे के चाहत बानी?';
+
+  @override
+  String get signOutBody =>
+      'राउर पोर्टफ़ोलियो, सूची, दाम अलर्ट आ नोट राउर खाता में रही आ एह डिवाइस से हटा दिहल जाई। एह सब के वापस पावे खातिर फेर से साइन इन करीं।';
+
+  @override
+  String get signOutUnsaved =>
+      'कुछ बदलाव राउर खाता में सहेजल ना जा सकल (कनेक्शन नइखे का?)। अगर रउआ अबहीं साइन आउट करब, त ई सब खो जाई।';
+
+  @override
+  String get signOutAnyway => 'तबो साइन आउट करीं';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

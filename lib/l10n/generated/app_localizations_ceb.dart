@@ -2912,6 +2912,20 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Mag-sign out?';
+
+  @override
+  String get signOutBody =>
+      'Ang imong portfolio, mga lista, mga alerto sa presyo ug mga nota magpabilin sa imong account ug pagatangtangon gikan niini nga device. Pag-sign in pag-usab aron mabalik kini.';
+
+  @override
+  String get signOutUnsaved =>
+      'Ang pipila ka kausaban wala ma-save sa imong account (walay koneksyon?). Kon mag-sign out ka karon, mawala kini.';
+
+  @override
+  String get signOutAnyway => 'Mag-sign out gihapon';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

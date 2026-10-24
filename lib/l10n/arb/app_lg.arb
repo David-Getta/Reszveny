@@ -857,5 +857,9 @@
   "syncTooLarge": "Data yo nnene nnyo okukwataganyizibwa n'akawunti yo. Sangula bye wagula ne bye watunda oba ebiwandiiko by'otokyetaaga, olwo kujja kuddamu okugezaako.",
   "noteFull": "Ebiwandiiko by'omugabo guno bijjudde, kyova ekiwandiiko kino tekyongeddwako. Simpaya ebiwandiiko ogezeeko nate.",
   "portfolioNoRateFor": "Tewali muwendo gw'okuwaanyisa ensimbi ogwa {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Dividendi 1 mu {currencies} terina muwendo gw'okuwaanyisa ensimbi, kyova etabalibwa mu mugatte.} other{Dividendi {count} mu {currencies} tezirina muwendo gw'okuwaanyisa ensimbi, kyova tezibalibwa mu mugatte.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividendi 1 mu {currencies} terina muwendo gw'okuwaanyisa ensimbi, kyova etabalibwa mu mugatte.} other{Dividendi {count} mu {currencies} tezirina muwendo gw'okuwaanyisa ensimbi, kyova tezibalibwa mu mugatte.}}",
+  "signOutTitle": "Oyagala okufuluma?",
+  "signOutBody": "Emigabo gyo, enkalala zo, okulabula ku bbeeyi n'ebiwandiiko byo bisigala ku akawunti yo, era bijjibwa ku kyuma kino. Yingira nate okubiddizaawo.",
+  "signOutUnsaved": "Enkyukakyuka ezimu tezisobodde kuterekebwa ku akawunti yo (tewali yintaneeti?). Bw'onofuluma kati, zijja kubula.",
+  "signOutAnyway": "Fuluma wadde kiri kityo"
 }

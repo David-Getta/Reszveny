@@ -2898,6 +2898,20 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'You wan sign out?';
+
+  @override
+  String get signOutBody =>
+      'Your portfolio, lists, price alerts and notes go still dey your account, but we go comot dem from dis device. Sign in again to get dem back.';
+
+  @override
+  String get signOutUnsaved =>
+      'Some changes no fit save for your account (no connection?). If you sign out now, dem go loss.';
+
+  @override
+  String get signOutAnyway => 'Sign out anyhow';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

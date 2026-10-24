@@ -857,5 +857,9 @@
   "syncTooLarge": "Os teus datos son demasiado grandes para sincronizalos coa túa conta. Elimina as transaccións ou notas que xa non necesites e volverase tentar.",
   "noteFull": "As notas desta acción están cheas, así que esta entrada non se engadiu. Acurta as notas e téntao de novo.",
   "portfolioNoRateFor": "Non hai tipo de cambio para {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividendo en {currencies} non ten tipo de cambio e queda fóra dos totais.} other{{count} dividendos en {currencies} non teñen tipo de cambio e quedan fóra dos totais.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividendo en {currencies} non ten tipo de cambio e queda fóra dos totais.} other{{count} dividendos en {currencies} non teñen tipo de cambio e quedan fóra dos totais.}}",
+  "signOutTitle": "Queres pechar sesión?",
+  "signOutBody": "A túa carteira, as listas, as alertas de prezo e as notas quedan na túa conta e elimínanse deste dispositivo. Volve iniciar sesión para recuperalas.",
+  "signOutUnsaved": "Algúns cambios non se puideron gardar na túa conta (sen conexión?). Se pechas sesión agora, perderanse.",
+  "signOutAnyway": "Pechar sesión igualmente"
 }

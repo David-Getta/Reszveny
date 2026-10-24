@@ -2913,6 +2913,20 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Urashaka gusohoka?';
+
+  @override
+  String get signOutBody =>
+      'Ishoramari ryawe, intonde, imenyesha ry\'ibiciro n\'ibyo wanditse bigumye kuri konti yawe kandi bivanwa kuri iki gikoresho. Ongera winjire kugira ngo ubisubirane.';
+
+  @override
+  String get signOutUnsaved =>
+      'Impinduka zimwe ntizashoboye kubikwa kuri konti yawe (nta murandasi?). Nusohoka ubu, zizatakara.';
+
+  @override
+  String get signOutAnyway => 'Sohoka uko biri kose';
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

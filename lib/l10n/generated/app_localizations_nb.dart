@@ -2897,6 +2897,20 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Logge ut?';
+
+  @override
+  String get signOutBody =>
+      'Porteføljen, listene, kursvarslene og notatene dine blir værende i kontoen din og fjernes fra denne enheten. Logg inn igjen for å få dem tilbake.';
+
+  @override
+  String get signOutUnsaved =>
+      'Noen endringer kunne ikke lagres i kontoen din (ingen tilkobling?). Hvis du logger ut nå, går de tapt.';
+
+  @override
+  String get signOutAnyway => 'Logg ut likevel';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

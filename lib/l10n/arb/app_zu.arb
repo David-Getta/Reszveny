@@ -857,5 +857,9 @@
   "syncTooLarge": "Idatha yakho inkulu kakhulu ukuthi ivumelaniswe ne-akhawunti yakho. Susa ukuthenga nokuthengisa noma amanothi ongasawadingi, bese kuzozama futhi.",
   "noteFull": "Inothi lalesi sheya ligcwele, ngakho lokhu okubhaliwe akwengezwanga. Finyeza inothi bese uzama futhi.",
   "portfolioNoRateFor": "Alikho izinga lokushintshaniswa kwemali le-{symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Isabelo senzuzo esi-{count} nge-{currencies} asinalo izinga lokushintshaniswa kwemali, ngakho asifakiwe ezingqikithini.} other{Izabelo zenzuzo ezi-{count} nge-{currencies} azinalo izinga lokushintshaniswa kwemali, ngakho azifakiwe ezingqikithini.}}"
+  "dividendsNotConverted": "{count, plural, =1{Isabelo senzuzo esi-{count} nge-{currencies} asinalo izinga lokushintshaniswa kwemali, ngakho asifakiwe ezingqikithini.} other{Izabelo zenzuzo ezi-{count} nge-{currencies} azinalo izinga lokushintshaniswa kwemali, ngakho azifakiwe ezingqikithini.}}",
+  "signOutTitle": "Ufuna ukuphuma?",
+  "signOutBody": "Iphothifoliyo yakho, uhlu, izexwayiso zentengo namanothi akho kuhlala ku-akhawunti yakho futhi kususwa kule divayisi. Ngena futhi ukuze ukubuyise.",
+  "signOutUnsaved": "Ezinye izinguquko azikwazanga ukulondolozwa ku-akhawunti yakho (alukho uxhumano?). Uma uphuma manje, zizolahleka.",
+  "signOutAnyway": "Phuma noma kunjalo"
 }

@@ -2978,6 +2978,20 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Wylogować się?';
+
+  @override
+  String get signOutBody =>
+      'Twój portfel, listy, alerty cenowe i notatki pozostaną na Twoim koncie i zostaną usunięte z tego urządzenia. Zaloguj się ponownie, aby je odzyskać.';
+
+  @override
+  String get signOutUnsaved =>
+      'Niektórych zmian nie udało się zapisać na Twoim koncie (brak połączenia?). Jeśli wylogujesz się teraz, zostaną utracone.';
+
+  @override
+  String get signOutAnyway => 'Wyloguj się mimo to';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

@@ -2977,6 +2977,20 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Выйти?';
+
+  @override
+  String get signOutBody =>
+      'Ваш портфель, списки, ценовые оповещения и заметки останутся в аккаунте и будут удалены с этого устройства. Войдите снова, чтобы вернуть их.';
+
+  @override
+  String get signOutUnsaved =>
+      'Некоторые изменения не удалось сохранить в аккаунте (нет подключения?). Если выйти сейчас, они будут потеряны.';
+
+  @override
+  String get signOutAnyway => 'Всё равно выйти';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

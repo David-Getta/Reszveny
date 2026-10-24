@@ -857,5 +857,9 @@
   "syncTooLarge": "Os seus dados são grandes demais para sincronizar com a sua conta. Exclua transações ou notas de que não precisa mais, e uma nova tentativa será feita.",
   "noteFull": "A nota desta ação está cheia, por isso esta entrada não foi adicionada. Encurte a nota e tente novamente.",
   "portfolioNoRateFor": "Sem taxa de câmbio para {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{{count} dividendo em {currencies} não tem taxa de câmbio e fica fora dos totais.} other{{count} dividendos em {currencies} não têm taxa de câmbio e ficam fora dos totais.}}"
+  "dividendsNotConverted": "{count, plural, =1{{count} dividendo em {currencies} não tem taxa de câmbio e fica fora dos totais.} other{{count} dividendos em {currencies} não têm taxa de câmbio e ficam fora dos totais.}}",
+  "signOutTitle": "Terminar sessão?",
+  "signOutBody": "A sua carteira, listas, alertas de preço e notas ficam na sua conta e são removidos deste dispositivo. Inicie sessão novamente para os recuperar.",
+  "signOutUnsaved": "Não foi possível guardar algumas alterações na sua conta (sem ligação?). Se terminar sessão agora, serão perdidas.",
+  "signOutAnyway": "Terminar mesmo assim"
 }

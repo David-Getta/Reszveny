@@ -2895,6 +2895,20 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'ସାଇନ ଆଉଟ କରିବେ?';
+
+  @override
+  String get signOutBody =>
+      'ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓ, ତାଲିକା, ଦର ଆଲର୍ଟ ଓ ନୋଟ୍ ଆପଣଙ୍କ ଆକାଉଣ୍ଟରେ ରହିବ ଏବଂ ଏହି ଡିଭାଇସରୁ ହଟାଯିବ। ସେଗୁଡ଼ିକୁ ଫେରି ପାଇବାକୁ ପୁଣି ସାଇନ ଇନ କରନ୍ତୁ।';
+
+  @override
+  String get signOutUnsaved =>
+      'କିଛି ପରିବର୍ତ୍ତନ ଆପଣଙ୍କ ଆକାଉଣ୍ଟରେ ସେଭ୍ ହୋଇପାରିଲା ନାହିଁ (ସଂଯୋଗ ନାହିଁ କି?)। ଏବେ ସାଇନ ଆଉଟ କଲେ ସେଗୁଡ଼ିକ ହଜିଯିବ।';
+
+  @override
+  String get signOutAnyway => 'ତଥାପି ସାଇନ ଆଉଟ କରନ୍ତୁ';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

@@ -2890,6 +2890,20 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'की अहाँ साइन आउट करऽ चाहैत छी?';
+
+  @override
+  String get signOutBody =>
+      'अहाँक पोर्टफ़ोलियो, सूची, दाम अलर्ट आ नोट अहाँक खातामे रहत आ एहि डिवाइससँ हटा देल जाएत। एकरा सभकेँ घुराबऽ लेल फेर साइन इन करू।';
+
+  @override
+  String get signOutUnsaved =>
+      'किछु बदलाव अहाँक खातामे सहेजल नहि जा सकल (कनेक्शन नहि अछि की?)। जँ अहाँ एखन साइन आउट करब, तँ ई सभ हेरा जाएत।';
+
+  @override
+  String get signOutAnyway => 'तैयो साइन आउट करू';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

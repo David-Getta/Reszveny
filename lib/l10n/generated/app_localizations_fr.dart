@@ -2912,6 +2912,20 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Se déconnecter ?';
+
+  @override
+  String get signOutBody =>
+      'Votre portefeuille, vos listes, vos alertes de cours et vos notes restent dans votre compte et sont supprimés de cet appareil. Reconnectez-vous pour les retrouver.';
+
+  @override
+  String get signOutUnsaved =>
+      'Certaines modifications n’ont pas pu être enregistrées dans votre compte (pas de connexion ?). Si vous vous déconnectez maintenant, elles seront perdues.';
+
+  @override
+  String get signOutAnyway => 'Se déconnecter quand même';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

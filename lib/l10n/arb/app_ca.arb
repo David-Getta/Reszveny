@@ -857,5 +857,9 @@
   "syncTooLarge": "Les teves dades són massa grans per sincronitzar-les amb el teu compte. Elimina les transaccions o notes que ja no necessitis i es tornarà a provar.",
   "noteFull": "Les notes d’aquesta acció són plenes, així que aquesta entrada no s’ha afegit. Escurça les notes i torna-ho a provar.",
   "portfolioNoRateFor": "No hi ha tipus de canvi per a {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividend en {currencies} no té tipus de canvi i queda fora dels totals.} other{{count} dividends en {currencies} no tenen tipus de canvi i queden fora dels totals.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividend en {currencies} no té tipus de canvi i queda fora dels totals.} other{{count} dividends en {currencies} no tenen tipus de canvi i queden fora dels totals.}}",
+  "signOutTitle": "Vols tancar la sessió?",
+  "signOutBody": "La cartera, les llistes, les alertes de preu i les notes es queden al teu compte i s'eliminen d'aquest dispositiu. Torna a iniciar la sessió per recuperar-les.",
+  "signOutUnsaved": "Alguns canvis no s'han pogut desar al teu compte (no hi ha connexió?). Si tanques la sessió ara, es perdran.",
+  "signOutAnyway": "Tanca la sessió igualment"
 }

@@ -857,5 +857,9 @@
   "syncTooLarge": "Data anda terlalu besar untuk disegerakkan dengan akaun anda. Padam transaksi atau nota yang tidak diperlukan lagi, dan ia akan cuba lagi.",
   "noteFull": "Nota untuk saham ini sudah penuh, jadi entri ini tidak ditambah. Pendekkan nota dan cuba lagi.",
   "portfolioNoRateFor": "Tiada kadar pertukaran untuk {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividen dalam {currencies} tiada kadar pertukaran dan tidak dimasukkan dalam jumlah.} other{{count} dividen dalam {currencies} tiada kadar pertukaran dan tidak dimasukkan dalam jumlah.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividen dalam {currencies} tiada kadar pertukaran dan tidak dimasukkan dalam jumlah.} other{{count} dividen dalam {currencies} tiada kadar pertukaran dan tidak dimasukkan dalam jumlah.}}",
+  "signOutTitle": "Log keluar?",
+  "signOutBody": "Portfolio, senarai, amaran harga dan nota anda kekal dalam akaun anda dan dialih keluar daripada peranti ini. Log masuk semula untuk mendapatkannya kembali.",
+  "signOutUnsaved": "Sesetengah perubahan tidak dapat disimpan ke akaun anda (tiada sambungan?). Jika anda log keluar sekarang, perubahan itu akan hilang.",
+  "signOutAnyway": "Log keluar juga"
 }

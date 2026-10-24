@@ -857,5 +857,9 @@
   "syncTooLarge": "Data ya wena yi kulu ngopfu ku fambelanisiwa ni akhawunti ya wena. Sula swixaviwa ni swixavisiwa kumbe tinotsi leti u nga ha ti lavi, kutani ku ta ringetiwa nakambe.",
   "noteFull": "Notsi ya xere leyi yi tele, hikwalaho leswi u swi tsaleke a swi engeteriwanga. Komisa notsi kutani u ringeta nakambe.",
   "portfolioNoRateFor": "A ku na mpimo wa ku cinca mali wa {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Dividende 1 hi {currencies} a yi na mpimo wa ku cinca mali, hikwalaho a yi katsiwi eka mihlanganelo.} other{Tidividende ta {count} hi {currencies} a ti na mpimo wa ku cinca mali, hikwalaho a ti katsiwi eka mihlanganelo.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividende 1 hi {currencies} a yi na mpimo wa ku cinca mali, hikwalaho a yi katsiwi eka mihlanganelo.} other{Tidividende ta {count} hi {currencies} a ti na mpimo wa ku cinca mali, hikwalaho a ti katsiwi eka mihlanganelo.}}",
+  "signOutTitle": "U lava ku huma?",
+  "signOutBody": "Phothifoliyo ya wena, minxaxamelo, switiviso swa nxavo na tinotsi swi tshama eka akhawunti ya wena kutani swi susiwa eka xitirhisiwa lexi. Nghena nakambe leswaku u swi kuma nakambe.",
+  "signOutUnsaved": "Swin'wana swa ku cinca a swi kotanga ku hlayisiwa eka akhawunti ya wena (ku hava vuhlanganisi?). Loko u huma sweswi, swi ta lahleka.",
+  "signOutAnyway": "Huma hambiswiritano"
 }

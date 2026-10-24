@@ -100,6 +100,49 @@ Future<void> _confirmDeleteAccount(BuildContext context) async {
   }
 }
 
+/// Kijelentkezés folyamatban (a feltöltés eltarthat egy ideig): ne induljon kétszer.
+bool _signingOut = false;
+
+/// Kijelentkezés megerősítéssel: a fiók adatai lekerülnek a készülékről. Ha a még
+/// fel nem töltött változások nem mennek fel, külön rákérdez, mert azok elvesznének.
+Future<void> _confirmSignOut(BuildContext context) async {
+  if (_signingOut) return;
+  final l10n = AppLocalizations.of(context);
+  final services = AppServices.of(context);
+  final messenger = ScaffoldMessenger.of(context);
+  Future<bool> ask(String body, String action) async =>
+      await showDialog<bool>(
+        context: context,
+        builder: (context) => AlertDialog(
+          key: const ValueKey('sign-out-dialog'),
+          title: Text(l10n.signOutTitle),
+          content: SizedBox(width: 420, child: Text(body)),
+          actions: [
+            TextButton(onPressed: () => Navigator.of(context).pop(false), child: Text(l10n.cancel)),
+            FilledButton(
+              key: const ValueKey('sign-out-confirm'),
+              onPressed: () => Navigator.of(context).pop(true),
+              child: Text(action),
+            ),
+          ],
+        ),
+      ) ==
+      true;
+  if (!await ask(l10n.signOutBody, l10n.signOut) || _signingOut || !context.mounted) return;
+  _signingOut = true;
+  try {
+    if (!await services.signOut()) {
+      if (!context.mounted || !await ask(l10n.signOutUnsaved, l10n.signOutAnyway)) return;
+      await services.signOut(force: true);
+    }
+  } catch (e) {
+    debugPrint('Kijelentkezés nem sikerült: $e');
+    messenger.showSnackBar(SnackBar(content: Text(l10n.errorGeneric)));
+  } finally {
+    _signingOut = false;
+  }
+}
+
 /// Beállítások: megjelenés, nyelv (a nyelv saját nevén) és információk.
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
@@ -155,7 +198,8 @@ class SettingsPage extends StatelessWidget {
                                 account.isSignedIn
                                     ? TextButton(
                                         style: TextButton.styleFrom(padding: EdgeInsets.zero),
-                                        onPressed: account.signOut,
+                                        key: const ValueKey('sign-out'),
+                                        onPressed: () => _confirmSignOut(context),
                                         child: Text(l10n.signOut),
                                       )
                                     : FilledButton.tonal(

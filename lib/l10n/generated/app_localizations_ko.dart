@@ -2817,6 +2817,20 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => '로그아웃할까요?';
+
+  @override
+  String get signOutBody =>
+      '포트폴리오, 목록, 가격 알림, 메모는 계정에 그대로 남고 이 기기에서는 삭제됩니다. 다시 로그인하면 복원됩니다.';
+
+  @override
+  String get signOutUnsaved =>
+      '일부 변경 사항을 계정에 저장하지 못했습니다(연결이 끊겼나요?). 지금 로그아웃하면 이 변경 사항은 사라집니다.';
+
+  @override
+  String get signOutAnyway => '그래도 로그아웃';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

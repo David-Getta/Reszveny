@@ -2916,6 +2916,20 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Oyagala okufuluma?';
+
+  @override
+  String get signOutBody =>
+      'Emigabo gyo, enkalala zo, okulabula ku bbeeyi n\'ebiwandiiko byo bisigala ku akawunti yo, era bijjibwa ku kyuma kino. Yingira nate okubiddizaawo.';
+
+  @override
+  String get signOutUnsaved =>
+      'Enkyukakyuka ezimu tezisobodde kuterekebwa ku akawunti yo (tewali yintaneeti?). Bw\'onofuluma kati, zijja kubula.';
+
+  @override
+  String get signOutAnyway => 'Fuluma wadde kiri kityo';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

@@ -2897,6 +2897,20 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Гарах уу?';
+
+  @override
+  String get signOutBody =>
+      'Таны портфолио, жагсаалт, үнийн сэрэмжлүүлэг, тэмдэглэл бүртгэлд тань хадгалагдан үлдэж, энэ төхөөрөмжөөс устгагдана. Буцааж авахын тулд дахин нэвтэрнэ үү.';
+
+  @override
+  String get signOutUnsaved =>
+      'Зарим өөрчлөлтийг таны бүртгэлд хадгалж чадсангүй (холболт алга уу?). Одоо гарвал тэдгээр алга болно.';
+
+  @override
+  String get signOutAnyway => 'Гэсэн ч гарах';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

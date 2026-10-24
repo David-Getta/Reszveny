@@ -2902,6 +2902,20 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Chiqasizmi?';
+
+  @override
+  String get signOutBody =>
+      'Portfelingiz, roʻyxatlaringiz, narx bildirishnomalari va qaydlaringiz hisobingizda qoladi va bu qurilmadan oʻchiriladi. Ularni qaytarish uchun qayta kiring.';
+
+  @override
+  String get signOutUnsaved =>
+      'Baʼzi oʻzgarishlarni hisobingizga saqlab boʻlmadi (aloqa yoʻqmi?). Hozir chiqsangiz, ular yoʻqoladi.';
+
+  @override
+  String get signOutAnyway => 'Baribir chiqish';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

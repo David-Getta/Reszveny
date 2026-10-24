@@ -2887,6 +2887,20 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'ཕྱིར་འཐོན་བྱེད་དམ།';
+
+  @override
+  String get signOutBody =>
+      'ཁྱེད་ཀྱི་མ་འཇོག་ཚོགས་སྡེབ་དང་། ཐོ་ཡིག གོང་ཚད་ཉེན་བརྡ། ཟིན་ཐོ་བཅས་ཁྱེད་ཀྱི་རྩིས་ཁྲའི་ནང་དུ་ལུས་ཡོད་པ་དང་། སྒྲིག་ཆས་འདི་ནས་སུབ་ངེས། ཕྱིར་ལེན་པར་ཡང་བསྐྱར་ནང་འཛུལ་གནང་།';
+
+  @override
+  String get signOutUnsaved =>
+      'བཟོ་བཅོས་ཁ་ཤས་ཁྱེད་ཀྱི་རྩིས་ཁྲའི་ནང་ཉར་ཚགས་བྱེད་མ་ཐུབ། (འབྲེལ་མཐུད་མེད་དམ།) ད་ལྟ་ཕྱིར་འཐོན་བྱས་ན་དེ་དག་བརླག་ངེས།';
+
+  @override
+  String get signOutAnyway => 'གང་ལྟར་ཡང་ཕྱིར་འཐོན';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

@@ -2904,6 +2904,20 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Àdo le eme?';
+
+  @override
+  String get signOutBody =>
+      'Wò akpawo, xexlẽdzesiwo, asi ŋuti nuxlɔ̃amewo kple nuŋlɔɖiwo anɔ wò akɔnta me, eye woaɖe wo ɖa le mɔ̃ sia dzi. Gage ɖe eme ake be nàxɔ wo.';
+
+  @override
+  String get signOutUnsaved =>
+      'Womete ŋu dzra tɔtrɔ aɖewo ɖo ɖe wò akɔnta me o (kadodo aɖeke meli oa?). Ne èdo le eme fifia la, woabu.';
+
+  @override
+  String get signOutAnyway => 'Do le eme ko';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

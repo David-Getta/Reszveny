@@ -2898,6 +2898,20 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Ad teffɣeḍ?';
+
+  @override
+  String get signOutBody =>
+      'Aqrab-ik, tibdarin-ik, ilɣa n ssuma d tezmilin-ik ad qqimen deg umiḍan-ik, ad ttwakksen seg yibenk-a. Kcem tikkelt nniḍen akken ad ten-id-terreḍ.';
+
+  @override
+  String get signOutUnsaved =>
+      'Kra n yisnifal ur ttwaseklesen ara deg umiḍan-ik (ulac tuqqna?). Ma teffɣeḍ tura, ad ruḥen.';
+
+  @override
+  String get signOutAnyway => 'Ffeɣ ɣas akken';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

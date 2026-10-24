@@ -2906,6 +2906,20 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'ಸೈನ್ ಔಟ್ ಮಾಡಬೇಕೇ?';
+
+  @override
+  String get signOutBody =>
+      'ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ, ಪಟ್ಟಿಗಳು, ಬೆಲೆ ಅಲರ್ಟ್‌ಗಳು ಮತ್ತು ಟಿಪ್ಪಣಿಗಳು ನಿಮ್ಮ ಖಾತೆಯಲ್ಲಿ ಉಳಿಯುತ್ತವೆ ಮತ್ತು ಈ ಸಾಧನದಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ. ಅವುಗಳನ್ನು ಮರಳಿ ಪಡೆಯಲು ಮತ್ತೆ ಸೈನ್ ಇನ್ ಮಾಡಿ.';
+
+  @override
+  String get signOutUnsaved =>
+      'ಕೆಲವು ಬದಲಾವಣೆಗಳನ್ನು ನಿಮ್ಮ ಖಾತೆಗೆ ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ (ಸಂಪರ್ಕವಿಲ್ಲವೇ?). ನೀವು ಈಗ ಸೈನ್ ಔಟ್ ಮಾಡಿದರೆ, ಅವು ಕಳೆದುಹೋಗುತ್ತವೆ.';
+
+  @override
+  String get signOutAnyway => 'ಆದರೂ ಸೈನ್ ಔಟ್ ಮಾಡಿ';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

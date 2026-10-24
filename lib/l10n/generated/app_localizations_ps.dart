@@ -2890,6 +2890,20 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'له حساب وځئ؟';
+
+  @override
+  String get signOutBody =>
+      'ستاسو پورټفولیو، لېستونه، د بیې خبرتیاوې او یادښتونه ستاسو په حساب کې پاتې کېږي او له دې وسیلې لرې کېږي. د بېرته ترلاسه کولو لپاره بیا ننوځئ.';
+
+  @override
+  String get signOutUnsaved =>
+      'ځینې بدلونونه ستاسو په حساب کې خوندي نه شول (اتصال نشته؟). که اوس له حساب ووځئ، له منځه به ولاړ شي.';
+
+  @override
+  String get signOutAnyway => 'بیا هم له حساب وتل';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

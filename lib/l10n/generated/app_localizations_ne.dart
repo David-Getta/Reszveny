@@ -2896,6 +2896,20 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'साइन आउट गर्ने?';
+
+  @override
+  String get signOutBody =>
+      'तपाईंको पोर्टफोलियो, सूचीहरू, मूल्य अलर्ट र टिपोटहरू तपाईंको खातामा रहन्छन् र यो डिभाइसबाट हटाइन्छन्। तिनलाई फिर्ता पाउन फेरि साइन इन गर्नुहोस्।';
+
+  @override
+  String get signOutUnsaved =>
+      'केही परिवर्तनहरू तपाईंको खातामा सुरक्षित गर्न सकिएन (जडान छैन?)। अहिले साइन आउट गर्नुभयो भने ती हराउनेछन्।';
+
+  @override
+  String get signOutAnyway => 'जे भए पनि साइन आउट गर्नुहोस्';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

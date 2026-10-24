@@ -2902,6 +2902,20 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Kijelentkezel?';
+
+  @override
+  String get signOutBody =>
+      'A portfóliód, a listáid, az árfolyam-riasztásaid és a jegyzeteid a fiókodban maradnak, erről a készülékről pedig törlődnek. Újra belépve visszakapod őket.';
+
+  @override
+  String get signOutUnsaved =>
+      'Néhány változást nem sikerült feltölteni a fiókodba (nincs kapcsolat?). Ha most kijelentkezel, elvesznek.';
+
+  @override
+  String get signOutAnyway => 'Kijelentkezés így is';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

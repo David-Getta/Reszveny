@@ -2898,6 +2898,20 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'გსურთ გასვლა?';
+
+  @override
+  String get signOutBody =>
+      'თქვენი პორტფელი, სიები, ფასის შეტყობინებები და ჩანაწერები რჩება თქვენს ანგარიშში და წაიშლება ამ მოწყობილობიდან. მათ დასაბრუნებლად ხელახლა შედით.';
+
+  @override
+  String get signOutUnsaved =>
+      'ზოგიერთი ცვლილების შენახვა თქვენს ანგარიშში ვერ მოხერხდა (კავშირი არ არის?). თუ ახლა გახვალთ, ისინი დაიკარგება.';
+
+  @override
+  String get signOutAnyway => 'მაინც გასვლა';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

@@ -2894,6 +2894,20 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'I bɛ bɔ kɔnti la wa?';
+
+  @override
+  String get signOutBody =>
+      'I ka aksiyɔn kɛsu, lisiw, sɔngɔ lasɔminiw ani sɛbɛnniw bɛ to i ka kɔnti la, u bɛ bɔ nin minɛn in kan. Don tugun walasa ka u sɔrɔ kokura.';
+
+  @override
+  String get signOutUnsaved =>
+      'Falenni dɔw ma se ka mara i ka kɔnti la (jɛɲɔgɔnya tɛ yen wa?). Ni i bɔra sisan, u bɛna tunun.';
+
+  @override
+  String get signOutAnyway => 'Bɔ kɔnti la o bɛɛ n\'a ta';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

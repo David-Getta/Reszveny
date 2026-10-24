@@ -2901,6 +2901,20 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Kaluar?';
+
+  @override
+  String get signOutBody =>
+      'Portofolio, daptar, béwara harga, jeung catetan anjeun tetep aya dina akun anjeun sarta dipiceun tina parangkat ieu. Asup deui pikeun meunangkeun deui.';
+
+  @override
+  String get signOutUnsaved =>
+      'Sababaraha parobahan teu bisa disimpen ka akun anjeun (teu aya sambungan?). Upami anjeun kaluar ayeuna, parobahan éta bakal leungit.';
+
+  @override
+  String get signOutAnyway => 'Tetep kaluar';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

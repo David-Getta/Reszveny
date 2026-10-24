@@ -2903,6 +2903,20 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Tu derdikevî?';
+
+  @override
+  String get signOutBody =>
+      'Portfolyo, lîste, hişyariyên bihayê û notên te di hesabê te de dimînin û ji vê amûrê têne rakirin. Ji bo ku tu wan vegerînî, dîsa têkeve.';
+
+  @override
+  String get signOutUnsaved =>
+      'Hin guhertin di hesabê te de nehatin tomarkirin (girêdan tune?). Heke tu niha derkevî, ew ê winda bibin.';
+
+  @override
+  String get signOutAnyway => 'Dîsa jî derkeve';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

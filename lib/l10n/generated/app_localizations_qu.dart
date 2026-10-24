@@ -2915,6 +2915,20 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Cuentamanta lluqsinkichu?';
+
+  @override
+  String get signOutBody =>
+      'Portafolioyki, listaykikuna, chanin willachiykunayki, qillqasqaykikunapas cuentaykipim qhipanqa, kay equipomantataq qichukunqa. Kutichinaykipaq huktawan yaykuy.';
+
+  @override
+  String get signOutUnsaved =>
+      'Wakin tikraykunaqa manam cuentaykipi waqaychakuyta atirqanchu (manachu t\'inkiy kan?). Kunan lluqsispaqa chinkanqam.';
+
+  @override
+  String get signOutAnyway => 'Chaywanpas lluqsiy';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

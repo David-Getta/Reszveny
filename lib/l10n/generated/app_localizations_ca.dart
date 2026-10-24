@@ -2910,6 +2910,20 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Vols tancar la sessió?';
+
+  @override
+  String get signOutBody =>
+      'La cartera, les llistes, les alertes de preu i les notes es queden al teu compte i s\'eliminen d\'aquest dispositiu. Torna a iniciar la sessió per recuperar-les.';
+
+  @override
+  String get signOutUnsaved =>
+      'Alguns canvis no s\'han pogut desar al teu compte (no hi ha connexió?). Si tanques la sessió ara, es perdran.';
+
+  @override
+  String get signOutAnyway => 'Tanca la sessió igualment';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

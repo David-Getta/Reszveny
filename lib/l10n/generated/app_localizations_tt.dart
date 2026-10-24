@@ -2895,6 +2895,20 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Чыгасызмы?';
+
+  @override
+  String get signOutBody =>
+      'Портфелегез, исемлекләрегез, бәя искәртүләре һәм язмаларыгыз аккаунтыгызда кала һәм бу җайланмадан бетерелә. Аларны кире кайтару өчен яңадан керегез.';
+
+  @override
+  String get signOutUnsaved =>
+      'Кайбер үзгәрешләрне аккаунтыгызда саклап булмады (тоташу юкмы?). Хәзер чыксагыз, алар югалачак.';
+
+  @override
+  String get signOutAnyway => 'Барыбер чыгу';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

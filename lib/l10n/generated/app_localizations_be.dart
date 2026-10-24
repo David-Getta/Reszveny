@@ -2974,6 +2974,20 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Выйсці з уліковага запісу?';
+
+  @override
+  String get signOutBody =>
+      'Ваш партфель, спісы, цэнавыя апавяшчэнні і нататкі застануцца ў вашым уліковым запісе і будуць выдалены з гэтай прылады. Увайдзіце зноў, каб вярнуць іх.';
+
+  @override
+  String get signOutUnsaved =>
+      'Некаторыя змены не ўдалося захаваць у вашым уліковым запісе (няма злучэння?). Калі вы выйдзеце зараз, яны будуць страчаны.';
+
+  @override
+  String get signOutAnyway => 'Усё роўна выйсці';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

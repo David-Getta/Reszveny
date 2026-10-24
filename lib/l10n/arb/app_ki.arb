@@ -857,5 +857,9 @@
   "syncTooLarge": "Data yaku nĩ nene mũno gũtũma ĩkorwo o ũndũ ũmwe na akaunti yaku. Eheria ũgũri na ũendia kana maandĩko marĩa ũtabatarĩte rĩngĩ, nayo nĩ ĩkũgeria rĩngĩ.",
   "noteFull": "Maandĩko ma hisa ĩno nĩ maiyũrĩte, nĩ ũndũ ũcio ũndũ ũyũ ndwongereirwo. Nyiihia maandĩko macio na ũgerie rĩngĩ.",
   "portfolioNoRateFor": "Gũtirĩ kĩgero kĩa gũcenjia mbeca kĩa {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Mũgai wa faida 1 wa {currencies} ndũrĩ na kĩgero kĩa gũcenjia mbeca, nĩ ũndũ ũcio ndũtaranĩtwo mũigana-inĩ wothe.} other{Mĩgai ya faida {count} ya {currencies} ndĩrĩ na kĩgero kĩa gũcenjia mbeca, nĩ ũndũ ũcio ndĩtaranĩtwo mũigana-inĩ wothe.}}"
+  "dividendsNotConverted": "{count, plural, =1{Mũgai wa faida 1 wa {currencies} ndũrĩ na kĩgero kĩa gũcenjia mbeca, nĩ ũndũ ũcio ndũtaranĩtwo mũigana-inĩ wothe.} other{Mĩgai ya faida {count} ya {currencies} ndĩrĩ na kĩgero kĩa gũcenjia mbeca, nĩ ũndũ ũcio ndĩtaranĩtwo mũigana-inĩ wothe.}}",
+  "signOutTitle": "Nĩ ũrenda kuuma?",
+  "signOutBody": "Hisa ciaku, orodha ciaku, imenyithia cia thogora na maandĩko maku nĩ igũikara akaunti-inĩ yaku, na nĩ ikũeherio kĩndũ-inĩ gĩkĩ. Toonya rĩngĩ nĩguo ũcicookie.",
+  "signOutUnsaved": "Mĩgarũrũku ĩmwe ndĩnahota kũigwo akaunti-inĩ yaku (gũtirĩ connection?). Ũngiuma rĩu, nĩ ĩkũũra.",
+  "signOutAnyway": "Uma o na kũrĩ ũguo"
 }

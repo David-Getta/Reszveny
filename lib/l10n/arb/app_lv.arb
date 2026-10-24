@@ -857,5 +857,9 @@
   "syncTooLarge": "Jūsu dati ir pārāk lieli, lai tos sinhronizētu ar jūsu kontu. Izdzēsiet darījumus vai piezīmes, kas jums vairs nav vajadzīgas, un tiks mēģināts vēlreiz.",
   "noteFull": "Šīs akcijas piezīmes ir pilnas, tāpēc šis ieraksts netika pievienots. Saīsiniet piezīmes un mēģiniet vēlreiz.",
   "portfolioNoRateFor": "Pozīcijām {symbols} nav valūtas kursa.",
-  "dividendsNotConverted": "{count, plural, =1{{count} dividendei ({currencies}) nav valūtas kursa, tāpēc tā nav iekļauta kopsummās.} other{Dividendes bez valūtas kursa ({currencies}): {count}. Tās nav iekļautas kopsummās.}}"
+  "dividendsNotConverted": "{count, plural, =1{{count} dividendei ({currencies}) nav valūtas kursa, tāpēc tā nav iekļauta kopsummās.} other{Dividendes bez valūtas kursa ({currencies}): {count}. Tās nav iekļautas kopsummās.}}",
+  "signOutTitle": "Vai izrakstīties?",
+  "signOutBody": "Jūsu portfelis, saraksti, cenu brīdinājumi un piezīmes paliek jūsu kontā un tiek noņemti no šīs ierīces. Pierakstieties vēlreiz, lai tos atgūtu.",
+  "signOutUnsaved": "Dažas izmaiņas neizdevās saglabāt jūsu kontā (nav savienojuma?). Ja izrakstīsieties tagad, tās tiks zaudētas.",
+  "signOutAnyway": "Tomēr izrakstīties"
 }

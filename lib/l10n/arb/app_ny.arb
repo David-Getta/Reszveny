@@ -857,5 +857,9 @@
   "syncTooLarge": "Deta yanu ndi yayikulu kwambiri kuti ilumikizidwe ndi akaunti yanu. Chotsani zogula ndi zogulitsa kapena zolemba zomwe simukuzifunanso, ndipo kudzayesanso.",
   "noteFull": "Zolemba za sheya iyi zadzaza, choncho cholemba ichi sichinawonjezedwe. Fupikitsani zolembazo ndipo yesaninso.",
   "portfolioNoRateFor": "Palibe mtengo wosinthira ndalama wa {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Dividendi 1 mu {currencies} ilibe mtengo wosinthira ndalama, choncho siyiwerengedwa mu ziwerengero zonse.} other{Madividendi {count} mu {currencies} alibe mtengo wosinthira ndalama, choncho sawerengedwa mu ziwerengero zonse.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividendi 1 mu {currencies} ilibe mtengo wosinthira ndalama, choncho siyiwerengedwa mu ziwerengero zonse.} other{Madividendi {count} mu {currencies} alibe mtengo wosinthira ndalama, choncho sawerengedwa mu ziwerengero zonse.}}",
+  "signOutTitle": "Mukufuna kutuluka?",
+  "signOutBody": "Masheya anu, mindandanda, zidziwitso za mtengo ndi zolemba zimakhalabe mu akaunti yanu ndipo zimachotsedwa pa chipangizo ichi. Lowaninso kuti muzipezenso.",
+  "signOutUnsaved": "Zosintha zina sizinathe kusungidwa mu akaunti yanu (palibe intaneti?). Mukatuluka tsopano, zidzatayika.",
+  "signOutAnyway": "Tulukanibe"
 }

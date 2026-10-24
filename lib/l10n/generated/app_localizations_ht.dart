@@ -2897,6 +2897,20 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Dekonekte?';
+
+  @override
+  String get signOutBody =>
+      'Pòtfèy ou, lis ou yo, alèt pri ou yo ak nòt ou yo rete nan kont ou, epi y ap retire yo sou aparèy sa a. Konekte ankò pou w rekipere yo.';
+
+  @override
+  String get signOutUnsaved =>
+      'Gen kèk chanjman ki pa t ka anrejistre nan kont ou (pa gen koneksyon?). Si ou dekonekte kounye a, y ap pèdi.';
+
+  @override
+  String get signOutAnyway => 'Dekonekte kanmenm';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

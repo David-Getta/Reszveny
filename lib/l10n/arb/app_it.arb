@@ -857,5 +857,9 @@
   "syncTooLarge": "I tuoi dati sono troppo grandi per essere sincronizzati con il tuo account. Elimina le transazioni o le note che non ti servono più e la sincronizzazione verrà ritentata.",
   "noteFull": "Le note di questa azione sono piene, quindi questa voce non è stata aggiunta. Accorcia le note e riprova.",
   "portfolioNoRateFor": "Nessun tasso di cambio per {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividendo in {currencies} non ha un tasso di cambio ed è escluso dai totali.} other{{count} dividendi in {currencies} non hanno un tasso di cambio e sono esclusi dai totali.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividendo in {currencies} non ha un tasso di cambio ed è escluso dai totali.} other{{count} dividendi in {currencies} non hanno un tasso di cambio e sono esclusi dai totali.}}",
+  "signOutTitle": "Uscire dall’account?",
+  "signOutBody": "Il tuo portafoglio, le liste, gli avvisi di prezzo e le note restano nel tuo account e vengono rimossi da questo dispositivo. Accedi di nuovo per recuperarli.",
+  "signOutUnsaved": "Alcune modifiche non sono state salvate nel tuo account (nessuna connessione?). Se esci ora, andranno perse.",
+  "signOutAnyway": "Esci comunque"
 }

@@ -857,5 +857,9 @@
   "syncTooLarge": "Tus datos son demasiado grandes para sincronizarse con tu cuenta. Elimina las transacciones o notas que ya no necesites y se volverá a intentar.",
   "noteFull": "Las notas de esta acción están llenas, así que esta entrada no se ha añadido. Acorta las notas y vuelve a intentarlo.",
   "portfolioNoRateFor": "No hay tipo de cambio para {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividendo en {currencies} no tiene tipo de cambio y queda fuera de los totales.} other{{count} dividendos en {currencies} no tienen tipo de cambio y quedan fuera de los totales.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividendo en {currencies} no tiene tipo de cambio y queda fuera de los totales.} other{{count} dividendos en {currencies} no tienen tipo de cambio y quedan fuera de los totales.}}",
+  "signOutTitle": "¿Cerrar sesión?",
+  "signOutBody": "Tu cartera, tus listas, alertas de precio y notas se quedan en tu cuenta y se eliminan de este dispositivo. Vuelve a iniciar sesión para recuperarlas.",
+  "signOutUnsaved": "Algunos cambios no se pudieron guardar en tu cuenta (¿sin conexión?). Si cierras sesión ahora, se perderán.",
+  "signOutAnyway": "Cerrar sesión igualmente"
 }

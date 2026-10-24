@@ -857,5 +857,9 @@
   "syncTooLarge": "Xogtaadu aad bay u weyn tahay in lagu waafajiyo akoonkaaga. Tirtir macaamilada ama qoraallada aadan mar dambe u baahnayn, kadibna dib ayay isugu dayi doontaa.",
   "noteFull": "Qoraalka saamigan wuu buuxsamay, sidaa darteed galintan lama darin. Soo gaabi qoraalka oo isku day mar kale.",
   "portfolioNoRateFor": "{symbols} ma laha sicir sarrif.",
-  "dividendsNotConverted": "{count, plural, =1{1 faa'iido-saami oo {currencies} ah ma laha sicir sarrif, waana laga reebay wadarta.} other{{count} faa'iido-saami oo {currencies} ah ma laha sicir sarrif, waana laga reebay wadarta.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 faa'iido-saami oo {currencies} ah ma laha sicir sarrif, waana laga reebay wadarta.} other{{count} faa'iido-saami oo {currencies} ah ma laha sicir sarrif, waana laga reebay wadarta.}}",
+  "signOutTitle": "Ma ka baxaysaa?",
+  "signOutBody": "Portfoliyadaada, liisaskaaga, digniinaha qiimaha iyo qoraalladaadu waxay ku sii jiraan akoonkaaga, waxaana laga saarayaa qalabkan. Mar kale gal si aad dib ugu hesho.",
+  "signOutUnsaved": "Isbeddellada qaar lagama kaydin karin akoonkaaga (xiriir ma jiro?). Haddii aad hadda ka baxdo, way lumi doonaan.",
+  "signOutAnyway": "Si kastaba ka bax"
 }

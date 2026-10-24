@@ -2911,6 +2911,20 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Mukufuna kutuluka?';
+
+  @override
+  String get signOutBody =>
+      'Masheya anu, mindandanda, zidziwitso za mtengo ndi zolemba zimakhalabe mu akaunti yanu ndipo zimachotsedwa pa chipangizo ichi. Lowaninso kuti muzipezenso.';
+
+  @override
+  String get signOutUnsaved =>
+      'Zosintha zina sizinathe kusungidwa mu akaunti yanu (palibe intaneti?). Mukatuluka tsopano, zidzatayika.';
+
+  @override
+  String get signOutAnyway => 'Tulukanibe';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

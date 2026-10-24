@@ -857,5 +857,9 @@
   "syncTooLarge": "Maʼlumotlaringiz hisobingiz bilan sinxronlash uchun juda katta. Endi kerak boʻlmagan operatsiyalar yoki qaydlarni oʻchiring, shunda qayta urinib koʻriladi.",
   "noteFull": "Bu aksiya qaydi toʻlgan, shuning uchun bu yozuv qoʻshilmadi. Qaydni qisqartiring va qaytadan urinib koʻring.",
   "portfolioNoRateFor": "{symbols} uchun valyuta kursi yoʻq.",
-  "dividendsNotConverted": "{count, plural, =1{{currencies} valyutasidagi 1 ta dividend uchun valyuta kursi yoʻq, shuning uchun u jami summalarga kiritilmadi.} other{{currencies} valyutasidagi {count} ta dividend uchun valyuta kursi yoʻq, shuning uchun ular jami summalarga kiritilmadi.}}"
+  "dividendsNotConverted": "{count, plural, =1{{currencies} valyutasidagi 1 ta dividend uchun valyuta kursi yoʻq, shuning uchun u jami summalarga kiritilmadi.} other{{currencies} valyutasidagi {count} ta dividend uchun valyuta kursi yoʻq, shuning uchun ular jami summalarga kiritilmadi.}}",
+  "signOutTitle": "Chiqasizmi?",
+  "signOutBody": "Portfelingiz, roʻyxatlaringiz, narx bildirishnomalari va qaydlaringiz hisobingizda qoladi va bu qurilmadan oʻchiriladi. Ularni qaytarish uchun qayta kiring.",
+  "signOutUnsaved": "Baʼzi oʻzgarishlarni hisobingizga saqlab boʻlmadi (aloqa yoʻqmi?). Hozir chiqsangiz, ular yoʻqoladi.",
+  "signOutAnyway": "Baribir chiqish"
 }

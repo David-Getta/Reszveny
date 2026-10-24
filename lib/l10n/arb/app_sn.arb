@@ -857,5 +857,9 @@
   "syncTooLarge": "Data yako yakawandisa kuti iwiriraniswe neakaundi yako. Dzima zvakatengwa nezvakatengeswa kana zvinyorwa zvausisade, uye kuchaedza zvakare.",
   "noteFull": "Zvinyorwa zvesheya iyi zvazara, saka izvi hazvina kuwedzerwa. Pfupisa zvinyorwa wobva waedza zvakare.",
   "portfolioNoRateFor": "Hapana chiyero chekuchinjana mari che {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Dividendi 1 mu {currencies} harina chiyero chekuchinjana mari, saka harina kuverengerwa muhuwandu hwese.} other{Madividendi {count} mu {currencies} haana chiyero chekuchinjana mari, saka haana kuverengerwa muhuwandu hwese.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividendi 1 mu {currencies} harina chiyero chekuchinjana mari, saka harina kuverengerwa muhuwandu hwese.} other{Madividendi {count} mu {currencies} haana chiyero chekuchinjana mari, saka haana kuverengerwa muhuwandu hwese.}}",
+  "signOutTitle": "Unoda kubuda here?",
+  "signOutBody": "Potiforiyo yako, marondedzero, zviziviso zvemutengo nezvinyorwa zvinoramba zviri muakaundi yako uye zvinobviswa pamudziyo uyu. Pinda zvakare kuti uzviwanezve.",
+  "signOutUnsaved": "Dzimwe shanduko hadzina kukwanisa kuchengetwa muakaundi yako (hapana kubatana?). Ukabuda iye zvino, dzicharasika.",
+  "signOutAnyway": "Buda zvakadaro"
 }

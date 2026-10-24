@@ -2906,6 +2906,20 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'సైన్ అవుట్ చేయాలా?';
+
+  @override
+  String get signOutBody =>
+      'మీ పోర్ట్‌ఫోలియో, జాబితాలు, ధర హెచ్చరికలు, గమనికలు మీ ఖాతాలో ఉంటాయి, ఈ పరికరం నుండి తీసివేయబడతాయి. వాటిని తిరిగి పొందడానికి మళ్లీ సైన్ ఇన్ చేయండి.';
+
+  @override
+  String get signOutUnsaved =>
+      'కొన్ని మార్పులను మీ ఖాతాలో సేవ్ చేయలేకపోయాం (కనెక్షన్ లేదా?). ఇప్పుడు సైన్ అవుట్ చేస్తే, అవి పోతాయి.';
+
+  @override
+  String get signOutAnyway => 'అయినా సైన్ అవుట్';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

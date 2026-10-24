@@ -2900,6 +2900,20 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Çykmalymy?';
+
+  @override
+  String get signOutBody =>
+      'Portfeliňiz, sanawlaryňyz, baha duýduryşlaryňyz we bellikleriňiz hasabyňyzda galýar we bu enjamdan aýrylýar. Olary yzyna almak üçin täzeden giriň.';
+
+  @override
+  String get signOutUnsaved =>
+      'Käbir üýtgeşmeleri hasabyňyzda saklap bolmady (baglanyşyk ýokmy?). Häzir çyksaňyz, olar ýiter.';
+
+  @override
+  String get signOutAnyway => 'Barybir çyk';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

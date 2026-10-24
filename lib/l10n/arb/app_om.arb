@@ -857,5 +857,9 @@
   "syncTooLarge": "Odeeffannoon kee herrega kee waliin walsimsiisuuf baay'ee guddaadha. Bittaa fi gurgurtaa ykn yaadannoo kana booda hin barbaachisne haqi, achiis irra deebi'ee yaala.",
   "noteFull": "Yaadannoon aksiyoona kanaa guutameera, kanaaf galmeen kun hin dabalamne. Yaadannoo gabaabsiitii irra deebi'ii yaali.",
   "portfolioNoRateFor": "Sharafni {symbols} hin jiru.",
-  "dividendsNotConverted": "{count, plural, =1{Diviidendiin 1 {currencies} tiin sharafa hin qabu, kanaaf waliigala keessaa hafeera.} other{Diviidendiin {count} {currencies} tiin sharafa hin qaban, kanaaf waliigala keessaa hafaniiru.}}"
+  "dividendsNotConverted": "{count, plural, =1{Diviidendiin 1 {currencies} tiin sharafa hin qabu, kanaaf waliigala keessaa hafeera.} other{Diviidendiin {count} {currencies} tiin sharafa hin qaban, kanaaf waliigala keessaa hafaniiru.}}",
+  "signOutTitle": "Ba'uu barbaaddaa?",
+  "signOutBody": "Poortfooliyoon, tarreewwan, akeekkachiisni gatii fi yaadannoon kee herrega kee keessatti hafu, meeshaa kana irraa immoo ni haqamu. Isaan deebifachuuf irra deebi'ii seeni.",
+  "signOutUnsaved": "Jijjiiramoonni tokko tokko herrega kee keessatti olkaa'amuu hin dandeenye (walqunnamtiin hin jiruu?). Amma yoo baate, ni badu.",
+  "signOutAnyway": "Ta'us ba'i"
 }

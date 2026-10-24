@@ -2895,6 +2895,20 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Sign out?';
+
+  @override
+  String get signOutBody =>
+      'Your portfolio, lists, price alerts and notes stay in your account and are removed from this device. Sign in again to get them back.';
+
+  @override
+  String get signOutUnsaved =>
+      'Some changes could not be saved to your account (no connection?). If you sign out now, they will be lost.';
+
+  @override
+  String get signOutAnyway => 'Sign out anyway';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

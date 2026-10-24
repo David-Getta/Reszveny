@@ -2920,6 +2920,20 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Hivoaka?';
+
+  @override
+  String get signOutBody =>
+      'Mijanona ao amin\'ny kaontinao ny kitapom-bolanao, ny lisitrao, ny fanairana vidiny ary ny naotinao, fa esorina amin\'ity fitaovana ity. Midira indray mba hahazoana azy ireo indray.';
+
+  @override
+  String get signOutUnsaved =>
+      'Misy fanovana sasany tsy voatahiry tao amin\'ny kaontinao (tsy misy fifandraisana ve?). Raha mivoaka ianao izao dia ho very izy ireo.';
+
+  @override
+  String get signOutAnyway => 'Hivoaka ihany';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

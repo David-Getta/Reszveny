@@ -2898,6 +2898,20 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'سائن آؤٹ کریں؟';
+
+  @override
+  String get signOutBody =>
+      'آپ کا پورٹ فولیو، فہرستیں، قیمت کے الرٹس اور نوٹس آپ کے اکاؤنٹ میں رہتے ہیں اور اس آلے سے ہٹا دیے جاتے ہیں۔ انہیں واپس پانے کے لیے دوبارہ سائن ان کریں۔';
+
+  @override
+  String get signOutUnsaved =>
+      'کچھ تبدیلیاں آپ کے اکاؤنٹ میں محفوظ نہیں ہو سکیں (کنکشن نہیں ہے؟)۔ اگر آپ ابھی سائن آؤٹ کریں تو یہ ضائع ہو جائیں گی۔';
+
+  @override
+  String get signOutAnyway => 'پھر بھی سائن آؤٹ کریں';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

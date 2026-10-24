@@ -857,5 +857,9 @@
   "syncTooLarge": "Twoje dane są zbyt duże, aby zsynchronizować je z kontem. Usuń niepotrzebne już transakcje lub notatki, a synchronizacja zostanie ponowiona.",
   "noteFull": "Notatka do tej akcji jest pełna, więc ten wpis nie został dodany. Skróć notatkę i spróbuj ponownie.",
   "portfolioNoRateFor": "Brak kursu walut dla {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 dywidenda w {currencies} nie ma kursu walut i nie jest wliczana do sum.} other{Dywidendy w {currencies} bez kursu walut nie są wliczane do sum (liczba: {count}).}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dywidenda w {currencies} nie ma kursu walut i nie jest wliczana do sum.} other{Dywidendy w {currencies} bez kursu walut nie są wliczane do sum (liczba: {count}).}}",
+  "signOutTitle": "Wylogować się?",
+  "signOutBody": "Twój portfel, listy, alerty cenowe i notatki pozostaną na Twoim koncie i zostaną usunięte z tego urządzenia. Zaloguj się ponownie, aby je odzyskać.",
+  "signOutUnsaved": "Niektórych zmian nie udało się zapisać na Twoim koncie (brak połączenia?). Jeśli wylogujesz się teraz, zostaną utracone.",
+  "signOutAnyway": "Wyloguj się mimo to"
 }

@@ -857,5 +857,9 @@
   "syncTooLarge": "Vaši su podaci preveliki za sinkronizaciju s vašim računom. Izbrišite transakcije ili bilješke koje vam više ne trebaju i pokušat će se ponovno.",
   "noteFull": "Bilješke o ovoj dionici su pune, pa ovaj unos nije dodan. Skratite bilješke i pokušajte ponovno.",
   "portfolioNoRateFor": "Nema tečaja za {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{{count} dividenda u {currencies} nema tečaja i nije uračunata u zbrojeve.} other{Dividende u {currencies} ({count}) nemaju tečaja i nisu uračunate u zbrojeve.}}"
+  "dividendsNotConverted": "{count, plural, =1{{count} dividenda u {currencies} nema tečaja i nije uračunata u zbrojeve.} other{Dividende u {currencies} ({count}) nemaju tečaja i nisu uračunate u zbrojeve.}}",
+  "signOutTitle": "Odjaviti se?",
+  "signOutBody": "Vaš portfelj, popisi, obavijesti o cijeni i bilješke ostaju na vašem računu i uklanjaju se s ovog uređaja. Ponovno se prijavite da biste ih vratili.",
+  "signOutUnsaved": "Neke promjene nije bilo moguće spremiti na vaš račun (nema veze?). Ako se sada odjavite, bit će izgubljene.",
+  "signOutAnyway": "Svejedno se odjavi"
 }

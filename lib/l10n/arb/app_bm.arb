@@ -857,5 +857,9 @@
   "syncTooLarge": "I ka kunnafoniw ka bon kojugu ka kɛ kelen ye i ka kɔnti la. Sanniw ni feereliw walima sɛbɛnniw minnu tɛ i mago ye tun, olu jɔsi, o kɔ a bɛ segin ka a kɛ.",
   "noteFull": "Nin aksiyɔn ka sɛbɛnniw falen don, o de kosɔn nin sɛbɛnni ma fara a kan. Sɛbɛnniw surunya ka a lajɛ tugun.",
   "portfolioNoRateFor": "{symbols} wari falen hakɛ tɛ yen.",
-  "dividendsNotConverted": "{count, plural, =1{Dividandi 1 min bɛ {currencies} la, o wari falen hakɛ tɛ yen, o la a ma jate hakɛ bɛɛ lajɛlenw na.} other{Dividandi {count} minnu bɛ {currencies} la, olu wari falen hakɛ tɛ yen, o la u ma jate hakɛ bɛɛ lajɛlenw na.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividandi 1 min bɛ {currencies} la, o wari falen hakɛ tɛ yen, o la a ma jate hakɛ bɛɛ lajɛlenw na.} other{Dividandi {count} minnu bɛ {currencies} la, olu wari falen hakɛ tɛ yen, o la u ma jate hakɛ bɛɛ lajɛlenw na.}}",
+  "signOutTitle": "I bɛ bɔ kɔnti la wa?",
+  "signOutBody": "I ka aksiyɔn kɛsu, lisiw, sɔngɔ lasɔminiw ani sɛbɛnniw bɛ to i ka kɔnti la, u bɛ bɔ nin minɛn in kan. Don tugun walasa ka u sɔrɔ kokura.",
+  "signOutUnsaved": "Falenni dɔw ma se ka mara i ka kɔnti la (jɛɲɔgɔnya tɛ yen wa?). Ni i bɔra sisan, u bɛna tunun.",
+  "signOutAnyway": "Bɔ kɔnti la o bɛɛ n'a ta"
 }

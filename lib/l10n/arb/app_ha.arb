@@ -857,5 +857,9 @@
   "syncTooLarge": "Bayananka sun yi yawa matuƙa don daidaitawa da asusunka. Share ma'amaloli ko bayanan da ba ka buƙata yanzu, sai a sake gwadawa.",
   "noteFull": "Bayanan wannan hannun jari sun cika, don haka ba a ƙara wannan shigarwar ba. Rage tsawon bayanan sannan ka sake gwadawa.",
   "portfolioNoRateFor": "Babu farashin musaya na {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Rabon riba 1 a {currencies} ba shi da farashin musaya, don haka ba a haɗa shi a cikin jimilla ba.} other{Rabon riba {count} a {currencies} ba su da farashin musaya, don haka ba a haɗa su a cikin jimilla ba.}}"
+  "dividendsNotConverted": "{count, plural, =1{Rabon riba 1 a {currencies} ba shi da farashin musaya, don haka ba a haɗa shi a cikin jimilla ba.} other{Rabon riba {count} a {currencies} ba su da farashin musaya, don haka ba a haɗa su a cikin jimilla ba.}}",
+  "signOutTitle": "Za ka fita?",
+  "signOutBody": "Jakar hannun jarinka, jerorinka, faɗakarwar farashi da bayananka za su kasance a asusunka, kuma za a cire su daga wannan na'ura. Sake shiga don dawo da su.",
+  "signOutUnsaved": "Ba a iya adana wasu canje-canje a asusunka ba (babu haɗi?). Idan ka fita yanzu, za su ɓace.",
+  "signOutAnyway": "Fita duk da haka"
 }

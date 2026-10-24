@@ -2805,6 +2805,20 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'サインアウトしますか？';
+
+  @override
+  String get signOutBody =>
+      'ポートフォリオ、リスト、価格アラート、メモはアカウントに残り、この端末からは削除されます。もう一度サインインすると元に戻ります。';
+
+  @override
+  String get signOutUnsaved =>
+      '一部の変更をアカウントに保存できませんでした（オフラインかもしれません）。今サインアウトすると、これらの変更は失われます。';
+
+  @override
+  String get signOutAnyway => 'それでもサインアウト';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

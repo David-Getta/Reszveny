@@ -857,5 +857,9 @@
   "syncTooLarge": "Data gị buru oke ibu imekọrịta ya na akaụntụ gị. Hichapụ azụmahịa ma ọ bụ ndetu ndị ị na-achọghịzi, ọ ga-anwa ọzọ.",
   "noteFull": "Ndetu stock a ejupụtala, ya mere etinyeghị ihe a. Mee ka ndetu ahụ dị mkpụmkpụ ma nwaa ọzọ.",
   "portfolioNoRateFor": "Enweghị ọnụego mgbanwe maka {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Nkesa uru 1 na {currencies} enweghị ọnụego mgbanwe, ya mere agụnyeghị ya na ngụkọta.} other{Nkesa uru {count} na {currencies} enweghị ọnụego mgbanwe, ya mere agụnyeghị ha na ngụkọta.}}"
+  "dividendsNotConverted": "{count, plural, =1{Nkesa uru 1 na {currencies} enweghị ọnụego mgbanwe, ya mere agụnyeghị ya na ngụkọta.} other{Nkesa uru {count} na {currencies} enweghị ọnụego mgbanwe, ya mere agụnyeghị ha na ngụkọta.}}",
+  "signOutTitle": "Ị chọrọ ịpụ?",
+  "signOutBody": "Portfolio gị, ndepụta gị, ọkwa ọnụahịa na ndetu gị ga-anọgide n'akaụntụ gị, a ga-ewepụkwa ha na ngwaọrụ a. Banye ọzọ ka i nwetaghachi ha.",
+  "signOutUnsaved": "Enweghị ike ichekwa ụfọdụ mgbanwe n'akaụntụ gị (enweghị njikọ?). Ọ bụrụ na ị pụọ ugbu a, ha ga-efu.",
+  "signOutAnyway": "Pụọ n'agbanyeghị"
 }

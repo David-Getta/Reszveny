@@ -2915,6 +2915,20 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Olingi kobima?';
+
+  @override
+  String get signOutBody =>
+      'Portefeuille na yo, ba liste, makebisi ya ntalo mpe ba note na yo etikali na compte na yo mpe ekolongolama na esaleli oyo. Kɔta lisusu mpo ozwa yango lisusu.';
+
+  @override
+  String get signOutUnsaved =>
+      'Mbongwana mosusu ekokaki kobombama na compte na yo te (connexion ezali te?). Soki obimi sikoyo, ekobunga.';
+
+  @override
+  String get signOutAnyway => 'Bima kaka';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

@@ -2876,6 +2876,20 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'ចាកចេញពីគណនី?';
+
+  @override
+  String get signOutBody =>
+      'ផលប័ត្រ បញ្ជី ការជូនដំណឹងតម្លៃ និងកំណត់ចំណាំរបស់អ្នក នៅតែមាននៅក្នុងគណនីរបស់អ្នក ហើយនឹងត្រូវលុបចេញពីឧបករណ៍នេះ។ សូមចូលគណនីម្តងទៀតដើម្បីយកវាមកវិញ។';
+
+  @override
+  String get signOutUnsaved =>
+      'ការផ្លាស់ប្តូរមួយចំនួនមិនអាចរក្សាទុកក្នុងគណនីរបស់អ្នកបានទេ (គ្មានការតភ្ជាប់?)។ ប្រសិនបើអ្នកចាកចេញឥឡូវនេះ ការផ្លាស់ប្តូរទាំងនោះនឹងបាត់បង់។';
+
+  @override
+  String get signOutAnyway => 'នៅតែចាកចេញ';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

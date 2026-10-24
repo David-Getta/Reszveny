@@ -2895,6 +2895,20 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Keluar dari akun?';
+
+  @override
+  String get signOutBody =>
+      'Portofolio, daftar, peringatan harga, dan catatan Anda tetap ada di akun Anda dan dihapus dari perangkat ini. Masuk lagi untuk mendapatkannya kembali.';
+
+  @override
+  String get signOutUnsaved =>
+      'Beberapa perubahan tidak dapat disimpan ke akun Anda (tidak ada koneksi?). Jika Anda keluar sekarang, perubahan tersebut akan hilang.';
+
+  @override
+  String get signOutAnyway => 'Tetap keluar';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

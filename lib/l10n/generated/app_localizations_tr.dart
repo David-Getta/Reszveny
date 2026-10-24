@@ -2898,6 +2898,20 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Çıkış yapılsın mı?';
+
+  @override
+  String get signOutBody =>
+      'Portföyünüz, listeleriniz, fiyat alarmlarınız ve notlarınız hesabınızda kalır ve bu cihazdan kaldırılır. Geri almak için yeniden giriş yapın.';
+
+  @override
+  String get signOutUnsaved =>
+      'Bazı değişiklikler hesabınıza kaydedilemedi (bağlantı yok mu?). Şimdi çıkış yaparsanız kaybolacaklar.';
+
+  @override
+  String get signOutAnyway => 'Yine de çıkış yap';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

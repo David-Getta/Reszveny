@@ -857,5 +857,9 @@
   "syncTooLarge": "Ba données biebe bidi binene bikole bua synchronisation ne compte webe. Jimija kusumba ne kusumbisha anyi mifundu iudi kuyi ne dijinga nayi kabidi, neyikebe kabidi.",
   "noteFull": "Mifundu ya action eyi mmiyule, nunku bualu ebu kabuakabuejibua to. Kepesha mifundu ne teta kabidi.",
   "portfolioNoRateFor": "Kakuena taux wa mfranga wa {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Dividende 1 mu {currencies} kayena ne taux wa mfranga, nunku katuena tuyibala mu mishinga yonso.} other{Dividende {count} mu {currencies} kayena ne taux wa mfranga, nunku katuena tuyibala mu mishinga yonso.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividende 1 mu {currencies} kayena ne taux wa mfranga, nunku katuena tuyibala mu mishinga yonso.} other{Dividende {count} mu {currencies} kayena ne taux wa mfranga, nunku katuena tuyibala mu mishinga yonso.}}",
+  "signOutTitle": "Udi musue kupatuka?",
+  "signOutBody": "Portefeuille webe, ma-liste, alerte ya mushinga ne mifundu yebe bidi bishala mu compte webe, ne nebiumushibue mu tshintu etshi. Buela kabidi bua kubipeta kabidi.",
+  "signOutUnsaved": "Bishintulula bimue kabiena bilame mu compte webe (kakuena connexion to?). Biwapatuka katataka, nebijimine.",
+  "signOutAnyway": "Patuka nansha nanku"
 }

@@ -2869,6 +2869,20 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'ອອກຈາກລະບົບບໍ?';
+
+  @override
+  String get signOutBody =>
+      'ພອດໂຟລິໂອ, ລາຍການ, ການແຈ້ງເຕືອນລາຄາ ແລະ ບັນທຶກຂອງທ່ານ ຍັງຄົງຢູ່ໃນບັນຊີຂອງທ່ານ ແລະ ຈະຖືກລຶບອອກຈາກອຸປະກອນນີ້. ເຂົ້າສູ່ລະບົບອີກຄັ້ງເພື່ອເອົາກັບຄືນມາ.';
+
+  @override
+  String get signOutUnsaved =>
+      'ການປ່ຽນແປງບາງຢ່າງບໍ່ສາມາດບັນທຶກໄວ້ໃນບັນຊີຂອງທ່ານໄດ້ (ບໍ່ມີການເຊື່ອມຕໍ່ບໍ?). ຫາກທ່ານອອກຈາກລະບົບຕອນນີ້, ການປ່ຽນແປງເຫຼົ່ານັ້ນຈະສູນຫາຍ.';
+
+  @override
+  String get signOutAnyway => 'ອອກຈາກລະບົບເລີຍ';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

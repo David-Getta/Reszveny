@@ -2974,6 +2974,20 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Odhlásiť sa?';
+
+  @override
+  String get signOutBody =>
+      'Vaše portfólio, zoznamy, cenové upozornenia a poznámky zostanú vo vašom účte a z tohto zariadenia sa odstránia. Ak ich chcete späť, znova sa prihláste.';
+
+  @override
+  String get signOutUnsaved =>
+      'Niektoré zmeny sa nepodarilo uložiť do vášho účtu (bez pripojenia?). Ak sa teraz odhlásite, stratia sa.';
+
+  @override
+  String get signOutAnyway => 'Aj tak sa odhlásiť';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

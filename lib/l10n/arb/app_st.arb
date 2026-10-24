@@ -857,5 +857,9 @@
   "syncTooLarge": "Data ya hao e kgolo haholo hore e ka sinkronaeswa le akhaonto ya hao. Hlakola ditheko le dithekiso kapa dintlha tseo o sa di hlokeng hape, mme ho tla lekwa hape.",
   "noteFull": "Ntlha ya shere ena e tletse, kahoo kenyo ena ha e a eketswa. Kgutsufatsa ntlha mme o leke hape.",
   "portfolioNoRateFor": "Ha ho sekgahla sa phapanyetsano sa {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Dividende e 1 ka {currencies} ha e na sekgahla sa phapanyetsano, kahoo ha e a kenyelletswa dikakaretsong.} other{Dividende tse {count} ka {currencies} ha di na sekgahla sa phapanyetsano, kahoo ha di a kenyelletswa dikakaretsong.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividende e 1 ka {currencies} ha e na sekgahla sa phapanyetsano, kahoo ha e a kenyelletswa dikakaretsong.} other{Dividende tse {count} ka {currencies} ha di na sekgahla sa phapanyetsano, kahoo ha di a kenyelletswa dikakaretsong.}}",
+  "signOutTitle": "O batla ho tswa?",
+  "signOutBody": "Potefolio ya hao, manane, ditsebiso tsa theko le dintlha di sala akhaontong ya hao mme di tloswa sesebedisweng sena. Kena hape hore o di fumane hape.",
+  "signOutUnsaved": "Diphetoho tse ding ha di a kgona ho bolokwa akhaontong ya hao (ha ho kgokahano?). Ha o ka tswa jwale, di tla lahleha.",
+  "signOutAnyway": "Tswa leha ho le jwalo"
 }

@@ -2970,6 +2970,20 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'هل تريد تسجيل الخروج؟';
+
+  @override
+  String get signOutBody =>
+      'تبقى محفظتك وقوائمك وتنبيهات السعر وملاحظاتك في حسابك، وتُزال من هذا الجهاز. سجّل الدخول مجددًا لاستعادتها.';
+
+  @override
+  String get signOutUnsaved =>
+      'تعذّر حفظ بعض التغييرات في حسابك (لا يوجد اتصال؟). إذا سجّلت الخروج الآن، فستضيع هذه التغييرات.';
+
+  @override
+  String get signOutAnyway => 'تسجيل الخروج على أي حال';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

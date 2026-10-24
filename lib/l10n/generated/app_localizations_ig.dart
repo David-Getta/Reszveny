@@ -2891,6 +2891,20 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Ị chọrọ ịpụ?';
+
+  @override
+  String get signOutBody =>
+      'Portfolio gị, ndepụta gị, ọkwa ọnụahịa na ndetu gị ga-anọgide n\'akaụntụ gị, a ga-ewepụkwa ha na ngwaọrụ a. Banye ọzọ ka i nwetaghachi ha.';
+
+  @override
+  String get signOutUnsaved =>
+      'Enweghị ike ichekwa ụfọdụ mgbanwe n\'akaụntụ gị (enweghị njikọ?). Ọ bụrụ na ị pụọ ugbu a, ha ga-efu.';
+
+  @override
+  String get signOutAnyway => 'Pụọ n\'agbanyeghị';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

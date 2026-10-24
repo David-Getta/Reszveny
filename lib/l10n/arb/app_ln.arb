@@ -857,5 +857,9 @@
   "syncTooLarge": "Ba données na yo eleki monene mpo na synchronisation na compte na yo. Limwisa bosombi mpe boteki to ba note oyo osengeli na yango lisusu te, mpe ekomeka lisusu.",
   "noteFull": "Ba note ya action oyo etondi, yango wana likambo oyo ebakisami te. Kitisa ba note mpe meka lisusu.",
   "portfolioNoRateFor": "Taux ya mbɔngɔ ezali te mpo na {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Dividende {count} na {currencies} ezangi taux ya mbɔngɔ, yango wana etangami te na mitango.} other{Ba dividende {count} na {currencies} ezangi taux ya mbɔngɔ, yango wana etangami te na mitango.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividende {count} na {currencies} ezangi taux ya mbɔngɔ, yango wana etangami te na mitango.} other{Ba dividende {count} na {currencies} ezangi taux ya mbɔngɔ, yango wana etangami te na mitango.}}",
+  "signOutTitle": "Olingi kobima?",
+  "signOutBody": "Portefeuille na yo, ba liste, makebisi ya ntalo mpe ba note na yo etikali na compte na yo mpe ekolongolama na esaleli oyo. Kɔta lisusu mpo ozwa yango lisusu.",
+  "signOutUnsaved": "Mbongwana mosusu ekokaki kobombama na compte na yo te (connexion ezali te?). Soki obimi sikoyo, ekobunga.",
+  "signOutAnyway": "Bima kaka"
 }

@@ -2910,6 +2910,20 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Të dilni nga llogaria?';
+
+  @override
+  String get signOutBody =>
+      'Portofoli, listat, alarmet e çmimit dhe shënimet tuaja mbeten në llogarinë tuaj dhe hiqen nga kjo pajisje. Hyni përsëri për t’i rikthyer.';
+
+  @override
+  String get signOutUnsaved =>
+      'Disa ndryshime nuk mund të ruheshin në llogarinë tuaj (nuk ka lidhje?). Nëse dilni tani, ato do të humbasin.';
+
+  @override
+  String get signOutAnyway => 'Dil gjithsesi';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

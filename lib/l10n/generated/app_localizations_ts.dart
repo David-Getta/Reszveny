@@ -2923,6 +2923,20 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'U lava ku huma?';
+
+  @override
+  String get signOutBody =>
+      'Phothifoliyo ya wena, minxaxamelo, switiviso swa nxavo na tinotsi swi tshama eka akhawunti ya wena kutani swi susiwa eka xitirhisiwa lexi. Nghena nakambe leswaku u swi kuma nakambe.';
+
+  @override
+  String get signOutUnsaved =>
+      'Swin\'wana swa ku cinca a swi kotanga ku hlayisiwa eka akhawunti ya wena (ku hava vuhlanganisi?). Loko u huma sweswi, swi ta lahleka.';
+
+  @override
+  String get signOutAnyway => 'Huma hambiswiritano';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

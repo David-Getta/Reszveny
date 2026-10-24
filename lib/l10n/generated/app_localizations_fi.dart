@@ -2900,6 +2900,20 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Kirjaudutaanko ulos?';
+
+  @override
+  String get signOutBody =>
+      'Salkkusi, listasi, kurssihälytyksesi ja muistiinpanosi säilyvät tililläsi ja poistetaan tältä laitteelta. Saat ne takaisin kirjautumalla uudelleen sisään.';
+
+  @override
+  String get signOutUnsaved =>
+      'Joitakin muutoksia ei voitu tallentaa tilillesi (ei yhteyttä?). Jos kirjaudut nyt ulos, ne menetetään.';
+
+  @override
+  String get signOutAnyway => 'Kirjaudu silti ulos';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

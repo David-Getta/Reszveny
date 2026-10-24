@@ -2912,6 +2912,20 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Uzolele kubasika?';
+
+  @override
+  String get signOutBody =>
+      'Portefeuille na nge, ba lisiti, nkebisu za ntalu ye ba note na nge ta bikala na compte na nge, kansi bo ta katula yo na kisadilu kiaki. Kota diaka sambu na kuzwa yo diaka.';
+
+  @override
+  String get signOutUnsaved =>
+      'Bansoba yankaka me lembana kubumbana na compte na nge (connexion kele ve?). Kana nge basika ntangu yai, yo ta vila.';
+
+  @override
+  String get signOutAnyway => 'Basika kaka';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

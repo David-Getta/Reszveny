@@ -857,5 +857,9 @@
   "syncTooLarge": "Data anjeun kagedéan pikeun disingkronkeun sareng akun anjeun. Pupus transaksi atanapi catetan anu tos teu diperyogikeun, teras bakal dicobian deui.",
   "noteFull": "Catetan pikeun saham ieu tos pinuh, janten éntri ieu teu ditambihkeun. Pondokkeun catetanana teras cobaan deui.",
   "portfolioNoRateFor": "Teu aya kurs pikeun {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 dividen dina {currencies} teu gaduh kurs sareng teu diasupkeun kana total.} other{{count} dividen dina {currencies} teu gaduh kurs sareng teu diasupkeun kana total.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 dividen dina {currencies} teu gaduh kurs sareng teu diasupkeun kana total.} other{{count} dividen dina {currencies} teu gaduh kurs sareng teu diasupkeun kana total.}}",
+  "signOutTitle": "Kaluar?",
+  "signOutBody": "Portofolio, daptar, béwara harga, jeung catetan anjeun tetep aya dina akun anjeun sarta dipiceun tina parangkat ieu. Asup deui pikeun meunangkeun deui.",
+  "signOutUnsaved": "Sababaraha parobahan teu bisa disimpen ka akun anjeun (teu aya sambungan?). Upami anjeun kaluar ayeuna, parobahan éta bakal leungit.",
+  "signOutAnyway": "Tetep kaluar"
 }

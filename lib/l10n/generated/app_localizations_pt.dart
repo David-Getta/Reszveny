@@ -2906,6 +2906,20 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Terminar sessão?';
+
+  @override
+  String get signOutBody =>
+      'A sua carteira, listas, alertas de preço e notas ficam na sua conta e são removidos deste dispositivo. Inicie sessão novamente para os recuperar.';
+
+  @override
+  String get signOutUnsaved =>
+      'Não foi possível guardar algumas alterações na sua conta (sem ligação?). Se terminar sessão agora, serão perdidas.';
+
+  @override
+  String get signOutAnyway => 'Terminar mesmo assim';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

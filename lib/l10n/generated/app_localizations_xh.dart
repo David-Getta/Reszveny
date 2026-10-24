@@ -2913,6 +2913,20 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Ufuna ukuphuma?';
+
+  @override
+  String get signOutBody =>
+      'Ipotifoliyo yakho, uluhlu, izilumkiso zamaxabiso namanqaku zihlala kwiakhawunti yakho kwaye zisuswa kwesi sixhobo. Ngena kwakhona ukuze uzibuyise.';
+
+  @override
+  String get signOutUnsaved =>
+      'Olunye utshintsho alukwazanga ukugcinwa kwiakhawunti yakho (akukho qhagamshelo?). Ukuba uphuma ngoku, luya kulahleka.';
+
+  @override
+  String get signOutAnyway => 'Phuma noko';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

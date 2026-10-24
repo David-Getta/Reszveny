@@ -857,5 +857,9 @@
   "syncTooLarge": "Maglumatlaryňyz hasabyňyz bilen sinhronlamak üçin örän uly. Indi gerek däl amallary ýa-da bellikleri pozuň, şonda täzeden synanyşylar.",
   "noteFull": "Bu paýnamanyň belligi doldy, şonuň üçin bu ýazgy goşulmady. Belligi gysgaldyň we gaýtadan synanyşyň.",
   "portfolioNoRateFor": "{symbols} üçin walýuta hümmeti ýok.",
-  "dividendsNotConverted": "{count, plural, =1{{currencies} pul birligindäki 1 diwidendiň walýuta hümmeti ýok, şonuň üçin jemlere goşulmady.} other{{currencies} pul birligindäki {count} diwidendiň walýuta hümmeti ýok, şonuň üçin jemlere goşulmady.}}"
+  "dividendsNotConverted": "{count, plural, =1{{currencies} pul birligindäki 1 diwidendiň walýuta hümmeti ýok, şonuň üçin jemlere goşulmady.} other{{currencies} pul birligindäki {count} diwidendiň walýuta hümmeti ýok, şonuň üçin jemlere goşulmady.}}",
+  "signOutTitle": "Çykmalymy?",
+  "signOutBody": "Portfeliňiz, sanawlaryňyz, baha duýduryşlaryňyz we bellikleriňiz hasabyňyzda galýar we bu enjamdan aýrylýar. Olary yzyna almak üçin täzeden giriň.",
+  "signOutUnsaved": "Käbir üýtgeşmeleri hasabyňyzda saklap bolmady (baglanyşyk ýokmy?). Häzir çyksaňyz, olar ýiter.",
+  "signOutAnyway": "Barybir çyk"
 }

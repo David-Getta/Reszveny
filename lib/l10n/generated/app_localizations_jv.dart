@@ -2899,6 +2899,20 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Metu saka akun?';
+
+  @override
+  String get signOutBody =>
+      'Portofolio, dhaptar, pèngetan rega, lan cathetan sampeyan tetep ana ing akun sampeyan lan dibusak saka piranti iki. Mlebu manèh kanggo mbalèkaké.';
+
+  @override
+  String get signOutUnsaved =>
+      'Sawetara owah-owahan ora bisa disimpen ing akun sampeyan (ora ana sambungan?). Yen sampeyan metu saiki, owah-owahan kasebut bakal ilang.';
+
+  @override
+  String get signOutAnyway => 'Tetep metu';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

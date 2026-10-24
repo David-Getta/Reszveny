@@ -4884,6 +4884,30 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{1 dividend in {currencies} has no exchange rate and is left out of the totals.} other{{count} dividends in {currencies} have no exchange rate and are left out of the totals.}}'**
   String dividendsNotConverted(int count, String currencies);
 
+  /// Title of the confirmation dialog before signing out.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign out?'**
+  String get signOutTitle;
+
+  /// Body of the sign-out confirmation: the synced data is removed from the device and comes back when signing in again.
+  ///
+  /// In en, this message translates to:
+  /// **'Your portfolio, lists, price alerts and notes stay in your account and are removed from this device. Sign in again to get them back.'**
+  String get signOutBody;
+
+  /// Warning shown when the last changes could not be uploaded before signing out.
+  ///
+  /// In en, this message translates to:
+  /// **'Some changes could not be saved to your account (no connection?). If you sign out now, they will be lost.'**
+  String get signOutUnsaved;
+
+  /// Button: sign out even though some changes are not saved to the account.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign out anyway'**
+  String get signOutAnyway;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

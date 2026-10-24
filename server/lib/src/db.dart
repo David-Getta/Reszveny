@@ -446,6 +446,12 @@ class Store {
     // A meghívó „eszközei” is: a beolvadt névtelen fiók nem foglal tovább helyet.
     _db.execute('UPDATE OR IGNORE invite_devices SET user_id = ? WHERE user_id = ?', [into, from]);
     _db.execute('DELETE FROM invite_devices WHERE user_id = ?', [from]);
+    // A névtelenül megosztott ajánlókód és az általa meghívottak is a fiókhoz kerülnek
+    // (különben egy elérhetetlen fiók kapná a jutalmat). Ha a fióknak már van kódja, a
+    // régi megszűnik; saját magát a fiók nem ajánlhatja.
+    _db.execute('UPDATE OR IGNORE referral_codes SET user_id = ? WHERE user_id = ?', [into, from]);
+    _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [from]);
+    _db.execute('UPDATE referrals SET referrer_id = ? WHERE referrer_id = ? AND referee_id != ?', [into, from, into]);
   }
 
   void clearStripeSubscription(String userId) =>

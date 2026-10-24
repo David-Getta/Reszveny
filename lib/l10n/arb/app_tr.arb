@@ -857,5 +857,9 @@
   "syncTooLarge": "Verileriniz hesabınızla senkronize edilemeyecek kadar büyük. Artık ihtiyacınız olmayan işlemleri veya notları silin, ardından yeniden denenecek.",
   "noteFull": "Bu hissenin notu dolu, bu yüzden bu kayıt eklenmedi. Notu kısaltıp tekrar deneyin.",
   "portfolioNoRateFor": "{symbols} için döviz kuru yok.",
-  "dividendsNotConverted": "{count, plural, =1{{currencies} cinsinden 1 temettünün döviz kuru olmadığından toplamlara dahil edilmedi.} other{{currencies} cinsinden {count} temettünün döviz kuru olmadığından toplamlara dahil edilmedi.}}"
+  "dividendsNotConverted": "{count, plural, =1{{currencies} cinsinden 1 temettünün döviz kuru olmadığından toplamlara dahil edilmedi.} other{{currencies} cinsinden {count} temettünün döviz kuru olmadığından toplamlara dahil edilmedi.}}",
+  "signOutTitle": "Çıkış yapılsın mı?",
+  "signOutBody": "Portföyünüz, listeleriniz, fiyat alarmlarınız ve notlarınız hesabınızda kalır ve bu cihazdan kaldırılır. Geri almak için yeniden giriş yapın.",
+  "signOutUnsaved": "Bazı değişiklikler hesabınıza kaydedilemedi (bağlantı yok mu?). Şimdi çıkış yaparsanız kaybolacaklar.",
+  "signOutAnyway": "Yine de çıkış yap"
 }

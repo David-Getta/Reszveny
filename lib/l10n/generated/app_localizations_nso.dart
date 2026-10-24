@@ -2920,6 +2920,20 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'O nyaka go tšwa?';
+
+  @override
+  String get signOutBody =>
+      'Photefolio ya gago, mananeo, ditemošo tša theko le dintlha di šala akhaontong ya gago gomme di tlošwa sedirišweng se. Tsena gape gore o di hwetše morago.';
+
+  @override
+  String get signOutUnsaved =>
+      'Diphetogo tše dingwe di be di sa kgone go bolokwa akhaontong ya gago (ga go na kgokagano?). Ge o ka tšwa bjale, di tla lahlega.';
+
+  @override
+  String get signOutAnyway => 'Tšwa le ge go le bjalo';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

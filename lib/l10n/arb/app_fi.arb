@@ -857,5 +857,9 @@
   "syncTooLarge": "Tietosi ovat liian suuret synkronoitaviksi tilillesi. Poista tapahtumia tai muistiinpanoja, joita et enää tarvitse, niin synkronointia yritetään uudelleen.",
   "noteFull": "Tämän osakkeen muistiinpanot ovat täynnä, joten tätä merkintää ei lisätty. Lyhennä muistiinpanoja ja yritä uudelleen.",
   "portfolioNoRateFor": "Ei valuuttakurssia kohteille {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{1 osinko ({currencies}) jää summien ulkopuolelle, koska sille ei ole valuuttakurssia.} other{{count} osinkoa ({currencies}) jää summien ulkopuolelle, koska niille ei ole valuuttakurssia.}}"
+  "dividendsNotConverted": "{count, plural, =1{1 osinko ({currencies}) jää summien ulkopuolelle, koska sille ei ole valuuttakurssia.} other{{count} osinkoa ({currencies}) jää summien ulkopuolelle, koska niille ei ole valuuttakurssia.}}",
+  "signOutTitle": "Kirjaudutaanko ulos?",
+  "signOutBody": "Salkkusi, listasi, kurssihälytyksesi ja muistiinpanosi säilyvät tililläsi ja poistetaan tältä laitteelta. Saat ne takaisin kirjautumalla uudelleen sisään.",
+  "signOutUnsaved": "Joitakin muutoksia ei voitu tallentaa tilillesi (ei yhteyttä?). Jos kirjaudut nyt ulos, ne menetetään.",
+  "signOutAnyway": "Kirjaudu silti ulos"
 }

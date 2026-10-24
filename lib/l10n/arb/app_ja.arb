@@ -857,5 +857,9 @@
   "syncTooLarge": "データが大きすぎるため、アカウントと同期できません。不要になった取引やメモを削除すると、再試行します。",
   "noteFull": "この銘柄のメモがいっぱいのため、この内容は追加されませんでした。メモを短くしてもう一度お試しください。",
   "portfolioNoRateFor": "{symbols}の為替レートはありません。",
-  "dividendsNotConverted": "{count, plural, =1{{currencies}建ての配当金 1 件は為替レートがないため、合計に含まれません。} other{{currencies}建ての配当金 {count} 件は為替レートがないため、合計に含まれません。}}"
+  "dividendsNotConverted": "{count, plural, =1{{currencies}建ての配当金 1 件は為替レートがないため、合計に含まれません。} other{{currencies}建ての配当金 {count} 件は為替レートがないため、合計に含まれません。}}",
+  "signOutTitle": "サインアウトしますか？",
+  "signOutBody": "ポートフォリオ、リスト、価格アラート、メモはアカウントに残り、この端末からは削除されます。もう一度サインインすると元に戻ります。",
+  "signOutUnsaved": "一部の変更をアカウントに保存できませんでした（オフラインかもしれません）。今サインアウトすると、これらの変更は失われます。",
+  "signOutAnyway": "それでもサインアウト"
 }

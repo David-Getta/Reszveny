@@ -2902,6 +2902,20 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Ungependa kutoka?';
+
+  @override
+  String get signOutBody =>
+      'Jalada lako la hisa, orodha, arifa za bei na madokezo hubaki kwenye akaunti yako na huondolewa kwenye kifaa hiki. Ingia tena ili uvirejeshe.';
+
+  @override
+  String get signOutUnsaved =>
+      'Baadhi ya mabadiliko hayakuweza kuhifadhiwa kwenye akaunti yako (hakuna muunganisho?). Ukitoka sasa, yatapotea.';
+
+  @override
+  String get signOutAnyway => 'Toka hata hivyo';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

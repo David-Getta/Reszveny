@@ -2901,6 +2901,20 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Баромадан мехоҳед?';
+
+  @override
+  String get signOutBody =>
+      'Портфел, рӯйхатҳо, огоҳиҳои нарх ва қайдҳои шумо дар ҳисобатон мемонанд ва аз ин дастгоҳ нест карда мешаванд. Барои баргардонидани онҳо дубора ворид шавед.';
+
+  @override
+  String get signOutUnsaved =>
+      'Баъзе тағйиротро дар ҳисоби шумо нигоҳ доштан муяссар нашуд (пайвастшавӣ нест?). Агар ҳозир бароед, онҳо гум мешаванд.';
+
+  @override
+  String get signOutAnyway => 'Бо вуҷуди ин баромадан';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

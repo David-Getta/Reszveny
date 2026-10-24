@@ -581,16 +581,25 @@ class Api {
   }
 
   /// A névtelen fiók átkerül a meglévőbe: az extra elemzések összeadódnak, a
-  /// fizetős csomag átköltözik (ha a meglévőnek nincs), a vásárlások és a
-  /// Stripe-azonosítók is; a névtelen fiók csomagja megszűnik, a tokenje
-  /// érvénytelen – egy vásárlás így csak egy fiókot tesz fizetőssé.
+  /// fizetős csomag átköltözik (ha a meglévőnek nincs, vagy alacsonyabb), a
+  /// vásárlások, a Stripe-azonosítók és az ajánlások is; a névtelen fiók csomagja
+  /// megszűnik, a tokenje érvénytelen – egy vásárlás így csak egy fiókot tesz fizetőssé.
   void _merge({required String from, required String into}) {
     final a = store.entitlement(from);
     final b = store.entitlement(into);
     b.extra += a.extra;
     final aPaid = a.tier != null && a.tier != 'trial';
     final bPaid = b.tier != null && b.tier != 'trial';
-    if (aPaid && !bPaid) {
+    int rank(String? tier) => PlanSpec.paid.indexWhere((p) => p.tier == tier);
+    // Mindkettő fizetős: a magasabb csomag marad (azonosnál a később lejáró) – a
+    // névtelenül vett Max ne vesszen el egy Normál fiókba lépve.
+    final (aThrough, bThrough) = (a.paidThrough, b.paidThrough);
+    final aBetter =
+        aPaid &&
+        (!bPaid ||
+            rank(a.tier) > rank(b.tier) ||
+            (a.tier == b.tier && aThrough != null && bThrough != null && aThrough.isAfter(bThrough)));
+    if (aBetter) {
       b
         ..tier = a.tier
         ..periodStart = a.periodStart

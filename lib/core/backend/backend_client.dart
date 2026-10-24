@@ -168,6 +168,12 @@ class BackendClient {
   /// és hiányzó token esetén előbb fiókot nyit.
   late final http.Client authenticated = _AuthenticatedClient(this);
 
+  /// A szerver elutasította a mentett tokent (401): a belépés a készüléken már nem
+  /// érvényes (pl. egy másik eszközön törölték a fiókot). A fiókkezelő ilyenkor
+  /// kijelentkezett állapotba vált – különben a régi e-mail és csomag látszana, a
+  /// kérések pedig már egy új, névtelen fiókba mennének.
+  void Function()? onSessionLost;
+
   /// A jelenlegi token, ha már van (tesztekhez, diagnosztikához).
   String? get token => _token;
 
@@ -390,7 +396,10 @@ class BackendClient {
     final token = await ensureToken();
     var res = await send({'authorization': 'Bearer $token'}).timeout(const Duration(seconds: 30));
     if (res.statusCode == 401) {
-      if (_token == token) await resetToken();
+      if (_token == token) {
+        await resetToken();
+        onSessionLost?.call();
+      }
       res = await send(await authHeaders()).timeout(const Duration(seconds: 30));
     }
     return res;

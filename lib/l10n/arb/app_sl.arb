@@ -857,5 +857,9 @@
   "syncTooLarge": "Vaši podatki so preveliki za sinhronizacijo z vašim računom. Izbrišite transakcije ali zapiske, ki jih ne potrebujete več, in sinhronizacija se bo poskusila znova.",
   "noteFull": "Zapisek za to delnico je poln, zato ta vnos ni bil dodan. Skrajšajte zapisek in poskusite znova.",
   "portfolioNoRateFor": "Ni tečaja za {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{{count} dividenda v {currencies} nima tečaja in ni vključena v skupne zneske.} other{Dividende v {currencies} brez tečaja niso vključene v skupne zneske (število: {count}).}}"
+  "dividendsNotConverted": "{count, plural, =1{{count} dividenda v {currencies} nima tečaja in ni vključena v skupne zneske.} other{Dividende v {currencies} brez tečaja niso vključene v skupne zneske (število: {count}).}}",
+  "signOutTitle": "Se želite odjaviti?",
+  "signOutBody": "Vaš portfelj, seznami, cenovna opozorila in zapiski ostanejo v vašem računu in se odstranijo iz te naprave. Za vrnitev se znova prijavite.",
+  "signOutUnsaved": "Nekaterih sprememb ni bilo mogoče shraniti v vaš račun (ni povezave?). Če se zdaj odjavite, bodo izgubljene.",
+  "signOutAnyway": "Vseeno se odjavi"
 }

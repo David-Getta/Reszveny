@@ -2904,6 +2904,20 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Meld af?';
+
+  @override
+  String get signOutBody =>
+      'Jou portefeulje, lyste, pryswaarskuwings en notas bly in jou rekening en word van hierdie toestel verwyder. Meld weer aan om dit terug te kry.';
+
+  @override
+  String get signOutUnsaved =>
+      'Sommige veranderinge kon nie in jou rekening gestoor word nie (geen verbinding nie?). As jy nou afmeld, gaan dit verlore.';
+
+  @override
+  String get signOutAnyway => 'Meld tog af';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

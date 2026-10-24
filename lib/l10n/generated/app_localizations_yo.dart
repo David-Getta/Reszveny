@@ -2895,6 +2895,20 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Ṣé o fẹ́ jáde?';
+
+  @override
+  String get signOutBody =>
+      'Àpò ìdókòwò rẹ, àwọn àkójọ, ìkìlọ̀ iye owó àti àwọn àkọsílẹ̀ rẹ yóò wà nínú àkáǹtì rẹ, a ó sì yọ wọ́n kúrò lórí ẹ̀rọ yìí. Tún wọlé láti rí wọn padà.';
+
+  @override
+  String get signOutUnsaved =>
+      'A kò lè fi àwọn àyípadà kan pamọ́ sínú àkáǹtì rẹ (kò sí ìsopọ̀?). Tí o bá jáde báyìí, wọn yóò sọnù.';
+
+  @override
+  String get signOutAnyway => 'Jáde bẹ́ẹ̀ náà';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

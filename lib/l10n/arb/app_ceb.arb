@@ -857,5 +857,9 @@
   "syncTooLarge": "Dako kaayo ang imong data aron ma-sync sa imong account. Papasa ang mga transaksyon o nota nga dili na nimo kinahanglan, ug mosulay kini pag-usab.",
   "noteFull": "Puno na ang mga nota alang niini nga stock, busa wala madugang kini nga entry. Pamub-a ang mga nota ug sulayi pag-usab.",
   "portfolioNoRateFor": "Walay exchange rate alang sa {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Ang 1 ka dibidendo sa {currencies} walay exchange rate ug wala iapil sa mga total.} other{Ang {count} ka dibidendo sa {currencies} walay exchange rate ug wala iapil sa mga total.}}"
+  "dividendsNotConverted": "{count, plural, =1{Ang 1 ka dibidendo sa {currencies} walay exchange rate ug wala iapil sa mga total.} other{Ang {count} ka dibidendo sa {currencies} walay exchange rate ug wala iapil sa mga total.}}",
+  "signOutTitle": "Mag-sign out?",
+  "signOutBody": "Ang imong portfolio, mga lista, mga alerto sa presyo ug mga nota magpabilin sa imong account ug pagatangtangon gikan niini nga device. Pag-sign in pag-usab aron mabalik kini.",
+  "signOutUnsaved": "Ang pipila ka kausaban wala ma-save sa imong account (walay koneksyon?). Kon mag-sign out ka karon, mawala kini.",
+  "signOutAnyway": "Mag-sign out gihapon"
 }

@@ -2894,6 +2894,20 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'از حساب کاربری خارج می‌شوید؟';
+
+  @override
+  String get signOutBody =>
+      'سبد سهام، فهرست‌ها، هشدارهای قیمت و یادداشت‌های شما در حساب کاربری‌تان باقی می‌مانند و از این دستگاه حذف می‌شوند. برای بازگرداندن آن‌ها دوباره وارد شوید.';
+
+  @override
+  String get signOutUnsaved =>
+      'برخی تغییرات در حساب کاربری‌تان ذخیره نشد (اتصال برقرار نیست؟). اگر اکنون خارج شوید، این تغییرات از بین می‌روند.';
+
+  @override
+  String get signOutAnyway => 'خروج در هر حال';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

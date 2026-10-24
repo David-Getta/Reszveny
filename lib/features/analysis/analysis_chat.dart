@@ -52,6 +52,12 @@ class AnalysisChat extends ChangeNotifier {
 
   bool isBusy(StockReport r) => _busy.contains(_key(r));
 
+  /// A beszélgetések törlése (kijelentkezéskor, a személyes adatokkal együtt).
+  void clear() {
+    _threads.clear();
+    notifyListeners();
+  }
+
   int questionsLeft(StockReport r) => maxQuestions - thread(r).where((m) => m.fromUser).length;
 
   /// Kérdés feltevése; a válasz a beszélgetés végére kerül. Hiba esetén a

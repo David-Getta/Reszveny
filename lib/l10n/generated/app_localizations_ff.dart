@@ -2894,6 +2894,20 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Seŋto?';
+
+  @override
+  String get signOutBody =>
+      'Aksiyoŋ maa, doggi maa, tintine coggu e binndi maa ina keddoo e nder konte maa, kono ina momtee e ngol kaɓirgol. Seŋo kadi ngam heɓtude ɗum en.';
+
+  @override
+  String get signOutUnsaved =>
+      'Won e baylitte mooftaaki e nder konte maa (ceŋagol alaa?). So a seŋtii jooni, ɗe majjat.';
+
+  @override
+  String get signOutAnyway => 'Seŋto tan';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

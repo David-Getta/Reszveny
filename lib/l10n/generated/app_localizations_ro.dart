@@ -2942,6 +2942,20 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Te deconectezi?';
+
+  @override
+  String get signOutBody =>
+      'Portofoliul, listele, alertele de preț și notițele tale rămân în cont și sunt șterse de pe acest dispozitiv. Conectează-te din nou ca să le recuperezi.';
+
+  @override
+  String get signOutUnsaved =>
+      'Unele modificări nu au putut fi salvate în cont (nicio conexiune?). Dacă te deconectezi acum, se vor pierde.';
+
+  @override
+  String get signOutAnyway => 'Deconectează-te oricum';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

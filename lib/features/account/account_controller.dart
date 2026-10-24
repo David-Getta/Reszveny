@@ -32,6 +32,10 @@ class AccountController extends ChangeNotifier {
   /// fiókhoz tartozó) válasza ilyenkor eldobódik.
   int _generation = 0;
 
+  /// A fiókváltások számlálója: egy hosszabb kérés (pl. vásárlás ellenőrzése) ebből
+  /// látja, hogy a válasza még ehhez a fiókhoz tartozik-e.
+  int get generation => _generation;
+
   /// A szerver szerinti fiók- és jogosultság-állapot átvétele.
   Future<void> refresh() async {
     final gen = _generation;
@@ -46,7 +50,10 @@ class AccountController extends ChangeNotifier {
   /// Egy barát ajánlókódjának beváltása: az extra elemzések azonnal látszanak.
   /// Hibánál [BackendException] (`unknown_code`, `own_code`, `already_redeemed`, `sign_in_required`, `code_full`).
   Future<void> redeemReferral(String code) async {
-    await entitlements.replace(await backend.redeemReferral(code));
+    final gen = _generation;
+    final granted = await backend.redeemReferral(code);
+    // Közben kiléptek: a jóváírás a régi fiókban van, ez a készülék nem kapja meg.
+    if (gen == _generation) await entitlements.replace(granted);
   }
 
   /// Kód ellenőrzése; hibánál [BackendException]-t dob (`invalid_code`).
@@ -69,6 +76,22 @@ class AccountController extends ChangeNotifier {
       if (gen == _generation) await entitlements.replace(a.entitlements);
     } catch (e) {
       debugPrint('Jogosultság frissítése kijelentkezés után nem sikerült: $e');
+    }
+  }
+
+  /// A szerver már nem ismeri a belépést (a fiókot egy másik eszközön törölték, vagy
+  /// a munkamenet lejárt): a készülék kijelentkezett állapotba kerül, a fizetős
+  /// csomag sem marad rajta.
+  Future<void> sessionLost() async {
+    if (!isSignedIn) return;
+    final gen = ++_generation;
+    await _setEmail(null);
+    await entitlements.replace(const EntitlementState());
+    try {
+      final a = await backend.account();
+      if (gen == _generation) await entitlements.replace(a.entitlements);
+    } catch (e) {
+      debugPrint('Jogosultság frissítése a munkamenet vége után nem sikerült: $e');
     }
   }
 

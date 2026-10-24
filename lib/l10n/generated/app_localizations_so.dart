@@ -2908,6 +2908,20 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Ma ka baxaysaa?';
+
+  @override
+  String get signOutBody =>
+      'Portfoliyadaada, liisaskaaga, digniinaha qiimaha iyo qoraalladaadu waxay ku sii jiraan akoonkaaga, waxaana laga saarayaa qalabkan. Mar kale gal si aad dib ugu hesho.';
+
+  @override
+  String get signOutUnsaved =>
+      'Isbeddellada qaar lagama kaydin karin akoonkaaga (xiriir ma jiro?). Haddii aad hadda ka baxdo, way lumi doonaan.';
+
+  @override
+  String get signOutAnyway => 'Si kastaba ka bax';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

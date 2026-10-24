@@ -857,5 +857,9 @@
   "syncTooLarge": "Wò nyatakakawo lolo akpa be woasɔ kple wò akɔnta. Tutu nuƒeƒle kple nudzadzra alo nuŋlɔɖi siwo mèhiã azɔ o la ɖa, eye agagbugbɔ adze agbagba.",
   "noteFull": "Akpa sia ƒe nuŋlɔɖiwo yɔ, eya ta wometsɔ nuŋlɔɖi yeye sia kpe ɖe eŋu o. Ɖe nuŋlɔɖiwo dzi kpɔtɔ eye nàgate kpɔ.",
   "portfolioNoRateFor": "Gatɔtrɔ asi aɖeke meli na {symbols} o.",
-  "dividendsNotConverted": "{count, plural, =1{Dividend 1 si le {currencies} me la, gatɔtrɔ asi meli nɛ o, eya ta wometsɔe de akɔntabubu blibowo me o.} other{Dividend {count} siwo le {currencies} me la, gatɔtrɔ asi meli na wo o, eya ta wometsɔ wo de akɔntabubu blibowo me o.}}"
+  "dividendsNotConverted": "{count, plural, =1{Dividend 1 si le {currencies} me la, gatɔtrɔ asi meli nɛ o, eya ta wometsɔe de akɔntabubu blibowo me o.} other{Dividend {count} siwo le {currencies} me la, gatɔtrɔ asi meli na wo o, eya ta wometsɔ wo de akɔntabubu blibowo me o.}}",
+  "signOutTitle": "Àdo le eme?",
+  "signOutBody": "Wò akpawo, xexlẽdzesiwo, asi ŋuti nuxlɔ̃amewo kple nuŋlɔɖiwo anɔ wò akɔnta me, eye woaɖe wo ɖa le mɔ̃ sia dzi. Gage ɖe eme ake be nàxɔ wo.",
+  "signOutUnsaved": "Womete ŋu dzra tɔtrɔ aɖewo ɖo ɖe wò akɔnta me o (kadodo aɖeke meli oa?). Ne èdo le eme fifia la, woabu.",
+  "signOutAnyway": "Do le eme ko"
 }

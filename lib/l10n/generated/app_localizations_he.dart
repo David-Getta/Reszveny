@@ -2890,6 +2890,20 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'לצאת מהחשבון?';
+
+  @override
+  String get signOutBody =>
+      'תיק ההשקעות, הרשימות, התראות המחיר וההערות שלך נשארים בחשבון ויוסרו מהמכשיר הזה. כדי לקבל אותם בחזרה, צריך להיכנס שוב.';
+
+  @override
+  String get signOutUnsaved =>
+      'לא ניתן היה לשמור חלק מהשינויים בחשבון שלך (אין חיבור?). אם יוצאים עכשיו, הם יאבדו.';
+
+  @override
+  String get signOutAnyway => 'לצאת בכל זאת';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

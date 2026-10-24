@@ -2907,6 +2907,20 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Mag-sign out?';
+
+  @override
+  String get signOutBody =>
+      'Mananatili sa iyong account ang iyong portfolio, mga listahan, mga alerto sa presyo at mga tala, at aalisin ang mga ito sa device na ito. Mag-sign in muli para maibalik ang mga ito.';
+
+  @override
+  String get signOutUnsaved =>
+      'Hindi na-save sa iyong account ang ilang pagbabago (walang koneksyon?). Kapag nag-sign out ka ngayon, mawawala ang mga ito.';
+
+  @override
+  String get signOutAnyway => 'Mag-sign out pa rin';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

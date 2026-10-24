@@ -2975,6 +2975,20 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Atsijungti?';
+
+  @override
+  String get signOutBody =>
+      'Jūsų portfelis, sąrašai, kainos įspėjimai ir užrašai lieka jūsų paskyroje ir pašalinami iš šio įrenginio. Prisijunkite dar kartą, kad juos susigrąžintumėte.';
+
+  @override
+  String get signOutUnsaved =>
+      'Kai kurių pakeitimų nepavyko išsaugoti jūsų paskyroje (nėra ryšio?). Jei atsijungsite dabar, jie bus prarasti.';
+
+  @override
+  String get signOutAnyway => 'Vis tiek atsijungti';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

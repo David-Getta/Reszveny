@@ -2901,6 +2901,20 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Nĩ ũrenda kuuma?';
+
+  @override
+  String get signOutBody =>
+      'Hisa ciaku, orodha ciaku, imenyithia cia thogora na maandĩko maku nĩ igũikara akaunti-inĩ yaku, na nĩ ikũeherio kĩndũ-inĩ gĩkĩ. Toonya rĩngĩ nĩguo ũcicookie.';
+
+  @override
+  String get signOutUnsaved =>
+      'Mĩgarũrũku ĩmwe ndĩnahota kũigwo akaunti-inĩ yaku (gũtirĩ connection?). Ũngiuma rĩu, nĩ ĩkũũra.';
+
+  @override
+  String get signOutAnyway => 'Uma o na kũrĩ ũguo';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

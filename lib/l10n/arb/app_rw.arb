@@ -857,5 +857,9 @@
   "syncTooLarge": "Amakuru yawe ni menshi cyane ku buryo adashobora guhuzwa na konti yawe. Siba ibyaguzwe n'ibyagurishijwe cyangwa ibyo wanditse utagikeneye, hanyuma bizongera kugerageza.",
   "noteFull": "Ibyo wanditse kuri uyu mugabane byuzuye, ni yo mpamvu iyi nyandiko itongewemo. Gabanya ibyo wanditse maze wongere ugerageze.",
   "portfolioNoRateFor": "Nta gipimo cy'ivunjisha cya {symbols}.",
-  "dividendsNotConverted": "{count, plural, =1{Idividende 1 muri {currencies} ntirifite igipimo cy'ivunjisha, ntiribarirwa mu giteranyo.} other{Amadividende {count} muri {currencies} ntafite igipimo cy'ivunjisha, ntabarirwa mu giteranyo.}}"
+  "dividendsNotConverted": "{count, plural, =1{Idividende 1 muri {currencies} ntirifite igipimo cy'ivunjisha, ntiribarirwa mu giteranyo.} other{Amadividende {count} muri {currencies} ntafite igipimo cy'ivunjisha, ntabarirwa mu giteranyo.}}",
+  "signOutTitle": "Urashaka gusohoka?",
+  "signOutBody": "Ishoramari ryawe, intonde, imenyesha ry'ibiciro n'ibyo wanditse bigumye kuri konti yawe kandi bivanwa kuri iki gikoresho. Ongera winjire kugira ngo ubisubirane.",
+  "signOutUnsaved": "Impinduka zimwe ntizashoboye kubikwa kuri konti yawe (nta murandasi?). Nusohoka ubu, zizatakara.",
+  "signOutAnyway": "Sohoka uko biri kose"
 }

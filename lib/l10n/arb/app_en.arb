@@ -2547,6 +2547,14 @@
       "currencies": {"type": "String", "example": "TWD"}
     }
   },
+  "signOutTitle": "Sign out?",
+  "@signOutTitle": {"description": "Title of the confirmation dialog before signing out."},
+  "signOutBody": "Your portfolio, lists, price alerts and notes stay in your account and are removed from this device. Sign in again to get them back.",
+  "@signOutBody": {"description": "Body of the sign-out confirmation: the synced data is removed from the device and comes back when signing in again."},
+  "signOutUnsaved": "Some changes could not be saved to your account (no connection?). If you sign out now, they will be lost.",
+  "@signOutUnsaved": {"description": "Warning shown when the last changes could not be uploaded before signing out."},
+  "signOutAnyway": "Sign out anyway",
+  "@signOutAnyway": {"description": "Button: sign out even though some changes are not saved to the account."},
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

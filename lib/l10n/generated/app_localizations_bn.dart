@@ -2898,6 +2898,20 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'সাইন আউট করবেন?';
+
+  @override
+  String get signOutBody =>
+      'আপনার পোর্টফোলিও, তালিকা, দামের সতর্কতা ও নোট আপনার অ্যাকাউন্টে থাকবে এবং এই ডিভাইস থেকে সরিয়ে ফেলা হবে। সেগুলো ফিরে পেতে আবার সাইন ইন করুন।';
+
+  @override
+  String get signOutUnsaved =>
+      'কিছু পরিবর্তন আপনার অ্যাকাউন্টে সংরক্ষণ করা যায়নি (সংযোগ নেই?)। এখন সাইন আউট করলে সেগুলো হারিয়ে যাবে।';
+
+  @override
+  String get signOutAnyway => 'তবুও সাইন আউট করুন';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

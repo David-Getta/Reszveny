@@ -2924,6 +2924,20 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String get signOutTitle => 'Queres pechar sesión?';
+
+  @override
+  String get signOutBody =>
+      'A túa carteira, as listas, as alertas de prezo e as notas quedan na túa conta e elimínanse deste dispositivo. Volve iniciar sesión para recuperalas.';
+
+  @override
+  String get signOutUnsaved =>
+      'Algúns cambios non se puideron gardar na túa conta (sen conexión?). Se pechas sesión agora, perderanse.';
+
+  @override
+  String get signOutAnyway => 'Pechar sesión igualmente';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override
