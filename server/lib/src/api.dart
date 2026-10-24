@@ -1271,21 +1271,23 @@ class Api {
     return _json({'ok': true});
   }
 
-  /// Fiók törlése: előbb a böngészős (Stripe) előfizetés lemondása – ha ez nem
-  /// sikerül, nem törlünk, különben a kártyát tovább terhelnénk fiók nélkül –,
-  /// majd minden szerveren tárolt adat törlése. A bolti előfizetést a felhasználó
-  /// a boltban mondja le (az app ezt meg is mondja).
   /// Karbantartás (induláskor és naponta): a megőrzési időn túli telemetria-sorok,
-  /// hibajelentések és megosztott linkek törlése akkor is, ha nem érkezik új adat.
+  /// hibajelentések, megosztott linkek, régóta nem használt munkamenetek és régi
+  /// használati sorok törlése akkor is, ha nem érkezik új adat.
   void housekeeping() {
     try {
       telemetry.purgeExpired();
       shares.purgeExpired();
+      store.purgeExpired();
     } catch (e) {
       stderr.writeln('Karbantartás nem sikerült: $e');
     }
   }
 
+  /// Fiók törlése: előbb a böngészős (Stripe) előfizetés lemondása – ha ez nem
+  /// sikerül, nem törlünk, különben a kártyát tovább terhelnénk fiók nélkül –,
+  /// majd minden szerveren tárolt adat törlése. A bolti előfizetést a felhasználó
+  /// a boltban mondja le (az app ezt meg is mondja).
   Future<Response> _deleteAccount(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
@@ -2328,16 +2330,22 @@ class Api {
     return kept.isEmpty ? null : kept.join(',');
   }
 
-  Future<http.Response> _forwardAnthropic(String body, String? beta) => _client.post(
-    Uri.parse('$anthropicBaseUrl/v1/messages'),
-    headers: {
-      'content-type': 'application/json',
-      'x-api-key': anthropicApiKey,
-      'anthropic-version': '2023-06-01',
-      'anthropic-beta': ?beta,
-    },
-    body: body,
-  );
+  /// Egy elakadt (félig nyitott kapcsolatú) hívás se tartsa le örökre a lefoglalt keretet:
+  /// az időkorlát után a hívó hibaágon felszabadítja (az app 6 perc után adja fel).
+  static const anthropicTimeout = Duration(minutes: 8);
+
+  Future<http.Response> _forwardAnthropic(String body, String? beta) => _client
+      .post(
+        Uri.parse('$anthropicBaseUrl/v1/messages'),
+        headers: {
+          'content-type': 'application/json',
+          'x-api-key': anthropicApiKey,
+          'anthropic-version': '2023-06-01',
+          'anthropic-beta': ?beta,
+        },
+        body: body,
+      )
+      .timeout(anthropicTimeout);
 
   /// Az app által használt Finnhub-végpontok; mást nem engedünk át a szerver kulcsával.
   static const marketPaths = {
@@ -2483,7 +2491,7 @@ class Api {
             'apikey': twelveDataApiKey,
           },
         );
-        final j = jsonDecode((await _client.get(uri)).body);
+        final j = jsonDecode((await _client.get(uri).timeout(const Duration(seconds: 20))).body);
         final v = j is Map && j['status'] == 'ok' ? j['values'] : null;
         if (v is List && v.isNotEmpty) {
           values = v;

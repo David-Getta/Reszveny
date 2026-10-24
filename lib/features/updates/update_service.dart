@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
@@ -115,8 +116,22 @@ class UpdateService extends ChangeNotifier with UpdaterListener {
       }
       return;
     }
-    // A többi csatornán csendben ellenőrzünk induláskor.
+    // A többi csatornán csendben ellenőrzünk induláskor, és utána rendszeresen: a tálcán
+    // hetekig futó app is megtudja, ha új változat jelent meg.
+    _periodic ??= Timer.periodic(checkEvery, (_) {
+      if (_status != UpdateStatus.available && _status != UpdateStatus.downloaded) unawaited(check(silent: true));
+    });
     await check(silent: true);
+  }
+
+  /// A rendszeres ellenőrzés gyakorisága (a Sparkle magától óránként néz).
+  static const checkEvery = Duration(hours: 6);
+  Timer? _periodic;
+
+  @override
+  void dispose() {
+    _periodic?.cancel();
+    super.dispose();
   }
 
   void setAutoInstall(bool enabled) => _autoInstall = enabled;

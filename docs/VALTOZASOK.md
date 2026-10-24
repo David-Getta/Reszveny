@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.297)
+# Változásjegyzék (0.2.130 → 0.2.298)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,17 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Hosszú futás: a negyvenötödik kódátnézés javításai
+
+- **0.2.298**: a tálcán napokig futó app ritkábban ír a lemezre (a figyelt részvények ára óránként mentődik, és a
+  már elöl lévő részvény nem rendezi újra a gyorsítótárat – addig minden figyelt részvény naponta több száz teljes
+  beállítás-újraírást okozott). A Windows/Linux értesítések nem halmozódnak a memóriában, és egy újra használt
+  értesítésre (pl. a portfólió-cél) egy kattintás csak egyszer hat. A frissítés-ellenőrzés a Sparkle nélküli
+  csatornákon is 6 óránként lefut, nem csak induláskor. A visszatérő hiba naponta újra jelenthető, és a „marad
+  a korábbi elemzés” döntés 12 óra után (vagy egy új gyorsjelentés után) újra kérdez. A szerveren az elakadt
+  AI-hívás 8 perc után véget ér (és a lefoglalt elemzés visszajár), a levélküldő nélküli napló nem nő korlát
+  nélkül, az egy éve nem használt belépések lejárnak, és a régi használati és meghívó-sorok törlődnek.
 
 ## Külső tartalom és szerződés: a negyvenharmadik és negyvennegyedik kódátnézés javításai
 

@@ -51,6 +51,9 @@ class SystemNotifier implements AlertNotifier {
     }
   }
 
+  final Map<String, LocalNotification> _shown = {};
+  static const _maxShown = 30;
+
   @override
   Future<bool> show({required String id, required String title, required String body}) async {
     if (!isSupported) return false;
@@ -59,7 +62,13 @@ class SystemNotifier implements AlertNotifier {
       if (Platform.isMacOS) {
         return await _channel.invokeMethod<bool>('show', {'id': id, 'title': title, 'body': body}) ?? false;
       }
+      // Azonosítónként egy élő példány: a bővítmény minden példányt figyelőként megtart, így
+      // a régiek nem szabadulnának fel, és egy újra használt azonosítóra (pl. a portfólió-
+      // cél) egy kattintás többször jelezne. A régi értesítés látszik tovább, csak nem figyeljük.
+      if (_shown.remove(id) case final old?) localNotifier.removeListener(old);
+      if (_shown.length >= _maxShown) localNotifier.removeListener(_shown.remove(_shown.keys.first)!);
       final n = LocalNotification(identifier: id, title: title, body: body)..onClick = () => onClick?.call(id);
+      _shown[id] = n;
       await n.show();
       return true;
     } catch (e) {

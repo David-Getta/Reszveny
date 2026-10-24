@@ -297,7 +297,8 @@ class AppServices {
             // mentés (Windowson minden írás az egész beállítástárat újraírja).
             quoteMemo: const Duration(seconds: 20),
             dataMemo: const Duration(minutes: 10),
-            persistQuoteEvery: const Duration(minutes: 10),
+            // Óránként: a tálcán futó app figyelői (riasztás, tálca, portfólió) 5 percenként kérnek.
+            persistQuoteEvery: const Duration(hours: 1),
             persistDataEvery: const Duration(hours: 6),
           )
         : DemoMarketDataProvider();

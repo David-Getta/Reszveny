@@ -126,9 +126,10 @@ class ReportStore extends ChangeNotifier {
   /// Ennél régebbi elemzés megnyitásakor megkérdezzük, kell-e új.
   static const staleAfter = Duration(hours: 12);
 
-  /// A felhasználó ezeknél a régi elemzésnél a korábbit választotta (az app
-  /// futása alatt nem kérdezünk újra).
-  final Set<String> _keptStale = {};
+  /// A felhasználó ezeknél a régi elemzésnél a korábbit választotta (a döntés ideje):
+  /// [staleAfter] ideig, és amíg nem jelent meg újabb gyorsjelentés, nem kérdezünk újra –
+  /// egy hetekig futó (tálcás) appban sem marad érvényes örökre.
+  final Map<String, DateTime> _keptStale = {};
 
   /// Ezeknél a megnyitáskor új elemzés indul (az előzmények listájából kérték).
   final Set<String> _refreshRequested = {};
@@ -153,12 +154,23 @@ class ReportStore extends ChangeNotifier {
   /// ilyenkor a kártya megkérdezi, kell-e új.
   bool needsStaleDecision(String symbol) {
     final r = _reports[symbol];
-    return r != null && isStale(r) && !_keptStale.contains(symbol) && !_loading.contains(symbol);
+    return r != null && isStale(r) && !_keptFresh(symbol, r) && !_loading.contains(symbol);
+  }
+
+  bool _keptFresh(String symbol, StockReport r) {
+    final at = _keptStale[symbol];
+    if (at == null || clock().difference(at) >= staleAfter) return false;
+    // A döntés után megjelent gyorsjelentés: újra kérdezünk.
+    final e = r.nextEarnings;
+    final out = e == null ? null : DateTime.utc(e.year, e.month, e.day, 22);
+    return out == null || !at.toUtc().isBefore(out) || clock().toUtc().isBefore(out);
   }
 
   /// „A korábbi jó lesz”: a régi elemzés látszik, nem kérdezünk újra.
   void keepStale(String symbol) {
-    if (_keptStale.add(symbol)) notifyListeners();
+    final first = !_keptStale.containsKey(symbol);
+    _keptStale[symbol] = clock();
+    if (first) notifyListeners();
   }
 
   /// Az előzményekből „új elemzés” választva: a kártya megnyitáskor elindítja.

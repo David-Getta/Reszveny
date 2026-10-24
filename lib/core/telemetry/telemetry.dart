@@ -22,6 +22,10 @@ class Telemetry {
   /// Az app verziója (indulás után derül ki, ezért küldéskor kérdezzük le).
   String? Function()? versionOf;
 
+  /// Az idő (a napváltás a hibák ismétlés-szűrésénél; tesztben állítható).
+  @visibleForTesting
+  DateTime Function() clock = DateTime.now;
+
   /// Ennyi idő után küldjük el az összegyűlt eseményeket.
   static const flushDelay = Duration(seconds: 30);
 
@@ -34,6 +38,7 @@ class Telemetry {
   final Map<String, int> _events = {};
   final List<Map<String, String>> _errors = [];
   final Set<String> _seenErrors = {};
+  String? _seenDay;
   Timer? _timer;
 
   bool get available => sink != null;
@@ -56,6 +61,13 @@ class Telemetry {
     if (!enabled) return;
     final message = scrub(_clip('${error.runtimeType}: $error', 500));
     final trace = scrub(_clip(stack?.toString() ?? '', 4000));
+    // Naponta újra jelenthető: egy hetekig futó (tálcás) appban a visszatérő hiba ne csak
+    // egyszer menjen el (a szerver 30 nap jelentés nélkül törli).
+    final today = clock().toIso8601String().substring(0, 10);
+    if (_seenDay != today) {
+      _seenDay = today;
+      _seenErrors.clear();
+    }
     // Teli csomagnál nem jegyezzük meg látottnak: a következő csomagban még elmehet.
     if (_errors.length >= maxErrors || !_seenErrors.add(message)) return;
     _errors.add({'message': message, 'stack': trace});

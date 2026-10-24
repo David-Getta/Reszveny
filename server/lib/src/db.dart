@@ -189,6 +189,9 @@ class Store {
     // A korábban tárolt eszközazonosítók törlése (nem használtuk őket, és nem gyűjtünk ilyet).
     _db.execute('UPDATE users SET device_id = NULL WHERE device_id IS NOT NULL');
     _db.execute('CREATE INDEX IF NOT EXISTS purchases_link ON purchases(platform, link_key)');
+    // A munkamenet utolsó használata: a régóta nem használt token lejár (a karbantartás törli).
+    final scols = _db.select('PRAGMA table_info(sessions)').map((r) => r['name'] as String).toSet();
+    if (!scols.contains('last_used')) _db.execute('ALTER TABLE sessions ADD COLUMN last_used TEXT');
   }
 
   factory Store.open(String path) => Store(sqlite3.open(path));
@@ -249,8 +252,27 @@ class Store {
     final h = hashToken(token);
     final rows = _db.select('SELECT id FROM users WHERE token_hash = ?', [h]);
     if (rows.isNotEmpty) return rows.first['id'] as String;
-    final s = _db.select('SELECT user_id FROM sessions WHERE token_hash = ?', [h]);
-    return s.isEmpty ? null : s.first['user_id'] as String;
+    final s = _db.select('SELECT user_id, last_used FROM sessions WHERE token_hash = ?', [h]);
+    if (s.isEmpty) return null;
+    // Naponta legfeljebb egyszer írjuk (nem minden kérésnél).
+    final now = clock().toUtc();
+    final last = DateTime.tryParse(s.first['last_used'] as String? ?? '');
+    if (last == null || now.difference(last) > const Duration(days: 1)) {
+      _db.execute('UPDATE sessions SET last_used = ? WHERE token_hash = ?', [now.toIso8601String(), h]);
+    }
+    return s.first['user_id'] as String;
+  }
+
+  /// Megőrzési idők: egy éve nem használt munkamenet, a meghívók napi számlálójának
+  /// régi sorai és a régi használati napló (az admin oldal 30 napot mutat) törlődik.
+  static const sessionIdle = Duration(days: 365), usageKept = Duration(days: 400);
+
+  void purgeExpired() {
+    final now = clock().toUtc();
+    String ago(Duration d) => now.subtract(d).toIso8601String();
+    _db.execute('DELETE FROM sessions WHERE COALESCE(last_used, created_at) < ?', [ago(sessionIdle)]);
+    _db.execute('DELETE FROM invite_usage WHERE created_at < ?', [ago(const Duration(days: 2))]);
+    _db.execute('DELETE FROM usage_log WHERE created_at < ?', [ago(usageKept)]);
   }
 
   /// Új munkamenet-token egy meglévő felhasználóhoz (belépés másik eszközön).

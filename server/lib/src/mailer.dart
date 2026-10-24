@@ -21,14 +21,20 @@ class ConsoleMailer implements Mailer {
   final sent = <String, String>{};
   final messages = <({String to, String subject, String text, Map<String, String> headers})>[];
 
+  /// Ennyi levél és kód marad meg (a tesztekhez): levélküldő nélküli éles szerveren
+  /// se nőjön a memória minden riasztással és belépéssel.
+  static const keep = 200;
+
   @override
   Future<void> sendLoginCode(String email, String code) async {
+    if (sent.length >= keep && !sent.containsKey(email)) sent.remove(sent.keys.first);
     sent[email] = code;
     stdout.writeln(redact ? '[mail] belépőkód nem ment ki (nincs RESEND_API_KEY)' : '[mail] $email belépőkódja: $code');
   }
 
   @override
   Future<void> send(String email, {required String subject, required String text, Map<String, String>? headers}) async {
+    if (messages.length >= keep) messages.removeAt(0);
     messages.add((to: email, subject: subject, text: text, headers: headers ?? const {}));
     stdout.writeln(redact ? '[mail] levél nem ment ki (nincs RESEND_API_KEY)' : '[mail] $email: $subject');
   }

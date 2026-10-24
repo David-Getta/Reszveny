@@ -49,6 +49,9 @@ class CachingMarketDataProvider extends MarketDataProvider {
   /// Legfeljebb ennyi részvény adatát őrizzük (a legrégebben használtakat töröljük).
   static const maxSymbols = 60;
 
+  /// Az első ennyi részvény sorrendje nem változik használatkor.
+  static const touchedFront = 12;
+
   static const _prefix = marketCachePrefix;
   static const _indexKey = 'mdc_index';
 
@@ -142,7 +145,9 @@ class CachingMarketDataProvider extends MarketDataProvider {
   /// A használt részvények sorrendje (legutóbbi elöl); a túl régieket törli.
   Future<void> _touch(SharedPreferences prefs, String symbol) async {
     final index = prefs.getStringList(_indexKey) ?? const [];
-    if (index.isNotEmpty && index.first == symbol) return;
+    // Ami már elöl van, nem kerül újra előre: a sorrend csak a törléshez kell, és egy
+    // tálcán futó app a figyelt részvények minden mentésénél újraírná az egész tárat.
+    if (index.take(touchedFront).contains(symbol)) return;
     final next = [symbol, ...index.where((s) => s != symbol)];
     if (next.length > maxSymbols) {
       final dropped = next.sublist(maxSymbols).toSet();
