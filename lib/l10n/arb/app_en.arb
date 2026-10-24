@@ -409,8 +409,9 @@
       }
     }
   },
-  "extraCredits": "{count} extra analyses",
+  "extraCredits": "{count, plural, =1{{count} extra analysis} other{{count} extra analyses}}",
   "@extraCredits": {
+    "description": "Balance of extra (pay-per-use) analyses, e.g. in Settings and on the paywall. Use the plural forms of the language.",
     "placeholders": {
       "count": {
         "type": "int"
@@ -2557,6 +2558,10 @@
   "@signOutAnyway": {"description": "Button: sign out even though some changes are not saved to the account."},
   "fileTooLarge": "This file is too large to open here.",
   "@fileTooLarge": {"description": "Shown when a chosen CSV or backup file exceeds the size limit."},
+  "portfolioAnnualSummaryYear": "Annual summary {year}",
+  "@portfolioAnnualSummaryYear": {"description": "Heading and share subject of the annual summary for one year.", "placeholders": {"year": {"type": "String", "example": "2025"}}},
+  "portfolioSoldRow": "Sold {quantity} × {price}",
+  "@portfolioSoldRow": {"description": "A sale row in the purchases list: quantity and price per share.", "placeholders": {"quantity": {"type": "String", "example": "10"}, "price": {"type": "String", "example": "182.50 USD"}}},
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

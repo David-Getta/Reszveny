@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Tetekpɔ ŋkeke 1 susɔ} other{Tetekpɔ ŋkeke {days} susɔ}}",
   "trialExpired": "Wò tetekpɔ femaxee la wu enu. Tia plan aɖe be nàyi edzi anɔ numekuku wɔm.",
   "analysesRemaining": "Numekuku {remaining} susɔ le {total} me le ɣeyiɣi sia me",
-  "extraCredits": "Numekuku {count} bubuwo",
+  "extraCredits": "{count, plural, =1{Numekuku {count} bubu} other{Numekuku {count} bubuwo}}",
   "renewsOn": "Awɔe yeye {date}",
   "choosePlan": "Tia plan",
   "currentPlan": "Plan si le asiwò fifia",
@@ -862,5 +862,7 @@
   "signOutBody": "Wò akpawo, xexlẽdzesiwo, asi ŋuti nuxlɔ̃amewo kple nuŋlɔɖiwo anɔ wò akɔnta me, eye woaɖe wo ɖa le mɔ̃ sia dzi. Gage ɖe eme ake be nàxɔ wo.",
   "signOutUnsaved": "Womete ŋu dzra tɔtrɔ aɖewo ɖo ɖe wò akɔnta me o (kadodo aɖeke meli oa?). Ne èdo le eme fifia la, woabu.",
   "signOutAnyway": "Do le eme ko",
-  "fileTooLarge": "Faɛl sia lolo akpa be woaʋui le afi sia."
+  "fileTooLarge": "Faɛl sia lolo akpa be woaʋui le afi sia.",
+  "portfolioAnnualSummaryYear": "Ƒe {year} ƒe ƒuƒoƒo",
+  "portfolioSoldRow": "Wodzrae {quantity} × {price}"
 }

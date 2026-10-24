@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Saura kwana 1 na gwaji} other{Saura kwanaki {days} na gwaji}}",
   "trialExpired": "Gwajin kyauta naka ya ƙare. Zaɓi tsari don ci gaba da nazari.",
   "analysesRemaining": "Saura nazari {remaining} cikin {total} a wannan lokaci",
-  "extraCredits": "Ƙarin nazari {count}",
+  "extraCredits": "{count, plural, =1{Ƙarin nazari {count}} other{Ƙarin nazari {count}}}",
   "renewsOn": "Za a sabunta {date}",
   "choosePlan": "Zaɓi tsari",
   "currentPlan": "Tsarin yanzu",
@@ -862,5 +862,7 @@
   "signOutBody": "Jakar hannun jarinka, jerorinka, faɗakarwar farashi da bayananka za su kasance a asusunka, kuma za a cire su daga wannan na'ura. Sake shiga don dawo da su.",
   "signOutUnsaved": "Ba a iya adana wasu canje-canje a asusunka ba (babu haɗi?). Idan ka fita yanzu, za su ɓace.",
   "signOutAnyway": "Fita duk da haka",
-  "fileTooLarge": "Wannan fayil ya yi girma matuƙa don a buɗe shi a nan."
+  "fileTooLarge": "Wannan fayil ya yi girma matuƙa don a buɗe shi a nan.",
+  "portfolioAnnualSummaryYear": "Taƙaitaccen bayanin shekarar {year}",
+  "portfolioSoldRow": "An sayar {quantity} × {price}"
 }

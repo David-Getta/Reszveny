@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Synag möhletiniň gutarmagyna 1 gün galdy} other{Synag möhletiniň gutarmagyna {days} gün galdy}}",
   "trialExpired": "Mugt synag möhletiňiz gutardy. Seljermäni dowam etmek üçin tarif saýlaň.",
   "analysesRemaining": "Bu döwürde {total} seljermeden {remaining} sanysy galdy",
-  "extraCredits": "{count} goşmaça seljerme",
+  "extraCredits": "{count, plural, =1{{count} goşmaça seljerme} other{{count} goşmaça seljerme}}",
   "renewsOn": "{date} senesinde täzelenýär",
   "choosePlan": "Tarif saýlaň",
   "currentPlan": "Häzirki tarif",
@@ -862,5 +862,7 @@
   "signOutBody": "Portfeliňiz, sanawlaryňyz, baha duýduryşlaryňyz we bellikleriňiz hasabyňyzda galýar we bu enjamdan aýrylýar. Olary yzyna almak üçin täzeden giriň.",
   "signOutUnsaved": "Käbir üýtgeşmeleri hasabyňyzda saklap bolmady (baglanyşyk ýokmy?). Häzir çyksaňyz, olar ýiter.",
   "signOutAnyway": "Barybir çyk",
-  "fileTooLarge": "Bu faýl bu ýerde açmak üçin örän uly."
+  "fileTooLarge": "Bu faýl bu ýerde açmak üçin örän uly.",
+  "portfolioAnnualSummaryYear": "Ýyllyk jemleme {year}",
+  "portfolioSoldRow": "Satyldy {quantity} × {price}"
 }

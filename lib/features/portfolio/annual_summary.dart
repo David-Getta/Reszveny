@@ -126,7 +126,7 @@ class _AnnualSummarySheetState extends State<_AnnualSummarySheet> {
 
   /// A sorok szövegként (a megosztáshoz): év, számla, pénznem és az összegek.
   String _text(AppLocalizations l10n, Fmt fmt, int year, List<SummaryRow> rows) {
-    final b = StringBuffer('${l10n.portfolioAnnualSummary} $year\n');
+    final b = StringBuffer('${l10n.portfolioAnnualSummaryYear('$year')}\n');
     final withAccounts = rows.any((r) => r.account != null);
     for (final r in rows) {
       b
@@ -191,7 +191,7 @@ class _AnnualSummarySheetState extends State<_AnnualSummarySheet> {
                         tooltip: l10n.shareAsText,
                         icon: const Icon(Icons.ios_share_rounded),
                         onPressed: () =>
-                            shareText(_text(l10n, fmt, year, rows), subject: '${l10n.portfolioAnnualSummary} $year'),
+                            shareText(_text(l10n, fmt, year, rows), subject: l10n.portfolioAnnualSummaryYear('$year')),
                       ),
                   ],
                 ),

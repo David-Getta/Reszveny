@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{1 dag kvar av provperioden} other{{days} dagar kvar av provperioden}}",
   "trialExpired": "Din gratis provperiod har gått ut. Välj en plan för att fortsätta analysera.",
   "analysesRemaining": "{remaining} av {total} analyser kvar denna period",
-  "extraCredits": "{count} extra analyser",
+  "extraCredits": "{count, plural, =1{{count} extra analys} other{{count} extra analyser}}",
   "renewsOn": "Förnyas {date}",
   "choosePlan": "Välj en plan",
   "currentPlan": "Nuvarande plan",
@@ -862,5 +862,7 @@
   "signOutBody": "Din portfölj, dina listor, kurslarm och anteckningar finns kvar i ditt konto och tas bort från den här enheten. Logga in igen för att få tillbaka dem.",
   "signOutUnsaved": "Vissa ändringar kunde inte sparas i ditt konto (ingen anslutning?). Om du loggar ut nu går de förlorade.",
   "signOutAnyway": "Logga ut ändå",
-  "fileTooLarge": "Den här filen är för stor för att öppnas här."
+  "fileTooLarge": "Den här filen är för stor för att öppnas här.",
+  "portfolioAnnualSummaryYear": "Årsöversikt {year}",
+  "portfolioSoldRow": "Sålt {quantity} × {price}"
 }

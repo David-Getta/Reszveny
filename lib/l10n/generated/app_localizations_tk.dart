@@ -727,7 +727,13 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count goşmaça seljerme';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count goşmaça seljerme',
+      one: '$count goşmaça seljerme',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2915,6 +2921,16 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'Bu faýl bu ýerde açmak üçin örän uly.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Ýyllyk jemleme $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Satyldy $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Maksat goý';

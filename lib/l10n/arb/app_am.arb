@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{የሙከራ ጊዜ {days} ቀን ቀርቷል} other{የሙከራ ጊዜ {days} ቀናት ቀርተዋል}}",
   "trialExpired": "ነፃ የሙከራ ጊዜዎ አብቅቷል። መተንተን ለመቀጠል ዕቅድ ይምረጡ።",
   "analysesRemaining": "በዚህ ወቅት ከ{total} ትንተናዎች {remaining} ቀርተዋል",
-  "extraCredits": "{count} ተጨማሪ ትንተናዎች",
+  "extraCredits": "{count, plural, =1{{count} ተጨማሪ ትንተና} other{{count} ተጨማሪ ትንተናዎች}}",
   "renewsOn": "{date} ይታደሳል",
   "choosePlan": "ዕቅድ ምረጥ",
   "currentPlan": "የአሁኑ ዕቅድ",
@@ -862,5 +862,7 @@
   "signOutBody": "ፖርትፎሊዮዎ፣ ዝርዝሮችዎ፣ የዋጋ ማንቂያዎችዎ እና ማስታወሻዎችዎ በመለያዎ ውስጥ ይቆያሉ፤ ከዚህ መሣሪያ ግን ይወገዳሉ። መልሰው ለማግኘት እንደገና ይግቡ።",
   "signOutUnsaved": "አንዳንድ ለውጦች በመለያዎ ላይ ሊቀመጡ አልቻሉም (ግንኙነት የለም?)። አሁን ከወጡ ይጠፋሉ።",
   "signOutAnyway": "ለማንኛውም ውጣ",
-  "fileTooLarge": "ይህ ፋይል እዚህ ለመክፈት በጣም ትልቅ ነው።"
+  "fileTooLarge": "ይህ ፋይል እዚህ ለመክፈት በጣም ትልቅ ነው።",
+  "portfolioAnnualSummaryYear": "የ{year} ዓመታዊ ማጠቃለያ",
+  "portfolioSoldRow": "ተሽጧል {quantity} × {price}"
 }

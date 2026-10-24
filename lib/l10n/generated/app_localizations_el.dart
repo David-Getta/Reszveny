@@ -732,7 +732,13 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count επιπλέον αναλύσεις';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count επιπλέον αναλύσεις',
+      one: '$count επιπλέον ανάλυση',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2927,6 +2933,16 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get fileTooLarge =>
       'Αυτό το αρχείο είναι πολύ μεγάλο για να ανοίξει εδώ.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Ετήσια σύνοψη $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Πωλήθηκαν $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Ορισμός στόχου';

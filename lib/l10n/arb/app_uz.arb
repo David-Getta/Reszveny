@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Sinov muddati tugashiga 1 kun qoldi} other{Sinov muddati tugashiga {days} kun qoldi}}",
   "trialExpired": "Bepul sinov muddati tugadi. Tahlil qilishda davom etish uchun tarif tanlang.",
   "analysesRemaining": "Bu davrda {total} ta tahlildan {remaining} tasi qoldi",
-  "extraCredits": "{count} ta qoʻshimcha tahlil",
+  "extraCredits": "{count, plural, =1{{count} ta qoʻshimcha tahlil} other{{count} ta qoʻshimcha tahlil}}",
   "renewsOn": "{date} kuni yangilanadi",
   "choosePlan": "Tarif tanlang",
   "currentPlan": "Joriy tarif",
@@ -862,5 +862,7 @@
   "signOutBody": "Portfelingiz, roʻyxatlaringiz, narx bildirishnomalari va qaydlaringiz hisobingizda qoladi va bu qurilmadan oʻchiriladi. Ularni qaytarish uchun qayta kiring.",
   "signOutUnsaved": "Baʼzi oʻzgarishlarni hisobingizga saqlab boʻlmadi (aloqa yoʻqmi?). Hozir chiqsangiz, ular yoʻqoladi.",
   "signOutAnyway": "Baribir chiqish",
-  "fileTooLarge": "Bu fayl bu yerda ochish uchun juda katta."
+  "fileTooLarge": "Bu fayl bu yerda ochish uchun juda katta.",
+  "portfolioAnnualSummaryYear": "{year} yillik xulosa",
+  "portfolioSoldRow": "Sotildi {quantity} × {price}"
 }

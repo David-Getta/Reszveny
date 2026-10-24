@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{{days} andro sisa amin'ny fanandramana} other{{days} andro sisa amin'ny fanandramana}}",
   "trialExpired": "Tapitra ny fanandramana maimaim-poana. Misafidiana tolotra mba hanohizana ny fandalinana.",
   "analysesRemaining": "{remaining} amin'ny {total} fandalinana no sisa amin'ity vanim-potoana ity",
-  "extraCredits": "{count} fandalinana fanampiny",
+  "extraCredits": "{count, plural, =1{{count} fandalinana fanampiny} other{{count} fandalinana fanampiny}}",
   "renewsOn": "Havaozina amin'ny {date}",
   "choosePlan": "Misafidiana tolotra",
   "currentPlan": "Tolotra ankehitriny",
@@ -862,5 +862,7 @@
   "signOutBody": "Mijanona ao amin'ny kaontinao ny kitapom-bolanao, ny lisitrao, ny fanairana vidiny ary ny naotinao, fa esorina amin'ity fitaovana ity. Midira indray mba hahazoana azy ireo indray.",
   "signOutUnsaved": "Misy fanovana sasany tsy voatahiry tao amin'ny kaontinao (tsy misy fifandraisana ve?). Raha mivoaka ianao izao dia ho very izy ireo.",
   "signOutAnyway": "Hivoaka ihany",
-  "fileTooLarge": "Lehibe loatra ity rakitra ity ka tsy azo sokafana eto."
+  "fileTooLarge": "Lehibe loatra ity rakitra ity ka tsy azo sokafana eto.",
+  "portfolioAnnualSummaryYear": "Famintinana isan-taona {year}",
+  "portfolioSoldRow": "Namidy {quantity} × {price}"
 }

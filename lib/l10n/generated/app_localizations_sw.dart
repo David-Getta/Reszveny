@@ -728,7 +728,13 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return 'Uchambuzi $count wa ziada';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Uchambuzi $count wa ziada',
+      one: 'Uchambuzi $count wa ziada',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2917,6 +2923,16 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'Faili hii ni kubwa mno kufunguliwa hapa.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Muhtasari wa mwaka $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Umeuza $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Weka lengo';

@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{آزمائشی دور کا 1 دن باقی} other{آزمائشی دور کے {days} دن باقی}}",
   "trialExpired": "آپ کا مفت آزمائشی دور ختم ہو گیا ہے۔ تجزیہ جاری رکھنے کے لیے کوئی پلان منتخب کریں۔",
   "analysesRemaining": "اس مدت میں {total} میں سے {remaining} تجزیے باقی",
-  "extraCredits": "{count} اضافی تجزیے",
+  "extraCredits": "{count, plural, =1{{count} اضافی تجزیہ} other{{count} اضافی تجزیے}}",
   "renewsOn": "{date} کو تجدید",
   "choosePlan": "پلان منتخب کریں",
   "currentPlan": "موجودہ پلان",
@@ -862,5 +862,7 @@
   "signOutBody": "آپ کا پورٹ فولیو، فہرستیں، قیمت کے الرٹس اور نوٹس آپ کے اکاؤنٹ میں رہتے ہیں اور اس آلے سے ہٹا دیے جاتے ہیں۔ انہیں واپس پانے کے لیے دوبارہ سائن ان کریں۔",
   "signOutUnsaved": "کچھ تبدیلیاں آپ کے اکاؤنٹ میں محفوظ نہیں ہو سکیں (کنکشن نہیں ہے؟)۔ اگر آپ ابھی سائن آؤٹ کریں تو یہ ضائع ہو جائیں گی۔",
   "signOutAnyway": "پھر بھی سائن آؤٹ کریں",
-  "fileTooLarge": "یہ فائل یہاں کھولنے کے لیے بہت بڑی ہے۔"
+  "fileTooLarge": "یہ فائل یہاں کھولنے کے لیے بہت بڑی ہے۔",
+  "portfolioAnnualSummaryYear": "{year} کا سالانہ خلاصہ",
+  "portfolioSoldRow": "فروخت شدہ {quantity} × {price}"
 }

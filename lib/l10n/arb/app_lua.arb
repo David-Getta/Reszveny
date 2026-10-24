@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Dituku 1 dia diteta dishadile} other{Matuku {days} a diteta mashadile}}",
   "trialExpired": "Diteta diebe dia patupu diajika. Sungula forfait bua kutungunuka ne kukonkonona.",
   "analysesRemaining": "Makonkonona {remaining} mashadile pa {total} mu tshikondo etshi",
-  "extraCredits": "Makonkonona {count} a kubueja",
+  "extraCredits": "{count, plural, =1{Makonkonona a kubueja: {count}} other{Makonkonona a kubueja: {count}}}",
   "renewsOn": "Udi utuadija kabidi {date}",
   "choosePlan": "Sungula forfait",
   "currentPlan": "Forfait webe wa mpindieu",
@@ -862,5 +862,7 @@
   "signOutBody": "Portefeuille webe, ma-liste, alerte ya mushinga ne mifundu yebe bidi bishala mu compte webe, ne nebiumushibue mu tshintu etshi. Buela kabidi bua kubipeta kabidi.",
   "signOutUnsaved": "Bishintulula bimue kabiena bilame mu compte webe (kakuena connexion to?). Biwapatuka katataka, nebijimine.",
   "signOutAnyway": "Patuka nansha nanku",
-  "fileTooLarge": "Fichier eu udi munene bikole bua kumubulula muaba eu."
+  "fileTooLarge": "Fichier eu udi munene bikole bua kumubulula muaba eu.",
+  "portfolioAnnualSummaryYear": "Tshikoso tsha tshidimu {year}",
+  "portfolioSoldRow": "Musumbisha {quantity} × {price}"
 }

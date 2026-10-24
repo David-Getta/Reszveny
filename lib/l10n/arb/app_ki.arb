@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Gwatigara mũthenya 1 wa kũgeria} other{Gwatigara mĩthenya {days} ya kũgeria}}",
   "trialExpired": "Kũgeria gwaku gwa tũhũ nĩkũthirĩte. Thuura mũbango nĩguo ũthiĩ na mbere gũthuthuria.",
   "analysesRemaining": "Mathuthuria {remaining} kuuma {total} matigaire ihinda-inĩ rĩĩrĩ",
-  "extraCredits": "Mathuthuria {count} ma kũongerera",
+  "extraCredits": "{count, plural, =1{Mathuthuria ma kũongerera: {count}} other{Mathuthuria ma kũongerera: {count}}}",
   "renewsOn": "Ũkerũhio {date}",
   "choosePlan": "Thuura mũbango",
   "currentPlan": "Mũbango wa rĩu",
@@ -862,5 +862,7 @@
   "signOutBody": "Hisa ciaku, orodha ciaku, imenyithia cia thogora na maandĩko maku nĩ igũikara akaunti-inĩ yaku, na nĩ ikũeherio kĩndũ-inĩ gĩkĩ. Toonya rĩngĩ nĩguo ũcicookie.",
   "signOutUnsaved": "Mĩgarũrũku ĩmwe ndĩnahota kũigwo akaunti-inĩ yaku (gũtirĩ connection?). Ũngiuma rĩu, nĩ ĩkũũra.",
   "signOutAnyway": "Uma o na kũrĩ ũguo",
-  "fileTooLarge": "Faili ĩno nĩ nene mũno gũtũma ĩhingũrwo haha."
+  "fileTooLarge": "Faili ĩno nĩ nene mũno gũtũma ĩhingũrwo haha.",
+  "portfolioAnnualSummaryYear": "Ũhoro mũkuhĩ wa mwaka {year}",
+  "portfolioSoldRow": "Yendio {quantity} × {price}"
 }

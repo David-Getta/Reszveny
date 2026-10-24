@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Nog 1 dag proefperiode} other{Nog {days} dagen proefperiode}}",
   "trialExpired": "Je gratis proefperiode is afgelopen. Kies een abonnement om verder te analyseren.",
   "analysesRemaining": "Nog {remaining} van {total} analyses in deze periode",
-  "extraCredits": "{count} extra analyses",
+  "extraCredits": "{count, plural, =1{{count} extra analyse} other{{count} extra analyses}}",
   "renewsOn": "Wordt verlengd op {date}",
   "choosePlan": "Kies een abonnement",
   "currentPlan": "Huidig abonnement",
@@ -862,5 +862,7 @@
   "signOutBody": "Je portefeuille, lijsten, koersalerts en notities blijven in je account en worden van dit apparaat verwijderd. Log opnieuw in om ze terug te krijgen.",
   "signOutUnsaved": "Sommige wijzigingen konden niet in je account worden opgeslagen (geen verbinding?). Als je nu uitlogt, gaan ze verloren.",
   "signOutAnyway": "Toch uitloggen",
-  "fileTooLarge": "Dit bestand is te groot om hier te openen."
+  "fileTooLarge": "Dit bestand is te groot om hier te openen.",
+  "portfolioAnnualSummaryYear": "Jaaroverzicht {year}",
+  "portfolioSoldRow": "Verkocht {quantity} × {price}"
 }

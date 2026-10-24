@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Guyyaan yaalii 1 hafeera} other{Guyyoonni yaalii {days} hafaniiru}}",
   "trialExpired": "Yaaliin bilisaa kee xumurameera. Xiinxaluu itti fufuuf karoora filadhu.",
   "analysesRemaining": "Yeroo kanaaf xiinxala {total} keessaa {remaining} hafeera",
-  "extraCredits": "Xiinxala dabalataa {count}",
+  "extraCredits": "{count, plural, =1{Xiinxala dabalataa {count}} other{Xiinxala dabalataa {count}}}",
   "renewsOn": "{date} haaromfama",
   "choosePlan": "Karoora filadhu",
   "currentPlan": "Karoora ammaa",
@@ -862,5 +862,7 @@
   "signOutBody": "Poortfooliyoon, tarreewwan, akeekkachiisni gatii fi yaadannoon kee herrega kee keessatti hafu, meeshaa kana irraa immoo ni haqamu. Isaan deebifachuuf irra deebi'ii seeni.",
   "signOutUnsaved": "Jijjiiramoonni tokko tokko herrega kee keessatti olkaa'amuu hin dandeenye (walqunnamtiin hin jiruu?). Amma yoo baate, ni badu.",
   "signOutAnyway": "Ta'us ba'i",
-  "fileTooLarge": "Faayiliin kun asitti banamuuf baay'ee guddaadha."
+  "fileTooLarge": "Faayiliin kun asitti banamuuf baay'ee guddaadha.",
+  "portfolioAnnualSummaryYear": "Cuunfaa waggaa {year}",
+  "portfolioSoldRow": "Gurgurame {quantity} × {price}"
 }

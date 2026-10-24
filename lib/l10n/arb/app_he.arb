@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, one{נשאר יום ניסיון אחד} two{נשארו יומיים של ניסיון} other{נשארו {days} ימי ניסיון}}",
   "trialExpired": "תקופת הניסיון החינמית הסתיימה. בחרו מסלול כדי להמשיך לנתח.",
   "analysesRemaining": "נשארו {remaining} מתוך {total} ניתוחים בתקופה הזו",
-  "extraCredits": "{count} ניתוחים נוספים",
+  "extraCredits": "{count, plural, =1{{count} ניתוח נוסף} other{{count} ניתוחים נוספים}}",
   "renewsOn": "מתחדש ב-{date}",
   "choosePlan": "בחירת מסלול",
   "currentPlan": "המסלול הנוכחי",
@@ -862,5 +862,7 @@
   "signOutBody": "תיק ההשקעות, הרשימות, התראות המחיר וההערות שלך נשארים בחשבון ויוסרו מהמכשיר הזה. כדי לקבל אותם בחזרה, צריך להיכנס שוב.",
   "signOutUnsaved": "לא ניתן היה לשמור חלק מהשינויים בחשבון שלך (אין חיבור?). אם יוצאים עכשיו, הם יאבדו.",
   "signOutAnyway": "לצאת בכל זאת",
-  "fileTooLarge": "הקובץ הזה גדול מדי לפתיחה כאן."
+  "fileTooLarge": "הקובץ הזה גדול מדי לפתיחה כאן.",
+  "portfolioAnnualSummaryYear": "סיכום שנתי {year}",
+  "portfolioSoldRow": "נמכרו {quantity} × {price}"
 }

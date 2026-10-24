@@ -748,8 +748,7 @@ class AppLocalizationsBs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count dodatnih analiza',
-      few: '$count dodatne analize',
+      other: 'Dodatne analize: $count',
       one: '$count dodatna analiza',
     );
     return '$_temp0';
@@ -2962,6 +2961,16 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'Ovaj fajl je prevelik da bi se ovdje otvorio.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Godišnji pregled za $year.';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Prodano $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Postavi cilj';

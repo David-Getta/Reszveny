@@ -226,7 +226,9 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                         color: lot.sell ? p.accent : p.muted,
                       ),
                       title: Text(
-                        '${lot.sell ? '${l10n.portfolioSold} ' : ''}${qty(lot.quantity)} × ${fmt.unit(lot.price, lot.currency)}',
+                        lot.sell
+                            ? l10n.portfolioSoldRow(qty(lot.quantity), fmt.unit(lot.price, lot.currency))
+                            : '${qty(lot.quantity)} × ${fmt.unit(lot.price, lot.currency)}',
                       ),
                       // Minden számla nézetében a tétel számlája is (ha van).
                       subtitle: switch ([

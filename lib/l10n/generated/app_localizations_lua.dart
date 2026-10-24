@@ -728,7 +728,13 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return 'Makonkonona $count a kubueja';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Makonkonona a kubueja: $count',
+      one: 'Makonkonona a kubueja: $count',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2927,6 +2933,16 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get fileTooLarge =>
       'Fichier eu udi munene bikole bua kumubulula muaba eu.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Tshikoso tsha tshidimu $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Musumbisha $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Teka tshipatshila';

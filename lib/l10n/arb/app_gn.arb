@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Opyta 1 ára jeporu rei} other{Opyta {days} ára jeporu rei}}",
   "trialExpired": "Nde jeporu rei opáma. Eiporavo peteĩ plan rehesaʼỹijo jey hag̃ua.",
   "analysesRemaining": "Opyta {remaining} jehesaʼỹijo {total}-gui ko ára paʼũme",
-  "extraCredits": "{count} jehesaʼỹijo mbojuajupyre",
+  "extraCredits": "{count, plural, =1{{count} jehesaʼỹijo mbojuajupyre} other{{count} jehesaʼỹijo mbojuajupyre}}",
   "renewsOn": "Oñembopyahúta {date}-pe",
   "choosePlan": "Eiporavo plan",
   "currentPlan": "Plan koʼag̃agua",
@@ -862,5 +862,7 @@
   "signOutBody": "Ne cartera, ne listakuéra, tepy maranduʼi ha ne jehaipyrekuéra opytáta nde mbaʼetépe ha oñembogue ko mbaʼeʼokágui. Eike jey reguereko jey hag̃ua.",
   "signOutUnsaved": "Oĩ ñemoambue ndaikatúiva oñeñongatu nde mbaʼetépe (¿ndaipóri ñanduti?). Resẽ ramo koʼág̃a, okañýta.",
   "signOutAnyway": "Esẽ jepe",
-  "fileTooLarge": "Ko archivo tuichaiterei ojepeʼa hag̃ua koʼápe."
+  "fileTooLarge": "Ko archivo tuichaiterei ojepeʼa hag̃ua koʼápe.",
+  "portfolioAnnualSummaryYear": "Ary {year} ñemombykymi",
+  "portfolioSoldRow": "Ñemu {quantity} × {price}"
 }

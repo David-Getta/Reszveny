@@ -732,7 +732,13 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return 'Amasesengura $count y\'inyongera';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Amasesengura $count y\'inyongera',
+      one: 'Isesengura $count ry\'inyongera',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2929,6 +2935,16 @@ class AppLocalizationsRw extends AppLocalizations {
   @override
   String get fileTooLarge =>
       'Iyi dosiye ni nini cyane ku buryo idashobora gufungurwa hano.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Incamake y\'umwaka wa $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Byagurishijwe $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Shyiraho intego';

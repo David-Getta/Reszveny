@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, one{Pozostał {days} dzień okresu próbnego} few{Pozostały {days} dni okresu próbnego} many{Pozostało {days} dni okresu próbnego} other{Pozostało {days} dnia okresu próbnego}}",
   "trialExpired": "Twój bezpłatny okres próbny dobiegł końca. Wybierz plan, aby dalej analizować.",
   "analysesRemaining": "Pozostało {remaining} z {total} analiz w tym okresie",
-  "extraCredits": "{count, plural, one{{count} dodatkowa analiza} few{{count} dodatkowe analizy} many{{count} dodatkowych analiz} other{{count} dodatkowej analizy}}",
+  "extraCredits": "{count, plural, =1{{count} dodatkowa analiza} other{Dodatkowe analizy: {count}}}",
   "renewsOn": "Odnowienie {date}",
   "choosePlan": "Wybierz plan",
   "currentPlan": "Obecny plan",
@@ -862,5 +862,7 @@
   "signOutBody": "Twój portfel, listy, alerty cenowe i notatki pozostaną na Twoim koncie i zostaną usunięte z tego urządzenia. Zaloguj się ponownie, aby je odzyskać.",
   "signOutUnsaved": "Niektórych zmian nie udało się zapisać na Twoim koncie (brak połączenia?). Jeśli wylogujesz się teraz, zostaną utracone.",
   "signOutAnyway": "Wyloguj się mimo to",
-  "fileTooLarge": "Ten plik jest za duży, aby go tu otworzyć."
+  "fileTooLarge": "Ten plik jest za duży, aby go tu otworzyć.",
+  "portfolioAnnualSummaryYear": "Podsumowanie roczne {year}",
+  "portfolioSoldRow": "Sprzedano {quantity} × {price}"
 }

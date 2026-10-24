@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{1 hari uji coba tersisa} other{{days} hari uji coba tersisa}}",
   "trialExpired": "Uji coba gratis Anda telah berakhir. Pilih paket untuk terus menganalisis.",
   "analysesRemaining": "{remaining} dari {total} analisis tersisa periode ini",
-  "extraCredits": "{count} analisis tambahan",
+  "extraCredits": "{count, plural, =1{{count} analisis tambahan} other{{count} analisis tambahan}}",
   "renewsOn": "Diperpanjang {date}",
   "choosePlan": "Pilih paket",
   "currentPlan": "Paket saat ini",
@@ -862,5 +862,7 @@
   "signOutBody": "Portofolio, daftar, peringatan harga, dan catatan Anda tetap ada di akun Anda dan dihapus dari perangkat ini. Masuk lagi untuk mendapatkannya kembali.",
   "signOutUnsaved": "Beberapa perubahan tidak dapat disimpan ke akun Anda (tidak ada koneksi?). Jika Anda keluar sekarang, perubahan tersebut akan hilang.",
   "signOutAnyway": "Tetap keluar",
-  "fileTooLarge": "File ini terlalu besar untuk dibuka di sini."
+  "fileTooLarge": "File ini terlalu besar untuk dibuka di sini.",
+  "portfolioAnnualSummaryYear": "Ringkasan tahunan {year}",
+  "portfolioSoldRow": "Terjual {quantity} × {price}"
 }

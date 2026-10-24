@@ -726,7 +726,13 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count تحلیل اضافی';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تحلیل اضافی',
+      one: '$count تحلیل اضافی',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2910,6 +2916,16 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get fileTooLarge =>
       'این فایل برای باز شدن در اینجا بیش از حد بزرگ است.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'خلاصه سالانه $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'فروش $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'تعیین هدف';

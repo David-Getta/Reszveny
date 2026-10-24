@@ -726,7 +726,13 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count n tselḍin nniḍen';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count n tselḍin nniḍen',
+      one: '$count n tselḍin nniḍen',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2913,6 +2919,16 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'Afaylu-a meqqer aṭas akken ad yettwaldi da.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Agzul n useggas $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Yettwazenz $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Sbadu iswi';

@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{A mai rămas 1 zi de probă} few{Au mai rămas {days} zile de probă} other{Au mai rămas {days} de zile de probă}}",
   "trialExpired": "Perioada ta de probă gratuită s-a încheiat. Alege un plan pentru a continua analizele.",
   "analysesRemaining": "{remaining} din {total} analize rămase în această perioadă",
-  "extraCredits": "{count, plural, one{{count} analiză suplimentară} few{{count} analize suplimentare} other{{count} de analize suplimentare}}",
+  "extraCredits": "{count, plural, =1{{count} analiză suplimentară} other{Analize suplimentare: {count}}}",
   "renewsOn": "Se reînnoiește pe {date}",
   "choosePlan": "Alege un plan",
   "currentPlan": "Planul actual",
@@ -862,5 +862,7 @@
   "signOutBody": "Portofoliul, listele, alertele de preț și notițele tale rămân în cont și sunt șterse de pe acest dispozitiv. Conectează-te din nou ca să le recuperezi.",
   "signOutUnsaved": "Unele modificări nu au putut fi salvate în cont (nicio conexiune?). Dacă te deconectezi acum, se vor pierde.",
   "signOutAnyway": "Deconectează-te oricum",
-  "fileTooLarge": "Acest fișier este prea mare pentru a fi deschis aici."
+  "fileTooLarge": "Acest fișier este prea mare pentru a fi deschis aici.",
+  "portfolioAnnualSummaryYear": "Rezumat anual {year}",
+  "portfolioSoldRow": "Vândut {quantity} × {price}"
 }

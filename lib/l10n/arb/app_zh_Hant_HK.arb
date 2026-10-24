@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{試用期尚餘 1 日} other{試用期尚餘 {days} 日}}",
   "trialExpired": "你的免費試用已結束。請選擇計劃以繼續分析。",
   "analysesRemaining": "本期尚餘 {remaining} 次分析（共 {total} 次）",
-  "extraCredits": "{count} 次額外分析",
+  "extraCredits": "{count, plural, =1{{count} 次額外分析} other{{count} 次額外分析}}",
   "renewsOn": "{date} 續訂",
   "choosePlan": "選擇計劃",
   "currentPlan": "目前計劃",
@@ -862,5 +862,7 @@
   "signOutBody": "你的投資組合、清單、價格提示和筆記會保留在你的帳戶中，並會從此裝置移除。重新登入即可取回。",
   "signOutUnsaved": "部分變更未能儲存至你的帳戶（沒有網絡連線？）。如現在登出，這些變更將會遺失。",
   "signOutAnyway": "仍要登出",
-  "fileTooLarge": "此檔案過大，無法在此開啟。"
+  "fileTooLarge": "此檔案過大，無法在此開啟。",
+  "portfolioAnnualSummaryYear": "{year}年度摘要",
+  "portfolioSoldRow": "賣出 {quantity} × {price}"
 }

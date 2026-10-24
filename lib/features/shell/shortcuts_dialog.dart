@@ -6,20 +6,24 @@ import '../../core/desktop/desktop_integration.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 
-/// A billentyűparancs felirata: macOS-en ⌘K, máshol Ctrl+K.
-String shortcutLabel(String key) => defaultTargetPlatform == TargetPlatform.macOS ? '⌘$key' : 'Ctrl+$key';
+/// A billentyűparancs felirata: macOS-en ⌘K, máshol Ctrl+K (a Ctrl a felület nyelvén, pl. „Strg+K”).
+String shortcutLabel(String key, {String ctrl = 'Ctrl'}) =>
+    defaultTargetPlatform == TargetPlatform.macOS ? '⌘$key' : '$ctrl+$key';
 
 /// Az asztali billentyűparancsok listája (Ctrl/⌘ + /, vagy az oldalsáv gombja).
 Future<void> showShortcutsDialog(BuildContext context) {
   final l10n = AppLocalizations.of(context);
   final services = AppServices.of(context);
+  final names = keyNamesOf(MaterialLocalizations.of(context));
+  String label(String key) => shortcutLabel(key, ctrl: names.ctrl);
   final rows = [
-    (shortcutLabel('K'), l10n.newSearch),
-    (shortcutLabel('2'), l10n.portfolio),
-    (shortcutLabel('3'), l10n.priceAlerts),
-    (shortcutLabel(','), l10n.settings),
-    (shortcutLabel('/'), l10n.shortcutsTitle),
-    if (DesktopIntegration.isSupported) (services.desktop.shortcutLabelFor(space: l10n.keySpace), l10n.hotkeyLabel),
+    (label('K'), l10n.newSearch),
+    (label('2'), l10n.portfolio),
+    (label('3'), l10n.priceAlerts),
+    (label(','), l10n.settings),
+    (label('/'), l10n.shortcutsTitle),
+    if (DesktopIntegration.isSupported)
+      (services.desktop.shortcutLabelFor(space: l10n.keySpace, names: names), l10n.hotkeyLabel),
   ];
   return showDialog<void>(
     context: context,

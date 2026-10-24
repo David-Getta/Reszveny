@@ -730,7 +730,13 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return 'အပိုသုံးသပ်ချက် $count ခု';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'အပိုသုံးသပ်ချက် $count ခု',
+      one: 'အပိုသုံးသပ်ချက် $count ခု',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2905,6 +2911,16 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'ဤဖိုင်သည် ဤနေရာတွင် ဖွင့်ရန် ကြီးလွန်းသည်။';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return '$year ခုနှစ် နှစ်ပတ်လည် အနှစ်ချုပ်';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'ရောင်းပြီး $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';

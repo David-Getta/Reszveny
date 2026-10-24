@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, one{Liko {days} bandomojo laikotarpio diena} few{Liko {days} bandomojo laikotarpio dienos} many{Liko {days} bandomojo laikotarpio dienos} other{Liko {days} bandomojo laikotarpio dienų}}",
   "trialExpired": "Jūsų nemokamas bandomasis laikotarpis baigėsi. Pasirinkite planą, kad galėtumėte toliau analizuoti.",
   "analysesRemaining": "Šį laikotarpį liko {remaining} iš {total} analizių",
-  "extraCredits": "{count, plural, one{{count} papildoma analizė} few{{count} papildomos analizės} many{{count} papildomos analizės} other{{count} papildomų analizių}}",
+  "extraCredits": "{count, plural, =1{{count} papildoma analizė} other{Papildomos analizės: {count}}}",
   "renewsOn": "Atsinaujina {date}",
   "choosePlan": "Pasirinkite planą",
   "currentPlan": "Dabartinis planas",
@@ -862,5 +862,7 @@
   "signOutBody": "Jūsų portfelis, sąrašai, kainos įspėjimai ir užrašai lieka jūsų paskyroje ir pašalinami iš šio įrenginio. Prisijunkite dar kartą, kad juos susigrąžintumėte.",
   "signOutUnsaved": "Kai kurių pakeitimų nepavyko išsaugoti jūsų paskyroje (nėra ryšio?). Jei atsijungsite dabar, jie bus prarasti.",
   "signOutAnyway": "Vis tiek atsijungti",
-  "fileTooLarge": "Šis failas per didelis, kad būtų atidarytas čia."
+  "fileTooLarge": "Šis failas per didelis, kad būtų atidarytas čia.",
+  "portfolioAnnualSummaryYear": "{year} m. metinė suvestinė",
+  "portfolioSoldRow": "Parduota {quantity} × {price}"
 }

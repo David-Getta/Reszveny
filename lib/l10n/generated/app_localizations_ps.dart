@@ -726,7 +726,13 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count اضافي تحلیلونه';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count اضافي تحلیلونه',
+      one: '$count اضافي تحلیل',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2905,6 +2911,16 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'دا فایل دلته د پرانیستلو لپاره ډېر لوی دی.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'کلنۍ لنډیز $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'وپلورل شو $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'موخه وټاکئ';

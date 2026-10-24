@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, zero{Izmēģinājumam atlikušas {days} dienas} one{Izmēģinājumam atlikusi {days} diena} other{Izmēģinājumam atlikušas {days} dienas}}",
   "trialExpired": "Jūsu bezmaksas izmēģinājums ir beidzies. Izvēlieties plānu, lai turpinātu analizēt.",
   "analysesRemaining": "Atlikušās analīzes šajā periodā: {remaining} no {total}",
-  "extraCredits": "{count, plural, zero{{count} papildu analīzes} one{{count} papildu analīze} other{{count} papildu analīzes}}",
+  "extraCredits": "{count, plural, =1{{count} papildu analīze} other{{count} papildu analīzes}}",
   "renewsOn": "Atjaunošana: {date}",
   "choosePlan": "Izvēlieties plānu",
   "currentPlan": "Pašreizējais plāns",
@@ -862,5 +862,7 @@
   "signOutBody": "Jūsu portfelis, saraksti, cenu brīdinājumi un piezīmes paliek jūsu kontā un tiek noņemti no šīs ierīces. Pierakstieties vēlreiz, lai tos atgūtu.",
   "signOutUnsaved": "Dažas izmaiņas neizdevās saglabāt jūsu kontā (nav savienojuma?). Ja izrakstīsieties tagad, tās tiks zaudētas.",
   "signOutAnyway": "Tomēr izrakstīties",
-  "fileTooLarge": "Šis fails ir pārāk liels, lai to atvērtu šeit."
+  "fileTooLarge": "Šis fails ir pārāk liels, lai to atvērtu šeit.",
+  "portfolioAnnualSummaryYear": "{year}. gada kopsavilkums",
+  "portfolioSoldRow": "Pārdots {quantity} × {price}"
 }

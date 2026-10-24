@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Pasara zuva 1 remuedzo} other{Pasara mazuva {days} emuedzo}}",
   "trialExpired": "Muedzo wako wemahara wapera. Sarudza chirongwa kuti urambe uchiongorora.",
   "analysesRemaining": "Pasara ongororo {remaining} kubva pa{total} munguva ino",
-  "extraCredits": "Ongororo {count} dzekuwedzera",
+  "extraCredits": "{count, plural, =1{Ongororo {count} yekuwedzera} other{Ongororo {count} dzekuwedzera}}",
   "renewsOn": "Kunovandudzwa {date}",
   "choosePlan": "Sarudza chirongwa",
   "currentPlan": "Chirongwa chazvino",
@@ -862,5 +862,7 @@
   "signOutBody": "Potiforiyo yako, marondedzero, zviziviso zvemutengo nezvinyorwa zvinoramba zviri muakaundi yako uye zvinobviswa pamudziyo uyu. Pinda zvakare kuti uzviwanezve.",
   "signOutUnsaved": "Dzimwe shanduko hadzina kukwanisa kuchengetwa muakaundi yako (hapana kubatana?). Ukabuda iye zvino, dzicharasika.",
   "signOutAnyway": "Buda zvakadaro",
-  "fileTooLarge": "Faira iyi yakakura zvakanyanya kuti ivhurwe pano."
+  "fileTooLarge": "Faira iyi yakakura zvakanyanya kuti ivhurwe pano.",
+  "portfolioAnnualSummaryYear": "Pfupiso yegore {year}",
+  "portfolioSoldRow": "Zvatengeswa {quantity} × {price}"
 }

@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Rete {days} jou esè} other{Rete {days} jou esè}}",
   "trialExpired": "Esè gratis ou a fini. Chwazi yon plan pou kontinye analize.",
   "analysesRemaining": "Rete {remaining} sou {total} analiz pou peryòd sa a",
-  "extraCredits": "{count} analiz anplis",
+  "extraCredits": "{count, plural, =1{{count} analiz anplis} other{{count} analiz anplis}}",
   "renewsOn": "Ap renouvle {date}",
   "choosePlan": "Chwazi yon plan",
   "currentPlan": "Plan aktyèl",
@@ -862,5 +862,7 @@
   "signOutBody": "Pòtfèy ou, lis ou yo, alèt pri ou yo ak nòt ou yo rete nan kont ou, epi y ap retire yo sou aparèy sa a. Konekte ankò pou w rekipere yo.",
   "signOutUnsaved": "Gen kèk chanjman ki pa t ka anrejistre nan kont ou (pa gen koneksyon?). Si ou dekonekte kounye a, y ap pèdi.",
   "signOutAnyway": "Dekonekte kanmenm",
-  "fileTooLarge": "Fichye sa a twò gwo pou louvri isit la."
+  "fileTooLarge": "Fichye sa a twò gwo pou louvri isit la.",
+  "portfolioAnnualSummaryYear": "Rezime anyèl pou {year}",
+  "portfolioSoldRow": "Vandi {quantity} × {price}"
 }

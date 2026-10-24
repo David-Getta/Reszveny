@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{{days} jour d’essai restant} other{{days} jours d’essai restants}}",
   "trialExpired": "Votre essai gratuit est terminé. Choisissez un forfait pour continuer à analyser.",
   "analysesRemaining": "{remaining} analyses sur {total} restantes pour cette période",
-  "extraCredits": "{count} analyses supplémentaires",
+  "extraCredits": "{count, plural, =1{{count} analyse supplémentaire} other{{count} analyses supplémentaires}}",
   "renewsOn": "Renouvellement le {date}",
   "choosePlan": "Choisir un forfait",
   "currentPlan": "Forfait actuel",
@@ -862,5 +862,7 @@
   "signOutBody": "Votre portefeuille, vos listes, vos alertes de cours et vos notes restent dans votre compte et sont supprimés de cet appareil. Reconnectez-vous pour les retrouver.",
   "signOutUnsaved": "Certaines modifications n’ont pas pu être enregistrées dans votre compte (pas de connexion ?). Si vous vous déconnectez maintenant, elles seront perdues.",
   "signOutAnyway": "Se déconnecter quand même",
-  "fileTooLarge": "Ce fichier est trop volumineux pour être ouvert ici."
+  "fileTooLarge": "Ce fichier est trop volumineux pour être ouvert ici.",
+  "portfolioAnnualSummaryYear": "Récapitulatif annuel {year}",
+  "portfolioSoldRow": "Vendu {quantity} × {price}"
 }

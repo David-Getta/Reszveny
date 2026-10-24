@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/util/formatters.dart';
 import '../../app_services.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
@@ -89,7 +90,8 @@ class _StopsDialogState extends State<_StopsDialog> {
                 for (final v in stopPercents)
                   ChoiceChip(
                     key: ValueKey('stops-$v'),
-                    label: Text('−${v.toStringAsFixed(0)}%'),
+                    // A nyelv számformájával, egy egységként (jobbról balra írva se „5%−”).
+                    label: Text(Fmt(Localizations.localeOf(context).toString()).percent(-v, decimals: 0)),
                     selected: v == _percent,
                     onSelected: (_) => setState(() => _percent = v),
                   ),

@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, one{{days} day remain for your trial} other{{days} days remain for your trial}}",
   "trialExpired": "Your free trial don finish. Choose plan make you continue to dey analyse.",
   "analysesRemaining": "{remaining} out of {total} analysis remain for dis period",
-  "extraCredits": "{count} extra analysis",
+  "extraCredits": "{count, plural, =1{{count} extra analysis} other{{count} extra analysis}}",
   "renewsOn": "E go renew {date}",
   "choosePlan": "Choose plan",
   "currentPlan": "Your plan now",
@@ -862,5 +862,7 @@
   "signOutBody": "Your portfolio, lists, price alerts and notes go still dey your account, but we go comot dem from dis device. Sign in again to get dem back.",
   "signOutUnsaved": "Some changes no fit save for your account (no connection?). If you sign out now, dem go loss.",
   "signOutAnyway": "Sign out anyhow",
-  "fileTooLarge": "Dis file too big to open for here."
+  "fileTooLarge": "Dis file too big to open for here.",
+  "portfolioAnnualSummaryYear": "Yearly summary {year}",
+  "portfolioSoldRow": "Sold {quantity} × {price}"
 }

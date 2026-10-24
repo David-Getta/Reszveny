@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{1 fan bu jéem a des} other{{days} fan yu jéem a des}}",
   "trialExpired": "Sa jéem ci dara jeex na. Tànnal benn formil ngir wéy di saytu.",
   "analysesRemaining": "{remaining} saytu ci {total} a des ci diir bii",
-  "extraCredits": "{count} saytu yu ñu yokk",
+  "extraCredits": "{count, plural, =1{{count} saytu bu ñu yokk} other{{count} saytu yu ñu yokk}}",
   "renewsOn": "Dina yeesu {date}",
   "choosePlan": "Tànnal formil",
   "currentPlan": "Formil bi nga am",
@@ -862,5 +862,7 @@
   "signOutBody": "Sa aksiyoŋ yi, sa limm yi, sa artu njëg yi ak sa notu yi dañuy des ci sa kont, waaye dinañu leen far ci masin bii. Duggaatal ngir gisaat leen.",
   "signOutUnsaved": "Am na ay coppite yu ñu mënul denc ci sa kont (amul internet?). Soo génnee leegi, dinañu réer.",
   "signOutAnyway": "Génn rekk",
-  "fileTooLarge": "Fiise bii dafa rëy lool, mënuñu ko ubbi fii."
+  "fileTooLarge": "Fiise bii dafa rëy lool, mënuñu ko ubbi fii.",
+  "portfolioAnnualSummaryYear": "Tënkub at mi {year}",
+  "portfolioSoldRow": "Jaaye {quantity} × {price}"
 }

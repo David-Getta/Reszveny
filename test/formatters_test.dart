@@ -47,7 +47,8 @@ void main() {
     final ar = Fmt('ar');
     expect(ar.percent(5, withSign: true), allOf(startsWith('\u2066'), endsWith('\u2069'), contains('5')));
     final ckb = Fmt('ckb');
-    expect(ckb.percent(-5.5), '\u2066-5.50%\u2069');
+    // A szoráni kurd az arab formátumot kapja (adat nélküli nyelv, a térség nyelve).
+    expect(ckb.percent(-5.5), allOf(startsWith('\u2066'), endsWith('\u2069'), contains('-5.50%')));
     expect(Fmt('en').percent(5, withSign: true), '+5.00%');
   });
 }

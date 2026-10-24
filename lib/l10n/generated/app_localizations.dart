@@ -1596,10 +1596,10 @@ abstract class AppLocalizations {
   /// **'{remaining} of {total} analyses left this period'**
   String analysesRemaining(int remaining, int total);
 
-  /// No description provided for @extraCredits.
+  /// Balance of extra (pay-per-use) analyses, e.g. in Settings and on the paywall. Use the plural forms of the language.
   ///
   /// In en, this message translates to:
-  /// **'{count} extra analyses'**
+  /// **'{count, plural, =1{{count} extra analysis} other{{count} extra analyses}}'**
   String extraCredits(int count);
 
   /// No description provided for @renewsOn.
@@ -4913,6 +4913,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This file is too large to open here.'**
   String get fileTooLarge;
+
+  /// Heading and share subject of the annual summary for one year.
+  ///
+  /// In en, this message translates to:
+  /// **'Annual summary {year}'**
+  String portfolioAnnualSummaryYear(String year);
+
+  /// A sale row in the purchases list: quantity and price per share.
+  ///
+  /// In en, this message translates to:
+  /// **'Sold {quantity} × {price}'**
+  String portfolioSoldRow(String quantity, String price);
 
   /// No description provided for @portfolioGoalSet.
   ///

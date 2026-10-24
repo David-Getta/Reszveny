@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{トライアル残り 1 日} other{トライアル残り {days} 日}}",
   "trialExpired": "無料トライアルが終了しました。分析を続けるにはプランを選択してください。",
   "analysesRemaining": "今期の分析は残り {remaining} / {total} 回",
-  "extraCredits": "追加分析 {count} 回",
+  "extraCredits": "{count, plural, =1{追加分析 {count} 回} other{追加分析 {count} 回}}",
   "renewsOn": "{date} に更新",
   "choosePlan": "プランを選択",
   "currentPlan": "現在のプラン",
@@ -862,5 +862,7 @@
   "signOutBody": "ポートフォリオ、リスト、価格アラート、メモはアカウントに残り、この端末からは削除されます。もう一度サインインすると元に戻ります。",
   "signOutUnsaved": "一部の変更をアカウントに保存できませんでした（オフラインかもしれません）。今サインアウトすると、これらの変更は失われます。",
   "signOutAnyway": "それでもサインアウト",
-  "fileTooLarge": "このファイルは大きすぎるため、ここでは開けません。"
+  "fileTooLarge": "このファイルは大きすぎるため、ここでは開けません。",
+  "portfolioAnnualSummaryYear": "{year}年の年間サマリー",
+  "portfolioSoldRow": "売却 {quantity} × {price}"
 }

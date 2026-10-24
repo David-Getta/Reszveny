@@ -2937,6 +2937,16 @@ class AppLocalizationsMk extends AppLocalizations {
   String get fileTooLarge => 'Оваа датотека е преголема за да се отвори овде.';
 
   @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Годишен преглед $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Продадено $quantity × $price';
+  }
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

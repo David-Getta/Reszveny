@@ -207,7 +207,8 @@ class AppServices {
             portfolio: this.portfolio,
             alerts: this.alerts,
             notes: this.notes,
-            language: () => (locale.override ?? WidgetsBinding.instance.platformDispatcher.locale).languageCode,
+            // Az app tényleges nyelve (a felület is ezt mutatja), nem a készülék első nyelve.
+            language: () => locale.effectiveFor(WidgetsBinding.instance.platformDispatcher.locales).languageCode,
           );
     // Weben a többi lapon közben mentett változások átvétele, amikor ez a lap előtérbe kerül.
     tabRefresh = TabRefresh(

@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Ku sale siku rin'we ra ndzingeto} other{Ku sale masiku ya {days} ya ndzingeto}}",
   "trialExpired": "Ndzingeto wa wena wa mahala wu herile. Hlawula kungu ku ya emahlweni hi minxopaxopo.",
   "analysesRemaining": "Ku sale minxopaxopo ya {remaining} eka ya {total} eka nkarhi lowu",
-  "extraCredits": "Minxopaxopo yo engetela ya {count}",
+  "extraCredits": "{count, plural, =1{Nxopaxopo wo engetela wa {count}} other{Minxopaxopo yo engetela ya {count}}}",
   "renewsOn": "Wu pfuxetiwa hi {date}",
   "choosePlan": "Hlawula kungu",
   "currentPlan": "Kungu ra sweswi",
@@ -862,5 +862,7 @@
   "signOutBody": "Phothifoliyo ya wena, minxaxamelo, switiviso swa nxavo na tinotsi swi tshama eka akhawunti ya wena kutani swi susiwa eka xitirhisiwa lexi. Nghena nakambe leswaku u swi kuma nakambe.",
   "signOutUnsaved": "Swin'wana swa ku cinca a swi kotanga ku hlayisiwa eka akhawunti ya wena (ku hava vuhlanganisi?). Loko u huma sweswi, swi ta lahleka.",
   "signOutAnyway": "Huma hambiswiritano",
-  "fileTooLarge": "Fayili leyi i kulu ngopfu ku pfuriwa laha."
+  "fileTooLarge": "Fayili leyi i kulu ngopfu ku pfuriwa laha.",
+  "portfolioAnnualSummaryYear": "Nkatsakanyo wa lembe ra {year}",
+  "portfolioSoldRow": "Swi xavisiwile {quantity} × {price}"
 }

@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{د آزمېښت 1 ورځ پاتې ده} other{د آزمېښت {days} ورځې پاتې دي}}",
   "trialExpired": "ستاسو وړیا آزمېښت پای ته ورسېد. د تحلیل د دوام لپاره یو پلان وټاکئ.",
   "analysesRemaining": "په دې موده کې له {total} څخه {remaining} تحلیلونه پاتې دي",
-  "extraCredits": "{count} اضافي تحلیلونه",
+  "extraCredits": "{count, plural, =1{{count} اضافي تحلیل} other{{count} اضافي تحلیلونه}}",
   "renewsOn": "په {date} نوی کېږي",
   "choosePlan": "پلان وټاکئ",
   "currentPlan": "اوسنی پلان",
@@ -862,5 +862,7 @@
   "signOutBody": "ستاسو پورټفولیو، لېستونه، د بیې خبرتیاوې او یادښتونه ستاسو په حساب کې پاتې کېږي او له دې وسیلې لرې کېږي. د بېرته ترلاسه کولو لپاره بیا ننوځئ.",
   "signOutUnsaved": "ځینې بدلونونه ستاسو په حساب کې خوندي نه شول (اتصال نشته؟). که اوس له حساب ووځئ، له منځه به ولاړ شي.",
   "signOutAnyway": "بیا هم له حساب وتل",
-  "fileTooLarge": "دا فایل دلته د پرانیستلو لپاره ډېر لوی دی."
+  "fileTooLarge": "دا فایل دلته د پرانیستلو لپاره ډېر لوی دی.",
+  "portfolioAnnualSummaryYear": "کلنۍ لنډیز {year}",
+  "portfolioSoldRow": "وپلورل شو {quantity} × {price}"
 }

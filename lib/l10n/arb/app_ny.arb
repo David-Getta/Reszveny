@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Latsala tsiku 1 la kuyesera} other{Atsala masiku {days} a kuyesera}}",
   "trialExpired": "Kuyesera kwanu kwaulere kwatha. Sankhani dongosolo kuti mupitirize kusanthula.",
   "analysesRemaining": "Mwatsala ndi kusanthula {remaining} mwa {total} nthawi ino",
-  "extraCredits": "Kusanthula kowonjezera {count}",
+  "extraCredits": "{count, plural, =1{Kusanthula kowonjezera {count}} other{Kusanthula kowonjezera {count}}}",
   "renewsOn": "Kudzapitirizidwa pa {date}",
   "choosePlan": "Sankhani dongosolo",
   "currentPlan": "Dongosolo lanu lapano",
@@ -862,5 +862,7 @@
   "signOutBody": "Masheya anu, mindandanda, zidziwitso za mtengo ndi zolemba zimakhalabe mu akaunti yanu ndipo zimachotsedwa pa chipangizo ichi. Lowaninso kuti muzipezenso.",
   "signOutUnsaved": "Zosintha zina sizinathe kusungidwa mu akaunti yanu (palibe intaneti?). Mukatuluka tsopano, zidzatayika.",
   "signOutAnyway": "Tulukanibe",
-  "fileTooLarge": "Fayilo iyi ndi yayikulu kwambiri kuti itsegulidwe pano."
+  "fileTooLarge": "Fayilo iyi ndi yayikulu kwambiri kuti itsegulidwe pano.",
+  "portfolioAnnualSummaryYear": "Chidule cha pachaka {year}",
+  "portfolioSoldRow": "Zagulitsidwa {quantity} × {price}"
 }

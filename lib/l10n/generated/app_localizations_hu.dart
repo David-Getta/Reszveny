@@ -2919,6 +2919,16 @@ class AppLocalizationsHu extends AppLocalizations {
   String get fileTooLarge => 'Ez a fájl túl nagy ahhoz, hogy itt megnyíljon.';
 
   @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Éves összesítő – $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Eladva: $quantity × $price';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

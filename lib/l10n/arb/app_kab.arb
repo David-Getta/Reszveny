@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Yegra-d 1 n wass n tirmit} other{Gran-d {days} n wussan n tirmit}}",
   "trialExpired": "Tirmit n baṭel tfuk. Fren aɣawas akken ad tkemmleḍ tiselḍin.",
   "analysesRemaining": "Gran-d {remaining} seg {total} n tselḍin deg tallit-a",
-  "extraCredits": "{count} n tselḍin nniḍen",
+  "extraCredits": "{count, plural, =1{{count} n tselḍin nniḍen} other{{count} n tselḍin nniḍen}}",
   "renewsOn": "Ad yettwajedded ass n {date}",
   "choosePlan": "Fren aɣawas",
   "currentPlan": "Aɣawas amiran",
@@ -862,5 +862,7 @@
   "signOutBody": "Aqrab-ik, tibdarin-ik, ilɣa n ssuma d tezmilin-ik ad qqimen deg umiḍan-ik, ad ttwakksen seg yibenk-a. Kcem tikkelt nniḍen akken ad ten-id-terreḍ.",
   "signOutUnsaved": "Kra n yisnifal ur ttwaseklesen ara deg umiḍan-ik (ulac tuqqna?). Ma teffɣeḍ tura, ad ruḥen.",
   "signOutAnyway": "Ffeɣ ɣas akken",
-  "fileTooLarge": "Afaylu-a meqqer aṭas akken ad yettwaldi da."
+  "fileTooLarge": "Afaylu-a meqqer aṭas akken ad yettwaldi da.",
+  "portfolioAnnualSummaryYear": "Agzul n useggas {year}",
+  "portfolioSoldRow": "Yettwazenz {quantity} × {price}"
 }

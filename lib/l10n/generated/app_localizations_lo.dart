@@ -720,7 +720,13 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return 'ການວິເຄາະເພີ່ມເຕີມ $count ຄັ້ງ';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ການວິເຄາະເພີ່ມເຕີມ $count ຄັ້ງ',
+      one: 'ການວິເຄາະເພີ່ມເຕີມ $count ຄັ້ງ',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2884,6 +2890,16 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'ໄຟລ໌ນີ້ໃຫຍ່ເກີນໄປທີ່ຈະເປີດຢູ່ນີ້.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'ສະຫຼຸບປະຈຳປີ $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'ຂາຍແລ້ວ $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';

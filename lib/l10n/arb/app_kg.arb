@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Kisidi kilumbu 1 kia kumeka} other{Bisidi bilumbu {days} bia kumeka}}",
   "trialExpired": "Kumeka kwaku kwa mpamba kusukidi. Sola forfait mu kulanda vanga analyse.",
   "analysesRemaining": "Analyse {remaining} zisidi mu {total} mu ntangu yayi",
-  "extraCredits": "Analyse {count} za kuyika",
+  "extraCredits": "{count, plural, =1{Analyse {count} ya kuyika} other{Analyse {count} za kuyika}}",
   "renewsOn": "Ibanda diaka {date}",
   "choosePlan": "Sola forfait",
   "currentPlan": "Forfait aku ya wau",
@@ -862,5 +862,7 @@
   "signOutBody": "Portefeuille na nge, ba lisiti, nkebisu za ntalu ye ba note na nge ta bikala na compte na nge, kansi bo ta katula yo na kisadilu kiaki. Kota diaka sambu na kuzwa yo diaka.",
   "signOutUnsaved": "Bansoba yankaka me lembana kubumbana na compte na nge (connexion kele ve?). Kana nge basika ntangu yai, yo ta vila.",
   "signOutAnyway": "Basika kaka",
-  "fileTooLarge": "Fisye yai kele nene mingi sambu na kukangula yo awa."
+  "fileTooLarge": "Fisye yai kele nene mingi sambu na kukangula yo awa.",
+  "portfolioAnnualSummaryYear": "Nkufi ya mvula {year}",
+  "portfolioSoldRow": "Me tekama {quantity} × {price}"
 }

@@ -277,7 +277,7 @@ class _AlertDialogState extends State<_AlertDialog> {
                     for (final pct in const [-20, -10, 10, 20, 50])
                       ActionChip(
                         key: ValueKey('alert-cost-$pct'),
-                        label: Text('${pct > 0 ? '+' : '−'}${pct.abs()}%'),
+                        label: Text(fmt.percent(pct, decimals: 0, withSign: true)),
                         visualDensity: VisualDensity.compact,
                         onPressed: () => setState(() {
                           _kind = pct > 0 ? AlertKind.above : AlertKind.below;

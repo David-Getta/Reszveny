@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Osigazza olunaku 1 olw'okugezesa} other{Osigazza ennaku {days} ez'okugezesa}}",
   "trialExpired": "Okugezesa kwo okw'obwereere kuweddeko. Londa enteekateeka okweyongera okwekenneenya.",
   "analysesRemaining": "Osigazza okwekenneenya {remaining} ku {total} mu kiseera kino",
-  "extraCredits": "Okwekenneenya okw'okwongerako {count}",
+  "extraCredits": "{count, plural, =1{Okwekenneenya okw'okwongerako {count}} other{Okwekenneenya okw'okwongerako {count}}}",
   "renewsOn": "Kizzibwa obuggya {date}",
   "choosePlan": "Londa enteekateeka",
   "currentPlan": "Enteekateeka yo eya kati",
@@ -862,5 +862,7 @@
   "signOutBody": "Emigabo gyo, enkalala zo, okulabula ku bbeeyi n'ebiwandiiko byo bisigala ku akawunti yo, era bijjibwa ku kyuma kino. Yingira nate okubiddizaawo.",
   "signOutUnsaved": "Enkyukakyuka ezimu tezisobodde kuterekebwa ku akawunti yo (tewali yintaneeti?). Bw'onofuluma kati, zijja kubula.",
   "signOutAnyway": "Fuluma wadde kiri kityo",
-  "fileTooLarge": "Fayiro eno nnene nnyo okugiggulira wano."
+  "fileTooLarge": "Fayiro eno nnene nnyo okugiggulira wano.",
+  "portfolioAnnualSummaryYear": "Ebifunze by'omwaka {year}",
+  "portfolioSoldRow": "Watunda {quantity} × {price}"
 }

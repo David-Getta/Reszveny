@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Ji ceribandinê 1 roj ma} other{Ji ceribandinê {days} roj man}}",
   "trialExpired": "Ceribandina te ya belaş qediya. Ji bo ku analîzê bidomînî planekê hilbijêre.",
   "analysesRemaining": "Di vê heyamê de {remaining} ji {total} analîzan man",
-  "extraCredits": "{count} analîzên zêde",
+  "extraCredits": "{count, plural, =1{{count} analîza zêde} other{{count} analîzên zêde}}",
   "renewsOn": "Di {date} de nû dibe",
   "choosePlan": "Planekê hilbijêre",
   "currentPlan": "Plana heyî",
@@ -862,5 +862,7 @@
   "signOutBody": "Portfolyo, lîste, hişyariyên bihayê û notên te di hesabê te de dimînin û ji vê amûrê têne rakirin. Ji bo ku tu wan vegerînî, dîsa têkeve.",
   "signOutUnsaved": "Hin guhertin di hesabê te de nehatin tomarkirin (girêdan tune?). Heke tu niha derkevî, ew ê winda bibin.",
   "signOutAnyway": "Dîsa jî derkeve",
-  "fileTooLarge": "Ev pel ji bo vekirinê li vir pir mezin e."
+  "fileTooLarge": "Ev pel ji bo vekirinê li vir pir mezin e.",
+  "portfolioAnnualSummaryYear": "Kurteya salane ya {year}",
+  "portfolioSoldRow": "Hate firotin {quantity} × {price}"
 }

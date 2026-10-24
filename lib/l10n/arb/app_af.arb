@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Nog 1 proefdag oor} other{Nog {days} proefdae oor}}",
   "trialExpired": "Jou gratis proeftydperk is verby. Kies ’n plan om aan te hou ontleed.",
   "analysesRemaining": "{remaining} van {total} ontledings oor vir hierdie tydperk",
-  "extraCredits": "{count} ekstra ontledings",
+  "extraCredits": "{count, plural, =1{{count} ekstra ontleding} other{{count} ekstra ontledings}}",
   "renewsOn": "Hernu op {date}",
   "choosePlan": "Kies ’n plan",
   "currentPlan": "Huidige plan",
@@ -862,5 +862,7 @@
   "signOutBody": "Jou portefeulje, lyste, pryswaarskuwings en notas bly in jou rekening en word van hierdie toestel verwyder. Meld weer aan om dit terug te kry.",
   "signOutUnsaved": "Sommige veranderinge kon nie in jou rekening gestoor word nie (geen verbinding nie?). As jy nou afmeld, gaan dit verlore.",
   "signOutAnyway": "Meld tog af",
-  "fileTooLarge": "Hierdie lêer is te groot om hier oop te maak."
+  "fileTooLarge": "Hierdie lêer is te groot om hier oop te maak.",
+  "portfolioAnnualSummaryYear": "Jaaroorsig {year}",
+  "portfolioSoldRow": "Verkoop {quantity} × {price}"
 }

@@ -742,8 +742,7 @@ class AppLocalizationsRo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count de analize suplimentare',
-      few: '$count analize suplimentare',
+      other: 'Analize suplimentare: $count',
       one: '$count analiză suplimentară',
     );
     return '$_temp0';
@@ -2958,6 +2957,16 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get fileTooLarge =>
       'Acest fișier este prea mare pentru a fi deschis aici.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Rezumat anual $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Vândut $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Setează un obiectiv';

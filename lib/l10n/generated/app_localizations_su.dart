@@ -730,7 +730,13 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count analisis tambahan';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analisis tambahan',
+      one: '$count analisis tambahan',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2916,6 +2922,16 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'File ieu kagedéan pikeun dibuka di dieu.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Kasimpulan taunan $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Dijual $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Setél target';

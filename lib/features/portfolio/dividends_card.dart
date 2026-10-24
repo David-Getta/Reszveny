@@ -10,7 +10,7 @@ import '../../widgets/date_picker_row.dart';
 import '../../widgets/fit_row.dart';
 import '../../widgets/metric_hint.dart';
 import 'account_field.dart';
-import 'add_lot_dialog.dart' show exactNumber, parseAmount;
+import 'add_lot_dialog.dart' show exactNumber, fieldNumber, parseAmount;
 import 'dividend_forecast.dart';
 import 'goal_dialog.dart';
 import 'portfolio_store.dart';
@@ -86,7 +86,7 @@ class DividendsCard extends StatelessWidget {
                 ),
                 if (all.isEmpty)
                   Padding(
-                    padding: const EdgeInsets.only(right: 8, bottom: 4),
+                    padding: const EdgeInsetsDirectional.only(end: 8, bottom: 4),
                     child: Text(
                       l10n.portfolioDividendsEmpty,
                       style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
@@ -163,7 +163,7 @@ class DividendsCard extends StatelessWidget {
                           ),
                           if (unconverted.isNotEmpty)
                             Padding(
-                              padding: const EdgeInsets.only(top: 8, right: 8),
+                              padding: const EdgeInsetsDirectional.only(top: 8, end: 8),
                               child: Text(
                                 l10n.dividendsNotConverted(
                                   unconverted.length,
@@ -186,7 +186,7 @@ class DividendsCard extends StatelessWidget {
                             for (final y in years)
                               Padding(
                                 key: ValueKey('dividends-year-$y'),
-                                padding: const EdgeInsets.only(right: 8, bottom: 2),
+                                padding: const EdgeInsetsDirectional.only(end: 8, bottom: 2),
                                 child: Row(
                                   children: [
                                     Expanded(
@@ -217,7 +217,7 @@ class DividendsCard extends StatelessWidget {
                     for (final x in expected.take(maxExpected))
                       Padding(
                         key: ValueKey('dividend-expected-${x.symbol}-${x.currency}'),
-                        padding: const EdgeInsets.only(right: 8, top: 4),
+                        padding: const EdgeInsetsDirectional.only(end: 8, top: 4),
                         child: FitRow(
                           lead: Text.rich(
                             TextSpan(
@@ -280,7 +280,7 @@ class DividendsCard extends StatelessWidget {
                         ),
                       ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 8, top: 4),
+                      padding: const EdgeInsetsDirectional.only(end: 8, top: 4),
                       child: Text(
                         l10n.portfolioDividendsExpectedNote,
                         style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
@@ -437,7 +437,7 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
   late final _amount = TextEditingController(
     text: switch ((widget.amount, widget.editing)) {
       (null, _) => '',
-      (final a?, null) => a.toStringAsFixed(2),
+      (final a?, null) => fieldNumber(a.toStringAsFixed(2), Localizations.localeOf(context).toString()),
       (final a?, _) => switch (Fmt(Localizations.localeOf(context).toString()).decimalSeparator) {
         ',' => exactNumber(a).replaceFirst('.', ','),
         _ => exactNumber(a),
@@ -639,7 +639,7 @@ class _MonthsChart extends StatelessWidget {
     final light = p.accent.withValues(alpha: 0.3);
     return Padding(
       key: const ValueKey('dividends-months'),
-      padding: const EdgeInsets.only(top: 12, right: 8),
+      padding: const EdgeInsetsDirectional.only(top: 12, end: 8),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

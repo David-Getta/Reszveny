@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{ट्रायल के 1 दिन बाकी} other{ट्रायल के {days} दिन बाकी}}",
   "trialExpired": "राउर मुफ्त ट्रायल खतम हो गइल। विश्लेषण जारी राखे खातिर कवनो प्लान चुनीं।",
   "analysesRemaining": "एह अवधि में {total} में से {remaining} विश्लेषण बाकी",
-  "extraCredits": "{count} अतिरिक्त विश्लेषण",
+  "extraCredits": "{count, plural, =1{{count} अतिरिक्त विश्लेषण} other{{count} अतिरिक्त विश्लेषण}}",
   "renewsOn": "{date} के नवीकरण",
   "choosePlan": "प्लान चुनीं",
   "currentPlan": "मौजूदा प्लान",
@@ -862,5 +862,7 @@
   "signOutBody": "राउर पोर्टफ़ोलियो, सूची, दाम अलर्ट आ नोट राउर खाता में रही आ एह डिवाइस से हटा दिहल जाई। एह सब के वापस पावे खातिर फेर से साइन इन करीं।",
   "signOutUnsaved": "कुछ बदलाव राउर खाता में सहेजल ना जा सकल (कनेक्शन नइखे का?)। अगर रउआ अबहीं साइन आउट करब, त ई सब खो जाई।",
   "signOutAnyway": "तबो साइन आउट करीं",
-  "fileTooLarge": "ई फाइल इहाँ खोले खातिर बहुत बड़ बा।"
+  "fileTooLarge": "ई फाइल इहाँ खोले खातिर बहुत बड़ बा।",
+  "portfolioAnnualSummaryYear": "{year} के सालाना सारांश",
+  "portfolioSoldRow": "बेचल {quantity} × {price}"
 }

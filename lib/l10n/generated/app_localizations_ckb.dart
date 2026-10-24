@@ -728,7 +728,13 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count شیکاریی زیادە';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count شیکاریی زیادە',
+      one: '$count شیکاریی زیادە',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2916,6 +2922,16 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'ئەم فایلە زۆر گەورەیە بۆ کردنەوە لێرە.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'پوختەی ساڵانەی $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'فرۆشرا $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'دانانی ئامانج';

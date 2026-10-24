@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:hotkey_manager/hotkey_manager.dart';
-import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../widgets/hotkey_hint.dart';
@@ -554,7 +553,8 @@ class _AnalysisSettings extends StatelessWidget {
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
     final muted = theme.textTheme.bodySmall?.copyWith(color: p.muted);
-    final fmt = NumberFormat.decimalPattern(Localizations.localeOf(context).toString());
+    // A Fmt adat nélküli nyelven (pl. joruba, hausza) is formáz: a NumberFormat ott kivételt dobna.
+    final fmt = Fmt(Localizations.localeOf(context).toString());
 
     String depthDesc(AnalysisDepth d) {
       final (lo, hi) = AnalysisOptions.wordRangeOf(d);
@@ -563,7 +563,7 @@ class _AnalysisSettings extends StatelessWidget {
         AnalysisDepth.standard => l10n.aiDepthStandardDesc,
         AnalysisDepth.deep => l10n.aiDepthDeepDesc,
       };
-      return '$what ${l10n.aiDepthWords(fmt.format(lo), fmt.format(hi))} · ${l10n.aiDepthCost(AnalysisOptions.costOf(d))}';
+      return '$what ${l10n.aiDepthWords(fmt.integer(lo), fmt.integer(hi))} · ${l10n.aiDepthCost(AnalysisOptions.costOf(d))}';
     }
 
     return ListenableBuilder(
@@ -682,7 +682,12 @@ class _HotkeyTileState extends State<_HotkeyTile> {
             children: [
               _recording
                   ? Text(l10n.hotkeyRecordHint, style: TextStyle(color: p.accent))
-                  : Text(services.desktop.shortcutLabelFor(space: l10n.keySpace)),
+                  : Text(
+                      services.desktop.shortcutLabelFor(
+                        space: l10n.keySpace,
+                        names: keyNamesOf(MaterialLocalizations.of(context)),
+                      ),
+                    ),
               if (_recording)
                 Padding(
                   padding: const EdgeInsets.only(top: 6),
@@ -936,7 +941,10 @@ class _PortfolioMoveTile extends StatelessWidget {
               items: [
                 DropdownMenuItem(value: 0, child: Text(l10n.portfolioMoveAlertOff, overflow: TextOverflow.ellipsis)),
                 for (final v in AppPreferences.portfolioMoveSteps)
-                  DropdownMenuItem(value: v, child: Text('±${fmt.percent(v, decimals: 0)}')),
+                  DropdownMenuItem(
+                    value: v,
+                    child: Text(fmt.percent(v, decimals: 0, prefix: '±')),
+                  ),
               ],
               onChanged: (v) => prefs.setPortfolioMoveAlert(v ?? 0),
             ),

@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Etikali mokɔlɔ {days} ya komeka} other{Etikali mikɔlɔ {days} ya komeka}}",
   "trialExpired": "Komeka na yo ya ofele esili. Pɔna forfait mpo na kokoba kosala ba-analyse.",
   "analysesRemaining": "Ba-analyse {remaining} etikali na {total} na eleko oyo",
-  "extraCredits": "Ba-analyse {count} ya kobakisa",
+  "extraCredits": "{count, plural, =1{Analyse {count} ya kobakisa} other{Ba-analyse {count} ya kobakisa}}",
   "renewsOn": "Ekozongisama sika {date}",
   "choosePlan": "Pɔna forfait",
   "currentPlan": "Forfait na yo ya sikoyo",
@@ -862,5 +862,7 @@
   "signOutBody": "Portefeuille na yo, ba liste, makebisi ya ntalo mpe ba note na yo etikali na compte na yo mpe ekolongolama na esaleli oyo. Kɔta lisusu mpo ozwa yango lisusu.",
   "signOutUnsaved": "Mbongwana mosusu ekokaki kobombama na compte na yo te (connexion ezali te?). Soki obimi sikoyo, ekobunga.",
   "signOutAnyway": "Bima kaka",
-  "fileTooLarge": "Fisyé oyo eleki monene mpo na kofungola yango awa."
+  "fileTooLarge": "Fisyé oyo eleki monene mpo na kofungola yango awa.",
+  "portfolioAnnualSummaryYear": "Bokuse ya mbula {year}",
+  "portfolioSoldRow": "Etekami {quantity} × {price}"
 }

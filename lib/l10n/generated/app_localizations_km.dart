@@ -723,7 +723,13 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return 'ការវិភាគបន្ថែម $count ដង';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ការវិភាគបន្ថែម $count ដង',
+      one: 'ការវិភាគបន្ថែម $count ដង',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2891,6 +2897,16 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'ឯកសារនេះធំពេក មិនអាចបើកនៅទីនេះបានទេ។';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'សេចក្តីសង្ខេបប្រចាំឆ្នាំ $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'បានលក់ $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';

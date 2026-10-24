@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Zbývá 1 den zkušební verze} few{Zbývají {days} dny zkušební verze} many{Zbývá {days} dne zkušební verze} other{Zbývá {days} dní zkušební verze}}",
   "trialExpired": "Vaše bezplatná zkušební verze skončila. Vyberte si tarif a pokračujte v analýzách.",
   "analysesRemaining": "V tomto období zbývá {remaining} z {total} analýz",
-  "extraCredits": "{count, plural, =1{1 analýza navíc} few{{count} analýzy navíc} many{{count} analýzy navíc} other{{count} analýz navíc}}",
+  "extraCredits": "{count, plural, =1{{count} analýza navíc} other{Analýzy navíc: {count}}}",
   "renewsOn": "Obnoví se {date}",
   "choosePlan": "Vyberte tarif",
   "currentPlan": "Aktuální tarif",
@@ -862,5 +862,7 @@
   "signOutBody": "Vaše portfolio, seznamy, cenová upozornění a poznámky zůstanou ve vašem účtu a z tohoto zařízení se odstraní. Po opětovném přihlášení je zase získáte.",
   "signOutUnsaved": "Některé změny se nepodařilo uložit do vašeho účtu (chybí připojení?). Pokud se nyní odhlásíte, budou ztraceny.",
   "signOutAnyway": "Přesto se odhlásit",
-  "fileTooLarge": "Tento soubor je příliš velký, aby se dal zde otevřít."
+  "fileTooLarge": "Tento soubor je příliš velký, aby se dal zde otevřít.",
+  "portfolioAnnualSummaryYear": "Roční přehled za {year}",
+  "portfolioSoldRow": "Prodáno {quantity} × {price}"
 }

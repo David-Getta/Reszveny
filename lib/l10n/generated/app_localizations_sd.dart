@@ -722,7 +722,13 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count اضافي تجزيا';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count اضافي تجزيا',
+      one: '$count اضافي تجزيو',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2904,6 +2910,16 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'هي فائل هتي کولڻ لاءِ تمام وڏي آهي.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return '$year جو سالياني خلاصو';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'وڪرو ٿيو $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';

@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, one{Queda {days} día de proba} other{Quedan {days} días de proba}}",
   "trialExpired": "A túa proba gratuíta rematou. Escolle un plan para seguir analizando.",
   "analysesRemaining": "Quédanche {remaining} de {total} análises neste período",
-  "extraCredits": "{count, plural, one{{count} análise extra} other{{count} análises extra}}",
+  "extraCredits": "{count, plural, =1{{count} análise extra} other{{count} análises extra}}",
   "renewsOn": "Renóvase o {date}",
   "choosePlan": "Escolle un plan",
   "currentPlan": "Plan actual",
@@ -862,5 +862,7 @@
   "signOutBody": "A túa carteira, as listas, as alertas de prezo e as notas quedan na túa conta e elimínanse deste dispositivo. Volve iniciar sesión para recuperalas.",
   "signOutUnsaved": "Algúns cambios non se puideron gardar na túa conta (sen conexión?). Se pechas sesión agora, perderanse.",
   "signOutAnyway": "Pechar sesión igualmente",
-  "fileTooLarge": "Este ficheiro é demasiado grande para abrilo aquí."
+  "fileTooLarge": "Este ficheiro é demasiado grande para abrilo aquí.",
+  "portfolioAnnualSummaryYear": "Resumo anual de {year}",
+  "portfolioSoldRow": "Vendido {quantity} × {price}"
 }

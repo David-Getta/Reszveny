@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Ọjọ́ 1 ló kù nínú ìdánwò} other{Ọjọ́ {days} ló kù nínú ìdánwò}}",
   "trialExpired": "Ìdánwò ọ̀fẹ́ rẹ ti parí. Yan ìpele kan láti máa bá ìtúpalẹ̀ lọ.",
   "analysesRemaining": "Ìtúpalẹ̀ {remaining} nínú {total} ló kù ní sáà yìí",
-  "extraCredits": "Ìtúpalẹ̀ àfikún {count}",
+  "extraCredits": "{count, plural, =1{Ìtúpalẹ̀ àfikún {count}} other{Ìtúpalẹ̀ àfikún {count}}}",
   "renewsOn": "Ìsọdọ̀tun: {date}",
   "choosePlan": "Yan ìpele kan",
   "currentPlan": "Ìpele rẹ lọ́wọ́lọ́wọ́",
@@ -862,5 +862,7 @@
   "signOutBody": "Àpò ìdókòwò rẹ, àwọn àkójọ, ìkìlọ̀ iye owó àti àwọn àkọsílẹ̀ rẹ yóò wà nínú àkáǹtì rẹ, a ó sì yọ wọ́n kúrò lórí ẹ̀rọ yìí. Tún wọlé láti rí wọn padà.",
   "signOutUnsaved": "A kò lè fi àwọn àyípadà kan pamọ́ sínú àkáǹtì rẹ (kò sí ìsopọ̀?). Tí o bá jáde báyìí, wọn yóò sọnù.",
   "signOutAnyway": "Jáde bẹ́ẹ̀ náà",
-  "fileTooLarge": "Fáìlì yìí ti tóbi jù láti ṣí níbí."
+  "fileTooLarge": "Fáìlì yìí ti tóbi jù láti ṣí níbí.",
+  "portfolioAnnualSummaryYear": "Àkópọ̀ ọdún {year}",
+  "portfolioSoldRow": "Títà {quantity} × {price}"
 }

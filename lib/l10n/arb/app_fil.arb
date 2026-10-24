@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{{days} araw na natitira sa trial} other{{days} araw na natitira sa trial}}",
   "trialExpired": "Natapos na ang iyong libreng trial. Pumili ng plan para magpatuloy sa pagsusuri.",
   "analysesRemaining": "{remaining} sa {total} pagsusuri ang natitira sa panahong ito",
-  "extraCredits": "{count} dagdag na pagsusuri",
+  "extraCredits": "{count, plural, =1{{count} dagdag na pagsusuri} other{{count} dagdag na pagsusuri}}",
   "renewsOn": "Mare-renew sa {date}",
   "choosePlan": "Pumili ng plan",
   "currentPlan": "Kasalukuyang plan",
@@ -862,5 +862,7 @@
   "signOutBody": "Mananatili sa iyong account ang iyong portfolio, mga listahan, mga alerto sa presyo at mga tala, at aalisin ang mga ito sa device na ito. Mag-sign in muli para maibalik ang mga ito.",
   "signOutUnsaved": "Hindi na-save sa iyong account ang ilang pagbabago (walang koneksyon?). Kapag nag-sign out ka ngayon, mawawala ang mga ito.",
   "signOutAnyway": "Mag-sign out pa rin",
-  "fileTooLarge": "Masyadong malaki ang file na ito para mabuksan dito."
+  "fileTooLarge": "Masyadong malaki ang file na ito para mabuksan dito.",
+  "portfolioAnnualSummaryYear": "Taunang buod ng {year}",
+  "portfolioSoldRow": "Nabenta {quantity} × {price}"
 }

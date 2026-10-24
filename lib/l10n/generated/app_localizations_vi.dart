@@ -726,7 +726,13 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count lượt phân tích bổ sung';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lượt phân tích bổ sung',
+      one: '$count lượt phân tích bổ sung',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2904,6 +2910,16 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'Tệp này quá lớn để mở tại đây.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Tổng kết năm $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Đã bán $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Đặt mục tiêu';

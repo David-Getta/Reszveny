@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Kusele usuku olu-1 lovavanyo} other{Kusele iintsuku ezi-{days} zovavanyo}}",
   "trialExpired": "Uvavanyo lwakho lwasimahla luphelile. Khetha isicwangciso ukuze uqhubeke uhlalutya.",
   "analysesRemaining": "Kusele iintlalutyo ezi-{remaining} kwezi-{total} kweli xesha",
-  "extraCredits": "Iintlalutyo ezongezelelweyo ezi-{count}",
+  "extraCredits": "{count, plural, =1{Uhlalutyo olongezelelweyo olu-{count}} other{Iintlalutyo ezongezelelweyo ezi-{count}}}",
   "renewsOn": "Kuhlaziywa ngo-{date}",
   "choosePlan": "Khetha isicwangciso",
   "currentPlan": "Isicwangciso sangoku",
@@ -862,5 +862,7 @@
   "signOutBody": "Ipotifoliyo yakho, uluhlu, izilumkiso zamaxabiso namanqaku zihlala kwiakhawunti yakho kwaye zisuswa kwesi sixhobo. Ngena kwakhona ukuze uzibuyise.",
   "signOutUnsaved": "Olunye utshintsho alukwazanga ukugcinwa kwiakhawunti yakho (akukho qhagamshelo?). Ukuba uphuma ngoku, luya kulahleka.",
   "signOutAnyway": "Phuma noko",
-  "fileTooLarge": "Le fayile inkulu kakhulu ukuba ivulwe apha."
+  "fileTooLarge": "Le fayile inkulu kakhulu ukuba ivulwe apha.",
+  "portfolioAnnualSummaryYear": "Isishwankathelo sonyaka ka-{year}",
+  "portfolioSoldRow": "Kuthengisiwe {quantity} × {price}"
 }

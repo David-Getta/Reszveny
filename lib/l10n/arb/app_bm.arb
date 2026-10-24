@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Kɔrɔbɔli tile 1 de to} other{Kɔrɔbɔli tile {days} de to}}",
   "trialExpired": "I ka kɔrɔbɔli fu banna. Pilan dɔ sugandi walasa ka sɛgɛsɛgɛli kɛ ka taa a fɛ.",
   "analysesRemaining": "Sɛgɛsɛgɛli {remaining} de to {total} la nin waati in kɔnɔ",
-  "extraCredits": "Sɛgɛsɛgɛli wɛrɛ {count}",
+  "extraCredits": "{count, plural, =1{Sɛgɛsɛgɛli wɛrɛ {count}} other{Sɛgɛsɛgɛli wɛrɛ {count}}}",
   "renewsOn": "A bɛ kuraya {date}",
   "choosePlan": "Pilan sugandi",
   "currentPlan": "Sisan pilan",
@@ -862,5 +862,7 @@
   "signOutBody": "I ka aksiyɔn kɛsu, lisiw, sɔngɔ lasɔminiw ani sɛbɛnniw bɛ to i ka kɔnti la, u bɛ bɔ nin minɛn in kan. Don tugun walasa ka u sɔrɔ kokura.",
   "signOutUnsaved": "Falenni dɔw ma se ka mara i ka kɔnti la (jɛɲɔgɔnya tɛ yen wa?). Ni i bɔra sisan, u bɛna tunun.",
   "signOutAnyway": "Bɔ kɔnti la o bɛɛ n'a ta",
-  "fileTooLarge": "Nin fisiye ka bon kojugu ka a dayɛlɛ yan."
+  "fileTooLarge": "Nin fisiye ka bon kojugu ka a dayɛlɛ yan.",
+  "portfolioAnnualSummaryYear": "San {year} jatebɔ",
+  "portfolioSoldRow": "Feerelen {quantity} × {price}"
 }

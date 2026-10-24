@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{1 maalin oo tijaabo ah ayaa harsan} other{{days} maalmood oo tijaabo ah ayaa harsan}}",
   "trialExpired": "Tijaabadaadii bilaashka ahayd way dhammaatay. Dooro qorshe si aad falanqaynta u sii wadato.",
   "analysesRemaining": "{remaining} ka mid ah {total} falanqayn ayaa harsan muddadan",
-  "extraCredits": "{count} falanqayn oo dheeraad ah",
+  "extraCredits": "{count, plural, =1{{count} falanqayn oo dheeraad ah} other{{count} falanqayn oo dheeraad ah}}",
   "renewsOn": "Waxay cusboonaanaysaa {date}",
   "choosePlan": "Dooro qorshe",
   "currentPlan": "Qorshaha hadda",
@@ -862,5 +862,7 @@
   "signOutBody": "Portfoliyadaada, liisaskaaga, digniinaha qiimaha iyo qoraalladaadu waxay ku sii jiraan akoonkaaga, waxaana laga saarayaa qalabkan. Mar kale gal si aad dib ugu hesho.",
   "signOutUnsaved": "Isbeddellada qaar lagama kaydin karin akoonkaaga (xiriir ma jiro?). Haddii aad hadda ka baxdo, way lumi doonaan.",
   "signOutAnyway": "Si kastaba ka bax",
-  "fileTooLarge": "Faylkani aad buu u weyn yahay in halkan lagu furo."
+  "fileTooLarge": "Faylkani aad buu u weyn yahay in halkan lagu furo.",
+  "portfolioAnnualSummaryYear": "Soo koobid sannadeed {year}",
+  "portfolioSoldRow": "La iibiyay {quantity} × {price}"
 }

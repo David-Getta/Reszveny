@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.298)
+# Változásjegyzék (0.2.130 → 0.2.299)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,19 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Nyelvek és formátumok: a negyvenhatodik kódátnézés javításai
+
+- **0.2.299**: a Beállítások AI-kártyája 44 nyelven (pl. joruba, hausza, nigériai pidgin) hibára futott – most
+  mindenhol megnyílik. „1 extra elemzés” (nem „1 extra analyses”): a darabszám mind a 120 nyelven a nyelv többes
+  számával. Az időpontok a nyelv szokása szerint (angolul „2:05 PM”, magyarul „14:05”), a nagy számok a nyelv saját
+  rövidítésével („2,95 Mrd”, „29,5億” – a „B” németül, magyarul, franciául billiót jelentene), törökül a
+  százalékjel elöl („%5”). A formátumadat nélküli nyelvek a térség nyelvéét kapják (pl. haiti → francia, kecsua →
+  spanyol, tádzsik → orosz), nem az angolt. Jobbról balra író nyelven az előjel a szám előtt marad a gyors
+  stop-, riasztás- és portfólió-választókban és a bennfentesek nettó számánál. A billentyűk neve a felület nyelvén
+  (németül „Strg + Umschalttaste”), az éves összesítő és az eladási sor a nyelv szórendjével, a beírt osztalék a
+  nyelv tizedesjelével. Az e-mailes riasztás és összefoglaló az app választott nyelvét kapja (nem a készülék első
+  nyelvét). iOS-en és macOS-en a rendszer saját felületei (megosztás, fotóválasztó, menük) is az app nyelvén.
 
 ## Hosszú futás: a negyvenötödik kódátnézés javításai
 

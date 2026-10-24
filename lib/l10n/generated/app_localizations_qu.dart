@@ -731,7 +731,13 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count yapa t\'aqwiy';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count yapa t\'aqwiy',
+      one: '$count yapa t\'aqwiy',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2930,6 +2936,16 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'Kay archivoqa nisyu hatunmi kaypi kicharinapaq.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return '$year watapa pisichay';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Rantikusqa $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Hayparinata churay';

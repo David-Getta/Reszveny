@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{1 giorno di prova rimasto} other{{days} giorni di prova rimasti}}",
   "trialExpired": "La tua prova gratuita è terminata. Scegli un piano per continuare ad analizzare.",
   "analysesRemaining": "{remaining} analisi su {total} rimaste in questo periodo",
-  "extraCredits": "{count} analisi extra",
+  "extraCredits": "{count, plural, =1{{count} analisi extra} other{{count} analisi extra}}",
   "renewsOn": "Si rinnova il {date}",
   "choosePlan": "Scegli un piano",
   "currentPlan": "Piano attuale",
@@ -862,5 +862,7 @@
   "signOutBody": "Il tuo portafoglio, le liste, gli avvisi di prezzo e le note restano nel tuo account e vengono rimossi da questo dispositivo. Accedi di nuovo per recuperarli.",
   "signOutUnsaved": "Alcune modifiche non sono state salvate nel tuo account (nessuna connessione?). Se esci ora, andranno perse.",
   "signOutAnyway": "Esci comunque",
-  "fileTooLarge": "Questo file è troppo grande per essere aperto qui."
+  "fileTooLarge": "Questo file è troppo grande per essere aperto qui.",
+  "portfolioAnnualSummaryYear": "Riepilogo annuale {year}",
+  "portfolioSoldRow": "Vendita {quantity} × {price}"
 }

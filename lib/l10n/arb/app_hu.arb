@@ -763,6 +763,8 @@
   "signOutUnsaved": "Néhány változást nem sikerült feltölteni a fiókodba (nincs kapcsolat?). Ha most kijelentkezel, elvesznek.",
   "signOutAnyway": "Kijelentkezés így is",
   "fileTooLarge": "Ez a fájl túl nagy ahhoz, hogy itt megnyíljon.",
+  "portfolioAnnualSummaryYear": "Éves összesítő – {year}",
+  "portfolioSoldRow": "Eladva: {quantity} × {price}",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfóliócél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

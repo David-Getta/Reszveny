@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Sɔhwɛ da 1 na aka} other{Sɔhwɛ nna {days} na aka}}",
   "trialExpired": "Wo sɔhwɛ a ɛyɛ kwa no aba awiei. Paw plan na kɔ so yɛ nhwehwɛmu.",
   "analysesRemaining": "Nhwehwɛmu {remaining} na aka wɔ {total} mu wɔ bere yi mu",
-  "extraCredits": "Nhwehwɛmu {count} a ɛka ho",
+  "extraCredits": "{count, plural, =1{Nhwehwɛmu {count} a ɛka ho} other{Nhwehwɛmu {count} a ɛka ho}}",
   "renewsOn": "Ɛbɛyɛ foforo {date}",
   "choosePlan": "Paw plan",
   "currentPlan": "Wo plan seesei",
@@ -862,5 +862,7 @@
   "signOutBody": "Wo nkyɛfa, nhyehyɛe, bo ho kɔkɔbɔ ne nkyerɛwee bɛkɔ so atena wo akawnt mu, na wɔbeyi afi mfiri yi so. San wura mu bio na woanya bio.",
   "signOutUnsaved": "Nsakrae binom antumi ankora wɔ wo akawnt mu (nkitahodi nni hɔ?). Sɛ wofi mu seesei a, ɛbɛyera.",
   "signOutAnyway": "Fi mu ara",
-  "fileTooLarge": "Saa fael yi yɛ kɛse dodo a wontumi mmue wɔ ha."
+  "fileTooLarge": "Saa fael yi yɛ kɛse dodo a wontumi mmue wɔ ha.",
+  "portfolioAnnualSummaryYear": "Afe {year} nsɛm tiawa",
+  "portfolioSoldRow": "Watɔn {quantity} × {price}"
 }

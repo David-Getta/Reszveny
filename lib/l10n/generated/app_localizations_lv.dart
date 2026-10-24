@@ -749,7 +749,6 @@ class AppLocalizationsLv extends AppLocalizations {
       locale: localeName,
       other: '$count papildu analīzes',
       one: '$count papildu analīze',
-      zero: '$count papildu analīzes',
     );
     return '$_temp0';
   }
@@ -2961,6 +2960,16 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'Šis fails ir pārāk liels, lai to atvērtu šeit.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return '$year. gada kopsavilkums';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Pārdots $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Iestatīt mērķi';

@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Noch 1 Tag Testphase} other{Noch {days} Tage Testphase}}",
   "trialExpired": "Deine kostenlose Testphase ist abgelaufen. Wähle einen Tarif, um weiter zu analysieren.",
   "analysesRemaining": "Noch {remaining} von {total} Analysen in diesem Zeitraum",
-  "extraCredits": "{count} zusätzliche Analysen",
+  "extraCredits": "{count, plural, =1{{count} zusätzliche Analyse} other{{count} zusätzliche Analysen}}",
   "renewsOn": "Verlängert sich am {date}",
   "choosePlan": "Tarif wählen",
   "currentPlan": "Aktueller Tarif",
@@ -862,5 +862,7 @@
   "signOutBody": "Dein Portfolio, deine Listen, Kursalarme und Notizen bleiben in deinem Konto und werden von diesem Gerät entfernt. Melde dich wieder an, um sie zurückzubekommen.",
   "signOutUnsaved": "Einige Änderungen konnten nicht in deinem Konto gespeichert werden (keine Verbindung?). Wenn du dich jetzt abmeldest, gehen sie verloren.",
   "signOutAnyway": "Trotzdem abmelden",
-  "fileTooLarge": "Diese Datei ist zu groß, um sie hier zu öffnen."
+  "fileTooLarge": "Diese Datei ist zu groß, um sie hier zu öffnen.",
+  "portfolioAnnualSummaryYear": "Jahresübersicht {year}",
+  "portfolioSoldRow": "Verkauft {quantity} × {price}"
 }

@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Go šetše letšatši le 1 la teko} other{Go šetše matšatši a {days} a teko}}",
   "trialExpired": "Teko ya gago ya mahala e fedile. Kgetha leano go tšwela pele o sekaseka.",
   "analysesRemaining": "Go šetše ditshekatsheko tše {remaining} go tše {total} pakeng ye",
-  "extraCredits": "Ditshekatsheko tše {count} tša tlaleletšo",
+  "extraCredits": "{count, plural, =1{Tshekatsheko e {count} ya tlaleletšo} other{Ditshekatsheko tše {count} tša tlaleletšo}}",
   "renewsOn": "E mpshafatšwa ka {date}",
   "choosePlan": "Kgetha leano",
   "currentPlan": "Leano la bjale",
@@ -862,5 +862,7 @@
   "signOutBody": "Photefolio ya gago, mananeo, ditemošo tša theko le dintlha di šala akhaontong ya gago gomme di tlošwa sedirišweng se. Tsena gape gore o di hwetše morago.",
   "signOutUnsaved": "Diphetogo tše dingwe di be di sa kgone go bolokwa akhaontong ya gago (ga go na kgokagano?). Ge o ka tšwa bjale, di tla lahlega.",
   "signOutAnyway": "Tšwa le ge go le bjalo",
-  "fileTooLarge": "Faele ye e kgolo kudu go ka bulwa mo."
+  "fileTooLarge": "Faele ye e kgolo kudu go ka bulwa mo.",
+  "portfolioAnnualSummaryYear": "Kakaretšo ya ngwaga wa {year}",
+  "portfolioSoldRow": "E rekišitšwe {quantity} × {price}"
 }

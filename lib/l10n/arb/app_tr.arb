@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Denemede 1 gün kaldı} other{Denemede {days} gün kaldı}}",
   "trialExpired": "Ücretsiz denemeniz sona erdi. Analize devam etmek için bir plan seçin.",
   "analysesRemaining": "Bu dönemde {total} analizden {remaining} tanesi kaldı",
-  "extraCredits": "{count} ek analiz",
+  "extraCredits": "{count, plural, =1{{count} ek analiz} other{{count} ek analiz}}",
   "renewsOn": "{date} tarihinde yenilenir",
   "choosePlan": "Plan seçin",
   "currentPlan": "Mevcut plan",
@@ -862,5 +862,7 @@
   "signOutBody": "Portföyünüz, listeleriniz, fiyat alarmlarınız ve notlarınız hesabınızda kalır ve bu cihazdan kaldırılır. Geri almak için yeniden giriş yapın.",
   "signOutUnsaved": "Bazı değişiklikler hesabınıza kaydedilemedi (bağlantı yok mu?). Şimdi çıkış yaparsanız kaybolacaklar.",
   "signOutAnyway": "Yine de çıkış yap",
-  "fileTooLarge": "Bu dosya burada açılamayacak kadar büyük."
+  "fileTooLarge": "Bu dosya burada açılamayacak kadar büyük.",
+  "portfolioAnnualSummaryYear": "{year} yıllık özeti",
+  "portfolioSoldRow": "Satış {quantity} × {price}"
 }

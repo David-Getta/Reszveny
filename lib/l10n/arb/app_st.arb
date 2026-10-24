@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Ho setse letsatsi le le leng la teko} other{Ho setse matsatsi a {days} a teko}}",
   "trialExpired": "Teko ya hao ya mahala e fedile. Kgetha moralo ho tswela pele ka ditlhahlobo.",
   "analysesRemaining": "Ho setse ditlhahlobo tse {remaining} ho tse {total} nakong ena",
-  "extraCredits": "Ditlhahlobo tse eketsehileng tse {count}",
+  "extraCredits": "{count, plural, =1{Tlhahlobo e eketsehileng e {count}} other{Ditlhahlobo tse eketsehileng tse {count}}}",
   "renewsOn": "E ntjhafala ka {date}",
   "choosePlan": "Kgetha moralo",
   "currentPlan": "Moralo wa hona jwale",
@@ -862,5 +862,7 @@
   "signOutBody": "Potefolio ya hao, manane, ditsebiso tsa theko le dintlha di sala akhaontong ya hao mme di tloswa sesebedisweng sena. Kena hape hore o di fumane hape.",
   "signOutUnsaved": "Diphetoho tse ding ha di a kgona ho bolokwa akhaontong ya hao (ha ho kgokahano?). Ha o ka tswa jwale, di tla lahleha.",
   "signOutAnyway": "Tswa leha ho le jwalo",
-  "fileTooLarge": "Faele ena e kgolo haholo hore e ka bulwa mona."
+  "fileTooLarge": "Faele ena e kgolo haholo hore e ka bulwa mona.",
+  "portfolioAnnualSummaryYear": "Kakaretso ya selemo sa {year}",
+  "portfolioSoldRow": "E rekisitswe {quantity} × {price}"
 }

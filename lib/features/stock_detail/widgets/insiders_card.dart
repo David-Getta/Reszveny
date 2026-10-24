@@ -68,7 +68,7 @@ class _InsidersCardState extends State<InsidersCard> {
                     pill(l10n.insiderBuys(s.buys), p.positive),
                     pill(l10n.insiderSells(s.sells), p.negative),
                     Text(
-                      l10n.insiderNet('${s.netShares > 0 ? '+' : ''}${fmt.compact(s.netShares)}'),
+                      l10n.insiderNet(fmt.compact(s.netShares, withSign: true)),
                       key: const ValueKey('insiders-net'),
                       style: theme.textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w600),
                     ),

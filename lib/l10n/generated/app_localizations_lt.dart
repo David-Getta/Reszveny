@@ -752,9 +752,7 @@ class AppLocalizationsLt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count papildomų analizių',
-      many: '$count papildomos analizės',
-      few: '$count papildomos analizės',
+      other: 'Papildomos analizės: $count',
       one: '$count papildoma analizė',
     );
     return '$_temp0';
@@ -2990,6 +2988,16 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'Šis failas per didelis, kad būtų atidarytas čia.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return '$year m. metinė suvestinė';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Parduota $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Nustatyti tikslą';

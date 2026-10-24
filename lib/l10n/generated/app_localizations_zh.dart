@@ -705,7 +705,13 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count 次额外分析';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 次额外分析',
+      one: '$count 次额外分析',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2784,6 +2790,16 @@ class AppLocalizationsZh extends AppLocalizations {
   String get fileTooLarge => '此文件过大，无法在此打开。';
 
   @override
+  String portfolioAnnualSummaryYear(String year) {
+    return '$year年度汇总';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return '卖出 $quantity × $price';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -3859,7 +3875,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String extraCredits(int count) {
-    return '$count 次額外分析';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 次額外分析',
+      one: '$count 次額外分析',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -5935,6 +5957,16 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get fileTooLarge => '此檔案過大，無法在此開啟。';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return '$year年度摘要';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return '賣出 $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => '設定目標';

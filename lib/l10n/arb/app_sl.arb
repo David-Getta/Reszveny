@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, one{Preizkus traja še {days} dan} two{Preizkus traja še {days} dneva} few{Preizkus traja še {days} dni} other{Preizkus traja še {days} dni}}",
   "trialExpired": "Vaš brezplačni preizkus se je iztekel. Izberite paket, da boste lahko še naprej analizirali.",
   "analysesRemaining": "Preostale analize v tem obdobju: {remaining} od {total}",
-  "extraCredits": "{count, plural, one{{count} dodatna analiza} two{{count} dodatni analizi} few{{count} dodatne analize} other{{count} dodatnih analiz}}",
+  "extraCredits": "{count, plural, =1{{count} dodatna analiza} other{Dodatne analize: {count}}}",
   "renewsOn": "Podaljšanje: {date}",
   "choosePlan": "Izberite paket",
   "currentPlan": "Trenutni paket",
@@ -862,5 +862,7 @@
   "signOutBody": "Vaš portfelj, seznami, cenovna opozorila in zapiski ostanejo v vašem računu in se odstranijo iz te naprave. Za vrnitev se znova prijavite.",
   "signOutUnsaved": "Nekaterih sprememb ni bilo mogoče shraniti v vaš račun (ni povezave?). Če se zdaj odjavite, bodo izgubljene.",
   "signOutAnyway": "Vseeno se odjavi",
-  "fileTooLarge": "Ta datoteka je prevelika, da bi jo odprli tukaj."
+  "fileTooLarge": "Ta datoteka je prevelika, da bi jo odprli tukaj.",
+  "portfolioAnnualSummaryYear": "Letni povzetek za {year}",
+  "portfolioSoldRow": "Prodano {quantity} × {price}"
 }

@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Queda 1 dia de prova} other{Queden {days} dies de prova}}",
   "trialExpired": "La teva prova gratuïta s’ha acabat. Tria un pla per continuar analitzant.",
   "analysesRemaining": "Et queden {remaining} de {total} anàlisis en aquest període",
-  "extraCredits": "{count} anàlisis extra",
+  "extraCredits": "{count, plural, =1{{count} anàlisi extra} other{{count} anàlisis extra}}",
   "renewsOn": "Es renova el {date}",
   "choosePlan": "Tria un pla",
   "currentPlan": "Pla actual",
@@ -862,5 +862,7 @@
   "signOutBody": "La cartera, les llistes, les alertes de preu i les notes es queden al teu compte i s'eliminen d'aquest dispositiu. Torna a iniciar la sessió per recuperar-les.",
   "signOutUnsaved": "Alguns canvis no s'han pogut desar al teu compte (no hi ha connexió?). Si tanques la sessió ara, es perdran.",
   "signOutAnyway": "Tanca la sessió igualment",
-  "fileTooLarge": "Aquest fitxer és massa gran per obrir-lo aquí."
+  "fileTooLarge": "Aquest fitxer és massa gran per obrir-lo aquí.",
+  "portfolioAnnualSummaryYear": "Resum anual de {year}",
+  "portfolioSoldRow": "Venda {quantity} × {price}"
 }

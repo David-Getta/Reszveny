@@ -49,8 +49,23 @@ class Fmt {
     if (lang != locale && NumberFormat.localeExists(lang)) {
       return lang;
     }
+    // Adat nélküli nyelv: a térségben megszokott (ott hivatalos vagy közvetítő) nyelv
+    // formátuma – hónapnevek, tizedesjel –, nem az angol.
+    final near = _nearLanguage[lang];
+    if (near != null && NumberFormat.localeExists(near)) return near;
     return 'en';
   }
+
+  static const _nearLanguage = {
+    'ht': 'fr', 'kab': 'fr', 'wo': 'fr', 'ff': 'fr', 'kg': 'fr', 'lua': 'fr', 'mos': 'fr', 'rw': 'fr', 'rn': 'fr', //
+    'ln': 'fr', 'bm': 'fr', 'ee': 'fr',
+    'qu': 'es', 'gn': 'es',
+    'tg': 'ru', 'tt': 'ru',
+    'ku': 'tr',
+    'ckb': 'ar',
+    'sd': 'ur',
+    'ug': 'zh', 'bo': 'zh',
+  };
 
   String number(num? v, {int decimals = 2}) => v == null ? na : _iso(_number(v, decimals));
 
@@ -110,11 +125,20 @@ class Fmt {
       ? price(v, showCurrency ? currency : null)
       : money(v, currency, showCurrency: showCurrency);
 
-  /// Rövidített nagy számok: 1 234 567 890 → "1.23B". Az SI-szerű utótagok
-  /// (K, M, B, T) nemzetközileg érthetők a pénzügyi felületeken.
+  /// Rövidített nagy számok: 1 234 567 890 → "1.23B". Angolul (és adat nélküli nyelven)
+  /// a K, M, B, T utótag; más nyelven millió fölött a nyelv saját rövidítése („2,95 Mrd”,
+  /// „29,5億”) – a „B” németül, magyarul, franciául billiót (10¹²) jelentene.
   /// Az utótag a kerekítés után dől el: a 999 999 „1,00M”, nem „1 000,00K”.
-  String compact(num? v, {String? currency}) {
+  /// [withSign]: pozitívnál pluszjellel (az irányfüggetlen egységen belül).
+  String compact(num? v, {String? currency, bool withSign = false}) {
     if (v == null) return na;
+    final plus = withSign && v > 0 ? _plus : '';
+    if (!numberLocale.startsWith('en') && v.isFinite && v.abs() >= 1e6) {
+      try {
+        final s = _iso('$plus${NumberFormat.compact(locale: numberLocale).format(v)}');
+        return currency == null ? s : '$s $currency';
+      } catch (_) {}
+    }
     const units = [(1.0, ''), (1e3, 'K'), (1e6, 'M'), (1e9, 'B'), (1e12, 'T')];
     var i = 0;
     while (i < units.length - 1 && v.abs() >= units[i + 1].$1) {
@@ -122,14 +146,21 @@ class Fmt {
     }
     if (i < units.length - 1 && roundTo(v.abs() / units[i].$1, 2) >= 1000) i++;
     final (unit, suffix) = units[i];
-    final s = _iso('${_number(v / unit, 2)}$suffix');
+    final s = _iso('$plus${_number(v / unit, 2)}$suffix');
     return currency == null ? s : '$s $currency';
   }
 
-  String percent(num? v, {int decimals = 2, bool withSign = false}) {
+  /// Százalék; ahol a jel a szám elé kerül (törökül „%5”), ott elöl. [withSign]: pozitívnál
+  /// pluszjellel; a [prefix] (pl. „±”) is az irányfüggetlen egységen belül marad.
+  String percent(num? v, {int decimals = 2, bool withSign = false, String prefix = ''}) {
     if (v == null) return na;
-    return withSign ? _signed(v, decimals, suffix: '%') : _iso('${_number(v, decimals)}%');
+    final n = _number(v, decimals);
+    final positive = withSign && v.isFinite && roundTo(v, decimals) > 0;
+    final body = _percentFirst ? (n.startsWith('-') ? '-%${n.substring(1)}' : '%$n') : '$n%';
+    return _iso('$prefix${positive ? _plus : ''}$body');
   }
+
+  bool get _percentFirst => (NumberFormat.percentPattern(numberLocale).symbols.PERCENT_PATTERN).startsWith('%');
 
   String signed(num? v, {int decimals = 2}) => v == null ? na : _signed(v, decimals);
 
@@ -175,7 +206,8 @@ class Fmt {
     if (d == null) return na;
     final local = d.toLocal();
     try {
-      return DateFormat.yMMMd(dateLocale).add_Hm().format(local);
+      // A nyelv szokása szerinti óra (angolul „2:05 PM”, magyarul „14:05”).
+      return DateFormat.yMMMd(dateLocale).add_jm().format(local);
     } catch (_) {
       return '${_isoDate(local)} ${_two(local.hour)}:${_two(local.minute)}';
     }

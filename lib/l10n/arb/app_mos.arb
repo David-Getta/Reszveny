@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Makr daar a yembr n kell} other{Makr rasem {days} n kell}}",
   "trialExpired": "F makr zaalmã sa. Yãk forfɛ n kell n vɛɛse.",
   "analysesRemaining": "Vɛɛse {remaining} n kell {total} pʋgẽ wakat kãngã",
-  "extraCredits": "Vɛɛse {count} sẽn paase",
+  "extraCredits": "{count, plural, =1{Vɛɛse {count} sẽn paase} other{Vɛɛse {count} sẽn paase}}",
   "renewsOn": "Na n le sɩng {date}",
   "choosePlan": "Yãk forfɛ",
   "currentPlan": "Forfɛ ning f sẽn tarã",
@@ -862,5 +862,7 @@
   "signOutBody": "Fo portfey, fo listɛ, fo koosg gũusgo la fo gʋlsgo na n pa fo kõntã pʋgẽ, la b na n yiis-b aparɛy kãngã zugu. Le kẽ n paam-b lame.",
   "signOutUnsaved": "Toeeg-toeeg kẽer pa tõog n bilg fo kõntã pʋgẽ ye (kõneksõ ka be ye?). F sã n yi masã, b na n bõrame.",
   "signOutAnyway": "Yi baa ne rẽ",
-  "fileTooLarge": "Fiyie kãngã yaa bedr n yɩɩda, b pa tõe n yaool-a ka ye."
+  "fileTooLarge": "Fiyie kãngã yaa bedr n yɩɩda, b pa tõe n yaool-a ka ye.",
+  "portfolioAnnualSummaryYear": "Yʋʋmd fãa sõdbo {year}",
+  "portfolioSoldRow": "B koosa {quantity} × {price}"
 }

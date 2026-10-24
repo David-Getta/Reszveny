@@ -729,7 +729,13 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count დამატებითი ანალიზი';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count დამატებითი ანალიზი',
+      one: '$count დამატებითი ანალიზი',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2913,6 +2919,16 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'ეს ფაილი ზედმეტად დიდია აქ გასახსნელად.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'წლიური შეჯამება – $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'გაიყიდა $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'მიზნის დაყენება';

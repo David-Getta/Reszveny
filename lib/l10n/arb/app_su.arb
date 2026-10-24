@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Sésa 1 poé uji coba} other{Sésa {days} poé uji coba}}",
   "trialExpired": "Uji coba gratis anjeun geus réngsé. Pilih pakét pikeun terus nganalisis.",
   "analysesRemaining": "Sésa {remaining} tina {total} analisis pikeun période ieu",
-  "extraCredits": "{count} analisis tambahan",
+  "extraCredits": "{count, plural, =1{{count} analisis tambahan} other{{count} analisis tambahan}}",
   "renewsOn": "Diperpanjang {date}",
   "choosePlan": "Pilih pakét",
   "currentPlan": "Pakét ayeuna",
@@ -862,5 +862,7 @@
   "signOutBody": "Portofolio, daptar, béwara harga, jeung catetan anjeun tetep aya dina akun anjeun sarta dipiceun tina parangkat ieu. Asup deui pikeun meunangkeun deui.",
   "signOutUnsaved": "Sababaraha parobahan teu bisa disimpen ka akun anjeun (teu aya sambungan?). Upami anjeun kaluar ayeuna, parobahan éta bakal leungit.",
   "signOutAnyway": "Tetep kaluar",
-  "fileTooLarge": "File ieu kagedéan pikeun dibuka di dieu."
+  "fileTooLarge": "File ieu kagedéan pikeun dibuka di dieu.",
+  "portfolioAnnualSummaryYear": "Kasimpulan taunan {year}",
+  "portfolioSoldRow": "Dijual {quantity} × {price}"
 }

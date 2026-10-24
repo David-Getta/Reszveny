@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Ụbọchị 1 fọdụrụ na nnwale} other{Ụbọchị {days} fọdụrụ na nnwale}}",
   "trialExpired": "Nnwale n'efu gị agwụla. Họrọ atụmatụ ka ị gaa n'ihu na-enyocha.",
   "analysesRemaining": "Nyocha {remaining} n'ime {total} fọdụrụ n'oge a",
-  "extraCredits": "Nyocha mgbakwunye {count}",
+  "extraCredits": "{count, plural, =1{Nyocha mgbakwunye {count}} other{Nyocha mgbakwunye {count}}}",
   "renewsOn": "Na-aga n'ihu na {date}",
   "choosePlan": "Họrọ atụmatụ",
   "currentPlan": "Atụmatụ ugbu a",
@@ -862,5 +862,7 @@
   "signOutBody": "Portfolio gị, ndepụta gị, ọkwa ọnụahịa na ndetu gị ga-anọgide n'akaụntụ gị, a ga-ewepụkwa ha na ngwaọrụ a. Banye ọzọ ka i nwetaghachi ha.",
   "signOutUnsaved": "Enweghị ike ichekwa ụfọdụ mgbanwe n'akaụntụ gị (enweghị njikọ?). Ọ bụrụ na ị pụọ ugbu a, ha ga-efu.",
   "signOutAnyway": "Pụọ n'agbanyeghị",
-  "fileTooLarge": "Faịlụ a buru oke ibu imeghe ya ebe a."
+  "fileTooLarge": "Faịlụ a buru oke ibu imeghe ya ebe a.",
+  "portfolioAnnualSummaryYear": "Nchịkọta afọ {year}",
+  "portfolioSoldRow": "E rere {quantity} × {price}"
 }

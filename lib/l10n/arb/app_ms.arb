@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{1 hari percubaan lagi} other{{days} hari percubaan lagi}}",
   "trialExpired": "Percubaan percuma anda telah tamat. Pilih pelan untuk terus menganalisis.",
   "analysesRemaining": "{remaining} daripada {total} analisis berbaki untuk tempoh ini",
-  "extraCredits": "{count} analisis tambahan",
+  "extraCredits": "{count, plural, =1{{count} analisis tambahan} other{{count} analisis tambahan}}",
   "renewsOn": "Diperbaharui pada {date}",
   "choosePlan": "Pilih pelan",
   "currentPlan": "Pelan semasa",
@@ -862,5 +862,7 @@
   "signOutBody": "Portfolio, senarai, amaran harga dan nota anda kekal dalam akaun anda dan dialih keluar daripada peranti ini. Log masuk semula untuk mendapatkannya kembali.",
   "signOutUnsaved": "Sesetengah perubahan tidak dapat disimpan ke akaun anda (tiada sambungan?). Jika anda log keluar sekarang, perubahan itu akan hilang.",
   "signOutAnyway": "Log keluar juga",
-  "fileTooLarge": "Fail ini terlalu besar untuk dibuka di sini."
+  "fileTooLarge": "Fail ini terlalu besar untuk dibuka di sini.",
+  "portfolioAnnualSummaryYear": "Ringkasan tahunan {year}",
+  "portfolioSoldRow": "Dijual {quantity} × {price}"
 }

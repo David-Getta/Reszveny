@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{1 dag tilbage af prøveperioden} other{{days} dage tilbage af prøveperioden}}",
   "trialExpired": "Din gratis prøveperiode er udløbet. Vælg en plan for at fortsætte med at analysere.",
   "analysesRemaining": "{remaining} af {total} analyser tilbage i denne periode",
-  "extraCredits": "{count} ekstra analyser",
+  "extraCredits": "{count, plural, =1{{count} ekstra analyse} other{{count} ekstra analyser}}",
   "renewsOn": "Fornyes {date}",
   "choosePlan": "Vælg en plan",
   "currentPlan": "Nuværende plan",
@@ -862,5 +862,7 @@
   "signOutBody": "Din portefølje, dine lister, kursalarmer og noter forbliver på din konto og fjernes fra denne enhed. Log ind igen for at få dem tilbage.",
   "signOutUnsaved": "Nogle ændringer kunne ikke gemmes på din konto (ingen forbindelse?). Hvis du logger ud nu, går de tabt.",
   "signOutAnyway": "Log ud alligevel",
-  "fileTooLarge": "Denne fil er for stor til at åbne her."
+  "fileTooLarge": "Denne fil er for stor til at åbne her.",
+  "portfolioAnnualSummaryYear": "Årsoversigt {year}",
+  "portfolioSoldRow": "Solgt {quantity} × {price}"
 }

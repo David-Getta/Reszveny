@@ -750,10 +750,8 @@ class AppLocalizationsSk extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count analýz navyše',
-      many: '$count analýzy navyše',
-      few: '$count analýzy navyše',
-      one: '1 analýza navyše',
+      other: 'Analýzy navyše: $count',
+      one: '$count analýza navyše',
     );
     return '$_temp0';
   }
@@ -2990,6 +2988,16 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get fileTooLarge =>
       'Tento súbor je príliš veľký, aby sa dal tu otvoriť.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Ročný prehľad za $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Predané $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Nastaviť cieľ';

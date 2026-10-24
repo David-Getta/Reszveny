@@ -726,7 +726,13 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return 'Sɛgɛsɛgɛli wɛrɛ $count';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Sɛgɛsɛgɛli wɛrɛ $count',
+      one: 'Sɛgɛsɛgɛli wɛrɛ $count',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2909,6 +2915,16 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'Nin fisiye ka bon kojugu ka a dayɛlɛ yan.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'San $year jatebɔ';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Feerelen $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Laɲini sigi';

@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Mbetet 1 ditë provë} other{Mbeten {days} ditë provë}}",
   "trialExpired": "Prova juaj falas ka përfunduar. Zgjidhni një plan për të vazhduar analizat.",
   "analysesRemaining": "Kanë mbetur {remaining} nga {total} analiza në këtë periudhë",
-  "extraCredits": "{count} analiza shtesë",
+  "extraCredits": "{count, plural, =1{{count} analizë shtesë} other{{count} analiza shtesë}}",
   "renewsOn": "Rinovohet më {date}",
   "choosePlan": "Zgjidhni një plan",
   "currentPlan": "Plani aktual",
@@ -862,5 +862,7 @@
   "signOutBody": "Portofoli, listat, alarmet e çmimit dhe shënimet tuaja mbeten në llogarinë tuaj dhe hiqen nga kjo pajisje. Hyni përsëri për t’i rikthyer.",
   "signOutUnsaved": "Disa ndryshime nuk mund të ruheshin në llogarinë tuaj (nuk ka lidhje?). Nëse dilni tani, ato do të humbasin.",
   "signOutAnyway": "Dil gjithsesi",
-  "fileTooLarge": "Ky skedar është shumë i madh për t’u hapur këtu."
+  "fileTooLarge": "Ky skedar është shumë i madh për t’u hapur këtu.",
+  "portfolioAnnualSummaryYear": "Përmbledhje vjetore {year}",
+  "portfolioSoldRow": "Shitur {quantity} × {price}"
 }

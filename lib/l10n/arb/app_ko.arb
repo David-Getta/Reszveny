@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{체험 기간 1일 남음} other{체험 기간 {days}일 남음}}",
   "trialExpired": "무료 체험이 종료되었습니다. 분석을 계속하려면 요금제를 선택하세요.",
   "analysesRemaining": "이번 기간 분석 {total}회 중 {remaining}회 남음",
-  "extraCredits": "추가 분석 {count}회",
+  "extraCredits": "{count, plural, =1{추가 분석 {count}회} other{추가 분석 {count}회}}",
   "renewsOn": "{date} 갱신",
   "choosePlan": "요금제 선택",
   "currentPlan": "현재 요금제",
@@ -862,5 +862,7 @@
   "signOutBody": "포트폴리오, 목록, 가격 알림, 메모는 계정에 그대로 남고 이 기기에서는 삭제됩니다. 다시 로그인하면 복원됩니다.",
   "signOutUnsaved": "일부 변경 사항을 계정에 저장하지 못했습니다(연결이 끊겼나요?). 지금 로그아웃하면 이 변경 사항은 사라집니다.",
   "signOutAnyway": "그래도 로그아웃",
-  "fileTooLarge": "이 파일은 너무 커서 여기서 열 수 없습니다."
+  "fileTooLarge": "이 파일은 너무 커서 여기서 열 수 없습니다.",
+  "portfolioAnnualSummaryYear": "{year}년 연간 요약",
+  "portfolioSoldRow": "매도 {quantity} × {price}"
 }

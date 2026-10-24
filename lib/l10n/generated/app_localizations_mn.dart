@@ -726,7 +726,13 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count нэмэлт шинжилгээ';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count нэмэлт шинжилгээ',
+      one: '$count нэмэлт шинжилгээ',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2912,6 +2918,16 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'Энэ файл хэтэрхий том тул энд нээх боломжгүй.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return '$year оны жилийн хураангуй';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Зарсан $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Зорилт тавих';

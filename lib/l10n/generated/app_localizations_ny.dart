@@ -729,7 +729,13 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return 'Kusanthula kowonjezera $count';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kusanthula kowonjezera $count',
+      one: 'Kusanthula kowonjezera $count',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2927,6 +2933,16 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get fileTooLarge =>
       'Fayilo iyi ndi yayikulu kwambiri kuti itsegulidwe pano.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Chidule cha pachaka $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Zagulitsidwa $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Ikani cholinga';

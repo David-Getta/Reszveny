@@ -748,10 +748,8 @@ class AppLocalizationsCs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count analýz navíc',
-      many: '$count analýzy navíc',
-      few: '$count analýzy navíc',
-      one: '1 analýza navíc',
+      other: 'Analýzy navíc: $count',
+      one: '$count analýza navíc',
     );
     return '$_temp0';
   }
@@ -2985,6 +2983,16 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get fileTooLarge =>
       'Tento soubor je příliš velký, aby se dal zde otevřít.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Roční přehled za $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Prodáno $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Nastavit cíl';

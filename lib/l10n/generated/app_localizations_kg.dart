@@ -730,7 +730,13 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return 'Analyse $count za kuyika';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Analyse $count za kuyika',
+      one: 'Analyse $count ya kuyika',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2928,6 +2934,16 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get fileTooLarge =>
       'Fisye yai kele nene mingi sambu na kukangula yo awa.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Nkufi ya mvula $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Me tekama $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Tula lukanu';

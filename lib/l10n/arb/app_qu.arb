@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Malliypaq {days} p'unchawllaña puchun} other{Malliypaq {days} p'unchawllaña puchun}}",
   "trialExpired": "Gratis malliyniykiqa tukukunña. T'aqwiyta qatipanaykipaq huk planta akllay.",
   "analysesRemaining": "Kay pachapaq {total} t'aqwiymanta {remaining} puchun",
-  "extraCredits": "{count} yapa t'aqwiy",
+  "extraCredits": "{count, plural, =1{{count} yapa t'aqwiy} other{{count} yapa t'aqwiy}}",
   "renewsOn": "{date} p'unchawpi musuqchakunqa",
   "choosePlan": "Planta akllay",
   "currentPlan": "Kunan plan",
@@ -862,5 +862,7 @@
   "signOutBody": "Portafolioyki, listaykikuna, chanin willachiykunayki, qillqasqaykikunapas cuentaykipim qhipanqa, kay equipomantataq qichukunqa. Kutichinaykipaq huktawan yaykuy.",
   "signOutUnsaved": "Wakin tikraykunaqa manam cuentaykipi waqaychakuyta atirqanchu (manachu t'inkiy kan?). Kunan lluqsispaqa chinkanqam.",
   "signOutAnyway": "Chaywanpas lluqsiy",
-  "fileTooLarge": "Kay archivoqa nisyu hatunmi kaypi kicharinapaq."
+  "fileTooLarge": "Kay archivoqa nisyu hatunmi kaypi kicharinapaq.",
+  "portfolioAnnualSummaryYear": "{year} watapa pisichay",
+  "portfolioSoldRow": "Rantikusqa {quantity} × {price}"
 }

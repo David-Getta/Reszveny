@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{{days} ka adlaw nga nabilin sa pagtilaw} other{{days} ka adlaw nga nabilin sa pagtilaw}}",
   "trialExpired": "Natapos na ang imo libre nga pagtilaw. Magpili sang plan para magpadayon sa pag-analisa.",
   "analysesRemaining": "{remaining} sa {total} ka analisis ang nabilin sa sini nga panahon",
-  "extraCredits": "{count} ka dugang nga analisis",
+  "extraCredits": "{count, plural, =1{{count} ka dugang nga analisis} other{{count} ka dugang nga analisis}}",
   "renewsOn": "Ma-renew sa {date}",
   "choosePlan": "Magpili sang plan",
   "currentPlan": "Karon nga plan",
@@ -862,5 +862,7 @@
   "signOutBody": "Ang imo portfolio, mga listahan, mga alerto sa presyo kag mga nota magapabilin sa imo account kag kuhaon sa sini nga device. Mag-sign in liwat para mabawi ini.",
   "signOutUnsaved": "Wala ma-save sa imo account ang iban nga mga pagbag-o (wala sing koneksyon?). Kon mag-sign out ka subong, madula ini.",
   "signOutAnyway": "Mag-sign out gihapon",
-  "fileTooLarge": "Daku gid ini nga file para mabuksan diri."
+  "fileTooLarge": "Daku gid ini nga file para mabuksan diri.",
+  "portfolioAnnualSummaryYear": "Tinuig nga sumaryo sang {year}",
+  "portfolioSoldRow": "Ginbaligya {quantity} × {price}"
 }

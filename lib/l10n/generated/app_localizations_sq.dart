@@ -731,7 +731,13 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count analiza shtesë';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analiza shtesë',
+      one: '$count analizë shtesë',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2925,6 +2931,16 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'Ky skedar është shumë i madh për t’u hapur këtu.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Përmbledhje vjetore $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Shitur $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Cakto një objektiv';

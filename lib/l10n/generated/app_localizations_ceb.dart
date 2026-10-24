@@ -732,7 +732,13 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count ka dugang nga pagtuki';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka dugang nga pagtuki',
+      one: '$count ka dugang nga pagtuki',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2927,6 +2933,16 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'Dako kaayo kini nga file aron maablihan dinhi.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Tinuig nga katingbanan sa $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Gibaligya $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'Pagbutang og tumong';

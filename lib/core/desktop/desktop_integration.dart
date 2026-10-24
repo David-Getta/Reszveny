@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart' show MaterialLocalizations;
 import 'package:flutter/painting.dart';
 import 'package:flutter/services.dart';
 import 'package:hotkey_manager/hotkey_manager.dart';
@@ -129,29 +130,29 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
 
   /// Gyorsbillentyű a felület nyelvén, pl. macOS-en „⌥ Option + Szóköz”,
   /// Windowson „Ctrl + Alt + Szóköz”. [space]: a szóköz billentyű neve.
-  String shortcutLabelFor({String space = 'Space'}) {
+  String shortcutLabelFor({String space = 'Space', KeyNames names = englishKeyNames}) {
     if (!isSupported) return '';
-    return describeHotKey(_hotKey ?? defaultHotKey, space: space);
+    return describeHotKey(_hotKey ?? defaultHotKey, space: space, names: names);
   }
 
   /// A módosítók macOS-en jellel és névvel („⌥ Option”), hogy egyértelmű
   /// legyen, melyik gombot kell lenyomni; a részek között mindig „+”.
-  static String describeHotKey(HotKey hk, {String space = 'Space', bool? mac}) {
+  static String describeHotKey(HotKey hk, {String space = 'Space', bool? mac, KeyNames names = englishKeyNames}) {
     final isMac = mac ?? Platform.isMacOS;
     final parts = <String>[];
     for (final m in hk.modifiers ?? const <HotKeyModifier>[]) {
       parts.add(switch (m) {
-        HotKeyModifier.alt => isMac ? '⌥ Option' : 'Alt',
-        HotKeyModifier.control => isMac ? '⌃ Control' : 'Ctrl',
-        HotKeyModifier.shift => isMac ? '⇧ Shift' : 'Shift',
+        HotKeyModifier.alt => isMac ? '⌥ Option' : names.alt,
+        HotKeyModifier.control => isMac ? '⌃ Control' : names.ctrl,
+        HotKeyModifier.shift => isMac ? '⇧ Shift' : names.shift,
         HotKeyModifier.meta => isMac ? '⌘ Command' : 'Win',
-        HotKeyModifier.capsLock => 'Caps Lock',
+        HotKeyModifier.capsLock => names.capsLock,
         HotKeyModifier.fn => 'Fn',
       });
     }
     final key = hk.key;
     parts.add(switch (key) {
-      PhysicalKeyboardKey k => physicalKeyLabel(k, mac: isMac, space: space),
+      PhysicalKeyboardKey k => physicalKeyLabel(k, mac: isMac, space: space, names: names),
       LogicalKeyboardKey k when k.keyLabel.isNotEmpty => k.keyLabel.toUpperCase(),
       _ => '?',
     });
@@ -160,7 +161,12 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
 
   /// Fizikai billentyű neve a USB HID-kódból. Kiadási buildben a Flutter
   /// hibakereső nevei (`debugName`) nem érhetők el, ezért saját táblát használunk.
-  static String physicalKeyLabel(PhysicalKeyboardKey k, {bool mac = false, String space = 'Space'}) {
+  static String physicalKeyLabel(
+    PhysicalKeyboardKey k, {
+    bool mac = false,
+    String space = 'Space',
+    KeyNames names = englishKeyNames,
+  }) {
     final u = k.usbHidUsage;
     if (u >= 0x00070004 && u <= 0x0007001d) return String.fromCharCode(0x41 + u - 0x00070004); // A–Z
     if (u >= 0x0007001e && u <= 0x00070026) return '${u - 0x0007001e + 1}'; // 1–9
@@ -171,7 +177,7 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
       0x00070028 => mac ? '↩ Return' : 'Enter',
       0x00070029 => 'Esc',
       0x0007002b => mac ? '⇥' : 'Tab',
-      0x0007002a => mac ? '⌫' : 'Backspace',
+      0x0007002a => mac ? '⌫' : names.backspace,
       0x0007002d => '-',
       0x0007002e => '=',
       0x0007002f => '[',
@@ -450,3 +456,23 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
     super.dispose();
   }
 }
+
+/// A billentyűk neve a felület nyelvén (németül „Strg”, „Umschalttaste”); a Material
+/// fordításaiból ([keyNamesOf]), alapból angolul.
+typedef KeyNames = ({String ctrl, String shift, String alt, String capsLock, String backspace});
+
+const KeyNames englishKeyNames = (
+  ctrl: 'Ctrl',
+  shift: 'Shift',
+  alt: 'Alt',
+  capsLock: 'Caps Lock',
+  backspace: 'Backspace',
+);
+
+KeyNames keyNamesOf(MaterialLocalizations m) => (
+  ctrl: m.keyboardKeyControl,
+  shift: m.keyboardKeyShift,
+  alt: m.keyboardKeyAlt,
+  capsLock: m.keyboardKeyCapsLock,
+  backspace: m.keyboardKeyBackspace,
+);

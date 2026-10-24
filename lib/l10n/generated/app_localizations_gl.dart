@@ -2942,6 +2942,16 @@ class AppLocalizationsGl extends AppLocalizations {
       'Este ficheiro é demasiado grande para abrilo aquí.';
 
   @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'Resumo anual de $year';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'Vendido $quantity × $price';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

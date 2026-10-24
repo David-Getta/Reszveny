@@ -734,7 +734,7 @@ class _Sidebar extends StatelessWidget {
                           const SizedBox(width: 6),
                           Flexible(
                             child: Text(
-                              '${l10n.shortcutsTitle} (${shortcutLabel('/')})',
+                              '${l10n.shortcutsTitle} (${shortcutLabel('/', ctrl: MaterialLocalizations.of(context).keyboardKeyControl)})',
                               style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                             ),
                           ),
@@ -794,7 +794,11 @@ class _SidebarButton extends StatelessWidget {
                   style: TextStyle(color: color, fontWeight: accent ? FontWeight.w600 : FontWeight.w500),
                 ),
               ),
-              if (shortcut != null) Text(shortcutLabel(shortcut!), style: TextStyle(color: p.muted, fontSize: 11)),
+              if (shortcut != null)
+                Text(
+                  shortcutLabel(shortcut!, ctrl: MaterialLocalizations.of(context).keyboardKeyControl),
+                  style: TextStyle(color: p.muted, fontSize: 11),
+                ),
             ],
           ),
         ),

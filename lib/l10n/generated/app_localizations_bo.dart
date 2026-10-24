@@ -726,7 +726,13 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return 'ཟུར་སྣོན་དབྱེ་ཞིབ་ $count';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཟུར་སྣོན་དབྱེ་ཞིབ་ $count',
+      one: 'ཟུར་སྣོན་དབྱེ་ཞིབ་ $count',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2902,6 +2908,16 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'ཡིག་ཆ་འདི་ཆེ་དྲགས་པས་འདིར་ཁ་ཕྱེ་མི་ཐུབ།';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return '$year ལོའི་ལོ་འཁོར་བསྡུས་དོན';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'བཙོངས་ཟིན་ $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';

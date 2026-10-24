@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Hasigaye umusi 1 w'igeragezwa} other{Hasigaye imisi {days} y'igeragezwa}}",
   "trialExpired": "Igeragezwa ryawe ry'ubuntu ryarangiye. Hitamwo ipaki kugira ubandanye gusesangura.",
   "analysesRemaining": "Hasigaye amasesangura {remaining} kuri {total} muri iki gihe",
-  "extraCredits": "Amasesangura {count} y'inyongera",
+  "extraCredits": "{count, plural, =1{Isesangura {count} ry'inyongera} other{Amasesangura {count} y'inyongera}}",
   "renewsOn": "Rizovugururwa {date}",
   "choosePlan": "Hitamwo ipaki",
   "currentPlan": "Ipaki ufise",
@@ -862,5 +862,7 @@
   "signOutBody": "Ishoramari ryawe, intonde, imenyesha ry'ibiciro n'ivyo wanditse biguma muri konti yawe kandi bikurwa kuri iki gikoresho. Subira winjire kugira ubironke.",
   "signOutUnsaved": "Amahinduka amwe ntiyashoboye kubikwa muri konti yawe (nta interineti?). Nusohoka ubu, azotakara.",
   "signOutAnyway": "Sohoka uko biri kwose",
-  "fileTooLarge": "Iyi dosiye ni nini cane ku buryo idashobora kwugururwa hano."
+  "fileTooLarge": "Iyi dosiye ni nini cane ku buryo idashobora kwugururwa hano.",
+  "portfolioAnnualSummaryYear": "Incamake y'umwaka wa {year}",
+  "portfolioSoldRow": "Vyagurishijwe {quantity} × {price}"
 }

@@ -709,7 +709,13 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '추가 분석 $count회';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '추가 분석 $count회',
+      one: '추가 분석 $count회',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2832,6 +2838,16 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get fileTooLarge => '이 파일은 너무 커서 여기서 열 수 없습니다.';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return '$year년 연간 요약';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return '매도 $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => '목표 설정';

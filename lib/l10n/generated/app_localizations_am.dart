@@ -713,7 +713,13 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    return '$count ተጨማሪ ትንተናዎች';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ተጨማሪ ትንተናዎች',
+      one: '$count ተጨማሪ ትንተና',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -2873,6 +2879,16 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get fileTooLarge => 'ይህ ፋይል እዚህ ለመክፈት በጣም ትልቅ ነው።';
+
+  @override
+  String portfolioAnnualSummaryYear(String year) {
+    return 'የ$year ዓመታዊ ማጠቃለያ';
+  }
+
+  @override
+  String portfolioSoldRow(String quantity, String price) {
+    return 'ተሽጧል $quantity × $price';
+  }
 
   @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';

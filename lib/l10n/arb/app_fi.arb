@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Kokeilua jäljellä 1 päivä} other{Kokeilua jäljellä {days} päivää}}",
   "trialExpired": "Ilmainen kokeilusi on päättynyt. Valitse paketti jatkaaksesi analysointia.",
   "analysesRemaining": "{remaining}/{total} analyysia jäljellä tällä jaksolla",
-  "extraCredits": "{count} lisäanalyysia",
+  "extraCredits": "{count, plural, =1{{count} lisäanalyysi} other{{count} lisäanalyysia}}",
   "renewsOn": "Uusiutuu {date}",
   "choosePlan": "Valitse paketti",
   "currentPlan": "Nykyinen paketti",
@@ -862,5 +862,7 @@
   "signOutBody": "Salkkusi, listasi, kurssihälytyksesi ja muistiinpanosi säilyvät tililläsi ja poistetaan tältä laitteelta. Saat ne takaisin kirjautumalla uudelleen sisään.",
   "signOutUnsaved": "Joitakin muutoksia ei voitu tallentaa tilillesi (ei yhteyttä?). Jos kirjaudut nyt ulos, ne menetetään.",
   "signOutAnyway": "Kirjaudu silti ulos",
-  "fileTooLarge": "Tämä tiedosto on liian suuri avattavaksi täällä."
+  "fileTooLarge": "Tämä tiedosto on liian suuri avattavaksi täällä.",
+  "portfolioAnnualSummaryYear": "Vuosiyhteenveto {year}",
+  "portfolioSoldRow": "Myyty {quantity} × {price}"
 }

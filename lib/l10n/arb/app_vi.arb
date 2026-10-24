@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Còn 1 ngày dùng thử} other{Còn {days} ngày dùng thử}}",
   "trialExpired": "Thời gian dùng thử miễn phí đã kết thúc. Hãy chọn một gói để tiếp tục phân tích.",
   "analysesRemaining": "Còn {remaining}/{total} lượt phân tích trong kỳ này",
-  "extraCredits": "{count} lượt phân tích bổ sung",
+  "extraCredits": "{count, plural, =1{{count} lượt phân tích bổ sung} other{{count} lượt phân tích bổ sung}}",
   "renewsOn": "Gia hạn {date}",
   "choosePlan": "Chọn gói",
   "currentPlan": "Gói hiện tại",
@@ -862,5 +862,7 @@
   "signOutBody": "Danh mục, danh sách, cảnh báo giá và ghi chú của bạn vẫn được giữ trong tài khoản và sẽ bị xóa khỏi thiết bị này. Đăng nhập lại để lấy lại chúng.",
   "signOutUnsaved": "Một số thay đổi chưa thể lưu vào tài khoản của bạn (không có kết nối?). Nếu đăng xuất bây giờ, chúng sẽ bị mất.",
   "signOutAnyway": "Vẫn đăng xuất",
-  "fileTooLarge": "Tệp này quá lớn để mở tại đây."
+  "fileTooLarge": "Tệp này quá lớn để mở tại đây.",
+  "portfolioAnnualSummaryYear": "Tổng kết năm {year}",
+  "portfolioSoldRow": "Đã bán {quantity} × {price}"
 }

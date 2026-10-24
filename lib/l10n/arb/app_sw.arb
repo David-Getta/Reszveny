@@ -206,7 +206,7 @@
   "trialDaysLeft": "{days, plural, =1{Imesalia siku 1 ya jaribio} other{Zimesalia siku {days} za jaribio}}",
   "trialExpired": "Jaribio lako la bila malipo limekamilika. Chagua mpango ili kuendelea kuchambua.",
   "analysesRemaining": "Umesalia na uchambuzi {remaining} kati ya {total} katika kipindi hiki",
-  "extraCredits": "Uchambuzi {count} wa ziada",
+  "extraCredits": "{count, plural, =1{Uchambuzi {count} wa ziada} other{Uchambuzi {count} wa ziada}}",
   "renewsOn": "Husasishwa {date}",
   "choosePlan": "Chagua mpango",
   "currentPlan": "Mpango wa sasa",
@@ -862,5 +862,7 @@
   "signOutBody": "Jalada lako la hisa, orodha, arifa za bei na madokezo hubaki kwenye akaunti yako na huondolewa kwenye kifaa hiki. Ingia tena ili uvirejeshe.",
   "signOutUnsaved": "Baadhi ya mabadiliko hayakuweza kuhifadhiwa kwenye akaunti yako (hakuna muunganisho?). Ukitoka sasa, yatapotea.",
   "signOutAnyway": "Toka hata hivyo",
-  "fileTooLarge": "Faili hii ni kubwa mno kufunguliwa hapa."
+  "fileTooLarge": "Faili hii ni kubwa mno kufunguliwa hapa.",
+  "portfolioAnnualSummaryYear": "Muhtasari wa mwaka {year}",
+  "portfolioSoldRow": "Umeuza {quantity} × {price}"
 }
