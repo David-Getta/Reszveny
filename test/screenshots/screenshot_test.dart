@@ -1,6 +1,7 @@
 @Tags(['screenshot'])
 library;
 
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:ui' as ui;
@@ -19,6 +20,8 @@ import 'package:reszveny/app.dart';
 import 'package:reszveny/features/stock_detail/stock_detail_page.dart';
 import 'package:reszveny/app_services.dart';
 import 'package:reszveny/core/app_preferences.dart';
+import 'package:reszveny/features/analysis/ai_consent.dart';
+import 'package:reszveny/features/analysis/report_ai.dart';
 import 'package:reszveny/core/backend/backend_client.dart';
 import 'package:reszveny/core/config/app_config.dart';
 import 'package:reszveny/core/desktop/desktop_integration.dart';
@@ -1412,6 +1415,23 @@ void main() {
     await tester.tap(find.textContaining('Yearly', findRichText: true));
     await tester.pumpAndSettle();
     await _shot(tester, 'paywall_yearly');
+  });
+
+  testWidgets('AI consent and reporting an AI answer (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'), backend: true);
+    s.preferences.aiConsent = null;
+    await pumpApp(tester, s, const Size(430, 900));
+    final context = tester.element(find.byType(Scaffold).first);
+    unawaited(ensureAiConsent(context));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'ai_consent_phone_hu');
+    await tester.tap(find.text('Most nem'));
+    await tester.pumpAndSettle();
+    unawaited(showReportAiDialog(context, kind: AiReportKind.research, text: 'NVDA', symbol: 'NVDA'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('ai-report-inaccurate')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'ai_report_phone_hu');
   });
 
   testWidgets('settings: account with delete, legal links (hungarian)', (tester) async {
