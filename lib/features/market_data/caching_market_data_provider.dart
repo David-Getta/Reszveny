@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/storage_room.dart';
 import '../../core/errors.dart';
 import '../../core/models/analysis_extras.dart';
 import '../../core/models/analyst_consensus.dart';
@@ -48,7 +49,7 @@ class CachingMarketDataProvider extends MarketDataProvider {
   /// Legfeljebb ennyi részvény adatát őrizzük (a legrégebben használtakat töröljük).
   static const maxSymbols = 60;
 
-  static const _prefix = 'mdc_';
+  static const _prefix = marketCachePrefix;
   static const _indexKey = 'mdc_index';
 
   /// Ha nem `null`, valamelyik legutóbb kért adat a gyorsítótárból jött, és a

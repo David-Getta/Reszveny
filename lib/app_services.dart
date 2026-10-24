@@ -58,6 +58,7 @@ import 'features/portfolio/dividend_forecast.dart' show dividendsInLast12Months,
 import 'features/portfolio/portfolio_store.dart';
 import 'features/portfolio/portfolio_valuation.dart';
 import 'features/sync/sync_service.dart';
+import 'features/sync/tab_refresh.dart';
 import 'features/recognition/claude_vision_recognizer.dart';
 import 'features/recognition/description_resolver.dart';
 import 'features/recognition/stock_recognizer.dart';
@@ -207,6 +208,13 @@ class AppServices {
             notes: this.notes,
             language: () => (locale.override ?? WidgetsBinding.instance.platformDispatcher.locale).languageCode,
           );
+    // Weben a többi lapon közben mentett változások átvétele, amikor ez a lap előtérbe kerül.
+    tabRefresh = TabRefresh(
+      preferences: preferences,
+      portfolio: this.portfolio,
+      alerts: this.alerts,
+      notes: this.notes,
+    );
     final acc = account;
     this.billing =
         billing ??
@@ -374,6 +382,7 @@ class AppServices {
 
   /// Szinkron az e-mailes fiókkal (backend-módban, belépve).
   late final SyncService? sync;
+  late final TabRefresh tabRefresh;
 
   /// Közelgő gyorsjelentések és az elemzések eseményei.
   late final EventsService events;

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/storage_room.dart';
 import '../../core/util/ids.dart';
 import '../../core/util/text.dart';
 import '../../core/util/tombstones.dart';
@@ -1425,18 +1426,16 @@ class PortfolioStore extends ChangeNotifier {
       _batchChanged = true;
       return;
     }
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      await Future.wait([
+    // Betelt tárolónál a gyorsítótár helyén (a tárolás hibája nem akadályozza a működést).
+    await writeWithRoom(
+      (prefs) => Future.wait([
         prefs.setString(_key, jsonEncode(_lots.map((l) => l.toJson()).toList())),
         prefs.setString(_dividendsKey, jsonEncode(_dividends.map((d) => d.toJson()).toList())),
         prefs.setString(_splitsKey, jsonEncode(_splits.map((s) => s.toJson()).toList())),
         prefs.setString(_cashKey, jsonEncode(cash)),
         prefs.setString(_cashAtKey, jsonEncode(cashAtJson)),
         prefs.setString(_deletedKey, jsonEncode(deletedJson)),
-      ]);
-    } catch (_) {
-      // A tárolás hibája nem akadályozza a működést.
-    }
+      ]),
+    );
   }
 }

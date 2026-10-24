@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart' show StringCharacters;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/storage_room.dart';
 import '../../core/util/tombstones.dart';
 
 /// Egy részvényhez írt saját jegyzet (befektetési napló).
@@ -122,15 +123,10 @@ class NotesStore extends ChangeNotifier {
     await _save();
   }
 
-  Future<void> _save() async {
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      await Future.wait([
-        prefs.setString(_key, jsonEncode({for (final e in _notes.entries) e.key: e.value.toJson()})),
-        prefs.setString(_deletedKey, jsonEncode(deletedJson)),
-      ]);
-    } catch (_) {
-      // A tárolás hibája nem akadályozza a működést.
-    }
-  }
+  Future<void> _save() => writeWithRoom(
+    (prefs) => Future.wait([
+      prefs.setString(_key, jsonEncode({for (final e in _notes.entries) e.key: e.value.toJson()})),
+      prefs.setString(_deletedKey, jsonEncode(deletedJson)),
+    ]),
+  );
 }

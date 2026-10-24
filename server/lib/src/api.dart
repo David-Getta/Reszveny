@@ -346,13 +346,19 @@ class Api {
         }
       };
 
+  /// A böngészőből küldhető kérésfejlécek (CORS).
+  static const allowedRequestHeaders =
+      'authorization, content-type, x-api-key, anthropic-version, anthropic-beta, x-finnhub-token, stripe-signature, '
+      'x-whatstock-depth, x-whatstock-continuation, x-whatstock-request-id, $inviteHeader';
+
   static Middleware _cors() =>
       (inner) => (req) async {
         const headers = {
           'access-control-allow-origin': '*',
-          'access-control-allow-headers':
-              'authorization, content-type, x-api-key, anthropic-version, anthropic-beta, x-finnhub-token, stripe-signature, '
-              'x-whatstock-depth, $inviteHeader',
+          // Minden fejléc, amit az app küld (különben a böngésző az előzetes kérés után
+          // eldobja a kérést), és amit a válaszból olvas.
+          'access-control-allow-headers': allowedRequestHeaders,
+          'access-control-expose-headers': 'x-whatstock-continuation, x-whatstock-cache',
           'access-control-allow-methods': 'GET, POST, PUT, DELETE, OPTIONS',
         };
         if (req.method == 'OPTIONS') return Response.ok('', headers: headers);

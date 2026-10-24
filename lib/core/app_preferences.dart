@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../features/analysis/analysis_options.dart';
+import 'util/storage_room.dart';
 import 'util/tombstones.dart';
 import 'util/us_market_hours.dart';
 
@@ -1140,13 +1141,8 @@ class AppPreferences extends ChangeNotifier {
     await _save((p) => p.remove(_recentKey));
   }
 
-  Future<void> _save(Future<void> Function(SharedPreferences) write) async {
-    try {
-      await write(await SharedPreferences.getInstance());
-    } catch (_) {
-      // A tárolás hibája nem akadályozza a működést.
-    }
-  }
+  /// Betelt tárolónál a gyorsítótár helyén (a tárolás hibája nem akadályozza a működést).
+  Future<void> _save(Future<void> Function(SharedPreferences) write) => writeWithRoom(write);
 }
 
 /// Egy saját lista a kedvencek között: név és tickerek (a felvétel sorrendjében).

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.291)
+# Változásjegyzék (0.2.130 → 0.2.292)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,16 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Böngészős változat: a harminchetedik kódátnézés javításai
+
+- **0.2.292**: a böngészős appban az AI-elemzés ismét működik (a szerver eddig nem engedte a kérés azonosító
+  fejlécét, így a böngésző minden elemzést eldobott, és a folytatás jelét sem láthatta). Ha a választott nyelv
+  szövegei nem tölthetők le (hálózat nélkül, vagy egy közben frissített kiadás után), az app angolul indul ahelyett,
+  hogy üres oldal maradna. Két nyitott lap nem írja felül egymás változásait: az előtérbe kerülő lap átveszi, amit a
+  másik közben mentett. Ha a böngésző tárolója betelt (a piaci gyorsítótár miatt), a portfólió, a riasztások, a
+  jegyzetek és a beállítások mentése a gyorsítótár helyén mégis sikerül (eddig csendben elveszett az újratöltéskor).
+  A kiadott web-zip bármilyen mappába feltölthető, nem csak a domain gyökerébe.
 
 ## Magyar szövegek: nyelvi átnézés
 

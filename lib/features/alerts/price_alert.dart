@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/storage_room.dart';
 import '../../core/util/ids.dart';
 import '../../core/util/us_market_hours.dart';
 import '../../core/models/stock_quote.dart';
@@ -420,14 +421,11 @@ class AlertStore extends ChangeNotifier {
 
   Future<void> _changed({bool notify = true}) async {
     if (notify) notifyListeners();
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      await Future.wait([
+    await writeWithRoom(
+      (prefs) => Future.wait([
         prefs.setString(_key, jsonEncode(_alerts.map((a) => a.toJson()).toList())),
         prefs.setString(_deletedKey, jsonEncode(deletedJson)),
-      ]);
-    } catch (_) {
-      // A tárolás hibája nem akadályozza a működést.
-    }
+      ]),
+    );
   }
 }

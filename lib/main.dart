@@ -78,4 +78,5 @@ Future<void> main() async {
   }
   // Reggeli összefoglaló (ha a felhasználó bekapcsolta).
   services.morningBrief.start();
+  services.tabRefresh.start();
 }
