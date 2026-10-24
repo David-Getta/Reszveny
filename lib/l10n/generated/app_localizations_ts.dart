@@ -2960,6 +2960,78 @@ class AppLocalizationsTs extends AppLocalizations {
       'U se u ri na ntsariso hi ku tirhisa App Store kumbe Google Play. Ku cinca kungu ra wena, tirhisa swiyimiso swa ntsariso swa vhengele rero.';
 
   @override
+  String get paymentViaAppStore =>
+      'U hakerisiwa hi akhawunti ya wena ya Apple. Khansela nkarhi wun\'wana na wun\'wana eka swiyimiso swa ntsariso swa App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'U hakerisiwa hi akhawunti ya wena ya Google Play. Khansela nkarhi wun\'wana na wun\'wana eka swiyimiso swa ntsariso swa Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'A ku na ntsariso lowu nga lawuriwaka laha. Ntsariso lowu xaviweke eka App Store wu lawuriwa eka swiyimiso swa wena swa App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'A ku na ntsariso lowu nga lawuriwaka laha. Ntsariso lowu xaviweke eka Google Play wu lawuriwa eka swiyimiso swa wena swa Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Akhawunti ya wena na hinkwaswo leswi hlayisiweke eka sevha ya hina (imeyili, xiavelo, matirhiselo) swi ta suriwa hi laha ku nga heriki, naswona minxopaxopo leyi nga tirhisiwangiki yi ta lahleka. Ntsariso wa App Store wu fanele ku khanseriwa eka swiyimiso swa wena swa App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Akhawunti ya wena na hinkwaswo leswi hlayisiweke eka sevha ya hina (imeyili, xiavelo, matirhiselo) swi ta suriwa hi laha ku nga heriki, naswona minxopaxopo leyi nga tirhisiwangiki yi ta lahleka. Ntsariso wa Google Play wu fanele ku khanseriwa eka swiyimiso swa wena swa Google Play.';
+
+  @override
+  String get aiConsentTitle => 'U nga si tirhisa swiphemu swa AI';
+
+  @override
+  String get aiConsentBody =>
+      'Ku xopaxopa swiavelo, ku hlaya swifaniso ni swifaniso swa xikirini, ni ku hlamula swivutiso swa wena, WhatStock yi rhumela vuxokoxoko lebyi lavekaka eka xikombelo — xifaniso kumbe xifaniso xa xikirini, xiavelo, xivutiso xa wena na, loko u swi tirhisa, tinotsi ta wena ni tixere ta wena — eka Anthropic, khamphani leyi fambisaka modele wa AI wa Claude. Anthropic yi byi tirhisa ntsena ku hlamula xikombelo naswona a yi byi tirhisi ku dyondzisa AI ya yona. Vuxokoxoko byin\'wana byi le ka Pholisi ya Xihundla.';
+
+  @override
+  String get aiConsentLater => 'Ku nga ri sweswi';
+
+  @override
+  String get aiConsentAllow => 'Pfumelela';
+
+  @override
+  String get aiConsentSetting => 'Swiphemu swa AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Swikombelo swa wena swi rhumeriwa eka Anthropic (Claude) leswaku swi hlamuriwa. Loko swi timiwile, app yi vutisa u nga si rhumela xikombelo xin\'wana xa AI, naswona nkatsakanyo wa nimixo lowu tiendlekelaka a wu tirhi.';
+
+  @override
+  String get aiReport => 'Vika';
+
+  @override
+  String get aiReportTitle => 'Vika nhlamulo leyi ya AI';
+
+  @override
+  String get aiReportInaccurate => 'Swi hoxile kumbe swa xisa';
+
+  @override
+  String get aiReportHarmful => 'Swa khunguvanyisa kumbe swa onha';
+
+  @override
+  String get aiReportOther => 'Swin\'wana';
+
+  @override
+  String get aiReportNoteHint => 'Ku hoxeke yini? (a swi bohi)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Hi kuma tsalwa ra nhlamulo leyi ni notsi ya wena — handle ka akhawunti ya wena — leswaku hi yi kambela.';
+
+  @override
+  String get aiReportSend => 'Rhumela xiviko';
+
+  @override
+  String get aiReportThanks => 'Ha khensa — hi ta yi kambela.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

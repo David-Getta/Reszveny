@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../analysis/report_ai.dart';
+import '../analysis/ai_consent.dart';
 import '../../app_services.dart';
 import '../../core/errors.dart';
 import '../../core/models/stock_report.dart';
@@ -49,6 +51,7 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
   }
 
   Future<void> _run() async {
+    if (!await ensureAiConsent(context) || !mounted) return;
     final services = AppServices.of(context);
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
     setState(() {
@@ -172,6 +175,10 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
             Text(
               '${l10n.aiGeneratedAt(fmt.dateTime(r.generatedAt))} · ${l10n.aiDisclaimer}',
               style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+            ),
+            Align(
+              alignment: AlignmentDirectional.centerEnd,
+              child: ReportAiButton(kind: AiReportKind.portfolio, text: reportPlainText(r)),
             ),
             // Kérdések a portfólió-elemzésről (a napi kérdéskeretből).
             if (!_loading) ...[

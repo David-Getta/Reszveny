@@ -2928,6 +2928,78 @@ class AppLocalizationsBho extends AppLocalizations {
       'रउआ लगे पहिलहीं से App Store भा Google Play के जरिए सदस्यता बा। आपन प्लान बदले खातिर ओह स्टोर के सदस्यता सेटिंग्स के इस्तेमाल करीं।';
 
   @override
+  String get paymentViaAppStore =>
+      'भुगतान राउर Apple खाता से होला। App Store के सदस्यता सेटिंग्स में जब चाहीं रद्द करीं।';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'भुगतान राउर Google Play खाता से होला। Google Play के सदस्यता सेटिंग्स में जब चाहीं रद्द करीं।';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'इहाँ सँभारे खातिर कवनो सदस्यता नइखे। App Store में खरीदल सदस्यता राउर App Store सेटिंग्स में सँभारल जाला।';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'इहाँ सँभारे खातिर कवनो सदस्यता नइखे। Google Play में खरीदल सदस्यता राउर Google Play सेटिंग्स में सँभारल जाला।';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'राउर खाता आ हमनी के सर्वर पर रखल सब कुछ (ईमेल, कोटा, इस्तेमाल) हमेशा खातिर मिट जाई, आ बिना इस्तेमाल भइल विश्लेषण खतम हो जाई। App Store के सदस्यता राउर App Store सेटिंग्स में रद्द करे के पड़ी।';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'राउर खाता आ हमनी के सर्वर पर रखल सब कुछ (ईमेल, कोटा, इस्तेमाल) हमेशा खातिर मिट जाई, आ बिना इस्तेमाल भइल विश्लेषण खतम हो जाई। Google Play के सदस्यता राउर Google Play सेटिंग्स में रद्द करे के पड़ी।';
+
+  @override
+  String get aiConsentTitle => 'AI सुविधा इस्तेमाल करे से पहिले';
+
+  @override
+  String get aiConsentBody =>
+      'शेयर के विश्लेषण करे, फोटो आ स्क्रीनशॉट पढ़े, आ राउर सवाल के जवाब देवे खातिर WhatStock अनुरोध खातिर जरूरी डेटा — फोटो भा स्क्रीनशॉट, शेयर, राउर सवाल, आ जहाँ रउआ इस्तेमाल करीं उहाँ राउर नोट आ पोजीशन — Anthropic के भेजेला, जवन Claude AI मॉडल चलावेला। Anthropic एकरा के खाली अनुरोध के जवाब देवे खातिर प्रोसेस करेला आ अपना AI के ट्रेनिंग में इस्तेमाल ना करेला। बिस्तार से जानकारी गोपनीयता नीति में बा।';
+
+  @override
+  String get aiConsentLater => 'अबहीं ना';
+
+  @override
+  String get aiConsentAllow => 'अनुमति दीं';
+
+  @override
+  String get aiConsentSetting => 'AI सुविधा';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'राउर अनुरोध जवाब खातिर Anthropic (Claude) के भेजल जाला। बंद रहला पर ऐप अगिला AI अनुरोध से पहिले पूछी, आ अपने-आप बने वाला बिहान के सारांश ना बनी।';
+
+  @override
+  String get aiReport => 'रिपोर्ट करीं';
+
+  @override
+  String get aiReportTitle => 'एह AI जवाब के रिपोर्ट करीं';
+
+  @override
+  String get aiReportInaccurate => 'गलत भा भरमावे वाला';
+
+  @override
+  String get aiReportHarmful => 'आपत्तिजनक भा नुकसानदेह';
+
+  @override
+  String get aiReportOther => 'कुछ अउर';
+
+  @override
+  String get aiReportNoteHint => 'का गलत बा? (वैकल्पिक)';
+
+  @override
+  String get aiReportPrivacy =>
+      'जाँचे खातिर हमनी के एह जवाब के टेक्स्ट आ राउर नोट मिलेला — राउर खाता के बिना।';
+
+  @override
+  String get aiReportSend => 'रिपोर्ट भेजीं';
+
+  @override
+  String get aiReportThanks => 'धन्यवाद — हमनी के एकरा के जाँचब।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

@@ -2941,6 +2941,78 @@ class AppLocalizationsAf extends AppLocalizations {
       'Jy het reeds ’n intekening via die App Store of Google Play. Gebruik die intekeninginstellings van daardie winkel om jou plan te verander.';
 
   @override
+  String get paymentViaAppStore =>
+      'Gehef via jou Apple-rekening. Kanselleer enige tyd in jou App Store-intekeninginstellings.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Gehef via jou Google Play-rekening. Kanselleer enige tyd in jou Google Play-intekeninginstellings.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Hier is geen intekening om te bestuur nie. ’n Intekening wat in die App Store gekoop is, word in jou App Store-instellings bestuur.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Hier is geen intekening om te bestuur nie. ’n Intekening wat in Google Play gekoop is, word in jou Google Play-instellings bestuur.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Jou rekening en alles wat op ons bediener gestoor is (e-pos, toekenning, gebruik) word permanent geskrap, en ongebruikte ontledings gaan verlore. ’n App Store-intekening moet in jou App Store-instellings gekanselleer word.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Jou rekening en alles wat op ons bediener gestoor is (e-pos, toekenning, gebruik) word permanent geskrap, en ongebruikte ontledings gaan verlore. ’n Google Play-intekening moet in jou Google Play-instellings gekanselleer word.';
+
+  @override
+  String get aiConsentTitle => 'Voordat jy AI-funksies gebruik';
+
+  @override
+  String get aiConsentBody =>
+      'Om aandele te ontleed, foto’s en skermskote te lees en jou vrae te beantwoord, stuur WhatStock die data wat vir die versoek nodig is – die foto of skermskoot, die aandeel, jou vraag en, waar jy dit gebruik, jou notas en posisies – na Anthropic, wat die AI-model Claude bedryf. Anthropic verwerk dit slegs om die versoek te beantwoord en gebruik dit nie om sy AI op te lei nie. Besonderhede staan in die privaatheidsbeleid.';
+
+  @override
+  String get aiConsentLater => 'Nie nou nie';
+
+  @override
+  String get aiConsentAllow => 'Laat toe';
+
+  @override
+  String get aiConsentSetting => 'AI-funksies';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Jou versoeke word na Anthropic (Claude) gestuur om beantwoord te word. Wanneer dit af is, vra die app voor die volgende AI-versoek, en die outomatiese oggendopsomming word nie gemaak nie.';
+
+  @override
+  String get aiReport => 'Rapporteer';
+
+  @override
+  String get aiReportTitle => 'Rapporteer hierdie AI-antwoord';
+
+  @override
+  String get aiReportInaccurate => 'Verkeerd of misleidend';
+
+  @override
+  String get aiReportHarmful => 'Aanstootlik of skadelik';
+
+  @override
+  String get aiReportOther => 'Iets anders';
+
+  @override
+  String get aiReportNoteHint => 'Wat is verkeerd? (opsioneel)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Ons ontvang die teks van hierdie antwoord en jou nota – sonder jou rekening – sodat ons dit kan nagaan.';
+
+  @override
+  String get aiReportSend => 'Stuur verslag';
+
+  @override
+  String get aiReportThanks => 'Dankie – ons sal dit nagaan.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

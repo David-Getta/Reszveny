@@ -2950,6 +2950,78 @@ class AppLocalizationsKg extends AppLocalizations {
       'Nge kele dezia ti abonnement na nzila ya App Store yovo Google Play. Sambu na kusoba forfait aku, sadila paramètres ya abonnement ya store yina.';
 
   @override
+  String get paymentViaAppStore =>
+      'Ufutanga mu nzila ya compte aku ya Apple. Ulenda bika ntangu yawonso mu paramètres ya abonnement ya App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Ufutanga mu nzila ya compte aku ya Google Play. Ulenda bika ntangu yawonso mu paramètres ya abonnement ya Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Abonnement ya kutwadisa kele ve awa. Abonnement yina nge sumbaka na App Store ke twadisama na paramètres ya App Store na nge.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Abonnement ya kutwadisa kele ve awa. Abonnement yina nge sumbaka na Google Play ke twadisama na paramètres ya Google Play na nge.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Compte aku ye mambu mawonso malundwa mu serveur eto (e-mail, kitini kia ngonda, kusadila) si mazimbiswa mvu ya mvu, ye analyse ka usadidi ko si zivila. Abonnement ya App Store ifwete bikwa mu paramètres ya App Store na nge.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Compte aku ye mambu mawonso malundwa mu serveur eto (e-mail, kitini kia ngonda, kusadila) si mazimbiswa mvu ya mvu, ye analyse ka usadidi ko si zivila. Abonnement ya Google Play ifwete bikwa mu paramètres ya Google Play na nge.';
+
+  @override
+  String get aiConsentTitle => 'Ntete ya kusadila ba fonction ya AI';
+
+  @override
+  String get aiConsentBody =>
+      'Sambu na kusala analyse ya ba action, kutanga ba foto ti ba foto ya ekrani, ye kuvutula bangiufula na nge, WhatStock ke tindaka ba donnée yina lombe ke lomba — foto to foto ya ekrani, action, ngiufula na nge ye, kana nge ke sadila yo, ba note ti ba position na nge — na Anthropic, kompani yina ke sadisa modèle ya AI Claude. Anthropic ke sadila yo kaka sambu na kuvutula lombe, ye yo ke sadilaka yo ve sambu na kulonga AI na yo. Bansangu ya mingi kele na Nsiku za kukengela nsangu zaku.';
+
+  @override
+  String get aiConsentLater => 'Ve ntangu yai';
+
+  @override
+  String get aiConsentAllow => 'Pesa nzila';
+
+  @override
+  String get aiConsentSetting => 'Ba fonction ya AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Ba lombe na nge ke tindamaka na Anthropic (Claude) sambu na kuvutula yo. Kana yo me zimama, application ke yufula ntete ya lombe ya AI yina ke landa, ye nsoki ya suka yina ke salama yo mosi ke salama ve.';
+
+  @override
+  String get aiReport => 'Zabisa';
+
+  @override
+  String get aiReportTitle => 'Zabisa mvutu yai ya AI';
+
+  @override
+  String get aiReportInaccurate => 'Ya mbi to ya kukusa';
+
+  @override
+  String get aiReportHarmful => 'Ya kufinga to ya kubebisa';
+
+  @override
+  String get aiReportOther => 'Kima ya nkaka';
+
+  @override
+  String get aiReportNoteHint => 'Nki kele mbi? (kana nge zola)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Beto ke bakaka masonuku ya mvutu yai ti note na nge — kukonda compte aku — sambu na kutala yo.';
+
+  @override
+  String get aiReportSend => 'Tinda rapport';
+
+  @override
+  String get aiReportThanks => 'Matondo — beto ta tala yo.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

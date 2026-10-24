@@ -2932,6 +2932,78 @@ class AppLocalizationsYo extends AppLocalizations {
       'O ti ní àsansílẹ̀ nípasẹ̀ App Store tàbí Google Play. Láti yí ìpele rẹ padà, lo ètò àsansílẹ̀ ilé ìtajà náà.';
 
   @override
+  String get paymentViaAppStore =>
+      'A ń gba owó nípasẹ̀ àkáǹtì Apple rẹ. Fagilé nígbàkigbà nínú ètò àsansílẹ̀ App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'A ń gba owó nípasẹ̀ àkáǹtì Google Play rẹ. Fagilé nígbàkigbà nínú ètò àsansílẹ̀ Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Kò sí àsansílẹ̀ kankan láti ṣàkóso níbí. Àsansílẹ̀ tí o rà nínú App Store ni a ń ṣàkóso nínú ètò App Store rẹ.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Kò sí àsansílẹ̀ kankan láti ṣàkóso níbí. Àsansílẹ̀ tí o rà nínú Google Play ni a ń ṣàkóso nínú ètò Google Play rẹ.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'A ó pa àkáǹtì rẹ àti gbogbo ohun tí a tọ́jú sórí sáfà wa (ímeèlì, ìpín oṣooṣù, ìlò) rẹ́ pátápátá, ìtúpalẹ̀ tí o kò tíì lò yóò sì sọnù. Àsansílẹ̀ App Store gbọ́dọ̀ di fífagilé nínú ètò App Store rẹ.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'A ó pa àkáǹtì rẹ àti gbogbo ohun tí a tọ́jú sórí sáfà wa (ímeèlì, ìpín oṣooṣù, ìlò) rẹ́ pátápátá, ìtúpalẹ̀ tí o kò tíì lò yóò sì sọnù. Àsansílẹ̀ Google Play gbọ́dọ̀ di fífagilé nínú ètò Google Play rẹ.';
+
+  @override
+  String get aiConsentTitle => 'Kí o tó lo àwọn ẹ̀yà AI';
+
+  @override
+  String get aiConsentBody =>
+      'Láti ṣe ìtúpalẹ̀ àwọn ìpín, ka fọ́tò àti àwòrán ojú-ìbojú, kí ó sì dáhùn àwọn ìbéèrè rẹ, WhatStock máa ń fi dátà tí ìbéèrè náà nílò — fọ́tò tàbí àwòrán ojú-ìbojú, ìpín náà, ìbéèrè rẹ àti, bí o bá ń lò wọ́n, àwọn àkọsílẹ̀ rẹ àti àwọn ohun ìní rẹ — ránṣẹ́ sí Anthropic, ilé-iṣẹ́ tó ń ṣiṣẹ́ àwòṣe AI Claude. Anthropic ń lò ó láti dáhùn ìbéèrè náà nìkan, kò sì ní lò ó láti kọ́ AI rẹ̀. Àlàyé kíkún wà nínú Ìlànà Ìpamọ́.';
+
+  @override
+  String get aiConsentLater => 'Kì í ṣe báyìí';
+
+  @override
+  String get aiConsentAllow => 'Gbà láàyè';
+
+  @override
+  String get aiConsentSetting => 'Àwọn ẹ̀yà AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'A ń fi àwọn ìbéèrè rẹ ránṣẹ́ sí Anthropic (Claude) fún ìdáhùn. Nígbà tí ó bá wà ní pípa, áàpù yóò béèrè kí ìbéèrè AI tó kàn tó lọ, àkópọ̀ òwúrọ̀ aládàáṣe kò sì ní ṣiṣẹ́.';
+
+  @override
+  String get aiReport => 'Jábọ̀';
+
+  @override
+  String get aiReportTitle => 'Jábọ̀ ìdáhùn AI yìí';
+
+  @override
+  String get aiReportInaccurate => 'Kò tọ̀nà tàbí ó ń ṣini lọ́nà';
+
+  @override
+  String get aiReportHarmful => 'Ó ń bíni nínú tàbí ó léwu';
+
+  @override
+  String get aiReportOther => 'Nǹkan mìíràn';
+
+  @override
+  String get aiReportNoteHint => 'Kí ló burú? (kò pọn dandan)';
+
+  @override
+  String get aiReportPrivacy =>
+      'A máa gba ọ̀rọ̀ ìdáhùn yìí àti àkọsílẹ̀ rẹ — láìsí àkáǹtì rẹ — kí a lè ṣàyẹ̀wò rẹ̀.';
+
+  @override
+  String get aiReportSend => 'Fi ìjábọ̀ ránṣẹ́';
+
+  @override
+  String get aiReportThanks => 'O ṣé — a máa ṣàyẹ̀wò rẹ̀.';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

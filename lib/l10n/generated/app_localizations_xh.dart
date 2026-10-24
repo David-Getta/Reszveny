@@ -2950,6 +2950,78 @@ class AppLocalizationsXh extends AppLocalizations {
       'Sele unomrhumo nge-App Store okanye nge-Google Play. Ukutshintsha isicwangciso sakho, sebenzisa iisetingi zomrhumo zaloo venkile.';
 
   @override
+  String get paymentViaAppStore =>
+      'Uhlawuliswa nge-akhawunti yakho ye-Apple. Rhoxisa nanini na kwiisetingi zemirhumo ze-App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Uhlawuliswa nge-akhawunti yakho ye-Google Play. Rhoxisa nanini na kwiisetingi zemirhumo ze-Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Akukho mrhumo unokulawulwa apha. Umrhumo othengwe kwi-App Store ulawulwa kwiisetingi zakho ze-App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Akukho mrhumo unokulawulwa apha. Umrhumo othengwe kwi-Google Play ulawulwa kwiisetingi zakho ze-Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Iakhawunti yakho nayo yonke into egcinwe kwiseva yethu (i-imeyile, umlinganiselo, usetyenziso) iya kucinywa ngonaphakade, kwaye iintlalutyo ezingasetyenziswanga ziya kulahleka. Umrhumo we-App Store kufuneka urhoxiswe kwiisetingi zakho ze-App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Iakhawunti yakho nayo yonke into egcinwe kwiseva yethu (i-imeyile, umlinganiselo, usetyenziso) iya kucinywa ngonaphakade, kwaye iintlalutyo ezingasetyenziswanga ziya kulahleka. Umrhumo we-Google Play kufuneka urhoxiswe kwiisetingi zakho ze-Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Phambi kokuba usebenzise iimpawu ze-AI';
+
+  @override
+  String get aiConsentBody =>
+      'Ukuze ihlalutye izabelo, ifunde iifoto nemifanekiso yesikrini, iphendule nemibuzo yakho, i-WhatStock ithumela iinkcukacha ezifunekayo kwisicelo — ifoto okanye umfanekiso wesikrini, isabelo, umbuzo wakho kwaye, ukuba uyazisebenzisa, amanqaku akho neepozishini zakho — kwi-Anthropic, inkampani eqhuba imodeli ye-AI i-Claude. I-Anthropic izisebenzisa kuphela ukuphendula isicelo kwaye ayizisebenzisi ukuqeqesha i-AI yayo. Iinkcukacha zikuMgaqo-nkqubo Wabucala.';
+
+  @override
+  String get aiConsentLater => 'Hayi ngoku';
+
+  @override
+  String get aiConsentAllow => 'Vumela';
+
+  @override
+  String get aiConsentSetting => 'Iimpawu ze-AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Izicelo zakho zithunyelwa kwi-Anthropic (Claude) ukuze ziphendulwe. Xa kucinyiwe, i-app iyabuza phambi kwesicelo esilandelayo se-AI, kwaye isishwankathelo sakusasa esizenzekelayo asisebenzi.';
+
+  @override
+  String get aiReport => 'Xela';
+
+  @override
+  String get aiReportTitle => 'Xela le mpendulo ye-AI';
+
+  @override
+  String get aiReportInaccurate => 'Iphosakele okanye iyalahlekisa';
+
+  @override
+  String get aiReportHarmful => 'Iyakhubekisa okanye iyingozi';
+
+  @override
+  String get aiReportOther => 'Enye into';
+
+  @override
+  String get aiReportNoteHint => 'Yintoni engalunganga? (ayinyanzelekanga)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Sifumana umbhalo wale mpendulo kunye nenqaku lakho — ngaphandle kweakhawunti yakho — ukuze siyihlolisise.';
+
+  @override
+  String get aiReportSend => 'Thumela ingxelo';
+
+  @override
+  String get aiReportThanks => 'Enkosi — siza kuyihlolisisa.';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

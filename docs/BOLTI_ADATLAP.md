@@ -43,10 +43,14 @@ használati események és hibajelentések (hozzájárulással, személyhez nem 
 fájl-időbélyegek (C617.1, gyorsítótár és mentett fájlok). A beépülők (shared_preferences,
 path_provider stb.) a saját manifestjüket hozzák.
 
-**Tulajdonosi lépés (natív build itt nem készíthető):** Xcode-ban a Runner célhoz hozzá kell adni a
-fájlt (File → Add Files to "Runner"…, Target Membership: Runner), külön az iOS és a macOS
-projektben; utána az archívum „Privacy Report”-jában ellenőrizhető. Az App Store Connect
-„App Privacy” kérdőívét ugyanezekkel a válaszokkal kell kitölteni.
+A fájl mindkét Xcode-projektben a Runner cél erőforrása (`project.pbxproj`, a `store_compliance_test`
+őrzi). **Tulajdonosi lépés (natív build itt nem készíthető):** az archívum „Privacy Report”-jában
+ellenőrizhető; az App Store Connect „App Privacy” kérdőívét ugyanezekkel a válaszokkal kell kitölteni.
+
+Az AI-funkciók (elemzés, felismerés, kérdések) adatai az Anthropichoz (Claude) kerülnek: az app az első
+AI-kérés előtt egyszer engedélyt kér (App Store 5.1.2(i)), a Beállításokban visszavonható. Az App Privacy
+kérdőívben a fotók/képernyőképek, a kérdések és a portfólió „az app működéséhez” használt, nem követéshez
+kötött adat; az Anthropic adatfeldolgozó (nem harmadik fél, amellyel az app adatot megoszt).
 
 Az `Info.plist`-ekben `ITSAppUsesNonExemptEncryption = false` (csak szabványos HTTPS), így feltöltéskor
 nincs exportengedély-kérdés; a macOS sandbox jogosultságai közt a felhasználó által választott helyre
@@ -60,12 +64,13 @@ A Play Console-ban kitöltendő (nem kód); az Apple-manifesttel azonos válaszo
 |---|---|
 | Gyűjt vagy megoszt adatot? | Gyűjt, nem oszt meg harmadik féllel |
 | Titkosítva továbbítja? | Igen (HTTPS) |
-| Kérhető a törlés? | Igen, az appból (Beállítások → Fiók törlése) és a szerveren |
+| Kérhető a törlés? | Igen, az appból (Beállítások → Fiók törlése) és böngészőből: `<PUBLIC_URL>/account/delete` (ezt a címet kell megadni a Play Console „Fióktörlés URL” mezőjében) |
 | Személyes adat | E-mail cím – fiókos belépés, kötelező a fiókhoz, az app működéséhez |
 | Pénzügyi adat | Vásárlási előzmény – az előfizetés ellenőrzéséhez, az app működéséhez; egyéb pénzügyi adat (a szinkronizált portfólió) – csak fiókkal, az app működéséhez |
 | Egyéb felhasználói tartalom | A szinkronizált kedvencek, riasztások és jegyzetek – csak fiókkal, az app működéséhez, kérésre törölhető |
 | Alkalmazás-tevékenység | Használati események – választható (hozzájárulás a kezdőképernyőn), elemzéshez, személyhez nem köthető; az elemzések naplója (melyik részvény, mikor) – a fiókhoz kötve, a keret elszámolásához |
 | Alkalmazás-információ | Hibajelentések – választható, kitakarva, személyhez nem köthető |
+| AI-válasz jelentése | Választható: a jelentett válasz szövege, az ok és a megjegyzés – fiók nélkül, 180 napig, a tartalom átnézéséhez |
 | Nem gyűjt | hely, névjegyek, fotók (a kép csak a felismeréshez megy át, nem tárolódik), eszközazonosítók |
 
 A portfólió, a kedvencek, a riasztások és a jegyzetek a készüléken vannak; fiókkal a felhasználó

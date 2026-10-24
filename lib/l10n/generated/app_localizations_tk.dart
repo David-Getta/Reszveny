@@ -2937,6 +2937,78 @@ class AppLocalizationsTk extends AppLocalizations {
       'Siziň App Store ýa-da Google Play arkaly abunaňyz eýýäm bar. Tarifiňizi üýtgetmek üçin şol dükanyň abuna sazlamalaryny ulanyň.';
 
   @override
+  String get paymentViaAppStore =>
+      'Töleg Apple hasabyňyz arkaly alynýar. Islän wagtyňyz App Store abuna sazlamalarynda ýatyryp bilersiňiz.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Töleg Google Play hasabyňyz arkaly alynýar. Islän wagtyňyz Google Play abuna sazlamalarynda ýatyryp bilersiňiz.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Bu ýerde dolandyrmak üçin abuna ýok. App Store arkaly satyn alnan abuna App Store sazlamalaryňyzda dolandyrylýar.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Bu ýerde dolandyrmak üçin abuna ýok. Google Play arkaly satyn alnan abuna Google Play sazlamalaryňyzda dolandyrylýar.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Hasabyňyz we serwerimizde saklanýan ähli zat (e-poçta, limit, ulanyş) hemişelik pozular, ulanylmadyk seljermeler bolsa ýiter. App Store abunasyny App Store sazlamalaryňyzda ýatyrmaly.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Hasabyňyz we serwerimizde saklanýan ähli zat (e-poçta, limit, ulanyş) hemişelik pozular, ulanylmadyk seljermeler bolsa ýiter. Google Play abunasyny Google Play sazlamalaryňyzda ýatyrmaly.';
+
+  @override
+  String get aiConsentTitle => 'AI funksiýalaryny ulanmazdan öň';
+
+  @override
+  String get aiConsentBody =>
+      'Paýnamalary seljermek, suratlary we ekran suratlaryny okamak hem-de soraglaryňyza jogap bermek üçin WhatStock haýyş üçin zerur maglumatlary — suraty ýa-da ekran suratyny, paýnamany, soragyňyzy we, ulanýan bolsaňyz, bellikleriňizi hem-de pozisiýalaryňyzy — Claude AI modelini dolandyrýan Anthropic kompaniýasyna iberýär. Anthropic olary diňe haýyşa jogap bermek üçin işleýär we öz AI-syny öwretmek üçin ulanmaýar. Jikme-jiklikler gizlinlik syýasatynda berilýär.';
+
+  @override
+  String get aiConsentLater => 'Häzir däl';
+
+  @override
+  String get aiConsentAllow => 'Rugsat ber';
+
+  @override
+  String get aiConsentSetting => 'AI funksiýalary';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Haýyşlaryňyz jogap bermek üçin Anthropic (Claude) kompaniýasyna iberilýär. Öçürilen ýagdaýynda programma indiki AI haýyşyndan öň sorar, awtomatik ertirki jemleme bolsa düzülmez.';
+
+  @override
+  String get aiReport => 'Habar ber';
+
+  @override
+  String get aiReportTitle => 'Bu AI jogabyny habar ber';
+
+  @override
+  String get aiReportInaccurate => 'Nädogry ýa-da ýalňyşdyryjy';
+
+  @override
+  String get aiReportHarmful => 'Kemsidiji ýa-da zyýanly';
+
+  @override
+  String get aiReportOther => 'Başga bir zat';
+
+  @override
+  String get aiReportNoteHint => 'Näme nädogry? (hökmany däl)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Barlap bilmegimiz üçin bu jogabyň tekstini we belligiňizi — hasabyňyz bolmazdan — alýarys.';
+
+  @override
+  String get aiReportSend => 'Habar iber';
+
+  @override
+  String get aiReportThanks => 'Sag boluň — biz ony barlarys.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

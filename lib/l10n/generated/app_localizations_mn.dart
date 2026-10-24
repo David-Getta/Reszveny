@@ -2934,6 +2934,78 @@ class AppLocalizationsMn extends AppLocalizations {
       'Танд App Store эсвэл Google Play-ээр авсан захиалга аль хэдийн байна. Багцаа солихын тулд тухайн дэлгүүрийн захиалгын тохиргоог ашиглана уу.';
 
   @override
+  String get paymentViaAppStore =>
+      'Төлбөрийг таны Apple бүртгэлээр тооцно. App Store-ийн захиалгын тохиргооноос хүссэн үедээ цуцлах боломжтой.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Төлбөрийг таны Google Play бүртгэлээр тооцно. Google Play-н захиалгын тохиргооноос хүссэн үедээ цуцлах боломжтой.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Энд удирдах захиалга алга. App Store-оос авсан захиалгыг App Store-ийн тохиргооноос удирдана.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Энд удирдах захиалга алга. Google Play-ээс авсан захиалгыг Google Play-н тохиргооноос удирдана.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Таны бүртгэл болон манай сервер дээр хадгалагдсан бүх зүйл (имэйл, эрх, хэрэглээ) бүрмөсөн устах бөгөөд ашиглаагүй шинжилгээ алга болно. App Store-ийн захиалгыг App Store-ийн тохиргооноос цуцлах шаардлагатай.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Таны бүртгэл болон манай сервер дээр хадгалагдсан бүх зүйл (имэйл, эрх, хэрэглээ) бүрмөсөн устах бөгөөд ашиглаагүй шинжилгээ алга болно. Google Play-н захиалгыг Google Play-н тохиргооноос цуцлах шаардлагатай.';
+
+  @override
+  String get aiConsentTitle => 'AI функцуудыг ашиглахаас өмнө';
+
+  @override
+  String get aiConsentBody =>
+      'Хувьцаанд шинжилгээ хийх, зураг болон дэлгэцийн зургийг унших, таны асуултад хариулахын тулд WhatStock хүсэлтэд шаардлагатай өгөгдлийг — зураг эсвэл дэлгэцийн зураг, хувьцаа, таны асуулт болон ашигладаг бол таны тэмдэглэл, эзэмшлийг — Claude AI загварыг ажиллуулдаг Anthropic руу илгээдэг. Anthropic үүнийг зөвхөн хүсэлтэд хариулахад боловсруулж, өөрийн AI-г сургахад ашигладаггүй. Дэлгэрэнгүйг нууцлалын бодлогоос үзнэ үү.';
+
+  @override
+  String get aiConsentLater => 'Одоо биш';
+
+  @override
+  String get aiConsentAllow => 'Зөвшөөрөх';
+
+  @override
+  String get aiConsentSetting => 'AI функцууд';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Таны хүсэлтийг хариулахаар Anthropic (Claude) руу илгээнэ. Унтраасан үед дараагийн AI хүсэлтийн өмнө апп асууна, өглөөний автомат тойм гарахгүй.';
+
+  @override
+  String get aiReport => 'Мэдээлэх';
+
+  @override
+  String get aiReportTitle => 'Энэ AI хариултыг мэдээлэх';
+
+  @override
+  String get aiReportInaccurate => 'Буруу эсвэл төөрөгдүүлэхүйц';
+
+  @override
+  String get aiReportHarmful => 'Доромжилсон эсвэл хор хөнөөлтэй';
+
+  @override
+  String get aiReportOther => 'Өөр зүйл';
+
+  @override
+  String get aiReportNoteHint => 'Юу нь буруу байна? (заавал биш)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Бид шалгахын тулд энэ хариултын текст болон таны тэмдэглэлийг — таны бүртгэлгүйгээр — хүлээн авна.';
+
+  @override
+  String get aiReportSend => 'Мэдээлэл илгээх';
+
+  @override
+  String get aiReportThanks => 'Баярлалаа — бид шалгана.';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

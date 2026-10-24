@@ -2979,6 +2979,78 @@ class AppLocalizationsHr extends AppLocalizations {
       'Već imate pretplatu putem App Storea ili Google Playa. Za promjenu plana koristite postavke pretplate u toj trgovini.';
 
   @override
+  String get paymentViaAppStore =>
+      'Naplaćuje se putem vašeg Apple računa. Otkažite u bilo kojem trenutku u postavkama pretplata u App Storeu.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Naplaćuje se putem vašeg Google Play računa. Otkažite u bilo kojem trenutku u postavkama pretplata na Google Playu.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Ovdje nema pretplate kojom se može upravljati. Pretplatom kupljenom u App Storeu upravlja se u vašim postavkama App Storea.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Ovdje nema pretplate kojom se može upravljati. Pretplatom kupljenom na Google Playu upravlja se u vašim postavkama Google Playa.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Vaš račun i sve što čuvamo na poslužitelju (e-pošta, limit, korištenje) bit će trajno izbrisani, a neiskorištene analize propadaju. Pretplatu putem App Storea morate otkazati u postavkama App Storea.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Vaš račun i sve što čuvamo na poslužitelju (e-pošta, limit, korištenje) bit će trajno izbrisani, a neiskorištene analize propadaju. Pretplatu putem Google Playa morate otkazati u postavkama Google Playa.';
+
+  @override
+  String get aiConsentTitle => 'Prije korištenja AI značajki';
+
+  @override
+  String get aiConsentBody =>
+      'Kako bi analizirao dionice, čitao fotografije i snimke zaslona te odgovarao na vaša pitanja, WhatStock šalje podatke potrebne za zahtjev – fotografiju ili snimku zaslona, dionicu, vaše pitanje i, ako ih koristite, vaše bilješke i pozicije – tvrtki Anthropic, koja upravlja AI modelom Claude. Anthropic ih obrađuje samo kako bi odgovorio na zahtjev i ne koristi ih za treniranje svojih AI modela. Pojedinosti su u pravilima privatnosti.';
+
+  @override
+  String get aiConsentLater => 'Ne sada';
+
+  @override
+  String get aiConsentAllow => 'Dopusti';
+
+  @override
+  String get aiConsentSetting => 'AI značajke';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Vaši se zahtjevi šalju tvrtki Anthropic (Claude) radi odgovora. Kad je isključeno, aplikacija pita prije sljedećeg AI zahtjeva, a automatski jutarnji sažetak se ne izrađuje.';
+
+  @override
+  String get aiReport => 'Prijavi';
+
+  @override
+  String get aiReportTitle => 'Prijavi ovaj AI odgovor';
+
+  @override
+  String get aiReportInaccurate => 'Pogrešno ili obmanjujuće';
+
+  @override
+  String get aiReportHarmful => 'Uvredljivo ili štetno';
+
+  @override
+  String get aiReportOther => 'Nešto drugo';
+
+  @override
+  String get aiReportNoteHint => 'Što nije u redu? (neobavezno)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Primamo tekst ovog odgovora i vašu bilješku – bez vašeg računa – kako bismo ga pregledali.';
+
+  @override
+  String get aiReportSend => 'Pošalji prijavu';
+
+  @override
+  String get aiReportThanks => 'Hvala – pregledat ćemo ga.';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

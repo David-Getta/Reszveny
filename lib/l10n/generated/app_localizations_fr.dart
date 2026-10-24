@@ -2950,6 +2950,78 @@ class AppLocalizationsFr extends AppLocalizations {
       'Vous avez déjà un abonnement via l’App Store ou Google Play. Pour changer de forfait, utilisez les réglages d’abonnement de cette boutique.';
 
   @override
+  String get paymentViaAppStore =>
+      'Facturé via votre compte Apple. Résiliable à tout moment dans les réglages d’abonnement de l’App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Facturé via votre compte Google Play. Résiliable à tout moment dans les réglages d’abonnement de Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Il n’y a aucun abonnement à gérer ici. Un abonnement souscrit sur l’App Store se gère dans les réglages de l’App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Il n’y a aucun abonnement à gérer ici. Un abonnement souscrit sur Google Play se gère dans les réglages de Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Votre compte et tout ce qui est stocké sur notre serveur (e-mail, quota, utilisation) seront définitivement supprimés ; les analyses non utilisées sont perdues. Un abonnement App Store doit être résilié dans les réglages de l’App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Votre compte et tout ce qui est stocké sur notre serveur (e-mail, quota, utilisation) seront définitivement supprimés ; les analyses non utilisées sont perdues. Un abonnement Google Play doit être résilié dans les réglages de Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Avant d’utiliser les fonctions d’IA';
+
+  @override
+  String get aiConsentBody =>
+      'Pour analyser des actions, lire des photos et des captures d’écran et répondre à vos questions, WhatStock envoie les données nécessaires à la requête — la photo ou la capture d’écran, l’action, votre question et, si vous les utilisez, vos notes et vos positions — à Anthropic, la société qui exploite le modèle d’IA Claude. Anthropic les traite uniquement pour répondre à la requête et ne les utilise pas pour entraîner son IA. Plus de détails dans la politique de confidentialité.';
+
+  @override
+  String get aiConsentLater => 'Pas maintenant';
+
+  @override
+  String get aiConsentAllow => 'Autoriser';
+
+  @override
+  String get aiConsentSetting => 'Fonctions d’IA';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Vos requêtes sont envoyées à Anthropic (Claude) pour obtenir une réponse. Si l’option est désactivée, l’app vous demande avant la prochaine requête d’IA, et le résumé automatique du matin n’est pas généré.';
+
+  @override
+  String get aiReport => 'Signaler';
+
+  @override
+  String get aiReportTitle => 'Signaler cette réponse de l’IA';
+
+  @override
+  String get aiReportInaccurate => 'Fausse ou trompeuse';
+
+  @override
+  String get aiReportHarmful => 'Offensante ou dangereuse';
+
+  @override
+  String get aiReportOther => 'Autre chose';
+
+  @override
+  String get aiReportNoteHint => 'Quel est le problème ? (facultatif)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Nous recevons le texte de cette réponse et votre note — sans votre compte — afin de pouvoir l’examiner.';
+
+  @override
+  String get aiReportSend => 'Envoyer le signalement';
+
+  @override
+  String get aiReportThanks => 'Merci — nous allons l’examiner.';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

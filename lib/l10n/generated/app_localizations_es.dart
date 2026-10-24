@@ -2944,6 +2944,78 @@ class AppLocalizationsEs extends AppLocalizations {
       'Ya tienes una suscripción a través de App Store o Google Play. Para cambiar de plan, usa los ajustes de suscripción de esa tienda.';
 
   @override
+  String get paymentViaAppStore =>
+      'Se factura a través de tu cuenta de Apple. Cancela cuando quieras en los ajustes de suscripciones de App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Se factura a través de tu cuenta de Google Play. Cancela cuando quieras en los ajustes de suscripciones de Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Aquí no hay ninguna suscripción que gestionar. Una suscripción comprada en App Store se gestiona en los ajustes de App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Aquí no hay ninguna suscripción que gestionar. Una suscripción comprada en Google Play se gestiona en los ajustes de Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Tu cuenta y todo lo guardado en nuestro servidor (correo, cupo, uso) se eliminarán para siempre, y los análisis no usados se pierden. Una suscripción de App Store debes cancelarla en los ajustes de App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Tu cuenta y todo lo guardado en nuestro servidor (correo, cupo, uso) se eliminarán para siempre, y los análisis no usados se pierden. Una suscripción de Google Play debes cancelarla en los ajustes de Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Antes de usar las funciones de IA';
+
+  @override
+  String get aiConsentBody =>
+      'Para analizar acciones, leer fotos y capturas de pantalla y responder a tus preguntas, WhatStock envía los datos necesarios para la solicitud —la foto o la captura, la acción, tu pregunta y, si los usas, tus notas y posiciones— a Anthropic, la empresa que gestiona el modelo de IA Claude. Anthropic los trata solo para responder a la solicitud y no los usa para entrenar su IA. Tienes los detalles en la política de privacidad.';
+
+  @override
+  String get aiConsentLater => 'Ahora no';
+
+  @override
+  String get aiConsentAllow => 'Permitir';
+
+  @override
+  String get aiConsentSetting => 'Funciones de IA';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Tus solicitudes se envían a Anthropic (Claude) para responderlas. Si está desactivado, la app te pregunta antes de la siguiente solicitud de IA y el resumen automático de la mañana no se genera.';
+
+  @override
+  String get aiReport => 'Denunciar';
+
+  @override
+  String get aiReportTitle => 'Denunciar esta respuesta de la IA';
+
+  @override
+  String get aiReportInaccurate => 'Incorrecta o engañosa';
+
+  @override
+  String get aiReportHarmful => 'Ofensiva o dañina';
+
+  @override
+  String get aiReportOther => 'Otro motivo';
+
+  @override
+  String get aiReportNoteHint => '¿Qué falla? (opcional)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Recibimos el texto de esta respuesta y tu nota —sin tu cuenta— para poder revisarla.';
+
+  @override
+  String get aiReportSend => 'Enviar denuncia';
+
+  @override
+  String get aiReportThanks => 'Gracias, la revisaremos.';
+
+  @override
   String get portfolioGoalSet => 'Fijar un objetivo';
 
   @override

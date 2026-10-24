@@ -2945,6 +2945,78 @@ class AppLocalizationsFil extends AppLocalizations {
       'May subscription ka na sa App Store o Google Play. Para palitan ang iyong plan, gamitin ang mga setting ng subscription ng store na iyon.';
 
   @override
+  String get paymentViaAppStore =>
+      'Sinisingil sa iyong Apple account. Puwedeng kanselahin anumang oras sa mga setting ng subscription sa App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Sinisingil sa iyong Google Play account. Puwedeng kanselahin anumang oras sa mga setting ng subscription sa Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Walang subscription na mapapamahalaan dito. Ang subscription na binili sa App Store ay pinamamahalaan sa iyong settings ng App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Walang subscription na mapapamahalaan dito. Ang subscription na binili sa Google Play ay pinamamahalaan sa iyong settings ng Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Permanenteng mabubura ang iyong account at lahat ng nakaimbak sa aming server (email, quota, paggamit), at mawawala ang mga hindi nagamit na pagsusuri. Ang subscription sa App Store ay kailangang kanselahin sa iyong settings ng App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Permanenteng mabubura ang iyong account at lahat ng nakaimbak sa aming server (email, quota, paggamit), at mawawala ang mga hindi nagamit na pagsusuri. Ang subscription sa Google Play ay kailangang kanselahin sa iyong settings ng Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Bago mo gamitin ang mga feature ng AI';
+
+  @override
+  String get aiConsentBody =>
+      'Para masuri ang mga stock, mabasa ang mga larawan at screenshot, at masagot ang iyong mga tanong, ipinapadala ng WhatStock ang datos na kailangan para sa kahilingan — ang larawan o screenshot, ang stock, ang iyong tanong at, kung ginagamit mo ang mga ito, ang iyong mga tala at posisyon — sa Anthropic, ang kumpanyang nagpapatakbo ng AI model na Claude. Pinoproseso ito ng Anthropic para lang masagot ang kahilingan at hindi ito ginagamit para sanayin ang AI nito. Nasa Patakaran sa Privacy ang mga detalye.';
+
+  @override
+  String get aiConsentLater => 'Hindi muna';
+
+  @override
+  String get aiConsentAllow => 'Payagan';
+
+  @override
+  String get aiConsentSetting => 'Mga feature ng AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Ipinapadala ang iyong mga kahilingan sa Anthropic (Claude) para masagot. Kapag naka-off, magtatanong muna ang app bago ang susunod na kahilingan sa AI, at hindi gagawin ang awtomatikong buod tuwing umaga.';
+
+  @override
+  String get aiReport => 'I-report';
+
+  @override
+  String get aiReportTitle => 'I-report ang sagot na ito ng AI';
+
+  @override
+  String get aiReportInaccurate => 'Mali o nakaliligaw';
+
+  @override
+  String get aiReportHarmful => 'Nakakasakit o mapanganib';
+
+  @override
+  String get aiReportOther => 'Iba pa';
+
+  @override
+  String get aiReportNoteHint => 'Ano ang mali? (opsyonal)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Natatanggap namin ang teksto ng sagot na ito at ang iyong tala — nang wala ang iyong account — para masuri namin ito.';
+
+  @override
+  String get aiReportSend => 'Ipadala ang report';
+
+  @override
+  String get aiReportThanks => 'Salamat — susuriin namin ito.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

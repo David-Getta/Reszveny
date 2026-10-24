@@ -2928,6 +2928,78 @@ class AppLocalizationsIg extends AppLocalizations {
       'Ị nweelarị ndenye aha site na App Store ma ọ bụ Google Play. Iji gbanwee atụmatụ gị, jiri ntọala ndenye aha nke ụlọ ahịa ahụ.';
 
   @override
+  String get paymentViaAppStore =>
+      'A na-akwụ ụgwọ site n\'akaụntụ Apple gị. Kagbuo n\'oge ọ bụla na ntọala ndenye aha App Store gị.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'A na-akwụ ụgwọ site n\'akaụntụ Google Play gị. Kagbuo n\'oge ọ bụla na ntọala ndenye aha Google Play gị.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Enweghị ndenye aha a ga-ajikwa ebe a. Ndenye aha e zụrụ na App Store ka a na-ajikwa na ntọala App Store gị.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Enweghị ndenye aha a ga-ajikwa ebe a. Ndenye aha e zụrụ na Google Play ka a na-ajikwa na ntọala Google Play gị.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'A ga-ehichapụ akaụntụ gị na ihe niile echekwara na sava anyị (email, oke, ojiji) kpamkpam, nyocha ndị ị jibeghị ga-efukwa. Ndenye aha App Store ka a ga-akagbu na ntọala App Store gị.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'A ga-ehichapụ akaụntụ gị na ihe niile echekwara na sava anyị (email, oke, ojiji) kpamkpam, nyocha ndị ị jibeghị ga-efukwa. Ndenye aha Google Play ka a ga-akagbu na ntọala Google Play gị.';
+
+  @override
+  String get aiConsentTitle => 'Tupu i jiri atụmatụ AI';
+
+  @override
+  String get aiConsentBody =>
+      'Iji nyochaa ngwa ahịa, gụọ foto na foto ihuenyo, ma zaa ajụjụ gị, WhatStock na-eziga data achọrọ maka arịrịọ ahụ — foto ma ọ bụ foto ihuenyo ahụ, ngwa ahịa ahụ, ajụjụ gị na, ọ bụrụ na i ji ha, ndetu gị na ihe ndị ị nwere — na Anthropic, ụlọ ọrụ na-arụ ụdị AI Claude. Anthropic na-edozi ya naanị iji zaa arịrịọ ahụ, ọ naghịkwa eji ya azụ AI ya. Nkọwa dị na Iwu Nzuzo.';
+
+  @override
+  String get aiConsentLater => 'Ọ bụghị ugbu a';
+
+  @override
+  String get aiConsentAllow => 'Kwe';
+
+  @override
+  String get aiConsentSetting => 'Atụmatụ AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'A na-eziga arịrịọ gị na Anthropic (Claude) ka a zaa ha. Mgbe agbanyụrụ ya, ngwa ahụ na-ajụ tupu arịrịọ AI ọzọ, a naghịkwa emepụta nchịkọta ụtụtụ akpaaka.';
+
+  @override
+  String get aiReport => 'Kọọ';
+
+  @override
+  String get aiReportTitle => 'Kọọ maka azịza AI a';
+
+  @override
+  String get aiReportInaccurate => 'Ezighi ezi ma ọ bụ na-eduhie';
+
+  @override
+  String get aiReportHarmful => 'Na-akparị mmadụ ma ọ bụ na-emerụ ahụ';
+
+  @override
+  String get aiReportOther => 'Ihe ọzọ';
+
+  @override
+  String get aiReportNoteHint => 'Gịnị dị njọ? (nhọrọ)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Anyị na-anata ederede azịza a na ndetu gị — na-enweghị akaụntụ gị — ka anyị nwee ike nyochaa ya.';
+
+  @override
+  String get aiReportSend => 'Ziga akụkọ';
+
+  @override
+  String get aiReportThanks => 'Daalụ — anyị ga-enyocha ya.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

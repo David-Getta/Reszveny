@@ -2958,6 +2958,78 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Adda payen ti subscription-mo babaen ti App Store wenno Google Play. Tapno sukatan ti planmo, usaren ti setting ti subscription iti dayta a store.';
 
   @override
+  String get paymentViaAppStore =>
+      'Masingir babaen ti Apple accountmo. Mabalin nga ikansela iti aniaman nga oras iti setting ti subscription iti App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Masingir babaen ti Google Play accountmo. Mabalin nga ikansela iti aniaman nga oras iti setting ti subscription iti Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Awan ti subscription a maimaneho ditoy. Ti subscription a nagatang iti App Store ket maimaneho iti setting ti App Store-mo.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Awan ti subscription a maimaneho ditoy. Ti subscription a nagatang iti Google Play ket maimaneho iti setting ti Google Play-mo.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Permanente a mapunas ti accountmo ken amin a naidulin iti servermi (email, alokasion, panangusar), ket mapukaw dagiti saan a nausar a panangsukimat. Ti subscription iti App Store ket masapul nga ikansela iti setting ti App Store-mo.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Permanente a mapunas ti accountmo ken amin a naidulin iti servermi (email, alokasion, panangusar), ket mapukaw dagiti saan a nausar a panangsukimat. Ti subscription iti Google Play ket masapul nga ikansela iti setting ti Google Play-mo.';
+
+  @override
+  String get aiConsentTitle => 'Sakbay nga usarem dagiti feature ti AI';
+
+  @override
+  String get aiConsentBody =>
+      'Tapno masukimat dagiti stock, mabasa dagiti ladawan ken screenshot, ken masungbatan dagiti saludsodmo, ipatulod ti WhatStock dagiti datos a kasapulan ti kiddaw — ti ladawan wenno screenshot, ti stock, ti saludsodmo ken, no usarem dagitoy, dagiti notam ken posisionmo — iti Anthropic, ti kompania a mangpatartaray iti AI model a Claude. Iproseso ti Anthropic dagitoy tapno laeng masungbatan ti kiddaw ket saanna nga usaren tapno sanayen ti AI-na. Adda dagiti detalye iti Annuroten iti Privacy.';
+
+  @override
+  String get aiConsentLater => 'Saan pay ita';
+
+  @override
+  String get aiConsentAllow => 'Ipalubos';
+
+  @override
+  String get aiConsentSetting => 'Dagiti feature ti AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Maipatulod dagiti kiddawmo iti Anthropic (Claude) tapno masungbatan. No naka-off, agsaludsod ti app sakbay ti sumaruno a kiddaw iti AI, ket saan a maaramid ti automatiko a pakabuklan iti bigat.';
+
+  @override
+  String get aiReport => 'I-report';
+
+  @override
+  String get aiReportTitle => 'I-report daytoy a sungbat ti AI';
+
+  @override
+  String get aiReportInaccurate => 'Biddut wenno makaallilaw';
+
+  @override
+  String get aiReportHarmful => 'Makasair wenno makadangran';
+
+  @override
+  String get aiReportOther => 'Sabali pay';
+
+  @override
+  String get aiReportNoteHint => 'Ania ti biddut? (opsional)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Awatenmi ti teksto daytoy a sungbat ken ti notam — nga awan ti accountmo — tapno marepasomi.';
+
+  @override
+  String get aiReportSend => 'Ipatulod ti report';
+
+  @override
+  String get aiReportThanks => 'Agyamankami — repasuenmi daytoy.';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

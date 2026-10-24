@@ -2894,6 +2894,78 @@ class AppLocalizationsTi extends AppLocalizations {
       'ድሮ ብመንገዲ App Store ወይ Google Play ምዝገባ ኣለኩም። መደብኩም ንምቕያር፡ ናይቲ መኽዘን ቅጥዕታት ምዝገባ ተጠቐሙ።';
 
   @override
+  String get paymentViaAppStore =>
+      'ብሕሳብ Apple ኣቢሉ ይኽፈል። ኣብ ቅጥዕታት ምዝገባ App Store ኣብ ዝኾነ ግዜ ክትሰርዙ ትኽእሉ።';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'ብሕሳብ Google Play ኣቢሉ ይኽፈል። ኣብ ቅጥዕታት ምዝገባ Google Play ኣብ ዝኾነ ግዜ ክትሰርዙ ትኽእሉ።';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'ኣብዚ ዝመሓደር ምዝገባ የለን። ኣብ App Store ዝተዓደገ ምዝገባ ኣብ ናይ App Store ቅጥዕታትኩም ይመሓደር።';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'ኣብዚ ዝመሓደር ምዝገባ የለን። ኣብ Google Play ዝተዓደገ ምዝገባ ኣብ ናይ Google Play ቅጥዕታትኩም ይመሓደር።';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'ሕሳብኩምን ኣብ ሰርቨርና ዝተዓቀበ ኩሉን (ኢመይል፣ ወርሓዊ ብጽሒት፣ ኣጠቓቕማ) ንሓዋሩ ክስረዝ እዩ፣ ዘይተጠቐምኩምሎም ትንተናታት ድማ ክጠፍኡ እዮም። ምዝገባ App Store ኣብ ናይ App Store ቅጥዕታትኩም ክስረዝ ኣለዎ።';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'ሕሳብኩምን ኣብ ሰርቨርና ዝተዓቀበ ኩሉን (ኢመይል፣ ወርሓዊ ብጽሒት፣ ኣጠቓቕማ) ንሓዋሩ ክስረዝ እዩ፣ ዘይተጠቐምኩምሎም ትንተናታት ድማ ክጠፍኡ እዮም። ምዝገባ Google Play ኣብ ናይ Google Play ቅጥዕታትኩም ክስረዝ ኣለዎ።';
+
+  @override
+  String get aiConsentTitle => 'ባህርያት AI ቅድሚ ምጥቃምኩም';
+
+  @override
+  String get aiConsentBody =>
+      'ኣክስዮናት ንምትንታን፣ ስእልታትን ስእልታት ስክሪንን ንምንባብ፣ ንሕቶታትኩም ንምምላስን WhatStock ነቲ ሕቶ ዘድሊ ሓበሬታ — እቲ ስእሊ ወይ ስእሊ ስክሪን፣ እቲ ኣክስዮን፣ ሕቶኹም ከምኡውን እንተ ተጠቒምኩምሎም ማስታወሻታትኩምን ዋንነታትኩምን — ናብ Anthropic፣ ነቲ ሞዴል AI Claude ዘካይድ ኩባንያ፣ ይልእኽ። Anthropic ነዚ ነቲ ሕቶ ንምምላስ ጥራይ የመስርሖ፣ ንምስልጣን AI ናቱ ድማ ኣይጥቀመሉን። ዝርዝር ኣብ ፖሊሲ ብሕትውና ኣሎ።';
+
+  @override
+  String get aiConsentLater => 'ሕጂ ኣይኮነን';
+
+  @override
+  String get aiConsentAllow => 'ፍቐዱ';
+
+  @override
+  String get aiConsentSetting => 'ባህርያት AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'ሕቶታትኩም ንኽምለሱ ናብ Anthropic (Claude) ይለኣኹ። ምስ ዝጠፍእ፣ እቲ ኣፕ ቅድሚ ዝቕጽል ሕቶ AI ይሓትት፣ እቲ ኣውቶማቲክ ናይ ንግሆ ጽማቝ ድማ ኣይሰርሕን።';
+
+  @override
+  String get aiReport => 'ጸብጻብ ሃቡ';
+
+  @override
+  String get aiReportTitle => 'ብዛዕባ እዚ መልሲ AI ጸብጻብ ሃቡ';
+
+  @override
+  String get aiReportInaccurate => 'ጌጋ ወይ ዘጋግዝ';
+
+  @override
+  String get aiReportHarmful => 'ዘቖጥዕ ወይ ጎዳኢ';
+
+  @override
+  String get aiReportOther => 'ካልእ ነገር';
+
+  @override
+  String get aiReportNoteHint => 'እንታይ ጌጋ ኣሎ? (ግዴታ ኣይኮነን)';
+
+  @override
+  String get aiReportPrivacy =>
+      'ክንግምግሞ ምእንቲ ጽሑፍ እዚ መልስን ማስታወሻኹምን — ብዘይ ሕሳብኩም — ይበጽሓና።';
+
+  @override
+  String get aiReportSend => 'ጸብጻብ ስደዱ';
+
+  @override
+  String get aiReportThanks => 'የቐንየልና — ክንግምግሞ ኢና።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

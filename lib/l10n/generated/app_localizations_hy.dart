@@ -2946,6 +2946,78 @@ class AppLocalizationsHy extends AppLocalizations {
       'Դուք արդեն ունեք բաժանորդագրություն App Store-ի կամ Google Play-ի միջոցով։ Պլանը փոխելու համար օգտագործեք այդ խանութի բաժանորդագրության կարգավորումները։';
 
   @override
+  String get paymentViaAppStore =>
+      'Վճարումը կատարվում է ձեր Apple հաշվի միջոցով։ Կարող եք չեղարկել ցանկացած ժամանակ App Store-ի բաժանորդագրությունների կարգավորումներում։';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Վճարումը կատարվում է ձեր Google Play հաշվի միջոցով։ Կարող եք չեղարկել ցանկացած ժամանակ Google Play-ի բաժանորդագրությունների կարգավորումներում։';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Այստեղ կառավարելու բաժանորդագրություն չկա։ App Store-ում գնված բաժանորդագրությունը կառավարվում է App Store-ի կարգավորումներում։';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Այստեղ կառավարելու բաժանորդագրություն չկա։ Google Play-ում գնված բաժանորդագրությունը կառավարվում է Google Play-ի կարգավորումներում։';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Ձեր հաշիվը և մեր սերվերում պահվող ամեն ինչ (էլ. փոստ, սահմանաչափ, օգտագործում) ընդմիշտ կջնջվեն, իսկ չօգտագործված վերլուծությունները կկորչեն։ App Store-ի բաժանորդագրությունը պետք է չեղարկել App Store-ի կարգավորումներում։';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Ձեր հաշիվը և մեր սերվերում պահվող ամեն ինչ (էլ. փոստ, սահմանաչափ, օգտագործում) ընդմիշտ կջնջվեն, իսկ չօգտագործված վերլուծությունները կկորչեն։ Google Play-ի բաժանորդագրությունը պետք է չեղարկել Google Play-ի կարգավորումներում։';
+
+  @override
+  String get aiConsentTitle => 'Նախքան AI գործառույթներից օգտվելը';
+
+  @override
+  String get aiConsentBody =>
+      'Բաժնետոմսերը վերլուծելու, լուսանկարներն ու էկրանի նկարները կարդալու և ձեր հարցերին պատասխանելու համար WhatStock-ը հարցման համար անհրաժեշտ տվյալները՝ լուսանկարը կամ էկրանի նկարը, բաժնետոմսը, ձեր հարցը և, եթե օգտագործում եք, ձեր նշումներն ու դիրքերը, ուղարկում է Anthropic-ին՝ Claude AI մոդելը շահագործող ընկերությանը։ Anthropic-ը դրանք մշակում է միայն հարցմանը պատասխանելու համար և չի օգտագործում իր AI-ը վարժեցնելու համար։ Մանրամասները գաղտնիության քաղաքականությունում են։';
+
+  @override
+  String get aiConsentLater => 'Ոչ հիմա';
+
+  @override
+  String get aiConsentAllow => 'Թույլատրել';
+
+  @override
+  String get aiConsentSetting => 'AI գործառույթներ';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Ձեր հարցումներն ուղարկվում են Anthropic-ին (Claude)՝ պատասխանելու համար։ Երբ անջատված է, հավելվածը հարցնում է հաջորդ AI հարցումից առաջ, և առավոտյան ավտոմատ ամփոփումը չի պատրաստվում։';
+
+  @override
+  String get aiReport => 'Բողոքել';
+
+  @override
+  String get aiReportTitle => 'Բողոքել այս AI պատասխանի մասին';
+
+  @override
+  String get aiReportInaccurate => 'Սխալ կամ մոլորեցնող';
+
+  @override
+  String get aiReportHarmful => 'Վիրավորական կամ վնասակար';
+
+  @override
+  String get aiReportOther => 'Այլ բան';
+
+  @override
+  String get aiReportNoteHint => 'Ի՞նչն է սխալ (ոչ պարտադիր)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Մենք ստանում ենք այս պատասխանի տեքստը և ձեր նշումը՝ առանց ձեր հաշվի, որպեսզի կարողանանք ստուգել այն։';
+
+  @override
+  String get aiReportSend => 'Ուղարկել բողոքը';
+
+  @override
+  String get aiReportThanks => 'Շնորհակալություն, մենք կստուգենք։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

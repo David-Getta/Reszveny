@@ -2940,6 +2940,78 @@ class AppLocalizationsKu extends AppLocalizations {
       'Te jixwe abonetiyek bi rêya App Store an Google Play heye. Ji bo guhertina plana xwe, mîhengên abonetiyê yên wê firotgehê bi kar bîne.';
 
   @override
+  String get paymentViaAppStore =>
+      'Bi hesabê te yê Apple tê fatûrekirin. Her dem dikarî di mîhengên abonetiyê yên App Store de betal bikî.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Bi hesabê te yê Google Play tê fatûrekirin. Her dem dikarî di mîhengên abonetiyê yên Google Play de betal bikî.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Li vir ti abonetî tune ye ku were birêvebirin. Abonetiya ku ji App Store hatiye kirîn, di mîhengên te yên App Store de tê birêvebirin.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Li vir ti abonetî tune ye ku were birêvebirin. Abonetiya ku ji Google Play hatiye kirîn, di mîhengên te yên Google Play de tê birêvebirin.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Hesabê te û her tiştê li ser servera me tomarkirî (e-name, maf, bikaranîn) dê bi temamî were jêbirin, û analîzên ku nehatine bikaranîn winda dibin. Abonetiya App Store divê di mîhengên te yên App Store de were betalkirin.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Hesabê te û her tiştê li ser servera me tomarkirî (e-name, maf, bikaranîn) dê bi temamî were jêbirin, û analîzên ku nehatine bikaranîn winda dibin. Abonetiya Google Play divê di mîhengên te yên Google Play de were betalkirin.';
+
+  @override
+  String get aiConsentTitle => 'Berî ku tu taybetmendiyên AI bi kar bînî';
+
+  @override
+  String get aiConsentBody =>
+      'Ji bo analîzkirina pişkan, xwendina wêne û wêneyên ekranê, û bersivdana pirsên te, WhatStock daneyên ku ji bo daxwazê pêwîst in — wêne an wêneya ekranê, pişk, pirsa te û, heke tu wan bi kar tînî, notên te û pozîsyonên te — dişîne Anthropic, şirketa ku modela AI ya Claude dimeşîne. Anthropic wan tenê ji bo bersivdana daxwazê pêvajo dike û ji bo perwerdekirina AI-ya xwe bi kar nayîne. Hûrgulî di Polîtîkaya Nepeniyê de ne.';
+
+  @override
+  String get aiConsentLater => 'Ne niha';
+
+  @override
+  String get aiConsentAllow => 'Destûr bide';
+
+  @override
+  String get aiConsentSetting => 'Taybetmendiyên AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Daxwazên te ji bo bersivdanê ji Anthropic (Claude) re têne şandin. Dema girtî be, sepan berî daxwaza AI ya din dipirse, û kurteya sibê ya otomatîk nayê amadekirin.';
+
+  @override
+  String get aiReport => 'Rapor bike';
+
+  @override
+  String get aiReportTitle => 'Vê bersiva AI rapor bike';
+
+  @override
+  String get aiReportInaccurate => 'Şaş an jî xapînok';
+
+  @override
+  String get aiReportHarmful => 'Heqaretkar an jî zirardar';
+
+  @override
+  String get aiReportOther => 'Tiştekî din';
+
+  @override
+  String get aiReportNoteHint => 'Çi şaş e? (vebijarkî)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Em nivîsa vê bersivê û nota te — bêyî hesabê te — distînin da ku em lê binêrin.';
+
+  @override
+  String get aiReportSend => 'Raporê bişîne';
+
+  @override
+  String get aiReportThanks => 'Spas — em ê lê binêrin.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

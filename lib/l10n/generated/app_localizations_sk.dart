@@ -3004,6 +3004,78 @@ class AppLocalizationsSk extends AppLocalizations {
       'Už máte predplatné cez App Store alebo Google Play. Tarif zmeníte v nastaveniach predplatného v danom obchode.';
 
   @override
+  String get paymentViaAppStore =>
+      'Účtované cez váš účet Apple. Zrušiť môžete kedykoľvek v nastaveniach predplatného v App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Účtované cez váš účet Google Play. Zrušiť môžete kedykoľvek v nastaveniach predplatného v Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Nie je tu žiadne predplatné na spravovanie. Predplatné kúpené v App Store sa spravuje vo vašich nastaveniach App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Nie je tu žiadne predplatné na spravovanie. Predplatné kúpené v Google Play sa spravuje vo vašich nastaveniach Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Váš účet a všetko, čo máme uložené na serveri (e-mail, limit, využitie), bude natrvalo odstránené a nevyužité analýzy prepadnú. Predplatné z App Store treba zrušiť vo vašich nastaveniach App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Váš účet a všetko, čo máme uložené na serveri (e-mail, limit, využitie), bude natrvalo odstránené a nevyužité analýzy prepadnú. Predplatné z Google Play treba zrušiť vo vašich nastaveniach Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Skôr než začnete používať funkcie AI';
+
+  @override
+  String get aiConsentBody =>
+      'Na analýzu akcií, čítanie fotografií a snímok obrazovky a odpovede na vaše otázky odosiela WhatStock údaje potrebné pre požiadavku — fotografiu alebo snímku obrazovky, akciu, vašu otázku a, ak ich používate, vaše poznámky a pozície — spoločnosti Anthropic, ktorá prevádzkuje AI model Claude. Anthropic ich spracúva len na zodpovedanie požiadavky a nepoužíva ich na trénovanie svojej AI. Podrobnosti nájdete v zásadách ochrany osobných údajov.';
+
+  @override
+  String get aiConsentLater => 'Teraz nie';
+
+  @override
+  String get aiConsentAllow => 'Povoliť';
+
+  @override
+  String get aiConsentSetting => 'Funkcie AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Vaše požiadavky sa na zodpovedanie odosielajú spoločnosti Anthropic (Claude). Keď je to vypnuté, aplikácia sa pred ďalšou požiadavkou na AI opýta a automatické ranné zhrnutie sa nevytvára.';
+
+  @override
+  String get aiReport => 'Nahlásiť';
+
+  @override
+  String get aiReportTitle => 'Nahlásiť túto odpoveď AI';
+
+  @override
+  String get aiReportInaccurate => 'Nesprávne alebo zavádzajúce';
+
+  @override
+  String get aiReportHarmful => 'Urážlivé alebo škodlivé';
+
+  @override
+  String get aiReportOther => 'Niečo iné';
+
+  @override
+  String get aiReportNoteHint => 'Čo je zle? (voliteľné)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Dostaneme text tejto odpovede a vašu poznámku — bez prepojenia s vaším účtom — aby sme ju mohli posúdiť.';
+
+  @override
+  String get aiReportSend => 'Odoslať hlásenie';
+
+  @override
+  String get aiReportThanks => 'Ďakujeme — pozrieme sa na to.';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

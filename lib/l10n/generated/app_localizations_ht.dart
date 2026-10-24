@@ -2934,6 +2934,78 @@ class AppLocalizationsHt extends AppLocalizations {
       'Ou gen yon abònman deja atravè App Store oswa Google Play. Pou chanje plan ou, sèvi ak paramèt abònman magazen sa a.';
 
   @override
+  String get paymentViaAppStore =>
+      'Peye atravè kont Apple ou. Anile nenpòt ki lè nan paramèt abònman App Store ou.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Peye atravè kont Google Play ou. Anile nenpòt ki lè nan paramèt abònman Google Play ou.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Pa gen okenn abònman pou jere isit la. Yon abònman ou achte nan App Store, se nan paramèt App Store ou pou w jere l.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Pa gen okenn abònman pou jere isit la. Yon abònman ou achte nan Google Play, se nan paramèt Google Play ou pou w jere l.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Kont ou ak tout sa ki anrejistre sou sèvè nou an (imèl, kota, itilizasyon) ap efase nèt, epi analiz ou pa t itilize yo ap pèdi. Yon abònman App Store, se nan paramèt App Store ou pou w anile l.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Kont ou ak tout sa ki anrejistre sou sèvè nou an (imèl, kota, itilizasyon) ap efase nèt, epi analiz ou pa t itilize yo ap pèdi. Yon abònman Google Play, se nan paramèt Google Play ou pou w anile l.';
+
+  @override
+  String get aiConsentTitle => 'Anvan w itilize fonksyon AI yo';
+
+  @override
+  String get aiConsentBody =>
+      'Pou analize aksyon, li foto ak kapti ekran, epi reponn kesyon ou yo, WhatStock voye done demann lan bezwen — foto a oswa kapti ekran an, aksyon an, kesyon ou ak, si w itilize yo, nòt ou ak pozisyon ou yo — bay Anthropic, konpayi ki fè modèl AI Claude a mache. Anthropic trete yo sèlman pou reponn demann lan, e li pa sèvi ak yo pou antrene AI li. Detay yo nan politik konfidansyalite a.';
+
+  @override
+  String get aiConsentLater => 'Pa kounye a';
+
+  @override
+  String get aiConsentAllow => 'Pèmèt';
+
+  @override
+  String get aiConsentSetting => 'Fonksyon AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Demann ou yo voye bay Anthropic (Claude) pou yo reponn. Lè l etenn, aplikasyon an mande w anvan pwochen demann AI a, epi rezime otomatik chak maten an pa fèt.';
+
+  @override
+  String get aiReport => 'Siyale';
+
+  @override
+  String get aiReportTitle => 'Siyale repons AI sa a';
+
+  @override
+  String get aiReportInaccurate => 'Fo oswa twonpè';
+
+  @override
+  String get aiReportHarmful => 'Ofansan oswa danjere';
+
+  @override
+  String get aiReportOther => 'Yon lòt bagay';
+
+  @override
+  String get aiReportNoteHint => 'Kisa ki pa bon? (opsyonèl)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Nou resevwa tèks repons sa a ak nòt ou — san kont ou — pou nou ka egzamine l.';
+
+  @override
+  String get aiReportSend => 'Voye siyalman an';
+
+  @override
+  String get aiReportThanks => 'Mèsi — n ap egzamine l.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

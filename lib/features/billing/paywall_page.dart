@@ -106,7 +106,12 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
     final active = b is FallbackBillingService ? b.active : b;
     if (active.isDemo) return l10n.demoPurchaseNote;
     if (active is WebCheckoutBillingService) return l10n.paymentViaStripe;
-    return l10n.paymentViaStore;
+    // Csak a saját bolt neve (iOS-en a Google Play említése sem fér bele az App Store szabályaiba).
+    return switch (Theme.of(context).platform) {
+      TargetPlatform.iOS || TargetPlatform.macOS => l10n.paymentViaAppStore,
+      TargetPlatform.android => l10n.paymentViaGooglePlay,
+      _ => l10n.paymentViaStore,
+    };
   }
 
   String _planName(AppLocalizations l10n, PlanTier t) => switch (t) {
@@ -346,7 +351,15 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
     final messenger = ScaffoldMessenger.of(context);
     final billing = AppServices.of(context).billing;
     // Ha nincs mit megnyitni, a felhasználó ezt tudja meg (ne „ne történjen semmi”).
-    void elsewhere() => messenger.showSnackBar(SnackBar(content: Text(l10n.manageSubscriptionElsewhere)));
+    void elsewhere() => messenger.showSnackBar(
+      SnackBar(
+        content: Text(switch (theme.platform) {
+          TargetPlatform.iOS => l10n.manageSubscriptionAppStore,
+          TargetPlatform.android => l10n.manageSubscriptionGooglePlay,
+          _ => l10n.manageSubscriptionElsewhere,
+        }),
+      ),
+    );
     if (billing is WebCheckoutBillingService) {
       try {
         await billing.manage();

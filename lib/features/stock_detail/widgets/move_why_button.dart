@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../analysis/ai_consent.dart';
 import '../../../app_services.dart';
 import '../../../core/util/formatters.dart';
 import '../../../l10n/generated/app_localizations.dart';
@@ -38,7 +39,8 @@ Future<void> showMoveExplanation(
   required String symbol,
   required String name,
   required double changePercent,
-}) {
+}) async {
+  if (!await ensureAiConsent(context) || !context.mounted) return;
   final services = AppServices.of(context);
   final l10n = AppLocalizations.of(context);
   final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);

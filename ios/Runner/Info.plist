@@ -6,6 +6,8 @@
 	<string>The camera is used to photograph a stock certificate, screen or logo so the app can identify the stock.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Photos are used to identify a stock from an existing image.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>A shared analysis or portfolio image is saved to your photos only when you choose Save Image.</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>

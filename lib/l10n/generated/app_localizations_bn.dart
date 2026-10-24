@@ -2935,6 +2935,78 @@ class AppLocalizationsBn extends AppLocalizations {
       'App Store বা Google Play-এর মাধ্যমে আপনার ইতিমধ্যেই একটি সাবস্ক্রিপশন আছে। আপনার প্ল্যান পরিবর্তন করতে সেই স্টোরের সাবস্ক্রিপশন সেটিংস ব্যবহার করুন।';
 
   @override
+  String get paymentViaAppStore =>
+      'আপনার Apple অ্যাকাউন্টের মাধ্যমে বিল করা হয়। App Store-এর সাবস্ক্রিপশন সেটিংসে যেকোনো সময় বাতিল করতে পারেন।';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'আপনার Google Play অ্যাকাউন্টের মাধ্যমে বিল করা হয়। Google Play-এর সাবস্ক্রিপশন সেটিংসে যেকোনো সময় বাতিল করতে পারেন।';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'এখানে পরিচালনা করার মতো কোনো সাবস্ক্রিপশন নেই। App Store থেকে কেনা সাবস্ক্রিপশন আপনার App Store সেটিংসে পরিচালনা করা হয়।';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'এখানে পরিচালনা করার মতো কোনো সাবস্ক্রিপশন নেই। Google Play থেকে কেনা সাবস্ক্রিপশন আপনার Google Play সেটিংসে পরিচালনা করা হয়।';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'আপনার অ্যাকাউন্ট এবং আমাদের সার্ভারে রাখা সবকিছু (ইমেল, সীমা, ব্যবহার) স্থায়ীভাবে মুছে যাবে, এবং অব্যবহৃত বিশ্লেষণ হারিয়ে যাবে। App Store-এর সাবস্ক্রিপশন আপনার App Store সেটিংসে বাতিল করতে হবে।';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'আপনার অ্যাকাউন্ট এবং আমাদের সার্ভারে রাখা সবকিছু (ইমেল, সীমা, ব্যবহার) স্থায়ীভাবে মুছে যাবে, এবং অব্যবহৃত বিশ্লেষণ হারিয়ে যাবে। Google Play-এর সাবস্ক্রিপশন আপনার Google Play সেটিংসে বাতিল করতে হবে।';
+
+  @override
+  String get aiConsentTitle => 'AI ফিচার ব্যবহারের আগে';
+
+  @override
+  String get aiConsentBody =>
+      'শেয়ার বিশ্লেষণ, ছবি ও স্ক্রিনশট পড়া এবং আপনার প্রশ্নের উত্তর দেওয়ার জন্য WhatStock অনুরোধের জন্য প্রয়োজনীয় ডেটা — ছবি বা স্ক্রিনশট, শেয়ারটি, আপনার প্রশ্ন এবং আপনি ব্যবহার করলে আপনার নোট ও অবস্থান — Anthropic-এ পাঠায়, যারা Claude AI মডেল চালায়। Anthropic এটি শুধু অনুরোধের উত্তর দিতে প্রক্রিয়া করে এবং নিজের AI প্রশিক্ষণে ব্যবহার করে না। বিস্তারিত গোপনীয়তা নীতিতে আছে।';
+
+  @override
+  String get aiConsentLater => 'এখন নয়';
+
+  @override
+  String get aiConsentAllow => 'অনুমতি দিন';
+
+  @override
+  String get aiConsentSetting => 'AI ফিচার';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'উত্তরের জন্য আপনার অনুরোধ Anthropic (Claude)-এ পাঠানো হয়। বন্ধ থাকলে অ্যাপ পরের AI অনুরোধের আগে জিজ্ঞেস করে, এবং স্বয়ংক্রিয় সকালের সারাংশ তৈরি হয় না।';
+
+  @override
+  String get aiReport => 'রিপোর্ট করুন';
+
+  @override
+  String get aiReportTitle => 'এই AI উত্তরটি রিপোর্ট করুন';
+
+  @override
+  String get aiReportInaccurate => 'ভুল বা বিভ্রান্তিকর';
+
+  @override
+  String get aiReportHarmful => 'আপত্তিকর বা ক্ষতিকর';
+
+  @override
+  String get aiReportOther => 'অন্য কিছু';
+
+  @override
+  String get aiReportNoteHint => 'কী ভুল? (ঐচ্ছিক)';
+
+  @override
+  String get aiReportPrivacy =>
+      'পর্যালোচনার জন্য আমরা এই উত্তরের টেক্সট ও আপনার নোট পাই — আপনার অ্যাকাউন্ট ছাড়া।';
+
+  @override
+  String get aiReportSend => 'রিপোর্ট পাঠান';
+
+  @override
+  String get aiReportThanks => 'ধন্যবাদ — আমরা এটি পর্যালোচনা করব।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

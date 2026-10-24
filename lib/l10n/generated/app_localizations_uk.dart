@@ -3007,6 +3007,78 @@ class AppLocalizationsUk extends AppLocalizations {
       'У вас уже є підписка через App Store або Google Play. Щоб змінити тариф, скористайтеся налаштуваннями підписок у цьому магазині.';
 
   @override
+  String get paymentViaAppStore =>
+      'Оплата через ваш обліковий запис Apple. Скасувати можна будь-коли в налаштуваннях підписок App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Оплата через ваш обліковий запис Google Play. Скасувати можна будь-коли в налаштуваннях підписок Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Тут немає підписки для керування. Підпискою, придбаною в App Store, можна керувати в налаштуваннях App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Тут немає підписки для керування. Підпискою, придбаною в Google Play, можна керувати в налаштуваннях Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Ваш акаунт і все, що зберігається на нашому сервері (e-mail, ліміт, використання), буде видалено назавжди, а невикористані аналізи пропадуть. Підписку через App Store треба скасувати в налаштуваннях App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Ваш акаунт і все, що зберігається на нашому сервері (e-mail, ліміт, використання), буде видалено назавжди, а невикористані аналізи пропадуть. Підписку через Google Play треба скасувати в налаштуваннях Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Перш ніж використовувати функції ШІ';
+
+  @override
+  String get aiConsentBody =>
+      'Щоб аналізувати акції, розпізнавати фото й знімки екрана та відповідати на ваші запитання, WhatStock передає дані, потрібні для запиту, — фото чи знімок екрана, акцію, ваше запитання і, якщо ви ними користуєтеся, ваші нотатки та позиції — компанії Anthropic, яка керує ШІ-моделлю Claude. Anthropic обробляє їх лише для відповіді на запит і не використовує для навчання свого ШІ. Докладніше — у політиці конфіденційності.';
+
+  @override
+  String get aiConsentLater => 'Не зараз';
+
+  @override
+  String get aiConsentAllow => 'Дозволити';
+
+  @override
+  String get aiConsentSetting => 'Функції ШІ';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Ваші запити надсилаються до Anthropic (Claude), щоб отримати відповідь. Коли вимкнено, застосунок запитає перед наступним запитом до ШІ, а автоматичне ранкове зведення не створюється.';
+
+  @override
+  String get aiReport => 'Поскаржитися';
+
+  @override
+  String get aiReportTitle => 'Поскаржитися на відповідь ШІ';
+
+  @override
+  String get aiReportInaccurate => 'Неправильно або вводить в оману';
+
+  @override
+  String get aiReportHarmful => 'Образливо або шкідливо';
+
+  @override
+  String get aiReportOther => 'Інше';
+
+  @override
+  String get aiReportNoteHint => 'Що не так? (необов’язково)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Ми отримаємо текст цієї відповіді та ваш коментар — без прив’язки до акаунта, — щоб її перевірити.';
+
+  @override
+  String get aiReportSend => 'Надіслати скаргу';
+
+  @override
+  String get aiReportThanks => 'Дякуємо — ми перевіримо.';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

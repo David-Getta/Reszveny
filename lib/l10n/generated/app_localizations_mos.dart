@@ -2919,6 +2919,78 @@ class AppLocalizationsMos extends AppLocalizations {
       'F ra tara abonmã App Store bɩ Google Play pʋgẽ. Fo sã n dat n tek f forfɛ wã, tũnu ne raag kãngã abonmã seglgã.';
 
   @override
+  String get paymentViaAppStore =>
+      'Yaoobã yitame f Apple kõnte wã pʋgẽ. F tõe n bas wakat fãa, f App Store abonmã seglgã pʋgẽ.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Yaoobã yitame f Google Play kõnte wã pʋgẽ. F tõe n bas wakat fãa, f Google Play abonmã seglgã pʋgẽ.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Abonmã ka be ka n na n get a yell ye. Abonmã sẽn da App Store pʋgẽ, b getda a yell f App Store seglgã pʋgẽ.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Abonmã ka be ka n na n get a yell ye. Abonmã sẽn da Google Play pʋgẽ, b getda a yell f Google Play seglgã pʋgẽ.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'F kõnte la bũmb nins fãa sẽn be d sɛrvɛɛrã zugu (e-mail, vɛɛs sõor, f sẽn tʋmã) na n yẽes wakat fãa, la vɛɛse nins f sẽn pa tʋm ne-b na n bõna. App Store abonmã, f segd n bas-a f App Store seglgã pʋgẽ.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'F kõnte la bũmb nins fãa sẽn be d sɛrvɛɛrã zugu (e-mail, vɛɛs sõor, f sẽn tʋmã) na n yẽes wakat fãa, la vɛɛse nins f sẽn pa tʋm ne-b na n bõna. Google Play abonmã, f segd n bas-a f Google Play seglgã pʋgẽ.';
+
+  @override
+  String get aiConsentTitle => 'F sẽn na n tʋm ne AI tʋʋm-teedã taoore';
+
+  @override
+  String get aiConsentBody =>
+      'Sẽn na yɩl n vɛɛs aksiõ, n karem foto la ekrã foto, la n leok f sogsgã, WhatStock tʋmda kibay nins sẽn yaa tɩlɛ ne kosgã — foto wall ekrã fotã, aksiõ wã, f sogsgã la, f sã n tʋmd ne-ba, f gʋlsgã la aksiõ f sẽn tarã — n kõ Anthropic, sẽn tʋmd ne Claude AI modɛlã. Anthropic tʋmda ne-b n leok kosgã bal, la pa tʋmd ne-b n zãms a AI wã ye. Vẽnegr fãa be Solgr noyã pʋgẽ.';
+
+  @override
+  String get aiConsentLater => 'Pa masã ye';
+
+  @override
+  String get aiConsentAllow => 'Sak';
+
+  @override
+  String get aiConsentSetting => 'AI tʋʋm-teed';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'B tʋmda f kosgã n kõ Anthropic (Claude) t\'a leok-ba. Y sã n gɩdg-a, aplikasiõ wã na n sok-f n deng AI kos a to wã, la yibeoog kibar-kɩɩbs sẽn maand a menga wã kõn maan ye.';
+
+  @override
+  String get aiReport => 'Togs';
+
+  @override
+  String get aiReportTitle => 'Togs AI leokr kãngã';
+
+  @override
+  String get aiReportInaccurate => 'Pa sɩda wall belgdame';
+
+  @override
+  String get aiReportHarmful => 'Paoodame wall wẽnda';
+
+  @override
+  String get aiReportOther => 'Bũmb a to';
+
+  @override
+  String get aiReportNoteHint => 'Bõe n pa sõma? (f sã n data)';
+
+  @override
+  String get aiReportPrivacy =>
+      'D paamda leokrã gʋlsg la f gʋlsgã — f kõnte wã pa be ye — sẽn na yɩl tɩ d ges-a.';
+
+  @override
+  String get aiReportSend => 'Tʋm togsgã';
+
+  @override
+  String get aiReportThanks => 'Barka — d na n ges-a.';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

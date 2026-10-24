@@ -2927,6 +2927,78 @@ class AppLocalizationsMy extends AppLocalizations {
       'သင့်တွင် App Store သို့မဟုတ် Google Play မှတစ်ဆင့် စာရင်းသွင်းမှု ရှိပြီးသားဖြစ်သည်။ အစီအစဉ်ကို ပြောင်းရန် ထိုစတိုး၏ စာရင်းသွင်းမှု ဆက်တင်များကို အသုံးပြုပါ။';
 
   @override
+  String get paymentViaAppStore =>
+      'သင်၏ Apple အကောင့်မှတစ်ဆင့် ငွေတောင်းခံသည်။ App Store စာရင်းသွင်းမှု ဆက်တင်များတွင် အချိန်မရွေး ပယ်ဖျက်နိုင်သည်။';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'သင်၏ Google Play အကောင့်မှတစ်ဆင့် ငွေတောင်းခံသည်။ Google Play စာရင်းသွင်းမှု ဆက်တင်များတွင် အချိန်မရွေး ပယ်ဖျက်နိုင်သည်။';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'ဤနေရာတွင် စီမံရန် စာရင်းသွင်းမှု မရှိပါ။ App Store တွင် ဝယ်ထားသော စာရင်းသွင်းမှုကို သင်၏ App Store ဆက်တင်များတွင် စီမံပါသည်။';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'ဤနေရာတွင် စီမံရန် စာရင်းသွင်းမှု မရှိပါ။ Google Play တွင် ဝယ်ထားသော စာရင်းသွင်းမှုကို သင်၏ Google Play ဆက်တင်များတွင် စီမံပါသည်။';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'သင့်အကောင့်နှင့် ကျွန်ုပ်တို့ ဆာဗာတွင် သိမ်းထားသော အရာအားလုံး (အီးမေးလ်၊ ခွဲတမ်း၊ အသုံးပြုမှု) ကို အပြီးအပိုင် ဖျက်မည်ဖြစ်ပြီး မသုံးရသေးသော သုံးသပ်ချက်များ ဆုံးရှုံးမည်။ App Store စာရင်းသွင်းမှုကို သင်၏ App Store ဆက်တင်များတွင် ပယ်ဖျက်ရမည်။';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'သင့်အကောင့်နှင့် ကျွန်ုပ်တို့ ဆာဗာတွင် သိမ်းထားသော အရာအားလုံး (အီးမေးလ်၊ ခွဲတမ်း၊ အသုံးပြုမှု) ကို အပြီးအပိုင် ဖျက်မည်ဖြစ်ပြီး မသုံးရသေးသော သုံးသပ်ချက်များ ဆုံးရှုံးမည်။ Google Play စာရင်းသွင်းမှုကို သင်၏ Google Play ဆက်တင်များတွင် ပယ်ဖျက်ရမည်။';
+
+  @override
+  String get aiConsentTitle => 'AI လုပ်ဆောင်ချက်များကို မသုံးမီ';
+
+  @override
+  String get aiConsentBody =>
+      'ရှယ်ယာများကို သုံးသပ်ရန်၊ ဓာတ်ပုံနှင့် စခရင်ရှော့များကို ဖတ်ရန်နှင့် သင့်မေးခွန်းများကို ဖြေရန် WhatStock သည် တောင်းဆိုမှုအတွက် လိုအပ်သော ဒေတာ — ဓာတ်ပုံ သို့မဟုတ် စခရင်ရှော့၊ ရှယ်ယာ၊ သင့်မေးခွန်းနှင့် သင်အသုံးပြုပါက သင့်မှတ်စုများနှင့် ကိုင်ဆောင်ထားမှုများ — ကို Claude AI မော်ဒယ်ကို လည်ပတ်သော Anthropic ထံ ပေးပို့သည်။ Anthropic သည် ၎င်းကို တောင်းဆိုမှုကို ဖြေရန်အတွက်သာ စီမံဆောင်ရွက်ပြီး ၎င်း၏ AI ကို လေ့ကျင့်ရန် အသုံးမပြုပါ။ အသေးစိတ်ကို ကိုယ်ရေးအချက်အလက် မူဝါဒတွင် ကြည့်ပါ။';
+
+  @override
+  String get aiConsentLater => 'ယခု မလုပ်သေးပါ';
+
+  @override
+  String get aiConsentAllow => 'ခွင့်ပြုရန်';
+
+  @override
+  String get aiConsentSetting => 'AI လုပ်ဆောင်ချက်များ';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'သင့်တောင်းဆိုမှုများကို ဖြေကြားရန် Anthropic (Claude) ထံ ပေးပို့သည်။ ပိတ်ထားပါက နောက် AI တောင်းဆိုမှုမတိုင်မီ အက်ပ်က မေးမြန်းမည်ဖြစ်ပြီး နံနက်အလိုအလျောက် အကျဉ်းချုပ် မလုပ်ဆောင်ပါ။';
+
+  @override
+  String get aiReport => 'တိုင်ကြားရန်';
+
+  @override
+  String get aiReportTitle => 'ဤ AI အဖြေကို တိုင်ကြားရန်';
+
+  @override
+  String get aiReportInaccurate => 'မှားယွင်းသည် သို့မဟုတ် အထင်လွဲစေသည်';
+
+  @override
+  String get aiReportHarmful => 'စော်ကားသည် သို့မဟုတ် အန္တရာယ်ရှိသည်';
+
+  @override
+  String get aiReportOther => 'အခြားတစ်ခုခု';
+
+  @override
+  String get aiReportNoteHint => 'ဘာမှားနေသလဲ။ (ရွေးချယ်နိုင်သည်)';
+
+  @override
+  String get aiReportPrivacy =>
+      'ကျွန်ုပ်တို့ စစ်ဆေးနိုင်ရန် ဤအဖြေ၏ စာသားနှင့် သင့်မှတ်ချက်ကို — သင့်အကောင့်မပါဘဲ — လက်ခံရရှိပါသည်။';
+
+  @override
+  String get aiReportSend => 'တိုင်ကြားချက် ပို့ရန်';
+
+  @override
+  String get aiReportThanks => 'ကျေးဇူးတင်ပါသည် — ကျွန်ုပ်တို့ စစ်ဆေးပါမည်။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

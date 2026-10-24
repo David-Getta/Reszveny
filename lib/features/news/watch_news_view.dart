@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../analysis/ai_consent.dart';
 import '../../core/util/links.dart';
 import '../../app_services.dart';
 import '../../core/util/bidi.dart';
@@ -162,7 +163,8 @@ class WatchNewsTile extends StatelessWidget {
 }
 
 /// A hír magyarázata alsó lapon: a cím, alatta az AI néhány mondata.
-Future<void> showNewsExplanation(BuildContext context, WatchedNews news) {
+Future<void> showNewsExplanation(BuildContext context, WatchedNews news) async {
+  if (!await ensureAiConsent(context) || !context.mounted) return;
   final services = AppServices.of(context);
   final l10n = AppLocalizations.of(context);
   final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;

@@ -2932,6 +2932,78 @@ class AppLocalizationsOr extends AppLocalizations {
       'App Store କିମ୍ବା Google Play ମାଧ୍ୟମରେ ଆପଣଙ୍କର ପୂର୍ବରୁ ଏକ ସବସ୍କ୍ରିପସନ ଅଛି। ଆପଣଙ୍କ ପ୍ଲାନ ବଦଳାଇବାକୁ ସେହି ଷ୍ଟୋରର ସବସ୍କ୍ରିପସନ ସେଟିଂସ ବ୍ୟବହାର କରନ୍ତୁ।';
 
   @override
+  String get paymentViaAppStore =>
+      'ଆପଣଙ୍କ Apple ଆକାଉଣ୍ଟ ମାଧ୍ୟମରେ ବିଲ କରାଯାଏ। App Store ସବସ୍କ୍ରିପସନ ସେଟିଂସରେ ଯେକୌଣସି ସମୟରେ ବାତିଲ କରନ୍ତୁ।';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'ଆପଣଙ୍କ Google Play ଆକାଉଣ୍ଟ ମାଧ୍ୟମରେ ବିଲ କରାଯାଏ। Google Play ସବସ୍କ୍ରିପସନ ସେଟିଂସରେ ଯେକୌଣସି ସମୟରେ ବାତିଲ କରନ୍ତୁ।';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'ଏଠାରେ ପରିଚାଳନା କରିବାକୁ କୌଣସି ସବସ୍କ୍ରିପସନ ନାହିଁ। App Storeରେ କିଣାଯାଇଥିବା ସବସ୍କ୍ରିପସନ ଆପଣଙ୍କ App Store ସେଟିଂସରେ ପରିଚାଳନା କରାଯାଏ।';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'ଏଠାରେ ପରିଚାଳନା କରିବାକୁ କୌଣସି ସବସ୍କ୍ରିପସନ ନାହିଁ। Google Playରେ କିଣାଯାଇଥିବା ସବସ୍କ୍ରିପସନ ଆପଣଙ୍କ Google Play ସେଟିଂସରେ ପରିଚାଳନା କରାଯାଏ।';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'ଆପଣଙ୍କ ଆକାଉଣ୍ଟ ଏବଂ ଆମ ସର୍ଭରରେ ସଞ୍ଚିତ ସବୁକିଛି (ଇମେଲ, କୋଟା, ବ୍ୟବହାର) ସ୍ଥାୟୀ ଭାବେ ଡିଲିଟ ହୋଇଯିବ, ଏବଂ ଅବ୍ୟବହୃତ ବିଶ୍ଳେଷଣ ହଜିଯିବ। App Store ସବସ୍କ୍ରିପସନ ଆପଣଙ୍କ App Store ସେଟିଂସରେ ବାତିଲ କରିବାକୁ ପଡ଼ିବ।';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'ଆପଣଙ୍କ ଆକାଉଣ୍ଟ ଏବଂ ଆମ ସର୍ଭରରେ ସଞ୍ଚିତ ସବୁକିଛି (ଇମେଲ, କୋଟା, ବ୍ୟବହାର) ସ୍ଥାୟୀ ଭାବେ ଡିଲିଟ ହୋଇଯିବ, ଏବଂ ଅବ୍ୟବହୃତ ବିଶ୍ଳେଷଣ ହଜିଯିବ। Google Play ସବସ୍କ୍ରିପସନ ଆପଣଙ୍କ Google Play ସେଟିଂସରେ ବାତିଲ କରିବାକୁ ପଡ଼ିବ।';
+
+  @override
+  String get aiConsentTitle => 'AI ଫିଚର ବ୍ୟବହାର କରିବା ପୂର୍ବରୁ';
+
+  @override
+  String get aiConsentBody =>
+      'ସେୟାର ବିଶ୍ଳେଷଣ କରିବା, ଫଟୋ ଓ ସ୍କ୍ରିନସଟ ପଢ଼ିବା ଏବଂ ଆପଣଙ୍କ ପ୍ରଶ୍ନର ଉତ୍ତର ଦେବା ପାଇଁ, WhatStock ଅନୁରୋଧ ପାଇଁ ଆବଶ୍ୟକ ଡାଟା — ଫଟୋ କିମ୍ବା ସ୍କ୍ରିନସଟ, ସେୟାର, ଆପଣଙ୍କ ପ୍ରଶ୍ନ ଏବଂ ଆପଣ ବ୍ୟବହାର କରୁଥିଲେ ଆପଣଙ୍କ ନୋଟ୍ ଓ ପୋଜିସନ — Claude AI ମଡେଲ ଚଳାଉଥିବା Anthropicକୁ ପଠାଏ। Anthropic ଏହାକୁ କେବଳ ଅନୁରୋଧର ଉତ୍ତର ଦେବା ପାଇଁ ପ୍ରକ୍ରିୟାକରଣ କରେ ଏବଂ ନିଜର AIକୁ ତାଲିମ ଦେବା ପାଇଁ ବ୍ୟବହାର କରେ ନାହିଁ। ବିସ୍ତୃତ ବିବରଣୀ ଗୋପନୀୟତା ନୀତିରେ ଅଛି।';
+
+  @override
+  String get aiConsentLater => 'ବର୍ତ୍ତମାନ ନୁହେଁ';
+
+  @override
+  String get aiConsentAllow => 'ଅନୁମତି ଦିଅନ୍ତୁ';
+
+  @override
+  String get aiConsentSetting => 'AI ଫିଚର';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'ଆପଣଙ୍କ ଅନୁରୋଧଗୁଡ଼ିକ ଉତ୍ତର ପାଇଁ Anthropic (Claude)କୁ ପଠାଯାଏ। ବନ୍ଦ ଥିଲେ, ପରବର୍ତ୍ତୀ AI ଅନୁରୋଧ ପୂର୍ବରୁ ଆପ୍ ପଚାରେ, ଏବଂ ସକାଳର ସ୍ୱୟଂଚାଳିତ ସାରାଂଶ ଚାଲେ ନାହିଁ।';
+
+  @override
+  String get aiReport => 'ରିପୋର୍ଟ କରନ୍ତୁ';
+
+  @override
+  String get aiReportTitle => 'ଏହି AI ଉତ୍ତରକୁ ରିପୋର୍ଟ କରନ୍ତୁ';
+
+  @override
+  String get aiReportInaccurate => 'ଭୁଲ କିମ୍ବା ବିଭ୍ରାନ୍ତିକର';
+
+  @override
+  String get aiReportHarmful => 'ଆପତ୍ତିଜନକ କିମ୍ବା କ୍ଷତିକାରକ';
+
+  @override
+  String get aiReportOther => 'ଅନ୍ୟ କିଛି';
+
+  @override
+  String get aiReportNoteHint => 'କ\'ଣ ଭୁଲ ଅଛି? (ବୈକଳ୍ପିକ)';
+
+  @override
+  String get aiReportPrivacy =>
+      'ଆମେ ସମୀକ୍ଷା କରିପାରିବା ପାଇଁ ଏହି ଉତ୍ତରର ଟେକ୍ସଟ ଏବଂ ଆପଣଙ୍କ ନୋଟ୍ — ଆପଣଙ୍କ ଆକାଉଣ୍ଟ ବିନା — ଆମ ପାଖକୁ ଆସେ।';
+
+  @override
+  String get aiReportSend => 'ରିପୋର୍ଟ ପଠାନ୍ତୁ';
+
+  @override
+  String get aiReportThanks => 'ଧନ୍ୟବାଦ — ଆମେ ଏହାକୁ ସମୀକ୍ଷା କରିବୁ।';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

@@ -2932,6 +2932,78 @@ class AppLocalizationsFa extends AppLocalizations {
       'شما از قبل از طریق App Store یا Google Play اشتراک دارید. برای تغییر طرح خود، از تنظیمات اشتراک همان فروشگاه استفاده کنید.';
 
   @override
+  String get paymentViaAppStore =>
+      'هزینه از طریق حساب Apple شما دریافت می‌شود. هر زمان بخواهید می‌توانید از تنظیمات اشتراک App Store لغو کنید.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'هزینه از طریق حساب Google Play شما دریافت می‌شود. هر زمان بخواهید می‌توانید از تنظیمات اشتراک Google Play لغو کنید.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'اینجا اشتراکی برای مدیریت وجود ندارد. اشتراکی که از App Store خریده شده، در تنظیمات App Store شما مدیریت می‌شود.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'اینجا اشتراکی برای مدیریت وجود ندارد. اشتراکی که از Google Play خریده شده، در تنظیمات Google Play شما مدیریت می‌شود.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'حساب شما و همهٔ آنچه روی سرور ما ذخیره شده (ایمیل، سهمیه، استفاده) برای همیشه حذف می‌شود و تحلیل‌های استفاده‌نشده از بین می‌روند. اشتراک App Store را باید در تنظیمات App Store لغو کنید.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'حساب شما و همهٔ آنچه روی سرور ما ذخیره شده (ایمیل، سهمیه، استفاده) برای همیشه حذف می‌شود و تحلیل‌های استفاده‌نشده از بین می‌روند. اشتراک Google Play را باید در تنظیمات Google Play لغو کنید.';
+
+  @override
+  String get aiConsentTitle => 'پیش از استفاده از قابلیت‌های هوش مصنوعی';
+
+  @override
+  String get aiConsentBody =>
+      'WhatStock برای تحلیل سهام، خواندن عکس‌ها و اسکرین‌شات‌ها و پاسخ به پرسش‌های شما، داده‌های لازم برای درخواست را — عکس یا اسکرین‌شات، سهم، پرسش شما و در صورت استفاده، یادداشت‌ها و موقعیت‌های شما — برای Anthropic، شرکت گردانندهٔ مدل هوش مصنوعی Claude، می‌فرستد. Anthropic این داده‌ها را فقط برای پاسخ به درخواست پردازش می‌کند و از آن‌ها برای آموزش هوش مصنوعی خود استفاده نمی‌کند. جزئیات در سیاست حریم خصوصی آمده است.';
+
+  @override
+  String get aiConsentLater => 'الان نه';
+
+  @override
+  String get aiConsentAllow => 'اجازه دادن';
+
+  @override
+  String get aiConsentSetting => 'قابلیت‌های هوش مصنوعی';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'درخواست‌های شما برای پاسخ به Anthropic (Claude) فرستاده می‌شود. وقتی خاموش باشد، برنامه پیش از درخواست بعدی هوش مصنوعی از شما می‌پرسد و خلاصهٔ خودکار صبحگاهی تهیه نمی‌شود.';
+
+  @override
+  String get aiReport => 'گزارش';
+
+  @override
+  String get aiReportTitle => 'گزارش این پاسخ هوش مصنوعی';
+
+  @override
+  String get aiReportInaccurate => 'نادرست یا گمراه‌کننده';
+
+  @override
+  String get aiReportHarmful => 'توهین‌آمیز یا آسیب‌زا';
+
+  @override
+  String get aiReportOther => 'مورد دیگر';
+
+  @override
+  String get aiReportNoteHint => 'چه مشکلی دارد؟ (اختیاری)';
+
+  @override
+  String get aiReportPrivacy =>
+      'متن این پاسخ و یادداشت شما — بدون حسابتان — به دست ما می‌رسد تا آن را بررسی کنیم.';
+
+  @override
+  String get aiReportSend => 'ارسال گزارش';
+
+  @override
+  String get aiReportThanks => 'سپاسگزاریم — آن را بررسی می‌کنیم.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

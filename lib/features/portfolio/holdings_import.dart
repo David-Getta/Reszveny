@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../analysis/ai_consent.dart';
 import '../../app_services.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/error_messages.dart';
@@ -51,6 +52,7 @@ Future<void> showHoldingsImport(BuildContext context) async {
     return;
   }
   if (image == null || !context.mounted) return;
+  if (!await ensureAiConsent(context) || !context.mounted) return;
 
   // A várakozó ablak az eredménnyel vagy a hibával zárul.
   final outcome = await showDialog<Object>(

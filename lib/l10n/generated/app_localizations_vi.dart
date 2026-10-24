@@ -2926,6 +2926,78 @@ class AppLocalizationsVi extends AppLocalizations {
       'Bạn đã có gói đăng ký qua App Store hoặc Google Play. Để đổi gói, hãy dùng phần cài đặt gói đăng ký của cửa hàng đó.';
 
   @override
+  String get paymentViaAppStore =>
+      'Thanh toán qua tài khoản Apple của bạn. Hủy bất cứ lúc nào trong phần cài đặt gói đăng ký của App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Thanh toán qua tài khoản Google Play của bạn. Hủy bất cứ lúc nào trong phần cài đặt gói đăng ký của Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Không có gói đăng ký nào để quản lý tại đây. Gói đăng ký mua qua App Store được quản lý trong phần cài đặt App Store của bạn.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Không có gói đăng ký nào để quản lý tại đây. Gói đăng ký mua qua Google Play được quản lý trong phần cài đặt Google Play của bạn.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Tài khoản và mọi thứ lưu trên máy chủ của chúng tôi (email, hạn mức, lịch sử sử dụng) sẽ bị xóa vĩnh viễn, và các phân tích chưa dùng sẽ mất. Gói qua App Store phải hủy trong phần cài đặt App Store của bạn.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Tài khoản và mọi thứ lưu trên máy chủ của chúng tôi (email, hạn mức, lịch sử sử dụng) sẽ bị xóa vĩnh viễn, và các phân tích chưa dùng sẽ mất. Gói qua Google Play phải hủy trong phần cài đặt Google Play của bạn.';
+
+  @override
+  String get aiConsentTitle => 'Trước khi bạn dùng tính năng AI';
+
+  @override
+  String get aiConsentBody =>
+      'Để phân tích cổ phiếu, đọc ảnh và ảnh chụp màn hình, cũng như trả lời câu hỏi của bạn, WhatStock gửi dữ liệu cần thiết cho yêu cầu — ảnh hoặc ảnh chụp màn hình, cổ phiếu, câu hỏi của bạn và, nếu bạn dùng, ghi chú cùng các vị thế của bạn — đến Anthropic, công ty vận hành mô hình AI Claude. Anthropic chỉ xử lý dữ liệu này để trả lời yêu cầu và không dùng nó để huấn luyện AI của mình. Chi tiết có trong chính sách quyền riêng tư.';
+
+  @override
+  String get aiConsentLater => 'Để sau';
+
+  @override
+  String get aiConsentAllow => 'Cho phép';
+
+  @override
+  String get aiConsentSetting => 'Tính năng AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Yêu cầu của bạn được gửi đến Anthropic (Claude) để trả lời. Khi tắt, ứng dụng sẽ hỏi trước yêu cầu AI tiếp theo và bản tóm tắt buổi sáng tự động sẽ không chạy.';
+
+  @override
+  String get aiReport => 'Báo cáo';
+
+  @override
+  String get aiReportTitle => 'Báo cáo câu trả lời AI này';
+
+  @override
+  String get aiReportInaccurate => 'Sai hoặc gây hiểu lầm';
+
+  @override
+  String get aiReportHarmful => 'Xúc phạm hoặc có hại';
+
+  @override
+  String get aiReportOther => 'Lý do khác';
+
+  @override
+  String get aiReportNoteHint => 'Có vấn đề gì? (không bắt buộc)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Chúng tôi nhận được nội dung câu trả lời này và ghi chú của bạn — không kèm tài khoản của bạn — để xem xét.';
+
+  @override
+  String get aiReportSend => 'Gửi báo cáo';
+
+  @override
+  String get aiReportThanks => 'Cảm ơn bạn — chúng tôi sẽ xem xét.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

@@ -2937,6 +2937,78 @@ class AppLocalizationsMs extends AppLocalizations {
       'Anda sudah mempunyai langganan melalui App Store atau Google Play. Untuk menukar pelan anda, gunakan tetapan langganan gedung tersebut.';
 
   @override
+  String get paymentViaAppStore =>
+      'Dibilkan melalui akaun Apple anda. Batalkan pada bila-bila masa dalam tetapan langganan App Store anda.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Dibilkan melalui akaun Google Play anda. Batalkan pada bila-bila masa dalam tetapan langganan Google Play anda.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Tiada langganan untuk diurus di sini. Langganan yang dibeli di App Store diurus dalam tetapan App Store anda.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Tiada langganan untuk diurus di sini. Langganan yang dibeli di Google Play diurus dalam tetapan Google Play anda.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Akaun anda dan semua yang disimpan pada pelayan kami (e-mel, peruntukan, penggunaan) akan dipadam secara kekal, dan analisis yang belum digunakan akan hilang. Langganan App Store mesti dibatalkan dalam tetapan App Store anda.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Akaun anda dan semua yang disimpan pada pelayan kami (e-mel, peruntukan, penggunaan) akan dipadam secara kekal, dan analisis yang belum digunakan akan hilang. Langganan Google Play mesti dibatalkan dalam tetapan Google Play anda.';
+
+  @override
+  String get aiConsentTitle => 'Sebelum anda menggunakan ciri AI';
+
+  @override
+  String get aiConsentBody =>
+      'Untuk menganalisis saham, membaca foto dan tangkapan skrin, serta menjawab soalan anda, WhatStock menghantar data yang diperlukan untuk permintaan itu — foto atau tangkapan skrin, saham, soalan anda dan, jika anda menggunakannya, nota serta pegangan anda — kepada Anthropic, yang mengendalikan model AI Claude. Anthropic memprosesnya hanya untuk menjawab permintaan itu dan tidak menggunakannya untuk melatih AI miliknya. Butiran lanjut terdapat dalam Dasar Privasi.';
+
+  @override
+  String get aiConsentLater => 'Bukan sekarang';
+
+  @override
+  String get aiConsentAllow => 'Benarkan';
+
+  @override
+  String get aiConsentSetting => 'Ciri AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Permintaan anda dihantar kepada Anthropic (Claude) untuk dijawab. Apabila dimatikan, apl akan bertanya sebelum permintaan AI seterusnya, dan ringkasan pagi automatik tidak dijalankan.';
+
+  @override
+  String get aiReport => 'Laporkan';
+
+  @override
+  String get aiReportTitle => 'Laporkan jawapan AI ini';
+
+  @override
+  String get aiReportInaccurate => 'Salah atau mengelirukan';
+
+  @override
+  String get aiReportHarmful => 'Menyinggung atau berbahaya';
+
+  @override
+  String get aiReportOther => 'Perkara lain';
+
+  @override
+  String get aiReportNoteHint => 'Apa yang salah? (pilihan)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Kami menerima teks jawapan ini dan nota anda — tanpa akaun anda — supaya kami dapat menyemaknya.';
+
+  @override
+  String get aiReportSend => 'Hantar laporan';
+
+  @override
+  String get aiReportThanks => 'Terima kasih — kami akan menyemaknya.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

@@ -2949,6 +2949,78 @@ class AppLocalizationsEl extends AppLocalizations {
       'Έχετε ήδη συνδρομή μέσω του App Store ή του Google Play. Για να αλλάξετε το πρόγραμμά σας, χρησιμοποιήστε τις ρυθμίσεις συνδρομών του συγκεκριμένου καταστήματος.';
 
   @override
+  String get paymentViaAppStore =>
+      'Η χρέωση γίνεται μέσω του λογαριασμού σας Apple. Ακύρωση οποιαδήποτε στιγμή από τις ρυθμίσεις συνδρομών του App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Η χρέωση γίνεται μέσω του λογαριασμού σας Google Play. Ακύρωση οποιαδήποτε στιγμή από τις ρυθμίσεις συνδρομών του Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Δεν υπάρχει συνδρομή για διαχείριση εδώ. Η διαχείριση μιας συνδρομής που αγοράστηκε στο App Store γίνεται από τις ρυθμίσεις του App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Δεν υπάρχει συνδρομή για διαχείριση εδώ. Η διαχείριση μιας συνδρομής που αγοράστηκε στο Google Play γίνεται από τις ρυθμίσεις του Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Ο λογαριασμός σας και ό,τι είναι αποθηκευμένο στον διακομιστή μας (email, όριο, χρήση) θα διαγραφούν οριστικά, και οι αχρησιμοποίητες αναλύσεις χάνονται. Μια συνδρομή App Store πρέπει να ακυρωθεί στις ρυθμίσεις του App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Ο λογαριασμός σας και ό,τι είναι αποθηκευμένο στον διακομιστή μας (email, όριο, χρήση) θα διαγραφούν οριστικά, και οι αχρησιμοποίητες αναλύσεις χάνονται. Μια συνδρομή Google Play πρέπει να ακυρωθεί στις ρυθμίσεις του Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Πριν χρησιμοποιήσετε τις λειτουργίες AI';
+
+  @override
+  String get aiConsentBody =>
+      'Για να αναλύει μετοχές, να διαβάζει φωτογραφίες και στιγμιότυπα οθόνης και να απαντά στις ερωτήσεις σας, το WhatStock στέλνει τα δεδομένα που χρειάζεται το αίτημα – τη φωτογραφία ή το στιγμιότυπο οθόνης, τη μετοχή, την ερώτησή σας και, όπου τις χρησιμοποιείτε, τις σημειώσεις και τις θέσεις σας – στην Anthropic, την εταιρεία που λειτουργεί το μοντέλο AI Claude. Η Anthropic τα επεξεργάζεται μόνο για να απαντήσει στο αίτημα και δεν τα χρησιμοποιεί για την εκπαίδευση των μοντέλων AI της. Λεπτομέρειες θα βρείτε στην πολιτική απορρήτου.';
+
+  @override
+  String get aiConsentLater => 'Όχι τώρα';
+
+  @override
+  String get aiConsentAllow => 'Να επιτρέπεται';
+
+  @override
+  String get aiConsentSetting => 'Λειτουργίες AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Τα αιτήματά σας αποστέλλονται στην Anthropic (Claude) για να απαντηθούν. Όταν είναι απενεργοποιημένο, η εφαρμογή ρωτά πριν από το επόμενο αίτημα AI και η αυτόματη πρωινή σύνοψη δεν δημιουργείται.';
+
+  @override
+  String get aiReport => 'Αναφορά';
+
+  @override
+  String get aiReportTitle => 'Αναφορά αυτής της απάντησης AI';
+
+  @override
+  String get aiReportInaccurate => 'Λανθασμένη ή παραπλανητική';
+
+  @override
+  String get aiReportHarmful => 'Προσβλητική ή επιβλαβής';
+
+  @override
+  String get aiReportOther => 'Κάτι άλλο';
+
+  @override
+  String get aiReportNoteHint => 'Τι δεν πάει καλά; (προαιρετικό)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Λαμβάνουμε το κείμενο αυτής της απάντησης και τη σημείωσή σας – χωρίς τον λογαριασμό σας – για να την ελέγξουμε.';
+
+  @override
+  String get aiReportSend => 'Αποστολή αναφοράς';
+
+  @override
+  String get aiReportThanks => 'Ευχαριστούμε – θα το ελέγξουμε.';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

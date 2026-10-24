@@ -2933,6 +2933,78 @@ class AppLocalizationsSi extends AppLocalizations {
       'ඔබට දැනටමත් App Store හෝ Google Play හරහා දායකත්වයක් ඇත. ඔබේ සැලසුම වෙනස් කිරීමට එම ගබඩාවේ දායකත්ව සැකසීම් භාවිත කරන්න.';
 
   @override
+  String get paymentViaAppStore =>
+      'ඔබේ Apple ගිණුම හරහා බිල් කෙරේ. App Store දායකත්ව සැකසීම්වල ඕනෑම වේලාවක අවලංගු කළ හැක.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'ඔබේ Google Play ගිණුම හරහා බිල් කෙරේ. Google Play දායකත්ව සැකසීම්වල ඕනෑම වේලාවක අවලංගු කළ හැක.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'මෙහි කළමනාකරණය කිරීමට දායකත්වයක් නැත. App Store හි මිලදී ගත් දායකත්වයක් ඔබේ App Store සැකසීම්වල කළමනාකරණය කෙරේ.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'මෙහි කළමනාකරණය කිරීමට දායකත්වයක් නැත. Google Play හි මිලදී ගත් දායකත්වයක් ඔබේ Google Play සැකසීම්වල කළමනාකරණය කෙරේ.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'ඔබේ ගිණුම සහ අපගේ සේවාදායකයේ ගබඩා කළ සියල්ල (ඊමේල්, සීමාව, භාවිතය) සදහටම මැකෙන අතර, භාවිත නොකළ විශ්ලේෂණ අහිමි වේ. App Store දායකත්වයක් ඔබේ App Store සැකසීම්වලින් අවලංගු කළ යුතුය.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'ඔබේ ගිණුම සහ අපගේ සේවාදායකයේ ගබඩා කළ සියල්ල (ඊමේල්, සීමාව, භාවිතය) සදහටම මැකෙන අතර, භාවිත නොකළ විශ්ලේෂණ අහිමි වේ. Google Play දායකත්වයක් ඔබේ Google Play සැකසීම්වලින් අවලංගු කළ යුතුය.';
+
+  @override
+  String get aiConsentTitle => 'AI විශේෂාංග භාවිත කිරීමට පෙර';
+
+  @override
+  String get aiConsentBody =>
+      'කොටස් විශ්ලේෂණය කිරීමට, ඡායාරූප සහ තිර රූ කියවීමට සහ ඔබේ ප්‍රශ්නවලට පිළිතුරු දීමට, WhatStock ඉල්ලීමට අවශ්‍ය දත්ත — ඡායාරූපය හෝ තිර රුව, කොටස, ඔබේ ප්‍රශ්නය සහ, ඔබ ඒවා භාවිත කරන්නේ නම්, ඔබේ සටහන් සහ ස්ථාන — Claude AI මාදිලිය ක්‍රියාත්මක කරන Anthropic වෙත යවයි. Anthropic එය සකසන්නේ ඉල්ලීමට පිළිතුරු දීමට පමණක් වන අතර, එහි AI පුහුණු කිරීමට භාවිත නොකරයි. විස්තර රහස්‍යතා ප්‍රතිපත්තියේ ඇත.';
+
+  @override
+  String get aiConsentLater => 'දැන් නොවේ';
+
+  @override
+  String get aiConsentAllow => 'ඉඩ දෙන්න';
+
+  @override
+  String get aiConsentSetting => 'AI විශේෂාංග';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'ඔබේ ඉල්ලීම් පිළිතුරු සඳහා Anthropic (Claude) වෙත යවනු ලැබේ. අක්‍රිය විට, ඊළඟ AI ඉල්ලීමට පෙර යෙදුම විමසන අතර, ස්වයංක්‍රීය උදෑසන සාරාංශය ක්‍රියාත්මක නොවේ.';
+
+  @override
+  String get aiReport => 'වාර්තා කරන්න';
+
+  @override
+  String get aiReportTitle => 'මෙම AI පිළිතුර වාර්තා කරන්න';
+
+  @override
+  String get aiReportInaccurate => 'වැරදි හෝ නොමඟ යවන';
+
+  @override
+  String get aiReportHarmful => 'අපහාසාත්මක හෝ හානිකර';
+
+  @override
+  String get aiReportOther => 'වෙනත් දෙයක්';
+
+  @override
+  String get aiReportNoteHint => 'වැරැද්ද කුමක්ද? (විකල්ප)';
+
+  @override
+  String get aiReportPrivacy =>
+      'අපට සමාලෝචනය කිරීමට හැකි වන පරිදි මෙම පිළිතුරේ පෙළ සහ ඔබේ සටහන — ඔබේ ගිණුමෙන් තොරව — අපට ලැබේ.';
+
+  @override
+  String get aiReportSend => 'වාර්තාව යවන්න';
+
+  @override
+  String get aiReportThanks => 'ස්තූතියි — අපි එය සමාලෝචනය කරන්නෙමු.';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

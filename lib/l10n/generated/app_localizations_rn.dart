@@ -2948,6 +2948,78 @@ class AppLocalizationsRn extends AppLocalizations {
       'Usanzwe ufise iyandikisha biciye kuri App Store canke Google Play. Kugira uhindure ipaki yawe, koresha ivyo gutunganya iyandikisha vy\'iryo duka.';
 
   @override
+  String get paymentViaAppStore =>
+      'Uriha biciye kuri konti yawe ya Apple. Hagarika igihe cose mu vyo gutunganya iyandikisha rya App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Uriha biciye kuri konti yawe ya Google Play. Hagarika igihe cose mu vyo gutunganya iyandikisha rya Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Ng\'aha nta yandikisha ryo kugenzura. Iyandikisha waguze muri App Store rigenzurirwa mu vyo gutunganya vya App Store vyawe.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Ng\'aha nta yandikisha ryo kugenzura. Iyandikisha waguze muri Google Play rigenzurirwa mu vyo gutunganya vya Google Play vyawe.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Konti yawe n\'ibintu vyose bibitswe kuri seriveri yacu (imeyili, ingano uhabwa, ikoreshwa) bizofutwa burundu, kandi amasesangura utakoresheje azotakara. Iyandikisha rya App Store ritegerezwa guhagarikwa mu vyo gutunganya vya App Store vyawe.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Konti yawe n\'ibintu vyose bibitswe kuri seriveri yacu (imeyili, ingano uhabwa, ikoreshwa) bizofutwa burundu, kandi amasesangura utakoresheje azotakara. Iyandikisha rya Google Play ritegerezwa guhagarikwa mu vyo gutunganya vya Google Play vyawe.';
+
+  @override
+  String get aiConsentTitle => 'Imbere yo gukoresha ibikorwa vya AI';
+
+  @override
+  String get aiConsentBody =>
+      'Kugira isesangure imigabane, isome amafoto n\'amafoto ya ekarana, kandi yishure ibibazo vyawe, WhatStock irungika amakuru akenewe kuri iryo saba — ifoto canke ifoto ya ekarana, umugabane, ikibazo cawe kandi, nimba ubikoresha, ivyo wanditse n\'imigabane ufise — kuri Anthropic, isosiyete ikoresha model ya AI yitwa Claude. Anthropic iyakoresha gusa mu kwishura iryo saba kandi ntiyakoresha mu kwigisha AI yayo. Ibisobanuro birambuye biri muri Politike y\'ibanga.';
+
+  @override
+  String get aiConsentLater => 'Si ubu';
+
+  @override
+  String get aiConsentAllow => 'Emera';
+
+  @override
+  String get aiConsentSetting => 'Ibikorwa vya AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Ivyo usaba birungikwa kuri Anthropic (Claude) kugira vyishurwe. Nivyazimwa, porogarama irabanza ikakubaza imbere y\'isaba rikurikira rya AI, kandi incamake y\'igitondo yikora ntikora.';
+
+  @override
+  String get aiReport => 'Menyesha';
+
+  @override
+  String get aiReportTitle => 'Menyesha iyi nyishu ya AI';
+
+  @override
+  String get aiReportInaccurate => 'Si vyo canke biyobya';
+
+  @override
+  String get aiReportHarmful => 'Bitukana canke bigira nabi';
+
+  @override
+  String get aiReportOther => 'Ikindi kintu';
+
+  @override
+  String get aiReportNoteHint => 'Ni igiki kitagenda? (si itegeko)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Turakira inyandiko y\'iyi nyishu n\'ivyo wanditse — hatarimwo konti yawe — kugira tuyisuzume.';
+
+  @override
+  String get aiReportSend => 'Rungika imenyesha';
+
+  @override
+  String get aiReportThanks => 'Urakoze — tuzobisuzuma.';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

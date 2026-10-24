@@ -10,7 +10,9 @@ import '../models/stock_report.dart';
 typedef ShareHandler = Future<void> Function(String text, {String? subject, Rect? origin});
 
 ShareHandler shareText = (text, {subject, origin}) async {
-  await SharePlus.instance.share(ShareParams(text: text, subject: subject, sharePositionOrigin: origin));
+  await SharePlus.instance.share(
+    ShareParams(text: text, subject: subject, sharePositionOrigin: originOrCenter(origin)),
+  );
 };
 
 /// Kép megosztása (PNG) a rendszer megosztás-menüjével; tesztben lecserélhető.
@@ -29,7 +31,7 @@ ImageShareHandler shareImage = (png, {required fileName, text, subject, origin})
       fileNameOverrides: [fileName],
       text: text,
       subject: subject,
-      sharePositionOrigin: origin,
+      sharePositionOrigin: originOrCenter(origin),
       // Weben, ha a böngésző nem tud fájlt megosztani, letöltésként kapja meg.
       downloadFallbackEnabled: true,
     ),
@@ -52,7 +54,7 @@ FileShareHandler shareFile = (bytes, {required fileName, required mimeType, subj
       files: [XFile.fromData(bytes, mimeType: mimeType, name: fileName)],
       fileNameOverrides: [fileName],
       subject: subject,
-      sharePositionOrigin: origin,
+      sharePositionOrigin: originOrCenter(origin),
       downloadFallbackEnabled: true,
     ),
   );
@@ -96,6 +98,17 @@ String reportShareText(
     ..writeln(generatedLine)
     ..write(disclaimer);
   return b.toString();
+}
+
+/// A megosztás-menü helye: a gomb, vagy ha nem ismert, a képernyő közepe – iPadon hely
+/// nélkül a megosztás csendben meghiúsul (semmi nem nyílik meg).
+Rect originOrCenter(Rect? origin) {
+  if (origin != null && !origin.isEmpty) return origin;
+  final views = WidgetsBinding.instance.platformDispatcher.views;
+  if (views.isEmpty) return const Rect.fromLTWH(0, 0, 1, 1);
+  final v = views.first;
+  final size = v.physicalSize / v.devicePixelRatio;
+  return Rect.fromLTWH(size.width / 2, size.height / 2, 1, 1);
 }
 
 /// A widget helye a képernyőn (iPadon és macOS-en a megosztás-menü ide nyílik).

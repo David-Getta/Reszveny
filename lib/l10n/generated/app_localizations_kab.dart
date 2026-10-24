@@ -2935,6 +2935,78 @@ class AppLocalizationsKab extends AppLocalizations {
       'Tesɛiḍ yakan ajerred s App Store neɣ Google Play. Akken ad tbeddleḍ aɣawas-ik, seqdec iɣewwaṛen n ujerred n tḥanut-nni.';
 
   @override
+  String get paymentViaAppStore =>
+      'Axelleṣ s umiḍan-ik·im n Apple. Tzemreḍ ad tsefsxeḍ melmi i tebɣiḍ deg yiɣewwaṛen n ujerred n App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Axelleṣ s umiḍan-ik·im n Google Play. Tzemreḍ ad tsefsxeḍ melmi i tebɣiḍ deg yiɣewwaṛen n ujerred n Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Ulac ajerred ara tesfekreḍ dagi. Ajerred i yettwaɣen deg App Store yettwasefrak deg yiɣewwaṛen-ik·im n App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Ulac ajerred ara tesfekreḍ dagi. Ajerred i yettwaɣen deg Google Play yettwasefrak deg yiɣewwaṛen-ik·im n Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Amiḍan-ik·im d wayen akk yettwaseklasen deg uqeddac-nneɣ (imayl, tasmekta, aseqdec) ad ttwakksen i lebda, ula d tiselḍin ur tesxedmeḍ ara ad ṛuḥent. Ajerred n App Store ilaq ad t-tsefsxeḍ deg yiɣewwaṛen-ik·im n App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Amiḍan-ik·im d wayen akk yettwaseklasen deg uqeddac-nneɣ (imayl, tasmekta, aseqdec) ad ttwakksen i lebda, ula d tiselḍin ur tesxedmeḍ ara ad ṛuḥent. Ajerred n Google Play ilaq ad t-tsefsxeḍ deg yiɣewwaṛen-ik·im n Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Uqbel ad tesqedceḍ timahilin n AI';
+
+  @override
+  String get aiConsentBody =>
+      'Akken ad yesleḍ tigemmiwin, ad yeɣṛ tiwlafin d tuṭṭfiwin n wegdil, u ad d-yerr ɣef yesteqsiyen-ik·im, WhatStock yettazen isefka i yesra usuter — tawlaft neɣ tuṭṭfa n wegdil, tigemmi, asteqsi-k·m, akked, ma tesseqdaceḍ-ten, tizmilin-ik·im d yiksyunen-ik·im — ɣer Anthropic, tasnast i yesseddayen tamudemt AI Claude. Anthropic yesseqdac-iten kan akken ad d-yerr ɣef usuter, ur ten-yesseqdac ara akken ad yesselmed AI-ines. Talqayt tella deg tsertit n tbaḍnit.';
+
+  @override
+  String get aiConsentLater => 'Mačči tura';
+
+  @override
+  String get aiConsentAllow => 'Sireg';
+
+  @override
+  String get aiConsentSetting => 'Timahilin n AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Isuturen-ik·im ttwaznen ɣer Anthropic (Claude) akken ad d-ttwarren. Ma yensa, asnas ad k·m-yesteqsi uqbel asuter n AI d-iteddun, u agzul awurman n taṣebḥit ur yettwaheyya ara.';
+
+  @override
+  String get aiReport => 'Mmel ugur';
+
+  @override
+  String get aiReportTitle => 'Mmel ugur deg tririt-a n AI';
+
+  @override
+  String get aiReportInaccurate => 'Ur yeṣḥi ara neɣ yesseɣlaḍ';
+
+  @override
+  String get aiReportHarmful => 'Yesseɣḍab neɣ yettḍurru';
+
+  @override
+  String get aiReportOther => 'Ayen nniḍen';
+
+  @override
+  String get aiReportNoteHint => 'D acu ur nelhi ara? (afrayan)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Ad d-nremes aḍris n tririt-a d tezmilt-ik·im — war amiḍan-ik·im — akken ad tt-nesenqed.';
+
+  @override
+  String get aiReportSend => 'Azen aneqqis';
+
+  @override
+  String get aiReportThanks => 'Tanemmirt — ad tt-nesenqed.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

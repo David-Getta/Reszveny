@@ -2949,6 +2949,78 @@ class AppLocalizationsMl extends AppLocalizations {
       'App Store അല്ലെങ്കിൽ Google Play വഴി നിങ്ങൾക്ക് ഇതിനകം ഒരു സബ്സ്ക്രിപ്ഷൻ ഉണ്ട്. പ്ലാൻ മാറ്റാൻ ആ സ്റ്റോറിന്റെ സബ്സ്ക്രിപ്ഷൻ ക്രമീകരണങ്ങൾ ഉപയോഗിക്കുക.';
 
   @override
+  String get paymentViaAppStore =>
+      'നിങ്ങളുടെ Apple അക്കൗണ്ട് വഴിയാണ് ബില്ലിംഗ്. App Store സബ്സ്ക്രിപ്ഷൻ ക്രമീകരണങ്ങളിൽ എപ്പോൾ വേണമെങ്കിലും റദ്ദാക്കാം.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'നിങ്ങളുടെ Google Play അക്കൗണ്ട് വഴിയാണ് ബില്ലിംഗ്. Google Play സബ്സ്ക്രിപ്ഷൻ ക്രമീകരണങ്ങളിൽ എപ്പോൾ വേണമെങ്കിലും റദ്ദാക്കാം.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'ഇവിടെ മാനേജ് ചെയ്യാൻ സബ്സ്ക്രിപ്ഷനൊന്നുമില്ല. App Store-ൽ വാങ്ങിയ സബ്സ്ക്രിപ്ഷൻ നിങ്ങളുടെ App Store ക്രമീകരണങ്ങളിലാണ് മാനേജ് ചെയ്യുന്നത്.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'ഇവിടെ മാനേജ് ചെയ്യാൻ സബ്സ്ക്രിപ്ഷനൊന്നുമില്ല. Google Play-യിൽ വാങ്ങിയ സബ്സ്ക്രിപ്ഷൻ നിങ്ങളുടെ Google Play ക്രമീകരണങ്ങളിലാണ് മാനേജ് ചെയ്യുന്നത്.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'നിങ്ങളുടെ അക്കൗണ്ടും ഞങ്ങളുടെ സെർവറിൽ സൂക്ഷിച്ചിരിക്കുന്ന എല്ലാം (ഇമെയിൽ, ക്വാട്ട, ഉപയോഗം) ശാശ്വതമായി ഇല്ലാതാകും, ഉപയോഗിക്കാത്ത വിശകലനങ്ങൾ നഷ്ടപ്പെടും. App Store സബ്സ്ക്രിപ്ഷൻ നിങ്ങളുടെ App Store ക്രമീകരണങ്ങളിൽ റദ്ദാക്കണം.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'നിങ്ങളുടെ അക്കൗണ്ടും ഞങ്ങളുടെ സെർവറിൽ സൂക്ഷിച്ചിരിക്കുന്ന എല്ലാം (ഇമെയിൽ, ക്വാട്ട, ഉപയോഗം) ശാശ്വതമായി ഇല്ലാതാകും, ഉപയോഗിക്കാത്ത വിശകലനങ്ങൾ നഷ്ടപ്പെടും. Google Play സബ്സ്ക്രിപ്ഷൻ നിങ്ങളുടെ Google Play ക്രമീകരണങ്ങളിൽ റദ്ദാക്കണം.';
+
+  @override
+  String get aiConsentTitle => 'AI ഫീച്ചറുകൾ ഉപയോഗിക്കുന്നതിന് മുമ്പ്';
+
+  @override
+  String get aiConsentBody =>
+      'ഓഹരികൾ വിശകലനം ചെയ്യാനും ഫോട്ടോകളും സ്ക്രീൻഷോട്ടുകളും വായിക്കാനും നിങ്ങളുടെ ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകാനും, അഭ്യർത്ഥനയ്ക്ക് ആവശ്യമായ ഡാറ്റ — ഫോട്ടോ അല്ലെങ്കിൽ സ്ക്രീൻഷോട്ട്, ഓഹരി, നിങ്ങളുടെ ചോദ്യം, നിങ്ങൾ ഉപയോഗിക്കുന്നുണ്ടെങ്കിൽ നിങ്ങളുടെ കുറിപ്പുകളും പൊസിഷനുകളും — WhatStock, Claude AI മോഡൽ പ്രവർത്തിപ്പിക്കുന്ന Anthropic-ലേക്ക് അയയ്ക്കുന്നു. Anthropic ഇത് അഭ്യർത്ഥനയ്ക്ക് ഉത്തരം നൽകാൻ മാത്രം പ്രോസസ്സ് ചെയ്യുന്നു, അതിന്റെ AI-യെ പരിശീലിപ്പിക്കാൻ ഉപയോഗിക്കുന്നില്ല. വിശദാംശങ്ങൾ സ്വകാര്യതാ നയത്തിലുണ്ട്.';
+
+  @override
+  String get aiConsentLater => 'ഇപ്പോൾ വേണ്ട';
+
+  @override
+  String get aiConsentAllow => 'അനുവദിക്കുക';
+
+  @override
+  String get aiConsentSetting => 'AI ഫീച്ചറുകൾ';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'നിങ്ങളുടെ അഭ്യർത്ഥനകൾ ഉത്തരം ലഭിക്കാൻ Anthropic (Claude)-ലേക്ക് അയയ്ക്കുന്നു. ഓഫാണെങ്കിൽ, അടുത്ത AI അഭ്യർത്ഥനയ്ക്ക് മുമ്പ് ആപ്പ് ചോദിക്കും, രാവിലത്തെ ഓട്ടോമാറ്റിക് സംഗ്രഹം പ്രവർത്തിക്കില്ല.';
+
+  @override
+  String get aiReport => 'റിപ്പോർട്ട് ചെയ്യുക';
+
+  @override
+  String get aiReportTitle => 'ഈ AI ഉത്തരം റിപ്പോർട്ട് ചെയ്യുക';
+
+  @override
+  String get aiReportInaccurate => 'തെറ്റായതോ തെറ്റിദ്ധരിപ്പിക്കുന്നതോ';
+
+  @override
+  String get aiReportHarmful => 'അധിക്ഷേപകരമോ ദോഷകരമോ';
+
+  @override
+  String get aiReportOther => 'മറ്റെന്തെങ്കിലും';
+
+  @override
+  String get aiReportNoteHint => 'എന്താണ് പ്രശ്നം? (ഓപ്ഷണൽ)';
+
+  @override
+  String get aiReportPrivacy =>
+      'ഞങ്ങൾക്ക് പരിശോധിക്കാനായി ഈ ഉത്തരത്തിന്റെ ടെക്സ്റ്റും നിങ്ങളുടെ കുറിപ്പും ലഭിക്കും — നിങ്ങളുടെ അക്കൗണ്ട് ഇല്ലാതെ.';
+
+  @override
+  String get aiReportSend => 'റിപ്പോർട്ട് അയയ്ക്കുക';
+
+  @override
+  String get aiReportThanks => 'നന്ദി — ഞങ്ങൾ ഇത് പരിശോധിക്കും.';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

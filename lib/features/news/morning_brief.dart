@@ -72,7 +72,8 @@ class MorningBrief {
 
   /// Ellenőrzés most; igaz, ha elkészült egy új összefoglaló.
   Future<bool> check() async {
-    if (!preferences.morningBrief || _clock().hour < fromHour) return false;
+    // Az AI-hoz adott hozzájárulás nélkül nem készül magától sem.
+    if (!preferences.morningBrief || preferences.aiConsent != true || _clock().hour < fromHour) return false;
     await brief.load();
     final lang = language();
     if (brief.isTodayIn(lang) || brief.busy) return false;

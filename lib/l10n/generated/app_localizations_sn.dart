@@ -2947,6 +2947,78 @@ class AppLocalizationsSn extends AppLocalizations {
       'Une kunyoresa kare kuburikidza neApp Store kana Google Play. Kuti uchinje chirongwa chako, shandisa marongero ekunyoresa echitoro ichocho.';
 
   @override
+  String get paymentViaAppStore =>
+      'Unobhadhariswa kuburikidza neakaundi yako yeApple. Kanzura chero nguva mumarongero ekunyoresa eApp Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Unobhadhariswa kuburikidza neakaundi yako yeGoogle Play. Kanzura chero nguva mumarongero ekunyoresa eGoogle Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Hapana kunyoresa kwekutarisira pano. Kunyoresa kwawakatenga muApp Store kunotarisirwa mumarongero ako eApp Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Hapana kunyoresa kwekutarisira pano. Kunyoresa kwawakatenga muGoogle Play kunotarisirwa mumarongero ako eGoogle Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Akaundi yako nezvose zvakachengetwa pasevha yedu (email, mwero, mashandisiro) zvichadzimwa zvachose, uye ongororo dzisina kushandiswa dzicharasika. Kunyoresa kweApp Store kunofanira kukanzurwa mumarongero ako eApp Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Akaundi yako nezvose zvakachengetwa pasevha yedu (email, mwero, mashandisiro) zvichadzimwa zvachose, uye ongororo dzisina kushandiswa dzicharasika. Kunyoresa kweGoogle Play kunofanira kukanzurwa mumarongero ako eGoogle Play.';
+
+  @override
+  String get aiConsentTitle => 'Usati washandisa zvinhu zveAI';
+
+  @override
+  String get aiConsentBody =>
+      'Kuti iongorore masheya, iverenge mapikicha nemifananidzo yesikirini, uye ipindure mibvunzo yako, WhatStock inotumira data inodiwa pachikumbiro — mufananidzo kana mufananidzo wesikirini, sheya, mubvunzo wako uye, kana uchizvishandisa, zvinyorwa zvako nemasheya aunawo — kuna Anthropic, kambani inoshandisa modhi yeAI inonzi Claude. Anthropic inoishandisa chete kupindura chikumbiro uye haiishandisi kudzidzisa AI yayo. Ruzivo rwakawanda ruri muMutemo Wekuvanzika.';
+
+  @override
+  String get aiConsentLater => 'Kwete izvozvi';
+
+  @override
+  String get aiConsentAllow => 'Bvumira';
+
+  @override
+  String get aiConsentSetting => 'Zvinhu zveAI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Zvikumbiro zvako zvinotumirwa kuna Anthropic (Claude) kuti zvipindurwe. Kana zvakadzimwa, app inobvunza usati watumira chikumbiro cheAI chinotevera, uye pfupiso yemangwanani inozviitira yega haishandi.';
+
+  @override
+  String get aiReport => 'Shuma';
+
+  @override
+  String get aiReportTitle => 'Shuma mhinduro iyi yeAI';
+
+  @override
+  String get aiReportInaccurate => 'Haina kururama kana inotsausa';
+
+  @override
+  String get aiReportHarmful => 'Inogumbura kana ine njodzi';
+
+  @override
+  String get aiReportOther => 'Chimwe chinhu';
+
+  @override
+  String get aiReportNoteHint => 'Chii chakaipa? (kana uchida)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Tinogamuchira mavara emhinduro iyi nechinyorwa chako — pasina akaundi yako — kuti tigoiongorora.';
+
+  @override
+  String get aiReportSend => 'Tumira mushumo';
+
+  @override
+  String get aiReportThanks => 'Tatenda — tichazviongorora.';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

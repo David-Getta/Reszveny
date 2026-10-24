@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../analysis/report_ai.dart';
+import '../../analysis/ai_consent.dart';
 import '../../../app_services.dart';
 import '../../../core/models/stock_report.dart';
 import '../../analysis/analysis_chat.dart' show ChatMessage;
@@ -71,9 +73,10 @@ class _AskSheetState extends State<_AskSheet> {
   }
 
   Future<void> _ask(String text) async {
+    if (text.trim().isEmpty) return;
+    if (!await ensureAiConsent(context) || !mounted) return;
     final services = AppServices.of(context);
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
-    if (text.trim().isEmpty) return;
     setState(() => _error = null);
     _input.clear();
     services.telemetry.track('ask_question');
@@ -239,6 +242,11 @@ class _Bubble extends StatelessWidget {
           children: [
             SelectableText(message.text, style: theme.textTheme.bodyMedium?.copyWith(height: 1.45)),
             SourceLinks(sources: message.sources, keyPrefix: 'ask-source'),
+            if (!fromUser)
+              Align(
+                alignment: AlignmentDirectional.centerEnd,
+                child: ReportAiButton(kind: AiReportKind.ask, text: message.text, compact: true),
+              ),
           ],
         ),
       ),

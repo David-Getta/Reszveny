@@ -2958,6 +2958,78 @@ class AppLocalizationsMg extends AppLocalizations {
       'Efa manana famandrihana amin\'ny alalan\'ny App Store na Google Play ianao. Raha hanova ny tolotrao, ampiasao ny fikirakiran\'ny famandrihana ao amin\'io fivarotana io.';
 
   @override
+  String get paymentViaAppStore =>
+      'Aloa amin\'ny alalan\'ny kaontinao Apple. Azo foanana na oviana na oviana ao amin\'ny fikirakiran\'ny famandrihana App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Aloa amin\'ny alalan\'ny kaontinao Google Play. Azo foanana na oviana na oviana ao amin\'ny fikirakiran\'ny famandrihana Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Tsy misy famandrihana tantanina eto. Ny famandrihana novidiana tao amin\'ny App Store dia tantanina ao amin\'ny fikirakiranao App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Tsy misy famandrihana tantanina eto. Ny famandrihana novidiana tao amin\'ny Google Play dia tantanina ao amin\'ny fikirakiranao Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Ho voafafa tanteraka ny kaontinao sy izay rehetra voatahiry ao amin\'ny mpizara anay (mailaka, anjara, fampiasana), ary ho very ny fandalinana tsy nampiasaina. Ny famandrihana App Store dia tsy maintsy foanana ao amin\'ny fikirakiranao App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Ho voafafa tanteraka ny kaontinao sy izay rehetra voatahiry ao amin\'ny mpizara anay (mailaka, anjara, fampiasana), ary ho very ny fandalinana tsy nampiasaina. Ny famandrihana Google Play dia tsy maintsy foanana ao amin\'ny fikirakiranao Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Alohan\'ny hampiasanao ny endri-javatra AI';
+
+  @override
+  String get aiConsentBody =>
+      'Mba handalinana aksiona, hamakiana sary sy sary efijery, ary hamaliana ny fanontanianao, dia alefan\'i WhatStock any amin\'i Anthropic, izay mampandeha ny modely AI Claude, ireo angona ilaina amin\'ilay fangatahana — ny sary na ny sary efijery, ny aksiona, ny fanontanianao ary, raha ampiasainao izany, ny naotinao sy ny fanananao. Ampiasain\'i Anthropic hamaliana ilay fangatahana ihany izy ireo ary tsy ampiasainy hampiofanana ny AI-ny. Ao amin\'ny Politikan\'ny fiainana manokana ny antsipiriany.';
+
+  @override
+  String get aiConsentLater => 'Tsy izao';
+
+  @override
+  String get aiConsentAllow => 'Avelao';
+
+  @override
+  String get aiConsentSetting => 'Endri-javatra AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Alefa any amin\'i Anthropic (Claude) ny fangatahanao mba hovaliana. Raha maty izy, dia hanontany ny fampiharana alohan\'ny fangatahana AI manaraka, ary tsy hatao ny famintinana mandeha ho azy isa-maraina.';
+
+  @override
+  String get aiReport => 'Tatero';
+
+  @override
+  String get aiReportTitle => 'Tatero ity valin\'ny AI ity';
+
+  @override
+  String get aiReportInaccurate => 'Diso na mamitaka';
+
+  @override
+  String get aiReportHarmful => 'Manafintohina na manimba';
+
+  @override
+  String get aiReportOther => 'Zavatra hafa';
+
+  @override
+  String get aiReportNoteHint => 'Inona no tsy mety? (tsy voatery)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Ny soratr\'ity valiny ity sy ny naotinao ihany no voarainay — tsy misy ny kaontinao — mba handinihanay azy.';
+
+  @override
+  String get aiReportSend => 'Alefaso ny tatitra';
+
+  @override
+  String get aiReportThanks => 'Misaotra — hodinihinay izany.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

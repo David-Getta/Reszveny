@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.300)
+# Változásjegyzék (0.2.130 → 0.2.301)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,26 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Áruházi megfelelés: a negyvenhetedik kódátnézés javításai
+
+- **0.2.301**: az első AI-kérés előtt egyszeri hozzájárulás-ablak mondja el, mit küld az app (a fotót vagy
+  képernyőképet, a részvényt, a kérdést, és ahol használod, a jegyzeteket és pozíciókat), kinek (az Anthropicnak,
+  amely a Claude-ot futtatja) és mire (csak a válaszhoz, nem tanításhoz) – App Store 5.1.2(i). „Most nem” esetén
+  semmi nem megy ki, és legközelebb újra kérdez; a Beállításokban (AI-funkciók) visszavonható, és amíg nincs
+  hozzájárulás, a reggeli összefoglaló sem készül el magától.
+- Minden AI-válasz (elemzés, portfólió-elemzés, kérdés-válasz, hír- és mozgásmagyarázat, gyorsjelentés-
+  összefoglaló, napi összefoglaló) alatt **Jelentés** gomb: téves, sértő vagy egyéb, megjegyzéssel; a szerver a fiók
+  nélkül, 180 napig őrzi, az admin oldalon látszik (Google Play AI-tartalom szabály). A napi összefoglaló is
+  AI-készítésűként jelölt, figyelmeztetéssel.
+- **Fiók törlése böngészőből** (`/account/delete`): e-mail → kód → törlés, ugyanúgy, mint az appban (a webes
+  előfizetést lemondja); a nyitóoldal aljáról is elérhető (Google Play adatbiztonság).
+- Csak a saját bolt neve: iPhone-on és iPaden az App Store, Androidon a Google Play szerepel a fizetési
+  megjegyzésben, az előfizetés-kezelésben és a fióktörlésben. iOS-en a barátkód beváltása rejtett (az elemzés
+  jóváírása digitális tartalom – App Store 3.1.1).
+- iPaden a megosztás akkor is megnyílik, ha a gomb helye nem ismert (a képernyő közepéről); a „Kép mentése”
+  fotókönyvtár-engedélyének szövege megvan. Az Apple adatvédelmi manifeszt (`PrivacyInfo.xcprivacy`) bekerült az
+  iOS és a macOS csomagba. Windows-on az automatikus indítás a Store-csomag azonosítójával működik.
 
 ## Fizetési események: a negyvennyolcadik kódátnézés javításai
 

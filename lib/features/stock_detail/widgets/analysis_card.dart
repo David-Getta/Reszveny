@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../../analysis/report_ai.dart';
+import '../../analysis/ai_consent.dart';
 import '../../../core/util/links.dart';
 import '../../../app_services.dart';
 import '../../../core/errors.dart';
@@ -102,6 +104,7 @@ class _AnalysisCardState extends State<AnalysisCard> {
   }
 
   Future<void> _generate({bool force = false}) async {
+    if (!await ensureAiConsent(context) || !mounted) return;
     final services = AppServices.of(context);
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
     // A saját pozíció más pénznemű osztalékaihoz friss árfolyam, mielőtt az adatok összeállnak.
@@ -302,6 +305,14 @@ class _AnalysisCardState extends State<AnalysisCard> {
                 Text(
                   '${l10n.aiGeneratedAt(fmt.dateTime(report.generatedAt))} · ${l10n.aiDisclaimer}',
                   style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                ),
+                Align(
+                  alignment: AlignmentDirectional.centerEnd,
+                  child: ReportAiButton(
+                    kind: AiReportKind.analysis,
+                    text: reportPlainText(report),
+                    symbol: report.symbol,
+                  ),
                 ),
                 if (trial) ...[const SizedBox(height: 12), const TrialUpsellNote()],
               ],

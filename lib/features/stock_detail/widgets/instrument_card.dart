@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../analysis/ai_consent.dart';
 import '../../../app_services.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../l10n/supported_locales.dart';
@@ -47,7 +48,8 @@ Future<void> showInstrumentExplanation(
   required String symbol,
   required String name,
   String? exchange,
-}) {
+}) async {
+  if (!await ensureAiConsent(context) || !context.mounted) return;
   final services = AppServices.of(context);
   final l10n = AppLocalizations.of(context);
   final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;

@@ -2927,6 +2927,78 @@ class AppLocalizationsMai extends AppLocalizations {
       'अहाँ लग पहिनेसँ App Store वा Google Play द्वारा सदस्यता अछि। अपन प्लान बदलबाक लेल ओहि स्टोरक सदस्यता सेटिंग्सक उपयोग करू।';
 
   @override
+  String get paymentViaAppStore =>
+      'भुगतान अहाँक Apple खातासँ होइत अछि। App Store क सदस्यता सेटिंग्समे कखनो रद्द करू।';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'भुगतान अहाँक Google Play खातासँ होइत अछि। Google Play क सदस्यता सेटिंग्समे कखनो रद्द करू।';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'एतय प्रबंधित करबाक लेल कोनो सदस्यता नहि अछि। App Store मे कीनल सदस्यता अहाँक App Store सेटिंग्समे प्रबंधित होइत अछि।';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'एतय प्रबंधित करबाक लेल कोनो सदस्यता नहि अछि। Google Play मे कीनल सदस्यता अहाँक Google Play सेटिंग्समे प्रबंधित होइत अछि।';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'अहाँक खाता आ हमर सभक सर्वर पर राखल सभ किछु (ईमेल, कोटा, उपयोग) सदाक लेल मेटा देल जाएत, आ बिना उपयोग कएल विश्लेषण नष्ट भऽ जाएत। App Store क सदस्यता अहाँक App Store सेटिंग्समे रद्द करऽ पड़त।';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'अहाँक खाता आ हमर सभक सर्वर पर राखल सभ किछु (ईमेल, कोटा, उपयोग) सदाक लेल मेटा देल जाएत, आ बिना उपयोग कएल विश्लेषण नष्ट भऽ जाएत। Google Play क सदस्यता अहाँक Google Play सेटिंग्समे रद्द करऽ पड़त।';
+
+  @override
+  String get aiConsentTitle => 'AI सुविधाक उपयोग करबासँ पहिने';
+
+  @override
+  String get aiConsentBody =>
+      'शेयरक विश्लेषण करबा, फोटो आ स्क्रीनशॉट पढ़बा, आ अहाँक प्रश्नक उत्तर देबाक लेल WhatStock अनुरोध लेल आवश्यक डेटा — फोटो वा स्क्रीनशॉट, शेयर, अहाँक प्रश्न आ, जँ अहाँ उपयोग करैत छी तँ, अहाँक नोट आ पोजीशन — Anthropic केँ पठबैत अछि, जे Claude AI मॉडल चलबैत अछि। Anthropic एकरा मात्र अनुरोधक उत्तर देबाक लेल प्रोसेस करैत अछि आ अपन AI केँ प्रशिक्षित करबाक लेल एकर उपयोग नहि करैत अछि। विस्तृत जानकारी गोपनीयता नीतिमे अछि।';
+
+  @override
+  String get aiConsentLater => 'एखन नहि';
+
+  @override
+  String get aiConsentAllow => 'अनुमति दिअ';
+
+  @override
+  String get aiConsentSetting => 'AI सुविधा';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'अहाँक अनुरोध उत्तरक लेल Anthropic (Claude) केँ पठाओल जाइत अछि। बंद रहला पर ऐप अगिला AI अनुरोधसँ पहिने पुछैत अछि, आ स्वचालित भोरक सारांश नहि बनैत अछि।';
+
+  @override
+  String get aiReport => 'रिपोर्ट करू';
+
+  @override
+  String get aiReportTitle => 'एहि AI उत्तरक रिपोर्ट करू';
+
+  @override
+  String get aiReportInaccurate => 'गलत वा भ्रामक';
+
+  @override
+  String get aiReportHarmful => 'आपत्तिजनक वा हानिकारक';
+
+  @override
+  String get aiReportOther => 'किछु आर';
+
+  @override
+  String get aiReportNoteHint => 'की गलत अछि? (वैकल्पिक)';
+
+  @override
+  String get aiReportPrivacy =>
+      'जाँच करबाक लेल हमरा सभकेँ एहि उत्तरक पाठ आ अहाँक नोट भेटैत अछि — अहाँक खाताक बिना।';
+
+  @override
+  String get aiReportSend => 'रिपोर्ट पठाउ';
+
+  @override
+  String get aiReportThanks => 'धन्यवाद — हम सभ एकर जाँच करब।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

@@ -2933,6 +2933,78 @@ class AppLocalizationsHu extends AppLocalizations {
       'Már van előfizetésed az App Store-ban vagy a Google Playen. A csomagot az ottani előfizetés-beállításokban válthatod.';
 
   @override
+  String get paymentViaAppStore =>
+      'A számlázás az Apple-fiókodon keresztül történik. Bármikor lemondható az App Store előfizetés-beállításaiban.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'A számlázás a Google Play-fiókodon keresztül történik. Bármikor lemondható a Google Play előfizetés-beállításaiban.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Itt nincs kezelhető előfizetés. Az App Store-ban vett előfizetést az App Store beállításaiban kezelheted.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Itt nincs kezelhető előfizetés. A Google Playen vett előfizetést a Google Play beállításaiban kezelheted.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'A fiókod és minden, amit a szerveren tárolunk (e-mail, keret, használat), véglegesen törlődik, és a fel nem használt elemzések elvesznek. Az App Store-os előfizetést az App Store beállításaiban kell lemondanod.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'A fiókod és minden, amit a szerveren tárolunk (e-mail, keret, használat), véglegesen törlődik, és a fel nem használt elemzések elvesznek. A Google Play-es előfizetést a Google Play beállításaiban kell lemondanod.';
+
+  @override
+  String get aiConsentTitle => 'Mielőtt AI-funkciót használsz';
+
+  @override
+  String get aiConsentBody =>
+      'A részvények elemzéséhez, a fotók és képernyőképek felismeréséhez és a kérdéseid megválaszolásához a WhatStock elküldi a kéréshez szükséges adatokat – a fotót vagy képernyőképet, a részvényt, a kérdésedet és, ahol használod, a jegyzeteidet és a pozícióidat – az Anthropicnak, amely a Claude AI-modellt futtatja. Az Anthropic ezeket csak a kérés megválaszolására használja, az AI tanítására nem. A részletek az adatkezelési tájékoztatóban.';
+
+  @override
+  String get aiConsentLater => 'Most nem';
+
+  @override
+  String get aiConsentAllow => 'Engedélyezem';
+
+  @override
+  String get aiConsentSetting => 'AI-funkciók';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'A kéréseid az Anthropichoz (Claude) kerülnek megválaszolásra. Kikapcsolva az app a következő AI-kérés előtt rákérdez, és a reggeli összefoglaló sem készül el magától.';
+
+  @override
+  String get aiReport => 'Jelentés';
+
+  @override
+  String get aiReportTitle => 'AI-válasz jelentése';
+
+  @override
+  String get aiReportInaccurate => 'Téves vagy félrevezető';
+
+  @override
+  String get aiReportHarmful => 'Sértő vagy ártalmas';
+
+  @override
+  String get aiReportOther => 'Egyéb';
+
+  @override
+  String get aiReportNoteHint => 'Mi a gond vele? (nem kötelező)';
+
+  @override
+  String get aiReportPrivacy =>
+      'A válasz szövegét és a megjegyzésedet kapjuk meg – a fiókod nélkül –, hogy átnézhessük.';
+
+  @override
+  String get aiReportSend => 'Jelentés küldése';
+
+  @override
+  String get aiReportThanks => 'Köszönjük, átnézzük.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

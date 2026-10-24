@@ -2932,6 +2932,78 @@ class AppLocalizationsTt extends AppLocalizations {
       'Сездә App Store яки Google Play аша язылу бар инде. Тарифны үзгәртү өчен, шул кибетнең язылу көйләүләрен кулланыгыз.';
 
   @override
+  String get paymentViaAppStore =>
+      'Түләү Apple аккаунтыгыз аша алына. App Store язылу көйләүләрендә теләсә кайчан баш тарта аласыз.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Түләү Google Play аккаунтыгыз аша алына. Google Play язылу көйләүләрендә теләсә кайчан баш тарта аласыз.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Монда идарә итәрлек язылу юк. App Store аша сатып алынган язылу App Store көйләүләрегездә идарә ителә.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Монда идарә итәрлек язылу юк. Google Play аша сатып алынган язылу Google Play көйләүләрегездә идарә ителә.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Аккаунтыгыз һәм безнең серверда сакланган бар нәрсә (электрон почта, лимит, куллану) мәңгегә бетереләчәк, ә кулланылмаган анализлар юкка чыгачак. App Store язылуын App Store көйләүләрегездә туктатырга кирәк.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Аккаунтыгыз һәм безнең серверда сакланган бар нәрсә (электрон почта, лимит, куллану) мәңгегә бетереләчәк, ә кулланылмаган анализлар юкка чыгачак. Google Play язылуын Google Play көйләүләрегездә туктатырга кирәк.';
+
+  @override
+  String get aiConsentTitle => 'AI функцияләрен кулланганчы';
+
+  @override
+  String get aiConsentBody =>
+      'Акцияләрне анализлау, фото һәм скриншотларны уку, сорауларыгызга җавап бирү өчен WhatStock соратуга кирәкле мәгълүматларны — фото яки скриншотны, акцияне, сорауыгызны һәм, кулланасыз икән, язмаларыгызны һәм позицияләрегезне — Claude AI моделен идарә итүче Anthropic компаниясенә җибәрә. Anthropic аларны соратуга җавап бирү өчен генә эшкәртә һәм үз AI-ын өйрәтү өчен кулланмый. Тулырак мәгълүмат хосусыйлык сәясәтендә.';
+
+  @override
+  String get aiConsentLater => 'Хәзер түгел';
+
+  @override
+  String get aiConsentAllow => 'Рөхсәт итү';
+
+  @override
+  String get aiConsentSetting => 'AI функцияләре';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Соратуларыгыз җавап өчен Anthropic (Claude) компаниясенә җибәрелә. Сүндерелгән булса, кушымта киләсе AI соратуы алдыннан сорый, ә автоматик иртәнге йомгак төзелми.';
+
+  @override
+  String get aiReport => 'Шикаять итү';
+
+  @override
+  String get aiReportTitle => 'Бу AI җавабына шикаять итү';
+
+  @override
+  String get aiReportInaccurate => 'Дөрес түгел яки ялгыштыра';
+
+  @override
+  String get aiReportHarmful => 'Мыскыллы яки зарарлы';
+
+  @override
+  String get aiReportOther => 'Башка нәрсә';
+
+  @override
+  String get aiReportNoteHint => 'Нәрсә дөрес түгел? (мәҗбүри түгел)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Тикшерү өчен без бу җавапның текстын һәм искәрмәгезне — аккаунтыгызга бәйләмичә — алабыз.';
+
+  @override
+  String get aiReportSend => 'Шикаять җибәрү';
+
+  @override
+  String get aiReportThanks => 'Рәхмәт — без моны тикшерәбез.';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

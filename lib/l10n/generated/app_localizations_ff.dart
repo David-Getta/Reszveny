@@ -2932,6 +2932,78 @@ class AppLocalizationsFf extends AppLocalizations {
       'A woodi abonmaa gila e App Store walla Google Play. Ngam waylude feere maa, huutoro teelte abonmaa bitik ngon.';
 
   @override
+  String get paymentViaAppStore =>
+      'Njoɓdi ina rewa e konte Apple maa. Haaytu sahaa kala e teelte abonmaa App Store maa.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Njoɓdi ina rewa e konte Google Play maa. Haaytu sahaa kala e teelte abonmaa Google Play maa.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Alaa abonmaa toppitetee ɗoo. Abonmaa soodaaɗo e App Store ina toppitee e teelte App Store maa.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Alaa abonmaa toppitetee ɗoo. Abonmaa soodaaɗo e Google Play ina toppitee e teelte Google Play maa.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Konte maa e kala ko min ndanndi e sarworde amen (iimeel, geɗal, kuutorgol) ina momtee haa abada, ƴeewndooji ɗi a huutoraani ina majja. Abonmaa App Store ina foti haaytireede e teelte App Store maa.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Konte maa e kala ko min ndanndi e sarworde amen (iimeel, geɗal, kuutorgol) ina momtee haa abada, ƴeewndooji ɗi a huutoraani ina majja. Abonmaa Google Play ina foti haaytireede e teelte Google Play maa.';
+
+  @override
+  String get aiConsentTitle => 'Ado maa huutoraade golle AI';
+
+  @override
+  String get aiConsentBody =>
+      'Ngam ƴeewndaade aksiyonji, janngude nate e nate yaynirde, e jaabaade naamne maa, WhatStock ina neldoo keɓe ɗe ɗaɓɓaande nden sokli — natal ngal walla natal yaynirde ngal, aksiyon oo, naamnal maa e, so a huutoriima ɗum, binndi maa e ko a jogii — e Anthropic, sosiyetee nde ɗowata modeel AI Claude. Anthropic ina huutora ɗum tan ngam jaabaade ɗaɓɓaande nden, ina huutortaa ɗum ngam ekkitinde AI mum. Ɓeydi humpito ina njiyaa e Dawrugol suturo.';
+
+  @override
+  String get aiConsentLater => 'Wonaa jooni';
+
+  @override
+  String get aiConsentAllow => 'Yamir';
+
+  @override
+  String get aiConsentSetting => 'Golle AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Ɗaɓɓaande maa ina neldee e Anthropic (Claude) ngam jaabeede. So ɗum ñifaama, jaaɓnirgal ngal ina naamna ado ɗaɓɓaande AI garoowo nde, ciimtol subaka waɗotoongol hoore mum ngol waɗataake.';
+
+  @override
+  String get aiReport => 'Hollu caɗeele';
+
+  @override
+  String get aiReportTitle => 'Hollu caɗeele jaabawol AI ngol';
+
+  @override
+  String get aiReportInaccurate => 'Ko feewaani walla ko majjinta';
+
+  @override
+  String get aiReportHarmful => 'Ko hoyna walla ko bonnata';
+
+  @override
+  String get aiReportOther => 'Huunde woɗnde';
+
+  @override
+  String get aiReportNoteHint => 'Ko feewaani? (suɓaade)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Men keɓata binndol jaabawol ngol e binndi maa — tawa konte maa alaa e mum — ngam men ƴeewa ɗum.';
+
+  @override
+  String get aiReportSend => 'Neldu caɗeele ɗee';
+
+  @override
+  String get aiReportThanks => 'A jaaraama — men ƴeewto ɗum.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

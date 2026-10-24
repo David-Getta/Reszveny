@@ -2952,6 +2952,78 @@ class AppLocalizationsDe extends AppLocalizations {
       'Du hast bereits ein Abonnement über den App Store oder Google Play. Um deinen Tarif zu ändern, nutze die Abo-Einstellungen dieses Stores.';
 
   @override
+  String get paymentViaAppStore =>
+      'Die Abrechnung erfolgt über dein Apple-Konto. Kündigen kannst du jederzeit in den Abo-Einstellungen im App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Die Abrechnung erfolgt über dein Konto bei Google Play. Kündigen kannst du jederzeit in den Abo-Einstellungen von Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Hier gibt es kein Abonnement zu verwalten. Ein im App Store abgeschlossenes Abonnement verwaltest du in deinen Einstellungen für den App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Hier gibt es kein Abonnement zu verwalten. Ein bei Google Play abgeschlossenes Abonnement verwaltest du in deinen Einstellungen für Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Dein Konto und alles, was auf unserem Server gespeichert ist (E-Mail, Kontingent, Nutzung), wird endgültig gelöscht; nicht genutzte Analysen verfallen. Ein Abo über den App Store musst du in deinen Einstellungen für den App Store kündigen.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Dein Konto und alles, was auf unserem Server gespeichert ist (E-Mail, Kontingent, Nutzung), wird endgültig gelöscht; nicht genutzte Analysen verfallen. Ein Abo über Google Play musst du in deinen Einstellungen für Google Play kündigen.';
+
+  @override
+  String get aiConsentTitle => 'Bevor du KI-Funktionen nutzt';
+
+  @override
+  String get aiConsentBody =>
+      'Um Aktien zu analysieren, Fotos und Screenshots auszulesen und deine Fragen zu beantworten, sendet WhatStock die für die Anfrage nötigen Daten – das Foto oder den Screenshot, die Aktie, deine Frage und, falls du sie nutzt, deine Notizen und Positionen – an Anthropic, den Betreiber des KI-Modells Claude. Anthropic verarbeitet sie nur zur Beantwortung der Anfrage und nutzt sie nicht zum Training seiner KI. Details findest du in der Datenschutzerklärung.';
+
+  @override
+  String get aiConsentLater => 'Nicht jetzt';
+
+  @override
+  String get aiConsentAllow => 'Erlauben';
+
+  @override
+  String get aiConsentSetting => 'KI-Funktionen';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Deine Anfragen werden zur Beantwortung an Anthropic (Claude) gesendet. Wenn ausgeschaltet, fragt die App vor der nächsten KI-Anfrage nach, und die automatische Morgenzusammenfassung wird nicht erstellt.';
+
+  @override
+  String get aiReport => 'Melden';
+
+  @override
+  String get aiReportTitle => 'Diese KI-Antwort melden';
+
+  @override
+  String get aiReportInaccurate => 'Falsch oder irreführend';
+
+  @override
+  String get aiReportHarmful => 'Beleidigend oder schädlich';
+
+  @override
+  String get aiReportOther => 'Etwas anderes';
+
+  @override
+  String get aiReportNoteHint => 'Was stimmt nicht? (optional)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Wir erhalten den Text dieser Antwort und deine Notiz – ohne dein Konto –, damit wir sie prüfen können.';
+
+  @override
+  String get aiReportSend => 'Meldung senden';
+
+  @override
+  String get aiReportThanks => 'Danke – wir sehen es uns an.';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

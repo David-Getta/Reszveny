@@ -2943,6 +2943,78 @@ class AppLocalizationsKn extends AppLocalizations {
       'App Store ಅಥವಾ Google Play ಮೂಲಕ ನೀವು ಈಗಾಗಲೇ ಚಂದಾದಾರಿಕೆ ಹೊಂದಿದ್ದೀರಿ. ನಿಮ್ಮ ಪ್ಲಾನ್ ಬದಲಾಯಿಸಲು, ಆ ಸ್ಟೋರ್‌ನ ಚಂದಾದಾರಿಕೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬಳಸಿ.';
 
   @override
+  String get paymentViaAppStore =>
+      'ನಿಮ್ಮ Apple ಖಾತೆಯ ಮೂಲಕ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ. App Store ಚಂದಾದಾರಿಕೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಯಾವಾಗ ಬೇಕಾದರೂ ರದ್ದುಮಾಡಿ.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'ನಿಮ್ಮ Google Play ಖಾತೆಯ ಮೂಲಕ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ. Google Play ಚಂದಾದಾರಿಕೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಯಾವಾಗ ಬೇಕಾದರೂ ರದ್ದುಮಾಡಿ.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'ಇಲ್ಲಿ ನಿರ್ವಹಿಸಲು ಯಾವುದೇ ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ. App Store ನಲ್ಲಿ ಖರೀದಿಸಿದ ಚಂದಾದಾರಿಕೆಯನ್ನು ನಿಮ್ಮ App Store ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ನಿರ್ವಹಿಸಲಾಗುತ್ತದೆ.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'ಇಲ್ಲಿ ನಿರ್ವಹಿಸಲು ಯಾವುದೇ ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ. Google Play ನಲ್ಲಿ ಖರೀದಿಸಿದ ಚಂದಾದಾರಿಕೆಯನ್ನು ನಿಮ್ಮ Google Play ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ನಿರ್ವಹಿಸಲಾಗುತ್ತದೆ.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'ನಿಮ್ಮ ಖಾತೆ ಮತ್ತು ನಮ್ಮ ಸರ್ವರ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾದ ಎಲ್ಲವೂ (ಇಮೇಲ್, ಕೋಟಾ, ಬಳಕೆ) ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲ್ಪಡುತ್ತದೆ, ಮತ್ತು ಬಳಸದ ವಿಶ್ಲೇಷಣೆಗಳು ಕಳೆದುಹೋಗುತ್ತವೆ. App Store ಚಂದಾದಾರಿಕೆಯನ್ನು ನಿಮ್ಮ App Store ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ರದ್ದುಮಾಡಬೇಕು.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'ನಿಮ್ಮ ಖಾತೆ ಮತ್ತು ನಮ್ಮ ಸರ್ವರ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾದ ಎಲ್ಲವೂ (ಇಮೇಲ್, ಕೋಟಾ, ಬಳಕೆ) ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲ್ಪಡುತ್ತದೆ, ಮತ್ತು ಬಳಸದ ವಿಶ್ಲೇಷಣೆಗಳು ಕಳೆದುಹೋಗುತ್ತವೆ. Google Play ಚಂದಾದಾರಿಕೆಯನ್ನು ನಿಮ್ಮ Google Play ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ರದ್ದುಮಾಡಬೇಕು.';
+
+  @override
+  String get aiConsentTitle => 'AI ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬಳಸುವ ಮೊದಲು';
+
+  @override
+  String get aiConsentBody =>
+      'ಷೇರುಗಳನ್ನು ವಿಶ್ಲೇಷಿಸಲು, ಫೋಟೋಗಳು ಮತ್ತು ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ಓದಲು ಹಾಗೂ ನಿಮ್ಮ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಲು, WhatStock ವಿನಂತಿಗೆ ಅಗತ್ಯವಿರುವ ಡೇಟಾವನ್ನು — ಫೋಟೋ ಅಥವಾ ಸ್ಕ್ರೀನ್‌ಶಾಟ್, ಷೇರು, ನಿಮ್ಮ ಪ್ರಶ್ನೆ ಮತ್ತು ನೀವು ಬಳಸಿದರೆ ನಿಮ್ಮ ಟಿಪ್ಪಣಿಗಳು ಹಾಗೂ ಪೊಸಿಷನ್‌ಗಳು — Claude AI ಮಾದರಿಯನ್ನು ನಡೆಸುವ Anthropic ಗೆ ಕಳುಹಿಸುತ್ತದೆ. Anthropic ಇದನ್ನು ವಿನಂತಿಗೆ ಉತ್ತರಿಸಲು ಮಾತ್ರ ಸಂಸ್ಕರಿಸುತ್ತದೆ ಮತ್ತು ತನ್ನ AI ಗೆ ತರಬೇತಿ ನೀಡಲು ಬಳಸುವುದಿಲ್ಲ. ವಿವರಗಳು ಗೌಪ್ಯತಾ ನೀತಿಯಲ್ಲಿವೆ.';
+
+  @override
+  String get aiConsentLater => 'ಈಗ ಬೇಡ';
+
+  @override
+  String get aiConsentAllow => 'ಅನುಮತಿಸಿ';
+
+  @override
+  String get aiConsentSetting => 'AI ವೈಶಿಷ್ಟ್ಯಗಳು';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'ನಿಮ್ಮ ವಿನಂತಿಗಳನ್ನು ಉತ್ತರಕ್ಕಾಗಿ Anthropic (Claude) ಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ. ಆಫ್ ಆಗಿದ್ದಾಗ, ಮುಂದಿನ AI ವಿನಂತಿಯ ಮೊದಲು ಆ್ಯಪ್ ಕೇಳುತ್ತದೆ ಮತ್ತು ಸ್ವಯಂಚಾಲಿತ ಬೆಳಗಿನ ಸಾರಾಂಶವನ್ನು ರಚಿಸಲಾಗುವುದಿಲ್ಲ.';
+
+  @override
+  String get aiReport => 'ವರದಿ ಮಾಡಿ';
+
+  @override
+  String get aiReportTitle => 'ಈ AI ಉತ್ತರವನ್ನು ವರದಿ ಮಾಡಿ';
+
+  @override
+  String get aiReportInaccurate => 'ತಪ್ಪು ಅಥವಾ ದಾರಿತಪ್ಪಿಸುವ';
+
+  @override
+  String get aiReportHarmful => 'ಆಕ್ಷೇಪಾರ್ಹ ಅಥವಾ ಹಾನಿಕಾರಕ';
+
+  @override
+  String get aiReportOther => 'ಬೇರೆ ಏನಾದರೂ';
+
+  @override
+  String get aiReportNoteHint => 'ಏನು ತಪ್ಪಾಗಿದೆ? (ಐಚ್ಛಿಕ)';
+
+  @override
+  String get aiReportPrivacy =>
+      'ಪರಿಶೀಲಿಸಲು ನಾವು ಈ ಉತ್ತರದ ಪಠ್ಯ ಮತ್ತು ನಿಮ್ಮ ಟಿಪ್ಪಣಿಯನ್ನು ಸ್ವೀಕರಿಸುತ್ತೇವೆ — ನಿಮ್ಮ ಖಾತೆ ಇಲ್ಲದೆ.';
+
+  @override
+  String get aiReportSend => 'ವರದಿ ಕಳುಹಿಸಿ';
+
+  @override
+  String get aiReportThanks => 'ಧನ್ಯವಾದಗಳು — ನಾವು ಇದನ್ನು ಪರಿಶೀಲಿಸುತ್ತೇವೆ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

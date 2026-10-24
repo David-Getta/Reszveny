@@ -2931,6 +2931,78 @@ class AppLocalizationsBm extends AppLocalizations {
       'Abɔnɛman bɛ i bolo kaban App Store walima Google Play fɛ. Ni i b’a fɛ ka i ka pilan yɛlɛma, o butiki ka abɔnɛman labɛnw labaara.';
 
   @override
+  String get paymentViaAppStore =>
+      'Sarali bɛ kɛ i ka Apple kɔnti fɛ. I bɛ se k’a dabila waati bɛɛ i ka App Store abɔnɛman labɛnw kɔnɔ.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Sarali bɛ kɛ i ka Google Play kɔnti fɛ. I bɛ se k’a dabila waati bɛɛ i ka Google Play abɔnɛman labɛnw kɔnɔ.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Abɔnɛman si tɛ yan ka ɲɛnabɔ. Abɔnɛman min sanna App Store la, o bɛ ɲɛnabɔ i ka App Store labɛnw kɔnɔ.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Abɔnɛman si tɛ yan ka ɲɛnabɔ. Abɔnɛman min sanna Google Play la, o bɛ ɲɛnabɔ i ka Google Play labɛnw kɔnɔ.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'I ka kɔnti ni fɛn o fɛn marala an ka sɛriwɛri kan (imɛli, hakɛ, labaarali) bɛna jɔsi pewu, sɛgɛsɛgɛli minnu ma kɛ, olu bɛna tunun. App Store abɔnɛman ka kan ka dabila i ka App Store labɛnw kɔnɔ.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'I ka kɔnti ni fɛn o fɛn marala an ka sɛriwɛri kan (imɛli, hakɛ, labaarali) bɛna jɔsi pewu, sɛgɛsɛgɛli minnu ma kɛ, olu bɛna tunun. Google Play abɔnɛman ka kan ka dabila i ka Google Play labɛnw kɔnɔ.';
+
+  @override
+  String get aiConsentTitle => 'Sani i ka AI fɛɛrɛw labaara';
+
+  @override
+  String get aiConsentBody =>
+      'Walasa ka aksiyɔnw sɛgɛsɛgɛ, ka jaw ni ɛkran jaw kalan, ani ka i ka ɲininkaliw jaabi, WhatStock bɛ kunnafoni minnu ka kan ni ɲinini ye — ja walima ɛkran ja, aksiyɔn, i ka ɲininkali ani, n’i b’u labaara, i ka sɛbɛnniw ni i bolo aksiyɔnw — ci Anthropic ma, sosiyete min bɛ Claude AI modɛli baara. Anthropic b’u labaara ɲinini jaabili dɔrɔn de kama, a t’u labaara k’a yɛrɛ ka AI kalan. Kunnafoni wɛrɛw bɛ gundo marali sariyaw kɔnɔ.';
+
+  @override
+  String get aiConsentLater => 'Sisan tɛ';
+
+  @override
+  String get aiConsentAllow => 'Sɔn';
+
+  @override
+  String get aiConsentSetting => 'AI fɛɛrɛw';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'I ka ɲininiw bɛ ci Anthropic (Claude) ma walasa u ka jaabi. N’a datugura, porogaramu bɛ i ɲininka sani AI ɲinini nata ka kɛ, wa sɔgɔma kuntaman min bɛ dilan a yɛrɛ ma, o tɛ kɛ.';
+
+  @override
+  String get aiReport => 'Gɛlɛya fɔ';
+
+  @override
+  String get aiReportTitle => 'Nin AI jaabi gɛlɛya fɔ';
+
+  @override
+  String get aiReportInaccurate => 'A filila walima a bɛ mɔgɔ lafili';
+
+  @override
+  String get aiReportHarmful => 'A bɛ mɔgɔ dɔgɔya walima a ka jugu';
+
+  @override
+  String get aiReportOther => 'Fɛn wɛrɛ';
+
+  @override
+  String get aiReportNoteHint => 'Mun tɛ ɲɛ? (n’i b’a fɛ)';
+
+  @override
+  String get aiReportPrivacy =>
+      'An bɛ nin jaabi sɛbɛn ni i ka sɛbɛnni sɔrɔ — i ka kɔnti t’u fɛ — walasa k’a lajɛ.';
+
+  @override
+  String get aiReportSend => 'Gɛlɛya fɔli ci';
+
+  @override
+  String get aiReportThanks => 'I ni ce — an bɛna a lajɛ.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

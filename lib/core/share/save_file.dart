@@ -2,6 +2,8 @@ import 'package:file_selector/file_selector.dart';
 import 'package:flutter/foundation.dart';
 import 'package:share_plus/share_plus.dart';
 
+import 'share_text.dart' show originOrCenter;
+
 /// Fájl mentése: asztali gépen mentés-ablakkal, máshol (telefon, web) a
 /// megosztás-menüvel, ahonnan menthető vagy megnyitható (pl. a naptárban).
 Future<void> saveFile(Uint8List bytes, String fileName, {required String mimeType, required XTypeGroup type}) async {
@@ -17,6 +19,11 @@ Future<void> saveFile(Uint8List bytes, String fileName, {required String mimeTyp
     return;
   }
   await SharePlus.instance.share(
-    ShareParams(files: [file], fileNameOverrides: [fileName], downloadFallbackEnabled: true),
+    ShareParams(
+      files: [file],
+      fileNameOverrides: [fileName],
+      downloadFallbackEnabled: true,
+      sharePositionOrigin: originOrCenter(null),
+    ),
   );
 }

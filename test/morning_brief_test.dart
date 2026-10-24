@@ -64,6 +64,11 @@ void main() {
       title: () => 'Today',
       clock: () => now,
     );
+    // Az AI-hoz adott hozzájárulás nélkül magától sem készül (és nem is hív).
+    await prefs.setAiConsent(false);
+    expect(await morning.check(), isFalse);
+    expect(calls, 0);
+    await prefs.setAiConsent(true);
     expect(await morning.check(), isTrue);
     // Vasárnap nem zárt új kereskedési nap: nincs új összefoglaló.
     now = DateTime.utc(2026, 10, 18, 8);

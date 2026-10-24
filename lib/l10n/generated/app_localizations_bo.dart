@@ -2924,6 +2924,78 @@ class AppLocalizationsBo extends AppLocalizations {
       'ཁྱེད་ལ་ App Store ཡང་ན་ Google Play བརྒྱུད་ནས་མཁོ་ཉོ་ཞིག་སྔར་ནས་ཡོད། འཆར་གཞི་བསྒྱུར་བར་ཚོང་ཁང་དེའི་མཁོ་ཉོའི་སྒྲིག་འགོད་བེད་སྤྱོད་གནང་རོགས།';
 
   @override
+  String get paymentViaAppStore =>
+      'ཁྱེད་ཀྱི་ Apple རྩིས་ཁྲ་བརྒྱུད་རིན་སྤྲོད། App Store ཡི་མཁོ་ཉོའི་སྒྲིག་འགོད་ནང་དུས་ནམ་ཡིན་ཡང་ཕྱིར་འཐེན་ཆོག';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'ཁྱེད་ཀྱི་ Google Play རྩིས་ཁྲ་བརྒྱུད་རིན་སྤྲོད། Google Play ཡི་མཁོ་ཉོའི་སྒྲིག་འགོད་ནང་དུས་ནམ་ཡིན་ཡང་ཕྱིར་འཐེན་ཆོག';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'འདི་ན་དོ་དམ་བྱ་རྒྱུའི་མཁོ་ཉོ་མེད། App Store ནང་ཉོས་པའི་མཁོ་ཉོ་ནི་ཁྱེད་ཀྱི་ App Store སྒྲིག་འགོད་ནང་དོ་དམ་བྱེད།';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'འདི་ན་དོ་དམ་བྱ་རྒྱུའི་མཁོ་ཉོ་མེད། Google Play ནང་ཉོས་པའི་མཁོ་ཉོ་ནི་ཁྱེད་ཀྱི་ Google Play སྒྲིག་འགོད་ནང་དོ་དམ་བྱེད།';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'ཁྱེད་ཀྱི་རྩིས་ཁྲ་དང་ང་ཚོའི་ཞབས་ཞུ་འཕྲུལ་ཆས་ཐོག་ཉར་བའི་ཅ་དངོས་ཚང་མ (གློག་འཕྲིན། ཚད་བཀག བེད་སྤྱོད་གནས་ཚུལ།) རྩ་མེད་དུ་སུབ་འགྲོ་ལ། བེད་སྤྱོད་མ་བྱས་པའི་དབྱེ་ཞིབ་ཀྱང་མེད་པར་འགྱུར། App Store ཡི་མཁོ་ཉོ་ནི་ཁྱེད་ཀྱི་ App Store སྒྲིག་འགོད་ནང་ཕྱིར་འཐེན་དགོས།';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'ཁྱེད་ཀྱི་རྩིས་ཁྲ་དང་ང་ཚོའི་ཞབས་ཞུ་འཕྲུལ་ཆས་ཐོག་ཉར་བའི་ཅ་དངོས་ཚང་མ (གློག་འཕྲིན། ཚད་བཀག བེད་སྤྱོད་གནས་ཚུལ།) རྩ་མེད་དུ་སུབ་འགྲོ་ལ། བེད་སྤྱོད་མ་བྱས་པའི་དབྱེ་ཞིབ་ཀྱང་མེད་པར་འགྱུར། Google Play ཡི་མཁོ་ཉོ་ནི་ཁྱེད་ཀྱི་ Google Play སྒྲིག་འགོད་ནང་ཕྱིར་འཐེན་དགོས།';
+
+  @override
+  String get aiConsentTitle => 'AI ནུས་པ་བེད་སྤྱོད་མ་བྱས་གོང་།';
+
+  @override
+  String get aiConsentBody =>
+      'ཚོང་ཤེར་དབྱེ་ཞིབ་དང་། པར་རིས་དང་བརྙན་ཡོལ་པར་རིས་ཀློག་པ། ཁྱེད་ཀྱི་དྲི་བར་ལན་འདེབས་པའི་ཆེད་དུ་ WhatStock ཡིས་རེ་ཞུ་དེར་དགོས་པའི་གཞི་གྲངས་ — པར་རིས་སམ་བརྙན་ཡོལ་པར་རིས། ཚོང་ཤེར། ཁྱེད་ཀྱི་དྲི་བ། དེ་བཞིན་ཁྱེད་ཀྱིས་བེད་སྤྱོད་བྱས་ན་ཁྱེད་ཀྱི་ཟིན་ཐོ་དང་ཉར་ཡོད་ཧུར་ཁག — Claude AI དཔེ་དབྱིབས་འཁོར་སྐྱོད་བྱེད་མཁན་ Anthropic ལ་གཏོང་། Anthropic ཡིས་དེ་རེ་ཞུར་ལན་འདེབས་པའི་ཆེད་ཁོ་ནར་ལས་སྣོན་བྱེད་ཅིང་། རང་གི་ AI སྦྱོང་བརྡར་ལ་བེད་སྤྱོད་མི་བྱེད། ཞིབ་ཕྲ་སྒེར་གསང་སྲིད་ཇུས་ནང་ཡོད།';
+
+  @override
+  String get aiConsentLater => 'ད་ལྟ་མིན།';
+
+  @override
+  String get aiConsentAllow => 'ཆོག་མཆན་སྤྲོད';
+
+  @override
+  String get aiConsentSetting => 'AI ནུས་པ།';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'ཁྱེད་ཀྱི་རེ་ཞུ་རྣམས་ལན་འདེབས་ཆེད་ Anthropic (Claude) ལ་གཏོང་། བཀག་ཡོད་སྐབས་མཉེན་ཆས་ཀྱིས་ AI རེ་ཞུ་རྗེས་མ་མ་བཏང་གོང་དྲི་བ་འདྲི་ཞིང་། རང་འགུལ་གྱི་ཞོགས་པའི་བསྡུས་དོན་ཡང་བཟོ་མི་སྲིད།';
+
+  @override
+  String get aiReport => 'སྙན་ཞུ།';
+
+  @override
+  String get aiReportTitle => 'AI ལན་འདི་སྙན་ཞུ་བྱེད།';
+
+  @override
+  String get aiReportInaccurate => 'ནོར་འཁྲུལ་ལམ་གོ་ནོར་འཇུག་པ།';
+
+  @override
+  String get aiReportHarmful => 'སེམས་སུན་ནམ་གནོད་སྐྱོན་ཅན།';
+
+  @override
+  String get aiReportOther => 'གཞན་ཞིག';
+
+  @override
+  String get aiReportNoteHint => 'ནོར་འཁྲུལ་ཅི་ཡོད། (གདམ་ཀ)';
+
+  @override
+  String get aiReportPrivacy =>
+      'ཞིབ་བཤེར་ཆེད་ང་ཚོས་ལན་འདིའི་ཡི་གེ་དང་ཁྱེད་ཀྱི་ཟིན་ཐོ་ — ཁྱེད་ཀྱི་རྩིས་ཁྲ་མེད་པར་ — ལེན།';
+
+  @override
+  String get aiReportSend => 'སྙན་ཞུ་གཏོང་།';
+
+  @override
+  String get aiReportThanks => 'ཐུགས་རྗེ་ཆེ། ང་ཚོས་ཞིབ་བཤེར་བྱེད་ངེས།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

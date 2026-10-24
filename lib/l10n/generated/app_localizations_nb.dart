@@ -2934,6 +2934,78 @@ class AppLocalizationsNb extends AppLocalizations {
       'Du har allerede et abonnement via App Store eller Google Play. Bruk abonnementsinnstillingene i den butikken for å endre planen din.';
 
   @override
+  String get paymentViaAppStore =>
+      'Faktureres via Apple-kontoen din. Kan sies opp når som helst i abonnementsinnstillingene i App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Faktureres via Google Play-kontoen din. Kan sies opp når som helst i abonnementsinnstillingene i Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Det finnes ikke noe abonnement å administrere her. Et abonnement kjøpt i App Store administreres i App Store-innstillingene dine.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Det finnes ikke noe abonnement å administrere her. Et abonnement kjøpt i Google Play administreres i Google Play-innstillingene dine.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Kontoen din og alt som er lagret på serveren vår (e-post, kvote, bruk), slettes permanent, og ubrukte analyser går tapt. Et App Store-abonnement må sies opp i App Store-innstillingene dine.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Kontoen din og alt som er lagret på serveren vår (e-post, kvote, bruk), slettes permanent, og ubrukte analyser går tapt. Et Google Play-abonnement må sies opp i Google Play-innstillingene dine.';
+
+  @override
+  String get aiConsentTitle => 'Før du bruker AI-funksjoner';
+
+  @override
+  String get aiConsentBody =>
+      'For å analysere aksjer, lese bilder og skjermbilder og svare på spørsmålene dine sender WhatStock dataene som trengs for forespørselen – bildet eller skjermbildet, aksjen, spørsmålet ditt og, der du bruker dem, notatene og beholdningene dine – til Anthropic, som driver AI-modellen Claude. Anthropic behandler dem kun for å svare på forespørselen og bruker dem ikke til å trene sin AI. Detaljer finner du i personvernerklæringen.';
+
+  @override
+  String get aiConsentLater => 'Ikke nå';
+
+  @override
+  String get aiConsentAllow => 'Tillat';
+
+  @override
+  String get aiConsentSetting => 'AI-funksjoner';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Forespørslene dine sendes til Anthropic (Claude) for å bli besvart. Når dette er av, spør appen før neste AI-forespørsel, og det automatiske morgensammendraget kjøres ikke.';
+
+  @override
+  String get aiReport => 'Rapporter';
+
+  @override
+  String get aiReportTitle => 'Rapporter dette AI-svaret';
+
+  @override
+  String get aiReportInaccurate => 'Feil eller misvisende';
+
+  @override
+  String get aiReportHarmful => 'Støtende eller skadelig';
+
+  @override
+  String get aiReportOther => 'Noe annet';
+
+  @override
+  String get aiReportNoteHint => 'Hva er galt? (valgfritt)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Vi mottar teksten i dette svaret og notatet ditt – uten kontoen din – slik at vi kan gå gjennom det.';
+
+  @override
+  String get aiReportSend => 'Send rapport';
+
+  @override
+  String get aiReportThanks => 'Takk – vi ser på det.';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

@@ -27,6 +27,7 @@ class AppPreferences extends ChangeNotifier {
     this.analysesDone = 0,
     this.reviewAsked = false,
     this.telemetryConsent,
+    this.aiConsent = true,
     this.emailAlerts = true,
     this.weeklyDigest = false,
     this.earningsReminders = true,
@@ -214,6 +215,7 @@ class AppPreferences extends ChangeNotifier {
   static const _analysesDoneKey = 'analyses_done';
   static const _reviewAskedKey = 'review_asked';
   static const _telemetryKey = 'telemetry_consent';
+  static const _aiConsentKey = 'ai_consent';
   static const _emailAlertsKey = 'email_alerts';
   static const _weeklyDigestKey = 'weekly_digest';
 
@@ -300,6 +302,13 @@ class AppPreferences extends ChangeNotifier {
   /// Névtelen használati statisztika és hibajelentés: `null` = még nem
   /// kérdeztük, `true` = engedélyezte, `false` = nem kéri.
   bool? telemetryConsent;
+
+  /// Hozzájárult-e, hogy az AI-funkciók a szükséges adatokat (fotó, kérdés, jegyzet,
+  /// pozíció) az Anthropicnak küldjék: `null` = még nem kérdeztük, `false` = nem.
+  /// (A tárolóból betöltve kérdezetlenül `null`; a konstruktor alapja a tesztekhez igaz.)
+  /// Engedélyezte-e a felhasználó, hogy az AI-kérések adatai az Anthropichoz kerüljenek
+  /// (`null`: még nem döntött; az első AI-kérés előtt az app rákérdez).
+  bool? aiConsent;
 
   /// Belépve a szerver e-mailben is szól, ha egy riasztás teljesül.
   bool emailAlerts;
@@ -658,6 +667,7 @@ class AppPreferences extends ChangeNotifier {
         analysesDone: safe(() => prefs.getInt(_analysesDoneKey)) ?? 0,
         reviewAsked: flag(_reviewAskedKey) ?? false,
         telemetryConsent: flag(_telemetryKey),
+        aiConsent: flag(_aiConsentKey),
         emailAlerts: flag(_emailAlertsKey) ?? true,
         weeklyDigest: flag(_weeklyDigestKey) ?? false,
         switchesAt: _parseMarks(str(_switchesAtKey)),
@@ -706,6 +716,12 @@ class AppPreferences extends ChangeNotifier {
   Future<void> markReviewAsked() async {
     reviewAsked = true;
     await _save((p) => p.setBool(_reviewAskedKey, true));
+  }
+
+  Future<void> setAiConsent(bool allowed) async {
+    aiConsent = allowed;
+    notifyListeners();
+    await _save((p) => p.setBool(_aiConsentKey, allowed));
   }
 
   Future<void> setTelemetryConsent(bool allowed) async {

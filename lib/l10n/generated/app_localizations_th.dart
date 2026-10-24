@@ -2901,6 +2901,78 @@ class AppLocalizationsTh extends AppLocalizations {
       'คุณมีการสมัครสมาชิกผ่าน App Store หรือ Google Play อยู่แล้ว หากต้องการเปลี่ยนแพ็กเกจ ให้ใช้การตั้งค่าการสมัครสมาชิกของสโตร์นั้น';
 
   @override
+  String get paymentViaAppStore =>
+      'เรียกเก็บเงินผ่านบัญชี Apple ของคุณ ยกเลิกได้ทุกเมื่อในการตั้งค่าการสมัครสมาชิกของ App Store';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'เรียกเก็บเงินผ่านบัญชี Google Play ของคุณ ยกเลิกได้ทุกเมื่อในการตั้งค่าการสมัครสมาชิกของ Google Play';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'ไม่มีการสมัครสมาชิกให้จัดการที่นี่ การสมัครสมาชิกที่ซื้อผ่าน App Store ต้องจัดการในการตั้งค่า App Store ของคุณ';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'ไม่มีการสมัครสมาชิกให้จัดการที่นี่ การสมัครสมาชิกที่ซื้อผ่าน Google Play ต้องจัดการในการตั้งค่า Google Play ของคุณ';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'บัญชีของคุณและทุกอย่างที่จัดเก็บไว้บนเซิร์ฟเวอร์ของเรา (อีเมล โควตา การใช้งาน) จะถูกลบอย่างถาวร และการวิเคราะห์ที่ยังไม่ได้ใช้จะหายไป การสมัครสมาชิกผ่าน App Store ต้องยกเลิกในการตั้งค่า App Store ของคุณ';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'บัญชีของคุณและทุกอย่างที่จัดเก็บไว้บนเซิร์ฟเวอร์ของเรา (อีเมล โควตา การใช้งาน) จะถูกลบอย่างถาวร และการวิเคราะห์ที่ยังไม่ได้ใช้จะหายไป การสมัครสมาชิกผ่าน Google Play ต้องยกเลิกในการตั้งค่า Google Play ของคุณ';
+
+  @override
+  String get aiConsentTitle => 'ก่อนใช้ฟีเจอร์ AI';
+
+  @override
+  String get aiConsentBody =>
+      'เพื่อวิเคราะห์หุ้น อ่านรูปภาพและภาพหน้าจอ และตอบคำถามของคุณ WhatStock จะส่งข้อมูลที่จำเป็นสำหรับคำขอ ได้แก่ รูปภาพหรือภาพหน้าจอ หุ้น คำถามของคุณ และบันทึกกับหุ้นที่ถือของคุณหากคุณใช้งาน ไปยัง Anthropic ผู้ให้บริการโมเดล AI Claude โดย Anthropic จะประมวลผลข้อมูลนี้เพื่อตอบคำขอเท่านั้น และไม่นำไปใช้ฝึก AI ของตน ดูรายละเอียดได้ในนโยบายความเป็นส่วนตัว';
+
+  @override
+  String get aiConsentLater => 'ไว้ทีหลัง';
+
+  @override
+  String get aiConsentAllow => 'อนุญาต';
+
+  @override
+  String get aiConsentSetting => 'ฟีเจอร์ AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'คำขอของคุณจะถูกส่งไปยัง Anthropic (Claude) เพื่อรับคำตอบ เมื่อปิดไว้ แอปจะถามก่อนคำขอ AI ครั้งถัดไป และสรุปตอนเช้าอัตโนมัติจะไม่ทำงาน';
+
+  @override
+  String get aiReport => 'รายงาน';
+
+  @override
+  String get aiReportTitle => 'รายงานคำตอบ AI นี้';
+
+  @override
+  String get aiReportInaccurate => 'ไม่ถูกต้องหรือทำให้เข้าใจผิด';
+
+  @override
+  String get aiReportHarmful => 'ไม่เหมาะสมหรือเป็นอันตราย';
+
+  @override
+  String get aiReportOther => 'อื่นๆ';
+
+  @override
+  String get aiReportNoteHint => 'มีอะไรผิดพลาด (ไม่บังคับ)';
+
+  @override
+  String get aiReportPrivacy =>
+      'เราจะได้รับข้อความของคำตอบนี้และบันทึกของคุณ โดยไม่ผูกกับบัญชีของคุณ เพื่อนำไปตรวจสอบ';
+
+  @override
+  String get aiReportSend => 'ส่งรายงาน';
+
+  @override
+  String get aiReportThanks => 'ขอบคุณ เราจะตรวจสอบ';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

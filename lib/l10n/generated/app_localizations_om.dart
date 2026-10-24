@@ -2951,6 +2951,78 @@ class AppLocalizationsOm extends AppLocalizations {
       'Duraan miseensummaa App Store ykn Google Play tiin qabda. Karoora kee jijjiiruuf, qindaa\'ina miseensummaa kuusaa sanaa fayyadami.';
 
   @override
+  String get paymentViaAppStore =>
+      'Herrega Apple keetiin kaffalama. Qindaa\'ina miseensummaa App Store keessatti yeroo barbaadde haquu dandeessa.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Herrega Google Play keetiin kaffalama. Qindaa\'ina miseensummaa Google Play keessatti yeroo barbaadde haquu dandeessa.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Asitti miseensummaan bulchamu hin jiru. Miseensummaan App Store irraa bitame qindaa\'ina App Store kee keessatti bulchama.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Asitti miseensummaan bulchamu hin jiru. Miseensummaan Google Play irraa bitame qindaa\'ina Google Play kee keessatti bulchama.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Herregni kee fi wanti sarvara keenya irratti kuufame hundi (imeelii, qooda ji\'aa, itti fayyadama) bara baraan ni haqama, xiinxalli itti hin fayyadamnes ni bada. Miseensummaa App Store qindaa\'ina App Store kee keessatti haquu qabda.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Herregni kee fi wanti sarvara keenya irratti kuufame hundi (imeelii, qooda ji\'aa, itti fayyadama) bara baraan ni haqama, xiinxalli itti hin fayyadamnes ni bada. Miseensummaa Google Play qindaa\'ina Google Play kee keessatti haquu qabda.';
+
+  @override
+  String get aiConsentTitle => 'Amaloota AI fayyadamuu kee dura';
+
+  @override
+  String get aiConsentBody =>
+      'Aksiyoonota xiinxaluuf, suuraawwanii fi suuraawwan iskiriinii dubbisuuf, akkasumas gaaffii keetiif deebii kennuuf, WhatStock odeeffannoo gaaffichaaf barbaachisu — suuraa ykn suuraa iskiriinii, aksiyoona, gaaffii kee fi, yoo itti fayyadamte, yaadannoo fi qabiyyeewwan kee — gara Anthropic, kan moodeela AI Claude hojjechiisutti ni erga. Anthropic gaaffichaaf deebii kennuuf qofa itti fayyadama, AI isaa leenjisuuf immoo itti hin fayyadamu. Bal\'inaan Imaammata Dhuunfaa keessatti argama.';
+
+  @override
+  String get aiConsentLater => 'Amma miti';
+
+  @override
+  String get aiConsentAllow => 'Hayyami';
+
+  @override
+  String get aiConsentSetting => 'Amaloota AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Gaaffiiwwan kee deebii argachuuf gara Anthropic (Claude) ergamu. Yeroo dhaamsame, appichi gaaffii AI itti aanu dura si gaafata, cuunfaan ganamaa ofumaan qophaa\'us hin hojjetu.';
+
+  @override
+  String get aiReport => 'Gabaasi';
+
+  @override
+  String get aiReportTitle => 'Deebii AI kana gabaasi';
+
+  @override
+  String get aiReportInaccurate => 'Dogoggora ykn kan nama burjaaju';
+
+  @override
+  String get aiReportHarmful => 'Kan nama arrabsu ykn miidhaa qabu';
+
+  @override
+  String get aiReportOther => 'Waan biraa';
+
+  @override
+  String get aiReportNoteHint => 'Maaltu dogoggore? (dirqama miti)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Akka gamaaggamnuuf barreeffama deebii kanaa fi yaadannoo kee — herrega kee malee — ni arganna.';
+
+  @override
+  String get aiReportSend => 'Gabaasa ergi';
+
+  @override
+  String get aiReportThanks => 'Galatoomi — ni gamaaggamna.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

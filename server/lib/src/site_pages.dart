@@ -230,6 +230,7 @@ const _site = {
     'disclaimer': 'A WhatStock tájékoztató jellegű, nem minősül befektetési tanácsadásnak.',
     'terms': 'Felhasználási feltételek',
     'privacy': 'Adatkezelési tájékoztató',
+    'deleteAccount': 'Fiók törlése',
     'pricing': 'Árak',
     'sample': 'Milyen egy elemzés?',
     'glossary': 'Fogalomtár',
@@ -254,6 +255,7 @@ const _site = {
     'disclaimer': 'WhatStock is for information only and is not investment advice.',
     'terms': 'Terms of use',
     'privacy': 'Privacy policy',
+    'deleteAccount': 'Delete account',
     'pricing': 'Pricing',
     'sample': 'See a sample analysis',
     'glossary': 'Glossary',
@@ -309,7 +311,8 @@ String _footer(String lang) {
       '<a href="/glossary?lang=$lang">${_esc(t['glossary'])}</a> · '
       '<a href="/stocks?lang=$lang">${_esc(_stocks[lang]?['indexH1'] ?? 'Popular stocks')}</a> · '
       '<a href="/legal/terms?lang=$lang">${_esc(t['terms'])}</a> · '
-      '<a href="/legal/privacy?lang=$lang">${_esc(t['privacy'])}</a></footer></main></body></html>';
+      '<a href="/legal/privacy?lang=$lang">${_esc(t['privacy'])}</a> · '
+      '<a href="/account/delete?lang=${lang == 'hu' ? 'hu' : 'en'}">${_esc(t['deleteAccount'])}</a></footer></main></body></html>';
 }
 
 /// Az árak oldal szövegei (magyar és angol).

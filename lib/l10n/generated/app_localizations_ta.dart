@@ -2950,6 +2950,78 @@ class AppLocalizationsTa extends AppLocalizations {
       'App Store அல்லது Google Play மூலம் உங்களிடம் ஏற்கனவே சந்தா உள்ளது. உங்கள் திட்டத்தை மாற்ற, அந்த ஸ்டோரின் சந்தா அமைப்புகளைப் பயன்படுத்தவும்.';
 
   @override
+  String get paymentViaAppStore =>
+      'உங்கள் Apple கணக்கின் மூலம் கட்டணம் வசூலிக்கப்படும். App Store சந்தா அமைப்புகளில் எப்போது வேண்டுமானாலும் ரத்து செய்யலாம்.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'உங்கள் Google Play கணக்கின் மூலம் கட்டணம் வசூலிக்கப்படும். Google Play சந்தா அமைப்புகளில் எப்போது வேண்டுமானாலும் ரத்து செய்யலாம்.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'இங்கே நிர்வகிக்க சந்தா எதுவும் இல்லை. App Store-இல் வாங்கிய சந்தா உங்கள் App Store அமைப்புகளில் நிர்வகிக்கப்படுகிறது.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'இங்கே நிர்வகிக்க சந்தா எதுவும் இல்லை. Google Play-இல் வாங்கிய சந்தா உங்கள் Google Play அமைப்புகளில் நிர்வகிக்கப்படுகிறது.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'உங்கள் கணக்கும் எங்கள் சேவையகத்தில் சேமிக்கப்பட்ட அனைத்தும் (மின்னஞ்சல், வரம்பு, பயன்பாடு) நிரந்தரமாக நீக்கப்படும்; பயன்படுத்தாத பகுப்பாய்வுகள் இழக்கப்படும். App Store சந்தாவை உங்கள் App Store அமைப்புகளில் ரத்து செய்ய வேண்டும்.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'உங்கள் கணக்கும் எங்கள் சேவையகத்தில் சேமிக்கப்பட்ட அனைத்தும் (மின்னஞ்சல், வரம்பு, பயன்பாடு) நிரந்தரமாக நீக்கப்படும்; பயன்படுத்தாத பகுப்பாய்வுகள் இழக்கப்படும். Google Play சந்தாவை உங்கள் Google Play அமைப்புகளில் ரத்து செய்ய வேண்டும்.';
+
+  @override
+  String get aiConsentTitle => 'AI அம்சங்களைப் பயன்படுத்தும் முன்';
+
+  @override
+  String get aiConsentBody =>
+      'பங்குகளைப் பகுப்பாய்வு செய்ய, புகைப்படங்களையும் ஸ்கிரீன்ஷாட்களையும் படிக்க, உங்கள் கேள்விகளுக்குப் பதிலளிக்க, கோரிக்கைக்குத் தேவையான தரவை — புகைப்படம் அல்லது ஸ்கிரீன்ஷாட், பங்கு, உங்கள் கேள்வி, நீங்கள் பயன்படுத்தினால் உங்கள் குறிப்புகள் மற்றும் நிலைகள் — WhatStock, Claude AI மாதிரியை இயக்கும் Anthropic நிறுவனத்துக்கு அனுப்புகிறது. Anthropic இதைக் கோரிக்கைக்குப் பதிலளிக்க மட்டுமே செயலாக்குகிறது; தனது AI-க்குப் பயிற்சி அளிக்க இதைப் பயன்படுத்துவதில்லை. விவரங்கள் தனியுரிமைக் கொள்கையில் உள்ளன.';
+
+  @override
+  String get aiConsentLater => 'இப்போது வேண்டாம்';
+
+  @override
+  String get aiConsentAllow => 'அனுமதி';
+
+  @override
+  String get aiConsentSetting => 'AI அம்சங்கள்';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'உங்கள் கோரிக்கைகள் பதிலுக்காக Anthropic (Claude)-க்கு அனுப்பப்படும். முடக்கப்பட்டிருந்தால், அடுத்த AI கோரிக்கைக்கு முன் ஆப் கேட்கும்; தானியங்கு காலைச் சுருக்கம் இயங்காது.';
+
+  @override
+  String get aiReport => 'புகாரளி';
+
+  @override
+  String get aiReportTitle => 'இந்த AI பதிலைப் புகாரளி';
+
+  @override
+  String get aiReportInaccurate => 'தவறானது அல்லது தவறாக வழிநடத்துவது';
+
+  @override
+  String get aiReportHarmful => 'புண்படுத்துவது அல்லது தீங்கானது';
+
+  @override
+  String get aiReportOther => 'வேறு ஏதாவது';
+
+  @override
+  String get aiReportNoteHint => 'என்ன தவறு? (விருப்பத்தேர்வு)';
+
+  @override
+  String get aiReportPrivacy =>
+      'மதிப்பாய்வு செய்வதற்காக இந்தப் பதிலின் உரையும் உங்கள் குறிப்பும் — உங்கள் கணக்கு இல்லாமல் — எங்களுக்குக் கிடைக்கும்.';
+
+  @override
+  String get aiReportSend => 'புகாரை அனுப்பு';
+
+  @override
+  String get aiReportThanks => 'நன்றி — நாங்கள் இதை மதிப்பாய்வு செய்வோம்.';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

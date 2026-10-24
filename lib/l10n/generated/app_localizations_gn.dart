@@ -2941,6 +2941,78 @@ class AppLocalizationsGn extends AppLocalizations {
       'Rerekóma ñemboheraguapy App Store térã Google Play rupive. Emoambue hag̃ua nde plan, eipuru upe ñemuha ñemboheraguapy ñemboheko.';
 
   @override
+  String get paymentViaAppStore =>
+      'Ojehepymeʼẽ nde mbaʼete Apple rupive. Ikatu eheja oimeraẽ árape App Store ñemboheraguapy ñembohekópe.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Ojehepymeʼẽ nde mbaʼete Google Play rupive. Ikatu eheja oimeraẽ árape Google Play ñemboheraguapy ñembohekópe.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Ndaipóri ápe ñemboheraguapy eñangareko hag̃ua. Ñemboheraguapy ojejoguáva App Store-pe oñeñangareko nde App Store ñembohekópe.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Ndaipóri ápe ñemboheraguapy eñangareko hag̃ua. Ñemboheraguapy ojejoguáva Google Play-pe oñeñangareko nde Google Play ñembohekópe.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Ne mbaʼete ha opa mbaʼe oñeñongatúva ore mohendahavusúpe (ñanduti veve, cupo, jeporu) oñembogue opa árape g̃uarã, ha jehesaʼỹijo ojeporuʼỹva okañy. App Store ñemboheraguapy katu eheja vaʼerã nde App Store ñembohekópe.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Ne mbaʼete ha opa mbaʼe oñeñongatúva ore mohendahavusúpe (ñanduti veve, cupo, jeporu) oñembogue opa árape g̃uarã, ha jehesaʼỹijo ojeporuʼỹva okañy. Google Play ñemboheraguapy katu eheja vaʼerã nde Google Play ñembohekópe.';
+
+  @override
+  String get aiConsentTitle => 'Eiporu mboyve AI tembiporu';
+
+  @override
+  String get aiConsentBody =>
+      'Ojehesaʼỹijo hag̃ua acción-kuéra, oñemoñeʼẽ hag̃ua taʼãnga ha pantalla taʼãnga, ha oñembohovái hag̃ua ne porandu, WhatStock omondo mbaʼekuaarã tekotevẽva pe jerure rehe — taʼãnga térã pantalla taʼãnga, acción, ne porandu ha, reiporúramo, ne jehaipyre ha ereguerekóva — Anthropic-pe, empresa omboguatáva Claude AI modelo. Anthropic oipuru umíva ombohovái hag̃ua jerure añónte, ha ndoipurúi ombokatupyry hag̃ua iAI. Mbaʼemimi oĩ Temiñemi porurekópe.';
+
+  @override
+  String get aiConsentLater => 'Koʼág̃a nahániri';
+
+  @override
+  String get aiConsentAllow => 'Emoneĩ';
+
+  @override
+  String get aiConsentSetting => 'AI tembiporu';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Ne jerure oñemondo Anthropic-pe (Claude) oñembohovái hag̃ua. Ojedesactiváramo, app oporandu AI jerure upeigua mboyve, ha mbohysýi pyharevete ijeheguíva ndojejapói.';
+
+  @override
+  String get aiReport => 'Emomarandu';
+
+  @override
+  String get aiReportTitle => 'Emomarandu ko AI mbohovái rehe';
+
+  @override
+  String get aiReportInaccurate => 'Ndoikói térã ombotavy';
+
+  @override
+  String get aiReportHarmful => 'Ombohasa asy térã ivaíva';
+
+  @override
+  String get aiReportOther => 'Ambue mbaʼe';
+
+  @override
+  String get aiReportNoteHint => 'Mbaʼépa ndoikói? (reipotárõ)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Rohupyty ko mbohovái moñeʼẽrã ha ne jehaipyre — ne mbaʼeteʼỹre — rohechajey hag̃ua.';
+
+  @override
+  String get aiReportSend => 'Emondo marandu';
+
+  @override
+  String get aiReportThanks => 'Aguyje — rohechajeýta.';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

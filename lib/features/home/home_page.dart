@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../analysis/ai_consent.dart';
 import '../news/daily_brief_card.dart';
 import '../news/watch_news_view.dart';
 import '../events/events_view.dart';
@@ -241,6 +242,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   /// Az AI megfejtése egy leírásra: egy biztos jelöltnél rögtön megnyitja,
   /// többnél a választólap jön; ha semmi, a „nincs találat” üzenet.
   Future<void> _resolveDescription(String q) async {
+    if (!await ensureAiConsent(context) || !mounted) return;
     final services = AppServices.of(context);
     final l10n = AppLocalizations.of(context);
     setState(() {
@@ -290,6 +292,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
       return;
     }
     if (image == null || !mounted) return;
+    if (!await ensureAiConsent(context) || !mounted) return;
 
     setState(() {
       _busy = true;

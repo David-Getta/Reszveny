@@ -2927,6 +2927,78 @@ class AppLocalizationsHe extends AppLocalizations {
       'כבר יש לך מינוי דרך App Store או Google Play. כדי לשנות את המסלול, השתמשו בהגדרות המינויים של אותה חנות.';
 
   @override
+  String get paymentViaAppStore =>
+      'החיוב מתבצע דרך חשבון ה-Apple שלך. אפשר לבטל בכל עת בהגדרות המינויים של App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'החיוב מתבצע דרך חשבון ה-Google Play שלך. אפשר לבטל בכל עת בהגדרות המינויים של Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'אין כאן מינוי לניהול. מינוי שנרכש ב-App Store מנוהל בהגדרות App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'אין כאן מינוי לניהול. מינוי שנרכש ב-Google Play מנוהל בהגדרות Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'החשבון שלך וכל מה שנשמר בשרת שלנו (אימייל, מכסה, שימוש) יימחקו לצמיתות, וניתוחים שלא נוצלו יאבדו. מינוי דרך App Store צריך לבטל בהגדרות App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'החשבון שלך וכל מה שנשמר בשרת שלנו (אימייל, מכסה, שימוש) יימחקו לצמיתות, וניתוחים שלא נוצלו יאבדו. מינוי דרך Google Play צריך לבטל בהגדרות Google Play.';
+
+  @override
+  String get aiConsentTitle => 'לפני השימוש בתכונות AI';
+
+  @override
+  String get aiConsentBody =>
+      'כדי לנתח מניות, לקרוא תמונות וצילומי מסך ולענות על השאלות שלך, WhatStock שולחת את הנתונים הדרושים לבקשה — התמונה או צילום המסך, המניה, השאלה שלך, ואם נעשה בהם שימוש, גם ההערות והפוזיציות שלך — אל Anthropic, החברה שמפעילה את מודל ה-AI Claude. החברה Anthropic מעבדת אותם רק כדי לענות על הבקשה, ואינה משתמשת בהם לאימון ה-AI שלה. הפרטים מופיעים במדיניות הפרטיות.';
+
+  @override
+  String get aiConsentLater => 'לא עכשיו';
+
+  @override
+  String get aiConsentAllow => 'אישור';
+
+  @override
+  String get aiConsentSetting => 'תכונות AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'הבקשות שלך נשלחות אל Anthropic (Claude) כדי לקבל מענה. כשהאפשרות כבויה, האפליקציה שואלת לפני בקשת ה-AI הבאה, והסיכום האוטומטי של הבוקר לא נוצר.';
+
+  @override
+  String get aiReport => 'דיווח';
+
+  @override
+  String get aiReportTitle => 'דיווח על תשובת AI זו';
+
+  @override
+  String get aiReportInaccurate => 'שגויה או מטעה';
+
+  @override
+  String get aiReportHarmful => 'פוגענית או מזיקה';
+
+  @override
+  String get aiReportOther => 'משהו אחר';
+
+  @override
+  String get aiReportNoteHint => 'מה לא בסדר? (לא חובה)';
+
+  @override
+  String get aiReportPrivacy =>
+      'אנחנו מקבלים את הטקסט של התשובה הזו ואת ההערה שלך — בלי החשבון שלך — כדי שנוכל לבדוק אותה.';
+
+  @override
+  String get aiReportSend => 'שליחת דיווח';
+
+  @override
+  String get aiReportThanks => 'תודה — נבדוק את זה.';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

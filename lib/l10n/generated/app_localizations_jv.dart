@@ -2936,6 +2936,78 @@ class AppLocalizationsJv extends AppLocalizations {
       'Sampeyan wis duwe langganan liwat App Store utawa Google Play. Kanggo ngganti paket, gunakake setelan langganan ing toko kasebut.';
 
   @override
+  String get paymentViaAppStore =>
+      'Ditagih liwat akun Apple sampeyan. Bisa dibatalake kapan wae ing setelan langganan App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Ditagih liwat akun Google Play sampeyan. Bisa dibatalake kapan wae ing setelan langganan Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Ora ana langganan sing bisa diatur ing kéné. Langganan sing dituku ing App Store diatur ing setelan App Store sampeyan.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Ora ana langganan sing bisa diatur ing kéné. Langganan sing dituku ing Google Play diatur ing setelan Google Play sampeyan.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Akun sampeyan lan kabèh sing disimpen ing server kita (email, kuota, panggunaan) bakal dibusak permanen, lan analisis sing durung dienggo bakal ilang. Langganan App Store kudu dibatalake ing setelan App Store sampeyan.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Akun sampeyan lan kabèh sing disimpen ing server kita (email, kuota, panggunaan) bakal dibusak permanen, lan analisis sing durung dienggo bakal ilang. Langganan Google Play kudu dibatalake ing setelan Google Play sampeyan.';
+
+  @override
+  String get aiConsentTitle => 'Sadurungé nganggo fitur AI';
+
+  @override
+  String get aiConsentBody =>
+      'Kanggo nganalisis saham, maca foto lan screenshot, uga njawab pitakonan sampeyan, WhatStock ngirim data sing dibutuhaké kanggo panyuwunan kasebut — foto utawa screenshot, saham, pitakonan sampeyan lan, yèn sampeyan nganggo, cathetan lan posisi sampeyan — menyang Anthropic, perusahaan sing nglakokaké model AI Claude. Anthropic mung ngolah data kasebut kanggo njawab panyuwunan lan ora nganggo kanggo nglatih AI-né. Rinciané ana ing Kawicaksanan Privasi.';
+
+  @override
+  String get aiConsentLater => 'Mengko waé';
+
+  @override
+  String get aiConsentAllow => 'Idinaké';
+
+  @override
+  String get aiConsentSetting => 'Fitur AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Panyuwunan sampeyan dikirim menyang Anthropic (Claude) supaya dijawab. Yèn dipatèni, aplikasi bakal takon sadurungé panyuwunan AI sabanjuré, lan ringkesan ésuk otomatis ora digawé.';
+
+  @override
+  String get aiReport => 'Laporaké';
+
+  @override
+  String get aiReportTitle => 'Laporaké wangsulan AI iki';
+
+  @override
+  String get aiReportInaccurate => 'Salah utawa nyasaraké';
+
+  @override
+  String get aiReportHarmful => 'Nyinggung utawa mbebayani';
+
+  @override
+  String get aiReportOther => 'Liyané';
+
+  @override
+  String get aiReportNoteHint => 'Apa sing salah? (ora wajib)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Kita nampa teks wangsulan iki lan cathetan sampeyan — tanpa akun sampeyan — supaya bisa dipriksa.';
+
+  @override
+  String get aiReportSend => 'Kirim laporan';
+
+  @override
+  String get aiReportThanks => 'Matur nuwun — bakal kita priksa.';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

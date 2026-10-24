@@ -4932,6 +4932,132 @@ abstract class AppLocalizations {
   /// **'You already have a subscription through the App Store or Google Play. To change your plan, use the subscription settings of that store.'**
   String get subscribedInStore;
 
+  /// Payment note at the bottom of the plans page on iPhone/iPad/Mac (App Store builds). Name only the App Store.
+  ///
+  /// In en, this message translates to:
+  /// **'Billed through your Apple account. Cancel anytime in your App Store subscription settings.'**
+  String get paymentViaAppStore;
+
+  /// Payment note at the bottom of the plans page on Android. Name only Google Play.
+  ///
+  /// In en, this message translates to:
+  /// **'Billed through your Google Play account. Cancel anytime in your Google Play subscription settings.'**
+  String get paymentViaGooglePlay;
+
+  /// Shown on iPhone/iPad when there is nothing to manage in the app.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no subscription to manage here. A subscription bought in the App Store is managed in your App Store settings.'**
+  String get manageSubscriptionAppStore;
+
+  /// Shown on Android when there is nothing to manage in the app.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no subscription to manage here. A subscription bought in Google Play is managed in your Google Play settings.'**
+  String get manageSubscriptionGooglePlay;
+
+  /// Account deletion confirmation text on iPhone/iPad (no mention of web payments).
+  ///
+  /// In en, this message translates to:
+  /// **'Your account and everything stored on our server (email, allowance, usage) will be deleted for good, and unused analyses are lost. An App Store subscription must be cancelled in your App Store settings.'**
+  String get deleteAccountBodyAppStore;
+
+  /// Account deletion confirmation text on Android (no mention of web payments).
+  ///
+  /// In en, this message translates to:
+  /// **'Your account and everything stored on our server (email, allowance, usage) will be deleted for good, and unused analyses are lost. A Google Play subscription must be cancelled in your Google Play settings.'**
+  String get deleteAccountBodyGooglePlay;
+
+  /// Title of the one-time consent dialog shown before the first AI request.
+  ///
+  /// In en, this message translates to:
+  /// **'Before you use AI features'**
+  String get aiConsentTitle;
+
+  /// Body of the AI consent dialog: what data is sent, to whom (Anthropic, the company behind Claude) and why. Keep the names Anthropic and Claude.
+  ///
+  /// In en, this message translates to:
+  /// **'To analyse stocks, read photos and screenshots, and answer your questions, WhatStock sends the data needed for the request — the photo or screenshot, the stock, your question and, where you use them, your notes and positions — to Anthropic, which runs the Claude AI model. Anthropic processes it only to answer the request and does not use it to train its AI. Details are in the privacy notice.'**
+  String get aiConsentBody;
+
+  /// Consent dialog button: do not allow AI features for now.
+  ///
+  /// In en, this message translates to:
+  /// **'Not now'**
+  String get aiConsentLater;
+
+  /// Consent dialog button: allow sending the request data to Anthropic.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow'**
+  String get aiConsentAllow;
+
+  /// Settings switch title: whether the app may send AI requests (to Anthropic).
+  ///
+  /// In en, this message translates to:
+  /// **'AI features'**
+  String get aiConsentSetting;
+
+  /// Settings switch subtitle for the AI consent. Keep the names Anthropic and Claude.
+  ///
+  /// In en, this message translates to:
+  /// **'Your requests are sent to Anthropic (Claude) to be answered. When off, the app asks before the next AI request, and the automatic morning brief does not run.'**
+  String get aiConsentSettingDesc;
+
+  /// Button under an AI answer: report it as wrong, offensive or harmful to the developers.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get aiReport;
+
+  /// Title of the dialog for reporting an AI answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Report this AI answer'**
+  String get aiReportTitle;
+
+  /// Reason option when reporting an AI answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong or misleading'**
+  String get aiReportInaccurate;
+
+  /// Reason option when reporting an AI answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Offensive or harmful'**
+  String get aiReportHarmful;
+
+  /// Reason option when reporting an AI answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Something else'**
+  String get aiReportOther;
+
+  /// Hint of the optional note field in the report dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s wrong? (optional)'**
+  String get aiReportNoteHint;
+
+  /// Small print in the report dialog: what is sent with the report.
+  ///
+  /// In en, this message translates to:
+  /// **'We receive the text of this answer and your note — without your account — so we can review it.'**
+  String get aiReportPrivacy;
+
+  /// Send button of the report dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Send report'**
+  String get aiReportSend;
+
+  /// Snackbar after an AI answer was reported.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks — we\'ll review it.'**
+  String get aiReportThanks;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

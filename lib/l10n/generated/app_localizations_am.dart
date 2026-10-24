@@ -2895,6 +2895,78 @@ class AppLocalizationsAm extends AppLocalizations {
       'በApp Store ወይም በGoogle Play በኩል የደንበኝነት ምዝገባ አስቀድመው አለዎት። ዕቅድዎን ለመቀየር የዚያን መደብር የምዝገባ ቅንብሮች ይጠቀሙ።';
 
   @override
+  String get paymentViaAppStore =>
+      'ክፍያው በApple መለያዎ በኩል ይፈጸማል። በApp Store የደንበኝነት ምዝገባ ቅንብሮችዎ ውስጥ በማንኛውም ጊዜ መሰረዝ ይችላሉ።';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'ክፍያው በGoogle Play መለያዎ በኩል ይፈጸማል። በGoogle Play የደንበኝነት ምዝገባ ቅንብሮችዎ ውስጥ በማንኛውም ጊዜ መሰረዝ ይችላሉ።';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'እዚህ የሚተዳደር የደንበኝነት ምዝገባ የለም። በApp Store የተገዛ ምዝገባ በApp Store ቅንብሮችዎ ውስጥ ይተዳደራል።';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'እዚህ የሚተዳደር የደንበኝነት ምዝገባ የለም። በGoogle Play የተገዛ ምዝገባ በGoogle Play ቅንብሮችዎ ውስጥ ይተዳደራል።';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'መለያዎ እና በአገልጋያችን ላይ የተቀመጠው ሁሉ (ኢሜይል፣ ወርሃዊ ድርሻ፣ አጠቃቀም) እስከ መጨረሻው ይሰረዛል፤ ያልተጠቀሙባቸው ትንተናዎችም ይጠፋሉ። የApp Store ምዝገባ በApp Store ቅንብሮችዎ ውስጥ መሰረዝ አለበት።';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'መለያዎ እና በአገልጋያችን ላይ የተቀመጠው ሁሉ (ኢሜይል፣ ወርሃዊ ድርሻ፣ አጠቃቀም) እስከ መጨረሻው ይሰረዛል፤ ያልተጠቀሙባቸው ትንተናዎችም ይጠፋሉ። የGoogle Play ምዝገባ በGoogle Play ቅንብሮችዎ ውስጥ መሰረዝ አለበት።';
+
+  @override
+  String get aiConsentTitle => 'የAI ባህሪያትን ከመጠቀምዎ በፊት';
+
+  @override
+  String get aiConsentBody =>
+      'አክሲዮኖችን ለመተንተን፣ ፎቶዎችንና ቅጽበታዊ ገጽ እይታዎችን ለማንበብ እንዲሁም ጥያቄዎችዎን ለመመለስ WhatStock ለጥያቄው የሚያስፈልገውን መረጃ — ፎቶውን ወይም ቅጽበታዊ ገጽ እይታውን፣ አክሲዮኑን፣ ጥያቄዎን እና ከተጠቀሙባቸው ማስታወሻዎችዎንና ይዞታዎችዎን — የClaude AI ሞዴልን ለሚያንቀሳቅሰው Anthropic ይልካል። Anthropic መረጃውን የሚያስኬደው ጥያቄውን ለመመለስ ብቻ ነው፤ የራሱን AI ለማሰልጠንም አይጠቀምበትም። ዝርዝሩ በግላዊነት መመሪያው ውስጥ ይገኛል።';
+
+  @override
+  String get aiConsentLater => 'አሁን አይሆንም';
+
+  @override
+  String get aiConsentAllow => 'ፍቀድ';
+
+  @override
+  String get aiConsentSetting => 'የAI ባህሪያት';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'ጥያቄዎችዎ መልስ እንዲያገኙ ወደ Anthropic (Claude) ይላካሉ። ሲጠፋ መተግበሪያው ከሚቀጥለው የAI ጥያቄ በፊት ይጠይቅዎታል፤ ራስ-ሰር የማለዳ ማጠቃለያውም አይዘጋጅም።';
+
+  @override
+  String get aiReport => 'ሪፖርት አድርግ';
+
+  @override
+  String get aiReportTitle => 'ይህን የAI መልስ ሪፖርት ያድርጉ';
+
+  @override
+  String get aiReportInaccurate => 'የተሳሳተ ወይም አሳሳች';
+
+  @override
+  String get aiReportHarmful => 'አፀያፊ ወይም ጎጂ';
+
+  @override
+  String get aiReportOther => 'ሌላ ነገር';
+
+  @override
+  String get aiReportNoteHint => 'ምን ችግር አለ? (አማራጭ)';
+
+  @override
+  String get aiReportPrivacy =>
+      'እንድንገመግመው የዚህን መልስ ጽሑፍ እና ማስታወሻዎን — ያለ መለያዎ — እንቀበላለን።';
+
+  @override
+  String get aiReportSend => 'ሪፖርት ላክ';
+
+  @override
+  String get aiReportThanks => 'እናመሰግናለን — እንገመግመዋለን።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

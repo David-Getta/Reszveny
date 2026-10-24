@@ -19,6 +19,9 @@ import 'quick_panel.dart';
 /// - menüsor- / tálcaikon menüvel.
 ///
 /// Mobilon minden hívás csendben kimarad ([isSupported] hamis).
+/// A Microsoft Store (MSIX) csomag azonosítója – egyezzen a `pubspec.yaml` `msix_config.identity_name`-jével.
+const msixIdentity = 'WhatStock.WhatStock';
+
 class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListener {
   DesktopIntegration();
 
@@ -208,7 +211,10 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
         _preferredHotKey = null;
       }
     }
-    launchAtStartup.setup(appName: title, appPath: Platform.resolvedExecutable, packageName: 'hu.reszveny.reszveny');
+    // A Microsoft Store (MSIX) csomag azonosítója (a pubspec `msix_config.identity_name`-je): a
+    // bővítmény a futtatható fájl útvonalában keresi – ha nem egyezik, az indítás a csomag
+    // elzárt registryjébe kerülne, és a bekapcsolás nem hatna.
+    launchAtStartup.setup(appName: title, appPath: Platform.resolvedExecutable, packageName: msixIdentity);
     _initialized = true;
     await windowManager.ensureInitialized();
     await hotKeyManager.unregisterAll();

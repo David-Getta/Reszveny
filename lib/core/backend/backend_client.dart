@@ -359,6 +359,18 @@ class BackendClient {
     return DateTime.parse(_decode(res)['updated_at'] as String);
   }
 
+  /// `POST /v1/report` → egy AI-válasz jelentése (téves, sértő, egyéb) a fejlesztőknek.
+  Future<void> reportAi(Map<String, dynamic> report) async {
+    final res = await _authorized(
+      (h) => _inner.post(
+        Uri.parse('$baseUrl/v1/report'),
+        headers: {...h, 'content-type': 'application/json'},
+        body: jsonEncode(report),
+      ),
+    );
+    _decode(res);
+  }
+
   /// `POST /v1/telemetry` → névtelen eseményszámok és hibajelentések (csak a
   /// felhasználó hozzájárulásával küldjük).
   Future<void> sendTelemetry(Map<String, dynamic> batch) async {

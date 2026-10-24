@@ -2935,6 +2935,78 @@ class AppLocalizationsKa extends AppLocalizations {
       'თქვენ უკვე გაქვთ გამოწერა App Store-ის ან Google Play-ის მეშვეობით. გეგმის შესაცვლელად გამოიყენეთ ამ მაღაზიის გამოწერის პარამეტრები.';
 
   @override
+  String get paymentViaAppStore =>
+      'გადახდა ხდება თქვენი Apple ანგარიშით. გაუქმება ნებისმიერ დროს შეგიძლიათ App Store-ის გამოწერების პარამეტრებში.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'გადახდა ხდება თქვენი Google Play ანგარიშით. გაუქმება ნებისმიერ დროს შეგიძლიათ Google Play-ის გამოწერების პარამეტრებში.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'აქ სამართავი გამოწერა არ არის. App Store-ში შეძენილი გამოწერა App Store-ის პარამეტრებში იმართება.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'აქ სამართავი გამოწერა არ არის. Google Play-ში შეძენილი გამოწერა Google Play-ის პარამეტრებში იმართება.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'თქვენი ანგარიში და ყველაფერი, რაც ჩვენს სერვერზე ინახება (ელფოსტა, ლიმიტი, გამოყენება), სამუდამოდ წაიშლება, ხოლო გამოუყენებელი ანალიზები დაიკარგება. App Store-ის გამოწერა App Store-ის პარამეტრებში უნდა გააუქმოთ.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'თქვენი ანგარიში და ყველაფერი, რაც ჩვენს სერვერზე ინახება (ელფოსტა, ლიმიტი, გამოყენება), სამუდამოდ წაიშლება, ხოლო გამოუყენებელი ანალიზები დაიკარგება. Google Play-ის გამოწერა Google Play-ის პარამეტრებში უნდა გააუქმოთ.';
+
+  @override
+  String get aiConsentTitle => 'სანამ AI ფუნქციებს გამოიყენებთ';
+
+  @override
+  String get aiConsentBody =>
+      'აქციების გასაანალიზებლად, ფოტოებისა და ეკრანის ანაბეჭდების წასაკითხად და თქვენს კითხვებზე პასუხის გასაცემად WhatStock მოთხოვნისთვის საჭირო მონაცემებს — ფოტოს ან ეკრანის ანაბეჭდს, აქციას, თქვენს კითხვას და, თუ მათ იყენებთ, თქვენს ჩანაწერებსა და პოზიციებს — უგზავნის Anthropic-ს, კომპანიას, რომელიც Claude AI მოდელს მართავს. Anthropic მათ ამუშავებს მხოლოდ მოთხოვნაზე პასუხის გასაცემად და არ იყენებს საკუთარი AI-ის გასაწვრთნელად. დეტალები კონფიდენციალურობის პოლიტიკაშია.';
+
+  @override
+  String get aiConsentLater => 'ახლა არა';
+
+  @override
+  String get aiConsentAllow => 'დაშვება';
+
+  @override
+  String get aiConsentSetting => 'AI ფუნქციები';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'თქვენი მოთხოვნები პასუხისთვის იგზავნება Anthropic-თან (Claude). გამორთვისას აპი შემდეგ AI მოთხოვნამდე გკითხავთ, ხოლო ავტომატური დილის შეჯამება არ შეიქმნება.';
+
+  @override
+  String get aiReport => 'შეტყობინება';
+
+  @override
+  String get aiReportTitle => 'შეტყობინება ამ AI პასუხის შესახებ';
+
+  @override
+  String get aiReportInaccurate => 'არასწორი ან შეცდომაში შემყვანი';
+
+  @override
+  String get aiReportHarmful => 'შეურაცხმყოფელი ან საზიანო';
+
+  @override
+  String get aiReportOther => 'სხვა რამ';
+
+  @override
+  String get aiReportNoteHint => 'რა არის არასწორი? (არასავალდებულო)';
+
+  @override
+  String get aiReportPrivacy =>
+      'ჩვენ ვიღებთ ამ პასუხის ტექსტს და თქვენს ჩანაწერს — თქვენი ანგარიშის გარეშე — რათა გადავხედოთ მას.';
+
+  @override
+  String get aiReportSend => 'შეტყობინების გაგზავნა';
+
+  @override
+  String get aiReportThanks => 'გმადლობთ — გადავხედავთ.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

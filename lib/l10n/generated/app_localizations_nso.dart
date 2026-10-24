@@ -2957,6 +2957,78 @@ class AppLocalizationsNso extends AppLocalizations {
       'O šetše o na le ngwadišo ka App Store goba Google Play. Go fetola leano la gago, šomiša dipeakanyo tša ngwadišo tša lebenkele leo.';
 
   @override
+  String get paymentViaAppStore =>
+      'O lefišwa ka akhaonto ya gago ya Apple. Khansela nako efe goba efe go dipeakanyo tša dingwadišo tša App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'O lefišwa ka akhaonto ya gago ya Google Play. Khansela nako efe goba efe go dipeakanyo tša dingwadišo tša Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Ga go na ngwadišo ye e ka laolwago mo. Ngwadišo ye e rekilwego go App Store e laolwa go dipeakanyo tša gago tša App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Ga go na ngwadišo ye e ka laolwago mo. Ngwadišo ye e rekilwego go Google Play e laolwa go dipeakanyo tša gago tša Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Akhaonto ya gago le tšohle tše di bolokilwego go seva ya rena (imeile, kabelo, tšhomišo) di tla phumolwa ka mo go sa felego, gomme ditshekatsheko tše di sa šomišwago di tla lahlega. Ngwadišo ya App Store e swanetše go khanselwa go dipeakanyo tša gago tša App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Akhaonto ya gago le tšohle tše di bolokilwego go seva ya rena (imeile, kabelo, tšhomišo) di tla phumolwa ka mo go sa felego, gomme ditshekatsheko tše di sa šomišwago di tla lahlega. Ngwadišo ya Google Play e swanetše go khanselwa go dipeakanyo tša gago tša Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Pele o šomiša dikarolo tša AI';
+
+  @override
+  String get aiConsentBody =>
+      'Go sekaseka dišere, go bala diswantšho le diswantšho tša sekirini, le go araba dipotšišo tša gago, WhatStock e romela tshedimošo ye e nyakegago kgopelong — seswantšho goba seswantšho sa sekirini, šere, potšišo ya gago gomme, ge o di šomiša, dintlha tša gago le maemo a gago — go Anthropic, yeo e šomišago mmotlolo wa AI wa Claude. Anthropic e e šomiša fela go araba kgopelo gomme ga e e šomiše go tlwaetša AI ya yona. Tshedimošo ka botlalo e ka go Pholisi ya Sephiri.';
+
+  @override
+  String get aiConsentLater => 'E sego bjale';
+
+  @override
+  String get aiConsentAllow => 'Dumelela';
+
+  @override
+  String get aiConsentSetting => 'Dikarolo tša AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Dikgopelo tša gago di romelwa go Anthropic (Claude) gore di arabje. Ge e timilwe, app e botšiša pele ga kgopelo ye e latelago ya AI, gomme kakaretšo ya mesong ye e itirago ga e šome.';
+
+  @override
+  String get aiReport => 'Bega';
+
+  @override
+  String get aiReportTitle => 'Bega karabo ye ya AI';
+
+  @override
+  String get aiReportInaccurate => 'E fošagetše goba e a forafora';
+
+  @override
+  String get aiReportHarmful => 'E a kgopiša goba e kotsi';
+
+  @override
+  String get aiReportOther => 'Se sengwe';
+
+  @override
+  String get aiReportNoteHint => 'Go fošagetše eng? (ga go gapeletšwe)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Re amogela sengwalwa sa karabo ye le ntlha ya gago — ntle le akhaonto ya gago — gore re kgone go e lekola.';
+
+  @override
+  String get aiReportSend => 'Romela pego';
+
+  @override
+  String get aiReportThanks => 'Re a leboga — re tla e lekola.';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

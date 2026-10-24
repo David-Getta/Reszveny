@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../analysis/report_ai.dart';
+import '../analysis/ai_consent.dart';
 import '../../app_services.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/error_messages.dart';
@@ -31,6 +33,7 @@ class _DailyBriefCardState extends State<DailyBriefCard> {
   }
 
   Future<void> _run() async {
+    if (!await ensureAiConsent(context) || !mounted) return;
     final services = AppServices.of(context);
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
     setState(() => _error = null);
@@ -90,7 +93,15 @@ class _DailyBriefCardState extends State<DailyBriefCard> {
                   else if (last != null) ...[
                     SelectableText(last.text, style: theme.textTheme.bodyMedium?.copyWith(height: 1.45)),
                     const SizedBox(height: 6),
-                    Text(fmt.dateTime(last.at), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                    // AI-szöveg: a jelölés és a figyelmeztetés itt is ott áll, mint az elemzés alatt.
+                    Text(
+                      '${l10n.aiGeneratedAt(fmt.dateTime(last.at))} · ${l10n.aiDisclaimer}',
+                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                    ),
+                    Align(
+                      alignment: AlignmentDirectional.centerEnd,
+                      child: ReportAiButton(kind: AiReportKind.brief, text: last.text),
+                    ),
                     // Kérdés az összefoglalóról („miért esett az NVDA?”), a napi kérdéskeretből.
                     if (services.config.hasAnthropicKey) ...[
                       const SizedBox(height: 10),

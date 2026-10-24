@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../features/analysis/report_ai.dart';
+import '../features/analysis/ai_consent.dart';
 import '../app_services.dart';
 import '../core/share/share_text.dart';
 import '../core/util/formatters.dart';
@@ -73,6 +75,7 @@ Future<void> showResearchSheet(
                             children: [
                               if (symbol != null)
                                 _SaveNoteButton(symbol: symbol, title: title, text: r.text, sources: r.sources),
+                              ReportAiButton(kind: AiReportKind.research, text: r.text, symbol: symbol),
                               TextButton.icon(
                                 key: const ValueKey('research-share'),
                                 style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
@@ -182,9 +185,10 @@ class _ResearchFollowUpPanelState extends State<ResearchFollowUpPanel> {
     super.dispose();
   }
 
-  void _send() {
+  Future<void> _send() async {
     final q = _controller.text.trim();
     if (q.isEmpty) return;
+    if (!await ensureAiConsent(context) || !mounted) return;
     final services = AppServices.of(context);
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
     final answer = services.researchFollowUp.ask(
@@ -231,6 +235,10 @@ class _ResearchFollowUpPanelState extends State<ResearchFollowUpPanel> {
                 children: [
                   SelectableText(r.text, key: ValueKey('followup-a-$i'), style: theme.textTheme.bodyMedium),
                   SourceLinks(sources: r.sources, keyPrefix: '${widget.sourceKeyPrefix}-$i'),
+                  Align(
+                    alignment: AlignmentDirectional.centerEnd,
+                    child: ReportAiButton(kind: AiReportKind.followup, text: r.text, compact: true),
+                  ),
                 ],
               );
             },

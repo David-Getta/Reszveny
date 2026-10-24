@@ -2938,6 +2938,78 @@ class AppLocalizationsUg extends AppLocalizations {
       'سىزدە App Store ياكى Google Play ئارقىلىق مۇشتەرىلىك ئاللىقاچان بار. پىلانىڭىزنى ئۆزگەرتىش ئۈچۈن شۇ دۇكاننىڭ مۇشتەرىلىك تەڭشىكىنى ئىشلىتىڭ.';
 
   @override
+  String get paymentViaAppStore =>
+      'ھەق Apple ھېساباتىڭىز ئارقىلىق ئېلىنىدۇ. App Store مۇشتەرىلىك تەڭشىكىدە خالىغان ۋاقىتتا بىكار قىلالايسىز.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'ھەق Google Play ھېساباتىڭىز ئارقىلىق ئېلىنىدۇ. Google Play مۇشتەرىلىك تەڭشىكىدە خالىغان ۋاقىتتا بىكار قىلالايسىز.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'بۇ يەردە باشقۇرىدىغان مۇشتەرىلىك يوق. App Store ئارقىلىق سېتىۋېلىنغان مۇشتەرىلىك App Store تەڭشىكىڭىزدە باشقۇرۇلىدۇ.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'بۇ يەردە باشقۇرىدىغان مۇشتەرىلىك يوق. Google Play ئارقىلىق سېتىۋېلىنغان مۇشتەرىلىك Google Play تەڭشىكىڭىزدە باشقۇرۇلىدۇ.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'ھېساباتىڭىز ۋە مۇلازىمېتىرىمىزدا ساقلانغان بارلىق نەرسىلەر (ئېلخەت، نورما، ئىشلىتىش ئەھۋالى) مەڭگۈلۈك ئۆچۈرۈلىدۇ، ئىشلىتىلمىگەن تەھلىللەرمۇ يوقىلىدۇ. App Store مۇشتەرىلىكىنى App Store تەڭشىكىڭىزدە بىكار قىلىشىڭىز كېرەك.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'ھېساباتىڭىز ۋە مۇلازىمېتىرىمىزدا ساقلانغان بارلىق نەرسىلەر (ئېلخەت، نورما، ئىشلىتىش ئەھۋالى) مەڭگۈلۈك ئۆچۈرۈلىدۇ، ئىشلىتىلمىگەن تەھلىللەرمۇ يوقىلىدۇ. Google Play مۇشتەرىلىكىنى Google Play تەڭشىكىڭىزدە بىكار قىلىشىڭىز كېرەك.';
+
+  @override
+  String get aiConsentTitle => 'AI ئىقتىدارلىرىنى ئىشلىتىشتىن بۇرۇن';
+
+  @override
+  String get aiConsentBody =>
+      'پاي چېكىنى تەھلىل قىلىش، سۈرەت ۋە ئېكران كەسمىسىنى ئوقۇش ھەمدە سوئاللىرىڭىزغا جاۋاب بېرىش ئۈچۈن، WhatStock تەلەپكە زۆرۈر بولغان سانلىق مەلۇماتلارنى — سۈرەت ياكى ئېكران كەسمىسى، پاي چېكى، سوئالىڭىز ۋە ئىشلەتسىڭىز خاتىرىلىرىڭىز ھەم تۇتقان پايلىرىڭىز — Claude AI مودېلىنى يۈرگۈزىدىغان Anthropic غا ئەۋەتىدۇ. Anthropic ئۇلارنى پەقەت تەلەپكە جاۋاب بېرىش ئۈچۈنلا بىر تەرەپ قىلىدۇ، ئۆزىنىڭ AI سىنى تەربىيىلەشكە ئىشلەتمەيدۇ. تەپسىلاتى شەخسىيەت سىياسىتىدە.';
+
+  @override
+  String get aiConsentLater => 'ھازىر ئەمەس';
+
+  @override
+  String get aiConsentAllow => 'رۇخسەت';
+
+  @override
+  String get aiConsentSetting => 'AI ئىقتىدارلىرى';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'تەلەپلىرىڭىز جاۋاب ئۈچۈن Anthropic (Claude) غا ئەۋەتىلىدۇ. تاقالغاندا، ئەپ كېيىنكى AI تەلىپىدىن بۇرۇن سورايدۇ، ئاپتوماتىك ئەتىگەنلىك خۇلاسىمۇ ئىجرا بولمايدۇ.';
+
+  @override
+  String get aiReport => 'مەلۇم قىلىش';
+
+  @override
+  String get aiReportTitle => 'بۇ AI جاۋابىنى مەلۇم قىلىش';
+
+  @override
+  String get aiReportInaccurate => 'خاتا ياكى يېڭىلتىدىغان';
+
+  @override
+  String get aiReportHarmful => 'ھاقارەتلىك ياكى زىيانلىق';
+
+  @override
+  String get aiReportOther => 'باشقا';
+
+  @override
+  String get aiReportNoteHint => 'نېمە خاتا؟ (ئىختىيارىي)';
+
+  @override
+  String get aiReportPrivacy =>
+      'تەكشۈرۈش ئۈچۈن بىز بۇ جاۋابنىڭ تېكىستى ۋە خاتىرىڭىزنى — ھېساباتىڭىز بىلەن باغلىماي — تاپشۇرۇۋالىمىز.';
+
+  @override
+  String get aiReportSend => 'دوكلات يوللاش';
+
+  @override
+  String get aiReportThanks => 'رەھمەت — بىز تەكشۈرىمىز.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

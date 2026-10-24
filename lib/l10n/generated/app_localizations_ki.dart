@@ -2938,6 +2938,78 @@ class AppLocalizationsKi extends AppLocalizations {
       'Wĩ na ũiyandĩkithio wa App Store kana Google Play. Nĩguo ũgarũre mũbango waku, hũthĩra mĩtaratara ya ũiyandĩkithio ya store ĩyo.';
 
   @override
+  String get paymentViaAppStore =>
+      'Ũrĩhagio na akaunti yaku ya Apple. Tiga hĩndĩ o yothe mĩtaratara-inĩ ya ũiyandĩkithio ya App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Ũrĩhagio na akaunti yaku ya Google Play. Tiga hĩndĩ o yothe mĩtaratara-inĩ ya ũiyandĩkithio ya Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Gũkũ gũtirĩ ũiyandĩkithio wa kũrũgamĩrĩra. Ũiyandĩkithio ũrĩa wagũrire App Store ũrũgamagĩrĩrwo mĩtaratara-inĩ yaku ya App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Gũkũ gũtirĩ ũiyandĩkithio wa kũrũgamĩrĩra. Ũiyandĩkithio ũrĩa wagũrire Google Play ũrũgamagĩrĩrwo mĩtaratara-inĩ yaku ya Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Akaunti yaku na kĩndũ o gĩothe kĩigĩtwo server-inĩ iitũ (email, mũigana, ũhũthĩri) nĩ ikwehererio biũ, na mathuthuria marĩa ũtahũthĩrĩte nĩ makũũra. Ũiyandĩkithio wa App Store no nginya ũtigwo mĩtaratara-inĩ yaku ya App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Akaunti yaku na kĩndũ o gĩothe kĩigĩtwo server-inĩ iitũ (email, mũigana, ũhũthĩri) nĩ ikwehererio biũ, na mathuthuria marĩa ũtahũthĩrĩte nĩ makũũra. Ũiyandĩkithio wa Google Play no nginya ũtigwo mĩtaratara-inĩ yaku ya Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Mbere ya kũhũthĩra mawĩra ma AI';
+
+  @override
+  String get aiConsentBody =>
+      'Nĩguo ithuthurie hisa, ithome mbica na mbica cia skrini, na icookie ciũria ciaku, WhatStock nĩ ĩtũmaga ũhoro ũrĩa ũbataranĩtio nĩ ihooya rĩu — mbica kana mbica ya skrini, hisa ĩyo, kĩũria gĩaku na, angĩkorwo nĩ ũmahũthagĩra, maandĩko maku na hisa iria ũrĩ nacio — kũrĩ Anthropic, kampuni ĩrĩa ĩrũgamĩrĩire modeli ya AI ya Claude. Anthropic ĩhũthagĩra ũhoro ũcio o nĩguo ĩcookie ihooya rĩu, na ndĩũhũthagĩra gũthomithia AI yayo. Ũhoro mũingĩ ũrĩ thĩinĩ wa Mawatho ma Kũgitĩra Ũhoro Waku.';
+
+  @override
+  String get aiConsentLater => 'Ti rĩu';
+
+  @override
+  String get aiConsentAllow => 'Ĩtĩkĩria';
+
+  @override
+  String get aiConsentSetting => 'Mawĩra ma AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Mahooya maku matũmagwo kũrĩ Anthropic (Claude) nĩguo macookio. Rĩrĩa gĩkĩrĩ kĩhingĩre, app nĩ ĩũragia mbere ya ihooya rĩrĩa rĩrũmĩrĩire rĩa AI, na ũhoro mũkuhĩ wa rũciinĩ ũrĩa wĩthondekagĩra ndũthondekagwo.';
+
+  @override
+  String get aiReport => 'Menyithia';
+
+  @override
+  String get aiReportTitle => 'Menyithia ũhoro wa ũcookio ũyũ wa AI';
+
+  @override
+  String get aiReportInaccurate => 'Nĩ mũhĩtĩho kana nĩ kũheenania';
+
+  @override
+  String get aiReportHarmful => 'Nĩ irumi kana nĩ ũũru';
+
+  @override
+  String get aiReportOther => 'Kĩndũ kĩngĩ';
+
+  @override
+  String get aiReportNoteHint => 'Nĩ kĩ kĩrĩ na thĩna? (ũngĩenda)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Tũheagwo mandĩko ma ũcookio ũyũ na maandĩko maku — hatarĩ akaunti yaku — nĩguo tũũrore.';
+
+  @override
+  String get aiReportSend => 'Tũma ũhoro';
+
+  @override
+  String get aiReportThanks => 'Nĩ wega — nĩ tũkũũrora.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

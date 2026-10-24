@@ -2935,6 +2935,78 @@ class AppLocalizationsUr extends AppLocalizations {
       'آپ کے پاس پہلے سے App Store یا Google Play کے ذریعے سبسکرپشن موجود ہے۔ اپنا پلان تبدیل کرنے کے لیے اسی اسٹور کی سبسکرپشن کی ترتیبات استعمال کریں۔';
 
   @override
+  String get paymentViaAppStore =>
+      'بلنگ آپ کے Apple اکاؤنٹ کے ذریعے ہوتی ہے۔ App Store کی سبسکرپشن ترتیبات میں کسی بھی وقت منسوخ کریں۔';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'بلنگ آپ کے Google Play اکاؤنٹ کے ذریعے ہوتی ہے۔ Google Play کی سبسکرپشن ترتیبات میں کسی بھی وقت منسوخ کریں۔';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'یہاں نظم کرنے کے لیے کوئی سبسکرپشن نہیں ہے۔ App Store سے خریدی گئی سبسکرپشن کا نظم آپ کی App Store ترتیبات میں کیا جاتا ہے۔';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'یہاں نظم کرنے کے لیے کوئی سبسکرپشن نہیں ہے۔ Google Play سے خریدی گئی سبسکرپشن کا نظم آپ کی Google Play ترتیبات میں کیا جاتا ہے۔';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'آپ کا اکاؤنٹ اور ہمارے سرور پر محفوظ ہر چیز (ای میل، حد، استعمال) ہمیشہ کے لیے حذف ہو جائے گی، اور غیر استعمال شدہ تجزیے ضائع ہو جائیں گے۔ App Store کی سبسکرپشن آپ کی App Store ترتیبات میں منسوخ کرنی ہوگی۔';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'آپ کا اکاؤنٹ اور ہمارے سرور پر محفوظ ہر چیز (ای میل، حد، استعمال) ہمیشہ کے لیے حذف ہو جائے گی، اور غیر استعمال شدہ تجزیے ضائع ہو جائیں گے۔ Google Play کی سبسکرپشن آپ کی Google Play ترتیبات میں منسوخ کرنی ہوگی۔';
+
+  @override
+  String get aiConsentTitle => 'AI خصوصیات استعمال کرنے سے پہلے';
+
+  @override
+  String get aiConsentBody =>
+      'شیئرز کا تجزیہ کرنے، تصاویر اور اسکرین شاٹس پڑھنے اور آپ کے سوالات کے جواب دینے کے لیے، WhatStock درخواست کے لیے ضروری ڈیٹا — تصویر یا اسکرین شاٹ، شیئر، آپ کا سوال اور، اگر آپ انہیں استعمال کرتے ہیں تو، آپ کے نوٹس اور پوزیشنز — Anthropic کو بھیجتا ہے، جو Claude AI ماڈل چلاتی ہے۔ Anthropic اسے صرف درخواست کا جواب دینے کے لیے پروسیس کرتی ہے اور اسے اپنی AI کی تربیت کے لیے استعمال نہیں کرتی۔ تفصیلات رازداری کی پالیسی میں ہیں۔';
+
+  @override
+  String get aiConsentLater => 'ابھی نہیں';
+
+  @override
+  String get aiConsentAllow => 'اجازت دیں';
+
+  @override
+  String get aiConsentSetting => 'AI خصوصیات';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'آپ کی درخواستیں جواب کے لیے Anthropic (Claude) کو بھیجی جاتی ہیں۔ بند ہونے پر، ایپ اگلی AI درخواست سے پہلے پوچھتی ہے، اور صبح کا خودکار خلاصہ نہیں بنتا۔';
+
+  @override
+  String get aiReport => 'رپورٹ کریں';
+
+  @override
+  String get aiReportTitle => 'اس AI جواب کی رپورٹ کریں';
+
+  @override
+  String get aiReportInaccurate => 'غلط یا گمراہ کن';
+
+  @override
+  String get aiReportHarmful => 'توہین آمیز یا نقصان دہ';
+
+  @override
+  String get aiReportOther => 'کچھ اور';
+
+  @override
+  String get aiReportNoteHint => 'کیا غلط ہے؟ (اختیاری)';
+
+  @override
+  String get aiReportPrivacy =>
+      'جائزے کے لیے ہمیں اس جواب کا متن اور آپ کا نوٹ ملتا ہے — آپ کے اکاؤنٹ کے بغیر۔';
+
+  @override
+  String get aiReportSend => 'رپورٹ بھیجیں';
+
+  @override
+  String get aiReportThanks => 'شکریہ — ہم اس کا جائزہ لیں گے۔';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

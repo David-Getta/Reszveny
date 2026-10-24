@@ -2927,6 +2927,78 @@ class AppLocalizationsPs extends AppLocalizations {
       'تاسو دمخه د App Store یا Google Play له لارې ګډون لرئ. د خپل پلان بدلولو لپاره، د هماغه سټور د ګډون تنظیمات وکاروئ.';
 
   @override
+  String get paymentViaAppStore =>
+      'بیل ستاسو د Apple حساب له لارې کېږي. د App Store د ګډون په تنظیماتو کې یې هر وخت لغوه کولای شئ.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'بیل ستاسو د Google Play حساب له لارې کېږي. د Google Play د ګډون په تنظیماتو کې یې هر وخت لغوه کولای شئ.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'دلته د ادارې لپاره هېڅ ګډون نشته. هغه ګډون چې له App Store څخه اخیستل شوی وي، ستاسو د App Store په تنظیماتو کې اداره کېږي.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'دلته د ادارې لپاره هېڅ ګډون نشته. هغه ګډون چې له Google Play څخه اخیستل شوی وي، ستاسو د Google Play په تنظیماتو کې اداره کېږي.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'ستاسو حساب او زموږ په سرور کې ساتل شوي ټول شیان (برېښنالیک، سهمیه، کارونه) به د تل لپاره ړنګ شي، او نه کارول شوي تحلیلونه به له منځه ولاړ شي. د App Store ګډون باید ستاسو د App Store په تنظیماتو کې لغوه شي.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'ستاسو حساب او زموږ په سرور کې ساتل شوي ټول شیان (برېښنالیک، سهمیه، کارونه) به د تل لپاره ړنګ شي، او نه کارول شوي تحلیلونه به له منځه ولاړ شي. د Google Play ګډون باید ستاسو د Google Play په تنظیماتو کې لغوه شي.';
+
+  @override
+  String get aiConsentTitle => 'د AI ځانګړتیاوو له کارولو مخکې';
+
+  @override
+  String get aiConsentBody =>
+      'د ونډو د تحلیل، د انځورونو او سکرین شاټونو د لوستلو او ستاسو پوښتنو ته د ځواب ورکولو لپاره، WhatStock د غوښتنې لپاره اړین معلومات — انځور یا سکرین شاټ، ونډه، ستاسو پوښتنه او، که یې کاروئ، ستاسو یادښتونه او پوزیشنونه — Anthropic ته لېږي، هغه شرکت چې د Claude AI ماډل چلوي. Anthropic دا یوازې د غوښتنې د ځواب لپاره پروسس کوي او د خپل AI د روزنې لپاره یې نه کاروي. جزئیات د محرمیت په تګلاره کې دي.';
+
+  @override
+  String get aiConsentLater => 'اوس نه';
+
+  @override
+  String get aiConsentAllow => 'اجازه ورکړئ';
+
+  @override
+  String get aiConsentSetting => 'د AI ځانګړتیاوې';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'ستاسو غوښتنې د ځواب لپاره Anthropic (Claude) ته لېږل کېږي. کله چې بند وي، اپ د راتلونکې AI غوښتنې مخکې پوښتنه کوي، او د سهار اتوماتیک لنډیز نه جوړېږي.';
+
+  @override
+  String get aiReport => 'راپور ورکړئ';
+
+  @override
+  String get aiReportTitle => 'د دې AI ځواب راپور ورکړئ';
+
+  @override
+  String get aiReportInaccurate => 'غلط یا ګمراه کوونکی';
+
+  @override
+  String get aiReportHarmful => 'سپکاوی کوونکی یا زیانمن';
+
+  @override
+  String get aiReportOther => 'بل څه';
+
+  @override
+  String get aiReportNoteHint => 'څه ستونزه ده؟ (اختیاري)';
+
+  @override
+  String get aiReportPrivacy =>
+      'موږ د دې ځواب متن او ستاسو یادښت — له حساب پرته — ترلاسه کوو څو یې وڅېړو.';
+
+  @override
+  String get aiReportSend => 'راپور ولېږئ';
+
+  @override
+  String get aiReportThanks => 'مننه — موږ به یې وڅېړو.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

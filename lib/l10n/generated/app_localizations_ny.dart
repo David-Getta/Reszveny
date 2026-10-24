@@ -2949,6 +2949,78 @@ class AppLocalizationsNy extends AppLocalizations {
       'Muli kale ndi kulembetsa kudzera mu App Store kapena Google Play. Kuti musinthe dongosolo lanu, gwiritsani ntchito zokonda za kulembetsa za sitolo imeneyo.';
 
   @override
+  String get paymentViaAppStore =>
+      'Mumalipiritsidwa kudzera mu akaunti yanu ya Apple. Letsani nthawi iliyonse mu zokonda za kulembetsa za App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Mumalipiritsidwa kudzera mu akaunti yanu ya Google Play. Letsani nthawi iliyonse mu zokonda za kulembetsa za Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Palibe kulembetsa koti muyang\'anire pano. Kulembetsa komwe munagula mu App Store kumayang\'aniridwa mu zokonda zanu za App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Palibe kulembetsa koti muyang\'anire pano. Kulembetsa komwe munagula mu Google Play kumayang\'aniridwa mu zokonda zanu za Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Akaunti yanu ndi zonse zosungidwa pa seva yathu (imelo, zomwe mumapatsidwa, kagwiritsidwe ntchito) zidzafufutidwa kotheratu, ndipo kusanthula komwe simunagwiritse ntchito kudzatayika. Kulembetsa kwa App Store kuyenera kuletsedwa mu zokonda zanu za App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Akaunti yanu ndi zonse zosungidwa pa seva yathu (imelo, zomwe mumapatsidwa, kagwiritsidwe ntchito) zidzafufutidwa kotheratu, ndipo kusanthula komwe simunagwiritse ntchito kudzatayika. Kulembetsa kwa Google Play kuyenera kuletsedwa mu zokonda zanu za Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Musanagwiritse ntchito zinthu za AI';
+
+  @override
+  String get aiConsentBody =>
+      'Kuti isanthule masheya, iwerenge zithunzi ndi zithunzi za sikirini, komanso iyankhe mafunso anu, WhatStock imatumiza zambiri zofunikira pa pempholo — chithunzi kapena chithunzi cha sikirini, sheya, funso lanu ndipo, ngati mumazigwiritsa ntchito, zolemba zanu ndi masheya omwe muli nawo — ku Anthropic, kampani yomwe imayendetsa mtundu wa AI wotchedwa Claude. Anthropic imazigwiritsa ntchito kokha poyankha pempholo ndipo siizigwiritsa ntchito pophunzitsa AI yake. Zambiri zili mu Mfundo Zachinsinsi.';
+
+  @override
+  String get aiConsentLater => 'Osati pano';
+
+  @override
+  String get aiConsentAllow => 'Lolani';
+
+  @override
+  String get aiConsentSetting => 'Zinthu za AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Zopempha zanu zimatumizidwa ku Anthropic (Claude) kuti ziyankhidwe. Ikazimitsidwa, pulogalamu imafunsa musanatumize pempho lina la AI, ndipo chidule cha m\'mawa chodzipangira chokha sichipangidwa.';
+
+  @override
+  String get aiReport => 'Nenani';
+
+  @override
+  String get aiReportTitle => 'Nenani za yankho ili la AI';
+
+  @override
+  String get aiReportInaccurate => 'Lolakwika kapena losocheretsa';
+
+  @override
+  String get aiReportHarmful => 'Lokhumudwitsa kapena lovulaza';
+
+  @override
+  String get aiReportOther => 'China chake';
+
+  @override
+  String get aiReportNoteHint => 'Vuto ndi chiyani? (ngati mukufuna)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Timalandira mawu a yankho ili ndi zolemba zanu — popanda akaunti yanu — kuti tiziwunike.';
+
+  @override
+  String get aiReportSend => 'Tumizani lipoti';
+
+  @override
+  String get aiReportThanks => 'Zikomo — tiziwunika.';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

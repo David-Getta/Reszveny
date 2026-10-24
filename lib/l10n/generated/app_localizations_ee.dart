@@ -2941,6 +2941,78 @@ class AppLocalizationsEe extends AppLocalizations {
       'Subscription le asiwò xoxo to App Store alo Google Play dzi. Be nàtrɔ wò plan la, zã store ma ƒe subscription ɖoɖowo.';
 
   @override
+  String get paymentViaAppStore =>
+      'Wobia ga to wò Apple akɔnta dzi. Ɖe asi le eŋu ɣesiaɣi le wò App Store subscription ƒe ɖoɖowo me.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Wobia ga to wò Google Play akɔnta dzi. Ɖe asi le eŋu ɣesiaɣi le wò Google Play subscription ƒe ɖoɖowo me.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Subscription aɖeke mele afii be nàkpɔ edzi o. Subscription si nèƒle le App Store la, wokpɔa edzi le wò App Store ƒe ɖoɖowo me.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Subscription aɖeke mele afii be nàkpɔ edzi o. Subscription si nèƒle le Google Play la, wokpɔa edzi le wò Google Play ƒe ɖoɖowo me.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Woatutu wò akɔnta kple nu sia nu si le míaƒe server dzi (email, agbɔsɔsɔ, zãzã) ɖa keŋkeŋ, eye numekuku siwo mèzã o la abu. App Store subscription la, ele be nàɖe asi le eŋu le wò App Store ƒe ɖoɖowo me.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Woatutu wò akɔnta kple nu sia nu si le míaƒe server dzi (email, agbɔsɔsɔ, zãzã) ɖa keŋkeŋ, eye numekuku siwo mèzã o la abu. Google Play subscription la, ele be nàɖe asi le eŋu le wò Google Play ƒe ɖoɖowo me.';
+
+  @override
+  String get aiConsentTitle => 'Hafi nàzã AI ƒe dɔwɔnuwo';
+
+  @override
+  String get aiConsentBody =>
+      'Be wòawɔ numekuku le stockwo ŋu, axlẽ foto kple screenshotwo, eye wòaɖo wò biabiawo ŋu la, WhatStock ɖoa nyatakaka siwo hiã na biabia la — foto alo screenshot la, stock la, wò biabia, kple ne èzã wo la, wò nuŋlɔɖiwo kple akpa siwo le asiwò — ɖe Anthropic, dɔwɔƒe si wɔa Claude AI model la ŋu dɔ. Anthropic zãa wo ɖeko be yeaɖo biabia la ŋu, eye mezãa wo tsɔ fiaa nu eƒe AI o. Nyatakaka bliboa le Adzamenyawo ƒe Ɖoɖo la me.';
+
+  @override
+  String get aiConsentLater => 'Fifia o';
+
+  @override
+  String get aiConsentAllow => 'Ɖe mɔ';
+
+  @override
+  String get aiConsentSetting => 'AI ƒe dɔwɔnuwo';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Woɖoa wò biabiawo ɖe Anthropic (Claude) be woaɖo wo ŋu. Ne ètsi ea la, app la abia wò hafi AI biabia si kplɔe ɖo nadzo, eye ŋdi ƒe nyakpɔkpɔ si wɔna le eɖokui si la mawɔ dɔ o.';
+
+  @override
+  String get aiReport => 'Ɖe kuxi fia';
+
+  @override
+  String get aiReportTitle => 'Ɖe kuxi si le AI ŋuɖoɖo sia ŋu fia';
+
+  @override
+  String get aiReportInaccurate => 'Mele eme o alo eble ame';
+
+  @override
+  String get aiReportHarmful => 'Edoa vlo ame alo ewɔa nuvevi';
+
+  @override
+  String get aiReportOther => 'Nu bubu';
+
+  @override
+  String get aiReportNoteHint => 'Nu kae gblẽ? (ne èdi)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Míexɔa ŋuɖoɖo sia ƒe nuŋɔŋlɔ kple wò nuŋlɔɖi — wò akɔnta manɔ eme o — be míate ŋu alé ŋku ɖe eŋu.';
+
+  @override
+  String get aiReportSend => 'Ɖo nyatakaka la ɖa';
+
+  @override
+  String get aiReportThanks => 'Akpe — míalé ŋku ɖe eŋu.';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

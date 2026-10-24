@@ -2956,6 +2956,78 @@ class AppLocalizationsSt extends AppLocalizations {
       'O se o na le ingodiso ka App Store kapa Google Play. Ho fetola moralo wa hao, sebedisa ditlhophiso tsa ingodiso tsa lebenkele leo.';
 
   @override
+  String get paymentViaAppStore =>
+      'O lefiswa ka akhaonto ya hao ya Apple. Khansela nako efe kapa efe ditlhophisong tsa ingodiso tsa App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'O lefiswa ka akhaonto ya hao ya Google Play. Khansela nako efe kapa efe ditlhophisong tsa ingodiso tsa Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Ha ho ingodiso eo o ka e laolang mona. Ingodiso e rekilweng ho App Store e laolwa ditlhophisong tsa hao tsa App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Ha ho ingodiso eo o ka e laolang mona. Ingodiso e rekilweng ho Google Play e laolwa ditlhophisong tsa hao tsa Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Akhaonto ya hao le tsohle tse bolokilweng sevareng sa rona (imeile, kabelo, tshebediso) di tla hlakolwa ka ho sa feleng, mme ditlhahlobo tse sa sebediswang di tla lahleha. Ingodiso ya App Store e tlameha ho khanselwa ditlhophisong tsa hao tsa App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Akhaonto ya hao le tsohle tse bolokilweng sevareng sa rona (imeile, kabelo, tshebediso) di tla hlakolwa ka ho sa feleng, mme ditlhahlobo tse sa sebediswang di tla lahleha. Ingodiso ya Google Play e tlameha ho khanselwa ditlhophisong tsa hao tsa Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Pele o sebedisa dikarolo tsa AI';
+
+  @override
+  String get aiConsentBody =>
+      'Ho sekaseka dishere, ho bala ditshwantsho le ditshwantsho tsa skrine, le ho araba dipotso tsa hao, WhatStock e romela boitsebiso bo hlokahalang bakeng sa kopo — setshwantsho kapa setshwantsho sa skrine, shere, potso ya hao mme, haeba o di sebedisa, dintlha tsa hao le dishere tseo o nang le tsona — ho Anthropic, k\'hamphani e tsamaisang mohlala wa AI wa Claude. Anthropic e bo sebedisa feela ho araba kopo mme ha e bo sebedise ho kwetlisa AI ya yona. Boitsebiso bo eketsehileng bo ho Pholisi ya Lekunutu.';
+
+  @override
+  String get aiConsentLater => 'Eseng hona jwale';
+
+  @override
+  String get aiConsentAllow => 'Dumella';
+
+  @override
+  String get aiConsentSetting => 'Dikarolo tsa AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Dikopo tsa hao di romelwa ho Anthropic (Claude) hore di arabwe. Ha e timilwe, app e botsa pele ho kopo e latelang ya AI, mme kakaretso ya hoseng e iketsang ha e sebetse.';
+
+  @override
+  String get aiReport => 'Tlaleha';
+
+  @override
+  String get aiReportTitle => 'Tlaleha karabo ena ya AI';
+
+  @override
+  String get aiReportInaccurate => 'E fosahetse kapa e a thetsa';
+
+  @override
+  String get aiReportHarmful => 'E a kgopisa kapa e kotsi';
+
+  @override
+  String get aiReportOther => 'Ntho e nngwe';
+
+  @override
+  String get aiReportNoteHint => 'Ho fosahetse eng? (ha ho qobellwe)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Re fumana mongolo wa karabo ena le ntlha ya hao — ntle le akhaonto ya hao — e le hore re e hlahlobe.';
+
+  @override
+  String get aiReportSend => 'Romela tlaleho';
+
+  @override
+  String get aiReportThanks => 'Re a leboha — re tla e hlahloba.';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

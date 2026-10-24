@@ -2939,6 +2939,78 @@ class AppLocalizationsTg extends AppLocalizations {
       'Шумо аллакай тавассути App Store ё Google Play обуна доред. Барои иваз кардани тариф аз танзимоти обунаи ҳамон мағоза истифода баред.';
 
   @override
+  String get paymentViaAppStore =>
+      'Пардохт тавассути ҳисоби Apple-и шумо. Ҳар вақт метавонед дар танзимоти обунаҳои App Store бекор кунед.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Пардохт тавассути ҳисоби Google Play-и шумо. Ҳар вақт метавонед дар танзимоти обунаҳои Google Play бекор кунед.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Дар ин ҷо обунае барои идоракунӣ нест. Обунае, ки дар App Store харида шудааст, дар танзимоти App Store-и шумо идора карда мешавад.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Дар ин ҷо обунае барои идоракунӣ нест. Обунае, ки дар Google Play харида шудааст, дар танзимоти Google Play-и шумо идора карда мешавад.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Ҳисоби шумо ва ҳар чизе, ки дар сервери мо нигоҳ дошта мешавад (почтаи электронӣ, ҳаҷм, истифода), барои ҳамеша нест карда мешавад ва таҳлилҳои истифоданашуда аз байн мераванд. Обунаи App Store-ро бояд дар танзимоти App Store-и худ бекор кунед.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Ҳисоби шумо ва ҳар чизе, ки дар сервери мо нигоҳ дошта мешавад (почтаи электронӣ, ҳаҷм, истифода), барои ҳамеша нест карда мешавад ва таҳлилҳои истифоданашуда аз байн мераванд. Обунаи Google Play-ро бояд дар танзимоти Google Play-и худ бекор кунед.';
+
+  @override
+  String get aiConsentTitle => 'Пеш аз истифодаи имкониятҳои AI';
+
+  @override
+  String get aiConsentBody =>
+      'Барои таҳлили саҳмияҳо, хондани аксҳо ва скриншотҳо ва ҷавоб додан ба саволҳои шумо, WhatStock маълумоти барои дархост заруриро — акс ё скриншот, саҳмия, саволи шумо ва, агар истифода баред, қайдҳо ва мавқеъҳои шуморо — ба Anthropic, ширкате, ки модели AI Claude-ро идора мекунад, мефиристад. Anthropic онро танҳо барои ҷавоб ба дархост коркард мекунад ва барои омӯзонидани AI-и худ истифода намебарад. Тафсилот дар Сиёсати махфият оварда шудааст.';
+
+  @override
+  String get aiConsentLater => 'Ҳоло не';
+
+  @override
+  String get aiConsentAllow => 'Иҷозат додан';
+
+  @override
+  String get aiConsentSetting => 'Имкониятҳои AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Дархостҳои шумо барои ҷавоб ба Anthropic (Claude) фиристода мешаванд. Вақте ки хомӯш аст, барнома пеш аз дархости навбатии AI мепурсад ва хулосаи худкори саҳарӣ омода намешавад.';
+
+  @override
+  String get aiReport => 'Шикоят кардан';
+
+  @override
+  String get aiReportTitle => 'Дар бораи ин ҷавоби AI шикоят кунед';
+
+  @override
+  String get aiReportInaccurate => 'Нодуруст ё гумроҳкунанда';
+
+  @override
+  String get aiReportHarmful => 'Таҳқиромез ё зараровар';
+
+  @override
+  String get aiReportOther => 'Чизи дигар';
+
+  @override
+  String get aiReportNoteHint => 'Чӣ нодуруст аст? (ихтиёрӣ)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Мо матни ин ҷавоб ва қайди шуморо — бе ҳисоби шумо — мегирем, то онро баррасӣ кунем.';
+
+  @override
+  String get aiReportSend => 'Фиристодани шикоят';
+
+  @override
+  String get aiReportThanks => 'Ташаккур — мо онро баррасӣ мекунем.';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

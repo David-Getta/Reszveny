@@ -53,7 +53,12 @@ Future<void> _confirmDeleteAccount(BuildContext context) async {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(l10n.deleteAccountBody),
+              // A bolti appban csak a saját bolt (a webes fizetés említése nélkül).
+              Text(switch (Theme.of(context).platform) {
+                TargetPlatform.iOS => l10n.deleteAccountBodyAppStore,
+                TargetPlatform.android => l10n.deleteAccountBodyGooglePlay,
+                _ => l10n.deleteAccountBody,
+              }),
               const SizedBox(height: 8),
               CheckboxListTile(
                 contentPadding: EdgeInsets.zero,
@@ -622,6 +627,15 @@ class _AnalysisSettings extends StatelessWidget {
                 subtitle: Text(l10n.aiCounterArgumentDesc, style: muted),
                 value: prefs.counterArgument,
                 onChanged: prefs.setCounterArgument,
+              ),
+              // Az AI-hoz adott hozzájárulás (az első AI-kérés előtti ablakban adható meg).
+              SwitchListTile(
+                key: const ValueKey('ai-consent'),
+                contentPadding: EdgeInsets.zero,
+                title: Text(l10n.aiConsentSetting),
+                subtitle: Text(l10n.aiConsentSettingDesc, style: muted),
+                value: prefs.aiConsent == true,
+                onChanged: prefs.setAiConsent,
               ),
               SwitchListTile(
                 key: const ValueKey('morning-brief'),

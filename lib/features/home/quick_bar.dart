@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../analysis/ai_consent.dart';
 import '../../app_services.dart';
 import '../../core/errors.dart';
 import '../../core/models/stock_candidate.dart';
@@ -45,6 +46,7 @@ class _QuickBarState extends State<QuickBar> {
     final l10n = AppLocalizations.of(context);
     final messenger = ScaffoldMessenger.of(context);
     if (_busy) return;
+    if (!await ensureAiConsent(context) || !mounted) return;
     final language = SupportedLocales.languageFor(Localizations.localeOf(context));
     setState(() => _busy = true);
     try {

@@ -2939,6 +2939,78 @@ class AppLocalizationsSw extends AppLocalizations {
       'Tayari una usajili kupitia App Store au Google Play. Ili kubadilisha mpango wako, tumia mipangilio ya usajili ya duka hilo.';
 
   @override
+  String get paymentViaAppStore =>
+      'Utatozwa kupitia akaunti yako ya Apple. Ghairi wakati wowote kwenye mipangilio ya usajili ya App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Utatozwa kupitia akaunti yako ya Google Play. Ghairi wakati wowote kwenye mipangilio ya usajili ya Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Hakuna usajili wa kudhibiti hapa. Usajili ulionunuliwa kwenye App Store hudhibitiwa kwenye mipangilio yako ya App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Hakuna usajili wa kudhibiti hapa. Usajili ulionunuliwa kwenye Google Play hudhibitiwa kwenye mipangilio yako ya Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Akaunti yako na kila kitu kilichohifadhiwa kwenye seva yetu (barua pepe, kiwango, matumizi) vitafutwa kabisa, na uchambuzi ambao haujatumika utapotea. Usajili wa App Store lazima ughairiwe kwenye mipangilio yako ya App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Akaunti yako na kila kitu kilichohifadhiwa kwenye seva yetu (barua pepe, kiwango, matumizi) vitafutwa kabisa, na uchambuzi ambao haujatumika utapotea. Usajili wa Google Play lazima ughairiwe kwenye mipangilio yako ya Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Kabla ya kutumia vipengele vya AI';
+
+  @override
+  String get aiConsentBody =>
+      'Ili kuchambua hisa, kusoma picha na picha za skrini, na kujibu maswali yako, WhatStock hutuma data inayohitajika kwa ombi — picha au picha ya skrini, hisa, swali lako na, unapovitumia, madokezo na nafasi zako — kwa Anthropic, kampuni inayoendesha muundo wa AI wa Claude. Anthropic huichakata tu ili kujibu ombi na haiitumii kufunza AI yake. Maelezo zaidi yako kwenye Sera ya Faragha.';
+
+  @override
+  String get aiConsentLater => 'Si sasa';
+
+  @override
+  String get aiConsentAllow => 'Ruhusu';
+
+  @override
+  String get aiConsentSetting => 'Vipengele vya AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Maombi yako hutumwa kwa Anthropic (Claude) ili yajibiwe. Kikizimwa, programu huuliza kabla ya ombi linalofuata la AI, na muhtasari wa asubuhi wa kiotomatiki hautaendeshwa.';
+
+  @override
+  String get aiReport => 'Ripoti';
+
+  @override
+  String get aiReportTitle => 'Ripoti jibu hili la AI';
+
+  @override
+  String get aiReportInaccurate => 'Si sahihi au linapotosha';
+
+  @override
+  String get aiReportHarmful => 'Linakera au lina madhara';
+
+  @override
+  String get aiReportOther => 'Kitu kingine';
+
+  @override
+  String get aiReportNoteHint => 'Tatizo ni nini? (si lazima)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Tunapokea maandishi ya jibu hili na dokezo lako — bila akaunti yako — ili tuweze kulikagua.';
+
+  @override
+  String get aiReportSend => 'Tuma ripoti';
+
+  @override
+  String get aiReportThanks => 'Asante — tutalikagua.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

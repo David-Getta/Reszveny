@@ -2937,6 +2937,78 @@ class AppLocalizationsFi extends AppLocalizations {
       'Sinulla on jo tilaus App Storen tai Google Playn kautta. Voit vaihtaa pakettia kyseisen kaupan tilausasetuksissa.';
 
   @override
+  String get paymentViaAppStore =>
+      'Laskutetaan Apple-tilisi kautta. Voit perua milloin tahansa App Storen tilausasetuksista.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Laskutetaan Google Play -tilisi kautta. Voit perua milloin tahansa Google Playn tilausasetuksista.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Täällä ei ole hallittavaa tilausta. App Storesta ostettua tilausta hallitaan App Storen asetuksissa.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Täällä ei ole hallittavaa tilausta. Google Playsta ostettua tilausta hallitaan Google Playn asetuksissa.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Tilisi ja kaikki palvelimellamme oleva (sähköposti, kiintiö, käyttö) poistetaan pysyvästi, ja käyttämättömät analyysit menetetään. App Storen tilaus on peruttava App Storen asetuksista.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Tilisi ja kaikki palvelimellamme oleva (sähköposti, kiintiö, käyttö) poistetaan pysyvästi, ja käyttämättömät analyysit menetetään. Google Playn tilaus on peruttava Google Playn asetuksista.';
+
+  @override
+  String get aiConsentTitle => 'Ennen kuin käytät tekoälyominaisuuksia';
+
+  @override
+  String get aiConsentBody =>
+      'Osakkeiden analysointia, kuvien ja kuvakaappausten lukemista ja kysymyksiisi vastaamista varten WhatStock lähettää pyyntöön tarvittavat tiedot – kuvan tai kuvakaappauksen, osakkeen, kysymyksesi sekä, jos käytät niitä, muistiinpanosi ja omistuksesi – Anthropicille, joka ylläpitää Claude-tekoälymallia. Anthropic käsittelee niitä vain vastatakseen pyyntöön eikä käytä niitä tekoälynsä kouluttamiseen. Lisätietoja on tietosuojaselosteessa.';
+
+  @override
+  String get aiConsentLater => 'Ei nyt';
+
+  @override
+  String get aiConsentAllow => 'Salli';
+
+  @override
+  String get aiConsentSetting => 'Tekoälyominaisuudet';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Pyyntösi lähetetään Anthropicille (Claude) vastattaviksi. Kun asetus on pois päältä, sovellus kysyy ennen seuraavaa tekoälypyyntöä, eikä automaattista aamun yhteenvetoa tehdä.';
+
+  @override
+  String get aiReport => 'Ilmoita';
+
+  @override
+  String get aiReportTitle => 'Ilmoita tästä tekoälyn vastauksesta';
+
+  @override
+  String get aiReportInaccurate => 'Väärä tai harhaanjohtava';
+
+  @override
+  String get aiReportHarmful => 'Loukkaava tai haitallinen';
+
+  @override
+  String get aiReportOther => 'Jokin muu';
+
+  @override
+  String get aiReportNoteHint => 'Mikä on vialla? (valinnainen)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Saamme tämän vastauksen tekstin ja muistiinpanosi – ilman tiliäsi – jotta voimme tarkistaa sen.';
+
+  @override
+  String get aiReportSend => 'Lähetä ilmoitus';
+
+  @override
+  String get aiReportThanks => 'Kiitos – tarkistamme sen.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

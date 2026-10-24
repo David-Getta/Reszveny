@@ -2804,6 +2804,76 @@ class AppLocalizationsZh extends AppLocalizations {
       '你已通过 App Store 或 Google Play 订阅。如需更改计划，请使用该商店的订阅设置。';
 
   @override
+  String get paymentViaAppStore => '通过你的 Apple 账户扣费。可随时在 App Store 订阅设置中取消。';
+
+  @override
+  String get paymentViaGooglePlay =>
+      '通过你的 Google Play 账户扣费。可随时在 Google Play 订阅设置中取消。';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      '此处没有可管理的订阅。在 App Store 购买的订阅需在你的 App Store 设置中管理。';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      '此处没有可管理的订阅。在 Google Play 购买的订阅需在你的 Google Play 设置中管理。';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      '你的账户以及我们服务器上存储的所有内容（电子邮件、额度、使用记录）将被永久删除，未使用的分析将失效。App Store 的订阅需在你的 App Store 设置中取消。';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      '你的账户以及我们服务器上存储的所有内容（电子邮件、额度、使用记录）将被永久删除，未使用的分析将失效。Google Play 的订阅需在你的 Google Play 设置中取消。';
+
+  @override
+  String get aiConsentTitle => '使用 AI 功能前';
+
+  @override
+  String get aiConsentBody =>
+      '为了分析股票、读取照片和截图并回答你的问题，WhatStock 会将请求所需的数据——照片或截图、股票、你的问题，以及你使用时的笔记和持仓——发送给运营 Claude AI 模型的 Anthropic。Anthropic 仅为回答请求而处理这些数据，不会将其用于训练其 AI。详情请参阅隐私政策。';
+
+  @override
+  String get aiConsentLater => '以后再说';
+
+  @override
+  String get aiConsentAllow => '允许';
+
+  @override
+  String get aiConsentSetting => 'AI 功能';
+
+  @override
+  String get aiConsentSettingDesc =>
+      '你的请求会发送给 Anthropic（Claude）以获得回答。关闭后，应用会在下一次 AI 请求前询问你，且不会自动生成早间摘要。';
+
+  @override
+  String get aiReport => '举报';
+
+  @override
+  String get aiReportTitle => '举报此 AI 回答';
+
+  @override
+  String get aiReportInaccurate => '错误或误导';
+
+  @override
+  String get aiReportHarmful => '冒犯或有害';
+
+  @override
+  String get aiReportOther => '其他';
+
+  @override
+  String get aiReportNoteHint => '哪里有问题？（可选）';
+
+  @override
+  String get aiReportPrivacy => '我们会收到此回答的文本和你的备注（不关联你的账户），以便进行审核。';
+
+  @override
+  String get aiReportSend => '提交举报';
+
+  @override
+  String get aiReportThanks => '谢谢，我们会进行审核。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5975,6 +6045,76 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String get subscribedInStore =>
       '你已透過 App Store 或 Google Play 訂閱。如需更改計劃，請使用該商店的訂閱設定。';
+
+  @override
+  String get paymentViaAppStore => '經你的 Apple 帳戶收費。可隨時在 App Store 訂閱設定中取消。';
+
+  @override
+  String get paymentViaGooglePlay =>
+      '經你的 Google Play 帳戶收費。可隨時在 Google Play 訂閱設定中取消。';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      '這裡沒有可管理的訂閱。在 App Store 購買的訂閱須於你的 App Store 設定中管理。';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      '這裡沒有可管理的訂閱。在 Google Play 購買的訂閱須於你的 Google Play 設定中管理。';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      '你的帳戶及我們伺服器上儲存的所有內容（電郵、額度、使用記錄）將被永久刪除，未使用的分析將會失效。App Store 的訂閱需於你的 App Store 設定中取消。';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      '你的帳戶及我們伺服器上儲存的所有內容（電郵、額度、使用記錄）將被永久刪除，未使用的分析將會失效。Google Play 的訂閱需於你的 Google Play 設定中取消。';
+
+  @override
+  String get aiConsentTitle => '使用 AI 功能前';
+
+  @override
+  String get aiConsentBody =>
+      '為了分析股票、讀取相片和截圖並回答你的問題，WhatStock 會將請求所需的資料——相片或截圖、股票、你的問題，以及你有使用的筆記和持倉——傳送給營運 Claude AI 模型的 Anthropic。Anthropic 只會為回答請求而處理這些資料，不會用來訓練其 AI。詳情請參閱私隱政策。';
+
+  @override
+  String get aiConsentLater => '稍後再說';
+
+  @override
+  String get aiConsentAllow => '允許';
+
+  @override
+  String get aiConsentSetting => 'AI 功能';
+
+  @override
+  String get aiConsentSettingDesc =>
+      '你的請求會傳送給 Anthropic（Claude）以作回答。關閉後，應用程式會在下次 AI 請求前詢問你，自動早晨摘要亦不會執行。';
+
+  @override
+  String get aiReport => '舉報';
+
+  @override
+  String get aiReportTitle => '舉報此 AI 回答';
+
+  @override
+  String get aiReportInaccurate => '錯誤或具誤導性';
+
+  @override
+  String get aiReportHarmful => '冒犯或有害';
+
+  @override
+  String get aiReportOther => '其他';
+
+  @override
+  String get aiReportNoteHint => '有甚麼問題？（可選）';
+
+  @override
+  String get aiReportPrivacy => '我們會收到此回答的文字及你的備註（不會連結你的帳戶），以便進行審視。';
+
+  @override
+  String get aiReportSend => '提交舉報';
+
+  @override
+  String get aiReportThanks => '多謝，我們會跟進審視。';
 
   @override
   String get portfolioGoalSet => '設定目標';

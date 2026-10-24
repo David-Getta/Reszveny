@@ -2935,6 +2935,78 @@ class AppLocalizationsPcm extends AppLocalizations {
       'You don already get subscription through App Store or Google Play. To change your plan, use di subscription settings for dat store.';
 
   @override
+  String get paymentViaAppStore =>
+      'Dem go charge you through your Apple account. Cancel anytime for your App Store subscription settings.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Dem go charge you through your Google Play account. Cancel anytime for your Google Play subscription settings.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'No subscription dey here to manage. Subscription wey you buy for App Store, na for your App Store settings you go manage am.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'No subscription dey here to manage. Subscription wey you buy for Google Play, na for your Google Play settings you go manage am.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Your account and evritin wey dey our server (email, allowance, usage) go delete forever, and analysis wey you never use go loss. App Store subscription, you must cancel am for your App Store settings.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Your account and evritin wey dey our server (email, allowance, usage) go delete forever, and analysis wey you never use go loss. Google Play subscription, you must cancel am for your Google Play settings.';
+
+  @override
+  String get aiConsentTitle => 'Before you use AI features';
+
+  @override
+  String get aiConsentBody =>
+      'To analyse stocks, read photos and screenshots, and answer your questions, WhatStock dey send di data wey di request need — di photo or screenshot, di stock, your question and, if you dey use dem, your notes and di stocks wey you hold — go Anthropic, di company wey dey run di Claude AI model. Anthropic dey use am only to answer di request, e no dey use am train im AI. Di full details dey for di Privacy Policy.';
+
+  @override
+  String get aiConsentLater => 'No be now';
+
+  @override
+  String get aiConsentAllow => 'Allow am';
+
+  @override
+  String get aiConsentSetting => 'AI features';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'We dey send your requests go Anthropic (Claude) make dem answer am. If you off am, di app go ask you before di next AI request, and di automatic morning summary no go run.';
+
+  @override
+  String get aiReport => 'Report';
+
+  @override
+  String get aiReportTitle => 'Report dis AI answer';
+
+  @override
+  String get aiReportInaccurate => 'E no correct or e dey mislead';
+
+  @override
+  String get aiReportHarmful => 'E dey offend or e fit harm';
+
+  @override
+  String get aiReportOther => 'Anoda tin';
+
+  @override
+  String get aiReportNoteHint => 'Wetin no correct? (if you want)';
+
+  @override
+  String get aiReportPrivacy =>
+      'We go receive di text of dis answer and your note — without your account — so we fit check am.';
+
+  @override
+  String get aiReportSend => 'Send report';
+
+  @override
+  String get aiReportThanks => 'Thank you — we go check am.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

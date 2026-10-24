@@ -2953,6 +2953,78 @@ class AppLocalizationsLg extends AppLocalizations {
       'Olina dda okwewandiisa okuyita mu App Store oba Google Play. Okukyusa enteekateeka yo, kozesa ensengeka z’okwewandiisa ez’edduuka eryo.';
 
   @override
+  String get paymentViaAppStore =>
+      'Osasulizibwa okuyita mu akawunti yo eya Apple. Sazaamu essaawa yonna mu nsengeka z\'okwewandiisa eza App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Osasulizibwa okuyita mu akawunti yo eya Google Play. Sazaamu essaawa yonna mu nsengeka z\'okwewandiisa eza Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Wano tewali kwewandiisa kwa kuddukanya. Okwewandiisa okwagulwa mu App Store kuddukanyizibwa mu nsengeka zo eza App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Wano tewali kwewandiisa kwa kuddukanya. Okwewandiisa okwagulwa mu Google Play kuddukanyizibwa mu nsengeka zo eza Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Akawunti yo ne buli kimu ekiterekeddwa ku seva yaffe (email, ky\'okkirizibwa, enkozesa) bijja kusangulwa ddala, era okwekenneenya kw\'otokozesanga kujja kubula. Okwewandiisa kwa App Store kulina okusazibwamu mu nsengeka zo eza App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Akawunti yo ne buli kimu ekiterekeddwa ku seva yaffe (email, ky\'okkirizibwa, enkozesa) bijja kusangulwa ddala, era okwekenneenya kw\'otokozesanga kujja kubula. Okwewandiisa kwa Google Play kulina okusazibwamu mu nsengeka zo eza Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Nga tonnakozesa bintu bya AI';
+
+  @override
+  String get aiConsentBody =>
+      'Okwekenneenya emigabo, okusoma ebifaananyi n\'ebifaananyi bya sikirini, n\'okuddamu ebibuuzo byo, WhatStock esindika data eyetaagisa mu kusaba — ekifaananyi oba ekifaananyi kya sikirini, omugabo, ekibuuzo kyo, era bw\'oba obikozesa, ebiwandiiko byo n\'emigabo gy\'olina — eri Anthropic, kkampuni eddukanya model ya AI eya Claude. Anthropic ebikozesa okuddamu okusaba kwokka, era tebikozesa kutendeka AI yaayo. Ebisingawo biri mu Nkola y\'ebyama.';
+
+  @override
+  String get aiConsentLater => 'Si kati';
+
+  @override
+  String get aiConsentAllow => 'Kkiriza';
+
+  @override
+  String get aiConsentSetting => 'Ebintu bya AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Okusaba kwo kusindikibwa eri Anthropic (Claude) okuddibwamu. Bwe kiba kiggaddwa, app ebuuza nga tennaba kusaba kwa AI okuddako, era ebifunze by\'oku makya ebikolebwa byokka tebikolebwa.';
+
+  @override
+  String get aiReport => 'Loopa';
+
+  @override
+  String get aiReportTitle => 'Loopa okuddamu kuno okwa AI';
+
+  @override
+  String get aiReportInaccurate => 'Kikyamu oba kibuzaabuza';
+
+  @override
+  String get aiReportHarmful => 'Kivuma oba kirina obulabe';
+
+  @override
+  String get aiReportOther => 'Ekirala';
+
+  @override
+  String get aiReportNoteHint => 'Kiki ekikyamu? (si kya tteeka)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Tufuna ebiwandiiko by\'okuddamu kuno n\'ekiwandiiko kyo — awatali akawunti yo — tusobole okukyetegereza.';
+
+  @override
+  String get aiReportSend => 'Weereza lipoota';
+
+  @override
+  String get aiReportThanks => 'Weebale — tujja kukyetegereza.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

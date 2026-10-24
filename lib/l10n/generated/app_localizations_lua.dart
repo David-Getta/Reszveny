@@ -2949,6 +2949,79 @@ class AppLocalizationsLua extends AppLocalizations {
       'Udi kale ne abonnement wa ku App Store anyi Google Play. Bua kushintulula forfait webe, enza mudimu ne malongolola a abonnement a store eu.';
 
   @override
+  String get paymentViaAppStore =>
+      'Udi ufuta ku compte webe wa Apple. Udi mua kulekela dîba dionso mu malongolola a abonnement a App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Udi ufuta ku compte webe wa Google Play. Udi mua kulekela dîba dionso mu malongolola a abonnement a Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Kakuena abonnement wa kulombola muaba eu to. Abonnement uvua musumbe mu App Store udi ulombodibua mu malongolola ebe a App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Kakuena abonnement wa kulombola muaba eu to. Abonnement uvua musumbe mu Google Play udi ulombodibua mu malongolola ebe a Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Tudi tujimija tshiendelele compte webe ne bintu bionso bilama mu serveur wetu (e-mail, tshitupa tshia ngondo, dienzela mudimu), ne makonkonona onso ashadile adi ajimina. Abonnement wa App Store udi ne bua kulekeledibua mu malongolola ebe a App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Tudi tujimija tshiendelele compte webe ne bintu bionso bilama mu serveur wetu (e-mail, tshitupa tshia ngondo, dienzela mudimu), ne makonkonona onso ashadile adi ajimina. Abonnement wa Google Play udi ne bua kulekeledibua mu malongolola ebe a Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Kumpala kua kuenza mudimu ne bintu bia AI';
+
+  @override
+  String get aiConsentBody =>
+      'Bua kukonkonona ba-action, kubala ba-foto ne ba-foto ya ekran, ne kuandamuna nkonko yebe, WhatStock udi utuma mamanyisha adi dilomba dikengela — foto anyi foto wa ekran, action, lukonko luebe ne, bikala udi uenza nawu mudimu, mifundu yebe ne ba-position yebe — kudi Anthropic, kompanyi udi ulombola modèle wa AI Claude. Anthropic udi wenza nawu mudimu anu bua kuandamuna dilomba, kayi wenza nawu mudimu bua kulongesha AI wende to. Mamanyisha a bungi adi mu Mikenji ya dilama dia mamanyisha ebe.';
+
+  @override
+  String get aiConsentLater => 'Ki mpindieu to';
+
+  @override
+  String get aiConsentAllow => 'Itaba';
+
+  @override
+  String get aiConsentSetting => 'Bintu bia AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Malomba ebe adi atumibua kudi Anthropic (Claude) bua kuandamunawu. Padiwu muimine, application udi ukonka kumpala kua dilomba dia AI didi dilonda, ne mukusa wa dinda udi wenzeka nkayawu kawena wenzeka to.';
+
+  @override
+  String get aiReport => 'Manyisha';
+
+  @override
+  String get aiReportTitle => 'Manyisha bua diandamuna edi dia AI';
+
+  @override
+  String get aiReportInaccurate => 'Dia dishima anyi didi dibungamija';
+
+  @override
+  String get aiReportHarmful => 'Didi dipenda anyi dinyanga';
+
+  @override
+  String get aiReportOther => 'Tshintu tshikuabo';
+
+  @override
+  String get aiReportNoteHint =>
+      'Tshinyi tshidi katshiyi bimpe? (bikala musue)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Tudi tupeta mifundu ya diandamuna edi ne mufundu webe — kakuyi compte webe — bua tumone.';
+
+  @override
+  String get aiReportSend => 'Tuma lapolo';
+
+  @override
+  String get aiReportThanks => 'Tuasakidila — netumone.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

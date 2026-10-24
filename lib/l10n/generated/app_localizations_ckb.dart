@@ -2938,6 +2938,78 @@ class AppLocalizationsCkb extends AppLocalizations {
       'تۆ پێشتر ئابوونەیەکت هەیە لە ڕێگەی App Store یان Google Play. بۆ گۆڕینی پلانەکەت، ڕێکخستنەکانی ئابوونە لەو فرۆشگایە بەکاربهێنە.';
 
   @override
+  String get paymentViaAppStore =>
+      'پارەکە لە ڕێگەی هەژمارەکەت لە Apple وەردەگیرێت. هەر کاتێک بتەوێت لە ڕێکخستنەکانی ئابوونەی App Store هەڵیبوەشێنەوە.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'پارەکە لە ڕێگەی هەژمارەکەت لە Google Play وەردەگیرێت. هەر کاتێک بتەوێت لە ڕێکخستنەکانی ئابوونەی Google Play هەڵیبوەشێنەوە.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'لێرە هیچ ئابوونەیەک نییە بۆ بەڕێوەبردن. ئابوونەیەک کە لە App Store کڕدرابێت، لە ڕێکخستنەکانی App Store بەڕێوە دەبرێت.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'لێرە هیچ ئابوونەیەک نییە بۆ بەڕێوەبردن. ئابوونەیەک کە لە Google Play کڕدرابێت، لە ڕێکخستنەکانی Google Play بەڕێوە دەبرێت.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'هەژمارەکەت و هەموو ئەوەی لەسەر ڕاژەکارەکەمان پاشەکەوت کراوە (ئیمەیڵ، بڕ، بەکارهێنان) بە یەکجاری دەسڕدرێنەوە، و شیکارییە بەکارنەهێنراوەکان لەدەست دەچن. ئابوونەی App Store دەبێت لە ڕێکخستنەکانی App Store هەڵبوەشێنرێتەوە.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'هەژمارەکەت و هەموو ئەوەی لەسەر ڕاژەکارەکەمان پاشەکەوت کراوە (ئیمەیڵ، بڕ، بەکارهێنان) بە یەکجاری دەسڕدرێنەوە، و شیکارییە بەکارنەهێنراوەکان لەدەست دەچن. ئابوونەی Google Play دەبێت لە ڕێکخستنەکانی Google Play هەڵبوەشێنرێتەوە.';
+
+  @override
+  String get aiConsentTitle => 'پێش بەکارهێنانی تایبەتمەندییەکانی AI';
+
+  @override
+  String get aiConsentBody =>
+      'بۆ شیکردنەوەی پشکەکان، خوێندنەوەی وێنە و وێنەی شاشە و وەڵامدانەوەی پرسیارەکانت، WhatStock ئەو داتایانەی کە بۆ داواکارییەکە پێویستن — وێنەکە یان وێنەی شاشەکە، پشکەکە، پرسیارەکەت و، ئەگەر بەکاریان بهێنیت، تێبینی و پۆزیشنەکانت — دەنێرێت بۆ Anthropic، ئەو کۆمپانیایەی مۆدێلی AI-ی Claude بەڕێوە دەبات. Anthropic تەنها بۆ وەڵامدانەوەی داواکارییەکە مامەڵەیان لەگەڵ دەکات و بۆ ڕاهێنانی AI-ەکەی بەکاریان ناهێنێت. وردەکارییەکان لە سیاسەتی تایبەتێتیدان.';
+
+  @override
+  String get aiConsentLater => 'ئێستا نا';
+
+  @override
+  String get aiConsentAllow => 'ڕێگەدان';
+
+  @override
+  String get aiConsentSetting => 'تایبەتمەندییەکانی AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'داواکارییەکانت بۆ وەڵامدانەوە دەنێردرێن بۆ Anthropic (Claude). کاتێک کوژاوەیە، ئەپەکە پێش داواکاریی داهاتووی AI دەپرسێت، و پوختەی بەیانیی خۆکار ئامادە ناکرێت.';
+
+  @override
+  String get aiReport => 'ڕاپۆرتکردن';
+
+  @override
+  String get aiReportTitle => 'ڕاپۆرتکردنی ئەم وەڵامەی AI';
+
+  @override
+  String get aiReportInaccurate => 'هەڵە یان چەواشەکار';
+
+  @override
+  String get aiReportHarmful => 'سووکایەتیئامێز یان زیانبەخش';
+
+  @override
+  String get aiReportOther => 'شتێکی تر';
+
+  @override
+  String get aiReportNoteHint => 'چی هەڵەیە؟ (ئارەزوومەندانە)';
+
+  @override
+  String get aiReportPrivacy =>
+      'دەقی ئەم وەڵامە و تێبینییەکەت — بەبێ هەژمارەکەت — وەردەگرین بۆ ئەوەی پێیدا بچینەوە.';
+
+  @override
+  String get aiReportSend => 'ناردنی ڕاپۆرت';
+
+  @override
+  String get aiReportThanks => 'سوپاس — پێیدا دەچینەوە.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

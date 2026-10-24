@@ -2954,6 +2954,78 @@ class AppLocalizationsHil extends AppLocalizations {
       'May subscription ka na paagi sa App Store ukon Google Play. Para baylohan ang imo plan, gamita ang mga setting sang subscription sang amo nga store.';
 
   @override
+  String get paymentViaAppStore =>
+      'Ginabayaran paagi sa imo Apple account. Mahimo i-kansela bisan san-o sa mga setting sang subscription sa App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Ginabayaran paagi sa imo Google Play account. Mahimo i-kansela bisan san-o sa mga setting sang subscription sa Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Wala sang subscription nga madumalahan diri. Ang subscription nga ginbakal sa App Store ginadumalahan sa imo mga setting sang App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Wala sang subscription nga madumalahan diri. Ang subscription nga ginbakal sa Google Play ginadumalahan sa imo mga setting sang Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Ang imo account kag tanan nga natipon sa amon server (email, alokasyon, paggamit) mapanas sing permanente, kag madula ang wala nagamit nga mga analisis. Ang subscription sa App Store kinahanglan i-kansela sa imo mga setting sang App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Ang imo account kag tanan nga natipon sa amon server (email, alokasyon, paggamit) mapanas sing permanente, kag madula ang wala nagamit nga mga analisis. Ang subscription sa Google Play kinahanglan i-kansela sa imo mga setting sang Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Antes mo gamiton ang mga feature sang AI';
+
+  @override
+  String get aiConsentBody =>
+      'Agod ma-analisar ang mga stock, mabasa ang mga litrato kag screenshot, kag masabat ang imo mga pamangkot, ginapadala sang WhatStock ang datos nga kinahanglan sang hangyo — ang litrato ukon screenshot, ang stock, ang imo pamangkot kag, kon ginagamit mo, ang imo mga nota kag posisyon — sa Anthropic, ang kompanya nga nagapadalagan sang AI model nga Claude. Ginaproseso ini sang Anthropic agod lamang masabat ang hangyo kag indi ini ginagamit sa pagbansay sang iya AI. Ara ang mga detalye sa Palisiya sa Privacy.';
+
+  @override
+  String get aiConsentLater => 'Indi anay subong';
+
+  @override
+  String get aiConsentAllow => 'Tuguti';
+
+  @override
+  String get aiConsentSetting => 'Mga feature sang AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Ginapadala ang imo mga hangyo sa Anthropic (Claude) agod masabat. Kon naka-off, magapamangkot anay ang app antes sang masunod nga hangyo sa AI, kag indi himuon ang awtomatiko nga buod kada aga.';
+
+  @override
+  String get aiReport => 'I-report';
+
+  @override
+  String get aiReportTitle => 'I-report ining sabat sang AI';
+
+  @override
+  String get aiReportInaccurate => 'Sala ukon makapatalang';
+
+  @override
+  String get aiReportHarmful => 'Makapasakit ukon makahalit';
+
+  @override
+  String get aiReportOther => 'Iban pa';
+
+  @override
+  String get aiReportNoteHint => 'Ano ang sala? (opsyonal)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Nabaton namon ang teksto sining sabat kag ang imo nota — wala ang imo account — agod mausisa namon ini.';
+
+  @override
+  String get aiReportSend => 'Ipadala ang report';
+
+  @override
+  String get aiReportThanks => 'Salamat — usisaon namon ini.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

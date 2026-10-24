@@ -158,7 +158,9 @@ class _ReferralCardState extends State<ReferralCard> {
                   l10n.referralStats(info.invited, info.rewarded),
                   style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                 ),
-                if (!info.redeemed && !_redeemedNow) ...[
+                // iOS-en kód nem nyithat meg fizetős tartalmat a vásárláson kívül (App Store 3.1.1):
+                // ott a beváltás nem érhető el (a meghívó link és a jutalom a meghívónak marad).
+                if (!info.redeemed && !_redeemedNow && redeemAllowed(Theme.of(context).platform)) ...[
                   const SizedBox(height: 6),
                   TextButton(
                     key: const ValueKey('referral-have-code'),
@@ -254,3 +256,7 @@ class _RedeemDialogState extends State<_RedeemDialog> {
     );
   }
 }
+
+/// Beváltható-e itt ajánló- vagy tesztelői kód: iOS-en nem (ott csak az App Store-on át
+/// nyílhat meg fizetős tartalom).
+bool redeemAllowed(TargetPlatform platform) => platform != TargetPlatform.iOS;

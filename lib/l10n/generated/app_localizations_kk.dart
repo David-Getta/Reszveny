@@ -2935,6 +2935,78 @@ class AppLocalizationsKk extends AppLocalizations {
       'Сізде App Store немесе Google Play арқылы жазылым бұрыннан бар. Тарифті өзгерту үшін сол дүкеннің жазылым параметрлерін пайдаланыңыз.';
 
   @override
+  String get paymentViaAppStore =>
+      'Төлем Apple аккаунтыңыз арқылы алынады. Кез келген уақытта App Store жазылым параметрлерінде бас тартуға болады.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Төлем Google Play аккаунтыңыз арқылы алынады. Кез келген уақытта Google Play жазылым параметрлерінде бас тартуға болады.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Мұнда басқаратын жазылым жоқ. App Store арқылы сатып алынған жазылым App Store параметрлерінде басқарылады.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Мұнда басқаратын жазылым жоқ. Google Play арқылы сатып алынған жазылым Google Play параметрлерінде басқарылады.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Аккаунтыңыз және серверімізде сақталған барлық дерек (email, лимит, пайдалану) біржола жойылады, ал пайдаланылмаған талдаулар жоғалады. App Store жазылымынан App Store параметрлерінде бас тарту керек.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Аккаунтыңыз және серверімізде сақталған барлық дерек (email, лимит, пайдалану) біржола жойылады, ал пайдаланылмаған талдаулар жоғалады. Google Play жазылымынан Google Play параметрлерінде бас тарту керек.';
+
+  @override
+  String get aiConsentTitle => 'AI функцияларын пайдаланбас бұрын';
+
+  @override
+  String get aiConsentBody =>
+      'Акцияларды талдау, фотолар мен скриншоттарды оқу және сұрақтарыңызға жауап беру үшін WhatStock сұрауға қажетті деректерді — фотоны не скриншотты, акцияны, сұрағыңызды және, егер пайдалансаңыз, жазбаларыңыз бен позицияларыңызды — Claude AI моделін басқаратын Anthropic компаниясына жібереді. Anthropic оларды тек сұрауға жауап беру үшін өңдейді және өз AI-ын оқыту үшін пайдаланбайды. Толығырақ құпиялылық саясатында.';
+
+  @override
+  String get aiConsentLater => 'Қазір емес';
+
+  @override
+  String get aiConsentAllow => 'Рұқсат ету';
+
+  @override
+  String get aiConsentSetting => 'AI функциялары';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Сұрауларыңыз жауап алу үшін Anthropic-ке (Claude) жіберіледі. Өшірулі болса, қолданба келесі AI сұрауының алдында сұрайды, ал таңғы автоматты шолу жасалмайды.';
+
+  @override
+  String get aiReport => 'Шағымдану';
+
+  @override
+  String get aiReportTitle => 'Бұл AI жауабына шағымдану';
+
+  @override
+  String get aiReportInaccurate => 'Қате немесе жаңылыстыратын';
+
+  @override
+  String get aiReportHarmful => 'Қорлайтын немесе зиянды';
+
+  @override
+  String get aiReportOther => 'Басқа нәрсе';
+
+  @override
+  String get aiReportNoteHint => 'Не дұрыс емес? (міндетті емес)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Тексеру үшін біз бұл жауаптың мәтінін және жазбаңызды аламыз — аккаунтыңызсыз.';
+
+  @override
+  String get aiReportSend => 'Шағым жіберу';
+
+  @override
+  String get aiReportThanks => 'Рақмет — тексереміз.';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

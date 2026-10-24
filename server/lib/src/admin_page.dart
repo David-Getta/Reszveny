@@ -124,6 +124,17 @@ String adminStatsPage(Map<String, dynamic> stats) {
     }
     b.write('</table></div>');
   }
+  final reports = (stats['reports'] as List? ?? const []).cast<Map<String, dynamic>>();
+  b.write('<h2>Jelentett AI-válaszok</h2>');
+  if (reports.isEmpty) b.write('<div class="muted">Nincs jelentés.</div>');
+  for (final r in reports) {
+    b.write(
+      '<details><summary><b>${_esc(r['reason'])}</b> · ${_esc(r['kind'])} ${_esc(r['symbol'])} '
+      '<span class="muted">· ${_esc(r['platform'])} ${_esc(r['version'])} · ${_esc(r['created_at'])}</span>'
+      '${(r['note'] as String? ?? '').isEmpty ? '' : '<br>${_esc(r['note'])}'}'
+      '</summary><pre>${_esc(r['excerpt'])}</pre></details>',
+    );
+  }
   final errors = (stats['errors'] as List).cast<Map<String, dynamic>>();
   b.write('<h2>Leggyakoribb hibák (30 nap)</h2>');
   if (errors.isEmpty) b.write('<div class="muted">Nincs bejelentett hiba.</div>');

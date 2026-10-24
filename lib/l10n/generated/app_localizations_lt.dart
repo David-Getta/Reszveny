@@ -3004,6 +3004,78 @@ class AppLocalizationsLt extends AppLocalizations {
       'Jau turite prenumeratą per App Store arba Google Play. Norėdami pakeisti planą, naudokite tos parduotuvės prenumeratos nustatymus.';
 
   @override
+  String get paymentViaAppStore =>
+      'Mokestis nuskaitomas per jūsų Apple paskyrą. Atšaukti galite bet kada App Store prenumeratų nustatymuose.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Mokestis nuskaitomas per jūsų Google Play paskyrą. Atšaukti galite bet kada Google Play prenumeratų nustatymuose.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Čia nėra prenumeratos, kurią būtų galima tvarkyti. App Store įsigyta prenumerata tvarkoma App Store nustatymuose.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Čia nėra prenumeratos, kurią būtų galima tvarkyti. Google Play įsigyta prenumerata tvarkoma Google Play nustatymuose.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Jūsų paskyra ir viskas, kas saugoma mūsų serveryje (el. paštas, limitas, naudojimas), bus ištrinta visam laikui, o nepanaudotos analizės prarandamos. App Store prenumeratą reikia atšaukti App Store nustatymuose.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Jūsų paskyra ir viskas, kas saugoma mūsų serveryje (el. paštas, limitas, naudojimas), bus ištrinta visam laikui, o nepanaudotos analizės prarandamos. Google Play prenumeratą reikia atšaukti Google Play nustatymuose.';
+
+  @override
+  String get aiConsentTitle => 'Prieš naudojantis DI funkcijomis';
+
+  @override
+  String get aiConsentBody =>
+      'Kad galėtų analizuoti akcijas, nuskaityti nuotraukas bei ekrano kopijas ir atsakyti į jūsų klausimus, WhatStock siunčia užklausai reikalingus duomenis – nuotrauką ar ekrano kopiją, akciją, jūsų klausimą ir, jei juos naudojate, jūsų užrašus bei pozicijas – bendrovei Anthropic, valdančiai DI modelį Claude. Anthropic juos tvarko tik tam, kad atsakytų į užklausą, ir nenaudoja jų savo DI mokymui. Daugiau informacijos rasite privatumo politikoje.';
+
+  @override
+  String get aiConsentLater => 'Ne dabar';
+
+  @override
+  String get aiConsentAllow => 'Leisti';
+
+  @override
+  String get aiConsentSetting => 'DI funkcijos';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Jūsų užklausos siunčiamos bendrovei Anthropic (Claude), kad būtų į jas atsakyta. Kai išjungta, programėlė paklausia prieš kitą DI užklausą, o automatinė rytinė santrauka neparengiama.';
+
+  @override
+  String get aiReport => 'Pranešti';
+
+  @override
+  String get aiReportTitle => 'Pranešti apie šį DI atsakymą';
+
+  @override
+  String get aiReportInaccurate => 'Klaidingas arba klaidinantis';
+
+  @override
+  String get aiReportHarmful => 'Įžeidus arba žalingas';
+
+  @override
+  String get aiReportOther => 'Kita';
+
+  @override
+  String get aiReportNoteHint => 'Kas negerai? (neprivaloma)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Gauname šio atsakymo tekstą ir jūsų pastabą – be jūsų paskyros, – kad galėtume jį peržiūrėti.';
+
+  @override
+  String get aiReportSend => 'Siųsti pranešimą';
+
+  @override
+  String get aiReportThanks => 'Ačiū – peržiūrėsime.';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

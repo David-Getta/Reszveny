@@ -2944,6 +2944,78 @@ class AppLocalizationsHa extends AppLocalizations {
       'Kana da rajista tuni ta App Store ko Google Play. Don canza tsarin ka, yi amfani da saitunan rajista na wannan shagon.';
 
   @override
+  String get paymentViaAppStore =>
+      'Ana cajin kuɗi ta asusunka na Apple. Soke a kowane lokaci a cikin saitunan rajista na App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Ana cajin kuɗi ta asusunka na Google Play. Soke a kowane lokaci a cikin saitunan rajista na Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Babu rajistar da za a sarrafa a nan. Rajistar da aka saya a App Store ana sarrafa ta a cikin saitunan App Store ɗinka.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Babu rajistar da za a sarrafa a nan. Rajistar da aka saya a Google Play ana sarrafa ta a cikin saitunan Google Play ɗinka.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Za a share asusunka da duk abin da muka adana a sabar mu (imel, iyaka, amfani) har abada, kuma nazarin da ba a yi amfani da shi ba zai ɓace. Rajistar App Store dole ne ka soke ta a saitunan App Store ɗinka.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Za a share asusunka da duk abin da muka adana a sabar mu (imel, iyaka, amfani) har abada, kuma nazarin da ba a yi amfani da shi ba zai ɓace. Rajistar Google Play dole ne ka soke ta a saitunan Google Play ɗinka.';
+
+  @override
+  String get aiConsentTitle => 'Kafin ka yi amfani da fasalolin AI';
+
+  @override
+  String get aiConsentBody =>
+      'Don yin nazarin hannayen jari, karanta hotuna da hotunan allo, da amsa tambayoyinka, WhatStock na aika bayanan da buƙatar ke bukata — hoton ko hoton allo, hannun jarin, tambayarka da, idan kana amfani da su, bayananka da matsayinka — zuwa ga Anthropic, kamfanin da ke gudanar da samfurin AI na Claude. Anthropic na sarrafa su ne kawai don amsa buƙatar, kuma ba ya amfani da su don horar da AI ɗinsa. Ƙarin bayani yana cikin Manufar Sirri.';
+
+  @override
+  String get aiConsentLater => 'Ba yanzu ba';
+
+  @override
+  String get aiConsentAllow => 'Ba da izini';
+
+  @override
+  String get aiConsentSetting => 'Fasalolin AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Ana aika buƙatunka zuwa Anthropic (Claude) don a amsa su. Idan a kashe yake, manhajar za ta tambaya kafin buƙatar AI ta gaba, kuma ba za a yi taƙaitaccen bayanin safiya na atomatik ba.';
+
+  @override
+  String get aiReport => 'Kai rahoto';
+
+  @override
+  String get aiReportTitle => 'Kai rahoton wannan amsar AI';
+
+  @override
+  String get aiReportInaccurate => 'Ba daidai ba ko yaudara';
+
+  @override
+  String get aiReportHarmful => 'Mai cin mutunci ko mai cutarwa';
+
+  @override
+  String get aiReportOther => 'Wani abu daban';
+
+  @override
+  String get aiReportNoteHint => 'Me ke damun ta? (ba dole ba)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Muna karɓar rubutun wannan amsar da bayaninka — ba tare da asusunka ba — don mu duba ta.';
+
+  @override
+  String get aiReportSend => 'Aika rahoto';
+
+  @override
+  String get aiReportThanks => 'Mun gode — za mu duba ta.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

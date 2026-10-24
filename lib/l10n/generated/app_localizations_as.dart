@@ -2934,6 +2934,78 @@ class AppLocalizationsAs extends AppLocalizations {
       'App Store বা Google Playৰ জৰিয়তে আপোনাৰ ইতিমধ্যে এটা ছাবস্ক্ৰিপশ্বন আছে। আপোনাৰ প্লান সলনি কৰিবলৈ সেই ষ্ট\'ৰৰ ছাবস্ক্ৰিপশ্বন ছেটিংছ ব্যৱহাৰ কৰক।';
 
   @override
+  String get paymentViaAppStore =>
+      'আপোনাৰ Apple একাউণ্টৰ জৰিয়তে বিল কৰা হয়। App Storeৰ ছাবস্ক্ৰিপশ্বন ছেটিংছত যিকোনো সময়তে বাতিল কৰিব পাৰে।';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'আপোনাৰ Google Play একাউণ্টৰ জৰিয়তে বিল কৰা হয়। Google Playৰ ছাবস্ক্ৰিপশ্বন ছেটিংছত যিকোনো সময়তে বাতিল কৰিব পাৰে।';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'ইয়াত পৰিচালনা কৰিবলৈ কোনো ছাবস্ক্ৰিপশ্বন নাই। App Storeত কিনা ছাবস্ক্ৰিপশ্বন আপোনাৰ App Store ছেটিংছত পৰিচালনা কৰা হয়।';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'ইয়াত পৰিচালনা কৰিবলৈ কোনো ছাবস্ক্ৰিপশ্বন নাই। Google Playত কিনা ছাবস্ক্ৰিপশ্বন আপোনাৰ Google Play ছেটিংছত পৰিচালনা কৰা হয়।';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'আপোনাৰ একাউণ্ট আৰু আমাৰ ছাৰ্ভাৰত সংৰক্ষিত সকলো (ইমেইল, কোটা, ব্যৱহাৰ) চিৰদিনৰ বাবে মচি পেলোৱা হ\'ব, আৰু অব্যৱহৃত বিশ্লেষণ হেৰাব। App Storeৰ ছাবস্ক্ৰিপশ্বন আপোনাৰ App Store ছেটিংছত বাতিল কৰিব লাগিব।';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'আপোনাৰ একাউণ্ট আৰু আমাৰ ছাৰ্ভাৰত সংৰক্ষিত সকলো (ইমেইল, কোটা, ব্যৱহাৰ) চিৰদিনৰ বাবে মচি পেলোৱা হ\'ব, আৰু অব্যৱহৃত বিশ্লেষণ হেৰাব। Google Playৰ ছাবস্ক্ৰিপশ্বন আপোনাৰ Google Play ছেটিংছত বাতিল কৰিব লাগিব।';
+
+  @override
+  String get aiConsentTitle => 'AI সুবিধাসমূহ ব্যৱহাৰ কৰাৰ আগতে';
+
+  @override
+  String get aiConsentBody =>
+      'শ্বেয়াৰ বিশ্লেষণ কৰিবলৈ, ফটো আৰু স্ক্ৰীণশ্বট পঢ়িবলৈ আৰু আপোনাৰ প্ৰশ্নৰ উত্তৰ দিবলৈ WhatStock-এ অনুৰোধটোৰ বাবে প্ৰয়োজনীয় তথ্য — ফটো বা স্ক্ৰীণশ্বট, শ্বেয়াৰটো, আপোনাৰ প্ৰশ্ন আৰু আপুনি ব্যৱহাৰ কৰিলে আপোনাৰ টোকা আৰু পজিচন — Claude AI মডেল চলোৱা Anthropicলৈ পঠিয়ায়। Anthropic-এ এই তথ্য কেৱল অনুৰোধটোৰ উত্তৰ দিবলৈহে প্ৰক্ৰিয়া কৰে আৰু নিজৰ AI প্ৰশিক্ষণৰ বাবে ব্যৱহাৰ নকৰে। সবিশেষ গোপনীয়তা নীতিত আছে।';
+
+  @override
+  String get aiConsentLater => 'এতিয়া নহয়';
+
+  @override
+  String get aiConsentAllow => 'অনুমতি দিয়ক';
+
+  @override
+  String get aiConsentSetting => 'AI সুবিধাসমূহ';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'উত্তৰৰ বাবে আপোনাৰ অনুৰোধসমূহ Anthropic (Claude)লৈ পঠিওৱা হয়। বন্ধ থাকিলে এপটোৱে পৰৱৰ্তী AI অনুৰোধৰ আগতে সোধে, আৰু স্বয়ংক্ৰিয় পুৱাৰ সাৰাংশ নচলে।';
+
+  @override
+  String get aiReport => 'ৰিপ\'ৰ্ট কৰক';
+
+  @override
+  String get aiReportTitle => 'এই AI উত্তৰটো ৰিপ\'ৰ্ট কৰক';
+
+  @override
+  String get aiReportInaccurate => 'ভুল বা বিভ্ৰান্তিকৰ';
+
+  @override
+  String get aiReportHarmful => 'আপত্তিজনক বা ক্ষতিকাৰক';
+
+  @override
+  String get aiReportOther => 'অন্য কিবা';
+
+  @override
+  String get aiReportNoteHint => 'কি ভুল হৈছে? (ঐচ্ছিক)';
+
+  @override
+  String get aiReportPrivacy =>
+      'পৰীক্ষা কৰিবলৈ আমি এই উত্তৰৰ পাঠ আৰু আপোনাৰ টোকা পাওঁ — আপোনাৰ একাউণ্ট অবিহনে।';
+
+  @override
+  String get aiReportSend => 'ৰিপ\'ৰ্ট পঠিয়াওক';
+
+  @override
+  String get aiReportThanks => 'ধন্যবাদ — আমি ইয়াক পৰীক্ষা কৰিম।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

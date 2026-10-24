@@ -2935,6 +2935,78 @@ class AppLocalizationsTr extends AppLocalizations {
       'App Store veya Google Play üzerinden zaten bir aboneliğiniz var. Planınızı değiştirmek için o mağazanın abonelik ayarlarını kullanın.';
 
   @override
+  String get paymentViaAppStore =>
+      'Apple hesabınız üzerinden faturalandırılır. İstediğiniz zaman App Store abonelik ayarlarından iptal edin.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Google Play hesabınız üzerinden faturalandırılır. İstediğiniz zaman Google Play abonelik ayarlarından iptal edin.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Burada yönetilecek bir abonelik yok. App Store üzerinden alınan abonelik, App Store ayarlarınızdan yönetilir.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Burada yönetilecek bir abonelik yok. Google Play üzerinden alınan abonelik, Google Play ayarlarınızdan yönetilir.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Hesabınız ve sunucumuzda saklanan her şey (e-posta, kota, kullanım) kalıcı olarak silinir; kullanılmayan analizler kaybolur. App Store aboneliğini App Store ayarlarınızdan iptal etmeniz gerekir.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Hesabınız ve sunucumuzda saklanan her şey (e-posta, kota, kullanım) kalıcı olarak silinir; kullanılmayan analizler kaybolur. Google Play aboneliğini Google Play ayarlarınızdan iptal etmeniz gerekir.';
+
+  @override
+  String get aiConsentTitle => 'Yapay zekâ özelliklerini kullanmadan önce';
+
+  @override
+  String get aiConsentBody =>
+      'Hisseleri analiz etmek, fotoğrafları ve ekran görüntülerini okumak ve sorularınızı yanıtlamak için WhatStock, istek için gereken verileri — fotoğraf veya ekran görüntüsü, hisse, sorunuz ve kullanıyorsanız notlarınız ile pozisyonlarınız — Claude yapay zekâ modelini işleten Anthropic\'e gönderir. Anthropic bu verileri yalnızca isteği yanıtlamak için işler ve yapay zekâsını eğitmek için kullanmaz. Ayrıntılar gizlilik politikasındadır.';
+
+  @override
+  String get aiConsentLater => 'Şimdi değil';
+
+  @override
+  String get aiConsentAllow => 'İzin ver';
+
+  @override
+  String get aiConsentSetting => 'Yapay zekâ özellikleri';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'İstekleriniz yanıtlanmak üzere Anthropic\'e (Claude) gönderilir. Kapalıyken uygulama bir sonraki yapay zekâ isteğinden önce sorar ve otomatik sabah özeti hazırlanmaz.';
+
+  @override
+  String get aiReport => 'Bildir';
+
+  @override
+  String get aiReportTitle => 'Bu yapay zekâ yanıtını bildir';
+
+  @override
+  String get aiReportInaccurate => 'Yanlış veya yanıltıcı';
+
+  @override
+  String get aiReportHarmful => 'Rahatsız edici veya zararlı';
+
+  @override
+  String get aiReportOther => 'Başka bir şey';
+
+  @override
+  String get aiReportNoteHint => 'Sorun ne? (isteğe bağlı)';
+
+  @override
+  String get aiReportPrivacy =>
+      'İnceleyebilmemiz için bu yanıtın metnini ve notunuzu — hesabınızla ilişkilendirmeden — alırız.';
+
+  @override
+  String get aiReportSend => 'Raporu gönder';
+
+  @override
+  String get aiReportThanks => 'Teşekkürler — inceleyeceğiz.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

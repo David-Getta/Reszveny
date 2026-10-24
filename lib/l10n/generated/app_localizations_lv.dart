@@ -2976,6 +2976,78 @@ class AppLocalizationsLv extends AppLocalizations {
       'Jums jau ir abonements, izmantojot App Store vai Google Play. Lai mainītu plānu, izmantojiet šī veikala abonementa iestatījumus.';
 
   @override
+  String get paymentViaAppStore =>
+      'Maksa tiek iekasēta no jūsu Apple konta. Atcelt var jebkurā laikā App Store abonementu iestatījumos.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Maksa tiek iekasēta no jūsu Google Play konta. Atcelt var jebkurā laikā Google Play abonementu iestatījumos.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Šeit nav abonementa, ko pārvaldīt. App Store iegādāts abonements tiek pārvaldīts App Store iestatījumos.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Šeit nav abonementa, ko pārvaldīt. Google Play iegādāts abonements tiek pārvaldīts Google Play iestatījumos.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Jūsu konts un viss, kas glabājas mūsu serverī (e-pasts, limits, lietojums), tiks neatgriezeniski dzēsts, un neizmantotās analīzes tiks zaudētas. App Store abonements jāatceļ App Store iestatījumos.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Jūsu konts un viss, kas glabājas mūsu serverī (e-pasts, limits, lietojums), tiks neatgriezeniski dzēsts, un neizmantotās analīzes tiks zaudētas. Google Play abonements jāatceļ Google Play iestatījumos.';
+
+  @override
+  String get aiConsentTitle => 'Pirms izmantojat AI funkcijas';
+
+  @override
+  String get aiConsentBody =>
+      'Lai analizētu akcijas, nolasītu fotoattēlus un ekrānuzņēmumus un atbildētu uz jūsu jautājumiem, WhatStock nosūta pieprasījumam nepieciešamos datus – fotoattēlu vai ekrānuzņēmumu, akciju, jūsu jautājumu un, ja tās izmantojat, jūsu piezīmes un pozīcijas – uzņēmumam Anthropic, kas darbina AI modeli Claude. Anthropic tos apstrādā tikai, lai atbildētu uz pieprasījumu, un neizmanto tos sava AI apmācībai. Sīkāka informācija ir privātuma politikā.';
+
+  @override
+  String get aiConsentLater => 'Ne tagad';
+
+  @override
+  String get aiConsentAllow => 'Atļaut';
+
+  @override
+  String get aiConsentSetting => 'AI funkcijas';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Jūsu pieprasījumi tiek nosūtīti uzņēmumam Anthropic (Claude), lai uz tiem atbildētu. Ja izslēgts, lietotne pirms nākamā AI pieprasījuma pajautā, un automātiskais rīta kopsavilkums netiek veidots.';
+
+  @override
+  String get aiReport => 'Ziņot';
+
+  @override
+  String get aiReportTitle => 'Ziņot par šo AI atbildi';
+
+  @override
+  String get aiReportInaccurate => 'Nepareiza vai maldinoša';
+
+  @override
+  String get aiReportHarmful => 'Aizskaroša vai kaitīga';
+
+  @override
+  String get aiReportOther => 'Kas cits';
+
+  @override
+  String get aiReportNoteHint => 'Kas nav kārtībā? (nav obligāti)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Mēs saņemam šīs atbildes tekstu un jūsu piezīmi – bez jūsu konta –, lai to varētu pārskatīt.';
+
+  @override
+  String get aiReportSend => 'Nosūtīt ziņojumu';
+
+  @override
+  String get aiReportThanks => 'Paldies – mēs to pārskatīsim.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

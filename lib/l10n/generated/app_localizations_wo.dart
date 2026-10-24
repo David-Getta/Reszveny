@@ -2927,6 +2927,78 @@ class AppLocalizationsWo extends AppLocalizations {
       'Am nga abonmaa ba pare ci App Store walla Google Play. Ngir soppi sa formil, jëfandikool tànneefu abonmaa yu bitig boobu.';
 
   @override
+  String get paymentViaAppStore =>
+      'Fey bi dafay jaare ci sa kontu Apple. Mën nga ko neenal saa su la neexee ci tànneefu abonmaa yu App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Fey bi dafay jaare ci sa kontu Google Play. Mën nga ko neenal saa su la neexee ci tànneefu abonmaa yu Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Amul fii abonmaa bu ñu mën a toppatoo. Abonmaa bu ñu jënde ci App Store, ci sa tànneefu App Store lañuy toppatoo.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Amul fii abonmaa bu ñu mën a toppatoo. Abonmaa bu ñu jënde ci Google Play, ci sa tànneefu Google Play lañuy toppatoo.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Sa kont ak lépp lu ñu denc ci sunu serwëer (imeel, dayo, jëfandikoo) dinañu far ba fàww, te saytu yi nga jëfandikoowul dinañu réer. Abonmaa App Store, war nañu ko neenal ci sa tànneefu App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Sa kont ak lépp lu ñu denc ci sunu serwëer (imeel, dayo, jëfandikoo) dinañu far ba fàww, te saytu yi nga jëfandikoowul dinañu réer. Abonmaa Google Play, war nañu ko neenal ci sa tànneefu Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Balaa ngay jëfandikoo jumtukaay yu AI';
+
+  @override
+  String get aiConsentBody =>
+      'Ngir saytu aksiyoŋ yi, jàng nataal yi ak nataalu ekraan yi, te tontu say laaj, WhatStock dafay yónne xibaar yi laaj bi soxla — nataal bi walla nataalu ekraan bi, aksiyoŋ bi, sa laaj, te, bu ko jëfandikoo, say notu ak say aksiyoŋ — ci Anthropic, kompaañi bi doxal modelu AI bu Claude. Anthropic dafay jëfandikoo xibaar yooyu rekk ngir tontu laaj bi, te du leen jëfandikoo ngir jàngal AI bi mu am. Leeral yi nekk nañu ci Politigu sutura.';
+
+  @override
+  String get aiConsentLater => 'Léegi deet';
+
+  @override
+  String get aiConsentAllow => 'Nangu';
+
+  @override
+  String get aiConsentSetting => 'Jumtukaay yu AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Say laaj dañuy yónne ci Anthropic (Claude) ngir ñu tontu leen. Bu ñu ko tëj, aplikasioŋ bi dina la laaj balaa laaju AI bi ci topp, te tënk bu suba bu ko def boppam du dox.';
+
+  @override
+  String get aiReport => 'Yégle';
+
+  @override
+  String get aiReportTitle => 'Yégle tont AI bii';
+
+  @override
+  String get aiReportInaccurate => 'Dafa juum walla dafay nax';
+
+  @override
+  String get aiReportHarmful => 'Dafay sonal walla dafay lor';
+
+  @override
+  String get aiReportOther => 'Leneen';
+
+  @override
+  String get aiReportNoteHint => 'Lan moo baaxul? (bu la neexee)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Dinañu jot mbind mi ci tont bii ak sa not — te sa kont bokku ci — ngir mën koo saytu.';
+
+  @override
+  String get aiReportSend => 'Yónne yégle bi';
+
+  @override
+  String get aiReportThanks => 'Jërëjëf — dinañu ko saytu.';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

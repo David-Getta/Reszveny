@@ -2952,6 +2952,78 @@ class AppLocalizationsQu extends AppLocalizations {
       'Ñam App Store utaq Google Play nisqawan suscripciónniyki kachkan. Planniykita tikranaykipaq, chay tiendapa suscripción allichayninkunata llamk\'achiy.';
 
   @override
+  String get paymentViaAppStore =>
+      'Apple cuentaykiwan cobrakun. App Store suscripcionpa allichayninkunapi mayk\'aqpas cancelayta atinki.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Google Play cuentaykiwan cobrakun. Google Play suscripcionpa allichayninkunapi mayk\'aqpas cancelayta atinki.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Kaypiqa manam kamachinapaq suscripción kanchu. App Store nisqapi rantisqa suscripciónqa App Store allichayniykikunapim kamachikun.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Kaypiqa manam kamachinapaq suscripción kanchu. Google Play nisqapi rantisqa suscripciónqa Google Play allichayniykikunapim kamachikun.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Cuentayki hinallataq servidorniykupi waqaychasqa llapan kaqkuna (correo, cupo, llamk\'achiy) wiñaypaq qullusqa kanqa, mana llamk\'achisqa t\'aqwiykunapas chinkanqa. App Store suscripcióntaqa App Store allichayniykikunapim cancelana.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Cuentayki hinallataq servidorniykupi waqaychasqa llapan kaqkuna (correo, cupo, llamk\'achiy) wiñaypaq qullusqa kanqa, mana llamk\'achisqa t\'aqwiykunapas chinkanqa. Google Play suscripcióntaqa Google Play allichayniykikunapim cancelana.';
+
+  @override
+  String get aiConsentTitle => 'AI ruraykunata llamk\'achinaykimanta ñawpaq';
+
+  @override
+  String get aiConsentBody =>
+      'Acciónkunata t\'aqwinanpaq, fotokunata pantalla rikch\'aykunatapas ñawinchanapaq, tapukuyniykikunata kutichinanpaqpas, WhatStock nisqaqa mañakuypaq necesitasqa willakuykunata — fotota utaq pantalla rikch\'ayta, acciónta, tapukuyniykita, llamk\'achispaykiqa qillqasqaykikunata posicionniykikunatapas — Anthropic nisqaman apachin, Claude AI modelota purichiqman. Anthropicqa mañakuyta kutichinallapaqmi llamk\'achin, manataq AI-nta yachachinanpaqchu llamk\'achin. Aswan willakuykunaqa Privacidad kamachiypim kachkan.';
+
+  @override
+  String get aiConsentLater => 'Manam kunanchu';
+
+  @override
+  String get aiConsentAllow => 'Saqiy';
+
+  @override
+  String get aiConsentSetting => 'AI ruraykuna';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Mañakuyniykikunaqa Anthropic (Claude) nisqamanmi apachikun kutichinanpaq. Wañuchisqa kaptinqa, app nisqaqa qatiq AI mañakuymanta ñawpaqmi tapusunki, tutamanta kikillanmanta pisichasqapas manam ruwakunchu.';
+
+  @override
+  String get aiReport => 'Willay';
+
+  @override
+  String get aiReportTitle => 'Kay AI kutichiyta willay';
+
+  @override
+  String get aiReportInaccurate => 'Pantasqa utaq pantachiq';
+
+  @override
+  String get aiReportHarmful => 'K\'amiq utaq dañoq';
+
+  @override
+  String get aiReportOther => 'Huk imapas';
+
+  @override
+  String get aiReportNoteHint => 'Imataq mana allinchu? (munaspaykiqa)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Kay kutichiypa qillqanta qillqasqaykitapas chaskiyku — mana cuentaykiwanchu — qhawanaykupaq.';
+
+  @override
+  String get aiReportSend => 'Willakuyta apachiy';
+
+  @override
+  String get aiReportThanks => 'Sulpayki — qhawasaqku.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

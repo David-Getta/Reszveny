@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
+import '../analysis/ai_consent.dart';
 import '../../widgets/hotkey_hint.dart';
 
 import 'package:flutter/foundation.dart';
@@ -113,6 +114,7 @@ class _AppShellState extends State<AppShell> {
   Future<void> _quickPasteImage() async {
     final services = _services;
     if (services == null || !mounted) return;
+    if (!await ensureAiConsent(context) || !mounted) return;
     final l10n = AppLocalizations.of(context);
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
     final panel = services.desktop.quickPanel;
@@ -253,12 +255,15 @@ class _AppShellState extends State<AppShell> {
           QuickSearchController(
             panel: panel,
             search: services.marketData.search,
-            // Leírásra („tech 100 etf”) az AI fejti meg a részvényt, ha a kereső nem találja.
+            // Leírásra („tech 100 etf”) az AI fejti meg a részvényt, ha a kereső nem találja – csak
+            // az AI-hoz adott hozzájárulással (a gyorspanelen nincs hely az engedélykérő ablaknak).
             resolve: services.config.hasAnthropicKey
-                ? (q) async => (await services.descriptionResolver.resolve(
-                    q,
-                    outputLanguage: SupportedLocales.languageFor(Localizations.localeOf(context)).englishName,
-                  )).candidates
+                ? (q) async => services.preferences.aiConsent != true
+                      ? const <StockCandidate>[]
+                      : (await services.descriptionResolver.resolve(
+                          q,
+                          outputLanguage: SupportedLocales.languageFor(Localizations.localeOf(context)).englishName,
+                        )).candidates
                 : null,
             favorites: () => services.preferences.favorites,
             recent: () => services.preferences.recent,

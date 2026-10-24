@@ -2854,6 +2854,77 @@ class AppLocalizationsKo extends AppLocalizations {
       '이미 App Store 또는 Google Play를 통한 구독이 있습니다. 요금제를 변경하려면 해당 스토어의 구독 설정을 이용하세요.';
 
   @override
+  String get paymentViaAppStore =>
+      'Apple 계정으로 청구됩니다. App Store 구독 설정에서 언제든지 해지할 수 있습니다.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Google Play 계정으로 청구됩니다. Google Play 구독 설정에서 언제든지 해지할 수 있습니다.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      '여기에서 관리할 구독이 없습니다. App Store에서 구매한 구독은 App Store 설정에서 관리합니다.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      '여기에서 관리할 구독이 없습니다. Google Play에서 구매한 구독은 Google Play 설정에서 관리합니다.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      '계정과 서버에 저장된 모든 정보(이메일, 사용 한도, 이용 내역)가 영구 삭제되며, 사용하지 않은 분석은 소멸됩니다. App Store 구독은 App Store 설정에서 해지해야 합니다.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      '계정과 서버에 저장된 모든 정보(이메일, 사용 한도, 이용 내역)가 영구 삭제되며, 사용하지 않은 분석은 소멸됩니다. Google Play 구독은 Google Play 설정에서 해지해야 합니다.';
+
+  @override
+  String get aiConsentTitle => 'AI 기능을 사용하기 전에';
+
+  @override
+  String get aiConsentBody =>
+      '종목 분석, 사진 및 스크린샷 인식, 질문 답변을 위해 WhatStock은 요청에 필요한 데이터(사진 또는 스크린샷, 종목, 질문, 사용하는 경우 메모와 보유 종목)를 Claude AI 모델을 운영하는 Anthropic에 전송합니다. Anthropic은 이 데이터를 요청에 답하는 용도로만 처리하며 자사 AI 학습에 사용하지 않습니다. 자세한 내용은 개인정보 처리방침에서 확인하세요.';
+
+  @override
+  String get aiConsentLater => '나중에';
+
+  @override
+  String get aiConsentAllow => '허용';
+
+  @override
+  String get aiConsentSetting => 'AI 기능';
+
+  @override
+  String get aiConsentSettingDesc =>
+      '요청은 답변을 위해 Anthropic(Claude)에 전송됩니다. 끄면 다음 AI 요청 전에 앱이 다시 묻고, 자동 아침 요약은 생성되지 않습니다.';
+
+  @override
+  String get aiReport => '신고';
+
+  @override
+  String get aiReportTitle => '이 AI 답변 신고';
+
+  @override
+  String get aiReportInaccurate => '틀리거나 오해의 소지가 있음';
+
+  @override
+  String get aiReportHarmful => '불쾌하거나 유해함';
+
+  @override
+  String get aiReportOther => '기타';
+
+  @override
+  String get aiReportNoteHint => '무엇이 문제인가요? (선택)';
+
+  @override
+  String get aiReportPrivacy => '검토를 위해 이 답변의 텍스트와 메모를 받습니다. 계정 정보는 포함되지 않습니다.';
+
+  @override
+  String get aiReportSend => '신고 보내기';
+
+  @override
+  String get aiReportThanks => '감사합니다. 검토하겠습니다.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

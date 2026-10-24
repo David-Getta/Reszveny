@@ -2946,6 +2946,78 @@ class AppLocalizationsSo extends AppLocalizations {
       'Horay ayaad u leedahay rukummo aad ku heshay App Store ama Google Play. Si aad u beddesho qorshahaaga, isticmaal dejinta rukummada ee dukaankaas.';
 
   @override
+  String get paymentViaAppStore =>
+      'Lacagta waxaa laga qaadaa akoonkaaga Apple. Ka jooji wakhti kasta dejinta rukummada App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Lacagta waxaa laga qaadaa akoonkaaga Google Play. Ka jooji wakhti kasta dejinta rukummada Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Halkan ma jiro rukummo la maamuli karo. Rukummada laga iibsaday App Store waxaa lagu maamulaa dejintaada App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Halkan ma jiro rukummo la maamuli karo. Rukummada laga iibsaday Google Play waxaa lagu maamulaa dejintaada Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Akoonkaaga iyo wax kasta oo ku kaydsan server-kayaga (iimaylka, qoondada, isticmaalka) si joogto ah ayaa loo tirtiri doonaa, falanqaynta aan la isticmaalinna way lumi doontaa. Rukummada App Store waa in laga joojiyaa dejintaada App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Akoonkaaga iyo wax kasta oo ku kaydsan server-kayaga (iimaylka, qoondada, isticmaalka) si joogto ah ayaa loo tirtiri doonaa, falanqaynta aan la isticmaalinna way lumi doontaa. Rukummada Google Play waa in laga joojiyaa dejintaada Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Ka hor intaadan isticmaalin astaamaha AI';
+
+  @override
+  String get aiConsentBody =>
+      'Si uu u falanqeeyo saamiyada, u akhriyo sawirrada iyo sawir-shaashadeedyada, oo uu uga jawaabo su\'aalahaaga, WhatStock wuxuu u diraa xogta codsiga loo baahan yahay — sawirka ama sawir-shaashadeedka, saamiga, su\'aashaada iyo, haddii aad isticmaasho, qoraalladaada iyo haysashooyinkaaga — Anthropic, oo maamusha moodeelka AI ee Claude. Anthropic waxay u isticmaashaa oo keliya si ay uga jawaabto codsiga, umana isticmaasho tababaridda AI-geeda. Faahfaahinta waxaa ku jira Siyaasadda Qarsoodiga.';
+
+  @override
+  String get aiConsentLater => 'Hadda maaha';
+
+  @override
+  String get aiConsentAllow => 'Oggolow';
+
+  @override
+  String get aiConsentSetting => 'Astaamaha AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Codsiyadaada waxaa loo diraa Anthropic (Claude) si looga jawaabo. Marka uu dansan yahay, abku wuxuu ku weydiinayaa ka hor codsiga AI ee xiga, soo koobidda subaxa ee tooska ahna ma shaqaynayso.';
+
+  @override
+  String get aiReport => 'Soo sheeg';
+
+  @override
+  String get aiReportTitle => 'Soo sheeg jawaabtan AI';
+
+  @override
+  String get aiReportInaccurate => 'Khalad ama marin habaabin ah';
+
+  @override
+  String get aiReportHarmful => 'Aflagaado ama waxyeello leh';
+
+  @override
+  String get aiReportOther => 'Wax kale';
+
+  @override
+  String get aiReportNoteHint => 'Maxaa khaldan? (ikhtiyaari)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Waxaan helnaa qoraalka jawaabtan iyo qoraalkaaga — akoonkaaga la\'aantiis — si aan dib ugu eegno.';
+
+  @override
+  String get aiReportSend => 'Dir warbixinta';
+
+  @override
+  String get aiReportThanks => 'Mahadsanid — dib ayaan u eegi doonnaa.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

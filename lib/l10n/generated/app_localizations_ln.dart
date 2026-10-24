@@ -2953,6 +2953,78 @@ class AppLocalizationsLn extends AppLocalizations {
       'Ozali kala na abonnement na nzela ya App Store to Google Play. Mpo na kobongola forfait na yo, salelá ba-paramètre ya abonnement ya store yango.';
 
   @override
+  String get paymentViaAppStore =>
+      'Ofutaka na nzela ya compte na yo ya Apple. Okoki kotika ntango nyɔnsɔ na ba-paramètre ya abonnement ya App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Ofutaka na nzela ya compte na yo ya Google Play. Okoki kotika ntango nyɔnsɔ na ba-paramètre ya abonnement ya Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Abonnement moko te ezali awa ya kokamba. Abonnement oyo osombaki na App Store ekambamaka na ba-paramètre na yo ya App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Abonnement moko te ezali awa ya kokamba. Abonnement oyo osombaki na Google Play ekambamaka na ba-paramètre na yo ya Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Compte na yo mpe nyɔnsɔ oyo ebombami na serveur na biso (e-mail, eteni ya sanza, bosaleli) ekolimwisama mpo na libela, mpe ba-analyse oyo osalelaki te ekobunga. Abonnement ya App Store esengeli kotikama na ba-paramètre na yo ya App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Compte na yo mpe nyɔnsɔ oyo ebombami na serveur na biso (e-mail, eteni ya sanza, bosaleli) ekolimwisama mpo na libela, mpe ba-analyse oyo osalelaki te ekobunga. Abonnement ya Google Play esengeli kotikama na ba-paramètre na yo ya Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Liboso ya kosalela ba-fonction ya AI';
+
+  @override
+  String get aiConsentBody =>
+      'Mpo na kosala analyse ya ba-action, kotánga ba-foto mpe ba-capture ya ekran, mpe kozongisela mituna na yo, WhatStock etindaka ba-donnée oyo esengeli mpo na bosɛngi — foto to capture ya ekran, action, motuna na yo mpe, soki osalelaka yango, ba-note mpe ba-position na yo — epai ya Anthropic, kompanyi oyo ekambaka modèle ya AI Claude. Anthropic esalelaka yango kaka mpo na kozongisela bosɛngi, mpe esalelaka yango te mpo na koteya AI na yango. Ba-détail ezali na Mibeko ya kobatela ba-donnée.';
+
+  @override
+  String get aiConsentLater => 'Sikoyo te';
+
+  @override
+  String get aiConsentAllow => 'Pesa ndingisa';
+
+  @override
+  String get aiConsentSetting => 'Ba-fonction ya AI';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Masɛngi na yo etindamaka epai ya Anthropic (Claude) mpo ezwa eyano. Soki ekufi, application etunaka liboso ya bosɛngi ya AI oyo elandi, mpe bokuse ya ntɔngɔ oyo esalemaka yango moko esalemaka te.';
+
+  @override
+  String get aiReport => 'Yebisa';
+
+  @override
+  String get aiReportTitle => 'Yebisa mpo na eyano oyo ya AI';
+
+  @override
+  String get aiReportInaccurate => 'Ya mabe to ekosaka';
+
+  @override
+  String get aiReportHarmful => 'Ezali kofinga to kobebisa';
+
+  @override
+  String get aiReportOther => 'Eloko mosusu';
+
+  @override
+  String get aiReportNoteHint => 'Nini ezali mabe? (soki olingi)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Tozwaka makomi ya eyano oyo mpe note na yo — kozanga compte na yo — mpo totala yango.';
+
+  @override
+  String get aiReportSend => 'Tinda rapport';
+
+  @override
+  String get aiReportThanks => 'Matɔndi — tokotala yango.';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

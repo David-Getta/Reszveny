@@ -10,6 +10,7 @@ import 'package:markdown/markdown.dart' as md;
 import 'package:shelf/shelf.dart';
 import 'package:shelf_router/shelf_router.dart';
 
+import 'account_delete_page.dart';
 import 'admin_page.dart';
 import 'alert_watcher.dart';
 import 'db.dart';
@@ -24,6 +25,7 @@ import 'shares.dart';
 import 'store_apis.dart';
 import 'site_pages.dart';
 import 'stripe.dart';
+import 'reports.dart';
 import 'telemetry.dart';
 import 'testers.dart';
 
@@ -85,13 +87,17 @@ class Api {
        quota = Quota(store),
        telemetry = TelemetryStore(store.database),
        // A megosztások ugyanazt az órát használják, mint az adatbázis (tesztben is).
-       shares = ShareStore(store.database)..clock = (() => store.clock()) {
+       shares = ShareStore(store.database)..clock = (() => store.clock()),
+       reports = ReportStore(store.database)..clock = (() => store.clock()) {
     // Az előző futásból (leállás, újratelepítés) félbemaradt elemzések foglalása visszajár.
     releaseStaleHolds();
   }
 
   /// Megosztott elemzések nyilvános linkjei (`/s/<id>`).
   final ShareStore shares;
+
+  /// A felhasználók jelentései egy-egy AI-válaszról.
+  final ReportStore reports;
 
   /// A nyitóoldal letöltés-gombjainak alapcíme (a fájlnév hozzáfűzve).
   final String downloadBaseUrl;
@@ -198,6 +204,7 @@ class Api {
       ..post('/v1/auth/email/verify', _emailVerify)
       ..post('/v1/auth/logout', _logout)
       ..post('/v1/telemetry', _telemetry)
+      ..post('/v1/report', _report)
       ..post('/v1/share', _createShare)
       ..get('/s/<id>', _sharePage)
       ..get('/u/<token>', _unsubscribePage)
@@ -221,6 +228,11 @@ class Api {
       ..get('/v1/referral', _referral)
       ..post('/v1/referral/redeem', _redeemReferral)
       ..delete('/v1/account', _deleteAccount)
+      ..get(
+        '/account/delete',
+        (Request r) => _html(accountDeletePage(lang: _pageLang(r), step: AccountDeleteStep.start)),
+      )
+      ..post('/account/delete', _accountDeleteSubmit)
       ..get('/legal/<name>', _legal)
       ..post('/v1/billing/checkout', _checkout)
       ..post('/v1/billing/portal', _portal)
@@ -522,12 +534,7 @@ class Api {
     if (store.recentCodeCount(email, within: const Duration(days: 1)) >= codesPerAddressPerDay) {
       return _error(429, 'too_many_codes');
     }
-    final ipKey = _ipKey(_clientIp(r) ?? '-');
-    final pair = '$ipKey|$email';
-    if (_codesPerAddress.blocked(pair) || _codesPerAddressDaily.blocked(pair)) return _error(429, 'too_many_codes');
-    if (!_codeRequests.allow(ipKey)) return _error(429, 'too_many_codes');
-    _codesPerAddress.hit(pair);
-    _codesPerAddressDaily.hit(pair);
+    if (!_mayRequestCode(r, email)) return _error(429, 'too_many_codes');
     final code = store.createLoginCode(email);
     try {
       await mailer.sendLoginCode(email, code);
@@ -537,6 +544,17 @@ class Api {
       return _error(502, 'mail_failed');
     }
     return _json({'sent': true});
+  }
+
+  /// A kódkérés korlátai (címenként, IP + cím párosonként és IP-nként); ha belefér, fel is jegyzi.
+  bool _mayRequestCode(Request r, String email) {
+    final ipKey = _ipKey(_clientIp(r) ?? '-');
+    final pair = '$ipKey|$email';
+    if (_codesPerAddress.blocked(pair) || _codesPerAddressDaily.blocked(pair)) return false;
+    if (!_codeRequests.allow(ipKey)) return false;
+    _codesPerAddress.hit(pair);
+    _codesPerAddressDaily.hit(pair);
+    return true;
   }
 
   /// Kód ellenőrzése. Ha a címhez még nincs fiók, a jelenlegi (névtelen)
@@ -825,6 +843,19 @@ class Api {
     return _json({'ok': true});
   }
 
+  final _reportsPerDay = RateLimiter(ReportStore.perDay, const Duration(days: 1));
+
+  /// Egy AI-válasz jelentése (téves, sértő, egyéb) az appból; a fiók nem kerül mellé.
+  Future<Response> _report(Request r) async {
+    final uid = _userId(r);
+    if (uid == null) return _error(401, 'unauthorized');
+    final body = await _body(r);
+    if (_reportsPerDay.blocked(uid)) return _error(429, 'rate_limited');
+    if (!reports.save(body)) return _error(400, 'bad_report');
+    _reportsPerDay.hit(uid);
+    return _json({'ok': true});
+  }
+
   bool _isAdmin(String? key) => _secretEquals(key, adminToken);
 
   /// Állandó idejű összehasonlítás (a kulcs ne legyen kitalálható időméréssel).
@@ -865,7 +896,7 @@ class Api {
       _adminFailures.hit(ipKey);
       return _html(adminLoginPage(wrong: true), status: 403);
     }
-    return _html(adminStatsPage({...telemetry.stats(), 'testers': _testerStats()}));
+    return _html(adminStatsPage({...telemetry.stats(), 'testers': _testerStats(), 'reports': reports.recent()}));
   }
 
   /// A tesztelői kódok használata: kinek szól, milyen csomag, hány fiók váltotta be.
@@ -891,7 +922,7 @@ class Api {
       return _error(403, 'forbidden');
     }
     final days = int.tryParse(r.url.queryParameters['days'] ?? '')?.clamp(1, 400) ?? 30;
-    return _json({...telemetry.stats(days: days), 'testers': _testerStats()})
+    return _json({...telemetry.stats(days: days), 'testers': _testerStats(), 'reports': reports.recent()})
         .change(headers: {'cache-control': 'no-store'});
   }
 
@@ -1278,6 +1309,7 @@ class Api {
     try {
       telemetry.purgeExpired();
       shares.purgeExpired();
+      reports.purgeExpired();
       store.purgeExpired();
     } catch (e) {
       stderr.writeln('Karbantartás nem sikerült: $e');
@@ -1291,6 +1323,14 @@ class Api {
   Future<Response> _deleteAccount(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
+    final (:cancelled, :failure) = await _deleteUser(uid);
+    if (failure != null) return _error(502, 'stripe_cancel_failed', failure);
+    return _json({'deleted': true, 'stripe_subscription_cancelled': cancelled});
+  }
+
+  /// A fiók törlésének közös része (app és böngésző): ha a Stripe-előfizetés lemondása nem
+  /// sikerül, nem töröl ([failure] a hiba); egyébként minden szerveren tárolt adat törlődik.
+  Future<({bool cancelled, String? failure})> _deleteUser(String uid) async {
     final subscription = store.stripeOf(uid).subscriptionId;
     final s = stripe;
     var cancelled = false;
@@ -1299,7 +1339,7 @@ class Api {
         await s.cancelSubscription(subscription);
         cancelled = true;
       } catch (e) {
-        return _error(502, 'stripe_cancel_failed', '$e');
+        return (cancelled: false, failure: '$e');
       }
     }
     // A fizetési szolgáltatónál tárolt ügyfél (e-mail, fiókazonosító) is törlődik; ha ez
@@ -1313,7 +1353,54 @@ class Api {
     }
     shares.deleteUser(uid);
     store.deleteUser(uid);
-    return _json({'deleted': true, 'stripe_subscription_cancelled': cancelled});
+    return (cancelled: cancelled, failure: null);
+  }
+
+  /// A böngészős fióktörlés lépései: `start` (kód az e-mail címre, ha van hozzá fiók – a
+  /// válasz ugyanaz, ha nincs, így a cím létezése nem derül ki), majd `confirm` (kóddal).
+  Future<Response> _accountDeleteSubmit(Request r) async {
+    final lang = _pageLang(r);
+    Map<String, String> form;
+    try {
+      form = Uri.splitQueryString(await r.readAsString());
+    } catch (_) {
+      form = const {};
+    }
+    final email = Store.normalizeEmail(form['email'] ?? '');
+    Response page(AccountDeleteStep step, {String? error, int status = 200}) => _html(
+      accountDeletePage(lang: lang, step: step, email: email, error: error),
+      status: status,
+    );
+    if (!_emailRe.hasMatch(email)) return page(AccountDeleteStep.start, error: 'invalidEmail', status: 400);
+    if (form['step'] == 'confirm') {
+      final failureKey = '${_ipKey(_clientIp(r) ?? '-')}|$email';
+      if (_loginFailures.blocked(failureKey)) return page(AccountDeleteStep.code, error: 'tooMany', status: 429);
+      if (!store.verifyLoginCode(email, (form['code'] ?? '').trim())) {
+        _loginFailures.hit(failureKey);
+        return page(AccountDeleteStep.code, error: 'wrongCode', status: 401);
+      }
+      if (store.userIdForEmail(email) case final uid?) {
+        final (cancelled: _, :failure) = await _deleteUser(uid);
+        if (failure != null) {
+          stderr.writeln('Webes fióktörlés: a Stripe-lemondás nem sikerült: $failure');
+          return page(AccountDeleteStep.failed, error: 'stripeFailed', status: 502);
+        }
+      }
+      return page(AccountDeleteStep.done);
+    }
+    if (store.recentCodeCount(email, within: const Duration(days: 1)) >= codesPerAddressPerDay ||
+        !_mayRequestCode(r, email)) {
+      return page(AccountDeleteStep.start, error: 'tooMany', status: 429);
+    }
+    if (store.userIdForEmail(email) != null) {
+      try {
+        await mailer.sendLoginCode(email, store.createLoginCode(email));
+      } catch (e) {
+        stderr.writeln('Fióktörlési kód e-mail nem ment ki: $e');
+        return page(AccountDeleteStep.start, error: 'mailFailed', status: 502);
+      }
+    }
+    return page(AccountDeleteStep.code);
   }
 
   /// ÁSZF és adatkezelési tájékoztató HTML-ben, a kért (vagy a böngésző szerinti)

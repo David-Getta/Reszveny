@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../analysis/ai_consent.dart';
 import '../../../app_services.dart';
 import '../../../core/models/analysis_extras.dart';
 import '../../../core/util/formatters.dart';
@@ -150,7 +151,8 @@ Future<void> showEarningsSummary(
   required String symbol,
   required String companyName,
   DateTime? lastPeriod,
-}) {
+}) async {
+  if (!await ensureAiConsent(context) || !context.mounted) return;
   final services = AppServices.of(context);
   final l10n = AppLocalizations.of(context);
   final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;

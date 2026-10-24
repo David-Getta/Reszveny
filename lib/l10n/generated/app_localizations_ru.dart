@@ -3007,6 +3007,78 @@ class AppLocalizationsRu extends AppLocalizations {
       'У вас уже есть подписка через App Store или Google Play. Чтобы сменить тариф, воспользуйтесь настройками подписок в этом магазине.';
 
   @override
+  String get paymentViaAppStore =>
+      'Оплата через ваш аккаунт Apple. Отменить можно в любой момент в настройках подписок App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'Оплата через ваш аккаунт Google Play. Отменить можно в любой момент в настройках подписок Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'Здесь нет подписки для управления. Подпиской, оформленной в App Store, можно управлять в настройках App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'Здесь нет подписки для управления. Подпиской, оформленной в Google Play, можно управлять в настройках Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'Ваш аккаунт и всё, что хранится на нашем сервере (e-mail, лимит, использование), будет удалено навсегда, а неиспользованные анализы пропадут. Подписку через App Store нужно отменить в настройках App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'Ваш аккаунт и всё, что хранится на нашем сервере (e-mail, лимит, использование), будет удалено навсегда, а неиспользованные анализы пропадут. Подписку через Google Play нужно отменить в настройках Google Play.';
+
+  @override
+  String get aiConsentTitle => 'Перед использованием функций ИИ';
+
+  @override
+  String get aiConsentBody =>
+      'Чтобы анализировать акции, распознавать фото и скриншоты и отвечать на ваши вопросы, WhatStock передаёт необходимые для запроса данные — фото или скриншот, акцию, ваш вопрос и, если вы ими пользуетесь, ваши заметки и позиции — компании Anthropic, которая управляет ИИ-моделью Claude. Anthropic обрабатывает их только для ответа на запрос и не использует для обучения своего ИИ. Подробнее — в политике конфиденциальности.';
+
+  @override
+  String get aiConsentLater => 'Не сейчас';
+
+  @override
+  String get aiConsentAllow => 'Разрешить';
+
+  @override
+  String get aiConsentSetting => 'Функции ИИ';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'Ваши запросы отправляются в Anthropic (Claude) для ответа. Если выключено, приложение спросит перед следующим запросом к ИИ, а автоматическая утренняя сводка не создаётся.';
+
+  @override
+  String get aiReport => 'Пожаловаться';
+
+  @override
+  String get aiReportTitle => 'Пожаловаться на ответ ИИ';
+
+  @override
+  String get aiReportInaccurate => 'Неверно или вводит в заблуждение';
+
+  @override
+  String get aiReportHarmful => 'Оскорбительно или вредно';
+
+  @override
+  String get aiReportOther => 'Другое';
+
+  @override
+  String get aiReportNoteHint => 'Что не так? (необязательно)';
+
+  @override
+  String get aiReportPrivacy =>
+      'Мы получим текст этого ответа и ваш комментарий — без привязки к аккаунту, — чтобы его проверить.';
+
+  @override
+  String get aiReportSend => 'Отправить жалобу';
+
+  @override
+  String get aiReportThanks => 'Спасибо — мы проверим.';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

@@ -3007,6 +3007,78 @@ class AppLocalizationsAr extends AppLocalizations {
       'لديك بالفعل اشتراك عبر App Store أو Google Play. لتغيير خطتك، استخدم إعدادات الاشتراك في ذلك المتجر.';
 
   @override
+  String get paymentViaAppStore =>
+      'تتم الفوترة عبر حسابك في Apple. يمكنك الإلغاء في أي وقت من إعدادات الاشتراكات في App Store.';
+
+  @override
+  String get paymentViaGooglePlay =>
+      'تتم الفوترة عبر حسابك في Google Play. يمكنك الإلغاء في أي وقت من إعدادات الاشتراكات في Google Play.';
+
+  @override
+  String get manageSubscriptionAppStore =>
+      'لا يوجد هنا اشتراك لإدارته. تتم إدارة الاشتراك الذي تم شراؤه من App Store من إعدادات App Store.';
+
+  @override
+  String get manageSubscriptionGooglePlay =>
+      'لا يوجد هنا اشتراك لإدارته. تتم إدارة الاشتراك الذي تم شراؤه من Google Play من إعدادات Google Play.';
+
+  @override
+  String get deleteAccountBodyAppStore =>
+      'سيُحذف حسابك وكل ما نخزّنه على خادمنا (البريد الإلكتروني، الرصيد، الاستخدام) نهائيًا، وتضيع التحليلات غير المستخدمة. يجب إلغاء اشتراك App Store من إعدادات App Store.';
+
+  @override
+  String get deleteAccountBodyGooglePlay =>
+      'سيُحذف حسابك وكل ما نخزّنه على خادمنا (البريد الإلكتروني، الرصيد، الاستخدام) نهائيًا، وتضيع التحليلات غير المستخدمة. يجب إلغاء اشتراك Google Play من إعدادات Google Play.';
+
+  @override
+  String get aiConsentTitle => 'قبل استخدام ميزات الذكاء الاصطناعي';
+
+  @override
+  String get aiConsentBody =>
+      'لتحليل الأسهم وقراءة الصور ولقطات الشاشة والإجابة عن أسئلتك، يرسل WhatStock البيانات اللازمة للطلب — الصورة أو لقطة الشاشة، والسهم، وسؤالك، وكذلك ملاحظاتك ومراكزك إن كنت تستخدمها — إلى Anthropic، الشركة التي تشغّل نموذج الذكاء الاصطناعي Claude. تعالج Anthropic هذه البيانات فقط للإجابة عن الطلب، ولا تستخدمها لتدريب الذكاء الاصطناعي الخاص بها. التفاصيل في سياسة الخصوصية.';
+
+  @override
+  String get aiConsentLater => 'ليس الآن';
+
+  @override
+  String get aiConsentAllow => 'السماح';
+
+  @override
+  String get aiConsentSetting => 'ميزات الذكاء الاصطناعي';
+
+  @override
+  String get aiConsentSettingDesc =>
+      'تُرسَل طلباتك إلى Anthropic (Claude) للإجابة عنها. عند الإيقاف، يطلب التطبيق إذنك قبل طلب الذكاء الاصطناعي التالي، ولا يعمل الملخص الصباحي التلقائي.';
+
+  @override
+  String get aiReport => 'إبلاغ';
+
+  @override
+  String get aiReportTitle => 'الإبلاغ عن إجابة الذكاء الاصطناعي هذه';
+
+  @override
+  String get aiReportInaccurate => 'خاطئة أو مضللة';
+
+  @override
+  String get aiReportHarmful => 'مسيئة أو ضارة';
+
+  @override
+  String get aiReportOther => 'سبب آخر';
+
+  @override
+  String get aiReportNoteHint => 'ما المشكلة؟ (اختياري)';
+
+  @override
+  String get aiReportPrivacy =>
+      'نتلقى نص هذه الإجابة وملاحظتك — دون حسابك — لنتمكن من مراجعتها.';
+
+  @override
+  String get aiReportSend => 'إرسال البلاغ';
+
+  @override
+  String get aiReportThanks => 'شكرًا — سنراجعها.';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override
