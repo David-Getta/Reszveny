@@ -864,5 +864,6 @@
   "signOutAnyway": "Барыбер чыгу",
   "fileTooLarge": "Бу файл монда ачу өчен артык зур.",
   "portfolioAnnualSummaryYear": "{year} ел нәтиҗәләре",
-  "portfolioSoldRow": "Сатылды {quantity} × {price}"
+  "portfolioSoldRow": "Сатылды {quantity} × {price}",
+  "subscribedInStore": "Сездә App Store яки Google Play аша язылу бар инде. Тарифны үзгәртү өчен, шул кибетнең язылу көйләүләрен кулланыгыз."
 }

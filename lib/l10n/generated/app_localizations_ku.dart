@@ -2936,6 +2936,10 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Te jixwe abonetiyek bi rêya App Store an Google Play heye. Ji bo guhertina plana xwe, mîhengên abonetiyê yên wê firotgehê bi kar bîne.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

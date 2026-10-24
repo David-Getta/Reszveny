@@ -864,5 +864,6 @@
   "signOutAnyway": "تسجيل الخروج على أي حال",
   "fileTooLarge": "هذا الملف كبير جدًا بحيث يتعذّر فتحه هنا.",
   "portfolioAnnualSummaryYear": "الملخص السنوي لعام {year}",
-  "portfolioSoldRow": "بيع {quantity} × {price}"
+  "portfolioSoldRow": "بيع {quantity} × {price}",
+  "subscribedInStore": "لديك بالفعل اشتراك عبر App Store أو Google Play. لتغيير خطتك، استخدم إعدادات الاشتراك في ذلك المتجر."
 }

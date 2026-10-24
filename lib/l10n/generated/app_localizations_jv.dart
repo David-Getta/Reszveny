@@ -2932,6 +2932,10 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Sampeyan wis duwe langganan liwat App Store utawa Google Play. Kanggo ngganti paket, gunakake setelan langganan ing toko kasebut.';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

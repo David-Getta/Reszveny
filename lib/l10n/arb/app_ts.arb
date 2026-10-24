@@ -864,5 +864,6 @@
   "signOutAnyway": "Huma hambiswiritano",
   "fileTooLarge": "Fayili leyi i kulu ngopfu ku pfuriwa laha.",
   "portfolioAnnualSummaryYear": "Nkatsakanyo wa lembe ra {year}",
-  "portfolioSoldRow": "Swi xavisiwile {quantity} × {price}"
+  "portfolioSoldRow": "Swi xavisiwile {quantity} × {price}",
+  "subscribedInStore": "U se u ri na ntsariso hi ku tirhisa App Store kumbe Google Play. Ku cinca kungu ra wena, tirhisa swiyimiso swa ntsariso swa vhengele rero."
 }

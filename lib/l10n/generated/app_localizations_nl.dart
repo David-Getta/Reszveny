@@ -2939,6 +2939,10 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Je hebt al een abonnement via de App Store of Google Play. Wil je van abonnement wisselen? Gebruik dan de abonnementsinstellingen van die store.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

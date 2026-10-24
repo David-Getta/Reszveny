@@ -2902,6 +2902,10 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'ທ່ານມີການສະໝັກສະມາຊິກຜ່ານ App Store ຫຼື Google Play ຢູ່ແລ້ວ. ເພື່ອປ່ຽນແພັກເກັດ, ໃຫ້ໃຊ້ການຕັ້ງຄ່າການສະໝັກສະມາຊິກຂອງຮ້ານນັ້ນ.';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

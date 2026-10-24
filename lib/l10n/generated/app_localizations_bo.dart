@@ -2920,6 +2920,10 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'ཁྱེད་ལ་ App Store ཡང་ན་ Google Play བརྒྱུད་ནས་མཁོ་ཉོ་ཞིག་སྔར་ནས་ཡོད། འཆར་གཞི་བསྒྱུར་བར་ཚོང་ཁང་དེའི་མཁོ་ཉོའི་སྒྲིག་འགོད་བེད་སྤྱོད་གནང་རོགས།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

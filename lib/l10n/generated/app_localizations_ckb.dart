@@ -2934,6 +2934,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'تۆ پێشتر ئابوونەیەکت هەیە لە ڕێگەی App Store یان Google Play. بۆ گۆڕینی پلانەکەت، ڕێکخستنەکانی ئابوونە لەو فرۆشگایە بەکاربهێنە.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

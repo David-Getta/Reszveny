@@ -864,5 +864,6 @@
   "signOutAnyway": "Изход въпреки това",
   "fileTooLarge": "Този файл е твърде голям, за да се отвори тук.",
   "portfolioAnnualSummaryYear": "Годишно обобщение за {year}",
-  "portfolioSoldRow": "Продадени {quantity} × {price}"
+  "portfolioSoldRow": "Продадени {quantity} × {price}",
+  "subscribedInStore": "Вече имате абонамент чрез App Store или Google Play. За да смените плана си, използвайте настройките за абонаменти на този магазин."
 }

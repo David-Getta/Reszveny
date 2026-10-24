@@ -2850,6 +2850,10 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      '이미 App Store 또는 Google Play를 통한 구독이 있습니다. 요금제를 변경하려면 해당 스토어의 구독 설정을 이용하세요.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

@@ -2933,6 +2933,10 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Siziň App Store ýa-da Google Play arkaly abunaňyz eýýäm bar. Tarifiňizi üýtgetmek üçin şol dükanyň abuna sazlamalaryny ulanyň.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

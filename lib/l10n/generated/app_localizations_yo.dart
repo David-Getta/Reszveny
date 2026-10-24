@@ -2928,6 +2928,10 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'O ti ní àsansílẹ̀ nípasẹ̀ App Store tàbí Google Play. Láti yí ìpele rẹ padà, lo ètò àsansílẹ̀ ilé ìtajà náà.';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

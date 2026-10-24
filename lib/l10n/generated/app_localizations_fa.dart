@@ -2928,6 +2928,10 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'شما از قبل از طریق App Store یا Google Play اشتراک دارید. برای تغییر طرح خود، از تنظیمات اشتراک همان فروشگاه استفاده کنید.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

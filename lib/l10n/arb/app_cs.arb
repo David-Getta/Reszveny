@@ -864,5 +864,6 @@
   "signOutAnyway": "Přesto se odhlásit",
   "fileTooLarge": "Tento soubor je příliš velký, aby se dal zde otevřít.",
   "portfolioAnnualSummaryYear": "Roční přehled za {year}",
-  "portfolioSoldRow": "Prodáno {quantity} × {price}"
+  "portfolioSoldRow": "Prodáno {quantity} × {price}",
+  "subscribedInStore": "Už máte předplatné přes App Store nebo Google Play. Tarif změníte v nastavení předplatného v daném obchodě."
 }

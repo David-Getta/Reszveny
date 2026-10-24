@@ -864,5 +864,6 @@
   "signOutAnyway": "Patuka nansha nanku",
   "fileTooLarge": "Fichier eu udi munene bikole bua kumubulula muaba eu.",
   "portfolioAnnualSummaryYear": "Tshikoso tsha tshidimu {year}",
-  "portfolioSoldRow": "Musumbisha {quantity} × {price}"
+  "portfolioSoldRow": "Musumbisha {quantity} × {price}",
+  "subscribedInStore": "Udi kale ne abonnement wa ku App Store anyi Google Play. Bua kushintulula forfait webe, enza mudimu ne malongolola a abonnement a store eu."
 }

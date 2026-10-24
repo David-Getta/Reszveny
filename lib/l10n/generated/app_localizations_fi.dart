@@ -2933,6 +2933,10 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Sinulla on jo tilaus App Storen tai Google Playn kautta. Voit vaihtaa pakettia kyseisen kaupan tilausasetuksissa.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

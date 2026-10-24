@@ -2931,6 +2931,10 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Сізде App Store немесе Google Play арқылы жазылым бұрыннан бар. Тарифті өзгерту үшін сол дүкеннің жазылым параметрлерін пайдаланыңыз.';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

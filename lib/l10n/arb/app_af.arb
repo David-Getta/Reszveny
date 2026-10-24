@@ -864,5 +864,6 @@
   "signOutAnyway": "Meld tog af",
   "fileTooLarge": "Hierdie lêer is te groot om hier oop te maak.",
   "portfolioAnnualSummaryYear": "Jaaroorsig {year}",
-  "portfolioSoldRow": "Verkoop {quantity} × {price}"
+  "portfolioSoldRow": "Verkoop {quantity} × {price}",
+  "subscribedInStore": "Jy het reeds ’n intekening via die App Store of Google Play. Gebruik die intekeninginstellings van daardie winkel om jou plan te verander."
 }

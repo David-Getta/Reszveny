@@ -2940,6 +2940,10 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Kana da rajista tuni ta App Store ko Google Play. Don canza tsarin ka, yi amfani da saitunan rajista na wannan shagon.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

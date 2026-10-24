@@ -2946,6 +2946,10 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Vous avez déjà un abonnement via l’App Store ou Google Play. Pour changer de forfait, utilisez les réglages d’abonnement de cette boutique.';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

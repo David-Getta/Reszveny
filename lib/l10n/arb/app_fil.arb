@@ -864,5 +864,6 @@
   "signOutAnyway": "Mag-sign out pa rin",
   "fileTooLarge": "Masyadong malaki ang file na ito para mabuksan dito.",
   "portfolioAnnualSummaryYear": "Taunang buod ng {year}",
-  "portfolioSoldRow": "Nabenta {quantity} × {price}"
+  "portfolioSoldRow": "Nabenta {quantity} × {price}",
+  "subscribedInStore": "May subscription ka na sa App Store o Google Play. Para palitan ang iyong plan, gamitin ang mga setting ng subscription ng store na iyon."
 }

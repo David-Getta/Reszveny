@@ -2927,6 +2927,10 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Abɔnɛman bɛ i bolo kaban App Store walima Google Play fɛ. Ni i b’a fɛ ka i ka pilan yɛlɛma, o butiki ka abɔnɛman labɛnw labaara.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

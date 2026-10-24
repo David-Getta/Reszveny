@@ -864,5 +864,6 @@
   "signOutAnyway": "Ffeɣ ɣas akken",
   "fileTooLarge": "Afaylu-a meqqer aṭas akken ad yettwaldi da.",
   "portfolioAnnualSummaryYear": "Agzul n useggas {year}",
-  "portfolioSoldRow": "Yettwazenz {quantity} × {price}"
+  "portfolioSoldRow": "Yettwazenz {quantity} × {price}",
+  "subscribedInStore": "Tesɛiḍ yakan ajerred s App Store neɣ Google Play. Akken ad tbeddleḍ aɣawas-ik, seqdec iɣewwaṛen n ujerred n tḥanut-nni."
 }

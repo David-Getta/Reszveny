@@ -864,5 +864,6 @@
   "signOutAnyway": "Génn rekk",
   "fileTooLarge": "Fiise bii dafa rëy lool, mënuñu ko ubbi fii.",
   "portfolioAnnualSummaryYear": "Tënkub at mi {year}",
-  "portfolioSoldRow": "Jaaye {quantity} × {price}"
+  "portfolioSoldRow": "Jaaye {quantity} × {price}",
+  "subscribedInStore": "Am nga abonmaa ba pare ci App Store walla Google Play. Ngir soppi sa formil, jëfandikool tànneefu abonmaa yu bitig boobu."
 }

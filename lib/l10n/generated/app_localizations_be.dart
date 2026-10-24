@@ -2999,6 +2999,10 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'У вас ужо ёсць падпіска праз App Store або Google Play. Каб змяніць тарыф, скарыстайцеся наладамі падпіскі ў гэтай краме.';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

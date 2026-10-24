@@ -864,5 +864,6 @@
   "signOutAnyway": "Dekonekte kanmenm",
   "fileTooLarge": "Fichye sa a twò gwo pou louvri isit la.",
   "portfolioAnnualSummaryYear": "Rezime anyèl pou {year}",
-  "portfolioSoldRow": "Vandi {quantity} × {price}"
+  "portfolioSoldRow": "Vandi {quantity} × {price}",
+  "subscribedInStore": "Ou gen yon abònman deja atravè App Store oswa Google Play. Pou chanje plan ou, sèvi ak paramèt abònman magazen sa a."
 }

@@ -2923,6 +2923,10 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'تاسو دمخه د App Store یا Google Play له لارې ګډون لرئ. د خپل پلان بدلولو لپاره، د هماغه سټور د ګډون تنظیمات وکاروئ.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

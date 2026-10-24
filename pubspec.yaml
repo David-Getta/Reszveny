@@ -1,7 +1,7 @@
 name: reszveny
 description: "WhatStock – photograph a stock and learn everything about it. iOS, iPadOS, macOS, Android, Windows."
 publish_to: 'none'
-version: 0.2.299+302
+version: 0.2.300+303
 
 environment:
   sdk: ^3.13.5
@@ -17,6 +17,8 @@ dependencies:
   http: ^1.6.0
   image_picker: ^1.2.4
   in_app_purchase: ^3.3.1
+  # Androidon az alapcsomag kiválasztása és a csomagváltás (a meglévő előfizetés cseréje).
+  in_app_purchase_android: ^0.5.5
   in_app_review: ^2.0.12
   in_app_update: ^5.0.0
   intl: ^0.20.3

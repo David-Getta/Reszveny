@@ -2948,6 +2948,10 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Usunakho kakade ukubhalisa nge-App Store noma nge-Google Play. Ukuze ushintshe uhlelo lwakho, sebenzisa izilungiselelo zokubhalisa zaleso sitolo.';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

@@ -864,5 +864,6 @@
   "signOutAnyway": "Mag-sign out gihapon",
   "fileTooLarge": "Dako kaayo kini nga file aron maablihan dinhi.",
   "portfolioAnnualSummaryYear": "Tinuig nga katingbanan sa {year}",
-  "portfolioSoldRow": "Gibaligya {quantity} × {price}"
+  "portfolioSoldRow": "Gibaligya {quantity} × {price}",
+  "subscribedInStore": "Aduna kay subscription pinaagi sa App Store o Google Play. Aron usbon ang imong plan, gamita ang mga setting sa subscription sa maong store."
 }

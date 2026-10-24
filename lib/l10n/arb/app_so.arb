@@ -864,5 +864,6 @@
   "signOutAnyway": "Si kastaba ka bax",
   "fileTooLarge": "Faylkani aad buu u weyn yahay in halkan lagu furo.",
   "portfolioAnnualSummaryYear": "Soo koobid sannadeed {year}",
-  "portfolioSoldRow": "La iibiyay {quantity} × {price}"
+  "portfolioSoldRow": "La iibiyay {quantity} × {price}",
+  "subscribedInStore": "Horay ayaad u leedahay rukummo aad ku heshay App Store ama Google Play. Si aad u beddesho qorshahaaga, isticmaal dejinta rukummada ee dukaankaas."
 }

@@ -864,5 +864,6 @@
   "signOutAnyway": "بیا هم له حساب وتل",
   "fileTooLarge": "دا فایل دلته د پرانیستلو لپاره ډېر لوی دی.",
   "portfolioAnnualSummaryYear": "کلنۍ لنډیز {year}",
-  "portfolioSoldRow": "وپلورل شو {quantity} × {price}"
+  "portfolioSoldRow": "وپلورل شو {quantity} × {price}",
+  "subscribedInStore": "تاسو دمخه د App Store یا Google Play له لارې ګډون لرئ. د خپل پلان بدلولو لپاره، د هماغه سټور د ګډون تنظیمات وکاروئ."
 }

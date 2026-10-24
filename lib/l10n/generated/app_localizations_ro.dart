@@ -2969,6 +2969,10 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Ai deja un abonament prin App Store sau Google Play. Pentru a schimba planul, folosește setările de abonament ale magazinului respectiv.';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

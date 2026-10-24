@@ -864,5 +864,6 @@
   "signOutAnyway": "Bɔ kɔnti la o bɛɛ n'a ta",
   "fileTooLarge": "Nin fisiye ka bon kojugu ka a dayɛlɛ yan.",
   "portfolioAnnualSummaryYear": "San {year} jatebɔ",
-  "portfolioSoldRow": "Feerelen {quantity} × {price}"
+  "portfolioSoldRow": "Feerelen {quantity} × {price}",
+  "subscribedInStore": "Abɔnɛman bɛ i bolo kaban App Store walima Google Play fɛ. Ni i b’a fɛ ka i ka pilan yɛlɛma, o butiki ka abɔnɛman labɛnw labaara."
 }

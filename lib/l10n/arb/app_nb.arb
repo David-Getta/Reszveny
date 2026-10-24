@@ -864,5 +864,6 @@
   "signOutAnyway": "Logg ut likevel",
   "fileTooLarge": "Denne filen er for stor til å åpnes her.",
   "portfolioAnnualSummaryYear": "Årsoversikt {year}",
-  "portfolioSoldRow": "Solgt {quantity} × {price}"
+  "portfolioSoldRow": "Solgt {quantity} × {price}",
+  "subscribedInStore": "Du har allerede et abonnement via App Store eller Google Play. Bruk abonnementsinnstillingene i den butikken for å endre planen din."
 }

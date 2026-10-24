@@ -2929,6 +2929,10 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'ඔබට දැනටමත් App Store හෝ Google Play හරහා දායකත්වයක් ඇත. ඔබේ සැලසුම වෙනස් කිරීමට එම ගබඩාවේ දායකත්ව සැකසීම් භාවිත කරන්න.';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

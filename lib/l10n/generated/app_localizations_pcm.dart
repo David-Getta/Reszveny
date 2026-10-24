@@ -2931,6 +2931,10 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'You don already get subscription through App Store or Google Play. To change your plan, use di subscription settings for dat store.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

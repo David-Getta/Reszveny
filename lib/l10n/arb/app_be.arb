@@ -864,5 +864,6 @@
   "signOutAnyway": "Усё роўна выйсці",
   "fileTooLarge": "Гэты файл занадта вялікі, каб адкрыць яго тут.",
   "portfolioAnnualSummaryYear": "Гадавая зводка за {year}",
-  "portfolioSoldRow": "Прададзена {quantity} × {price}"
+  "portfolioSoldRow": "Прададзена {quantity} × {price}",
+  "subscribedInStore": "У вас ужо ёсць падпіска праз App Store або Google Play. Каб змяніць тарыф, скарыстайцеся наладамі падпіскі ў гэтай краме."
 }

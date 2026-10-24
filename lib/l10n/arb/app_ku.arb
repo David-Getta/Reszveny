@@ -864,5 +864,6 @@
   "signOutAnyway": "Dîsa jî derkeve",
   "fileTooLarge": "Ev pel ji bo vekirinê li vir pir mezin e.",
   "portfolioAnnualSummaryYear": "Kurteya salane ya {year}",
-  "portfolioSoldRow": "Hate firotin {quantity} × {price}"
+  "portfolioSoldRow": "Hate firotin {quantity} × {price}",
+  "subscribedInStore": "Te jixwe abonetiyek bi rêya App Store an Google Play heye. Ji bo guhertina plana xwe, mîhengên abonetiyê yên wê firotgehê bi kar bîne."
 }

@@ -864,5 +864,6 @@
   "signOutAnyway": "Vis tiek atsijungti",
   "fileTooLarge": "Šis failas per didelis, kad būtų atidarytas čia.",
   "portfolioAnnualSummaryYear": "{year} m. metinė suvestinė",
-  "portfolioSoldRow": "Parduota {quantity} × {price}"
+  "portfolioSoldRow": "Parduota {quantity} × {price}",
+  "subscribedInStore": "Jau turite prenumeratą per App Store arba Google Play. Norėdami pakeisti planą, naudokite tos parduotuvės prenumeratos nustatymus."
 }

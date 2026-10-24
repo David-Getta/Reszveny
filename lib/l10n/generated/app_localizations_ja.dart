@@ -2838,6 +2838,10 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'すでにApp StoreまたはGoogle Playのサブスクリプションをお持ちです。プランの変更は、そのストアのサブスクリプション設定から行ってください。';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

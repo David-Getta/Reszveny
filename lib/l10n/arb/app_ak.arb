@@ -864,5 +864,6 @@
   "signOutAnyway": "Fi mu ara",
   "fileTooLarge": "Saa fael yi yɛ kɛse dodo a wontumi mmue wɔ ha.",
   "portfolioAnnualSummaryYear": "Afe {year} nsɛm tiawa",
-  "portfolioSoldRow": "Watɔn {quantity} × {price}"
+  "portfolioSoldRow": "Watɔn {quantity} × {price}",
+  "subscribedInStore": "Wowɔ subscription dedaw wɔ App Store anaa Google Play so. Sɛ wopɛ sɛ wosesa wo plan a, fa store no subscription nhyehyɛe so."
 }

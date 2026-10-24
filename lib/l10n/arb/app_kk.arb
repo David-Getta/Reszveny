@@ -864,5 +864,6 @@
   "signOutAnyway": "Бәрібір шығу",
   "fileTooLarge": "Бұл файл мұнда ашу үшін тым үлкен.",
   "portfolioAnnualSummaryYear": "Жылдық қорытынды – {year}",
-  "portfolioSoldRow": "Сатылды {quantity} × {price}"
+  "portfolioSoldRow": "Сатылды {quantity} × {price}",
+  "subscribedInStore": "Сізде App Store немесе Google Play арқылы жазылым бұрыннан бар. Тарифті өзгерту үшін сол дүкеннің жазылым параметрлерін пайдаланыңыз."
 }

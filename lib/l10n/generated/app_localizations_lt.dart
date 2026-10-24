@@ -3000,6 +3000,10 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Jau turite prenumeratą per App Store arba Google Play. Norėdami pakeisti planą, naudokite tos parduotuvės prenumeratos nustatymus.';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

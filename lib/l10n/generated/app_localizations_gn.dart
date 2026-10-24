@@ -2937,6 +2937,10 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Rerekóma ñemboheraguapy App Store térã Google Play rupive. Emoambue hag̃ua nde plan, eipuru upe ñemuha ñemboheraguapy ñemboheko.';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

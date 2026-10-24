@@ -864,5 +864,6 @@
   "signOutAnyway": "എന്തായാലും സൈൻ ഔട്ട് ചെയ്യുക",
   "fileTooLarge": "ഈ ഫയൽ ഇവിടെ തുറക്കാൻ കഴിയാത്തത്ര വലുതാണ്.",
   "portfolioAnnualSummaryYear": "{year} വാർഷിക സംഗ്രഹം",
-  "portfolioSoldRow": "വിറ്റു {quantity} × {price}"
+  "portfolioSoldRow": "വിറ്റു {quantity} × {price}",
+  "subscribedInStore": "App Store അല്ലെങ്കിൽ Google Play വഴി നിങ്ങൾക്ക് ഇതിനകം ഒരു സബ്സ്ക്രിപ്ഷൻ ഉണ്ട്. പ്ലാൻ മാറ്റാൻ ആ സ്റ്റോറിന്റെ സബ്സ്ക്രിപ്ഷൻ ക്രമീകരണങ്ങൾ ഉപയോഗിക്കുക."
 }

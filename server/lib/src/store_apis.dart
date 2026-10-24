@@ -100,6 +100,9 @@ class AppleStoreApi {
   bool accepts(Map<String, dynamic> t, String productId) {
     if (t['bundleId'] != bundleId || t['productId'] != productId) return false;
     if (t['revocationDate'] != null) return false;
+    // Egy magasabb csomagra váltott (felváltott) előfizetés régi tranzakciója már nem érvényes:
+    // egy késve újraküldött megújítása ne hozza vissza az alacsonyabb csomagot.
+    if (t['isUpgraded'] == true) return false;
     final expires = t['expiresDate'];
     if (PlanSpec.byProductId(productId) != null) {
       // Előfizetés: csak ha még tart az időszak.
@@ -192,7 +195,12 @@ class GooglePlayApi {
       if (until == null) return null;
       // Megújításonként új rendelés-azonosító (GPA.…..0, …..1), így minden időszak egyszer írható jóvá.
       final order = j['latestOrderId'] as String? ?? 'gp-$purchaseToken';
-      return VerifiedPurchase(order, linkKey: purchaseToken, expiresAt: until);
+      return VerifiedPurchase(
+        order,
+        linkKey: purchaseToken,
+        expiresAt: until,
+        linkedKey: j['linkedPurchaseToken'] as String?,
+      );
     }
     if (j['purchaseState'] != 0) return null;
     return VerifiedPurchase(j['orderId'] as String? ?? 'gp-$purchaseToken', linkKey: purchaseToken);

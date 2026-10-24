@@ -864,5 +864,6 @@
   "signOutAnyway": "Гэсэн ч гарах",
   "fileTooLarge": "Энэ файл хэтэрхий том тул энд нээх боломжгүй.",
   "portfolioAnnualSummaryYear": "{year} оны жилийн хураангуй",
-  "portfolioSoldRow": "Зарсан {quantity} × {price}"
+  "portfolioSoldRow": "Зарсан {quantity} × {price}",
+  "subscribedInStore": "Танд App Store эсвэл Google Play-ээр авсан захиалга аль хэдийн байна. Багцаа солихын тулд тухайн дэлгүүрийн захиалгын тохиргоог ашиглана уу."
 }

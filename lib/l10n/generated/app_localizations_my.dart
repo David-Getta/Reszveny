@@ -2923,6 +2923,10 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'သင့်တွင် App Store သို့မဟုတ် Google Play မှတစ်ဆင့် စာရင်းသွင်းမှု ရှိပြီးသားဖြစ်သည်။ အစီအစဉ်ကို ပြောင်းရန် ထိုစတိုး၏ စာရင်းသွင်းမှု ဆက်တင်များကို အသုံးပြုပါ။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

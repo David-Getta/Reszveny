@@ -2956,6 +2956,10 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'U se u ri na ntsariso hi ku tirhisa App Store kumbe Google Play. Ku cinca kungu ra wena, tirhisa swiyimiso swa ntsariso swa vhengele rero.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

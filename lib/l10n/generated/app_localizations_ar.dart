@@ -3003,6 +3003,10 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'لديك بالفعل اشتراك عبر App Store أو Google Play. لتغيير خطتك، استخدم إعدادات الاشتراك في ذلك المتجر.';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

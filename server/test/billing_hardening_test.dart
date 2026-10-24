@@ -490,7 +490,7 @@ void main() {
       }),
     );
     expect(store.entitlement(uid).extra, 20);
-    await webhook(event('e4', 'charge.refunded', {'id': 'ch_1', 'payment_intent': 'pi_pack'}));
+    await webhook(event('e4', 'charge.refunded', {'id': 'ch_1', 'payment_intent': 'pi_pack', 'refunded': true}));
     await webhook(event('e5', 'charge.dispute.created', {'id': 'dp_1', 'payment_intent': 'pi_pack'}));
     expect(store.entitlement(uid).extra, 0);
     // Az előfizetés első számlájának visszatérítése: a csomag megszűnik.
@@ -511,7 +511,7 @@ void main() {
       }),
     );
     expect(store.entitlement(uid).paidThrough, now.add(const Duration(days: 31)));
-    await webhook(event('e7', 'charge.refunded', {'id': 'ch_2', 'payment_intent': 'pi_sub'}));
+    await webhook(event('e7', 'charge.refunded', {'id': 'ch_2', 'payment_intent': 'pi_sub', 'refunded': true}));
     expect(store.entitlement(uid).tier, isNull);
   });
 
@@ -604,7 +604,10 @@ void main() {
     expect(await verify(t, 'whatstock.sub.max', 'm1'), 200);
     final account = (await login('old@x.io', token: t))['user_id'] as String;
     expect(store.entitlement(account).paidThrough, until);
+    // Bolti előfizetés: a bolt türelmi ideje alatt még él, utána lejár.
     now = until.add(Store.paidGrace).add(const Duration(days: 1));
+    expect(store.entitlement(account).tier, 'max');
+    now = until.add(Store.storeGrace).add(const Duration(days: 1));
     expect(store.entitlement(account).tier, isNull, reason: 'a lemondott előfizetés lejár');
   });
 

@@ -2972,6 +2972,10 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Jums jau ir abonements, izmantojot App Store vai Google Play. Lai mainītu plānu, izmantojiet šī veikala abonementa iestatījumus.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

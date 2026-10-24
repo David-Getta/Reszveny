@@ -2923,6 +2923,10 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Am nga abonmaa ba pare ci App Store walla Google Play. Ngir soppi sa formil, jëfandikool tànneefu abonmaa yu bitig boobu.';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

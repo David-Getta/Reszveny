@@ -2928,6 +2928,10 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Anda sudah memiliki langganan melalui App Store atau Google Play. Untuk mengubah paket, gunakan pengaturan langganan di toko tersebut.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

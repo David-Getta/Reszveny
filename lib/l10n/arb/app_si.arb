@@ -864,5 +864,6 @@
   "signOutAnyway": "කෙසේ වෙතත් වරන්න",
   "fileTooLarge": "මෙම ගොනුව මෙහි විවෘත කළ නොහැකි තරම් විශාලයි.",
   "portfolioAnnualSummaryYear": "{year} වාර්ෂික සාරාංශය",
-  "portfolioSoldRow": "විකුණන ලදී {quantity} × {price}"
+  "portfolioSoldRow": "විකුණන ලදී {quantity} × {price}",
+  "subscribedInStore": "ඔබට දැනටමත් App Store හෝ Google Play හරහා දායකත්වයක් ඇත. ඔබේ සැලසුම වෙනස් කිරීමට එම ගබඩාවේ දායකත්ව සැකසීම් භාවිත කරන්න."
 }

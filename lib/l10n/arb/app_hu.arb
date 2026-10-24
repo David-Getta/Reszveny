@@ -765,6 +765,7 @@
   "fileTooLarge": "Ez a fájl túl nagy ahhoz, hogy itt megnyíljon.",
   "portfolioAnnualSummaryYear": "Éves összesítő – {year}",
   "portfolioSoldRow": "Eladva: {quantity} × {price}",
+  "subscribedInStore": "Már van előfizetésed az App Store-ban vagy a Google Playen. A csomagot az ottani előfizetés-beállításokban válthatod.",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfóliócél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

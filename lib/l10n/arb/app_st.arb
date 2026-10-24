@@ -864,5 +864,6 @@
   "signOutAnyway": "Tswa leha ho le jwalo",
   "fileTooLarge": "Faele ena e kgolo haholo hore e ka bulwa mona.",
   "portfolioAnnualSummaryYear": "Kakaretso ya selemo sa {year}",
-  "portfolioSoldRow": "E rekisitswe {quantity} × {price}"
+  "portfolioSoldRow": "E rekisitswe {quantity} × {price}",
+  "subscribedInStore": "O se o na le ingodiso ka App Store kapa Google Play. Ho fetola moralo wa hao, sebedisa ditlhophiso tsa ingodiso tsa lebenkele leo."
 }

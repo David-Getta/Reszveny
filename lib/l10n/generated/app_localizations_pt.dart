@@ -2940,6 +2940,10 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Já tem uma subscrição através da App Store ou do Google Play. Para mudar de plano, utilize as definições de subscrição dessa loja.';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

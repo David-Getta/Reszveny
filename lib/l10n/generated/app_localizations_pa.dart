@@ -2929,6 +2929,10 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ App Store ਜਾਂ Google Play ਰਾਹੀਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਹੈ। ਆਪਣਾ ਪਲਾਨ ਬਦਲਣ ਲਈ ਉਸ ਸਟੋਰ ਦੀਆਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਸੈਟਿੰਗਾਂ ਦੀ ਵਰਤੋਂ ਕਰੋ।';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

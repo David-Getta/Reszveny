@@ -864,5 +864,6 @@
   "signOutAnyway": "तबो साइन आउट करीं",
   "fileTooLarge": "ई फाइल इहाँ खोले खातिर बहुत बड़ बा।",
   "portfolioAnnualSummaryYear": "{year} के सालाना सारांश",
-  "portfolioSoldRow": "बेचल {quantity} × {price}"
+  "portfolioSoldRow": "बेचल {quantity} × {price}",
+  "subscribedInStore": "रउआ लगे पहिलहीं से App Store भा Google Play के जरिए सदस्यता बा। आपन प्लान बदले खातिर ओह स्टोर के सदस्यता सेटिंग्स के इस्तेमाल करीं।"
 }

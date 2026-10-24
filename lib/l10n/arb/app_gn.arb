@@ -864,5 +864,6 @@
   "signOutAnyway": "Esẽ jepe",
   "fileTooLarge": "Ko archivo tuichaiterei ojepeʼa hag̃ua koʼápe.",
   "portfolioAnnualSummaryYear": "Ary {year} ñemombykymi",
-  "portfolioSoldRow": "Ñemu {quantity} × {price}"
+  "portfolioSoldRow": "Ñemu {quantity} × {price}",
+  "subscribedInStore": "Rerekóma ñemboheraguapy App Store térã Google Play rupive. Emoambue hag̃ua nde plan, eipuru upe ñemuha ñemboheraguapy ñemboheko."
 }

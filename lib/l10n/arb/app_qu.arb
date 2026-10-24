@@ -864,5 +864,6 @@
   "signOutAnyway": "Chaywanpas lluqsiy",
   "fileTooLarge": "Kay archivoqa nisyu hatunmi kaypi kicharinapaq.",
   "portfolioAnnualSummaryYear": "{year} watapa pisichay",
-  "portfolioSoldRow": "Rantikusqa {quantity} × {price}"
+  "portfolioSoldRow": "Rantikusqa {quantity} × {price}",
+  "subscribedInStore": "Ñam App Store utaq Google Play nisqawan suscripciónniyki kachkan. Planniykita tikranaykipaq, chay tiendapa suscripción allichayninkunata llamk'achiy."
 }

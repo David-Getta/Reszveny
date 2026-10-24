@@ -2897,6 +2897,10 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'คุณมีการสมัครสมาชิกผ่าน App Store หรือ Google Play อยู่แล้ว หากต้องการเปลี่ยนแพ็กเกจ ให้ใช้การตั้งค่าการสมัครสมาชิกของสโตร์นั้น';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

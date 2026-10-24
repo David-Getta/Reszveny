@@ -864,5 +864,6 @@
   "signOutAnyway": "Ипак се одјави",
   "fileTooLarge": "Ова датотека је превелика да би се отворила овде.",
   "portfolioAnnualSummaryYear": "Годишњи преглед {year}",
-  "portfolioSoldRow": "Продато {quantity} × {price}"
+  "portfolioSoldRow": "Продато {quantity} × {price}",
+  "subscribedInStore": "Већ имате претплату преко App Store или Google Play. Да бисте променили план, користите подешавања претплате у тој продавници."
 }

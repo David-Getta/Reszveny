@@ -2941,6 +2941,10 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'May subscription ka na sa App Store o Google Play. Para palitan ang iyong plan, gamitin ang mga setting ng subscription ng store na iyon.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

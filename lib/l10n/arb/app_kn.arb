@@ -864,5 +864,6 @@
   "signOutAnyway": "ಆದರೂ ಸೈನ್ ಔಟ್ ಮಾಡಿ",
   "fileTooLarge": "ಈ ಫೈಲ್ ಇಲ್ಲಿ ತೆರೆಯಲು ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ.",
   "portfolioAnnualSummaryYear": "{year}ರ ವಾರ್ಷಿಕ ಸಾರಾಂಶ",
-  "portfolioSoldRow": "ಮಾರಾಟ {quantity} × {price}"
+  "portfolioSoldRow": "ಮಾರಾಟ {quantity} × {price}",
+  "subscribedInStore": "App Store ಅಥವಾ Google Play ಮೂಲಕ ನೀವು ಈಗಾಗಲೇ ಚಂದಾದಾರಿಕೆ ಹೊಂದಿದ್ದೀರಿ. ನಿಮ್ಮ ಪ್ಲಾನ್ ಬದಲಾಯಿಸಲು, ಆ ಸ್ಟೋರ್‌ನ ಚಂದಾದಾರಿಕೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬಳಸಿ."
 }

@@ -864,5 +864,6 @@
   "signOutAnyway": "फिर भी साइन आउट करें",
   "fileTooLarge": "यह फ़ाइल यहाँ खोलने के लिए बहुत बड़ी है।",
   "portfolioAnnualSummaryYear": "{year} का वार्षिक सारांश",
-  "portfolioSoldRow": "बेचा {quantity} × {price}"
+  "portfolioSoldRow": "बेचा {quantity} × {price}",
+  "subscribedInStore": "आपके पास पहले से App Store या Google Play के ज़रिए सदस्यता है। अपना प्लान बदलने के लिए उस स्टोर की सदस्यता सेटिंग्स का उपयोग करें।"
 }

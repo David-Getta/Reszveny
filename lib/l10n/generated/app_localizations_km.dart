@@ -2909,6 +2909,10 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'អ្នកមានការជាវតាមរយៈ App Store ឬ Google Play រួចហើយ។ ដើម្បីប្ដូរគម្រោងរបស់អ្នក សូមប្រើការកំណត់ការជាវរបស់ហាងនោះ។';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

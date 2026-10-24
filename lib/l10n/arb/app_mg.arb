@@ -864,5 +864,6 @@
   "signOutAnyway": "Hivoaka ihany",
   "fileTooLarge": "Lehibe loatra ity rakitra ity ka tsy azo sokafana eto.",
   "portfolioAnnualSummaryYear": "Famintinana isan-taona {year}",
-  "portfolioSoldRow": "Namidy {quantity} × {price}"
+  "portfolioSoldRow": "Namidy {quantity} × {price}",
+  "subscribedInStore": "Efa manana famandrihana amin'ny alalan'ny App Store na Google Play ianao. Raha hanova ny tolotrao, ampiasao ny fikirakiran'ny famandrihana ao amin'io fivarotana io."
 }

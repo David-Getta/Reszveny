@@ -2800,6 +2800,10 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      '你已通过 App Store 或 Google Play 订阅。如需更改计划，请使用该商店的订阅设置。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5967,6 +5971,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String portfolioSoldRow(String quantity, String price) {
     return '賣出 $quantity × $price';
   }
+
+  @override
+  String get subscribedInStore =>
+      '你已透過 App Store 或 Google Play 訂閱。如需更改計劃，請使用該商店的訂閱設定。';
 
   @override
   String get portfolioGoalSet => '設定目標';

@@ -75,7 +75,7 @@ class WebCheckoutBillingService implements BillingService {
         BillingEvent(
           productId: product.id,
           status: e.code == 'login_required' ? BillingStatus.needsLogin : BillingStatus.error,
-          message: e.message ?? e.code,
+          message: e.code == 'store_subscription' ? e.code : (e.message ?? e.code),
         ),
       );
       return;

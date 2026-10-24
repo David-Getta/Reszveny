@@ -2946,6 +2946,10 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Sele unomrhumo nge-App Store okanye nge-Google Play. Ukutshintsha isicwangciso sakho, sebenzisa iisetingi zomrhumo zaloo venkile.';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

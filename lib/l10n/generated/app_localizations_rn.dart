@@ -2944,6 +2944,10 @@ class AppLocalizationsRn extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Usanzwe ufise iyandikisha biciye kuri App Store canke Google Play. Kugira uhindure ipaki yawe, koresha ivyo gutunganya iyandikisha vy\'iryo duka.';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

@@ -48,6 +48,16 @@ void main() {
     await sub.cancel();
   });
 
+  test('a release build never shows the simulated store: payment is unavailable instead', () async {
+    final s = FallbackBillingService(
+      primary: _FakeStore(),
+      fallback: DemoBillingService(latency: Duration.zero),
+      allowFallback: false,
+    );
+    await expectLater(s.products(), throwsA(anything));
+    expect(s.isDemo, isFalse);
+  });
+
   test('an unavailable store falls back too', () async {
     final s = FallbackBillingService(
       primary: _FakeStore(available: false),

@@ -2945,6 +2945,10 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Udi kale ne abonnement wa ku App Store anyi Google Play. Bua kushintulula forfait webe, enza mudimu ne malongolola a abonnement a store eu.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

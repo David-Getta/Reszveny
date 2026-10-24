@@ -864,5 +864,6 @@
   "signOutAnyway": "তথাপিও ছাইন আউট কৰক",
   "fileTooLarge": "এই ফাইলটো ইয়াত খুলিবলৈ অতি ডাঙৰ।",
   "portfolioAnnualSummaryYear": "{year}ৰ বাৰ্ষিক সাৰাংশ",
-  "portfolioSoldRow": "বিক্ৰীত {quantity} × {price}"
+  "portfolioSoldRow": "বিক্ৰীত {quantity} × {price}",
+  "subscribedInStore": "App Store বা Google Playৰ জৰিয়তে আপোনাৰ ইতিমধ্যে এটা ছাবস্ক্ৰিপশ্বন আছে। আপোনাৰ প্লান সলনি কৰিবলৈ সেই ষ্ট'ৰৰ ছাবস্ক্ৰিপশ্বন ছেটিংছ ব্যৱহাৰ কৰক।"
 }

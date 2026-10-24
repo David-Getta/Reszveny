@@ -2948,6 +2948,10 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Du hast bereits ein Abonnement über den App Store oder Google Play. Um deinen Tarif zu ändern, nutze die Abo-Einstellungen dieses Stores.';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

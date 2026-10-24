@@ -864,5 +864,6 @@
   "signOutAnyway": "Baribir chiqish",
   "fileTooLarge": "Bu fayl bu yerda ochish uchun juda katta.",
   "portfolioAnnualSummaryYear": "{year} yillik xulosa",
-  "portfolioSoldRow": "Sotildi {quantity} × {price}"
+  "portfolioSoldRow": "Sotildi {quantity} × {price}",
+  "subscribedInStore": "Sizda App Store yoki Google Play orqali obuna allaqachon mavjud. Tarifni oʻzgartirish uchun oʻsha doʻkonning obuna sozlamalaridan foydalaning."
 }

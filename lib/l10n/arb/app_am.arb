@@ -864,5 +864,6 @@
   "signOutAnyway": "ለማንኛውም ውጣ",
   "fileTooLarge": "ይህ ፋይል እዚህ ለመክፈት በጣም ትልቅ ነው።",
   "portfolioAnnualSummaryYear": "የ{year} ዓመታዊ ማጠቃለያ",
-  "portfolioSoldRow": "ተሽጧል {quantity} × {price}"
+  "portfolioSoldRow": "ተሽጧል {quantity} × {price}",
+  "subscribedInStore": "በApp Store ወይም በGoogle Play በኩል የደንበኝነት ምዝገባ አስቀድመው አለዎት። ዕቅድዎን ለመቀየር የዚያን መደብር የምዝገባ ቅንብሮች ይጠቀሙ።"
 }

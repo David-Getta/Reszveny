@@ -864,5 +864,6 @@
   "signOutAnyway": "នៅតែចាកចេញ",
   "fileTooLarge": "ឯកសារនេះធំពេក មិនអាចបើកនៅទីនេះបានទេ។",
   "portfolioAnnualSummaryYear": "សេចក្តីសង្ខេបប្រចាំឆ្នាំ {year}",
-  "portfolioSoldRow": "បានលក់ {quantity} × {price}"
+  "portfolioSoldRow": "បានលក់ {quantity} × {price}",
+  "subscribedInStore": "អ្នកមានការជាវតាមរយៈ App Store ឬ Google Play រួចហើយ។ ដើម្បីប្ដូរគម្រោងរបស់អ្នក សូមប្រើការកំណត់ការជាវរបស់ហាងនោះ។"
 }

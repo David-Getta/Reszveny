@@ -2949,6 +2949,10 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Ozali kala na abonnement na nzela ya App Store to Google Play. Mpo na kobongola forfait na yo, salelá ba-paramètre ya abonnement ya store yango.';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

@@ -2924,6 +2924,10 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Ị nweelarị ndenye aha site na App Store ma ọ bụ Google Play. Iji gbanwee atụmatụ gị, jiri ntọala ndenye aha nke ụlọ ahịa ahụ.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

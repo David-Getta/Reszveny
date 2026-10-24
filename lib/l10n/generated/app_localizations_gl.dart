@@ -2952,6 +2952,10 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Xa tes unha subscrición a través da App Store ou de Google Play. Para cambiar de plan, usa a configuración de subscricións desa tenda.';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

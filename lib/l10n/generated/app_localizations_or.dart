@@ -2928,6 +2928,10 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'App Store କିମ୍ବା Google Play ମାଧ୍ୟମରେ ଆପଣଙ୍କର ପୂର୍ବରୁ ଏକ ସବସ୍କ୍ରିପସନ ଅଛି। ଆପଣଙ୍କ ପ୍ଲାନ ବଦଳାଇବାକୁ ସେହି ଷ୍ଟୋରର ସବସ୍କ୍ରିପସନ ସେଟିଂସ ବ୍ୟବହାର କରନ୍ତୁ।';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

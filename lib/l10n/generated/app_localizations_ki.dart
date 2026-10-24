@@ -2934,6 +2934,10 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Wĩ na ũiyandĩkithio wa App Store kana Google Play. Nĩguo ũgarũre mũbango waku, hũthĩra mĩtaratara ya ũiyandĩkithio ya store ĩyo.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

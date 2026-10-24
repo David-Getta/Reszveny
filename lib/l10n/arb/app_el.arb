@@ -864,5 +864,6 @@
   "signOutAnyway": "Αποσύνδεση παρ' όλα αυτά",
   "fileTooLarge": "Αυτό το αρχείο είναι πολύ μεγάλο για να ανοίξει εδώ.",
   "portfolioAnnualSummaryYear": "Ετήσια σύνοψη {year}",
-  "portfolioSoldRow": "Πωλήθηκαν {quantity} × {price}"
+  "portfolioSoldRow": "Πωλήθηκαν {quantity} × {price}",
+  "subscribedInStore": "Έχετε ήδη συνδρομή μέσω του App Store ή του Google Play. Για να αλλάξετε το πρόγραμμά σας, χρησιμοποιήστε τις ρυθμίσεις συνδρομών του συγκεκριμένου καταστήματος."
 }

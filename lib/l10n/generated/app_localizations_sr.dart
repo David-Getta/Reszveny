@@ -2976,6 +2976,10 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Већ имате претплату преко App Store или Google Play. Да бисте променили план, користите подешавања претплате у тој продавници.';
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

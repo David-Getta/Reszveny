@@ -1369,6 +1369,12 @@ class Api {
         final e = store.entitlement(uid);
         if (e.tier != null && e.tier != 'trial') return _error(409, 'already_subscribed');
       }
+      // Élő bolti (App Store / Google Play) előfizetés mellé sem indul webes: a kettő
+      // párhuzamosan számlázna; a váltás a boltban megy.
+      if (isSub) {
+        final e = store.entitlement(uid);
+        if (e.fromStore && e.tier != null && e.tier != 'trial') return _error(409, 'store_subscription');
+      }
       // Egy ügyfél a fiókhoz az első munkamenet előtt (ha nem sikerül, a Stripe a
       // munkamenettel hoz létre egyet, mint eddig).
       var customer = store.stripeOf(uid).customerId;
@@ -1499,22 +1505,22 @@ class Api {
           // Csomagnál a fizetés azonosítója köti a visszatérítéshez.
           linkKey: obj['payment_intent'] as String?,
         )) {
-          quota.apply(store.entitlement(uid), productId);
+          quota.apply(store.entitlement(uid), productId, source: subscription == null ? null : 'stripe:$subscription');
         }
       case 'invoice.paid':
         // A Stripe nem garantálja a sorrendet: ha a számla a checkout előtt érkezik, a
         // fiók az előfizetés metaadataiból jön (a checkout teszi bele).
         var uid = store.userIdForStripeCustomer(obj['customer'] as String? ?? '');
+        final details = (obj['subscription_details'] ?? (obj['parent'] as Map?)?['subscription_details']) as Map?;
+        final subscriptionId = (obj['subscription'] ?? details?['subscription']) as String?;
+        final source = subscriptionId == null ? null : 'stripe:$subscriptionId';
+        // A 2025-03-31-es API-tól a fizetés a `payments` listában van (a `payment_intent` mező megszűnt).
+        final pi = obj['payment_intent'] as String? ?? _invoicePayment(obj);
         if (uid == null) {
-          final details = (obj['subscription_details'] ?? (obj['parent'] as Map?)?['subscription_details']) as Map?;
           final owner = (details?['metadata'] as Map?)?['user_id'] as String?;
           if (owner != null && store.userExists(owner)) {
             uid = owner;
-            store.setStripe(
-              owner,
-              customerId: obj['customer'] as String?,
-              subscriptionId: (obj['subscription'] ?? details?['subscription']) as String?,
-            );
+            store.setStripe(owner, customerId: obj['customer'] as String?, subscriptionId: subscriptionId);
           }
         }
         final productId = _productFromInvoice(s, obj);
@@ -1528,10 +1534,22 @@ class Api {
             productId: productId,
             platform: 'stripe',
             transactionId: 'invoice:${obj['id'] ?? eventId}',
-            linkKey: obj['payment_intent'] as String?,
+            linkKey: pi,
           );
           final e = store.entitlement(uid);
-          if (until != null && e.tier == PlanSpec.byProductId(productId)?.tier) store.save(e..paidThrough = until);
+          // Csomagváltás (pl. havi → éves) számlája is: a kifizetett idő csak előre mozdul, és
+          // az első hónap keret-időszaka a számla szerinti napig tart (nem nullázódik kétszer).
+          if (until != null &&
+              e.tier == PlanSpec.byProductId(productId)?.tier &&
+              (source == null || e.source == null || e.source == source)) {
+            if (e.paidThrough == null || until.isAfter(e.paidThrough!)) e.paidThrough = until;
+            final now = store.clock();
+            if (until.isAfter(now) && until.difference(now) <= const Duration(days: 35)) e.periodEnd = until;
+            e
+              ..source ??= source
+              ..grant ??= pi;
+            store.save(e);
+          }
           break;
         }
         // A megújulás új időszakot nyit.
@@ -1540,9 +1558,9 @@ class Api {
           productId: productId,
           platform: 'stripe',
           transactionId: obj['id'] as String? ?? eventId,
-          linkKey: obj['payment_intent'] as String?,
+          linkKey: pi,
         )) {
-          quota.apply(store.entitlement(uid), productId, until: until);
+          quota.apply(store.entitlement(uid), productId, until: until, source: source, grant: pi);
         }
       case 'customer.subscription.updated':
         final uid = store.userIdForStripeCustomer(obj['customer'] as String? ?? '');
@@ -1560,37 +1578,68 @@ class Api {
           break;
         }
         final e = store.entitlement(uid);
+        // Más forrás (bolti előfizetés) csomagjához nem nyúl; egy később kézbesített régebbi
+        // esemény sem írja felül az újabbat.
+        if (e.source != null && e.source != 'stripe:${obj['id']}') break;
+        final created = (event['created'] as num?)?.toInt();
+        if (created != null && e.sourceAt != null && created < e.sourceAt!) break;
+        if (created != null) e.sourceAt = created;
         if (const {'canceled', 'unpaid', 'incomplete_expired'}.contains(obj['status'])) {
           // Megszűnt (vagy nem fizetett): a csomag véget ér.
-          if (e.tier != null && e.tier != 'trial') store.save(e..tier = null);
+          if (e.tier != null && e.tier != 'trial') e.tier = null;
         } else if (e.tier != null && e.tier != 'trial' && e.tier != plan.tier) {
           // Csomagváltás azonnal érvényes, a felhasznált keret megmarad.
-          store.save(e..tier = plan.tier);
+          e.tier = plan.tier;
         }
+        store.save(e);
       case 'customer.subscription.deleted':
         final uid = store.userIdForStripeCustomer(obj['customer'] as String? ?? '');
         if (uid == null || !current(uid)) break;
         final e = store.entitlement(uid);
-        if (e.tier != null && e.tier != 'trial') store.save(e..tier = null);
+        // Csak a webes előfizetés csomagja szűnik meg (egy közben vett bolti csomag marad).
+        if (e.tier != null && e.tier != 'trial' && (e.source == null || e.source == 'stripe:${obj['id']}')) {
+          store.save(e..tier = null);
+        }
         store.clearStripeSubscription(uid);
       case 'charge.refunded' || 'charge.dispute.created':
         // Visszatérítés vagy vitatott terhelés: a hozzá tartozó csomag / előfizetés visszavonva (egyszer).
+        // A részleges visszatérítés (pl. egy kis jóváírás) nem vonja vissza az egészet.
+        if (type == 'charge.refunded' && obj['refunded'] != true) break;
         final pi = obj['payment_intent'] as String?;
         if (pi == null) break;
         final uid = store.userForPurchaseLink('stripe', pi);
         final productId = store.productForPurchaseLink('stripe', pi);
         if (uid == null || productId == null) break;
         if (store.recordPurchase(userId: uid, productId: productId, platform: 'stripe', transactionId: 'revoked:$pi')) {
-          quota.revoke(store.entitlement(uid), productId);
+          quota.revoke(store.entitlement(uid), productId, key: pi);
         }
     }
     return _json({'received': true});
   }
 
+  /// A számla előfizetési sorai: az arányosítási sorok (a csomagváltáskor elöl álló
+  /// „fel nem használt idő” jóváírás) nélkül, a legkésőbb záró elöl – ebből jön a termék és
+  /// a kifizetett időszak vége (egy havi → éves váltásnál az év vége, nem a hónapé).
+  static List<Map> _invoiceLines(Map<String, dynamic> invoice) {
+    final lines = [...(((invoice['lines'] as Map?)?['data'] as List?) ?? const []).whereType<Map>()];
+    bool proration(Map l) =>
+        l['proration'] == true || ((l['parent'] as Map?)?['subscription_item_details'] as Map?)?['proration'] == true;
+    int end(Map l) => ((l['period'] as Map?)?['end'] as num?)?.toInt() ?? 0;
+    final main = lines.where((l) => !proration(l)).toList();
+    return (main.isEmpty ? lines : main)..sort((a, b) => end(b).compareTo(end(a)));
+  }
+
+  /// A számla fizetése (a 2025-03-31-es API-tól `payments.data[].payment.payment_intent`).
+  static String? _invoicePayment(Map<String, dynamic> invoice) {
+    for (final p in (((invoice['payments'] as Map?)?['data'] as List?) ?? const []).whereType<Map>()) {
+      if ((p['payment'] as Map?)?['payment_intent'] case final String pi) return pi;
+    }
+    return null;
+  }
+
   /// A számla előfizetési időszakának vége (a sor `period.end`-je, Unix-másodperc).
   static DateTime? _invoicePeriodEnd(Map<String, dynamic> invoice) {
-    final lines = ((invoice['lines'] as Map?)?['data'] as List?) ?? const [];
-    for (final l in lines.whereType<Map>()) {
+    for (final l in _invoiceLines(invoice)) {
       if ((l['period'] as Map?)?['end'] case final num end) {
         return DateTime.fromMillisecondsSinceEpoch(end.toInt() * 1000, isUtc: true);
       }
@@ -1599,8 +1648,7 @@ class Api {
   }
 
   static String? _productFromInvoice(StripeClient s, Map<String, dynamic> invoice) {
-    final lines = ((invoice['lines'] as Map?)?['data'] as List?) ?? const [];
-    for (final l in lines.whereType<Map>()) {
+    for (final l in _invoiceLines(invoice)) {
       final price = l['price'] as Map? ?? ((l['pricing'] as Map?)?['price_details'] as Map?);
       final id = price?['id'] as String? ?? price?['price'] as String?;
       final p = id == null ? null : s.productForPrice(id);
@@ -1665,11 +1713,15 @@ class Api {
       // kifizetett időszak jön, a felhasználás nem indul újra; átvett csomag nem jár újra.
       final isPack = PlanSpec.packs.containsKey(productId);
       applied = fresh || (moved && !isPack);
+      final source = t.linkKey == null ? null : '$platform:${t.linkKey}';
       if (fresh) {
-        quota.apply(e, productId, until: t.expiresAt);
+        quota.apply(e, productId, until: t.expiresAt, source: source, grant: t.transactionId);
       } else if (applied) {
-        quota.apply(e, productId, until: t.expiresAt);
+        quota.apply(e, productId, until: t.expiresAt, source: source, grant: t.transactionId);
         store.save(store.entitlement(uid)..used = usedBefore);
+      } else if (t.expiresAt case final until?) {
+        // Már jóváírt tranzakció frissebb állapota (meghosszabbítva, visszavont visszatérítés).
+        quota.extend(e, productId, until: until, source: source);
       }
     });
     return _json({'entitlements': store.entitlement(uid).toJson(), 'applied': applied});
@@ -1688,9 +1740,14 @@ class Api {
     VerifiedPurchase? renewed,
     String? revokedTransaction,
   }) {
-    final uid = store.userForPurchaseLink(platform, linkKey);
+    var uid = store.userForPurchaseLink(platform, linkKey);
+    // Google Play csomagváltás vagy újra-előfizetés: új token, a régi (`linkedPurchaseToken`)
+    // gazdájáé – különben a fizető felhasználó a Visszaállítás gombig hozzáférés nélkül maradna.
+    final previous = renewed?.linkedKey;
+    if (uid == null && previous != null) uid = store.userForPurchaseLink(platform, previous);
     if (uid == null || uid == Store.deletedUser) return;
     final e = store.entitlement(uid);
+    final source = '$platform:$linkKey';
     if (revokedTransaction != null) {
       final first = store.recordPurchase(
         userId: uid,
@@ -1698,7 +1755,16 @@ class Api {
         platform: platform,
         transactionId: 'revoked:$revokedTransaction',
       );
-      if (first) quota.revoke(e, productId);
+      // Az egész előfizetés visszavonása (`sub:`): az időszaktól függetlenül; egy tranzakcióé
+      // csak akkor, ha az fizette a mostani időszakot.
+      if (first) {
+        quota.revoke(
+          e,
+          productId,
+          key: revokedTransaction.startsWith('sub:') ? null : revokedTransaction,
+          source: source,
+        );
+      }
       return;
     }
     if (renewed == null) return;
@@ -1709,7 +1775,12 @@ class Api {
       transactionId: renewed.transactionId,
       linkKey: renewed.linkKey,
     );
-    if (fresh) quota.apply(e, productId, until: renewed.expiresAt);
+    if (fresh) {
+      quota.apply(e, productId, until: renewed.expiresAt, source: source, grant: renewed.transactionId);
+    } else if (renewed.expiresAt case final until?) {
+      // Már jóváírt tranzakció frissebb állapota (pl. `RENEWAL_EXTENDED`, `REFUND_REVERSED`).
+      quota.extend(e, productId, until: until, source: source);
+    }
   }
 
   /// App Store Server Notifications V2 (`{signedPayload}`). Az értesítés tartalmát
@@ -1769,8 +1840,9 @@ class Api {
         final token = '${sub['purchaseToken']}';
         final productId = '${sub['subscriptionId']}';
         final type = sub['notificationType'];
-        // 1 visszaállt, 2 megújult, 4 megvásárolva, 7 újraindítva → új időszak; 12 visszavonva.
-        if (const {1, 2, 4, 7}.contains(type)) {
+        // 1 visszaállt, 2 megújult, 4 megvásárolva, 6 türelmi idő, 7 újraindítva → újraellenőrzés
+        // (új időszak, vagy a kifizetett idő hosszabbodik); 12 visszavonva.
+        if (const {1, 2, 4, 6, 7}.contains(type)) {
           final v = await google.verify(productId: productId, purchaseToken: token);
           if (v != null) _storeEvent(platform: 'google_play', linkKey: token, productId: productId, renewed: v);
         } else if (type == 12) {

@@ -864,5 +864,6 @@
   "signOutAnyway": "Kirjaudu silti ulos",
   "fileTooLarge": "Tämä tiedosto on liian suuri avattavaksi täällä.",
   "portfolioAnnualSummaryYear": "Vuosiyhteenveto {year}",
-  "portfolioSoldRow": "Myyty {quantity} × {price}"
+  "portfolioSoldRow": "Myyty {quantity} × {price}",
+  "subscribedInStore": "Sinulla on jo tilaus App Storen tai Google Playn kautta. Voit vaihtaa pakettia kyseisen kaupan tilausasetuksissa."
 }

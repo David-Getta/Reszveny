@@ -864,5 +864,6 @@
   "signOutAnyway": "Tšwa le ge go le bjalo",
   "fileTooLarge": "Faele ye e kgolo kudu go ka bulwa mo.",
   "portfolioAnnualSummaryYear": "Kakaretšo ya ngwaga wa {year}",
-  "portfolioSoldRow": "E rekišitšwe {quantity} × {price}"
+  "portfolioSoldRow": "E rekišitšwe {quantity} × {price}",
+  "subscribedInStore": "O šetše o na le ngwadišo ka App Store goba Google Play. Go fetola leano la gago, šomiša dipeakanyo tša ngwadišo tša lebenkele leo."
 }

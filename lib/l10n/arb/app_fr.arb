@@ -864,5 +864,6 @@
   "signOutAnyway": "Se déconnecter quand même",
   "fileTooLarge": "Ce fichier est trop volumineux pour être ouvert ici.",
   "portfolioAnnualSummaryYear": "Récapitulatif annuel {year}",
-  "portfolioSoldRow": "Vendu {quantity} × {price}"
+  "portfolioSoldRow": "Vendu {quantity} × {price}",
+  "subscribedInStore": "Vous avez déjà un abonnement via l’App Store ou Google Play. Pour changer de forfait, utilisez les réglages d’abonnement de cette boutique."
 }

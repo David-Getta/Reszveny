@@ -2929,6 +2929,10 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'आपके पास पहले से App Store या Google Play के ज़रिए सदस्यता है। अपना प्लान बदलने के लिए उस स्टोर की सदस्यता सेटिंग्स का उपयोग करें।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

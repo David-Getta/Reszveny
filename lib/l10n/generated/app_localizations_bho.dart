@@ -2924,6 +2924,10 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'रउआ लगे पहिलहीं से App Store भा Google Play के जरिए सदस्यता बा। आपन प्लान बदले खातिर ओह स्टोर के सदस्यता सेटिंग्स के इस्तेमाल करीं।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

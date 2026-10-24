@@ -2928,6 +2928,10 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'A woodi abonmaa gila e App Store walla Google Play. Ngam waylude feere maa, huutoro teelte abonmaa bitik ngon.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

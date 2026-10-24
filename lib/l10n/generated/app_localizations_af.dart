@@ -2937,6 +2937,10 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Jy het reeds ’n intekening via die App Store of Google Play. Gebruik die intekeninginstellings van daardie winkel om jou plan te verander.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

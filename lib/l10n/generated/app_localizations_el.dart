@@ -2945,6 +2945,10 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Έχετε ήδη συνδρομή μέσω του App Store ή του Google Play. Για να αλλάξετε το πρόγραμμά σας, χρησιμοποιήστε τις ρυθμίσεις συνδρομών του συγκεκριμένου καταστήματος.';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

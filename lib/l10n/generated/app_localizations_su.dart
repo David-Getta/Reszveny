@@ -2934,6 +2934,10 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Anjeun geus boga langganan ngaliwatan App Store atawa Google Play. Pikeun ngaganti pakét, paké setélan langganan di toko éta.';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

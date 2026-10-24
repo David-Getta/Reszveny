@@ -4926,6 +4926,12 @@ abstract class AppLocalizations {
   /// **'Sold {quantity} × {price}'**
   String portfolioSoldRow(String quantity, String price);
 
+  /// Shown on the desktop/web plans page when the account already has an active App Store or Google Play subscription, so a second (web) subscription is not started.
+  ///
+  /// In en, this message translates to:
+  /// **'You already have a subscription through the App Store or Google Play. To change your plan, use the subscription settings of that store.'**
+  String get subscribedInStore;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

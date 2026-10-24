@@ -864,5 +864,6 @@
   "signOutAnyway": "Buda zvakadaro",
   "fileTooLarge": "Faira iyi yakakura zvakanyanya kuti ivhurwe pano.",
   "portfolioAnnualSummaryYear": "Pfupiso yegore {year}",
-  "portfolioSoldRow": "Zvatengeswa {quantity} × {price}"
+  "portfolioSoldRow": "Zvatengeswa {quantity} × {price}",
+  "subscribedInStore": "Une kunyoresa kare kuburikidza neApp Store kana Google Play. Kuti uchinje chirongwa chako, shandisa marongero ekunyoresa echitoro ichocho."
 }

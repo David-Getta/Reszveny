@@ -2928,6 +2928,10 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Сездә App Store яки Google Play аша язылу бар инде. Тарифны үзгәртү өчен, шул кибетнең язылу көйләүләрен кулланыгыз.';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

@@ -2939,6 +2939,10 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'App Store లేదా Google Play ద్వారా మీకు ఇప్పటికే సబ్‌స్క్రిప్షన్ ఉంది. మీ ప్లాన్‌ను మార్చడానికి ఆ స్టోర్ సబ్‌స్క్రిప్షన్ సెట్టింగ్‌లను ఉపయోగించండి.';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

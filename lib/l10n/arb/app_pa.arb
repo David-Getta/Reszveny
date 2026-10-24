@@ -864,5 +864,6 @@
   "signOutAnyway": "ਫਿਰ ਵੀ ਸਾਈਨ ਆਊਟ ਕਰੋ",
   "fileTooLarge": "ਇਹ ਫ਼ਾਈਲ ਇੱਥੇ ਖੋਲ੍ਹਣ ਲਈ ਬਹੁਤ ਵੱਡੀ ਹੈ।",
   "portfolioAnnualSummaryYear": "{year} ਦਾ ਸਾਲਾਨਾ ਸਾਰ",
-  "portfolioSoldRow": "ਵੇਚੇ {quantity} × {price}"
+  "portfolioSoldRow": "ਵੇਚੇ {quantity} × {price}",
+  "subscribedInStore": "ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ App Store ਜਾਂ Google Play ਰਾਹੀਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਹੈ। ਆਪਣਾ ਪਲਾਨ ਬਦਲਣ ਲਈ ਉਸ ਸਟੋਰ ਦੀਆਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਸੈਟਿੰਗਾਂ ਦੀ ਵਰਤੋਂ ਕਰੋ।"
 }

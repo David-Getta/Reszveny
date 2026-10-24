@@ -864,5 +864,6 @@
   "signOutAnyway": "అయినా సైన్ అవుట్",
   "fileTooLarge": "ఈ ఫైల్ ఇక్కడ తెరవడానికి చాలా పెద్దదిగా ఉంది.",
   "portfolioAnnualSummaryYear": "{year} వార్షిక సారాంశం",
-  "portfolioSoldRow": "అమ్మారు {quantity} × {price}"
+  "portfolioSoldRow": "అమ్మారు {quantity} × {price}",
+  "subscribedInStore": "App Store లేదా Google Play ద్వారా మీకు ఇప్పటికే సబ్‌స్క్రిప్షన్ ఉంది. మీ ప్లాన్‌ను మార్చడానికి ఆ స్టోర్ సబ్‌స్క్రిప్షన్ సెట్టింగ్‌లను ఉపయోగించండి."
 }

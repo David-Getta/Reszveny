@@ -864,5 +864,6 @@
   "signOutAnyway": "Այնուամենայնիվ դուրս գալ",
   "fileTooLarge": "Այս ֆայլը չափազանց մեծ է այստեղ բացելու համար։",
   "portfolioAnnualSummaryYear": "{year} թ. տարեկան ամփոփում",
-  "portfolioSoldRow": "Վաճառված {quantity} × {price}"
+  "portfolioSoldRow": "Վաճառված {quantity} × {price}",
+  "subscribedInStore": "Դուք արդեն ունեք բաժանորդագրություն App Store-ի կամ Google Play-ի միջոցով։ Պլանը փոխելու համար օգտագործեք այդ խանութի բաժանորդագրության կարգավորումները։"
 }

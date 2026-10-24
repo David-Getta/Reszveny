@@ -2946,6 +2946,10 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'App Store அல்லது Google Play மூலம் உங்களிடம் ஏற்கனவே சந்தா உள்ளது. உங்கள் திட்டத்தை மாற்ற, அந்த ஸ்டோரின் சந்தா அமைப்புகளைப் பயன்படுத்தவும்.';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

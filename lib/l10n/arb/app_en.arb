@@ -2562,6 +2562,8 @@
   "@portfolioAnnualSummaryYear": {"description": "Heading and share subject of the annual summary for one year.", "placeholders": {"year": {"type": "String", "example": "2025"}}},
   "portfolioSoldRow": "Sold {quantity} × {price}",
   "@portfolioSoldRow": {"description": "A sale row in the purchases list: quantity and price per share.", "placeholders": {"quantity": {"type": "String", "example": "10"}, "price": {"type": "String", "example": "182.50 USD"}}},
+  "subscribedInStore": "You already have a subscription through the App Store or Google Play. To change your plan, use the subscription settings of that store.",
+  "@subscribedInStore": {"description": "Shown on the desktop/web plans page when the account already has an active App Store or Google Play subscription, so a second (web) subscription is not started."},
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

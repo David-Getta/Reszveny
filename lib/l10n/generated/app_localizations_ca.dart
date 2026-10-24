@@ -2943,6 +2943,10 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Ja tens una subscripció a través de l’App Store o de Google Play. Per canviar de pla, fes servir la configuració de subscripcions d’aquella botiga.';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

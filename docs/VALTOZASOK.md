@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.299)
+# Változásjegyzék (0.2.130 → 0.2.300)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,24 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Fizetési események: a negyvennyolcadik kódátnézés javításai
+
+- **0.2.300**: a webes és a bolti előfizetés nem írja felül és nem szünteti meg egymást: a webes előfizetés
+  lemondása vagy megújulása nem veszi el a közben vett App Store / Google Play csomagot (a magasabb marad), és élő
+  bolti előfizetés mellé az app nem indít webeset (szól, hogy a boltban lehet váltani). A webes havi → éves
+  váltás után a hozzáférés egész évre szól (eddig egy hónap után megszűnt). Egy visszatérített, már elhasznált
+  elemzéscsomag tartozása a következő időszak keretéből megy le, nem zárja ki örökre az előfizetőt. Az első hónap
+  és az éves előfizetés utolsó napjai körül a keret nem nullázódik kétszer. Egy régebbi hónap visszatérítése nem
+  szünteti meg az azóta kifizetett időszakot, a részleges visszatérítés nem vonja vissza az egészet, és az új
+  Stripe-API számláinál is működik a visszavonás. A később kézbesített régebbi csomagváltás nem írja felül az
+  újabbat; a felváltott App Store-előfizetés régi tranzakciója nem hozza vissza az alacsonyabb csomagot. A bolt
+  türelmi ideje alatt (sikertelen megújítás) 16 napig megmarad a hozzáférés, a bolt által meghosszabbított vagy
+  visszavont visszatérítésű előfizetés újra érvényes, és a Google Play új vásárlási tokenje (csomagváltás,
+  újra-előfizetés) a régi gazdájához kerül. Androidon a csomagkártya az alapcsomag árát mutatja (nem egy
+  próbaidős ajánlatét), és a csomagváltás a meglévő előfizetést cseréli (nem indít második, párhuzamosan
+  számlázót). A boltba kerülő (kiadási) buildben nincs szimulált (demó) bolt: ha a bolt még nem ad
+  előfizetést, a csomagoldal azt mondja, hogy a fizetés most nem érhető el.
 
 ## Nyelvek és formátumok: a negyvenhatodik kódátnézés javításai
 

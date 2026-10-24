@@ -864,5 +864,6 @@
   "signOutAnyway": "Tulukanibe",
   "fileTooLarge": "Fayilo iyi ndi yayikulu kwambiri kuti itsegulidwe pano.",
   "portfolioAnnualSummaryYear": "Chidule cha pachaka {year}",
-  "portfolioSoldRow": "Zagulitsidwa {quantity} × {price}"
+  "portfolioSoldRow": "Zagulitsidwa {quantity} × {price}",
+  "subscribedInStore": "Muli kale ndi kulembetsa kudzera mu App Store kapena Google Play. Kuti musinthe dongosolo lanu, gwiritsani ntchito zokonda za kulembetsa za sitolo imeneyo."
 }

@@ -864,5 +864,6 @@
   "signOutAnyway": "Бо вуҷуди ин баромадан",
   "fileTooLarge": "Ин файл барои дар ин ҷо кушодан аз ҳад калон аст.",
   "portfolioAnnualSummaryYear": "Ҷамъбасти солона {year}",
-  "portfolioSoldRow": "Фурӯхта шуд {quantity} × {price}"
+  "portfolioSoldRow": "Фурӯхта шуд {quantity} × {price}",
+  "subscribedInStore": "Шумо аллакай тавассути App Store ё Google Play обуна доред. Барои иваз кардани тариф аз танзимоти обунаи ҳамон мағоза истифода баред."
 }

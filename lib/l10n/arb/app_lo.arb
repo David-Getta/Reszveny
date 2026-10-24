@@ -864,5 +864,6 @@
   "signOutAnyway": "ອອກຈາກລະບົບເລີຍ",
   "fileTooLarge": "ໄຟລ໌ນີ້ໃຫຍ່ເກີນໄປທີ່ຈະເປີດຢູ່ນີ້.",
   "portfolioAnnualSummaryYear": "ສະຫຼຸບປະຈຳປີ {year}",
-  "portfolioSoldRow": "ຂາຍແລ້ວ {quantity} × {price}"
+  "portfolioSoldRow": "ຂາຍແລ້ວ {quantity} × {price}",
+  "subscribedInStore": "ທ່ານມີການສະໝັກສະມາຊິກຜ່ານ App Store ຫຼື Google Play ຢູ່ແລ້ວ. ເພື່ອປ່ຽນແພັກເກັດ, ໃຫ້ໃຊ້ການຕັ້ງຄ່າການສະໝັກສະມາຊິກຂອງຮ້ານນັ້ນ."
 }

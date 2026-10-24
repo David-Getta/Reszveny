@@ -2954,6 +2954,10 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Adda payen ti subscription-mo babaen ti App Store wenno Google Play. Tapno sukatan ti planmo, usaren ti setting ti subscription iti dayta a store.';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

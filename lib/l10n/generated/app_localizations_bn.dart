@@ -2931,6 +2931,10 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'App Store বা Google Play-এর মাধ্যমে আপনার ইতিমধ্যেই একটি সাবস্ক্রিপশন আছে। আপনার প্ল্যান পরিবর্তন করতে সেই স্টোরের সাবস্ক্রিপশন সেটিংস ব্যবহার করুন।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

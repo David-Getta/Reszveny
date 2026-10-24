@@ -3000,6 +3000,10 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Už máte predplatné cez App Store alebo Google Play. Tarif zmeníte v nastaveniach predplatného v danom obchode.';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

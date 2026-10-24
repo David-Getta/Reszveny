@@ -864,5 +864,6 @@
   "signOutAnyway": "છતાં સાઇન આઉટ કરો",
   "fileTooLarge": "આ ફાઇલ અહીં ખોલવા માટે ખૂબ મોટી છે.",
   "portfolioAnnualSummaryYear": "{year}નો વાર્ષિક સારાંશ",
-  "portfolioSoldRow": "વેચ્યા {quantity} × {price}"
+  "portfolioSoldRow": "વેચ્યા {quantity} × {price}",
+  "subscribedInStore": "App Store અથવા Google Play દ્વારા તમારી પાસે પહેલેથી જ સબ્સ્ક્રિપ્શન છે. તમારો પ્લાન બદલવા માટે તે સ્ટોરના સબ્સ્ક્રિપ્શન સેટિંગનો ઉપયોગ કરો."
 }

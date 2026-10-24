@@ -2934,6 +2934,10 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Сизде App Store же Google Play аркылуу жазылуу мурунтан эле бар. Тарифиңизди өзгөртүү үчүн ошол дүкөндүн жазылуу жөндөөлөрүн колдонуңуз.';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

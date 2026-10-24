@@ -2931,6 +2931,10 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Du har redan en prenumeration via App Store eller Google Play. Använd prenumerationsinställningarna i den butiken för att ändra din plan.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

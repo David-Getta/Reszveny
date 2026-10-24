@@ -2945,6 +2945,10 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Aduna kay subscription pinaagi sa App Store o Google Play. Aron usbon ang imong plan, gamita ang mga setting sa subscription sa maong store.';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

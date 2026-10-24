@@ -2942,6 +2942,10 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Դուք արդեն ունեք բաժանորդագրություն App Store-ի կամ Google Play-ի միջոցով։ Պլանը փոխելու համար օգտագործեք այդ խանութի բաժանորդագրության կարգավորումները։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

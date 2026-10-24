@@ -864,5 +864,6 @@
   "signOutAnyway": "Dil gjithsesi",
   "fileTooLarge": "Ky skedar është shumë i madh për t’u hapur këtu.",
   "portfolioAnnualSummaryYear": "Përmbledhje vjetore {year}",
-  "portfolioSoldRow": "Shitur {quantity} × {price}"
+  "portfolioSoldRow": "Shitur {quantity} × {price}",
+  "subscribedInStore": "Ju keni tashmë një abonim përmes App Store ose Google Play. Për të ndryshuar planin, përdorni cilësimet e abonimit të atij dyqani."
 }

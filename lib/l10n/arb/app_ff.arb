@@ -864,5 +864,6 @@
   "signOutAnyway": "Seŋto tan",
   "fileTooLarge": "Ndee fiyannde ina mawni no feewi ngam udditde ɗoo.",
   "portfolioAnnualSummaryYear": "Ciimtol hitaande {year}",
-  "portfolioSoldRow": "Yeeyaama {quantity} × {price}"
+  "portfolioSoldRow": "Yeeyaama {quantity} × {price}",
+  "subscribedInStore": "A woodi abonmaa gila e App Store walla Google Play. Ngam waylude feere maa, huutoro teelte abonmaa bitik ngon."
 }

@@ -2930,6 +2930,10 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Танд App Store эсвэл Google Play-ээр авсан захиалга аль хэдийн байна. Багцаа солихын тулд тухайн дэлгүүрийн захиалгын тохиргоог ашиглана уу.';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

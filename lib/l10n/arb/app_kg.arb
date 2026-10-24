@@ -864,5 +864,6 @@
   "signOutAnyway": "Basika kaka",
   "fileTooLarge": "Fisye yai kele nene mingi sambu na kukangula yo awa.",
   "portfolioAnnualSummaryYear": "Nkufi ya mvula {year}",
-  "portfolioSoldRow": "Me tekama {quantity} × {price}"
+  "portfolioSoldRow": "Me tekama {quantity} × {price}",
+  "subscribedInStore": "Nge kele dezia ti abonnement na nzila ya App Store yovo Google Play. Sambu na kusoba forfait aku, sadila paramètres ya abonnement ya store yina."
 }

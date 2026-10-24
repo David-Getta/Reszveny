@@ -2940,6 +2940,10 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Ya tienes una suscripción a través de App Store o Google Play. Para cambiar de plan, usa los ajustes de suscripción de esa tienda.';
+
+  @override
   String get portfolioGoalSet => 'Fijar un objetivo';
 
   @override

@@ -864,5 +864,6 @@
   "signOutAnyway": "எப்படியும் வெளியேறு",
   "fileTooLarge": "இந்தக் கோப்பு இங்கே திறக்க முடியாத அளவுக்குப் பெரிதாக உள்ளது.",
   "portfolioAnnualSummaryYear": "{year} ஆண்டுச் சுருக்கம்",
-  "portfolioSoldRow": "விற்றது {quantity} × {price}"
+  "portfolioSoldRow": "விற்றது {quantity} × {price}",
+  "subscribedInStore": "App Store அல்லது Google Play மூலம் உங்களிடம் ஏற்கனவே சந்தா உள்ளது. உங்கள் திட்டத்தை மாற்ற, அந்த ஸ்டோரின் சந்தா அமைப்புகளைப் பயன்படுத்தவும்."
 }

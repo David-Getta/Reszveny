@@ -864,5 +864,6 @@
   "signOutAnyway": "Uma o na kũrĩ ũguo",
   "fileTooLarge": "Faili ĩno nĩ nene mũno gũtũma ĩhingũrwo haha.",
   "portfolioAnnualSummaryYear": "Ũhoro mũkuhĩ wa mwaka {year}",
-  "portfolioSoldRow": "Yendio {quantity} × {price}"
+  "portfolioSoldRow": "Yendio {quantity} × {price}",
+  "subscribedInStore": "Wĩ na ũiyandĩkithio wa App Store kana Google Play. Nĩguo ũgarũre mũbango waku, hũthĩra mĩtaratara ya ũiyandĩkithio ya store ĩyo."
 }

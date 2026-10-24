@@ -2922,6 +2922,10 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Bạn đã có gói đăng ký qua App Store hoặc Google Play. Để đổi gói, hãy dùng phần cài đặt gói đăng ký của cửa hàng đó.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

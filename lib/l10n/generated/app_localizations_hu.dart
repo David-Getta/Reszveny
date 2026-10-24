@@ -2929,6 +2929,10 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Már van előfizetésed az App Store-ban vagy a Google Playen. A csomagot az ottani előfizetés-beállításokban válthatod.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

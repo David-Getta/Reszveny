@@ -2953,6 +2953,10 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'O šetše o na le ngwadišo ka App Store goba Google Play. Go fetola leano la gago, šomiša dipeakanyo tša ngwadišo tša lebenkele leo.';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

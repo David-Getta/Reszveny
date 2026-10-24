@@ -864,5 +864,6 @@
   "signOutAnyway": "Yine de çıkış yap",
   "fileTooLarge": "Bu dosya burada açılamayacak kadar büyük.",
   "portfolioAnnualSummaryYear": "{year} yıllık özeti",
-  "portfolioSoldRow": "Satış {quantity} × {price}"
+  "portfolioSoldRow": "Satış {quantity} × {price}",
+  "subscribedInStore": "App Store veya Google Play üzerinden zaten bir aboneliğiniz var. Planınızı değiştirmek için o mağazanın abonelik ayarlarını kullanın."
 }

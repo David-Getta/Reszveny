@@ -221,7 +221,12 @@ class AppServices {
     this.billing =
         billing ??
         (platformStore
-            ? FallbackBillingService(primary: StoreBillingService(), fallback: _demoBilling(this.fx))
+            ? FallbackBillingService(
+                primary: StoreBillingService(),
+                fallback: _demoBilling(this.fx),
+                // A boltba kerülő (kiadási) buildben nincs szimulált vásárlás.
+                allowFallback: !kReleaseMode,
+              )
             : (b0 != null && acc != null)
             ? WebCheckoutBillingService(
                 backend: b0,

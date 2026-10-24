@@ -864,5 +864,6 @@
   "signOutAnyway": "بەهەرحاڵ بچۆ دەرەوە",
   "fileTooLarge": "ئەم فایلە زۆر گەورەیە بۆ کردنەوە لێرە.",
   "portfolioAnnualSummaryYear": "پوختەی ساڵانەی {year}",
-  "portfolioSoldRow": "فرۆشرا {quantity} × {price}"
+  "portfolioSoldRow": "فرۆشرا {quantity} × {price}",
+  "subscribedInStore": "تۆ پێشتر ئابوونەیەکت هەیە لە ڕێگەی App Store یان Google Play. بۆ گۆڕینی پلانەکەت، ڕێکخستنەکانی ئابوونە لەو فرۆشگایە بەکاربهێنە."
 }

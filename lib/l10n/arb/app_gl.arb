@@ -864,5 +864,6 @@
   "signOutAnyway": "Pechar sesión igualmente",
   "fileTooLarge": "Este ficheiro é demasiado grande para abrilo aquí.",
   "portfolioAnnualSummaryYear": "Resumo anual de {year}",
-  "portfolioSoldRow": "Vendido {quantity} × {price}"
+  "portfolioSoldRow": "Vendido {quantity} × {price}",
+  "subscribedInStore": "Xa tes unha subscrición a través da App Store ou de Google Play. Para cambiar de plan, usa a configuración de subscricións desa tenda."
 }

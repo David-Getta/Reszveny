@@ -2931,6 +2931,10 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'App Store veya Google Play üzerinden zaten bir aboneliğiniz var. Planınızı değiştirmek için o mağazanın abonelik ayarlarını kullanın.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

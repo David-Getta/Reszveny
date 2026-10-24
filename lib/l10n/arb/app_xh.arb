@@ -864,5 +864,6 @@
   "signOutAnyway": "Phuma noko",
   "fileTooLarge": "Le fayile inkulu kakhulu ukuba ivulwe apha.",
   "portfolioAnnualSummaryYear": "Isishwankathelo sonyaka ka-{year}",
-  "portfolioSoldRow": "Kuthengisiwe {quantity} × {price}"
+  "portfolioSoldRow": "Kuthengisiwe {quantity} × {price}",
+  "subscribedInStore": "Sele unomrhumo nge-App Store okanye nge-Google Play. Ukutshintsha isicwangciso sakho, sebenzisa iisetingi zomrhumo zaloo venkile."
 }

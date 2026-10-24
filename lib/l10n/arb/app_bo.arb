@@ -864,5 +864,6 @@
   "signOutAnyway": "གང་ལྟར་ཡང་ཕྱིར་འཐོན",
   "fileTooLarge": "ཡིག་ཆ་འདི་ཆེ་དྲགས་པས་འདིར་ཁ་ཕྱེ་མི་ཐུབ།",
   "portfolioAnnualSummaryYear": "{year} ལོའི་ལོ་འཁོར་བསྡུས་དོན",
-  "portfolioSoldRow": "བཙོངས་ཟིན་ {quantity} × {price}"
+  "portfolioSoldRow": "བཙོངས་ཟིན་ {quantity} × {price}",
+  "subscribedInStore": "ཁྱེད་ལ་ App Store ཡང་ན་ Google Play བརྒྱུད་ནས་མཁོ་ཉོ་ཞིག་སྔར་ནས་ཡོད། འཆར་གཞི་བསྒྱུར་བར་ཚོང་ཁང་དེའི་མཁོ་ཉོའི་སྒྲིག་འགོད་བེད་སྤྱོད་གནང་རོགས།"
 }

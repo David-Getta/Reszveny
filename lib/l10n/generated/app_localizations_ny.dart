@@ -2945,6 +2945,10 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Muli kale ndi kulembetsa kudzera mu App Store kapena Google Play. Kuti musinthe dongosolo lanu, gwiritsani ntchito zokonda za kulembetsa za sitolo imeneyo.';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

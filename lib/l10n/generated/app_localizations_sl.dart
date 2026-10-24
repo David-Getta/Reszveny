@@ -3002,6 +3002,10 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Že imate naročnino prek App Store ali Google Play. Paket lahko zamenjate v nastavitvah naročnin v tej trgovini.';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

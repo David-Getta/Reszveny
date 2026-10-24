@@ -2935,6 +2935,10 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Sizda App Store yoki Google Play orqali obuna allaqachon mavjud. Tarifni oʻzgartirish uchun oʻsha doʻkonning obuna sozlamalaridan foydalaning.';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

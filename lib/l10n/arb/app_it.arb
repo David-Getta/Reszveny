@@ -864,5 +864,6 @@
   "signOutAnyway": "Esci comunque",
   "fileTooLarge": "Questo file è troppo grande per essere aperto qui.",
   "portfolioAnnualSummaryYear": "Riepilogo annuale {year}",
-  "portfolioSoldRow": "Vendita {quantity} × {price}"
+  "portfolioSoldRow": "Vendita {quantity} × {price}",
+  "subscribedInStore": "Hai già un abbonamento tramite App Store o Google Play. Per cambiare piano, usa le impostazioni degli abbonamenti di quello store."
 }

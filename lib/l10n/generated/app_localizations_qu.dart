@@ -2948,6 +2948,10 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Ñam App Store utaq Google Play nisqawan suscripciónniyki kachkan. Planniykita tikranaykipaq, chay tiendapa suscripción allichayninkunata llamk\'achiy.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

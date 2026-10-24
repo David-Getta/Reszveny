@@ -864,5 +864,6 @@
   "signOutAnyway": "তবুও সাইন আউট করুন",
   "fileTooLarge": "এই ফাইলটি এখানে খোলার জন্য খুব বড়।",
   "portfolioAnnualSummaryYear": "{year}-এর বার্ষিক সারাংশ",
-  "portfolioSoldRow": "বিক্রি {quantity} × {price}"
+  "portfolioSoldRow": "বিক্রি {quantity} × {price}",
+  "subscribedInStore": "App Store বা Google Play-এর মাধ্যমে আপনার ইতিমধ্যেই একটি সাবস্ক্রিপশন আছে। আপনার প্ল্যান পরিবর্তন করতে সেই স্টোরের সাবস্ক্রিপশন সেটিংস ব্যবহার করুন।"
 }

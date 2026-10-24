@@ -2923,6 +2923,10 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'כבר יש לך מינוי דרך App Store או Google Play. כדי לשנות את המסלול, השתמשו בהגדרות המינויים של אותה חנות.';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

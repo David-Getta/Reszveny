@@ -2933,6 +2933,10 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Wowɔ subscription dedaw wɔ App Store anaa Google Play so. Sɛ wopɛ sɛ wosesa wo plan a, fa store no subscription nhyehyɛe so.';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

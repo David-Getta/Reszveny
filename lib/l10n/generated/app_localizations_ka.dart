@@ -2931,6 +2931,10 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'თქვენ უკვე გაქვთ გამოწერა App Store-ის ან Google Play-ის მეშვეობით. გეგმის შესაცვლელად გამოიყენეთ ამ მაღაზიის გამოწერის პარამეტრები.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

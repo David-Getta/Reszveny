@@ -2930,6 +2930,10 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Ou gen yon abònman deja atravè App Store oswa Google Play. Pou chanje plan ou, sèvi ak paramèt abònman magazen sa a.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

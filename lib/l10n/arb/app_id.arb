@@ -864,5 +864,6 @@
   "signOutAnyway": "Tetap keluar",
   "fileTooLarge": "File ini terlalu besar untuk dibuka di sini.",
   "portfolioAnnualSummaryYear": "Ringkasan tahunan {year}",
-  "portfolioSoldRow": "Terjual {quantity} × {price}"
+  "portfolioSoldRow": "Terjual {quantity} × {price}",
+  "subscribedInStore": "Anda sudah memiliki langganan melalui App Store atau Google Play. Untuk mengubah paket, gunakan pengaturan langganan di toko tersebut."
 }

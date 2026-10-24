@@ -864,5 +864,6 @@
   "signOutAnyway": "Bima kaka",
   "fileTooLarge": "Fisyé oyo eleki monene mpo na kofungola yango awa.",
   "portfolioAnnualSummaryYear": "Bokuse ya mbula {year}",
-  "portfolioSoldRow": "Etekami {quantity} × {price}"
+  "portfolioSoldRow": "Etekami {quantity} × {price}",
+  "subscribedInStore": "Ozali kala na abonnement na nzela ya App Store to Google Play. Mpo na kobongola forfait na yo, salelá ba-paramètre ya abonnement ya store yango."
 }

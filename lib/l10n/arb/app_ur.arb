@@ -864,5 +864,6 @@
   "signOutAnyway": "پھر بھی سائن آؤٹ کریں",
   "fileTooLarge": "یہ فائل یہاں کھولنے کے لیے بہت بڑی ہے۔",
   "portfolioAnnualSummaryYear": "{year} کا سالانہ خلاصہ",
-  "portfolioSoldRow": "فروخت شدہ {quantity} × {price}"
+  "portfolioSoldRow": "فروخت شدہ {quantity} × {price}",
+  "subscribedInStore": "آپ کے پاس پہلے سے App Store یا Google Play کے ذریعے سبسکرپشن موجود ہے۔ اپنا پلان تبدیل کرنے کے لیے اسی اسٹور کی سبسکرپشن کی ترتیبات استعمال کریں۔"
 }

@@ -864,5 +864,6 @@
   "signOutAnyway": "Tetep metu",
   "fileTooLarge": "File iki kegedhèn kanggo dibukak ing kene.",
   "portfolioAnnualSummaryYear": "Ringkesan taunan {year}",
-  "portfolioSoldRow": "Didol {quantity} × {price}"
+  "portfolioSoldRow": "Didol {quantity} × {price}",
+  "subscribedInStore": "Sampeyan wis duwe langganan liwat App Store utawa Google Play. Kanggo ngganti paket, gunakake setelan langganan ing toko kasebut."
 }

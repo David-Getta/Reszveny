@@ -2939,6 +2939,10 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'App Store ಅಥವಾ Google Play ಮೂಲಕ ನೀವು ಈಗಾಗಲೇ ಚಂದಾದಾರಿಕೆ ಹೊಂದಿದ್ದೀರಿ. ನಿಮ್ಮ ಪ್ಲಾನ್ ಬದಲಾಯಿಸಲು, ಆ ಸ್ಟೋರ್‌ನ ಚಂದಾದಾರಿಕೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬಳಸಿ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

@@ -2952,6 +2952,10 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'O se o na le ingodiso ka App Store kapa Google Play. Ho fetola moralo wa hao, sebedisa ditlhophiso tsa ingodiso tsa lebenkele leo.';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

@@ -2947,6 +2947,10 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Duraan miseensummaa App Store ykn Google Play tiin qabda. Karoora kee jijjiiruuf, qindaa\'ina miseensummaa kuusaa sanaa fayyadami.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

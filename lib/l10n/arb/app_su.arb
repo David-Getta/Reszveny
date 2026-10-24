@@ -864,5 +864,6 @@
   "signOutAnyway": "Tetep kaluar",
   "fileTooLarge": "File ieu kagedéan pikeun dibuka di dieu.",
   "portfolioAnnualSummaryYear": "Kasimpulan taunan {year}",
-  "portfolioSoldRow": "Dijual {quantity} × {price}"
+  "portfolioSoldRow": "Dijual {quantity} × {price}",
+  "subscribedInStore": "Anjeun geus boga langganan ngaliwatan App Store atawa Google Play. Pikeun ngaganti pakét, paké setélan langganan di toko éta."
 }

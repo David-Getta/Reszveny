@@ -864,5 +864,6 @@
   "signOutAnyway": "Jáde bẹ́ẹ̀ náà",
   "fileTooLarge": "Fáìlì yìí ti tóbi jù láti ṣí níbí.",
   "portfolioAnnualSummaryYear": "Àkópọ̀ ọdún {year}",
-  "portfolioSoldRow": "Títà {quantity} × {price}"
+  "portfolioSoldRow": "Títà {quantity} × {price}",
+  "subscribedInStore": "O ti ní àsansílẹ̀ nípasẹ̀ App Store tàbí Google Play. Láti yí ìpele rẹ padà, lo ètò àsansílẹ̀ ilé ìtajà náà."
 }

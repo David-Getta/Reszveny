@@ -2891,6 +2891,10 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'በApp Store ወይም በGoogle Play በኩል የደንበኝነት ምዝገባ አስቀድመው አለዎት። ዕቅድዎን ለመቀየር የዚያን መደብር የምዝገባ ቅንብሮች ይጠቀሙ።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

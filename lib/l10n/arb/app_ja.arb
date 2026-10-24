@@ -864,5 +864,6 @@
   "signOutAnyway": "それでもサインアウト",
   "fileTooLarge": "このファイルは大きすぎるため、ここでは開けません。",
   "portfolioAnnualSummaryYear": "{year}年の年間サマリー",
-  "portfolioSoldRow": "売却 {quantity} × {price}"
+  "portfolioSoldRow": "売却 {quantity} × {price}",
+  "subscribedInStore": "すでにApp StoreまたはGoogle Playのサブスクリプションをお持ちです。プランの変更は、そのストアのサブスクリプション設定から行ってください。"
 }

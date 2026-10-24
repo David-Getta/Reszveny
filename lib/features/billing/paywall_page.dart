@@ -650,6 +650,8 @@ class _EventNote extends StatelessWidget {
     final (text, color) = switch (event.status) {
       BillingStatus.purchased || BillingStatus.restored => (l10n.purchaseSuccess, p.positive),
       BillingStatus.pending => (l10n.purchasePending, p.muted),
+      // Bolti előfizetés mellé nem indul webes (párhuzamosan számlázna).
+      BillingStatus.error when event.message == 'store_subscription' => (l10n.subscribedInStore, p.negative),
       BillingStatus.error => (l10n.purchaseFailed, p.negative),
       BillingStatus.canceled || BillingStatus.needsLogin => (l10n.purchaseCanceled, p.muted),
     };

@@ -864,5 +864,6 @@
   "signOutAnyway": "仍要退出登录",
   "fileTooLarge": "此文件过大，无法在此打开。",
   "portfolioAnnualSummaryYear": "{year}年度汇总",
-  "portfolioSoldRow": "卖出 {quantity} × {price}"
+  "portfolioSoldRow": "卖出 {quantity} × {price}",
+  "subscribedInStore": "你已通过 App Store 或 Google Play 订阅。如需更改计划，请使用该商店的订阅设置。"
 }

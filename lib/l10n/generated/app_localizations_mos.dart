@@ -2915,6 +2915,10 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'F ra tara abonmã App Store bɩ Google Play pʋgẽ. Fo sã n dat n tek f forfɛ wã, tũnu ne raag kãngã abonmã seglgã.';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

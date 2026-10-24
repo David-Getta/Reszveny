@@ -2949,6 +2949,10 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Olina dda okwewandiisa okuyita mu App Store oba Google Play. Okukyusa enteekateeka yo, kozesa ensengeka z’okwewandiisa ez’edduuka eryo.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

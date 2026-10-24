@@ -2923,6 +2923,10 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'अहाँ लग पहिनेसँ App Store वा Google Play द्वारा सदस्यता अछि। अपन प्लान बदलबाक लेल ओहि स्टोरक सदस्यता सेटिंग्सक उपयोग करू।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

@@ -864,5 +864,6 @@
   "signOutAnyway": "Sohoka uko biri kose",
   "fileTooLarge": "Iyi dosiye ni nini cyane ku buryo idashobora gufungurwa hano.",
   "portfolioAnnualSummaryYear": "Incamake y'umwaka wa {year}",
-  "portfolioSoldRow": "Byagurishijwe {quantity} × {price}"
+  "portfolioSoldRow": "Byagurishijwe {quantity} × {price}",
+  "subscribedInStore": "Usanzwe ufite ifatabuguzi binyuze kuri App Store cyangwa Google Play. Kugira ngo uhindure gahunda yawe, koresha igenamiterere ry'ifatabuguzi ry'iryo duka."
 }

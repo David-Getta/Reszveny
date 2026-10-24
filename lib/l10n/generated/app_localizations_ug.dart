@@ -2934,6 +2934,10 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'سىزدە App Store ياكى Google Play ئارقىلىق مۇشتەرىلىك ئاللىقاچان بار. پىلانىڭىزنى ئۆزگەرتىش ئۈچۈن شۇ دۇكاننىڭ مۇشتەرىلىك تەڭشىكىنى ئىشلىتىڭ.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

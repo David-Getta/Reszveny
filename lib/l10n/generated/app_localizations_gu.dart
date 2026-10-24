@@ -2927,6 +2927,10 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'App Store અથવા Google Play દ્વારા તમારી પાસે પહેલેથી જ સબ્સ્ક્રિપ્શન છે. તમારો પ્લાન બદલવા માટે તે સ્ટોરના સબ્સ્ક્રિપ્શન સેટિંગનો ઉપયોગ કરો.';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

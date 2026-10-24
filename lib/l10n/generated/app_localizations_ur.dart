@@ -2931,6 +2931,10 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'آپ کے پاس پہلے سے App Store یا Google Play کے ذریعے سبسکرپشن موجود ہے۔ اپنا پلان تبدیل کرنے کے لیے اسی اسٹور کی سبسکرپشن کی ترتیبات استعمال کریں۔';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

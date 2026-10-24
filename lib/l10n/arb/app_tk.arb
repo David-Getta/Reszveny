@@ -864,5 +864,6 @@
   "signOutAnyway": "Barybir çyk",
   "fileTooLarge": "Bu faýl bu ýerde açmak üçin örän uly.",
   "portfolioAnnualSummaryYear": "Ýyllyk jemleme {year}",
-  "portfolioSoldRow": "Satyldy {quantity} × {price}"
+  "portfolioSoldRow": "Satyldy {quantity} × {price}",
+  "subscribedInStore": "Siziň App Store ýa-da Google Play arkaly abunaňyz eýýäm bar. Tarifiňizi üýtgetmek üçin şol dükanyň abuna sazlamalaryny ulanyň."
 }

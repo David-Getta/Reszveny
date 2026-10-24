@@ -2930,6 +2930,10 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'App Store বা Google Playৰ জৰিয়তে আপোনাৰ ইতিমধ্যে এটা ছাবস্ক্ৰিপশ্বন আছে। আপোনাৰ প্লান সলনি কৰিবলৈ সেই ষ্ট\'ৰৰ ছাবস্ক্ৰিপশ্বন ছেটিংছ ব্যৱহাৰ কৰক।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

@@ -864,5 +864,6 @@
   "signOutAnyway": "Ta'us ba'i",
   "fileTooLarge": "Faayiliin kun asitti banamuuf baay'ee guddaadha.",
   "portfolioAnnualSummaryYear": "Cuunfaa waggaa {year}",
-  "portfolioSoldRow": "Gurgurame {quantity} × {price}"
+  "portfolioSoldRow": "Gurgurame {quantity} × {price}",
+  "subscribedInStore": "Duraan miseensummaa App Store ykn Google Play tiin qabda. Karoora kee jijjiiruuf, qindaa'ina miseensummaa kuusaa sanaa fayyadami."
 }

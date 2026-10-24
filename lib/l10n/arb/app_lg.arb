@@ -864,5 +864,6 @@
   "signOutAnyway": "Fuluma wadde kiri kityo",
   "fileTooLarge": "Fayiro eno nnene nnyo okugiggulira wano.",
   "portfolioAnnualSummaryYear": "Ebifunze by'omwaka {year}",
-  "portfolioSoldRow": "Watunda {quantity} × {price}"
+  "portfolioSoldRow": "Watunda {quantity} × {price}",
+  "subscribedInStore": "Olina dda okwewandiisa okuyita mu App Store oba Google Play. Okukyusa enteekateeka yo, kozesa ensengeka z’okwewandiisa ez’edduuka eryo."
 }

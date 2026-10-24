@@ -864,5 +864,6 @@
   "signOutAnyway": "پوءِ به سائن آئوٽ ڪريو",
   "fileTooLarge": "هي فائل هتي کولڻ لاءِ تمام وڏي آهي.",
   "portfolioAnnualSummaryYear": "{year} جو سالياني خلاصو",
-  "portfolioSoldRow": "وڪرو ٿيو {quantity} × {price}"
+  "portfolioSoldRow": "وڪرو ٿيو {quantity} × {price}",
+  "subscribedInStore": "توهان وٽ اڳ ۾ ئي App Store يا Google Play ذريعي سبسڪرپشن آهي. پنهنجو پلان مٽائڻ لاءِ ان اسٽور جون سبسڪرپشن سيٽنگون استعمال ڪريو."
 }

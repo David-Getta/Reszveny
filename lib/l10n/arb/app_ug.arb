@@ -864,5 +864,6 @@
   "signOutAnyway": "يەنىلا چىقىش",
   "fileTooLarge": "بۇ ھۆججەت بەك چوڭ، بۇ يەردە ئاچقىلى بولمايدۇ.",
   "portfolioAnnualSummaryYear": "{year}-يىللىق خۇلاسە",
-  "portfolioSoldRow": "سېتىلدى {quantity} × {price}"
+  "portfolioSoldRow": "سېتىلدى {quantity} × {price}",
+  "subscribedInStore": "سىزدە App Store ياكى Google Play ئارقىلىق مۇشتەرىلىك ئاللىقاچان بار. پىلانىڭىزنى ئۆزگەرتىش ئۈچۈن شۇ دۇكاننىڭ مۇشتەرىلىك تەڭشىكىنى ئىشلىتىڭ."
 }

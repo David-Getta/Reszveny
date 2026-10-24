@@ -864,5 +864,6 @@
   "signOutAnyway": "မည်သို့ပင်ဖြစ်စေ ထွက်ရန်",
   "fileTooLarge": "ဤဖိုင်သည် ဤနေရာတွင် ဖွင့်ရန် ကြီးလွန်းသည်။",
   "portfolioAnnualSummaryYear": "{year} ခုနှစ် နှစ်ပတ်လည် အနှစ်ချုပ်",
-  "portfolioSoldRow": "ရောင်းပြီး {quantity} × {price}"
+  "portfolioSoldRow": "ရောင်းပြီး {quantity} × {price}",
+  "subscribedInStore": "သင့်တွင် App Store သို့မဟုတ် Google Play မှတစ်ဆင့် စာရင်းသွင်းမှု ရှိပြီးသားဖြစ်သည်။ အစီအစဉ်ကို ပြောင်းရန် ထိုစတိုး၏ စာရင်းသွင်းမှု ဆက်တင်များကို အသုံးပြုပါ။"
 }

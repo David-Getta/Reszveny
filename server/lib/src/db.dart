@@ -17,6 +17,9 @@ class Entitlement {
     this.extra = 0,
     this.trialStartedAt,
     this.paidThrough,
+    this.source,
+    this.grant,
+    this.sourceAt,
   });
 
   final String userId;
@@ -31,6 +34,22 @@ class Entitlement {
   /// rövid türelmi idő után, ha nem jött megújítás – a csomag megszűnik.
   /// `null`: régi sor, ismeretlen (az időszakok tovább gördülnek).
   DateTime? paidThrough;
+
+  /// A csomagot adó előfizetés (`stripe:<előfizetés>`, `app_store:<eredeti tranzakció>`,
+  /// `google_play:<token>`): egy másik forrás (pl. egy párhuzamos webes előfizetés)
+  /// eseménye nem szüntetheti meg és nem írhatja felül. `null`: régi sor vagy ismeretlen.
+  String? source;
+
+  /// A mostani kifizetett időszakot fizető tranzakció (Stripe-fizetés, bolti tranzakció):
+  /// egy korábbi időszak visszatérítése nem vonja vissza az azóta külön kifizetettet.
+  String? grant;
+
+  /// A forrás legutóbb alkalmazott eseményének ideje (Unix-másodperc): a később
+  /// kézbesített régebbi esemény nem írja felül az újabbat.
+  int? sourceAt;
+
+  /// Bolti előfizetés (a bolt saját türelmi idejével, l. [Store.storeGrace]).
+  bool get fromStore => source != null && !source!.startsWith('stripe:');
 
   /// A kliens `EntitlementState.fromJson` formátuma.
   Map<String, dynamic> toJson() => {
@@ -180,6 +199,10 @@ class Store {
     // A bolti értesítésekhez: melyik vásárlás (eredeti tranzakció / token) kié.
     final ecols = _db.select('PRAGMA table_info(entitlements)').map((r) => r['name'] as String).toSet();
     if (!ecols.contains('paid_through')) _db.execute('ALTER TABLE entitlements ADD COLUMN paid_through TEXT');
+    // A csomagot adó előfizetés és a mostani időszakot fizető tranzakció (l. [Entitlement.source]).
+    if (!ecols.contains('source')) _db.execute('ALTER TABLE entitlements ADD COLUMN source TEXT');
+    if (!ecols.contains('grant_key')) _db.execute('ALTER TABLE entitlements ADD COLUMN grant_key TEXT');
+    if (!ecols.contains('source_at')) _db.execute('ALTER TABLE entitlements ADD COLUMN source_at INTEGER');
     final pcols = _db.select('PRAGMA table_info(purchases)').map((r) => r['name'] as String).toSet();
     if (!pcols.contains('link_key')) _db.execute('ALTER TABLE purchases ADD COLUMN link_key TEXT');
     // A beváltó postafiókjának lenyomata: a fiók törlése után is megmarad (újra-beváltás ellen).
@@ -505,6 +528,9 @@ class Store {
       extra: r['extra'] as int,
       trialStartedAt: _date(r['trial_started_at']),
       paidThrough: _date(r['paid_through']),
+      source: r['source'] as String?,
+      grant: r['grant_key'] as String?,
+      sourceAt: r['source_at'] as int?,
     );
     return _rolled(e);
   }
@@ -513,12 +539,17 @@ class Store {
   /// megújítás (a bolt fizetési újrapróbálkozása, késő értesítés).
   static const paidGrace = Duration(days: 3);
 
+  /// Bolti előfizetésnél a bolt fizetési türelmi ideje alatt (az App Store 16, a Google Play
+  /// akár 30 napig próbálja újra) megmarad a hozzáférés: helyreálláskor a bolt az eredeti
+  /// megújulási naptól számláz, így a felhasználó ezekért a napokért is fizet.
+  static const storeGrace = Duration(days: 16);
+
   /// Fizetős időszak görgetése: lejárt időszak után új, nullázott felhasználással
   /// – amíg az előfizetés ki van fizetve; utána a csomag megszűnik.
   Entitlement _rolled(Entitlement e) {
     if (e.tier == null || e.tier == 'trial' || e.periodEnd == null) return e;
     final now = clock();
-    if (e.paidThrough case final paid? when !now.isBefore(paid.add(paidGrace))) {
+    if (e.paidThrough case final paid? when !now.isBefore(paid.add(e.fromStore ? storeGrace : paidGrace))) {
       e
         ..tier = null
         ..periodEnd = paid;
@@ -528,6 +559,13 @@ class Store {
     if (now.isBefore(e.periodEnd!)) return e;
     // A kifizetett időszak végéig ér a keret: új keret csak a megújítással jön.
     if (e.paidThrough case final paid? when !e.periodEnd!.isBefore(paid)) return e;
+    // A kifizetett időszak vége már közel (egy hónapon belül): a keret odáig tart, újat a
+    // megújítás nyit – különben a lejárat előtt kétszer nullázódna (az éves előfizetés
+    // utolsó napjainál, vagy ha a Stripe számlája egy nappal a becsült hónap után zár).
+    if (e.paidThrough case final paid? when paid.difference(e.periodEnd!) < const Duration(days: PlanSpec.periodDays)) {
+      save(e..periodEnd = paid);
+      return e;
+    }
     var start = e.periodEnd!;
     var end = start.add(const Duration(days: PlanSpec.periodDays));
     while (!now.isBefore(end)) {
@@ -581,11 +619,13 @@ class Store {
 
   void save(Entitlement e) {
     _db.execute(
-      '''INSERT INTO entitlements (user_id, tier, period_start, period_end, used, extra, trial_started_at, paid_through)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+      '''INSERT INTO entitlements (user_id, tier, period_start, period_end, used, extra, trial_started_at, paid_through,
+           source, grant_key, source_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
          ON CONFLICT(user_id) DO UPDATE SET tier=excluded.tier, period_start=excluded.period_start,
            period_end=excluded.period_end, used=excluded.used, extra=excluded.extra,
-           trial_started_at=excluded.trial_started_at, paid_through=excluded.paid_through''',
+           trial_started_at=excluded.trial_started_at, paid_through=excluded.paid_through,
+           source=excluded.source, grant_key=excluded.grant_key, source_at=excluded.source_at''',
       [
         e.userId,
         e.tier,
@@ -595,6 +635,9 @@ class Store {
         e.extra,
         e.trialStartedAt?.toUtc().toIso8601String(),
         e.paidThrough?.toUtc().toIso8601String(),
+        e.source,
+        e.grant,
+        e.sourceAt,
       ],
     );
   }

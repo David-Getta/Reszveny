@@ -864,5 +864,6 @@
   "signOutAnyway": "Toka hata hivyo",
   "fileTooLarge": "Faili hii ni kubwa mno kufunguliwa hapa.",
   "portfolioAnnualSummaryYear": "Muhtasari wa mwaka {year}",
-  "portfolioSoldRow": "Umeuza {quantity} × {price}"
+  "portfolioSoldRow": "Umeuza {quantity} × {price}",
+  "subscribedInStore": "Tayari una usajili kupitia App Store au Google Play. Ili kubadilisha mpango wako, tumia mipangilio ya usajili ya duka hilo."
 }

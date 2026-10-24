@@ -864,5 +864,6 @@
   "signOutAnyway": "خروج در هر حال",
   "fileTooLarge": "این فایل برای باز شدن در اینجا بیش از حد بزرگ است.",
   "portfolioAnnualSummaryYear": "خلاصه سالانه {year}",
-  "portfolioSoldRow": "فروش {quantity} × {price}"
+  "portfolioSoldRow": "فروش {quantity} × {price}",
+  "subscribedInStore": "شما از قبل از طریق App Store یا Google Play اشتراک دارید. برای تغییر طرح خود، از تنظیمات اشتراک همان فروشگاه استفاده کنید."
 }

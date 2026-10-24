@@ -864,5 +864,6 @@
   "signOutAnyway": "Tanca la sessió igualment",
   "fileTooLarge": "Aquest fitxer és massa gran per obrir-lo aquí.",
   "portfolioAnnualSummaryYear": "Resum anual de {year}",
-  "portfolioSoldRow": "Venda {quantity} × {price}"
+  "portfolioSoldRow": "Venda {quantity} × {price}",
+  "subscribedInStore": "Ja tens una subscripció a través de l’App Store o de Google Play. Per canviar de pla, fes servir la configuració de subscripcions d’aquella botiga."
 }

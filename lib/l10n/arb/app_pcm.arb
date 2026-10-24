@@ -864,5 +864,6 @@
   "signOutAnyway": "Sign out anyhow",
   "fileTooLarge": "Dis file too big to open for here.",
   "portfolioAnnualSummaryYear": "Yearly summary {year}",
-  "portfolioSoldRow": "Sold {quantity} × {price}"
+  "portfolioSoldRow": "Sold {quantity} × {price}",
+  "subscribedInStore": "You don already get subscription through App Store or Google Play. To change your plan, use di subscription settings for dat store."
 }

@@ -2890,6 +2890,10 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'ድሮ ብመንገዲ App Store ወይ Google Play ምዝገባ ኣለኩም። መደብኩም ንምቕያር፡ ናይቲ መኽዘን ቅጥዕታት ምዝገባ ተጠቐሙ።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

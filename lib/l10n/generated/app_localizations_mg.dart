@@ -2954,6 +2954,10 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Efa manana famandrihana amin\'ny alalan\'ny App Store na Google Play ianao. Raha hanova ny tolotrao, ampiasao ny fikirakiran\'ny famandrihana ao amin\'io fivarotana io.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

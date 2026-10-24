@@ -864,5 +864,6 @@
   "signOutAnyway": "Ag-sign out latta",
   "fileTooLarge": "Dakkel unay daytoy a file tapno maluktan ditoy.",
   "portfolioAnnualSummaryYear": "Tinawen a pakabuklan ti {year}",
-  "portfolioSoldRow": "Nailako {quantity} × {price}"
+  "portfolioSoldRow": "Nailako {quantity} × {price}",
+  "subscribedInStore": "Adda payen ti subscription-mo babaen ti App Store wenno Google Play. Tapno sukatan ti planmo, usaren ti setting ti subscription iti dayta a store."
 }

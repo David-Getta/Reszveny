@@ -2929,6 +2929,10 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'तपाईंसँग पहिल्यै App Store वा Google Play मार्फत सदस्यता छ। आफ्नो योजना परिवर्तन गर्न त्यो स्टोरको सदस्यता सेटिङ प्रयोग गर्नुहोस्।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

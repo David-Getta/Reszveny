@@ -864,5 +864,6 @@
   "signOutAnyway": "ତଥାପି ସାଇନ ଆଉଟ କରନ୍ତୁ",
   "fileTooLarge": "ଏହି ଫାଇଲଟି ଏଠାରେ ଖୋଲିବା ପାଇଁ ବହୁତ ବଡ଼।",
   "portfolioAnnualSummaryYear": "{year} ବାର୍ଷିକ ସାରାଂଶ",
-  "portfolioSoldRow": "ବିକ୍ରି ହେଲା {quantity} × {price}"
+  "portfolioSoldRow": "ବିକ୍ରି ହେଲା {quantity} × {price}",
+  "subscribedInStore": "App Store କିମ୍ବା Google Play ମାଧ୍ୟମରେ ଆପଣଙ୍କର ପୂର୍ବରୁ ଏକ ସବସ୍କ୍ରିପସନ ଅଛି। ଆପଣଙ୍କ ପ୍ଲାନ ବଦଳାଇବାକୁ ସେହି ଷ୍ଟୋରର ସବସ୍କ୍ରିପସନ ସେଟିଂସ ବ୍ୟବହାର କରନ୍ତୁ।"
 }

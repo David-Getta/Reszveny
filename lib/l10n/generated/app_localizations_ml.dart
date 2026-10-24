@@ -2945,6 +2945,10 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'App Store അല്ലെങ്കിൽ Google Play വഴി നിങ്ങൾക്ക് ഇതിനകം ഒരു സബ്സ്ക്രിപ്ഷൻ ഉണ്ട്. പ്ലാൻ മാറ്റാൻ ആ സ്റ്റോറിന്റെ സബ്സ്ക്രിപ്ഷൻ ക്രമീകരണങ്ങൾ ഉപയോഗിക്കുക.';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

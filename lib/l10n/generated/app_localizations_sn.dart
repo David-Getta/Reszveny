@@ -2943,6 +2943,10 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Une kunyoresa kare kuburikidza neApp Store kana Google Play. Kuti uchinje chirongwa chako, shandisa marongero ekunyoresa echitoro ichocho.';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

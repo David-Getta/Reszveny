@@ -2943,6 +2943,10 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Ju keni tashmë një abonim përmes App Store ose Google Play. Për të ndryshuar planin, përdorni cilësimet e abonimit të atij dyqani.';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

@@ -864,5 +864,6 @@
   "signOutAnyway": "לצאת בכל זאת",
   "fileTooLarge": "הקובץ הזה גדול מדי לפתיחה כאן.",
   "portfolioAnnualSummaryYear": "סיכום שנתי {year}",
-  "portfolioSoldRow": "נמכרו {quantity} × {price}"
+  "portfolioSoldRow": "נמכרו {quantity} × {price}",
+  "subscribedInStore": "כבר יש לך מינוי דרך App Store או Google Play. כדי לשנות את המסלול, השתמשו בהגדרות המינויים של אותה חנות."
 }

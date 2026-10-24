@@ -864,5 +864,6 @@
   "signOutAnyway": "Tomēr izrakstīties",
   "fileTooLarge": "Šis fails ir pārāk liels, lai to atvērtu šeit.",
   "portfolioAnnualSummaryYear": "{year}. gada kopsavilkums",
-  "portfolioSoldRow": "Pārdots {quantity} × {price}"
+  "portfolioSoldRow": "Pārdots {quantity} × {price}",
+  "subscribedInStore": "Jums jau ir abonements, izmantojot App Store vai Google Play. Lai mainītu plānu, izmantojiet šī veikala abonementa iestatījumus."
 }

@@ -2930,6 +2930,10 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'App Store किंवा Google Play द्वारे तुमचे आधीच सबस्क्रिप्शन आहे. तुमचा प्लॅन बदलण्यासाठी त्या स्टोअरच्या सबस्क्रिप्शन सेटिंग्जचा वापर करा.';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

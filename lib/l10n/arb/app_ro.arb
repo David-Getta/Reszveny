@@ -864,5 +864,6 @@
   "signOutAnyway": "Deconectează-te oricum",
   "fileTooLarge": "Acest fișier este prea mare pentru a fi deschis aici.",
   "portfolioAnnualSummaryYear": "Rezumat anual {year}",
-  "portfolioSoldRow": "Vândut {quantity} × {price}"
+  "portfolioSoldRow": "Vândut {quantity} × {price}",
+  "subscribedInStore": "Ai deja un abonament prin App Store sau Google Play. Pentru a schimba planul, folosește setările de abonament ale magazinului respectiv."
 }

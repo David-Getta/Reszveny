@@ -864,5 +864,6 @@
   "signOutAnyway": "Do le eme ko",
   "fileTooLarge": "Faɛl sia lolo akpa be woaʋui le afi sia.",
   "portfolioAnnualSummaryYear": "Ƒe {year} ƒe ƒuƒoƒo",
-  "portfolioSoldRow": "Wodzrae {quantity} × {price}"
+  "portfolioSoldRow": "Wodzrae {quantity} × {price}",
+  "subscribedInStore": "Subscription le asiwò xoxo to App Store alo Google Play dzi. Be nàtrɔ wò plan la, zã store ma ƒe subscription ɖoɖowo."
 }

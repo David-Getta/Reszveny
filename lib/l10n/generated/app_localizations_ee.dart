@@ -2937,6 +2937,10 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Subscription le asiwò xoxo to App Store alo Google Play dzi. Be nàtrɔ wò plan la, zã store ma ƒe subscription ɖoɖowo.';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

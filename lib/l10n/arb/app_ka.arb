@@ -864,5 +864,6 @@
   "signOutAnyway": "მაინც გასვლა",
   "fileTooLarge": "ეს ფაილი ზედმეტად დიდია აქ გასახსნელად.",
   "portfolioAnnualSummaryYear": "წლიური შეჯამება – {year}",
-  "portfolioSoldRow": "გაიყიდა {quantity} × {price}"
+  "portfolioSoldRow": "გაიყიდა {quantity} × {price}",
+  "subscribedInStore": "თქვენ უკვე გაქვთ გამოწერა App Store-ის ან Google Play-ის მეშვეობით. გეგმის შესაცვლელად გამოიყენეთ ამ მაღაზიის გამოწერის პარამეტრები."
 }

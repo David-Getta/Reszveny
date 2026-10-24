@@ -864,5 +864,6 @@
   "signOutAnyway": "Vẫn đăng xuất",
   "fileTooLarge": "Tệp này quá lớn để mở tại đây.",
   "portfolioAnnualSummaryYear": "Tổng kết năm {year}",
-  "portfolioSoldRow": "Đã bán {quantity} × {price}"
+  "portfolioSoldRow": "Đã bán {quantity} × {price}",
+  "subscribedInStore": "Bạn đã có gói đăng ký qua App Store hoặc Google Play. Để đổi gói, hãy dùng phần cài đặt gói đăng ký của cửa hàng đó."
 }

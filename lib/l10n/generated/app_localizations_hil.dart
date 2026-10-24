@@ -2950,6 +2950,10 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'May subscription ka na paagi sa App Store ukon Google Play. Para baylohan ang imo plan, gamita ang mga setting sang subscription sang amo nga store.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

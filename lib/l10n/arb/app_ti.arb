@@ -864,5 +864,6 @@
   "signOutAnyway": "ብዘየገድስ ውጻእ",
   "fileTooLarge": "እዚ ፋይል ኣብዚ ንምኽፋቱ ኣዝዩ ዓብዩ እዩ።",
   "portfolioAnnualSummaryYear": "ዓመታዊ ጽማቝ {year}",
-  "portfolioSoldRow": "ተሸይጡ {quantity} × {price}"
+  "portfolioSoldRow": "ተሸይጡ {quantity} × {price}",
+  "subscribedInStore": "ድሮ ብመንገዲ App Store ወይ Google Play ምዝገባ ኣለኩም። መደብኩም ንምቕያር፡ ናይቲ መኽዘን ቅጥዕታት ምዝገባ ተጠቐሙ።"
 }

@@ -2935,6 +2935,10 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Tayari una usajili kupitia App Store au Google Play. Ili kubadilisha mpango wako, tumia mipangilio ya usajili ya duka hilo.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

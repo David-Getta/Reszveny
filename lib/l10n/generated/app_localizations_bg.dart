@@ -2934,6 +2934,10 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Вече имате абонамент чрез App Store или Google Play. За да смените плана си, използвайте настройките за абонаменти на този магазин.';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

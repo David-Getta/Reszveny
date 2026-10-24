@@ -2942,6 +2942,10 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Horay ayaad u leedahay rukummo aad ku heshay App Store ama Google Play. Si aad u beddesho qorshahaaga, isticmaal dejinta rukummada ee dukaankaas.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

@@ -2933,6 +2933,10 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Anda sudah mempunyai langganan melalui App Store atau Google Play. Untuk menukar pelan anda, gunakan tetapan langganan gedung tersebut.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

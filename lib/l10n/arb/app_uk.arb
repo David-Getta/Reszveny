@@ -864,5 +864,6 @@
   "signOutAnyway": "Усе одно вийти",
   "fileTooLarge": "Цей файл завеликий, щоб відкрити його тут.",
   "portfolioAnnualSummaryYear": "Річний підсумок {year}",
-  "portfolioSoldRow": "Продано {quantity} × {price}"
+  "portfolioSoldRow": "Продано {quantity} × {price}",
+  "subscribedInStore": "У вас уже є підписка через App Store або Google Play. Щоб змінити тариф, скористайтеся налаштуваннями підписок у цьому магазині."
 }

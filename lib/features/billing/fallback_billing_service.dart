@@ -8,13 +8,18 @@ import 'billing_service.dart';
 /// vagy még nincs felvéve benne egyetlen előfizetés sem (fejlesztés, saját
 /// build, TestFlight előtt), a szimulált boltra vált, hogy az app így is
 /// kipróbálható legyen. Amint a bolt termékeket ad, végig a boltot használja.
+///
+/// [allowFallback] nélkül (kiadási build) nincs demó bolt: ha a bolt nem ad előfizetést,
+/// a fizetés „nem érhető el” – egy szimulált vásárlás a boltban jóváhagyott appban nem
+/// jelenhet meg (és nem is írhat jóvá csomagot).
 class FallbackBillingService implements BillingService {
-  FallbackBillingService({required this.primary, required this.fallback}) {
+  FallbackBillingService({required this.primary, required this.fallback, this.allowFallback = true}) {
     _subs = [primary.events.listen(_events.add), fallback.events.listen(_events.add)];
   }
 
   final BillingService primary;
   final BillingService fallback;
+  final bool allowFallback;
   final _events = StreamController<BillingEvent>.broadcast();
   late final List<StreamSubscription<BillingEvent>> _subs;
 
@@ -47,7 +52,9 @@ class FallbackBillingService implements BillingService {
       }
     } catch (e) {
       debugPrint('A bolt nem érhető el: $e');
+      if (!allowFallback) rethrow;
     }
+    if (!allowFallback) throw StateError('A bolt nem ad előfizetést');
     _useFallback = true;
     return fallback.products();
   }

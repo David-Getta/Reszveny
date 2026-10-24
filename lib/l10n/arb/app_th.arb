@@ -864,5 +864,6 @@
   "signOutAnyway": "ออกจากระบบเลย",
   "fileTooLarge": "ไฟล์นี้มีขนาดใหญ่เกินกว่าจะเปิดที่นี่ได้",
   "portfolioAnnualSummaryYear": "สรุปรายปี {year}",
-  "portfolioSoldRow": "ขาย {quantity} × {price}"
+  "portfolioSoldRow": "ขาย {quantity} × {price}",
+  "subscribedInStore": "คุณมีการสมัครสมาชิกผ่าน App Store หรือ Google Play อยู่แล้ว หากต้องการเปลี่ยนแพ็กเกจ ให้ใช้การตั้งค่าการสมัครสมาชิกของสโตร์นั้น"
 }

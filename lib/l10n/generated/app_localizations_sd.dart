@@ -2922,6 +2922,10 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'توهان وٽ اڳ ۾ ئي App Store يا Google Play ذريعي سبسڪرپشن آهي. پنهنجو پلان مٽائڻ لاءِ ان اسٽور جون سبسڪرپشن سيٽنگون استعمال ڪريو.';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

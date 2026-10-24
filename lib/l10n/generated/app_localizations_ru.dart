@@ -3003,6 +3003,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'У вас уже есть подписка через App Store или Google Play. Чтобы сменить тариф, воспользуйтесь настройками подписок в этом магазине.';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

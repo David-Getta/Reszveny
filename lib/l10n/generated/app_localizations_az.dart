@@ -2932,6 +2932,10 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'App Store və ya Google Play vasitəsilə artıq abunəliyiniz var. Planınızı dəyişmək üçün həmin mağazanın abunəlik ayarlarından istifadə edin.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

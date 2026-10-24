@@ -2935,6 +2935,10 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Шумо аллакай тавассути App Store ё Google Play обуна доред. Барои иваз кардани тариф аз танзимоти обунаи ҳамон мағоза истифода баред.';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

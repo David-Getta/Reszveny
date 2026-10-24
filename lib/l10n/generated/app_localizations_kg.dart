@@ -2946,6 +2946,10 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'Nge kele dezia ti abonnement na nzila ya App Store yovo Google Play. Sambu na kusoba forfait aku, sadila paramètres ya abonnement ya store yina.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

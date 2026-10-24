@@ -2954,6 +2954,10 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get subscribedInStore =>
+      'O setse o na le ikwadisetso ka App Store kgotsa Google Play. Go fetola leano la gago, dirisa dithulaganyo tsa ikwadisetso tsa lebenkele leo.';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override
