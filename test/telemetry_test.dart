@@ -93,6 +93,11 @@ void main() {
       ),
       'GET https://x.io/v1/me?<…> failed for <email> key <…>',
     );
+    // Nemzetközi cím és a felhasználónév a fájlútban is.
+    expect(
+      Telemetry.scrub('to jános.kovács@példa.hu at /Users/janos/Library/x.dart and C:\\Users\\Kovács János\\a.txt'),
+      'to <email> at /Users/<user>/Library/x.dart and C:\\Users\\<user>\\a.txt',
+    );
   });
 
   testWidgets('the home screen asks once; the answer is kept and can be changed in Settings', (tester) async {

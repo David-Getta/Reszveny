@@ -6,6 +6,7 @@ import 'package:shelf/shelf.dart';
 import 'package:test/test.dart';
 import 'package:whatstock_server/src/api.dart';
 import 'package:whatstock_server/src/db.dart';
+import 'package:whatstock_server/src/mailer.dart';
 import 'package:whatstock_server/src/purchase_verifier.dart';
 import 'package:whatstock_server/src/stripe.dart';
 
@@ -136,5 +137,22 @@ void main() {
     api.housekeeping();
     expect(store.database.select('SELECT * FROM error_reports'), isEmpty);
     expect(store.database.select('SELECT * FROM daily_users'), isEmpty);
+  });
+
+  test('a failed send does not write the recipient address into the log', () async {
+    final mailer = ResendMailer(
+      apiKey: 'k',
+      from: 'WhatStock <no-reply@whatstock.app>',
+      client: MockClient(
+        (_) async => http.Response(
+          '{"name":"validation_error","message":"Invalid `to` field: jános.kovács@példa.hu is not valid"}',
+          422,
+        ),
+      ),
+    );
+    await expectLater(
+      mailer.send('jános.kovács@példa.hu', subject: 's', text: 't'),
+      throwsA(predicate((e) => '$e'.contains('422') && !'$e'.contains('példa'))),
+    );
   });
 }

@@ -104,12 +104,21 @@ class Telemetry {
 
   static String _clip(String s, int max) => clipText(s, max);
 
-  static final _email = RegExp(r'[\w.+-]+@[\w-]+\.[\w.-]+');
+  // Ékezetes (nemzetközi) címek is: a `\w` csak ASCII.
+  static final _email = RegExp(r'''[^\s@<>()\[\]{}"',;:/\\]+@[^\s@<>()\[\]{}"',;:/\\]+\.[^\s@<>()\[\]{}"',;:/\\]+''');
   static final _secret = RegExp(r'[A-Za-z0-9_\-]{32,}');
   static final _query = RegExp(r'\?[^\s)]*');
 
-  /// E-mail-címek, hosszú tokenek és URL-paraméterek kitakarása a hibaszövegből.
+  /// A saját mappa a fájlútban a felhasználónevet hordozza (macOS, Linux, Windows).
+  /// (Windows alatt a név szóközt is tartalmazhat: a következő elválasztóig.)
+  static final _home = RegExp(r'(/(?:Users|home)/)[^/\s]+|(\\Users\\)[^\\\r\n]+', caseSensitive: false);
+
+  /// E-mail-címek, felhasználónevek a fájlutakban, hosszú tokenek és URL-paraméterek
+  /// kitakarása a hibaszövegből.
   @visibleForTesting
-  static String scrub(String s) =>
-      s.replaceAll(_email, '<email>').replaceAll(_query, '?<…>').replaceAll(_secret, '<…>');
+  static String scrub(String s) => s
+      .replaceAll(_email, '<email>')
+      .replaceAllMapped(_home, (m) => '${m[1] ?? m[2]}<user>')
+      .replaceAll(_query, '?<…>')
+      .replaceAll(_secret, '<…>');
 }

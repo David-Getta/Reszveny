@@ -45,6 +45,14 @@ class ResendMailer implements Mailer {
   /// Egy elakadt hívás ne tartsa fel örökre a riasztás- és a levélküldő kört.
   static const timeout = Duration(seconds: 20);
 
+  static final _address = RegExp(r'''[^\s@<>()"',;:]+@[^\s@<>()"',;:]+''');
+
+  /// A szolgáltató hibaválasza a naplóba: rövidítve, a benne idézett címek nélkül.
+  static HttpException failure(http.Response res) {
+    final body = res.body.replaceAll(_address, '<email>');
+    return HttpException('Resend ${res.statusCode}: ${body.length > 300 ? '${body.substring(0, 300)}…' : body}');
+  }
+
   @override
   Future<void> sendLoginCode(String email, String code) async {
     final res = await _client
@@ -61,7 +69,7 @@ class ResendMailer implements Mailer {
           }),
         )
         .timeout(timeout);
-    if (res.statusCode >= 300) throw HttpException('Resend ${res.statusCode}: ${res.body}');
+    if (res.statusCode >= 300) throw failure(res);
   }
 
   @override
@@ -79,6 +87,6 @@ class ResendMailer implements Mailer {
           }),
         )
         .timeout(timeout);
-    if (res.statusCode >= 300) throw HttpException('Resend ${res.statusCode}: ${res.body}');
+    if (res.statusCode >= 300) throw failure(res);
   }
 }
