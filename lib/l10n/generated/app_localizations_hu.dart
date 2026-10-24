@@ -18,7 +18,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get homeHint =>
-      'Részvényigazolás, brókerapp képernyője, újság vagy céglogó – bármi, ami azonosít egy részvényt.';
+      'Részvényokirat, brókerapp képernyője, újság vagy céglogó – bármi, ami azonosít egy részvényt.';
 
   @override
   String get takePhoto => 'Fotó készítése';
@@ -33,7 +33,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get enterTickerManually => 'Ticker megadása kézzel';
 
   @override
-  String get tickerInputLabel => 'Ticker szimbólum';
+  String get tickerInputLabel => 'Tickerszimbólum';
 
   @override
   String get tickerInputHint => 'pl. AAPL';
@@ -256,10 +256,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get labelGrossMargin => 'Bruttó árrés';
 
   @override
-  String get labelOperatingMargin => 'Működési árrés';
+  String get labelOperatingMargin => 'Működési marzs';
 
   @override
-  String get labelNetMargin => 'Nettó árrés';
+  String get labelNetMargin => 'Nettó profitmarzs';
 
   @override
   String get labelRoe => 'Sajáttőke-arányos megtérülés';
@@ -298,7 +298,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get dividendNone => 'Az elmúlt 12 hónapban nem fizetett osztalékot.';
 
   @override
-  String get dividendOnYourShares => 'A te részvényeidre, évente';
+  String get dividendOnYourShares => 'A részvényeid után évente';
 
   @override
   String get labelConsensus => 'Konszenzus';
@@ -459,7 +459,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String hotkeyHint(String shortcut) {
-    return 'Nyomd le bárhol a $shortcut billentyűkombinációt, és előugrik a WhatStock.';
+    return 'Bárhol előhozhatod a WhatStockot ezzel a billentyűkombinációval: $shortcut.';
   }
 
   @override
@@ -491,7 +491,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get aiIntro =>
-      'Részletes, AI által írt áttekintés: a friss hírek összefoglalója, az üzleti modell, az erősségek, a kockázatok és a rejtett tényezők, az értékeltség, egy árfolyam-kilátás pszichológiai, szociológiai, technikai és makro szempontú szcenáriókkal, valamint hogy mire érdemes figyelni.';
+      'Részletes, AI által írt áttekintés: a friss hírek összefoglalója, az üzleti modell, az erősségek, a kockázatok és a rejtett tényezők, az értékeltség, egy árfolyam-kilátás pszichológiai, szociológiai, technikai és makro szempontú szcenáriókkal, valamint az, hogy mire érdemes figyelni.';
 
   @override
   String get aiGenerate => 'Elemzés készítése';
@@ -562,7 +562,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get sectionStatements => 'Pénzügyi kimutatások (éves)';
 
   @override
-  String get labelFiscalYear => 'Pénzügyi év';
+  String get labelFiscalYear => 'Üzleti év';
 
   @override
   String get labelRevenue => 'Árbevétel';
@@ -656,7 +656,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String updateAvailable(String version) {
-    return 'Elérhető a $version verzió.';
+    return 'Új verzió érhető el: $version.';
   }
 
   @override
@@ -991,7 +991,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get signOut => 'Kijelentkezés';
 
   @override
-  String get notSignedIn => 'Nincs bejelentkezve';
+  String get notSignedIn => 'Nem vagy bejelentkezve';
 
   @override
   String get accountBenefit =>
@@ -1022,7 +1022,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get resendCode => 'Új kód küldése';
 
   @override
-  String get useDifferentEmail => 'Másik e-mail-cím';
+  String get useDifferentEmail => 'Másik e-mail-cím használata';
 
   @override
   String get errInvalidCode => 'A kód hibás vagy lejárt.';
@@ -1065,7 +1065,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String hotkeyHintDoubleOption(String shortcut) {
-    return 'Nyomd le bárhol a $shortcut billentyűkombinációt, vagy nyomd meg kétszer az Option gombot, és előugrik a WhatStock.';
+    return 'Bárhol előhozhatod a WhatStockot ezzel a billentyűkombinációval: $shortcut, vagy az Option gomb kétszeri gyors lenyomásával.';
   }
 
   @override
@@ -1113,11 +1113,11 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioEmpty =>
-      'Még üres. Nyiss meg egy részvényt, és koppints a „Hozzáadás a portfólióhoz” gombra, hogy kövesd, amid van.';
+      'Még üres. Nyiss meg egy részvényt, és koppints a „Hozzáadás a portfólióhoz” gombra, hogy nyomon kövesd a befektetéseidet.';
 
   @override
   String get portfolioLocalNote =>
-      'Ezen a készüléken marad, és a fiókodban, ha be vagy jelentkezve. Az összesítés ECB-árfolyamon számol; az árak késhetnek.';
+      'Ezen a készüléken marad, és a fiókodban, ha be vagy jelentkezve. Az összesítés az EKB referencia-árfolyamaival számol; az árak késhetnek.';
 
   @override
   String get addToPortfolio => 'Hozzáadás a portfólióhoz';
@@ -1178,7 +1178,7 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get portfolioYourPosition => 'A pozícióm';
+  String get portfolioYourPosition => 'A pozíciód';
 
   @override
   String get portfolioPurchases => 'Vételek';
@@ -1188,7 +1188,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioExcluded =>
-      'Az ár vagy árfolyam nélküli pozíciók kimaradnak az összesítésből.';
+      'Az ár vagy devizaárfolyam nélküli pozíciók kimaradnak az összesítésből.';
 
   @override
   String get priceAlerts => 'Árfolyam-riasztások';
@@ -1202,10 +1202,10 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get alertKindAbove => 'Emelkedik e fölé';
+  String get alertKindAbove => 'Egy ár fölé emelkedik';
 
   @override
-  String get alertKindBelow => 'Esik e alá';
+  String get alertKindBelow => 'Egy ár alá esik';
 
   @override
   String get alertKindMove => 'Nagyot mozdul egy nap alatt';
@@ -1275,7 +1275,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String alertHitMove(String symbol, String percent) {
-    return '$symbol ma $percent mozdult';
+    return '$symbol ma $percent-ot mozdult';
   }
 
   @override
@@ -1311,7 +1311,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get deleteAccountBody =>
-      'A fiókod és minden, amit a szerveren tárolunk (e-mail, keret, használat), véglegesen törlődik, a fel nem használt elemzések elvesznek. A böngészőben fizetett előfizetést azonnal lemondjuk; az App Store-os vagy Google Play-es előfizetést a bolt beállításaiban kell lemondanod.';
+      'A fiókod és minden, amit a szerveren tárolunk (e-mail, keret, használat), véglegesen törlődik, és a fel nem használt elemzések elvesznek. A böngészőben fizetett előfizetést azonnal lemondjuk; az App Store-os vagy Google Play-es előfizetést a bolt beállításaiban kell lemondanod.';
 
   @override
   String get deleteLocalData =>
@@ -1438,7 +1438,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String analysisDeleted(String symbol) {
-    return '$symbol elemzés törölve';
+    return '$symbol-elemzés törölve';
   }
 
   @override
@@ -1517,7 +1517,7 @@ class AppLocalizationsHu extends AppLocalizations {
       other: '$count extra elemzést',
       one: '1 extra elemzést',
     );
-    return 'A WhatStockkal elemzem a részvényeket: lefotózod, és az AI elmagyarázza. A $code kóddal kapsz $_temp0.';
+    return 'A WhatStockkal elemzem a részvényeket: lefotózod, és az AI elmagyarázza. A kódommal ($code) kapsz $_temp0.';
   }
 
   @override
@@ -1585,7 +1585,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get telemetrySettingHint =>
-      'Milyen gyakran használod az egyes funkciókat, és a hibajelentések – személyes adatok, keresések és elemzések tartalma nélkül.';
+      'A funkciók használatának gyakorisága és a hibajelentések – személyes adatok, keresések és elemzések tartalma nélkül.';
 
   @override
   String get askButton => 'Kérdezz az elemzésről';
@@ -1668,7 +1668,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get eventsEmpty =>
-      'A következő 90 napban nincs dátumos esemény. Adj hozzá kedvenceket vagy portfólió-tételeket, és itt látod a gyorsjelentéseik dátumát; a rögzített osztalékokból a várható következő kifizetés is ide kerül.';
+      'A következő 90 napban nincs dátumos esemény. Adj hozzá kedvenceket vagy részvényeket a portfóliódhoz, és itt látod a gyorsjelentéseik dátumát; a rögzített osztalékokból a várható következő kifizetés is ide kerül.';
 
   @override
   String get compareTitle => 'Összehasonlítás';
@@ -1684,7 +1684,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get compareHint =>
-      'A fő számok egymás mellett; soronként a legjobb érték kiemelve. Az összegek a részvények saját devizájában.';
+      'A fő számok egymás mellett; soronként a legjobb érték kiemelve. Az összegek minden részvénynél a saját pénznemében szerepelnek.';
 
   @override
   String get compareNoAnalysis => 'Még nincs elemzés';
@@ -1774,15 +1774,15 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String syncLast(String time) {
-    return 'Utolsó szinkron: $time';
+    return 'Utolsó szinkronizálás: $time';
   }
 
   @override
-  String get syncNow => 'Szinkron most';
+  String get syncNow => 'Szinkronizálás most';
 
   @override
   String get syncFailed =>
-      'A szinkron nem sikerült. Később automatikusan újrapróbálja.';
+      'A szinkronizálás nem sikerült. Az app később automatikusan újrapróbálja.';
 
   @override
   String get alertEmailTitle => 'E-mail, ha egy riasztás teljesül';
@@ -1888,7 +1888,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioRealizedHint =>
-      'Az eladások a legrégebbi vételeidből fogynak (FIFO), a mai árfolyamon átváltva. Az adóbevalláshoz a brókered kimutatását használd.';
+      'Az eladásokat először a legrégebbi vételeidből vonjuk le (FIFO), a mai árfolyamon átváltva. Az adóbevalláshoz a brókered kimutatását használd.';
 
   @override
   String staleNewResults(String symbol, String date) {
@@ -2047,7 +2047,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get watchSortGainers => 'Legnagyobb emelkedők elöl';
 
   @override
-  String get watchSortLosers => 'Legnagyobb esők elöl';
+  String get watchSortLosers => 'Legnagyobb vesztesek elöl';
 
   @override
   String get watchSortName => 'Ticker szerint (A–Z)';
@@ -2127,11 +2127,11 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get dividendRemindersTitle => 'Osztalék-emlékeztető';
+  String get dividendRemindersTitle => 'Osztalékemlékeztető';
 
   @override
   String get dividendRemindersSubtitle =>
-      'Értesítés a várható osztalék napján a rögzített kifizetéseid ritmusából, hogy rögzíthesd';
+      'Értesítés azon a napon, amikorra a rögzített kifizetéseid ritmusa alapján osztalék várható, hogy rögzíthesd';
 
   @override
   String get earningsRemindersTitle => 'Gyorsjelentés-emlékeztető';
@@ -2438,19 +2438,19 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get whatIfTitle => 'Mi lett volna, ha befektetsz?';
+  String get whatIfTitle => 'Mi lett volna, ha befektettél volna?';
 
   @override
   String get whatIfAmount => 'Összeg';
 
   @override
   String whatIfResult(String amount, String period) {
-    return '$period ezelőtt befektetett $amount ma ennyit érne';
+    return '${period}vel ezelőtt befektetett $amount ma ennyit érne';
   }
 
   @override
   String get whatIfNote =>
-      'Csak az árfolyam alapján: az osztalék, a díjak és az adó nincs benne. A múltbeli hozam nem jelzi előre a jövőbelit.';
+      'Csak az árfolyam alapján: az osztalék, a díjak és az adó nincsenek benne. A múltbeli hozam nem jelzi előre a jövőbelit.';
 
   @override
   String get watchShare => 'Lista megosztása';
@@ -2635,7 +2635,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String portfolioGoalEta(String rate, String year) {
-    return 'Ha az éves hozam marad ($rate), kb. $year táján éred el.';
+    return 'Ha az éves hozam ($rate) megmarad, $year táján éred el.';
   }
 
   @override
@@ -2643,7 +2643,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get glossMaxDrawdown =>
-      'A részvényeid értékének legnagyobb esése egy korábbi csúcsról egy későbbi mélypontig, a vételeid és eladásaid hatása nélkül (időarányosan). Megmutatja, mekkora visszaesést élt már át a portfóliód.';
+      'A részvényeid értékének legnagyobb esése egy korábbi csúcsról egy későbbi mélypontig, a vételeid és eladásaid hatása nélkül (idősúlyozottan). Megmutatja, mekkora visszaesést élt már át a portfóliód.';
 
   @override
   String watchSince(String date) {
@@ -2651,11 +2651,11 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get portfolioSampleTry => 'Kipróbálom egy minta-portfólióval';
+  String get portfolioSampleTry => 'Kipróbálom egy mintaportfólióval';
 
   @override
   String get portfolioSampleBanner =>
-      'Ez egy minta-portfólió. Mellé veheted a saját vételeidet, vagy eltávolíthatod.';
+      'Ez egy mintaportfólió. Mellé veheted a saját vételeidet, vagy eltávolíthatod.';
 
   @override
   String get portfolioSampleRemove => 'Minta eltávolítása';
@@ -2693,7 +2693,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get glossTwrYtd =>
-      'Időarányos hozam az év elejétől (vagy az első vételtől, ha az idén volt): minden nap az aznap birtokolt részvények változása számít, és a napok összeláncolódnak – a befizetés és a kivét nem hozam, így összevethető egy indexszel. Alatta a választott index ugyanerre az időszakra.';
+      'Idősúlyozott hozam az év elejétől (vagy az első vételtől, ha az idén volt): minden nap az aznap birtokolt részvények változása számít, és a napok összeláncolódnak – a befizetés és a kivét nem hozam, így összevethető egy indexszel. Alatta a választott index ugyanerre az időszakra.';
 
   @override
   String alertDistance(String price, String percent) {
@@ -2701,7 +2701,7 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get watchSortSince => 'Mióta figyeled szerint';
+  String get watchSortSince => 'Változás a hozzáadás óta';
 
   @override
   String get portfolioTodayMovers => 'Ma leginkább mozgott:';
@@ -2721,7 +2721,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lotNoteBought => 'Vétel';
 
   @override
-  String get positionHeld => 'Tartod';
+  String get positionHeld => 'Tartási idő';
 
   @override
   String durationMonths(int months) {
@@ -2879,13 +2879,13 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get syncTooLarge =>
-      'Az adataid túl nagyok a fiókos szinkronhoz. Törölj a már nem szükséges tranzakciók vagy jegyzetek közül, és újra megpróbálja.';
+      'Az adataid túl nagyok ahhoz, hogy a fiókoddal szinkronizáljuk őket. Törölj a már nem szükséges tranzakciók vagy jegyzetek közül, és az app újra megpróbálja.';
 
   @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override
-  String get portfolioGoalTitle => 'Portfólió-cél';
+  String get portfolioGoalTitle => 'Portfóliócél';
 
   @override
   String portfolioGoalProgress(String percent, String amount) {
@@ -2956,7 +2956,7 @@ class AppLocalizationsHu extends AppLocalizations {
       'AI-összefoglaló a cég eredményközleményéből és a weben talált sajtóvisszhangból. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.';
 
   @override
-  String get compareLastSurprise => 'Utolsó negyedév EPS a várthoz képest';
+  String get compareLastSurprise => 'Utolsó negyedéves EPS a várthoz képest';
 
   @override
   String get compareNextReport => 'Következő jelentés';
@@ -3115,12 +3115,12 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String moveWhyTitle(String percent) {
-    return '$percent ma';
+    return 'Ma $percent';
   }
 
   @override
   String get moveWhyNote =>
-      'AI-magyarázat a weben talált mai hírekből; a valódi ok ismeretlen vagy más is lehet. Nem befektetési tanács. A napi kérdéskeretből fogyaszt, nem elemzést.';
+      'AI-magyarázat a weben talált mai hírekből; a valódi ok ismeretlen vagy más is lehet. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.';
 
   @override
   String get sectionTechnical => 'Technikai kép';
@@ -3209,11 +3209,11 @@ class AppLocalizationsHu extends AppLocalizations {
   String get signalCrossedBelow => 'a 200 napos átlaga alá került';
 
   @override
-  String get signalAlertsTitle => 'Technikai jelzés-értesítés';
+  String get signalAlertsTitle => 'Értesítés technikai jelzésekről';
 
   @override
   String get signalAlertsSubtitle =>
-      'Naponta egyszer, ha egy figyelt részvény RSI-je túladott vagy túlvett lesz, vagy az ára átlépi a 200 napos átlagát.';
+      'Naponta egyszer, ha egy figyelt részvény az RSI alapján túladottá vagy túlvetté válik, vagy az ára átlépi a 200 napos átlagát.';
 
   @override
   String get signalAlertsNotification => 'Technikai jelzések';
@@ -3232,7 +3232,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get portfolioCash => 'Készpénz';
 
   @override
-  String get portfolioCashTitle => 'Készpénz-egyenleg';
+  String get portfolioCashTitle => 'Készpénzegyenleg';
 
   @override
   String get portfolioCashHint =>
@@ -3244,7 +3244,7 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get portfolioCashEdit => 'Készpénz-egyenleg megadása';
+  String get portfolioCashEdit => 'Készpénzegyenleg megadása';
 
   @override
   String get portfolioDividendsByMonth => 'Havonta';

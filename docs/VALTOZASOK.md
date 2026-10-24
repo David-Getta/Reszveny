@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.290)
+# Változásjegyzék (0.2.130 → 0.2.291)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,16 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Magyar szövegek: nyelvi átnézés
+
+- **0.2.291**: 51 magyar felületi szöveg javítva egy nyelvi átnézés után: ragozás a változó részek mellett („5 évvel
+  ezelőtt”, „+5,2%-ot mozdult”, névelő nélküli verzió-, kód- és billentyűkombináció-szövegek), pénzügyi szakszavak
+  (idősúlyozott hozam, nettó profitmarzs, működési marzs, üzleti év, EKB), egybeírás (mintaportfólió, portfóliócél,
+  osztalékemlékeztető, készpénzegyenleg, tickerszimbólum), a „szinkron” helyett „szinkronizálás”, egységes tegező
+  megszólítás („Nem vagy bejelentkezve”, „A pozíciód”), természetesebb mondatok (Mi lett volna, ha befektettél volna?,
+  Tartási idő, Legnagyobb vesztesek elöl, Egy ár fölé emelkedik / alá esik). A szerveroldali mutatómagyarázatok is
+  frissültek.
 
 ## App: versenyhelyzetek – a harmincötödik kódátnézés javításai
 

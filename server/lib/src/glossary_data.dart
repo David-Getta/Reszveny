@@ -66,11 +66,11 @@ const glossaryEntries = <String, List<(String, String)>>{
       'Az árbevétel mekkora része marad meg a termékek közvetlen költsége után. A magas érték gyakran árazási erőt jelez.',
     ),
     (
-      'Működési árrés',
+      'Működési marzs',
       'Az árbevétel mekkora része marad meg a működés (bérek, bérleti díj, marketing) után, kamat és adó előtt.',
     ),
     (
-      'Nettó árrés',
+      'Nettó profitmarzs',
       'Az árbevétel mekkora része lesz végső nyereség. 20% azt jelenti, hogy minden 100 egység bevételből 20 a profit.',
     ),
     (
@@ -111,11 +111,11 @@ const glossaryEntries = <String, List<(String, String)>>{
     ),
     (
       'Idei hozam',
-      'Időarányos hozam az év elejétől (vagy az első vételtől, ha az idén volt): minden nap az aznap birtokolt részvények változása számít, és a napok összeláncolódnak – a befizetés és a kivét nem hozam, így összevethető egy indexszel. Alatta a választott index ugyanerre az időszakra.',
+      'Idősúlyozott hozam az év elejétől (vagy az első vételtől, ha az idén volt): minden nap az aznap birtokolt részvények változása számít, és a napok összeláncolódnak – a befizetés és a kivét nem hozam, így összevethető egy indexszel. Alatta a választott index ugyanerre az időszakra.',
     ),
     (
       'Legnagyobb visszaesés',
-      'A részvényeid értékének legnagyobb esése egy korábbi csúcsról egy későbbi mélypontig, a vételeid és eladásaid hatása nélkül (időarányosan). Megmutatja, mekkora visszaesést élt már át a portfóliód.',
+      'A részvényeid értékének legnagyobb esése egy korábbi csúcsról egy későbbi mélypontig, a vételeid és eladásaid hatása nélkül (idősúlyozottan). Megmutatja, mekkora visszaesést élt már át a portfóliód.',
     ),
   ],
   'en': [
