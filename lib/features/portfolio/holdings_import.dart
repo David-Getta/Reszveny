@@ -88,6 +88,7 @@ Future<void> showHoldingsImport(BuildContext context) async {
         } catch (_) {}
       }
       var ccy = storedCurrency(currency ?? 'USD'), price = h.averagePrice!;
+      if (ccy == 'GBX') await services.portfolio.fixLegacyPence(h.symbol, pencePrice: price);
       // Egy ticker tételei egy pénznemben: a meglévő pozícióéban, a mai árfolyamon átváltva.
       if (services.portfolio.currencyOf(h.symbol) case final held? when held != ccy) {
         if ((await services.fx.rate(ccy, held))?.rate case final r? when r.isFinite && r > 0) {

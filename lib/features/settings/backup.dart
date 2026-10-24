@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import '../../app_services.dart';
 import '../../core/app_preferences.dart';
 import '../../core/share/save_file.dart';
+import '../../core/util/tombstones.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../notes/notes_store.dart';
 import '../portfolio/portfolio_store.dart';
@@ -141,13 +142,33 @@ class Backup {
         if (!cashNow.containsKey(e.key)) e.key: e.value,
     };
     final goalsNow = AppPreferences.parseGoals(now['goals']);
+    // Célarányok: a mostaniak maradnak, a mentés a hiányzó tickert pótolja (most bélyegezve,
+    // hogy egy korábbi helyi beállítás vagy törlés mellett is visszajöjjön).
+    final targets = {...AppPreferences.parseTargets(backup['targets']), ...AppPreferences.parseTargets(now['targets'])};
+    // A most is meglévő riasztásnál a mentett példány csak akkor számít, ha később
+    // szerkesztették: egy régi (szerkesztési idő nélküli) mentés teljesült példánya ne
+    // kapcsolja ki az azóta újraélesített riasztást.
+    final alertsNow = {
+      for (final m in (now['alerts'] as List? ?? const []))
+        if (m is Map) '${m['id']}': parseStamp(m['edited']),
+    };
+    final alertsBack = [
+      for (final m in (backup['alerts'] as List? ?? const []))
+        if (m is! Map ||
+            !alertsNow.containsKey('${m['id']}') ||
+            switch ((parseStamp(m['edited']), alertsNow['${m['id']}'])) {
+              (final saved?, final mine) => mine == null || saved.isAfter(mine),
+              _ => false,
+            })
+          m,
+    ];
     final fromBackup = {
       ...backup,
       for (final key in _tombstoneFields) key: const <String, String>{},
-      // A célarányok idő nélkül: a mostaniak maradnak, a mentés csak a hiányzó tickert pótolja.
-      'targets_at': null,
+      'targets': targets,
+      'targets_at': stamp,
       for (final key in ['lots', 'dividends', 'splits']) key: reviveList(backup[key], 'deleted'),
-      'alerts': reviveList(backup['alerts'], 'alerts_deleted'),
+      'alerts': reviveList(alertsBack, 'alerts_deleted'),
       'notes': notes,
       'cash': cash,
       'cash_at': {for (final c in cash.keys) c: stamp},

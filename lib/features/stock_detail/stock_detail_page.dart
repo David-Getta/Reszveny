@@ -885,7 +885,10 @@ List<ChartLevel> chartLevels(BuildContext context, String symbol, String? curren
   // Sok riasztásnál csak a mostani árhoz legközelebbiek: a grafikon olvasható marad.
   if (price != null) alertLevels.sort((a, b) => (a - price).abs().compareTo((b - price).abs()));
   return [
-    if (position != null && position.quantity > 0 && (currency == null || position.currency == currency))
+    // GBp és GBX ugyanaz (a tárolt tétel a nagybetűs kódot kapja).
+    if (position != null &&
+        position.quantity > 0 &&
+        (currency == null || position.currency == storedCurrency(currency)))
       ChartLevel(price: position.averageCost, label: l10n.chartAvgCost, color: p.accent),
     for (final level in alertLevels.take(maxChartAlertLevels))
       ChartLevel(price: level, label: l10n.chartAlertLevel, color: p.muted),

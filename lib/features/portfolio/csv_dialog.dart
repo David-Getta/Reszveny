@@ -15,6 +15,7 @@ import 'bulk_stops.dart';
 import 'holdings_import.dart';
 import 'cash_dialog.dart';
 import 'portfolio_csv.dart';
+import 'portfolio_store.dart' show storedCurrency;
 import 'portfolio_valuation.dart';
 
 /// A portfólió menüje: exportálás CSV-be (megosztással), importálás beillesztett sorokból.
@@ -168,6 +169,10 @@ Future<void> showPortfolioImport(BuildContext context) async {
   final isins = parsed.isins;
   if (isins.isNotEmpty) messenger.showSnackBar(SnackBar(content: Text(l10n.loadingData)));
   final resolved = isins.isEmpty ? parsed : parsed.withSymbols(await resolveIsins(services.marketData.search, isins));
+  // A régi, fontnak címkézett pennyárak előbb GBX-re javítva (lásd `fixLegacyPence`).
+  for (final l in resolved.lots) {
+    if (storedCurrency(l.currency) == 'GBX') await services.portfolio.fixLegacyPence(l.symbol, pencePrice: l.price);
+  }
   // Egy ticker tételei egy pénznemben: a más pénznemű sor a napja árfolyamán átváltva.
   final aligned = await resolved.inOneCurrency(
     services.portfolio.currencyOf,

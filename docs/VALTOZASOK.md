@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.295)
+# Változásjegyzék (0.2.130 → 0.2.296)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Frissítés régebbi változatról: a negyvenkettedik kódátnézés javításai
+
+- **0.2.296**: ha egy újabb app-változat a fiókba olyan adatot ír, amelyet ez a változat még nem ismer (új
+  riasztásfajta, új mező egy tranzakción, új adatcsoport), a régebbi eszköz szinkronja már nem törli ki: megőrzi
+  és visszaküldi. A bolgár levában rögzített készpénz, tétel, osztalék és cél (2026 előtt ez volt a bolgár
+  alapértelmezés) a rögzített árfolyamon euróként számol tovább, nem esik ki az összegekből. A régebbi app által
+  fontnak címkézett, pennyben rögzített londoni vételek egy új pennyes vételnél GBX-re javulnak (nem keverednek
+  fontra váltott tételekkel); a grafikon átlagár-vonala és a „te osztalékod” sor a GBp/GBX részvényeknél is
+  látszik. A biztonsági mentés visszaállítása a hiányzó célarányokat is visszahozza, és egy régi mentés teljesült
+  riasztása nem kapcsolja ki az azóta újraélesítettet. A szerveren a régi (lenyomat nélküli) ajánlókód-beváltás a
+  fiók törlése után is megakadályozza, hogy ugyanaz a postafiók újra beváltson.
 
 ## Fiókváltás: a negyvenegyedik kódátnézés javításai
 

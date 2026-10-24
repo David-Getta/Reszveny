@@ -66,8 +66,14 @@ class FxService extends ChangeNotifier {
     if (code == 'GBp' || u == 'GBX') return ('GBP', 0.01);
     if (code == 'ZAc' || u == 'ZAC') return ('ZAR', 0.01);
     if (u == 'ILA') return ('ILS', 0.01);
+    // A bolgár leva 2026 óta euró (az ECB már nem jegyzi): a régebben levában rögzített
+    // készpénz, tétel és osztalék a rögzített átváltási árfolyamon számol tovább.
+    if (u == 'BGN') return ('EUR', 1 / bgnPerEur);
     return (u, 1);
   }
+
+  /// A leva rögzített átváltási árfolyama (1 euró = 1,95583 leva).
+  static const bgnPerEur = 1.95583;
 
   static bool isSupported(String? code) => code != null && supportedCurrencies.contains(major(code).$1);
 

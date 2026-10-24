@@ -54,6 +54,13 @@ class SyncService extends ChangeNotifier {
   static const _lastKey = 'sync_last';
   static const _emailKey = 'sync_email';
   static const _dirtyKey = 'sync_dirty';
+  static const _foreignKey = 'sync_foreign';
+
+  /// A fiókcsomag ebben a változatban ismeretlen részei (egy újabb app írta őket):
+  /// felső szintű mezők, nem értelmezhető tételek (pl. egy új riasztásfajta) és a tételek
+  /// ismeretlen mezői. A feltöltés visszaírja őket ([withForeign]), így egy régebbi eszköz
+  /// szinkronja nem törli ki azt, amit egy újabb vett fel.
+  Map<String, dynamic> _foreign = const {};
 
   DateTime? _last;
   String? _syncedEmail;
@@ -106,6 +113,8 @@ class SyncService extends ChangeNotifier {
       _last = DateTime.tryParse(prefs.getString(_lastKey) ?? '');
       _syncedEmail = prefs.getString(_emailKey);
       _dirty = prefs.getBool(_dirtyKey) ?? false;
+      final foreign = jsonDecode(prefs.getString(_foreignKey) ?? '{}');
+      if (foreign is Map) _foreign = foreign.cast<String, dynamic>();
     } catch (_) {}
     for (final l in [preferences, portfolio, alerts, notes]) {
       l.addListener(_localChanged);
@@ -148,11 +157,103 @@ class SyncService extends ChangeNotifier {
   Future<void> forgetAccount() async {
     _syncedEmail = null;
     _last = null;
+    _foreign = const {};
     try {
       final prefs = await SharedPreferences.getInstance();
       await prefs.remove(_emailKey);
       await prefs.remove(_lastKey);
+      await prefs.remove(_foreignKey);
     } catch (_) {}
+  }
+
+  /// A letöltött fiókcsomag ismeretlen részeinek megjegyzése (a következő feltöltéshez).
+  Future<void> _rememberForeign(Map<String, dynamic>? data) async {
+    _foreign = data == null ? const {} : foreignOf(data);
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await (_foreign.isEmpty ? prefs.remove(_foreignKey) : prefs.setString(_foreignKey, jsonEncode(_foreign)));
+    } catch (_) {}
+  }
+
+  /// A tételfajták mezői, amelyeket ez a változat ismer (és a [snapshotOf] ír).
+  static const _knownFields = {
+    'lots': {'id', 'symbol', 'quantity', 'price', 'currency', 'date', 'side', 'account', 'fee', 'edited', 'renamed'},
+    'dividends': {'id', 'symbol', 'amount', 'currency', 'date', 'account', 'edited', 'renamed'},
+    'splits': {'id', 'symbol', 'from', 'to', 'date', 'edited', 'renamed'},
+    'alerts': {
+      'id',
+      'symbol',
+      'kind',
+      'value',
+      'currency',
+      'created_at',
+      'triggered_at',
+      'triggered_price',
+      'peak',
+      'edited',
+      'renamed',
+    },
+  };
+
+  static bool _parses(String section, Map<String, dynamic> j) => switch (section) {
+    'lots' => PortfolioLot.fromJson(j) != null,
+    'dividends' => DividendRecord.fromJson(j) != null,
+    'splits' => SplitRecord.fromJson(j) != null,
+    _ => PriceAlert.fromJson(j) != null,
+  };
+
+  /// Egy csomag ebben a változatban ismeretlen részei: `top` (felső szintű mezők),
+  /// `unparsed` (fajtánként a nem értelmezhető tételek) és `fields` (fajtánként, tétel-
+  /// azonosítónként az ismeretlen mezők).
+  @visibleForTesting
+  static Map<String, dynamic> foreignOf(Map<String, dynamic> data) {
+    final known = {...emptyPackage.keys, 'lang', 'email_alerts', 'weekly_digest', 'switches_at'};
+    final top = {
+      for (final e in data.entries)
+        if (!known.contains(e.key)) e.key: e.value,
+    };
+    final unparsed = <String, List<Map<String, dynamic>>>{};
+    final fields = <String, Map<String, Map<String, dynamic>>>{};
+    for (final MapEntry(key: section, value: names) in _knownFields.entries) {
+      for (final j in _maps(data[section])) {
+        if (!_parses(section, j)) {
+          (unparsed[section] ??= []).add(j);
+          continue;
+        }
+        final extra = {
+          for (final e in j.entries)
+            if (!names.contains(e.key)) e.key: e.value,
+        };
+        if (extra.isNotEmpty) (fields[section] ??= {})['${j['id']}'] = extra;
+      }
+    }
+    return {
+      if (top.isNotEmpty) 'top': top,
+      if (unparsed.isNotEmpty) 'unparsed': unparsed,
+      if (fields.isNotEmpty) 'fields': fields,
+    };
+  }
+
+  /// A helyi csomag a megőrzött ismeretlen részekkel: a felső szintű mezők (az ismertek
+  /// a helyiből), a tételek ismeretlen mezői a még meglévő tételekre, és a nem értelmezhető
+  /// tételek (ha a helyi csomagban nincs ugyanilyen azonosítójú).
+  @visibleForTesting
+  static Map<String, dynamic> withForeign(Map<String, dynamic> snap, Map<String, dynamic> foreign) {
+    if (foreign.isEmpty) return snap;
+    final out = {..._map(foreign['top']), ...snap};
+    final unparsed = _map(foreign['unparsed']), fields = _map(foreign['fields']);
+    for (final section in _knownFields.keys) {
+      final extra = _map(fields[section]), rest = _maps(unparsed[section]);
+      if (extra.isEmpty && rest.isEmpty) continue;
+      final items = _maps(snap[section]);
+      final ids = {for (final i in items) '${i['id']}'};
+      out[section] = [
+        for (final i in items) {..._map(extra['${i['id']}']), ...i},
+        for (final r in rest)
+          if (!ids.contains('${r['id']}')) r,
+      ];
+    }
+    return out;
   }
 
   void _accountChanged() {
@@ -181,13 +282,16 @@ class SyncService extends ChangeNotifier {
     SharedPreferences.getInstance().then((p) => p.setBool(_dirtyKey, v)).catchError((_) => false);
   }
 
-  /// A helyi adatok egy csomagban.
-  Map<String, dynamic> snapshot() => snapshotOf(
-    preferences: preferences,
-    portfolio: portfolio,
-    alerts: alerts,
-    notes: notes,
-    language: language?.call(),
+  /// A helyi adatok egy csomagban (a fiókcsomag ismeretlen részeivel együtt).
+  Map<String, dynamic> snapshot() => withForeign(
+    snapshotOf(
+      preferences: preferences,
+      portfolio: portfolio,
+      alerts: alerts,
+      notes: notes,
+      language: language?.call(),
+    ),
+    _foreign,
   );
 
   /// A személyes adatok egy csomagban (szinkronhoz és a biztonsági mentéshez is).
@@ -881,6 +985,8 @@ class SyncService extends ChangeNotifier {
     }
     final data = remote.data;
     final base = remote.updatedAt;
+    await _rememberForeign(data);
+    if (account.email != email) return;
     if (_syncedEmail != null && _syncedEmail != account.email) {
       // Másik fiók: a készüléken lévő adat az előzőé (ott megvan), nem kerül az újba.
       // A készülék az új fiók adatait veszi át; üres fióknál üresen indul.

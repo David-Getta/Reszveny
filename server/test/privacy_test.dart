@@ -155,4 +155,14 @@ void main() {
       throwsA(predicate((e) => '$e'.contains('422') && !'$e'.contains('példa'))),
     );
   });
+
+  test('a referral redeemed before fingerprints existed still blocks a second redemption after deletion', () {
+    final (referee, _) = store.createAnonymousUser(null);
+    final (referrer, _) = store.createAnonymousUser(null);
+    store.setEmail(referee, 'Jo.Hn+x@gmail.com');
+    // Ahogy egy 0.2.275 előtti szerver írta: postafiók-lenyomat nélkül.
+    store.addReferral(refereeId: referee, referrerId: referrer);
+    store.deleteUser(referee);
+    expect(store.mailboxRedeemedReferral(normalizedMailbox('john@gmail.com')), isTrue);
+  });
 }

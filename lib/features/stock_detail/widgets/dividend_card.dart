@@ -6,6 +6,7 @@ import '../../../core/util/formatters.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../theme/app_theme.dart';
 import '../../portfolio/dividend_forecast.dart' show approxMoney;
+import '../../portfolio/portfolio_store.dart' show storedCurrency;
 import 'kv_table.dart';
 import 'section_card.dart';
 
@@ -60,7 +61,7 @@ class DividendCard extends StatelessWidget {
             final dps = m?.dividendPerShare;
             // A saját darabszámra jutó évi osztalék, ha a pozíció a részvény pénznemében van.
             final pos = services.portfolio.positionOf(symbol);
-            final yours = pos != null && dps != null && dps > 0 && pos.currency == currency
+            final yours = pos != null && dps != null && dps > 0 && pos.currency == storedCurrency(currency ?? '')
                 ? (amount: pos.quantity * dps, currency: pos.currency)
                 : null;
             return KvTable(

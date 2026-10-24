@@ -436,8 +436,14 @@ class AppPreferences extends ChangeNotifier {
     final parts = raw?.split('|');
     if (parts == null || parts.length != 2) return null;
     final amount = double.tryParse(parts[0]);
-    return amount == null || amount <= 0 || parts[1].isEmpty ? null : (amount: amount, currency: parts[1]);
+    return amount == null || amount <= 0 || parts[1].isEmpty ? null : _euroGoal(amount, parts[1]);
   }
+
+  /// A levában (2026 előtt) megadott cél euróban: a cél pénzneme a kijelzésé, az pedig
+  /// már euró – különben a kártya „nincs cél”-t mutatna.
+  static ({double amount, String currency}) _euroGoal(double amount, String currency) => currency.toUpperCase() == 'BGN'
+      ? (amount: amount / 1.95583, currency: 'EUR') // a rögzített átváltási árfolyam (FxService.bgnPerEur)
+      : (amount: amount, currency: currency);
 
   Future<void> setPortfolioGoal(({double amount, String currency})? goal, {DateTime? at}) async {
     portfolioGoal = goal;
@@ -498,10 +504,7 @@ class AppPreferences extends ChangeNotifier {
         if (e.value is Map && (e.key == goalPortfolio || e.key == goalDividend))
           '${e.key}': (
             goal: switch (((e.value as Map)['amount'], (e.value as Map)['currency'])) {
-              (final num a, final String c) when a.isFinite && a > 0 && c.isNotEmpty => (
-                amount: a.toDouble(),
-                currency: c,
-              ),
+              (final num a, final String c) when a.isFinite && a > 0 && c.isNotEmpty => _euroGoal(a.toDouble(), c),
               _ => null,
             },
             at: DateTime.tryParse('${(e.value as Map)['at']}')?.toUtc(),

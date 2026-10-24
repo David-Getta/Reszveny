@@ -54,7 +54,8 @@ void main() {
       );
     }
     expect(defaultCurrencyFor(languageCode: 'bg'), 'EUR');
-    expect(FxService.isSupported('BGN'), isFalse);
+    // A régi levás adatok a rögzített árfolyamon euróként számolnak.
+    expect(FxService.major('BGN').$1, 'EUR');
   });
 
   test('a stored Bulgarian lev display currency becomes the euro', () async {

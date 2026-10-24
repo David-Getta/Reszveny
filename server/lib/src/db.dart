@@ -375,7 +375,15 @@ class Store {
       _db.execute('DELETE FROM invite_devices WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM alert_mail_queue WHERE user_id = ?', [userId]);
       // Az ajánlás sora névtelenítve marad (nem törlődik): különben a másik fél újra
-      // beválthatna egy kódot (a meghívott), illetve az ajánló kerete újraindulna.
+      // beválthatna egy kódot (a meghívott), illetve az ajánló kerete újraindulna. A
+      // 0.2.275 előtti sorokban még nincs postafiók-lenyomat: most kapják meg, mert a
+      // névtelenítés után a cím alapján már nem ismerhető fel az újabb beváltás.
+      if (email != null) {
+        _db.execute('UPDATE referrals SET mailbox_hash = ? WHERE referee_id = ? AND mailbox_hash IS NULL', [
+          keyedHash(normalizedMailbox(email)),
+          userId,
+        ]);
+      }
       _db.execute("UPDATE referrals SET referee_id = 'deleted:' || lower(hex(randomblob(8))) WHERE referee_id = ?", [
         userId,
       ]);
@@ -962,4 +970,17 @@ class Store {
   }
 
   static final Random _rng = Random.secure();
+}
+
+/// A postafiók azonosítója a visszaélés-ellenőrzéshez: kisbetűvel, a `+címke`
+/// nélkül, Gmailnél a pontok nélkül (ugyanoda érkező címek egynek számítanak).
+String normalizedMailbox(String email) {
+  final e = email.trim().toLowerCase();
+  final at = e.lastIndexOf('@');
+  if (at <= 0) return e;
+  var local = e.substring(0, at).split('+').first;
+  var domain = e.substring(at + 1);
+  if (domain == 'googlemail.com') domain = 'gmail.com';
+  if (domain == 'gmail.com') local = local.replaceAll('.', '');
+  return '$local@$domain';
 }

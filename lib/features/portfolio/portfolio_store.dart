@@ -967,6 +967,42 @@ class PortfolioStore extends ChangeNotifier {
     return _lots.where((l) => l.symbol == s).firstOrNull?.currency;
   }
 
+  /// Régi (0.2.285 előtti) tételek: a pennyben jegyzett londoni részvény ára `GBP`
+  /// címkével került be (a `GBp` nagybetűsítve). Ha egy pennyben érkező új tétel ára
+  /// ugyanabba a nagyságrendbe esik, mint a meglévőké, azok is pennyben vannak: `GBX`-re
+  /// javítjuk őket (az áruk marad) – különben az új tétel fontra váltva keveredne velük.
+  Future<void> fixLegacyPence(String symbol, {required double pencePrice}) async {
+    final s = symbol.trim().toUpperCase();
+    if (!s.endsWith('.L') || !pencePrice.isFinite || pencePrice <= 0) return;
+    final legacy = [
+      for (final l in _lots)
+        if (l.symbol == s && l.currency == 'GBP') l,
+    ];
+    if (legacy.isEmpty) return;
+    final avg = legacy.fold(0.0, (sum, l) => sum + l.price) / legacy.length;
+    final ratio = pencePrice / avg;
+    // Fontban tárolt tételnél az arány ~100; pennyben tároltnál ~1.
+    if (ratio < 0.2 || ratio > 5) return;
+    final now = DateTime.now().toUtc();
+    for (final l in legacy) {
+      _lots[_lots.indexOf(l)] = PortfolioLot(
+        id: l.id,
+        symbol: l.symbol,
+        quantity: l.quantity,
+        price: l.price,
+        currency: 'GBX',
+        date: l.date,
+        sell: l.sell,
+        account: l.account,
+        fee: l.fee,
+        edited: now,
+        renamed: l.renamed,
+      );
+    }
+    notifyListeners();
+    await _save();
+  }
+
   Position? positionOf(String symbol) {
     final s = symbol.toUpperCase();
     return positions.where((p) => p.symbol == s).firstOrNull;

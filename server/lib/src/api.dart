@@ -2621,16 +2621,3 @@ class _Continuation {
   /// A meghívó napi keretéből az első körben lefoglalt sor (hibánál visszakerül).
   final int? inviteRow;
 }
-
-/// A postafiók azonosítója a visszaélés-ellenőrzéshez: kisbetűvel, a `+címke`
-/// nélkül, Gmailnél a pontok nélkül (ugyanoda érkező címek egynek számítanak).
-String normalizedMailbox(String email) {
-  final e = email.trim().toLowerCase();
-  final at = e.lastIndexOf('@');
-  if (at <= 0) return e;
-  var local = e.substring(0, at).split('+').first;
-  var domain = e.substring(at + 1);
-  if (domain == 'googlemail.com') domain = 'gmail.com';
-  if (domain == 'gmail.com') local = local.replaceAll('.', '');
-  return '$local@$domain';
-}
