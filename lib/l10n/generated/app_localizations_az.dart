@@ -2877,6 +2877,28 @@ class AppLocalizationsAz extends AppLocalizations {
       'Məlumatlarınız hesabınızla sinxronlaşdırmaq üçün çox böyükdür. Artıq lazım olmayan əməliyyatları və ya qeydləri silin, yenidən cəhd ediləcək.';
 
   @override
+  String get noteFull =>
+      'Bu səhmin qeydləri doludur, ona görə də bu yazı əlavə olunmadı. Qeydləri qısaldın və yenidən cəhd edin.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols üçün məzənnə yoxdur.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies ilə ödənilmiş $count dividend üçün məzənnə yoxdur, ona görə də cəmlərə daxil edilmir.',
+      one:
+          '$currencies ilə ödənilmiş 1 dividend üçün məzənnə yoxdur, ona görə də cəmlərə daxil edilmir.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

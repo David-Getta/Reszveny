@@ -854,5 +854,8 @@
   "restoreNothing": "Netika atrasti iepriekšēji pirkumi, ko atjaunot.",
   "manageSubscriptionElsewhere": "Šeit nav abonementa, ko pārvaldīt. App Store vai Google Play iegādāts abonements tiek pārvaldīts veikala iestatījumos.",
   "backupFailed": "Dublējumu neizdevās saglabāt. Lūdzu, mēģiniet vēlreiz.",
-  "syncTooLarge": "Jūsu dati ir pārāk lieli, lai tos sinhronizētu ar jūsu kontu. Izdzēsiet darījumus vai piezīmes, kas jums vairs nav vajadzīgas, un tiks mēģināts vēlreiz."
+  "syncTooLarge": "Jūsu dati ir pārāk lieli, lai tos sinhronizētu ar jūsu kontu. Izdzēsiet darījumus vai piezīmes, kas jums vairs nav vajadzīgas, un tiks mēģināts vēlreiz.",
+  "noteFull": "Šīs akcijas piezīmes ir pilnas, tāpēc šis ieraksts netika pievienots. Saīsiniet piezīmes un mēģiniet vēlreiz.",
+  "portfolioNoRateFor": "Pozīcijām {symbols} nav valūtas kursa.",
+  "dividendsNotConverted": "{count, plural, =1{{count} dividendei ({currencies}) nav valūtas kursa, tāpēc tā nav iekļauta kopsummās.} other{Dividendes bez valūtas kursa ({currencies}): {count}. Tās nav iekļautas kopsummās.}}"
 }

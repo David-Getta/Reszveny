@@ -2955,6 +2955,28 @@ class AppLocalizationsSl extends AppLocalizations {
       'Vaši podatki so preveliki za sinhronizacijo z vašim računom. Izbrišite transakcije ali zapiske, ki jih ne potrebujete več, in sinhronizacija se bo poskusila znova.';
 
   @override
+  String get noteFull =>
+      'Zapisek za to delnico je poln, zato ta vnos ni bil dodan. Skrajšajte zapisek in poskusite znova.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Ni tečaja za $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividende v $currencies brez tečaja niso vključene v skupne zneske (število: $count).',
+      one:
+          '$count dividenda v $currencies nima tečaja in ni vključena v skupne zneske.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

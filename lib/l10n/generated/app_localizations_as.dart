@@ -2875,6 +2875,28 @@ class AppLocalizationsAs extends AppLocalizations {
       'আপোনাৰ ডেটা আপোনাৰ একাউণ্টৰ সৈতে ছিংক কৰিবলৈ অতি ডাঙৰ। আৰু প্ৰয়োজন নোহোৱা লেনদেন বা টোকা মচক, তেতিয়া ই পুনৰ চেষ্টা কৰিব।';
 
   @override
+  String get noteFull =>
+      'এই শ্বেয়াৰটোৰ টোকাসমূহ ভৰি পৰিছে, সেয়েহে এই এণ্ট্ৰিটো যোগ কৰা হোৱা নাই। টোকাসমূহ চুটি কৰি পুনৰ চেষ্টা কৰক।';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols-ৰ বাবে বিনিময় হাৰ নাই।';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies-ত থকা $countটা লাভাংশৰ বিনিময় হাৰ নাই, সেয়েহে সেইবোৰ মুঠ হিচাপত ধৰা হোৱা নাই।',
+      one:
+          '$currencies-ত থকা $countটা লাভাংশৰ বিনিময় হাৰ নাই, সেয়েহে ইয়াক মুঠ হিচাপত ধৰা হোৱা নাই।',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

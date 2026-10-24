@@ -5,7 +5,6 @@ import '../core/share/share_text.dart';
 import '../core/util/formatters.dart';
 import '../features/news/daily_brief.dart' show AskSource;
 import '../features/news/follow_up_store.dart';
-import '../features/notes/notes_store.dart' show NotesStore;
 import '../features/news/research_store.dart' show ResearchResult;
 import '../l10n/error_messages.dart';
 import '../l10n/generated/app_localizations.dart';
@@ -283,16 +282,19 @@ class _SaveNoteButtonState extends State<_SaveNoteButton> {
   Future<void> _save() async {
     final services = AppServices.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: '');
-    final existing = services.notes.of(widget.symbol)?.text.trim() ?? '';
+    final l10n = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
     final entry = [
       '${fmt.date(DateTime.now())} · ${widget.title}',
       widget.text.trim(),
       for (final s in widget.sources) s.url,
     ].join('\n');
-    // A saját sorok maradnak; ha nem fér el, a bejegyzés vége marad le.
-    final room = NotesStore.maxLength - (existing.isEmpty ? 0 : existing.length + 2);
-    final fitted = entry.length > room ? entry.substring(0, room.clamp(0, entry.length)) : entry;
-    await services.notes.set(widget.symbol, existing.isEmpty ? fitted : '$existing\n\n$fitted');
+    // A saját sorok maradnak; ha a bejegyzés már nem fér el, nem kerül bele, és ez kiírva
+    // (csonka bejegyzés vagy hamis „Mentve” helyett).
+    if (!await services.notes.append(widget.symbol, entry)) {
+      messenger.showSnackBar(SnackBar(content: Text(l10n.noteFull)));
+      return;
+    }
     services.telemetry.track('research_saved_note');
     if (mounted) setState(() => _saved = true);
   }

@@ -964,7 +964,7 @@ class _WatchRow extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Text(
-                            q == null ? (snap.hasError ? l10n.notAvailable : '…') : fmt.number(q.price),
+                            q == null ? (snap.hasError ? l10n.notAvailable : '…') : fmt.price(q.price, null),
                             style: const TextStyle(fontWeight: FontWeight.w600),
                           ),
                           if (q != null)

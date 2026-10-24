@@ -2898,6 +2898,28 @@ class AppLocalizationsMg extends AppLocalizations {
       'Lehibe loatra ny angonao ka tsy azo ampifanarahana amin\'ny kaontinao. Fafao ny fividianana sy fivarotana na ny naoty tsy ilainao intsony, dia hiezaka indray izy.';
 
   @override
+  String get noteFull =>
+      'Feno ny naotin\'ity aksiona ity, ka tsy nampiana ity soratra ity. Fohezo ny naoty ary andramo indray.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Tsy misy sandam-bola ho an\'ny $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Tsy misy sandam-bola ny dividandy $count amin\'ny $currencies, ka tsy tafiditra ao amin\'ny fitambarany.',
+      one:
+          'Tsy misy sandam-bola ny dividandy $count amin\'ny $currencies, ka tsy tafiditra ao amin\'ny fitambarany.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

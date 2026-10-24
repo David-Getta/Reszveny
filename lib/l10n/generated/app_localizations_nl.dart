@@ -2884,6 +2884,28 @@ class AppLocalizationsNl extends AppLocalizations {
       'Je gegevens zijn te groot om met je account te synchroniseren. Verwijder transacties of notities die je niet meer nodig hebt, dan wordt het opnieuw geprobeerd.';
 
   @override
+  String get noteFull =>
+      'De notitie bij dit aandeel is vol, dus deze tekst is niet toegevoegd. Maak de notitie korter en probeer het opnieuw.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Geen wisselkoers voor $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count dividenden in $currencies hebben geen wisselkoers en tellen niet mee in de totalen.',
+      one:
+          '1 dividend in $currencies heeft geen wisselkoers en telt niet mee in de totalen.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

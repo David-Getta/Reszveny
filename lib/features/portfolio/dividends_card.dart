@@ -124,11 +124,17 @@ class DividendsCard extends StatelessWidget {
                         scale: services.portfolio.dividendScale,
                       );
                       // Évenként is, ha több évből van tétel (az adóbevalláshoz).
-                      final years = {for (final d in all) ?d.date?.year}.toList()..sort((a, b) => b.compareTo(a));
+                      // A jövőre bejelentett (még nem kapott) tétel nem nyit üres évet.
+                      final years = {for (final d in received) ?d.date?.year}.toList()..sort((a, b) => b.compareTo(a));
                       // Az évenkénti összegben csak a már kifizetett (a bejelentett jövőbeli nem).
                       final byYear = {
                         for (final y in years) y: sum(all.where((d) => d.date?.year == y && !d.date!.isAfter(now))),
                       };
+                      // Árfolyam nélküli pénznem (pl. TWD): a tételei nem számolhatók az összegbe – ez kiírva.
+                      final unconverted = [
+                        for (final d in received)
+                          if (rate(d.currency) == null) d,
+                      ];
                       return Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -155,6 +161,18 @@ class DividendsCard extends StatelessWidget {
                                 ),
                             ],
                           ),
+                          if (unconverted.isNotEmpty)
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8, right: 8),
+                              child: Text(
+                                l10n.dividendsNotConverted(
+                                  unconverted.length,
+                                  {for (final d in unconverted) d.currency}.join(', '),
+                                ),
+                                key: const ValueKey('dividends-not-converted'),
+                                style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                              ),
+                            ),
                           // Havonta: az elmúlt 12 hónap kapott és a következő 3 hónap várható osztaléka.
                           _MonthsChart(
                             months: dividendMonths(all, expected, now: now, rate: rate),

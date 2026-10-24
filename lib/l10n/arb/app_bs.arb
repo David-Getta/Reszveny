@@ -854,5 +854,8 @@
   "restoreNothing": "Nisu pronađene ranije kupovine za vraćanje.",
   "manageSubscriptionElsewhere": "Ovdje nema pretplate kojom se može upravljati. Pretplatom kupljenom u App Storeu ili na Google Playu upravlja se u postavkama trgovine.",
   "backupFailed": "Sigurnosnu kopiju nije moguće sačuvati. Pokušajte ponovo.",
-  "syncTooLarge": "Vaši podaci su preveliki za sinhronizaciju s vašim računom. Izbrišite transakcije ili bilješke koje vam više ne trebaju i ponovo će se pokušati."
+  "syncTooLarge": "Vaši podaci su preveliki za sinhronizaciju s vašim računom. Izbrišite transakcije ili bilješke koje vam više ne trebaju i ponovo će se pokušati.",
+  "noteFull": "Bilješke o ovoj dionici su popunjene, pa ovaj unos nije dodan. Skratite bilješke i pokušajte ponovo.",
+  "portfolioNoRateFor": "Nema kursa za {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{{count} dividenda u {currencies} nema kursa i nije uračunata u ukupne iznose.} other{Dividende u {currencies} ({count}) nemaju kursa i nisu uračunate u ukupne iznose.}}"
 }

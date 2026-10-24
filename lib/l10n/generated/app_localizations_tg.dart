@@ -2879,6 +2879,28 @@ class AppLocalizationsTg extends AppLocalizations {
       'Маълумоти шумо барои ҳамоҳангсозӣ бо ҳисобатон аз ҳад калон аст. Амалиётҳо ё қайдҳоеро, ки дигар лозим нестанд, нест кунед ва дубора кӯшиш карда мешавад.';
 
   @override
+  String get noteFull =>
+      'Қайди ин саҳмия пур шудааст, бинобар ин ин сабт илова нашуд. Қайдро кӯтоҳ кунед ва бори дигар кӯшиш кунед.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Барои $symbols қурби асъор мавҷуд нест.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count дивиденд бо $currencies қурби асъор надоранд ва ба ҷамъбаст дохил намешаванд.',
+      one:
+          '1 дивиденд бо $currencies қурби асъор надорад ва ба ҷамъбаст дохил намешавад.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

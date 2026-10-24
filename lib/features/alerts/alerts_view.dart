@@ -390,14 +390,24 @@ class AlertTile extends StatelessWidget {
   }
 }
 
-/// A részvény riasztásai a részletes nézetben (csak ha van).
-class SymbolAlertsCard extends StatelessWidget {
+/// A részvény riasztásai a részletes nézetben (csak ha van). Sok riasztásnál az első
+/// [shownCount], a többi egy koppintásra – különben a grafikon messze lecsúszna.
+class SymbolAlertsCard extends StatefulWidget {
   const SymbolAlertsCard({super.key, required this.symbol, this.price});
 
   final String symbol;
 
   /// A részvény mostani ára (ha ismert): a kioldásig hátralévő változáshoz.
   final double? price;
+
+  static const shownCount = 3;
+
+  @override
+  State<SymbolAlertsCard> createState() => _SymbolAlertsCardState();
+}
+
+class _SymbolAlertsCardState extends State<SymbolAlertsCard> {
+  bool _all = false;
 
   @override
   Widget build(BuildContext context) {
@@ -406,16 +416,26 @@ class SymbolAlertsCard extends StatelessWidget {
     return ListenableBuilder(
       listenable: services.alerts,
       builder: (context, _) {
-        final alerts = services.alerts.forSymbol(symbol);
+        final alerts = services.alerts.forSymbol(widget.symbol);
         if (alerts.isEmpty) return const SizedBox.shrink();
+        final shown = _all ? alerts : alerts.take(SymbolAlertsCard.shownCount).toList();
         return SectionCard(
           title: l10n.priceAlerts,
           child: Column(
             children: [
-              for (final (i, a) in alerts.indexed) ...[
+              for (final (i, a) in shown.indexed) ...[
                 if (i > 0) const Divider(height: 1),
-                AlertTile(alert: a, price: price),
+                AlertTile(alert: a, price: widget.price),
               ],
+              if (shown.length < alerts.length)
+                Align(
+                  alignment: AlignmentDirectional.centerStart,
+                  child: TextButton(
+                    key: const ValueKey('symbol-alerts-all'),
+                    onPressed: () => setState(() => _all = true),
+                    child: Text(l10n.seeAll(alerts.length)),
+                  ),
+                ),
             ],
           ),
         );

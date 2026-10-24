@@ -167,7 +167,7 @@ class _FavoritesStripState extends State<FavoritesStrip> {
                                         // Nagy betűméretnél a kártya szélességében tördelődik.
                                         Flexible(
                                           child: Text(
-                                            '${fmt.number(q.price)}  ${fmt.percent(q.changePercent, withSign: true)}',
+                                            '${fmt.price(q.price, null)}  ${fmt.percent(q.changePercent, withSign: true)}',
                                             style: theme.textTheme.bodySmall?.copyWith(
                                               color: up ? p.positive : p.negative,
                                             ),

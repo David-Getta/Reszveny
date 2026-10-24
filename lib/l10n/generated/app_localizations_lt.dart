@@ -2953,6 +2953,28 @@ class AppLocalizationsLt extends AppLocalizations {
       'Jūsų duomenys per dideli, kad būtų sinchronizuojami su jūsų paskyra. Ištrinkite nebereikalingas operacijas ar užrašus ir bus bandoma dar kartą.';
 
   @override
+  String get noteFull =>
+      'Šios akcijos užrašai pilni, todėl šis įrašas nepridėtas. Sutrumpinkite užrašus ir bandykite dar kartą.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Nėra $symbols valiutos kurso.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividendų be valiutos kurso ($currencies): $count. Jie neįtraukiami į sumas.',
+      one:
+          '$count dividendas ($currencies) neturi valiutos kurso ir neįtraukiamas į sumas.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

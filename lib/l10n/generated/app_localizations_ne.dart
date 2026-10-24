@@ -2874,6 +2874,28 @@ class AppLocalizationsNe extends AppLocalizations {
       'तपाईंको डेटा तपाईंको खातासँग सिंक गर्न धेरै ठूलो छ। अब नचाहिने कारोबार वा टिपोटहरू मेटाउनुहोस्, अनि यो फेरि प्रयास हुनेछ।';
 
   @override
+  String get noteFull =>
+      'यो सेयरको टिपोट भरिइसकेको छ, त्यसैले यो प्रविष्टि थपिएन। टिपोट छोट्याएर फेरि प्रयास गर्नुहोस्।';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols का लागि विनिमय दर उपलब्ध छैन।';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies मा रहेका $count लाभांशको विनिमय दर उपलब्ध नभएकाले तिनलाई कुल योगमा समावेश गरिएको छैन।',
+      one:
+          '$currencies मा रहेको 1 लाभांशको विनिमय दर उपलब्ध नभएकाले यसलाई कुल योगमा समावेश गरिएको छैन।',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

@@ -2884,6 +2884,28 @@ class AppLocalizationsTe extends AppLocalizations {
       'మీ డేటా మీ ఖాతాతో సింక్ చేయడానికి చాలా పెద్దదిగా ఉంది. ఇకపై అవసరం లేని లావాదేవీలు లేదా గమనికలను తొలగించండి, అప్పుడు ఇది మళ్లీ ప్రయత్నిస్తుంది.';
 
   @override
+  String get noteFull =>
+      'ఈ స్టాక్ గమనిక నిండిపోయింది, కాబట్టి ఈ ఎంట్రీ జోడించబడలేదు. గమనికను కుదించి మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols కోసం మారకపు రేటు అందుబాటులో లేదు.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currenciesలోని $count డివిడెండ్లకు మారకపు రేటు లేదు, కాబట్టి అవి మొత్తాల్లో చేర్చబడలేదు.',
+      one:
+          '$currenciesలోని 1 డివిడెండ్‌కు మారకపు రేటు లేదు, కాబట్టి అది మొత్తాల్లో చేర్చబడలేదు.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

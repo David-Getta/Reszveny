@@ -2847,6 +2847,28 @@ class AppLocalizationsLo extends AppLocalizations {
       'ຂໍ້ມູນຂອງທ່ານໃຫຍ່ເກີນໄປທີ່ຈະຊິງຄ໌ກັບບັນຊີຂອງທ່ານ. ລຶບທຸລະກຳ ຫຼື ບັນທຶກທີ່ທ່ານບໍ່ຕ້ອງການອີກແລ້ວ ແລ້ວຈະລອງໃໝ່';
 
   @override
+  String get noteFull =>
+      'ບັນທຶກຂອງຮຸ້ນນີ້ເຕັມແລ້ວ ຈຶ່ງບໍ່ໄດ້ເພີ່ມລາຍການນີ້ ກະລຸນາຫຍໍ້ບັນທຶກໃຫ້ສັ້ນລົງ ແລ້ວລອງໃໝ່';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'ບໍ່ມີອັດຕາແລກປ່ຽນສຳລັບ $symbols';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'ເງິນປັນຜົນ $count ລາຍການໃນ $currencies ບໍ່ມີອັດຕາແລກປ່ຽນ ຈຶ່ງບໍ່ຖືກນັບລວມໃນຍອດລວມ',
+      one:
+          'ເງິນປັນຜົນ 1 ລາຍການໃນ $currencies ບໍ່ມີອັດຕາແລກປ່ຽນ ຈຶ່ງບໍ່ຖືກນັບລວມໃນຍອດລວມ',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

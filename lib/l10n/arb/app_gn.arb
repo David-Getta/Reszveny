@@ -854,5 +854,8 @@
   "restoreNothing": "Ndojejuhúi jejogua yma ikatúva oñembojevy.",
   "manageSubscriptionElsewhere": "Ndaipóri ápe ñemboheraguapy eñangareko hag̃ua. Ñemboheraguapy ojejoguáva App Store térã Google Play-pe oñeñangareko ñemuha ñembohekópe.",
   "backupFailed": "Ndaikatúi oñeñongatu mbaʼekuaarã. Ehaʼã jey.",
-  "syncTooLarge": "Ne marandukuéra tuichaiterei oñesincroniza hag̃ua nde mbaʼetépe. Embogue jejogua ha ñemu térã jehaipyre ndereikotevẽvéima, ha oñehaʼã jeýta."
+  "syncTooLarge": "Ne marandukuéra tuichaiterei oñesincroniza hag̃ua nde mbaʼetépe. Embogue jejogua ha ñemu térã jehaipyre ndereikotevẽvéima, ha oñehaʼã jeýta.",
+  "noteFull": "Ko acción jehaipyrekuéra henyhẽma, upévare noñembojoajúi ko jehaipy. Embomichĩve jehaipyrekuéra ha ehaʼã jey.",
+  "portfolioNoRateFor": "Ndaipóri {symbols} ñemoambue repy.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividendo {currencies}-pe ndorekói ñemoambue repy, upévare noñembopapái opaitépe.} other{{count} dividendo {currencies}-pe ndorekói ñemoambue repy, upévare noñembopapái opaitépe.}}"
 }

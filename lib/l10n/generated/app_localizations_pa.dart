@@ -2874,6 +2874,28 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਤੁਹਾਡਾ ਡਾਟਾ ਤੁਹਾਡੇ ਖਾਤੇ ਨਾਲ ਸਿੰਕ ਕਰਨ ਲਈ ਬਹੁਤ ਵੱਡਾ ਹੈ। ਜਿਨ੍ਹਾਂ ਲੈਣ-ਦੇਣ ਜਾਂ ਨੋਟਾਂ ਦੀ ਹੁਣ ਲੋੜ ਨਹੀਂ, ਉਹ ਮਿਟਾਓ, ਫਿਰ ਇਹ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੇਗਾ।';
 
   @override
+  String get noteFull =>
+      'ਇਸ ਸ਼ੇਅਰ ਦਾ ਨੋਟ ਭਰ ਗਿਆ ਹੈ, ਇਸ ਲਈ ਇਹ ਐਂਟਰੀ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤੀ ਗਈ। ਨੋਟ ਛੋਟਾ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols ਲਈ ਵਟਾਂਦਰਾ ਦਰ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies ਵਿੱਚ $count ਡਿਵੀਡੈਂਡਾਂ ਦੀ ਵਟਾਂਦਰਾ ਦਰ ਉਪਲਬਧ ਨਹੀਂ ਹੈ, ਇਸ ਲਈ ਇਹ ਕੁੱਲ ਜੋੜ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ ਹਨ।',
+      one:
+          '$currencies ਵਿੱਚ $count ਡਿਵੀਡੈਂਡ ਦੀ ਵਟਾਂਦਰਾ ਦਰ ਉਪਲਬਧ ਨਹੀਂ ਹੈ, ਇਸ ਲਈ ਇਹ ਕੁੱਲ ਜੋੜ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ ਹੈ।',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

@@ -2882,6 +2882,26 @@ class AppLocalizationsHu extends AppLocalizations {
       'Az adataid túl nagyok ahhoz, hogy a fiókoddal szinkronizáljuk őket. Törölj a már nem szükséges tranzakciók vagy jegyzetek közül, és az app újra megpróbálja.';
 
   @override
+  String get noteFull =>
+      'A részvény jegyzete megtelt, ezért ez a bejegyzés nem került bele. Rövidítsd a jegyzetet, és próbáld újra.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Nincs árfolyam ehhez: $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count osztalék ($currencies) nem váltható át, ezért kimarad',
+      one: '1 osztalék ($currencies) nem váltható át, ezért kimarad',
+    );
+    return '$_temp0 az összegekből.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

@@ -4866,6 +4866,24 @@ abstract class AppLocalizations {
   /// **'Your data is too large to sync with your account. Delete transactions or notes you no longer need, and it will try again.'**
   String get syncTooLarge;
 
+  /// Snackbar when a trade note or a saved AI answer could not be appended because the stock's note already reached its maximum length (4,000 characters).
+  ///
+  /// In en, this message translates to:
+  /// **'The note for this stock is full, so this entry was not added. Shorten the note and try again.'**
+  String get noteFull;
+
+  /// Under the portfolio totals: these positions have a price, but their currency could not be converted to the totals' currency, so they are left out. symbols is a comma-separated list of tickers.
+  ///
+  /// In en, this message translates to:
+  /// **'No exchange rate for {symbols}.'**
+  String portfolioNoRateFor(String symbols);
+
+  /// Note on the received dividends card: dividends in these currencies could not be converted (no exchange rate available), so they are missing from the totals. currencies is a comma-separated list of currency codes.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 dividend in {currencies} has no exchange rate and is left out of the totals.} other{{count} dividends in {currencies} have no exchange rate and are left out of the totals.}}'**
+  String dividendsNotConverted(int count, String currencies);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

@@ -2889,6 +2889,28 @@ class AppLocalizationsNy extends AppLocalizations {
       'Deta yanu ndi yayikulu kwambiri kuti ilumikizidwe ndi akaunti yanu. Chotsani zogula ndi zogulitsa kapena zolemba zomwe simukuzifunanso, ndipo kudzayesanso.';
 
   @override
+  String get noteFull =>
+      'Zolemba za sheya iyi zadzaza, choncho cholemba ichi sichinawonjezedwe. Fupikitsani zolembazo ndipo yesaninso.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Palibe mtengo wosinthira ndalama wa $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Madividendi $count mu $currencies alibe mtengo wosinthira ndalama, choncho sawerengedwa mu ziwerengero zonse.',
+      one:
+          'Dividendi 1 mu $currencies ilibe mtengo wosinthira ndalama, choncho siyiwerengedwa mu ziwerengero zonse.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

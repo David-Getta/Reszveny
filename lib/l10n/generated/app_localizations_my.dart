@@ -2868,6 +2868,28 @@ class AppLocalizationsMy extends AppLocalizations {
       'သင့်ဒေတာသည် သင့်အကောင့်နှင့် စင့်ခ်လုပ်ရန် ကြီးလွန်းနေသည်။ မလိုအပ်တော့သော အရောင်းအဝယ်များ သို့မဟုတ် မှတ်စုများကို ဖျက်ပါ၊ ထို့နောက် ထပ်မံကြိုးစားပါမည်။';
 
   @override
+  String get noteFull =>
+      'ဤရှယ်ယာ၏ မှတ်စု ပြည့်နေသဖြင့် ဤစာကို ထည့်၍မရခဲ့ပါ။ မှတ်စုကို တိုအောင်ပြင်ပြီး ထပ်စမ်းကြည့်ပါ။';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols အတွက် ငွေလဲနှုန်း မရှိပါ။';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies ဖြင့် အမြတ်ဝေစု $count ခုအတွက် ငွေလဲနှုန်း မရှိသဖြင့် စုစုပေါင်းတွင် ထည့်မတွက်ပါ။',
+      one:
+          '$currencies ဖြင့် အမြတ်ဝေစု 1 ခုအတွက် ငွေလဲနှုန်း မရှိသဖြင့် စုစုပေါင်းတွင် ထည့်မတွက်ပါ။',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

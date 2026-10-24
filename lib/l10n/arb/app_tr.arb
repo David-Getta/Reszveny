@@ -854,5 +854,8 @@
   "restoreNothing": "Geri yüklenecek önceki bir satın alma bulunamadı.",
   "manageSubscriptionElsewhere": "Burada yönetilecek bir abonelik yok. App Store veya Google Play üzerinden alınan abonelik, mağaza ayarlarından yönetilir.",
   "backupFailed": "Yedek kaydedilemedi. Lütfen tekrar deneyin.",
-  "syncTooLarge": "Verileriniz hesabınızla senkronize edilemeyecek kadar büyük. Artık ihtiyacınız olmayan işlemleri veya notları silin, ardından yeniden denenecek."
+  "syncTooLarge": "Verileriniz hesabınızla senkronize edilemeyecek kadar büyük. Artık ihtiyacınız olmayan işlemleri veya notları silin, ardından yeniden denenecek.",
+  "noteFull": "Bu hissenin notu dolu, bu yüzden bu kayıt eklenmedi. Notu kısaltıp tekrar deneyin.",
+  "portfolioNoRateFor": "{symbols} için döviz kuru yok.",
+  "dividendsNotConverted": "{count, plural, =1{{currencies} cinsinden 1 temettünün döviz kuru olmadığından toplamlara dahil edilmedi.} other{{currencies} cinsinden {count} temettünün döviz kuru olmadığından toplamlara dahil edilmedi.}}"
 }

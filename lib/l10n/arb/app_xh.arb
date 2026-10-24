@@ -854,5 +854,8 @@
   "restoreNothing": "Akufunyanwanga zinto zithengiweyo ngaphambili ukuze zibuyiselwe.",
   "manageSubscriptionElsewhere": "Akukho mrhumo unokulawulwa apha. Umrhumo othengwe kwi-App Store okanye kwi-Google Play ulawulwa kwiisetingi zevenkile.",
   "backupFailed": "Ikopi yokhuseleko ayikwazanga ukugcinwa. Nceda uzame kwakhona.",
-  "syncTooLarge": "Idatha yakho inkulu kakhulu ukuba ingqamaniswe neakhawunti yakho. Cima iintengiselwano okanye amanqaku ongasawadingiyo, kwaye kuza kuzama kwakhona."
+  "syncTooLarge": "Idatha yakho inkulu kakhulu ukuba ingqamaniswe neakhawunti yakho. Cima iintengiselwano okanye amanqaku ongasawadingiyo, kwaye kuza kuzama kwakhona.",
+  "noteFull": "Inqaku lesi sabelo lizele, ngoko oku kubhaliweyo akongezwanga. Lifinyeze inqaku uze uzame kwakhona.",
+  "portfolioNoRateFor": "Akukho zinga lotshintshiselwano kwi-{symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Isahlulo esi-1 nge-{currencies} asinalo izinga lotshintshiselwano, ngoko asibandakanywanga kwiitotali.} other{Izahlulo ezi-{count} nge-{currencies} azinalo izinga lotshintshiselwano, ngoko azibandakanywanga kwiitotali.}}"
 }

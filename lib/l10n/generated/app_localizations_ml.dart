@@ -2890,6 +2890,28 @@ class AppLocalizationsMl extends AppLocalizations {
       'നിങ്ങളുടെ ഡാറ്റ അക്കൗണ്ടുമായി സമന്വയിപ്പിക്കാൻ കഴിയാത്തത്ര വലുതാണ്. ഇനി ആവശ്യമില്ലാത്ത ഇടപാടുകളോ കുറിപ്പുകളോ ഇല്ലാതാക്കുക, തുടർന്ന് ഇത് വീണ്ടും ശ്രമിക്കും.';
 
   @override
+  String get noteFull =>
+      'ഈ ഓഹരിയുടെ കുറിപ്പ് നിറഞ്ഞു, അതിനാൽ ഈ എൻട്രി ചേർത്തില്ല. കുറിപ്പ് ചുരുക്കി വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols-ന് വിനിമയ നിരക്ക് ലഭ്യമല്ല.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies-ലുള്ള $count ഡിവിഡന്റുകൾക്ക് വിനിമയ നിരക്ക് ഇല്ല, അതിനാൽ ആകെ തുകയിൽ ഉൾപ്പെടുത്തിയിട്ടില്ല.',
+      one:
+          '$currencies-ലുള്ള 1 ഡിവിഡന്റിന് വിനിമയ നിരക്ക് ഇല്ല, അതിനാൽ ആകെ തുകയിൽ ഉൾപ്പെടുത്തിയിട്ടില്ല.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

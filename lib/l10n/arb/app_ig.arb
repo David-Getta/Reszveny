@@ -854,5 +854,8 @@
   "restoreNothing": "Ahụghị ihe ọ bụla i zụrụ na mbụ a ga-eweghachi.",
   "manageSubscriptionElsewhere": "Enweghị ndenye aha a ga-ajikwa ebe a. Ndenye aha e zụrụ na App Store ma ọ bụ Google Play ka a na-ajikwa na ntọala ụlọ ahịa ahụ.",
   "backupFailed": "Enweghị ike ichekwa ndabere ahụ. Biko nwaa ọzọ.",
-  "syncTooLarge": "Data gị buru oke ibu imekọrịta ya na akaụntụ gị. Hichapụ azụmahịa ma ọ bụ ndetu ndị ị na-achọghịzi, ọ ga-anwa ọzọ."
+  "syncTooLarge": "Data gị buru oke ibu imekọrịta ya na akaụntụ gị. Hichapụ azụmahịa ma ọ bụ ndetu ndị ị na-achọghịzi, ọ ga-anwa ọzọ.",
+  "noteFull": "Ndetu stock a ejupụtala, ya mere etinyeghị ihe a. Mee ka ndetu ahụ dị mkpụmkpụ ma nwaa ọzọ.",
+  "portfolioNoRateFor": "Enweghị ọnụego mgbanwe maka {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Nkesa uru 1 na {currencies} enweghị ọnụego mgbanwe, ya mere agụnyeghị ya na ngụkọta.} other{Nkesa uru {count} na {currencies} enweghị ọnụego mgbanwe, ya mere agụnyeghị ha na ngụkọta.}}"
 }

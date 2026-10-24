@@ -2875,6 +2875,28 @@ class AppLocalizationsMn extends AppLocalizations {
       'Таны өгөгдөл хэтэрхий том тул бүртгэлтэй тань синк хийх боломжгүй байна. Хэрэггүй болсон гүйлгээ эсвэл тэмдэглэлээ устгавал дахин оролдоно.';
 
   @override
+  String get noteFull =>
+      'Энэ хувьцааны тэмдэглэл дүүрсэн тул энэ бичлэгийг нэмсэнгүй. Тэмдэглэлээ богиносгоод дахин оролдоно уу.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols-д валютын ханш байхгүй.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Валютын ханш байхгүй тул $currencies дахь $count ногдол ашгийг нийт дүнд тооцоогүй.',
+      one:
+          'Валютын ханш байхгүй тул $currencies дахь 1 ногдол ашгийг нийт дүнд тооцоогүй.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

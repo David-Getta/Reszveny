@@ -2955,6 +2955,28 @@ class AppLocalizationsRu extends AppLocalizations {
       'Ваши данные слишком велики для синхронизации с аккаунтом. Удалите ненужные сделки или заметки, и попытка будет повторена.';
 
   @override
+  String get noteFull =>
+      'Заметка к этой акции заполнена, поэтому запись не добавлена. Сократите заметку и попробуйте ещё раз.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Нет курса валют для $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Дивидендов в $currencies без курса валют: $count. Они не учтены в итогах.',
+      one:
+          'Нет курса валют для $count дивиденда в $currencies, он не учтён в итогах.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

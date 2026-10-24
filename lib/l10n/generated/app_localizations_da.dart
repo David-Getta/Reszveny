@@ -2876,6 +2876,28 @@ class AppLocalizationsDa extends AppLocalizations {
       'Dine data er for store til at blive synkroniseret med din konto. Slet transaktioner eller noter, du ikke længere har brug for, så prøves der igen.';
 
   @override
+  String get noteFull =>
+      'Aktiens noter er fyldt op, så dette indlæg blev ikke tilføjet. Forkort noterne, og prøv igen.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Ingen valutakurs for $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count udbyttebetalinger i $currencies har ingen valutakurs og er ikke med i summerne.',
+      one:
+          '1 udbyttebetaling i $currencies har ingen valutakurs og er ikke med i summerne.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

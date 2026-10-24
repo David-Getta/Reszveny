@@ -469,11 +469,13 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     }
     // A jegyzet a tranzakció adataival a részvény jegyzeteinek végére (befektetési napló).
     if (note.isNotEmpty) {
-      await services.notes.append(
+      final added = await services.notes.append(
         widget.symbol,
         '${fmt.date(_date)} · ${widget.sell ? l10n.portfolioSold : l10n.lotNoteBought} '
-        '${fmt.quantity(q)} × ${fmt.money(p, widget.currency)}: $note',
+        '${fmt.quantity(q)} × ${fmt.unit(p, widget.currency)}: $note',
       );
+      // A tranzakció bekerült, de a jegyzet megtelt: ezt meg kell tudnia.
+      if (!added && mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l10n.noteFull)));
     }
     if (mounted) Navigator.of(context).pop(true);
   }

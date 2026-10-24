@@ -402,7 +402,7 @@ class _DetailsBody extends StatelessWidget {
                       history: d.history!,
                       fmt: fmt,
                       currency: cur,
-                      levels: chartLevels(context, d.symbol, cur),
+                      levels: chartLevels(context, d.symbol, cur, price: d.quote?.price),
                       markers: chartMarkers(context, d.symbol),
                       loadBenchmark: d.symbol.toUpperCase() == benchmarkSymbol
                           ? null
@@ -871,18 +871,26 @@ List<ChartMarker> chartMarkers(BuildContext context, String symbol) => [
       ChartMarker(date: l.date!, sell: l.sell, quantity: l.quantity),
 ];
 
-List<ChartLevel> chartLevels(BuildContext context, String symbol, String? currency) {
+List<ChartLevel> chartLevels(BuildContext context, String symbol, String? currency, {double? price}) {
   final services = AppServices.of(context);
   final l10n = AppLocalizations.of(context);
   final p = AppPalette.of(context);
   final position = services.portfolio.positionOf(symbol);
-  return [
-    if (position != null && position.quantity > 0 && (currency == null || position.currency == currency))
-      ChartLevel(price: position.averageCost, label: l10n.chartAvgCost, color: p.accent),
+  final alertLevels = [
     for (final a in services.alerts.forSymbol(symbol))
       if (a.isActive && a.kind != AlertKind.move && (a.currency == null || currency == null || a.currency == currency))
         // Követő stopnál a mostani csúcsból számolt szint.
-        if (a.kind == AlertKind.trailing ? a.trailingLevel : a.value case final level?)
-          ChartLevel(price: level, label: l10n.chartAlertLevel, color: p.muted),
+        ?(a.kind == AlertKind.trailing ? a.trailingLevel : a.value),
+  ];
+  // Sok riasztásnál csak a mostani árhoz legközelebbiek: a grafikon olvasható marad.
+  if (price != null) alertLevels.sort((a, b) => (a - price).abs().compareTo((b - price).abs()));
+  return [
+    if (position != null && position.quantity > 0 && (currency == null || position.currency == currency))
+      ChartLevel(price: position.averageCost, label: l10n.chartAvgCost, color: p.accent),
+    for (final level in alertLevels.take(maxChartAlertLevels))
+      ChartLevel(price: level, label: l10n.chartAlertLevel, color: p.muted),
   ];
 }
+
+/// Legfeljebb ennyi riasztási szint látszik a grafikonon (a többi a riasztások listájában).
+const maxChartAlertLevels = 4;

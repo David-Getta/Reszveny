@@ -2878,6 +2878,27 @@ class AppLocalizationsJv extends AppLocalizations {
       'Data sampeyan kegedhèn kanggo disinkronaké karo akun sampeyan. Busak transaksi utawa cathetan sing wis ora dibutuhaké, banjur bakal dicoba manèh.';
 
   @override
+  String get noteFull =>
+      'Cathetan kanggo saham iki wis kebak, mula entri iki ora ditambahake. Cekakna cathetane banjur coba maneh.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Ora ana kurs kanggo $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count dividen ing $currencies ora duwe kurs lan ora diétung ing total.',
+      one: '1 dividen ing $currencies ora duwe kurs lan ora diétung ing total.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

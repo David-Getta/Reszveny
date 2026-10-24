@@ -202,7 +202,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                         key: ValueKey('open-lot-$i'),
                         dense: true,
                         leading: Icon(Icons.inventory_2_outlined, color: p.muted, size: 20),
-                        title: Text('${qty(o.quantity)} × ${fmt.money(o.price, now.currency)}'),
+                        title: Text('${qty(o.quantity)} × ${fmt.unit(o.price, now.currency)}'),
                         subtitle: o.date == null ? null : Text(fmt.date(o.date)),
                         trailing: currentPrice == null
                             ? null
@@ -226,7 +226,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                         color: lot.sell ? p.accent : p.muted,
                       ),
                       title: Text(
-                        '${lot.sell ? '${l10n.portfolioSold} ' : ''}${qty(lot.quantity)} × ${fmt.money(lot.price, lot.currency)}',
+                        '${lot.sell ? '${l10n.portfolioSold} ' : ''}${qty(lot.quantity)} × ${fmt.unit(lot.price, lot.currency)}',
                       ),
                       // Minden számla nézetében a tétel számlája is (ha van).
                       subtitle: switch ([

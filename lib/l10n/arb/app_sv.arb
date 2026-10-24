@@ -854,5 +854,8 @@
   "restoreNothing": "Inga tidigare köp hittades att återställa.",
   "manageSubscriptionElsewhere": "Det finns ingen prenumeration att hantera här. En prenumeration som köpts i App Store eller Google Play hanteras i butikens inställningar.",
   "backupFailed": "Säkerhetskopian kunde inte sparas. Försök igen.",
-  "syncTooLarge": "Dina data är för stora för att synkroniseras med ditt konto. Radera transaktioner eller anteckningar du inte längre behöver, så görs ett nytt försök."
+  "syncTooLarge": "Dina data är för stora för att synkroniseras med ditt konto. Radera transaktioner eller anteckningar du inte längre behöver, så görs ett nytt försök.",
+  "noteFull": "Anteckningen för den här aktien är full, så posten lades inte till. Korta anteckningen och försök igen.",
+  "portfolioNoRateFor": "Ingen växelkurs för {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 utdelning i {currencies} saknar} other{{count} utdelningar i {currencies} saknar}} växelkurs och räknas inte med i summorna."
 }

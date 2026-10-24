@@ -2948,6 +2948,28 @@ class AppLocalizationsAr extends AppLocalizations {
       'بياناتك كبيرة جدًا بحيث تتعذّر مزامنتها مع حسابك. احذف المعاملات أو الملاحظات التي لم تعد بحاجة إليها، وستتم إعادة المحاولة.';
 
   @override
+  String get noteFull =>
+      'ملاحظات هذا السهم ممتلئة، لذا لم تتم إضافة هذا الإدخال. اختصر الملاحظات وحاول مرة أخرى.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'لا يوجد سعر صرف لـ $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count من توزيعات الأرباح بـ $currencies ليس لها سعر صرف، لذا لا تُحتسب في الإجماليات.',
+      one:
+          'توزيع أرباح واحد بـ $currencies ليس له سعر صرف، لذا لا يُحتسب في الإجماليات.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

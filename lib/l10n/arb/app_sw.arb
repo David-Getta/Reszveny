@@ -854,5 +854,8 @@
   "restoreNothing": "Hakuna manunuzi ya awali yaliyopatikana ya kurejesha.",
   "manageSubscriptionElsewhere": "Hakuna usajili wa kudhibiti hapa. Usajili ulionunuliwa kwenye App Store au Google Play hudhibitiwa kwenye mipangilio ya duka.",
   "backupFailed": "Nakala rudufu haikuweza kuhifadhiwa. Tafadhali jaribu tena.",
-  "syncTooLarge": "Data yako ni kubwa mno kusawazishwa na akaunti yako. Futa miamala au madokezo usiyoyahitaji tena, kisha itajaribu tena."
+  "syncTooLarge": "Data yako ni kubwa mno kusawazishwa na akaunti yako. Futa miamala au madokezo usiyoyahitaji tena, kisha itajaribu tena.",
+  "noteFull": "Dokezo la hisa hii limejaa, kwa hivyo ingizo hili halikuongezwa. Fupisha dokezo kisha ujaribu tena.",
+  "portfolioNoRateFor": "Hakuna kiwango cha ubadilishaji kwa {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Gawio 1 kwa {currencies} halina kiwango cha ubadilishaji na halijajumuishwa kwenye jumla.} other{Magawio {count} kwa {currencies} hayana kiwango cha ubadilishaji na hayajajumuishwa kwenye jumla.}}"
 }

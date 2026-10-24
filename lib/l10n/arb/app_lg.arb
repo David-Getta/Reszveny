@@ -854,5 +854,8 @@
   "restoreNothing": "Tewali bye wagula edda ebizuuliddwa okuzzaawo.",
   "manageSubscriptionElsewhere": "Wano tewali kwewandiisa kwa kuddukanya. Okwewandiisa okwagulwa mu App Store oba Google Play kuddukanyizibwa mu nsengeka z'edduuka.",
   "backupFailed": "Kkopi ey'obukuumi tesobodde kuterekebwa. Gezaako nate.",
-  "syncTooLarge": "Data yo nnene nnyo okukwataganyizibwa n'akawunti yo. Sangula bye wagula ne bye watunda oba ebiwandiiko by'otokyetaaga, olwo kujja kuddamu okugezaako."
+  "syncTooLarge": "Data yo nnene nnyo okukwataganyizibwa n'akawunti yo. Sangula bye wagula ne bye watunda oba ebiwandiiko by'otokyetaaga, olwo kujja kuddamu okugezaako.",
+  "noteFull": "Ebiwandiiko by'omugabo guno bijjudde, kyova ekiwandiiko kino tekyongeddwako. Simpaya ebiwandiiko ogezeeko nate.",
+  "portfolioNoRateFor": "Tewali muwendo gw'okuwaanyisa ensimbi ogwa {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Dividendi 1 mu {currencies} terina muwendo gw'okuwaanyisa ensimbi, kyova etabalibwa mu mugatte.} other{Dividendi {count} mu {currencies} tezirina muwendo gw'okuwaanyisa ensimbi, kyova tezibalibwa mu mugatte.}}"
 }

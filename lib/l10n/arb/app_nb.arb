@@ -854,5 +854,8 @@
   "restoreNothing": "Fant ingen tidligere kjøp å gjenopprette.",
   "manageSubscriptionElsewhere": "Det finnes ikke noe abonnement å administrere her. Et abonnement kjøpt i App Store eller Google Play administreres i butikkens innstillinger.",
   "backupFailed": "Sikkerhetskopien kunne ikke lagres. Prøv igjen.",
-  "syncTooLarge": "Dataene dine er for store til å synkroniseres med kontoen din. Slett transaksjoner eller notater du ikke lenger trenger, så prøves det på nytt."
+  "syncTooLarge": "Dataene dine er for store til å synkroniseres med kontoen din. Slett transaksjoner eller notater du ikke lenger trenger, så prøves det på nytt.",
+  "noteFull": "Notatet for denne aksjen er fullt, så denne oppføringen ble ikke lagt til. Forkort notatet og prøv igjen.",
+  "portfolioNoRateFor": "Ingen valutakurs for {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 utbytte i {currencies} har} other{{count} utbytter i {currencies} har}} ingen valutakurs og er ikke med i summene."
 }

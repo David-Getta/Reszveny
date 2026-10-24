@@ -2879,6 +2879,28 @@ class AppLocalizationsKi extends AppLocalizations {
       'Data yaku nĩ nene mũno gũtũma ĩkorwo o ũndũ ũmwe na akaunti yaku. Eheria ũgũri na ũendia kana maandĩko marĩa ũtabatarĩte rĩngĩ, nayo nĩ ĩkũgeria rĩngĩ.';
 
   @override
+  String get noteFull =>
+      'Maandĩko ma hisa ĩno nĩ maiyũrĩte, nĩ ũndũ ũcio ũndũ ũyũ ndwongereirwo. Nyiihia maandĩko macio na ũgerie rĩngĩ.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Gũtirĩ kĩgero kĩa gũcenjia mbeca kĩa $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Mĩgai ya faida $count ya $currencies ndĩrĩ na kĩgero kĩa gũcenjia mbeca, nĩ ũndũ ũcio ndĩtaranĩtwo mũigana-inĩ wothe.',
+      one:
+          'Mũgai wa faida 1 wa $currencies ndũrĩ na kĩgero kĩa gũcenjia mbeca, nĩ ũndũ ũcio ndũtaranĩtwo mũigana-inĩ wothe.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

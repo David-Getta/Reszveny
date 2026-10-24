@@ -854,5 +854,8 @@
   "restoreNothing": "Palibe zogula zakale zomwe zapezeka kuti zibwezeretsedwe.",
   "manageSubscriptionElsewhere": "Palibe kulembetsa koti muyang'anire pano. Kulembetsa komwe munagula mu App Store kapena Google Play kumayang'aniridwa mu zokonda za sitolo.",
   "backupFailed": "Zosunga zobwezera sizinathe kusungidwa. Chonde yesaninso.",
-  "syncTooLarge": "Deta yanu ndi yayikulu kwambiri kuti ilumikizidwe ndi akaunti yanu. Chotsani zogula ndi zogulitsa kapena zolemba zomwe simukuzifunanso, ndipo kudzayesanso."
+  "syncTooLarge": "Deta yanu ndi yayikulu kwambiri kuti ilumikizidwe ndi akaunti yanu. Chotsani zogula ndi zogulitsa kapena zolemba zomwe simukuzifunanso, ndipo kudzayesanso.",
+  "noteFull": "Zolemba za sheya iyi zadzaza, choncho cholemba ichi sichinawonjezedwe. Fupikitsani zolembazo ndipo yesaninso.",
+  "portfolioNoRateFor": "Palibe mtengo wosinthira ndalama wa {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Dividendi 1 mu {currencies} ilibe mtengo wosinthira ndalama, choncho siyiwerengedwa mu ziwerengero zonse.} other{Madividendi {count} mu {currencies} alibe mtengo wosinthira ndalama, choncho sawerengedwa mu ziwerengero zonse.}}"
 }

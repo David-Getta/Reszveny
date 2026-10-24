@@ -2873,6 +2873,28 @@ class AppLocalizationsId extends AppLocalizations {
       'Data Anda terlalu besar untuk disinkronkan dengan akun Anda. Hapus transaksi atau catatan yang tidak lagi Anda perlukan, lalu sinkronisasi akan dicoba lagi.';
 
   @override
+  String get noteFull =>
+      'Catatan untuk saham ini sudah penuh, jadi entri ini tidak ditambahkan. Persingkat catatan dan coba lagi.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Tidak ada kurs untuk $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count dividen dalam $currencies tidak memiliki kurs dan tidak dihitung dalam total.',
+      one:
+          '1 dividen dalam $currencies tidak memiliki kurs dan tidak dihitung dalam total.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

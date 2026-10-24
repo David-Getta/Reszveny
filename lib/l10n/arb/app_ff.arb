@@ -854,5 +854,8 @@
   "restoreNothing": "Yiytaaka ko a soodiino adii ngam artirde.",
   "manageSubscriptionElsewhere": "Alaa abonmaa toppitetee ɗoo. Abonmaa soodaaɗo e App Store walla Google Play ina toppitee e teelte bitik ngon.",
   "backupFailed": "Horiima danndude kopi ndi. Tiiɗno eto goɗngol.",
-  "syncTooLarge": "Keɓe maa ina mawni no feewi ngam sync e konte maa. Momtu soodgol e yeeyugol walla binndi ɗi a haajaaki kadi, ɗum fuɗɗittoto."
+  "syncTooLarge": "Keɓe maa ina mawni no feewi ngam sync e konte maa. Momtu soodgol e yeeyugol walla binndi ɗi a haajaaki kadi, ɗum fuɗɗittoto.",
+  "noteFull": "Binndi aksiyoŋ oo heewii, ɗuum waɗi ndee binndol ɓeydaaka. Ustu binndi ɗii, eto kadi.",
+  "portfolioNoRateFor": "Coggu weccitgol alaa wonande {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Dividende 1 e {currencies} alaa coggu weccitgol, ɗuum waɗi o naatnaaka e kuuɓal.} other{Dividendeeji {count} e {currencies} alaa coggu weccitgol, ɗuum waɗi ɗi naatnaaka e kuuɓal.}}"
 }

@@ -854,5 +854,8 @@
   "restoreNothing": "找不到可恢復的過往購買紀錄。",
   "manageSubscriptionElsewhere": "這裡沒有可管理的訂閱。在 App Store 或 Google Play 購買的訂閱須於商店設定中管理。",
   "backupFailed": "無法儲存備份。請再試一次。",
-  "syncTooLarge": "資料過大，無法與帳戶同步。刪除不再需要的交易記錄或筆記後，系統會自動重試。"
+  "syncTooLarge": "資料過大，無法與帳戶同步。刪除不再需要的交易記錄或筆記後，系統會自動重試。",
+  "noteFull": "此股票的筆記已滿，這項內容未有加入。請縮短筆記後再試一次。",
+  "portfolioNoRateFor": "{symbols}沒有匯率。",
+  "dividendsNotConverted": "{count, plural, =1{1 筆以{currencies}計的股息沒有匯率，未計入總計。} other{{count} 筆以{currencies}計的股息沒有匯率，未計入總計。}}"
 }

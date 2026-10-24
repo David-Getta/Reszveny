@@ -2893,6 +2893,28 @@ class AppLocalizationsLn extends AppLocalizations {
       'Ba données na yo eleki monene mpo na synchronisation na compte na yo. Limwisa bosombi mpe boteki to ba note oyo osengeli na yango lisusu te, mpe ekomeka lisusu.';
 
   @override
+  String get noteFull =>
+      'Ba note ya action oyo etondi, yango wana likambo oyo ebakisami te. Kitisa ba note mpe meka lisusu.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Taux ya mbɔngɔ ezali te mpo na $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Ba dividende $count na $currencies ezangi taux ya mbɔngɔ, yango wana etangami te na mitango.',
+      one:
+          'Dividende $count na $currencies ezangi taux ya mbɔngɔ, yango wana etangami te na mitango.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

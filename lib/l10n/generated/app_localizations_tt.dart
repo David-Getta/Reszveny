@@ -2873,6 +2873,28 @@ class AppLocalizationsTt extends AppLocalizations {
       'Мәгълүматларыгыз аккаунтыгыз белән синхронлаштыру өчен артык зур. Кирәкмәгән операцияләрне яки язмаларны бетерегез, шуннан соң кабат омтылыш ясалачак.';
 
   @override
+  String get noteFull =>
+      'Бу акциянең язмасы тулы, шуңа күрә бу язу өстәлмәде. Язманы кыскартыгыз һәм кабат тырышып карагыз.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols өчен валюта курсы юк.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies валютасындагы $count дивидендның валюта курсы юк, шуңа күрә алар гомуми суммага кертелмәде.',
+      one:
+          '$currencies валютасындагы 1 дивидендның валюта курсы юк, шуңа күрә ул гомуми суммага кертелмәде.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

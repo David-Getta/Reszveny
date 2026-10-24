@@ -854,5 +854,8 @@
   "restoreNothing": "Nta vyo waguze imbere vyabonetse ngo bigarurwe.",
   "manageSubscriptionElsewhere": "Ng'aha nta yandikisha ryo kugenzura. Iyandikisha waguze muri App Store canke Google Play rigenzurirwa mu vyo gutunganya vy'iduka.",
   "backupFailed": "Ububiko bw'ingoboka ntibwashoboye kubikwa. Subira ugerageze.",
-  "syncTooLarge": "Amakuru yawe ni menshi cane ku buryo adashobora guhuzwa na konti yawe. Futa ivyaguzwe n'ivyagurishijwe canke ivyo wanditse utagikeneye, hanyuma bizosubira kugerageza."
+  "syncTooLarge": "Amakuru yawe ni menshi cane ku buryo adashobora guhuzwa na konti yawe. Futa ivyaguzwe n'ivyagurishijwe canke ivyo wanditse utagikeneye, hanyuma bizosubira kugerageza.",
+  "noteFull": "Ivyo wanditse kuri uyu mugabane vyuzuye, ni co gituma iki canditswe kitongewemwo. Gabanya ivyo wanditse maze usubire ugerageze.",
+  "portfolioNoRateFor": "Nta gipimo c'ivunjisha ca {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Idividende 1 muri {currencies} ntirifise igipimo c'ivunjisha, ntiriharurwa mu giteranyo.} other{Amadividende {count} muri {currencies} ntafise igipimo c'ivunjisha, ntaharurwa mu giteranyo.}}"
 }

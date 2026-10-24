@@ -854,5 +854,8 @@
   "restoreNothing": "Nuk u gjetën blerje të mëparshme për t’u rikthyer.",
   "manageSubscriptionElsewhere": "Këtu nuk ka abonim për t’u menaxhuar. Një abonim i blerë në App Store ose Google Play menaxhohet te cilësimet e dyqanit.",
   "backupFailed": "Kopja rezervë nuk mund të ruhej. Ju lutemi provoni përsëri.",
-  "syncTooLarge": "Të dhënat tuaja janë shumë të mëdha për t’u sinkronizuar me llogarinë tuaj. Fshini transaksionet ose shënimet që nuk ju duhen më dhe do të provohet përsëri."
+  "syncTooLarge": "Të dhënat tuaja janë shumë të mëdha për t’u sinkronizuar me llogarinë tuaj. Fshini transaksionet ose shënimet që nuk ju duhen më dhe do të provohet përsëri.",
+  "noteFull": "Shënimi për këtë aksion është plot, ndaj ky regjistrim nuk u shtua. Shkurtojeni shënimin dhe provoni përsëri.",
+  "portfolioNoRateFor": "Nuk ka kurs këmbimi për {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividend në {currencies} nuk ka} other{{count} dividendë në {currencies} nuk kanë}} kurs këmbimi dhe {count, plural, =1{nuk përfshihet} other{nuk përfshihen}} në totale."
 }

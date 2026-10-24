@@ -2893,6 +2893,28 @@ class AppLocalizationsQu extends AppLocalizations {
       'Datosniykiqa nisyu hatunmi cuentaykiwan sincronizanapaq. Manaña munasqayki rantiy rantikuykunata utaq qillqasqakunata pichay, hinaspa yapamanta kallpachakunqa.';
 
   @override
+  String get noteFull =>
+      'Kay accionpa qillqasqanqa hunt\'añam, chayrayku kay qillqataqa mana yapakurqanchu. Qillqasqata pisiyachiy, hinaspa huktawan ruway.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols-paq tipo de cambio mana kanchu.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies-pi $count dividendokunapaq tipo de cambio mana kanchu, chayrayku llapan yupaykunapi mana yupakunchu.',
+      one:
+          '$currencies-pi 1 dividendopaq tipo de cambio mana kanchu, chayrayku llapan yupaykunapi mana yupakunchu.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

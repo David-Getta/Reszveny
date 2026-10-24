@@ -2952,6 +2952,28 @@ class AppLocalizationsSk extends AppLocalizations {
       'Vaše údaje sú príliš veľké na synchronizáciu s vaším účtom. Odstráňte transakcie alebo poznámky, ktoré už nepotrebujete, a skúsi sa to znova.';
 
   @override
+  String get noteFull =>
+      'Poznámka k tejto akcii je plná, preto sa tento záznam nepridal. Skráťte poznámku a skúste to znova.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Pre $symbols nie je k dispozícii výmenný kurz.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividendy v $currencies bez výmenného kurzu nie sú zahrnuté v súčtoch (počet: $count).',
+      one:
+          '1 dividenda v $currencies nemá výmenný kurz a nie je zahrnutá v súčtoch.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

@@ -854,5 +854,8 @@
   "restoreNothing": "Tiada pembelian terdahulu ditemui untuk dipulihkan.",
   "manageSubscriptionElsewhere": "Tiada langganan untuk diurus di sini. Langganan yang dibeli di App Store atau Google Play diurus dalam tetapan gedung.",
   "backupFailed": "Sandaran tidak dapat disimpan. Sila cuba lagi.",
-  "syncTooLarge": "Data anda terlalu besar untuk disegerakkan dengan akaun anda. Padam transaksi atau nota yang tidak diperlukan lagi, dan ia akan cuba lagi."
+  "syncTooLarge": "Data anda terlalu besar untuk disegerakkan dengan akaun anda. Padam transaksi atau nota yang tidak diperlukan lagi, dan ia akan cuba lagi.",
+  "noteFull": "Nota untuk saham ini sudah penuh, jadi entri ini tidak ditambah. Pendekkan nota dan cuba lagi.",
+  "portfolioNoRateFor": "Tiada kadar pertukaran untuk {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividen dalam {currencies} tiada kadar pertukaran dan tidak dimasukkan dalam jumlah.} other{{count} dividen dalam {currencies} tiada kadar pertukaran dan tidak dimasukkan dalam jumlah.}}"
 }

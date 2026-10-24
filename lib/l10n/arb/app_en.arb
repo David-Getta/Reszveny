@@ -2528,6 +2528,25 @@
   "@syncTooLarge": {
     "description": "Shown under the sync row in Settings when the server rejected the upload because the synced data is over its size limit (about 2 MB)."
   },
+  "noteFull": "The note for this stock is full, so this entry was not added. Shorten the note and try again.",
+  "@noteFull": {
+    "description": "Snackbar when a trade note or a saved AI answer could not be appended because the stock's note already reached its maximum length (4,000 characters)."
+  },
+  "portfolioNoRateFor": "No exchange rate for {symbols}.",
+  "@portfolioNoRateFor": {
+    "description": "Under the portfolio totals: these positions have a price, but their currency could not be converted to the totals' currency, so they are left out. symbols is a comma-separated list of tickers.",
+    "placeholders": {
+      "symbols": {"type": "String", "example": "2330.TW, 0700.HK"}
+    }
+  },
+  "dividendsNotConverted": "{count, plural, =1{1 dividend in {currencies} has no exchange rate and is left out of the totals.} other{{count} dividends in {currencies} have no exchange rate and are left out of the totals.}}",
+  "@dividendsNotConverted": {
+    "description": "Note on the received dividends card: dividends in these currencies could not be converted (no exchange rate available), so they are missing from the totals. currencies is a comma-separated list of currency codes.",
+    "placeholders": {
+      "count": {"type": "int", "example": "2"},
+      "currencies": {"type": "String", "example": "TWD"}
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

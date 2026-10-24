@@ -2880,6 +2880,28 @@ class AppLocalizationsSw extends AppLocalizations {
       'Data yako ni kubwa mno kusawazishwa na akaunti yako. Futa miamala au madokezo usiyoyahitaji tena, kisha itajaribu tena.';
 
   @override
+  String get noteFull =>
+      'Dokezo la hisa hii limejaa, kwa hivyo ingizo hili halikuongezwa. Fupisha dokezo kisha ujaribu tena.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Hakuna kiwango cha ubadilishaji kwa $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Magawio $count kwa $currencies hayana kiwango cha ubadilishaji na hayajajumuishwa kwenye jumla.',
+      one:
+          'Gawio 1 kwa $currencies halina kiwango cha ubadilishaji na halijajumuishwa kwenye jumla.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

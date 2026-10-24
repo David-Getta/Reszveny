@@ -543,7 +543,9 @@ class _LinePainter extends CustomPainter {
       tp.dispose();
     }
 
-    // Szintek: szaggatott vonal, bal oldalt címke.
+    // Szintek: szaggatott vonal, bal oldalt címke (az egymásra kerülő címkék közül csak
+    // az első – sok közeli szintnél a feliratok ne takarják el a görbét).
+    final labelled = <(double, double)>[];
     for (final l in shown) {
       final y = h - (l.price - min) / span * (h - 8) - 4;
       final dash = Paint()
@@ -560,6 +562,11 @@ class _LinePainter extends CustomPainter {
         textDirection: TextDirection.ltr,
       )..layout(maxWidth: w);
       final ty = (y - tp.height - 1).clamp(0.0, h - tp.height);
+      if (labelled.any((r) => ty < r.$2 && ty + tp.height > r.$1)) {
+        tp.dispose();
+        continue;
+      }
+      labelled.add((ty, ty + tp.height));
       canvas.drawRect(
         Rect.fromLTWH(2, ty, tp.width + 6, tp.height),
         Paint()..color = background.withValues(alpha: 0.75),

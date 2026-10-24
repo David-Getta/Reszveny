@@ -854,5 +854,8 @@
   "restoreNothing": "A kò rí ohun tí o ti rà tẹ́lẹ̀ láti dá padà.",
   "manageSubscriptionElsewhere": "Kò sí àsansílẹ̀ kankan láti ṣàkóso níbí. Àsansílẹ̀ tí o rà nínú App Store tàbí Google Play ni a ń ṣàkóso nínú ètò ilé ìtajà.",
   "backupFailed": "A kò lè fi ẹ̀dà ìpamọ́ pamọ́. Jọ̀ọ́ tún gbìyànjú.",
-  "syncTooLarge": "Dátà rẹ ti tóbi jù láti múṣiṣẹ́pọ̀ pẹ̀lú àkáǹtì rẹ. Pa àwọn ìdúnàdúrà tàbí àkọsílẹ̀ tí o kò nílò mọ́ rẹ́, yóò sì tún gbìyànjú."
+  "syncTooLarge": "Dátà rẹ ti tóbi jù láti múṣiṣẹ́pọ̀ pẹ̀lú àkáǹtì rẹ. Pa àwọn ìdúnàdúrà tàbí àkọsílẹ̀ tí o kò nílò mọ́ rẹ́, yóò sì tún gbìyànjú.",
+  "noteFull": "Àkọsílẹ̀ ìpín yìí ti kún, nítorí náà a kò fi èyí kún un. Dín àkọsílẹ̀ náà kù kí o sì tún gbìyànjú.",
+  "portfolioNoRateFor": "Kò sí ìwọ̀n pàṣípààrọ̀ fún {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Ìpín èrè 1 ní {currencies} kò ní ìwọ̀n pàṣípààrọ̀, a kò sì kà á mọ́ àpapọ̀.} other{Ìpín èrè {count} ní {currencies} kò ní ìwọ̀n pàṣípààrọ̀, a kò sì kà wọ́n mọ́ àpapọ̀.}}"
 }

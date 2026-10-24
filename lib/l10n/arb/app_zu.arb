@@ -854,5 +854,8 @@
   "restoreNothing": "Akukho okuthengwe ngaphambilini okutholakele ukuze kubuyiselwe.",
   "manageSubscriptionElsewhere": "Akukho ukubhalisa okungaphathwa lapha. Ukubhalisa okuthengwe ku-App Store noma ku-Google Play kuphathwa kuzilungiselelo zesitolo.",
   "backupFailed": "Isipele asikwazanga ukulondolozwa. Sicela uzame futhi.",
-  "syncTooLarge": "Idatha yakho inkulu kakhulu ukuthi ivumelaniswe ne-akhawunti yakho. Susa ukuthenga nokuthengisa noma amanothi ongasawadingi, bese kuzozama futhi."
+  "syncTooLarge": "Idatha yakho inkulu kakhulu ukuthi ivumelaniswe ne-akhawunti yakho. Susa ukuthenga nokuthengisa noma amanothi ongasawadingi, bese kuzozama futhi.",
+  "noteFull": "Inothi lalesi sheya ligcwele, ngakho lokhu okubhaliwe akwengezwanga. Finyeza inothi bese uzama futhi.",
+  "portfolioNoRateFor": "Alikho izinga lokushintshaniswa kwemali le-{symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Isabelo senzuzo esi-{count} nge-{currencies} asinalo izinga lokushintshaniswa kwemali, ngakho asifakiwe ezingqikithini.} other{Izabelo zenzuzo ezi-{count} nge-{currencies} azinalo izinga lokushintshaniswa kwemali, ngakho azifakiwe ezingqikithini.}}"
 }

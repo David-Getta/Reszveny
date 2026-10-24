@@ -2890,6 +2890,28 @@ class AppLocalizationsFr extends AppLocalizations {
       'Vos données sont trop volumineuses pour être synchronisées avec votre compte. Supprimez les transactions ou notes dont vous n’avez plus besoin, et une nouvelle tentative aura lieu.';
 
   @override
+  String get noteFull =>
+      'Les notes de cette action sont pleines, cette entrée n’a donc pas été ajoutée. Raccourcissez les notes et réessayez.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Pas de taux de change pour $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count dividendes en $currencies n’ont pas de taux de change et ne sont pas comptés dans les totaux.',
+      one:
+          '$count dividende en $currencies n’a pas de taux de change et n’est pas compté dans les totaux.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

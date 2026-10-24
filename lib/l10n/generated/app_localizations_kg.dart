@@ -2890,6 +2890,28 @@ class AppLocalizationsKg extends AppLocalizations {
       'Ba données na nge me luta nene sambu na synchronisation ti compte na nge. Zimbisa kusumba ti kuteka to ba note yina nge ke vandaka diaka ve na mfunu, yo ta meka diaka.';
 
   @override
+  String get noteFull =>
+      'Ba note ya action yayi me fuluka, yo yina diambu yayi ka diyikwamene ko. Kufiotesa ba note ye meka diaka.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Ka kuena taux ya mbongo ya $symbols ko.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Ba dividende $count na $currencies ka zina ye taux ya mbongo ko, ka zitangwanga mu ntalu zawonso ko.',
+      one:
+          'Dividende 1 na $currencies ka ina ye taux ya mbongo ko, ka itangwanga mu ntalu zawonso ko.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

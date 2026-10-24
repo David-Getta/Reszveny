@@ -2876,6 +2876,28 @@ class AppLocalizationsKa extends AppLocalizations {
       'თქვენი მონაცემები ზედმეტად დიდია ანგარიშთან სინქრონიზაციისთვის. წაშალეთ ტრანზაქციები ან ჩანაწერები, რომლებიც აღარ გჭირდებათ, და ხელახლა ცდა მოხდება.';
 
   @override
+  String get noteFull =>
+      'ამ აქციის ჩანაწერები სავსეა, ამიტომ ეს ტექსტი არ დაემატა. შეამოკლეთ ჩანაწერები და სცადეთ ხელახლა.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols-ის გაცვლითი კურსი არ არის.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies-ში $count დივიდენდს არ აქვს გაცვლითი კურსი და ჯამებში არ ითვლება.',
+      one:
+          '$currencies-ში 1 დივიდენდს არ აქვს გაცვლითი კურსი და ჯამებში არ ითვლება.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

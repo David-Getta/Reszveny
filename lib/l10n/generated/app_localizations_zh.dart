@@ -2750,6 +2750,25 @@ class AppLocalizationsZh extends AppLocalizations {
   String get syncTooLarge => '数据过大，无法与账户同步。删除不再需要的交易记录或笔记后，将自动重试。';
 
   @override
+  String get noteFull => '该股票的笔记已满，此条内容未添加。请缩短笔记后重试。';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols暂无汇率。';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 笔以$currencies计的股息没有汇率，未计入合计。',
+      one: '1 笔以$currencies计的股息没有汇率，未计入合计。',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5867,6 +5886,25 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get syncTooLarge => '資料過大，無法與帳戶同步。刪除不再需要的交易記錄或筆記後，系統會自動重試。';
+
+  @override
+  String get noteFull => '此股票的筆記已滿，這項內容未有加入。請縮短筆記後再試一次。';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols沒有匯率。';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 筆以$currencies計的股息沒有匯率，未計入總計。',
+      one: '1 筆以$currencies計的股息沒有匯率，未計入總計。',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => '設定目標';

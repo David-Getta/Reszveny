@@ -2956,6 +2956,28 @@ class AppLocalizationsUk extends AppLocalizations {
       'Ваші дані завеликі для синхронізації з обліковим записом. Видаліть непотрібні операції або нотатки, і буде виконано повторну спробу.';
 
   @override
+  String get noteFull =>
+      'Нотатка до цієї акції заповнена, тому запис не додано. Скоротіть нотатку та спробуйте ще раз.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Немає курсу валют для $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Дивідендів у $currencies без курсу валют: $count. Їх не враховано в підсумках.',
+      one:
+          'Немає курсу валют для $count дивіденду в $currencies, його не враховано в підсумках.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

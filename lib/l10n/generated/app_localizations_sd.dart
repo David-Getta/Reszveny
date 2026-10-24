@@ -2867,6 +2867,28 @@ class AppLocalizationsSd extends AppLocalizations {
       'توهان جو ڊيٽا توهان جي اڪائونٽ سان سنڪ ڪرڻ لاءِ تمام وڏو آهي. اهي ليڻ دين يا نوٽس ميٽيو جن جي هاڻي ضرورت ناهي، پوءِ اهو ٻيهر ڪوشش ڪندو.';
 
   @override
+  String get noteFull =>
+      'هن شيئر جو نوٽ ڀرجي ويو آهي، تنهن ڪري هي داخلا شامل نه ڪئي وئي. نوٽ مختصر ڪريو ۽ ٻيهر ڪوشش ڪريو.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols لاءِ مٽا سٽا جي شرح موجود ناهي.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies ۾ $count ڊيويڊنڊن جي مٽا سٽا جي شرح موجود ناهي، تنهن ڪري اهي مجموعن ۾ شامل ناهن.',
+      one:
+          '$currencies ۾ 1 ڊيويڊنڊ جي مٽا سٽا جي شرح موجود ناهي، تنهن ڪري اهو مجموعن ۾ شامل ناهي.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

@@ -2876,6 +2876,28 @@ class AppLocalizationsUr extends AppLocalizations {
       'آپ کا ڈیٹا آپ کے اکاؤنٹ کے ساتھ سنک کرنے کے لیے بہت بڑا ہے۔ وہ لین دین یا نوٹس حذف کریں جن کی اب ضرورت نہیں، پھر یہ دوبارہ کوشش کرے گا۔';
 
   @override
+  String get noteFull =>
+      'اس شیئر کا نوٹ بھر چکا ہے، اس لیے یہ اندراج شامل نہیں کیا گیا۔ نوٹ مختصر کریں اور دوبارہ کوشش کریں۔';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols کے لیے شرح تبادلہ دستیاب نہیں۔';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies میں $count ڈیویڈنڈز کی شرح تبادلہ دستیاب نہیں، اس لیے یہ مجموعوں میں شامل نہیں۔',
+      one:
+          '$currencies میں 1 ڈیویڈنڈ کی شرح تبادلہ دستیاب نہیں، اس لیے یہ مجموعوں میں شامل نہیں۔',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

@@ -854,5 +854,8 @@
   "restoreNothing": "Gisuñu benn jënd bu jiitu bu ñu mën a delloo.",
   "manageSubscriptionElsewhere": "Amul fii abonmaa bu ñu mën a toppatoo. Abonmaa bu ñu jënde ci App Store walla Google Play, ci tànneefu bitig bi lañuy toppatoo.",
   "backupFailed": "Mënuñu denc kaaraange bi. Jéemaatal.",
-  "syncTooLarge": "Sa xibaar yi dañoo bari lool, mënuñu leen a yemale ak sa kont. Far jënd ak jaay walla notu yi nga soxlaatul, kon dina jéemaat."
+  "syncTooLarge": "Sa xibaar yi dañoo bari lool, mënuñu leen a yemale ak sa kont. Far jënd ak jaay walla notu yi nga soxlaatul, kon dina jéemaat.",
+  "noteFull": "Notu aksiyoŋ bii fees na, kon yokkunu bind bii. Gàttal notu bi te jéemaatal.",
+  "portfolioNoRateFor": "Amul weccit ngir {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividande ci {currencies} amul weccit, kon boolewuñu ko ci mboolem yi.} other{{count} dividande ci {currencies} amuñu weccit, kon boolewuñu leen ci mboolem yi.}}"
 }

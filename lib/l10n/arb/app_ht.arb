@@ -854,5 +854,8 @@
   "restoreNothing": "Nou pa jwenn okenn ansyen acha pou retabli.",
   "manageSubscriptionElsewhere": "Pa gen okenn abònman pou jere isit la. Yon abònman ou achte nan App Store oswa Google Play, se nan paramèt magazen an pou w jere l.",
   "backupFailed": "Nou pa t ka anrejistre sovgad la. Tanpri eseye ankò.",
-  "syncTooLarge": "Done ou yo twò gwo pou senkronize ak kont ou. Efase tranzaksyon oswa nòt ou pa bezwen ankò, epi l ap eseye ankò."
+  "syncTooLarge": "Done ou yo twò gwo pou senkronize ak kont ou. Efase tranzaksyon oswa nòt ou pa bezwen ankò, epi l ap eseye ankò.",
+  "noteFull": "Nòt aksyon sa a plen, kidonk antre sa a pa t ajoute. Fè nòt yo pi kout epi eseye ankò.",
+  "portfolioNoRateFor": "Pa gen to chanj pou {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividann nan {currencies} pa gen to chanj, kidonk li pa konte nan total yo.} other{{count} dividann nan {currencies} pa gen to chanj, kidonk yo pa konte nan total yo.}}"
 }

@@ -854,5 +854,8 @@
   "restoreNothing": "Nie znaleziono wcześniejszych zakupów do przywrócenia.",
   "manageSubscriptionElsewhere": "Nie ma tu subskrypcji do zarządzania. Subskrypcją kupioną w App Store lub Google Play zarządza się w ustawieniach sklepu.",
   "backupFailed": "Nie udało się zapisać kopii zapasowej. Spróbuj ponownie.",
-  "syncTooLarge": "Twoje dane są zbyt duże, aby zsynchronizować je z kontem. Usuń niepotrzebne już transakcje lub notatki, a synchronizacja zostanie ponowiona."
+  "syncTooLarge": "Twoje dane są zbyt duże, aby zsynchronizować je z kontem. Usuń niepotrzebne już transakcje lub notatki, a synchronizacja zostanie ponowiona.",
+  "noteFull": "Notatka do tej akcji jest pełna, więc ten wpis nie został dodany. Skróć notatkę i spróbuj ponownie.",
+  "portfolioNoRateFor": "Brak kursu walut dla {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 dywidenda w {currencies} nie ma kursu walut i nie jest wliczana do sum.} other{Dywidendy w {currencies} bez kursu walut nie są wliczane do sum (liczba: {count}).}}"
 }

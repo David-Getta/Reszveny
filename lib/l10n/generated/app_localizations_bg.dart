@@ -2879,6 +2879,28 @@ class AppLocalizationsBg extends AppLocalizations {
       'Данните ви са твърде големи, за да се синхронизират с акаунта ви. Изтрийте транзакции или бележки, които вече не са ви нужни, и ще бъде опитано отново.';
 
   @override
+  String get noteFull =>
+      'Бележките за тази акция са запълнени, затова този запис не беше добавен. Съкратете бележките и опитайте отново.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Няма валутен курс за $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count дивидента в $currencies нямат валутен курс и не са включени в сборовете.',
+      one:
+          '1 дивидент в $currencies няма валутен курс и не е включен в сборовете.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

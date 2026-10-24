@@ -2867,6 +2867,28 @@ class AppLocalizationsVi extends AppLocalizations {
       'Dữ liệu của bạn quá lớn để đồng bộ hóa với tài khoản. Hãy xóa các giao dịch hoặc ghi chú không còn cần đến, ứng dụng sẽ thử lại.';
 
   @override
+  String get noteFull =>
+      'Ghi chú của cổ phiếu này đã đầy nên mục này chưa được thêm. Hãy rút gọn ghi chú rồi thử lại.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Không có tỷ giá cho $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count khoản cổ tức bằng $currencies không có tỷ giá nên không được tính vào tổng.',
+      one:
+          '1 khoản cổ tức bằng $currencies không có tỷ giá nên không được tính vào tổng.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

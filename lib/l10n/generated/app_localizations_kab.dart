@@ -2876,6 +2876,28 @@ class AppLocalizationsKab extends AppLocalizations {
       'Isefka-k mqqren aṭas akken ad mtawin d umiḍan-ik. Kkes tiɣin d uznuzu neɣ tizmilin ur tesriḍ ara tura, ad yettwaɛreḍ tikkelt nniḍen.';
 
   @override
+  String get noteFull =>
+      'Tizmilin n uksyun-a ččurent, ihi ur yettwarna ara uḍris-a. Senqes tizmilin syen ɛreḍ tikkelt nniḍen.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Ulac azal n ubeddel i $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count n dividendes s $currencies ulac ɣur-sen azal n ubeddel, ur ttwaḥesben ara deg yimḍanen.',
+      one:
+          '1 n dividende s $currencies ulac ɣur-s azal n ubeddel, ur yettwaḥsab ara deg yimḍanen.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

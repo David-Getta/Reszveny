@@ -2798,6 +2798,25 @@ class AppLocalizationsKo extends AppLocalizations {
       '데이터가 너무 커서 계정과 동기화할 수 없습니다. 더 이상 필요 없는 거래나 메모를 삭제하면 다시 시도합니다.';
 
   @override
+  String get noteFull => '이 종목의 메모가 가득 차서 이 내용을 추가하지 못했습니다. 메모를 줄인 후 다시 시도하세요.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols의 환율이 없습니다.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$currencies 배당금 $count건은 환율이 없어 합계에서 제외됩니다.',
+      one: '$currencies 배당금 1건은 환율이 없어 합계에서 제외됩니다.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

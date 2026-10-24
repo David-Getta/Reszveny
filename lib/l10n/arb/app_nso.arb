@@ -854,5 +854,8 @@
   "restoreNothing": "Ga go a hwetšwa tše o di rekilego pele gore di bušetšwe.",
   "manageSubscriptionElsewhere": "Ga go na ngwadišo ye e ka laolwago mo. Ngwadišo ye e rekilwego go App Store goba Google Play e laolwa go dipeakanyo tša lebenkele.",
   "backupFailed": "Polokelo ya thekgo e be e sa kgone go bolokwa. Hle leka gape.",
-  "syncTooLarge": "Data ya gago e kgolo kudu go ka sinkronaišwa le akhaonto ya gago. Phumola dithekišano goba dintlha tšeo o sa di nyakego gape, gomme go tla lekwa gape."
+  "syncTooLarge": "Data ya gago e kgolo kudu go ka sinkronaišwa le akhaonto ya gago. Phumola dithekišano goba dintlha tšeo o sa di nyakego gape, gomme go tla lekwa gape.",
+  "noteFull": "Ntlha ya šere ye e tletše, ka fao tsenyo ye ga se ya okelwa. Khutsofatša ntlha gomme o leke gape.",
+  "portfolioNoRateFor": "Ga go na tekanyo ya phetošo ya tšhelete ya {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Dividende e 1 ka {currencies} ga e na tekanyo ya phetošo ya tšhelete, ka fao ga e akaretšwe go palomoka.} other{Dividende tše {count} ka {currencies} ga di na tekanyo ya phetošo ya tšhelete, ka fao ga di akaretšwe go palomoka.}}"
 }

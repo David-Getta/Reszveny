@@ -2897,6 +2897,28 @@ class AppLocalizationsSt extends AppLocalizations {
       'Data ya hao e kgolo haholo hore e ka sinkronaeswa le akhaonto ya hao. Hlakola ditheko le dithekiso kapa dintlha tseo o sa di hlokeng hape, mme ho tla lekwa hape.';
 
   @override
+  String get noteFull =>
+      'Ntlha ya shere ena e tletse, kahoo kenyo ena ha e a eketswa. Kgutsufatsa ntlha mme o leke hape.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Ha ho sekgahla sa phapanyetsano sa $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividende tse $count ka $currencies ha di na sekgahla sa phapanyetsano, kahoo ha di a kenyelletswa dikakaretsong.',
+      one:
+          'Dividende e 1 ka $currencies ha e na sekgahla sa phapanyetsano, kahoo ha e a kenyelletswa dikakaretsong.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

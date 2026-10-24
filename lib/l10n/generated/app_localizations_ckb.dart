@@ -2879,6 +2879,28 @@ class AppLocalizationsCkb extends AppLocalizations {
       'داتاکانت زۆر گەورەن بۆ هاوکاتکردن لەگەڵ هەژمارەکەت. ئەو مامەڵە یان تێبینییانەی چیتر پێویستت پێیان نییە بیانسڕەوە، ئینجا دووبارە هەوڵ دەدرێتەوە.';
 
   @override
+  String get noteFull =>
+      'تێبینییەکانی ئەم پشکە پڕ بوون، بۆیە ئەم تۆمارە زیاد نەکرا. تێبینییەکان کورت بکەرەوە و دووبارە هەوڵ بدەرەوە.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'نرخی گۆڕینەوە بۆ $symbols نییە.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count پشکی قازانج بە $currencies نرخی گۆڕینەوەیان نییە و لە کۆکان دەرکراون.',
+      one:
+          '1 پشکی قازانج بە $currencies نرخی گۆڕینەوەی نییە و لە کۆکان دەرکراوە.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

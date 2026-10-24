@@ -2879,6 +2879,28 @@ class AppLocalizationsKy extends AppLocalizations {
       'Маалыматтарыңыз аккаунт менен шайкештирүү үчүн өтө чоң. Мындан ары керексиз транзакцияларды же жазууларды өчүрүңүз, ошондо кайра аракет кылынат.';
 
   @override
+  String get noteFull =>
+      'Бул акциянын жазуулары толуп калды, ошондуктан бул текст кошулган жок. Жазууларды кыскартып, кайра аракет кылыңыз.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols үчүн алмашуу курсу жок.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies валютасындагы $count дивидендтин алмашуу курсу жок, ошондуктан алар жыйынтыкка кирбейт.',
+      one:
+          '$currencies валютасындагы 1 дивидендтин алмашуу курсу жок, ошондуктан ал жыйынтыкка кирбейт.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

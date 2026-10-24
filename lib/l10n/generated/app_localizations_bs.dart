@@ -2925,6 +2925,28 @@ class AppLocalizationsBs extends AppLocalizations {
       'Vaši podaci su preveliki za sinhronizaciju s vašim računom. Izbrišite transakcije ili bilješke koje vam više ne trebaju i ponovo će se pokušati.';
 
   @override
+  String get noteFull =>
+      'Bilješke o ovoj dionici su popunjene, pa ovaj unos nije dodan. Skratite bilješke i pokušajte ponovo.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Nema kursa za $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividende u $currencies ($count) nemaju kursa i nisu uračunate u ukupne iznose.',
+      one:
+          '$count dividenda u $currencies nema kursa i nije uračunata u ukupne iznose.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

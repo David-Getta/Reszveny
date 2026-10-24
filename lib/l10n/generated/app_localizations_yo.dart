@@ -2873,6 +2873,28 @@ class AppLocalizationsYo extends AppLocalizations {
       'Dátà rẹ ti tóbi jù láti múṣiṣẹ́pọ̀ pẹ̀lú àkáǹtì rẹ. Pa àwọn ìdúnàdúrà tàbí àkọsílẹ̀ tí o kò nílò mọ́ rẹ́, yóò sì tún gbìyànjú.';
 
   @override
+  String get noteFull =>
+      'Àkọsílẹ̀ ìpín yìí ti kún, nítorí náà a kò fi èyí kún un. Dín àkọsílẹ̀ náà kù kí o sì tún gbìyànjú.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Kò sí ìwọ̀n pàṣípààrọ̀ fún $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Ìpín èrè $count ní $currencies kò ní ìwọ̀n pàṣípààrọ̀, a kò sì kà wọ́n mọ́ àpapọ̀.',
+      one:
+          'Ìpín èrè 1 ní $currencies kò ní ìwọ̀n pàṣípààrọ̀, a kò sì kà á mọ́ àpapọ̀.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

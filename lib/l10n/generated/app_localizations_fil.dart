@@ -2885,6 +2885,28 @@ class AppLocalizationsFil extends AppLocalizations {
       'Masyadong malaki ang iyong data para ma-sync sa iyong account. Burahin ang mga transaksyon o tala na hindi mo na kailangan, at susubukan itong muli.';
 
   @override
+  String get noteFull =>
+      'Puno na ang mga tala para sa stock na ito, kaya hindi naidagdag ang entry na ito. Paikliin ang mga tala at subukang muli.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Walang exchange rate para sa $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Walang exchange rate ang $count dibidendo sa $currencies, kaya hindi kasama ang mga ito sa mga kabuuan.',
+      one:
+          'Walang exchange rate ang $count dibidendo sa $currencies, kaya hindi ito kasama sa mga kabuuan.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

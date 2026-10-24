@@ -2838,6 +2838,26 @@ class AppLocalizationsAm extends AppLocalizations {
       'ውሂብዎ ከመለያዎ ጋር ለማስመር በጣም ትልቅ ነው። ከእንግዲህ የማያስፈልጉዎትን ግብይቶች ወይም ማስታወሻዎች ይሰርዙ፣ ከዚያ እንደገና ይሞከራል።';
 
   @override
+  String get noteFull =>
+      'የዚህ አክሲዮን ማስታወሻዎች ሞልተዋል፤ ስለዚህ ይህ ግቤት አልታከለም። ማስታወሻዎቹን ያሳጥሩና እንደገና ይሞክሩ።';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'ለ$symbols የምንዛሬ ተመን የለም።';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'በ$currencies ያሉ $count የትርፍ ድርሻዎች የምንዛሬ ተመን ስለሌላቸው ከድምሩ ውጭ ናቸው።',
+      one: 'በ$currencies ያለ $count የትርፍ ድርሻ የምንዛሬ ተመን ስለሌለው ከድምሩ ውጭ ነው።',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

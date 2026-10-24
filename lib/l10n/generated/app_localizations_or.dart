@@ -2873,6 +2873,28 @@ class AppLocalizationsOr extends AppLocalizations {
       'ଆପଣଙ୍କ ଡାଟା ଆପଣଙ୍କ ଆକାଉଣ୍ଟ ସହ ସିଙ୍କ କରିବା ପାଇଁ ବହୁତ ବଡ଼। ଆଉ ଆବଶ୍ୟକ ନଥିବା କାରବାର ବା ନୋଟ୍ ଡିଲିଟ କରନ୍ତୁ, ତା\'ପରେ ଏହା ପୁଣି ଚେଷ୍ଟା କରିବ।';
 
   @override
+  String get noteFull =>
+      'ଏହି ସେୟାରର ନୋଟ୍ ପୂର୍ଣ୍ଣ ହୋଇଯାଇଛି, ତେଣୁ ଏହି ଏଣ୍ଟ୍ରି ଯୋଡ଼ାଗଲା ନାହିଁ। ନୋଟ୍ ଛୋଟ କରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols ପାଇଁ ବିନିମୟ ହାର ଉପଲବ୍ଧ ନାହିଁ।';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currenciesରେ ଥିବା $countଟି ଡିଭିଡେଣ୍ଡର ବିନିମୟ ହାର ନାହିଁ, ତେଣୁ ସେଗୁଡ଼ିକୁ ମୋଟ ହିସାବରେ ଧରାଯାଇନାହିଁ।',
+      one:
+          '$currenciesରେ ଥିବା 1ଟି ଡିଭିଡେଣ୍ଡର ବିନିମୟ ହାର ନାହିଁ, ତେଣୁ ଏହାକୁ ମୋଟ ହିସାବରେ ଧରାଯାଇନାହିଁ।',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

@@ -2878,6 +2878,28 @@ class AppLocalizationsFi extends AppLocalizations {
       'Tietosi ovat liian suuret synkronoitaviksi tilillesi. Poista tapahtumia tai muistiinpanoja, joita et enää tarvitse, niin synkronointia yritetään uudelleen.';
 
   @override
+  String get noteFull =>
+      'Tämän osakkeen muistiinpanot ovat täynnä, joten tätä merkintää ei lisätty. Lyhennä muistiinpanoja ja yritä uudelleen.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Ei valuuttakurssia kohteille $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count osinkoa ($currencies) jää summien ulkopuolelle, koska niille ei ole valuuttakurssia.',
+      one:
+          '1 osinko ($currencies) jää summien ulkopuolelle, koska sille ei ole valuuttakurssia.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

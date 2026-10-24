@@ -2872,6 +2872,28 @@ class AppLocalizationsGu extends AppLocalizations {
       'તમારો ડેટા તમારા એકાઉન્ટ સાથે સિંક કરવા માટે ખૂબ મોટો છે. જે વ્યવહારો અથવા નોંધોની હવે જરૂર નથી તે ડિલીટ કરો, પછી તે ફરી પ્રયાસ કરશે.';
 
   @override
+  String get noteFull =>
+      'આ શેરની નોંધો ભરાઈ ગઈ છે, તેથી આ એન્ટ્રી ઉમેરાઈ નથી. નોંધો ટૂંકી કરો અને ફરી પ્રયાસ કરો.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols માટે વિનિમય દર ઉપલબ્ધ નથી.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currenciesમાં $count ડિવિડન્ડનો વિનિમય દર ઉપલબ્ધ નથી, તેથી તે કુલ રકમમાં સામેલ નથી.',
+      one:
+          '$currenciesમાં $count ડિવિડન્ડનો વિનિમય દર ઉપલબ્ધ નથી, તેથી તે કુલ રકમમાં સામેલ નથી.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

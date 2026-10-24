@@ -2879,6 +2879,28 @@ class AppLocalizationsSu extends AppLocalizations {
       'Data anjeun kagedéan pikeun disingkronkeun sareng akun anjeun. Pupus transaksi atanapi catetan anu tos teu diperyogikeun, teras bakal dicobian deui.';
 
   @override
+  String get noteFull =>
+      'Catetan pikeun saham ieu tos pinuh, janten éntri ieu teu ditambihkeun. Pondokkeun catetanana teras cobaan deui.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Teu aya kurs pikeun $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count dividen dina $currencies teu gaduh kurs sareng teu diasupkeun kana total.',
+      one:
+          '1 dividen dina $currencies teu gaduh kurs sareng teu diasupkeun kana total.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

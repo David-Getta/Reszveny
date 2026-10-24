@@ -278,7 +278,7 @@ class _ActivityList extends StatelessWidget {
     final kind = e.kind;
     final details = [
       if (e.date != null) fmt.date(e.date),
-      if (e.lot case final l?) '${fmt.quantity(l.quantity)} × ${fmt.money(l.price, l.currency)}',
+      if (e.lot case final l?) '${fmt.quantity(l.quantity)} × ${fmt.unit(l.price, l.currency)}',
       if (e.split case final s?) l10n.portfolioSplitRow(s.label),
       if (e.lot case final l? when l.fee > 0) l10n.portfolioFeeRow(fmt.money(l.fee, l.currency)),
       if (showAccount) ?e.account,

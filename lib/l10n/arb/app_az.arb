@@ -854,5 +854,8 @@
   "restoreNothing": "Bərpa ediləcək əvvəlki alış tapılmadı.",
   "manageSubscriptionElsewhere": "Burada idarə ediləcək abunəlik yoxdur. App Store və ya Google Play-də alınmış abunəlik mağaza ayarlarında idarə olunur.",
   "backupFailed": "Ehtiyat nüsxəni saxlamaq mümkün olmadı. Yenidən cəhd edin.",
-  "syncTooLarge": "Məlumatlarınız hesabınızla sinxronlaşdırmaq üçün çox böyükdür. Artıq lazım olmayan əməliyyatları və ya qeydləri silin, yenidən cəhd ediləcək."
+  "syncTooLarge": "Məlumatlarınız hesabınızla sinxronlaşdırmaq üçün çox böyükdür. Artıq lazım olmayan əməliyyatları və ya qeydləri silin, yenidən cəhd ediləcək.",
+  "noteFull": "Bu səhmin qeydləri doludur, ona görə də bu yazı əlavə olunmadı. Qeydləri qısaldın və yenidən cəhd edin.",
+  "portfolioNoRateFor": "{symbols} üçün məzənnə yoxdur.",
+  "dividendsNotConverted": "{count, plural, =1{{currencies} ilə ödənilmiş 1 dividend üçün məzənnə yoxdur, ona görə də cəmlərə daxil edilmir.} other{{currencies} ilə ödənilmiş {count} dividend üçün məzənnə yoxdur, ona görə də cəmlərə daxil edilmir.}}"
 }

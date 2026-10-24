@@ -2887,6 +2887,28 @@ class AppLocalizationsHy extends AppLocalizations {
       'Ձեր տվյալները չափազանց մեծ են՝ ձեր հաշվի հետ համաժամացնելու համար։ Ջնջեք այն գործարքները կամ նշումները, որոնք այլևս պետք չեն, և կրկին փորձ կարվի։';
 
   @override
+  String get noteFull =>
+      'Այս բաժնետոմսի նշումները լցված են, ուստի այս գրառումը չավելացվեց։ Կրճատեք նշումները և նորից փորձեք։';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols-ի փոխարժեքը չկա։';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies-ով $count շահաբաժին փոխարժեք չունի և չի ներառվում ընդհանուր գումարներում։',
+      one:
+          '$currencies-ով $count շահաբաժին փոխարժեք չունի և չի ներառվում ընդհանուր գումարներում։',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

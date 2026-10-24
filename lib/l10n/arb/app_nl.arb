@@ -854,5 +854,8 @@
   "restoreNothing": "Er zijn geen eerdere aankopen gevonden om te herstellen.",
   "manageSubscriptionElsewhere": "Er is hier geen abonnement om te beheren. Een abonnement dat je in de App Store of Google Play hebt gekocht, beheer je in de instellingen van de store.",
   "backupFailed": "De back-up kon niet worden opgeslagen. Probeer het opnieuw.",
-  "syncTooLarge": "Je gegevens zijn te groot om met je account te synchroniseren. Verwijder transacties of notities die je niet meer nodig hebt, dan wordt het opnieuw geprobeerd."
+  "syncTooLarge": "Je gegevens zijn te groot om met je account te synchroniseren. Verwijder transacties of notities die je niet meer nodig hebt, dan wordt het opnieuw geprobeerd.",
+  "noteFull": "De notitie bij dit aandeel is vol, dus deze tekst is niet toegevoegd. Maak de notitie korter en probeer het opnieuw.",
+  "portfolioNoRateFor": "Geen wisselkoers voor {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividend in {currencies} heeft geen wisselkoers en telt niet mee in de totalen.} other{{count} dividenden in {currencies} hebben geen wisselkoers en tellen niet mee in de totalen.}}"
 }

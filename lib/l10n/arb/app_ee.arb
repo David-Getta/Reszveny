@@ -854,5 +854,8 @@
   "restoreNothing": "Míekpɔ nu aɖeke si nèƒle do ŋgɔ be míagaxɔe o.",
   "manageSubscriptionElsewhere": "Subscription aɖeke mele afii be nàkpɔ edzi o. Subscription si nèƒle le App Store alo Google Play la, wokpɔa edzi le store la ƒe ɖoɖowo me.",
   "backupFailed": "Míete ŋu dzra kɔpi la ɖo o. Taflatse, gate kpɔ.",
-  "syncTooLarge": "Wò nyatakakawo lolo akpa be woasɔ kple wò akɔnta. Tutu nuƒeƒle kple nudzadzra alo nuŋlɔɖi siwo mèhiã azɔ o la ɖa, eye agagbugbɔ adze agbagba."
+  "syncTooLarge": "Wò nyatakakawo lolo akpa be woasɔ kple wò akɔnta. Tutu nuƒeƒle kple nudzadzra alo nuŋlɔɖi siwo mèhiã azɔ o la ɖa, eye agagbugbɔ adze agbagba.",
+  "noteFull": "Akpa sia ƒe nuŋlɔɖiwo yɔ, eya ta wometsɔ nuŋlɔɖi yeye sia kpe ɖe eŋu o. Ɖe nuŋlɔɖiwo dzi kpɔtɔ eye nàgate kpɔ.",
+  "portfolioNoRateFor": "Gatɔtrɔ asi aɖeke meli na {symbols} o.",
+  "dividendsNotConverted": "{count, plural, =1{Dividend 1 si le {currencies} me la, gatɔtrɔ asi meli nɛ o, eya ta wometsɔe de akɔntabubu blibowo me o.} other{Dividend {count} siwo le {currencies} me la, gatɔtrɔ asi meli na wo o, eya ta wometsɔ wo de akɔntabubu blibowo me o.}}"
 }

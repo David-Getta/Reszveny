@@ -2884,6 +2884,28 @@ class AppLocalizationsKn extends AppLocalizations {
       'ನಿಮ್ಮ ಡೇಟಾ ನಿಮ್ಮ ಖಾತೆಯೊಂದಿಗೆ ಸಿಂಕ್ ಮಾಡಲು ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ. ಇನ್ನು ಅಗತ್ಯವಿಲ್ಲದ ವಹಿವಾಟುಗಳು ಅಥವಾ ಟಿಪ್ಪಣಿಗಳನ್ನು ಅಳಿಸಿ, ಆಗ ಇದು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸುತ್ತದೆ.';
 
   @override
+  String get noteFull =>
+      'ಈ ಷೇರಿನ ಟಿಪ್ಪಣಿಗಳು ತುಂಬಿವೆ, ಆದ್ದರಿಂದ ಈ ನಮೂದನ್ನು ಸೇರಿಸಲಾಗಿಲ್ಲ. ಟಿಪ್ಪಣಿಗಳನ್ನು ಚಿಕ್ಕದಾಗಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols ಗೆ ವಿನಿಮಯ ದರ ಲಭ್ಯವಿಲ್ಲ.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies ನಲ್ಲಿನ $count ಡಿವಿಡೆಂಡ್‌ಗಳಿಗೆ ವಿನಿಮಯ ದರ ಇಲ್ಲ, ಆದ್ದರಿಂದ ಅವುಗಳನ್ನು ಒಟ್ಟು ಮೊತ್ತದಿಂದ ಹೊರಗಿಡಲಾಗಿದೆ.',
+      one:
+          '$currencies ನಲ್ಲಿನ $count ಡಿವಿಡೆಂಡ್‌ಗೆ ವಿನಿಮಯ ದರ ಇಲ್ಲ, ಆದ್ದರಿಂದ ಅದನ್ನು ಒಟ್ಟು ಮೊತ್ತದಿಂದ ಹೊರಗಿಡಲಾಗಿದೆ.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

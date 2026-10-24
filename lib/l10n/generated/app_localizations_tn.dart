@@ -2899,6 +2899,28 @@ class AppLocalizationsTn extends AppLocalizations {
       'Data ya gago e kgolo thata go ka tsamaisanngwa le akhaonto ya gago. Phimola ditheko le dithekiso kgotsa dintlha tse o sa di tlhokeng gape, mme go tla lekwa gape.';
 
   @override
+  String get noteFull =>
+      'Ntlha ya shere e e tletse, ka jalo tsenyo e ga e a okelwa. Khutshwafatsa ntlha mme o leke gape.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Ga go na seelo sa phetolo ya madi sa $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividente tse $count ka $currencies ga di na seelo sa phetolo ya madi, ka jalo ga di akarediwe mo dipalogotlheng.',
+      one:
+          'Dividente e 1 ka $currencies ga e na seelo sa phetolo ya madi, ka jalo ga e akarediwe mo dipalogotlheng.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

@@ -2884,6 +2884,28 @@ class AppLocalizationsHa extends AppLocalizations {
       'Bayananka sun yi yawa matuƙa don daidaitawa da asusunka. Share ma\'amaloli ko bayanan da ba ka buƙata yanzu, sai a sake gwadawa.';
 
   @override
+  String get noteFull =>
+      'Bayanan wannan hannun jari sun cika, don haka ba a ƙara wannan shigarwar ba. Rage tsawon bayanan sannan ka sake gwadawa.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Babu farashin musaya na $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Rabon riba $count a $currencies ba su da farashin musaya, don haka ba a haɗa su a cikin jimilla ba.',
+      one:
+          'Rabon riba 1 a $currencies ba shi da farashin musaya, don haka ba a haɗa shi a cikin jimilla ba.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

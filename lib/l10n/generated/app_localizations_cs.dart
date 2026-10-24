@@ -2947,6 +2947,28 @@ class AppLocalizationsCs extends AppLocalizations {
       'Vaše data jsou příliš velká na synchronizaci s vaším účtem. Smažte transakce nebo poznámky, které už nepotřebujete, a zkusí se to znovu.';
 
   @override
+  String get noteFull =>
+      'Poznámky k této akcii jsou plné, proto tento záznam nebyl přidán. Zkraťte poznámky a zkuste to znovu.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Pro $symbols není k dispozici směnný kurz.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividendy v $currencies ($count) nemají směnný kurz, a proto nejsou zahrnuty v součtech.',
+      one:
+          '1 dividenda v $currencies nemá směnný kurz, a proto není zahrnuta v součtech.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

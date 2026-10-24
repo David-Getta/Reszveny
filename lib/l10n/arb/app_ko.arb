@@ -854,5 +854,8 @@
   "restoreNothing": "복원할 이전 구매 내역이 없습니다.",
   "manageSubscriptionElsewhere": "여기에서 관리할 구독이 없습니다. App Store 또는 Google Play에서 구매한 구독은 스토어 설정에서 관리합니다.",
   "backupFailed": "백업을 저장할 수 없습니다. 다시 시도해 주세요.",
-  "syncTooLarge": "데이터가 너무 커서 계정과 동기화할 수 없습니다. 더 이상 필요 없는 거래나 메모를 삭제하면 다시 시도합니다."
+  "syncTooLarge": "데이터가 너무 커서 계정과 동기화할 수 없습니다. 더 이상 필요 없는 거래나 메모를 삭제하면 다시 시도합니다.",
+  "noteFull": "이 종목의 메모가 가득 차서 이 내용을 추가하지 못했습니다. 메모를 줄인 후 다시 시도하세요.",
+  "portfolioNoRateFor": "{symbols}의 환율이 없습니다.",
+  "dividendsNotConverted": "{count, plural, =1{{currencies} 배당금 1건은 환율이 없어 합계에서 제외됩니다.} other{{currencies} 배당금 {count}건은 환율이 없어 합계에서 제외됩니다.}}"
 }

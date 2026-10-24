@@ -2884,6 +2884,32 @@ class AppLocalizationsSq extends AppLocalizations {
       'Të dhënat tuaja janë shumë të mëdha për t’u sinkronizuar me llogarinë tuaj. Fshini transaksionet ose shënimet që nuk ju duhen më dhe do të provohet përsëri.';
 
   @override
+  String get noteFull =>
+      'Shënimi për këtë aksion është plot, ndaj ky regjistrim nuk u shtua. Shkurtojeni shënimin dhe provoni përsëri.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Nuk ka kurs këmbimi për $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividendë në $currencies nuk kanë',
+      one: '1 dividend në $currencies nuk ka',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'nuk përfshihen',
+      one: 'nuk përfshihet',
+    );
+    return '$_temp0 kurs këmbimi dhe $_temp1 në totale.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

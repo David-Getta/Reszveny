@@ -854,5 +854,8 @@
   "restoreNothing": "Palautettavia aiempia ostoksia ei löytynyt.",
   "manageSubscriptionElsewhere": "Täällä ei ole hallittavaa tilausta. App Storesta tai Google Playsta ostettua tilausta hallitaan kaupan asetuksissa.",
   "backupFailed": "Varmuuskopiota ei voitu tallentaa. Yritä uudelleen.",
-  "syncTooLarge": "Tietosi ovat liian suuret synkronoitaviksi tilillesi. Poista tapahtumia tai muistiinpanoja, joita et enää tarvitse, niin synkronointia yritetään uudelleen."
+  "syncTooLarge": "Tietosi ovat liian suuret synkronoitaviksi tilillesi. Poista tapahtumia tai muistiinpanoja, joita et enää tarvitse, niin synkronointia yritetään uudelleen.",
+  "noteFull": "Tämän osakkeen muistiinpanot ovat täynnä, joten tätä merkintää ei lisätty. Lyhennä muistiinpanoja ja yritä uudelleen.",
+  "portfolioNoRateFor": "Ei valuuttakurssia kohteille {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 osinko ({currencies}) jää summien ulkopuolelle, koska sille ei ole valuuttakurssia.} other{{count} osinkoa ({currencies}) jää summien ulkopuolelle, koska niille ei ole valuuttakurssia.}}"
 }

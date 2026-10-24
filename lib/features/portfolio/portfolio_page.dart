@@ -152,6 +152,20 @@ class _PortfolioPageState extends State<PortfolioPage> {
 
 /// „Idei osztalék: …” a főoldali kártyán – az átváltás csak akkor fut újra, ha
 /// a tételek vagy a pénznem változnak, nem minden újrarajzoláskor.
+/// Miért maradtak ki pozíciók az összesítésből: amelyiknek nincs ára, és amelyiknek van,
+/// de a pénznemére nincs árfolyam (a kettő mást jelent a felhasználónak).
+List<String> excludedReasons(AppLocalizations l10n, PortfolioSnapshot s) {
+  String symbols(bool Function(PositionValue r) test) => [
+    for (final r in s.rows)
+      if (!r.inTotal && test(r)) r.position.symbol,
+  ].join(', ');
+  final noPrice = symbols((r) => r.price == null), noRate = symbols((r) => r.price != null);
+  return [
+    if (noPrice.isNotEmpty) l10n.portfolioNoPriceFor(noPrice),
+    if (noRate.isNotEmpty) l10n.portfolioNoRateFor(noRate),
+  ];
+}
+
 class _YearDividends extends StatefulWidget {
   const _YearDividends({required this.dividends, required this.currency, required this.fmt});
 
@@ -466,19 +480,27 @@ class _PortfolioBody extends StatelessWidget {
                           ListTile(
                             title: Text(c.position.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
                             subtitle: _SinceSale(key: ValueKey(c.position.symbol), position: c.position, fmt: fmt),
-                            trailing: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Text(
-                                  fmt.money(c.realized, ccy, withSign: true),
-                                  style: TextStyle(color: gainColor(p, c.realized), fontWeight: FontWeight.w600),
-                                ),
-                                IconButton(
-                                  tooltip: l10n.portfolioTransactions,
-                                  icon: Icon(Icons.more_vert_rounded, color: p.muted),
-                                  onPressed: () => showPurchasesSheet(context, c.position, account: account),
-                                ),
-                              ],
+                            // A nagy összeg nagy betűvel sem tölti ki a sort (különben az egész lista szétesik).
+                            trailing: ConstrainedBox(
+                              constraints: BoxConstraints(maxWidth: MediaQuery.sizeOf(context).width * 0.55),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Flexible(
+                                    child: Text(
+                                      fmt.money(c.realized, ccy, withSign: true),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(color: gainColor(p, c.realized), fontWeight: FontWeight.w600),
+                                    ),
+                                  ),
+                                  IconButton(
+                                    tooltip: l10n.portfolioTransactions,
+                                    icon: Icon(Icons.more_vert_rounded, color: p.muted),
+                                    onPressed: () => showPurchasesSheet(context, c.position, account: account),
+                                  ),
+                                ],
+                              ),
                             ),
                             onTap: () => onOpenSymbol(
                               StockCandidate(symbol: c.position.symbol, companyName: c.position.symbol, confidence: 1),
@@ -494,8 +516,7 @@ class _PortfolioBody extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                     child: Text(
-                      '${l10n.portfolioExcluded} '
-                      '${l10n.portfolioNoPriceFor(s.rows.where((r) => !r.inTotal).map((r) => r.position.symbol).join(', '))}',
+                      [l10n.portfolioExcluded, ...excludedReasons(l10n, s)].join(' '),
                       key: const ValueKey('portfolio-excluded'),
                       style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                     ),
@@ -748,7 +769,7 @@ class _PositionTile extends StatelessWidget {
                     Text(pos.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
                     Text(
                       '${fmt.quantity(pos.quantity)} × '
-                      '${fmt.money(row.price, ccy)} · ${l10n.portfolioAvgCost(fmt.money(pos.averageCost, ccy, showCurrency: false))}',
+                      '${fmt.unit(row.price, ccy)} · ${l10n.portfolioAvgCost(fmt.unit(pos.averageCost, ccy, showCurrency: false))}',
                       style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                     ),
                     if (row.annualDividend case final d?)
@@ -859,9 +880,7 @@ class PortfolioSummaryCard extends StatelessWidget {
                               // Ár nélküli papírok (pl. nem USA-részvény): nevesítve, nem csak „n/a”.
                               if (s != null && s.hasExcluded)
                                 Text(
-                                  l10n.portfolioNoPriceFor(
-                                    s.rows.where((r) => !r.inTotal).map((r) => r.position.symbol).join(', '),
-                                  ),
+                                  excludedReasons(l10n, s).join(' '),
                                   key: const ValueKey('portfolio-no-price'),
                                   style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                                 ),

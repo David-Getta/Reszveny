@@ -854,5 +854,8 @@
   "restoreNothing": "Ur d-nufi ara tiɣin yezrin ara d-nerr.",
   "manageSubscriptionElsewhere": "Ulac ajerred ara tesfekreḍ dagi. Ajerred i yettwaɣen deg App Store neɣ Google Play yettwasefrak deg yiɣewwaṛen n tḥanut.",
   "backupFailed": "Ur yezmir ara ad yettwasekles uḥraz. Ɛreḍ tikkelt-nniḍen.",
-  "syncTooLarge": "Isefka-k mqqren aṭas akken ad mtawin d umiḍan-ik. Kkes tiɣin d uznuzu neɣ tizmilin ur tesriḍ ara tura, ad yettwaɛreḍ tikkelt nniḍen."
+  "syncTooLarge": "Isefka-k mqqren aṭas akken ad mtawin d umiḍan-ik. Kkes tiɣin d uznuzu neɣ tizmilin ur tesriḍ ara tura, ad yettwaɛreḍ tikkelt nniḍen.",
+  "noteFull": "Tizmilin n uksyun-a ččurent, ihi ur yettwarna ara uḍris-a. Senqes tizmilin syen ɛreḍ tikkelt nniḍen.",
+  "portfolioNoRateFor": "Ulac azal n ubeddel i {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 n dividende s {currencies} ulac ɣur-s azal n ubeddel, ur yettwaḥsab ara deg yimḍanen.} other{{count} n dividendes s {currencies} ulac ɣur-sen azal n ubeddel, ur ttwaḥesben ara deg yimḍanen.}}"
 }

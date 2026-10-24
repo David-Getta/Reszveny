@@ -599,7 +599,15 @@ class AllocationBar extends StatelessWidget {
                     decoration: BoxDecoration(color: colorAt(i), borderRadius: BorderRadius.circular(3)),
                   ),
                   const SizedBox(width: 6),
-                  Text('${e.label} ${fmt.percent(e.weight * 100, decimals: 1)}', style: theme.textTheme.labelMedium),
+                  // Hosszú ágazatnévnél (pl. „Life Sciences Tools & Services”) tördelve, nem kilógva.
+                  Flexible(
+                    child: Text(
+                      '${e.label} ${fmt.percent(e.weight * 100, decimals: 1)}',
+                      style: theme.textTheme.labelMedium,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
                 ],
               ),
           ],

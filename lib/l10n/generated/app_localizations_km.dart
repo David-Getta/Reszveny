@@ -2854,6 +2854,28 @@ class AppLocalizationsKm extends AppLocalizations {
       'ទិន្នន័យរបស់អ្នកធំពេក មិនអាចធ្វើសមកាលកម្មជាមួយគណនីរបស់អ្នកបានទេ។ លុបប្រតិបត្តិការ ឬកំណត់ចំណាំដែលអ្នកលែងត្រូវការ ហើយវានឹងព្យាយាមម្តងទៀត។';
 
   @override
+  String get noteFull =>
+      'កំណត់ចំណាំសម្រាប់ភាគហ៊ុននេះពេញហើយ ដូច្នេះធាតុនេះមិនត្រូវបានបន្ថែមទេ។ សូមបង្រួមកំណត់ចំណាំ ហើយព្យាយាមម្ដងទៀត។';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'គ្មានអត្រាប្ដូរប្រាក់សម្រាប់ $symbols ទេ។';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'ភាគលាភ $count ជា $currencies គ្មានអត្រាប្ដូរប្រាក់ ហើយមិនត្រូវបានរាប់បញ្ចូលក្នុងចំនួនសរុបទេ។',
+      one:
+          'ភាគលាភ 1 ជា $currencies គ្មានអត្រាប្ដូរប្រាក់ ហើយមិនត្រូវបានរាប់បញ្ចូលក្នុងចំនួនសរុបទេ។',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

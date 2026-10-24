@@ -2952,6 +2952,28 @@ class AppLocalizationsBe extends AppLocalizations {
       'Вашы даныя занадта вялікія для сінхранізацыі з уліковым запісам. Выдаліце аперацыі або нататкі, якія вам больш не патрэбныя, і спроба паўторыцца.';
 
   @override
+  String get noteFull =>
+      'Нататкі да гэтай акцыі запоўненыя, таму гэты запіс не дададзены. Скараціце нататкі і паспрабуйце зноў.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Няма валютнага курсу для $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Дывідэнды ў $currencies ($count) не маюць валютнага курсу і не ўлічваюцца ў выніках.',
+      one:
+          '$count дывідэнд у $currencies не мае валютнага курсу і не ўлічваецца ў выніках.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

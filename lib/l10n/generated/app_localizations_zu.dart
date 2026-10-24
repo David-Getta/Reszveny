@@ -2892,6 +2892,28 @@ class AppLocalizationsZu extends AppLocalizations {
       'Idatha yakho inkulu kakhulu ukuthi ivumelaniswe ne-akhawunti yakho. Susa ukuthenga nokuthengisa noma amanothi ongasawadingi, bese kuzozama futhi.';
 
   @override
+  String get noteFull =>
+      'Inothi lalesi sheya ligcwele, ngakho lokhu okubhaliwe akwengezwanga. Finyeza inothi bese uzama futhi.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Alikho izinga lokushintshaniswa kwemali le-$symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Izabelo zenzuzo ezi-$count nge-$currencies azinalo izinga lokushintshaniswa kwemali, ngakho azifakiwe ezingqikithini.',
+      one:
+          'Isabelo senzuzo esi-$count nge-$currencies asinalo izinga lokushintshaniswa kwemali, ngakho asifakiwe ezingqikithini.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

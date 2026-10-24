@@ -2878,6 +2878,28 @@ class AppLocalizationsAk extends AppLocalizations {
       'Wo data no dɔɔso dodo a ɛrentumi nyɛ sync ne wo akawnt. Popa adetɔ ne adetɔn anaa nkyerɛwee a wonhia bio, na ɛbɛsan abɔ mmɔden bio.';
 
   @override
+  String get noteFull =>
+      'Kyɛfa yi nkyerɛwee no ayɛ ma, enti wɔamfa nsɛm foforo yi anka ho. Yɛ nkyerɛwee no tiawa na sɔ hwɛ bio.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Sesa bo biara nni hɔ mma $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividend $count a ɛwɔ $currencies mu nni sesa bo, enti ɛnka nkɔntaabu no ho.',
+      one:
+          'Dividend 1 a ɛwɔ $currencies mu nni sesa bo, enti ɛnka nkɔntaabu no ho.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

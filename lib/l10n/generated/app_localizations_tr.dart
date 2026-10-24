@@ -2876,6 +2876,28 @@ class AppLocalizationsTr extends AppLocalizations {
       'Verileriniz hesabınızla senkronize edilemeyecek kadar büyük. Artık ihtiyacınız olmayan işlemleri veya notları silin, ardından yeniden denenecek.';
 
   @override
+  String get noteFull =>
+      'Bu hissenin notu dolu, bu yüzden bu kayıt eklenmedi. Notu kısaltıp tekrar deneyin.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols için döviz kuru yok.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies cinsinden $count temettünün döviz kuru olmadığından toplamlara dahil edilmedi.',
+      one:
+          '$currencies cinsinden 1 temettünün döviz kuru olmadığından toplamlara dahil edilmedi.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

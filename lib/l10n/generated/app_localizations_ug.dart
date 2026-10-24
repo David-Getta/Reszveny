@@ -2879,6 +2879,28 @@ class AppLocalizationsUg extends AppLocalizations {
       'سانلىق مەلۇماتلىرىڭىز ھېساباتىڭىز بىلەن قەدەمداشلاشقا بەك چوڭ. ئەمدى كېرەك بولمىغان سودىلار ياكى خاتىرىلەرنى ئۆچۈرۈڭ، ئاندىن قايتا سىنايدۇ.';
 
   @override
+  String get noteFull =>
+      'بۇ پاي چېكىنىڭ خاتىرىسى توشۇپ كەتتى، شۇڭا بۇ مەزمۇن قوشۇلمىدى. خاتىرىنى قىسقارتىپ قايتا سىناپ بېقىڭ.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols ئۈچۈن ئالماشتۇرۇش نىسبىتى يوق.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies پۇلىدىكى $count دىۋىدېندنىڭ ئالماشتۇرۇش نىسبىتى يوق، شۇڭا جەمئىيگە كىرگۈزۈلمىدى.',
+      one:
+          '$currencies پۇلىدىكى 1 دىۋىدېندنىڭ ئالماشتۇرۇش نىسبىتى يوق، شۇڭا جەمئىيگە كىرگۈزۈلمىدى.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

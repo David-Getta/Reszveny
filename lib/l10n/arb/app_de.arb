@@ -854,5 +854,8 @@
   "restoreNothing": "Es wurden keine früheren Käufe zum Wiederherstellen gefunden.",
   "manageSubscriptionElsewhere": "Hier gibt es kein Abonnement zu verwalten. Ein im App Store oder bei Google Play abgeschlossenes Abonnement verwaltest du in den Store-Einstellungen.",
   "backupFailed": "Das Backup konnte nicht gespeichert werden. Bitte versuche es erneut.",
-  "syncTooLarge": "Deine Daten sind zu groß, um mit deinem Konto synchronisiert zu werden. Lösche Transaktionen oder Notizen, die du nicht mehr brauchst, dann wird es erneut versucht."
+  "syncTooLarge": "Deine Daten sind zu groß, um mit deinem Konto synchronisiert zu werden. Lösche Transaktionen oder Notizen, die du nicht mehr brauchst, dann wird es erneut versucht.",
+  "noteFull": "Die Notizen zu dieser Aktie sind voll, deshalb wurde dieser Eintrag nicht hinzugefügt. Kürze die Notizen und versuche es erneut.",
+  "portfolioNoRateFor": "Kein Wechselkurs für {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 Dividende in {currencies} hat keinen Wechselkurs und ist nicht in den Summen enthalten.} other{{count} Dividenden in {currencies} haben keinen Wechselkurs und sind nicht in den Summen enthalten.}}"
 }

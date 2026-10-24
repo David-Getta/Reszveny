@@ -2875,6 +2875,28 @@ class AppLocalizationsHt extends AppLocalizations {
       'Done ou yo twò gwo pou senkronize ak kont ou. Efase tranzaksyon oswa nòt ou pa bezwen ankò, epi l ap eseye ankò.';
 
   @override
+  String get noteFull =>
+      'Nòt aksyon sa a plen, kidonk antre sa a pa t ajoute. Fè nòt yo pi kout epi eseye ankò.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Pa gen to chanj pou $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count dividann nan $currencies pa gen to chanj, kidonk yo pa konte nan total yo.',
+      one:
+          '1 dividann nan $currencies pa gen to chanj, kidonk li pa konte nan total yo.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

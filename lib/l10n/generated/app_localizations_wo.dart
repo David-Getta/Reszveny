@@ -2868,6 +2868,28 @@ class AppLocalizationsWo extends AppLocalizations {
       'Sa xibaar yi dañoo bari lool, mënuñu leen a yemale ak sa kont. Far jënd ak jaay walla notu yi nga soxlaatul, kon dina jéemaat.';
 
   @override
+  String get noteFull =>
+      'Notu aksiyoŋ bii fees na, kon yokkunu bind bii. Gàttal notu bi te jéemaatal.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Amul weccit ngir $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count dividande ci $currencies amuñu weccit, kon boolewuñu leen ci mboolem yi.',
+      one:
+          '1 dividande ci $currencies amul weccit, kon boolewuñu ko ci mboolem yi.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

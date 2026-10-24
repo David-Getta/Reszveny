@@ -2920,6 +2920,28 @@ class AppLocalizationsRo extends AppLocalizations {
       'Datele tale sunt prea mari pentru a fi sincronizate cu contul tău. Șterge tranzacțiile sau notițele de care nu mai ai nevoie și se va reîncerca.';
 
   @override
+  String get noteFull =>
+      'Notița acestei acțiuni este plină, așa că această intrare nu a fost adăugată. Scurtează notița și încearcă din nou.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Nu există curs de schimb pentru $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividendele în $currencies fără curs de schimb nu sunt incluse în totaluri: $count.',
+      one:
+          '1 dividend în $currencies nu are curs de schimb și nu este inclus în totaluri.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

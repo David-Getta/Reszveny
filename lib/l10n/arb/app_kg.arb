@@ -854,5 +854,8 @@
   "restoreNothing": "Beto monaka ve mana nge sumbaka ntete ya kuvutula.",
   "manageSubscriptionElsewhere": "Abonnement ya kutwadisa kele ve awa. Abonnement yina nge sumbaka na App Store yovo Google Play ke twadisama na paramètres ya store.",
   "backupFailed": "Kopi ya kubumba ka kulendi bumbama ko. Meka diaka.",
-  "syncTooLarge": "Ba données na nge me luta nene sambu na synchronisation ti compte na nge. Zimbisa kusumba ti kuteka to ba note yina nge ke vandaka diaka ve na mfunu, yo ta meka diaka."
+  "syncTooLarge": "Ba données na nge me luta nene sambu na synchronisation ti compte na nge. Zimbisa kusumba ti kuteka to ba note yina nge ke vandaka diaka ve na mfunu, yo ta meka diaka.",
+  "noteFull": "Ba note ya action yayi me fuluka, yo yina diambu yayi ka diyikwamene ko. Kufiotesa ba note ye meka diaka.",
+  "portfolioNoRateFor": "Ka kuena taux ya mbongo ya {symbols} ko.",
+  "dividendsNotConverted": "{count, plural, =1{Dividende 1 na {currencies} ka ina ye taux ya mbongo ko, ka itangwanga mu ntalu zawonso ko.} other{Ba dividende {count} na {currencies} ka zina ye taux ya mbongo ko, ka zitangwanga mu ntalu zawonso ko.}}"
 }

@@ -854,5 +854,8 @@
   "restoreNothing": "Bosombi ya kala moko te emonani mpo na kozongisa.",
   "manageSubscriptionElsewhere": "Abonnement moko te ezali awa ya kokamba. Abonnement oyo osombaki na App Store to Google Play ekambamaka na ba-paramètre ya store.",
   "backupFailed": "Kopi ya kobomba ekokaki kobombama te. Meka lisusu.",
-  "syncTooLarge": "Ba données na yo eleki monene mpo na synchronisation na compte na yo. Limwisa bosombi mpe boteki to ba note oyo osengeli na yango lisusu te, mpe ekomeka lisusu."
+  "syncTooLarge": "Ba données na yo eleki monene mpo na synchronisation na compte na yo. Limwisa bosombi mpe boteki to ba note oyo osengeli na yango lisusu te, mpe ekomeka lisusu.",
+  "noteFull": "Ba note ya action oyo etondi, yango wana likambo oyo ebakisami te. Kitisa ba note mpe meka lisusu.",
+  "portfolioNoRateFor": "Taux ya mbɔngɔ ezali te mpo na {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Dividende {count} na {currencies} ezangi taux ya mbɔngɔ, yango wana etangami te na mitango.} other{Ba dividende {count} na {currencies} ezangi taux ya mbɔngɔ, yango wana etangami te na mitango.}}"
 }

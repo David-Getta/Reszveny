@@ -854,5 +854,8 @@
   "restoreNothing": "No s’han trobat compres anteriors per restaurar.",
   "manageSubscriptionElsewhere": "Aquí no hi ha cap subscripció per gestionar. Una subscripció comprada a l’App Store o a Google Play es gestiona a la configuració de la botiga.",
   "backupFailed": "No s’ha pogut desar la còpia de seguretat. Torna-ho a provar.",
-  "syncTooLarge": "Les teves dades són massa grans per sincronitzar-les amb el teu compte. Elimina les transaccions o notes que ja no necessitis i es tornarà a provar."
+  "syncTooLarge": "Les teves dades són massa grans per sincronitzar-les amb el teu compte. Elimina les transaccions o notes que ja no necessitis i es tornarà a provar.",
+  "noteFull": "Les notes d’aquesta acció són plenes, així que aquesta entrada no s’ha afegit. Escurça les notes i torna-ho a provar.",
+  "portfolioNoRateFor": "No hi ha tipus de canvi per a {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividend en {currencies} no té tipus de canvi i queda fora dels totals.} other{{count} dividends en {currencies} no tenen tipus de canvi i queden fora dels totals.}}"
 }

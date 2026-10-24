@@ -2868,6 +2868,28 @@ class AppLocalizationsPs extends AppLocalizations {
       'ستاسو معلومات دومره ډېر دي چې له حساب سره همغږي کېدای نه شي. هغه راکړې ورکړې یا یادښتونه ړنګ کړئ چې نور ورته اړتیا نه لرئ، بیا به هڅه وشي.';
 
   @override
+  String get noteFull =>
+      'د دې ونډې یادښت ډک دی، نو دا لیکنه اضافه نه شوه. یادښت لنډ کړئ او بیا هڅه وکړئ.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'د $symbols لپاره د تبادلې نرخ نشته.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'په $currencies کې $count ډیویډنډونه د تبادلې نرخ نه لري او په ټولو اندازو کې نه دي شامل.',
+      one:
+          'په $currencies کې 1 ډیویډنډ د تبادلې نرخ نه لري او په ټولو اندازو کې نه دی شامل.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

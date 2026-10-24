@@ -854,5 +854,8 @@
   "restoreNothing": "Teu aya pameulian saméméhna anu kapendak pikeun dipulihkeun.",
   "manageSubscriptionElsewhere": "Di dieu teu aya langganan anu tiasa diatur. Langganan anu dibeuli di App Store atawa Google Play diatur dina setélan toko.",
   "backupFailed": "Cadangan teu bisa disimpen. Mangga cobaan deui.",
-  "syncTooLarge": "Data anjeun kagedéan pikeun disingkronkeun sareng akun anjeun. Pupus transaksi atanapi catetan anu tos teu diperyogikeun, teras bakal dicobian deui."
+  "syncTooLarge": "Data anjeun kagedéan pikeun disingkronkeun sareng akun anjeun. Pupus transaksi atanapi catetan anu tos teu diperyogikeun, teras bakal dicobian deui.",
+  "noteFull": "Catetan pikeun saham ieu tos pinuh, janten éntri ieu teu ditambihkeun. Pondokkeun catetanana teras cobaan deui.",
+  "portfolioNoRateFor": "Teu aya kurs pikeun {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividen dina {currencies} teu gaduh kurs sareng teu diasupkeun kana total.} other{{count} dividen dina {currencies} teu gaduh kurs sareng teu diasupkeun kana total.}}"
 }

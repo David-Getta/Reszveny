@@ -2872,6 +2872,28 @@ class AppLocalizationsFa extends AppLocalizations {
       'داده‌های شما برای همگام‌سازی با حسابتان بیش از حد بزرگ است. تراکنش‌ها یا یادداشت‌هایی را که دیگر لازم ندارید حذف کنید تا دوباره تلاش شود.';
 
   @override
+  String get noteFull =>
+      'یادداشت‌های این سهم پر شده است، به همین دلیل این مورد اضافه نشد. یادداشت‌ها را کوتاه‌تر کنید و دوباره امتحان کنید.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'نرخ ارز برای $symbols موجود نیست.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count مورد سود سهام به $currencies نرخ ارز ندارند و در جمع‌ها لحاظ نمی‌شوند.',
+      one:
+          '$count مورد سود سهام به $currencies نرخ ارز ندارد و در جمع‌ها لحاظ نمی‌شود.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

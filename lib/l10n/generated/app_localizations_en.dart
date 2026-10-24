@@ -2873,6 +2873,28 @@ class AppLocalizationsEn extends AppLocalizations {
       'Your data is too large to sync with your account. Delete transactions or notes you no longer need, and it will try again.';
 
   @override
+  String get noteFull =>
+      'The note for this stock is full, so this entry was not added. Shorten the note and try again.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'No exchange rate for $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count dividends in $currencies have no exchange rate and are left out of the totals.',
+      one:
+          '1 dividend in $currencies has no exchange rate and is left out of the totals.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

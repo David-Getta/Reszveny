@@ -854,5 +854,8 @@
   "restoreNothing": "Awan ti nasarakan a nagatang idi a maisubli.",
   "manageSubscriptionElsewhere": "Awan ti subscription a maimaneho ditoy. Ti subscription a nagatang iti App Store wenno Google Play ket maimaneho iti setting ti store.",
   "backupFailed": "Saan a ma-save ti backup. Pangngaasim ta padasem manen.",
-  "syncTooLarge": "Dakkel unay ti datam tapno mai-sync iti accountmo. Punasem dagiti transaksion wenno nota a saanmonton a kasapulan, ket padasenna manen."
+  "syncTooLarge": "Dakkel unay ti datam tapno mai-sync iti accountmo. Punasem dagiti transaksion wenno nota a saanmonton a kasapulan, ket padasenna manen.",
+  "noteFull": "Napno dagiti nota daytoy a stock, isu a saan a nainayon daytoy nga entry. Paababaem dagiti nota sa padasem manen.",
+  "portfolioNoRateFor": "Awan ti exchange rate para iti {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Awan ti exchange rate ti 1 a dibidendo iti {currencies}, isu a saan a mairaman kadagiti dagup.} other{Awan ti exchange rate ti {count} a dibidendo iti {currencies}, isu a saan a mairaman kadagiti dagup.}}"
 }

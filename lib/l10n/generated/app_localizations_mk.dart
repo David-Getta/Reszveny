@@ -2898,6 +2898,28 @@ class AppLocalizationsMk extends AppLocalizations {
       'Вашите податоци се преголеми за синхронизација со вашата сметка. Избришете трансакции или белешки што повеќе не ви требаат и ќе се обиде повторно.';
 
   @override
+  String get noteFull =>
+      'Белешката за оваа акција е полна, па овој запис не е додаден. Скратете ја белешката и обидете се повторно.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Нема девизен курс за $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count дивиденди во $currencies немаат девизен курс и не се вклучени во збировите.',
+      one:
+          '$count дивиденда во $currencies нема девизен курс и не е вклучена во збировите.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

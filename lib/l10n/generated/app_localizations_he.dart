@@ -2868,6 +2868,28 @@ class AppLocalizationsHe extends AppLocalizations {
       'הנתונים שלך גדולים מדי לסנכרון עם החשבון שלך. יש למחוק עסקאות או הערות שאינן נחוצות לך עוד, ואז ייעשה ניסיון חוזר.';
 
   @override
+  String get noteFull =>
+      'ההערות של המניה הזו מלאות, ולכן הרשומה לא נוספה. יש לקצר את ההערות ולנסות שוב.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'אין שער חליפין עבור $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'ל-$count דיבידנדים ב-$currencies אין שער חליפין, ולכן הם אינם נכללים בסכומים.',
+      one:
+          'לדיבידנד אחד ב-$currencies אין שער חליפין, ולכן הוא אינו נכלל בסכומים.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

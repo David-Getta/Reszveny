@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.293)
+# Változásjegyzék (0.2.130 → 0.2.294)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Szélsőséges adatok: a negyvenedik kódátnézés javításai
+
+- **0.2.294**: a filléres részvények ára (pl. 0,0000123 USD) a figyelőlistán, a kedvencek között, a pozíció
+  kártyáján, a tranzakciókban és a vételek listájában is értékes jegyekkel látszik, nem 0,00-ként. Ha egy pozíció
+  kimarad az összesítésből, a portfólió megmondja, hogy az ára vagy az árfolyama hiányzik-e. Az osztalék-kártya
+  kiírja, hány osztalék (és milyen pénznemben) maradt ki az összegekből árfolyam híján, és egy jövőre bejelentett
+  kifizetés már nem nyit üres évet. Ha a jegyzet megtelt, a vétel indoka vagy a mentett AI-összefoglaló nem vész
+  el csendben: az app szól, hogy rövidítsd a jegyzetet. Sok riasztásnál a grafikonon csak az árhoz legközelebbi
+  négy szint látszik (az egymásra csúszó címkék nélkül), a részvény oldalán az első három riasztás, a többi
+  „Összes” gombbal. A nagyon hosszú nevek és a nagy összegek a megoszlás jelmagyarázatában és a lezárt pozícióknál
+  sem lógnak ki.
 
 ## Adatvédelem: a harminckilencedik kódátnézés javításai
 

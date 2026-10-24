@@ -854,5 +854,8 @@
   "restoreNothing": "B pa yã raab sẽn deng n na n lebs ye.",
   "manageSubscriptionElsewhere": "Abonmã ka be ka n na n get a yell ye. Abonmã sẽn da App Store bɩ Google Play pʋgẽ, b getda a yell raagã seglgã pʋgẽ.",
   "backupFailed": "B pa tõog n bilg sẽn bʋʋd n bilgã ye. Le mak.",
-  "syncTooLarge": "F bãngrã wʋsgame n yɩɩda, b pa tõe n yaa a yembr ne f kõntã ye. Yẽes raaba la koosgo bɩ gʋlsg nins f sẽn pa le rat ye, la a na n le maan a meng."
+  "syncTooLarge": "F bãngrã wʋsgame n yɩɩda, b pa tõe n yaa a yembr ne f kõntã ye. Yẽes raaba la koosgo bɩ gʋlsg nins f sẽn pa le rat ye, la a na n le maan a meng.",
+  "noteFull": "Aksiõ kãngã gʋlsgã pida, rẽ n so tɩ b pa paas gʋlsg kãngã ye. Bilg gʋlsgã la f le mak.",
+  "portfolioNoRateFor": "{symbols} teekre ka be ye.",
+  "dividendsNotConverted": "{count, plural, =1{Dividand 1 sẽn be {currencies} pʋgẽ ka tar teekre ye, b pa kẽes-a sõdgã pʋgẽ ye.} other{Dividand {count} sẽn be {currencies} pʋgẽ ka tar teekre ye, b pa kẽes-b sõdgã pʋgẽ ye.}}"
 }

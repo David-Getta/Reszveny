@@ -2865,6 +2865,28 @@ class AppLocalizationsBo extends AppLocalizations {
       'ཁྱེད་ཀྱི་གཞི་གྲངས་ཆེ་དྲགས་པས་རྩིས་ཁྲ་དང་མཉམ་སྒྲིག་བྱེད་མི་ཐུབ། ད་ནས་མི་དགོས་པའི་ཉོ་འཚོང་ངམ་ཟིན་ཐོ་སུབ་དང་། བསྐྱར་དུ་ཚོད་ལྟ་བྱེད་ངེས།';
 
   @override
+  String get noteFull =>
+      'ཧུར་ཁག་འདིའི་ཟིན་ཐོ་ཁེངས་ཟིན་པས། ཐོ་འགོད་འདི་ཁ་སྣོན་མ་བྱས། ཟིན་ཐོ་ཐུང་དུ་བཏང་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols ལ་བརྗེ་ཚད་མེད།';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies ཐོག་གི་ཁེ་བགོས་ $count ལ་བརྗེ་ཚད་མེད་པས་བསྡོམས་འབོར་ནང་མ་བསྡུས།',
+      one:
+          '$currencies ཐོག་གི་ཁེ་བགོས་ 1 ལ་བརྗེ་ཚད་མེད་པས་བསྡོམས་འབོར་ནང་མ་བསྡུས།',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

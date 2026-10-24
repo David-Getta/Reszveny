@@ -2889,6 +2889,28 @@ class AppLocalizationsLua extends AppLocalizations {
       'Ba données biebe bidi binene bikole bua synchronisation ne compte webe. Jimija kusumba ne kusumbisha anyi mifundu iudi kuyi ne dijinga nayi kabidi, neyikebe kabidi.';
 
   @override
+  String get noteFull =>
+      'Mifundu ya action eyi mmiyule, nunku bualu ebu kabuakabuejibua to. Kepesha mifundu ne teta kabidi.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Kakuena taux wa mfranga wa $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividende $count mu $currencies kayena ne taux wa mfranga, nunku katuena tuyibala mu mishinga yonso.',
+      one:
+          'Dividende 1 mu $currencies kayena ne taux wa mfranga, nunku katuena tuyibala mu mishinga yonso.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

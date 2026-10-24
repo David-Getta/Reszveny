@@ -2880,6 +2880,28 @@ class AppLocalizationsUz extends AppLocalizations {
       'Maʼlumotlaringiz hisobingiz bilan sinxronlash uchun juda katta. Endi kerak boʻlmagan operatsiyalar yoki qaydlarni oʻchiring, shunda qayta urinib koʻriladi.';
 
   @override
+  String get noteFull =>
+      'Bu aksiya qaydi toʻlgan, shuning uchun bu yozuv qoʻshilmadi. Qaydni qisqartiring va qaytadan urinib koʻring.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols uchun valyuta kursi yoʻq.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies valyutasidagi $count ta dividend uchun valyuta kursi yoʻq, shuning uchun ular jami summalarga kiritilmadi.',
+      one:
+          '$currencies valyutasidagi 1 ta dividend uchun valyuta kursi yoʻq, shuning uchun u jami summalarga kiritilmadi.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

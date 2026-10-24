@@ -2876,6 +2876,28 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Your data too big to sync with your account. Delete di buy and sell or notes wey you no need again, and e go try again.';
 
   @override
+  String get noteFull =>
+      'Di note for dis stock don full, so we no add dis one. Make di note short small and try again.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols no get exchange rate.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count dividends for $currencies no get exchange rate, so dem no dey inside di totals.',
+      one:
+          '1 dividend for $currencies no get exchange rate, so e no dey inside di totals.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

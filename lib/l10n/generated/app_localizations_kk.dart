@@ -2876,6 +2876,28 @@ class AppLocalizationsKk extends AppLocalizations {
       'Деректеріңіз аккаунтпен синхрондау үшін тым үлкен. Енді қажет емес операцияларды немесе жазбаларды жойыңыз, сонда қайта әрекет жасалады.';
 
   @override
+  String get noteFull =>
+      'Бұл акцияның жазбалары толып қалды, сондықтан бұл мәтін қосылмады. Жазбаларды қысқартып, қайталап көріңіз.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols үшін валюта бағамы жоқ.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies валютасындағы $count дивидендтің валюта бағамы жоқ, сондықтан олар жиынтыққа кірмейді.',
+      one:
+          '$currencies валютасындағы 1 дивидендтің валюта бағамы жоқ, сондықтан ол жиынтыққа кірмейді.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

@@ -2956,6 +2956,28 @@ class AppLocalizationsPl extends AppLocalizations {
       'Twoje dane są zbyt duże, aby zsynchronizować je z kontem. Usuń niepotrzebne już transakcje lub notatki, a synchronizacja zostanie ponowiona.';
 
   @override
+  String get noteFull =>
+      'Notatka do tej akcji jest pełna, więc ten wpis nie został dodany. Skróć notatkę i spróbuj ponownie.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Brak kursu walut dla $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dywidendy w $currencies bez kursu walut nie są wliczane do sum (liczba: $count).',
+      one:
+          '1 dywidenda w $currencies nie ma kursu walut i nie jest wliczana do sum.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

@@ -2886,6 +2886,28 @@ class AppLocalizationsSo extends AppLocalizations {
       'Xogtaadu aad bay u weyn tahay in lagu waafajiyo akoonkaaga. Tirtir macaamilada ama qoraallada aadan mar dambe u baahnayn, kadibna dib ayay isugu dayi doontaa.';
 
   @override
+  String get noteFull =>
+      'Qoraalka saamigan wuu buuxsamay, sidaa darteed galintan lama darin. Soo gaabi qoraalka oo isku day mar kale.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols ma laha sicir sarrif.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count faa\'iido-saami oo $currencies ah ma laha sicir sarrif, waana laga reebay wadarta.',
+      one:
+          '1 faa\'iido-saami oo $currencies ah ma laha sicir sarrif, waana laga reebay wadarta.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

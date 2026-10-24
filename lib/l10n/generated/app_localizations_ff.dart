@@ -2872,6 +2872,28 @@ class AppLocalizationsFf extends AppLocalizations {
       'Keɓe maa ina mawni no feewi ngam sync e konte maa. Momtu soodgol e yeeyugol walla binndi ɗi a haajaaki kadi, ɗum fuɗɗittoto.';
 
   @override
+  String get noteFull =>
+      'Binndi aksiyoŋ oo heewii, ɗuum waɗi ndee binndol ɓeydaaka. Ustu binndi ɗii, eto kadi.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Coggu weccitgol alaa wonande $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividendeeji $count e $currencies alaa coggu weccitgol, ɗuum waɗi ɗi naatnaaka e kuuɓal.',
+      one:
+          'Dividende 1 e $currencies alaa coggu weccitgol, ɗuum waɗi o naatnaaka e kuuɓal.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

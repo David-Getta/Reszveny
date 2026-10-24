@@ -2890,6 +2890,28 @@ class AppLocalizationsTa extends AppLocalizations {
       'உங்கள் தரவு உங்கள் கணக்குடன் ஒத்திசைக்க முடியாத அளவுக்குப் பெரிதாக உள்ளது. இனி தேவைப்படாத பரிவர்த்தனைகளையோ குறிப்புகளையோ நீக்கவும், பிறகு மீண்டும் முயலும்.';
 
   @override
+  String get noteFull =>
+      'இந்தப் பங்கின் குறிப்பு நிரம்பிவிட்டது, எனவே இந்தப் பதிவு சேர்க்கப்படவில்லை. குறிப்பைச் சுருக்கி மீண்டும் முயற்சிக்கவும்.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols-க்கு மாற்று விகிதம் கிடைக்கவில்லை.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies-இல் உள்ள $count ஈவுத்தொகைகளுக்கு மாற்று விகிதம் இல்லை, எனவே அவை மொத்தத்தில் சேர்க்கப்படவில்லை.',
+      one:
+          '$currencies-இல் உள்ள 1 ஈவுத்தொகைக்கு மாற்று விகிதம் இல்லை, எனவே அது மொத்தத்தில் சேர்க்கப்படவில்லை.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

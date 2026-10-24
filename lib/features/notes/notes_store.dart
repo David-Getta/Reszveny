@@ -74,9 +74,18 @@ class NotesStore extends ChangeNotifier {
   StockNote? of(String symbol) => _notes[symbol.toUpperCase()];
 
   /// Egy bejegyzés a jegyzet végére (üres sorral elválasztva), pl. a vétel indoka.
-  Future<void> append(String symbol, String entry) {
+  /// Ha már nem fér el teljesen, a jegyzet nem változik, és hamissal tér vissza (a
+  /// hívó szól) – különben a bejegyzés csonkán, vagy egyáltalán nem kerülne bele.
+  Future<bool> append(String symbol, String entry) async {
+    final joined = _joined(symbol, entry);
+    if (joined.characters.length > maxLength) return false;
+    await set(symbol, joined);
+    return true;
+  }
+
+  String _joined(String symbol, String entry) {
     final existing = of(symbol)?.text.trimRight() ?? '';
-    return set(symbol, existing.isEmpty ? entry : '$existing\n\n$entry');
+    return existing.isEmpty ? entry : '$existing\n\n$entry';
   }
 
   /// Mentés (üres szövegnél törlés).
@@ -101,7 +110,8 @@ class NotesStore extends ChangeNotifier {
     final f = from.trim().toUpperCase(), t = to.trim().toUpperCase();
     final note = _notes[f];
     if (f == t || t.isEmpty || note == null) return;
-    await append(t, note.text);
+    // Két jegyzet összefésülése: ha nem fér el, a vége marad le (de egyik sem vész el egészen).
+    await set(t, _joined(t, note.text));
     await set(f, '');
   }
 

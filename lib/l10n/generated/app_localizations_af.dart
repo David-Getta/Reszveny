@@ -2882,6 +2882,28 @@ class AppLocalizationsAf extends AppLocalizations {
       'Jou data is te groot om met jou rekening te sinkroniseer. Vee transaksies of notas uit wat jy nie meer nodig het nie, en dit sal weer probeer.';
 
   @override
+  String get noteFull =>
+      'Die aandeel se notas is vol, dus is hierdie inskrywing nie bygevoeg nie. Kort die notas in en probeer weer.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Geen wisselkoers vir $symbols nie.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count dividende in $currencies het geen wisselkoers nie en word nie by die totale ingereken nie.',
+      one:
+          '1 dividend in $currencies het geen wisselkoers nie en word nie by die totale ingereken nie.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

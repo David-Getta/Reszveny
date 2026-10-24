@@ -2878,6 +2878,26 @@ class AppLocalizationsSv extends AppLocalizations {
       'Dina data är för stora för att synkroniseras med ditt konto. Radera transaktioner eller anteckningar du inte längre behöver, så görs ett nytt försök.';
 
   @override
+  String get noteFull =>
+      'Anteckningen för den här aktien är full, så posten lades inte till. Korta anteckningen och försök igen.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Ingen växelkurs för $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count utdelningar i $currencies saknar',
+      one: '1 utdelning i $currencies saknar',
+    );
+    return '$_temp0 växelkurs och räknas inte med i summorna.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

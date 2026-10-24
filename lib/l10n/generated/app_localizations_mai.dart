@@ -2868,6 +2868,28 @@ class AppLocalizationsMai extends AppLocalizations {
       'अहाँक डेटा खाता संग सिंक करबाक लेल बहुत पैघ अछि। जे लेन-देन वा नोटक आब काज नहि अछि, से मेटाउ, तखन ई फेर प्रयास करत।';
 
   @override
+  String get noteFull =>
+      'एहि शेयरक नोट भरि गेल अछि, तेँ ई एंट्री नहि जोड़ल गेल। नोट छोट करू आ फेरसँ प्रयास करू।';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols लेल विनिमय दर उपलब्ध नहि अछि।';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currenciesमे $count डिविडेंडक विनिमय दर उपलब्ध नहि अछि, तेँ ई सभ कुल योगमे शामिल नहि अछि।',
+      one:
+          '$currenciesमे 1 डिविडेंडक विनिमय दर उपलब्ध नहि अछि, तेँ ई कुल योगमे शामिल नहि अछि।',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

@@ -854,5 +854,8 @@
   "restoreNothing": "Hapana zvawakatenga kare zvawanikwa kuti zvidzorerwe.",
   "manageSubscriptionElsewhere": "Hapana kunyoresa kwekutarisira pano. Kunyoresa kwawakatenga muApp Store kana Google Play kunotarisirwa mumarongero echitoro.",
   "backupFailed": "Bhakapu haina kukwanisa kuchengetedzwa. Ndapota edza zvakare.",
-  "syncTooLarge": "Data yako yakawandisa kuti iwiriraniswe neakaundi yako. Dzima zvakatengwa nezvakatengeswa kana zvinyorwa zvausisade, uye kuchaedza zvakare."
+  "syncTooLarge": "Data yako yakawandisa kuti iwiriraniswe neakaundi yako. Dzima zvakatengwa nezvakatengeswa kana zvinyorwa zvausisade, uye kuchaedza zvakare.",
+  "noteFull": "Zvinyorwa zvesheya iyi zvazara, saka izvi hazvina kuwedzerwa. Pfupisa zvinyorwa wobva waedza zvakare.",
+  "portfolioNoRateFor": "Hapana chiyero chekuchinjana mari che {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Dividendi 1 mu {currencies} harina chiyero chekuchinjana mari, saka harina kuverengerwa muhuwandu hwese.} other{Madividendi {count} mu {currencies} haana chiyero chekuchinjana mari, saka haana kuverengerwa muhuwandu hwese.}}"
 }

@@ -2891,6 +2891,28 @@ class AppLocalizationsOm extends AppLocalizations {
       'Odeeffannoon kee herrega kee waliin walsimsiisuuf baay\'ee guddaadha. Bittaa fi gurgurtaa ykn yaadannoo kana booda hin barbaachisne haqi, achiis irra deebi\'ee yaala.';
 
   @override
+  String get noteFull =>
+      'Yaadannoon aksiyoona kanaa guutameera, kanaaf galmeen kun hin dabalamne. Yaadannoo gabaabsiitii irra deebi\'ii yaali.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Sharafni $symbols hin jiru.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Diviidendiin $count $currencies tiin sharafa hin qaban, kanaaf waliigala keessaa hafaniiru.',
+      one:
+          'Diviidendiin 1 $currencies tiin sharafa hin qabu, kanaaf waliigala keessaa hafeera.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

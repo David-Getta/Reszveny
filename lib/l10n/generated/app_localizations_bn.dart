@@ -2876,6 +2876,28 @@ class AppLocalizationsBn extends AppLocalizations {
       'আপনার ডেটা অ্যাকাউন্টের সাথে সিঙ্ক করার জন্য খুব বড়। যেসব লেনদেন বা নোট আর দরকার নেই সেগুলো মুছুন, তারপর এটি আবার চেষ্টা করবে।';
 
   @override
+  String get noteFull =>
+      'এই শেয়ারের নোট পূর্ণ হয়ে গেছে, তাই এই এন্ট্রিটি যোগ করা হয়নি। নোট ছোট করে আবার চেষ্টা করুন।';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols-এর বিনিময় হার নেই।';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies-এ $countটি ডিভিডেন্ডের বিনিময় হার নেই, তাই এগুলি মোট হিসাবে ধরা হয়নি।',
+      one:
+          '$currencies-এ $countটি ডিভিডেন্ডের বিনিময় হার নেই, তাই এটি মোট হিসাবে ধরা হয়নি।',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

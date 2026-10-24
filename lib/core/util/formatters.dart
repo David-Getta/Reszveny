@@ -92,11 +92,23 @@ class Fmt {
     return currency == null || !showCurrency ? s : '$s $currency';
   }
 
+  /// Árfolyam: egy egység fölött 2 tizedessel, alatta legalább 4-gyel – a nagyon kis
+  /// árnál annyival, hogy három értékes jegy látsszon (0,0042 → 0,00420; nem „0,0000”).
   String price(num? v, String? currency) {
     if (v == null) return na;
-    final n = number(v, decimals: v.abs() < 1 ? 4 : 2);
+    final a = v.abs();
+    final decimals = a >= 1 || a == 0 || !a.isFinite
+        ? (a >= 1 ? 2 : 4)
+        : ((-math.log(a) / math.ln10).ceil() + 2).clamp(4, 10);
+    final n = number(v, decimals: decimals);
     return currency == null ? n : '$n $currency';
   }
+
+  /// Darabonkénti ár (vételi, átlag- vagy mostani ár): egy egység alatt mint a [price]
+  /// (a 0,0042 dolláros ár ne „0,00” legyen), fölötte mint a [money].
+  String unit(num? v, String? currency, {bool showCurrency = true}) => v != null && v != 0 && v.abs() < 1
+      ? price(v, showCurrency ? currency : null)
+      : money(v, currency, showCurrency: showCurrency);
 
   /// Rövidített nagy számok: 1 234 567 890 → "1.23B". Az SI-szerű utótagok
   /// (K, M, B, T) nemzetközileg érthetők a pénzügyi felületeken.

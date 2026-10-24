@@ -2887,6 +2887,28 @@ class AppLocalizationsSn extends AppLocalizations {
       'Data yako yakawandisa kuti iwiriraniswe neakaundi yako. Dzima zvakatengwa nezvakatengeswa kana zvinyorwa zvausisade, uye kuchaedza zvakare.';
 
   @override
+  String get noteFull =>
+      'Zvinyorwa zvesheya iyi zvazara, saka izvi hazvina kuwedzerwa. Pfupisa zvinyorwa wobva waedza zvakare.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Hapana chiyero chekuchinjana mari che $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Madividendi $count mu $currencies haana chiyero chekuchinjana mari, saka haana kuverengerwa muhuwandu hwese.',
+      one:
+          'Dividendi 1 mu $currencies harina chiyero chekuchinjana mari, saka harina kuverengerwa muhuwandu hwese.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

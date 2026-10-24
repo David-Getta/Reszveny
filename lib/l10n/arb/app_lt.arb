@@ -854,5 +854,8 @@
   "restoreNothing": "Nerasta ankstesnių pirkinių, kuriuos būtų galima atkurti.",
   "manageSubscriptionElsewhere": "Čia nėra prenumeratos, kurią būtų galima tvarkyti. App Store arba Google Play įsigyta prenumerata tvarkoma parduotuvės nustatymuose.",
   "backupFailed": "Atsarginės kopijos išsaugoti nepavyko. Bandykite dar kartą.",
-  "syncTooLarge": "Jūsų duomenys per dideli, kad būtų sinchronizuojami su jūsų paskyra. Ištrinkite nebereikalingas operacijas ar užrašus ir bus bandoma dar kartą."
+  "syncTooLarge": "Jūsų duomenys per dideli, kad būtų sinchronizuojami su jūsų paskyra. Ištrinkite nebereikalingas operacijas ar užrašus ir bus bandoma dar kartą.",
+  "noteFull": "Šios akcijos užrašai pilni, todėl šis įrašas nepridėtas. Sutrumpinkite užrašus ir bandykite dar kartą.",
+  "portfolioNoRateFor": "Nėra {symbols} valiutos kurso.",
+  "dividendsNotConverted": "{count, plural, =1{{count} dividendas ({currencies}) neturi valiutos kurso ir neįtraukiamas į sumas.} other{Dividendų be valiutos kurso ({currencies}): {count}. Jie neįtraukiami į sumas.}}"
 }

@@ -854,5 +854,8 @@
   "restoreNothing": "Geen vorige aankope is gevind om te herstel nie.",
   "manageSubscriptionElsewhere": "Hier is geen intekening om te bestuur nie. ’n Intekening wat in die App Store of Google Play gekoop is, word in die winkel se instellings bestuur.",
   "backupFailed": "Die rugsteun kon nie gestoor word nie. Probeer asseblief weer.",
-  "syncTooLarge": "Jou data is te groot om met jou rekening te sinkroniseer. Vee transaksies of notas uit wat jy nie meer nodig het nie, en dit sal weer probeer."
+  "syncTooLarge": "Jou data is te groot om met jou rekening te sinkroniseer. Vee transaksies of notas uit wat jy nie meer nodig het nie, en dit sal weer probeer.",
+  "noteFull": "Die aandeel se notas is vol, dus is hierdie inskrywing nie bygevoeg nie. Kort die notas in en probeer weer.",
+  "portfolioNoRateFor": "Geen wisselkoers vir {symbols} nie.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividend in {currencies} het geen wisselkoers nie en word nie by die totale ingereken nie.} other{{count} dividende in {currencies} het geen wisselkoers nie en word nie by die totale ingereken nie.}}"
 }

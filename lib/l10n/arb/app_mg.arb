@@ -854,5 +854,8 @@
   "restoreNothing": "Tsy nisy fividianana teo aloha hita haverina.",
   "manageSubscriptionElsewhere": "Tsy misy famandrihana tantanina eto. Ny famandrihana novidiana tao amin'ny App Store na Google Play dia tantanina ao amin'ny fikirakiran'ny fivarotana.",
   "backupFailed": "Tsy voatahiry ny fitahirizana. Andramo indray azafady.",
-  "syncTooLarge": "Lehibe loatra ny angonao ka tsy azo ampifanarahana amin'ny kaontinao. Fafao ny fividianana sy fivarotana na ny naoty tsy ilainao intsony, dia hiezaka indray izy."
+  "syncTooLarge": "Lehibe loatra ny angonao ka tsy azo ampifanarahana amin'ny kaontinao. Fafao ny fividianana sy fivarotana na ny naoty tsy ilainao intsony, dia hiezaka indray izy.",
+  "noteFull": "Feno ny naotin'ity aksiona ity, ka tsy nampiana ity soratra ity. Fohezo ny naoty ary andramo indray.",
+  "portfolioNoRateFor": "Tsy misy sandam-bola ho an'ny {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Tsy misy sandam-bola ny dividandy {count} amin'ny {currencies}, ka tsy tafiditra ao amin'ny fitambarany.} other{Tsy misy sandam-bola ny dividandy {count} amin'ny {currencies}, ka tsy tafiditra ao amin'ny fitambarany.}}"
 }

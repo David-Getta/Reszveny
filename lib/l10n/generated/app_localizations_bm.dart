@@ -2872,6 +2872,28 @@ class AppLocalizationsBm extends AppLocalizations {
       'I ka kunnafoniw ka bon kojugu ka kɛ kelen ye i ka kɔnti la. Sanniw ni feereliw walima sɛbɛnniw minnu tɛ i mago ye tun, olu jɔsi, o kɔ a bɛ segin ka a kɛ.';
 
   @override
+  String get noteFull =>
+      'Nin aksiyɔn ka sɛbɛnniw falen don, o de kosɔn nin sɛbɛnni ma fara a kan. Sɛbɛnniw surunya ka a lajɛ tugun.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols wari falen hakɛ tɛ yen.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividandi $count minnu bɛ $currencies la, olu wari falen hakɛ tɛ yen, o la u ma jate hakɛ bɛɛ lajɛlenw na.',
+      one:
+          'Dividandi 1 min bɛ $currencies la, o wari falen hakɛ tɛ yen, o la a ma jate hakɛ bɛɛ lajɛlenw na.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

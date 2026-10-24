@@ -2881,6 +2881,28 @@ class AppLocalizationsKu extends AppLocalizations {
       'Daneyên te ji bo hevdemkirina bi hesabê te re pir mezin in. Danûstandin an notên ku êdî ne hewce ne jê bibe, û ew ê dîsa biceribîne.';
 
   @override
+  String get noteFull =>
+      'Notên vê pişkê tije ne, ji ber vê yekê ev tomar nehat zêdekirin. Notan kurt bike û dîsa biceribîne.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Ji bo $symbols rêjeya diravan tune.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Ji bo $count dividendên bi $currencies rêjeya diravan tune, loma di komê de nayên hesibandin.',
+      one:
+          'Ji bo 1 dividenda bi $currencies rêjeya diravan tune, loma di komê de nayê hesibandin.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

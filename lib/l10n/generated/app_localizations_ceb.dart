@@ -2890,6 +2890,28 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Dako kaayo ang imong data aron ma-sync sa imong account. Papasa ang mga transaksyon o nota nga dili na nimo kinahanglan, ug mosulay kini pag-usab.';
 
   @override
+  String get noteFull =>
+      'Puno na ang mga nota alang niini nga stock, busa wala madugang kini nga entry. Pamub-a ang mga nota ug sulayi pag-usab.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Walay exchange rate alang sa $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Ang $count ka dibidendo sa $currencies walay exchange rate ug wala iapil sa mga total.',
+      one:
+          'Ang 1 ka dibidendo sa $currencies walay exchange rate ug wala iapil sa mga total.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

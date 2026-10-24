@@ -2874,6 +2874,28 @@ class AppLocalizationsSi extends AppLocalizations {
       'ඔබේ දත්ත ඔබේ ගිණුම සමඟ සමමුහුර්ත කළ නොහැකි තරම් විශාලයි. තවදුරටත් අවශ්‍ය නැති ගනුදෙනු හෝ සටහන් මකන්න, එවිට එය නැවත උත්සාහ කරනු ඇත.';
 
   @override
+  String get noteFull =>
+      'මෙම කොටසේ සටහන පිරී ඇති නිසා මෙම ඇතුළත් කිරීම එක් කළේ නැත. සටහන කෙටි කර නැවත උත්සාහ කරන්න.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols සඳහා විනිමය අනුපාතයක් නොමැත.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies හි ලාභාංශ $countකට විනිමය අනුපාතයක් නොමැති නිසා ඒවා මුළු අගයන්ට ඇතුළත් නොවේ.',
+      one:
+          '$currencies හි ලාභාංශ $countකට විනිමය අනුපාතයක් නොමැති නිසා එය මුළු අගයන්ට ඇතුළත් නොවේ.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

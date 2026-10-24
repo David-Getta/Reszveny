@@ -854,5 +854,8 @@
   "restoreNothing": "Ora ana tukon sadurungé sing bisa dipulihaké.",
   "manageSubscriptionElsewhere": "Ora ana langganan sing bisa diatur ing kéné. Langganan sing dituku ing App Store utawa Google Play diatur ing setelan toko.",
   "backupFailed": "Cadhangan ora bisa disimpen. Mangga jajal maneh.",
-  "syncTooLarge": "Data sampeyan kegedhèn kanggo disinkronaké karo akun sampeyan. Busak transaksi utawa cathetan sing wis ora dibutuhaké, banjur bakal dicoba manèh."
+  "syncTooLarge": "Data sampeyan kegedhèn kanggo disinkronaké karo akun sampeyan. Busak transaksi utawa cathetan sing wis ora dibutuhaké, banjur bakal dicoba manèh.",
+  "noteFull": "Cathetan kanggo saham iki wis kebak, mula entri iki ora ditambahake. Cekakna cathetane banjur coba maneh.",
+  "portfolioNoRateFor": "Ora ana kurs kanggo {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividen ing {currencies} ora duwe kurs lan ora diétung ing total.} other{{count} dividen ing {currencies} ora duwe kurs lan ora diétung ing total.}}"
 }

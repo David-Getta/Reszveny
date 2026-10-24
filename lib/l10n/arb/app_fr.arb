@@ -854,5 +854,8 @@
   "restoreNothing": "Aucun achat antérieur à restaurer n’a été trouvé.",
   "manageSubscriptionElsewhere": "Il n’y a aucun abonnement à gérer ici. Un abonnement souscrit sur l’App Store ou Google Play se gère dans les réglages de la boutique.",
   "backupFailed": "La sauvegarde n’a pas pu être enregistrée. Veuillez réessayer.",
-  "syncTooLarge": "Vos données sont trop volumineuses pour être synchronisées avec votre compte. Supprimez les transactions ou notes dont vous n’avez plus besoin, et une nouvelle tentative aura lieu."
+  "syncTooLarge": "Vos données sont trop volumineuses pour être synchronisées avec votre compte. Supprimez les transactions ou notes dont vous n’avez plus besoin, et une nouvelle tentative aura lieu.",
+  "noteFull": "Les notes de cette action sont pleines, cette entrée n’a donc pas été ajoutée. Raccourcissez les notes et réessayez.",
+  "portfolioNoRateFor": "Pas de taux de change pour {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{{count} dividende en {currencies} n’a pas de taux de change et n’est pas compté dans les totaux.} other{{count} dividendes en {currencies} n’ont pas de taux de change et ne sont pas comptés dans les totaux.}}"
 }

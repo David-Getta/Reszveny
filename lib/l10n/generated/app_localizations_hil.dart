@@ -2895,6 +2895,28 @@ class AppLocalizationsHil extends AppLocalizations {
       'Daku gid ang imo data para ma-sync sa imo account. Panasa ang mga transaksyon ukon nota nga indi mo na kinahanglan, kag tilawan ini liwat.';
 
   @override
+  String get noteFull =>
+      'Puno na ang mga nota para sa sini nga stock, gani wala nadugang ini nga entry. Pamubua ang mga nota kag tilawi liwat.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Wala sang exchange rate para sa $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Ang $count ka dibidendo sa $currencies wala sang exchange rate kag wala ginlakip sa mga kabilogan.',
+      one:
+          'Ang 1 ka dibidendo sa $currencies wala sang exchange rate kag wala ginlakip sa mga kabilogan.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

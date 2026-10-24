@@ -69,7 +69,7 @@ class PositionCard extends StatelessWidget {
               MetricFigure(
                 label: l10n.portfolioTotalValue,
                 value: fmt.money(row.value, ccy),
-                sub: '${qty(pos.quantity)} × ${fmt.money(row.price, ccy, showCurrency: false)}',
+                sub: '${qty(pos.quantity)} × ${fmt.unit(row.price, ccy, showCurrency: false)}',
               ),
               MetricFigure(
                 label: l10n.portfolioGainLoss,
@@ -86,7 +86,7 @@ class PositionCard extends StatelessWidget {
               MetricFigure(
                 label: l10n.portfolioInvested,
                 value: fmt.money(pos.cost, ccy),
-                sub: l10n.portfolioAvgCost(fmt.money(pos.averageCost, ccy, showCurrency: false)),
+                sub: l10n.portfolioAvgCost(fmt.unit(pos.averageCost, ccy, showCurrency: false)),
               ),
               if (row.value case final v?)
                 if (positionsAnnualReturn([pos], (_) => 1, v, now) case final r?)

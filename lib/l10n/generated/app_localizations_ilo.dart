@@ -2899,6 +2899,28 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Dakkel unay ti datam tapno mai-sync iti accountmo. Punasem dagiti transaksion wenno nota a saanmonton a kasapulan, ket padasenna manen.';
 
   @override
+  String get noteFull =>
+      'Napno dagiti nota daytoy a stock, isu a saan a nainayon daytoy nga entry. Paababaem dagiti nota sa padasem manen.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Awan ti exchange rate para iti $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Awan ti exchange rate ti $count a dibidendo iti $currencies, isu a saan a mairaman kadagiti dagup.',
+      one:
+          'Awan ti exchange rate ti 1 a dibidendo iti $currencies, isu a saan a mairaman kadagiti dagup.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

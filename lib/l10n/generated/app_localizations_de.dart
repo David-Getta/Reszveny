@@ -2893,6 +2893,28 @@ class AppLocalizationsDe extends AppLocalizations {
       'Deine Daten sind zu groß, um mit deinem Konto synchronisiert zu werden. Lösche Transaktionen oder Notizen, die du nicht mehr brauchst, dann wird es erneut versucht.';
 
   @override
+  String get noteFull =>
+      'Die Notizen zu dieser Aktie sind voll, deshalb wurde dieser Eintrag nicht hinzugefügt. Kürze die Notizen und versuche es erneut.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Kein Wechselkurs für $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count Dividenden in $currencies haben keinen Wechselkurs und sind nicht in den Summen enthalten.',
+      one:
+          '1 Dividende in $currencies hat keinen Wechselkurs und ist nicht in den Summen enthalten.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

@@ -854,5 +854,8 @@
   "restoreNothing": "Tidak ditemukan pembelian sebelumnya untuk dipulihkan.",
   "manageSubscriptionElsewhere": "Tidak ada langganan untuk dikelola di sini. Langganan yang dibeli di App Store atau Google Play dikelola di pengaturan toko.",
   "backupFailed": "Cadangan tidak dapat disimpan. Silakan coba lagi.",
-  "syncTooLarge": "Data Anda terlalu besar untuk disinkronkan dengan akun Anda. Hapus transaksi atau catatan yang tidak lagi Anda perlukan, lalu sinkronisasi akan dicoba lagi."
+  "syncTooLarge": "Data Anda terlalu besar untuk disinkronkan dengan akun Anda. Hapus transaksi atau catatan yang tidak lagi Anda perlukan, lalu sinkronisasi akan dicoba lagi.",
+  "noteFull": "Catatan untuk saham ini sudah penuh, jadi entri ini tidak ditambahkan. Persingkat catatan dan coba lagi.",
+  "portfolioNoRateFor": "Tidak ada kurs untuk {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividen dalam {currencies} tidak memiliki kurs dan tidak dihitung dalam total.} other{{count} dividen dalam {currencies} tidak memiliki kurs dan tidak dihitung dalam total.}}"
 }

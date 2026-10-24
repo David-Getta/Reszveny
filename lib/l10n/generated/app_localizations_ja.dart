@@ -2786,6 +2786,25 @@ class AppLocalizationsJa extends AppLocalizations {
       'データが大きすぎるため、アカウントと同期できません。不要になった取引やメモを削除すると、再試行します。';
 
   @override
+  String get noteFull => 'この銘柄のメモがいっぱいのため、この内容は追加されませんでした。メモを短くしてもう一度お試しください。';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbolsの為替レートはありません。';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$currencies建ての配当金 $count 件は為替レートがないため、合計に含まれません。',
+      one: '$currencies建ての配当金 1 件は為替レートがないため、合計に含まれません。',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

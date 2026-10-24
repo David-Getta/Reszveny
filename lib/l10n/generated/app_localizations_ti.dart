@@ -2836,6 +2836,27 @@ class AppLocalizationsTi extends AppLocalizations {
       'ሓበሬታኹም ምስ ሕሳብኩም ንምስምማዕ ኣዝዩ ዓብዩ እዩ። ዘየድልየኩም ልውውጣት ወይ ማስታወሻታት ሰርዙ፣ ድሕሪኡ እንደገና ክፍተን እዩ።';
 
   @override
+  String get noteFull =>
+      'ማስታወሻ እዚ ኣክሲዮን መሊኡ እዩ፣ ስለዚ እዚ ጽሑፍ ኣይተወሰኸን። ነቲ ማስታወሻ ኣሕጽርዎ እሞ ዳግማይ ፈትኑ።';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'ን$symbols መጠን ምልውዋጥ የለን።';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'ብ$currencies ዘለው $count ድቪደንድታት መጠን ምልውዋጥ ስለ ዘይብሎም ካብ ድምራት ተገሊሎም ኣለው።',
+      one: 'ብ$currencies ዘሎ 1 ድቪደንድ መጠን ምልውዋጥ ስለ ዘይብሉ ካብ ድምራት ተገሊሉ ኣሎ።',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

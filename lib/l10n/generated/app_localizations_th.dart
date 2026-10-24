@@ -2842,6 +2842,28 @@ class AppLocalizationsTh extends AppLocalizations {
       'ข้อมูลของคุณมีขนาดใหญ่เกินกว่าจะซิงค์กับบัญชีได้ ลบรายการซื้อขายหรือบันทึกที่ไม่ต้องการแล้ว จากนั้นระบบจะลองอีกครั้ง';
 
   @override
+  String get noteFull =>
+      'บันทึกของหุ้นนี้เต็มแล้ว จึงไม่ได้เพิ่มรายการนี้ โปรดย่อบันทึกให้สั้นลงแล้วลองอีกครั้ง';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'ไม่มีอัตราแลกเปลี่ยนสำหรับ $symbols';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'เงินปันผล $count รายการในสกุลเงิน $currencies ไม่มีอัตราแลกเปลี่ยน จึงไม่นับรวมในยอดรวม',
+      one:
+          'เงินปันผล 1 รายการในสกุลเงิน $currencies ไม่มีอัตราแลกเปลี่ยน จึงไม่นับรวมในยอดรวม',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

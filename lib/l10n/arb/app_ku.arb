@@ -854,5 +854,8 @@
   "restoreNothing": "Ti kirînên berê yên ku werin vegerandin nehatin dîtin.",
   "manageSubscriptionElsewhere": "Li vir ti abonetî tune ye ku were birêvebirin. Abonetiya ku ji App Store an Google Play hatiye kirîn, di mîhengên firotgehê de tê birêvebirin.",
   "backupFailed": "Paşeke nehat tomarkirin. Ji kerema xwe dîsa biceribîne.",
-  "syncTooLarge": "Daneyên te ji bo hevdemkirina bi hesabê te re pir mezin in. Danûstandin an notên ku êdî ne hewce ne jê bibe, û ew ê dîsa biceribîne."
+  "syncTooLarge": "Daneyên te ji bo hevdemkirina bi hesabê te re pir mezin in. Danûstandin an notên ku êdî ne hewce ne jê bibe, û ew ê dîsa biceribîne.",
+  "noteFull": "Notên vê pişkê tije ne, ji ber vê yekê ev tomar nehat zêdekirin. Notan kurt bike û dîsa biceribîne.",
+  "portfolioNoRateFor": "Ji bo {symbols} rêjeya diravan tune.",
+  "dividendsNotConverted": "{count, plural, =1{Ji bo 1 dividenda bi {currencies} rêjeya diravan tune, loma di komê de nayê hesibandin.} other{Ji bo {count} dividendên bi {currencies} rêjeya diravan tune, loma di komê de nayên hesibandin.}}"
 }

@@ -2875,6 +2875,28 @@ class AppLocalizationsMr extends AppLocalizations {
       'तुमचा डेटा तुमच्या खात्याशी सिंक करण्यासाठी खूप मोठा आहे. आता गरज नसलेले व्यवहार किंवा नोंदी हटवा, मग ते पुन्हा प्रयत्न करेल.';
 
   @override
+  String get noteFull =>
+      'या शेअरची नोंद पूर्ण भरली आहे, त्यामुळे हा मजकूर जोडला गेला नाही. नोंद लहान करून पुन्हा प्रयत्न करा.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols साठी विनिमय दर उपलब्ध नाही.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies मधील $count लाभांशांसाठी विनिमय दर उपलब्ध नाही, त्यामुळे ते एकूण रकमेत धरलेले नाहीत.',
+      one:
+          '$currencies मधील 1 लाभांशासाठी विनिमय दर उपलब्ध नाही, त्यामुळे तो एकूण रकमेत धरलेला नाही.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

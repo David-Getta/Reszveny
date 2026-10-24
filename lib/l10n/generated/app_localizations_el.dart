@@ -2889,6 +2889,28 @@ class AppLocalizationsEl extends AppLocalizations {
       'Τα δεδομένα σας είναι πολύ μεγάλα για συγχρονισμό με τον λογαριασμό σας. Διαγράψτε συναλλαγές ή σημειώσεις που δεν χρειάζεστε πια και θα γίνει νέα προσπάθεια.';
 
   @override
+  String get noteFull =>
+      'Οι σημειώσεις αυτής της μετοχής είναι πλήρεις, γι’ αυτό η καταχώριση δεν προστέθηκε. Συντομεύστε τις σημειώσεις και δοκιμάστε ξανά.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Δεν υπάρχει ισοτιμία για $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count μερίσματα σε $currencies δεν έχουν ισοτιμία και δεν περιλαμβάνονται στα σύνολα.',
+      one:
+          '1 μέρισμα σε $currencies δεν έχει ισοτιμία και δεν περιλαμβάνεται στα σύνολα.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

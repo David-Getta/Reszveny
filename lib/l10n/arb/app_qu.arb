@@ -854,5 +854,8 @@
   "restoreNothing": "Manam kutichinapaq ñawpaq rantisqakuna tarikunchu.",
   "manageSubscriptionElsewhere": "Kaypiqa manam kamachinapaq suscripción kanchu. App Store utaq Google Play nisqapi rantisqa suscripciónqa tiendapa allichayninkunapim kamachikun.",
   "backupFailed": "Waqaychasqaqa manam waqaychakuyta atirqanchu. Ama hina kaspa, huktawan ruway.",
-  "syncTooLarge": "Datosniykiqa nisyu hatunmi cuentaykiwan sincronizanapaq. Manaña munasqayki rantiy rantikuykunata utaq qillqasqakunata pichay, hinaspa yapamanta kallpachakunqa."
+  "syncTooLarge": "Datosniykiqa nisyu hatunmi cuentaykiwan sincronizanapaq. Manaña munasqayki rantiy rantikuykunata utaq qillqasqakunata pichay, hinaspa yapamanta kallpachakunqa.",
+  "noteFull": "Kay accionpa qillqasqanqa hunt'añam, chayrayku kay qillqataqa mana yapakurqanchu. Qillqasqata pisiyachiy, hinaspa huktawan ruway.",
+  "portfolioNoRateFor": "{symbols}-paq tipo de cambio mana kanchu.",
+  "dividendsNotConverted": "{count, plural, =1{{currencies}-pi 1 dividendopaq tipo de cambio mana kanchu, chayrayku llapan yupaykunapi mana yupakunchu.} other{{currencies}-pi {count} dividendokunapaq tipo de cambio mana kanchu, chayrayku llapan yupaykunapi mana yupakunchu.}}"
 }

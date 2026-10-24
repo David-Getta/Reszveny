@@ -2878,6 +2878,28 @@ class AppLocalizationsMs extends AppLocalizations {
       'Data anda terlalu besar untuk disegerakkan dengan akaun anda. Padam transaksi atau nota yang tidak diperlukan lagi, dan ia akan cuba lagi.';
 
   @override
+  String get noteFull =>
+      'Nota untuk saham ini sudah penuh, jadi entri ini tidak ditambah. Pendekkan nota dan cuba lagi.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Tiada kadar pertukaran untuk $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count dividen dalam $currencies tiada kadar pertukaran dan tidak dimasukkan dalam jumlah.',
+      one:
+          '1 dividen dalam $currencies tiada kadar pertukaran dan tidak dimasukkan dalam jumlah.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

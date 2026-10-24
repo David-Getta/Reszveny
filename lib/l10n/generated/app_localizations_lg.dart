@@ -2894,6 +2894,28 @@ class AppLocalizationsLg extends AppLocalizations {
       'Data yo nnene nnyo okukwataganyizibwa n\'akawunti yo. Sangula bye wagula ne bye watunda oba ebiwandiiko by\'otokyetaaga, olwo kujja kuddamu okugezaako.';
 
   @override
+  String get noteFull =>
+      'Ebiwandiiko by\'omugabo guno bijjudde, kyova ekiwandiiko kino tekyongeddwako. Simpaya ebiwandiiko ogezeeko nate.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Tewali muwendo gw\'okuwaanyisa ensimbi ogwa $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividendi $count mu $currencies tezirina muwendo gw\'okuwaanyisa ensimbi, kyova tezibalibwa mu mugatte.',
+      one:
+          'Dividendi 1 mu $currencies terina muwendo gw\'okuwaanyisa ensimbi, kyova etabalibwa mu mugatte.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

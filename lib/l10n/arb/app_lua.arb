@@ -854,5 +854,8 @@
   "restoreNothing": "Katuena bapete bintu biuvua musumbe kale bua kubipingaja.",
   "manageSubscriptionElsewhere": "Kakuena abonnement wa kulombola muaba eu to. Abonnement uvua musumbe mu App Store anyi Google Play udi ulombodibua mu malongolola a store.",
   "backupFailed": "Katuena mua kulama kopi. Teta kabidi.",
-  "syncTooLarge": "Ba données biebe bidi binene bikole bua synchronisation ne compte webe. Jimija kusumba ne kusumbisha anyi mifundu iudi kuyi ne dijinga nayi kabidi, neyikebe kabidi."
+  "syncTooLarge": "Ba données biebe bidi binene bikole bua synchronisation ne compte webe. Jimija kusumba ne kusumbisha anyi mifundu iudi kuyi ne dijinga nayi kabidi, neyikebe kabidi.",
+  "noteFull": "Mifundu ya action eyi mmiyule, nunku bualu ebu kabuakabuejibua to. Kepesha mifundu ne teta kabidi.",
+  "portfolioNoRateFor": "Kakuena taux wa mfranga wa {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Dividende 1 mu {currencies} kayena ne taux wa mfranga, nunku katuena tuyibala mu mishinga yonso.} other{Dividende {count} mu {currencies} kayena ne taux wa mfranga, nunku katuena tuyibala mu mishinga yonso.}}"
 }

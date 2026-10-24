@@ -2891,6 +2891,28 @@ class AppLocalizationsRw extends AppLocalizations {
       'Amakuru yawe ni menshi cyane ku buryo adashobora guhuzwa na konti yawe. Siba ibyaguzwe n\'ibyagurishijwe cyangwa ibyo wanditse utagikeneye, hanyuma bizongera kugerageza.';
 
   @override
+  String get noteFull =>
+      'Ibyo wanditse kuri uyu mugabane byuzuye, ni yo mpamvu iyi nyandiko itongewemo. Gabanya ibyo wanditse maze wongere ugerageze.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Nta gipimo cy\'ivunjisha cya $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Amadividende $count muri $currencies ntafite igipimo cy\'ivunjisha, ntabarirwa mu giteranyo.',
+      one:
+          'Idividende 1 muri $currencies ntirifite igipimo cy\'ivunjisha, ntiribarirwa mu giteranyo.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

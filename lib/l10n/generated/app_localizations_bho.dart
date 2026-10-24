@@ -2869,6 +2869,28 @@ class AppLocalizationsBho extends AppLocalizations {
       'राउर डेटा खाता से सिंक करे खातिर बहुत बड़ बा। जवन लेन-देन भा नोट के अब जरूरत नइखे, ओके मिटाईं, फेर ई दोबारा कोसिस करी।';
 
   @override
+  String get noteFull =>
+      'एह शेयर के नोट भर गइल बा, एही से ई एंट्री ना जुड़ल। नोट छोट करीं आ फेर से कोशिश करीं।';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols खातिर विनिमय दर उपलब्ध नइखे।';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies में $count डिविडेंड के विनिमय दर नइखे, एही से ऊ कुल जोड़ में शामिल नइखे।',
+      one:
+          '$currencies में 1 डिविडेंड के विनिमय दर नइखे, एही से ऊ कुल जोड़ में शामिल नइखे।',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

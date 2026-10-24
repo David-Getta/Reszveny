@@ -2901,6 +2901,28 @@ class AppLocalizationsTs extends AppLocalizations {
       'Data ya wena yi kulu ngopfu ku fambelanisiwa ni akhawunti ya wena. Sula swixaviwa ni swixavisiwa kumbe tinotsi leti u nga ha ti lavi, kutani ku ta ringetiwa nakambe.';
 
   @override
+  String get noteFull =>
+      'Notsi ya xere leyi yi tele, hikwalaho leswi u swi tsaleke a swi engeteriwanga. Komisa notsi kutani u ringeta nakambe.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'A ku na mpimo wa ku cinca mali wa $symbols.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Tidividende ta $count hi $currencies a ti na mpimo wa ku cinca mali, hikwalaho a ti katsiwi eka mihlanganelo.',
+      one:
+          'Dividende 1 hi $currencies a yi na mpimo wa ku cinca mali, hikwalaho a yi katsiwi eka mihlanganelo.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

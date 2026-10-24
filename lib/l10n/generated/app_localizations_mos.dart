@@ -2859,6 +2859,28 @@ class AppLocalizationsMos extends AppLocalizations {
       'F bãngrã wʋsgame n yɩɩda, b pa tõe n yaa a yembr ne f kõntã ye. Yẽes raaba la koosgo bɩ gʋlsg nins f sẽn pa le rat ye, la a na n le maan a meng.';
 
   @override
+  String get noteFull =>
+      'Aksiõ kãngã gʋlsgã pida, rẽ n so tɩ b pa paas gʋlsg kãngã ye. Bilg gʋlsgã la f le mak.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols teekre ka be ye.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Dividand $count sẽn be $currencies pʋgẽ ka tar teekre ye, b pa kẽes-b sõdgã pʋgẽ ye.',
+      one:
+          'Dividand 1 sẽn be $currencies pʋgẽ ka tar teekre ye, b pa kẽes-a sõdgã pʋgẽ ye.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

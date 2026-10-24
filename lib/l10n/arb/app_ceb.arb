@@ -854,5 +854,8 @@
   "restoreNothing": "Walay nakit-ang nangaging napalit nga ma-restore.",
   "manageSubscriptionElsewhere": "Walay subscription nga madumala dinhi. Ang subscription nga gipalit sa App Store o Google Play gidumala sa mga setting sa store.",
   "backupFailed": "Dili ma-save ang backup. Palihug sulayi pag-usab.",
-  "syncTooLarge": "Dako kaayo ang imong data aron ma-sync sa imong account. Papasa ang mga transaksyon o nota nga dili na nimo kinahanglan, ug mosulay kini pag-usab."
+  "syncTooLarge": "Dako kaayo ang imong data aron ma-sync sa imong account. Papasa ang mga transaksyon o nota nga dili na nimo kinahanglan, ug mosulay kini pag-usab.",
+  "noteFull": "Puno na ang mga nota alang niini nga stock, busa wala madugang kini nga entry. Pamub-a ang mga nota ug sulayi pag-usab.",
+  "portfolioNoRateFor": "Walay exchange rate alang sa {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{Ang 1 ka dibidendo sa {currencies} walay exchange rate ug wala iapil sa mga total.} other{Ang {count} ka dibidendo sa {currencies} walay exchange rate ug wala iapil sa mga total.}}"
 }

@@ -854,5 +854,8 @@
   "restoreNothing": "Non sono stati trovati acquisti precedenti da ripristinare.",
   "manageSubscriptionElsewhere": "Qui non c’è nessun abbonamento da gestire. Un abbonamento acquistato su App Store o Google Play si gestisce nelle impostazioni dello store.",
   "backupFailed": "Non è stato possibile salvare il backup. Riprova.",
-  "syncTooLarge": "I tuoi dati sono troppo grandi per essere sincronizzati con il tuo account. Elimina le transazioni o le note che non ti servono più e la sincronizzazione verrà ritentata."
+  "syncTooLarge": "I tuoi dati sono troppo grandi per essere sincronizzati con il tuo account. Elimina le transazioni o le note che non ti servono più e la sincronizzazione verrà ritentata.",
+  "noteFull": "Le note di questa azione sono piene, quindi questa voce non è stata aggiunta. Accorcia le note e riprova.",
+  "portfolioNoRateFor": "Nessun tasso di cambio per {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividendo in {currencies} non ha un tasso di cambio ed è escluso dai totali.} other{{count} dividendi in {currencies} non hanno un tasso di cambio e sono esclusi dai totali.}}"
 }

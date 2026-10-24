@@ -2878,6 +2878,28 @@ class AppLocalizationsTk extends AppLocalizations {
       'Maglumatlaryňyz hasabyňyz bilen sinhronlamak üçin örän uly. Indi gerek däl amallary ýa-da bellikleri pozuň, şonda täzeden synanyşylar.';
 
   @override
+  String get noteFull =>
+      'Bu paýnamanyň belligi doldy, şonuň üçin bu ýazgy goşulmady. Belligi gysgaldyň we gaýtadan synanyşyň.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return '$symbols üçin walýuta hümmeti ýok.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$currencies pul birligindäki $count diwidendiň walýuta hümmeti ýok, şonuň üçin jemlere goşulmady.',
+      one:
+          '$currencies pul birligindäki 1 diwidendiň walýuta hümmeti ýok, şonuň üçin jemlere goşulmady.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

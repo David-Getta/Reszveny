@@ -854,5 +854,8 @@
   "restoreNothing": "Nu au fost găsite achiziții anterioare de restabilit.",
   "manageSubscriptionElsewhere": "Nu există niciun abonament de gestionat aici. Un abonament cumpărat din App Store sau Google Play se gestionează din setările magazinului.",
   "backupFailed": "Backupul nu a putut fi salvat. Încearcă din nou.",
-  "syncTooLarge": "Datele tale sunt prea mari pentru a fi sincronizate cu contul tău. Șterge tranzacțiile sau notițele de care nu mai ai nevoie și se va reîncerca."
+  "syncTooLarge": "Datele tale sunt prea mari pentru a fi sincronizate cu contul tău. Șterge tranzacțiile sau notițele de care nu mai ai nevoie și se va reîncerca.",
+  "noteFull": "Notița acestei acțiuni este plină, așa că această intrare nu a fost adăugată. Scurtează notița și încearcă din nou.",
+  "portfolioNoRateFor": "Nu există curs de schimb pentru {symbols}.",
+  "dividendsNotConverted": "{count, plural, =1{1 dividend în {currencies} nu are curs de schimb și nu este inclus în totaluri.} other{Dividendele în {currencies} fără curs de schimb nu sunt incluse în totaluri: {count}.}}"
 }

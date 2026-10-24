@@ -2882,6 +2882,28 @@ class AppLocalizationsGn extends AppLocalizations {
       'Ne marandukuéra tuichaiterei oñesincroniza hag̃ua nde mbaʼetépe. Embogue jejogua ha ñemu térã jehaipyre ndereikotevẽvéima, ha oñehaʼã jeýta.';
 
   @override
+  String get noteFull =>
+      'Ko acción jehaipyrekuéra henyhẽma, upévare noñembojoajúi ko jehaipy. Embomichĩve jehaipyrekuéra ha ehaʼã jey.';
+
+  @override
+  String portfolioNoRateFor(String symbols) {
+    return 'Ndaipóri $symbols ñemoambue repy.';
+  }
+
+  @override
+  String dividendsNotConverted(int count, String currencies) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$count dividendo $currencies-pe ndorekói ñemoambue repy, upévare noñembopapái opaitépe.',
+      one:
+          '1 dividendo $currencies-pe ndorekói ñemoambue repy, upévare noñembopapái opaitépe.',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override
