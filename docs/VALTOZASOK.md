@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.288)
+# Változásjegyzék (0.2.130 → 0.2.289)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Szerver: párhuzamos kérések – a harminchatodik kódátnézés javításai
+
+- **0.2.289**: két egyszerre indított (pl. két lapon nyitott) böngészős előfizetés nem hoz létre két előfizetést:
+  a fiók egy Stripe-ügyfelet kap az első fizetés előtt, az új indítás lezárja az előző nyitott munkamenetet, és ha
+  mégis kettő fizetődne ki, a második lemondódik (a fel nem használt része az egyenlegen marad). A később (átutalással)
+  fizetett előfizetést is lemondja a fióktörlés, és a törlés után érkező fizetés nem ír jóvá egy nem létező fióknak.
+  A fióktörlés közben futó szinkronfeltöltés, elemzés vagy bolti ellenőrzés nem hagy vissza adatot a törölt fióknál.
+  Egy elemzés közbeni e-mailes belépés után a sikertelen elemzés kerete az összevont fióknak jár vissza. A meghívó
+  napi elemzés- és eszközkerete, valamint a hibás ajánló-, tesztelői és admin-kódok korlátja párhuzamos kérésekkel sem
+  léphető túl; egy párhuzamosan indított, vásárolt elemzésből fizetett elemzés nem próbaidős modellel fut; a bolti
+  vásárlás rögzítése és jóváírása egy lépésben történik.
 
 ## Bevitel és hibakezelés: a harmincharmadik és harmincnegyedik kódátnézés javításai
 

@@ -48,8 +48,21 @@ class StripeClient {
     return body;
   }
 
+  /// Stripe-ügyfél a fiókhoz (az első fizetés előtt): így minden munkamenet és
+  /// előfizetés ugyanahhoz az ügyfélhez tartozik, a portál mindet mutatja.
+  Future<String> createCustomer({required String userId, String? email}) async {
+    final c = await _post('/customers', {'metadata[user_id]': userId, 'email': ?email});
+    return c['id'] as String;
+  }
+
+  /// Egy még nyitott checkout-munkamenet lezárása (egy újabb indításakor: két nyitott
+  /// lapon ne lehessen két előfizetést fizetni).
+  Future<void> expireCheckoutSession(String sessionId) async {
+    await _post('/checkout/sessions/$sessionId/expire', const {});
+  }
+
   /// Checkout-munkamenet; az előfizetés `subscription`, a csomag `payment` módban.
-  Future<String> createCheckoutSession({
+  Future<({String id, String url})> createCheckoutSession({
     required String userId,
     required String productId,
     required bool subscription,
@@ -77,7 +90,7 @@ class StripeClient {
       if (subscription) 'subscription_data[metadata][product_id]': productId,
     };
     final s = await _post('/checkout/sessions', form);
-    return s['url'] as String;
+    return (id: s['id'] as String? ?? '', url: s['url'] as String);
   }
 
   /// Ügyfélportál (csomagváltás, lemondás, számlák, kártyacsere).
@@ -87,9 +100,12 @@ class StripeClient {
   }
 
   /// Előfizetés azonnali lemondása (fióktörléskor, hogy ne terheljük tovább a kártyát).
-  Future<void> cancelSubscription(String subscriptionId) async {
+  /// A [prorate] a fel nem használt időt az ügyfél egyenlegére írja (egy véletlen
+  /// második előfizetésnél: a következő számlából levonódik).
+  Future<void> cancelSubscription(String subscriptionId, {bool prorate = false}) async {
     final res = await _client.delete(
-      Uri.parse('$apiBase/subscriptions/$subscriptionId'),
+      Uri.parse('$apiBase/subscriptions/$subscriptionId')
+          .replace(queryParameters: prorate ? const {'prorate': 'true', 'invoice_now': 'true'} : null),
       headers: {'authorization': 'Bearer $secretKey'},
     );
     if (res.statusCode >= 300 && res.statusCode != 404) {

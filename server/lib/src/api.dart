@@ -403,10 +403,15 @@ class Api {
     final ip = _clientIp(r);
     if (ip != null && !_signups.allow(_ipKey(ip))) return _error(429, 'rate_limited');
     final body = await _body(r);
+    final invite = _invite(r);
+    // A meghívó eszközkerete a törzs beolvasása után újra: a párhuzamos regisztrációk
+    // a kapunál mind átmentek volna (a számláló csak itt nő).
+    if (invite != null && store.inviteDeviceCount(invite.code) >= invite.maxDevices) {
+      return _error(403, 'invite_device_limit');
+    }
     final device = body['device_id'];
     final (id, token) = store.createAnonymousUser(device is String && device.length <= 128 ? device : null);
     _limitTrial(r, id);
-    final invite = _invite(r);
     if (invite != null) store.addInviteDevice(invite.code, id);
     return _json({
       'user_id': id,
@@ -822,13 +827,14 @@ class Api {
   Future<Response> _adminStats(Request r) async {
     if (adminToken.isEmpty) return Response.notFound('not found');
     final ipKey = _ipKey(_clientIp(r) ?? '-');
-    if (_adminFailures.blocked(ipKey)) return _error(429, 'rate_limited');
     String? key;
     try {
       key = Uri.splitQueryString(await r.readAsString())['key'];
     } catch (_) {
       key = null; // Hibás űrlap: rossz kulcsként számít.
     }
+    // A korlát a beolvasás után (a vizsgálat és a számolás között nincs várakozás).
+    if (_adminFailures.blocked(ipKey)) return _error(429, 'rate_limited');
     if (!_isAdmin(key)) {
       _adminFailures.hit(ipKey);
       return _html(adminLoginPage(wrong: true), status: 403);
@@ -1057,8 +1063,7 @@ class Api {
   Future<Response> _putSync(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
-    final email = store.emailOf(uid);
-    if (email == null) return _error(403, 'sign_in_required');
+    if (store.emailOf(uid) == null) return _error(403, 'sign_in_required');
     final Object? body;
     try {
       final raw = await r.readAsString();
@@ -1071,6 +1076,8 @@ class Api {
     }
     final data = body is Map ? body['data'] : null;
     if (data is! Map || _tooDeep(data)) return _error(400, 'bad_request');
+    // Az olvasás közben törölt (vagy kijelentkeztetett) fiókhoz nem kerül vissza adat.
+    if (store.emailOf(uid) == null) return _error(403, 'sign_in_required');
     if (body is Map && body.containsKey('base')) {
       final base = DateTime.tryParse('${body['base'] ?? ''}');
       final current = store.syncData(uid)?.updatedAt;
@@ -1165,8 +1172,10 @@ class Api {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
     final ipKey = 'ip|${_ipKey(_clientIp(r) ?? '-')}', userKey = 'uid|$uid';
-    if (_redeemFailures.blocked(ipKey) || _redeemFailures.blocked(userKey)) return _error(429, 'rate_limited');
+    // A törzs előbb: a korlát vizsgálata és a hibás kód számolása között ne legyen
+    // várakozás (különben egy párhuzamos sorozat mind átmenne a vizsgálaton).
     final code = _str((await _body(r))['code']);
+    if (_redeemFailures.blocked(ipKey) || _redeemFailures.blocked(userKey)) return _error(429, 'rate_limited');
     // Tesztelői kód: a megadott csomag a megadott napokra, fizetés nélkül.
     if (testers.find(code) case final t?) {
       final used = store.testerRedemptions(t.code, uid);
@@ -1299,23 +1308,68 @@ class Api {
     // Élő Stripe-előfizetés mellé nem indul második (a váltás a portálon megy):
     // különben a régi lemondása az újat is megszüntetné, a fióktörlés pedig csak
     // az egyiket mondaná le.
-    if (isSub && store.stripeOf(uid).subscriptionId != null) {
-      final e = store.entitlement(uid);
-      if (e.tier != null && e.tier != 'trial') return _error(409, 'already_subscribed');
-    }
+    // Fiókonként egyszerre egy indítás: két párhuzamos kérés (két lap) se nyisson két
+    // munkamenetet, és ne hozzon létre két Stripe-ügyfelet.
+    final previous = _checkoutChain[uid];
+    final done = Completer<void>();
+    _checkoutChain[uid] = done.future;
     try {
-      final url = await s.createCheckoutSession(
+      if (previous != null) await previous;
+      if (isSub && store.stripeOf(uid).subscriptionId != null) {
+        final e = store.entitlement(uid);
+        if (e.tier != null && e.tier != 'trial') return _error(409, 'already_subscribed');
+      }
+      // Egy ügyfél a fiókhoz az első munkamenet előtt (ha nem sikerül, a Stripe a
+      // munkamenettel hoz létre egyet, mint eddig).
+      var customer = store.stripeOf(uid).customerId;
+      if (customer == null) {
+        try {
+          customer = await s.createCustomer(userId: uid, email: email);
+          store.setStripe(uid, customerId: customer);
+        } on Exception catch (e) {
+          stderr.writeln('Stripe-ügyfél nem jött létre: $e');
+        }
+      }
+      // A korábbi, még nyitott előfizetési munkamenet lezárul: egyszerre egy fizethető.
+      final open = isSub ? _openCheckout.remove(uid) : null;
+      if (open != null) {
+        try {
+          await s.expireCheckoutSession(open);
+        } on Exception catch (e) {
+          stderr.writeln('Korábbi fizetési munkamenet nem zárható le: $e');
+        }
+      }
+      final session = await s.createCheckoutSession(
         userId: uid,
         productId: productId,
         subscription: isSub,
-        customerId: store.stripeOf(uid).customerId,
+        customerId: customer,
         email: email,
         successUrl: '$publicUrl/billing/success',
         cancelUrl: '$publicUrl/billing/cancel',
       );
-      return _json({'url': url});
+      if (isSub && session.id.isNotEmpty) _openCheckout[uid] = session.id;
+      return _json({'url': session.url});
     } on StripeException catch (e) {
       return _error(502, 'stripe_error', e.message);
+    } finally {
+      done.complete();
+      if (identical(_checkoutChain[uid], done.future)) _checkoutChain.remove(uid);
+    }
+  }
+
+  /// A fiókonkénti checkout-indítások sorba állítva.
+  final Map<String, Future<void>> _checkoutChain = {};
+
+  /// A fiók legutóbbi, még nyitott előfizetési munkamenete (a következő indítás lezárja).
+  final Map<String, String> _openCheckout = {};
+
+  /// Egy előfizetés lemondása, a hibát csak naplózva (a webhook ne bukjon el miatta).
+  static Future<void> _cancelQuietly(StripeClient s, String subscription, {bool prorate = false}) async {
+    try {
+      await s.cancelSubscription(subscription, prorate: prorate);
+    } on Exception catch (e) {
+      stderr.writeln('Stripe-előfizetés nem mondható le ($subscription): $e');
     }
   }
 
@@ -1356,14 +1410,37 @@ class Api {
 
     switch (type) {
       case 'checkout.session.completed' || 'checkout.session.async_payment_succeeded':
+        final uid = obj['client_reference_id'] as String? ?? (obj['metadata'] as Map?)?['user_id'] as String?;
+        final productId = (obj['metadata'] as Map?)?['product_id'] as String?;
+        if (uid == null || productId == null) break;
+        final subscription = obj['subscription'] is String ? obj['subscription'] as String : null;
+        if (_openCheckout[uid] == obj['id']) _openCheckout.remove(uid);
+        // Közben törölt fiók: az előfizetés lemondva (ne terhelje tovább), jóváírás nincs.
+        if (!store.userExists(uid)) {
+          if (subscription != null) await _cancelQuietly(s, subscription);
+          break;
+        }
+        final stored = store.stripeOf(uid);
+        // Már élő, másik előfizetés mellé (két lapon fizetve): a második lemondva, a fel nem
+        // használt része az ügyfél egyenlegére kerül.
+        if (subscription != null && stored.subscriptionId != null && stored.subscriptionId != subscription) {
+          final e = store.entitlement(uid);
+          if (e.tier != null && e.tier != 'trial') {
+            await _cancelQuietly(s, subscription, prorate: true);
+            break;
+          }
+        }
+        // Az ügyfél (ha még nincs) és az előfizetés a fizetés állapotától függetlenül
+        // rögzül: a késleltetett fizetésű előfizetést is lemondja a fióktörlés.
+        store.setStripe(
+          uid,
+          customerId: stored.customerId == null ? obj['customer'] as String? : null,
+          subscriptionId: subscription,
+        );
         // Késleltetett fizetési módnál a pénz később érkezik: addig nincs jóváírás.
         if (obj['payment_status'] case final String status when status != 'paid' && status != 'no_payment_required') {
           break;
         }
-        final uid = obj['client_reference_id'] as String? ?? (obj['metadata'] as Map?)?['user_id'] as String?;
-        final productId = (obj['metadata'] as Map?)?['product_id'] as String?;
-        if (uid == null || productId == null) break;
-        store.setStripe(uid, customerId: obj['customer'] as String?, subscriptionId: obj['subscription'] as String?);
         if (store.recordPurchase(
           userId: uid,
           productId: productId,
@@ -1501,42 +1578,50 @@ class Api {
       return _error(502, 'store_unavailable');
     }
     if (txn == null) return _error(402, 'invalid_purchase');
+    final t = txn;
+    // Az ellenőrzés közben törölt fiókhoz nem kerül vásárlás és jóváírás (szellemsorok).
+    if (!store.userExists(uid)) return _error(401, 'unauthorized');
     // A bolti vásárlás gazdája az, aki utoljára igazolta (visszaállítás új telepítésen
     // vagy eszközön, egy törölt fiók még fizetett előfizetése): a régi fiókról átkerül,
     // így a megújítások és a visszatérítések az új gazdához érkeznek.
-    final owner = txn.linkKey == null ? null : store.userForPurchaseLink(platform, txn.linkKey!);
+    final owner = t.linkKey == null ? null : store.userForPurchaseLink(platform, t.linkKey!);
     var usedBefore = 0;
     final moved = owner != null && owner != uid;
-    if (moved) {
-      store.relinkPurchases(platform: platform, linkKey: txn.linkKey!, from: owner, to: uid);
-      if (owner == Store.deletedUser) {
-        // A törölt fiók felhasználását nem ismerjük: az időszak kerete elfogyottnak számít
-        // (különben fióktörléssel és visszaállítással újra lehetne kezdeni).
-        usedBefore = PlanSpec.byProductId(productId)?.analysesPerPeriod ?? 0;
-      } else {
-        final old = store.entitlement(owner);
-        if (old.tier == PlanSpec.byProductId(productId)?.tier) usedBefore = old.used;
-        quota.revoke(old, productId);
+    var applied = false;
+    // Egy tranzakcióban: egy hiba ne hagyjon rögzített, de jóvá nem írt vásárlást (amelyet
+    // az ismétlés-szűrés aztán az újrapróbáláskor is kiszűrne).
+    store.transaction(() {
+      if (moved) {
+        store.relinkPurchases(platform: platform, linkKey: t.linkKey!, from: owner, to: uid);
+        if (owner == Store.deletedUser) {
+          // A törölt fiók felhasználását nem ismerjük: az időszak kerete elfogyottnak számít
+          // (különben fióktörléssel és visszaállítással újra lehetne kezdeni).
+          usedBefore = PlanSpec.byProductId(productId)?.analysesPerPeriod ?? 0;
+        } else {
+          final old = store.entitlement(owner);
+          if (old.tier == PlanSpec.byProductId(productId)?.tier) usedBefore = old.used;
+          quota.revoke(old, productId);
+        }
       }
-    }
-    final e = store.entitlement(uid);
-    final fresh = store.recordPurchase(
-      userId: uid,
-      productId: productId,
-      platform: platform,
-      transactionId: txn.transactionId,
-      linkKey: txn.linkKey,
-    );
-    // Új tranzakció (vásárlás, megújítás): jóváírás. Átvett előfizetés: a csomag és a
-    // kifizetett időszak jön, a felhasználás nem indul újra; átvett csomag nem jár újra.
-    final isPack = PlanSpec.packs.containsKey(productId);
-    final applied = fresh || (moved && !isPack);
-    if (fresh) {
-      quota.apply(e, productId, until: txn.expiresAt);
-    } else if (applied) {
-      quota.apply(e, productId, until: txn.expiresAt);
-      store.save(store.entitlement(uid)..used = usedBefore);
-    }
+      final e = store.entitlement(uid);
+      final fresh = store.recordPurchase(
+        userId: uid,
+        productId: productId,
+        platform: platform,
+        transactionId: t.transactionId,
+        linkKey: t.linkKey,
+      );
+      // Új tranzakció (vásárlás, megújítás): jóváírás. Átvett előfizetés: a csomag és a
+      // kifizetett időszak jön, a felhasználás nem indul újra; átvett csomag nem jár újra.
+      final isPack = PlanSpec.packs.containsKey(productId);
+      applied = fresh || (moved && !isPack);
+      if (fresh) {
+        quota.apply(e, productId, until: t.expiresAt);
+      } else if (applied) {
+        quota.apply(e, productId, until: t.expiresAt);
+        store.save(store.entitlement(uid)..used = usedBefore);
+      }
+    });
     return _json({'entitlements': store.entitlement(uid).toJson(), 'applied': applied});
   }
 
@@ -1734,8 +1819,6 @@ class Api {
   }
 
   Future<_Answer> _analyzeOnce(Request r, String uid) async {
-    _expireTester(uid);
-    final e = store.entitlement(uid);
     final invite = _invite(r);
     final String body;
     try {
@@ -1743,6 +1826,10 @@ class Api {
     } on FormatException {
       return _Answer.error(400, 'bad_request');
     }
+    // A jogosultság a törzs beolvasása után: egy közben lefutott párhuzamos elemzés
+    // (az utolsó próbaidős elemzés) már látsszon – különben ez is próbaidős modellel menne.
+    _expireTester(uid);
+    final e = store.entitlement(uid);
     if (body.length > analyzeMaxBytes) return _Answer.error(413, 'too_large');
     final token = r.headers['x-whatstock-continuation'] ?? (_continues(body) ? _latestContinuationOf(uid) : null);
     final cont = token == null ? null : _continuations.remove(token);
@@ -1784,9 +1871,16 @@ class Api {
     final held = continued ? cont.held : quota.reserve(uid, cost: depth.cost);
     if (held == null) return _Answer.error(402, 'quota_exceeded');
     final holdId = continued ? null : store.addHold(uid, held);
+    // A meghívó napi kerete a továbbítás előtt fogy (a párhuzamos elemzések se lépjék
+    // túl); hibánál visszakerül. A folytatásé az első körben fogyott.
+    final inviteRow = continued ? cont.inviteRow : (invite == null ? null : store.logInviteUsage(invite.code));
     void release() {
-      quota.refund(uid, held);
+      // A foglalás gazdája közben változhatott (e-mailes belépés: fiók-összevonás); a
+      // törölt fióknak nem jár vissza semmi (szellemsor).
+      final owner = holdId == null ? uid : (store.holdOwner(holdId) ?? uid);
+      if (store.userExists(owner)) quota.refund(owner, held);
       if (holdId != null) store.removeHold(holdId);
+      if (inviteRow != null) store.removeInviteUsage(inviteRow);
     }
 
     final beta = allowedBeta(r.headers['anthropic-beta']);
@@ -1823,12 +1917,12 @@ class Api {
         depth: depth,
         trialRun: trialRun,
         expires: store.clock().add(continuationTtl),
+        inviteRow: inviteRow,
       );
-    } else {
-      // A lánc vége: naplózás, a meghívó napi kerete és az ajánló jutalma egyszer.
+    } else if (store.userExists(uid)) {
+      // A lánc vége: naplózás és az ajánló jutalma egyszer (a közben törölt fióknak nem).
       final usage = (j['usage'] as Map?)?.cast<String, dynamic>();
       store.logUsage(uid, _symbolFrom(raw), usage?['input_tokens'] as int?, usage?['output_tokens'] as int?);
-      if (invite != null) store.logInviteUsage(invite.code);
       _rewardReferrer(uid);
     }
     return _Answer(200, upstream.body, continuation: next, charged: true);
@@ -2466,6 +2560,7 @@ class _Continuation {
     required this.depth,
     required this.trialRun,
     required this.expires,
+    this.inviteRow,
   });
 
   final String uid;
@@ -2474,6 +2569,9 @@ class _Continuation {
   final Depth depth;
   final bool trialRun;
   final DateTime expires;
+
+  /// A meghívó napi keretéből az első körben lefoglalt sor (hibánál visszakerül).
+  final int? inviteRow;
 }
 
 /// A postafiók azonosítója a visszaélés-ellenőrzéshez: kisbetűvel, a `+címke`

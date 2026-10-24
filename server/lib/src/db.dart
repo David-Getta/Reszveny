@@ -498,6 +498,12 @@ class Store {
   /// A foglalás lezárult (levonva vagy visszaadva).
   void removeHold(int id) => _db.execute('DELETE FROM analysis_holds WHERE id = ?', [id]);
 
+  /// Egy foglalás mostani gazdája (a fiók-összevonás átírja); `null`, ha már nincs.
+  String? holdOwner(int id) {
+    final r = _db.select('SELECT user_id FROM analysis_holds WHERE id = ?', [id]);
+    return r.isEmpty ? null : r.first['user_id'] as String?;
+  }
+
   /// Az előző futásból félbemaradt foglalások (és törlésük).
   List<({String userId, int period, int extra})> takeStaleHolds() {
     final rows = _db.select('SELECT user_id, period, extra FROM analysis_holds');
@@ -701,10 +707,14 @@ class Store {
     [code, userId, clock().toUtc().toIso8601String()],
   );
 
-  void logInviteUsage(String code) => _db.execute('INSERT INTO invite_usage (code, created_at) VALUES (?, ?)', [
-    code,
-    clock().toUtc().toIso8601String(),
-  ]);
+  /// Egy meghívós elemzés a napi keretbe; a sor azonosítója a [removeInviteUsage]-hoz.
+  int logInviteUsage(String code) {
+    _db.execute('INSERT INTO invite_usage (code, created_at) VALUES (?, ?)', [code, clock().toUtc().toIso8601String()]);
+    return _db.lastInsertRowId;
+  }
+
+  /// Egy sikertelen meghívós elemzés nem számít a napi keretbe.
+  void removeInviteUsage(int id) => _db.execute('DELETE FROM invite_usage WHERE rowid = ?', [id]);
 
   int inviteUsageSince(String code, DateTime since) =>
       _db.select('SELECT COUNT(*) AS n FROM invite_usage WHERE code = ? AND created_at >= ?', [
