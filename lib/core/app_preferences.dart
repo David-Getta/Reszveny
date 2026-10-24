@@ -696,7 +696,9 @@ class AppPreferences extends ChangeNotifier {
       loaded._loadResolved(strings(_resolvedKey));
       return loaded;
     } catch (_) {
-      return AppPreferences();
+      // Olvashatatlan beállítások mellett az AI-hoz adott hozzájárulás sem tekinthető
+      // megadottnak (a konstruktor alapértéke csak a tesztek kényelmét szolgálja).
+      return AppPreferences(aiConsent: null);
     }
   }
 

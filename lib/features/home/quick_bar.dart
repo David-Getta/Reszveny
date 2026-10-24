@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../analysis/ai_consent.dart';
 import '../../app_services.dart';
 import '../../core/errors.dart';
 import '../../core/models/stock_candidate.dart';
@@ -19,10 +18,14 @@ import 'search_field.dart';
 /// nélküli sávvá alakul. Enter: megnyitja a találatot a teljes ablakban;
 /// Esc: elrejti a sávot.
 class QuickBar extends StatefulWidget {
-  const QuickBar({super.key, required this.onOpenSymbol, required this.onOpenWindow});
+  const QuickBar({super.key, required this.onOpenSymbol, required this.onOpenWindow, this.onNeedAiConsent});
 
   final ValueChanged<StockCandidate> onOpenSymbol;
   final VoidCallback onOpenWindow;
+
+  /// Az AI-hoz még nincs hozzájárulás: a 72 pont magas sávban nem fér el az engedélykérő
+  /// ablak (csak a gombjai látszanának), ezért a teljes ablakban kérdez.
+  final Future<void> Function()? onNeedAiConsent;
 
   @override
   State<QuickBar> createState() => _QuickBarState();
@@ -46,7 +49,10 @@ class _QuickBarState extends State<QuickBar> {
     final l10n = AppLocalizations.of(context);
     final messenger = ScaffoldMessenger.of(context);
     if (_busy) return;
-    if (!await ensureAiConsent(context) || !mounted) return;
+    if (services.preferences.aiConsent != true) {
+      await widget.onNeedAiConsent?.call();
+      return;
+    }
     final language = SupportedLocales.languageFor(Localizations.localeOf(context));
     setState(() => _busy = true);
     try {
@@ -89,8 +95,14 @@ class _QuickBarState extends State<QuickBar> {
     } catch (_) {
       results = const [];
     }
-    // Leírás („tech 100 etf”): ha a kereső nem találja, az AI fejti meg.
-    if (results.isEmpty && DescriptionResolver.looksLikeDescription(q) && services.config.hasAnthropicKey) {
+    // Leírás („tech 100 etf”): ha a kereső nem találja, az AI fejti meg – hozzájárulással.
+    final describe = results.isEmpty && DescriptionResolver.looksLikeDescription(q) && services.config.hasAnthropicKey;
+    if (describe && services.preferences.aiConsent != true) {
+      if (mounted) setState(() => _busy = false);
+      await widget.onNeedAiConsent?.call();
+      return;
+    }
+    if (describe) {
       try {
         results = (await services.descriptionResolver.resolve(q, outputLanguage: language.englishName)).candidates;
         services.telemetry.track('description_resolved');

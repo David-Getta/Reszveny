@@ -108,13 +108,24 @@ class _AppShellState extends State<AppShell> {
     _openSymbol(candidate);
   }
 
+  /// Az AI-hozzájárulás a teljes ablakban (a gyorssávban és a panel mellett nem látszana).
+  Future<bool> _consentInFullWindow() async {
+    final services = _services;
+    if (services == null) return false;
+    await services.desktop.showFullWindow();
+    if (!mounted) return false;
+    return ensureAiConsent(context);
+  }
+
   /// Kép beillesztése a gyorskereső panelbe (⌘V vagy a gomb): felismerés a
   /// panelben, forgó jelzővel; több bizonytalan jelöltnél a teljes ablakban
   /// választhat a felhasználó, találat híján a panel írja ki az okát.
   Future<void> _quickPasteImage() async {
     final services = _services;
     if (services == null || !mounted) return;
-    if (!await ensureAiConsent(context) || !mounted) return;
+    // A panel mellett a főablak rejtve lehet: az engedélyt a teljes ablakban kéri.
+    if (services.preferences.aiConsent != true && !await _consentInFullWindow()) return;
+    if (!mounted) return;
     final l10n = AppLocalizations.of(context);
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
     final panel = services.desktop.quickPanel;
@@ -469,6 +480,7 @@ class _AppShellState extends State<AppShell> {
                 onOpenWindow: () async {
                   await services.desktop.showFullWindow();
                 },
+                onNeedAiConsent: _consentInFullWindow,
               ),
           ],
         );

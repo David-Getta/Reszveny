@@ -1,7 +1,7 @@
 name: reszveny
 description: "WhatStock – photograph a stock and learn everything about it. iOS, iPadOS, macOS, Android, Windows."
 publish_to: 'none'
-version: 0.2.301+304
+version: 0.2.302+305
 
 environment:
   sdk: ^3.13.5
@@ -37,6 +37,7 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^6.0.0
   mocktail: ^1.0.5
+  shared_preferences_platform_interface: ^2.4.2
   flutter_launcher_icons: ^0.14.4
   msix: ^3.18.0
 

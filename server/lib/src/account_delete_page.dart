@@ -25,11 +25,12 @@ const _texts = {
     'sent': 'Ha ehhez a címhez tartozik fiók, elküldtük a 6 jegyű kódot. Írd be, és a fiók véglegesen törlődik.',
     'code': 'Kód',
     'confirm': 'Fiók végleges törlése',
-    'done': 'A fiókot és minden szerveren tárolt adatát töröltük.',
+    'done':
+        'A fiókot és a szerveren tárolt adatait töröltük. Csak kulcsolt ujjlenyomatok maradnak, amelyek '
+        'megakadályozzák, hogy egy bolti bizonylat vagy egy ajánlókód újra beváltható legyen.',
     'wrongCode': 'A kód hibás vagy lejárt. Kérj újat.',
     'invalidEmail': 'Érvénytelen e-mail cím.',
     'tooMany': 'Túl sok kérés. Próbáld újra később.',
-    'mailFailed': 'Az e-mailt most nem sikerült elküldeni. Próbáld újra később.',
     'stripeFailed': 'A böngészős előfizetés lemondása nem sikerült, ezért most nem töröltünk. Próbáld újra később.',
   },
   'en': {
@@ -50,11 +51,12 @@ const _texts = {
         'If there is an account for this address, we sent it a 6-digit code. Enter it to delete the account for good.',
     'code': 'Code',
     'confirm': 'Delete my account for good',
-    'done': 'Your account and everything stored about it on our server have been deleted.',
+    'done':
+        'Your account and the data stored about it on our server have been deleted. Only keyed fingerprints '
+        'remain, which stop a store receipt or a referral code from being redeemed again.',
     'wrongCode': 'The code is wrong or has expired. Request a new one.',
     'invalidEmail': 'This is not a valid email address.',
     'tooMany': 'Too many requests. Try again later.',
-    'mailFailed': 'The email could not be sent right now. Try again later.',
     'stripeFailed': 'Cancelling the browser subscription failed, so nothing was deleted. Try again later.',
   },
 };

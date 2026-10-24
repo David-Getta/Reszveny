@@ -61,9 +61,37 @@ void main() {
     expect(stored, startsWith('k:'));
     expect(stored, isNot(contains(Store.hashToken('johndoe@gmail.com'))));
     expect(store.mailboxRedeemedReferral('johndoe@gmail.com'), isTrue);
-    // A régebbi (kulcs nélküli) sorok is felismerődnek.
+    // A régebbi (kulcs nélküli) sorok induláskor átkulcsolódnak, és továbbra is felismerődnek.
     store.database.execute('UPDATE referrals SET mailbox_hash = ?', [Store.hashToken('old@gmail.com')]);
-    expect(store.mailboxRedeemedReferral('old@gmail.com'), isTrue);
+    final reopened = Store(store.database);
+    final rekeyed = reopened.database.select('SELECT mailbox_hash FROM referrals').single['mailbox_hash'] as String;
+    expect(rekeyed, startsWith('k:'));
+    expect(rekeyed, isNot(contains(Store.hashToken('old@gmail.com'))));
+    expect(reopened.mailboxRedeemedReferral('old@gmail.com'), isTrue);
+    expect(reopened.mailboxRedeemedReferral('other@gmail.com'), isFalse);
+  });
+
+  test('purchases of accounts deleted by an older version are rekeyed at startup', () {
+    final (uid, _) = store.createAnonymousUser(null);
+    store.recordPurchase(
+      userId: uid,
+      productId: 'whatstock.sub.pro',
+      platform: 'google',
+      transactionId: 'GPA.9-9',
+      linkKey: 'token-raw',
+    );
+    // Egy régebbi változat így hagyta: törölt fiók, nyers azonosítók.
+    store.database.execute('UPDATE purchases SET user_id = ?', [Store.deletedUser]);
+    store.database.execute('DELETE FROM users WHERE id = ?', [uid]);
+    final reopened = Store(store.database);
+    final row = reopened.database.select('SELECT transaction_id, link_key FROM purchases').single;
+    expect('${row['transaction_id']}|${row['link_key']}', isNot(contains('GPA.9-9')));
+    expect('${row['link_key']}', isNot(contains('token-raw')));
+    expect(reopened.userForPurchaseLink('google', 'token-raw'), Store.deletedUser);
+  });
+
+  test('deleted rows do not stay readable in the database file', () {
+    expect(store.database.select('PRAGMA secure_delete').first.values.first, 1);
   });
 
   test('a deleted account keeps only fingerprints of its store receipts, and they can still be restored', () {

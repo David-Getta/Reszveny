@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'dart:math';
 
 import 'package:crypto/crypto.dart';
@@ -215,7 +216,60 @@ class Store {
     // A munkamenet utolsó használata: a régóta nem használt token lejár (a karbantartás törli).
     final scols = _db.select('PRAGMA table_info(sessions)').map((r) => r['name'] as String).toSet();
     if (!scols.contains('last_used')) _db.execute('ALTER TABLE sessions ADD COLUMN last_used TEXT');
+    // A törölt fiókok Stripe-ügyfele, amelynek a törlése a fizetési szolgáltatónál még
+    // nem sikerült: a karbantartás újrapróbálja.
+    _db.execute(
+      'CREATE TABLE IF NOT EXISTS pending_stripe_deletions (customer_id TEXT PRIMARY KEY, created_at TEXT NOT NULL)',
+    );
+    _rekeyLegacyFingerprints();
+    // A törölt sorok tartalma ne maradjon a fájlban (a felszabadult lapok nullázva); a
+    // bekapcsolás előtti szabad lapokat egyszer egy VACUUM tünteti el.
+    _db.execute('PRAGMA secure_delete = ON');
+    if ((_db.select('PRAGMA freelist_count').first.values.first as int) > 0) {
+      try {
+        _db.execute('VACUUM');
+      } catch (e) {
+        stderr.writeln('VACUUM nem sikerült: $e');
+      }
+    }
   }
+
+  /// A korábbi változatok kulcs nélküli lenyomatai: az ajánlások postafiók-lenyomata (sima
+  /// SHA-256) és a régebben törölt fiókok vásárlásainak nyers bolti / Stripe-azonosítója.
+  /// Egyszer átkulcsolva (a szerver titkával), így a titok nélkül nem kereshetők vissza.
+  void _rekeyLegacyFingerprints() {
+    final legacy = _db.select("SELECT referee_id, mailbox_hash FROM referrals WHERE mailbox_hash NOT LIKE 'k:%'");
+    final deleted = _db.select(
+      "SELECT id, transaction_id, link_key FROM purchases WHERE user_id = ? AND (transaction_id NOT LIKE 'k:%' "
+      "OR (link_key IS NOT NULL AND link_key NOT LIKE 'k:%'))",
+      [deletedUser],
+    );
+    if (legacy.isEmpty && deleted.isEmpty) return;
+    _db.execute('BEGIN');
+    try {
+      for (final r in legacy) {
+        _db.execute('UPDATE referrals SET mailbox_hash = ? WHERE referee_id = ?', [
+          _legacyMailboxKey(r['mailbox_hash'] as String),
+          r['referee_id'],
+        ]);
+      }
+      for (final p in deleted) {
+        String? keyed(Object? v) => v is String && !v.startsWith('k:') ? keyedHash(v) : v as String?;
+        _db.execute('UPDATE purchases SET transaction_id = ?, link_key = ? WHERE id = ?', [
+          keyed(p['transaction_id']),
+          keyed(p['link_key']),
+          p['id'],
+        ]);
+      }
+      _db.execute('COMMIT');
+    } catch (_) {
+      _db.execute('ROLLBACK');
+      rethrow;
+    }
+  }
+
+  /// A régi (sima SHA-256) postafiók-lenyomat kulcsolt alakja.
+  String _legacyMailboxKey(String sha) => keyedHash('legacy:$sha');
 
   factory Store.open(String path) => Store(sqlite3.open(path));
   factory Store.inMemory() => Store(sqlite3.openInMemory());
@@ -296,6 +350,10 @@ class Store {
     _db.execute('DELETE FROM sessions WHERE COALESCE(last_used, created_at) < ?', [ago(sessionIdle)]);
     _db.execute('DELETE FROM invite_usage WHERE created_at < ?', [ago(const Duration(days: 2))]);
     _db.execute('DELETE FROM usage_log WHERE created_at < ?', [ago(usageKept)]);
+    // A rövid életű sorok (belépőkódok, korlát-naplók) új beszúrás nélkül is kikerülnek.
+    for (final table in ['login_codes', 'trial_grants', 'helper_calls', 'ask_calls']) {
+      _db.execute('DELETE FROM $table WHERE created_at < ?', [ago(const Duration(days: 2))]);
+    }
   }
 
   /// Új munkamenet-token egy meglévő felhasználóhoz (belépés másik eszközön).
@@ -414,10 +472,13 @@ class Store {
       _db.execute('DELETE FROM user_sync WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM digest_log WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM digest_unsubscribe WHERE user_id = ?', [userId]);
-      _db.execute('DELETE FROM tester_redemptions WHERE user_id = ?', [userId]);
+      // A tesztelői kód és a meghívó helye névtelenítve foglalt marad (csak véletlen
+      // azonosító és időpont): a fiók törlésével nem lehet újrakezdeni a keretüket.
+      for (final table in ['tester_redemptions', 'invite_devices']) {
+        _db.execute("UPDATE $table SET user_id = 'deleted:' || lower(hex(randomblob(8))) WHERE user_id = ?", [userId]);
+      }
       _db.execute('DELETE FROM analysis_holds WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [userId]);
-      _db.execute('DELETE FROM invite_devices WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM alert_mail_queue WHERE user_id = ?', [userId]);
       // Az ajánlás sora névtelenítve marad (nem törlődik): különben a másik fél újra
       // beválthatna egy kódot (a meghívott), illetve az ajánló kerete újraindulna. A
@@ -506,6 +567,36 @@ class Store {
     _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [from]);
     _db.execute('UPDATE referrals SET referrer_id = ? WHERE referrer_id = ? AND referee_id != ?', [into, from, into]);
   }
+
+  /// Az összevonás után a beolvadt névtelen fiók maradéka is megszűnik (különben
+  /// kapcsolat nélküli sorként örökre megmaradna, a fiók törlése sem érné el): az általa
+  /// beváltott ajánlás névtelenítve marad (a kód ne legyen újra beváltható).
+  void removeMergedUser(String from) {
+    _db.execute("UPDATE referrals SET referee_id = 'deleted:' || lower(hex(randomblob(8))) WHERE referee_id = ?", [
+      from,
+    ]);
+    _db.execute('DELETE FROM user_sync WHERE user_id = ?', [from]);
+    _db.execute('DELETE FROM analysis_holds WHERE user_id = ?', [from]);
+    _db.execute('DELETE FROM entitlements WHERE user_id = ?', [from]);
+    _db.execute('DELETE FROM users WHERE id = ?', [from]);
+  }
+
+  /// Egy törölt fiók Stripe-ügyfele, amelynek a törlése még nem sikerült (újrapróbálásra).
+  void queueStripeCustomerDeletion(String customerId) => _db.execute(
+    'INSERT OR IGNORE INTO pending_stripe_deletions (customer_id, created_at) VALUES (?, ?)',
+    [customerId, clock().toUtc().toIso8601String()],
+  );
+
+  /// A még törlendő Stripe-ügyfelek (legfeljebb [maxAge] óta); a régebbiek kikerülnek.
+  List<String> pendingStripeDeletions({Duration maxAge = const Duration(days: 30)}) {
+    _db.execute('DELETE FROM pending_stripe_deletions WHERE created_at < ?', [
+      clock().toUtc().subtract(maxAge).toIso8601String(),
+    ]);
+    return [for (final r in _db.select('SELECT customer_id FROM pending_stripe_deletions')) r['customer_id'] as String];
+  }
+
+  void stripeCustomerDeleted(String customerId) =>
+      _db.execute('DELETE FROM pending_stripe_deletions WHERE customer_id = ?', [customerId]);
 
   void clearStripeSubscription(String userId) =>
       _db.execute('UPDATE users SET stripe_subscription_id = NULL WHERE id = ?', [userId]);
@@ -619,9 +710,11 @@ class Store {
 
   void save(Entitlement e) {
     _db.execute(
+      // Csak létező fióknak: egy közben törölt fiók (párhuzamos kérés, késve érkező
+      // értesítés, a törölt ajánló jutalma) ne kapjon új sort.
       '''INSERT INTO entitlements (user_id, tier, period_start, period_end, used, extra, trial_started_at, paid_through,
            source, grant_key, source_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         SELECT ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? WHERE EXISTS (SELECT 1 FROM users WHERE id = ?)
          ON CONFLICT(user_id) DO UPDATE SET tier=excluded.tier, period_start=excluded.period_start,
            period_end=excluded.period_end, used=excluded.used, extra=excluded.extra,
            trial_started_at=excluded.trial_started_at, paid_through=excluded.paid_through,
@@ -638,6 +731,7 @@ class Store {
         e.source,
         e.grant,
         e.sourceAt,
+        e.userId,
       ],
     );
   }
@@ -753,7 +847,7 @@ class Store {
   /// régebbi, kulcs nélküli lenyomattal tárolt sorok is számítanak).
   bool mailboxRedeemedReferral(String mailbox) => _db.select(
     'SELECT 1 FROM referrals WHERE mailbox_hash IN (?, ?) LIMIT 1',
-    [keyedHash(mailbox), hashToken(mailbox)],
+    [keyedHash(mailbox), _legacyMailboxKey(hashToken(mailbox))],
   ).isNotEmpty;
 
   /// (meghívottak, akik után már jutalmat kapott)
@@ -815,8 +909,9 @@ class Store {
       _db.select('SELECT 1 FROM purchases WHERE user_id = ? LIMIT 1', [userId]).isNotEmpty;
 
   void addTesterRedemption(String code, String userId) => _db.execute(
-    'INSERT OR IGNORE INTO tester_redemptions (code, user_id, created_at) VALUES (?, ?, ?)',
-    [code, userId, clock().toUtc().toIso8601String()],
+    'INSERT OR IGNORE INTO tester_redemptions (code, user_id, created_at) SELECT ?, ?, ? '
+    'WHERE EXISTS (SELECT 1 FROM users WHERE id = ?)',
+    [code, userId, clock().toUtc().toIso8601String(), userId],
   );
 
   /// Egy meghívós elemzés a napi keretbe; a sor azonosítója a [removeInviteUsage]-hoz.
@@ -907,10 +1002,11 @@ class Store {
     return rows.isEmpty ? null : rows.first['user_id'] as String;
   }
 
+  /// Csak létező fióknak: a levél összeállítása közben törölt fiók ne kapjon új sort.
   void markDigest(String userId) => _db.execute(
-    'INSERT INTO digest_log (user_id, sent_at) VALUES (?, ?) '
+    'INSERT INTO digest_log (user_id, sent_at) SELECT ?, ? WHERE EXISTS (SELECT 1 FROM users WHERE id = ?) '
     'ON CONFLICT(user_id) DO UPDATE SET sent_at = excluded.sent_at',
-    [userId, clock().toUtc().toIso8601String()],
+    [userId, clock().toUtc().toIso8601String(), userId],
   );
 
   DateTime saveSyncData(String userId, String data) {

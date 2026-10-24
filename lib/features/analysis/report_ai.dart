@@ -53,7 +53,8 @@ class ReportAiButton extends StatelessWidget {
   }
 }
 
-/// A jelentés ablaka: ok, megjegyzés; küldés után köszönő üzenet.
+/// A jelentés ablaka: ok, megjegyzés; a küldés eredménye (köszönet vagy hiba) magában
+/// az ablakban látszik – alsó lapból nyitva a lap alatti oldal üzenetsávja takarva lenne.
 Future<void> showReportAiDialog(
   BuildContext context, {
   required AiReportKind kind,
@@ -63,31 +64,26 @@ Future<void> showReportAiDialog(
   final services = AppServices.of(context);
   final backend = services.backend;
   if (backend == null) return;
-  final l10n = AppLocalizations.of(context);
-  final messenger = ScaffoldMessenger.of(context);
-  final sent = await showDialog<({String reason, String note})>(
+  await showDialog<void>(
     context: context,
-    builder: (_) => const _ReportDialog(),
+    builder: (_) => _ReportDialog(
+      send: (reason, note) => backend.reportAi({
+        'kind': kind.name,
+        'reason': reason,
+        'text': text,
+        'note': note,
+        'symbol': ?symbol,
+        'platform': services.telemetry.platform,
+        'version': ?services.updates.currentVersion,
+      }),
+    ),
   );
-  if (sent == null) return;
-  try {
-    await backend.reportAi({
-      'kind': kind.name,
-      'reason': sent.reason,
-      'text': text,
-      'note': sent.note,
-      'symbol': ?symbol,
-      'platform': services.telemetry.platform,
-      'version': ?services.updates.currentVersion,
-    });
-    messenger.showSnackBar(SnackBar(content: Text(l10n.aiReportThanks)));
-  } catch (e) {
-    messenger.showSnackBar(SnackBar(content: Text(errorMessage(l10n, e))));
-  }
 }
 
 class _ReportDialog extends StatefulWidget {
-  const _ReportDialog();
+  const _ReportDialog({required this.send});
+
+  final Future<void> Function(String reason, String note) send;
 
   @override
   State<_ReportDialog> createState() => _ReportDialogState();
@@ -96,6 +92,9 @@ class _ReportDialog extends StatefulWidget {
 class _ReportDialogState extends State<_ReportDialog> {
   String _reason = 'inaccurate';
   final _note = TextEditingController();
+  bool _sending = false;
+  bool _sent = false;
+  Object? _error;
 
   @override
   void dispose() {
@@ -103,11 +102,35 @@ class _ReportDialogState extends State<_ReportDialog> {
     super.dispose();
   }
 
+  Future<void> _send() async {
+    setState(() {
+      _sending = true;
+      _error = null;
+    });
+    try {
+      await widget.send(_reason, _note.text.trim());
+      if (mounted) setState(() => _sent = true);
+    } catch (e) {
+      if (mounted) setState(() => _error = e);
+    } finally {
+      if (mounted) setState(() => _sending = false);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
+    final material = MaterialLocalizations.of(context);
+    if (_sent) {
+      return AlertDialog(
+        key: const ValueKey('ai-report-dialog'),
+        title: Text(l10n.aiReportTitle),
+        content: Text(l10n.aiReportThanks, key: const ValueKey('ai-report-thanks')),
+        actions: [TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(material.okButtonLabel))],
+      );
+    }
     return AlertDialog(
       key: const ValueKey('ai-report-dialog'),
       scrollable: true,
@@ -148,18 +171,21 @@ class _ReportDialogState extends State<_ReportDialog> {
             ),
             const SizedBox(height: 10),
             Text(l10n.aiReportPrivacy, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+            if (_error case final e?) ...[
+              const SizedBox(height: 8),
+              Text(errorMessage(l10n, e), style: TextStyle(color: p.negative)),
+            ],
           ],
         ),
       ),
       actions: [
-        TextButton(
-          onPressed: () => Navigator.of(context).pop(),
-          child: Text(MaterialLocalizations.of(context).cancelButtonLabel),
-        ),
+        TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(material.cancelButtonLabel)),
         FilledButton(
           key: const ValueKey('ai-report-send'),
-          onPressed: () => Navigator.of(context).pop((reason: _reason, note: _note.text.trim())),
-          child: Text(l10n.aiReportSend),
+          onPressed: _sending ? null : _send,
+          child: _sending
+              ? const SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2))
+              : Text(l10n.aiReportSend),
         ),
       ],
     );

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.301)
+# Változásjegyzék (0.2.130 → 0.2.302)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,23 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Fióktörlés és AI-hozzájárulás: a negyvenkilencedik kódátnézés javításai
+
+- **0.2.302**: a törölt adatok a szerver adatbázisfájljában sem maradnak olvashatók (biztonságos törlés, a
+  régi szabad lapok egyszeri tömörítése). A régebbi változatok kulcs nélküli ujjlenyomatai (ajánlások
+  postafiók-lenyomata, régebben törölt fiókok vásárlás-azonosítói) induláskor kulcsolt alakra váltanak.
+- Ha a fizetési szolgáltatónál a vásárlói adat törlése épp nem sikerül, a szerver naponta újrapróbálja (eddig
+  csak a naplóba került). A törlés a még nyitott webes fizetési oldalt is lezárja; a törléssel egy időben
+  indított fizetés, kódbeváltás, késve érkező visszatérítés, ajánlói jutalom vagy heti levél már nem hoz létre
+  új adatot a törölt fióknak. Egy meglévő fiókba lépéskor a névtelen fiók maradéka is megszűnik.
+- Zárt előzetesben lejárt meghívóval is törölhető a fiók az appból. A webes törlőoldal válasza akkor sem árulja
+  el, van-e fiók egy címhez, ha a cím napi kódkerete betelt.
+- A gyorssáv (Windows, Linux) és a macOS gyorspanel hozzájárulás nélkül nem küld leírást vagy képet az AI-nak:
+  az engedélykérő ablak a teljes ablakban jelenik meg (a 72 pont magas sávban csak a gombjai látszottak volna).
+  Olvashatatlan beállítások mellett a hozzájárulás nem számít megadottnak.
+- Az AI-válasz jelentésének eredménye (köszönet vagy hiba) magában az ablakban látszik – alsó lapból nyitva eddig
+  a lap alá került. A jelentések IP-címenként is korlátosak.
 
 ## Áruházi megfelelés: a negyvenhetedik kódátnézés javításai
 

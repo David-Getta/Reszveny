@@ -386,7 +386,11 @@ class Api {
         if (!invites.enabled || req.method == 'OPTIONS') return inner(req);
         final path = req.url.path;
         // A fizetési szolgáltatók értesítései (Stripe, App Store, Google Play) nem hordoznak meghívót.
-        if (!path.startsWith('v1/') || path == 'v1/stripe/webhook' || path.startsWith('v1/stores/')) {
+        // A fiók törlése lejárt vagy visszavont meghívóval is mehet (a törlés joga nem függ tőle).
+        if (!path.startsWith('v1/') ||
+            path == 'v1/stripe/webhook' ||
+            path.startsWith('v1/stores/') ||
+            (path == 'v1/account' && req.method == 'DELETE')) {
           return inner(req);
         }
         final sent = req.headers[inviteHeader];
@@ -638,6 +642,7 @@ class Api {
         ..save(b)
         ..movePurchases(from: from, into: into);
       shares.moveUser(from: from, into: into);
+      store.removeMergedUser(from);
     });
   }
 
@@ -843,16 +848,21 @@ class Api {
     return _json({'ok': true});
   }
 
-  final _reportsPerDay = RateLimiter(ReportStore.perDay, const Duration(days: 1));
+  late final _reportsPerDay = RateLimiter(ReportStore.perDay, const Duration(days: 1), clock: () => store.clock());
+
+  /// IP-címenként is korlátos (sok névtelen fiókkal se lehessen kiszorítani a valódi jelentéseket).
+  late final _reportsPerIp = RateLimiter(60, const Duration(days: 1), clock: () => store.clock());
 
   /// Egy AI-válasz jelentése (téves, sértő, egyéb) az appból; a fiók nem kerül mellé.
   Future<Response> _report(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
     final body = await _body(r);
-    if (_reportsPerDay.blocked(uid)) return _error(429, 'rate_limited');
+    final ipKey = _ipKey(_clientIp(r) ?? '-');
+    if (_reportsPerDay.blocked(uid) || _reportsPerIp.blocked(ipKey)) return _error(429, 'rate_limited');
     if (!reports.save(body)) return _error(400, 'bad_report');
     _reportsPerDay.hit(uid);
+    _reportsPerIp.hit(ipKey);
     return _json({'ok': true});
   }
 
@@ -1234,6 +1244,8 @@ class Api {
     // A törzs előbb: a korlát vizsgálata és a hibás kód számolása között ne legyen
     // várakozás (különben egy párhuzamos sorozat mind átmenne a vizsgálaton).
     final code = _str((await _body(r))['code']);
+    // A törzs beolvasása közben törölt fiók nem kap új sorokat.
+    if (!store.userExists(uid)) return _error(401, 'unauthorized');
     if (_redeemFailures.blocked(ipKey) || _redeemFailures.blocked(userKey)) return _error(429, 'rate_limited');
     // Tesztelői kód: a megadott csomag a megadott napokra, fizetés nélkül.
     if (testers.find(code) case final t?) {
@@ -1314,6 +1326,7 @@ class Api {
     } catch (e) {
       stderr.writeln('Karbantartás nem sikerült: $e');
     }
+    unawaited(retryStripeDeletions());
   }
 
   /// Fiók törlése: előbb a böngészős (Stripe) előfizetés lemondása – ha ez nem
@@ -1342,18 +1355,41 @@ class Api {
         return (cancelled: false, failure: '$e');
       }
     }
+    // A még nyitott fizetési oldal is lezárul (a törlés után ne lehessen fizetni rajta).
+    if (_openCheckout.remove(uid) case final open? when s != null) {
+      try {
+        await s.expireCheckoutSession(open);
+      } on Exception catch (e) {
+        stderr.writeln('Nyitott fizetési munkamenet nem zárható le: $e');
+      }
+    }
     // A fizetési szolgáltatónál tárolt ügyfél (e-mail, fiókazonosító) is törlődik; ha ez
-    // most nem sikerül, a fiók törlése akkor is megtörténik (naplózva, kézzel pótolható).
+    // most nem sikerül, a karbantartás újrapróbálja.
     if (store.stripeOf(uid).customerId case final customer? when s != null) {
       try {
         await s.deleteCustomer(customer);
       } on Exception catch (e) {
-        stderr.writeln('Stripe-ügyfél nem törölhető ($customer): $e');
+        stderr.writeln('Stripe-ügyfél nem törölhető most, később újra: $e');
+        store.queueStripeCustomerDeletion(customer);
       }
     }
     shares.deleteUser(uid);
     store.deleteUser(uid);
     return (cancelled: cancelled, failure: null);
+  }
+
+  /// A korábban nem sikerült Stripe-ügyfél-törlések újrapróbálása (a karbantartásból).
+  Future<void> retryStripeDeletions() async {
+    final s = stripe;
+    if (s == null) return;
+    for (final customer in store.pendingStripeDeletions()) {
+      try {
+        await s.deleteCustomer(customer);
+        store.stripeCustomerDeleted(customer);
+      } on Exception catch (e) {
+        stderr.writeln('Stripe-ügyfél törlése most sem sikerült: $e');
+      }
+    }
   }
 
   /// A böngészős fióktörlés lépései: `start` (kód az e-mail címre, ha van hozzá fiók – a
@@ -1388,17 +1424,15 @@ class Api {
       }
       return page(AccountDeleteStep.done);
     }
-    if (store.recentCodeCount(email, within: const Duration(days: 1)) >= codesPerAddressPerDay ||
-        !_mayRequestCode(r, email)) {
-      return page(AccountDeleteStep.start, error: 'tooMany', status: 429);
-    }
-    if (store.userIdForEmail(email) != null) {
-      try {
-        await mailer.sendLoginCode(email, store.createLoginCode(email));
-      } catch (e) {
-        stderr.writeln('Fióktörlési kód e-mail nem ment ki: $e');
-        return page(AccountDeleteStep.start, error: 'mailFailed', status: 502);
-      }
+    if (!_mayRequestCode(r, email)) return page(AccountDeleteStep.start, error: 'tooMany', status: 429);
+    // A cím napi kódkerete és a levél sorsa nem változtat a válaszon (és a levelet nem
+    // várjuk meg): sem a válaszból, sem az időzítésből nem derül ki, van-e fiók a címhez.
+    if (store.userIdForEmail(email) != null &&
+        store.recentCodeCount(email, within: const Duration(days: 1)) < codesPerAddressPerDay) {
+      final code = store.createLoginCode(email);
+      unawaited(
+        mailer.sendLoginCode(email, code).catchError((Object e) => stderr.writeln('Fióktörlési kód nem ment ki: $e')),
+      );
     }
     return page(AccountDeleteStep.code);
   }
@@ -1452,6 +1486,9 @@ class Api {
     _checkoutChain[uid] = done.future;
     try {
       if (previous != null) await previous;
+      // A várakozás alatt a fiók törlődhetett: törölt fióknak (és a törölt címmel) nem
+      // jön létre új Stripe-ügyfél és fizetési munkamenet.
+      if (!store.userExists(uid) || store.emailOf(uid) != email) return _error(401, 'unauthorized');
       if (isSub && store.stripeOf(uid).subscriptionId != null) {
         final e = store.entitlement(uid);
         if (e.tier != null && e.tier != 'trial') return _error(409, 'already_subscribed');
@@ -1468,7 +1505,13 @@ class Api {
       if (customer == null) {
         try {
           customer = await s.createCustomer(userId: uid, email: email);
-          store.setStripe(uid, customerId: customer);
+          if (store.userExists(uid)) {
+            store.setStripe(uid, customerId: customer);
+          } else {
+            // A létrehozás közben törölték a fiókot: az új ügyfél is törlendő.
+            store.queueStripeCustomerDeletion(customer);
+            return _error(401, 'unauthorized');
+          }
         } on Exception catch (e) {
           stderr.writeln('Stripe-ügyfél nem jött létre: $e');
         }
@@ -1696,7 +1739,8 @@ class Api {
         if (pi == null) break;
         final uid = store.userForPurchaseLink('stripe', pi);
         final productId = store.productForPurchaseLink('stripe', pi);
-        if (uid == null || productId == null) break;
+        // Egy törölt fiók fizetése: nincs mit visszavonni, és a nyers azonosító sem kerülhet vissza.
+        if (uid == null || uid == Store.deletedUser || productId == null) break;
         if (store.recordPurchase(userId: uid, productId: productId, platform: 'stripe', transactionId: 'revoked:$pi')) {
           quota.revoke(store.entitlement(uid), productId, key: pi);
         }
