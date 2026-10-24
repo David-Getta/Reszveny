@@ -45,7 +45,13 @@ class PositionCard extends StatelessWidget {
         final pos = services.portfolio.positionOf(details.symbol);
         if (pos == null) return const SizedBox.shrink();
         final q = details.quote;
-        final row = PositionValue(position: pos, price: q?.price, dayChange: q?.change, rate: 1);
+        final row = PositionValue(
+          position: pos,
+          price: q?.price,
+          dayChange: q?.change,
+          rate: 1,
+          quoteTime: q?.timestamp,
+        );
         final ccy = pos.currency;
         final now = DateTime.now();
         String qty(double v) => fmt.quantity(v);

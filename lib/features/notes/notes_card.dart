@@ -46,10 +46,12 @@ class _NotesCardState extends State<NotesCard> {
   @override
   void dispose() {
     _notes?.removeListener(_onStoreChanged);
-    // Kilépéskor a még nem mentett szöveg is mentődik.
-    if (_debounce?.isActive ?? false) {
+    // Kilépéskor a még nem mentett szöveg is mentődik – a fa lezárása után (a mentés
+    // értesíti a többi oldalt, pl. a Kedvencek jegyzet-jelét; bontás közben az hibát dobna).
+    if ((_debounce?.isActive ?? false) && _notes != null) {
       _debounce!.cancel();
-      _notes?.set(widget.symbol, _text!.text);
+      final notes = _notes!, symbol = widget.symbol, text = _text!.text;
+      scheduleMicrotask(() => notes.set(symbol, text));
     }
     _text?.dispose();
     super.dispose();

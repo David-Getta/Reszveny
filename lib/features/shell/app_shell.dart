@@ -33,6 +33,7 @@ import '../settings/settings_page.dart';
 import 'shortcuts_dialog.dart';
 import '../stock_detail/stock_detail_page.dart';
 import '../../core/util/dates.dart';
+import '../../core/util/us_market_hours.dart';
 
 /// Az app kerete: széles képernyőn oldalsáv (új keresés, előzmények,
 /// beállítások) és tartalom – mint a Claude asztali alkalmazása; keskeny
@@ -351,7 +352,7 @@ class _AppShellState extends State<AppShell> {
   /// A 7 napon belüli gyorsjelentés szövege a tálcamenühöz („Holnap”, „5 nap múlva”).
   String? _trayEarningsWhen(AppServices services, AppLocalizations l10n, String symbol) {
     final now = DateTime.now();
-    final today = DateTime(now.year, now.month, now.day);
+    final today = UsMarketHours.eventToday(now);
     final e = services.events.events
         .where((e) => e.kind == UpcomingEventKind.earnings && e.symbol == symbol && !e.date.isBefore(today))
         .where((e) => calendarDaysBetween(today, e.date) < 7)

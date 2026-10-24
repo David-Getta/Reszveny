@@ -276,6 +276,8 @@ class _ShareSheetState extends State<_ShareSheet> {
   Future<String?> _ensureLink() => _link ??= _createLink();
 
   Future<String?> _createLink() async {
+    // A lap közben bezárulhatott (a kép rajzolása alatt): akkor link nélkül.
+    if (!mounted) return null;
     final backend = AppServices.of(context).backend;
     if (backend == null) return null;
     final l10n = AppLocalizations.of(context);
@@ -305,7 +307,7 @@ class _ShareSheetState extends State<_ShareSheet> {
     setState(() => _busy = true);
     try {
       final png = await _capture(3);
-      if (png == null) return;
+      if (png == null || !mounted) return;
       final link = await _ensureLink();
       await shareImage(
         png,

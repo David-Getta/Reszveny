@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.285)
+# Változásjegyzék (0.2.130 → 0.2.286)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,22 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Időzónák és életciklus: a harmincegyedik és harminckettedik kódátnézés javításai
+
+- **0.2.286**: a portfólió „Ma” eredménye a legutóbbi kereskedési napon vett részvényt a vételi árától méri
+  hétvégén és nyitás előtt is (eddig csak a helyi mai napon vettet, így szombaton a pénteki vétel a teljes napi
+  mozgást kapta). A reggeli összefoglaló egy hétvége vagy ünnep után is reggel készül (eddig a következő esti
+  zárásra csúszott, és ott ragadt). New Yorktól keletre (Ázsia, Óceánia, este Európa) egy aznapi, zárás utáni
+  gyorsjelentés nem tűnik el, mielőtt megjelenik, és nem „tegnapi” – a részvény fejlécén, a Kedvencek között, a
+  tálcán, az Események naptárban és a napi összefoglalóban sem; a zárás utáni jelentés a zárás után már friss
+  eredménynek számít, a hetekkel későbbi viszont soha. Egy új kedvenc „felvétel óta” változása a New York-i
+  kereskedési nap záróárához mér. A pénteki portfólió-mozgásról keletebbre is pénteken szól (eddig hétfőn).
+  A piaci óra egy helyi óraátállítás napján is a következő nyitást mutatja. Lassú hálózaton a böngészős fizetés
+  figyelése nem torlódik, és a jóváírás egyszer jelez. Az elkészült elemzésről nem jön „Megnyitás” jelzés, ha a
+  részvény oldala nyitva van (akkor sem, ha az elemzés kártyája kigördült). A gyorsan bezárt oldal jegyzete hiba
+  nélkül mentődik, a nyelvváltás nem dob építési hibát a nyitott oldalakon, és a megosztás bezárása a kép
+  készítése közben sem okoz kezeletlen hibát.
 
 ## Régóta nyitott hibák javítása
 

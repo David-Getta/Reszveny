@@ -68,6 +68,18 @@ class UsMarketHours {
     return day;
   }
 
+  /// A „ma” a New York-i dátumú eseményekhez (gyorsjelentés-naptár): a helyi és a
+  /// New York-i nap közül a korábbi. New Yorktól keletre (Ázsia, Óceánia, este
+  /// Európa) helyben már másnap lehet, amikor egy aznapi, zárás utáni jelentés még
+  /// meg sem jelent – az ne tűnjön el, és ne „tegnapi” legyen. A [now] egy
+  /// pillanat (nem egy már napra kerekített dátum).
+  static DateTime eventToday(DateTime now) {
+    final local = DateTime(now.year, now.month, now.day);
+    final ny = newYorkTime(now.toUtc());
+    final nyDay = DateTime(ny.year, ny.month, ny.day);
+    return nyDay.isBefore(local) ? nyDay : local;
+  }
+
   /// A legutóbbi rendes zárás időpontja (UTC), amely legfeljebb [nowUtc].
   static DateTime lastClose(DateTime nowUtc) {
     final ny = newYorkTime(nowUtc);
@@ -89,7 +101,8 @@ class UsMarketHours {
     if (isTradingDay(today) && !ny.isBefore(open) && ny.isBefore(close)) {
       return (open: true, next: utcOf(close));
     }
-    var day = isTradingDay(today) && ny.isBefore(open) ? today : today.add(const Duration(days: 1));
+    // Naptári nappal (nem 24 órával): egy helyi óraátállítás napján sem csúszik vissza.
+    var day = isTradingDay(today) && ny.isBefore(open) ? today : DateTime(today.year, today.month, today.day + 1);
     for (var i = 0; i < 14 && !isTradingDay(day); i++) {
       day = DateTime(day.year, day.month, day.day + 1);
     }

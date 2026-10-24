@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:reszveny/core/util/us_market_hours.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
 import 'package:reszveny/core/app_preferences.dart';
@@ -45,9 +46,10 @@ class _SoonEarnings extends DemoMarketDataProvider {
 
   @override
   Future<EarningsOverview> earnings(String symbol) async {
-    final now = DateTime.now();
+    // A naptár New York-i napjához képest holnap (keletebbre éjfél után még az a „ma”).
+    final today = UsMarketHours.eventToday(DateTime.now());
     return EarningsOverview(
-      next: UpcomingEarnings(date: DateTime(now.year, now.month, now.day + 1), hour: 'amc'),
+      next: UpcomingEarnings(date: DateTime(today.year, today.month, today.day + 1), hour: 'amc'),
     );
   }
 }

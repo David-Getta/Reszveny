@@ -94,15 +94,21 @@ class WebCheckoutBillingService implements BillingService {
   void _watch(String productId, EntitlementState before) {
     _poll?.cancel();
     final deadline = DateTime.now().add(pollTimeout);
+    // Egyszerre egy lekérdezés: lassú hálózaton se torlódjanak, és a jóváírás egyszer jelezzen.
+    var inFlight = false;
     _poll = Timer.periodic(pollInterval, (t) async {
+      if (inFlight) return;
       if (DateTime.now().isAfter(deadline)) {
         t.cancel();
         // Félbehagyott fizetés: a várakozás lezárul, a csomag újra választható.
         _events.add(BillingEvent(productId: productId, status: BillingStatus.canceled, platform: 'stripe'));
         return;
       }
+      inFlight = true;
       try {
         final now = await backend.me();
+        // Közben leállt vagy újraindult a figyelés (új vásárlás, bezárás): ez már nem számít.
+        if (!t.isActive || !identical(_poll, t)) return;
         if (_changed(before, now)) {
           t.cancel();
           _events.add(
@@ -111,6 +117,8 @@ class WebCheckoutBillingService implements BillingService {
         }
       } catch (e) {
         debugPrint('Fizetés állapota nem kérdezhető le: $e');
+      } finally {
+        inFlight = false;
       }
     });
   }

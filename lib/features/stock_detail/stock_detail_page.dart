@@ -59,12 +59,28 @@ class StockDetailPage extends StatefulWidget {
 
 class _StockDetailPageState extends State<StockDetailPage> {
   Future<StockDetails>? _future;
+  AppServices? _services;
+  late final String _symbol = widget.candidate.symbol.toUpperCase();
+
+  /// Az oldal a legfelső (nem takarja másik): az elkészült elemzésről ilyenkor nem
+  /// kell külön szólni – akkor sem, ha az elemzés kártyája épp kigördült a listából.
+  bool _visible() => mounted && (ModalRoute.of(context)?.isCurrent ?? true);
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     // Az InheritedWidget csak itt érhető el először; egyszer indítjuk.
     _future ??= _fetch();
+    if (_services == null) {
+      _services = AppServices.of(context);
+      _services!.reports.addViewer(_symbol, _visible);
+    }
+  }
+
+  @override
+  void dispose() {
+    _services?.reports.removeViewer(_symbol, _visible);
+    super.dispose();
   }
 
   Future<StockDetails> _fetch() => AppServices.of(context).marketData.details(widget.candidate.symbol);

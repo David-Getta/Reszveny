@@ -13,6 +13,7 @@ import '../../core/models/price_history.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_metrics.dart';
 import '../../core/models/stock_quote.dart';
+import '../../core/util/us_market_hours.dart';
 import 'market_data_provider.dart';
 
 /// Élő adatok a Finnhub REST API-ból (https://finnhub.io/docs/api).
@@ -78,7 +79,11 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
         'to': d(today),
       }),
       safe('/stock/earnings', {'symbol': symbol, 'limit': '4'}),
-      safe('/calendar/earnings', {'symbol': symbol, 'from': d(today), 'to': d(today.add(const Duration(days: 120)))}),
+      safe('/calendar/earnings', {
+        'symbol': symbol,
+        'from': d(UsMarketHours.eventToday(today)),
+        'to': d(today.add(const Duration(days: 120))),
+      }),
     ]);
     return parseAnalysisExtras(symbol, peers: r[0], insider: r[1], earnings: r[2], calendar: r[3], now: today);
   }
@@ -95,7 +100,7 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     String d(DateTime t) => t.toIso8601String().substring(0, 10);
     final cal = await _get('/calendar/earnings', {
       'symbol': symbol,
-      'from': d(today),
+      'from': d(UsMarketHours.eventToday(today)),
       'to': d(today.add(const Duration(days: 120))),
     });
     return parseAnalysisExtras(symbol, calendar: cal, now: today).nextEarnings;
@@ -130,7 +135,11 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
 
     final r = await Future.wait([
       safe('/stock/earnings', {'symbol': symbol, 'limit': '4'}),
-      safe('/calendar/earnings', {'symbol': symbol, 'from': d(today), 'to': d(today.add(const Duration(days: 120)))}),
+      safe('/calendar/earnings', {
+        'symbol': symbol,
+        'from': d(UsMarketHours.eventToday(today)),
+        'to': d(today.add(const Duration(days: 120))),
+      }),
     ]);
     final x = parseAnalysisExtras(symbol, earnings: r[0], calendar: r[1], now: today);
     return EarningsOverview(history: x.earnings, next: x.nextEarnings);
@@ -203,11 +212,12 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     UpcomingEarnings? next;
     final cal = calendar is Map ? calendar['earningsCalendar'] : null;
     if (cal is List) {
-      final today = now ?? DateTime.now();
+      // A naptár New York-i dátumú: keletebbre az aznapi, még meg nem jelent jelentés is marad.
+      final today = UsMarketHours.eventToday(now ?? DateTime.now());
       final upcoming = [
         for (final c in cal.whereType<Map>())
           if (DateTime.tryParse(c['date'] as String? ?? '') case final date?)
-            if (!date.isBefore(DateTime(today.year, today.month, today.day)))
+            if (!date.isBefore(today))
               UpcomingEarnings(
                 date: date,
                 hour: (c['hour'] as String?)?.isEmpty == true ? null : c['hour'] as String?,

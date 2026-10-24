@@ -73,8 +73,10 @@ void main() {
     expect(await morning.check(), isTrue);
     expect(brief.isTodayIn('Hungarian'), isTrue);
     expect(brief.isTodayIn('English'), isFalse);
-    // Hétfő este, a zárás után megint.
+    // Hétfő este, a zárás után még nem (reggeli összefoglaló), kedd reggel megint.
     now = DateTime.utc(2026, 10, 19, 21);
+    expect(await morning.check(), isFalse);
+    now = DateTime.utc(2026, 10, 20, 8);
     expect(await morning.check(), isTrue);
     expect(calls, 3);
   });

@@ -179,7 +179,9 @@ Rules:
       final quotes = await Future.wait([
         for (final s in picked) marketData.quote(s).then<StockQuote?>((q) => q, onError: (Object _) => null),
       ]);
-      final day = DateTime(today.year, today.month, today.day);
+      // A gyorsjelentés-naptár New York-i dátumú: keletebbre egy aznapi, zárás utáni
+      // jelentés még nem „tegnapi” (és nincs friss eredménye).
+      final day = UsMarketHours.eventToday(today);
       final stocks = <BriefStock>[];
       for (final (i, s) in picked.indexed) {
         // Közeli gyorsjelentés: hány nap múlva; ma vagy az elmúlt napokban: a friss eredmény.
@@ -187,14 +189,17 @@ Rules:
             .where((e) => e.symbol == s && e.kind == UpcomingEventKind.earnings)
             .firstOrNull;
         final inDays = e == null ? null : calendarDaysBetween(day, e.date);
-        // Friss eredmény: csak ha a jelentés már megjelent (tegnap vagy korábban, vagy
-        // ma nyitás előtt és a nyitás már elmúlt), és a negyedév közvetlenül előtte zárult
+        // Friss eredmény: csak ha a jelentés már megjelent (tegnap vagy korábban, vagy ma
+        // nyitás előtt és a nyitás, ill. zárás után és a zárás már elmúlt), és a negyedév közvetlenül előtte zárult
         // – különben a múlt negyedév számai „frissnek” látszanának.
         EarningsSurprise? reported;
         final ny = UsMarketHours.newYorkTime(today.toUtc());
         final pastOpen = !ny.isBefore(DateTime(ny.year, ny.month, ny.day, 9, 30));
+        final pastClose = !ny.isBefore(DateTime(ny.year, ny.month, ny.day, 16));
         final released =
-            inDays != null && inDays >= -reportedWithinDays && (inDays < 0 || (e!.hour == 'bmo' && pastOpen));
+            inDays != null &&
+            inDays >= -reportedWithinDays &&
+            (inDays < 0 || (inDays == 0 && ((e!.hour == 'bmo' && pastOpen) || (e.hour == 'amc' && pastClose))));
         if (released) {
           try {
             reported = (await marketData.earnings(s)).history.where((h) {

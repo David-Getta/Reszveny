@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:reszveny/core/util/us_market_hours.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
 import 'package:reszveny/core/app_preferences.dart';
@@ -58,7 +59,8 @@ String _day(DateTime d) => d.toIso8601String().substring(0, 10);
 
 void main() {
   final now = DateTime.now();
-  final today = DateTime(now.year, now.month, now.day);
+  // Az események „mai” napja: New Yorktól keletre éjfél után még az előző nap.
+  final today = UsMarketHours.eventToday(now);
 
   setUp(() {
     SharedPreferences.setMockInitialValues({

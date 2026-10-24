@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../features/analysis/analysis_options.dart';
 import 'util/tombstones.dart';
+import 'util/us_market_hours.dart';
 
 /// Felhasználói beállítások: megjelenés (téma) és a legutóbbi keresések.
 class AppPreferences extends ChangeNotifier {
@@ -175,10 +176,13 @@ class AppPreferences extends ChangeNotifier {
     };
   }
 
-  /// Új kedvencnél a mai nap (a meglévőt nem írja felül) és a pontos felvételi idő.
+  /// Új kedvencnél a mostani kereskedési nap (a meglévőt nem írja felül) és a pontos
+  /// felvételi idő. A nap New York-i: a „felvétel óta” változás ennek a záróárához
+  /// mér – helyi dátummal keletebbre (vagy éjfél után Európában) a következő
+  /// kereskedési nap zárása lenne a mérce.
   void _markFavorite(String s) {
     final now = DateTime.now();
-    _favoriteSince.putIfAbsent(s, () => DateTime(now.year, now.month, now.day));
+    _favoriteSince.putIfAbsent(s, () => UsMarketHours.sessionDate(now.toUtc()));
     _favoritesAdded[s] = now.toUtc();
     _favoritesRemoved.remove(s);
   }

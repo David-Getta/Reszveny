@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 
 import '../../core/models/stock_quote.dart';
+import '../../core/util/us_market_hours.dart';
 import '../fx/fx_service.dart';
 import '../market_data/market_data_provider.dart';
 import 'annual_return.dart';
@@ -15,9 +16,13 @@ class PositionValue {
     this.rate,
     this.weight = 0,
     this.dividendPerShare,
+    this.quoteTime,
   });
 
   final Position position;
+
+  /// Az ár ideje (UTC): ennek a kereskedési napnak a mozgása a [dayChange].
+  final DateTime? quoteTime;
 
   /// Aktuális ár a részvény pénznemében (`null`, ha nem érhető el).
   final double? price;
@@ -42,20 +47,31 @@ class PositionValue {
   double? get gain => value == null ? null : value! - position.cost;
   double? get gainPercent => gain == null || position.cost == 0 ? null : gain! / position.cost * 100;
 
-  /// A mai eredmény: a napi változás a darabszámon, de a ma vett darabnál a vételi
-  /// árhoz, a ma eladottnál az eladási árig mérve (a tegnapi záróárhoz képest).
+  /// A mai eredmény: a napi változás a darabszámon, de a változás kereskedési
+  /// napján (vagy utána) vett darabnál a vételi árhoz, az eladottnál az eladási árig
+  /// mérve (az előző záróárhoz képest).
   double? get dayGain {
     final change = dayChange, now = price;
     if (change == null) return null;
     var gain = change * position.quantity;
     if (now == null) return gain;
-    final close = now - change, today = DateTime.now();
+    final close = now - change, session = _sessionDay;
     for (final l in position.lots) {
       final d = l.date;
-      if (d == null || d.year != today.year || d.month != today.month || d.day != today.day) continue;
+      if (d == null || DateTime(d.year, d.month, d.day).isBefore(session)) continue;
       gain += (l.sell ? 1 : -1) * (l.price - close) * l.quantity;
     }
     return gain;
+  }
+
+  /// A napi változás kereskedési napja (New York-i dátum): az ár idejéből, ha ismert,
+  /// különben a legutóbbi kereskedési nap – nem a helyi mai nap (hétvégén, nyitás
+  /// előtt és New Yorktól keletre az még az előző kereskedési napé).
+  DateTime get _sessionDay {
+    final t = quoteTime;
+    if (t == null) return UsMarketHours.sessionDate(DateTime.now().toUtc());
+    final ny = UsMarketHours.newYorkTime(t);
+    return DateTime(ny.year, ny.month, ny.day);
   }
 
   /// Benne van-e az összesítésben (van ár és árfolyam).
@@ -201,6 +217,7 @@ class PortfolioSnapshot {
         dayChange: q?.change,
         rate: r,
         dividendPerShare: dividends[p.symbol],
+        quoteTime: q?.timestamp,
       );
       rows.add(row);
       if (!row.inTotal) continue;
@@ -233,6 +250,7 @@ class PortfolioSnapshot {
           rate: r.rate,
           weight: r.inTotal && total > 0 ? r.value! * r.rate! / total : 0,
           dividendPerShare: r.dividendPerShare,
+          quoteTime: r.quoteTime,
         ),
     ]..sort((a, b) => b.weight.compareTo(a.weight));
     return PortfolioSnapshot(

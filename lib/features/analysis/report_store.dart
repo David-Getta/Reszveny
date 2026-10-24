@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
@@ -228,9 +229,11 @@ class ReportStore extends ChangeNotifier {
     if (cached != null) {
       if (language == null || cached.language == null || cached.language == language) return cached;
       // Nyelvváltás után a memóriában lévő, más nyelvű elemzés sem látszik (mint a lemezről).
+      // Az értesítés a mostani képkocka után: a hívó épp építés közben kérheti (nyelvváltáskor
+      // a kártya `didChangeDependencies`-ében), és a többi nyitott oldalt jelölné újraépítésre.
       _reports.remove(symbol);
       _previous.remove(symbol);
-      notifyListeners();
+      scheduleMicrotask(notifyListeners);
       return null;
     }
     try {

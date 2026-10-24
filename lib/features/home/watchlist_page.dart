@@ -23,14 +23,15 @@ import '../events/events_view.dart' show eventWhen;
 import '../portfolio/add_lot_dialog.dart' show parseDecimal;
 import 'watch_signals.dart';
 import '../../core/util/dates.dart';
+import '../../core/util/us_market_hours.dart';
 
 /// A figyelőlista rendezése.
 enum WatchSort { own, gainers, losers, since, name }
 
 /// A felvétel óta eltelt változás (%): a mostani ár a felvétel napi (vagy utána első)
 /// záróárhoz képest, naptári nap szerint (a napi gyertya időbélyege UTC, a felvétel
-/// napja helyi). `null`, ha a sorozat a felvétel után kezdődik, vagy még nincs
-/// a felvétel utáni nap.
+/// napja a New York-i kereskedési nap). `null`, ha a sorozat a felvétel után
+/// kezdődik, vagy még nincs a felvétel utáni nap.
 double? sinceAddedPercent(double price, List<PricePoint> pts, DateTime since) {
   // Napkulcs (ÉÉÉÉHHNN) dátum-objektum helyett: rendezéskor sokszor fut le.
   int dayOf(DateTime x) => x.year * 10000 + x.month * 100 + x.day;
@@ -353,8 +354,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
 
   /// A részvény 7 napon belüli gyorsjelentése (ha van), a sor jelzéséhez.
   UpcomingEvent? _soonEarnings(AppServices services, String symbol) {
-    final now = DateTime.now();
-    final today = DateTime(now.year, now.month, now.day);
+    final today = UsMarketHours.eventToday(DateTime.now());
     return services.events.events
         .where(
           (e) =>

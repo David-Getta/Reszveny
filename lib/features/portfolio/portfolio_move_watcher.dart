@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 
 import '../../core/app_preferences.dart';
 import '../../core/desktop/system_notifier.dart';
+import '../../core/util/us_market_hours.dart';
 import 'portfolio_store.dart';
 import 'portfolio_valuation.dart';
 
@@ -62,10 +63,12 @@ class PortfolioMoveWatcher {
     final now = _clock();
     final day = now.toIso8601String().substring(0, 10);
     final last = preferences.portfolioMoveNotified?.split('|');
+    // Hétvége New York szerint: keletebbre a pénteki kereskedés helyben szombatra esik.
+    final weekday = UsMarketHours.newYorkTime(now.toUtc()).weekday;
     final moveDue =
         threshold > 0 &&
-        now.weekday != DateTime.saturday &&
-        now.weekday != DateTime.sunday &&
+        weekday != DateTime.saturday &&
+        weekday != DateTime.sunday &&
         (last == null || last.first != day);
     final goal = preferences.portfolioGoal;
     final goalDue = describeGoal != null && goal != null && preferences.portfolioGoalNotified != _goalKey(goal);

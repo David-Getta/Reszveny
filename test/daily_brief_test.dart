@@ -165,7 +165,9 @@ void main() {
     const config = AppConfig(backendUrl: 'https://api.test');
     final market = DemoMarketDataProvider(latency: Duration.zero);
     final prefs = AppPreferences(favorites: const ['AAPL', 'MSFT']);
-    final now = DateTime.now();
+    // Délelőtt New Yorkban (a helyi és a New York-i nap ugyanaz), a zárás előtt.
+    final n = DateTime.now();
+    final now = DateTime.utc(n.year, n.month, n.day, 15);
     final today = DateTime(now.year, now.month, now.day);
     final brief =
         DailyBrief(
@@ -173,6 +175,7 @@ void main() {
             marketData: market,
             news: WatchNewsService(marketData: market, preferences: prefs, portfolio: PortfolioStore()),
             client: client,
+            clock: () => now,
           )
           ..fx = () async {
             return [

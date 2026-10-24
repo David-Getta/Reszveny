@@ -18,10 +18,12 @@ import 'calendar_export.dart';
 import 'events_service.dart';
 import '../../core/util/dates.dart';
 import '../../core/util/text.dart';
+import '../../core/util/us_market_hours.dart';
 
-/// „Mikor?”: ma, holnap, N nap múlva.
-String eventWhen(AppLocalizations l10n, DateTime day, DateTime today) {
-  final days = calendarDaysBetween(today, day);
+/// „Mikor?”: ma, holnap, N nap múlva – a [now] pillanattól, a New York-i dátumú
+/// eseményekhez igazítva ([UsMarketHours.eventToday]).
+String eventWhen(AppLocalizations l10n, DateTime day, DateTime now) {
+  final days = calendarDaysBetween(UsMarketHours.eventToday(now), day);
   return switch (days) {
     <= 0 => l10n.longTermToday,
     1 => l10n.eventTomorrow,
@@ -129,11 +131,11 @@ class _UpcomingEventsSectionState extends State<UpcomingEventsSection> {
     return ListenableBuilder(
       listenable: services.events,
       builder: (context, _) {
-        final now = DateTime.now();
+        final today = UsMarketHours.eventToday(DateTime.now());
         // Az éjfél előtt betöltött lista tegnapi eseménye már nem „ma”.
-        final upcoming = services.events.events.where((e) => calendarDaysBetween(now, e.date) >= 0).toList();
+        final upcoming = services.events.events.where((e) => calendarDaysBetween(today, e.date) >= 0).toList();
         final within = upcoming
-            .where((e) => calendarDaysBetween(now, e.date) < UpcomingEventsSection.shownDays)
+            .where((e) => calendarDaysBetween(today, e.date) < UpcomingEventsSection.shownDays)
             .toList();
         // Ha 30 napon belül nincs, a legközelebbi akkor is látszik (és vele a „Mind”: a
         // lista és a naptár-export a jelentési szezonok között is elérhető).
@@ -295,8 +297,8 @@ class EventsPage extends StatelessWidget {
         listenable: services.events,
         builder: (context, _) {
           // A már elmúlt (éjfél előtt betöltött) események nélkül.
-          final now = DateTime.now();
-          final events = services.events.events.where((e) => calendarDaysBetween(now, e.date) >= 0).toList();
+          final today = UsMarketHours.eventToday(DateTime.now());
+          final events = services.events.events.where((e) => calendarDaysBetween(today, e.date) >= 0).toList();
           return RefreshIndicator(
             onRefresh: () => services.events.refresh(force: true),
             child: CenteredScroll(

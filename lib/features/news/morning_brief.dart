@@ -77,10 +77,13 @@ class MorningBrief {
     final lang = language();
     if (brief.isTodayIn(lang) || brief.busy) return false;
     // Csak ha a legutóbbi összefoglaló óta zárt egy amerikai kereskedési nap: hétvégén
-    // és ünnepnap után ne ismételje ugyanazokat a számokat.
+    // és ünnepnap után ne ismételje ugyanazokat a számokat. A mérce a ma reggeli
+    // [fromHour] előtti utolsó zárás (nem a mostani): egy szünnap után se csússzon az
+    // összefoglaló a következő esti zárásra, és ott se ragadjon.
+    final now = _clock();
+    final morning = DateTime(now.year, now.month, now.day, fromHour).toUtc();
     if (brief.last case final l?
-        when (l.language.isEmpty || l.language == lang) &&
-            !l.at.toUtc().isBefore(UsMarketHours.lastClose(_clock().toUtc()))) {
+        when (l.language.isEmpty || l.language == lang) && !l.at.toUtc().isBefore(UsMarketHours.lastClose(morning))) {
       return false;
     }
     final symbols = news.watched;

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reszveny/core/util/us_market_hours.dart';
 import 'package:reszveny/features/compare/compare_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
@@ -18,8 +19,8 @@ void main() {
   test('favorites remember the day they were added; removing forgets it; sync merges per ticker', () async {
     final prefs = AppPreferences();
     await prefs.toggleFavorite('aapl');
-    final now = DateTime.now();
-    expect(prefs.favoriteSince('AAPL'), DateTime(now.year, now.month, now.day));
+    // A New York-i kereskedési nap (hétvégén és nyitás előtt az előző).
+    expect(prefs.favoriteSince('AAPL'), UsMarketHours.sessionDate(DateTime.now().toUtc()));
     await prefs.toggleFavorite('AAPL');
     expect(prefs.favoriteSince('AAPL'), isNull);
     await prefs.addSymbols(['MSFT']);

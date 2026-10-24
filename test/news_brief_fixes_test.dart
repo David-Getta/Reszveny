@@ -131,7 +131,7 @@ void main() {
 
   test('a report from yesterday stays available for the brief after the date is fetched again', () async {
     final now = DateTime.now();
-    final today = DateTime(now.year, now.month, now.day);
+    final today = UsMarketHours.eventToday(now);
     var clock = now;
     final market = _EarningsMarket(today.subtract(const Duration(days: 1)));
     final events = EventsService(

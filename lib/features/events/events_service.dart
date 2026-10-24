@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 
 import '../../core/app_preferences.dart';
 import '../../core/models/analysis_extras.dart';
+import '../../core/util/us_market_hours.dart';
 import '../analysis/report_store.dart';
 import '../market_data/market_data_provider.dart';
 import '../portfolio/dividend_forecast.dart';
@@ -149,10 +150,9 @@ class EventsService extends ChangeNotifier {
   List<String> get watched =>
       {for (final p in portfolio.positions) p.symbol.toUpperCase(), ...preferences.favorites}.take(maxSymbols).toList();
 
-  DateTime get _today {
-    final n = _clock();
-    return DateTime(n.year, n.month, n.day);
-  }
+  /// A mai nap az eseményekhez: New Yorktól keletre egy aznapi (New York-i dátumú)
+  /// gyorsjelentés még nem múlt el ([UsMarketHours.eventToday]).
+  DateTime get _today => UsMarketHours.eventToday(_clock());
 
   /// A figyelt részvények gyorsjelentés-dátumainak (és előzményének) lekérése a
   /// gyorsítótár mellé, aztán a lista összeállítása.
