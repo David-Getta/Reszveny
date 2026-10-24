@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:shelf/shelf_io.dart' as io;
@@ -77,8 +78,9 @@ Future<void> main() async {
     trialModel: env['ANTHROPIC_TRIAL_MODEL'] ?? 'claude-sonnet-5-5',
     twelveDataApiKey: env['TWELVEDATA_API_KEY'] ?? '',
     legalDir: env['LEGAL_DIR'] ?? 'legal',
+    // Éles módban (store) a naplóba sem cím, sem kód nem kerül.
     mailer: resend.isEmpty
-        ? ConsoleMailer()
+        ? ConsoleMailer(redact: verifyMode == 'store')
         : ResendMailer(apiKey: resend, from: env['MAIL_FROM'] ?? 'WhatStock <login@whatstock.app>'),
     stripe: stripeKey.isEmpty
         ? null
@@ -95,6 +97,9 @@ Future<void> main() async {
   if (alertMinutes > 0) api.alertWatcher.start(Duration(minutes: alertMinutes));
   final digestMinutes = int.tryParse(env['DIGEST_CHECK_MINUTES'] ?? '') ?? 60;
   if (digestMinutes > 0) api.digestSender.start(Duration(minutes: digestMinutes));
+  // A megőrzési idők betartása (új adat nélkül is): induláskor és naponta.
+  api.housekeeping();
+  final housekeeping = Timer.periodic(const Duration(hours: 24), (_) => api.housekeeping());
   stdout.writeln(
     'WhatStock backend fut: http://${server.address.host}:${server.port} (verify: ${verifier.runtimeType}, '
     'meghívókódok: ${invites.enabled ? invites.length : 'nincs, nyitott'})',
@@ -109,6 +114,7 @@ Future<void> main() async {
       stdout.writeln('Leállítás ($signal)…');
       api.alertWatcher.stop();
       api.digestSender.stop();
+      housekeeping.cancel();
       await server.close();
       store.close();
       exit(0);

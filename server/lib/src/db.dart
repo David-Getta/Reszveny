@@ -186,6 +186,8 @@ class Store {
     final rcols = _db.select('PRAGMA table_info(referrals)').map((r) => r['name'] as String).toSet();
     if (!rcols.contains('mailbox_hash')) _db.execute('ALTER TABLE referrals ADD COLUMN mailbox_hash TEXT');
     _db.execute('CREATE INDEX IF NOT EXISTS referrals_mailbox ON referrals(mailbox_hash)');
+    // A korábban tárolt eszközazonosítók törlése (nem használtuk őket, és nem gyűjtünk ilyet).
+    _db.execute('UPDATE users SET device_id = NULL WHERE device_id IS NOT NULL');
     _db.execute('CREATE INDEX IF NOT EXISTS purchases_link ON purchases(platform, link_key)');
   }
 
@@ -199,6 +201,24 @@ class Store {
   Database get database => _db;
 
   static String hashToken(String token) => sha256.convert(utf8.encode(token)).toString();
+
+  /// A szerver saját titka a kulcsolt ujjlenyomatokhoz (első induláskor jön létre, az
+  /// adatbázisban marad): ezek nélküle próbálgatással sem fejthetők vissza (egy ismert
+  /// e-mail-cím vagy a teljes IPv4-tér sem).
+  late final List<int> _secret = () {
+    _db.execute(
+      'CREATE TABLE IF NOT EXISTS server_secret (id INTEGER PRIMARY KEY CHECK (id = 1), value TEXT NOT NULL)',
+    );
+    final r = _db.select('SELECT value FROM server_secret WHERE id = 1');
+    if (r.isNotEmpty) return base64.decode(r.first['value'] as String);
+    final rnd = Random.secure();
+    final bytes = List<int>.generate(32, (_) => rnd.nextInt(256));
+    _db.execute('INSERT INTO server_secret (id, value) VALUES (1, ?)', [base64.encode(bytes)]);
+    return bytes;
+  }();
+
+  /// Kulcsolt ujjlenyomat (HMAC-SHA256 a szerver titkával), `k:` előtaggal.
+  String keyedHash(String value) => 'k:${Hmac(sha256, _secret).convert(utf8.encode(value))}';
 
   /// Új névtelen felhasználó; visszaadja az (id, token) párt.
   (String, String) createAnonymousUser(String? deviceId) {
@@ -361,6 +381,16 @@ class Store {
       ]);
       _db.execute('UPDATE referrals SET referrer_id = ? WHERE referrer_id = ?', [deletedUser, userId]);
       if (email != null) _db.execute('DELETE FROM login_codes WHERE email = ?', [email]);
+      // A vásárlás bolti azonosítói csak kulcsolt ujjlenyomatként maradnak: így sem
+      // váltható be újra, és sem a fizetés, sem a bolti fiók nem azonosítható belőle.
+      for (final p in _db.select('SELECT id, transaction_id, link_key FROM purchases WHERE user_id = ?', [userId])) {
+        String? keyed(Object? v) => v is String && !v.startsWith('k:') ? keyedHash(v) : v as String?;
+        _db.execute('UPDATE purchases SET transaction_id = ?, link_key = ? WHERE id = ?', [
+          keyed(p['transaction_id']),
+          keyed(p['link_key']),
+          p['id'],
+        ]);
+      }
       _db.execute('UPDATE purchases SET user_id = ? WHERE user_id = ?', [deletedUser, userId]);
       _db.execute('DELETE FROM users WHERE id = ?', [userId]);
       _db.execute('COMMIT');
@@ -542,9 +572,10 @@ class Store {
     String? linkKey,
   }) {
     if (transactionId != null) {
-      final dup = _db.select('SELECT id FROM purchases WHERE platform = ? AND transaction_id = ?', [
+      final dup = _db.select('SELECT id FROM purchases WHERE platform = ? AND transaction_id IN (?, ?)', [
         platform,
         transactionId,
+        keyedHash(transactionId),
       ]);
       if (dup.isNotEmpty) return false;
     }
@@ -559,8 +590,8 @@ class Store {
   /// A bolti vásárlás terméke (az első, ezzel a kulccsal rögzített vásárlásé).
   String? productForPurchaseLink(String platform, String linkKey) {
     final rows = _db.select(
-      'SELECT product_id FROM purchases WHERE platform = ? AND link_key = ? ORDER BY id LIMIT 1',
-      [platform, linkKey],
+      'SELECT product_id FROM purchases WHERE platform = ? AND link_key IN (?, ?) ORDER BY id LIMIT 1',
+      [platform, linkKey, keyedHash(linkKey)],
     );
     return rows.isEmpty ? null : rows.first['product_id'] as String;
   }
@@ -568,14 +599,13 @@ class Store {
   /// A törölt fiókok vásárlásainak gazdája (a bolti azonosítók megmaradnak).
   static const deletedUser = 'deleted';
 
-  /// Egy törölt fiókhoz kötött bolti vásárlás átkötése egy új fiókhoz.
+  /// Egy törölt fiókhoz kötött bolti vásárlás átkötése egy új fiókhoz (a törléskor
+  /// ujjlenyomattá alakított kulcs az új gazdánál ismét a bolti azonosító).
   void relinkPurchases({required String platform, required String linkKey, required String from, required String to}) =>
-      _db.execute('UPDATE purchases SET user_id = ? WHERE platform = ? AND link_key = ? AND user_id = ?', [
-        to,
-        platform,
-        linkKey,
-        from,
-      ]);
+      _db.execute(
+        'UPDATE purchases SET user_id = ?, link_key = ? WHERE platform = ? AND link_key IN (?, ?) AND user_id = ?',
+        [to, linkKey, platform, linkKey, keyedHash(linkKey), from],
+      );
 
   /// A fiók által [since] óta igazolt vásárlások termékei.
   List<String> productsBoughtSince(String userId, DateTime since) => [
@@ -596,10 +626,10 @@ class Store {
 
   /// Kié a bolti vásárlás (az első, ezzel a kulccsal rögzített vásárlás gazdája).
   String? userForPurchaseLink(String platform, String linkKey) {
-    final rows = _db.select('SELECT user_id FROM purchases WHERE platform = ? AND link_key = ? ORDER BY id LIMIT 1', [
-      platform,
-      linkKey,
-    ]);
+    final rows = _db.select(
+      'SELECT user_id FROM purchases WHERE platform = ? AND link_key IN (?, ?) ORDER BY id LIMIT 1',
+      [platform, linkKey, keyedHash(linkKey)],
+    );
     return rows.isEmpty ? null : rows.first['user_id'] as String;
   }
 
@@ -637,12 +667,15 @@ class Store {
   /// [mailbox]: a beváltó normalizált postafiókja (csak a lenyomata kerül tárolásra).
   void addReferral({required String refereeId, required String referrerId, String? mailbox}) => _db.execute(
     'INSERT INTO referrals (referee_id, referrer_id, created_at, mailbox_hash) VALUES (?, ?, ?, ?)',
-    [refereeId, referrerId, clock().toUtc().toIso8601String(), mailbox == null ? null : hashToken(mailbox)],
+    [refereeId, referrerId, clock().toUtc().toIso8601String(), mailbox == null ? null : keyedHash(mailbox)],
   );
 
-  /// Beváltott-e már ajánlókódot ez a (normalizált) postafiók – törölt fiókkal is.
-  bool mailboxRedeemedReferral(String mailbox) =>
-      _db.select('SELECT 1 FROM referrals WHERE mailbox_hash = ? LIMIT 1', [hashToken(mailbox)]).isNotEmpty;
+  /// Beváltott-e már ajánlókódot ez a (normalizált) postafiók – törölt fiókkal is (a
+  /// régebbi, kulcs nélküli lenyomattal tárolt sorok is számítanak).
+  bool mailboxRedeemedReferral(String mailbox) => _db.select(
+    'SELECT 1 FROM referrals WHERE mailbox_hash IN (?, ?) LIMIT 1',
+    [keyedHash(mailbox), hashToken(mailbox)],
+  ).isNotEmpty;
 
   /// (meghívottak, akik után már jutalmat kapott)
   (int, int) referralStats(String referrerId) {
@@ -906,6 +939,9 @@ class Store {
       ];
 
   void deleteAlertMail(int id) => _db.execute('DELETE FROM alert_mail_queue WHERE id = ?', [id]);
+
+  /// A fiók összes sorban álló riasztó levele (leiratkozáskor).
+  void deleteAlertMailsOf(String userId) => _db.execute('DELETE FROM alert_mail_queue WHERE user_id = ?', [userId]);
 
   void failedAlertMail(int id) => _db.execute('UPDATE alert_mail_queue SET attempts = attempts + 1 WHERE id = ?', [id]);
 

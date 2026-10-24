@@ -62,8 +62,9 @@ A Play Console-ban kitöltendő (nem kód); az Apple-manifesttel azonos válaszo
 | Titkosítva továbbítja? | Igen (HTTPS) |
 | Kérhető a törlés? | Igen, az appból (Beállítások → Fiók törlése) és a szerveren |
 | Személyes adat | E-mail cím – fiókos belépés, kötelező a fiókhoz, az app működéséhez |
-| Pénzügyi adat | Vásárlási előzmény – az előfizetés ellenőrzéséhez, az app működéséhez |
-| Alkalmazás-tevékenység | Használati események – választható (hozzájárulás a kezdőképernyőn), elemzéshez, személyhez nem köthető |
+| Pénzügyi adat | Vásárlási előzmény – az előfizetés ellenőrzéséhez, az app működéséhez; egyéb pénzügyi adat (a szinkronizált portfólió) – csak fiókkal, az app működéséhez |
+| Egyéb felhasználói tartalom | A szinkronizált kedvencek, riasztások és jegyzetek – csak fiókkal, az app működéséhez, kérésre törölhető |
+| Alkalmazás-tevékenység | Használati események – választható (hozzájárulás a kezdőképernyőn), elemzéshez, személyhez nem köthető; az elemzések naplója (melyik részvény, mikor) – a fiókhoz kötve, a keret elszámolásához |
 | Alkalmazás-információ | Hibajelentések – választható, kitakarva, személyhez nem köthető |
 | Nem gyűjt | hely, névjegyek, fotók (a kép csak a felismeréshez megy át, nem tárolódik), eszközazonosítók |
 

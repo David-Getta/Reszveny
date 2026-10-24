@@ -11,21 +11,26 @@ abstract interface class Mailer {
   Future<void> send(String email, {required String subject, required String text, Map<String, String>? headers});
 }
 
-/// Fejlesztéshez: a kódot a szerver naplójába írja, és megjegyzi (tesztek).
+/// Fejlesztéshez: a kódot a szerver naplójába írja, és megjegyzi (tesztek). Éles
+/// módban ([redact]) se a cím, se a kód nem kerül a naplóba (aki a naplót látja, ne
+/// léphessen be más nevében) – ilyenkor a levél egyszerűen nem megy ki.
 class ConsoleMailer implements Mailer {
+  ConsoleMailer({this.redact = false});
+
+  final bool redact;
   final sent = <String, String>{};
   final messages = <({String to, String subject, String text, Map<String, String> headers})>[];
 
   @override
   Future<void> sendLoginCode(String email, String code) async {
     sent[email] = code;
-    stdout.writeln('[mail] $email belépőkódja: $code');
+    stdout.writeln(redact ? '[mail] belépőkód nem ment ki (nincs RESEND_API_KEY)' : '[mail] $email belépőkódja: $code');
   }
 
   @override
   Future<void> send(String email, {required String subject, required String text, Map<String, String>? headers}) async {
     messages.add((to: email, subject: subject, text: text, headers: headers ?? const {}));
-    stdout.writeln('[mail] $email: $subject');
+    stdout.writeln(redact ? '[mail] levél nem ment ki (nincs RESEND_API_KEY)' : '[mail] $email: $subject');
   }
 }
 

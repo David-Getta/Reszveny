@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.292)
+# Változásjegyzék (0.2.130 → 0.2.293)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,19 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Adatvédelem: a harminckilencedik kódátnézés javításai
+
+- **0.2.293**: a fiók törlése után a szerveren maradó ujjlenyomatok (az ajánlókód-beváltó postafiókja, a bolti
+  bizonylatok azonosítói, a próbaidő IP-címe) a szerver titkával kulcsoltak, így egy ismert e-mail- vagy IP-címből
+  sem azonosíthatók vissza; a bolti bizonylat így sem váltható be újra, de visszaállítható. A fióktörlés a
+  fizetési szolgáltatónál (Stripe) tárolt ügyfelet is törli. Az e-mailes riasztásról leiratkozva a már sorban álló
+  levél sem megy ki. Az app nem küld és a szerver nem tárol eszközazonosítót (a korábbiak törlődtek). A „Törlés a
+  készülékről is” az értesítések jelzéseit is törli (bennük a részvényeid tickerei). A hibajelentések, a napi
+  felhasználók és a lejárt megosztások a megőrzési idő végén akkor is törlődnek, ha nem érkezik új adat. Éles
+  módban levélküldő nélkül a belépőkód és a cím nem kerül a szerver naplójába; a megosztott oldalak nem kerülnek a
+  keresők indexébe. Az Apple adatvédelmi manifest és a Play-adatlap leírása a szinkronizált tartalommal, a
+  portfólióval és az elemzések naplójával bővült.
 
 ## Böngészős változat: a harminchetedik kódátnézés javításai
 

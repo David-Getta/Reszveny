@@ -84,6 +84,10 @@ class ShareStore {
     return id;
   }
 
+  /// A megőrzési időn túli linkek (és képeik) törlése; a szerver naponta futtatja.
+  void purgeExpired() =>
+      _db.execute('DELETE FROM shares WHERE created_at < ?', [clock().toUtc().subtract(keep).toIso8601String()]);
+
   /// A link adatai (és a megtekintés számlálása, ha [countView]).
   SharedReport? find(String id, {bool countView = false}) {
     final rows = _db.select(

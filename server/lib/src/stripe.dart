@@ -114,6 +114,19 @@ class StripeClient {
     }
   }
 
+  /// A Stripe-ügyfél törlése (fióktörléskor: az e-mail-cím és a fiókazonosító ne
+  /// maradjon a fizetési szolgáltatónál; a kiállított számlák a Stripe-nál megmaradnak).
+  Future<void> deleteCustomer(String customerId) async {
+    final res = await _client.delete(
+      Uri.parse('$apiBase/customers/$customerId'),
+      headers: {'authorization': 'Bearer $secretKey'},
+    );
+    if (res.statusCode >= 300 && res.statusCode != 404) {
+      final body = jsonDecode(res.body) as Map<String, dynamic>;
+      throw StripeException((body['error'] as Map?)?['message'] as String? ?? 'stripe ${res.statusCode}');
+    }
+  }
+
   /// `Stripe-Signature: t=…,v1=…` ellenőrzése (HMAC-SHA256, 5 perces tűréssel).
   bool verifySignature(String payload, String? header, {DateTime? now}) {
     if (header == null || webhookSecret.isEmpty) return false;

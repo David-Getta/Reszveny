@@ -190,17 +190,34 @@ class AlertWatcher {
 
   /// A sorban álló levelek küldése (az előző körök sikertelenjei is); sikeres küldés
   /// után törlődnek, hiba esetén a következő kör újra próbálja. Az elküldöttek száma.
+  /// Be van-e kapcsolva a fiók e-mailes riasztása (a szinkronizált beállítás szerint).
+  bool _emailAlertsOn(String userId) {
+    final row = store.syncData(userId);
+    if (row == null) return true;
+    try {
+      final data = jsonDecode(row.data);
+      return !(data is Map && data['email_alerts'] == false);
+    } catch (_) {
+      return true;
+    }
+  }
+
   Future<int> _sendQueued() async {
     var sent = 0;
     // A sor időbélyegei az adatbázis órájával készülnek.
     final now = store.clock().toUtc();
     for (final (i, m) in store.pendingAlertMails().indexed) {
+      if (i > 0 && sendPause > Duration.zero) await Future<void>.delayed(sendPause);
+      // A szünet után olvasva: a közben törölt fiók vagy a közben kikapcsolt (leiratkozott)
+      // e-mailes riasztás levele már nem megy ki.
       final email = store.emailOf(m.userId);
-      if (email == null || m.attempts >= maxMailAttempts || now.difference(m.createdAt) > mailExpiry) {
+      if (email == null ||
+          !_emailAlertsOn(m.userId) ||
+          m.attempts >= maxMailAttempts ||
+          now.difference(m.createdAt) > mailExpiry) {
         store.deleteAlertMail(m.id);
         continue;
       }
-      if (i > 0 && sendPause > Duration.zero) await Future<void>.delayed(sendPause);
       final unsubscribe = unsubscribeBase == null
           ? null
           : '$unsubscribeBase/${store.unsubscribeToken(m.userId)}?kind=alerts';

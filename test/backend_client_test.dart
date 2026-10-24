@@ -53,7 +53,8 @@ void main() {
       final client = MockClient((req) async {
         calls.add('${req.method} ${req.url.path} ${req.headers['authorization'] ?? '-'}');
         if (req.url.path == '/v1/auth/anonymous') {
-          expect(jsonDecode(req.body)['device_id'], isNotEmpty);
+          // Eszközazonosító nélkül (nem gyűjtünk ilyet).
+          expect((jsonDecode(req.body) as Map).containsKey('device_id'), isFalse);
           return _json({'user_id': 'u1', 'token': 'tok1', 'entitlements': _ent()});
         }
         if (req.url.path == '/v1/me') return _json({'entitlements': _ent(used: 2)});

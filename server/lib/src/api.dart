@@ -408,15 +408,16 @@ class Api {
   Future<Response> _auth(Request r) async {
     final ip = _clientIp(r);
     if (ip != null && !_signups.allow(_ipKey(ip))) return _error(429, 'rate_limited');
-    final body = await _body(r);
+    // A törzs (egy régebbi app eszközazonosítója) nem kell; a beolvasás után nézzük a keretet.
+    await _body(r);
     final invite = _invite(r);
     // A meghívó eszközkerete a törzs beolvasása után újra: a párhuzamos regisztrációk
     // a kapunál mind átmentek volna (a számláló csak itt nő).
     if (invite != null && store.inviteDeviceCount(invite.code) >= invite.maxDevices) {
       return _error(403, 'invite_device_limit');
     }
-    final device = body['device_id'];
-    final (id, token) = store.createAnonymousUser(device is String && device.length <= 128 ? device : null);
+    // Eszközazonosítót nem tárolunk (egy régebbi app küldheti: figyelmen kívül marad).
+    final (id, token) = store.createAnonymousUser(null);
     _limitTrial(r, id);
     if (invite != null) store.addInviteDevice(invite.code, id);
     return _json({
@@ -464,11 +465,12 @@ class Api {
 
   /// Próbaidő-visszaélés ellen: ha erről a címről ma már [trialPerIpPerDay]
   /// próbaidő indult, az új fiók próbaidő nélkül marad. A címet csak hash-elve,
-  /// két napig tároljuk.
+  /// két napig tároljuk (kulcsolt ujjlenyomatként).
   void _limitTrial(Request r, String userId) {
     final ip = _clientIp(r);
     if (trialPerIpPerDay <= 0 || ip == null) return;
-    final hash = Store.hashToken('trial:$ip');
+    // Kulcsolt ujjlenyomat: a cím a szerver titka nélkül nem fejthető vissza.
+    final hash = store.keyedHash('trial:$ip');
     if (store.trialGrantsSince(hash, store.clock().subtract(const Duration(days: 1))) >= trialPerIpPerDay) {
       final e = store.entitlement(userId);
       store.save(
@@ -653,13 +655,22 @@ class Api {
     if (png) {
       final img = shares.image(key);
       if (img == null) return Response.notFound('not found');
-      return Response.ok(img, headers: {'content-type': 'image/png', 'cache-control': 'public, max-age=86400'});
+      // A megosztott oldal és kép nem kerül a keresők indexébe (a közösségi előnézet működik):
+      // egy törölt fiók megosztása se maradjon kereshető.
+      return Response.ok(
+        img,
+        headers: {'content-type': 'image/png', 'cache-control': 'public, max-age=86400', 'x-robots-tag': 'noindex'},
+      );
     }
     final s = shares.find(key, countView: true);
     if (s == null) return _html(shareMissingPage(), status: 404);
     return Response.ok(
       sharePage(s, publicUrl: publicUrl),
-      headers: {'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300'},
+      headers: {
+        'content-type': 'text/html; charset=utf-8',
+        'cache-control': 'public, max-age=300',
+        'x-robots-tag': 'noindex',
+      },
     );
   }
 
@@ -1149,6 +1160,8 @@ class Api {
         }
       } catch (_) {}
     }
+    // A már sorban álló (pl. egy szolgáltatói hiba miatt újrapróbálandó) riasztó levelek sem mennek ki.
+    if (alerts) store.deleteAlertMailsOf(uid);
     return _html(unsubscribePage(done: true, known: true, alerts: alerts));
   }
 
@@ -1253,6 +1266,17 @@ class Api {
   /// sikerül, nem törlünk, különben a kártyát tovább terhelnénk fiók nélkül –,
   /// majd minden szerveren tárolt adat törlése. A bolti előfizetést a felhasználó
   /// a boltban mondja le (az app ezt meg is mondja).
+  /// Karbantartás (induláskor és naponta): a megőrzési időn túli telemetria-sorok,
+  /// hibajelentések és megosztott linkek törlése akkor is, ha nem érkezik új adat.
+  void housekeeping() {
+    try {
+      telemetry.purgeExpired();
+      shares.purgeExpired();
+    } catch (e) {
+      stderr.writeln('Karbantartás nem sikerült: $e');
+    }
+  }
+
   Future<Response> _deleteAccount(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
@@ -1265,6 +1289,15 @@ class Api {
         cancelled = true;
       } catch (e) {
         return _error(502, 'stripe_cancel_failed', '$e');
+      }
+    }
+    // A fizetési szolgáltatónál tárolt ügyfél (e-mail, fiókazonosító) is törlődik; ha ez
+    // most nem sikerül, a fiók törlése akkor is megtörténik (naplózva, kézzel pótolható).
+    if (store.stripeOf(uid).customerId case final customer? when s != null) {
+      try {
+        await s.deleteCustomer(customer);
+      } on Exception catch (e) {
+        stderr.writeln('Stripe-ügyfél nem törölhető ($customer): $e');
       }
     }
     shares.deleteUser(uid);

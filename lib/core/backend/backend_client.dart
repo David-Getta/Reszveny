@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
@@ -101,6 +102,8 @@ class BackendClient {
       _tokenLoader = tokenLoader ?? (() => _readStored(_tokenKey));
 
   static const _tokenKey = 'backend_token';
+
+  /// Egy régebbi változat eszközazonosítója (már nem küldjük; induláskor törlődik).
   static const _deviceKey = 'backend_device_id';
   static const _inviteKey = 'backend_invite';
   static const inviteHeader = 'x-whatstock-invite';
@@ -179,12 +182,14 @@ class BackendClient {
   Future<String> _obtainToken() async {
     final stored = _storedRejected ? null : await _tokenLoader();
     if (stored != null && stored.isNotEmpty) return _token = stored;
-    final deviceId = await _deviceId();
+    // Eszközazonosító nélkül (nem gyűjtünk ilyet); egy régebbi változat tárolt
+    // azonosítója törlődik.
+    unawaited(_removeStored(_deviceKey));
     final res = await _inner
         .post(
           Uri.parse('$baseUrl/v1/auth/anonymous'),
           headers: const {'content-type': 'application/json'},
-          body: jsonEncode({'device_id': deviceId}),
+          body: jsonEncode(const <String, Object>{}),
         )
         .timeout(const Duration(seconds: 20));
     final body = _decode(res);
@@ -424,12 +429,10 @@ class BackendClient {
     }
   }
 
-  Future<String> _deviceId() async {
-    final stored = await _readStored(_deviceKey);
-    if (stored != null && stored.isNotEmpty) return stored;
-    final id = 'd_${DateTime.now().microsecondsSinceEpoch.toRadixString(36)}_${_token.hashCode.toRadixString(36)}';
-    await _writeStored(_deviceKey, id);
-    return id;
+  static Future<void> _removeStored(String key) async {
+    try {
+      await (await SharedPreferences.getInstance()).remove(key);
+    } catch (_) {}
   }
 
   static Future<String?> _readStored(String key) async {

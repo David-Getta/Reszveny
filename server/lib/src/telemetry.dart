@@ -198,6 +198,10 @@ class TelemetryStore {
     }
   }
 
+  /// A megőrzési időn túli sorok törlése (a szerver naponta futtatja: új adat nélkül
+  /// sem maradnak meg a hibajelentések és a napi felhasználók tovább a vállaltnál).
+  void purgeExpired() => _purge(clock().toUtc());
+
   void _purge(DateTime now) {
     _db.execute('DELETE FROM event_counts WHERE day < ?', [_day(now.subtract(keepCounts))]);
     _db.execute('DELETE FROM daily_users WHERE day < ?', [_day(now.subtract(keepUsers))]);

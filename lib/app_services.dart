@@ -420,6 +420,12 @@ class AppServices {
     'news_explanations',
     'earnings_summaries',
     'instrument_notes',
+    // Az értesítések jelzései (bennük a portfólió és a kedvencek tickerei).
+    'earnings_reminded',
+    'earnings_known_period',
+    'signals_notified',
+    // Egy régebbi változat eszközazonosítója.
+    'backend_device_id',
   ];
 
   /// Fiók törlése a szerveren, és ha kérik, a készüléken tárolt személyes adatoké
