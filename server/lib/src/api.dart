@@ -1430,8 +1430,12 @@ class Api {
     if (store.userIdForEmail(email) != null &&
         store.recentCodeCount(email, within: const Duration(days: 1)) < codesPerAddressPerDay) {
       final code = store.createLoginCode(email);
+      // Saját levél (nem a belépőkódé): a címzett tudja, hogy törlést kértek, és mit
+      // tegyen, ha nem ő volt.
       unawaited(
-        mailer.sendLoginCode(email, code).catchError((Object e) => stderr.writeln('Fióktörlési kód nem ment ki: $e')),
+        mailer
+            .send(email, subject: 'WhatStock: fiók törlése · account deletion ($code)', text: deletionCodeMail(code))
+            .catchError((Object e) => stderr.writeln('Fióktörlési kód nem ment ki: $e')),
       );
     }
     return page(AccountDeleteStep.code);

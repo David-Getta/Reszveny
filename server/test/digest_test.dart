@@ -89,11 +89,11 @@ void main() {
     expect(mail.subject, 'WhatStock heti összefoglaló: NVDA +6,1%');
     expect(
       mail.text,
-      contains('Portfólió\n  NVDA   182.10 USD   +6,1%\n  AAPL   231.45 USD   −1,2%\n  OTP    31250.00 HUF\n'),
+      contains('Portfólió\n  NVDA   182,10 USD   +6,1%\n  AAPL   231,45 USD   −1,2%\n  OTP    31250,00 HUF\n'),
     );
-    expect(mail.text, contains('Kedvencek\n  MSFT   430.10 USD   +0,4%\n'));
+    expect(mail.text, contains('Kedvencek\n  MSFT   430,10 USD   +0,4%\n'));
     expect(mail.text, contains('Gyorsjelentés a következő két hétben:\n  MSFT – okt. 28.'));
-    expect(mail.text, contains('Friss gyorsjelentések:\n  AAPL – EPS 1.15 (várt 1.12, +2,7%) – a várt felett'));
+    expect(mail.text, contains('Friss gyorsjelentések:\n  AAPL – EPS 1,15 (várt 1,12, +2,7%) – a várt felett'));
     expect(mail.text, contains('a heti adat nem volt elérhető'));
     expect(asked.toSet(), {'AAPL', 'NVDA', 'OTP', 'MSFT'});
     // Hír csak a heti változással rendelkező, legnagyobb mozgásokhoz (az OTP-nek nincs).
@@ -281,7 +281,7 @@ void main() {
       hu: true,
       yearToDate: {'USD': 3.33},
     );
-    expect(quiet, contains('Kapott osztalékok idén eddig: 3.33 USD'));
+    expect(quiet, contains('Kapott osztalékok idén eddig: 3,33 USD'));
     expect(quiet, isNot(contains('Kapott osztalékok a héten')));
     expect(ytd['USD'], closeTo(3.33, 1e-9));
     expect(ytd['HUF'], 24000);

@@ -73,8 +73,8 @@ void main() {
     final mail = mailer.messages.single;
     expect(mail.to, 'dave@example.com');
     expect(mail.subject, 'WhatStock: 2 riasztás teljesült');
-    expect(mail.text, contains('AAPL: 251.20 USD – a 250 USD szint fölé ment.'));
-    expect(mail.text, contains('NVDA: -6.20% ma'));
+    expect(mail.text, contains('AAPL: 251,20 USD – a 250 USD szint fölé ment.'));
+    expect(mail.text, contains('NVDA: -6,2% ma'));
     expect(mail.text, isNot(contains('MSFT')));
 
     final saved = (jsonDecode(store.syncData(dave)!.data) as Map)['alerts'] as List;

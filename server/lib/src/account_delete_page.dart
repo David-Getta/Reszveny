@@ -61,6 +61,14 @@ const _texts = {
   },
 };
 
+/// A törlés megerősítő kódjának levele (magyarul és angolul, mint a belépőkódé).
+String deletionCodeMail(String code) =>
+    'Valaki – remélhetőleg te – a WhatStock-fiókod törlését kérte. A megerősítő kód: $code\n'
+    'Ha nem te kérted, hagyd figyelmen kívül ezt a levelet: a fiókod megmarad.\n\n'
+    'Someone – hopefully you – asked to delete your WhatStock account. Confirmation code: $code\n'
+    "If this wasn't you, ignore this email: your account stays.\n\n"
+    'A kód 10 percig érvényes. / The code is valid for 10 minutes.';
+
 /// A [lang] nyelvű (`hu` vagy `en`) oldal; [error] egy szövegkulcs a hibához.
 String accountDeletePage({required String lang, required AccountDeleteStep step, String email = '', String? error}) {
   final t = _texts[lang] ?? _texts['en']!;

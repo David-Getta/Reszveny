@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.302)
+# Változásjegyzék (0.2.130 → 0.2.303)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,20 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Levelek: az ötvenedik kódátnézés javításai
+
+- **0.2.303**: egy rövid levelezőkimaradás nem nyeli el a riasztást: a levél egy napig újrapróbálva kimegy
+  (eddig öt sikertelen kör, kb. 40 perc után elmaradt, nyom nélkül). A levelező keretének betelte (429) után a
+  kör megáll, és a levelek nem veszítenek próbát; a végleg elmaradó levél a naplóba kerül.
+- Egy levél sem megy ki kétszer akkor sem, ha a levelező csak az időtúllépés után válaszolt (azonosító kulcs a
+  riasztás- és a heti levélhez). A heti összefoglaló a levelek között szünetet tart, így nem teríti be a
+  levelező keretét (a közben kért belépőkód és riasztás nem akad el); egy 429-et a küldő egyszer újrapróbál.
+- A heti összefoglalóban egy veszteséges cég a vártnál kisebb vesztesége pozitív meglepetés (eddig fordított
+  előjellel). Számok: a riasztás százalékai természetesen (0,5%, nem 0,5000%), az EPS két tizedessel, a magyar
+  levelekben mindenhol tizedesvessző. A belépőkód tárgya kétnyelvű; a tárgyba nem kerülhet sortörés.
+- Böngészős fióktörlés: saját, törlésről szóló levél (mit tegyen, ha nem ő kérte), nem a belépőkódé.
+- Függőségek: biztonsági és javítókiadások (crypto, sqlite3, in_app_purchase_storekit, shared_preferences stb.).
 
 ## Fióktörlés és AI-hozzájárulás: a negyvenkilencedik kódátnézés javításai
 

@@ -181,8 +181,9 @@ void main() {
     // Más kulcs (más negyedév vagy nyelv): új kérés.
     await post('/v1/ask', {...req, 'shared_cache': 'earnings|AAPL|2026-09-30|English'}, token: t1);
     expect(upstream, hasLength(2));
-    // 30 nap után lejár.
-    store.clock = () => DateTime.utc(2026, 12, 1);
+    // 30 nap után lejár (a mai naphoz képest: a teszt ne avuljon el a naptárral).
+    final later = DateTime.now().toUtc().add(const Duration(days: 31));
+    store.clock = () => later;
     await post('/v1/ask', req, token: t1);
     expect(upstream, hasLength(3));
     // Szabálytalan kulcs figyelmen kívül; eszköz nélküli (próbaidős) válasz nem kerül a tárba.

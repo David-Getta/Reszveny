@@ -20,12 +20,18 @@ class _FlakyMailer extends ConsoleMailer {
   int failures;
 
   @override
-  Future<void> send(String email, {required String subject, required String text, Map<String, String>? headers}) {
+  Future<void> send(
+    String email, {
+    required String subject,
+    required String text,
+    Map<String, String>? headers,
+    String? idempotencyKey,
+  }) {
     if (failures > 0) {
       failures--;
-      throw const HttpException('Resend 429');
+      throw const HttpException('Resend 500');
     }
-    return super.send(email, subject: subject, text: text, headers: headers);
+    return super.send(email, subject: subject, text: text, headers: headers, idempotencyKey: idempotencyKey);
   }
 }
 

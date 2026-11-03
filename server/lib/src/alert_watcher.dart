@@ -36,8 +36,10 @@ class AlertWatcher {
   /// A leiratkozó linkek alapcíme (`…/u`); nélküle nincs `List-Unsubscribe`.
   final String? unsubscribeBase;
 
-  /// Egy sorban álló levél ennyi sikertelen próba vagy ennyi idő után elmarad.
-  static const maxMailAttempts = 5;
+  /// Egy sorban álló levél ennyi idő (vagy – végső biztosítékként – ennyi sikertelen kör)
+  /// után elmarad: egy rövid levelezőkimaradás ne nyelje el a riasztást (10 perces körökkel
+  /// egy nap 144 próba).
+  static const maxMailAttempts = 200;
   static const mailExpiry = Duration(days: 1);
 
   /// Egy körben legfeljebb ennyi részvény árát kérdezzük le (a piaci API kerete miatt);
@@ -211,10 +213,14 @@ class AlertWatcher {
       // A szünet után olvasva: a közben törölt fiók vagy a közben kikapcsolt (leiratkozott)
       // e-mailes riasztás levele már nem megy ki.
       final email = store.emailOf(m.userId);
-      if (email == null ||
-          !_emailAlertsOn(m.userId) ||
-          m.attempts >= maxMailAttempts ||
-          now.difference(m.createdAt) > mailExpiry) {
+      if (email == null || !_emailAlertsOn(m.userId)) {
+        store.deleteAlertMail(m.id);
+        continue;
+      }
+      if (m.attempts >= maxMailAttempts || now.difference(m.createdAt) > mailExpiry) {
+        stderr.writeln(
+          'Riasztás-e-mail elmaradt (${m.attempts} sikertelen próba, ${m.createdAt.toIso8601String()} óta)',
+        );
         store.deleteAlertMail(m.id);
         continue;
       }
@@ -229,9 +235,15 @@ class AlertWatcher {
           headers: unsubscribe == null
               ? null
               : {'List-Unsubscribe': '<$unsubscribe>', 'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click'},
+          // Egy időtúllépés után (amikor a levelező mégis elküldte) se menjen ki kétszer.
+          idempotencyKey: 'alert-${m.id}-${m.createdAt.millisecondsSinceEpoch}',
         );
         store.deleteAlertMail(m.id);
         sent++;
+      } on MailRateLimited {
+        // A levelező kerete betelt: a kör itt megáll, a levél nem veszít próbát.
+        stderr.writeln('Riasztás-e-mailek: a levelező kerete betelt, a következő körben folytatjuk');
+        break;
       } catch (e) {
         store.failedAlertMail(m.id);
         stderr.writeln('Riasztás-e-mail nem ment ki (újrapróbáljuk): $e');
@@ -240,30 +252,45 @@ class AlertWatcher {
     return sent;
   }
 
-  static String _n(Object? v) {
+  /// Ár: két tizedes, 1 alatt legfeljebb négy (a fölösleges nullák nélkül); magyarul
+  /// tizedesvesszővel.
+  static String _n(Object? v, {required bool hu}) {
     if (v is! num) return '$v';
     final d = v.toDouble();
-    return d == d.roundToDouble() ? d.toStringAsFixed(0) : d.toStringAsFixed(d.abs() < 1 ? 4 : 2);
+    var s = d == d.roundToDouble() ? d.toStringAsFixed(0) : d.toStringAsFixed(d.abs() < 1 ? 4 : 2);
+    while (s.contains('.') && s.endsWith('0') && s.indexOf('.') < s.length - 3) {
+      s = s.substring(0, s.length - 1);
+    }
+    return hu ? s.replaceAll('.', ',') : s;
+  }
+
+  /// Százalék: legfeljebb két tizedes, a fölösleges nullák nélkül (0.5%, nem 0.5000%).
+  static String _p(Object? v, {required bool hu}) {
+    if (v is! num) return '$v';
+    final s = v.toDouble().toStringAsFixed(2).replaceFirst(RegExp(r'\.?0+$'), '');
+    return hu ? s.replaceAll('.', ',') : s;
   }
 
   /// Az e-mail tárgya és szövege (magyarul vagy angolul).
   static (String, String) alertEmail(List<Map> hits, {required bool hu}) {
     String line(Map a) {
       final s = a['symbol'], ccy = a['currency'] == null ? '' : ' ${a['currency']}';
-      final price = '${_n(a['triggered_price'])}$ccy';
+      final price = '${_n(a['triggered_price'], hu: hu)}$ccy';
       final change = a['triggered_change'] is num
-          ? '${(a['triggered_change'] as num) > 0 ? '+' : ''}${_n(a['triggered_change'])}%'
+          ? '${(a['triggered_change'] as num) > 0 ? '+' : ''}${_p(a['triggered_change'], hu: hu)}%'
           : '';
       return switch ((a['kind'], hu)) {
-        ('above', true) => '$s: $price – a ${_n(a['value'])}$ccy szint fölé ment.',
-        ('below', true) => '$s: $price – a ${_n(a['value'])}$ccy szint alá esett.',
-        ('move', true) => '$s: $change ma (a riasztás ${_n(a['value'])}% mozgásra szólt), ár: $price.',
-        ('trailing', true) => '$s: $price – ${_n(a['value'])}%-ot esett a ${_n(a['peak'])}$ccy csúcsról.',
-        ('trailing', false) => '$s: $price – fell ${_n(a['value'])}% from its ${_n(a['peak'])}$ccy peak.',
-        ('above', false) => '$s: $price – rose above ${_n(a['value'])}$ccy.',
-        ('below', false) => '$s: $price – fell below ${_n(a['value'])}$ccy.',
+        ('above', true) => '$s: $price – a ${_n(a['value'], hu: hu)}$ccy szint fölé ment.',
+        ('below', true) => '$s: $price – a ${_n(a['value'], hu: hu)}$ccy szint alá esett.',
+        ('move', true) => '$s: $change ma (a riasztás ${_p(a['value'], hu: hu)}% mozgásra szólt), ár: $price.',
+        ('trailing', true) =>
+          '$s: $price – ${_p(a['value'], hu: hu)}%-ot esett a ${_n(a['peak'], hu: hu)}$ccy csúcsról.',
+        ('trailing', false) =>
+          '$s: $price – fell ${_p(a['value'], hu: hu)}% from its ${_n(a['peak'], hu: hu)}$ccy peak.',
+        ('above', false) => '$s: $price – rose above ${_n(a['value'], hu: hu)}$ccy.',
+        ('below', false) => '$s: $price – fell below ${_n(a['value'], hu: hu)}$ccy.',
         (_, true) => '$s: $price.',
-        _ => '$s: $change today (your alert was set for a ${_n(a['value'])}% move), price: $price.',
+        _ => '$s: $change today (your alert was set for a ${_p(a['value'], hu: hu)}% move), price: $price.',
       };
     }
 

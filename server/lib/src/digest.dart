@@ -35,6 +35,7 @@ class DigestSender {
     this.headline,
     this.results,
     this.pause = Duration.zero,
+    this.sendPause = const Duration(milliseconds: 600),
     this.unsubscribeBase,
     DateTime Function()? clock,
   }) : _clock = clock ?? DateTime.now;
@@ -60,6 +61,10 @@ class DigestSender {
 
   /// Szünet két piaci lekérdezés között (az ingyenes API-keretek miatt).
   final Duration pause;
+
+  /// Szünet két levél között: a levelező másodpercenkénti kerete (Resend: 2/s) ne teljen
+  /// be (különben a közben kért belépőkódok és riasztások is elakadnának).
+  final Duration sendPause;
   final DateTime Function() _clock;
 
   /// Fiókonként legfeljebb ennyi részvény kerül a levélbe.
@@ -362,6 +367,7 @@ class DigestSender {
       }
 
       var sent = 0;
+      var mailed = false;
       for (final acc in accounts) {
         final s = symbolsOf(acc.data);
         final movers = [
@@ -417,6 +423,8 @@ class DigestSender {
             expected: expectedDividendsOf(data, now: now),
             unsubscribeUrl: unsubscribe,
           );
+          if (mailed && sendPause > Duration.zero) await Future<void>.delayed(sendPause);
+          mailed = true;
           await mailer.send(
             email,
             subject: subject,
@@ -424,9 +432,14 @@ class DigestSender {
             headers: unsubscribe == null
                 ? null
                 : {'List-Unsubscribe': '<$unsubscribe>', 'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click'},
+            // Hetente egy: egy időtúllépés utáni újabb kör se küldje el kétszer.
+            idempotencyKey: 'digest-${acc.userId}-${now.toUtc().toIso8601String().substring(0, 10)}',
           );
           store.markDigest(acc.userId);
           sent++;
+        } on MailRateLimited {
+          stderr.writeln('Heti összefoglaló: a levelező kerete betelt, a következő körben folytatjuk');
+          break;
         } catch (e) {
           stderr.writeln('Heti összefoglaló nem ment ki: $e');
         }
@@ -437,7 +450,15 @@ class DigestSender {
     }
   }
 
-  static String _n(double v) => v.toStringAsFixed(v.abs() < 1 ? 4 : 2);
+  /// Ár, összeg, EPS: két tizedes; 1 alatt legfeljebb négy (a fölösleges nullák nélkül,
+  /// pl. EPS 0.15); magyarul tizedesvesszővel (mint a százalékok).
+  static String _n(double v, {required bool hu}) {
+    var s = v.toStringAsFixed(v.abs() < 1 ? 4 : 2);
+    while (s.endsWith('0') && s.indexOf('.') < s.length - 3) {
+      s = s.substring(0, s.length - 1);
+    }
+    return hu ? s.replaceAll('.', ',') : s;
+  }
 
   static String _pct(double v, {required bool hu}) {
     final s = '${v > 0 ? '+' : (v < 0 ? '−' : '')}${v.abs().toStringAsFixed(1)}%';
@@ -490,7 +511,7 @@ class DigestSender {
               : 'WhatStock weekly summary: ${top.symbol} ${_pct(top.weekChange!, hu: false)}');
     final width = all.map((l) => l.symbol.length).fold(4, (a, b) => a > b ? a : b);
     String line(DigestLine l) {
-      final price = '${_n(l.price)}${l.currency == null ? '' : ' ${l.currency}'}';
+      final price = '${_n(l.price, hu: hu)}${l.currency == null ? '' : ' ${l.currency}'}';
       final change = l.weekChange == null ? '' : '   ${_pct(l.weekChange!, hu: hu)}';
       return '  ${l.symbol.padRight(width)}   $price$change';
     }
@@ -541,14 +562,14 @@ class DigestSender {
     if (dividends.isNotEmpty) {
       b.writeln(hu ? 'Kapott osztalékok a héten:' : 'Dividends received this week:');
       for (final d in dividends) {
-        b.writeln('  ${d.symbol} – ${_n(d.amount)} ${d.currency} (${_date(d.date, hu: hu)})');
+        b.writeln('  ${d.symbol} – ${_n(d.amount, hu: hu)} ${d.currency} (${_date(d.date, hu: hu)})');
       }
       b.writeln();
     }
     // Az idei összesítés pénznemenként (átváltás nélkül – a szerver nem ismer árfolyamot),
     // akkor is, ha ezen a héten nem jött osztalék.
     if (yearToDate.isNotEmpty) {
-      final parts = [for (final e in yearToDate.entries) '${_n(e.value)} ${e.key}'];
+      final parts = [for (final e in yearToDate.entries) '${_n(e.value, hu: hu)} ${e.key}'];
       b.writeln('${hu ? 'Kapott osztalékok idén eddig' : 'Dividends received this year so far'}: ${parts.join(', ')}');
       b.writeln();
     }
@@ -560,7 +581,7 @@ class DigestSender {
             : 'Dividends expected in the next two weeks (from your recorded payments):',
       );
       for (final d in expected) {
-        b.writeln('  ${d.symbol} – ~${_n(d.amount)} ${d.currency} (${_date(d.date, hu: hu)})');
+        b.writeln('  ${d.symbol} – ~${_n(d.amount, hu: hu)} ${d.currency} (${_date(d.date, hu: hu)})');
       }
       b.writeln();
     }
@@ -571,10 +592,12 @@ class DigestSender {
       b.writeln(hu ? 'Friss gyorsjelentések:' : 'Fresh quarterly results:');
       for (final l in reported) {
         final r = l.result!;
-        final surprise = r.estimate == 0 ? null : (r.actual / r.estimate - 1) * 100;
+        // A várt érték abszolút értékéhez mérve: veszteséges cégnél (negatív várakozás) is a
+        // jobb eredmény a pozitív meglepetés (mint az appban).
+        final surprise = r.estimate == 0 ? null : (r.actual - r.estimate) / r.estimate.abs() * 100;
         final beat = r.actual >= r.estimate;
         b.writeln(
-          '  ${l.symbol} – EPS ${_n(r.actual)} (${hu ? 'várt' : 'expected'} ${_n(r.estimate)}'
+          '  ${l.symbol} – EPS ${_n(r.actual, hu: hu)} (${hu ? 'várt' : 'expected'} ${_n(r.estimate, hu: hu)}'
           '${surprise == null ? '' : ', ${_pct(surprise, hu: hu)}'}) – '
           '${beat ? (hu ? 'a várt felett' : 'above expectations') : (hu ? 'a várt alatt' : 'below expectations')}',
         );

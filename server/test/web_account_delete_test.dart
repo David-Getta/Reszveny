@@ -72,10 +72,17 @@ void main() {
     final unknown = await request('POST', '/account/delete?lang=en', form: 'step=start&email=nobody%40x.io');
     expect((unknown.status, unknown.body.contains('name="code"')), (200, true));
     expect(mailer.sent, isEmpty);
+    expect(mailer.messages, isEmpty);
 
     final sent = await request('POST', '/account/delete?lang=en', form: 'step=start&email=del%40x.io');
     expect(sent.body, contains('name="code"'));
-    final code = mailer.sent['del@x.io']!;
+    // Saját, törlésről szóló levél megy ki (nem a belépőkódé).
+    await Future<void>.delayed(Duration.zero);
+    final mail = mailer.messages.single;
+    expect(mail.to, 'del@x.io');
+    expect(mail.text, contains('delete your WhatStock account'));
+    expect(mailer.sent, isEmpty);
+    final code = RegExp(r'Confirmation code: (\d+)').firstMatch(mail.text)!.group(1)!;
 
     final wrong = await request('POST', '/account/delete?lang=en', form: 'step=confirm&email=del%40x.io&code=000000x');
     expect(wrong.status, 401);
