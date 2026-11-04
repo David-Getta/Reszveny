@@ -391,12 +391,12 @@
   "searchAnalyses": "Sesha kuhlaziyo lwakho",
   "deleteAnalysis": "Susa",
   "analysisDeleted": "Uhlaziyo lwe-{symbol} lususiwe",
-  "keyLevelAlertHint": "Thepha izinga ukuze uthole isexwayiso uma intengo ifinyelela kulo.",
+  "keyLevelAlertHint": "Thepha izinga elilinganiselwe yi-AI ukuze uthole isexwayiso uma intengo ifinyelela kulo.",
   "shareAnalysisTitle": "Yabelana ngohlaziyo",
   "shareAsImage": "Yabelana njengesithombe",
   "shareAsText": "Yabelana njengombhalo",
   "shareCardFooter": "Kwenziwe nge-WhatStock",
-  "shareCardDisclaimer": "Uhlaziyo lwe-AI · aluyona iseluleko sokutshala imali",
+  "shareCardDisclaimer": "Uhlaziyo lwe-AI · izimo eziyisibonelo, hhayi izibikezelo · aluyona iseluleko sokutshala imali",
   "referralTitle": "Mema abangane",
   "referralBody": "Yabelana ngekhodi yakho. Umngane wakho uthola {count, plural, =1{uhlaziyo olwengeziwe olungu-{count}} other{izinhlaziyo ezengeziwe ezingu-{count}}} ngokushesha, nawe uthola okufanayo ngemuva kohlaziyo lwakhe lokuqala.",
   "referralYourCode": "Ikhodi yakho",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Thatha isithombe sesheya",
   "onboardBody1": "Isikrini se-app yomthengisi wamasheya, iphephandaba noma ilogo yenkampani kwanele: I-WhatStock iyalibona isheya bese ikukhombisa intengo yalo, ishadi nezibalo ezibalulekile.",
   "onboardTitle2": "Liqonde ngemizuzu embalwa",
-  "onboardBody2": "Uhlaziyo lwe-AI luchaza okunyakazisa isheya, izingozi, ukubaluleka kwalo kanye nezimo ezintathu zokuthi intengo ingaya kuphi – kanye nemithombo nangolimi lwakho.",
+  "onboardBody2": "Uhlaziyo lwe-AI luchaza okunyakazisa isheya, izingozi, ukubaluleka kwalo kanye nezimo ezintathu eziyisibonelo zokuthi intengo inganyakaza kanjani – kanye nemithombo nangolimi lwakho.",
   "onboardTitle3": "Hlala wazi konke",
   "onboardBody3": "Izintandokazi, iphothifoliyo yakho nezexwayiso zentengo zikwazisa njalo ngokwenzekayo. Uhlaziyo lwakho luhlala kudivayisi yakho, lulungele ukuvulwa futhi.",
   "onboardNext": "Okulandelayo",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Yini engalungile? (akuphoqelekile)",
   "aiReportPrivacy": "Sithola umbhalo wale mpendulo kanye nenothi lakho — ngaphandle kwe-akhawunti yakho — ukuze siwubuyekeze.",
   "aiReportSend": "Thumela umbiko",
-  "aiReportThanks": "Siyabonga — sizowubuyekeza."
+  "aiReportThanks": "Siyabonga — sizowubuyekeza.",
+  "aiPortfolioDisclaimer": "Ulwazi olujwayelekile olwenziwe yi-AI mayelana nokwakheka kwephothifoliyo yakho. Alubheki izinhloso zakho, isimo sakho sezimali noma isimo sakho sentela, futhi aluyona isincomo esiqondene nawe noma iseluleko sokutshala imali.",
+  "briefNotificationTitle": "Isifinyezo se-AI · Namuhla namasheya akho"
 }

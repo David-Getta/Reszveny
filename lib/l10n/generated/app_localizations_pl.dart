@@ -1479,7 +1479,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Dotknij poziomu, aby dostać alert, gdy cena go osiągnie.';
+      'Dotknij poziomu oszacowanego przez AI, aby dostać alert, gdy cena go osiągnie.';
 
   @override
   String get shareAnalysisTitle => 'Udostępnij analizę';
@@ -1495,7 +1495,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Analiza AI · nie stanowi porady inwestycyjnej';
+      'Analiza AI · scenariusze poglądowe, nie prognozy · nie stanowi porady inwestycyjnej';
 
   @override
   String get referralTitle => 'Zaproś znajomych';
@@ -1579,7 +1579,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Analiza AI wyjaśnia, co porusza kursem akcji, jakie są ryzyka i jak wygląda wycena, oraz przedstawia trzy scenariusze, dokąd może zmierzać cena – ze źródłami i w Twoim języku.';
+      'Analiza AI wyjaśnia, co porusza kursem akcji, jakie są ryzyka i jak wygląda wycena, oraz przedstawia trzy poglądowe scenariusze tego, jak może zmieniać się cena – ze źródłami i w Twoim języku.';
 
   @override
   String get onboardTitle3 => 'Bądź na bieżąco';
@@ -3077,6 +3077,14 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Dziękujemy — sprawdzimy to.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Wygenerowane przez AI ogólne informacje o składzie Twojego portfela. Nie uwzględniają Twoich celów, sytuacji finansowej ani podatkowej i nie stanowią osobistej rekomendacji ani porady inwestycyjnej.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Podsumowanie AI · Dziś z Twoimi akcjami';
 
   @override
   String get portfolioGoalSet => 'Ustaw cel';

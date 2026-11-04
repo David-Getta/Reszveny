@@ -1445,7 +1445,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Narx darajaga yetganda bildirishnoma olish uchun darajani bosing.';
+      'Narx AI baholagan darajaga yetganda bildirishnoma olish uchun shu darajani bosing.';
 
   @override
   String get shareAnalysisTitle => 'Tahlilni ulashish';
@@ -1460,7 +1460,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get shareCardFooter => 'WhatStock yordamida yaratilgan';
 
   @override
-  String get shareCardDisclaimer => 'AI tahlili · investitsiya maslahati emas';
+  String get shareCardDisclaimer =>
+      'AI tahlili · namunaviy ssenariylar, prognoz emas · investitsiya maslahati emas';
 
   @override
   String get referralTitle => 'Doʻstlarni taklif qilish';
@@ -1538,7 +1539,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI tahlili aksiyani nima harakatlantirayotganini, xatarlarni, baholashni va narx qayerga borishi mumkinligi haqidagi uchta ssenariyni manbalar bilan va oʻz tilingizda tushuntirib beradi.';
+      'AI tahlili aksiyani nima harakatlantirayotganini, xatarlarni, baholashni va narx qanday harakatlanishi mumkinligi haqidagi uchta namunaviy ssenariyni manbalar bilan va oʻz tilingizda tushuntirib beradi.';
 
   @override
   String get onboardTitle3 => 'Doimo xabardor boʻling';
@@ -3009,6 +3010,14 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Rahmat — koʻrib chiqamiz.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Portfelingiz tarkibi haqida AI yaratgan umumiy maʼlumot. U maqsadlaringiz, moliyaviy holatingiz yoki soliq holatingizni hisobga olmaydi; bu shaxsiy tavsiya yoki investitsiya maslahati emas.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI xulosasi · Bugun aksiyalaringiz bilan';
 
   @override
   String get portfolioGoalSet => 'Maqsad belgilash';

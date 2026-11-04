@@ -1449,7 +1449,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Baya zinga kuti uwane chiziviso kana mutengo wasvika ipapo.';
+      'Baya zinga rakafungidzirwa neAI kuti uwane chiziviso kana mutengo wasvika ipapo.';
 
   @override
   String get shareAnalysisTitle => 'Govera ongororo';
@@ -1464,7 +1464,8 @@ class AppLocalizationsSn extends AppLocalizations {
   String get shareCardFooter => 'Zvakagadzirwa neWhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Ongororo yeAI · haisi zano rekuisa mari';
+  String get shareCardDisclaimer =>
+      'Ongororo yeAI · zviitiko zvemuenzaniso, kwete fungidziro · haisi zano rekuisa mari';
 
   @override
   String get referralTitle => 'Koka shamwari';
@@ -1541,7 +1542,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Ongororo yeAI inotsanangura zvinofambisa sheya, njodzi, kukosha kwayo uye zviitiko zvitatu zvekuti mutengo ungaendepi, ine zvinyorwa zvainobva uye mumutauro wako.';
+      'Ongororo yeAI inotsanangura zvinofambisa sheya, njodzi, kukosha kwayo uye zviitiko zvitatu zvemuenzaniso zvekuti mutengo ungafamba sei, ine zvinyorwa zvainobva uye mumutauro wako.';
 
   @override
   String get onboardTitle3 => 'Ramba uchiziva zviri kuitika';
@@ -3017,6 +3018,13 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Tatenda — tichazviongorora.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Ruzivo rwese-rwese rwakagadzirwa neAI nezve kuumbwa kwepotiforiyo yako. Harufungi zvinangwa zvako, mari yako kana mamiriro emitero yako, uye harusi zano rakanangana newe kana zano rekuisa mari.';
+
+  @override
+  String get briefNotificationTitle => 'Pfupiso yeAI · Nhasi nemasheya ako';
 
   @override
   String get portfolioGoalSet => 'Isa chinangwa';

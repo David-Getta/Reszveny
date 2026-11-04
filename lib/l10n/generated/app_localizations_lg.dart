@@ -1452,7 +1452,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Nyiga omutendera ofune okulabula bbeeyi bw\'etuuka ku gwo.';
+      'Nyiga omutendera AI gw\'eteebereza ofune okulabula bbeeyi bw\'etuuka ku gwo.';
 
   @override
   String get shareAnalysisTitle => 'Gabana okwekenneenya';
@@ -1468,7 +1468,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Okwekenneenya kwa AI · si magezi ga kusiga nsimbi';
+      'Okwekenneenya kwa AI · embeera za kulabirako, si bunnabbi · si magezi ga kusiga nsimbi';
 
   @override
   String get referralTitle => 'Yita mikwano gyo';
@@ -1546,7 +1546,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Okwekenneenya kwa AI kunnyonnyola ekireetera omugabo okukyuka, obulabe, omuwendo gwagwo n\'embeera ssatu bbeeyi w\'eyinza okudda, nga kuliko ensibuko era mu lulimi lwo.';
+      'Okwekenneenya kwa AI kunnyonnyola ekireetera omugabo okukyuka, obulabe, omuwendo gwagwo n\'embeera ssatu ez\'okulabirako ku ngeri bbeeyi gy\'eyinza okukyukamu, nga kuliko ensibuko era mu lulimi lwo.';
 
   @override
   String get onboardTitle3 => 'Bera ng\'omanyi buli kimu';
@@ -3023,6 +3023,13 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Weebale — tujja kukyetegereza.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Amawulire ag\'awamu AI ge yakola ku ngeri emigabo gyo gye gitegekeddwamu. Tegafaayo ku biruubirirwa byo, embeera y\'ensimbi zo oba ey\'emisolo, era si kuteesa okukukwatako ggwe wekka wadde magezi ga kusiga nsimbi.';
+
+  @override
+  String get briefNotificationTitle => 'Ebifunze bya AI · Leero ne sitoowa zo';
 
   @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';

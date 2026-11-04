@@ -1479,7 +1479,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Bakstelėkite lygį ir gausite įspėjimą, kai kaina jį pasieks.';
+      'Bakstelėkite DI įvertintą lygį ir gausite įspėjimą, kai kaina jį pasieks.';
 
   @override
   String get shareAnalysisTitle => 'Bendrinti analizę';
@@ -1494,7 +1494,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get shareCardFooter => 'Sukurta su WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'DI analizė · ne investavimo rekomendacija';
+  String get shareCardDisclaimer =>
+      'DI analizė · iliustraciniai scenarijai, ne prognozės · ne investavimo rekomendacija';
 
   @override
   String get referralTitle => 'Pakvieskite draugų';
@@ -1577,7 +1578,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'DI analizė paaiškina, kas lemia akcijos judėjimą, kokios yra rizikos, koks jos vertinimas, ir pateikia tris scenarijus, kur gali pajudėti kaina, – su šaltiniais ir jūsų kalba.';
+      'DI analizė paaiškina, kas lemia akcijos judėjimą, kokios yra rizikos, koks jos vertinimas, ir pateikia tris iliustracinius scenarijus, kaip gali judėti kaina, – su šaltiniais ir jūsų kalba.';
 
   @override
   String get onboardTitle3 => 'Visada būkite informuoti';
@@ -3074,6 +3075,14 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Ačiū – peržiūrėsime.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'DI sukurta bendro pobūdžio informacija apie jūsų portfelio sudėtį. Joje neatsižvelgiama į jūsų tikslus, finansinę ar mokestinę padėtį, ir tai nėra nei asmeninė, nei investavimo rekomendacija.';
+
+  @override
+  String get briefNotificationTitle =>
+      'DI santrauka · Šiandien su jūsų akcijomis';
 
   @override
   String get portfolioGoalSet => 'Nustatyti tikslą';

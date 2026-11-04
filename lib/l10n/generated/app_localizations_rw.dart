@@ -1451,7 +1451,7 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Kanda ku gipimo kugira ngo ubone imenyesha igihe igiciro kigeze kuri cyo.';
+      'Kanda ku gipimo cyagereranyijwe na AI kugira ngo ubone imenyesha igihe igiciro kigeze kuri cyo.';
 
   @override
   String get shareAnalysisTitle => 'Sangiza isesengura';
@@ -1467,7 +1467,7 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Isesengura rya AI · si inama yo gushora imari';
+      'Isesengura rya AI · ingero z\'ibishoboka, si ibiteganyijwe · si inama yo gushora imari';
 
   @override
   String get referralTitle => 'Tumira inshuti';
@@ -1544,7 +1544,7 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Isesengura rya AI risobanura ibituma umugabane uhinduka, ibyago, agaciro kawo n\'ibishoboka bitatu ku cyerekezo igiciro gishobora gufata – hamwe n\'aho amakuru aturuka no mu rurimi rwawe.';
+      'Isesengura rya AI risobanura ibituma umugabane uhinduka, ibyago, agaciro kawo n\'ibishoboka bitatu bitangwa nk\'ingero ku buryo igiciro gishobora kugenda – hamwe n\'aho amakuru aturuka no mu rurimi rwawe.';
 
   @override
   String get onboardTitle3 => 'Ntucikwe n\'amakuru';
@@ -3021,6 +3021,14 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Urakoze — tuzabisuzuma.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Amakuru rusange yakozwe na AI ku miterere y\'ishoramari ryawe. Ntiyita ku ntego zawe, ubushobozi bwawe bw\'amafaranga cyangwa imiterere y\'imisoro yawe, kandi si inama yihariye kuri wowe cyangwa inama yo gushora imari.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Incamake ya AI · Uyu munsi n’imigabane yawe';
 
   @override
   String get portfolioGoalSet => 'Shyiraho intego';

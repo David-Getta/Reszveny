@@ -391,12 +391,12 @@
   "searchAnalyses": "Analizlerinde ara",
   "deleteAnalysis": "Sil",
   "analysisDeleted": "{symbol} analizi silindi",
-  "keyLevelAlertHint": "Fiyat bir seviyeye ulaştığında alarm almak için o seviyeye dokunun.",
+  "keyLevelAlertHint": "Fiyat, yapay zekânın tahmin ettiği bir seviyeye ulaştığında alarm almak için o seviyeye dokunun.",
   "shareAnalysisTitle": "Analizi paylaş",
   "shareAsImage": "Görsel olarak paylaş",
   "shareAsText": "Metin olarak paylaş",
   "shareCardFooter": "WhatStock ile hazırlandı",
-  "shareCardDisclaimer": "Yapay zekâ analizi · yatırım tavsiyesi değildir",
+  "shareCardDisclaimer": "Yapay zekâ analizi · örnek niteliğinde senaryolar, tahmin değil · yatırım tavsiyesi değildir",
   "referralTitle": "Arkadaşlarını davet et",
   "referralBody": "Kodunu paylaş. Arkadaşın hemen {count, plural, =1{1 ek analiz} other{{count} ek analiz}} kazanır, sen de onun ilk analizinden sonra aynısını kazanırsın.",
   "referralYourCode": "Kodun",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Bir hissenin fotoğrafını çekin",
   "onboardBody1": "Bir aracı kurum ekranı, bir gazete ya da bir şirket logosu yeterli: WhatStock hisseyi tanır; fiyatını, grafiğini ve temel verilerini gösterir.",
   "onboardTitle2": "Dakikalar içinde anlayın",
-  "onboardBody2": "Yapay zekâ analizi; hisseyi neyin hareket ettirdiğini, riskleri, değerlemeyi ve fiyatın nereye gidebileceğine dair üç senaryoyu kaynaklarıyla ve kendi dilinizde açıklar.",
+  "onboardBody2": "Yapay zekâ analizi; hisseyi neyin hareket ettirdiğini, riskleri, değerlemeyi ve fiyatın nasıl hareket edebileceğine dair örnek niteliğinde üç senaryoyu kaynaklarıyla ve kendi dilinizde açıklar.",
   "onboardTitle3": "Her şeyden haberdar olun",
   "onboardBody3": "Favoriler, portföyünüz ve fiyat alarmları sizi gelişmelerden haberdar eder. Analizleriniz cihazınızda kalır, istediğiniz zaman yeniden açabilirsiniz.",
   "onboardNext": "İleri",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Sorun ne? (isteğe bağlı)",
   "aiReportPrivacy": "İnceleyebilmemiz için bu yanıtın metnini ve notunuzu — hesabınızla ilişkilendirmeden — alırız.",
   "aiReportSend": "Raporu gönder",
-  "aiReportThanks": "Teşekkürler — inceleyeceğiz."
+  "aiReportThanks": "Teşekkürler — inceleyeceğiz.",
+  "aiPortfolioDisclaimer": "Portföyünüzün bileşimine dair yapay zekâ tarafından oluşturulmuş genel bilgidir. Hedeflerinizi, mali durumunuzu veya vergi durumunuzu dikkate almaz; kişiye özel bir öneri veya yatırım tavsiyesi değildir.",
+  "briefNotificationTitle": "Yapay zekâ özeti · Bugün hisselerinle"
 }

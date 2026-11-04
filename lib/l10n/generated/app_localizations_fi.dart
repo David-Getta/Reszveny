@@ -1446,7 +1446,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Napauta tasoa, niin saat hälytyksen, kun hinta saavuttaa sen.';
+      'Napauta tekoälyn arvioimaa tasoa, niin saat hälytyksen, kun hinta saavuttaa sen.';
 
   @override
   String get shareAnalysisTitle => 'Jaa analyysi';
@@ -1461,7 +1461,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get shareCardFooter => 'Tehty WhatStockilla';
 
   @override
-  String get shareCardDisclaimer => 'Tekoälyanalyysi · ei sijoitusneuvontaa';
+  String get shareCardDisclaimer =>
+      'Tekoälyanalyysi · havainnollistavia skenaarioita, ei ennusteita · ei sijoitusneuvontaa';
 
   @override
   String get referralTitle => 'Kutsu ystäviä';
@@ -1538,7 +1539,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Tekoälyanalyysi kertoo, mikä liikuttaa osaketta, mitkä ovat sen riskit ja arvostus, sekä kolme skenaariota siitä, mihin kurssi voi kehittyä – lähteineen ja omalla kielelläsi.';
+      'Tekoälyanalyysi kertoo, mikä liikuttaa osaketta, mitkä ovat sen riskit ja arvostus, sekä kolme havainnollistavaa skenaariota siitä, miten kurssi voi liikkua – lähteineen ja omalla kielelläsi.';
 
   @override
   String get onboardTitle3 => 'Pysy ajan tasalla';
@@ -3007,6 +3008,14 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Kiitos – tarkistamme sen.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Tekoälyn tuottamaa yleistä tietoa salkkusi koostumuksesta. Siinä ei oteta huomioon tavoitteitasi, taloudellista tilannettasi tai verotilannettasi, eikä se ole henkilökohtainen suositus tai sijoitusneuvontaa.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Tekoälyn yhteenveto · Tänään osakkeidesi kanssa';
 
   @override
   String get portfolioGoalSet => 'Aseta tavoite';

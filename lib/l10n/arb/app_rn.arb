@@ -391,12 +391,12 @@
   "searchAnalyses": "Rondera mu masesangura yawe",
   "deleteAnalysis": "Futa",
   "analysisDeleted": "Isesangura rya {symbol} ryafuswe",
-  "keyLevelAlertHint": "Fyonda ku gipimo kugira uronke imenyesha igiciro kigeze kuri co.",
+  "keyLevelAlertHint": "Fyonda ku gipimo cagereranijwe na AI kugira uronke imenyesha igiciro kigeze kuri co.",
   "shareAnalysisTitle": "Sangiza isesangura",
   "shareAsImage": "Sangiza nk'ishusho",
   "shareAsText": "Sangiza nk'inyandiko",
   "shareCardFooter": "Vyakozwe na WhatStock",
-  "shareCardDisclaimer": "Isesangura rya AI · si inama yo gushora imari",
+  "shareCardDisclaimer": "Isesangura rya AI · ivyiyumviro vy'akarorero, si ukuvuga ibizoba · si inama yo gushora imari",
   "referralTitle": "Tumira abagenzi",
   "referralBody": "Sangiza kode yawe. Umugenzi wawe aca aronka {count, plural, =1{isesangura 1 ry'inyongera} other{amasesangura {count} y'inyongera}}, nawe ukaronka ivyo nyene inyuma y'isesangura ryiwe rya mbere.",
   "referralYourCode": "Kode yawe",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Fata ifoto y'umugabane",
   "onboardBody1": "Ikirahure c'apulikasiyo y'umuhuza, ikinyamakuru canke ikimenyetso c'isosiyete birahagije: WhatStock imenya umugabane ikakwereka igiciro cawo, igishushanyo n'imibare nyamukuru.",
   "onboardTitle2": "Bitahure mu minota mike",
-  "onboardBody2": "Isesangura rya AI risigura ikiyobora umugabane, ingorane, agaciro kawo n'ivyiyumviro bitatu vy'aho igiciro gishobora kuja – hamwe n'aho vyavuye no mu rurimi rwawe.",
+  "onboardBody2": "Isesangura rya AI risigura ikiyobora umugabane, ingorane, agaciro kawo n'ivyiyumviro bitatu vy'akarorero vy'ukuntu igiciro gishobora guhinduka – hamwe n'aho vyavuye no mu rurimi rwawe.",
   "onboardTitle3": "Guma umenya ibiriko biraba",
   "onboardBody3": "Ivyo ukunda, ishoramari ryawe n'imenyesha ry'ibiciro bikumenyesha ibiriko biraba. Isesangura ryawe riguma ku gikoresho cawe, ryiteguye kwongera kwugururwa.",
   "onboardNext": "Ibikurikira",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Ni igiki kitagenda? (si itegeko)",
   "aiReportPrivacy": "Turakira inyandiko y'iyi nyishu n'ivyo wanditse — hatarimwo konti yawe — kugira tuyisuzume.",
   "aiReportSend": "Rungika imenyesha",
-  "aiReportThanks": "Urakoze — tuzobisuzuma."
+  "aiReportThanks": "Urakoze — tuzobisuzuma.",
+  "aiPortfolioDisclaimer": "Amakuru rusangi yakozwe na AI yerekeye ingene ishoramari ryawe rigizwe. Ntiyitaho intumbero zawe, ubutunzi bwawe canke ivyerekeye amakori yawe, kandi si inama ikwerekeye wewe nyene canke inama yo gushora imari.",
+  "briefNotificationTitle": "Incamake ya AI · Uyu munsi n’imigabane yawe"
 }

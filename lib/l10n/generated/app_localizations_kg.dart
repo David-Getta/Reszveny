@@ -1449,7 +1449,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Fina niveau mosi sambu na kuzwa lukebisu ntangu ntalu ta kuma kuna.';
+      'Fina niveau mosi yina AI me tanga sambu na kuzwa lukebisu ntangu ntalu ta kuma kuna.';
 
   @override
   String get shareAnalysisTitle => 'Kabula analyse';
@@ -1465,7 +1465,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Analyse ya AI · ka malongi ma kutula mbongo ko';
+      'Analyse ya AI · mambu ya mbandu, ka mbikudulu ko · ka malongi ma kutula mbongo ko';
 
   @override
   String get referralTitle => 'Bianga banduku';
@@ -1541,7 +1541,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Analyse ya AI ke tendula nki ke nyikisa action, makama, mfunu ya yau ye mambu tatu ya lenda kumina ntalu, ti bisina ya nsangu ye na ndinga na nge.';
+      'Analyse ya AI ke tendula nki ke nyikisa action, makama, mfunu ya yau ye mambu tatu ya mbandu ya mutindu ntalu lenda soba, ti bisina ya nsangu ye na ndinga na nge.';
 
   @override
   String get onboardTitle3 => 'Zaya mambu yonso ntangu yonso';
@@ -3020,6 +3020,14 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Matondo — beto ta tala yo.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Nsangu ya bawonso yivangwa kwa AI mu nkubikulu ya portefeuille na nge. Ka itadidi ko makani ma nge, mambu ma mbongo za nge yovo bimpôt bia nge, ye ka malongi ma nge kibeni ko yovo malongi ma kutula mbongo ko.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Mukanda ya nkufi ya AI · Bubu ti bisikisu na nge';
 
   @override
   String get portfolioGoalSet => 'Tula lukanu';

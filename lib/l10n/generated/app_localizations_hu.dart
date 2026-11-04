@@ -1443,7 +1443,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Koppints egy szintre, és szólunk, ha az árfolyam eléri.';
+      'Koppints egy AI által becsült szintre, és szólunk, ha az árfolyam eléri.';
 
   @override
   String get shareAnalysisTitle => 'Elemzés megosztása';
@@ -1458,7 +1458,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get shareCardFooter => 'WhatStockkal készült';
 
   @override
-  String get shareCardDisclaimer => 'AI-elemzés · nem befektetési tanács';
+  String get shareCardDisclaimer =>
+      'AI-elemzés · szemléltető forgatókönyvek, nem előrejelzések · nem befektetési tanács';
 
   @override
   String get referralTitle => 'Hívd meg a barátaidat';
@@ -1535,7 +1536,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Az AI-elemzés elmagyarázza, mi mozgatja a részvényt, mik a kockázatok, mennyit ér, és három forgatókönyvet ad arra, merre mehet az ár – forrásokkal, a te nyelveden.';
+      'Az AI-elemzés elmagyarázza, mi mozgatja a részvényt, mik a kockázatok, mennyit ér, és három szemléltető forgatókönyvet ad arra, hogyan mozoghat az ár – forrásokkal, a te nyelveden.';
 
   @override
   String get onboardTitle3 => 'Mindig képben leszel';
@@ -3003,6 +3004,14 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Köszönjük, átnézzük.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI által készített, általános tájékoztatás a portfóliód összetételéről. Nem veszi figyelembe a céljaidat, az anyagi helyzetedet és az adózásodat, és nem minősül személyre szabott ajánlásnak vagy befektetési tanácsadásnak.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI-összefoglaló · A nap a részvényeiddel';
 
   @override
   String get portfolioGoalSet => 'Cél kitűzése';

@@ -1480,7 +1480,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Tapnite raven, da prejmete opozorilo, ko jo cena doseže.';
+      'Tapnite raven, ki jo je ocenila AI, da prejmete opozorilo, ko jo cena doseže.';
 
   @override
   String get shareAnalysisTitle => 'Deli analizo';
@@ -1495,7 +1495,8 @@ class AppLocalizationsSl extends AppLocalizations {
   String get shareCardFooter => 'Ustvarjeno z WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Analiza AI · ni naložbeni nasvet';
+  String get shareCardDisclaimer =>
+      'Analiza AI · ponazoritveni scenariji, ne napovedi · ni naložbeni nasvet';
 
   @override
   String get referralTitle => 'Povabi prijatelje';
@@ -1579,7 +1580,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Analiza AI pojasni, kaj poganja delnico, kakšna so tveganja in vrednotenje, ter ponudi tri scenarije, kam bi se lahko gibala cena – z viri in v vašem jeziku.';
+      'Analiza AI pojasni, kaj poganja delnico, kakšna so tveganja in vrednotenje, ter ponudi tri ponazoritvene scenarije, kako bi se lahko gibala cena – z viri in v vašem jeziku.';
 
   @override
   String get onboardTitle3 => 'Bodite vedno na tekočem';
@@ -3076,6 +3077,13 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Hvala — pregledali ga bomo.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Splošne informacije o sestavi vašega portfelja, ustvarjene z AI. Ne upoštevajo vaših ciljev, financ ali davčnega položaja in niso osebno priporočilo niti naložbeni nasvet.';
+
+  @override
+  String get briefNotificationTitle => 'Povzetek AI · Danes z vašimi delnicami';
 
   @override
   String get portfolioGoalSet => 'Nastavi cilj';

@@ -159,7 +159,7 @@ class AppServices {
       preferences: preferences,
       notifier: alertMonitor.notifier,
       language: () => SupportedLocales.languageFor(_appLocale).englishName,
-      title: () => _l10n().$1.briefTitle,
+      title: () => _l10n().$1.briefNotificationTitle,
       onMade: () => this.telemetry.track('morning_brief'),
     );
     portfolioMoveWatcher = PortfolioMoveWatcher(

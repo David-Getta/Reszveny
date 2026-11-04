@@ -1441,7 +1441,7 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Dobo tolnoore ngam heɓde tintinol so coggu ngu yettii ɗum.';
+      'Dobo tolnoore nde AI hiisi ngam heɓde tintinol so coggu ngu yettii ɗum.';
 
   @override
   String get shareAnalysisTitle => 'Lollin ƴeewndo';
@@ -1456,7 +1456,8 @@ class AppLocalizationsFf extends AppLocalizations {
   String get shareCardFooter => 'Waɗaa e WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Ƴeewndo AI · wonaa wasiya e investisman';
+  String get shareCardDisclaimer =>
+      'Ƴeewndo AI · laabi misal tan, wonaa anndinde ko arata · wonaa wasiya e investisman';
 
   @override
   String get referralTitle => 'Noddu sehilaaɓe maa';
@@ -1533,7 +1534,7 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Ƴeewndo AI ngo ina firta ko dillinta aksiyoŋ ngoon, kulɗe mayru, njaru mayru e laabi tati ɗi coggu ngu waawi rewde – e ɗo keɓe ɗee ummii, e ɗemngal maa.';
+      'Ƴeewndo AI ngo ina firta ko dillinta aksiyoŋ ngoon, kulɗe mayru, njaru mayru e laabi tati wonɗi misal no coggu ngu waawi dillirde – e ɗo keɓe ɗee ummii, e ɗemngal maa.';
 
   @override
   String get onboardTitle3 => 'Wono e kabaaru sahaa kala';
@@ -3002,6 +3003,13 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'A jaaraama — men ƴeewto ɗum.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Humpito kuuɓal ngo AI waɗi e dow no aksiyoŋ maa njuɓɓiniri. Ɗum ƴeewataa faandaaje maa, ngalu maa walla lempooji maa, wonaa wasiya keeriiɗo maa, wonaa kadi wasiya e investisman.';
+
+  @override
+  String get briefNotificationTitle => 'Raɓɓinal AI · Hannde e aksiyonji maa';
 
   @override
   String get portfolioGoalSet => 'Taƴto faandaare';

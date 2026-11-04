@@ -1448,7 +1448,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'ಬೆಲೆ ಒಂದು ಮಟ್ಟವನ್ನು ತಲುಪಿದಾಗ ಅಲರ್ಟ್ ಪಡೆಯಲು ಆ ಮಟ್ಟವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.';
+      'ಬೆಲೆ AI ಅಂದಾಜಿಸಿದ ಒಂದು ಮಟ್ಟವನ್ನು ತಲುಪಿದಾಗ ಅಲರ್ಟ್ ಪಡೆಯಲು ಆ ಮಟ್ಟವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.';
 
   @override
   String get shareAnalysisTitle => 'ವಿಶ್ಲೇಷಣೆ ಹಂಚಿಕೊಳ್ಳಿ';
@@ -1463,7 +1463,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get shareCardFooter => 'WhatStock ನಿಂದ ರಚಿಸಲಾಗಿದೆ';
 
   @override
-  String get shareCardDisclaimer => 'AI ವಿಶ್ಲೇಷಣೆ · ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ';
+  String get shareCardDisclaimer =>
+      'AI ವಿಶ್ಲೇಷಣೆ · ಉದಾಹರಣಾತ್ಮಕ ಸನ್ನಿವೇಶಗಳು, ಮುನ್ಸೂಚನೆಗಳಲ್ಲ · ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ';
 
   @override
   String get referralTitle => 'ಸ್ನೇಹಿತರನ್ನು ಆಹ್ವಾನಿಸಿ';
@@ -1541,7 +1542,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI ವಿಶ್ಲೇಷಣೆಯು ಷೇರಿನ ಚಲನೆಗೆ ಕಾರಣಗಳು, ಅಪಾಯಗಳು, ಮೌಲ್ಯಮಾಪನ ಮತ್ತು ಬೆಲೆ ಎತ್ತ ಸಾಗಬಹುದು ಎಂಬುದರ ಮೂರು ಸನ್ನಿವೇಶಗಳನ್ನು ಮೂಲಗಳೊಂದಿಗೆ ನಿಮ್ಮ ಭಾಷೆಯಲ್ಲೇ ವಿವರಿಸುತ್ತದೆ.';
+      'AI ವಿಶ್ಲೇಷಣೆಯು ಷೇರಿನ ಚಲನೆಗೆ ಕಾರಣಗಳು, ಅಪಾಯಗಳು, ಮೌಲ್ಯಮಾಪನ ಮತ್ತು ಬೆಲೆ ಹೇಗೆ ಚಲಿಸಬಹುದು ಎಂಬುದರ ಮೂರು ಉದಾಹರಣಾತ್ಮಕ ಸನ್ನಿವೇಶಗಳನ್ನು ಮೂಲಗಳೊಂದಿಗೆ ನಿಮ್ಮ ಭಾಷೆಯಲ್ಲೇ ವಿವರಿಸುತ್ತದೆ.';
 
   @override
   String get onboardTitle3 => 'ಸದಾ ಅಪ್‌ಡೇಟ್ ಆಗಿರಿ';
@@ -3013,6 +3014,13 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'ಧನ್ಯವಾದಗಳು — ನಾವು ಇದನ್ನು ಪರಿಶೀಲಿಸುತ್ತೇವೆ.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊದ ಸಂಯೋಜನೆಯ ಕುರಿತು AI-ರಚಿತ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ. ಇದು ನಿಮ್ಮ ಗುರಿಗಳು, ಹಣಕಾಸು ಸ್ಥಿತಿ ಅಥವಾ ತೆರಿಗೆ ಪರಿಸ್ಥಿತಿಯನ್ನು ಪರಿಗಣಿಸುವುದಿಲ್ಲ ಮತ್ತು ಇದು ವೈಯಕ್ತಿಕ ಶಿಫಾರಸು ಅಥವಾ ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ.';
+
+  @override
+  String get briefNotificationTitle => 'AI ಸಾರಾಂಶ · ಇಂದು ನಿಮ್ಮ ಷೇರುಗಳೊಂದಿಗೆ';
 
   @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';

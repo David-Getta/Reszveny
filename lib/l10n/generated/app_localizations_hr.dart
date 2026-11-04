@@ -1469,7 +1469,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Dodirnite razinu i dobit ćete obavijest kada je cijena dosegne.';
+      'Dodirnite razinu iz AI procjene i dobit ćete obavijest kada je cijena dosegne.';
 
   @override
   String get shareAnalysisTitle => 'Podijeli analizu';
@@ -1484,7 +1484,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get shareCardFooter => 'Izrađeno uz WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'AI analiza · nije investicijski savjet';
+  String get shareCardDisclaimer =>
+      'AI analiza · ilustrativni scenariji, ne prognoze · nije investicijski savjet';
 
   @override
   String get referralTitle => 'Pozovite prijatelje';
@@ -1564,7 +1565,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI analiza objašnjava što pokreće dionicu, koji su rizici, kakvo je vrednovanje te daje tri scenarija kamo bi cijena mogla ići – s izvorima i na vašem jeziku.';
+      'AI analiza objašnjava što pokreće dionicu, koji su rizici, kakvo je vrednovanje te daje tri ilustrativna scenarija kako bi se cijena mogla kretati – s izvorima i na vašem jeziku.';
 
   @override
   String get onboardTitle3 => 'Uvijek u tijeku';
@@ -3049,6 +3050,13 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Hvala – pregledat ćemo ga.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Opće informacije o sastavu vašeg portfelja koje je generirala umjetna inteligencija. Ne uzimaju u obzir vaše ciljeve, financije ni poreznu situaciju te nisu osobna preporuka ni investicijski savjet.';
+
+  @override
+  String get briefNotificationTitle => 'AI sažetak · Danas s vašim dionicama';
 
   @override
   String get portfolioGoalSet => 'Postavi cilj';

@@ -391,12 +391,12 @@
   "searchAnalyses": "Seljermeleriňden gözle",
   "deleteAnalysis": "Poz",
   "analysisDeleted": "{symbol} seljermesi pozuldy",
-  "keyLevelAlertHint": "Baha derejä ýetende duýduryş almak üçin derejä basyň.",
+  "keyLevelAlertHint": "Baha AI tarapyndan çaklanan derejä ýetende duýduryş almak üçin şol derejä basyň.",
   "shareAnalysisTitle": "Seljermäni paýlaş",
   "shareAsImage": "Surat hökmünde paýlaş",
   "shareAsText": "Tekst hökmünde paýlaş",
   "shareCardFooter": "WhatStock bilen döredildi",
-  "shareCardDisclaimer": "AI seljermesi · maýa goýum maslahaty däl",
+  "shareCardDisclaimer": "AI seljermesi · mysal ssenariýalar, çaklama däl · maýa goýum maslahaty däl",
   "referralTitle": "Dostlaryňy çagyr",
   "referralBody": "Koduňy paýlaş. Dostuň derrew {count, plural, =1{1 goşmaça seljerme} other{{count} goşmaça seljerme}} alýar, sen bolsa onuň ilkinji seljermesinden soň şonça alýarsyň.",
   "referralYourCode": "Seniň koduň",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Paýnamany surata düşüriň",
   "onboardBody1": "Broker programmasynyň ekrany, gazet ýa-da kompaniýanyň logotipi ýeterlik: WhatStock paýnamany tanaýar we onuň bahasyny, grafigini hem-de esasy görkezijilerini görkezýär.",
   "onboardTitle2": "Birnäçe minutda düşüniň",
-  "onboardBody2": "AI seljermesi paýnamany nämäniň hereketlendirýändigini, töwekgelçilikleri, bahalandyrmany we bahanyň nirä gidip biljekdigi barada üç ssenariýany düşündirýär – çeşmeler bilen we siziň diliňizde.",
+  "onboardBody2": "AI seljermesi paýnamany nämäniň hereketlendirýändigini, töwekgelçilikleri, bahalandyrmany we bahanyň nähili hereket edip biljekdigi barada üç mysal ssenariýany düşündirýär – çeşmeler bilen we siziň diliňizde.",
   "onboardTitle3": "Hemişe habarly boluň",
   "onboardBody3": "Saýlananlar, portfeliňiz we baha duýduryşlary sizi wakalardan habarly saklaýar. Seljermeleriňiz enjamyňyzda galýar, olary islendik wagt täzeden açyp bilersiňiz.",
   "onboardNext": "Indiki",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Näme nädogry? (hökmany däl)",
   "aiReportPrivacy": "Barlap bilmegimiz üçin bu jogabyň tekstini we belligiňizi — hasabyňyz bolmazdan — alýarys.",
   "aiReportSend": "Habar iber",
-  "aiReportThanks": "Sag boluň — biz ony barlarys."
+  "aiReportThanks": "Sag boluň — biz ony barlarys.",
+  "aiPortfolioDisclaimer": "Portfeliňiziň düzümi barada AI tarapyndan döredilen umumy maglumat. Ol siziň maksatlaryňyzy, maliýe ýagdaýyňyzy ýa-da salgyt ýagdaýyňyzy hasaba almaýar we şahsy teklip ýa-da maýa goýum maslahaty däldir.",
+  "briefNotificationTitle": "AI jemlemesi · Şu gün paýnamalaryňyz bilen"
 }

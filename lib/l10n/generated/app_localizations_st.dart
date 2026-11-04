@@ -1452,7 +1452,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Tobetsa boemo ho fumana tsebiso ha theko e fihla ho bona.';
+      'Tobetsa boemo bo hakantsweng ke AI ho fumana tsebiso ha theko e fihla ho bona.';
 
   @override
   String get shareAnalysisTitle => 'Arolelana tlhahlobo';
@@ -1468,7 +1468,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Tlhahlobo ya AI · hase keletso ya ho tsetela';
+      'Tlhahlobo ya AI · maemo a mohlala, eseng dikgakanyo · hase keletso ya ho tsetela';
 
   @override
   String get referralTitle => 'Mema metswalle';
@@ -1545,7 +1545,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Tlhahlobo ya AI e hlalosa se tsamaisang shere, dikotsi, boleng ba yona le maemo a mararo a hore na theko e ka ya kae, ka mehlodi le ka puo ya hao.';
+      'Tlhahlobo ya AI e hlalosa se tsamaisang shere, dikotsi, boleng ba yona le maemo a mararo a mohlala a hore na theko e ka tsamaya jwang, ka mehlodi le ka puo ya hao.';
 
   @override
   String get onboardTitle3 => 'Dula o tseba tsohle';
@@ -3026,6 +3026,14 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Re a leboha — re tla e hlahloba.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Tlhahisoleseding e akaretsang e entsweng ke AI mabapi le sebopeho sa potefolio ya hao. Ha e nahanele dipheo tsa hao, ditjhelete tsa hao kapa boemo ba hao ba lekgetho, mme hase kgothaletso ya hao ka sebele kapa keletso ya ho tsetela.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Kakaretso ya AI · Kajeno le diabo tsa hao';
 
   @override
   String get portfolioGoalSet => 'Beha sepheo';

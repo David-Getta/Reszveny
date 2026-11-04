@@ -391,12 +391,12 @@
   "searchAnalyses": "I ka sɛgɛsɛgɛliw ɲini",
   "deleteAnalysis": "Jɔsi",
   "analysisDeleted": "{symbol} sɛgɛsɛgɛli jɔsira",
-  "keyLevelAlertHint": "Hakɛ dɔ digi walasa ka lasɔmini sɔrɔ ni sɔngɔ sera a ma.",
+  "keyLevelAlertHint": "AI ye hakɛ minnu jateminɛ, olu dɔ digi walasa ka lasɔmini sɔrɔ ni sɔngɔ sera a ma.",
   "shareAnalysisTitle": "Sɛgɛsɛgɛli jɛnsɛn",
   "shareAsImage": "A jɛnsɛn ja ye",
   "shareAsText": "A jɛnsɛn sɛbɛn ye",
   "shareCardFooter": "WhatStock de ye a dilan",
-  "shareCardDisclaimer": "AI sɛgɛsɛgɛli · wari donni ladilikan tɛ",
+  "shareCardDisclaimer": "AI sɛgɛsɛgɛli · misali cogoyaw, kiraya tɛ · wari donni ladilikan tɛ",
   "referralTitle": "I teriw wele",
   "referralBody": "I ka kode jɛnsɛn. I teri bɛ {count, plural, =1{sɛgɛsɛgɛli wɛrɛ 1} other{sɛgɛsɛgɛli wɛrɛ {count}}} sɔrɔ joona, i fana bɛ o hakɛ kelen sɔrɔ a ka sɛgɛsɛgɛli fɔlɔ kɔ.",
   "referralYourCode": "I ka kode",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Aksiyɔn dɔ ja ta",
   "onboardBody1": "Bɔrisi aplikasiyɔn ka ekaran, gazeti walima sosiyete taamasiyɛn bɛ se: WhatStock bɛ aksiyɔn dɔn ka a sɔngɔ, a grafiki ani a jate nafamaw jira i la.",
   "onboardTitle2": "A faamu miniti dama kɔnɔ",
-  "onboardBody2": "AI sɛgɛsɛgɛli bɛ a ɲɛfɔ min bɛ aksiyɔn lamaga, a faratiw, a sɔngɔ jateminɛ ani cogo saba a sɔngɔ bɛ se ka taa cogo min na – ni a sɔrɔyɔrɔw ye, i ka kan na.",
+  "onboardBody2": "AI sɛgɛsɛgɛli bɛ a ɲɛfɔ min bɛ aksiyɔn lamaga, a faratiw, a sɔngɔ jateminɛ ani misali cogo saba a sɔngɔ bɛ se ka yɛlɛma cogo min na – ni a sɔrɔyɔrɔw ye, i ka kan na.",
   "onboardTitle3": "To kunnafoni na tuma bɛɛ",
   "onboardBody3": "Diyanyelenw, i ka aksiyɔn kɛsu ani sɔngɔ lasɔminiw bɛ i ladɔnniya. I ka sɛgɛsɛgɛliw bɛ to i ka minɛn kan, i bɛ se k’u da wuli tugun waati o waati.",
   "onboardNext": "Ɲɛfɛ",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Mun tɛ ɲɛ? (n’i b’a fɛ)",
   "aiReportPrivacy": "An bɛ nin jaabi sɛbɛn ni i ka sɛbɛnni sɔrɔ — i ka kɔnti t’u fɛ — walasa k’a lajɛ.",
   "aiReportSend": "Gɛlɛya fɔli ci",
-  "aiReportThanks": "I ni ce — an bɛna a lajɛ."
+  "aiReportThanks": "I ni ce — an bɛna a lajɛ.",
+  "aiPortfolioDisclaimer": "Kunnafoni bɛɛlajɛlenw i ka aksiyɔn kɛsu kɔnɔkow kan, AI ye minnu dilan. U ma i ka laɲiniw, i ka wariko walima i ka nisɔngɔ cogoya jateminɛ, ani u tɛ ladilikan ye min bɛ i yɛrɛ kelen ta ye walima wari donni ladilikan.",
+  "briefNotificationTitle": "AI kuma surun · Bi ni i ka aksiyɔnw"
 }

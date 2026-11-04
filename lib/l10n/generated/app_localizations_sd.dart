@@ -1438,7 +1438,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'ڪنهن سطح تي ٽيپ ڪريو ته جيئن قيمت اتي پهچڻ تي الرٽ ملي.';
+      'AI جي اندازي ڪيل ڪنهن سطح تي ٽيپ ڪريو ته جيئن قيمت اتي پهچڻ تي الرٽ ملي.';
 
   @override
   String get shareAnalysisTitle => 'تجزيو شيئر ڪريو';
@@ -1453,7 +1453,8 @@ class AppLocalizationsSd extends AppLocalizations {
   String get shareCardFooter => 'WhatStock سان ٺهيل';
 
   @override
-  String get shareCardDisclaimer => 'AI تجزيو · سيڙپڪاري جو مشورو ناهي';
+  String get shareCardDisclaimer =>
+      'AI تجزيو · مثال طور ڏنل امڪان، اڳڪٿيون نه · سيڙپڪاري جو مشورو ناهي';
 
   @override
   String get referralTitle => 'دوستن کي دعوت ڏيو';
@@ -1530,7 +1531,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI تجزيو ٻڌائي ٿو ته شيئر کي ڇا ٿو هلائي، خطرا، قدر جو اندازو ۽ قيمت ڪيڏانهن وڃي سگهي ٿي ان جا ٽي امڪان – ذريعن سان ۽ اوهان جي ٻولي ۾.';
+      'AI تجزيو ٻڌائي ٿو ته شيئر کي ڇا ٿو هلائي، خطرا، قدر جو اندازو ۽ قيمت ڪيئن هلي سگهي ٿي ان جا مثال طور ٽي امڪان – ذريعن سان ۽ اوهان جي ٻولي ۾.';
 
   @override
   String get onboardTitle3 => 'هميشه باخبر رهو';
@@ -2996,6 +2997,13 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'مهرباني — اسان ان جو جائزو وٺنداسين.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'توهان جي پورٽ فوليو جي بناوت بابت AI جي تيار ڪيل عام معلومات. اها توهان جا مقصد، مالي حالت يا ٽيڪس جي صورتحال نظر ۾ نٿي رکي، ۽ اها نه ذاتي سفارش آهي ۽ نه سيڙپڪاري جو مشورو.';
+
+  @override
+  String get briefNotificationTitle => 'AI خلاصو · اڄ توهان جي شيئرن سان';
 
   @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';

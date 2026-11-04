@@ -1450,7 +1450,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'விலை ஒரு நிலையை அடையும்போது எச்சரிக்கை பெற அந்த நிலையைத் தட்டுங்கள்.';
+      'விலை AI மதிப்பிட்ட ஒரு நிலையை அடையும்போது எச்சரிக்கை பெற அந்த நிலையைத் தட்டுங்கள்.';
 
   @override
   String get shareAnalysisTitle => 'பகுப்பாய்வைப் பகிர்';
@@ -1465,7 +1465,8 @@ class AppLocalizationsTa extends AppLocalizations {
   String get shareCardFooter => 'WhatStock மூலம் உருவாக்கப்பட்டது';
 
   @override
-  String get shareCardDisclaimer => 'AI பகுப்பாய்வு · முதலீட்டு ஆலோசனை அல்ல';
+  String get shareCardDisclaimer =>
+      'AI பகுப்பாய்வு · எடுத்துக்காட்டுச் சூழ்நிலைகள், கணிப்புகள் அல்ல · முதலீட்டு ஆலோசனை அல்ல';
 
   @override
   String get referralTitle => 'நண்பர்களை அழை';
@@ -1544,7 +1545,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'பங்கை எது நகர்த்துகிறது, அதன் அபாயங்கள், மதிப்பீடு, விலை எங்கே செல்லக்கூடும் என்பதற்கான மூன்று சூழ்நிலைகள் ஆகியவற்றை AI பகுப்பாய்வு ஆதாரங்களுடன் உங்கள் மொழியிலேயே விளக்குகிறது.';
+      'பங்கை எது நகர்த்துகிறது, அதன் அபாயங்கள், மதிப்பீடு, விலை எப்படி நகரக்கூடும் என்பதற்கான மூன்று எடுத்துக்காட்டுச் சூழ்நிலைகள் ஆகியவற்றை AI பகுப்பாய்வு ஆதாரங்களுடன் உங்கள் மொழியிலேயே விளக்குகிறது.';
 
   @override
   String get onboardTitle3 => 'எல்லாவற்றையும் கண்காணியுங்கள்';
@@ -3020,6 +3021,14 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'நன்றி — நாங்கள் இதை மதிப்பாய்வு செய்வோம்.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'உங்கள் போர்ட்ஃபோலியோவின் கட்டமைப்பு பற்றி AI உருவாக்கிய பொதுவான தகவல். இது உங்கள் இலக்குகள், நிதி நிலை அல்லது வரி நிலையைக் கருத்தில் கொள்ளாது; இது தனிப்பட்ட பரிந்துரையோ முதலீட்டு ஆலோசனையோ அல்ல.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI சுருக்கம் · இன்று உங்கள் பங்குகளுடன்';
 
   @override
   String get portfolioGoalSet => 'இலக்கை அமை';

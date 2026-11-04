@@ -1442,7 +1442,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Sit ɣef uswir akken ad d-teṭṭfeḍ alɣu mi ara yawed ssuma ɣer-s.';
+      'Sit ɣef uswir i d-yeḥseb AI akken ad d-teṭṭfeḍ alɣu mi ara yawed ssuma ɣer-s.';
 
   @override
   String get shareAnalysisTitle => 'Bḍu tasleḍt';
@@ -1458,7 +1458,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Tasleḍt s AI · ur d awellih n usersi n yidrimen ara';
+      'Tasleḍt s AI · isenaryuten n umedya, mačči d tamusni n wayen ara d-yeḍrun · ur d awellih n usersi n yidrimen ara';
 
   @override
   String get referralTitle => 'Ɛreḍ imeddukal';
@@ -1535,7 +1535,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Tasleḍt s AI ad k-d-tessefhem acu i yesseḥrayen aksyun, uguren, azal-is d kraḍ n yisenaryuten ɣef wanida tezmer ad teddu ssuma, s yiɣbula d tutlayt-ik.';
+      'Tasleḍt s AI ad k-d-tessefhem acu i yesseḥrayen aksyun, uguren, azal-is d kraḍ n yisenaryuten n umedya ɣef wamek tezmer ad tembeddel ssuma, s yiɣbula d tutlayt-ik.';
 
   @override
   String get onboardTitle3 => 'Ur k-tetteffeɣ ula d taɣawsa';
@@ -3005,6 +3005,13 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Tanemmirt — ad tt-nesenqed.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Talɣut tamatut yura-tt AI ɣef wamek yebna uqrab-ik. Ur tettḥesab ara iswan-ik, tadamsa-k neɣ addad-ik n tbaḍin, ur d awellih uslig ara, ur d awellih n usersi n yidrimen ara.';
+
+  @override
+  String get briefNotificationTitle => 'Agzul s AI · Ass-a d tigemmi-k';
 
   @override
   String get portfolioGoalSet => 'Sbadu iswi';

@@ -1445,7 +1445,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Сатҳро пахш кунед, то вақте нарх ба он расад, огоҳӣ гиред.';
+      'Сатҳеро, ки AI арзёбӣ кардааст, пахш кунед, то вақте нарх ба он расад, огоҳӣ гиред.';
 
   @override
   String get shareAnalysisTitle => 'Мубодилаи таҳлил';
@@ -1460,7 +1460,8 @@ class AppLocalizationsTg extends AppLocalizations {
   String get shareCardFooter => 'Бо WhatStock сохта шудааст';
 
   @override
-  String get shareCardDisclaimer => 'Таҳлили AI · маслиҳати сармоягузорӣ нест';
+  String get shareCardDisclaimer =>
+      'Таҳлили AI · сенарияҳои намунавӣ, на пешгӯӣ · маслиҳати сармоягузорӣ нест';
 
   @override
   String get referralTitle => 'Дӯстонро даъват кунед';
@@ -1537,7 +1538,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Таҳлили AI шарҳ медиҳад, ки саҳмияро чӣ ба ҳаракат меорад, хатарҳо, арзиши он ва се сенарияи самти эҳтимолии нархро – бо манбаъҳо ва бо забони шумо.';
+      'Таҳлили AI шарҳ медиҳад, ки саҳмияро чӣ ба ҳаракат меорад, хатарҳо, арзиши он ва се сенарияи намунавии ҳаракати эҳтимолии нархро – бо манбаъҳо ва бо забони шумо.';
 
   @override
   String get onboardTitle3 => 'Ҳамеша огоҳ бошед';
@@ -3009,6 +3010,13 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Ташаккур — мо онро баррасӣ мекунем.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Маълумоти умумии аз ҷониби AI эҷодшуда дар бораи таркиби портфели шумо. Он ҳадафҳо, вазъи молиявӣ ё вазъи андозии шуморо ба назар намегирад ва тавсияи шахсӣ ё маслиҳати сармоягузорӣ нест.';
+
+  @override
+  String get briefNotificationTitle => 'Хулосаи AI · Имрӯз бо саҳмияҳои шумо';
 
   @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';

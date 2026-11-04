@@ -1442,7 +1442,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Fiyat bir seviyeye ulaştığında alarm almak için o seviyeye dokunun.';
+      'Fiyat, yapay zekânın tahmin ettiği bir seviyeye ulaştığında alarm almak için o seviyeye dokunun.';
 
   @override
   String get shareAnalysisTitle => 'Analizi paylaş';
@@ -1458,7 +1458,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Yapay zekâ analizi · yatırım tavsiyesi değildir';
+      'Yapay zekâ analizi · örnek niteliğinde senaryolar, tahmin değil · yatırım tavsiyesi değildir';
 
   @override
   String get referralTitle => 'Arkadaşlarını davet et';
@@ -1535,7 +1535,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Yapay zekâ analizi; hisseyi neyin hareket ettirdiğini, riskleri, değerlemeyi ve fiyatın nereye gidebileceğine dair üç senaryoyu kaynaklarıyla ve kendi dilinizde açıklar.';
+      'Yapay zekâ analizi; hisseyi neyin hareket ettirdiğini, riskleri, değerlemeyi ve fiyatın nasıl hareket edebileceğine dair örnek niteliğinde üç senaryoyu kaynaklarıyla ve kendi dilinizde açıklar.';
 
   @override
   String get onboardTitle3 => 'Her şeyden haberdar olun';
@@ -3005,6 +3005,13 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Teşekkürler — inceleyeceğiz.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Portföyünüzün bileşimine dair yapay zekâ tarafından oluşturulmuş genel bilgidir. Hedeflerinizi, mali durumunuzu veya vergi durumunuzu dikkate almaz; kişiye özel bir öneri veya yatırım tavsiyesi değildir.';
+
+  @override
+  String get briefNotificationTitle => 'Yapay zekâ özeti · Bugün hisselerinle';
 
   @override
   String get portfolioGoalSet => 'Hedef belirle';

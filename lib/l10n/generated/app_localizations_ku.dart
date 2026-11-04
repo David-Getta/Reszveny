@@ -1446,7 +1446,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Li astekê bitikîne da ku dema biha digihêje wê, hişyariyekê bistînî.';
+      'Li astekê ku AI texmîn kiriye bitikîne da ku dema biha digihêje wê, hişyariyekê bistînî.';
 
   @override
   String get shareAnalysisTitle => 'Analîzê parve bike';
@@ -1461,7 +1461,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get shareCardFooter => 'Bi WhatStock hatiye çêkirin';
 
   @override
-  String get shareCardDisclaimer => 'Analîza AI · ne şîreta veberhênanê ye';
+  String get shareCardDisclaimer =>
+      'Analîza AI · senaryoyên mînakî, ne pêşbînî · ne şîreta veberhênanê ye';
 
   @override
   String get referralTitle => 'Hevalan vexwîne';
@@ -1538,7 +1539,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Analîza AI rave dike ka çi pişkê dilivîne, xeterî çi ne, nirxandina wê çawa ye û sê senaryoyan pêşkêş dike ka biha dikare ber bi ku ve biçe, bi çavkaniyan û bi zimanê te.';
+      'Analîza AI rave dike ka çi pişkê dilivîne, xeterî çi ne, nirxandina wê çawa ye û sê senaryoyên mînakî pêşkêş dike ka biha çawa dikare bilive, bi çavkaniyan û bi zimanê te.';
 
   @override
   String get onboardTitle3 => 'Her tim agahdar be';
@@ -3010,6 +3011,13 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Spas — em ê lê binêrin.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Agahiyên giştî yên ku AI li ser pêkhateya portfolyoya te çêkirine. Ew armancên te, rewşa te ya darayî an rewşa te ya bacê li ber çavan nagirin û ne pêşniyareke kesane ne, ne jî şîreta veberhênanê ne.';
+
+  @override
+  String get briefNotificationTitle => 'Kurteya AI · Îro bi pişkên te re';
 
   @override
   String get portfolioGoalSet => 'Armanc deyne';

@@ -173,7 +173,8 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
             ],
             const SizedBox(height: 10),
             Text(
-              '${l10n.aiGeneratedAt(fmt.dateTime(r.generatedAt))} · ${l10n.aiDisclaimer}',
+              // A saját portfólióról: általános tájékoztatás, nem személyre szabott ajánlás.
+              '${l10n.aiGeneratedAt(fmt.dateTime(r.generatedAt))} · ${l10n.aiPortfolioDisclaimer}',
               style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
             ),
             Align(

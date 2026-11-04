@@ -1444,7 +1444,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Mia gyinabea bi na wobɛnya kɔkɔbɔ bere a bo no du hɔ.';
+      'Mia gyinabea bi a AI asusuw na wobɛnya kɔkɔbɔ bere a bo no du hɔ.';
 
   @override
   String get shareAnalysisTitle => 'Kyɛ nhwehwɛmu';
@@ -1459,7 +1459,8 @@ class AppLocalizationsAk extends AppLocalizations {
   String get shareCardFooter => 'Wɔde WhatStock na ɛyɛe';
 
   @override
-  String get shareCardDisclaimer => 'AI nhwehwɛmu · ɛnyɛ sikahyɛmu ho afotu';
+  String get shareCardDisclaimer =>
+      'AI nhwehwɛmu · nhwɛsoɔ tebea ahorow, ɛnyɛ nkɔmhyɛ · ɛnyɛ sikahyɛmu ho afotu';
 
   @override
   String get referralTitle => 'Frɛ wo nnamfonom';
@@ -1535,7 +1536,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI nhwehwɛmu no kyerɛkyerɛ nea ɛma kyɛfa no bo kɔ soro anaa fam, ne asiane ahorow, ne bo ankasa, ne kwan abiɛsa a ne bo betumi afa so – ne fibea ahorow ka ho, na ɛwɔ wo kasa mu.';
+      'AI nhwehwɛmu no kyerɛkyerɛ nea ɛma kyɛfa no bo kɔ soro anaa fam, ne asiane ahorow, ne bo ankasa, ne nhwɛsoɔ tebea abiɛsa a ɛkyerɛ sɛnea ne bo betumi akɔ soro anaa fam – ne fibea ahorow ka ho, na ɛwɔ wo kasa mu.';
 
   @override
   String get onboardTitle3 => 'Nya nsɛm no daa';
@@ -3007,6 +3008,13 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Yɛda wo ase — yɛbɛhwɛ mu.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI na ɛyɛɛ eyi: ɛyɛ nsɛm kɛkɛ a ɛfa nea ɛwɔ wo nkyɛfa mu ho. Ɛmfa wo botaeɛ, wo sika ho nsɛm anaa wo towtua tebea nhyɛ mu, na ɛnyɛ afotu a wɔde ma wo ankasa anaa sikahyɛmu ho afotu.';
+
+  @override
+  String get briefNotificationTitle => 'AI nsɛm tiaa · Ɛnnɛ ne wo stocks';
 
   @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';

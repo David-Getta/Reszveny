@@ -1443,7 +1443,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Tap a level to get an alert when the price reaches it.';
+      'Tap an AI-estimated level to get an alert when the price reaches it.';
 
   @override
   String get shareAnalysisTitle => 'Share analysis';
@@ -1458,7 +1458,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get shareCardFooter => 'Made with WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'AI analysis · not investment advice';
+  String get shareCardDisclaimer =>
+      'AI analysis · illustrative scenarios, not forecasts · not investment advice';
 
   @override
   String get referralTitle => 'Invite friends';
@@ -1535,7 +1536,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'The AI analysis explains what moves the stock, the risks, the valuation and three scenarios for where the price could go, with sources and in your language.';
+      'The AI analysis explains what moves the stock, the risks, the valuation and three illustrative scenarios for how the price could move, with sources and in your language.';
 
   @override
   String get onboardTitle3 => 'Stay on top of it';
@@ -3002,6 +3003,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Thanks — we\'ll review it.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI-generated, general information about your portfolio\'s composition. It does not take your goals, finances or tax situation into account and is not a personal recommendation or investment advice.';
+
+  @override
+  String get briefNotificationTitle => 'AI summary · Today with your stocks';
 
   @override
   String get portfolioGoalSet => 'Set a goal';

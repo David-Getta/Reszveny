@@ -1443,7 +1443,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Үнэ тухайн түвшинд хүрэхэд сэрэмжлүүлэг авахын тулд түвшин дээр дарна уу.';
+      'Үнэ тухайн түвшинд хүрэхэд сэрэмжлүүлэг авахын тулд AI-ийн тооцоолсон түвшин дээр дарна уу.';
 
   @override
   String get shareAnalysisTitle => 'Шинжилгээг хуваалцах';
@@ -1459,7 +1459,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'AI шинжилгээ · хөрөнгө оруулалтын зөвлөгөө биш';
+      'AI шинжилгээ · жишээ хувилбарууд, таамаг биш · хөрөнгө оруулалтын зөвлөгөө биш';
 
   @override
   String get referralTitle => 'Найзаа урих';
@@ -1537,7 +1537,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI шинжилгээ хувьцааг юу хөдөлгөж буйг, эрсдэл, үнэлгээ болон үнэ хаашаа явж болох гурван хувилбарыг эх сурвалжтайгаар, таны хэлээр тайлбарлана.';
+      'AI шинжилгээ хувьцааг юу хөдөлгөж буйг, эрсдэл, үнэлгээ болон үнэ хэрхэн хөдөлж болох гурван жишээ хувилбарыг эх сурвалжтайгаар, таны хэлээр тайлбарлана.';
 
   @override
   String get onboardTitle3 => 'Үргэлж мэдээлэлтэй байгаарай';
@@ -3004,6 +3004,13 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Баярлалаа — бид шалгана.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Таны портфолиогийн бүтцийн талаарх AI-ийн гаргасан ерөнхий мэдээлэл. Энэ нь таны зорилго, санхүүгийн байдал, татварын нөхцөлийг харгалзахгүй бөгөөд хувийн зөвлөмж эсвэл хөрөнгө оруулалтын зөвлөгөө биш юм.';
+
+  @override
+  String get briefNotificationTitle => 'AI хураангуй · Өнөөдөр таны хувьцаатай';
 
   @override
   String get portfolioGoalSet => 'Зорилт тавих';

@@ -391,12 +391,12 @@
   "searchAnalyses": "搜尋你的分析",
   "deleteAnalysis": "刪除",
   "analysisDeleted": "已刪除 {symbol} 分析",
-  "keyLevelAlertHint": "點一下價位，股價到達時便會提示你。",
+  "keyLevelAlertHint": "點一下 AI 估算的價位，股價到達時便會提示你。",
   "shareAnalysisTitle": "分享分析",
   "shareAsImage": "以圖片分享",
   "shareAsText": "以文字分享",
   "shareCardFooter": "由 WhatStock 製作",
-  "shareCardDisclaimer": "AI 分析 · 並不構成投資建議",
+  "shareCardDisclaimer": "AI 分析 · 示例情境，並非預測 · 並不構成投資建議",
   "referralTitle": "邀請朋友",
   "referralBody": "分享你的邀請碼。朋友即時獲得 {count, plural, =1{1 次額外分析} other{{count} 次額外分析}}，對方完成首次分析後，你亦會獲得相同次數。",
   "referralYourCode": "你的邀請碼",
@@ -412,7 +412,7 @@
   "onboardTitle1": "拍一張股票相片",
   "onboardBody1": "證券商 App 畫面、報紙或公司商標都可以：WhatStock 會識別股票，並顯示其股價、走勢圖及主要數據。",
   "onboardTitle2": "數分鐘內輕鬆看懂",
-  "onboardBody2": "AI 分析會解釋推動股價的因素、風險、估值，以及股價未來走勢的三個情境——附有資料來源，並以你的語言呈現。",
+  "onboardBody2": "AI 分析會解釋推動股價的因素、風險、估值，以及股價可能如何變動的三個示例情境——附有資料來源，並以你的語言呈現。",
   "onboardTitle3": "市況盡在掌握",
   "onboardBody3": "收藏、投資組合及價格提示助你緊貼最新動態。你的分析會儲存在裝置上，隨時可再次開啟。",
   "onboardNext": "下一步",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "有甚麼問題？（可選）",
   "aiReportPrivacy": "我們會收到此回答的文字及你的備註（不會連結你的帳戶），以便進行審視。",
   "aiReportSend": "提交舉報",
-  "aiReportThanks": "多謝，我們會跟進審視。"
+  "aiReportThanks": "多謝，我們會跟進審視。",
+  "aiPortfolioDisclaimer": "由 AI 產生、有關你投資組合構成的一般資訊。並未考慮你的目標、財務狀況或稅務情況，並不構成個人化建議或投資建議。",
+  "briefNotificationTitle": "AI 總結 · 今天你的股票"
 }

@@ -1444,7 +1444,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'دەست لە ئاستێک بدە بۆ ئەوەی کاتێک نرخ دەگاتە ئەو ئاستە ئاگادار بکرێیتەوە.';
+      'دەست لە ئاستێک بدە کە AI خەمڵاندوویەتی بۆ ئەوەی کاتێک نرخ دەگاتە ئەو ئاستە ئاگادار بکرێیتەوە.';
 
   @override
   String get shareAnalysisTitle => 'هاوبەشکردنی شیکاری';
@@ -1459,7 +1459,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get shareCardFooter => 'بە WhatStock دروستکراوە';
 
   @override
-  String get shareCardDisclaimer => 'شیکاریی AI · ئامۆژگاریی وەبەرهێنان نییە';
+  String get shareCardDisclaimer =>
+      'شیکاریی AI · سیناریۆی نموونەیی، نەک پێشبینی · ئامۆژگاریی وەبەرهێنان نییە';
 
   @override
   String get referralTitle => 'هاوڕێکانت بانگهێشت بکە';
@@ -1536,7 +1537,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'شیکاریی AI ڕوونی دەکاتەوە چی پشکەکە دەجووڵێنێت، مەترسییەکان، نرخاندنەکەی و سێ سیناریۆ بۆ ئەوەی نرخ بەرەو کوێ دەچێت – لەگەڵ سەرچاوەکان و بە زمانی خۆت.';
+      'شیکاریی AI ڕوونی دەکاتەوە چی پشکەکە دەجووڵێنێت، مەترسییەکان، نرخاندنەکەی و سێ سیناریۆی نموونەیی بۆ ئەوەی نرخ چۆن لەوانەیە بجووڵێت – لەگەڵ سەرچاوەکان و بە زمانی خۆت.';
 
   @override
   String get onboardTitle3 => 'هەمیشە ئاگادار بە';
@@ -3008,6 +3009,13 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'سوپاس — پێیدا دەچینەوە.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'زانیاریی گشتی کە AI دروستی کردووە دەربارەی پێکهاتەی پۆرتفۆلیۆکەت. ئامانجەکانت، دۆخی دارایی یان دۆخی باجەکەت لەبەرچاو ناگرێت و ڕاسپاردەی کەسی یان ئامۆژگاریی وەبەرهێنان نییە.';
+
+  @override
+  String get briefNotificationTitle => 'کورتەی AI · ئەمڕۆ لەگەڵ پشکەکانت';
 
   @override
   String get portfolioGoalSet => 'دانانی ئامانج';

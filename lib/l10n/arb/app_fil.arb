@@ -391,12 +391,12 @@
   "searchAnalyses": "Hanapin sa iyong mga pagsusuri",
   "deleteAnalysis": "Burahin",
   "analysisDeleted": "Nabura ang pagsusuri sa {symbol}",
-  "keyLevelAlertHint": "I-tap ang isang antas para makatanggap ng alerto kapag naabot ito ng presyo.",
+  "keyLevelAlertHint": "I-tap ang isang antas na tinantya ng AI para makatanggap ng alerto kapag naabot ito ng presyo.",
   "shareAnalysisTitle": "Ibahagi ang pagsusuri",
   "shareAsImage": "Ibahagi bilang larawan",
   "shareAsText": "Ibahagi bilang teksto",
   "shareCardFooter": "Ginawa gamit ang WhatStock",
-  "shareCardDisclaimer": "Pagsusuri ng AI · hindi payo sa pamumuhunan",
+  "shareCardDisclaimer": "Pagsusuri ng AI · mga halimbawang senaryo, hindi hula · hindi payo sa pamumuhunan",
   "referralTitle": "Mag-imbita ng mga kaibigan",
   "referralBody": "Ibahagi ang iyong code. Makakatanggap agad ang kaibigan mo ng {count, plural, =1{{count} dagdag na pagsusuri} other{{count} dagdag na pagsusuri}}, at ganoon din ang matatanggap mo pagkatapos ng kanyang unang pagsusuri.",
   "referralYourCode": "Ang iyong code",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Kuhanan ng larawan ang isang stock",
   "onboardBody1": "Sapat na ang screen ng brokerage app, diyaryo o logo ng kumpanya: kikilalanin ng WhatStock ang stock at ipapakita ang presyo, chart at mahahalagang numero nito.",
   "onboardTitle2": "Maunawaan ito sa ilang minuto",
-  "onboardBody2": "Ipinapaliwanag ng pagsusuri ng AI kung ano ang nagpapagalaw sa stock, ang mga panganib, ang valuation at tatlong senaryo kung saan maaaring pumunta ang presyo – may mga sanggunian at sa iyong wika.",
+  "onboardBody2": "Ipinapaliwanag ng pagsusuri ng AI kung ano ang nagpapagalaw sa stock, ang mga panganib, ang valuation at tatlong halimbawang senaryo kung paano maaaring gumalaw ang presyo – may mga sanggunian at sa iyong wika.",
   "onboardTitle3": "Laging manatiling updated",
   "onboardBody3": "Ang Mga Paborito, ang iyong portfolio at ang mga alerto sa presyo ang magbabalita sa iyo. Nananatili sa iyong device ang mga pagsusuri mo, handang buksan muli.",
   "onboardNext": "Susunod",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Ano ang mali? (opsyonal)",
   "aiReportPrivacy": "Natatanggap namin ang teksto ng sagot na ito at ang iyong tala — nang wala ang iyong account — para masuri namin ito.",
   "aiReportSend": "Ipadala ang report",
-  "aiReportThanks": "Salamat — susuriin namin ito."
+  "aiReportThanks": "Salamat — susuriin namin ito.",
+  "aiPortfolioDisclaimer": "Pangkalahatang impormasyong ginawa ng AI tungkol sa komposisyon ng iyong portfolio. Hindi nito isinasaalang-alang ang iyong mga layunin, pananalapi o sitwasyon sa buwis, at hindi ito personal na rekomendasyon o payo sa pamumuhunan.",
+  "briefNotificationTitle": "Buod ng AI · Ngayon kasama ang iyong mga stock"
 }

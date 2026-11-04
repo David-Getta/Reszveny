@@ -391,12 +391,12 @@
   "searchAnalyses": "Hae analyyseistäsi",
   "deleteAnalysis": "Poista",
   "analysisDeleted": "{symbol}-analyysi poistettu",
-  "keyLevelAlertHint": "Napauta tasoa, niin saat hälytyksen, kun hinta saavuttaa sen.",
+  "keyLevelAlertHint": "Napauta tekoälyn arvioimaa tasoa, niin saat hälytyksen, kun hinta saavuttaa sen.",
   "shareAnalysisTitle": "Jaa analyysi",
   "shareAsImage": "Jaa kuvana",
   "shareAsText": "Jaa tekstinä",
   "shareCardFooter": "Tehty WhatStockilla",
-  "shareCardDisclaimer": "Tekoälyanalyysi · ei sijoitusneuvontaa",
+  "shareCardDisclaimer": "Tekoälyanalyysi · havainnollistavia skenaarioita, ei ennusteita · ei sijoitusneuvontaa",
   "referralTitle": "Kutsu ystäviä",
   "referralBody": "Jaa koodisi. Ystäväsi saa heti {count, plural, =1{1 lisäanalyysin} other{{count} lisäanalyysia}}, ja sinä saat saman verran hänen ensimmäisen analyysinsa jälkeen.",
   "referralYourCode": "Koodisi",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Kuvaa osake",
   "onboardBody1": "Välittäjäsovelluksen näkymä, sanomalehti tai yhtiön logo riittää: WhatStock tunnistaa osakkeen ja näyttää sen kurssin, kaavion ja tärkeimmät tunnusluvut.",
   "onboardTitle2": "Ymmärrä se minuuteissa",
-  "onboardBody2": "Tekoälyanalyysi kertoo, mikä liikuttaa osaketta, mitkä ovat sen riskit ja arvostus, sekä kolme skenaariota siitä, mihin kurssi voi kehittyä – lähteineen ja omalla kielelläsi.",
+  "onboardBody2": "Tekoälyanalyysi kertoo, mikä liikuttaa osaketta, mitkä ovat sen riskit ja arvostus, sekä kolme havainnollistavaa skenaariota siitä, miten kurssi voi liikkua – lähteineen ja omalla kielelläsi.",
   "onboardTitle3": "Pysy ajan tasalla",
   "onboardBody3": "Suosikit, salkkusi ja kurssihälytykset pitävät sinut ajan tasalla. Analyysisi pysyvät laitteellasi valmiina avattaviksi uudelleen.",
   "onboardNext": "Seuraava",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Mikä on vialla? (valinnainen)",
   "aiReportPrivacy": "Saamme tämän vastauksen tekstin ja muistiinpanosi – ilman tiliäsi – jotta voimme tarkistaa sen.",
   "aiReportSend": "Lähetä ilmoitus",
-  "aiReportThanks": "Kiitos – tarkistamme sen."
+  "aiReportThanks": "Kiitos – tarkistamme sen.",
+  "aiPortfolioDisclaimer": "Tekoälyn tuottamaa yleistä tietoa salkkusi koostumuksesta. Siinä ei oteta huomioon tavoitteitasi, taloudellista tilannettasi tai verotilannettasi, eikä se ole henkilökohtainen suositus tai sijoitusneuvontaa.",
+  "briefNotificationTitle": "Tekoälyn yhteenveto · Tänään osakkeidesi kanssa"
 }

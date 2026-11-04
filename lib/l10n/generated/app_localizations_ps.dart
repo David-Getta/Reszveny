@@ -1439,7 +1439,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'پر یوې کچې ټک وکړئ څو کله چې بیه هغې ته ورسیږي، خبرتیا ترلاسه کړئ.';
+      'پر یوې داسې کچې ټک وکړئ چې AI اټکل کړې، څو کله چې بیه هغې ته ورسیږي، خبرتیا ترلاسه کړئ.';
 
   @override
   String get shareAnalysisTitle => 'تحلیل شریک کړئ';
@@ -1454,7 +1454,8 @@ class AppLocalizationsPs extends AppLocalizations {
   String get shareCardFooter => 'د WhatStock په مرسته جوړ شوی';
 
   @override
-  String get shareCardDisclaimer => 'AI تحلیل · د پانګونې مشوره نه ده';
+  String get shareCardDisclaimer =>
+      'AI تحلیل · بېلګیزې سناریوګانې، نه وړاندوینې · د پانګونې مشوره نه ده';
 
   @override
   String get referralTitle => 'ملګري راوبلئ';
@@ -1530,7 +1531,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI تحلیل تشریح کوي چې ونډه څه خوځوي، خطرونه یې کوم دي، ارزونه یې څنګه ده او بیه به کومې خوا ته لاړه شي د هغې درې سناریوګانې – له سرچینو سره او ستاسو په ژبه.';
+      'AI تحلیل تشریح کوي چې ونډه څه خوځوي، خطرونه یې کوم دي، ارزونه یې څنګه ده او بیه به څنګه وخوځېږي د هغې درې بېلګیزې سناریوګانې – له سرچینو سره او ستاسو په ژبه.';
 
   @override
   String get onboardTitle3 => 'تل خبر اوسئ';
@@ -2997,6 +2998,13 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'مننه — موږ به یې وڅېړو.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'ستاسو د پورټفولیو د جوړښت په اړه د AI لخوا جوړ شوي عمومي معلومات. دا ستاسو موخې، مالي وضعیت یا د مالیې حالت په پام کې نه نیسي، او نه شخصي سپارښتنه ده او نه د پانګونې مشوره.';
+
+  @override
+  String get briefNotificationTitle => 'د AI لنډیز · نن ستاسو له ونډو سره';
 
   @override
   String get portfolioGoalSet => 'موخه وټاکئ';

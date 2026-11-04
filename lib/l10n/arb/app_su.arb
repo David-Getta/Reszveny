@@ -391,12 +391,12 @@
   "searchAnalyses": "Paluruh analisis anjeun",
   "deleteAnalysis": "Pupus",
   "analysisDeleted": "Analisis {symbol} geus dipupus",
-  "keyLevelAlertHint": "Toél hiji tingkat pikeun meunang béwara nalika harga nepi ka dinya.",
+  "keyLevelAlertHint": "Toél hiji tingkat nu ditaksir ku AI pikeun meunang béwara nalika harga nepi ka dinya.",
   "shareAnalysisTitle": "Bagikeun analisis",
   "shareAsImage": "Bagikeun salaku gambar",
   "shareAsText": "Bagikeun salaku téks",
   "shareCardFooter": "Dijieun ku WhatStock",
-  "shareCardDisclaimer": "Analisis AI · lain naséhat investasi",
+  "shareCardDisclaimer": "Analisis AI · skénario ilustrasi, lain ramalan · lain naséhat investasi",
   "referralTitle": "Ondang babaturan",
   "referralBody": "Bagikeun kode anjeun. Babaturan anjeun langsung meunang {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}, sarta anjeun meunang nu sarua sanggeus analisis kahijina.",
   "referralYourCode": "Kode anjeun",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Poto hiji saham",
   "onboardBody1": "Cukup ku layar aplikasi sekuritas, koran atawa logo pausahaan: WhatStock bakal mikawanoh sahamna sarta mintonkeun hargana, grafikna jeung angka-angka pentingna.",
   "onboardTitle2": "Paham dina sababaraha menit",
-  "onboardBody2": "Analisis AI ngajelaskeun naon nu ngagerakkeun saham, résikona, valuasina jeung tilu skénario ka mana hargana bisa ngalih, dibarengan ku sumber jeung dina basa anjeun.",
+  "onboardBody2": "Analisis AI ngajelaskeun naon nu ngagerakkeun saham, résikona, valuasina jeung tilu skénario ilustrasi kumaha hargana bisa ngalih, dibarengan ku sumber jeung dina basa anjeun.",
   "onboardTitle3": "Tetep apdet terus",
   "onboardBody3": "Paporit, portofolio anjeun jeung béwara harga bakal terus ngabéjaan anjeun. Analisis anjeun tetep aya dina alat anjeun, siap dibuka deui.",
   "onboardNext": "Salajengna",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Naon anu lepat? (opsional)",
   "aiReportPrivacy": "Kami nampi téks jawaban ieu sareng catetan anjeun — tanpa akun anjeun — supados kami tiasa mariksana.",
   "aiReportSend": "Kirim laporan",
-  "aiReportThanks": "Hatur nuhun — kami bakal mariksana."
+  "aiReportThanks": "Hatur nuhun — kami bakal mariksana.",
+  "aiPortfolioDisclaimer": "Inpormasi umum nu dijieun ku AI ngeunaan komposisi portofolio anjeun. Ieu henteu merhatikeun tujuan, kaayaan kauangan atawa kaayaan pajeg anjeun, sarta lain rekomendasi pribadi atawa naséhat investasi.",
+  "briefNotificationTitle": "Ringkesan AI · Dinten ieu sareng saham anjeun"
 }

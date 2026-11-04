@@ -780,8 +780,12 @@ void main() {
         tier: 'pro',
       )!,
     ) as Map;
-    expect(body.keys, unorderedEquals(['model', 'max_tokens', 'messages', 'output_config']));
+    expect(body.keys, unorderedEquals(['model', 'max_tokens', 'system', 'messages', 'output_config']));
     expect(body['output_config'], <String, Object?>{});
+    // A szerver saját szabályai mindig az elején (a kliens promptja nélkül is).
+    expect(body['system'], [
+      {'type': 'text', 'text': Api.complianceRules},
+    ]);
   });
 
   test('telemetry accepts known platforms and real version numbers only', () async {

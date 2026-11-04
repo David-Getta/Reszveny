@@ -1449,7 +1449,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Prekni një nivel për të marrë alarm kur çmimi ta arrijë.';
+      'Prekni një nivel të vlerësuar nga AI për të marrë alarm kur çmimi ta arrijë.';
 
   @override
   String get shareAnalysisTitle => 'Ndaj analizën';
@@ -1465,7 +1465,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Analiza me AI · nuk është këshillë investimi';
+      'Analiza me AI · skenarë ilustrues, jo parashikime · nuk është këshillë investimi';
 
   @override
   String get referralTitle => 'Fto miqtë';
@@ -1542,7 +1542,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Analiza me AI shpjegon se çfarë e lëviz aksionin, rreziqet, vlerësimin dhe tre skenarë se ku mund të shkojë çmimi – me burime dhe në gjuhën tuaj.';
+      'Analiza me AI shpjegon se çfarë e lëviz aksionin, rreziqet, vlerësimin dhe tre skenarë ilustrues se si mund të lëvizë çmimi – me burime dhe në gjuhën tuaj.';
 
   @override
   String get onboardTitle3 => 'Jini gjithmonë në dijeni';
@@ -3017,6 +3017,14 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Faleminderit — do ta shqyrtojmë.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Informacion i përgjithshëm i gjeneruar nga AI për përbërjen e portofolit tuaj. Nuk merr parasysh objektivat, financat ose situatën tuaj tatimore dhe nuk përbën rekomandim personal ose këshillë investimi.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Përmbledhje me AI · Sot me aksionet tuaja';
 
   @override
   String get portfolioGoalSet => 'Cakto një objektiv';

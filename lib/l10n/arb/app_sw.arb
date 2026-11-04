@@ -391,12 +391,12 @@
   "searchAnalyses": "Tafuta katika uchambuzi wako",
   "deleteAnalysis": "Futa",
   "analysisDeleted": "Uchambuzi wa {symbol} umefutwa",
-  "keyLevelAlertHint": "Gusa kiwango ili upate arifa bei inapokifikia.",
+  "keyLevelAlertHint": "Gusa kiwango kilichokadiriwa na AI ili upate arifa bei inapokifikia.",
   "shareAnalysisTitle": "Shiriki uchambuzi",
   "shareAsImage": "Shiriki kama picha",
   "shareAsText": "Shiriki kama maandishi",
   "shareCardFooter": "Imetengenezwa kwa WhatStock",
-  "shareCardDisclaimer": "Uchambuzi wa AI · si ushauri wa uwekezaji",
+  "shareCardDisclaimer": "Uchambuzi wa AI · hali za mfano, si utabiri · si ushauri wa uwekezaji",
   "referralTitle": "Alika marafiki",
   "referralBody": "Shiriki msimbo wako. Rafiki yako anapata {count, plural, =1{uchambuzi 1 wa ziada} other{uchambuzi {count} wa ziada}} papo hapo, nawe unapata kiasi hicho hicho baada ya uchambuzi wake wa kwanza.",
   "referralYourCode": "Msimbo wako",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Piga picha ya hisa",
   "onboardBody1": "Skrini ya programu ya udalali, gazeti au nembo ya kampuni inatosha: WhatStock inatambua hisa na kukuonyesha bei yake, chati na takwimu muhimu.",
   "onboardTitle2": "Ielewe kwa dakika chache",
-  "onboardBody2": "Uchambuzi wa AI unaeleza kinachosukuma hisa, hatari, thamani yake na hali tatu za mahali bei inaweza kuelekea – pamoja na vyanzo na kwa lugha yako.",
+  "onboardBody2": "Uchambuzi wa AI unaeleza kinachosukuma hisa, hatari, thamani yake na hali tatu za mfano za jinsi bei inavyoweza kusonga – pamoja na vyanzo na kwa lugha yako.",
   "onboardTitle3": "Usipitwe na chochote",
   "onboardBody3": "Vipendwa, jalada lako la hisa na arifa za bei hukujulisha kila kinachotokea. Uchambuzi wako hubaki kwenye kifaa chako, tayari kufunguliwa tena.",
   "onboardNext": "Ifuatayo",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Tatizo ni nini? (si lazima)",
   "aiReportPrivacy": "Tunapokea maandishi ya jibu hili na dokezo lako — bila akaunti yako — ili tuweze kulikagua.",
   "aiReportSend": "Tuma ripoti",
-  "aiReportThanks": "Asante — tutalikagua."
+  "aiReportThanks": "Asante — tutalikagua.",
+  "aiPortfolioDisclaimer": "Taarifa za jumla zilizotengenezwa na AI kuhusu muundo wa jalada lako la hisa. Hazizingatii malengo yako, hali yako ya kifedha au hali yako ya kodi, na si pendekezo binafsi wala ushauri wa uwekezaji.",
+  "briefNotificationTitle": "Muhtasari wa AI · Leo na hisa zako"
 }

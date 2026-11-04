@@ -512,7 +512,11 @@ void main() {
     expect(msg, contains('may be an ETF'));
     expect(ClaudeStockAnalyst.systemPrompt, contains('# If it is not an ordinary company share'));
     expect(ClaudeStockAnalyst.systemPrompt, contains('expense ratio'));
-    expect(ClaudeStockAnalyst.promptVersion, 'v2.6');
+    expect(ClaudeStockAnalyst.promptVersion, 'v2.7');
+    // v2.7: általános elemzés, nem személyre szabott ajánlás (MiFID II, MAR).
+    expect(ClaudeStockAnalyst.systemPrompt, contains('# Not advice'));
+    expect(ClaudeStockAnalyst.systemPrompt, contains('do not call any price a target'));
+    expect(ClaudeStockAnalyst.systemPrompt, contains('never as an action'));
   });
 
   test('StockReport survives a JSON round trip (disk cache)', () {
@@ -714,6 +718,19 @@ void main() {
         ]),
       );
       expect(ReportQuality.check(none).issues.join(' | '), contains('no long-term view'));
+    });
+
+    test('the quality check flags the model\'s own advice wording, but not reported analyst views', () {
+      StockReport report(String headline, List<String> bullets) => StockReport(
+        symbol: 'X',
+        headline: headline,
+        generatedAt: DateTime.utc(2026, 11, 3),
+        sections: [ReportSection(kind: ReportSectionKind.summary, title: 'S', bullets: bullets)],
+      );
+      expect(ReportQuality.adviceSentences(report('Margins keep rising.', ['Analysts rate it a buy.'])), isEmpty);
+      expect(ReportQuality.adviceSentences(report('You should buy before earnings.', ['Fine.'])), hasLength(1));
+      expect(ReportQuality.adviceSentences(report('Rendben.', ['Érdemes venni a mostani áron.'])), hasLength(1));
+      expect(ReportQuality.check(report('We recommend this stock.', [])).issues.join(), contains('read as advice'));
     });
 
     test('quality check scores a complete report high and flags problems', () {

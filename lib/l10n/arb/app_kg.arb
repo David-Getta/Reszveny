@@ -391,12 +391,12 @@
   "searchAnalyses": "Sosa na ba analyse na nge",
   "deleteAnalysis": "Zimbisa",
   "analysisDeleted": "Analyse ya {symbol} me zimbisama",
-  "keyLevelAlertHint": "Fina niveau mosi sambu na kuzwa lukebisu ntangu ntalu ta kuma kuna.",
+  "keyLevelAlertHint": "Fina niveau mosi yina AI me tanga sambu na kuzwa lukebisu ntangu ntalu ta kuma kuna.",
   "shareAnalysisTitle": "Kabula analyse",
   "shareAsImage": "Kabula bonso foto",
   "shareAsText": "Kabula bonso masonuku",
   "shareCardFooter": "Yisalama na WhatStock",
-  "shareCardDisclaimer": "Analyse ya AI · ka malongi ma kutula mbongo ko",
+  "shareCardDisclaimer": "Analyse ya AI · mambu ya mbandu, ka mbikudulu ko · ka malongi ma kutula mbongo ko",
   "referralTitle": "Bianga banduku",
   "referralBody": "Kabula code na nge. Nduku na nge ta baka {count, plural, =1{analyse 1 ya kuyika} other{analyse {count} za kuyika}} ntangu yina kaka, mpi nge ta baka mutindu mosi na nima ya analyse na yandi ya ntete.",
   "referralYourCode": "Code na nge",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Baka foto ya action",
   "onboardBody1": "Ekrani ya application ya courtier, zulunalu to logo ya kompani kelele: WhatStock ke zaya action yina ye ke songa nge ntalu ya yau, grafiki ye mintalu ya mfunu.",
   "onboardTitle2": "Bakula yau na minuta fioti",
-  "onboardBody2": "Analyse ya AI ke tendula nki ke nyikisa action, makama, mfunu ya yau ye mambu tatu ya lenda kumina ntalu, ti bisina ya nsangu ye na ndinga na nge.",
+  "onboardBody2": "Analyse ya AI ke tendula nki ke nyikisa action, makama, mfunu ya yau ye mambu tatu ya mbandu ya mutindu ntalu lenda soba, ti bisina ya nsangu ye na ndinga na nge.",
   "onboardTitle3": "Zaya mambu yonso ntangu yonso",
   "onboardBody3": "Bizolwa, portefeuille na nge ye nkebisu za ntalu ke zabisa nge. Ba analyse na nge ke bikala na apparaye na nge, ya kukangula diaka.",
   "onboardNext": "Ya landa",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Nki kele mbi? (kana nge zola)",
   "aiReportPrivacy": "Beto ke bakaka masonuku ya mvutu yai ti note na nge — kukonda compte aku — sambu na kutala yo.",
   "aiReportSend": "Tinda rapport",
-  "aiReportThanks": "Matondo — beto ta tala yo."
+  "aiReportThanks": "Matondo — beto ta tala yo.",
+  "aiPortfolioDisclaimer": "Nsangu ya bawonso yivangwa kwa AI mu nkubikulu ya portefeuille na nge. Ka itadidi ko makani ma nge, mambu ma mbongo za nge yovo bimpôt bia nge, ye ka malongi ma nge kibeni ko yovo malongi ma kutula mbongo ko.",
+  "briefNotificationTitle": "Mukanda ya nkufi ya AI · Bubu ti bisikisu na nge"
 }

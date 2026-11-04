@@ -1427,7 +1427,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'แตะระดับราคาเพื่อรับการแจ้งเตือนเมื่อราคาไปถึงระดับนั้น';
+      'แตะระดับราคาที่ AI ประเมินไว้เพื่อรับการแจ้งเตือนเมื่อราคาไปถึงระดับนั้น';
 
   @override
   String get shareAnalysisTitle => 'แชร์บทวิเคราะห์';
@@ -1443,7 +1443,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'การวิเคราะห์ด้วย AI · ไม่ใช่คำแนะนำในการลงทุน';
+      'การวิเคราะห์ด้วย AI · สถานการณ์ตัวอย่าง ไม่ใช่การพยากรณ์ · ไม่ใช่คำแนะนำในการลงทุน';
 
   @override
   String get referralTitle => 'ชวนเพื่อน';
@@ -1516,7 +1516,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'การวิเคราะห์ด้วย AI จะอธิบายว่าอะไรขับเคลื่อนหุ้น ความเสี่ยง มูลค่า และสามสถานการณ์ว่าราคาอาจไปทางไหน พร้อมแหล่งอ้างอิงและเป็นภาษาของคุณ';
+      'การวิเคราะห์ด้วย AI จะอธิบายว่าอะไรขับเคลื่อนหุ้น ความเสี่ยง มูลค่า และสถานการณ์ตัวอย่างสามแบบว่าราคาอาจเคลื่อนไหวอย่างไร พร้อมแหล่งอ้างอิงและเป็นภาษาของคุณ';
 
   @override
   String get onboardTitle3 => 'ไม่พลาดทุกความเคลื่อนไหว';
@@ -2971,6 +2971,13 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'ขอบคุณ เราจะตรวจสอบ';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'ข้อมูลทั่วไปเกี่ยวกับองค์ประกอบของพอร์ตโฟลิโอของคุณที่สร้างโดย AI ไม่ได้คำนึงถึงเป้าหมาย สถานะทางการเงิน หรือสถานการณ์ทางภาษีของคุณ และไม่ใช่คำแนะนำเฉพาะบุคคลหรือคำแนะนำในการลงทุน';
+
+  @override
+  String get briefNotificationTitle => 'สรุปโดย AI · วันนี้กับหุ้นของคุณ';
 
   @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';

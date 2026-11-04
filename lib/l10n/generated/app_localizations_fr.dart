@@ -1451,7 +1451,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Appuyez sur un niveau pour recevoir une alerte quand le cours l’atteint.';
+      'Appuyez sur un niveau estimé par l’IA pour recevoir une alerte quand le cours l’atteint.';
 
   @override
   String get shareAnalysisTitle => 'Partager l’analyse';
@@ -1467,7 +1467,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Analyse IA · pas un conseil en investissement';
+      'Analyse IA · scénarios illustratifs, pas des prévisions · pas un conseil en investissement';
 
   @override
   String get referralTitle => 'Inviter des amis';
@@ -1544,7 +1544,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'L’analyse IA vous explique ce qui fait bouger l’action, ses risques, sa valorisation et trois scénarios sur l’évolution possible de son cours, avec les sources et dans votre langue.';
+      'L’analyse IA vous explique ce qui fait bouger l’action, ses risques, sa valorisation et trois scénarios illustratifs sur l’évolution possible de son cours, avec les sources et dans votre langue.';
 
   @override
   String get onboardTitle3 => 'Restez toujours informé';
@@ -3020,6 +3020,14 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Merci — nous allons l’examiner.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Informations générales générées par IA sur la composition de votre portefeuille. Elles ne tiennent compte ni de vos objectifs, ni de votre situation financière, ni de votre situation fiscale, et ne constituent ni une recommandation personnalisée ni un conseil en investissement.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Résumé par IA · Aujourd’hui avec vos actions';
 
   @override
   String get portfolioGoalSet => 'Définir un objectif';

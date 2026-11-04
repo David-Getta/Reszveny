@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.303)
+# Változásjegyzék (0.2.130 → 0.2.304)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,31 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Nem befektetési tanácsadás: az ötvenedik kódátnézés szabályozási javításai
+
+- **0.2.304**: az AI-szövegek általános tájékoztatások maradnak, nem személyre szabott ajánlások (EU MiFID II,
+  piaci visszaélési rendelet). Az elemzés promptja (v2.7) külön „nem tanácsadás” szabályt kapott: nincs vételi,
+  eladási vagy tartási felszólítás, saját célár, pozícióméret, belépési/kilépési szint vagy időzítés; a sávok és a
+  forgatókönyvek szemléltető becslések. A lényeg (headline) tényt vagy értékelést mond, nem teendőt.
+- A saját pozíció csak egy külön, számtani pontba kerül (hol áll a forgatókönyvek sávja az átlagárhoz képest),
+  véleményezés nélkül; a saját jegyzetek csak a figyelendők közé, tényként, és ha tanácsot kérnének, azt a modell
+  figyelmen kívül hagyja. Az elmentett AI-válasz a jegyzetben „AI ·” jelölést kap.
+- A portfólió-elemzés kérdéseket vet fel teendők helyett („Érdemes utánanézni”), konkrét papírt nem javasol, és
+  saját figyelmeztetést kapott (általános tájékoztatás a portfólió összetételéről, nem személyre szabott ajánlás).
+  A kérdés-válasz, a hír-, mozgás-, gyorsjelentés- és papírmagyarázat, az összehasonlítás és a napi összefoglaló
+  szabályai ugyanígy szigorodtak; a kérdés-lapon az első kérdés után is látszik a figyelmeztetés, az összehasonlító
+  oldalon az AI-sor mellett a dátum és a figyelmeztetés.
+- A szerver minden AI-kérés elejére a saját, állandó szabályait teszi: egy régi vagy módosított app sem kaphat a
+  WhatStock kulcsával személyre szabott tanácsot.
+- Nyilvános megosztott oldal: a figyelmeztetést és az AI-jelölést a szerver adja (magyarul vagy angolul, a
+  kliens feliratától függetlenül), „Egy WhatStock-felhasználó osztotta meg” jelöléssel, a forgatókönyvek időtávjával
+  és a láblécben a jogi linkekkel. A megosztó kép is mutatja az időtávot, a figyelmeztetése két sorban fér el, és a
+  képpel küldött szövegben is ott áll; a szövegként megosztott elemzésben a forgatókönyvek mellett a „szemléltető
+  sávok” megjegyzés.
+- A reggeli értesítés címe jelzi, hogy AI-összefoglaló; a bemutató és a weboldal „szemléltető forgatókönyvekről”
+  beszél („merre mehet az ár” helyett); a kulcsszintek riasztása „AI által becsült” szintről szól. Az eval a modell
+  saját tanácsadó szóhasználatát is pontlevonással jelzi. 5 szöveg 120 nyelven.
 
 ## Levelek: az ötvenedik kódátnézés javításai
 

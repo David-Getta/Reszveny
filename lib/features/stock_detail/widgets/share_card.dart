@@ -116,7 +116,11 @@ class AnalysisShareCard extends StatelessWidget {
                                 ),
                                 if (s.priceLow != null && s.priceHigh != null)
                                   Text(
-                                    '${fmt.price(s.priceLow, null)}–${fmt.price(s.priceHigh, ccy)}',
+                                    // Az időtáv nélkül egy sáv célárnak tűnhet.
+                                    [
+                                      '${fmt.price(s.priceLow, null)}–${fmt.price(s.priceHigh, ccy)}',
+                                      if (s.horizon.isNotEmpty) s.horizon,
+                                    ].join(' · '),
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
                                     style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
@@ -162,12 +166,8 @@ class AnalysisShareCard extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 4),
-                Text(
-                  l10n.shareCardDisclaimer,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(color: p.muted, fontSize: 10),
-                ),
+                // Két sor: hosszabb nyelveken se vágódjon le a figyelmeztetés.
+                Text(l10n.shareCardDisclaimer, maxLines: 2, style: TextStyle(color: p.muted, fontSize: 10)),
               ],
             ),
           ),
@@ -212,6 +212,8 @@ Map<String, dynamic> sharePayload(
           'label': scenarioLabel(l10n, s.kind),
           'probability': s.probability.round(),
           'range': range(s),
+          // Az időtáv nélkül egy ártartomány célárnak tűnhet.
+          'horizon': s.horizon,
           'likely': s.kind == likely,
         },
     ],
@@ -303,6 +305,7 @@ class _ShareSheetState extends State<_ShareSheet> {
 
   Future<void> _shareImage(BuildContext buttonContext) async {
     final origin = shareOriginOf(buttonContext);
+    final disclaimer = AppLocalizations.of(context).shareCardDisclaimer;
     AppServices.of(context).telemetry.track('share_image');
     setState(() => _busy = true);
     try {
@@ -312,7 +315,7 @@ class _ShareSheetState extends State<_ShareSheet> {
       await shareImage(
         png,
         fileName: 'whatstock-${widget.report.symbol.toLowerCase()}.png',
-        text: link == null ? widget.report.headline : '${widget.report.headline}\n$link',
+        text: [widget.report.headline, disclaimer, ?link].join('\n'),
         subject: _subject,
         origin: origin,
       );

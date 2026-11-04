@@ -391,12 +391,12 @@
   "searchAnalyses": "Eheka ne jehesaʼỹijokuérape",
   "deleteAnalysis": "Emboguete",
   "analysisDeleted": "Oñemboguete {symbol} jehesaʼỹijo",
-  "keyLevelAlertHint": "Eikutu peteĩ nivel ehupyty hag̃ua maranduʼi tepy ohupytývo upe nivel.",
+  "keyLevelAlertHint": "Eikutu peteĩ nivel AI ohaʼãva ehupyty hag̃ua maranduʼi tepy ohupytývo upe nivel.",
   "shareAnalysisTitle": "Emoherakuã jehesaʼỹijo",
   "shareAsImage": "Emoherakuã taʼãngamíicha",
   "shareAsText": "Emoherakuã moñeʼẽrãicha",
   "shareCardFooter": "Ojejapo WhatStock reheve",
-  "shareCardDisclaimer": "AI jehesaʼỹijo · ndahaʼéi ñemoñeʼẽ inversión rehegua",
+  "shareCardDisclaimer": "AI jehesaʼỹijo · tape techapyrã, ndahaʼéi oúvarã jeikuaa · ndahaʼéi ñemoñeʼẽ inversión rehegua",
   "referralTitle": "Eguenoi ne angirũnguérape",
   "referralBody": "Emoherakuã ne código. Ne angirũ ohupyty pyaʼe {count, plural, =1{1 jehesaʼỹijo mbojuajupyre} other{{count} jehesaʼỹijo mbojuajupyre}}, ha nde avei rehupytýta upeichaite ijehesaʼỹijo peteĩha rire.",
   "referralYourCode": "Ne código",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Ejapyhy peteĩ acción raʼãnga",
   "onboardBody1": "Oĩmaite peteĩ tembiporuʼi bolsa-pegua mbaʼerechaha, periódico térã empresa logo: WhatStock ohechakuaa pe acción ha ohechauka ijepy, igráfico ha umi papapy tenondeguáva.",
   "onboardTitle2": "Ehechakuaa minuto mbovýpe",
-  "onboardBody2": "AI jehesaʼỹijo omyesakã mbaʼépa omýi pe acción, umi kyhyjeha, mbaʼeichaitépa ovale ha mbohapy tape ikatúva ohasa ijepy – marandu ypykuéra ndive ha ne ñeʼẽme.",
+  "onboardBody2": "AI jehesaʼỹijo omyesakã mbaʼépa omýi pe acción, umi kyhyjeha, mbaʼeichaitépa ovale ha mbohapy tape techapyrã mbaʼéichapa ikatu omýi ijepy – marandu ypykuéra ndive ha ne ñeʼẽme.",
   "onboardTitle3": "Eikuaa meme opa mbaʼe",
   "onboardBody3": "Ojeguerohoryvéva, ne cartera ha tepy maranduʼi omomarandu ndéve. Ne jehesaʼỹijokuéra opyta ne tembiporuʼípe, ha ikatu reipeʼa jey oimeraẽ árape.",
   "onboardNext": "Upeigua",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Mbaʼépa ndoikói? (reipotárõ)",
   "aiReportPrivacy": "Rohupyty ko mbohovái moñeʼẽrã ha ne jehaipyre — ne mbaʼeteʼỹre — rohechajey hag̃ua.",
   "aiReportSend": "Emondo marandu",
-  "aiReportThanks": "Aguyje — rohechajeýta."
+  "aiReportThanks": "Aguyje — rohechajeýta.",
+  "aiPortfolioDisclaimer": "AI omoheñói ko marandu opavavegua ne cartera ñemohenda rehegua. Ndohechái ne jehupytyrã, ne viru térã ne impuesto rehegua, ha ndahaʼéi ñemoñeʼẽ ndéve guarãnte térã ñemoñeʼẽ inversión rehegua.",
+  "briefNotificationTitle": "AI momichĩmbyre · Ko árape ne acción-kuéra ndive"
 }

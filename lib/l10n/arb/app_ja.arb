@@ -391,12 +391,12 @@
   "searchAnalyses": "分析を検索",
   "deleteAnalysis": "削除",
   "analysisDeleted": "{symbol} の分析を削除しました",
-  "keyLevelAlertHint": "価格水準をタップすると、株価がその水準に達したときにアラートが届きます。",
+  "keyLevelAlertHint": "AI が推定した価格水準をタップすると、株価がその水準に達したときにアラートが届きます。",
   "shareAnalysisTitle": "分析を共有",
   "shareAsImage": "画像で共有",
   "shareAsText": "テキストで共有",
   "shareCardFooter": "WhatStock で作成",
-  "shareCardDisclaimer": "AI 分析 · 投資助言ではありません",
+  "shareCardDisclaimer": "AI 分析 · シナリオは例示であり予測ではありません · 投資助言ではありません",
   "referralTitle": "友達を招待",
   "referralBody": "コードをシェアしましょう。友達はすぐに{count, plural, =1{追加分析 1 回} other{追加分析 {count} 回}}を受け取り、友達が初めて分析した後にあなたにも同じ回数が付与されます。",
   "referralYourCode": "あなたのコード",
@@ -412,7 +412,7 @@
   "onboardTitle1": "株を撮影するだけ",
   "onboardBody1": "証券アプリの画面、新聞、企業ロゴがあれば十分。WhatStock が銘柄を認識し、株価、チャート、主要指標を表示します。",
   "onboardTitle2": "数分で理解できる",
-  "onboardBody2": "AI 分析が、株価を動かす要因、リスク、バリュエーション、そして株価の行方を示す3つのシナリオを、出典付きでお使いの言語で解説します。",
+  "onboardBody2": "AI 分析が、株価を動かす要因、リスク、バリュエーション、そして株価の動き方を例示する3つのシナリオを、出典付きでお使いの言語で解説します。",
   "onboardTitle3": "最新の動きを見逃さない",
   "onboardBody3": "お気に入り、ポートフォリオ、価格アラートで常に最新情報をお届けします。分析はデバイスに保存され、いつでも開き直せます。",
   "onboardNext": "次へ",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "何が問題ですか？（任意）",
   "aiReportPrivacy": "確認のため、この回答のテキストとメモを受け取ります。アカウント情報は含まれません。",
   "aiReportSend": "報告を送信",
-  "aiReportThanks": "ありがとうございます。確認いたします。"
+  "aiReportThanks": "ありがとうございます。確認いたします。",
+  "aiPortfolioDisclaimer": "AI が生成した、ポートフォリオの構成に関する一般的な情報です。ご自身の目標や資産状況、税務状況は考慮されておらず、個別の推奨や投資助言ではありません。",
+  "briefNotificationTitle": "AI 要約 · 今日のあなたの銘柄"
 }

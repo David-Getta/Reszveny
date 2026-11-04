@@ -35,7 +35,8 @@ Rules:
 - Write in the requested language, plainly, the way a financial journalist would explain it to a friend.
 - Plain text, no Markdown, at most about 110 words: first the most likely reason with the key fact (number, date, who said it), then other contributing factors if any, then one sentence on what to watch next.
 - If you find no company-specific news, say so and name the broader market or sector move if there is one.
-- Never invent facts, numbers or dates. Do not tell the reader to buy or sell.''';
+- Never invent facts, numbers or dates.
+- Do not tell the reader to buy, sell or hold anything, give no price targets and do not say where the price will go.''';
 
   static Map<String, dynamic> requestBody({
     required String symbol,

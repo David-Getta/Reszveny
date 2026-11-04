@@ -101,7 +101,7 @@ void main() {
     await tester.tap(find.text('Generate analysis'));
     await tester.pumpAndSettle();
 
-    expect(find.text('Tap a level to get an alert when the price reaches it.'), findsOneWidget);
+    expect(find.text('Tap an AI-estimated level to get an alert when the price reaches it.'), findsOneWidget);
     // Ellenállás a mostani ár fölött → „fölé megy” 250-nél.
     final resistance = find.byKey(const ValueKey('key-level-250.0'));
     await tester.ensureVisible(resistance);

@@ -1447,7 +1447,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Tik op ’n vlak om ’n waarskuwing te kry wanneer die prys dit bereik.';
+      'Tik op ’n AI-geskatte vlak om ’n waarskuwing te kry wanneer die prys dit bereik.';
 
   @override
   String get shareAnalysisTitle => 'Deel ontleding';
@@ -1462,7 +1462,8 @@ class AppLocalizationsAf extends AppLocalizations {
   String get shareCardFooter => 'Gemaak met WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'AI-ontleding · nie beleggingsadvies nie';
+  String get shareCardDisclaimer =>
+      'AI-ontleding · illustratiewe scenario’s, nie voorspellings nie · nie beleggingsadvies nie';
 
   @override
   String get referralTitle => 'Nooi vriende';
@@ -1539,7 +1540,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Die AI-ontleding verduidelik wat die aandeel dryf, die risiko’s, die waardasie en drie scenario’s vir waarheen die prys kan gaan – met bronne en in jou taal.';
+      'Die AI-ontleding verduidelik wat die aandeel dryf, die risiko’s, die waardasie en drie illustratiewe scenario’s vir hoe die prys kan beweeg – met bronne en in jou taal.';
 
   @override
   String get onboardTitle3 => 'Bly op hoogte';
@@ -3011,6 +3012,13 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Dankie – ons sal dit nagaan.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI-gegenereerde, algemene inligting oor die samestelling van jou portefeulje. Dit neem nie jou doelwitte, finansies of belastingsituasie in ag nie en is nie ’n persoonlike aanbeveling of beleggingsadvies nie.';
+
+  @override
+  String get briefNotificationTitle => 'AI-opsomming · Vandag met jou aandele';
 
   @override
   String get portfolioGoalSet => 'Stel \'n doelwit';

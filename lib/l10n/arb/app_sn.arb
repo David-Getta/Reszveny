@@ -391,12 +391,12 @@
   "searchAnalyses": "Tsvaga ongororo dzako",
   "deleteAnalysis": "Dzima",
   "analysisDeleted": "Ongororo ya{symbol} yadzimwa",
-  "keyLevelAlertHint": "Baya zinga kuti uwane chiziviso kana mutengo wasvika ipapo.",
+  "keyLevelAlertHint": "Baya zinga rakafungidzirwa neAI kuti uwane chiziviso kana mutengo wasvika ipapo.",
   "shareAnalysisTitle": "Govera ongororo",
   "shareAsImage": "Govera semufananidzo",
   "shareAsText": "Govera semavara",
   "shareCardFooter": "Zvakagadzirwa neWhatStock",
-  "shareCardDisclaimer": "Ongororo yeAI · haisi zano rekuisa mari",
+  "shareCardDisclaimer": "Ongororo yeAI · zviitiko zvemuenzaniso, kwete fungidziro · haisi zano rekuisa mari",
   "referralTitle": "Koka shamwari",
   "referralBody": "Govera kodhi yako. Shamwari yako inowana {count, plural, =1{ongororo 1 yekuwedzera} other{ongororo {count} dzekuwedzera}} ipapo ipapo, uye newe unowana zvakafanana mushure meongororo yayo yekutanga.",
   "referralYourCode": "Kodhi yako",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Tora mufananidzo wesheya",
   "onboardBody1": "Skrini yeapp yebhurokeri, pepanhau kana logo yekambani zvakakwana: WhatStock inoziva sheya yobva yakuratidza mutengo wayo, girafu nenhamba dzinokosha.",
   "onboardTitle2": "Inzwisisa mumaminitsi mashoma",
-  "onboardBody2": "Ongororo yeAI inotsanangura zvinofambisa sheya, njodzi, kukosha kwayo uye zviitiko zvitatu zvekuti mutengo ungaendepi, ine zvinyorwa zvainobva uye mumutauro wako.",
+  "onboardBody2": "Ongororo yeAI inotsanangura zvinofambisa sheya, njodzi, kukosha kwayo uye zviitiko zvitatu zvemuenzaniso zvekuti mutengo ungafamba sei, ine zvinyorwa zvainobva uye mumutauro wako.",
   "onboardTitle3": "Ramba uchiziva zviri kuitika",
   "onboardBody3": "Zvaunofarira, potiforiyo yako nezviziviso zvemutengo zvinokuzivisa nguva dzose. Ongororo dzako dzinogara pamudziyo wako, dzakagadzirira kuvhurwa zvakare.",
   "onboardNext": "Inotevera",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Chii chakaipa? (kana uchida)",
   "aiReportPrivacy": "Tinogamuchira mavara emhinduro iyi nechinyorwa chako — pasina akaundi yako — kuti tigoiongorora.",
   "aiReportSend": "Tumira mushumo",
-  "aiReportThanks": "Tatenda — tichazviongorora."
+  "aiReportThanks": "Tatenda — tichazviongorora.",
+  "aiPortfolioDisclaimer": "Ruzivo rwese-rwese rwakagadzirwa neAI nezve kuumbwa kwepotiforiyo yako. Harufungi zvinangwa zvako, mari yako kana mamiriro emitero yako, uye harusi zano rakanangana newe kana zano rekuisa mari.",
+  "briefNotificationTitle": "Pfupiso yeAI · Nhasi nemasheya ako"
 }

@@ -391,12 +391,12 @@
   "searchAnalyses": "Bincika nazarinka",
   "deleteAnalysis": "Share",
   "analysisDeleted": "An share nazarin {symbol}",
-  "keyLevelAlertHint": "Taɓa wani mataki don samun faɗakarwa idan farashi ya kai shi.",
+  "keyLevelAlertHint": "Taɓa wani mataki da AI ya ƙiyasta don samun faɗakarwa idan farashi ya kai shi.",
   "shareAnalysisTitle": "Raba nazari",
   "shareAsImage": "Raba a matsayin hoto",
   "shareAsText": "Raba a matsayin rubutu",
   "shareCardFooter": "An yi da WhatStock",
-  "shareCardDisclaimer": "Nazarin AI · ba shawarar zuba jari ba ne",
+  "shareCardDisclaimer": "Nazarin AI · misalan yanayi, ba hasashe ba · ba shawarar zuba jari ba ne",
   "referralTitle": "Gayyaci abokai",
   "referralBody": "Raba lambarka. Abokinka zai samu {count, plural, =1{ƙarin nazari 1} other{ƙarin nazari {count}}} nan take, kai ma za ka samu haka bayan nazarinsa na farko.",
   "referralYourCode": "Lambarka",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Ɗauki hoton hannun jari",
   "onboardBody1": "Allon manhajar broker, jarida ko tambarin kamfani ya isa: WhatStock zai gane hannun jarin ya nuna maka farashinsa, jadawalinsa da muhimman alƙaluma.",
   "onboardTitle2": "Fahimta cikin mintuna kaɗan",
-  "onboardBody2": "Nazarin AI yana bayyana abin da ke motsa hannun jarin, haɗurran da ke tattare da shi, ƙimarsa da hasashe uku na inda farashin zai iya dosa, tare da majiyoyi kuma da harshenka.",
+  "onboardBody2": "Nazarin AI yana bayyana abin da ke motsa hannun jarin, haɗurran da ke tattare da shi, ƙimarsa da misalai uku na yadda farashin zai iya motsawa, tare da majiyoyi kuma da harshenka.",
   "onboardTitle3": "Ka kasance da labari koyaushe",
   "onboardBody3": "Abubuwan da aka fi so, jakar hannun jarinka da faɗakarwar farashi za su sanar da kai. Nazarinka suna nan a na'urarka, a shirye don ka sake buɗe su.",
   "onboardNext": "Na gaba",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Me ke damun ta? (ba dole ba)",
   "aiReportPrivacy": "Muna karɓar rubutun wannan amsar da bayaninka — ba tare da asusunka ba — don mu duba ta.",
   "aiReportSend": "Aika rahoto",
-  "aiReportThanks": "Mun gode — za mu duba ta."
+  "aiReportThanks": "Mun gode — za mu duba ta.",
+  "aiPortfolioDisclaimer": "Bayanan gaba ɗaya da AI ya ƙirƙira game da tsarin jakar hannun jarinka. Ba sa la'akari da burinka, yanayin kuɗinka ko na harajinka, kuma ba shawara ta musamman gare ka ba ne, ba kuma shawarar zuba jari ba ne.",
+  "briefNotificationTitle": "Taƙaitaccen AI · Yau tare da hannun jarinka"
 }

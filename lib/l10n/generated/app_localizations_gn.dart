@@ -1447,7 +1447,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Eikutu peteĩ nivel ehupyty hag̃ua maranduʼi tepy ohupytývo upe nivel.';
+      'Eikutu peteĩ nivel AI ohaʼãva ehupyty hag̃ua maranduʼi tepy ohupytývo upe nivel.';
 
   @override
   String get shareAnalysisTitle => 'Emoherakuã jehesaʼỹijo';
@@ -1463,7 +1463,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'AI jehesaʼỹijo · ndahaʼéi ñemoñeʼẽ inversión rehegua';
+      'AI jehesaʼỹijo · tape techapyrã, ndahaʼéi oúvarã jeikuaa · ndahaʼéi ñemoñeʼẽ inversión rehegua';
 
   @override
   String get referralTitle => 'Eguenoi ne angirũnguérape';
@@ -1540,7 +1540,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI jehesaʼỹijo omyesakã mbaʼépa omýi pe acción, umi kyhyjeha, mbaʼeichaitépa ovale ha mbohapy tape ikatúva ohasa ijepy – marandu ypykuéra ndive ha ne ñeʼẽme.';
+      'AI jehesaʼỹijo omyesakã mbaʼépa omýi pe acción, umi kyhyjeha, mbaʼeichaitépa ovale ha mbohapy tape techapyrã mbaʼéichapa ikatu omýi ijepy – marandu ypykuéra ndive ha ne ñeʼẽme.';
 
   @override
   String get onboardTitle3 => 'Eikuaa meme opa mbaʼe';
@@ -3011,6 +3011,14 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Aguyje — rohechajeýta.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI omoheñói ko marandu opavavegua ne cartera ñemohenda rehegua. Ndohechái ne jehupytyrã, ne viru térã ne impuesto rehegua, ha ndahaʼéi ñemoñeʼẽ ndéve guarãnte térã ñemoñeʼẽ inversión rehegua.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI momichĩmbyre · Ko árape ne acción-kuéra ndive';
 
   @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';

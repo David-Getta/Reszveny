@@ -1433,7 +1433,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'ចុចកម្រិតតម្លៃណាមួយ ដើម្បីទទួលការជូនដំណឹងនៅពេលតម្លៃដល់កម្រិតនោះ។';
+      'ចុចកម្រិតតម្លៃណាមួយដែល AI បានប៉ាន់ស្មាន ដើម្បីទទួលការជូនដំណឹងនៅពេលតម្លៃដល់កម្រិតនោះ។';
 
   @override
   String get shareAnalysisTitle => 'ចែករំលែកការវិភាគ';
@@ -1448,7 +1448,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get shareCardFooter => 'បង្កើតដោយ WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'ការវិភាគ AI · មិនមែនជាដំបូន្មានវិនិយោគទេ';
+  String get shareCardDisclaimer =>
+      'ការវិភាគ AI · សេណារីយ៉ូគំរូ មិនមែនជាការព្យាករណ៍ទេ · មិនមែនជាដំបូន្មានវិនិយោគទេ';
 
   @override
   String get referralTitle => 'អញ្ជើញមិត្តភក្តិ';
@@ -1522,7 +1523,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'ការវិភាគ AI ពន្យល់ពីអ្វីដែលធ្វើឱ្យភាគហ៊ុនប្រែប្រួល ហានិភ័យ ការវាយតម្លៃ និងសេណារីយ៉ូបីអំពីទិសដៅដែលតម្លៃអាចទៅ ដោយមានប្រភពឯកសារ និងជាភាសារបស់អ្នក។';
+      'ការវិភាគ AI ពន្យល់ពីអ្វីដែលធ្វើឱ្យភាគហ៊ុនប្រែប្រួល ហានិភ័យ ការវាយតម្លៃ និងសេណារីយ៉ូគំរូបីអំពីរបៀបដែលតម្លៃអាចប្រែប្រួល ដោយមានប្រភពឯកសារ និងជាភាសារបស់អ្នក។';
 
   @override
   String get onboardTitle3 => 'តាមដានជានិច្ច';
@@ -2983,6 +2984,14 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'អរគុណ — យើងនឹងពិនិត្យមើល។';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'ព័ត៌មានទូទៅដែលបង្កើតដោយ AI អំពីសមាសភាពផលប័ត្ររបស់អ្នក។ វាមិនគិតពីគោលដៅ ស្ថានភាពហិរញ្ញវត្ថុ ឬស្ថានភាពពន្ធរបស់អ្នកទេ ហើយមិនមែនជាការណែនាំផ្ទាល់ខ្លួន ឬដំបូន្មានវិនិយោគទេ។';
+
+  @override
+  String get briefNotificationTitle =>
+      'សេចក្ដីសង្ខេប AI · ថ្ងៃនេះជាមួយភាគហ៊ុនរបស់អ្នក';
 
   @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';

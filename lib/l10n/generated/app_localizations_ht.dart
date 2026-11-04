@@ -1442,7 +1442,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Peze yon nivo pou resevwa yon alèt lè pri a rive la.';
+      'Peze yon nivo AI estime pou resevwa yon alèt lè pri a rive la.';
 
   @override
   String get shareAnalysisTitle => 'Pataje analiz la';
@@ -1457,7 +1457,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get shareCardFooter => 'Fèt ak WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Analiz AI · se pa yon konsèy envestisman';
+  String get shareCardDisclaimer =>
+      'Analiz AI · senaryo egzanp, se pa prediksyon · se pa yon konsèy envestisman';
 
   @override
   String get referralTitle => 'Envite zanmi';
@@ -1534,7 +1535,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Analiz AI a eksplike sa ki fè aksyon an bouje, risk yo, valè li ak twa senaryo sou kote pri a ka ale, avèk sous epi nan lang ou.';
+      'Analiz AI a eksplike sa ki fè aksyon an bouje, risk yo, valè li ak twa senaryo egzanp sou kijan pri a ka bouje, avèk sous epi nan lang ou.';
 
   @override
   String get onboardTitle3 => 'Toujou okouran';
@@ -3004,6 +3005,13 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Mèsi — n ap egzamine l.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Enfòmasyon jeneral AI jenere sou konpozisyon pòtfèy ou. Li pa pran objektif ou, sitiyasyon finansye ou oswa sitiyasyon taks ou an kont, epi se pa yon rekòmandasyon pèsonèl ni yon konsèy envestisman.';
+
+  @override
+  String get briefNotificationTitle => 'Rezime AI · Jodi a ak aksyon ou yo';
 
   @override
   String get portfolioGoalSet => 'Mete yon objektif';

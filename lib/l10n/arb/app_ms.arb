@@ -391,12 +391,12 @@
   "searchAnalyses": "Cari analisis anda",
   "deleteAnalysis": "Padam",
   "analysisDeleted": "Analisis {symbol} dipadam",
-  "keyLevelAlertHint": "Ketik paras untuk menerima amaran apabila harga mencapainya.",
+  "keyLevelAlertHint": "Ketik paras yang dianggarkan oleh AI untuk menerima amaran apabila harga mencapainya.",
   "shareAnalysisTitle": "Kongsi analisis",
   "shareAsImage": "Kongsi sebagai imej",
   "shareAsText": "Kongsi sebagai teks",
   "shareCardFooter": "Dibuat dengan WhatStock",
-  "shareCardDisclaimer": "Analisis AI · bukan nasihat pelaburan",
+  "shareCardDisclaimer": "Analisis AI · senario ilustrasi, bukan ramalan · bukan nasihat pelaburan",
   "referralTitle": "Jemput rakan",
   "referralBody": "Kongsi kod anda. Rakan anda terus mendapat {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}, dan anda mendapat jumlah yang sama selepas analisis pertama mereka.",
   "referralYourCode": "Kod anda",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Ambil foto saham",
   "onboardBody1": "Skrin aplikasi broker, surat khabar atau logo syarikat sudah memadai: WhatStock mengenal pasti saham itu dan menunjukkan harga, carta serta angka utamanya.",
   "onboardTitle2": "Fahami dalam beberapa minit",
-  "onboardBody2": "Analisis AI menerangkan apa yang menggerakkan saham, risikonya, penilaiannya dan tiga senario ke mana harga mungkin bergerak, lengkap dengan sumber dan dalam bahasa anda.",
+  "onboardBody2": "Analisis AI menerangkan apa yang menggerakkan saham, risikonya, penilaiannya dan tiga senario ilustrasi tentang bagaimana harga mungkin bergerak, lengkap dengan sumber dan dalam bahasa anda.",
   "onboardTitle3": "Sentiasa ikuti perkembangan",
   "onboardBody3": "Kegemaran, portfolio anda dan amaran harga memastikan anda sentiasa dimaklumkan. Analisis anda kekal pada peranti anda, sedia untuk dibuka semula.",
   "onboardNext": "Seterusnya",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Apa yang salah? (pilihan)",
   "aiReportPrivacy": "Kami menerima teks jawapan ini dan nota anda — tanpa akaun anda — supaya kami dapat menyemaknya.",
   "aiReportSend": "Hantar laporan",
-  "aiReportThanks": "Terima kasih — kami akan menyemaknya."
+  "aiReportThanks": "Terima kasih — kami akan menyemaknya.",
+  "aiPortfolioDisclaimer": "Maklumat umum yang dijana oleh AI tentang komposisi portfolio anda. Ia tidak mengambil kira matlamat, kewangan atau situasi cukai anda dan bukan cadangan peribadi atau nasihat pelaburan.",
+  "briefNotificationTitle": "Ringkasan AI · Hari ini dengan saham anda"
 }

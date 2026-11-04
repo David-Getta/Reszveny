@@ -1443,7 +1443,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Qiymət səviyyəyə çatanda bildiriş almaq üçün səviyyəyə toxunun.';
+      'Qiymət səviyyəyə çatanda bildiriş almaq üçün AI tərəfindən təxmin edilən səviyyəyə toxunun.';
 
   @override
   String get shareAnalysisTitle => 'Təhlili paylaş';
@@ -1458,7 +1458,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get shareCardFooter => 'WhatStock ilə hazırlanıb';
 
   @override
-  String get shareCardDisclaimer => 'AI təhlili · investisiya məsləhəti deyil';
+  String get shareCardDisclaimer =>
+      'AI təhlili · nümunəvi ssenarilər, proqnoz deyil · investisiya məsləhəti deyil';
 
   @override
   String get referralTitle => 'Dostları dəvət edin';
@@ -1536,7 +1537,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI təhlili səhmi nəyin hərəkətə gətirdiyini, riskləri, dəyərləndirməni və qiymətin hara gedə biləcəyinə dair üç ssenarini izah edir – mənbələrlə və sizin dilinizdə.';
+      'AI təhlili səhmi nəyin hərəkətə gətirdiyini, riskləri, dəyərləndirməni və qiymətin necə dəyişə biləcəyinə dair üç nümunəvi ssenarini izah edir – mənbələrlə və sizin dilinizdə.';
 
   @override
   String get onboardTitle3 => 'Həmişə xəbərdar olun';
@@ -3006,6 +3007,13 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Təşəkkürlər — yoxlayacağıq.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Portfelinizin tərkibi haqqında AI tərəfindən yaradılmış ümumi məlumat. Məqsədlərinizi, maliyyə vəziyyətinizi və ya vergi vəziyyətinizi nəzərə almır, fərdi tövsiyə və ya investisiya məsləhəti deyil.';
+
+  @override
+  String get briefNotificationTitle => 'AI xülasəsi · Bu gün səhmlərinizlə';
 
   @override
   String get portfolioGoalSet => 'Hədəf təyin et';

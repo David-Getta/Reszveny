@@ -1453,7 +1453,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Tippe auf eine Kursmarke, um einen Alarm zu erhalten, wenn der Kurs sie erreicht.';
+      'Tippe auf eine von der KI geschätzte Kursmarke, um einen Alarm zu erhalten, wenn der Kurs sie erreicht.';
 
   @override
   String get shareAnalysisTitle => 'Analyse teilen';
@@ -1468,7 +1468,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get shareCardFooter => 'Erstellt mit WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'KI-Analyse · keine Anlageberatung';
+  String get shareCardDisclaimer =>
+      'KI-Analyse · illustrative Szenarien, keine Prognosen · keine Anlageberatung';
 
   @override
   String get referralTitle => 'Freunde einladen';
@@ -1546,7 +1547,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Die KI-Analyse erklärt dir, was die Aktie bewegt, welche Risiken es gibt, wie sie bewertet ist und in drei Szenarien, wohin sich der Kurs entwickeln könnte – mit Quellen und in deiner Sprache.';
+      'Die KI-Analyse erklärt dir, was die Aktie bewegt, welche Risiken es gibt, wie sie bewertet ist und in drei illustrativen Szenarien, wie sich der Kurs entwickeln könnte – mit Quellen und in deiner Sprache.';
 
   @override
   String get onboardTitle3 => 'Immer auf dem Laufenden';
@@ -3022,6 +3023,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Danke – wir sehen es uns an.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'KI-generierte, allgemeine Informationen zur Zusammensetzung deines Portfolios. Sie berücksichtigen weder deine Ziele noch deine finanzielle oder steuerliche Situation und sind weder eine persönliche Empfehlung noch Anlageberatung.';
+
+  @override
+  String get briefNotificationTitle =>
+      'KI-Zusammenfassung · Heute bei deinen Aktien';
 
   @override
   String get portfolioGoalSet => 'Ziel festlegen';

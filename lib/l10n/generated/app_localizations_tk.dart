@@ -1443,7 +1443,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Baha derejä ýetende duýduryş almak üçin derejä basyň.';
+      'Baha AI tarapyndan çaklanan derejä ýetende duýduryş almak üçin şol derejä basyň.';
 
   @override
   String get shareAnalysisTitle => 'Seljermäni paýlaş';
@@ -1458,7 +1458,8 @@ class AppLocalizationsTk extends AppLocalizations {
   String get shareCardFooter => 'WhatStock bilen döredildi';
 
   @override
-  String get shareCardDisclaimer => 'AI seljermesi · maýa goýum maslahaty däl';
+  String get shareCardDisclaimer =>
+      'AI seljermesi · mysal ssenariýalar, çaklama däl · maýa goýum maslahaty däl';
 
   @override
   String get referralTitle => 'Dostlaryňy çagyr';
@@ -1534,7 +1535,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI seljermesi paýnamany nämäniň hereketlendirýändigini, töwekgelçilikleri, bahalandyrmany we bahanyň nirä gidip biljekdigi barada üç ssenariýany düşündirýär – çeşmeler bilen we siziň diliňizde.';
+      'AI seljermesi paýnamany nämäniň hereketlendirýändigini, töwekgelçilikleri, bahalandyrmany we bahanyň nähili hereket edip biljekdigi barada üç mysal ssenariýany düşündirýär – çeşmeler bilen we siziň diliňizde.';
 
   @override
   String get onboardTitle3 => 'Hemişe habarly boluň';
@@ -3007,6 +3008,14 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Sag boluň — biz ony barlarys.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Portfeliňiziň düzümi barada AI tarapyndan döredilen umumy maglumat. Ol siziň maksatlaryňyzy, maliýe ýagdaýyňyzy ýa-da salgyt ýagdaýyňyzy hasaba almaýar we şahsy teklip ýa-da maýa goýum maslahaty däldir.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI jemlemesi · Şu gün paýnamalaryňyz bilen';
 
   @override
   String get portfolioGoalSet => 'Maksat goý';

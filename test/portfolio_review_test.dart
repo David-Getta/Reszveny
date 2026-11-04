@@ -93,6 +93,11 @@ void main() {
     expect(body.containsKey('tools'), isFalse);
     expect((body['output_config'] as Map)['format'], isNotNull);
     expect(PortfolioReviewer.systemPrompt, contains('rather than telling the reader what to buy or sell'));
+    // Általános tájékoztatás, nem személyre szabott ajánlás (MiFID II): nincs teendő, súly, konkrét papír.
+    expect(PortfolioReviewer.systemPrompt, contains('not a personal recommendation'));
+    expect(PortfolioReviewer.systemPrompt, contains('do not name specific stocks or funds'));
+    expect(PortfolioReviewer.systemPrompt, contains('Questions to look into'));
+    expect(PortfolioReviewer.systemPrompt, isNot(contains('sensible investor would think about next')));
   });
 
   testWidgets('review the portfolio: one analysis is used, the sections show, the result is kept', (tester) async {

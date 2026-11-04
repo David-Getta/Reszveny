@@ -171,6 +171,16 @@ class _AskSheetState extends State<_AskSheet> {
                   ],
                 ),
               ),
+              // A figyelmeztetés az első kérdés után is látszik (a bevezető szöveg addigra eltűnik).
+              if (thread.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 6),
+                  child: Text(
+                    l10n.aiDisclaimer,
+                    key: const ValueKey('ask-disclaimer'),
+                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                  ),
+                ),
               const Divider(height: 1),
               SafeArea(
                 top: false,

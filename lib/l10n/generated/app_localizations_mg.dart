@@ -1455,7 +1455,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Tsindrio ny haavo iray mba handraisana fanairana rehefa tonga eo ny vidiny.';
+      'Tsindrio ny haavo iray novinavinain\'ny AI mba handraisana fanairana rehefa tonga eo ny vidiny.';
 
   @override
   String get shareAnalysisTitle => 'Hizarao ny fandalinana';
@@ -1471,7 +1471,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Fandalinana AI · tsy torohevitra momba ny fampiasam-bola';
+      'Fandalinana AI · toe-javatra ohatra, tsy vinavina · tsy torohevitra momba ny fampiasam-bola';
 
   @override
   String get referralTitle => 'Asao ny namanao';
@@ -1548,7 +1548,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Ny Fandalinana AI dia manazava izay mampihetsika ny aksiona, ny loza mety hitranga, ny sandany ary toe-javatra telo momba ny mety halehan\'ny vidiny – miaraka amin\'ny loharano sy amin\'ny fiteninao.';
+      'Ny Fandalinana AI dia manazava izay mampihetsika ny aksiona, ny loza mety hitranga, ny sandany ary toe-javatra telo ho ohatra momba ny mety hihetsehan\'ny vidiny – miaraka amin\'ny loharano sy amin\'ny fiteninao.';
 
   @override
   String get onboardTitle3 => 'Fantaro foana ny vaovao';
@@ -2083,7 +2083,7 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
-  String get briefTitle => 'Anio miaraka amin’ny lozamanao';
+  String get briefTitle => 'Anio miaraka amin’ny aksionanao';
 
   @override
   String get briefButton => 'Fintino ny anio';
@@ -2352,7 +2352,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get briefAutoSubtitle =>
-      'Ny “Anio miaraka amin’ny lozamanao” dia mamorona ho azy aorian’ny 7:00 maraina raha mbola mandeha ny app; amin’ny solosaina, misy fampandrenesana milaza aminao izany. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.';
+      'Ny “Anio miaraka amin’ny aksionanao” dia mamorona ho azy aorian’ny 7:00 maraina raha mbola mandeha ny app; amin’ny solosaina, misy fampandrenesana milaza aminao izany. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.';
 
   @override
   String get targetsButton => 'Tanjona fizarana';
@@ -3028,6 +3028,14 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Misaotra — hodinihinay izany.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Fampahalalana ankapobeny novokarin\'ny AI momba ny firafitry ny kitapom-bolanao. Tsy mandinika ny tanjonao, ny toe-bolanao na ny raharaha ara-hetranao izy, ary tsy tolo-kevitra manokana ho anao na torohevitra momba ny fampiasam-bola.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Famintinana AI · Anio miaraka amin’ny aksionanao';
 
   @override
   String get portfolioGoalSet => 'Mametraha tanjona';

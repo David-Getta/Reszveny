@@ -391,12 +391,12 @@
   "searchAnalyses": "Ka raadi falanqaynahaaga",
   "deleteAnalysis": "Tirtir",
   "analysisDeleted": "Falanqaynta {symbol} waa la tirtiray",
-  "keyLevelAlertHint": "Taabo heer si aad u hesho digniin marka qiimuhu gaaro.",
+  "keyLevelAlertHint": "Taabo heer uu AI qiyaasay si aad u hesho digniin marka qiimuhu gaaro.",
   "shareAnalysisTitle": "La wadaag falanqaynta",
   "shareAsImage": "U wadaag sawir ahaan",
   "shareAsText": "U wadaag qoraal ahaan",
   "shareCardFooter": "Waxaa lagu sameeyay WhatStock",
-  "shareCardDisclaimer": "Falanqaynta AI · ma aha talo maalgashi",
+  "shareCardDisclaimer": "Falanqaynta AI · xaalado tusaale ah, ma aha saadaal · ma aha talo maalgashi",
   "referralTitle": "Casuun saaxiibbada",
   "referralBody": "La wadaag koodhkaaga. Saaxiibkaa wuxuu isla markiiba helayaa {count, plural, =1{1 falanqayn oo dheeraad ah} other{{count} falanqayn oo dheeraad ah}}, adiguna waxaad helaysaa isla intaas kadib falanqayntiisa ugu horreysa.",
   "referralYourCode": "Koodhkaaga",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Sawir saami",
   "onboardBody1": "Shaashadda app-ka dillaalka, wargeys ama astaanta shirkad ayaa ku filan: WhatStock wuxuu aqoonsadaa saamiga wuxuuna ku tusaa qiimihiisa, jaantuskiisa iyo tirooyinka muhiimka ah.",
   "onboardTitle2": "Ku fahan daqiiqado gudahood",
-  "onboardBody2": "Falanqaynta AI waxay sharraxdaa waxa dhaqaajiya saamiga, khataraha, qiimayntiisa iyo saddex xaaladood oo ku saabsan halka uu qiimuhu u socon karo, iyadoo leh ilo isla markaana ku qoran luqaddaada.",
+  "onboardBody2": "Falanqaynta AI waxay sharraxdaa waxa dhaqaajiya saamiga, khataraha, qiimayntiisa iyo saddex xaaladood oo tusaale ah oo ku saabsan sida qiimuhu u dhaqaaqi karo, iyadoo leh ilo isla markaana ku qoran luqaddaada.",
   "onboardTitle3": "La soco wax walba",
   "onboardBody3": "Kuwa la jecel yahay, portfoliyahaaga iyo digniinaha qiimaha ayaa kuu sheegaya wixii dhaca. Falanqaynahaagu waxay ku keydsan yihiin qalabkaaga, diyaarna u ah in mar kale la furo.",
   "onboardNext": "Xiga",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Maxaa khaldan? (ikhtiyaari)",
   "aiReportPrivacy": "Waxaan helnaa qoraalka jawaabtan iyo qoraalkaaga — akoonkaaga la'aantiis — si aan dib ugu eegno.",
   "aiReportSend": "Dir warbixinta",
-  "aiReportThanks": "Mahadsanid — dib ayaan u eegi doonnaa."
+  "aiReportThanks": "Mahadsanid — dib ayaan u eegi doonnaa.",
+  "aiPortfolioDisclaimer": "Macluumaad guud oo uu AI sameeyay oo ku saabsan qaab-dhismeedka portfoliyadaada. Ma tixgeliso yoolalkaaga, xaaladdaada dhaqaale ama xaaladdaada canshuurta, mana aha talo kuu gaar ah ama talo maalgashi.",
+  "briefNotificationTitle": "Soo koobid AI · Maanta iyo saamiyadaada"
 }

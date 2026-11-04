@@ -1463,7 +1463,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Atinge un nivel ca să primești o alertă când prețul ajunge la el.';
+      'Atinge un nivel estimat de AI ca să primești o alertă când prețul ajunge la el.';
 
   @override
   String get shareAnalysisTitle => 'Distribuie analiza';
@@ -1478,7 +1478,8 @@ class AppLocalizationsRo extends AppLocalizations {
   String get shareCardFooter => 'Creat cu WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Analiză AI · nu este sfat de investiții';
+  String get shareCardDisclaimer =>
+      'Analiză AI · scenarii ilustrative, nu prognoze · nu este sfat de investiții';
 
   @override
   String get referralTitle => 'Invită prieteni';
@@ -1558,7 +1559,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Analiza AI explică ce mișcă acțiunea, riscurile, evaluarea și trei scenarii despre direcția în care ar putea merge prețul, cu surse și în limba ta.';
+      'Analiza AI explică ce mișcă acțiunea, riscurile, evaluarea și trei scenarii ilustrative despre cum s-ar putea mișca prețul, cu surse și în limba ta.';
 
   @override
   String get onboardTitle3 => 'Rămâi mereu la curent';
@@ -3043,6 +3044,13 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Mulțumim — îl vom verifica.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Informații generale generate de AI despre structura portofoliului tău. Nu țin cont de obiectivele, situația financiară sau situația ta fiscală și nu reprezintă o recomandare personalizată sau un sfat de investiții.';
+
+  @override
+  String get briefNotificationTitle => 'Rezumat AI · Azi cu acțiunile tale';
 
   @override
   String get portfolioGoalSet => 'Setează un obiectiv';

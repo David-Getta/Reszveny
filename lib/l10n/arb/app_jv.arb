@@ -391,12 +391,12 @@
   "searchAnalyses": "Goleki analisismu",
   "deleteAnalysis": "Busak",
   "analysisDeleted": "Analisis {symbol} wis dibusak",
-  "keyLevelAlertHint": "Tutul level kanggo éntuk pèngetan nalika rega tekan level kasebut.",
+  "keyLevelAlertHint": "Tutul level kiraan AI kanggo éntuk pèngetan nalika rega tekan level kasebut.",
   "shareAnalysisTitle": "Bagekake analisis",
   "shareAsImage": "Bagekake minangka gambar",
   "shareAsText": "Bagekake minangka teks",
   "shareCardFooter": "Digawe nganggo WhatStock",
-  "shareCardDisclaimer": "Analisis AI · dudu saran investasi",
+  "shareCardDisclaimer": "Analisis AI · skenario ilustrasi, dudu ramalan · dudu saran investasi",
   "referralTitle": "Undang kanca",
   "referralBody": "Bagekake kodhemu. Kancamu langsung entuk {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}, lan kowe entuk semono uga sawise analisis pisanane.",
   "referralYourCode": "Kodhemu",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Fotonen saham",
   "onboardBody1": "Cukup layar aplikasi broker, koran utawa logo perusahaan: WhatStock bakal ngenali sahamé lan nuduhaké rega, grafik lan angka-angka pentingé.",
   "onboardTitle2": "Ngerti sajroning sawetara menit",
-  "onboardBody2": "Analisis AI njlèntrèhaké apa sing nggerakaké saham, risikoné, valuasiné lan telung skenario arah rega, kanthi sumber lan nganggo basamu.",
+  "onboardBody2": "Analisis AI njlèntrèhaké apa sing nggerakaké saham, risikoné, valuasiné lan telung skenario ilustrasi babagan carane rega bisa obah, kanthi sumber lan nganggo basamu.",
   "onboardTitle3": "Tansah ngerti kabar anyar",
   "onboardBody3": "Favorit, portofoliomu lan pèngetan rega bakal ngabari kowé. Analisismu tetep ana ing piranti, siap dibukak manèh.",
   "onboardNext": "Sabanjuré",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Apa sing salah? (ora wajib)",
   "aiReportPrivacy": "Kita nampa teks wangsulan iki lan cathetan sampeyan — tanpa akun sampeyan — supaya bisa dipriksa.",
   "aiReportSend": "Kirim laporan",
-  "aiReportThanks": "Matur nuwun — bakal kita priksa."
+  "aiReportThanks": "Matur nuwun — bakal kita priksa.",
+  "aiPortfolioDisclaimer": "Informasi umum sing digawe dening AI babagan komposisi portofolio sampeyan. Iki ora nimbang tujuan, kahanan finansial, utawa kahanan pajek sampeyan, lan dudu rekomendasi pribadi utawa saran investasi.",
+  "briefNotificationTitle": "Ringkesan AI · Dina iki karo saham sampeyan"
 }

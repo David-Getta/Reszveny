@@ -1415,7 +1415,8 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'ዋጋ ናብቲ ደረጃ ምስ በጽሐ መጠንቀቕታ ንምርካብ ሓደ ደረጃ ጠውቑ።';
+  String get keyLevelAlertHint =>
+      'ዋጋ ናብቲ ደረጃ ምስ በጽሐ መጠንቀቕታ ንምርካብ ሓደ ብAI ዝተገመተ ደረጃ ጠውቑ።';
 
   @override
   String get shareAnalysisTitle => 'ትንተና ኣካፍል';
@@ -1430,7 +1431,8 @@ class AppLocalizationsTi extends AppLocalizations {
   String get shareCardFooter => 'ብWhatStock ዝተሰርሐ';
 
   @override
-  String get shareCardDisclaimer => 'ትንተና AI · ምኽሪ ወፍሪ ኣይኮነን';
+  String get shareCardDisclaimer =>
+      'ትንተና AI · ኣብነታዊ ኩነታት፣ ትንቢት ኣይኮነን · ምኽሪ ወፍሪ ኣይኮነን';
 
   @override
   String get referralTitle => 'ኣዕሩኽ ዓድም';
@@ -1506,7 +1508,7 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'ትንተና AI እንታይ ነቲ ኣክሲዮን ከም ዘንቀሳቕሶ፣ ሓደጋታቱ፣ ግምት ዋጋኡን ዋጋ ናበይ ክኸይድ ከም ዝኽእል ሰለስተ ኩነታትን፣ ምስ ምንጭታትን ብቋንቋኹምን ይገልጸልኩም።';
+      'ትንተና AI እንታይ ነቲ ኣክሲዮን ከም ዘንቀሳቕሶ፣ ሓደጋታቱ፣ ግምት ዋጋኡን ዋጋ ብኸመይ ክንቀሳቐስ ከም ዝኽእል ሰለስተ ኣብነታዊ ኩነታትን፣ ምስ ምንጭታትን ብቋንቋኹምን ይገልጸልኩም።';
 
   @override
   String get onboardTitle3 => 'ኩሉ ግዜ ሓበሬታ ይሃልወኩም';
@@ -2964,6 +2966,13 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'የቐንየልና — ክንግምግሞ ኢና።';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'ብዛዕባ ኣቀማምጣ ፖርትፎሊዮኹም ብAI ዝተፈጥረ ሓፈሻዊ ሓበሬታ። ንዕላማታትኩም፣ ፋይናንሳዊ ኩነታትኩም ወይ ኩነታት ግብርኹም ኣብ ግምት ኣየእቱን፣ ውልቃዊ ለበዋ ወይ ምኽሪ ወፍሪ ድማ ኣይኮነን።';
+
+  @override
+  String get briefNotificationTitle => 'ናይ AI ጽማቝ · ሎሚ ምስ ኣክስዮናትኩም';
 
   @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';

@@ -68,6 +68,7 @@ String reportShareText(
   required String companyName,
   required String generatedLine,
   required String disclaimer,
+  String? scenarioNote,
 }) {
   final b = StringBuffer();
   final name = companyName.isEmpty || companyName == r.symbol ? r.symbol : '$companyName (${r.symbol})';
@@ -92,6 +93,8 @@ String reportShareText(
     for (final bullet in outlook.bullets.take(4)) {
       b.writeln('• $bullet');
     }
+    // A forgatókönyvek mellé a figyelmeztetés is: szemléltető sávok, nem előrejelzés.
+    if (scenarioNote != null) b.writeln(scenarioNote);
   }
   b
     ..writeln()

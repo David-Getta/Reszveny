@@ -391,12 +391,12 @@
   "searchAnalyses": "Caută în analizele tale",
   "deleteAnalysis": "Șterge",
   "analysisDeleted": "Analiza {symbol} a fost ștearsă",
-  "keyLevelAlertHint": "Atinge un nivel ca să primești o alertă când prețul ajunge la el.",
+  "keyLevelAlertHint": "Atinge un nivel estimat de AI ca să primești o alertă când prețul ajunge la el.",
   "shareAnalysisTitle": "Distribuie analiza",
   "shareAsImage": "Distribuie ca imagine",
   "shareAsText": "Distribuie ca text",
   "shareCardFooter": "Creat cu WhatStock",
-  "shareCardDisclaimer": "Analiză AI · nu este sfat de investiții",
+  "shareCardDisclaimer": "Analiză AI · scenarii ilustrative, nu prognoze · nu este sfat de investiții",
   "referralTitle": "Invită prieteni",
   "referralBody": "Distribuie codul tău. Prietenul tău primește imediat {count, plural, one{{count} analiză suplimentară} few{{count} analize suplimentare} other{{count} de analize suplimentare}}, iar tu primești la fel după prima sa analiză.",
   "referralYourCode": "Codul tău",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Fotografiază o acțiune",
   "onboardBody1": "Ajunge un ecran de broker, un ziar sau un logo de companie: WhatStock recunoaște acțiunea și îți arată prețul, graficul și cifrele-cheie.",
   "onboardTitle2": "Înțelege totul în câteva minute",
-  "onboardBody2": "Analiza AI explică ce mișcă acțiunea, riscurile, evaluarea și trei scenarii despre direcția în care ar putea merge prețul, cu surse și în limba ta.",
+  "onboardBody2": "Analiza AI explică ce mișcă acțiunea, riscurile, evaluarea și trei scenarii ilustrative despre cum s-ar putea mișca prețul, cu surse și în limba ta.",
   "onboardTitle3": "Rămâi mereu la curent",
   "onboardBody3": "Favoritele, portofoliul tău și alertele de preț te țin la curent. Analizele tale rămân pe dispozitivul tău, gata să fie redeschise.",
   "onboardNext": "Înainte",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Ce nu e în regulă? (opțional)",
   "aiReportPrivacy": "Primim textul acestui răspuns și nota ta — fără legătură cu contul tău — ca să îl putem verifica.",
   "aiReportSend": "Trimite raportul",
-  "aiReportThanks": "Mulțumim — îl vom verifica."
+  "aiReportThanks": "Mulțumim — îl vom verifica.",
+  "aiPortfolioDisclaimer": "Informații generale generate de AI despre structura portofoliului tău. Nu țin cont de obiectivele, situația financiară sau situația ta fiscală și nu reprezintă o recomandare personalizată sau un sfat de investiții.",
+  "briefNotificationTitle": "Rezumat AI · Azi cu acțiunile tale"
 }

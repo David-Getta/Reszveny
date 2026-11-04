@@ -391,12 +391,12 @@
   "searchAnalyses": "Keba mu makonkonona ebe",
   "deleteAnalysis": "Jimija",
   "analysisDeleted": "Dikonkonona dia {symbol} diajimijibua",
-  "keyLevelAlertHint": "Finya niveau bua kupeta alerte padi mushinga ufika kuine.",
+  "keyLevelAlertHint": "Finya niveau udi AI mubadile bua kupeta alerte padi mushinga ufika kuine.",
   "shareAnalysisTitle": "Abanya dikonkonona",
   "shareAsImage": "Abanya bu tshimfuanyi",
   "shareAsText": "Abanya bu mifundu",
   "shareCardFooter": "Bienze ne WhatStock",
-  "shareCardDisclaimer": "Dikonkonona dia AI · kadiena mibelu ya kuteka mfranga",
+  "shareCardDisclaimer": "Dikonkonona dia AI · malu a tshilejilu, ki mbia bulelela to · kadiena mibelu ya kuteka mfranga",
   "referralTitle": "Bikila balunda",
   "referralBody": "Abanya code webe. Mulunda webe neapete {count, plural, =1{dikonkonona 1 dia kubueja} other{makonkonona {count} a kubueja}} diakamue, ne wewe neupete bia muomumue panyima pa dikonkonona diende dia kumpala.",
   "referralYourCode": "Code webe",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Ambula foto wa action",
   "onboardBody1": "Ekrâ wa application wa broker, tshikandakanda anyi logo wa kompanyi bidi bikumbane: WhatStock udi umanya action eu ne ukuleja mushinga wayi, grafiki ne bimfuanyi bia mushinga.",
   "onboardTitle2": "Umvua bimpe mu minite mikese",
-  "onboardBody2": "Dikonkonona dia AI didi diumvuija tshidi tshinyungisha action, njiwu, mushinga wayi ne malu asatu adi mua kuenzeka ku mushinga, ne miaba ya mumanyisha ne mu muakulu webe.",
+  "onboardBody2": "Dikonkonona dia AI didi diumvuija tshidi tshinyungisha action, njiwu, mushinga wayi ne malu asatu a tshilejilu a mudi mushinga mua kushintuluka, ne miaba ya mumanyisha ne mu muakulu webe.",
   "onboardTitle3": "Ikala mumanye malu onso",
   "onboardBody3": "Biudi musue, portefeuille webe ne alerte ya mushinga bidi bikumanyisha. Makonkonona ebe adi ashala mu tshiamu tshiebe, alongolola bua kuabulula kabidi.",
   "onboardNext": "Bidi bilonda",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Tshinyi tshidi katshiyi bimpe? (bikala musue)",
   "aiReportPrivacy": "Tudi tupeta mifundu ya diandamuna edi ne mufundu webe — kakuyi compte webe — bua tumone.",
   "aiReportSend": "Tuma lapolo",
-  "aiReportThanks": "Tuasakidila — netumone."
+  "aiReportThanks": "Tuasakidila — netumone.",
+  "aiPortfolioDisclaimer": "Mamanyisha a mu bujima adi AI mufunde bua mudi portefeuille webe muenza. Kaatangidi bipatshila biebe, malu a makuta ebe anyi bitadi biebe to, ne kadiena mibelu ya bebe nkayebe anyi mibelu ya kuteka mfranga.",
+  "briefNotificationTitle": "Muvungu wa AI · Lelu ne bintu biebe bia mu tshisumbu"
 }

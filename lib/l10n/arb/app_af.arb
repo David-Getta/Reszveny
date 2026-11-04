@@ -391,12 +391,12 @@
   "searchAnalyses": "Soek in jou ontledings",
   "deleteAnalysis": "Vee uit",
   "analysisDeleted": "{symbol}-ontleding uitgevee",
-  "keyLevelAlertHint": "Tik op ’n vlak om ’n waarskuwing te kry wanneer die prys dit bereik.",
+  "keyLevelAlertHint": "Tik op ’n AI-geskatte vlak om ’n waarskuwing te kry wanneer die prys dit bereik.",
   "shareAnalysisTitle": "Deel ontleding",
   "shareAsImage": "Deel as prent",
   "shareAsText": "Deel as teks",
   "shareCardFooter": "Gemaak met WhatStock",
-  "shareCardDisclaimer": "AI-ontleding · nie beleggingsadvies nie",
+  "shareCardDisclaimer": "AI-ontleding · illustratiewe scenario’s, nie voorspellings nie · nie beleggingsadvies nie",
   "referralTitle": "Nooi vriende",
   "referralBody": "Deel jou kode. Jou vriend kry dadelik {count, plural, =1{1 ekstra ontleding} other{{count} ekstra ontledings}}, en jy kry dieselfde ná hul eerste ontleding.",
   "referralYourCode": "Jou kode",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Neem ’n foto van ’n aandeel",
   "onboardBody1": "’n Makelaarsapp se skerm, ’n koerant of ’n maatskappylogo is genoeg: WhatStock herken die aandeel en wys die prys, grafiek en kernsyfers.",
   "onboardTitle2": "Verstaan dit binne minute",
-  "onboardBody2": "Die AI-ontleding verduidelik wat die aandeel dryf, die risiko’s, die waardasie en drie scenario’s vir waarheen die prys kan gaan – met bronne en in jou taal.",
+  "onboardBody2": "Die AI-ontleding verduidelik wat die aandeel dryf, die risiko’s, die waardasie en drie illustratiewe scenario’s vir hoe die prys kan beweeg – met bronne en in jou taal.",
   "onboardTitle3": "Bly op hoogte",
   "onboardBody3": "Gunstelinge, jou portefeulje en pryswaarskuwings hou jou op hoogte. Jou ontledings bly op jou toestel, gereed om weer oop te maak.",
   "onboardNext": "Volgende",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Wat is verkeerd? (opsioneel)",
   "aiReportPrivacy": "Ons ontvang die teks van hierdie antwoord en jou nota – sonder jou rekening – sodat ons dit kan nagaan.",
   "aiReportSend": "Stuur verslag",
-  "aiReportThanks": "Dankie – ons sal dit nagaan."
+  "aiReportThanks": "Dankie – ons sal dit nagaan.",
+  "aiPortfolioDisclaimer": "AI-gegenereerde, algemene inligting oor die samestelling van jou portefeulje. Dit neem nie jou doelwitte, finansies of belastingsituasie in ag nie en is nie ’n persoonlike aanbeveling of beleggingsadvies nie.",
+  "briefNotificationTitle": "AI-opsomming · Vandag met jou aandele"
 }

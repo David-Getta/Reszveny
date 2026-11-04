@@ -391,12 +391,12 @@
   "searchAnalyses": "Di analîzên xwe de bigere",
   "deleteAnalysis": "Jê bibe",
   "analysisDeleted": "Analîza {symbol} hate jêbirin",
-  "keyLevelAlertHint": "Li astekê bitikîne da ku dema biha digihêje wê, hişyariyekê bistînî.",
+  "keyLevelAlertHint": "Li astekê ku AI texmîn kiriye bitikîne da ku dema biha digihêje wê, hişyariyekê bistînî.",
   "shareAnalysisTitle": "Analîzê parve bike",
   "shareAsImage": "Wek wêne parve bike",
   "shareAsText": "Wek nivîs parve bike",
   "shareCardFooter": "Bi WhatStock hatiye çêkirin",
-  "shareCardDisclaimer": "Analîza AI · ne şîreta veberhênanê ye",
+  "shareCardDisclaimer": "Analîza AI · senaryoyên mînakî, ne pêşbînî · ne şîreta veberhênanê ye",
   "referralTitle": "Hevalan vexwîne",
   "referralBody": "Koda xwe parve bike. Hevalê te yekser {count, plural, =1{1 analîza zêde} other{{count} analîzên zêde}} distîne, û tu jî piştî analîza wî ya yekem heman qasî distînî.",
   "referralYourCode": "Koda te",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Wêneyê pişkekê bikişîne",
   "onboardBody1": "Ekrana sepana brokerê, rojnameyek an logoya şirketekê bes e: WhatStock pişkê nas dike û bihayê wê, grafîka wê û hejmarên wê yên sereke nîşan dide.",
   "onboardTitle2": "Di çend deqeyan de fêm bike",
-  "onboardBody2": "Analîza AI rave dike ka çi pişkê dilivîne, xeterî çi ne, nirxandina wê çawa ye û sê senaryoyan pêşkêş dike ka biha dikare ber bi ku ve biçe, bi çavkaniyan û bi zimanê te.",
+  "onboardBody2": "Analîza AI rave dike ka çi pişkê dilivîne, xeterî çi ne, nirxandina wê çawa ye û sê senaryoyên mînakî pêşkêş dike ka biha çawa dikare bilive, bi çavkaniyan û bi zimanê te.",
   "onboardTitle3": "Her tim agahdar be",
   "onboardBody3": "Bijare, portfolyoya te û hişyariyên bihayê te agahdar dihêlin. Analîzên te li ser cîhaza te dimînin, amade ne ku dîsa werin vekirin.",
   "onboardNext": "Pêşve",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Çi şaş e? (vebijarkî)",
   "aiReportPrivacy": "Em nivîsa vê bersivê û nota te — bêyî hesabê te — distînin da ku em lê binêrin.",
   "aiReportSend": "Raporê bişîne",
-  "aiReportThanks": "Spas — em ê lê binêrin."
+  "aiReportThanks": "Spas — em ê lê binêrin.",
+  "aiPortfolioDisclaimer": "Agahiyên giştî yên ku AI li ser pêkhateya portfolyoya te çêkirine. Ew armancên te, rewşa te ya darayî an rewşa te ya bacê li ber çavan nagirin û ne pêşniyareke kesane ne, ne jî şîreta veberhênanê ne.",
+  "briefNotificationTitle": "Kurteya AI · Îro bi pişkên te re"
 }

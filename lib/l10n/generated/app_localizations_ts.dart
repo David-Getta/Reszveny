@@ -1454,7 +1454,7 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Tshikelela xiyimo leswaku u kuma xitiviso loko nxavo wu fika kona.';
+      'Tshikelela xiyimo lexi ringanyetiweke hi AI leswaku u kuma xitiviso loko nxavo wu fika kona.';
 
   @override
   String get shareAnalysisTitle => 'Avelana nxopaxopo';
@@ -1469,7 +1469,8 @@ class AppLocalizationsTs extends AppLocalizations {
   String get shareCardFooter => 'Swi endliwe hi WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Nxopaxopo wa AI · a hi ndzayo ya vuvekisi';
+  String get shareCardDisclaimer =>
+      'Nxopaxopo wa AI · swiyimo swa xikombiso, a hi swiringanyeto · a hi ndzayo ya vuvekisi';
 
   @override
   String get referralTitle => 'Rhamba vanghana';
@@ -1546,7 +1547,7 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Nxopaxopo wa AI wu hlamusela leswi endlaka leswaku xere yi famba, makhombo, ntikelo wa yona ni swiyimo swinharhu swa laha nxavo wu nga yaka kona, ku ri ni swihlovo naswona hi ririmi ra wena.';
+      'Nxopaxopo wa AI wu hlamusela leswi endlaka leswaku xere yi famba, makhombo, ntikelo wa yona ni swiyimo swinharhu swa xikombiso swa ndlela leyi nxavo wu nga fambaka ha yona, ku ri ni swihlovo naswona hi ririmi ra wena.';
 
   @override
   String get onboardTitle3 => 'Tshama u tiva hinkwaswo';
@@ -3030,6 +3031,14 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Ha khensa — hi ta yi kambela.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Rungula ro angarhela leri endliweke hi AI mayelana ni ndlela leyi phothifoliyo ya wena yi vumbiweke ha yona. A ri languti swikongomelo swa wena, timali ta wena kumbe xiyimo xa wena xa xibalo, naswona a hi xibumabumelo xa wena n\'wini kumbe ndzayo ya vuvekisi.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Nkomiso wa AI · Namuntlha ni swiavelo swa wena';
 
   @override
   String get portfolioGoalSet => 'Veka xikongomelo';

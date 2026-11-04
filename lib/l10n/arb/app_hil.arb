@@ -391,12 +391,12 @@
   "searchAnalyses": "Pangitaa ang imo mga analisis",
   "deleteAnalysis": "Panasa",
   "analysisDeleted": "Napanas ang analisis sang {symbol}",
-  "keyLevelAlertHint": "I-tap ang isa ka lebel para makabaton sang alerto kon maabot ini sang presyo.",
+  "keyLevelAlertHint": "I-tap ang isa ka lebel nga ginbanabana sang AI para makabaton sang alerto kon maabot ini sang presyo.",
   "shareAnalysisTitle": "Ipaambit ang analisis",
   "shareAsImage": "Ipaambit subong larawan",
   "shareAsText": "Ipaambit subong teksto",
   "shareCardFooter": "Ginhimo gamit ang WhatStock",
-  "shareCardDisclaimer": "Analisis sang AI · indi laygay sa pag-invest",
+  "shareCardDisclaimer": "Analisis sang AI · halimbawa nga mga senaryo, indi tagna · indi laygay sa pag-invest",
   "referralTitle": "Imbitaha ang imo mga abyan",
   "referralBody": "Ipaambit ang imo code. Ang imo abyan makabaton dayon sang {count, plural, =1{1 ka dugang nga analisis} other{{count} ka dugang nga analisis}}, kag ikaw man makabaton sang pareho pagkatapos sang iya una nga analisis.",
   "referralYourCode": "Ang imo code",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Kuhai sang litrato ang stock",
   "onboardBody1": "Bastante na ang screen sang brokerage app, pamantalaan ukon logo sang kompanya: kilalahon sang WhatStock ang stock kag ipakita ang presyo, chart kag importante nga mga numero sini.",
   "onboardTitle2": "Intiendihon sa pila lang ka minuto",
-  "onboardBody2": "Ginapaathag sang analisis sang AI kon ano ang nagapahulag sa stock, ang mga risgo, ang balor sini kag tatlo ka senaryo kon diin mahimo makadto ang presyo, upod ang mga ginhalinan kag sa imo lenguahe.",
+  "onboardBody2": "Ginapaathag sang analisis sang AI kon ano ang nagapahulag sa stock, ang mga risgo, ang balor sini kag tatlo ka halimbawa nga senaryo kon paano mahimo maghulag ang presyo, upod ang mga ginhalinan kag sa imo lenguahe.",
   "onboardTitle3": "Pirme updated",
   "onboardBody3": "Ang mga paborito, imo portfolio kag mga alerto sa presyo magapahibalo sa imo. Ang imo mga analisis nagapabilin sa imo device, handa nga buksan liwat.",
   "onboardNext": "Masunod",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Ano ang sala? (opsyonal)",
   "aiReportPrivacy": "Nabaton namon ang teksto sining sabat kag ang imo nota — wala ang imo account — agod mausisa namon ini.",
   "aiReportSend": "Ipadala ang report",
-  "aiReportThanks": "Salamat — usisaon namon ini."
+  "aiReportThanks": "Salamat — usisaon namon ini.",
+  "aiPortfolioDisclaimer": "Pangkabilugan nga impormasyon nga ginhimo sang AI parte sa komposisyon sang imo portfolio. Wala ini nagakonsiderar sang imo mga tulumuron, pinansyal nga kahimtangan ukon kahimtangan sa buhis, kag indi ini personal nga rekomendasyon ukon laygay sa pag-invest.",
+  "briefNotificationTitle": "Sumaryo sang AI · Subong upod ang imo mga stock"
 }

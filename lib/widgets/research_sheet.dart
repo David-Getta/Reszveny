@@ -293,7 +293,8 @@ class _SaveNoteButtonState extends State<_SaveNoteButton> {
     final l10n = AppLocalizations.of(context);
     final messenger = ScaffoldMessenger.of(context);
     final entry = [
-      '${fmt.date(DateTime.now())} · ${widget.title}',
+      // „AI ·” jelöléssel: az elemzés promptja így nem a felhasználó saját téziseként kezeli.
+      'AI · ${fmt.date(DateTime.now())} · ${widget.title}',
       widget.text.trim(),
       for (final s in widget.sources) s.url,
     ].join('\n');

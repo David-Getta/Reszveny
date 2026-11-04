@@ -1445,7 +1445,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'দাম কোনো স্তরে পৌঁছালে সতর্কতা পেতে সেই স্তরে ট্যাপ করুন।';
+      'দাম AI-এর অনুমান করা কোনো স্তরে পৌঁছালে সতর্কতা পেতে সেই স্তরে ট্যাপ করুন।';
 
   @override
   String get shareAnalysisTitle => 'বিশ্লেষণ শেয়ার করুন';
@@ -1460,7 +1460,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get shareCardFooter => 'WhatStock দিয়ে তৈরি';
 
   @override
-  String get shareCardDisclaimer => 'AI বিশ্লেষণ · বিনিয়োগ পরামর্শ নয়';
+  String get shareCardDisclaimer =>
+      'AI বিশ্লেষণ · দৃষ্টান্তমূলক চিত্র, পূর্বাভাস নয় · বিনিয়োগ পরামর্শ নয়';
 
   @override
   String get referralTitle => 'বন্ধুদের আমন্ত্রণ জানান';
@@ -1537,7 +1538,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI বিশ্লেষণ ব্যাখ্যা করে শেয়ারটিকে কী চালায়, ঝুঁকিগুলো কী, মূল্যায়ন কেমন, আর দাম কোথায় যেতে পারে তার তিনটি সম্ভাব্য চিত্র – সূত্রসহ, আপনার ভাষায়।';
+      'AI বিশ্লেষণ ব্যাখ্যা করে শেয়ারটিকে কী চালায়, ঝুঁকিগুলো কী, মূল্যায়ন কেমন, আর দাম কীভাবে ওঠানামা করতে পারে তার তিনটি দৃষ্টান্তমূলক চিত্র – সূত্রসহ, আপনার ভাষায়।';
 
   @override
   String get onboardTitle3 => 'সবসময় আপডেট থাকুন';
@@ -3005,6 +3006,13 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'ধন্যবাদ — আমরা এটি পর্যালোচনা করব।';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI-তৈরি, আপনার পোর্টফোলিওর গঠন সম্পর্কে সাধারণ তথ্য। এটি আপনার লক্ষ্য, আর্থিক অবস্থা বা করের পরিস্থিতি বিবেচনা করে না এবং এটি ব্যক্তিগত সুপারিশ বা বিনিয়োগ পরামর্শ নয়।';
+
+  @override
+  String get briefNotificationTitle => 'AI সারাংশ · আজ আপনার শেয়ারগুলোর সাথে';
 
   @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';

@@ -391,12 +391,12 @@
   "searchAnalyses": "T'aqwiyniykikunapi maskay",
   "deleteAnalysis": "Pichay",
   "analysisDeleted": "{symbol} t'aqwiyqa pichasqaña",
-  "keyLevelAlertHint": "Huk patata ñit'iy, chanin chayman chayaptin willachiyta chaskinaykipaq.",
+  "keyLevelAlertHint": "AI yupasqan huk patata ñit'iy, chanin chayman chayaptin willachiyta chaskinaykipaq.",
   "shareAnalysisTitle": "T'aqwiyta rakiy",
   "shareAsImage": "Rikch'a hina rakiy",
   "shareAsText": "Qillqa hina rakiy",
   "shareCardFooter": "WhatStockwan ruwasqa",
-  "shareCardDisclaimer": "AI t'aqwiy · manan qullqi churanapaq yuyaychaychu",
+  "shareCardDisclaimer": "AI t'aqwiy · rikuchinapaq ñankuna, mana ñawpaqmanta willaychu · manan qullqi churanapaq yuyaychaychu",
   "referralTitle": "Masiykikunata waqyay",
   "referralBody": "Kódigoykita rakiy. Masiyki chayllam {count, plural, =1{1 yapa t'aqwiyta} other{{count} yapa t'aqwiyta}} chaskin, qanpas kikinta chaskinki ñawpaq t'aqwiyninta ruwasqan qhipata.",
   "referralYourCode": "Kódigoyki",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Huk accionpa fotonta hurquy",
   "onboardBody1": "Huk broker apppa pantallan, huk periódico utaq huk empresapa logon aypanmi: WhatStock accionta riqsin, chaninta, gráficonta, hatun yupaykunantapas rikuchisunki.",
   "onboardTitle2": "Pisi minutopi hamut'ay",
-  "onboardBody2": "AI t'aqwiyqa willan ima accionta kuyuchisqanta, ima peligrokuna kasqanta, hayk'a chaniyuq kasqanta, kimsa ñankunatapas maymanchus chanin rinman – pukyukunawan, qampa simiykipi.",
+  "onboardBody2": "AI t'aqwiyqa willan ima accionta kuyuchisqanta, ima peligrokuna kasqanta, hayk'a chaniyuq kasqanta, kimsa rikuchinapaq ñankunatapas imaynatachus chanin kuyunman – pukyukunawan, qampa simiykipi.",
   "onboardTitle3": "Sapa kuti yachaspa kay",
   "onboardBody3": "Munasqakuna, portafolioyki, chanin willachiykunapas willasunki. T'aqwiyniykikuna aparatoykipi qhepan, wakmanta kichanapaq listo.",
   "onboardNext": "Qatiq",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Imataq mana allinchu? (munaspaykiqa)",
   "aiReportPrivacy": "Kay kutichiypa qillqanta qillqasqaykitapas chaskiyku — mana cuentaykiwanchu — qhawanaykupaq.",
   "aiReportSend": "Willakuyta apachiy",
-  "aiReportThanks": "Sulpayki — qhawasaqku."
+  "aiReportThanks": "Sulpayki — qhawasaqku.",
+  "aiPortfolioDisclaimer": "AI ruwasqan sapsi willakuy, portafolioykiq imaynam huñusqa kasqanmanta. Manam qhawanchu munasqaykikunata, qullqi kayniykita nitaq impuestoykikunatapas, manataq qampaq sapan yuyaychaychu nitaq qullqi churanapaq yuyaychaychu.",
+  "briefNotificationTitle": "AI pisichasqa · Kunan p’unchay acciónniykikunawan"
 }

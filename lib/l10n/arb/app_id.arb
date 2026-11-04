@@ -391,12 +391,12 @@
   "searchAnalyses": "Cari analisis Anda",
   "deleteAnalysis": "Hapus",
   "analysisDeleted": "Analisis {symbol} dihapus",
-  "keyLevelAlertHint": "Ketuk level untuk mendapat peringatan saat harga mencapainya.",
+  "keyLevelAlertHint": "Ketuk level perkiraan AI untuk mendapat peringatan saat harga mencapainya.",
   "shareAnalysisTitle": "Bagikan analisis",
   "shareAsImage": "Bagikan sebagai gambar",
   "shareAsText": "Bagikan sebagai teks",
   "shareCardFooter": "Dibuat dengan WhatStock",
-  "shareCardDisclaimer": "Analisis AI · bukan saran investasi",
+  "shareCardDisclaimer": "Analisis AI · skenario ilustratif, bukan prediksi · bukan saran investasi",
   "referralTitle": "Undang teman",
   "referralBody": "Bagikan kode Anda. Teman Anda langsung mendapat {count, plural, =1{1 analisis tambahan} other{{count} analisis tambahan}}, dan Anda mendapat jumlah yang sama setelah analisis pertamanya.",
   "referralYourCode": "Kode Anda",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Foto sebuah saham",
   "onboardBody1": "Cukup layar aplikasi pialang, koran, atau logo perusahaan: WhatStock mengenali sahamnya dan menampilkan harga, grafik, serta angka-angka pentingnya.",
   "onboardTitle2": "Pahami dalam hitungan menit",
-  "onboardBody2": "Analisis AI menjelaskan apa yang menggerakkan saham, risikonya, valuasinya, dan tiga skenario ke mana harga bisa bergerak, lengkap dengan sumber dan dalam bahasa Anda.",
+  "onboardBody2": "Analisis AI menjelaskan apa yang menggerakkan saham, risikonya, valuasinya, dan tiga skenario ilustratif tentang bagaimana harga bisa bergerak, lengkap dengan sumber dan dalam bahasa Anda.",
   "onboardTitle3": "Selalu ikuti perkembangannya",
   "onboardBody3": "Favorit, portofolio Anda, dan peringatan harga membuat Anda selalu tahu kabar terbaru. Analisis Anda tetap tersimpan di perangkat, siap dibuka kembali.",
   "onboardNext": "Berikutnya",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Apa yang salah? (opsional)",
   "aiReportPrivacy": "Kami menerima teks jawaban ini dan catatan Anda — tanpa akun Anda — agar dapat meninjaunya.",
   "aiReportSend": "Kirim laporan",
-  "aiReportThanks": "Terima kasih — kami akan meninjaunya."
+  "aiReportThanks": "Terima kasih — kami akan meninjaunya.",
+  "aiPortfolioDisclaimer": "Informasi umum buatan AI tentang komposisi portofolio Anda. Informasi ini tidak mempertimbangkan tujuan, kondisi keuangan, atau situasi pajak Anda, dan bukan merupakan rekomendasi pribadi maupun saran investasi.",
+  "briefNotificationTitle": "Ringkasan AI · Hari ini dengan saham Anda"
 }

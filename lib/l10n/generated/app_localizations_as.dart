@@ -1443,7 +1443,7 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'দাম কোনো স্তৰত উপনীত হ\'লে সতৰ্কবাণী পাবলৈ সেই স্তৰটো টিপক।';
+      'দাম AI-এ অনুমান কৰা কোনো স্তৰত উপনীত হ\'লে সতৰ্কবাণী পাবলৈ সেই স্তৰটো টিপক।';
 
   @override
   String get shareAnalysisTitle => 'বিশ্লেষণ শ্বেয়াৰ কৰক';
@@ -1458,7 +1458,8 @@ class AppLocalizationsAs extends AppLocalizations {
   String get shareCardFooter => 'WhatStock-ৰে নিৰ্মিত';
 
   @override
-  String get shareCardDisclaimer => 'AI বিশ্লেষণ · বিনিয়োগৰ পৰামৰ্শ নহয়';
+  String get shareCardDisclaimer =>
+      'AI বিশ্লেষণ · উদাহৰণমূলক পৰিস্থিতি, ভৱিষ্যদ্বাণী নহয় · বিনিয়োগৰ পৰামৰ্শ নহয়';
 
   @override
   String get referralTitle => 'বন্ধুক আমন্ত্ৰণ জনাওক';
@@ -1536,7 +1537,7 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI বিশ্লেষণে বুজাই দিয়ে শ্বেয়াৰটোক কিহে চলায়, ইয়াৰ বিপদাশংকা, মূল্যায়ন আৰু দাম ক\'লৈ যাব পাৰে তাৰ তিনিটা সম্ভাৱ্য পৰিস্থিতি – উৎসসহ আৰু আপোনাৰ ভাষাত।';
+      'AI বিশ্লেষণে বুজাই দিয়ে শ্বেয়াৰটোক কিহে চলায়, ইয়াৰ বিপদাশংকা, মূল্যায়ন আৰু দাম কেনেকৈ সলনি হ\'ব পাৰে তাৰ তিনিটা উদাহৰণমূলক পৰিস্থিতি – উৎসসহ আৰু আপোনাৰ ভাষাত।';
 
   @override
   String get onboardTitle3 => 'সদায় অৱগত থাকক';
@@ -3004,6 +3005,13 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'ধন্যবাদ — আমি ইয়াক পৰীক্ষা কৰিম।';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI-এ প্ৰস্তুত কৰা, আপোনাৰ প\'ৰ্টফ\'লিঅ\'ৰ গঠন সম্পৰ্কীয় সাধাৰণ তথ্য। ই আপোনাৰ লক্ষ্য, আৰ্থিক অৱস্থা বা কৰ পৰিস্থিতি বিবেচনা নকৰে আৰু ই ব্যক্তিগত চুপাৰিছ বা বিনিয়োগৰ পৰামৰ্শ নহয়।';
+
+  @override
+  String get briefNotificationTitle => 'AI সাৰাংশ · আজি আপোনাৰ শ্বেয়াৰসমূহ';
 
   @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';

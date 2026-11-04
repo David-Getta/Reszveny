@@ -391,12 +391,12 @@
   "searchAnalyses": "Chèche nan analiz ou yo",
   "deleteAnalysis": "Efase",
   "analysisDeleted": "Analiz {symbol} efase",
-  "keyLevelAlertHint": "Peze yon nivo pou resevwa yon alèt lè pri a rive la.",
+  "keyLevelAlertHint": "Peze yon nivo AI estime pou resevwa yon alèt lè pri a rive la.",
   "shareAnalysisTitle": "Pataje analiz la",
   "shareAsImage": "Pataje kòm imaj",
   "shareAsText": "Pataje kòm tèks",
   "shareCardFooter": "Fèt ak WhatStock",
-  "shareCardDisclaimer": "Analiz AI · se pa yon konsèy envestisman",
+  "shareCardDisclaimer": "Analiz AI · senaryo egzanp, se pa prediksyon · se pa yon konsèy envestisman",
   "referralTitle": "Envite zanmi",
   "referralBody": "Pataje kòd ou. Zanmi ou resevwa {count, plural, =1{1 analiz anplis} other{{count} analiz anplis}} touswit, epi ou resevwa menm kantite a apre premye analiz li.",
   "referralYourCode": "Kòd ou",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Pran foto yon aksyon",
   "onboardBody1": "Yon ekran aplikasyon kourtye, yon jounal oswa logo yon konpayi ase: WhatStock rekonèt aksyon an epi li montre w pri li, grafik li ak chif enpòtan yo.",
   "onboardTitle2": "Konprann li nan kèk minit",
-  "onboardBody2": "Analiz AI a eksplike sa ki fè aksyon an bouje, risk yo, valè li ak twa senaryo sou kote pri a ka ale, avèk sous epi nan lang ou.",
+  "onboardBody2": "Analiz AI a eksplike sa ki fè aksyon an bouje, risk yo, valè li ak twa senaryo egzanp sou kijan pri a ka bouje, avèk sous epi nan lang ou.",
   "onboardTitle3": "Toujou okouran",
   "onboardBody3": "Favori, pòtfèy ou ak alèt pri yo kenbe w okouran. Analiz ou yo rete sou aparèy ou, pare pou w louvri yo ankò.",
   "onboardNext": "Swivan",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Kisa ki pa bon? (opsyonèl)",
   "aiReportPrivacy": "Nou resevwa tèks repons sa a ak nòt ou — san kont ou — pou nou ka egzamine l.",
   "aiReportSend": "Voye siyalman an",
-  "aiReportThanks": "Mèsi — n ap egzamine l."
+  "aiReportThanks": "Mèsi — n ap egzamine l.",
+  "aiPortfolioDisclaimer": "Enfòmasyon jeneral AI jenere sou konpozisyon pòtfèy ou. Li pa pran objektif ou, sitiyasyon finansye ou oswa sitiyasyon taks ou an kont, epi se pa yon rekòmandasyon pèsonèl ni yon konsèy envestisman.",
+  "briefNotificationTitle": "Rezime AI · Jodi a ak aksyon ou yo"
 }

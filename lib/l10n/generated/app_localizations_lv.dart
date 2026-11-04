@@ -1469,7 +1469,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Pieskarieties līmenim, lai saņemtu brīdinājumu, kad cena to sasniegs.';
+      'Pieskarieties AI aplēstam līmenim, lai saņemtu brīdinājumu, kad cena to sasniegs.';
 
   @override
   String get shareAnalysisTitle => 'Kopīgot analīzi';
@@ -1484,7 +1484,8 @@ class AppLocalizationsLv extends AppLocalizations {
   String get shareCardFooter => 'Izveidots ar WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'AI analīze · nav ieguldījumu konsultācija';
+  String get shareCardDisclaimer =>
+      'AI analīze · ilustratīvi scenāriji, nevis prognozes · nav ieguldījumu konsultācija';
 
   @override
   String get referralTitle => 'Uzaiciniet draugus';
@@ -1564,7 +1565,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI analīze izskaidro, kas virza akcijas cenu, kādi ir riski, kāds ir novērtējums, un piedāvā trīs scenārijus, kurp cena varētu virzīties, – ar avotiem un jūsu valodā.';
+      'AI analīze izskaidro, kas virza akcijas cenu, kādi ir riski, kāds ir novērtējums, un piedāvā trīs ilustratīvus scenārijus, kā cena varētu mainīties, – ar avotiem un jūsu valodā.';
 
   @override
   String get onboardTitle3 => 'Vienmēr lietas kursā';
@@ -3046,6 +3047,14 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Paldies – mēs to pārskatīsim.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Mākslīgā intelekta ģenerēta vispārīga informācija par jūsu portfeļa sastāvu. Tajā nav ņemti vērā jūsu mērķi, finanšu stāvoklis vai nodokļu situācija, un tā nav ne personīgs ieteikums, ne ieguldījumu konsultācija.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI kopsavilkums · Šodien ar jūsu akcijām';
 
   @override
   String get portfolioGoalSet => 'Iestatīt mērķi';

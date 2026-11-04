@@ -1449,7 +1449,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Հպեք մակարդակին՝ ծանուցում ստանալու համար, երբ գինը հասնի դրան։';
+      'Հպեք AI-ի գնահատած մակարդակին՝ ծանուցում ստանալու համար, երբ գինը հասնի դրան։';
 
   @override
   String get shareAnalysisTitle => 'Կիսվել վերլուծությամբ';
@@ -1465,7 +1465,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'AI վերլուծություն · ներդրումային խորհուրդ չէ';
+      'AI վերլուծություն · օրինակային սցենարներ, ոչ թե կանխատեսումներ · ներդրումային խորհուրդ չէ';
 
   @override
   String get referralTitle => 'Հրավիրեք ընկերներին';
@@ -1542,7 +1542,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI վերլուծությունը բացատրում է, թե ինչն է շարժում բաժնետոմսը, որոնք են ռիսկերը, ինչպիսին է գնահատումը, և ներկայացնում է երեք սցենար, թե ուր կարող է գնալ գինը՝ աղբյուրներով և ձեր լեզվով։';
+      'AI վերլուծությունը բացատրում է, թե ինչն է շարժում բաժնետոմսը, որոնք են ռիսկերը, ինչպիսին է գնահատումը, և ներկայացնում է երեք օրինակային սցենար, թե ինչպես կարող է շարժվել գինը՝ աղբյուրներով և ձեր լեզվով։';
 
   @override
   String get onboardTitle3 => 'Միշտ տեղեկացված եղեք';
@@ -3016,6 +3016,13 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Շնորհակալություն, մենք կստուգենք։';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI-ի կողմից ստեղծված ընդհանուր տեղեկատվություն ձեր պորտֆելի կազմի մասին։ Այն հաշվի չի առնում ձեր նպատակները, ֆինանսական վիճակը կամ հարկային իրավիճակը և անհատական առաջարկություն կամ ներդրումային խորհուրդ չէ։';
+
+  @override
+  String get briefNotificationTitle => 'AI ամփոփում · Այսօր՝ ձեր բաժնետոմսերով';
 
   @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';

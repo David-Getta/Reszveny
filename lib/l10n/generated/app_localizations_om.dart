@@ -1448,7 +1448,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Yeroo gatiin sadarkaa tokko gahu akeekkachiisa argachuuf sadarkaa sana tuqi.';
+      'Yeroo gatiin sadarkaa tokko gahu akeekkachiisa argachuuf sadarkaa AI\'n tilmaame tuqi.';
 
   @override
   String get shareAnalysisTitle => 'Xiinxala qoodi';
@@ -1463,7 +1463,8 @@ class AppLocalizationsOm extends AppLocalizations {
   String get shareCardFooter => 'WhatStock\'n hojjetame';
 
   @override
-  String get shareCardDisclaimer => 'Xiinxala AI · gorsa invastimantii miti';
+  String get shareCardDisclaimer =>
+      'Xiinxala AI · haalota fakkeenyaa, raaga miti · gorsa invastimantii miti';
 
   @override
   String get referralTitle => 'Hiriyoota affeeri';
@@ -1541,7 +1542,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Xiinxalli AI waan aksiyoona sochoosu, balaawwan, gatii isaa sirrii fi haala sadii gatiin itti deemuu danda\'u maddaa wajjin afaan keetiin siif ibsa.';
+      'Xiinxalli AI waan aksiyoona sochoosu, balaawwan, gatii isaa sirrii fi haalota fakkeenyaa sadii gatiin akkamitti sochoo\'uu akka danda\'u maddaa wajjin afaan keetiin siif ibsa.';
 
   @override
   String get onboardTitle3 => 'Yeroo hunda odeeffannoo qabaadhu';
@@ -3021,6 +3022,14 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Galatoomi — ni gamaaggamna.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Odeeffannoo waliigalaa AI\'n uumame, waa\'ee caasaa poortfooliyoo keetii. Kaayyoo kee, haala maallaqaa kee ykn haala gibira keetii hin ilaalu, akkasumas yaada dhuunfaa siif kenname ykn gorsa invastimantii miti.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Cuunfaa AI · Har’a aksiyoonota kee waliin';
 
   @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';

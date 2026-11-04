@@ -1441,7 +1441,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Pịa otu ogo ka ị nweta ọkwa mgbe ọnụahịa ruru ya.';
+      'Pịa otu ogo AI mere atụmatụ ya ka ị nweta ọkwa mgbe ọnụahịa ruru ya.';
 
   @override
   String get shareAnalysisTitle => 'Kesaa nyocha';
@@ -1456,7 +1456,8 @@ class AppLocalizationsIg extends AppLocalizations {
   String get shareCardFooter => 'E ji WhatStock mee ya';
 
   @override
-  String get shareCardDisclaimer => 'Nyocha AI · ọ bụghị ndụmọdụ itinye ego';
+  String get shareCardDisclaimer =>
+      'Nyocha AI · ọnọdụ ihe atụ, ọ bụghị amụma · ọ bụghị ndụmọdụ itinye ego';
 
   @override
   String get referralTitle => 'Kpọọ ndị enyi';
@@ -1532,7 +1533,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Nyocha AI na-akọwa ihe na-akpali stock ahụ, ihe egwu dị na ya, uru ya na ọnọdụ atọ nke ebe ọnụahịa ya nwere ike ịga, ya na isi iyi ozi na n\'asụsụ gị.';
+      'Nyocha AI na-akọwa ihe na-akpali stock ahụ, ihe egwu dị na ya, uru ya na ọnọdụ atọ dị ka ihe atụ maka otú ọnụahịa ya nwere ike isi gaa, ya na isi iyi ozi na n\'asụsụ gị.';
 
   @override
   String get onboardTitle3 => 'Nọrọ na-amata ihe niile';
@@ -2998,6 +2999,13 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Daalụ — anyị ga-enyocha ya.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Ozi izugbe AI mepụtara gbasara otú portfolio gị si dị. Ọ naghị atụle ebumnuche gị, ọnọdụ ego gị ma ọ bụ ọnọdụ ụtụ isi gị, ọ bụkwaghị ndụmọdụ pụrụ iche nye gị ma ọ bụ ndụmọdụ itinye ego.';
+
+  @override
+  String get briefNotificationTitle => 'Nchịkọta AI · Taa na ngwa ahịa gị';
 
   @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';

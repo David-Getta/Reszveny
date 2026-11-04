@@ -391,12 +391,12 @@
   "searchAnalyses": "Nadi deg tesleḍwin-ik",
   "deleteAnalysis": "Kkes",
   "analysisDeleted": "Tasleḍt n {symbol} tettwakkes",
-  "keyLevelAlertHint": "Sit ɣef uswir akken ad d-teṭṭfeḍ alɣu mi ara yawed ssuma ɣer-s.",
+  "keyLevelAlertHint": "Sit ɣef uswir i d-yeḥseb AI akken ad d-teṭṭfeḍ alɣu mi ara yawed ssuma ɣer-s.",
   "shareAnalysisTitle": "Bḍu tasleḍt",
   "shareAsImage": "Bḍu am tugna",
   "shareAsText": "Bḍu am uḍris",
   "shareCardFooter": "Yettwaxdem s WhatStock",
-  "shareCardDisclaimer": "Tasleḍt s AI · ur d awellih n usersi n yidrimen ara",
+  "shareCardDisclaimer": "Tasleḍt s AI · isenaryuten n umedya, mačči d tamusni n wayen ara d-yeḍrun · ur d awellih n usersi n yidrimen ara",
   "referralTitle": "Ɛreḍ imeddukal",
   "referralBody": "Bḍu tangalt-ik. Amdakel-ik ad yawi {count, plural, =1{1 n tesleḍt nniḍen} other{{count} n tselḍin nniḍen}} imir-a, ula d kečč ad tawiḍ kif-kif deffir tasleḍt-is tamezwarut.",
   "referralYourCode": "Tangalt-ik",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Ṭṭef tawlaft n uksyun",
   "onboardBody1": "Agdil n usnas n broker, taɣmist neɣ alugu n tkebbanit yekfa: WhatStock ad yeɛqel aksyun, ad k-d-yesken ssuma-s, udlif-is d yimḍanen-is igejdanen.",
   "onboardTitle2": "Fhem-it deg kra n tesdatin",
-  "onboardBody2": "Tasleḍt s AI ad k-d-tessefhem acu i yesseḥrayen aksyun, uguren, azal-is d kraḍ n yisenaryuten ɣef wanida tezmer ad teddu ssuma, s yiɣbula d tutlayt-ik.",
+  "onboardBody2": "Tasleḍt s AI ad k-d-tessefhem acu i yesseḥrayen aksyun, uguren, azal-is d kraḍ n yisenaryuten n umedya ɣef wamek tezmer ad tembeddel ssuma, s yiɣbula d tutlayt-ik.",
   "onboardTitle3": "Ur k-tetteffeɣ ula d taɣawsa",
   "onboardBody3": "Ismenyifen, aqrab-ik d yilɣa n ssuma ad k-d-ssalɣun. Tisleḍin-ik qqiment ɣef yibenk-ik, heggant ad tent-teldiḍ tikkelt nniḍen.",
   "onboardNext": "Uḍfiṛ",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "D acu ur nelhi ara? (afrayan)",
   "aiReportPrivacy": "Ad d-nremes aḍris n tririt-a d tezmilt-ik·im — war amiḍan-ik·im — akken ad tt-nesenqed.",
   "aiReportSend": "Azen aneqqis",
-  "aiReportThanks": "Tanemmirt — ad tt-nesenqed."
+  "aiReportThanks": "Tanemmirt — ad tt-nesenqed.",
+  "aiPortfolioDisclaimer": "Talɣut tamatut yura-tt AI ɣef wamek yebna uqrab-ik. Ur tettḥesab ara iswan-ik, tadamsa-k neɣ addad-ik n tbaḍin, ur d awellih uslig ara, ur d awellih n usersi n yidrimen ara.",
+  "briefNotificationTitle": "Agzul s AI · Ass-a d tigemmi-k"
 }

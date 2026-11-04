@@ -1450,7 +1450,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Cofa inqanaba ukuze ufumane isilumkiso xa ixabiso lifikelela kulo.';
+      'Cofa inqanaba eliqikelelwe yi-AI ukuze ufumane isilumkiso xa ixabiso lifikelela kulo.';
 
   @override
   String get shareAnalysisTitle => 'Yabelana ngohlalutyo';
@@ -1466,7 +1466,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Uhlalutyo lwe-AI · alulocebiso lotyalo-mali';
+      'Uhlalutyo lwe-AI · iimeko ezingumzekelo, hayi uqikelelo · alulocebiso lotyalo-mali';
 
   @override
   String get referralTitle => 'Mema abahlobo';
@@ -1543,7 +1543,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Uhlalutyo lwe-AI luchaza oko kushukumisa isabelo, imingcipheko, ixabiso laso lokwenyani kunye neemeko ezintathu zokuba ixabiso lingaya phi – kunye nemithombo nangolwimi lwakho.';
+      'Uhlalutyo lwe-AI luchaza oko kushukumisa isabelo, imingcipheko, ixabiso laso lokwenyani kunye neemeko ezintathu ezingumzekelo zendlela ixabiso elinokushukuma ngayo – kunye nemithombo nangolwimi lwakho.';
 
   @override
   String get onboardTitle3 => 'Hlala unolwazi';
@@ -3020,6 +3020,14 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Enkosi — siza kuyihlolisisa.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Ulwazi jikelele olwenziwe yi-AI malunga nokwakheka kwepotifoliyo yakho. Alujongi iinjongo zakho, imali yakho okanye imeko yakho yerhafu, kwaye alusosindululo lobuqu okanye icebiso lotyalo-mali.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Isishwankathelo se-AI · Namhlanje nezabelo zakho';
 
   @override
   String get portfolioGoalSet => 'Misela usukelo';

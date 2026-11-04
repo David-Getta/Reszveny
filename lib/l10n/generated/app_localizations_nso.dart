@@ -1453,7 +1453,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Kgotla maemo go hwetša temošo ge theko e fihla go ona.';
+      'Kgotla maemo ao a akanyeditšwego ke AI go hwetša temošo ge theko e fihla go ona.';
 
   @override
   String get shareAnalysisTitle => 'Abelana tshekatsheko';
@@ -1469,7 +1469,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Tshekatsheko ya AI · ga se keletšo ya peeletšo';
+      'Tshekatsheko ya AI · maemo a mehlala, e sego dikakanyo · ga se keletšo ya peeletšo';
 
   @override
   String get referralTitle => 'Laletša bagwera';
@@ -1547,7 +1547,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Tshekatsheko ya AI e hlaloša seo se šuthišago šere, dikotsi, boleng bja yona le maemo a mararo a gore theko e ka ya kae – ka methopo le ka polelo ya gago.';
+      'Tshekatsheko ya AI e hlaloša seo se šuthišago šere, dikotsi, boleng bja yona le maemo a mararo a mehlala a gore theko e ka šutha bjang – ka methopo le ka polelo ya gago.';
 
   @override
   String get onboardTitle3 => 'Dula o tseba tšohle';
@@ -3027,6 +3027,14 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Re a leboga — re tla e lekola.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Tshedimošo ya kakaretšo yeo e tšweleditšwego ke AI mabapi le sebopego sa photefolio ya gago. Ga e ele hloko maikemišetšo a gago, ditšhelete tša gago goba boemo bja gago bja motšhelo, gomme ga se tšhišinyo ya gago ka noši goba keletšo ya peeletšo.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Kakaretšo ya AI · Lehono le dišere tša gago';
 
   @override
   String get portfolioGoalSet => 'Bea maikemišetšo';

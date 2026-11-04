@@ -1444,7 +1444,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Tryck på en nivå för att få ett larm när kursen når den.';
+      'Tryck på en AI-uppskattad nivå för att få ett larm när kursen når den.';
 
   @override
   String get shareAnalysisTitle => 'Dela analys';
@@ -1459,7 +1459,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get shareCardFooter => 'Skapad med WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'AI-analys · inte investeringsrådgivning';
+  String get shareCardDisclaimer =>
+      'AI-analys · illustrativa scenarier, inte prognoser · inte investeringsrådgivning';
 
   @override
   String get referralTitle => 'Bjud in vänner';
@@ -1536,7 +1537,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI-analysen förklarar vad som driver aktien, riskerna, värderingen och tre scenarier för vart kursen kan ta vägen – med källor och på ditt språk.';
+      'AI-analysen förklarar vad som driver aktien, riskerna, värderingen och tre illustrativa scenarier för hur kursen kan röra sig – med källor och på ditt språk.';
 
   @override
   String get onboardTitle3 => 'Ha koll på läget';
@@ -3005,6 +3006,14 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Tack – vi tittar på det.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI-genererad, allmän information om sammansättningen av din portfölj. Den tar inte hänsyn till dina mål, din ekonomi eller din skattesituation och är inte en personlig rekommendation eller investeringsrådgivning.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI-sammanfattning · I dag med dina aktier';
 
   @override
   String get portfolioGoalSet => 'Sätt ett mål';

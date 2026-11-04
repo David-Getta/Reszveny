@@ -1429,7 +1429,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'ແຕະລະດັບລາຄາເພື່ອຮັບການແຈ້ງເຕືອນເມື່ອລາຄາໄປຮອດລະດັບນັ້ນ';
+      'ແຕະລະດັບລາຄາທີ່ AI ປະເມີນ ເພື່ອຮັບການແຈ້ງເຕືອນເມື່ອລາຄາໄປຮອດລະດັບນັ້ນ';
 
   @override
   String get shareAnalysisTitle => 'ແບ່ງປັນບົດວິເຄາະ';
@@ -1445,7 +1445,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'ການວິເຄາະດ້ວຍ AI · ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ';
+      'ການວິເຄາະດ້ວຍ AI · ສະຖານະການຕົວຢ່າງ ບໍ່ແມ່ນການພະຍາກອນ · ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ';
 
   @override
   String get referralTitle => 'ເຊີນໝູ່';
@@ -1518,7 +1518,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'ການວິເຄາະດ້ວຍ AI ອະທິບາຍວ່າຫຍັງເຮັດໃຫ້ຮຸ້ນເໜັງຕີງ, ຄວາມສ່ຽງ, ການປະເມີນມູນຄ່າ ແລະ ສາມສະຖານະການວ່າລາຄາອາດໄປທາງໃດ ພ້ອມແຫຼ່ງຂໍ້ມູນ ແລະ ເປັນພາສາຂອງທ່ານ.';
+      'ການວິເຄາະດ້ວຍ AI ອະທິບາຍວ່າຫຍັງເຮັດໃຫ້ຮຸ້ນເໜັງຕີງ, ຄວາມສ່ຽງ, ການປະເມີນມູນຄ່າ ແລະ ສາມສະຖານະການຕົວຢ່າງວ່າລາຄາອາດເໜັງຕີງແນວໃດ ພ້ອມແຫຼ່ງຂໍ້ມູນ ແລະ ເປັນພາສາຂອງທ່ານ.';
 
   @override
   String get onboardTitle3 => 'ຕິດຕາມທຸກຄວາມເຄື່ອນໄຫວ';
@@ -2976,6 +2976,13 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'ຂອບໃຈ — ພວກເຮົາຈະກວດສອບ.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'ຂໍ້ມູນທົ່ວໄປທີ່ສ້າງໂດຍ AI ກ່ຽວກັບອົງປະກອບຂອງພອດໂຟລິໂອຂອງທ່ານ ບໍ່ໄດ້ຄຳນຶງເຖິງເປົ້າໝາຍ, ສະຖານະທາງການເງິນ ຫຼື ສະຖານະທາງພາສີຂອງທ່ານ ແລະ ບໍ່ແມ່ນຄຳແນະນຳສະເພາະບຸກຄົນ ຫຼື ຄຳແນະນຳການລົງທຶນ';
+
+  @override
+  String get briefNotificationTitle => 'ສະຫຼຸບ AI · ມື້ນີ້ກັບຫຸ້ນຂອງທ່ານ';
 
   @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';

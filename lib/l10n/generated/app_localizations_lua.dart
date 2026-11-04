@@ -1448,7 +1448,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Finya niveau bua kupeta alerte padi mushinga ufika kuine.';
+      'Finya niveau udi AI mubadile bua kupeta alerte padi mushinga ufika kuine.';
 
   @override
   String get shareAnalysisTitle => 'Abanya dikonkonona';
@@ -1464,7 +1464,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Dikonkonona dia AI · kadiena mibelu ya kuteka mfranga';
+      'Dikonkonona dia AI · malu a tshilejilu, ki mbia bulelela to · kadiena mibelu ya kuteka mfranga';
 
   @override
   String get referralTitle => 'Bikila balunda';
@@ -1540,7 +1540,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Dikonkonona dia AI didi diumvuija tshidi tshinyungisha action, njiwu, mushinga wayi ne malu asatu adi mua kuenzeka ku mushinga, ne miaba ya mumanyisha ne mu muakulu webe.';
+      'Dikonkonona dia AI didi diumvuija tshidi tshinyungisha action, njiwu, mushinga wayi ne malu asatu a tshilejilu a mudi mushinga mua kushintuluka, ne miaba ya mumanyisha ne mu muakulu webe.';
 
   @override
   String get onboardTitle3 => 'Ikala mumanye malu onso';
@@ -3020,6 +3020,14 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Tuasakidila — netumone.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Mamanyisha a mu bujima adi AI mufunde bua mudi portefeuille webe muenza. Kaatangidi bipatshila biebe, malu a makuta ebe anyi bitadi biebe to, ne kadiena mibelu ya bebe nkayebe anyi mibelu ya kuteka mfranga.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Muvungu wa AI · Lelu ne bintu biebe bia mu tshisumbu';
 
   @override
   String get portfolioGoalSet => 'Teka tshipatshila';

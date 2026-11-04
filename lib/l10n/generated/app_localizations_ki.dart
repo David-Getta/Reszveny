@@ -1445,7 +1445,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Hihinya mũhaka nĩguo wone kĩmenyithia rĩrĩa thogora ũgakinya hau.';
+      'Hihinya mũhaka ũrĩa AI ĩthimĩte nĩguo wone kĩmenyithia rĩrĩa thogora ũgakinya hau.';
 
   @override
   String get shareAnalysisTitle => 'Gayana ũthuthuria';
@@ -1461,7 +1461,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Ũthuthuria wa AI · ti ũtaaro wa investment';
+      'Ũthuthuria wa AI · njĩra cia kuonania, ti ũrathi · ti ũtaaro wa investment';
 
   @override
   String get referralTitle => 'Ita arata';
@@ -1537,7 +1537,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Ũthuthuria wa AI ũtaaragia kĩrĩa gĩtũmaga hisa ĩthiĩ, ũgwati, bata wayo na njĩra ithatũ iria thogora ũngĩthiĩ, hamwe na kũrĩa ũhoro uumĩte na rũthiomi-inĩ rwaku.';
+      'Ũthuthuria wa AI ũtaaragia kĩrĩa gĩtũmaga hisa ĩthiĩ, ũgwati, bata wayo na njĩra ithatũ cia kuonania ũrĩa thogora ũngĩthiĩ, hamwe na kũrĩa ũhoro uumĩte na rũthiomi-inĩ rwaku.';
 
   @override
   String get onboardTitle3 => 'Menya ũhoro wothe';
@@ -3008,6 +3008,13 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Nĩ wega — nĩ tũkũũrora.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Ũhoro wa ũguo tu ũrĩa AI yathondekire ũkoniĩ ũrĩa hisa ciaku ciakĩtwo. Ndũcũthagĩrĩria mĩoroto yaku, ũhoro wa mbeca ciaku kana wa igooti, na ti ũtaaro ũkũrorete wiki kana ũtaaro wa investment.';
+
+  @override
+  String get briefNotificationTitle => 'Mũgĩkĩro wa AI · Ũmũthĩ na hisa ciaku';
 
   @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';

@@ -1449,7 +1449,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Taɓa wani mataki don samun faɗakarwa idan farashi ya kai shi.';
+      'Taɓa wani mataki da AI ya ƙiyasta don samun faɗakarwa idan farashi ya kai shi.';
 
   @override
   String get shareAnalysisTitle => 'Raba nazari';
@@ -1464,7 +1464,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get shareCardFooter => 'An yi da WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Nazarin AI · ba shawarar zuba jari ba ne';
+  String get shareCardDisclaimer =>
+      'Nazarin AI · misalan yanayi, ba hasashe ba · ba shawarar zuba jari ba ne';
 
   @override
   String get referralTitle => 'Gayyaci abokai';
@@ -1542,7 +1543,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Nazarin AI yana bayyana abin da ke motsa hannun jarin, haɗurran da ke tattare da shi, ƙimarsa da hasashe uku na inda farashin zai iya dosa, tare da majiyoyi kuma da harshenka.';
+      'Nazarin AI yana bayyana abin da ke motsa hannun jarin, haɗurran da ke tattare da shi, ƙimarsa da misalai uku na yadda farashin zai iya motsawa, tare da majiyoyi kuma da harshenka.';
 
   @override
   String get onboardTitle3 => 'Ka kasance da labari koyaushe';
@@ -3014,6 +3015,14 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Mun gode — za mu duba ta.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Bayanan gaba ɗaya da AI ya ƙirƙira game da tsarin jakar hannun jarinka. Ba sa la\'akari da burinka, yanayin kuɗinka ko na harajinka, kuma ba shawara ta musamman gare ka ba ne, ba kuma shawarar zuba jari ba ne.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Taƙaitaccen AI · Yau tare da hannun jarinka';
 
   @override
   String get portfolioGoalSet => 'Saita buri';

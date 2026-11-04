@@ -1450,7 +1450,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Dinani mlingo kuti mulandire chidziwitso mtengo ukafika pamenepo.';
+      'Dinani mlingo woyerekezedwa ndi AI kuti mulandire chidziwitso mtengo ukafika pamenepo.';
 
   @override
   String get shareAnalysisTitle => 'Gawani kusanthula';
@@ -1466,7 +1466,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Kusanthula kwa AI · si malangizo okhudza kuyika ndalama';
+      'Kusanthula kwa AI · zochitika zachitsanzo, osati zoneneratu · si malangizo okhudza kuyika ndalama';
 
   @override
   String get referralTitle => 'Itanani anzanu';
@@ -1543,7 +1543,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Kusanthula kwa AI kumafotokoza zomwe zimasuntha sheya, zoopsa, kufunika kwake ndi zochitika zitatu za komwe mtengo ungapite – ndi magwero komanso m\'chilankhulo chanu.';
+      'Kusanthula kwa AI kumafotokoza zomwe zimasuntha sheya, zoopsa, kufunika kwake ndi zochitika zitatu zachitsanzo za momwe mtengo ungasunthire – ndi magwero komanso m\'chilankhulo chanu.';
 
   @override
   String get onboardTitle3 => 'Khalani odziwa nthawi zonse';
@@ -3019,6 +3019,13 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Zikomo — tiziwunika.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Chidziwitso cha ponseponse chopangidwa ndi AI chokhudza kapangidwe ka masheya anu. Sichiganizira zolinga zanu, chuma chanu kapena nkhani za msonkho wanu, ndipo si malangizo okhudza inu panokha kapena malangizo okhudza kuyika ndalama.';
+
+  @override
+  String get briefNotificationTitle => 'Chidule cha AI · Lero ndi masheya anu';
 
   @override
   String get portfolioGoalSet => 'Ikani cholinga';

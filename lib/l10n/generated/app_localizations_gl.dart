@@ -1458,7 +1458,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Toca un nivel para recibir unha alerta cando o prezo o alcance.';
+      'Toca un nivel estimado por IA para recibir unha alerta cando o prezo o alcance.';
 
   @override
   String get shareAnalysisTitle => 'Compartir análise';
@@ -1474,7 +1474,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Análise con IA · non é asesoramento de investimento';
+      'Análise con IA · escenarios ilustrativos, non previsións · non é asesoramento de investimento';
 
   @override
   String get referralTitle => 'Convida os teus amigos';
@@ -1551,7 +1551,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'A análise con IA explícache que move a acción, os riscos, a valoración e tres escenarios sobre cara a onde podería ir o prezo, con fontes e no teu idioma.';
+      'A análise con IA explícache que move a acción, os riscos, a valoración e tres escenarios ilustrativos de como podería moverse o prezo, con fontes e no teu idioma.';
 
   @override
   String get onboardTitle3 => 'Mantente sempre ao día';
@@ -3026,6 +3026,13 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Grazas, revisarémola.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Información xeral xerada por IA sobre a composición da túa carteira. Non ten en conta os teus obxectivos, a túa situación financeira nin a túa situación fiscal, e non constitúe unha recomendación persoal nin asesoramento de investimento.';
+
+  @override
+  String get briefNotificationTitle => 'Resumo con IA · Hoxe coas túas accións';
 
   @override
   String get portfolioGoalSet => 'Definir un obxectivo';

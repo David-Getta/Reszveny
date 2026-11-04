@@ -35,7 +35,7 @@ Rules:
 - Cover: what it is and who issues it; what it tracks or holds (the index or theme, the largest holdings or sectors, how many positions); the yearly cost (expense ratio); the fund size and how long it has existed; whether it pays or reinvests dividends; the main risks (concentration, currency, leverage) and what to watch.
 - Use the numbers from the sources. Never invent facts, numbers or dates; if something cannot be found, say so.
 - If the ticker is in fact an ordinary company share, say so briefly and describe the company in two sentences.
-- Do not tell the reader to buy or sell.''';
+- Do not tell the reader to buy, sell or hold anything, give no price targets and do not say where the price will go.''';
 
   static Map<String, dynamic> requestBody({
     required String symbol,

@@ -1399,7 +1399,8 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => '가격대를 탭하면 주가가 그 가격에 도달했을 때 알림을 받을 수 있습니다.';
+  String get keyLevelAlertHint =>
+      'AI가 추정한 가격대를 탭하면 주가가 그 가격에 도달했을 때 알림을 받을 수 있습니다.';
 
   @override
   String get shareAnalysisTitle => '분석 공유';
@@ -1414,7 +1415,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get shareCardFooter => 'WhatStock으로 제작';
 
   @override
-  String get shareCardDisclaimer => 'AI 분석 · 투자 조언 아님';
+  String get shareCardDisclaimer => 'AI 분석 · 예시 시나리오이며 예측 아님 · 투자 조언 아님';
 
   @override
   String get referralTitle => '친구 초대';
@@ -1490,7 +1491,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI 분석이 주가를 움직이는 요인, 리스크, 밸류에이션, 그리고 주가 향방에 대한 세 가지 시나리오를 출처와 함께 사용자의 언어로 설명합니다.';
+      'AI 분석이 주가를 움직이는 요인, 리스크, 밸류에이션, 그리고 주가가 어떻게 움직일 수 있는지 보여 주는 세 가지 예시 시나리오를 출처와 함께 사용자의 언어로 설명합니다.';
 
   @override
   String get onboardTitle3 => '놓치지 마세요';
@@ -2923,6 +2924,13 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get aiReportThanks => '감사합니다. 검토하겠습니다.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI가 생성한 포트폴리오 구성에 관한 일반 정보입니다. 사용자의 목표, 재무 상황, 세금 상황을 고려하지 않으며 개인 맞춤 추천이나 투자 조언이 아닙니다.';
+
+  @override
+  String get briefNotificationTitle => 'AI 요약 · 오늘의 내 종목';
 
   @override
   String get portfolioGoalSet => '목표 설정';

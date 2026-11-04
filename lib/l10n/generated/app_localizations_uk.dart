@@ -1478,7 +1478,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Натисніть на рівень, щоб отримати сповіщення, коли ціна його досягне.';
+      'Натисніть на рівень, оцінений ШІ, щоб отримати сповіщення, коли ціна його досягне.';
 
   @override
   String get shareAnalysisTitle => 'Поділитися аналізом';
@@ -1493,7 +1493,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get shareCardFooter => 'Створено у WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'ШІ-аналіз · не інвестиційна порада';
+  String get shareCardDisclaimer =>
+      'ШІ-аналіз · ілюстративні сценарії, не прогнози · не інвестиційна порада';
 
   @override
   String get referralTitle => 'Запросіть друзів';
@@ -1576,7 +1577,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'ШІ-аналіз пояснює, що рухає акцію, які є ризики, як її оцінено, і пропонує три сценарії того, куди може піти ціна, — з джерелами та вашою мовою.';
+      'ШІ-аналіз пояснює, що рухає акцію, які є ризики, як її оцінено, і пропонує три ілюстративні сценарії того, як може рухатися ціна, — з джерелами та вашою мовою.';
 
   @override
   String get onboardTitle3 => 'Тримайте руку на пульсі';
@@ -3077,6 +3078,14 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Дякуємо — ми перевіримо.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Загальна інформація про склад вашого портфеля, створена ШІ. Вона не враховує ваших цілей, фінансового становища чи податкової ситуації і не є персональною рекомендацією чи інвестиційною порадою.';
+
+  @override
+  String get briefNotificationTitle =>
+      'ШІ-підсумок · Сьогодні з вашими акціями';
 
   @override
   String get portfolioGoalSet => 'Задати ціль';

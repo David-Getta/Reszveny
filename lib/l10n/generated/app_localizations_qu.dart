@@ -1450,7 +1450,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Huk patata ñit\'iy, chanin chayman chayaptin willachiyta chaskinaykipaq.';
+      'AI yupasqan huk patata ñit\'iy, chanin chayman chayaptin willachiyta chaskinaykipaq.';
 
   @override
   String get shareAnalysisTitle => 'T\'aqwiyta rakiy';
@@ -1466,7 +1466,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'AI t\'aqwiy · manan qullqi churanapaq yuyaychaychu';
+      'AI t\'aqwiy · rikuchinapaq ñankuna, mana ñawpaqmanta willaychu · manan qullqi churanapaq yuyaychaychu';
 
   @override
   String get referralTitle => 'Masiykikunata waqyay';
@@ -1545,7 +1545,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI t\'aqwiyqa willan ima accionta kuyuchisqanta, ima peligrokuna kasqanta, hayk\'a chaniyuq kasqanta, kimsa ñankunatapas maymanchus chanin rinman – pukyukunawan, qampa simiykipi.';
+      'AI t\'aqwiyqa willan ima accionta kuyuchisqanta, ima peligrokuna kasqanta, hayk\'a chaniyuq kasqanta, kimsa rikuchinapaq ñankunatapas imaynatachus chanin kuyunman – pukyukunawan, qampa simiykipi.';
 
   @override
   String get onboardTitle3 => 'Sapa kuti yachaspa kay';
@@ -3022,6 +3022,14 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Sulpayki — qhawasaqku.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI ruwasqan sapsi willakuy, portafolioykiq imaynam huñusqa kasqanmanta. Manam qhawanchu munasqaykikunata, qullqi kayniykita nitaq impuestoykikunatapas, manataq qampaq sapan yuyaychaychu nitaq qullqi churanapaq yuyaychaychu.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI pisichasqa · Kunan p’unchay acciónniykikunawan';
 
   @override
   String get portfolioGoalSet => 'Hayparinata churay';

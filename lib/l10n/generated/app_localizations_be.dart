@@ -1477,7 +1477,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Націсніце на ўзровень, каб атрымаць апавяшчэнне, калі цана яго дасягне.';
+      'Націсніце на ўзровень, ацэнены AI, каб атрымаць апавяшчэнне, калі цана яго дасягне.';
 
   @override
   String get shareAnalysisTitle => 'Падзяліцца аналізам';
@@ -1492,7 +1492,8 @@ class AppLocalizationsBe extends AppLocalizations {
   String get shareCardFooter => 'Зроблена ў WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'AI-аналіз · не інвестыцыйная парада';
+  String get shareCardDisclaimer =>
+      'AI-аналіз · ілюстрацыйныя сцэнарыі, не прагнозы · не інвестыцыйная парада';
 
   @override
   String get referralTitle => 'Запрасіце сяброў';
@@ -1575,7 +1576,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI-аналіз растлумачыць, што рухае акцыю, якія рызыкі і ацэнка, і апіша тры сцэнарыі таго, куды можа пайсці кошт, — з крыніцамі і на вашай мове.';
+      'AI-аналіз растлумачыць, што рухае акцыю, якія рызыкі і ацэнка, і апіша тры ілюстрацыйныя сцэнарыі таго, як можа змяняцца кошт, — з крыніцамі і на вашай мове.';
 
   @override
   String get onboardTitle3 => 'Будзьце ў курсе';
@@ -3073,6 +3074,14 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Дзякуй – мы праверым.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Агульная інфармацыя пра склад вашага партфеля, створаная AI. Яна не ўлічвае вашы мэты, фінансавае становішча ці падатковую сітуацыю і не з’яўляецца ні персанальнай рэкамендацыяй, ні інвестыцыйнай парадай.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI-падсумаванне · Сёння з вашымі акцыямі';
 
   @override
   String get portfolioGoalSet => 'Задаць мэту';

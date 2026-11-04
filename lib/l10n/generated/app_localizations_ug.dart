@@ -1447,7 +1447,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'باھا مەلۇم سەۋىيەگە يەتكەندە ئاگاھلاندۇرۇش ئېلىش ئۈچۈن شۇ سەۋىيەنى چېكىڭ.';
+      'باھا AI مۆلچەرلىگەن مەلۇم سەۋىيەگە يەتكەندە ئاگاھلاندۇرۇش ئېلىش ئۈچۈن شۇ سەۋىيەنى چېكىڭ.';
 
   @override
   String get shareAnalysisTitle => 'تەھلىلنى ھەمبەھىرلەش';
@@ -1462,7 +1462,8 @@ class AppLocalizationsUg extends AppLocalizations {
   String get shareCardFooter => 'WhatStock ئارقىلىق ياسالغان';
 
   @override
-  String get shareCardDisclaimer => 'AI تەھلىلى · مەبلەغ سېلىش تەۋسىيەسى ئەمەس';
+  String get shareCardDisclaimer =>
+      'AI تەھلىلى · مىسال خاراكتېرلىك ئەھۋاللار، مۆلچەر ئەمەس · مەبلەغ سېلىش تەۋسىيەسى ئەمەس';
 
   @override
   String get referralTitle => 'دوستلارنى تەكلىپ قىلىش';
@@ -1539,7 +1540,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI تەھلىلى پاي چېكىنى نېمىنىڭ ھەرىكەتلەندۈرىدىغانلىقى، خەتەرلەر، قىممەت باھالاش ۋە باھانىڭ قەيەرگە بېرىشى مۇمكىنلىكى توغرىسىدىكى ئۈچ خىل ئەھۋالنى مەنبەلەر بىلەن ۋە ئۆز تىلىڭىزدا چۈشەندۈرۈپ بېرىدۇ.';
+      'AI تەھلىلى پاي چېكىنى نېمىنىڭ ھەرىكەتلەندۈرىدىغانلىقى، خەتەرلەر، قىممەت باھالاش ۋە باھانىڭ قانداق ئۆزگىرىشى مۇمكىنلىكى توغرىسىدىكى ئۈچ خىل مىسال خاراكتېرلىك ئەھۋالنى مەنبەلەر بىلەن ۋە ئۆز تىلىڭىزدا چۈشەندۈرۈپ بېرىدۇ.';
 
   @override
   String get onboardTitle3 => 'ھەمىشە خەۋەردار بولۇڭ';
@@ -3008,6 +3009,14 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'رەھمەت — بىز تەكشۈرىمىز.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'مەبلەغ بىرىكمىڭىزنىڭ تەركىبى ھەققىدە AI ھاسىللىغان ئومۇمىي ئۇچۇر. ئۇ نىشانلىرىڭىز، مالىيە ئەھۋالىڭىز ياكى باج ئەھۋالىڭىزنى ئويلاشمايدۇ، ئۇ شەخسىي تەۋسىيە ياكى مەبلەغ سېلىش تەۋسىيەسى ئەمەس.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI خۇلاسىسى · بۈگۈن پايچېكلىرىڭىز بىلەن';
 
   @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';

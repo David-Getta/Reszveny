@@ -598,7 +598,8 @@ void main() {
         'effort': 'medium',
         'format': {'type': 'json_schema', 'schema': {}},
       });
-      expect(lastUpstream!.keys, unorderedEquals(['model', 'max_tokens', 'messages', 'output_config']));
+      expect(lastUpstream!.keys, unorderedEquals(['model', 'max_tokens', 'system', 'messages', 'output_config']));
+      expect((lastUpstream!['system'] as List).first, {'type': 'text', 'text': Api.complianceRules});
       // A normál felismerés változatlanul átmegy.
       await call('POST', '/v1/anthropic/v1/messages', token: token, body: recognition());
       expect(lastUpstream!['max_tokens'], 4096);

@@ -1468,7 +1468,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'انقر على مستوى لتلقي تنبيه عندما يصل السعر إليه.';
+      'انقر على مستوى قدّره الذكاء الاصطناعي لتلقي تنبيه عندما يصل السعر إليه.';
 
   @override
   String get shareAnalysisTitle => 'مشاركة التحليل';
@@ -1484,7 +1484,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'تحليل بالذكاء الاصطناعي · ليس نصيحة استثمارية';
+      'تحليل بالذكاء الاصطناعي · سيناريوهات توضيحية وليست تنبؤات · ليس نصيحة استثمارية';
 
   @override
   String get referralTitle => 'ادعُ أصدقاءك';
@@ -1570,7 +1570,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'يشرح لك التحليل بالذكاء الاصطناعي ما يحرّك السهم ومخاطره وتقييمه، وثلاثة سيناريوهات لاتجاه سعره، مع المصادر وبلغتك.';
+      'يشرح لك التحليل بالذكاء الاصطناعي ما يحرّك السهم ومخاطره وتقييمه، وثلاثة سيناريوهات توضيحية لكيفية تحرّك سعره، مع المصادر وبلغتك.';
 
   @override
   String get onboardTitle3 => 'ابقَ على اطلاع دائم';
@@ -3077,6 +3077,14 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'شكرًا — سنراجعها.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'معلومات عامة مُنشأة بالذكاء الاصطناعي حول تكوين محفظتك. لا تأخذ في الاعتبار أهدافك أو وضعك المالي أو الضريبي، ولا تُعدّ توصية شخصية ولا نصيحة استثمارية.';
+
+  @override
+  String get briefNotificationTitle =>
+      'ملخص بالذكاء الاصطناعي · اليوم مع أسهمك';
 
   @override
   String get portfolioGoalSet => 'تحديد هدف';

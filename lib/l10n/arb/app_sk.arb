@@ -391,12 +391,12 @@
   "searchAnalyses": "Hľadať v analýzach",
   "deleteAnalysis": "Odstrániť",
   "analysisDeleted": "Analýza {symbol} bola odstránená",
-  "keyLevelAlertHint": "Ťuknite na úroveň a dostanete upozornenie, keď ju cena dosiahne.",
+  "keyLevelAlertHint": "Ťuknite na úroveň odhadnutú AI a dostanete upozornenie, keď ju cena dosiahne.",
   "shareAnalysisTitle": "Zdieľať analýzu",
   "shareAsImage": "Zdieľať ako obrázok",
   "shareAsText": "Zdieľať ako text",
   "shareCardFooter": "Vytvorené pomocou WhatStock",
-  "shareCardDisclaimer": "AI analýza · nie je investičné odporúčanie",
+  "shareCardDisclaimer": "AI analýza · ilustratívne scenáre, nie prognózy · nie je investičné odporúčanie",
   "referralTitle": "Pozvi priateľov",
   "referralBody": "Zdieľaj svoj kód. Priateľ hneď dostane {count, plural, =1{1 analýzu navyše} few{{count} analýzy navyše} many{{count} analýzy navyše} other{{count} analýz navyše}} a ty to isté po prvej analýze priateľa.",
   "referralYourCode": "Tvoj kód",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Odfoťte akciu",
   "onboardBody1": "Stačí obrazovka brokerskej aplikácie, noviny alebo logo firmy: WhatStock rozpozná akciu a ukáže vám jej cenu, graf a kľúčové ukazovatele.",
   "onboardTitle2": "Pochopte ju za pár minút",
-  "onboardBody2": "AI analýza vysvetľuje, čo hýbe akciou, aké sú riziká a ocenenie, a ponúka tri scenáre, kam sa môže cena pohnúť – so zdrojmi a vo vašom jazyku.",
+  "onboardBody2": "AI analýza vysvetľuje, čo hýbe akciou, aké sú riziká a ocenenie, a ponúka tri ilustratívne scenáre, ako sa môže cena pohybovať – so zdrojmi a vo vašom jazyku.",
   "onboardTitle3": "Buďte stále v obraze",
   "onboardBody3": "Obľúbené, vaše portfólio a cenové upozornenia vás držia v obraze. Vaše analýzy zostávajú vo vašom zariadení, pripravené na opätovné otvorenie.",
   "onboardNext": "Ďalej",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Čo je zle? (voliteľné)",
   "aiReportPrivacy": "Dostaneme text tejto odpovede a vašu poznámku — bez prepojenia s vaším účtom — aby sme ju mohli posúdiť.",
   "aiReportSend": "Odoslať hlásenie",
-  "aiReportThanks": "Ďakujeme — pozrieme sa na to."
+  "aiReportThanks": "Ďakujeme — pozrieme sa na to.",
+  "aiPortfolioDisclaimer": "Všeobecné informácie o zložení vášho portfólia vygenerované AI. Nezohľadňujú vaše ciele, financie ani daňovú situáciu a nie sú osobným ani investičným odporúčaním.",
+  "briefNotificationTitle": "AI zhrnutie · Dnes s vašimi akciami"
 }

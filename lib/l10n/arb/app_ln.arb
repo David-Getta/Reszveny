@@ -391,12 +391,12 @@
   "searchAnalyses": "Luká na ba analyse na yo",
   "deleteAnalysis": "Limwisa",
   "analysisDeleted": "Analyse ya {symbol} elimwisami",
-  "keyLevelAlertHint": "Fina niveau moko mpo na kozwa likebisi ntango ntalo ekokoma wana.",
+  "keyLevelAlertHint": "Fina niveau moko oyo AI etangi mpo na kozwa likebisi ntango ntalo ekokoma wana.",
   "shareAnalysisTitle": "Kabola analyse",
   "shareAsImage": "Kabola lokola elilingi",
   "shareAsText": "Kabola lokola makomi",
   "shareCardFooter": "Esalemi na WhatStock",
-  "shareCardDisclaimer": "Analyse ya AI · ezali toli ya kotia mbɔngɔ te",
+  "shareCardDisclaimer": "Analyse ya AI · makambo ya ndakisa, bisakoli te · ezali toli ya kotia mbɔngɔ te",
   "referralTitle": "Benga baninga",
   "referralBody": "Kabola code na yo. Moninga na yo akozwa {count, plural, =1{analyse {count} ya kobakisa} other{ba-analyse {count} ya kobakisa}} mbala moko, mpe yo okozwa ndenge moko nsima ya analyse na ye ya liboso.",
   "referralYourCode": "Code na yo",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Bɛta foto ya action",
   "onboardBody1": "Ekrá ya application ya broker, zulunalo to logo ya kompanyi ekoki: WhatStock eyebi action yango mpe elakisi yo ntalo na yango, grafiki mpe mitángo ya ntina.",
   "onboardTitle2": "Sosola yango na miniti moke",
-  "onboardBody2": "Analyse ya AI elimboli nini etindaka action, makama, motuya na yango mpe makambo misato oyo ekoki kokómela ntalo, na bisika ya nsango mpe na monoko na yo.",
+  "onboardBody2": "Analyse ya AI elimboli nini etindaka action, makama, motuya na yango mpe makambo misato ya ndakisa ya ndenge ntalo ekoki koningana, na bisika ya nsango mpe na monoko na yo.",
   "onboardTitle3": "Yeba makambo nyɔnsɔ ntango nyɔnsɔ",
   "onboardBody3": "Oyo olingaka, portefeuille na yo mpe makebisi ya ntalo ekoyebisa yo makambo. Ba analyse na yo etikalaka na appareil na yo, ya kofungola lisusu.",
   "onboardNext": "Oyo elandi",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Nini ezali mabe? (soki olingi)",
   "aiReportPrivacy": "Tozwaka makomi ya eyano oyo mpe note na yo — kozanga compte na yo — mpo totala yango.",
   "aiReportSend": "Tinda rapport",
-  "aiReportThanks": "Matɔndi — tokotala yango."
+  "aiReportThanks": "Matɔndi — tokotala yango.",
+  "aiPortfolioDisclaimer": "Bansango ya mobimba oyo AI ebimisi na ntina ya ndenge portefeuille na yo ebongisami. Etaleli te mikano na yo, makambo ya mbɔngɔ na yo to ya mpako na yo, mpe ezali toli oyo etali yo moko te, ezali mpe toli ya kotia mbɔngɔ te.",
+  "briefNotificationTitle": "Bokuse ya AI · Lelo na misolo na yo"
 }

@@ -164,7 +164,12 @@ void main() {
 
     await tapAndWait('share-image', 2);
     await tester.pumpAndSettle();
-    expect(texts.last, 'Strong demand, high expectations.\nhttps://api.test/s/abc123XYZ');
+    // A képpel küldött szövegben is ott a figyelmeztetés.
+    expect(
+      texts.last,
+      'Strong demand, high expectations.\nAI analysis · illustrative scenarios, not forecasts · not investment advice'
+      '\nhttps://api.test/s/abc123XYZ',
+    );
 
     expect(shares, hasLength(1));
     expect(shares.single['symbol'], 'AAPL');

@@ -1447,7 +1447,7 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Zi ɖoƒe aɖe be nàxɔ nuxlɔ̃ame ne asi la ɖo afima.';
+      'Zi ɖoƒe aɖe si AI bu be nàxɔ nuxlɔ̃ame ne asi la ɖo afima.';
 
   @override
   String get shareAnalysisTitle => 'Ma numekuku';
@@ -1463,7 +1463,7 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'AI numekuku · menye aɖaŋuɖoɖo le gadede nu ŋu o';
+      'AI numekuku · kpɔɖeŋu nɔnɔmewo, menye nyagblɔɖiwo o · menye aɖaŋuɖoɖo le gadede nu ŋu o';
 
   @override
   String get referralTitle => 'Kpe xɔ̃wòwo';
@@ -1539,7 +1539,7 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI numekuku la ɖea nusi ʋãa akpa la, afɔku siwo le eŋu, eƒe asixɔxɔ kple nɔnɔme etɔ̃ siwo me asi la ate ŋu ayi la me – kple nyatakakaƒewo eye le wò gbe me.';
+      'AI numekuku la ɖea nusi ʋãa akpa la, afɔku siwo le eŋu, eƒe asixɔxɔ kple kpɔɖeŋu nɔnɔme etɔ̃ siwo ɖe alesi asi la ate ŋu atrɔ fia – kple nyatakakaƒewo eye le wò gbe me.';
 
   @override
   String get onboardTitle3 => 'Nya nu sia nu ɣesiaɣi';
@@ -3011,6 +3011,14 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Akpe — míalé ŋku ɖe eŋu.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Nyatakaka gbadzaa siwo AI wɔ tso wò akpawo ƒe ɖoɖo ŋu. Mebua wò taɖodzinuwo, wò ganyawo alo wò adzɔxexe ƒe nɔnɔme ŋu o, eye menye aɖaŋuɖoɖo na wò ɖeka ko alo aɖaŋuɖoɖo le gadede nu ŋu o.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI ƒe nyagbɔgblɔ kpui · Egbe kple wò stockwo';
 
   @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';

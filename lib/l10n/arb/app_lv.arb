@@ -391,12 +391,12 @@
   "searchAnalyses": "Meklēt savās analīzēs",
   "deleteAnalysis": "Dzēst",
   "analysisDeleted": "{symbol} analīze izdzēsta",
-  "keyLevelAlertHint": "Pieskarieties līmenim, lai saņemtu brīdinājumu, kad cena to sasniegs.",
+  "keyLevelAlertHint": "Pieskarieties AI aplēstam līmenim, lai saņemtu brīdinājumu, kad cena to sasniegs.",
   "shareAnalysisTitle": "Kopīgot analīzi",
   "shareAsImage": "Kopīgot kā attēlu",
   "shareAsText": "Kopīgot kā tekstu",
   "shareCardFooter": "Izveidots ar WhatStock",
-  "shareCardDisclaimer": "AI analīze · nav ieguldījumu konsultācija",
+  "shareCardDisclaimer": "AI analīze · ilustratīvi scenāriji, nevis prognozes · nav ieguldījumu konsultācija",
   "referralTitle": "Uzaiciniet draugus",
   "referralBody": "Kopīgojiet savu kodu. Jūsu draugs uzreiz saņems {count, plural, zero{{count} papildu analīzes} one{{count} papildu analīzi} other{{count} papildu analīzes}}, un jūs – tikpat pēc viņa pirmās analīzes.",
   "referralYourCode": "Jūsu kods",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Nofotografējiet akciju",
   "onboardBody1": "Pietiek ar brokera lietotnes ekrānu, avīzi vai uzņēmuma logotipu: WhatStock atpazīst akciju un parāda tās cenu, grafiku un galvenos rādītājus.",
   "onboardTitle2": "Izprotiet to dažās minūtēs",
-  "onboardBody2": "AI analīze izskaidro, kas virza akcijas cenu, kādi ir riski, kāds ir novērtējums, un piedāvā trīs scenārijus, kurp cena varētu virzīties, – ar avotiem un jūsu valodā.",
+  "onboardBody2": "AI analīze izskaidro, kas virza akcijas cenu, kādi ir riski, kāds ir novērtējums, un piedāvā trīs ilustratīvus scenārijus, kā cena varētu mainīties, – ar avotiem un jūsu valodā.",
   "onboardTitle3": "Vienmēr lietas kursā",
   "onboardBody3": "Izlase, jūsu portfelis un cenu brīdinājumi jūs vienmēr informēs. Jūsu analīzes paliek jūsu ierīcē, gatavas atkārtotai atvēršanai.",
   "onboardNext": "Tālāk",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Kas nav kārtībā? (nav obligāti)",
   "aiReportPrivacy": "Mēs saņemam šīs atbildes tekstu un jūsu piezīmi – bez jūsu konta –, lai to varētu pārskatīt.",
   "aiReportSend": "Nosūtīt ziņojumu",
-  "aiReportThanks": "Paldies – mēs to pārskatīsim."
+  "aiReportThanks": "Paldies – mēs to pārskatīsim.",
+  "aiPortfolioDisclaimer": "Mākslīgā intelekta ģenerēta vispārīga informācija par jūsu portfeļa sastāvu. Tajā nav ņemti vērā jūsu mērķi, finanšu stāvoklis vai nodokļu situācija, un tā nav ne personīgs ieteikums, ne ieguldījumu konsultācija.",
+  "briefNotificationTitle": "AI kopsavilkums · Šodien ar jūsu akcijām"
 }

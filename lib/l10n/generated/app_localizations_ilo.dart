@@ -1455,7 +1455,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'I-tap ti maysa a tukad tapno maalertoka no madanon ti presio daytoy.';
+      'I-tap ti maysa a tukad a pinattapatta ti AI tapno maalertoka no madanon ti presio daytoy.';
 
   @override
   String get shareAnalysisTitle => 'Ibingay ti panangsukimat';
@@ -1471,7 +1471,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Panangsukimat ti AI · saan a balakad iti panagpuonan';
+      'Panangsukimat ti AI · pagarigan a senario, saan a padto · saan a balakad iti panagpuonan';
 
   @override
   String get referralTitle => 'Awisem dagiti gagayyem';
@@ -1549,7 +1549,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Ilawlawag ti panangsukimat ti AI no ania ti mangtignay iti stock, dagiti peggad, ti pateg daytoy ken tallo a senario no papanan ti presio, addaan kadagiti nagtaudan ken iti bukodmo a pagsasao.';
+      'Ilawlawag ti panangsukimat ti AI no ania ti mangtignay iti stock, dagiti peggad, ti pateg daytoy ken tallo a pagarigan a senario no kasano nga aggaraw ti presio, addaan kadagiti nagtaudan ken iti bukodmo a pagsasao.';
 
   @override
   String get onboardTitle3 => 'Kanayon nga ammom';
@@ -3028,6 +3028,14 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Agyamankami — repasuenmi daytoy.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Sapasap nga impormasion nga inaramid ti AI maipapan iti komposision ti portfolio-m. Saanna nga ikonsiderar dagiti panggepmo, pinansiam wenno kasasaad ti buismo, ken saan a personal a rekomendasion wenno balakad iti panagpuonan.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI a pakabuklan · Ita nga aldaw kadagiti stock-mo';
 
   @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';

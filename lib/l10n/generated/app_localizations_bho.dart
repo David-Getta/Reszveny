@@ -1439,7 +1439,7 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'कवनो स्तर पर टैप करीं, दाम ओह तक पहुँची त अलर्ट मिल जाई।';
+      'AI के अंदाजा लगावल कवनो स्तर पर टैप करीं, दाम ओह तक पहुँची त अलर्ट मिल जाई।';
 
   @override
   String get shareAnalysisTitle => 'विश्लेषण साझा करीं';
@@ -1454,7 +1454,8 @@ class AppLocalizationsBho extends AppLocalizations {
   String get shareCardFooter => 'WhatStock से बनल';
 
   @override
-  String get shareCardDisclaimer => 'AI विश्लेषण · निवेश के सलाह ना ह';
+  String get shareCardDisclaimer =>
+      'AI विश्लेषण · उदाहरण वाला परिदृश्य, भविष्यवाणी ना · निवेश के सलाह ना ह';
 
   @override
   String get referralTitle => 'दोस्तन के न्योता दीं';
@@ -1532,7 +1533,7 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI विश्लेषण बतावेला कि शेयर के का चलावत बा, जोखिम का बा, ओकर मूल्यांकन का बा, आ दाम कहाँ जा सकेला एकर तीन गो परिदृश्य – स्रोत के साथे आ रउरा भाषा में।';
+      'AI विश्लेषण बतावेला कि शेयर के का चलावत बा, जोखिम का बा, ओकर मूल्यांकन का बा, आ दाम कइसे चल सकेला एकर तीन गो उदाहरण वाला परिदृश्य – स्रोत के साथे आ रउरा भाषा में।';
 
   @override
   String get onboardTitle3 => 'हमेशा अपडेट रहीं';
@@ -2998,6 +2999,13 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'धन्यवाद — हमनी के एकरा के जाँचब।';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI से बनल, रउरा पोर्टफ़ोलियो के बनावट के बारे में सामान्य जानकारी। ई रउरा लक्ष्य, पइसा-कौड़ी के हालत भा टैक्स के स्थिति के ध्यान में ना राखे, आ ई ना त निजी सिफारिश ह ना निवेश के सलाह।';
+
+  @override
+  String get briefNotificationTitle => 'AI सारांश · आज रउआ शेयर संगे';
 
   @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';

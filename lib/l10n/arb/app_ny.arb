@@ -391,12 +391,12 @@
   "searchAnalyses": "Sakani zosanthula zanu",
   "deleteAnalysis": "Chotsani",
   "analysisDeleted": "Kusanthula kwa {symbol} kwachotsedwa",
-  "keyLevelAlertHint": "Dinani mlingo kuti mulandire chidziwitso mtengo ukafika pamenepo.",
+  "keyLevelAlertHint": "Dinani mlingo woyerekezedwa ndi AI kuti mulandire chidziwitso mtengo ukafika pamenepo.",
   "shareAnalysisTitle": "Gawani kusanthula",
   "shareAsImage": "Gawani ngati chithunzi",
   "shareAsText": "Gawani ngati mawu",
   "shareCardFooter": "Zapangidwa ndi WhatStock",
-  "shareCardDisclaimer": "Kusanthula kwa AI · si malangizo okhudza kuyika ndalama",
+  "shareCardDisclaimer": "Kusanthula kwa AI · zochitika zachitsanzo, osati zoneneratu · si malangizo okhudza kuyika ndalama",
   "referralTitle": "Itanani anzanu",
   "referralBody": "Gawani khodi yanu. Mnzanu amalandira {count, plural, =1{kusanthula kowonjezera 1} other{kusanthula kowonjezera {count}}} nthawi yomweyo, ndipo inunso mumalandira chimodzimodzi akamaliza kusanthula kwake koyamba.",
   "referralYourCode": "Khodi yanu",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Jambulani sheya",
   "onboardBody1": "Chophimba cha pulogalamu ya broker, nyuzipepala kapena chizindikiro cha kampani ndi zokwanira: WhatStock imazindikira sheyayo ndipo imakuwonetsani mtengo wake, tchati ndi ziwerengero zofunika.",
   "onboardTitle2": "Mvetsetsani mu mphindi zochepa",
-  "onboardBody2": "Kusanthula kwa AI kumafotokoza zomwe zimasuntha sheya, zoopsa, kufunika kwake ndi zochitika zitatu za komwe mtengo ungapite – ndi magwero komanso m'chilankhulo chanu.",
+  "onboardBody2": "Kusanthula kwa AI kumafotokoza zomwe zimasuntha sheya, zoopsa, kufunika kwake ndi zochitika zitatu zachitsanzo za momwe mtengo ungasunthire – ndi magwero komanso m'chilankhulo chanu.",
   "onboardTitle3": "Khalani odziwa nthawi zonse",
   "onboardBody3": "Zokondedwa, masheya anu ndi zidziwitso za mtengo zimakudziwitsani nthawi zonse. Zosanthula zanu zimakhala pa chipangizo chanu, zokonzeka kutsegulidwanso.",
   "onboardNext": "Patsogolo",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Vuto ndi chiyani? (ngati mukufuna)",
   "aiReportPrivacy": "Timalandira mawu a yankho ili ndi zolemba zanu — popanda akaunti yanu — kuti tiziwunike.",
   "aiReportSend": "Tumizani lipoti",
-  "aiReportThanks": "Zikomo — tiziwunika."
+  "aiReportThanks": "Zikomo — tiziwunika.",
+  "aiPortfolioDisclaimer": "Chidziwitso cha ponseponse chopangidwa ndi AI chokhudza kapangidwe ka masheya anu. Sichiganizira zolinga zanu, chuma chanu kapena nkhani za msonkho wanu, ndipo si malangizo okhudza inu panokha kapena malangizo okhudza kuyika ndalama.",
+  "briefNotificationTitle": "Chidule cha AI · Lero ndi masheya anu"
 }

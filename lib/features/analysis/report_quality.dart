@@ -31,6 +31,24 @@ class ReportQuality {
 
   static final _datePrefix = RegExp(r'^\**\d{4}-\d{2}(-\d{2})?');
 
+  /// A modell saját, tanácsadó szóhasználata (angolul és magyarul): felszólítás vételre,
+  /// eladásra, tartásra, saját célár vagy értékelő besorolás. Az elemzők közölt véleménye
+  /// (ahol a mondat elemzőre, konszenzusra hivatkozik) nem számít.
+  static final _advice = RegExp(
+    r"\b(you should (buy|sell|hold|add|trim|reduce|avoid)|we recommend|our (price )?target|i recommend|"
+    r'strong buy|(is|rate it|rated) (a )?(buy|sell|accumulate|overweight|outperform)\b|take profits)|'
+    r'(érdemes (venni|vásárolni|eladni|megtartani|bővíteni)|vegyél|add el|tartsd meg|célárunk|javasoljuk)',
+    caseSensitive: false,
+  );
+  static final _reported = RegExp(r'analyst|consensus|elemző|konszenzus', caseSensitive: false);
+
+  /// A tanácsadó mondatok (a felület nem használja; az eval pontoz vele).
+  static List<String> adviceSentences(StockReport r) => [
+    for (final t in [r.headline, for (final s in r.sections) ...s.paragraphs, for (final s in r.sections) ...s.bullets])
+      for (final sentence in t.split(RegExp(r'(?<=[.!?])\s+')))
+        if (_advice.hasMatch(sentence) && !_reported.hasMatch(sentence)) sentence,
+  ];
+
   static int countWords(StockReport r) {
     final texts = [r.headline, for (final s in r.sections) ...s.paragraphs, for (final s in r.sections) ...s.bullets];
     return texts.fold(0, (n, t) => n + t.split(RegExp(r'\s+')).where((w) => w.isNotEmpty).length);
@@ -115,6 +133,9 @@ class ReportQuality {
     }
 
     if (r.sources.length < 3) issue(5, 'only ${r.sources.length} sources');
+    // Általános elemzés, nem személyre szabott ajánlás: a saját tanácsadó szóhasználat súlyos hiba.
+    final advice = adviceSentences(r);
+    if (advice.isNotEmpty) issue(10 * advice.length, '${advice.length} sentences read as advice: ${advice.first}');
 
     final words = countWords(r);
     final (lo, hi) = options.wordRange;

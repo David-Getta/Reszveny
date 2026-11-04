@@ -391,12 +391,12 @@
   "searchAnalyses": "Bao f vɛɛsgã pʋgẽ",
   "deleteAnalysis": "Yẽes",
   "analysisDeleted": "{symbol} vɛɛsgã yẽesame",
-  "keyLevelAlertHint": "Dĩig zĩig a ye n paam gũusg koosgã sã n ta be.",
+  "keyLevelAlertHint": "Dĩig zĩig a ye AI sẽn mak-a n paam gũusg koosgã sã n ta be.",
   "shareAnalysisTitle": "Pʋɩ vɛɛsgã",
   "shareAsImage": "Pʋɩ wa foto",
   "shareAsText": "Pʋɩ wa gʋlsgo",
   "shareCardFooter": "A maana ne WhatStock",
-  "shareCardDisclaimer": "AI vɛɛsgo · pa sagls ligd kẽesg wɛɛngẽ ye",
+  "shareCardDisclaimer": "AI vɛɛsgo · sore sẽn yaa makre bala, pa beoog bãngre ye · pa sagls ligd kẽesg wɛɛngẽ ye",
   "referralTitle": "Bool f zo-rãmba",
   "referralBody": "Pʋɩ f kõodã. F zoa na n paama {count, plural, =1{vɛɛse a yembr sẽn paase} other{vɛɛse {count} sẽn paase}} masã, la fo me na n paama woto a vɛɛs-pipi wã poore.",
   "referralYourCode": "F kõodã",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Rɩk aksiõ foto",
   "onboardBody1": "Burs aplikasiõ ekrã, kasɛt bɩ ãterpriz logo sekame: WhatStock bãngda aksiõ wã la a wilgd a koosgo, a grafik la a sõd-kãsenga.",
   "onboardTitle2": "Bãng-a minut bilf pʋgẽ",
-  "onboardBody2": "AI vɛɛsgã wilgda bũmb ning sẽn tikd aksiõ wã, a yel-beeda, a yõodo, la sor a tãab a koosgã sẽn tõe n tʋg n kẽnge – ne a tũudsã la y kʋdemd pʋgẽ.",
+  "onboardBody2": "AI vɛɛsgã wilgda bũmb ning sẽn tikd aksiõ wã, a yel-beeda, a yõodo, la sor a tãab sẽn yaa makre, a koosgã sẽn tõe n lebg to-to – ne a tũudsã la y kʋdemd pʋgẽ.",
   "onboardTitle3": "Ra n bãng kibay wakat fãa",
   "onboardBody3": "Nong-n-yɩɩda, y portfey la koosg gũusgo kõta yãmb kibay. Y vɛɛsgã kẽnd y masĩn pʋgẽ, n segd tɩ y le pak-ba.",
   "onboardNext": "Rẽnda",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Bõe n pa sõma? (f sã n data)",
   "aiReportPrivacy": "D paamda leokrã gʋlsg la f gʋlsgã — f kõnte wã pa be ye — sẽn na yɩl tɩ d ges-a.",
   "aiReportSend": "Tʋm togsgã",
-  "aiReportThanks": "Barka — d na n ges-a."
+  "aiReportThanks": "Barka — d na n ges-a.",
+  "aiPortfolioDisclaimer": "AI n maan kibay sẽn yaa fãa-fãa, f portfey wã sẽn naage to-to wã yelle. A pa ges f raab-rãmbã, f ligdã la f lampo yellã ye, la a pa sagls sẽn yaa f mengã yĩnga, a pa sagls ligd kẽesg wɛɛngẽ me ye.",
+  "briefNotificationTitle": "AI koe-bõonga · Rũndã ne f aksɩyõnã"
 }

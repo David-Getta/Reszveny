@@ -1440,7 +1440,7 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Бәя дәрәҗәгә җиткәч искәртү алу өчен дәрәҗәгә басыгыз.';
+      'Бәя AI чамалаган дәрәҗәгә җиткәч искәртү алу өчен шул дәрәҗәгә басыгыз.';
 
   @override
   String get shareAnalysisTitle => 'Анализ белән бүлешү';
@@ -1455,7 +1455,8 @@ class AppLocalizationsTt extends AppLocalizations {
   String get shareCardFooter => 'WhatStock ярдәмендә ясалган';
 
   @override
-  String get shareCardDisclaimer => 'AI анализы · инвестиция киңәше түгел';
+  String get shareCardDisclaimer =>
+      'AI анализы · мисал сценарийлар, фаразлар түгел · инвестиция киңәше түгел';
 
   @override
   String get referralTitle => 'Дусларны чакыру';
@@ -1532,7 +1533,7 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI анализы акцияне нәрсә хәрәкәткә китергәнен, куркынычларны, бәяләүне һәм бәянең кая таба китә алуы турында өч сценарийны аңлата – чыганаклар белән һәм сезнең телдә.';
+      'AI анализы акцияне нәрсә хәрәкәткә китергәнен, куркынычларны, бәяләүне һәм бәянең ничек хәрәкәт итә алуы турында өч мисал сценарийны аңлата – чыганаклар белән һәм сезнең телдә.';
 
   @override
   String get onboardTitle3 => 'Һәрвакыт хәбәрдар булыгыз';
@@ -3002,6 +3003,13 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Рәхмәт — без моны тикшерәбез.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Портфелегез составы турында AI ясаган гомуми мәгълүмат. Ул максатларыгызны, финанс хәлегезне яки салым хәлегезне исәпкә алмый һәм шәхси тәкъдим дә, инвестиция киңәше дә түгел.';
+
+  @override
+  String get briefNotificationTitle => 'AI йомгагы · Бүген акцияләрегез белән';
 
   @override
   String get portfolioGoalSet => 'Максат кую';

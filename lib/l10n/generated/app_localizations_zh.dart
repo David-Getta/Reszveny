@@ -1386,7 +1386,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => '点按某个价位，股价到达时即会提醒你。';
+  String get keyLevelAlertHint => '点按 AI 估算的某个价位，股价到达时即会提醒你。';
 
   @override
   String get shareAnalysisTitle => '分享分析';
@@ -1401,7 +1401,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get shareCardFooter => '由 WhatStock 制作';
 
   @override
-  String get shareCardDisclaimer => 'AI 分析 · 不构成投资建议';
+  String get shareCardDisclaimer => 'AI 分析 · 示例情景，并非预测 · 不构成投资建议';
 
   @override
   String get referralTitle => '邀请好友';
@@ -1477,7 +1477,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI 分析会解释股价的驱动因素、风险、估值，以及股价未来走向的三种情景——附有信息来源，并使用你的语言。';
+      'AI 分析会解释股价的驱动因素、风险、估值，以及股价可能如何变动的三种示例情景——附有信息来源，并使用你的语言。';
 
   @override
   String get onboardTitle3 => '动态尽在掌握';
@@ -2872,6 +2872,13 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get aiReportThanks => '谢谢，我们会进行审核。';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      '由 AI 生成的关于你投资组合构成的一般信息。未考虑你的目标、财务状况或税务情况，不构成个性化建议或投资建议。';
+
+  @override
+  String get briefNotificationTitle => 'AI 总结 · 今天你的股票';
 
   @override
   String get portfolioGoalSet => '设定目标';
@@ -4629,7 +4636,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   }
 
   @override
-  String get keyLevelAlertHint => '點一下價位，股價到達時便會提示你。';
+  String get keyLevelAlertHint => '點一下 AI 估算的價位，股價到達時便會提示你。';
 
   @override
   String get shareAnalysisTitle => '分享分析';
@@ -4644,7 +4651,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get shareCardFooter => '由 WhatStock 製作';
 
   @override
-  String get shareCardDisclaimer => 'AI 分析 · 並不構成投資建議';
+  String get shareCardDisclaimer => 'AI 分析 · 示例情境，並非預測 · 並不構成投資建議';
 
   @override
   String get referralTitle => '邀請朋友';
@@ -4720,7 +4727,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get onboardBody2 =>
-      'AI 分析會解釋推動股價的因素、風險、估值，以及股價未來走勢的三個情境——附有資料來源，並以你的語言呈現。';
+      'AI 分析會解釋推動股價的因素、風險、估值，以及股價可能如何變動的三個示例情境——附有資料來源，並以你的語言呈現。';
 
   @override
   String get onboardTitle3 => '市況盡在掌握';
@@ -6115,6 +6122,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get aiReportThanks => '多謝，我們會跟進審視。';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      '由 AI 產生、有關你投資組合構成的一般資訊。並未考慮你的目標、財務狀況或稅務情況，並不構成個人化建議或投資建議。';
+
+  @override
+  String get briefNotificationTitle => 'AI 總結 · 今天你的股票';
 
   @override
   String get portfolioGoalSet => '設定目標';

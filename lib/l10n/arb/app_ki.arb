@@ -391,12 +391,12 @@
   "searchAnalyses": "Caria ũthuthuria waku",
   "deleteAnalysis": "Eheria",
   "analysisDeleted": "Ũthuthuria wa {symbol} weherio",
-  "keyLevelAlertHint": "Hihinya mũhaka nĩguo wone kĩmenyithia rĩrĩa thogora ũgakinya hau.",
+  "keyLevelAlertHint": "Hihinya mũhaka ũrĩa AI ĩthimĩte nĩguo wone kĩmenyithia rĩrĩa thogora ũgakinya hau.",
   "shareAnalysisTitle": "Gayana ũthuthuria",
   "shareAsImage": "Gayana ta mbica",
   "shareAsText": "Gayana ta mandĩko",
   "shareCardFooter": "Ũthondeketwo na WhatStock",
-  "shareCardDisclaimer": "Ũthuthuria wa AI · ti ũtaaro wa investment",
+  "shareCardDisclaimer": "Ũthuthuria wa AI · njĩra cia kuonania, ti ũrathi · ti ũtaaro wa investment",
   "referralTitle": "Ita arata",
   "referralBody": "Gayana kodi yaku. Mũrata waku nĩ egũkora {count, plural, =1{ũthuthuria 1 wa kũongerera} other{mathuthuria {count} ma kũongerera}} o rĩu, na we nĩ ũgũkora o ũguo thutha wa ũthuthuria wake wa mbere.",
   "referralYourCode": "Kodi yaku",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Oya mbica ya hisa",
   "onboardBody1": "Skrini ya app ya broker, gazeti kana rũũri rwa kampuni nĩ ciiganu: WhatStock nĩ ĩkũmenya hisa ĩyo na ĩkuonie thogora wayo, chati na namba cia bata.",
   "onboardTitle2": "Ĩmenye na ndagĩka nini",
-  "onboardBody2": "Ũthuthuria wa AI ũtaaragia kĩrĩa gĩtũmaga hisa ĩthiĩ, ũgwati, bata wayo na njĩra ithatũ iria thogora ũngĩthiĩ, hamwe na kũrĩa ũhoro uumĩte na rũthiomi-inĩ rwaku.",
+  "onboardBody2": "Ũthuthuria wa AI ũtaaragia kĩrĩa gĩtũmaga hisa ĩthiĩ, ũgwati, bata wayo na njĩra ithatũ cia kuonania ũrĩa thogora ũngĩthiĩ, hamwe na kũrĩa ũhoro uumĩte na rũthiomi-inĩ rwaku.",
   "onboardTitle3": "Menya ũhoro wothe",
   "onboardBody3": "Iria wendete, hisa ciaku na imenyithia cia thogora nĩ ikũmenyithagia. Ũthuthuria waku ũtũũraga thimũ-inĩ yaku, ũhaarĩrĩtio kũhingũrwo rĩngĩ.",
   "onboardNext": "Ĩrĩa ĩngĩ",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Nĩ kĩ kĩrĩ na thĩna? (ũngĩenda)",
   "aiReportPrivacy": "Tũheagwo mandĩko ma ũcookio ũyũ na maandĩko maku — hatarĩ akaunti yaku — nĩguo tũũrore.",
   "aiReportSend": "Tũma ũhoro",
-  "aiReportThanks": "Nĩ wega — nĩ tũkũũrora."
+  "aiReportThanks": "Nĩ wega — nĩ tũkũũrora.",
+  "aiPortfolioDisclaimer": "Ũhoro wa ũguo tu ũrĩa AI yathondekire ũkoniĩ ũrĩa hisa ciaku ciakĩtwo. Ndũcũthagĩrĩria mĩoroto yaku, ũhoro wa mbeca ciaku kana wa igooti, na ti ũtaaro ũkũrorete wiki kana ũtaaro wa investment.",
+  "briefNotificationTitle": "Mũgĩkĩro wa AI · Ũmũthĩ na hisa ciaku"
 }

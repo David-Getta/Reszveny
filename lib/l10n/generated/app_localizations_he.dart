@@ -1443,7 +1443,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'הקישו על רמה כדי לקבל התראה כשהמחיר מגיע אליה.';
+      'הקישו על רמה שהוערכה על ידי AI כדי לקבל התראה כשהמחיר מגיע אליה.';
 
   @override
   String get shareAnalysisTitle => 'שיתוף הניתוח';
@@ -1458,7 +1458,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get shareCardFooter => 'נוצר באמצעות WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'ניתוח AI · אינו ייעוץ השקעות';
+  String get shareCardDisclaimer =>
+      'ניתוח AI · תרחישים להמחשה, לא תחזיות · אינו ייעוץ השקעות';
 
   @override
   String get referralTitle => 'הזמנת חברים';
@@ -1534,7 +1535,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'ניתוח ה-AI מסביר מה מניע את המניה, מהם הסיכונים, מה השווי שלה ושלושה תרחישים לכיוון שאליו המחיר עשוי ללכת – עם מקורות ובשפה שלכם.';
+      'ניתוח ה-AI מסביר מה מניע את המניה, מהם הסיכונים, מה השווי שלה ושלושה תרחישים להמחשה לאופן שבו המחיר עשוי לנוע – עם מקורות ובשפה שלכם.';
 
   @override
   String get onboardTitle3 => 'תמיד מעודכנים';
@@ -2997,6 +2998,13 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'תודה — נבדוק את זה.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'מידע כללי שנוצר על ידי AI על הרכב תיק ההשקעות שלך. הוא אינו מתחשב ביעדים, במצב הפיננסי או במצב המס שלך, ואינו מהווה המלצה אישית או ייעוץ השקעות.';
+
+  @override
+  String get briefNotificationTitle => 'סיכום AI · היום עם המניות שלך';
 
   @override
   String get portfolioGoalSet => 'הגדרת יעד';

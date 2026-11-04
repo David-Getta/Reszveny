@@ -391,12 +391,12 @@
   "searchAnalyses": "Szukaj w swoich analizach",
   "deleteAnalysis": "Usuń",
   "analysisDeleted": "Usunięto analizę {symbol}",
-  "keyLevelAlertHint": "Dotknij poziomu, aby dostać alert, gdy cena go osiągnie.",
+  "keyLevelAlertHint": "Dotknij poziomu oszacowanego przez AI, aby dostać alert, gdy cena go osiągnie.",
   "shareAnalysisTitle": "Udostępnij analizę",
   "shareAsImage": "Udostępnij jako obraz",
   "shareAsText": "Udostępnij jako tekst",
   "shareCardFooter": "Utworzono w WhatStock",
-  "shareCardDisclaimer": "Analiza AI · nie stanowi porady inwestycyjnej",
+  "shareCardDisclaimer": "Analiza AI · scenariusze poglądowe, nie prognozy · nie stanowi porady inwestycyjnej",
   "referralTitle": "Zaproś znajomych",
   "referralBody": "Udostępnij swój kod. Znajomy od razu dostaje {count, plural, one{{count} dodatkową analizę} few{{count} dodatkowe analizy} many{{count} dodatkowych analiz} other{{count} dodatkowej analizy}}, a ty dostajesz tyle samo po pierwszej analizie znajomego.",
   "referralYourCode": "Twój kod",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Sfotografuj akcję",
   "onboardBody1": "Wystarczy ekran aplikacji maklerskiej, gazeta lub logo firmy: WhatStock rozpozna akcję i pokaże jej kurs, wykres oraz najważniejsze wskaźniki.",
   "onboardTitle2": "Zrozum ją w kilka minut",
-  "onboardBody2": "Analiza AI wyjaśnia, co porusza kursem akcji, jakie są ryzyka i jak wygląda wycena, oraz przedstawia trzy scenariusze, dokąd może zmierzać cena – ze źródłami i w Twoim języku.",
+  "onboardBody2": "Analiza AI wyjaśnia, co porusza kursem akcji, jakie są ryzyka i jak wygląda wycena, oraz przedstawia trzy poglądowe scenariusze tego, jak może zmieniać się cena – ze źródłami i w Twoim języku.",
   "onboardTitle3": "Bądź na bieżąco",
   "onboardBody3": "Ulubione, Twój portfel i alerty cenowe informują Cię na bieżąco. Twoje analizy zostają na urządzeniu, gotowe do ponownego otwarcia.",
   "onboardNext": "Dalej",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Co jest nie tak? (opcjonalnie)",
   "aiReportPrivacy": "Otrzymujemy tekst tej odpowiedzi i Twoją notatkę — bez powiązania z Twoim kontem — aby móc ją sprawdzić.",
   "aiReportSend": "Wyślij zgłoszenie",
-  "aiReportThanks": "Dziękujemy — sprawdzimy to."
+  "aiReportThanks": "Dziękujemy — sprawdzimy to.",
+  "aiPortfolioDisclaimer": "Wygenerowane przez AI ogólne informacje o składzie Twojego portfela. Nie uwzględniają Twoich celów, sytuacji finansowej ani podatkowej i nie stanowią osobistej rekomendacji ani porady inwestycyjnej.",
+  "briefNotificationTitle": "Podsumowanie AI · Dziś z Twoimi akcjami"
 }

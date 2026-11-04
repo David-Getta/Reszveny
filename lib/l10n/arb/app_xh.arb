@@ -391,12 +391,12 @@
   "searchAnalyses": "Khangela kuhlalutyo lwakho",
   "deleteAnalysis": "Cima",
   "analysisDeleted": "Uhlalutyo lwe-{symbol} lucinyiwe",
-  "keyLevelAlertHint": "Cofa inqanaba ukuze ufumane isilumkiso xa ixabiso lifikelela kulo.",
+  "keyLevelAlertHint": "Cofa inqanaba eliqikelelwe yi-AI ukuze ufumane isilumkiso xa ixabiso lifikelela kulo.",
   "shareAnalysisTitle": "Yabelana ngohlalutyo",
   "shareAsImage": "Yabelana njengomfanekiso",
   "shareAsText": "Yabelana njengombhalo",
   "shareCardFooter": "Yenziwe nge-WhatStock",
-  "shareCardDisclaimer": "Uhlalutyo lwe-AI · alulocebiso lotyalo-mali",
+  "shareCardDisclaimer": "Uhlalutyo lwe-AI · iimeko ezingumzekelo, hayi uqikelelo · alulocebiso lotyalo-mali",
   "referralTitle": "Mema abahlobo",
   "referralBody": "Yabelana ngekhowudi yakho. Umhlobo wakho ufumana {count, plural, =1{uhlalutyo olunye olongezelelweyo} other{iintlalutyo ezongezelelweyo ezi-{count}}} ngoko nangoko, nawe ufumana okufanayo emva kohlalutyo lwakhe lokuqala.",
   "referralYourCode": "Ikhowudi yakho",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Thatha ifoto yesabelo",
   "onboardBody1": "Isikrini se-app ye-broker, iphephandaba okanye ilogo yenkampani zanele: I-WhatStock iyasiqonda isabelo ize ikubonise ixabiso laso, itshathi namanani abalulekileyo.",
   "onboardTitle2": "Siqonde ngemizuzu embalwa",
-  "onboardBody2": "Uhlalutyo lwe-AI luchaza oko kushukumisa isabelo, imingcipheko, ixabiso laso lokwenyani kunye neemeko ezintathu zokuba ixabiso lingaya phi – kunye nemithombo nangolwimi lwakho.",
+  "onboardBody2": "Uhlalutyo lwe-AI luchaza oko kushukumisa isabelo, imingcipheko, ixabiso laso lokwenyani kunye neemeko ezintathu ezingumzekelo zendlela ixabiso elinokushukuma ngayo – kunye nemithombo nangolwimi lwakho.",
   "onboardTitle3": "Hlala unolwazi",
   "onboardBody3": "Ezithandwayo, ipotifoliyo yakho nezilumkiso zamaxabiso zikwazisa ngokwenzekayo. Uhlalutyo lwakho luhlala kwisixhobo sakho, lulungele ukuvulwa kwakhona.",
   "onboardNext": "Okulandelayo",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Yintoni engalunganga? (ayinyanzelekanga)",
   "aiReportPrivacy": "Sifumana umbhalo wale mpendulo kunye nenqaku lakho — ngaphandle kweakhawunti yakho — ukuze siyihlolisise.",
   "aiReportSend": "Thumela ingxelo",
-  "aiReportThanks": "Enkosi — siza kuyihlolisisa."
+  "aiReportThanks": "Enkosi — siza kuyihlolisisa.",
+  "aiPortfolioDisclaimer": "Ulwazi jikelele olwenziwe yi-AI malunga nokwakheka kwepotifoliyo yakho. Alujongi iinjongo zakho, imali yakho okanye imeko yakho yerhafu, kwaye alusosindululo lobuqu okanye icebiso lotyalo-mali.",
+  "briefNotificationTitle": "Isishwankathelo se-AI · Namhlanje nezabelo zakho"
 }

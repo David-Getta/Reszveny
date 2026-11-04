@@ -391,12 +391,12 @@
   "searchAnalyses": "Noonya mu kwekenneenya kwo",
   "deleteAnalysis": "Sangula",
   "analysisDeleted": "Okwekenneenya kwa {symbol} kusanguddwawo",
-  "keyLevelAlertHint": "Nyiga omutendera ofune okulabula bbeeyi bw'etuuka ku gwo.",
+  "keyLevelAlertHint": "Nyiga omutendera AI gw'eteebereza ofune okulabula bbeeyi bw'etuuka ku gwo.",
   "shareAnalysisTitle": "Gabana okwekenneenya",
   "shareAsImage": "Gabana ng'ekifaananyi",
   "shareAsText": "Gabana ng'ebiwandiiko",
   "shareCardFooter": "Kyakoleddwa ne WhatStock",
-  "shareCardDisclaimer": "Okwekenneenya kwa AI · si magezi ga kusiga nsimbi",
+  "shareCardDisclaimer": "Okwekenneenya kwa AI · embeera za kulabirako, si bunnabbi · si magezi ga kusiga nsimbi",
   "referralTitle": "Yita mikwano gyo",
   "referralBody": "Gabana koodi yo. Mukwano gwo ajja kufuna {count, plural, =1{okwekenneenya okw'okwongerako 1} other{okwekenneenya okw'okwongerako {count}}} amangu ddala, naawe ojja kufuna bwe bityo ng'amaze okwekenneenya kwe okusooka.",
   "referralYourCode": "Koodi yo",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Kuba ekifaananyi ky'omugabo",
   "onboardBody1": "Olutimbe lwa app ya broker, olupapula lw'amawulire oba akabonero ka kkampuni bimala: WhatStock etegeera omugabo n'ekulaga bbeeyi yaagwo, ekipande kyagwo n'ennamba enkulu.",
   "onboardTitle2": "Kitegeere mu ddakiika ntono",
-  "onboardBody2": "Okwekenneenya kwa AI kunnyonnyola ekireetera omugabo okukyuka, obulabe, omuwendo gwagwo n'embeera ssatu bbeeyi w'eyinza okudda, nga kuliko ensibuko era mu lulimi lwo.",
+  "onboardBody2": "Okwekenneenya kwa AI kunnyonnyola ekireetera omugabo okukyuka, obulabe, omuwendo gwagwo n'embeera ssatu ez'okulabirako ku ngeri bbeeyi gy'eyinza okukyukamu, nga kuliko ensibuko era mu lulimi lwo.",
   "onboardTitle3": "Bera ng'omanyi buli kimu",
   "onboardBody3": "By'oyagala, emigabo gyo n'okulabula ku bbeeyi bikutegeeza buli ekibaawo. Okwekenneenya kwo kusigala ku kyuma kyo, nga kwetegefu okuggulwawo nate.",
   "onboardNext": "Ekiddako",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Kiki ekikyamu? (si kya tteeka)",
   "aiReportPrivacy": "Tufuna ebiwandiiko by'okuddamu kuno n'ekiwandiiko kyo — awatali akawunti yo — tusobole okukyetegereza.",
   "aiReportSend": "Weereza lipoota",
-  "aiReportThanks": "Weebale — tujja kukyetegereza."
+  "aiReportThanks": "Weebale — tujja kukyetegereza.",
+  "aiPortfolioDisclaimer": "Amawulire ag'awamu AI ge yakola ku ngeri emigabo gyo gye gitegekeddwamu. Tegafaayo ku biruubirirwa byo, embeera y'ensimbi zo oba ey'emisolo, era si kuteesa okukukwatako ggwe wekka wadde magezi ga kusiga nsimbi.",
+  "briefNotificationTitle": "Ebifunze bya AI · Leero ne sitoowa zo"
 }

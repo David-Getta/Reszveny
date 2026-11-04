@@ -391,12 +391,12 @@
   "searchAnalyses": "Batla mo ditshekatshekong tsa gago",
   "deleteAnalysis": "Phimola",
   "analysisDeleted": "Tshekatsheko ya {symbol} e phimotswe",
-  "keyLevelAlertHint": "Tobetsa maemo go amogela kitsiso fa tlhwatlhwa e fitlha kwa go one.",
+  "keyLevelAlertHint": "Tobetsa maemo a a fopholeditsweng ke AI go amogela kitsiso fa tlhwatlhwa e fitlha kwa go one.",
   "shareAnalysisTitle": "Abelana tshekatsheko",
   "shareAsImage": "Abelana jaaka setshwantsho",
   "shareAsText": "Abelana jaaka mokwalo",
   "shareCardFooter": "E dirilwe ka WhatStock",
-  "shareCardDisclaimer": "Tshekatsheko ya AI · ga se kgakololo ya peeletso",
+  "shareCardDisclaimer": "Tshekatsheko ya AI · maemo a sekai, e seng dipolelelopele · ga se kgakololo ya peeletso",
   "referralTitle": "Laletsa ditsala",
   "referralBody": "Abelana khoutu ya gago. Tsala ya gago o bona {count, plural, =1{tshekatsheko e le nngwe e e oketsegileng} other{ditshekatsheko tse di oketsegileng di le {count}}} ka bonako, mme le wena o bona tse di lekanang morago ga tshekatsheko ya gagwe ya ntlha.",
   "referralYourCode": "Khoutu ya gago",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Tsaya setshwantsho sa shere",
   "onboardBody1": "Sekirini sa app ya borokara, lokwalodikgang kgotsa logo ya khampani di lekane: WhatStock e lemoga shere mme e go bontsha tlhwatlhwa ya yone, kerafo le dipalo tsa botlhokwa.",
   "onboardTitle2": "E tlhaloganye mo metsotsong e le mmalwa",
-  "onboardBody2": "Tshekatsheko ya AI e tlhalosa se se tsamaisang shere, dikotsi, boleng jwa yone le maemo a le mararo a gore tlhwatlhwa e ka ya kae, ka metswedi le ka puo ya gago.",
+  "onboardBody2": "Tshekatsheko ya AI e tlhalosa se se tsamaisang shere, dikotsi, boleng jwa yone le maemo a le mararo a sekai a gore tlhwatlhwa e ka tsamaya jang, ka metswedi le ka puo ya gago.",
   "onboardTitle3": "Nna o itse sotlhe",
   "onboardBody3": "Tse o di ratang, potefolio ya gago le dikitsiso tsa tlhwatlhwa di go itsise se se diragalang. Ditshekatsheko tsa gago di nna mo sedirisiweng sa gago, di siametse go bulwa gape.",
   "onboardNext": "E e latelang",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Go phoso eng? (ga go patelediwe)",
   "aiReportPrivacy": "Re amogela mokwalo wa karabo e le ntlha ya gago — kwantle ga akhaonto ya gago — gore re kgone go e sekaseka.",
   "aiReportSend": "Romela pego",
-  "aiReportThanks": "Re a leboga — re tla e sekaseka."
+  "aiReportThanks": "Re a leboga — re tla e sekaseka.",
+  "aiPortfolioDisclaimer": "Tshedimosetso e e akaretsang e e dirilweng ke AI ka ga popego ya potefolio ya gago. Ga e tseye tsia maikaelelo a gago, madi a gago kgotsa seemo sa gago sa lekgetho, e bile ga se tshitshinyo e e go lebaganeng kgotsa kgakololo ya peeletso.",
+  "briefNotificationTitle": "Kakaretso ya AI · Gompieno le dishere tsa gago"
 }

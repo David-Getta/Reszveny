@@ -3,7 +3,7 @@
 Ez a dokumentum az AI-elemzés rendszerpromptjának második változatát és a tervezési
 döntéseket tartalmazza.
 
-**Állapot: v2.5 beépítve** (a változások a 7–10. pontban). A rendszerprompt a `lib/features/analysis/claude_stock_analyst.dart`
+**Állapot: v2.7 beépítve** (a változások a 7–10. pontban; a v2.7 „Not advice” szakasza a 0.2.304-ben: általános elemzés, nem személyre szabott ajánlás – nincs vételi/eladási felszólítás, saját célár, pozícióméret vagy időzítés; a sávok és forgatókönyvek szemléltető becslések; a felhasználó pozíciója csak egy külön számtani pontban, a jegyzetei csak a figyelendők között, tényként). A rendszerprompt a `lib/features/analysis/claude_stock_analyst.dart`
 fájlban van (`systemPrompt`), és minden felhasználónál bájtra azonos, így gyorsítótárazható. A
 beállításoktól függő részek (webkeresés-keret, hossz, olvasói szint, ellenérv, helyi szemszög) a
 felhasználói üzenet elején, a „Report settings” blokkban mennek (`buildSettings`). Az alábbi 3. pont

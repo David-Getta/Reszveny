@@ -391,12 +391,12 @@
   "searchAnalyses": "Išči po svojih analizah",
   "deleteAnalysis": "Izbriši",
   "analysisDeleted": "Analiza {symbol} izbrisana",
-  "keyLevelAlertHint": "Tapnite raven, da prejmete opozorilo, ko jo cena doseže.",
+  "keyLevelAlertHint": "Tapnite raven, ki jo je ocenila AI, da prejmete opozorilo, ko jo cena doseže.",
   "shareAnalysisTitle": "Deli analizo",
   "shareAsImage": "Deli kot sliko",
   "shareAsText": "Deli kot besedilo",
   "shareCardFooter": "Ustvarjeno z WhatStock",
-  "shareCardDisclaimer": "Analiza AI · ni naložbeni nasvet",
+  "shareCardDisclaimer": "Analiza AI · ponazoritveni scenariji, ne napovedi · ni naložbeni nasvet",
   "referralTitle": "Povabi prijatelje",
   "referralBody": "Deli svojo kodo. Prijatelj takoj dobi {count, plural, one{{count} dodatno analizo} two{{count} dodatni analizi} few{{count} dodatne analize} other{{count} dodatnih analiz}}, ti pa enako po prijateljevi prvi analizi.",
   "referralYourCode": "Tvoja koda",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Fotografirajte delnico",
   "onboardBody1": "Dovolj je zaslon borzne aplikacije, časnik ali logotip podjetja: WhatStock prepozna delnico in vam pokaže ceno, graf in ključne številke.",
   "onboardTitle2": "Razumite jo v nekaj minutah",
-  "onboardBody2": "Analiza AI pojasni, kaj poganja delnico, kakšna so tveganja in vrednotenje, ter ponudi tri scenarije, kam bi se lahko gibala cena – z viri in v vašem jeziku.",
+  "onboardBody2": "Analiza AI pojasni, kaj poganja delnico, kakšna so tveganja in vrednotenje, ter ponudi tri ponazoritvene scenarije, kako bi se lahko gibala cena – z viri in v vašem jeziku.",
   "onboardTitle3": "Bodite vedno na tekočem",
   "onboardBody3": "Priljubljene, vaš portfelj in cenovna opozorila vas sproti obveščajo. Vaše analize ostanejo v vaši napravi, pripravljene za ponovno odpiranje.",
   "onboardNext": "Naprej",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Kaj je narobe? (neobvezno)",
   "aiReportPrivacy": "Prejmemo besedilo tega odgovora in vašo opombo — brez povezave z vašim računom — da ga lahko pregledamo.",
   "aiReportSend": "Pošlji prijavo",
-  "aiReportThanks": "Hvala — pregledali ga bomo."
+  "aiReportThanks": "Hvala — pregledali ga bomo.",
+  "aiPortfolioDisclaimer": "Splošne informacije o sestavi vašega portfelja, ustvarjene z AI. Ne upoštevajo vaših ciljev, financ ali davčnega položaja in niso osebno priporočilo niti naložbeni nasvet.",
+  "briefNotificationTitle": "Povzetek AI · Danes z vašimi delnicami"
 }

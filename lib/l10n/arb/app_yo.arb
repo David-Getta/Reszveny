@@ -391,12 +391,12 @@
   "searchAnalyses": "Wá nínú àwọn ìtúpalẹ̀ rẹ",
   "deleteAnalysis": "Pa rẹ́",
   "analysisDeleted": "A ti pa ìtúpalẹ̀ {symbol} rẹ́",
-  "keyLevelAlertHint": "Tẹ ìwọ̀n kan láti gba ìkìlọ̀ nígbà tí iye owó bá dé ibẹ̀.",
+  "keyLevelAlertHint": "Tẹ ìwọ̀n kan tí AI fojú díwọ̀n láti gba ìkìlọ̀ nígbà tí iye owó bá dé ibẹ̀.",
   "shareAnalysisTitle": "Pín ìtúpalẹ̀",
   "shareAsImage": "Pín gẹ́gẹ́ bí àwòrán",
   "shareAsText": "Pín gẹ́gẹ́ bí ọ̀rọ̀",
   "shareCardFooter": "A ṣe é pẹ̀lú WhatStock",
-  "shareCardDisclaimer": "Ìtúpalẹ̀ AI · kì í ṣe ìmọ̀ràn ìdókòwò",
+  "shareCardDisclaimer": "Ìtúpalẹ̀ AI · àwọn àpẹẹrẹ ìṣẹ̀lẹ̀, kì í ṣe àsọtẹ́lẹ̀ · kì í ṣe ìmọ̀ràn ìdókòwò",
   "referralTitle": "Pe àwọn ọ̀rẹ́",
   "referralBody": "Pín kóòdù rẹ. Ọ̀rẹ́ rẹ yóò gba {count, plural, =1{ìtúpalẹ̀ àfikún 1} other{ìtúpalẹ̀ àfikún {count}}} lẹ́sẹ̀kẹsẹ̀, ìwọ náà yóò sì gba iye kan náà lẹ́yìn ìtúpalẹ̀ àkọ́kọ́ rẹ̀.",
   "referralYourCode": "Kóòdù rẹ",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Ya fọ́tò ìpín kan",
   "onboardBody1": "Ojú-ìbojú áàpù alágbàtà, ìwé ìròyìn tàbí àmì ilé-iṣẹ́ ti tó: WhatStock yóò dá ìpín náà mọ̀, yóò sì fi iye owó rẹ̀, àwòrán-àtẹ rẹ̀ àti àwọn nọ́ńbà pàtàkì hàn ọ́.",
   "onboardTitle2": "Lóye rẹ̀ láàárín ìṣẹ́jú díẹ̀",
-  "onboardBody2": "Ìtúpalẹ̀ AI ń ṣàlàyé ohun tó ń mú ìpín náà yí padà, àwọn ewu, ìdíyelé rẹ̀ àti ọ̀nà mẹ́ta tí iye owó lè gbà lọ, pẹ̀lú àwọn orísun àti ní èdè rẹ.",
+  "onboardBody2": "Ìtúpalẹ̀ AI ń ṣàlàyé ohun tó ń mú ìpín náà yí padà, àwọn ewu, ìdíyelé rẹ̀ àti àpẹẹrẹ ọ̀nà mẹ́ta tí iye owó lè gbà yí padà, pẹ̀lú àwọn orísun àti ní èdè rẹ.",
   "onboardTitle3": "Má ṣe pàdánù nǹkan kan",
   "onboardBody3": "Àwọn ààyò, àpò ìdókòwò rẹ àti ìkìlọ̀ iye owó máa ń jẹ́ kí o mọ ohun tó ń ṣẹlẹ̀. Àwọn ìtúpalẹ̀ rẹ wà lórí ẹ̀rọ rẹ, wọ́n ṣetán láti ṣí lẹ́ẹ̀kan sí i.",
   "onboardNext": "Èyí tó kàn",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Kí ló burú? (kò pọn dandan)",
   "aiReportPrivacy": "A máa gba ọ̀rọ̀ ìdáhùn yìí àti àkọsílẹ̀ rẹ — láìsí àkáǹtì rẹ — kí a lè ṣàyẹ̀wò rẹ̀.",
   "aiReportSend": "Fi ìjábọ̀ ránṣẹ́",
-  "aiReportThanks": "O ṣé — a máa ṣàyẹ̀wò rẹ̀."
+  "aiReportThanks": "O ṣé — a máa ṣàyẹ̀wò rẹ̀.",
+  "aiPortfolioDisclaimer": "Ìsọfúnni gbogbogbò tí AI ṣe nípa àkójọpọ̀ àpò ìdókòwò rẹ. Kò ka àwọn àfojúsùn rẹ, ipò ìnáwó rẹ tàbí ipò owó orí rẹ sí, kì í sì í ṣe ìmọ̀ràn àdáni tàbí ìmọ̀ràn ìdókòwò.",
+  "briefNotificationTitle": "Àkópọ̀ AI · Lónìí pẹ̀lú àwọn ìpín rẹ"
 }

@@ -391,12 +391,12 @@
   "searchAnalyses": "Busca nas túas análises",
   "deleteAnalysis": "Eliminar",
   "analysisDeleted": "Eliminouse a análise de {symbol}",
-  "keyLevelAlertHint": "Toca un nivel para recibir unha alerta cando o prezo o alcance.",
+  "keyLevelAlertHint": "Toca un nivel estimado por IA para recibir unha alerta cando o prezo o alcance.",
   "shareAnalysisTitle": "Compartir análise",
   "shareAsImage": "Compartir como imaxe",
   "shareAsText": "Compartir como texto",
   "shareCardFooter": "Feito con WhatStock",
-  "shareCardDisclaimer": "Análise con IA · non é asesoramento de investimento",
+  "shareCardDisclaimer": "Análise con IA · escenarios ilustrativos, non previsións · non é asesoramento de investimento",
   "referralTitle": "Convida os teus amigos",
   "referralBody": "Comparte o teu código. O teu amigo recibe de inmediato {count, plural, one{{count} análise extra} other{{count} análises extra}}, e ti o mesmo despois da súa primeira análise.",
   "referralYourCode": "O teu código",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Fotografa unha acción",
   "onboardBody1": "Abonda coa pantalla dunha app de bolsa, un xornal ou o logotipo dunha empresa: WhatStock recoñece a acción e móstrache o prezo, o gráfico e as cifras clave.",
   "onboardTitle2": "Enténdea en minutos",
-  "onboardBody2": "A análise con IA explícache que move a acción, os riscos, a valoración e tres escenarios sobre cara a onde podería ir o prezo, con fontes e no teu idioma.",
+  "onboardBody2": "A análise con IA explícache que move a acción, os riscos, a valoración e tres escenarios ilustrativos de como podería moverse o prezo, con fontes e no teu idioma.",
   "onboardTitle3": "Mantente sempre ao día",
   "onboardBody3": "Os favoritos, a túa carteira e as alertas de prezo mantéñente ao tanto. As túas análises quedan no teu dispositivo, listas para volver abrilas.",
   "onboardNext": "Seguinte",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Que falla? (opcional)",
   "aiReportPrivacy": "Recibimos o texto desta resposta e a túa nota —sen a túa conta— para poder revisala.",
   "aiReportSend": "Enviar denuncia",
-  "aiReportThanks": "Grazas, revisarémola."
+  "aiReportThanks": "Grazas, revisarémola.",
+  "aiPortfolioDisclaimer": "Información xeral xerada por IA sobre a composición da túa carteira. Non ten en conta os teus obxectivos, a túa situación financeira nin a túa situación fiscal, e non constitúe unha recomendación persoal nin asesoramento de investimento.",
+  "briefNotificationTitle": "Resumo con IA · Hoxe coas túas accións"
 }

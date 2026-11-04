@@ -1443,7 +1443,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Tẹ ìwọ̀n kan láti gba ìkìlọ̀ nígbà tí iye owó bá dé ibẹ̀.';
+      'Tẹ ìwọ̀n kan tí AI fojú díwọ̀n láti gba ìkìlọ̀ nígbà tí iye owó bá dé ibẹ̀.';
 
   @override
   String get shareAnalysisTitle => 'Pín ìtúpalẹ̀';
@@ -1458,7 +1458,8 @@ class AppLocalizationsYo extends AppLocalizations {
   String get shareCardFooter => 'A ṣe é pẹ̀lú WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Ìtúpalẹ̀ AI · kì í ṣe ìmọ̀ràn ìdókòwò';
+  String get shareCardDisclaimer =>
+      'Ìtúpalẹ̀ AI · àwọn àpẹẹrẹ ìṣẹ̀lẹ̀, kì í ṣe àsọtẹ́lẹ̀ · kì í ṣe ìmọ̀ràn ìdókòwò';
 
   @override
   String get referralTitle => 'Pe àwọn ọ̀rẹ́';
@@ -1535,7 +1536,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Ìtúpalẹ̀ AI ń ṣàlàyé ohun tó ń mú ìpín náà yí padà, àwọn ewu, ìdíyelé rẹ̀ àti ọ̀nà mẹ́ta tí iye owó lè gbà lọ, pẹ̀lú àwọn orísun àti ní èdè rẹ.';
+      'Ìtúpalẹ̀ AI ń ṣàlàyé ohun tó ń mú ìpín náà yí padà, àwọn ewu, ìdíyelé rẹ̀ àti àpẹẹrẹ ọ̀nà mẹ́ta tí iye owó lè gbà yí padà, pẹ̀lú àwọn orísun àti ní èdè rẹ.';
 
   @override
   String get onboardTitle3 => 'Má ṣe pàdánù nǹkan kan';
@@ -3002,6 +3003,13 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'O ṣé — a máa ṣàyẹ̀wò rẹ̀.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Ìsọfúnni gbogbogbò tí AI ṣe nípa àkójọpọ̀ àpò ìdókòwò rẹ. Kò ka àwọn àfojúsùn rẹ, ipò ìnáwó rẹ tàbí ipò owó orí rẹ sí, kì í sì í ṣe ìmọ̀ràn àdáni tàbí ìmọ̀ràn ìdókòwò.';
+
+  @override
+  String get briefNotificationTitle => 'Àkópọ̀ AI · Lónìí pẹ̀lú àwọn ìpín rẹ';
 
   @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';

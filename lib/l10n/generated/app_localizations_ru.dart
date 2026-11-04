@@ -1479,7 +1479,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Нажмите на уровень, чтобы получить оповещение, когда цена его достигнет.';
+      'Нажмите на уровень, оценённый ИИ, чтобы получить оповещение, когда цена его достигнет.';
 
   @override
   String get shareAnalysisTitle => 'Поделиться анализом';
@@ -1495,7 +1495,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'ИИ-анализ · не инвестиционная рекомендация';
+      'ИИ-анализ · иллюстративные сценарии, не прогнозы · не инвестиционная рекомендация';
 
   @override
   String get referralTitle => 'Пригласите друзей';
@@ -1578,7 +1578,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'ИИ-анализ объясняет, что движет акцией, каковы риски и оценка, и предлагает три сценария движения цены — с источниками и на вашем языке.';
+      'ИИ-анализ объясняет, что движет акцией, каковы риски и оценка, и предлагает три иллюстративных сценария того, как может двигаться цена, — с источниками и на вашем языке.';
 
   @override
   String get onboardTitle3 => 'Будьте в курсе';
@@ -3077,6 +3077,13 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Спасибо — мы проверим.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Общая информация о составе вашего портфеля, созданная ИИ. Она не учитывает ваши цели, финансовое положение и налоговую ситуацию и не является персональной или инвестиционной рекомендацией.';
+
+  @override
+  String get briefNotificationTitle => 'ИИ-сводка · Сегодня с вашими акциями';
 
   @override
   String get portfolioGoalSet => 'Задать цель';

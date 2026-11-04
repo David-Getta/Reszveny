@@ -1449,7 +1449,7 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'I-tap ang usa ka lebel aron makadawat og alerto kon maabot na kini sa presyo.';
+      'I-tap ang usa ka lebel nga gibanabana sa AI aron makadawat og alerto kon maabot na kini sa presyo.';
 
   @override
   String get shareAnalysisTitle => 'Ipaambit ang pagtuki';
@@ -1465,7 +1465,7 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Pagtuki sa AI · dili tambag sa pagpamuhunan';
+      'Pagtuki sa AI · pananglitan nga mga senaryo, dili tagna · dili tambag sa pagpamuhunan';
 
   @override
   String get referralTitle => 'Dapita ang mga higala';
@@ -1544,7 +1544,7 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Ipasabot sa pagtuki sa AI kung unsay nagpalihok sa stock, ang mga risgo, ang valuation ug tulo ka senaryo kung asa mahimong padulong ang presyo – uban sa mga tinubdan ug sa imong pinulongan.';
+      'Ipasabot sa pagtuki sa AI kung unsay nagpalihok sa stock, ang mga risgo, ang valuation ug tulo ka pananglitan nga senaryo kung unsaon paglihok sa presyo – uban sa mga tinubdan ug sa imong pinulongan.';
 
   @override
   String get onboardTitle3 => 'Kanunay nga mahibalo';
@@ -3019,6 +3019,14 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Salamat — among susihon kini.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Kinatibuk-ang impormasyon nga gihimo sa AI bahin sa komposisyon sa imong portfolio. Wala kini magkonsiderar sa imong mga tumong, pinansyal nga kahimtang o kahimtang sa buhis, ug dili kini personal nga rekomendasyon o tambag sa pagpamuhunan.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Katingbanan sa AI · Karon uban sa imong mga stock';
 
   @override
   String get portfolioGoalSet => 'Pagbutang og tumong';

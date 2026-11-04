@@ -253,6 +253,15 @@ class _ComparePageState extends State<ComparePage> {
             ],
           ),
         ),
+        // Az AI-elemzések sora mellé a figyelmeztetés (mint az elemzés alatt).
+        if (_reports.values.any((r) => r != null)) ...[
+          const SizedBox(height: 8),
+          Text(
+            AppLocalizations.of(context).aiDisclaimer,
+            key: const ValueKey('compare-ai-disclaimer'),
+            style: Theme.of(context).textTheme.bodySmall?.copyWith(color: AppPalette.of(context).muted),
+          ),
+        ],
         // Kérdés az összehasonlításról (a táblázat szövegként megy az AI-nak).
         if (AppServices.of(context).config.hasAnthropicKey && stocks.any((d) => d != null)) ...[
           const SizedBox(height: 20),
@@ -311,6 +320,9 @@ class _AnalysisCell extends StatelessWidget {
                     style: small?.copyWith(color: p.muted),
                   ),
                 ],
+                // Az elemzés lehet hónapos is: a dátuma ott áll mellette.
+                const SizedBox(height: 4),
+                Text(l10n.aiGeneratedAt(fmt.dateTime(r.generatedAt)), style: small?.copyWith(color: p.muted)),
               ],
             ),
     );

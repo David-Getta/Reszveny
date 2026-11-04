@@ -1452,7 +1452,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Thepha izinga ukuze uthole isexwayiso uma intengo ifinyelela kulo.';
+      'Thepha izinga elilinganiselwe yi-AI ukuze uthole isexwayiso uma intengo ifinyelela kulo.';
 
   @override
   String get shareAnalysisTitle => 'Yabelana ngohlaziyo';
@@ -1468,7 +1468,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Uhlaziyo lwe-AI · aluyona iseluleko sokutshala imali';
+      'Uhlaziyo lwe-AI · izimo eziyisibonelo, hhayi izibikezelo · aluyona iseluleko sokutshala imali';
 
   @override
   String get referralTitle => 'Mema abangane';
@@ -1544,7 +1544,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Uhlaziyo lwe-AI luchaza okunyakazisa isheya, izingozi, ukubaluleka kwalo kanye nezimo ezintathu zokuthi intengo ingaya kuphi – kanye nemithombo nangolimi lwakho.';
+      'Uhlaziyo lwe-AI luchaza okunyakazisa isheya, izingozi, ukubaluleka kwalo kanye nezimo ezintathu eziyisibonelo zokuthi intengo inganyakaza kanjani – kanye nemithombo nangolimi lwakho.';
 
   @override
   String get onboardTitle3 => 'Hlala wazi konke';
@@ -3022,6 +3022,14 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Siyabonga — sizowubuyekeza.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Ulwazi olujwayelekile olwenziwe yi-AI mayelana nokwakheka kwephothifoliyo yakho. Alubheki izinhloso zakho, isimo sakho sezimali noma isimo sakho sentela, futhi aluyona isincomo esiqondene nawe noma iseluleko sokutshala imali.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Isifinyezo se-AI · Namuhla namasheya akho';
 
   @override
   String get portfolioGoalSet => 'Setha umgomo';

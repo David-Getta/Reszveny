@@ -391,12 +391,12 @@
   "searchAnalyses": "Search your analysis dem",
   "deleteAnalysis": "Delete",
   "analysisDeleted": "{symbol} analysis don delete",
-  "keyLevelAlertHint": "Tap one level make you get alert when di price reach am.",
+  "keyLevelAlertHint": "Tap one level wey AI estimate make you get alert when di price reach am.",
   "shareAnalysisTitle": "Share analysis",
   "shareAsImage": "Share am as picture",
   "shareAsText": "Share am as text",
   "shareCardFooter": "Na WhatStock make am",
-  "shareCardDisclaimer": "AI analysis · e no be investment advice",
+  "shareCardDisclaimer": "AI analysis · na example scenarios, no be forecast · e no be investment advice",
   "referralTitle": "Invite your padi dem",
   "referralBody": "Share your code. Your padi go collect {count, plural, one{{count} extra analysis} other{{count} extra analysis}} sharp sharp, and you go collect the same one after dem first analysis.",
   "referralYourCode": "Your code",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Snap stock picture",
   "onboardBody1": "Broker screen, newspaper or company logo don do: WhatStock go sabi di stock and show you im price, chart and di main figures.",
   "onboardTitle2": "Understand am for few minutes",
-  "onboardBody2": "Di AI analysis go explain wetin dey move di stock, di risks, how much e worth and three ways wey di price fit go, with sources and for your own language.",
+  "onboardBody2": "Di AI analysis go explain wetin dey move di stock, di risks, how much e worth and three example scenarios of how di price fit move, with sources and for your own language.",
   "onboardTitle3": "No miss anything",
   "onboardBody3": "Favourites, your portfolio and price alerts go dey tell you wetin dey happen. Your analyses go stay for your device, ready make you open dem again.",
   "onboardNext": "Next",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Wetin no correct? (if you want)",
   "aiReportPrivacy": "We go receive di text of dis answer and your note — without your account — so we fit check am.",
   "aiReportSend": "Send report",
-  "aiReportThanks": "Thank you — we go check am."
+  "aiReportThanks": "Thank you — we go check am.",
+  "aiPortfolioDisclaimer": "Na AI make dis general information about how your portfolio take arrange. E no look your goals, your money matter or your tax situation, and e no be personal recommendation or investment advice.",
+  "briefNotificationTitle": "Na AI summarize am · Today with your stocks"
 }

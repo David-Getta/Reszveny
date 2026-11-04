@@ -391,12 +391,12 @@
   "searchAnalyses": "Tìm trong phân tích của bạn",
   "deleteAnalysis": "Xóa",
   "analysisDeleted": "Đã xóa phân tích {symbol}",
-  "keyLevelAlertHint": "Nhấn vào một mức giá để nhận cảnh báo khi giá chạm tới mức đó.",
+  "keyLevelAlertHint": "Nhấn vào một mức giá do AI ước tính để nhận cảnh báo khi giá chạm tới mức đó.",
   "shareAnalysisTitle": "Chia sẻ phân tích",
   "shareAsImage": "Chia sẻ dưới dạng ảnh",
   "shareAsText": "Chia sẻ dưới dạng văn bản",
   "shareCardFooter": "Tạo bằng WhatStock",
-  "shareCardDisclaimer": "Phân tích AI · không phải lời khuyên đầu tư",
+  "shareCardDisclaimer": "Phân tích AI · kịch bản minh họa, không phải dự báo · không phải lời khuyên đầu tư",
   "referralTitle": "Mời bạn bè",
   "referralBody": "Chia sẻ mã của bạn. Bạn bè của bạn nhận ngay {count, plural, =1{1 lượt phân tích bổ sung} other{{count} lượt phân tích bổ sung}}, và bạn cũng nhận được số lượt tương tự sau lần phân tích đầu tiên của họ.",
   "referralYourCode": "Mã của bạn",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Chụp ảnh một cổ phiếu",
   "onboardBody1": "Chỉ cần màn hình ứng dụng môi giới, một tờ báo hay logo công ty: WhatStock sẽ nhận diện cổ phiếu và hiển thị giá, biểu đồ cùng các chỉ số quan trọng.",
   "onboardTitle2": "Hiểu rõ chỉ trong vài phút",
-  "onboardBody2": "Phân tích AI giải thích điều gì đang tác động đến cổ phiếu, các rủi ro, định giá và ba kịch bản cho hướng đi của giá – kèm nguồn tham khảo và bằng ngôn ngữ của bạn.",
+  "onboardBody2": "Phân tích AI giải thích điều gì đang tác động đến cổ phiếu, các rủi ro, định giá và ba kịch bản minh họa cho cách giá có thể biến động – kèm nguồn tham khảo và bằng ngôn ngữ của bạn.",
   "onboardTitle3": "Luôn nắm bắt tình hình",
   "onboardBody3": "Yêu thích, danh mục của bạn và cảnh báo giá giúp bạn luôn cập nhật. Các bản phân tích được lưu trên thiết bị, sẵn sàng để mở lại bất cứ lúc nào.",
   "onboardNext": "Tiếp",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Có vấn đề gì? (không bắt buộc)",
   "aiReportPrivacy": "Chúng tôi nhận được nội dung câu trả lời này và ghi chú của bạn — không kèm tài khoản của bạn — để xem xét.",
   "aiReportSend": "Gửi báo cáo",
-  "aiReportThanks": "Cảm ơn bạn — chúng tôi sẽ xem xét."
+  "aiReportThanks": "Cảm ơn bạn — chúng tôi sẽ xem xét.",
+  "aiPortfolioDisclaimer": "Thông tin chung do AI tạo về cơ cấu danh mục của bạn. Nội dung không xét đến mục tiêu, tình hình tài chính hay tình hình thuế của bạn và không phải là khuyến nghị cá nhân hay lời khuyên đầu tư.",
+  "briefNotificationTitle": "Tóm tắt AI · Hôm nay với cổ phiếu của bạn"
 }

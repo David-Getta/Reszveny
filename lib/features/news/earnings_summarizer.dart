@@ -37,7 +37,7 @@ Rules:
 - Plain text, no Markdown headings or emphasis; short paragraphs or "- " bullets, at most about 170 words.
 - Cover: which quarter and when it was reported; revenue and earnings per share against expectations, with the numbers; the outlook or guidance; one or two notable items; how the stock reacted, if known. End with what to watch next.
 - Use the numbers from the sources. Never invent facts, numbers or dates; if you cannot find the results, say so.
-- Do not tell the reader to buy or sell.''';
+- Do not tell the reader to buy, sell or hold anything, give no price targets and do not say where the price will go.''';
 
   static Map<String, dynamic> requestBody({
     required String symbol,

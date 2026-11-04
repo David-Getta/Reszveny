@@ -391,12 +391,12 @@
   "searchAnalyses": "ኣብ ትንተናታትካ ድለ",
   "deleteAnalysis": "ሰርዝ",
   "analysisDeleted": "ትንተና {symbol} ተሰሪዙ",
-  "keyLevelAlertHint": "ዋጋ ናብቲ ደረጃ ምስ በጽሐ መጠንቀቕታ ንምርካብ ሓደ ደረጃ ጠውቑ።",
+  "keyLevelAlertHint": "ዋጋ ናብቲ ደረጃ ምስ በጽሐ መጠንቀቕታ ንምርካብ ሓደ ብAI ዝተገመተ ደረጃ ጠውቑ።",
   "shareAnalysisTitle": "ትንተና ኣካፍል",
   "shareAsImage": "ከም ስእሊ ኣካፍል",
   "shareAsText": "ከም ጽሑፍ ኣካፍል",
   "shareCardFooter": "ብWhatStock ዝተሰርሐ",
-  "shareCardDisclaimer": "ትንተና AI · ምኽሪ ወፍሪ ኣይኮነን",
+  "shareCardDisclaimer": "ትንተና AI · ኣብነታዊ ኩነታት፣ ትንቢት ኣይኮነን · ምኽሪ ወፍሪ ኣይኮነን",
   "referralTitle": "ኣዕሩኽ ዓድም",
   "referralBody": "ኮድካ ኣካፍል። ዓርክኻ ብኡንብኡ {count, plural, =1{1 ተወሳኺ ትንተና} other{{count} ተወሳኺ ትንተናታት}} ይረክብ፣ ንስኻ ድማ ድሕሪ ቀዳማይ ትንተናኡ ተመሳሳሊ ትረክብ።",
   "referralYourCode": "ኮድካ",
@@ -412,7 +412,7 @@
   "onboardTitle1": "ስእሊ ኣክሲዮን ኣልዕሉ",
   "onboardBody1": "ስክሪን ናይ ደላላ ኣፕ፣ ጋዜጣ ወይ ኣርማ ትካል ይኣክል፦ WhatStock ነቲ ኣክሲዮን ኣለልዩ ዋጋኡ፣ ቻርቱን ኣገደስቲ ኣሃዛቱን የርእየኩም።",
   "onboardTitle2": "ኣብ ውሑዳት ደቓይቕ ተረድእዎ",
-  "onboardBody2": "ትንተና AI እንታይ ነቲ ኣክሲዮን ከም ዘንቀሳቕሶ፣ ሓደጋታቱ፣ ግምት ዋጋኡን ዋጋ ናበይ ክኸይድ ከም ዝኽእል ሰለስተ ኩነታትን፣ ምስ ምንጭታትን ብቋንቋኹምን ይገልጸልኩም።",
+  "onboardBody2": "ትንተና AI እንታይ ነቲ ኣክሲዮን ከም ዘንቀሳቕሶ፣ ሓደጋታቱ፣ ግምት ዋጋኡን ዋጋ ብኸመይ ክንቀሳቐስ ከም ዝኽእል ሰለስተ ኣብነታዊ ኩነታትን፣ ምስ ምንጭታትን ብቋንቋኹምን ይገልጸልኩም።",
   "onboardTitle3": "ኩሉ ግዜ ሓበሬታ ይሃልወኩም",
   "onboardBody3": "ዝተፈተዉ፣ ፖርትፎሊዮኹምን መጠንቀቕታታት ዋጋን ወትሩ ሓበሬታ ይህቡኹም። ትንተናታትኩም ኣብ መሳርሒኹም ይጸንሑ፣ እንደገና ንምኽፋት ድሉዋት እዮም።",
   "onboardNext": "ዝቕጽል",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "እንታይ ጌጋ ኣሎ? (ግዴታ ኣይኮነን)",
   "aiReportPrivacy": "ክንግምግሞ ምእንቲ ጽሑፍ እዚ መልስን ማስታወሻኹምን — ብዘይ ሕሳብኩም — ይበጽሓና።",
   "aiReportSend": "ጸብጻብ ስደዱ",
-  "aiReportThanks": "የቐንየልና — ክንግምግሞ ኢና።"
+  "aiReportThanks": "የቐንየልና — ክንግምግሞ ኢና።",
+  "aiPortfolioDisclaimer": "ብዛዕባ ኣቀማምጣ ፖርትፎሊዮኹም ብAI ዝተፈጥረ ሓፈሻዊ ሓበሬታ። ንዕላማታትኩም፣ ፋይናንሳዊ ኩነታትኩም ወይ ኩነታት ግብርኹም ኣብ ግምት ኣየእቱን፣ ውልቃዊ ለበዋ ወይ ምኽሪ ወፍሪ ድማ ኣይኮነን።",
+  "briefNotificationTitle": "ናይ AI ጽማቝ · ሎሚ ምስ ኣክስዮናትኩም"
 }

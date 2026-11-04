@@ -1444,7 +1444,7 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Баға деңгейге жеткенде ескерту алу үшін деңгейді түртіңіз.';
+      'Баға деңгейге жеткенде ескерту алу үшін AI бағалаған деңгейді түртіңіз.';
 
   @override
   String get shareAnalysisTitle => 'Талдаумен бөлісу';
@@ -1459,7 +1459,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get shareCardFooter => 'WhatStock арқылы жасалған';
 
   @override
-  String get shareCardDisclaimer => 'AI талдауы · инвестициялық кеңес емес';
+  String get shareCardDisclaimer =>
+      'AI талдауы · мысал ретіндегі сценарийлер, болжам емес · инвестициялық кеңес емес';
 
   @override
   String get referralTitle => 'Достарды шақыру';
@@ -1536,7 +1537,7 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI талдауы акцияға не әсер ететінін, тәуекелдерді, бағалауды және бағаның қайда бет алуы мүмкін екені туралы үш сценарийді дереккөздерімен және сіздің тіліңізде түсіндіреді.';
+      'AI талдауы акцияға не әсер ететінін, тәуекелдерді, бағалауды және бағаның қалай өзгеруі мүмкін екені туралы мысал ретіндегі үш сценарийді дереккөздерімен және сіздің тіліңізде түсіндіреді.';
 
   @override
   String get onboardTitle3 => 'Әрдайым хабардар болыңыз';
@@ -3005,6 +3006,13 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Рақмет — тексереміз.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Портфеліңіздің құрамы туралы AI жасаған жалпы ақпарат. Ол сіздің мақсаттарыңызды, қаржылық жағдайыңызды немесе салық жағдайыңызды ескермейді және жеке ұсыныс немесе инвестициялық кеңес болып табылмайды.';
+
+  @override
+  String get briefNotificationTitle => 'AI қорытындысы · Бүгін акцияларыңызбен';
 
   @override
   String get portfolioGoalSet => 'Мақсат қою';

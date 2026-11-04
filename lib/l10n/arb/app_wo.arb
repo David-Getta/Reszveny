@@ -391,12 +391,12 @@
   "searchAnalyses": "Seet ci say saytu",
   "deleteAnalysis": "Far",
   "analysisDeleted": "Far nañu saytu {symbol}",
-  "keyLevelAlertHint": "Bës ci benn dayo ngir am artu bu njëg gi agsee fa.",
+  "keyLevelAlertHint": "Bës ci benn dayo bu AI xayma ngir am artu bu njëg gi agsee fa.",
   "shareAnalysisTitle": "Séddoo saytu bi",
   "shareAsImage": "Séddoo ko ni nataal",
   "shareAsText": "Séddoo ko ni mbind",
   "shareCardFooter": "Defar nañu ko ak WhatStock",
-  "shareCardDisclaimer": "Saytu AI · du ndigal ci dugal xaalis",
+  "shareCardDisclaimer": "Saytu AI · xalaat yu nekk misaal, du wax lu ëllëg di indi · du ndigal ci dugal xaalis",
   "referralTitle": "Woo say xarit",
   "referralBody": "Séddoo sa kood. Sa xarit dina am ci saa si {count, plural, =1{1 saytu bu ñu yokk} other{{count} saytu yu ñu yokk}}, te yaw itam dinga am lu tollu noonu ginnaaw saytu bu jëkk bi mu def.",
   "referralYourCode": "Sa kood",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Jëlal nataalu aksiyoŋ",
   "onboardBody1": "Ekraŋu aplikasiyoŋu bursu, ab surnaal walla màndargay kompañi doy na: WhatStock dina xàmmi aksiyoŋ bi te won la njëgam, grafik bi ak lim yi am solo.",
   "onboardTitle2": "Xam ko ci ay simili rekk",
-  "onboardBody2": "Saytu AI bi dafay leeral li koy yengal aksiyoŋ bi, ay loraange, njëgam ju dëgg ak ñetti xalaat ci fan la njëg bi mën a jëm – ak fi xibaar yi jóge te ci sa làkk.",
+  "onboardBody2": "Saytu AI bi dafay leeral li koy yengal aksiyoŋ bi, ay loraange, njëgam ju dëgg ak ñetti xalaat yu nekk misaal ci ni njëg bi mën a yëngoo – ak fi xibaar yi jóge te ci sa làkk.",
   "onboardTitle3": "Bul ñàkk benn xibaar",
   "onboardBody3": "Yi ma gënal, sama aksiyoŋ yi ak artu njëg dinañu la yégal lu xew. Say saytu dañuy des ci sa jumtukaay, pare ngir nga ubbiwaat leen.",
   "onboardNext": "Ci kanam",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Lan moo baaxul? (bu la neexee)",
   "aiReportPrivacy": "Dinañu jot mbind mi ci tont bii ak sa not — te sa kont bokku ci — ngir mën koo saytu.",
   "aiReportSend": "Yónne yégle bi",
-  "aiReportThanks": "Jërëjëf — dinañu ko saytu."
+  "aiReportThanks": "Jërëjëf — dinañu ko saytu.",
+  "aiPortfolioDisclaimer": "Xibaar yu yaatu yu AI defar ci ni sa aksiyoŋ yi boolewoo. Du xool say jubluwaay, sa mbiri xaalis walla sa mbiri galag, te du ndigal bu la jagoo walla ndigal ci dugal xaalis.",
+  "briefNotificationTitle": "Gàttal bu AI · Tey ak sa aksiyoŋ yi"
 }

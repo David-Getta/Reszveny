@@ -1441,7 +1441,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'روی یک سطح بزنید تا وقتی قیمت به آن رسید، هشدار بگیرید.';
+      'روی یک سطح برآوردشده با هوش مصنوعی بزنید تا وقتی قیمت به آن رسید، هشدار بگیرید.';
 
   @override
   String get shareAnalysisTitle => 'اشتراک‌گذاری تحلیل';
@@ -1457,7 +1457,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'تحلیل هوش مصنوعی · توصیه سرمایه‌گذاری نیست';
+      'تحلیل هوش مصنوعی · سناریوهای توضیحی، نه پیش‌بینی · توصیه سرمایه‌گذاری نیست';
 
   @override
   String get referralTitle => 'دعوت از دوستان';
@@ -1534,7 +1534,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'تحلیل هوش مصنوعی توضیح می‌دهد چه چیزی سهم را حرکت می‌دهد، ریسک‌ها و ارزش‌گذاری آن چیست و سه سناریو برای مسیر احتمالی قیمت ارائه می‌کند؛ همراه با منابع و به زبان شما.';
+      'تحلیل هوش مصنوعی توضیح می‌دهد چه چیزی سهم را حرکت می‌دهد، ریسک‌ها و ارزش‌گذاری آن چیست و سه سناریوی توضیحی برای اینکه قیمت چگونه ممکن است حرکت کند ارائه می‌کند؛ همراه با منابع و به زبان شما.';
 
   @override
   String get onboardTitle3 => 'همیشه در جریان باشید';
@@ -3002,6 +3002,13 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'سپاسگزاریم — آن را بررسی می‌کنیم.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'اطلاعات کلی دربارهٔ ترکیب سبد سهام شما که با هوش مصنوعی تولید شده است. اهداف، وضعیت مالی یا وضعیت مالیاتی شما را در نظر نمی‌گیرد و توصیه شخصی یا توصیه سرمایه‌گذاری نیست.';
+
+  @override
+  String get briefNotificationTitle => 'خلاصهٔ هوش مصنوعی · امروز با سهام شما';
 
   @override
   String get portfolioGoalSet => 'تعیین هدف';

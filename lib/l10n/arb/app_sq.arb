@@ -391,12 +391,12 @@
   "searchAnalyses": "Kërko në analizat e tua",
   "deleteAnalysis": "Fshi",
   "analysisDeleted": "Analiza e {symbol} u fshi",
-  "keyLevelAlertHint": "Prekni një nivel për të marrë alarm kur çmimi ta arrijë.",
+  "keyLevelAlertHint": "Prekni një nivel të vlerësuar nga AI për të marrë alarm kur çmimi ta arrijë.",
   "shareAnalysisTitle": "Ndaj analizën",
   "shareAsImage": "Ndaj si imazh",
   "shareAsText": "Ndaj si tekst",
   "shareCardFooter": "Krijuar me WhatStock",
-  "shareCardDisclaimer": "Analiza me AI · nuk është këshillë investimi",
+  "shareCardDisclaimer": "Analiza me AI · skenarë ilustrues, jo parashikime · nuk është këshillë investimi",
   "referralTitle": "Fto miqtë",
   "referralBody": "Ndaj kodin tënd. Shoku yt merr menjëherë {count, plural, =1{1 analizë shtesë} other{{count} analiza shtesë}}, dhe ti merr po aq pas analizës së tij të parë.",
   "referralYourCode": "Kodi yt",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Fotografoni një aksion",
   "onboardBody1": "Mjafton ekrani i një aplikacioni brokerimi, një gazetë ose logoja e një kompanie: WhatStock e njeh aksionin dhe ju tregon çmimin, grafikun dhe shifrat kryesore.",
   "onboardTitle2": "Kuptojeni në pak minuta",
-  "onboardBody2": "Analiza me AI shpjegon se çfarë e lëviz aksionin, rreziqet, vlerësimin dhe tre skenarë se ku mund të shkojë çmimi – me burime dhe në gjuhën tuaj.",
+  "onboardBody2": "Analiza me AI shpjegon se çfarë e lëviz aksionin, rreziqet, vlerësimin dhe tre skenarë ilustrues se si mund të lëvizë çmimi – me burime dhe në gjuhën tuaj.",
   "onboardTitle3": "Jini gjithmonë në dijeni",
   "onboardBody3": "Të preferuarat, portofoli juaj dhe alarmet e çmimit ju mbajnë të informuar. Analizat tuaja mbeten në pajisjen tuaj, gati për t’u rihapur.",
   "onboardNext": "Tjetër",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Çfarë nuk shkon? (opsionale)",
   "aiReportPrivacy": "Ne marrim tekstin e kësaj përgjigjeje dhe shënimin tuaj — pa lidhje me llogarinë tuaj — që ta shqyrtojmë.",
   "aiReportSend": "Dërgo raportin",
-  "aiReportThanks": "Faleminderit — do ta shqyrtojmë."
+  "aiReportThanks": "Faleminderit — do ta shqyrtojmë.",
+  "aiPortfolioDisclaimer": "Informacion i përgjithshëm i gjeneruar nga AI për përbërjen e portofolit tuaj. Nuk merr parasysh objektivat, financat ose situatën tuaj tatimore dhe nuk përbën rekomandim personal ose këshillë investimi.",
+  "briefNotificationTitle": "Përmbledhje me AI · Sot me aksionet tuaja"
 }

@@ -1438,7 +1438,7 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'कोनो स्तर पर टैप करू, दाम ओतय पहुँचला पर अलर्ट भेटत।';
+      'AI द्वारा अनुमानित कोनो स्तर पर टैप करू, दाम ओतय पहुँचला पर अलर्ट भेटत।';
 
   @override
   String get shareAnalysisTitle => 'विश्लेषण साझा करू';
@@ -1453,7 +1453,8 @@ class AppLocalizationsMai extends AppLocalizations {
   String get shareCardFooter => 'WhatStock सँ बनाओल';
 
   @override
-  String get shareCardDisclaimer => 'AI विश्लेषण · निवेशक सलाह नहि';
+  String get shareCardDisclaimer =>
+      'AI विश्लेषण · उदाहरणात्मक परिदृश्य, पूर्वानुमान नहि · निवेशक सलाह नहि';
 
   @override
   String get referralTitle => 'मित्र सभकेँ आमंत्रित करू';
@@ -1531,7 +1532,7 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI विश्लेषण बतबैत अछि जे शेयरकेँ की चलबैत अछि, एकर जोखिम, मूल्यांकन, आ दाम कोन दिस जा सकैत अछि ताहि पर तीन परिदृश्य – स्रोतक संग आ अहाँक भाषामे।';
+      'AI विश्लेषण बतबैत अछि जे शेयरकेँ की चलबैत अछि, एकर जोखिम, मूल्यांकन, आ दाम कोना बदलि सकैत अछि ताहि पर तीन उदाहरणात्मक परिदृश्य – स्रोतक संग आ अहाँक भाषामे।';
 
   @override
   String get onboardTitle3 => 'सदिखन अपडेट रहू';
@@ -2997,6 +2998,13 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'धन्यवाद — हम सभ एकर जाँच करब।';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI-निर्मित, अहाँक पोर्टफ़ोलियोक संरचनाक विषयमे सामान्य जानकारी। ई अहाँक लक्ष्य, आर्थिक स्थिति वा करक स्थितिकेँ ध्यानमे नहि रखैत अछि, आ ई ने व्यक्तिगत सिफारिश अछि आ ने निवेशक सलाह।';
+
+  @override
+  String get briefNotificationTitle => 'AI सारांश · आइ अहाँक शेयरक संग';
 
   @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';

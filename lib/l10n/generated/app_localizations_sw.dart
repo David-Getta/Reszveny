@@ -1444,7 +1444,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Gusa kiwango ili upate arifa bei inapokifikia.';
+      'Gusa kiwango kilichokadiriwa na AI ili upate arifa bei inapokifikia.';
 
   @override
   String get shareAnalysisTitle => 'Shiriki uchambuzi';
@@ -1459,7 +1459,8 @@ class AppLocalizationsSw extends AppLocalizations {
   String get shareCardFooter => 'Imetengenezwa kwa WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Uchambuzi wa AI · si ushauri wa uwekezaji';
+  String get shareCardDisclaimer =>
+      'Uchambuzi wa AI · hali za mfano, si utabiri · si ushauri wa uwekezaji';
 
   @override
   String get referralTitle => 'Alika marafiki';
@@ -1536,7 +1537,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Uchambuzi wa AI unaeleza kinachosukuma hisa, hatari, thamani yake na hali tatu za mahali bei inaweza kuelekea – pamoja na vyanzo na kwa lugha yako.';
+      'Uchambuzi wa AI unaeleza kinachosukuma hisa, hatari, thamani yake na hali tatu za mfano za jinsi bei inavyoweza kusonga – pamoja na vyanzo na kwa lugha yako.';
 
   @override
   String get onboardTitle3 => 'Usipitwe na chochote';
@@ -3009,6 +3010,13 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Asante — tutalikagua.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Taarifa za jumla zilizotengenezwa na AI kuhusu muundo wa jalada lako la hisa. Hazizingatii malengo yako, hali yako ya kifedha au hali yako ya kodi, na si pendekezo binafsi wala ushauri wa uwekezaji.';
+
+  @override
+  String get briefNotificationTitle => 'Muhtasari wa AI · Leo na hisa zako';
 
   @override
   String get portfolioGoalSet => 'Weka lengo';

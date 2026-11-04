@@ -391,12 +391,12 @@
   "searchAnalyses": "Zoek in je analyses",
   "deleteAnalysis": "Verwijderen",
   "analysisDeleted": "Analyse van {symbol} verwijderd",
-  "keyLevelAlertHint": "Tik op een niveau om een alert te krijgen wanneer de koers het bereikt.",
+  "keyLevelAlertHint": "Tik op een door AI geschat niveau om een alert te krijgen wanneer de koers het bereikt.",
   "shareAnalysisTitle": "Analyse delen",
   "shareAsImage": "Delen als afbeelding",
   "shareAsText": "Delen als tekst",
   "shareCardFooter": "Gemaakt met WhatStock",
-  "shareCardDisclaimer": "AI-analyse · geen beleggingsadvies",
+  "shareCardDisclaimer": "AI-analyse · illustratieve scenario's, geen voorspellingen · geen beleggingsadvies",
   "referralTitle": "Nodig vrienden uit",
   "referralBody": "Deel je code. Je vriend krijgt meteen {count, plural, =1{1 extra analyse} other{{count} extra analyses}} en jij krijgt hetzelfde na hun eerste analyse.",
   "referralYourCode": "Jouw code",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Fotografeer een aandeel",
   "onboardBody1": "Een brokerscherm, een krant of een bedrijfslogo is genoeg: WhatStock herkent het aandeel en toont de koers, de grafiek en de belangrijkste cijfers.",
   "onboardTitle2": "In een paar minuten helder",
-  "onboardBody2": "De AI-analyse legt uit wat het aandeel beweegt, wat de risico's zijn en hoe het gewaardeerd is, en schetst drie scenario's voor waar de koers heen kan – met bronnen en in jouw taal.",
+  "onboardBody2": "De AI-analyse legt uit wat het aandeel beweegt, wat de risico's zijn en hoe het gewaardeerd is, en schetst drie illustratieve scenario's voor hoe de koers kan bewegen – met bronnen en in jouw taal.",
   "onboardTitle3": "Blijf altijd op de hoogte",
   "onboardBody3": "Favorieten, je portefeuille en koersalerts houden je op de hoogte. Je analyses blijven op je apparaat, klaar om opnieuw te openen.",
   "onboardNext": "Volgende",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Wat klopt er niet? (optioneel)",
   "aiReportPrivacy": "We ontvangen de tekst van dit antwoord en je notitie – zonder je account – zodat we het kunnen beoordelen.",
   "aiReportSend": "Melding versturen",
-  "aiReportThanks": "Bedankt – we gaan ernaar kijken."
+  "aiReportThanks": "Bedankt – we gaan ernaar kijken.",
+  "aiPortfolioDisclaimer": "Door AI gegenereerde, algemene informatie over de samenstelling van je portefeuille. Er wordt geen rekening gehouden met je doelen, financiële situatie of belastingsituatie en het is geen persoonlijke aanbeveling of beleggingsadvies.",
+  "briefNotificationTitle": "AI-samenvatting · Vandaag met je aandelen"
 }

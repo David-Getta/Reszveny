@@ -1477,7 +1477,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Ťuknite na úroveň a dostanete upozornenie, keď ju cena dosiahne.';
+      'Ťuknite na úroveň odhadnutú AI a dostanete upozornenie, keď ju cena dosiahne.';
 
   @override
   String get shareAnalysisTitle => 'Zdieľať analýzu';
@@ -1493,7 +1493,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'AI analýza · nie je investičné odporúčanie';
+      'AI analýza · ilustratívne scenáre, nie prognózy · nie je investičné odporúčanie';
 
   @override
   String get referralTitle => 'Pozvi priateľov';
@@ -1577,7 +1577,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI analýza vysvetľuje, čo hýbe akciou, aké sú riziká a ocenenie, a ponúka tri scenáre, kam sa môže cena pohnúť – so zdrojmi a vo vašom jazyku.';
+      'AI analýza vysvetľuje, čo hýbe akciou, aké sú riziká a ocenenie, a ponúka tri ilustratívne scenáre, ako sa môže cena pohybovať – so zdrojmi a vo vašom jazyku.';
 
   @override
   String get onboardTitle3 => 'Buďte stále v obraze';
@@ -3074,6 +3074,13 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Ďakujeme — pozrieme sa na to.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Všeobecné informácie o zložení vášho portfólia vygenerované AI. Nezohľadňujú vaše ciele, financie ani daňovú situáciu a nie sú osobným ani investičným odporúčaním.';
+
+  @override
+  String get briefNotificationTitle => 'AI zhrnutie · Dnes s vašimi akciami';
 
   @override
   String get portfolioGoalSet => 'Nastaviť cieľ';

@@ -1438,7 +1438,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Nhấn vào một mức giá để nhận cảnh báo khi giá chạm tới mức đó.';
+      'Nhấn vào một mức giá do AI ước tính để nhận cảnh báo khi giá chạm tới mức đó.';
 
   @override
   String get shareAnalysisTitle => 'Chia sẻ phân tích';
@@ -1454,7 +1454,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Phân tích AI · không phải lời khuyên đầu tư';
+      'Phân tích AI · kịch bản minh họa, không phải dự báo · không phải lời khuyên đầu tư';
 
   @override
   String get referralTitle => 'Mời bạn bè';
@@ -1531,7 +1531,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Phân tích AI giải thích điều gì đang tác động đến cổ phiếu, các rủi ro, định giá và ba kịch bản cho hướng đi của giá – kèm nguồn tham khảo và bằng ngôn ngữ của bạn.';
+      'Phân tích AI giải thích điều gì đang tác động đến cổ phiếu, các rủi ro, định giá và ba kịch bản minh họa cho cách giá có thể biến động – kèm nguồn tham khảo và bằng ngôn ngữ của bạn.';
 
   @override
   String get onboardTitle3 => 'Luôn nắm bắt tình hình';
@@ -2996,6 +2996,14 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Cảm ơn bạn — chúng tôi sẽ xem xét.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Thông tin chung do AI tạo về cơ cấu danh mục của bạn. Nội dung không xét đến mục tiêu, tình hình tài chính hay tình hình thuế của bạn và không phải là khuyến nghị cá nhân hay lời khuyên đầu tư.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Tóm tắt AI · Hôm nay với cổ phiếu của bạn';
 
   @override
   String get portfolioGoalSet => 'Đặt mục tiêu';

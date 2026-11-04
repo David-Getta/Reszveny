@@ -1445,7 +1445,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'შეეხეთ დონეს, რომ მიიღოთ შეტყობინება, როცა ფასი მას მიაღწევს.';
+      'შეეხეთ AI-ის მიერ შეფასებულ დონეს, რომ მიიღოთ შეტყობინება, როცა ფასი მას მიაღწევს.';
 
   @override
   String get shareAnalysisTitle => 'ანალიზის გაზიარება';
@@ -1460,7 +1460,8 @@ class AppLocalizationsKa extends AppLocalizations {
   String get shareCardFooter => 'შექმნილია WhatStock-ით';
 
   @override
-  String get shareCardDisclaimer => 'AI ანალიზი · არ არის საინვესტიციო რჩევა';
+  String get shareCardDisclaimer =>
+      'AI ანალიზი · საილუსტრაციო სცენარები და არა პროგნოზები · არ არის საინვესტიციო რჩევა';
 
   @override
   String get referralTitle => 'მოიწვიეთ მეგობრები';
@@ -1537,7 +1538,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI ანალიზი განმარტავს, რა ამოძრავებს აქციას, რა რისკები არსებობს, როგორია მისი შეფასება, და გთავაზობთ სამ სცენარს, საით შეიძლება წავიდეს ფასი – წყაროებით და თქვენს ენაზე.';
+      'AI ანალიზი განმარტავს, რა ამოძრავებს აქციას, რა რისკები არსებობს, როგორია მისი შეფასება, და გთავაზობთ სამ საილუსტრაციო სცენარს, როგორ შეიძლება იმოძრაოს ფასმა – წყაროებით და თქვენს ენაზე.';
 
   @override
   String get onboardTitle3 => 'იყავით საქმის კურსში';
@@ -3005,6 +3006,14 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'გმადლობთ — გადავხედავთ.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI-ის მიერ შექმნილი ზოგადი ინფორმაცია თქვენი პორტფელის შემადგენლობის შესახებ. ის არ ითვალისწინებს თქვენს მიზნებს, ფინანსურ მდგომარეობას ან საგადასახადო სიტუაციას და არ წარმოადგენს პერსონალურ რეკომენდაციას ან საინვესტიციო რჩევას.';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI შეჯამება · დღეს თქვენს აქციებთან ერთად';
 
   @override
   String get portfolioGoalSet => 'მიზნის დაყენება';

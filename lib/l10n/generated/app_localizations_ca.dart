@@ -1449,7 +1449,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Toca un nivell per rebre una alerta quan el preu hi arribi.';
+      'Toca un nivell estimat amb IA per rebre una alerta quan el preu hi arribi.';
 
   @override
   String get shareAnalysisTitle => 'Compartir l’anàlisi';
@@ -1465,7 +1465,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Anàlisi amb IA · no és assessorament d’inversió';
+      'Anàlisi amb IA · escenaris il·lustratius, no previsions · no és assessorament d’inversió';
 
   @override
   String get referralTitle => 'Convida amics';
@@ -1542,7 +1542,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'L’anàlisi amb IA t’explica què mou l’acció, els riscos, la valoració i tres escenaris sobre cap on podria anar el preu, amb fonts i en el teu idioma.';
+      'L’anàlisi amb IA t’explica què mou l’acció, els riscos, la valoració i tres escenaris il·lustratius de com podria evolucionar el preu, amb fonts i en el teu idioma.';
 
   @override
   String get onboardTitle3 => 'Estigues sempre al dia';
@@ -3017,6 +3017,14 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Gràcies, la revisarem.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Informació general generada per IA sobre la composició de la teva cartera. No té en compte els teus objectius, la teva situació financera ni la teva situació fiscal, i no constitueix una recomanació personal ni assessorament d’inversió.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Resum amb IA · Avui amb les teves accions';
 
   @override
   String get portfolioGoalSet => 'Defineix un objectiu';

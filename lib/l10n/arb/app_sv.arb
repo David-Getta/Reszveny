@@ -391,12 +391,12 @@
   "searchAnalyses": "Sök bland dina analyser",
   "deleteAnalysis": "Radera",
   "analysisDeleted": "Analysen av {symbol} har raderats",
-  "keyLevelAlertHint": "Tryck på en nivå för att få ett larm när kursen når den.",
+  "keyLevelAlertHint": "Tryck på en AI-uppskattad nivå för att få ett larm när kursen når den.",
   "shareAnalysisTitle": "Dela analys",
   "shareAsImage": "Dela som bild",
   "shareAsText": "Dela som text",
   "shareCardFooter": "Skapad med WhatStock",
-  "shareCardDisclaimer": "AI-analys · inte investeringsrådgivning",
+  "shareCardDisclaimer": "AI-analys · illustrativa scenarier, inte prognoser · inte investeringsrådgivning",
   "referralTitle": "Bjud in vänner",
   "referralBody": "Dela din kod. Din vän får {count, plural, =1{1 extra analys} other{{count} extra analyser}} direkt, och du får lika många efter vännens första analys.",
   "referralYourCode": "Din kod",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Fotografera en aktie",
   "onboardBody1": "Det räcker med en mäklarskärm, en tidning eller en företagslogga: WhatStock känner igen aktien och visar kurs, diagram och nyckeltal.",
   "onboardTitle2": "Förstå den på några minuter",
-  "onboardBody2": "AI-analysen förklarar vad som driver aktien, riskerna, värderingen och tre scenarier för vart kursen kan ta vägen – med källor och på ditt språk.",
+  "onboardBody2": "AI-analysen förklarar vad som driver aktien, riskerna, värderingen och tre illustrativa scenarier för hur kursen kan röra sig – med källor och på ditt språk.",
   "onboardTitle3": "Ha koll på läget",
   "onboardBody3": "Favoriter, din portfölj och kurslarm håller dig uppdaterad. Dina analyser sparas på din enhet, redo att öppnas igen.",
   "onboardNext": "Nästa",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Vad är fel? (valfritt)",
   "aiReportPrivacy": "Vi får texten i svaret och din kommentar – utan koppling till ditt konto – så att vi kan granska det.",
   "aiReportSend": "Skicka rapport",
-  "aiReportThanks": "Tack – vi tittar på det."
+  "aiReportThanks": "Tack – vi tittar på det.",
+  "aiPortfolioDisclaimer": "AI-genererad, allmän information om sammansättningen av din portfölj. Den tar inte hänsyn till dina mål, din ekonomi eller din skattesituation och är inte en personlig rekommendation eller investeringsrådgivning.",
+  "briefNotificationTitle": "AI-sammanfattning · I dag med dina aktier"
 }

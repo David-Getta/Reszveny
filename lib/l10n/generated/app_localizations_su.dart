@@ -1446,7 +1446,7 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Toél hiji tingkat pikeun meunang béwara nalika harga nepi ka dinya.';
+      'Toél hiji tingkat nu ditaksir ku AI pikeun meunang béwara nalika harga nepi ka dinya.';
 
   @override
   String get shareAnalysisTitle => 'Bagikeun analisis';
@@ -1461,7 +1461,8 @@ class AppLocalizationsSu extends AppLocalizations {
   String get shareCardFooter => 'Dijieun ku WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Analisis AI · lain naséhat investasi';
+  String get shareCardDisclaimer =>
+      'Analisis AI · skénario ilustrasi, lain ramalan · lain naséhat investasi';
 
   @override
   String get referralTitle => 'Ondang babaturan';
@@ -1537,7 +1538,7 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Analisis AI ngajelaskeun naon nu ngagerakkeun saham, résikona, valuasina jeung tilu skénario ka mana hargana bisa ngalih, dibarengan ku sumber jeung dina basa anjeun.';
+      'Analisis AI ngajelaskeun naon nu ngagerakkeun saham, résikona, valuasina jeung tilu skénario ilustrasi kumaha hargana bisa ngalih, dibarengan ku sumber jeung dina basa anjeun.';
 
   @override
   String get onboardTitle3 => 'Tetep apdet terus';
@@ -3008,6 +3009,14 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Hatur nuhun — kami bakal mariksana.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Inpormasi umum nu dijieun ku AI ngeunaan komposisi portofolio anjeun. Ieu henteu merhatikeun tujuan, kaayaan kauangan atawa kaayaan pajeg anjeun, sarta lain rekomendasi pribadi atawa naséhat investasi.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Ringkesan AI · Dinten ieu sareng saham anjeun';
 
   @override
   String get portfolioGoalSet => 'Setél target';

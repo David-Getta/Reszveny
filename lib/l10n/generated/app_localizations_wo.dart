@@ -1441,7 +1441,7 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Bës ci benn dayo ngir am artu bu njëg gi agsee fa.';
+      'Bës ci benn dayo bu AI xayma ngir am artu bu njëg gi agsee fa.';
 
   @override
   String get shareAnalysisTitle => 'Séddoo saytu bi';
@@ -1456,7 +1456,8 @@ class AppLocalizationsWo extends AppLocalizations {
   String get shareCardFooter => 'Defar nañu ko ak WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Saytu AI · du ndigal ci dugal xaalis';
+  String get shareCardDisclaimer =>
+      'Saytu AI · xalaat yu nekk misaal, du wax lu ëllëg di indi · du ndigal ci dugal xaalis';
 
   @override
   String get referralTitle => 'Woo say xarit';
@@ -1532,7 +1533,7 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Saytu AI bi dafay leeral li koy yengal aksiyoŋ bi, ay loraange, njëgam ju dëgg ak ñetti xalaat ci fan la njëg bi mën a jëm – ak fi xibaar yi jóge te ci sa làkk.';
+      'Saytu AI bi dafay leeral li koy yengal aksiyoŋ bi, ay loraange, njëgam ju dëgg ak ñetti xalaat yu nekk misaal ci ni njëg bi mën a yëngoo – ak fi xibaar yi jóge te ci sa làkk.';
 
   @override
   String get onboardTitle3 => 'Bul ñàkk benn xibaar';
@@ -2997,6 +2998,13 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Jërëjëf — dinañu ko saytu.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Xibaar yu yaatu yu AI defar ci ni sa aksiyoŋ yi boolewoo. Du xool say jubluwaay, sa mbiri xaalis walla sa mbiri galag, te du ndigal bu la jagoo walla ndigal ci dugal xaalis.';
+
+  @override
+  String get briefNotificationTitle => 'Gàttal bu AI · Tey ak sa aksiyoŋ yi';
 
   @override
   String get portfolioGoalSet => 'Taxawal jublu';

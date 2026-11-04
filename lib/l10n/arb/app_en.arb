@@ -965,7 +965,7 @@
       }
     }
   },
-  "keyLevelAlertHint": "Tap a level to get an alert when the price reaches it.",
+  "keyLevelAlertHint": "Tap an AI-estimated level to get an alert when the price reaches it.",
   "@keyLevelAlertHint": {
     "description": "Small hint under the key price levels (support, resistance) of the AI analysis: tapping one sets a price alert at that level."
   },
@@ -985,7 +985,7 @@
   "@shareCardFooter": {
     "description": "Footer on the shared analysis picture, next to the WhatStock logo. Keep WhatStock unchanged."
   },
-  "shareCardDisclaimer": "AI analysis · not investment advice",
+  "shareCardDisclaimer": "AI analysis · illustrative scenarios, not forecasts · not investment advice",
   "@shareCardDisclaimer": {
     "description": "Tiny line at the bottom of the shared analysis picture."
   },
@@ -1076,7 +1076,7 @@
   "@onboardTitle2": {
     "description": "Second onboarding page title: the AI analysis."
   },
-  "onboardBody2": "The AI analysis explains what moves the stock, the risks, the valuation and three scenarios for where the price could go, with sources and in your language.",
+  "onboardBody2": "The AI analysis explains what moves the stock, the risks, the valuation and three illustrative scenarios for how the price could move, with sources and in your language.",
   "@onboardBody2": {
     "description": "Second onboarding page text."
   },
@@ -2606,6 +2606,10 @@
   "@aiReportSend": {"description": "Send button of the report dialog."},
   "aiReportThanks": "Thanks — we'll review it.",
   "@aiReportThanks": {"description": "Snackbar after an AI answer was reported."},
+  "aiPortfolioDisclaimer": "AI-generated, general information about your portfolio's composition. It does not take your goals, finances or tax situation into account and is not a personal recommendation or investment advice.",
+  "@aiPortfolioDisclaimer": {"description": "Note under the AI review of the user's own portfolio: general information, not a personal recommendation (EU investment-advice rules)."},
+  "briefNotificationTitle": "AI summary · Today with your stocks",
+  "@briefNotificationTitle": {"description": "Title of the system notification that shows the first sentence of the AI-written morning brief; must say it is AI-generated."},
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

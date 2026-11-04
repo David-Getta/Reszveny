@@ -1420,7 +1420,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'ዋጋው ደረጃው ላይ ሲደርስ ማንቂያ ለማግኘት አንድ ደረጃ መታ ያድርጉ።';
+      'ዋጋው ደረጃው ላይ ሲደርስ ማንቂያ ለማግኘት በAI የተገመተ ደረጃ መታ ያድርጉ።';
 
   @override
   String get shareAnalysisTitle => 'ትንተናውን አጋራ';
@@ -1435,7 +1435,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get shareCardFooter => 'በWhatStock የተሰራ';
 
   @override
-  String get shareCardDisclaimer => 'የAI ትንተና · የኢንቨስትመንት ምክር አይደለም';
+  String get shareCardDisclaimer =>
+      'የAI ትንተና · ምሳሌያዊ ሁኔታዎች እንጂ ትንበያዎች አይደሉም · የኢንቨስትመንት ምክር አይደለም';
 
   @override
   String get referralTitle => 'ጓደኞችን ይጋብዙ';
@@ -1511,7 +1512,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'የAI ትንተናው አክሲዮኑን የሚያንቀሳቅሰውን፣ ስጋቶቹን፣ ግምታዊ ዋጋውንና ዋጋው ወዴት ሊሄድ እንደሚችል ሦስት ሁኔታዎችን ያብራራል – ከምንጮች ጋር፣ በእርስዎ ቋንቋ።';
+      'የAI ትንተናው አክሲዮኑን የሚያንቀሳቅሰውን፣ ስጋቶቹን፣ ግምታዊ ዋጋውንና ዋጋው እንዴት ሊንቀሳቀስ እንደሚችል ሦስት ምሳሌያዊ ሁኔታዎችን ያብራራል – ከምንጮች ጋር፣ በእርስዎ ቋንቋ።';
 
   @override
   String get onboardTitle3 => 'ሁልጊዜ መረጃ ይኑርዎት';
@@ -2965,6 +2966,13 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'እናመሰግናለን — እንገመግመዋለን።';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'በAI የተፈጠረ፣ ስለ ፖርትፎሊዮዎ ስብጥር አጠቃላይ መረጃ። ግቦችዎን፣ የገንዘብ ሁኔታዎን ወይም የግብር ሁኔታዎን ከግምት ውስጥ አያስገባም፤ የግል ምክረ ሐሳብ ወይም የኢንቨስትመንት ምክር አይደለም።';
+
+  @override
+  String get briefNotificationTitle => 'የAI ማጠቃለያ · ዛሬ ከአክሲዮኖችዎ ጋር';
 
   @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';

@@ -24,7 +24,7 @@ Rules:
 - Answer in the requested language, plainly, in at most about 90 words; "- " bullets are fine.
 - Build on the note; use the web search only if the question needs a fact the note does not contain, and say what you found.
 - Never invent facts, numbers or dates; if you cannot tell, say so.
-- Do not tell the reader to buy or sell.''';
+- Do not tell the reader to buy, sell or hold anything, and do not rank the instruments as investments or say which is the better buy; compare the facts and say what each depends on. Give no price targets.''';
 
   static Map<String, dynamic> requestBody({
     required String note,

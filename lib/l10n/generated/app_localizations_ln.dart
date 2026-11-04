@@ -1449,7 +1449,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Fina niveau moko mpo na kozwa likebisi ntango ntalo ekokoma wana.';
+      'Fina niveau moko oyo AI etangi mpo na kozwa likebisi ntango ntalo ekokoma wana.';
 
   @override
   String get shareAnalysisTitle => 'Kabola analyse';
@@ -1465,7 +1465,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Analyse ya AI · ezali toli ya kotia mbɔngɔ te';
+      'Analyse ya AI · makambo ya ndakisa, bisakoli te · ezali toli ya kotia mbɔngɔ te';
 
   @override
   String get referralTitle => 'Benga baninga';
@@ -1542,7 +1542,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Analyse ya AI elimboli nini etindaka action, makama, motuya na yango mpe makambo misato oyo ekoki kokómela ntalo, na bisika ya nsango mpe na monoko na yo.';
+      'Analyse ya AI elimboli nini etindaka action, makama, motuya na yango mpe makambo misato ya ndakisa ya ndenge ntalo ekoki koningana, na bisika ya nsango mpe na monoko na yo.';
 
   @override
   String get onboardTitle3 => 'Yeba makambo nyɔnsɔ ntango nyɔnsɔ';
@@ -3023,6 +3023,13 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Matɔndi — tokotala yango.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Bansango ya mobimba oyo AI ebimisi na ntina ya ndenge portefeuille na yo ebongisami. Etaleli te mikano na yo, makambo ya mbɔngɔ na yo to ya mpako na yo, mpe ezali toli oyo etali yo moko te, ezali mpe toli ya kotia mbɔngɔ te.';
+
+  @override
+  String get briefNotificationTitle => 'Bokuse ya AI · Lelo na misolo na yo';
 
   @override
   String get portfolioGoalSet => 'Tyá mokano';

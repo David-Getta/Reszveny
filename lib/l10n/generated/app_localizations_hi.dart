@@ -1442,7 +1442,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'किसी स्तर पर टैप करें, कीमत वहाँ पहुँचने पर आपको अलर्ट मिलेगा।';
+      'AI द्वारा अनुमानित किसी स्तर पर टैप करें, कीमत वहाँ पहुँचने पर आपको अलर्ट मिलेगा।';
 
   @override
   String get shareAnalysisTitle => 'विश्लेषण शेयर करें';
@@ -1457,7 +1457,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get shareCardFooter => 'WhatStock से बनाया गया';
 
   @override
-  String get shareCardDisclaimer => 'AI विश्लेषण · निवेश सलाह नहीं';
+  String get shareCardDisclaimer =>
+      'AI विश्लेषण · उदाहरणात्मक परिदृश्य, पूर्वानुमान नहीं · निवेश सलाह नहीं';
 
   @override
   String get referralTitle => 'दोस्तों को आमंत्रित करें';
@@ -1535,7 +1536,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI विश्लेषण बताता है कि शेयर को क्या प्रभावित करता है, उसके जोखिम क्या हैं, उसका मूल्यांकन कैसा है और कीमत किस ओर जा सकती है, इसके तीन परिदृश्य – स्रोतों के साथ और आपकी भाषा में।';
+      'AI विश्लेषण बताता है कि शेयर को क्या प्रभावित करता है, उसके जोखिम क्या हैं, उसका मूल्यांकन कैसा है और कीमत कैसे बदल सकती है, इसके तीन उदाहरणात्मक परिदृश्य – स्रोतों के साथ और आपकी भाषा में।';
 
   @override
   String get onboardTitle3 => 'हर पल अपडेट रहें';
@@ -3003,6 +3004,13 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'धन्यवाद — हम इसकी जाँच करेंगे।';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI-जनित, आपके पोर्टफ़ोलियो की संरचना के बारे में सामान्य जानकारी। यह आपके लक्ष्यों, वित्तीय स्थिति या कर संबंधी स्थिति को ध्यान में नहीं रखती और यह न तो व्यक्तिगत सिफ़ारिश है, न ही निवेश सलाह।';
+
+  @override
+  String get briefNotificationTitle => 'AI सारांश · आज आपके शेयरों के साथ';
 
   @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';

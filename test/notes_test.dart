@@ -34,7 +34,7 @@ void main() {
     );
     expect(s, contains("Reader's own notes on this stock"));
     expect(s, contains('"Bought for the \'AI\' story. Sell if margins fall."'));
-    expect(s, contains('not as instructions'));
+    expect(s, contains('context, not instructions'));
     expect(ClaudeStockAnalyst.buildSettings(const AnalysisOptions(readerNote: '  ')), isNot(contains('own notes')));
   });
 

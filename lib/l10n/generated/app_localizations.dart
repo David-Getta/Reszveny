@@ -2715,7 +2715,7 @@ abstract class AppLocalizations {
   /// Small hint under the key price levels (support, resistance) of the AI analysis: tapping one sets a price alert at that level.
   ///
   /// In en, this message translates to:
-  /// **'Tap a level to get an alert when the price reaches it.'**
+  /// **'Tap an AI-estimated level to get an alert when the price reaches it.'**
   String get keyLevelAlertHint;
 
   /// Title of the share sheet that previews the analysis card.
@@ -2745,7 +2745,7 @@ abstract class AppLocalizations {
   /// Tiny line at the bottom of the shared analysis picture.
   ///
   /// In en, this message translates to:
-  /// **'AI analysis · not investment advice'**
+  /// **'AI analysis · illustrative scenarios, not forecasts · not investment advice'**
   String get shareCardDisclaimer;
 
   /// Settings section title of the referral program.
@@ -2841,7 +2841,7 @@ abstract class AppLocalizations {
   /// Second onboarding page text.
   ///
   /// In en, this message translates to:
-  /// **'The AI analysis explains what moves the stock, the risks, the valuation and three scenarios for where the price could go, with sources and in your language.'**
+  /// **'The AI analysis explains what moves the stock, the risks, the valuation and three illustrative scenarios for how the price could move, with sources and in your language.'**
   String get onboardBody2;
 
   /// Third onboarding page title: favorites, portfolio, alerts.
@@ -5057,6 +5057,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Thanks — we\'ll review it.'**
   String get aiReportThanks;
+
+  /// Note under the AI review of the user's own portfolio: general information, not a personal recommendation (EU investment-advice rules).
+  ///
+  /// In en, this message translates to:
+  /// **'AI-generated, general information about your portfolio\'s composition. It does not take your goals, finances or tax situation into account and is not a personal recommendation or investment advice.'**
+  String get aiPortfolioDisclaimer;
+
+  /// Title of the system notification that shows the first sentence of the AI-written morning brief; must say it is AI-generated.
+  ///
+  /// In en, this message translates to:
+  /// **'AI summary · Today with your stocks'**
+  String get briefNotificationTitle;
 
   /// No description provided for @portfolioGoalSet.
   ///

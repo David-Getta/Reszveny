@@ -1452,7 +1452,7 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Tobetsa maemo go amogela kitsiso fa tlhwatlhwa e fitlha kwa go one.';
+      'Tobetsa maemo a a fopholeditsweng ke AI go amogela kitsiso fa tlhwatlhwa e fitlha kwa go one.';
 
   @override
   String get shareAnalysisTitle => 'Abelana tshekatsheko';
@@ -1468,7 +1468,7 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Tshekatsheko ya AI · ga se kgakololo ya peeletso';
+      'Tshekatsheko ya AI · maemo a sekai, e seng dipolelelopele · ga se kgakololo ya peeletso';
 
   @override
   String get referralTitle => 'Laletsa ditsala';
@@ -1545,7 +1545,7 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Tshekatsheko ya AI e tlhalosa se se tsamaisang shere, dikotsi, boleng jwa yone le maemo a le mararo a gore tlhwatlhwa e ka ya kae, ka metswedi le ka puo ya gago.';
+      'Tshekatsheko ya AI e tlhalosa se se tsamaisang shere, dikotsi, boleng jwa yone le maemo a le mararo a sekai a gore tlhwatlhwa e ka tsamaya jang, ka metswedi le ka puo ya gago.';
 
   @override
   String get onboardTitle3 => 'Nna o itse sotlhe';
@@ -3028,6 +3028,14 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Re a leboga — re tla e sekaseka.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Tshedimosetso e e akaretsang e e dirilweng ke AI ka ga popego ya potefolio ya gago. Ga e tseye tsia maikaelelo a gago, madi a gago kgotsa seemo sa gago sa lekgetho, e bile ga se tshitshinyo e e go lebaganeng kgotsa kgakololo ya peeletso.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Kakaretso ya AI · Gompieno le dishere tsa gago';
 
   @override
   String get portfolioGoalSet => 'Baya maikaelelo';

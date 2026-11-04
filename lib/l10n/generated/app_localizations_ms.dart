@@ -1448,7 +1448,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Ketik paras untuk menerima amaran apabila harga mencapainya.';
+      'Ketik paras yang dianggarkan oleh AI untuk menerima amaran apabila harga mencapainya.';
 
   @override
   String get shareAnalysisTitle => 'Kongsi analisis';
@@ -1463,7 +1463,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get shareCardFooter => 'Dibuat dengan WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Analisis AI · bukan nasihat pelaburan';
+  String get shareCardDisclaimer =>
+      'Analisis AI · senario ilustrasi, bukan ramalan · bukan nasihat pelaburan';
 
   @override
   String get referralTitle => 'Jemput rakan';
@@ -1539,7 +1540,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Analisis AI menerangkan apa yang menggerakkan saham, risikonya, penilaiannya dan tiga senario ke mana harga mungkin bergerak, lengkap dengan sumber dan dalam bahasa anda.';
+      'Analisis AI menerangkan apa yang menggerakkan saham, risikonya, penilaiannya dan tiga senario ilustrasi tentang bagaimana harga mungkin bergerak, lengkap dengan sumber dan dalam bahasa anda.';
 
   @override
   String get onboardTitle3 => 'Sentiasa ikuti perkembangan';
@@ -3007,6 +3008,14 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Terima kasih — kami akan menyemaknya.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Maklumat umum yang dijana oleh AI tentang komposisi portfolio anda. Ia tidak mengambil kira matlamat, kewangan atau situasi cukai anda dan bukan cadangan peribadi atau nasihat pelaburan.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Ringkasan AI · Hari ini dengan saham anda';
 
   @override
   String get portfolioGoalSet => 'Tetapkan sasaran';

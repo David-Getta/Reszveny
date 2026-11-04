@@ -1438,7 +1438,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'གོང་ཚད་ཚད་དེར་སླེབས་སྐབས་ཉེན་བརྡ་ཐོབ་པར་ཚད་ཅིག་ལ་མནན།';
+      'གོང་ཚད་ཚད་དེར་སླེབས་སྐབས་ཉེན་བརྡ་ཐོབ་པར་ AI ཡིས་ཚོད་དཔག་བྱས་པའི་ཚད་ཅིག་ལ་མནན།';
 
   @override
   String get shareAnalysisTitle => 'དབྱེ་ཞིབ་མཉམ་སྤྱོད།';
@@ -1453,7 +1453,8 @@ class AppLocalizationsBo extends AppLocalizations {
   String get shareCardFooter => 'WhatStock གིས་བཟོས།';
 
   @override
-  String get shareCardDisclaimer => 'AI དབྱེ་ཞིབ · མ་འཇོག་གི་བསམ་འཆར་མིན།';
+  String get shareCardDisclaimer =>
+      'AI དབྱེ་ཞིབ · དཔེར་བརྗོད་ཀྱི་གནས་སྟངས་ཡིན་གྱི་སྔོན་བརྡ་མིན · མ་འཇོག་གི་བསམ་འཆར་མིན།';
 
   @override
   String get referralTitle => 'གྲོགས་པོ་མགྲོན་འབོད';
@@ -1528,7 +1529,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI དབྱེ་ཞིབ་ཀྱིས་ཧུར་ཁག་འགུལ་སྐྱོད་བྱེད་པའི་རྒྱུ་རྐྱེན། ཉེན་ཁ། རིན་ཐང་གི་བརྟག་དཔྱད། གོང་ཚད་གར་འགྲོ་སྲིད་པའི་གནས་སྟངས་གསུམ་བཅས་འགྲེལ་བཤད་བྱེད། ཁུངས་དང་བཅས་ཁྱེད་རང་གི་སྐད་ཡིག་ཐོག་ཏུ།';
+      'AI དབྱེ་ཞིབ་ཀྱིས་ཧུར་ཁག་འགུལ་སྐྱོད་བྱེད་པའི་རྒྱུ་རྐྱེན། ཉེན་ཁ། རིན་ཐང་གི་བརྟག་དཔྱད། གོང་ཚད་ཇི་ལྟར་འགུལ་སྲིད་པའི་དཔེར་བརྗོད་ཀྱི་གནས་སྟངས་གསུམ་བཅས་འགྲེལ་བཤད་བྱེད། ཁུངས་དང་བཅས་ཁྱེད་རང་གི་སྐད་ཡིག་ཐོག་ཏུ།';
 
   @override
   String get onboardTitle3 => 'རྟག་ཏུ་གནས་ཚུལ་ཤེས་པར་བཞུགས།';
@@ -2994,6 +2995,14 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'ཐུགས་རྗེ་ཆེ། ང་ཚོས་ཞིབ་བཤེར་བྱེད་ངེས།';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI ཡིས་བཟོས་པའི་ཁྱེད་ཀྱི་མ་འཇོག་ཚོགས་སྡེབ་ཀྱི་གྲུབ་ཆའི་སྐོར་གྱི་སྤྱིར་བཏང་གི་ཆ་འཕྲིན། འདིས་ཁྱེད་ཀྱི་དམིགས་ཡུལ་དང་དཔལ་འབྱོར་གནས་སྟངས། ཁྲལ་འབབ་ཀྱི་གནས་སྟངས་བཅས་ལ་བསམ་ཞིབ་མི་བྱེད་ལ། སྒེར་གྱི་འོས་སྦྱོར་དང་མ་འཇོག་གི་བསམ་འཆར་ཡང་མིན།';
+
+  @override
+  String get briefNotificationTitle =>
+      'AI ཡི་བསྡུས་དོན · དེ་རིང་ཁྱེད་ཀྱི་ཚོང་ཤེར།';
 
   @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';

@@ -1441,7 +1441,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'ဈေးနှုန်း ထိုအဆင့်သို့ ရောက်သည့်အခါ သတိပေးချက် ရယူရန် အဆင့်တစ်ခုကို တို့ပါ။';
+      'ဈေးနှုန်း ထိုအဆင့်သို့ ရောက်သည့်အခါ သတိပေးချက် ရယူရန် AI ခန့်မှန်းထားသော အဆင့်တစ်ခုကို တို့ပါ။';
 
   @override
   String get shareAnalysisTitle => 'သုံးသပ်ချက်ကို မျှဝေရန်';
@@ -1457,7 +1457,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'AI သုံးသပ်ချက် · ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ';
+      'AI သုံးသပ်ချက် · ဥပမာ ဖြစ်နိုင်ခြေများသာ၊ ခန့်မှန်းချက် မဟုတ် · ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ';
 
   @override
   String get referralTitle => 'သူငယ်ချင်းများကို ဖိတ်ခေါ်ရန်';
@@ -1531,7 +1531,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI သုံးသပ်ချက်က ရှယ်ယာကို ဘာက လှုပ်ရှားစေသည်၊ အန္တရာယ်များ၊ တန်ဖိုးဖြတ်ချက်နှင့် ဈေးနှုန်း ဘယ်ဘက်သို့ ဦးတည်နိုင်သည်ကို ဖြစ်နိုင်ခြေ သုံးမျိုးဖြင့် ရှင်းပြပေးပါသည် – ရင်းမြစ်များနှင့်တကွ သင့်ဘာသာစကားဖြင့်။';
+      'AI သုံးသပ်ချက်က ရှယ်ယာကို ဘာက လှုပ်ရှားစေသည်၊ အန္တရာယ်များ၊ တန်ဖိုးဖြတ်ချက်နှင့် ဈေးနှုန်း မည်သို့ လှုပ်ရှားနိုင်သည်ကို ဥပမာ ဖြစ်နိုင်ခြေ သုံးမျိုးဖြင့် ရှင်းပြပေးပါသည် – ရင်းမြစ်များနှင့်တကွ သင့်ဘာသာစကားဖြင့်။';
 
   @override
   String get onboardTitle3 => 'အမြဲ သတင်းမှီနေပါ';
@@ -2997,6 +2997,13 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'ကျေးဇူးတင်ပါသည် — ကျွန်ုပ်တို့ စစ်ဆေးပါမည်။';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'သင့်ပေါ့ဖိုလီယို၏ ဖွဲ့စည်းပုံအကြောင်း AI ထုတ်ပေးထားသော ယေဘုယျ အချက်အလက် ဖြစ်သည်။ ၎င်းသည် သင့်ရည်မှန်းချက်များ၊ ငွေကြေးအခြေအနေ သို့မဟုတ် အခွန်အခြေအနေကို ထည့်သွင်းစဉ်းစားထားခြင်း မရှိဘဲ သင့်အတွက် သီးသန့်အကြံပြုချက် သို့မဟုတ် ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။';
+
+  @override
+  String get briefNotificationTitle => 'AI အကျဉ်းချုပ် · ယနေ့ သင့်ရှယ်ယာများ';
 
   @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';

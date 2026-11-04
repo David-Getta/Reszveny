@@ -1453,7 +1453,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'I-tap ang isa ka lebel para makabaton sang alerto kon maabot ini sang presyo.';
+      'I-tap ang isa ka lebel nga ginbanabana sang AI para makabaton sang alerto kon maabot ini sang presyo.';
 
   @override
   String get shareAnalysisTitle => 'Ipaambit ang analisis';
@@ -1469,7 +1469,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Analisis sang AI · indi laygay sa pag-invest';
+      'Analisis sang AI · halimbawa nga mga senaryo, indi tagna · indi laygay sa pag-invest';
 
   @override
   String get referralTitle => 'Imbitaha ang imo mga abyan';
@@ -1547,7 +1547,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Ginapaathag sang analisis sang AI kon ano ang nagapahulag sa stock, ang mga risgo, ang balor sini kag tatlo ka senaryo kon diin mahimo makadto ang presyo, upod ang mga ginhalinan kag sa imo lenguahe.';
+      'Ginapaathag sang analisis sang AI kon ano ang nagapahulag sa stock, ang mga risgo, ang balor sini kag tatlo ka halimbawa nga senaryo kon paano mahimo maghulag ang presyo, upod ang mga ginhalinan kag sa imo lenguahe.';
 
   @override
   String get onboardTitle3 => 'Pirme updated';
@@ -3024,6 +3024,14 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Salamat — usisaon namon ini.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Pangkabilugan nga impormasyon nga ginhimo sang AI parte sa komposisyon sang imo portfolio. Wala ini nagakonsiderar sang imo mga tulumuron, pinansyal nga kahimtangan ukon kahimtangan sa buhis, kag indi ini personal nga rekomendasyon ukon laygay sa pag-invest.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Sumaryo sang AI · Subong upod ang imo mga stock';
 
   @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';

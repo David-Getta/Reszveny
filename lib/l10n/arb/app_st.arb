@@ -391,12 +391,12 @@
   "searchAnalyses": "Batla ditlhahlobong tsa hao",
   "deleteAnalysis": "Hlakola",
   "analysisDeleted": "Tlhahlobo ya {symbol} e hlakotswe",
-  "keyLevelAlertHint": "Tobetsa boemo ho fumana tsebiso ha theko e fihla ho bona.",
+  "keyLevelAlertHint": "Tobetsa boemo bo hakantsweng ke AI ho fumana tsebiso ha theko e fihla ho bona.",
   "shareAnalysisTitle": "Arolelana tlhahlobo",
   "shareAsImage": "Arolelana jwalo ka setshwantsho",
   "shareAsText": "Arolelana jwalo ka mongolo",
   "shareCardFooter": "E entswe ka WhatStock",
-  "shareCardDisclaimer": "Tlhahlobo ya AI · hase keletso ya ho tsetela",
+  "shareCardDisclaimer": "Tlhahlobo ya AI · maemo a mohlala, eseng dikgakanyo · hase keletso ya ho tsetela",
   "referralTitle": "Mema metswalle",
   "referralBody": "Arolelana khoutu ya hao. Motswalle wa hao o fumana {count, plural, =1{tlhahlobo e le nngwe e eketsehileng} other{ditlhahlobo tse eketsehileng tse {count}}} hang-hang, mme le wena o fumana tse tshwanang kamora tlhahlobo ya hae ya pele.",
   "referralYourCode": "Khoutu ya hao",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Nka setshwantsho sa shere",
   "onboardBody1": "Sekirini sa app ya borokara, koranta kapa logo ya khampani di a lekana: WhatStock e tseba shere mme e o bontsha theko ya yona, kerafo le dipalo tsa bohlokwa.",
   "onboardTitle2": "E utlwisise ka metsotso e mmalwa",
-  "onboardBody2": "Tlhahlobo ya AI e hlalosa se tsamaisang shere, dikotsi, boleng ba yona le maemo a mararo a hore na theko e ka ya kae, ka mehlodi le ka puo ya hao.",
+  "onboardBody2": "Tlhahlobo ya AI e hlalosa se tsamaisang shere, dikotsi, boleng ba yona le maemo a mararo a mohlala a hore na theko e ka tsamaya jwang, ka mehlodi le ka puo ya hao.",
   "onboardTitle3": "Dula o tseba tsohle",
   "onboardBody3": "Tseo o di ratang, potefolio ya hao le ditsebiso tsa theko di o tsebisa se etsahalang. Ditlhahlobo tsa hao di dula sesebedisweng sa hao, di loketse ho bulwa hape.",
   "onboardNext": "E latelang",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Ho fosahetse eng? (ha ho qobellwe)",
   "aiReportPrivacy": "Re fumana mongolo wa karabo ena le ntlha ya hao — ntle le akhaonto ya hao — e le hore re e hlahlobe.",
   "aiReportSend": "Romela tlaleho",
-  "aiReportThanks": "Re a leboha — re tla e hlahloba."
+  "aiReportThanks": "Re a leboha — re tla e hlahloba.",
+  "aiPortfolioDisclaimer": "Tlhahisoleseding e akaretsang e entsweng ke AI mabapi le sebopeho sa potefolio ya hao. Ha e nahanele dipheo tsa hao, ditjhelete tsa hao kapa boemo ba hao ba lekgetho, mme hase kgothaletso ya hao ka sebele kapa keletso ya ho tsetela.",
+  "briefNotificationTitle": "Kakaretso ya AI · Kajeno le diabo tsa hao"
 }

@@ -1432,7 +1432,7 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Dĩig zĩig a ye n paam gũusg koosgã sã n ta be.';
+      'Dĩig zĩig a ye AI sẽn mak-a n paam gũusg koosgã sã n ta be.';
 
   @override
   String get shareAnalysisTitle => 'Pʋɩ vɛɛsgã';
@@ -1447,7 +1447,8 @@ class AppLocalizationsMos extends AppLocalizations {
   String get shareCardFooter => 'A maana ne WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'AI vɛɛsgo · pa sagls ligd kẽesg wɛɛngẽ ye';
+  String get shareCardDisclaimer =>
+      'AI vɛɛsgo · sore sẽn yaa makre bala, pa beoog bãngre ye · pa sagls ligd kẽesg wɛɛngẽ ye';
 
   @override
   String get referralTitle => 'Bool f zo-rãmba';
@@ -1524,7 +1525,7 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI vɛɛsgã wilgda bũmb ning sẽn tikd aksiõ wã, a yel-beeda, a yõodo, la sor a tãab a koosgã sẽn tõe n tʋg n kẽnge – ne a tũudsã la y kʋdemd pʋgẽ.';
+      'AI vɛɛsgã wilgda bũmb ning sẽn tikd aksiõ wã, a yel-beeda, a yõodo, la sor a tãab sẽn yaa makre, a koosgã sẽn tõe n lebg to-to – ne a tũudsã la y kʋdemd pʋgẽ.';
 
   @override
   String get onboardTitle3 => 'Ra n bãng kibay wakat fãa';
@@ -2989,6 +2990,13 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Barka — d na n ges-a.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'AI n maan kibay sẽn yaa fãa-fãa, f portfey wã sẽn naage to-to wã yelle. A pa ges f raab-rãmbã, f ligdã la f lampo yellã ye, la a pa sagls sẽn yaa f mengã yĩnga, a pa sagls ligd kẽesg wɛɛngẽ me ye.';
+
+  @override
+  String get briefNotificationTitle => 'AI koe-bõonga · Rũndã ne f aksɩyõnã';
 
   @override
   String get portfolioGoalSet => 'Ning raabo';

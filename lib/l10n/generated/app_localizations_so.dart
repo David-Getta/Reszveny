@@ -1449,7 +1449,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Taabo heer si aad u hesho digniin marka qiimuhu gaaro.';
+      'Taabo heer uu AI qiyaasay si aad u hesho digniin marka qiimuhu gaaro.';
 
   @override
   String get shareAnalysisTitle => 'La wadaag falanqaynta';
@@ -1464,7 +1464,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get shareCardFooter => 'Waxaa lagu sameeyay WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Falanqaynta AI · ma aha talo maalgashi';
+  String get shareCardDisclaimer =>
+      'Falanqaynta AI · xaalado tusaale ah, ma aha saadaal · ma aha talo maalgashi';
 
   @override
   String get referralTitle => 'Casuun saaxiibbada';
@@ -1542,7 +1543,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Falanqaynta AI waxay sharraxdaa waxa dhaqaajiya saamiga, khataraha, qiimayntiisa iyo saddex xaaladood oo ku saabsan halka uu qiimuhu u socon karo, iyadoo leh ilo isla markaana ku qoran luqaddaada.';
+      'Falanqaynta AI waxay sharraxdaa waxa dhaqaajiya saamiga, khataraha, qiimayntiisa iyo saddex xaaladood oo tusaale ah oo ku saabsan sida qiimuhu u dhaqaaqi karo, iyadoo leh ilo isla markaana ku qoran luqaddaada.';
 
   @override
   String get onboardTitle3 => 'La soco wax walba';
@@ -3016,6 +3017,14 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Mahadsanid — dib ayaan u eegi doonnaa.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Macluumaad guud oo uu AI sameeyay oo ku saabsan qaab-dhismeedka portfoliyadaada. Ma tixgeliso yoolalkaaga, xaaladdaada dhaqaale ama xaaladdaada canshuurta, mana aha talo kuu gaar ah ama talo maalgashi.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Soo koobid AI · Maanta iyo saamiyadaada';
 
   @override
   String get portfolioGoalSet => 'Deji yool';

@@ -80,6 +80,7 @@ Map<String, dynamic>? cleanShare(Map<String, dynamic> j) {
             'label': _str(s['label'], 40),
             'probability': (s['probability'] as num).clamp(0, 100).round(),
             'range': _str(s['range'], 60),
+            'horizon': _str(s['horizon'], 40),
             'likely': s['likely'] == true,
           },
     ],
@@ -129,6 +130,23 @@ String _scenarioHtml({
     '${range == '' ? '' : '<div class="small muted">${_esc(range)}</div>'}'
     '</div>';
 
+/// A megosztott oldal rögzített (a szerver által adott) jelölése és figyelmeztetése: a
+/// kliens feliratai lehetnek üresek vagy hamisak, ez mindig ott áll (MAR, AI-jelölés).
+const shareNotice = {
+  'hu': (
+    by: 'Egy WhatStock-felhasználó osztotta meg.',
+    disclaimer:
+        'A WhatStock AI-ja készítette automatikusan, nyilvános adatokból, emberi ellenőrzés nélkül. A forgatókönyvek '
+        'feltételezéseken alapuló, szemléltető becslések – nem előrejelzések, nem célárak és nem befektetési tanácsok.',
+  ),
+  'en': (
+    by: 'Shared by a WhatStock user.',
+    disclaimer:
+        "Generated automatically by WhatStock's AI from public data, without human review. The scenarios are "
+        'illustrative estimates under stated assumptions, not forecasts, price targets or investment advice.',
+  ),
+};
+
 /// A megosztott elemzés oldala.
 String sharePage(SharedReport s, {required String publicUrl}) {
   final d = s.data;
@@ -164,16 +182,25 @@ String sharePage(SharedReport s, {required String publicUrl}) {
         label: '${sc['label']}',
         likely: sc['likely'] == true ? '${labels['likely'] ?? ''}' : '',
         probability: sc['probability'],
-        range: '${sc['range'] ?? ''}',
+        range: ['${sc['range'] ?? ''}', '${sc['horizon'] ?? ''}'].where((p) => p.isNotEmpty).join(' · '),
       ),
     );
   }
+  final site = '${d['lang']}'.toLowerCase().startsWith('hu') ? 'hu' : 'en';
+  final notice = shareNotice[site]!;
   b
     ..write('<p class="small muted" style="margin-top:18px">${_esc(labels['generated'])}</p>')
-    ..write('<p class="small muted">${_esc(labels['disclaimer'])}</p></div>')
+    // A megosztó nyelvén írt figyelmeztetés csak kiegészítés (magyar és angol oldalon a rögzített áll).
+    ..write(
+      site == '${d['lang']}'.toLowerCase().split(RegExp('[_-]')).first || labels['disclaimer'] == ''
+          ? ''
+          : '<p class="small muted">${_esc(labels['disclaimer'])}</p>',
+    )
+    ..write('<p class="small muted">${_esc(notice.disclaimer)}</p>')
+    ..write('<p class="small muted">${_esc(notice.by)}</p></div>')
     ..write('<div class="cta"><p>${_esc(labels['tagline'])}</p>')
     ..write('<a class="btn" href="/">${_esc(labels['cta'] == '' ? 'WhatStock' : labels['cta'])}</a></div>')
-    ..write('</main></body></html>');
+    ..write(_footer(site));
   return b.toString();
 }
 
@@ -216,7 +243,7 @@ const _site = {
     'f1t': 'Fotózz le egy részvényt',
     'f1': 'Elég egy brókerapp képernyője, egy újságcikk vagy egy céglogó – vagy csak egy leírás, mint „tech 100 ETF”: a WhatStock felismeri a részvényt, és megmutatja az árfolyamot, a grafikont és a fontos számokat.',
     'f2t': 'Percek alatt átlátod',
-    'f2': 'Az AI-elemzés elmagyarázza, mi mozgatja a részvényt, mik a kockázatok, mennyit ér, és három forgatókönyvet ad arra, merre mehet az ár – forrásokkal, a te nyelveden.',
+    'f2': 'Az AI-elemzés elmagyarázza, mi mozgatja a részvényt, mik a kockázatok, hogyan értékelik, és három szemléltető forgatókönyvet ad arra, hogyan mozoghat az ár – forrásokkal, a te nyelveden.',
     'f3t': 'Kérdezz bármit',
     'f3': 'Az elemzés után kérdezhetsz is: mit jelent egy kockázat, mi változtatná meg a kilátásokat, hogyan jött ki egy szám. Egy hírről, a legutóbbi gyorsjelentésről vagy egy ETF-ről külön AI-magyarázatot kérhetsz, forrásokkal.',
     'f4t': 'A portfóliód egy helyen',
@@ -241,7 +268,7 @@ const _site = {
     'f1t': 'Photograph a stock',
     'f1': 'A brokerage screen, a newspaper or a company logo is enough – or just a description like “tech 100 ETF”: WhatStock recognises the stock and shows its price, chart and key figures.',
     'f2t': 'Understand it in minutes',
-    'f2': 'The AI analysis explains what moves the stock, the risks, the valuation and three scenarios for where the price could go, with sources and in your language.',
+    'f2': 'The AI analysis explains what moves the stock, the risks, the valuation and three illustrative scenarios for how the price could move, with sources and in your language.',
     'f3t': 'Ask anything',
     'f3': 'After the analysis you can ask follow-up questions: what a risk means, what would change the outlook, how a number was worked out. A news item, the latest results or an ETF get their own AI explanation, with sources.',
     'f4t': 'Your portfolio in one place',
@@ -477,7 +504,7 @@ typedef StockFacts = ({
 const _stocks = {
   'hu': {
     'title': '{name} ({symbol}) részvény: árfolyam és AI-elemzés – WhatStock',
-    'desc': 'A(z) {name} ({symbol}) árfolyama, piaci értéke és alapadatai. Fotózd le vagy keresd meg a WhatStockban, és az AI elmagyarázza, mi mozgatja, mik a kockázatok és merre mehet az ár.',
+    'desc': 'A(z) {name} ({symbol}) árfolyama, piaci értéke és alapadatai. Fotózd le vagy keresd meg a WhatStockban, és az AI elmagyarázza, mi mozgatja, mik a kockázatok és milyen forgatókönyvek képzelhetők el.',
     'price': 'Árfolyam',
     'exchange': 'Tőzsde',
     'industry': 'Iparág',
@@ -493,7 +520,7 @@ const _stocks = {
     'range52': '52 hetes sáv',
     'whatMetrics': 'Mit jelentenek ezek a mutatók?',
     'ctaTitle': 'AI-elemzés a(z) {symbol} részvényről',
-    'cta': 'A WhatStock percek alatt elmagyarázza, mi mozgatja a részvényt, mik a kockázatok, mennyit ér, és három forgatókönyvet ad az árfolyamra – a te nyelveden. Kérdezhetsz is utána.',
+    'cta': 'A WhatStock percek alatt elmagyarázza, mi mozgatja a részvényt, mik a kockázatok, hogyan értékelik, és három szemléltető forgatókönyvet ad az árfolyamra – a te nyelveden. Kérdezhetsz is utána.',
     'unavailable': 'Az árfolyam most nem érhető el.',
     'delayed': 'Az adatok késleltetettek lehetnek, tájékoztató jellegűek.',
     'others': 'További népszerű részvények',
@@ -503,7 +530,7 @@ const _stocks = {
   },
   'en': {
     'title': '{name} ({symbol}) stock: price and AI analysis – WhatStock',
-    'desc': '{name} ({symbol}) share price, market cap and key facts. Photograph or search it in WhatStock and the AI explains what moves it, the risks and where the price could go.',
+    'desc': '{name} ({symbol}) share price, market cap and key facts. Photograph or search it in WhatStock and the AI explains what moves it, the risks and which scenarios are plausible.',
     'price': 'Price',
     'exchange': 'Exchange',
     'industry': 'Industry',
@@ -519,7 +546,7 @@ const _stocks = {
     'range52': '52-week range',
     'whatMetrics': 'What do these figures mean?',
     'ctaTitle': 'AI analysis of {symbol}',
-    'cta': 'WhatStock explains in minutes what moves the stock, the risks, the valuation and three scenarios for the price, in your language. You can ask follow-up questions too.',
+    'cta': 'WhatStock explains in minutes what moves the stock, the risks, the valuation and three illustrative scenarios for the price, in your language. You can ask follow-up questions too.',
     'unavailable': 'The price is not available right now.',
     'delayed': 'Data may be delayed and is for information only.',
     'others': 'More popular stocks',

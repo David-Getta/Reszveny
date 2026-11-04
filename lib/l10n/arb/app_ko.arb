@@ -391,12 +391,12 @@
   "searchAnalyses": "내 분석 검색",
   "deleteAnalysis": "삭제",
   "analysisDeleted": "{symbol} 분석을 삭제했습니다",
-  "keyLevelAlertHint": "가격대를 탭하면 주가가 그 가격에 도달했을 때 알림을 받을 수 있습니다.",
+  "keyLevelAlertHint": "AI가 추정한 가격대를 탭하면 주가가 그 가격에 도달했을 때 알림을 받을 수 있습니다.",
   "shareAnalysisTitle": "분석 공유",
   "shareAsImage": "이미지로 공유",
   "shareAsText": "텍스트로 공유",
   "shareCardFooter": "WhatStock으로 제작",
-  "shareCardDisclaimer": "AI 분석 · 투자 조언 아님",
+  "shareCardDisclaimer": "AI 분석 · 예시 시나리오이며 예측 아님 · 투자 조언 아님",
   "referralTitle": "친구 초대",
   "referralBody": "코드를 공유하세요. 친구는 바로 {count, plural, =1{추가 분석 1회} other{추가 분석 {count}회}}를 받고, 친구가 첫 분석을 마치면 회원님도 같은 만큼 받습니다.",
   "referralYourCode": "내 코드",
@@ -412,7 +412,7 @@
   "onboardTitle1": "주식을 촬영하세요",
   "onboardBody1": "증권 앱 화면, 신문, 회사 로고만 있으면 충분합니다. WhatStock이 종목을 인식해 주가, 차트, 핵심 지표를 보여 줍니다.",
   "onboardTitle2": "몇 분 만에 파악하세요",
-  "onboardBody2": "AI 분석이 주가를 움직이는 요인, 리스크, 밸류에이션, 그리고 주가 향방에 대한 세 가지 시나리오를 출처와 함께 사용자의 언어로 설명합니다.",
+  "onboardBody2": "AI 분석이 주가를 움직이는 요인, 리스크, 밸류에이션, 그리고 주가가 어떻게 움직일 수 있는지 보여 주는 세 가지 예시 시나리오를 출처와 함께 사용자의 언어로 설명합니다.",
   "onboardTitle3": "놓치지 마세요",
   "onboardBody3": "즐겨찾기, 포트폴리오, 가격 알림으로 최신 소식을 받아 보세요. 분석 결과는 기기에 저장되어 언제든 다시 열어 볼 수 있습니다.",
   "onboardNext": "다음",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "무엇이 문제인가요? (선택)",
   "aiReportPrivacy": "검토를 위해 이 답변의 텍스트와 메모를 받습니다. 계정 정보는 포함되지 않습니다.",
   "aiReportSend": "신고 보내기",
-  "aiReportThanks": "감사합니다. 검토하겠습니다."
+  "aiReportThanks": "감사합니다. 검토하겠습니다.",
+  "aiPortfolioDisclaimer": "AI가 생성한 포트폴리오 구성에 관한 일반 정보입니다. 사용자의 목표, 재무 상황, 세금 상황을 고려하지 않으며 개인 맞춤 추천이나 투자 조언이 아닙니다.",
+  "briefNotificationTitle": "AI 요약 · 오늘의 내 종목"
 }

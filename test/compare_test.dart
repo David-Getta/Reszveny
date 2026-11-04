@@ -122,6 +122,8 @@ void main() {
     expect(find.text('Microsoft Corporation'), findsOneWidget);
     expect(find.text('P/E (trailing)'), findsOneWidget);
     expect(find.text('No analysis yet'), findsNWidgets(2));
+    // Elemzés nélkül nincs AI-figyelmeztetés sem (csak az AI-sor mellett áll).
+    expect(find.byKey(const ValueKey('compare-ai-disclaimer')), findsNothing);
     // Gyorsjelentések: az utolsó negyedév meglepetése és a következő jelentés napja.
     expect(find.text('Last quarter EPS vs. expected'), findsOneWidget);
     expect(find.text('RSI (14 days)'), findsOneWidget);

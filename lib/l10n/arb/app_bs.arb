@@ -391,12 +391,12 @@
   "searchAnalyses": "Pretraži svoje analize",
   "deleteAnalysis": "Obriši",
   "analysisDeleted": "Analiza za {symbol} je obrisana",
-  "keyLevelAlertHint": "Dodirnite nivo da dobijete obavještenje kada ga cijena dostigne.",
+  "keyLevelAlertHint": "Dodirnite nivo iz AI procjene da dobijete obavještenje kada ga cijena dostigne.",
   "shareAnalysisTitle": "Podijeli analizu",
   "shareAsImage": "Podijeli kao sliku",
   "shareAsText": "Podijeli kao tekst",
   "shareCardFooter": "Napravljeno uz WhatStock",
-  "shareCardDisclaimer": "AI analiza · nije investicijski savjet",
+  "shareCardDisclaimer": "AI analiza · ilustrativni scenariji, ne prognoze · nije investicijski savjet",
   "referralTitle": "Pozovite prijatelje",
   "referralBody": "Podijelite svoj kod. Vaš prijatelj odmah dobija {count, plural, one{{count} dodatnu analizu} few{{count} dodatne analize} other{{count} dodatnih analiza}}, a vi isto toliko nakon njegove prve analize.",
   "referralYourCode": "Vaš kod",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Fotografišite dionicu",
   "onboardBody1": "Dovoljan je ekran brokerske aplikacije, novine ili logo kompanije: WhatStock prepoznaje dionicu i prikazuje njenu cijenu, grafikon i ključne pokazatelje.",
   "onboardTitle2": "Shvatite je za nekoliko minuta",
-  "onboardBody2": "AI analiza objašnjava šta pokreće dionicu, koji su rizici i kakvo je vrednovanje, uz tri scenarija o tome kuda bi cijena mogla ići – s izvorima i na vašem jeziku.",
+  "onboardBody2": "AI analiza objašnjava šta pokreće dionicu, koji su rizici i kakvo je vrednovanje, uz tri ilustrativna scenarija o tome kako bi se cijena mogla kretati – s izvorima i na vašem jeziku.",
   "onboardTitle3": "Budite uvijek u toku",
   "onboardBody3": "Favoriti, vaš portfolio i obavještenja o cijeni drže vas u toku. Vaše analize ostaju na vašem uređaju, spremne da ih ponovo otvorite.",
   "onboardNext": "Dalje",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Šta nije u redu? (neobavezno)",
   "aiReportPrivacy": "Primamo tekst ovog odgovora i vašu bilješku – bez vašeg računa – kako bismo ga pregledali.",
   "aiReportSend": "Pošalji prijavu",
-  "aiReportThanks": "Hvala – pregledat ćemo ga."
+  "aiReportThanks": "Hvala – pregledat ćemo ga.",
+  "aiPortfolioDisclaimer": "Opće informacije o sastavu vašeg portfolija koje je generisala umjetna inteligencija. Ne uzimaju u obzir vaše ciljeve, finansije ni poreznu situaciju i nisu lična preporuka niti investicijski savjet.",
+  "briefNotificationTitle": "AI sažetak · Danas s vašim dionicama"
 }

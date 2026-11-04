@@ -164,6 +164,7 @@ class _AnalysisCardState extends State<AnalysisCard> {
                                   companyName: widget.details.profile?.name ?? '',
                                   generatedLine: l10n.aiGeneratedAt(fmt.dateTime(report.generatedAt)),
                                   disclaimer: l10n.aiDisclaimer,
+                                  scenarioNote: l10n.outlookChartNote,
                                 ),
                               ),
                       ),

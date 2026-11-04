@@ -391,12 +391,12 @@
   "searchAnalyses": "Chọọ na nyocha gị",
   "deleteAnalysis": "Hichapụ",
   "analysisDeleted": "E hichapụla nyocha {symbol}",
-  "keyLevelAlertHint": "Pịa otu ogo ka ị nweta ọkwa mgbe ọnụahịa ruru ya.",
+  "keyLevelAlertHint": "Pịa otu ogo AI mere atụmatụ ya ka ị nweta ọkwa mgbe ọnụahịa ruru ya.",
   "shareAnalysisTitle": "Kesaa nyocha",
   "shareAsImage": "Kesaa dị ka foto",
   "shareAsText": "Kesaa dị ka ederede",
   "shareCardFooter": "E ji WhatStock mee ya",
-  "shareCardDisclaimer": "Nyocha AI · ọ bụghị ndụmọdụ itinye ego",
+  "shareCardDisclaimer": "Nyocha AI · ọnọdụ ihe atụ, ọ bụghị amụma · ọ bụghị ndụmọdụ itinye ego",
   "referralTitle": "Kpọọ ndị enyi",
   "referralBody": "Kesaa koodu gị. Enyi gị ga-enweta {count, plural, =1{nyocha mgbakwunye 1} other{nyocha mgbakwunye {count}}} ozugbo, ị ga-enwetakwa otu ahụ mgbe o mechara nyocha mbụ ya.",
   "referralYourCode": "Koodu gị",
@@ -412,7 +412,7 @@
   "onboardTitle1": "See foto nke stock",
   "onboardBody1": "Ihuenyo ngwa broker, akwụkwọ akụkọ ma ọ bụ akara ụlọ ọrụ zuru ezu: WhatStock ga-amata stock ahụ ma gosi gị ọnụahịa ya, eserese ya na ọnụọgụgụ ndị dị mkpa.",
   "onboardTitle2": "Ghọta ya n'ime nkeji ole na ole",
-  "onboardBody2": "Nyocha AI na-akọwa ihe na-akpali stock ahụ, ihe egwu dị na ya, uru ya na ọnọdụ atọ nke ebe ọnụahịa ya nwere ike ịga, ya na isi iyi ozi na n'asụsụ gị.",
+  "onboardBody2": "Nyocha AI na-akọwa ihe na-akpali stock ahụ, ihe egwu dị na ya, uru ya na ọnọdụ atọ dị ka ihe atụ maka otú ọnụahịa ya nwere ike isi gaa, ya na isi iyi ozi na n'asụsụ gị.",
   "onboardTitle3": "Nọrọ na-amata ihe niile",
   "onboardBody3": "Ọkacha mmasị, portfolio gị na ọkwa ọnụahịa na-eme ka ị mara ihe na-eme. Nyocha gị na-anọ na ngwaọrụ gị, dị njikere ka i meghee ha ọzọ.",
   "onboardNext": "Na-esote",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Gịnị dị njọ? (nhọrọ)",
   "aiReportPrivacy": "Anyị na-anata ederede azịza a na ndetu gị — na-enweghị akaụntụ gị — ka anyị nwee ike nyochaa ya.",
   "aiReportSend": "Ziga akụkọ",
-  "aiReportThanks": "Daalụ — anyị ga-enyocha ya."
+  "aiReportThanks": "Daalụ — anyị ga-enyocha ya.",
+  "aiPortfolioDisclaimer": "Ozi izugbe AI mepụtara gbasara otú portfolio gị si dị. Ọ naghị atụle ebumnuche gị, ọnọdụ ego gị ma ọ bụ ọnọdụ ụtụ isi gị, ọ bụkwaghị ndụmọdụ pụrụ iche nye gị ma ọ bụ ndụmọdụ itinye ego.",
+  "briefNotificationTitle": "Nchịkọta AI · Taa na ngwa ahịa gị"
 }

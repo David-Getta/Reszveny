@@ -1449,7 +1449,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'I-tap ang isang antas para makatanggap ng alerto kapag naabot ito ng presyo.';
+      'I-tap ang isang antas na tinantya ng AI para makatanggap ng alerto kapag naabot ito ng presyo.';
 
   @override
   String get shareAnalysisTitle => 'Ibahagi ang pagsusuri';
@@ -1465,7 +1465,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get shareCardDisclaimer =>
-      'Pagsusuri ng AI · hindi payo sa pamumuhunan';
+      'Pagsusuri ng AI · mga halimbawang senaryo, hindi hula · hindi payo sa pamumuhunan';
 
   @override
   String get referralTitle => 'Mag-imbita ng mga kaibigan';
@@ -1543,7 +1543,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Ipinapaliwanag ng pagsusuri ng AI kung ano ang nagpapagalaw sa stock, ang mga panganib, ang valuation at tatlong senaryo kung saan maaaring pumunta ang presyo – may mga sanggunian at sa iyong wika.';
+      'Ipinapaliwanag ng pagsusuri ng AI kung ano ang nagpapagalaw sa stock, ang mga panganib, ang valuation at tatlong halimbawang senaryo kung paano maaaring gumalaw ang presyo – may mga sanggunian at sa iyong wika.';
 
   @override
   String get onboardTitle3 => 'Laging manatiling updated';
@@ -3015,6 +3015,14 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Salamat — susuriin namin ito.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Pangkalahatang impormasyong ginawa ng AI tungkol sa komposisyon ng iyong portfolio. Hindi nito isinasaalang-alang ang iyong mga layunin, pananalapi o sitwasyon sa buwis, at hindi ito personal na rekomendasyon o payo sa pamumuhunan.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Buod ng AI · Ngayon kasama ang iyong mga stock';
 
   @override
   String get portfolioGoalSet => 'Magtakda ng layunin';

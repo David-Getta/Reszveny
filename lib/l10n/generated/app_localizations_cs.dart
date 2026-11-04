@@ -1475,7 +1475,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Klepněte na úroveň a dostanete upozornění, až jí cena dosáhne.';
+      'Klepněte na úroveň odhadnutou AI a dostanete upozornění, až jí cena dosáhne.';
 
   @override
   String get shareAnalysisTitle => 'Sdílet analýzu';
@@ -1490,7 +1490,8 @@ class AppLocalizationsCs extends AppLocalizations {
   String get shareCardFooter => 'Vytvořeno pomocí WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'AI analýza · není investiční doporučení';
+  String get shareCardDisclaimer =>
+      'AI analýza · ilustrativní scénáře, ne předpovědi · není investiční doporučení';
 
   @override
   String get referralTitle => 'Pozvěte přátele';
@@ -1573,7 +1574,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI analýza vysvětlí, co akcií hýbe, jaká má rizika a ocenění, a nabídne tři scénáře, kam se může cena vydat – se zdroji a ve vašem jazyce.';
+      'AI analýza vysvětlí, co akcií hýbe, jaká má rizika a ocenění, a nabídne tři ilustrativní scénáře, jak se může cena vyvíjet – se zdroji a ve vašem jazyce.';
 
   @override
   String get onboardTitle3 => 'Mějte vše pod kontrolou';
@@ -3069,6 +3070,13 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Děkujeme – podíváme se na to.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Obecné informace o složení vašeho portfolia vygenerované AI. Nezohledňují vaše cíle, finance ani daňovou situaci a nejsou osobním ani investičním doporučením.';
+
+  @override
+  String get briefNotificationTitle => 'AI shrnutí · Dnes s vašimi akciemi';
 
   @override
   String get portfolioGoalSet => 'Nastavit cíl';

@@ -1443,7 +1443,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Hakɛ dɔ digi walasa ka lasɔmini sɔrɔ ni sɔngɔ sera a ma.';
+      'AI ye hakɛ minnu jateminɛ, olu dɔ digi walasa ka lasɔmini sɔrɔ ni sɔngɔ sera a ma.';
 
   @override
   String get shareAnalysisTitle => 'Sɛgɛsɛgɛli jɛnsɛn';
@@ -1458,7 +1458,8 @@ class AppLocalizationsBm extends AppLocalizations {
   String get shareCardFooter => 'WhatStock de ye a dilan';
 
   @override
-  String get shareCardDisclaimer => 'AI sɛgɛsɛgɛli · wari donni ladilikan tɛ';
+  String get shareCardDisclaimer =>
+      'AI sɛgɛsɛgɛli · misali cogoyaw, kiraya tɛ · wari donni ladilikan tɛ';
 
   @override
   String get referralTitle => 'I teriw wele';
@@ -1534,7 +1535,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI sɛgɛsɛgɛli bɛ a ɲɛfɔ min bɛ aksiyɔn lamaga, a faratiw, a sɔngɔ jateminɛ ani cogo saba a sɔngɔ bɛ se ka taa cogo min na – ni a sɔrɔyɔrɔw ye, i ka kan na.';
+      'AI sɛgɛsɛgɛli bɛ a ɲɛfɔ min bɛ aksiyɔn lamaga, a faratiw, a sɔngɔ jateminɛ ani misali cogo saba a sɔngɔ bɛ se ka yɛlɛma cogo min na – ni a sɔrɔyɔrɔw ye, i ka kan na.';
 
   @override
   String get onboardTitle3 => 'To kunnafoni na tuma bɛɛ';
@@ -3001,6 +3002,13 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'I ni ce — an bɛna a lajɛ.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Kunnafoni bɛɛlajɛlenw i ka aksiyɔn kɛsu kɔnɔkow kan, AI ye minnu dilan. U ma i ka laɲiniw, i ka wariko walima i ka nisɔngɔ cogoya jateminɛ, ani u tɛ ladilikan ye min bɛ i yɛrɛ kelen ta ye walima wari donni ladilikan.';
+
+  @override
+  String get briefNotificationTitle => 'AI kuma surun · Bi ni i ka aksiyɔnw';
 
   @override
   String get portfolioGoalSet => 'Laɲini sigi';

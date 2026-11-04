@@ -1444,7 +1444,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Tap one level make you get alert when di price reach am.';
+      'Tap one level wey AI estimate make you get alert when di price reach am.';
 
   @override
   String get shareAnalysisTitle => 'Share analysis';
@@ -1459,7 +1459,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get shareCardFooter => 'Na WhatStock make am';
 
   @override
-  String get shareCardDisclaimer => 'AI analysis · e no be investment advice';
+  String get shareCardDisclaimer =>
+      'AI analysis · na example scenarios, no be forecast · e no be investment advice';
 
   @override
   String get referralTitle => 'Invite your padi dem';
@@ -1536,7 +1537,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'Di AI analysis go explain wetin dey move di stock, di risks, how much e worth and three ways wey di price fit go, with sources and for your own language.';
+      'Di AI analysis go explain wetin dey move di stock, di risks, how much e worth and three example scenarios of how di price fit move, with sources and for your own language.';
 
   @override
   String get onboardTitle3 => 'No miss anything';
@@ -3005,6 +3006,14 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Thank you — we go check am.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Na AI make dis general information about how your portfolio take arrange. E no look your goals, your money matter or your tax situation, and e no be personal recommendation or investment advice.';
+
+  @override
+  String get briefNotificationTitle =>
+      'Na AI summarize am · Today with your stocks';
 
   @override
   String get portfolioGoalSet => 'Put target';

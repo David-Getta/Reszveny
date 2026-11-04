@@ -1445,7 +1445,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get keyLevelAlertHint =>
-      'Докоснете ниво, за да получите известие, когато цената го достигне.';
+      'Докоснете ниво, оценено от AI, за да получите известие, когато цената го достигне.';
 
   @override
   String get shareAnalysisTitle => 'Споделяне на анализа';
@@ -1460,7 +1460,8 @@ class AppLocalizationsBg extends AppLocalizations {
   String get shareCardFooter => 'Създадено с WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'AI анализ · не е инвестиционен съвет';
+  String get shareCardDisclaimer =>
+      'AI анализ · илюстративни сценарии, не прогнози · не е инвестиционен съвет';
 
   @override
   String get referralTitle => 'Поканете приятели';
@@ -1537,7 +1538,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get onboardBody2 =>
-      'AI анализът обяснява какво движи акцията, какви са рисковете и оценката ѝ, и дава три сценария накъде може да поеме цената – с източници и на вашия език.';
+      'AI анализът обяснява какво движи акцията, какви са рисковете и оценката ѝ, и дава три илюстративни сценария как може да се движи цената – с източници и на вашия език.';
 
   @override
   String get onboardTitle3 => 'Бъдете винаги в течение';
@@ -3008,6 +3009,13 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get aiReportThanks => 'Благодарим – ще го прегледаме.';
+
+  @override
+  String get aiPortfolioDisclaimer =>
+      'Генерирана от AI обща информация за състава на вашия портфейл. Тя не отчита вашите цели, финансово състояние или данъчно положение и не представлява лична препоръка или инвестиционен съвет.';
+
+  @override
+  String get briefNotificationTitle => 'AI обобщение · Днес с вашите акции';
 
   @override
   String get portfolioGoalSet => 'Задай цел';

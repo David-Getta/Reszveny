@@ -391,12 +391,12 @@
   "searchAnalyses": "Di le wò numekukuwo me",
   "deleteAnalysis": "Tutui",
   "analysisDeleted": "Wotutu {symbol} ƒe numekuku",
-  "keyLevelAlertHint": "Zi ɖoƒe aɖe be nàxɔ nuxlɔ̃ame ne asi la ɖo afima.",
+  "keyLevelAlertHint": "Zi ɖoƒe aɖe si AI bu be nàxɔ nuxlɔ̃ame ne asi la ɖo afima.",
   "shareAnalysisTitle": "Ma numekuku",
   "shareAsImage": "Ma abe nɔnɔmetata",
   "shareAsText": "Ma abe nuŋɔŋlɔ",
   "shareCardFooter": "Wotsɔ WhatStock wɔe",
-  "shareCardDisclaimer": "AI numekuku · menye aɖaŋuɖoɖo le gadede nu ŋu o",
+  "shareCardDisclaimer": "AI numekuku · kpɔɖeŋu nɔnɔmewo, menye nyagblɔɖiwo o · menye aɖaŋuɖoɖo le gadede nu ŋu o",
   "referralTitle": "Kpe xɔ̃wòwo",
   "referralBody": "Ma wò code. Wò xɔ̃ axɔ {count, plural, =1{numekuku 1 bubu} other{numekuku {count} bubuwo}} enumake, eye wò hã àxɔ nenema ke le eƒe numekuku gbãtɔ megbe.",
   "referralYourCode": "Wò code",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Ɖe akpa aɖe ƒe foto",
   "onboardBody1": "Broker app ƒe sikrin, nyadzɔdzɔgbalẽ alo dɔwɔƒe ƒe dzesi ko sɔ gbɔ: WhatStock dzea si akpa la eye wòfiaa eƒe asi, eƒe tɔtrɔ ƒe nɔnɔmetata kple eƒe xexlẽdzesi veviwo.",
   "onboardTitle2": "Se egɔme le miniti ʋɛ aɖewo me",
-  "onboardBody2": "AI numekuku la ɖea nusi ʋãa akpa la, afɔku siwo le eŋu, eƒe asixɔxɔ kple nɔnɔme etɔ̃ siwo me asi la ate ŋu ayi la me – kple nyatakakaƒewo eye le wò gbe me.",
+  "onboardBody2": "AI numekuku la ɖea nusi ʋãa akpa la, afɔku siwo le eŋu, eƒe asixɔxɔ kple kpɔɖeŋu nɔnɔme etɔ̃ siwo ɖe alesi asi la ate ŋu atrɔ fia – kple nyatakakaƒewo eye le wò gbe me.",
   "onboardTitle3": "Nya nu sia nu ɣesiaɣi",
   "onboardBody3": "Nye lɔlɔ̃tɔwo, nye akpawo kple asi ŋuti nuxlɔ̃amewo naa nènyaa nusi le dzɔdzɔm. Wò numekukuwo nɔa wò mɔ̃ dzi, eye àte ŋu aʋu wo ake ɣesiaɣi.",
   "onboardNext": "Esi kplɔe ɖo",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Nu kae gblẽ? (ne èdi)",
   "aiReportPrivacy": "Míexɔa ŋuɖoɖo sia ƒe nuŋɔŋlɔ kple wò nuŋlɔɖi — wò akɔnta manɔ eme o — be míate ŋu alé ŋku ɖe eŋu.",
   "aiReportSend": "Ɖo nyatakaka la ɖa",
-  "aiReportThanks": "Akpe — míalé ŋku ɖe eŋu."
+  "aiReportThanks": "Akpe — míalé ŋku ɖe eŋu.",
+  "aiPortfolioDisclaimer": "Nyatakaka gbadzaa siwo AI wɔ tso wò akpawo ƒe ɖoɖo ŋu. Mebua wò taɖodzinuwo, wò ganyawo alo wò adzɔxexe ƒe nɔnɔme ŋu o, eye menye aɖaŋuɖoɖo na wò ɖeka ko alo aɖaŋuɖoɖo le gadede nu ŋu o.",
+  "briefNotificationTitle": "AI ƒe nyagbɔgblɔ kpui · Egbe kple wò stockwo"
 }

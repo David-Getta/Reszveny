@@ -391,12 +391,12 @@
   "searchAnalyses": "Pangitaa ang imong mga pagtuki",
   "deleteAnalysis": "Papasa",
   "analysisDeleted": "Napapas ang pagtuki sa {symbol}",
-  "keyLevelAlertHint": "I-tap ang usa ka lebel aron makadawat og alerto kon maabot na kini sa presyo.",
+  "keyLevelAlertHint": "I-tap ang usa ka lebel nga gibanabana sa AI aron makadawat og alerto kon maabot na kini sa presyo.",
   "shareAnalysisTitle": "Ipaambit ang pagtuki",
   "shareAsImage": "Ipaambit isip hulagway",
   "shareAsText": "Ipaambit isip teksto",
   "shareCardFooter": "Gihimo gamit ang WhatStock",
-  "shareCardDisclaimer": "Pagtuki sa AI · dili tambag sa pagpamuhunan",
+  "shareCardDisclaimer": "Pagtuki sa AI · pananglitan nga mga senaryo, dili tagna · dili tambag sa pagpamuhunan",
   "referralTitle": "Dapita ang mga higala",
   "referralBody": "Ipaambit ang imong code. Ang imong higala makadawat dayon og {count, plural, =1{1 ka dugang nga pagtuki} other{{count} ka dugang nga pagtuki}}, ug ikaw usab makadawat og ingon niana human sa iyang unang pagtuki.",
   "referralYourCode": "Imong code",
@@ -412,7 +412,7 @@
   "onboardTitle1": "Kuhai og litrato ang usa ka stock",
   "onboardBody1": "Igo na ang screen sa brokerage app, mantalaan o logo sa kompanya: mailhan sa WhatStock ang stock ug ipakita ang presyo, tsart ug importanteng mga numero niini.",
   "onboardTitle2": "Masabtan sulod sa pipila ka minuto",
-  "onboardBody2": "Ipasabot sa pagtuki sa AI kung unsay nagpalihok sa stock, ang mga risgo, ang valuation ug tulo ka senaryo kung asa mahimong padulong ang presyo – uban sa mga tinubdan ug sa imong pinulongan.",
+  "onboardBody2": "Ipasabot sa pagtuki sa AI kung unsay nagpalihok sa stock, ang mga risgo, ang valuation ug tulo ka pananglitan nga senaryo kung unsaon paglihok sa presyo – uban sa mga tinubdan ug sa imong pinulongan.",
   "onboardTitle3": "Kanunay nga mahibalo",
   "onboardBody3": "Ang mga paborito, imong portfolio ug mga alerto sa presyo magpahibalo kanimo. Ang imong mga pagtuki magpabilin sa imong device, andam nga ablihan pag-usab.",
   "onboardNext": "Sunod",
@@ -886,5 +886,7 @@
   "aiReportNoteHint": "Unsay sayop? (opsyonal)",
   "aiReportPrivacy": "Madawat namo ang teksto niini nga tubag ug ang imong nota — nga wala ang imong account — aron among masusi.",
   "aiReportSend": "Ipadala ang report",
-  "aiReportThanks": "Salamat — among susihon kini."
+  "aiReportThanks": "Salamat — among susihon kini.",
+  "aiPortfolioDisclaimer": "Kinatibuk-ang impormasyon nga gihimo sa AI bahin sa komposisyon sa imong portfolio. Wala kini magkonsiderar sa imong mga tumong, pinansyal nga kahimtang o kahimtang sa buhis, ug dili kini personal nga rekomendasyon o tambag sa pagpamuhunan.",
+  "briefNotificationTitle": "Katingbanan sa AI · Karon uban sa imong mga stock"
 }

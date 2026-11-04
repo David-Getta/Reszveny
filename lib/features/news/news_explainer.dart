@@ -46,7 +46,7 @@ Rules:
 - First say what happened, in your own words, with the key facts you verified. Then explain what it could mean for the company and its stock, and what to watch next.
 - End with one sentence on how reliable the source looks and why.
 - Never invent facts, numbers or dates. If something could not be verified, say so.
-- Do not tell the reader to buy or sell.''';
+- Do not tell the reader to buy, sell or hold anything, give no price targets and do not say where the price will go.''';
 
   static Map<String, dynamic> requestBody(WatchedNews n, {required String language, String model = ''}) => {
     'model': model,
