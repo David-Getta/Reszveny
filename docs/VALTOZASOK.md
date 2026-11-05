@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.318)
+# Változásjegyzék (0.2.130 → 0.2.319)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,20 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Belső rendrakás: kevesebb ismétlés, kisebb fotók
+
+- **0.2.319**: egy (nem elforgatott) fotó, amely már elfér a feltöltési korlátban, újrakódolás nélkül megy fel –
+  csak a személyes metaadatai (helyadat, készülék, megjegyzés) kerülnek ki belőle, a színprofil marad. Gyorsabb
+  és élesebb. Az elforgatott fotó továbbra is újrakódolva, álló helyzetben megy.
+- Az AI-elemzés a pozícióhoz mért pontot külön mezőben adja vissza (a modellnek ezt kérjük), a régebbi
+  utólagos szétválasztás csak tartalék.
+- Egy forrás, amely nem weboldal-cím, egy régebben mentett elemzésben és a napi összefoglalóban sem lesz link.
+- Egy link, amely nem nyílik meg, mindenhol rövid üzenetet ad (eddig a források listájában csendben maradt).
+- A függő vásárlás minden bejegyzése időbélyeget kap mentéskor: a régebbiek is lejárnak 60 nap után.
+- Belső egyszerűsítések: egyetlen alsó lapnyitó (mindig a menüsor fölött), közös „szolgáltatás nem érhető el”
+  vizsgálat, az admin-belépés és az IP-korlátok közös segédekkel, a belépőkód-ellenőrzés kevesebb
+  adatbázis-írással.
 
 ## AI-válaszok: tisztább szöveg, pozíció a megosztáson kívül
 

@@ -1,3 +1,5 @@
+import '../../widgets/app_sheet.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../l10n/generated/app_localizations.dart';
@@ -22,11 +24,8 @@ Future<String?> showLanguagePicker(BuildContext context, {required String? curre
       ),
     );
   }
-  return showModalBottomSheet<String>(
-    useRootNavigator: true,
-    context: context,
-    isScrollControlled: true,
-    showDragHandle: true,
+  return showAppSheet<String>(
+    context,
     builder: (context) => SizedBox(
       height: MediaQuery.sizeOf(context).height * 0.85,
       child: _LanguagePickerBody(currentTag: currentTag),

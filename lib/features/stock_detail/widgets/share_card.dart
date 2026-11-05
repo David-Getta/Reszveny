@@ -1,3 +1,5 @@
+import '../../../widgets/app_sheet.dart';
+
 import 'dart:convert';
 import 'dart:typed_data';
 import 'dart:ui' as ui;
@@ -236,11 +238,8 @@ Future<void> showShareSheet(
   required Fmt fmt,
   required String text,
 }) {
-  return showModalBottomSheet<void>(
-    useRootNavigator: true,
-    context: context,
-    isScrollControlled: true,
-    showDragHandle: true,
+  return showAppSheet<void>(
+    context,
     builder: (context) => _ShareSheet(report: report, companyName: companyName, fmt: fmt, text: text),
   );
 }

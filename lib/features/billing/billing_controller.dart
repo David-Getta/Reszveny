@@ -222,10 +222,11 @@ class BillingController extends ChangeNotifier {
   /// pótolja): egy régen kilépett fiók bizonylata ne maradjon a készüléken korlátlanul.
   static const pendingKept = Duration(days: 60);
 
-  static bool _owns(Map<String, dynamic> item, String email) {
+  /// [key] a [email] lenyomata ([ownerKey]); egyszer számolva, nem bejegyzésenként.
+  static bool _owns(Map<String, dynamic> item, String key, String email) {
     final of = item['owner'] as String? ?? '';
     // A régebbi bejegyzésekben még maga a cím van.
-    return of == ownerKey(email) || of == email;
+    return of == key || of == email;
   }
 
   /// A még ellenőrizetlen bizonylatok újraküldése (indításkor).
@@ -233,11 +234,12 @@ class BillingController extends ChangeNotifier {
     final v = verifier;
     if (v == null) return;
     final me = owner?.call() ?? '';
+    final myKey = ownerKey(me);
     for (final p in await _pending()) {
       // Egy másik fiókban vett csomag megvárja, amíg az a fiók újra belép. A névtelenül
       // vett az épp belépett fiókhoz tartozik (belépéskor a névtelen fiók beleolvad).
       final of = p['owner'] as String? ?? '';
-      if (of.isNotEmpty && !_owns(p, me)) continue;
+      if (of.isNotEmpty && !_owns(p, myKey, me)) continue;
       await _verify(
         v,
         BillingEvent(
@@ -266,7 +268,12 @@ class BillingController extends ChangeNotifier {
     }
   }
 
+  /// Íráskor minden bejegyzés kap időbélyeget (a régebbiek is), hogy [pendingKept] után lejárjon.
   static Future<void> _savePending(List<Map<String, dynamic>> items) async {
+    final now = DateTime.now().toUtc().toIso8601String();
+    for (final m in items) {
+      m['at'] ??= now;
+    }
     try {
       await (await SharedPreferences.getInstance()).setString(_pendingKey, jsonEncode(items));
     } catch (_) {}
@@ -286,35 +293,25 @@ class BillingController extends ChangeNotifier {
     if (items.any((m) => m['data'] == data)) return;
     await _savePending([
       ...items,
-      {
-        'product_id': e.productId,
-        'platform': e.platform,
-        'data': data,
-        'owner': ownerKey(owner?.call() ?? ''),
-        'at': DateTime.now().toUtc().toIso8601String(),
-      },
+      {'product_id': e.productId, 'platform': e.platform, 'data': data, 'owner': ownerKey(owner?.call() ?? '')},
     ]);
   });
 
-  static Future<void> _forget(BillingEvent e) => _serial(() async {
+  /// A [drop] szerinti függő bizonylatok törlése (sorban a többi módosítással).
+  static Future<void> _dropPending(bool Function(Map<String, dynamic> item) drop) => _serial(() async {
     final items = await _pending();
-    final kept = [
-      for (final m in items)
-        if (m['data'] != e.verificationData) m,
-    ];
+    final kept = items.where((m) => !drop(m)).toList();
     if (kept.length != items.length) await _savePending(kept);
   });
 
+  static Future<void> _forget(BillingEvent e) => _dropPending((m) => m['data'] == e.verificationData);
+
   /// Egy törölt fiók függő bizonylatai (benne a fiók e-mail címe és a bolti bizonylat):
   /// a fiókkal együtt erről a készülékről is lekerülnek.
-  static Future<void> forgetOwner(String email) => _serial(() async {
-    final items = await _pending();
-    final kept = [
-      for (final m in items)
-        if (!_owns(m, email)) m,
-    ];
-    if (kept.length != items.length) await _savePending(kept);
-  });
+  static Future<void> forgetOwner(String email) {
+    final key = ownerKey(email);
+    return _dropPending((m) => _owns(m, key, email));
+  }
 
   /// Belépés után újrapróbálja a megszakadt vásárlást.
   Future<void> retry(StoreProduct p) => buy(p);

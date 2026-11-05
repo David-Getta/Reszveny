@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 import '../../analysis/report_ai.dart';
 import '../../analysis/ai_consent.dart';
-import '../../../core/util/links.dart';
 import '../../../app_services.dart';
 import '../../../core/errors.dart';
 import '../../../features/analysis/analysis_options.dart';
@@ -20,7 +19,7 @@ import '../../../l10n/error_messages.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../l10n/supported_locales.dart';
 import '../../../theme/app_theme.dart';
-import '../../../widgets/source_links.dart' show SourceTag, SourceTitle;
+import '../../../widgets/source_links.dart' show SourceTag, SourceTitle, openWebOrNotify;
 import 'outlook_view.dart';
 import 'ask_sheet.dart';
 import 'report_changes.dart';
@@ -267,12 +266,7 @@ class _AnalysisCardState extends State<AnalysisCard> {
                   _ReportSectionView(
                     // A pozícióhoz mért pont a kilátások végén (külön tárolva: nem kerül megosztásba).
                     section: s.kind == ReportSectionKind.outlook && report.positionNote != null
-                        ? ReportSection(
-                            kind: s.kind,
-                            title: s.title,
-                            paragraphs: s.paragraphs,
-                            bullets: [...s.bullets, report.positionNote!],
-                          )
+                        ? s.withBullets([...s.bullets, report.positionNote!])
                         : s,
                     outlook: report.outlook,
                     fmt: fmt,
@@ -283,14 +277,10 @@ class _AnalysisCardState extends State<AnalysisCard> {
                   const SizedBox(height: 16),
                   Text(l10n.aiSources, style: theme.textTheme.titleSmall),
                   const SizedBox(height: 6),
-                  // Csak webcím (egy régebben mentett elemzésben más is lehet); ha nem nyílik meg, kiírja.
-                  for (final src in report.sources.where((s) => safeWebUri(s.url) != null).take(12))
+                  // Csak webcím (ezt már a beolvasás biztosítja); ha nem nyílik meg, kiírja.
+                  for (final src in report.sources.take(12))
                     InkWell(
-                      onTap: () async {
-                        if (!await openWeb(src.url) && context.mounted) {
-                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l10n.openLinkFailed)));
-                        }
-                      },
+                      onTap: () => openWebOrNotify(context, src.url),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(vertical: 3),
                         child: Row(

@@ -127,7 +127,7 @@ Your task: identify which exchange-listed stock(s) it refers to.
   static RecognitionException httpError(http.Response r) => switch (r.statusCode) {
     402 => RecognitionException(ClaudeStockAnalyst.quotaErrorFor(r.body), cause: r.body),
     429 => RecognitionException(AppErrorCode.rateLimited, cause: r.body),
-    502 || 503 || 504 => RecognitionException(AppErrorCode.aiUnavailable, cause: r.body),
+    final s when isServiceOutage(s) => RecognitionException(AppErrorCode.aiUnavailable, cause: r.body),
     _ => RecognitionException(AppErrorCode.recognitionHttp, detail: '${r.statusCode}', cause: r.body),
   };
 

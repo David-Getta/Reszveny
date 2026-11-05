@@ -1,3 +1,5 @@
+import '../../../widgets/app_sheet.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../analysis/report_ai.dart';
@@ -39,11 +41,8 @@ Future<void> showAskSheet(
   required StockReport report,
   required String companyName,
   String? title,
-}) => showModalBottomSheet<void>(
-  useRootNavigator: true,
-  context: context,
-  isScrollControlled: true,
-  showDragHandle: true,
+}) => showAppSheet<void>(
+  context,
   builder: (_) => FractionallySizedBox(
     heightFactor: 0.88,
     child: _AskSheet(report: report, companyName: companyName, title: title),

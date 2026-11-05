@@ -507,6 +507,10 @@ class _TargetsDialogState extends State<_TargetsDialog> {
     final theme = Theme.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     final sum = _values.values.fold<double>(0, (a, b) => a + b);
+    final invalid = {
+      for (final e in _fields.entries)
+        if (_invalid(e.value)) e.key,
+    };
     return AlertDialog(
       title: Text(l10n.targetsTitle),
       content: SizedBox(
@@ -539,7 +543,7 @@ class _TargetsDialogState extends State<_TargetsDialog> {
                           decoration: InputDecoration(
                             suffixText: '%',
                             isDense: true,
-                            errorText: _invalid(_fields[r.position.symbol]!) ? '0–100' : null,
+                            errorText: invalid.contains(r.position.symbol) ? '0–100' : null,
                           ),
                           onChanged: (_) => setState(() {}),
                         ),
@@ -563,7 +567,7 @@ class _TargetsDialogState extends State<_TargetsDialog> {
         TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
         FilledButton(
           key: const ValueKey('targets-save'),
-          onPressed: _fields.values.any(_invalid)
+          onPressed: invalid.isNotEmpty
               ? null
               : () async {
                   final services = AppServices.of(context);

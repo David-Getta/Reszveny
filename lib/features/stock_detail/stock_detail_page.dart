@@ -15,6 +15,7 @@ import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
+import '../../widgets/source_links.dart' show openWebOrNotify;
 import '../alerts/alerts_view.dart';
 import '../alerts/price_alert.dart';
 import '../portfolio/add_lot_dialog.dart';
@@ -634,7 +635,7 @@ class _DetailsBody extends StatelessWidget {
                         icon: Icon(Icons.auto_awesome_outlined, size: 20, color: AppPalette.of(context).accent),
                         onPressed: () => showNewsExplanation(context, WatchedNews(symbol: d.symbol, item: n)),
                       ),
-                      onTap: () => _open(context, n.url),
+                      onTap: () => openWebOrNotify(context, n.url),
                     ),
                 ],
               ),
@@ -681,14 +682,6 @@ class _DetailsBody extends StatelessWidget {
         itemBuilder: (_, i) => sections[i],
       ),
     );
-  }
-
-  Future<void> _open(BuildContext context, String url) async {
-    final l10n = AppLocalizations.of(context);
-    final ok = await openWeb(url);
-    if (!ok && context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l10n.openLinkFailed)));
-    }
   }
 }
 

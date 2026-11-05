@@ -56,6 +56,10 @@ enum AppErrorCode {
   askLimit,
 }
 
+/// A szerver (vagy egy átjáró) szerint a fölöttes szolgáltató (AI, árfolyam) épp nem érhető el
+/// (502/503/504): átmeneti, nem az app és nem a felhasználó kapcsolatának hibája.
+bool isServiceOutage(int status) => status == 502 || status == 503 || status == 504;
+
 /// Az app saját hibatípusa. A [detail] opcionális, nyelvfüggetlen kiegészítés
 /// (pl. HTTP státuszkód vagy ticker), amit az üzenetbe helyettesítünk.
 class AppException implements Exception {

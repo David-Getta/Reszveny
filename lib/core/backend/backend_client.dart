@@ -413,23 +413,13 @@ class BackendClient {
     var res = await send({'authorization': 'Bearer $token'}).timeout(const Duration(seconds: 30));
     if (res.statusCode == 401) {
       if (_token == token) {
-        final deleted = _errorCode(res) == 'account_deleted';
+        final deleted = errorCode(res.body) == 'account_deleted';
         await resetToken();
         onSessionLost?.call(accountDeleted: deleted);
       }
       res = await send(await authHeaders()).timeout(const Duration(seconds: 30));
     }
     return res;
-  }
-
-  /// A hibaválasz `error` kódja (ha JSON), különben null.
-  static String? _errorCode(http.Response res) {
-    try {
-      final body = jsonDecode(res.body);
-      return body is Map ? body['error'] as String? : null;
-    } catch (_) {
-      return null;
-    }
   }
 
   Future<Map<String, String>> authHeaders() async => {'authorization': 'Bearer ${await ensureToken()}'};

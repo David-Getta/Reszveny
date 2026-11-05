@@ -1,3 +1,5 @@
+import '../../widgets/app_sheet.dart';
+
 import 'dart:typed_data';
 import 'dart:ui' as ui;
 
@@ -214,11 +216,8 @@ String portfolioShareText(PortfolioSnapshot s, AppLocalizations l10n, Fmt fmt, {
 /// A megosztó lap: a kártya előnézete, alatta a megjegyzés (csak százalékok),
 /// képként vagy szövegként osztható meg.
 Future<void> showPortfolioShare(BuildContext context, PortfolioSnapshot snapshot, {String? account}) =>
-    showModalBottomSheet<void>(
-      useRootNavigator: true,
-      context: context,
-      isScrollControlled: true,
-      showDragHandle: true,
+    showAppSheet<void>(
+      context,
       builder: (_) => _PortfolioShareSheet(snapshot: snapshot, account: account),
     );
 

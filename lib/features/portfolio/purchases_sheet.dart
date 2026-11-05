@@ -2,6 +2,8 @@
 /// javítással, törléssel és visszavonással; eladás és osztalék felvétele.
 library;
 
+import '../../widgets/app_sheet.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
@@ -20,11 +22,8 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
   // A legutóbb törölt tranzakció, illetve felaprózás (visszavonható, amíg a lap nyitva van).
   final removed = ValueNotifier<PortfolioLot?>(null);
   final removedSplit = ValueNotifier<SplitRecord?>(null);
-  return showModalBottomSheet<void>(
-    useRootNavigator: true,
-    context: context,
-    showDragHandle: true,
-    isScrollControlled: true,
+  return showAppSheet<void>(
+    context,
     builder: (context) {
       final l10n = AppLocalizations.of(context);
       final services = AppServices.of(context);

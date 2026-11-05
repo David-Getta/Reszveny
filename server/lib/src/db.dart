@@ -428,23 +428,21 @@ class Store {
     final h = hashToken(token);
     final rows = _db.select('SELECT id, last_seen FROM users WHERE token_hash = ?', [h]);
     if (rows.isNotEmpty) {
-      // Naponta legfeljebb egyszer írjuk (nem minden kérésnél).
-      final now = clock().toUtc();
-      final last = DateTime.tryParse(rows.first['last_seen'] as String? ?? '');
-      if (last == null || now.difference(last) > const Duration(days: 1)) {
-        _db.execute('UPDATE users SET last_seen = ? WHERE token_hash = ?', [now.toIso8601String(), h]);
-      }
+      _touchDaily('users', 'last_seen', h, rows.first['last_seen']);
       return rows.first['id'] as String;
     }
     final s = _db.select('SELECT user_id, last_used FROM sessions WHERE token_hash = ?', [h]);
     if (s.isEmpty) return null;
-    // Naponta legfeljebb egyszer írjuk (nem minden kérésnél).
-    final now = clock().toUtc();
-    final last = DateTime.tryParse(s.first['last_used'] as String? ?? '');
-    if (last == null || now.difference(last) > const Duration(days: 1)) {
-      _db.execute('UPDATE sessions SET last_used = ? WHERE token_hash = ?', [now.toIso8601String(), h]);
-    }
+    _touchDaily('sessions', 'last_used', h, s.first['last_used']);
     return s.first['user_id'] as String;
+  }
+
+  /// A token utolsó használatának időpontja: naponta legfeljebb egyszer írjuk (nem minden kérésnél).
+  void _touchDaily(String table, String column, String tokenHash, Object? last) {
+    final now = clock().toUtc();
+    final at = DateTime.tryParse(last is String ? last : '');
+    if (at != null && now.difference(at) <= const Duration(days: 1)) return;
+    _db.execute('UPDATE $table SET $column = ? WHERE token_hash = ?', [now.toIso8601String(), tokenHash]);
   }
 
   /// Megőrzési idők: egy éve nem használt munkamenet, a meghívók napi számlálójának
@@ -481,7 +479,7 @@ class Store {
       [cutoff, limit],
     );
     for (final r in ids) {
-      deleteUser(r['id'] as String, tombstone: false, erase: false);
+      deleteUser(r['id'] as String, abandoned: true);
     }
     if (ids.isNotEmpty) eraseJournal();
     return ids.length;
@@ -564,7 +562,8 @@ class Store {
   /// IP-ről kértek, ahonnan beírják – így egy idegen sok IP-ről sem zárhatja ki a cím gazdáját.
   static const maxDailyLoginFailures = 50;
 
-  /// Új 6 jegyű belépőkód (10 percig érvényes); a korábbiak érvénytelenek lesznek.
+  /// Új 6 jegyű belépőkód (10 percig érvényes); mellette a legutóbbi [activeCodes] − 1 kód
+  /// marad érvényes, a régebbiek lejárnak.
   String createLoginCode(String email, {String? requester}) {
     final e = normalizeEmail(email);
     final code = (_rng.nextInt(900000) + 100000).toString();
@@ -599,6 +598,7 @@ class Store {
       'ORDER BY created_at DESC LIMIT ?',
       [e, now, activeCodes],
     );
+    if (rows.isEmpty) return false;
     // Naponta legfeljebb [maxDailyLoginFailures] hibás próbálkozás címenként (a kódok között
     // is): a 6 jegyű kód így nem találgatható ki ésszerű időn belül.
     final day = clock().subtract(const Duration(days: 1)).toUtc().toIso8601String();
@@ -619,16 +619,20 @@ class Store {
       return true;
     }
     // Egy próba mindegyik szóba jöhető kódra számít (a találgatás így sem gyorsabb).
-    for (final r in candidates) {
-      _db.execute('UPDATE login_codes SET attempts = attempts + 1 WHERE rowid = ?', [r['rowid']]);
-    }
+    final ids = [for (final r in candidates) r['rowid']];
+    _db.execute(
+      'UPDATE login_codes SET attempts = attempts + 1 WHERE rowid IN (${List.filled(ids.length, '?').join(', ')})',
+      ids,
+    );
     return false;
   }
 
   /// A fiók és minden hozzá tartozó adat törlése (GDPR 17. cikk). A vásárlások
   /// felhasználó nélkül maradnak meg (`deleted`), hogy ugyanaz a bolti bizonylat
   /// ne legyen újra beváltható; a számviteli bizonylat a boltnál / a Stripe-nál van.
-  void deleteUser(String userId, {bool tombstone = true, bool erase = true}) {
+  /// [abandoned]: egy elhagyott névtelen fiók kitakarítása – nincs törlés-jelzés a tokenekre,
+  /// és a naplót a hívó üríti egyszer, a teljes kör végén.
+  void deleteUser(String userId, {bool abandoned = false}) {
     final email = emailOf(userId);
     _db.execute('BEGIN');
     try {
@@ -636,7 +640,7 @@ class Store {
       // hogy törlés történt, és a fiók adatait nálunk sem tartja meg. (Az elhagyott névtelen
       // fiók kitakarításánál nem: ott az eszköz adatai maradjanak meg.)
       final now = clock().toUtc().toIso8601String();
-      if (tombstone) {
+      if (!abandoned) {
         _db.execute(
           'INSERT OR IGNORE INTO deleted_sessions (token_hash, deleted_at) SELECT token_hash, ? FROM sessions WHERE user_id = ?',
           [now, userId],
@@ -694,7 +698,7 @@ class Store {
       _db.execute('ROLLBACK');
       rethrow;
     }
-    if (erase) eraseJournal();
+    if (!abandoned) eraseJournal();
   }
 
   /// A WAL-napló kiírása és kiürítése: a törölt sorok korábbi példányai ne maradjanak a

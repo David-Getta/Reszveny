@@ -1,3 +1,4 @@
+import '../../core/util/formatters.dart';
 import '../../core/errors.dart';
 import '../../core/models/analysis_extras.dart';
 import '../../core/models/analyst_consensus.dart';
@@ -164,7 +165,7 @@ class DemoMarketDataProvider extends MarketDataProvider {
       if ((p.low ?? p.close) < (lo.low ?? lo.close)) lo = p;
     }
     // Centre kerekítve, mint egy valódi jegyzés (a riasztás gyorsgombja pontosan ezt írja be).
-    double cents(double x) => (x * 100).roundToDouble() / 100;
+    double cents(double x) => Fmt.roundTo(x, 2);
     return StockMetrics.fromJson({
       ...m.toJson(),
       'week52High': cents(hi.high ?? hi.close),

@@ -115,4 +115,43 @@ void main() {
     // A tiszta PNG változatlanul megy.
     expect((await CaptureService.prepare(png)).bytes, png);
   });
+
+  test('metadata is cut out without re-compressing: location and comments go, the colour profile stays', () {
+    Uint8List seg(int marker, List<int> data) =>
+        Uint8List.fromList([0xFF, marker, (data.length + 2) >> 8, (data.length + 2) & 0xFF, ...data]);
+    // EXIF (little-endian TIFF): tájolás és egy „GPS” szöveg.
+    Uint8List jpeg(int orientation) {
+      final tiff = [
+        0x49, 0x49, 0x2A, 0x00, 0x08, 0x00, 0x00, 0x00, //
+        0x01, 0x00, // 1 bejegyzés
+        0x12, 0x01, 0x03, 0x00, 0x01, 0x00, 0x00, 0x00, orientation, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00,
+        ...'GPS 47.49N 19.04E'.codeUnits,
+      ];
+      return Uint8List.fromList([
+        0xFF, 0xD8, //
+        ...seg(0xE0, 'JFIF\u0000'.codeUnits),
+        ...seg(0xE1, [...'Exif'.codeUnits, 0, 0, ...tiff]),
+        ...seg(0xE2, 'ICC_PROFILE'.codeUnits),
+        ...seg(0xFE, 'shot at home'.codeUnits),
+        0xFF, 0xDA, 0x00, 0x02, 0x11, 0x22, 0x33, 0xFF, 0xD9,
+      ]);
+    }
+
+    final upright = jpeg(1);
+    expect(CaptureService.hasMetadata(upright), isTrue);
+    final clean = CaptureService.stripMetadata(upright)!;
+    final text = String.fromCharCodes(clean);
+    expect(text, isNot(contains('GPS')));
+    expect(text, isNot(contains('shot at home')));
+    expect(text, contains('ICC_PROFILE'));
+    expect(CaptureService.hasMetadata(clean), isFalse);
+    // A kép-adat bájtra ugyanaz.
+    expect(clean.sublist(clean.length - 7), upright.sublist(upright.length - 7));
+    // Elforgatott fotó: újrakódolva megy (a dekódoló forgat), nem egy EXIF-címkére bízva.
+    final rotated = jpeg(6);
+    final exif = rotated.indexOf(0xE1, 2) - 1;
+    expect(CaptureService.exifOrientation(rotated.sublist(exif, exif + 4 + 6 + 26)), 6);
+    expect(CaptureService.stripMetadata(rotated), isNull);
+  });
 }

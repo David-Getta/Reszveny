@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/util/ai_text.dart';
+import '../../core/util/web_uri.dart';
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import '../../core/models/analysis_extras.dart';
@@ -355,7 +356,7 @@ Future<({String text, List<AskSource> sources})> askWithSources(
     throw const AnalysisException(AppErrorCode.askLimit);
   }
   if (res.statusCode == 402) throw AnalysisException(ClaudeStockAnalyst.quotaErrorFor(res.body), cause: res.body);
-  if (ClaudeStockAnalyst.isOutage(res.statusCode)) {
+  if (isServiceOutage(res.statusCode)) {
     throw AnalysisException(AppErrorCode.aiUnavailable, cause: res.body);
   }
   if (res.statusCode != 200) {
@@ -383,9 +384,10 @@ Future<({String text, List<AskSource> sources})> askWithSources(
     // Markdown-jelölések nélkül: a felület sima szöveget mutat (különben „**…**” látszana).
     text = plainAiText(answer.isNotEmpty ? answer : textOf(content));
     void add(Object? url, Object? title) {
-      if (url is! String || !url.startsWith('http') || sources.length >= maxSources) return;
-      if (sources.any((s) => s.url == url)) return;
-      final t = title is String && title.trim().isNotEmpty ? title.trim() : (Uri.tryParse(url)?.host ?? url);
+      if (url is! String || sources.length >= maxSources || sources.any((s) => s.url == url)) return;
+      final web = safeWebUri(url);
+      if (web == null) return;
+      final t = title is String && title.trim().isNotEmpty ? title.trim() : web.host;
       sources.add((title: t, url: url));
     }
 

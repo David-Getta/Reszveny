@@ -449,10 +449,7 @@ class AppServices {
     final email = account?.email;
     await account?.deleteAccount();
     await sync?.forgetAccount();
-    if (wipeLocalData) {
-      await _wipeLocalData();
-      if (email != null) await BillingController.forgetOwner(email);
-    }
+    if (wipeLocalData) await _wipeAccountHere(email);
     // Az app névtelen fiókkal megy tovább; a friss állapotot a szerver adja.
     await syncEntitlements();
   }
@@ -486,9 +483,15 @@ class AppServices {
     await acc.sessionLost();
     if (!accountDeleted || email == null) return;
     await sync?.forgetAccount();
-    await _wipeLocalData();
-    await BillingController.forgetOwner(email);
+    await _wipeAccountHere(email);
     accountDeletedElsewhere.value++;
+  }
+
+  /// A törölt fiók nyoma a készülékről: a személyes adatok és a fiókhoz kötött,
+  /// még el nem számolt vásárlás.
+  Future<void> _wipeAccountHere(String? email) async {
+    await _wipeLocalData();
+    if (email != null) await BillingController.forgetOwner(email);
   }
 
   Future<void> _wipeLocalData() async {

@@ -30,7 +30,8 @@ class _NotesCardState extends State<NotesCard> {
   @override
   void initState() {
     super.initState();
-    _lifecycle = AppLifecycleListener(onHide: _flush, onPause: _flush, onDetach: _flush);
+    // A figyelő a köztes állapotokat is jelzi: szüneteltetés és leválás előtt is mindig „rejtett” lesz.
+    _lifecycle = AppLifecycleListener(onHide: _flush);
   }
 
   void _flush() {

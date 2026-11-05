@@ -802,7 +802,7 @@ class _UpdatesTile extends StatelessWidget {
           UpdateStatus.failed => l10n.updateCheckFailed,
           UpdateStatus.idle => u.channel == UpdateChannel.store ? l10n.updatesViaStore : '',
         };
-        final noCheck = u.channel == UpdateChannel.store || !u.canCheck;
+        final noCheck = !u.canCheck;
         return Column(
           children: [
             ListTile(
@@ -825,7 +825,7 @@ class _UpdatesTile extends StatelessWidget {
                       ),
                     ),
             ),
-            if (!noCheck && u.canAutoInstall) ...[
+            if (u.canAutoInstall) ...[
               const Divider(height: 1),
               SwitchListTile(
                 secondary: const Icon(Icons.system_update_alt_rounded),

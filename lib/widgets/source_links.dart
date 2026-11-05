@@ -30,7 +30,7 @@ class SourceLinks extends StatelessWidget {
         for (final (i, s) in sources.indexed)
           InkWell(
             key: ValueKey('$keyPrefix-$i'),
-            onTap: () => openWeb(s.url),
+            onTap: () => openWebOrNotify(context, s.url),
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 5),
               child: Row(
@@ -51,6 +51,14 @@ class SourceLinks extends StatelessWidget {
       ],
     );
   }
+}
+
+/// A cím megnyitása a böngészőben; ha nem weboldal-cím vagy nem nyílt meg, egy rövid
+/// üzenet mondja el (különben a koppintásnak semmi látható nyoma).
+Future<void> openWebOrNotify(BuildContext context, String? url) async {
+  final failed = AppLocalizations.of(context).openLinkFailed;
+  final messenger = ScaffoldMessenger.maybeOf(context);
+  if (!await openWeb(url)) messenger?.showSnackBar(SnackBar(content: Text(failed)));
 }
 
 /// Kis címke a forrás jellegéről (hivatalos, sajtóközlemény, vezető hírforrás,

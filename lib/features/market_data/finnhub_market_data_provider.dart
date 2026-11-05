@@ -48,7 +48,7 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
       throw MarketDataException(AppErrorCode.marketHttp, detail: '403', cause: res.body);
     }
     // A szerver (vagy egy átjáró) szerint az árfolyam-szolgáltató épp nem érhető el.
-    if (const {502, 503, 504}.contains(res.statusCode)) {
+    if (isServiceOutage(res.statusCode)) {
       throw MarketDataException(AppErrorCode.marketUnavailable, cause: res.body);
     }
     if (res.statusCode != 200) {

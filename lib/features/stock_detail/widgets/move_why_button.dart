@@ -55,7 +55,7 @@ Future<void> showMoveExplanation(
   return showResearchSheet(
     context,
     sheetKey: const ValueKey('move-why-sheet'),
-    eyebrow: '$symbol · $name',
+    eyebrow: researchEyebrow(symbol, name),
     title: l10n.moveWhyTitle(fmt.percent(changePercent, withSign: true)),
     answer: answer,
     note: l10n.moveWhyNote,

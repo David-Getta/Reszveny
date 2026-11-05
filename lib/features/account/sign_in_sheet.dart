@@ -1,3 +1,5 @@
+import '../../widgets/app_sheet.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../core/backend/backend_client.dart';
@@ -17,11 +19,8 @@ Future<bool> showSignInSheet(BuildContext context, AccountController account) as
             child: ConstrainedBox(constraints: const BoxConstraints(maxWidth: 440), child: body),
           ),
         )
-      : await showModalBottomSheet<bool>(
-          useRootNavigator: true,
-          context: context,
-          isScrollControlled: true,
-          showDragHandle: true,
+      : await showAppSheet<bool>(
+          context,
           builder: (ctx) => Padding(
             padding: EdgeInsets.only(bottom: MediaQuery.viewInsetsOf(ctx).bottom),
             child: body,

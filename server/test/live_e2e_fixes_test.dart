@@ -242,4 +242,12 @@ void main() {
     // Egy visszatérő eszköz nem kap „account_deleted”-et (a helyi adatai maradnak): új névtelen fiókot nyit.
     expect(store.isDeletedSession(idleToken), isFalse);
   });
+
+  test('every missing-sign-in answer goes through the one place that can say "account deleted"', () {
+    // Egy közvetlen `_error(401, 'unauthorized')` a törölt fiók másik eszközének csak
+    // kijelentkezést mondana, és a fiók adatai ott maradnának.
+    final src = File('lib/src/api.dart').readAsStringSync();
+    expect("'unauthorized'".allMatches(src).length, 1);
+    expect(src, contains("store.isDeletedSession(t) ? 'account_deleted' : 'unauthorized'"));
+  });
 }

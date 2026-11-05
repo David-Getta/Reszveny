@@ -120,11 +120,9 @@ class ClaudeStockAnalyst implements StockAnalyst {
       _addUsage(usage, response);
     }
     lastUsage = usage;
+    StockReport parsed;
     try {
-      return separatePosition(
-        parseResponse(details.symbol, response, language: outputLanguage, earlierContent: earlier),
-        options.position,
-      );
+      parsed = parseResponse(details.symbol, response, language: outputLanguage, earlierContent: earlier);
     } on AnalysisException catch (e) {
       // A kész szöveg nem a kért JSON: egy keresés nélküli, sémára kényszerített
       // kör átalakítja. A keretet nem terheli (a továbbító végponton megy).
@@ -134,33 +132,33 @@ class ClaudeStockAnalyst implements StockAnalyst {
       _addUsage(usage, repaired);
       lastUsage = usage;
       final searched = ((response['content'] as List?) ?? const []).cast<Map<String, dynamic>>();
-      return separatePosition(
-        parseResponse(details.symbol, repaired, language: outputLanguage, earlierContent: [...earlier, ...searched]),
-        options.position,
+      parsed = parseResponse(
+        details.symbol,
+        repaired,
+        language: outputLanguage,
+        earlierContent: [...earlier, ...searched],
       );
     }
+    return separatePosition(parsed, options.position);
   }
 
-  /// A kilátások pozícióhoz mért pontja külön mezőbe kerül ([StockReport.positionNote]):
-  /// az appban látszik, de a megosztott szövegbe és a hibajelentésbe nem kerülhet – akkor
-  /// sem, ha a modell (rövid elemzésnél) összevonta a forgatókönyvek pontjait. Az a pont,
-  /// amelyben az átlagár szerepel; ha egyikben sem, a forgatókönyvek utáni utolsó pont.
+  /// Tartalék, ha a modell a pozícióhoz mért számítást mégsem a `position_note` mezőbe írta,
+  /// hanem a kilátások pontjai közé: az a pont kerül át [StockReport.positionNote]-ba, amelyben
+  /// az átlagár szerepel, vagy ha egyikben sem, a forgatókönyvek utáni utolsó pont. Így a
+  /// megosztott szövegbe és a hibajelentésbe akkor sem kerülhet.
   static StockReport separatePosition(StockReport r, PositionContext? position) {
-    if (position == null) return r;
+    if (position == null || r.positionNote != null) return r;
     final i = r.sections.indexWhere((s) => s.kind == ReportSectionKind.outlook);
     if (i < 0 || r.sections[i].bullets.isEmpty) return r;
-    final outlook = r.sections[i];
-    final cost = _num(position.averageCost);
-    final costPattern = RegExp('(?<![\\d.,])${RegExp.escape(cost).replaceAll(r'\.', '[.,]')}(?![\\d])');
-    var at = outlook.bullets.lastIndexWhere((b) => costPattern.hasMatch(b));
-    if (at < 0 && outlook.bullets.length > (r.outlook?.scenarios.length ?? outlook.bullets.length)) {
-      at = outlook.bullets.length - 1;
-    }
+    final bullets = r.sections[i].bullets;
+    final cost = RegExp('(?<![\\d.,])${RegExp.escape(_num(position.averageCost)).replaceAll(r'\.', '[.,]')}(?![\\d])');
+    var at = bullets.lastIndexWhere(cost.hasMatch);
+    if (at < 0 && bullets.length > (r.outlook?.scenarios.length ?? bullets.length)) at = bullets.length - 1;
     if (at < 0) return r;
-    final kept = [...outlook.bullets]..removeAt(at);
-    final sections = [...r.sections]
-      ..[i] = ReportSection(kind: outlook.kind, title: outlook.title, paragraphs: outlook.paragraphs, bullets: kept);
-    return r.withPositionNote(sections, outlook.bullets[at]);
+    return r.copyWith(
+      sections: [...r.sections]..[i] = r.sections[i].withBullets([...bullets]..removeAt(at)),
+      positionNote: bullets[at],
+    );
   }
 
   static String _text(Map<String, dynamic> response) => ((response['content'] as List?) ?? const [])
@@ -192,10 +190,6 @@ class ClaudeStockAnalyst implements StockAnalyst {
   };
 
   /// A backend 402-es hibakódja → az app hibakódja.
-  /// A szerver (vagy egy átjáró) szerint a fölöttes szolgáltató épp nem érhető el: átmeneti,
-  /// nem az app és nem a felhasználó kapcsolatának hibája („most nem érhető el, próbáld később”).
-  static bool isOutage(int status) => status == 502 || status == 503 || status == 504;
-
   static AppErrorCode quotaErrorFor(String body) => switch (BackendClient.errorCode(body)) {
     'trial_expired' => AppErrorCode.trialExpired,
     'no_plan' => AppErrorCode.noPlan,
@@ -250,7 +244,7 @@ class ClaudeStockAnalyst implements StockAnalyst {
       final detail = code == AppErrorCode.notEnoughCredits ? _insufficientDetail(res.body) : null;
       throw AnalysisException(code, detail: detail, cause: res.body);
     }
-    if (isOutage(res.statusCode)) throw AnalysisException(AppErrorCode.aiUnavailable, cause: res.body);
+    if (isServiceOutage(res.statusCode)) throw AnalysisException(AppErrorCode.aiUnavailable, cause: res.body);
     if (res.statusCode != 200) {
       throw AnalysisException(AppErrorCode.aiHttp, detail: '${res.statusCode}', cause: res.body);
     }
@@ -265,7 +259,7 @@ class ClaudeStockAnalyst implements StockAnalyst {
   }
 
   /// A prompt verziója; bekerül az elemzésbe, hogy a minták összevethetők legyenek.
-  static const String promptVersion = 'v2.7';
+  static const String promptVersion = 'v2.8';
 
   /// A Messages API kérés törzse. Webkereséssel a JSON-formátum kényszerítése
   /// nem elérhető (a keresési találatok hivatkozásai miatt), ezért akkor a
@@ -365,12 +359,11 @@ class ClaudeStockAnalyst implements StockAnalyst {
             'stock is also listed or tradable locally.',
       if (o.position case final p?)
         '- Reader\'s position: holds ${_num(p.quantity)} shares at an average cost of ${_num(p.averageCost)} ${p.currency}'
-            '${_period(p.firstDate, p.lastDate)}${_dividends(p)}. Use it only for arithmetic, in one separate final bullet '
-            'of the outlook section (not in the scenario bullets): where each scenario range sits against this cost, '
-            'in %. Do not comment on the position itself: not whether it is large or small, or worth keeping, adding '
-            'to, reducing, protecting or exiting; no profit-taking, stop-loss, entry or exit levels. Keep the position '
-            'out of the headline, the summary, the most likely reason and the scenario bullets (they can be shared '
-            'publicly).',
+            '${_period(p.firstDate, p.lastDate)}${_dividends(p)}. Use it only for arithmetic, in the separate top-level '
+            'field "position_note" (one or two sentences): where each scenario range sits against this cost, in %. Do '
+            'not comment on the position itself: not whether it is large or small, or worth keeping, adding to, '
+            'reducing, protecting or exiting; no profit-taking, stop-loss, entry or exit levels. Keep the position out '
+            'of the headline, every section and outlook_data (they can be shared publicly).',
       if (o.readerNote case final note? when note.trim().isNotEmpty)
         '- Reader\'s own notes on this stock (their thesis and what they watch, in their words; they may include '
             'AI notes the reader saved): "${_oneLine(note)}". In the what-to-watch section, say which new facts bear on '
@@ -513,7 +506,8 @@ Return only a single JSON object, with no Markdown fences and no text outside it
    "most_likely_reason": string (one sentence: why the most likely scenario is the most likely),
    "long_term": {"summary": string (one sentence: the long-term thesis),
      "horizons": [{"years": 3|5|10, "price_low": number, "price_high": number, "price_likely": number, "basis": string (one sentence with the arithmetic), "confidence": "low"|"medium"|"high"}]}},
- "sources": [{"title": string, "url": string}]}
+ "sources": [{"title": string, "url": string}],
+ "position_note": string (only when the reader's position is given; otherwise leave it out)}
 Include these sections in this order: summary, news, business, strengths, risks, financials, valuation, ownership, outlook, longterm, watch.
 - summary: paragraphs; the thesis in 4-6 sentences: what the market currently believes and prices in (optimistic or pessimistic, and why), the one or two open questions that will decide the stock's path from here, and where your reading of the evidence agrees or disagrees with the market's view and why.
 - news: bullets, one item each, starting with the date (YYYY-MM-DD) and ending with the "so what"; most recent first; covering the last 4 weeks and the latest results.
@@ -544,6 +538,8 @@ Check that all eleven sections are present, in order and in the requested langua
     'type': 'object',
     'properties': {
       'headline': {'type': 'string'},
+      // Csak ha a felhasználó pozíciója ismert: a megosztott részekből kimarad.
+      'position_note': {'type': 'string'},
       'sections': {
         'type': 'array',
         'items': {
@@ -892,10 +888,12 @@ Check that all eleven sections are present, in order and in the requested langua
       }
     }
 
+    final note = payload['position_note'];
     return StockReport(
       symbol: symbol,
       headline: plainAiText((payload['headline'] as String? ?? '').trim()),
-      sections: [for (final s in sections) s.plain()],
+      positionNote: note is String && note.trim().isNotEmpty ? plainAiText(note.trim()) : null,
+      sections: sections,
       sources: sources,
       generatedAt: DateTime.now(),
       language: language,

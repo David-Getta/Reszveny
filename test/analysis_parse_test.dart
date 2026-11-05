@@ -512,7 +512,7 @@ void main() {
     expect(msg, contains('may be an ETF'));
     expect(ClaudeStockAnalyst.systemPrompt, contains('# If it is not an ordinary company share'));
     expect(ClaudeStockAnalyst.systemPrompt, contains('expense ratio'));
-    expect(ClaudeStockAnalyst.promptVersion, 'v2.7');
+    expect(ClaudeStockAnalyst.promptVersion, 'v2.8');
     // v2.7: általános elemzés, nem személyre szabott ajánlás (MiFID II, MAR).
     expect(ClaudeStockAnalyst.systemPrompt, contains('# Not advice'));
     expect(ClaudeStockAnalyst.systemPrompt, contains('do not call any price a target'));

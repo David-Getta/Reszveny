@@ -168,7 +168,7 @@ Future<void> showEarningsSummary(
   return showResearchSheet(
     context,
     sheetKey: const ValueKey('earnings-summary-sheet'),
-    eyebrow: name.isEmpty ? symbol : '$symbol · $name',
+    eyebrow: researchEyebrow(symbol, name),
     title: l10n.earningsSummaryButton,
     answer: answer,
     note: l10n.earningsSummaryNote,

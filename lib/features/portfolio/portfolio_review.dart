@@ -282,7 +282,7 @@ Return one JSON object: {"headline": string (one sentence stating the portfolio'
       throw AnalysisException(AppErrorCode.aiUnreachable, cause: e);
     }
     if (res.statusCode == 402) throw AnalysisException(ClaudeStockAnalyst.quotaErrorFor(res.body), cause: res.body);
-    if (ClaudeStockAnalyst.isOutage(res.statusCode)) {
+    if (isServiceOutage(res.statusCode)) {
       throw AnalysisException(AppErrorCode.aiUnavailable, cause: res.body);
     }
     if (res.statusCode != 200) {
@@ -302,7 +302,7 @@ Return one JSON object: {"headline": string (one sentence stating the portfolio'
         headline: plainAiText((payload['headline'] as String? ?? '').trim()),
         sections: [
           for (final s in (payload['sections'] as List? ?? const []))
-            if (s is Map) ReportSection.fromJson(s.cast<String, dynamic>()).plain(),
+            if (s is Map) ReportSection.fromJson(s.cast<String, dynamic>()),
         ].where((s) => !s.isEmpty).toList(),
         generatedAt: _clock(),
         language: language,

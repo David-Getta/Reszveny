@@ -1,3 +1,5 @@
+import '../../widgets/app_sheet.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
@@ -9,13 +11,7 @@ import '../recognition/stock_recognizer.dart';
 /// Ha a képen több részvény is volt (pl. egy bróker figyelőlistája), soronként
 /// csillaggal vagy egyszerre mind a kedvencek közé tehetők.
 Future<StockCandidate?> showCandidateSheet(BuildContext context, RecognitionResult result) {
-  return showModalBottomSheet<StockCandidate>(
-    useRootNavigator: true,
-    context: context,
-    showDragHandle: true,
-    isScrollControlled: true,
-    builder: (context) => _CandidateList(result: result),
-  );
+  return showAppSheet<StockCandidate>(context, builder: (context) => _CandidateList(result: result));
 }
 
 class _CandidateList extends StatelessWidget {

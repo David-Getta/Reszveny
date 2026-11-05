@@ -1,3 +1,5 @@
+import '../../widgets/app_sheet.dart';
+
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -272,10 +274,9 @@ class _WatchlistPageState extends State<WatchlistPage> {
   Future<void> _addToList(String symbol) async {
     final l10n = AppLocalizations.of(context);
     final prefs = AppServices.of(context).preferences;
-    final create = await showModalBottomSheet<bool>(
-      useRootNavigator: true,
-      context: context,
-      showDragHandle: true,
+    final create = await showAppSheet<bool>(
+      context,
+      isScrollControlled: false,
       builder: (context) => SafeArea(
         child: ListenableBuilder(
           listenable: prefs,

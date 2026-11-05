@@ -1,3 +1,5 @@
+import '../../widgets/app_sheet.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
@@ -107,13 +109,8 @@ List<_Line> _lines(AppLocalizations l10n, Fmt fmt, SummaryRow r) {
 /// Az éves összesítő lapja: évválasztó, számlánként és pénznemenként a
 /// realizált nyereség (bevétel és bekerülési érték), a kapott osztalék és a
 /// fizetett díj; szövegként megosztható.
-Future<void> showAnnualSummary(BuildContext context) => showModalBottomSheet<void>(
-  useRootNavigator: true,
-  context: context,
-  showDragHandle: true,
-  isScrollControlled: true,
-  builder: (_) => const _AnnualSummarySheet(),
-);
+Future<void> showAnnualSummary(BuildContext context) =>
+    showAppSheet<void>(context, builder: (_) => const _AnnualSummarySheet());
 
 class _AnnualSummarySheet extends StatefulWidget {
   const _AnnualSummarySheet();

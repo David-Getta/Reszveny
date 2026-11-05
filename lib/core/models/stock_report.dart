@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 
 import '../util/ai_text.dart';
+import '../util/web_uri.dart';
 
 /// AI-elemzés egy részvényről: szekciókra bontott, a felhasználó nyelvén
 /// megírt átfogó kép, friss hírek összefoglalásával és forrásokkal.
@@ -48,32 +49,18 @@ class StockReport {
           ),
   );
 
-  /// Ugyanez az elemzés a következő gyorsjelentés napjával.
-  StockReport withNextEarnings(DateTime? date) => StockReport(
+  /// Ugyanez az elemzés néhány mezőt cserélve (a többi változatlan).
+  StockReport copyWith({List<ReportSection>? sections, DateTime? nextEarnings, String? positionNote}) => StockReport(
     symbol: symbol,
     headline: headline,
-    sections: sections,
+    sections: sections ?? this.sections,
     generatedAt: generatedAt,
     sources: sources,
     language: language,
     outlook: outlook,
     promptVersion: promptVersion,
-    nextEarnings: date,
-    positionNote: positionNote,
-  );
-
-  /// Ugyanez az elemzés a pozícióhoz mért ponttal (a kilátások pontjai közül kivéve).
-  StockReport withPositionNote(List<ReportSection> sections, String? note) => StockReport(
-    symbol: symbol,
-    headline: headline,
-    sections: sections,
-    generatedAt: generatedAt,
-    sources: sources,
-    language: language,
-    outlook: outlook,
-    promptVersion: promptVersion,
-    nextEarnings: nextEarnings,
-    positionNote: note,
+    nextEarnings: nextEarnings ?? this.nextEarnings,
+    positionNote: positionNote ?? this.positionNote,
   );
 
   /// Egy-két mondatos lényeg (TL;DR).
@@ -107,12 +94,14 @@ class StockReport {
 
   factory StockReport.fromJson(Map<String, dynamic> j) => StockReport(
     symbol: j['symbol'] as String,
-    headline: j['headline'] as String? ?? '',
+    headline: plainAiText(j['headline'] as String? ?? ''),
     sections: ((j['sections'] as List?) ?? const [])
         .map((s) => ReportSection.fromJson((s as Map).cast<String, dynamic>()))
         .toList(),
+    // Csak webcím: egy régebben mentett elemzésben más is lehet.
     sources: ((j['sources'] as List?) ?? const [])
         .map((s) => ReportSource.fromJson((s as Map).cast<String, dynamic>()))
+        .where((s) => safeWebUri(s.url) != null)
         .toList(),
     generatedAt: DateTime.tryParse(j['generated_at'] as String? ?? '') ?? DateTime.now(),
     language: j['language'] as String?,
@@ -182,7 +171,7 @@ class Scenario {
       priceLow: lo,
       priceHigh: hi,
       horizon: (j['horizon'] as String? ?? '').trim(),
-      summary: (j['summary'] as String? ?? '').trim(),
+      summary: plainAiText((j['summary'] as String? ?? '').trim()),
     );
   }
 }
@@ -208,7 +197,11 @@ class KeyLevel {
   static KeyLevel? fromJson(Map<String, dynamic> j) {
     final p = _num(j['price']);
     if (p == null || p <= 0) return null;
-    return KeyLevel(price: p, kind: KeyLevelKind.parse(j['kind']), label: (j['label'] as String? ?? '').trim());
+    return KeyLevel(
+      price: p,
+      kind: KeyLevelKind.parse(j['kind']),
+      label: plainAiText((j['label'] as String? ?? '').trim()),
+    );
   }
 }
 
@@ -234,7 +227,7 @@ class Catalyst {
   Map<String, dynamic> toJson() => {'date': date, 'event': event};
 
   static Catalyst? fromJson(Map<String, dynamic> j) {
-    final event = (j['event'] as String? ?? '').trim();
+    final event = plainAiText((j['event'] as String? ?? '').trim());
     if (event.isEmpty) return null;
     return Catalyst(date: (j['date'] as String? ?? '').trim(), event: event);
   }
@@ -347,8 +340,8 @@ class ReportOutlook {
       keyLevels: levels,
       catalysts: catalysts,
       marketMood: mood?.round().clamp(-2, 2),
-      marketMoodReason: (j['market_mood_reason'] as String? ?? '').trim(),
-      mostLikelyReason: (j['most_likely_reason'] as String? ?? '').trim(),
+      marketMoodReason: plainAiText((j['market_mood_reason'] as String? ?? '').trim()),
+      mostLikelyReason: plainAiText((j['most_likely_reason'] as String? ?? '').trim()),
       longTerm: j['long_term'] is Map
           ? LongTermOutlook.fromJson((j['long_term'] as Map).cast<String, dynamic>())
           : null,
@@ -434,7 +427,7 @@ class LongTermOutlook {
     final horizons = ReportOutlook._list(j['horizons'], LongTermHorizon.fromJson)
       ..sort((a, b) => a.years.compareTo(b.years));
     if (horizons.isEmpty) return null;
-    return LongTermOutlook(horizons: horizons, summary: (j['summary'] as String? ?? '').trim());
+    return LongTermOutlook(horizons: horizons, summary: plainAiText((j['summary'] as String? ?? '').trim()));
   }
 }
 
@@ -468,27 +461,23 @@ class ReportSection {
 
   bool get isEmpty => paragraphs.isEmpty && bullets.isEmpty;
 
-  /// Ugyanez a szakasz Markdown-jelölések nélkül (lásd `plainAiText`).
-  ReportSection plain() => ReportSection(
-    kind: kind,
-    title: plainAiText(title),
-    paragraphs: [for (final p in paragraphs) plainAiText(p)],
-    bullets: [for (final b in bullets) plainAiText(b)],
-  );
+  /// Ugyanez a szakasz más pontokkal.
+  ReportSection withBullets(List<String> bullets) =>
+      ReportSection(kind: kind, title: title, paragraphs: paragraphs, bullets: bullets);
 
   Map<String, dynamic> toJson() => {'kind': kind.name, 'title': title, 'paragraphs': paragraphs, 'bullets': bullets};
 
   factory ReportSection.fromJson(Map<String, dynamic> j) => ReportSection(
     kind: ReportSectionKind.parse(j['kind'] is String ? j['kind'] as String : null),
-    title: (j['title'] is String ? j['title'] as String : '').trim(),
+    title: plainAiText((j['title'] is String ? j['title'] as String : '').trim()),
     paragraphs: _strings(j['paragraphs']),
     bullets: _strings(j['bullets']),
   );
 
   /// Szövegek listája; egyetlen szöveg (a modell néha így küldi) egyelemű lista.
   static List<String> _strings(Object? v) => switch (v) {
-    List() => v.map((e) => e.toString().trim()).where((s) => s.isNotEmpty).toList(),
-    String() when v.trim().isNotEmpty => [v.trim()],
+    List() => v.map((e) => plainAiText(e.toString().trim())).where((s) => s.isNotEmpty).toList(),
+    String() when v.trim().isNotEmpty => [plainAiText(v.trim())],
     _ => const [],
   };
 }

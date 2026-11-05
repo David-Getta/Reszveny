@@ -63,7 +63,7 @@ Future<void> showInstrumentExplanation(
   return showResearchSheet(
     context,
     sheetKey: const ValueKey('instrument-sheet'),
-    eyebrow: name.isEmpty || name == symbol ? symbol : '$symbol · $name',
+    eyebrow: researchEyebrow(symbol, name),
     title: l10n.instrumentAsk,
     answer: answer,
     note: l10n.instrumentNote,

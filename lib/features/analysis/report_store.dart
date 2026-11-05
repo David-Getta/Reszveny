@@ -360,7 +360,9 @@ class ReportStore extends ChangeNotifier {
       );
       // A következő gyorsjelentés napját megjegyezzük: ha eltelik, jelezzük,
       // hogy az elemzés még a friss eredmények előtt készült.
-      final r = analyzed.withNextEarnings(analyzed.nextEarnings ?? (extras ?? details.extras)?.nextEarnings?.date);
+      final r = analyzed.copyWith(
+        nextEarnings: analyzed.nextEarnings ?? (extras ?? details.extras)?.nextEarnings?.date,
+      );
       // Közben törölték a helyi adatokat (pl. fióktörlés): az eredmény nem íródik vissza.
       if (epoch != _epoch) {
         await entitlements?.consume(cost: options.cost);

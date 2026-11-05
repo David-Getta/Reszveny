@@ -6,7 +6,7 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../core/util/ai_text.dart';
+import '../../core/util/storage_room.dart';
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import '../../core/models/stock_report.dart';
@@ -76,7 +76,7 @@ class AnalysisChat extends ChangeNotifier {
       _asked.remove(_asked.keys.first);
     }
     try {
-      await (await SharedPreferences.getInstance()).setString(_askedKey, jsonEncode(_asked));
+      await (await SharedPreferences.getInstance()).putString(_askedKey, jsonEncode(_asked));
     } catch (_) {}
   }
 
@@ -117,7 +117,7 @@ class AnalysisChat extends ChangeNotifier {
     notifyListeners();
     try {
       final answer = await _send(report, list, companyName: companyName, language: language);
-      list.add(ChatMessage(fromUser: false, text: plainAiText(answer.text), sources: answer.sources));
+      list.add(ChatMessage(fromUser: false, text: answer.text, sources: answer.sources));
       // A legújabb a végére kerül (a mentett lista a legrégebbieket dobja el).
       final before = _asked.remove(key) ?? 0;
       _asked[key] = math.max(before + 1, list.where((m) => m.fromUser).length);

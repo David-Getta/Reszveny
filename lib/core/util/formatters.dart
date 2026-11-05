@@ -177,7 +177,13 @@ class Fmt {
   /// dátumformázó alapból arab-indiait írna – egy sorban kettő keveredne).
   DateFormat _digits(DateFormat f) => f..useNativeDigits = _nativeDigits;
 
-  late final bool _nativeDigits = NumberFormat.decimalPattern(numberLocale).symbols.ZERO_DIGIT != '0';
+  late final bool _nativeDigits = _nativeDigitsByLocale.putIfAbsent(
+    numberLocale,
+    () => NumberFormat.decimalPattern(numberLocale).symbols.ZERO_DIGIT != '0',
+  );
+
+  /// Nyelvenként egyszer: a [Fmt] buildenként újra készül, a számformátum felépítése nem olcsó.
+  static final Map<String, bool> _nativeDigitsByLocale = {};
 
   String date(DateTime? d) {
     if (d == null) return na;

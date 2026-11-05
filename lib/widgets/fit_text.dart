@@ -40,21 +40,28 @@ class WordFitText extends StatelessWidget {
   final TextAlign? textAlign;
   final double minScale;
 
+  static final _spaces = RegExp(r'\s+');
+
   /// A [text] leghosszabb szavának szélessége a [style] betűjével.
   static double widestWord(String text, TextStyle style, TextDirection direction, TextScaler scaler) {
-    var widest = 0.0;
-    for (final word in text.split(RegExp(r'\s+'))) {
-      if (word.isEmpty) continue;
-      final painter = TextPainter(
-        text: TextSpan(text: word, style: style),
-        textDirection: direction,
-        textScaler: scaler,
-        maxLines: 1,
-      )..layout();
-      widest = math.max(widest, painter.width);
+    final painter = TextPainter(textDirection: direction, textScaler: scaler, maxLines: 1);
+    try {
+      double width(String s) =>
+          (painter
+                ..text = TextSpan(text: s, style: style)
+                ..layout())
+              .width;
+      final words = text.split(_spaces).where((w) => w.isNotEmpty).toList();
+      // Egyetlen szó: egy mérés elég.
+      if (words.length <= 1) return words.isEmpty ? 0 : width(words.single);
+      var widest = 0.0;
+      for (final word in words) {
+        widest = math.max(widest, width(word));
+      }
+      return widest;
+    } finally {
       painter.dispose();
     }
-    return widest;
   }
 
   @override

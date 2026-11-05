@@ -61,14 +61,18 @@ void main() {
 
   test('past events are not listed as upcoming; month-only dates sort in their month', () {
     final now = DateTime(2026, 11, 5);
-    final shown = CatalystTimeline.upcoming(const [
-      Catalyst(date: '2026-12-01', event: 'Dividend'),
-      Catalyst(date: '2026-10-01', event: 'Past event'),
-      Catalyst(date: '2026-10', event: 'Last month'),
-      Catalyst(date: '2026-11', event: 'This month'),
-      Catalyst(date: '2026-11-05', event: 'Today'),
-      Catalyst(date: 'Early 2027', event: 'Undated'),
-    ], now);
+    // A beolvasás rendez (dátum nélküli a végére), a lista csak a múltat szűri.
+    final outlook = ReportOutlook.fromJson({
+      'catalysts': [
+        {'date': '2026-12-01', 'event': 'Dividend'},
+        {'date': '2026-10-01', 'event': 'Past event'},
+        {'date': '2026-10', 'event': 'Last month'},
+        {'date': '2026-11', 'event': 'This month'},
+        {'date': '2026-11-05', 'event': 'Today'},
+        {'date': 'Early 2027', 'event': 'Undated'},
+      ],
+    });
+    final shown = CatalystTimeline.upcoming(outlook.catalysts, now);
     expect(shown.map((c) => c.event), ['This month', 'Today', 'Dividend', 'Undated']);
   });
 

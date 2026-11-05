@@ -99,16 +99,17 @@ void main() {
   });
 
   test('every bottom sheet opens on the root navigator (above the tab bar and the sidebar)', () {
-    final missing = <String>[];
-    for (final f in Directory('lib').listSync(recursive: true).whereType<File>()) {
-      if (!f.path.endsWith('.dart')) continue;
-      final src = f.readAsStringSync();
-      for (final m in RegExp(r'showModalBottomSheet<[^>]*>\(').allMatches(src)) {
-        final call = src.substring(m.end, (m.end + 200).clamp(0, src.length));
-        if (!call.contains('useRootNavigator: true')) missing.add(f.path);
-      }
-    }
-    expect(missing, isEmpty);
+    // Egyetlen lapnyitó van (`showAppSheet`), az viszi a gyökérnavigátort; közvetlen
+    // `showModalBottomSheet` máshol nem lehet.
+    final direct = [
+      for (final f in Directory('lib').listSync(recursive: true).whereType<File>())
+        if (f.path.endsWith('.dart') &&
+            !f.path.endsWith('app_sheet.dart') &&
+            f.readAsStringSync().contains('showModalBottomSheet'))
+          f.path,
+    ];
+    expect(direct, isEmpty);
+    expect(File('lib/widgets/app_sheet.dart').readAsStringSync(), contains('useRootNavigator: true'));
   });
 
   testWidgets('Esc on a wide screen steps back from a stock page', (tester) async {

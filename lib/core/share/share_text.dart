@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -107,10 +109,10 @@ String reportShareText(
     b
       ..writeln()
       ..writeln(outlook.title);
-    // Csak a forgatókönyvek pontjai: a pozícióhoz mért (átlagáras) pont az utánuk következő,
-    // külön pont – az nem kerülhet a megosztott szövegbe, akkor sem, ha a modell kevesebb
-    // forgatókönyv-pontot írt.
-    final shown = (r.outlook?.scenarios.length ?? 0) > 0 ? r.outlook!.scenarios.length.clamp(1, 4) : 3;
+    // Legfeljebb a forgatókönyvek pontjai: a pozícióhoz mért pont külön mezőben van
+    // ([StockReport.positionNote]); egy 0.2.318 előtt mentett elemzésben még a pontok után állhat.
+    final scenarios = r.outlook?.scenarios.length ?? 0;
+    final shown = scenarios > 0 ? math.min(scenarios, 4) : 3;
     for (final bullet in outlook.bullets.take(shown)) {
       b.writeln('• $bullet');
     }

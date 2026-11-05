@@ -1103,16 +1103,12 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
       continue;
     }
     final sideSell = side.isNotEmpty && _isSell(side);
-    // Ismeretlen irány (pl. elírás): nem kerül be vételként – a kihagyottak közé számít.
-    if (side.isNotEmpty && !sideSell && !_isBuy(side)) {
-      if (!first) skipped++;
-      first = false;
-      continue;
-    }
     final sell = (signed != null && signed < 0) || sideSell;
     final quantity = signed?.abs();
     final price = f.length > 2 ? parseDecimal(f[2]) : null;
-    final ok = _symbol.hasMatch(symbol) && quantity != null && quantity > 0 && price != null && price > 0;
+    // Ismeretlen irány (pl. elírás): nem kerül be vételként – a kihagyottak közé számít.
+    final knownSide = side.isEmpty || sideSell || _isBuy(side);
+    final ok = knownSide && _symbol.hasMatch(symbol) && quantity != null && quantity > 0 && price != null && price > 0;
     if (!ok) {
       // Az első rossz sor a fejléc lehet; azt nem számoljuk hibának.
       if (!first) skipped++;

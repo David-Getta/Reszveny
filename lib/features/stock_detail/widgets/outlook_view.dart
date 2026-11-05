@@ -607,16 +607,11 @@ class CatalystTimeline extends StatelessWidget {
       return m != null && !DateTime(m.year, m.month + 1).isAfter(today);
     }
 
-    final kept = [
+    // A sorrend a beolvasásból jön (`ReportOutlook.fromJson` dátum szerint rendez).
+    return [
       for (final c in all)
         if (!past(c)) c,
     ];
-    kept.sort((a, b) {
-      final x = a.sortDate, y = b.sortDate;
-      if (x == null || y == null) return x == null ? (y == null ? 0 : 1) : -1;
-      return x.compareTo(y);
-    });
-    return kept;
   }
 
   @override

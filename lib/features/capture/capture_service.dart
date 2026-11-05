@@ -58,8 +58,15 @@ class CaptureService {
     return null;
   }
 
-  /// Hordoz-e a kép metaadatot (hely, idő, készülék, szerző): JPEG-ben APP1–APP15 (EXIF, XMP)
-  /// vagy megjegyzés-szegmens, PNG-ben eXIf / szöveges darab, WebP-ben EXIF / XMP darab.
+  /// A JPEG személyes metaadatot hordozó szegmensei: APP1 (EXIF: hely, idő, készülék; XMP),
+  /// APP13 (IPTC: szerző, hely) és a megjegyzés. A színprofil (APP2) és az Adobe-szegmens
+  /// (APP14) a megjelenítéshez kell, az marad.
+  static bool _personalJpegSegment(int marker) => marker == 0xE1 || marker == 0xED || marker == 0xFE;
+
+  static const _pngTextChunks = {'eXIf', 'tEXt', 'iTXt', 'zTXt'};
+
+  /// Hordoz-e a kép személyes metaadatot (hely, idő, készülék, szerző): JPEG-ben EXIF / XMP /
+  /// IPTC / megjegyzés, PNG-ben eXIf / szöveges darab, WebP-ben EXIF / XMP darab.
   static bool hasMetadata(Uint8List b) {
     switch (sniff(b)) {
       case 'image/jpeg':
@@ -68,7 +75,7 @@ class CaptureService {
           final marker = b[i + 1];
           // A képadat kezdete (SOS) vagy vége (EOI): a fejlécek elfogytak.
           if (marker == 0xDA || marker == 0xD9) return false;
-          if ((marker >= 0xE1 && marker <= 0xEF) || marker == 0xFE) return true;
+          if (_personalJpegSegment(marker)) return true;
           i += 2 + ((b[i + 2] << 8) | b[i + 3]);
         }
         return false;
@@ -77,8 +84,8 @@ class CaptureService {
         while (i + 8 <= b.length) {
           final len = (b[i] << 24) | (b[i + 1] << 16) | (b[i + 2] << 8) | b[i + 3];
           final kind = String.fromCharCodes(b.sublist(i + 4, i + 8));
-          if (const {'eXIf', 'tEXt', 'iTXt', 'zTXt'}.contains(kind)) return true;
-          if (kind == 'IDAT' || kind == 'IEND' || len < 0) return false;
+          if (_pngTextChunks.contains(kind)) return true;
+          if (kind == 'IDAT' || kind == 'IEND') return false;
           i += 12 + len;
         }
         return false;
@@ -94,6 +101,81 @@ class CaptureService {
       default:
         return false;
     }
+  }
+
+  /// A kép a személyes metaadatai nélkül, újratömörítés nélkül (a JPEG/PNG kép-adata bájtra
+  /// ugyanaz – nem lesz belőle többszörös méretű PNG, és nem kell kicsinyíteni). Null, ha a
+  /// formátum (WebP), egy sérült fejléc, vagy egy elforgatott JPEG (EXIF Orientation ≠ 1) miatt
+  /// nem vágható ki: akkor újrakódolva megy – a dekódoló az elforgatást alkalmazza, így a
+  /// fogadó oldalnak nem kell az EXIF-címkét ismernie.
+  static Uint8List? stripMetadata(Uint8List b) {
+    try {
+      switch (sniff(b)) {
+        case 'image/jpeg':
+          return _stripJpeg(b);
+        case 'image/png':
+          final out = BytesBuilder(copy: false)..add(b.sublist(0, 8));
+          var i = 8;
+          while (i + 12 <= b.length) {
+            final len = (b[i] << 24) | (b[i + 1] << 16) | (b[i + 2] << 8) | b[i + 3];
+            final kind = String.fromCharCodes(b.sublist(i + 4, i + 8));
+            if (i + 12 + len > b.length) return null;
+            if (!_pngTextChunks.contains(kind)) out.add(b.sublist(i, i + 12 + len));
+            i += 12 + len;
+            if (kind == 'IEND') return out.toBytes();
+          }
+          return null;
+        default:
+          return null;
+      }
+    } catch (_) {
+      return null;
+    }
+  }
+
+  static Uint8List? _stripJpeg(Uint8List b) {
+    final out = BytesBuilder(copy: false)..add(b.sublist(0, 2));
+    var i = 2;
+    while (true) {
+      if (i + 4 > b.length || b[i] != 0xFF) return null;
+      final marker = b[i + 1];
+      if (marker == 0xDA) break;
+      final end = i + 2 + ((b[i + 2] << 8) | b[i + 3]);
+      if (end > b.length) return null;
+      final segment = b.sublist(i, end);
+      if (!_personalJpegSegment(marker)) {
+        out.add(segment);
+      } else if (marker == 0xE1 && (exifOrientation(segment) ?? 1) != 1) {
+        return null;
+      }
+      i = end;
+    }
+    out.add(b.sublist(i));
+    return out.toBytes();
+  }
+
+  /// Az EXIF szegmens (APP1, a jelölővel együtt) tájolása (1–8), ha van.
+  static int? exifOrientation(Uint8List segment) {
+    const header = 10; // FF E1, hossz (2), „Exif\0\0” (6)
+    if (segment.length < header + 8 || String.fromCharCodes(segment.sublist(4, 8)) != 'Exif') return null;
+    final t = segment.sublist(header);
+    final little = t[0] == 0x49;
+    int u16(int o) => little ? t[o] | (t[o + 1] << 8) : (t[o] << 8) | t[o + 1];
+    int u32(int o) => little
+        ? t[o] | (t[o + 1] << 8) | (t[o + 2] << 16) | (t[o + 3] << 24)
+        : (t[o] << 24) | (t[o + 1] << 16) | (t[o + 2] << 8) | t[o + 3];
+    final ifd = u32(4);
+    if (ifd + 2 > t.length) return null;
+    final count = u16(ifd);
+    for (var k = 0; k < count; k++) {
+      final e = ifd + 2 + k * 12;
+      if (e + 12 > t.length) return null;
+      if (u16(e) == 0x0112) {
+        final v = u16(e + 8);
+        return v >= 1 && v <= 8 ? v : null;
+      }
+    }
+    return null;
   }
 
   /// A kép a felismeréshez. A típus a bájtokból jön (a fájlnév és a platform által
@@ -123,12 +205,15 @@ class CaptureService {
       } catch (e) {
         throw AppException(AppErrorCode.imageUnsupported, cause: e);
       }
-      // Az eredeti bájtok csak metaadat nélkül mennek tovább: egy galériából választott fotó
-      // EXIF-je a készítés helyét (GPS), idejét és a készüléket is hordozza. Újrakódolva
-      // (a dekódoló az elforgatást alkalmazza) ezek elvesznek.
-      if (attempt == 0 && fits && type != null && bytes.length <= maxBytes && !hasMetadata(bytes)) {
-        image.dispose();
-        return CapturedImage(bytes: bytes, mimeType: type, fileName: fileName);
+      // Az eredeti bájtok csak személyes metaadat nélkül mennek tovább: egy galériából választott
+      // fotó EXIF-je a készítés helyét (GPS), idejét és a készüléket is hordozza. Ezek a
+      // szegmensek kivágva (a tömörített kép marad); ha ez nem megy, újrakódolva.
+      if (attempt == 0 && fits && type != null) {
+        final clean = hasMetadata(bytes) ? stripMetadata(bytes) : bytes;
+        if (clean != null && clean.length <= maxBytes) {
+          image.dispose();
+          return CapturedImage(bytes: clean, mimeType: type, fileName: fileName);
+        }
       }
       final png = await image.toByteData(format: ui.ImageByteFormat.png);
       image.dispose();

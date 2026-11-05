@@ -136,9 +136,11 @@ class UpdateService extends ChangeNotifier with UpdaterListener {
 
   void setAutoInstall(bool enabled) => _autoInstall = enabled;
 
-  /// Van-e mit ellenőrizni: jegyzék nélkül (pl. a webes előnézet) nincs, és ott a
-  /// „legfrissebb verzió” állítás sem igaz, csak ellenőrizetlen.
-  bool get canCheck => channel != UpdateChannel.manifestOnly || config.updateManifestUrl.isNotEmpty;
+  /// Van-e mit kézzel ellenőrizni: bolti telepítésnél a bolt frissít; jegyzék nélkül
+  /// (pl. a webes előnézet) nincs mit, és ott a „legfrissebb verzió” állítás sem igaz,
+  /// csak ellenőrizetlen.
+  bool get canCheck =>
+      channel != UpdateChannel.store && (channel != UpdateChannel.manifestOnly || config.updateManifestUrl.isNotEmpty);
 
   /// Az automatikus telepítés csak ott jelent valamit, ahol az app maga tölt le és telepít.
   bool get canAutoInstall => channel == UpdateChannel.sparkle || channel == UpdateChannel.playFlexible;

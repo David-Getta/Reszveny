@@ -532,10 +532,10 @@ void main() {
     expect(settings, contains('bought between 2025-03-14 and 2026-01-10'));
     // 30 / (15 × 160) = 1,25 % bekerülési hozam.
     expect(settings, contains('received 30 USD in dividends from it in the last 12 months (about 1.25% on cost)'));
-    // Csak számtan egy külön pontban; a pozícióról nincs vélemény, és nem kerül a megosztható részekbe.
-    expect(settings, contains('Use it only for arithmetic'));
+    // Csak számtan egy külön mezőben; a pozícióról nincs vélemény, és nem kerül a megosztható részekbe.
+    expect(settings, contains('Use it only for arithmetic, in the separate top-level field "position_note"'));
     expect(settings, contains('worth keeping, adding to, reducing'));
-    expect(settings, contains('Keep the position out of the headline, the summary'));
+    expect(settings, contains('Keep the position out of the headline, every section and outlook_data'));
     expect(ClaudeStockAnalyst.buildSettings(const AnalysisOptions()), isNot(contains("Reader's position")));
   });
 

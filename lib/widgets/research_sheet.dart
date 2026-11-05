@@ -1,3 +1,5 @@
+import 'app_sheet.dart';
+
 import 'package:flutter/material.dart';
 
 import '../features/analysis/report_ai.dart';
@@ -13,6 +15,11 @@ import '../l10n/generated/app_localizations.dart';
 import '../l10n/supported_locales.dart';
 import '../theme/app_theme.dart';
 import 'source_links.dart';
+
+/// A kutatólap felirata egy papírhoz: „AAPL · Apple Inc.”, vagy csak a jel, ha a név
+/// hiányzik vagy ugyanaz.
+String researchEyebrow(String symbol, String name) =>
+    name.trim().isEmpty || name.trim() == symbol ? symbol : '$symbol · ${name.trim()}';
 
 /// Közös alsó lap az AI-kutatásokhoz (hírmagyarázat, gyorsjelentés-összefoglaló,
 /// „mi ez a papír?”): felirat, cím, a válasz a forrásokkal, alul a megjegyzés.
@@ -30,11 +37,8 @@ Future<void> showResearchSheet(
 }) {
   // A hibát a lap FutureBuildere mutatja; addig ne számítson kezeletlennek.
   answer.ignore();
-  return showModalBottomSheet<void>(
-    useRootNavigator: true,
-    context: context,
-    showDragHandle: true,
-    isScrollControlled: true,
+  return showAppSheet<void>(
+    context,
     builder: (context) {
       final l10n = AppLocalizations.of(context);
       final p = AppPalette.of(context);

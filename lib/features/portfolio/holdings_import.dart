@@ -1,3 +1,5 @@
+import '../../widgets/app_sheet.dart';
+
 import 'package:flutter/material.dart';
 
 import '../analysis/ai_consent.dart';
@@ -18,10 +20,9 @@ Future<void> showHoldingsImport(BuildContext context) async {
   final services = AppServices.of(context);
   final l10n = AppLocalizations.of(context);
   final messenger = ScaffoldMessenger.of(context);
-  final source = await showModalBottomSheet<String>(
-    useRootNavigator: true,
-    context: context,
-    showDragHandle: true,
+  final source = await showAppSheet<String>(
+    context,
+    isScrollControlled: false,
     builder: (context) => SafeArea(
       child: Column(
         mainAxisSize: MainAxisSize.min,
