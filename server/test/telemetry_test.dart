@@ -19,7 +19,7 @@ void main() {
       anthropicApiKey: 'sk-test',
       finnhubApiKey: 'fh-test',
       verifier: const DevVerifier(),
-      adminToken: 'admin-secret',
+      adminToken: 'admin-secret-1234567890',
     );
     api.telemetry.clock = () => now;
   });
@@ -43,7 +43,7 @@ void main() {
       (await raw('POST', '/v1/telemetry', token: token, body: batch)).statusCode;
 
   Future<Map<String, dynamic>> stats() async {
-    final res = await raw('GET', '/admin/stats.json', token: 'admin-secret');
+    final res = await raw('GET', '/admin/stats.json', token: 'admin-secret-1234567890');
     expect(res.statusCode, 200);
     return (jsonDecode(await res.readAsString()) as Map).cast<String, dynamic>();
   }
@@ -162,7 +162,7 @@ void main() {
         {'message': '<script>alert(1)</script>', 'stack': ''},
       ],
     });
-    final ok = await raw('POST', '/admin', form: 'key=admin-secret');
+    final ok = await raw('POST', '/admin', form: 'key=admin-secret-1234567890');
     expect(ok.statusCode, 200);
     final html = await ok.readAsString();
     expect(html, contains('WhatStock statisztika'));

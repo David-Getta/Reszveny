@@ -51,6 +51,8 @@ class TelemetryStore {
         first_seen TEXT NOT NULL,
         last_seen TEXT NOT NULL
       );
+      CREATE INDEX IF NOT EXISTS error_reports_last ON error_reports(last_seen);
+      CREATE INDEX IF NOT EXISTS error_reports_first ON error_reports(first_seen);
     ''');
   }
 

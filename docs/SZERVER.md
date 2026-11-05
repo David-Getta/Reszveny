@@ -91,7 +91,8 @@ vásárlás, megosztás, riasztás) és hibajelentéseket küld a szervernek. R�
 nem küld; a hibaszövegből az e-mail-címeket és a tokeneket kitakarja.
 
 1. Railway → *Variables* → *New Variable*: `ADMIN_TOKEN` = egy hosszú, véletlen jelszó (pl. egy
-   jelszókezelővel generált 32 karakteres). Ezt se írd chatbe.
+   jelszókezelővel generált 32 karakteres; 20 karakternél rövidebbel az oldal ki van kapcsolva, és a
+   szerver induláskor figyelmeztet). Ezt se írd chatbe.
 2. Böngészőben: `https://<szerver címe>/admin` → írd be a kulcsot → napi bontás (aktív
    felhasználók, új fiókok, elemzések, vásárlások, események), platformok, verziók és a leggyakoribb
    hibák veremnyommal.
@@ -202,3 +203,15 @@ az egy hívással, Finnhub-tartaléknál nincs.
   naplóba kerül).
 - Saját domain (pl. `api.whatstock.app`) a Railway *Custom Domain* beállításával.
 - Rendszeres mentés a `/data` kötetről.
+
+## Webes változat tárhelye és biztonsága
+
+A böngészős app (`flutter build web`) a belépési tokent a böngésző helyi tárában tartja, ezért **saját
+domainen / originen** legyen (pl. `app.whatstock.app`), ne egy másokkal közös tárhely almappájában
+(pl. `felhasznalo.github.io/whatstock`): ugyanazon az originen futó más oldal kiolvashatná a tokent.
+A szerver HTML-oldalai nem keretezhetők (`X-Frame-Options: DENY`, `frame-ancestors 'none'`), szkriptet
+nem futtatnak (CSP), minden válasz `nosniff`, HTTPS-en HSTS; a más oldalról beküldött űrlapot
+(fióktörlés, admin) a szerver elutasítja; a lassan érkező kéréstörzset 20 mp szünet / 3 perc után elvágja.
+Az adatbázis WAL-módban fut (`journal_mode=WAL`, `synchronous=NORMAL`): a Railway-kötet mentésekor a
+`*.sqlite-wal` fájl is a mentés része.
+

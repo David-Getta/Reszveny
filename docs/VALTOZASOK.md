@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.304)
+# Változásjegyzék (0.2.130 → 0.2.305)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,22 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Webes biztonság és skálázás: az ötvenegyedik kódátnézés javításai
+
+- **0.2.305**: a szerver indulása nem lassul az adatbázis méretével: a 0.2.302 óta minden indításkor lefutó
+  teljes tömörítés (VACUUM) csak egyszer fut (nagy adatbázisnál ez telepítésenként perceket jelentett volna).
+  Az adatbázis WAL-módban fut: egy írás a korábbi töredéke, így a kérések nem várnak egymásra. Indexek a gyakori
+  törlésekhez és keresésekhez (kérdés-, segéd- és próbaidő-napló, belépőkódok, megosztott válaszok, megosztások,
+  használati napló, vásárlások, munkamenetek, Stripe-ügyfél, tesztelői kódok, hibajelentések); az ajánlókód
+  beváltása nem olvassa végig az összes fiókot; a kérés-korlátozó sok felhasználónál sem lassul négyzetesen.
+- Webes biztonság: a lassan csepegtetett kéréstörzset a szerver elvágja (408), így nem köthető le a memóriája;
+  a HTML-oldalak (fióktörlés, admin, megosztott elemzés, leiratkozás) nem rakhatók keretbe (kattintás-eltérítés
+  ellen), szkriptet nem futtatnak; minden válasz `nosniff`, HTTPS-en HSTS, a hitelesített válaszok nem kerülnek a
+  böngésző gyorsítótárába. Más oldalról beküldött fióktörlő vagy admin-űrlapot a szerver elutasít; az admin oldal
+  csak legalább 20 karakteres kulccsal él, és a hibás kulcsok minden címről együtt is korlátosak.
+- Nyilvános megosztást csak olyan papírról lehet készíteni, amelyről a fiók elemzést készített (kitalált cég és
+  főcím nem jelenhet meg a WhatStock címén). Az app csak a Stripe saját https-oldalát nyitja meg fizetéshez.
 
 ## Nem befektetési tanácsadás: az ötvenedik kódátnézés szabályozási javításai
 

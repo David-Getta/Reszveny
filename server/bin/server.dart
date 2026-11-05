@@ -56,13 +56,19 @@ Future<void> main() async {
   final stripeKey = env['STRIPE_SECRET_KEY'] ?? '';
   final invites = InviteBook.parse(env['INVITE_CODES'], onWarning: stderr.writeln);
   final testers = TesterBook.parse(env['TESTER_CODES'], onWarning: stderr.writeln);
+  final adminToken = env['ADMIN_TOKEN'] ?? '';
+  if (adminToken.isNotEmpty && adminToken.length < Api.adminTokenMinLength) {
+    stderr.writeln(
+      'Figyelem: az ADMIN_TOKEN túl rövid (legalább ${Api.adminTokenMinLength} karakter kell), az /admin oldal ki van kapcsolva.',
+    );
+  }
   final api = Api(
     invites: invites,
     testers: testers,
     // Ajánlói program: extra elemzés mindkét félnek, ajánlónként legfeljebb ennyi meghívott után.
     referralBonus: int.tryParse(env['REFERRAL_BONUS'] ?? '') ?? 5,
     referralMax: int.tryParse(env['REFERRAL_MAX'] ?? '') ?? 10,
-    adminToken: env['ADMIN_TOKEN'] ?? '',
+    adminToken: adminToken,
     googleNotificationToken: env['GOOGLE_RTDN_TOKEN'] ?? '',
     trialPerIpPerDay: int.tryParse(env['TRIAL_PER_IP_DAY'] ?? '') ?? 10,
     // A nyitóoldal letöltés-gombjai (alapból a GitHub legutóbbi kiadása).

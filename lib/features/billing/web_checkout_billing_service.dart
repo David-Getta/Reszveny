@@ -81,8 +81,10 @@ class WebCheckoutBillingService implements BillingService {
       return;
     }
     final before = account.entitlements.state;
-    // Ha a böngésző nem nyílik meg, nincs mire várni (a gomb ne pörögjön tovább).
-    if (!await openUrl(Uri.parse(url))) {
+    // Ha a böngésző nem nyílik meg (vagy a cím nem a Stripe fizetési oldala), nincs mire
+    // várni (a gomb ne pörögjön tovább).
+    final checkout = stripeUri(url);
+    if (checkout == null || !await openUrl(checkout)) {
       _events.add(BillingEvent(productId: product.id, status: BillingStatus.error, platform: 'stripe'));
       return;
     }
@@ -137,7 +139,18 @@ class WebCheckoutBillingService implements BillingService {
   }
 
   /// Az előfizetés kezelése (csomagváltás, lemondás, számlák) a Stripe portálon.
-  Future<void> manage() async => openUrl(Uri.parse(await backend.portalUrl()));
+  Future<void> manage() async {
+    final portal = stripeUri(await backend.portalUrl());
+    if (portal != null) await openUrl(portal);
+  }
+
+  /// Csak a Stripe saját fizetési és ügyfélportál-címe nyílik meg (https): egy hibás vagy
+  /// meghamisított szerverválasz se vigye a felhasználót más oldalra.
+  static Uri? stripeUri(String url) {
+    final u = Uri.tryParse(url);
+    if (u == null || u.scheme != 'https') return null;
+    return const {'checkout.stripe.com', 'billing.stripe.com'}.contains(u.host) ? u : null;
+  }
 
   void dispose() {
     _poll?.cancel();

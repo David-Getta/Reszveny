@@ -44,8 +44,12 @@ void main() {
         ),
       );
 
-  Future<String> newUser() async =>
-      jsonDecode(await (await raw('POST', '/v1/auth/anonymous')).readAsString())['token'] as String;
+  Future<String> newUser() async {
+    final t = jsonDecode(await (await raw('POST', '/v1/auth/anonymous')).readAsString())['token'] as String;
+    // Megosztani csak olyan papírt lehet, amelyről a fiók elemzést készített.
+    store.logUsage(store.userIdForToken(t)!, 'NVDA', 1, 1);
+    return t;
+  }
 
   final png = Uint8List.fromList([0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A, 1, 2, 3, 4]);
 

@@ -868,6 +868,7 @@ void main() {
         ..periodStart = now
         ..periodEnd = now.add(const Duration(days: 30)),
     );
+    store.logUsage(uid, 'AAPL', 1, 1);
     final created = await call(
       'POST',
       '/v1/share',

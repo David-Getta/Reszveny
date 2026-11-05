@@ -67,6 +67,12 @@ class Entitlement {
 /// SQLite-alapú tároló: felhasználók (token-hash), jogosultságok, vásárlások.
 class Store {
   Store(this._db) {
+    // WAL-napló, NORMAL szinkron: egy írás tized ezredmásodperc (a szerver egyetlen szálát
+    // nem tartja fel minden kérésnél egy fsync); áramszünetnél legfeljebb az utolsó néhány
+    // tranzakció veszhet el, az adatbázis nem sérül. Egy másik kapcsolat (mentés) várakozhat.
+    _db.execute('PRAGMA journal_mode = WAL');
+    _db.execute('PRAGMA synchronous = NORMAL');
+    _db.execute('PRAGMA busy_timeout = 5000');
     _db.execute('''
       CREATE TABLE IF NOT EXISTS users (
         id TEXT PRIMARY KEY,
@@ -223,15 +229,34 @@ class Store {
     );
     _rekeyLegacyFingerprints();
     // A törölt sorok tartalma ne maradjon a fájlban (a felszabadult lapok nullázva); a
-    // bekapcsolás előtti szabad lapokat egyszer egy VACUUM tünteti el.
+    // bekapcsolás előtti szabad lapokat egyetlenegyszer egy VACUUM tünteti el (a bekapcsolás
+    // után is maradnak – nullázott – szabad lapok, így minden indításkor futna, és nagy
+    // adatbázisnál percekig késleltetné az indulást).
     _db.execute('PRAGMA secure_delete = ON');
-    if ((_db.select('PRAGMA freelist_count').first.values.first as int) > 0) {
-      try {
-        _db.execute('VACUUM');
-      } catch (e) {
-        stderr.writeln('VACUUM nem sikerült: $e');
+    if ((_db.select('PRAGMA user_version').first.values.first as int) < 1) {
+      if ((_db.select('PRAGMA freelist_count').first.values.first as int) > 0) {
+        try {
+          _db.execute('VACUUM');
+        } catch (e) {
+          stderr.writeln('VACUUM nem sikerült: $e');
+        }
       }
+      _db.execute('PRAGMA user_version = 1');
     }
+    // Indexek a gyakori törlésekhez és kereséseken (különben minden beszúrás és minden
+    // összevonás, törlés, Stripe-értesítés végigolvasná a teljes táblát).
+    _db.execute('''
+      CREATE INDEX IF NOT EXISTS ask_calls_created ON ask_calls(created_at);
+      CREATE INDEX IF NOT EXISTS helper_calls_created ON helper_calls(created_at);
+      CREATE INDEX IF NOT EXISTS trial_grants_created ON trial_grants(created_at);
+      CREATE INDEX IF NOT EXISTS login_codes_created ON login_codes(created_at);
+      CREATE INDEX IF NOT EXISTS shared_answers_created ON shared_answers(created_at);
+      CREATE INDEX IF NOT EXISTS usage_log_created ON usage_log(created_at);
+      CREATE INDEX IF NOT EXISTS purchases_user ON purchases(user_id, verified_at);
+      CREATE INDEX IF NOT EXISTS sessions_user ON sessions(user_id);
+      CREATE INDEX IF NOT EXISTS users_stripe_customer ON users(stripe_customer_id) WHERE stripe_customer_id IS NOT NULL;
+      CREATE INDEX IF NOT EXISTS tester_redemptions_user ON tester_redemptions(user_id, created_at);
+    ''');
   }
 
   /// A korábbi változatok kulcs nélküli lenyomatai: az ajánlások postafiók-lenyomata (sima
@@ -792,7 +817,9 @@ class Store {
   /// Akik már beváltottak egy ajánlói kódot: az e-mail-címük (a még meglévő fiókoké).
   List<String> referralRedeemerEmails() => [
     for (final r in _db.select(
-      'SELECT u.email FROM referrals f JOIN users u ON u.id = f.referee_id WHERE u.email IS NOT NULL',
+      // Csak a postafiók-lenyomat előtti (0.2.275 előtti) sorok: a többit a lenyomat azonosítja.
+      'SELECT u.email FROM referrals f JOIN users u ON u.id = f.referee_id '
+      'WHERE f.mailbox_hash IS NULL AND u.email IS NOT NULL',
     ))
       r['email'] as String,
   ];
@@ -934,6 +961,13 @@ class Store {
   bool hasUsageSince(String userId, DateTime since) => _db.select(
     'SELECT 1 FROM usage_log WHERE user_id = ? AND created_at > ? LIMIT 1',
     [userId, since.toUtc().toIso8601String()],
+  ).isNotEmpty;
+
+  /// Készített-e a fiók elemzést erről a papírról (a nem kiolvasható tickerű elemzések
+  /// – `symbol IS NULL` – bármelyik papírnak számítanak).
+  bool hasAnalyzed(String userId, String symbol) => _db.select(
+    'SELECT 1 FROM usage_log WHERE user_id = ? AND (symbol IS NULL OR upper(symbol) = upper(?)) LIMIT 1',
+    [userId, symbol],
   ).isNotEmpty;
 
   void logUsage(String userId, String? symbol, int? inputTokens, int? outputTokens) {

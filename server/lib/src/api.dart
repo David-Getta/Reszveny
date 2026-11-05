@@ -80,6 +80,8 @@ class Api {
     this.downloadBaseUrl = 'https://github.com/David-Getta/Reszveny/releases/latest/download/',
     this.googleNotificationToken = '',
     this.trialPerIpPerDay = 10,
+    this.bodyIdleTimeout = const Duration(seconds: 20),
+    this.bodyTotalTimeout = const Duration(minutes: 3),
   }) : _client = client ?? http.Client(),
        // A záró perjel nélkül (`…app/` → `…app`): különben minden link `//s/…` lenne.
        publicUrl = publicUrl.replaceFirst(RegExp(r'/+$'), ''),
@@ -243,6 +245,7 @@ class Api {
       ..get('/billing/return', (Request r) => _page('↩', 'WhatStock'))
       ..get('/healthz', (Request r) => Response.ok('ok'));
     return const Pipeline()
+        .addMiddleware(_securityHeaders())
         .addMiddleware(_cors())
         .addMiddleware(_logRequests())
         .addMiddleware(_limitBody())
@@ -329,38 +332,97 @@ class Api {
     _ => 1024 * 1024,
   };
 
+  /// A törzs olvasásának határideje: ennyi szünet két adatcsomag között, és ennyi összesen
+  /// (egy lassan csepegtetett törzs ne kösse le a kapcsolatot és a memóriát; egy nagy kép
+  /// lassú mobilneten is beférjen).
+  final Duration bodyIdleTimeout;
+  final Duration bodyTotalTimeout;
+
   Middleware _limitBody() =>
       (inner) => (req) async {
         final limit = bodyLimit(req.url.path);
         final length = req.contentLength;
         if (length != null && length > limit) return _error(413, 'too_large');
-        if (length != null || req.method == 'GET' || req.method == 'OPTIONS') return inner(req);
-        // Darabolt (hossz nélküli) törzs: olvasás közben vágjuk el.
+        if (req.method == 'GET' || req.method == 'OPTIONS' || req.method == 'HEAD') return inner(req);
+        // Darabolt (hossz nélküli) törzsnél a méretet olvasás közben vágjuk el; minden törzsnél
+        // a határidőt is.
         var seen = 0;
+        final started = DateTime.now();
         // A dart:io törzse `Stream<Uint8List>`: `cast` nélkül a `transform` futásidőben elhasal (500).
-        final capped = req.read().cast<List<int>>().transform(
-          StreamTransformer<List<int>, List<int>>.fromHandlers(
-            handleData: (chunk, sink) {
-              seen += chunk.length;
-              if (seen > limit) {
-                sink.addError(const _TooLarge());
-                sink.close();
-              } else {
-                sink.add(chunk);
-              }
-            },
-          ),
-        );
+        final guarded = req
+            .read()
+            .cast<List<int>>()
+            .timeout(
+              bodyIdleTimeout,
+              onTimeout: (sink) => sink
+                ..addError(const _TooSlow())
+                ..close(),
+            )
+            .transform(
+              StreamTransformer<List<int>, List<int>>.fromHandlers(
+                handleData: (chunk, sink) {
+                  seen += chunk.length;
+                  if (seen > limit) {
+                    sink
+                      ..addError(const _TooLarge())
+                      ..close();
+                  } else if (DateTime.now().difference(started) > bodyTotalTimeout) {
+                    sink
+                      ..addError(const _TooSlow())
+                      ..close();
+                  } else {
+                    sink.add(chunk);
+                  }
+                },
+              ),
+            );
         try {
-          return await inner(req.change(body: capped));
+          return await inner(req.change(body: guarded));
         } on _TooLarge {
           return _error(413, 'too_large');
+        } on _TooSlow {
+          return _error(408, 'request_timeout');
         }
       };
 
+  /// Biztonsági fejlécek minden válaszon: a HTML-oldalak nem keretezhetők (kattintás-
+  /// eltérítés ellen), szkriptet nem futtatnak; a típus nem találgatható; a hitelesített
+  /// JSON nem kerül a böngésző gyorsítótárába; HTTPS-en HSTS.
+  Middleware _securityHeaders() =>
+      (inner) => (req) async {
+        final res = await inner(req);
+        final type = res.headers['content-type'] ?? '';
+        final html = type.startsWith('text/html');
+        return res.change(
+          headers: {
+            'x-content-type-options': 'nosniff',
+            'referrer-policy': 'no-referrer',
+            if (publicUrl.startsWith('https://')) 'strict-transport-security': 'max-age=31536000',
+            if (html) ...{
+              'content-security-policy':
+                  "default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; form-action 'self'; "
+                  "frame-ancestors 'none'; base-uri 'none'",
+              'x-frame-options': 'DENY',
+            },
+            if (type.startsWith('image/')) 'content-security-policy': "default-src 'none'; sandbox",
+            if (req.url.path.startsWith('v1/') && !res.headers.containsKey('cache-control'))
+              'cache-control': 'no-store',
+          },
+        );
+      };
+
+  /// Más oldalról beküldött űrlap (CSRF): a böngésző jelzi (`Sec-Fetch-Site`), vagy az
+  /// `Origin` nem a szerver címe. Fejléc nélkül (régi böngésző, szkript) nem utasítjuk el.
+  bool _crossSiteForm(Request r) {
+    if (r.headers['sec-fetch-site'] == 'cross-site') return true;
+    final origin = r.headers['origin'];
+    if (origin == null || origin == 'null' || publicUrl.isEmpty) return origin == 'null';
+    return Uri.tryParse(origin)?.origin != Uri.tryParse(publicUrl)?.origin;
+  }
+
   /// A böngészőből küldhető kérésfejlécek (CORS).
   static const allowedRequestHeaders =
-      'authorization, content-type, x-api-key, anthropic-version, anthropic-beta, x-finnhub-token, stripe-signature, '
+      'authorization, content-type, anthropic-version, anthropic-beta, '
       'x-whatstock-depth, x-whatstock-continuation, x-whatstock-request-id, $inviteHeader';
 
   static Middleware _cors() =>
@@ -372,6 +434,7 @@ class Api {
           'access-control-allow-headers': allowedRequestHeaders,
           'access-control-expose-headers': 'x-whatstock-continuation, x-whatstock-cache',
           'access-control-allow-methods': 'GET, POST, PUT, DELETE, OPTIONS',
+          'access-control-max-age': '600',
         };
         if (req.method == 'OPTIONS') return Response.ok('', headers: headers);
         final res = await inner(req);
@@ -676,6 +739,9 @@ class Api {
     }
     // Megosztani elemzést lehet: csomag, élő próbaidő vagy extra elemzés kell.
     if (!quota.hasAccess(store.entitlement(uid))) return _error(402, 'no_plan');
+    // Csak olyan papír, amelyről a fiók elemzést készített (egy kitalált cég és főcím ne
+    // jelenhessen meg a WhatStock címén).
+    if (!store.hasAnalyzed(uid, '${data['symbol']}')) return _error(403, 'unknown_report');
     final id = shares.save(uid, data, image);
     return _json({'id': id, 'url': '$publicUrl/s/$id'});
   }
@@ -866,7 +932,11 @@ class Api {
     return _json({'ok': true});
   }
 
-  bool _isAdmin(String? key) => _secretEquals(key, adminToken);
+  /// Az admin oldal csak elég hosszú kulccsal él (egy rövid kulcs kitalálható).
+  static const adminTokenMinLength = 20;
+  bool get _adminEnabled => adminToken.length >= adminTokenMinLength;
+
+  bool _isAdmin(String? key) => _adminEnabled && _secretEquals(key, adminToken);
 
   /// Állandó idejű összehasonlítás (a kulcs ne legyen kitalálható időméréssel).
   static bool _secretEquals(String? key, String secret) {
@@ -885,14 +955,18 @@ class Api {
     headers: {'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'x-robots-tag': 'noindex'},
   );
 
-  Response _adminLogin(Request r) => adminToken.isEmpty ? Response.notFound('not found') : _html(adminLoginPage());
+  Response _adminLogin(Request r) => !_adminEnabled ? Response.notFound('not found') : _html(adminLoginPage());
 
   /// Hibás admin-kulcs és meghívókód: IP-címenként óránként legfeljebb ennyi próbálkozás.
   final _adminFailures = RateLimiter(10, const Duration(hours: 1));
+
+  /// Az összes IP-cím hibás admin-kulcsa együtt is korlátos (sok címről se lehessen találgatni).
+  final _adminFailuresAll = RateLimiter(100, const Duration(hours: 1));
   final _inviteFailures = RateLimiter(30, const Duration(hours: 1));
 
   Future<Response> _adminStats(Request r) async {
-    if (adminToken.isEmpty) return Response.notFound('not found');
+    if (!_adminEnabled) return Response.notFound('not found');
+    if (_crossSiteForm(r)) return _error(403, 'cross_site');
     final ipKey = _ipKey(_clientIp(r) ?? '-');
     String? key;
     try {
@@ -901,9 +975,10 @@ class Api {
       key = null; // Hibás űrlap: rossz kulcsként számít.
     }
     // A korlát a beolvasás után (a vizsgálat és a számolás között nincs várakozás).
-    if (_adminFailures.blocked(ipKey)) return _error(429, 'rate_limited');
+    if (_adminFailures.blocked(ipKey) || _adminFailuresAll.blocked('*')) return _error(429, 'rate_limited');
     if (!_isAdmin(key)) {
       _adminFailures.hit(ipKey);
+      _adminFailuresAll.hit('*');
       return _html(adminLoginPage(wrong: true), status: 403);
     }
     return _html(adminStatsPage({...telemetry.stats(), 'testers': _testerStats(), 'reports': reports.recent()}));
@@ -923,12 +998,13 @@ class Api {
 
   /// Ugyanez JSON-ban, `Authorization: Bearer <ADMIN_TOKEN>` fejléccel (szkriptekhez).
   Response _adminStatsJson(Request r) {
-    if (adminToken.isEmpty) return Response.notFound('not found');
+    if (!_adminEnabled) return Response.notFound('not found');
     // Ugyanaz a találgatás-korlát, mint az űrlapon.
     final ipKey = _ipKey(_clientIp(r) ?? '-');
-    if (_adminFailures.blocked(ipKey)) return _error(429, 'rate_limited');
+    if (_adminFailures.blocked(ipKey) || _adminFailuresAll.blocked('*')) return _error(429, 'rate_limited');
     if (!_isAdmin(_token(r))) {
       _adminFailures.hit(ipKey);
+      _adminFailuresAll.hit('*');
       return _error(403, 'forbidden');
     }
     final days = int.tryParse(r.url.queryParameters['days'] ?? '')?.clamp(1, 400) ?? 30;
@@ -1137,6 +1213,8 @@ class Api {
       if (raw.length > syncMaxBytes) return _error(413, 'too_large');
       body = jsonDecode(raw);
     } on _TooLarge {
+      rethrow;
+    } on _TooSlow {
       rethrow;
     } catch (_) {
       return _error(400, 'bad_request');
@@ -1396,6 +1474,8 @@ class Api {
   /// válasz ugyanaz, ha nincs, így a cím létezése nem derül ki), majd `confirm` (kóddal).
   Future<Response> _accountDeleteSubmit(Request r) async {
     final lang = _pageLang(r);
+    // Más oldalról beküldött űrlap (pl. egy keretbe rejtett törlőoldal) nem indít törlést.
+    if (_crossSiteForm(r)) return _html(accountDeletePage(lang: lang, step: AccountDeleteStep.start), status: 403);
     Map<String, String> form;
     try {
       form = Uri.splitQueryString(await r.readAsString());
@@ -2800,6 +2880,8 @@ class Api {
       return (jsonDecode(s) as Map).cast<String, dynamic>();
     } on _TooLarge {
       rethrow; // a méretkorlát 413-at ad
+    } on _TooSlow {
+      rethrow; // a határidő 408-at ad
     } catch (_) {
       return const {};
     }
@@ -2818,6 +2900,11 @@ class Api {
 /// A kérés törzse túllépte a megengedett méretet (olvasás közben derül ki).
 class _TooLarge implements Exception {
   const _TooLarge();
+}
+
+/// A kérés törzse túl lassan érkezik (408).
+class _TooSlow implements Exception {
+  const _TooSlow();
 }
 
 /// Egy elemzés-kérés eredménye (a megismételt kérés ugyanezt kapja vissza).

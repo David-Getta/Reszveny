@@ -31,6 +31,7 @@ class ShareStore {
       );
       CREATE UNIQUE INDEX IF NOT EXISTS shares_dedupe ON shares(user_id, dedupe_key);
       CREATE INDEX IF NOT EXISTS shares_user ON shares(user_id, created_at);
+      CREATE INDEX IF NOT EXISTS shares_created ON shares(created_at);
     ''');
   }
 

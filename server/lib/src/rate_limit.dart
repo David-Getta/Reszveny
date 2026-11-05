@@ -9,6 +9,16 @@ class RateLimiter {
   final DateTime Function() _clock;
   final _hits = <String, List<DateTime>>{};
 
+  /// A régi kulcsok takarításának küszöbe: takarítás után a megmaradt kulcsok kétszeresére
+  /// nő, így sok élő kulcsnál sem fut minden hívásnál egy teljes bejárás (O(n²) helyett).
+  int _sweepAt = 10000;
+
+  void _maybeSweep(DateTime since) {
+    if (_hits.length <= _sweepAt) return;
+    _hits.removeWhere((_, v) => v.isEmpty || !v.last.isAfter(since));
+    _sweepAt = _hits.length * 2 > 10000 ? _hits.length * 2 : 10000;
+  }
+
   /// Belefér-e még egy esemény (és ha igen, fel is jegyzi).
   bool allow(String key) {
     final now = _clock();
@@ -17,7 +27,7 @@ class RateLimiter {
     if (hits.length >= max) return false;
     hits.add(now);
     // Időnként takarítunk, hogy a régi kulcsok ne gyűljenek.
-    if (_hits.length > 10000) _hits.removeWhere((_, v) => v.isEmpty || !v.last.isAfter(since));
+    _maybeSweep(since);
     return true;
   }
 
@@ -38,7 +48,7 @@ class RateLimiter {
     final since = now.subtract(window);
     final hits = (_hits[key] ??= [])..removeWhere((t) => !t.isAfter(since));
     hits.add(now);
-    if (_hits.length > 10000) _hits.removeWhere((_, v) => v.isEmpty || !v.last.isAfter(since));
+    _maybeSweep(since);
   }
 
   /// A nyilvántartott kulcsok száma (teszthez).

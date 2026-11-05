@@ -120,12 +120,12 @@ void main() {
       anthropicApiKey: 'sk-test',
       finnhubApiKey: 'fh-test',
       verifier: const DevVerifier(),
-      adminToken: 'admin-secret',
+      adminToken: 'admin-secret-1234567890',
       testers: TesterBook.parse('DAVID-TESZT:Dávid:max:30:2'),
     );
     final me = await newUser();
     await call('POST', '/v1/referral/redeem', token: me, body: {'code': 'DAVID-TESZT'});
-    final stats = await call('GET', '/admin/stats.json', token: 'admin-secret');
+    final stats = await call('GET', '/admin/stats.json', token: 'admin-secret-1234567890');
     expect(stats.body['testers'], [
       {'label': 'Dávid', 'tier': 'max', 'days': 30, 'used': 1, 'max': 2},
     ]);

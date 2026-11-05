@@ -13,8 +13,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline =>
-      'Լուսանկարեք բաժնետոմսը և իմացեք դրա մասին ամեն ինչ։';
+  String get homeTagline => 'Լուսանկարեք բաժնետոմսը և իմացեք դրա մասին ամեն ինչ։';
 
   @override
   String get homeHint =>
@@ -356,8 +355,7 @@ class AppLocalizationsHy extends AppLocalizations {
       'Պատկերների ճանաչումը կարգավորված չէ (ANTHROPIC_API_KEY չկա)։ Մուտքագրեք թիքերը ձեռքով։';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Չհաջողվեց կապ հաստատել ճանաչման ծառայության հետ։ Ստուգեք ինտերնետ կապը։';
+  String get errRecognitionUnreachable => 'Չհաջողվեց կապ հաստատել ճանաչման ծառայության հետ։ Ստուգեք ինտերնետ կապը։';
 
   @override
   String errRecognitionHttp(String status) {
@@ -365,24 +363,19 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Ճանաչման ծառայությունը չկարողացավ մշակել այս պատկերը։';
+  String get errRecognitionRefused => 'Ճանաչման ծառայությունը չկարողացավ մշակել այս պատկերը։';
 
   @override
-  String get errRecognitionTruncated =>
-      'Ճանաչման պատասխանը կտրվեց։ Խնդրում ենք նորից փորձել։';
+  String get errRecognitionTruncated => 'Ճանաչման պատասխանը կտրվեց։ Խնդրում ենք նորից փորձել։';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Անսպասելի պատասխան ճանաչման ծառայությունից։';
+  String get errRecognitionBadResponse => 'Անսպասելի պատասխան ճանաչման ծառայությունից։';
 
   @override
-  String get errRecognitionEmpty =>
-      'Ճանաչման ծառայությունը դատարկ պատասխան վերադարձրեց։';
+  String get errRecognitionEmpty => 'Ճանաչման ծառայությունը դատարկ պատասխան վերադարձրեց։';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Շուկայական տվյալները կարգավորված չեն (FINNHUB_API_KEY չկա)։';
+  String get errMissingFinnhubKey => 'Շուկայական տվյալները կարգավորված չեն (FINNHUB_API_KEY չկա)։';
 
   @override
   String get errMarketUnreachable =>
@@ -398,8 +391,7 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Անսպասելի պատասխան շուկայական տվյալների ծառայությունից։';
+  String get errMarketBadResponse => 'Անսպասելի պատասխան շուկայական տվյալների ծառայությունից։';
 
   @override
   String errNoQuote(String symbol) {
@@ -499,8 +491,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get aiRegenerate => 'Ստեղծել նորից';
 
   @override
-  String get aiGenerating =>
-      'Վերլուծությունը պատրաստվում է… սա կարող է տևել մեկ-երկու րոպե։';
+  String get aiGenerating => 'Վերլուծությունը պատրաստվում է… սա կարող է տևել մեկ-երկու րոպե։';
 
   @override
   String get aiSources => 'Աղբյուրներ';
@@ -515,12 +506,10 @@ class AppLocalizationsHy extends AppLocalizations {
       'AI-ի կողմից ստեղծված վերլուծություն՝ հիմնված հանրային տվյալների և վերջին նորությունների վրա։ Այն կարող է սխալներ պարունակել կամ հնացած լինել և ներդրումային խորհուրդ չէ։';
 
   @override
-  String get errAiNotConfigured =>
-      'AI վերլուծությունը կարգավորված չէ (ANTHROPIC_API_KEY չկա)։';
+  String get errAiNotConfigured => 'AI վերլուծությունը կարգավորված չէ (ANTHROPIC_API_KEY չկա)։';
 
   @override
-  String get errAiUnreachable =>
-      'Չհաջողվեց կապ հաստատել AI ծառայության հետ։ Ստուգեք ինտերնետ կապը։';
+  String get errAiUnreachable => 'Չհաջողվեց կապ հաստատել AI ծառայության հետ։ Ստուգեք ինտերնետ կապը։';
 
   @override
   String errAiHttp(String status) {
@@ -528,8 +517,7 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'AI ծառայությունը հրաժարվեց վերլուծել այս բաժնետոմսը։';
+  String get errAiRefused => 'AI ծառայությունը հրաժարվեց վերլուծել այս բաժնետոմսը։';
 
   @override
   String get errAiBadResponse => 'Անսպասելի պատասխան AI ծառայությունից։';
@@ -553,8 +541,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get rangeFiveYears => '5Տ';
 
   @override
-  String get chartUnavailable =>
-      'Գնի պատմությունը հասանելի չէ տվյալների ընթացիկ աղբյուրից։';
+  String get chartUnavailable => 'Գնի պատմությունը հասանելի չէ տվյալների ընթացիկ աղբյուրից։';
 
   @override
   String get sectionStatements => 'Ֆինանսական հաշվետվություններ (տարեկան)';
@@ -581,8 +568,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get labelOperatingCashFlow => 'Գործառնական դրամական հոսք';
 
   @override
-  String get statementsUnavailable =>
-      'Այս բաժնետոմսի համար հրապարակված ֆինանսական հաշվետվություններ հասանելի չեն։';
+  String get statementsUnavailable => 'Այս բաժնետոմսի համար հրապարակված ֆինանսական հաշվետվություններ հասանելի չեն։';
 
   @override
   String get launchAtLogin => 'Գործարկել համակարգ մուտք գործելիս';
@@ -591,8 +577,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get hotkeyLabel => 'Գլոբալ ստեղնային դյուրանցում';
 
   @override
-  String get hotkeyRecordHint =>
-      'Սեղմեք այստեղ, ապա սեղմեք ստեղների նոր համակցությունը';
+  String get hotkeyRecordHint => 'Սեղմեք այստեղ, ապա սեղմեք ստեղների նոր համակցությունը';
 
   @override
   String get hotkeyReset => 'Վերականգնել կանխադրվածը';
@@ -613,8 +598,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get removeFromFavorites => 'Հեռացնել ընտրյալներից';
 
   @override
-  String get noFavorites =>
-      'Ընտրյալներ դեռ չկան։ Հպեք բաժնետոմսի աստղիկին՝ այն ավելացնելու համար։';
+  String get noFavorites => 'Ընտրյալներ դեռ չկան։ Հպեք բաժնետոմսի աստղիկին՝ այն ավելացնելու համար։';
 
   @override
   String get displayCurrency => 'Ցուցադրման արժույթ';
@@ -661,8 +645,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get updateDownloading => 'Թարմացումը ներբեռնվում է ֆոնային ռեժիմում…';
 
   @override
-  String get updateDownloaded =>
-      'Թարմացումը պատրաստ է։ Վերագործարկեք՝ այն տեղադրելու համար։';
+  String get updateDownloaded => 'Թարմացումը պատրաստ է։ Վերագործարկեք՝ այն տեղադրելու համար։';
 
   @override
   String get updateNow => 'Թարմացնել';
@@ -671,8 +654,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get restartNow => 'Վերագործարկել';
 
   @override
-  String get updatesViaStore =>
-      'Թարմացումները ստացվում են ավտոմատ կերպով՝ հավելվածների խանութի միջոցով։';
+  String get updatesViaStore => 'Թարմացումները ստացվում են ավտոմատ կերպով՝ հավելվածների խանութի միջոցով։';
 
   @override
   String get updateCheckFailed => 'Չհաջողվեց ստուգել թարմացումները։';
@@ -720,8 +702,7 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Ձեր անվճար փորձաշրջանն ավարտվել է։ Ընտրեք պլան՝ վերլուծությունները շարունակելու համար։';
+  String get trialExpired => 'Ձեր անվճար փորձաշրջանն ավարտվել է։ Ընտրեք պլան՝ վերլուծությունները շարունակելու համար։';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -757,8 +738,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get perMonth => '/ ամիս';
 
   @override
-  String get extraPacksTitle =>
-      'Ավելի՞ն է պետք։ Գնեք լրացուցիչ վերլուծություններ';
+  String get extraPacksTitle => 'Ավելի՞ն է պետք։ Գնեք լրացուցիչ վերլուծություններ';
 
   @override
   String get extraPacksHint =>
@@ -794,8 +774,7 @@ class AppLocalizationsHy extends AppLocalizations {
       'Այս ժամանակահատվածի համար վերլուծություններ չեն մնացել։ Անցեք ավելի բարձր պլանի կամ գնեք լրացուցիչ վերլուծություններ։';
 
   @override
-  String get errTrialExpired =>
-      'Ձեր անվճար փորձաշրջանն ավարտվել է։ Ընտրեք պլան՝ շարունակելու համար։';
+  String get errTrialExpired => 'Ձեր անվճար փորձաշրջանն ավարտվել է։ Ընտրեք պլան՝ շարունակելու համար։';
 
   @override
   String get errNoPlan => 'AI վերլուծության համար անհրաժեշտ է ակտիվ պլան։';
@@ -807,8 +786,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get usageTitle => 'Օգտագործում';
 
   @override
-  String get demoPurchaseNote =>
-      'Դեմո վճարումներ՝ այս հարթակում գնումները նմանակվում են։';
+  String get demoPurchaseNote => 'Դեմո վճարումներ՝ այս հարթակում գնումները նմանակվում են։';
 
   @override
   String get mostPopular => 'Ամենահայտնի';
@@ -848,8 +826,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get aiDepthStandardDesc => 'Ամբողջական զեկույց՝ բոլոր բաժիններով։';
 
   @override
-  String get aiDepthDeepDesc =>
-      'Ավելի շատ վեբ որոնումներ, համեմատություն մրցակիցների հետ և ավելի խորը մանրամասներ։';
+  String get aiDepthDeepDesc => 'Ավելի շատ վեբ որոնումներ, համեմատություն մրցակիցների հետ և ավելի խորը մանրամասներ։';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -877,29 +854,24 @@ class AppLocalizationsHy extends AppLocalizations {
   String get aiReaderExperienced => 'Փորձառու';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'Պարզ լեզու՝ յուրաքանչյուր մասնագիտական տերմինի բացատրությամբ։';
+  String get aiReaderBeginnerDesc => 'Պարզ լեզու՝ յուրաքանչյուր մասնագիտական տերմինի բացատրությամբ։';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'Ավելի խիտ տեքստ՝ ստանդարտ ֆինանսական տերմինաբանությամբ։';
+  String get aiReaderExperiencedDesc => 'Ավելի խիտ տեքստ՝ ստանդարտ ֆինանսական տերմինաբանությամբ։';
 
   @override
   String get aiCounterArgument => 'Ամենաուժեղ հակափաստարկը';
 
   @override
-  String get aiCounterArgumentDesc =>
-      'Ամփոփումը միշտ ավարտվում է սեփական եզրակացության դեմ ամենաուժեղ փաստարկով։';
+  String get aiCounterArgumentDesc => 'Ամփոփումը միշտ ավարտվում է սեփական եզրակացության դեմ ամենաուժեղ փաստարկով։';
 
   @override
   String aiWebSearchesInfo(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'Ձեր պլանով՝ մինչև $count վեբ որոնում յուրաքանչյուր վերլուծության համար',
-      one:
-          'Ձեր պլանով՝ մինչև $count վեբ որոնում յուրաքանչյուր վերլուծության համար',
+      other: 'Ձեր պլանով՝ մինչև $count վեբ որոնում յուրաքանչյուր վերլուծության համար',
+      one: 'Ձեր պլանով՝ մինչև $count վեբ որոնում յուրաքանչյուր վերլուծության համար',
     );
     return '$_temp0';
   }
@@ -1000,12 +972,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get notSignedIn => 'Մուտք գործված չէ';
 
   @override
-  String get accountBenefit =>
-      'Մուտք գործեք, որպեսզի ձեր բաժանորդագրությունն աշխատի ձեր բոլոր սարքերում։';
+  String get accountBenefit => 'Մուտք գործեք, որպեսզի ձեր բաժանորդագրությունն աշխատի ձեր բոլոր սարքերում։';
 
   @override
-  String get accountSyncedNote =>
-      'Ձեր բաժանորդագրությունը և մնացած վերլուծությունները նույնն են բոլոր սարքերում։';
+  String get accountSyncedNote => 'Ձեր բաժանորդագրությունը և մնացած վերլուծությունները նույնն են բոլոր սարքերում։';
 
   @override
   String get signInTitle => 'Մուտք WhatStock';
@@ -1037,16 +1007,13 @@ class AppLocalizationsHy extends AppLocalizations {
   String get errInvalidEmail => 'Մուտքագրեք վավեր էլ. փոստի հասցե։';
 
   @override
-  String get errSignInFailed =>
-      'Մուտքը չհաջողվեց։ Ստուգեք կապը և նորից փորձեք։';
+  String get errSignInFailed => 'Մուտքը չհաջողվեց։ Ստուգեք կապը և նորից փորձեք։';
 
   @override
-  String get checkoutWaiting =>
-      'Ավարտեք վճարումը դիտարկիչում։ Հավելվածն ինքնաշխատ կթարմացվի, երբ վճարումն ավարտվի։';
+  String get checkoutWaiting => 'Ավարտեք վճարումը դիտարկիչում։ Հավելվածն ինքնաշխատ կթարմացվի, երբ վճարումն ավարտվի։';
 
   @override
-  String get paymentViaStripe =>
-      'Անվտանգ վճարում դիտարկիչում Stripe-ի միջոցով։ Կարող եք չեղարկել ցանկացած ժամանակ։';
+  String get paymentViaStripe => 'Անվտանգ վճարում դիտարկիչում Stripe-ի միջոցով։ Կարող եք չեղարկել ցանկացած ժամանակ։';
 
   @override
   String get paymentViaStore =>
@@ -1059,8 +1026,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get doubleOptionTitle => 'Option-ի կրկնակի սեղմում';
 
   @override
-  String get doubleOptionSubtitle =>
-      'Option ստեղնի արագ կրկնակի սեղմումը նույնպես բացում է WhatStock-ը։';
+  String get doubleOptionSubtitle => 'Option ստեղնի արագ կրկնակի սեղմումը նույնպես բացում է WhatStock-ը։';
 
   @override
   String get doubleOptionPermission =>
@@ -1082,12 +1048,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '$years տարի',
-      one: '$years տարի',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years տարի', one: '$years տարի');
     return '$_temp0';
   }
 
@@ -1193,8 +1154,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get portfolioRemove => 'Հեռացնել';
 
   @override
-  String get portfolioExcluded =>
-      'Առանց գնի կամ փոխարժեքի դիրքերը չեն ներառվում ընդհանուր գումարներում։';
+  String get portfolioExcluded => 'Առանց գնի կամ փոխարժեքի դիրքերը չեն ներառվում ընդհանուր գումարներում։';
 
   @override
   String get priceAlerts => 'Գնային ծանուցումներ';
@@ -1330,8 +1290,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get accountDeleted => 'Ձեր հաշիվը ջնջվել է։';
 
   @override
-  String get errDeleteAccount =>
-      'Չհաջողվեց ջնջել հաշիվը։ Ստուգեք կապը և նորից փորձեք։';
+  String get errDeleteAccount => 'Չհաջողվեց ջնջել հաշիվը։ Ստուգեք կապը և նորից փորձեք։';
 
   @override
   String get aiTrialBriefNote =>
@@ -1368,8 +1327,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get inviteTitle => 'Փակ նախադիտում';
 
   @override
-  String get inviteBody =>
-      'WhatStock հավելվածը առայժմ հասանելի է միայն հրավերով։ Մուտքագրեք Ձեր ստացած հրավերի կոդը։';
+  String get inviteBody => 'WhatStock հավելվածը առայժմ հասանելի է միայն հրավերով։ Մուտքագրեք Ձեր ստացած հրավերի կոդը։';
 
   @override
   String get inviteCodeLabel => 'Հրավերի կոդ';
@@ -1381,12 +1339,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get inviteInvalid => 'Այս հրավերի կոդը վավեր չէ։';
 
   @override
-  String get inviteExpired =>
-      'Այս հրավերի ժամկետն անցել է։ Նոր կոդ խնդրեք Ձեզ հրավիրողից։';
+  String get inviteExpired => 'Այս հրավերի ժամկետն անցել է։ Նոր կոդ խնդրեք Ձեզ հրավիրողից։';
 
   @override
-  String get inviteDeviceLimit =>
-      'Այս հրավերի կոդն արդեն օգտագործվում է թույլատրելի առավելագույն թվով սարքերում։';
+  String get inviteDeviceLimit => 'Այս հրավերի կոդն արդեն օգտագործվում է թույլատրելի առավելագույն թվով սարքերում։';
 
   @override
   String get previewConfidential => 'Գաղտնի նախադիտում';
@@ -1397,23 +1353,13 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count ժամ առաջ',
-      one: '$count ժամ առաջ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ժամ առաջ', one: '$count ժամ առաջ');
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count օր առաջ',
-      one: '$count օր առաջ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count օր առաջ', one: '$count օր առաջ');
     return '$_temp0';
   }
 
@@ -1448,8 +1394,7 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint =>
-      'Հպեք AI-ի գնահատած մակարդակին՝ ծանուցում ստանալու համար, երբ գինը հասնի դրան։';
+  String get keyLevelAlertHint => 'Հպեք AI-ի գնահատած մակարդակին՝ ծանուցում ստանալու համար, երբ գինը հասնի դրան։';
 
   @override
   String get shareAnalysisTitle => 'Կիսվել վերլուծությամբ';
@@ -1507,8 +1452,7 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown =>
-      'Այս կոդը գոյություն չունի։ Ստուգեք այն և նորից փորձեք։';
+  String get referralErrUnknown => 'Այս կոդը գոյություն չունի։ Ստուգեք այն և նորից փորձեք։';
 
   @override
   String get referralErrOwn => 'Դուք չեք կարող ակտիվացնել ձեր սեփական կոդը։';
@@ -1588,8 +1532,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get telemetryDecline => 'Ոչ, շնորհակալություն';
 
   @override
-  String get telemetrySetting =>
-      'Անանուն վիճակագրություն և խափանումների հաշվետվություններ';
+  String get telemetrySetting => 'Անանուն վիճակագրություն և խափանումների հաշվետվություններ';
 
   @override
   String get telemetrySettingHint =>
@@ -1626,24 +1569,17 @@ class AppLocalizationsHy extends AppLocalizations {
   String get askSuggest3 => 'Բացատրիր պարզ բառերով';
 
   @override
-  String get askMaxReached =>
-      'Սա այս վերլուծության վերջին հարցն էր։ Նոր հարցերի համար ստեղծեք նոր վերլուծություն։';
+  String get askMaxReached => 'Սա այս վերլուծության վերջին հարցն էր։ Նոր հարցերի համար ստեղծեք նոր վերլուծություն։';
 
   @override
-  String get errAskLimit =>
-      'Դուք սպառել եք այսօրվա հարցերի սահմանաչափը։ Փորձեք կրկին վաղը։';
+  String get errAskLimit => 'Դուք սպառել եք այսօրվա հարցերի սահմանաչափը։ Փորձեք կրկին վաղը։';
 
   @override
   String get eventTomorrow => 'Վաղը';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days օր հետո',
-      one: '$days օր հետո',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days օր հետո', one: '$days օր հետո');
     return '$_temp0';
   }
 
@@ -1727,8 +1663,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get notesTitle => 'Իմ նշումները';
 
   @override
-  String get notesHint =>
-      'Ինչո՞ւ եք գնել, ինչի՞ն եք հետևում, ի՞նչը կստիպի ձեզ վաճառել։';
+  String get notesHint => 'Ինչո՞ւ եք գնել, ինչի՞ն եք հետևում, ի՞նչը կստիպի ձեզ վաճառել։';
 
   @override
   String get notesInfo =>
@@ -1790,8 +1725,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get syncNow => 'Համաժամացնել հիմա';
 
   @override
-  String get syncFailed =>
-      'Չհաջողվեց համաժամացնել։ Կրկին փորձ կարվի ավտոմատ կերպով։';
+  String get syncFailed => 'Չհաջողվեց համաժամացնել։ Կրկին փորձ կարվի ավտոմատ կերպով։';
 
   @override
   String get alertEmailTitle => 'Էլ. նամակ, երբ ծանուցումը գործարկվում է';
@@ -1920,8 +1854,7 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'Որքան արժե ամբողջ ընկերությունը բորսայում՝ բաժնետոմսի գին × բաժնետոմսերի քանակ։';
+  String get glossMarketCap => 'Որքան արժե ամբողջ ընկերությունը բորսայում՝ բաժնետոմսի գին × բաժնետոմսերի քանակ։';
 
   @override
   String get glossSharesOutstanding =>
@@ -1960,12 +1893,10 @@ class AppLocalizationsHy extends AppLocalizations {
       'Որքան է բաժնետոմսը շարժվում շուկայի հետ՝ 1 = ինչպես շուկան, 1,5 = մոտ 50%-ով ավելի մեծ տատանումներ, 1-ից ցածր = ավելի հանգիստ։';
 
   @override
-  String get glossRevenueTtm =>
-      'Վերջին 12 ամսվա ընդհանուր վաճառքը՝ մինչև որևէ ծախս։';
+  String get glossRevenueTtm => 'Վերջին 12 ամսվա ընդհանուր վաճառքը՝ մինչև որևէ ծախս։';
 
   @override
-  String get glossNetIncomeTtm =>
-      'Վերջին 12 ամսում բոլոր ծախսերից, տոկոսներից և հարկերից հետո մնացած շահույթը։';
+  String get glossNetIncomeTtm => 'Վերջին 12 ամսում բոլոր ծախսերից, տոկոսներից և հարկերից հետո մնացած շահույթը։';
 
   @override
   String get glossGrossMargin =>
@@ -1996,20 +1927,17 @@ class AppLocalizationsHy extends AppLocalizations {
       'Կարճաժամկետ ակտիվներ ÷ մեկ տարվա ընթացքում վճարվելիք պարտավորություններ։ 1-ից բարձրը նշանակում է, որ ընկերությունը կարող է ծածկել մոտակա վճարումները։';
 
   @override
-  String get glossRevenueGrowth =>
-      'Որքանով է աճել հասույթը մեկ տարի առաջվա համեմատ։';
+  String get glossRevenueGrowth => 'Որքանով է աճել հասույթը մեկ տարի առաջվա համեմատ։';
 
   @override
-  String get glossEpsGrowth =>
-      'Որքանով է աճել մեկ բաժնետոմսին բաժին ընկնող շահույթը մեկ տարի առաջվա համեմատ։';
+  String get glossEpsGrowth => 'Որքանով է աճել մեկ բաժնետոմսին բաժին ընկնող շահույթը մեկ տարի առաջվա համեմատ։';
 
   @override
   String get glossDividendYield =>
       'Տարեկան շահաբաժին ÷ բաժնետոմսի գին՝ ամեն տարի ստացվող դրամական եկամուտը՝ որպես վճարած գումարի տոկոս։';
 
   @override
-  String get glossDividendPerShare =>
-      'Վերջին տարում մեկ բաժնետոմսի դիմաց վճարված շահաբաժինը։';
+  String get glossDividendPerShare => 'Վերջին տարում մեկ բաժնետոմսի դիմաց վճարված շահաբաժինը։';
 
   @override
   String get glossPayoutRatio =>
@@ -2107,8 +2035,7 @@ class AppLocalizationsHy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'EPS-ը սպասվածին հավասար կամ բարձր՝ վերջին $total եռամսյակից $beats-ում',
+      other: 'EPS-ը սպասվածին հավասար կամ բարձր՝ վերջին $total եռամսյակից $beats-ում',
       one: 'EPS-ը սպասվածին հավասար կամ բարձր՝ $total եռամսյակից $beats-ում',
     );
     return '$_temp0';
@@ -2225,23 +2152,13 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count գնում',
-      one: '$count գնում',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count գնում', one: '$count գնում');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count վաճառք',
-      one: '$count վաճառք',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count վաճառք', one: '$count վաճառք');
     return '$_temp0';
   }
 
@@ -2261,8 +2178,7 @@ class AppLocalizationsHy extends AppLocalizations {
       'Ղեկավարների և տնօրենների գնումներն ու վաճառքները բաց շուկայում վերջին 90 օրվա ընթացքում (SEC Form 4)։ Օպցիոնների իրացումը և բաժնետոմսերի պարգևները չեն հաշվվում։';
 
   @override
-  String get insiderNone =>
-      'Վերջին 90 օրվա ընթացքում բաց շուկայում ինսայդերային գնումներ կամ վաճառքներ չեն եղել։';
+  String get insiderNone => 'Վերջին 90 օրվա ընթացքում բաց շուկայում ինսայդերային գնումներ կամ վաճառքներ չեն եղել։';
 
   @override
   String get analystTrend => 'Ինչպես են փոխվել կարծիքներն ամիս առ ամիս';
@@ -2302,15 +2218,13 @@ class AppLocalizationsHy extends AppLocalizations {
   String get backupSave => 'Պահել պահուստային պատճենը';
 
   @override
-  String get backupSaveHint =>
-      'Ձեր ընտրյալները, ցուցակները, պորտֆելը, ծանուցումները և նշումները մեկ ֆայլում։';
+  String get backupSaveHint => 'Ձեր ընտրյալները, ցուցակները, պորտֆելը, ծանուցումները և նշումները մեկ ֆայլում։';
 
   @override
   String get backupRestore => 'Վերականգնել պահուստային պատճենից';
 
   @override
-  String get backupRestoreHint =>
-      'Ավելացնում է ֆայլում եղածը. ձեր ներկայիս տվյալներից ոչինչ չի ջնջվում։';
+  String get backupRestoreHint => 'Ավելացնում է ֆայլում եղածը. ձեր ներկայիս տվյալներից ոչինչ չի ջնջվում։';
 
   @override
   String get backupRestored => 'Պահուստային պատճենը վերականգնվեց։';
@@ -2429,8 +2343,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Պորտֆելի ծանուցում';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'Ծանուցում, երբ ամբողջ պորտֆելը մեկ օրում այսքան է փոխվում։';
+  String get portfolioMoveAlertSubtitle => 'Ծանուցում, երբ ամբողջ պորտֆելը մեկ օրում այսքան է փոխվում։';
 
   @override
   String get portfolioMoveAlertOff => 'Անջատված';
@@ -2486,8 +2399,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get positionsSortWeight => 'Ամենամեծերը սկզբում';
 
   @override
-  String get positionsSortGain =>
-      'Ամենաբարձր ընդհանուր եկամտաբերությունը սկզբում';
+  String get positionsSortGain => 'Ամենաբարձր ընդհանուր եկամտաբերությունը սկզբում';
 
   @override
   String get positionsSortToday => 'Այսօրվա լավագույնները սկզբում';
@@ -2603,17 +2515,11 @@ class AppLocalizationsHy extends AppLocalizations {
   String get portfolioTopHoldings => 'Ամենամեծ դիրքերը';
 
   @override
-  String get portfolioShareNote =>
-      'Կիսվում են միայն տոկոսները, ոչ թե գումարները։';
+  String get portfolioShareNote => 'Կիսվում են միայն տոկոսները, ոչ թե գումարները։';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count դիրք',
-      one: '$count դիրք',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count դիրք', one: '$count դիրք');
     return '$_temp0';
   }
 
@@ -2670,8 +2576,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get portfolioSampleRemove => 'Հեռացնել օրինակը';
 
   @override
-  String get portfolioStopsAll =>
-      'Գագաթից անկման ծանուցում բոլոր դիրքերի համար';
+  String get portfolioStopsAll => 'Գագաթից անկման ծանուցում բոլոր դիրքերի համար';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2720,12 +2625,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lotNoteAdd => 'Ավելացնել նշում';
 
   @override
-  String get lotNoteBuyHint =>
-      'Ինչո՞ւ եք գնում։ Այն ամսաթվով կավելանա բաժնետոմսի նշումներին։';
+  String get lotNoteBuyHint => 'Ինչո՞ւ եք գնում։ Այն ամսաթվով կավելանա բաժնետոմսի նշումներին։';
 
   @override
-  String get lotNoteSellHint =>
-      'Ինչո՞ւ եք վաճառում։ Այն ամսաթվով կավելանա բաժնետոմսի նշումներին։';
+  String get lotNoteSellHint => 'Ինչո՞ւ եք վաճառում։ Այն ամսաթվով կավելանա բաժնետոմսի նշումներին։';
 
   @override
   String get lotNoteBought => 'Գնված';
@@ -2735,23 +2638,13 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: '$months ամիս',
-      one: '$months ամիս',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months ամիս', one: '$months ամիս');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days օր',
-      one: '$days օր',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days օր', one: '$days օր');
     return '$_temp0';
   }
 
@@ -2839,12 +2732,10 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'Մուտք գործեք ձեր էլ. փոստով՝ ընկերոջ կոդն ակտիվացնելու համար։';
+  String get referralErrSignIn => 'Մուտք գործեք ձեր էլ. փոստով՝ ընկերոջ կոդն ակտիվացնելու համար։';
 
   @override
-  String get referralErrFull =>
-      'Այս կոդն արդեն ակտիվացվել է առավելագույն թվով անգամ։';
+  String get referralErrFull => 'Այս կոդն արդեն ակտիվացվել է առավելագույն թվով անգամ։';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2877,16 +2768,14 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing =>
-      'Վերականգնելու համար նախկին գնումներ չեն գտնվել։';
+  String get restoreNothing => 'Վերականգնելու համար նախկին գնումներ չեն գտնվել։';
 
   @override
   String get manageSubscriptionElsewhere =>
       'Այստեղ կառավարելու բաժանորդագրություն չկա։ App Store-ում կամ Google Play-ում գնված բաժանորդագրությունը կառավարվում է խանութի կարգավորումներում։';
 
   @override
-  String get backupFailed =>
-      'Չհաջողվեց պահել պահուստային պատճենը։ Խնդրում ենք նորից փորձել։';
+  String get backupFailed => 'Չհաջողվեց պահել պահուստային պատճենը։ Խնդրում ենք նորից փորձել։';
 
   @override
   String get syncTooLarge =>
@@ -2906,10 +2795,8 @@ class AppLocalizationsHy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          '$currencies-ով $count շահաբաժին փոխարժեք չունի և չի ներառվում ընդհանուր գումարներում։',
-      one:
-          '$currencies-ով $count շահաբաժին փոխարժեք չունի և չի ներառվում ընդհանուր գումարներում։',
+      other: '$currencies-ով $count շահաբաժին փոխարժեք չունի և չի ներառվում ընդհանուր գումարներում։',
+      one: '$currencies-ով $count շահաբաժին փոխարժեք չունի և չի ներառվում ընդհանուր գումարներում։',
     );
     return '$_temp0';
   }
@@ -3105,8 +2992,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get compareNextReport => 'Հաջորդ հաշվետվություն';
 
   @override
-  String get resolvingDescription =>
-      'Պարզվում է, թե որ բաժնետոմսն եք նկատի ունեցել…';
+  String get resolvingDescription => 'Պարզվում է, թե որ բաժնետոմսն եք նկատի ունեցել…';
 
   @override
   String get instrumentTitle => 'Այս գործիքի մասին';
@@ -3301,12 +3187,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get techNeutral => 'չեզոք';
 
   @override
-  String get techGoldenCross =>
-      '50-օրյա միջինը 200-օրյա միջինից բարձր է՝ դասական ընթերցմամբ վերընթաց միտում։';
+  String get techGoldenCross => '50-օրյա միջինը 200-օրյա միջինից բարձր է՝ դասական ընթերցմամբ վերընթաց միտում։';
 
   @override
-  String get techDeathCross =>
-      '50-օրյա միջինը 200-օրյա միջինից ցածր է՝ դասական ընթերցմամբ վայրընթաց միտում։';
+  String get techDeathCross => '50-օրյա միջինը 200-օրյա միջինից ցածր է՝ դասական ընթերցմամբ վայրընթաց միտում։';
 
   @override
   String get glossSma50 =>

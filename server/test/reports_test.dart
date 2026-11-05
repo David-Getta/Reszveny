@@ -22,7 +22,7 @@ void main() {
       anthropicApiKey: 'k',
       finnhubApiKey: 'k',
       verifier: const DevVerifier(),
-      adminToken: 'admin-secret',
+      adminToken: 'admin-secret-1234567890',
       client: MockClient((_) async => http.Response('{}', 404)),
     );
   });
@@ -60,7 +60,7 @@ void main() {
       },
     );
     expect(ok.status, 200);
-    final stats = await call('GET', '/admin/stats.json', token: 'admin-secret');
+    final stats = await call('GET', '/admin/stats.json', token: 'admin-secret-1234567890');
     final reports = (stats.body as Map)['reports'] as List;
     expect(reports.single, containsPair('excerpt', 'NVDA fell 40% today.'));
     expect(reports.single, containsPair('note', 'It did not'));

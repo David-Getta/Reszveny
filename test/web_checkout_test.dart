@@ -107,4 +107,12 @@ void main() {
     await account.signOut();
     expect(account.isSignedIn, isFalse);
   });
+
+  test('only Stripe\'s own https pages are opened for paying and managing', () {
+    expect(WebCheckoutBillingService.stripeUri('https://checkout.stripe.com/c/1'), isNotNull);
+    expect(WebCheckoutBillingService.stripeUri('https://billing.stripe.com/p/1'), isNotNull);
+    expect(WebCheckoutBillingService.stripeUri('http://checkout.stripe.com/c/1'), isNull);
+    expect(WebCheckoutBillingService.stripeUri('https://checkout.stripe.com.evil.example/c'), isNull);
+    expect(WebCheckoutBillingService.stripeUri('javascript:alert(1)'), isNull);
+  });
 }
