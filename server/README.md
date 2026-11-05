@@ -44,3 +44,7 @@ címe, ide tér vissza a Stripe), `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, 
 Élesítés lépésről lépésre (Railway, Hetzner, Fly.io): [`docs/SZERVER.md`](../docs/SZERVER.md).
 
 Docker: `docker build -t whatstock-server . && docker run -p 8080:8080 -v whatstock-data:/data -e ANTHROPIC_API_KEY=… -e FINNHUB_API_KEY=… whatstock-server`
+
+Proxy nélkül (a fenti `docker run` közvetlenül a nyilvános porton) állítsd be a `TRUST_PROXY=false`
+változót is: különben a kliens az `X-Forwarded-For` fejléccel bármilyen IP-címet állíthat magáról, és
+megkerülheti az IP-alapú korlátokat. Proxy (Railway, Fly.io, nginx) mögött az alapértelmezés (`true`) a jó.

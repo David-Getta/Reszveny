@@ -248,6 +248,7 @@ class Api {
         .addMiddleware(_securityHeaders())
         .addMiddleware(_cors())
         .addMiddleware(_logRequests())
+        .addMiddleware(_errors())
         .addMiddleware(_limitBody())
         .addMiddleware(_inviteGate())
         .addHandler(router.call);
@@ -262,7 +263,8 @@ class Api {
 
   static String? _token(Request r) {
     final auth = r.headers['authorization'] ?? '';
-    if (!auth.startsWith('Bearer ')) return null;
+    // A séma neve nem kis-nagybetű érzékeny (RFC 7235): „bearer” is jó.
+    if (auth.length < 7 || auth.substring(0, 7).toLowerCase() != 'bearer ') return null;
     return auth.substring(7).trim();
   }
 
@@ -318,6 +320,34 @@ class Api {
         );
         return res;
       };
+
+  /// A kezelőből kiszökő kivétel JSON-válasz lesz (a CORS- és biztonsági fejlécekkel, a
+  /// naplóban státusszal): a fölöttes szolgáltató (AI, árfolyam) elérhetetlensége 502
+  /// `upstream_unavailable`, más hiba 500 `internal`. Eddig a shelf csupasz 500-at adott CORS
+  /// nélkül, amit a webes app csak hálózati hibaként látott.
+  Middleware _errors() =>
+      (inner) => (req) async {
+        try {
+          return await inner(req);
+        } on HijackException {
+          rethrow;
+        } catch (e, st) {
+          if (isUpstreamFailure(e)) {
+            stderr.writeln('Fölöttes szolgáltató nem érhető el (/${logPath(req.url.path)}): ${e.runtimeType}');
+            return _error(502, 'upstream_unavailable');
+          }
+          stderr.writeln('Kezeletlen hiba (/${logPath(req.url.path)}): $e\n$st');
+          return _error(500, 'internal');
+        }
+      };
+
+  /// Hálózati hiba egy külső szolgáltató felé (kapcsolat, TLS, időtúllépés, megszakadt válasz).
+  static bool isUpstreamFailure(Object e) =>
+      e is SocketException ||
+      e is TlsException ||
+      e is HttpException ||
+      e is http.ClientException ||
+      e is TimeoutException;
 
   /// A naplózott útvonal: a leiratkozó token és a megosztás azonosítója nélkül
   /// (az útvonalban hordozott jogosultság se kerüljön a naplóba).
@@ -469,7 +499,11 @@ class Api {
         if (!missing && _inviteFailures.blocked(ipKey)) return _error(429, 'rate_limited');
         final invite = invites.find(sent);
         if (invite == null) {
-          if (!missing) _inviteFailures.hit(ipKey);
+          // Csak az új (itt még nem próbált) rossz kód számít: egy visszavont kódot ismételgető
+          // app nem zárja ki a közös IP (háztartás, iroda, CGNAT) többi tesztelőjét.
+          if (!missing && _inviteTried.allow('$ipKey|${sha256.convert(utf8.encode(sent.trim()))}')) {
+            _inviteFailures.hit(ipKey);
+          }
           return _error(403, missing ? 'invite_required' : 'invite_invalid');
         }
         if (invite.isExpired(store.clock())) return _error(403, 'invite_expired');
@@ -518,25 +552,48 @@ class Api {
   /// valódi címet – az elejére a kliens bármit írhat –, ezért a jobbról első
   /// nyilvános cím (a belső hálózati ugrások kimaradnak); közvetlen
   /// kapcsolatnál a socket címe.
+  /// Proxy (Railway) mögött fut-e: csak akkor hihető az `x-forwarded-for`. Közvetlenül
+  /// kiszolgálva (`TRUST_PROXY=false`, pl. a README `docker run` példája) a kliens bármit
+  /// írhatna bele, és minden IP-alapú korlátot megkerülhetne.
+  static bool trustProxy = true;
+
+  static String? clientIpForTest(Request r) => _clientIp(r);
+
   static String? _clientIp(Request r) {
-    final hops = (r.headers['x-forwarded-for'] ?? '').split(',').map((h) => h.trim()).where((h) => h.isNotEmpty);
-    final fwd = hops.toList().reversed.where((h) => !_privateAddress(h)).firstOrNull;
-    if (fwd != null) return fwd;
+    if (trustProxy) {
+      final hops = (r.headers['x-forwarded-for'] ?? '').split(',').map((h) => h.trim()).where((h) => h.isNotEmpty);
+      final fwd = hops.toList().reversed.where((h) => !_privateAddress(h)).firstOrNull;
+      if (fwd != null) return _parseIp(fwd)?.address ?? fwd;
+    }
     final info = r.context['shelf.io.connection_info'];
-    return info is HttpConnectionInfo ? info.remoteAddress.address : null;
+    return info is HttpConnectionInfo ? _parseIp(info.remoteAddress.address)?.address : null;
   }
+
+  /// A cím, az IPv6-ba csomagolt IPv4 (`::ffff:192.0.2.1`) kibontva: így nem esik minden
+  /// ilyen cím egyetlen (csupa nulla) /64-es előtagba.
+  static InternetAddress? _parseIp(String ip) {
+    final a = InternetAddress.tryParse(ip);
+    if (a == null || a.type != InternetAddressType.IPv6) return a;
+    final b = a.rawAddress;
+    final mapped = b.sublist(0, 10).every((x) => x == 0) && b[10] == 0xff && b[11] == 0xff;
+    return mapped ? InternetAddress.fromRawAddress(Uint8List.fromList(b.sublist(12))) : a;
+  }
+
+  static String ipKeyForTest(String ip) => _ipKey(ip);
 
   /// A korlátokhoz használt kulcs: a cím hash-e (IPv6-nál a /64 előtag, mert egy
   /// gép sok címet kaphat belőle).
   static String _ipKey(String ip) {
-    final a = InternetAddress.tryParse(ip);
-    final prefix = a != null && a.type == InternetAddressType.IPv6 ? a.rawAddress.sublist(0, 8).join('.') : ip;
+    final a = _parseIp(ip);
+    final prefix = a != null && a.type == InternetAddressType.IPv6
+        ? a.rawAddress.sublist(0, 8).join('.')
+        : (a?.address ?? ip);
     return sha256.convert(utf8.encode('ip:$prefix')).toString();
   }
 
   /// Belső hálózati (proxy-) cím: privát, helyi, CGNAT vagy egyedi helyi IPv6.
   static bool _privateAddress(String ip) {
-    final a = InternetAddress.tryParse(ip);
+    final a = _parseIp(ip);
     if (a == null) return true;
     if (a.isLoopback || a.isLinkLocal) return true;
     final b = a.rawAddress;
@@ -598,18 +655,28 @@ class Api {
   late final _codesPerAddressDaily = RateLimiter(10, const Duration(days: 1), clock: () => store.clock());
 
   /// Egy címre összesen naponta legfeljebb ennyi kód (a postafiók elárasztása ellen),
-  /// jóval a kérőnkénti korlát fölött.
+  /// jóval a kérőnkénti korlát fölött. Ezen túl még egy-egy kódot kaphat az, aki ma erre a
+  /// címre még nem kért (a cím gazdája a saját IP-jéről) – legfeljebb [codesPerAddressHardCap]-ig:
+  /// néhány idegen IP így nem zárhatja ki a gazdát egész napra.
   static const codesPerAddressPerDay = 40;
+  static const codesPerAddressHardCap = 100;
+
+  /// Kaphat-e még kódot ma a cím ettől a kérőtől (a címenkénti napi keret szerint).
+  bool _addressHasRoom(String email, String ipKey) {
+    final today = store.recentCodeCount(email, within: const Duration(days: 1));
+    if (today < codesPerAddressPerDay) return true;
+    return today < codesPerAddressHardCap &&
+        store.recentCodeCount(email, within: const Duration(days: 1), requester: ipKey) == 0;
+  }
 
   Future<Response> _emailStart(Request r) async {
     final raw = (await _body(r))['email'];
     final email = Store.normalizeEmail(raw is String ? raw : '');
     if (!_emailRe.hasMatch(email)) return _error(400, 'invalid_email');
-    if (store.recentCodeCount(email, within: const Duration(days: 1)) >= codesPerAddressPerDay) {
-      return _error(429, 'too_many_codes');
-    }
+    final ipKey = _ipKey(_clientIp(r) ?? '-');
+    if (!_addressHasRoom(email, ipKey)) return _error(429, 'too_many_codes');
     if (!_mayRequestCode(r, email)) return _error(429, 'too_many_codes');
-    final code = store.createLoginCode(email);
+    final code = store.createLoginCode(email, requester: ipKey);
     try {
       await mailer.sendLoginCode(email, code);
     } catch (e) {
@@ -639,9 +706,10 @@ class Api {
     final rawEmail = body['email'], rawCode = body['code'];
     final email = Store.normalizeEmail(rawEmail is String ? rawEmail : '');
     final code = rawCode is String ? rawCode : (rawCode is int ? '$rawCode' : '');
-    final failureKey = '${_ipKey(_clientIp(r) ?? '-')}|$email';
+    final ipKey = _ipKey(_clientIp(r) ?? '-');
+    final failureKey = '$ipKey|$email';
     if (_loginFailures.blocked(failureKey)) return _error(401, 'invalid_code');
-    if (!store.verifyLoginCode(email, code)) {
+    if (!store.verifyLoginCode(email, code, requester: ipKey)) {
       _loginFailures.hit(failureKey);
       return _error(401, 'invalid_code');
     }
@@ -768,7 +836,8 @@ class Api {
         headers: {'content-type': 'image/png', 'cache-control': 'public, max-age=86400', 'x-robots-tag': 'noindex'},
       );
     }
-    final s = shares.find(key, countView: true);
+    // A HEAD (link-ellenőrzők, előnézet-készítők) nem megtekintés.
+    final s = shares.find(key, countView: r.method == 'GET');
     if (s == null) return _html(shareMissingPage(), status: 404);
     return Response.ok(
       sharePage(s, publicUrl: publicUrl),
@@ -972,6 +1041,9 @@ class Api {
   final _adminFailuresAll = RateLimiter(100, const Duration(hours: 1));
   final _inviteFailures = RateLimiter(30, const Duration(hours: 1));
 
+  /// Az IP-ről óránként már próbált rossz meghívókódok (az ismétlés nem számít új hibának).
+  final _inviteTried = RateLimiter(1, const Duration(hours: 1));
+
   Future<Response> _adminStats(Request r) async {
     if (!_adminEnabled) return Response.notFound('not found');
     if (_crossSiteForm(r)) return _error(403, 'cross_site');
@@ -985,7 +1057,9 @@ class Api {
     // A korlát a beolvasás után (a vizsgálat és a számolás között nincs várakozás). A minden
     // címre közös korlát a helyes kulcsot nem zárja ki (különben a találgatás kizárná a gazdát).
     final valid = _isAdmin(key);
-    if (_adminFailures.blocked(ipKey) || (!valid && _adminFailuresAll.blocked('*'))) {
+    // A helyes kulcs (legalább 20 karakter, ki nem található) a korlátok mellett is beenged:
+    // a saját elgépelései után se zárja ki a gazdát egy órára.
+    if (!valid && (_adminFailures.blocked(ipKey) || _adminFailuresAll.blocked('*'))) {
       return _error(429, 'rate_limited');
     }
     if (!valid) {
@@ -1014,7 +1088,7 @@ class Api {
     // Ugyanaz a találgatás-korlát, mint az űrlapon.
     final ipKey = _ipKey(_clientIp(r) ?? '-');
     final valid = _isAdmin(_token(r));
-    if (_adminFailures.blocked(ipKey) || (!valid && _adminFailuresAll.blocked('*'))) {
+    if (!valid && (_adminFailures.blocked(ipKey) || _adminFailuresAll.blocked('*'))) {
       return _error(429, 'rate_limited');
     }
     if (!valid) {
@@ -1504,9 +1578,10 @@ class Api {
     );
     if (!_emailRe.hasMatch(email)) return page(AccountDeleteStep.start, error: 'invalidEmail', status: 400);
     if (form['step'] == 'confirm') {
-      final failureKey = '${_ipKey(_clientIp(r) ?? '-')}|$email';
+      final ipKey = _ipKey(_clientIp(r) ?? '-');
+      final failureKey = '$ipKey|$email';
       if (_loginFailures.blocked(failureKey)) return page(AccountDeleteStep.code, error: 'tooMany', status: 429);
-      if (!store.verifyLoginCode(email, (form['code'] ?? '').trim())) {
+      if (!store.verifyLoginCode(email, (form['code'] ?? '').trim(), requester: ipKey)) {
         _loginFailures.hit(failureKey);
         return page(AccountDeleteStep.code, error: 'wrongCode', status: 401);
       }
@@ -1522,9 +1597,9 @@ class Api {
     if (!_mayRequestCode(r, email)) return page(AccountDeleteStep.start, error: 'tooMany', status: 429);
     // A cím napi kódkerete és a levél sorsa nem változtat a válaszon (és a levelet nem
     // várjuk meg): sem a válaszból, sem az időzítésből nem derül ki, van-e fiók a címhez.
-    if (store.userIdForEmail(email) != null &&
-        store.recentCodeCount(email, within: const Duration(days: 1)) < codesPerAddressPerDay) {
-      final code = store.createLoginCode(email);
+    final ipKey = _ipKey(_clientIp(r) ?? '-');
+    if (store.userIdForEmail(email) != null && _addressHasRoom(email, ipKey)) {
+      final code = store.createLoginCode(email, requester: ipKey);
       // Saját levél (nem a belépőkódé): a címzett tudja, hogy törlést kértek, és mit
       // tegyen, ha nem ő volt.
       unawaited(

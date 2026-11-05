@@ -352,8 +352,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get recognitionRawText => 'No attēla nolasītais teksts';
 
   @override
-  String get errMissingAnthropicKey =>
-      'Attēlu atpazīšana šajā versijā nav pieejama. Ievadiet simbolu manuāli.';
+  String get errMissingAnthropicKey => 'Attēlu atpazīšana šajā versijā nav pieejama. Ievadiet simbolu manuāli.';
 
   @override
   String get errRecognitionUnreachable =>
@@ -365,20 +364,16 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Atpazīšanas pakalpojums nevarēja apstrādāt šo attēlu.';
+  String get errRecognitionRefused => 'Atpazīšanas pakalpojums nevarēja apstrādāt šo attēlu.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Atpazīšanas atbilde tika pārtraukta. Lūdzu, mēģiniet vēlreiz.';
+  String get errRecognitionTruncated => 'Atpazīšanas atbilde tika pārtraukta. Lūdzu, mēģiniet vēlreiz.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Negaidīta atbilde no atpazīšanas pakalpojuma.';
+  String get errRecognitionBadResponse => 'Negaidīta atbilde no atpazīšanas pakalpojuma.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Atpazīšanas pakalpojums atgrieza tukšu atbildi.';
+  String get errRecognitionEmpty => 'Atpazīšanas pakalpojums atgrieza tukšu atbildi.';
 
   @override
   String get errMissingFinnhubKey => 'Tirgus dati šajā versijā nav pieejami.';
@@ -388,8 +383,7 @@ class AppLocalizationsLv extends AppLocalizations {
       'Neizdevās sazināties ar tirgus datu pakalpojumu. Pārbaudiet interneta savienojumu.';
 
   @override
-  String get errMarketRateLimited =>
-      'Pārāk daudz pieprasījumu tirgus datu pakalpojumam. Lūdzu, uzgaidiet minūti.';
+  String get errMarketRateLimited => 'Pārāk daudz pieprasījumu tirgus datu pakalpojumam. Lūdzu, uzgaidiet minūti.';
 
   @override
   String errMarketHttp(String status) {
@@ -397,8 +391,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Negaidīta atbilde no tirgus datu pakalpojuma.';
+  String get errMarketBadResponse => 'Negaidīta atbilde no tirgus datu pakalpojuma.';
 
   @override
   String errNoQuote(String symbol) {
@@ -498,8 +491,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get aiRegenerate => 'Ģenerēt vēlreiz';
 
   @override
-  String get aiGenerating =>
-      'Sagatavojam analīzi… tas var aizņemt minūti vai divas.';
+  String get aiGenerating => 'Sagatavojam analīzi… tas var aizņemt minūti vai divas.';
 
   @override
   String get aiSources => 'Avoti';
@@ -517,8 +509,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get errAiNotConfigured => 'AI funkcijas šajā versijā nav pieejamas.';
 
   @override
-  String get errAiUnreachable =>
-      'Neizdevās sazināties ar AI pakalpojumu. Pārbaudiet interneta savienojumu.';
+  String get errAiUnreachable => 'Neizdevās sazināties ar AI pakalpojumu. Pārbaudiet interneta savienojumu.';
 
   @override
   String errAiHttp(String status) {
@@ -550,8 +541,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get rangeFiveYears => '5G';
 
   @override
-  String get chartUnavailable =>
-      'Pašreizējais datu avots nenodrošina cenu vēsturi.';
+  String get chartUnavailable => 'Pašreizējais datu avots nenodrošina cenu vēsturi.';
 
   @override
   String get sectionStatements => 'Finanšu pārskati (gada)';
@@ -578,8 +568,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get labelOperatingCashFlow => 'Pamatdarbības naudas plūsma';
 
   @override
-  String get statementsUnavailable =>
-      'Šai akcijai publicētie finanšu pārskati nav pieejami.';
+  String get statementsUnavailable => 'Šai akcijai publicētie finanšu pārskati nav pieejami.';
 
   @override
   String get launchAtLogin => 'Palaist pēc pieteikšanās';
@@ -588,8 +577,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get hotkeyLabel => 'Globālais īsinājumtaustiņš';
 
   @override
-  String get hotkeyRecordHint =>
-      'Noklikšķiniet šeit un pēc tam nospiediet jauno taustiņu kombināciju';
+  String get hotkeyRecordHint => 'Noklikšķiniet šeit un pēc tam nospiediet jauno taustiņu kombināciju';
 
   @override
   String get hotkeyReset => 'Atiestatīt noklusējumu';
@@ -610,8 +598,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get removeFromFavorites => 'Noņemt no izlases';
 
   @override
-  String get noFavorites =>
-      'Izlasē vēl nekā nav. Pieskarieties zvaigznītei pie akcijas, lai to pievienotu.';
+  String get noFavorites => 'Izlasē vēl nekā nav. Pieskarieties zvaigznītei pie akcijas, lai to pievienotu.';
 
   @override
   String get displayCurrency => 'Attēlošanas valūta';
@@ -658,8 +645,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get updateDownloading => 'Atjauninājums tiek lejupielādēts fonā…';
 
   @override
-  String get updateDownloaded =>
-      'Atjauninājums ir gatavs. Restartējiet, lai to instalētu.';
+  String get updateDownloaded => 'Atjauninājums ir gatavs. Restartējiet, lai to instalētu.';
 
   @override
   String get updateNow => 'Atjaunināt';
@@ -668,8 +654,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get restartNow => 'Restartēt';
 
   @override
-  String get updatesViaStore =>
-      'Atjauninājumi tiek saņemti automātiski no lietotņu veikala.';
+  String get updatesViaStore => 'Atjauninājumi tiek saņemti automātiski no lietotņu veikala.';
 
   @override
   String get updateCheckFailed => 'Neizdevās pārbaudīt atjauninājumus.';
@@ -732,8 +717,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Jūsu bezmaksas izmēģinājums ir beidzies. Izvēlieties plānu, lai turpinātu analizēt.';
+  String get trialExpired => 'Jūsu bezmaksas izmēģinājums ir beidzies. Izvēlieties plānu, lai turpinātu analizēt.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -805,8 +789,7 @@ class AppLocalizationsLv extends AppLocalizations {
       'Šajā periodā jums vairs nav atlikušu analīžu. Jauniniet plānu vai iegādājieties papildu analīzes.';
 
   @override
-  String get errTrialExpired =>
-      'Jūsu bezmaksas izmēģinājums ir beidzies. Lai turpinātu, izvēlieties plānu.';
+  String get errTrialExpired => 'Jūsu bezmaksas izmēģinājums ir beidzies. Lai turpinātu, izvēlieties plānu.';
 
   @override
   String get errNoPlan => 'AI analīzei nepieciešams aktīvs plāns.';
@@ -818,8 +801,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get usageTitle => 'Lietojums';
 
   @override
-  String get demoPurchaseNote =>
-      'Demonstrācijas norēķini: pirkumi šajā platformā tiek simulēti.';
+  String get demoPurchaseNote => 'Demonstrācijas norēķini: pirkumi šajā platformā tiek simulēti.';
 
   @override
   String get mostPopular => 'Populārākais';
@@ -859,8 +841,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get aiDepthStandardDesc => 'Pilns pārskats ar visām sadaļām.';
 
   @override
-  String get aiDepthDeepDesc =>
-      'Vairāk meklējumu tīmeklī, salīdzinājums ar konkurentiem un lielāka detalizācija.';
+  String get aiDepthDeepDesc => 'Vairāk meklējumu tīmeklī, salīdzinājums ar konkurentiem un lielāka detalizācija.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -889,19 +870,16 @@ class AppLocalizationsLv extends AppLocalizations {
   String get aiReaderExperienced => 'Pieredzējis';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'Vienkārša valoda; katrs termins tiek paskaidrots.';
+  String get aiReaderBeginnerDesc => 'Vienkārša valoda; katrs termins tiek paskaidrots.';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'Koncentrētāks teksts ar standarta finanšu terminoloģiju.';
+  String get aiReaderExperiencedDesc => 'Koncentrētāks teksts ar standarta finanšu terminoloģiju.';
 
   @override
   String get aiCounterArgument => 'Spēcīgākais pretarguments';
 
   @override
-  String get aiCounterArgumentDesc =>
-      'Kopsavilkums vienmēr beidzas ar spēcīgāko argumentu pret paša secinājumu.';
+  String get aiCounterArgumentDesc => 'Kopsavilkums vienmēr beidzas ar spēcīgāko argumentu pret paša secinājumu.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -997,8 +975,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get upcomingEvents => 'Gaidāmie notikumi';
 
   @override
-  String get outlookChartNote =>
-      'Orientējoši diapazoni; varbūtības ir aptuveni vērtējumi, nevis prognozes.';
+  String get outlookChartNote => 'Orientējoši diapazoni; varbūtības ir aptuveni vērtējumi, nevis prognozes.';
 
   @override
   String get accountTitle => 'Konts';
@@ -1013,12 +990,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get notSignedIn => 'Pierakstīšanās nav veikta';
 
   @override
-  String get accountBenefit =>
-      'Pierakstieties, lai abonements darbotos visās jūsu ierīcēs.';
+  String get accountBenefit => 'Pierakstieties, lai abonements darbotos visās jūsu ierīcēs.';
 
   @override
-  String get accountSyncedNote =>
-      'Jūsu abonements un atlikušās analīzes ir vienādi visās ierīcēs.';
+  String get accountSyncedNote => 'Jūsu abonements un atlikušās analīzes ir vienādi visās ierīcēs.';
 
   @override
   String get signInTitle => 'Pierakstīties pakalpojumā WhatStock';
@@ -1044,23 +1019,20 @@ class AppLocalizationsLv extends AppLocalizations {
   String get useDifferentEmail => 'Izmantot citu e-pastu';
 
   @override
-  String get errInvalidCode =>
-      'Kods ir nepareizs, vai tam ir beidzies derīguma termiņš.';
+  String get errInvalidCode => 'Kods ir nepareizs, vai tam ir beidzies derīguma termiņš.';
 
   @override
   String get errInvalidEmail => 'Lūdzu, ievadiet derīgu e-pasta adresi.';
 
   @override
-  String get errSignInFailed =>
-      'Pierakstīšanās neizdevās. Pārbaudiet savienojumu un mēģiniet vēlreiz.';
+  String get errSignInFailed => 'Pierakstīšanās neizdevās. Pārbaudiet savienojumu un mēģiniet vēlreiz.';
 
   @override
   String get checkoutWaiting =>
       'Pabeidziet maksājumu pārlūkprogrammā. Kad tas būs izdarīts, lietotne atjaunināsies automātiski.';
 
   @override
-  String get paymentViaStripe =>
-      'Drošs maksājums pārlūkprogrammā, izmantojot Stripe. Atcelt var jebkurā laikā.';
+  String get paymentViaStripe => 'Drošs maksājums pārlūkprogrammā, izmantojot Stripe. Atcelt var jebkurā laikā.';
 
   @override
   String get paymentViaStore =>
@@ -1073,8 +1045,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get doubleOptionTitle => 'Divreiz nospiest Option';
 
   @override
-  String get doubleOptionSubtitle =>
-      'WhatStock var atvērt arī, divreiz ātri nospiežot taustiņu Option.';
+  String get doubleOptionSubtitle => 'WhatStock var atvērt arī, divreiz ātri nospiežot taustiņu Option.';
 
   @override
   String get doubleOptionPermission =>
@@ -1163,8 +1134,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get portfolioAdd => 'Pievienot';
 
   @override
-  String get portfolioInvalidNumber =>
-      'Ievadiet skaitli, kas lielāks par nulli.';
+  String get portfolioInvalidNumber => 'Ievadiet skaitli, kas lielāks par nulli.';
 
   @override
   String portfolioAdded(String symbol) {
@@ -1209,8 +1179,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get portfolioRemove => 'Noņemt';
 
   @override
-  String get portfolioExcluded =>
-      'Pozīcijas bez cenas vai valūtas kursa kopsummās netiek iekļautas.';
+  String get portfolioExcluded => 'Pozīcijas bez cenas vai valūtas kursa kopsummās netiek iekļautas.';
 
   @override
   String get priceAlerts => 'Cenu brīdinājumi';
@@ -1252,8 +1221,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty =>
-      'Cenu brīdinājumu vēl nav. Atveriet akciju un pieskarieties zvaniņam, lai to iestatītu.';
+  String get alertsEmpty => 'Cenu brīdinājumu vēl nav. Atveriet akciju un pieskarieties zvaniņam, lai to iestatītu.';
 
   @override
   String get alertsNote =>
@@ -1346,8 +1314,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get accountDeleted => 'Jūsu konts ir dzēsts.';
 
   @override
-  String get errDeleteAccount =>
-      'Kontu neizdevās dzēst. Pārbaudiet savienojumu un mēģiniet vēlreiz.';
+  String get errDeleteAccount => 'Kontu neizdevās dzēst. Pārbaudiet savienojumu un mēģiniet vēlreiz.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1384,8 +1351,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get inviteTitle => 'Slēgts priekšskatījums';
 
   @override
-  String get inviteBody =>
-      'Pagaidām WhatStock ir pieejama tikai ar ielūgumu. Ievadiet saņemto ielūguma kodu.';
+  String get inviteBody => 'Pagaidām WhatStock ir pieejama tikai ar ielūgumu. Ievadiet saņemto ielūguma kodu.';
 
   @override
   String get inviteCodeLabel => 'Ielūguma kods';
@@ -1401,15 +1367,13 @@ class AppLocalizationsLv extends AppLocalizations {
       'Šī ielūguma derīguma termiņš ir beidzies. Palūdziet jaunu kodu personai, kas jūs uzaicināja.';
 
   @override
-  String get inviteDeviceLimit =>
-      'Šis ielūguma kods jau tiek izmantots maksimālajā atļautajā ierīču skaitā.';
+  String get inviteDeviceLimit => 'Šis ielūguma kods jau tiek izmantots maksimālajā atļautajā ierīču skaitā.';
 
   @override
   String get previewConfidential => 'Konfidenciāls priekšskatījums';
 
   @override
-  String get errPreviewDailyLimit =>
-      'Šī priekšskatījuma šodienas analīžu limits ir sasniegts. Mēģiniet vēlreiz rīt.';
+  String get errPreviewDailyLimit => 'Šī priekšskatījuma šodienas analīžu limits ir sasniegts. Mēģiniet vēlreiz rīt.';
 
   @override
   String ageHours(int count) {
@@ -1466,8 +1430,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint =>
-      'Pieskarieties AI aplēstam līmenim, lai saņemtu brīdinājumu, kad cena to sasniegs.';
+  String get keyLevelAlertHint => 'Pieskarieties AI aplēstam līmenim, lai saņemtu brīdinājumu, kad cena to sasniegs.';
 
   @override
   String get shareAnalysisTitle => 'Kopīgot analīzi';
@@ -1527,8 +1490,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown =>
-      'Šāds kods neeksistē. Pārbaudiet to un mēģiniet vēlreiz.';
+  String get referralErrUnknown => 'Šāds kods neeksistē. Pārbaudiet to un mēģiniet vēlreiz.';
 
   @override
   String get referralErrOwn => 'Jūs nevarat izmantot savu kodu.';
@@ -1646,12 +1608,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get askSuggest3 => 'Paskaidro vienkāršiem vārdiem';
 
   @override
-  String get askMaxReached =>
-      'Tas bija pēdējais jautājums par šo analīzi. Lai jautātu vēl, ģenerējiet jaunu analīzi.';
+  String get askMaxReached => 'Tas bija pēdējais jautājums par šo analīzi. Lai jautātu vēl, ģenerējiet jaunu analīzi.';
 
   @override
-  String get errAskLimit =>
-      'Šodienas jautājumu limits ir sasniegts. Mēģiniet vēlreiz rīt.';
+  String get errAskLimit => 'Šodienas jautājumu limits ir sasniegts. Mēģiniet vēlreiz rīt.';
 
   @override
   String get eventTomorrow => 'Rīt';
@@ -1689,8 +1649,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get eventDividend => 'Gaidāma dividende';
 
   @override
-  String get eventDividendEstimate =>
-      'Aplēsts no jūsu reģistrētajiem maksājumiem';
+  String get eventDividendEstimate => 'Aplēsts no jūsu reģistrētajiem maksājumiem';
 
   @override
   String get eventsHint =>
@@ -1749,8 +1708,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get notesTitle => 'Manas piezīmes';
 
   @override
-  String get notesHint =>
-      'Kāpēc jūs to iegādājāties, kam sekojat, kas liktu jums pārdot?';
+  String get notesHint => 'Kāpēc jūs to iegādājāties, kam sekojat, kas liktu jums pārdot?';
 
   @override
   String get notesInfo =>
@@ -1802,8 +1760,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get syncInfo =>
-      'Portfelis, izlase, cenu brīdinājumi un piezīmes tiek sinhronizēti visās jūsu ierīcēs.';
+  String get syncInfo => 'Portfelis, izlase, cenu brīdinājumi un piezīmes tiek sinhronizēti visās jūsu ierīcēs.';
 
   @override
   String syncLast(String time) {
@@ -1814,8 +1771,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get syncNow => 'Sinhronizēt tūlīt';
 
   @override
-  String get syncFailed =>
-      'Sinhronizācija neizdevās. Tiks automātiski mēģināts vēlreiz.';
+  String get syncFailed => 'Sinhronizācija neizdevās. Tiks automātiski mēģināts vēlreiz.';
 
   @override
   String get alertEmailTitle => 'E-pasts, kad nostrādā brīdinājums';
@@ -1944,8 +1900,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'Cik vērts ir viss uzņēmums akciju tirgū: akcijas cena × akciju skaits.';
+  String get glossMarketCap => 'Cik vērts ir viss uzņēmums akciju tirgū: akcijas cena × akciju skaits.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1984,12 +1939,10 @@ class AppLocalizationsLv extends AppLocalizations {
       'Cik ļoti akcija mēdz kustēties līdzi tirgum: 1 = kā tirgus, 1,5 = aptuveni par 50% lielākas svārstības, zem 1 = mierīgāka.';
 
   @override
-  String get glossRevenueTtm =>
-      'Kopējie pēdējo 12 mēnešu pārdošanas ieņēmumi pirms jebkādām izmaksām.';
+  String get glossRevenueTtm => 'Kopējie pēdējo 12 mēnešu pārdošanas ieņēmumi pirms jebkādām izmaksām.';
 
   @override
-  String get glossNetIncomeTtm =>
-      'Peļņa, kas paliek pēc visām izmaksām, procentiem un nodokļiem pēdējos 12 mēnešos.';
+  String get glossNetIncomeTtm => 'Peļņa, kas paliek pēc visām izmaksām, procentiem un nodokļiem pēdējos 12 mēnešos.';
 
   @override
   String get glossGrossMargin =>
@@ -2008,8 +1961,7 @@ class AppLocalizationsLv extends AppLocalizations {
       'Pašu kapitāla atdeve: gada peļņa ÷ īpašnieku kapitāls. Parāda, cik labi vadība izmanto akcionāru naudu; virs aptuveni 15% ir spēcīgi.';
 
   @override
-  String get glossRoa =>
-      'Aktīvu atdeve: gada peļņa ÷ viss, kas pieder uzņēmumam. Salīdziniet vienas nozares ietvaros.';
+  String get glossRoa => 'Aktīvu atdeve: gada peļņa ÷ viss, kas pieder uzņēmumam. Salīdziniet vienas nozares ietvaros.';
 
   @override
   String get glossDebtToEquity =>
@@ -2020,20 +1972,17 @@ class AppLocalizationsLv extends AppLocalizations {
       'Īstermiņa aktīvi ÷ gada laikā apmaksājamie rēķini. Virs 1 nozīmē, ka uzņēmums spēj segt tuvākos rēķinus.';
 
   @override
-  String get glossRevenueGrowth =>
-      'Cik ieņēmumi pieauguši salīdzinājumā ar gadu iepriekš.';
+  String get glossRevenueGrowth => 'Cik ieņēmumi pieauguši salīdzinājumā ar gadu iepriekš.';
 
   @override
-  String get glossEpsGrowth =>
-      'Cik peļņa uz akciju pieaugusi salīdzinājumā ar gadu iepriekš.';
+  String get glossEpsGrowth => 'Cik peļņa uz akciju pieaugusi salīdzinājumā ar gadu iepriekš.';
 
   @override
   String get glossDividendYield =>
       'Gada dividende ÷ akcijas cena: naudas ienākumi, ko saņemtu katru gadu, procentos no samaksātā.';
 
   @override
-  String get glossDividendPerShare =>
-      'Dividende, kas pēdējā gadā izmaksāta par vienu akciju.';
+  String get glossDividendPerShare => 'Dividende, kas pēdējā gadā izmaksāta par vienu akciju.';
 
   @override
   String get glossPayoutRatio =>
@@ -2131,10 +2080,8 @@ class AppLocalizationsLv extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'Ceturkšņi, kuros EPS atbilda prognozei vai pārsniedza to: $beats no pēdējiem $total',
-      one:
-          'EPS atbilda prognozei vai pārsniedza to: $beats no $total ceturkšņa',
+      other: 'Ceturkšņi, kuros EPS atbilda prognozei vai pārsniedza to: $beats no pēdējiem $total',
+      one: 'EPS atbilda prognozei vai pārsniedza to: $beats no $total ceturkšņa',
     );
     return '$_temp0';
   }
@@ -2251,12 +2198,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count pirkumi',
-      one: '$count pirkums',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count pirkumi', one: '$count pirkums');
     return '$_temp0';
   }
 
@@ -2287,8 +2229,7 @@ class AppLocalizationsLv extends AppLocalizations {
       'Vadītāju un direktoru pirkumi un pārdošanas atklātajā tirgū pēdējās 90 dienās (SEC Form 4). Opciju izmantošana un akciju piešķīrumi netiek ieskaitīti.';
 
   @override
-  String get insiderNone =>
-      'Pēdējās 90 dienās atklātajā tirgū nav bijis insaideru pirkumu vai pārdošanu.';
+  String get insiderNone => 'Pēdējās 90 dienās atklātajā tirgū nav bijis insaideru pirkumu vai pārdošanu.';
 
   @override
   String get analystTrend => 'Kā viedokļi mainījās mēnesi pa mēnesim';
@@ -2331,8 +2272,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'Nokopēts starpliktuvē – ielīmējiet to tur, kur vēlaties kopīgot.';
+  String get sharedToClipboard => 'Nokopēts starpliktuvē – ielīmējiet to tur, kur vēlaties kopīgot.';
 
   @override
   String get glossaryNoMatch => 'Jūsu meklējumam neatbilst neviens termins.';
@@ -2362,15 +2302,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get backupSave => 'Saglabāt dublējumu';
 
   @override
-  String get backupSaveHint =>
-      'Jūsu izlase, saraksti, portfelis, brīdinājumi un piezīmes vienā failā.';
+  String get backupSaveHint => 'Jūsu izlase, saraksti, portfelis, brīdinājumi un piezīmes vienā failā.';
 
   @override
   String get backupRestore => 'Atjaunot no dublējuma';
 
   @override
-  String get backupRestoreHint =>
-      'Pievieno faila saturu; nekas no jūsu pašreizējiem datiem netiek dzēsts.';
+  String get backupRestoreHint => 'Pievieno faila saturu; nekas no jūsu pašreizējiem datiem netiek dzēsts.';
 
   @override
   String get backupRestored => 'Dublējums atjaunots.';
@@ -2490,8 +2428,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Portfeļa brīdinājums';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'Paziņojums, kad viss tavs portfelis vienā dienā mainās tik daudz.';
+  String get portfolioMoveAlertSubtitle => 'Paziņojums, kad viss tavs portfelis vienā dienā mainās tik daudz.';
 
   @override
   String get portfolioMoveAlertOff => 'Izslēgts';
@@ -2730,8 +2667,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get portfolioSampleRemove => 'Noņemt paraugu';
 
   @override
-  String get portfolioStopsAll =>
-      'Krituma no virsotnes brīdinājums visām pozīcijām';
+  String get portfolioStopsAll => 'Krituma no virsotnes brīdinājums visām pozīcijām';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2780,12 +2716,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lotNoteAdd => 'Pievienot piezīmi';
 
   @override
-  String get lotNoteBuyHint =>
-      'Kāpēc jūs pērkat? Tiks pievienots akcijas piezīmēm ar datumu.';
+  String get lotNoteBuyHint => 'Kāpēc jūs pērkat? Tiks pievienots akcijas piezīmēm ar datumu.';
 
   @override
-  String get lotNoteSellHint =>
-      'Kāpēc jūs pārdodat? Tiks pievienots akcijas piezīmēm ar datumu.';
+  String get lotNoteSellHint => 'Kāpēc jūs pārdodat? Tiks pievienots akcijas piezīmēm ar datumu.';
 
   @override
   String get lotNoteBought => 'Nopirkts';
@@ -2902,12 +2836,10 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'Pierakstieties ar savu e-pastu, lai izmantotu drauga kodu.';
+  String get referralErrSignIn => 'Pierakstieties ar savu e-pastu, lai izmantotu drauga kodu.';
 
   @override
-  String get referralErrFull =>
-      'Šis kods jau izmantots maksimālo reižu skaitu.';
+  String get referralErrFull => 'Šis kods jau izmantots maksimālo reižu skaitu.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2919,12 +2851,10 @@ class AppLocalizationsLv extends AppLocalizations {
       'Analīze tika pārtraukta, pirms tā bija pabeigta. Lūdzu, mēģiniet vēlreiz – tā netika ieskaitīta jūsu limitā.';
 
   @override
-  String get errImageUnsupported =>
-      'Šo attēlu nevar nolasīt. Saglabājiet to JPEG vai PNG formātā un mēģiniet vēlreiz.';
+  String get errImageUnsupported => 'Šo attēlu nevar nolasīt. Saglabājiet to JPEG vai PNG formātā un mēģiniet vēlreiz.';
 
   @override
-  String get errRateLimited =>
-      'Pārāk daudz pieprasījumu īsā laikā. Lūdzu, uzgaidiet minūti un mēģiniet vēlreiz.';
+  String get errRateLimited => 'Pārāk daudz pieprasījumu īsā laikā. Lūdzu, uzgaidiet minūti un mēģiniet vēlreiz.';
 
   @override
   String get watchListNameTaken => 'Saraksts ar šādu nosaukumu jau pastāv.';
@@ -2940,16 +2870,14 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing =>
-      'Netika atrasti iepriekšēji pirkumi, ko atjaunot.';
+  String get restoreNothing => 'Netika atrasti iepriekšēji pirkumi, ko atjaunot.';
 
   @override
   String get manageSubscriptionElsewhere =>
       'Šeit nav abonementa, ko pārvaldīt. App Store vai Google Play iegādāts abonements tiek pārvaldīts veikala iestatījumos.';
 
   @override
-  String get backupFailed =>
-      'Dublējumu neizdevās saglabāt. Lūdzu, mēģiniet vēlreiz.';
+  String get backupFailed => 'Dublējumu neizdevās saglabāt. Lūdzu, mēģiniet vēlreiz.';
 
   @override
   String get syncTooLarge =>
@@ -2969,10 +2897,8 @@ class AppLocalizationsLv extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'Dividendes bez valūtas kursa ($currencies): $count. Tās nav iekļautas kopsummās.',
-      one:
-          '$count dividendei ($currencies) nav valūtas kursa, tāpēc tā nav iekļauta kopsummās.',
+      other: 'Dividendes bez valūtas kursa ($currencies): $count. Tās nav iekļautas kopsummās.',
+      one: '$count dividendei ($currencies) nav valūtas kursa, tāpēc tā nav iekļauta kopsummās.',
     );
     return '$_temp0';
   }
@@ -3085,8 +3011,7 @@ class AppLocalizationsLv extends AppLocalizations {
       'Mākslīgā intelekta ģenerēta vispārīga informācija par jūsu portfeļa sastāvu. Tajā nav ņemti vērā jūsu mērķi, finanšu stāvoklis vai nodokļu situācija, un tā nav ne personīgs ieteikums, ne ieguldījumu konsultācija.';
 
   @override
-  String get briefNotificationTitle =>
-      'AI kopsavilkums · Šodien ar jūsu akcijām';
+  String get briefNotificationTitle => 'AI kopsavilkums · Šodien ar jūsu akcijām';
 
   @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
@@ -3245,8 +3170,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get portfolioSplitRatio => 'Attiecība (jaunās : vecās)';
 
   @override
-  String get portfolioSplitRatioError =>
-      'Ievadiet attiecību, piemēram, 10:1, vai 1:10 akciju apvienošanai.';
+  String get portfolioSplitRatioError => 'Ievadiet attiecību, piemēram, 10:1, vai 1:10 akciju apvienošanai.';
 
   @override
   String get portfolioSplitDate => 'Sadalīšanas datums';
@@ -3391,8 +3315,7 @@ class AppLocalizationsLv extends AppLocalizations {
       'Cik daudz cena svārstās no dienas dienā, pārrēķinot uz gadu: 20 % nozīmē, ka tipiskā gadā cena mainās aptuveni ±20 % robežās. Lielāks svārstīgums nozīmē lielākas kustības abos virzienos.';
 
   @override
-  String get techNote =>
-      'Aprēķināts pēc dienas slēgšanas cenām. Tehniskie signāli apraksta pagātni, ne nākotni.';
+  String get techNote => 'Aprēķināts pēc dienas slēgšanas cenām. Tehniskie signāli apraksta pagātni, ne nākotni.';
 
   @override
   String portfolioAbove200(int above, int count) {
@@ -3432,8 +3355,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get glossaryPageTitle => 'Terminu vārdnīca';
 
   @override
-  String get glossaryPageSubtitle =>
-      'Vienkārši skaidrojumi katram lietotnes rādītājam, no P/E līdz RSI';
+  String get glossaryPageSubtitle => 'Vienkārši skaidrojumi katram lietotnes rādītājam, no P/E līdz RSI';
 
   @override
   String get glossarySearchHint => 'Meklēt vārdnīcā';

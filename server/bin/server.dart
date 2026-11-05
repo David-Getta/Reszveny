@@ -25,6 +25,8 @@ import 'package:whatstock_server/src/stripe.dart';
 /// APPLE_BUNDLE_ID, GOOGLE_SERVICE_ACCOUNT_JSON (a szolgáltatásfiók JSON-kulcsa), GOOGLE_PACKAGE_NAME,
 /// GOOGLE_RTDN_TOKEN (a Play értesítések push-címének titkos `token` paramétere),
 /// TRIAL_PER_IP_DAY (10): egy IP-címről naponta ennyi új próbaidő (0 = nincs korlát),
+/// TRUST_PROXY (true): proxy (Railway) mögött az `x-forwarded-for` szerinti kliens-IP; közvetlen
+/// kiszolgálásnál `false`, különben a kliens a fejléccel minden IP-alapú korlátot megkerülhet,
 /// ALERT_CHECK_MINUTES (10): a szerver ilyen gyakran nézi a belépett fiókok riasztásait (0 = ki),
 /// TESTER_CODES: tesztelői kódok (`KÓD:Név[:csomag][:napok][:fiókok]`), az appban az ajánlói kód
 /// helyén beváltva csomagot adnak fizetés nélkül,
@@ -62,6 +64,8 @@ Future<void> main() async {
       'Figyelem: az ADMIN_TOKEN túl rövid (legalább ${Api.adminTokenMinLength} karakter kell), az /admin oldal ki van kapcsolva.',
     );
   }
+  // Közvetlenül (proxy nélkül) kiszolgálva az `x-forwarded-for` nem hihető: TRUST_PROXY=false.
+  Api.trustProxy = (env['TRUST_PROXY'] ?? 'true').toLowerCase() != 'false';
   final api = Api(
     invites: invites,
     testers: testers,

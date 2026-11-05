@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.313)
+# Változásjegyzék (0.2.130 → 0.2.314)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,20 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Szerver: valódi HTTP-n végigjátszva
+
+- **0.2.314**: ha az AI- vagy az árfolyam-szolgáltató épp nem érhető el, a szerver érthető hibát ad
+  („nem érhető el, próbáld később”, 502), a szokásos fejlécekkel. Eddig egy csupasz 500-ast adott, amit a
+  webes app csak hálózati hibaként látott; az app most az árfolyamnál a mentett adatot mutatja.
+- A belépést egy idegen sok IP-címről sem tudja elrontani: a cím gazdájának a saját IP-jéről kért kódja a
+  napi hibakeret kimerülése után is jó, egy idegen kódkérése nem teszi érvénytelenné a gazda épp megkapott
+  kódját, és a napi kódkeret elfogyása után is kaphat egy kódot az, aki aznap még nem kért.
+- Az IPv6-ba csomagolt IPv4-címek nem osztoznak egyetlen közös korláton; proxy nélküli futtatáshoz
+  `TRUST_PROXY=false` (a kliens ilyenkor nem állíthat magáról IP-címet).
+- Egy visszavont meghívókódot ismételgető app nem zárja ki a közös IP-cím többi tesztelőjét; az admin a
+  saját elgépelései után is beléphet a helyes kulccsal; a „bearer” kisbetűvel is jó; a megosztás
+  megtekintés-számlálója nem nő a link-ellenőrzők HEAD-kérésétől.
 
 ## Második böngészős végigjátszás: keskeny kijelző, import, megosztás
 

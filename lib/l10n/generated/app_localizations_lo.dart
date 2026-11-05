@@ -16,8 +16,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get homeTagline => 'ຖ່າຍຮູບຮຸ້ນ ແລ້ວຮູ້ທຸກຢ່າງກ່ຽວກັບຮຸ້ນນັ້ນ';
 
   @override
-  String get homeHint =>
-      'ໃບຮຸ້ນ ໜ້າຈໍແອັບນາຍໜ້າ ໜັງສືພິມ ຫຼື ໂລໂກ້ບໍລິສັດ – ອັນໃດກໍໄດ້ທີ່ບອກໄດ້ວ່າແມ່ນຮຸ້ນໃດ';
+  String get homeHint => 'ໃບຮຸ້ນ ໜ້າຈໍແອັບນາຍໜ້າ ໜັງສືພິມ ຫຼື ໂລໂກ້ບໍລິສັດ – ອັນໃດກໍໄດ້ທີ່ບອກໄດ້ວ່າແມ່ນຮຸ້ນໃດ';
 
   @override
   String get takePhoto => 'ຖ່າຍຮູບ';
@@ -55,8 +54,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get noCandidatesTitle => 'ບໍ່ພົບຮຸ້ນໃນຮູບ';
 
   @override
-  String get noCandidatesBody =>
-      'ພວກເຮົາບໍ່ສາມາດລະບຸຮຸ້ນຈາກຮູບນີ້ໄດ້ ລອງຖ່າຍຮູບໃຫ້ຊັດຂຶ້ນ ຫຼື ປ້ອນສັນຍາລັກຮຸ້ນເອງ';
+  String get noCandidatesBody => 'ພວກເຮົາບໍ່ສາມາດລະບຸຮຸ້ນຈາກຮູບນີ້ໄດ້ ລອງຖ່າຍຮູບໃຫ້ຊັດຂຶ້ນ ຫຼື ປ້ອນສັນຍາລັກຮຸ້ນເອງ';
 
   @override
   String get whatWeSaw => 'ສິ່ງທີ່ພວກເຮົາເຫັນ';
@@ -82,8 +80,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get about => 'ກ່ຽວກັບ';
 
   @override
-  String get disclaimer =>
-      'ແອັບນີ້ໃຫ້ຂໍ້ມູນເທົ່ານັ້ນ ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ ຂໍ້ມູນອາດຊັກຊ້າ ຫຼື ບໍ່ຖືກຕ້ອງ';
+  String get disclaimer => 'ແອັບນີ້ໃຫ້ຂໍ້ມູນເທົ່ານັ້ນ ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ ຂໍ້ມູນອາດຊັກຊ້າ ຫຼື ບໍ່ຖືກຕ້ອງ';
 
   @override
   String dataSource(String source) {
@@ -318,11 +315,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ນັກວິເຄາະ $count ຄົນ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ນັກວິເຄາະ $count ຄົນ');
     return '$_temp0';
   }
 
@@ -350,12 +343,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get recognitionRawText => 'ຂໍ້ຄວາມທີ່ອ່ານໄດ້ຈາກຮູບພາບ';
 
   @override
-  String get errMissingAnthropicKey =>
-      'ການຈຳແນກຮູບພາບບໍ່ມີໃນເວີຊັນນີ້ ກະລຸນາປ້ອນສັນຍາລັກຮຸ້ນແທນ';
+  String get errMissingAnthropicKey => 'ການຈຳແນກຮູບພາບບໍ່ມີໃນເວີຊັນນີ້ ກະລຸນາປ້ອນສັນຍາລັກຮຸ້ນແທນ';
 
   @override
-  String get errRecognitionUnreachable =>
-      'ບໍ່ສາມາດເຊື່ອມຕໍ່ບໍລິການຈຳແນກຮູບພາບໄດ້ ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ';
+  String get errRecognitionUnreachable => 'ບໍ່ສາມາດເຊື່ອມຕໍ່ບໍລິການຈຳແນກຮູບພາບໄດ້ ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ';
 
   @override
   String errRecognitionHttp(String status) {
@@ -363,31 +354,25 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'ບໍລິການຈຳແນກຮູບພາບບໍ່ສາມາດປະມວນຜົນຮູບນີ້ໄດ້';
+  String get errRecognitionRefused => 'ບໍລິການຈຳແນກຮູບພາບບໍ່ສາມາດປະມວນຜົນຮູບນີ້ໄດ້';
 
   @override
-  String get errRecognitionTruncated =>
-      'ການຕອບກັບຈາກບໍລິການຈຳແນກຮູບພາບຖືກຕັດຂາດ ກະລຸນາລອງໃໝ່';
+  String get errRecognitionTruncated => 'ການຕອບກັບຈາກບໍລິການຈຳແນກຮູບພາບຖືກຕັດຂາດ ກະລຸນາລອງໃໝ່';
 
   @override
-  String get errRecognitionBadResponse =>
-      'ໄດ້ຮັບການຕອບກັບທີ່ບໍ່ຄາດຄິດຈາກບໍລິການຈຳແນກຮູບພາບ';
+  String get errRecognitionBadResponse => 'ໄດ້ຮັບການຕອບກັບທີ່ບໍ່ຄາດຄິດຈາກບໍລິການຈຳແນກຮູບພາບ';
 
   @override
-  String get errRecognitionEmpty =>
-      'ບໍລິການຈຳແນກຮູບພາບສົ່ງການຕອບກັບທີ່ຫວ່າງເປົ່າ';
+  String get errRecognitionEmpty => 'ບໍລິການຈຳແນກຮູບພາບສົ່ງການຕອບກັບທີ່ຫວ່າງເປົ່າ';
 
   @override
   String get errMissingFinnhubKey => 'ຂໍ້ມູນຕະຫຼາດບໍ່ມີໃນເວີຊັນນີ້';
 
   @override
-  String get errMarketUnreachable =>
-      'ບໍ່ສາມາດເຊື່ອມຕໍ່ບໍລິການຂໍ້ມູນຕະຫຼາດໄດ້ ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ';
+  String get errMarketUnreachable => 'ບໍ່ສາມາດເຊື່ອມຕໍ່ບໍລິການຂໍ້ມູນຕະຫຼາດໄດ້ ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ';
 
   @override
-  String get errMarketRateLimited =>
-      'ສົ່ງຄຳຮ້ອງຂໍໄປຫາບໍລິການຂໍ້ມູນຕະຫຼາດຫຼາຍເກີນໄປ ກະລຸນາລໍຖ້າໜຶ່ງນາທີ';
+  String get errMarketRateLimited => 'ສົ່ງຄຳຮ້ອງຂໍໄປຫາບໍລິການຂໍ້ມູນຕະຫຼາດຫຼາຍເກີນໄປ ກະລຸນາລໍຖ້າໜຶ່ງນາທີ';
 
   @override
   String errMarketHttp(String status) {
@@ -395,8 +380,7 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'ໄດ້ຮັບການຕອບກັບທີ່ບໍ່ຄາດຄິດຈາກບໍລິການຂໍ້ມູນຕະຫຼາດ';
+  String get errMarketBadResponse => 'ໄດ້ຮັບການຕອບກັບທີ່ບໍ່ຄາດຄິດຈາກບໍລິການຂໍ້ມູນຕະຫຼາດ';
 
   @override
   String errNoQuote(String symbol) {
@@ -514,8 +498,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get errAiNotConfigured => 'ຄຸນສົມບັດ AI ບໍ່ມີໃນເວີຊັນນີ້';
 
   @override
-  String get errAiUnreachable =>
-      'ບໍ່ສາມາດເຊື່ອມຕໍ່ບໍລິການ AI ໄດ້ ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ';
+  String get errAiUnreachable => 'ບໍ່ສາມາດເຊື່ອມຕໍ່ບໍລິການ AI ໄດ້ ກະລຸນາກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດ';
 
   @override
   String errAiHttp(String status) {
@@ -574,8 +557,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get labelOperatingCashFlow => 'ກະແສເງິນສົດຈາກການດຳເນີນງານ';
 
   @override
-  String get statementsUnavailable =>
-      'ບໍ່ມີບົດລາຍງານການເງິນທີ່ເຜີຍແຜ່ສຳລັບຮຸ້ນນີ້';
+  String get statementsUnavailable => 'ບໍ່ມີບົດລາຍງານການເງິນທີ່ເຜີຍແຜ່ສຳລັບຮຸ້ນນີ້';
 
   @override
   String get launchAtLogin => 'ເປີດເມື່ອເຂົ້າສູ່ລະບົບ';
@@ -699,17 +681,12 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'ເຫຼືອເວລາທົດລອງໃຊ້ $days ມື້',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'ເຫຼືອເວລາທົດລອງໃຊ້ $days ມື້');
     return '$_temp0';
   }
 
   @override
-  String get trialExpired =>
-      'ໄລຍະທົດລອງໃຊ້ຟຣີຂອງທ່ານສິ້ນສຸດແລ້ວ ເລືອກແພັກເກັດເພື່ອວິເຄາະຕໍ່';
+  String get trialExpired => 'ໄລຍະທົດລອງໃຊ້ຟຣີຂອງທ່ານສິ້ນສຸດແລ້ວ ເລືອກແພັກເກັດເພື່ອວິເຄາະຕໍ່';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -748,8 +725,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get extraPacksTitle => 'ຕ້ອງການເພີ່ມບໍ? ຊື້ການວິເຄາະເພີ່ມເຕີມ';
 
   @override
-  String get extraPacksHint =>
-      'ການວິເຄາະເພີ່ມເຕີມບໍ່ມີວັນໝົດອາຍຸ ແລະ ຈະຖືກໃຊ້ຫຼັງຈາກໂຄຕ້າລາຍເດືອນຂອງທ່ານໝົດແລ້ວ';
+  String get extraPacksHint => 'ການວິເຄາະເພີ່ມເຕີມບໍ່ມີວັນໝົດອາຍຸ ແລະ ຈະຖືກໃຊ້ຫຼັງຈາກໂຄຕ້າລາຍເດືອນຂອງທ່ານໝົດແລ້ວ';
 
   @override
   String get buy => 'ຊື້';
@@ -777,16 +753,13 @@ class AppLocalizationsLo extends AppLocalizations {
       'ຍັງບໍ່ສາມາດຊື້ໃນແພລດຟອມນີ້ໄດ້ ສະໝັກສະມາຊິກໃນໂທລະສັບ ຫຼື Mac ຂອງທ່ານ ແລ້ວແພັກເກັດຂອງທ່ານຈະໃຊ້ໄດ້ໃນທຸກອຸປະກອນ';
 
   @override
-  String get errQuotaExceeded =>
-      'ທ່ານໃຊ້ການວິເຄາະໃນຮອບນີ້ໝົດແລ້ວ ອັບເກຣດແພັກເກັດ ຫຼື ຊື້ການວິເຄາະເພີ່ມເຕີມ';
+  String get errQuotaExceeded => 'ທ່ານໃຊ້ການວິເຄາະໃນຮອບນີ້ໝົດແລ້ວ ອັບເກຣດແພັກເກັດ ຫຼື ຊື້ການວິເຄາະເພີ່ມເຕີມ';
 
   @override
-  String get errTrialExpired =>
-      'ໄລຍະທົດລອງໃຊ້ຟຣີຂອງທ່ານສິ້ນສຸດແລ້ວ ເລືອກແພັກເກັດເພື່ອໃຊ້ງານຕໍ່';
+  String get errTrialExpired => 'ໄລຍະທົດລອງໃຊ້ຟຣີຂອງທ່ານສິ້ນສຸດແລ້ວ ເລືອກແພັກເກັດເພື່ອໃຊ້ງານຕໍ່';
 
   @override
-  String get errNoPlan =>
-      'ຕ້ອງມີແພັກເກັດທີ່ໃຊ້ງານຢູ່ຈຶ່ງຈະໃຊ້ການວິເຄາະດ້ວຍ AI ໄດ້';
+  String get errNoPlan => 'ຕ້ອງມີແພັກເກັດທີ່ໃຊ້ງານຢູ່ຈຶ່ງຈະໃຊ້ການວິເຄາະດ້ວຍ AI ໄດ້';
 
   @override
   String get viewPlans => 'ເບິ່ງແພັກເກັດ';
@@ -795,8 +768,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get usageTitle => 'ການນຳໃຊ້';
 
   @override
-  String get demoPurchaseNote =>
-      'ການຊຳລະເງິນສາທິດ: ການຊື້ໃນແພລດຟອມນີ້ເປັນພຽງການຈຳລອງ';
+  String get demoPurchaseNote => 'ການຊຳລະເງິນສາທິດ: ການຊື້ໃນແພລດຟອມນີ້ເປັນພຽງການຈຳລອງ';
 
   @override
   String get mostPopular => 'ນິຍົມທີ່ສຸດ';
@@ -836,8 +808,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get aiDepthStandardDesc => 'ບົດລາຍງານສະບັບເຕັມຄົບທຸກຫົວຂໍ້';
 
   @override
-  String get aiDepthDeepDesc =>
-      'ຊອກຫາໃນເວັບຫຼາຍຂຶ້ນ ປຽບທຽບກັບບໍລິສັດຄູ່ແຂ່ງ ແລະ ລົງລາຍລະອຽດເລິກກວ່າ';
+  String get aiDepthDeepDesc => 'ຊອກຫາໃນເວັບຫຼາຍຂຶ້ນ ປຽບທຽບກັບບໍລິສັດຄູ່ແຂ່ງ ແລະ ລົງລາຍລະອຽດເລິກກວ່າ';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -846,11 +817,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ໃຊ້ການວິເຄາະ $count ຄັ້ງ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ໃຊ້ການວິເຄາະ $count ຄັ້ງ');
     return '$_temp0';
   }
 
@@ -867,15 +834,13 @@ class AppLocalizationsLo extends AppLocalizations {
   String get aiReaderBeginnerDesc => 'ພາສາເຂົ້າໃຈງ່າຍ ອະທິບາຍທຸກຄຳສັບເຕັກນິກ';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'ເນື້ອຫາເຂັ້ມຂຸ້ນຂຶ້ນ ໃຊ້ຄຳສັບການເງິນມາດຕະຖານ';
+  String get aiReaderExperiencedDesc => 'ເນື້ອຫາເຂັ້ມຂຸ້ນຂຶ້ນ ໃຊ້ຄຳສັບການເງິນມາດຕະຖານ';
 
   @override
   String get aiCounterArgument => 'ຂໍ້ໂຕ້ແຍ້ງທີ່ໜັກແໜ້ນທີ່ສຸດ';
 
   @override
-  String get aiCounterArgumentDesc =>
-      'ບົດສະຫຼຸບຈະປິດທ້າຍດ້ວຍຂໍ້ໂຕ້ແຍ້ງທີ່ດີທີ່ສຸດຕໍ່ຂໍ້ສະຫຼຸບຂອງຕົນເອງສະເໝີ';
+  String get aiCounterArgumentDesc => 'ບົດສະຫຼຸບຈະປິດທ້າຍດ້ວຍຂໍ້ໂຕ້ແຍ້ງທີ່ດີທີ່ສຸດຕໍ່ຂໍ້ສະຫຼຸບຂອງຕົນເອງສະເໝີ';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -894,21 +859,13 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ຊອກຫາໃນເວັບສູງສຸດ $count ຄັ້ງ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ຊອກຫາໃນເວັບສູງສຸດ $count ຄັ້ງ');
     return '$_temp0';
   }
 
   @override
   String planWebSearches(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ຊອກຫາໃນເວັບ $count ຄັ້ງຕໍ່ການວິເຄາະ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ຊອກຫາໃນເວັບ $count ຄັ້ງຕໍ່ການວິເຄາະ');
     return '$_temp0';
   }
 
@@ -965,8 +922,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get upcomingEvents => 'ເຫດການທີ່ກຳລັງຈະມາເຖິງ';
 
   @override
-  String get outlookChartNote =>
-      'ເປັນຊ່ວງລາຄາໂດຍປະມານ ຄວາມເປັນໄປໄດ້ເປັນພຽງການປະເມີນຄ່າວໆ ບໍ່ແມ່ນການພະຍາກອນ';
+  String get outlookChartNote => 'ເປັນຊ່ວງລາຄາໂດຍປະມານ ຄວາມເປັນໄປໄດ້ເປັນພຽງການປະເມີນຄ່າວໆ ບໍ່ແມ່ນການພະຍາກອນ';
 
   @override
   String get accountTitle => 'ບັນຊີ';
@@ -981,12 +937,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get notSignedIn => 'ຍັງບໍ່ໄດ້ເຂົ້າສູ່ລະບົບ';
 
   @override
-  String get accountBenefit =>
-      'ເຂົ້າສູ່ລະບົບເພື່ອໃຫ້ການສະໝັກສະມາຊິກໃຊ້ໄດ້ໃນທຸກອຸປະກອນຂອງທ່ານ';
+  String get accountBenefit => 'ເຂົ້າສູ່ລະບົບເພື່ອໃຫ້ການສະໝັກສະມາຊິກໃຊ້ໄດ້ໃນທຸກອຸປະກອນຂອງທ່ານ';
 
   @override
-  String get accountSyncedNote =>
-      'ການສະໝັກສະມາຊິກ ແລະ ຈຳນວນການວິເຄາະທີ່ເຫຼືອຂອງທ່ານຈະຄືກັນໃນທຸກອຸປະກອນ';
+  String get accountSyncedNote => 'ການສະໝັກສະມາຊິກ ແລະ ຈຳນວນການວິເຄາະທີ່ເຫຼືອຂອງທ່ານຈະຄືກັນໃນທຸກອຸປະກອນ';
 
   @override
   String get signInTitle => 'ເຂົ້າສູ່ລະບົບ WhatStock';
@@ -1018,16 +972,13 @@ class AppLocalizationsLo extends AppLocalizations {
   String get errInvalidEmail => 'ກະລຸນາປ້ອນທີ່ຢູ່ອີເມວທີ່ຖືກຕ້ອງ';
 
   @override
-  String get errSignInFailed =>
-      'ເຂົ້າສູ່ລະບົບບໍ່ສຳເລັດ ກວດສອບການເຊື່ອມຕໍ່ແລ້ວລອງໃໝ່';
+  String get errSignInFailed => 'ເຂົ້າສູ່ລະບົບບໍ່ສຳເລັດ ກວດສອບການເຊື່ອມຕໍ່ແລ້ວລອງໃໝ່';
 
   @override
-  String get checkoutWaiting =>
-      'ຊຳລະເງິນໃຫ້ສຳເລັດໃນບຣາວເຊີຂອງທ່ານ ແອັບຈະອັບເດດອັດຕະໂນມັດເມື່ອສຳເລັດ';
+  String get checkoutWaiting => 'ຊຳລະເງິນໃຫ້ສຳເລັດໃນບຣາວເຊີຂອງທ່ານ ແອັບຈະອັບເດດອັດຕະໂນມັດເມື່ອສຳເລັດ';
 
   @override
-  String get paymentViaStripe =>
-      'ຊຳລະເງິນຢ່າງປອດໄພໃນບຣາວເຊີຜ່ານ Stripe ຍົກເລີກໄດ້ທຸກເວລາ';
+  String get paymentViaStripe => 'ຊຳລະເງິນຢ່າງປອດໄພໃນບຣາວເຊີຜ່ານ Stripe ຍົກເລີກໄດ້ທຸກເວລາ';
 
   @override
   String get paymentViaStore =>
@@ -1040,8 +991,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get doubleOptionTitle => 'ກົດ Option ສອງເທື່ອ';
 
   @override
-  String get doubleOptionSubtitle =>
-      'ການກົດປຸ່ມ Option ສອງເທື່ອຢ່າງໄວກໍເອີ້ນ WhatStock ໄດ້ເຊັ່ນກັນ';
+  String get doubleOptionSubtitle => 'ການກົດປຸ່ມ Option ສອງເທື່ອຢ່າງໄວກໍເອີ້ນ WhatStock ໄດ້ເຊັ່ນກັນ';
 
   @override
   String get doubleOptionPermission =>
@@ -1063,11 +1013,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '$years ປີ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ປີ');
     return '$_temp0';
   }
 
@@ -1098,8 +1044,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get portfolio => 'ພອດໂຟລິໂອ';
 
   @override
-  String get portfolioEmpty =>
-      'ຍັງບໍ່ມີຫຍັງຢູ່ນີ້ ເປີດຮຸ້ນແລ້ວແຕະ “ເພີ່ມໃສ່ພອດໂຟລິໂອ” ເພື່ອຕິດຕາມຮຸ້ນທີ່ທ່ານຖື';
+  String get portfolioEmpty => 'ຍັງບໍ່ມີຫຍັງຢູ່ນີ້ ເປີດຮຸ້ນແລ້ວແຕະ “ເພີ່ມໃສ່ພອດໂຟລິໂອ” ເພື່ອຕິດຕາມຮຸ້ນທີ່ທ່ານຖື';
 
   @override
   String get portfolioLocalNote =>
@@ -1173,8 +1118,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get portfolioRemove => 'ລຶບ';
 
   @override
-  String get portfolioExcluded =>
-      'ຮຸ້ນທີ່ບໍ່ມີລາຄາ ຫຼື ອັດຕາແລກປ່ຽນ ຈະບໍ່ຖືກນັບລວມໃນຍອດລວມ';
+  String get portfolioExcluded => 'ຮຸ້ນທີ່ບໍ່ມີລາຄາ ຫຼື ອັດຕາແລກປ່ຽນ ຈະບໍ່ຖືກນັບລວມໃນຍອດລວມ';
 
   @override
   String get priceAlerts => 'ການແຈ້ງເຕືອນລາຄາ';
@@ -1216,8 +1160,7 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty =>
-      'ຍັງບໍ່ມີການແຈ້ງເຕືອນລາຄາ ເປີດຮຸ້ນແລ້ວແຕະຮູບກະດິ່ງເພື່ອຕັ້ງຄ່າ';
+  String get alertsEmpty => 'ຍັງບໍ່ມີການແຈ້ງເຕືອນລາຄາ ເປີດຮຸ້ນແລ້ວແຕະຮູບກະດິ່ງເພື່ອຕັ້ງຄ່າ';
 
   @override
   String get alertsNote =>
@@ -1310,8 +1253,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get accountDeleted => 'ລຶບບັນຊີຂອງທ່ານແລ້ວ';
 
   @override
-  String get errDeleteAccount =>
-      'ບໍ່ສາມາດລຶບບັນຊີໄດ້ ກວດສອບການເຊື່ອມຕໍ່ແລ້ວລອງໃໝ່';
+  String get errDeleteAccount => 'ບໍ່ສາມາດລຶບບັນຊີໄດ້ ກວດສອບການເຊື່ອມຕໍ່ແລ້ວລອງໃໝ່';
 
   @override
   String get aiTrialBriefNote =>
@@ -1348,8 +1290,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get inviteTitle => 'ເວີຊັນຕົວຢ່າງແບບປິດ';
 
   @override
-  String get inviteBody =>
-      'ຕອນນີ້ WhatStock ໃຊ້ໄດ້ສະເພາະຜູ້ທີ່ໄດ້ຮັບເຊີນເທົ່ານັ້ນ ກະລຸນາປ້ອນລະຫັດເຊີນທີ່ທ່ານໄດ້ຮັບ';
+  String get inviteBody => 'ຕອນນີ້ WhatStock ໃຊ້ໄດ້ສະເພາະຜູ້ທີ່ໄດ້ຮັບເຊີນເທົ່ານັ້ນ ກະລຸນາປ້ອນລະຫັດເຊີນທີ່ທ່ານໄດ້ຮັບ';
 
   @override
   String get inviteCodeLabel => 'ລະຫັດເຊີນ';
@@ -1361,37 +1302,26 @@ class AppLocalizationsLo extends AppLocalizations {
   String get inviteInvalid => 'ລະຫັດເຊີນນີ້ບໍ່ຖືກຕ້ອງ';
 
   @override
-  String get inviteExpired =>
-      'ຄຳເຊີນນີ້ໝົດອາຍຸແລ້ວ ກະລຸນາຂໍລະຫັດໃໝ່ຈາກຜູ້ທີ່ເຊີນທ່ານ';
+  String get inviteExpired => 'ຄຳເຊີນນີ້ໝົດອາຍຸແລ້ວ ກະລຸນາຂໍລະຫັດໃໝ່ຈາກຜູ້ທີ່ເຊີນທ່ານ';
 
   @override
-  String get inviteDeviceLimit =>
-      'ລະຫັດເຊີນນີ້ຖືກໃຊ້ໃນອຸປະກອນຄົບຈຳນວນສູງສຸດແລ້ວ';
+  String get inviteDeviceLimit => 'ລະຫັດເຊີນນີ້ຖືກໃຊ້ໃນອຸປະກອນຄົບຈຳນວນສູງສຸດແລ້ວ';
 
   @override
   String get previewConfidential => 'ເວີຊັນຕົວຢ່າງລັບ';
 
   @override
-  String get errPreviewDailyLimit =>
-      'ການວິເຄາະມື້ນີ້ຂອງເວີຊັນຕົວຢ່າງນີ້ຄົບກຳນົດແລ້ວ ກະລຸນາລອງໃໝ່ມື້ອື່ນ';
+  String get errPreviewDailyLimit => 'ການວິເຄາະມື້ນີ້ຂອງເວີຊັນຕົວຢ່າງນີ້ຄົບກຳນົດແລ້ວ ກະລຸນາລອງໃໝ່ມື້ອື່ນ';
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count ຊົ່ວໂມງກ່ອນ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ຊົ່ວໂມງກ່ອນ');
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count ມື້ກ່ອນ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ມື້ກ່ອນ');
     return '$_temp0';
   }
 
@@ -1426,8 +1356,7 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint =>
-      'ແຕະລະດັບລາຄາທີ່ AI ປະເມີນ ເພື່ອຮັບການແຈ້ງເຕືອນເມື່ອລາຄາໄປຮອດລະດັບນັ້ນ';
+  String get keyLevelAlertHint => 'ແຕະລະດັບລາຄາທີ່ AI ປະເມີນ ເພື່ອຮັບການແຈ້ງເຕືອນເມື່ອລາຄາໄປຮອດລະດັບນັ້ນ';
 
   @override
   String get shareAnalysisTitle => 'ແບ່ງປັນບົດວິເຄາະ';
@@ -1442,19 +1371,14 @@ class AppLocalizationsLo extends AppLocalizations {
   String get shareCardFooter => 'ສ້າງດ້ວຍ WhatStock';
 
   @override
-  String get shareCardDisclaimer =>
-      'ການວິເຄາະດ້ວຍ AI · ສະຖານະການຕົວຢ່າງ ບໍ່ແມ່ນການພະຍາກອນ · ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ';
+  String get shareCardDisclaimer => 'ການວິເຄາະດ້ວຍ AI · ສະຖານະການຕົວຢ່າງ ບໍ່ແມ່ນການພະຍາກອນ · ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ';
 
   @override
   String get referralTitle => 'ເຊີນໝູ່';
 
   @override
   String referralBody(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ການວິເຄາະເພີ່ມເຕີມ $count ຄັ້ງ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ການວິເຄາະເພີ່ມເຕີມ $count ຄັ້ງ');
     return 'ແບ່ງປັນລະຫັດຂອງທ່ານ ໝູ່ຂອງທ່ານຈະໄດ້ຮັບ$_temp0ທັນທີ ແລະ ທ່ານກໍຈະໄດ້ຮັບເທົ່າກັນຫຼັງຈາກການວິເຄາະຄັ້ງທຳອິດຂອງລາວ';
   }
 
@@ -1493,11 +1417,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String referralShareText(String code, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ການວິເຄາະເພີ່ມເຕີມ $count ຄັ້ງ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ການວິເຄາະເພີ່ມເຕີມ $count ຄັ້ງ');
     return 'ຂ້ອຍວິເຄາະຮຸ້ນດ້ວຍ WhatStock: ຖ່າຍຮູບຮຸ້ນ ແລ້ວ AI ຈະອະທິບາຍໃຫ້ ໃຊ້ລະຫັດຂອງຂ້ອຍ $code ເພື່ອຮັບ$_temp0';
   }
 
@@ -1599,23 +1519,17 @@ class AppLocalizationsLo extends AppLocalizations {
   String get askSuggest3 => 'ອະທິບາຍແບບງ່າຍໆ';
 
   @override
-  String get askMaxReached =>
-      'ນີ້ແມ່ນຄຳຖາມສຸດທ້າຍສຳລັບການວິເຄາະນີ້ ສ້າງບົດວິເຄາະໃໝ່ເພື່ອຖາມຕື່ມ';
+  String get askMaxReached => 'ນີ້ແມ່ນຄຳຖາມສຸດທ້າຍສຳລັບການວິເຄາະນີ້ ສ້າງບົດວິເຄາະໃໝ່ເພື່ອຖາມຕື່ມ';
 
   @override
-  String get errAskLimit =>
-      'ທ່ານໃຊ້ຄຳຖາມຄົບກຳນົດຂອງມື້ນີ້ແລ້ວ ກະລຸນາລອງໃໝ່ມື້ອື່ນ';
+  String get errAskLimit => 'ທ່ານໃຊ້ຄຳຖາມຄົບກຳນົດຂອງມື້ນີ້ແລ້ວ ກະລຸນາລອງໃໝ່ມື້ອື່ນ';
 
   @override
   String get eventTomorrow => 'ມື້ອື່ນ';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'ອີກ $days ມື້',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'ອີກ $days ມື້');
     return '$_temp0';
   }
 
@@ -1699,8 +1613,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get notesTitle => 'ບັນທຶກຂອງຂ້ອຍ';
 
   @override
-  String get notesHint =>
-      'ເປັນຫຍັງທ່ານຈຶ່ງຊື້ ທ່ານກຳລັງຕິດຕາມຫຍັງ ແລະ ຫຍັງຈະເຮັດໃຫ້ທ່ານຂາຍ?';
+  String get notesHint => 'ເປັນຫຍັງທ່ານຈຶ່ງຊື້ ທ່ານກຳລັງຕິດຕາມຫຍັງ ແລະ ຫຍັງຈະເຮັດໃຫ້ທ່ານຂາຍ?';
 
   @override
   String get notesInfo =>
@@ -1740,17 +1653,12 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String portfolioImportSkipped(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ຂ້າມ $count ແຖວແລ້ວ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ຂ້າມ $count ແຖວແລ້ວ');
     return '$_temp0';
   }
 
   @override
-  String get syncInfo =>
-      'ພອດໂຟລິໂອ, ລາຍການທີ່ມັກ, ການແຈ້ງເຕືອນລາຄາ ແລະ ບັນທຶກ ຈະຊິງຄ໌ໃນທຸກອຸປະກອນຂອງທ່ານ';
+  String get syncInfo => 'ພອດໂຟລິໂອ, ລາຍການທີ່ມັກ, ການແຈ້ງເຕືອນລາຄາ ແລະ ບັນທຶກ ຈະຊິງຄ໌ໃນທຸກອຸປະກອນຂອງທ່ານ';
 
   @override
   String syncLast(String time) {
@@ -1890,8 +1798,7 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'ມູນຄ່າຂອງບໍລິສັດທັງໝົດໃນຕະຫຼາດຫຼັກຊັບ: ລາຄາຮຸ້ນ × ຈຳນວນຮຸ້ນ.';
+  String get glossMarketCap => 'ມູນຄ່າຂອງບໍລິສັດທັງໝົດໃນຕະຫຼາດຫຼັກຊັບ: ລາຄາຮຸ້ນ × ຈຳນວນຮຸ້ນ.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1930,12 +1837,10 @@ class AppLocalizationsLo extends AppLocalizations {
       'ຮຸ້ນມັກເໜັງຕີງໄປກັບຕະຫຼາດຫຼາຍປານໃດ: 1 = ຄືຕະຫຼາດ, 1,5 = ແກວ່ງແຮງກວ່າປະມານ 50%, ຕ່ຳກວ່າ 1 = ສະຫງົບກວ່າ.';
 
   @override
-  String get glossRevenueTtm =>
-      'ຍອດຂາຍທັງໝົດໃນ 12 ເດືອນຜ່ານມາ ກ່ອນຫັກຄ່າໃຊ້ຈ່າຍໃດໆ.';
+  String get glossRevenueTtm => 'ຍອດຂາຍທັງໝົດໃນ 12 ເດືອນຜ່ານມາ ກ່ອນຫັກຄ່າໃຊ້ຈ່າຍໃດໆ.';
 
   @override
-  String get glossNetIncomeTtm =>
-      'ກຳໄລທີ່ເຫຼືອຫຼັງຈາກຫັກຄ່າໃຊ້ຈ່າຍທັງໝົດ ດອກເບ້ຍ ແລະ ພາສີ ໃນ 12 ເດືອນຜ່ານມາ.';
+  String get glossNetIncomeTtm => 'ກຳໄລທີ່ເຫຼືອຫຼັງຈາກຫັກຄ່າໃຊ້ຈ່າຍທັງໝົດ ດອກເບ້ຍ ແລະ ພາສີ ໃນ 12 ເດືອນຜ່ານມາ.';
 
   @override
   String get glossGrossMargin =>
@@ -1946,8 +1851,7 @@ class AppLocalizationsLo extends AppLocalizations {
       'ສ່ວນຂອງລາຍຮັບທີ່ເຫຼືອຫຼັງຈາກຄ່າດຳເນີນທຸລະກິດ (ເງິນເດືອນ, ຄ່າເຊົ່າ, ການຕະຫຼາດ) ກ່ອນດອກເບ້ຍ ແລະ ພາສີ.';
 
   @override
-  String get glossNetMargin =>
-      'ສ່ວນຂອງລາຍຮັບທີ່ກາຍເປັນກຳໄລສຸດທ້າຍ. 20% ໝາຍຄວາມວ່າທຸກໆ 100 ຂອງຍອດຂາຍ ມີ 20 ເປັນກຳໄລ.';
+  String get glossNetMargin => 'ສ່ວນຂອງລາຍຮັບທີ່ກາຍເປັນກຳໄລສຸດທ້າຍ. 20% ໝາຍຄວາມວ່າທຸກໆ 100 ຂອງຍອດຂາຍ ມີ 20 ເປັນກຳໄລ.';
 
   @override
   String get glossRoe =>
@@ -1976,8 +1880,7 @@ class AppLocalizationsLo extends AppLocalizations {
       'ເງິນປັນຜົນຕໍ່ປີ ÷ ລາຄາຮຸ້ນ: ລາຍໄດ້ເປັນເງິນສົດທີ່ທ່ານຈະໄດ້ຮັບແຕ່ລະປີ ເປັນເປີເຊັນຂອງສິ່ງທີ່ທ່ານຈ່າຍ.';
 
   @override
-  String get glossDividendPerShare =>
-      'ເງິນປັນຜົນທີ່ຈ່າຍຕໍ່ໜຶ່ງຮຸ້ນໃນປີທີ່ຜ່ານມາ.';
+  String get glossDividendPerShare => 'ເງິນປັນຜົນທີ່ຈ່າຍຕໍ່ໜຶ່ງຮຸ້ນໃນປີທີ່ຜ່ານມາ.';
 
   @override
   String get glossPayoutRatio =>
@@ -2030,8 +1933,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get watchSortName => 'ຕາມສັນຍາລັກ (A–Z)';
 
   @override
-  String get watchHint =>
-      'ລາກບ່ອນຈັບເພື່ອຈັດລຳດັບໃໝ່, ປັດໄປຊ້າຍເພື່ອລຶບອອກ. ເສັ້ນສະແດງ 30 ມື້ຫຼ້າສຸດ.';
+  String get watchHint => 'ລາກບ່ອນຈັບເພື່ອຈັດລຳດັບໃໝ່, ປັດໄປຊ້າຍເພື່ອລຶບອອກ. ເສັ້ນສະແດງ 30 ມື້ຫຼ້າສຸດ.';
 
   @override
   String analysisReady(String symbol) {
@@ -2138,17 +2040,12 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String holdingsAdd(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ເພີ່ມ $count ລາຍການ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ເພີ່ມ $count ລາຍການ');
     return '$_temp0';
   }
 
   @override
-  String get holdingsNone =>
-      'ບໍ່ພົບຫຸ້ນທີ່ຖືຢູ່ໃນຮູບພາບນີ້. ລອງໃຊ້ພາບໜ້າຈໍຂອງໜ້າຫຸ້ນທີ່ຖືໃນແອັບນາຍໜ້າຂອງທ່ານ.';
+  String get holdingsNone => 'ບໍ່ພົບຫຸ້ນທີ່ຖືຢູ່ໃນຮູບພາບນີ້. ລອງໃຊ້ພາບໜ້າຈໍຂອງໜ້າຫຸ້ນທີ່ຖືໃນແອັບນາຍໜ້າຂອງທ່ານ.';
 
   @override
   String get week52Range => 'ຊ່ວງ 52 ອາທິດ';
@@ -2168,8 +2065,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get alertTrailingPercent => 'ການລົງຈາກຈຸດສູງສຸດ (%)';
 
   @override
-  String get alertTrailingHint =>
-      'ຕິດຕາມລາຄາຂຶ້ນ: ແຈ້ງເຕືອນເມື່ອລາຄາລົງເທົ່ານີ້ຈາກລະດັບສູງສຸດນັບຕັ້ງແຕ່ທ່ານຕັ້ງໄວ້.';
+  String get alertTrailingHint => 'ຕິດຕາມລາຄາຂຶ້ນ: ແຈ້ງເຕືອນເມື່ອລາຄາລົງເທົ່ານີ້ຈາກລະດັບສູງສຸດນັບຕັ້ງແຕ່ທ່ານຕັ້ງໄວ້.';
 
   @override
   String alertDescTrailing(String percent) {
@@ -2191,23 +2087,13 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ຊື້ $count ຄັ້ງ',
-      one: 'ຊື້ 1 ຄັ້ງ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ຊື້ $count ຄັ້ງ', one: 'ຊື້ 1 ຄັ້ງ');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ຂາຍ $count ຄັ້ງ',
-      one: 'ຂາຍ 1 ຄັ້ງ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ຂາຍ $count ຄັ້ງ', one: 'ຂາຍ 1 ຄັ້ງ');
     return '$_temp0';
   }
 
@@ -2227,8 +2113,7 @@ class AppLocalizationsLo extends AppLocalizations {
       'ການຊື້ ແລະ ຂາຍໃນຕະຫຼາດເປີດໂດຍຜູ້ບໍລິຫານ ແລະ ກຳມະການ ໃນ 90 ວັນທີ່ຜ່ານມາ (SEC Form 4). ບໍ່ນັບການໃຊ້ສິດອອບຊັນ ແລະ ການມອບຮຸ້ນເປັນລາງວັນ.';
 
   @override
-  String get insiderNone =>
-      'ບໍ່ມີການຊື້ ຫຼື ຂາຍຂອງຄົນພາຍໃນໃນຕະຫຼາດເປີດ ໃນ 90 ວັນທີ່ຜ່ານມາ.';
+  String get insiderNone => 'ບໍ່ມີການຊື້ ຫຼື ຂາຍຂອງຄົນພາຍໃນໃນຕະຫຼາດເປີດ ໃນ 90 ວັນທີ່ຜ່ານມາ.';
 
   @override
   String get analystTrend => 'ຄວາມເຫັນປ່ຽນແປງແນວໃດໃນແຕ່ລະເດືອນ';
@@ -2252,8 +2137,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get watchListAddTo => 'ເພີ່ມໃສ່ລາຍການ';
 
   @override
-  String get watchListEmpty =>
-      'ຍັງບໍ່ມີຫຸ້ນໃນລາຍການນີ້. ແຕະປຸ່ມລາຍການຂ້າງຫຸ້ນເພື່ອເພີ່ມ.';
+  String get watchListEmpty => 'ຍັງບໍ່ມີຫຸ້ນໃນລາຍການນີ້. ແຕະປຸ່ມລາຍການຂ້າງຫຸ້ນເພື່ອເພີ່ມ.';
 
   @override
   String favoriteRemoved(String symbol) {
@@ -2271,8 +2155,7 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'ສຳເນົາໄປໃສ່ຄລິບບອດແລ້ວ – ວາງໄວ້ບ່ອນໃດກໍໄດ້ທີ່ທ່ານຕ້ອງການແບ່ງປັນ';
+  String get sharedToClipboard => 'ສຳເນົາໄປໃສ່ຄລິບບອດແລ້ວ – ວາງໄວ້ບ່ອນໃດກໍໄດ້ທີ່ທ່ານຕ້ອງການແບ່ງປັນ';
 
   @override
   String get glossaryNoMatch => 'ບໍ່ມີຄຳສັບທີ່ກົງກັບການຊອກຫາຂອງທ່ານ';
@@ -2302,15 +2185,13 @@ class AppLocalizationsLo extends AppLocalizations {
   String get backupSave => 'ບັນທຶກການສຳຮອງຂໍ້ມູນ';
 
   @override
-  String get backupSaveHint =>
-      'ລາຍການທີ່ມັກ, ລາຍການ, ພອດໂຟລິໂອ, ການແຈ້ງເຕືອນ ແລະ ບັນທຶກຂອງທ່ານໃນໄຟລ໌ດຽວ.';
+  String get backupSaveHint => 'ລາຍການທີ່ມັກ, ລາຍການ, ພອດໂຟລິໂອ, ການແຈ້ງເຕືອນ ແລະ ບັນທຶກຂອງທ່ານໃນໄຟລ໌ດຽວ.';
 
   @override
   String get backupRestore => 'ກູ້ຄືນຈາກການສຳຮອງຂໍ້ມູນ';
 
   @override
-  String get backupRestoreHint =>
-      'ເພີ່ມສິ່ງທີ່ຢູ່ໃນໄຟລ໌; ບໍ່ມີຫຍັງທີ່ທ່ານມີຢູ່ຕອນນີ້ຖືກລຶບ.';
+  String get backupRestoreHint => 'ເພີ່ມສິ່ງທີ່ຢູ່ໃນໄຟລ໌; ບໍ່ມີຫຍັງທີ່ທ່ານມີຢູ່ຕອນນີ້ຖືກລຶບ.';
 
   @override
   String get backupRestored => 'ກູ້ຄືນການສຳຮອງຂໍ້ມູນແລ້ວ.';
@@ -2398,11 +2279,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String watchAlertAllDone(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ຕັ້ງການແຈ້ງເຕືອນ $count ລາຍການແລ້ວ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ຕັ້ງການແຈ້ງເຕືອນ $count ລາຍການແລ້ວ');
     return '$_temp0';
   }
 
@@ -2428,8 +2305,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'ແຈ້ງເຕືອນພອດໂຟລິໂອ';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'ແຈ້ງເຕືອນເມື່ອພອດໂຟລິໂອທັງໝົດຂອງທ່ານປ່ຽນແປງຫຼາຍເທົ່ານີ້ໃນໜຶ່ງມື້.';
+  String get portfolioMoveAlertSubtitle => 'ແຈ້ງເຕືອນເມື່ອພອດໂຟລິໂອທັງໝົດຂອງທ່ານປ່ຽນແປງຫຼາຍເທົ່ານີ້ໃນໜຶ່ງມື້.';
 
   @override
   String get portfolioMoveAlertOff => 'ປິດ';
@@ -2601,16 +2477,11 @@ class AppLocalizationsLo extends AppLocalizations {
   String get portfolioTopHoldings => 'ຮຸ້ນທີ່ຖືຫຼາຍທີ່ສຸດ';
 
   @override
-  String get portfolioShareNote =>
-      'ແບ່ງປັນສະເພາະເປີເຊັນເທົ່ານັ້ນ ບໍ່ມີຈຳນວນເງິນ';
+  String get portfolioShareNote => 'ແບ່ງປັນສະເພາະເປີເຊັນເທົ່ານັ້ນ ບໍ່ມີຈຳນວນເງິນ';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count ລາຍການ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ລາຍການ');
     return '$_temp0';
   }
 
@@ -2626,8 +2497,7 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get contributionHint =>
-      'ຊື້ເທົ່ານັ້ນ ບໍ່ມີການຂາຍ: ຮຸ້ນທີ່ຕ່ຳກວ່າເປົ້າໝາຍຫຼາຍທີ່ສຸດຈະໄດ້ຮັບເງິນກ່ອນ.';
+  String get contributionHint => 'ຊື້ເທົ່ານັ້ນ ບໍ່ມີການຂາຍ: ຮຸ້ນທີ່ຕ່ຳກວ່າເປົ້າໝາຍຫຼາຍທີ່ສຸດຈະໄດ້ຮັບເງິນກ່ອນ.';
 
   @override
   String contributionShares(String shares) {
@@ -2660,15 +2530,13 @@ class AppLocalizationsLo extends AppLocalizations {
   String get portfolioSampleTry => 'ທົດລອງດ້ວຍພອດໂຟລິໂອຕົວຢ່າງ';
 
   @override
-  String get portfolioSampleBanner =>
-      'ນີ້ແມ່ນພອດໂຟລິໂອຕົວຢ່າງ ທ່ານສາມາດເພີ່ມການຊື້ຂອງທ່ານເອງໄປພ້ອມກັນ ຫຼື ລຶບມັນອອກ';
+  String get portfolioSampleBanner => 'ນີ້ແມ່ນພອດໂຟລິໂອຕົວຢ່າງ ທ່ານສາມາດເພີ່ມການຊື້ຂອງທ່ານເອງໄປພ້ອມກັນ ຫຼື ລຶບມັນອອກ';
 
   @override
   String get portfolioSampleRemove => 'ລຶບຕົວຢ່າງ';
 
   @override
-  String get portfolioStopsAll =>
-      'ແຈ້ງເຕືອນລົງຈາກຈຸດສູງສຸດສຳລັບຮຸ້ນທີ່ຖືທັງໝົດ';
+  String get portfolioStopsAll => 'ແຈ້ງເຕືອນລົງຈາກຈຸດສູງສຸດສຳລັບຮຸ້ນທີ່ຖືທັງໝົດ';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2717,12 +2585,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get lotNoteAdd => 'ເພີ່ມບັນທຶກ';
 
   @override
-  String get lotNoteBuyHint =>
-      'ເປັນຫຍັງທ່ານຈຶ່ງຊື້? ມັນຈະຖືກເພີ່ມໃສ່ບັນທຶກຂອງຮຸ້ນ ພ້ອມວັນທີ.';
+  String get lotNoteBuyHint => 'ເປັນຫຍັງທ່ານຈຶ່ງຊື້? ມັນຈະຖືກເພີ່ມໃສ່ບັນທຶກຂອງຮຸ້ນ ພ້ອມວັນທີ.';
 
   @override
-  String get lotNoteSellHint =>
-      'ເປັນຫຍັງທ່ານຈຶ່ງຂາຍ? ມັນຈະຖືກເພີ່ມໃສ່ບັນທຶກຂອງຮຸ້ນ ພ້ອມວັນທີ.';
+  String get lotNoteSellHint => 'ເປັນຫຍັງທ່ານຈຶ່ງຂາຍ? ມັນຈະຖືກເພີ່ມໃສ່ບັນທຶກຂອງຮຸ້ນ ພ້ອມວັນທີ.';
 
   @override
   String get lotNoteBought => 'ຊື້ແລ້ວ';
@@ -2732,21 +2598,13 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: '$months ເດືອນ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months ເດືອນ');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days ມື້',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days ມື້');
     return '$_temp0';
   }
 
@@ -2834,8 +2692,7 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'ເຂົ້າສູ່ລະບົບດ້ວຍອີເມວຂອງທ່ານ ເພື່ອໃຊ້ລະຫັດຂອງໝູ່';
+  String get referralErrSignIn => 'ເຂົ້າສູ່ລະບົບດ້ວຍອີເມວຂອງທ່ານ ເພື່ອໃຊ້ລະຫັດຂອງໝູ່';
 
   @override
   String get referralErrFull => 'ລະຫັດນີ້ຖືກໃຊ້ຄົບຈຳນວນສູງສຸດແລ້ວ';
@@ -2846,16 +2703,13 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated =>
-      'ການວິເຄາະຖືກຕັດຂາດກ່ອນສຳເລັດ ກະລຸນາລອງໃໝ່ – ບໍ່ໄດ້ໃຊ້ໂຄຕ້າຂອງທ່ານ';
+  String get errAiTruncated => 'ການວິເຄາະຖືກຕັດຂາດກ່ອນສຳເລັດ ກະລຸນາລອງໃໝ່ – ບໍ່ໄດ້ໃຊ້ໂຄຕ້າຂອງທ່ານ';
 
   @override
-  String get errImageUnsupported =>
-      'ບໍ່ສາມາດອ່ານຮູບນີ້ໄດ້ ກະລຸນາບັນທຶກເປັນ JPEG ຫຼື PNG ແລ້ວລອງໃໝ່';
+  String get errImageUnsupported => 'ບໍ່ສາມາດອ່ານຮູບນີ້ໄດ້ ກະລຸນາບັນທຶກເປັນ JPEG ຫຼື PNG ແລ້ວລອງໃໝ່';
 
   @override
-  String get errRateLimited =>
-      'ມີຄຳຮ້ອງຂໍຫຼາຍເກີນໄປໃນເວລາສັ້ນໆ ກະລຸນາລໍຖ້າໜຶ່ງນາທີແລ້ວລອງໃໝ່';
+  String get errRateLimited => 'ມີຄຳຮ້ອງຂໍຫຼາຍເກີນໄປໃນເວລາສັ້ນໆ ກະລຸນາລໍຖ້າໜຶ່ງນາທີແລ້ວລອງໃໝ່';
 
   @override
   String get watchListNameTaken => 'ມີລາຍການທີ່ໃຊ້ຊື່ນີ້ແລ້ວ.';
@@ -2885,8 +2739,7 @@ class AppLocalizationsLo extends AppLocalizations {
       'ຂໍ້ມູນຂອງທ່ານໃຫຍ່ເກີນໄປທີ່ຈະຊິງຄ໌ກັບບັນຊີຂອງທ່ານ. ລຶບທຸລະກຳ ຫຼື ບັນທຶກທີ່ທ່ານບໍ່ຕ້ອງການອີກແລ້ວ ແລ້ວຈະລອງໃໝ່';
 
   @override
-  String get noteFull =>
-      'ບັນທຶກຂອງຮຸ້ນນີ້ເຕັມແລ້ວ ຈຶ່ງບໍ່ໄດ້ເພີ່ມລາຍການນີ້ ກະລຸນາຫຍໍ້ບັນທຶກໃຫ້ສັ້ນລົງ ແລ້ວລອງໃໝ່';
+  String get noteFull => 'ບັນທຶກຂອງຮຸ້ນນີ້ເຕັມແລ້ວ ຈຶ່ງບໍ່ໄດ້ເພີ່ມລາຍການນີ້ ກະລຸນາຫຍໍ້ບັນທຶກໃຫ້ສັ້ນລົງ ແລ້ວລອງໃໝ່';
 
   @override
   String portfolioNoRateFor(String symbols) {
@@ -2898,10 +2751,8 @@ class AppLocalizationsLo extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'ເງິນປັນຜົນ $count ລາຍການໃນ $currencies ບໍ່ມີອັດຕາແລກປ່ຽນ ຈຶ່ງບໍ່ຖືກນັບລວມໃນຍອດລວມ',
-      one:
-          'ເງິນປັນຜົນ 1 ລາຍການໃນ $currencies ບໍ່ມີອັດຕາແລກປ່ຽນ ຈຶ່ງບໍ່ຖືກນັບລວມໃນຍອດລວມ',
+      other: 'ເງິນປັນຜົນ $count ລາຍການໃນ $currencies ບໍ່ມີອັດຕາແລກປ່ຽນ ຈຶ່ງບໍ່ຖືກນັບລວມໃນຍອດລວມ',
+      one: 'ເງິນປັນຜົນ 1 ລາຍການໃນ $currencies ບໍ່ມີອັດຕາແລກປ່ຽນ ຈຶ່ງບໍ່ຖືກນັບລວມໃນຍອດລວມ',
     );
     return '$_temp0';
   }
@@ -3172,8 +3023,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get portfolioSplitRatio => 'ອັດຕາສ່ວນ (ໃໝ່ : ເກົ່າ)';
 
   @override
-  String get portfolioSplitRatioError =>
-      'ປ້ອນອັດຕາສ່ວນເຊັ່ນ 10:1 ຫຼື 1:10 ສຳລັບການລວມຫຸ້ນ.';
+  String get portfolioSplitRatioError => 'ປ້ອນອັດຕາສ່ວນເຊັ່ນ 10:1 ຫຼື 1:10 ສຳລັບການລວມຫຸ້ນ.';
 
   @override
   String get portfolioSplitDate => 'ວັນທີແບ່ງຫຸ້ນ';
@@ -3292,12 +3142,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get techNeutral => 'ເປັນກາງ';
 
   @override
-  String get techGoldenCross =>
-      'ສະເລ່ຍ 50 ວັນ ຢູ່ເໜືອສະເລ່ຍ 200 ວັນ – ແນວໂນ້ມຂາຂຶ້ນຕາມການອ່ານແບບດັ້ງເດີມ.';
+  String get techGoldenCross => 'ສະເລ່ຍ 50 ວັນ ຢູ່ເໜືອສະເລ່ຍ 200 ວັນ – ແນວໂນ້ມຂາຂຶ້ນຕາມການອ່ານແບບດັ້ງເດີມ.';
 
   @override
-  String get techDeathCross =>
-      'ສະເລ່ຍ 50 ວັນ ຢູ່ຕ່ຳກວ່າສະເລ່ຍ 200 ວັນ – ແນວໂນ້ມຂາລົງຕາມການອ່ານແບບດັ້ງເດີມ.';
+  String get techDeathCross => 'ສະເລ່ຍ 50 ວັນ ຢູ່ຕ່ຳກວ່າສະເລ່ຍ 200 ວັນ – ແນວໂນ້ມຂາລົງຕາມການອ່ານແບບດັ້ງເດີມ.';
 
   @override
   String get glossSma50 =>
@@ -3316,8 +3164,7 @@ class AppLocalizationsLo extends AppLocalizations {
       'ລາຄາແກວ່ງຕັວຫຼາຍເທົ່າໃດໃນແຕ່ລະວັນ, ຄິດເປັນລາຍປີ: 20% ໝາຍຄວາມວ່າໃນປີປົກກະຕິລາຄາເຄື່ອນໄຫວປະມານ ±20%. ຄວາມຜັນຜວນສູງກວ່າ ໝາຍເຖິງການເຄື່ອນໄຫວທີ່ໃຫຍ່ກວ່າທັງສອງທິດທາງ.';
 
   @override
-  String get techNote =>
-      'ຄິດໄລ່ຈາກລາຄາປິດປະຈຳວັນ. ສັນຍານທາງເຕັກນິກອະທິບາຍອະດີດ, ບໍ່ແມ່ນອະນາຄົດ.';
+  String get techNote => 'ຄິດໄລ່ຈາກລາຄາປິດປະຈຳວັນ. ສັນຍານທາງເຕັກນິກອະທິບາຍອະດີດ, ບໍ່ແມ່ນອະນາຄົດ.';
 
   @override
   String portfolioAbove200(int above, int count) {
@@ -3357,8 +3204,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get glossaryPageTitle => 'ອະທິບາຍຄຳສັບ';
 
   @override
-  String get glossaryPageSubtitle =>
-      'ຄຳອະທິບາຍແບບງ່າຍຂອງທຸກຕົວເລກທີ່ແອັບສະແດງ ຕັ້ງແຕ່ P/E ຈົນຮອດ RSI';
+  String get glossaryPageSubtitle => 'ຄຳອະທິບາຍແບບງ່າຍຂອງທຸກຕົວເລກທີ່ແອັບສະແດງ ຕັ້ງແຕ່ P/E ຈົນຮອດ RSI';
 
   @override
   String get glossarySearchHint => 'ຊອກຫາໃນຄຳສັບ';

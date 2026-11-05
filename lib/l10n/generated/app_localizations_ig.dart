@@ -318,12 +318,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Ndị nyocha $count',
-      one: 'Onye nyocha 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Ndị nyocha $count', one: 'Onye nyocha 1');
     return '$_temp0';
   }
 
@@ -351,12 +346,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get recognitionRawText => 'Ederede a gụrụ n\'onyonyo';
 
   @override
-  String get errMissingAnthropicKey =>
-      'Nmata onyonyo adịghị n\'ụdị a. Kama nke ahụ, tinye ticker n\'aka.';
+  String get errMissingAnthropicKey => 'Nmata onyonyo adịghị n\'ụdị a. Kama nke ahụ, tinye ticker n\'aka.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Enweghị ike iru ọrụ nmata. Lelee njikọ ịntanetị gị.';
+  String get errRecognitionUnreachable => 'Enweghị ike iru ọrụ nmata. Lelee njikọ ịntanetị gị.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -367,12 +360,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get errRecognitionRefused => 'Ọrụ nmata enweghị ike ịhazi onyonyo a.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Azịza nmata kwụsịrị n\'etiti. Biko nwaa ọzọ.';
+  String get errRecognitionTruncated => 'Azịza nmata kwụsịrị n\'etiti. Biko nwaa ọzọ.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Azịza a na-atụghị anya si n\'ọrụ nmata.';
+  String get errRecognitionBadResponse => 'Azịza a na-atụghị anya si n\'ọrụ nmata.';
 
   @override
   String get errRecognitionEmpty => 'Ọrụ nmata zitere azịza efu.';
@@ -381,12 +372,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get errMissingFinnhubKey => 'Data ahịa adịghị n\'ụdị a.';
 
   @override
-  String get errMarketUnreachable =>
-      'Enweghị ike iru ọrụ data ahịa. Lelee njikọ ịntanetị gị.';
+  String get errMarketUnreachable => 'Enweghị ike iru ọrụ data ahịa. Lelee njikọ ịntanetị gị.';
 
   @override
-  String get errMarketRateLimited =>
-      'Arịrịọ dị ukwuu na-aga n\'ọrụ data ahịa. Biko chere otu nkeji.';
+  String get errMarketRateLimited => 'Arịrịọ dị ukwuu na-aga n\'ọrụ data ahịa. Biko chere otu nkeji.';
 
   @override
   String errMarketHttp(String status) {
@@ -394,8 +383,7 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Azịza a na-atụghị anya si n\'ọrụ data ahịa.';
+  String get errMarketBadResponse => 'Azịza a na-atụghị anya si n\'ọrụ data ahịa.';
 
   @override
   String errNoQuote(String symbol) {
@@ -495,8 +483,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get aiRegenerate => 'Mepụta ọzọ';
 
   @override
-  String get aiGenerating =>
-      'Na-akwado nyocha ahụ… nke a nwere ike were otu nkeji ma ọ bụ abụọ.';
+  String get aiGenerating => 'Na-akwado nyocha ahụ… nke a nwere ike were otu nkeji ma ọ bụ abụọ.';
 
   @override
   String get aiSources => 'Ebe e si nweta';
@@ -514,8 +501,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get errAiNotConfigured => 'Atụmatụ AI adịghị n\'ụdị a.';
 
   @override
-  String get errAiUnreachable =>
-      'Enweghị ike iru ọrụ AI. Lelee njikọ ịntanetị gị.';
+  String get errAiUnreachable => 'Enweghị ike iru ọrụ AI. Lelee njikọ ịntanetị gị.';
 
   @override
   String errAiHttp(String status) {
@@ -547,8 +533,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable =>
-      'Akụkọ ọnụahịa gara aga adịghị n\'ebe data a na-eji ugbu a.';
+  String get chartUnavailable => 'Akụkọ ọnụahịa gara aga adịghị n\'ebe data a na-eji ugbu a.';
 
   @override
   String get sectionStatements => 'Nkwupụta ego (kwa afọ)';
@@ -575,8 +560,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get labelOperatingCashFlow => 'Ego na-abata site n\'ọrụ';
 
   @override
-  String get statementsUnavailable =>
-      'Nkwupụta ego a kọọrọ adịghị maka stock a.';
+  String get statementsUnavailable => 'Nkwupụta ego a kọọrọ adịghị maka stock a.';
 
   @override
   String get launchAtLogin => 'Malite mgbe ị banyere';
@@ -606,8 +590,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get removeFromFavorites => 'Wepụ n\'ọkacha mmasị';
 
   @override
-  String get noFavorites =>
-      'Enwebeghị ọkacha mmasị. Pịa kpakpando dị na stock iji tinye ya.';
+  String get noFavorites => 'Enwebeghị ọkacha mmasị. Pịa kpakpando dị na stock iji tinye ya.';
 
   @override
   String get displayCurrency => 'Ego ngosi';
@@ -654,8 +637,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get updateDownloading => 'Na-ebudata mmelite n\'azụ…';
 
   @override
-  String get updateDownloaded =>
-      'Mmelite adịla njikere. Malitegharịa iji wụnye ya.';
+  String get updateDownloaded => 'Mmelite adịla njikere. Malitegharịa iji wụnye ya.';
 
   @override
   String get updateNow => 'Melite';
@@ -664,8 +646,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get restartNow => 'Malitegharịa';
 
   @override
-  String get updatesViaStore =>
-      'Mmelite na-abịa na-akpaghị aka site n\'ụlọ ahịa app.';
+  String get updatesViaStore => 'Mmelite na-abịa na-akpaghị aka site n\'ụlọ ahịa app.';
 
   @override
   String get updateCheckFailed => 'Enweghị ike ilele mmelite.';
@@ -713,8 +694,7 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Nnwale n\'efu gị agwụla. Họrọ atụmatụ ka ị gaa n\'ihu na-enyocha.';
+  String get trialExpired => 'Nnwale n\'efu gị agwụla. Họrọ atụmatụ ka ị gaa n\'ihu na-enyocha.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -753,8 +733,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get extraPacksTitle => 'Ịchọrọ karịa? Zụta nyocha mgbakwunye';
 
   @override
-  String get extraPacksHint =>
-      'Nyocha mgbakwunye anaghị agwụ, a na-ejikwa ha mgbe oke kwa ọnwa gị gwụsịrị.';
+  String get extraPacksHint => 'Nyocha mgbakwunye anaghị agwụ, a na-ejikwa ha mgbe oke kwa ọnwa gị gwụsịrị.';
 
   @override
   String get buy => 'Zụta';
@@ -782,12 +761,10 @@ class AppLocalizationsIg extends AppLocalizations {
       'Ịzụ ihe adịbeghị n\'ikpo okwu a. Denye aha na ekwentị gị ma ọ bụ Mac; atụmatụ gị ga-arụ ọrụ na ngwaọrụ niile.';
 
   @override
-  String get errQuotaExceeded =>
-      'Ị nweghị nyocha fọdụrụ n\'oge a. Kwalite atụmatụ gị ma ọ bụ zụta nyocha mgbakwunye.';
+  String get errQuotaExceeded => 'Ị nweghị nyocha fọdụrụ n\'oge a. Kwalite atụmatụ gị ma ọ bụ zụta nyocha mgbakwunye.';
 
   @override
-  String get errTrialExpired =>
-      'Nnwale n\'efu gị agwụla. Họrọ atụmatụ ka ị gaa n\'ihu.';
+  String get errTrialExpired => 'Nnwale n\'efu gị agwụla. Họrọ atụmatụ ka ị gaa n\'ihu.';
 
   @override
   String get errNoPlan => 'A chọrọ atụmatụ na-arụ ọrụ maka nyocha AI.';
@@ -799,8 +776,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get usageTitle => 'Ojiji';
 
   @override
-  String get demoPurchaseNote =>
-      'Ịkwụ ụgwọ ngosi: a na-eṅomi ịzụ ihe n\'ikpo okwu a.';
+  String get demoPurchaseNote => 'Ịkwụ ụgwọ ngosi: a na-eṅomi ịzụ ihe n\'ikpo okwu a.';
 
   @override
   String get mostPopular => 'Kacha ewu ewu';
@@ -840,8 +816,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get aiDepthStandardDesc => 'Nkọwa zuru ezu nwere akụkụ niile.';
 
   @override
-  String get aiDepthDeepDesc =>
-      'Ọchụchọ web karịa, ntụnyere ya na ụlọ ọrụ ndị yiri ya na nkọwa miri emi karịa.';
+  String get aiDepthDeepDesc => 'Ọchụchọ web karịa, ntụnyere ya na ụlọ ọrụ ndị yiri ya na nkọwa miri emi karịa.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -869,12 +844,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get aiReaderExperienced => 'Onye nwere ahụmahụ';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'Asụsụ dị mfe; a na-akọwa okwu ọkachamara ọ bụla.';
+  String get aiReaderBeginnerDesc => 'Asụsụ dị mfe; a na-akọwa okwu ọkachamara ọ bụla.';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'Ederede jupụtara n\'ozi, nwere okwu ego a na-ejikarị.';
+  String get aiReaderExperiencedDesc => 'Ederede jupụtara n\'ozi, nwere okwu ego a na-ejikarị.';
 
   @override
   String get aiCounterArgument => 'Arụmụka megidere kachasị ike';
@@ -974,8 +947,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get upcomingEvents => 'Ihe omume na-abịa';
 
   @override
-  String get outlookChartNote =>
-      'Ndị a bụ oke atụmatụ; ohere ndị ahụ bụ ntụle nkịtị, ọ bụghị amụma.';
+  String get outlookChartNote => 'Ndị a bụ oke atụmatụ; ohere ndị ahụ bụ ntụle nkịtị, ọ bụghị amụma.';
 
   @override
   String get accountTitle => 'Akaụntụ';
@@ -990,12 +962,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get notSignedIn => 'Ịbanyeghị';
 
   @override
-  String get accountBenefit =>
-      'Banye ka ndenye aha gị rụọ ọrụ na ngwaọrụ gị niile.';
+  String get accountBenefit => 'Banye ka ndenye aha gị rụọ ọrụ na ngwaọrụ gị niile.';
 
   @override
-  String get accountSyncedNote =>
-      'Ndenye aha gị na nyocha fọdụrụ bụ otu na ngwaọrụ ọ bụla.';
+  String get accountSyncedNote => 'Ndenye aha gị na nyocha fọdụrụ bụ otu na ngwaọrụ ọ bụla.';
 
   @override
   String get signInTitle => 'Banye na WhatStock';
@@ -1027,16 +997,13 @@ class AppLocalizationsIg extends AppLocalizations {
   String get errInvalidEmail => 'Biko tinye adreesị email ziri ezi.';
 
   @override
-  String get errSignInFailed =>
-      'Mbanye agaghị nke ọma. Lelee njikọ gị wee nwaa ọzọ.';
+  String get errSignInFailed => 'Mbanye agaghị nke ọma. Lelee njikọ gị wee nwaa ọzọ.';
 
   @override
-  String get checkoutWaiting =>
-      'Mezue ịkwụ ụgwọ n\'ihe nchọgharị gị. App ahụ ga-emelite onwe ya mgbe ọ gwụrụ.';
+  String get checkoutWaiting => 'Mezue ịkwụ ụgwọ n\'ihe nchọgharị gị. App ahụ ga-emelite onwe ya mgbe ọ gwụrụ.';
 
   @override
-  String get paymentViaStripe =>
-      'Ịkwụ ụgwọ echekwara n\'ihe nchọgharị gị site na Stripe. Kagbuo n\'oge ọ bụla.';
+  String get paymentViaStripe => 'Ịkwụ ụgwọ echekwara n\'ihe nchọgharị gị site na Stripe. Kagbuo n\'oge ọ bụla.';
 
   @override
   String get paymentViaStore =>
@@ -1049,8 +1016,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get doubleOptionTitle => 'Pịa Option ugboro abụọ';
 
   @override
-  String get doubleOptionSubtitle =>
-      'Ịpị igodo Option ugboro abụọ ngwa ngwa na-akpọkwa WhatStock.';
+  String get doubleOptionSubtitle => 'Ịpị igodo Option ugboro abụọ ngwa ngwa na-akpọkwa WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1072,12 +1038,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: 'afọ $years',
-      one: 'afọ 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'afọ $years', one: 'afọ 1');
     return '$_temp0';
   }
 
@@ -1108,8 +1069,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get portfolio => 'Portfolio';
 
   @override
-  String get portfolioEmpty =>
-      'Ọ dịbeghị ihe ebe a. Mepee stock ma pịa “Tinye na portfolio” ka i soro ihe ị nwere.';
+  String get portfolioEmpty => 'Ọ dịbeghị ihe ebe a. Mepee stock ma pịa “Tinye na portfolio” ka i soro ihe ị nwere.';
 
   @override
   String get portfolioLocalNote =>
@@ -1183,8 +1143,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get portfolioRemove => 'Wepụ';
 
   @override
-  String get portfolioExcluded =>
-      'Ihe ndị na-enweghị ọnụahịa ma ọ bụ ọnụego agụnyeghị na ngụkọta.';
+  String get portfolioExcluded => 'Ihe ndị na-enweghị ọnụahịa ma ọ bụ ọnụego agụnyeghị na ngụkọta.';
 
   @override
   String get priceAlerts => 'Ọkwa ọnụahịa';
@@ -1226,8 +1185,7 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty =>
-      'Enwebeghị ọkwa ọnụahịa. Mepee stock ma pịa mgbịrịgba iji debe otu.';
+  String get alertsEmpty => 'Enwebeghị ọkwa ọnụahịa. Mepee stock ma pịa mgbịrịgba iji debe otu.';
 
   @override
   String get alertsNote =>
@@ -1320,8 +1278,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get accountDeleted => 'Ehichapụla akaụntụ gị.';
 
   @override
-  String get errDeleteAccount =>
-      'Enweghị ike ihichapụ akaụntụ ahụ. Lelee njikọ gị wee nwaa ọzọ.';
+  String get errDeleteAccount => 'Enweghị ike ihichapụ akaụntụ ahụ. Lelee njikọ gị wee nwaa ọzọ.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1358,8 +1315,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get inviteTitle => 'Nlele mbụ emechiri emechi';
 
   @override
-  String get inviteBody =>
-      'Ugbu a, WhatStock dị naanị site na òkù. Tinye koodu òkù i nwetara.';
+  String get inviteBody => 'Ugbu a, WhatStock dị naanị site na òkù. Tinye koodu òkù i nwetara.';
 
   @override
   String get inviteCodeLabel => 'Koodu òkù';
@@ -1371,19 +1327,16 @@ class AppLocalizationsIg extends AppLocalizations {
   String get inviteInvalid => 'Koodu òkù a ezighi ezi.';
 
   @override
-  String get inviteExpired =>
-      'Oge òkù a agafeela. Rịọ onye kpọrọ gị òkù ka o nye gị koodu ọhụrụ.';
+  String get inviteExpired => 'Oge òkù a agafeela. Rịọ onye kpọrọ gị òkù ka o nye gị koodu ọhụrụ.';
 
   @override
-  String get inviteDeviceLimit =>
-      'A na-eji koodu òkù a na ọnụ ọgụgụ ngwaọrụ kachasị elu e kwere.';
+  String get inviteDeviceLimit => 'A na-eji koodu òkù a na ọnụ ọgụgụ ngwaọrụ kachasị elu e kwere.';
 
   @override
   String get previewConfidential => 'Nlele mbụ nzuzo';
 
   @override
-  String get errPreviewDailyLimit =>
-      'Oke nyocha nke taa maka nlele mbụ a agwụla. Nwaa ọzọ echi.';
+  String get errPreviewDailyLimit => 'Oke nyocha nke taa maka nlele mbụ a agwụla. Nwaa ọzọ echi.';
 
   @override
   String ageHours(int count) {
@@ -1438,8 +1391,7 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint =>
-      'Pịa otu ogo AI mere atụmatụ ya ka ị nweta ọkwa mgbe ọnụahịa ruru ya.';
+  String get keyLevelAlertHint => 'Pịa otu ogo AI mere atụmatụ ya ka ị nweta ọkwa mgbe ọnụahịa ruru ya.';
 
   @override
   String get shareAnalysisTitle => 'Kesaa nyocha';
@@ -1454,8 +1406,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get shareCardFooter => 'E ji WhatStock mee ya';
 
   @override
-  String get shareCardDisclaimer =>
-      'Nyocha AI · ọnọdụ ihe atụ, ọ bụghị amụma · ọ bụghị ndụmọdụ itinye ego';
+  String get shareCardDisclaimer => 'Nyocha AI · ọnọdụ ihe atụ, ọ bụghị amụma · ọ bụghị ndụmọdụ itinye ego';
 
   @override
   String get referralTitle => 'Kpọọ ndị enyi';
@@ -1614,8 +1565,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get askSuggest3 => 'Kọwaa ya n\'ụzọ dị mfe';
 
   @override
-  String get askMaxReached =>
-      'Nke ahụ bụ ajụjụ ikpeazụ maka nyocha a. Mepụta nyocha ọhụrụ ka ị jụọ ọzọ.';
+  String get askMaxReached => 'Nke ahụ bụ ajụjụ ikpeazụ maka nyocha a. Mepụta nyocha ọhụrụ ka ị jụọ ọzọ.';
 
   @override
   String get errAskLimit => 'Ị ruola oke ajụjụ nke taa. Nwaa ọzọ echi.';
@@ -1714,8 +1664,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get notesTitle => 'Ndetu m';
 
   @override
-  String get notesHint =>
-      'Gịnị mere i ji zụta ya, gịnị ka ị na-eleba anya, gịnị ga-eme ka i ree ya?';
+  String get notesHint => 'Gịnị mere i ji zụta ya, gịnị ka ị na-eleba anya, gịnị ga-eme ka i ree ya?';
 
   @override
   String get notesInfo =>
@@ -1765,8 +1714,7 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get syncInfo =>
-      'A na-emekọrịta portfolio, ọkacha mmasị, ọkwa ọnụahịa na ndetu gị na ngwaọrụ gị niile.';
+  String get syncInfo => 'A na-emekọrịta portfolio, ọkacha mmasị, ọkwa ọnụahịa na ndetu gị na ngwaọrụ gị niile.';
 
   @override
   String syncLast(String time) {
@@ -1906,8 +1854,7 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'Ego ụlọ ọrụ ahụ dum bara n\'ahịa stock: ọnụahịa otu share × ọnụọgụ shares.';
+  String get glossMarketCap => 'Ego ụlọ ọrụ ahụ dum bara n\'ahịa stock: ọnụahịa otu share × ọnụọgụ shares.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1946,12 +1893,10 @@ class AppLocalizationsIg extends AppLocalizations {
       'Etu stock ahụ si agagharị na ahịa: 1 = dị ka ahịa, 1.5 = mgbagharị dị ihe dị ka 50% karịa, n\'okpuru 1 = dị jụụ karịa.';
 
   @override
-  String get glossRevenueTtm =>
-      'Ngụkọta ihe e rere n\'ime ọnwa 12 gara aga, tupu mmefu ọ bụla.';
+  String get glossRevenueTtm => 'Ngụkọta ihe e rere n\'ime ọnwa 12 gara aga, tupu mmefu ọ bụla.';
 
   @override
-  String get glossNetIncomeTtm =>
-      'Uru fọdụrụ mgbe mmefu niile, ọmụrụ nwa na ụtụ isi gasịrị n\'ime ọnwa 12 gara aga.';
+  String get glossNetIncomeTtm => 'Uru fọdụrụ mgbe mmefu niile, ọmụrụ nwa na ụtụ isi gasịrị n\'ime ọnwa 12 gara aga.';
 
   @override
   String get glossGrossMargin =>
@@ -1962,16 +1907,14 @@ class AppLocalizationsIg extends AppLocalizations {
       'Òkè ego mbata fọdụrụ mgbe ọrụ azụmahịa gasịrị (ụgwọ ọnwa, ụlọ mgbazinye, mgbasa ozi), tupu ọmụrụ nwa na ụtụ isi.';
 
   @override
-  String get glossNetMargin =>
-      'Òkè ego mbata na-aghọ uru ikpeazụ. 20% pụtara na n\'ime 100 ọ bụla e rere, 20 bụ uru.';
+  String get glossNetMargin => 'Òkè ego mbata na-aghọ uru ikpeazụ. 20% pụtara na n\'ime 100 ọ bụla e rere, 20 bụ uru.';
 
   @override
   String get glossRoe =>
       'Uru n\'ego ndị nwe: uru kwa afọ ÷ ego ndị nwe ụlọ ọrụ. Ọ na-egosi etu ndị isi si eji ego ndị nwe shares eme ihe nke ọma; karịa ihe dị ka 15% siri ike.';
 
   @override
-  String get glossRoa =>
-      'Uru n\'akụ: uru kwa afọ ÷ ihe niile ụlọ ọrụ nwere. Tụnyere ya n\'otu ụdị ọrụ.';
+  String get glossRoa => 'Uru n\'akụ: uru kwa afọ ÷ ihe niile ụlọ ọrụ nwere. Tụnyere ya n\'otu ụdị ọrụ.';
 
   @override
   String get glossDebtToEquity =>
@@ -1982,20 +1925,17 @@ class AppLocalizationsIg extends AppLocalizations {
       'Akụ obere oge ÷ ụgwọ a ga-akwụ n\'ime otu afọ. Karịa 1 pụtara na ụlọ ọrụ ahụ nwere ike ịkwụ ụgwọ ndị dị nso.';
 
   @override
-  String get glossRevenueGrowth =>
-      'Etu ego mbata si too ma e jiri ya tụnyere afọ gara aga.';
+  String get glossRevenueGrowth => 'Etu ego mbata si too ma e jiri ya tụnyere afọ gara aga.';
 
   @override
-  String get glossEpsGrowth =>
-      'Etu uru kwa share si too ma e jiri ya tụnyere afọ gara aga.';
+  String get glossEpsGrowth => 'Etu uru kwa share si too ma e jiri ya tụnyere afọ gara aga.';
 
   @override
   String get glossDividendYield =>
       'Dividend kwa afọ ÷ ọnụahịa share: ego ị ga-enweta kwa afọ, dị ka pasentị nke ihe ị kwụrụ.';
 
   @override
-  String get glossDividendPerShare =>
-      'Dividend a kwụrụ n\'otu share n\'afọ gara aga.';
+  String get glossDividendPerShare => 'Dividend a kwụrụ n\'otu share n\'afọ gara aga.';
 
   @override
   String get glossPayoutRatio =>
@@ -2093,10 +2033,8 @@ class AppLocalizationsIg extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'Ruru ma ọ bụ karịa EPS a tụrụ anya ya na $beats n\'ime nkeji ọnwa atọ $total gara aga',
-      one:
-          'Ruru ma ọ bụ karịa EPS a tụrụ anya ya na $beats n\'ime nkeji ọnwa atọ 1',
+      other: 'Ruru ma ọ bụ karịa EPS a tụrụ anya ya na $beats n\'ime nkeji ọnwa atọ $total gara aga',
+      one: 'Ruru ma ọ bụ karịa EPS a tụrụ anya ya na $beats n\'ime nkeji ọnwa atọ 1',
     );
     return '$_temp0';
   }
@@ -2212,23 +2150,13 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ịzụta $count',
-      one: 'ịzụta 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ịzụta $count', one: 'ịzụta 1');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ire $count',
-      one: 'ire 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ire $count', one: 'ire 1');
     return '$_temp0';
   }
 
@@ -2248,8 +2176,7 @@ class AppLocalizationsIg extends AppLocalizations {
       'Ịzụta na ire n\'ahịa mepere emepe nke ndị isi na ndị nduzi mere n\'ụbọchị 90 gara aga (SEC Form 4). Anaghị agụnye iji option na shares e nyere dị ka onyinye.';
 
   @override
-  String get insiderNone =>
-      'Ọ dịghị ịzụta ma ọ bụ ire ndị isi n\'ahịa mepere emepe n\'ụbọchị 90 gara aga.';
+  String get insiderNone => 'Ọ dịghị ịzụta ma ọ bụ ire ndị isi n\'ahịa mepere emepe n\'ụbọchị 90 gara aga.';
 
   @override
   String get analystTrend => 'Otú echiche si gbanwee kwa ọnwa';
@@ -2292,8 +2219,7 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'E depụtala ya – mado ya ebe ọ bụla ị chọrọ ịkesa ya.';
+  String get sharedToClipboard => 'E depụtala ya – mado ya ebe ọ bụla ị chọrọ ịkesa ya.';
 
   @override
   String get glossaryNoMatch => 'Ọ dịghị okwu dabara na ọchụchọ gị.';
@@ -2323,15 +2249,13 @@ class AppLocalizationsIg extends AppLocalizations {
   String get backupSave => 'Chekwaa ndabere';
 
   @override
-  String get backupSaveHint =>
-      'Ọkacha mmasị gị, ndepụta gị, portfolio gị, ọkwa gị na ndetu gị n\'otu faịlụ.';
+  String get backupSaveHint => 'Ọkacha mmasị gị, ndepụta gị, portfolio gị, ọkwa gị na ndetu gị n\'otu faịlụ.';
 
   @override
   String get backupRestore => 'Weghachite site na ndabere';
 
   @override
-  String get backupRestoreHint =>
-      'Ọ na-agbakwunye ihe dị na faịlụ ahụ; ọ dịghị ihe ị nwere ugbu a a ga-ehichapụ.';
+  String get backupRestoreHint => 'Ọ na-agbakwunye ihe dị na faịlụ ahụ; ọ dịghị ihe ị nwere ugbu a a ga-ehichapụ.';
 
   @override
   String get backupRestored => 'Eweghachila ndabere.';
@@ -2450,8 +2374,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Ọkwa pọtfolio';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'Ọkwa mgbe pọtfolio gị niile gbanwere nke a n\'otu ụbọchị.';
+  String get portfolioMoveAlertSubtitle => 'Ọkwa mgbe pọtfolio gị niile gbanwere nke a n\'otu ụbọchị.';
 
   @override
   String get portfolioMoveAlertOff => 'Agbanyụrụ';
@@ -2623,17 +2546,11 @@ class AppLocalizationsIg extends AppLocalizations {
   String get portfolioTopHoldings => 'Ihe kachasị ukwuu ị nwere';
 
   @override
-  String get portfolioShareNote =>
-      'Naanị pasentị ka a na-ekesa, ọ bụghị ego ole.';
+  String get portfolioShareNote => 'Naanị pasentị ka a na-ekesa, ọ bụghị ego ole.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Òkè $count',
-      one: 'Òkè 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Òkè $count', one: 'Òkè 1');
     return '$_temp0';
   }
 
@@ -2739,12 +2656,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lotNoteAdd => 'Tinye ndetu';
 
   @override
-  String get lotNoteBuyHint =>
-      'Gịnị mere ị na-azụ ya? Ọ ga-abanye na ndetu stock a, ya na ụbọchị.';
+  String get lotNoteBuyHint => 'Gịnị mere ị na-azụ ya? Ọ ga-abanye na ndetu stock a, ya na ụbọchị.';
 
   @override
-  String get lotNoteSellHint =>
-      'Gịnị mere ị na-ere ya? Ọ ga-abanye na ndetu stock a, ya na ụbọchị.';
+  String get lotNoteSellHint => 'Gịnị mere ị na-ere ya? Ọ ga-abanye na ndetu stock a, ya na ụbọchị.';
 
   @override
   String get lotNoteBought => 'E zụrụ';
@@ -2754,21 +2669,13 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: 'ọnwa $months',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: 'ọnwa $months');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'ụbọchị $days',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'ụbọchị $days');
     return '$_temp0';
   }
 
@@ -2856,8 +2763,7 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'Jiri email gị banye ka ị jiri koodu enyi gị.';
+  String get referralErrSignIn => 'Jiri email gị banye ka ị jiri koodu enyi gị.';
 
   @override
   String get referralErrFull => 'E jirila koodu a ruo ugboro kachasị ekwere.';
@@ -2868,16 +2774,13 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated =>
-      'Nyocha ahụ kwụsịrị tupu o mechaa. Biko nwaa ọzọ – e wepụghị ihe ọ bụla n\'oke gị.';
+  String get errAiTruncated => 'Nyocha ahụ kwụsịrị tupu o mechaa. Biko nwaa ọzọ – e wepụghị ihe ọ bụla n\'oke gị.';
 
   @override
-  String get errImageUnsupported =>
-      'Enweghị ike ịgụ onyonyo a. Chekwaa ya dị ka JPEG ma ọ bụ PNG wee nwaa ọzọ.';
+  String get errImageUnsupported => 'Enweghị ike ịgụ onyonyo a. Chekwaa ya dị ka JPEG ma ọ bụ PNG wee nwaa ọzọ.';
 
   @override
-  String get errRateLimited =>
-      'Arịrịọ dị ukwuu n\'ime obere oge. Biko chere otu nkeji wee nwaa ọzọ.';
+  String get errRateLimited => 'Arịrịọ dị ukwuu n\'ime obere oge. Biko chere otu nkeji wee nwaa ọzọ.';
 
   @override
   String get watchListNameTaken => 'Ndepụta nwere aha a adịlarị.';
@@ -2893,8 +2796,7 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing =>
-      'Ahụghị ihe ọ bụla i zụrụ na mbụ a ga-eweghachi.';
+  String get restoreNothing => 'Ahụghị ihe ọ bụla i zụrụ na mbụ a ga-eweghachi.';
 
   @override
   String get manageSubscriptionElsewhere =>
@@ -2908,8 +2810,7 @@ class AppLocalizationsIg extends AppLocalizations {
       'Data gị buru oke ibu imekọrịta ya na akaụntụ gị. Hichapụ azụmahịa ma ọ bụ ndetu ndị ị na-achọghịzi, ọ ga-anwa ọzọ.';
 
   @override
-  String get noteFull =>
-      'Ndetu stock a ejupụtala, ya mere etinyeghị ihe a. Mee ka ndetu ahụ dị mkpụmkpụ ma nwaa ọzọ.';
+  String get noteFull => 'Ndetu stock a ejupụtala, ya mere etinyeghị ihe a. Mee ka ndetu ahụ dị mkpụmkpụ ma nwaa ọzọ.';
 
   @override
   String portfolioNoRateFor(String symbols) {
@@ -2921,10 +2822,8 @@ class AppLocalizationsIg extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'Nkesa uru $count na $currencies enweghị ọnụego mgbanwe, ya mere agụnyeghị ha na ngụkọta.',
-      one:
-          'Nkesa uru 1 na $currencies enweghị ọnụego mgbanwe, ya mere agụnyeghị ya na ngụkọta.',
+      other: 'Nkesa uru $count na $currencies enweghị ọnụego mgbanwe, ya mere agụnyeghị ha na ngụkọta.',
+      one: 'Nkesa uru 1 na $currencies enweghị ọnụego mgbanwe, ya mere agụnyeghị ya na ngụkọta.',
     );
     return '$_temp0';
   }
@@ -3195,8 +3094,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get portfolioSplitRatio => 'Oke (ọhụrụ : ochie)';
 
   @override
-  String get portfolioSplitRatioError =>
-      'Tinye oke dị ka 10:1, ma ọ bụ 1:10 maka nkewa ntụgharị.';
+  String get portfolioSplitRatioError => 'Tinye oke dị ka 10:1, ma ọ bụ 1:10 maka nkewa ntụgharị.';
 
   @override
   String get portfolioSplitDate => 'Ụbọchị nkewa ahụ';
@@ -3254,12 +3152,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String awayAlerts(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Ọkwa $count dara',
-      one: 'Ọkwa 1 dara',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Ọkwa $count dara', one: 'Ọkwa 1 dara');
     return '$_temp0';
   }
 
@@ -3380,8 +3273,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get glossaryPageTitle => 'Nkọwa okwu';
 
   @override
-  String get glossaryPageSubtitle =>
-      'Nkọwa dị mfe maka ọnụọgụ ọ bụla ngwa a na-egosi, site na P/E ruo RSI';
+  String get glossaryPageSubtitle => 'Nkọwa dị mfe maka ọnụọgụ ọ bụla ngwa a na-egosi, site na P/E ruo RSI';
 
   @override
   String get glossarySearchHint => 'Chọọ na nkọwa okwu';

@@ -16,8 +16,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get homeTagline => 'צלמו מניה וגלו עליה הכול.';
 
   @override
-  String get homeHint =>
-      'תעודת מניה, מסך של אפליקציית מסחר, עיתון או לוגו של חברה – כל דבר שמזהה מניה.';
+  String get homeHint => 'תעודת מניה, מסך של אפליקציית מסחר, עיתון או לוגו של חברה – כל דבר שמזהה מניה.';
 
   @override
   String get takePhoto => 'צילום תמונה';
@@ -55,8 +54,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get noCandidatesTitle => 'לא זוהתה מניה';
 
   @override
-  String get noCandidatesBody =>
-      'לא הצלחנו לזהות מניה בתמונה הזו. נסו תמונה חדה יותר, או הזינו את הסימול ידנית.';
+  String get noCandidatesBody => 'לא הצלחנו לזהות מניה בתמונה הזו. נסו תמונה חדה יותר, או הזינו את הסימול ידנית.';
 
   @override
   String get whatWeSaw => 'מה ראינו';
@@ -352,12 +350,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get recognitionRawText => 'הטקסט שנקרא מהתמונה';
 
   @override
-  String get errMissingAnthropicKey =>
-      'זיהוי תמונות אינו זמין בגרסה זו. הזינו את הסימול במקום זאת.';
+  String get errMissingAnthropicKey => 'זיהוי תמונות אינו זמין בגרסה זו. הזינו את הסימול במקום זאת.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'אין גישה לשירות הזיהוי. בדקו את החיבור לאינטרנט.';
+  String get errRecognitionUnreachable => 'אין גישה לשירות הזיהוי. בדקו את החיבור לאינטרנט.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -365,12 +361,10 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'שירות הזיהוי לא הצליח לעבד את התמונה הזו.';
+  String get errRecognitionRefused => 'שירות הזיהוי לא הצליח לעבד את התמונה הזו.';
 
   @override
-  String get errRecognitionTruncated =>
-      'התשובה של שירות הזיהוי נקטעה. נסו שוב.';
+  String get errRecognitionTruncated => 'התשובה של שירות הזיהוי נקטעה. נסו שוב.';
 
   @override
   String get errRecognitionBadResponse => 'תשובה לא צפויה משירות הזיהוי.';
@@ -382,12 +376,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errMissingFinnhubKey => 'נתוני שוק אינם זמינים בגרסה זו.';
 
   @override
-  String get errMarketUnreachable =>
-      'אין גישה לשירות נתוני השוק. בדקו את החיבור לאינטרנט.';
+  String get errMarketUnreachable => 'אין גישה לשירות נתוני השוק. בדקו את החיבור לאינטרנט.';
 
   @override
-  String get errMarketRateLimited =>
-      'יותר מדי בקשות לשירות נתוני השוק. המתינו דקה.';
+  String get errMarketRateLimited => 'יותר מדי בקשות לשירות נתוני השוק. המתינו דקה.';
 
   @override
   String errMarketHttp(String status) {
@@ -513,8 +505,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errAiNotConfigured => 'תכונות AI אינן זמינות בגרסה זו.';
 
   @override
-  String get errAiUnreachable =>
-      'אין גישה לשירות ה-AI. בדקו את החיבור לאינטרנט.';
+  String get errAiUnreachable => 'אין גישה לשירות ה-AI. בדקו את החיבור לאינטרנט.';
 
   @override
   String errAiHttp(String status) {
@@ -546,8 +537,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get rangeFiveYears => '5 ש׳';
 
   @override
-  String get chartUnavailable =>
-      'היסטוריית המחירים אינה זמינה ממקור הנתונים הנוכחי.';
+  String get chartUnavailable => 'היסטוריית המחירים אינה זמינה ממקור הנתונים הנוכחי.';
 
   @override
   String get sectionStatements => 'דוחות כספיים (שנתיים)';
@@ -574,8 +564,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get labelOperatingCashFlow => 'תזרים מזומנים מפעילות שוטפת';
 
   @override
-  String get statementsUnavailable =>
-      'אין דוחות כספיים מדווחים עבור המניה הזו.';
+  String get statementsUnavailable => 'אין דוחות כספיים מדווחים עבור המניה הזו.';
 
   @override
   String get launchAtLogin => 'הפעלה בכניסה למערכת';
@@ -605,8 +594,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get removeFromFavorites => 'הסרה מהמועדפים';
 
   @override
-  String get noFavorites =>
-      'אין עדיין מועדפים. הקישו על הכוכב של מניה כדי להוסיף אותה.';
+  String get noFavorites => 'אין עדיין מועדפים. הקישו על הכוכב של מניה כדי להוסיף אותה.';
 
   @override
   String get displayCurrency => 'מטבע תצוגה';
@@ -653,8 +641,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get updateDownloading => 'העדכון יורד ברקע…';
 
   @override
-  String get updateDownloaded =>
-      'העדכון מוכן. צריך להפעיל מחדש כדי להתקין אותו.';
+  String get updateDownloaded => 'העדכון מוכן. צריך להפעיל מחדש כדי להתקין אותו.';
 
   @override
   String get updateNow => 'עדכון';
@@ -712,8 +699,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'תקופת הניסיון החינמית הסתיימה. בחרו מסלול כדי להמשיך לנתח.';
+  String get trialExpired => 'תקופת הניסיון החינמית הסתיימה. בחרו מסלול כדי להמשיך לנתח.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -752,8 +738,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get extraPacksTitle => 'צריכים עוד? קנו ניתוחים נוספים';
 
   @override
-  String get extraPacksHint =>
-      'תוקפם של ניתוחים נוספים לא פג לעולם, והם מנוצלים אחרי המכסה החודשית שלך.';
+  String get extraPacksHint => 'תוקפם של ניתוחים נוספים לא פג לעולם, והם מנוצלים אחרי המכסה החודשית שלך.';
 
   @override
   String get buy => 'קנייה';
@@ -781,12 +766,10 @@ class AppLocalizationsHe extends AppLocalizations {
       'עדיין אי אפשר לבצע רכישות בפלטפורמה הזו. אפשר להצטרף למינוי בטלפון או ב-Mac – המסלול שלך יעבוד בכל המכשירים.';
 
   @override
-  String get errQuotaExceeded =>
-      'לא נשארו לך ניתוחים לתקופה הזו. שדרגו את המסלול או קנו ניתוחים נוספים.';
+  String get errQuotaExceeded => 'לא נשארו לך ניתוחים לתקופה הזו. שדרגו את המסלול או קנו ניתוחים נוספים.';
 
   @override
-  String get errTrialExpired =>
-      'תקופת הניסיון החינמית הסתיימה. בחרו מסלול כדי להמשיך.';
+  String get errTrialExpired => 'תקופת הניסיון החינמית הסתיימה. בחרו מסלול כדי להמשיך.';
 
   @override
   String get errNoPlan => 'לניתוח AI נדרש מסלול פעיל.';
@@ -798,8 +781,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get usageTitle => 'שימוש';
 
   @override
-  String get demoPurchaseNote =>
-      'חיוב לדוגמה: הרכישות בפלטפורמה הזו הן הדמיה בלבד.';
+  String get demoPurchaseNote => 'חיוב לדוגמה: הרכישות בפלטפורמה הזו הן הדמיה בלבד.';
 
   @override
   String get mostPopular => 'הכי פופולרי';
@@ -839,8 +821,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get aiDepthStandardDesc => 'דוח מלא עם כל החלקים.';
 
   @override
-  String get aiDepthDeepDesc =>
-      'יותר חיפושים ברשת, השוואה למתחרים ופירוט מעמיק יותר.';
+  String get aiDepthDeepDesc => 'יותר חיפושים ברשת, השוואה למתחרים ופירוט מעמיק יותר.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -878,8 +859,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get aiCounterArgument => 'הטיעון הנגדי החזק ביותר';
 
   @override
-  String get aiCounterArgumentDesc =>
-      'הסיכום תמיד מסתיים בטיעון החזק ביותר נגד המסקנה שלו עצמו.';
+  String get aiCounterArgumentDesc => 'הסיכום תמיד מסתיים בטיעון החזק ביותר נגד המסקנה שלו עצמו.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -975,8 +955,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get upcomingEvents => 'אירועים קרובים';
 
   @override
-  String get outlookChartNote =>
-      'טווחים אינדיקטיביים; ההסתברויות הן הערכות גסות, לא תחזיות.';
+  String get outlookChartNote => 'טווחים אינדיקטיביים; ההסתברויות הן הערכות גסות, לא תחזיות.';
 
   @override
   String get accountTitle => 'חשבון';
@@ -991,8 +970,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get notSignedIn => 'לא בוצעה כניסה';
 
   @override
-  String get accountBenefit =>
-      'היכנסו לחשבון כדי שהמינוי שלך יעבוד בכל המכשירים שלך.';
+  String get accountBenefit => 'היכנסו לחשבון כדי שהמינוי שלך יעבוד בכל המכשירים שלך.';
 
   @override
   String get accountSyncedNote => 'המינוי שלך והניתוחים שנשארו זהים בכל מכשיר.';
@@ -1030,16 +1008,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errSignInFailed => 'הכניסה נכשלה. בדקו את החיבור ונסו שוב.';
 
   @override
-  String get checkoutWaiting =>
-      'השלימו את התשלום בדפדפן. האפליקציה תתעדכן אוטומטית בסיום.';
+  String get checkoutWaiting => 'השלימו את התשלום בדפדפן. האפליקציה תתעדכן אוטומטית בסיום.';
 
   @override
-  String get paymentViaStripe =>
-      'תשלום מאובטח בדפדפן דרך Stripe. אפשר לבטל בכל עת.';
+  String get paymentViaStripe => 'תשלום מאובטח בדפדפן דרך Stripe. אפשר לבטל בכל עת.';
 
   @override
-  String get paymentViaStore =>
-      'החיוב מתבצע דרך חשבון ה-App Store או Google Play שלך. אפשר לבטל בכל עת בהגדרות החנות.';
+  String get paymentViaStore => 'החיוב מתבצע דרך חשבון ה-App Store או Google Play שלך. אפשר לבטל בכל עת בהגדרות החנות.';
 
   @override
   String get keySpace => 'רווח';
@@ -1048,8 +1023,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get doubleOptionTitle => 'הקשה כפולה על Option';
 
   @override
-  String get doubleOptionSubtitle =>
-      'גם הקשה מהירה פעמיים על מקש Option פותחת את WhatStock.';
+  String get doubleOptionSubtitle => 'גם הקשה מהירה פעמיים על מקש Option פותחת את WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1108,8 +1082,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get portfolio => 'תיק השקעות';
 
   @override
-  String get portfolioEmpty =>
-      'אין כאן עדיין כלום. פתחו מניה והקישו על \"הוספה לתיק\" כדי לעקוב אחרי מה שבבעלותך.';
+  String get portfolioEmpty => 'אין כאן עדיין כלום. פתחו מניה והקישו על \"הוספה לתיק\" כדי לעקוב אחרי מה שבבעלותך.';
 
   @override
   String get portfolioLocalNote =>
@@ -1183,8 +1156,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get portfolioRemove => 'הסרה';
 
   @override
-  String get portfolioExcluded =>
-      'פוזיציות ללא מחיר או שער חליפין אינן נכללות בסכומים.';
+  String get portfolioExcluded => 'פוזיציות ללא מחיר או שער חליפין אינן נכללות בסכומים.';
 
   @override
   String get priceAlerts => 'התראות מחיר';
@@ -1226,8 +1198,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty =>
-      'אין עדיין התראות מחיר. פתחו מניה והקישו על הפעמון כדי להגדיר התראה.';
+  String get alertsEmpty => 'אין עדיין התראות מחיר. פתחו מניה והקישו על הפעמון כדי להגדיר התראה.';
 
   @override
   String get alertsNote =>
@@ -1310,8 +1281,7 @@ class AppLocalizationsHe extends AppLocalizations {
       'החשבון שלך וכל מה שנשמר בשרת שלנו (אימייל, מכסה, שימוש) יימחקו לצמיתות, וניתוחים שלא נוצלו יאבדו. מינוי ששולם בדפדפן מבוטל מיד; מינוי דרך App Store או Google Play צריך לבטל בהגדרות החנות.';
 
   @override
-  String get deleteLocalData =>
-      'למחוק גם את הנתונים במכשיר הזה (תיק, התראות, מועדפים, היסטוריה, ניתוחים שמורים)';
+  String get deleteLocalData => 'למחוק גם את הנתונים במכשיר הזה (תיק, התראות, מועדפים, היסטוריה, ניתוחים שמורים)';
 
   @override
   String get deleteAccountConfirm => 'מחיקה לצמיתות';
@@ -1320,8 +1290,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get accountDeleted => 'החשבון שלך נמחק.';
 
   @override
-  String get errDeleteAccount =>
-      'לא ניתן היה למחוק את החשבון. בדקו את החיבור ונסו שוב.';
+  String get errDeleteAccount => 'לא ניתן היה למחוק את החשבון. בדקו את החיבור ונסו שוב.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1358,8 +1327,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get inviteTitle => 'תצוגה מקדימה סגורה';
 
   @override
-  String get inviteBody =>
-      'בשלב זה WhatStock זמינה בהזמנה בלבד. הזינו את קוד ההזמנה שקיבלתם.';
+  String get inviteBody => 'בשלב זה WhatStock זמינה בהזמנה בלבד. הזינו את קוד ההזמנה שקיבלתם.';
 
   @override
   String get inviteCodeLabel => 'קוד הזמנה';
@@ -1371,19 +1339,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String get inviteInvalid => 'קוד ההזמנה הזה אינו תקף.';
 
   @override
-  String get inviteExpired =>
-      'תוקף ההזמנה הזו פג. בקשו קוד חדש ממי שהזמין אתכם.';
+  String get inviteExpired => 'תוקף ההזמנה הזו פג. בקשו קוד חדש ממי שהזמין אתכם.';
 
   @override
-  String get inviteDeviceLimit =>
-      'קוד ההזמנה הזה כבר נמצא בשימוש במספר המרבי של מכשירים.';
+  String get inviteDeviceLimit => 'קוד ההזמנה הזה כבר נמצא בשימוש במספר המרבי של מכשירים.';
 
   @override
   String get previewConfidential => 'תצוגה מקדימה חסויה';
 
   @override
-  String get errPreviewDailyLimit =>
-      'מכסת הניתוחים היומית של תצוגה מקדימה זו נוצלה. נסו שוב מחר.';
+  String get errPreviewDailyLimit => 'מכסת הניתוחים היומית של תצוגה מקדימה זו נוצלה. נסו שוב מחר.';
 
   @override
   String ageHours(int count) {
@@ -1440,8 +1405,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint =>
-      'הקישו על רמה שהוערכה על ידי AI כדי לקבל התראה כשהמחיר מגיע אליה.';
+  String get keyLevelAlertHint => 'הקישו על רמה שהוערכה על ידי AI כדי לקבל התראה כשהמחיר מגיע אליה.';
 
   @override
   String get shareAnalysisTitle => 'שיתוף הניתוח';
@@ -1456,8 +1420,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get shareCardFooter => 'נוצר באמצעות WhatStock';
 
   @override
-  String get shareCardDisclaimer =>
-      'ניתוח AI · תרחישים להמחשה, לא תחזיות · אינו ייעוץ השקעות';
+  String get shareCardDisclaimer => 'ניתוח AI · תרחישים להמחשה, לא תחזיות · אינו ייעוץ השקעות';
 
   @override
   String get referralTitle => 'הזמנת חברים';
@@ -1616,8 +1579,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get askSuggest3 => 'הסבר את זה במילים פשוטות';
 
   @override
-  String get askMaxReached =>
-      'זו הייתה השאלה האחרונה לניתוח הזה. כדי לשאול עוד, צרו ניתוח חדש.';
+  String get askMaxReached => 'זו הייתה השאלה האחרונה לניתוח הזה. כדי לשאול עוד, צרו ניתוח חדש.';
 
   @override
   String get errAskLimit => 'הגעתם למכסת השאלות היומית. נסו שוב מחר.';
@@ -1720,8 +1682,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get notesHint => 'למה קנית, אחרי מה לעקוב, מה יגרום לך למכור?';
 
   @override
-  String get notesInfo =>
-      'נשמר במכשיר הזה, וגם בחשבון שלך אם נכנסת אליו. ניתוח ה-AI מתחשב בהערות שלך.';
+  String get notesInfo => 'נשמר במכשיר הזה, וגם בחשבון שלך אם נכנסת אליו. ניתוח ה-AI מתחשב בהערות שלך.';
 
   @override
   String notesSaved(String date) {
@@ -1767,8 +1728,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get syncInfo =>
-      'תיק ההשקעות, המועדפים, התראות המחיר וההערות מסונכרנים בכל המכשירים שלך.';
+  String get syncInfo => 'תיק ההשקעות, המועדפים, התראות המחיר וההערות מסונכרנים בכל המכשירים שלך.';
 
   @override
   String syncLast(String time) {
@@ -1785,8 +1745,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get alertEmailTitle => 'אימייל כשהתראה מופעלת';
 
   @override
-  String get alertEmailOn =>
-      'אנחנו בודקים את ההתראות שלך כל כמה דקות ושולחים לך אימייל, גם כשהאפליקציה סגורה.';
+  String get alertEmailOn => 'אנחנו בודקים את ההתראות שלך כל כמה דקות ושולחים לך אימייל, גם כשהאפליקציה סגורה.';
 
   @override
   String get alertEmailSignIn =>
@@ -1815,8 +1774,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get digestTitle => 'סיכום שבועי במייל';
 
   @override
-  String get digestHint =>
-      'בכל יום שני: איך זזו המועדפים ותיק ההשקעות שלך בשבוע שעבר, ומועדי הדוחות הקרובים שלהם.';
+  String get digestHint => 'בכל יום שני: איך זזו המועדפים ותיק ההשקעות שלך בשבוע שעבר, ומועדי הדוחות הקרובים שלהם.';
 
   @override
   String get benchmarkTitle => 'בהשוואה ל-S&P 500';
@@ -1908,8 +1866,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'כמה שווה החברה כולה בבורסה: מחיר המניה × מספר המניות.';
+  String get glossMarketCap => 'כמה שווה החברה כולה בבורסה: מחיר המניה × מספר המניות.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1928,16 +1885,14 @@ class AppLocalizationsHe extends AppLocalizations {
       'מחיר ÷ הון עצמי בספרים (נכסים פחות חובות) למניה. סביב 1 פירושו שהשוק מעריך את החברה בשווי מה שבבעלותה על הנייר.';
 
   @override
-  String get glossPs =>
-      'שווי שוק ÷ הכנסות שנתיות. שימושי לחברות עם רווח מועט או בלי רווח עדיין; השוו בתוך אותו ענף.';
+  String get glossPs => 'שווי שוק ÷ הכנסות שנתיות. שימושי לחברות עם רווח מועט או בלי רווח עדיין; השוו בתוך אותו ענף.';
 
   @override
   String get glossEvToFcf =>
       'שווי החברה כולל חוב (EV) ÷ המזומנים שהיא מייצרת בשנה אחרי השקעות. נמוך יותר פירושו שאתם מקבלים יותר מזומנים תמורת המחיר.';
 
   @override
-  String get glossPeg =>
-      'P/E ÷ צמיחת הרווח השנתית הצפויה (%). סביב 1 נחשב לרוב הוגן; הוא מציג את ה-P/E לאור הצמיחה.';
+  String get glossPeg => 'P/E ÷ צמיחת הרווח השנתית הצפויה (%). סביב 1 נחשב לרוב הוגן; הוא מציג את ה-P/E לאור הצמיחה.';
 
   @override
   String get glossEps =>
@@ -1948,32 +1903,26 @@ class AppLocalizationsHe extends AppLocalizations {
       'עד כמה המניה נוטה לנוע עם השוק: 1 = כמו השוק, 1.5 = תנודות גדולות בכ-50%, מתחת ל-1 = רגועה יותר.';
 
   @override
-  String get glossRevenueTtm =>
-      'סך המכירות ב-12 החודשים האחרונים, לפני כל ההוצאות.';
+  String get glossRevenueTtm => 'סך המכירות ב-12 החודשים האחרונים, לפני כל ההוצאות.';
 
   @override
-  String get glossNetIncomeTtm =>
-      'הרווח שנשאר אחרי כל ההוצאות, הריבית והמסים ב-12 החודשים האחרונים.';
+  String get glossNetIncomeTtm => 'הרווח שנשאר אחרי כל ההוצאות, הריבית והמסים ב-12 החודשים האחרונים.';
 
   @override
-  String get glossGrossMargin =>
-      'החלק מההכנסות שנשאר אחרי העלות הישירה של המוצרים. שיעור גבוה מעיד לרוב על כוח תמחור.';
+  String get glossGrossMargin => 'החלק מההכנסות שנשאר אחרי העלות הישירה של המוצרים. שיעור גבוה מעיד לרוב על כוח תמחור.';
 
   @override
-  String get glossOperatingMargin =>
-      'החלק מההכנסות שנשאר אחרי הפעלת העסק (שכר, שכירות, שיווק), לפני ריבית ומסים.';
+  String get glossOperatingMargin => 'החלק מההכנסות שנשאר אחרי הפעלת העסק (שכר, שכירות, שיווק), לפני ריבית ומסים.';
 
   @override
-  String get glossNetMargin =>
-      'החלק מההכנסות שהופך לרווח הסופי. 20% פירושו ש-20 מכל 100 של מכירות הם רווח.';
+  String get glossNetMargin => 'החלק מההכנסות שהופך לרווח הסופי. 20% פירושו ש-20 מכל 100 של מכירות הם רווח.';
 
   @override
   String get glossRoe =>
       'תשואה על ההון העצמי: רווח שנתי ÷ ההון של הבעלים. מראה כמה טוב ההנהלה משתמשת בכסף של בעלי המניות; מעל כ-15% זה חזק.';
 
   @override
-  String get glossRoa =>
-      'תשואה על הנכסים: רווח שנתי ÷ כל מה שבבעלות החברה. השוו בתוך אותו ענף.';
+  String get glossRoa => 'תשואה על הנכסים: רווח שנתי ÷ כל מה שבבעלות החברה. השוו בתוך אותו ענף.';
 
   @override
   String get glossDebtToEquity =>
@@ -1990,12 +1939,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get glossEpsGrowth => 'בכמה גדל הרווח למניה לעומת שנה קודם.';
 
   @override
-  String get glossDividendYield =>
-      'דיבידנד שנתי ÷ מחיר המניה: ההכנסה במזומן שתקבלו בכל שנה, כאחוז ממה שאתם משלמים.';
+  String get glossDividendYield => 'דיבידנד שנתי ÷ מחיר המניה: ההכנסה במזומן שתקבלו בכל שנה, כאחוז ממה שאתם משלמים.';
 
   @override
-  String get glossDividendPerShare =>
-      'הדיבידנד ששולם על מניה אחת בשנה האחרונה.';
+  String get glossDividendPerShare => 'הדיבידנד ששולם על מניה אחת בשנה האחרונה.';
 
   @override
   String get glossPayoutRatio =>
@@ -2048,8 +1995,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get watchSortName => 'לפי סימול (A–Z)';
 
   @override
-  String get watchHint =>
-      'גררו את הידית כדי לסדר מחדש, החליקו שמאלה כדי להסיר. הקו מציג את 30 הימים האחרונים.';
+  String get watchHint => 'גררו את הידית כדי לסדר מחדש, החליקו שמאלה כדי להסיר. הקו מציג את 30 הימים האחרונים.';
 
   @override
   String analysisReady(String symbol) {
@@ -2130,8 +2076,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get earningsRemindersTitle => 'תזכורות לדוחות רבעוניים';
 
   @override
-  String get earningsRemindersSubtitle =>
-      'התראה יום לפני שמניות מהמועדפים או מהתיק שלך מפרסמות דוחות רבעוניים';
+  String get earningsRemindersSubtitle => 'התראה יום לפני שמניות מהמועדפים או מהתיק שלך מפרסמות דוחות רבעוניים';
 
   @override
   String addAllToFavorites(int count) {
@@ -2210,23 +2155,13 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count רכישות',
-      one: 'רכישה אחת',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count רכישות', one: 'רכישה אחת');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count מכירות',
-      one: 'מכירה אחת',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count מכירות', one: 'מכירה אחת');
     return '$_temp0';
   }
 
@@ -2246,8 +2181,7 @@ class AppLocalizationsHe extends AppLocalizations {
       'רכישות ומכירות בשוק הפתוח על ידי מנהלים ודירקטורים ב-90 הימים האחרונים (SEC Form 4). מימוש אופציות והענקות מניות אינם נכללים.';
 
   @override
-  String get insiderNone =>
-      'אין רכישות או מכירות של בעלי עניין בשוק הפתוח ב-90 הימים האחרונים.';
+  String get insiderNone => 'אין רכישות או מכירות של בעלי עניין בשוק הפתוח ב-90 הימים האחרונים.';
 
   @override
   String get analystTrend => 'איך השתנו הדעות מחודש לחודש';
@@ -2271,8 +2205,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get watchListAddTo => 'הוספה לרשימה';
 
   @override
-  String get watchListEmpty =>
-      'אין עדיין מניות ברשימה הזו. הקישו על כפתור הרשימה ליד מניה כדי להוסיף אותה.';
+  String get watchListEmpty => 'אין עדיין מניות ברשימה הזו. הקישו על כפתור הרשימה ליד מניה כדי להוסיף אותה.';
 
   @override
   String favoriteRemoved(String symbol) {
@@ -2290,8 +2223,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'הועתק ללוח – אפשר להדביק בכל מקום שבו רוצים לשתף.';
+  String get sharedToClipboard => 'הועתק ללוח – אפשר להדביק בכל מקום שבו רוצים לשתף.';
 
   @override
   String get glossaryNoMatch => 'אין מונחים שתואמים לחיפוש.';
@@ -2300,8 +2232,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get cashInvalidAmount => 'יש להזין סכום של 0 ומעלה.';
 
   @override
-  String get portfolioImportNothing =>
-      'לא ניתן היה לקרוא עסקאות מהטקסט הזה. יש לוודא שכל שורה נראית כמו בדוגמה.';
+  String get portfolioImportNothing => 'לא ניתן היה לקרוא עסקאות מהטקסט הזה. יש לוודא שכל שורה נראית כמו בדוגמה.';
 
   @override
   String lotPriceFarFromQuote(String price) {
@@ -2321,15 +2252,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get backupSave => 'שמירת גיבוי';
 
   @override
-  String get backupSaveHint =>
-      'המועדפים, הרשימות, תיק ההשקעות, ההתראות וההערות שלכם בקובץ אחד.';
+  String get backupSaveHint => 'המועדפים, הרשימות, תיק ההשקעות, ההתראות וההערות שלכם בקובץ אחד.';
 
   @override
   String get backupRestore => 'שחזור מגיבוי';
 
   @override
-  String get backupRestoreHint =>
-      'מוסיף את מה שיש בקובץ; שום דבר ממה שיש לכם עכשיו לא נמחק.';
+  String get backupRestoreHint => 'מוסיף את מה שיש בקובץ; שום דבר ממה שיש לכם עכשיו לא נמחק.';
 
   @override
   String get backupRestored => 'הגיבוי שוחזר.';
@@ -2448,8 +2377,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'התראת תיק';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'התראה כשכל התיק שלך זז בשיעור כזה ביום אחד.';
+  String get portfolioMoveAlertSubtitle => 'התראה כשכל התיק שלך זז בשיעור כזה ביום אחד.';
 
   @override
   String get portfolioMoveAlertOff => 'כבוי';
@@ -2647,8 +2575,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get contributionHint =>
-      'רק קניות, בלי מכירות: הפוזיציות שהכי רחוקות מתחת ליעד שלהן מקבלות את הכסף ראשונות.';
+  String get contributionHint => 'רק קניות, בלי מכירות: הפוזיציות שהכי רחוקות מתחת ליעד שלהן מקבלות את הכסף ראשונות.';
 
   @override
   String contributionShares(String shares) {
@@ -2681,8 +2608,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get portfolioSampleTry => 'ניסיון עם תיק לדוגמה';
 
   @override
-  String get portfolioSampleBanner =>
-      'זהו תיק לדוגמה. אפשר להוסיף לצדו את הרכישות שלך, או להסיר אותו.';
+  String get portfolioSampleBanner => 'זהו תיק לדוגמה. אפשר להוסיף לצדו את הרכישות שלך, או להסיר אותו.';
 
   @override
   String get portfolioSampleRemove => 'הסרת הדוגמה';
@@ -2737,12 +2663,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get lotNoteAdd => 'הוספת הערה';
 
   @override
-  String get lotNoteBuyHint =>
-      'למה קונים? זה יירשם בהערות של המניה, עם התאריך.';
+  String get lotNoteBuyHint => 'למה קונים? זה יירשם בהערות של המניה, עם התאריך.';
 
   @override
-  String get lotNoteSellHint =>
-      'למה מוכרים? זה יירשם בהערות של המניה, עם התאריך.';
+  String get lotNoteSellHint => 'למה מוכרים? זה יירשם בהערות של המניה, עם התאריך.';
 
   @override
   String get lotNoteBought => 'נקנו';
@@ -2764,13 +2688,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days ימים',
-      two: 'יומיים',
-      one: 'יום אחד',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days ימים', two: 'יומיים', one: 'יום אחד');
     return '$_temp0';
   }
 
@@ -2869,12 +2787,10 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated =>
-      'הניתוח נקטע לפני שהסתיים. נסו שוב – הוא לא נוכה מהמכסה שלך.';
+  String get errAiTruncated => 'הניתוח נקטע לפני שהסתיים. נסו שוב – הוא לא נוכה מהמכסה שלך.';
 
   @override
-  String get errImageUnsupported =>
-      'לא ניתן לקרוא את התמונה הזו. שמרו אותה כ-JPEG או כ-PNG ונסו שוב.';
+  String get errImageUnsupported => 'לא ניתן לקרוא את התמונה הזו. שמרו אותה כ-JPEG או כ-PNG ונסו שוב.';
 
   @override
   String get errRateLimited => 'יותר מדי בקשות בזמן קצר. המתינו דקה ונסו שוב.';
@@ -2907,8 +2823,7 @@ class AppLocalizationsHe extends AppLocalizations {
       'הנתונים שלך גדולים מדי לסנכרון עם החשבון שלך. יש למחוק עסקאות או הערות שאינן נחוצות לך עוד, ואז ייעשה ניסיון חוזר.';
 
   @override
-  String get noteFull =>
-      'ההערות של המניה הזו מלאות, ולכן הרשומה לא נוספה. יש לקצר את ההערות ולנסות שוב.';
+  String get noteFull => 'ההערות של המניה הזו מלאות, ולכן הרשומה לא נוספה. יש לקצר את ההערות ולנסות שוב.';
 
   @override
   String portfolioNoRateFor(String symbols) {
@@ -2920,10 +2835,8 @@ class AppLocalizationsHe extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'ל-$count דיבידנדים ב-$currencies אין שער חליפין, ולכן הם אינם נכללים בסכומים.',
-      one:
-          'לדיבידנד אחד ב-$currencies אין שער חליפין, ולכן הוא אינו נכלל בסכומים.',
+      other: 'ל-$count דיבידנדים ב-$currencies אין שער חליפין, ולכן הם אינם נכללים בסכומים.',
+      one: 'לדיבידנד אחד ב-$currencies אין שער חליפין, ולכן הוא אינו נכלל בסכומים.',
     );
     return '$_temp0';
   }
@@ -2936,8 +2849,7 @@ class AppLocalizationsHe extends AppLocalizations {
       'תיק ההשקעות, הרשימות, התראות המחיר וההערות שלך נשארים בחשבון ויוסרו מהמכשיר הזה. כדי לקבל אותם בחזרה, צריך להיכנס שוב.';
 
   @override
-  String get signOutUnsaved =>
-      'לא ניתן היה לשמור חלק מהשינויים בחשבון שלך (אין חיבור?). אם יוצאים עכשיו, הם יאבדו.';
+  String get signOutUnsaved => 'לא ניתן היה לשמור חלק מהשינויים בחשבון שלך (אין חיבור?). אם יוצאים עכשיו, הם יאבדו.';
 
   @override
   String get signOutAnyway => 'לצאת בכל זאת';
@@ -2960,16 +2872,14 @@ class AppLocalizationsHe extends AppLocalizations {
       'כבר יש לך מינוי דרך App Store או Google Play. כדי לשנות את המסלול, השתמשו בהגדרות המינויים של אותה חנות.';
 
   @override
-  String get paymentViaAppStore =>
-      'החיוב מתבצע דרך חשבון ה-Apple שלך. אפשר לבטל בכל עת בהגדרות המינויים של App Store.';
+  String get paymentViaAppStore => 'החיוב מתבצע דרך חשבון ה-Apple שלך. אפשר לבטל בכל עת בהגדרות המינויים של App Store.';
 
   @override
   String get paymentViaGooglePlay =>
       'החיוב מתבצע דרך חשבון ה-Google Play שלך. אפשר לבטל בכל עת בהגדרות המינויים של Google Play.';
 
   @override
-  String get manageSubscriptionAppStore =>
-      'אין כאן מינוי לניהול. מינוי שנרכש ב-App Store מנוהל בהגדרות App Store.';
+  String get manageSubscriptionAppStore => 'אין כאן מינוי לניהול. מינוי שנרכש ב-App Store מנוהל בהגדרות App Store.';
 
   @override
   String get manageSubscriptionGooglePlay =>
@@ -3194,8 +3104,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get portfolioSplitRatio => 'יחס (חדש : ישן)';
 
   @override
-  String get portfolioSplitRatioError =>
-      'יש להזין יחס כמו 10:1, או 1:10 לפיצול הפוך (איחוד מניות).';
+  String get portfolioSplitRatioError => 'יש להזין יחס כמו 10:1, או 1:10 לפיצול הפוך (איחוד מניות).';
 
   @override
   String get portfolioSplitDate => 'תאריך הפיצול';
@@ -3316,12 +3225,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get techNeutral => 'ניטרלי';
 
   @override
-  String get techGoldenCross =>
-      'ממוצע 50 הימים נמצא מעל ממוצע 200 הימים – מגמת עלייה לפי הקריאה הקלאסית.';
+  String get techGoldenCross => 'ממוצע 50 הימים נמצא מעל ממוצע 200 הימים – מגמת עלייה לפי הקריאה הקלאסית.';
 
   @override
-  String get techDeathCross =>
-      'ממוצע 50 הימים נמצא מתחת לממוצע 200 הימים – מגמת ירידה לפי הקריאה הקלאסית.';
+  String get techDeathCross => 'ממוצע 50 הימים נמצא מתחת לממוצע 200 הימים – מגמת ירידה לפי הקריאה הקלאסית.';
 
   @override
   String get glossSma50 =>
@@ -3340,8 +3247,7 @@ class AppLocalizationsHe extends AppLocalizations {
       'כמה המחיר מתנדנד מיום ליום, במונחים שנתיים: 20% פירושו שבשנה טיפוסית המחיר נע בטווח של כ-±20%. תנודתיות גבוהה יותר פירושה תנועות גדולות יותר לשני הכיוונים.';
 
   @override
-  String get techNote =>
-      'מחושב משערי הסגירה היומיים. איתותים טכניים מתארים את העבר, לא את העתיד.';
+  String get techNote => 'מחושב משערי הסגירה היומיים. איתותים טכניים מתארים את העבר, לא את העתיד.';
 
   @override
   String portfolioAbove200(int above, int count) {
@@ -3381,8 +3287,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get glossaryPageTitle => 'מילון מונחים';
 
   @override
-  String get glossaryPageSubtitle =>
-      'הסברים פשוטים לכל נתון שהאפליקציה מציגה, מ-P/E ועד RSI';
+  String get glossaryPageSubtitle => 'הסברים פשוטים לכל נתון שהאפליקציה מציגה, מ-P/E ועד RSI';
 
   @override
   String get glossarySearchHint => 'חיפוש במילון המונחים';
@@ -3394,8 +3299,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get portfolioCashTitle => 'יתרת מזומן';
 
   @override
-  String get portfolioCashHint =>
-      'כסף שלא הושקע אצל הברוקר, לפי מטבע. נכלל בשווי הכולל ובפיזור; לא בתשואה.';
+  String get portfolioCashHint => 'כסף שלא הושקע אצל הברוקר, לפי מטבע. נכלל בשווי הכולל ובפיזור; לא בתשואה.';
 
   @override
   String portfolioCashAmount(String currency) {

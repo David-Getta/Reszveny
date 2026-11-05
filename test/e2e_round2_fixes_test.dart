@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:http/http.dart' as http;
+import 'package:http/testing.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
+import 'package:reszveny/core/config/app_config.dart';
+import 'package:reszveny/core/errors.dart';
+import 'package:reszveny/core/models/stock_details.dart';
+import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
+import 'package:reszveny/features/market_data/finnhub_market_data_provider.dart';
 import 'package:reszveny/features/compare/compare_page.dart';
 import 'package:reszveny/features/home/search_field.dart';
 import 'package:reszveny/features/notes/notes_card.dart';
@@ -318,5 +325,25 @@ void main() {
     await tester.tap(find.widgetWithText(FilledButton, 'Add'));
     await tester.pumpAndSettle();
     expect(s.portfolio.positionOf('AAPL')?.quantity, 1);
+  });
+
+  test('a 502 "upstream unavailable" from the server is a temporary outage, not an error code', () async {
+    final busy = MockClient((_) async => http.Response('{"error":"upstream_unavailable"}', 502));
+    final analyst = ClaudeStockAnalyst(
+      config: const AppConfig(anthropicApiKey: 'k'),
+      client: busy,
+    );
+    await expectLater(
+      analyst.analyze(const StockDetails(symbol: 'AAPL')),
+      throwsA(isA<AppException>().having((e) => e.code, 'code', AppErrorCode.aiUnreachable)),
+    );
+    final market = FinnhubMarketDataProvider(
+      config: const AppConfig(finnhubApiKey: 'k'),
+      client: busy,
+    );
+    await expectLater(
+      market.quote('AAPL'),
+      throwsA(isA<AppException>().having((e) => e.code, 'code', AppErrorCode.marketUnreachable)),
+    );
   });
 }

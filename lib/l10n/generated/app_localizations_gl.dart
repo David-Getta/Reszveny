@@ -318,12 +318,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count analistas',
-      one: '$count analista',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analistas', one: '$count analista');
     return '$_temp0';
   }
 
@@ -364,32 +359,26 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'O servizo de recoñecemento non puido procesar esta imaxe.';
+  String get errRecognitionRefused => 'O servizo de recoñecemento non puido procesar esta imaxe.';
 
   @override
-  String get errRecognitionTruncated =>
-      'A resposta do recoñecemento cortouse. Téntao de novo.';
+  String get errRecognitionTruncated => 'A resposta do recoñecemento cortouse. Téntao de novo.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Resposta inesperada do servizo de recoñecemento.';
+  String get errRecognitionBadResponse => 'Resposta inesperada do servizo de recoñecemento.';
 
   @override
-  String get errRecognitionEmpty =>
-      'O servizo de recoñecemento devolveu unha resposta baleira.';
+  String get errRecognitionEmpty => 'O servizo de recoñecemento devolveu unha resposta baleira.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Os datos de mercado non están dispoñibles nesta versión.';
+  String get errMissingFinnhubKey => 'Os datos de mercado non están dispoñibles nesta versión.';
 
   @override
   String get errMarketUnreachable =>
       'Non se puido conectar co servizo de datos de mercado. Comproba a túa conexión a internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Demasiadas solicitudes ao servizo de datos de mercado. Agarda un minuto.';
+  String get errMarketRateLimited => 'Demasiadas solicitudes ao servizo de datos de mercado. Agarda un minuto.';
 
   @override
   String errMarketHttp(String status) {
@@ -397,8 +386,7 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Resposta inesperada do servizo de datos de mercado.';
+  String get errMarketBadResponse => 'Resposta inesperada do servizo de datos de mercado.';
 
   @override
   String errNoQuote(String symbol) {
@@ -498,8 +486,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get aiRegenerate => 'Xerar de novo';
 
   @override
-  String get aiGenerating =>
-      'Preparando a análise… pode levar un ou dous minutos.';
+  String get aiGenerating => 'Preparando a análise… pode levar un ou dous minutos.';
 
   @override
   String get aiSources => 'Fontes';
@@ -514,12 +501,10 @@ class AppLocalizationsGl extends AppLocalizations {
       'Análise xerada por IA a partir de datos públicos e novas recentes. Pode conter erros ou estar desactualizada, e non constitúe asesoramento de investimento.';
 
   @override
-  String get errAiNotConfigured =>
-      'As funcións de IA non están dispoñibles nesta versión.';
+  String get errAiNotConfigured => 'As funcións de IA non están dispoñibles nesta versión.';
 
   @override
-  String get errAiUnreachable =>
-      'Non se puido conectar co servizo de IA. Comproba a túa conexión a internet.';
+  String get errAiUnreachable => 'Non se puido conectar co servizo de IA. Comproba a túa conexión a internet.';
 
   @override
   String errAiHttp(String status) {
@@ -551,8 +536,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get rangeFiveYears => '5A';
 
   @override
-  String get chartUnavailable =>
-      'O historial de prezos non está dispoñible na fonte de datos actual.';
+  String get chartUnavailable => 'O historial de prezos non está dispoñible na fonte de datos actual.';
 
   @override
   String get sectionStatements => 'Estados financeiros (anuais)';
@@ -579,8 +563,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get labelOperatingCashFlow => 'Fluxo de caixa operativo';
 
   @override
-  String get statementsUnavailable =>
-      'Non hai estados financeiros publicados dispoñibles para esta acción.';
+  String get statementsUnavailable => 'Non hai estados financeiros publicados dispoñibles para esta acción.';
 
   @override
   String get launchAtLogin => 'Abrir ao iniciar sesión';
@@ -589,8 +572,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get hotkeyLabel => 'Atallo global';
 
   @override
-  String get hotkeyRecordHint =>
-      'Fai clic aquí e preme a nova combinación de teclas';
+  String get hotkeyRecordHint => 'Fai clic aquí e preme a nova combinación de teclas';
 
   @override
   String get hotkeyReset => 'Restablecer o predeterminado';
@@ -611,8 +593,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get removeFromFavorites => 'Quitar de favoritos';
 
   @override
-  String get noFavorites =>
-      'Aínda non hai favoritos. Toca a estrela dunha acción para engadila.';
+  String get noFavorites => 'Aínda non hai favoritos. Toca a estrela dunha acción para engadila.';
 
   @override
   String get displayCurrency => 'Moeda de visualización';
@@ -656,12 +637,10 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get updateDownloading =>
-      'Descargando a actualización en segundo plano…';
+  String get updateDownloading => 'Descargando a actualización en segundo plano…';
 
   @override
-  String get updateDownloaded =>
-      'A actualización está lista. Reinicia para instalala.';
+  String get updateDownloaded => 'A actualización está lista. Reinicia para instalala.';
 
   @override
   String get updateNow => 'Actualizar';
@@ -670,8 +649,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get restartNow => 'Reiniciar';
 
   @override
-  String get updatesViaStore =>
-      'As actualizacións chegan automaticamente a través da tenda de aplicacións.';
+  String get updatesViaStore => 'As actualizacións chegan automaticamente a través da tenda de aplicacións.';
 
   @override
   String get updateCheckFailed => 'Non se puideron buscar actualizacións.';
@@ -731,8 +709,7 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'A túa proba gratuíta rematou. Escolle un plan para seguir analizando.';
+  String get trialExpired => 'A túa proba gratuíta rematou. Escolle un plan para seguir analizando.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -771,8 +748,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get extraPacksTitle => 'Necesitas máis? Compra análises extra';
 
   @override
-  String get extraPacksHint =>
-      'As análises extra nunca caducan e úsanse despois da túa cota mensual.';
+  String get extraPacksHint => 'As análises extra nunca caducan e úsanse despois da túa cota mensual.';
 
   @override
   String get buy => 'Comprar';
@@ -800,12 +776,10 @@ class AppLocalizationsGl extends AppLocalizations {
       'As compras aínda non están dispoñibles nesta plataforma. Subscríbete desde o teu teléfono ou Mac; o teu plan funcionará en todos os dispositivos.';
 
   @override
-  String get errQuotaExceeded =>
-      'Non che quedan análises neste período. Mellora o teu plan ou compra análises extra.';
+  String get errQuotaExceeded => 'Non che quedan análises neste período. Mellora o teu plan ou compra análises extra.';
 
   @override
-  String get errTrialExpired =>
-      'A túa proba gratuíta rematou. Escolle un plan para continuar.';
+  String get errTrialExpired => 'A túa proba gratuíta rematou. Escolle un plan para continuar.';
 
   @override
   String get errNoPlan => 'Necesítase un plan activo para a análise con IA.';
@@ -817,8 +791,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get usageTitle => 'Uso';
 
   @override
-  String get demoPurchaseNote =>
-      'Facturación de demostración: as compras simúlanse nesta plataforma.';
+  String get demoPurchaseNote => 'Facturación de demostración: as compras simúlanse nesta plataforma.';
 
   @override
   String get mostPopular => 'Máis popular';
@@ -858,8 +831,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get aiDepthStandardDesc => 'Informe completo con todas as seccións.';
 
   @override
-  String get aiDepthDeepDesc =>
-      'Máis buscas web, comparación con competidores e máis detalle.';
+  String get aiDepthDeepDesc => 'Máis buscas web, comparación con competidores e máis detalle.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -887,19 +859,16 @@ class AppLocalizationsGl extends AppLocalizations {
   String get aiReaderExperienced => 'Experimentado';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'Linguaxe sinxela; explícase cada termo técnico.';
+  String get aiReaderBeginnerDesc => 'Linguaxe sinxela; explícase cada termo técnico.';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'Texto máis denso coa terminoloxía financeira habitual.';
+  String get aiReaderExperiencedDesc => 'Texto máis denso coa terminoloxía financeira habitual.';
 
   @override
   String get aiCounterArgument => 'Contraargumento máis sólido';
 
   @override
-  String get aiCounterArgumentDesc =>
-      'O resumo sempre remata co mellor argumento en contra da súa propia conclusión.';
+  String get aiCounterArgumentDesc => 'O resumo sempre remata co mellor argumento en contra da súa propia conclusión.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -992,8 +961,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get upcomingEvents => 'Próximos eventos';
 
   @override
-  String get outlookChartNote =>
-      'Rangos orientativos; as probabilidades son estimacións aproximadas, non predicións.';
+  String get outlookChartNote => 'Rangos orientativos; as probabilidades son estimacións aproximadas, non predicións.';
 
   @override
   String get accountTitle => 'Conta';
@@ -1008,8 +976,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get notSignedIn => 'Sesión non iniciada';
 
   @override
-  String get accountBenefit =>
-      'Inicia sesión para que a túa subscrición funcione en todos os teus dispositivos.';
+  String get accountBenefit => 'Inicia sesión para que a túa subscrición funcione en todos os teus dispositivos.';
 
   @override
   String get accountSyncedNote =>
@@ -1042,20 +1009,17 @@ class AppLocalizationsGl extends AppLocalizations {
   String get errInvalidCode => 'O código é incorrecto ou caducou.';
 
   @override
-  String get errInvalidEmail =>
-      'Introduce un enderezo de correo electrónico válido.';
+  String get errInvalidEmail => 'Introduce un enderezo de correo electrónico válido.';
 
   @override
-  String get errSignInFailed =>
-      'Non se puido iniciar sesión. Comproba a conexión e téntao de novo.';
+  String get errSignInFailed => 'Non se puido iniciar sesión. Comproba a conexión e téntao de novo.';
 
   @override
   String get checkoutWaiting =>
       'Completa o pagamento no navegador. A aplicación actualizarase automaticamente cando remate.';
 
   @override
-  String get paymentViaStripe =>
-      'Pagamento seguro no navegador a través de Stripe. Cancela cando queiras.';
+  String get paymentViaStripe => 'Pagamento seguro no navegador a través de Stripe. Cancela cando queiras.';
 
   @override
   String get paymentViaStore =>
@@ -1068,8 +1032,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get doubleOptionTitle => 'Premer Opción dúas veces';
 
   @override
-  String get doubleOptionSubtitle =>
-      'Premer rapidamente dúas veces a tecla Opción tamén abre WhatStock.';
+  String get doubleOptionSubtitle => 'Premer rapidamente dúas veces a tecla Opción tamén abre WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1091,12 +1054,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '$years anos',
-      one: '$years ano',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years anos', one: '$years ano');
     return '$_temp0';
   }
 
@@ -1202,8 +1160,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get portfolioRemove => 'Quitar';
 
   @override
-  String get portfolioExcluded =>
-      'As posicións sen prezo ou sen tipo de cambio quedan fóra dos totais.';
+  String get portfolioExcluded => 'As posicións sen prezo ou sen tipo de cambio quedan fóra dos totais.';
 
   @override
   String get priceAlerts => 'Alertas de prezo';
@@ -1245,8 +1202,7 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty =>
-      'Aínda non hai alertas de prezo. Abre unha acción e toca a campá para crear unha.';
+  String get alertsEmpty => 'Aínda non hai alertas de prezo. Abre unha acción e toca a campá para crear unha.';
 
   @override
   String get alertsNote =>
@@ -1339,8 +1295,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get accountDeleted => 'A túa conta eliminouse.';
 
   @override
-  String get errDeleteAccount =>
-      'Non se puido eliminar a conta. Comproba a conexión e téntao de novo.';
+  String get errDeleteAccount => 'Non se puido eliminar a conta. Comproba a conexión e téntao de novo.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1390,12 +1345,10 @@ class AppLocalizationsGl extends AppLocalizations {
   String get inviteInvalid => 'Este código de invitación non é válido.';
 
   @override
-  String get inviteExpired =>
-      'Esta invitación caducou. Pídelle un código novo á persoa que te convidou.';
+  String get inviteExpired => 'Esta invitación caducou. Pídelle un código novo á persoa que te convidou.';
 
   @override
-  String get inviteDeviceLimit =>
-      'Este código de invitación xa se está a usar no número máximo de dispositivos.';
+  String get inviteDeviceLimit => 'Este código de invitación xa se está a usar no número máximo de dispositivos.';
 
   @override
   String get previewConfidential => 'Versión preliminar confidencial';
@@ -1406,23 +1359,13 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'hai $count horas',
-      one: 'hai $count hora',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'hai $count horas', one: 'hai $count hora');
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'hai $count días',
-      one: 'hai $count día',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'hai $count días', one: 'hai $count día');
     return '$_temp0';
   }
 
@@ -1457,8 +1400,7 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint =>
-      'Toca un nivel estimado por IA para recibir unha alerta cando o prezo o alcance.';
+  String get keyLevelAlertHint => 'Toca un nivel estimado por IA para recibir unha alerta cando o prezo o alcance.';
 
   @override
   String get shareAnalysisTitle => 'Compartir análise';
@@ -1516,8 +1458,7 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown =>
-      'Este código non existe. Compróbao e téntao de novo.';
+  String get referralErrUnknown => 'Este código non existe. Compróbao e téntao de novo.';
 
   @override
   String get referralErrOwn => 'Non podes canxear o teu propio código.';
@@ -1578,8 +1519,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get changesPrice => 'Prezo';
 
   @override
-  String get changesNoMajor =>
-      'As perspectivas non cambiaron de xeito significativo.';
+  String get changesNoMajor => 'As perspectivas non cambiaron de xeito significativo.';
 
   @override
   String get changesPreviousSummary => 'Resumo anterior';
@@ -1639,8 +1579,7 @@ class AppLocalizationsGl extends AppLocalizations {
       'Esa era a última pregunta para esta análise. Crea unha análise nova para facer máis preguntas.';
 
   @override
-  String get errAskLimit =>
-      'Alcanzaches o límite de preguntas de hoxe. Téntao de novo mañá.';
+  String get errAskLimit => 'Alcanzaches o límite de preguntas de hoxe. Téntao de novo mañá.';
 
   @override
   String get eventTomorrow => 'Mañá';
@@ -1677,8 +1616,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get eventDividend => 'Dividendo previsto';
 
   @override
-  String get eventDividendEstimate =>
-      'Estimado a partir dos teus pagamentos rexistrados';
+  String get eventDividendEstimate => 'Estimado a partir dos teus pagamentos rexistrados';
 
   @override
   String get eventsHint =>
@@ -1737,8 +1675,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get notesTitle => 'As miñas notas';
 
   @override
-  String get notesHint =>
-      'Por que a mercaches, que estás a vixiar, que che faría vendela?';
+  String get notesHint => 'Por que a mercaches, que estás a vixiar, que che faría vendela?';
 
   @override
   String get notesInfo =>
@@ -1800,8 +1737,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get syncNow => 'Sincronizar agora';
 
   @override
-  String get syncFailed =>
-      'Non se puido sincronizar. Volverase tentar automaticamente.';
+  String get syncFailed => 'Non se puido sincronizar. Volverase tentar automaticamente.';
 
   @override
   String get alertEmailTitle => 'Correo cando salte unha alerta';
@@ -1930,8 +1866,7 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'O que vale toda a empresa na bolsa: prezo da acción × número de accións.';
+  String get glossMarketCap => 'O que vale toda a empresa na bolsa: prezo da acción × número de accións.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1970,8 +1905,7 @@ class AppLocalizationsGl extends AppLocalizations {
       'Canto tende a moverse a acción co mercado: 1 = coma o mercado, 1,5 = oscilacións un 50 % maiores, menos de 1 = máis tranquila.';
 
   @override
-  String get glossRevenueTtm =>
-      'Vendas totais dos últimos 12 meses, antes de calquera custo.';
+  String get glossRevenueTtm => 'Vendas totais dos últimos 12 meses, antes de calquera custo.';
 
   @override
   String get glossNetIncomeTtm =>
@@ -2006,20 +1940,17 @@ class AppLocalizationsGl extends AppLocalizations {
       'Activos a curto prazo ÷ pagamentos que vencen nun ano. Por riba de 1 significa que a empresa pode cubrir os seus pagamentos próximos.';
 
   @override
-  String get glossRevenueGrowth =>
-      'Canto creceron os ingresos respecto a un ano antes.';
+  String get glossRevenueGrowth => 'Canto creceron os ingresos respecto a un ano antes.';
 
   @override
-  String get glossEpsGrowth =>
-      'Canto creceu o beneficio por acción respecto a un ano antes.';
+  String get glossEpsGrowth => 'Canto creceu o beneficio por acción respecto a un ano antes.';
 
   @override
   String get glossDividendYield =>
       'Dividendo anual ÷ prezo da acción: os ingresos en efectivo que recibirías ao ano, como porcentaxe do que pagas.';
 
   @override
-  String get glossDividendPerShare =>
-      'O dividendo pagado por unha acción durante o último ano.';
+  String get glossDividendPerShare => 'O dividendo pagado por unha acción durante o último ano.';
 
   @override
   String get glossPayoutRatio =>
@@ -2117,8 +2048,7 @@ class AppLocalizationsGl extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'Igual ou por riba do BPA esperado en $beats dos últimos $total trimestres',
+      other: 'Igual ou por riba do BPA esperado en $beats dos últimos $total trimestres',
       one: 'Igual ou por riba do BPA esperado en $beats de 1 trimestre',
     );
     return '$_temp0';
@@ -2235,23 +2165,13 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count compras',
-      one: '1 compra',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count compras', one: '1 compra');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count vendas',
-      one: '1 venda',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count vendas', one: '1 venda');
     return '$_temp0';
   }
 
@@ -2271,8 +2191,7 @@ class AppLocalizationsGl extends AppLocalizations {
       'Compras e vendas no mercado aberto de directivos e conselleiros nos últimos 90 días (SEC Form 4). Non se contan o exercicio de opcións nin as concesións de accións.';
 
   @override
-  String get insiderNone =>
-      'Sen compras nin vendas de insiders no mercado aberto nos últimos 90 días.';
+  String get insiderNone => 'Sen compras nin vendas de insiders no mercado aberto nos últimos 90 días.';
 
   @override
   String get analystTrend => 'Como cambiaron as opinións mes a mes';
@@ -2315,8 +2234,7 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'Copiado no portapapeis – pégao onde queiras compartilo.';
+  String get sharedToClipboard => 'Copiado no portapapeis – pégao onde queiras compartilo.';
 
   @override
   String get glossaryNoMatch => 'Ningún termo coincide coa túa busca.';
@@ -2346,22 +2264,19 @@ class AppLocalizationsGl extends AppLocalizations {
   String get backupSave => 'Gardar copia de seguranza';
 
   @override
-  String get backupSaveHint =>
-      'Os teus favoritos, listas, carteira, alertas e notas nun só ficheiro.';
+  String get backupSaveHint => 'Os teus favoritos, listas, carteira, alertas e notas nun só ficheiro.';
 
   @override
   String get backupRestore => 'Restaurar desde unha copia de seguranza';
 
   @override
-  String get backupRestoreHint =>
-      'Engade o que hai no ficheiro; non se borra nada do que tes agora.';
+  String get backupRestoreHint => 'Engade o que hai no ficheiro; non se borra nada do que tes agora.';
 
   @override
   String get backupRestored => 'Copia de seguranza restaurada.';
 
   @override
-  String get backupInvalid =>
-      'Este ficheiro non é unha copia de seguranza de WhatStock.';
+  String get backupInvalid => 'Este ficheiro non é unha copia de seguranza de WhatStock.';
 
   @override
   String get allocationPositions => 'Accións';
@@ -2474,8 +2389,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Alerta de carteira';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'Unha notificación cando toda a túa carteira se move tanto nun día.';
+  String get portfolioMoveAlertSubtitle => 'Unha notificación cando toda a túa carteira se move tanto nun día.';
 
   @override
   String get portfolioMoveAlertOff => 'Desactivada';
@@ -2647,17 +2561,11 @@ class AppLocalizationsGl extends AppLocalizations {
   String get portfolioTopHoldings => 'Maiores posicións';
 
   @override
-  String get portfolioShareNote =>
-      'Só se comparten porcentaxes, ningún importe.';
+  String get portfolioShareNote => 'Só se comparten porcentaxes, ningún importe.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count posicións',
-      one: '$count posición',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count posicións', one: '$count posición');
     return '$_temp0';
   }
 
@@ -2763,12 +2671,10 @@ class AppLocalizationsGl extends AppLocalizations {
   String get lotNoteAdd => 'Engadir unha nota';
 
   @override
-  String get lotNoteBuyHint =>
-      'Por que compras? Engádese ás notas da acción, coa data.';
+  String get lotNoteBuyHint => 'Por que compras? Engádese ás notas da acción, coa data.';
 
   @override
-  String get lotNoteSellHint =>
-      'Por que vendes? Engádese ás notas da acción, coa data.';
+  String get lotNoteSellHint => 'Por que vendes? Engádese ás notas da acción, coa data.';
 
   @override
   String get lotNoteBought => 'Comprado';
@@ -2778,23 +2684,13 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: '$months meses',
-      one: '$months mes',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months meses', one: '$months mes');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days días',
-      one: '$days día',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days días', one: '$days día');
     return '$_temp0';
   }
 
@@ -2882,12 +2778,10 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'Inicia sesión co teu correo para canxear o código dun amigo.';
+  String get referralErrSignIn => 'Inicia sesión co teu correo para canxear o código dun amigo.';
 
   @override
-  String get referralErrFull =>
-      'Este código xa se canxeou o máximo de veces posible.';
+  String get referralErrFull => 'Este código xa se canxeou o máximo de veces posible.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2895,16 +2789,13 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated =>
-      'A análise cortouse antes de rematar. Téntao de novo – non se descontou da túa cota.';
+  String get errAiTruncated => 'A análise cortouse antes de rematar. Téntao de novo – non se descontou da túa cota.';
 
   @override
-  String get errImageUnsupported =>
-      'Non se pode ler esta imaxe. Gárdaa como JPEG ou PNG e téntao de novo.';
+  String get errImageUnsupported => 'Non se pode ler esta imaxe. Gárdaa como JPEG ou PNG e téntao de novo.';
 
   @override
-  String get errRateLimited =>
-      'Demasiadas solicitudes en pouco tempo. Agarda un minuto e téntao de novo.';
+  String get errRateLimited => 'Demasiadas solicitudes en pouco tempo. Agarda un minuto e téntao de novo.';
 
   @override
   String get watchListNameTaken => 'Xa existe unha lista con este nome.';
@@ -2920,16 +2811,14 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing =>
-      'Non se atoparon compras anteriores para restaurar.';
+  String get restoreNothing => 'Non se atoparon compras anteriores para restaurar.';
 
   @override
   String get manageSubscriptionElsewhere =>
       'Aquí non hai ningunha subscrición que xestionar. Unha subscrición mercada na App Store ou en Google Play xestiónase na configuración da tenda.';
 
   @override
-  String get backupFailed =>
-      'Non se puido gardar a copia de seguranza. Téntao de novo.';
+  String get backupFailed => 'Non se puido gardar a copia de seguranza. Téntao de novo.';
 
   @override
   String get syncTooLarge =>
@@ -2949,10 +2838,8 @@ class AppLocalizationsGl extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          '$count dividendos en $currencies non teñen tipo de cambio e quedan fóra dos totais.',
-      one:
-          '1 dividendo en $currencies non ten tipo de cambio e queda fóra dos totais.',
+      other: '$count dividendos en $currencies non teñen tipo de cambio e quedan fóra dos totais.',
+      one: '1 dividendo en $currencies non ten tipo de cambio e queda fóra dos totais.',
     );
     return '$_temp0';
   }
@@ -2972,8 +2859,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get signOutAnyway => 'Pechar sesión igualmente';
 
   @override
-  String get fileTooLarge =>
-      'Este ficheiro é demasiado grande para abrilo aquí.';
+  String get fileTooLarge => 'Este ficheiro é demasiado grande para abrilo aquí.';
 
   @override
   String portfolioAnnualSummaryYear(String year) {
@@ -3052,8 +2938,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get aiReportNoteHint => 'Que falla? (opcional)';
 
   @override
-  String get aiReportPrivacy =>
-      'Recibimos o texto desta resposta e a túa nota —sen a túa conta— para poder revisala.';
+  String get aiReportPrivacy => 'Recibimos o texto desta resposta e a túa nota —sen a túa conta— para poder revisala.';
 
   @override
   String get aiReportSend => 'Enviar denuncia';
@@ -3224,8 +3109,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get portfolioSplitRatio => 'Proporción (novas : antigas)';
 
   @override
-  String get portfolioSplitRatioError =>
-      'Introduce unha proporción como 10:1, ou 1:10 para un desdobramento inverso.';
+  String get portfolioSplitRatioError => 'Introduce unha proporción como 10:1, ou 1:10 para un desdobramento inverso.';
 
   @override
   String get portfolioSplitDate => 'Data do desdobramento';
@@ -3409,8 +3293,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get glossaryPageTitle => 'Glosario';
 
   @override
-  String get glossaryPageSubtitle =>
-      'Explicacións sinxelas de cada cifra que mostra a app, do P/E ao RSI';
+  String get glossaryPageSubtitle => 'Explicacións sinxelas de cada cifra que mostra a app, do P/E ao RSI';
 
   @override
   String get glossarySearchHint => 'Buscar no glosario';

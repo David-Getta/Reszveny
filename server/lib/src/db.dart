@@ -222,6 +222,10 @@ class Store {
     // A munkamenet utolsó használata: a régóta nem használt token lejár (a karbantartás törli).
     final scols = _db.select('PRAGMA table_info(sessions)').map((r) => r['name'] as String).toSet();
     if (!scols.contains('last_used')) _db.execute('ALTER TABLE sessions ADD COLUMN last_used TEXT');
+    // A belépőkód kérője (IP-kulcs): a napi végső korlát után a saját IP-jéről kért kóddal a
+    // cím gazdája akkor is beléphet, ha egy idegen sok IP-ről elhasználta a hibakeretet.
+    final lcols = _db.select('PRAGMA table_info(login_codes)').map((r) => r['name'] as String).toSet();
+    if (!lcols.contains('requester')) _db.execute('ALTER TABLE login_codes ADD COLUMN requester TEXT');
     // A törölt fiókok Stripe-ügyfele, amelynek a törlése a fizetési szolgáltatónál még
     // nem sikerült: a karbantartás újrapróbálja.
     _db.execute(
@@ -484,22 +488,29 @@ class Store {
   void setEmail(String userId, String email) =>
       _db.execute('UPDATE users SET email = ? WHERE id = ?', [normalizeEmail(email), userId]);
 
-  /// Hány kód ment ki erre a címre az elmúlt [within] időben (alapból egy óra; visszaélés ellen).
-  int recentCodeCount(String email, {Duration within = const Duration(hours: 1)}) {
+  /// Hány kód ment ki erre a címre az elmúlt [within] időben (alapból egy óra; visszaélés ellen);
+  /// [requester] megadásával csak az ő kérései.
+  int recentCodeCount(String email, {Duration within = const Duration(hours: 1), String? requester}) {
     final since = clock().subtract(within).toUtc().toIso8601String();
-    return _db.select('SELECT COUNT(*) AS n FROM login_codes WHERE email = ? AND created_at > ?', [
-          normalizeEmail(email),
-          since,
-        ]).first['n']
+    return _db.select(
+          'SELECT COUNT(*) AS n FROM login_codes WHERE email = ? AND created_at > ?'
+          '${requester == null ? '' : ' AND requester = ?'}',
+          [normalizeEmail(email), since, ?requester],
+        ).first['n']
         as int;
   }
 
-  /// Hibás kódok naponta címenként, minden kérőtől együtt: csak végső korlát (a
-  /// kérőnkénti 15-öt az API tartja), hogy egy idegen ne zárhassa ki a cím gazdáját.
+  /// Ennyi kód érvényes egyszerre egy címre (a legutóbbiak): egy idegen kódkérése nem
+  /// teszi érvénytelenné a cím gazdájának épp megkapott kódját.
+  static const activeCodes = 3;
+
+  /// Hibás kódok naponta címenként, minden kérőtől együtt: végső korlát a találgatás ellen (a
+  /// kérőnkénti 15-öt az API tartja). Elérése után csak az a kód jó, amelyet ugyanarról az
+  /// IP-ről kértek, ahonnan beírják – így egy idegen sok IP-ről sem zárhatja ki a cím gazdáját.
   static const maxDailyLoginFailures = 50;
 
   /// Új 6 jegyű belépőkód (10 percig érvényes); a korábbiak érvénytelenek lesznek.
-  String createLoginCode(String email) {
+  String createLoginCode(String email, {String? requester}) {
     final e = normalizeEmail(email);
     final code = (_rng.nextInt(900000) + 100000).toString();
     final now = clock();
@@ -508,29 +519,33 @@ class Store {
     _db.execute('DELETE FROM login_codes WHERE created_at < ?', [
       now.subtract(const Duration(days: 2)).toUtc().toIso8601String(),
     ]);
-    _db.execute('UPDATE login_codes SET expires_at = ? WHERE email = ?', [now.toUtc().toIso8601String(), e]);
-    _db.execute('INSERT INTO login_codes (email, code_hash, expires_at, attempts, created_at) VALUES (?, ?, ?, 0, ?)', [
-      e,
-      hashToken('$e:$code'),
-      now.add(const Duration(minutes: 10)).toUtc().toIso8601String(),
-      now.toUtc().toIso8601String(),
-    ]);
+    // A legutóbbi [activeCodes] − 1 kód érvényes marad az új mellett, a régebbiek lejárnak.
+    final nowIso = now.toUtc().toIso8601String();
+    _db.execute(
+      'UPDATE login_codes SET expires_at = ? WHERE email = ? AND rowid NOT IN '
+      '(SELECT rowid FROM login_codes WHERE email = ? AND expires_at > ? ORDER BY created_at DESC LIMIT ?)',
+      [nowIso, e, e, nowIso, activeCodes - 1],
+    );
+    _db.execute(
+      'INSERT INTO login_codes (email, code_hash, expires_at, attempts, created_at, requester) VALUES (?, ?, ?, 0, ?, ?)',
+      [e, hashToken('$e:$code'), now.add(const Duration(minutes: 10)).toUtc().toIso8601String(), nowIso, requester],
+    );
     return code;
   }
 
-  /// Kód ellenőrzése: legfeljebb 5 próbálkozás, utána a kód elvész.
-  bool verifyLoginCode(String email, String code) {
+  /// Kód ellenőrzése a cím érvényes kódjai közt: kódonként legfeljebb 5 próbálkozás, utána
+  /// az a kód elvész. [requester]: aki beírja (IP-kulcs) – a napi végső korlát után csak a
+  /// saját maga kérte kód jó.
+  bool verifyLoginCode(String email, String code, {String? requester}) {
     final e = normalizeEmail(email);
     final now = clock().toUtc().toIso8601String();
     final rows = _db.select(
-      'SELECT rowid, code_hash, attempts FROM login_codes WHERE email = ? AND expires_at > ? ORDER BY created_at DESC LIMIT 1',
-      [e, now],
+      'SELECT rowid, code_hash, requester FROM login_codes WHERE email = ? AND expires_at > ? AND attempts < 5 '
+      'ORDER BY created_at DESC LIMIT ?',
+      [e, now, activeCodes],
     );
-    if (rows.isEmpty) return false;
-    final r = rows.first;
-    if ((r['attempts'] as int) >= 5) return false;
-    // Naponta legfeljebb [maxDailyLoginFailures] hibás próbálkozás címenként (a
-    // kódok között is): a 6 jegyű kód így nem találgatható ki ésszerű időn belül.
+    // Naponta legfeljebb [maxDailyLoginFailures] hibás próbálkozás címenként (a kódok között
+    // is): a 6 jegyű kód így nem találgatható ki ésszerű időn belül.
     final day = clock().subtract(const Duration(days: 1)).toUtc().toIso8601String();
     final failed =
         _db.select('SELECT COALESCE(SUM(attempts), 0) AS n FROM login_codes WHERE email = ? AND created_at > ?', [
@@ -538,12 +553,20 @@ class Store {
               day,
             ]).first['n']
             as int;
-    if (failed >= maxDailyLoginFailures) return false;
-    if (r['code_hash'] == hashToken('$e:${code.trim()}')) {
+    final candidates = [
+      for (final r in rows)
+        if (failed < maxDailyLoginFailures || (requester != null && r['requester'] == requester)) r,
+    ];
+    if (candidates.isEmpty) return false;
+    final hash = hashToken('$e:${code.trim()}');
+    if (candidates.any((r) => r['code_hash'] == hash)) {
       _db.execute('DELETE FROM login_codes WHERE email = ?', [e]);
       return true;
     }
-    _db.execute('UPDATE login_codes SET attempts = attempts + 1 WHERE rowid = ?', [r['rowid']]);
+    // Egy próba mindegyik szóba jöhető kódra számít (a találgatás így sem gyorsabb).
+    for (final r in candidates) {
+      _db.execute('UPDATE login_codes SET attempts = attempts + 1 WHERE rowid = ?', [r['rowid']]);
+    }
     return false;
   }
 

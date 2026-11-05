@@ -293,8 +293,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get labelDividendGrowth5y => 'Ukuaji wa gawio (miaka 5)';
 
   @override
-  String get dividendNone =>
-      'Hakuna gawio lililolipwa katika miezi 12 iliyopita.';
+  String get dividendNone => 'Hakuna gawio lililolipwa katika miezi 12 iliyopita.';
 
   @override
   String get dividendOnYourShares => 'Kwa hisa zako, kwa mwaka';
@@ -319,12 +318,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Wachambuzi $count',
-      one: 'Mchambuzi 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Wachambuzi $count', one: 'Mchambuzi 1');
     return '$_temp0';
   }
 
@@ -365,31 +359,25 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Huduma ya utambuzi haikuweza kuchakata picha hii.';
+  String get errRecognitionRefused => 'Huduma ya utambuzi haikuweza kuchakata picha hii.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Jibu la utambuzi lilikatizwa. Tafadhali jaribu tena.';
+  String get errRecognitionTruncated => 'Jibu la utambuzi lilikatizwa. Tafadhali jaribu tena.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Jibu lisilotarajiwa kutoka huduma ya utambuzi.';
+  String get errRecognitionBadResponse => 'Jibu lisilotarajiwa kutoka huduma ya utambuzi.';
 
   @override
   String get errRecognitionEmpty => 'Huduma ya utambuzi imerudisha jibu tupu.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Data ya soko haipatikani katika toleo hili.';
+  String get errMissingFinnhubKey => 'Data ya soko haipatikani katika toleo hili.';
 
   @override
-  String get errMarketUnreachable =>
-      'Imeshindwa kufikia huduma ya data ya soko. Angalia muunganisho wako wa intaneti.';
+  String get errMarketUnreachable => 'Imeshindwa kufikia huduma ya data ya soko. Angalia muunganisho wako wa intaneti.';
 
   @override
-  String get errMarketRateLimited =>
-      'Maombi mengi mno kwa huduma ya data ya soko. Tafadhali subiri dakika moja.';
+  String get errMarketRateLimited => 'Maombi mengi mno kwa huduma ya data ya soko. Tafadhali subiri dakika moja.';
 
   @override
   String errMarketHttp(String status) {
@@ -397,8 +385,7 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Jibu lisilotarajiwa kutoka huduma ya data ya soko.';
+  String get errMarketBadResponse => 'Jibu lisilotarajiwa kutoka huduma ya data ya soko.';
 
   @override
   String errNoQuote(String symbol) {
@@ -498,8 +485,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get aiRegenerate => 'Tengeneza upya';
 
   @override
-  String get aiGenerating =>
-      'Inaandaa uchambuzi… hili linaweza kuchukua dakika moja au mbili.';
+  String get aiGenerating => 'Inaandaa uchambuzi… hili linaweza kuchukua dakika moja au mbili.';
 
   @override
   String get aiSources => 'Vyanzo';
@@ -514,12 +500,10 @@ class AppLocalizationsSw extends AppLocalizations {
       'Uchambuzi uliotengenezwa na AI kwa kutumia data ya umma na habari za hivi karibuni. Unaweza kuwa na makosa au kuwa umepitwa na wakati, na si ushauri wa uwekezaji.';
 
   @override
-  String get errAiNotConfigured =>
-      'Vipengele vya AI havipatikani katika toleo hili.';
+  String get errAiNotConfigured => 'Vipengele vya AI havipatikani katika toleo hili.';
 
   @override
-  String get errAiUnreachable =>
-      'Imeshindwa kufikia huduma ya AI. Angalia muunganisho wako wa intaneti.';
+  String get errAiUnreachable => 'Imeshindwa kufikia huduma ya AI. Angalia muunganisho wako wa intaneti.';
 
   @override
   String errAiHttp(String status) {
@@ -551,8 +535,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable =>
-      'Historia ya bei haipatikani kutoka chanzo cha data cha sasa.';
+  String get chartUnavailable => 'Historia ya bei haipatikani kutoka chanzo cha data cha sasa.';
 
   @override
   String get sectionStatements => 'Taarifa za fedha (za mwaka)';
@@ -579,8 +562,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get labelOperatingCashFlow => 'Mtiririko wa fedha wa uendeshaji';
 
   @override
-  String get statementsUnavailable =>
-      'Taarifa za fedha zilizoripotiwa hazipatikani kwa hisa hii.';
+  String get statementsUnavailable => 'Taarifa za fedha zilizoripotiwa hazipatikani kwa hisa hii.';
 
   @override
   String get launchAtLogin => 'Anzisha wakati wa kuingia';
@@ -589,8 +571,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get hotkeyLabel => 'Njia ya mkato ya jumla';
 
   @override
-  String get hotkeyRecordHint =>
-      'Bofya hapa, kisha bonyeza mchanganyiko mpya wa vitufe';
+  String get hotkeyRecordHint => 'Bofya hapa, kisha bonyeza mchanganyiko mpya wa vitufe';
 
   @override
   String get hotkeyReset => 'Rejesha chaguo-msingi';
@@ -611,8 +592,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get removeFromFavorites => 'Ondoa kwenye vipendwa';
 
   @override
-  String get noFavorites =>
-      'Bado hakuna vipendwa. Gusa nyota kwenye hisa ili kuiongeza.';
+  String get noFavorites => 'Bado hakuna vipendwa. Gusa nyota kwenye hisa ili kuiongeza.';
 
   @override
   String get displayCurrency => 'Sarafu ya kuonyesha';
@@ -659,8 +639,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get updateDownloading => 'Inapakua sasisho chinichini…';
 
   @override
-  String get updateDownloaded =>
-      'Sasisho liko tayari. Anzisha upya ili kulisakinisha.';
+  String get updateDownloaded => 'Sasisho liko tayari. Anzisha upya ili kulisakinisha.';
 
   @override
   String get updateNow => 'Sasisha';
@@ -669,8 +648,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get restartNow => 'Anzisha upya';
 
   @override
-  String get updatesViaStore =>
-      'Masasisho hufika kiotomatiki kupitia duka la programu.';
+  String get updatesViaStore => 'Masasisho hufika kiotomatiki kupitia duka la programu.';
 
   @override
   String get updateCheckFailed => 'Imeshindwa kuangalia masasisho.';
@@ -718,8 +696,7 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Jaribio lako la bila malipo limekamilika. Chagua mpango ili kuendelea kuchambua.';
+  String get trialExpired => 'Jaribio lako la bila malipo limekamilika. Chagua mpango ili kuendelea kuchambua.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -758,8 +735,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get extraPacksTitle => 'Unahitaji zaidi? Nunua uchambuzi wa ziada';
 
   @override
-  String get extraPacksHint =>
-      'Uchambuzi wa ziada hauishi muda na hutumika baada ya kiasi chako cha mwezi kumalizika.';
+  String get extraPacksHint => 'Uchambuzi wa ziada hauishi muda na hutumika baada ya kiasi chako cha mwezi kumalizika.';
 
   @override
   String get buy => 'Nunua';
@@ -791,8 +767,7 @@ class AppLocalizationsSw extends AppLocalizations {
       'Huna uchambuzi uliosalia kwa kipindi hiki. Boresha mpango wako au nunua uchambuzi wa ziada.';
 
   @override
-  String get errTrialExpired =>
-      'Jaribio lako la bila malipo limekamilika. Chagua mpango ili kuendelea.';
+  String get errTrialExpired => 'Jaribio lako la bila malipo limekamilika. Chagua mpango ili kuendelea.';
 
   @override
   String get errNoPlan => 'Mpango unaotumika unahitajika kwa uchambuzi wa AI.';
@@ -804,8 +779,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get usageTitle => 'Matumizi';
 
   @override
-  String get demoPurchaseNote =>
-      'Malipo ya majaribio: manunuzi kwenye jukwaa hili ni ya kuigiza tu.';
+  String get demoPurchaseNote => 'Malipo ya majaribio: manunuzi kwenye jukwaa hili ni ya kuigiza tu.';
 
   @override
   String get mostPopular => 'Maarufu zaidi';
@@ -845,8 +819,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get aiDepthStandardDesc => 'Ripoti kamili yenye kila sehemu.';
 
   @override
-  String get aiDepthDeepDesc =>
-      'Utafutaji zaidi wa wavuti, ulinganisho na washindani na undani zaidi.';
+  String get aiDepthDeepDesc => 'Utafutaji zaidi wa wavuti, ulinganisho na washindani na undani zaidi.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -874,12 +847,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get aiReaderExperienced => 'Mzoefu';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'Lugha rahisi; kila istilahi ya kitaalamu inaelezwa.';
+  String get aiReaderBeginnerDesc => 'Lugha rahisi; kila istilahi ya kitaalamu inaelezwa.';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'Maandishi mazito zaidi yenye istilahi za kawaida za kifedha.';
+  String get aiReaderExperiencedDesc => 'Maandishi mazito zaidi yenye istilahi za kawaida za kifedha.';
 
   @override
   String get aiCounterArgument => 'Hoja pinzani yenye nguvu zaidi';
@@ -893,8 +864,7 @@ class AppLocalizationsSw extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'Hadi utafutaji $count wa wavuti kwa kila uchambuzi kwa mpango wako',
+      other: 'Hadi utafutaji $count wa wavuti kwa kila uchambuzi kwa mpango wako',
       one: 'Hadi utafutaji $count wa wavuti kwa kila uchambuzi kwa mpango wako',
     );
     return '$_temp0';
@@ -980,8 +950,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get upcomingEvents => 'Matukio yajayo';
 
   @override
-  String get outlookChartNote =>
-      'Masafa elekezi; uwezekano ni makadirio ya jumla, si utabiri.';
+  String get outlookChartNote => 'Masafa elekezi; uwezekano ni makadirio ya jumla, si utabiri.';
 
   @override
   String get accountTitle => 'Akaunti';
@@ -996,12 +965,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get notSignedIn => 'Hujaingia';
 
   @override
-  String get accountBenefit =>
-      'Ingia ili usajili wako ufanye kazi kwenye vifaa vyako vyote.';
+  String get accountBenefit => 'Ingia ili usajili wako ufanye kazi kwenye vifaa vyako vyote.';
 
   @override
-  String get accountSyncedNote =>
-      'Usajili wako na uchambuzi uliobaki ni sawa kwenye kila kifaa.';
+  String get accountSyncedNote => 'Usajili wako na uchambuzi uliobaki ni sawa kwenye kila kifaa.';
 
   @override
   String get signInTitle => 'Ingia kwenye WhatStock';
@@ -1033,16 +1000,13 @@ class AppLocalizationsSw extends AppLocalizations {
   String get errInvalidEmail => 'Tafadhali weka anwani sahihi ya barua pepe.';
 
   @override
-  String get errSignInFailed =>
-      'Kuingia kumeshindwa. Angalia muunganisho wako kisha ujaribu tena.';
+  String get errSignInFailed => 'Kuingia kumeshindwa. Angalia muunganisho wako kisha ujaribu tena.';
 
   @override
-  String get checkoutWaiting =>
-      'Kamilisha malipo kwenye kivinjari chako. Programu itasasishwa kiotomatiki ukimaliza.';
+  String get checkoutWaiting => 'Kamilisha malipo kwenye kivinjari chako. Programu itasasishwa kiotomatiki ukimaliza.';
 
   @override
-  String get paymentViaStripe =>
-      'Malipo salama kwenye kivinjari kupitia Stripe. Ghairi wakati wowote.';
+  String get paymentViaStripe => 'Malipo salama kwenye kivinjari kupitia Stripe. Ghairi wakati wowote.';
 
   @override
   String get paymentViaStore =>
@@ -1055,8 +1019,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get doubleOptionTitle => 'Bonyeza Option mara mbili';
 
   @override
-  String get doubleOptionSubtitle =>
-      'Kubonyeza kitufe cha Option mara mbili kwa haraka pia huita WhatStock.';
+  String get doubleOptionSubtitle => 'Kubonyeza kitufe cha Option mara mbili kwa haraka pia huita WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1078,12 +1041,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: 'miaka $years',
-      one: 'mwaka 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'miaka $years', one: 'mwaka 1');
     return '$_temp0';
   }
 
@@ -1189,8 +1147,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get portfolioRemove => 'Ondoa';
 
   @override
-  String get portfolioExcluded =>
-      'Nafasi zisizo na bei au kiwango cha ubadilishaji hazijumuishwi kwenye jumla.';
+  String get portfolioExcluded => 'Nafasi zisizo na bei au kiwango cha ubadilishaji hazijumuishwi kwenye jumla.';
 
   @override
   String get priceAlerts => 'Arifa za bei';
@@ -1325,8 +1282,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get accountDeleted => 'Akaunti yako imefutwa.';
 
   @override
-  String get errDeleteAccount =>
-      'Akaunti haikuweza kufutwa. Angalia muunganisho na ujaribu tena.';
+  String get errDeleteAccount => 'Akaunti haikuweza kufutwa. Angalia muunganisho na ujaribu tena.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1363,8 +1319,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get inviteTitle => 'Onyesho la awali lililofungwa';
 
   @override
-  String get inviteBody =>
-      'WhatStock inapatikana kwa mwaliko pekee kwa sasa. Weka msimbo wa mwaliko uliopokea.';
+  String get inviteBody => 'WhatStock inapatikana kwa mwaliko pekee kwa sasa. Weka msimbo wa mwaliko uliopokea.';
 
   @override
   String get inviteCodeLabel => 'Msimbo wa mwaliko';
@@ -1376,12 +1331,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get inviteInvalid => 'Msimbo huu wa mwaliko si sahihi.';
 
   @override
-  String get inviteExpired =>
-      'Mwaliko huu umeisha muda wake. Muombe aliyekualika akupe msimbo mpya.';
+  String get inviteExpired => 'Mwaliko huu umeisha muda wake. Muombe aliyekualika akupe msimbo mpya.';
 
   @override
-  String get inviteDeviceLimit =>
-      'Msimbo huu wa mwaliko tayari unatumika kwenye idadi ya juu zaidi ya vifaa.';
+  String get inviteDeviceLimit => 'Msimbo huu wa mwaliko tayari unatumika kwenye idadi ya juu zaidi ya vifaa.';
 
   @override
   String get previewConfidential => 'Onyesho la awali la siri';
@@ -1443,8 +1396,7 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint =>
-      'Gusa kiwango kilichokadiriwa na AI ili upate arifa bei inapokifikia.';
+  String get keyLevelAlertHint => 'Gusa kiwango kilichokadiriwa na AI ili upate arifa bei inapokifikia.';
 
   @override
   String get shareAnalysisTitle => 'Shiriki uchambuzi';
@@ -1459,8 +1411,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get shareCardFooter => 'Imetengenezwa kwa WhatStock';
 
   @override
-  String get shareCardDisclaimer =>
-      'Uchambuzi wa AI · hali za mfano, si utabiri · si ushauri wa uwekezaji';
+  String get shareCardDisclaimer => 'Uchambuzi wa AI · hali za mfano, si utabiri · si ushauri wa uwekezaji';
 
   @override
   String get referralTitle => 'Alika marafiki';
@@ -1502,8 +1453,7 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown =>
-      'Msimbo huu haupo. Uangalie kisha ujaribu tena.';
+  String get referralErrUnknown => 'Msimbo huu haupo. Uangalie kisha ujaribu tena.';
 
   @override
   String get referralErrOwn => 'Huwezi kutumia msimbo wako mwenyewe.';
@@ -1583,8 +1533,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get telemetryDecline => 'Hapana, asante';
 
   @override
-  String get telemetrySetting =>
-      'Takwimu zisizo na majina na ripoti za kuacha kufanya kazi';
+  String get telemetrySetting => 'Takwimu zisizo na majina na ripoti za kuacha kufanya kazi';
 
   @override
   String get telemetrySettingHint =>
@@ -1625,8 +1574,7 @@ class AppLocalizationsSw extends AppLocalizations {
       'Hilo lilikuwa swali la mwisho kwa uchambuzi huu. Tengeneza uchambuzi mpya ili uulize zaidi.';
 
   @override
-  String get errAskLimit =>
-      'Umefikia kikomo cha maswali cha leo. Tafadhali jaribu tena kesho.';
+  String get errAskLimit => 'Umefikia kikomo cha maswali cha leo. Tafadhali jaribu tena kesho.';
 
   @override
   String get eventTomorrow => 'Kesho';
@@ -1722,8 +1670,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get notesTitle => 'Madokezo yangu';
 
   @override
-  String get notesHint =>
-      'Kwa nini uliinunua, unafuatilia nini, nini kingekufanya uiuze?';
+  String get notesHint => 'Kwa nini uliinunua, unafuatilia nini, nini kingekufanya uiuze?';
 
   @override
   String get notesInfo =>
@@ -1773,8 +1720,7 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get syncInfo =>
-      'Jalada la hisa, vipendwa, arifa za bei na madokezo husawazishwa kwenye vifaa vyako vyote.';
+  String get syncInfo => 'Jalada la hisa, vipendwa, arifa za bei na madokezo husawazishwa kwenye vifaa vyako vyote.';
 
   @override
   String syncLast(String time) {
@@ -1785,8 +1731,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get syncNow => 'Sawazisha sasa';
 
   @override
-  String get syncFailed =>
-      'Imeshindwa kusawazisha. Itajaribu tena kiotomatiki.';
+  String get syncFailed => 'Imeshindwa kusawazisha. Itajaribu tena kiotomatiki.';
 
   @override
   String get alertEmailTitle => 'Barua pepe arifa ikitimia';
@@ -1915,8 +1860,7 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'Thamani ya kampuni nzima kwenye soko la hisa: bei ya hisa × idadi ya hisa.';
+  String get glossMarketCap => 'Thamani ya kampuni nzima kwenye soko la hisa: bei ya hisa × idadi ya hisa.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1955,12 +1899,10 @@ class AppLocalizationsSw extends AppLocalizations {
       'Kiasi ambacho hisa huelekea kusonga pamoja na soko: 1 = kama soko, 1.5 = mabadiliko makubwa kwa takriban 50%, chini ya 1 = tulivu zaidi.';
 
   @override
-  String get glossRevenueTtm =>
-      'Jumla ya mauzo ya miezi 12 iliyopita, kabla ya gharama zozote.';
+  String get glossRevenueTtm => 'Jumla ya mauzo ya miezi 12 iliyopita, kabla ya gharama zozote.';
 
   @override
-  String get glossNetIncomeTtm =>
-      'Faida inayobaki baada ya gharama zote, riba na kodi katika miezi 12 iliyopita.';
+  String get glossNetIncomeTtm => 'Faida inayobaki baada ya gharama zote, riba na kodi katika miezi 12 iliyopita.';
 
   @override
   String get glossGrossMargin =>
@@ -1991,20 +1933,17 @@ class AppLocalizationsSw extends AppLocalizations {
       'Mali za muda mfupi ÷ bili zinazopaswa kulipwa ndani ya mwaka mmoja. Zaidi ya 1 inamaanisha kampuni inaweza kulipa bili zake za karibu.';
 
   @override
-  String get glossRevenueGrowth =>
-      'Kiasi ambacho mapato yamekua ikilinganishwa na mwaka mmoja uliopita.';
+  String get glossRevenueGrowth => 'Kiasi ambacho mapato yamekua ikilinganishwa na mwaka mmoja uliopita.';
 
   @override
-  String get glossEpsGrowth =>
-      'Kiasi ambacho faida kwa kila hisa imekua ikilinganishwa na mwaka mmoja uliopita.';
+  String get glossEpsGrowth => 'Kiasi ambacho faida kwa kila hisa imekua ikilinganishwa na mwaka mmoja uliopita.';
 
   @override
   String get glossDividendYield =>
       'Gawio la mwaka ÷ bei ya hisa: mapato ya pesa ambayo ungepata kila mwaka, kama asilimia ya kiasi unacholipa.';
 
   @override
-  String get glossDividendPerShare =>
-      'Gawio lililolipwa kwa hisa moja katika mwaka uliopita.';
+  String get glossDividendPerShare => 'Gawio lililolipwa kwa hisa moja katika mwaka uliopita.';
 
   @override
   String get glossPayoutRatio =>
@@ -2102,8 +2041,7 @@ class AppLocalizationsSw extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'Sawa au juu ya EPS inayotarajiwa katika $beats kati ya robo $total zilizopita',
+      other: 'Sawa au juu ya EPS inayotarajiwa katika $beats kati ya robo $total zilizopita',
       one: 'Sawa au juu ya EPS inayotarajiwa katika $beats kati ya robo 1',
     );
     return '$_temp0';
@@ -2220,23 +2158,13 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ununuzi $count',
-      one: 'ununuzi 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ununuzi $count', one: 'ununuzi 1');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'mauzo $count',
-      one: 'mauzo 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'mauzo $count', one: 'mauzo 1');
     return '$_temp0';
   }
 
@@ -2256,8 +2184,7 @@ class AppLocalizationsSw extends AppLocalizations {
       'Ununuzi na mauzo katika soko huria yaliyofanywa na watendaji na wakurugenzi katika siku 90 zilizopita (SEC Form 4). Utekelezaji wa chaguo (options) na hisa za tuzo hauhesabiwi.';
 
   @override
-  String get insiderNone =>
-      'Hakuna ununuzi wala mauzo ya watu wa ndani katika soko huria katika siku 90 zilizopita.';
+  String get insiderNone => 'Hakuna ununuzi wala mauzo ya watu wa ndani katika soko huria katika siku 90 zilizopita.';
 
   @override
   String get analystTrend => 'Jinsi maoni yalivyobadilika mwezi baada ya mwezi';
@@ -2300,12 +2227,10 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'Imenakiliwa kwenye ubao wa kunakili – ibandike popote unapotaka kuishiriki.';
+  String get sharedToClipboard => 'Imenakiliwa kwenye ubao wa kunakili – ibandike popote unapotaka kuishiriki.';
 
   @override
-  String get glossaryNoMatch =>
-      'Hakuna istilahi inayolingana na utafutaji wako.';
+  String get glossaryNoMatch => 'Hakuna istilahi inayolingana na utafutaji wako.';
 
   @override
   String get cashInvalidAmount => 'Weka kiasi cha 0 au zaidi.';
@@ -2332,15 +2257,13 @@ class AppLocalizationsSw extends AppLocalizations {
   String get backupSave => 'Hifadhi nakala rudufu';
 
   @override
-  String get backupSaveHint =>
-      'Vipendwa, orodha, jalada la hisa, arifa na madokezo yako katika faili moja.';
+  String get backupSaveHint => 'Vipendwa, orodha, jalada la hisa, arifa na madokezo yako katika faili moja.';
 
   @override
   String get backupRestore => 'Rejesha kutoka nakala rudufu';
 
   @override
-  String get backupRestoreHint =>
-      'Huongeza kilicho kwenye faili; hakuna ulicho nacho sasa kitakachofutwa.';
+  String get backupRestoreHint => 'Huongeza kilicho kwenye faili; hakuna ulicho nacho sasa kitakachofutwa.';
 
   @override
   String get backupRestored => 'Nakala rudufu imerejeshwa.';
@@ -2459,8 +2382,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Tahadhari ya jalada';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'Arifa wakati jalada lako lote linaposogea kiasi hiki kwa siku moja.';
+  String get portfolioMoveAlertSubtitle => 'Arifa wakati jalada lako lote linaposogea kiasi hiki kwa siku moja.';
 
   @override
   String get portfolioMoveAlertOff => 'Imezimwa';
@@ -2632,17 +2554,11 @@ class AppLocalizationsSw extends AppLocalizations {
   String get portfolioTopHoldings => 'Nafasi kubwa zaidi';
 
   @override
-  String get portfolioShareNote =>
-      'Asilimia pekee ndizo zinazoshirikiwa, si kiasi cha pesa.';
+  String get portfolioShareNote => 'Asilimia pekee ndizo zinazoshirikiwa, si kiasi cha pesa.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Nafasi $count',
-      one: 'Nafasi $count',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Nafasi $count', one: 'Nafasi $count');
     return '$_temp0';
   }
 
@@ -2699,8 +2615,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get portfolioSampleRemove => 'Ondoa mfano';
 
   @override
-  String get portfolioStopsAll =>
-      'Arifa ya kushuka kutoka kilele kwa nafasi zote';
+  String get portfolioStopsAll => 'Arifa ya kushuka kutoka kilele kwa nafasi zote';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2749,12 +2664,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lotNoteAdd => 'Ongeza dokezo';
 
   @override
-  String get lotNoteBuyHint =>
-      'Kwa nini unanunua? Litaingia kwenye madokezo ya hisa, pamoja na tarehe.';
+  String get lotNoteBuyHint => 'Kwa nini unanunua? Litaingia kwenye madokezo ya hisa, pamoja na tarehe.';
 
   @override
-  String get lotNoteSellHint =>
-      'Kwa nini unauza? Litaingia kwenye madokezo ya hisa, pamoja na tarehe.';
+  String get lotNoteSellHint => 'Kwa nini unauza? Litaingia kwenye madokezo ya hisa, pamoja na tarehe.';
 
   @override
   String get lotNoteBought => 'Umenunua';
@@ -2764,23 +2677,13 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: 'miezi $months',
-      one: 'mwezi $months',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: 'miezi $months', one: 'mwezi $months');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'siku $days',
-      one: 'siku $days',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'siku $days', one: 'siku $days');
     return '$_temp0';
   }
 
@@ -2868,12 +2771,10 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'Ingia kwa barua pepe yako ili utumie msimbo wa rafiki.';
+  String get referralErrSignIn => 'Ingia kwa barua pepe yako ili utumie msimbo wa rafiki.';
 
   @override
-  String get referralErrFull =>
-      'Msimbo huu tayari umetumika mara nyingi kadiri inavyoruhusiwa.';
+  String get referralErrFull => 'Msimbo huu tayari umetumika mara nyingi kadiri inavyoruhusiwa.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2885,12 +2786,10 @@ class AppLocalizationsSw extends AppLocalizations {
       'Uchambuzi ulikatizwa kabla haujakamilika. Tafadhali jaribu tena – haukutumia kiasi chako.';
 
   @override
-  String get errImageUnsupported =>
-      'Picha hii haiwezi kusomwa. Ihifadhi kama JPEG au PNG kisha ujaribu tena.';
+  String get errImageUnsupported => 'Picha hii haiwezi kusomwa. Ihifadhi kama JPEG au PNG kisha ujaribu tena.';
 
   @override
-  String get errRateLimited =>
-      'Maombi mengi mno kwa muda mfupi. Tafadhali subiri dakika moja kisha ujaribu tena.';
+  String get errRateLimited => 'Maombi mengi mno kwa muda mfupi. Tafadhali subiri dakika moja kisha ujaribu tena.';
 
   @override
   String get watchListNameTaken => 'Tayari kuna orodha yenye jina hili.';
@@ -2906,16 +2805,14 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing =>
-      'Hakuna manunuzi ya awali yaliyopatikana ya kurejesha.';
+  String get restoreNothing => 'Hakuna manunuzi ya awali yaliyopatikana ya kurejesha.';
 
   @override
   String get manageSubscriptionElsewhere =>
       'Hakuna usajili wa kudhibiti hapa. Usajili ulionunuliwa kwenye App Store au Google Play hudhibitiwa kwenye mipangilio ya duka.';
 
   @override
-  String get backupFailed =>
-      'Nakala rudufu haikuweza kuhifadhiwa. Tafadhali jaribu tena.';
+  String get backupFailed => 'Nakala rudufu haikuweza kuhifadhiwa. Tafadhali jaribu tena.';
 
   @override
   String get syncTooLarge =>
@@ -2935,10 +2832,8 @@ class AppLocalizationsSw extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'Magawio $count kwa $currencies hayana kiwango cha ubadilishaji na hayajajumuishwa kwenye jumla.',
-      one:
-          'Gawio 1 kwa $currencies halina kiwango cha ubadilishaji na halijajumuishwa kwenye jumla.',
+      other: 'Magawio $count kwa $currencies hayana kiwango cha ubadilishaji na hayajajumuishwa kwenye jumla.',
+      one: 'Gawio 1 kwa $currencies halina kiwango cha ubadilishaji na halijajumuishwa kwenye jumla.',
     );
     return '$_temp0';
   }
@@ -3121,8 +3016,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get sourceOpinion => 'Maoni';
 
   @override
-  String get earningsSummaryButton =>
-      'Ripoti ya hivi karibuni ilikuwa na nini?';
+  String get earningsSummaryButton => 'Ripoti ya hivi karibuni ilikuwa na nini?';
 
   @override
   String get earningsSummaryNote =>
@@ -3210,8 +3104,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get portfolioSplitRatio => 'Uwiano (mpya : za zamani)';
 
   @override
-  String get portfolioSplitRatioError =>
-      'Weka uwiano kama 10:1, au 1:10 kwa mgawanyo wa kinyume.';
+  String get portfolioSplitRatioError => 'Weka uwiano kama 10:1, au 1:10 kwa mgawanyo wa kinyume.';
 
   @override
   String get portfolioSplitDate => 'Tarehe ya mgawanyo';
@@ -3395,8 +3288,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get glossaryPageTitle => 'Kamusi ya istilahi';
 
   @override
-  String get glossaryPageSubtitle =>
-      'Maelezo rahisi ya kila namba inayoonyeshwa na programu, kutoka P/E hadi RSI';
+  String get glossaryPageSubtitle => 'Maelezo rahisi ya kila namba inayoonyeshwa na programu, kutoka P/E hadi RSI';
 
   @override
   String get glossarySearchHint => 'Tafuta katika kamusi';

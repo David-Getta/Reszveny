@@ -221,6 +221,11 @@ class ClaudeStockAnalyst implements StockAnalyst {
       final detail = code == AppErrorCode.notEnoughCredits ? _insufficientDetail(res.body) : null;
       throw AnalysisException(code, detail: detail, cause: res.body);
     }
+    // A szerver (vagy egy átjáró) szerint az AI-szolgáltató épp nem érhető el: átmeneti, nem az
+    // app hibája – „nem érhető el, próbáld később”, nem egy hibakód.
+    if (const {502, 503, 504}.contains(res.statusCode)) {
+      throw AnalysisException(AppErrorCode.aiUnreachable, cause: res.body);
+    }
     if (res.statusCode != 200) {
       throw AnalysisException(AppErrorCode.aiHttp, detail: '${res.statusCode}', cause: res.body);
     }
