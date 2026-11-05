@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Compte oyo elimwisamaki na esaleli mosusu to na web, yango wana ba-donnée na yango elongolami mpe na esaleli oyo.",
   "errAiUnavailable": "Service ya AI ezali te sikoyo. Meka lisusu nsima ya ba-miniti moke.",
   "errMarketUnavailable": "Ba-donnée ya zando ezali te sikoyo. Meka lisusu nsima ya ba-miniti moke.",
-  "purchaseUnavailable": "Bosombi ezali te sikoyo. Meka lisusu na nsima."
+  "purchaseUnavailable": "Bosombi ezali te sikoyo. Meka lisusu na nsima.",
+  "signOutLocalOnly": "Ba-analyse ebombami mpe ba note ya AI ezali kaka na esaleli oyo, kasi te na compte na yo, yango wana ekolongolama mpo na libela."
 }

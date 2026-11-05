@@ -2317,6 +2317,10 @@ class AppLocalizationsMos extends AppLocalizations {
   String get purchaseUnavailable => 'Raab ka be masã ye. Le mak poore.';
 
   @override
+  String get signOutLocalOnly =>
+      'Vɛɛse nins f sẽn tall la AI gʋlsgo bee aparɛy kãngã zug bala, pa fo kõntã pʋgẽ ye, rẽ n so tɩ b na n yẽes-b tɩ b pa le lebg ye.';
+
+  @override
   String get portfolioAskTitle => 'Sokre: f portfey';
 
   @override

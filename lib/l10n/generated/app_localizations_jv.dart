@@ -2336,6 +2336,10 @@ class AppLocalizationsJv extends AppLocalizations {
       'Tukon saiki ora kasedhiya. Coba maneh mengko.';
 
   @override
+  String get signOutLocalOnly =>
+      'Analisis sing disimpen lan cathetan AI mung ana ing piranti iki, ora ing akun sampeyan, mula bakal dibusak kanthi permanen.';
+
+  @override
   String get portfolioAskTitle => 'Pitakon babagan portofolio sampeyan';
 
   @override

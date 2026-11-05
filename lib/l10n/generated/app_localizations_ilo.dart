@@ -2352,6 +2352,10 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Saan a mausar ti panaggatang ita. Padasem manen no madamdama.';
 
   @override
+  String get signOutLocalOnly =>
+      'Dagiti naidulin a panangsukimat ken dagiti nota ti AI ket adda laeng iti daytoy a device, saan nga iti accountmo, isu a mapunasdanto iti agnanayon.';
+
+  @override
   String get portfolioAskTitle => 'Saludsod maipapan iti portfolio-m';
 
   @override

@@ -2333,6 +2333,10 @@ class AppLocalizationsCkb extends AppLocalizations {
       'کڕین ئێستا بەردەست نییە. دواتر دووبارە هەوڵ بدەرەوە.';
 
   @override
+  String get signOutLocalOnly =>
+      'شیکارییە پاشەکەوتکراوەکان و تێبینییەکانی AI تەنها لەسەر ئەم ئامێرە دەمێننەوە، نەک لە هەژمارەکەتدا، بۆیە بە یەکجاری دەسڕدرێنەوە.';
+
+  @override
   String get portfolioAskTitle => 'پرسیارەکان دەربارەی پۆرتفۆلیۆکەت';
 
   @override

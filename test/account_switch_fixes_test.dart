@@ -415,4 +415,46 @@ void main() {
     expect(s.portfolio.lots, isNotEmpty);
     expect(told, 0);
   });
+
+  test("after an expired session another account's sign-in clears the device's unsynced data, not its own", () async {
+    final server = _Server()
+      ..account('a@x.hu')
+      ..account(
+        'b@x.hu',
+        data: {
+          'lots': [
+            {'symbol': 'NVDA', 'quantity': 1, 'price': 100, 'currency': 'USD', 'id': 'n1'},
+          ],
+        },
+      );
+    final s = _services(server, email: 'a@x.hu');
+    await s.sync!.start();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD');
+    await s.sync!.flush();
+    (await SharedPreferences.getInstance()).setString('move_notes', '{"AAPL":"A private AI note"}');
+    // A munkamenet lejár (a fiók megvan): az adatok maradnak.
+    server.tokens.remove('tok-a@x.hu');
+    await s.sync!.syncNow();
+    await pumpEventQueue();
+    expect(s.portfolio.lots, isNotEmpty);
+    // B lép be ezen az eszközön.
+    await s.account!.verify('b@x.hu', '123456');
+    await s.sync!.flush();
+    await pumpEventQueue();
+    expect((await SharedPreferences.getInstance()).getString('move_notes'), isNull);
+    expect(s.portfolio.lots.map((l) => l.symbol), ['NVDA']);
+    expect(_symbols(server.dataOf('b@x.hu')), {'NVDA'}, reason: 'B adatai nem íródnak felül üressel');
+    expect(_symbols(server.dataOf('a@x.hu')), {'AAPL'});
+  });
+
+  test("signing out resets the account's e-mail switches on this device", () async {
+    final server = _Server()..account('a@x.hu');
+    final s = _services(server, email: 'a@x.hu');
+    await s.preferences.setWeeklyDigest(true);
+    await s.preferences.setEmailAlerts(false);
+    await s.signOut();
+    expect(s.preferences.weeklyDigest, isFalse);
+    expect(s.preferences.emailAlerts, isTrue);
+    expect(s.preferences.switchesAtJson, isEmpty);
+  });
 }

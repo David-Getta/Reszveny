@@ -2339,6 +2339,10 @@ class AppLocalizationsLua extends AppLocalizations {
       'Disumba kadiena mpindieu eu to. Teta kabidi pashishe.';
 
   @override
+  String get signOutLocalOnly =>
+      'Makonkonona malama ne mifundu ya AI bidi anu mu tshintu etshi, kabiena mu compte webe to, nunku nebijimijibue tshiendelele.';
+
+  @override
   String get portfolioAskTitle => 'Nkonko bua portefeuille webe';
 
   @override

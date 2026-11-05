@@ -2329,6 +2329,10 @@ class AppLocalizationsFa extends AppLocalizations {
       'خرید در حال حاضر در دسترس نیست. بعداً دوباره امتحان کنید.';
 
   @override
+  String get signOutLocalOnly =>
+      'تحلیل‌های ذخیره‌شده و یادداشت‌های هوش مصنوعی فقط روی این دستگاه نگه داشته می‌شوند، نه در حساب کاربری‌تان، بنابراین برای همیشه حذف می‌شوند.';
+
+  @override
   String get portfolioAskTitle => 'پرسش‌ها دربارهٔ سبد سهام شما';
 
   @override

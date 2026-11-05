@@ -2324,6 +2324,10 @@ class AppLocalizationsPs extends AppLocalizations {
       'پېرود اوس مهال ممکن نه دی. وروسته بیا هڅه وکړئ.';
 
   @override
+  String get signOutLocalOnly =>
+      'خوندي شوي تحلیلونه او د AI یادښتونه یوازې په دې وسیله کې ساتل کېږي، نه ستاسو په حساب کې، نو د تل لپاره ړنګېږي.';
+
+  @override
   String get portfolioAskTitle => 'ستاسو د پورټفولیو په اړه پوښتنې';
 
   @override

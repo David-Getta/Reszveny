@@ -2389,6 +2389,10 @@ class AppLocalizationsUk extends AppLocalizations {
       'Покупки зараз недоступні. Спробуйте пізніше.';
 
   @override
+  String get signOutLocalOnly =>
+      'Збережені аналізи та ШІ-нотатки є лише на цьому пристрої, а не в обліковому записі, тому їх буде видалено назавжди.';
+
+  @override
   String get portfolioAskTitle => 'Запитання про ваш портфель';
 
   @override

@@ -2344,6 +2344,10 @@ class AppLocalizationsLn extends AppLocalizations {
       'Bosombi ezali te sikoyo. Meka lisusu na nsima.';
 
   @override
+  String get signOutLocalOnly =>
+      'Ba-analyse ebombami mpe ba note ya AI ezali kaka na esaleli oyo, kasi te na compte na yo, yango wana ekolongolama mpo na libela.';
+
+  @override
   String get portfolioAskTitle => 'Mituna na ntina ya portefeuille na yo';
 
   @override

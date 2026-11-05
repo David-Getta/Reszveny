@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Bu hasap başga enjamda ýa-da web-de pozuldy, şonuň üçin onuň maglumatlary bu enjamdan hem aýryldy.",
   "errAiUnavailable": "AI hyzmaty häzir elýeterli däl. Birnäçe minutdan gaýtadan synanyşyň.",
   "errMarketUnavailable": "Bazar maglumatlary häzir elýeterli däl. Birnäçe minutdan gaýtadan synanyşyň.",
-  "purchaseUnavailable": "Satyn alyşlar häzir elýeterli däl. Soňrak gaýtadan synanyşyň."
+  "purchaseUnavailable": "Satyn alyşlar häzir elýeterli däl. Soňrak gaýtadan synanyşyň.",
+  "signOutLocalOnly": "Ýatda saklanan seljermeler we AI bellikleri diňe şu enjamda saklanýar, hasabyňyzda däl, şonuň üçin olar hemişelik pozulýar."
 }

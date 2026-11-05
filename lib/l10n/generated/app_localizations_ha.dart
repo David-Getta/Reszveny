@@ -2338,6 +2338,10 @@ class AppLocalizationsHa extends AppLocalizations {
       'Sayayya ba ta samuwa a yanzu. Sake gwadawa daga baya.';
 
   @override
+  String get signOutLocalOnly =>
+      'Nazarin da aka adana da bayanan AI suna kan wannan na\'ura kaɗai, ba a asusunka ba, don haka za a share su har abada.';
+
+  @override
   String get portfolioAskTitle => 'Tambayoyi game da jakar hannun jarinku';
 
   @override

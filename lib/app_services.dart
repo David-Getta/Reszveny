@@ -212,6 +212,9 @@ class AppServices {
             // Az app tényleges nyelve (a felület is ezt mutatja), nem a készülék első nyelve.
             language: () => locale.effectiveFor(WidgetsBinding.instance.platformDispatcher.locales).languageCode,
           );
+    // Fiókváltáskor (az előző fiók adataival maradt eszközön) a nem szinkronizált személyes
+    // adatok is lekerülnek, mielőtt az új fiók adatai jönnek.
+    sync?.onForeignAccount = _wipeLocalData;
     // Weben a többi lapon közben mentett változások átvétele, amikor ez a lap előtérbe kerül.
     tabRefresh = TabRefresh(
       preferences: preferences,
@@ -443,9 +446,13 @@ class AppServices {
   /// Fiók törlése a szerveren, és ha kérik, a készüléken tárolt személyes adatoké
   /// is (portfólió, riasztások, kedvencek, előzmények, elmentett elemzések).
   Future<void> deleteAccount({required bool wipeLocalData}) async {
+    final email = account?.email;
     await account?.deleteAccount();
     await sync?.forgetAccount();
-    if (wipeLocalData) await _wipeLocalData();
+    if (wipeLocalData) {
+      await _wipeLocalData();
+      if (email != null) await BillingController.forgetOwner(email);
+    }
     // Az app névtelen fiókkal megy tovább; a friss állapotot a szerver adja.
     await syncEntitlements();
   }
@@ -475,11 +482,12 @@ class AppServices {
   /// maradnának, és egy újabb belépéskor feltöltődnének az új fiókba. Lejárt munkamenetnél
   /// (a fiók megvan) maradnak: belépéskor összefésülődnek a fiókéval.
   Future<void> _sessionLost(AccountController acc, {required bool accountDeleted}) async {
-    final wasSignedIn = acc.isSignedIn;
+    final email = acc.email;
     await acc.sessionLost();
-    if (!accountDeleted || !wasSignedIn) return;
+    if (!accountDeleted || email == null) return;
     await sync?.forgetAccount();
     await _wipeLocalData();
+    await BillingController.forgetOwner(email);
     accountDeletedElsewhere.value++;
   }
 
@@ -493,6 +501,9 @@ class AppServices {
     await brief.forget();
     await CachingMarketDataProvider.clear();
     chat.clear();
+    // A memóriában tartott „amíg távol voltál” kártya és a hírek is az előző fiók portfóliójáról.
+    away.dismiss();
+    news.forget();
     // Az AI-utánanézések, a kérdezz-vissza beszélgetések és a távollét-pillanatkép is.
     try {
       final prefs = await SharedPreferences.getInstance();

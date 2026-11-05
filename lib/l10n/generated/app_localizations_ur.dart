@@ -2332,6 +2332,10 @@ class AppLocalizationsUr extends AppLocalizations {
       'خریداری اس وقت دستیاب نہیں ہے۔ بعد میں دوبارہ کوشش کریں۔';
 
   @override
+  String get signOutLocalOnly =>
+      'محفوظ تجزیے اور AI نوٹس صرف اس آلے پر رکھے جاتے ہیں، آپ کے اکاؤنٹ میں نہیں، اس لیے یہ ہمیشہ کے لیے حذف ہو جاتے ہیں۔';
+
+  @override
   String get portfolioAskTitle => 'آپ کے پورٹ فولیو کے بارے میں سوالات';
 
   @override

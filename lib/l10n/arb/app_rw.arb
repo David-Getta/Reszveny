@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Iyi konti yasibiwe ku kindi gikoresho cyangwa kuri murandasi, bityo amakuru yayo nayo yavanywe kuri iki gikoresho.",
   "errAiUnavailable": "Serivisi ya AI ntiboneka ubu. Ongera ugerageze mu minota mike.",
   "errMarketUnavailable": "Amakuru y'isoko ntaboneka ubu. Ongera ugerageze mu minota mike.",
-  "purchaseUnavailable": "Kugura ntibishoboka ubu. Ongera ugerageze nyuma."
+  "purchaseUnavailable": "Kugura ntibishoboka ubu. Ongera ugerageze nyuma.",
+  "signOutLocalOnly": "Amasesengura wabitse n'inyandiko za AI biba kuri iki gikoresho gusa, si kuri konti yawe, bityo bisibwa burundu."
 }

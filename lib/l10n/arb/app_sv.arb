@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Det här kontot raderades på en annan enhet eller på webben, så dess data togs också bort från den här enheten.",
   "errAiUnavailable": "AI-tjänsten är inte tillgänglig just nu. Försök igen om några minuter.",
   "errMarketUnavailable": "Marknadsdata är inte tillgänglig just nu. Försök igen om några minuter.",
-  "purchaseUnavailable": "Köp är inte tillgängliga just nu. Försök igen senare."
+  "purchaseUnavailable": "Köp är inte tillgängliga just nu. Försök igen senare.",
+  "signOutLocalOnly": "Sparade analyser och AI-anteckningar finns bara på den här enheten, inte i ditt konto, så de raderas permanent."
 }

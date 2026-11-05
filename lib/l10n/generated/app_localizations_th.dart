@@ -2303,6 +2303,10 @@ class AppLocalizationsTh extends AppLocalizations {
       'ไม่สามารถซื้อได้ในขณะนี้ โปรดลองอีกครั้งในภายหลัง';
 
   @override
+  String get signOutLocalOnly =>
+      'บทวิเคราะห์ที่บันทึกไว้และบันทึกจาก AI จะอยู่ในอุปกรณ์นี้เท่านั้น ไม่ได้อยู่ในบัญชีของคุณ จึงจะถูกลบอย่างถาวร';
+
+  @override
   String get portfolioAskTitle => 'คำถามเกี่ยวกับพอร์ตโฟลิโอของคุณ';
 
   @override

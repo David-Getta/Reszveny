@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Kjo llogari u fshi në një pajisje tjetër ose në ueb, ndaj të dhënat e saj u hoqën edhe nga kjo pajisje.",
   "errAiUnavailable": "Shërbimi i AI nuk është i disponueshëm për momentin. Provoni përsëri pas pak minutash.",
   "errMarketUnavailable": "Të dhënat e tregut nuk janë të disponueshme për momentin. Provoni përsëri pas pak minutash.",
-  "purchaseUnavailable": "Blerjet nuk janë të disponueshme për momentin. Provoni përsëri më vonë."
+  "purchaseUnavailable": "Blerjet nuk janë të disponueshme për momentin. Provoni përsëri më vonë.",
+  "signOutLocalOnly": "Analizat e ruajtura dhe shënimet e AI-së mbahen vetëm në këtë pajisje, jo në llogarinë tuaj, ndaj fshihen përgjithmonë."
 }

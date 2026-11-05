@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Ginpanas ini nga account sa iban nga device ukon sa web, gani ginkuha man ang iya datos sa sini nga device.",
   "errAiUnavailable": "Indi available ang serbisyo sang AI subong. Tilawi liwat pagkaligad sang pila ka minuto.",
   "errMarketUnavailable": "Indi available ang market data subong. Tilawi liwat pagkaligad sang pila ka minuto.",
-  "purchaseUnavailable": "Indi available ang pagbakal subong. Tilawi liwat sa ulihi."
+  "purchaseUnavailable": "Indi available ang pagbakal subong. Tilawi liwat sa ulihi.",
+  "signOutLocalOnly": "Ang natipon nga mga analisis kag mga nota sang AI yara lang sa sini nga device, indi sa imo account, gani permanente nga mapanas ini."
 }

@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Dit account is op een ander apparaat of op het web verwijderd, dus de gegevens ervan zijn ook van dit apparaat verwijderd.",
   "errAiUnavailable": "De AI-dienst is op dit moment niet beschikbaar. Probeer het over een paar minuten opnieuw.",
   "errMarketUnavailable": "Marktdata is op dit moment niet beschikbaar. Probeer het over een paar minuten opnieuw.",
-  "purchaseUnavailable": "Aankopen zijn op dit moment niet beschikbaar. Probeer het later opnieuw."
+  "purchaseUnavailable": "Aankopen zijn op dit moment niet beschikbaar. Probeer het later opnieuw.",
+  "signOutLocalOnly": "Opgeslagen analyses en AI-notities staan alleen op dit apparaat, niet in je account, dus ze worden definitief verwijderd."
 }

@@ -2326,6 +2326,10 @@ class AppLocalizationsMai extends AppLocalizations {
       'खरीदारी एखन उपलब्ध नहि अछि। बादमे फेर प्रयास करू।';
 
   @override
+  String get signOutLocalOnly =>
+      'सहेजल विश्लेषण आ AI नोट मात्र एहि डिवाइसपर रहैत अछि, अहाँक खातामे नहि, तेँ ई सभ सदाक लेल हटा देल जाएत।';
+
+  @override
   String get portfolioAskTitle => 'अहाँक पोर्टफ़ोलियोक बारेमे प्रश्न';
 
   @override

@@ -221,4 +221,25 @@ void main() {
     store.purgeExpired();
     expect(store.isDeletedSession(tokenB), isFalse);
   });
+
+  test('abandoned anonymous accounts are cleaned up; paid, signed-in and recently used ones stay', () {
+    var now = DateTime.utc(2026, 1, 1);
+    store.clock = () => now;
+    final (idle, idleToken) = store.createAnonymousUser(null);
+    final (used, usedToken) = store.createAnonymousUser(null);
+    final (credits, _) = store.createAnonymousUser(null);
+    store.save(store.entitlement(credits)..extra = 5);
+    final (signed, _) = store.createAnonymousUser(null);
+    store.setEmail(signed, 'kept@example.com');
+    now = now.add(const Duration(days: 300));
+    expect(store.userIdForToken(usedToken), used);
+    now = now.add(Store.anonymousIdle - const Duration(days: 299));
+    store.purgeExpired();
+    expect(store.userExists(idle), isFalse);
+    expect(store.userExists(used), isTrue, reason: 'used 101 days ago');
+    expect(store.userExists(credits), isTrue, reason: 'bought analyses stay');
+    expect(store.userExists(signed), isTrue, reason: 'accounts with an e-mail are never auto-deleted');
+    // Egy visszatérő eszköz nem kap „account_deleted”-et (a helyi adatai maradnak): új névtelen fiókot nyit.
+    expect(store.isDeletedSession(idleToken), isFalse);
+  });
 }

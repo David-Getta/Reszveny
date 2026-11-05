@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Dem don delete dis account for another device or for web, so we don comot im data from dis device too.",
   "errAiUnavailable": "Di AI service no dey available now. Try again after some minutes.",
   "errMarketUnavailable": "Market data no dey available now. Try again after some minutes.",
-  "purchaseUnavailable": "You no fit buy anytin now. Try again later."
+  "purchaseUnavailable": "You no fit buy anytin now. Try again later.",
+  "signOutLocalOnly": "Saved analysis and AI notes dey only for dis device, no be for your account, so we go delete dem for good."
 }

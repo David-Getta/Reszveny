@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Bu hesap başka bir cihazda veya web'de silindi, bu yüzden verileri bu cihazdan da kaldırıldı.",
   "errAiUnavailable": "Yapay zekâ hizmeti şu anda kullanılamıyor. Birkaç dakika sonra tekrar deneyin.",
   "errMarketUnavailable": "Piyasa verileri şu anda kullanılamıyor. Birkaç dakika sonra tekrar deneyin.",
-  "purchaseUnavailable": "Satın alma şu anda kullanılamıyor. Daha sonra tekrar deneyin."
+  "purchaseUnavailable": "Satın alma şu anda kullanılamıyor. Daha sonra tekrar deneyin.",
+  "signOutLocalOnly": "Kaydedilen analizler ve yapay zekâ notları yalnızca bu cihazda tutulur, hesabınızda değil; bu yüzden kalıcı olarak silinir."
 }

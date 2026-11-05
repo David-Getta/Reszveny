@@ -2340,6 +2340,10 @@ class AppLocalizationsHy extends AppLocalizations {
       'Գնումներն այս պահին հասանելի չեն։ Փորձեք կրկին ավելի ուշ։';
 
   @override
+  String get signOutLocalOnly =>
+      'Պահված վերլուծությունները և AI նշումները պահվում են միայն այս սարքում, ոչ թե ձեր հաշվում, ուստի դրանք ընդմիշտ կջնջվեն։';
+
+  @override
   String get portfolioAskTitle => 'Հարցեր ձեր պորտֆելի մասին';
 
   @override

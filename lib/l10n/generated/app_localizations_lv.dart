@@ -2366,6 +2366,10 @@ class AppLocalizationsLv extends AppLocalizations {
       'Pirkumi pašlaik nav pieejami. Mēģiniet vēlreiz vēlāk.';
 
   @override
+  String get signOutLocalOnly =>
+      'Saglabātās analīzes un AI piezīmes tiek glabātas tikai šajā ierīcē, nevis jūsu kontā, tāpēc tās tiek dzēstas neatgriezeniski.';
+
+  @override
   String get portfolioAskTitle => 'Jautājumi par jūsu portfeli';
 
   @override

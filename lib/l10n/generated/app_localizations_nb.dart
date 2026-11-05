@@ -2334,6 +2334,10 @@ class AppLocalizationsNb extends AppLocalizations {
       'Kjøp er ikke tilgjengelig akkurat nå. Prøv igjen senere.';
 
   @override
+  String get signOutLocalOnly =>
+      'Lagrede analyser og AI-notater finnes bare på denne enheten, ikke i kontoen din, så de slettes for godt.';
+
+  @override
   String get portfolioAskTitle => 'Spørsmål om porteføljen din';
 
   @override

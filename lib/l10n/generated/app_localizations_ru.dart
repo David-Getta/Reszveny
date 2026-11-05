@@ -2387,6 +2387,10 @@ class AppLocalizationsRu extends AppLocalizations {
       'Покупки сейчас недоступны. Попробуйте позже.';
 
   @override
+  String get signOutLocalOnly =>
+      'Сохранённые анализы и ИИ-заметки находятся только на этом устройстве, а не в аккаунте, поэтому удаляются безвозвратно.';
+
+  @override
   String get portfolioAskTitle => 'Вопросы по вашему портфелю';
 
   @override

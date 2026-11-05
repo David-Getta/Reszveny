@@ -2331,6 +2331,10 @@ class AppLocalizationsPcm extends AppLocalizations {
       'You no fit buy anytin now. Try again later.';
 
   @override
+  String get signOutLocalOnly =>
+      'Saved analysis and AI notes dey only for dis device, no be for your account, so we go delete dem for good.';
+
+  @override
   String get portfolioAskTitle => 'Questions about your portfolio';
 
   @override

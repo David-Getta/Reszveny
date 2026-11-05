@@ -2337,6 +2337,10 @@ class AppLocalizationsUz extends AppLocalizations {
       'Xaridlar hozir mavjud emas. Keyinroq qayta urinib koʻring.';
 
   @override
+  String get signOutLocalOnly =>
+      'Saqlangan tahlillar va AI qaydlari faqat shu qurilmada saqlanadi, hisobingizda emas, shuning uchun ular butunlay oʻchiriladi.';
+
+  @override
   String get portfolioAskTitle => 'Portfelingiz haqida savollar';
 
   @override

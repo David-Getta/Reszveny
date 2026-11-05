@@ -2330,6 +2330,10 @@ class AppLocalizationsId extends AppLocalizations {
       'Pembelian sedang tidak tersedia. Coba lagi nanti.';
 
   @override
+  String get signOutLocalOnly =>
+      'Analisis tersimpan dan catatan AI hanya disimpan di perangkat ini, bukan di akun Anda, sehingga akan dihapus secara permanen.';
+
+  @override
   String get portfolioAskTitle => 'Pertanyaan tentang portofolio Anda';
 
   @override

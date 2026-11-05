@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Compte eu mujimija ku tshintu tshikuabo anyi ku web, ke bualu kayi mamanyisha ende mamushibue kabidi ku tshintu etshi.",
   "errAiUnavailable": "Service wa AI kena mpindieu eu to. Teta kabidi panyima pa minite mikese.",
   "errMarketUnavailable": "Mamanyisha a tshisalu kaena mpindieu eu to. Teta kabidi panyima pa minite mikese.",
-  "purchaseUnavailable": "Disumba kadiena mpindieu eu to. Teta kabidi pashishe."
+  "purchaseUnavailable": "Disumba kadiena mpindieu eu to. Teta kabidi pashishe.",
+  "signOutLocalOnly": "Makonkonona malama ne mifundu ya AI bidi anu mu tshintu etshi, kabiena mu compte webe to, nunku nebijimijibue tshiendelele."
 }

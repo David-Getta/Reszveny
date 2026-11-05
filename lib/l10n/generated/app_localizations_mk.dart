@@ -2348,6 +2348,10 @@ class AppLocalizationsMk extends AppLocalizations {
       'Купувањата моментално не се достапни. Обидете се повторно подоцна.';
 
   @override
+  String get signOutLocalOnly =>
+      'Зачуваните анализи и AI-белешките се чуваат само на овој уред, а не во вашата сметка, па се бришат засекогаш.';
+
+  @override
   String get portfolioAskTitle => 'Прашања за вашето портфолио';
 
   @override

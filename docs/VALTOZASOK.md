@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.315)
+# Változásjegyzék (0.2.130 → 0.2.316)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,22 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Adatok életciklusa: mi marad, mi törlődik
+
+- **0.2.316**: egy fiók adatainak teljes útját átnéztük (kijelentkezés, fióktörlés, törlés egy másik
+  eszközön, fiókváltás, mentés, szinkron, szerver). A törölt fiókot a többi eszköz 400 napig ismeri fel
+  (eddig 30), így egy hónapokig nem használt laptop vagy tablet is törli a régi adatokat.
+- Ha egy eszközön lejárt munkamenet után egy másik fiók lép be, az előző fiók csak a készüléken tárolt
+  adatai (AI-elemzések, AI-jegyzetek, előzmények, értesítési nyomok) is lekerülnek – eddig az új fiók látta
+  őket. A két fiók szinkronizált adatai közben nem keverednek.
+- A kijelentkezés és a fióktörlés az e-mailes kapcsolókat (riasztás e-mailben, heti összefoglaló) is
+  alaphelyzetbe teszi: a következő fiók nem örökli az előző döntését. Az „amíg távol voltál” kártya és a
+  hírek a memóriából is eltűnnek; a törölt fiók függőben lévő bolti bizonylata is lekerül a készülékről.
+- A kijelentkezés ablaka megmondja, hogy az elmentett elemzések és AI-jegyzetek csak a készüléken vannak, ezért
+  véglegesen törlődnek (120 nyelven).
+- A szerver a 400 napja nem használt, e-mail cím és fizetés nélküli névtelen fiókokat kitakarítja; ha egy ilyen
+  eszköz mégis visszatér, új névtelen fiókot kap, a helyi adatai megmaradnak.
 
 ## App és szerver együtt: fióktörlés más eszközön, kiesések, fizetés
 

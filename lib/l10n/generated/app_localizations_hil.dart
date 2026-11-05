@@ -2350,6 +2350,10 @@ class AppLocalizationsHil extends AppLocalizations {
       'Indi available ang pagbakal subong. Tilawi liwat sa ulihi.';
 
   @override
+  String get signOutLocalOnly =>
+      'Ang natipon nga mga analisis kag mga nota sang AI yara lang sa sini nga device, indi sa imo account, gani permanente nga mapanas ini.';
+
+  @override
   String get portfolioAskTitle => 'Mga pamangkot parte sa imo portfolio';
 
   @override

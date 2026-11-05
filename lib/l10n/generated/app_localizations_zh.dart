@@ -2220,6 +2220,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get purchaseUnavailable => '暂时无法购买。请稍后重试。';
 
   @override
+  String get signOutLocalOnly => '已保存的分析和 AI 笔记仅存储在此设备上，不在您的账户中，因此会被永久删除。';
+
+  @override
   String get portfolioAskTitle => '关于你的投资组合的问题';
 
   @override
@@ -5511,6 +5514,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get purchaseUnavailable => '暫時無法購買。請稍後再試。';
+
+  @override
+  String get signOutLocalOnly => '已儲存的分析和 AI 筆記只保存在此裝置上，不在你的帳戶中，因此會被永久刪除。';
 
   @override
   String get portfolioAskTitle => '關於你的投資組合的問題';

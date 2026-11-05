@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "To konto zostało usunięte na innym urządzeniu lub w przeglądarce, więc jego dane zostały usunięte także z tego urządzenia.",
   "errAiUnavailable": "Usługa AI jest teraz niedostępna. Spróbuj ponownie za kilka minut.",
   "errMarketUnavailable": "Dane rynkowe są teraz niedostępne. Spróbuj ponownie za kilka minut.",
-  "purchaseUnavailable": "Zakupy są teraz niedostępne. Spróbuj ponownie później."
+  "purchaseUnavailable": "Zakupy są teraz niedostępne. Spróbuj ponownie później.",
+  "signOutLocalOnly": "Zapisane analizy i notatki AI są przechowywane tylko na tym urządzeniu, a nie na Twoim koncie, więc zostaną trwale usunięte."
 }

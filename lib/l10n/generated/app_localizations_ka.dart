@@ -2334,6 +2334,10 @@ class AppLocalizationsKa extends AppLocalizations {
       'შენაძენები ამჟამად მიუწვდომელია. სცადეთ მოგვიანებით.';
 
   @override
+  String get signOutLocalOnly =>
+      'შენახული ანალიზები და AI ჩანაწერები ინახება მხოლოდ ამ მოწყობილობაზე და არა თქვენს ანგარიშში, ამიტომ ისინი სამუდამოდ წაიშლება.';
+
+  @override
   String get portfolioAskTitle => 'კითხვები თქვენი პორტფელის შესახებ';
 
   @override

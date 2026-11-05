@@ -2335,6 +2335,10 @@ class AppLocalizationsKy extends AppLocalizations {
       'Сатып алуулар азыр жеткиликсиз. Кийинчерээк кайра аракет кылыңыз.';
 
   @override
+  String get signOutLocalOnly =>
+      'Сакталган талдоолор жана AI жазуулары аккаунтуңузда эмес, ушул түзмөктө гана сакталат, ошондуктан алар биротоло өчүрүлөт.';
+
+  @override
   String get portfolioAskTitle => 'Портфелиңиз боюнча суроолор';
 
   @override

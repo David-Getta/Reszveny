@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Akun ieu geus dipupus dina parangkat séjén atawa dina wéb, ku kituna datana ogé dipiceun tina parangkat ieu.",
   "errAiUnavailable": "Layanan AI ayeuna teu sayaga. Cobaan deui sababaraha menit deui.",
   "errMarketUnavailable": "Data pasar ayeuna teu sayaga. Cobaan deui sababaraha menit deui.",
-  "purchaseUnavailable": "Pameulian ayeuna teu sayaga. Cobaan deui engké."
+  "purchaseUnavailable": "Pameulian ayeuna teu sayaga. Cobaan deui engké.",
+  "signOutLocalOnly": "Analisis nu disimpen jeung catetan AI ngan aya dina parangkat ieu, lain dina akun anjeun, ku kituna bakal dipupus salamina."
 }

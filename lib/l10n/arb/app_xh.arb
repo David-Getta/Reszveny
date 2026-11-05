@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Le akhawunti icinywe kwesinye isixhobo okanye kwiwebhu, ngoko idatha yayo nayo isusiwe kwesi sixhobo.",
   "errAiUnavailable": "Inkonzo ye-AI ayifumaneki okwangoku. Zama kwakhona emva kwemizuzu embalwa.",
   "errMarketUnavailable": "Idatha yemarike ayifumaneki okwangoku. Zama kwakhona emva kwemizuzu embalwa.",
-  "purchaseUnavailable": "Uthengo alufumaneki okwangoku. Zama kwakhona kamva."
+  "purchaseUnavailable": "Uthengo alufumaneki okwangoku. Zama kwakhona kamva.",
+  "signOutLocalOnly": "Iintlalutyo ezigciniweyo namanqaku e-AI zigcinwa kwesi sixhobo kuphela, hayi kwiakhawunti yakho, ngoko zicinywa ngokusisigxina."
 }

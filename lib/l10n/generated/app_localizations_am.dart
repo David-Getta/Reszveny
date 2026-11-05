@@ -2300,6 +2300,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get purchaseUnavailable => 'ግዢዎች አሁን አይገኙም። ቆይተው እንደገና ይሞክሩ።';
 
   @override
+  String get signOutLocalOnly =>
+      'የተቀመጡ ትንተናዎች እና የAI ማስታወሻዎች የሚቀመጡት በዚህ መሣሪያ ላይ ብቻ ነው እንጂ በመለያዎ ውስጥ አይደለም፤ ስለዚህ እስከመጨረሻው ይሰረዛሉ።';
+
+  @override
   String get portfolioAskTitle => 'ስለ ፖርትፎሊዮዎ ጥያቄዎች';
 
   @override

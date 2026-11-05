@@ -2296,6 +2296,10 @@ class AppLocalizationsTi extends AppLocalizations {
   String get purchaseUnavailable => 'ዕድግታት ሕጂ ኣይርከቡን። ጸኒሕኩም ዳግማይ ፈትኑ።';
 
   @override
+  String get signOutLocalOnly =>
+      'ዝተዓቀቡ ትንተናታትን ማስታወሻታት AIን ኣብዚ መሳርሒ ጥራይ እዮም ዝዕቀቡ፣ ኣብ ሕሳብኩም ኣይኮኑን፣ ስለዚ ንሓዋሩ ይስረዙ።';
+
+  @override
   String get portfolioAskTitle => 'ሕቶታት ብዛዕባ ፖርትፎሊዮኹም';
 
   @override

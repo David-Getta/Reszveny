@@ -2364,6 +2364,10 @@ class AppLocalizationsRo extends AppLocalizations {
       'Achizițiile nu sunt disponibile momentan. Încearcă din nou mai târziu.';
 
   @override
+  String get signOutLocalOnly =>
+      'Analizele salvate și notițele AI sunt păstrate doar pe acest dispozitiv, nu în contul tău, așa că sunt șterse definitiv.';
+
+  @override
   String get portfolioAskTitle => 'Întrebări despre portofoliul tău';
 
   @override

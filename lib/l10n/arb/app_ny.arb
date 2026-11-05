@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Akaunti iyi yafufutidwa pa chipangizo china kapena pa intaneti, choncho deta yake yachotsedwanso pa chipangizo ichi.",
   "errAiUnavailable": "Utumiki wa AI sukupezeka pakali pano. Yesaninso pakapita mphindi zochepa.",
   "errMarketUnavailable": "Deta ya msika sikupezeka pakali pano. Yesaninso pakapita mphindi zochepa.",
-  "purchaseUnavailable": "Kugula sikukupezeka pakali pano. Yesaninso nthawi ina."
+  "purchaseUnavailable": "Kugula sikukupezeka pakali pano. Yesaninso nthawi ina.",
+  "signOutLocalOnly": "Kusanthula kosungidwa ndi zolemba za AI zimasungidwa pa chipangizo ichi chokha, osati mu akaunti yanu, choncho zimafufutidwa kwamuyaya."
 }

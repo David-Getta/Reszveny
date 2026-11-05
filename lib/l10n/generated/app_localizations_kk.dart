@@ -2332,6 +2332,10 @@ class AppLocalizationsKk extends AppLocalizations {
       'Сатып алу қазір қолжетімсіз. Кейінірек қайта көріңіз.';
 
   @override
+  String get signOutLocalOnly =>
+      'Сақталған талдаулар мен AI жазбалары аккаунтыңызда емес, тек осы құрылғыда сақталады, сондықтан олар біржола жойылады.';
+
+  @override
   String get portfolioAskTitle => 'Портфеліңіз туралы сұрақтар';
 
   @override

@@ -2333,6 +2333,10 @@ class AppLocalizationsHu extends AppLocalizations {
       'A vásárlás most nem érhető el. Próbáld újra később.';
 
   @override
+  String get signOutLocalOnly =>
+      'Az elmentett elemzések és AI-jegyzetek csak ezen a készüléken vannak, a fiókban nem, ezért véglegesen törlődnek.';
+
+  @override
   String get portfolioAskTitle => 'Kérdések a portfóliódról';
 
   @override

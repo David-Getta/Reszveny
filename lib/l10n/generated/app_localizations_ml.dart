@@ -2341,6 +2341,10 @@ class AppLocalizationsMl extends AppLocalizations {
       'വാങ്ങലുകൾ ഇപ്പോൾ ലഭ്യമല്ല. പിന്നീട് വീണ്ടും ശ്രമിക്കുക.';
 
   @override
+  String get signOutLocalOnly =>
+      'സംരക്ഷിച്ച വിശകലനങ്ങളും AI കുറിപ്പുകളും നിങ്ങളുടെ അക്കൗണ്ടിലല്ല, ഈ ഉപകരണത്തിൽ മാത്രമാണ് സൂക്ഷിക്കുന്നത്, അതിനാൽ അവ എന്നെന്നേക്കുമായി നീക്കം ചെയ്യപ്പെടും.';
+
+  @override
   String get portfolioAskTitle =>
       'നിങ്ങളുടെ പോർട്ട്ഫോളിയോ സംബന്ധിച്ച ചോദ്യങ്ങൾ';
 

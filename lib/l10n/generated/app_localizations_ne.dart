@@ -2331,6 +2331,10 @@ class AppLocalizationsNe extends AppLocalizations {
       'खरिद अहिले उपलब्ध छैन। पछि फेरि प्रयास गर्नुहोस्।';
 
   @override
+  String get signOutLocalOnly =>
+      'सुरक्षित गरिएका विश्लेषण र AI टिपोटहरू तपाईंको खातामा होइन, यो डिभाइसमा मात्र राखिन्छन्, त्यसैले तिनीहरू स्थायी रूपमा मेटाइन्छन्।';
+
+  @override
   String get portfolioAskTitle => 'तपाईंको पोर्टफोलियोबारे प्रश्नहरू';
 
   @override

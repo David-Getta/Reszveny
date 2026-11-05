@@ -2332,6 +2332,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'Purchases are not available right now. Try again later.';
 
   @override
+  String get signOutLocalOnly =>
+      'Saved analyses and AI notes are kept only on this device, not in your account, so they are removed for good.';
+
+  @override
   String get portfolioAskTitle => 'Questions about your portfolio';
 
   @override

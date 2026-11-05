@@ -2327,6 +2327,10 @@ class AppLocalizationsIg extends AppLocalizations {
       'Ịzụ ihe adịghị ugbu a. Nwaa ọzọ ma emechaa.';
 
   @override
+  String get signOutLocalOnly =>
+      'Nyocha echekwara na ndetu AI na-adị naanị na ngwaọrụ a, ọ bụghị n\'akaụntụ gị, ya mere a ga-ehichapụ ha kpamkpam.';
+
+  @override
   String get portfolioAskTitle => 'Ajụjụ gbasara portfolio gị';
 
   @override

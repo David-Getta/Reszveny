@@ -2329,6 +2329,10 @@ class AppLocalizationsTt extends AppLocalizations {
       'Сатып алулар хәзерге вакытта мөмкин түгел. Соңрак кабат тырышып карагыз.';
 
   @override
+  String get signOutLocalOnly =>
+      'Сакланган анализлар һәм AI язмалары бары тик бу җайланмада саклана, аккаунтыгызда түгел, шуңа күрә алар мәңгегә бетерелә.';
+
+  @override
   String get portfolioAskTitle => 'Портфелегез турында сораулар';
 
   @override

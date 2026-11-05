@@ -2347,6 +2347,10 @@ class AppLocalizationsSt extends AppLocalizations {
       'Ditheko ha di fumanehe hona jwale. Leka hape hamorao.';
 
   @override
+  String get signOutLocalOnly =>
+      'Ditlhahlobo tse bolokilweng le dintlha tsa AI di bolokwa sesebedisweng sena feela, eseng akhaontong ya hao, ka hona di hlakolwa ka ho sa feleng.';
+
+  @override
   String get portfolioAskTitle => 'Dipotso ka potefolio ya hao';
 
   @override

@@ -2339,6 +2339,10 @@ class AppLocalizationsIt extends AppLocalizations {
       'Gli acquisti non sono disponibili al momento. Riprova più tardi.';
 
   @override
+  String get signOutLocalOnly =>
+      'Le analisi salvate e le note IA restano solo su questo dispositivo, non nel tuo account, quindi vengono eliminate definitivamente.';
+
+  @override
   String get portfolioAskTitle => 'Domande sul tuo portafoglio';
 
   @override

@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Ehichapụla akaụntụ a na ngwaọrụ ọzọ ma ọ bụ na webụ, ya mere e wepụkwara data ya na ngwaọrụ a.",
   "errAiUnavailable": "Ọrụ AI adịghị ugbu a. Nwaa ọzọ mgbe nkeji ole na ole gachara.",
   "errMarketUnavailable": "Data ahịa adịghị ugbu a. Nwaa ọzọ mgbe nkeji ole na ole gachara.",
-  "purchaseUnavailable": "Ịzụ ihe adịghị ugbu a. Nwaa ọzọ ma emechaa."
+  "purchaseUnavailable": "Ịzụ ihe adịghị ugbu a. Nwaa ọzọ ma emechaa.",
+  "signOutLocalOnly": "Nyocha echekwara na ndetu AI na-adị naanị na ngwaọrụ a, ọ bụghị n'akaụntụ gị, ya mere a ga-ehichapụ ha kpamkpam."
 }

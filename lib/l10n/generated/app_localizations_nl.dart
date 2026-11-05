@@ -2340,6 +2340,10 @@ class AppLocalizationsNl extends AppLocalizations {
       'Aankopen zijn op dit moment niet beschikbaar. Probeer het later opnieuw.';
 
   @override
+  String get signOutLocalOnly =>
+      'Opgeslagen analyses en AI-notities staan alleen op dit apparaat, niet in je account, dus ze worden definitief verwijderd.';
+
+  @override
   String get portfolioAskTitle => 'Vragen over je portefeuille';
 
   @override

@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Hierdie rekening is op ’n ander toestel of op die web geskrap, daarom is sy data ook van hierdie toestel verwyder.",
   "errAiUnavailable": "Die AI-diens is tans nie beskikbaar nie. Probeer weer oor ’n paar minute.",
   "errMarketUnavailable": "Markdata is tans nie beskikbaar nie. Probeer weer oor ’n paar minute.",
-  "purchaseUnavailable": "Aankope is tans nie beskikbaar nie. Probeer later weer."
+  "purchaseUnavailable": "Aankope is tans nie beskikbaar nie. Probeer later weer.",
+  "signOutLocalOnly": "Gestoorde ontledings en AI-notas word slegs op hierdie toestel gehou, nie in jou rekening nie, en word dus permanent verwyder."
 }

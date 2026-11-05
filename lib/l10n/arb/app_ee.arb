@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Wotutu akɔnta sia le mɔ̃ bubu dzi alo le web dzi, eyata woɖe eƒe nyatakakawo ɖa le mɔ̃ sia hã dzi.",
   "errAiUnavailable": "AI sɛvis la meli fifia o. Gagbugbɔ te kpɔ le miniti ʋɛ aɖewo megbe.",
   "errMarketUnavailable": "Asi ŋuti nyatakakawo meli fifia o. Gagbugbɔ te kpɔ le miniti ʋɛ aɖewo megbe.",
-  "purchaseUnavailable": "Nuƒeƒle meli fifia o. Gagbugbɔ te kpɔ emegbe."
+  "purchaseUnavailable": "Nuƒeƒle meli fifia o. Gagbugbɔ te kpɔ emegbe.",
+  "signOutLocalOnly": "Numekuku siwo nèdzra ɖo kple AI nuŋlɔɖiwo le mɔ̃ sia dzi ko, menɔ wò akɔnta me o, eya ta woatutu wo ɖa tegbee."
 }

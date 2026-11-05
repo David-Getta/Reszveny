@@ -2332,6 +2332,10 @@ class AppLocalizationsHt extends AppLocalizations {
       'Acha pa disponib kounye a. Eseye ankò pita.';
 
   @override
+  String get signOutLocalOnly =>
+      'Analiz anrejistre yo ak nòt AI yo rete sèlman sou aparèy sa a, pa nan kont ou, kidonk y ap efase yo nèt.';
+
+  @override
   String get portfolioAskTitle => 'Kesyon sou pòtfèy ou';
 
   @override

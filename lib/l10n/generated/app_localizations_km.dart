@@ -2313,6 +2313,10 @@ class AppLocalizationsKm extends AppLocalizations {
       'ការទិញមិនអាចប្រើបាននៅពេលនេះទេ។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ។';
 
   @override
+  String get signOutLocalOnly =>
+      'ការវិភាគដែលបានរក្សាទុក និងកំណត់ចំណាំ AI ត្រូវបានរក្សាទុកតែនៅលើឧបករណ៍នេះប៉ុណ្ណោះ មិនមែននៅក្នុងគណនីរបស់អ្នកទេ ដូច្នេះវានឹងត្រូវលុបជាអចិន្ត្រៃយ៍។';
+
+  @override
   String get portfolioAskTitle => 'សំណួរអំពីផលប័ត្ររបស់អ្នក';
 
   @override

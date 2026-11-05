@@ -621,6 +621,7 @@
   "errAiUnavailable": "Az AI-szolgáltatás most nem érhető el. Próbáld újra néhány perc múlva.",
   "errMarketUnavailable": "Az árfolyamadatok most nem érhetők el. Próbáld újra néhány perc múlva.",
   "purchaseUnavailable": "A vásárlás most nem érhető el. Próbáld újra később.",
+  "signOutLocalOnly": "Az elmentett elemzések és AI-jegyzetek csak ezen a készüléken vannak, a fiókban nem, ezért véglegesen törlődnek.",
   "portfolioAskTitle": "Kérdések a portfóliódról",
   "rangeYtd": "Idén",
   "backupTitle": "Biztonsági mentés",

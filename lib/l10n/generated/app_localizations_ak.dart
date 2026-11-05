@@ -2334,6 +2334,10 @@ class AppLocalizationsAk extends AppLocalizations {
       'Adetɔ nni hɔ seesei. San bɔ mmɔden akyiri yi.';
 
   @override
+  String get signOutLocalOnly =>
+      'Nhwehwɛmu a woakora ne AI nkyerɛwee wɔ mfiri yi so nko ara, ɛnyɛ wo akawnt mu, enti wɔbɛpopa no koraa.';
+
+  @override
   String get portfolioAskTitle => 'Nsɛmmisa fa wo nkyɛfa ho';
 
   @override

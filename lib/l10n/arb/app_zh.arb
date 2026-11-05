@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "此账户已在其他设备或网页上删除，因此其数据也已从此设备移除。",
   "errAiUnavailable": "AI 服务暂时不可用。请几分钟后重试。",
   "errMarketUnavailable": "行情数据暂时不可用。请几分钟后重试。",
-  "purchaseUnavailable": "暂时无法购买。请稍后重试。"
+  "purchaseUnavailable": "暂时无法购买。请稍后重试。",
+  "signOutLocalOnly": "已保存的分析和 AI 笔记仅存储在此设备上，不在您的账户中，因此会被永久删除。"
 }

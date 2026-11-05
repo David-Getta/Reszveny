@@ -2332,6 +2332,10 @@ class AppLocalizationsKi extends AppLocalizations {
   String get purchaseUnavailable => 'Ũgũri ndũrĩ ho rĩu. Geria rĩngĩ thuutha.';
 
   @override
+  String get signOutLocalOnly =>
+      'Mathuthuria maigĩtwo na maandĩko ma AI maigagwo kĩndũ-inĩ gĩkĩ tu, ti akaunti-inĩ yaku, nĩ ũndũ ũcio nĩ makũeherio nginya tene.';
+
+  @override
   String get portfolioAskTitle => 'Ciũria igiĩ hisa ciaku';
 
   @override

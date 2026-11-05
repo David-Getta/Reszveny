@@ -2348,6 +2348,10 @@ class AppLocalizationsDe extends AppLocalizations {
       'Käufe sind gerade nicht verfügbar. Versuche es später erneut.';
 
   @override
+  String get signOutLocalOnly =>
+      'Gespeicherte Analysen und KI-Notizen liegen nur auf diesem Gerät, nicht in deinem Konto, und werden daher endgültig gelöscht.';
+
+  @override
   String get portfolioAskTitle => 'Fragen zu deinem Portfolio';
 
   @override

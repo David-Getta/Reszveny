@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Akhawunti leyi yi suriwile eka xitirhisiwa xin'wana kumbe eka webu, hikwalaho data ya yona na yona yi susiwile eka xitirhisiwa lexi.",
   "errAiUnavailable": "Vukorhokeri bya AI a byi kumeki sweswi. Ringeta nakambe endzhaku ka timinete ti nga ri tingani.",
   "errMarketUnavailable": "Data ya makete a yi kumeki sweswi. Ringeta nakambe endzhaku ka timinete ti nga ri tingani.",
-  "purchaseUnavailable": "Ku xava a ku kumeki sweswi. Ringeta nakambe endzhakunyana."
+  "purchaseUnavailable": "Ku xava a ku kumeki sweswi. Ringeta nakambe endzhakunyana.",
+  "signOutLocalOnly": "Minxopaxopo leyi hlayisiweke na tinotsi ta AI swi hlayisiwa eka xitirhisiwa lexi ntsena, ku nga ri eka akhawunti ya wena, hikwalaho swi suriwa hi ku helela."
 }

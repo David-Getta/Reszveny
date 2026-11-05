@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Voafafa tamin'ny fitaovana hafa na tamin'ny tranonkala ity kaonty ity, ka voafafa tamin'ity fitaovana ity koa ny angona ao aminy.",
   "errAiUnavailable": "Tsy misy ny serivisy AI amin'izao fotoana izao. Andramo indray afaka minitra vitsivitsy.",
   "errMarketUnavailable": "Tsy misy ny angona momba ny tsena amin'izao fotoana izao. Andramo indray afaka minitra vitsivitsy.",
-  "purchaseUnavailable": "Tsy azo atao ny fividianana amin'izao fotoana izao. Andramo indray any aoriana."
+  "purchaseUnavailable": "Tsy azo atao ny fividianana amin'izao fotoana izao. Andramo indray any aoriana.",
+  "signOutLocalOnly": "Ny fandalinana voatahiry sy ny naotin'ny AI dia amin'ity fitaovana ity ihany no misy, fa tsy ao amin'ny kaontinao, ka voafafa tanteraka izy ireo."
 }

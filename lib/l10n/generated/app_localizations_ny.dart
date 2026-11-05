@@ -2339,6 +2339,10 @@ class AppLocalizationsNy extends AppLocalizations {
       'Kugula sikukupezeka pakali pano. Yesaninso nthawi ina.';
 
   @override
+  String get signOutLocalOnly =>
+      'Kusanthula kosungidwa ndi zolemba za AI zimasungidwa pa chipangizo ichi chokha, osati mu akaunti yanu, choncho zimafufutidwa kwamuyaya.';
+
+  @override
   String get portfolioAskTitle => 'Mafunso okhudza masheya anu';
 
   @override

@@ -279,6 +279,17 @@ class BillingController extends ChangeNotifier {
     if (kept.length != items.length) await _savePending(kept);
   });
 
+  /// Egy törölt fiók függő bizonylatai (benne a fiók e-mail címe és a bolti bizonylat):
+  /// a fiókkal együtt erről a készülékről is lekerülnek.
+  static Future<void> forgetOwner(String email) => _serial(() async {
+    final items = await _pending();
+    final kept = [
+      for (final m in items)
+        if (m['owner'] != email) m,
+    ];
+    if (kept.length != items.length) await _savePending(kept);
+  });
+
   /// Belépés után újrapróbálja a megszakadt vásárlást.
   Future<void> retry(StoreProduct p) => buy(p);
 

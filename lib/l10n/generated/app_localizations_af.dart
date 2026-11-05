@@ -2338,6 +2338,10 @@ class AppLocalizationsAf extends AppLocalizations {
       'Aankope is tans nie beskikbaar nie. Probeer later weer.';
 
   @override
+  String get signOutLocalOnly =>
+      'Gestoorde ontledings en AI-notas word slegs op hierdie toestel gehou, nie in jou rekening nie, en word dus permanent verwyder.';
+
+  @override
   String get portfolioAskTitle => 'Vrae oor jou portefeulje';
 
   @override

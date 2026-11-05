@@ -2339,6 +2339,10 @@ class AppLocalizationsSq extends AppLocalizations {
       'Blerjet nuk janë të disponueshme për momentin. Provoni përsëri më vonë.';
 
   @override
+  String get signOutLocalOnly =>
+      'Analizat e ruajtura dhe shënimet e AI-së mbahen vetëm në këtë pajisje, jo në llogarinë tuaj, ndaj fshihen përgjithmonë.';
+
+  @override
   String get portfolioAskTitle => 'Pyetje për portofolin tuaj';
 
   @override

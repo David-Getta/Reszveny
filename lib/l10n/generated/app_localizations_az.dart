@@ -2335,6 +2335,10 @@ class AppLocalizationsAz extends AppLocalizations {
       'Alışlar hazırda mövcud deyil. Daha sonra yenidən cəhd edin.';
 
   @override
+  String get signOutLocalOnly =>
+      'Saxlanılan təhlillər və AI qeydləri hesabınızda deyil, yalnız bu cihazda qalır, buna görə də həmişəlik silinir.';
+
+  @override
   String get portfolioAskTitle => 'Portfeliniz haqqında suallar';
 
   @override

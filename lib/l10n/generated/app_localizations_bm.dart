@@ -2332,6 +2332,10 @@ class AppLocalizationsBm extends AppLocalizations {
       'Sanniw tɛ se ka kɛ sisan. A lajɛ tugun kɔfɛ.';
 
   @override
+  String get signOutLocalOnly =>
+      'Sɛgɛsɛgɛli maralenw ani AI sɛbɛnniw bɛ nin minɛn in kan dɔrɔn, u tɛ i ka kɔnti la, o de kosɔn u bɛ jɔsi fo abada.';
+
+  @override
   String get portfolioAskTitle => 'Ɲininkaliw i ka aksiyɔn kɛsu kan';
 
   @override

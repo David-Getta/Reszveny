@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Akaun ini telah dipadam pada peranti lain atau di web, jadi datanya turut dialih keluar daripada peranti ini.",
   "errAiUnavailable": "Perkhidmatan AI tidak tersedia buat masa ini. Cuba lagi dalam beberapa minit.",
   "errMarketUnavailable": "Data pasaran tidak tersedia buat masa ini. Cuba lagi dalam beberapa minit.",
-  "purchaseUnavailable": "Pembelian tidak tersedia buat masa ini. Cuba lagi kemudian."
+  "purchaseUnavailable": "Pembelian tidak tersedia buat masa ini. Cuba lagi kemudian.",
+  "signOutLocalOnly": "Analisis yang disimpan dan nota AI hanya ada pada peranti ini, bukan dalam akaun anda, jadi ia akan dipadam secara kekal."
 }

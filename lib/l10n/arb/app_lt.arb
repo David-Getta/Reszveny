@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Ši paskyra buvo ištrinta kitame įrenginyje arba žiniatinklyje, todėl jos duomenys pašalinti ir iš šio įrenginio.",
   "errAiUnavailable": "DI paslauga šiuo metu nepasiekiama. Bandykite dar kartą po kelių minučių.",
   "errMarketUnavailable": "Rinkos duomenys šiuo metu nepasiekiami. Bandykite dar kartą po kelių minučių.",
-  "purchaseUnavailable": "Pirkiniai šiuo metu negalimi. Bandykite dar kartą vėliau."
+  "purchaseUnavailable": "Pirkiniai šiuo metu negalimi. Bandykite dar kartą vėliau.",
+  "signOutLocalOnly": "Išsaugotos analizės ir DI užrašai laikomi tik šiame įrenginyje, o ne jūsų paskyroje, todėl jie ištrinami visam laikui."
 }

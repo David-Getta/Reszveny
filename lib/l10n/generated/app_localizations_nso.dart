@@ -2350,6 +2350,10 @@ class AppLocalizationsNso extends AppLocalizations {
       'Go reka ga go hwetšagale gona bjale. Leka gape ka morago.';
 
   @override
+  String get signOutLocalOnly =>
+      'Ditshekatsheko tše di bolokilwego le dintlha tša AI di bolokwa fela sedirišweng se, e sego akhaontong ya gago, ka fao di phumolwa go ya go ile.';
+
+  @override
   String get portfolioAskTitle => 'Dipotšišo ka photefolio ya gago';
 
   @override

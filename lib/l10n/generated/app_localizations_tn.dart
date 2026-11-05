@@ -2348,6 +2348,10 @@ class AppLocalizationsTn extends AppLocalizations {
       'Ditheko ga di yo ka nako eno. Leka gape moragonyana.';
 
   @override
+  String get signOutLocalOnly =>
+      'Ditshekatsheko tse di bolokilweng le dintlha tsa AI di bolokwa fela mo sedirisiweng se, e seng mo akhaontong ya gago, ka jalo di phimolwa ka bosakhutleng.';
+
+  @override
   String get portfolioAskTitle => 'Dipotso ka potefolio ya gago';
 
   @override

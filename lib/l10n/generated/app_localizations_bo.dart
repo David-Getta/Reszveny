@@ -2326,6 +2326,10 @@ class AppLocalizationsBo extends AppLocalizations {
       'ད་ལྟ་ཉོ་སྒྲུབ་བྱེད་མི་ཐུབ། རྗེས་སུ་ཡང་བསྐྱར་ཚོད་ལྟ་གནང་།';
 
   @override
+  String get signOutLocalOnly =>
+      'ཉར་ཚགས་བྱས་པའི་དབྱེ་ཞིབ་དང་ AI ཟིན་ཐོ་རྣམས་སྒྲིག་ཆས་འདིའི་ནང་ཁོ་ནར་ཉར་ཡོད་པ་ལས་ཁྱེད་ཀྱི་རྩིས་ཁྲའི་ནང་དུ་མེད་པས། གཏན་དུ་སུབ་ངེས།';
+
+  @override
   String get portfolioAskTitle => 'ཁྱེད་ཀྱི་མ་འཇོག་ཚོགས་སྡེབ་སྐོར་གྱི་དྲི་བ།';
 
   @override

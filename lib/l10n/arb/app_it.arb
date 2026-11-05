@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Questo account è stato eliminato su un altro dispositivo o sul web, quindi i suoi dati sono stati rimossi anche da questo dispositivo.",
   "errAiUnavailable": "Il servizio di IA non è disponibile al momento. Riprova tra qualche minuto.",
   "errMarketUnavailable": "I dati di mercato non sono disponibili al momento. Riprova tra qualche minuto.",
-  "purchaseUnavailable": "Gli acquisti non sono disponibili al momento. Riprova più tardi."
+  "purchaseUnavailable": "Gli acquisti non sono disponibili al momento. Riprova più tardi.",
+  "signOutLocalOnly": "Le analisi salvate e le note IA restano solo su questo dispositivo, non nel tuo account, quindi vengono eliminate definitivamente."
 }

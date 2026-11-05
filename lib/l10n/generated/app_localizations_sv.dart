@@ -2335,6 +2335,10 @@ class AppLocalizationsSv extends AppLocalizations {
       'Köp är inte tillgängliga just nu. Försök igen senare.';
 
   @override
+  String get signOutLocalOnly =>
+      'Sparade analyser och AI-anteckningar finns bara på den här enheten, inte i ditt konto, så de raderas permanent.';
+
+  @override
   String get portfolioAskTitle => 'Frågor om din portfölj';
 
   @override

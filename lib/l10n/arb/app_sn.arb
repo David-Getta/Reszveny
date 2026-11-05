@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Akaundi iyi yadzimwa pane mumwe mudziyo kana pawebhu, saka data yayo yabviswawo pamudziyo uyu.",
   "errAiUnavailable": "Sevhisi yeAI haiwanikwe parizvino. Edza zvakare mushure memaminitsi mashoma.",
   "errMarketUnavailable": "Data yemusika haiwanikwe parizvino. Edza zvakare mushure memaminitsi mashoma.",
-  "purchaseUnavailable": "Kutenga hakuwanikwe parizvino. Edza zvakare gare gare."
+  "purchaseUnavailable": "Kutenga hakuwanikwe parizvino. Edza zvakare gare gare.",
+  "signOutLocalOnly": "Ongororo dzakachengetwa nezvinyorwa zveAI zvinochengetwa pamudziyo uyu chete, kwete muakaundi yako, saka zvinodzimwa zvachose."
 }

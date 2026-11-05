@@ -72,6 +72,11 @@ class SyncService extends ChangeNotifier {
   /// közben valami (akkor nem jelöljük tisztának).
   int _changes = 0;
   bool _applying = false;
+
+  /// Fiókváltáskor (a készüléken még az előző fiók adatai vannak, pl. lejárt munkamenet
+  /// után): a nem szinkronizált személyes adatok (elemzések, AI-jegyzetek, előzmények)
+  /// törlése, mielőtt az új fiók adatai jönnek – különben az új fiók látná őket.
+  Future<void> Function()? onForeignAccount;
   bool _busy = false;
   bool _failed = false;
   bool _wasSignedIn = false;
@@ -992,7 +997,16 @@ class SyncService extends ChangeNotifier {
     if (account.email != email) return;
     if (_syncedEmail != null && _syncedEmail != account.email) {
       // Másik fiók: a készüléken lévő adat az előzőé (ott megvan), nem kerül az újba.
-      // A készülék az új fiók adatait veszi át; üres fióknál üresen indul.
+      // A készülék az új fiók adatait veszi át; üres fióknál üresen indul. A törlés alatt
+      // a helyi változások nem számítanak feltöltendőnek (nem mehet üres csomag az újba).
+      if (onForeignAccount case final wipe?) {
+        _applying = true;
+        try {
+          await wipe();
+        } finally {
+          _applying = false;
+        }
+      }
       await _apply({...emptyPackage, ...?data});
       if (account.email == email) await _push(snapshot(), base: base, email: email);
       return;

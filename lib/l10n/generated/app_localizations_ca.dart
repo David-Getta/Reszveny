@@ -2342,6 +2342,10 @@ class AppLocalizationsCa extends AppLocalizations {
       'Les compres no estan disponibles ara mateix. Torna-ho a provar més tard.';
 
   @override
+  String get signOutLocalOnly =>
+      'Les anàlisis desades i les notes d\'IA només es guarden en aquest dispositiu, no al teu compte, així que s\'eliminen definitivament.';
+
+  @override
   String get portfolioAskTitle => 'Preguntes sobre la teva cartera';
 
   @override

@@ -2326,6 +2326,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get purchaseUnavailable => 'Hiện không thể mua hàng. Hãy thử lại sau.';
 
   @override
+  String get signOutLocalOnly =>
+      'Phân tích đã lưu và ghi chú AI chỉ được lưu trên thiết bị này, không có trong tài khoản của bạn, nên sẽ bị xóa vĩnh viễn.';
+
+  @override
   String get portfolioAskTitle => 'Câu hỏi về danh mục của bạn';
 
   @override

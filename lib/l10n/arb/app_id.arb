@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Akun ini telah dihapus di perangkat lain atau di web, sehingga datanya juga dihapus dari perangkat ini.",
   "errAiUnavailable": "Layanan AI sedang tidak tersedia. Coba lagi dalam beberapa menit.",
   "errMarketUnavailable": "Data pasar sedang tidak tersedia. Coba lagi dalam beberapa menit.",
-  "purchaseUnavailable": "Pembelian sedang tidak tersedia. Coba lagi nanti."
+  "purchaseUnavailable": "Pembelian sedang tidak tersedia. Coba lagi nanti.",
+  "signOutLocalOnly": "Analisis tersimpan dan catatan AI hanya disimpan di perangkat ini, bukan di akun Anda, sehingga akan dihapus secara permanen."
 }

@@ -2370,6 +2370,10 @@ class AppLocalizationsHr extends AppLocalizations {
       'Kupnje trenutačno nisu dostupne. Pokušajte ponovno kasnije.';
 
   @override
+  String get signOutLocalOnly =>
+      'Spremljene analize i AI bilješke čuvaju se samo na ovom uređaju, a ne na vašem računu, pa se trajno brišu.';
+
+  @override
   String get portfolioAskTitle => 'Pitanja o vašem portfelju';
 
   @override

@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Kini nga account napapas sa laing device o sa web, busa gitangtang usab ang datos niini gikan niini nga device.",
   "errAiUnavailable": "Dili magamit ang serbisyo sa AI karon. Sulayi pag-usab human sa pipila ka minuto.",
   "errMarketUnavailable": "Dili magamit ang market data karon. Sulayi pag-usab human sa pipila ka minuto.",
-  "purchaseUnavailable": "Dili magamit ang pagpalit karon. Sulayi pag-usab unya."
+  "purchaseUnavailable": "Dili magamit ang pagpalit karon. Sulayi pag-usab unya.",
+  "signOutLocalOnly": "Ang natipig nga mga pagtuki ug mga nota sa AI anaa lamang niini nga device, dili sa imong account, mao nga mapapas kini sa hingpit."
 }

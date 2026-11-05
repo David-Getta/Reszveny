@@ -2381,6 +2381,10 @@ class AppLocalizationsAr extends AppLocalizations {
       'المشتريات غير متاحة حاليًا. حاول مرة أخرى لاحقًا.';
 
   @override
+  String get signOutLocalOnly =>
+      'التحليلات المحفوظة وملاحظات الذكاء الاصطناعي موجودة على هذا الجهاز فقط، لا في حسابك، لذا ستُحذف نهائيًا.';
+
+  @override
   String get portfolioAskTitle => 'أسئلة حول محفظتك';
 
   @override

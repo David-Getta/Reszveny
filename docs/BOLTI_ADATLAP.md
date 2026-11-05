@@ -71,7 +71,7 @@ A Play Console-ban kitöltendő (nem kód); az Apple-manifesttel azonos válaszo
 | Alkalmazás-tevékenység | Használati események – választható (hozzájárulás a kezdőképernyőn), elemzéshez, személyhez nem köthető; az elemzések naplója (melyik részvény, mikor) – a fiókhoz kötve, a keret elszámolásához |
 | Alkalmazás-információ | Hibajelentések – választható, kitakarva, személyhez nem köthető |
 | AI-válasz jelentése | Választható: a jelentett válasz szövege, az ok és a megjegyzés – fiók nélkül, 180 napig, a tartalom átnézéséhez |
-| Törlés után megmarad | Csak kulcsolt ujjlenyomatok (a szerver titkával): a vásárlások bizonylata (hogy ne legyen újra beváltható, és egy még fizetett bolti előfizetés visszaállítható legyen) és a beváltott ajánlás postafiókja; a tesztelői kód és a meghívó helye véletlen azonosítóval. Az adatkezelési tájékoztatóban fel kell tüntetni. |
+| Törlés után megmarad | Csak kulcsolt ujjlenyomatok (a szerver titkával): a vásárlások bizonylata (hogy ne legyen újra beváltható, és egy még fizetett bolti előfizetés visszaállítható legyen) és a beváltott ajánlás postafiókja; a tesztelői kód és a meghívó helye véletlen azonosítóval; a fiók munkamenet-tokenjeinek lenyomata 400 napig (hogy a fiók többi eszköze is törölje a helyi adatait); a böngészős előfizetés Stripe-ügyfélazonosítója legfeljebb 30 napig, ha a Stripe-nál a törlés még nem sikerült (újrapróbálás). Az e-mail cím nélküli, fizetés nélküli fiók 400 nap használaton kívül automatikusan törlődik. Az adatkezelési tájékoztatóban fel kell tüntetni. |
 | Nem gyűjt | hely, névjegyek, fotók (a kép csak a felismeréshez megy át, nem tárolódik), eszközazonosítók |
 
 A portfólió, a kedvencek, a riasztások és a jegyzetek a készüléken vannak; fiókkal a felhasználó

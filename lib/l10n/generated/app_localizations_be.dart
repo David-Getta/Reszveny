@@ -2386,6 +2386,10 @@ class AppLocalizationsBe extends AppLocalizations {
       'Пакупкі зараз недаступныя. Паспрабуйце пазней.';
 
   @override
+  String get signOutLocalOnly =>
+      'Захаваныя аналізы і AI-нататкі захоўваюцца толькі на гэтай прыладзе, а не ў вашым уліковым запісе, таму яны будуць выдалены назаўсёды.';
+
+  @override
   String get portfolioAskTitle => 'Пытанні пра ваш партфель';
 
   @override

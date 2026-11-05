@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Far nañu kont bii ci beneen masin walla ci web bi, moo tax far nañu ay xibaaram ci masin bii itam.",
   "errAiUnavailable": "Sarwiisu AI bi amul leegi. Jéemaatal fii ak ay minit.",
   "errMarketUnavailable": "Xibaari marse yi amuñu leegi. Jéemaatal fii ak ay minit.",
-  "purchaseUnavailable": "Jënd mënul a am leegi. Jéemaatal ci kanam."
+  "purchaseUnavailable": "Jënd mënul a am leegi. Jéemaatal ci kanam.",
+  "signOutLocalOnly": "Saytu yu ñu denc ak notu AI yi ci masin bii rekk lañu nekk, du ci sa kont, moo tax dinañu leen far ba fàww."
 }

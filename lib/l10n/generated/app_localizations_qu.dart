@@ -2346,6 +2346,10 @@ class AppLocalizationsQu extends AppLocalizations {
       'Kunanqa manam rantiy atikunchu. Qhipaman huktawan ruway.';
 
   @override
+  String get signOutLocalOnly =>
+      'Waqaychasqa t\'aqwiykuna, AI qillqasqakunapas kay equipollapim kan, manam cuentaykipichu, chaymi wiñaypaq qullukunqa.';
+
+  @override
   String get portfolioAskTitle => 'Tapukuykuna: portafolioyki';
 
   @override

@@ -2336,6 +2336,10 @@ class AppLocalizationsKu extends AppLocalizations {
       'Kirîn niha ne berdest e. Paşê dîsa biceribîne.';
 
   @override
+  String get signOutLocalOnly =>
+      'Analîzên tomarkirî û notên AI tenê li ser vê amûrê ne, ne di hesabê te de, ji ber vê yekê ew bi yekcarî têne jêbirin.';
+
+  @override
   String get portfolioAskTitle => 'Pirsên li ser portfolyoya te';
 
   @override

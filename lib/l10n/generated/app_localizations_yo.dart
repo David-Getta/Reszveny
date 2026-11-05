@@ -2331,6 +2331,10 @@ class AppLocalizationsYo extends AppLocalizations {
       'Ìrajà kò ṣeé ṣe lọ́wọ́lọ́wọ́. Tún gbìyànjú nígbà míì.';
 
   @override
+  String get signOutLocalOnly =>
+      'Àwọn ìtúpalẹ̀ tí a fi pamọ́ àti àwọn àkọsílẹ̀ AI wà lórí ẹ̀rọ yìí nìkan, kì í ṣe nínú àkáǹtì rẹ, nítorí náà a ó pa wọ́n rẹ́ pátápátá.';
+
+  @override
   String get portfolioAskTitle => 'Àwọn ìbéèrè nípa àpò ìdókòwò rẹ';
 
   @override

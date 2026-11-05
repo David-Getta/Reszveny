@@ -2351,6 +2351,10 @@ class AppLocalizationsMg extends AppLocalizations {
       'Tsy azo atao ny fividianana amin\'izao fotoana izao. Andramo indray any aoriana.';
 
   @override
+  String get signOutLocalOnly =>
+      'Ny fandalinana voatahiry sy ny naotin\'ny AI dia amin\'ity fitaovana ity ihany no misy, fa tsy ao amin\'ny kaontinao, ka voafafa tanteraka izy ireo.';
+
+  @override
   String get portfolioAskTitle => 'Fanontaniana momba ny kitapom-bolanao';
 
   @override

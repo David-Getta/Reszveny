@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Kay cuentaqa huk equipopi utaq webpi qullusqa karqan, chaymi datosninpas kay equipomanta qichusqa.",
   "errAiUnavailable": "AI servicioqa kunanqa manam kanchu. Wakin minutokunamanta huktawan ruway.",
   "errMarketUnavailable": "Qhatu datosqa kunanqa manam kanchu. Wakin minutokunamanta huktawan ruway.",
-  "purchaseUnavailable": "Kunanqa manam rantiy atikunchu. Qhipaman huktawan ruway."
+  "purchaseUnavailable": "Kunanqa manam rantiy atikunchu. Qhipaman huktawan ruway.",
+  "signOutLocalOnly": "Waqaychasqa t'aqwiykuna, AI qillqasqakunapas kay equipollapim kan, manam cuentaykipichu, chaymi wiñaypaq qullukunqa."
 }

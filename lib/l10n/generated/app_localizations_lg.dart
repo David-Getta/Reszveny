@@ -2344,6 +2344,10 @@ class AppLocalizationsLg extends AppLocalizations {
       'Okugula tekuliiwo kati. Gezaako nate oluvannyuma.';
 
   @override
+  String get signOutLocalOnly =>
+      'Okwekenneenya okuterekeddwa n\'ebiwandiiko bya AI biri ku kyuma kino kyokka, si ku akawunti yo, n\'olwekyo bijja kusangulwawo ddala.';
+
+  @override
   String get portfolioAskTitle => 'Ebibuuzo ku migabo gyo';
 
   @override

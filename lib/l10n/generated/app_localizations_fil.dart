@@ -2342,6 +2342,10 @@ class AppLocalizationsFil extends AppLocalizations {
       'Hindi available ang pagbili sa ngayon. Subukang muli mamaya.';
 
   @override
+  String get signOutLocalOnly =>
+      'Ang mga naka-save na pagsusuri at mga tala ng AI ay nasa device na ito lang, wala sa iyong account, kaya permanenteng mabubura ang mga ito.';
+
+  @override
   String get portfolioAskTitle => 'Mga tanong tungkol sa portfolio mo';
 
   @override

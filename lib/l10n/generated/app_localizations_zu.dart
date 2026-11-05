@@ -2343,6 +2343,10 @@ class AppLocalizationsZu extends AppLocalizations {
       'Ukuthenga akutholakali okwamanje. Zama futhi kamuva.';
 
   @override
+  String get signOutLocalOnly =>
+      'Izinhlaziyo ezigciniwe namanothi e-AI kugcinwa kule divayisi kuphela, hhayi ku-akhawunti yakho, ngakho kususwa unomphela.';
+
+  @override
   String get portfolioAskTitle => 'Imibuzo ngephothifoliyo yakho';
 
   @override

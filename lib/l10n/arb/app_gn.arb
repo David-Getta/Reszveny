@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Ko mbaʼete oñembogue ambue mbaʼeʼokápe térã ñandutípe, upévare idato oñembogue avei ko mbaʼeʼokágui.",
   "errAiUnavailable": "AI mbaʼepytyvõrã ndaipóri koʼág̃a. Eñehaʼã jey mbovy aravoʼi rire.",
   "errMarketUnavailable": "Ñemuha mbaʼekuaarã ndaipóri koʼág̃a. Eñehaʼã jey mbovy aravoʼi rire.",
-  "purchaseUnavailable": "Jejogua ndaipóri koʼág̃a. Eñehaʼã jey upéi."
+  "purchaseUnavailable": "Jejogua ndaipóri koʼág̃a. Eñehaʼã jey upéi.",
+  "signOutLocalOnly": "Jehesaʼỹijo ñongatupyre ha AI jehaipyre oĩ ko mbaʼeʼokápe añoite, ndahaʼéi nde mbaʼetépe, upévare oñembogue opa árape g̃uarã."
 }

@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "A ti pa àkáǹtì yìí rẹ́ lórí ẹ̀rọ mìíràn tàbí lórí wẹ́ẹ̀bù, nítorí náà a ti yọ dátà rẹ̀ kúrò lórí ẹ̀rọ yìí náà.",
   "errAiUnavailable": "Iṣẹ́ AI kò sí lọ́wọ́lọ́wọ́. Tún gbìyànjú ní ìṣẹ́jú díẹ̀ sí i.",
   "errMarketUnavailable": "Dátà ọjà kò sí lọ́wọ́lọ́wọ́. Tún gbìyànjú ní ìṣẹ́jú díẹ̀ sí i.",
-  "purchaseUnavailable": "Ìrajà kò ṣeé ṣe lọ́wọ́lọ́wọ́. Tún gbìyànjú nígbà míì."
+  "purchaseUnavailable": "Ìrajà kò ṣeé ṣe lọ́wọ́lọ́wọ́. Tún gbìyànjú nígbà míì.",
+  "signOutLocalOnly": "Àwọn ìtúpalẹ̀ tí a fi pamọ́ àti àwọn àkọsílẹ̀ AI wà lórí ẹ̀rọ yìí nìkan, kì í ṣe nínú àkáǹtì rẹ, nítorí náà a ó pa wọ́n rẹ́ pátápátá."
 }

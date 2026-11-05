@@ -133,7 +133,11 @@ Future<void> _confirmSignOut(BuildContext context) async {
         ),
       ) ==
       true;
-  if (!await ask(l10n.signOutBody, l10n.signOut) || _signingOut || !context.mounted) return;
+  // Az elmentett elemzések és AI-jegyzetek csak ezen a készüléken vannak (nem a fiókban): ezt
+  // is tudnia kell, mielőtt kilép.
+  if (!await ask('${l10n.signOutBody}\n\n${l10n.signOutLocalOnly}', l10n.signOut) || _signingOut || !context.mounted) {
+    return;
+  }
   _signingOut = true;
   try {
     if (!await services.signOut()) {

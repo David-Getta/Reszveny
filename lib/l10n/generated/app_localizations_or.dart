@@ -2329,6 +2329,10 @@ class AppLocalizationsOr extends AppLocalizations {
       'କ୍ରୟ ବର୍ତ୍ତମାନ ଉପଲବ୍ଧ ନାହିଁ। ପରେ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।';
 
   @override
+  String get signOutLocalOnly =>
+      'ସଞ୍ଚିତ ବିଶ୍ଳେଷଣ ଓ AI ନୋଟ୍ କେବଳ ଏହି ଡିଭାଇସରେ ରହେ, ଆପଣଙ୍କ ଆକାଉଣ୍ଟରେ ନୁହେଁ, ତେଣୁ ସେଗୁଡ଼ିକ ସ୍ଥାୟୀ ଭାବେ ଡିଲିଟ ହୋଇଯିବ।';
+
+  @override
   String get portfolioAskTitle => 'ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓ ବିଷୟରେ ପ୍ରଶ୍ନ';
 
   @override

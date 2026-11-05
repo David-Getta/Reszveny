@@ -2330,6 +2330,10 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਖ਼ਰੀਦਦਾਰੀ ਇਸ ਵੇਲੇ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਬਾਅਦ ਵਿੱਚ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
 
   @override
+  String get signOutLocalOnly =>
+      'ਸੁਰੱਖਿਅਤ ਕੀਤੇ ਵਿਸ਼ਲੇਸ਼ਣ ਅਤੇ AI ਨੋਟ ਸਿਰਫ਼ ਇਸ ਡਿਵਾਈਸ ’ਤੇ ਰੱਖੇ ਜਾਂਦੇ ਹਨ, ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਨਹੀਂ, ਇਸ ਲਈ ਇਹ ਹਮੇਸ਼ਾ ਲਈ ਮਿਟਾ ਦਿੱਤੇ ਜਾਂਦੇ ਹਨ।';
+
+  @override
   String get portfolioAskTitle => 'ਤੁਹਾਡੇ ਪੋਰਟਫ਼ੋਲੀਓ ਬਾਰੇ ਸਵਾਲ';
 
   @override

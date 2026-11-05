@@ -2334,6 +2334,10 @@ class AppLocalizationsBg extends AppLocalizations {
       'Покупките в момента не са налични. Опитайте отново по-късно.';
 
   @override
+  String get signOutLocalOnly =>
+      'Запазените анализи и бележките от AI се съхраняват само на това устройство, не в акаунта ви, затова се изтриват завинаги.';
+
+  @override
   String get portfolioAskTitle => 'Въпроси за вашия портфейл';
 
   @override

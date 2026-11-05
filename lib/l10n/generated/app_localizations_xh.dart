@@ -2342,6 +2342,10 @@ class AppLocalizationsXh extends AppLocalizations {
       'Uthengo alufumaneki okwangoku. Zama kwakhona kamva.';
 
   @override
+  String get signOutLocalOnly =>
+      'Iintlalutyo ezigciniweyo namanqaku e-AI zigcinwa kwesi sixhobo kuphela, hayi kwiakhawunti yakho, ngoko zicinywa ngokusisigxina.';
+
+  @override
   String get portfolioAskTitle => 'Imibuzo ngepotifoliyo yakho';
 
   @override

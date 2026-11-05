@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Bu hisob boshqa qurilmada yoki vebda oʻchirildi, shuning uchun uning maʼlumotlari bu qurilmadan ham oʻchirildi.",
   "errAiUnavailable": "AI xizmati hozir mavjud emas. Bir necha daqiqadan soʻng qayta urinib koʻring.",
   "errMarketUnavailable": "Bozor maʼlumotlari hozir mavjud emas. Bir necha daqiqadan soʻng qayta urinib koʻring.",
-  "purchaseUnavailable": "Xaridlar hozir mavjud emas. Keyinroq qayta urinib koʻring."
+  "purchaseUnavailable": "Xaridlar hozir mavjud emas. Keyinroq qayta urinib koʻring.",
+  "signOutLocalOnly": "Saqlangan tahlillar va AI qaydlari faqat shu qurilmada saqlanadi, hisobingizda emas, shuning uchun ular butunlay oʻchiriladi."
 }

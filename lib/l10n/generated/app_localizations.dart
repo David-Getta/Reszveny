@@ -4062,6 +4062,12 @@ abstract class AppLocalizations {
   /// **'Purchases are not available right now. Try again later.'**
   String get purchaseUnavailable;
 
+  /// Second paragraph of the sign-out confirmation: AI analyses and AI notes are not synced, so signing out deletes them permanently (privacy: the next person on the device must not see them).
+  ///
+  /// In en, this message translates to:
+  /// **'Saved analyses and AI notes are kept only on this device, not in your account, so they are removed for good.'**
+  String get signOutLocalOnly;
+
   /// Title of the sheet where the user asks the AI follow-up questions about its portfolio review.
   ///
   /// In en, this message translates to:

@@ -2344,6 +2344,10 @@ class AppLocalizationsEl extends AppLocalizations {
       'Οι αγορές δεν είναι διαθέσιμες αυτή τη στιγμή. Δοκιμάστε ξανά αργότερα.';
 
   @override
+  String get signOutLocalOnly =>
+      'Οι αποθηκευμένες αναλύσεις και οι σημειώσεις AI φυλάσσονται μόνο σε αυτή τη συσκευή, όχι στον λογαριασμό σας, επομένως διαγράφονται οριστικά.';
+
+  @override
   String get portfolioAskTitle => 'Ερωτήσεις για το χαρτοφυλάκιό σας';
 
   @override

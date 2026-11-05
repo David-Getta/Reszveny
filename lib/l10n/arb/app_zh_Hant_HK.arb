@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "此帳戶已在其他裝置或網頁上刪除，因此其數據亦已從此裝置移除。",
   "errAiUnavailable": "AI 服務暫時無法使用。請於幾分鐘後再試。",
   "errMarketUnavailable": "市場數據暫時無法提供。請於幾分鐘後再試。",
-  "purchaseUnavailable": "暫時無法購買。請稍後再試。"
+  "purchaseUnavailable": "暫時無法購買。請稍後再試。",
+  "signOutLocalOnly": "已儲存的分析和 AI 筆記只保存在此裝置上，不在你的帳戶中，因此會被永久刪除。"
 }

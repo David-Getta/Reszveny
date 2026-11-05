@@ -2382,6 +2382,10 @@ class AppLocalizationsCs extends AppLocalizations {
       'Nákupy momentálně nejsou k dispozici. Zkuste to znovu později.';
 
   @override
+  String get signOutLocalOnly =>
+      'Uložené analýzy a AI poznámky zůstávají jen v tomto zařízení, ne ve vašem účtu, a proto se natrvalo smažou.';
+
+  @override
   String get portfolioAskTitle => 'Otázky k vašemu portfoliu';
 
   @override

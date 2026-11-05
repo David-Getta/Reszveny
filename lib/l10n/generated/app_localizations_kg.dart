@@ -2340,6 +2340,10 @@ class AppLocalizationsKg extends AppLocalizations {
       'Kusumba kele ve ntangu yai. Meka diaka na nima.';
 
   @override
+  String get signOutLocalOnly =>
+      'Ba analyse zilundwa ti ba note ya AI kele kaka na kisadilu kiaki, ve na compte na nge, yo yina bo ta zimbisa yo mpaka mvula na mvula.';
+
+  @override
   String get portfolioAskTitle => 'Biuvu mu portefeuille na nge';
 
   @override

@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Acest cont a fost șters pe alt dispozitiv sau pe web, așa că datele lui au fost șterse și de pe acest dispozitiv.",
   "errAiUnavailable": "Serviciul AI nu este disponibil momentan. Încearcă din nou peste câteva minute.",
   "errMarketUnavailable": "Datele de piață nu sunt disponibile momentan. Încearcă din nou peste câteva minute.",
-  "purchaseUnavailable": "Achizițiile nu sunt disponibile momentan. Încearcă din nou mai târziu."
+  "purchaseUnavailable": "Achizițiile nu sunt disponibile momentan. Încearcă din nou mai târziu.",
+  "signOutLocalOnly": "Analizele salvate și notițele AI sunt păstrate doar pe acest dispozitiv, nu în contul tău, așa că sunt șterse definitiv."
 }

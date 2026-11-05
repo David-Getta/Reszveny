@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Tämä tili poistettiin toisella laitteella tai verkossa, joten sen tiedot poistettiin myös tältä laitteelta.",
   "errAiUnavailable": "Tekoälypalvelu ei ole juuri nyt käytettävissä. Yritä uudelleen muutaman minuutin kuluttua.",
   "errMarketUnavailable": "Markkinadata ei ole juuri nyt käytettävissä. Yritä uudelleen muutaman minuutin kuluttua.",
-  "purchaseUnavailable": "Ostokset eivät ole juuri nyt käytettävissä. Yritä myöhemmin uudelleen."
+  "purchaseUnavailable": "Ostokset eivät ole juuri nyt käytettävissä. Yritä myöhemmin uudelleen.",
+  "signOutLocalOnly": "Tallennetut analyysit ja tekoälymuistiinpanot ovat vain tällä laitteella, eivät tililläsi, joten ne poistetaan pysyvästi."
 }

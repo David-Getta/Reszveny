@@ -2368,6 +2368,10 @@ class AppLocalizationsBs extends AppLocalizations {
       'Kupovina trenutno nije dostupna. Pokušajte ponovo kasnije.';
 
   @override
+  String get signOutLocalOnly =>
+      'Sačuvane analize i AI bilješke čuvaju se samo na ovom uređaju, a ne na vašem računu, pa se trajno brišu.';
+
+  @override
   String get portfolioAskTitle => 'Pitanja o vašem portfoliju';
 
   @override

@@ -2327,6 +2327,10 @@ class AppLocalizationsBho extends AppLocalizations {
       'खरीदारी अबहीं उपलब्ध नइखे। बाद में फेर से कोसिस करीं।';
 
   @override
+  String get signOutLocalOnly =>
+      'सहेजल विश्लेषण आ AI नोट खाली एह डिवाइस पर रहेला, राउर खाता में ना, एह से ई हमेशा खातिर हटा दिहल जाई।';
+
+  @override
   String get portfolioAskTitle => 'राउर पोर्टफ़ोलियो के बारे में सवाल';
 
   @override

@@ -199,7 +199,9 @@ class Store {
     ''');
     // Fiók-oszlopok (meglévő adatbázisokhoz is).
     final cols = _db.select('PRAGMA table_info(users)').map((r) => r['name'] as String).toSet();
-    for (final c in ['email', 'stripe_customer_id', 'stripe_subscription_id']) {
+    // last_seen: a fiók elsődleges tokenjének utolsó használata (naponta legfeljebb egyszer írva):
+    // a régóta elhagyott névtelen fiókok így kitakaríthatók.
+    for (final c in ['email', 'stripe_customer_id', 'stripe_subscription_id', 'last_seen']) {
       if (!cols.contains(c)) _db.execute('ALTER TABLE users ADD COLUMN $c TEXT');
     }
     _db.execute('CREATE UNIQUE INDEX IF NOT EXISTS users_email ON users(email)');
@@ -424,8 +426,16 @@ class Store {
 
   String? userIdForToken(String token) {
     final h = hashToken(token);
-    final rows = _db.select('SELECT id FROM users WHERE token_hash = ?', [h]);
-    if (rows.isNotEmpty) return rows.first['id'] as String;
+    final rows = _db.select('SELECT id, last_seen FROM users WHERE token_hash = ?', [h]);
+    if (rows.isNotEmpty) {
+      // Naponta legfeljebb egyszer írjuk (nem minden kérésnél).
+      final now = clock().toUtc();
+      final last = DateTime.tryParse(rows.first['last_seen'] as String? ?? '');
+      if (last == null || now.difference(last) > const Duration(days: 1)) {
+        _db.execute('UPDATE users SET last_seen = ? WHERE token_hash = ?', [now.toIso8601String(), h]);
+      }
+      return rows.first['id'] as String;
+    }
     final s = _db.select('SELECT user_id, last_used FROM sessions WHERE token_hash = ?', [h]);
     if (s.isEmpty) return null;
     // Naponta legfeljebb egyszer írjuk (nem minden kérésnél).
@@ -442,8 +452,40 @@ class Store {
   static const sessionIdle = Duration(days: 365), usageKept = Duration(days: 400);
 
   /// Ennyi ideig ismeri fel a szerver egy törölt fiók tokenjét (a többi eszköz ezalatt
-  /// kapja meg, hogy a fiók törölve: `account_deleted`).
-  static const deletedSessionKept = Duration(days: 30);
+  /// kapja meg, hogy a fiók törölve: `account_deleted`): tovább, mint ameddig egy nem
+  /// használt munkamenet él, így egy hónapokig offline eszköz is megtudja.
+  static const deletedSessionKept = Duration(days: 400);
+
+  /// Az elhagyott névtelen fiók (e-mail, vásárlás, fizetős csomag és extra elemzés nélkül)
+  /// ennyi használaton kívüli idő után törlődik a szerverről (adattakarékosság): ha az eszköz
+  /// mégis visszatér, új névtelen fiókot kap, a helyi adatai megmaradnak.
+  static const anonymousIdle = Duration(days: 400);
+
+  /// Az elhagyott névtelen fiókok törlése (lásd [anonymousIdle]): nincs e-mail, vásárlás,
+  /// fizetős csomag, extra elemzés és élő munkamenet, és a token régóta nem volt használva.
+  /// Egy futásban legfeljebb [limit] fiók (a karbantartás ne akassza meg a szervert).
+  int purgeAbandonedAnonymous({int limit = 500}) {
+    final cutoff = clock().toUtc().subtract(anonymousIdle).toIso8601String();
+    final ids = _db.select(
+      '''
+      SELECT u.id FROM users u
+      LEFT JOIN entitlements e ON e.user_id = u.id
+      WHERE u.email IS NULL
+        AND COALESCE(u.last_seen, u.created_at) < ?
+        AND (e.user_id IS NULL OR ((e.tier IS NULL OR e.tier = 'trial') AND e.extra = 0))
+        AND NOT EXISTS (SELECT 1 FROM purchases p WHERE p.user_id = u.id)
+        AND NOT EXISTS (SELECT 1 FROM sessions s WHERE s.user_id = u.id)
+        AND u.stripe_customer_id IS NULL
+      LIMIT ?
+      ''',
+      [cutoff, limit],
+    );
+    for (final r in ids) {
+      deleteUser(r['id'] as String, tombstone: false, erase: false);
+    }
+    if (ids.isNotEmpty) eraseJournal();
+    return ids.length;
+  }
 
   /// Egy törölt fiók tokenje-e (lásd [deletedSessionKept]).
   bool isDeletedSession(String token) =>
@@ -454,6 +496,7 @@ class Store {
     String ago(Duration d) => now.subtract(d).toIso8601String();
     _db.execute('DELETE FROM sessions WHERE COALESCE(last_used, created_at) < ?', [ago(sessionIdle)]);
     _db.execute('DELETE FROM deleted_sessions WHERE deleted_at < ?', [ago(deletedSessionKept)]);
+    purgeAbandonedAnonymous();
     _db.execute('DELETE FROM invite_usage WHERE created_at < ?', [ago(const Duration(days: 2))]);
     _db.execute('DELETE FROM usage_log WHERE created_at < ?', [ago(usageKept)]);
     // A rövid életű sorok (belépőkódok, korlát-naplók) új beszúrás nélkül is kikerülnek.
@@ -585,21 +628,24 @@ class Store {
   /// A fiók és minden hozzá tartozó adat törlése (GDPR 17. cikk). A vásárlások
   /// felhasználó nélkül maradnak meg (`deleted`), hogy ugyanaz a bolti bizonylat
   /// ne legyen újra beváltható; a számviteli bizonylat a boltnál / a Stripe-nál van.
-  void deleteUser(String userId) {
+  void deleteUser(String userId, {bool tombstone = true, bool erase = true}) {
     final email = emailOf(userId);
     _db.execute('BEGIN');
     try {
       // A fiók minden tokenjének lenyomata megmarad egy ideig: a többi eszköz így tudja,
-      // hogy törlés történt, és a fiók adatait nálunk sem tartja meg.
+      // hogy törlés történt, és a fiók adatait nálunk sem tartja meg. (Az elhagyott névtelen
+      // fiók kitakarításánál nem: ott az eszköz adatai maradjanak meg.)
       final now = clock().toUtc().toIso8601String();
-      _db.execute(
-        'INSERT OR IGNORE INTO deleted_sessions (token_hash, deleted_at) SELECT token_hash, ? FROM sessions WHERE user_id = ?',
-        [now, userId],
-      );
-      _db.execute(
-        "INSERT OR IGNORE INTO deleted_sessions (token_hash, deleted_at) SELECT token_hash, ? FROM users WHERE id = ? AND token_hash NOT LIKE 'revoked:%'",
-        [now, userId],
-      );
+      if (tombstone) {
+        _db.execute(
+          'INSERT OR IGNORE INTO deleted_sessions (token_hash, deleted_at) SELECT token_hash, ? FROM sessions WHERE user_id = ?',
+          [now, userId],
+        );
+        _db.execute(
+          "INSERT OR IGNORE INTO deleted_sessions (token_hash, deleted_at) SELECT token_hash, ? FROM users WHERE id = ? AND token_hash NOT LIKE 'revoked:%'",
+          [now, userId],
+        );
+      }
       _db.execute('DELETE FROM sessions WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM entitlements WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM usage_log WHERE user_id = ?', [userId]);
@@ -648,7 +694,7 @@ class Store {
       _db.execute('ROLLBACK');
       rethrow;
     }
-    eraseJournal();
+    if (erase) eraseJournal();
   }
 
   /// A WAL-napló kiírása és kiürítése: a törölt sorok korábbi példányai ne maradjanak a

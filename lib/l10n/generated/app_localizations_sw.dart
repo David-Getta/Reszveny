@@ -2336,6 +2336,10 @@ class AppLocalizationsSw extends AppLocalizations {
       'Manunuzi hayapatikani kwa sasa. Jaribu tena baadaye.';
 
   @override
+  String get signOutLocalOnly =>
+      'Uchambuzi uliohifadhiwa na madokezo ya AI huhifadhiwa kwenye kifaa hiki pekee, si kwenye akaunti yako, kwa hivyo hufutwa kabisa.';
+
+  @override
   String get portfolioAskTitle => 'Maswali kuhusu jalada lako la hisa';
 
   @override

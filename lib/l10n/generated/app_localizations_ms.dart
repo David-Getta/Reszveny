@@ -2339,6 +2339,10 @@ class AppLocalizationsMs extends AppLocalizations {
       'Pembelian tidak tersedia buat masa ini. Cuba lagi kemudian.';
 
   @override
+  String get signOutLocalOnly =>
+      'Analisis yang disimpan dan nota AI hanya ada pada peranti ini, bukan dalam akaun anda, jadi ia akan dipadam secara kekal.';
+
+  @override
   String get portfolioAskTitle => 'Soalan tentang portfolio anda';
 
   @override

@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Akawunti eno yasanguddwa ku kyuma ekirala oba ku mukutu, n'olwekyo ebikwata ku yo nabyo bijjiddwa ku kyuma kino.",
   "errAiUnavailable": "Mpeereza ya AI teriiwo kati. Gezaako nate oluvannyuma lw'eddakiika ntono.",
   "errMarketUnavailable": "Data y'akatale teriiwo kati. Gezaako nate oluvannyuma lw'eddakiika ntono.",
-  "purchaseUnavailable": "Okugula tekuliiwo kati. Gezaako nate oluvannyuma."
+  "purchaseUnavailable": "Okugula tekuliiwo kati. Gezaako nate oluvannyuma.",
+  "signOutLocalOnly": "Okwekenneenya okuterekeddwa n'ebiwandiiko bya AI biri ku kyuma kino kyokka, si ku akawunti yo, n'olwekyo bijja kusangulwawo ddala."
 }

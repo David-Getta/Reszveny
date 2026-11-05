@@ -2327,6 +2327,10 @@ class AppLocalizationsGu extends AppLocalizations {
       'ખરીદી અત્યારે ઉપલબ્ધ નથી. પછીથી ફરી પ્રયાસ કરો.';
 
   @override
+  String get signOutLocalOnly =>
+      'સાચવેલાં વિશ્લેષણ અને AI નોંધો ફક્ત આ ડિવાઇસ પર જ રહે છે, તમારા એકાઉન્ટમાં નહીં, તેથી તે કાયમ માટે દૂર થઈ જશે.';
+
+  @override
   String get portfolioAskTitle => 'તમારા પોર્ટફોલિયો વિશે પ્રશ્નો';
 
   @override

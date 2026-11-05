@@ -2345,6 +2345,10 @@ class AppLocalizationsRw extends AppLocalizations {
       'Kugura ntibishoboka ubu. Ongera ugerageze nyuma.';
 
   @override
+  String get signOutLocalOnly =>
+      'Amasesengura wabitse n\'inyandiko za AI biba kuri iki gikoresho gusa, si kuri konti yawe, bityo bisibwa burundu.';
+
+  @override
   String get portfolioAskTitle => 'Ibibazo ku ishoramari ryawe';
 
   @override

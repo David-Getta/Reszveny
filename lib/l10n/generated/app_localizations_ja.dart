@@ -2254,6 +2254,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get purchaseUnavailable => '現在、購入できません。しばらくしてからもう一度お試しください。';
 
   @override
+  String get signOutLocalOnly =>
+      '保存した分析と AI メモはアカウントではなくこの端末にのみ保存されているため、完全に削除されます。';
+
+  @override
   String get portfolioAskTitle => 'ポートフォリオについての質問';
 
   @override

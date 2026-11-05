@@ -2331,6 +2331,10 @@ class AppLocalizationsMr extends AppLocalizations {
       'खरेदी सध्या उपलब्ध नाही. नंतर पुन्हा प्रयत्न करा.';
 
   @override
+  String get signOutLocalOnly =>
+      'जतन केलेली विश्लेषणे आणि AI नोंदी फक्त या डिव्हाइसवर असतात, तुमच्या खात्यात नाही, त्यामुळे ती कायमची हटवली जातात.';
+
+  @override
   String get portfolioAskTitle => 'तुमच्या पोर्टफोलिओबद्दल प्रश्न';
 
   @override

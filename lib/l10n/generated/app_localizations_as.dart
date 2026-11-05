@@ -2330,6 +2330,10 @@ class AppLocalizationsAs extends AppLocalizations {
       'ক্ৰয় এই মুহূৰ্তত উপলব্ধ নহয়। পিছত পুনৰ চেষ্টা কৰক।';
 
   @override
+  String get signOutLocalOnly =>
+      'সংৰক্ষিত বিশ্লেষণ আৰু AI টোকাসমূহ কেৱল এই ডিভাইচতহে ৰখা হয়, আপোনাৰ একাউণ্টত নহয়, সেয়েহে সেইবোৰ চিৰদিনৰ বাবে আঁতৰোৱা হ\'ব।';
+
+  @override
   String get portfolioAskTitle => 'আপোনাৰ প\'ৰ্টফ\'লিঅ\' সম্পৰ্কীয় প্ৰশ্ন';
 
   @override

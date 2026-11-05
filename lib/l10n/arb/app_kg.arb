@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Bo zimbisaka compte yai na kisadilu ya nkaka to na web, yo yina ba ntalu na yo mpi me katuka na kisadilu kiaki.",
   "errAiUnavailable": "Service ya AI kele ve ntangu yai. Meka diaka na nima ya baminuti fioti.",
   "errMarketUnavailable": "Ntalu za zandu kele ve ntangu yai. Meka diaka na nima ya baminuti fioti.",
-  "purchaseUnavailable": "Kusumba kele ve ntangu yai. Meka diaka na nima."
+  "purchaseUnavailable": "Kusumba kele ve ntangu yai. Meka diaka na nima.",
+  "signOutLocalOnly": "Ba analyse zilundwa ti ba note ya AI kele kaka na kisadilu kiaki, ve na compte na nge, yo yina bo ta zimbisa yo mpaka mvula na mvula."
 }

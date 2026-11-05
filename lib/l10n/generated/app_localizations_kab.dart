@@ -2330,6 +2330,10 @@ class AppLocalizationsKab extends AppLocalizations {
       'Tiɣin ulac-itent akka tura. Ɛreḍ tikkelt nniḍen ticki.';
 
   @override
+  String get signOutLocalOnly =>
+      'Tiselḍin yettwaseklasen d tezmilin n AI llant deg yibenk-a kan, mačči deg umiḍan-ik, ihi ad ttwakksent i lebda.';
+
+  @override
   String get portfolioAskTitle => 'Isteqsiyen ɣef uqrab-ik';
 
   @override

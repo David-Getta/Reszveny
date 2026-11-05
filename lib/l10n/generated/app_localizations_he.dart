@@ -2325,6 +2325,10 @@ class AppLocalizationsHe extends AppLocalizations {
       'רכישות אינן זמינות כרגע. נסו שוב מאוחר יותר.';
 
   @override
+  String get signOutLocalOnly =>
+      'ניתוחים שמורים והערות AI נמצאים רק במכשיר הזה, לא בחשבון שלך, ולכן הם יימחקו לצמיתות.';
+
+  @override
   String get portfolioAskTitle => 'שאלות על התיק שלך';
 
   @override

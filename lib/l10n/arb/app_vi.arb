@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Tài khoản này đã bị xóa trên thiết bị khác hoặc trên web, nên dữ liệu của tài khoản cũng đã bị xóa khỏi thiết bị này.",
   "errAiUnavailable": "Dịch vụ AI hiện không khả dụng. Hãy thử lại sau vài phút.",
   "errMarketUnavailable": "Dữ liệu thị trường hiện không khả dụng. Hãy thử lại sau vài phút.",
-  "purchaseUnavailable": "Hiện không thể mua hàng. Hãy thử lại sau."
+  "purchaseUnavailable": "Hiện không thể mua hàng. Hãy thử lại sau.",
+  "signOutLocalOnly": "Phân tích đã lưu và ghi chú AI chỉ được lưu trên thiết bị này, không có trong tài khoản của bạn, nên sẽ bị xóa vĩnh viễn."
 }

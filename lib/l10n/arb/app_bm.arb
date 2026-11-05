@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Nin kɔnti in jɔsira minɛn wɛrɛ kan walima ɛntɛrinɛti kan, o de kosɔn a ka kunnafoniw bɔra nin minɛn in fana kan.",
   "errAiUnavailable": "AI sɛriwisi tɛ sɔrɔ sisan. A lajɛ tugun miniti dama kɔfɛ.",
   "errMarketUnavailable": "Sugu kunnafoniw tɛ sɔrɔ sisan. A lajɛ tugun miniti dama kɔfɛ.",
-  "purchaseUnavailable": "Sanniw tɛ se ka kɛ sisan. A lajɛ tugun kɔfɛ."
+  "purchaseUnavailable": "Sanniw tɛ se ka kɛ sisan. A lajɛ tugun kɔfɛ.",
+  "signOutLocalOnly": "Sɛgɛsɛgɛli maralenw ani AI sɛbɛnniw bɛ nin minɛn in kan dɔrɔn, u tɛ i ka kɔnti la, o de kosɔn u bɛ jɔsi fo abada."
 }

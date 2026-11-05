@@ -2263,6 +2263,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get purchaseUnavailable => '지금은 구매할 수 없습니다. 나중에 다시 시도하세요.';
 
   @override
+  String get signOutLocalOnly =>
+      '저장된 분석과 AI 메모는 계정이 아닌 이 기기에만 저장되므로 영구적으로 삭제됩니다.';
+
+  @override
   String get portfolioAskTitle => '내 포트폴리오에 대한 질문';
 
   @override

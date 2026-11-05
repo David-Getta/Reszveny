@@ -2344,6 +2344,10 @@ class AppLocalizationsOm extends AppLocalizations {
       'Bittaan amma hin argamu. Booda irra deebi\'ii yaali.';
 
   @override
+  String get signOutLocalOnly =>
+      'Xiinxalli kuufamee fi yaadannoon AI meeshaa kana qofa irratti kuufamu, herrega kee keessa miti, kanaaf bara baraan haqamu.';
+
+  @override
   String get portfolioAskTitle => 'Gaaffilee waa\'ee poortfooliyoo keessanii';
 
   @override

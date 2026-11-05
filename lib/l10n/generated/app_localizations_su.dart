@@ -2337,6 +2337,10 @@ class AppLocalizationsSu extends AppLocalizations {
       'Pameulian ayeuna teu sayaga. Cobaan deui engké.';
 
   @override
+  String get signOutLocalOnly =>
+      'Analisis nu disimpen jeung catetan AI ngan aya dina parangkat ieu, lain dina akun anjeun, ku kituna bakal dipupus salamina.';
+
+  @override
   String get portfolioAskTitle => 'Patarosan ngeunaan portofolio anjeun';
 
   @override

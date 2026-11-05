@@ -2330,6 +2330,10 @@ class AppLocalizationsBn extends AppLocalizations {
       'কেনাকাটা এই মুহূর্তে উপলব্ধ নয়। পরে আবার চেষ্টা করুন।';
 
   @override
+  String get signOutLocalOnly =>
+      'সংরক্ষিত বিশ্লেষণ ও AI নোট শুধু এই ডিভাইসেই থাকে, আপনার অ্যাকাউন্টে নয়, তাই সেগুলো চিরতরে মুছে যাবে।';
+
+  @override
   String get portfolioAskTitle => 'আপনার পোর্টফোলিও নিয়ে প্রশ্ন';
 
   @override

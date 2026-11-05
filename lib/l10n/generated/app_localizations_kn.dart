@@ -2338,6 +2338,10 @@ class AppLocalizationsKn extends AppLocalizations {
       'ಖರೀದಿಗಳು ಈಗ ಲಭ್ಯವಿಲ್ಲ. ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
 
   @override
+  String get signOutLocalOnly =>
+      'ಉಳಿಸಿದ ವಿಶ್ಲೇಷಣೆಗಳು ಮತ್ತು AI ಟಿಪ್ಪಣಿಗಳು ನಿಮ್ಮ ಖಾತೆಯಲ್ಲಿ ಅಲ್ಲ, ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಇರುತ್ತವೆ, ಆದ್ದರಿಂದ ಅವುಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ.';
+
+  @override
   String get portfolioAskTitle => 'ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಕುರಿತ ಪ್ರಶ್ನೆಗಳು';
 
   @override

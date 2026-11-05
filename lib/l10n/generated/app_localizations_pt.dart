@@ -2339,6 +2339,10 @@ class AppLocalizationsPt extends AppLocalizations {
       'As compras não estão disponíveis de momento. Tente novamente mais tarde.';
 
   @override
+  String get signOutLocalOnly =>
+      'As análises guardadas e as notas de IA ficam apenas neste dispositivo, não na sua conta, por isso são eliminadas definitivamente.';
+
+  @override
   String get portfolioAskTitle => 'Perguntas sobre sua carteira';
 
   @override

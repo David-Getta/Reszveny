@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Akhaonto ena e hlakotswe sesebedisweng se seng kapa webong, ka hona data ya yona le yona e tlositswe sesebedisweng sena.",
   "errAiUnavailable": "Tshebeletso ya AI ha e fumanehe hona jwale. Leka hape kamora metsotso e mmalwa.",
   "errMarketUnavailable": "Data ya mmaraka ha e fumanehe hona jwale. Leka hape kamora metsotso e mmalwa.",
-  "purchaseUnavailable": "Ditheko ha di fumanehe hona jwale. Leka hape hamorao."
+  "purchaseUnavailable": "Ditheko ha di fumanehe hona jwale. Leka hape hamorao.",
+  "signOutLocalOnly": "Ditlhahlobo tse bolokilweng le dintlha tsa AI di bolokwa sesebedisweng sena feela, eseng akhaontong ya hao, ka hona di hlakolwa ka ho sa feleng."
 }

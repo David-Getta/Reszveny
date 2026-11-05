@@ -2333,6 +2333,10 @@ class AppLocalizationsTr extends AppLocalizations {
       'Satın alma şu anda kullanılamıyor. Daha sonra tekrar deneyin.';
 
   @override
+  String get signOutLocalOnly =>
+      'Kaydedilen analizler ve yapay zekâ notları yalnızca bu cihazda tutulur, hesabınızda değil; bu yüzden kalıcı olarak silinir.';
+
+  @override
   String get portfolioAskTitle => 'Portföyün hakkında sorular';
 
   @override

@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Dieses Konto wurde auf einem anderen Gerät oder im Web gelöscht, daher wurden seine Daten auch von diesem Gerät entfernt.",
   "errAiUnavailable": "Der KI-Dienst ist gerade nicht verfügbar. Versuche es in ein paar Minuten erneut.",
   "errMarketUnavailable": "Marktdaten sind gerade nicht verfügbar. Versuche es in ein paar Minuten erneut.",
-  "purchaseUnavailable": "Käufe sind gerade nicht verfügbar. Versuche es später erneut."
+  "purchaseUnavailable": "Käufe sind gerade nicht verfügbar. Versuche es später erneut.",
+  "signOutLocalOnly": "Gespeicherte Analysen und KI-Notizen liegen nur auf diesem Gerät, nicht in deinem Konto, und werden daher endgültig gelöscht."
 }

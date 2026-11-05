@@ -2337,6 +2337,10 @@ class AppLocalizationsGn extends AppLocalizations {
       'Jejogua ndaipóri koʼág̃a. Eñehaʼã jey upéi.';
 
   @override
+  String get signOutLocalOnly =>
+      'Jehesaʼỹijo ñongatupyre ha AI jehaipyre oĩ ko mbaʼeʼokápe añoite, ndahaʼéi nde mbaʼetépe, upévare oñembogue opa árape g̃uarã.';
+
+  @override
   String get portfolioAskTitle => 'Porandu nde cartera rehegua';
 
   @override

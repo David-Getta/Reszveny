@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Ev hesab li ser amûreke din an li ser webê hate jêbirin, ji ber vê yekê daneyên wê ji vê amûrê jî hatin rakirin.",
   "errAiUnavailable": "Xizmeta AI niha ne berdest e. Piştî çend deqeyan dîsa biceribîne.",
   "errMarketUnavailable": "Daneyên bazarê niha ne berdest in. Piştî çend deqeyan dîsa biceribîne.",
-  "purchaseUnavailable": "Kirîn niha ne berdest e. Paşê dîsa biceribîne."
+  "purchaseUnavailable": "Kirîn niha ne berdest e. Paşê dîsa biceribîne.",
+  "signOutLocalOnly": "Analîzên tomarkirî û notên AI tenê li ser vê amûrê ne, ne di hesabê te de, ji ber vê yekê ew bi yekcarî têne jêbirin."
 }

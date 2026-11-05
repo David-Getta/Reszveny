@@ -46,6 +46,14 @@ class WatchNewsService extends ChangeNotifier {
 
   /// A listában (megjelenítésre) ugyanaz a hír csak egyszer, az első részvénynél.
   List<WatchedNews> get news => _news;
+
+  /// A személyes adatok törlésekor: az előző portfólió és kedvencek hírei se maradjanak.
+  void forget() {
+    _cache.clear();
+    _news = const [];
+    notifyListeners();
+  }
+
   bool get loading => _running != null;
 
   /// Egy részvény friss hírei, a többi részvénnyel közös hírekkel együtt (az

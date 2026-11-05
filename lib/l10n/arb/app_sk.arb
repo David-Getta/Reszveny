@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Tento účet bol odstránený v inom zariadení alebo na webe, preto sa jeho údaje odstránili aj z tohto zariadenia.",
   "errAiUnavailable": "Služba AI momentálne nie je dostupná. Skúste to znova o niekoľko minút.",
   "errMarketUnavailable": "Trhové údaje momentálne nie sú dostupné. Skúste to znova o niekoľko minút.",
-  "purchaseUnavailable": "Nákupy momentálne nie sú dostupné. Skúste to znova neskôr."
+  "purchaseUnavailable": "Nákupy momentálne nie sú dostupné. Skúste to znova neskôr.",
+  "signOutLocalOnly": "Uložené analýzy a AI poznámky sú len v tomto zariadení, nie vo vašom účte, preto sa natrvalo odstránia."
 }

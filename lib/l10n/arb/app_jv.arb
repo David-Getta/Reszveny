@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Akun iki wis dibusak ing piranti liya utawa ing web, mula datane uga dibusak saka piranti iki.",
   "errAiUnavailable": "Layanan AI saiki ora kasedhiya. Coba maneh sawetara menit engkas.",
   "errMarketUnavailable": "Data pasar saiki ora kasedhiya. Coba maneh sawetara menit engkas.",
-  "purchaseUnavailable": "Tukon saiki ora kasedhiya. Coba maneh mengko."
+  "purchaseUnavailable": "Tukon saiki ora kasedhiya. Coba maneh mengko.",
+  "signOutLocalOnly": "Analisis sing disimpen lan cathetan AI mung ana ing piranti iki, ora ing akun sampeyan, mula bakal dibusak kanthi permanen."
 }

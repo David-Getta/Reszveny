@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Aquest compte s’ha eliminat en un altre dispositiu o al web, de manera que les seves dades també s’han esborrat d’aquest dispositiu.",
   "errAiUnavailable": "El servei d’IA no està disponible ara mateix. Torna-ho a provar d’aquí a uns minuts.",
   "errMarketUnavailable": "Les dades de mercat no estan disponibles ara mateix. Torna-ho a provar d’aquí a uns minuts.",
-  "purchaseUnavailable": "Les compres no estan disponibles ara mateix. Torna-ho a provar més tard."
+  "purchaseUnavailable": "Les compres no estan disponibles ara mateix. Torna-ho a provar més tard.",
+  "signOutLocalOnly": "Les anàlisis desades i les notes d'IA només es guarden en aquest dispositiu, no al teu compte, així que s'eliminen definitivament."
 }

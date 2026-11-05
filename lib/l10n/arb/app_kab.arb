@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Amiḍan-a yettwakkes deg yibenk nniḍen neɣ deg web, ihi isefka-ines ttwakksen ula seg yibenk-a.",
   "errAiUnavailable": "Ameẓlu n AI ulac-it akka tura. Ɛreḍ tikkelt nniḍen deg kra n tesdidin.",
   "errMarketUnavailable": "Isefka n usuq ulac-iten akka tura. Ɛreḍ tikkelt nniḍen deg kra n tesdidin.",
-  "purchaseUnavailable": "Tiɣin ulac-itent akka tura. Ɛreḍ tikkelt nniḍen ticki."
+  "purchaseUnavailable": "Tiɣin ulac-itent akka tura. Ɛreḍ tikkelt nniḍen ticki.",
+  "signOutLocalOnly": "Tiselḍin yettwaseklasen d tezmilin n AI llant deg yibenk-a kan, mačči deg umiḍan-ik, ihi ad ttwakksent i lebda."
 }

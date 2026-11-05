@@ -2387,6 +2387,10 @@ class AppLocalizationsLt extends AppLocalizations {
       'Pirkiniai šiuo metu negalimi. Bandykite dar kartą vėliau.';
 
   @override
+  String get signOutLocalOnly =>
+      'Išsaugotos analizės ir DI užrašai laikomi tik šiame įrenginyje, o ne jūsų paskyroje, todėl jie ištrinami visam laikui.';
+
+  @override
   String get portfolioAskTitle => 'Klausimai apie jūsų portfelį';
 
   @override

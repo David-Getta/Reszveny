@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Ta račun je bil izbrisan v drugi napravi ali na spletu, zato so bili njegovi podatki odstranjeni tudi iz te naprave.",
   "errAiUnavailable": "Storitev AI trenutno ni na voljo. Poskusite znova čez nekaj minut.",
   "errMarketUnavailable": "Tržni podatki trenutno niso na voljo. Poskusite znova čez nekaj minut.",
-  "purchaseUnavailable": "Nakupi trenutno niso na voljo. Poskusite znova pozneje."
+  "purchaseUnavailable": "Nakupi trenutno niso na voljo. Poskusite znova pozneje.",
+  "signOutLocalOnly": "Shranjene analize in zapiski AI so samo v tej napravi, ne v vašem računu, zato bodo trajno izbrisani."
 }

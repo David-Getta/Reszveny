@@ -2386,6 +2386,10 @@ class AppLocalizationsSk extends AppLocalizations {
       'Nákupy momentálne nie sú dostupné. Skúste to znova neskôr.';
 
   @override
+  String get signOutLocalOnly =>
+      'Uložené analýzy a AI poznámky sú len v tomto zariadení, nie vo vašom účte, preto sa natrvalo odstránia.';
+
+  @override
   String get portfolioAskTitle => 'Otázky k vášmu portfóliu';
 
   @override

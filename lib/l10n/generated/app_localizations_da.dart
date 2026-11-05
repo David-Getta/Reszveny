@@ -2333,6 +2333,10 @@ class AppLocalizationsDa extends AppLocalizations {
       'Køb er ikke tilgængelige lige nu. Prøv igen senere.';
 
   @override
+  String get signOutLocalOnly =>
+      'Gemte analyser og AI-noter ligger kun på denne enhed, ikke på din konto, så de slettes permanent.';
+
+  @override
   String get portfolioAskTitle => 'Spørgsmål om din portefølje';
 
   @override

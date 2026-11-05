@@ -2335,6 +2335,10 @@ class AppLocalizationsUg extends AppLocalizations {
       'ھازىر سېتىۋالغىلى بولمايدۇ. كېيىن قايتا سىناپ بېقىڭ.';
 
   @override
+  String get signOutLocalOnly =>
+      'ساقلانغان تەھلىللەر ۋە AI خاتىرىلىرى ھېساباتىڭىزدا ئەمەس، پەقەت بۇ ئۈسكۈنىدىلا ساقلىنىدۇ، شۇڭا ئۇلار مەڭگۈلۈك ئۆچۈرۈلىدۇ.';
+
+  @override
   String get portfolioAskTitle => 'مەبلەغ بىرىكمىڭىز ھەققىدىكى سوئاللار';
 
   @override

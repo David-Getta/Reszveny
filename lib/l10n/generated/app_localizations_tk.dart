@@ -2334,6 +2334,10 @@ class AppLocalizationsTk extends AppLocalizations {
       'Satyn alyşlar häzir elýeterli däl. Soňrak gaýtadan synanyşyň.';
 
   @override
+  String get signOutLocalOnly =>
+      'Ýatda saklanan seljermeler we AI bellikleri diňe şu enjamda saklanýar, hasabyňyzda däl, şonuň üçin olar hemişelik pozulýar.';
+
+  @override
   String get portfolioAskTitle => 'Portfeliňiz barada soraglar';
 
   @override

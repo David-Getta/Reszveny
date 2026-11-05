@@ -2323,6 +2323,10 @@ class AppLocalizationsSd extends AppLocalizations {
       'خريداري هن وقت موجود ناهي. بعد ۾ ٻيهر ڪوشش ڪريو.';
 
   @override
+  String get signOutLocalOnly =>
+      'محفوظ ڪيل تجزيا ۽ AI نوٽس صرف هن ڊوائيس تي رهن ٿا، توهان جي اڪائونٽ ۾ نه، تنهنڪري اهي هميشه لاءِ ميٽيا وڃن ٿا.';
+
+  @override
   String get portfolioAskTitle => 'توهان جي پورٽ فوليو بابت سوال';
 
   @override

@@ -2339,6 +2339,10 @@ class AppLocalizationsSn extends AppLocalizations {
       'Kutenga hakuwanikwe parizvino. Edza zvakare gare gare.';
 
   @override
+  String get signOutLocalOnly =>
+      'Ongororo dzakachengetwa nezvinyorwa zveAI zvinochengetwa pamudziyo uyu chete, kwete muakaundi yako, saka zvinodzimwa zvachose.';
+
+  @override
   String get portfolioAskTitle => 'Mibvunzo nezvepotiforiyo yako';
 
   @override

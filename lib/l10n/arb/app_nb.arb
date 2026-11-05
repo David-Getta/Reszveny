@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Denne kontoen ble slettet på en annen enhet eller på nettet, så dataene ble også fjernet fra denne enheten.",
   "errAiUnavailable": "AI-tjenesten er ikke tilgjengelig akkurat nå. Prøv igjen om noen minutter.",
   "errMarketUnavailable": "Markedsdata er ikke tilgjengelig akkurat nå. Prøv igjen om noen minutter.",
-  "purchaseUnavailable": "Kjøp er ikke tilgjengelig akkurat nå. Prøv igjen senere."
+  "purchaseUnavailable": "Kjøp er ikke tilgjengelig akkurat nå. Prøv igjen senere.",
+  "signOutLocalOnly": "Lagrede analyser og AI-notater finnes bare på denne enheten, ikke i kontoen din, så de slettes for godt."
 }

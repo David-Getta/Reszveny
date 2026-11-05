@@ -2332,6 +2332,10 @@ class AppLocalizationsHi extends AppLocalizations {
       'खरीदारी अभी उपलब्ध नहीं है। बाद में फिर से कोशिश करें।';
 
   @override
+  String get signOutLocalOnly =>
+      'सहेजे गए विश्लेषण और AI नोट्स सिर्फ़ इसी डिवाइस पर रहते हैं, आपके खाते में नहीं, इसलिए ये हमेशा के लिए हटा दिए जाएँगे।';
+
+  @override
   String get portfolioAskTitle => 'आपके पोर्टफ़ोलियो के बारे में सवाल';
 
   @override

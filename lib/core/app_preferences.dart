@@ -1130,6 +1130,11 @@ class AppPreferences extends ChangeNotifier {
     _resolved.clear();
     portfolioMoveNotified = null;
     portfolioGoalNotified = null;
+    // A fiók e-mailes kapcsolói (riasztás e-mailben, heti összefoglaló) a fiókéi: a következő
+    // belépő fiókot nem írhatja felül az előző döntése (az időbélyeggel nyerne).
+    emailAlerts = true;
+    weeklyDigest = false;
+    _switchesAt.clear();
     notifyListeners();
     await _save((p) async {
       for (final k in [
@@ -1150,6 +1155,9 @@ class AppPreferences extends ChangeNotifier {
         _goalKey,
         _dividendGoalKey,
         _goalsAtKey,
+        _emailAlertsKey,
+        _weeklyDigestKey,
+        _switchesAtKey,
       ]) {
         await p.remove(k);
       }

@@ -2327,6 +2327,10 @@ class AppLocalizationsWo extends AppLocalizations {
       'Jënd mënul a am leegi. Jéemaatal ci kanam.';
 
   @override
+  String get signOutLocalOnly =>
+      'Saytu yu ñu denc ak notu AI yi ci masin bii rekk lañu nekk, du ci sa kont, moo tax dinañu leen far ba fàww.';
+
+  @override
   String get portfolioAskTitle => 'Laaj yi ci sa aksiyoŋ yi';
 
   @override

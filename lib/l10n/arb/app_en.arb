@@ -1834,6 +1834,10 @@
   },
   "errMarketUnavailable": "Market data is not available right now. Try again in a few minutes.",
   "purchaseUnavailable": "Purchases are not available right now. Try again later.",
+  "signOutLocalOnly": "Saved analyses and AI notes are kept only on this device, not in your account, so they are removed for good.",
+  "@signOutLocalOnly": {
+    "description": "Second paragraph of the sign-out confirmation: AI analyses and AI notes are not synced, so signing out deletes them permanently (privacy: the next person on the device must not see them)."
+  },
   "@purchaseUnavailable": {
     "description": "Paywall message when the server has no payment provider configured or it is temporarily unavailable (HTTP 503 billing_unavailable). Nothing was charged."
   },

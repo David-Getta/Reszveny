@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Yo efase kont sa a sou yon lòt aparèy oswa sou entènèt, kidonk done li yo retire sou aparèy sa a tou.",
   "errAiUnavailable": "Sèvis AI a pa disponib kounye a. Eseye ankò nan kèk minit.",
   "errMarketUnavailable": "Done mache yo pa disponib kounye a. Eseye ankò nan kèk minit.",
-  "purchaseUnavailable": "Acha pa disponib kounye a. Eseye ankò pita."
+  "purchaseUnavailable": "Acha pa disponib kounye a. Eseye ankò pita.",
+  "signOutLocalOnly": "Analiz anrejistre yo ak nòt AI yo rete sèlman sou aparèy sa a, pa nan kont ou, kidonk y ap efase yo nèt."
 }

@@ -2336,6 +2336,10 @@ class AppLocalizationsTg extends AppLocalizations {
       'Харидҳо ҳоло дастрас нестанд. Баъдтар бори дигар кӯшиш кунед.';
 
   @override
+  String get signOutLocalOnly =>
+      'Таҳлилҳои захирашуда ва қайдҳои AI танҳо дар ин дастгоҳ нигоҳ дошта мешаванд, на дар ҳисоби шумо, бинобар ин онҳо барои ҳамеша нест карда мешаванд.';
+
+  @override
   String get portfolioAskTitle => 'Саволҳо дар бораи портфели шумо';
 
   @override

@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Nabura ang account na ito sa ibang device o sa web, kaya inalis din ang data nito sa device na ito.",
   "errAiUnavailable": "Hindi available ang serbisyo ng AI sa ngayon. Subukang muli pagkalipas ng ilang minuto.",
   "errMarketUnavailable": "Hindi available ang market data sa ngayon. Subukang muli pagkalipas ng ilang minuto.",
-  "purchaseUnavailable": "Hindi available ang pagbili sa ngayon. Subukang muli mamaya."
+  "purchaseUnavailable": "Hindi available ang pagbili sa ngayon. Subukang muli mamaya.",
+  "signOutLocalOnly": "Ang mga naka-save na pagsusuri at mga tala ng AI ay nasa device na ito lang, wala sa iyong account, kaya permanenteng mabubura ang mga ito."
 }

@@ -2336,6 +2336,10 @@ class AppLocalizationsFi extends AppLocalizations {
       'Ostokset eivät ole juuri nyt käytettävissä. Yritä myöhemmin uudelleen.';
 
   @override
+  String get signOutLocalOnly =>
+      'Tallennetut analyysit ja tekoälymuistiinpanot ovat vain tällä laitteella, eivät tililläsi, joten ne poistetaan pysyvästi.';
+
+  @override
   String get portfolioAskTitle => 'Kysymyksiä salkustasi';
 
   @override

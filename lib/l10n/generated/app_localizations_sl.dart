@@ -2389,6 +2389,10 @@ class AppLocalizationsSl extends AppLocalizations {
       'Nakupi trenutno niso na voljo. Poskusite znova pozneje.';
 
   @override
+  String get signOutLocalOnly =>
+      'Shranjene analize in zapiski AI so samo v tej napravi, ne v vašem računu, zato bodo trajno izbrisani.';
+
+  @override
   String get portfolioAskTitle => 'Vprašanja o vašem portfelju';
 
   @override

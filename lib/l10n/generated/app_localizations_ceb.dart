@@ -2344,6 +2344,10 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Dili magamit ang pagpalit karon. Sulayi pag-usab unya.';
 
   @override
+  String get signOutLocalOnly =>
+      'Ang natipig nga mga pagtuki ug mga nota sa AI anaa lamang niini nga device, dili sa imong account, mao nga mapapas kini sa hingpit.';
+
+  @override
   String get portfolioAskTitle => 'Mga pangutana bahin sa imong portfolio';
 
   @override

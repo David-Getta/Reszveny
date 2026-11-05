@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Le akhawunti isusiwe kwenye idivayisi noma kuwebhu, ngakho idatha yayo nayo isusiwe kule divayisi.",
   "errAiUnavailable": "Isevisi ye-AI ayitholakali okwamanje. Zama futhi emizuzwini embalwa.",
   "errMarketUnavailable": "Idatha yemakethe ayitholakali okwamanje. Zama futhi emizuzwini embalwa.",
-  "purchaseUnavailable": "Ukuthenga akutholakali okwamanje. Zama futhi kamuva."
+  "purchaseUnavailable": "Ukuthenga akutholakali okwamanje. Zama futhi kamuva.",
+  "signOutLocalOnly": "Izinhlaziyo ezigciniwe namanothi e-AI kugcinwa kule divayisi kuphela, hhayi ku-akhawunti yakho, ngakho kususwa unomphela."
 }

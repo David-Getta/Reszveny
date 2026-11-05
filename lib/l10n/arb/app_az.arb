@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Bu hesab başqa cihazda və ya vebdə silinib, buna görə onun məlumatları bu cihazdan da silindi.",
   "errAiUnavailable": "AI xidməti hazırda mövcud deyil. Bir neçə dəqiqədən sonra yenidən cəhd edin.",
   "errMarketUnavailable": "Bazar məlumatları hazırda mövcud deyil. Bir neçə dəqiqədən sonra yenidən cəhd edin.",
-  "purchaseUnavailable": "Alışlar hazırda mövcud deyil. Daha sonra yenidən cəhd edin."
+  "purchaseUnavailable": "Alışlar hazırda mövcud deyil. Daha sonra yenidən cəhd edin.",
+  "signOutLocalOnly": "Saxlanılan təhlillər və AI qeydləri hesabınızda deyil, yalnız bu cihazda qalır, buna görə də həmişəlik silinir."
 }

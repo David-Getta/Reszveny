@@ -2340,6 +2340,10 @@ class AppLocalizationsSo extends AppLocalizations {
       'Iibsashadu hadda lama heli karo. Isku day mar kale goor dambe.';
 
   @override
+  String get signOutLocalOnly =>
+      'Falanqaynta la kaydiyay iyo qoraallada AI waxay ku jiraan qalabkan oo keliya, kuma jiraan akoonkaaga, sidaa darteed si joogto ah ayaa loo tirtirayaa.';
+
+  @override
   String get portfolioAskTitle => 'Su\'aalo ku saabsan portfoliyadaada';
 
   @override

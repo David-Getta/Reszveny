@@ -2340,6 +2340,10 @@ class AppLocalizationsTe extends AppLocalizations {
       'కొనుగోళ్లు ప్రస్తుతం అందుబాటులో లేవు. తర్వాత మళ్లీ ప్రయత్నించండి.';
 
   @override
+  String get signOutLocalOnly =>
+      'సేవ్ చేసిన విశ్లేషణలు, AI గమనికలు మీ ఖాతాలో కాకుండా ఈ పరికరంలో మాత్రమే ఉంటాయి, కాబట్టి అవి శాశ్వతంగా తొలగించబడతాయి.';
+
+  @override
   String get portfolioAskTitle => 'మీ పోర్ట్‌ఫోలియో గురించి ప్రశ్నలు';
 
   @override

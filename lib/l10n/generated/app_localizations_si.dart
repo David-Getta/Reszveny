@@ -2329,6 +2329,10 @@ class AppLocalizationsSi extends AppLocalizations {
       'මිලදී ගැනීම් මේ මොහොතේ ලබා ගත නොහැක. පසුව නැවත උත්සාහ කරන්න.';
 
   @override
+  String get signOutLocalOnly =>
+      'සුරැකි විශ්ලේෂණ සහ AI සටහන් ඔබේ ගිණුමේ නොව මෙම උපාංගයේ පමණක් තබා ඇති බැවින්, ඒවා ස්ථිරවම ඉවත් කෙරේ.';
+
+  @override
   String get portfolioAskTitle => 'ඔබේ කළඹ ගැන ප්‍රශ්න';
 
   @override

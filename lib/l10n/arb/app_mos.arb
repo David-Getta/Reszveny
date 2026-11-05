@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "B yẽesa kõnt kãngã aparɛy a to zugu bɩ wɛbẽ wã zugu, rẽ n so tɩ b yiis a bãngr aparɛy kãngã zugu me.",
   "errAiUnavailable": "AI tʋʋmdã ka be masã ye. Gũ minit bilf la f le mak.",
   "errMarketUnavailable": "Raaga bãngr ka be masã ye. Gũ minit bilf la f le mak.",
-  "purchaseUnavailable": "Raab ka be masã ye. Le mak poore."
+  "purchaseUnavailable": "Raab ka be masã ye. Le mak poore.",
+  "signOutLocalOnly": "Vɛɛse nins f sẽn tall la AI gʋlsgo bee aparɛy kãngã zug bala, pa fo kõntã pʋgẽ ye, rẽ n so tɩ b na n yẽes-b tɩ b pa le lebg ye."
 }

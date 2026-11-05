@@ -2345,6 +2345,10 @@ class AppLocalizationsTa extends AppLocalizations {
       'கொள்முதல் இப்போது கிடைக்கவில்லை. பின்னர் மீண்டும் முயற்சிக்கவும்.';
 
   @override
+  String get signOutLocalOnly =>
+      'சேமித்த பகுப்பாய்வுகளும் AI குறிப்புகளும் உங்கள் கணக்கில் அல்ல, இந்தச் சாதனத்தில் மட்டுமே வைக்கப்படுகின்றன, எனவே அவை நிரந்தரமாக நீக்கப்படும்.';
+
+  @override
   String get portfolioAskTitle => 'உங்கள் போர்ட்ஃபோலியோ பற்றிய கேள்விகள்';
 
   @override

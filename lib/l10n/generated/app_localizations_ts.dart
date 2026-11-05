@@ -2351,6 +2351,10 @@ class AppLocalizationsTs extends AppLocalizations {
       'Ku xava a ku kumeki sweswi. Ringeta nakambe endzhakunyana.';
 
   @override
+  String get signOutLocalOnly =>
+      'Minxopaxopo leyi hlayisiweke na tinotsi ta AI swi hlayisiwa eka xitirhisiwa lexi ntsena, ku nga ri eka akhawunti ya wena, hikwalaho swi suriwa hi ku helela.';
+
+  @override
   String get portfolioAskTitle => 'Swivutiso hi phothifoliyo ya wena';
 
   @override

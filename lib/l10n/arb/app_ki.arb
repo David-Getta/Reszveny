@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Akaunti ĩno nĩyeheririo kĩndũ-inĩ kĩngĩ kana web-inĩ, nĩ ũndũ ũcio ũhoro wayo nĩweherio kĩndũ-inĩ gĩkĩ o naguo.",
   "errAiUnavailable": "Service ya AI ndĩrĩ ho rĩu. Geria rĩngĩ thuutha wa ndagĩka nini.",
   "errMarketUnavailable": "Ũhoro wa thoko ndũrĩ ho rĩu. Geria rĩngĩ thuutha wa ndagĩka nini.",
-  "purchaseUnavailable": "Ũgũri ndũrĩ ho rĩu. Geria rĩngĩ thuutha."
+  "purchaseUnavailable": "Ũgũri ndũrĩ ho rĩu. Geria rĩngĩ thuutha.",
+  "signOutLocalOnly": "Mathuthuria maigĩtwo na maandĩko ma AI maigagwo kĩndũ-inĩ gĩkĩ tu, ti akaunti-inĩ yaku, nĩ ũndũ ũcio nĩ makũeherio nginya tene."
 }

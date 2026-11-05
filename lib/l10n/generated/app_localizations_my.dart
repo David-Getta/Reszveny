@@ -2325,6 +2325,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get purchaseUnavailable => 'ယခု ဝယ်ယူ၍ မရပါ။ နောက်မှ ထပ်စမ်းကြည့်ပါ။';
 
   @override
+  String get signOutLocalOnly =>
+      'သိမ်းထားသော သုံးသပ်ချက်များနှင့် AI မှတ်စုများကို သင့်အကောင့်တွင် မဟုတ်ဘဲ ဤစက်တွင်သာ သိမ်းထားသဖြင့် ၎င်းတို့ကို အပြီးတိုင် ဖျက်ပစ်ပါမည်။';
+
+  @override
   String get portfolioAskTitle => 'သင့် ပေါ့ဖိုလီယို အကြောင်း မေးခွန်းများ';
 
   @override

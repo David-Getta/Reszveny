@@ -2333,6 +2333,10 @@ class AppLocalizationsMn extends AppLocalizations {
       'Худалдан авалт одоогоор боломжгүй байна. Дараа дахин оролдоно уу.';
 
   @override
+  String get signOutLocalOnly =>
+      'Хадгалсан шинжилгээ болон AI тэмдэглэл таны бүртгэлд биш, зөвхөн энэ төхөөрөмжид хадгалагддаг тул бүрмөсөн устгагдана.';
+
+  @override
   String get portfolioAskTitle => 'Таны портфолиогийн талаарх асуултууд';
 
   @override

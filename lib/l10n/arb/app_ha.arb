@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "An share wannan asusun a wata na'ura ko a yanar gizo, don haka an cire bayanansa daga wannan na'urar ma.",
   "errAiUnavailable": "Sabis na AI ba ya samuwa a yanzu. Sake gwadawa bayan 'yan mintuna.",
   "errMarketUnavailable": "Bayanan kasuwa ba sa samuwa a yanzu. Sake gwadawa bayan 'yan mintuna.",
-  "purchaseUnavailable": "Sayayya ba ta samuwa a yanzu. Sake gwadawa daga baya."
+  "purchaseUnavailable": "Sayayya ba ta samuwa a yanzu. Sake gwadawa daga baya.",
+  "signOutLocalOnly": "Nazarin da aka adana da bayanan AI suna kan wannan na'ura kaɗai, ba a asusunka ba, don haka za a share su har abada."
 }

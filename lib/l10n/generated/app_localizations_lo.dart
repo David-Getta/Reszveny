@@ -2306,6 +2306,10 @@ class AppLocalizationsLo extends AppLocalizations {
       'ການຊື້ບໍ່ພ້ອມໃຊ້ງານໃນຕອນນີ້ ກະລຸນາລອງໃໝ່ພາຍຫຼັງ';
 
   @override
+  String get signOutLocalOnly =>
+      'ບົດວິເຄາະທີ່ບັນທຶກໄວ້ ແລະ ບັນທຶກ AI ຖືກເກັບໄວ້ໃນອຸປະກອນນີ້ເທົ່ານັ້ນ ບໍ່ແມ່ນໃນບັນຊີຂອງທ່ານ ສະນັ້ນພວກມັນຈະຖືກລຶບອອກຖາວອນ.';
+
+  @override
   String get portfolioAskTitle => 'ຄຳຖາມກ່ຽວກັບພອດໂຟລິໂອຂອງທ່ານ';
 
   @override

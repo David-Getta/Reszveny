@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Akhaonto ye e phumotšwe sedirišweng se sengwe goba wepeng, ka fao data ya yona le yona e tlošitšwe sedirišweng se.",
   "errAiUnavailable": "Tirelo ya AI ga e hwetšagale gona bjale. Leka gape ka morago ga metsotso e se mekae.",
   "errMarketUnavailable": "Data ya mmaraka ga e hwetšagale gona bjale. Leka gape ka morago ga metsotso e se mekae.",
-  "purchaseUnavailable": "Go reka ga go hwetšagale gona bjale. Leka gape ka morago."
+  "purchaseUnavailable": "Go reka ga go hwetšagale gona bjale. Leka gape ka morago.",
+  "signOutLocalOnly": "Ditshekatsheko tše di bolokilwego le dintlha tša AI di bolokwa fela sedirišweng se, e sego akhaontong ya gago, ka fao di phumolwa go ya go ile."
 }

@@ -900,5 +900,6 @@
   "accountDeletedElsewhere": "Akaunti hii ilifutwa kwenye kifaa kingine au kwenye wavuti, kwa hivyo data yake imeondolewa pia kwenye kifaa hiki.",
   "errAiUnavailable": "Huduma ya AI haipatikani kwa sasa. Jaribu tena baada ya dakika chache.",
   "errMarketUnavailable": "Data ya soko haipatikani kwa sasa. Jaribu tena baada ya dakika chache.",
-  "purchaseUnavailable": "Manunuzi hayapatikani kwa sasa. Jaribu tena baadaye."
+  "purchaseUnavailable": "Manunuzi hayapatikani kwa sasa. Jaribu tena baadaye.",
+  "signOutLocalOnly": "Uchambuzi uliohifadhiwa na madokezo ya AI huhifadhiwa kwenye kifaa hiki pekee, si kwenye akaunti yako, kwa hivyo hufutwa kabisa."
 }

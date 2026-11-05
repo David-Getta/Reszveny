@@ -2326,6 +2326,10 @@ class AppLocalizationsFf extends AppLocalizations {
   String get purchaseUnavailable => 'Soodgol alaa jooni. Fuɗɗito ɓaawo ɗuum.';
 
   @override
+  String get signOutLocalOnly =>
+      'Ƴeewndooji danndaaɗi e binndi AI ina woni e ngol kaɓirgol tan, wonaa e konte maa, ɗum noon ɗi momtete haa abada.';
+
+  @override
   String get portfolioAskTitle => 'Naamne dow aksiyoŋ maa';
 
   @override

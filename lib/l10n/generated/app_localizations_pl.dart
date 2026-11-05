@@ -2388,6 +2388,10 @@ class AppLocalizationsPl extends AppLocalizations {
       'Zakupy są teraz niedostępne. Spróbuj ponownie później.';
 
   @override
+  String get signOutLocalOnly =>
+      'Zapisane analizy i notatki AI są przechowywane tylko na tym urządzeniu, a nie na Twoim koncie, więc zostaną trwale usunięte.';
+
+  @override
   String get portfolioAskTitle => 'Pytania o Twój portfel';
 
   @override
