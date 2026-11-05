@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Liloba moko te ekokani na oyo ozali koluka.",
   "cashInvalidAmount": "Kotisa motuya ya 0 to koleka.",
   "portfolioImportNothing": "Tokokaki kotánga bosombi to boteki ata moko na makomi oyo te. Tala soki molɔngɔ mokomoko ezali lokola ndakisa.",
-  "lotPriceFarFromQuote": "Yango ezali mosika mingi na ntalo ya lelo ({price}). Talá yango, to bomba lisusu soki ezali sembo."
+  "lotPriceFarFromQuote": "Yango ezali mosika mingi na ntalo ya lelo ({price}). Talá yango, to bomba lisusu soki ezali sembo.",
+  "accountDeletedElsewhere": "Compte oyo elimwisamaki na esaleli mosusu to na web, yango wana ba-donnée na yango elongolami mpe na esaleli oyo.",
+  "errAiUnavailable": "Service ya AI ezali te sikoyo. Meka lisusu nsima ya ba-miniti moke.",
+  "errMarketUnavailable": "Ba-donnée ya zando ezali te sikoyo. Meka lisusu nsima ya ba-miniti moke.",
+  "purchaseUnavailable": "Bosombi ezali te sikoyo. Meka lisusu na nsima."
 }

@@ -48,6 +48,17 @@ class _Server {
   int puts = 0;
   bool failPut = false;
 
+  /// A törölt fiókok tokenjei: ezekre `account_deleted` a válasz (mint az éles szervernél).
+  final deleted = <String>{};
+
+  void deleteAccount(String email) {
+    tokens.removeWhere((t, uid) {
+      if (uid == email) deleted.add(t);
+      return uid == email;
+    });
+    users.remove(email);
+  }
+
   void account(String email, {Map<String, dynamic>? data}) {
     users[email] = (email: email, data: data, at: data == null ? null : DateTime.utc(2026, 10, 1));
     tokens['tok-$email'] = email;
@@ -73,7 +84,7 @@ class _Server {
         tokens.remove(token);
         return _json({'ok': true});
     }
-    if (uid == null) return _json({'error': 'unauthorized'}, 401);
+    if (uid == null) return _json({'error': deleted.contains(token) ? 'account_deleted' : 'unauthorized'}, 401);
     final u = users[uid]!;
     switch ((req.method, req.url.path)) {
       case ('GET', '/v1/me'):
@@ -367,5 +378,41 @@ void main() {
       expect((later['notes'] as Map)['AAPL']['text'], 'Bought for the services growth');
       expect(later['cash'], {'USD': 1000.0});
     });
+  });
+
+  test("an account deleted on another device takes its data off this device too, and says so", () async {
+    final server = _Server()..account('a@x.hu');
+    final s = _services(server, email: 'a@x.hu');
+    await s.sync!.start();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD');
+    await s.sync!.flush();
+    var told = 0;
+    s.accountDeletedElsewhere.addListener(() => told++);
+    server.deleteAccount('a@x.hu');
+    await s.sync!.syncNow();
+    await pumpEventQueue();
+    expect(s.account!.isSignedIn, isFalse);
+    expect(s.portfolio.lots, isEmpty, reason: 'a törölt fiók adatai nem maradnak a készüléken');
+    expect(told, 1);
+    // Egy újabb belépés (akár ugyanazzal a címmel) nem kapja meg a régi adatokat.
+    await s.account!.verify('a@x.hu', '123456');
+    await s.sync!.flush();
+    expect(_symbols(server.dataOf('a@x.hu')), isEmpty);
+  });
+
+  test('an expired session (account still there) signs out but keeps the data for the next sign-in', () async {
+    final server = _Server()..account('a@x.hu');
+    final s = _services(server, email: 'a@x.hu');
+    await s.sync!.start();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD');
+    await s.sync!.flush();
+    var told = 0;
+    s.accountDeletedElsewhere.addListener(() => told++);
+    server.tokens.remove('tok-a@x.hu');
+    await s.sync!.syncNow();
+    await pumpEventQueue();
+    expect(s.account!.isSignedIn, isFalse);
+    expect(s.portfolio.lots, isNotEmpty);
+    expect(told, 0);
   });
 }

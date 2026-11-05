@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Ga go na lereo le le tsamaelanang le se o se batlileng.",
   "cashInvalidAmount": "Tsenya palo ya 0 kgotsa go feta.",
   "portfolioImportNothing": "Ga go na theko kgotsa thekiso e e kgonneng go balwa mo mokwalong o. Tlhola gore mola mongwe le mongwe o lebega jaaka sekao.",
-  "lotPriceFarFromQuote": "Tlhwatlhwa e e kgakala thata le tlhwatlhwa ya gompieno ({price}). E tlhole, kgotsa o e boloke gape fa e nepagetse."
+  "lotPriceFarFromQuote": "Tlhwatlhwa e e kgakala thata le tlhwatlhwa ya gompieno ({price}). E tlhole, kgotsa o e boloke gape fa e nepagetse.",
+  "accountDeletedElsewhere": "Akhaonto eno e phimotswe mo sedirisiweng se sengwe kgotsa mo webeng, ka jalo data ya yone le yone e tlositswe mo sedirisiweng se.",
+  "errAiUnavailable": "Tirelo ya AI ga e yo ka nako eno. Leka gape morago ga metsotso e le mmalwa.",
+  "errMarketUnavailable": "Data ya mmaraka ga e yo ka nako eno. Leka gape morago ga metsotso e le mmalwa.",
+  "purchaseUnavailable": "Ditheko ga di yo ka nako eno. Leka gape moragonyana."
 }

@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Ndaipóri ñeʼẽ ojojoguáva rehekávare.",
   "cashInvalidAmount": "Ehai peteĩ mboýpa 0 térã hetave.",
   "portfolioImportNothing": "Ndaikatúi oñemoñeʼẽ mbaʼeve jejogua térã ñemu ko moñeʼẽrãme. Ehecha peteĩteĩ línea ojoguápa techaukarãme.",
-  "lotPriceFarFromQuote": "Kóva mombyry ko árape tepy ({price}) guive. Ehechajey, térã eñongatu jey oĩporã ramo."
+  "lotPriceFarFromQuote": "Kóva mombyry ko árape tepy ({price}) guive. Ehechajey, térã eñongatu jey oĩporã ramo.",
+  "accountDeletedElsewhere": "Ko mbaʼete oñembogue ambue mbaʼeʼokápe térã ñandutípe, upévare idato oñembogue avei ko mbaʼeʼokágui.",
+  "errAiUnavailable": "AI mbaʼepytyvõrã ndaipóri koʼág̃a. Eñehaʼã jey mbovy aravoʼi rire.",
+  "errMarketUnavailable": "Ñemuha mbaʼekuaarã ndaipóri koʼág̃a. Eñehaʼã jey mbovy aravoʼi rire.",
+  "purchaseUnavailable": "Jejogua ndaipóri koʼág̃a. Eñehaʼã jey upéi."
 }

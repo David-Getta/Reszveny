@@ -308,6 +308,13 @@ class Api {
   Response _error(int status, String code, [String? message]) =>
       _json({'error': code, 'message': ?message}, status: status);
 
+  /// Nincs (érvényes) belépés: ha a token egy azóta törölt fiókhoz tartozott, `account_deleted`
+  /// (az app ilyenkor a fiók helyi adatait is törli), különben `unauthorized`.
+  Response _unauthorized(Request r) {
+    final t = _token(r);
+    return _error(401, t != null && store.isDeletedSession(t) ? 'account_deleted' : 'unauthorized');
+  }
+
   /// Kérésnapló: idő, metódus, állapot, útvonal – a lekérdezési paraméterek
   /// nélkül, hogy titkos tokenek és keresett részvények ne kerüljenek a naplóba.
   static Middleware _logRequests() =>
@@ -628,7 +635,7 @@ class Api {
 
   Future<Response> _me(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     return _json({..._account(uid), 'invite': ?_invite(r)?.toJson()});
   }
 
@@ -793,7 +800,7 @@ class Api {
   /// (és az előnézeti képet); a válasz a link.
   Future<Response> _createShare(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     final body = await _body(r);
     final data = cleanShare(body);
     if (data == null) return _error(400, 'bad_share');
@@ -985,7 +992,7 @@ class Api {
 
   Future<Response> _telemetry(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     if (!_telemetryBatches.allow(uid)) return _error(429, 'rate_limited');
     telemetry.record(uid, await _body(r));
     return _json({'ok': true});
@@ -999,7 +1006,7 @@ class Api {
   /// Egy AI-válasz jelentése (téves, sértő, egyéb) az appból; a fiók nem kerül mellé.
   Future<Response> _report(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     final body = await _body(r);
     final ipKey = _ipKey(_clientIp(r) ?? '-');
     if (_reportsPerDay.blocked(uid) || _reportsPerIp.blocked(ipKey)) return _error(429, 'rate_limited');
@@ -1282,7 +1289,7 @@ class Api {
 
   Future<Response> _getSync(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     final s = store.syncData(uid);
     return _json({'data': s == null ? null : jsonDecode(s.data), 'updated_at': s?.updatedAt.toIso8601String()});
   }
@@ -1294,7 +1301,7 @@ class Api {
   /// `base` nélkül (régebbi app) az utolsó írás nyer.
   Future<Response> _putSync(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     if (store.emailOf(uid) == null) return _error(403, 'sign_in_required');
     final Object? body;
     try {
@@ -1386,7 +1393,7 @@ class Api {
 
   Future<Response> _referral(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     final (invited, rewarded) = store.referralStats(uid);
     return _json({
       'code': store.referralCodeOf(uid),
@@ -1406,13 +1413,13 @@ class Api {
 
   Future<Response> _redeemReferral(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     final ipKey = 'ip|${_ipKey(_clientIp(r) ?? '-')}', userKey = 'uid|$uid';
     // A törzs előbb: a korlát vizsgálata és a hibás kód számolása között ne legyen
     // várakozás (különben egy párhuzamos sorozat mind átmenne a vizsgálaton).
     final code = _str((await _body(r))['code']);
     // A törzs beolvasása közben törölt fiók nem kap új sorokat.
-    if (!store.userExists(uid)) return _error(401, 'unauthorized');
+    if (!store.userExists(uid)) return _unauthorized(r);
     if (_redeemFailures.blocked(ipKey) || _redeemFailures.blocked(userKey)) return _error(429, 'rate_limited');
     // Tesztelői kód: a megadott csomag a megadott napokra, fizetés nélkül.
     if (testers.find(code) case final t?) {
@@ -1502,7 +1509,7 @@ class Api {
   /// a boltban mondja le (az app ezt meg is mondja).
   Future<Response> _deleteAccount(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     final (:cancelled, :failure) = await _deleteUser(uid);
     if (failure != null) return _error(502, 'stripe_cancel_failed', failure);
     return _json({'deleted': true, 'stripe_subscription_cancelled': cancelled});
@@ -1642,7 +1649,7 @@ class Api {
 
   Future<Response> _checkout(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     final s = stripe;
     if (s == null) return _error(503, 'billing_unavailable');
     final email = store.emailOf(uid);
@@ -1662,7 +1669,7 @@ class Api {
       if (previous != null) await previous;
       // A várakozás alatt a fiók törlődhetett: törölt fióknak (és a törölt címmel) nem
       // jön létre új Stripe-ügyfél és fizetési munkamenet.
-      if (!store.userExists(uid) || store.emailOf(uid) != email) return _error(401, 'unauthorized');
+      if (!store.userExists(uid) || store.emailOf(uid) != email) return _unauthorized(r);
       if (isSub && store.stripeOf(uid).subscriptionId != null) {
         final e = store.entitlement(uid);
         if (e.tier != null && e.tier != 'trial') return _error(409, 'already_subscribed');
@@ -1684,7 +1691,7 @@ class Api {
           } else {
             // A létrehozás közben törölték a fiókot: az új ügyfél is törlendő.
             store.queueStripeCustomerDeletion(customer);
-            return _error(401, 'unauthorized');
+            return _unauthorized(r);
           }
         } on Exception catch (e) {
           stderr.writeln('Stripe-ügyfél nem jött létre: $e');
@@ -1735,7 +1742,7 @@ class Api {
 
   Future<Response> _portal(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     final s = stripe;
     if (s == null) return _error(503, 'billing_unavailable');
     final customer = store.stripeOf(uid).customerId;
@@ -1964,7 +1971,7 @@ class Api {
 
   Future<Response> _verify(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     final body = await _body(r);
     final platform = _str(body['platform']);
     final productId = _str(body['product_id']);
@@ -1983,7 +1990,7 @@ class Api {
     if (txn == null) return _error(402, 'invalid_purchase');
     final t = txn;
     // Az ellenőrzés közben törölt fiókhoz nem kerül vásárlás és jóváírás (szellemsorok).
-    if (!store.userExists(uid)) return _error(401, 'unauthorized');
+    if (!store.userExists(uid)) return _unauthorized(r);
     // A bolti vásárlás gazdája az, aki utoljára igazolta (visszaállítás új telepítésen
     // vagy eszközön, egy törölt fiók még fizetett előfizetése): a régi fiókról átkerül,
     // így a megújítások és a visszatérítések az új gazdához érkeznek.
@@ -2223,7 +2230,7 @@ class Api {
   /// hosszkorláton megszakadt kivételével), a sikertelen visszaad.
   Future<Response> _analyze(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     final now = store.clock();
     _recentAnalyses.removeWhere((_, v) => !v.expires.isAfter(now));
     _continuations.removeWhere((_, v) => !v.expires.isAfter(now));
@@ -2576,7 +2583,7 @@ class Api {
 
   Future<Response> _ask(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     final raw = await _body(r);
     final req = checkAskRequest(raw);
     if (req == null) return _error(400, 'bad_request');
@@ -2675,7 +2682,7 @@ class Api {
 
   Future<Response> _anthropicPassthrough(Request r) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     final String raw;
     try {
       raw = await r.readAsString();
@@ -2771,7 +2778,7 @@ class Api {
 
   Future<Response> _market(Request r, String path) async {
     final uid = _userId(r);
-    if (uid == null) return _error(401, 'unauthorized');
+    if (uid == null) return _unauthorized(r);
     if (!marketPaths.contains(path)) return _error(404, 'not_found');
     if (!_marketCalls.allow(uid)) return _error(429, 'rate_limited');
     if (path == 'stock/candle' && twelveDataApiKey.isNotEmpty) return _twelveDataCandles(r.url.queryParameters);

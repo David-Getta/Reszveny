@@ -167,6 +167,10 @@ class ClaudeStockAnalyst implements StockAnalyst {
   };
 
   /// A backend 402-es hibakódja → az app hibakódja.
+  /// A szerver (vagy egy átjáró) szerint a fölöttes szolgáltató épp nem érhető el: átmeneti,
+  /// nem az app és nem a felhasználó kapcsolatának hibája („most nem érhető el, próbáld később”).
+  static bool isOutage(int status) => status == 502 || status == 503 || status == 504;
+
   static AppErrorCode quotaErrorFor(String body) => switch (BackendClient.errorCode(body)) {
     'trial_expired' => AppErrorCode.trialExpired,
     'no_plan' => AppErrorCode.noPlan,
@@ -221,11 +225,7 @@ class ClaudeStockAnalyst implements StockAnalyst {
       final detail = code == AppErrorCode.notEnoughCredits ? _insufficientDetail(res.body) : null;
       throw AnalysisException(code, detail: detail, cause: res.body);
     }
-    // A szerver (vagy egy átjáró) szerint az AI-szolgáltató épp nem érhető el: átmeneti, nem az
-    // app hibája – „nem érhető el, próbáld később”, nem egy hibakód.
-    if (const {502, 503, 504}.contains(res.statusCode)) {
-      throw AnalysisException(AppErrorCode.aiUnreachable, cause: res.body);
-    }
+    if (isOutage(res.statusCode)) throw AnalysisException(AppErrorCode.aiUnavailable, cause: res.body);
     if (res.statusCode != 200) {
       throw AnalysisException(AppErrorCode.aiHttp, detail: '${res.statusCode}', cause: res.body);
     }

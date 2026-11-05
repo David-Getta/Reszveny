@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Hapana izwi rinoenderana nezvawatsvaga.",
   "cashInvalidAmount": "Nyora huwandu hwe 0 kana kupfuura.",
   "portfolioImportNothing": "Hapana kutenga kana kutengesa kwakwanisa kuverengwa muchinyorwa ichi. Tarisa kuti mutsara wega wega wakaita semuenzaniso.",
-  "lotPriceFarFromQuote": "Mutengo uyu uri kure kwazvo nemutengo wanhasi ({price}). Utarise, kana kuti uchengetedze zvakare kana wakarurama."
+  "lotPriceFarFromQuote": "Mutengo uyu uri kure kwazvo nemutengo wanhasi ({price}). Utarise, kana kuti uchengetedze zvakare kana wakarurama.",
+  "accountDeletedElsewhere": "Akaundi iyi yadzimwa pane mumwe mudziyo kana pawebhu, saka data yayo yabviswawo pamudziyo uyu.",
+  "errAiUnavailable": "Sevhisi yeAI haiwanikwe parizvino. Edza zvakare mushure memaminitsi mashoma.",
+  "errMarketUnavailable": "Data yemusika haiwanikwe parizvino. Edza zvakare mushure memaminitsi mashoma.",
+  "purchaseUnavailable": "Kutenga hakuwanikwe parizvino. Edza zvakare gare gare."
 }

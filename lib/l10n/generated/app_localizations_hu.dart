@@ -13,7 +13,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fotózz le egy részvényt, és tudj meg róla mindent.';
+  String get homeTagline =>
+      'Fotózz le egy részvényt, és tudj meg róla mindent.';
 
   @override
   String get homeHint =>
@@ -111,7 +112,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get errorGeneric => 'Hiba történt.';
 
   @override
-  String get errorSectionUnavailable => 'Ezt a szakaszt nem sikerült betölteni.';
+  String get errorSectionUnavailable =>
+      'Ezt a szakaszt nem sikerült betölteni.';
 
   @override
   String get notAvailable => 'n/a';
@@ -318,7 +320,12 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count elemző', one: '1 elemző');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count elemző',
+      one: '1 elemző',
+    );
     return '$_temp0';
   }
 
@@ -346,10 +353,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get recognitionRawText => 'A képről beolvasott szöveg';
 
   @override
-  String get errMissingAnthropicKey => 'A képfelismerés ebben a változatban nem érhető el. Add meg inkább a tickert.';
+  String get errMissingAnthropicKey =>
+      'A képfelismerés ebben a változatban nem érhető el. Add meg inkább a tickert.';
 
   @override
-  String get errRecognitionUnreachable => 'A felismerő szolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
+  String get errRecognitionUnreachable =>
+      'A felismerő szolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -357,25 +366,32 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'A felismerő szolgáltatás nem tudta feldolgozni ezt a képet.';
+  String get errRecognitionRefused =>
+      'A felismerő szolgáltatás nem tudta feldolgozni ezt a képet.';
 
   @override
-  String get errRecognitionTruncated => 'A felismerés válasza megszakadt. Kérlek, próbáld újra.';
+  String get errRecognitionTruncated =>
+      'A felismerés válasza megszakadt. Kérlek, próbáld újra.';
 
   @override
-  String get errRecognitionBadResponse => 'Váratlan válasz érkezett a felismerő szolgáltatástól.';
+  String get errRecognitionBadResponse =>
+      'Váratlan válasz érkezett a felismerő szolgáltatástól.';
 
   @override
-  String get errRecognitionEmpty => 'A felismerő szolgáltatás üres választ adott.';
+  String get errRecognitionEmpty =>
+      'A felismerő szolgáltatás üres választ adott.';
 
   @override
-  String get errMissingFinnhubKey => 'A piaci adatok ebben a változatban nem érhetők el.';
+  String get errMissingFinnhubKey =>
+      'A piaci adatok ebben a változatban nem érhetők el.';
 
   @override
-  String get errMarketUnreachable => 'A piaci adatszolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
+  String get errMarketUnreachable =>
+      'A piaci adatszolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
 
   @override
-  String get errMarketRateLimited => 'Túl sok kérés a piaci adatszolgáltatás felé. Kérlek, várj egy percet.';
+  String get errMarketRateLimited =>
+      'Túl sok kérés a piaci adatszolgáltatás felé. Kérlek, várj egy percet.';
 
   @override
   String errMarketHttp(String status) {
@@ -383,7 +399,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Váratlan válasz érkezett a piaci adatszolgáltatástól.';
+  String get errMarketBadResponse =>
+      'Váratlan válasz érkezett a piaci adatszolgáltatástól.';
 
   @override
   String errNoQuote(String symbol) {
@@ -483,7 +500,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get aiRegenerate => 'Újragenerálás';
 
   @override
-  String get aiGenerating => 'Az elemzés készül… ez egy-két percet is igénybe vehet.';
+  String get aiGenerating =>
+      'Az elemzés készül… ez egy-két percet is igénybe vehet.';
 
   @override
   String get aiSources => 'Források';
@@ -498,10 +516,12 @@ class AppLocalizationsHu extends AppLocalizations {
       'AI által készített elemzés nyilvános adatok és friss hírek alapján. Hibákat tartalmazhat vagy elavult lehet, és nem minősül befektetési tanácsadásnak.';
 
   @override
-  String get errAiNotConfigured => 'Az AI-funkciók ebben a változatban nem érhetők el.';
+  String get errAiNotConfigured =>
+      'Az AI-funkciók ebben a változatban nem érhetők el.';
 
   @override
-  String get errAiUnreachable => 'Az AI-szolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
+  String get errAiUnreachable =>
+      'Az AI-szolgáltatás nem érhető el. Ellenőrizd az internetkapcsolatot.';
 
   @override
   String errAiHttp(String status) {
@@ -509,10 +529,12 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Az AI-szolgáltatás nem vállalta ennek a részvénynek az elemzését.';
+  String get errAiRefused =>
+      'Az AI-szolgáltatás nem vállalta ennek a részvénynek az elemzését.';
 
   @override
-  String get errAiBadResponse => 'Váratlan válasz érkezett az AI-szolgáltatástól.';
+  String get errAiBadResponse =>
+      'Váratlan válasz érkezett az AI-szolgáltatástól.';
 
   @override
   String get sectionChart => 'Árfolyamgrafikon';
@@ -533,7 +555,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get rangeFiveYears => '5É';
 
   @override
-  String get chartUnavailable => 'Az árfolyamtörténet nem érhető el a jelenlegi adatforrásból.';
+  String get chartUnavailable =>
+      'Az árfolyamtörténet nem érhető el a jelenlegi adatforrásból.';
 
   @override
   String get sectionStatements => 'Pénzügyi kimutatások (éves)';
@@ -560,7 +583,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get labelOperatingCashFlow => 'Működési cash flow';
 
   @override
-  String get statementsUnavailable => 'Ehhez a részvényhez nem érhetők el közzétett pénzügyi kimutatások.';
+  String get statementsUnavailable =>
+      'Ehhez a részvényhez nem érhetők el közzétett pénzügyi kimutatások.';
 
   @override
   String get launchAtLogin => 'Indítás bejelentkezéskor';
@@ -569,7 +593,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get hotkeyLabel => 'Globális gyorsbillentyű';
 
   @override
-  String get hotkeyRecordHint => 'Kattints ide, majd nyomd le az új billentyűkombinációt';
+  String get hotkeyRecordHint =>
+      'Kattints ide, majd nyomd le az új billentyűkombinációt';
 
   @override
   String get hotkeyReset => 'Alapértelmezés visszaállítása';
@@ -590,7 +615,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get removeFromFavorites => 'Eltávolítás a kedvencek közül';
 
   @override
-  String get noFavorites => 'Még nincsenek kedvencek. Koppints egy részvény csillagjára a hozzáadáshoz.';
+  String get noFavorites =>
+      'Még nincsenek kedvencek. Koppints egy részvény csillagjára a hozzáadáshoz.';
 
   @override
   String get displayCurrency => 'Megjelenítési pénznem';
@@ -637,7 +663,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get updateDownloading => 'A frissítés letöltése a háttérben…';
 
   @override
-  String get updateDownloaded => 'A frissítés készen áll. A telepítéshez indítsd újra az alkalmazást.';
+  String get updateDownloaded =>
+      'A frissítés készen áll. A telepítéshez indítsd újra az alkalmazást.';
 
   @override
   String get updateNow => 'Frissítés';
@@ -646,7 +673,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get restartNow => 'Újraindítás';
 
   @override
-  String get updatesViaStore => 'A frissítések automatikusan érkeznek az alkalmazásboltból.';
+  String get updatesViaStore =>
+      'A frissítések automatikusan érkeznek az alkalmazásboltból.';
 
   @override
   String get updateCheckFailed => 'Nem sikerült frissítéseket keresni.';
@@ -694,7 +722,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Az ingyenes próbaidő lejárt. Válassz csomagot, hogy tovább elemezhess.';
+  String get trialExpired =>
+      'Az ingyenes próbaidő lejárt. Válassz csomagot, hogy tovább elemezhess.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -724,10 +753,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get perMonth => '/ hó';
 
   @override
-  String get extraPacksTitle => 'Többre van szükséged? Vásárolj extra elemzéseket';
+  String get extraPacksTitle =>
+      'Többre van szükséged? Vásárolj extra elemzéseket';
 
   @override
-  String get extraPacksHint => 'Az extra elemzések nem járnak le, és a havi keret kimerülése után használódnak fel.';
+  String get extraPacksHint =>
+      'Az extra elemzések nem járnak le, és a havi keret kimerülése után használódnak fel.';
 
   @override
   String get buy => 'Vásárlás';
@@ -759,7 +790,8 @@ class AppLocalizationsHu extends AppLocalizations {
       'Ebben az időszakban nem maradt több elemzésed. Válts nagyobb csomagra, vagy vásárolj extra elemzéseket.';
 
   @override
-  String get errTrialExpired => 'Az ingyenes próbaidő lejárt. Válassz csomagot a folytatáshoz.';
+  String get errTrialExpired =>
+      'Az ingyenes próbaidő lejárt. Válassz csomagot a folytatáshoz.';
 
   @override
   String get errNoPlan => 'Az AI-elemzéshez aktív csomag szükséges.';
@@ -771,7 +803,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get usageTitle => 'Felhasználás';
 
   @override
-  String get demoPurchaseNote => 'Demó számlázás: ezen a platformon a vásárlások csak szimuláltak.';
+  String get demoPurchaseNote =>
+      'Demó számlázás: ezen a platformon a vásárlások csak szimuláltak.';
 
   @override
   String get mostPopular => 'Legnépszerűbb';
@@ -811,7 +844,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get aiDepthStandardDesc => 'Teljes elemzés minden szakasszal.';
 
   @override
-  String get aiDepthDeepDesc => 'Több webkeresés, versenytárs-összevetés, mélyebb részletek.';
+  String get aiDepthDeepDesc =>
+      'Több webkeresés, versenytárs-összevetés, mélyebb részletek.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -839,10 +873,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get aiReaderExperienced => 'Tapasztalt';
 
   @override
-  String get aiReaderBeginnerDesc => 'Közérthető nyelv, minden szakkifejezés megmagyarázva.';
+  String get aiReaderBeginnerDesc =>
+      'Közérthető nyelv, minden szakkifejezés megmagyarázva.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Tömörebb szöveg, szokásos pénzügyi szakkifejezésekkel.';
+  String get aiReaderExperiencedDesc =>
+      'Tömörebb szöveg, szokásos pénzügyi szakkifejezésekkel.';
 
   @override
   String get aiCounterArgument => 'Legerősebb ellenérv';
@@ -942,7 +978,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get upcomingEvents => 'Közelgő események';
 
   @override
-  String get outlookChartNote => 'Tájékoztató sávok; a valószínűségek durva becslések, nem előrejelzések.';
+  String get outlookChartNote =>
+      'Tájékoztató sávok; a valószínűségek durva becslések, nem előrejelzések.';
 
   @override
   String get accountTitle => 'Fiók';
@@ -957,10 +994,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get notSignedIn => 'Nem vagy bejelentkezve';
 
   @override
-  String get accountBenefit => 'Jelentkezz be, hogy az előfizetésed minden eszközödön működjön.';
+  String get accountBenefit =>
+      'Jelentkezz be, hogy az előfizetésed minden eszközödön működjön.';
 
   @override
-  String get accountSyncedNote => 'Az előfizetésed és a hátralévő elemzéseid minden eszközön ugyanazok.';
+  String get accountSyncedNote =>
+      'Az előfizetésed és a hátralévő elemzéseid minden eszközön ugyanazok.';
 
   @override
   String get signInTitle => 'Bejelentkezés a WhatStockba';
@@ -992,13 +1031,16 @@ class AppLocalizationsHu extends AppLocalizations {
   String get errInvalidEmail => 'Adj meg egy érvényes e-mail-címet.';
 
   @override
-  String get errSignInFailed => 'A bejelentkezés nem sikerült. Ellenőrizd a kapcsolatot, és próbáld újra.';
+  String get errSignInFailed =>
+      'A bejelentkezés nem sikerült. Ellenőrizd a kapcsolatot, és próbáld újra.';
 
   @override
-  String get checkoutWaiting => 'Fejezd be a fizetést a böngészőben. Az app automatikusan frissül, amint kész.';
+  String get checkoutWaiting =>
+      'Fejezd be a fizetést a böngészőben. Az app automatikusan frissül, amint kész.';
 
   @override
-  String get paymentViaStripe => 'Biztonságos fizetés a böngészőben, Stripe-on keresztül. Bármikor lemondható.';
+  String get paymentViaStripe =>
+      'Biztonságos fizetés a böngészőben, Stripe-on keresztül. Bármikor lemondható.';
 
   @override
   String get paymentViaStore =>
@@ -1011,7 +1053,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get doubleOptionTitle => 'Dupla Option-nyomás';
 
   @override
-  String get doubleOptionSubtitle => 'Az Option gomb kétszeri gyors lenyomása is előhozza a WhatStockot.';
+  String get doubleOptionSubtitle =>
+      'Az Option gomb kétszeri gyors lenyomása is előhozza a WhatStockot.';
 
   @override
   String get doubleOptionPermission =>
@@ -1033,7 +1076,12 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years év', one: '1 év');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years év',
+      one: '1 év',
+    );
     return '$_temp0';
   }
 
@@ -1139,7 +1187,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get portfolioRemove => 'Törlés';
 
   @override
-  String get portfolioExcluded => 'Az ár vagy devizaárfolyam nélküli pozíciók kimaradnak az összesítésből.';
+  String get portfolioExcluded =>
+      'Az ár vagy devizaárfolyam nélküli pozíciók kimaradnak az összesítésből.';
 
   @override
   String get priceAlerts => 'Árfolyam-riasztások';
@@ -1181,7 +1230,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Még nincs riasztás. Nyiss meg egy részvényt, és koppints a csengőre.';
+  String get alertsEmpty =>
+      'Még nincs riasztás. Nyiss meg egy részvényt, és koppints a csengőre.';
 
   @override
   String get alertsNote =>
@@ -1274,7 +1324,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get accountDeleted => 'A fiókodat töröltük.';
 
   @override
-  String get errDeleteAccount => 'A fiókot nem sikerült törölni. Ellenőrizd a kapcsolatot, és próbáld újra.';
+  String get errDeleteAccount =>
+      'A fiókot nem sikerült törölni. Ellenőrizd a kapcsolatot, és próbáld újra.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1311,7 +1362,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get inviteTitle => 'Zárt előzetes';
 
   @override
-  String get inviteBody => 'A WhatStock egyelőre csak meghívással használható. Írd be a kapott meghívókódot.';
+  String get inviteBody =>
+      'A WhatStock egyelőre csak meghívással használható. Írd be a kapott meghívókódot.';
 
   @override
   String get inviteCodeLabel => 'Meghívókód';
@@ -1323,26 +1375,39 @@ class AppLocalizationsHu extends AppLocalizations {
   String get inviteInvalid => 'Ez a meghívókód nem érvényes.';
 
   @override
-  String get inviteExpired => 'Ez a meghívó lejárt. Kérj új kódot attól, aki meghívott.';
+  String get inviteExpired =>
+      'Ez a meghívó lejárt. Kérj új kódot attól, aki meghívott.';
 
   @override
-  String get inviteDeviceLimit => 'Ezt a meghívókódot már a megengedett számú eszközön használják.';
+  String get inviteDeviceLimit =>
+      'Ezt a meghívókódot már a megengedett számú eszközön használják.';
 
   @override
   String get previewConfidential => 'Bizalmas előzetes';
 
   @override
-  String get errPreviewDailyLimit => 'Ennek az előzetesnek a mai elemzéskerete elfogyott. Próbáld újra holnap.';
+  String get errPreviewDailyLimit =>
+      'Ennek az előzetesnek a mai elemzéskerete elfogyott. Próbáld újra holnap.';
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count órája', one: '1 órája');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count órája',
+      one: '1 órája',
+    );
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count napja', one: '1 napja');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count napja',
+      one: '1 napja',
+    );
     return '$_temp0';
   }
 
@@ -1377,7 +1442,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'Koppints egy AI által becsült szintre, és szólunk, ha az árfolyam eléri.';
+  String get keyLevelAlertHint =>
+      'Koppints egy AI által becsült szintre, és szólunk, ha az árfolyam eléri.';
 
   @override
   String get shareAnalysisTitle => 'Elemzés megosztása';
@@ -1435,7 +1501,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Ilyen kód nincs. Ellenőrizd, és próbáld újra.';
+  String get referralErrUnknown =>
+      'Ilyen kód nincs. Ellenőrizd, és próbáld újra.';
 
   @override
   String get referralErrOwn => 'A saját kódodat nem válthatod be.';
@@ -1552,17 +1619,24 @@ class AppLocalizationsHu extends AppLocalizations {
   String get askSuggest3 => 'Magyarázd el egyszerűen';
 
   @override
-  String get askMaxReached => 'Ez volt az utolsó kérdés ehhez az elemzéshez. Újabb kérdésekhez készíts új elemzést.';
+  String get askMaxReached =>
+      'Ez volt az utolsó kérdés ehhez az elemzéshez. Újabb kérdésekhez készíts új elemzést.';
 
   @override
-  String get errAskLimit => 'Elérted a mai kérdéskeretet. Holnap újra kérdezhetsz.';
+  String get errAskLimit =>
+      'Elérted a mai kérdéskeretet. Holnap újra kérdezhetsz.';
 
   @override
   String get eventTomorrow => 'Holnap';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days nap múlva', one: '1 nap múlva');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days nap múlva',
+      one: '1 nap múlva',
+    );
     return '$_temp0';
   }
 
@@ -1696,7 +1770,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get syncInfo => 'A portfólió, a kedvencek, az árfolyam-riasztások és a jegyzetek minden eszközödön ugyanazok.';
+  String get syncInfo =>
+      'A portfólió, a kedvencek, az árfolyam-riasztások és a jegyzetek minden eszközödön ugyanazok.';
 
   @override
   String syncLast(String time) {
@@ -1707,7 +1782,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get syncNow => 'Szinkronizálás most';
 
   @override
-  String get syncFailed => 'A szinkronizálás nem sikerült. Az app később automatikusan újrapróbálja.';
+  String get syncFailed =>
+      'A szinkronizálás nem sikerült. Az app később automatikusan újrapróbálja.';
 
   @override
   String get alertEmailTitle => 'E-mail, ha egy riasztás teljesül';
@@ -1836,7 +1912,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'Mennyit ér az egész cég a tőzsdén: árfolyam × részvények száma.';
+  String get glossMarketCap =>
+      'Mennyit ér az egész cég a tőzsdén: árfolyam × részvények száma.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1875,10 +1952,12 @@ class AppLocalizationsHu extends AppLocalizations {
       'Mennyire mozog együtt a piaccal: 1 = mint a piac, 1,5 = nagyjából másfélszer akkora kilengések, 1 alatt = nyugodtabb.';
 
   @override
-  String get glossRevenueTtm => 'Az elmúlt 12 hónap teljes árbevétele, minden költség előtt.';
+  String get glossRevenueTtm =>
+      'Az elmúlt 12 hónap teljes árbevétele, minden költség előtt.';
 
   @override
-  String get glossNetIncomeTtm => 'Az elmúlt 12 hónapban minden költség, kamat és adó után megmaradt nyereség.';
+  String get glossNetIncomeTtm =>
+      'Az elmúlt 12 hónapban minden költség, kamat és adó után megmaradt nyereség.';
 
   @override
   String get glossGrossMargin =>
@@ -1909,17 +1988,20 @@ class AppLocalizationsHu extends AppLocalizations {
       'Rövid lejáratú eszközök ÷ egy éven belül esedékes tartozások. 1 fölött a cég fedezni tudja a közeli kötelezettségeit.';
 
   @override
-  String get glossRevenueGrowth => 'Mennyivel nőtt az árbevétel az egy évvel korábbihoz képest.';
+  String get glossRevenueGrowth =>
+      'Mennyivel nőtt az árbevétel az egy évvel korábbihoz képest.';
 
   @override
-  String get glossEpsGrowth => 'Mennyivel nőtt az egy részvényre jutó nyereség az egy évvel korábbihoz képest.';
+  String get glossEpsGrowth =>
+      'Mennyivel nőtt az egy részvényre jutó nyereség az egy évvel korábbihoz képest.';
 
   @override
   String get glossDividendYield =>
       'Éves osztalék ÷ árfolyam: évente mennyi készpénzt kapnál a befizetett összeg százalékában.';
 
   @override
-  String get glossDividendPerShare => 'Az elmúlt évben egy részvényre kifizetett osztalék.';
+  String get glossDividendPerShare =>
+      'Az elmúlt évben egy részvényre kifizetett osztalék.';
 
   @override
   String get glossPayoutRatio =>
@@ -2017,8 +2099,10 @@ class AppLocalizationsHu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'Az utolsó $total negyedévből $beats alkalommal érte el vagy verte meg a várt EPS-t',
-      one: '1 negyedévből $beats alkalommal érte el vagy verte meg a várt EPS-t',
+      other:
+          'Az utolsó $total negyedévből $beats alkalommal érte el vagy verte meg a várt EPS-t',
+      one:
+          '1 negyedévből $beats alkalommal érte el vagy verte meg a várt EPS-t',
     );
     return '$_temp0';
   }
@@ -2134,13 +2218,23 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count vétel', one: '1 vétel');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vétel',
+      one: '1 vétel',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count eladás', one: '1 eladás');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count eladás',
+      one: '1 eladás',
+    );
     return '$_temp0';
   }
 
@@ -2160,7 +2254,8 @@ class AppLocalizationsHu extends AppLocalizations {
       'A vezetők és az igazgatósági tagok nyílt piaci vételei és eladásai az elmúlt 90 napban (SEC Form 4). Az opciólehívás és a részvényjuttatás nem számít bele.';
 
   @override
-  String get insiderNone => 'Az elmúlt 90 napban nem volt bennfentes vétel vagy eladás a nyílt piacon.';
+  String get insiderNone =>
+      'Az elmúlt 90 napban nem volt bennfentes vétel vagy eladás a nyílt piacon.';
 
   @override
   String get analystTrend => 'Hogyan változtak a vélemények hónapról hónapra';
@@ -2184,7 +2279,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get watchListAddTo => 'Listához adás';
 
   @override
-  String get watchListEmpty => 'Ezen a listán még nincs részvény. A részvény melletti lista gombbal veheted fel.';
+  String get watchListEmpty =>
+      'Ezen a listán még nincs részvény. A részvény melletti lista gombbal veheted fel.';
 
   @override
   String favoriteRemoved(String symbol) {
@@ -2202,7 +2298,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard => 'Vágólapra másolva – illeszd be oda, ahol meg szeretnéd osztani.';
+  String get sharedToClipboard =>
+      'Vágólapra másolva – illeszd be oda, ahol meg szeretnéd osztani.';
 
   @override
   String get glossaryNoMatch => 'Nincs a keresésnek megfelelő fogalom.';
@@ -2220,6 +2317,22 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get accountDeletedElsewhere =>
+      'Ezt a fiókot egy másik eszközön vagy a weben törölték, ezért az adatai erről a készülékről is lekerültek.';
+
+  @override
+  String get errAiUnavailable =>
+      'Az AI-szolgáltatás most nem érhető el. Próbáld újra néhány perc múlva.';
+
+  @override
+  String get errMarketUnavailable =>
+      'Az árfolyamadatok most nem érhetők el. Próbáld újra néhány perc múlva.';
+
+  @override
+  String get purchaseUnavailable =>
+      'A vásárlás most nem érhető el. Próbáld újra később.';
+
+  @override
   String get portfolioAskTitle => 'Kérdések a portfóliódról';
 
   @override
@@ -2232,13 +2345,15 @@ class AppLocalizationsHu extends AppLocalizations {
   String get backupSave => 'Mentés fájlba';
 
   @override
-  String get backupSaveHint => 'A kedvenceid, listáid, portfóliód, riasztásaid és jegyzeteid egy fájlban.';
+  String get backupSaveHint =>
+      'A kedvenceid, listáid, portfóliód, riasztásaid és jegyzeteid egy fájlban.';
 
   @override
   String get backupRestore => 'Visszaállítás mentésből';
 
   @override
-  String get backupRestoreHint => 'Hozzáadja, ami a fájlban van; a mostani adataidból semmi nem törlődik.';
+  String get backupRestoreHint =>
+      'Hozzáadja, ami a fájlban van; a mostani adataidból semmi nem törlődik.';
 
   @override
   String get backupRestored => 'A mentés visszaállítva.';
@@ -2357,7 +2472,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Portfólió-riasztás';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'Értesítés, ha a teljes portfóliód egy nap alatt ennyit mozdul.';
+  String get portfolioMoveAlertSubtitle =>
+      'Értesítés, ha a teljes portfóliód egy nap alatt ennyit mozdul.';
 
   @override
   String get portfolioMoveAlertOff => 'Ki';
@@ -2529,11 +2645,17 @@ class AppLocalizationsHu extends AppLocalizations {
   String get portfolioTopHoldings => 'Legnagyobb pozíciók';
 
   @override
-  String get portfolioShareNote => 'Csak százalékok kerülnek a megosztásba, összegek nem.';
+  String get portfolioShareNote =>
+      'Csak százalékok kerülnek a megosztásba, összegek nem.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count pozíció', one: '1 pozíció');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozíció',
+      one: '1 pozíció',
+    );
     return '$_temp0';
   }
 
@@ -2583,7 +2705,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get portfolioSampleTry => 'Kipróbálom egy mintaportfólióval';
 
   @override
-  String get portfolioSampleBanner => 'Ez egy mintaportfólió. Mellé veheted a saját vételeidet, vagy eltávolíthatod.';
+  String get portfolioSampleBanner =>
+      'Ez egy mintaportfólió. Mellé veheted a saját vételeidet, vagy eltávolíthatod.';
 
   @override
   String get portfolioSampleRemove => 'Minta eltávolítása';
@@ -2638,10 +2761,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lotNoteAdd => 'Jegyzet hozzáadása';
 
   @override
-  String get lotNoteBuyHint => 'Miért veszed? A részvény jegyzeteibe kerül, dátummal.';
+  String get lotNoteBuyHint =>
+      'Miért veszed? A részvény jegyzeteibe kerül, dátummal.';
 
   @override
-  String get lotNoteSellHint => 'Miért adod el? A részvény jegyzeteibe kerül, dátummal.';
+  String get lotNoteSellHint =>
+      'Miért adod el? A részvény jegyzeteibe kerül, dátummal.';
 
   @override
   String get lotNoteBought => 'Vétel';
@@ -2651,13 +2776,23 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months hónap', one: '1 hónap');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months hónap',
+      one: '1 hónap',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days nap', one: '1 nap');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days nap',
+      one: '1 nap',
+    );
     return '$_temp0';
   }
 
@@ -2745,10 +2880,12 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Egy barát kódjának beváltásához lépj be az e-mail-címeddel.';
+  String get referralErrSignIn =>
+      'Egy barát kódjának beváltásához lépj be az e-mail-címeddel.';
 
   @override
-  String get referralErrFull => 'Ezt a kódot már annyiszor beváltották, ahányszor lehet.';
+  String get referralErrFull =>
+      'Ezt a kódot már annyiszor beváltották, ahányszor lehet.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2756,13 +2893,16 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated => 'Az elemzés befejezés előtt megszakadt. Próbáld újra – a keretedből nem vont le.';
+  String get errAiTruncated =>
+      'Az elemzés befejezés előtt megszakadt. Próbáld újra – a keretedből nem vont le.';
 
   @override
-  String get errImageUnsupported => 'Ez a kép nem olvasható. Mentsd el JPEG vagy PNG formátumban, és próbáld újra.';
+  String get errImageUnsupported =>
+      'Ez a kép nem olvasható. Mentsd el JPEG vagy PNG formátumban, és próbáld újra.';
 
   @override
-  String get errRateLimited => 'Túl sok kérés rövid idő alatt. Várj egy percet, és próbáld újra.';
+  String get errRateLimited =>
+      'Túl sok kérés rövid idő alatt. Várj egy percet, és próbáld újra.';
 
   @override
   String get watchListNameTaken => 'Már van ilyen nevű lista.';
@@ -2778,7 +2918,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing => 'Nem találtunk visszaállítható korábbi vásárlást.';
+  String get restoreNothing =>
+      'Nem találtunk visszaállítható korábbi vásárlást.';
 
   @override
   String get manageSubscriptionElsewhere =>
@@ -2919,7 +3060,8 @@ class AppLocalizationsHu extends AppLocalizations {
       'AI által készített, általános tájékoztatás a portfóliód összetételéről. Nem veszi figyelembe a céljaidat, az anyagi helyzetedet és az adózásodat, és nem minősül személyre szabott ajánlásnak vagy befektetési tanácsadásnak.';
 
   @override
-  String get briefNotificationTitle => 'AI-összefoglaló · A nap a részvényeiddel';
+  String get briefNotificationTitle =>
+      'AI-összefoglaló · A nap a részvényeiddel';
 
   @override
   String get portfolioGoalSet => 'Cél kitűzése';
@@ -3077,7 +3219,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get portfolioSplitRatio => 'Arány (új : régi)';
 
   @override
-  String get portfolioSplitRatioError => 'Adj meg egy arányt, pl. 10:1 – összevonásnál 1:10.';
+  String get portfolioSplitRatioError =>
+      'Adj meg egy arányt, pl. 10:1 – összevonásnál 1:10.';
 
   @override
   String get portfolioSplitDate => 'A felaprózás napja';
@@ -3200,7 +3343,8 @@ class AppLocalizationsHu extends AppLocalizations {
       'Az 50 napos átlag a 200 napos felett jár – a klasszikus olvasat szerint emelkedő trend.';
 
   @override
-  String get techDeathCross => 'Az 50 napos átlag a 200 napos alatt jár – a klasszikus olvasat szerint csökkenő trend.';
+  String get techDeathCross =>
+      'Az 50 napos átlag a 200 napos alatt jár – a klasszikus olvasat szerint csökkenő trend.';
 
   @override
   String get glossSma50 =>
@@ -3219,7 +3363,8 @@ class AppLocalizationsHu extends AppLocalizations {
       'Mennyit ingadozik az ár napról napra, egy évre vetítve: 20% azt jelenti, hogy egy tipikus év nagyjából ±20%-on belül mozog. A nagyobb volatilitás nagyobb kilengéseket jelent mindkét irányba.';
 
   @override
-  String get techNote => 'A napi záróárakból számolva. A technikai jelzések a múltat írják le, nem a jövőt.';
+  String get techNote =>
+      'A napi záróárakból számolva. A technikai jelzések a múltat írják le, nem a jövőt.';
 
   @override
   String portfolioAbove200(int above, int count) {
@@ -3259,7 +3404,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get glossaryPageTitle => 'Fogalomtár';
 
   @override
-  String get glossaryPageSubtitle => 'Közérthető magyarázat az app minden mutatójához, a P/E-től az RSI-ig';
+  String get glossaryPageSubtitle =>
+      'Közérthető magyarázat az app minden mutatójához, a P/E-től az RSI-ig';
 
   @override
   String get glossarySearchHint => 'Keresés a fogalomtárban';

@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Amul baat bu dëppoo ak li nga seet.",
   "cashInvalidAmount": "Bindal limu xaalis bu tollu ci 0 walla bu ko ëpp.",
   "portfolioImportNothing": "Mënuñu jàng benn jënd walla jaay ci mbind mii. Seetal ndax rëdd bu nekk niroo na ak misaal bi.",
-  "lotPriceFarFromQuote": "Njëg gii sore na lool ak njëgu tey ({price}). Seetal ko, walla nga denc ko beneen yoon bu dee dëgg."
+  "lotPriceFarFromQuote": "Njëg gii sore na lool ak njëgu tey ({price}). Seetal ko, walla nga denc ko beneen yoon bu dee dëgg.",
+  "accountDeletedElsewhere": "Far nañu kont bii ci beneen masin walla ci web bi, moo tax far nañu ay xibaaram ci masin bii itam.",
+  "errAiUnavailable": "Sarwiisu AI bi amul leegi. Jéemaatal fii ak ay minit.",
+  "errMarketUnavailable": "Xibaari marse yi amuñu leegi. Jéemaatal fii ak ay minit.",
+  "purchaseUnavailable": "Jënd mënul a am leegi. Jéemaatal ci kanam."
 }

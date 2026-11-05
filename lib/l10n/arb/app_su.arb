@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Teu aya istilah nu cocog jeung paluruhan anjeun.",
   "cashInvalidAmount": "Asupkeun jumlah 0 atawa leuwih.",
   "portfolioImportNothing": "Teu aya transaksi nu bisa dibaca tina téks ieu. Pariksa yén unggal baris katingalina siga conto.",
-  "lotPriceFarFromQuote": "Ieu tebih teuing ti harga poé ieu ({price}). Pariksa deui, atanapi simpen deui upami leres."
+  "lotPriceFarFromQuote": "Ieu tebih teuing ti harga poé ieu ({price}). Pariksa deui, atanapi simpen deui upami leres.",
+  "accountDeletedElsewhere": "Akun ieu geus dipupus dina parangkat séjén atawa dina wéb, ku kituna datana ogé dipiceun tina parangkat ieu.",
+  "errAiUnavailable": "Layanan AI ayeuna teu sayaga. Cobaan deui sababaraha menit deui.",
+  "errMarketUnavailable": "Data pasar ayeuna teu sayaga. Cobaan deui sababaraha menit deui.",
+  "purchaseUnavailable": "Pameulian ayeuna teu sayaga. Cobaan deui engké."
 }

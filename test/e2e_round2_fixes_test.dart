@@ -10,6 +10,10 @@ import 'package:reszveny/core/errors.dart';
 import 'package:reszveny/core/models/stock_details.dart';
 import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
 import 'package:reszveny/features/market_data/finnhub_market_data_provider.dart';
+import 'package:reszveny/features/billing/billing_controller.dart';
+import 'package:reszveny/features/billing/billing_service.dart';
+import 'package:reszveny/features/billing/entitlement_service.dart';
+import 'package:reszveny/features/billing/paywall_page.dart';
 import 'package:reszveny/features/compare/compare_page.dart';
 import 'package:reszveny/features/home/search_field.dart';
 import 'package:reszveny/features/notes/notes_card.dart';
@@ -335,7 +339,7 @@ void main() {
     );
     await expectLater(
       analyst.analyze(const StockDetails(symbol: 'AAPL')),
-      throwsA(isA<AppException>().having((e) => e.code, 'code', AppErrorCode.aiUnreachable)),
+      throwsA(isA<AppException>().having((e) => e.code, 'code', AppErrorCode.aiUnavailable)),
     );
     final market = FinnhubMarketDataProvider(
       config: const AppConfig(finnhubApiKey: 'k'),
@@ -343,7 +347,46 @@ void main() {
     );
     await expectLater(
       market.quote('AAPL'),
-      throwsA(isA<AppException>().having((e) => e.code, 'code', AppErrorCode.marketUnreachable)),
+      throwsA(isA<AppException>().having((e) => e.code, 'code', AppErrorCode.marketUnavailable)),
     );
   });
+
+  test('purchases switched off on the server say so; a later restore is not hidden behind the old failure', () async {
+    final l10n = await lookupAppLocalizations(const Locale('en'));
+    final off = BillingEvent(productId: 'x', status: BillingStatus.error, message: 'billing_unavailable');
+    expect(billingEventText(l10n, off), 'Purchases are not available right now. Try again later.');
+    final store = _FailingStore();
+    final c = BillingController(billing: store, entitlements: EntitlementService(), restoreGrace: Duration.zero);
+    await c.buy(
+      const StoreProduct(
+        id: 'whatstock.sub.pro',
+        title: 'Pro',
+        price: '\$1',
+        rawPrice: 1,
+        currency: 'USD',
+        kind: StoreProductKind.subscription,
+      ),
+    );
+    expect(c.lastEvent?.status, BillingStatus.error);
+    await c.restore();
+    expect(c.lastEvent, isNull);
+    expect(c.restoreOutcome, RestoreOutcome.nothing);
+  });
+}
+
+class _FailingStore implements BillingService {
+  @override
+  String get name => 'Store';
+  @override
+  bool get isDemo => false;
+  @override
+  Stream<BillingEvent> get events => const Stream.empty();
+  @override
+  Future<bool> isAvailable() async => true;
+  @override
+  Future<List<StoreProduct>> products() async => const [];
+  @override
+  Future<void> buy(StoreProduct product) async => throw StateError('billing_unavailable');
+  @override
+  Future<void> restore() async {}
 }

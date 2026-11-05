@@ -896,5 +896,9 @@
   "glossaryNoMatch": "沒有符合搜尋的詞彙。",
   "cashInvalidAmount": "請輸入大於或等於 0 的金額。",
   "portfolioImportNothing": "無法從此文字讀取任何交易。請檢查每一行是否與範例格式一致。",
-  "lotPriceFarFromQuote": "此價格與今日價格（{price}）相差很大。請核對，如無誤請再次儲存。"
+  "lotPriceFarFromQuote": "此價格與今日價格（{price}）相差很大。請核對，如無誤請再次儲存。",
+  "accountDeletedElsewhere": "此帳戶已在其他裝置或網頁上刪除，因此其數據亦已從此裝置移除。",
+  "errAiUnavailable": "AI 服務暫時無法使用。請於幾分鐘後再試。",
+  "errMarketUnavailable": "市場數據暫時無法提供。請於幾分鐘後再試。",
+  "purchaseUnavailable": "暫時無法購買。請稍後再試。"
 }

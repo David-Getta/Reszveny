@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Jechi barbaacha kee wajjin walsimu hin jiru.",
   "cashInvalidAmount": "Hanga 0 ykn isaa ol ta'e galchi.",
   "portfolioImportNothing": "Barreeffama kana irraa bittaan ykn gurgurtaan tokkollee dubbifamuu hin dandeenye. Sararri hundi fakkeenyicha akka fakkaatu mirkaneessi.",
-  "lotPriceFarFromQuote": "Kun gatii har'aa ({price}) irraa baay'ee fagaata. Mirkaneessi, yookaan sirrii yoo ta'e irra deebi'ii olkaa'i."
+  "lotPriceFarFromQuote": "Kun gatii har'aa ({price}) irraa baay'ee fagaata. Mirkaneessi, yookaan sirrii yoo ta'e irra deebi'ii olkaa'i.",
+  "accountDeletedElsewhere": "Herregni kun meeshaa biraa ykn weebii irratti haqameera, kanaaf odeeffannoon isaa meeshaa kana irraas haqameera.",
+  "errAiUnavailable": "Tajaajilli AI amma hin argamu. Daqiiqaa muraasa booda irra deebi'ii yaali.",
+  "errMarketUnavailable": "Odeeffannoon gabaa amma hin argamu. Daqiiqaa muraasa booda irra deebi'ii yaali.",
+  "purchaseUnavailable": "Bittaan amma hin argamu. Booda irra deebi'ii yaali."
 }

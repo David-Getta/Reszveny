@@ -13,7 +13,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Kuhai sang litrato ang isa ka stock kag hibal-a ang tanan nahanungod sini.';
+  String get homeTagline =>
+      'Kuhai sang litrato ang isa ka stock kag hibal-a ang tanan nahanungod sini.';
 
   @override
   String get homeHint =>
@@ -293,7 +294,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get labelDividendGrowth5y => 'Pagtubo sang dibidendo (5 ka tuig)';
 
   @override
-  String get dividendNone => 'Wala sing dibidendo nga ginbayad sa nagligad nga 12 ka bulan.';
+  String get dividendNone =>
+      'Wala sing dibidendo nga ginbayad sa nagligad nga 12 ka bulan.';
 
   @override
   String get dividendOnYourShares => 'Sa imo mga share, kada tuig';
@@ -364,19 +366,24 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Indi ma-proseso sang serbisyo sang pagkilala ini nga litrato.';
+  String get errRecognitionRefused =>
+      'Indi ma-proseso sang serbisyo sang pagkilala ini nga litrato.';
 
   @override
-  String get errRecognitionTruncated => 'Naputol ang sabat sang pagkilala. Palihog tilawi liwat.';
+  String get errRecognitionTruncated =>
+      'Naputol ang sabat sang pagkilala. Palihog tilawi liwat.';
 
   @override
-  String get errRecognitionBadResponse => 'Wala ginapaabot nga sabat halin sa serbisyo sang pagkilala.';
+  String get errRecognitionBadResponse =>
+      'Wala ginapaabot nga sabat halin sa serbisyo sang pagkilala.';
 
   @override
-  String get errRecognitionEmpty => 'Wala sang sulod ang sabat sang serbisyo sang pagkilala.';
+  String get errRecognitionEmpty =>
+      'Wala sang sulod ang sabat sang serbisyo sang pagkilala.';
 
   @override
-  String get errMissingFinnhubKey => 'Indi available ang market data sa sini nga bersyon.';
+  String get errMissingFinnhubKey =>
+      'Indi available ang market data sa sini nga bersyon.';
 
   @override
   String get errMarketUnreachable =>
@@ -392,7 +399,8 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Wala ginapaabot nga sabat halin sa serbisyo sang market data.';
+  String get errMarketBadResponse =>
+      'Wala ginapaabot nga sabat halin sa serbisyo sang market data.';
 
   @override
   String errNoQuote(String symbol) {
@@ -492,7 +500,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get aiRegenerate => 'Himua liwat';
 
   @override
-  String get aiGenerating => 'Ginahanda ang analisis… mahimo ini magdugay sang isa ukon duha ka minuto.';
+  String get aiGenerating =>
+      'Ginahanda ang analisis… mahimo ini magdugay sang isa ukon duha ka minuto.';
 
   @override
   String get aiSources => 'Mga ginhalinan';
@@ -507,10 +516,12 @@ class AppLocalizationsHil extends AppLocalizations {
       'Analisis nga ginhimo sang AI base sa publiko nga data kag bag-o nga mga balita. Mahimo nga may sala ini ukon daan na, kag indi ini laygay sa pag-invest.';
 
   @override
-  String get errAiNotConfigured => 'Indi available ang mga feature sang AI sa sini nga bersyon.';
+  String get errAiNotConfigured =>
+      'Indi available ang mga feature sang AI sa sini nga bersyon.';
 
   @override
-  String get errAiUnreachable => 'Indi maabot ang serbisyo sang AI. Tan-awa ang imo koneksyon sa internet.';
+  String get errAiUnreachable =>
+      'Indi maabot ang serbisyo sang AI. Tan-awa ang imo koneksyon sa internet.';
 
   @override
   String errAiHttp(String status) {
@@ -518,10 +529,12 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Nagdumili ang serbisyo sang AI nga analisahon ini nga stock.';
+  String get errAiRefused =>
+      'Nagdumili ang serbisyo sang AI nga analisahon ini nga stock.';
 
   @override
-  String get errAiBadResponse => 'Wala ginapaabot nga sabat halin sa serbisyo sang AI.';
+  String get errAiBadResponse =>
+      'Wala ginapaabot nga sabat halin sa serbisyo sang AI.';
 
   @override
   String get sectionChart => 'Chart sang presyo';
@@ -542,7 +555,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Wala sang history sang presyo halin sa karon nga ginhalinan sang data.';
+  String get chartUnavailable =>
+      'Wala sang history sang presyo halin sa karon nga ginhalinan sang data.';
 
   @override
   String get sectionStatements => 'Mga financial statement (tinuig)';
@@ -569,7 +583,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get labelOperatingCashFlow => 'Operating cash flow';
 
   @override
-  String get statementsUnavailable => 'Wala sang ginreport nga financial statement para sa sini nga stock.';
+  String get statementsUnavailable =>
+      'Wala sang ginreport nga financial statement para sa sini nga stock.';
 
   @override
   String get launchAtLogin => 'Buksi sa pag-log in';
@@ -578,7 +593,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get hotkeyLabel => 'Global nga shortcut';
 
   @override
-  String get hotkeyRecordHint => 'I-click diri, dayon pinduta ang bag-o nga kombinasyon sang key';
+  String get hotkeyRecordHint =>
+      'I-click diri, dayon pinduta ang bag-o nga kombinasyon sang key';
 
   @override
   String get hotkeyReset => 'Ibalik sa default';
@@ -599,7 +615,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get removeFromFavorites => 'Kuhaa sa mga paborito';
 
   @override
-  String get noFavorites => 'Wala pa sang paborito. I-tap ang bituon sa isa ka stock para idugang ini.';
+  String get noFavorites =>
+      'Wala pa sang paborito. I-tap ang bituon sa isa ka stock para idugang ini.';
 
   @override
   String get displayCurrency => 'Currency nga ipakita';
@@ -646,7 +663,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get updateDownloading => 'Gina-download ang update sa background…';
 
   @override
-  String get updateDownloaded => 'Handa na ang update. I-restart para ma-install ini.';
+  String get updateDownloaded =>
+      'Handa na ang update. I-restart para ma-install ini.';
 
   @override
   String get updateNow => 'I-update';
@@ -655,7 +673,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get restartNow => 'I-restart';
 
   @override
-  String get updatesViaStore => 'Awtomatiko nga nagaabot ang mga update paagi sa app store.';
+  String get updatesViaStore =>
+      'Awtomatiko nga nagaabot ang mga update paagi sa app store.';
 
   @override
   String get updateCheckFailed => 'Indi matan-aw kon may update.';
@@ -703,7 +722,8 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Natapos na ang imo libre nga pagtilaw. Magpili sang plan para magpadayon sa pag-analisa.';
+  String get trialExpired =>
+      'Natapos na ang imo libre nga pagtilaw. Magpili sang plan para magpadayon sa pag-analisa.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -739,7 +759,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get perMonth => '/ bulan';
 
   @override
-  String get extraPacksTitle => 'Kinahanglan pa sang dugang? Magbakal sang dugang nga analisis';
+  String get extraPacksTitle =>
+      'Kinahanglan pa sang dugang? Magbakal sang dugang nga analisis';
 
   @override
   String get extraPacksHint =>
@@ -775,10 +796,12 @@ class AppLocalizationsHil extends AppLocalizations {
       'Wala ka na sang nabilin nga analisis para sa sini nga panahon. I-upgrade ang imo plan ukon magbakal sang dugang nga analisis.';
 
   @override
-  String get errTrialExpired => 'Natapos na ang imo libre nga pagtilaw. Magpili sang plan para magpadayon.';
+  String get errTrialExpired =>
+      'Natapos na ang imo libre nga pagtilaw. Magpili sang plan para magpadayon.';
 
   @override
-  String get errNoPlan => 'Kinahanglan sang aktibo nga plan para sa analisis sang AI.';
+  String get errNoPlan =>
+      'Kinahanglan sang aktibo nga plan para sa analisis sang AI.';
 
   @override
   String get viewPlans => 'Tan-awa ang mga plan';
@@ -787,7 +810,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get usageTitle => 'Paggamit';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: ginasimulate lang ang mga pagbakal sa sini nga platform.';
+  String get demoPurchaseNote =>
+      'Demo billing: ginasimulate lang ang mga pagbakal sa sini nga platform.';
 
   @override
   String get mostPopular => 'Pinakapopular';
@@ -824,7 +848,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get aiDepthBriefDesc => 'Ang importante lang, dasig.';
 
   @override
-  String get aiDepthStandardDesc => 'Bug-os nga report nga may tanan nga seksyon.';
+  String get aiDepthStandardDesc =>
+      'Bug-os nga report nga may tanan nga seksyon.';
 
   @override
   String get aiDepthDeepDesc =>
@@ -856,10 +881,12 @@ class AppLocalizationsHil extends AppLocalizations {
   String get aiReaderExperienced => 'May eksperyensya';
 
   @override
-  String get aiReaderBeginnerDesc => 'Simple nga lingguahe; ginapaathag ang tagsa ka teknikal nga termino.';
+  String get aiReaderBeginnerDesc =>
+      'Simple nga lingguahe; ginapaathag ang tagsa ka teknikal nga termino.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Mas siksik nga teksto nga may kinaandan nga mga termino sa pinansya.';
+  String get aiReaderExperiencedDesc =>
+      'Mas siksik nga teksto nga may kinaandan nga mga termino sa pinansya.';
 
   @override
   String get aiCounterArgument => 'Pinakamabakod nga kontra-argumento';
@@ -959,7 +986,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get upcomingEvents => 'Masunod nga mga hitabo';
 
   @override
-  String get outlookChartNote => 'Ginbanabana nga mga range; ang mga posibilidad banabana lang, indi tagna.';
+  String get outlookChartNote =>
+      'Ginbanabana nga mga range; ang mga posibilidad banabana lang, indi tagna.';
 
   @override
   String get accountTitle => 'Account';
@@ -974,10 +1002,12 @@ class AppLocalizationsHil extends AppLocalizations {
   String get notSignedIn => 'Wala naka-sign in';
 
   @override
-  String get accountBenefit => 'Mag-sign in para magamit ang imo subscription sa tanan mo nga device.';
+  String get accountBenefit =>
+      'Mag-sign in para magamit ang imo subscription sa tanan mo nga device.';
 
   @override
-  String get accountSyncedNote => 'Pareho ang imo subscription kag nabilin nga analisis sa tagsa ka device.';
+  String get accountSyncedNote =>
+      'Pareho ang imo subscription kag nabilin nga analisis sa tagsa ka device.';
 
   @override
   String get signInTitle => 'Mag-sign in sa WhatStock';
@@ -1009,13 +1039,16 @@ class AppLocalizationsHil extends AppLocalizations {
   String get errInvalidEmail => 'Palihog isulat ang balido nga email address.';
 
   @override
-  String get errSignInFailed => 'Napaslawan ang pag-sign in. Tan-awa ang imo koneksyon kag tilawi liwat.';
+  String get errSignInFailed =>
+      'Napaslawan ang pag-sign in. Tan-awa ang imo koneksyon kag tilawi liwat.';
 
   @override
-  String get checkoutWaiting => 'Tapusa ang pagbayad sa imo browser. Awtomatiko nga mag-update ang app kon tapos na.';
+  String get checkoutWaiting =>
+      'Tapusa ang pagbayad sa imo browser. Awtomatiko nga mag-update ang app kon tapos na.';
 
   @override
-  String get paymentViaStripe => 'Segurado nga pagbayad sa imo browser paagi sa Stripe. Mahimo i-kansela bisan san-o.';
+  String get paymentViaStripe =>
+      'Segurado nga pagbayad sa imo browser paagi sa Stripe. Mahimo i-kansela bisan san-o.';
 
   @override
   String get paymentViaStore =>
@@ -1051,7 +1084,12 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ka tuig', one: '$years ka tuig');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years ka tuig',
+      one: '$years ka tuig',
+    );
     return '$_temp0';
   }
 
@@ -1112,7 +1150,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get portfolioAdd => 'Idugang';
 
   @override
-  String get portfolioInvalidNumber => 'Magsulat sang numero nga labaw sa zero.';
+  String get portfolioInvalidNumber =>
+      'Magsulat sang numero nga labaw sa zero.';
 
   @override
   String portfolioAdded(String symbol) {
@@ -1257,7 +1296,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get alertOpen => 'Buksi';
 
   @override
-  String get keepInTrayTitle => 'Padayon nga magdalagan kon nasirhan ang window';
+  String get keepInTrayTitle =>
+      'Padayon nga magdalagan kon nasirhan ang window';
 
   @override
   String get keepInTraySubtitle =>
@@ -1294,7 +1334,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get accountDeleted => 'Napanas na ang imo account.';
 
   @override
-  String get errDeleteAccount => 'Indi mapanas ang account. Tan-awa ang imo koneksyon kag tilawi liwat.';
+  String get errDeleteAccount =>
+      'Indi mapanas ang account. Tan-awa ang imo koneksyon kag tilawi liwat.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1348,7 +1389,8 @@ class AppLocalizationsHil extends AppLocalizations {
       'Expired na ini nga imbitasyon. Pangayo sang bag-o nga code sa tawo nga nag-imbitar sa imo.';
 
   @override
-  String get inviteDeviceLimit => 'Ginagamit na ini nga code sang imbitasyon sa pinakamadamo nga device nga gintugot.';
+  String get inviteDeviceLimit =>
+      'Ginagamit na ini nga code sang imbitasyon sa pinakamadamo nga device nga gintugot.';
 
   @override
   String get previewConfidential => 'Kumpidensyal nga preview';
@@ -1462,14 +1504,16 @@ class AppLocalizationsHil extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Gindugang ang $count ka dugang nga analisis. Malipayon nga pag-abot!',
+      other:
+          'Gindugang ang $count ka dugang nga analisis. Malipayon nga pag-abot!',
       one: 'Gindugang ang 1 ka dugang nga analisis. Malipayon nga pag-abot!',
     );
     return '$_temp0';
   }
 
   @override
-  String get referralErrUnknown => 'Wala sang amo sini nga code. Susiha kag tilawi liwat.';
+  String get referralErrUnknown =>
+      'Wala sang amo sini nga code. Susiha kag tilawi liwat.';
 
   @override
   String get referralErrOwn => 'Indi mo magamit ang imo kaugalingon nga code.';
@@ -1549,7 +1593,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get telemetryDecline => 'Indi, salamat';
 
   @override
-  String get telemetrySetting => 'Anonymous nga estadistika kag mga crash report';
+  String get telemetrySetting =>
+      'Anonymous nga estadistika kag mga crash report';
 
   @override
   String get telemetrySettingHint =>
@@ -1590,7 +1635,8 @@ class AppLocalizationsHil extends AppLocalizations {
       'Amo ato ang katapusan nga pamangkot para sa sini nga analisis. Maghimo sang bag-o nga analisis para makapamangkot pa.';
 
   @override
-  String get errAskLimit => 'Naabot mo na ang limitasyon sang mga pamangkot subong nga adlaw. Tilawi liwat buwas.';
+  String get errAskLimit =>
+      'Naabot mo na ang limitasyon sang mga pamangkot subong nga adlaw. Tilawi liwat buwas.';
 
   @override
   String get eventTomorrow => 'Buwas';
@@ -1627,7 +1673,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get eventDividend => 'Ginapaabot nga dibidendo';
 
   @override
-  String get eventDividendEstimate => 'Ginbanta-banta halin sa imo narekord nga mga bayad';
+  String get eventDividendEstimate =>
+      'Ginbanta-banta halin sa imo narekord nga mga bayad';
 
   @override
   String get eventsHint =>
@@ -1686,7 +1733,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get notesTitle => 'Akon mga nota';
 
   @override
-  String get notesHint => 'Ngaa ginbakal mo ini, ano ang ginabantayan mo, ano ang makapabaligya sa imo?';
+  String get notesHint =>
+      'Ngaa ginbakal mo ini, ano ang ginabantayan mo, ano ang makapabaligya sa imo?';
 
   @override
   String get notesInfo =>
@@ -1748,7 +1796,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get syncNow => 'I-sync subong';
 
   @override
-  String get syncFailed => 'Napaslawan ang pag-sync. Tilawan liwat ini sing awtomatiko.';
+  String get syncFailed =>
+      'Napaslawan ang pag-sync. Tilawan liwat ini sing awtomatiko.';
 
   @override
   String get alertEmailTitle => 'E-mail kon mag-trigger ang alerto';
@@ -1917,7 +1966,8 @@ class AppLocalizationsHil extends AppLocalizations {
       'Pila kadako ang paghulag sang stock upod sa merkado: 1 = pareho sa merkado, 1.5 = mga 50% mas dako nga pagsaka-panaog, idalom sa 1 = mas kalmado.';
 
   @override
-  String get glossRevenueTtm => 'Kabilugan nga baligya sang nagligad nga 12 ka bulan, antes sang bisan ano nga gastos.';
+  String get glossRevenueTtm =>
+      'Kabilugan nga baligya sang nagligad nga 12 ka bulan, antes sang bisan ano nga gastos.';
 
   @override
   String get glossNetIncomeTtm =>
@@ -1952,17 +2002,20 @@ class AppLocalizationsHil extends AppLocalizations {
       'Short-term assets ÷ mga bayaran sa sulod sang isa ka tuig. Labaw sa 1 nagakahulugan nga masarangan sang kompanya ang malapit nga mga bayaran.';
 
   @override
-  String get glossRevenueGrowth => 'Pila ang ginsaka sang revenue kumparar sang isa ka tuig na ang nagligad.';
+  String get glossRevenueGrowth =>
+      'Pila ang ginsaka sang revenue kumparar sang isa ka tuig na ang nagligad.';
 
   @override
-  String get glossEpsGrowth => 'Pila ang ginsaka sang ganansya kada share kumparar sang isa ka tuig na ang nagligad.';
+  String get glossEpsGrowth =>
+      'Pila ang ginsaka sang ganansya kada share kumparar sang isa ka tuig na ang nagligad.';
 
   @override
   String get glossDividendYield =>
       'Tinuig nga dibidendo ÷ presyo sang share: ang kuwarta nga imo makuha kada tuig, bilang porsiyento sang imo ginbayad.';
 
   @override
-  String get glossDividendPerShare => 'Ang dibidendo nga ginbayad sa isa ka share sa nagligad nga tuig.';
+  String get glossDividendPerShare =>
+      'Ang dibidendo nga ginbayad sa isa ka share sa nagligad nga tuig.';
 
   @override
   String get glossPayoutRatio =>
@@ -2060,8 +2113,10 @@ class AppLocalizationsHil extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'Pareho ukon labaw sa ginapaabot nga EPS sa $beats sang katapusan nga $total ka kwarter',
-      one: 'Pareho ukon labaw sa ginapaabot nga EPS sa $beats sang 1 ka kwarter',
+      other:
+          'Pareho ukon labaw sa ginapaabot nga EPS sa $beats sang katapusan nga $total ka kwarter',
+      one:
+          'Pareho ukon labaw sa ginapaabot nga EPS sa $beats sang 1 ka kwarter',
     );
     return '$_temp0';
   }
@@ -2119,7 +2174,8 @@ class AppLocalizationsHil extends AppLocalizations {
       'Usisaa ang mga numero antes idugang. Ang presyo amo ang imo average nga presyo sang pagbakal kada share, indi ang presyo subong.';
 
   @override
-  String get holdingsNoPrice => 'Wala sang average nga presyo sang pagbakal sa litrato';
+  String get holdingsNoPrice =>
+      'Wala sang average nga presyo sang pagbakal sa litrato';
 
   @override
   String holdingsAdd(int count) {
@@ -2177,7 +2233,12 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ka pagbakal', one: '1 ka pagbakal');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka pagbakal',
+      one: '1 ka pagbakal',
+    );
     return '$_temp0';
   }
 
@@ -2252,13 +2313,16 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard => 'Nakopya sa clipboard – i-paste ini bisan diin mo gusto ipaambit.';
+  String get sharedToClipboard =>
+      'Nakopya sa clipboard – i-paste ini bisan diin mo gusto ipaambit.';
 
   @override
-  String get glossaryNoMatch => 'Wala sang termino nga nagatupong sa imo ginpangita.';
+  String get glossaryNoMatch =>
+      'Wala sang termino nga nagatupong sa imo ginpangita.';
 
   @override
-  String get cashInvalidAmount => 'Magbutang sang kantidad nga 0 ukon labaw pa.';
+  String get cashInvalidAmount =>
+      'Magbutang sang kantidad nga 0 ukon labaw pa.';
 
   @override
   String get portfolioImportNothing =>
@@ -2268,6 +2332,22 @@ class AppLocalizationsHil extends AppLocalizations {
   String lotPriceFarFromQuote(String price) {
     return 'Malayo gid ini sa presyo subong ($price). Usisaa ini, ukon i-save liwat kon husto ini.';
   }
+
+  @override
+  String get accountDeletedElsewhere =>
+      'Ginpanas ini nga account sa iban nga device ukon sa web, gani ginkuha man ang iya datos sa sini nga device.';
+
+  @override
+  String get errAiUnavailable =>
+      'Indi available ang serbisyo sang AI subong. Tilawi liwat pagkaligad sang pila ka minuto.';
+
+  @override
+  String get errMarketUnavailable =>
+      'Indi available ang market data subong. Tilawi liwat pagkaligad sang pila ka minuto.';
+
+  @override
+  String get purchaseUnavailable =>
+      'Indi available ang pagbakal subong. Tilawi liwat sa ulihi.';
 
   @override
   String get portfolioAskTitle => 'Mga pamangkot parte sa imo portfolio';
@@ -2282,13 +2362,15 @@ class AppLocalizationsHil extends AppLocalizations {
   String get backupSave => 'I-save ang backup';
 
   @override
-  String get backupSaveHint => 'Ang imo mga paborito, listahan, portfolio, alerto kag nota sa isa ka file.';
+  String get backupSaveHint =>
+      'Ang imo mga paborito, listahan, portfolio, alerto kag nota sa isa ka file.';
 
   @override
   String get backupRestore => 'I-restore halin sa backup';
 
   @override
-  String get backupRestoreHint => 'Idugang ang yara sa file; wala sang mapapas sa imo yara subong.';
+  String get backupRestoreHint =>
+      'Idugang ang yara sa file; wala sang mapapas sa imo yara subong.';
 
   @override
   String get backupRestored => 'Na-restore ang backup.';
@@ -2386,7 +2468,8 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
-  String get portfolioExportRealized => 'I-export ang na-realize nga ganansya (CSV)';
+  String get portfolioExportRealized =>
+      'I-export ang na-realize nga ganansya (CSV)';
 
   @override
   String get portfolioAnnualReturn => 'Tinuig nga kita';
@@ -2504,7 +2587,8 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
-  String get dividendGoalSet => 'Magbutang sang binulan nga tulumuron sa dibidendo';
+  String get dividendGoalSet =>
+      'Magbutang sang binulan nga tulumuron sa dibidendo';
 
   @override
   String get dividendGoalTitle => 'Binulan nga tulumuron sa dibidendo';
@@ -2580,11 +2664,17 @@ class AppLocalizationsHil extends AppLocalizations {
   String get portfolioTopHoldings => 'Pinakadako nga mga posisyon';
 
   @override
-  String get portfolioShareNote => 'Porsiyento lang ang ginapaambit, wala sang kantidad.';
+  String get portfolioShareNote =>
+      'Porsiyento lang ang ginapaambit, wala sang kantidad.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ka posisyon', one: '1 ka posisyon');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka posisyon',
+      one: '1 ka posisyon',
+    );
     return '$_temp0';
   }
 
@@ -2690,10 +2780,12 @@ class AppLocalizationsHil extends AppLocalizations {
   String get lotNoteAdd => 'Idugang ang nota';
 
   @override
-  String get lotNoteBuyHint => 'Ngaa nagabakal ka? Mapakadto ini sa mga nota sang stock, upod ang petsa.';
+  String get lotNoteBuyHint =>
+      'Ngaa nagabakal ka? Mapakadto ini sa mga nota sang stock, upod ang petsa.';
 
   @override
-  String get lotNoteSellHint => 'Ngaa nagabaligya ka? Mapakadto ini sa mga nota sang stock, upod ang petsa.';
+  String get lotNoteSellHint =>
+      'Ngaa nagabaligya ka? Mapakadto ini sa mga nota sang stock, upod ang petsa.';
 
   @override
   String get lotNoteBought => 'Ginbakal';
@@ -2714,7 +2806,12 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days ka adlaw', one: '$days ka adlaw');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ka adlaw',
+      one: '$days ka adlaw',
+    );
     return '$_temp0';
   }
 
@@ -2768,7 +2865,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get activitySearchHint => 'I-filter suno sa ticker';
 
   @override
-  String get activityNoMatch => 'Wala sang transaksyon nga nagtupong sa filter.';
+  String get activityNoMatch =>
+      'Wala sang transaksyon nga nagtupong sa filter.';
 
   @override
   String portfolioImportDuplicates(int count) {
@@ -2802,10 +2900,12 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Mag-sign in gamit ang imo e-mail para magamit ang code sang imo abyan.';
+  String get referralErrSignIn =>
+      'Mag-sign in gamit ang imo e-mail para magamit ang code sang imo abyan.';
 
   @override
-  String get referralErrFull => 'Nagamit na ini nga code sa pinakamadamo nga beses nga ginatugot.';
+  String get referralErrFull =>
+      'Nagamit na ini nga code sa pinakamadamo nga beses nga ginatugot.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2817,7 +2917,8 @@ class AppLocalizationsHil extends AppLocalizations {
       'Naputol ang analisis antes ini natapos. Palihog tilawi liwat – wala ini nagbuhin sa imo alokasyon.';
 
   @override
-  String get errImageUnsupported => 'Indi mabasa ini nga litrato. I-save ini subong JPEG ukon PNG kag tilawi liwat.';
+  String get errImageUnsupported =>
+      'Indi mabasa ini nga litrato. I-save ini subong JPEG ukon PNG kag tilawi liwat.';
 
   @override
   String get errRateLimited =>
@@ -2837,7 +2938,8 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing => 'Wala sang nakita nga nauna nga ginbakal nga mabalik.';
+  String get restoreNothing =>
+      'Wala sang nakita nga nauna nga ginbakal nga mabalik.';
 
   @override
   String get manageSubscriptionElsewhere =>
@@ -2864,8 +2966,10 @@ class AppLocalizationsHil extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Ang $count ka dibidendo sa $currencies wala sang exchange rate kag wala ginlakip sa mga kabilogan.',
-      one: 'Ang 1 ka dibidendo sa $currencies wala sang exchange rate kag wala ginlakip sa mga kabilogan.',
+      other:
+          'Ang $count ka dibidendo sa $currencies wala sang exchange rate kag wala ginlakip sa mga kabilogan.',
+      one:
+          'Ang 1 ka dibidendo sa $currencies wala sang exchange rate kag wala ginlakip sa mga kabilogan.',
     );
     return '$_temp0';
   }
@@ -2978,7 +3082,8 @@ class AppLocalizationsHil extends AppLocalizations {
       'Pangkabilugan nga impormasyon nga ginhimo sang AI parte sa komposisyon sang imo portfolio. Wala ini nagakonsiderar sang imo mga tulumuron, pinansyal nga kahimtangan ukon kahimtangan sa buhis, kag indi ini personal nga rekomendasyon ukon laygay sa pag-invest.';
 
   @override
-  String get briefNotificationTitle => 'Sumaryo sang AI · Subong upod ang imo mga stock';
+  String get briefNotificationTitle =>
+      'Sumaryo sang AI · Subong upod ang imo mga stock';
 
   @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
@@ -3048,7 +3153,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get sourceOpinion => 'Opinyon';
 
   @override
-  String get earningsSummaryButton => 'Ano ang sulod sang pinakabag-o nga report?';
+  String get earningsSummaryButton =>
+      'Ano ang sulod sang pinakabag-o nga report?';
 
   @override
   String get earningsSummaryNote =>
@@ -3061,7 +3167,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get compareNextReport => 'Masunod nga report';
 
   @override
-  String get resolvingDescription => 'Ginapat-od kon ano nga stock ang buot mo silingon…';
+  String get resolvingDescription =>
+      'Ginapat-od kon ano nga stock ang buot mo silingon…';
 
   @override
   String get instrumentTitle => 'Parte sa sini nga instrumento';
@@ -3136,7 +3243,8 @@ class AppLocalizationsHil extends AppLocalizations {
   String get portfolioSplitRatio => 'Ratio (bag-o : daan)';
 
   @override
-  String get portfolioSplitRatioError => 'Isulod ang ratio pareho sang 10:1, ukon 1:10 para sa reverse split.';
+  String get portfolioSplitRatioError =>
+      'Isulod ang ratio pareho sang 10:1, ukon 1:10 para sa reverse split.';
 
   @override
   String get portfolioSplitDate => 'Petsa sang split';
@@ -3301,10 +3409,12 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
-  String get signalCrossedAbove => 'nagsaka sa ibabaw sang 200 ka adlaw nga average';
+  String get signalCrossedAbove =>
+      'nagsaka sa ibabaw sang 200 ka adlaw nga average';
 
   @override
-  String get signalCrossedBelow => 'nagpanaog sa idalom sang 200 ka adlaw nga average';
+  String get signalCrossedBelow =>
+      'nagpanaog sa idalom sang 200 ka adlaw nga average';
 
   @override
   String get signalAlertsTitle => 'Mga pahibalo sa teknikal nga signal';

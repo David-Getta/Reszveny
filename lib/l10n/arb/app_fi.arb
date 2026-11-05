@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Haullasi ei löytynyt termejä.",
   "cashInvalidAmount": "Anna summa, joka on 0 tai enemmän.",
   "portfolioImportNothing": "Tekstistä ei voitu lukea yhtään tapahtumaa. Tarkista, että jokainen rivi on esimerkin mukainen.",
-  "lotPriceFarFromQuote": "Tämä poikkeaa paljon tämän päivän hinnasta ({price}). Tarkista se tai tallenna uudelleen, jos se on oikein."
+  "lotPriceFarFromQuote": "Tämä poikkeaa paljon tämän päivän hinnasta ({price}). Tarkista se tai tallenna uudelleen, jos se on oikein.",
+  "accountDeletedElsewhere": "Tämä tili poistettiin toisella laitteella tai verkossa, joten sen tiedot poistettiin myös tältä laitteelta.",
+  "errAiUnavailable": "Tekoälypalvelu ei ole juuri nyt käytettävissä. Yritä uudelleen muutaman minuutin kuluttua.",
+  "errMarketUnavailable": "Markkinadata ei ole juuri nyt käytettävissä. Yritä uudelleen muutaman minuutin kuluttua.",
+  "purchaseUnavailable": "Ostokset eivät ole juuri nyt käytettävissä. Yritä myöhemmin uudelleen."
 }

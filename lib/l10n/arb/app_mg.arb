@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Tsy misy teny mifanaraka amin'ny fikarohanao.",
   "cashInvalidAmount": "Ampidiro vola 0 na mihoatra.",
   "portfolioImportNothing": "Tsy nisy fividianana na fivarotana voavaky tamin'ity soratra ity. Hamarino fa mitovy amin'ny ohatra ny andalana tsirairay.",
-  "lotPriceFarFromQuote": "Lavitra be amin'ny vidiny androany ({price}) ity. Hamarino, na tehirizo indray raha marina izy."
+  "lotPriceFarFromQuote": "Lavitra be amin'ny vidiny androany ({price}) ity. Hamarino, na tehirizo indray raha marina izy.",
+  "accountDeletedElsewhere": "Voafafa tamin'ny fitaovana hafa na tamin'ny tranonkala ity kaonty ity, ka voafafa tamin'ity fitaovana ity koa ny angona ao aminy.",
+  "errAiUnavailable": "Tsy misy ny serivisy AI amin'izao fotoana izao. Andramo indray afaka minitra vitsivitsy.",
+  "errMarketUnavailable": "Tsy misy ny angona momba ny tsena amin'izao fotoana izao. Andramo indray afaka minitra vitsivitsy.",
+  "purchaseUnavailable": "Tsy azo atao ny fividianana amin'izao fotoana izao. Andramo indray any aoriana."
 }

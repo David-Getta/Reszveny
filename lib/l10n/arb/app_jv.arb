@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Ora ana istilah sing cocog karo panelusuran sampeyan.",
   "cashInvalidAmount": "Lebokna jumlah 0 utawa luwih.",
   "portfolioImportNothing": "Ora ana transaksi sing bisa diwaca saka teks iki. Priksa manawa saben baris katon kaya conto.",
-  "lotPriceFarFromQuote": "Iki adoh banget saka rega dina iki ({price}). Priksa dhisik, utawa simpen maneh yen wis bener."
+  "lotPriceFarFromQuote": "Iki adoh banget saka rega dina iki ({price}). Priksa dhisik, utawa simpen maneh yen wis bener.",
+  "accountDeletedElsewhere": "Akun iki wis dibusak ing piranti liya utawa ing web, mula datane uga dibusak saka piranti iki.",
+  "errAiUnavailable": "Layanan AI saiki ora kasedhiya. Coba maneh sawetara menit engkas.",
+  "errMarketUnavailable": "Data pasar saiki ora kasedhiya. Coba maneh sawetara menit engkas.",
+  "purchaseUnavailable": "Tukon saiki ora kasedhiya. Coba maneh mengko."
 }

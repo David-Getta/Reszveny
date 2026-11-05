@@ -896,5 +896,9 @@
   "glossaryNoMatch": "검색어와 일치하는 용어가 없습니다.",
   "cashInvalidAmount": "0 이상의 금액을 입력하세요.",
   "portfolioImportNothing": "이 텍스트에서 거래를 읽을 수 없습니다. 각 줄이 예시와 같은 형식인지 확인하세요.",
-  "lotPriceFarFromQuote": "오늘 가격({price})과 차이가 큽니다. 확인하거나, 맞다면 다시 저장하세요."
+  "lotPriceFarFromQuote": "오늘 가격({price})과 차이가 큽니다. 확인하거나, 맞다면 다시 저장하세요.",
+  "accountDeletedElsewhere": "이 계정은 다른 기기나 웹에서 삭제되어 이 기기에서도 데이터가 삭제되었습니다.",
+  "errAiUnavailable": "지금은 AI 서비스를 사용할 수 없습니다. 몇 분 후 다시 시도하세요.",
+  "errMarketUnavailable": "지금은 시장 데이터를 사용할 수 없습니다. 몇 분 후 다시 시도하세요.",
+  "purchaseUnavailable": "지금은 구매할 수 없습니다. 나중에 다시 시도하세요."
 }

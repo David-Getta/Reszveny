@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Inga begrepp matchar din sökning.",
   "cashInvalidAmount": "Ange ett belopp på 0 eller mer.",
   "portfolioImportNothing": "Inga transaktioner kunde läsas från texten. Kontrollera att varje rad ser ut som exemplet.",
-  "lotPriceFarFromQuote": "Det här ligger långt från dagens kurs ({price}). Kontrollera det, eller spara igen om det stämmer."
+  "lotPriceFarFromQuote": "Det här ligger långt från dagens kurs ({price}). Kontrollera det, eller spara igen om det stämmer.",
+  "accountDeletedElsewhere": "Det här kontot raderades på en annan enhet eller på webben, så dess data togs också bort från den här enheten.",
+  "errAiUnavailable": "AI-tjänsten är inte tillgänglig just nu. Försök igen om några minuter.",
+  "errMarketUnavailable": "Marknadsdata är inte tillgänglig just nu. Försök igen om några minuter.",
+  "purchaseUnavailable": "Köp är inte tillgängliga just nu. Försök igen senare."
 }

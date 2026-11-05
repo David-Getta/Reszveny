@@ -111,7 +111,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get errorGeneric => 'Något gick fel.';
 
   @override
-  String get errorSectionUnavailable => 'Det här avsnittet kunde inte läsas in.';
+  String get errorSectionUnavailable =>
+      'Det här avsnittet kunde inte läsas in.';
 
   @override
   String get notAvailable => 'ej tillg.';
@@ -318,7 +319,12 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analytiker', one: '1 analytiker');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analytiker',
+      one: '1 analytiker',
+    );
     return '$_temp0';
   }
 
@@ -350,7 +356,8 @@ class AppLocalizationsSv extends AppLocalizations {
       'Bildigenkänning är inte tillgänglig i den här versionen. Ange tickern manuellt i stället.';
 
   @override
-  String get errRecognitionUnreachable => 'Kunde inte nå igenkänningstjänsten. Kontrollera din internetanslutning.';
+  String get errRecognitionUnreachable =>
+      'Kunde inte nå igenkänningstjänsten. Kontrollera din internetanslutning.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -358,25 +365,32 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Igenkänningstjänsten kunde inte behandla bilden.';
+  String get errRecognitionRefused =>
+      'Igenkänningstjänsten kunde inte behandla bilden.';
 
   @override
-  String get errRecognitionTruncated => 'Svaret från igenkänningstjänsten avbröts. Försök igen.';
+  String get errRecognitionTruncated =>
+      'Svaret från igenkänningstjänsten avbröts. Försök igen.';
 
   @override
-  String get errRecognitionBadResponse => 'Oväntat svar från igenkänningstjänsten.';
+  String get errRecognitionBadResponse =>
+      'Oväntat svar från igenkänningstjänsten.';
 
   @override
-  String get errRecognitionEmpty => 'Igenkänningstjänsten returnerade ett tomt svar.';
+  String get errRecognitionEmpty =>
+      'Igenkänningstjänsten returnerade ett tomt svar.';
 
   @override
-  String get errMissingFinnhubKey => 'Marknadsdata är inte tillgänglig i den här versionen.';
+  String get errMissingFinnhubKey =>
+      'Marknadsdata är inte tillgänglig i den här versionen.';
 
   @override
-  String get errMarketUnreachable => 'Kunde inte nå marknadsdatatjänsten. Kontrollera din internetanslutning.';
+  String get errMarketUnreachable =>
+      'Kunde inte nå marknadsdatatjänsten. Kontrollera din internetanslutning.';
 
   @override
-  String get errMarketRateLimited => 'För många förfrågningar till marknadsdatatjänsten. Vänta en minut.';
+  String get errMarketRateLimited =>
+      'För många förfrågningar till marknadsdatatjänsten. Vänta en minut.';
 
   @override
   String errMarketHttp(String status) {
@@ -484,7 +498,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get aiRegenerate => 'Generera igen';
 
   @override
-  String get aiGenerating => 'Analysen förbereds… det kan ta en minut eller två.';
+  String get aiGenerating =>
+      'Analysen förbereds… det kan ta en minut eller två.';
 
   @override
   String get aiSources => 'Källor';
@@ -499,10 +514,12 @@ class AppLocalizationsSv extends AppLocalizations {
       'AI-genererad analys baserad på offentliga data och aktuella nyheter. Den kan innehålla fel eller vara inaktuell och är inte investeringsrådgivning.';
 
   @override
-  String get errAiNotConfigured => 'AI-funktioner är inte tillgängliga i den här versionen.';
+  String get errAiNotConfigured =>
+      'AI-funktioner är inte tillgängliga i den här versionen.';
 
   @override
-  String get errAiUnreachable => 'Kunde inte nå AI-tjänsten. Kontrollera din internetanslutning.';
+  String get errAiUnreachable =>
+      'Kunde inte nå AI-tjänsten. Kontrollera din internetanslutning.';
 
   @override
   String errAiHttp(String status) {
@@ -510,7 +527,8 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'AI-tjänsten avböjde att analysera den här aktien.';
+  String get errAiRefused =>
+      'AI-tjänsten avböjde att analysera den här aktien.';
 
   @override
   String get errAiBadResponse => 'Oväntat svar från AI-tjänsten.';
@@ -534,7 +552,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get rangeFiveYears => '5Å';
 
   @override
-  String get chartUnavailable => 'Kurshistorik är inte tillgänglig från den aktuella datakällan.';
+  String get chartUnavailable =>
+      'Kurshistorik är inte tillgänglig från den aktuella datakällan.';
 
   @override
   String get sectionStatements => 'Finansiella rapporter (årliga)';
@@ -561,7 +580,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get labelOperatingCashFlow => 'Operativt kassaflöde';
 
   @override
-  String get statementsUnavailable => 'Inga rapporterade finansiella rapporter är tillgängliga för den här aktien.';
+  String get statementsUnavailable =>
+      'Inga rapporterade finansiella rapporter är tillgängliga för den här aktien.';
 
   @override
   String get launchAtLogin => 'Starta vid inloggning';
@@ -570,7 +590,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get hotkeyLabel => 'Globalt kortkommando';
 
   @override
-  String get hotkeyRecordHint => 'Klicka här och tryck sedan på den nya tangentkombinationen';
+  String get hotkeyRecordHint =>
+      'Klicka här och tryck sedan på den nya tangentkombinationen';
 
   @override
   String get hotkeyReset => 'Återställ till standard';
@@ -591,7 +612,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get removeFromFavorites => 'Ta bort från favoriter';
 
   @override
-  String get noFavorites => 'Inga favoriter ännu. Tryck på stjärnan vid en aktie för att lägga till den.';
+  String get noFavorites =>
+      'Inga favoriter ännu. Tryck på stjärnan vid en aktie för att lägga till den.';
 
   @override
   String get displayCurrency => 'Visningsvaluta';
@@ -638,7 +660,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get updateDownloading => 'Uppdateringen hämtas i bakgrunden…';
 
   @override
-  String get updateDownloaded => 'Uppdateringen är klar. Starta om för att installera den.';
+  String get updateDownloaded =>
+      'Uppdateringen är klar. Starta om för att installera den.';
 
   @override
   String get updateNow => 'Uppdatera';
@@ -647,7 +670,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get restartNow => 'Starta om';
 
   @override
-  String get updatesViaStore => 'Uppdateringar kommer automatiskt via appbutiken.';
+  String get updatesViaStore =>
+      'Uppdateringar kommer automatiskt via appbutiken.';
 
   @override
   String get updateCheckFailed => 'Det gick inte att söka efter uppdateringar.';
@@ -695,7 +719,8 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Din gratis provperiod har gått ut. Välj en plan för att fortsätta analysera.';
+  String get trialExpired =>
+      'Din gratis provperiod har gått ut. Välj en plan för att fortsätta analysera.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -734,7 +759,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get extraPacksTitle => 'Behöver du fler? Köp extra analyser';
 
   @override
-  String get extraPacksHint => 'Extra analyser går aldrig ut och används efter din månatliga kvot.';
+  String get extraPacksHint =>
+      'Extra analyser går aldrig ut och används efter din månatliga kvot.';
 
   @override
   String get buy => 'Köp';
@@ -766,7 +792,8 @@ class AppLocalizationsSv extends AppLocalizations {
       'Du har inga analyser kvar för denna period. Uppgradera din plan eller köp extra analyser.';
 
   @override
-  String get errTrialExpired => 'Din gratis provperiod har gått ut. Välj en plan för att fortsätta.';
+  String get errTrialExpired =>
+      'Din gratis provperiod har gått ut. Välj en plan för att fortsätta.';
 
   @override
   String get errNoPlan => 'En aktiv plan krävs för AI-analys.';
@@ -778,7 +805,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get usageTitle => 'Användning';
 
   @override
-  String get demoPurchaseNote => 'Demofakturering: köp simuleras på den här plattformen.';
+  String get demoPurchaseNote =>
+      'Demofakturering: köp simuleras på den här plattformen.';
 
   @override
   String get mostPopular => 'Populärast';
@@ -818,7 +846,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get aiDepthStandardDesc => 'Fullständig rapport med alla avsnitt.';
 
   @override
-  String get aiDepthDeepDesc => 'Fler webbsökningar, jämförelse med jämförbara bolag och mer detaljer.';
+  String get aiDepthDeepDesc =>
+      'Fler webbsökningar, jämförelse med jämförbara bolag och mer detaljer.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -849,7 +878,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get aiReaderBeginnerDesc => 'Enkelt språk; varje fackterm förklaras.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Tätare text med vedertagen finansiell terminologi.';
+  String get aiReaderExperiencedDesc =>
+      'Tätare text med vedertagen finansiell terminologi.';
 
   @override
   String get aiCounterArgument => 'Starkaste motargumentet';
@@ -949,7 +979,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get upcomingEvents => 'Kommande händelser';
 
   @override
-  String get outlookChartNote => 'Vägledande intervall; sannolikheterna är grova bedömningar, inte prognoser.';
+  String get outlookChartNote =>
+      'Vägledande intervall; sannolikheterna är grova bedömningar, inte prognoser.';
 
   @override
   String get accountTitle => 'Konto';
@@ -964,10 +995,12 @@ class AppLocalizationsSv extends AppLocalizations {
   String get notSignedIn => 'Inte inloggad';
 
   @override
-  String get accountBenefit => 'Logga in så fungerar din prenumeration på alla dina enheter.';
+  String get accountBenefit =>
+      'Logga in så fungerar din prenumeration på alla dina enheter.';
 
   @override
-  String get accountSyncedNote => 'Din prenumeration och dina återstående analyser är desamma på alla enheter.';
+  String get accountSyncedNote =>
+      'Din prenumeration och dina återstående analyser är desamma på alla enheter.';
 
   @override
   String get signInTitle => 'Logga in på WhatStock';
@@ -999,13 +1032,16 @@ class AppLocalizationsSv extends AppLocalizations {
   String get errInvalidEmail => 'Ange en giltig e-postadress.';
 
   @override
-  String get errSignInFailed => 'Inloggningen misslyckades. Kontrollera anslutningen och försök igen.';
+  String get errSignInFailed =>
+      'Inloggningen misslyckades. Kontrollera anslutningen och försök igen.';
 
   @override
-  String get checkoutWaiting => 'Slutför betalningen i webbläsaren. Appen uppdateras automatiskt när den är klar.';
+  String get checkoutWaiting =>
+      'Slutför betalningen i webbläsaren. Appen uppdateras automatiskt när den är klar.';
 
   @override
-  String get paymentViaStripe => 'Säker betalning i webbläsaren via Stripe. Avsluta när du vill.';
+  String get paymentViaStripe =>
+      'Säker betalning i webbläsaren via Stripe. Avsluta när du vill.';
 
   @override
   String get paymentViaStore =>
@@ -1041,7 +1077,12 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years år', one: '1 år');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years år',
+      one: '1 år',
+    );
     return '$_temp0';
   }
 
@@ -1147,7 +1188,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get portfolioRemove => 'Ta bort';
 
   @override
-  String get portfolioExcluded => 'Innehav utan kurs eller växelkurs räknas inte med i summorna.';
+  String get portfolioExcluded =>
+      'Innehav utan kurs eller växelkurs räknas inte med i summorna.';
 
   @override
   String get priceAlerts => 'Kurslarm';
@@ -1189,7 +1231,8 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Inga kurslarm ännu. Öppna en aktie och tryck på klockan.';
+  String get alertsEmpty =>
+      'Inga kurslarm ännu. Öppna en aktie och tryck på klockan.';
 
   @override
   String get alertsNote =>
@@ -1282,7 +1325,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get accountDeleted => 'Ditt konto har raderats.';
 
   @override
-  String get errDeleteAccount => 'Kontot kunde inte raderas. Kontrollera anslutningen och försök igen.';
+  String get errDeleteAccount =>
+      'Kontot kunde inte raderas. Kontrollera anslutningen och försök igen.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1332,16 +1376,19 @@ class AppLocalizationsSv extends AppLocalizations {
   String get inviteInvalid => 'Den här inbjudningskoden är inte giltig.';
 
   @override
-  String get inviteExpired => 'Inbjudan har gått ut. Be personen som bjöd in dig om en ny kod.';
+  String get inviteExpired =>
+      'Inbjudan har gått ut. Be personen som bjöd in dig om en ny kod.';
 
   @override
-  String get inviteDeviceLimit => 'Den här inbjudningskoden används redan på det högsta tillåtna antalet enheter.';
+  String get inviteDeviceLimit =>
+      'Den här inbjudningskoden används redan på det högsta tillåtna antalet enheter.';
 
   @override
   String get previewConfidential => 'Konfidentiell förhandsversion';
 
   @override
-  String get errPreviewDailyLimit => 'Dagens analysgräns för den här förhandsversionen är nådd. Försök igen i morgon.';
+  String get errPreviewDailyLimit =>
+      'Dagens analysgräns för den här förhandsversionen är nådd. Försök igen i morgon.';
 
   @override
   String ageHours(int count) {
@@ -1396,7 +1443,8 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'Tryck på en AI-uppskattad nivå för att få ett larm när kursen når den.';
+  String get keyLevelAlertHint =>
+      'Tryck på en AI-uppskattad nivå för att få ett larm när kursen når den.';
 
   @override
   String get shareAnalysisTitle => 'Dela analys';
@@ -1411,7 +1459,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get shareCardFooter => 'Skapad med WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'AI-analys · illustrativa scenarier, inte prognoser · inte investeringsrådgivning';
+  String get shareCardDisclaimer =>
+      'AI-analys · illustrativa scenarier, inte prognoser · inte investeringsrådgivning';
 
   @override
   String get referralTitle => 'Bjud in vänner';
@@ -1453,7 +1502,8 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Koden finns inte. Kontrollera den och försök igen.';
+  String get referralErrUnknown =>
+      'Koden finns inte. Kontrollera den och försök igen.';
 
   @override
   String get referralErrOwn => 'Du kan inte lösa in din egen kod.';
@@ -1574,14 +1624,20 @@ class AppLocalizationsSv extends AppLocalizations {
       'Det var den sista frågan för den här analysen. Gör en ny analys för att ställa fler frågor.';
 
   @override
-  String get errAskLimit => 'Du har nått dagens gräns för frågor. Försök igen i morgon.';
+  String get errAskLimit =>
+      'Du har nått dagens gräns för frågor. Försök igen i morgon.';
 
   @override
   String get eventTomorrow => 'I morgon';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'om $days dagar', one: 'om 1 dag');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'om $days dagar',
+      one: 'om 1 dag',
+    );
     return '$_temp0';
   }
 
@@ -1606,7 +1662,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get eventDividend => 'Väntad utdelning';
 
   @override
-  String get eventDividendEstimate => 'Uppskattat utifrån de utdelningar du registrerat';
+  String get eventDividendEstimate =>
+      'Uppskattat utifrån de utdelningar du registrerat';
 
   @override
   String get eventsHint =>
@@ -1665,7 +1722,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get notesTitle => 'Mina anteckningar';
 
   @override
-  String get notesHint => 'Varför köpte du den, vad håller du koll på, vad skulle få dig att sälja?';
+  String get notesHint =>
+      'Varför köpte du den, vad håller du koll på, vad skulle få dig att sälja?';
 
   @override
   String get notesInfo =>
@@ -1715,7 +1773,8 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get syncInfo => 'Portfölj, favoriter, kurslarm och anteckningar synkroniseras mellan alla dina enheter.';
+  String get syncInfo =>
+      'Portfölj, favoriter, kurslarm och anteckningar synkroniseras mellan alla dina enheter.';
 
   @override
   String syncLast(String time) {
@@ -1726,7 +1785,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get syncNow => 'Synkronisera nu';
 
   @override
-  String get syncFailed => 'Synkroniseringen misslyckades. Ett nytt försök görs automatiskt.';
+  String get syncFailed =>
+      'Synkroniseringen misslyckades. Ett nytt försök görs automatiskt.';
 
   @override
   String get alertEmailTitle => 'E-post när ett larm utlöses';
@@ -1855,7 +1915,8 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'Vad hela bolaget är värt på börsen: aktiekurs × antal aktier.';
+  String get glossMarketCap =>
+      'Vad hela bolaget är värt på börsen: aktiekurs × antal aktier.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1894,7 +1955,8 @@ class AppLocalizationsSv extends AppLocalizations {
       'Hur mycket aktien brukar röra sig med marknaden: 1 = som marknaden, 1,5 = ungefär 50 % större svängningar, under 1 = lugnare.';
 
   @override
-  String get glossRevenueTtm => 'Total försäljning de senaste 12 månaderna, före alla kostnader.';
+  String get glossRevenueTtm =>
+      'Total försäljning de senaste 12 månaderna, före alla kostnader.';
 
   @override
   String get glossNetIncomeTtm =>
@@ -1917,7 +1979,8 @@ class AppLocalizationsSv extends AppLocalizations {
       'Avkastning på eget kapital: årsvinst ÷ ägarnas kapital. Visar hur väl ledningen använder aktieägarnas pengar; över cirka 15 % är starkt.';
 
   @override
-  String get glossRoa => 'Avkastning på tillgångar: årsvinst ÷ allt bolaget äger. Jämför inom samma bransch.';
+  String get glossRoa =>
+      'Avkastning på tillgångar: årsvinst ÷ allt bolaget äger. Jämför inom samma bransch.';
 
   @override
   String get glossDebtToEquity =>
@@ -1928,17 +1991,20 @@ class AppLocalizationsSv extends AppLocalizations {
       'Kortfristiga tillgångar ÷ skulder som förfaller inom ett år. Över 1 betyder att bolaget kan betala sina närmaste räkningar.';
 
   @override
-  String get glossRevenueGrowth => 'Hur mycket omsättningen har ökat jämfört med ett år tidigare.';
+  String get glossRevenueGrowth =>
+      'Hur mycket omsättningen har ökat jämfört med ett år tidigare.';
 
   @override
-  String get glossEpsGrowth => 'Hur mycket vinsten per aktie har ökat jämfört med ett år tidigare.';
+  String get glossEpsGrowth =>
+      'Hur mycket vinsten per aktie har ökat jämfört med ett år tidigare.';
 
   @override
   String get glossDividendYield =>
       'Årlig utdelning ÷ aktiekurs: den kontanta avkastning du skulle få per år, i procent av vad du betalar.';
 
   @override
-  String get glossDividendPerShare => 'Utdelningen som betalats per aktie det senaste året.';
+  String get glossDividendPerShare =>
+      'Utdelningen som betalats per aktie det senaste året.';
 
   @override
   String get glossPayoutRatio =>
@@ -2036,7 +2102,8 @@ class AppLocalizationsSv extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'I nivå med eller över förväntad EPS i $beats av de senaste $total kvartalen',
+      other:
+          'I nivå med eller över förväntad EPS i $beats av de senaste $total kvartalen',
       one: 'I nivå med eller över förväntad EPS i $beats av 1 kvartal',
     );
     return '$_temp0';
@@ -2153,7 +2220,12 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count köp', one: '1 köp');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count köp',
+      one: '1 köp',
+    );
     return '$_temp0';
   }
 
@@ -2184,7 +2256,8 @@ class AppLocalizationsSv extends AppLocalizations {
       'Köp och försäljningar på öppna marknaden av ledande befattningshavare och styrelseledamöter de senaste 90 dagarna (SEC Form 4). Utnyttjade optioner och aktietilldelningar räknas inte.';
 
   @override
-  String get insiderNone => 'Inga insynsköp eller -försäljningar på öppna marknaden de senaste 90 dagarna.';
+  String get insiderNone =>
+      'Inga insynsköp eller -försäljningar på öppna marknaden de senaste 90 dagarna.';
 
   @override
   String get analystTrend => 'Hur åsikterna har ändrats månad för månad';
@@ -2227,7 +2300,8 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard => 'Kopierat till urklipp – klistra in det där du vill dela det.';
+  String get sharedToClipboard =>
+      'Kopierat till urklipp – klistra in det där du vill dela det.';
 
   @override
   String get glossaryNoMatch => 'Inga begrepp matchar din sökning.';
@@ -2245,6 +2319,22 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get accountDeletedElsewhere =>
+      'Det här kontot raderades på en annan enhet eller på webben, så dess data togs också bort från den här enheten.';
+
+  @override
+  String get errAiUnavailable =>
+      'AI-tjänsten är inte tillgänglig just nu. Försök igen om några minuter.';
+
+  @override
+  String get errMarketUnavailable =>
+      'Marknadsdata är inte tillgänglig just nu. Försök igen om några minuter.';
+
+  @override
+  String get purchaseUnavailable =>
+      'Köp är inte tillgängliga just nu. Försök igen senare.';
+
+  @override
   String get portfolioAskTitle => 'Frågor om din portfölj';
 
   @override
@@ -2257,19 +2347,22 @@ class AppLocalizationsSv extends AppLocalizations {
   String get backupSave => 'Spara säkerhetskopia';
 
   @override
-  String get backupSaveHint => 'Dina favoriter, listor, portfölj, larm och anteckningar i en fil.';
+  String get backupSaveHint =>
+      'Dina favoriter, listor, portfölj, larm och anteckningar i en fil.';
 
   @override
   String get backupRestore => 'Återställ från säkerhetskopia';
 
   @override
-  String get backupRestoreHint => 'Lägger till det som finns i filen; inget du har nu raderas.';
+  String get backupRestoreHint =>
+      'Lägger till det som finns i filen; inget du har nu raderas.';
 
   @override
   String get backupRestored => 'Säkerhetskopian har återställts.';
 
   @override
-  String get backupInvalid => 'Den här filen är inte en WhatStock-säkerhetskopia.';
+  String get backupInvalid =>
+      'Den här filen är inte en WhatStock-säkerhetskopia.';
 
   @override
   String get allocationPositions => 'Aktier';
@@ -2382,7 +2475,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Portföljlarm';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'En notis när hela din portfölj rör sig så mycket på en dag.';
+  String get portfolioMoveAlertSubtitle =>
+      'En notis när hela din portfölj rör sig så mycket på en dag.';
 
   @override
   String get portfolioMoveAlertOff => 'Av';
@@ -2558,7 +2652,12 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count innehav', one: '$count innehav');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count innehav',
+      one: '$count innehav',
+    );
     return '$_temp0';
   }
 
@@ -2664,10 +2763,12 @@ class AppLocalizationsSv extends AppLocalizations {
   String get lotNoteAdd => 'Lägg till en anteckning';
 
   @override
-  String get lotNoteBuyHint => 'Varför köper du? Det hamnar i aktiens anteckningar, med datum.';
+  String get lotNoteBuyHint =>
+      'Varför köper du? Det hamnar i aktiens anteckningar, med datum.';
 
   @override
-  String get lotNoteSellHint => 'Varför säljer du? Det hamnar i aktiens anteckningar, med datum.';
+  String get lotNoteSellHint =>
+      'Varför säljer du? Det hamnar i aktiens anteckningar, med datum.';
 
   @override
   String get lotNoteBought => 'Köpt';
@@ -2677,13 +2778,23 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months månader', one: '$months månad');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months månader',
+      one: '$months månad',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days dagar', one: '$days dag');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dagar',
+      one: '$days dag',
+    );
     return '$_temp0';
   }
 
@@ -2771,10 +2882,12 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Logga in med din e-postadress för att lösa in en väns kod.';
+  String get referralErrSignIn =>
+      'Logga in med din e-postadress för att lösa in en väns kod.';
 
   @override
-  String get referralErrFull => 'Koden har redan lösts in det maximala antalet gånger.';
+  String get referralErrFull =>
+      'Koden har redan lösts in det maximala antalet gånger.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2782,16 +2895,20 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated => 'Analysen avbröts innan den var klar. Försök igen – den drog inget från din kvot.';
+  String get errAiTruncated =>
+      'Analysen avbröts innan den var klar. Försök igen – den drog inget från din kvot.';
 
   @override
-  String get errImageUnsupported => 'Bilden kan inte läsas. Spara den som JPEG eller PNG och försök igen.';
+  String get errImageUnsupported =>
+      'Bilden kan inte läsas. Spara den som JPEG eller PNG och försök igen.';
 
   @override
-  String get errRateLimited => 'För många förfrågningar på kort tid. Vänta en minut och försök igen.';
+  String get errRateLimited =>
+      'För många förfrågningar på kort tid. Vänta en minut och försök igen.';
 
   @override
-  String get watchListNameTaken => 'Det finns redan en lista med det här namnet.';
+  String get watchListNameTaken =>
+      'Det finns redan en lista med det här namnet.';
 
   @override
   String watchListLimit(int max) {
@@ -2945,7 +3062,8 @@ class AppLocalizationsSv extends AppLocalizations {
       'AI-genererad, allmän information om sammansättningen av din portfölj. Den tar inte hänsyn till dina mål, din ekonomi eller din skattesituation och är inte en personlig rekommendation eller investeringsrådgivning.';
 
   @override
-  String get briefNotificationTitle => 'AI-sammanfattning · I dag med dina aktier';
+  String get briefNotificationTitle =>
+      'AI-sammanfattning · I dag med dina aktier';
 
   @override
   String get portfolioGoalSet => 'Sätt ett mål';
@@ -3103,7 +3221,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get portfolioSplitRatio => 'Förhållande (nya : gamla)';
 
   @override
-  String get portfolioSplitRatioError => 'Ange ett förhållande som 10:1, eller 1:10 för en omvänd split.';
+  String get portfolioSplitRatioError =>
+      'Ange ett förhållande som 10:1, eller 1:10 för en omvänd split.';
 
   @override
   String get portfolioSplitDate => 'Datum för spliten';
@@ -3287,7 +3406,8 @@ class AppLocalizationsSv extends AppLocalizations {
   String get glossaryPageTitle => 'Ordlista';
 
   @override
-  String get glossaryPageSubtitle => 'Enkla förklaringar av alla tal appen visar, från P/E till RSI';
+  String get glossaryPageSubtitle =>
+      'Enkla förklaringar av alla tal appen visar, från P/E till RSI';
 
   @override
   String get glossarySearchHint => 'Sök i ordlistan';

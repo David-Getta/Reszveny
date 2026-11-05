@@ -351,7 +351,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get recognitionRawText => 'රූපයෙන් කියවූ පෙළ';
 
   @override
-  String get errMissingAnthropicKey => 'මෙම අනුවාදයේ රූප හඳුනාගැනීම ලබා ගත නොහැක. ඒ වෙනුවට ටිකර් අතින් ඇතුළු කරන්න.';
+  String get errMissingAnthropicKey =>
+      'මෙම අනුවාදයේ රූප හඳුනාගැනීම ලබා ගත නොහැක. ඒ වෙනුවට ටිකර් අතින් ඇතුළු කරන්න.';
 
   @override
   String get errRecognitionUnreachable =>
@@ -363,16 +364,20 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'හඳුනාගැනීමේ සේවාවට මෙම රූපය සැකසිය නොහැකි විය.';
+  String get errRecognitionRefused =>
+      'හඳුනාගැනීමේ සේවාවට මෙම රූපය සැකසිය නොහැකි විය.';
 
   @override
-  String get errRecognitionTruncated => 'හඳුනාගැනීමේ ප්‍රතිචාරය අතරමග නතර විය. කරුණාකර නැවත උත්සාහ කරන්න.';
+  String get errRecognitionTruncated =>
+      'හඳුනාගැනීමේ ප්‍රතිචාරය අතරමග නතර විය. කරුණාකර නැවත උත්සාහ කරන්න.';
 
   @override
-  String get errRecognitionBadResponse => 'හඳුනාගැනීමේ සේවාවෙන් අනපේක්ෂිත ප්‍රතිචාරයක් ලැබිණි.';
+  String get errRecognitionBadResponse =>
+      'හඳුනාගැනීමේ සේවාවෙන් අනපේක්ෂිත ප්‍රතිචාරයක් ලැබිණි.';
 
   @override
-  String get errRecognitionEmpty => 'හඳුනාගැනීමේ සේවාව හිස් ප්‍රතිචාරයක් ලබා දුන්නේය.';
+  String get errRecognitionEmpty =>
+      'හඳුනාගැනීමේ සේවාව හිස් ප්‍රතිචාරයක් ලබා දුන්නේය.';
 
   @override
   String get errMissingFinnhubKey => 'මෙම අනුවාදයේ වෙළඳපොළ දත්ත ලබා ගත නොහැක.';
@@ -382,7 +387,8 @@ class AppLocalizationsSi extends AppLocalizations {
       'වෙළඳපොළ දත්ත සේවාවට සම්බන්ධ විය නොහැකි විය. ඔබේ අන්තර්ජාල සම්බන්ධතාව පරීක්ෂා කරන්න.';
 
   @override
-  String get errMarketRateLimited => 'වෙළඳපොළ දත්ත සේවාවට ඉල්ලීම් වැඩිය. කරුණාකර මිනිත්තුවක් රැඳී සිටින්න.';
+  String get errMarketRateLimited =>
+      'වෙළඳපොළ දත්ත සේවාවට ඉල්ලීම් වැඩිය. කරුණාකර මිනිත්තුවක් රැඳී සිටින්න.';
 
   @override
   String errMarketHttp(String status) {
@@ -390,7 +396,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'වෙළඳපොළ දත්ත සේවාවෙන් අනපේක්ෂිත ප්‍රතිචාරයක් ලැබිණි.';
+  String get errMarketBadResponse =>
+      'වෙළඳපොළ දත්ත සේවාවෙන් අනපේක්ෂිත ප්‍රතිචාරයක් ලැබිණි.';
 
   @override
   String errNoQuote(String symbol) {
@@ -490,7 +497,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get aiRegenerate => 'නැවත සාදන්න';
 
   @override
-  String get aiGenerating => 'විශ්ලේෂණය සූදානම් කරමින්… මෙයට මිනිත්තුවක් දෙකක් ගත විය හැක.';
+  String get aiGenerating =>
+      'විශ්ලේෂණය සූදානම් කරමින්… මෙයට මිනිත්තුවක් දෙකක් ගත විය හැක.';
 
   @override
   String get aiSources => 'මූලාශ්‍ර';
@@ -508,7 +516,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get errAiNotConfigured => 'මෙම අනුවාදයේ AI විශේෂාංග ලබා ගත නොහැක.';
 
   @override
-  String get errAiUnreachable => 'AI සේවාවට සම්බන්ධ විය නොහැකි විය. ඔබේ අන්තර්ජාල සම්බන්ධතාව පරීක්ෂා කරන්න.';
+  String get errAiUnreachable =>
+      'AI සේවාවට සම්බන්ධ විය නොහැකි විය. ඔබේ අන්තර්ජාල සම්බන්ධතාව පරීක්ෂා කරන්න.';
 
   @override
   String errAiHttp(String status) {
@@ -516,7 +525,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'AI සේවාව මෙම කොටස විශ්ලේෂණය කිරීම ප්‍රතික්ෂේප කළේය.';
+  String get errAiRefused =>
+      'AI සේවාව මෙම කොටස විශ්ලේෂණය කිරීම ප්‍රතික්ෂේප කළේය.';
 
   @override
   String get errAiBadResponse => 'AI සේවාවෙන් අනපේක්ෂිත ප්‍රතිචාරයක් ලැබිණි.';
@@ -540,7 +550,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'වත්මන් දත්ත මූලාශ්‍රයෙන් මිල ඉතිහාසය ලබා ගත නොහැක.';
+  String get chartUnavailable =>
+      'වත්මන් දත්ත මූලාශ්‍රයෙන් මිල ඉතිහාසය ලබා ගත නොහැක.';
 
   @override
   String get sectionStatements => 'මූල්‍ය ප්‍රකාශන (වාර්ෂික)';
@@ -567,7 +578,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get labelOperatingCashFlow => 'මෙහෙයුම් මුදල් ප්‍රවාහය';
 
   @override
-  String get statementsUnavailable => 'මෙම කොටස සඳහා වාර්තා කළ මූල්‍ය ප්‍රකාශන නොමැත.';
+  String get statementsUnavailable =>
+      'මෙම කොටස සඳහා වාර්තා කළ මූල්‍ය ප්‍රකාශන නොමැත.';
 
   @override
   String get launchAtLogin => 'පුරනය වන විට ආරම්භ කරන්න';
@@ -597,7 +609,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get removeFromFavorites => 'ප්‍රියතමවලින් ඉවත් කරන්න';
 
   @override
-  String get noFavorites => 'තවමත් ප්‍රියතම නැත. එක් කිරීමට කොටසක තරු ලකුණ තට්ටු කරන්න.';
+  String get noFavorites =>
+      'තවමත් ප්‍රියතම නැත. එක් කිරීමට කොටසක තරු ලකුණ තට්ටු කරන්න.';
 
   @override
   String get displayCurrency => 'පෙන්වන මුදල් ඒකකය';
@@ -644,7 +657,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get updateDownloading => 'යාවත්කාලීනය පසුබිමින් බාගත වෙමින්…';
 
   @override
-  String get updateDownloaded => 'යාවත්කාලීනය සූදානම්. එය ස්ථාපනය කිරීමට නැවත අරඹන්න.';
+  String get updateDownloaded =>
+      'යාවත්කාලීනය සූදානම්. එය ස්ථාපනය කිරීමට නැවත අරඹන්න.';
 
   @override
   String get updateNow => 'යාවත්කාලීන කරන්න';
@@ -653,7 +667,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get restartNow => 'නැවත අරඹන්න';
 
   @override
-  String get updatesViaStore => 'යාවත්කාලීන යෙදුම් ගබඩාව හරහා ස්වයංක්‍රීයව ලැබේ.';
+  String get updatesViaStore =>
+      'යාවත්කාලීන යෙදුම් ගබඩාව හරහා ස්වයංක්‍රීයව ලැබේ.';
 
   @override
   String get updateCheckFailed => 'යාවත්කාලීන සඳහා පරීක්ෂා කළ නොහැකි විය.';
@@ -701,7 +716,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'ඔබේ නොමිලේ අත්හදා බැලීම අවසන්. දිගටම විශ්ලේෂණය කිරීමට සැලසුමක් තෝරන්න.';
+  String get trialExpired =>
+      'ඔබේ නොමිලේ අත්හදා බැලීම අවසන්. දිගටම විශ්ලේෂණය කිරීමට සැලසුමක් තෝරන්න.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -740,7 +756,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get extraPacksTitle => 'තව අවශ්‍යද? අමතර විශ්ලේෂණ මිලදී ගන්න';
 
   @override
-  String get extraPacksHint => 'අමතර විශ්ලේෂණ කිසිදා කල් ඉකුත් නොවන අතර ඔබේ මාසික සීමාවෙන් පසු භාවිත වේ.';
+  String get extraPacksHint =>
+      'අමතර විශ්ලේෂණ කිසිදා කල් ඉකුත් නොවන අතර ඔබේ මාසික සීමාවෙන් පසු භාවිත වේ.';
 
   @override
   String get buy => 'මිලදී ගන්න';
@@ -772,7 +789,8 @@ class AppLocalizationsSi extends AppLocalizations {
       'මෙම කාල සීමාවට ඔබට විශ්ලේෂණ ඉතිරි නැත. ඔබේ සැලසුම උසස් කරන්න හෝ අමතර විශ්ලේෂණ මිලදී ගන්න.';
 
   @override
-  String get errTrialExpired => 'ඔබේ නොමිලේ අත්හදා බැලීම අවසන්. දිගටම කරගෙන යාමට සැලසුමක් තෝරන්න.';
+  String get errTrialExpired =>
+      'ඔබේ නොමිලේ අත්හදා බැලීම අවසන්. දිගටම කරගෙන යාමට සැලසුමක් තෝරන්න.';
 
   @override
   String get errNoPlan => 'AI විශ්ලේෂණය සඳහා සක්‍රිය සැලසුමක් අවශ්‍යයි.';
@@ -784,7 +802,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get usageTitle => 'භාවිතය';
 
   @override
-  String get demoPurchaseNote => 'ආදර්ශන බිල්පත්: මෙම වේදිකාවේ මිලදී ගැනීම් අනුකරණය කෙරේ.';
+  String get demoPurchaseNote =>
+      'ආදර්ශන බිල්පත්: මෙම වේදිකාවේ මිලදී ගැනීම් අනුකරණය කෙරේ.';
 
   @override
   String get mostPopular => 'වඩාත්ම ජනප්‍රිය';
@@ -824,7 +843,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get aiDepthStandardDesc => 'සියලු ඛණ්ඩ සහිත සම්පූර්ණ වාර්තාව.';
 
   @override
-  String get aiDepthDeepDesc => 'වැඩි වෙබ් සෙවීම්, සමාන සමාගම් සමඟ සැසඳීම සහ ගැඹුරු විස්තර.';
+  String get aiDepthDeepDesc =>
+      'වැඩි වෙබ් සෙවීම්, සමාන සමාගම් සමඟ සැසඳීම සහ ගැඹුරු විස්තර.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -852,7 +872,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get aiReaderExperienced => 'පළපුරුදු';
 
   @override
-  String get aiReaderBeginnerDesc => 'සරල භාෂාව; සෑම තාක්ෂණික යෙදුමක්ම පැහැදිලි කෙරේ.';
+  String get aiReaderBeginnerDesc =>
+      'සරල භාෂාව; සෑම තාක්ෂණික යෙදුමක්ම පැහැදිලි කෙරේ.';
 
   @override
   String get aiReaderExperiencedDesc => 'සම්මත මූල්‍ය පාරිභාෂිතය සහිත ඝන පෙළ.';
@@ -861,7 +882,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get aiCounterArgument => 'ප්‍රබලතම ප්‍රතිතර්කය';
 
   @override
-  String get aiCounterArgumentDesc => 'සාරාංශය සැමවිටම අවසන් වන්නේ එහිම නිගමනයට එරෙහි ප්‍රබලතම තර්කයෙනි.';
+  String get aiCounterArgumentDesc =>
+      'සාරාංශය සැමවිටම අවසන් වන්නේ එහිම නිගමනයට එරෙහි ප්‍රබලතම තර්කයෙනි.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -954,7 +976,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get upcomingEvents => 'ඉදිරි සිදුවීම්';
 
   @override
-  String get outlookChartNote => 'දළ පරාස; සම්භාවිතා යනු දළ ඇස්තමේන්තු මිස අනාවැකි නොවේ.';
+  String get outlookChartNote =>
+      'දළ පරාස; සම්භාවිතා යනු දළ ඇස්තමේන්තු මිස අනාවැකි නොවේ.';
 
   @override
   String get accountTitle => 'ගිණුම';
@@ -969,10 +992,12 @@ class AppLocalizationsSi extends AppLocalizations {
   String get notSignedIn => 'පුරනය වී නැත';
 
   @override
-  String get accountBenefit => 'ඔබේ දායකත්වය ඔබේ සියලු උපාංගවල ක්‍රියා කිරීමට පුරන්න.';
+  String get accountBenefit =>
+      'ඔබේ දායකත්වය ඔබේ සියලු උපාංගවල ක්‍රියා කිරීමට පුරන්න.';
 
   @override
-  String get accountSyncedNote => 'ඔබේ දායකත්වය සහ ඉතිරි විශ්ලේෂණ සෑම උපාංගයකම සමානයි.';
+  String get accountSyncedNote =>
+      'ඔබේ දායකත්වය සහ ඉතිරි විශ්ලේෂණ සෑම උපාංගයකම සමානයි.';
 
   @override
   String get signInTitle => 'WhatStock වෙත පුරන්න';
@@ -1004,14 +1029,16 @@ class AppLocalizationsSi extends AppLocalizations {
   String get errInvalidEmail => 'කරුණාකර වලංගු ඊමේල් ලිපිනයක් ඇතුළු කරන්න.';
 
   @override
-  String get errSignInFailed => 'පුරනය අසාර්ථක විය. ඔබේ සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
+  String get errSignInFailed =>
+      'පුරනය අසාර්ථක විය. ඔබේ සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
 
   @override
   String get checkoutWaiting =>
       'ඔබේ බ්‍රවුසරයේ ගෙවීම සම්පූර්ණ කරන්න. එය අවසන් වූ විට යෙදුම ස්වයංක්‍රීයව යාවත්කාලීන වේ.';
 
   @override
-  String get paymentViaStripe => 'Stripe හරහා ඔබේ බ්‍රවුසරයේ ආරක්ෂිත ගෙවීම. ඕනෑම වේලාවක අවලංගු කළ හැක.';
+  String get paymentViaStripe =>
+      'Stripe හරහා ඔබේ බ්‍රවුසරයේ ආරක්ෂිත ගෙවීම. ඕනෑම වේලාවක අවලංගු කළ හැක.';
 
   @override
   String get paymentViaStore =>
@@ -1024,7 +1051,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get doubleOptionTitle => 'Option දෙවරක් ඔබන්න';
 
   @override
-  String get doubleOptionSubtitle => 'Option යතුර ඉක්මනින් දෙවරක් එබීමෙන්ද WhatStock කැඳවිය හැක.';
+  String get doubleOptionSubtitle =>
+      'Option යතුර ඉක්මනින් දෙවරක් එබීමෙන්ද WhatStock කැඳවිය හැක.';
 
   @override
   String get doubleOptionPermission =>
@@ -1046,7 +1074,12 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'වසර $years', one: 'වසර $years');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'වසර $years',
+      one: 'වසර $years',
+    );
     return '$_temp0';
   }
 
@@ -1152,7 +1185,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get portfolioRemove => 'ඉවත් කරන්න';
 
   @override
-  String get portfolioExcluded => 'මිලක් හෝ විනිමය අනුපාතයක් නොමැති ස්ථාන මුළු අගයන්ට ඇතුළත් නොවේ.';
+  String get portfolioExcluded =>
+      'මිලක් හෝ විනිමය අනුපාතයක් නොමැති ස්ථාන මුළු අගයන්ට ඇතුළත් නොවේ.';
 
   @override
   String get priceAlerts => 'මිල ඇඟවීම්';
@@ -1194,7 +1228,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'තවම මිල ඇඟවීම් නැත. එකක් සැකසීමට කොටසක් විවෘත කර සීනුව තට්ටු කරන්න.';
+  String get alertsEmpty =>
+      'තවම මිල ඇඟවීම් නැත. එකක් සැකසීමට කොටසක් විවෘත කර සීනුව තට්ටු කරන්න.';
 
   @override
   String get alertsNote =>
@@ -1277,7 +1312,8 @@ class AppLocalizationsSi extends AppLocalizations {
       'ඔබේ ගිණුම සහ අපගේ සේවාදායකයේ ගබඩා කළ සියල්ල (ඊමේල්, සීමාව, භාවිතය) සදහටම මැකෙන අතර, භාවිත නොකළ විශ්ලේෂණ අහිමි වේ. බ්‍රවුසරයෙන් ගෙවූ දායකත්වයක් වහාම අවලංගු වේ; App Store හෝ Google Play දායකත්වයක් ගබඩාවේ සැකසීම්වලින් අවලංගු කළ යුතුය.';
 
   @override
-  String get deleteLocalData => 'මෙම උපාංගයේ දත්තද මකන්න (කළඹ, ඇඟවීම්, ප්‍රියතම, ඉතිහාසය, සුරැකි විශ්ලේෂණ)';
+  String get deleteLocalData =>
+      'මෙම උපාංගයේ දත්තද මකන්න (කළඹ, ඇඟවීම්, ප්‍රියතම, ඉතිහාසය, සුරැකි විශ්ලේෂණ)';
 
   @override
   String get deleteAccountConfirm => 'සදහටම මකන්න';
@@ -1286,7 +1322,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get accountDeleted => 'ඔබේ ගිණුම මකා දමන ලදී.';
 
   @override
-  String get errDeleteAccount => 'ගිණුම මැකිය නොහැකි විය. ඔබේ සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
+  String get errDeleteAccount =>
+      'ගිණුම මැකිය නොහැකි විය. ඔබේ සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1323,7 +1360,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get inviteTitle => 'සංවෘත පෙරදසුන';
 
   @override
-  String get inviteBody => 'WhatStock දැනට ආරාධනා මගින් පමණක් ලබා ගත හැක. ඔබට ලැබුණු ආරාධනා කේතය ඇතුළත් කරන්න.';
+  String get inviteBody =>
+      'WhatStock දැනට ආරාධනා මගින් පමණක් ලබා ගත හැක. ඔබට ලැබුණු ආරාධනා කේතය ඇතුළත් කරන්න.';
 
   @override
   String get inviteCodeLabel => 'ආරාධනා කේතය';
@@ -1335,16 +1373,19 @@ class AppLocalizationsSi extends AppLocalizations {
   String get inviteInvalid => 'මෙම ආරාධනා කේතය වලංගු නොවේ.';
 
   @override
-  String get inviteExpired => 'මෙම ආරාධනාව කල් ඉකුත් වී ඇත. ඔබට ආරාධනා කළ පුද්ගලයාගෙන් නව කේතයක් ඉල්ලන්න.';
+  String get inviteExpired =>
+      'මෙම ආරාධනාව කල් ඉකුත් වී ඇත. ඔබට ආරාධනා කළ පුද්ගලයාගෙන් නව කේතයක් ඉල්ලන්න.';
 
   @override
-  String get inviteDeviceLimit => 'මෙම ආරාධනා කේතය දැනටමත් උපරිම උපාංග ගණනක භාවිත වේ.';
+  String get inviteDeviceLimit =>
+      'මෙම ආරාධනා කේතය දැනටමත් උපරිම උපාංග ගණනක භාවිත වේ.';
 
   @override
   String get previewConfidential => 'රහසිගත පෙරදසුන';
 
   @override
-  String get errPreviewDailyLimit => 'මෙම පෙරදසුනේ අද දින විශ්ලේෂණ සීමාවට ළඟා වී ඇත. හෙට නැවත උත්සාහ කරන්න.';
+  String get errPreviewDailyLimit =>
+      'මෙම පෙරදසුනේ අද දින විශ්ලේෂණ සීමාවට ළඟා වී ඇත. හෙට නැවත උත්සාහ කරන්න.';
 
   @override
   String ageHours(int count) {
@@ -1399,7 +1440,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'මිල AI ඇස්තමේන්තු කළ මට්ටමකට ළඟා වූ විට ඇඟවීමක් ලබා ගැනීමට එම මට්ටම තට්ටු කරන්න.';
+  String get keyLevelAlertHint =>
+      'මිල AI ඇස්තමේන්තු කළ මට්ටමකට ළඟා වූ විට ඇඟවීමක් ලබා ගැනීමට එම මට්ටම තට්ටු කරන්න.';
 
   @override
   String get shareAnalysisTitle => 'විශ්ලේෂණය බෙදාගන්න';
@@ -1414,7 +1456,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get shareCardFooter => 'WhatStock සමඟ සාදන ලදී';
 
   @override
-  String get shareCardDisclaimer => 'AI විශ්ලේෂණය · නිදර්ශන අවස්ථා, පුරෝකථන නොවේ · ආයෝජන උපදෙසක් නොවේ';
+  String get shareCardDisclaimer =>
+      'AI විශ්ලේෂණය · නිදර්ශන අවස්ථා, පුරෝකථන නොවේ · ආයෝජන උපදෙසක් නොවේ';
 
   @override
   String get referralTitle => 'මිතුරන්ට ආරාධනා කරන්න';
@@ -1456,7 +1499,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'මෙම කේතය නොපවතී. පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
+  String get referralErrUnknown =>
+      'මෙම කේතය නොපවතී. පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
 
   @override
   String get referralErrOwn => 'ඔබට ඔබේම කේතය භාවිත කළ නොහැක.';
@@ -1573,17 +1617,24 @@ class AppLocalizationsSi extends AppLocalizations {
   String get askSuggest3 => 'සරලව පැහැදිලි කරන්න';
 
   @override
-  String get askMaxReached => 'මෙම විශ්ලේෂණය සඳහා අවසාන ප්‍රශ්නය එයයි. තවත් ඇසීමට නව විශ්ලේෂණයක් සාදන්න.';
+  String get askMaxReached =>
+      'මෙම විශ්ලේෂණය සඳහා අවසාන ප්‍රශ්නය එයයි. තවත් ඇසීමට නව විශ්ලේෂණයක් සාදන්න.';
 
   @override
-  String get errAskLimit => 'ඔබ අද දින ප්‍රශ්න සීමාවට ළඟා වී ඇත. හෙට නැවත උත්සාහ කරන්න.';
+  String get errAskLimit =>
+      'ඔබ අද දින ප්‍රශ්න සීමාවට ළඟා වී ඇත. හෙට නැවත උත්සාහ කරන්න.';
 
   @override
   String get eventTomorrow => 'හෙට';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'දින $daysකින්', one: 'දින $daysකින්');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'දින $daysකින්',
+      one: 'දින $daysකින්',
+    );
     return '$_temp0';
   }
 
@@ -1667,10 +1718,12 @@ class AppLocalizationsSi extends AppLocalizations {
   String get notesTitle => 'මගේ සටහන්';
 
   @override
-  String get notesHint => 'ඔබ එය මිලදී ගත්තේ ඇයි, ඔබ අවධානය යොමු කරන්නේ කුමකටද, කුමක් සිදු වුවහොත් විකුණනවාද?';
+  String get notesHint =>
+      'ඔබ එය මිලදී ගත්තේ ඇයි, ඔබ අවධානය යොමු කරන්නේ කුමකටද, කුමක් සිදු වුවහොත් විකුණනවාද?';
 
   @override
-  String get notesInfo => 'මෙම උපාංගයේ සහ ඔබ පුරනය වී ඇත්නම් ඔබේ ගිණුමේ ගබඩා වේ. AI විශ්ලේෂණය ඔබේ සටහන් සැලකිල්ලට ගනී.';
+  String get notesInfo =>
+      'මෙම උපාංගයේ සහ ඔබ පුරනය වී ඇත්නම් ඔබේ ගිණුමේ ගබඩා වේ. AI විශ්ලේෂණය ඔබේ සටහන් සැලකිල්ලට ගනී.';
 
   @override
   String notesSaved(String date) {
@@ -1716,7 +1769,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get syncInfo => 'කළඹ, ප්‍රියතම, මිල ඇඟවීම් සහ සටහන් ඔබේ සියලු උපාංගවල සමමුහුර්ත වේ.';
+  String get syncInfo =>
+      'කළඹ, ප්‍රියතම, මිල ඇඟවීම් සහ සටහන් ඔබේ සියලු උපාංගවල සමමුහුර්ත වේ.';
 
   @override
   String syncLast(String time) {
@@ -1727,7 +1781,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get syncNow => 'දැන් සමමුහුර්ත කරන්න';
 
   @override
-  String get syncFailed => 'සමමුහුර්ත කිරීම අසාර්ථක විය. එය ස්වයංක්‍රීයව නැවත උත්සාහ කරනු ඇත.';
+  String get syncFailed =>
+      'සමමුහුර්ත කිරීම අසාර්ථක විය. එය ස්වයංක්‍රීයව නැවත උත්සාහ කරනු ඇත.';
 
   @override
   String get alertEmailTitle => 'ඇඟවීමක් ක්‍රියාත්මක වූ විට ඊමේල්';
@@ -1763,7 +1818,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get digestTitle => 'ඊමේල් මගින් සතිපතා සාරාංශය';
 
   @override
-  String get digestHint => 'සෑම සඳුදාවකම: පසුගිය සතියේ ඔබේ ප්‍රියතම සහ කළඹ චලනය වූ ආකාරය සහ ඒවායේ ඉදිරි ප්‍රතිඵල දින.';
+  String get digestHint =>
+      'සෑම සඳුදාවකම: පසුගිය සතියේ ඔබේ ප්‍රියතම සහ කළඹ චලනය වූ ආකාරය සහ ඒවායේ ඉදිරි ප්‍රතිඵල දින.';
 
   @override
   String get benchmarkTitle => 'S&P 500 සමඟ සැසඳීම';
@@ -1855,7 +1911,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'කොටස් වෙළඳපොළේ මුළු සමාගමේම වටිනාකම: කොටසක මිල × කොටස් ගණන.';
+  String get glossMarketCap =>
+      'කොටස් වෙළඳපොළේ මුළු සමාගමේම වටිනාකම: කොටසක මිල × කොටස් ගණන.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1886,17 +1943,20 @@ class AppLocalizationsSi extends AppLocalizations {
       'P/E ÷ අපේක්ෂිත වාර්ෂික ලාභ වර්ධනය (%). 1 පමණ බොහෝ විට සාධාරණ ලෙස සැලකේ; එය P/E වර්ධනය අනුව බලයි.';
 
   @override
-  String get glossEps => 'පසුගිය මාස 12 තුළ කොටසකට ලාභය. වසරින් වසර ඉහළ යන EPS නිරෝගී සමාගමක ප්‍රබලම සලකුණුවලින් එකකි.';
+  String get glossEps =>
+      'පසුගිය මාස 12 තුළ කොටසකට ලාභය. වසරින් වසර ඉහළ යන EPS නිරෝගී සමාගමක ප්‍රබලම සලකුණුවලින් එකකි.';
 
   @override
   String get glossBeta =>
       'කොටස වෙළඳපොළ සමඟ කොතරම් චලනය වේද: 1 = වෙළඳපොළ මෙන්, 1.5 = 50% පමණ විශාල උච්චාවචන, 1 ට අඩු = සන්සුන්.';
 
   @override
-  String get glossRevenueTtm => 'පසුගිය මාස 12 හි මුළු විකුණුම්, කිසිදු වියදමක් අඩු කිරීමට පෙර.';
+  String get glossRevenueTtm =>
+      'පසුගිය මාස 12 හි මුළු විකුණුම්, කිසිදු වියදමක් අඩු කිරීමට පෙර.';
 
   @override
-  String get glossNetIncomeTtm => 'පසුගිය මාස 12 තුළ සියලු වියදම්, පොලී සහ බදු වලින් පසු ඉතිරි වූ ලාභය.';
+  String get glossNetIncomeTtm =>
+      'පසුගිය මාස 12 තුළ සියලු වියදම්, පොලී සහ බදු වලින් පසු ඉතිරි වූ ලාභය.';
 
   @override
   String get glossGrossMargin =>
@@ -1915,7 +1975,8 @@ class AppLocalizationsSi extends AppLocalizations {
       'ස්කන්ධය මත ප්‍රතිලාභය: වාර්ෂික ලාභය ÷ හිමිකරුවන්ගේ ප්‍රාග්ධනය. කළමනාකාරිත්වය කොටස්කරුවන්ගේ මුදල් කොතරම් හොඳින් භාවිත කරනවාද පෙන්වයි; 15% පමණට වඩා වැඩි නම් ශක්තිමත්ය.';
 
   @override
-  String get glossRoa => 'වත්කම් මත ප්‍රතිලාභය: වාර්ෂික ලාභය ÷ සමාගම සතු සියල්ල. එකම කර්මාන්තය තුළ සසඳන්න.';
+  String get glossRoa =>
+      'වත්කම් මත ප්‍රතිලාභය: වාර්ෂික ලාභය ÷ සමාගම සතු සියල්ල. එකම කර්මාන්තය තුළ සසඳන්න.';
 
   @override
   String get glossDebtToEquity =>
@@ -1926,10 +1987,12 @@ class AppLocalizationsSi extends AppLocalizations {
       'කෙටිකාලීන වත්කම් ÷ වසරක් ඇතුළත ගෙවිය යුතු බිල්පත්. 1 ට වැඩි නම් සමාගමට ළඟ එන බිල්පත් ගෙවිය හැක.';
 
   @override
-  String get glossRevenueGrowth => 'වසරකට පෙර සමඟ සසඳන විට ආදායම කොපමණ වර්ධනය වූවාද.';
+  String get glossRevenueGrowth =>
+      'වසරකට පෙර සමඟ සසඳන විට ආදායම කොපමණ වර්ධනය වූවාද.';
 
   @override
-  String get glossEpsGrowth => 'වසරකට පෙර සමඟ සසඳන විට කොටසකට ලාභය කොපමණ වර්ධනය වූවාද.';
+  String get glossEpsGrowth =>
+      'වසරකට පෙර සමඟ සසඳන විට කොටසකට ලාභය කොපමණ වර්ධනය වූවාද.';
 
   @override
   String get glossDividendYield =>
@@ -2162,7 +2225,12 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'විකුණුම් $count', one: 'විකුණුම් $count');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'විකුණුම් $count',
+      one: 'විකුණුම් $count',
+    );
     return '$_temp0';
   }
 
@@ -2182,7 +2250,8 @@ class AppLocalizationsSi extends AppLocalizations {
       'පසුගිය දින 90 තුළ විධායකයින් සහ අධ්‍යක්ෂවරුන් විවෘත වෙළඳපොළේ කළ මිලදී ගැනීම් සහ විකුණුම් (SEC Form 4). විකල්ප ක්‍රියාත්මක කිරීම් සහ කොටස් ප්‍රදාන ගණන් නොගැනේ.';
 
   @override
-  String get insiderNone => 'පසුගිය දින 90 තුළ විවෘත වෙළඳපොළේ අභ්‍යන්තර මිලදී ගැනීම් හෝ විකුණුම් නොමැත.';
+  String get insiderNone =>
+      'පසුගිය දින 90 තුළ විවෘත වෙළඳපොළේ අභ්‍යන්තර මිලදී ගැනීම් හෝ විකුණුම් නොමැත.';
 
   @override
   String get analystTrend => 'මාසයෙන් මාසයට අදහස් වෙනස් වූ ආකාරය';
@@ -2206,7 +2275,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get watchListAddTo => 'ලැයිස්තුවකට එක් කරන්න';
 
   @override
-  String get watchListEmpty => 'මෙම ලැයිස්තුවේ තවම කොටස් නැත. එක් කිරීමට කොටසක් අසල ඇති ලැයිස්තු බොත්තම තට්ටු කරන්න.';
+  String get watchListEmpty =>
+      'මෙම ලැයිස්තුවේ තවම කොටස් නැත. එක් කිරීමට කොටසක් අසල ඇති ලැයිස්තු බොත්තම තට්ටු කරන්න.';
 
   @override
   String favoriteRemoved(String symbol) {
@@ -2224,7 +2294,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard => 'පසුරු පුවරුවට පිටපත් කළා – බෙදාගැනීමට අවශ්‍ය ඕනෑම තැනක අලවන්න.';
+  String get sharedToClipboard =>
+      'පසුරු පුවරුවට පිටපත් කළා – බෙදාගැනීමට අවශ්‍ය ඕනෑම තැනක අලවන්න.';
 
   @override
   String get glossaryNoMatch => 'ඔබගේ සෙවුමට ගැළපෙන පද නැත.';
@@ -2242,6 +2313,22 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get accountDeletedElsewhere =>
+      'මෙම ගිණුම වෙනත් උපාංගයකින් හෝ වෙබයෙන් මකා දැමූ බැවින්, එහි දත්ත මෙම උපාංගයෙන් ද ඉවත් කරන ලදී.';
+
+  @override
+  String get errAiUnavailable =>
+      'AI සේවාව මේ මොහොතේ ලබා ගත නොහැක. මිනිත්තු කිහිපයකින් නැවත උත්සාහ කරන්න.';
+
+  @override
+  String get errMarketUnavailable =>
+      'වෙළඳපොළ දත්ත මේ මොහොතේ ලබා ගත නොහැක. මිනිත්තු කිහිපයකින් නැවත උත්සාහ කරන්න.';
+
+  @override
+  String get purchaseUnavailable =>
+      'මිලදී ගැනීම් මේ මොහොතේ ලබා ගත නොහැක. පසුව නැවත උත්සාහ කරන්න.';
+
+  @override
   String get portfolioAskTitle => 'ඔබේ කළඹ ගැන ප්‍රශ්න';
 
   @override
@@ -2254,13 +2341,15 @@ class AppLocalizationsSi extends AppLocalizations {
   String get backupSave => 'උපස්ථයක් සුරකින්න';
 
   @override
-  String get backupSaveHint => 'ඔබේ ප්‍රියතම, ලැයිස්තු, කළඹ, ඇඟවීම් සහ සටහන් එක ගොනුවක.';
+  String get backupSaveHint =>
+      'ඔබේ ප්‍රියතම, ලැයිස්තු, කළඹ, ඇඟවීම් සහ සටහන් එක ගොනුවක.';
 
   @override
   String get backupRestore => 'උපස්ථයෙන් ප්‍රතිසාධනය කරන්න';
 
   @override
-  String get backupRestoreHint => 'ගොනුවේ ඇති දේ එක් කරයි; ඔබට දැන් ඇති කිසිවක් මකා නොදැමේ.';
+  String get backupRestoreHint =>
+      'ගොනුවේ ඇති දේ එක් කරයි; ඔබට දැන් ඇති කිසිවක් මකා නොදැමේ.';
 
   @override
   String get backupRestored => 'උපස්ථය ප්‍රතිසාධනය කළා.';
@@ -2379,7 +2468,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'කළඹ ඇඟවීම';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'ඔබේ මුළු කළඹම එක දිනකදී මෙතරම් වෙනස් වූ විට දැනුම්දීමක්.';
+  String get portfolioMoveAlertSubtitle =>
+      'ඔබේ මුළු කළඹම එක දිනකදී මෙතරම් වෙනස් වූ විට දැනුම්දීමක්.';
 
   @override
   String get portfolioMoveAlertOff => 'අක්‍රියයි';
@@ -2551,11 +2641,17 @@ class AppLocalizationsSi extends AppLocalizations {
   String get portfolioTopHoldings => 'විශාලතම ස්ථාන';
 
   @override
-  String get portfolioShareNote => 'ප්‍රතිශත පමණක් බෙදාගැනේ, මුදල් ප්‍රමාණ නොවේ.';
+  String get portfolioShareNote =>
+      'ප්‍රතිශත පමණක් බෙදාගැනේ, මුදල් ප්‍රමාණ නොවේ.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ස්ථාන $count', one: 'ස්ථාන $count');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ස්ථාන $count',
+      one: 'ස්ථාන $count',
+    );
     return '$_temp0';
   }
 
@@ -2605,7 +2701,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get portfolioSampleTry => 'නියැදි කළඹකින් අත්හදා බලන්න';
 
   @override
-  String get portfolioSampleBanner => 'මෙය නියැදි කළඹකි. ඒ සමඟ ඔබේම මිලදී ගැනීම් එක් කරන්න, නැතහොත් එය ඉවත් කරන්න.';
+  String get portfolioSampleBanner =>
+      'මෙය නියැදි කළඹකි. ඒ සමඟ ඔබේම මිලදී ගැනීම් එක් කරන්න, නැතහොත් එය ඉවත් කරන්න.';
 
   @override
   String get portfolioSampleRemove => 'නියැදිය ඉවත් කරන්න';
@@ -2660,10 +2757,12 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lotNoteAdd => 'සටහනක් එක් කරන්න';
 
   @override
-  String get lotNoteBuyHint => 'ඔබ මිලදී ගන්නේ ඇයි? එය දිනය සමඟ කොටසේ සටහන්වලට එක් වේ.';
+  String get lotNoteBuyHint =>
+      'ඔබ මිලදී ගන්නේ ඇයි? එය දිනය සමඟ කොටසේ සටහන්වලට එක් වේ.';
 
   @override
-  String get lotNoteSellHint => 'ඔබ විකුණන්නේ ඇයි? එය දිනය සමඟ කොටසේ සටහන්වලට එක් වේ.';
+  String get lotNoteSellHint =>
+      'ඔබ විකුණන්නේ ඇයි? එය දිනය සමඟ කොටසේ සටහන්වලට එක් වේ.';
 
   @override
   String get lotNoteBought => 'මිලදී ගන්නා ලදී';
@@ -2673,13 +2772,23 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: 'මාස $months', one: 'මාස $months');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'මාස $months',
+      one: 'මාස $months',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'දින $days', one: 'දින $days');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'දින $days',
+      one: 'දින $days',
+    );
     return '$_temp0';
   }
 
@@ -2767,7 +2876,8 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'මිතුරෙකුගේ කේතයක් භාවිත කිරීමට ඔබේ ඊමේල් සමඟ පුරන්න.';
+  String get referralErrSignIn =>
+      'මිතුරෙකුගේ කේතයක් භාවිත කිරීමට ඔබේ ඊමේල් සමඟ පුරන්න.';
 
   @override
   String get referralErrFull => 'මෙම කේතය දැනටමත් උපරිම වාර ගණනක් භාවිත කර ඇත.';
@@ -2782,10 +2892,12 @@ class AppLocalizationsSi extends AppLocalizations {
       'විශ්ලේෂණය අවසන් වීමට පෙර අතරමග නතර විය. කරුණාකර නැවත උත්සාහ කරන්න – එය ඔබේ සීමාවෙන් අඩු කළේ නැත.';
 
   @override
-  String get errImageUnsupported => 'මෙම රූපය කියවිය නොහැක. එය JPEG හෝ PNG ලෙස සුරකා නැවත උත්සාහ කරන්න.';
+  String get errImageUnsupported =>
+      'මෙම රූපය කියවිය නොහැක. එය JPEG හෝ PNG ලෙස සුරකා නැවත උත්සාහ කරන්න.';
 
   @override
-  String get errRateLimited => 'කෙටි කාලයක් තුළ ඉල්ලීම් වැඩිය. කරුණාකර මිනිත්තුවක් රැඳී සිට නැවත උත්සාහ කරන්න.';
+  String get errRateLimited =>
+      'කෙටි කාලයක් තුළ ඉල්ලීම් වැඩිය. කරුණාකර මිනිත්තුවක් රැඳී සිට නැවත උත්සාහ කරන්න.';
 
   @override
   String get watchListNameTaken => 'මෙම නමින් ලැයිස්තුවක් දැනටමත් පවතී.';
@@ -2801,21 +2913,24 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing => 'ප්‍රතිසාධනය කිරීමට පෙර මිලදී ගැනීම් කිසිවක් හමු නොවීය.';
+  String get restoreNothing =>
+      'ප්‍රතිසාධනය කිරීමට පෙර මිලදී ගැනීම් කිසිවක් හමු නොවීය.';
 
   @override
   String get manageSubscriptionElsewhere =>
       'මෙහි කළමනාකරණය කිරීමට දායකත්වයක් නැත. App Store හෝ Google Play හි මිලදී ගත් දායකත්වයක් ගබඩා සැකසීම්වල කළමනාකරණය කෙරේ.';
 
   @override
-  String get backupFailed => 'උපස්ථය සුරැකිය නොහැකි විය. කරුණාකර නැවත උත්සාහ කරන්න.';
+  String get backupFailed =>
+      'උපස්ථය සුරැකිය නොහැකි විය. කරුණාකර නැවත උත්සාහ කරන්න.';
 
   @override
   String get syncTooLarge =>
       'ඔබේ දත්ත ඔබේ ගිණුම සමඟ සමමුහුර්ත කළ නොහැකි තරම් විශාලයි. තවදුරටත් අවශ්‍ය නැති ගනුදෙනු හෝ සටහන් මකන්න, එවිට එය නැවත උත්සාහ කරනු ඇත.';
 
   @override
-  String get noteFull => 'මෙම කොටසේ සටහන පිරී ඇති නිසා මෙම ඇතුළත් කිරීම එක් කළේ නැත. සටහන කෙටි කර නැවත උත්සාහ කරන්න.';
+  String get noteFull =>
+      'මෙම කොටසේ සටහන පිරී ඇති නිසා මෙම ඇතුළත් කිරීම එක් කළේ නැත. සටහන කෙටි කර නැවත උත්සාහ කරන්න.';
 
   @override
   String portfolioNoRateFor(String symbols) {
@@ -2827,8 +2942,10 @@ class AppLocalizationsSi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$currencies හි ලාභාංශ $countකට විනිමය අනුපාතයක් නොමැති නිසා ඒවා මුළු අගයන්ට ඇතුළත් නොවේ.',
-      one: '$currencies හි ලාභාංශ $countකට විනිමය අනුපාතයක් නොමැති නිසා එය මුළු අගයන්ට ඇතුළත් නොවේ.',
+      other:
+          '$currencies හි ලාභාංශ $countකට විනිමය අනුපාතයක් නොමැති නිසා ඒවා මුළු අගයන්ට ඇතුළත් නොවේ.',
+      one:
+          '$currencies හි ලාභාංශ $countකට විනිමය අනුපාතයක් නොමැති නිසා එය මුළු අගයන්ට ඇතුළත් නොවේ.',
     );
     return '$_temp0';
   }
@@ -3099,7 +3216,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get portfolioSplitRatio => 'අනුපාතය (අලුත් : පරණ)';
 
   @override
-  String get portfolioSplitRatioError => '10:1 වැනි අනුපාතයක් ඇතුළත් කරන්න, නැතහොත් ප්‍රතිලෝම බෙදීමක් සඳහා 1:10.';
+  String get portfolioSplitRatioError =>
+      '10:1 වැනි අනුපාතයක් ඇතුළත් කරන්න, නැතහොත් ප්‍රතිලෝම බෙදීමක් සඳහා 1:10.';
 
   @override
   String get portfolioSplitDate => 'බෙදීමේ දිනය';
@@ -3242,7 +3360,8 @@ class AppLocalizationsSi extends AppLocalizations {
       'මිල දිනෙන් දින කොතරම් දෝලනය වේද යන්න, වසරකට පරිමාණ කර: 20% යනු සාමාන්‍ය වසරක දළ වශයෙන් ±20% තුළ චලනය වීමයි. වැඩි විචල්‍යතාවක් යනු දෙපැත්තටම විශාල චලනයන්ය.';
 
   @override
-  String get techNote => 'දෛනික අවසාන මිල අනුව ගණනය කර ඇත. තාක්ෂණික සංඥා විස්තර කරන්නේ අතීතයයි, අනාගතය නොවේ.';
+  String get techNote =>
+      'දෛනික අවසාන මිල අනුව ගණනය කර ඇත. තාක්ෂණික සංඥා විස්තර කරන්නේ අතීතයයි, අනාගතය නොවේ.';
 
   @override
   String portfolioAbove200(int above, int count) {
@@ -3282,7 +3401,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get glossaryPageTitle => 'පද මාලාව';
 
   @override
-  String get glossaryPageSubtitle => 'P/E සිට RSI දක්වා, යෙදුම පෙන්වන සෑම අගයක් ගැනම සරල පැහැදිලි කිරීම්';
+  String get glossaryPageSubtitle =>
+      'P/E සිට RSI දක්වා, යෙදුම පෙන්වන සෑම අගයක් ගැනම සරල පැහැදිලි කිරීම්';
 
   @override
   String get glossarySearchHint => 'පද මාලාවේ සොයන්න';

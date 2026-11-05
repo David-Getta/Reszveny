@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Nya aɖeke mesɔ kple nu si nèle didim o.",
   "cashInvalidAmount": "Ŋlɔ home xexlẽ si nye 0 alo wu nenema.",
   "portfolioImportNothing": "Womete ŋu xlẽ nuƒeƒle alo nudzadzra aɖeke le nuŋɔŋlɔ sia me o. Kpɔe be fli ɖesiaɖe le abe kpɔɖeŋua ene.",
-  "lotPriceFarFromQuote": "Esia didi tso egbe ƒe asi ({price}) gbɔ ŋutɔ. Kpɔe ɖa, alo dzrae ɖo ake ne esɔ."
+  "lotPriceFarFromQuote": "Esia didi tso egbe ƒe asi ({price}) gbɔ ŋutɔ. Kpɔe ɖa, alo dzrae ɖo ake ne esɔ.",
+  "accountDeletedElsewhere": "Wotutu akɔnta sia le mɔ̃ bubu dzi alo le web dzi, eyata woɖe eƒe nyatakakawo ɖa le mɔ̃ sia hã dzi.",
+  "errAiUnavailable": "AI sɛvis la meli fifia o. Gagbugbɔ te kpɔ le miniti ʋɛ aɖewo megbe.",
+  "errMarketUnavailable": "Asi ŋuti nyatakakawo meli fifia o. Gagbugbɔ te kpɔ le miniti ʋɛ aɖewo megbe.",
+  "purchaseUnavailable": "Nuƒeƒle meli fifia o. Gagbugbɔ te kpɔ emegbe."
 }

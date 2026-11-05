@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Erey la mid ah raadintaada lama helin.",
   "cashInvalidAmount": "Geli lacag 0 ah ama ka badan.",
   "portfolioImportNothing": "Qoraalkan lagama akhriyi karin wax macaamil ah. Hubi in saf kastaa u eg yahay tusaalaha.",
-  "lotPriceFarFromQuote": "Tani aad ayay uga fog tahay qiimaha maanta ({price}). Hubi, ama mar kale kaydi haddii ay sax tahay."
+  "lotPriceFarFromQuote": "Tani aad ayay uga fog tahay qiimaha maanta ({price}). Hubi, ama mar kale kaydi haddii ay sax tahay.",
+  "accountDeletedElsewhere": "Akoonkan waxaa laga tirtiray qalab kale ama shabakadda, sidaa darteed xogtiisa waa laga saaray qalabkan sidoo kale.",
+  "errAiUnavailable": "Adeegga AI hadda lama heli karo. Isku day mar kale dhowr daqiiqo kadib.",
+  "errMarketUnavailable": "Xogta suuqa hadda lama heli karo. Isku day mar kale dhowr daqiiqo kadib.",
+  "purchaseUnavailable": "Iibsashadu hadda lama heli karo. Isku day mar kale goor dambe."
 }

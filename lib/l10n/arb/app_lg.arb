@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Tewali kigambo kikwatagana n'ky'onoonya.",
   "cashInvalidAmount": "Yingiza omuwendo gwa 0 oba okusingawo.",
   "portfolioImportNothing": "Tewali kyaguliddwa oba ekyatundiddwa ekisobodde okusomebwa mu biwandiiko bino. Kebera nti buli lunyiriri lufaanana ng'ekyokulabirako.",
-  "lotPriceFarFromQuote": "Kino kiri wala nnyo ku bbeeyi ya leero ({price}). Kikebere, oba tereka nate bwe kiba nga kituufu."
+  "lotPriceFarFromQuote": "Kino kiri wala nnyo ku bbeeyi ya leero ({price}). Kikebere, oba tereka nate bwe kiba nga kituufu.",
+  "accountDeletedElsewhere": "Akawunti eno yasanguddwa ku kyuma ekirala oba ku mukutu, n'olwekyo ebikwata ku yo nabyo bijjiddwa ku kyuma kino.",
+  "errAiUnavailable": "Mpeereza ya AI teriiwo kati. Gezaako nate oluvannyuma lw'eddakiika ntono.",
+  "errMarketUnavailable": "Data y'akatale teriiwo kati. Gezaako nate oluvannyuma lw'eddakiika ntono.",
+  "purchaseUnavailable": "Okugula tekuliiwo kati. Gezaako nate oluvannyuma."
 }

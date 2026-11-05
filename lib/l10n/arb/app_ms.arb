@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Tiada istilah yang sepadan dengan carian anda.",
   "cashInvalidAmount": "Masukkan jumlah 0 atau lebih.",
   "portfolioImportNothing": "Tiada transaksi yang dapat dibaca daripada teks ini. Pastikan setiap baris kelihatan seperti contoh.",
-  "lotPriceFarFromQuote": "Ini jauh berbeza daripada harga hari ini ({price}). Semak semula, atau simpan sekali lagi jika betul."
+  "lotPriceFarFromQuote": "Ini jauh berbeza daripada harga hari ini ({price}). Semak semula, atau simpan sekali lagi jika betul.",
+  "accountDeletedElsewhere": "Akaun ini telah dipadam pada peranti lain atau di web, jadi datanya turut dialih keluar daripada peranti ini.",
+  "errAiUnavailable": "Perkhidmatan AI tidak tersedia buat masa ini. Cuba lagi dalam beberapa minit.",
+  "errMarketUnavailable": "Data pasaran tidak tersedia buat masa ini. Cuba lagi dalam beberapa minit.",
+  "purchaseUnavailable": "Pembelian tidak tersedia buat masa ini. Cuba lagi kemudian."
 }

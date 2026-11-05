@@ -896,5 +896,9 @@
   "glossaryNoMatch": "検索に一致する用語はありません。",
   "cashInvalidAmount": "0以上の金額を入力してください。",
   "portfolioImportNothing": "このテキストから取引を読み取れませんでした。各行が例と同じ形式になっているか確認してください。",
-  "lotPriceFarFromQuote": "今日の株価（{price}）と大きく離れています。確認するか、正しければもう一度保存してください。"
+  "lotPriceFarFromQuote": "今日の株価（{price}）と大きく離れています。確認するか、正しければもう一度保存してください。",
+  "accountDeletedElsewhere": "このアカウントは別のデバイスまたはウェブで削除されたため、このデバイスからもデータを削除しました。",
+  "errAiUnavailable": "AI サービスは現在利用できません。数分後にもう一度お試しください。",
+  "errMarketUnavailable": "市場データは現在利用できません。数分後にもう一度お試しください。",
+  "purchaseUnavailable": "現在、購入できません。しばらくしてからもう一度お試しください。"
 }

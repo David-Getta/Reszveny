@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Gom-biig ka zems ne f sẽn bao wã ye.",
   "cashInvalidAmount": "Gʋls ligd sõor sẽn yaa 0 bɩ sẽn yɩɩd-a.",
   "portfolioImportNothing": "B ka tõog n karem raab bɩ koosg gʋlsg kãngã pʋgẽ ye. Ges tɩ sẽ fãa wõnda makr wã.",
-  "lotPriceFarFromQuote": "Ligdã zãra ne rũndã ligdã ({price}) wʋsgo. Ges-a, bɩ f le bĩng-a sã n yaa sɩda."
+  "lotPriceFarFromQuote": "Ligdã zãra ne rũndã ligdã ({price}) wʋsgo. Ges-a, bɩ f le bĩng-a sã n yaa sɩda.",
+  "accountDeletedElsewhere": "B yẽesa kõnt kãngã aparɛy a to zugu bɩ wɛbẽ wã zugu, rẽ n so tɩ b yiis a bãngr aparɛy kãngã zugu me.",
+  "errAiUnavailable": "AI tʋʋmdã ka be masã ye. Gũ minit bilf la f le mak.",
+  "errMarketUnavailable": "Raaga bãngr ka be masã ye. Gũ minit bilf la f le mak.",
+  "purchaseUnavailable": "Raab ka be masã ye. Le mak poore."
 }

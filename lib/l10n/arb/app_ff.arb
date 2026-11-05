@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Alaa konngol fotɗungol e ko njiylotaa.",
   "cashInvalidAmount": "Winndu limoore 0 walla ko ɓuri ɗum.",
   "portfolioImportNothing": "Alaa soodgol walla yeeyugol mbaawi janngeede e ndee binndi. Ƴeewto so kala diidol ina nanndi e misal ngal.",
-  "lotPriceFarFromQuote": "Ɗum ina woɗɗi coggu hannde ({price}) no feewi. Ƴeewto ɗum, walla mooftu kadi so ɗum ko goonga."
+  "lotPriceFarFromQuote": "Ɗum ina woɗɗi coggu hannde ({price}) no feewi. Ƴeewto ɗum, walla mooftu kadi so ɗum ko goonga.",
+  "accountDeletedElsewhere": "Ndee konte momtaama e kaɓirgol goɗngol walla e web, ɗum noon keɓe mayre momtaama e ngol kaɓirgol kadi.",
+  "errAiUnavailable": "Carwol AI ngol alaa jooni. Fuɗɗito ɓaawo hojomaaji seeɗa.",
+  "errMarketUnavailable": "Keɓe luumo alaa jooni. Fuɗɗito ɓaawo hojomaaji seeɗa.",
+  "purchaseUnavailable": "Soodgol alaa jooni. Fuɗɗito ɓaawo ɗuum."
 }

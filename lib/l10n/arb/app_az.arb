@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Axtarışınıza uyğun termin yoxdur.",
   "cashInvalidAmount": "0 və ya daha böyük məbləğ daxil edin.",
   "portfolioImportNothing": "Bu mətndən heç bir əməliyyat oxumaq mümkün olmadı. Hər sətrin nümunədəki kimi olduğunu yoxlayın.",
-  "lotPriceFarFromQuote": "Bu, bugünkü qiymətdən ({price}) çox fərqlidir. Yoxlayın və ya düzgündürsə, yenidən yadda saxlayın."
+  "lotPriceFarFromQuote": "Bu, bugünkü qiymətdən ({price}) çox fərqlidir. Yoxlayın və ya düzgündürsə, yenidən yadda saxlayın.",
+  "accountDeletedElsewhere": "Bu hesab başqa cihazda və ya vebdə silinib, buna görə onun məlumatları bu cihazdan da silindi.",
+  "errAiUnavailable": "AI xidməti hazırda mövcud deyil. Bir neçə dəqiqədən sonra yenidən cəhd edin.",
+  "errMarketUnavailable": "Bazar məlumatları hazırda mövcud deyil. Bir neçə dəqiqədən sonra yenidən cəhd edin.",
+  "purchaseUnavailable": "Alışlar hazırda mövcud deyil. Daha sonra yenidən cəhd edin."
 }

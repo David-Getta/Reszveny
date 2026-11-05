@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Kakuena muaku udi wakanangana ne bidi ukeba.",
   "cashInvalidAmount": "Funda bungi bua 0 anyi bupite.",
   "portfolioImportNothing": "Katuena mua kubala kusumba anyi kusumbisha nansha kumue mu mifundu eyi. Tangila ne: mulongo wonso udi bu tshilejilu.",
-  "lotPriceFarFromQuote": "Mushinga eu udi kule be ne mushinga wa lelu ({price}). Utangile, anyi lama kabidi bikala ulelela."
+  "lotPriceFarFromQuote": "Mushinga eu udi kule be ne mushinga wa lelu ({price}). Utangile, anyi lama kabidi bikala ulelela.",
+  "accountDeletedElsewhere": "Compte eu mujimija ku tshintu tshikuabo anyi ku web, ke bualu kayi mamanyisha ende mamushibue kabidi ku tshintu etshi.",
+  "errAiUnavailable": "Service wa AI kena mpindieu eu to. Teta kabidi panyima pa minite mikese.",
+  "errMarketUnavailable": "Mamanyisha a tshisalu kaena mpindieu eu to. Teta kabidi panyima pa minite mikese.",
+  "purchaseUnavailable": "Disumba kadiena mpindieu eu to. Teta kabidi pashishe."
 }

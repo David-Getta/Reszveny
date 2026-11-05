@@ -281,6 +281,9 @@ Return one JSON object: {"headline": string (one sentence stating the portfolio'
       throw AnalysisException(AppErrorCode.aiUnreachable, cause: e);
     }
     if (res.statusCode == 402) throw AnalysisException(ClaudeStockAnalyst.quotaErrorFor(res.body), cause: res.body);
+    if (ClaudeStockAnalyst.isOutage(res.statusCode)) {
+      throw AnalysisException(AppErrorCode.aiUnavailable, cause: res.body);
+    }
     if (res.statusCode != 200) {
       throw AnalysisException(AppErrorCode.aiHttp, detail: '${res.statusCode}', cause: res.body);
     }

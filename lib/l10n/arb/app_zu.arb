@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Awekho amagama ahambisana nosesho lwakho.",
   "cashInvalidAmount": "Faka inani elingu-0 noma ngaphezulu.",
   "portfolioImportNothing": "Akukho kuthenga noma kuthengisa okufundekile kulo mbhalo. Hlola ukuthi umugqa ngamunye ubukeka njengesibonelo.",
-  "lotPriceFarFromQuote": "Le ntengo ikude kakhulu nentengo yanamuhla ({price}). Yihlole, noma uyilondoloze futhi uma ilungile."
+  "lotPriceFarFromQuote": "Le ntengo ikude kakhulu nentengo yanamuhla ({price}). Yihlole, noma uyilondoloze futhi uma ilungile.",
+  "accountDeletedElsewhere": "Le akhawunti isusiwe kwenye idivayisi noma kuwebhu, ngakho idatha yayo nayo isusiwe kule divayisi.",
+  "errAiUnavailable": "Isevisi ye-AI ayitholakali okwamanje. Zama futhi emizuzwini embalwa.",
+  "errMarketUnavailable": "Idatha yemakethe ayitholakali okwamanje. Zama futhi emizuzwini embalwa.",
+  "purchaseUnavailable": "Ukuthenga akutholakali okwamanje. Zama futhi kamuva."
 }

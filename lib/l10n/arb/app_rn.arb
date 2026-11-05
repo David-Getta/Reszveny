@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Nta jambo rihuye n'ivyo warondeye.",
   "cashInvalidAmount": "Andika igitigiri kingana na 0 canke kirenga.",
   "portfolioImportNothing": "Nta gikorwa co kugura canke kugurisha cashoboye gusomwa muri iyi nyandiko. Raba ko umurongo wose usa n'akarorero.",
-  "lotPriceFarFromQuote": "Iki giciro kiri kure cane y'igiciro c'uyu munsi ({price}). Kiraba neza, canke wongere ubike niba ari co."
+  "lotPriceFarFromQuote": "Iki giciro kiri kure cane y'igiciro c'uyu munsi ({price}). Kiraba neza, canke wongere ubike niba ari co.",
+  "accountDeletedElsewhere": "Iyi konti yafuswe ku kindi gikoresho canke kuri interineti, ni co gituma amakuru yayo nayo yakuwe kuri iki gikoresho.",
+  "errAiUnavailable": "Serivisi ya AI ntiboneka ubu. Subira ugerageze mu minota mikeyi.",
+  "errMarketUnavailable": "Amakuru y'isoko ntaboneka ubu. Subira ugerageze mu minota mikeyi.",
+  "purchaseUnavailable": "Ukugura ntikushoboka ubu. Subira ugerageze hanyuma."
 }

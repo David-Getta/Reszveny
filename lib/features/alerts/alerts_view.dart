@@ -222,7 +222,10 @@ class _AlertDialogState extends State<_AlertDialog> {
                       ? l10n.alertMovePercent
                       : _kind == AlertKind.trailing
                       ? l10n.alertTrailingPercent
-                      : l10n.alertTargetPrice(widget.currency ?? ''),
+                      // Árfolyam (és így pénznem) nélkül nem „Ár ()”.
+                      : (widget.currency ?? '').isEmpty
+                      ? l10n.sectionPrice
+                      : l10n.alertTargetPrice(widget.currency!),
                   errorText: _error,
                 ),
                 onSubmitted: (_) => _submit(),

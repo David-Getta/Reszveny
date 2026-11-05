@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Walang terminong tumutugma sa iyong paghahanap.",
   "cashInvalidAmount": "Maglagay ng halagang 0 o higit pa.",
   "portfolioImportNothing": "Walang transaksyong nabasa mula sa tekstong ito. Tingnan kung kamukha ng halimbawa ang bawat linya.",
-  "lotPriceFarFromQuote": "Malayo ito sa presyo ngayon ({price}). Suriin ito, o i-save muli kung tama ito."
+  "lotPriceFarFromQuote": "Malayo ito sa presyo ngayon ({price}). Suriin ito, o i-save muli kung tama ito.",
+  "accountDeletedElsewhere": "Nabura ang account na ito sa ibang device o sa web, kaya inalis din ang data nito sa device na ito.",
+  "errAiUnavailable": "Hindi available ang serbisyo ng AI sa ngayon. Subukang muli pagkalipas ng ilang minuto.",
+  "errMarketUnavailable": "Hindi available ang market data sa ngayon. Subukang muli pagkalipas ng ilang minuto.",
+  "purchaseUnavailable": "Hindi available ang pagbili sa ngayon. Subukang muli mamaya."
 }

@@ -13,7 +13,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fotonen saham lan ngertenana kabeh babagan saham iku.';
+  String get homeTagline =>
+      'Fotonen saham lan ngertenana kabeh babagan saham iku.';
 
   @override
   String get homeHint =>
@@ -293,7 +294,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get labelDividendGrowth5y => 'Tuwuhing dividen (5 taun)';
 
   @override
-  String get dividendNone => 'Ora ana dividen sing dibayar sajrone 12 sasi pungkasan.';
+  String get dividendNone =>
+      'Ora ana dividen sing dibayar sajrone 12 sasi pungkasan.';
 
   @override
   String get dividendOnYourShares => 'Saka saham sampeyan, saben taun';
@@ -318,7 +320,12 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analis', one: '1 analis');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analis',
+      one: '1 analis',
+    );
     return '$_temp0';
   }
 
@@ -346,7 +353,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get recognitionRawText => 'Teks sing diwaca saka gambar';
 
   @override
-  String get errMissingAnthropicKey => 'Pangenalan gambar ora kasedhiya ing versi iki. Ketik kode saham kanthi manual.';
+  String get errMissingAnthropicKey =>
+      'Pangenalan gambar ora kasedhiya ing versi iki. Ketik kode saham kanthi manual.';
 
   @override
   String get errRecognitionUnreachable =>
@@ -358,16 +366,20 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Layanan pangenalan ora bisa ngolah gambar iki.';
+  String get errRecognitionRefused =>
+      'Layanan pangenalan ora bisa ngolah gambar iki.';
 
   @override
-  String get errRecognitionTruncated => 'Respons pangenalan kepunggel. Mangga jajal maneh.';
+  String get errRecognitionTruncated =>
+      'Respons pangenalan kepunggel. Mangga jajal maneh.';
 
   @override
-  String get errRecognitionBadResponse => 'Respons sing ora dikarepake saka layanan pangenalan.';
+  String get errRecognitionBadResponse =>
+      'Respons sing ora dikarepake saka layanan pangenalan.';
 
   @override
-  String get errRecognitionEmpty => 'Layanan pangenalan mbalekake respons kosong.';
+  String get errRecognitionEmpty =>
+      'Layanan pangenalan mbalekake respons kosong.';
 
   @override
   String get errMissingFinnhubKey => 'Data pasar ora kasedhiya ing versi iki.';
@@ -377,7 +389,8 @@ class AppLocalizationsJv extends AppLocalizations {
       'Ora bisa nyambung menyang layanan data pasar. Priksa sambungan internet sampeyan.';
 
   @override
-  String get errMarketRateLimited => 'Kakehan panjalukan menyang layanan data pasar. Mangga ngenteni sak menit.';
+  String get errMarketRateLimited =>
+      'Kakehan panjalukan menyang layanan data pasar. Mangga ngenteni sak menit.';
 
   @override
   String errMarketHttp(String status) {
@@ -385,7 +398,8 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Respons sing ora dikarepake saka layanan data pasar.';
+  String get errMarketBadResponse =>
+      'Respons sing ora dikarepake saka layanan data pasar.';
 
   @override
   String errNoQuote(String symbol) {
@@ -485,7 +499,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get aiRegenerate => 'Gawe maneh';
 
   @override
-  String get aiGenerating => 'Nyiapake analisis… iki bisa mbutuhake wektu siji utawa rong menit.';
+  String get aiGenerating =>
+      'Nyiapake analisis… iki bisa mbutuhake wektu siji utawa rong menit.';
 
   @override
   String get aiSources => 'Sumber';
@@ -503,7 +518,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get errAiNotConfigured => 'Fitur AI ora kasedhiya ing versi iki.';
 
   @override
-  String get errAiUnreachable => 'Ora bisa nyambung menyang layanan AI. Priksa sambungan internet sampeyan.';
+  String get errAiUnreachable =>
+      'Ora bisa nyambung menyang layanan AI. Priksa sambungan internet sampeyan.';
 
   @override
   String errAiHttp(String status) {
@@ -535,7 +551,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get rangeFiveYears => '5T';
 
   @override
-  String get chartUnavailable => 'Riwayat rega ora kasedhiya saka sumber data saiki.';
+  String get chartUnavailable =>
+      'Riwayat rega ora kasedhiya saka sumber data saiki.';
 
   @override
   String get sectionStatements => 'Laporan keuangan (taunan)';
@@ -562,7 +579,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get labelOperatingCashFlow => 'Arus kas operasi';
 
   @override
-  String get statementsUnavailable => 'Laporan keuangan sing dilaporake ora kasedhiya kanggo saham iki.';
+  String get statementsUnavailable =>
+      'Laporan keuangan sing dilaporake ora kasedhiya kanggo saham iki.';
 
   @override
   String get launchAtLogin => 'Bukak nalika mlebu';
@@ -571,7 +589,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get hotkeyLabel => 'Trabasan global';
 
   @override
-  String get hotkeyRecordHint => 'Klik ing kene, banjur tekan kombinasi tombol sing anyar';
+  String get hotkeyRecordHint =>
+      'Klik ing kene, banjur tekan kombinasi tombol sing anyar';
 
   @override
   String get hotkeyReset => 'Balekake menyang standar';
@@ -592,7 +611,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get removeFromFavorites => 'Busak saka favorit';
 
   @override
-  String get noFavorites => 'Durung ana favorit. Tutul lintang ing saham kanggo nambahake.';
+  String get noFavorites =>
+      'Durung ana favorit. Tutul lintang ing saham kanggo nambahake.';
 
   @override
   String get displayCurrency => 'Mata uang tampilan';
@@ -639,7 +659,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get updateDownloading => 'Lagi ngundhuh anyaran ing latar mburi…';
 
   @override
-  String get updateDownloaded => 'Anyaran wis siyap. Wiwiti maneh kanggo nginstal.';
+  String get updateDownloaded =>
+      'Anyaran wis siyap. Wiwiti maneh kanggo nginstal.';
 
   @override
   String get updateNow => 'Nganyari';
@@ -648,7 +669,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get restartNow => 'Wiwiti maneh';
 
   @override
-  String get updatesViaStore => 'Anyaran ditampa kanthi otomatis liwat toko aplikasi.';
+  String get updatesViaStore =>
+      'Anyaran ditampa kanthi otomatis liwat toko aplikasi.';
 
   @override
   String get updateCheckFailed => 'Ora bisa mriksa anyaran.';
@@ -696,7 +718,8 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Masa nyoba gratis sampeyan wis rampung. Pilih paket kanggo nerusake analisis.';
+  String get trialExpired =>
+      'Masa nyoba gratis sampeyan wis rampung. Pilih paket kanggo nerusake analisis.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -735,7 +758,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get extraPacksTitle => 'Butuh luwih akeh? Tuku analisis tambahan';
 
   @override
-  String get extraPacksHint => 'Analisis tambahan ora tau kadaluwarsa lan digunakake sawise kuota saben sasi entek.';
+  String get extraPacksHint =>
+      'Analisis tambahan ora tau kadaluwarsa lan digunakake sawise kuota saben sasi entek.';
 
   @override
   String get buy => 'Tuku';
@@ -767,7 +791,8 @@ class AppLocalizationsJv extends AppLocalizations {
       'Analisis sampeyan kanggo periode iki wis entek. Tingkatake paket utawa tuku analisis tambahan.';
 
   @override
-  String get errTrialExpired => 'Masa nyoba gratis sampeyan wis rampung. Pilih paket kanggo nerusake.';
+  String get errTrialExpired =>
+      'Masa nyoba gratis sampeyan wis rampung. Pilih paket kanggo nerusake.';
 
   @override
   String get errNoPlan => 'Analisis AI mbutuhake paket aktif.';
@@ -779,7 +804,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get usageTitle => 'Panggunaan';
 
   @override
-  String get demoPurchaseNote => 'Tagihan demo: tukon ing platform iki mung simulasi.';
+  String get demoPurchaseNote =>
+      'Tagihan demo: tukon ing platform iki mung simulasi.';
 
   @override
   String get mostPopular => 'Paling populer';
@@ -848,10 +874,12 @@ class AppLocalizationsJv extends AppLocalizations {
   String get aiReaderExperienced => 'Pengalaman';
 
   @override
-  String get aiReaderBeginnerDesc => 'Basa sing gampang; saben istilah teknis diterangake.';
+  String get aiReaderBeginnerDesc =>
+      'Basa sing gampang; saben istilah teknis diterangake.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Teks luwih padhet kanthi istilah keuangan standar.';
+  String get aiReaderExperiencedDesc =>
+      'Teks luwih padhet kanthi istilah keuangan standar.';
 
   @override
   String get aiCounterArgument => 'Argumen tandhing paling kuwat';
@@ -951,7 +979,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get upcomingEvents => 'Acara sing bakal teka';
 
   @override
-  String get outlookChartNote => 'Kisaran indikatif; probabilitas mung pambiji kasar, dudu ramalan.';
+  String get outlookChartNote =>
+      'Kisaran indikatif; probabilitas mung pambiji kasar, dudu ramalan.';
 
   @override
   String get accountTitle => 'Akun';
@@ -966,10 +995,12 @@ class AppLocalizationsJv extends AppLocalizations {
   String get notSignedIn => 'Durung mlebu';
 
   @override
-  String get accountBenefit => 'Mlebu supaya langganan sampeyan bisa digunakake ing kabeh piranti sampeyan.';
+  String get accountBenefit =>
+      'Mlebu supaya langganan sampeyan bisa digunakake ing kabeh piranti sampeyan.';
 
   @override
-  String get accountSyncedNote => 'Langganan lan sisa analisis sampeyan padha ing saben piranti.';
+  String get accountSyncedNote =>
+      'Langganan lan sisa analisis sampeyan padha ing saben piranti.';
 
   @override
   String get signInTitle => 'Mlebu menyang WhatStock';
@@ -1001,14 +1032,16 @@ class AppLocalizationsJv extends AppLocalizations {
   String get errInvalidEmail => 'Mangga lebokake alamat email sing bener.';
 
   @override
-  String get errSignInFailed => 'Gagal mlebu. Priksa sambungan internet sampeyan lan jajal maneh.';
+  String get errSignInFailed =>
+      'Gagal mlebu. Priksa sambungan internet sampeyan lan jajal maneh.';
 
   @override
   String get checkoutWaiting =>
       'Rampungake pambayaran ing browser sampeyan. Aplikasi bakal nganyari kanthi otomatis yen wis rampung.';
 
   @override
-  String get paymentViaStripe => 'Pambayaran aman ing browser sampeyan liwat Stripe. Bisa dibatalake kapan wae.';
+  String get paymentViaStripe =>
+      'Pambayaran aman ing browser sampeyan liwat Stripe. Bisa dibatalake kapan wae.';
 
   @override
   String get paymentViaStore =>
@@ -1021,7 +1054,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get doubleOptionTitle => 'Tekan Option kaping pindho';
 
   @override
-  String get doubleOptionSubtitle => 'Mencet tombol Option kaping pindho kanthi cepet uga bakal nimbali WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Mencet tombol Option kaping pindho kanthi cepet uga bakal nimbali WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1043,7 +1077,11 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years taun');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years taun',
+    );
     return '$_temp0';
   }
 
@@ -1149,7 +1187,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get portfolioRemove => 'Busak';
 
   @override
-  String get portfolioExcluded => 'Posisi tanpa rega utawa kurs ora diétung ing total.';
+  String get portfolioExcluded =>
+      'Posisi tanpa rega utawa kurs ora diétung ing total.';
 
   @override
   String get priceAlerts => 'Pèngetan rega';
@@ -1191,7 +1230,8 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Durung ana pèngetan. Bukak saham lan tutul lonceng.';
+  String get alertsEmpty =>
+      'Durung ana pèngetan. Bukak saham lan tutul lonceng.';
 
   @override
   String get alertsNote =>
@@ -1284,7 +1324,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get accountDeleted => 'Akun sampeyan wis dibusak.';
 
   @override
-  String get errDeleteAccount => 'Akun ora bisa dibusak. Priksa sambungan lan coba manèh.';
+  String get errDeleteAccount =>
+      'Akun ora bisa dibusak. Priksa sambungan lan coba manèh.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1334,16 +1375,19 @@ class AppLocalizationsJv extends AppLocalizations {
   String get inviteInvalid => 'Kode undangan iki ora valid.';
 
   @override
-  String get inviteExpired => 'Undangan iki wis kadaluwarsa. Njaluka kode anyar marang wong sing ngundang sampeyan.';
+  String get inviteExpired =>
+      'Undangan iki wis kadaluwarsa. Njaluka kode anyar marang wong sing ngundang sampeyan.';
 
   @override
-  String get inviteDeviceLimit => 'Kode undangan iki wis dienggo ing jumlah piranti maksimal.';
+  String get inviteDeviceLimit =>
+      'Kode undangan iki wis dienggo ing jumlah piranti maksimal.';
 
   @override
   String get previewConfidential => 'Pratinjau rahasia';
 
   @override
-  String get errPreviewDailyLimit => 'Watesan analisis dina iki kanggo pratinjau iki wis entek. Coba maneh sesuk.';
+  String get errPreviewDailyLimit =>
+      'Watesan analisis dina iki kanggo pratinjau iki wis entek. Coba maneh sesuk.';
 
   @override
   String ageHours(int count) {
@@ -1398,7 +1442,8 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'Tutul level kiraan AI kanggo éntuk pèngetan nalika rega tekan level kasebut.';
+  String get keyLevelAlertHint =>
+      'Tutul level kiraan AI kanggo éntuk pèngetan nalika rega tekan level kasebut.';
 
   @override
   String get shareAnalysisTitle => 'Bagekake analisis';
@@ -1413,7 +1458,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get shareCardFooter => 'Digawe nganggo WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Analisis AI · skenario ilustrasi, dudu ramalan · dudu saran investasi';
+  String get shareCardDisclaimer =>
+      'Analisis AI · skenario ilustrasi, dudu ramalan · dudu saran investasi';
 
   @override
   String get referralTitle => 'Undang kanca';
@@ -1455,7 +1501,8 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Kodhe iki ora ana. Priksanen lan coba maneh.';
+  String get referralErrUnknown =>
+      'Kodhe iki ora ana. Priksanen lan coba maneh.';
 
   @override
   String get referralErrOwn => 'Kowe ora bisa nukarake kodhemu dhewe.';
@@ -1572,17 +1619,24 @@ class AppLocalizationsJv extends AppLocalizations {
   String get askSuggest3 => 'Jelasna nganggo basa sing gampang';
 
   @override
-  String get askMaxReached => 'Kuwi pitakon pungkasan kanggo analisis iki. Gawe analisis anyar yen arep takon manèh.';
+  String get askMaxReached =>
+      'Kuwi pitakon pungkasan kanggo analisis iki. Gawe analisis anyar yen arep takon manèh.';
 
   @override
-  String get errAskLimit => 'Watesan pitakon dina iki wis entek. Coba maneh sesuk.';
+  String get errAskLimit =>
+      'Watesan pitakon dina iki wis entek. Coba maneh sesuk.';
 
   @override
   String get eventTomorrow => 'Sesuk';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days dina engkas', one: '1 dina engkas');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dina engkas',
+      one: '1 dina engkas',
+    );
     return '$_temp0';
   }
 
@@ -1607,7 +1661,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get eventDividend => 'Dividen dikarepake';
 
   @override
-  String get eventDividendEstimate => 'Diperkirakan saka pembayaran sing kokcathet';
+  String get eventDividendEstimate =>
+      'Diperkirakan saka pembayaran sing kokcathet';
 
   @override
   String get eventsHint =>
@@ -1666,7 +1721,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get notesTitle => 'Cathetanku';
 
   @override
-  String get notesHint => 'Kenapa sampeyan tuku, apa sing sampeyan pantau, apa sing bakal nggawe sampeyan adol?';
+  String get notesHint =>
+      'Kenapa sampeyan tuku, apa sing sampeyan pantau, apa sing bakal nggawe sampeyan adol?';
 
   @override
   String get notesInfo =>
@@ -1716,7 +1772,8 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get syncInfo => 'Portofolio, favorit, pèngetan rega, lan cathetan disinkronaké ing kabèh piranti sampeyan.';
+  String get syncInfo =>
+      'Portofolio, favorit, pèngetan rega, lan cathetan disinkronaké ing kabèh piranti sampeyan.';
 
   @override
   String syncLast(String time) {
@@ -1727,7 +1784,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get syncNow => 'Sinkronaké saiki';
 
   @override
-  String get syncFailed => 'Sinkronisasi gagal. Bakal dicoba manèh kanthi otomatis.';
+  String get syncFailed =>
+      'Sinkronisasi gagal. Bakal dicoba manèh kanthi otomatis.';
 
   @override
   String get alertEmailTitle => 'Email nalika pèngetan aktif';
@@ -1856,7 +1914,8 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'Pira regane kabeh perusahaan ing pasar saham: rega saham × cacahe saham.';
+  String get glossMarketCap =>
+      'Pira regane kabeh perusahaan ing pasar saham: rega saham × cacahe saham.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1895,10 +1954,12 @@ class AppLocalizationsJv extends AppLocalizations {
       'Sepira saham kerep obah bareng pasar: 1 = kaya pasar, 1,5 = obahe watara 50% luwih gedhe, ing ngisor 1 = luwih anteng.';
 
   @override
-  String get glossRevenueTtm => 'Gunggung dodolan 12 sasi pungkasan, sadurunge biaya apa wae.';
+  String get glossRevenueTtm =>
+      'Gunggung dodolan 12 sasi pungkasan, sadurunge biaya apa wae.';
 
   @override
-  String get glossNetIncomeTtm => 'Bathi sing isih ana sawise kabeh biaya, bunga lan pajek sajrone 12 sasi pungkasan.';
+  String get glossNetIncomeTtm =>
+      'Bathi sing isih ana sawise kabeh biaya, bunga lan pajek sajrone 12 sasi pungkasan.';
 
   @override
   String get glossGrossMargin =>
@@ -1929,17 +1990,20 @@ class AppLocalizationsJv extends AppLocalizations {
       'Aset jangka cendhak ÷ tagihan sing kudu dibayar sajrone setaun. Ing ndhuwur 1 tegese perusahaan bisa nutup tagihan sing cedhak.';
 
   @override
-  String get glossRevenueGrowth => 'Sepira pendapatan tuwuh dibandhingake setaun kepungkur.';
+  String get glossRevenueGrowth =>
+      'Sepira pendapatan tuwuh dibandhingake setaun kepungkur.';
 
   @override
-  String get glossEpsGrowth => 'Sepira bathi saben saham tuwuh dibandhingake setaun kepungkur.';
+  String get glossEpsGrowth =>
+      'Sepira bathi saben saham tuwuh dibandhingake setaun kepungkur.';
 
   @override
   String get glossDividendYield =>
       'Dividen taunan ÷ rega saham: pemasukan dhuwit sing bakal sampeyan tampa saben taun, minangka persentase saka sing sampeyan bayar.';
 
   @override
-  String get glossDividendPerShare => 'Dividen sing dibayar kanggo siji saham sajrone setaun kepungkur.';
+  String get glossDividendPerShare =>
+      'Dividen sing dibayar kanggo siji saham sajrone setaun kepungkur.';
 
   @override
   String get glossPayoutRatio =>
@@ -2037,8 +2101,10 @@ class AppLocalizationsJv extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'Padha utawa luwih dhuwur tinimbang EPS sing dikarepake ing $beats saka $total kuartal pungkasan',
-      one: 'Padha utawa luwih dhuwur tinimbang EPS sing dikarepake ing $beats saka 1 kuartal',
+      other:
+          'Padha utawa luwih dhuwur tinimbang EPS sing dikarepake ing $beats saka $total kuartal pungkasan',
+      one:
+          'Padha utawa luwih dhuwur tinimbang EPS sing dikarepake ing $beats saka 1 kuartal',
     );
     return '$_temp0';
   }
@@ -2154,13 +2220,23 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count tukon', one: '1 tukon');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tukon',
+      one: '1 tukon',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count dodolan', one: '1 dodolan');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dodolan',
+      one: '1 dodolan',
+    );
     return '$_temp0';
   }
 
@@ -2180,7 +2256,8 @@ class AppLocalizationsJv extends AppLocalizations {
       'Tukon lan dodolan ing pasar terbuka dening eksekutif lan direktur sajrone 90 dina pungkasan (SEC Form 4). Panggunaan opsi lan paweh saham ora diétung.';
 
   @override
-  String get insiderNone => 'Ora ana tukon utawa dodolan wong njero ing pasar terbuka sajrone 90 dina pungkasan.';
+  String get insiderNone =>
+      'Ora ana tukon utawa dodolan wong njero ing pasar terbuka sajrone 90 dina pungkasan.';
 
   @override
   String get analystTrend => 'Kepiye panemu owah saben sasi';
@@ -2223,10 +2300,12 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard => 'Disalin menyang papan klip – tempelake ing ngendi wae sampeyan pengin mbagekake.';
+  String get sharedToClipboard =>
+      'Disalin menyang papan klip – tempelake ing ngendi wae sampeyan pengin mbagekake.';
 
   @override
-  String get glossaryNoMatch => 'Ora ana istilah sing cocog karo panelusuran sampeyan.';
+  String get glossaryNoMatch =>
+      'Ora ana istilah sing cocog karo panelusuran sampeyan.';
 
   @override
   String get cashInvalidAmount => 'Lebokna jumlah 0 utawa luwih.';
@@ -2241,6 +2320,22 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get accountDeletedElsewhere =>
+      'Akun iki wis dibusak ing piranti liya utawa ing web, mula datane uga dibusak saka piranti iki.';
+
+  @override
+  String get errAiUnavailable =>
+      'Layanan AI saiki ora kasedhiya. Coba maneh sawetara menit engkas.';
+
+  @override
+  String get errMarketUnavailable =>
+      'Data pasar saiki ora kasedhiya. Coba maneh sawetara menit engkas.';
+
+  @override
+  String get purchaseUnavailable =>
+      'Tukon saiki ora kasedhiya. Coba maneh mengko.';
+
+  @override
   String get portfolioAskTitle => 'Pitakon babagan portofolio sampeyan';
 
   @override
@@ -2253,13 +2348,15 @@ class AppLocalizationsJv extends AppLocalizations {
   String get backupSave => 'Simpen cadhangan';
 
   @override
-  String get backupSaveHint => 'Favorit, dhaptar, portofolio, pèngetan, lan cathetan sampeyan ing siji file.';
+  String get backupSaveHint =>
+      'Favorit, dhaptar, portofolio, pèngetan, lan cathetan sampeyan ing siji file.';
 
   @override
   String get backupRestore => 'Pulihaké saka cadhangan';
 
   @override
-  String get backupRestoreHint => 'Nambahaké isiné file; ora ana sing kabusak saka data sampeyan saiki.';
+  String get backupRestoreHint =>
+      'Nambahaké isiné file; ora ana sing kabusak saka data sampeyan saiki.';
 
   @override
   String get backupRestored => 'Cadhangan wis dipulihaké.';
@@ -2357,7 +2454,8 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get portfolioExportRealized => 'Ekspor bathi sing wis direalisasi (CSV)';
+  String get portfolioExportRealized =>
+      'Ekspor bathi sing wis direalisasi (CSV)';
 
   @override
   String get portfolioAnnualReturn => 'Imbal hasil taunan';
@@ -2378,7 +2476,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Pangéling portofolio';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'Notifikasi nalika kabèh portofoliomu obah samono iki sajroning sedina.';
+  String get portfolioMoveAlertSubtitle =>
+      'Notifikasi nalika kabèh portofoliomu obah samono iki sajroning sedina.';
 
   @override
   String get portfolioMoveAlertOff => 'Mati';
@@ -2550,11 +2649,17 @@ class AppLocalizationsJv extends AppLocalizations {
   String get portfolioTopHoldings => 'Posisi paling gedhe';
 
   @override
-  String get portfolioShareNote => 'Mung persentase sing dibagekake, tanpa jumlah dhuwit.';
+  String get portfolioShareNote =>
+      'Mung persentase sing dibagekake, tanpa jumlah dhuwit.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count posisi', one: '1 posisi');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posisi',
+      one: '1 posisi',
+    );
     return '$_temp0';
   }
 
@@ -2660,10 +2765,12 @@ class AppLocalizationsJv extends AppLocalizations {
   String get lotNoteAdd => 'Tambahake cathetan';
 
   @override
-  String get lotNoteBuyHint => 'Kenapa sampeyan tuku? Bakal mlebu cathetan saham, karo tanggale.';
+  String get lotNoteBuyHint =>
+      'Kenapa sampeyan tuku? Bakal mlebu cathetan saham, karo tanggale.';
 
   @override
-  String get lotNoteSellHint => 'Kenapa sampeyan adol? Bakal mlebu cathetan saham, karo tanggale.';
+  String get lotNoteSellHint =>
+      'Kenapa sampeyan adol? Bakal mlebu cathetan saham, karo tanggale.';
 
   @override
   String get lotNoteBought => 'Dituku';
@@ -2673,13 +2780,21 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months sasi');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months sasi',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days dina');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days dina',
+    );
     return '$_temp0';
   }
 
@@ -2767,10 +2882,12 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Mlebu nganggo emailmu supaya bisa nukarake kodhe saka kanca.';
+  String get referralErrSignIn =>
+      'Mlebu nganggo emailmu supaya bisa nukarake kodhe saka kanca.';
 
   @override
-  String get referralErrFull => 'Kodhe iki wis ditukarake nganti watesan maksimal.';
+  String get referralErrFull =>
+      'Kodhe iki wis ditukarake nganti watesan maksimal.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2782,10 +2899,12 @@ class AppLocalizationsJv extends AppLocalizations {
       'Analisis kepunggel sadurunge rampung. Mangga jajal maneh – kuota sampeyan ora kepotong.';
 
   @override
-  String get errImageUnsupported => 'Gambar iki ora bisa diwaca. Simpen minangka JPEG utawa PNG lan jajal maneh.';
+  String get errImageUnsupported =>
+      'Gambar iki ora bisa diwaca. Simpen minangka JPEG utawa PNG lan jajal maneh.';
 
   @override
-  String get errRateLimited => 'Kakehan panjalukan ing wektu sing cendhak. Mangga ngenteni sak menit lan jajal maneh.';
+  String get errRateLimited =>
+      'Kakehan panjalukan ing wektu sing cendhak. Mangga ngenteni sak menit lan jajal maneh.';
 
   @override
   String get watchListNameTaken => 'Dhaptar kanthi jeneng iki wis ana.';
@@ -2828,7 +2947,8 @@ class AppLocalizationsJv extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count dividen ing $currencies ora duwe kurs lan ora diétung ing total.',
+      other:
+          '$count dividen ing $currencies ora duwe kurs lan ora diétung ing total.',
       one: '1 dividen ing $currencies ora duwe kurs lan ora diétung ing total.',
     );
     return '$_temp0';
@@ -2942,7 +3062,8 @@ class AppLocalizationsJv extends AppLocalizations {
       'Informasi umum sing digawe dening AI babagan komposisi portofolio sampeyan. Iki ora nimbang tujuan, kahanan finansial, utawa kahanan pajek sampeyan, lan dudu rekomendasi pribadi utawa saran investasi.';
 
   @override
-  String get briefNotificationTitle => 'Ringkesan AI · Dina iki karo saham sampeyan';
+  String get briefNotificationTitle =>
+      'Ringkesan AI · Dina iki karo saham sampeyan';
 
   @override
   String get portfolioGoalSet => 'Setel target';
@@ -3100,7 +3221,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get portfolioSplitRatio => 'Rasio (anyar : lawas)';
 
   @override
-  String get portfolioSplitRatioError => 'Lebokna rasio kaya 10:1, utawa 1:10 kanggo reverse split.';
+  String get portfolioSplitRatioError =>
+      'Lebokna rasio kaya 10:1, utawa 1:10 kanggo reverse split.';
 
   @override
   String get portfolioSplitDate => 'Tanggal pamecahan';
@@ -3284,7 +3406,8 @@ class AppLocalizationsJv extends AppLocalizations {
   String get glossaryPageTitle => 'Glosarium';
 
   @override
-  String get glossaryPageSubtitle => 'Katrangan prasaja saben angka sing ditampilake aplikasi, saka P/E nganti RSI';
+  String get glossaryPageSubtitle =>
+      'Katrangan prasaja saben angka sing ditampilake aplikasi, saka P/E nganti RSI';
 
   @override
   String get glossarySearchHint => 'Golèk ing glosarium';

@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Jūsu meklējumam neatbilst neviens termins.",
   "cashInvalidAmount": "Ievadiet summu 0 vai vairāk.",
   "portfolioImportNothing": "No šī teksta neizdevās nolasīt nevienu darījumu. Pārbaudiet, vai katra rinda izskatās kā piemērā.",
-  "lotPriceFarFromQuote": "Tas krietni atšķiras no šodienas cenas ({price}). Pārbaudiet vai saglabājiet vēlreiz, ja viss ir pareizi."
+  "lotPriceFarFromQuote": "Tas krietni atšķiras no šodienas cenas ({price}). Pārbaudiet vai saglabājiet vēlreiz, ja viss ir pareizi.",
+  "accountDeletedElsewhere": "Šis konts tika dzēsts citā ierīcē vai tīmeklī, tāpēc tā dati tika noņemti arī no šīs ierīces.",
+  "errAiUnavailable": "AI pakalpojums pašlaik nav pieejams. Mēģiniet vēlreiz pēc dažām minūtēm.",
+  "errMarketUnavailable": "Tirgus dati pašlaik nav pieejami. Mēģiniet vēlreiz pēc dažām minūtēm.",
+  "purchaseUnavailable": "Pirkumi pašlaik nav pieejami. Mēģiniet vēlreiz vēlāk."
 }

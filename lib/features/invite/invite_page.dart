@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
@@ -48,8 +50,10 @@ class _InvitePageState extends State<InvitePage> {
     try {
       final services = AppServices.of(context);
       await widget.backend.submitInvite(code);
-      // A szerver szerinti csomag és keret betöltése (eddig nem érhette el).
+      // A szerver szerinti csomag és keret betöltése (eddig nem érhette el), és a meghívó
+      // előtt elutasított szinkron azonnal újra (ne maradjon „A szinkron nem sikerült”).
       services.syncEntitlements();
+      unawaited(services.sync?.syncNow());
     } on BackendException catch (e) {
       // A túl sok próbálkozás és a szerverhiba nem „érvénytelen kód”.
       final String Function(AppLocalizations) error = switch ((BackendClient.inviteProblemFor(e.code), e.status)) {

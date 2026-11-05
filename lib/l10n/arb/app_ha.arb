@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Babu kalmar da ta dace da bincikenka.",
   "cashInvalidAmount": "Shigar da adadi na 0 ko fiye.",
   "portfolioImportNothing": "Ba a iya karanta wani ma'amala daga wannan rubutu ba. Duba cewa kowane layi yana kama da misalin.",
-  "lotPriceFarFromQuote": "Wannan ya yi nisa da farashin yau ({price}). Duba shi, ko ka sake ajiyewa idan daidai ne."
+  "lotPriceFarFromQuote": "Wannan ya yi nisa da farashin yau ({price}). Duba shi, ko ka sake ajiyewa idan daidai ne.",
+  "accountDeletedElsewhere": "An share wannan asusun a wata na'ura ko a yanar gizo, don haka an cire bayanansa daga wannan na'urar ma.",
+  "errAiUnavailable": "Sabis na AI ba ya samuwa a yanzu. Sake gwadawa bayan 'yan mintuna.",
+  "errMarketUnavailable": "Bayanan kasuwa ba sa samuwa a yanzu. Sake gwadawa bayan 'yan mintuna.",
+  "purchaseUnavailable": "Sayayya ba ta samuwa a yanzu. Sake gwadawa daga baya."
 }

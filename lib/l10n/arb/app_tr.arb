@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Aramanızla eşleşen terim yok.",
   "cashInvalidAmount": "0 veya daha büyük bir tutar girin.",
   "portfolioImportNothing": "Bu metinden hiçbir işlem okunamadı. Her satırın örnekteki gibi göründüğünü kontrol edin.",
-  "lotPriceFarFromQuote": "Bu, bugünkü fiyattan ({price}) çok uzak. Kontrol edin veya doğruysa yeniden kaydedin."
+  "lotPriceFarFromQuote": "Bu, bugünkü fiyattan ({price}) çok uzak. Kontrol edin veya doğruysa yeniden kaydedin.",
+  "accountDeletedElsewhere": "Bu hesap başka bir cihazda veya web'de silindi, bu yüzden verileri bu cihazdan da kaldırıldı.",
+  "errAiUnavailable": "Yapay zekâ hizmeti şu anda kullanılamıyor. Birkaç dakika sonra tekrar deneyin.",
+  "errMarketUnavailable": "Piyasa verileri şu anda kullanılamıyor. Birkaç dakika sonra tekrar deneyin.",
+  "purchaseUnavailable": "Satın alma şu anda kullanılamıyor. Daha sonra tekrar deneyin."
 }

@@ -896,5 +896,9 @@
   "glossaryNoMatch": "A ku na rito leri fambelanaka ni leswi u swi laveke.",
   "cashInvalidAmount": "Nghenisa ntsengo wa 0 kumbe ku tlula.",
   "portfolioImportNothing": "A ku na xixaviwa kumbe xixavisiwa lexi koteke ku hlayiwa eka tsalwa leri. Kambela leswaku layini yin'wana ni yin'wana yi fana ni xikombiso.",
-  "lotPriceFarFromQuote": "Nxavo lowu wu le kule swinene na nxavo wa namuntlha ({price}). Wu kambela, kumbe u wu hlayisa nakambe loko wu lulamile."
+  "lotPriceFarFromQuote": "Nxavo lowu wu le kule swinene na nxavo wa namuntlha ({price}). Wu kambela, kumbe u wu hlayisa nakambe loko wu lulamile.",
+  "accountDeletedElsewhere": "Akhawunti leyi yi suriwile eka xitirhisiwa xin'wana kumbe eka webu, hikwalaho data ya yona na yona yi susiwile eka xitirhisiwa lexi.",
+  "errAiUnavailable": "Vukorhokeri bya AI a byi kumeki sweswi. Ringeta nakambe endzhaku ka timinete ti nga ri tingani.",
+  "errMarketUnavailable": "Data ya makete a yi kumeki sweswi. Ringeta nakambe endzhaku ka timinete ti nga ri tingani.",
+  "purchaseUnavailable": "Ku xava a ku kumeki sweswi. Ringeta nakambe endzhakunyana."
 }

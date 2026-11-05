@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Ọ dịghị okwu dabara na ọchụchọ gị.",
   "cashInvalidAmount": "Tinye ego ole bụ 0 ma ọ bụ karịa.",
   "portfolioImportNothing": "Enweghị azụmahịa a pụrụ ịgụ n'ederede a. Lelee na ahịrị ọ bụla dị ka ihe atụ ahụ.",
-  "lotPriceFarFromQuote": "Nke a dị anya na ọnụahịa taa ({price}). Lelee ya, ma ọ bụ chekwaa ọzọ ma ọ bụrụ na ọ ziri ezi."
+  "lotPriceFarFromQuote": "Nke a dị anya na ọnụahịa taa ({price}). Lelee ya, ma ọ bụ chekwaa ọzọ ma ọ bụrụ na ọ ziri ezi.",
+  "accountDeletedElsewhere": "Ehichapụla akaụntụ a na ngwaọrụ ọzọ ma ọ bụ na webụ, ya mere e wepụkwara data ya na ngwaọrụ a.",
+  "errAiUnavailable": "Ọrụ AI adịghị ugbu a. Nwaa ọzọ mgbe nkeji ole na ole gachara.",
+  "errMarketUnavailable": "Data ahịa adịghị ugbu a. Nwaa ọzọ mgbe nkeji ole na ole gachara.",
+  "purchaseUnavailable": "Ịzụ ihe adịghị ugbu a. Nwaa ọzọ ma emechaa."
 }

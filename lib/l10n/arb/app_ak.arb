@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Nsɛmfua biara nni hɔ a ɛne nea wohwehwɛe no hyia.",
   "cashInvalidAmount": "Hyɛ sika dodow a ɛyɛ 0 anaa nea ɛboro so.",
   "portfolioImportNothing": "Yɛantumi ankenkan adetɔ anaa adetɔn biara wɔ nkyerɛwee yi mu. Hwɛ sɛ nkyerɛwee biara te sɛ nhwɛso no.",
-  "lotPriceFarFromQuote": "Eyi ne nnɛ bo ({price}) nhyia koraa. Hwɛ mu bio, anaasɛ kora bio sɛ ɛteɛ a."
+  "lotPriceFarFromQuote": "Eyi ne nnɛ bo ({price}) nhyia koraa. Hwɛ mu bio, anaasɛ kora bio sɛ ɛteɛ a.",
+  "accountDeletedElsewhere": "Wɔapopa akawnt yi wɔ mfiri foforo so anaa wɛb so, enti wɔayi ne data afi mfiri yi nso so.",
+  "errAiUnavailable": "AI dwumadie no nni hɔ seesei. San bɔ mmɔden wɔ simma kakra mu.",
+  "errMarketUnavailable": "Dwa ho data nni hɔ seesei. San bɔ mmɔden wɔ simma kakra mu.",
+  "purchaseUnavailable": "Adetɔ nni hɔ seesei. San bɔ mmɔden akyiri yi."
 }

@@ -27,12 +27,14 @@ class _ReferralCardState extends State<ReferralCard> {
   /// háttérben frissül).
   bool _redeemedNow = false;
 
-  /// Belépés, kilépés vagy fióktörlés után a másik fiók kódja jön.
-  late String? _email = widget.account.email;
+  /// Belépés, kilépés vagy fióktörlés után a másik fiók kódja jön. Az induláskor rögzítve (egy
+  /// lusta kezdőérték csak a változás után olvasódna ki, és a törölt fiók kódja maradna).
+  String? _email;
 
   @override
   void initState() {
     super.initState();
+    _email = widget.account.email;
     widget.account.addListener(_accountChanged);
   }
 
@@ -50,7 +52,9 @@ class _ReferralCardState extends State<ReferralCard> {
   }
 
   void _reload() {
-    final next = widget.backend.referral();
+    // A hibát a FutureBuilder mutatja; ha a kártya addigra eltűnt (pl. fióktörlés után más
+    // nézet jön), ne legyen kezeletlen.
+    final next = widget.backend.referral()..ignore();
     setState(() {
       _info = next;
     });
@@ -95,10 +99,20 @@ class _ReferralCardState extends State<ReferralCard> {
             return Padding(
               padding: const EdgeInsets.all(16),
               child: snap.hasError
-                  ? TextButton.icon(
-                      onPressed: _reload,
-                      icon: const Icon(Icons.refresh_rounded),
-                      label: Text(l10n.retry),
+                  ? Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            l10n.errorSectionUnavailable,
+                            style: theme.textTheme.bodyMedium?.copyWith(color: p.muted),
+                          ),
+                        ),
+                        TextButton.icon(
+                          onPressed: _reload,
+                          icon: const Icon(Icons.refresh_rounded),
+                          label: Text(l10n.retry),
+                        ),
+                      ],
                     )
                   : const Center(
                       child: SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2)),

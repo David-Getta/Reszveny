@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Không có thuật ngữ nào khớp với tìm kiếm của bạn.",
   "cashInvalidAmount": "Hãy nhập số tiền từ 0 trở lên.",
   "portfolioImportNothing": "Không đọc được giao dịch nào từ văn bản này. Hãy kiểm tra xem mỗi dòng có giống ví dụ không.",
-  "lotPriceFarFromQuote": "Giá này chênh lệch nhiều so với giá hôm nay ({price}). Hãy kiểm tra lại, hoặc lưu lần nữa nếu đúng."
+  "lotPriceFarFromQuote": "Giá này chênh lệch nhiều so với giá hôm nay ({price}). Hãy kiểm tra lại, hoặc lưu lần nữa nếu đúng.",
+  "accountDeletedElsewhere": "Tài khoản này đã bị xóa trên thiết bị khác hoặc trên web, nên dữ liệu của tài khoản cũng đã bị xóa khỏi thiết bị này.",
+  "errAiUnavailable": "Dịch vụ AI hiện không khả dụng. Hãy thử lại sau vài phút.",
+  "errMarketUnavailable": "Dữ liệu thị trường hiện không khả dụng. Hãy thử lại sau vài phút.",
+  "purchaseUnavailable": "Hiện không thể mua hàng. Hãy thử lại sau."
 }

@@ -896,5 +896,9 @@
   "glossaryNoMatch": "ከፍለጋዎ ጋር የሚዛመድ ቃል የለም።",
   "cashInvalidAmount": "0 ወይም ከዚያ በላይ የሆነ መጠን ያስገቡ።",
   "portfolioImportNothing": "ከዚህ ጽሑፍ ምንም ግብይት ማንበብ አልተቻለም። እያንዳንዱ መስመር ምሳሌውን የሚመስል መሆኑን ያረጋግጡ።",
-  "lotPriceFarFromQuote": "ይህ ከዛሬው ዋጋ ({price}) በጣም የራቀ ነው። ያረጋግጡት፣ ወይም ትክክል ከሆነ እንደገና ያስቀምጡ።"
+  "lotPriceFarFromQuote": "ይህ ከዛሬው ዋጋ ({price}) በጣም የራቀ ነው። ያረጋግጡት፣ ወይም ትክክል ከሆነ እንደገና ያስቀምጡ።",
+  "accountDeletedElsewhere": "ይህ መለያ በሌላ መሣሪያ ወይም በድር ላይ ተሰርዟል፤ ስለዚህ ውሂቡ ከዚህ መሣሪያም ተወግዷል።",
+  "errAiUnavailable": "የAI አገልግሎቱ አሁን አይገኝም። ከጥቂት ደቂቃዎች በኋላ እንደገና ይሞክሩ።",
+  "errMarketUnavailable": "የገበያ መረጃ አሁን አይገኝም። ከጥቂት ደቂቃዎች በኋላ እንደገና ይሞክሩ።",
+  "purchaseUnavailable": "ግዢዎች አሁን አይገኙም። ቆይተው እንደገና ይሞክሩ።"
 }

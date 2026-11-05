@@ -10,6 +10,10 @@ enum AppErrorCode {
   recognitionEmpty,
   missingFinnhubKey,
   marketUnreachable,
+
+  /// Az árfolyam-szolgáltató épp nem érhető el (a szerver 502/503/504-et ad): átmeneti,
+  /// nem a felhasználó internetkapcsolata a hibás.
+  marketUnavailable,
   marketRateLimited,
   marketHttp,
   marketBadResponse,
@@ -19,6 +23,9 @@ enum AppErrorCode {
   noResults,
   aiNotConfigured,
   aiUnreachable,
+
+  /// Az AI-szolgáltató épp nem érhető el (a szerver 502/503/504-et ad): átmeneti.
+  aiUnavailable,
   aiHttp,
   aiRefused,
   aiBadResponse,

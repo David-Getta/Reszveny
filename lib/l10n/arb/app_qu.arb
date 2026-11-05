@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Mana ima rimaypas maskasqaykiman tupanchu.",
   "cashInvalidAmount": "0 kaq utaq aswan hatun qullqita qillqay.",
   "portfolioImportNothing": "Kay qillqamanta mana ima rantiy rantikuytapas ñawinchayta atikunchu. Sapa siqi ejemplo hina kasqanta qhawariy.",
-  "lotPriceFarFromQuote": "Kayqa kunan p'unchaw chaninmanta ({price}) karupim. Qhawariy, utaq allin kaptinqa hukmanta waqaychay."
+  "lotPriceFarFromQuote": "Kayqa kunan p'unchaw chaninmanta ({price}) karupim. Qhawariy, utaq allin kaptinqa hukmanta waqaychay.",
+  "accountDeletedElsewhere": "Kay cuentaqa huk equipopi utaq webpi qullusqa karqan, chaymi datosninpas kay equipomanta qichusqa.",
+  "errAiUnavailable": "AI servicioqa kunanqa manam kanchu. Wakin minutokunamanta huktawan ruway.",
+  "errMarketUnavailable": "Qhatu datosqa kunanqa manam kanchu. Wakin minutokunamanta huktawan ruway.",
+  "purchaseUnavailable": "Kunanqa manam rantiy atikunchu. Qhipaman huktawan ruway."
 }

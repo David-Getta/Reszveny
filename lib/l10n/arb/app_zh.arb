@@ -896,5 +896,9 @@
   "glossaryNoMatch": "没有与搜索匹配的术语。",
   "cashInvalidAmount": "请输入大于或等于 0 的金额。",
   "portfolioImportNothing": "无法从该文本中读取任何交易。请检查每一行是否与示例格式一致。",
-  "lotPriceFarFromQuote": "此价格与今日价格（{price}）相差很大。请核对，若无误请再次保存。"
+  "lotPriceFarFromQuote": "此价格与今日价格（{price}）相差很大。请核对，若无误请再次保存。",
+  "accountDeletedElsewhere": "此账户已在其他设备或网页上删除，因此其数据也已从此设备移除。",
+  "errAiUnavailable": "AI 服务暂时不可用。请几分钟后重试。",
+  "errMarketUnavailable": "行情数据暂时不可用。请几分钟后重试。",
+  "purchaseUnavailable": "暂时无法购买。请稍后重试。"
 }

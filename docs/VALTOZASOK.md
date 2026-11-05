@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.314)
+# Változásjegyzék (0.2.130 → 0.2.315)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,22 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## App és szerver együtt: fióktörlés más eszközön, kiesések, fizetés
+
+- **0.2.315**: ha a fiókot egy másik eszközön vagy a weboldalon törlöd, a többi eszköz is törli a fiók
+  adatait (portfólió, riasztások, listák, jegyzetek), és ezt egy üzenet elmondja. Eddig ott maradtak, és egy
+  újabb belépéskor feltöltődtek volna az új fiókba. A szerver 30 napig felismeri a törölt fiók tokenjeit;
+  egy egyszerűen lejárt munkamenetnél az adatok maradnak (a fiók megvan, belépéskor összefésülődnek).
+- Ha az AI- vagy az árfolyam-szolgáltató épp nem érhető el, minden AI-funkció (elemzés, napi összefoglaló,
+  kérdés, portfólió-áttekintés, képfelismerés) és az árfolyamok is ezt mondják („most nem érhető el,
+  próbáld újra néhány perc múlva”), nem nyers „HTTP 502”-t, és nem az internetkapcsolatot okolják.
+- Fizetés: ha a szerveren nincs beállítva (pl. előzetesben), az app ezt mondja (nem általános hibát), a hiba
+  üzenetsávban is látszik (telefonon a gomb alatti megjegyzés a képernyőn kívül lehetett), a képernyőolvasó az
+  ismételt hibát is bemondja, és egy utána indított visszaállítás eredménye nem bújik a régi hiba mögé.
+- A fiók törlése után a meghívókártya az új fiók kódját mutatja (eddig a törölt fiókét); hálózat nélkül
+  kiírja, hogy nem tölthető be. Meghívókód megadása után a szinkron azonnal újrapróbál (nem marad „A
+  szinkron nem sikerült”); árfolyam nélkül a riasztás mezője „Ár”, nem „Ár ()”. 4 új szöveg, 120 nyelven.
 
 ## Szerver: valódi HTTP-n végigjátszva
 

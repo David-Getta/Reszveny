@@ -37,6 +37,7 @@ class _NoRecognizer implements StockRecognizer {
 class _Server {
   var redeemed = false;
   var extra = 0;
+  var code = 'WS-MINE42';
   var tier = 'trial';
 
   Map<String, Object> get _ent => {
@@ -53,7 +54,7 @@ class _Server {
         http.Response(jsonEncode(body), status, headers: {'content-type': 'application/json; charset=utf-8'});
     switch (req.url.path) {
       case '/v1/referral':
-        return json({'code': 'WS-MINE42', 'invited': 3, 'rewarded': 1, 'bonus': 5, 'redeemed': redeemed});
+        return json({'code': code, 'invited': 3, 'rewarded': 1, 'bonus': 5, 'redeemed': redeemed});
       case '/v1/referral/redeem':
         final code = (jsonDecode(req.body) as Map)['code'];
         if (code == 'WS-MINE42') return json({'error': 'own_code'}, 400);
@@ -71,9 +72,10 @@ class _Server {
   });
 }
 
-AppServices _services(_Server server) {
+AppServices _services(_Server server, {String? email}) {
   final ent = EntitlementService();
   return AppServices(
+    accountEmail: email,
     alertNotifier: FakeNotifier(),
     config: const AppConfig(backendUrl: 'https://api.test'),
     backend: BackendClient(baseUrl: 'https://api.test', inner: server.client, tokenLoader: () async => 'tok'),
@@ -185,5 +187,23 @@ void main() {
     await tester.tap(find.text('Settings'));
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('referral-card')), findsNothing);
+  });
+
+  testWidgets("after deleting the account the card shows the new account's code, not the deleted one", (tester) async {
+    tester.view.physicalSize = const Size(1200, 1600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final server = _Server();
+    final s = _services(server, email: 'a@x.hu');
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Settings'));
+    await tester.pumpAndSettle();
+    expect(find.text('WS-MINE42'), findsOneWidget);
+    server.code = 'WS-NEW001';
+    await s.deleteAccount(wipeLocalData: true);
+    await tester.pumpAndSettle();
+    expect(find.text('WS-NEW001'), findsOneWidget);
+    expect(find.text('WS-MINE42'), findsNothing);
   });
 }

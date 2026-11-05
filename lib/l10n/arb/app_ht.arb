@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Pa gen okenn tèm ki koresponn ak rechèch ou.",
   "cashInvalidAmount": "Antre yon montan 0 oswa plis.",
   "portfolioImportNothing": "Nou pa t ka li okenn tranzaksyon nan tèks sa a. Verifye si chak liy sanble ak egzanp lan.",
-  "lotPriceFarFromQuote": "Sa a lwen pri jodi a ({price}). Verifye l, oswa anrejistre ankò si l kòrèk."
+  "lotPriceFarFromQuote": "Sa a lwen pri jodi a ({price}). Verifye l, oswa anrejistre ankò si l kòrèk.",
+  "accountDeletedElsewhere": "Yo efase kont sa a sou yon lòt aparèy oswa sou entènèt, kidonk done li yo retire sou aparèy sa a tou.",
+  "errAiUnavailable": "Sèvis AI a pa disponib kounye a. Eseye ankò nan kèk minit.",
+  "errMarketUnavailable": "Done mache yo pa disponib kounye a. Eseye ankò nan kèk minit.",
+  "purchaseUnavailable": "Acha pa disponib kounye a. Eseye ankò pita."
 }

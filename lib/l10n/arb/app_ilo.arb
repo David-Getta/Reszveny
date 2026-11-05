@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Awan ti termino a maitutop iti binirokmo.",
   "cashInvalidAmount": "Mangikabil iti gatad a 0 wenno ad-adu pay.",
   "portfolioImportNothing": "Awan ti transaksion a nabasa manipud iti daytoy a teksto. Kitaem no kaasping ti pagarigan ti tunggal linia.",
-  "lotPriceFarFromQuote": "Adayo unay daytoy iti presio ita nga aldaw ({price}). Kitaem, wenno i-save manen no husto."
+  "lotPriceFarFromQuote": "Adayo unay daytoy iti presio ita nga aldaw ({price}). Kitaem, wenno i-save manen no husto.",
+  "accountDeletedElsewhere": "Napunas daytoy nga account iti sabali a device wenno iti web, isu a naikkat met ti datosna iti daytoy a device.",
+  "errAiUnavailable": "Saan a mausar ti serbisio ti AI ita. Padasem manen kalpasan ti sumagmamano a minuto.",
+  "errMarketUnavailable": "Saan a mausar ti market data ita. Padasem manen kalpasan ti sumagmamano a minuto.",
+  "purchaseUnavailable": "Saan a mausar ti panaggatang ita. Padasem manen no madamdama."
 }

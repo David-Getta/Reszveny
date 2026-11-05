@@ -182,4 +182,43 @@ void main() {
     );
     expect(ok.status, 200);
   });
+
+  test("a deleted account's other devices are told it was deleted (not just signed out)", () async {
+    final api = build();
+    const email = 'gone@example.com';
+    // Két eszköz ugyanabban a fiókban.
+    final a = (await call(api, 'POST', '/v1/auth/anonymous', ip: '81.7.7.1')).body as Map;
+    await call(api, 'POST', '/v1/auth/email/start', ip: '81.7.7.1', body: {'email': email});
+    final signedA = await call(
+      api,
+      'POST',
+      '/v1/auth/email/verify',
+      ip: '81.7.7.1',
+      token: a['token'] as String,
+      body: {'email': email, 'code': mailer.sent[email]},
+    );
+    final tokenA = (signedA.body as Map)['token'] as String;
+    final b = (await call(api, 'POST', '/v1/auth/anonymous', ip: '81.7.7.2')).body as Map;
+    await call(api, 'POST', '/v1/auth/email/start', ip: '81.7.7.2', body: {'email': email});
+    final signedB = await call(
+      api,
+      'POST',
+      '/v1/auth/email/verify',
+      ip: '81.7.7.2',
+      token: b['token'] as String,
+      body: {'email': email, 'code': mailer.sent[email]},
+    );
+    final tokenB = (signedB.body as Map)['token'] as String;
+    expect((await call(api, 'DELETE', '/v1/account', ip: '81.7.7.1', token: tokenA)).status, 200);
+    final onB = await call(api, 'GET', '/v1/sync', ip: '81.7.7.2', token: tokenB);
+    expect(onB.status, 401);
+    expect((onB.body as Map)['error'], 'account_deleted');
+    // Egy ismeretlen token csak „unauthorized”.
+    final random = await call(api, 'GET', '/v1/sync', ip: '81.7.7.2', token: 'tok_nope');
+    expect((random.body as Map)['error'], 'unauthorized');
+    // A lenyomat 30 nap után kikerül.
+    store.clock = () => DateTime.now().add(Store.deletedSessionKept + const Duration(days: 1));
+    store.purgeExpired();
+    expect(store.isDeletedSession(tokenB), isFalse);
+  });
 }

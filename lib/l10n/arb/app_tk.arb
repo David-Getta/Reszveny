@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Gözlegiňize laýyk adalga ýok.",
   "cashInvalidAmount": "0 ýa-da ondan köp mukdar giriziň.",
   "portfolioImportNothing": "Bu tekstden hiç hili amal okalyp bilinmedi. Her setiriň mysaldaky ýaly görünýändigini barlaň.",
-  "lotPriceFarFromQuote": "Bu şu günki bahadan ({price}) gaty uzak. Ony barlaň ýa-da dogry bolsa, gaýtadan saklaň."
+  "lotPriceFarFromQuote": "Bu şu günki bahadan ({price}) gaty uzak. Ony barlaň ýa-da dogry bolsa, gaýtadan saklaň.",
+  "accountDeletedElsewhere": "Bu hasap başga enjamda ýa-da web-de pozuldy, şonuň üçin onuň maglumatlary bu enjamdan hem aýryldy.",
+  "errAiUnavailable": "AI hyzmaty häzir elýeterli däl. Birnäçe minutdan gaýtadan synanyşyň.",
+  "errMarketUnavailable": "Bazar maglumatlary häzir elýeterli däl. Birnäçe minutdan gaýtadan synanyşyň.",
+  "purchaseUnavailable": "Satyn alyşlar häzir elýeterli däl. Soňrak gaýtadan synanyşyň."
 }

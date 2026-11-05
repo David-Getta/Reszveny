@@ -13,7 +13,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Pran foto yon aksyon epi dekouvri tout sa ou bezwen konnen sou li.';
+  String get homeTagline =>
+      'Pran foto yon aksyon epi dekouvri tout sa ou bezwen konnen sou li.';
 
   @override
   String get homeHint =>
@@ -318,7 +319,12 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analis', one: '$count analis');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analis',
+      one: '$count analis',
+    );
     return '$_temp0';
   }
 
@@ -346,10 +352,12 @@ class AppLocalizationsHt extends AppLocalizations {
   String get recognitionRawText => 'Tèks nou li nan imaj la';
 
   @override
-  String get errMissingAnthropicKey => 'Rekonesans imaj pa disponib nan vèsyon sa a. Tape senbòl la pito.';
+  String get errMissingAnthropicKey =>
+      'Rekonesans imaj pa disponib nan vèsyon sa a. Tape senbòl la pito.';
 
   @override
-  String get errRecognitionUnreachable => 'Nou pa ka jwenn sèvis rekonesans lan. Verifye koneksyon entènèt ou.';
+  String get errRecognitionUnreachable =>
+      'Nou pa ka jwenn sèvis rekonesans lan. Verifye koneksyon entènèt ou.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -357,25 +365,31 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Sèvis rekonesans lan pa t ka trete imaj sa a.';
+  String get errRecognitionRefused =>
+      'Sèvis rekonesans lan pa t ka trete imaj sa a.';
 
   @override
-  String get errRecognitionTruncated => 'Repons rekonesans lan koupe. Tanpri eseye ankò.';
+  String get errRecognitionTruncated =>
+      'Repons rekonesans lan koupe. Tanpri eseye ankò.';
 
   @override
-  String get errRecognitionBadResponse => 'Sèvis rekonesans lan voye yon repons nou pa t ap tann.';
+  String get errRecognitionBadResponse =>
+      'Sèvis rekonesans lan voye yon repons nou pa t ap tann.';
 
   @override
   String get errRecognitionEmpty => 'Sèvis rekonesans lan voye yon repons vid.';
 
   @override
-  String get errMissingFinnhubKey => 'Done mache yo pa disponib nan vèsyon sa a.';
+  String get errMissingFinnhubKey =>
+      'Done mache yo pa disponib nan vèsyon sa a.';
 
   @override
-  String get errMarketUnreachable => 'Nou pa ka jwenn sèvis done mache a. Verifye koneksyon entènèt ou.';
+  String get errMarketUnreachable =>
+      'Nou pa ka jwenn sèvis done mache a. Verifye koneksyon entènèt ou.';
 
   @override
-  String get errMarketRateLimited => 'Twòp demann bay sèvis done mache a. Tanpri tann yon minit.';
+  String get errMarketRateLimited =>
+      'Twòp demann bay sèvis done mache a. Tanpri tann yon minit.';
 
   @override
   String errMarketHttp(String status) {
@@ -383,7 +397,8 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Sèvis done mache a voye yon repons nou pa t ap tann.';
+  String get errMarketBadResponse =>
+      'Sèvis done mache a voye yon repons nou pa t ap tann.';
 
   @override
   String errNoQuote(String symbol) {
@@ -483,7 +498,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get aiRegenerate => 'Jenere ankò';
 
   @override
-  String get aiGenerating => 'N ap prepare analiz la… sa ka pran youn oswa de minit.';
+  String get aiGenerating =>
+      'N ap prepare analiz la… sa ka pran youn oswa de minit.';
 
   @override
   String get aiSources => 'Sous';
@@ -498,10 +514,12 @@ class AppLocalizationsHt extends AppLocalizations {
       'Analiz AI jenere sou baz done piblik ak dènye nouvèl. Li ka gen erè oswa li ka pa ajou, epi se pa yon konsèy envestisman.';
 
   @override
-  String get errAiNotConfigured => 'Fonksyon AI yo pa disponib nan vèsyon sa a.';
+  String get errAiNotConfigured =>
+      'Fonksyon AI yo pa disponib nan vèsyon sa a.';
 
   @override
-  String get errAiUnreachable => 'Nou pa ka jwenn sèvis AI a. Verifye koneksyon entènèt ou.';
+  String get errAiUnreachable =>
+      'Nou pa ka jwenn sèvis AI a. Verifye koneksyon entènèt ou.';
 
   @override
   String errAiHttp(String status) {
@@ -533,7 +551,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get rangeFiveYears => '5A';
 
   @override
-  String get chartUnavailable => 'Istorik pri a pa disponib nan sous done aktyèl la.';
+  String get chartUnavailable =>
+      'Istorik pri a pa disponib nan sous done aktyèl la.';
 
   @override
   String get sectionStatements => 'Rapò finansye (anyèl)';
@@ -560,7 +579,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get labelOperatingCashFlow => 'Kach flo operasyonèl';
 
   @override
-  String get statementsUnavailable => 'Pa gen rapò finansye pibliye pou aksyon sa a.';
+  String get statementsUnavailable =>
+      'Pa gen rapò finansye pibliye pou aksyon sa a.';
 
   @override
   String get launchAtLogin => 'Louvri otomatikman lè w konekte';
@@ -569,7 +589,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get hotkeyLabel => 'Rakousi global';
 
   @override
-  String get hotkeyRecordHint => 'Klike la a, epi peze nouvo konbinezon touch yo';
+  String get hotkeyRecordHint =>
+      'Klike la a, epi peze nouvo konbinezon touch yo';
 
   @override
   String get hotkeyReset => 'Remete pa defo';
@@ -590,7 +611,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get removeFromFavorites => 'Retire nan favori';
 
   @override
-  String get noFavorites => 'Poko gen favori. Peze zetwal la sou yon aksyon pou ajoute l.';
+  String get noFavorites =>
+      'Poko gen favori. Peze zetwal la sou yon aksyon pou ajoute l.';
 
   @override
   String get displayCurrency => 'Deviz pou afiche';
@@ -646,7 +668,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get restartNow => 'Rekòmanse';
 
   @override
-  String get updatesViaStore => 'Mizajou yo rive otomatikman atravè magazen aplikasyon an.';
+  String get updatesViaStore =>
+      'Mizajou yo rive otomatikman atravè magazen aplikasyon an.';
 
   @override
   String get updateCheckFailed => 'Nou pa t ka tcheke si gen mizajou.';
@@ -694,7 +717,8 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Esè gratis ou a fini. Chwazi yon plan pou kontinye analize.';
+  String get trialExpired =>
+      'Esè gratis ou a fini. Chwazi yon plan pou kontinye analize.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -733,7 +757,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get extraPacksTitle => 'Bezwen plis? Achte analiz anplis';
 
   @override
-  String get extraPacksHint => 'Analiz anplis yo pa janm ekspire, epi yo itilize yo apre kota chak mwa ou a.';
+  String get extraPacksHint =>
+      'Analiz anplis yo pa janm ekspire, epi yo itilize yo apre kota chak mwa ou a.';
 
   @override
   String get buy => 'Achte';
@@ -761,10 +786,12 @@ class AppLocalizationsHt extends AppLocalizations {
       'Acha poko disponib sou platfòm sa a. Abòne sou telefòn ou oswa sou Mac; plan ou a ap mache sou tout aparèy.';
 
   @override
-  String get errQuotaExceeded => 'Ou pa gen analiz ki rete pou peryòd sa a. Monte plan ou a oswa achte analiz anplis.';
+  String get errQuotaExceeded =>
+      'Ou pa gen analiz ki rete pou peryòd sa a. Monte plan ou a oswa achte analiz anplis.';
 
   @override
-  String get errTrialExpired => 'Esè gratis ou a fini. Chwazi yon plan pou kontinye.';
+  String get errTrialExpired =>
+      'Esè gratis ou a fini. Chwazi yon plan pou kontinye.';
 
   @override
   String get errNoPlan => 'Ou bezwen yon plan aktif pou analiz AI.';
@@ -776,7 +803,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get usageTitle => 'Itilizasyon';
 
   @override
-  String get demoPurchaseNote => 'Faktirasyon demo: acha yo se similasyon sèlman sou platfòm sa a.';
+  String get demoPurchaseNote =>
+      'Faktirasyon demo: acha yo se similasyon sèlman sou platfòm sa a.';
 
   @override
   String get mostPopular => 'Pi popilè';
@@ -816,7 +844,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get aiDepthStandardDesc => 'Rapò konplè ak tout seksyon yo.';
 
   @override
-  String get aiDepthDeepDesc => 'Plis rechèch sou entènèt, konparezon ak konpayi parèy yo ak plis detay.';
+  String get aiDepthDeepDesc =>
+      'Plis rechèch sou entènèt, konparezon ak konpayi parèy yo ak plis detay.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -847,13 +876,15 @@ class AppLocalizationsHt extends AppLocalizations {
   String get aiReaderBeginnerDesc => 'Langaj senp; chak mo teknik eksplike.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Tèks pi dans ak vokabilè finansye estanda.';
+  String get aiReaderExperiencedDesc =>
+      'Tèks pi dans ak vokabilè finansye estanda.';
 
   @override
   String get aiCounterArgument => 'Pi fò kont-agiman an';
 
   @override
-  String get aiCounterArgumentDesc => 'Rezime a toujou fini ak pi bon agiman kont pwòp konklizyon l.';
+  String get aiCounterArgumentDesc =>
+      'Rezime a toujou fini ak pi bon agiman kont pwòp konklizyon l.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -946,7 +977,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get upcomingEvents => 'Evènman k ap vini';
 
   @override
-  String get outlookChartNote => 'Entèval endikatif; pwobabilite yo se estimasyon apeprè, se pa prediksyon.';
+  String get outlookChartNote =>
+      'Entèval endikatif; pwobabilite yo se estimasyon apeprè, se pa prediksyon.';
 
   @override
   String get accountTitle => 'Kont';
@@ -961,10 +993,12 @@ class AppLocalizationsHt extends AppLocalizations {
   String get notSignedIn => 'Ou pa konekte';
 
   @override
-  String get accountBenefit => 'Konekte pou abònman ou a mache sou tout aparèy ou yo.';
+  String get accountBenefit =>
+      'Konekte pou abònman ou a mache sou tout aparèy ou yo.';
 
   @override
-  String get accountSyncedNote => 'Abònman ou ak analiz ki rete yo se menm bagay sou chak aparèy.';
+  String get accountSyncedNote =>
+      'Abònman ou ak analiz ki rete yo se menm bagay sou chak aparèy.';
 
   @override
   String get signInTitle => 'Konekte nan WhatStock';
@@ -996,13 +1030,16 @@ class AppLocalizationsHt extends AppLocalizations {
   String get errInvalidEmail => 'Tanpri antre yon adrès imèl ki valab.';
 
   @override
-  String get errSignInFailed => 'Koneksyon an echwe. Verifye koneksyon entènèt ou epi eseye ankò.';
+  String get errSignInFailed =>
+      'Koneksyon an echwe. Verifye koneksyon entènèt ou epi eseye ankò.';
 
   @override
-  String get checkoutWaiting => 'Fini peman an nan navigatè w. Aplikasyon an ap mete ajou otomatikman lè sa fini.';
+  String get checkoutWaiting =>
+      'Fini peman an nan navigatè w. Aplikasyon an ap mete ajou otomatikman lè sa fini.';
 
   @override
-  String get paymentViaStripe => 'Peman sekirize nan navigatè w atravè Stripe. Anile nenpòt ki lè.';
+  String get paymentViaStripe =>
+      'Peman sekirize nan navigatè w atravè Stripe. Anile nenpòt ki lè.';
 
   @override
   String get paymentViaStore =>
@@ -1015,7 +1052,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get doubleOptionTitle => 'Peze Option de fwa';
 
   @override
-  String get doubleOptionSubtitle => 'Lè w peze touch Option la de fwa byen vit, sa rele WhatStock tou.';
+  String get doubleOptionSubtitle =>
+      'Lè w peze touch Option la de fwa byen vit, sa rele WhatStock tou.';
 
   @override
   String get doubleOptionPermission =>
@@ -1037,7 +1075,12 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years an', one: '$years an');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years an',
+      one: '$years an',
+    );
     return '$_temp0';
   }
 
@@ -1143,7 +1186,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get portfolioRemove => 'Retire';
 
   @override
-  String get portfolioExcluded => 'Pozisyon ki pa gen pri oswa to chanj pa konte nan total yo.';
+  String get portfolioExcluded =>
+      'Pozisyon ki pa gen pri oswa to chanj pa konte nan total yo.';
 
   @override
   String get priceAlerts => 'Alèt pri';
@@ -1185,7 +1229,8 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Poko gen alèt pri. Louvri yon aksyon epi peze klòch la pou mete youn.';
+  String get alertsEmpty =>
+      'Poko gen alèt pri. Louvri yon aksyon epi peze klòch la pou mete youn.';
 
   @override
   String get alertsNote =>
@@ -1268,7 +1313,8 @@ class AppLocalizationsHt extends AppLocalizations {
       'Kont ou ak tout sa ki anrejistre sou sèvè nou an (imèl, kota, itilizasyon) ap efase nèt, epi analiz ou pa t itilize yo ap pèdi. Yon abònman ou peye nan navigatè a ap anile touswit; yon abònman App Store oswa Google Play, se nan paramèt magazen an pou w anile l.';
 
   @override
-  String get deleteLocalData => 'Efase done ki sou aparèy sa a tou (pòtfèy, alèt, favori, istorik, analiz anrejistre)';
+  String get deleteLocalData =>
+      'Efase done ki sou aparèy sa a tou (pòtfèy, alèt, favori, istorik, analiz anrejistre)';
 
   @override
   String get deleteAccountConfirm => 'Efase nèt';
@@ -1277,7 +1323,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get accountDeleted => 'Kont ou efase.';
 
   @override
-  String get errDeleteAccount => 'Nou pa t ka efase kont lan. Verifye koneksyon entènèt ou epi eseye ankò.';
+  String get errDeleteAccount =>
+      'Nou pa t ka efase kont lan. Verifye koneksyon entènèt ou epi eseye ankò.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1327,16 +1374,19 @@ class AppLocalizationsHt extends AppLocalizations {
   String get inviteInvalid => 'Kòd envitasyon sa a pa valab.';
 
   @override
-  String get inviteExpired => 'Envitasyon sa a ekspire. Mande moun ki te envite w la yon nouvo kòd.';
+  String get inviteExpired =>
+      'Envitasyon sa a ekspire. Mande moun ki te envite w la yon nouvo kòd.';
 
   @override
-  String get inviteDeviceLimit => 'Kòd envitasyon sa a deja itilize sou kantite maksimòm aparèy ki pèmèt.';
+  String get inviteDeviceLimit =>
+      'Kòd envitasyon sa a deja itilize sou kantite maksimòm aparèy ki pèmèt.';
 
   @override
   String get previewConfidential => 'Apèsi konfidansyèl';
 
   @override
-  String get errPreviewDailyLimit => 'Limit analiz jodi a pou apèsi sa a fin rive. Eseye ankò demen.';
+  String get errPreviewDailyLimit =>
+      'Limit analiz jodi a pou apèsi sa a fin rive. Eseye ankò demen.';
 
   @override
   String ageHours(int count) {
@@ -1351,7 +1401,12 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'sa gen $count jou', one: 'sa gen 1 jou');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sa gen $count jou',
+      one: 'sa gen 1 jou',
+    );
     return '$_temp0';
   }
 
@@ -1386,7 +1441,8 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'Peze yon nivo AI estime pou resevwa yon alèt lè pri a rive la.';
+  String get keyLevelAlertHint =>
+      'Peze yon nivo AI estime pou resevwa yon alèt lè pri a rive la.';
 
   @override
   String get shareAnalysisTitle => 'Pataje analiz la';
@@ -1401,7 +1457,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get shareCardFooter => 'Fèt ak WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Analiz AI · senaryo egzanp, se pa prediksyon · se pa yon konsèy envestisman';
+  String get shareCardDisclaimer =>
+      'Analiz AI · senaryo egzanp, se pa prediksyon · se pa yon konsèy envestisman';
 
   @override
   String get referralTitle => 'Envite zanmi';
@@ -1443,7 +1500,8 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Kòd sa a pa egziste. Verifye l epi eseye ankò.';
+  String get referralErrUnknown =>
+      'Kòd sa a pa egziste. Verifye l epi eseye ankò.';
 
   @override
   String get referralErrOwn => 'Ou pa ka itilize pwòp kòd ou.';
@@ -1560,17 +1618,24 @@ class AppLocalizationsHt extends AppLocalizations {
   String get askSuggest3 => 'Eksplike l avèk mo senp';
 
   @override
-  String get askMaxReached => 'Sa se te dènye kesyon pou analiz sa a. Jenere yon nouvo analiz pou w poze plis kesyon.';
+  String get askMaxReached =>
+      'Sa se te dènye kesyon pou analiz sa a. Jenere yon nouvo analiz pou w poze plis kesyon.';
 
   @override
-  String get errAskLimit => 'Ou rive nan limit kesyon pou jodi a. Eseye ankò demen.';
+  String get errAskLimit =>
+      'Ou rive nan limit kesyon pou jodi a. Eseye ankò demen.';
 
   @override
   String get eventTomorrow => 'Demen';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'nan $days jou', one: 'nan 1 jou');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'nan $days jou',
+      one: 'nan 1 jou',
+    );
     return '$_temp0';
   }
 
@@ -1654,7 +1719,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get notesTitle => 'Nòt mwen yo';
 
   @override
-  String get notesHint => 'Poukisa ou te achte l, kisa w ap swiv, kisa ki ta fè w vann li?';
+  String get notesHint =>
+      'Poukisa ou te achte l, kisa w ap swiv, kisa ki ta fè w vann li?';
 
   @override
   String get notesInfo =>
@@ -1704,7 +1770,8 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
-  String get syncInfo => 'Pòtfèy, favori, alèt pri ak nòt yo senkronize sou tout aparèy ou yo.';
+  String get syncInfo =>
+      'Pòtfèy, favori, alèt pri ak nòt yo senkronize sou tout aparèy ou yo.';
 
   @override
   String syncLast(String time) {
@@ -1715,7 +1782,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get syncNow => 'Senkronize kounye a';
 
   @override
-  String get syncFailed => 'Senkronizasyon an echwe. L ap eseye ankò otomatikman.';
+  String get syncFailed =>
+      'Senkronizasyon an echwe. L ap eseye ankò otomatikman.';
 
   @override
   String get alertEmailTitle => 'Imèl lè yon alèt deklanche';
@@ -1751,7 +1819,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get digestTitle => 'Rezime chak semèn pa imèl';
 
   @override
-  String get digestHint => 'Chak lendi: kijan favori ou ak pòtfèy ou te mache semèn pase a, ak pwochen dat rezilta yo.';
+  String get digestHint =>
+      'Chak lendi: kijan favori ou ak pòtfèy ou te mache semèn pase a, ak pwochen dat rezilta yo.';
 
   @override
   String get benchmarkTitle => 'Konpare ak S&P 500';
@@ -1843,7 +1912,8 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'Konbyen tout konpayi a vo sou mache bousyè a: pri aksyon an × kantite aksyon.';
+  String get glossMarketCap =>
+      'Konbyen tout konpayi a vo sou mache bousyè a: pri aksyon an × kantite aksyon.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1882,10 +1952,12 @@ class AppLocalizationsHt extends AppLocalizations {
       'Konbyen aksyon an konn bouje ak mache a: 1 = tankou mache a, 1,5 = mouvman anviwon 50% pi gwo, anba 1 = pi kalm.';
 
   @override
-  String get glossRevenueTtm => 'Total lavant 12 dènye mwa yo, anvan nenpòt depans.';
+  String get glossRevenueTtm =>
+      'Total lavant 12 dènye mwa yo, anvan nenpòt depans.';
 
   @override
-  String get glossNetIncomeTtm => 'Benefis ki rete apre tout depans, enterè ak taks sou 12 dènye mwa yo.';
+  String get glossNetIncomeTtm =>
+      'Benefis ki rete apre tout depans, enterè ak taks sou 12 dènye mwa yo.';
 
   @override
   String get glossGrossMargin =>
@@ -1916,17 +1988,20 @@ class AppLocalizationsHt extends AppLocalizations {
       'Aktif kout tèm ÷ fakti pou peye nan yon ane. Plis pase 1 vle di konpayi a ka kouvri fakti ki pral rive yo.';
 
   @override
-  String get glossRevenueGrowth => 'Konbyen chif dafè a ogmante konpare ak yon ane anvan.';
+  String get glossRevenueGrowth =>
+      'Konbyen chif dafè a ogmante konpare ak yon ane anvan.';
 
   @override
-  String get glossEpsGrowth => 'Konbyen benefis pa aksyon an ogmante konpare ak yon ane anvan.';
+  String get glossEpsGrowth =>
+      'Konbyen benefis pa aksyon an ogmante konpare ak yon ane anvan.';
 
   @override
   String get glossDividendYield =>
       'Dividann anyèl ÷ pri aksyon an: lajan kach ou ta resevwa chak ane, an pousantaj sa ou peye a.';
 
   @override
-  String get glossDividendPerShare => 'Dividann yo peye sou yon aksyon pandan dènye ane a.';
+  String get glossDividendPerShare =>
+      'Dividann yo peye sou yon aksyon pandan dènye ane a.';
 
   @override
   String get glossPayoutRatio =>
@@ -2024,7 +2099,8 @@ class AppLocalizationsHt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'Nan nivo oswa pi wo pase EPS yo te atann nan $beats sou $total dènye trimès yo',
+      other:
+          'Nan nivo oswa pi wo pase EPS yo te atann nan $beats sou $total dènye trimès yo',
       one: 'Nan nivo oswa pi wo pase EPS yo te atann nan $beats sou 1 trimès',
     );
     return '$_temp0';
@@ -2141,13 +2217,23 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count acha', one: '1 acha');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count acha',
+      one: '1 acha',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count vant', one: '1 vant');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vant',
+      one: '1 vant',
+    );
     return '$_temp0';
   }
 
@@ -2167,7 +2253,8 @@ class AppLocalizationsHt extends AppLocalizations {
       'Acha ak vant sou mache ouvè pa dirijan ak administratè yo nan 90 dènye jou yo (SEC Form 4). Nou pa konte egzèsis opsyon ak aksyon yo bay kòm rekonpans.';
 
   @override
-  String get insiderNone => 'Pa gen acha oswa vant moun anndan sou mache ouvè nan 90 dènye jou yo.';
+  String get insiderNone =>
+      'Pa gen acha oswa vant moun anndan sou mache ouvè nan 90 dènye jou yo.';
 
   @override
   String get analystTrend => 'Kijan opinyon yo chanje mwa apre mwa';
@@ -2191,7 +2278,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get watchListAddTo => 'Ajoute nan yon lis';
 
   @override
-  String get watchListEmpty => 'Poko gen aksyon nan lis sa a. Tape bouton lis la bò kote yon aksyon pou ajoute l.';
+  String get watchListEmpty =>
+      'Poko gen aksyon nan lis sa a. Tape bouton lis la bò kote yon aksyon pou ajoute l.';
 
   @override
   String favoriteRemoved(String symbol) {
@@ -2209,7 +2297,8 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard => 'Li kopye – kole l nenpòt kote ou vle pataje l.';
+  String get sharedToClipboard =>
+      'Li kopye – kole l nenpòt kote ou vle pataje l.';
 
   @override
   String get glossaryNoMatch => 'Pa gen okenn tèm ki koresponn ak rechèch ou.';
@@ -2227,6 +2316,22 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get accountDeletedElsewhere =>
+      'Yo efase kont sa a sou yon lòt aparèy oswa sou entènèt, kidonk done li yo retire sou aparèy sa a tou.';
+
+  @override
+  String get errAiUnavailable =>
+      'Sèvis AI a pa disponib kounye a. Eseye ankò nan kèk minit.';
+
+  @override
+  String get errMarketUnavailable =>
+      'Done mache yo pa disponib kounye a. Eseye ankò nan kèk minit.';
+
+  @override
+  String get purchaseUnavailable =>
+      'Acha pa disponib kounye a. Eseye ankò pita.';
+
+  @override
   String get portfolioAskTitle => 'Kesyon sou pòtfèy ou';
 
   @override
@@ -2239,13 +2344,15 @@ class AppLocalizationsHt extends AppLocalizations {
   String get backupSave => 'Anrejistre yon sovgad';
 
   @override
-  String get backupSaveHint => 'Favori ou, lis ou, pòtfèy ou, alèt ou ak nòt ou nan yon sèl fichye.';
+  String get backupSaveHint =>
+      'Favori ou, lis ou, pòtfèy ou, alèt ou ak nòt ou nan yon sèl fichye.';
 
   @override
   String get backupRestore => 'Restore nan yon sovgad';
 
   @override
-  String get backupRestoreHint => 'Li ajoute sa ki nan fichye a; anyen nan sa ou genyen kounye a p ap efase.';
+  String get backupRestoreHint =>
+      'Li ajoute sa ki nan fichye a; anyen nan sa ou genyen kounye a p ap efase.';
 
   @override
   String get backupRestored => 'Sovgad la restore.';
@@ -2364,7 +2471,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Alèt pòtfolyo';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'Yon notifikasyon lè tout pòtfolyo w bouje konsa nan yon jou.';
+  String get portfolioMoveAlertSubtitle =>
+      'Yon notifikasyon lè tout pòtfolyo w bouje konsa nan yon jou.';
 
   @override
   String get portfolioMoveAlertOff => 'Fèmen';
@@ -2536,11 +2644,17 @@ class AppLocalizationsHt extends AppLocalizations {
   String get portfolioTopHoldings => 'Pi gwo pozisyon yo';
 
   @override
-  String get portfolioShareNote => 'Se sèlman pousantaj yo ki pataje, pa gen montan.';
+  String get portfolioShareNote =>
+      'Se sèlman pousantaj yo ki pataje, pa gen montan.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count pozisyon', one: '1 pozisyon');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozisyon',
+      one: '1 pozisyon',
+    );
     return '$_temp0';
   }
 
@@ -2590,7 +2704,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get portfolioSampleTry => 'Eseye ak yon pòtfèy egzanp';
 
   @override
-  String get portfolioSampleBanner => 'Sa a se yon pòtfèy egzanp. Ajoute pwòp acha ou yo bò kote l, oswa retire l.';
+  String get portfolioSampleBanner =>
+      'Sa a se yon pòtfèy egzanp. Ajoute pwòp acha ou yo bò kote l, oswa retire l.';
 
   @override
   String get portfolioSampleRemove => 'Retire egzanp lan';
@@ -2645,10 +2760,12 @@ class AppLocalizationsHt extends AppLocalizations {
   String get lotNoteAdd => 'Ajoute yon nòt';
 
   @override
-  String get lotNoteBuyHint => 'Poukisa w ap achte? L ap ale nan nòt aksyon an, ak dat la.';
+  String get lotNoteBuyHint =>
+      'Poukisa w ap achte? L ap ale nan nòt aksyon an, ak dat la.';
 
   @override
-  String get lotNoteSellHint => 'Poukisa w ap vann? L ap ale nan nòt aksyon an, ak dat la.';
+  String get lotNoteSellHint =>
+      'Poukisa w ap vann? L ap ale nan nòt aksyon an, ak dat la.';
 
   @override
   String get lotNoteBought => 'Achte';
@@ -2658,13 +2775,23 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months mwa', one: '$months mwa');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months mwa',
+      one: '$months mwa',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days jou', one: '$days jou');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days jou',
+      one: '$days jou',
+    );
     return '$_temp0';
   }
 
@@ -2752,10 +2879,12 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Konekte ak imèl ou pou w ka itilize kòd yon zanmi.';
+  String get referralErrSignIn =>
+      'Konekte ak imèl ou pou w ka itilize kòd yon zanmi.';
 
   @override
-  String get referralErrFull => 'Kòd sa a deja rive nan limit kantite fwa li ka itilize.';
+  String get referralErrFull =>
+      'Kòd sa a deja rive nan limit kantite fwa li ka itilize.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2763,13 +2892,16 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated => 'Analiz la koupe anvan li te fini. Tanpri eseye ankò – li pa t konte nan kota ou.';
+  String get errAiTruncated =>
+      'Analiz la koupe anvan li te fini. Tanpri eseye ankò – li pa t konte nan kota ou.';
 
   @override
-  String get errImageUnsupported => 'Nou pa ka li imaj sa a. Anrejistre l an JPEG oswa PNG epi eseye ankò.';
+  String get errImageUnsupported =>
+      'Nou pa ka li imaj sa a. Anrejistre l an JPEG oswa PNG epi eseye ankò.';
 
   @override
-  String get errRateLimited => 'Twòp demann nan yon ti tan. Tanpri tann yon minit epi eseye ankò.';
+  String get errRateLimited =>
+      'Twòp demann nan yon ti tan. Tanpri tann yon minit epi eseye ankò.';
 
   @override
   String get watchListNameTaken => 'Gen yon lis ki gen non sa a deja.';
@@ -2792,14 +2924,16 @@ class AppLocalizationsHt extends AppLocalizations {
       'Pa gen okenn abònman pou jere isit la. Yon abònman ou achte nan App Store oswa Google Play, se nan paramèt magazen an pou w jere l.';
 
   @override
-  String get backupFailed => 'Nou pa t ka anrejistre sovgad la. Tanpri eseye ankò.';
+  String get backupFailed =>
+      'Nou pa t ka anrejistre sovgad la. Tanpri eseye ankò.';
 
   @override
   String get syncTooLarge =>
       'Done ou yo twò gwo pou senkronize ak kont ou. Efase tranzaksyon oswa nòt ou pa bezwen ankò, epi l ap eseye ankò.';
 
   @override
-  String get noteFull => 'Nòt aksyon sa a plen, kidonk antre sa a pa t ajoute. Fè nòt yo pi kout epi eseye ankò.';
+  String get noteFull =>
+      'Nòt aksyon sa a plen, kidonk antre sa a pa t ajoute. Fè nòt yo pi kout epi eseye ankò.';
 
   @override
   String portfolioNoRateFor(String symbols) {
@@ -2811,8 +2945,10 @@ class AppLocalizationsHt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count dividann nan $currencies pa gen to chanj, kidonk yo pa konte nan total yo.',
-      one: '1 dividann nan $currencies pa gen to chanj, kidonk li pa konte nan total yo.',
+      other:
+          '$count dividann nan $currencies pa gen to chanj, kidonk yo pa konte nan total yo.',
+      one:
+          '1 dividann nan $currencies pa gen to chanj, kidonk li pa konte nan total yo.',
     );
     return '$_temp0';
   }
@@ -2849,7 +2985,8 @@ class AppLocalizationsHt extends AppLocalizations {
       'Ou gen yon abònman deja atravè App Store oswa Google Play. Pou chanje plan ou, sèvi ak paramèt abònman magazen sa a.';
 
   @override
-  String get paymentViaAppStore => 'Peye atravè kont Apple ou. Anile nenpòt ki lè nan paramèt abònman App Store ou.';
+  String get paymentViaAppStore =>
+      'Peye atravè kont Apple ou. Anile nenpòt ki lè nan paramèt abònman App Store ou.';
 
   @override
   String get paymentViaGooglePlay =>
@@ -2910,7 +3047,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get aiReportNoteHint => 'Kisa ki pa bon? (opsyonèl)';
 
   @override
-  String get aiReportPrivacy => 'Nou resevwa tèks repons sa a ak nòt ou — san kont ou — pou nou ka egzamine l.';
+  String get aiReportPrivacy =>
+      'Nou resevwa tèks repons sa a ak nòt ou — san kont ou — pou nou ka egzamine l.';
 
   @override
   String get aiReportSend => 'Voye siyalman an';
@@ -2961,7 +3099,12 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String alertsCleared(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count alèt efase', one: '1 alèt efase');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alèt efase',
+      one: '1 alèt efase',
+    );
     return '$_temp0';
   }
 
@@ -3076,7 +3219,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get portfolioSplitRatio => 'Rapò (nouvo : ansyen)';
 
   @override
-  String get portfolioSplitRatioError => 'Antre yon rapò tankou 10:1, oswa 1:10 pou yon divizyon envès.';
+  String get portfolioSplitRatioError =>
+      'Antre yon rapò tankou 10:1, oswa 1:10 pou yon divizyon envès.';
 
   @override
   String get portfolioSplitDate => 'Dat divizyon an';
@@ -3219,7 +3363,8 @@ class AppLocalizationsHt extends AppLocalizations {
       'Konbyen pri a varye de yon jou a yon lòt, kalkile sou yon ane: 20% vle di nan yon ane nòmal pri a deplase anviwon ±20%. Plis volatilite vle di pi gwo mouvman nan toude direksyon.';
 
   @override
-  String get techNote => 'Kalkile apati pri fèmti chak jou. Siyal teknik yo dekri sa ki pase, pa sa ki pral vini.';
+  String get techNote =>
+      'Kalkile apati pri fèmti chak jou. Siyal teknik yo dekri sa ki pase, pa sa ki pral vini.';
 
   @override
   String portfolioAbove200(int above, int count) {
@@ -3259,7 +3404,8 @@ class AppLocalizationsHt extends AppLocalizations {
   String get glossaryPageTitle => 'Glosè';
 
   @override
-  String get glossaryPageSubtitle => 'Eksplikasyon senp pou chak chif aplikasyon an montre, soti nan P/E rive nan RSI';
+  String get glossaryPageSubtitle =>
+      'Eksplikasyon senp pou chak chif aplikasyon an montre, soti nan P/E rive nan RSI';
 
   @override
   String get glossarySearchHint => 'Chèche nan glosè a';

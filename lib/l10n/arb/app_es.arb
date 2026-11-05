@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Ningún término coincide con tu búsqueda.",
   "cashInvalidAmount": "Introduce un importe de 0 o más.",
   "portfolioImportNothing": "No se ha podido leer ninguna transacción de este texto. Comprueba que cada línea sea como el ejemplo.",
-  "lotPriceFarFromQuote": "Está muy lejos del precio de hoy ({price}). Revísalo o guarda de nuevo si es correcto."
+  "lotPriceFarFromQuote": "Está muy lejos del precio de hoy ({price}). Revísalo o guarda de nuevo si es correcto.",
+  "accountDeletedElsewhere": "Esta cuenta se eliminó en otro dispositivo o en la web, así que sus datos también se han borrado de este dispositivo.",
+  "errAiUnavailable": "El servicio de IA no está disponible en este momento. Vuelve a intentarlo en unos minutos.",
+  "errMarketUnavailable": "Los datos de mercado no están disponibles en este momento. Vuelve a intentarlo en unos minutos.",
+  "purchaseUnavailable": "Las compras no están disponibles en este momento. Vuelve a intentarlo más tarde."
 }

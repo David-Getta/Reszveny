@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Ga go lereo leo le swanago le seo o se nyakilego.",
   "cashInvalidAmount": "Tsenya palo ya 0 goba go feta.",
   "portfolioImportNothing": "Ga go thekišano yeo e kgonnego go balwa sengwalweng se. Lekola gore mothalo o mongwe le o mongwe o swana le mohlala.",
-  "lotPriceFarFromQuote": "Theko ye e kgole kudu le theko ya lehono ({price}). E lekole, goba o e boloke gape ge e nepagetše."
+  "lotPriceFarFromQuote": "Theko ye e kgole kudu le theko ya lehono ({price}). E lekole, goba o e boloke gape ge e nepagetše.",
+  "accountDeletedElsewhere": "Akhaonto ye e phumotšwe sedirišweng se sengwe goba wepeng, ka fao data ya yona le yona e tlošitšwe sedirišweng se.",
+  "errAiUnavailable": "Tirelo ya AI ga e hwetšagale gona bjale. Leka gape ka morago ga metsotso e se mekae.",
+  "errMarketUnavailable": "Data ya mmaraka ga e hwetšagale gona bjale. Leka gape ka morago ga metsotso e se mekae.",
+  "purchaseUnavailable": "Go reka ga go hwetšagale gona bjale. Leka gape ka morago."
 }

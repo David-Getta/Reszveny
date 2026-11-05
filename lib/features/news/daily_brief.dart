@@ -354,6 +354,9 @@ Future<({String text, List<AskSource> sources})> askWithSources(
     throw const AnalysisException(AppErrorCode.askLimit);
   }
   if (res.statusCode == 402) throw AnalysisException(ClaudeStockAnalyst.quotaErrorFor(res.body), cause: res.body);
+  if (ClaudeStockAnalyst.isOutage(res.statusCode)) {
+    throw AnalysisException(AppErrorCode.aiUnavailable, cause: res.body);
+  }
   if (res.statusCode != 200) {
     throw AnalysisException(AppErrorCode.aiHttp, detail: '${res.statusCode}', cause: res.body);
   }

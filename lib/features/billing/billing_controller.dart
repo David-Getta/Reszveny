@@ -113,6 +113,8 @@ class BillingController extends ChangeNotifier {
     _restoring = true;
     _sawRestore = false;
     _restoreOutcome = null;
+    // Egy korábbi (lezárt) vásárlás hibája ne takarja el a visszaállítás eredményét.
+    if (_lastEvent?.status != BillingStatus.pending) _lastEvent = null;
     notifyListeners();
     try {
       await billing.restore();

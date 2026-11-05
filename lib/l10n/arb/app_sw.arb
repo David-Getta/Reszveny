@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Hakuna istilahi inayolingana na utafutaji wako.",
   "cashInvalidAmount": "Weka kiasi cha 0 au zaidi.",
   "portfolioImportNothing": "Hakuna muamala ulioweza kusomwa kutoka kwenye maandishi haya. Hakikisha kila mstari unafanana na mfano.",
-  "lotPriceFarFromQuote": "Hii iko mbali sana na bei ya leo ({price}). Ikague, au hifadhi tena ikiwa ni sahihi."
+  "lotPriceFarFromQuote": "Hii iko mbali sana na bei ya leo ({price}). Ikague, au hifadhi tena ikiwa ni sahihi.",
+  "accountDeletedElsewhere": "Akaunti hii ilifutwa kwenye kifaa kingine au kwenye wavuti, kwa hivyo data yake imeondolewa pia kwenye kifaa hiki.",
+  "errAiUnavailable": "Huduma ya AI haipatikani kwa sasa. Jaribu tena baada ya dakika chache.",
+  "errMarketUnavailable": "Data ya soko haipatikani kwa sasa. Jaribu tena baada ya dakika chache.",
+  "purchaseUnavailable": "Manunuzi hayapatikani kwa sasa. Jaribu tena baadaye."
 }

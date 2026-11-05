@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Walay termino nga motakdo sa imong gipangita.",
   "cashInvalidAmount": "Pagbutang og kantidad nga 0 o labaw pa.",
   "portfolioImportNothing": "Walay transaksyon nga nabasa gikan niini nga teksto. Susiha nga ang matag linya susama sa pananglitan.",
-  "lotPriceFarFromQuote": "Layo kaayo kini sa presyo karon ({price}). Susiha kini, o i-save pag-usab kon husto kini."
+  "lotPriceFarFromQuote": "Layo kaayo kini sa presyo karon ({price}). Susiha kini, o i-save pag-usab kon husto kini.",
+  "accountDeletedElsewhere": "Kini nga account napapas sa laing device o sa web, busa gitangtang usab ang datos niini gikan niini nga device.",
+  "errAiUnavailable": "Dili magamit ang serbisyo sa AI karon. Sulayi pag-usab human sa pipila ka minuto.",
+  "errMarketUnavailable": "Dili magamit ang market data karon. Sulayi pag-usab human sa pipila ka minuto.",
+  "purchaseUnavailable": "Dili magamit ang pagpalit karon. Sulayi pag-usab unya."
 }

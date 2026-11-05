@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Nijedan pojam ne odgovara vašoj pretrazi.",
   "cashInvalidAmount": "Unesite iznos od 0 ili više.",
   "portfolioImportNothing": "Iz ovog teksta nije moguće pročitati nijednu transakciju. Provjerite da li svaki red izgleda kao primjer.",
-  "lotPriceFarFromQuote": "Ovo je daleko od današnje cijene ({price}). Provjerite ili sačuvajte ponovo ako je tačno."
+  "lotPriceFarFromQuote": "Ovo je daleko od današnje cijene ({price}). Provjerite ili sačuvajte ponovo ako je tačno.",
+  "accountDeletedElsewhere": "Ovaj račun je izbrisan na drugom uređaju ili na webu, pa su njegovi podaci uklonjeni i s ovog uređaja.",
+  "errAiUnavailable": "AI servis trenutno nije dostupan. Pokušajte ponovo za nekoliko minuta.",
+  "errMarketUnavailable": "Tržišni podaci trenutno nisu dostupni. Pokušajte ponovo za nekoliko minuta.",
+  "purchaseUnavailable": "Kupovina trenutno nije dostupna. Pokušajte ponovo kasnije."
 }

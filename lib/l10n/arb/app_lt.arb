@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Jūsų paieškos neatitinka joks terminas.",
   "cashInvalidAmount": "Įveskite 0 arba didesnę sumą.",
   "portfolioImportNothing": "Iš šio teksto nepavyko nuskaityti jokių operacijų. Patikrinkite, ar kiekviena eilutė atrodo kaip pavyzdyje.",
-  "lotPriceFarFromQuote": "Tai labai skiriasi nuo šiandienos kainos ({price}). Patikrinkite arba išsaugokite dar kartą, jei viskas teisinga."
+  "lotPriceFarFromQuote": "Tai labai skiriasi nuo šiandienos kainos ({price}). Patikrinkite arba išsaugokite dar kartą, jei viskas teisinga.",
+  "accountDeletedElsewhere": "Ši paskyra buvo ištrinta kitame įrenginyje arba žiniatinklyje, todėl jos duomenys pašalinti ir iš šio įrenginio.",
+  "errAiUnavailable": "DI paslauga šiuo metu nepasiekiama. Bandykite dar kartą po kelių minučių.",
+  "errMarketUnavailable": "Rinkos duomenys šiuo metu nepasiekiami. Bandykite dar kartą po kelių minučių.",
+  "purchaseUnavailable": "Pirkiniai šiuo metu negalimi. Bandykite dar kartą vėliau."
 }

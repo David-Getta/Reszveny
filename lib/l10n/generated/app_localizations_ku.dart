@@ -13,7 +13,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Wêneyê pişkekê bikişîne û her tiştî derbarê wê de hîn bibe.';
+  String get homeTagline =>
+      'Wêneyê pişkekê bikişîne û her tiştî derbarê wê de hîn bibe.';
 
   @override
   String get homeHint =>
@@ -318,7 +319,12 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analîst', one: '1 analîst');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analîst',
+      one: '1 analîst',
+    );
     return '$_temp0';
   }
 
@@ -346,10 +352,12 @@ class AppLocalizationsKu extends AppLocalizations {
   String get recognitionRawText => 'Nivîsa ku ji wêneyê hat xwendin';
 
   @override
-  String get errMissingAnthropicKey => 'Naskirina wêneyan di vê guhertoyê de tune ye. Li şûna wê sembolê binivîse.';
+  String get errMissingAnthropicKey =>
+      'Naskirina wêneyan di vê guhertoyê de tune ye. Li şûna wê sembolê binivîse.';
 
   @override
-  String get errRecognitionUnreachable => 'Negihîşt xizmeta naskirinê. Girêdana xwe ya înternetê kontrol bike.';
+  String get errRecognitionUnreachable =>
+      'Negihîşt xizmeta naskirinê. Girêdana xwe ya înternetê kontrol bike.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -357,22 +365,28 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Xizmeta naskirinê nikarî vî wêneyî pêvajo bike.';
+  String get errRecognitionRefused =>
+      'Xizmeta naskirinê nikarî vî wêneyî pêvajo bike.';
 
   @override
-  String get errRecognitionTruncated => 'Bersiva naskirinê qut bû. Ji kerema xwe dîsa biceribîne.';
+  String get errRecognitionTruncated =>
+      'Bersiva naskirinê qut bû. Ji kerema xwe dîsa biceribîne.';
 
   @override
-  String get errRecognitionBadResponse => 'Bersiveke neçaverêkirî ji xizmeta naskirinê hat.';
+  String get errRecognitionBadResponse =>
+      'Bersiveke neçaverêkirî ji xizmeta naskirinê hat.';
 
   @override
-  String get errRecognitionEmpty => 'Xizmeta naskirinê bersiveke vala vegerand.';
+  String get errRecognitionEmpty =>
+      'Xizmeta naskirinê bersiveke vala vegerand.';
 
   @override
-  String get errMissingFinnhubKey => 'Daneyên bazarê di vê guhertoyê de tune ne.';
+  String get errMissingFinnhubKey =>
+      'Daneyên bazarê di vê guhertoyê de tune ne.';
 
   @override
-  String get errMarketUnreachable => 'Negihîşt xizmeta daneyên bazarê. Girêdana xwe ya înternetê kontrol bike.';
+  String get errMarketUnreachable =>
+      'Negihîşt xizmeta daneyên bazarê. Girêdana xwe ya înternetê kontrol bike.';
 
   @override
   String get errMarketRateLimited =>
@@ -384,7 +398,8 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Bersiveke neçaverêkirî ji xizmeta daneyên bazarê hat.';
+  String get errMarketBadResponse =>
+      'Bersiveke neçaverêkirî ji xizmeta daneyên bazarê hat.';
 
   @override
   String errNoQuote(String symbol) {
@@ -484,7 +499,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get aiRegenerate => 'Ji nû ve çêke';
 
   @override
-  String get aiGenerating => 'Analîz tê amadekirin… dibe ku deqeyek an du deqe bidome.';
+  String get aiGenerating =>
+      'Analîz tê amadekirin… dibe ku deqeyek an du deqe bidome.';
 
   @override
   String get aiSources => 'Çavkanî';
@@ -499,10 +515,12 @@ class AppLocalizationsKu extends AppLocalizations {
       'Analîza ku AI li ser bingeha daneyên giştî û nûçeyên dawî çêkiriye. Dibe ku çewtî tê de hebin an kevn bibe, û ne şîreta veberhênanê ye.';
 
   @override
-  String get errAiNotConfigured => 'Taybetmendiyên AI di vê guhertoyê de tune ne.';
+  String get errAiNotConfigured =>
+      'Taybetmendiyên AI di vê guhertoyê de tune ne.';
 
   @override
-  String get errAiUnreachable => 'Negihîşt xizmeta AI. Girêdana xwe ya înternetê kontrol bike.';
+  String get errAiUnreachable =>
+      'Negihîşt xizmeta AI. Girêdana xwe ya înternetê kontrol bike.';
 
   @override
   String errAiHttp(String status) {
@@ -534,7 +552,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get rangeFiveYears => '5S';
 
   @override
-  String get chartUnavailable => 'Dîroka bihayê ji çavkaniya daneyan a heyî ne berdest e.';
+  String get chartUnavailable =>
+      'Dîroka bihayê ji çavkaniya daneyan a heyî ne berdest e.';
 
   @override
   String get sectionStatements => 'Raporên darayî (salane)';
@@ -561,7 +580,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get labelOperatingCashFlow => 'Herikîna nexdê ya xebitandinê';
 
   @override
-  String get statementsUnavailable => 'Ji bo vê pişkê raporên darayî yên weşandî ne berdest in.';
+  String get statementsUnavailable =>
+      'Ji bo vê pişkê raporên darayî yên weşandî ne berdest in.';
 
   @override
   String get launchAtLogin => 'Di têketinê de bide destpêkirin';
@@ -570,7 +590,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get hotkeyLabel => 'Kurteriya giştî';
 
   @override
-  String get hotkeyRecordHint => 'Li vir bitikîne, paşê kombînasyona nû ya bişkokan bitikîne';
+  String get hotkeyRecordHint =>
+      'Li vir bitikîne, paşê kombînasyona nû ya bişkokan bitikîne';
 
   @override
   String get hotkeyReset => 'Vegerîne standardê';
@@ -591,7 +612,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get removeFromFavorites => 'Ji bijareyan rake';
 
   @override
-  String get noFavorites => 'Hîn bijare tune ne. Ji bo zêdekirinê li stêrka pişkekê bitikîne.';
+  String get noFavorites =>
+      'Hîn bijare tune ne. Ji bo zêdekirinê li stêrka pişkekê bitikîne.';
 
   @override
   String get displayCurrency => 'Diravê nîşandanê';
@@ -638,7 +660,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get updateDownloading => 'Rojanekirin li paşperdeyê tê daxistin…';
 
   @override
-  String get updateDownloaded => 'Rojanekirin amade ye. Ji bo sazkirinê ji nû ve bide destpêkirin.';
+  String get updateDownloaded =>
+      'Rojanekirin amade ye. Ji bo sazkirinê ji nû ve bide destpêkirin.';
 
   @override
   String get updateNow => 'Rojane bike';
@@ -647,7 +670,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get restartNow => 'Ji nû ve bide destpêkirin';
 
   @override
-  String get updatesViaStore => 'Rojanekirin bixweber bi riya firotgeha sepanan tên.';
+  String get updatesViaStore =>
+      'Rojanekirin bixweber bi riya firotgeha sepanan tên.';
 
   @override
   String get updateCheckFailed => 'Kontrolkirina rojanekirinan bi ser neket.';
@@ -695,7 +719,8 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Ceribandina te ya belaş qediya. Ji bo ku analîzê bidomînî planekê hilbijêre.';
+  String get trialExpired =>
+      'Ceribandina te ya belaş qediya. Ji bo ku analîzê bidomînî planekê hilbijêre.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -734,7 +759,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get extraPacksTitle => 'Zêdetir lazim e? Analîzên zêde bikire';
 
   @override
-  String get extraPacksHint => 'Analîzên zêde qet bi dawî nabin û piştî mafê te yê mehane tên bikaranîn.';
+  String get extraPacksHint =>
+      'Analîzên zêde qet bi dawî nabin û piştî mafê te yê mehane tên bikaranîn.';
 
   @override
   String get buy => 'Bikire';
@@ -762,10 +788,12 @@ class AppLocalizationsKu extends AppLocalizations {
       'Kirîn hîn li ser vê platformê ne berdest e. Li ser telefon an Mac-a xwe bibe abone; plana te li ser hemû amûran dixebite.';
 
   @override
-  String get errQuotaExceeded => 'Ji bo vê heyamê analîzên te nemane. Plana xwe bilind bike an analîzên zêde bikire.';
+  String get errQuotaExceeded =>
+      'Ji bo vê heyamê analîzên te nemane. Plana xwe bilind bike an analîzên zêde bikire.';
 
   @override
-  String get errTrialExpired => 'Ceribandina te ya belaş qediya. Ji bo berdewamiyê planekê hilbijêre.';
+  String get errTrialExpired =>
+      'Ceribandina te ya belaş qediya. Ji bo berdewamiyê planekê hilbijêre.';
 
   @override
   String get errNoPlan => 'Ji bo analîza AI planeke çalak pêwîst e.';
@@ -777,7 +805,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get usageTitle => 'Bikaranîn';
 
   @override
-  String get demoPurchaseNote => 'Fatûreya demoyê: kirîn li ser vê platformê tên simulekirin.';
+  String get demoPurchaseNote =>
+      'Fatûreya demoyê: kirîn li ser vê platformê tên simulekirin.';
 
   @override
   String get mostPopular => 'Herî populer';
@@ -817,7 +846,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get aiDepthStandardDesc => 'Rapora tevahî bi hemû beşan.';
 
   @override
-  String get aiDepthDeepDesc => 'Lêgerînên webê yên zêdetir, berhevdana bi hevrikan û hûrguliyên kûrtir.';
+  String get aiDepthDeepDesc =>
+      'Lêgerînên webê yên zêdetir, berhevdana bi hevrikan û hûrguliyên kûrtir.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -845,16 +875,19 @@ class AppLocalizationsKu extends AppLocalizations {
   String get aiReaderExperienced => 'Bi ezmûn';
 
   @override
-  String get aiReaderBeginnerDesc => 'Zimanê sade; her têgeha teknîkî tê ravekirin.';
+  String get aiReaderBeginnerDesc =>
+      'Zimanê sade; her têgeha teknîkî tê ravekirin.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Nivîsa tîrtir bi termînolojiya darayî ya standard.';
+  String get aiReaderExperiencedDesc =>
+      'Nivîsa tîrtir bi termînolojiya darayî ya standard.';
 
   @override
   String get aiCounterArgument => 'Argumana dijber a herî xurt';
 
   @override
-  String get aiCounterArgumentDesc => 'Kurte her tim bi argumana herî xurt a li dijî encama xwe bi dawî dibe.';
+  String get aiCounterArgumentDesc =>
+      'Kurte her tim bi argumana herî xurt a li dijî encama xwe bi dawî dibe.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -947,7 +980,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get upcomingEvents => 'Bûyerên pêş';
 
   @override
-  String get outlookChartNote => 'Navberên nîşander; îhtîmal tenê texmînên giştî ne, ne pêşbînî.';
+  String get outlookChartNote =>
+      'Navberên nîşander; îhtîmal tenê texmînên giştî ne, ne pêşbînî.';
 
   @override
   String get accountTitle => 'Hesab';
@@ -962,10 +996,12 @@ class AppLocalizationsKu extends AppLocalizations {
   String get notSignedIn => 'Tu ne têketî yî';
 
   @override
-  String get accountBenefit => 'Têkeve da ku abonetiya te li ser hemû amûrên te bixebite.';
+  String get accountBenefit =>
+      'Têkeve da ku abonetiya te li ser hemû amûrên te bixebite.';
 
   @override
-  String get accountSyncedNote => 'Abonetiya te û analîzên te yên mayî li ser her amûrê heman in.';
+  String get accountSyncedNote =>
+      'Abonetiya te û analîzên te yên mayî li ser her amûrê heman in.';
 
   @override
   String get signInTitle => 'Têkeve WhatStock';
@@ -994,16 +1030,20 @@ class AppLocalizationsKu extends AppLocalizations {
   String get errInvalidCode => 'Kod xelet e an dema wê derbas bûye.';
 
   @override
-  String get errInvalidEmail => 'Ji kerema xwe navnîşaneke e-nameyê ya derbasdar binivîse.';
+  String get errInvalidEmail =>
+      'Ji kerema xwe navnîşaneke e-nameyê ya derbasdar binivîse.';
 
   @override
-  String get errSignInFailed => 'Têketin bi ser neket. Girêdana xwe kontrol bike û dîsa biceribîne.';
+  String get errSignInFailed =>
+      'Têketin bi ser neket. Girêdana xwe kontrol bike û dîsa biceribîne.';
 
   @override
-  String get checkoutWaiting => 'Dayînê di geroka xwe de temam bike. Dema ku biqede, sepan bixweber nû dibe.';
+  String get checkoutWaiting =>
+      'Dayînê di geroka xwe de temam bike. Dema ku biqede, sepan bixweber nû dibe.';
 
   @override
-  String get paymentViaStripe => 'Dayîna ewle di gerokê de bi Stripe. Her dem dikarî betal bikî.';
+  String get paymentViaStripe =>
+      'Dayîna ewle di gerokê de bi Stripe. Her dem dikarî betal bikî.';
 
   @override
   String get paymentViaStore =>
@@ -1016,7 +1056,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get doubleOptionTitle => 'Du caran Option bitikîne';
 
   @override
-  String get doubleOptionSubtitle => 'Du caran bi lez tikandina bişkoka Option jî WhatStock vedixwîne.';
+  String get doubleOptionSubtitle =>
+      'Du caran bi lez tikandina bişkoka Option jî WhatStock vedixwîne.';
 
   @override
   String get doubleOptionPermission =>
@@ -1038,7 +1079,12 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years sal', one: '1 sal');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years sal',
+      one: '1 sal',
+    );
     return '$_temp0';
   }
 
@@ -1144,7 +1190,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get portfolioRemove => 'Rake';
 
   @override
-  String get portfolioExcluded => 'Pozîsyonên bê biha an bê rêjeya diravan di komê de nayên hesibandin.';
+  String get portfolioExcluded =>
+      'Pozîsyonên bê biha an bê rêjeya diravan di komê de nayên hesibandin.';
 
   @override
   String get priceAlerts => 'Hişyariyên bihayê';
@@ -1186,7 +1233,8 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Hîn hişyariyên bihayê tune ne. Ji bo sazkirinê pişkekê veke û li zengilê bitikîne.';
+  String get alertsEmpty =>
+      'Hîn hişyariyên bihayê tune ne. Ji bo sazkirinê pişkekê veke û li zengilê bitikîne.';
 
   @override
   String get alertsNote =>
@@ -1279,7 +1327,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get accountDeleted => 'Hesabê te hate jêbirin.';
 
   @override
-  String get errDeleteAccount => 'Hesab nehat jêbirin. Girêdana xwe kontrol bike û dîsa biceribîne.';
+  String get errDeleteAccount =>
+      'Hesab nehat jêbirin. Girêdana xwe kontrol bike û dîsa biceribîne.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1316,7 +1365,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get inviteTitle => 'Pêşdîtina girtî';
 
   @override
-  String get inviteBody => 'WhatStock niha tenê bi vexwendinê heye. Koda vexwendinê ya ku te wergirtiye binivîse.';
+  String get inviteBody =>
+      'WhatStock niha tenê bi vexwendinê heye. Koda vexwendinê ya ku te wergirtiye binivîse.';
 
   @override
   String get inviteCodeLabel => 'Koda vexwendinê';
@@ -1328,26 +1378,39 @@ class AppLocalizationsKu extends AppLocalizations {
   String get inviteInvalid => 'Ev koda vexwendinê ne derbasdar e.';
 
   @override
-  String get inviteExpired => 'Dema vê vexwendinê derbas bûye. Ji kesê ku tu vexwendî kodeke nû bixwaze.';
+  String get inviteExpired =>
+      'Dema vê vexwendinê derbas bûye. Ji kesê ku tu vexwendî kodeke nû bixwaze.';
 
   @override
-  String get inviteDeviceLimit => 'Ev koda vexwendinê jixwe li ser hejmara herî zêde ya amûran tê bikaranîn.';
+  String get inviteDeviceLimit =>
+      'Ev koda vexwendinê jixwe li ser hejmara herî zêde ya amûran tê bikaranîn.';
 
   @override
   String get previewConfidential => 'Pêşdîtina nepenî';
 
   @override
-  String get errPreviewDailyLimit => 'Sînorê analîzan ê îro yê vê pêşdîtinê qediya. Sibê dîsa biceribîne.';
+  String get errPreviewDailyLimit =>
+      'Sînorê analîzan ê îro yê vê pêşdîtinê qediya. Sibê dîsa biceribîne.';
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'berî $count saetan', one: 'berî saetekê');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'berî $count saetan',
+      one: 'berî saetekê',
+    );
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'berî $count rojan', one: 'berî rojekê');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'berî $count rojan',
+      one: 'berî rojekê',
+    );
     return '$_temp0';
   }
 
@@ -1398,7 +1461,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get shareCardFooter => 'Bi WhatStock hatiye çêkirin';
 
   @override
-  String get shareCardDisclaimer => 'Analîza AI · senaryoyên mînakî, ne pêşbînî · ne şîreta veberhênanê ye';
+  String get shareCardDisclaimer =>
+      'Analîza AI · senaryoyên mînakî, ne pêşbînî · ne şîreta veberhênanê ye';
 
   @override
   String get referralTitle => 'Hevalan vexwîne';
@@ -1440,7 +1504,8 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Ev kod tune ye. Kontrol bike û dîsa biceribîne.';
+  String get referralErrUnknown =>
+      'Ev kod tune ye. Kontrol bike û dîsa biceribîne.';
 
   @override
   String get referralErrOwn => 'Tu nikarî koda xwe bi kar bînî.';
@@ -1557,17 +1622,24 @@ class AppLocalizationsKu extends AppLocalizations {
   String get askSuggest3 => 'Bi awayekî hêsan rave bike';
 
   @override
-  String get askMaxReached => 'Ev pirsa dawî ya vê analîzê bû. Ji bo pirsên din analîzeke nû çêke.';
+  String get askMaxReached =>
+      'Ev pirsa dawî ya vê analîzê bû. Ji bo pirsên din analîzeke nû çêke.';
 
   @override
-  String get errAskLimit => 'Te sînorê pirsan ê îro qedand. Sibê dîsa biceribîne.';
+  String get errAskLimit =>
+      'Te sînorê pirsan ê îro qedand. Sibê dîsa biceribîne.';
 
   @override
   String get eventTomorrow => 'Sibê';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'di $days rojan de', one: 'di 1 rojê de');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'di $days rojan de',
+      one: 'di 1 rojê de',
+    );
     return '$_temp0';
   }
 
@@ -1592,7 +1664,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get eventDividend => 'Dividend tê hêvîkirin';
 
   @override
-  String get eventDividendEstimate => 'Ji dayînên te tomarkirî hatiye texmînkirin';
+  String get eventDividendEstimate =>
+      'Ji dayînên te tomarkirî hatiye texmînkirin';
 
   @override
   String get eventsHint =>
@@ -1651,7 +1724,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get notesTitle => 'Notên min';
 
   @override
-  String get notesHint => 'Te çima kirî, tu li çi dinêrî, çi dê bike ku tu bifiroşî?';
+  String get notesHint =>
+      'Te çima kirî, tu li çi dinêrî, çi dê bike ku tu bifiroşî?';
 
   @override
   String get notesInfo =>
@@ -1701,7 +1775,8 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get syncInfo => 'Portfolyo, bijare, hişyariyên bihayê û not li ser hemû amûrên te têne hevdemkirin.';
+  String get syncInfo =>
+      'Portfolyo, bijare, hişyariyên bihayê û not li ser hemû amûrên te têne hevdemkirin.';
 
   @override
   String syncLast(String time) {
@@ -1712,7 +1787,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get syncNow => 'Niha hevdem bike';
 
   @override
-  String get syncFailed => 'Hevdemkirin bi ser neket. Ew ê bi xweber dîsa biceribîne.';
+  String get syncFailed =>
+      'Hevdemkirin bi ser neket. Ew ê bi xweber dîsa biceribîne.';
 
   @override
   String get alertEmailTitle => 'E-name dema hişyariyek çêdibe';
@@ -1841,7 +1917,8 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'Tevahiya şirketê li borsayê çiqas dike: bihayê pişkê × hejmara pişkan.';
+  String get glossMarketCap =>
+      'Tevahiya şirketê li borsayê çiqas dike: bihayê pişkê × hejmara pişkan.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1880,10 +1957,12 @@ class AppLocalizationsKu extends AppLocalizations {
       'Pişk çiqas bi bazarê re dilive: 1 = wekî bazarê, 1,5 = lebatên nêzîkî 50% mezintir, binê 1 = aramtir.';
 
   @override
-  String get glossRevenueTtm => 'Tevahiya firotinên 12 mehên dawî, berî her lêçûnê.';
+  String get glossRevenueTtm =>
+      'Tevahiya firotinên 12 mehên dawî, berî her lêçûnê.';
 
   @override
-  String get glossNetIncomeTtm => 'Qezenca ku piştî hemû lêçûn, faîz û bacan di 12 mehên dawî de dimîne.';
+  String get glossNetIncomeTtm =>
+      'Qezenca ku piştî hemû lêçûn, faîz û bacan di 12 mehên dawî de dimîne.';
 
   @override
   String get glossGrossMargin =>
@@ -1917,14 +1996,16 @@ class AppLocalizationsKu extends AppLocalizations {
   String get glossRevenueGrowth => 'Dahat li gorî salekê berê çiqas zêde bûye.';
 
   @override
-  String get glossEpsGrowth => 'Qezenca her pişkê li gorî salekê berê çiqas zêde bûye.';
+  String get glossEpsGrowth =>
+      'Qezenca her pişkê li gorî salekê berê çiqas zêde bûye.';
 
   @override
   String get glossDividendYield =>
       'Dîvîdenda salane ÷ bihayê pişkê: dahata nexd a ku tu her sal distînî, wekî rêjeyek ji tiştê ku tu didî.';
 
   @override
-  String get glossDividendPerShare => 'Dîvîdenda ku di sala borî de ji bo yek pişkê hatiye dayîn.';
+  String get glossDividendPerShare =>
+      'Dîvîdenda ku di sala borî de ji bo yek pişkê hatiye dayîn.';
 
   @override
   String get glossPayoutRatio =>
@@ -2022,7 +2103,8 @@ class AppLocalizationsKu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'Di $beats ji $total sêmehên dawî de wekî EPS ya tê payîn an jortir',
+      other:
+          'Di $beats ji $total sêmehên dawî de wekî EPS ya tê payîn an jortir',
       one: 'Di $beats ji 1 sêmehê de wekî EPS ya tê payîn an jortir',
     );
     return '$_temp0';
@@ -2139,13 +2221,23 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count kirîn', one: '1 kirîn');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kirîn',
+      one: '1 kirîn',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count firotin', one: '1 firotin');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count firotin',
+      one: '1 firotin',
+    );
     return '$_temp0';
   }
 
@@ -2165,7 +2257,8 @@ class AppLocalizationsKu extends AppLocalizations {
       'Kirîn û firotinên rêveber û derhêneran li bazara vekirî di 90 rojên dawî de (SEC Form 4). Bikaranîna opsiyonan û xelatên pişkan nayên hesibandin.';
 
   @override
-  String get insiderNone => 'Di 90 rojên dawî de li bazara vekirî tu kirîn an firotina însayderan tune.';
+  String get insiderNone =>
+      'Di 90 rojên dawî de li bazara vekirî tu kirîn an firotina însayderan tune.';
 
   @override
   String get analystTrend => 'Nêrîn meh bi meh çawa guherîn';
@@ -2208,7 +2301,8 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard => 'Li panoyê hat kopîkirin – li ku dixwazî parve bikî, lê bixe.';
+  String get sharedToClipboard =>
+      'Li panoyê hat kopîkirin – li ku dixwazî parve bikî, lê bixe.';
 
   @override
   String get glossaryNoMatch => 'Ti têgeh bi lêgerîna te re li hev nayên.';
@@ -2226,6 +2320,22 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get accountDeletedElsewhere =>
+      'Ev hesab li ser amûreke din an li ser webê hate jêbirin, ji ber vê yekê daneyên wê ji vê amûrê jî hatin rakirin.';
+
+  @override
+  String get errAiUnavailable =>
+      'Xizmeta AI niha ne berdest e. Piştî çend deqeyan dîsa biceribîne.';
+
+  @override
+  String get errMarketUnavailable =>
+      'Daneyên bazarê niha ne berdest in. Piştî çend deqeyan dîsa biceribîne.';
+
+  @override
+  String get purchaseUnavailable =>
+      'Kirîn niha ne berdest e. Paşê dîsa biceribîne.';
+
+  @override
   String get portfolioAskTitle => 'Pirsên li ser portfolyoya te';
 
   @override
@@ -2238,13 +2348,15 @@ class AppLocalizationsKu extends AppLocalizations {
   String get backupSave => 'Paşekeyê tomar bike';
 
   @override
-  String get backupSaveHint => 'Bijareyên te, lîsteyên te, portfolyoya te, hişyariyên te û notên te di pelekî de.';
+  String get backupSaveHint =>
+      'Bijareyên te, lîsteyên te, portfolyoya te, hişyariyên te û notên te di pelekî de.';
 
   @override
   String get backupRestore => 'Ji paşekeyê vegerîne';
 
   @override
-  String get backupRestoreHint => 'Tiştên di pelê de lê zêde dike; ji tiştên ku niha li ba te ne tiştek nayê jêbirin.';
+  String get backupRestoreHint =>
+      'Tiştên di pelê de lê zêde dike; ji tiştên ku niha li ba te ne tiştek nayê jêbirin.';
 
   @override
   String get backupRestored => 'Paşeke hate vegerandin.';
@@ -2363,7 +2475,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Hişyariya portfolyoyê';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'Agahdariyek dema ku tevahiya portfolyoya te di rojekê de ev qas diguhere.';
+  String get portfolioMoveAlertSubtitle =>
+      'Agahdariyek dema ku tevahiya portfolyoya te di rojekê de ev qas diguhere.';
 
   @override
   String get portfolioMoveAlertOff => 'Girtî';
@@ -2535,11 +2648,17 @@ class AppLocalizationsKu extends AppLocalizations {
   String get portfolioTopHoldings => 'Pozîsyonên herî mezin';
 
   @override
-  String get portfolioShareNote => 'Tenê rêjeyên sedî tên parvekirin, ne mîqdar.';
+  String get portfolioShareNote =>
+      'Tenê rêjeyên sedî tên parvekirin, ne mîqdar.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count pozîsyon', one: '1 pozîsyon');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozîsyon',
+      one: '1 pozîsyon',
+    );
     return '$_temp0';
   }
 
@@ -2589,13 +2708,15 @@ class AppLocalizationsKu extends AppLocalizations {
   String get portfolioSampleTry => 'Bi portfolyoyeke mînak biceribîne';
 
   @override
-  String get portfolioSampleBanner => 'Ev portfolyoyeke mînak e. Kirînên xwe li kêleka wê zêde bike, an wê rake.';
+  String get portfolioSampleBanner =>
+      'Ev portfolyoyeke mînak e. Kirînên xwe li kêleka wê zêde bike, an wê rake.';
 
   @override
   String get portfolioSampleRemove => 'Mînakê rake';
 
   @override
-  String get portfolioStopsAll => 'Hişyariya daketina ji lûtkeyê ji bo hemû pozîsyonan';
+  String get portfolioStopsAll =>
+      'Hişyariya daketina ji lûtkeyê ji bo hemû pozîsyonan';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2644,10 +2765,12 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lotNoteAdd => 'Notekê zêde bike';
 
   @override
-  String get lotNoteBuyHint => 'Tu çima dikirî? Bi dîrokê re dikeve notên pişkê.';
+  String get lotNoteBuyHint =>
+      'Tu çima dikirî? Bi dîrokê re dikeve notên pişkê.';
 
   @override
-  String get lotNoteSellHint => 'Tu çima difiroşî? Bi dîrokê re dikeve notên pişkê.';
+  String get lotNoteSellHint =>
+      'Tu çima difiroşî? Bi dîrokê re dikeve notên pişkê.';
 
   @override
   String get lotNoteBought => 'Hate kirîn';
@@ -2657,13 +2780,23 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months meh', one: '$months meh');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months meh',
+      one: '$months meh',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days roj', one: '$days roj');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days roj',
+      one: '$days roj',
+    );
     return '$_temp0';
   }
 
@@ -2751,10 +2884,12 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Bi e-nameya xwe têkeve da ku koda hevalekî bi kar bînî.';
+  String get referralErrSignIn =>
+      'Bi e-nameya xwe têkeve da ku koda hevalekî bi kar bînî.';
 
   @override
-  String get referralErrFull => 'Ev kod berê bi qasî herî zêde hatiye bikaranîn.';
+  String get referralErrFull =>
+      'Ev kod berê bi qasî herî zêde hatiye bikaranîn.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2766,7 +2901,8 @@ class AppLocalizationsKu extends AppLocalizations {
       'Analîz berî ku biqede qut bû. Ji kerema xwe dîsa biceribîne – ji mafê te nehat kêmkirin.';
 
   @override
-  String get errImageUnsupported => 'Ev wêne nayê xwendin. Wê wek JPEG an PNG tomar bike û dîsa biceribîne.';
+  String get errImageUnsupported =>
+      'Ev wêne nayê xwendin. Wê wek JPEG an PNG tomar bike û dîsa biceribîne.';
 
   @override
   String get errRateLimited =>
@@ -2786,14 +2922,16 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing => 'Ti kirînên berê yên ku werin vegerandin nehatin dîtin.';
+  String get restoreNothing =>
+      'Ti kirînên berê yên ku werin vegerandin nehatin dîtin.';
 
   @override
   String get manageSubscriptionElsewhere =>
       'Li vir ti abonetî tune ye ku were birêvebirin. Abonetiya ku ji App Store an Google Play hatiye kirîn, di mîhengên firotgehê de tê birêvebirin.';
 
   @override
-  String get backupFailed => 'Paşeke nehat tomarkirin. Ji kerema xwe dîsa biceribîne.';
+  String get backupFailed =>
+      'Paşeke nehat tomarkirin. Ji kerema xwe dîsa biceribîne.';
 
   @override
   String get syncTooLarge =>
@@ -2813,8 +2951,10 @@ class AppLocalizationsKu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Ji bo $count dividendên bi $currencies rêjeya diravan tune, loma di komê de nayên hesibandin.',
-      one: 'Ji bo 1 dividenda bi $currencies rêjeya diravan tune, loma di komê de nayê hesibandin.',
+      other:
+          'Ji bo $count dividendên bi $currencies rêjeya diravan tune, loma di komê de nayên hesibandin.',
+      one:
+          'Ji bo 1 dividenda bi $currencies rêjeya diravan tune, loma di komê de nayê hesibandin.',
     );
     return '$_temp0';
   }
@@ -2913,7 +3053,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get aiReportNoteHint => 'Çi şaş e? (vebijarkî)';
 
   @override
-  String get aiReportPrivacy => 'Em nivîsa vê bersivê û nota te — bêyî hesabê te — distînin da ku em lê binêrin.';
+  String get aiReportPrivacy =>
+      'Em nivîsa vê bersivê û nota te — bêyî hesabê te — distînin da ku em lê binêrin.';
 
   @override
   String get aiReportSend => 'Raporê bişîne';
@@ -3009,7 +3150,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get compareNextReport => 'Rapora bê';
 
   @override
-  String get resolvingDescription => 'Tê diyarkirin ka mebesta te kîjan pişk e…';
+  String get resolvingDescription =>
+      'Tê diyarkirin ka mebesta te kîjan pişk e…';
 
   @override
   String get instrumentTitle => 'Derbarê vê amûrê';
@@ -3084,7 +3226,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get portfolioSplitRatio => 'Rêje (nû : kevn)';
 
   @override
-  String get portfolioSplitRatioError => 'Rêjeyekê wekî 10:1 binivîse, an jî 1:10 ji bo dabeşkirina berevajî.';
+  String get portfolioSplitRatioError =>
+      'Rêjeyekê wekî 10:1 binivîse, an jî 1:10 ji bo dabeşkirina berevajî.';
 
   @override
   String get portfolioSplitDate => 'Dîroka dabeşkirinê';
@@ -3268,7 +3411,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get glossaryPageTitle => 'Ferhengok';
 
   @override
-  String get glossaryPageSubtitle => 'Ravekirinên hêsan ên her hejmara ku sepan nîşan dide, ji P/E heta RSI';
+  String get glossaryPageSubtitle =>
+      'Ravekirinên hêsan ên her hejmara ku sepan nîşan dide, ji P/E heta RSI';
 
   @override
   String get glossarySearchHint => 'Di ferhengokê de bigere';

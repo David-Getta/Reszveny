@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Daɲɛ si tɛ bɛn i ka ɲinini ma.",
   "cashInvalidAmount": "Hakɛ sɛbɛn min ye 0 ye walima min ka bon ni 0 ye.",
   "portfolioImportNothing": "Sanni walima feereli si ma se ka kalan nin sɛbɛn in kɔnɔ. A lajɛ ko sira kelen kelen bɛɛ bɛ i n'a fɔ misali.",
-  "lotPriceFarFromQuote": "Nin ni bi sɔngɔ ({price}) cɛ ka jan kosɛbɛ. A lajɛ, walima i k'a mara tugun ni a ka ɲi."
+  "lotPriceFarFromQuote": "Nin ni bi sɔngɔ ({price}) cɛ ka jan kosɛbɛ. A lajɛ, walima i k'a mara tugun ni a ka ɲi.",
+  "accountDeletedElsewhere": "Nin kɔnti in jɔsira minɛn wɛrɛ kan walima ɛntɛrinɛti kan, o de kosɔn a ka kunnafoniw bɔra nin minɛn in fana kan.",
+  "errAiUnavailable": "AI sɛriwisi tɛ sɔrɔ sisan. A lajɛ tugun miniti dama kɔfɛ.",
+  "errMarketUnavailable": "Sugu kunnafoniw tɛ sɔrɔ sisan. A lajɛ tugun miniti dama kɔfɛ.",
+  "purchaseUnavailable": "Sanniw tɛ se ka kɛ sisan. A lajɛ tugun kɔfɛ."
 }

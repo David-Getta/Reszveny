@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Palibe mawu ofanana ndi zomwe mwasaka.",
   "cashInvalidAmount": "Lembani ndalama ya 0 kapena kupitirira.",
   "portfolioImportNothing": "Palibe zogula kapena zogulitsa zomwe zawerengedwa m'mawu awa. Onetsetsani kuti mzere uliwonse ukufanana ndi chitsanzo.",
-  "lotPriceFarFromQuote": "Mtengo uwu uli kutali kwambiri ndi mtengo wa lero ({price}). Uyang'aneni, kapena musungenso ngati uli wolondola."
+  "lotPriceFarFromQuote": "Mtengo uwu uli kutali kwambiri ndi mtengo wa lero ({price}). Uyang'aneni, kapena musungenso ngati uli wolondola.",
+  "accountDeletedElsewhere": "Akaunti iyi yafufutidwa pa chipangizo china kapena pa intaneti, choncho deta yake yachotsedwanso pa chipangizo ichi.",
+  "errAiUnavailable": "Utumiki wa AI sukupezeka pakali pano. Yesaninso pakapita mphindi zochepa.",
+  "errMarketUnavailable": "Deta ya msika sikupezeka pakali pano. Yesaninso pakapita mphindi zochepa.",
+  "purchaseUnavailable": "Kugula sikukupezeka pakali pano. Yesaninso nthawi ina."
 }

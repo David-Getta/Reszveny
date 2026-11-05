@@ -896,5 +896,9 @@
   "glossaryNoMatch": "ምስ ምድላይኩም ዝሰማማዕ ቃል የለን።",
   "cashInvalidAmount": "0 ወይ ካብኡ ዝበዝሕ መጠን ኣእትዉ።",
   "portfolioImportNothing": "ካብዚ ጽሑፍ ዝኾነ ልውውጥ ክንበብ ኣይከኣለን። ነፍሲ ወከፍ መስመር ከም እቲ ኣብነት ምዃኑ ኣረጋግጹ።",
-  "lotPriceFarFromQuote": "እዚ ካብ ናይ ሎሚ ዋጋ ({price}) ኣዝዩ ርሑቕ እዩ። ኣረጋግጽዎ፡ ወይ ቅኑዕ እንተኾይኑ እንደገና ዓቅብዎ።"
+  "lotPriceFarFromQuote": "እዚ ካብ ናይ ሎሚ ዋጋ ({price}) ኣዝዩ ርሑቕ እዩ። ኣረጋግጽዎ፡ ወይ ቅኑዕ እንተኾይኑ እንደገና ዓቅብዎ።",
+  "accountDeletedElsewhere": "እዚ ሕሳብ ኣብ ካልእ መሳርሒ ወይ ኣብ ዌብ ተሰሪዙ፣ ስለዚ ሓበሬታኡ ካብዚ መሳርሒ እውን ተኣልዩ።",
+  "errAiUnavailable": "ኣገልግሎት AI ሕጂ ኣይርከብን። ድሕሪ ቁሩብ ደቓይቕ ዳግማይ ፈትኑ።",
+  "errMarketUnavailable": "ሓበሬታ ዕዳጋ ሕጂ ኣይርከብን። ድሕሪ ቁሩብ ደቓይቕ ዳግማይ ፈትኑ።",
+  "purchaseUnavailable": "ዕድግታት ሕጂ ኣይርከቡን። ጸኒሕኩም ዳግማይ ፈትኑ።"
 }

@@ -896,5 +896,9 @@
   "glossaryNoMatch": "No term match wetin you search.",
   "cashInvalidAmount": "Put amount wey be 0 or pass am.",
   "portfolioImportNothing": "We no fit read any buy or sell from dis text. Check say every line look like di example.",
-  "lotPriceFarFromQuote": "Dis one far from today price ({price}). Check am, or save again if e correct."
+  "lotPriceFarFromQuote": "Dis one far from today price ({price}). Check am, or save again if e correct.",
+  "accountDeletedElsewhere": "Dem don delete dis account for another device or for web, so we don comot im data from dis device too.",
+  "errAiUnavailable": "Di AI service no dey available now. Try again after some minutes.",
+  "errMarketUnavailable": "Market data no dey available now. Try again after some minutes.",
+  "purchaseUnavailable": "You no fit buy anytin now. Try again later."
 }

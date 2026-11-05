@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Kò sí ọ̀rọ̀ tó bá ìwádìí rẹ mu.",
   "cashInvalidAmount": "Tẹ iye owó tó jẹ́ 0 tàbí jù bẹ́ẹ̀ lọ.",
   "portfolioImportNothing": "A kò rí ìdúnàdúrà kankan kà nínú ọ̀rọ̀ yìí. Ṣàyẹ̀wò pé ìlà kọ̀ọ̀kan dà bí àpẹẹrẹ náà.",
-  "lotPriceFarFromQuote": "Èyí jìnnà gan-an sí iye owó òní ({price}). Ṣàyẹ̀wò rẹ̀, tàbí fi pamọ́ lẹ́ẹ̀kan sí i tí ó bá tọ̀nà."
+  "lotPriceFarFromQuote": "Èyí jìnnà gan-an sí iye owó òní ({price}). Ṣàyẹ̀wò rẹ̀, tàbí fi pamọ́ lẹ́ẹ̀kan sí i tí ó bá tọ̀nà.",
+  "accountDeletedElsewhere": "A ti pa àkáǹtì yìí rẹ́ lórí ẹ̀rọ mìíràn tàbí lórí wẹ́ẹ̀bù, nítorí náà a ti yọ dátà rẹ̀ kúrò lórí ẹ̀rọ yìí náà.",
+  "errAiUnavailable": "Iṣẹ́ AI kò sí lọ́wọ́lọ́wọ́. Tún gbìyànjú ní ìṣẹ́jú díẹ̀ sí i.",
+  "errMarketUnavailable": "Dátà ọjà kò sí lọ́wọ́lọ́wọ́. Tún gbìyànjú ní ìṣẹ́jú díẹ̀ sí i.",
+  "purchaseUnavailable": "Ìrajà kò ṣeé ṣe lọ́wọ́lọ́wọ́. Tún gbìyànjú nígbà míì."
 }

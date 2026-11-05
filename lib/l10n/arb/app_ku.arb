@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Ti têgeh bi lêgerîna te re li hev nayên.",
   "cashInvalidAmount": "Mîqdarek 0 an zêdetir binivîse.",
   "portfolioImportNothing": "Ji vê nivîsê ti danûstandin nehatin xwendin. Kontrol bike ku her rêz wek mînakê xuya dike.",
-  "lotPriceFarFromQuote": "Ev ji bihayê îro ({price}) pir dûr e. Kontrol bike, an jî heke rast be dîsa tomar bike."
+  "lotPriceFarFromQuote": "Ev ji bihayê îro ({price}) pir dûr e. Kontrol bike, an jî heke rast be dîsa tomar bike.",
+  "accountDeletedElsewhere": "Ev hesab li ser amûreke din an li ser webê hate jêbirin, ji ber vê yekê daneyên wê ji vê amûrê jî hatin rakirin.",
+  "errAiUnavailable": "Xizmeta AI niha ne berdest e. Piştî çend deqeyan dîsa biceribîne.",
+  "errMarketUnavailable": "Daneyên bazarê niha ne berdest in. Piştî çend deqeyan dîsa biceribîne.",
+  "purchaseUnavailable": "Kirîn niha ne berdest e. Paşê dîsa biceribîne."
 }

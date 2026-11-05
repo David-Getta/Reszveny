@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Vyhľadávaniu nezodpovedajú žiadne pojmy.",
   "cashInvalidAmount": "Zadajte sumu 0 alebo viac.",
   "portfolioImportNothing": "Z tohto textu sa nepodarilo načítať žiadnu transakciu. Skontrolujte, či každý riadok vyzerá ako príklad.",
-  "lotPriceFarFromQuote": "Toto sa výrazne líši od dnešnej ceny ({price}). Skontrolujte to alebo uložte znova, ak je to správne."
+  "lotPriceFarFromQuote": "Toto sa výrazne líši od dnešnej ceny ({price}). Skontrolujte to alebo uložte znova, ak je to správne.",
+  "accountDeletedElsewhere": "Tento účet bol odstránený v inom zariadení alebo na webe, preto sa jeho údaje odstránili aj z tohto zariadenia.",
+  "errAiUnavailable": "Služba AI momentálne nie je dostupná. Skúste to znova o niekoľko minút.",
+  "errMarketUnavailable": "Trhové údaje momentálne nie sú dostupné. Skúste to znova o niekoľko minút.",
+  "purchaseUnavailable": "Nákupy momentálne nie sú dostupné. Skúste to znova neskôr."
 }

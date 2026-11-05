@@ -83,11 +83,21 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
     AppServices.of(context).billingController.addListener(_onBilling);
   }
 
-  /// A böngészős fizetéshez fiók kell: belépés, majd a vásárlás folytatása.
+  /// Az utoljára üzenetsávban is jelzett hiba (egy eseményről egyszer).
+  BillingEvent? _snackedError;
+
+  /// A böngészős fizetéshez fiók kell: belépés, majd a vásárlás folytatása. Hibánál
+  /// üzenetsáv is jelez: telefonon a gomb alatti megjegyzés a képernyőn kívül lehet.
   Future<void> _onBilling() async {
     final services = AppServices.of(context);
     final bc = services.billingController;
     final e = bc.lastEvent;
+    if (e != null && e.status == BillingStatus.error && !identical(e, _snackedError)) {
+      _snackedError = e;
+      ScaffoldMessenger.of(context)
+        ..hideCurrentSnackBar()
+        ..showSnackBar(SnackBar(content: Text(billingEventText(AppLocalizations.of(context), e))));
+    }
     final account = services.account;
     if (e == null || e.status != BillingStatus.needsLogin || account == null) return;
     final product = bc.products.where((p) => p.id == e.productId).firstOrNull;
@@ -367,6 +377,8 @@ class _PaywallPageState extends State<PaywallPage> with WidgetsBindingObserver {
         debugPrint('Ügyfélportál nem nyitható: $e');
         if (e.code == 'no_customer') {
           elsewhere();
+        } else if (e.code == 'billing_unavailable') {
+          messenger.showSnackBar(SnackBar(content: Text(l10n.purchaseUnavailable)));
         } else {
           messenger.showSnackBar(SnackBar(content: Text(l10n.errorGeneric)));
         }
@@ -655,6 +667,18 @@ class _PackChip extends StatelessWidget {
   }
 }
 
+/// Egy vásárlási esemény szövege (a megjegyzésben és az üzenetsávban).
+String billingEventText(AppLocalizations l10n, BillingEvent event) => switch (event.status) {
+  BillingStatus.purchased || BillingStatus.restored => l10n.purchaseSuccess,
+  BillingStatus.pending => l10n.purchasePending,
+  // Bolti előfizetés mellé nem indul webes (párhuzamosan számlázna).
+  BillingStatus.error when event.message == 'store_subscription' => l10n.subscribedInStore,
+  // A szerveren nincs beállítva a fizetés (pl. előzetes): nem a vásárló hibája.
+  BillingStatus.error when event.message == 'billing_unavailable' => l10n.purchaseUnavailable,
+  BillingStatus.error => l10n.purchaseFailed,
+  BillingStatus.canceled || BillingStatus.needsLogin => l10n.purchaseCanceled,
+};
+
 class _EventNote extends StatelessWidget {
   const _EventNote({required this.event});
 
@@ -664,19 +688,21 @@ class _EventNote extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
-    final (text, color) = switch (event.status) {
-      BillingStatus.purchased || BillingStatus.restored => (l10n.purchaseSuccess, p.positive),
-      BillingStatus.pending => (l10n.purchasePending, p.muted),
-      // Bolti előfizetés mellé nem indul webes (párhuzamosan számlázna).
-      BillingStatus.error when event.message == 'store_subscription' => (l10n.subscribedInStore, p.negative),
-      BillingStatus.error => (l10n.purchaseFailed, p.negative),
-      BillingStatus.canceled || BillingStatus.needsLogin => (l10n.purchaseCanceled, p.muted),
+    final color = switch (event.status) {
+      BillingStatus.purchased || BillingStatus.restored => p.positive,
+      BillingStatus.error => p.negative,
+      _ => p.muted,
     };
+    // Élő régió, eseményenként új elemmel: a képernyőolvasó az ismételt hibát is bemondja.
     return Padding(
+      key: ObjectKey(event),
       padding: const EdgeInsets.only(bottom: 10),
-      child: Text(
-        text,
-        style: TextStyle(color: color, fontWeight: FontWeight.w600),
+      child: Semantics(
+        liveRegion: true,
+        child: Text(
+          billingEventText(l10n, event),
+          style: TextStyle(color: color, fontWeight: FontWeight.w600),
+        ),
       ),
     );
   }

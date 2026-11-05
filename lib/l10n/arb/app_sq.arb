@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Asnjë term nuk përputhet me kërkimin tuaj.",
   "cashInvalidAmount": "Vendosni një shumë 0 ose më të madhe.",
   "portfolioImportNothing": "Nga ky tekst nuk u lexua asnjë transaksion. Kontrolloni që çdo rresht të duket si shembulli.",
-  "lotPriceFarFromQuote": "Ky çmim është shumë larg çmimit të sotëm ({price}). Kontrollojeni ose ruajeni përsëri nëse është i saktë."
+  "lotPriceFarFromQuote": "Ky çmim është shumë larg çmimit të sotëm ({price}). Kontrollojeni ose ruajeni përsëri nëse është i saktë.",
+  "accountDeletedElsewhere": "Kjo llogari u fshi në një pajisje tjetër ose në ueb, ndaj të dhënat e saj u hoqën edhe nga kjo pajisje.",
+  "errAiUnavailable": "Shërbimi i AI nuk është i disponueshëm për momentin. Provoni përsëri pas pak minutash.",
+  "errMarketUnavailable": "Të dhënat e tregut nuk janë të disponueshme për momentin. Provoni përsëri pas pak minutash.",
+  "purchaseUnavailable": "Blerjet nuk janë të disponueshme për momentin. Provoni përsëri më vonë."
 }

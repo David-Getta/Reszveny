@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Keine Begriffe passen zu deiner Suche.",
   "cashInvalidAmount": "Gib einen Betrag von 0 oder mehr ein.",
   "portfolioImportNothing": "Aus diesem Text konnten keine Transaktionen gelesen werden. Prüfe, ob jede Zeile wie das Beispiel aussieht.",
-  "lotPriceFarFromQuote": "Das weicht stark vom heutigen Kurs ({price}) ab. Prüfe es oder speichere erneut, wenn es stimmt."
+  "lotPriceFarFromQuote": "Das weicht stark vom heutigen Kurs ({price}) ab. Prüfe es oder speichere erneut, wenn es stimmt.",
+  "accountDeletedElsewhere": "Dieses Konto wurde auf einem anderen Gerät oder im Web gelöscht, daher wurden seine Daten auch von diesem Gerät entfernt.",
+  "errAiUnavailable": "Der KI-Dienst ist gerade nicht verfügbar. Versuche es in ein paar Minuten erneut.",
+  "errMarketUnavailable": "Marktdaten sind gerade nicht verfügbar. Versuche es in ein paar Minuten erneut.",
+  "purchaseUnavailable": "Käufe sind gerade nicht verfügbar. Versuche es später erneut."
 }

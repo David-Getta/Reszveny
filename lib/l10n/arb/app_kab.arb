@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Ulac awal yemṣadan d unadi-ik.",
   "cashInvalidAmount": "Sekcem azal n 0 neɣ ugar.",
   "portfolioImportNothing": "Ulac tiɣin neɣ aznuzu i yettwaɣran seg uḍris-a. Senqed ma yal izirig am umedya.",
-  "lotPriceFarFromQuote": "Aya yebɛed ɣef ssuma n wass-a ({price}). Senqed-it, neɣ sekles tikkelt-nniḍen ma yeṣṣeḥ."
+  "lotPriceFarFromQuote": "Aya yebɛed ɣef ssuma n wass-a ({price}). Senqed-it, neɣ sekles tikkelt-nniḍen ma yeṣṣeḥ.",
+  "accountDeletedElsewhere": "Amiḍan-a yettwakkes deg yibenk nniḍen neɣ deg web, ihi isefka-ines ttwakksen ula seg yibenk-a.",
+  "errAiUnavailable": "Ameẓlu n AI ulac-it akka tura. Ɛreḍ tikkelt nniḍen deg kra n tesdidin.",
+  "errMarketUnavailable": "Isefka n usuq ulac-iten akka tura. Ɛreḍ tikkelt nniḍen deg kra n tesdidin.",
+  "purchaseUnavailable": "Tiɣin ulac-itent akka tura. Ɛreḍ tikkelt nniḍen ticki."
 }

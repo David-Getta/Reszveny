@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Ingen begreber matcher din søgning.",
   "cashInvalidAmount": "Angiv et beløb på 0 eller mere.",
   "portfolioImportNothing": "Der kunne ikke læses nogen transaktioner fra denne tekst. Tjek, at hver linje ligner eksemplet.",
-  "lotPriceFarFromQuote": "Det er langt fra dagens kurs ({price}). Tjek det, eller gem igen, hvis det er rigtigt."
+  "lotPriceFarFromQuote": "Det er langt fra dagens kurs ({price}). Tjek det, eller gem igen, hvis det er rigtigt.",
+  "accountDeletedElsewhere": "Denne konto blev slettet på en anden enhed eller på nettet, så dens data er også fjernet fra denne enhed.",
+  "errAiUnavailable": "AI-tjenesten er ikke tilgængelig lige nu. Prøv igen om et par minutter.",
+  "errMarketUnavailable": "Markedsdata er ikke tilgængelige lige nu. Prøv igen om et par minutter.",
+  "purchaseUnavailable": "Køb er ikke tilgængelige lige nu. Prøv igen senere."
 }

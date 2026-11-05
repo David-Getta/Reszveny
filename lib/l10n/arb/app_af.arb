@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Geen terme pas by jou soektog nie.",
   "cashInvalidAmount": "Voer 'n bedrag van 0 of meer in.",
   "portfolioImportNothing": "Geen transaksies kon uit hierdie teks gelees word nie. Kontroleer dat elke reël soos die voorbeeld lyk.",
-  "lotPriceFarFromQuote": "Dit is ver van vandag se prys ({price}). Kontroleer dit, of stoor weer as dit reg is."
+  "lotPriceFarFromQuote": "Dit is ver van vandag se prys ({price}). Kontroleer dit, of stoor weer as dit reg is.",
+  "accountDeletedElsewhere": "Hierdie rekening is op ’n ander toestel of op die web geskrap, daarom is sy data ook van hierdie toestel verwyder.",
+  "errAiUnavailable": "Die AI-diens is tans nie beskikbaar nie. Probeer weer oor ’n paar minute.",
+  "errMarketUnavailable": "Markdata is tans nie beskikbaar nie. Probeer weer oor ’n paar minute.",
+  "purchaseUnavailable": "Aankope is tans nie beskikbaar nie. Probeer later weer."
 }

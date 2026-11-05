@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Qidiruvingizga mos atama topilmadi.",
   "cashInvalidAmount": "0 yoki undan katta summa kiriting.",
   "portfolioImportNothing": "Bu matndan hech qanday operatsiya oʻqib boʻlmadi. Har bir qator namunadagidek koʻrinishini tekshiring.",
-  "lotPriceFarFromQuote": "Bu bugungi narxdan ({price}) juda farq qiladi. Uni tekshiring yoki toʻgʻri boʻlsa, qayta saqlang."
+  "lotPriceFarFromQuote": "Bu bugungi narxdan ({price}) juda farq qiladi. Uni tekshiring yoki toʻgʻri boʻlsa, qayta saqlang.",
+  "accountDeletedElsewhere": "Bu hisob boshqa qurilmada yoki vebda oʻchirildi, shuning uchun uning maʼlumotlari bu qurilmadan ham oʻchirildi.",
+  "errAiUnavailable": "AI xizmati hozir mavjud emas. Bir necha daqiqadan soʻng qayta urinib koʻring.",
+  "errMarketUnavailable": "Bozor maʼlumotlari hozir mavjud emas. Bir necha daqiqadan soʻng qayta urinib koʻring.",
+  "purchaseUnavailable": "Xaridlar hozir mavjud emas. Keyinroq qayta urinib koʻring."
 }

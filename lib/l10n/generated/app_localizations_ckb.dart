@@ -318,7 +318,12 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count شیکەرەوە', one: '1 شیکەرەوە');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count شیکەرەوە',
+      one: '1 شیکەرەوە',
+    );
     return '$_temp0';
   }
 
@@ -346,10 +351,12 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get recognitionRawText => 'دەقی خوێندراوە لە وێنەکەوە';
 
   @override
-  String get errMissingAnthropicKey => 'ناسینەوەی وێنە لەم وەشانەدا بەردەست نییە. لە جیاتی ئەوە هێماکە بنووسە.';
+  String get errMissingAnthropicKey =>
+      'ناسینەوەی وێنە لەم وەشانەدا بەردەست نییە. لە جیاتی ئەوە هێماکە بنووسە.';
 
   @override
-  String get errRecognitionUnreachable => 'نەگەیشتین بە خزمەتگوزاریی ناسینەوە. پەیوەندیی ئینتەرنێتەکەت بپشکنە.';
+  String get errRecognitionUnreachable =>
+      'نەگەیشتین بە خزمەتگوزاریی ناسینەوە. پەیوەندیی ئینتەرنێتەکەت بپشکنە.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -357,25 +364,31 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'خزمەتگوزاریی ناسینەوە نەیتوانی ئەم وێنەیە پرۆسێس بکات.';
+  String get errRecognitionRefused =>
+      'خزمەتگوزاریی ناسینەوە نەیتوانی ئەم وێنەیە پرۆسێس بکات.';
 
   @override
-  String get errRecognitionTruncated => 'وەڵامی ناسینەوە بڕا. تکایە دووبارە هەوڵ بدەرەوە.';
+  String get errRecognitionTruncated =>
+      'وەڵامی ناسینەوە بڕا. تکایە دووبارە هەوڵ بدەرەوە.';
 
   @override
-  String get errRecognitionBadResponse => 'وەڵامێکی چاوەڕواننەکراو لە خزمەتگوزاریی ناسینەوە.';
+  String get errRecognitionBadResponse =>
+      'وەڵامێکی چاوەڕواننەکراو لە خزمەتگوزاریی ناسینەوە.';
 
   @override
-  String get errRecognitionEmpty => 'خزمەتگوزاریی ناسینەوە وەڵامێکی بەتاڵی گەڕاندەوە.';
+  String get errRecognitionEmpty =>
+      'خزمەتگوزاریی ناسینەوە وەڵامێکی بەتاڵی گەڕاندەوە.';
 
   @override
   String get errMissingFinnhubKey => 'داتای بازاڕ لەم وەشانەدا بەردەست نییە.';
 
   @override
-  String get errMarketUnreachable => 'نەگەیشتین بە خزمەتگوزاریی داتای بازاڕ. پەیوەندیی ئینتەرنێتەکەت بپشکنە.';
+  String get errMarketUnreachable =>
+      'نەگەیشتین بە خزمەتگوزاریی داتای بازاڕ. پەیوەندیی ئینتەرنێتەکەت بپشکنە.';
 
   @override
-  String get errMarketRateLimited => 'داواکاریی زۆر بۆ خزمەتگوزاریی داتای بازاڕ نێردراوە. تکایە خولەکێک چاوەڕێ بکە.';
+  String get errMarketRateLimited =>
+      'داواکاریی زۆر بۆ خزمەتگوزاریی داتای بازاڕ نێردراوە. تکایە خولەکێک چاوەڕێ بکە.';
 
   @override
   String errMarketHttp(String status) {
@@ -383,7 +396,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'وەڵامێکی چاوەڕواننەکراو لە خزمەتگوزاریی داتای بازاڕ.';
+  String get errMarketBadResponse =>
+      'وەڵامێکی چاوەڕواننەکراو لە خزمەتگوزاریی داتای بازاڕ.';
 
   @override
   String errNoQuote(String symbol) {
@@ -483,7 +497,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get aiRegenerate => 'دووبارە دروستکردنەوە';
 
   @override
-  String get aiGenerating => 'شیکارییەکە ئامادە دەکرێت… لەوانەیە یەک تا دوو خولەک بخایەنێت.';
+  String get aiGenerating =>
+      'شیکارییەکە ئامادە دەکرێت… لەوانەیە یەک تا دوو خولەک بخایەنێت.';
 
   @override
   String get aiSources => 'سەرچاوەکان';
@@ -498,10 +513,12 @@ class AppLocalizationsCkb extends AppLocalizations {
       'شیکارییەک کە AI لەسەر بنەمای داتای گشتی و هەواڵە نوێیەکان دروستی کردووە. لەوانەیە هەڵەی تێدا بێت یان کۆن بووبێت، و ئامۆژگاریی وەبەرهێنان نییە.';
 
   @override
-  String get errAiNotConfigured => 'تایبەتمەندییەکانی AI لەم وەشانەدا بەردەست نین.';
+  String get errAiNotConfigured =>
+      'تایبەتمەندییەکانی AI لەم وەشانەدا بەردەست نین.';
 
   @override
-  String get errAiUnreachable => 'نەگەیشتین بە خزمەتگوزاریی AI. پەیوەندیی ئینتەرنێتەکەت بپشکنە.';
+  String get errAiUnreachable =>
+      'نەگەیشتین بە خزمەتگوزاریی AI. پەیوەندیی ئینتەرنێتەکەت بپشکنە.';
 
   @override
   String errAiHttp(String status) {
@@ -533,7 +550,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get rangeFiveYears => '5 ساڵ';
 
   @override
-  String get chartUnavailable => 'مێژووی نرخ لە سەرچاوەی داتای ئێستادا بەردەست نییە.';
+  String get chartUnavailable =>
+      'مێژووی نرخ لە سەرچاوەی داتای ئێستادا بەردەست نییە.';
 
   @override
   String get sectionStatements => 'ڕاپۆرتە داراییەکان (ساڵانە)';
@@ -560,7 +578,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get labelOperatingCashFlow => 'ڕەوتی پارەی کارپێکردن';
 
   @override
-  String get statementsUnavailable => 'ڕاپۆرتە داراییە بڵاوکراوەکان بۆ ئەم پشکە بەردەست نین.';
+  String get statementsUnavailable =>
+      'ڕاپۆرتە داراییە بڵاوکراوەکان بۆ ئەم پشکە بەردەست نین.';
 
   @override
   String get launchAtLogin => 'کردنەوە لە کاتی چوونەژوورەوە';
@@ -569,7 +588,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get hotkeyLabel => 'کورتەڕێی گشتی';
 
   @override
-  String get hotkeyRecordHint => 'لێرە کرتە بکە، پاشان تێکەڵەی کلیلە نوێیەکە دابگرە';
+  String get hotkeyRecordHint =>
+      'لێرە کرتە بکە، پاشان تێکەڵەی کلیلە نوێیەکە دابگرە';
 
   @override
   String get hotkeyReset => 'گەڕاندنەوە بۆ بنەڕەت';
@@ -590,7 +610,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get removeFromFavorites => 'لابردن لە دڵخوازەکان';
 
   @override
-  String get noFavorites => 'هێشتا هیچ دڵخوازێک نییە. بۆ زیادکردن، دەست لە ئەستێرەی پشکێک بدە.';
+  String get noFavorites =>
+      'هێشتا هیچ دڵخوازێک نییە. بۆ زیادکردن، دەست لە ئەستێرەی پشکێک بدە.';
 
   @override
   String get displayCurrency => 'دراوی پیشاندان';
@@ -637,7 +658,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get updateDownloading => 'نوێکردنەوەکە لە پاشبنەدا دادەبەزێنرێت…';
 
   @override
-  String get updateDownloaded => 'نوێکردنەوەکە ئامادەیە. بۆ دامەزراندنی، ئەپەکە دووبارە دەستپێبکەرەوە.';
+  String get updateDownloaded =>
+      'نوێکردنەوەکە ئامادەیە. بۆ دامەزراندنی، ئەپەکە دووبارە دەستپێبکەرەوە.';
 
   @override
   String get updateNow => 'نوێکردنەوە';
@@ -646,7 +668,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get restartNow => 'دەستپێکردنەوە';
 
   @override
-  String get updatesViaStore => 'نوێکردنەوەکان بە خۆکاری لە ڕێگەی فرۆشگای ئەپەکانەوە دێن.';
+  String get updatesViaStore =>
+      'نوێکردنەوەکان بە خۆکاری لە ڕێگەی فرۆشگای ئەپەکانەوە دێن.';
 
   @override
   String get updateCheckFailed => 'نەتوانرا نوێکردنەوەکان بپشکنرێن.';
@@ -694,7 +717,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'تاقیکردنەوە بەخۆڕاییەکەت کۆتایی هات. بۆ بەردەوامبوون لە شیکاری پلانێک هەڵبژێرە.';
+  String get trialExpired =>
+      'تاقیکردنەوە بەخۆڕاییەکەت کۆتایی هات. بۆ بەردەوامبوون لە شیکاری پلانێک هەڵبژێرە.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -733,7 +757,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get extraPacksTitle => 'زیاترت پێویستە؟ شیکاریی زیادە بکڕە';
 
   @override
-  String get extraPacksHint => 'شیکارییە زیادەکان هەرگیز بەسەر ناچن و دوای بڕی مانگانەت بەکاردێن.';
+  String get extraPacksHint =>
+      'شیکارییە زیادەکان هەرگیز بەسەر ناچن و دوای بڕی مانگانەت بەکاردێن.';
 
   @override
   String get buy => 'کڕین';
@@ -761,10 +786,12 @@ class AppLocalizationsCkb extends AppLocalizations {
       'کڕین هێشتا لەم پلاتفۆرمەدا بەردەست نییە. لە مۆبایل یان Mac ئابوونە بە؛ پلانەکەت لەسەر هەموو ئامێرێک کار دەکات.';
 
   @override
-  String get errQuotaExceeded => 'هیچ شیکارییەکت بۆ ئەم ماوەیە نەماوە. پلانەکەت بەرز بکەرەوە یان شیکاریی زیادە بکڕە.';
+  String get errQuotaExceeded =>
+      'هیچ شیکارییەکت بۆ ئەم ماوەیە نەماوە. پلانەکەت بەرز بکەرەوە یان شیکاریی زیادە بکڕە.';
 
   @override
-  String get errTrialExpired => 'تاقیکردنەوە بەخۆڕاییەکەت کۆتایی هات. بۆ بەردەوامبوون پلانێک هەڵبژێرە.';
+  String get errTrialExpired =>
+      'تاقیکردنەوە بەخۆڕاییەکەت کۆتایی هات. بۆ بەردەوامبوون پلانێک هەڵبژێرە.';
 
   @override
   String get errNoPlan => 'بۆ شیکاریی AI پلانێکی چالاک پێویستە.';
@@ -776,7 +803,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get usageTitle => 'بەکارهێنان';
 
   @override
-  String get demoPurchaseNote => 'پارەدانی نموونە: کڕینەکان لەم پلاتفۆرمەدا لاسایی دەکرێنەوە.';
+  String get demoPurchaseNote =>
+      'پارەدانی نموونە: کڕینەکان لەم پلاتفۆرمەدا لاسایی دەکرێنەوە.';
 
   @override
   String get mostPopular => 'بەناوبانگترین';
@@ -816,7 +844,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get aiDepthStandardDesc => 'ڕاپۆرتی تەواو بە هەموو بەشەکانەوە.';
 
   @override
-  String get aiDepthDeepDesc => 'گەڕانی وێبی زیاتر، بەراوردکردن لەگەڵ ڕکابەران و وردەکاریی قووڵتر.';
+  String get aiDepthDeepDesc =>
+      'گەڕانی وێبی زیاتر، بەراوردکردن لەگەڵ ڕکابەران و وردەکاریی قووڵتر.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -844,7 +873,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get aiReaderExperienced => 'شارەزا';
 
   @override
-  String get aiReaderBeginnerDesc => 'زمانی سادە؛ هەموو زاراوەیەکی تەکنیکی ڕوون دەکرێتەوە.';
+  String get aiReaderBeginnerDesc =>
+      'زمانی سادە؛ هەموو زاراوەیەکی تەکنیکی ڕوون دەکرێتەوە.';
 
   @override
   String get aiReaderExperiencedDesc => 'دەقی چڕتر بە زاراوەی دارایی ستاندارد.';
@@ -853,7 +883,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get aiCounterArgument => 'بەهێزترین بەڵگەی پێچەوانە';
 
   @override
-  String get aiCounterArgumentDesc => 'پوختەکە هەمیشە بە بەهێزترین بەڵگە دژی دەرەنجامی خۆی کۆتایی دێت.';
+  String get aiCounterArgumentDesc =>
+      'پوختەکە هەمیشە بە بەهێزترین بەڵگە دژی دەرەنجامی خۆی کۆتایی دێت.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -946,7 +977,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get upcomingEvents => 'ڕووداوە داهاتووەکان';
 
   @override
-  String get outlookChartNote => 'مەودای نزیکەیی؛ ئەگەرەکان خەمڵاندنی گشتین، نەک پێشبینی.';
+  String get outlookChartNote =>
+      'مەودای نزیکەیی؛ ئەگەرەکان خەمڵاندنی گشتین، نەک پێشبینی.';
 
   @override
   String get accountTitle => 'هەژمار';
@@ -961,10 +993,12 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get notSignedIn => 'نەچوویتە ژوورەوە';
 
   @override
-  String get accountBenefit => 'بچۆ ژوورەوە بۆ ئەوەی ئابوونەکەت لەسەر هەموو ئامێرەکانت کار بکات.';
+  String get accountBenefit =>
+      'بچۆ ژوورەوە بۆ ئەوەی ئابوونەکەت لەسەر هەموو ئامێرەکانت کار بکات.';
 
   @override
-  String get accountSyncedNote => 'ئابوونە و شیکارییە ماوەکانت لەسەر هەموو ئامێرێک وەک یەکن.';
+  String get accountSyncedNote =>
+      'ئابوونە و شیکارییە ماوەکانت لەسەر هەموو ئامێرێک وەک یەکن.';
 
   @override
   String get signInTitle => 'چوونەژوورەوە بۆ WhatStock';
@@ -996,13 +1030,16 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get errInvalidEmail => 'تکایە ناونیشانێکی ئیمەیڵی دروست بنووسە.';
 
   @override
-  String get errSignInFailed => 'چوونەژوورەوە سەرکەوتوو نەبوو. پەیوەندییەکەت بپشکنە و دووبارە هەوڵ بدەرەوە.';
+  String get errSignInFailed =>
+      'چوونەژوورەوە سەرکەوتوو نەبوو. پەیوەندییەکەت بپشکنە و دووبارە هەوڵ بدەرەوە.';
 
   @override
-  String get checkoutWaiting => 'پارەدانەکە لە وێبگەڕەکەتدا تەواو بکە. کە تەواو بوو، ئەپەکە بە خۆکاری نوێ دەبێتەوە.';
+  String get checkoutWaiting =>
+      'پارەدانەکە لە وێبگەڕەکەتدا تەواو بکە. کە تەواو بوو، ئەپەکە بە خۆکاری نوێ دەبێتەوە.';
 
   @override
-  String get paymentViaStripe => 'پارەدانی پارێزراو لە وێبگەڕەکەتدا لە ڕێگەی Stripe. هەر کاتێک بتەوێت هەڵیبوەشێنەوە.';
+  String get paymentViaStripe =>
+      'پارەدانی پارێزراو لە وێبگەڕەکەتدا لە ڕێگەی Stripe. هەر کاتێک بتەوێت هەڵیبوەشێنەوە.';
 
   @override
   String get paymentViaStore =>
@@ -1015,7 +1052,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get doubleOptionTitle => 'دوو جار Option داگرە';
 
   @override
-  String get doubleOptionSubtitle => 'دوو جار داگرتنی خێرای کلیلی Option هەروەها WhatStock بانگ دەکات.';
+  String get doubleOptionSubtitle =>
+      'دوو جار داگرتنی خێرای کلیلی Option هەروەها WhatStock بانگ دەکات.';
 
   @override
   String get doubleOptionPermission =>
@@ -1037,7 +1075,12 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years ساڵ', one: '1 ساڵ');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years ساڵ',
+      one: '1 ساڵ',
+    );
     return '$_temp0';
   }
 
@@ -1143,7 +1186,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get portfolioRemove => 'لابردن';
 
   @override
-  String get portfolioExcluded => 'ئەو پۆزیشنانەی نرخ یان نرخی گۆڕینەوەیان نییە لە کۆکان دەرکراون.';
+  String get portfolioExcluded =>
+      'ئەو پۆزیشنانەی نرخ یان نرخی گۆڕینەوەیان نییە لە کۆکان دەرکراون.';
 
   @override
   String get priceAlerts => 'ئاگادارکەرەوەکانی نرخ';
@@ -1242,7 +1286,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get alertOpen => 'کردنەوە';
 
   @override
-  String get keepInTrayTitle => 'کاتێک پەنجەرەکە داخرا، بەردەوام بێت لە کارکردن';
+  String get keepInTrayTitle =>
+      'کاتێک پەنجەرەکە داخرا، بەردەوام بێت لە کارکردن';
 
   @override
   String get keepInTraySubtitle =>
@@ -1279,7 +1324,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get accountDeleted => 'هەژمارەکەت سڕایەوە.';
 
   @override
-  String get errDeleteAccount => 'هەژمارەکە نەسڕایەوە. پەیوەندییەکەت بپشکنە و دووبارە هەوڵ بدەرەوە.';
+  String get errDeleteAccount =>
+      'هەژمارەکە نەسڕایەوە. پەیوەندییەکەت بپشکنە و دووبارە هەوڵ بدەرەوە.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1316,7 +1362,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get inviteTitle => 'پێشبینینی داخراو';
 
   @override
-  String get inviteBody => 'WhatStock بۆ ئێستا تەنها بە بانگهێشت بەردەستە. ئەو کۆدی بانگهێشتەی وەرتگرتووە بنووسە.';
+  String get inviteBody =>
+      'WhatStock بۆ ئێستا تەنها بە بانگهێشت بەردەستە. ئەو کۆدی بانگهێشتەی وەرتگرتووە بنووسە.';
 
   @override
   String get inviteCodeLabel => 'کۆدی بانگهێشت';
@@ -1328,16 +1375,19 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get inviteInvalid => 'ئەم کۆدی بانگهێشتە دروست نییە.';
 
   @override
-  String get inviteExpired => 'ئەم بانگهێشتە بەسەرچووە. داوای کۆدێکی نوێ لەو کەسە بکە کە بانگهێشتی کردوویت.';
+  String get inviteExpired =>
+      'ئەم بانگهێشتە بەسەرچووە. داوای کۆدێکی نوێ لەو کەسە بکە کە بانگهێشتی کردوویت.';
 
   @override
-  String get inviteDeviceLimit => 'ئەم کۆدی بانگهێشتە پێشتر لەسەر زۆرترین ژمارەی ڕێپێدراوی ئامێر بەکاردێت.';
+  String get inviteDeviceLimit =>
+      'ئەم کۆدی بانگهێشتە پێشتر لەسەر زۆرترین ژمارەی ڕێپێدراوی ئامێر بەکاردێت.';
 
   @override
   String get previewConfidential => 'پێشبینینی نهێنی';
 
   @override
-  String get errPreviewDailyLimit => 'سنووری شیکاریی ئەمڕۆی ئەم پێشبینینە تەواو بووە. سبەی دووبارە هەوڵ بدەرەوە.';
+  String get errPreviewDailyLimit =>
+      'سنووری شیکاریی ئەمڕۆی ئەم پێشبینینە تەواو بووە. سبەی دووبارە هەوڵ بدەرەوە.';
 
   @override
   String ageHours(int count) {
@@ -1408,7 +1458,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get shareCardFooter => 'بە WhatStock دروستکراوە';
 
   @override
-  String get shareCardDisclaimer => 'شیکاریی AI · سیناریۆی نموونەیی، نەک پێشبینی · ئامۆژگاریی وەبەرهێنان نییە';
+  String get shareCardDisclaimer =>
+      'شیکاریی AI · سیناریۆی نموونەیی، نەک پێشبینی · ئامۆژگاریی وەبەرهێنان نییە';
 
   @override
   String get referralTitle => 'هاوڕێکانت بانگهێشت بکە';
@@ -1450,7 +1501,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'ئەم کۆدە بوونی نییە. بیپشکنە و دووبارە هەوڵ بدەرەوە.';
+  String get referralErrUnknown =>
+      'ئەم کۆدە بوونی نییە. بیپشکنە و دووبارە هەوڵ بدەرەوە.';
 
   @override
   String get referralErrOwn => 'ناتوانیت کۆدی خۆت بەکاربهێنیت.';
@@ -1567,17 +1619,24 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get askSuggest3 => 'بە زمانێکی سادە ڕوونی بکەرەوە';
 
   @override
-  String get askMaxReached => 'ئەمە دوایین پرسیار بوو بۆ ئەم شیکارییە. بۆ پرسیاری زیاتر شیکارییەکی نوێ دروست بکە.';
+  String get askMaxReached =>
+      'ئەمە دوایین پرسیار بوو بۆ ئەم شیکارییە. بۆ پرسیاری زیاتر شیکارییەکی نوێ دروست بکە.';
 
   @override
-  String get errAskLimit => 'گەیشتیتە سنووری پرسیارەکانی ئەمڕۆ. تکایە سبەی دووبارە هەوڵ بدەرەوە.';
+  String get errAskLimit =>
+      'گەیشتیتە سنووری پرسیارەکانی ئەمڕۆ. تکایە سبەی دووبارە هەوڵ بدەرەوە.';
 
   @override
   String get eventTomorrow => 'سبەینێ';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'دوای $days ڕۆژ', one: 'دوای 1 ڕۆژ');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'دوای $days ڕۆژ',
+      one: 'دوای 1 ڕۆژ',
+    );
     return '$_temp0';
   }
 
@@ -1661,7 +1720,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get notesTitle => 'تێبینییەکانم';
 
   @override
-  String get notesHint => 'بۆچی کڕیت، چاودێری چی دەکەیت، چی وات لێدەکات بیفرۆشیت؟';
+  String get notesHint =>
+      'بۆچی کڕیت، چاودێری چی دەکەیت، چی وات لێدەکات بیفرۆشیت؟';
 
   @override
   String get notesInfo =>
@@ -1723,7 +1783,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get syncNow => 'ئێستا هاوکات بکە';
 
   @override
-  String get syncFailed => 'هاوکاتکردن سەرکەوتوو نەبوو. بە شێوەی خۆکار دووبارە هەوڵ دەدرێتەوە.';
+  String get syncFailed =>
+      'هاوکاتکردن سەرکەوتوو نەبوو. بە شێوەی خۆکار دووبارە هەوڵ دەدرێتەوە.';
 
   @override
   String get alertEmailTitle => 'ئیمەیڵ کاتێک ئاگادارکەرەوەیەک کارا دەبێت';
@@ -1852,7 +1913,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'کۆی کۆمپانیاکە لە بازاڕی پشکدا چەندی بەهایە: نرخی پشک × ژمارەی پشکەکان.';
+  String get glossMarketCap =>
+      'کۆی کۆمپانیاکە لە بازاڕی پشکدا چەندی بەهایە: نرخی پشک × ژمارەی پشکەکان.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1891,10 +1953,12 @@ class AppLocalizationsCkb extends AppLocalizations {
       'پشکەکە چەند لەگەڵ بازاڕدا دەجووڵێت: 1 = وەک بازاڕ، 1.5 = نزیکەی 50% لەرزینی گەورەتر، خوار 1 = ئارامتر.';
 
   @override
-  String get glossRevenueTtm => 'کۆی فرۆشتنی 12 مانگی ڕابردوو، پێش هەر تێچوونێک.';
+  String get glossRevenueTtm =>
+      'کۆی فرۆشتنی 12 مانگی ڕابردوو، پێش هەر تێچوونێک.';
 
   @override
-  String get glossNetIncomeTtm => 'ئەو قازانجەی دوای هەموو تێچوون و سوود و باجەکان لە 12 مانگی ڕابردوودا دەمێنێتەوە.';
+  String get glossNetIncomeTtm =>
+      'ئەو قازانجەی دوای هەموو تێچوون و سوود و باجەکان لە 12 مانگی ڕابردوودا دەمێنێتەوە.';
 
   @override
   String get glossGrossMargin =>
@@ -1905,7 +1969,8 @@ class AppLocalizationsCkb extends AppLocalizations {
       'ئەو بەشەی داهات کە دوای تێچووی بەڕێوەبردنی کار (مووچە، کرێ، بازاڕکردن) و پێش سوود و باج دەمێنێتەوە.';
 
   @override
-  String get glossNetMargin => 'ئەو بەشەی داهات کە دەبێتە قازانجی کۆتایی. 20% واتە لە هەر 100ی فرۆشتن 20 قازانجە.';
+  String get glossNetMargin =>
+      'ئەو بەشەی داهات کە دەبێتە قازانجی کۆتایی. 20% واتە لە هەر 100ی فرۆشتن 20 قازانجە.';
 
   @override
   String get glossRoe =>
@@ -1924,17 +1989,20 @@ class AppLocalizationsCkb extends AppLocalizations {
       'داراییە کورتخایەنەکان ÷ ئەو قەرزانەی لە ماوەی ساڵێکدا دەبێت بدرێنەوە. سەروو 1 واتە کۆمپانیاکە دەتوانێت قەرزە نزیکەکانی بداتەوە.';
 
   @override
-  String get glossRevenueGrowth => 'داهات چەند گەشەی کردووە بە بەراورد بە ساڵێک پێشتر.';
+  String get glossRevenueGrowth =>
+      'داهات چەند گەشەی کردووە بە بەراورد بە ساڵێک پێشتر.';
 
   @override
-  String get glossEpsGrowth => 'قازانجی هەر پشکێک چەند گەشەی کردووە بە بەراورد بە ساڵێک پێشتر.';
+  String get glossEpsGrowth =>
+      'قازانجی هەر پشکێک چەند گەشەی کردووە بە بەراورد بە ساڵێک پێشتر.';
 
   @override
   String get glossDividendYield =>
       'قازانجی پشکی ساڵانە ÷ نرخی پشک: ئەو داهاتە نەختەی ساڵانە وەریدەگریت، وەک ڕێژەیەکی سەدی لەوەی دەیدەیت.';
 
   @override
-  String get glossDividendPerShare => 'ئەو قازانجی پشکەی لە ساڵی ڕابردوودا بۆ یەک پشک دراوە.';
+  String get glossDividendPerShare =>
+      'ئەو قازانجی پشکەی لە ساڵی ڕابردوودا بۆ یەک پشک دراوە.';
 
   @override
   String get glossPayoutRatio =>
@@ -2032,7 +2100,8 @@ class AppLocalizationsCkb extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'یەکسان یان سەرووی EPSی چاوەڕوانکراو لە $beats لە دوایین $total وەرزدا',
+      other:
+          'یەکسان یان سەرووی EPSی چاوەڕوانکراو لە $beats لە دوایین $total وەرزدا',
       one: 'یەکسان یان سەرووی EPSی چاوەڕوانکراو لە $beats لە 1 وەرزدا',
     );
     return '$_temp0';
@@ -2149,13 +2218,23 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count کڕین', one: '1 کڕین');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count کڕین',
+      one: '1 کڕین',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count فرۆشتن', one: '1 فرۆشتن');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count فرۆشتن',
+      one: '1 فرۆشتن',
+    );
     return '$_temp0';
   }
 
@@ -2175,7 +2254,8 @@ class AppLocalizationsCkb extends AppLocalizations {
       'کڕین و فرۆشتنی بەڕێوەبەران و ئەندامانی ئەنجومەن لە بازاڕی کراوەدا لە 90 ڕۆژی ڕابردوودا (SEC Form 4). جێبەجێکردنی ئۆپشن و خەڵاتی پشک ناژمێردرێن.';
 
   @override
-  String get insiderNone => 'لە 90 ڕۆژی ڕابردوودا هیچ کڕین یان فرۆشتنێکی ناوخۆیی لە بازاڕی کراوەدا نەبووە.';
+  String get insiderNone =>
+      'لە 90 ڕۆژی ڕابردوودا هیچ کڕین یان فرۆشتنێکی ناوخۆیی لە بازاڕی کراوەدا نەبووە.';
 
   @override
   String get analystTrend => 'بیروڕاکان چۆن مانگ بە مانگ گۆڕان';
@@ -2199,7 +2279,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get watchListAddTo => 'زیادکردن بۆ لیستێک';
 
   @override
-  String get watchListEmpty => 'هێشتا هیچ پشکێک لەم لیستەدا نییە. بۆ زیادکردن، دوگمەی لیست لە تەنیشت پشکەکە دابگرە.';
+  String get watchListEmpty =>
+      'هێشتا هیچ پشکێک لەم لیستەدا نییە. بۆ زیادکردن، دوگمەی لیست لە تەنیشت پشکەکە دابگرە.';
 
   @override
   String favoriteRemoved(String symbol) {
@@ -2217,7 +2298,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard => 'کۆپی کرا بۆ کلیپبۆرد – لە هەر شوێنێک دەتەوێت هاوبەشی بکەیت، بیلکێنە.';
+  String get sharedToClipboard =>
+      'کۆپی کرا بۆ کلیپبۆرد – لە هەر شوێنێک دەتەوێت هاوبەشی بکەیت، بیلکێنە.';
 
   @override
   String get glossaryNoMatch => 'هیچ زاراوەیەک لەگەڵ گەڕانەکەت ناگونجێت.';
@@ -2235,6 +2317,22 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get accountDeletedElsewhere =>
+      'ئەم هەژمارە لە ئامێرێکی تر یان لە وێب سڕایەوە، بۆیە داتاکانیشی لەم ئامێرەش سڕانەوە.';
+
+  @override
+  String get errAiUnavailable =>
+      'خزمەتگوزاریی AI ئێستا بەردەست نییە. چەند خولەکێکی تر دووبارە هەوڵ بدەرەوە.';
+
+  @override
+  String get errMarketUnavailable =>
+      'داتای بازاڕ ئێستا بەردەست نییە. چەند خولەکێکی تر دووبارە هەوڵ بدەرەوە.';
+
+  @override
+  String get purchaseUnavailable =>
+      'کڕین ئێستا بەردەست نییە. دواتر دووبارە هەوڵ بدەرەوە.';
+
+  @override
   String get portfolioAskTitle => 'پرسیارەکان دەربارەی پۆرتفۆلیۆکەت';
 
   @override
@@ -2247,13 +2345,15 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get backupSave => 'پاشەکەوتکردنی یەدەگ';
 
   @override
-  String get backupSaveHint => 'دڵخوازەکان، لیستەکان، پۆرتفۆلیۆ، ئاگادارییەکان و تێبینییەکانت لە یەک فایلدا.';
+  String get backupSaveHint =>
+      'دڵخوازەکان، لیستەکان، پۆرتفۆلیۆ، ئاگادارییەکان و تێبینییەکانت لە یەک فایلدا.';
 
   @override
   String get backupRestore => 'گەڕاندنەوە لە یەدەگ';
 
   @override
-  String get backupRestoreHint => 'ئەوەی لە فایلەکەدایە زیاد دەکات؛ هیچ شتێک لەوەی ئێستا هەتە ناسڕێتەوە.';
+  String get backupRestoreHint =>
+      'ئەوەی لە فایلەکەدایە زیاد دەکات؛ هیچ شتێک لەوەی ئێستا هەتە ناسڕێتەوە.';
 
   @override
   String get backupRestored => 'یەدەگەکە گەڕێندرایەوە.';
@@ -2351,7 +2451,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String get portfolioExportRealized => 'هەناردەکردنی قازانجی بەدەستهاتوو (CSV)';
+  String get portfolioExportRealized =>
+      'هەناردەکردنی قازانجی بەدەستهاتوو (CSV)';
 
   @override
   String get portfolioAnnualReturn => 'قازانجی ساڵانە';
@@ -2372,7 +2473,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'ئاگاداری پۆرتفۆلیۆ';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'ئاگادارکردنەوەیەک کاتێک هەموو پۆرتفۆلیۆکەت لە ڕۆژێکدا ئەوەندە دەجووڵێت.';
+  String get portfolioMoveAlertSubtitle =>
+      'ئاگادارکردنەوەیەک کاتێک هەموو پۆرتفۆلیۆکەت لە ڕۆژێکدا ئەوەندە دەجووڵێت.';
 
   @override
   String get portfolioMoveAlertOff => 'کوژاوە';
@@ -2544,11 +2646,17 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get portfolioTopHoldings => 'گەورەترین پۆزیشنەکان';
 
   @override
-  String get portfolioShareNote => 'تەنها ڕێژەی سەدی هاوبەش دەکرێت، بڕی پارە نا.';
+  String get portfolioShareNote =>
+      'تەنها ڕێژەی سەدی هاوبەش دەکرێت، بڕی پارە نا.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count پۆزیشن', one: '1 پۆزیشن');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پۆزیشن',
+      one: '1 پۆزیشن',
+    );
     return '$_temp0';
   }
 
@@ -2598,13 +2706,15 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get portfolioSampleTry => 'تاقیکردنەوە بە پۆرتفۆلیۆی نموونە';
 
   @override
-  String get portfolioSampleBanner => 'ئەمە پۆرتفۆلیۆیەکی نموونەیە. کڕینەکانی خۆت لە تەنیشتیەوە زیاد بکە، یان لایببە.';
+  String get portfolioSampleBanner =>
+      'ئەمە پۆرتفۆلیۆیەکی نموونەیە. کڕینەکانی خۆت لە تەنیشتیەوە زیاد بکە، یان لایببە.';
 
   @override
   String get portfolioSampleRemove => 'لابردنی نموونە';
 
   @override
-  String get portfolioStopsAll => 'ئاگادارکردنەوەی دابەزین لە لووتکە بۆ هەموو پۆزیشنەکان';
+  String get portfolioStopsAll =>
+      'ئاگادارکردنەوەی دابەزین لە لووتکە بۆ هەموو پۆزیشنەکان';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2653,10 +2763,12 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lotNoteAdd => 'تێبینییەک زیاد بکە';
 
   @override
-  String get lotNoteBuyHint => 'بۆچی دەیکڕیت؟ لەگەڵ بەروارەکە دەچێتە ناو تێبینییەکانی پشکەکە.';
+  String get lotNoteBuyHint =>
+      'بۆچی دەیکڕیت؟ لەگەڵ بەروارەکە دەچێتە ناو تێبینییەکانی پشکەکە.';
 
   @override
-  String get lotNoteSellHint => 'بۆچی دەیفرۆشیت؟ لەگەڵ بەروارەکە دەچێتە ناو تێبینییەکانی پشکەکە.';
+  String get lotNoteSellHint =>
+      'بۆچی دەیفرۆشیت؟ لەگەڵ بەروارەکە دەچێتە ناو تێبینییەکانی پشکەکە.';
 
   @override
   String get lotNoteBought => 'کڕدرا';
@@ -2666,13 +2778,23 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months مانگ', one: '$months مانگ');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months مانگ',
+      one: '$months مانگ',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days ڕۆژ', one: '$days ڕۆژ');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ڕۆژ',
+      one: '$days ڕۆژ',
+    );
     return '$_temp0';
   }
 
@@ -2760,10 +2882,12 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'بە ئیمەیڵەکەت بچۆ ژوورەوە بۆ ئەوەی کۆدی هاوڕێیەک بەکاربهێنیت.';
+  String get referralErrSignIn =>
+      'بە ئیمەیڵەکەت بچۆ ژوورەوە بۆ ئەوەی کۆدی هاوڕێیەک بەکاربهێنیت.';
 
   @override
-  String get referralErrFull => 'ئەم کۆدە پێشتر بە زۆرترین ژمارەی ڕێگەپێدراو بەکارهاتووە.';
+  String get referralErrFull =>
+      'ئەم کۆدە پێشتر بە زۆرترین ژمارەی ڕێگەپێدراو بەکارهاتووە.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2771,10 +2895,12 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated => 'شیکارییەکە پێش تەواوبوون بڕا. تکایە دووبارە هەوڵ بدەرەوە – لە بڕەکەت کەم نەکرایەوە.';
+  String get errAiTruncated =>
+      'شیکارییەکە پێش تەواوبوون بڕا. تکایە دووبارە هەوڵ بدەرەوە – لە بڕەکەت کەم نەکرایەوە.';
 
   @override
-  String get errImageUnsupported => 'ئەم وێنەیە ناخوێنرێتەوە. وەک JPEG یان PNG پاشەکەوتی بکە و دووبارە هەوڵ بدەرەوە.';
+  String get errImageUnsupported =>
+      'ئەم وێنەیە ناخوێنرێتەوە. وەک JPEG یان PNG پاشەکەوتی بکە و دووبارە هەوڵ بدەرەوە.';
 
   @override
   String get errRateLimited =>
@@ -2801,7 +2927,8 @@ class AppLocalizationsCkb extends AppLocalizations {
       'لێرە هیچ ئابوونەیەک نییە بۆ بەڕێوەبردن. ئابوونەیەک کە لە App Store یان Google Play کڕدرابێت، لە ڕێکخستنەکانی فرۆشگادا بەڕێوە دەبرێت.';
 
   @override
-  String get backupFailed => 'یەدەگەکە پاشەکەوت نەکرا. تکایە دووبارە هەوڵ بدەرەوە.';
+  String get backupFailed =>
+      'یەدەگەکە پاشەکەوت نەکرا. تکایە دووبارە هەوڵ بدەرەوە.';
 
   @override
   String get syncTooLarge =>
@@ -2821,8 +2948,10 @@ class AppLocalizationsCkb extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count پشکی قازانج بە $currencies نرخی گۆڕینەوەیان نییە و لە کۆکان دەرکراون.',
-      one: '1 پشکی قازانج بە $currencies نرخی گۆڕینەوەی نییە و لە کۆکان دەرکراوە.',
+      other:
+          '$count پشکی قازانج بە $currencies نرخی گۆڕینەوەیان نییە و لە کۆکان دەرکراون.',
+      one:
+          '1 پشکی قازانج بە $currencies نرخی گۆڕینەوەی نییە و لە کۆکان دەرکراوە.',
     );
     return '$_temp0';
   }
@@ -2921,7 +3050,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get aiReportNoteHint => 'چی هەڵەیە؟ (ئارەزوومەندانە)';
 
   @override
-  String get aiReportPrivacy => 'دەقی ئەم وەڵامە و تێبینییەکەت — بەبێ هەژمارەکەت — وەردەگرین بۆ ئەوەی پێیدا بچینەوە.';
+  String get aiReportPrivacy =>
+      'دەقی ئەم وەڵامە و تێبینییەکەت — بەبێ هەژمارەکەت — وەردەگرین بۆ ئەوەی پێیدا بچینەوە.';
 
   @override
   String get aiReportSend => 'ناردنی ڕاپۆرت';
@@ -3092,7 +3222,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get portfolioSplitRatio => 'ڕێژە (نوێ : کۆن)';
 
   @override
-  String get portfolioSplitRatioError => 'ڕێژەیەک بنووسە وەک 10:1، یان 1:10 بۆ دابەشکردنی پێچەوانە.';
+  String get portfolioSplitRatioError =>
+      'ڕێژەیەک بنووسە وەک 10:1، یان 1:10 بۆ دابەشکردنی پێچەوانە.';
 
   @override
   String get portfolioSplitDate => 'بەرواری دابەشکردن';
@@ -3211,10 +3342,12 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get techNeutral => 'بێلایەن';
 
   @override
-  String get techGoldenCross => 'تێکڕای ٥٠ ڕۆژ لە سەرووی تێکڕای ٢٠٠ ڕۆژە – بەپێی خوێندنەوەی کلاسیک ئاراستەی سەرکەوتنە.';
+  String get techGoldenCross =>
+      'تێکڕای ٥٠ ڕۆژ لە سەرووی تێکڕای ٢٠٠ ڕۆژە – بەپێی خوێندنەوەی کلاسیک ئاراستەی سەرکەوتنە.';
 
   @override
-  String get techDeathCross => 'تێکڕای ٥٠ ڕۆژ لە خوارووی تێکڕای ٢٠٠ ڕۆژە – بەپێی خوێندنەوەی کلاسیک ئاراستەی دابەزینە.';
+  String get techDeathCross =>
+      'تێکڕای ٥٠ ڕۆژ لە خوارووی تێکڕای ٢٠٠ ڕۆژە – بەپێی خوێندنەوەی کلاسیک ئاراستەی دابەزینە.';
 
   @override
   String get glossSma50 =>
@@ -3233,7 +3366,8 @@ class AppLocalizationsCkb extends AppLocalizations {
       'نرخ ڕۆژ بە ڕۆژ چەند دەجووڵێت، بە پێوانەی ساڵێک: ٢٠% واتە لە ساڵێکی ئاسایی نرخ لە نێوان نزیکەی ±٢٠% دەجووڵێت. جووڵەی بەرزتر واتە جووڵەی گەورەتر بە هەردوو لا.';
 
   @override
-  String get techNote => 'لە نرخەکانی داخستنی ڕۆژانە هەژمار کراوە. ئاماژەکانی تەکنیکی ڕابردوو باس دەکەن، نەک داهاتوو.';
+  String get techNote =>
+      'لە نرخەکانی داخستنی ڕۆژانە هەژمار کراوە. ئاماژەکانی تەکنیکی ڕابردوو باس دەکەن، نەک داهاتوو.';
 
   @override
   String portfolioAbove200(int above, int count) {
@@ -3273,7 +3407,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get glossaryPageTitle => 'فەرهەنگۆک';
 
   @override
-  String get glossaryPageSubtitle => 'ڕوونکردنەوەی سادەی هەر ژمارەیەک کە ئەپەکە پیشانی دەدات، لە P/E تا RSI';
+  String get glossaryPageSubtitle =>
+      'ڕوونکردنەوەی سادەی هەر ژمارەیەک کە ئەپەکە پیشانی دەدات، لە P/E تا RSI';
 
   @override
   String get glossarySearchHint => 'گەڕان لە فەرهەنگۆک';

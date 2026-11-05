@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Ha ho lentswe le tsamaellanang le seo o se batlileng.",
   "cashInvalidAmount": "Kenya palo ya 0 kapa ho feta.",
   "portfolioImportNothing": "Ha ho theko kapa thekiso e badilweng mongolong ona. Hlahloba hore mola ka mong o tshwana le mohlala.",
-  "lotPriceFarFromQuote": "Theko ena e hole haholo le theko ya kajeno ({price}). E hlahlobe, kapa o e boloke hape haeba e nepahetse."
+  "lotPriceFarFromQuote": "Theko ena e hole haholo le theko ya kajeno ({price}). E hlahlobe, kapa o e boloke hape haeba e nepahetse.",
+  "accountDeletedElsewhere": "Akhaonto ena e hlakotswe sesebedisweng se seng kapa webong, ka hona data ya yona le yona e tlositswe sesebedisweng sena.",
+  "errAiUnavailable": "Tshebeletso ya AI ha e fumanehe hona jwale. Leka hape kamora metsotso e mmalwa.",
+  "errMarketUnavailable": "Data ya mmaraka ha e fumanehe hona jwale. Leka hape kamora metsotso e mmalwa.",
+  "purchaseUnavailable": "Ditheko ha di fumanehe hona jwale. Leka hape hamorao."
 }

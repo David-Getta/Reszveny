@@ -170,6 +170,7 @@ class _AppShellState extends State<AppShell> {
     _services?.pageRequest.removeListener(_onPageRequest);
     _services?.reports.completed.removeListener(_onAnalysisDone);
     sharedToClipboard.removeListener(_onSharedToClipboard);
+    _services?.accountDeletedElsewhere.removeListener(_onAccountDeletedElsewhere);
     super.dispose();
   }
 
@@ -192,6 +193,19 @@ class _AppShellState extends State<AppShell> {
             label: l10n.alertOpen,
             onPressed: () => services.alertMonitor.requestOpen(hits.first.alert.symbol),
           ),
+        ),
+      );
+  }
+
+  /// A fiókot egy másik eszközön törölték: az adatai innen is lekerültek.
+  void _onAccountDeletedElsewhere() {
+    if (!mounted) return;
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context).accountDeletedElsewhere),
+          duration: const Duration(seconds: 10),
         ),
       );
   }
@@ -266,6 +280,7 @@ class _AppShellState extends State<AppShell> {
       services.pageRequest.addListener(_onPageRequest);
       services.reports.completed.addListener(_onAnalysisDone);
       sharedToClipboard.addListener(_onSharedToClipboard);
+      services.accountDeletedElsewhere.addListener(_onAccountDeletedElsewhere);
       // A megnyitás már figyelve: jöhetnek a korábbi értesítésekre érkezett kattintások.
       if (services.alertMonitor.notifier case final SystemNotifier n) unawaited(n.listen());
     }

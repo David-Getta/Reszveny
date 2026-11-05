@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Ata ngogo mosi ve ke wakana ti kusosa na nge.",
   "cashInvalidAmount": "Sonika ntalu ya 0 to mingi.",
   "portfolioImportNothing": "Beto lendaka ve kutanga kusumba to kuteka ata mosi na masonuku yai. Tala nde konso ndonga kele bonso mbandu.",
-  "lotPriceFarFromQuote": "Yai kele ntama ti ntalu ya bubu ({price}). Tala yo, to bumba diaka kana yo kele mbote."
+  "lotPriceFarFromQuote": "Yai kele ntama ti ntalu ya bubu ({price}). Tala yo, to bumba diaka kana yo kele mbote.",
+  "accountDeletedElsewhere": "Bo zimbisaka compte yai na kisadilu ya nkaka to na web, yo yina ba ntalu na yo mpi me katuka na kisadilu kiaki.",
+  "errAiUnavailable": "Service ya AI kele ve ntangu yai. Meka diaka na nima ya baminuti fioti.",
+  "errMarketUnavailable": "Ntalu za zandu kele ve ntangu yai. Meka diaka na nima ya baminuti fioti.",
+  "purchaseUnavailable": "Kusumba kele ve ntangu yai. Meka diaka na nima."
 }

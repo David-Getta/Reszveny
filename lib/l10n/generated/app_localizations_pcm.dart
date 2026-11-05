@@ -13,7 +13,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Snap stock picture, make you sabi evritin about am.';
+  String get homeTagline =>
+      'Snap stock picture, make you sabi evritin about am.';
 
   @override
   String get homeHint =>
@@ -318,7 +319,12 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analysts', one: '$count analyst');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analysts',
+      one: '$count analyst',
+    );
     return '$_temp0';
   }
 
@@ -346,10 +352,12 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get recognitionRawText => 'Wetin we read from di picture';
 
   @override
-  String get errMissingAnthropicKey => 'Picture recognition no dey for dis version. Type di ticker by hand instead.';
+  String get errMissingAnthropicKey =>
+      'Picture recognition no dey for dis version. Type di ticker by hand instead.';
 
   @override
-  String get errRecognitionUnreachable => 'We no fit reach di recognition service. Check your internet connection.';
+  String get errRecognitionUnreachable =>
+      'We no fit reach di recognition service. Check your internet connection.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -357,25 +365,31 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Di recognition service no fit work on dis picture.';
+  String get errRecognitionRefused =>
+      'Di recognition service no fit work on dis picture.';
 
   @override
-  String get errRecognitionTruncated => 'Di recognition answer cut for middle. Abeg try again.';
+  String get errRecognitionTruncated =>
+      'Di recognition answer cut for middle. Abeg try again.';
 
   @override
-  String get errRecognitionBadResponse => 'Di recognition service give answer wey we no expect.';
+  String get errRecognitionBadResponse =>
+      'Di recognition service give answer wey we no expect.';
 
   @override
-  String get errRecognitionEmpty => 'Di recognition service return empty answer.';
+  String get errRecognitionEmpty =>
+      'Di recognition service return empty answer.';
 
   @override
   String get errMissingFinnhubKey => 'Market data no dey for dis version.';
 
   @override
-  String get errMarketUnreachable => 'We no fit reach di market data service. Check your internet connection.';
+  String get errMarketUnreachable =>
+      'We no fit reach di market data service. Check your internet connection.';
 
   @override
-  String get errMarketRateLimited => 'Too many request don go di market data service. Abeg wait one minute.';
+  String get errMarketRateLimited =>
+      'Too many request don go di market data service. Abeg wait one minute.';
 
   @override
   String errMarketHttp(String status) {
@@ -383,7 +397,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Di market data service give answer wey we no expect.';
+  String get errMarketBadResponse =>
+      'Di market data service give answer wey we no expect.';
 
   @override
   String errNoQuote(String symbol) {
@@ -483,7 +498,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get aiRegenerate => 'Make am again';
 
   @override
-  String get aiGenerating => 'We dey prepare di analysis… e fit take one or two minutes.';
+  String get aiGenerating =>
+      'We dey prepare di analysis… e fit take one or two minutes.';
 
   @override
   String get aiSources => 'Sources';
@@ -501,7 +517,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get errAiNotConfigured => 'AI features no dey for dis version.';
 
   @override
-  String get errAiUnreachable => 'We no fit reach di AI service. Check your internet connection.';
+  String get errAiUnreachable =>
+      'We no fit reach di AI service. Check your internet connection.';
 
   @override
   String errAiHttp(String status) {
@@ -533,7 +550,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Price history no dey from di data source wey we dey use now.';
+  String get chartUnavailable =>
+      'Price history no dey from di data source wey we dey use now.';
 
   @override
   String get sectionStatements => 'Financial statements (every year)';
@@ -560,7 +578,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get labelOperatingCashFlow => 'Cash from operations';
 
   @override
-  String get statementsUnavailable => 'Financial statements no dey for dis stock.';
+  String get statementsUnavailable =>
+      'Financial statements no dey for dis stock.';
 
   @override
   String get launchAtLogin => 'Start am when you log in';
@@ -569,7 +588,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get hotkeyLabel => 'Shortcut wey work everywhere';
 
   @override
-  String get hotkeyRecordHint => 'Click here, then press di new key combination';
+  String get hotkeyRecordHint =>
+      'Click here, then press di new key combination';
 
   @override
   String get hotkeyReset => 'Go back to default';
@@ -590,7 +610,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get removeFromFavorites => 'Comot am from favourites';
 
   @override
-  String get noFavorites => 'No favourite yet. Tap di star for any stock to add am.';
+  String get noFavorites =>
+      'No favourite yet. Tap di star for any stock to add am.';
 
   @override
   String get displayCurrency => 'Currency to show';
@@ -646,7 +667,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get restartNow => 'Restart';
 
   @override
-  String get updatesViaStore => 'Updates go dey come by demsef through di app store.';
+  String get updatesViaStore =>
+      'Updates go dey come by demsef through di app store.';
 
   @override
   String get updateCheckFailed => 'We no fit check for update.';
@@ -694,7 +716,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Your free trial don finish. Choose plan make you continue to dey analyse.';
+  String get trialExpired =>
+      'Your free trial don finish. Choose plan make you continue to dey analyse.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -733,7 +756,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get extraPacksTitle => 'You need more? Buy extra analysis';
 
   @override
-  String get extraPacksHint => 'Extra analysis no dey expire, and we go use dem afta your monthly allowance finish.';
+  String get extraPacksHint =>
+      'Extra analysis no dey expire, and we go use dem afta your monthly allowance finish.';
 
   @override
   String get buy => 'Buy';
@@ -765,7 +789,8 @@ class AppLocalizationsPcm extends AppLocalizations {
       'You no get any analysis remain for dis period. Upgrade your plan or buy extra analysis.';
 
   @override
-  String get errTrialExpired => 'Your free trial don finish. Choose plan make you continue.';
+  String get errTrialExpired =>
+      'Your free trial don finish. Choose plan make you continue.';
 
   @override
   String get errNoPlan => 'You need active plan for AI analysis.';
@@ -777,7 +802,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get usageTitle => 'How you don use am';
 
   @override
-  String get demoPurchaseNote => 'Demo billing: na pretend purchase for dis platform.';
+  String get demoPurchaseNote =>
+      'Demo billing: na pretend purchase for dis platform.';
 
   @override
   String get mostPopular => 'Pipo like am pass';
@@ -817,7 +843,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get aiDepthStandardDesc => 'Full report wey get every section.';
 
   @override
-  String get aiDepthDeepDesc => 'More web search, comparison wit similar companies and more details.';
+  String get aiDepthDeepDesc =>
+      'More web search, comparison wit similar companies and more details.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -845,16 +872,19 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get aiReaderExperienced => 'Sabi pesin';
 
   @override
-  String get aiReaderBeginnerDesc => 'Simple language; we go explain every technical word.';
+  String get aiReaderBeginnerDesc =>
+      'Simple language; we go explain every technical word.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Text wey pack well wit normal finance words.';
+  String get aiReaderExperiencedDesc =>
+      'Text wey pack well wit normal finance words.';
 
   @override
   String get aiCounterArgument => 'Di strongest argument against am';
 
   @override
-  String get aiCounterArgumentDesc => 'Di summary go always end wit di best case against im own conclusion.';
+  String get aiCounterArgumentDesc =>
+      'Di summary go always end wit di best case against im own conclusion.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -947,7 +977,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get upcomingEvents => 'Wetin dey come';
 
   @override
-  String get outlookChartNote => 'Na rough range dem be; di chances na just estimate, no be prediction.';
+  String get outlookChartNote =>
+      'Na rough range dem be; di chances na just estimate, no be prediction.';
 
   @override
   String get accountTitle => 'Account';
@@ -962,10 +993,12 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get notSignedIn => 'You never sign in';
 
   @override
-  String get accountBenefit => 'Sign in make your subscription work for all your devices.';
+  String get accountBenefit =>
+      'Sign in make your subscription work for all your devices.';
 
   @override
-  String get accountSyncedNote => 'Your subscription and di analysis wey remain na di same for every device.';
+  String get accountSyncedNote =>
+      'Your subscription and di analysis wey remain na di same for every device.';
 
   @override
   String get signInTitle => 'Sign in for WhatStock';
@@ -997,13 +1030,16 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get errInvalidEmail => 'Abeg put correct email address.';
 
   @override
-  String get errSignInFailed => 'Sign-in no work. Check your connection and try again.';
+  String get errSignInFailed =>
+      'Sign-in no work. Check your connection and try again.';
 
   @override
-  String get checkoutWaiting => 'Finish di payment for your browser. Di app go update by imsef when e don finish.';
+  String get checkoutWaiting =>
+      'Finish di payment for your browser. Di app go update by imsef when e don finish.';
 
   @override
-  String get paymentViaStripe => 'Safe payment for your browser through Stripe. Cancel anytime.';
+  String get paymentViaStripe =>
+      'Safe payment for your browser through Stripe. Cancel anytime.';
 
   @override
   String get paymentViaStore =>
@@ -1016,7 +1052,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get doubleOptionTitle => 'Press Option two times';
 
   @override
-  String get doubleOptionSubtitle => 'If you press Option key two times quick quick, e go still call WhatStock.';
+  String get doubleOptionSubtitle =>
+      'If you press Option key two times quick quick, e go still call WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1038,7 +1075,12 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years years', one: '$years year');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years years',
+      one: '$years year',
+    );
     return '$_temp0';
   }
 
@@ -1144,7 +1186,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get portfolioRemove => 'Comot';
 
   @override
-  String get portfolioExcluded => 'Stocks wey no get price or exchange rate no dey inside di totals.';
+  String get portfolioExcluded =>
+      'Stocks wey no get price or exchange rate no dey inside di totals.';
 
   @override
   String get priceAlerts => 'Price alerts';
@@ -1186,7 +1229,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'No price alert yet. Open one stock and tap di bell to set one.';
+  String get alertsEmpty =>
+      'No price alert yet. Open one stock and tap di bell to set one.';
 
   @override
   String get alertsNote =>
@@ -1279,7 +1323,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get accountDeleted => 'Your account don delete.';
 
   @override
-  String get errDeleteAccount => 'We no fit delete di account. Check your connection and try again.';
+  String get errDeleteAccount =>
+      'We no fit delete di account. Check your connection and try again.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1329,26 +1374,39 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get inviteInvalid => 'Dis invite code no correct.';
 
   @override
-  String get inviteExpired => 'Dis invite don expire. Ask di person wey invite you make e give you new code.';
+  String get inviteExpired =>
+      'Dis invite don expire. Ask di person wey invite you make e give you new code.';
 
   @override
-  String get inviteDeviceLimit => 'Dem don already use dis invite code for di maximum number of devices.';
+  String get inviteDeviceLimit =>
+      'Dem don already use dis invite code for di maximum number of devices.';
 
   @override
   String get previewConfidential => 'Secret preview';
 
   @override
-  String get errPreviewDailyLimit => 'Today analysis limit for dis preview don finish. Try again tomorrow.';
+  String get errPreviewDailyLimit =>
+      'Today analysis limit for dis preview don finish. Try again tomorrow.';
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count hours ago', one: '$count hour ago');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hours ago',
+      one: '$count hour ago',
+    );
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count days ago', one: '$count day ago');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days ago',
+      one: '$count day ago',
+    );
     return '$_temp0';
   }
 
@@ -1383,7 +1441,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'Tap one level wey AI estimate make you get alert when di price reach am.';
+  String get keyLevelAlertHint =>
+      'Tap one level wey AI estimate make you get alert when di price reach am.';
 
   @override
   String get shareAnalysisTitle => 'Share analysis';
@@ -1398,7 +1457,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get shareCardFooter => 'Na WhatStock make am';
 
   @override
-  String get shareCardDisclaimer => 'AI analysis · na example scenarios, no be forecast · e no be investment advice';
+  String get shareCardDisclaimer =>
+      'AI analysis · na example scenarios, no be forecast · e no be investment advice';
 
   @override
   String get referralTitle => 'Invite your padi dem';
@@ -1440,7 +1500,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Dis code no dey. Check am well and try again.';
+  String get referralErrUnknown =>
+      'Dis code no dey. Check am well and try again.';
 
   @override
   String get referralErrOwn => 'You no fit use your own code.';
@@ -1557,10 +1618,12 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get askSuggest3 => 'Explain am make e simple';
 
   @override
-  String get askMaxReached => 'Dat one na di last question for dis analysis. Make new analysis if you wan ask more.';
+  String get askMaxReached =>
+      'Dat one na di last question for dis analysis. Make new analysis if you wan ask more.';
 
   @override
-  String get errAskLimit => 'You don reach today limit for questions. Try again tomorrow.';
+  String get errAskLimit =>
+      'You don reach today limit for questions. Try again tomorrow.';
 
   @override
   String get eventTomorrow => 'Tumoro';
@@ -1656,7 +1719,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get notesTitle => 'My notes';
 
   @override
-  String get notesHint => 'Why you buy am, wetin you dey watch, wetin go make you sell am?';
+  String get notesHint =>
+      'Why you buy am, wetin you dey watch, wetin go make you sell am?';
 
   @override
   String get notesInfo =>
@@ -1706,7 +1770,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get syncInfo => 'Portfolio, favourites, price alerts and notes dey sync for all your devices.';
+  String get syncInfo =>
+      'Portfolio, favourites, price alerts and notes dey sync for all your devices.';
 
   @override
   String syncLast(String time) {
@@ -1723,7 +1788,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get alertEmailTitle => 'E-mail wen alert don trigger';
 
   @override
-  String get alertEmailOn => 'We dey check your alerts every few minutes and we go e-mail you, even wen di app close.';
+  String get alertEmailOn =>
+      'We dey check your alerts every few minutes and we go e-mail you, even wen di app close.';
 
   @override
   String get alertEmailSignIn =>
@@ -1845,7 +1911,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'How much di whole company worth for stock market: share price × number of shares.';
+  String get glossMarketCap =>
+      'How much di whole company worth for stock market: share price × number of shares.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1884,10 +1951,12 @@ class AppLocalizationsPcm extends AppLocalizations {
       'How di stock dey move with di market: 1 = like di market, 1.5 = about 50% bigger up and down, under 1 = e calm pass.';
 
   @override
-  String get glossRevenueTtm => 'All di sales for di last 12 months, before any cost.';
+  String get glossRevenueTtm =>
+      'All di sales for di last 12 months, before any cost.';
 
   @override
-  String get glossNetIncomeTtm => 'Di profit wey remain after all cost, interest and tax for di last 12 months.';
+  String get glossNetIncomeTtm =>
+      'Di profit wey remain after all cost, interest and tax for di last 12 months.';
 
   @override
   String get glossGrossMargin =>
@@ -1918,17 +1987,20 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Short-term assets ÷ bills wey dem must pay inside one year. Above 1 mean say di company fit pay im near-term bills.';
 
   @override
-  String get glossRevenueGrowth => 'How much sales grow compared to one year before.';
+  String get glossRevenueGrowth =>
+      'How much sales grow compared to one year before.';
 
   @override
-  String get glossEpsGrowth => 'How much profit for each share grow compared to one year before.';
+  String get glossEpsGrowth =>
+      'How much profit for each share grow compared to one year before.';
 
   @override
   String get glossDividendYield =>
       'Yearly dividend ÷ share price: di cash wey you go collect every year, as percentage of wetin you pay.';
 
   @override
-  String get glossDividendPerShare => 'Di dividend wey dem pay for one share for di last one year.';
+  String get glossDividendPerShare =>
+      'Di dividend wey dem pay for one share for di last one year.';
 
   @override
   String get glossPayoutRatio =>
@@ -2026,7 +2098,8 @@ class AppLocalizationsPcm extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'Reach or pass di EPS wey dem expect for $beats out of di last $total quarters',
+      other:
+          'Reach or pass di EPS wey dem expect for $beats out of di last $total quarters',
       one: 'Reach or pass di EPS wey dem expect for $beats out of 1 quarter',
     );
     return '$_temp0';
@@ -2143,13 +2216,23 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count buy', one: '1 buy');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count buy',
+      one: '1 buy',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count sell', one: '1 sell');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sell',
+      one: '1 sell',
+    );
     return '$_temp0';
   }
 
@@ -2169,7 +2252,8 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Wetin oga dem and directors buy and sell for open market for di last 90 days (SEC Form 4). Option exercise and share award no dey inside.';
 
   @override
-  String get insiderNone => 'No insider buy or sell for open market for di last 90 days.';
+  String get insiderNone =>
+      'No insider buy or sell for open market for di last 90 days.';
 
   @override
   String get analystTrend => 'How dia view take change, month by month';
@@ -2193,7 +2277,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get watchListAddTo => 'Add am to list';
 
   @override
-  String get watchListEmpty => 'No stock dey dis list yet. Tap di list button wey dey near any stock to add am.';
+  String get watchListEmpty =>
+      'No stock dey dis list yet. Tap di list button wey dey near any stock to add am.';
 
   @override
   String favoriteRemoved(String symbol) {
@@ -2211,7 +2296,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard => 'E don copy go clipboard – paste am anywhere wey you wan share am.';
+  String get sharedToClipboard =>
+      'E don copy go clipboard – paste am anywhere wey you wan share am.';
 
   @override
   String get glossaryNoMatch => 'No term match wetin you search.';
@@ -2229,6 +2315,22 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get accountDeletedElsewhere =>
+      'Dem don delete dis account for another device or for web, so we don comot im data from dis device too.';
+
+  @override
+  String get errAiUnavailable =>
+      'Di AI service no dey available now. Try again after some minutes.';
+
+  @override
+  String get errMarketUnavailable =>
+      'Market data no dey available now. Try again after some minutes.';
+
+  @override
+  String get purchaseUnavailable =>
+      'You no fit buy anytin now. Try again later.';
+
+  @override
   String get portfolioAskTitle => 'Questions about your portfolio';
 
   @override
@@ -2241,13 +2343,15 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get backupSave => 'Save backup';
 
   @override
-  String get backupSaveHint => 'Your favourites, lists, portfolio, alerts and notes for one file.';
+  String get backupSaveHint =>
+      'Your favourites, lists, portfolio, alerts and notes for one file.';
 
   @override
   String get backupRestore => 'Restore from backup';
 
   @override
-  String get backupRestoreHint => 'E go add wetin dey di file; nothing wey you get now go delete.';
+  String get backupRestoreHint =>
+      'E go add wetin dey di file; nothing wey you get now go delete.';
 
   @override
   String get backupRestored => 'Backup don restore.';
@@ -2345,7 +2449,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get portfolioExportRealized => 'Export di profit wey you don collect (CSV)';
+  String get portfolioExportRealized =>
+      'Export di profit wey you don collect (CSV)';
 
   @override
   String get portfolioAnnualReturn => 'Yearly return';
@@ -2366,7 +2471,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Portfolio alert';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'Notification when your whole portfolio move reach this much for one day.';
+  String get portfolioMoveAlertSubtitle =>
+      'Notification when your whole portfolio move reach this much for one day.';
 
   @override
   String get portfolioMoveAlertOff => 'Off';
@@ -2542,7 +2648,12 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count stocks', one: '$count stock');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count stocks',
+      one: '$count stock',
+    );
     return '$_temp0';
   }
 
@@ -2592,7 +2703,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get portfolioSampleTry => 'Try am with sample portfolio';
 
   @override
-  String get portfolioSampleBanner => 'Dis na sample portfolio. Add wetin you buy join am, or comot am.';
+  String get portfolioSampleBanner =>
+      'Dis na sample portfolio. Add wetin you buy join am, or comot am.';
 
   @override
   String get portfolioSampleRemove => 'Comot sample';
@@ -2647,10 +2759,12 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get lotNoteAdd => 'Add note';
 
   @override
-  String get lotNoteBuyHint => 'Why you dey buy? E go enter di stock notes, with di date.';
+  String get lotNoteBuyHint =>
+      'Why you dey buy? E go enter di stock notes, with di date.';
 
   @override
-  String get lotNoteSellHint => 'Why you dey sell? E go enter di stock notes, with di date.';
+  String get lotNoteSellHint =>
+      'Why you dey sell? E go enter di stock notes, with di date.';
 
   @override
   String get lotNoteBought => 'Bought';
@@ -2660,13 +2774,23 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months months', one: '$months month');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months months',
+      one: '$months month',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days days', one: '$days day');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days',
+      one: '$days day',
+    );
     return '$_temp0';
   }
 
@@ -2754,10 +2878,12 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Sign in with your e-mail make you fit use padi code.';
+  String get referralErrSignIn =>
+      'Sign in with your e-mail make you fit use padi code.';
 
   @override
-  String get referralErrFull => 'Dem don use dis code reach di maximum times wey e fit take.';
+  String get referralErrFull =>
+      'Dem don use dis code reach di maximum times wey e fit take.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2765,13 +2891,16 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated => 'Di analysis cut for middle before e finish. Abeg try again – e no use your allowance.';
+  String get errAiTruncated =>
+      'Di analysis cut for middle before e finish. Abeg try again – e no use your allowance.';
 
   @override
-  String get errImageUnsupported => 'We no fit read dis picture. Save am as JPEG or PNG and try again.';
+  String get errImageUnsupported =>
+      'We no fit read dis picture. Save am as JPEG or PNG and try again.';
 
   @override
-  String get errRateLimited => 'Too many request for short time. Abeg wait one minute and try again.';
+  String get errRateLimited =>
+      'Too many request for short time. Abeg wait one minute and try again.';
 
   @override
   String get watchListNameTaken => 'List wey get dis name don already dey.';
@@ -2787,7 +2916,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing => 'We no see any purchase wey you don make before to bring back.';
+  String get restoreNothing =>
+      'We no see any purchase wey you don make before to bring back.';
 
   @override
   String get manageSubscriptionElsewhere =>
@@ -2814,8 +2944,10 @@ class AppLocalizationsPcm extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count dividends for $currencies no get exchange rate, so dem no dey inside di totals.',
-      one: '1 dividend for $currencies no get exchange rate, so e no dey inside di totals.',
+      other:
+          '$count dividends for $currencies no get exchange rate, so dem no dey inside di totals.',
+      one:
+          '1 dividend for $currencies no get exchange rate, so e no dey inside di totals.',
     );
     return '$_temp0';
   }
@@ -2928,7 +3060,8 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Na AI make dis general information about how your portfolio take arrange. E no look your goals, your money matter or your tax situation, and e no be personal recommendation or investment advice.';
 
   @override
-  String get briefNotificationTitle => 'Na AI summarize am · Today with your stocks';
+  String get briefNotificationTitle =>
+      'Na AI summarize am · Today with your stocks';
 
   @override
   String get portfolioGoalSet => 'Put target';
@@ -3086,7 +3219,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get portfolioSplitRatio => 'Ratio (new : old)';
 
   @override
-  String get portfolioSplitRatioError => 'Put ratio like 10:1, or 1:10 for reverse split.';
+  String get portfolioSplitRatioError =>
+      'Put ratio like 10:1, or 1:10 for reverse split.';
 
   @override
   String get portfolioSplitDate => 'Date of di split';
@@ -3270,7 +3404,8 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get glossaryPageTitle => 'Glossary';
 
   @override
-  String get glossaryPageSubtitle => 'Simple explanation of every number wey di app dey show, from P/E to RSI';
+  String get glossaryPageSubtitle =>
+      'Simple explanation of every number wey di app dey show, from P/E to RSI';
 
   @override
   String get glossarySearchHint => 'Search di glossary';

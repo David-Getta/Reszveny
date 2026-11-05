@@ -896,5 +896,9 @@
   "glossaryNoMatch": "Gũtirĩ kiugo kĩhaana na ũrĩa ũracaria.",
   "cashInvalidAmount": "Andĩka mũigana wa 0 kana makĩria.",
   "portfolioImportNothing": "Gũtirĩ ũgũri kana ũendia ũngĩathomeka kuuma mandĩko-inĩ maya. Rora atĩ o mũhari ũhaana ta kĩonereria.",
-  "lotPriceFarFromQuote": "Thogora ũyũ ũraihanĩte mũno na wa ũmũthĩ ({price}). Ũthuthurie, kana ũige rĩngĩ angĩkorwo nĩ wa ma."
+  "lotPriceFarFromQuote": "Thogora ũyũ ũraihanĩte mũno na wa ũmũthĩ ({price}). Ũthuthurie, kana ũige rĩngĩ angĩkorwo nĩ wa ma.",
+  "accountDeletedElsewhere": "Akaunti ĩno nĩyeheririo kĩndũ-inĩ kĩngĩ kana web-inĩ, nĩ ũndũ ũcio ũhoro wayo nĩweherio kĩndũ-inĩ gĩkĩ o naguo.",
+  "errAiUnavailable": "Service ya AI ndĩrĩ ho rĩu. Geria rĩngĩ thuutha wa ndagĩka nini.",
+  "errMarketUnavailable": "Ũhoro wa thoko ndũrĩ ho rĩu. Geria rĩngĩ thuutha wa ndagĩka nini.",
+  "purchaseUnavailable": "Ũgũri ndũrĩ ho rĩu. Geria rĩngĩ thuutha."
 }

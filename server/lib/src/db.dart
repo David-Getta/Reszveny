@@ -231,6 +231,9 @@ class Store {
     _db.execute(
       'CREATE TABLE IF NOT EXISTS pending_stripe_deletions (customer_id TEXT PRIMARY KEY, created_at TEXT NOT NULL)',
     );
+    // A törölt fiókok tokenjeinek lenyomata (30 napig): a fiók többi eszköze így megtudja,
+    // hogy a fiókot törölték (nem csak lejárt a munkamenete), és a helyi adatait is törli.
+    _db.execute('CREATE TABLE IF NOT EXISTS deleted_sessions (token_hash TEXT PRIMARY KEY, deleted_at TEXT NOT NULL)');
     _rekeyLegacyFingerprints();
     _addSyncFlags();
     // A törölt sorok tartalma ne maradjon a fájlban (a felszabadult lapok nullázva); a
@@ -438,10 +441,19 @@ class Store {
   /// régi sorai és a régi használati napló (az admin oldal 30 napot mutat) törlődik.
   static const sessionIdle = Duration(days: 365), usageKept = Duration(days: 400);
 
+  /// Ennyi ideig ismeri fel a szerver egy törölt fiók tokenjét (a többi eszköz ezalatt
+  /// kapja meg, hogy a fiók törölve: `account_deleted`).
+  static const deletedSessionKept = Duration(days: 30);
+
+  /// Egy törölt fiók tokenje-e (lásd [deletedSessionKept]).
+  bool isDeletedSession(String token) =>
+      _db.select('SELECT 1 FROM deleted_sessions WHERE token_hash = ?', [hashToken(token)]).isNotEmpty;
+
   void purgeExpired() {
     final now = clock().toUtc();
     String ago(Duration d) => now.subtract(d).toIso8601String();
     _db.execute('DELETE FROM sessions WHERE COALESCE(last_used, created_at) < ?', [ago(sessionIdle)]);
+    _db.execute('DELETE FROM deleted_sessions WHERE deleted_at < ?', [ago(deletedSessionKept)]);
     _db.execute('DELETE FROM invite_usage WHERE created_at < ?', [ago(const Duration(days: 2))]);
     _db.execute('DELETE FROM usage_log WHERE created_at < ?', [ago(usageKept)]);
     // A rövid életű sorok (belépőkódok, korlát-naplók) új beszúrás nélkül is kikerülnek.
@@ -577,6 +589,17 @@ class Store {
     final email = emailOf(userId);
     _db.execute('BEGIN');
     try {
+      // A fiók minden tokenjének lenyomata megmarad egy ideig: a többi eszköz így tudja,
+      // hogy törlés történt, és a fiók adatait nálunk sem tartja meg.
+      final now = clock().toUtc().toIso8601String();
+      _db.execute(
+        'INSERT OR IGNORE INTO deleted_sessions (token_hash, deleted_at) SELECT token_hash, ? FROM sessions WHERE user_id = ?',
+        [now, userId],
+      );
+      _db.execute(
+        "INSERT OR IGNORE INTO deleted_sessions (token_hash, deleted_at) SELECT token_hash, ? FROM users WHERE id = ? AND token_hash NOT LIKE 'revoked:%'",
+        [now, userId],
+      );
       _db.execute('DELETE FROM sessions WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM entitlements WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM usage_log WHERE user_id = ?', [userId]);

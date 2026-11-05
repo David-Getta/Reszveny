@@ -13,7 +13,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fotografoni një aksion dhe mësoni gjithçka për të.';
+  String get homeTagline =>
+      'Fotografoni një aksion dhe mësoni gjithçka për të.';
 
   @override
   String get homeHint =>
@@ -318,7 +319,12 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count analistë', one: '1 analist');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count analistë',
+      one: '1 analist',
+    );
     return '$_temp0';
   }
 
@@ -350,7 +356,8 @@ class AppLocalizationsSq extends AppLocalizations {
       'Njohja e imazheve nuk është e disponueshme në këtë version. Shkruani simbolin manualisht.';
 
   @override
-  String get errRecognitionUnreachable => 'Shërbimi i njohjes nuk mund të arrihej. Kontrolloni lidhjen e internetit.';
+  String get errRecognitionUnreachable =>
+      'Shërbimi i njohjes nuk mund të arrihej. Kontrolloni lidhjen e internetit.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -358,19 +365,24 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Shërbimi i njohjes nuk mundi të përpunojë këtë imazh.';
+  String get errRecognitionRefused =>
+      'Shërbimi i njohjes nuk mundi të përpunojë këtë imazh.';
 
   @override
-  String get errRecognitionTruncated => 'Përgjigjja e njohjes u ndërpre. Ju lutemi provoni përsëri.';
+  String get errRecognitionTruncated =>
+      'Përgjigjja e njohjes u ndërpre. Ju lutemi provoni përsëri.';
 
   @override
-  String get errRecognitionBadResponse => 'Përgjigje e papritur nga shërbimi i njohjes.';
+  String get errRecognitionBadResponse =>
+      'Përgjigje e papritur nga shërbimi i njohjes.';
 
   @override
-  String get errRecognitionEmpty => 'Shërbimi i njohjes ktheu një përgjigje bosh.';
+  String get errRecognitionEmpty =>
+      'Shërbimi i njohjes ktheu një përgjigje bosh.';
 
   @override
-  String get errMissingFinnhubKey => 'Të dhënat e tregut nuk janë të disponueshme në këtë version.';
+  String get errMissingFinnhubKey =>
+      'Të dhënat e tregut nuk janë të disponueshme në këtë version.';
 
   @override
   String get errMarketUnreachable =>
@@ -386,7 +398,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Përgjigje e papritur nga shërbimi i të dhënave të tregut.';
+  String get errMarketBadResponse =>
+      'Përgjigje e papritur nga shërbimi i të dhënave të tregut.';
 
   @override
   String errNoQuote(String symbol) {
@@ -486,7 +499,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get aiRegenerate => 'Gjenero përsëri';
 
   @override
-  String get aiGenerating => 'Duke përgatitur analizën… kjo mund të zgjasë një ose dy minuta.';
+  String get aiGenerating =>
+      'Duke përgatitur analizën… kjo mund të zgjasë një ose dy minuta.';
 
   @override
   String get aiSources => 'Burimet';
@@ -501,10 +515,12 @@ class AppLocalizationsSq extends AppLocalizations {
       'Analizë e gjeneruar nga AI bazuar në të dhëna publike dhe lajme të fundit. Mund të përmbajë gabime ose të jetë e vjetruar dhe nuk përbën këshillë investimi.';
 
   @override
-  String get errAiNotConfigured => 'Veçoritë e AI-së nuk janë të disponueshme në këtë version.';
+  String get errAiNotConfigured =>
+      'Veçoritë e AI-së nuk janë të disponueshme në këtë version.';
 
   @override
-  String get errAiUnreachable => 'Shërbimi i AI nuk mund të arrihej. Kontrolloni lidhjen e internetit.';
+  String get errAiUnreachable =>
+      'Shërbimi i AI nuk mund të arrihej. Kontrolloni lidhjen e internetit.';
 
   @override
   String errAiHttp(String status) {
@@ -536,7 +552,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get rangeFiveYears => '5V';
 
   @override
-  String get chartUnavailable => 'Historiku i çmimeve nuk është i disponueshëm nga burimi aktual i të dhënave.';
+  String get chartUnavailable =>
+      'Historiku i çmimeve nuk është i disponueshëm nga burimi aktual i të dhënave.';
 
   @override
   String get sectionStatements => 'Pasqyrat financiare (vjetore)';
@@ -560,10 +577,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get labelEquity => 'Kapitali i aksionarëve';
 
   @override
-  String get labelOperatingCashFlow => 'Fluksi i parasë nga veprimtaria operative';
+  String get labelOperatingCashFlow =>
+      'Fluksi i parasë nga veprimtaria operative';
 
   @override
-  String get statementsUnavailable => 'Pasqyrat financiare të raportuara nuk janë të disponueshme për këtë aksion.';
+  String get statementsUnavailable =>
+      'Pasqyrat financiare të raportuara nuk janë të disponueshme për këtë aksion.';
 
   @override
   String get launchAtLogin => 'Nis gjatë hyrjes në sistem';
@@ -572,7 +591,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get hotkeyLabel => 'Shkurtore globale';
 
   @override
-  String get hotkeyRecordHint => 'Klikoni këtu, pastaj shtypni kombinimin e ri të tasteve';
+  String get hotkeyRecordHint =>
+      'Klikoni këtu, pastaj shtypni kombinimin e ri të tasteve';
 
   @override
   String get hotkeyReset => 'Rikthe parazgjedhjen';
@@ -593,7 +613,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get removeFromFavorites => 'Hiq nga të preferuarat';
 
   @override
-  String get noFavorites => 'Ende nuk ka të preferuara. Prekni yllin e një aksioni për ta shtuar.';
+  String get noFavorites =>
+      'Ende nuk ka të preferuara. Prekni yllin e një aksioni për ta shtuar.';
 
   @override
   String get displayCurrency => 'Monedha e shfaqjes';
@@ -640,7 +661,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get updateDownloading => 'Përditësimi po shkarkohet në sfond…';
 
   @override
-  String get updateDownloaded => 'Përditësimi është gati. Rinisni aplikacionin për ta instaluar.';
+  String get updateDownloaded =>
+      'Përditësimi është gati. Rinisni aplikacionin për ta instaluar.';
 
   @override
   String get updateNow => 'Përditëso';
@@ -649,10 +671,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get restartNow => 'Rinis';
 
   @override
-  String get updatesViaStore => 'Përditësimet vijnë automatikisht përmes dyqanit të aplikacioneve.';
+  String get updatesViaStore =>
+      'Përditësimet vijnë automatikisht përmes dyqanit të aplikacioneve.';
 
   @override
-  String get updateCheckFailed => 'Nuk u arrit të kontrollohej për përditësime.';
+  String get updateCheckFailed =>
+      'Nuk u arrit të kontrollohej për përditësime.';
 
   @override
   String get subscription => 'Abonimi';
@@ -697,7 +721,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Prova juaj falas ka përfunduar. Zgjidhni një plan për të vazhduar analizat.';
+  String get trialExpired =>
+      'Prova juaj falas ka përfunduar. Zgjidhni një plan për të vazhduar analizat.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -733,10 +758,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get perMonth => '/ muaj';
 
   @override
-  String get extraPacksTitle => 'Keni nevojë për më shumë? Blini analiza shtesë';
+  String get extraPacksTitle =>
+      'Keni nevojë për më shumë? Blini analiza shtesë';
 
   @override
-  String get extraPacksHint => 'Analizat shtesë nuk skadojnë kurrë dhe përdoren pas kuotës suaj mujore.';
+  String get extraPacksHint =>
+      'Analizat shtesë nuk skadojnë kurrë dhe përdoren pas kuotës suaj mujore.';
 
   @override
   String get buy => 'Bli';
@@ -764,10 +791,12 @@ class AppLocalizationsSq extends AppLocalizations {
       'Blerjet nuk janë ende të disponueshme në këtë platformë. Abonohuni në telefonin ose Mac-un tuaj; plani juaj do të funksionojë në çdo pajisje.';
 
   @override
-  String get errQuotaExceeded => 'Nuk keni më analiza për këtë periudhë. Përmirësoni planin ose blini analiza shtesë.';
+  String get errQuotaExceeded =>
+      'Nuk keni më analiza për këtë periudhë. Përmirësoni planin ose blini analiza shtesë.';
 
   @override
-  String get errTrialExpired => 'Prova juaj falas ka përfunduar. Zgjidhni një plan për të vazhduar.';
+  String get errTrialExpired =>
+      'Prova juaj falas ka përfunduar. Zgjidhni një plan për të vazhduar.';
 
   @override
   String get errNoPlan => 'Për analizën me AI nevojitet një plan aktiv.';
@@ -779,7 +808,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get usageTitle => 'Përdorimi';
 
   @override
-  String get demoPurchaseNote => 'Faturim demo: blerjet simulohen në këtë platformë.';
+  String get demoPurchaseNote =>
+      'Faturim demo: blerjet simulohen në këtë platformë.';
 
   @override
   String get mostPopular => 'Më i popullarizuari';
@@ -819,7 +849,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get aiDepthStandardDesc => 'Raport i plotë me të gjitha seksionet.';
 
   @override
-  String get aiDepthDeepDesc => 'Më shumë kërkime në ueb, krahasim me konkurrentët dhe detaje më të thella.';
+  String get aiDepthDeepDesc =>
+      'Më shumë kërkime në ueb, krahasim me konkurrentët dhe detaje më të thella.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -847,10 +878,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get aiReaderExperienced => 'Me përvojë';
 
   @override
-  String get aiReaderBeginnerDesc => 'Gjuhë e thjeshtë; çdo term teknik shpjegohet.';
+  String get aiReaderBeginnerDesc =>
+      'Gjuhë e thjeshtë; çdo term teknik shpjegohet.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Tekst më i ngjeshur me terminologji standarde financiare.';
+  String get aiReaderExperiencedDesc =>
+      'Tekst më i ngjeshur me terminologji standarde financiare.';
 
   @override
   String get aiCounterArgument => 'Kundërargumenti më i fortë';
@@ -950,7 +983,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get upcomingEvents => 'Ngjarjet e ardhshme';
 
   @override
-  String get outlookChartNote => 'Intervale orientuese; probabilitetet janë vlerësime të përafërta, jo parashikime.';
+  String get outlookChartNote =>
+      'Intervale orientuese; probabilitetet janë vlerësime të përafërta, jo parashikime.';
 
   @override
   String get accountTitle => 'Llogaria';
@@ -965,10 +999,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get notSignedIn => 'Nuk keni hyrë';
 
   @override
-  String get accountBenefit => 'Hyni që abonimi juaj të funksionojë në të gjitha pajisjet tuaja.';
+  String get accountBenefit =>
+      'Hyni që abonimi juaj të funksionojë në të gjitha pajisjet tuaja.';
 
   @override
-  String get accountSyncedNote => 'Abonimi juaj dhe analizat e mbetura janë të njëjta në çdo pajisje.';
+  String get accountSyncedNote =>
+      'Abonimi juaj dhe analizat e mbetura janë të njëjta në çdo pajisje.';
 
   @override
   String get signInTitle => 'Hyni në WhatStock';
@@ -997,17 +1033,20 @@ class AppLocalizationsSq extends AppLocalizations {
   String get errInvalidCode => 'Kodi është i gabuar ose ka skaduar.';
 
   @override
-  String get errInvalidEmail => 'Ju lutemi vendosni një adresë email-i të vlefshme.';
+  String get errInvalidEmail =>
+      'Ju lutemi vendosni një adresë email-i të vlefshme.';
 
   @override
-  String get errSignInFailed => 'Hyrja dështoi. Kontrolloni lidhjen dhe provoni përsëri.';
+  String get errSignInFailed =>
+      'Hyrja dështoi. Kontrolloni lidhjen dhe provoni përsëri.';
 
   @override
   String get checkoutWaiting =>
       'Përfundoni pagesën në shfletues. Aplikacioni përditësohet automatikisht kur të mbarojë.';
 
   @override
-  String get paymentViaStripe => 'Pagesë e sigurt në shfletues përmes Stripe. Anuloni në çdo kohë.';
+  String get paymentViaStripe =>
+      'Pagesë e sigurt në shfletues përmes Stripe. Anuloni në çdo kohë.';
 
   @override
   String get paymentViaStore =>
@@ -1020,7 +1059,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get doubleOptionTitle => 'Shtypje e dyfishtë e Option';
 
   @override
-  String get doubleOptionSubtitle => 'Edhe shtypja e shpejtë dy herë e tastit Option hap WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Edhe shtypja e shpejtë dy herë e tastit Option hap WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1042,7 +1082,12 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years vjet', one: '1 vit');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years vjet',
+      one: '1 vit',
+    );
     return '$_temp0';
   }
 
@@ -1148,7 +1193,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get portfolioRemove => 'Hiq';
 
   @override
-  String get portfolioExcluded => 'Pozicionet pa çmim ose kurs këmbimi nuk përfshihen në totale.';
+  String get portfolioExcluded =>
+      'Pozicionet pa çmim ose kurs këmbimi nuk përfshihen në totale.';
 
   @override
   String get priceAlerts => 'Alarmet e çmimit';
@@ -1190,7 +1236,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Ende nuk ka alarme. Hapni një aksion dhe prekni zilen.';
+  String get alertsEmpty =>
+      'Ende nuk ka alarme. Hapni një aksion dhe prekni zilen.';
 
   @override
   String get alertsNote =>
@@ -1283,7 +1330,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get accountDeleted => 'Llogaria juaj u fshi.';
 
   @override
-  String get errDeleteAccount => 'Llogaria nuk u fshi dot. Kontrolloni lidhjen dhe provoni sërish.';
+  String get errDeleteAccount =>
+      'Llogaria nuk u fshi dot. Kontrolloni lidhjen dhe provoni sërish.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1333,10 +1381,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get inviteInvalid => 'Ky kod ftese nuk është i vlefshëm.';
 
   @override
-  String get inviteExpired => 'Kjo ftesë ka skaduar. Kërkojini personit që ju ftoi një kod të ri.';
+  String get inviteExpired =>
+      'Kjo ftesë ka skaduar. Kërkojini personit që ju ftoi një kod të ri.';
 
   @override
-  String get inviteDeviceLimit => 'Ky kod ftese përdoret tashmë në numrin maksimal të pajisjeve.';
+  String get inviteDeviceLimit =>
+      'Ky kod ftese përdoret tashmë në numrin maksimal të pajisjeve.';
 
   @override
   String get previewConfidential => 'Pamje paraprake konfidenciale';
@@ -1347,13 +1397,23 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'para $count orësh', one: 'para 1 ore');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'para $count orësh',
+      one: 'para 1 ore',
+    );
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'para $count ditësh', one: 'para 1 dite');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'para $count ditësh',
+      one: 'para 1 dite',
+    );
     return '$_temp0';
   }
 
@@ -1388,7 +1448,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'Prekni një nivel të vlerësuar nga AI për të marrë alarm kur çmimi ta arrijë.';
+  String get keyLevelAlertHint =>
+      'Prekni një nivel të vlerësuar nga AI për të marrë alarm kur çmimi ta arrijë.';
 
   @override
   String get shareAnalysisTitle => 'Ndaj analizën';
@@ -1403,7 +1464,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get shareCardFooter => 'Krijuar me WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Analiza me AI · skenarë ilustrues, jo parashikime · nuk është këshillë investimi';
+  String get shareCardDisclaimer =>
+      'Analiza me AI · skenarë ilustrues, jo parashikime · nuk është këshillë investimi';
 
   @override
   String get referralTitle => 'Fto miqtë';
@@ -1445,7 +1507,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Ky kod nuk ekziston. Kontrolloje dhe provo përsëri.';
+  String get referralErrUnknown =>
+      'Ky kod nuk ekziston. Kontrolloje dhe provo përsëri.';
 
   @override
   String get referralErrOwn => 'Nuk mund të aktivizosh kodin tënd.';
@@ -1566,14 +1629,20 @@ class AppLocalizationsSq extends AppLocalizations {
       'Kjo ishte pyetja e fundit për këtë analizë. Krijoni një analizë të re për të bërë më shumë pyetje.';
 
   @override
-  String get errAskLimit => 'Keni arritur kufirin e sotëm të pyetjeve. Provoni përsëri nesër.';
+  String get errAskLimit =>
+      'Keni arritur kufirin e sotëm të pyetjeve. Provoni përsëri nesër.';
 
   @override
   String get eventTomorrow => 'Nesër';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'pas $days ditësh', one: 'pas 1 dite');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'pas $days ditësh',
+      one: 'pas 1 dite',
+    );
     return '$_temp0';
   }
 
@@ -1657,7 +1726,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get notesTitle => 'Shënimet e mia';
 
   @override
-  String get notesHint => 'Pse e bletë, çfarë po ndiqni, çfarë do t’ju bënte ta shisnit?';
+  String get notesHint =>
+      'Pse e bletë, çfarë po ndiqni, çfarë do t’ju bënte ta shisnit?';
 
   @override
   String get notesInfo =>
@@ -1719,7 +1789,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get syncNow => 'Sinkronizo tani';
 
   @override
-  String get syncFailed => 'Sinkronizimi dështoi. Do të provohet përsëri automatikisht.';
+  String get syncFailed =>
+      'Sinkronizimi dështoi. Do të provohet përsëri automatikisht.';
 
   @override
   String get alertEmailTitle => 'Email kur aktivizohet një alarm';
@@ -1848,7 +1919,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'Sa vlen e gjithë kompania në bursë: çmimi i aksionit × numri i aksioneve.';
+  String get glossMarketCap =>
+      'Sa vlen e gjithë kompania në bursë: çmimi i aksionit × numri i aksioneve.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1887,7 +1959,8 @@ class AppLocalizationsSq extends AppLocalizations {
       'Sa priret aksioni të lëvizë bashkë me tregun: 1 = si tregu, 1,5 = luhatje rreth 50% më të mëdha, nën 1 = më i qetë.';
 
   @override
-  String get glossRevenueTtm => 'Shitjet totale të 12 muajve të fundit, para çdo kostoje.';
+  String get glossRevenueTtm =>
+      'Shitjet totale të 12 muajve të fundit, para çdo kostoje.';
 
   @override
   String get glossNetIncomeTtm =>
@@ -1922,17 +1995,20 @@ class AppLocalizationsSq extends AppLocalizations {
       'Aktivet afatshkurtra ÷ detyrimet që skadojnë brenda një viti. Mbi 1 do të thotë se kompania mund të mbulojë detyrimet e afërta.';
 
   @override
-  String get glossRevenueGrowth => 'Sa janë rritur të ardhurat krahasuar me një vit më parë.';
+  String get glossRevenueGrowth =>
+      'Sa janë rritur të ardhurat krahasuar me një vit më parë.';
 
   @override
-  String get glossEpsGrowth => 'Sa është rritur fitimi për aksion krahasuar me një vit më parë.';
+  String get glossEpsGrowth =>
+      'Sa është rritur fitimi për aksion krahasuar me një vit më parë.';
 
   @override
   String get glossDividendYield =>
       'Dividendi vjetor ÷ çmimi i aksionit: të ardhurat në para që do të merrnit çdo vit, si përqindje e shumës që paguani.';
 
   @override
-  String get glossDividendPerShare => 'Dividendi i paguar për një aksion gjatë vitit të fundit.';
+  String get glossDividendPerShare =>
+      'Dividendi i paguar për një aksion gjatë vitit të fundit.';
 
   @override
   String get glossPayoutRatio =>
@@ -2030,7 +2106,8 @@ class AppLocalizationsSq extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'Në nivelin ose mbi EPS-në e pritur në $beats nga $total tremujorët e fundit',
+      other:
+          'Në nivelin ose mbi EPS-në e pritur në $beats nga $total tremujorët e fundit',
       one: 'Në nivelin ose mbi EPS-në e pritur në $beats nga 1 tremujor',
     );
     return '$_temp0';
@@ -2147,13 +2224,23 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count blerje', one: '1 blerje');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count blerje',
+      one: '1 blerje',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count shitje', one: '1 shitje');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count shitje',
+      one: '1 shitje',
+    );
     return '$_temp0';
   }
 
@@ -2173,7 +2260,8 @@ class AppLocalizationsSq extends AppLocalizations {
       'Blerje dhe shitje në tregun e hapur nga drejtuesit dhe anëtarët e bordit në 90 ditët e fundit (SEC Form 4). Ushtrimi i opsioneve dhe aksionet e dhuruara nuk llogariten.';
 
   @override
-  String get insiderNone => 'Asnjë blerje apo shitje e të brendshmëve në tregun e hapur në 90 ditët e fundit.';
+  String get insiderNone =>
+      'Asnjë blerje apo shitje e të brendshmëve në tregun e hapur në 90 ditët e fundit.';
 
   @override
   String get analystTrend => 'Si ndryshuan opinionet muaj pas muaji';
@@ -2216,7 +2304,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard => 'U kopjua në kujtesën e përkohshme – ngjiteni aty ku doni ta ndani.';
+  String get sharedToClipboard =>
+      'U kopjua në kujtesën e përkohshme – ngjiteni aty ku doni ta ndani.';
 
   @override
   String get glossaryNoMatch => 'Asnjë term nuk përputhet me kërkimin tuaj.';
@@ -2234,6 +2323,22 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get accountDeletedElsewhere =>
+      'Kjo llogari u fshi në një pajisje tjetër ose në ueb, ndaj të dhënat e saj u hoqën edhe nga kjo pajisje.';
+
+  @override
+  String get errAiUnavailable =>
+      'Shërbimi i AI nuk është i disponueshëm për momentin. Provoni përsëri pas pak minutash.';
+
+  @override
+  String get errMarketUnavailable =>
+      'Të dhënat e tregut nuk janë të disponueshme për momentin. Provoni përsëri pas pak minutash.';
+
+  @override
+  String get purchaseUnavailable =>
+      'Blerjet nuk janë të disponueshme për momentin. Provoni përsëri më vonë.';
+
+  @override
   String get portfolioAskTitle => 'Pyetje për portofolin tuaj';
 
   @override
@@ -2246,13 +2351,15 @@ class AppLocalizationsSq extends AppLocalizations {
   String get backupSave => 'Ruaj një kopje rezervë';
 
   @override
-  String get backupSaveHint => 'Të preferuarat, listat, portofoli, alarmet dhe shënimet tuaja në një skedar.';
+  String get backupSaveHint =>
+      'Të preferuarat, listat, portofoli, alarmet dhe shënimet tuaja në një skedar.';
 
   @override
   String get backupRestore => 'Rikthe nga kopja rezervë';
 
   @override
-  String get backupRestoreHint => 'Shton atë që është në skedar; asgjë nga ajo që keni tani nuk fshihet.';
+  String get backupRestoreHint =>
+      'Shton atë që është në skedar; asgjë nga ajo që keni tani nuk fshihet.';
 
   @override
   String get backupRestored => 'Kopja rezervë u rikthye.';
@@ -2371,7 +2478,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Sinjalizim për portofolin';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'Një njoftim kur i gjithë portofoli yt lëviz kaq shumë brenda një dite.';
+  String get portfolioMoveAlertSubtitle =>
+      'Një njoftim kur i gjithë portofoli yt lëviz kaq shumë brenda një dite.';
 
   @override
   String get portfolioMoveAlertOff => 'Joaktiv';
@@ -2547,7 +2655,12 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count pozicione', one: '$count pozicion');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozicione',
+      one: '$count pozicion',
+    );
     return '$_temp0';
   }
 
@@ -2597,13 +2710,15 @@ class AppLocalizationsSq extends AppLocalizations {
   String get portfolioSampleTry => 'Provo me një portofol shembull';
 
   @override
-  String get portfolioSampleBanner => 'Ky është një portofol shembull. Shtoni pranë tij blerjet tuaja ose hiqeni.';
+  String get portfolioSampleBanner =>
+      'Ky është një portofol shembull. Shtoni pranë tij blerjet tuaja ose hiqeni.';
 
   @override
   String get portfolioSampleRemove => 'Hiq shembullin';
 
   @override
-  String get portfolioStopsAll => 'Sinjalizim për rënie nga maja për të gjitha pozicionet';
+  String get portfolioStopsAll =>
+      'Sinjalizim për rënie nga maja për të gjitha pozicionet';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2652,10 +2767,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get lotNoteAdd => 'Shto një shënim';
 
   @override
-  String get lotNoteBuyHint => 'Pse po blini? Shtohet te shënimet e aksionit, me datën.';
+  String get lotNoteBuyHint =>
+      'Pse po blini? Shtohet te shënimet e aksionit, me datën.';
 
   @override
-  String get lotNoteSellHint => 'Pse po shitni? Shtohet te shënimet e aksionit, me datën.';
+  String get lotNoteSellHint =>
+      'Pse po shitni? Shtohet te shënimet e aksionit, me datën.';
 
   @override
   String get lotNoteBought => 'Blerë';
@@ -2665,13 +2782,23 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months muaj', one: '$months muaj');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months muaj',
+      one: '$months muaj',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days ditë', one: '$days ditë');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ditë',
+      one: '$days ditë',
+    );
     return '$_temp0';
   }
 
@@ -2759,10 +2886,12 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Hyr me email-in tënd për të aktivizuar kodin e një miku.';
+  String get referralErrSignIn =>
+      'Hyr me email-in tënd për të aktivizuar kodin e një miku.';
 
   @override
-  String get referralErrFull => 'Ky kod është aktivizuar tashmë numrin maksimal të herëve.';
+  String get referralErrFull =>
+      'Ky kod është aktivizuar tashmë numrin maksimal të herëve.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2774,7 +2903,8 @@ class AppLocalizationsSq extends AppLocalizations {
       'Analiza u ndërpre para se të përfundonte. Ju lutemi provoni përsëri – nuk u zbrit nga kuota juaj.';
 
   @override
-  String get errImageUnsupported => 'Ky imazh nuk mund të lexohet. Ruajeni si JPEG ose PNG dhe provoni përsëri.';
+  String get errImageUnsupported =>
+      'Ky imazh nuk mund të lexohet. Ruajeni si JPEG ose PNG dhe provoni përsëri.';
 
   @override
   String get errRateLimited =>
@@ -2794,14 +2924,16 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing => 'Nuk u gjetën blerje të mëparshme për t’u rikthyer.';
+  String get restoreNothing =>
+      'Nuk u gjetën blerje të mëparshme për t’u rikthyer.';
 
   @override
   String get manageSubscriptionElsewhere =>
       'Këtu nuk ka abonim për t’u menaxhuar. Një abonim i blerë në App Store ose Google Play menaxhohet te cilësimet e dyqanit.';
 
   @override
-  String get backupFailed => 'Kopja rezervë nuk mund të ruhej. Ju lutemi provoni përsëri.';
+  String get backupFailed =>
+      'Kopja rezervë nuk mund të ruhej. Ju lutemi provoni përsëri.';
 
   @override
   String get syncTooLarge =>
@@ -2824,7 +2956,12 @@ class AppLocalizationsSq extends AppLocalizations {
       other: '$count dividendë në $currencies nuk kanë',
       one: '1 dividend në $currencies nuk ka',
     );
-    String _temp1 = intl.Intl.pluralLogic(count, locale: localeName, other: 'nuk përfshihen', one: 'nuk përfshihet');
+    String _temp1 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'nuk përfshihen',
+      one: 'nuk përfshihet',
+    );
     return '$_temp0 kurs këmbimi dhe $_temp1 në totale.';
   }
 
@@ -2936,7 +3073,8 @@ class AppLocalizationsSq extends AppLocalizations {
       'Informacion i përgjithshëm i gjeneruar nga AI për përbërjen e portofolit tuaj. Nuk merr parasysh objektivat, financat ose situatën tuaj tatimore dhe nuk përbën rekomandim personal ose këshillë investimi.';
 
   @override
-  String get briefNotificationTitle => 'Përmbledhje me AI · Sot me aksionet tuaja';
+  String get briefNotificationTitle =>
+      'Përmbledhje me AI · Sot me aksionet tuaja';
 
   @override
   String get portfolioGoalSet => 'Cakto një objektiv';
@@ -3019,7 +3157,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get compareNextReport => 'Raporti i radhës';
 
   @override
-  String get resolvingDescription => 'Duke përcaktuar cilin aksion keni parasysh…';
+  String get resolvingDescription =>
+      'Duke përcaktuar cilin aksion keni parasysh…';
 
   @override
   String get instrumentTitle => 'Rreth këtij instrumenti';
@@ -3094,7 +3233,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get portfolioSplitRatio => 'Raporti (të reja : të vjetra)';
 
   @override
-  String get portfolioSplitRatioError => 'Vendosni një raport si 10:1, ose 1:10 për një ndarje të kundërt.';
+  String get portfolioSplitRatioError =>
+      'Vendosni një raport si 10:1, ose 1:10 për një ndarje të kundërt.';
 
   @override
   String get portfolioSplitDate => 'Data e ndarjes';
@@ -3278,7 +3418,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get glossaryPageTitle => 'Fjalorth';
 
   @override
-  String get glossaryPageSubtitle => 'Shpjegime të thjeshta për çdo shifër që tregon aplikacioni, nga P/E deri te RSI';
+  String get glossaryPageSubtitle =>
+      'Shpjegime të thjeshta për çdo shifër që tregon aplikacioni, nga P/E deri te RSI';
 
   @override
   String get glossarySearchHint => 'Kërko në fjalorth';

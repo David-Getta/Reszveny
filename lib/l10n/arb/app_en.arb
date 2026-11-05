@@ -1827,6 +1827,22 @@
   },
   "portfolioImportNothing": "No transactions could be read from this text. Check that each line looks like the example.",
   "lotPriceFarFromQuote": "This is far from today’s price ({price}). Check it, or save again if it is right.",
+  "accountDeletedElsewhere": "This account was deleted on another device or on the web, so its data was removed from this device too.",
+  "errAiUnavailable": "The AI service is not available right now. Try again in a few minutes.",
+  "@errAiUnavailable": {
+    "description": "Error when our server reports the AI provider is temporarily down (HTTP 502/503/504). Not the user's connection; nothing was charged."
+  },
+  "errMarketUnavailable": "Market data is not available right now. Try again in a few minutes.",
+  "purchaseUnavailable": "Purchases are not available right now. Try again later.",
+  "@purchaseUnavailable": {
+    "description": "Paywall message when the server has no payment provider configured or it is temporarily unavailable (HTTP 503 billing_unavailable). Nothing was charged."
+  },
+  "@errMarketUnavailable": {
+    "description": "Error when our server reports the market data provider is temporarily down (HTTP 502/503/504). Not the user's connection."
+  },
+  "@accountDeletedElsewhere": {
+    "description": "Snackbar after the server reports that the signed-in account was deleted elsewhere; the device signed out and removed that account's local data (portfolio, alerts, lists, notes)."
+  },
   "@lotPriceFarFromQuote": {
     "description": "Field error in the buy/sell dialog when the entered price is more than 10× above or below today's price (likely a typo). Saving again accepts it. price is today's price with currency.",
     "placeholders": {"price": {"type": "String"}}

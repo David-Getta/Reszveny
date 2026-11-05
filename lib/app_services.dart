@@ -193,7 +193,9 @@ class AppServices {
     };
     final b0 = backend;
     account = b0 == null ? null : AccountController(backend: b0, entitlements: entitlements, storedEmail: accountEmail);
-    if (account case final acc?) b0?.onSessionLost = () => unawaited(acc.sessionLost());
+    if (account case final acc?) {
+      b0?.onSessionLost = ({required accountDeleted}) => unawaited(_sessionLost(acc, accountDeleted: accountDeleted));
+    }
     // Fizetés, mint a Claude-nál: telefonon a platform boltja (App Store /
     // Play, demó tartalékkal, amíg nincs felvett termék), asztali gépen és
     // weben böngészős fizetés a fiókhoz (Stripe), backend nélkül demó bolt.
@@ -462,6 +464,23 @@ class AppServices {
     await _wipeLocalData();
     await sync?.forgetAccount();
     return true;
+  }
+
+  /// Nő, ha a belépett fiókot egy másik eszközön (vagy a weboldalon) törölték, és ezért a
+  /// fiók adatai erről a készülékről is lekerültek: a keret ezt egy üzenetben elmondja.
+  final ValueNotifier<int> accountDeletedElsewhere = ValueNotifier(0);
+
+  /// A szerver már nem ismeri a belépést. Ha a fiókot törölték, az adatai (portfólió,
+  /// riasztások, listák, jegyzetek) erről a készülékről is törlődnek – különben itt
+  /// maradnának, és egy újabb belépéskor feltöltődnének az új fiókba. Lejárt munkamenetnél
+  /// (a fiók megvan) maradnak: belépéskor összefésülődnek a fiókéval.
+  Future<void> _sessionLost(AccountController acc, {required bool accountDeleted}) async {
+    final wasSignedIn = acc.isSignedIn;
+    await acc.sessionLost();
+    if (!accountDeleted || !wasSignedIn) return;
+    await sync?.forgetAccount();
+    await _wipeLocalData();
+    accountDeletedElsewhere.value++;
   }
 
   Future<void> _wipeLocalData() async {

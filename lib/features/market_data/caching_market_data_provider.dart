@@ -94,6 +94,7 @@ class CachingMarketDataProvider extends MarketDataProvider {
   static bool _isOffline(Object e) => switch (e) {
     MarketDataException(:final code) =>
       code == AppErrorCode.marketUnreachable ||
+          code == AppErrorCode.marketUnavailable ||
           code == AppErrorCode.marketHttp ||
           code == AppErrorCode.marketRateLimited,
     _ => true,
