@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.309)
+# Változásjegyzék (0.2.130 → 0.2.310)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,13 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Memória és webes fülváltás
+
+- **0.2.310**: egy hetekig futó (tálcás) asztali appban sem gyűlnek korlátlanul a memóriában a megnyitott
+  elemzések (legfeljebb 50, a képernyőn lévők és a készülők maradnak) és a kérdés-válasz beszélgetések
+  (legfeljebb 30). Weben a lapváltás nem olvassa újra és nem veti össze minden alkalommal az összes tárolót: egy
+  mentési sorszámból látja, volt-e közben mentés egy másik lapon (5 percenként biztonsági teljes összevetéssel).
 
 ## Mentés csak változáskor
 

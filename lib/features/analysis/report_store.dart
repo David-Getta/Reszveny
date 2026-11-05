@@ -105,6 +105,23 @@ class ReportStore extends ChangeNotifier {
 
   StockReport? report(String symbol) => _reports[symbol];
 
+  /// Memóriában is legfeljebb ennyi elemzés (egy hetekig futó asztali appban se gyűljön
+  /// korlátlanul); a legrégebben betöltöttek mennek, a képernyőn lévők és a készülők maradnak.
+  static const maxInMemory = maxSaved;
+
+  void _put(String symbol, StockReport r) {
+    _reports
+      ..remove(symbol)
+      ..[symbol] = r;
+    if (_reports.length <= maxInMemory) return;
+    for (final old in _reports.keys.toList()) {
+      if (_reports.length <= maxInMemory) break;
+      if (old == symbol || isOnScreen(old) || _loading.contains(old)) continue;
+      _reports.remove(old);
+      _previous.remove(old);
+    }
+  }
+
   /// Az eggyel korábbi elemzés (ha a mostani újraelemzéssel készült).
   StockReport? previous(String symbol) => _previous[symbol];
 
@@ -256,7 +273,7 @@ class ReportStore extends ChangeNotifier {
       final r = StockReport.fromJson(jsonDecode(raw) as Map<String, dynamic>);
       final sameLanguage = language == null || r.language == null || r.language == language;
       if (!sameLanguage) return null;
-      _reports[symbol] = r;
+      _put(symbol, r);
       final prev = prefs.getString('$_prevPrefix$symbol');
       if (prev != null) {
         try {
@@ -359,7 +376,7 @@ class ReportStore extends ChangeNotifier {
       } else {
         _previous.remove(symbol);
       }
-      _reports[symbol] = r;
+      _put(symbol, r);
       _keptStale.remove(symbol);
       onGenerated?.call(r);
       completed.value = r;

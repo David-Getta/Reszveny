@@ -42,6 +42,7 @@ class AnalysisChat extends ChangeNotifier {
   static const portfolioSymbol = 'PORTFOLIO';
 
   final Map<String, List<ChatMessage>> _threads = {};
+  static const maxThreads = 30;
   final Set<String> _busy = {};
 
   // UTC-ben: a frissen készült (helyi idejű) és a lemezről betöltött (UTC) példány ugyanaz.
@@ -66,6 +67,11 @@ class AnalysisChat extends ChangeNotifier {
     final q = question.trim();
     final key = _key(report);
     if (q.isEmpty || _busy.contains(key) || questionsLeft(report) <= 0) return;
+    // Legfeljebb ennyi beszélgetés marad memóriában (a legrégebben kezdettek mennek).
+    if (!_threads.containsKey(key) && _threads.length >= maxThreads) {
+      final oldest = _threads.keys.firstWhere((k) => !_busy.contains(k), orElse: () => '');
+      if (oldest.isNotEmpty) _threads.remove(oldest);
+    }
     final list = _threads.putIfAbsent(key, () => []);
     list.add(ChatMessage(fromUser: true, text: q));
     _busy.add(key);

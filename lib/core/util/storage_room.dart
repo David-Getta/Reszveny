@@ -33,6 +33,23 @@ extension WriteIfChanged on SharedPreferences {
 
 const _forceWrite = #storageForceWrite;
 
+/// Weben a felhasználói adatok mentésének sorszáma a böngésző tárában: egy másik lap
+/// ebből látja olcsón, hogy volt-e közben mentés (különben minden fülváltáskor újraolvasná
+/// és összevetné az összes tárolót).
+const dataRevisionKey = 'data_rev';
+
+/// Az ebben a lapban legutóbb írt sorszám (a saját mentés nem „másik lap változása”).
+int lastOwnRevision = 0;
+
+Future<void> _bumpRevision(SharedPreferences prefs) async {
+  if (!kIsWeb) return;
+  try {
+    final next = (prefs.getInt(dataRevisionKey) ?? 0) + 1;
+    lastOwnRevision = next;
+    await prefs.setInt(dataRevisionKey, next);
+  } catch (_) {}
+}
+
 /// A piaci adatok gyorsítótárának törlése (újratölthető): helyet csinál a felhasználó adatainak.
 Future<void> freeMarketCache(SharedPreferences prefs) async {
   for (final k in prefs.getKeys().where((k) => k.startsWith(marketCachePrefix)).toList()) {
@@ -54,6 +71,7 @@ Future<bool> writeWithRoom(Future<void> Function(SharedPreferences prefs) write)
   }
   try {
     await write(prefs);
+    await _bumpRevision(prefs);
     return true;
   } catch (e) {
     debugPrint('Mentés nem sikerült ($e): a gyorsítótár helye felszabadul.');
@@ -62,6 +80,7 @@ Future<bool> writeWithRoom(Future<void> Function(SharedPreferences prefs) write)
     await freeMarketCache(prefs);
     // Kényszerített írás: az előző, sikertelen próba már beírta az értéket a memóriabeli másolatba.
     await runZoned(() => write(prefs), zoneValues: {_forceWrite: true});
+    await _bumpRevision(prefs);
     return true;
   } catch (e) {
     debugPrint('Mentés a gyorsítótár törlése után sem sikerült: $e');

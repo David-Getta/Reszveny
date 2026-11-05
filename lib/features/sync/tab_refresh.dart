@@ -6,6 +6,7 @@ import 'package:flutter/widgets.dart' show AppLifecycleListener;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/app_preferences.dart';
+import '../../core/util/storage_room.dart';
 import '../alerts/price_alert.dart';
 import '../notes/notes_store.dart';
 import '../portfolio/portfolio_store.dart';
@@ -26,6 +27,13 @@ class TabRefresh {
   AppLifecycleListener? _lifecycle;
   bool _running = false;
 
+  /// A legutóbb látott mentési sorszám és a legutóbbi teljes összevetés ideje: ha azóta
+  /// egy lap sem mentett, a tárolók nem töltődnek be újra (legfeljebb ennyi időnként mégis,
+  /// biztonsági hálóként egy sorszámot nem növelő mentés miatt).
+  int _seenRevision = -1;
+  DateTime? _fullCheckAt;
+  static const fullCheckEvery = Duration(minutes: 5);
+
   /// Csak weben figyel (asztali gépen és telefonon egy példány fut).
   void start() {
     if (!kIsWeb) return;
@@ -42,7 +50,14 @@ class TabRefresh {
     if (_running || portfolio.batching) return false;
     _running = true;
     try {
-      await (await SharedPreferences.getInstance()).reload();
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.reload();
+      final revision = prefs.getInt(dataRevisionKey) ?? 0;
+      final now = DateTime.now();
+      final recent = _fullCheckAt != null && now.difference(_fullCheckAt!) < fullCheckEvery;
+      if (recent && (revision == _seenRevision || revision == lastOwnRevision)) return false;
+      _seenRevision = revision;
+      _fullCheckAt = now;
       final stored = SyncService.snapshotOf(
         preferences: await AppPreferences.load(),
         portfolio: await PortfolioStore.load(),

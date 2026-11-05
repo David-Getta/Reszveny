@@ -143,4 +143,17 @@ void main() {
     );
     expect(ok.text, 'fine');
   });
+
+  test('a long-running app keeps at most a bounded number of analyses in memory, the newest ones', () async {
+    final store = ReportStore(analyst: _Analyst());
+    for (var i = 0; i < ReportStore.maxInMemory + 10; i++) {
+      await store.generate(StockDetails(symbol: 'S$i'), outputLanguage: 'English');
+    }
+    expect(store.report('S0'), isNull);
+    expect(store.report('S${ReportStore.maxInMemory + 9}'), isNotNull);
+    expect(
+      [for (var i = 0; i < ReportStore.maxInMemory + 10; i++) store.report('S$i')].whereType<StockReport>().length,
+      ReportStore.maxInMemory,
+    );
+  });
 }
