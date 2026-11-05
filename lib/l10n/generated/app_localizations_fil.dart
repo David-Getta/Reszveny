@@ -2291,6 +2291,21 @@ class AppLocalizationsFil extends AppLocalizations {
       'Wala pang stock sa listahang ito. I-tap ang button ng listahan sa tabi ng isang stock para idagdag ito.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Inalis ang $symbol sa mga paborito';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Inalis ang $symbol sa $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Nabura ang listahan: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Mga tanong tungkol sa portfolio mo';
 
   @override

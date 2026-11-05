@@ -2285,6 +2285,21 @@ class AppLocalizationsSw extends AppLocalizations {
       'Bado hakuna hisa kwenye orodha hii. Gusa kitufe cha orodha kando ya hisa ili kuiongeza.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol imeondolewa kwenye vipendwa';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol imeondolewa kwenye $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Orodha imefutwa: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Maswali kuhusu jalada lako la hisa';
 
   @override

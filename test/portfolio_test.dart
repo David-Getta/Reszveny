@@ -1233,8 +1233,8 @@ void main() {
     await tester.pumpAndSettle();
     final since = find.byKey(const ValueKey('closed-since-AAPL'));
     await tester.ensureVisible(since);
-    // A demó ára 231,45: 200-hoz képest +15,72% (a 15,725 lebegőpontosan lefelé kerekedik).
-    expect(tester.widget<Text>(since).textSpan!.toPlainText(), 'All shares sold · +15.72% since you sold');
+    // A demó ára 231,45: 200-hoz képest +15,725%, ami feles értékként felfelé kerekedik.
+    expect(tester.widget<Text>(since).textSpan!.toPlainText(), 'All shares sold · +15.73% since you sold');
   });
 
   testWidgets('a sample portfolio from the empty page, then removed with one tap; own purchases stay', (tester) async {

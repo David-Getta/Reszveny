@@ -888,5 +888,8 @@
   "aiReportSend": "Meldung senden",
   "aiReportThanks": "Danke – wir sehen es uns an.",
   "aiPortfolioDisclaimer": "KI-generierte, allgemeine Informationen zur Zusammensetzung deines Portfolios. Sie berücksichtigen weder deine Ziele noch deine finanzielle oder steuerliche Situation und sind weder eine persönliche Empfehlung noch Anlageberatung.",
-  "briefNotificationTitle": "KI-Zusammenfassung · Heute bei deinen Aktien"
+  "briefNotificationTitle": "KI-Zusammenfassung · Heute bei deinen Aktien",
+  "favoriteRemoved": "{symbol} aus Favoriten entfernt",
+  "listItemRemoved": "{symbol} aus „{list}“ entfernt",
+  "watchListDeleted": "Liste gelöscht: {list}"
 }

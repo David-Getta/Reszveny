@@ -2287,6 +2287,21 @@ class AppLocalizationsGn extends AppLocalizations {
       'Ndaipóri gueteri acción ko listape. Ejopy lista votõ oĩva acción ykére embojuaju hag̃ua.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol oñembogue ojeguerohoryvévagui';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol oñembogue $list-gui';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lista oñembogue: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Porandu nde cartera rehegua';
 
   @override

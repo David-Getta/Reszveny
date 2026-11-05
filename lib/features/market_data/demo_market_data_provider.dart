@@ -115,8 +115,13 @@ class DemoMarketDataProvider extends MarketDataProvider {
     // Az indexkövető ETF-ek (piacok sáv, portfólió-összevetés) sorozata is minta.
     if (!const {'SPY', 'QQQ', 'DIA'}.contains(symbol)) _check(symbol);
     final last = (await quote(symbol)).price;
-    // Determinisztikus, bolyongás-szerű minta-sorozat, ami a mai árnál végződik.
-    final days = years * 252;
+    return PriceHistory(symbol: symbol, points: _series(symbol, last, years * 252));
+  }
+
+  /// Determinisztikus, bolyongás-szerű minta-sorozat, ami a mai árnál végződik. Visszafelé
+  /// épül a mai naptól, így bármilyen hosszú kérés vége ugyanaz: az 1 éves grafikon, az
+  /// 5 éves grafikon utolsó éve és az 52 hetes sáv (a mutatók közt) egyezik.
+  static List<PricePoint> _series(String symbol, double last, int days) {
     final values = List<double>.filled(days, 0);
     var seed = symbol.codeUnits.fold<int>(7, (a, b) => (a * 31 + b) & 0x7fffffff);
     double rnd() {
@@ -124,12 +129,11 @@ class DemoMarketDataProvider extends MarketDataProvider {
       return seed / 0x7fffffff;
     }
 
-    var v = 1.0;
-    for (var i = 0; i < days; i++) {
-      v *= 1 + (rnd() - 0.48) * 0.03;
+    var v = last;
+    for (var i = days - 1; i >= 0; i--) {
       values[i] = v;
+      v /= 1 + (rnd() - 0.48) * 0.03;
     }
-    final scale = last / values.last;
     // Kereskedési napok visszafelé a mai naptól (hétvégék kihagyva).
     final dates = <DateTime>[];
     var d = DateTime.now();
@@ -137,18 +141,37 @@ class DemoMarketDataProvider extends MarketDataProvider {
       if (d.weekday <= DateTime.friday) dates.add(DateTime(d.year, d.month, d.day));
       d = d.subtract(const Duration(days: 1));
     }
-    final points = <PricePoint>[
+    return [
       for (var i = 0; i < days; i++)
         PricePoint(
           time: dates[days - 1 - i],
-          close: values[i] * scale,
-          open: values[i] * scale * 0.995,
-          high: values[i] * scale * 1.01,
-          low: values[i] * scale * 0.99,
+          close: values[i],
+          open: values[i] * 0.995,
+          high: values[i] * 1.01,
+          low: values[i] * 0.99,
           volume: 40e6,
         ),
     ];
-    return PriceHistory(symbol: symbol, points: points);
+  }
+
+  /// Az 52 hetes csúcs és mélypont (a napjával) a minta-sorozat utolsó évéből.
+  static StockMetrics _withYearRange(StockMetrics m, String symbol, double last) {
+    final year = _series(symbol, last, 252);
+    var hi = year.first;
+    var lo = year.first;
+    for (final p in year) {
+      if ((p.high ?? p.close) > (hi.high ?? hi.close)) hi = p;
+      if ((p.low ?? p.close) < (lo.low ?? lo.close)) lo = p;
+    }
+    // Centre kerekítve, mint egy valódi jegyzés (a riasztás gyorsgombja pontosan ezt írja be).
+    double cents(double x) => (x * 100).roundToDouble() / 100;
+    return StockMetrics.fromJson({
+      ...m.toJson(),
+      'week52High': cents(hi.high ?? hi.close),
+      'week52Low': cents(lo.low ?? lo.close),
+      'week52HighDate': hi.time.toIso8601String(),
+      'week52LowDate': lo.time.toIso8601String(),
+    });
   }
 
   @override
@@ -352,8 +375,12 @@ class DemoMarketDataProvider extends MarketDataProvider {
 
   @override
   Future<StockMetrics> metrics(String symbol) async {
-    await _wait();
     _check(symbol);
+    final last = (await quote(symbol)).price;
+    return _withYearRange(_baseMetrics(symbol), symbol, last);
+  }
+
+  static StockMetrics _baseMetrics(String symbol) {
     return switch (symbol) {
       'AAPL' => StockMetrics(
         peTrailing: 35.2,
@@ -367,10 +394,6 @@ class DemoMarketDataProvider extends MarketDataProvider {
         payoutRatio: 15.8,
         dividendGrowth5y: 4.9,
         beta: 1.21,
-        week52High: 237.23,
-        week52Low: 169.21,
-        week52HighDate: DateTime(2026, 7, 15),
-        week52LowDate: DateTime(2025, 11, 4),
         averageVolume10d: 52.3e6,
         revenueTtm: 401e9,
         netIncomeTtm: 101e9,
@@ -396,8 +419,6 @@ class DemoMarketDataProvider extends MarketDataProvider {
         payoutRatio: 24.6,
         dividendGrowth5y: 10.2,
         beta: 0.93,
-        week52High: 555.45,
-        week52Low: 344.79,
         averageVolume10d: 21.0e6,
         revenueTtm: 281e9,
         netIncomeTtm: 101e9,
@@ -422,8 +443,6 @@ class DemoMarketDataProvider extends MarketDataProvider {
         dividendPerShare: 0.04,
         payoutRatio: 1.1,
         beta: 2.12,
-        week52High: 195.62,
-        week52Low: 86.62,
         averageVolume10d: 180e6,
         revenueTtm: 165e9,
         netIncomeTtm: 87e9,
@@ -446,8 +465,6 @@ class DemoMarketDataProvider extends MarketDataProvider {
         payoutRatio: 25.1,
         dividendGrowth5y: 12.4,
         beta: 1.35,
-        week52High: 30200,
-        week52Low: 17500,
         averageVolume10d: 450e3,
         revenueTtm: 2.6e12,
         netIncomeTtm: 1.08e12,

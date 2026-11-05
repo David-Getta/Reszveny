@@ -2300,6 +2300,21 @@ class AppLocalizationsMg extends AppLocalizations {
       'Mbola tsy misy anjara ato amin\'ity lisitra ity. Tsindrio ny bokotra lisitra eo akaikin\'ny anjara iray mba hanampiana azy.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Nesorina tamin\'ny ankafizina ny $symbol';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Nesorina tamin\'ny $list ny $symbol';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Voafafa ny lisitra: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Fanontaniana momba ny kitapom-bolanao';
 
   @override

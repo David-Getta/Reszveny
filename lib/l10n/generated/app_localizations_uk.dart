@@ -2339,6 +2339,21 @@ class AppLocalizationsUk extends AppLocalizations {
       'У цьому списку ще немає акцій. Торкніться кнопки списку поруч з акцією, щоб додати її.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol видалено з обраного';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol видалено зі списку «$list»';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Список видалено: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Запитання про ваш портфель';
 
   @override

@@ -888,5 +888,8 @@
   "aiReportSend": "إرسال البلاغ",
   "aiReportThanks": "شكرًا — سنراجعها.",
   "aiPortfolioDisclaimer": "معلومات عامة مُنشأة بالذكاء الاصطناعي حول تكوين محفظتك. لا تأخذ في الاعتبار أهدافك أو وضعك المالي أو الضريبي، ولا تُعدّ توصية شخصية ولا نصيحة استثمارية.",
-  "briefNotificationTitle": "ملخص بالذكاء الاصطناعي · اليوم مع أسهمك"
+  "briefNotificationTitle": "ملخص بالذكاء الاصطناعي · اليوم مع أسهمك",
+  "favoriteRemoved": "تمت إزالة {symbol} من المفضلة",
+  "listItemRemoved": "تمت إزالة {symbol} من {list}",
+  "watchListDeleted": "تم حذف القائمة: {list}"
 }

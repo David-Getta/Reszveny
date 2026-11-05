@@ -888,5 +888,8 @@
   "aiReportSend": "Ɖo nyatakaka la ɖa",
   "aiReportThanks": "Akpe — míalé ŋku ɖe eŋu.",
   "aiPortfolioDisclaimer": "Nyatakaka gbadzaa siwo AI wɔ tso wò akpawo ƒe ɖoɖo ŋu. Mebua wò taɖodzinuwo, wò ganyawo alo wò adzɔxexe ƒe nɔnɔme ŋu o, eye menye aɖaŋuɖoɖo na wò ɖeka ko alo aɖaŋuɖoɖo le gadede nu ŋu o.",
-  "briefNotificationTitle": "AI ƒe nyagbɔgblɔ kpui · Egbe kple wò stockwo"
+  "briefNotificationTitle": "AI ƒe nyagbɔgblɔ kpui · Egbe kple wò stockwo",
+  "favoriteRemoved": "Woɖe {symbol} ɖa le nye lɔlɔ̃tɔwo me",
+  "listItemRemoved": "Woɖe {symbol} ɖa le {list} me",
+  "watchListDeleted": "Wotutu xexlẽdzesia ɖa: {list}"
 }

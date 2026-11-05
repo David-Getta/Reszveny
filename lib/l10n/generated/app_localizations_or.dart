@@ -2279,6 +2279,21 @@ class AppLocalizationsOr extends AppLocalizations {
       'ଏହି ତାଲିକାରେ ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ଷ୍ଟକ ନାହିଁ। ଯୋଡ଼ିବାକୁ ଷ୍ଟକ ପାଖରେ ଥିବା ତାଲିକା ବଟନରେ ଟାପ କରନ୍ତୁ।';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol ପସନ୍ଦରୁ ହଟାଗଲା';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $listରୁ ହଟାଗଲା';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'ତାଲିକା ଡିଲିଟ ହେଲା: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓ ବିଷୟରେ ପ୍ରଶ୍ନ';
 
   @override

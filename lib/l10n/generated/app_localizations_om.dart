@@ -2294,6 +2294,21 @@ class AppLocalizationsOm extends AppLocalizations {
       'Tarree kana keessa ammallee aksiyoonni hin jiran. Dabaluuf furtuu tarree aksiyoona cinaa jiru tuqi.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol filatamoo irraa haqameera';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list irraa haqameera';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Tarreen haqameera: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Gaaffilee waa\'ee poortfooliyoo keessanii';
 
   @override

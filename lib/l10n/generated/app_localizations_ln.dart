@@ -2294,6 +2294,21 @@ class AppLocalizationsLn extends AppLocalizations {
       'Aksio moko te ezali naino na liste oyo. Finá bouton ya liste pembeni ya aksio mpo na kobakisa yango.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol elongolami na oyo olingaka';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol elongolami na $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Liste elimwisami: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Mituna na ntina ya portefeuille na yo';
 
   @override

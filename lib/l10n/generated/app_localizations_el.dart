@@ -2293,6 +2293,21 @@ class AppLocalizationsEl extends AppLocalizations {
       'Δεν υπάρχουν ακόμη μετοχές σε αυτήν τη λίστα. Πατήστε το κουμπί λίστας δίπλα σε μια μετοχή για να την προσθέσετε.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Η $symbol αφαιρέθηκε από τα αγαπημένα';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Η $symbol αφαιρέθηκε από τη λίστα «$list»';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Η λίστα διαγράφηκε: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Ερωτήσεις για το χαρτοφυλάκιό σας';
 
   @override

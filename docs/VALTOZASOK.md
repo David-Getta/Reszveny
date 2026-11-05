@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.311)
+# Változásjegyzék (0.2.130 → 0.2.312)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,22 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Lapok, billentyűzet és fordítások
+
+- **0.2.312**: az alsó lapok (pl. „Mit jelent ez?”, nyelvválasztó, megosztás) a teljes ablak fölött nyílnak: a
+  menüsor és az oldalsáv mögöttük nem kattintható, és a billentyűzet fókusza nem szökik ki a lapból. Asztalon és
+  weben az Esc egy oldalt lép vissza (szövegmezőben nem).
+- A visszavonható üzenetek érthető mondatok („NVDA eltávolítva a kedvencek közül”, „Lista törölve: Tech”) a
+  gombfelirat ismétlése helyett, 120 nyelven.
+- Ugyanaz az arány mindenhol ugyanúgy kerekedik: egy pontosan feles érték (pl. 28,075%) felfelé, akárhogy
+  számolta az app (eddig ugyanarra az összegre egyszer 28,08%, egyszer 28,07% látszott).
+- Frissítés-ellenőrző nélküli változatban (pl. a webes előnézet) a beállítások nem állítják, hogy a legfrissebb
+  verzió fut, és nem kínálnak hatástalan „automatikus frissítés” kapcsolót.
+- A bemutató módban az 52 hetes csúcs és mélypont a grafikon saját minta-sorozatából jön (eddig nem egyezett vele).
+- Fordítás-ellenőrzés a 14 legnagyobb nyelven: holland P/E- és napi csúcs/mélypont kifejezések, kínai
+  „总股本”, lengyel és orosz számnévragozás, orosz „ИИ”, hongkongi írásmód javítva; a jogi, előfizetési és
+  hozzájárulási szövegek mindenhol rendben.
 
 ## Böngészős végigjátszás: az ötvenharmadik kódátnézés javításai
 

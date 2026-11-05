@@ -2290,6 +2290,21 @@ class AppLocalizationsSo extends AppLocalizations {
       'Liiskan weli saami kuma jiro. Taabo badhanka liiska ee ku xiga saamiga si aad ugu darto.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol waa laga saaray kuwa la jecel yahay';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol waa laga saaray $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Liiska waa la tirtiray: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Su\'aalo ku saabsan portfoliyadaada';
 
   @override

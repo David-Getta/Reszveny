@@ -2281,6 +2281,21 @@ class AppLocalizationsBm extends AppLocalizations {
       'Aksiyɔn si tɛ nin lisi la fɔlɔ. Digi lisi butɔni kan aksiyɔn kɛrɛfɛ walasa k\'a fara a kan.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol bɔra diyanyelenw na';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol bɔra $list na';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lisi jɔsira: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Ɲininkaliw i ka aksiyɔn kɛsu kan';
 
   @override

@@ -2284,6 +2284,21 @@ class AppLocalizationsKa extends AppLocalizations {
       'ამ სიაში ჯერ აქციები არ არის. დასამატებლად შეეხეთ სიის ღილაკს აქციის გვერდით.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol ამოიშალა რჩეულებიდან';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol ამოიშალა სიიდან „$list“';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'სია წაიშალა: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'კითხვები თქვენი პორტფელის შესახებ';
 
   @override

@@ -2253,6 +2253,21 @@ class AppLocalizationsTh extends AppLocalizations {
       'ยังไม่มีหุ้นในรายการนี้ แตะปุ่มรายการข้างหุ้นเพื่อเพิ่ม';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'นำ $symbol ออกจากรายการโปรดแล้ว';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'นำ $symbol ออกจาก $list แล้ว';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'ลบรายการแล้ว: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'คำถามเกี่ยวกับพอร์ตโฟลิโอของคุณ';
 
   @override

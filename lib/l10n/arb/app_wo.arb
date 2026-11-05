@@ -888,5 +888,8 @@
   "aiReportSend": "Yónne yégle bi",
   "aiReportThanks": "Jërëjëf — dinañu ko saytu.",
   "aiPortfolioDisclaimer": "Xibaar yu yaatu yu AI defar ci ni sa aksiyoŋ yi boolewoo. Du xool say jubluwaay, sa mbiri xaalis walla sa mbiri galag, te du ndigal bu la jagoo walla ndigal ci dugal xaalis.",
-  "briefNotificationTitle": "Gàttal bu AI · Tey ak sa aksiyoŋ yi"
+  "briefNotificationTitle": "Gàttal bu AI · Tey ak sa aksiyoŋ yi",
+  "favoriteRemoved": "Far nañu {symbol} ci yi ma gënal",
+  "listItemRemoved": "Far nañu {symbol} ci {list}",
+  "watchListDeleted": "Far nañu limm bi: {list}"
 }

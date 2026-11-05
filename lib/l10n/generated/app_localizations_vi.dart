@@ -2276,6 +2276,21 @@ class AppLocalizationsVi extends AppLocalizations {
       'Danh sách này chưa có cổ phiếu nào. Nhấn nút danh sách bên cạnh cổ phiếu để thêm.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Đã xóa $symbol khỏi yêu thích';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Đã xóa $symbol khỏi $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Đã xóa danh sách: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Câu hỏi về danh mục của bạn';
 
   @override

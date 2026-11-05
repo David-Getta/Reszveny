@@ -2290,6 +2290,21 @@ class AppLocalizationsKg extends AppLocalizations {
       'Ata aksio mosi ve na lisiti yai ntete. Fina buto ya lisiti yina kele pembeni ya aksio sambu na kuyika yo.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol me katulama mu bizolwa';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol me katulama mu $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lisiti me zimbisama: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Biuvu mu portefeuille na nge';
 
   @override

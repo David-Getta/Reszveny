@@ -888,5 +888,8 @@
   "aiReportSend": "報告を送信",
   "aiReportThanks": "ありがとうございます。確認いたします。",
   "aiPortfolioDisclaimer": "AI が生成した、ポートフォリオの構成に関する一般的な情報です。ご自身の目標や資産状況、税務状況は考慮されておらず、個別の推奨や投資助言ではありません。",
-  "briefNotificationTitle": "AI 要約 · 今日のあなたの銘柄"
+  "briefNotificationTitle": "AI 要約 · 今日のあなたの銘柄",
+  "favoriteRemoved": "{symbol}をお気に入りから削除しました",
+  "listItemRemoved": "{symbol}を「{list}」から削除しました",
+  "watchListDeleted": "リスト「{list}」を削除しました"
 }

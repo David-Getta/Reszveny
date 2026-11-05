@@ -2287,6 +2287,21 @@ class AppLocalizationsEe extends AppLocalizations {
       'Sitɔk aɖeke mele xexlẽdzesi sia me haɖe o. Zi xexlẽdzesi ƒe dzesi si le sitɔk aɖe xa be nàtsɔe akpe ɖe eŋu.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Woɖe $symbol ɖa le nye lɔlɔ̃tɔwo me';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Woɖe $symbol ɖa le $list me';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Wotutu xexlẽdzesia ɖa: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Nyabiasewo tso wò akpawo ŋu';
 
   @override

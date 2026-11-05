@@ -2277,6 +2277,21 @@ class AppLocalizationsIg extends AppLocalizations {
       'Enweghị òkè ọ bụla na ndepụta a ka ugbu a. Pịa bọtịnụ ndepụta dị n\'akụkụ òkè iji tinye ya.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'E wepụla $symbol n\'ọkacha mmasị';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'E wepụla $symbol na $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'E hichapụla ndepụta: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Ajụjụ gbasara portfolio gị';
 
   @override

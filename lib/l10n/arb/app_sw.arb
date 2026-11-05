@@ -888,5 +888,8 @@
   "aiReportSend": "Tuma ripoti",
   "aiReportThanks": "Asante — tutalikagua.",
   "aiPortfolioDisclaimer": "Taarifa za jumla zilizotengenezwa na AI kuhusu muundo wa jalada lako la hisa. Hazizingatii malengo yako, hali yako ya kifedha au hali yako ya kodi, na si pendekezo binafsi wala ushauri wa uwekezaji.",
-  "briefNotificationTitle": "Muhtasari wa AI · Leo na hisa zako"
+  "briefNotificationTitle": "Muhtasari wa AI · Leo na hisa zako",
+  "favoriteRemoved": "{symbol} imeondolewa kwenye vipendwa",
+  "listItemRemoved": "{symbol} imeondolewa kwenye {list}",
+  "watchListDeleted": "Orodha imefutwa: {list}"
 }

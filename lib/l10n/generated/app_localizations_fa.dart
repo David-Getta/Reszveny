@@ -2279,6 +2279,21 @@ class AppLocalizationsFa extends AppLocalizations {
       'هنوز سهمی در این فهرست نیست. برای افزودن، روی دکمهٔ فهرست کنار سهم بزنید.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol از علاقه‌مندی‌ها حذف شد';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol از $list حذف شد';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'فهرست حذف شد: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'پرسش‌ها دربارهٔ سبد سهام شما';
 
   @override

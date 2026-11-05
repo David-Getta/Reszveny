@@ -888,5 +888,8 @@
   "aiReportSend": "رپورٹ بھیجیں",
   "aiReportThanks": "شکریہ — ہم اس کا جائزہ لیں گے۔",
   "aiPortfolioDisclaimer": "آپ کے پورٹ فولیو کی ساخت کے بارے میں AI سے تیار کردہ عمومی معلومات۔ یہ آپ کے اہداف، مالی حالات یا ٹیکس کی صورتحال کو مدنظر نہیں رکھتیں، اور یہ نہ ذاتی سفارش ہیں اور نہ سرمایہ کاری کا مشورہ۔",
-  "briefNotificationTitle": "AI خلاصہ · آج آپ کے شیئرز کے ساتھ"
+  "briefNotificationTitle": "AI خلاصہ · آج آپ کے شیئرز کے ساتھ",
+  "favoriteRemoved": "{symbol} کو پسندیدہ سے ہٹا دیا گیا",
+  "listItemRemoved": "{symbol} کو {list} سے ہٹا دیا گیا",
+  "watchListDeleted": "فہرست حذف کر دی گئی: {list}"
 }

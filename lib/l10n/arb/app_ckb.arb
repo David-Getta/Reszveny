@@ -888,5 +888,8 @@
   "aiReportSend": "ناردنی ڕاپۆرت",
   "aiReportThanks": "سوپاس — پێیدا دەچینەوە.",
   "aiPortfolioDisclaimer": "زانیاریی گشتی کە AI دروستی کردووە دەربارەی پێکهاتەی پۆرتفۆلیۆکەت. ئامانجەکانت، دۆخی دارایی یان دۆخی باجەکەت لەبەرچاو ناگرێت و ڕاسپاردەی کەسی یان ئامۆژگاریی وەبەرهێنان نییە.",
-  "briefNotificationTitle": "کورتەی AI · ئەمڕۆ لەگەڵ پشکەکانت"
+  "briefNotificationTitle": "کورتەی AI · ئەمڕۆ لەگەڵ پشکەکانت",
+  "favoriteRemoved": "{symbol} لە دڵخوازەکان لابرا",
+  "listItemRemoved": "{symbol} لە {list} لابرا",
+  "watchListDeleted": "لیست سڕایەوە: {list}"
 }

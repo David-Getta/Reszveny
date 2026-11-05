@@ -699,7 +699,7 @@
   "awayReported": "已公布業績：{symbols}",
   "moveWhyButton": "今日為何波動？",
   "moveWhyTitle": "今日 {percent}",
-  "moveWhyNote": "AI 根據網上搵到的今日新聞作出的解釋；真正原因可能未知或有所不同。不構成投資建議。會使用你的每日提問額度，而非分析。",
+  "moveWhyNote": "AI 根據網上找到的今日新聞作出的解釋；真正原因可能未知或有所不同。不構成投資建議。會使用你的每日提問額度，而非分析。",
   "sectionTechnical": "技術面",
   "labelSma50": "50日平均線",
   "labelSma200": "200日平均線",
@@ -888,5 +888,8 @@
   "aiReportSend": "提交舉報",
   "aiReportThanks": "多謝，我們會跟進審視。",
   "aiPortfolioDisclaimer": "由 AI 產生、有關你投資組合構成的一般資訊。並未考慮你的目標、財務狀況或稅務情況，並不構成個人化建議或投資建議。",
-  "briefNotificationTitle": "AI 總結 · 今天你的股票"
+  "briefNotificationTitle": "AI 總結 · 今天你的股票",
+  "favoriteRemoved": "已從收藏中移除 {symbol}",
+  "listItemRemoved": "已從「{list}」移除 {symbol}",
+  "watchListDeleted": "已刪除清單：{list}"
 }

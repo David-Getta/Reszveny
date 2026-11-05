@@ -888,5 +888,8 @@
   "aiReportSend": "راپور ولېږئ",
   "aiReportThanks": "مننه — موږ به یې وڅېړو.",
   "aiPortfolioDisclaimer": "ستاسو د پورټفولیو د جوړښت په اړه د AI لخوا جوړ شوي عمومي معلومات. دا ستاسو موخې، مالي وضعیت یا د مالیې حالت په پام کې نه نیسي، او نه شخصي سپارښتنه ده او نه د پانګونې مشوره.",
-  "briefNotificationTitle": "د AI لنډیز · نن ستاسو له ونډو سره"
+  "briefNotificationTitle": "د AI لنډیز · نن ستاسو له ونډو سره",
+  "favoriteRemoved": "{symbol} له خوښو لرې شو",
+  "listItemRemoved": "{symbol} له {list} لرې شو",
+  "watchListDeleted": "لېست ړنګ شو: {list}"
 }

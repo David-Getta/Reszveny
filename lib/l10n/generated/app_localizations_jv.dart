@@ -2285,6 +2285,21 @@ class AppLocalizationsJv extends AppLocalizations {
       'Durung ana saham ing dhaptar iki. Tutul tombol dhaptar ing sandhingé saham kanggo nambahaké.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol wis dibusak saka favorit';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol wis dibusak saka $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Dhaptar wis dibusak: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Pitakon babagan portofolio sampeyan';
 
   @override

@@ -2289,6 +2289,21 @@ class AppLocalizationsSn extends AppLocalizations {
       'Hapana masheya murondedzero iyi parizvino. Baya bhatani rerondedzero riri padyo nesheya kuti uriwedzere.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol yabviswa pane zvaunofarira';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol yabviswa pa $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Rondedzero yadzimwa: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Mibvunzo nezvepotiforiyo yako';
 
   @override

@@ -31,4 +31,12 @@ void main() {
     u.onUpdaterUpdateAvailable(null);
     expect(u.status, UpdateStatus.available);
   });
+
+  test('without an update manifest there is nothing to check: no false "latest version" claim', () async {
+    final u = UpdateService(config: const AppConfig());
+    expect(u.canCheck, isFalse);
+    expect(u.canAutoInstall, isFalse);
+    await u.check();
+    expect(u.status, UpdateStatus.idle);
+  });
 }

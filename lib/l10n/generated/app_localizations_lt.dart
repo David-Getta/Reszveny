@@ -2337,6 +2337,21 @@ class AppLocalizationsLt extends AppLocalizations {
       'Šiame sąraše dar nėra akcijų. Bakstelėkite sąrašo mygtuką šalia akcijos, kad ją pridėtumėte.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol pašalinta iš mėgstamiausių';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol pašalinta iš sąrašo „$list“';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Sąrašas ištrintas: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Klausimai apie jūsų portfelį';
 
   @override

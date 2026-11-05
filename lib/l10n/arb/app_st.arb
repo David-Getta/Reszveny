@@ -888,5 +888,8 @@
   "aiReportSend": "Romela tlaleho",
   "aiReportThanks": "Re a leboha — re tla e hlahloba.",
   "aiPortfolioDisclaimer": "Tlhahisoleseding e akaretsang e entsweng ke AI mabapi le sebopeho sa potefolio ya hao. Ha e nahanele dipheo tsa hao, ditjhelete tsa hao kapa boemo ba hao ba lekgetho, mme hase kgothaletso ya hao ka sebele kapa keletso ya ho tsetela.",
-  "briefNotificationTitle": "Kakaretso ya AI · Kajeno le diabo tsa hao"
+  "briefNotificationTitle": "Kakaretso ya AI · Kajeno le diabo tsa hao",
+  "favoriteRemoved": "{symbol} e tlositswe ho tseo o di ratang",
+  "listItemRemoved": "{symbol} e tlositswe ho {list}",
+  "watchListDeleted": "Lenane le hlakotswe: {list}"
 }

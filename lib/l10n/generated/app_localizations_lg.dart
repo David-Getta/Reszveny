@@ -2294,6 +2294,21 @@ class AppLocalizationsLg extends AppLocalizations {
       'Tewannaba kubaawo sitoka ku lukalala luno. Nyiga eppeesa ly\'olukalala eriri okumpi ne sitoka okugigattako.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol kiggyiddwa ku by\'oyagala';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol kiggyiddwa ku $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Olukalala lusanguddwawo: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Ebibuuzo ku migabo gyo';
 
   @override

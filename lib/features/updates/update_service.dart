@@ -136,6 +136,13 @@ class UpdateService extends ChangeNotifier with UpdaterListener {
 
   void setAutoInstall(bool enabled) => _autoInstall = enabled;
 
+  /// Van-e mit ellenőrizni: jegyzék nélkül (pl. a webes előnézet) nincs, és ott a
+  /// „legfrissebb verzió” állítás sem igaz, csak ellenőrizetlen.
+  bool get canCheck => channel != UpdateChannel.manifestOnly || config.updateManifestUrl.isNotEmpty;
+
+  /// Az automatikus telepítés csak ott jelent valamit, ahol az app maga tölt le és telepít.
+  bool get canAutoInstall => channel == UpdateChannel.sparkle || channel == UpdateChannel.playFlexible;
+
   /// Kézi vagy háttér-ellenőrzés. [silent] esetén nem jelez hibát.
   Future<void> check({bool silent = false}) async {
     // Sparkle/WinSparkle-nél az állapot a saját ablakukból jön, és nem mindig ér véget
@@ -185,7 +192,7 @@ class UpdateService extends ChangeNotifier with UpdaterListener {
 
   Future<void> _checkManifest() async {
     if (config.updateManifestUrl.isEmpty) {
-      _set(UpdateStatus.upToDate);
+      _set(UpdateStatus.idle);
       return;
     }
     final res = await _client.get(Uri.parse(config.updateManifestUrl)).timeout(const Duration(seconds: 15));

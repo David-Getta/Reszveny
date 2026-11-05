@@ -2289,6 +2289,21 @@ class AppLocalizationsLua extends AppLocalizations {
       'Kakuena aksio mu liste eu to. Tuta butɔ wa liste udi pabuipi ne aksio bua kuyibueja.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Tuaumbusha $symbol mu biudi musue';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Tuaumbusha $symbol mu $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Liste wajimijibua: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Nkonko bua portefeuille webe';
 
   @override

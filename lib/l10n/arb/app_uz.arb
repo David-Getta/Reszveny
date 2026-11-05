@@ -888,5 +888,8 @@
   "aiReportSend": "Xabarni yuborish",
   "aiReportThanks": "Rahmat — koʻrib chiqamiz.",
   "aiPortfolioDisclaimer": "Portfelingiz tarkibi haqida AI yaratgan umumiy maʼlumot. U maqsadlaringiz, moliyaviy holatingiz yoki soliq holatingizni hisobga olmaydi; bu shaxsiy tavsiya yoki investitsiya maslahati emas.",
-  "briefNotificationTitle": "AI xulosasi · Bugun aksiyalaringiz bilan"
+  "briefNotificationTitle": "AI xulosasi · Bugun aksiyalaringiz bilan",
+  "favoriteRemoved": "{symbol} sevimlilardan olib tashlandi",
+  "listItemRemoved": "{symbol} {list} roʻyxatidan olib tashlandi",
+  "watchListDeleted": "Roʻyxat oʻchirildi: {list}"
 }

@@ -2285,6 +2285,21 @@ class AppLocalizationsAz extends AppLocalizations {
       'Bu siyahıda hələ səhm yoxdur. Əlavə etmək üçün səhmin yanındakı siyahı düyməsinə toxunun.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol seçilmişlərdən silindi';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol «$list» siyahısından silindi';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Siyahı silindi: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Portfeliniz haqqında suallar';
 
   @override

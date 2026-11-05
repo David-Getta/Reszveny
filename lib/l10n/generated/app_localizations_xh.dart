@@ -2292,6 +2292,21 @@ class AppLocalizationsXh extends AppLocalizations {
       'Akukho zabelo kolu luhlu okwangoku. Cofa iqhosha loluhlu ecaleni kwesabelo ukuze usongeze.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'I-$symbol isusiwe kwezithandwayo';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'I-$symbol isusiwe ku-$list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Uluhlu lucinyiwe: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Imibuzo ngepotifoliyo yakho';
 
   @override

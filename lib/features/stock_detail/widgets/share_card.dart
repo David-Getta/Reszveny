@@ -237,6 +237,7 @@ Future<void> showShareSheet(
   required String text,
 }) {
   return showModalBottomSheet<void>(
+    useRootNavigator: true,
     context: context,
     isScrollControlled: true,
     showDragHandle: true,

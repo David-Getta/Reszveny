@@ -2277,6 +2277,21 @@ class AppLocalizationsGu extends AppLocalizations {
       'આ યાદીમાં હજી કોઈ શેર નથી. ઉમેરવા માટે શેરની બાજુમાં આવેલા યાદી બટન પર ટૅપ કરો.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol મનપસંદમાંથી દૂર કરાયો';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list યાદીમાંથી દૂર કરાયો';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'યાદી કાઢી નાખી: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'તમારા પોર્ટફોલિયો વિશે પ્રશ્નો';
 
   @override

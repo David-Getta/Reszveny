@@ -2296,6 +2296,21 @@ class AppLocalizationsQu extends AppLocalizations {
       'Kay listapiqa manaraqmi accionkuna kanchu. Yapanapaq accionpa waqtanpi lista butonta ñit\'iy.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol munasqakunamanta hurqusqaña';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list listamanta hurqusqaña';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lista pichasqaña: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Tapukuykuna: portafolioyki';
 
   @override

@@ -888,5 +888,8 @@
   "aiReportSend": "Romela pego",
   "aiReportThanks": "Re a leboga — re tla e lekola.",
   "aiPortfolioDisclaimer": "Tshedimošo ya kakaretšo yeo e tšweleditšwego ke AI mabapi le sebopego sa photefolio ya gago. Ga e ele hloko maikemišetšo a gago, ditšhelete tša gago goba boemo bja gago bja motšhelo, gomme ga se tšhišinyo ya gago ka noši goba keletšo ya peeletšo.",
-  "briefNotificationTitle": "Kakaretšo ya AI · Lehono le dišere tša gago"
+  "briefNotificationTitle": "Kakaretšo ya AI · Lehono le dišere tša gago",
+  "favoriteRemoved": "{symbol} e tlošitšwe go tše di ratwago",
+  "listItemRemoved": "{symbol} e tlošitšwe go {list}",
+  "watchListDeleted": "Lenaneo le phumotšwe: {list}"
 }

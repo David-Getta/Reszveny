@@ -2299,6 +2299,21 @@ class AppLocalizationsNso extends AppLocalizations {
       'Ga go na diabelo lenaneong le ga bjale. Kgotla konopo ya lenaneo kgauswi le seabelo go se oketša.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol e tlošitšwe go tše di ratwago';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol e tlošitšwe go $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lenaneo le phumotšwe: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Dipotšišo ka photefolio ya gago';
 
   @override

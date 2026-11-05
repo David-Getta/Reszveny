@@ -888,5 +888,8 @@
   "aiReportSend": "Alefaso ny tatitra",
   "aiReportThanks": "Misaotra — hodinihinay izany.",
   "aiPortfolioDisclaimer": "Fampahalalana ankapobeny novokarin'ny AI momba ny firafitry ny kitapom-bolanao. Tsy mandinika ny tanjonao, ny toe-bolanao na ny raharaha ara-hetranao izy, ary tsy tolo-kevitra manokana ho anao na torohevitra momba ny fampiasam-bola.",
-  "briefNotificationTitle": "Famintinana AI · Anio miaraka amin’ny aksionanao"
+  "briefNotificationTitle": "Famintinana AI · Anio miaraka amin’ny aksionanao",
+  "favoriteRemoved": "Nesorina tamin'ny ankafizina ny {symbol}",
+  "listItemRemoved": "Nesorina tamin'ny {list} ny {symbol}",
+  "watchListDeleted": "Voafafa ny lisitra: {list}"
 }

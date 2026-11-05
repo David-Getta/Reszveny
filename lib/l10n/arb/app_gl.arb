@@ -888,5 +888,8 @@
   "aiReportSend": "Enviar denuncia",
   "aiReportThanks": "Grazas, revisarémola.",
   "aiPortfolioDisclaimer": "Información xeral xerada por IA sobre a composición da túa carteira. Non ten en conta os teus obxectivos, a túa situación financeira nin a túa situación fiscal, e non constitúe unha recomendación persoal nin asesoramento de investimento.",
-  "briefNotificationTitle": "Resumo con IA · Hoxe coas túas accións"
+  "briefNotificationTitle": "Resumo con IA · Hoxe coas túas accións",
+  "favoriteRemoved": "Quitouse {symbol} de favoritos",
+  "listItemRemoved": "Quitouse {symbol} de «{list}»",
+  "watchListDeleted": "Eliminouse a lista: {list}"
 }

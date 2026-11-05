@@ -2256,6 +2256,21 @@ class AppLocalizationsLo extends AppLocalizations {
       'ຍັງບໍ່ມີຫຸ້ນໃນລາຍການນີ້. ແຕະປຸ່ມລາຍການຂ້າງຫຸ້ນເພື່ອເພີ່ມ.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'ລຶບ $symbol ອອກຈາກລາຍການທີ່ມັກແລ້ວ';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'ລຶບ $symbol ອອກຈາກ $list ແລ້ວ';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'ລຶບລາຍການແລ້ວ: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'ຄຳຖາມກ່ຽວກັບພອດໂຟລິໂອຂອງທ່ານ';
 
   @override

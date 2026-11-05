@@ -2280,6 +2280,21 @@ class AppLocalizationsBn extends AppLocalizations {
       'এই তালিকায় এখনও কোনো শেয়ার নেই। যোগ করতে শেয়ারের পাশের তালিকা বোতামে ট্যাপ করুন।';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol পছন্দের তালিকা থেকে সরানো হয়েছে';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list থেকে সরানো হয়েছে';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'তালিকা মুছে ফেলা হয়েছে: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'আপনার পোর্টফোলিও নিয়ে প্রশ্ন';
 
   @override

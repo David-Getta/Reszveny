@@ -888,5 +888,8 @@
   "aiReportSend": "Tʋm togsgã",
   "aiReportThanks": "Barka — d na n ges-a.",
   "aiPortfolioDisclaimer": "AI n maan kibay sẽn yaa fãa-fãa, f portfey wã sẽn naage to-to wã yelle. A pa ges f raab-rãmbã, f ligdã la f lampo yellã ye, la a pa sagls sẽn yaa f mengã yĩnga, a pa sagls ligd kẽesg wɛɛngẽ me ye.",
-  "briefNotificationTitle": "AI koe-bõonga · Rũndã ne f aksɩyõnã"
+  "briefNotificationTitle": "AI koe-bõonga · Rũndã ne f aksɩyõnã",
+  "favoriteRemoved": "{symbol} yiisame nong-n-yɩɩda pʋgẽ",
+  "listItemRemoved": "{symbol} yiisame {list} pʋgẽ",
+  "watchListDeleted": "Listã yẽesame: {list}"
 }

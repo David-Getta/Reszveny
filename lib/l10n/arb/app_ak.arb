@@ -888,5 +888,8 @@
   "aiReportSend": "Soma amanneɛbɔ no",
   "aiReportThanks": "Yɛda wo ase — yɛbɛhwɛ mu.",
   "aiPortfolioDisclaimer": "AI na ɛyɛɛ eyi: ɛyɛ nsɛm kɛkɛ a ɛfa nea ɛwɔ wo nkyɛfa mu ho. Ɛmfa wo botaeɛ, wo sika ho nsɛm anaa wo towtua tebea nhyɛ mu, na ɛnyɛ afotu a wɔde ma wo ankasa anaa sikahyɛmu ho afotu.",
-  "briefNotificationTitle": "AI nsɛm tiaa · Ɛnnɛ ne wo stocks"
+  "briefNotificationTitle": "AI nsɛm tiaa · Ɛnnɛ ne wo stocks",
+  "favoriteRemoved": "Wɔayi {symbol} afi nea mepɛ mu",
+  "listItemRemoved": "Wɔayi {symbol} afi {list} mu",
+  "watchListDeleted": "Wɔayi nhyehyɛe no afi hɔ: {list}"
 }

@@ -2289,6 +2289,21 @@ class AppLocalizationsNy extends AppLocalizations {
       'Palibe masheya pa mndandandawu pano. Dinani batani la mndandanda pafupi ndi sheya kuti muwonjezere.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol yachotsedwa ku zokondedwa';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol yachotsedwa ku $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Mndandanda wachotsedwa: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Mafunso okhudza masheya anu';
 
   @override

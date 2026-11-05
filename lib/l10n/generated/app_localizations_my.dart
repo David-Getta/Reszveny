@@ -2276,6 +2276,21 @@ class AppLocalizationsMy extends AppLocalizations {
       'ဤစာရင်းတွင် စတော့ မရှိသေးပါ။ ထည့်ရန် စတော့ဘေးရှိ စာရင်းခလုတ်ကို တို့ပါ။';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol ကို အကြိုက်ဆုံးများမှ ဖယ်ရှားလိုက်ပြီ';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol ကို $list မှ ဖယ်ရှားလိုက်ပြီ';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'စာရင်းကို ဖျက်လိုက်ပြီ: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'သင့် ပေါ့ဖိုလီယို အကြောင်း မေးခွန်းများ';
 
   @override

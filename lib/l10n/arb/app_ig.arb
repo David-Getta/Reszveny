@@ -888,5 +888,8 @@
   "aiReportSend": "Ziga akụkọ",
   "aiReportThanks": "Daalụ — anyị ga-enyocha ya.",
   "aiPortfolioDisclaimer": "Ozi izugbe AI mepụtara gbasara otú portfolio gị si dị. Ọ naghị atụle ebumnuche gị, ọnọdụ ego gị ma ọ bụ ọnọdụ ụtụ isi gị, ọ bụkwaghị ndụmọdụ pụrụ iche nye gị ma ọ bụ ndụmọdụ itinye ego.",
-  "briefNotificationTitle": "Nchịkọta AI · Taa na ngwa ahịa gị"
+  "briefNotificationTitle": "Nchịkọta AI · Taa na ngwa ahịa gị",
+  "favoriteRemoved": "E wepụla {symbol} n'ọkacha mmasị",
+  "listItemRemoved": "E wepụla {symbol} na {list}",
+  "watchListDeleted": "E hichapụla ndepụta: {list}"
 }

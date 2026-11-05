@@ -51,7 +51,7 @@
   "labelWebsite": "网站",
   "labelIpoDate": "IPO 日期",
   "labelMarketCap": "市值",
-  "labelSharesOutstanding": "流通股数",
+  "labelSharesOutstanding": "总股本",
   "labelEmployees": "员工人数",
   "labelCeo": "CEO",
   "labelHeadquarters": "总部",
@@ -888,5 +888,8 @@
   "aiReportSend": "提交举报",
   "aiReportThanks": "谢谢，我们会进行审核。",
   "aiPortfolioDisclaimer": "由 AI 生成的关于你投资组合构成的一般信息。未考虑你的目标、财务状况或税务情况，不构成个性化建议或投资建议。",
-  "briefNotificationTitle": "AI 总结 · 今天你的股票"
+  "briefNotificationTitle": "AI 总结 · 今天你的股票",
+  "favoriteRemoved": "已将 {symbol} 从收藏中移除",
+  "listItemRemoved": "已将 {symbol} 从“{list}”中移除",
+  "watchListDeleted": "已删除列表：{list}"
 }

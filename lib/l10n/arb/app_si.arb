@@ -888,5 +888,8 @@
   "aiReportSend": "වාර්තාව යවන්න",
   "aiReportThanks": "ස්තූතියි — අපි එය සමාලෝචනය කරන්නෙමු.",
   "aiPortfolioDisclaimer": "ඔබේ කළඹේ සංයුතිය පිළිබඳ AI-ජනිත සාමාන්‍ය තොරතුරු. එය ඔබේ ඉලක්ක, මූල්‍ය තත්ත්වය හෝ බදු තත්ත්වය සැලකිල්ලට නොගන්නා අතර, එය පුද්ගලික නිර්දේශයක් හෝ ආයෝජන උපදෙසක් නොවේ.",
-  "briefNotificationTitle": "AI සාරාංශය · අද ඔබේ කොටස් සමඟ"
+  "briefNotificationTitle": "AI සාරාංශය · අද ඔබේ කොටස් සමඟ",
+  "favoriteRemoved": "{symbol} ප්‍රියතමවලින් ඉවත් කරන ලදී",
+  "listItemRemoved": "{symbol} {list} වෙතින් ඉවත් කරන ලදී",
+  "watchListDeleted": "ලැයිස්තුව මකා දමන ලදී: {list}"
 }

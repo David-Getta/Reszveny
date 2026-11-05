@@ -888,5 +888,8 @@
   "aiReportSend": "Neldu caɗeele ɗee",
   "aiReportThanks": "A jaaraama — men ƴeewto ɗum.",
   "aiPortfolioDisclaimer": "Humpito kuuɓal ngo AI waɗi e dow no aksiyoŋ maa njuɓɓiniri. Ɗum ƴeewataa faandaaje maa, ngalu maa walla lempooji maa, wonaa wasiya keeriiɗo maa, wonaa kadi wasiya e investisman.",
-  "briefNotificationTitle": "Raɓɓinal AI · Hannde e aksiyonji maa"
+  "briefNotificationTitle": "Raɓɓinal AI · Hannde e aksiyonji maa",
+  "favoriteRemoved": "{symbol} ittaama e cuɓaaɗe",
+  "listItemRemoved": "{symbol} ittaama e {list}",
+  "watchListDeleted": "Doggol momtaama: {list}"
 }

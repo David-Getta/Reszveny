@@ -2276,6 +2276,21 @@ class AppLocalizationsWo extends AppLocalizations {
       'Amagul benn aksiyoŋ ci limm bii. Bësal butoŋu limm bi ci wetu aksiyoŋ bi ngir yokk ko.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Far nañu $symbol ci yi ma gënal';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Far nañu $symbol ci $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Far nañu limm bi: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Laaj yi ci sa aksiyoŋ yi';
 
   @override

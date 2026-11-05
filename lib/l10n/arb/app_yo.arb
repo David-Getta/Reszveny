@@ -888,5 +888,8 @@
   "aiReportSend": "Fi ìjábọ̀ ránṣẹ́",
   "aiReportThanks": "O ṣé — a máa ṣàyẹ̀wò rẹ̀.",
   "aiPortfolioDisclaimer": "Ìsọfúnni gbogbogbò tí AI ṣe nípa àkójọpọ̀ àpò ìdókòwò rẹ. Kò ka àwọn àfojúsùn rẹ, ipò ìnáwó rẹ tàbí ipò owó orí rẹ sí, kì í sì í ṣe ìmọ̀ràn àdáni tàbí ìmọ̀ràn ìdókòwò.",
-  "briefNotificationTitle": "Àkópọ̀ AI · Lónìí pẹ̀lú àwọn ìpín rẹ"
+  "briefNotificationTitle": "Àkópọ̀ AI · Lónìí pẹ̀lú àwọn ìpín rẹ",
+  "favoriteRemoved": "A ti yọ {symbol} kúrò nínú àwọn ààyò",
+  "listItemRemoved": "A ti yọ {symbol} kúrò nínú {list}",
+  "watchListDeleted": "A ti pa àkójọ rẹ́: {list}"
 }

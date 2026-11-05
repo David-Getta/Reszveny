@@ -171,7 +171,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get labelMarketCap => '市值';
 
   @override
-  String get labelSharesOutstanding => '流通股数';
+  String get labelSharesOutstanding => '总股本';
 
   @override
   String get labelEmployees => '员工人数';
@@ -2174,6 +2174,21 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get watchListEmpty => '此列表中还没有股票。点按股票旁的列表按钮即可添加。';
+
+  @override
+  String favoriteRemoved(String symbol) {
+    return '已将 $symbol 从收藏中移除';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '已将 $symbol 从“$list”中移除';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return '已删除列表：$list';
+  }
 
   @override
   String get portfolioAskTitle => '关于你的投资组合的问题';
@@ -5425,6 +5440,21 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get watchListEmpty => '此清單暫時未有股票。輕按股票旁的清單按鈕即可加入。';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '已從收藏中移除 $symbol';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '已從「$list」移除 $symbol';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return '已刪除清單：$list';
+  }
+
+  @override
   String get portfolioAskTitle => '關於你的投資組合的問題';
 
   @override
@@ -6364,7 +6394,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get moveWhyNote =>
-      'AI 根據網上搵到的今日新聞作出的解釋；真正原因可能未知或有所不同。不構成投資建議。會使用你的每日提問額度，而非分析。';
+      'AI 根據網上找到的今日新聞作出的解釋；真正原因可能未知或有所不同。不構成投資建議。會使用你的每日提問額度，而非分析。';
 
   @override
   String get sectionTechnical => '技術面';

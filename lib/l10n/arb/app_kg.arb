@@ -888,5 +888,8 @@
   "aiReportSend": "Tinda rapport",
   "aiReportThanks": "Matondo — beto ta tala yo.",
   "aiPortfolioDisclaimer": "Nsangu ya bawonso yivangwa kwa AI mu nkubikulu ya portefeuille na nge. Ka itadidi ko makani ma nge, mambu ma mbongo za nge yovo bimpôt bia nge, ye ka malongi ma nge kibeni ko yovo malongi ma kutula mbongo ko.",
-  "briefNotificationTitle": "Mukanda ya nkufi ya AI · Bubu ti bisikisu na nge"
+  "briefNotificationTitle": "Mukanda ya nkufi ya AI · Bubu ti bisikisu na nge",
+  "favoriteRemoved": "{symbol} me katulama mu bizolwa",
+  "listItemRemoved": "{symbol} me katulama mu {list}",
+  "watchListDeleted": "Lisiti me zimbisama: {list}"
 }

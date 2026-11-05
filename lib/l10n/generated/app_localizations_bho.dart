@@ -2277,6 +2277,21 @@ class AppLocalizationsBho extends AppLocalizations {
       'एह सूची में अबहीं ले कवनो शेयर नइखे। जोड़े खातिर शेयर के बगल वाला सूची बटन दबाईं।';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol पसंदीदा से हटा दिहल गइल';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list से हटा दिहल गइल';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'सूची मिटा दिहल गइल: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'राउर पोर्टफ़ोलियो के बारे में सवाल';
 
   @override

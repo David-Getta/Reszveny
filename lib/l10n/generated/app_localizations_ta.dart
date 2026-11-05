@@ -2294,6 +2294,21 @@ class AppLocalizationsTa extends AppLocalizations {
       'இந்தப் பட்டியலில் இன்னும் பங்குகள் இல்லை. சேர்க்க, பங்கின் அருகிலுள்ள பட்டியல் பொத்தானைத் தட்டவும்.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol பிடித்தவற்றிலிருந்து நீக்கப்பட்டது';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list பட்டியலிலிருந்து நீக்கப்பட்டது';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'பட்டியல் நீக்கப்பட்டது: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'உங்கள் போர்ட்ஃபோலியோ பற்றிய கேள்விகள்';
 
   @override

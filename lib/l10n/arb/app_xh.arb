@@ -888,5 +888,8 @@
   "aiReportSend": "Thumela ingxelo",
   "aiReportThanks": "Enkosi — siza kuyihlolisisa.",
   "aiPortfolioDisclaimer": "Ulwazi jikelele olwenziwe yi-AI malunga nokwakheka kwepotifoliyo yakho. Alujongi iinjongo zakho, imali yakho okanye imeko yakho yerhafu, kwaye alusosindululo lobuqu okanye icebiso lotyalo-mali.",
-  "briefNotificationTitle": "Isishwankathelo se-AI · Namhlanje nezabelo zakho"
+  "briefNotificationTitle": "Isishwankathelo se-AI · Namhlanje nezabelo zakho",
+  "favoriteRemoved": "I-{symbol} isusiwe kwezithandwayo",
+  "listItemRemoved": "I-{symbol} isusiwe ku-{list}",
+  "watchListDeleted": "Uluhlu lucinyiwe: {list}"
 }

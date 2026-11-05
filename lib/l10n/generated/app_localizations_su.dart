@@ -2286,6 +2286,21 @@ class AppLocalizationsSu extends AppLocalizations {
       'Can aya saham dina daptar ieu. Toél tombol daptar di gigireun saham pikeun nambahkeunana.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol geus dipiceun tina paporit';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol geus dipiceun tina $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Daptar geus dipupus: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Patarosan ngeunaan portofolio anjeun';
 
   @override

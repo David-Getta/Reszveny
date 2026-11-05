@@ -2288,6 +2288,21 @@ class AppLocalizationsHa extends AppLocalizations {
       'Babu hannun jari a wannan jerin tukuna. Matsa maɓallin jeri kusa da hannun jari don ƙara shi.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'An cire $symbol daga abubuwan da aka fi so';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'An cire $symbol daga $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'An share jeri: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Tambayoyi game da jakar hannun jarinku';
 
   @override

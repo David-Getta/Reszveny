@@ -18,6 +18,7 @@ Future<bool> showSignInSheet(BuildContext context, AccountController account) as
           ),
         )
       : await showModalBottomSheet<bool>(
+          useRootNavigator: true,
           context: context,
           isScrollControlled: true,
           showDragHandle: true,

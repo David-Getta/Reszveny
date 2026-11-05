@@ -212,7 +212,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
         ..hideCurrentSnackBar()
         ..showSnackBar(
           SnackBar(
-            content: Text('$symbol · $list'),
+            content: Text(l10n.listItemRemoved(symbol, list)),
             // A régi helyére kerül vissza, nem a lista végére.
             action: SnackBarAction(
               label: l10n.undo,
@@ -231,7 +231,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
       ..hideCurrentSnackBar()
       ..showSnackBar(
         SnackBar(
-          content: Text('$symbol · ${l10n.removeFromFavorites}'),
+          content: Text(l10n.favoriteRemoved(symbol)),
           action: SnackBarAction(
             label: l10n.undo,
             onPressed: () => prefs.restoreFavorite(symbol, at: at < 0 ? 0 : at, since: since),
@@ -273,6 +273,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
     final l10n = AppLocalizations.of(context);
     final prefs = AppServices.of(context).preferences;
     final create = await showModalBottomSheet<bool>(
+      useRootNavigator: true,
       context: context,
       showDragHandle: true,
       builder: (context) => SafeArea(
@@ -389,7 +390,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
         ..hideCurrentSnackBar()
         ..showSnackBar(
           SnackBar(
-            content: Text('$list · ${l10n.watchListDelete}'),
+            content: Text(l10n.watchListDeleted(list)),
             action: SnackBarAction(
               label: l10n.undo,
               onPressed: () async {

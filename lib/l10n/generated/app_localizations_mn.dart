@@ -2283,6 +2283,21 @@ class AppLocalizationsMn extends AppLocalizations {
       'Энэ жагсаалтад одоогоор хувьцаа алга. Нэмэхийн тулд хувьцааны хажууд байгаа жагсаалтын товчийг дарна уу.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol-г дуртайгаас хаслаа';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol-г $list жагсаалтаас хаслаа';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Жагсаалтыг устгалаа: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Таны портфолиогийн талаарх асуултууд';
 
   @override

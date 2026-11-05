@@ -888,5 +888,8 @@
   "aiReportSend": "ጸብጻብ ስደዱ",
   "aiReportThanks": "የቐንየልና — ክንግምግሞ ኢና።",
   "aiPortfolioDisclaimer": "ብዛዕባ ኣቀማምጣ ፖርትፎሊዮኹም ብAI ዝተፈጥረ ሓፈሻዊ ሓበሬታ። ንዕላማታትኩም፣ ፋይናንሳዊ ኩነታትኩም ወይ ኩነታት ግብርኹም ኣብ ግምት ኣየእቱን፣ ውልቃዊ ለበዋ ወይ ምኽሪ ወፍሪ ድማ ኣይኮነን።",
-  "briefNotificationTitle": "ናይ AI ጽማቝ · ሎሚ ምስ ኣክስዮናትኩም"
+  "briefNotificationTitle": "ናይ AI ጽማቝ · ሎሚ ምስ ኣክስዮናትኩም",
+  "favoriteRemoved": "{symbol} ካብ ዝተፈተዉ ተኣልዩ",
+  "listItemRemoved": "{symbol} ካብ {list} ተኣልዩ",
+  "watchListDeleted": "ዝርዝር ተሰሪዙ: {list}"
 }

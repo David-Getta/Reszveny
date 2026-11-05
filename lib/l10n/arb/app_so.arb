@@ -888,5 +888,8 @@
   "aiReportSend": "Dir warbixinta",
   "aiReportThanks": "Mahadsanid — dib ayaan u eegi doonnaa.",
   "aiPortfolioDisclaimer": "Macluumaad guud oo uu AI sameeyay oo ku saabsan qaab-dhismeedka portfoliyadaada. Ma tixgeliso yoolalkaaga, xaaladdaada dhaqaale ama xaaladdaada canshuurta, mana aha talo kuu gaar ah ama talo maalgashi.",
-  "briefNotificationTitle": "Soo koobid AI · Maanta iyo saamiyadaada"
+  "briefNotificationTitle": "Soo koobid AI · Maanta iyo saamiyadaada",
+  "favoriteRemoved": "{symbol} waa laga saaray kuwa la jecel yahay",
+  "listItemRemoved": "{symbol} waa laga saaray {list}",
+  "watchListDeleted": "Liiska waa la tirtiray: {list}"
 }

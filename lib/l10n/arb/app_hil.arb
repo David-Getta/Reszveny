@@ -888,5 +888,8 @@
   "aiReportSend": "Ipadala ang report",
   "aiReportThanks": "Salamat — usisaon namon ini.",
   "aiPortfolioDisclaimer": "Pangkabilugan nga impormasyon nga ginhimo sang AI parte sa komposisyon sang imo portfolio. Wala ini nagakonsiderar sang imo mga tulumuron, pinansyal nga kahimtangan ukon kahimtangan sa buhis, kag indi ini personal nga rekomendasyon ukon laygay sa pag-invest.",
-  "briefNotificationTitle": "Sumaryo sang AI · Subong upod ang imo mga stock"
+  "briefNotificationTitle": "Sumaryo sang AI · Subong upod ang imo mga stock",
+  "favoriteRemoved": "Ginkuha ang {symbol} sa mga paborito",
+  "listItemRemoved": "Ginkuha ang {symbol} sa {list}",
+  "watchListDeleted": "Napanas ang listahan: {list}"
 }

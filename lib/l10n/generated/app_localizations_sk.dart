@@ -2336,6 +2336,21 @@ class AppLocalizationsSk extends AppLocalizations {
       'V tomto zozname zatiaľ nie sú žiadne akcie. Akciu pridáte ťuknutím na tlačidlo zoznamu vedľa nej.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol bol odstránený z obľúbených';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol bol odstránený zo zoznamu $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Zoznam bol odstránený: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Otázky k vášmu portfóliu';
 
   @override

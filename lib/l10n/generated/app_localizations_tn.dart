@@ -2297,6 +2297,21 @@ class AppLocalizationsTn extends AppLocalizations {
       'Ga go na dishere mo lenaaneng leno ga jaana. Tobetsa konopo ya lenaane fa thoko ga shere go e tsenya.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol e tlositswe mo go tse o di ratang';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol e tlositswe mo go $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lenaane le phimotswe: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Dipotso ka potefolio ya gago';
 
   @override

@@ -888,5 +888,8 @@
   "aiReportSend": "Weereza lipoota",
   "aiReportThanks": "Weebale — tujja kukyetegereza.",
   "aiPortfolioDisclaimer": "Amawulire ag'awamu AI ge yakola ku ngeri emigabo gyo gye gitegekeddwamu. Tegafaayo ku biruubirirwa byo, embeera y'ensimbi zo oba ey'emisolo, era si kuteesa okukukwatako ggwe wekka wadde magezi ga kusiga nsimbi.",
-  "briefNotificationTitle": "Ebifunze bya AI · Leero ne sitoowa zo"
+  "briefNotificationTitle": "Ebifunze bya AI · Leero ne sitoowa zo",
+  "favoriteRemoved": "{symbol} kiggyiddwa ku by'oyagala",
+  "listItemRemoved": "{symbol} kiggyiddwa ku {list}",
+  "watchListDeleted": "Olukalala lusanguddwawo: {list}"
 }

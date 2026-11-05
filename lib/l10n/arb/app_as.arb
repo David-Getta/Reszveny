@@ -888,5 +888,8 @@
   "aiReportSend": "ৰিপ'ৰ্ট পঠিয়াওক",
   "aiReportThanks": "ধন্যবাদ — আমি ইয়াক পৰীক্ষা কৰিম।",
   "aiPortfolioDisclaimer": "AI-এ প্ৰস্তুত কৰা, আপোনাৰ প'ৰ্টফ'লিঅ'ৰ গঠন সম্পৰ্কীয় সাধাৰণ তথ্য। ই আপোনাৰ লক্ষ্য, আৰ্থিক অৱস্থা বা কৰ পৰিস্থিতি বিবেচনা নকৰে আৰু ই ব্যক্তিগত চুপাৰিছ বা বিনিয়োগৰ পৰামৰ্শ নহয়।",
-  "briefNotificationTitle": "AI সাৰাংশ · আজি আপোনাৰ শ্বেয়াৰসমূহ"
+  "briefNotificationTitle": "AI সাৰাংশ · আজি আপোনাৰ শ্বেয়াৰসমূহ",
+  "favoriteRemoved": "{symbol} প্ৰিয়ৰ পৰা আঁতৰোৱা হ'ল",
+  "listItemRemoved": "{symbol} {list} তালিকাৰ পৰা আঁতৰোৱা হ'ল",
+  "watchListDeleted": "তালিকা মচা হ'ল: {list}"
 }

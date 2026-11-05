@@ -888,5 +888,8 @@
   "aiReportSend": "Send report",
   "aiReportThanks": "Thank you — we go check am.",
   "aiPortfolioDisclaimer": "Na AI make dis general information about how your portfolio take arrange. E no look your goals, your money matter or your tax situation, and e no be personal recommendation or investment advice.",
-  "briefNotificationTitle": "Na AI summarize am · Today with your stocks"
+  "briefNotificationTitle": "Na AI summarize am · Today with your stocks",
+  "favoriteRemoved": "{symbol} don comot from favourites",
+  "listItemRemoved": "{symbol} don comot from {list}",
+  "watchListDeleted": "List don delete: {list}"
 }

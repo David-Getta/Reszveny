@@ -2331,6 +2331,21 @@ class AppLocalizationsAr extends AppLocalizations {
       'لا توجد أسهم في هذه القائمة بعد. اضغط على زر القائمة بجانب السهم لإضافته.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'تمت إزالة $symbol من المفضلة';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'تمت إزالة $symbol من $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'تم حذف القائمة: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'أسئلة حول محفظتك';
 
   @override

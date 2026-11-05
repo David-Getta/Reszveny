@@ -206,7 +206,8 @@ void main() {
     // Gyorsgomb: új 52 hetes csúcs (fölé), majd vissza a kézi szintre.
     await tester.tap(find.byKey(const ValueKey('alert-52w-high')));
     await tester.pumpAndSettle();
-    expect(find.widgetWithText(TextField, '237.23'), findsOneWidget);
+    final high = (await tester.runAsync(() => s.marketData.metrics('AAPL')))!.week52High!;
+    expect(find.widgetWithText(TextField, '$high'), findsOneWidget);
     expect(find.byKey(const ValueKey('alert-52w-low')), findsOneWidget);
     await tester.enterText(find.byKey(const ValueKey('alert-value')), '230');
     await tester.tap(find.widgetWithText(FilledButton, 'Set alert'));

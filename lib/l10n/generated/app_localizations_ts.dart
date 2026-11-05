@@ -2300,6 +2300,21 @@ class AppLocalizationsTs extends AppLocalizations {
       'A ku si na swiavelo eka nxaxamelo leyi. Tsindzela batheni ya nxaxamelo ekusuhi ni xiavelo ku xi engetela.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol yi susiwile eka leswi u swi rhandzaka';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol yi susiwile eka $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Nxaxamelo wu suriwile: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Swivutiso hi phothifoliyo ya wena';
 
   @override

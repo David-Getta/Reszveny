@@ -888,5 +888,8 @@
   "aiReportSend": "Emondo marandu",
   "aiReportThanks": "Aguyje — rohechajeýta.",
   "aiPortfolioDisclaimer": "AI omoheñói ko marandu opavavegua ne cartera ñemohenda rehegua. Ndohechái ne jehupytyrã, ne viru térã ne impuesto rehegua, ha ndahaʼéi ñemoñeʼẽ ndéve guarãnte térã ñemoñeʼẽ inversión rehegua.",
-  "briefNotificationTitle": "AI momichĩmbyre · Ko árape ne acción-kuéra ndive"
+  "briefNotificationTitle": "AI momichĩmbyre · Ko árape ne acción-kuéra ndive",
+  "favoriteRemoved": "{symbol} oñembogue ojeguerohoryvévagui",
+  "listItemRemoved": "{symbol} oñembogue {list}-gui",
+  "watchListDeleted": "Lista oñembogue: {list}"
 }

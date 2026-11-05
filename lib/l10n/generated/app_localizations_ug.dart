@@ -2285,6 +2285,21 @@ class AppLocalizationsUg extends AppLocalizations {
       'بۇ تىزىملىكتە تېخى پاي چېكى يوق. قوشۇش ئۈچۈن پاي چېكىنىڭ يېنىدىكى تىزىملىك كۇنۇپكىسىنى چېكىڭ.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol يىغقۇچتىن چىقىرىۋېتىلدى';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list تىزىملىكىدىن چىقىرىۋېتىلدى';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'تىزىملىك ئۆچۈرۈلدى: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'مەبلەغ بىرىكمىڭىز ھەققىدىكى سوئاللار';
 
   @override

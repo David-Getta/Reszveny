@@ -40,6 +40,7 @@ Future<void> showAskSheet(
   required String companyName,
   String? title,
 }) => showModalBottomSheet<void>(
+  useRootNavigator: true,
   context: context,
   isScrollControlled: true,
   showDragHandle: true,

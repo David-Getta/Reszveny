@@ -2298,6 +2298,21 @@ class AppLocalizationsHil extends AppLocalizations {
       'Wala pa sing stock sa sini nga listahan. I-tap ang button sang listahan sa tupad sang stock agod idugang ini.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Ginkuha ang $symbol sa mga paborito';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Ginkuha ang $symbol sa $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Napanas ang listahan: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Mga pamangkot parte sa imo portfolio';
 
   @override

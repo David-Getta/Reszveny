@@ -888,5 +888,8 @@
   "aiReportSend": "Kirim laporan",
   "aiReportThanks": "Terima kasih — kami akan meninjaunya.",
   "aiPortfolioDisclaimer": "Informasi umum buatan AI tentang komposisi portofolio Anda. Informasi ini tidak mempertimbangkan tujuan, kondisi keuangan, atau situasi pajak Anda, dan bukan merupakan rekomendasi pribadi maupun saran investasi.",
-  "briefNotificationTitle": "Ringkasan AI · Hari ini dengan saham Anda"
+  "briefNotificationTitle": "Ringkasan AI · Hari ini dengan saham Anda",
+  "favoriteRemoved": "{symbol} dihapus dari favorit",
+  "listItemRemoved": "{symbol} dihapus dari {list}",
+  "watchListDeleted": "Daftar dihapus: {list}"
 }

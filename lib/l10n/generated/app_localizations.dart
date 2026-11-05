@@ -3990,6 +3990,24 @@ abstract class AppLocalizations {
   /// **'No stocks in this list yet. Tap the list button next to a stock to add it.'**
   String get watchListEmpty;
 
+  /// Snackbar after removing a stock from favorites (with an Undo action). symbol is a ticker such as NVDA.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} removed from favorites'**
+  String favoriteRemoved(String symbol);
+
+  /// Snackbar after removing a stock from one of the user's own watch lists (with an Undo action). symbol is a ticker, list is the user's list name.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} removed from {list}'**
+  String listItemRemoved(String symbol, String list);
+
+  /// Snackbar after deleting one of the user's own watch lists (with an Undo action). list is the user's list name.
+  ///
+  /// In en, this message translates to:
+  /// **'List deleted: {list}'**
+  String watchListDeleted(String list);
+
   /// Title of the sheet where the user asks the AI follow-up questions about its portfolio review.
   ///
   /// In en, this message translates to:

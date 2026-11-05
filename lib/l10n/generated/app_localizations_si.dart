@@ -2279,6 +2279,21 @@ class AppLocalizationsSi extends AppLocalizations {
       'මෙම ලැයිස්තුවේ තවම කොටස් නැත. එක් කිරීමට කොටසක් අසල ඇති ලැයිස්තු බොත්තම තට්ටු කරන්න.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol ප්‍රියතමවලින් ඉවත් කරන ලදී';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list වෙතින් ඉවත් කරන ලදී';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'ලැයිස්තුව මකා දමන ලදී: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'ඔබේ කළඹ ගැන ප්‍රශ්න';
 
   @override

@@ -2288,6 +2288,21 @@ class AppLocalizationsMs extends AppLocalizations {
       'Belum ada saham dalam senarai ini. Ketik butang senarai di sebelah saham untuk menambahnya.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol dialih keluar daripada kegemaran';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol dialih keluar daripada $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Senarai dipadam: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Soalan tentang portfolio anda';
 
   @override

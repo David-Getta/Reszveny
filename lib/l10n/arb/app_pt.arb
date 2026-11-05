@@ -888,5 +888,8 @@
   "aiReportSend": "Enviar relatório",
   "aiReportThanks": "Obrigado — vamos analisá-la.",
   "aiPortfolioDisclaimer": "Informação geral gerada por IA sobre a composição da sua carteira. Não considera os seus objetivos, finanças ou situação fiscal e não constitui uma recomendação personalizada nem aconselhamento de investimento.",
-  "briefNotificationTitle": "Resumo de IA · Hoje com as suas ações"
+  "briefNotificationTitle": "Resumo de IA · Hoje com as suas ações",
+  "favoriteRemoved": "{symbol} removido dos favoritos",
+  "listItemRemoved": "{symbol} removido de {list}",
+  "watchListDeleted": "Lista excluída: {list}"
 }

@@ -2286,6 +2286,21 @@ class AppLocalizationsTg extends AppLocalizations {
       'Дар ин рӯйхат ҳоло саҳмия нест. Барои илова кардан тугмаи рӯйхатро дар паҳлӯи саҳмия пахш кунед.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol аз интихобшудаҳо хориҷ карда шуд';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol аз $list хориҷ карда шуд';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Рӯйхат нест карда шуд: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Саволҳо дар бораи портфели шумо';
 
   @override

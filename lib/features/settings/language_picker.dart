@@ -23,6 +23,7 @@ Future<String?> showLanguagePicker(BuildContext context, {required String? curre
     );
   }
   return showModalBottomSheet<String>(
+    useRootNavigator: true,
     context: context,
     isScrollControlled: true,
     showDragHandle: true,

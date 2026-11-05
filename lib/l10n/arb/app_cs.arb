@@ -888,5 +888,8 @@
   "aiReportSend": "Odeslat hlášení",
   "aiReportThanks": "Děkujeme – podíváme se na to.",
   "aiPortfolioDisclaimer": "Obecné informace o složení vašeho portfolia vygenerované AI. Nezohledňují vaše cíle, finance ani daňovou situaci a nejsou osobním ani investičním doporučením.",
-  "briefNotificationTitle": "AI shrnutí · Dnes s vašimi akciemi"
+  "briefNotificationTitle": "AI shrnutí · Dnes s vašimi akciemi",
+  "favoriteRemoved": "{symbol} odebrána z oblíbených",
+  "listItemRemoved": "{symbol} odebrána ze seznamu „{list}“",
+  "watchListDeleted": "Seznam smazán: {list}"
 }

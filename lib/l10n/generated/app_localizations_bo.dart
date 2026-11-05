@@ -2275,6 +2275,21 @@ class AppLocalizationsBo extends AppLocalizations {
       'ཐོ་ཡིག་འདིའི་ནང་ད་དུང་མ་འཛིན་མེད། སྣོན་པར་མ་འཛིན་གྱི་འགྲམ་གྱི་ཐོ་ཡིག་མཐེབ་གནོན་ལ་ཨེབ།';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol དགའ་མོས་ནས་བསུབས་ཟིན།';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list ནས་བསུབས་ཟིན།';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'ཐོ་ཡིག་བསུབས་ཟིན། $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'ཁྱེད་ཀྱི་མ་འཇོག་ཚོགས་སྡེབ་སྐོར་གྱི་དྲི་བ།';
 
   @override

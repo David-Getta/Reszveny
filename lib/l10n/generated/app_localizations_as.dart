@@ -2280,6 +2280,21 @@ class AppLocalizationsAs extends AppLocalizations {
       'এই তালিকাত এতিয়াও কোনো শ্বেয়াৰ নাই। যোগ কৰিবলৈ শ্বেয়াৰৰ কাষৰ তালিকা বুটামটো টিপক।';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol প্ৰিয়ৰ পৰা আঁতৰোৱা হ\'ল';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list তালিকাৰ পৰা আঁতৰোৱা হ\'ল';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'তালিকা মচা হ\'ল: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'আপোনাৰ প\'ৰ্টফ\'লিঅ\' সম্পৰ্কীয় প্ৰশ্ন';
 
   @override

@@ -2286,6 +2286,21 @@ class AppLocalizationsKu extends AppLocalizations {
       'Hîn di vê lîsteyê de tu pişk tune ne. Ji bo zêdekirinê, li bişkoka lîsteyê ya li kêleka pişkê bitikîne.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol ji bijareyan hate rakirin';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol ji $list hate rakirin';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lîste hate jêbirin: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Pirsên li ser portfolyoya te';
 
   @override

@@ -888,5 +888,8 @@
   "aiReportSend": "Stuur verslag",
   "aiReportThanks": "Dankie – ons sal dit nagaan.",
   "aiPortfolioDisclaimer": "AI-gegenereerde, algemene inligting oor die samestelling van jou portefeulje. Dit neem nie jou doelwitte, finansies of belastingsituasie in ag nie en is nie ’n persoonlike aanbeveling of beleggingsadvies nie.",
-  "briefNotificationTitle": "AI-opsomming · Vandag met jou aandele"
+  "briefNotificationTitle": "AI-opsomming · Vandag met jou aandele",
+  "favoriteRemoved": "{symbol} uit gunstelinge verwyder",
+  "listItemRemoved": "{symbol} uit “{list}” verwyder",
+  "watchListDeleted": "Lys geskrap: {list}"
 }

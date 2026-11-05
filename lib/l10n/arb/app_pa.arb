@@ -888,5 +888,8 @@
   "aiReportSend": "ਰਿਪੋਰਟ ਭੇਜੋ",
   "aiReportThanks": "ਧੰਨਵਾਦ — ਅਸੀਂ ਇਸਦੀ ਸਮੀਖਿਆ ਕਰਾਂਗੇ।",
   "aiPortfolioDisclaimer": "ਤੁਹਾਡੇ ਪੋਰਟਫ਼ੋਲੀਓ ਦੀ ਬਣਤਰ ਬਾਰੇ AI-ਰਚਿਤ ਆਮ ਜਾਣਕਾਰੀ। ਇਹ ਤੁਹਾਡੇ ਟੀਚਿਆਂ, ਵਿੱਤੀ ਹਾਲਤ ਜਾਂ ਟੈਕਸ ਸਥਿਤੀ ਨੂੰ ਧਿਆਨ ਵਿੱਚ ਨਹੀਂ ਰੱਖਦੀ ਅਤੇ ਇਹ ਨਿੱਜੀ ਸਿਫ਼ਾਰਸ਼ ਜਾਂ ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ ਹੈ।",
-  "briefNotificationTitle": "AI ਸਾਰ · ਅੱਜ ਤੁਹਾਡੇ ਸ਼ੇਅਰਾਂ ਨਾਲ"
+  "briefNotificationTitle": "AI ਸਾਰ · ਅੱਜ ਤੁਹਾਡੇ ਸ਼ੇਅਰਾਂ ਨਾਲ",
+  "favoriteRemoved": "{symbol} ਮਨਪਸੰਦ ਵਿੱਚੋਂ ਹਟਾਇਆ ਗਿਆ",
+  "listItemRemoved": "{symbol} {list} ਵਿੱਚੋਂ ਹਟਾਇਆ ਗਿਆ",
+  "watchListDeleted": "ਸੂਚੀ ਮਿਟਾਈ ਗਈ: {list}"
 }

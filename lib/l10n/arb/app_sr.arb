@@ -888,5 +888,8 @@
   "aiReportSend": "Пошаљи пријаву",
   "aiReportThanks": "Хвала — прегледаћемо га.",
   "aiPortfolioDisclaimer": "Опште информације о саставу вашег портфолија, генерисане помоћу AI. Не узимају у обзир ваше циљеве, финансијску ни пореску ситуацију и не представљају личну препоруку ни инвестициони савет.",
-  "briefNotificationTitle": "AI сажетак · Данас са вашим акцијама"
+  "briefNotificationTitle": "AI сажетак · Данас са вашим акцијама",
+  "favoriteRemoved": "{symbol} је уклоњен из омиљених",
+  "listItemRemoved": "{symbol} је уклоњен са листе {list}",
+  "watchListDeleted": "Листа је обрисана: {list}"
 }

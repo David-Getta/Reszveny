@@ -31,6 +31,7 @@ Future<void> showResearchSheet(
   // A hibát a lap FutureBuildere mutatja; addig ne számítson kezeletlennek.
   answer.ignore();
   return showModalBottomSheet<void>(
+    useRootNavigator: true,
     context: context,
     showDragHandle: true,
     isScrollControlled: true,
@@ -287,11 +288,13 @@ class _SaveNoteButton extends StatefulWidget {
 class _SaveNoteButtonState extends State<_SaveNoteButton> {
   bool _saved = false;
 
+  /// A jegyzet megtelt: a lap fölött (a gyökérnavigátoron) az üzenetsáv takarva lenne,
+  /// ezért a gomb alatt látszik.
+  bool _full = false;
+
   Future<void> _save() async {
     final services = AppServices.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: '');
-    final l10n = AppLocalizations.of(context);
-    final messenger = ScaffoldMessenger.of(context);
     final entry = [
       // „AI ·” jelöléssel: az elemzés promptja így nem a felhasználó saját téziseként kezeli.
       'AI · ${fmt.date(DateTime.now())} · ${widget.title}',
@@ -301,7 +304,7 @@ class _SaveNoteButtonState extends State<_SaveNoteButton> {
     // A saját sorok maradnak; ha a bejegyzés már nem fér el, nem kerül bele, és ez kiírva
     // (csonka bejegyzés vagy hamis „Mentve” helyett).
     if (!await services.notes.append(widget.symbol, entry)) {
-      messenger.showSnackBar(SnackBar(content: Text(l10n.noteFull)));
+      if (mounted) setState(() => _full = true);
       return;
     }
     services.telemetry.track('research_saved_note');
@@ -311,12 +314,24 @@ class _SaveNoteButtonState extends State<_SaveNoteButton> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    return TextButton.icon(
+    final button = TextButton.icon(
       key: const ValueKey('research-save-note'),
       style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
       icon: Icon(_saved ? Icons.check_rounded : Icons.sticky_note_2_outlined, size: 18),
       label: Text(_saved ? l10n.savedToNotes : l10n.saveToNotes),
       onPressed: _saved ? null : _save,
+    );
+    if (!_full) return button;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        button,
+        Text(
+          l10n.noteFull,
+          key: const ValueKey('research-note-full'),
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(color: AppPalette.of(context).negative),
+        ),
+      ],
     );
   }
 }

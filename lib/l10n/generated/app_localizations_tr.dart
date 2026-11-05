@@ -2283,6 +2283,21 @@ class AppLocalizationsTr extends AppLocalizations {
       'Bu listede henüz hisse yok. Eklemek için hissenin yanındaki liste düğmesine dokun.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol favorilerden kaldırıldı';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol, $list listesinden kaldırıldı';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Liste silindi: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Portföyün hakkında sorular';
 
   @override

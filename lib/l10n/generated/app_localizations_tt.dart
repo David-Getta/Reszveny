@@ -2279,6 +2279,21 @@ class AppLocalizationsTt extends AppLocalizations {
       'Бу исемлектә әлегә акцияләр юк. Өстәү өчен акция янындагы исемлек төймәсенә басыгыз.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol сайланмалардан бетерелде';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol «$list» исемлегеннән бетерелде';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Исемлек бетерелде: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Портфелегез турында сораулар';
 
   @override

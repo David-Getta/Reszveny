@@ -2280,6 +2280,21 @@ class AppLocalizationsKab extends AppLocalizations {
       'Ulac ula d yiwen n usehm deg tebdart-a ar tura. Sit ɣef tqeffalt n tebdart ɣer yidis n usehm akken ad t-ternuḍ.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol yettwakkes seg yismenyifen';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol yettwakkes seg $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Tabdart tettwakkes: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Isteqsiyen ɣef uqrab-ik';
 
   @override

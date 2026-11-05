@@ -888,5 +888,8 @@
   "aiReportSend": "Gɛlɛya fɔli ci",
   "aiReportThanks": "I ni ce — an bɛna a lajɛ.",
   "aiPortfolioDisclaimer": "Kunnafoni bɛɛlajɛlenw i ka aksiyɔn kɛsu kɔnɔkow kan, AI ye minnu dilan. U ma i ka laɲiniw, i ka wariko walima i ka nisɔngɔ cogoya jateminɛ, ani u tɛ ladilikan ye min bɛ i yɛrɛ kelen ta ye walima wari donni ladilikan.",
-  "briefNotificationTitle": "AI kuma surun · Bi ni i ka aksiyɔnw"
+  "briefNotificationTitle": "AI kuma surun · Bi ni i ka aksiyɔnw",
+  "favoriteRemoved": "{symbol} bɔra diyanyelenw na",
+  "listItemRemoved": "{symbol} bɔra {list} na",
+  "watchListDeleted": "Lisi jɔsira: {list}"
 }

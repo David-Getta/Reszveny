@@ -888,5 +888,8 @@
   "aiReportSend": "Tuma lapolo",
   "aiReportThanks": "Tuasakidila — netumone.",
   "aiPortfolioDisclaimer": "Mamanyisha a mu bujima adi AI mufunde bua mudi portefeuille webe muenza. Kaatangidi bipatshila biebe, malu a makuta ebe anyi bitadi biebe to, ne kadiena mibelu ya bebe nkayebe anyi mibelu ya kuteka mfranga.",
-  "briefNotificationTitle": "Muvungu wa AI · Lelu ne bintu biebe bia mu tshisumbu"
+  "briefNotificationTitle": "Muvungu wa AI · Lelu ne bintu biebe bia mu tshisumbu",
+  "favoriteRemoved": "Tuaumbusha {symbol} mu biudi musue",
+  "listItemRemoved": "Tuaumbusha {symbol} mu {list}",
+  "watchListDeleted": "Liste wajimijibua: {list}"
 }

@@ -888,5 +888,8 @@
   "aiReportSend": "Tumizani lipoti",
   "aiReportThanks": "Zikomo — tiziwunika.",
   "aiPortfolioDisclaimer": "Chidziwitso cha ponseponse chopangidwa ndi AI chokhudza kapangidwe ka masheya anu. Sichiganizira zolinga zanu, chuma chanu kapena nkhani za msonkho wanu, ndipo si malangizo okhudza inu panokha kapena malangizo okhudza kuyika ndalama.",
-  "briefNotificationTitle": "Chidule cha AI · Lero ndi masheya anu"
+  "briefNotificationTitle": "Chidule cha AI · Lero ndi masheya anu",
+  "favoriteRemoved": "{symbol} yachotsedwa ku zokondedwa",
+  "listItemRemoved": "{symbol} yachotsedwa ku {list}",
+  "watchListDeleted": "Mndandanda wachotsedwa: {list}"
 }

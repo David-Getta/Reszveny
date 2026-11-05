@@ -2285,6 +2285,21 @@ class AppLocalizationsSv extends AppLocalizations {
       'Inga aktier i den här listan ännu. Tryck på listknappen bredvid en aktie för att lägga till den.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol har tagits bort från favoriter';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol har tagits bort från $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Listan har raderats: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Frågor om din portfölj';
 
   @override

@@ -888,5 +888,8 @@
   "aiReportSend": "Nosūtīt ziņojumu",
   "aiReportThanks": "Paldies – mēs to pārskatīsim.",
   "aiPortfolioDisclaimer": "Mākslīgā intelekta ģenerēta vispārīga informācija par jūsu portfeļa sastāvu. Tajā nav ņemti vērā jūsu mērķi, finanšu stāvoklis vai nodokļu situācija, un tā nav ne personīgs ieteikums, ne ieguldījumu konsultācija.",
-  "briefNotificationTitle": "AI kopsavilkums · Šodien ar jūsu akcijām"
+  "briefNotificationTitle": "AI kopsavilkums · Šodien ar jūsu akcijām",
+  "favoriteRemoved": "Akcija {symbol} noņemta no izlases",
+  "listItemRemoved": "Akcija {symbol} noņemta no saraksta „{list}”",
+  "watchListDeleted": "Saraksts izdzēsts: {list}"
 }

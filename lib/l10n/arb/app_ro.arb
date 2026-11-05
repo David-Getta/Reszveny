@@ -888,5 +888,8 @@
   "aiReportSend": "Trimite raportul",
   "aiReportThanks": "Mulțumim — îl vom verifica.",
   "aiPortfolioDisclaimer": "Informații generale generate de AI despre structura portofoliului tău. Nu țin cont de obiectivele, situația financiară sau situația ta fiscală și nu reprezintă o recomandare personalizată sau un sfat de investiții.",
-  "briefNotificationTitle": "Rezumat AI · Azi cu acțiunile tale"
+  "briefNotificationTitle": "Rezumat AI · Azi cu acțiunile tale",
+  "favoriteRemoved": "{symbol} a fost eliminat din favorite",
+  "listItemRemoved": "{symbol} a fost eliminat din {list}",
+  "watchListDeleted": "Lista a fost ștearsă: {list}"
 }

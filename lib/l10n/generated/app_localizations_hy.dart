@@ -2290,6 +2290,21 @@ class AppLocalizationsHy extends AppLocalizations {
       'Այս ցուցակում դեռ բաժնետոմսեր չկան։ Հպեք բաժնետոմսի կողքի ցուցակի կոճակին՝ այն ավելացնելու համար։';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol-ն հեռացվեց ընտրյալներից';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol-ն հեռացվեց «$list» ցուցակից';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Ցուցակը ջնջվեց՝ $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Հարցեր ձեր պորտֆելի մասին';
 
   @override

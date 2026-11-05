@@ -2284,6 +2284,21 @@ class AppLocalizationsBg extends AppLocalizations {
       'В този списък все още няма акции. Докоснете бутона за списък до акция, за да я добавите.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol е премахната от любими';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol е премахната от списъка „$list“';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Списъкът е изтрит: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Въпроси за вашия портфейл';
 
   @override

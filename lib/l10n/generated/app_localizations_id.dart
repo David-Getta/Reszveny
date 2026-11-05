@@ -2279,6 +2279,21 @@ class AppLocalizationsId extends AppLocalizations {
       'Belum ada saham di daftar ini. Ketuk tombol daftar di samping saham untuk menambahkannya.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol dihapus dari favorit';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol dihapus dari $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Daftar dihapus: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Pertanyaan tentang portofolio Anda';
 
   @override

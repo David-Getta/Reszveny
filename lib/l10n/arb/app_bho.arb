@@ -888,5 +888,8 @@
   "aiReportSend": "रिपोर्ट भेजीं",
   "aiReportThanks": "धन्यवाद — हमनी के एकरा के जाँचब।",
   "aiPortfolioDisclaimer": "AI से बनल, रउरा पोर्टफ़ोलियो के बनावट के बारे में सामान्य जानकारी। ई रउरा लक्ष्य, पइसा-कौड़ी के हालत भा टैक्स के स्थिति के ध्यान में ना राखे, आ ई ना त निजी सिफारिश ह ना निवेश के सलाह।",
-  "briefNotificationTitle": "AI सारांश · आज रउआ शेयर संगे"
+  "briefNotificationTitle": "AI सारांश · आज रउआ शेयर संगे",
+  "favoriteRemoved": "{symbol} पसंदीदा से हटा दिहल गइल",
+  "listItemRemoved": "{symbol} {list} से हटा दिहल गइल",
+  "watchListDeleted": "सूची मिटा दिहल गइल: {list}"
 }

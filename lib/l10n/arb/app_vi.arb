@@ -888,5 +888,8 @@
   "aiReportSend": "Gửi báo cáo",
   "aiReportThanks": "Cảm ơn bạn — chúng tôi sẽ xem xét.",
   "aiPortfolioDisclaimer": "Thông tin chung do AI tạo về cơ cấu danh mục của bạn. Nội dung không xét đến mục tiêu, tình hình tài chính hay tình hình thuế của bạn và không phải là khuyến nghị cá nhân hay lời khuyên đầu tư.",
-  "briefNotificationTitle": "Tóm tắt AI · Hôm nay với cổ phiếu của bạn"
+  "briefNotificationTitle": "Tóm tắt AI · Hôm nay với cổ phiếu của bạn",
+  "favoriteRemoved": "Đã xóa {symbol} khỏi yêu thích",
+  "listItemRemoved": "Đã xóa {symbol} khỏi {list}",
+  "watchListDeleted": "Đã xóa danh sách: {list}"
 }

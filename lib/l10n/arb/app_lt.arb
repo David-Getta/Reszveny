@@ -888,5 +888,8 @@
   "aiReportSend": "Siųsti pranešimą",
   "aiReportThanks": "Ačiū – peržiūrėsime.",
   "aiPortfolioDisclaimer": "DI sukurta bendro pobūdžio informacija apie jūsų portfelio sudėtį. Joje neatsižvelgiama į jūsų tikslus, finansinę ar mokestinę padėtį, ir tai nėra nei asmeninė, nei investavimo rekomendacija.",
-  "briefNotificationTitle": "DI santrauka · Šiandien su jūsų akcijomis"
+  "briefNotificationTitle": "DI santrauka · Šiandien su jūsų akcijomis",
+  "favoriteRemoved": "{symbol} pašalinta iš mėgstamiausių",
+  "listItemRemoved": "{symbol} pašalinta iš sąrašo „{list}“",
+  "watchListDeleted": "Sąrašas ištrintas: {list}"
 }

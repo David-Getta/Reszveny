@@ -888,5 +888,8 @@
   "aiReportSend": "Azen aneqqis",
   "aiReportThanks": "Tanemmirt — ad tt-nesenqed.",
   "aiPortfolioDisclaimer": "Talɣut tamatut yura-tt AI ɣef wamek yebna uqrab-ik. Ur tettḥesab ara iswan-ik, tadamsa-k neɣ addad-ik n tbaḍin, ur d awellih uslig ara, ur d awellih n usersi n yidrimen ara.",
-  "briefNotificationTitle": "Agzul s AI · Ass-a d tigemmi-k"
+  "briefNotificationTitle": "Agzul s AI · Ass-a d tigemmi-k",
+  "favoriteRemoved": "{symbol} yettwakkes seg yismenyifen",
+  "listItemRemoved": "{symbol} yettwakkes seg {list}",
+  "watchListDeleted": "Tabdart tettwakkes: {list}"
 }

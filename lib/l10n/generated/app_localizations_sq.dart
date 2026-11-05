@@ -2289,6 +2289,21 @@ class AppLocalizationsSq extends AppLocalizations {
       'Ende nuk ka aksione në këtë listë. Prek butonin e listës pranë një aksioni për ta shtuar.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol u hoq nga të preferuarat';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol u hoq nga $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lista u fshi: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Pyetje për portofolin tuaj';
 
   @override

@@ -2335,6 +2335,21 @@ class AppLocalizationsBe extends AppLocalizations {
       'У гэтым спісе пакуль няма акцый. Націсніце кнопку спіса побач з акцыяй, каб дадаць яе.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol выдалена з абранага';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol выдалена са спіса «$list»';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Спіс выдалены: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Пытанні пра ваш партфель';
 
   @override

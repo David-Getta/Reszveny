@@ -888,5 +888,8 @@
   "aiReportSend": "રિપોર્ટ મોકલો",
   "aiReportThanks": "આભાર — અમે તેની તપાસ કરીશું.",
   "aiPortfolioDisclaimer": "AI-જનરેટેડ, તમારા પોર્ટફોલિયોની રચના વિશે સામાન્ય માહિતી. તે તમારાં લક્ષ્યો, નાણાકીય સ્થિતિ કે કરની સ્થિતિને ધ્યાનમાં લેતી નથી અને તે વ્યક્તિગત ભલામણ કે રોકાણ સલાહ નથી.",
-  "briefNotificationTitle": "AI સારાંશ · આજે તમારા શેર સાથે"
+  "briefNotificationTitle": "AI સારાંશ · આજે તમારા શેર સાથે",
+  "favoriteRemoved": "{symbol} મનપસંદમાંથી દૂર કરાયો",
+  "listItemRemoved": "{symbol} {list} યાદીમાંથી દૂર કરાયો",
+  "watchListDeleted": "યાદી કાઢી નાખી: {list}"
 }

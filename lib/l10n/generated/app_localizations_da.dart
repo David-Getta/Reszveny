@@ -2283,6 +2283,21 @@ class AppLocalizationsDa extends AppLocalizations {
       'Der er endnu ingen aktier på denne liste. Tryk på listeknappen ud for en aktie for at tilføje den.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol fjernet fra favoritter';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol fjernet fra “$list”';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Liste slettet: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Spørgsmål om din portefølje';
 
   @override

@@ -2287,6 +2287,21 @@ class AppLocalizationsUz extends AppLocalizations {
       'Bu roʻyxatda hali aksiyalar yoʻq. Qoʻshish uchun aksiya yonidagi roʻyxat tugmasini bosing.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol sevimlilardan olib tashlandi';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list roʻyxatidan olib tashlandi';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Roʻyxat oʻchirildi: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Portfelingiz haqida savollar';
 
   @override

@@ -888,5 +888,8 @@
   "aiReportSend": "ରିପୋର୍ଟ ପଠାନ୍ତୁ",
   "aiReportThanks": "ଧନ୍ୟବାଦ — ଆମେ ଏହାକୁ ସମୀକ୍ଷା କରିବୁ।",
   "aiPortfolioDisclaimer": "ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓର ଗଠନ ବିଷୟରେ AI-ନିର୍ମିତ ସାଧାରଣ ସୂଚନା। ଏହା ଆପଣଙ୍କ ଲକ୍ଷ୍ୟ, ଆର୍ଥିକ ସ୍ଥିତି କିମ୍ବା ଟିକସ ପରିସ୍ଥିତିକୁ ବିଚାରକୁ ନିଏ ନାହିଁ, ଏବଂ ଏହା ବ୍ୟକ୍ତିଗତ ସୁପାରିଶ କିମ୍ବା ନିବେଶ ପରାମର୍ଶ ନୁହେଁ।",
-  "briefNotificationTitle": "AI ସାରାଂଶ · ଆଜି ଆପଣଙ୍କ ସେୟାର ସହ"
+  "briefNotificationTitle": "AI ସାରାଂଶ · ଆଜି ଆପଣଙ୍କ ସେୟାର ସହ",
+  "favoriteRemoved": "{symbol} ପସନ୍ଦରୁ ହଟାଗଲା",
+  "listItemRemoved": "{symbol} {list}ରୁ ହଟାଗଲା",
+  "watchListDeleted": "ତାଲିକା ଡିଲିଟ ହେଲା: {list}"
 }

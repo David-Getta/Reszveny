@@ -793,7 +793,7 @@ class _UpdatesTile extends StatelessWidget {
           UpdateStatus.failed => l10n.updateCheckFailed,
           UpdateStatus.idle => u.channel == UpdateChannel.store ? l10n.updatesViaStore : '',
         };
-        final storeOnly = u.channel == UpdateChannel.store;
+        final noCheck = u.channel == UpdateChannel.store || !u.canCheck;
         return Column(
           children: [
             ListTile(
@@ -801,7 +801,7 @@ class _UpdatesTile extends StatelessWidget {
               title: Text(l10n.currentVersion(u.displayVersion ?? '–')),
               subtitle: statusText.isEmpty ? null : Text(statusText, style: TextStyle(color: p.muted)),
               // Keskeny képernyőn a gomb felirata két sorba törhet.
-              trailing: storeOnly
+              trailing: noCheck
                   ? null
                   : ConstrainedBox(
                       constraints: const BoxConstraints(maxWidth: 130),
@@ -816,7 +816,7 @@ class _UpdatesTile extends StatelessWidget {
                       ),
                     ),
             ),
-            if (!storeOnly) ...[
+            if (!noCheck && u.canAutoInstall) ...[
               const Divider(height: 1),
               SwitchListTile(
                 secondary: const Icon(Icons.system_update_alt_rounded),

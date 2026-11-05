@@ -2281,6 +2281,21 @@ class AppLocalizationsYo extends AppLocalizations {
       'Kò tíì sí ìpín kankan nínú àkójọ yìí. Tẹ bọ́tìnnì àkójọ lẹ́gbẹ̀ẹ́ ìpín kan láti fi kún un.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'A ti yọ $symbol kúrò nínú àwọn ààyò';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'A ti yọ $symbol kúrò nínú $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'A ti pa àkójọ rẹ́: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Àwọn ìbéèrè nípa àpò ìdókòwò rẹ';
 
   @override

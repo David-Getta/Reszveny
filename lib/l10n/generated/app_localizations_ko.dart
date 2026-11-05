@@ -2217,6 +2217,21 @@ class AppLocalizationsKo extends AppLocalizations {
   String get watchListEmpty => '이 목록에 아직 종목이 없습니다. 종목 옆의 목록 버튼을 탭하여 추가하세요.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol을(를) 즐겨찾기에서 제거했습니다';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$list에서 $symbol을(를) 제거했습니다';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return '목록을 삭제했습니다: $list';
+  }
+
+  @override
   String get portfolioAskTitle => '내 포트폴리오에 대한 질문';
 
   @override

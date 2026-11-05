@@ -2296,6 +2296,21 @@ class AppLocalizationsSt extends AppLocalizations {
       'Ha ho na ditoko lenaneng lena hajwale. Tobetsa konopo ya lenane pela setoko ho se kenya.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol e tlositswe ho tseo o di ratang';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol e tlositswe ho $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lenane le hlakotswe: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Dipotso ka potefolio ya hao';
 
   @override

@@ -26,9 +26,17 @@ class Fmt {
   String get _plus => NumberFormat.decimalPattern(numberLocale).symbols.PLUS_SIGN;
 
   /// A [decimals] tizedesre kerekített érték (a nullára kerekedő negatív 0).
+  ///
+  /// A pontosan feles érték (pl. 449,20 / 1600 = 28,075%) lebegőpontosan hol épp alatta,
+  /// hol épp fölötte van, a számolás útjától függően; egy apró, a nagyságrendhez mért
+  /// ráhagyással mindig felfelé (a nullától el) kerekedik, így ugyanaz az arány két helyen
+  /// sem látszik eltérőnek (28,08% és 28,07%).
   static double roundTo(num v, int decimals) {
     final f = math.pow(10, decimals);
-    return (v * f).roundToDouble() / f + 0.0;
+    final x = v * f;
+    if (!x.isFinite) return v.toDouble();
+    final nudge = (x.abs() * 1e-12 + 1e-9) * x.sign;
+    return (x + nudge).roundToDouble() / f + 0.0;
   }
 
   /// Hiányzó adat jelölése (fordított szöveg).
@@ -71,7 +79,8 @@ class Fmt {
 
   /// A szám a nyelv formátumában; a nullára kerekedő negatív érték „0,00” (nem „-0,00”).
   String _number(num v, int decimals) {
-    final shown = v.isFinite && roundTo(v, decimals) == 0 ? 0 : v;
+    // Előre kerekítve: a formázó a feles értéket a lebegőpontos alakja szerint vinné le vagy fel.
+    final shown = v.isFinite ? roundTo(v, decimals) : v;
     return NumberFormat.decimalPatternDigits(locale: numberLocale, decimalDigits: decimals).format(shown);
   }
 

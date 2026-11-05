@@ -2282,6 +2282,21 @@ class AppLocalizationsHt extends AppLocalizations {
       'Poko gen aksyon nan lis sa a. Tape bouton lis la bò kote yon aksyon pou ajoute l.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol retire nan favori';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol retire nan $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lis la efase: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Kesyon sou pòtfèy ou';
 
   @override

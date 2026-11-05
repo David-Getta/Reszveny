@@ -2280,6 +2280,21 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਇਸ ਸੂਚੀ ਵਿੱਚ ਅਜੇ ਕੋਈ ਸ਼ੇਅਰ ਨਹੀਂ ਹੈ। ਸ਼ਾਮਲ ਕਰਨ ਲਈ ਸ਼ੇਅਰ ਦੇ ਕੋਲ ਸੂਚੀ ਬਟਨ \'ਤੇ ਟੈਪ ਕਰੋ।';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol ਮਨਪਸੰਦ ਵਿੱਚੋਂ ਹਟਾਇਆ ਗਿਆ';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list ਵਿੱਚੋਂ ਹਟਾਇਆ ਗਿਆ';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'ਸੂਚੀ ਮਿਟਾਈ ਗਈ: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'ਤੁਹਾਡੇ ਪੋਰਟਫ਼ੋਲੀਓ ਬਾਰੇ ਸਵਾਲ';
 
   @override

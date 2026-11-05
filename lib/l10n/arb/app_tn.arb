@@ -888,5 +888,8 @@
   "aiReportSend": "Romela pego",
   "aiReportThanks": "Re a leboga — re tla e sekaseka.",
   "aiPortfolioDisclaimer": "Tshedimosetso e e akaretsang e e dirilweng ke AI ka ga popego ya potefolio ya gago. Ga e tseye tsia maikaelelo a gago, madi a gago kgotsa seemo sa gago sa lekgetho, e bile ga se tshitshinyo e e go lebaganeng kgotsa kgakololo ya peeletso.",
-  "briefNotificationTitle": "Kakaretso ya AI · Gompieno le dishere tsa gago"
+  "briefNotificationTitle": "Kakaretso ya AI · Gompieno le dishere tsa gago",
+  "favoriteRemoved": "{symbol} e tlositswe mo go tse o di ratang",
+  "listItemRemoved": "{symbol} e tlositswe mo go {list}",
+  "watchListDeleted": "Lenaane le phimotswe: {list}"
 }

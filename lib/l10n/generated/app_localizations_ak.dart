@@ -2283,6 +2283,21 @@ class AppLocalizationsAk extends AppLocalizations {
       'Stɔk biara nni nhyehyɛe yi mu da. Mia nhyehyɛe bɔtɔn a ɛbɛn stɔk bi na fa ka ho.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Wɔayi $symbol afi nea mepɛ mu';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Wɔayi $symbol afi $list mu';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Wɔayi nhyehyɛe no afi hɔ: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Nsɛmmisa fa wo nkyɛfa ho';
 
   @override

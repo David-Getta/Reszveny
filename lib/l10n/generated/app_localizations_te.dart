@@ -2289,6 +2289,21 @@ class AppLocalizationsTe extends AppLocalizations {
       'ఈ జాబితాలో ఇంకా స్టాక్‌లు లేవు. జోడించడానికి స్టాక్ పక్కన ఉన్న జాబితా బటన్‌ను నొక్కండి.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol ఇష్టమైనవాటి నుండి తీసివేయబడింది';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list నుండి తీసివేయబడింది';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'జాబితా తొలగించబడింది: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'మీ పోర్ట్‌ఫోలియో గురించి ప్రశ్నలు';
 
   @override

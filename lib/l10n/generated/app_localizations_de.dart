@@ -2298,6 +2298,21 @@ class AppLocalizationsDe extends AppLocalizations {
       'Noch keine Aktien in dieser Liste. Zum Hinzufügen auf die Listen-Schaltfläche neben einer Aktie tippen.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol aus Favoriten entfernt';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol aus „$list“ entfernt';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Liste gelöscht: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Fragen zu deinem Portfolio';
 
   @override

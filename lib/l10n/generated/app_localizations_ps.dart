@@ -2274,6 +2274,21 @@ class AppLocalizationsPs extends AppLocalizations {
       'په دې لېست کې لا تر اوسه هېڅ ونډه نشته. د ورزیاتولو لپاره د ونډې تر څنګ د لېست تڼۍ ټک کړئ.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol له خوښو لرې شو';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol له $list لرې شو';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'لېست ړنګ شو: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'ستاسو د پورټفولیو په اړه پوښتنې';
 
   @override

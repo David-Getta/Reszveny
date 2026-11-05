@@ -888,5 +888,8 @@
   "aiReportSend": "Aika rahoto",
   "aiReportThanks": "Mun gode — za mu duba ta.",
   "aiPortfolioDisclaimer": "Bayanan gaba ɗaya da AI ya ƙirƙira game da tsarin jakar hannun jarinka. Ba sa la'akari da burinka, yanayin kuɗinka ko na harajinka, kuma ba shawara ta musamman gare ka ba ne, ba kuma shawarar zuba jari ba ne.",
-  "briefNotificationTitle": "Taƙaitaccen AI · Yau tare da hannun jarinka"
+  "briefNotificationTitle": "Taƙaitaccen AI · Yau tare da hannun jarinka",
+  "favoriteRemoved": "An cire {symbol} daga abubuwan da aka fi so",
+  "listItemRemoved": "An cire {symbol} daga {list}",
+  "watchListDeleted": "An share jeri: {list}"
 }

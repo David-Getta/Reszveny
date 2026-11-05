@@ -2275,6 +2275,21 @@ class AppLocalizationsHe extends AppLocalizations {
       'אין עדיין מניות ברשימה הזו. הקישו על כפתור הרשימה ליד מניה כדי להוסיף אותה.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol הוסרה מהמועדפים';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol הוסרה מהרשימה \"$list\"';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'הרשימה נמחקה: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'שאלות על התיק שלך';
 
   @override

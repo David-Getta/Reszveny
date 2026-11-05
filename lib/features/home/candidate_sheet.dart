@@ -10,6 +10,7 @@ import '../recognition/stock_recognizer.dart';
 /// csillaggal vagy egyszerre mind a kedvencek közé tehetők.
 Future<StockCandidate?> showCandidateSheet(BuildContext context, RecognitionResult result) {
   return showModalBottomSheet<StockCandidate>(
+    useRootNavigator: true,
     context: context,
     showDragHandle: true,
     isScrollControlled: true,

@@ -2289,6 +2289,21 @@ class AppLocalizationsIt extends AppLocalizations {
       'Ancora nessuna azione in questa lista. Tocca il pulsante lista accanto a un\'azione per aggiungerla.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol rimosso dai preferiti';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol rimosso da «$list»';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lista eliminata: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Domande sul tuo portafoglio';
 
   @override

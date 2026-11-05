@@ -888,5 +888,8 @@
   "aiReportSend": "Rhumela xiviko",
   "aiReportThanks": "Ha khensa — hi ta yi kambela.",
   "aiPortfolioDisclaimer": "Rungula ro angarhela leri endliweke hi AI mayelana ni ndlela leyi phothifoliyo ya wena yi vumbiweke ha yona. A ri languti swikongomelo swa wena, timali ta wena kumbe xiyimo xa wena xa xibalo, naswona a hi xibumabumelo xa wena n'wini kumbe ndzayo ya vuvekisi.",
-  "briefNotificationTitle": "Nkomiso wa AI · Namuntlha ni swiavelo swa wena"
+  "briefNotificationTitle": "Nkomiso wa AI · Namuntlha ni swiavelo swa wena",
+  "favoriteRemoved": "{symbol} yi susiwile eka leswi u swi rhandzaka",
+  "listItemRemoved": "{symbol} yi susiwile eka {list}",
+  "watchListDeleted": "Nxaxamelo wu suriwile: {list}"
 }

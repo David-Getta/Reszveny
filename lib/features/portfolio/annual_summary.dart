@@ -108,6 +108,7 @@ List<_Line> _lines(AppLocalizations l10n, Fmt fmt, SummaryRow r) {
 /// realizált nyereség (bevétel és bekerülési érték), a kapott osztalék és a
 /// fizetett díj; szövegként megosztható.
 Future<void> showAnnualSummary(BuildContext context) => showModalBottomSheet<void>(
+  useRootNavigator: true,
   context: context,
   showDragHandle: true,
   isScrollControlled: true,

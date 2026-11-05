@@ -2282,6 +2282,21 @@ class AppLocalizationsEn extends AppLocalizations {
       'No stocks in this list yet. Tap the list button next to a stock to add it.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol removed from favorites';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol removed from $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'List deleted: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Questions about your portfolio';
 
   @override

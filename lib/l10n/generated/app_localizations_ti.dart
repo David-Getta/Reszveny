@@ -2249,6 +2249,21 @@ class AppLocalizationsTi extends AppLocalizations {
       'ኣብዚ ዝርዝር ክሳብ ሕጂ ዝኾነ ኣክሲዮን የለን። ንምውሳኽ ኣብ ጥቓ ኣክሲዮን ዘሎ መልጎም ዝርዝር ጠውቕ።';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol ካብ ዝተፈተዉ ተኣልዩ';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol ካብ $list ተኣልዩ';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'ዝርዝር ተሰሪዙ: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'ሕቶታት ብዛዕባ ፖርትፎሊዮኹም';
 
   @override

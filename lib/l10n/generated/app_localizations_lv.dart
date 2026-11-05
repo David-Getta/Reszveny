@@ -2316,6 +2316,21 @@ class AppLocalizationsLv extends AppLocalizations {
       'Šajā sarakstā vēl nav akciju. Pieskarieties saraksta pogai blakus akcijai, lai to pievienotu.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Akcija $symbol noņemta no izlases';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Akcija $symbol noņemta no saraksta „$list”';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Saraksts izdzēsts: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Jautājumi par jūsu portfeli';
 
   @override

@@ -2298,6 +2298,21 @@ class AppLocalizationsMk extends AppLocalizations {
       'Во оваа листа сѐ уште нема акции. Допрете го копчето за листа до акцијата за да ја додадете.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol е отстранет од омилени';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol е отстранет од $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Листата е избришана: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Прашања за вашето портфолио';
 
   @override

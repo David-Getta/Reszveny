@@ -2318,6 +2318,21 @@ class AppLocalizationsBs extends AppLocalizations {
       'Na ovoj listi još nema dionica. Dodirnite dugme liste pored dionice da je dodate.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Dionica $symbol uklonjena je iz favorita';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Dionica $symbol uklonjena je sa liste „$list“';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lista je izbrisana: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Pitanja o vašem portfoliju';
 
   @override

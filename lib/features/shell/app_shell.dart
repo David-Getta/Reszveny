@@ -551,14 +551,32 @@ extension on _AppShellState {
             key: _tabKeys[i - 1],
             onGenerateRoute: (settings) => MaterialPageRoute<void>(settings: settings, builder: (_) => root),
           );
-    return IndexedStack(
-      index: _tab,
-      children: [
-        home,
-        tab(1, PortfolioPage(onOpenSymbol: _openSymbol)),
-        tab(2, AlertsPage(onOpenSymbol: _openSymbol)),
-        tab(3, const SettingsPage()),
-      ],
+    // Esc (billentyűzettel, asztalon és weben) egy oldalt lép vissza a fülön. Az oldal
+    // útvonalának saját „bezárás” művelete ki van kapcsolva (nem dialógus), ezért kell itt.
+    // Szövegmezőben nem: ott a mező (és a javaslatlista) kapja.
+    return Focus(
+      canRequestFocus: false,
+      skipTraversal: true,
+      onKeyEvent: (node, event) {
+        if (event is! KeyDownEvent || event.logicalKey != LogicalKeyboardKey.escape) return KeyEventResult.ignored;
+        final focused = FocusManager.instance.primaryFocus?.context;
+        if (focused == null || focused.findAncestorWidgetOfExactType<EditableText>() != null) {
+          return KeyEventResult.ignored;
+        }
+        final nav = _currentNav;
+        if (nav == null || !nav.canPop()) return KeyEventResult.ignored;
+        nav.maybePop();
+        return KeyEventResult.handled;
+      },
+      child: IndexedStack(
+        index: _tab,
+        children: [
+          home,
+          tab(1, PortfolioPage(onOpenSymbol: _openSymbol)),
+          tab(2, AlertsPage(onOpenSymbol: _openSymbol)),
+          tab(3, const SettingsPage()),
+        ],
+      ),
     );
   }
 

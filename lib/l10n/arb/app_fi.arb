@@ -888,5 +888,8 @@
   "aiReportSend": "Lähetä ilmoitus",
   "aiReportThanks": "Kiitos – tarkistamme sen.",
   "aiPortfolioDisclaimer": "Tekoälyn tuottamaa yleistä tietoa salkkusi koostumuksesta. Siinä ei oteta huomioon tavoitteitasi, taloudellista tilannettasi tai verotilannettasi, eikä se ole henkilökohtainen suositus tai sijoitusneuvontaa.",
-  "briefNotificationTitle": "Tekoälyn yhteenveto · Tänään osakkeidesi kanssa"
+  "briefNotificationTitle": "Tekoälyn yhteenveto · Tänään osakkeidesi kanssa",
+  "favoriteRemoved": "{symbol} poistettu suosikeista",
+  "listItemRemoved": "{symbol} poistettu listalta ”{list}”",
+  "watchListDeleted": "Lista poistettu: {list}"
 }

@@ -888,5 +888,8 @@
   "aiReportSend": "Kirim laporan",
   "aiReportThanks": "Matur nuwun — bakal kita priksa.",
   "aiPortfolioDisclaimer": "Informasi umum sing digawe dening AI babagan komposisi portofolio sampeyan. Iki ora nimbang tujuan, kahanan finansial, utawa kahanan pajek sampeyan, lan dudu rekomendasi pribadi utawa saran investasi.",
-  "briefNotificationTitle": "Ringkesan AI · Dina iki karo saham sampeyan"
+  "briefNotificationTitle": "Ringkesan AI · Dina iki karo saham sampeyan",
+  "favoriteRemoved": "{symbol} wis dibusak saka favorit",
+  "listItemRemoved": "{symbol} wis dibusak saka {list}",
+  "watchListDeleted": "Dhaptar wis dibusak: {list}"
 }

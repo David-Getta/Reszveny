@@ -2263,6 +2263,21 @@ class AppLocalizationsKm extends AppLocalizations {
       'មិនទាន់មានភាគហ៊ុននៅក្នុងបញ្ជីនេះទេ។ ចុចប៊ូតុងបញ្ជីនៅក្បែរភាគហ៊ុនដើម្បីបន្ថែមវា។';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'បានដក $symbol ចេញពីចំណូលចិត្ត';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'បានដក $symbol ចេញពី $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'បានលុបបញ្ជី៖ $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'សំណួរអំពីផលប័ត្ររបស់អ្នក';
 
   @override

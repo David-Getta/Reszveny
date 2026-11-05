@@ -2286,6 +2286,21 @@ class AppLocalizationsFi extends AppLocalizations {
       'Tällä listalla ei ole vielä osakkeita. Lisää osake napauttamalla sen vieressä olevaa listapainiketta.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol poistettu suosikeista';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol poistettu listalta ”$list”';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lista poistettu: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Kysymyksiä salkustasi';
 
   @override

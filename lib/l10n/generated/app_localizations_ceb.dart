@@ -2294,6 +2294,21 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Wala pay stock niining listaha. I-tap ang buton sa lista tupad sa stock aron idugang kini.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Natangtang ang $symbol sa mga paborito';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Natangtang ang $symbol sa $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Napapas ang lista: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Mga pangutana bahin sa imong portfolio';
 
   @override

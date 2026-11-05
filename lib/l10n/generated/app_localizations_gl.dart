@@ -2300,6 +2300,21 @@ class AppLocalizationsGl extends AppLocalizations {
       'Aínda non hai accións nesta lista. Toca o botón de lista xunto a unha acción para engadila.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Quitouse $symbol de favoritos';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Quitouse $symbol de «$list»';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Eliminouse a lista: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Preguntas sobre a túa carteira';
 
   @override

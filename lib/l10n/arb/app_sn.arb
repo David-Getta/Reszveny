@@ -888,5 +888,8 @@
   "aiReportSend": "Tumira mushumo",
   "aiReportThanks": "Tatenda — tichazviongorora.",
   "aiPortfolioDisclaimer": "Ruzivo rwese-rwese rwakagadzirwa neAI nezve kuumbwa kwepotiforiyo yako. Harufungi zvinangwa zvako, mari yako kana mamiriro emitero yako, uye harusi zano rakanangana newe kana zano rekuisa mari.",
-  "briefNotificationTitle": "Pfupiso yeAI · Nhasi nemasheya ako"
+  "briefNotificationTitle": "Pfupiso yeAI · Nhasi nemasheya ako",
+  "favoriteRemoved": "{symbol} yabviswa pane zvaunofarira",
+  "listItemRemoved": "{symbol} yabviswa pa {list}",
+  "watchListDeleted": "Rondedzero yadzimwa: {list}"
 }

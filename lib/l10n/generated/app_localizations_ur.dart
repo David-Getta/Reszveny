@@ -2282,6 +2282,21 @@ class AppLocalizationsUr extends AppLocalizations {
       'اس فہرست میں ابھی کوئی شیئر نہیں ہے۔ شامل کرنے کے لیے شیئر کے ساتھ فہرست بٹن پر ٹیپ کریں۔';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol کو پسندیدہ سے ہٹا دیا گیا';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol کو $list سے ہٹا دیا گیا';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'فہرست حذف کر دی گئی: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'آپ کے پورٹ فولیو کے بارے میں سوالات';
 
   @override

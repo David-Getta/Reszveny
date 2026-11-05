@@ -888,5 +888,8 @@
   "aiReportSend": "Ipatulod ti report",
   "aiReportThanks": "Agyamankami — repasuenmi daytoy.",
   "aiPortfolioDisclaimer": "Sapasap nga impormasion nga inaramid ti AI maipapan iti komposision ti portfolio-m. Saanna nga ikonsiderar dagiti panggepmo, pinansiam wenno kasasaad ti buismo, ken saan a personal a rekomendasion wenno balakad iti panagpuonan.",
-  "briefNotificationTitle": "AI a pakabuklan · Ita nga aldaw kadagiti stock-mo"
+  "briefNotificationTitle": "AI a pakabuklan · Ita nga aldaw kadagiti stock-mo",
+  "favoriteRemoved": "Naikkat ti {symbol} kadagiti paborito",
+  "listItemRemoved": "Naikkat ti {symbol} iti {list}",
+  "watchListDeleted": "Naikkat ti listaan: {list}"
 }

@@ -2268,6 +2268,21 @@ class AppLocalizationsMos extends AppLocalizations {
       'Aksyõ ka be liste-kãngã pʋgẽ ye. Ningi listã butõ wã sẽn be aksyõã taobã n paas-a.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol yiisame nong-n-yɩɩda pʋgẽ';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol yiisame $list pʋgẽ';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Listã yẽesame: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Sokre: f portfey';
 
   @override

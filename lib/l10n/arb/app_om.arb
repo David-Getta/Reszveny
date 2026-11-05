@@ -888,5 +888,8 @@
   "aiReportSend": "Gabaasa ergi",
   "aiReportThanks": "Galatoomi — ni gamaaggamna.",
   "aiPortfolioDisclaimer": "Odeeffannoo waliigalaa AI'n uumame, waa'ee caasaa poortfooliyoo keetii. Kaayyoo kee, haala maallaqaa kee ykn haala gibira keetii hin ilaalu, akkasumas yaada dhuunfaa siif kenname ykn gorsa invastimantii miti.",
-  "briefNotificationTitle": "Cuunfaa AI · Har’a aksiyoonota kee waliin"
+  "briefNotificationTitle": "Cuunfaa AI · Har’a aksiyoonota kee waliin",
+  "favoriteRemoved": "{symbol} filatamoo irraa haqameera",
+  "listItemRemoved": "{symbol} {list} irraa haqameera",
+  "watchListDeleted": "Tarreen haqameera: {list}"
 }

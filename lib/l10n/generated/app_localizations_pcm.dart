@@ -2281,6 +2281,21 @@ class AppLocalizationsPcm extends AppLocalizations {
       'No stock dey dis list yet. Tap di list button wey dey near any stock to add am.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol don comot from favourites';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol don comot from $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'List don delete: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Questions about your portfolio';
 
   @override

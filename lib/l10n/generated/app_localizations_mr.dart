@@ -2281,6 +2281,21 @@ class AppLocalizationsMr extends AppLocalizations {
       'या यादीत अद्याप कोणतेही शेअर नाहीत. जोडण्यासाठी शेअरच्या शेजारील यादी बटणावर टॅप करा.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol आवडत्यांमधून काढले';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list मधून काढले';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'यादी हटवली: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'तुमच्या पोर्टफोलिओबद्दल प्रश्न';
 
   @override

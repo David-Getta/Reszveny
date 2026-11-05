@@ -888,5 +888,8 @@
   "aiReportSend": "ሪፖርት ላክ",
   "aiReportThanks": "እናመሰግናለን — እንገመግመዋለን።",
   "aiPortfolioDisclaimer": "በAI የተፈጠረ፣ ስለ ፖርትፎሊዮዎ ስብጥር አጠቃላይ መረጃ። ግቦችዎን፣ የገንዘብ ሁኔታዎን ወይም የግብር ሁኔታዎን ከግምት ውስጥ አያስገባም፤ የግል ምክረ ሐሳብ ወይም የኢንቨስትመንት ምክር አይደለም።",
-  "briefNotificationTitle": "የAI ማጠቃለያ · ዛሬ ከአክሲዮኖችዎ ጋር"
+  "briefNotificationTitle": "የAI ማጠቃለያ · ዛሬ ከአክሲዮኖችዎ ጋር",
+  "favoriteRemoved": "{symbol} ከተወዳጆች ተወግዷል",
+  "listItemRemoved": "{symbol} ከ{list} ተወግዷል",
+  "watchListDeleted": "ዝርዝሩ ተሰርዟል፦ {list}"
 }

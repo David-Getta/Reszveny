@@ -2290,6 +2290,21 @@ class AppLocalizationsRn extends AppLocalizations {
       'Nta migabane iri kuri uru rutonde ubu. Fyonda akabuto k\'urutonde kari iruhande y\'umugabane kugira uwushireko.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol yakuwe mu vyo ukunda';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol yakuwe kuri $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Urutonde rwafuswe: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Ibibazo ku ishoramari ryawe';
 
   @override

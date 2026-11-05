@@ -888,5 +888,8 @@
   "aiReportSend": "Raporu gönder",
   "aiReportThanks": "Teşekkürler — inceleyeceğiz.",
   "aiPortfolioDisclaimer": "Portföyünüzün bileşimine dair yapay zekâ tarafından oluşturulmuş genel bilgidir. Hedeflerinizi, mali durumunuzu veya vergi durumunuzu dikkate almaz; kişiye özel bir öneri veya yatırım tavsiyesi değildir.",
-  "briefNotificationTitle": "Yapay zekâ özeti · Bugün hisselerinle"
+  "briefNotificationTitle": "Yapay zekâ özeti · Bugün hisselerinle",
+  "favoriteRemoved": "{symbol} favorilerden kaldırıldı",
+  "listItemRemoved": "{symbol}, {list} listesinden kaldırıldı",
+  "watchListDeleted": "Liste silindi: {list}"
 }

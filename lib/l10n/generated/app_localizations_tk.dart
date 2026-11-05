@@ -2284,6 +2284,21 @@ class AppLocalizationsTk extends AppLocalizations {
       'Bu sanawda entek paýnama ýok. Goşmak üçin paýnamanyň gapdalyndaky sanaw düwmesine basyň.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol saýlananlardan aýryldy';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list sanawyndan aýryldy';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Sanaw pozuldy: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Portfeliňiz barada soraglar';
 
   @override

@@ -2276,6 +2276,21 @@ class AppLocalizationsMai extends AppLocalizations {
       'एहि सूचीमे एखन धरि कोनो शेयर नहि अछि। जोड़बाक लेल शेयरक बगलक सूची बटन दबाउ।';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol पसंदीदासँ हटाओल गेल';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list सूचीसँ हटाओल गेल';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'सूची मेटाओल गेल: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'अहाँक पोर्टफ़ोलियोक बारेमे प्रश्न';
 
   @override

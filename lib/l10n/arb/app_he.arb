@@ -888,5 +888,8 @@
   "aiReportSend": "שליחת דיווח",
   "aiReportThanks": "תודה — נבדוק את זה.",
   "aiPortfolioDisclaimer": "מידע כללי שנוצר על ידי AI על הרכב תיק ההשקעות שלך. הוא אינו מתחשב ביעדים, במצב הפיננסי או במצב המס שלך, ואינו מהווה המלצה אישית או ייעוץ השקעות.",
-  "briefNotificationTitle": "סיכום AI · היום עם המניות שלך"
+  "briefNotificationTitle": "סיכום AI · היום עם המניות שלך",
+  "favoriteRemoved": "{symbol} הוסרה מהמועדפים",
+  "listItemRemoved": "{symbol} הוסרה מהרשימה \"{list}\"",
+  "watchListDeleted": "הרשימה נמחקה: {list}"
 }

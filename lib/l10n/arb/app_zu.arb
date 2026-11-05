@@ -888,5 +888,8 @@
   "aiReportSend": "Thumela umbiko",
   "aiReportThanks": "Siyabonga — sizowubuyekeza.",
   "aiPortfolioDisclaimer": "Ulwazi olujwayelekile olwenziwe yi-AI mayelana nokwakheka kwephothifoliyo yakho. Alubheki izinhloso zakho, isimo sakho sezimali noma isimo sakho sentela, futhi aluyona isincomo esiqondene nawe noma iseluleko sokutshala imali.",
-  "briefNotificationTitle": "Isifinyezo se-AI · Namuhla namasheya akho"
+  "briefNotificationTitle": "Isifinyezo se-AI · Namuhla namasheya akho",
+  "favoriteRemoved": "I-{symbol} isusiwe kuzintandokazi",
+  "listItemRemoved": "I-{symbol} isusiwe ku-{list}",
+  "watchListDeleted": "Uhlu lususiwe: {list}"
 }

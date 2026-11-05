@@ -2283,6 +2283,21 @@ class AppLocalizationsKi extends AppLocalizations {
       'Gũtirĩ hisa orodha-inĩ ĩno o na rĩu. Hũtia kĩhũthio kĩa orodha hakuhĩ na hisa nĩguo ũmĩongerere.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol nĩyerutwo harĩ iria wendete';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol nĩyerutwo harĩ $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Orodha nĩyeherio: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Ciũria igiĩ hisa ciaku';
 
   @override

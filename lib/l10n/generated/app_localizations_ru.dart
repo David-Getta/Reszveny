@@ -834,7 +834,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Распознавание фото, данные в реальном времени, графики, избранное и все 120 языка включены в каждый тариф. Лимит относится к ИИ-анализам.';
+      'Распознавание фото, данные в реальном времени, графики, избранное и все 120 языков включены в каждый тариф. Лимит относится к ИИ-анализам.';
 
   @override
   String get searchLanguages => 'Поиск языков…';
@@ -2123,7 +2123,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get briefHint =>
-      'Короткая AI-сводка о том, как сегодня изменились ваш портфель и избранное и что о них пишут свежие новости. Анализ не расходуется.';
+      'Короткая ИИ-сводка о том, как сегодня изменились ваш портфель и избранное и что о них пишут свежие новости. Анализ не расходуется.';
 
   @override
   String get briefRefresh => 'Обновить';
@@ -2335,6 +2335,21 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'В этом списке пока нет акций. Нажмите кнопку списка рядом с акцией, чтобы добавить её.';
+
+  @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol удалён из избранного';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol удалён из списка «$list»';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Список удалён: $list';
+  }
 
   @override
   String get portfolioAskTitle => 'Вопросы по вашему портфелю';

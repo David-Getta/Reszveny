@@ -888,5 +888,8 @@
   "aiReportSend": "तक्रार पाठवा",
   "aiReportThanks": "धन्यवाद — आम्ही ते तपासू.",
   "aiPortfolioDisclaimer": "तुमच्या पोर्टफोलिओच्या रचनेबद्दल AI-निर्मित सर्वसाधारण माहिती. यात तुमची उद्दिष्टे, आर्थिक स्थिती किंवा कर परिस्थिती विचारात घेतलेली नाही, आणि ही वैयक्तिक शिफारस किंवा गुंतवणूक सल्ला नाही.",
-  "briefNotificationTitle": "AI सारांश · आज तुमच्या शेअर्ससोबत"
+  "briefNotificationTitle": "AI सारांश · आज तुमच्या शेअर्ससोबत",
+  "favoriteRemoved": "{symbol} आवडत्यांमधून काढले",
+  "listItemRemoved": "{symbol} {list} मधून काढले",
+  "watchListDeleted": "यादी हटवली: {list}"
 }

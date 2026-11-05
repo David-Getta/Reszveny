@@ -888,5 +888,8 @@
   "aiReportSend": "ส่งรายงาน",
   "aiReportThanks": "ขอบคุณ เราจะตรวจสอบ",
   "aiPortfolioDisclaimer": "ข้อมูลทั่วไปเกี่ยวกับองค์ประกอบของพอร์ตโฟลิโอของคุณที่สร้างโดย AI ไม่ได้คำนึงถึงเป้าหมาย สถานะทางการเงิน หรือสถานการณ์ทางภาษีของคุณ และไม่ใช่คำแนะนำเฉพาะบุคคลหรือคำแนะนำในการลงทุน",
-  "briefNotificationTitle": "สรุปโดย AI · วันนี้กับหุ้นของคุณ"
+  "briefNotificationTitle": "สรุปโดย AI · วันนี้กับหุ้นของคุณ",
+  "favoriteRemoved": "นำ {symbol} ออกจากรายการโปรดแล้ว",
+  "listItemRemoved": "นำ {symbol} ออกจาก {list} แล้ว",
+  "watchListDeleted": "ลบรายการแล้ว: {list}"
 }

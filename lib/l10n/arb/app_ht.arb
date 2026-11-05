@@ -888,5 +888,8 @@
   "aiReportSend": "Voye siyalman an",
   "aiReportThanks": "Mèsi — n ap egzamine l.",
   "aiPortfolioDisclaimer": "Enfòmasyon jeneral AI jenere sou konpozisyon pòtfèy ou. Li pa pran objektif ou, sitiyasyon finansye ou oswa sitiyasyon taks ou an kont, epi se pa yon rekòmandasyon pèsonèl ni yon konsèy envestisman.",
-  "briefNotificationTitle": "Rezime AI · Jodi a ak aksyon ou yo"
+  "briefNotificationTitle": "Rezime AI · Jodi a ak aksyon ou yo",
+  "favoriteRemoved": "{symbol} retire nan favori",
+  "listItemRemoved": "{symbol} retire nan {list}",
+  "watchListDeleted": "Lis la efase: {list}"
 }

@@ -2339,6 +2339,21 @@ class AppLocalizationsSl extends AppLocalizations {
       'Na tem seznamu še ni delnic. Za dodajanje tapnite gumb seznama ob delnici.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol odstranjen iz priljubljenih';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol odstranjen s seznama $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Seznam izbrisan: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Vprašanja o vašem portfelju';
 
   @override

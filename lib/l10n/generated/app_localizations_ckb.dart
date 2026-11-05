@@ -2283,6 +2283,21 @@ class AppLocalizationsCkb extends AppLocalizations {
       'هێشتا هیچ پشکێک لەم لیستەدا نییە. بۆ زیادکردن، دوگمەی لیست لە تەنیشت پشکەکە دابگرە.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol لە دڵخوازەکان لابرا';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol لە $list لابرا';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'لیست سڕایەوە: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'پرسیارەکان دەربارەی پۆرتفۆلیۆکەت';
 
   @override

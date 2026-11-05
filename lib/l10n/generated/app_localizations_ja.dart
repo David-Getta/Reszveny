@@ -2208,6 +2208,21 @@ class AppLocalizationsJa extends AppLocalizations {
   String get watchListEmpty => 'このリストにはまだ銘柄がありません。銘柄の横にあるリストボタンをタップして追加してください。';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbolをお気に入りから削除しました';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbolを「$list」から削除しました';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'リスト「$list」を削除しました';
+  }
+
+  @override
   String get portfolioAskTitle => 'ポートフォリオについての質問';
 
   @override

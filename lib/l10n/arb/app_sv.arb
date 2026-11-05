@@ -888,5 +888,8 @@
   "aiReportSend": "Skicka rapport",
   "aiReportThanks": "Tack – vi tittar på det.",
   "aiPortfolioDisclaimer": "AI-genererad, allmän information om sammansättningen av din portfölj. Den tar inte hänsyn till dina mål, din ekonomi eller din skattesituation och är inte en personlig rekommendation eller investeringsrådgivning.",
-  "briefNotificationTitle": "AI-sammanfattning · I dag med dina aktier"
+  "briefNotificationTitle": "AI-sammanfattning · I dag med dina aktier",
+  "favoriteRemoved": "{symbol} har tagits bort från favoriter",
+  "listItemRemoved": "{symbol} har tagits bort från {list}",
+  "watchListDeleted": "Listan har raderats: {list}"
 }

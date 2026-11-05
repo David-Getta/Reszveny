@@ -2285,6 +2285,21 @@ class AppLocalizationsKy extends AppLocalizations {
       'Бул тизмеде азырынча акциялар жок. Кошуу үчүн акциянын жанындагы тизме баскычын басыңыз.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol тандалмалардан өчүрүлдү';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol «$list» тизмесинен өчүрүлдү';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Тизме өчүрүлдү: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Портфелиңиз боюнча суроолор';
 
   @override

@@ -2290,6 +2290,21 @@ class AppLocalizationsMl extends AppLocalizations {
       'ഈ ലിസ്റ്റിൽ ഇതുവരെ ഓഹരികളൊന്നുമില്ല. ചേർക്കാൻ ഓഹരിയുടെ അടുത്തുള്ള ലിസ്റ്റ് ബട്ടൺ ടാപ്പ് ചെയ്യുക.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol പ്രിയപ്പെട്ടവയിൽ നിന്ന് നീക്കം ചെയ്തു';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list-ൽ നിന്ന് നീക്കം ചെയ്തു';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'ലിസ്റ്റ് ഇല്ലാതാക്കി: $list';
+  }
+
+  @override
   String get portfolioAskTitle =>
       'നിങ്ങളുടെ പോർട്ട്ഫോളിയോ സംബന്ധിച്ച ചോദ്യങ്ങൾ';
 

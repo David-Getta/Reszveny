@@ -888,5 +888,8 @@
   "aiReportSend": "Willakuyta apachiy",
   "aiReportThanks": "Sulpayki — qhawasaqku.",
   "aiPortfolioDisclaimer": "AI ruwasqan sapsi willakuy, portafolioykiq imaynam huñusqa kasqanmanta. Manam qhawanchu munasqaykikunata, qullqi kayniykita nitaq impuestoykikunatapas, manataq qampaq sapan yuyaychaychu nitaq qullqi churanapaq yuyaychaychu.",
-  "briefNotificationTitle": "AI pisichasqa · Kunan p’unchay acciónniykikunawan"
+  "briefNotificationTitle": "AI pisichasqa · Kunan p’unchay acciónniykikunawan",
+  "favoriteRemoved": "{symbol} munasqakunamanta hurqusqaña",
+  "listItemRemoved": "{symbol} {list} listamanta hurqusqaña",
+  "watchListDeleted": "Lista pichasqaña: {list}"
 }

@@ -888,5 +888,8 @@
   "aiReportSend": "Tũma ũhoro",
   "aiReportThanks": "Nĩ wega — nĩ tũkũũrora.",
   "aiPortfolioDisclaimer": "Ũhoro wa ũguo tu ũrĩa AI yathondekire ũkoniĩ ũrĩa hisa ciaku ciakĩtwo. Ndũcũthagĩrĩria mĩoroto yaku, ũhoro wa mbeca ciaku kana wa igooti, na ti ũtaaro ũkũrorete wiki kana ũtaaro wa investment.",
-  "briefNotificationTitle": "Mũgĩkĩro wa AI · Ũmũthĩ na hisa ciaku"
+  "briefNotificationTitle": "Mũgĩkĩro wa AI · Ũmũthĩ na hisa ciaku",
+  "favoriteRemoved": "{symbol} nĩyerutwo harĩ iria wendete",
+  "listItemRemoved": "{symbol} nĩyerutwo harĩ {list}",
+  "watchListDeleted": "Orodha nĩyeherio: {list}"
 }

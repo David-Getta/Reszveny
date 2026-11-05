@@ -836,7 +836,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get planFeaturesCommon =>
-      'Rozpoznawanie zdjęć, dane na żywo, wykresy, ulubione i wszystkie 120 języki są dostępne w każdym planie. Limit dotyczy analiz AI.';
+      'Rozpoznawanie zdjęć, dane na żywo, wykresy, ulubione i wszystkie 120 języków są dostępne w każdym planie. Limit dotyczy analiz AI.';
 
   @override
   String get searchLanguages => 'Szukaj języków…';
@@ -2336,6 +2336,21 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Na tej liście nie ma jeszcze akcji. Stuknij przycisk listy obok akcji, aby ją dodać.';
+
+  @override
+  String favoriteRemoved(String symbol) {
+    return 'Usunięto $symbol z ulubionych';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Usunięto $symbol z listy $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Usunięto listę: $list';
+  }
 
   @override
   String get portfolioAskTitle => 'Pytania o Twój portfel';

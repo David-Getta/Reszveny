@@ -2302,6 +2302,21 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Awan pay ti stock iti daytoy a listaan. I-tap ti buton ti listaan iti abay ti stock tapno inayon dayta.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'Naikkat ti $symbol kadagiti paborito';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'Naikkat ti $symbol iti $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Naikkat ti listaan: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Saludsod maipapan iti portfolio-m';
 
   @override

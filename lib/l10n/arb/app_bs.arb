@@ -888,5 +888,8 @@
   "aiReportSend": "Pošalji prijavu",
   "aiReportThanks": "Hvala – pregledat ćemo ga.",
   "aiPortfolioDisclaimer": "Opće informacije o sastavu vašeg portfolija koje je generisala umjetna inteligencija. Ne uzimaju u obzir vaše ciljeve, finansije ni poreznu situaciju i nisu lična preporuka niti investicijski savjet.",
-  "briefNotificationTitle": "AI sažetak · Danas s vašim dionicama"
+  "briefNotificationTitle": "AI sažetak · Danas s vašim dionicama",
+  "favoriteRemoved": "Dionica {symbol} uklonjena je iz favorita",
+  "listItemRemoved": "Dionica {symbol} uklonjena je sa liste „{list}“",
+  "watchListDeleted": "Lista je izbrisana: {list}"
 }

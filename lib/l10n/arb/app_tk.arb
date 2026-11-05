@@ -888,5 +888,8 @@
   "aiReportSend": "Habar iber",
   "aiReportThanks": "Sag boluň — biz ony barlarys.",
   "aiPortfolioDisclaimer": "Portfeliňiziň düzümi barada AI tarapyndan döredilen umumy maglumat. Ol siziň maksatlaryňyzy, maliýe ýagdaýyňyzy ýa-da salgyt ýagdaýyňyzy hasaba almaýar we şahsy teklip ýa-da maýa goýum maslahaty däldir.",
-  "briefNotificationTitle": "AI jemlemesi · Şu gün paýnamalaryňyz bilen"
+  "briefNotificationTitle": "AI jemlemesi · Şu gün paýnamalaryňyz bilen",
+  "favoriteRemoved": "{symbol} saýlananlardan aýryldy",
+  "listItemRemoved": "{symbol} {list} sanawyndan aýryldy",
+  "watchListDeleted": "Sanaw pozuldy: {list}"
 }

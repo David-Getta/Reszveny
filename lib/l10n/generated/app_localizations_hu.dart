@@ -2283,6 +2283,21 @@ class AppLocalizationsHu extends AppLocalizations {
       'Ezen a listán még nincs részvény. A részvény melletti lista gombbal veheted fel.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol eltávolítva a kedvencek közül';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol lekerült a listáról: $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lista törölve: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Kérdések a portfóliódról';
 
   @override

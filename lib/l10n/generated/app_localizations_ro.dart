@@ -2314,6 +2314,21 @@ class AppLocalizationsRo extends AppLocalizations {
       'Încă nu există acțiuni în această listă. Atinge butonul de listă de lângă o acțiune pentru a o adăuga.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol a fost eliminat din favorite';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol a fost eliminat din $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lista a fost ștearsă: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Întrebări despre portofoliul tău';
 
   @override

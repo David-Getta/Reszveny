@@ -2252,6 +2252,21 @@ class AppLocalizationsAm extends AppLocalizations {
       'በዚህ ዝርዝር ውስጥ እስካሁን ምንም አክሲዮን የለም። ለማከል ከአክሲዮኑ አጠገብ ያለውን የዝርዝር አዝራር ይንኩ።';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol ከተወዳጆች ተወግዷል';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol ከ$list ተወግዷል';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'ዝርዝሩ ተሰርዟል፦ $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'ስለ ፖርትፎሊዮዎ ጥያቄዎች';
 
   @override

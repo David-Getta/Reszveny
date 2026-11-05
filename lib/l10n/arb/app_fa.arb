@@ -888,5 +888,8 @@
   "aiReportSend": "ارسال گزارش",
   "aiReportThanks": "سپاسگزاریم — آن را بررسی می‌کنیم.",
   "aiPortfolioDisclaimer": "اطلاعات کلی دربارهٔ ترکیب سبد سهام شما که با هوش مصنوعی تولید شده است. اهداف، وضعیت مالی یا وضعیت مالیاتی شما را در نظر نمی‌گیرد و توصیه شخصی یا توصیه سرمایه‌گذاری نیست.",
-  "briefNotificationTitle": "خلاصهٔ هوش مصنوعی · امروز با سهام شما"
+  "briefNotificationTitle": "خلاصهٔ هوش مصنوعی · امروز با سهام شما",
+  "favoriteRemoved": "{symbol} از علاقه‌مندی‌ها حذف شد",
+  "listItemRemoved": "{symbol} از {list} حذف شد",
+  "watchListDeleted": "فهرست حذف شد: {list}"
 }

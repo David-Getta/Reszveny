@@ -198,10 +198,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get labelOpen => 'Opening';
 
   @override
-  String get labelDayHigh => 'Dagrecord hoog';
+  String get labelDayHigh => 'Daghoogste';
 
   @override
-  String get labelDayLow => 'Dagrecord laag';
+  String get labelDayLow => 'Daglaagste';
 
   @override
   String get labelPreviousClose => 'Vorige slotkoers';
@@ -221,7 +221,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get labelPeTrailing => 'K/W (P/E, achterlopend)';
+  String get labelPeTrailing => 'K/W (P/E, historisch)';
 
   @override
   String get labelPeForward => 'K/W (P/E, verwacht)';
@@ -1933,7 +1933,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get glossPeForward =>
-      'Zoals de K/W, maar met de winst die analisten voor de komende 12 maanden verwachten. Lager dan de achterlopende K/W betekent dat de winst naar verwachting groeit.';
+      'Zoals de K/W, maar met de winst die analisten voor de komende 12 maanden verwachten. Lager dan de historische K/W betekent dat de winst naar verwachting groeit.';
 
   @override
   String get glossPb =>
@@ -2288,6 +2288,21 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Nog geen aandelen in deze lijst. Tik op de lijstknop naast een aandeel om het toe te voegen.';
+
+  @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol verwijderd uit favorieten';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol verwijderd uit $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lijst verwijderd: $list';
+  }
 
   @override
   String get portfolioAskTitle => 'Vragen over je portefeuille';
@@ -3290,10 +3305,10 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get techOverbought => 'overbought';
+  String get techOverbought => 'overgekocht';
 
   @override
-  String get techOversold => 'oversold';
+  String get techOversold => 'oververkocht';
 
   @override
   String get techNeutral => 'neutraal';
@@ -3316,7 +3331,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get glossRsi =>
-      'Relative strength index: vergelijkt recente winsten met recente verliezen op een schaal van 0 tot 100. Boven 70 heet het aandeel vaak overbought (het is snel gestegen), onder 30 oversold – maar een sterke trend kan daar lang blijven.';
+      'Relative strength index: vergelijkt recente winsten met recente verliezen op een schaal van 0 tot 100. Boven 70 heet het aandeel vaak overgekocht (het is snel gestegen), onder 30 oververkocht – maar een sterke trend kan daar lang blijven.';
 
   @override
   String get glossVolatility =>

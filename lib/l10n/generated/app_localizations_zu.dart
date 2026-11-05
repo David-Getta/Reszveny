@@ -2293,6 +2293,21 @@ class AppLocalizationsZu extends AppLocalizations {
       'Awekho amasheya kulolu hlu okwamanje. Thepha inkinobho yohlu eduze kwesheya ukuze ulengeze.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'I-$symbol isusiwe kuzintandokazi';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'I-$symbol isusiwe ku-$list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Uhlu lususiwe: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Imibuzo ngephothifoliyo yakho';
 
   @override

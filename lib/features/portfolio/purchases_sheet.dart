@@ -21,6 +21,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
   final removed = ValueNotifier<PortfolioLot?>(null);
   final removedSplit = ValueNotifier<SplitRecord?>(null);
   return showModalBottomSheet<void>(
+    useRootNavigator: true,
     context: context,
     showDragHandle: true,
     isScrollControlled: true,

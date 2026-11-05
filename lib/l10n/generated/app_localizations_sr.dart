@@ -2319,6 +2319,21 @@ class AppLocalizationsSr extends AppLocalizations {
       'На овој листи још нема акција. Додирните дугме листе поред акције да бисте је додали.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol је уклоњен из омиљених';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol је уклоњен са листе $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Листа је обрисана: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Питања о вашем портфолију';
 
   @override

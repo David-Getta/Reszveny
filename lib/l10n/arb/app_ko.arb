@@ -888,5 +888,8 @@
   "aiReportSend": "신고 보내기",
   "aiReportThanks": "감사합니다. 검토하겠습니다.",
   "aiPortfolioDisclaimer": "AI가 생성한 포트폴리오 구성에 관한 일반 정보입니다. 사용자의 목표, 재무 상황, 세금 상황을 고려하지 않으며 개인 맞춤 추천이나 투자 조언이 아닙니다.",
-  "briefNotificationTitle": "AI 요약 · 오늘의 내 종목"
+  "briefNotificationTitle": "AI 요약 · 오늘의 내 종목",
+  "favoriteRemoved": "{symbol}을(를) 즐겨찾기에서 제거했습니다",
+  "listItemRemoved": "{list}에서 {symbol}을(를) 제거했습니다",
+  "watchListDeleted": "목록을 삭제했습니다: {list}"
 }

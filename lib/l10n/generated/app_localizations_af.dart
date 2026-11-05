@@ -2288,6 +2288,21 @@ class AppLocalizationsAf extends AppLocalizations {
       'Nog geen aandele in hierdie lys nie. Tik op die lysknoppie langs \'n aandeel om dit by te voeg.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol uit gunstelinge verwyder';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol uit “$list” verwyder';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Lys geskrap: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Vrae oor jou portefeulje';
 
   @override

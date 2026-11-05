@@ -888,5 +888,8 @@
   "aiReportSend": "रिपोर्ट पठाउ",
   "aiReportThanks": "धन्यवाद — हम सभ एकर जाँच करब।",
   "aiPortfolioDisclaimer": "AI-निर्मित, अहाँक पोर्टफ़ोलियोक संरचनाक विषयमे सामान्य जानकारी। ई अहाँक लक्ष्य, आर्थिक स्थिति वा करक स्थितिकेँ ध्यानमे नहि रखैत अछि, आ ई ने व्यक्तिगत सिफारिश अछि आ ने निवेशक सलाह।",
-  "briefNotificationTitle": "AI सारांश · आइ अहाँक शेयरक संग"
+  "briefNotificationTitle": "AI सारांश · आइ अहाँक शेयरक संग",
+  "favoriteRemoved": "{symbol} पसंदीदासँ हटाओल गेल",
+  "listItemRemoved": "{symbol} {list} सूचीसँ हटाओल गेल",
+  "watchListDeleted": "सूची मेटाओल गेल: {list}"
 }

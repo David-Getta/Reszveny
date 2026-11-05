@@ -2273,6 +2273,21 @@ class AppLocalizationsSd extends AppLocalizations {
       'هن فهرست ۾ اڃا ڪو به شيئر ناهي. شامل ڪرڻ لاءِ شيئر جي ڀرسان فهرست بٽڻ تي ٽيپ ڪريو.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol پسنديده مان هٽايو ويو';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list مان هٽايو ويو';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'فهرست ڊاهي وئي: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'توهان جي پورٽ فوليو بابت سوال';
 
   @override

@@ -2292,6 +2292,21 @@ class AppLocalizationsCa extends AppLocalizations {
       'Encara no hi ha cap acció en aquesta llista. Toca el botó de llista al costat d\'una acció per afegir-la.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return 'S’ha eliminat $symbol dels favorits';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return 'S’ha eliminat $symbol de la llista «$list»';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'S’ha suprimit la llista: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Preguntes sobre la teva cartera';
 
   @override

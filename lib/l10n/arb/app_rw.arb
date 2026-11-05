@@ -888,5 +888,8 @@
   "aiReportSend": "Ohereza raporo",
   "aiReportThanks": "Urakoze — tuzabisuzuma.",
   "aiPortfolioDisclaimer": "Amakuru rusange yakozwe na AI ku miterere y'ishoramari ryawe. Ntiyita ku ntego zawe, ubushobozi bwawe bw'amafaranga cyangwa imiterere y'imisoro yawe, kandi si inama yihariye kuri wowe cyangwa inama yo gushora imari.",
-  "briefNotificationTitle": "Incamake ya AI · Uyu munsi n’imigabane yawe"
+  "briefNotificationTitle": "Incamake ya AI · Uyu munsi n’imigabane yawe",
+  "favoriteRemoved": "{symbol} yakuwe mu byo ukunda",
+  "listItemRemoved": "{symbol} yakuwe kuri {list}",
+  "watchListDeleted": "Urutonde rwasibwe: {list}"
 }

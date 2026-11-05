@@ -67,7 +67,9 @@ void main() {
     expect(ret.values[0], startsWith('+'));
     expect(ret.best, isNotNull);
     final fromHigh = rows.firstWhere((r) => r.label == 'From 52-week high');
-    expect(fromHigh.values[0], '-2.44%'); // 231,45 / 237,23 − 1
+    // 231,45 / 52 hetes csúcs − 1 (a csúcs a demó minta-sorozatából).
+    final high = stocks[0]!.metrics!.week52High!;
+    expect(fromHigh.values[0], '${((231.45 / high - 1) * 100).toStringAsFixed(2)}%');
     // Gyorsjelentés-adatokkal két sor több: a meglepetés (a nagyobb nyer) és a következő nap.
     expect(rows.any((r) => r.label == 'Next report'), isFalse);
     final withEarnings = buildCompareRows(

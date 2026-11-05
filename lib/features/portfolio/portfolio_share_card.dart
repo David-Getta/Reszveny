@@ -215,6 +215,7 @@ String portfolioShareText(PortfolioSnapshot s, AppLocalizations l10n, Fmt fmt, {
 /// képként vagy szövegként osztható meg.
 Future<void> showPortfolioShare(BuildContext context, PortfolioSnapshot snapshot, {String? account}) =>
     showModalBottomSheet<void>(
+      useRootNavigator: true,
       context: context,
       isScrollControlled: true,
       showDragHandle: true,

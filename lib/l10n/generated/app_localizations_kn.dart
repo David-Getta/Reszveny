@@ -2288,6 +2288,21 @@ class AppLocalizationsKn extends AppLocalizations {
       'ಈ ಪಟ್ಟಿಯಲ್ಲಿ ಇನ್ನೂ ಯಾವುದೇ ಷೇರುಗಳಿಲ್ಲ. ಸೇರಿಸಲು ಷೇರಿನ ಪಕ್ಕದಲ್ಲಿರುವ ಪಟ್ಟಿ ಬಟನ್ ಟ್ಯಾಪ್ ಮಾಡಿ.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol ಅನ್ನು ಮೆಚ್ಚಿನವುಗಳಿಂದ ತೆಗೆದುಹಾಕಲಾಗಿದೆ';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol ಅನ್ನು $list ಪಟ್ಟಿಯಿಂದ ತೆಗೆದುಹಾಕಲಾಗಿದೆ';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'ಪಟ್ಟಿಯನ್ನು ಅಳಿಸಲಾಗಿದೆ: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಕುರಿತ ಪ್ರಶ್ನೆಗಳು';
 
   @override

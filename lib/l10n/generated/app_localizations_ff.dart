@@ -2277,6 +2277,21 @@ class AppLocalizationsFf extends AppLocalizations {
       'Alaa hay sitok e ndee doggol tawo. Ñoƒƒu butoŋ doggol takko sitok ngam ɓeydude ɗum.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol ittaama e cuɓaaɗe';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol ittaama e $list';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Doggol momtaama: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Naamne dow aksiyoŋ maa';
 
   @override

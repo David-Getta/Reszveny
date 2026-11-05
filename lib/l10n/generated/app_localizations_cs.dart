@@ -2332,6 +2332,21 @@ class AppLocalizationsCs extends AppLocalizations {
       'V tomto seznamu zatím nejsou žádné akcie. Akcii přidáte klepnutím na tlačítko seznamu vedle ní.';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol odebrána z oblíbených';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol odebrána ze seznamu „$list“';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'Seznam smazán: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'Otázky k vašemu portfoliu';
 
   @override

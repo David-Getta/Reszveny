@@ -888,5 +888,8 @@
   "aiReportSend": "Dërgo raportin",
   "aiReportThanks": "Faleminderit — do ta shqyrtojmë.",
   "aiPortfolioDisclaimer": "Informacion i përgjithshëm i gjeneruar nga AI për përbërjen e portofolit tuaj. Nuk merr parasysh objektivat, financat ose situatën tuaj tatimore dhe nuk përbën rekomandim personal ose këshillë investimi.",
-  "briefNotificationTitle": "Përmbledhje me AI · Sot me aksionet tuaja"
+  "briefNotificationTitle": "Përmbledhje me AI · Sot me aksionet tuaja",
+  "favoriteRemoved": "{symbol} u hoq nga të preferuarat",
+  "listItemRemoved": "{symbol} u hoq nga {list}",
+  "watchListDeleted": "Lista u fshi: {list}"
 }

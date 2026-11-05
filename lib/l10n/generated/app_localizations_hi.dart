@@ -2282,6 +2282,21 @@ class AppLocalizationsHi extends AppLocalizations {
       'इस सूची में अभी कोई शेयर नहीं है। जोड़ने के लिए शेयर के पास वाले सूची बटन पर टैप करें।';
 
   @override
+  String favoriteRemoved(String symbol) {
+    return '$symbol पसंदीदा से हटाया गया';
+  }
+
+  @override
+  String listItemRemoved(String symbol, String list) {
+    return '$symbol $list से हटाया गया';
+  }
+
+  @override
+  String watchListDeleted(String list) {
+    return 'सूची हटाई गई: $list';
+  }
+
+  @override
   String get portfolioAskTitle => 'आपके पोर्टफ़ोलियो के बारे में सवाल';
 
   @override

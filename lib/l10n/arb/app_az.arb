@@ -888,5 +888,8 @@
   "aiReportSend": "Şikayəti göndər",
   "aiReportThanks": "Təşəkkürlər — yoxlayacağıq.",
   "aiPortfolioDisclaimer": "Portfelinizin tərkibi haqqında AI tərəfindən yaradılmış ümumi məlumat. Məqsədlərinizi, maliyyə vəziyyətinizi və ya vergi vəziyyətinizi nəzərə almır, fərdi tövsiyə və ya investisiya məsləhəti deyil.",
-  "briefNotificationTitle": "AI xülasəsi · Bu gün səhmlərinizlə"
+  "briefNotificationTitle": "AI xülasəsi · Bu gün səhmlərinizlə",
+  "favoriteRemoved": "{symbol} seçilmişlərdən silindi",
+  "listItemRemoved": "{symbol} «{list}» siyahısından silindi",
+  "watchListDeleted": "Siyahı silindi: {list}"
 }
