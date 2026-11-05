@@ -396,7 +396,8 @@ class Api {
         return res.change(
           headers: {
             'x-content-type-options': 'nosniff',
-            'referrer-policy': 'no-referrer',
+            // Nem `no-referrer`: azzal a böngésző a saját oldal űrlapját is `Origin: null`-lal küldené.
+            'referrer-policy': 'strict-origin-when-cross-origin',
             if (publicUrl.startsWith('https://')) 'strict-transport-security': 'max-age=31536000',
             if (html) ...{
               'content-security-policy':
@@ -414,10 +415,16 @@ class Api {
   /// Más oldalról beküldött űrlap (CSRF): a böngésző jelzi (`Sec-Fetch-Site`), vagy az
   /// `Origin` nem a szerver címe. Fejléc nélkül (régi böngésző, szkript) nem utasítjuk el.
   bool _crossSiteForm(Request r) {
-    if (r.headers['sec-fetch-site'] == 'cross-site') return true;
+    // A böngésző saját jelzése a megbízhatóbb: csak a más webhelyről jövőt utasítjuk el.
+    final site = r.headers['sec-fetch-site'];
+    if (site != null) return site == 'cross-site';
     final origin = r.headers['origin'];
-    if (origin == null || origin == 'null' || publicUrl.isEmpty) return origin == 'null';
-    return Uri.tryParse(origin)?.origin != Uri.tryParse(publicUrl)?.origin;
+    if (origin == null || publicUrl.isEmpty) return false;
+    if (origin == 'null') return true;
+    // Csak a gépnév számít (a proxy mögött a séma eltérhet); furcsa Origin: elutasítva, nem 500.
+    final from = Uri.tryParse(origin), own = Uri.tryParse(publicUrl);
+    if (from == null || own == null || from.host.isEmpty) return true;
+    return from.host.toLowerCase() != own.host.toLowerCase();
   }
 
   /// A böngészőből küldhető kérésfejlécek (CORS).
@@ -707,6 +714,7 @@ class Api {
       shares.moveUser(from: from, into: into);
       store.removeMergedUser(from);
     });
+    store.eraseJournal();
   }
 
   // ---- Megosztás nyilvános linkkel ----
@@ -974,9 +982,13 @@ class Api {
     } catch (_) {
       key = null; // Hibás űrlap: rossz kulcsként számít.
     }
-    // A korlát a beolvasás után (a vizsgálat és a számolás között nincs várakozás).
-    if (_adminFailures.blocked(ipKey) || _adminFailuresAll.blocked('*')) return _error(429, 'rate_limited');
-    if (!_isAdmin(key)) {
+    // A korlát a beolvasás után (a vizsgálat és a számolás között nincs várakozás). A minden
+    // címre közös korlát a helyes kulcsot nem zárja ki (különben a találgatás kizárná a gazdát).
+    final valid = _isAdmin(key);
+    if (_adminFailures.blocked(ipKey) || (!valid && _adminFailuresAll.blocked('*'))) {
+      return _error(429, 'rate_limited');
+    }
+    if (!valid) {
       _adminFailures.hit(ipKey);
       _adminFailuresAll.hit('*');
       return _html(adminLoginPage(wrong: true), status: 403);
@@ -1001,8 +1013,11 @@ class Api {
     if (!_adminEnabled) return Response.notFound('not found');
     // Ugyanaz a találgatás-korlát, mint az űrlapon.
     final ipKey = _ipKey(_clientIp(r) ?? '-');
-    if (_adminFailures.blocked(ipKey) || _adminFailuresAll.blocked('*')) return _error(429, 'rate_limited');
-    if (!_isAdmin(_token(r))) {
+    final valid = _isAdmin(_token(r));
+    if (_adminFailures.blocked(ipKey) || (!valid && _adminFailuresAll.blocked('*'))) {
+      return _error(429, 'rate_limited');
+    }
+    if (!valid) {
       _adminFailures.hit(ipKey);
       _adminFailuresAll.hit('*');
       return _error(403, 'forbidden');
@@ -2499,7 +2514,9 @@ class Api {
     final clientKey = sharedCacheKey(raw['shared_cache']);
     final cacheKey = clientKey == null
         ? null
-        : '$clientKey#${sha256.convert(utf8.encode(jsonEncode([req.system, req.messages, askResearchTools(raw['tools'])])))}';
+        // A szerver szabályai is a kulcsban: egy korábbi (vagy más szabályokkal készült) válasz
+        // nem jön vissza a tárból.
+        : '$clientKey#${sha256.convert(utf8.encode(jsonEncode([complianceRules, req.system, req.messages, askResearchTools(raw['tools'])])))}';
     final cached = cacheKey == null ? null : store.sharedAnswer(cacheKey, sharedAnswerKeepFor);
     if (cached != null) {
       telemetry.bump('shared_cache_hit');
@@ -2891,9 +2908,26 @@ class Api {
   static String _str(Object? v) => v is String ? v : '';
 
   /// A kérésben küldött adat-JSON-ból kiolvassa a tickert a naplóhoz.
+  /// A ticker kiolvasása a továbbított kérésből (a naplóhoz; teszt is használja).
+  static String? symbolFromForTest(String raw) => _symbolFrom(raw);
+
   static String? _symbolFrom(String raw) {
-    final m = RegExp(r'"symbol":\s*"([A-Za-z0-9.\-]{1,12})"').firstMatch(raw);
-    return m?.group(1);
+    final re = RegExp(r'"symbol":\s*"([A-Za-z0-9.\-:^=]{1,16})"');
+    // Az app az adat-JSON-t az üzenet szövegeként küldi: a nyers kérésben az idézőjelei
+    // escape-elve vannak, ezért a dekódolt üzenetszövegekben keresünk.
+    try {
+      final messages = (jsonDecode(raw) as Map)['messages'];
+      for (final m in messages is List ? messages : const []) {
+        final content = m is Map ? m['content'] : null;
+        for (final block in content is List ? content : [content]) {
+          final text = block is String ? block : (block is Map ? block['text'] : null);
+          if (text is String) {
+            if (re.firstMatch(text)?.group(1) case final s?) return s.toUpperCase();
+          }
+        }
+      }
+    } catch (_) {}
+    return re.firstMatch(raw)?.group(1)?.toUpperCase();
   }
 }
 

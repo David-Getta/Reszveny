@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.306)
+# Változásjegyzék (0.2.130 → 0.2.307)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,19 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Az ötvenkettedik kódátnézés javításai (szerver)
+
+- **0.2.307**: a böngészős fióktörlés és az admin belépés valódi böngészőben is működik: a 0.2.305 hivatkozási
+  szabálya miatt a böngésző a saját oldal űrlapját „ismeretlen eredetűként” küldte, amit a szerver elutasított
+  (403). A más oldalról beküldött űrlapot továbbra is elutasítja, elsősorban a böngésző saját jelzése alapján.
+- A heti levél kedden pótolt példánya is a hét kulcsát viseli (egy hétfő esti időtúllépés után sem megy ki
+  kétszer); egy papír piaci adatának egyszeri lekérési hibája nem hagyja ki a papírt az egész hétre; a keddi
+  levélben a hétfői gyorsjelentés már nem „következő”.
+- A megosztás-ellenőrzés a valódi elemzésekre is működik (a ticker eddig nem került a naplóba az app
+  üzenetformátumából); a megosztott válaszok tárának kulcsa a szerver szabályait is tartalmazza.
+- A törölt fiók adatai a WAL-naplóban sem maradnak meg; a helyes admin-kulcsot a minden címre közös
+  hibakorlát nem zárja ki; egy sikertelen egyszeri tömörítést a következő indítás újrapróbál.
 
 ## Riasztás és heti levél sok felhasználónál
 

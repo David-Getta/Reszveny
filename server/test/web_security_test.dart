@@ -128,4 +128,68 @@ void main() {
     }
     expect(watch.elapsed, lessThan(const Duration(seconds: 3)));
   });
+
+  test('a real browser posting the form from the page itself gets through (Origin and Sec-Fetch-Site)', () async {
+    final page = await api.handler(Request('GET', Uri.parse('https://ws.example/account/delete')));
+    expect(page.headers['referrer-policy'], 'strict-origin-when-cross-origin');
+    Future<int> post(Map<String, String> headers) async => (await api.handler(
+      Request(
+        'POST',
+        Uri.parse('https://ws.example/account/delete'),
+        headers: {'content-type': 'application/x-www-form-urlencoded', ...headers},
+        body: 'step=start&email=a%40b.c',
+      ),
+    )).statusCode;
+    expect(await post({'origin': 'https://ws.example', 'sec-fetch-site': 'same-origin'}), 200);
+    expect(await post({'origin': 'null', 'sec-fetch-site': 'same-origin'}), 200);
+    expect(await post({'origin': 'http://ws.example'}), 200, reason: 'a proxy mögött a séma eltérhet');
+    expect(await post({'origin': 'chrome-extension://abc'}), 403);
+    expect(await post({'origin': 'https://'}), 403);
+  });
+
+  test('guessing from many addresses does not lock the owner out of the admin page', () async {
+    for (var i = 0; i < 120; i++) {
+      await api.handler(
+        Request(
+          'GET',
+          Uri.parse('https://ws.example/admin/stats.json'),
+          headers: {'authorization': 'Bearer wrong', 'x-forwarded-for': '81.0.${i ~/ 9}.1'},
+        ),
+      );
+    }
+    final ok = await api.handler(
+      Request(
+        'GET',
+        Uri.parse('https://ws.example/admin/stats.json'),
+        headers: {'authorization': 'Bearer admin-secret-1234567890', 'x-forwarded-for': '81.9.9.9'},
+      ),
+    );
+    expect(ok.statusCode, 200);
+  });
+
+  test('the analysed stock is logged from the app\'s own message format, so sharing others is refused', () {
+    final raw = jsonEncode({
+      'messages': [
+        {
+          'role': 'user',
+          'content': 'Data:\n${jsonEncode({'symbol': 'aapl', 'today': '2026-11-05'})}',
+        },
+      ],
+    });
+    expect(Api.symbolFromForTest(raw), 'AAPL');
+  });
+
+  test('a deleted account leaves nothing in the WAL file either', () {
+    final dir = Directory.systemTemp.createTempSync('ws_wal');
+    addTearDown(() => dir.deleteSync(recursive: true));
+    final path = '${dir.path}/db.sqlite';
+    final s = Store.open(path);
+    final (uid, _) = s.createAnonymousUser(null);
+    s.setEmail(uid, 'marker-gone@example.com');
+    s.deleteUser(uid);
+    final wal = File('$path-wal');
+    final bytes = wal.existsSync() ? wal.readAsBytesSync() : const <int>[];
+    expect(latin1.decode(bytes, allowInvalid: true), isNot(contains('marker-gone@example.com')));
+    s.database.close();
+  });
 }

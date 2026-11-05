@@ -109,4 +109,39 @@ void main() {
     now = DateTime.utc(2026, 10, 21, 9);
     expect(await digest.sendDue(), 0);
   });
+
+  test('digest: a failed fetch is retried next round, a retry keeps the week key, past reports are dropped', () async {
+    final mailer = ConsoleMailer();
+    var failing = true;
+    DigestSender sender() => DigestSender(
+      store: store,
+      mailer: mailer,
+      sendPause: Duration.zero,
+      week: (s) async {
+        if (s == 'AAPL' && failing) return null; // pl. a piaci API kerete betelt
+        return (price: 10.0, weekChange: 1.0, currency: 'USD', closes: const <double>[]);
+      },
+      earnings: (s, from, to) async => s == 'MSFT' ? DateTime.utc(2026, 10, 19) : null,
+      clock: () => now,
+    );
+    account('a@x.io', {
+      'weekly_digest': true,
+      'favorites': ['MSFT'],
+    });
+    final digest = sender();
+    expect(await digest.sendDue(), 1);
+    expect(mailer.messages.single.idempotencyKey, endsWith('-2026-10-19'));
+    // Egy később feliratkozó AAPL-fiók: az első kör hibája után a következő újra lekéri.
+    account('b@x.io', {
+      'weekly_digest': true,
+      'favorites': ['AAPL', 'MSFT'],
+    });
+    now = DateTime.utc(2026, 10, 20, 2); // kedd
+    expect(await digest.sendDue(), 1);
+    failing = false;
+    final tuesdayMail = mailer.messages.last;
+    expect(tuesdayMail.idempotencyKey, endsWith('-2026-10-19'), reason: 'a hét kulcsa');
+    // A hétfői gyorsjelentés keddre már nem „következő”.
+    expect(tuesdayMail.text, isNot(contains('Oct 19')));
+  });
 }

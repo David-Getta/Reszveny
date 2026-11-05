@@ -354,26 +354,27 @@ class DigestSender {
       for (final s in toFetch.take(maxSymbolsPerRound)) {
         if (!first && pause > Duration.zero) await Future<void>.delayed(pause);
         first = false;
-        WeekMove? m;
+        // Csak a sikeres lekérés kerül a heti tárba: egy hiba vagy kerettúllépés (üres válasz)
+        // után a következő kör újra próbálja, nem marad ki a papír az egész hétre.
         try {
-          m = await week(s);
+          final m = await week(s);
+          if (m != null && m.price > 0) _cachedMoves[s] = m;
         } catch (_) {}
-        _cachedMoves[s] = m != null && m.price > 0 ? m : null;
         try {
           _cachedUpcoming[s] = await earnings(s, today, to);
-        } catch (_) {
-          _cachedUpcoming[s] = null;
-        }
+        } catch (_) {}
         if (results case final r?) {
           try {
             _cachedFresh[s] = await r(s, since);
-          } catch (_) {
-            _cachedFresh[s] = null;
-          }
+          } catch (_) {}
         }
       }
       final moves = {for (final e in _cachedMoves.entries) e.key: ?e.value};
-      final upcoming = {for (final e in _cachedUpcoming.entries) e.key: ?e.value};
+      // A hétfőn lekért gyorsjelentés-napok közül keddre a múltbeliek kimaradnak.
+      final upcoming = {
+        for (final e in _cachedUpcoming.entries)
+          if (e.value case final d? when !d.isBefore(today)) e.key: d,
+      };
       final fresh = {for (final e in _cachedFresh.entries) e.key: ?e.value};
       // A hírek csak a fiókonkénti legnagyobb heti mozgásokhoz kellenek.
       final news = <String, ({String title, String url})?>{};
@@ -457,7 +458,8 @@ class DigestSender {
                 ? null
                 : {'List-Unsubscribe': '<$unsubscribe>', 'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click'},
             // Hetente egy: egy időtúllépés utáni újabb kör se küldje el kétszer.
-            idempotencyKey: 'digest-${acc.userId}-${now.toUtc().toIso8601String().substring(0, 10)}',
+            // A hét (hétfő) szerint: a keddi pótlás se küldje el újra a hétfőn már kiment levelet.
+            idempotencyKey: 'digest-${acc.userId}-$week0',
           );
           store.markDigest(acc.userId);
           sent++;

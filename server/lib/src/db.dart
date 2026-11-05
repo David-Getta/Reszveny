@@ -70,9 +70,9 @@ class Store {
     // WAL-napló, NORMAL szinkron: egy írás tized ezredmásodperc (a szerver egyetlen szálát
     // nem tartja fel minden kérésnél egy fsync); áramszünetnél legfeljebb az utolsó néhány
     // tranzakció veszhet el, az adatbázis nem sérül. Egy másik kapcsolat (mentés) várakozhat.
+    _db.execute('PRAGMA busy_timeout = 5000');
     _db.execute('PRAGMA journal_mode = WAL');
     _db.execute('PRAGMA synchronous = NORMAL');
-    _db.execute('PRAGMA busy_timeout = 5000');
     _db.execute('''
       CREATE TABLE IF NOT EXISTS users (
         id TEXT PRIMARY KEY,
@@ -235,14 +235,17 @@ class Store {
     // adatbázisnál percekig késleltetné az indulást).
     _db.execute('PRAGMA secure_delete = ON');
     if ((_db.select('PRAGMA user_version').first.values.first as int) < 1) {
+      var done = true;
       if ((_db.select('PRAGMA freelist_count').first.values.first as int) > 0) {
         try {
           _db.execute('VACUUM');
         } catch (e) {
+          // Pl. betelt lemez: a következő indítás újrapróbálja.
+          done = false;
           stderr.writeln('VACUUM nem sikerült: $e');
         }
       }
-      _db.execute('PRAGMA user_version = 1');
+      if (done) _db.execute('PRAGMA user_version = 1');
     }
     // Indexek a gyakori törlésekhez és kereséseken (különben minden beszúrás és minden
     // összevonás, törlés, Stripe-értesítés végigolvasná a teljes táblát).
@@ -598,6 +601,17 @@ class Store {
     } catch (_) {
       _db.execute('ROLLBACK');
       rethrow;
+    }
+    eraseJournal();
+  }
+
+  /// A WAL-napló kiírása és kiürítése: a törölt sorok korábbi példányai ne maradjanak a
+  /// `-wal` fájlban (a biztonságos törlés csak a fő fájlra vonatkozik).
+  void eraseJournal() {
+    try {
+      _db.execute('PRAGMA wal_checkpoint(TRUNCATE)');
+    } catch (e) {
+      stderr.writeln('WAL-napló kiürítése nem sikerült: $e');
     }
   }
 
