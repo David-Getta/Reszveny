@@ -40,6 +40,7 @@ class AlertWatcher {
   /// után elmarad: egy rövid levelezőkimaradás ne nyelje el a riasztást (10 perces körökkel
   /// egy nap 144 próba).
   static const maxMailAttempts = 200;
+  static const maxMailsPerRound = 300;
   static const mailExpiry = Duration(days: 1);
 
   /// Egy körben legfeljebb ennyi részvény árát kérdezzük le (a piaci API kerete miatt);
@@ -107,22 +108,10 @@ class AlertWatcher {
     if (_running) return 0;
     _running = true;
     try {
-      final accounts = <({String userId, String email})>[];
-      final symbols = <String>{};
-      for (final a in store.syncedAccounts()) {
-        try {
-          final data = (jsonDecode(a.data) as Map).cast<String, dynamic>();
-          if (data['email_alerts'] == false) continue;
-          final alerts = (data['alerts'] as List?)?.where(_active).toList() ?? const [];
-          if (alerts.isEmpty) continue;
-          accounts.add((userId: a.userId, email: a.email));
-          for (final al in alerts) {
-            symbols.add('${(al as Map)['symbol']}'.toUpperCase());
-          }
-        } catch (_) {
-          // Sérült csomag: kihagyjuk.
-        }
-      }
+      // Az aktív riasztású fiókok a papírjaikkal (a mentéskor számolt oszlopból, a csomagok
+      // betöltése nélkül).
+      final accounts = store.alertAccounts();
+      final symbols = <String>{for (final a in accounts) ...a.symbols};
       final quotes = <String, Quote>{};
       final all = symbols.toList()..sort();
       final batch = all.length <= maxSymbolsPerRound
@@ -137,7 +126,11 @@ class AlertWatcher {
         } catch (_) {}
       }
       final now = _clock().toUtc();
-      for (final acc in accounts) {
+      for (final (i, acc) in accounts.indexed) {
+        // Csak az a fiók, amelynek valamelyik papírjára ebben a körben ár jött (a többi
+        // csomagját fölösleges betölteni); időnként a többi kérés is sorra kerül.
+        if (!acc.symbols.any(quotes.containsKey)) continue;
+        if (i % 200 == 199) await Future<void>.delayed(Duration.zero);
         // Egy fiók hibás csomagja nem akasztja meg a többiekét.
         try {
           _mark(acc.userId, quotes, now);
@@ -193,22 +186,15 @@ class AlertWatcher {
   /// A sorban álló levelek küldése (az előző körök sikertelenjei is); sikeres küldés
   /// után törlődnek, hiba esetén a következő kör újra próbálja. Az elküldöttek száma.
   /// Be van-e kapcsolva a fiók e-mailes riasztása (a szinkronizált beállítás szerint).
-  bool _emailAlertsOn(String userId) {
-    final row = store.syncData(userId);
-    if (row == null) return true;
-    try {
-      final data = jsonDecode(row.data);
-      return !(data is Map && data['email_alerts'] == false);
-    } catch (_) {
-      return true;
-    }
-  }
+  bool _emailAlertsOn(String userId) => store.emailAlertsOn(userId);
 
   Future<int> _sendQueued() async {
     var sent = 0;
     // A sor időbélyegei az adatbázis órájával készülnek.
     final now = store.clock().toUtc();
-    for (final (i, m) in store.pendingAlertMails().indexed) {
+    // Körönként legfeljebb ennyi levél (egy nagy piaci esésnél se álljon meg órákra az
+    // árfigyelés); a többi a következő körben megy.
+    for (final (i, m) in store.pendingAlertMails(limit: maxMailsPerRound).indexed) {
       if (i > 0 && sendPause > Duration.zero) await Future<void>.delayed(sendPause);
       // A szünet után olvasva: a közben törölt fiók vagy a közben kikapcsolt (leiratkozott)
       // e-mailes riasztás levele már nem megy ki.

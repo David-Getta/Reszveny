@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.305)
+# Változásjegyzék (0.2.130 → 0.2.306)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Riasztás és heti levél sok felhasználónál
+
+- **0.2.306**: a tízperces riasztásfigyelő és a heti levél nem tölti be és nem elemzi minden fiók teljes
+  szinkronizált csomagját (100 ezer fióknál ez körönként másfél GB memóriát és 10–20 másodperces leállást
+  jelentett volna): a csomag mentésekor külön oszlopba kerül, mely papírokra van aktív riasztás, be van-e kapcsolva
+  az e-mailes riasztás és kéri-e a heti levelet; a figyelő csak azoknak a fiókoknak a csomagjához nyúl, amelyek
+  papírjára ebben a körben ár jött. A riasztás-levelekből körönként legfeljebb 300 megy, így egy nagy piaci esés
+  után sem áll meg órákra az árfigyelés. A régi csomagok kapcsolói induláskor egyszer kiszámolódnak.
+- A heti levél minden feliratkozóhoz eljut: a hét már lekért piaci adatait a következő körök újra felhasználják
+  (csak az új papírok számítanak a keretbe – eddig sok feliratkozónál a töredékük kapta meg), és kedden pótolja,
+  akihez hétfőn nem jutott el. Az admin oldal számai sem olvassák végig a csomagokat.
 
 ## Webes biztonság és skálázás: az ötvenegyedik kódátnézés javításai
 

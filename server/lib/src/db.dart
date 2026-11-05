@@ -228,6 +228,7 @@ class Store {
       'CREATE TABLE IF NOT EXISTS pending_stripe_deletions (customer_id TEXT PRIMARY KEY, created_at TEXT NOT NULL)',
     );
     _rekeyLegacyFingerprints();
+    _addSyncFlags();
     // A törölt sorok tartalma ne maradjon a fájlban (a felszabadult lapok nullázva); a
     // bekapcsolás előtti szabad lapokat egyetlenegyszer egy VACUUM tünteti el (a bekapcsolás
     // után is maradnak – nullázott – szabad lapok, így minden indításkor futna, és nagy
@@ -292,6 +293,67 @@ class Store {
       rethrow;
     }
   }
+
+  /// A szinkronizált csomag kapcsolói külön oszlopokban (a mentéskor számolva): az aktív
+  /// riasztások papírjai, az e-mailes riasztás és a heti levél. A tízperces riasztásfigyelő
+  /// és a heti levél így nem tölti be és nem elemzi minden fiók teljes csomagját.
+  void _addSyncFlags() {
+    final cols = _db.select('PRAGMA table_info(user_sync)').map((r) => r['name'] as String).toSet();
+    if (!cols.contains('alert_symbols')) _db.execute('ALTER TABLE user_sync ADD COLUMN alert_symbols TEXT');
+    if (!cols.contains('email_alerts')) {
+      _db.execute('ALTER TABLE user_sync ADD COLUMN email_alerts INTEGER NOT NULL DEFAULT 1');
+    }
+    if (!cols.contains('digest_on')) {
+      _db.execute('ALTER TABLE user_sync ADD COLUMN digest_on INTEGER NOT NULL DEFAULT 0');
+    }
+    _db.execute('''
+      CREATE INDEX IF NOT EXISTS user_sync_alerts ON user_sync(user_id) WHERE alert_symbols != '';
+      CREATE INDEX IF NOT EXISTS user_sync_digest ON user_sync(user_id) WHERE digest_on = 1;
+    ''');
+    // A korábbi sorok egyszeri feltöltése (a még nem számolt sorok `alert_symbols`-a NULL).
+    final stale = _db.select('SELECT user_id, data FROM user_sync WHERE alert_symbols IS NULL');
+    if (stale.isEmpty) return;
+    _db.execute('BEGIN');
+    try {
+      for (final r in stale) {
+        _writeSyncFlags(r['user_id'] as String, syncFlags(r['data'] as String));
+      }
+      _db.execute('COMMIT');
+    } catch (_) {
+      _db.execute('ROLLBACK');
+      rethrow;
+    }
+  }
+
+  /// A csomag kapcsolói: az aktív (még nem teljesült) riasztások papírjai nagybetűvel,
+  /// vesszővel elválasztva (üres, ha nincs vagy ki van kapcsolva az e-mailes riasztás), az
+  /// e-mailes riasztás és a heti levél. Sérült csomagnál minden ki.
+  static ({String alertSymbols, bool emailAlerts, bool digest}) syncFlags(String data) {
+    try {
+      final d = jsonDecode(data);
+      if (d is! Map) return (alertSymbols: '', emailAlerts: true, digest: false);
+      final emailAlerts = d['email_alerts'] != false;
+      final alerts = d['alerts'];
+      final symbols = <String>{
+        if (emailAlerts && alerts is List)
+          for (final a in alerts)
+            if (a is Map && a['triggered_at'] == null && a['symbol'] is String && '${a['symbol']}'.trim().isNotEmpty)
+              '${a['symbol']}'.toUpperCase(),
+      };
+      return (
+        alertSymbols: (symbols.toList()..sort()).join(','),
+        emailAlerts: emailAlerts,
+        digest: d['weekly_digest'] == true,
+      );
+    } catch (_) {
+      return (alertSymbols: '', emailAlerts: true, digest: false);
+    }
+  }
+
+  void _writeSyncFlags(String userId, ({String alertSymbols, bool emailAlerts, bool digest}) f) => _db.execute(
+    'UPDATE user_sync SET alert_symbols = ?, email_alerts = ?, digest_on = ? WHERE user_id = ?',
+    [f.alertSymbols, f.emailAlerts ? 1 : 0, f.digest ? 1 : 0, userId],
+  );
 
   /// A régi (sima SHA-256) postafiók-lenyomat kulcsolt alakja.
   String _legacyMailboxKey(String sha) => keyedHash('legacy:$sha');
@@ -1015,6 +1077,31 @@ class Store {
       (userId: r['user_id'] as String, email: r['email'] as String, data: r['data'] as String),
   ];
 
+  /// A belépett fiókok, amelyeknek aktív riasztása van és kérik az e-mailt: a papírjaikkal,
+  /// a csomag betöltése nélkül.
+  List<({String userId, String email, List<String> symbols})> alertAccounts() => [
+    for (final r in _db.select(
+      "SELECT s.user_id, u.email, s.alert_symbols FROM user_sync s JOIN users u ON u.id = s.user_id "
+      "WHERE s.alert_symbols != '' AND u.email IS NOT NULL",
+    ))
+      (userId: r['user_id'] as String, email: r['email'] as String, symbols: (r['alert_symbols'] as String).split(',')),
+  ];
+
+  /// A heti levelet kérő belépett fiókok (csak ezek csomagja töltődik be).
+  List<({String userId, String email, String data})> digestAccounts() => [
+    for (final r in _db.select(
+      'SELECT s.user_id, u.email, s.data FROM user_sync s JOIN users u ON u.id = s.user_id '
+      'WHERE s.digest_on = 1 AND u.email IS NOT NULL',
+    ))
+      (userId: r['user_id'] as String, email: r['email'] as String, data: r['data'] as String),
+  ];
+
+  /// Be van-e kapcsolva a fiók e-mailes riasztása (csomag nélkül: igen).
+  bool emailAlertsOn(String userId) {
+    final r = _db.select('SELECT email_alerts FROM user_sync WHERE user_id = ?', [userId]);
+    return r.isEmpty || r.first['email_alerts'] != 0;
+  }
+
   /// Mikor ment ki utoljára heti összefoglaló a fióknak (vagy `null`).
   DateTime? lastDigest(String userId) {
     final rows = _db.select('SELECT sent_at FROM digest_log WHERE user_id = ?', [userId]);
@@ -1045,10 +1132,12 @@ class Store {
 
   DateTime saveSyncData(String userId, String data) {
     final now = clock().toUtc();
+    final f = syncFlags(data);
     _db.execute(
-      'INSERT INTO user_sync (user_id, data, updated_at) VALUES (?, ?, ?) '
-      'ON CONFLICT(user_id) DO UPDATE SET data = excluded.data, updated_at = excluded.updated_at',
-      [userId, data, now.toIso8601String()],
+      'INSERT INTO user_sync (user_id, data, updated_at, alert_symbols, email_alerts, digest_on) VALUES (?, ?, ?, ?, ?, ?) '
+      'ON CONFLICT(user_id) DO UPDATE SET data = excluded.data, updated_at = excluded.updated_at, '
+      'alert_symbols = excluded.alert_symbols, email_alerts = excluded.email_alerts, digest_on = excluded.digest_on',
+      [userId, data, now.toIso8601String(), f.alertSymbols, f.emailAlerts ? 1 : 0, f.digest ? 1 : 0],
     );
     return now;
   }
@@ -1134,18 +1223,20 @@ class Store {
     [userId, subject, body, clock().toUtc().toIso8601String()],
   );
 
-  List<({int id, String userId, String subject, String body, int attempts, DateTime createdAt})> pendingAlertMails() =>
-      [
-        for (final r in _db.select('SELECT * FROM alert_mail_queue ORDER BY id'))
-          (
-            id: r['id'] as int,
-            userId: r['user_id'] as String,
-            subject: r['subject'] as String,
-            body: r['body'] as String,
-            attempts: r['attempts'] as int,
-            createdAt: DateTime.parse(r['created_at'] as String),
-          ),
-      ];
+  /// A sorban álló levelek (legfeljebb [limit], a legrégebbiek elöl).
+  List<({int id, String userId, String subject, String body, int attempts, DateTime createdAt})> pendingAlertMails({
+    int limit = 1 << 30,
+  }) => [
+    for (final r in _db.select('SELECT * FROM alert_mail_queue ORDER BY id LIMIT ?', [limit]))
+      (
+        id: r['id'] as int,
+        userId: r['user_id'] as String,
+        subject: r['subject'] as String,
+        body: r['body'] as String,
+        attempts: r['attempts'] as int,
+        createdAt: DateTime.parse(r['created_at'] as String),
+      ),
+  ];
 
   void deleteAlertMail(int id) => _db.execute('DELETE FROM alert_mail_queue WHERE id = ?', [id]);
 

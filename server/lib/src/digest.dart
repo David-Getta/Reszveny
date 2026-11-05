@@ -85,6 +85,14 @@ class DigestSender {
   Timer? _timer;
   bool _running = false;
 
+  /// A hét már lekért piaci adatai (heti mozgás, következő gyorsjelentés, friss eredmény):
+  /// a következő körök csak az új papírokat kérik le, így a keret a még ki nem szolgált
+  /// fiókokra megy (sok feliratkozónál is mindenki megkapja a levelet).
+  String _cacheWeek = '';
+  final _cachedMoves = <String, WeekMove?>{};
+  final _cachedUpcoming = <String, DateTime?>{};
+  final _cachedFresh = <String, LastResult?>{};
+
   void start(Duration every) {
     _timer?.cancel();
     // Egy kör hibája ne állítsa le a szervert (kezeletlen aszinkron hiba).
@@ -301,13 +309,26 @@ class DigestSender {
   /// e-mail ment ki.
   Future<int> sendDue() async {
     final now = _clock().toUtc();
-    if (now.weekday != DateTime.monday || now.hour < sendHourUtc) return 0;
+    // Hétfőn reggeltől; kedden pótlás annak, akihez hétfőn nem jutott el (a hét-napos
+    // [minGap] miatt senki nem kap kettőt).
+    final mondayRun = now.weekday == DateTime.monday && now.hour >= sendHourUtc;
+    if (!mondayRun && now.weekday != DateTime.tuesday) return 0;
     if (_running) return 0;
     _running = true;
     try {
+      final today = DateTime.utc(now.year, now.month, now.day);
+      final week0 = today.subtract(Duration(days: now.weekday - 1)).toIso8601String().substring(0, 10);
+      if (week0 != _cacheWeek) {
+        _cacheWeek = week0;
+        _cachedMoves.clear();
+        _cachedUpcoming.clear();
+        _cachedFresh.clear();
+      }
       final accounts = <({String userId, String email, Map<String, dynamic> data})>[];
-      final symbols = <String>{};
-      for (final a in store.syncedAccounts()) {
+      // Az ebben a körben lekérendő (a héten még nem lekért) papírok.
+      final toFetch = <String>{};
+      for (final (i, a) in store.digestAccounts().indexed) {
+        if (i % 200 == 199) await Future<void>.delayed(Duration.zero);
         try {
           final data = (jsonDecode(a.data) as Map).cast<String, dynamic>();
           if (data['weekly_digest'] != true) continue;
@@ -315,42 +336,45 @@ class DigestSender {
           if (last != null && now.difference(last) < minGap) continue;
           final s = symbolsOf(data);
           if (s.portfolio.isEmpty && s.favorites.isEmpty) continue;
-          // A fiók csak akkor kerül a körbe, ha minden részvénye belefér a keretbe –
-          // különben a következő körben, csonkítás nélkül (egymagában túl nagy fiók elsőként).
-          final mine = {...s.portfolio, ...s.favorites};
-          if (symbols.isNotEmpty && symbols.union(mine).length > maxSymbolsPerRound) continue;
+          // A fiók csak akkor kerül a körbe, ha minden még le nem kért részvénye belefér a
+          // keretbe – különben a következő körben, csonkítás nélkül (egymagában túl nagy
+          // fiók elsőként). A héten már lekért papír nem számít bele.
+          final missing = {...s.portfolio, ...s.favorites}.where((x) => !_cachedMoves.containsKey(x)).toSet();
+          if (toFetch.isNotEmpty && toFetch.union(missing).length > maxSymbolsPerRound) continue;
           accounts.add((userId: a.userId, email: a.email, data: data));
-          symbols.addAll(mine);
+          toFetch.addAll(missing);
         } catch (_) {
           // Sérült csomag: kihagyjuk.
         }
       }
       if (accounts.isEmpty) return 0;
-      final moves = <String, WeekMove>{};
-      final upcoming = <String, DateTime>{};
-      final fresh = <String, LastResult>{};
       final since = now.subtract(const Duration(days: resultDays));
-      final from = DateTime.utc(now.year, now.month, now.day);
-      final to = from.add(const Duration(days: earningsDays));
+      final to = today.add(const Duration(days: earningsDays));
       var first = true;
-      for (final s in symbols.take(maxSymbolsPerRound)) {
+      for (final s in toFetch.take(maxSymbolsPerRound)) {
         if (!first && pause > Duration.zero) await Future<void>.delayed(pause);
         first = false;
+        WeekMove? m;
         try {
-          final m = await week(s);
-          if (m != null && m.price > 0) moves[s] = m;
+          m = await week(s);
         } catch (_) {}
+        _cachedMoves[s] = m != null && m.price > 0 ? m : null;
         try {
-          final e = await earnings(s, from, to);
-          if (e != null) upcoming[s] = e;
-        } catch (_) {}
+          _cachedUpcoming[s] = await earnings(s, today, to);
+        } catch (_) {
+          _cachedUpcoming[s] = null;
+        }
         if (results case final r?) {
           try {
-            final v = await r(s, since);
-            if (v != null) fresh[s] = v;
-          } catch (_) {}
+            _cachedFresh[s] = await r(s, since);
+          } catch (_) {
+            _cachedFresh[s] = null;
+          }
         }
       }
+      final moves = {for (final e in _cachedMoves.entries) e.key: ?e.value};
+      final upcoming = {for (final e in _cachedUpcoming.entries) e.key: ?e.value};
+      final fresh = {for (final e in _cachedFresh.entries) e.key: ?e.value};
       // A hírek csak a fiókonkénti legnagyobb heti mozgásokhoz kellenek.
       final news = <String, ({String title, String url})?>{};
       final weekAgo = now.subtract(const Duration(days: 7));

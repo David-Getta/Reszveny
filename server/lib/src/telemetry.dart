@@ -261,12 +261,9 @@ class TelemetryStore {
       'accounts': {
         'email': count('SELECT COUNT(*) AS n FROM users WHERE email IS NOT NULL'),
         'synced': count('SELECT COUNT(*) AS n FROM user_sync'),
-        'weekly_digest': count(
-          "SELECT COUNT(*) AS n FROM user_sync WHERE replace(data, ' ', '') LIKE '%\"weekly_digest\":true%'",
-        ),
-        'email_alerts_off': count(
-          "SELECT COUNT(*) AS n FROM user_sync WHERE replace(data, ' ', '') LIKE '%\"email_alerts\":false%'",
-        ),
+        // A mentéskor számolt kapcsolókból (a csomagok végigolvasása nélkül).
+        'weekly_digest': count('SELECT COUNT(*) AS n FROM user_sync WHERE digest_on = 1'),
+        'email_alerts_off': count('SELECT COUNT(*) AS n FROM user_sync WHERE email_alerts = 0'),
       },
       'days': rows,
       'platforms': grouped('SELECT platform AS k, COUNT(*) AS n FROM daily_users WHERE day >= ? GROUP BY platform'),
