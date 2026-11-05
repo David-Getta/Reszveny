@@ -79,4 +79,40 @@ void main() {
       );
     }
   });
+
+  test('a photo carrying metadata (location, device) is re-encoded without it; a clean one passes as is', () async {
+    // JPEG fejlécek: APP0 (JFIF) után APP1 Exif → metaadat; csak APP0 → nincs.
+    final exifJpeg = Uint8List.fromList([
+      0xFF, 0xD8, //
+      0xFF, 0xE0, 0x00, 0x04, 0x00, 0x00,
+      0xFF, 0xE1, 0x00, 0x08, 0x45, 0x78, 0x69, 0x66, 0x00, 0x00,
+      0xFF, 0xDA, 0x00, 0x02,
+    ]);
+    final cleanJpeg = Uint8List.fromList([0xFF, 0xD8, 0xFF, 0xE0, 0x00, 0x04, 0x00, 0x00, 0xFF, 0xDA, 0x00, 0x02]);
+    expect(CaptureService.hasMetadata(exifJpeg), isTrue);
+    expect(CaptureService.hasMetadata(cleanJpeg), isFalse);
+    // WebP EXIF darabbal.
+    final webp = Uint8List.fromList([
+      ...'RIFF'.codeUnits, 0x14, 0, 0, 0, ...'WEBP'.codeUnits, //
+      ...'EXIF'.codeUnits, 0x02, 0, 0, 0, 0x00, 0x00,
+    ]);
+    expect(CaptureService.hasMetadata(webp), isTrue);
+    // PNG szöveges darabbal (pl. szerző, hely): a teljes úton újrakódolva, nélküle.
+    final png = await _png(40, 30);
+    expect(CaptureService.hasMetadata(png), isFalse);
+    final text = 'Location\u0000Budapest'.codeUnits;
+    final chunk = BytesBuilder()
+      ..add([0, 0, 0, text.length])
+      ..add('tEXt'.codeUnits)
+      ..add(text)
+      ..add([0, 0, 0, 0]);
+    // A tEXt darab az IHDR után (8 bájt aláírás + 25 bájt IHDR).
+    final tagged = Uint8List.fromList([...png.sublist(0, 33), ...chunk.toBytes(), ...png.sublist(33)]);
+    expect(CaptureService.hasMetadata(tagged), isTrue);
+    final out = await CaptureService.prepare(tagged);
+    expect(CaptureService.hasMetadata(out.bytes), isFalse);
+    expect(String.fromCharCodes(out.bytes).contains('Budapest'), isFalse);
+    // A tiszta PNG változatlanul megy.
+    expect((await CaptureService.prepare(png)).bytes, png);
+  });
 }

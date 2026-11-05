@@ -58,6 +58,44 @@ class CaptureService {
     return null;
   }
 
+  /// Hordoz-e a kép metaadatot (hely, idő, készülék, szerző): JPEG-ben APP1–APP15 (EXIF, XMP)
+  /// vagy megjegyzés-szegmens, PNG-ben eXIf / szöveges darab, WebP-ben EXIF / XMP darab.
+  static bool hasMetadata(Uint8List b) {
+    switch (sniff(b)) {
+      case 'image/jpeg':
+        var i = 2;
+        while (i + 4 <= b.length && b[i] == 0xFF) {
+          final marker = b[i + 1];
+          // A képadat kezdete (SOS) vagy vége (EOI): a fejlécek elfogytak.
+          if (marker == 0xDA || marker == 0xD9) return false;
+          if ((marker >= 0xE1 && marker <= 0xEF) || marker == 0xFE) return true;
+          i += 2 + ((b[i + 2] << 8) | b[i + 3]);
+        }
+        return false;
+      case 'image/png':
+        var i = 8;
+        while (i + 8 <= b.length) {
+          final len = (b[i] << 24) | (b[i + 1] << 16) | (b[i + 2] << 8) | b[i + 3];
+          final kind = String.fromCharCodes(b.sublist(i + 4, i + 8));
+          if (const {'eXIf', 'tEXt', 'iTXt', 'zTXt'}.contains(kind)) return true;
+          if (kind == 'IDAT' || kind == 'IEND' || len < 0) return false;
+          i += 12 + len;
+        }
+        return false;
+      case 'image/webp':
+        var i = 12;
+        while (i + 8 <= b.length) {
+          final kind = String.fromCharCodes(b.sublist(i, i + 4));
+          final len = b[i + 4] | (b[i + 5] << 8) | (b[i + 6] << 16) | (b[i + 7] << 24);
+          if (kind == 'EXIF' || kind == 'XMP ') return true;
+          i += 8 + len + (len.isOdd ? 1 : 0);
+        }
+        return false;
+      default:
+        return false;
+    }
+  }
+
   /// A kép a felismeréshez. A típus a bájtokból jön (a fájlnév és a platform által
   /// jelentett típus megtévesztő: a HEIC „.jpg”-nek, az átméretezett PNG JPEG-nek
   /// látszhat). Ami nem JPEG/PNG/WebP/GIF (pl. a Windows vágólap BMP-je, HEIC,
@@ -85,7 +123,10 @@ class CaptureService {
       } catch (e) {
         throw AppException(AppErrorCode.imageUnsupported, cause: e);
       }
-      if (attempt == 0 && fits && type != null && bytes.length <= maxBytes) {
+      // Az eredeti bájtok csak metaadat nélkül mennek tovább: egy galériából választott fotó
+      // EXIF-je a készítés helyét (GPS), idejét és a készüléket is hordozza. Újrakódolva
+      // (a dekódoló az elforgatást alkalmazza) ezek elvesznek.
+      if (attempt == 0 && fits && type != null && bytes.length <= maxBytes && !hasMetadata(bytes)) {
         image.dispose();
         return CapturedImage(bytes: bytes, mimeType: type, fileName: fileName);
       }

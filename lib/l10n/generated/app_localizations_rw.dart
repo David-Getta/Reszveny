@@ -13,8 +13,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline =>
-      'Fata ifoto y\'umugabane, umenye byose biwerekeyeho.';
+  String get homeTagline => 'Fata ifoto y\'umugabane, umenye byose biwerekeyeho.';
 
   @override
   String get homeHint =>
@@ -291,12 +290,10 @@ class AppLocalizationsRw extends AppLocalizations {
   String get labelYieldOnCost => 'Inyungu ku giciro waguze';
 
   @override
-  String get labelDividendGrowth5y =>
-      'Izamuka ry\'inyungu ku migabane (imyaka 5)';
+  String get labelDividendGrowth5y => 'Izamuka ry\'inyungu ku migabane (imyaka 5)';
 
   @override
-  String get dividendNone =>
-      'Nta nyungu ku migabane yishyuwe mu mezi 12 ashize.';
+  String get dividendNone => 'Nta nyungu ku migabane yishyuwe mu mezi 12 ashize.';
 
   @override
   String get dividendOnYourShares => 'Ku migabane yawe, ku mwaka';
@@ -354,8 +351,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get recognitionRawText => 'Inyandiko yasomwe ku ifoto';
 
   @override
-  String get errMissingAnthropicKey =>
-      'Kumenya amafoto ntibiboneka muri iyi verisiyo. Andika ticker ubwawe.';
+  String get errMissingAnthropicKey => 'Kumenya amafoto ntibiboneka muri iyi verisiyo. Andika ticker ubwawe.';
 
   @override
   String get errRecognitionUnreachable =>
@@ -367,32 +363,26 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Serivisi yo kumenya amafoto ntiyashoboye gusesengura iyi foto.';
+  String get errRecognitionRefused => 'Serivisi yo kumenya amafoto ntiyashoboye gusesengura iyi foto.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Igisubizo cyo kumenya ifoto cyaciwe hagati. Ongera ugerageze.';
+  String get errRecognitionTruncated => 'Igisubizo cyo kumenya ifoto cyaciwe hagati. Ongera ugerageze.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Igisubizo kitari cyitezwe cyavuye muri serivisi yo kumenya amafoto.';
+  String get errRecognitionBadResponse => 'Igisubizo kitari cyitezwe cyavuye muri serivisi yo kumenya amafoto.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Serivisi yo kumenya amafoto yagaruye igisubizo kirimo ubusa.';
+  String get errRecognitionEmpty => 'Serivisi yo kumenya amafoto yagaruye igisubizo kirimo ubusa.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Amakuru y\'isoko ntaboneka muri iyi verisiyo.';
+  String get errMissingFinnhubKey => 'Amakuru y\'isoko ntaboneka muri iyi verisiyo.';
 
   @override
   String get errMarketUnreachable =>
       'Ntibyashobotse kugera kuri serivisi y\'amakuru y\'isoko. Reba ko murandasi yawe ikora.';
 
   @override
-  String get errMarketRateLimited =>
-      'Ubusabe bwinshi cyane kuri serivisi y\'amakuru y\'isoko. Tegereza umunota umwe.';
+  String get errMarketRateLimited => 'Ubusabe bwinshi cyane kuri serivisi y\'amakuru y\'isoko. Tegereza umunota umwe.';
 
   @override
   String errMarketHttp(String status) {
@@ -400,8 +390,7 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Igisubizo kitari cyitezwe cyavuye muri serivisi y\'amakuru y\'isoko.';
+  String get errMarketBadResponse => 'Igisubizo kitari cyitezwe cyavuye muri serivisi y\'amakuru y\'isoko.';
 
   @override
   String errNoQuote(String symbol) {
@@ -501,8 +490,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get aiRegenerate => 'Ongera urikore';
 
   @override
-  String get aiGenerating =>
-      'Turimo gutegura isesengura… bishobora gufata umunota umwe cyangwa ibiri.';
+  String get aiGenerating => 'Turimo gutegura isesengura… bishobora gufata umunota umwe cyangwa ibiri.';
 
   @override
   String get aiSources => 'Inkomoko';
@@ -517,12 +505,10 @@ class AppLocalizationsRw extends AppLocalizations {
       'Isesengura ryakozwe na AI rishingiye ku makuru rusange n\'amakuru mashya. Rishobora kugira amakosa cyangwa kuba ritakigezweho, kandi si inama yo gushora imari.';
 
   @override
-  String get errAiNotConfigured =>
-      'Serivisi za AI ntiziboneka muri iyi verisiyo.';
+  String get errAiNotConfigured => 'Serivisi za AI ntiziboneka muri iyi verisiyo.';
 
   @override
-  String get errAiUnreachable =>
-      'Ntibyashobotse kugera kuri serivisi ya AI. Reba ko murandasi yawe ikora.';
+  String get errAiUnreachable => 'Ntibyashobotse kugera kuri serivisi ya AI. Reba ko murandasi yawe ikora.';
 
   @override
   String errAiHttp(String status) {
@@ -533,8 +519,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get errAiRefused => 'Serivisi ya AI yanze gusesengura uyu mugabane.';
 
   @override
-  String get errAiBadResponse =>
-      'Igisubizo kitari cyitezwe cyavuye muri serivisi ya AI.';
+  String get errAiBadResponse => 'Igisubizo kitari cyitezwe cyavuye muri serivisi ya AI.';
 
   @override
   String get sectionChart => 'Igishushanyo cy\'igiciro';
@@ -555,8 +540,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable =>
-      'Amateka y\'igiciro ntaboneka mu nkomoko y\'amakuru iriho ubu.';
+  String get chartUnavailable => 'Amateka y\'igiciro ntaboneka mu nkomoko y\'amakuru iriho ubu.';
 
   @override
   String get sectionStatements => 'Raporo z\'imari (z\'umwaka)';
@@ -583,8 +567,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get labelOperatingCashFlow => 'Amafaranga ava mu bikorwa';
 
   @override
-  String get statementsUnavailable =>
-      'Raporo z\'imari zatangajwe ntiziboneka kuri uyu mugabane.';
+  String get statementsUnavailable => 'Raporo z\'imari zatangajwe ntiziboneka kuri uyu mugabane.';
 
   @override
   String get launchAtLogin => 'Fungura iyo winjiye';
@@ -593,8 +576,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get hotkeyLabel => 'Inzira y\'ubusamo rusange';
 
   @override
-  String get hotkeyRecordHint =>
-      'Kanda hano, hanyuma ukande ihuriro rishya ry\'utubuto';
+  String get hotkeyRecordHint => 'Kanda hano, hanyuma ukande ihuriro rishya ry\'utubuto';
 
   @override
   String get hotkeyReset => 'Subiza ibisanzwe';
@@ -615,8 +597,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get removeFromFavorites => 'Kura mu byo ukunda';
 
   @override
-  String get noFavorites =>
-      'Nta mugabane urajya mu byo ukunda. Kanda inyenyeri ku mugabane ngo uwongeremo.';
+  String get noFavorites => 'Nta mugabane urajya mu byo ukunda. Kanda inyenyeri ku mugabane ngo uwongeremo.';
 
   @override
   String get displayCurrency => 'Ifaranga ryo kwerekana';
@@ -663,8 +644,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get updateDownloading => 'Turimo gukuramo ivugurura inyuma…';
 
   @override
-  String get updateDownloaded =>
-      'Ivugurura riteguye. Ongera utangize porogaramu ngo urishyiremo.';
+  String get updateDownloaded => 'Ivugurura riteguye. Ongera utangize porogaramu ngo urishyiremo.';
 
   @override
   String get updateNow => 'Vugurura';
@@ -673,8 +653,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get restartNow => 'Ongera utangize';
 
   @override
-  String get updatesViaStore =>
-      'Ivugurura riza mu buryo bwikora binyuze mu iduka rya porogaramu.';
+  String get updatesViaStore => 'Ivugurura riza mu buryo bwikora binyuze mu iduka rya porogaramu.';
 
   @override
   String get updateCheckFailed => 'Ntibyashobotse kureba ivugurura.';
@@ -722,8 +701,7 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Igerageza ryawe ry\'ubuntu ryarangiye. Hitamo gahunda ngo ukomeze gusesengura.';
+  String get trialExpired => 'Igerageza ryawe ry\'ubuntu ryarangiye. Hitamo gahunda ngo ukomeze gusesengura.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -759,12 +737,10 @@ class AppLocalizationsRw extends AppLocalizations {
   String get perMonth => '/ ukwezi';
 
   @override
-  String get extraPacksTitle =>
-      'Ukeneye ibindi? Gura amasesengura y\'inyongera';
+  String get extraPacksTitle => 'Ukeneye ibindi? Gura amasesengura y\'inyongera';
 
   @override
-  String get extraPacksHint =>
-      'Amasesengura y\'inyongera ntarangira kandi akoreshwa nyuma y\'ayo wemerewe buri kwezi.';
+  String get extraPacksHint => 'Amasesengura y\'inyongera ntarangira kandi akoreshwa nyuma y\'ayo wemerewe buri kwezi.';
 
   @override
   String get buy => 'Gura';
@@ -796,12 +772,10 @@ class AppLocalizationsRw extends AppLocalizations {
       'Nta masesengura agusigaranye muri iki gihe. Zamura gahunda yawe cyangwa ugure amasesengura y\'inyongera.';
 
   @override
-  String get errTrialExpired =>
-      'Igerageza ryawe ry\'ubuntu ryarangiye. Hitamo gahunda ngo ukomeze.';
+  String get errTrialExpired => 'Igerageza ryawe ry\'ubuntu ryarangiye. Hitamo gahunda ngo ukomeze.';
 
   @override
-  String get errNoPlan =>
-      'Ukeneye gahunda ikora kugira ngo ukoreshe isesengura rya AI.';
+  String get errNoPlan => 'Ukeneye gahunda ikora kugira ngo ukoreshe isesengura rya AI.';
 
   @override
   String get viewPlans => 'Reba gahunda';
@@ -810,8 +784,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get usageTitle => 'Ikoreshwa';
 
   @override
-  String get demoPurchaseNote =>
-      'Kwishyura by\'icyitegererezo: kugura kuri iyi sisitemu ni ukwigana gusa.';
+  String get demoPurchaseNote => 'Kwishyura by\'icyitegererezo: kugura kuri iyi sisitemu ni ukwigana gusa.';
 
   @override
   String get mostPopular => 'Ikunzwe cyane';
@@ -880,12 +853,10 @@ class AppLocalizationsRw extends AppLocalizations {
   String get aiReaderExperienced => 'Inararibonye';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'Ururimi rworoshye; buri jambo rya tekiniki rirasobanurwa.';
+  String get aiReaderBeginnerDesc => 'Ururimi rworoshye; buri jambo rya tekiniki rirasobanurwa.';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'Inyandiko ikomatanyije ikoresha amagambo asanzwe y\'imari.';
+  String get aiReaderExperiencedDesc => 'Inyandiko ikomatanyije ikoresha amagambo asanzwe y\'imari.';
 
   @override
   String get aiCounterArgument => 'Igitekerezo kivuguruza gikomeye kurusha';
@@ -899,8 +870,7 @@ class AppLocalizationsRw extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'Kugeza ku mashakisha $count kuri murandasi kuri buri sesengura muri gahunda yawe',
+      other: 'Kugeza ku mashakisha $count kuri murandasi kuri buri sesengura muri gahunda yawe',
       one: 'Kugeza ku ishakisha 1 kuri murandasi kuri buri sesengura muri gahunda yawe',
     );
     return '$_temp0';
@@ -986,8 +956,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get upcomingEvents => 'Ibiteganyijwe';
 
   @override
-  String get outlookChartNote =>
-      'Imbibi zigereranyije; amahirwe ni ibigereranyo, si ubuhanuzi.';
+  String get outlookChartNote => 'Imbibi zigereranyije; amahirwe ni ibigereranyo, si ubuhanuzi.';
 
   @override
   String get accountTitle => 'Konti';
@@ -1002,12 +971,10 @@ class AppLocalizationsRw extends AppLocalizations {
   String get notSignedIn => 'Ntabwo winjiye';
 
   @override
-  String get accountBenefit =>
-      'Injira kugira ngo ifatabuguzi ryawe rikore ku bikoresho byawe byose.';
+  String get accountBenefit => 'Injira kugira ngo ifatabuguzi ryawe rikore ku bikoresho byawe byose.';
 
   @override
-  String get accountSyncedNote =>
-      'Ifatabuguzi ryawe n\'amasesengura agusigaranye ni bimwe ku bikoresho byose.';
+  String get accountSyncedNote => 'Ifatabuguzi ryawe n\'amasesengura agusigaranye ni bimwe ku bikoresho byose.';
 
   @override
   String get signInTitle => 'Injira muri WhatStock';
@@ -1039,12 +1006,10 @@ class AppLocalizationsRw extends AppLocalizations {
   String get errInvalidEmail => 'Andika aderesi ya imeri yemewe.';
 
   @override
-  String get errSignInFailed =>
-      'Kwinjira ntibyakunze. Reba murandasi yawe wongere ugerageze.';
+  String get errSignInFailed => 'Kwinjira ntibyakunze. Reba murandasi yawe wongere ugerageze.';
 
   @override
-  String get checkoutWaiting =>
-      'Soza kwishyura muri mushakisha yawe. Porogaramu irahita yivugurura nibirangira.';
+  String get checkoutWaiting => 'Soza kwishyura muri mushakisha yawe. Porogaramu irahita yivugurura nibirangira.';
 
   @override
   String get paymentViaStripe =>
@@ -1061,8 +1026,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get doubleOptionTitle => 'Kanda Option kabiri';
 
   @override
-  String get doubleOptionSubtitle =>
-      'Gukanda Option kabiri vuba na byo bihamagara WhatStock.';
+  String get doubleOptionSubtitle => 'Gukanda Option kabiri vuba na byo bihamagara WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1084,12 +1048,7 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: 'imyaka $years',
-      one: 'umwaka 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'imyaka $years', one: 'umwaka 1');
     return '$_temp0';
   }
 
@@ -1195,8 +1154,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get portfolioRemove => 'Kuramo';
 
   @override
-  String get portfolioExcluded =>
-      'Imigabane idafite igiciro cyangwa igipimo cy\'ivunjisha ntibarirwa mu giteranyo.';
+  String get portfolioExcluded => 'Imigabane idafite igiciro cyangwa igipimo cy\'ivunjisha ntibarirwa mu giteranyo.';
 
   @override
   String get priceAlerts => 'Imenyesha ry\'ibiciro';
@@ -1238,8 +1196,7 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty =>
-      'Nta menyesha ry\'igiciro rirahari. Fungura umugabane ukande inzogera ngo urishyireho.';
+  String get alertsEmpty => 'Nta menyesha ry\'igiciro rirahari. Fungura umugabane ukande inzogera ngo urishyireho.';
 
   @override
   String get alertsNote =>
@@ -1332,8 +1289,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get accountDeleted => 'Konti yawe yasibwe.';
 
   @override
-  String get errDeleteAccount =>
-      'Konti ntiyashoboye gusibwa. Reba murandasi yawe wongere ugerageze.';
+  String get errDeleteAccount => 'Konti ntiyashoboye gusibwa. Reba murandasi yawe wongere ugerageze.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1370,8 +1326,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get inviteTitle => 'Igerageza ryihariye';
 
   @override
-  String get inviteBody =>
-      'Ubu WhatStock iboneka gusa ku butumire. Andika kode y\'ubutumire wahawe.';
+  String get inviteBody => 'Ubu WhatStock iboneka gusa ku butumire. Andika kode y\'ubutumire wahawe.';
 
   @override
   String get inviteCodeLabel => 'Kode y\'ubutumire';
@@ -1383,12 +1338,10 @@ class AppLocalizationsRw extends AppLocalizations {
   String get inviteInvalid => 'Iyi kode y\'ubutumire ntiyemewe.';
 
   @override
-  String get inviteExpired =>
-      'Ubu butumire bwarengeje igihe. Saba uwagutumiye kode nshya.';
+  String get inviteExpired => 'Ubu butumire bwarengeje igihe. Saba uwagutumiye kode nshya.';
 
   @override
-  String get inviteDeviceLimit =>
-      'Iyi kode y\'ubutumire isanzwe ikoreshwa ku mubare ntarengwa w\'ibikoresho.';
+  String get inviteDeviceLimit => 'Iyi kode y\'ubutumire isanzwe ikoreshwa ku mubare ntarengwa w\'ibikoresho.';
 
   @override
   String get previewConfidential => 'Igerageza ry\'ibanga';
@@ -1509,8 +1462,7 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown =>
-      'Iyi kode ntibaho. Yigenzure wongere ugerageze.';
+  String get referralErrUnknown => 'Iyi kode ntibaho. Yigenzure wongere ugerageze.';
 
   @override
   String get referralErrOwn => 'Ntushobora gukoresha kode yawe bwite.';
@@ -1590,8 +1542,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get telemetryDecline => 'Oya, urakoze';
 
   @override
-  String get telemetrySetting =>
-      'Imibare itagaragaza umwirondoro na raporo z\'ihagarara';
+  String get telemetrySetting => 'Imibare itagaragaza umwirondoro na raporo z\'ihagarara';
 
   @override
   String get telemetrySettingHint =>
@@ -1632,20 +1583,14 @@ class AppLocalizationsRw extends AppLocalizations {
       'Icyo cyari ikibazo cya nyuma kuri iri sesengura. Kora isesengura rishya kugira ngo ubaze ibindi.';
 
   @override
-  String get errAskLimit =>
-      'Wageze ku mubare ntarengwa w\'ibibazo by\'uyu munsi. Ongera ugerageze ejo.';
+  String get errAskLimit => 'Wageze ku mubare ntarengwa w\'ibibazo by\'uyu munsi. Ongera ugerageze ejo.';
 
   @override
   String get eventTomorrow => 'Ejo';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'mu minsi $days',
-      one: 'mu munsi 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'mu minsi $days', one: 'mu munsi 1');
     return '$_temp0';
   }
 
@@ -1670,8 +1615,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get eventDividend => 'Idividende yitezwe';
 
   @override
-  String get eventDividendEstimate =>
-      'Bigereranyijwe hashingiwe ku bwishyu wanditse';
+  String get eventDividendEstimate => 'Bigereranyijwe hashingiwe ku bwishyu wanditse';
 
   @override
   String get eventsHint =>
@@ -1730,8 +1674,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get notesTitle => 'Ibyo nanditse';
 
   @override
-  String get notesHint =>
-      'Kuki wawuguze, ni iki ukurikirana, ni iki cyatuma uwugurisha?';
+  String get notesHint => 'Kuki wawuguze, ni iki ukurikirana, ni iki cyatuma uwugurisha?';
 
   @override
   String get notesInfo =>
@@ -1962,8 +1905,7 @@ class AppLocalizationsRw extends AppLocalizations {
       'Uko umugabane uhindagurika hamwe n\'isoko: 1 = nk\'isoko, 1,5 = ihindagurika riruta hafi 50%, munsi ya 1 = bituje.';
 
   @override
-  String get glossRevenueTtm =>
-      'Ibyagurishijwe byose mu mezi 12 ashize, mbere y\'ikiguzi icyo ari cyo cyose.';
+  String get glossRevenueTtm => 'Ibyagurishijwe byose mu mezi 12 ashize, mbere y\'ikiguzi icyo ari cyo cyose.';
 
   @override
   String get glossNetIncomeTtm =>
@@ -1986,8 +1928,7 @@ class AppLocalizationsRw extends AppLocalizations {
       'Inyungu ku mari shingiro: inyungu y\'umwaka ÷ imari ya ba nyirayo. Igaragaza uko ubuyobozi bukoresha neza amafaranga y\'abanyamigabane; hejuru ya hafi 15% ni byiza cyane.';
 
   @override
-  String get glossRoa =>
-      'Inyungu ku mutungo: inyungu y\'umwaka ÷ umutungo wose w\'ikigo. Gereranya mu rwego rumwe.';
+  String get glossRoa => 'Inyungu ku mutungo: inyungu y\'umwaka ÷ umutungo wose w\'ikigo. Gereranya mu rwego rumwe.';
 
   @override
   String get glossDebtToEquity =>
@@ -1998,20 +1939,17 @@ class AppLocalizationsRw extends AppLocalizations {
       'Umutungo w\'igihe gito ÷ amadeni agomba kwishyurwa mu mwaka. Hejuru ya 1 bivuze ko ikigo gishobora kwishyura amadeni yacyo ya vuba.';
 
   @override
-  String get glossRevenueGrowth =>
-      'Uko amafaranga yinjiye yiyongereye ugereranyije n\'umwaka ushize.';
+  String get glossRevenueGrowth => 'Uko amafaranga yinjiye yiyongereye ugereranyije n\'umwaka ushize.';
 
   @override
-  String get glossEpsGrowth =>
-      'Uko inyungu kuri buri mugabane yiyongereye ugereranyije n\'umwaka ushize.';
+  String get glossEpsGrowth => 'Uko inyungu kuri buri mugabane yiyongereye ugereranyije n\'umwaka ushize.';
 
   @override
   String get glossDividendYield =>
       'Inyungu ku migabane y\'umwaka ÷ igiciro cy\'umugabane: amafaranga wabona buri mwaka, mu ijanisha ry\'ibyo wishyura.';
 
   @override
-  String get glossDividendPerShare =>
-      'Inyungu yishyuwe ku mugabane umwe mu mwaka ushize.';
+  String get glossDividendPerShare => 'Inyungu yishyuwe ku mugabane umwe mu mwaka ushize.';
 
   @override
   String get glossPayoutRatio =>
@@ -2109,10 +2047,8 @@ class AppLocalizationsRw extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'Byanganye cyangwa birenze EPS yari yitezwe mu bihembwe $beats kuri $total biheruka',
-      one:
-          'Byanganye cyangwa birenze EPS yari yitezwe mu gihembwe $beats kuri 1',
+      other: 'Byanganye cyangwa birenze EPS yari yitezwe mu bihembwe $beats kuri $total biheruka',
+      one: 'Byanganye cyangwa birenze EPS yari yitezwe mu gihembwe $beats kuri 1',
     );
     return '$_temp0';
   }
@@ -2170,8 +2106,7 @@ class AppLocalizationsRw extends AppLocalizations {
       'Genzura imibare mbere yo kuyongeramo. Igiciro ni impuzandengo y\'igiciro waguzeho umugabane umwe, si igiciro cy\'uyu munsi.';
 
   @override
-  String get holdingsNoPrice =>
-      'Nta mpuzandengo y\'igiciro cyo kugura iri ku ifoto';
+  String get holdingsNoPrice => 'Nta mpuzandengo y\'igiciro cyo kugura iri ku ifoto';
 
   @override
   String holdingsAdd(int count) {
@@ -2229,23 +2164,13 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'kugura $count',
-      one: 'kugura 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'kugura $count', one: 'kugura 1');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'kugurisha $count',
-      one: 'kugurisha 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'kugurisha $count', one: 'kugurisha 1');
     return '$_temp0';
   }
 
@@ -2309,15 +2234,13 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'Byakopowe mu bubiko bw\'agateganyo – byomeke aho ushaka kubisangiza.';
+  String get sharedToClipboard => 'Byakopowe mu bubiko bw\'agateganyo – byomeke aho ushaka kubisangiza.';
 
   @override
   String get glossaryNoMatch => 'Nta jambo rihuye n\'ibyo washakishije.';
 
   @override
-  String get cashInvalidAmount =>
-      'Andika amafaranga angana na 0 cyangwa arenga.';
+  String get cashInvalidAmount => 'Andika amafaranga angana na 0 cyangwa arenga.';
 
   @override
   String get portfolioImportNothing =>
@@ -2333,16 +2256,13 @@ class AppLocalizationsRw extends AppLocalizations {
       'Iyi konti yasibiwe ku kindi gikoresho cyangwa kuri murandasi, bityo amakuru yayo nayo yavanywe kuri iki gikoresho.';
 
   @override
-  String get errAiUnavailable =>
-      'Serivisi ya AI ntiboneka ubu. Ongera ugerageze mu minota mike.';
+  String get errAiUnavailable => 'Serivisi ya AI ntiboneka ubu. Ongera ugerageze mu minota mike.';
 
   @override
-  String get errMarketUnavailable =>
-      'Amakuru y\'isoko ntaboneka ubu. Ongera ugerageze mu minota mike.';
+  String get errMarketUnavailable => 'Amakuru y\'isoko ntaboneka ubu. Ongera ugerageze mu minota mike.';
 
   @override
-  String get purchaseUnavailable =>
-      'Kugura ntibishoboka ubu. Ongera ugerageze nyuma.';
+  String get purchaseUnavailable => 'Kugura ntibishoboka ubu. Ongera ugerageze nyuma.';
 
   @override
   String get signOutLocalOnly =>
@@ -2361,15 +2281,13 @@ class AppLocalizationsRw extends AppLocalizations {
   String get backupSave => 'Bika kopi y\'inyongera';
 
   @override
-  String get backupSaveHint =>
-      'Ibyo ukunda, intonde, ishoramari, imenyesha n\'ibyo wanditse muri dosiye imwe.';
+  String get backupSaveHint => 'Ibyo ukunda, intonde, ishoramari, imenyesha n\'ibyo wanditse muri dosiye imwe.';
 
   @override
   String get backupRestore => 'Garura uvuye kuri kopi y\'inyongera';
 
   @override
-  String get backupRestoreHint =>
-      'Yongeraho ibiri muri dosiye; nta na kimwe mu byo ufite ubu gisibwa.';
+  String get backupRestoreHint => 'Yongeraho ibiri muri dosiye; nta na kimwe mu byo ufite ubu gisibwa.';
 
   @override
   String get backupRestored => 'Kopi y\'inyongera yagaruwe.';
@@ -2488,8 +2406,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Imenyesha rya portfolio';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'Imenyesha igihe portfolio yawe yose ihindutse bingana gutya mu munsi umwe.';
+  String get portfolioMoveAlertSubtitle => 'Imenyesha igihe portfolio yawe yose ihindutse bingana gutya mu munsi umwe.';
 
   @override
   String get portfolioMoveAlertOff => 'Bizimije';
@@ -2585,8 +2502,7 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
-  String get dividendGoalSet =>
-      'Shyiraho intego y\'inyungu ku migabane ku kwezi';
+  String get dividendGoalSet => 'Shyiraho intego y\'inyungu ku migabane ku kwezi';
 
   @override
   String get dividendGoalTitle => 'Intego y\'inyungu ku migabane ku kwezi';
@@ -2662,8 +2578,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get portfolioTopHoldings => 'Imigabane minini';
 
   @override
-  String get portfolioShareNote =>
-      'Hasangizwa ijanisha gusa, nta mafaranga agaragara.';
+  String get portfolioShareNote => 'Hasangizwa ijanisha gusa, nta mafaranga agaragara.';
 
   @override
   String portfolioPositionsCount(int count) {
@@ -2729,8 +2644,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get portfolioSampleRemove => 'Kuramo icyitegererezo';
 
   @override
-  String get portfolioStopsAll =>
-      'Imenyesha ryo kumanuka kuva ku isonga ku migabane yose';
+  String get portfolioStopsAll => 'Imenyesha ryo kumanuka kuva ku isonga ku migabane yose';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2779,12 +2693,10 @@ class AppLocalizationsRw extends AppLocalizations {
   String get lotNoteAdd => 'Ongeraho inyandiko';
 
   @override
-  String get lotNoteBuyHint =>
-      'Kuki uri kugura? Bizajya mu byo wanditse ku mugabane, hamwe n\'itariki.';
+  String get lotNoteBuyHint => 'Kuki uri kugura? Bizajya mu byo wanditse ku mugabane, hamwe n\'itariki.';
 
   @override
-  String get lotNoteSellHint =>
-      'Kuki uri kugurisha? Bizajya mu byo wanditse ku mugabane, hamwe n\'itariki.';
+  String get lotNoteSellHint => 'Kuki uri kugurisha? Bizajya mu byo wanditse ku mugabane, hamwe n\'itariki.';
 
   @override
   String get lotNoteBought => 'Byaguzwe';
@@ -2794,23 +2706,13 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: 'amezi $months',
-      one: 'ukwezi $months',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: 'amezi $months', one: 'ukwezi $months');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'iminsi $days',
-      one: 'umunsi $days',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'iminsi $days', one: 'umunsi $days');
     return '$_temp0';
   }
 
@@ -2864,8 +2766,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get activitySearchHint => 'Shungura ukurikije ticker';
 
   @override
-  String get activityNoMatch =>
-      'Nta gikorwa cyo kugura cyangwa kugurisha gihuye n\'ibyo washunguye.';
+  String get activityNoMatch => 'Nta gikorwa cyo kugura cyangwa kugurisha gihuye n\'ibyo washunguye.';
 
   @override
   String portfolioImportDuplicates(int count) {
@@ -2899,12 +2800,10 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'Injira ukoresheje imeyili yawe kugira ngo ukoreshe kode y\'inshuti.';
+  String get referralErrSignIn => 'Injira ukoresheje imeyili yawe kugira ngo ukoreshe kode y\'inshuti.';
 
   @override
-  String get referralErrFull =>
-      'Iyi kode yamaze gukoreshwa inshuro zose zemewe.';
+  String get referralErrFull => 'Iyi kode yamaze gukoreshwa inshuro zose zemewe.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2916,12 +2815,10 @@ class AppLocalizationsRw extends AppLocalizations {
       'Isesengura ryaciwe hagati ritarangira. Ongera ugerageze – ntiryakoresheje ingano wemerewe.';
 
   @override
-  String get errImageUnsupported =>
-      'Iyi foto ntishobora gusomwa. Yibike nka JPEG cyangwa PNG maze wongere ugerageze.';
+  String get errImageUnsupported => 'Iyi foto ntishobora gusomwa. Yibike nka JPEG cyangwa PNG maze wongere ugerageze.';
 
   @override
-  String get errRateLimited =>
-      'Ubusabe bwinshi cyane mu gihe gito. Tegereza umunota umwe maze wongere ugerageze.';
+  String get errRateLimited => 'Ubusabe bwinshi cyane mu gihe gito. Tegereza umunota umwe maze wongere ugerageze.';
 
   @override
   String get watchListNameTaken => 'Hari urutonde rufite iri zina.';
@@ -2944,8 +2841,7 @@ class AppLocalizationsRw extends AppLocalizations {
       'Nta fatabuguzi ryo kugenzura riri hano. Ifatabuguzi waguze kuri App Store cyangwa Google Play rigenzurirwa mu igenamiterere ry\'iduka.';
 
   @override
-  String get backupFailed =>
-      'Kopi y\'inyongera ntiyashoboye kubikwa. Ongera ugerageze.';
+  String get backupFailed => 'Kopi y\'inyongera ntiyashoboye kubikwa. Ongera ugerageze.';
 
   @override
   String get syncTooLarge =>
@@ -2965,10 +2861,8 @@ class AppLocalizationsRw extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'Amadividende $count muri $currencies ntafite igipimo cy\'ivunjisha, ntabarirwa mu giteranyo.',
-      one:
-          'Idividende 1 muri $currencies ntirifite igipimo cy\'ivunjisha, ntiribarirwa mu giteranyo.',
+      other: 'Amadividende $count muri $currencies ntafite igipimo cy\'ivunjisha, ntabarirwa mu giteranyo.',
+      one: 'Idividende 1 muri $currencies ntirifite igipimo cy\'ivunjisha, ntiribarirwa mu giteranyo.',
     );
     return '$_temp0';
   }
@@ -2988,8 +2882,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get signOutAnyway => 'Sohoka uko biri kose';
 
   @override
-  String get fileTooLarge =>
-      'Iyi dosiye ni nini cyane ku buryo idashobora gufungurwa hano.';
+  String get fileTooLarge => 'Iyi dosiye ni nini cyane ku buryo idashobora gufungurwa hano.';
 
   @override
   String portfolioAnnualSummaryYear(String year) {
@@ -3082,8 +2975,7 @@ class AppLocalizationsRw extends AppLocalizations {
       'Amakuru rusange yakozwe na AI ku miterere y\'ishoramari ryawe. Ntiyita ku ntego zawe, ubushobozi bwawe bw\'amafaranga cyangwa imiterere y\'imisoro yawe, kandi si inama yihariye kuri wowe cyangwa inama yo gushora imari.';
 
   @override
-  String get briefNotificationTitle =>
-      'Incamake ya AI · Uyu munsi n’imigabane yawe';
+  String get briefNotificationTitle => 'Incamake ya AI · Uyu munsi n’imigabane yawe';
 
   @override
   String get portfolioGoalSet => 'Shyiraho intego';
@@ -3241,8 +3133,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String get portfolioSplitRatio => 'Igipimo (mishya : ya kera)';
 
   @override
-  String get portfolioSplitRatioError =>
-      'Andika igipimo nka 10:1, cyangwa 1:10 ku igabanywa risubira inyuma.';
+  String get portfolioSplitRatioError => 'Andika igipimo nka 10:1, cyangwa 1:10 ku igabanywa risubira inyuma.';
 
   @override
   String get portfolioSplitDate => 'Itariki y\'igabanywa';
@@ -3407,12 +3298,10 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
-  String get signalCrossedAbove =>
-      'yarenze hejuru y\'impuzandengo y\'iminsi 200';
+  String get signalCrossedAbove => 'yarenze hejuru y\'impuzandengo y\'iminsi 200';
 
   @override
-  String get signalCrossedBelow =>
-      'yamanutse munsi y\'impuzandengo y\'iminsi 200';
+  String get signalCrossedBelow => 'yamanutse munsi y\'impuzandengo y\'iminsi 200';
 
   @override
   String get signalAlertsTitle => 'Imenyesha ry\'ibimenyetso bya tekiniki';

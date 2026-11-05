@@ -293,8 +293,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get labelDividendGrowth5y => 'Timerna n dividand (5 yiseggasen)';
 
   @override
-  String get dividendNone =>
-      'Ulac dividand i yettwaxelṣen deg 12 n wayyuren ineggura.';
+  String get dividendNone => 'Ulac dividand i yettwaxelṣen deg 12 n wayyuren ineggura.';
 
   @override
   String get dividendOnYourShares => 'Ɣef yiksyunen-ik, i useggas';
@@ -319,12 +318,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count n yimesleḍen',
-      one: '1 n umesleḍ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count n yimesleḍen', one: '1 n umesleḍ');
     return '$_temp0';
   }
 
@@ -352,12 +346,10 @@ class AppLocalizationsKab extends AppLocalizations {
   String get recognitionRawText => 'Aḍris yettwaɣran seg tugna';
 
   @override
-  String get errMissingAnthropicKey =>
-      'Aɛqal n tugniwin ulac-it deg lqem-a. Sekcem azamul s ufus.';
+  String get errMissingAnthropicKey => 'Aɛqal n tugniwin ulac-it deg lqem-a. Sekcem azamul s ufus.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'Ur nezmir ara ad naweḍ ɣer umeẓlu n uɛqal. Senqed tuqqna ɣer internet.';
+  String get errRecognitionUnreachable => 'Ur nezmir ara ad naweḍ ɣer umeẓlu n uɛqal. Senqed tuqqna ɣer internet.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -365,16 +357,13 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Ameẓlu n uɛqal ur yezmir ara ad yesleḍ tugna-a.';
+  String get errRecognitionRefused => 'Ameẓlu n uɛqal ur yezmir ara ad yesleḍ tugna-a.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Tiririt n uɛqal tegzem. Ɛreḍ tikkelt-nniḍen.';
+  String get errRecognitionTruncated => 'Tiririt n uɛqal tegzem. Ɛreḍ tikkelt-nniḍen.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Tiririt ur nettwaṛǧa ara seg umeẓlu n uɛqal.';
+  String get errRecognitionBadResponse => 'Tiririt ur nettwaṛǧa ara seg umeẓlu n uɛqal.';
 
   @override
   String get errRecognitionEmpty => 'Ameẓlu n uɛqal yerra-d tiririt tilemt.';
@@ -383,8 +372,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get errMissingFinnhubKey => 'Isefka n usuq ulac-iten deg lqem-a.';
 
   @override
-  String get errMarketUnreachable =>
-      'Ur nezmir ara ad naweḍ ɣer umeẓlu n yisefka n usuq. Senqed tuqqna ɣer internet.';
+  String get errMarketUnreachable => 'Ur nezmir ara ad naweḍ ɣer umeẓlu n yisefka n usuq. Senqed tuqqna ɣer internet.';
 
   @override
   String get errMarketRateLimited =>
@@ -396,8 +384,7 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Tiririt ur nettwaṛǧa ara seg umeẓlu n yisefka n usuq.';
+  String get errMarketBadResponse => 'Tiririt ur nettwaṛǧa ara seg umeẓlu n yisefka n usuq.';
 
   @override
   String errNoQuote(String symbol) {
@@ -497,8 +484,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get aiRegenerate => 'Ales asnulfu';
 
   @override
-  String get aiGenerating =>
-      'Aheyyi n tesleḍt… Ayagi yezmer ad yeṭṭef tasdidt neɣ snat.';
+  String get aiGenerating => 'Aheyyi n tesleḍt… Ayagi yezmer ad yeṭṭef tasdidt neɣ snat.';
 
   @override
   String get aiSources => 'Iɣbula';
@@ -516,8 +502,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get errAiNotConfigured => 'Timahilin n AI ulac-itent deg lqem-a.';
 
   @override
-  String get errAiUnreachable =>
-      'Ur nezmir ara ad naweḍ ɣer umeẓlu n AI. Senqed tuqqna ɣer internet.';
+  String get errAiUnreachable => 'Ur nezmir ara ad naweḍ ɣer umeẓlu n AI. Senqed tuqqna ɣer internet.';
 
   @override
   String errAiHttp(String status) {
@@ -549,8 +534,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get rangeFiveYears => '5 yiseggasen';
 
   @override
-  String get chartUnavailable =>
-      'Amazray n ssuma ulac-it deg uɣbalu n yisefka amiran.';
+  String get chartUnavailable => 'Amazray n ssuma ulac-it deg uɣbalu n yisefka amiran.';
 
   @override
   String get sectionStatements => 'Ineqqisen n yidrimen (yal aseggas)';
@@ -607,8 +591,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get removeFromFavorites => 'Kkes seg yismenyifen';
 
   @override
-  String get noFavorites =>
-      'Mazal ulac ismenyifen. Sit ɣef yitri n uksyun akken ad t-ternuḍ.';
+  String get noFavorites => 'Mazal ulac ismenyifen. Sit ɣef yitri n uksyun akken ad t-ternuḍ.';
 
   @override
   String get displayCurrency => 'Tadrimt n uskan';
@@ -655,8 +638,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get updateDownloading => 'Azdam n uleqqem deg ugilal…';
 
   @override
-  String get updateDownloaded =>
-      'Aleqqem yewjed. Ales asenker akken ad yettwasbedd.';
+  String get updateDownloaded => 'Aleqqem yewjed. Ales asenker akken ad yettwasbedd.';
 
   @override
   String get updateNow => 'Leqqem';
@@ -665,8 +647,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get restartNow => 'Ales asenker';
 
   @override
-  String get updatesViaStore =>
-      'Ileqman ttawḍen-d s wudem awurman seg tḥanut n yisnasen.';
+  String get updatesViaStore => 'Ileqman ttawḍen-d s wudem awurman seg tḥanut n yisnasen.';
 
   @override
   String get updateCheckFailed => 'Aɣelluy deg usenqed n yileqman.';
@@ -714,8 +695,7 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Tirmit n baṭel tfuk. Fren aɣawas akken ad tkemmleḍ tiselḍin.';
+  String get trialExpired => 'Tirmit n baṭel tfuk. Fren aɣawas akken ad tkemmleḍ tiselḍin.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -754,8 +734,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get extraPacksTitle => 'Tesriḍ ugar? Aɣ tiselḍin nniḍen';
 
   @override
-  String get extraPacksHint =>
-      'Tiselḍin nniḍen ur tfukkunt ara, ttwaseqdacent deffir n tesmekta n wayyur.';
+  String get extraPacksHint => 'Tiselḍin nniḍen ur tfukkunt ara, ttwaseqdacent deffir n tesmekta n wayyur.';
 
   @override
   String get buy => 'Aɣ';
@@ -783,12 +762,10 @@ class AppLocalizationsKab extends AppLocalizations {
       'Tiɣin mazal ur llint ara deg tɣerɣert-a. Jerred seg tiliɣri neɣ seg Mac; aɣawas ad iteddu deg yal ibenk.';
 
   @override
-  String get errQuotaExceeded =>
-      'Ur d-tegri ara tesleḍt deg tallit-a. Bedel ɣer uɣawas nnig, neɣ aɣ tiselḍin nniḍen.';
+  String get errQuotaExceeded => 'Ur d-tegri ara tesleḍt deg tallit-a. Bedel ɣer uɣawas nnig, neɣ aɣ tiselḍin nniḍen.';
 
   @override
-  String get errTrialExpired =>
-      'Tirmit n baṭel tfuk. Fren aɣawas akken ad tkemmleḍ.';
+  String get errTrialExpired => 'Tirmit n baṭel tfuk. Fren aɣawas akken ad tkemmleḍ.';
 
   @override
   String get errNoPlan => 'Tasleḍt s AI tesra aɣawas urmid.';
@@ -800,8 +777,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get usageTitle => 'Aseqdec';
 
   @override
-  String get demoPurchaseNote =>
-      'Axelleṣ n uskan: tiɣin deg tɣerɣert-a ur d tidet ara.';
+  String get demoPurchaseNote => 'Axelleṣ n uskan: tiɣin deg tɣerɣert-a ur d tidet ara.';
 
   @override
   String get mostPopular => 'Yettwafren ugar';
@@ -841,8 +817,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get aiDepthStandardDesc => 'Aneqqis ummid s yal tigezmi.';
 
   @override
-  String get aiDepthDeepDesc =>
-      'Ugar n yinadiyen deg web, aserwes d tkebbaniyin nniḍen d telqayt ugar.';
+  String get aiDepthDeepDesc => 'Ugar n yinadiyen deg web, aserwes d tkebbaniyin nniḍen d telqayt ugar.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -870,19 +845,16 @@ class AppLocalizationsKab extends AppLocalizations {
   String get aiReaderExperienced => 'Amussnaw';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'Tutlayt tafessast; yal awal atiknik yettwafser.';
+  String get aiReaderBeginnerDesc => 'Tutlayt tafessast; yal awal atiknik yettwafser.';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'Aḍris yeččuren ugar, s tmawalt tamagnut n yidrimen.';
+  String get aiReaderExperiencedDesc => 'Aḍris yeččuren ugar, s tmawalt tamagnut n yidrimen.';
 
   @override
   String get aiCounterArgument => 'Awal n umgal yejhden ugar';
 
   @override
-  String get aiCounterArgumentDesc =>
-      'Agzul yettfakk yal tikkelt s wawal yelhan ugar mgal taggrayt-is.';
+  String get aiCounterArgumentDesc => 'Agzul yettfakk yal tikkelt s wawal yelhan ugar mgal taggrayt-is.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -991,12 +963,10 @@ class AppLocalizationsKab extends AppLocalizations {
   String get notSignedIn => 'Ur tekcimeḍ ara';
 
   @override
-  String get accountBenefit =>
-      'Kcem akken ajerred ad iteddu deg yibenkan-ik·im akk.';
+  String get accountBenefit => 'Kcem akken ajerred ad iteddu deg yibenkan-ik·im akk.';
 
   @override
-  String get accountSyncedNote =>
-      'Ajerred d tselḍin i d-yegran d yiwen deg yal ibenk.';
+  String get accountSyncedNote => 'Ajerred d tselḍin i d-yegran d yiwen deg yal ibenk.';
 
   @override
   String get signInTitle => 'Kcem ɣer WhatStock';
@@ -1028,16 +998,13 @@ class AppLocalizationsKab extends AppLocalizations {
   String get errInvalidEmail => 'Ma ulac aɣilif, sekcem tansa imayl tameɣtut.';
 
   @override
-  String get errSignInFailed =>
-      'Akcam ur yeddi ara. Senqed tuqqna syen ɛreḍ tikkelt-nniḍen.';
+  String get errSignInFailed => 'Akcam ur yeddi ara. Senqed tuqqna syen ɛreḍ tikkelt-nniḍen.';
 
   @override
-  String get checkoutWaiting =>
-      'Smed axelleṣ deg yiminig. Asnas ad yettwaleqqem s wudem awurman mi ara yemmed.';
+  String get checkoutWaiting => 'Smed axelleṣ deg yiminig. Asnas ad yettwaleqqem s wudem awurman mi ara yemmed.';
 
   @override
-  String get paymentViaStripe =>
-      'Axelleṣ aɣelsan deg yiminig s Stripe. Tzemreḍ ad tsefsxeḍ melmi i tebɣiḍ.';
+  String get paymentViaStripe => 'Axelleṣ aɣelsan deg yiminig s Stripe. Tzemreḍ ad tsefsxeḍ melmi i tebɣiḍ.';
 
   @override
   String get paymentViaStore =>
@@ -1050,8 +1017,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get doubleOptionTitle => 'Sit snat n tikkal ɣef Option';
 
   @override
-  String get doubleOptionSubtitle =>
-      'Ma tsiteḍ s zzerb snat n tikkal ɣef tqeffalt Option, ad d-yeldi daɣen WhatStock.';
+  String get doubleOptionSubtitle => 'Ma tsiteḍ s zzerb snat n tikkal ɣef tqeffalt Option, ad d-yeldi daɣen WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1073,12 +1039,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '$years n yiseggasen',
-      one: '1 n useggas',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years n yiseggasen', one: '1 n useggas');
     return '$_temp0';
   }
 
@@ -1184,8 +1145,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get portfolioRemove => 'Kkes';
 
   @override
-  String get portfolioExcluded =>
-      'Iksyunen war ssuma neɣ war azal n ubeddel ur ttwaḥesben ara deg yimḍanen.';
+  String get portfolioExcluded => 'Iksyunen war ssuma neɣ war azal n ubeddel ur ttwaḥesben ara deg yimḍanen.';
 
   @override
   String get priceAlerts => 'Ilɣa n ssuma';
@@ -1227,8 +1187,7 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty =>
-      'Mazal ulac ilɣa n ssuma. Ldi aksyun syen sit ɣef tnaqust akken ad tesbaduḍ yiwen.';
+  String get alertsEmpty => 'Mazal ulac ilɣa n ssuma. Ldi aksyun syen sit ɣef tnaqust akken ad tesbaduḍ yiwen.';
 
   @override
   String get alertsNote =>
@@ -1321,8 +1280,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get accountDeleted => 'Amiḍan-ik·im yettwakkes.';
 
   @override
-  String get errDeleteAccount =>
-      'Ur nezmir ara ad nekkes amiḍan. Senqed tuqqna syen ɛreḍ tikkelt-nniḍen.';
+  String get errDeleteAccount => 'Ur nezmir ara ad nekkes amiḍan. Senqed tuqqna syen ɛreḍ tikkelt-nniḍen.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1359,8 +1317,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get inviteTitle => 'Taskant tamezwarut tamdelt';
 
   @override
-  String get inviteBody =>
-      'WhatStock yella kan s tinubga i tura. Sekcem tangalt n tinubga i d-tremseḍ.';
+  String get inviteBody => 'WhatStock yella kan s tinubga i tura. Sekcem tangalt n tinubga i d-tremseḍ.';
 
   @override
   String get inviteCodeLabel => 'Tangalt n tinubga';
@@ -1372,19 +1329,16 @@ class AppLocalizationsKab extends AppLocalizations {
   String get inviteInvalid => 'Tangalt-a n tinubga ur tṣeḥḥa ara.';
 
   @override
-  String get inviteExpired =>
-      'Tinubga-a tfuk. Suter tangalt tamaynutt i win i k-id-yesnubgen.';
+  String get inviteExpired => 'Tinubga-a tfuk. Suter tangalt tamaynutt i win i k-id-yesnubgen.';
 
   @override
-  String get inviteDeviceLimit =>
-      'Tangalt-a n tinubga tettwaseqdac yakan ɣef umḍan afellay n yibenkan.';
+  String get inviteDeviceLimit => 'Tangalt-a n tinubga tettwaseqdac yakan ɣef umḍan afellay n yibenkan.';
 
   @override
   String get previewConfidential => 'Taskant tuffirt';
 
   @override
-  String get errPreviewDailyLimit =>
-      'Talast n tesleḍt n wass-a n teskant-a tewweḍ. Ɛreḍ tikkelt nniḍen azekka.';
+  String get errPreviewDailyLimit => 'Talast n tesleḍt n wass-a n teskant-a tewweḍ. Ɛreḍ tikkelt nniḍen azekka.';
 
   @override
   String ageHours(int count) {
@@ -1399,12 +1353,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count n wussan aya',
-      one: '1 n wass aya',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count n wussan aya', one: '1 n wass aya');
     return '$_temp0';
   }
 
@@ -1439,8 +1388,7 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint =>
-      'Sit ɣef uswir i d-yeḥseb AI akken ad d-teṭṭfeḍ alɣu mi ara yawed ssuma ɣer-s.';
+  String get keyLevelAlertHint => 'Sit ɣef uswir i d-yeḥseb AI akken ad d-teṭṭfeḍ alɣu mi ara yawed ssuma ɣer-s.';
 
   @override
   String get shareAnalysisTitle => 'Bḍu tasleḍt';
@@ -1498,8 +1446,7 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown =>
-      'Tangalt-a ulac-itt. Senqed-itt sakin ɛreḍ tikkelt nniḍen.';
+  String get referralErrUnknown => 'Tangalt-a ulac-itt. Senqed-itt sakin ɛreḍ tikkelt nniḍen.';
 
   @override
   String get referralErrOwn => 'Ur tezmireḍ ara ad tesqedceḍ tangalt-ik.';
@@ -1616,24 +1563,17 @@ class AppLocalizationsKab extends AppLocalizations {
   String get askSuggest3 => 'Fsser-it-id s wawalen fessusen';
 
   @override
-  String get askMaxReached =>
-      'Wa d asteqsi aneggaru i tesleḍt-a. Snulfu-d tasleḍt tamaynut akken ad testeqsiḍ ugar.';
+  String get askMaxReached => 'Wa d asteqsi aneggaru i tesleḍt-a. Snulfu-d tasleḍt tamaynut akken ad testeqsiḍ ugar.';
 
   @override
-  String get errAskLimit =>
-      'Tewweḍeḍ talast n yisteqsiyen n wass-a. Ɛreḍ tikkelt nniḍen azekka.';
+  String get errAskLimit => 'Tewweḍeḍ talast n yisteqsiyen n wass-a. Ɛreḍ tikkelt nniḍen azekka.';
 
   @override
   String get eventTomorrow => 'Azekka';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'deg $days n wussan',
-      one: 'deg 1 n wass',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'deg $days n wussan', one: 'deg 1 n wass');
     return '$_temp0';
   }
 
@@ -1717,8 +1657,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get notesTitle => 'Tizmilin-iw';
 
   @override
-  String get notesHint =>
-      'Acimi i t-tuɣeḍ, d acu i tettɛassaḍ, d acu ara k-yerren ad t-tzenzeḍ?';
+  String get notesHint => 'Acimi i t-tuɣeḍ, d acu i tettɛassaḍ, d acu ara k-yerren ad t-tzenzeḍ?';
 
   @override
   String get notesInfo =>
@@ -1768,8 +1707,7 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
-  String get syncInfo =>
-      'Aqrab, ismenyifen, ilɣa n ssuma d tezmilin mtawan deg yal ibenk-ik.';
+  String get syncInfo => 'Aqrab, ismenyifen, ilɣa n ssuma d tezmilin mtawan deg yal ibenk-ik.';
 
   @override
   String syncLast(String time) {
@@ -1780,15 +1718,13 @@ class AppLocalizationsKab extends AppLocalizations {
   String get syncNow => 'Mtawi tura';
 
   @override
-  String get syncFailed =>
-      'Amtawi ur yeddi ara. Ad yettwaɛreḍ tikkelt nniḍen s wudem awurman.';
+  String get syncFailed => 'Amtawi ur yeddi ara. Ad yettwaɛreḍ tikkelt nniḍen s wudem awurman.';
 
   @override
   String get alertEmailTitle => 'Imayl mi ara yekker yiwen walɣu';
 
   @override
-  String get alertEmailOn =>
-      'Nesenqad ilɣa-k yal kra n tesdatin, ad ak-d-nazen imayl, ula ma yella usnas yemdel.';
+  String get alertEmailOn => 'Nesenqad ilɣa-k yal kra n tesdatin, ad ak-d-nazen imayl, ula ma yella usnas yemdel.';
 
   @override
   String get alertEmailSignIn =>
@@ -1910,8 +1846,7 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'Acḥal i yeswa ukampani akk deg lbursa: ssuma n uksyun × amḍan n yiksyunen.';
+  String get glossMarketCap => 'Acḥal i yeswa ukampani akk deg lbursa: ssuma n uksyun × amḍan n yiksyunen.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1950,12 +1885,10 @@ class AppLocalizationsKab extends AppLocalizations {
       'Acḥal i yettembiwil uksyun akked lbursa: 1 = am lbursa, 1,5 = tinnegriwin ugarent s 50%, ddaw 1 = yehda ugar.';
 
   @override
-  String get glossRevenueTtm =>
-      'Akk aznuzu n 12 n wayyuren yezrin, send yal axeṣṣar.';
+  String get glossRevenueTtm => 'Akk aznuzu n 12 n wayyuren yezrin, send yal axeṣṣar.';
 
   @override
-  String get glossNetIncomeTtm =>
-      'Rrbeḥ i d-yeqqimen deffir akk ixeṣṣaren, lfayda d tbaṭrin deg 12 n wayyuren yezrin.';
+  String get glossNetIncomeTtm => 'Rrbeḥ i d-yeqqimen deffir akk ixeṣṣaren, lfayda d tbaṭrin deg 12 n wayyuren yezrin.';
 
   @override
   String get glossGrossMargin =>
@@ -1986,20 +1919,17 @@ class AppLocalizationsKab extends AppLocalizations {
       'Ayla n wakud awezlan ÷ ifaturen ara yettwaxelṣen deg useggas. Ugar n 1 yebɣa ad d-yini akampani yezmer ad yexelleṣ ifaturen-is iqerben.';
 
   @override
-  String get glossRevenueGrowth =>
-      'Acḥal i yerna lmedxul ma nserwes-it ɣer useggas yezrin.';
+  String get glossRevenueGrowth => 'Acḥal i yerna lmedxul ma nserwes-it ɣer useggas yezrin.';
 
   @override
-  String get glossEpsGrowth =>
-      'Acḥal i yerna rrbeḥ n yal aksyun ma nserwes-it ɣer useggas yezrin.';
+  String get glossEpsGrowth => 'Acḥal i yerna rrbeḥ n yal aksyun ma nserwes-it ɣer useggas yezrin.';
 
   @override
   String get glossDividendYield =>
       'Dividand n useggas ÷ ssuma n uksyun: idrimen ara d-tawiḍ yal aseggas, s ufmiḍi n wayen i txelleṣeḍ.';
 
   @override
-  String get glossDividendPerShare =>
-      'Dividand yettwaxelṣen ɣef yiwen n uksyun deg useggas yezrin.';
+  String get glossDividendPerShare => 'Dividand yettwaxelṣen ɣef yiwen n uksyun deg useggas yezrin.';
 
   @override
   String get glossPayoutRatio =>
@@ -2097,8 +2027,7 @@ class AppLocalizationsKab extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'Am EPS i yettwarǧan neɣ ugar deg $beats seg $total n kraḍ n wayyuren ineggura',
+      other: 'Am EPS i yettwarǧan neɣ ugar deg $beats seg $total n kraḍ n wayyuren ineggura',
       one: 'Am EPS i yettwarǧan neɣ ugar deg $beats seg 1 n kraḍ n wayyuren',
     );
     return '$_temp0';
@@ -2215,23 +2144,13 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Aɣ: $count',
-      one: 'Aɣ: 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Aɣ: $count', one: 'Aɣ: 1');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Azenzi: $count',
-      one: 'Azenzi: 1',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Azenzi: $count', one: 'Azenzi: 1');
     return '$_temp0';
   }
 
@@ -2251,8 +2170,7 @@ class AppLocalizationsKab extends AppLocalizations {
       'Aɣ d uzenzi deg ssuq yeldin sɣur imdebbren d yinemhalen deg 90 n wussan ineggura (SEC Form 4). Aseqdec n tixtiṛiyin d yiksyunen yettunefken ur ttwaḥesben ara.';
 
   @override
-  String get insiderNone =>
-      'Ulac aɣ neɣ azenzi n yimdebbren deg ssuq yeldin deg 90 n wussan ineggura.';
+  String get insiderNone => 'Ulac aɣ neɣ azenzi n yimdebbren deg ssuq yeldin deg 90 n wussan ineggura.';
 
   @override
   String get analystTrend => 'Amek i beddlent tmuɣliwin seg wayyur ɣer wayyur';
@@ -2295,8 +2213,7 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'Yettwanɣel ɣer tecfawt – senṭeḍ-it anida tebɣiḍ ad t-tebḍuḍ.';
+  String get sharedToClipboard => 'Yettwanɣel ɣer tecfawt – senṭeḍ-it anida tebɣiḍ ad t-tebḍuḍ.';
 
   @override
   String get glossaryNoMatch => 'Ulac awal yemṣadan d unadi-ik.';
@@ -2318,16 +2235,13 @@ class AppLocalizationsKab extends AppLocalizations {
       'Amiḍan-a yettwakkes deg yibenk nniḍen neɣ deg web, ihi isefka-ines ttwakksen ula seg yibenk-a.';
 
   @override
-  String get errAiUnavailable =>
-      'Ameẓlu n AI ulac-it akka tura. Ɛreḍ tikkelt nniḍen deg kra n tesdidin.';
+  String get errAiUnavailable => 'Ameẓlu n AI ulac-it akka tura. Ɛreḍ tikkelt nniḍen deg kra n tesdidin.';
 
   @override
-  String get errMarketUnavailable =>
-      'Isefka n usuq ulac-iten akka tura. Ɛreḍ tikkelt nniḍen deg kra n tesdidin.';
+  String get errMarketUnavailable => 'Isefka n usuq ulac-iten akka tura. Ɛreḍ tikkelt nniḍen deg kra n tesdidin.';
 
   @override
-  String get purchaseUnavailable =>
-      'Tiɣin ulac-itent akka tura. Ɛreḍ tikkelt nniḍen ticki.';
+  String get purchaseUnavailable => 'Tiɣin ulac-itent akka tura. Ɛreḍ tikkelt nniḍen ticki.';
 
   @override
   String get signOutLocalOnly =>
@@ -2346,15 +2260,13 @@ class AppLocalizationsKab extends AppLocalizations {
   String get backupSave => 'Sekles aḥraz';
 
   @override
-  String get backupSaveHint =>
-      'Ismenyifen-ik, tibdarin-ik, aqrab-ik, ilɣa-k d tezmilin-ik deg yiwen ufaylu.';
+  String get backupSaveHint => 'Ismenyifen-ik, tibdarin-ik, aqrab-ik, ilɣa-k d tezmilin-ik deg yiwen ufaylu.';
 
   @override
   String get backupRestore => 'Err-d seg uḥraz';
 
   @override
-  String get backupRestoreHint =>
-      'Yerennu ayen yellan deg ufaylu; ulac acu ara yettwakksen seg wayen i tesɛiḍ tura.';
+  String get backupRestoreHint => 'Yerennu ayen yellan deg ufaylu; ulac acu ara yettwakksen seg wayen i tesɛiḍ tura.';
 
   @override
   String get backupRestored => 'Aḥraz yuɣal-d.';
@@ -2473,8 +2385,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Alɣu n uportfolio';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'Alɣu mi ara yembeddel uportfolio-k akk s waya deg yiwen n wass.';
+  String get portfolioMoveAlertSubtitle => 'Alɣu mi ara yembeddel uportfolio-k akk s waya deg yiwen n wass.';
 
   @override
   String get portfolioMoveAlertOff => 'Yensa';
@@ -2650,12 +2561,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count n yimukan',
-      one: '1 n wadeg',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count n yimukan', one: '1 n wadeg');
     return '$_temp0';
   }
 
@@ -2705,8 +2611,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get portfolioSampleTry => 'Ɛreḍ s uqrab n umedya';
 
   @override
-  String get portfolioSampleBanner =>
-      'Wagi d aqrab n umedya. Rnu tiɣin-ik ɣer tama-s, neɣ kkes-it.';
+  String get portfolioSampleBanner => 'Wagi d aqrab n umedya. Rnu tiɣin-ik ɣer tama-s, neɣ kkes-it.';
 
   @override
   String get portfolioSampleRemove => 'Kkes amedya';
@@ -2761,12 +2666,10 @@ class AppLocalizationsKab extends AppLocalizations {
   String get lotNoteAdd => 'Rnu tazmilt';
 
   @override
-  String get lotNoteBuyHint =>
-      'Acimi i tettaɣeḍ? Ad tettwarnu ɣer tezmilin n uksyun, s uzemz.';
+  String get lotNoteBuyHint => 'Acimi i tettaɣeḍ? Ad tettwarnu ɣer tezmilin n uksyun, s uzemz.';
 
   @override
-  String get lotNoteSellHint =>
-      'Acimi i tettzenzeḍ? Ad tettwarnu ɣer tezmilin n uksyun, s uzemz.';
+  String get lotNoteSellHint => 'Acimi i tettzenzeḍ? Ad tettwarnu ɣer tezmilin n uksyun, s uzemz.';
 
   @override
   String get lotNoteBought => 'Yettwaɣ';
@@ -2787,12 +2690,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days n wussan',
-      one: '$days n wass',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days n wussan', one: '$days n wass');
     return '$_temp0';
   }
 
@@ -2846,8 +2744,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get activitySearchHint => 'Sizdeg s uzamul';
 
   @override
-  String get activityNoMatch =>
-      'Ulac tiɣin neɣ aznuzu i yemmenṭaḍen d imsizdeg.';
+  String get activityNoMatch => 'Ulac tiɣin neɣ aznuzu i yemmenṭaḍen d imsizdeg.';
 
   @override
   String portfolioImportDuplicates(int count) {
@@ -2881,12 +2778,10 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'Kcem s imayl-ik akken ad tesqedceḍ tangalt n umdakel.';
+  String get referralErrSignIn => 'Kcem s imayl-ik akken ad tesqedceḍ tangalt n umdakel.';
 
   @override
-  String get referralErrFull =>
-      'Tangalt-a tewweḍ yakan ɣer tlisa n useqdec-is.';
+  String get referralErrFull => 'Tangalt-a tewweḍ yakan ɣer tlisa n useqdec-is.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2894,12 +2789,10 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated =>
-      'Tasleḍt tegzem uqbel ad tfak. Ɛreḍ tikkelt-nniḍen – ur tettwaḥseb ara deg tesmekta-k.';
+  String get errAiTruncated => 'Tasleḍt tegzem uqbel ad tfak. Ɛreḍ tikkelt-nniḍen – ur tettwaḥseb ara deg tesmekta-k.';
 
   @override
-  String get errImageUnsupported =>
-      'Tugna-a ur tettwaɣer ara. Sekles-itt am JPEG neɣ PNG syen ɛreḍ tikkelt-nniḍen.';
+  String get errImageUnsupported => 'Tugna-a ur tettwaɣer ara. Sekles-itt am JPEG neɣ PNG syen ɛreḍ tikkelt-nniḍen.';
 
   @override
   String get errRateLimited =>
@@ -2926,8 +2819,7 @@ class AppLocalizationsKab extends AppLocalizations {
       'Ulac ajerred ara tesfekreḍ dagi. Ajerred i yettwaɣen deg App Store neɣ Google Play yettwasefrak deg yiɣewwaṛen n tḥanut.';
 
   @override
-  String get backupFailed =>
-      'Ur yezmir ara ad yettwasekles uḥraz. Ɛreḍ tikkelt-nniḍen.';
+  String get backupFailed => 'Ur yezmir ara ad yettwasekles uḥraz. Ɛreḍ tikkelt-nniḍen.';
 
   @override
   String get syncTooLarge =>
@@ -2947,10 +2839,8 @@ class AppLocalizationsKab extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          '$count n dividendes s $currencies ulac ɣur-sen azal n ubeddel, ur ttwaḥesben ara deg yimḍanen.',
-      one:
-          '1 n dividende s $currencies ulac ɣur-s azal n ubeddel, ur yettwaḥsab ara deg yimḍanen.',
+      other: '$count n dividendes s $currencies ulac ɣur-sen azal n ubeddel, ur ttwaḥesben ara deg yimḍanen.',
+      one: '1 n dividende s $currencies ulac ɣur-s azal n ubeddel, ur yettwaḥsab ara deg yimḍanen.',
     );
     return '$_temp0';
   }
@@ -3221,8 +3111,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get portfolioSplitRatio => 'Assaɣ (amaynut : aqbur)';
 
   @override
-  String get portfolioSplitRatioError =>
-      'Sekcem assaɣ am 10:1, neɣ 1:10 i beṭṭu anmegli.';
+  String get portfolioSplitRatioError => 'Sekcem assaɣ am 10:1, neɣ 1:10 i beṭṭu anmegli.';
 
   @override
   String get portfolioSplitDate => 'Azemz n beṭṭu';
@@ -3406,8 +3295,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get glossaryPageTitle => 'Amawal';
 
   @override
-  String get glossaryPageSubtitle =>
-      'Isegziyen ifessasen n yal uṭṭun i d-yeskanay usnas, seg P/E ɣer RSI';
+  String get glossaryPageSubtitle => 'Isegziyen ifessasen n yal uṭṭun i d-yeskanay usnas, seg P/E ɣer RSI';
 
   @override
   String get glossarySearchHint => 'Nadi deg umawal';

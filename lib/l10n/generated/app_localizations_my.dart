@@ -13,8 +13,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline =>
-      'ရှယ်ယာတစ်ခုကို ဓာတ်ပုံရိုက်ပြီး ၎င်းအကြောင်း အားလုံးကို သိလိုက်ပါ။';
+  String get homeTagline => 'ရှယ်ယာတစ်ခုကို ဓာတ်ပုံရိုက်ပြီး ၎င်းအကြောင်း အားလုံးကို သိလိုက်ပါ။';
 
   @override
   String get homeHint =>
@@ -319,11 +318,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'လေ့လာသုံးသပ်သူ $count ဦး',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'လေ့လာသုံးသပ်သူ $count ဦး');
     return '$_temp0';
   }
 
@@ -351,8 +346,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get recognitionRawText => 'ပုံမှ ဖတ်ယူထားသော စာသား';
 
   @override
-  String get errMissingAnthropicKey =>
-      'ဤဗားရှင်းတွင် ပုံ ခွဲခြားသိမှု မရနိုင်ပါ။ သင်္ကေတကို ကိုယ်တိုင် ထည့်ပါ။';
+  String get errMissingAnthropicKey => 'ဤဗားရှင်းတွင် ပုံ ခွဲခြားသိမှု မရနိုင်ပါ။ သင်္ကေတကို ကိုယ်တိုင် ထည့်ပါ။';
 
   @override
   String get errRecognitionUnreachable =>
@@ -364,31 +358,25 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'ခွဲခြားသိမှု ဝန်ဆောင်မှုသည် ဤပုံကို လုပ်ဆောင်၍ မရပါ။';
+  String get errRecognitionRefused => 'ခွဲခြားသိမှု ဝန်ဆောင်မှုသည် ဤပုံကို လုပ်ဆောင်၍ မရပါ။';
 
   @override
-  String get errRecognitionTruncated =>
-      'ခွဲခြားသိမှု တုံ့ပြန်ချက် ပြတ်တောက်သွားသည်။ ထပ်စမ်းကြည့်ပါ။';
+  String get errRecognitionTruncated => 'ခွဲခြားသိမှု တုံ့ပြန်ချက် ပြတ်တောက်သွားသည်။ ထပ်စမ်းကြည့်ပါ။';
 
   @override
-  String get errRecognitionBadResponse =>
-      'ခွဲခြားသိမှု ဝန်ဆောင်မှုမှ မမျှော်လင့်ထားသော တုံ့ပြန်ချက် ရရှိသည်။';
+  String get errRecognitionBadResponse => 'ခွဲခြားသိမှု ဝန်ဆောင်မှုမှ မမျှော်လင့်ထားသော တုံ့ပြန်ချက် ရရှိသည်။';
 
   @override
-  String get errRecognitionEmpty =>
-      'ခွဲခြားသိမှု ဝန်ဆောင်မှုမှ ဗလာ တုံ့ပြန်ချက် ပြန်ပေးသည်။';
+  String get errRecognitionEmpty => 'ခွဲခြားသိမှု ဝန်ဆောင်မှုမှ ဗလာ တုံ့ပြန်ချက် ပြန်ပေးသည်။';
 
   @override
   String get errMissingFinnhubKey => 'ဤဗားရှင်းတွင် ဈေးကွက်ဒေတာ မရနိုင်ပါ။';
 
   @override
-  String get errMarketUnreachable =>
-      'ဈေးကွက်ဒေတာ ဝန်ဆောင်မှုသို့ ချိတ်ဆက်၍ မရပါ။ အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ။';
+  String get errMarketUnreachable => 'ဈေးကွက်ဒေတာ ဝန်ဆောင်မှုသို့ ချိတ်ဆက်၍ မရပါ။ အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ။';
 
   @override
-  String get errMarketRateLimited =>
-      'ဈေးကွက်ဒေတာ ဝန်ဆောင်မှုသို့ တောင်းဆိုမှု များလွန်းနေသည်။ တစ်မိနစ်ခန့် စောင့်ပါ။';
+  String get errMarketRateLimited => 'ဈေးကွက်ဒေတာ ဝန်ဆောင်မှုသို့ တောင်းဆိုမှု များလွန်းနေသည်။ တစ်မိနစ်ခန့် စောင့်ပါ။';
 
   @override
   String errMarketHttp(String status) {
@@ -396,8 +384,7 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'ဈေးကွက်ဒေတာ ဝန်ဆောင်မှုမှ မမျှော်လင့်ထားသော တုံ့ပြန်ချက် ရရှိသည်။';
+  String get errMarketBadResponse => 'ဈေးကွက်ဒေတာ ဝန်ဆောင်မှုမှ မမျှော်လင့်ထားသော တုံ့ပြန်ချက် ရရှိသည်။';
 
   @override
   String errNoQuote(String symbol) {
@@ -497,8 +484,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get aiRegenerate => 'ပြန်ထုတ်ရန်';
 
   @override
-  String get aiGenerating =>
-      'သုံးသပ်ချက်ကို ပြင်ဆင်နေသည်… တစ်မိနစ် နှစ်မိနစ်ခန့် ကြာနိုင်သည်။';
+  String get aiGenerating => 'သုံးသပ်ချက်ကို ပြင်ဆင်နေသည်… တစ်မိနစ် နှစ်မိနစ်ခန့် ကြာနိုင်သည်။';
 
   @override
   String get aiSources => 'ရင်းမြစ်များ';
@@ -513,12 +499,10 @@ class AppLocalizationsMy extends AppLocalizations {
       'အများပြည်သူ ဒေတာနှင့် မကြာသေးမီ သတင်းများအပေါ် အခြေခံ၍ AI ထုတ်ပေးထားသော သုံးသပ်ချက် ဖြစ်သည်။ အမှားများ ပါဝင်နိုင်သည် သို့မဟုတ် ခေတ်နောက်ကျနိုင်ပြီး ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။';
 
   @override
-  String get errAiNotConfigured =>
-      'ဤဗားရှင်းတွင် AI လုပ်ဆောင်ချက်များ မရနိုင်ပါ။';
+  String get errAiNotConfigured => 'ဤဗားရှင်းတွင် AI လုပ်ဆောင်ချက်များ မရနိုင်ပါ။';
 
   @override
-  String get errAiUnreachable =>
-      'AI ဝန်ဆောင်မှုသို့ ချိတ်ဆက်၍ မရပါ။ အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ။';
+  String get errAiUnreachable => 'AI ဝန်ဆောင်မှုသို့ ချိတ်ဆက်၍ မရပါ။ အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ။';
 
   @override
   String errAiHttp(String status) {
@@ -526,12 +510,10 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'AI ဝန်ဆောင်မှုသည် ဤရှယ်ယာကို သုံးသပ်ရန် ငြင်းဆိုခဲ့သည်။';
+  String get errAiRefused => 'AI ဝန်ဆောင်မှုသည် ဤရှယ်ယာကို သုံးသပ်ရန် ငြင်းဆိုခဲ့သည်။';
 
   @override
-  String get errAiBadResponse =>
-      'AI ဝန်ဆောင်မှုမှ မမျှော်လင့်ထားသော တုံ့ပြန်ချက် ရရှိသည်။';
+  String get errAiBadResponse => 'AI ဝန်ဆောင်မှုမှ မမျှော်လင့်ထားသော တုံ့ပြန်ချက် ရရှိသည်။';
 
   @override
   String get sectionChart => 'ဈေးနှုန်း ဇယား';
@@ -552,8 +534,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get rangeFiveYears => '5 နှစ်';
 
   @override
-  String get chartUnavailable =>
-      'လက်ရှိ ဒေတာရင်းမြစ်တွင် ဈေးနှုန်း မှတ်တမ်း မရှိပါ။';
+  String get chartUnavailable => 'လက်ရှိ ဒေတာရင်းမြစ်တွင် ဈေးနှုန်း မှတ်တမ်း မရှိပါ။';
 
   @override
   String get sectionStatements => 'ဘဏ္ဍာရေး ရှင်းတမ်းများ (နှစ်စဉ်)';
@@ -580,8 +561,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get labelOperatingCashFlow => 'လုပ်ငန်းလည်ပတ်မှု ငွေသားစီးဆင်းမှု';
 
   @override
-  String get statementsUnavailable =>
-      'ဤရှယ်ယာအတွက် ထုတ်ပြန်ထားသော ဘဏ္ဍာရေး ရှင်းတမ်းများ မရှိပါ။';
+  String get statementsUnavailable => 'ဤရှယ်ယာအတွက် ထုတ်ပြန်ထားသော ဘဏ္ဍာရေး ရှင်းတမ်းများ မရှိပါ။';
 
   @override
   String get launchAtLogin => 'အကောင့်ဝင်သည့်အခါ စဖွင့်ရန်';
@@ -590,8 +570,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get hotkeyLabel => 'စနစ်တစ်ခုလုံးသုံး ဖြတ်လမ်း';
 
   @override
-  String get hotkeyRecordHint =>
-      'ဤနေရာကို နှိပ်ပြီးနောက် ခလုတ်ပေါင်းစပ်မှု အသစ်ကို နှိပ်ပါ';
+  String get hotkeyRecordHint => 'ဤနေရာကို နှိပ်ပြီးနောက် ခလုတ်ပေါင်းစပ်မှု အသစ်ကို နှိပ်ပါ';
 
   @override
   String get hotkeyReset => 'မူရင်းသို့ ပြန်ထားရန်';
@@ -612,8 +591,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get removeFromFavorites => 'အကြိုက်ဆုံးများမှ ဖယ်ရှားရန်';
 
   @override
-  String get noFavorites =>
-      'အကြိုက်ဆုံး မရှိသေးပါ။ ထည့်ရန် ရှယ်ယာတစ်ခုရှိ ကြယ်ပွင့်ကို တို့ပါ။';
+  String get noFavorites => 'အကြိုက်ဆုံး မရှိသေးပါ။ ထည့်ရန် ရှယ်ယာတစ်ခုရှိ ကြယ်ပွင့်ကို တို့ပါ။';
 
   @override
   String get displayCurrency => 'ပြသမည့် ငွေကြေး';
@@ -657,12 +635,10 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get updateDownloading =>
-      'အပ်ဒိတ်ကို နောက်ကွယ်တွင် ဒေါင်းလုဒ်လုပ်နေသည်…';
+  String get updateDownloading => 'အပ်ဒိတ်ကို နောက်ကွယ်တွင် ဒေါင်းလုဒ်လုပ်နေသည်…';
 
   @override
-  String get updateDownloaded =>
-      'အပ်ဒိတ် အသင့်ဖြစ်ပါပြီ။ ထည့်သွင်းရန် ပြန်စတင်ပါ။';
+  String get updateDownloaded => 'အပ်ဒိတ် အသင့်ဖြစ်ပါပြီ။ ထည့်သွင်းရန် ပြန်စတင်ပါ။';
 
   @override
   String get updateNow => 'အပ်ဒိတ်လုပ်ရန်';
@@ -671,8 +647,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get restartNow => 'ပြန်စတင်ရန်';
 
   @override
-  String get updatesViaStore =>
-      'အပ်ဒိတ်များကို အက်ပ်စတိုးမှတစ်ဆင့် အလိုအလျောက် ရရှိပါမည်။';
+  String get updatesViaStore => 'အပ်ဒိတ်များကို အက်ပ်စတိုးမှတစ်ဆင့် အလိုအလျောက် ရရှိပါမည်။';
 
   @override
   String get updateCheckFailed => 'အပ်ဒိတ်များကို စစ်ဆေး၍ မရပါ။';
@@ -710,17 +685,12 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'အစမ်းသုံးကာလ $days ရက် ကျန်သည်',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'အစမ်းသုံးကာလ $days ရက် ကျန်သည်');
     return '$_temp0';
   }
 
   @override
-  String get trialExpired =>
-      'သင်၏ အခမဲ့ အစမ်းသုံးကာလ ပြီးဆုံးသွားပါပြီ။ ဆက်လက်သုံးသပ်ရန် အစီအစဉ်တစ်ခု ရွေးပါ။';
+  String get trialExpired => 'သင်၏ အခမဲ့ အစမ်းသုံးကာလ ပြီးဆုံးသွားပါပြီ။ ဆက်လက်သုံးသပ်ရန် အစီအစဉ်တစ်ခု ရွေးပါ။';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -759,8 +729,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get extraPacksTitle => 'ထပ်လိုပါသလား။ အပိုသုံးသပ်ချက်များ ဝယ်ပါ';
 
   @override
-  String get extraPacksHint =>
-      'အပိုသုံးသပ်ချက်များသည် သက်တမ်း မကုန်ဆုံးဘဲ လစဉ်ခွဲတမ်း ကုန်ပြီးနောက်မှ အသုံးပြုမည်။';
+  String get extraPacksHint => 'အပိုသုံးသပ်ချက်များသည် သက်တမ်း မကုန်ဆုံးဘဲ လစဉ်ခွဲတမ်း ကုန်ပြီးနောက်မှ အသုံးပြုမည်။';
 
   @override
   String get buy => 'ဝယ်ရန်';
@@ -792,12 +761,10 @@ class AppLocalizationsMy extends AppLocalizations {
       'ဤကာလအတွက် သုံးသပ်ချက် ကုန်သွားပါပြီ။ အစီအစဉ်ကို အဆင့်မြှင့်ပါ သို့မဟုတ် အပိုသုံးသပ်ချက်များ ဝယ်ပါ။';
 
   @override
-  String get errTrialExpired =>
-      'သင်၏ အခမဲ့ အစမ်းသုံးကာလ ပြီးဆုံးသွားပါပြီ။ ဆက်လက်အသုံးပြုရန် အစီအစဉ်တစ်ခု ရွေးပါ။';
+  String get errTrialExpired => 'သင်၏ အခမဲ့ အစမ်းသုံးကာလ ပြီးဆုံးသွားပါပြီ။ ဆက်လက်အသုံးပြုရန် အစီအစဉ်တစ်ခု ရွေးပါ။';
 
   @override
-  String get errNoPlan =>
-      'AI သုံးသပ်ချက်အတွက် အသုံးပြုနေသော အစီအစဉ် လိုအပ်သည်။';
+  String get errNoPlan => 'AI သုံးသပ်ချက်အတွက် အသုံးပြုနေသော အစီအစဉ် လိုအပ်သည်။';
 
   @override
   String get viewPlans => 'အစီအစဉ်များ ကြည့်ရန်';
@@ -806,8 +773,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get usageTitle => 'အသုံးပြုမှု';
 
   @override
-  String get demoPurchaseNote =>
-      'သရုပ်ပြ ငွေပေးချေမှု: ဤပလက်ဖောင်းရှိ ဝယ်ယူမှုများသည် အစမ်းသဘောသာ ဖြစ်သည်။';
+  String get demoPurchaseNote => 'သရုပ်ပြ ငွေပေးချေမှု: ဤပလက်ဖောင်းရှိ ဝယ်ယူမှုများသည် အစမ်းသဘောသာ ဖြစ်သည်။';
 
   @override
   String get mostPopular => 'လူကြိုက်အများဆုံး';
@@ -857,11 +823,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'သုံးသပ်ချက် $count ခု သုံးသည်',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'သုံးသပ်ချက် $count ခု သုံးသည်');
     return '$_temp0';
   }
 
@@ -875,12 +837,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get aiReaderExperienced => 'အတွေ့အကြုံရှိသူ';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'ရိုးရှင်းသော ဘာသာစကား၊ နည်းပညာဝေါဟာရတိုင်းကို ရှင်းပြထားသည်။';
+  String get aiReaderBeginnerDesc => 'ရိုးရှင်းသော ဘာသာစကား၊ နည်းပညာဝေါဟာရတိုင်းကို ရှင်းပြထားသည်။';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'စံ ဘဏ္ဍာရေးဝေါဟာရများဖြင့် ပိုမိုကျစ်လျစ်သော စာသား။';
+  String get aiReaderExperiencedDesc => 'စံ ဘဏ္ဍာရေးဝေါဟာရများဖြင့် ပိုမိုကျစ်လျစ်သော စာသား။';
 
   @override
   String get aiCounterArgument => 'အပြင်းထန်ဆုံး ဆန့်ကျင်ဘက် အငြင်းအခုံ';
@@ -894,8 +854,7 @@ class AppLocalizationsMy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'သင့်အစီအစဉ်ဖြင့် သုံးသပ်ချက်တစ်ခုလျှင် ဝဘ်ရှာဖွေမှု အများဆုံး $count ကြိမ်',
+      other: 'သင့်အစီအစဉ်ဖြင့် သုံးသပ်ချက်တစ်ခုလျှင် ဝဘ်ရှာဖွေမှု အများဆုံး $count ကြိမ်',
     );
     return '$_temp0';
   }
@@ -907,11 +866,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ဝဘ်ရှာဖွေမှု အများဆုံး $count ကြိမ်',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ဝဘ်ရှာဖွေမှု အများဆုံး $count ကြိမ်');
     return '$_temp0';
   }
 
@@ -994,12 +949,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get notSignedIn => 'လက်မှတ်ထိုးဝင်မထားပါ';
 
   @override
-  String get accountBenefit =>
-      'သင့်စာရင်းသွင်းမှုကို စက်အားလုံးတွင် အသုံးပြုနိုင်ရန် လက်မှတ်ထိုးဝင်ပါ။';
+  String get accountBenefit => 'သင့်စာရင်းသွင်းမှုကို စက်အားလုံးတွင် အသုံးပြုနိုင်ရန် လက်မှတ်ထိုးဝင်ပါ။';
 
   @override
-  String get accountSyncedNote =>
-      'သင့်စာရင်းသွင်းမှုနှင့် ကျန်ရှိသော သုံးသပ်ချက်များသည် စက်တိုင်းတွင် တူညီသည်။';
+  String get accountSyncedNote => 'သင့်စာရင်းသွင်းမှုနှင့် ကျန်ရှိသော သုံးသပ်ချက်များသည် စက်တိုင်းတွင် တူညီသည်။';
 
   @override
   String get signInTitle => 'WhatStock သို့ လက်မှတ်ထိုးဝင်ရန်';
@@ -1031,8 +984,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get errInvalidEmail => 'မှန်ကန်သော အီးမေးလ်လိပ်စာ ထည့်ပါ။';
 
   @override
-  String get errSignInFailed =>
-      'လက်မှတ်ထိုးဝင်၍ မရပါ။ ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်စမ်းကြည့်ပါ။';
+  String get errSignInFailed => 'လက်မှတ်ထိုးဝင်၍ မရပါ။ ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်စမ်းကြည့်ပါ။';
 
   @override
   String get checkoutWaiting =>
@@ -1053,8 +1005,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get doubleOptionTitle => 'Option ကို နှစ်ချက် နှိပ်ရန်';
 
   @override
-  String get doubleOptionSubtitle =>
-      'Option ခလုတ်ကို အမြန် နှစ်ချက်နှိပ်ခြင်းဖြင့်လည်း WhatStock ကို ခေါ်နိုင်သည်။';
+  String get doubleOptionSubtitle => 'Option ခလုတ်ကို အမြန် နှစ်ချက်နှိပ်ခြင်းဖြင့်လည်း WhatStock ကို ခေါ်နိုင်သည်။';
 
   @override
   String get doubleOptionPermission =>
@@ -1076,11 +1027,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '$years နှစ်',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years နှစ်');
     return '$_temp0';
   }
 
@@ -1323,8 +1270,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get accountDeleted => 'သင့်အကောင့်ကို ဖျက်လိုက်ပါပြီ။';
 
   @override
-  String get errDeleteAccount =>
-      'အကောင့်ကို ဖျက်၍ မရပါ။ ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်စမ်းကြည့်ပါ။';
+  String get errDeleteAccount => 'အကောင့်ကို ဖျက်၍ မရပါ။ ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်စမ်းကြည့်ပါ။';
 
   @override
   String get aiTrialBriefNote =>
@@ -1374,12 +1320,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get inviteInvalid => 'ဤဖိတ်ကြားကုဒ်သည် မမှန်ကန်ပါ။';
 
   @override
-  String get inviteExpired =>
-      'ဤဖိတ်ကြားချက် သက်တမ်းကုန်သွားပြီ။ သင့်ကို ဖိတ်ကြားသူထံမှ ကုဒ်အသစ် တောင်းပါ။';
+  String get inviteExpired => 'ဤဖိတ်ကြားချက် သက်တမ်းကုန်သွားပြီ။ သင့်ကို ဖိတ်ကြားသူထံမှ ကုဒ်အသစ် တောင်းပါ။';
 
   @override
-  String get inviteDeviceLimit =>
-      'ဤဖိတ်ကြားကုဒ်ကို ခွင့်ပြုထားသော စက်အရေအတွက် အများဆုံးတွင် အသုံးပြုပြီးဖြစ်သည်။';
+  String get inviteDeviceLimit => 'ဤဖိတ်ကြားကုဒ်ကို ခွင့်ပြုထားသော စက်အရေအတွက် အများဆုံးတွင် အသုံးပြုပြီးဖြစ်သည်။';
 
   @override
   String get previewConfidential => 'လျှို့ဝှက် အစမ်းကြည့်ရှုမှု';
@@ -1390,21 +1334,13 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'လွန်ခဲ့သော $count နာရီက',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'လွန်ခဲ့သော $count နာရီက');
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'လွန်ခဲ့သော $count ရက်က',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'လွန်ခဲ့သော $count ရက်က');
     return '$_temp0';
   }
 
@@ -1463,11 +1399,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String referralBody(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'အပိုသုံးသပ်ချက် $count ခု',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'အပိုသုံးသပ်ချက် $count ခု');
     return 'သင့်ကုဒ်ကို မျှဝေပါ။ သင့်သူငယ်ချင်းသည် $_temp0ကို ချက်ချင်း ရရှိမည်ဖြစ်ပြီး ၎င်း၏ ပထမဆုံး သုံးသပ်ချက်ပြီးနောက် သင်လည်း အလားတူ ရရှိမည်။';
   }
 
@@ -1502,16 +1434,11 @@ class AppLocalizationsMy extends AppLocalizations {
   String get referralErrOwn => 'သင့်ကိုယ်ပိုင်ကုဒ်ကို အသုံးပြု၍ မရပါ။';
 
   @override
-  String get referralErrAlready =>
-      'သင်သည် သူငယ်ချင်းတစ်ဦး၏ ကုဒ်ကို အသုံးပြုပြီးဖြစ်သည်။';
+  String get referralErrAlready => 'သင်သည် သူငယ်ချင်းတစ်ဦး၏ ကုဒ်ကို အသုံးပြုပြီးဖြစ်သည်။';
 
   @override
   String referralShareText(String code, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'အပိုသုံးသပ်ချက် $count ခု',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'အပိုသုံးသပ်ချက် $count ခု');
     return 'ကျွန်ုပ်သည် WhatStock ဖြင့် ရှယ်ယာများကို သုံးသပ်ပါသည်- ရှယ်ယာတစ်ခု၏ ဓာတ်ပုံရိုက်လိုက်ရုံဖြင့် AI က ရှင်းပြပေးသည်။ ကျွန်ုပ်၏ ကုဒ် $code ဖြင့် သင် $_temp0 ရရှိမည်။';
   }
 
@@ -1576,8 +1503,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get telemetryDecline => 'မလိုပါ၊ ကျေးဇူးတင်ပါသည်';
 
   @override
-  String get telemetrySetting =>
-      'အမည်မဖော်သော စာရင်းအင်းနှင့် ပျက်ကျမှု အစီရင်ခံစာများ';
+  String get telemetrySetting => 'အမည်မဖော်သော စာရင်းအင်းနှင့် ပျက်ကျမှု အစီရင်ခံစာများ';
 
   @override
   String get telemetrySettingHint =>
@@ -1614,23 +1540,17 @@ class AppLocalizationsMy extends AppLocalizations {
   String get askSuggest3 => 'ရိုးရှင်းစွာ ရှင်းပြပေးပါ';
 
   @override
-  String get askMaxReached =>
-      'ဤသုံးသပ်ချက်အတွက် နောက်ဆုံးမေးခွန်း ဖြစ်ပါသည်။ ထပ်မေးလိုပါက သုံးသပ်ချက်အသစ် ထုတ်ပါ။';
+  String get askMaxReached => 'ဤသုံးသပ်ချက်အတွက် နောက်ဆုံးမေးခွန်း ဖြစ်ပါသည်။ ထပ်မေးလိုပါက သုံးသပ်ချက်အသစ် ထုတ်ပါ။';
 
   @override
-  String get errAskLimit =>
-      'ယနေ့အတွက် မေးခွန်းကန့်သတ်ချက် ပြည့်သွားပါပြီ။ မနက်ဖြန် ထပ်ကြိုးစားပါ။';
+  String get errAskLimit => 'ယနေ့အတွက် မေးခွန်းကန့်သတ်ချက် ပြည့်သွားပါပြီ။ မနက်ဖြန် ထပ်ကြိုးစားပါ။';
 
   @override
   String get eventTomorrow => 'မနက်ဖြန်';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days ရက်အကြာ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days ရက်အကြာ');
     return '$_temp0';
   }
 
@@ -1655,8 +1575,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get eventDividend => 'အမြတ်ဝေစု မျှော်မှန်း';
 
   @override
-  String get eventDividendEstimate =>
-      'သင်မှတ်တမ်းတင်ထားသော ပေးချေမှုများမှ ခန့်မှန်းထားသည်';
+  String get eventDividendEstimate => 'သင်မှတ်တမ်းတင်ထားသော ပေးချေမှုများမှ ခန့်မှန်းထားသည်';
 
   @override
   String get eventsHint =>
@@ -1715,8 +1634,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get notesTitle => 'ကျွန်ုပ်၏ မှတ်စုများ';
 
   @override
-  String get notesHint =>
-      'ဘာကြောင့် ဝယ်ခဲ့သလဲ၊ ဘာကို စောင့်ကြည့်နေသလဲ၊ ဘာဖြစ်ရင် ရောင်းမလဲ။';
+  String get notesHint => 'ဘာကြောင့် ဝယ်ခဲ့သလဲ၊ ဘာကို စောင့်ကြည့်နေသလဲ၊ ဘာဖြစ်ရင် ရောင်းမလဲ။';
 
   @override
   String get notesInfo =>
@@ -1756,11 +1674,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String portfolioImportSkipped(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'စာကြောင်း $count ကြောင်း ကျော်ခဲ့သည်',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'စာကြောင်း $count ကြောင်း ကျော်ခဲ့သည်');
     return '$_temp0';
   }
 
@@ -1906,8 +1820,7 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'စတော့ဈေးကွက်တွင် ကုမ္ပဏီတစ်ခုလုံး၏ တန်ဖိုး: ရှယ်ယာဈေးနှုန်း × ရှယ်ယာအရေအတွက်။';
+  String get glossMarketCap => 'စတော့ဈေးကွက်တွင် ကုမ္ပဏီတစ်ခုလုံး၏ တန်ဖိုး: ရှယ်ယာဈေးနှုန်း × ရှယ်ယာအရေအတွက်။';
 
   @override
   String get glossSharesOutstanding =>
@@ -1946,8 +1859,7 @@ class AppLocalizationsMy extends AppLocalizations {
       'ရှယ်ယာသည် ဈေးကွက်နှင့်အတူ မည်မျှ လှုပ်ရှားလေ့ရှိသနည်း: 1 = ဈေးကွက်ကဲ့သို့, 1.5 = အတက်အကျ 50% ခန့် ပိုကြီး, 1 အောက် = ပိုငြိမ်။';
 
   @override
-  String get glossRevenueTtm =>
-      'ပြီးခဲ့သော 12 လ၏ စုစုပေါင်း ရောင်းရငွေ၊ ကုန်ကျစရိတ်များ မနုတ်မီ။';
+  String get glossRevenueTtm => 'ပြီးခဲ့သော 12 လ၏ စုစုပေါင်း ရောင်းရငွေ၊ ကုန်ကျစရိတ်များ မနုတ်မီ။';
 
   @override
   String get glossNetIncomeTtm =>
@@ -1982,20 +1894,17 @@ class AppLocalizationsMy extends AppLocalizations {
       'ရေတိုပိုင်ဆိုင်မှုများ ÷ တစ်နှစ်အတွင်း ပေးရမည့် ငွေတောင်းခံလွှာများ။ 1 အထက်ဆိုလျှင် ကုမ္ပဏီသည် နီးကပ်လာမည့် ပေးချေမှုများကို ကာမိနိုင်သည်။';
 
   @override
-  String get glossRevenueGrowth =>
-      'တစ်နှစ်အရင်နှင့် နှိုင်းယှဉ်လျှင် ဝင်ငွေ မည်မျှ တိုးလာသနည်း။';
+  String get glossRevenueGrowth => 'တစ်နှစ်အရင်နှင့် နှိုင်းယှဉ်လျှင် ဝင်ငွေ မည်မျှ တိုးလာသနည်း။';
 
   @override
-  String get glossEpsGrowth =>
-      'တစ်နှစ်အရင်နှင့် နှိုင်းယှဉ်လျှင် တစ်ရှယ်ယာလျှင် အမြတ် မည်မျှ တိုးလာသနည်း။';
+  String get glossEpsGrowth => 'တစ်နှစ်အရင်နှင့် နှိုင်းယှဉ်လျှင် တစ်ရှယ်ယာလျှင် အမြတ် မည်မျှ တိုးလာသနည်း။';
 
   @override
   String get glossDividendYield =>
       'နှစ်စဉ်အမြတ်ဝေစု ÷ ရှယ်ယာဈေးနှုန်း: သင်ပေးသောငွေ၏ ရာခိုင်နှုန်းအဖြစ် နှစ်စဉ် ရရှိမည့် ငွေသားဝင်ငွေ။';
 
   @override
-  String get glossDividendPerShare =>
-      'ပြီးခဲ့သည့်နှစ်အတွင်း ရှယ်ယာတစ်ခုအတွက် ပေးခဲ့သော အမြတ်ဝေစု။';
+  String get glossDividendPerShare => 'ပြီးခဲ့သည့်နှစ်အတွင်း ရှယ်ယာတစ်ခုအတွက် ပေးခဲ့သော အမြတ်ဝေစု။';
 
   @override
   String get glossPayoutRatio =>
@@ -2093,10 +2002,8 @@ class AppLocalizationsMy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'နောက်ဆုံး သုံးလပတ် $total ခုအနက် $beats ခုတွင် မျှော်မှန်း EPS နှင့် ညီ သို့မဟုတ် ကျော်',
-      one:
-          'သုံးလပတ် 1 ခုအနက် $beats ခုတွင် မျှော်မှန်း EPS နှင့် ညီ သို့မဟုတ် ကျော်',
+      other: 'နောက်ဆုံး သုံးလပတ် $total ခုအနက် $beats ခုတွင် မျှော်မှန်း EPS နှင့် ညီ သို့မဟုတ် ကျော်',
+      one: 'သုံးလပတ် 1 ခုအနက် $beats ခုတွင် မျှော်မှန်း EPS နှင့် ညီ သို့မဟုတ် ကျော်',
     );
     return '$_temp0';
   }
@@ -2158,11 +2065,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String holdingsAdd(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ပိုင်ဆိုင်မှု $count ခု ထည့်ရန်',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ပိုင်ဆိုင်မှု $count ခု ထည့်ရန်');
     return '$_temp0';
   }
 
@@ -2211,12 +2114,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ဝယ်ယူမှု $count ခု',
-      one: 'ဝယ်ယူမှု 1 ခု',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ဝယ်ယူမှု $count ခု', one: 'ဝယ်ယူမှု 1 ခု');
     return '$_temp0';
   }
 
@@ -2272,8 +2170,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get watchListAddTo => 'စာရင်းသို့ ထည့်ရန်';
 
   @override
-  String get watchListEmpty =>
-      'ဤစာရင်းတွင် စတော့ မရှိသေးပါ။ ထည့်ရန် စတော့ဘေးရှိ စာရင်းခလုတ်ကို တို့ပါ။';
+  String get watchListEmpty => 'ဤစာရင်းတွင် စတော့ မရှိသေးပါ။ ထည့်ရန် စတော့ဘေးရှိ စာရင်းခလုတ်ကို တို့ပါ။';
 
   @override
   String favoriteRemoved(String symbol) {
@@ -2291,8 +2188,7 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'ကလစ်ဘုတ်သို့ ကူးယူပြီးပါပြီ – မျှဝေလိုသည့်နေရာတွင် ကူးထည့်ပါ။';
+  String get sharedToClipboard => 'ကလစ်ဘုတ်သို့ ကူးယူပြီးပါပြီ – မျှဝေလိုသည့်နေရာတွင် ကူးထည့်ပါ။';
 
   @override
   String get glossaryNoMatch => 'ရှာဖွေမှုနှင့် ကိုက်ညီသော ဝေါဟာရ မရှိပါ။';
@@ -2314,12 +2210,10 @@ class AppLocalizationsMy extends AppLocalizations {
       'ဤအကောင့်ကို အခြားစက် သို့မဟုတ် ဝဘ်တွင် ဖျက်လိုက်သဖြင့် ၎င်း၏ ဒေတာကိုလည်း ဤစက်မှ ဖယ်ရှားလိုက်ပါပြီ။';
 
   @override
-  String get errAiUnavailable =>
-      'AI ဝန်ဆောင်မှုကို ယခု အသုံးပြု၍ မရပါ။ မိနစ်အနည်းငယ်အကြာတွင် ထပ်စမ်းကြည့်ပါ။';
+  String get errAiUnavailable => 'AI ဝန်ဆောင်မှုကို ယခု အသုံးပြု၍ မရပါ။ မိနစ်အနည်းငယ်အကြာတွင် ထပ်စမ်းကြည့်ပါ။';
 
   @override
-  String get errMarketUnavailable =>
-      'ဈေးကွက်ဒေတာကို ယခု မရနိုင်ပါ။ မိနစ်အနည်းငယ်အကြာတွင် ထပ်စမ်းကြည့်ပါ။';
+  String get errMarketUnavailable => 'ဈေးကွက်ဒေတာကို ယခု မရနိုင်ပါ။ မိနစ်အနည်းငယ်အကြာတွင် ထပ်စမ်းကြည့်ပါ။';
 
   @override
   String get purchaseUnavailable => 'ယခု ဝယ်ယူ၍ မရပါ။ နောက်မှ ထပ်စမ်းကြည့်ပါ။';
@@ -2348,8 +2242,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get backupRestore => 'အရန်မှ ပြန်ယူရန်';
 
   @override
-  String get backupRestoreHint =>
-      'ဖိုင်ထဲရှိသည်များကို ထည့်ပေါင်းသည်။ ယခုရှိပြီးသားများ မည်သည်မျှ မဖျက်ပါ။';
+  String get backupRestoreHint => 'ဖိုင်ထဲရှိသည်များကို ထည့်ပေါင်းသည်။ ယခုရှိပြီးသားများ မည်သည်မျှ မဖျက်ပါ။';
 
   @override
   String get backupRestored => 'အရန်ကို ပြန်ယူပြီးပါပြီ။';
@@ -2437,11 +2330,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String watchAlertAllDone(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'သတိပေးချက် $count ခု သတ်မှတ်ပြီးပါပြီ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'သတိပေးချက် $count ခု သတ်မှတ်ပြီးပါပြီ');
     return '$_temp0';
   }
 
@@ -2467,8 +2356,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'ပေါ့ဖိုလီယို သတိပေးချက်';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'သင်၏ ပေါ့ဖိုလီယို တစ်ခုလုံး တစ်ရက်အတွင်း ဤမျှ ပြောင်းလဲသည့်အခါ အသိပေးချက်။';
+  String get portfolioMoveAlertSubtitle => 'သင်၏ ပေါ့ဖိုလီယို တစ်ခုလုံး တစ်ရက်အတွင်း ဤမျှ ပြောင်းလဲသည့်အခါ အသိပေးချက်။';
 
   @override
   String get portfolioMoveAlertOff => 'ပိတ်';
@@ -2640,16 +2528,11 @@ class AppLocalizationsMy extends AppLocalizations {
   String get portfolioTopHoldings => 'အကြီးဆုံး ကိုင်ဆောင်ထားမှုများ';
 
   @override
-  String get portfolioShareNote =>
-      'ရာခိုင်နှုန်းများကိုသာ မျှဝေပြီး ပမာဏများ မပါဝင်ပါ။';
+  String get portfolioShareNote => 'ရာခိုင်နှုန်းများကိုသာ မျှဝေပြီး ပမာဏများ မပါဝင်ပါ။';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ကိုင်ဆောင်ထားမှု $count ခု',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ကိုင်ဆောင်ထားမှု $count ခု');
     return '$_temp0';
   }
 
@@ -2706,8 +2589,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get portfolioSampleRemove => 'နမူနာ ဖယ်ရှားရန်';
 
   @override
-  String get portfolioStopsAll =>
-      'ကိုင်ဆောင်ထားမှုအားလုံးအတွက် အမြင့်ဆုံးမှ ကျဆင်းမှု သတိပေးချက်';
+  String get portfolioStopsAll => 'ကိုင်ဆောင်ထားမှုအားလုံးအတွက် အမြင့်ဆုံးမှ ကျဆင်းမှု သတိပေးချက်';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2756,12 +2638,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lotNoteAdd => 'မှတ်စု ထည့်ရန်';
 
   @override
-  String get lotNoteBuyHint =>
-      'ဘာကြောင့် ဝယ်တာလဲ။ ရက်စွဲနှင့်အတူ ရှယ်ယာ၏ မှတ်စုများထဲသို့ ထည့်သွင်းပါမည်။';
+  String get lotNoteBuyHint => 'ဘာကြောင့် ဝယ်တာလဲ။ ရက်စွဲနှင့်အတူ ရှယ်ယာ၏ မှတ်စုများထဲသို့ ထည့်သွင်းပါမည်။';
 
   @override
-  String get lotNoteSellHint =>
-      'ဘာကြောင့် ရောင်းတာလဲ။ ရက်စွဲနှင့်အတူ ရှယ်ယာ၏ မှတ်စုများထဲသို့ ထည့်သွင်းပါမည်။';
+  String get lotNoteSellHint => 'ဘာကြောင့် ရောင်းတာလဲ။ ရက်စွဲနှင့်အတူ ရှယ်ယာ၏ မှတ်စုများထဲသို့ ထည့်သွင်းပါမည်။';
 
   @override
   String get lotNoteBought => 'ဝယ်ပြီး';
@@ -2771,21 +2651,13 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: '$months လ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months လ');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days ရက်',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days ရက်');
     return '$_temp0';
   }
 
@@ -2839,8 +2711,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get activitySearchHint => 'သင်္ကေတဖြင့် စစ်ထုတ်ရန်';
 
   @override
-  String get activityNoMatch =>
-      'စစ်ထုတ်မှုနှင့် ကိုက်ညီသော အရောင်းအဝယ် မရှိပါ။';
+  String get activityNoMatch => 'စစ်ထုတ်မှုနှင့် ကိုက်ညီသော အရောင်းအဝယ် မရှိပါ။';
 
   @override
   String portfolioImportDuplicates(int count) {
@@ -2874,12 +2745,10 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'သူငယ်ချင်း၏ ကုဒ်ကို အသုံးပြုရန် သင့်အီးမေးလ်ဖြင့် လက်မှတ်ထိုးဝင်ပါ။';
+  String get referralErrSignIn => 'သူငယ်ချင်း၏ ကုဒ်ကို အသုံးပြုရန် သင့်အီးမေးလ်ဖြင့် လက်မှတ်ထိုးဝင်ပါ။';
 
   @override
-  String get referralErrFull =>
-      'ဤကုဒ်ကို အများဆုံးအသုံးပြုနိုင်သည့် အကြိမ်အရေအတွက်အထိ အသုံးပြုပြီးဖြစ်သည်။';
+  String get referralErrFull => 'ဤကုဒ်ကို အများဆုံးအသုံးပြုနိုင်သည့် အကြိမ်အရေအတွက်အထိ အသုံးပြုပြီးဖြစ်သည်။';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2887,16 +2756,13 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated =>
-      'သုံးသပ်ချက် မပြီးဆုံးမီ ပြတ်တောက်သွားသည်။ ထပ်စမ်းကြည့်ပါ – သင့်ခွဲတမ်းကို မသုံးထားပါ။';
+  String get errAiTruncated => 'သုံးသပ်ချက် မပြီးဆုံးမီ ပြတ်တောက်သွားသည်။ ထပ်စမ်းကြည့်ပါ – သင့်ခွဲတမ်းကို မသုံးထားပါ။';
 
   @override
-  String get errImageUnsupported =>
-      'ဤပုံကို ဖတ်၍ မရပါ။ JPEG သို့မဟုတ် PNG အဖြစ် သိမ်းပြီး ထပ်စမ်းကြည့်ပါ။';
+  String get errImageUnsupported => 'ဤပုံကို ဖတ်၍ မရပါ။ JPEG သို့မဟုတ် PNG အဖြစ် သိမ်းပြီး ထပ်စမ်းကြည့်ပါ။';
 
   @override
-  String get errRateLimited =>
-      'အချိန်တိုအတွင်း တောင်းဆိုမှု များလွန်းနေသည်။ တစ်မိနစ်ခန့် စောင့်ပြီး ထပ်စမ်းကြည့်ပါ။';
+  String get errRateLimited => 'အချိန်တိုအတွင်း တောင်းဆိုမှု များလွန်းနေသည်။ တစ်မိနစ်ခန့် စောင့်ပြီး ထပ်စမ်းကြည့်ပါ။';
 
   @override
   String get watchListNameTaken => 'ဤအမည်ဖြင့် စာရင်းတစ်ခု ရှိပြီးသားဖြစ်သည်။';
@@ -2939,10 +2805,8 @@ class AppLocalizationsMy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          '$currencies ဖြင့် အမြတ်ဝေစု $count ခုအတွက် ငွေလဲနှုန်း မရှိသဖြင့် စုစုပေါင်းတွင် ထည့်မတွက်ပါ။',
-      one:
-          '$currencies ဖြင့် အမြတ်ဝေစု 1 ခုအတွက် ငွေလဲနှုန်း မရှိသဖြင့် စုစုပေါင်းတွင် ထည့်မတွက်ပါ။',
+      other: '$currencies ဖြင့် အမြတ်ဝေစု $count ခုအတွက် ငွေလဲနှုန်း မရှိသဖြင့် စုစုပေါင်းတွင် ထည့်မတွက်ပါ။',
+      one: '$currencies ဖြင့် အမြတ်ဝေစု 1 ခုအတွက် ငွေလဲနှုန်း မရှိသဖြင့် စုစုပေါင်းတွင် ထည့်မတွက်ပါ။',
     );
     return '$_temp0';
   }
@@ -3213,8 +3077,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get portfolioSplitRatio => 'အချိုး (အသစ် : အဟောင်း)';
 
   @override
-  String get portfolioSplitRatioError =>
-      '10:1 ကဲ့သို့ အချိုးထည့်ပါ၊ သို့မဟုတ် ပြောင်းပြန်ခွဲခြင်းအတွက် 1:10 ထည့်ပါ။';
+  String get portfolioSplitRatioError => '10:1 ကဲ့သို့ အချိုးထည့်ပါ၊ သို့မဟုတ် ပြောင်းပြန်ခွဲခြင်းအတွက် 1:10 ထည့်ပါ။';
 
   @override
   String get portfolioSplitDate => 'ခွဲသည့်ရက်စွဲ';
@@ -3398,8 +3261,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get glossaryPageTitle => 'ဝေါဟာရ အဘိဓာန်';
 
   @override
-  String get glossaryPageSubtitle =>
-      'P/E မှ RSI အထိ အက်ပ်ပြသသော ကိန်းဂဏန်းတိုင်းအတွက် ရိုးရှင်းသော ရှင်းလင်းချက်များ';
+  String get glossaryPageSubtitle => 'P/E မှ RSI အထိ အက်ပ်ပြသသော ကိန်းဂဏန်းတိုင်းအတွက် ရိုးရှင်းသော ရှင်းလင်းချက်များ';
 
   @override
   String get glossarySearchHint => 'ဝေါဟာရ အဘိဓာန်တွင် ရှာရန်';

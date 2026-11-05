@@ -13,8 +13,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline =>
-      'Makà sarin\'ny aksiona iray ary fantaro ny momba azy rehetra.';
+  String get homeTagline => 'Makà sarin\'ny aksiona iray ary fantaro ny momba azy rehetra.';
 
   @override
   String get homeHint =>
@@ -63,8 +62,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get whatWeSaw => 'Izay hitanay';
 
   @override
-  String get chooseCandidateTitle =>
-      'Iza amin\'ireto aksiona ireto no notadiavinao?';
+  String get chooseCandidateTitle => 'Iza amin\'ireto aksiona ireto no notadiavinao?';
 
   @override
   String confidencePercent(int percent) {
@@ -295,8 +293,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get labelDividendGrowth5y => 'Fitomboan\'ny dividenda (5 taona)';
 
   @override
-  String get dividendNone =>
-      'Tsy nisy dividenda naloa tao anatin\'ny 12 volana farany.';
+  String get dividendNone => 'Tsy nisy dividenda naloa tao anatin\'ny 12 volana farany.';
 
   @override
   String get dividendOnYourShares => 'Amin\'ny aksionanao, isan-taona';
@@ -354,8 +351,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get recognitionRawText => 'Soratra novakiana tamin\'ny sary';
 
   @override
-  String get errMissingAnthropicKey =>
-      'Tsy misy ny famantarana sary amin\'ity versiona ity. Soraty kosa ny ticker.';
+  String get errMissingAnthropicKey => 'Tsy misy ny famantarana sary amin\'ity versiona ity. Soraty kosa ny ticker.';
 
   @override
   String get errRecognitionUnreachable =>
@@ -367,24 +363,19 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Tsy afaka nikarakara ity sary ity ny serivisy famantarana.';
+  String get errRecognitionRefused => 'Tsy afaka nikarakara ity sary ity ny serivisy famantarana.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Tapaka ny valin\'ny famantarana. Andramo indray azafady.';
+  String get errRecognitionTruncated => 'Tapaka ny valin\'ny famantarana. Andramo indray azafady.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Valiny tsy nampoizina avy amin\'ny serivisy famantarana.';
+  String get errRecognitionBadResponse => 'Valiny tsy nampoizina avy amin\'ny serivisy famantarana.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Valiny foana no navoakan\'ny serivisy famantarana.';
+  String get errRecognitionEmpty => 'Valiny foana no navoakan\'ny serivisy famantarana.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Tsy misy ny angona momba ny tsena amin\'ity versiona ity.';
+  String get errMissingFinnhubKey => 'Tsy misy ny angona momba ny tsena amin\'ity versiona ity.';
 
   @override
   String get errMarketUnreachable =>
@@ -400,8 +391,7 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Valiny tsy nampoizina avy amin\'ny serivisin\'ny angona momba ny tsena.';
+  String get errMarketBadResponse => 'Valiny tsy nampoizina avy amin\'ny serivisin\'ny angona momba ny tsena.';
 
   @override
   String errNoQuote(String symbol) {
@@ -501,8 +491,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get aiRegenerate => 'Mamorona indray';
 
   @override
-  String get aiGenerating =>
-      'Manomana ny fandalinana… mety haharitra iray na roa minitra izany.';
+  String get aiGenerating => 'Manomana ny fandalinana… mety haharitra iray na roa minitra izany.';
 
   @override
   String get aiSources => 'Loharano';
@@ -517,12 +506,10 @@ class AppLocalizationsMg extends AppLocalizations {
       'Fandalinana novokarin\'ny AI miorina amin\'ny angona ho an\'ny besinimaro sy ny vaovao farany. Mety misy diso na efa lany andro izy, ary tsy torohevitra momba ny fampiasam-bola.';
 
   @override
-  String get errAiNotConfigured =>
-      'Tsy misy ny endri-javatra AI amin\'ity versiona ity.';
+  String get errAiNotConfigured => 'Tsy misy ny endri-javatra AI amin\'ity versiona ity.';
 
   @override
-  String get errAiUnreachable =>
-      'Tsy tratra ny serivisy AI. Hamarino ny fifandraisanao amin\'ny Internet.';
+  String get errAiUnreachable => 'Tsy tratra ny serivisy AI. Hamarino ny fifandraisanao amin\'ny Internet.';
 
   @override
   String errAiHttp(String status) {
@@ -530,12 +517,10 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'Nandà tsy handalina ity aksiona ity ny serivisy AI.';
+  String get errAiRefused => 'Nandà tsy handalina ity aksiona ity ny serivisy AI.';
 
   @override
-  String get errAiBadResponse =>
-      'Valiny tsy nampoizina avy amin\'ny serivisy AI.';
+  String get errAiBadResponse => 'Valiny tsy nampoizina avy amin\'ny serivisy AI.';
 
   @override
   String get sectionChart => 'Sarisarin\'ny vidiny';
@@ -584,8 +569,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get labelOperatingCashFlow => 'Fikorianam-bola avy amin\'ny asa';
 
   @override
-  String get statementsUnavailable =>
-      'Tsy misy tatitra ara-bola navoaka ho an\'ity aksiona ity.';
+  String get statementsUnavailable => 'Tsy misy tatitra ara-bola navoaka ho an\'ity aksiona ity.';
 
   @override
   String get launchAtLogin => 'Sokafy ho azy rehefa miditra';
@@ -594,8 +578,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get hotkeyLabel => 'Hitsin-dalana ankapobeny';
 
   @override
-  String get hotkeyRecordHint =>
-      'Tsindrio eto, dia tsindrio ny fitambarana kitendry vaovao';
+  String get hotkeyRecordHint => 'Tsindrio eto, dia tsindrio ny fitambarana kitendry vaovao';
 
   @override
   String get hotkeyReset => 'Avereno amin\'ny voalohany';
@@ -664,8 +647,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get updateDownloading => 'Maka ny fanavaozana ao ambadika…';
 
   @override
-  String get updateDownloaded =>
-      'Vonona ny fanavaozana. Avereno alefa mba hametrahana azy.';
+  String get updateDownloaded => 'Vonona ny fanavaozana. Avereno alefa mba hametrahana azy.';
 
   @override
   String get updateNow => 'Havaozy';
@@ -674,8 +656,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get restartNow => 'Avereno alefa';
 
   @override
-  String get updatesViaStore =>
-      'Tonga ho azy amin\'ny alalan\'ny fivarotana fampiharana ny fanavaozana.';
+  String get updatesViaStore => 'Tonga ho azy amin\'ny alalan\'ny fivarotana fampiharana ny fanavaozana.';
 
   @override
   String get updateCheckFailed => 'Tsy afaka nijery fanavaozana.';
@@ -760,8 +741,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get perMonth => '/ volana';
 
   @override
-  String get extraPacksTitle =>
-      'Mila bebe kokoa? Mividiana fandalinana fanampiny';
+  String get extraPacksTitle => 'Mila bebe kokoa? Mividiana fandalinana fanampiny';
 
   @override
   String get extraPacksHint =>
@@ -797,12 +777,10 @@ class AppLocalizationsMg extends AppLocalizations {
       'Tsy manana fandalinana sisa ianao amin\'ity vanim-potoana ity. Ambonio ny tolotrao na mividiana fandalinana fanampiny.';
 
   @override
-  String get errTrialExpired =>
-      'Tapitra ny fanandramana maimaim-poana. Misafidiana tolotra mba hanohizana.';
+  String get errTrialExpired => 'Tapitra ny fanandramana maimaim-poana. Misafidiana tolotra mba hanohizana.';
 
   @override
-  String get errNoPlan =>
-      'Ilaina ny tolotra mavitrika ho an\'ny fandalinana AI.';
+  String get errNoPlan => 'Ilaina ny tolotra mavitrika ho an\'ny fandalinana AI.';
 
   @override
   String get viewPlans => 'Jereo ny tolotra';
@@ -811,8 +789,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get usageTitle => 'Fampiasana';
 
   @override
-  String get demoPurchaseNote =>
-      'Fandoavam-bola demo: tsy tena izy ny fividianana amin\'ity sehatra ity.';
+  String get demoPurchaseNote => 'Fandoavam-bola demo: tsy tena izy ny fividianana amin\'ity sehatra ity.';
 
   @override
   String get mostPopular => 'Malaza indrindra';
@@ -849,8 +826,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get aiDepthBriefDesc => 'Ny tena ilaina, haingana.';
 
   @override
-  String get aiDepthStandardDesc =>
-      'Tatitra feno miaraka amin\'ny fizarana rehetra.';
+  String get aiDepthStandardDesc => 'Tatitra feno miaraka amin\'ny fizarana rehetra.';
 
   @override
   String get aiDepthDeepDesc =>
@@ -882,12 +858,10 @@ class AppLocalizationsMg extends AppLocalizations {
   String get aiReaderExperienced => 'Efa za-draharaha';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'Fiteny tsotra; hazavaina avokoa ny teny teknika rehetra.';
+  String get aiReaderBeginnerDesc => 'Fiteny tsotra; hazavaina avokoa ny teny teknika rehetra.';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'Lahatsoratra matevina kokoa misy teny ara-bola mahazatra.';
+  String get aiReaderExperiencedDesc => 'Lahatsoratra matevina kokoa misy teny ara-bola mahazatra.';
 
   @override
   String get aiCounterArgument => 'Hevitra manohitra matanjaka indrindra';
@@ -901,10 +875,8 @@ class AppLocalizationsMg extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'Fikarohana an-tranonkala hatramin\'ny $count isaky ny fandalinana amin\'ny tolotrao',
-      one:
-          'Fikarohana an-tranonkala hatramin\'ny $count isaky ny fandalinana amin\'ny tolotrao',
+      other: 'Fikarohana an-tranonkala hatramin\'ny $count isaky ny fandalinana amin\'ny tolotrao',
+      one: 'Fikarohana an-tranonkala hatramin\'ny $count isaky ny fandalinana amin\'ny tolotrao',
     );
     return '$_temp0';
   }
@@ -1005,12 +977,10 @@ class AppLocalizationsMg extends AppLocalizations {
   String get notSignedIn => 'Tsy tafiditra';
 
   @override
-  String get accountBenefit =>
-      'Midira mba handeha amin\'ny fitaovanao rehetra ny famandrihanao.';
+  String get accountBenefit => 'Midira mba handeha amin\'ny fitaovanao rehetra ny famandrihanao.';
 
   @override
-  String get accountSyncedNote =>
-      'Mitovy amin\'ny fitaovana rehetra ny famandrihanao sy ny fandalinana sisa.';
+  String get accountSyncedNote => 'Mitovy amin\'ny fitaovana rehetra ny famandrihanao sy ny fandalinana sisa.';
 
   @override
   String get signInTitle => 'Hiditra amin\'ny WhatStock';
@@ -1042,8 +1012,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get errInvalidEmail => 'Ampidiro adiresy mailaka manan-kery azafady.';
 
   @override
-  String get errSignInFailed =>
-      'Tsy nahomby ny fidirana. Hamarino ny fifandraisanao ary andramo indray.';
+  String get errSignInFailed => 'Tsy nahomby ny fidirana. Hamarino ny fifandraisanao ary andramo indray.';
 
   @override
   String get checkoutWaiting =>
@@ -1064,8 +1033,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get doubleOptionTitle => 'Tsindrio indroa ny Option';
 
   @override
-  String get doubleOptionSubtitle =>
-      'Miantso ny WhatStock koa ny fanindriana haingana indroa ny kitendry Option.';
+  String get doubleOptionSubtitle => 'Miantso ny WhatStock koa ny fanindriana haingana indroa ny kitendry Option.';
 
   @override
   String get doubleOptionPermission =>
@@ -1087,12 +1055,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '$years taona',
-      one: '$years taona',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years taona', one: '$years taona');
     return '$_temp0';
   }
 
@@ -1198,8 +1161,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get portfolioRemove => 'Esory';
 
   @override
-  String get portfolioExcluded =>
-      'Tsy tafiditra ao amin\'ny fitambarany ny fananana tsy misy vidiny na sandam-bola.';
+  String get portfolioExcluded => 'Tsy tafiditra ao amin\'ny fitambarany ny fananana tsy misy vidiny na sandam-bola.';
 
   @override
   String get priceAlerts => 'Fanairana vidiny';
@@ -1298,8 +1260,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get alertOpen => 'Sokafy';
 
   @override
-  String get keepInTrayTitle =>
-      'Mijanona mandeha rehefa mikatona ny varavarankely';
+  String get keepInTrayTitle => 'Mijanona mandeha rehefa mikatona ny varavarankely';
 
   @override
   String get keepInTraySubtitle =>
@@ -1336,8 +1297,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get accountDeleted => 'Voafafa ny kaontinao.';
 
   @override
-  String get errDeleteAccount =>
-      'Tsy voafafa ny kaonty. Hamarino ny fifandraisanao ary andramo indray.';
+  String get errDeleteAccount => 'Tsy voafafa ny kaonty. Hamarino ny fifandraisanao ary andramo indray.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1387,12 +1347,10 @@ class AppLocalizationsMg extends AppLocalizations {
   String get inviteInvalid => 'Tsy manan-kery io kaody fanasana io.';
 
   @override
-  String get inviteExpired =>
-      'Lany daty io fanasana io. Angataho kaody vaovao ilay nanasa anao.';
+  String get inviteExpired => 'Lany daty io fanasana io. Angataho kaody vaovao ilay nanasa anao.';
 
   @override
-  String get inviteDeviceLimit =>
-      'Efa ampiasaina amin\'ny isan\'ny fitaovana farafahabetsany io kaody fanasana io.';
+  String get inviteDeviceLimit => 'Efa ampiasaina amin\'ny isan\'ny fitaovana farafahabetsany io kaody fanasana io.';
 
   @override
   String get previewConfidential => 'Fijery mialoha tsiambaratelo';
@@ -1513,8 +1471,7 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown =>
-      'Tsy misy io kaody io. Hamarino ary andramo indray.';
+  String get referralErrUnknown => 'Tsy misy io kaody io. Hamarino ary andramo indray.';
 
   @override
   String get referralErrOwn => 'Tsy azonao ampiasaina ny kaodinao manokana.';
@@ -1594,8 +1551,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get telemetryDecline => 'Tsia, misaotra';
 
   @override
-  String get telemetrySetting =>
-      'Antontan\'isa tsy misy anarana sy tatitra momba ny fianjerana';
+  String get telemetrySetting => 'Antontan\'isa tsy misy anarana sy tatitra momba ny fianjerana';
 
   @override
   String get telemetrySettingHint =>
@@ -1636,8 +1592,7 @@ class AppLocalizationsMg extends AppLocalizations {
       'Io no fanontaniana farany ho an\'ity fandalinana ity. Mamorona fandalinana vaovao raha te hanontany bebe kokoa.';
 
   @override
-  String get errAskLimit =>
-      'Tratra ny fetran\'ny fanontaniana androany. Andramo indray rahampitso.';
+  String get errAskLimit => 'Tratra ny fetran\'ny fanontaniana androany. Andramo indray rahampitso.';
 
   @override
   String get eventTomorrow => 'Rahampitso';
@@ -1674,8 +1629,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get eventDividend => 'Dividandy andrasana';
 
   @override
-  String get eventDividendEstimate =>
-      'Tombanana avy amin\'ny fandoavana noraketinao';
+  String get eventDividendEstimate => 'Tombanana avy amin\'ny fandoavana noraketinao';
 
   @override
   String get eventsHint =>
@@ -1734,8 +1688,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get notesTitle => 'Ny naotiko';
 
   @override
-  String get notesHint =>
-      'Nahoana ianao no nividy azy, inona no arahinao maso, inona no hampivarotra anao azy?';
+  String get notesHint => 'Nahoana ianao no nividy azy, inona no arahinao maso, inona no hampivarotra anao azy?';
 
   @override
   String get notesInfo =>
@@ -1797,8 +1750,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get syncNow => 'Ampifanaraho izao';
 
   @override
-  String get syncFailed =>
-      'Tsy nahomby ny fampifanarahana. Hiezaka indray ho azy izy.';
+  String get syncFailed => 'Tsy nahomby ny fampifanarahana. Hiezaka indray ho azy izy.';
 
   @override
   String get alertEmailTitle => 'Mailaka rehefa mipoitra ny fanairana';
@@ -1927,8 +1879,7 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'Ny vidin\'ny orinasa manontolo eny an-tsena: vidin\'ny aksiona × isan\'ny aksiona.';
+  String get glossMarketCap => 'Ny vidin\'ny orinasa manontolo eny an-tsena: vidin\'ny aksiona × isan\'ny aksiona.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1967,8 +1918,7 @@ class AppLocalizationsMg extends AppLocalizations {
       'Hatraiza no mihetsika miaraka amin\'ny tsena ny aksiona: 1 = toy ny tsena, 1,5 = fiovaovana lehibe kokoa eo amin\'ny 50%, ambanin\'ny 1 = milamina kokoa.';
 
   @override
-  String get glossRevenueTtm =>
-      'Ny varotra rehetra tamin\'ny 12 volana farany, alohan\'ny fandaniana rehetra.';
+  String get glossRevenueTtm => 'Ny varotra rehetra tamin\'ny 12 volana farany, alohan\'ny fandaniana rehetra.';
 
   @override
   String get glossNetIncomeTtm =>
@@ -2003,20 +1953,17 @@ class AppLocalizationsMg extends AppLocalizations {
       'Fananana fohy fotoana ÷ faktiora tokony haloa ao anatin\'ny herintaona. Mihoatra ny 1 dia midika fa afaka mandoa ny faktiorany akaiky ny orinasa.';
 
   @override
-  String get glossRevenueGrowth =>
-      'Hatraiza no nitomboan\'ny vola miditra raha oharina tamin\'ny herintaona.';
+  String get glossRevenueGrowth => 'Hatraiza no nitomboan\'ny vola miditra raha oharina tamin\'ny herintaona.';
 
   @override
-  String get glossEpsGrowth =>
-      'Hatraiza no nitomboan\'ny tombony isaky ny aksiona raha oharina tamin\'ny herintaona.';
+  String get glossEpsGrowth => 'Hatraiza no nitomboan\'ny tombony isaky ny aksiona raha oharina tamin\'ny herintaona.';
 
   @override
   String get glossDividendYield =>
       'Dividenda isan-taona ÷ vidin\'ny aksiona: ny vola azonao isan-taona, amin\'ny isan-jaton\'izay aloanao.';
 
   @override
-  String get glossDividendPerShare =>
-      'Ny dividenda naloa isaky ny aksiona tamin\'ny herintaona farany.';
+  String get glossDividendPerShare => 'Ny dividenda naloa isaky ny aksiona tamin\'ny herintaona farany.';
 
   @override
   String get glossPayoutRatio =>
@@ -2114,10 +2061,8 @@ class AppLocalizationsMg extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'Nahatratra na nihoatra ny EPS notombanana tamin\'ny telovolana $beats amin\'ireo $total farany',
-      one:
-          'Nahatratra na nihoatra ny EPS notombanana tamin\'ny telovolana $beats amin\'ny $total',
+      other: 'Nahatratra na nihoatra ny EPS notombanana tamin\'ny telovolana $beats amin\'ireo $total farany',
+      one: 'Nahatratra na nihoatra ny EPS notombanana tamin\'ny telovolana $beats amin\'ny $total',
     );
     return '$_temp0';
   }
@@ -2175,8 +2120,7 @@ class AppLocalizationsMg extends AppLocalizations {
       'Hamarino ny isa alohan\'ny hampidiranao azy. Ny vidiny dia ny salan\'ny vidin\'ny fividiananao isaky ny anjara, fa tsy ny vidiny androany.';
 
   @override
-  String get holdingsNoPrice =>
-      'Tsy misy salan\'ny vidin\'ny fividianana ao amin\'ny sary';
+  String get holdingsNoPrice => 'Tsy misy salan\'ny vidin\'ny fividianana ao amin\'ny sary';
 
   @override
   String holdingsAdd(int count) {
@@ -2202,8 +2146,7 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
-  String get week52AtHigh =>
-      'Amin\'ny avo indrindra tao anatin\'ny 52 herinandro';
+  String get week52AtHigh => 'Amin\'ny avo indrindra tao anatin\'ny 52 herinandro';
 
   @override
   String get alertKindTrailing => 'Midina avy amin\'ny tampony';
@@ -2315,12 +2258,10 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'Voadika ny soratra – apetaho amin\'izay toerana tianao hizarana azy.';
+  String get sharedToClipboard => 'Voadika ny soratra – apetaho amin\'izay toerana tianao hizarana azy.';
 
   @override
-  String get glossaryNoMatch =>
-      'Tsy misy teny mifanaraka amin\'ny fikarohanao.';
+  String get glossaryNoMatch => 'Tsy misy teny mifanaraka amin\'ny fikarohanao.';
 
   @override
   String get cashInvalidAmount => 'Ampidiro vola 0 na mihoatra.';
@@ -2347,8 +2288,7 @@ class AppLocalizationsMg extends AppLocalizations {
       'Tsy misy ny angona momba ny tsena amin\'izao fotoana izao. Andramo indray afaka minitra vitsivitsy.';
 
   @override
-  String get purchaseUnavailable =>
-      'Tsy azo atao ny fividianana amin\'izao fotoana izao. Andramo indray any aoriana.';
+  String get purchaseUnavailable => 'Tsy azo atao ny fividianana amin\'izao fotoana izao. Andramo indray any aoriana.';
 
   @override
   String get signOutLocalOnly =>
@@ -2374,8 +2314,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get backupRestore => 'Hamerina avy amin\'ny fitahirizana';
 
   @override
-  String get backupRestoreHint =>
-      'Ampiana izay ao anaty rakitra; tsy misy fafana amin\'izay anananao ankehitriny.';
+  String get backupRestoreHint => 'Ampiana izay ao anaty rakitra; tsy misy fafana amin\'izay anananao ankehitriny.';
 
   @override
   String get backupRestored => 'Naverina ny fitahirizana.';
@@ -2399,8 +2338,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get compareReturn1y => 'Tombony 1 taona';
 
   @override
-  String get compareFromHigh =>
-      'Avy amin\'ny avo indrindra tao anatin\'ny 52 herinandro';
+  String get compareFromHigh => 'Avy amin\'ny avo indrindra tao anatin\'ny 52 herinandro';
 
   @override
   String get briefAutoTitle => 'Famintinana isan’andro isa-maraina';
@@ -2456,8 +2394,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get newsExplain => 'Inona no dikan’izany?';
 
   @override
-  String get watchAlertAll =>
-      'Fampitandremana amin\'ny fihetsehana lehibe isan\'andro';
+  String get watchAlertAll => 'Fampitandremana amin\'ny fihetsehana lehibe isan\'andro';
 
   @override
   String get watchAlertAllHint =>
@@ -2669,17 +2606,11 @@ class AppLocalizationsMg extends AppLocalizations {
   String get portfolioTopHoldings => 'Fananana lehibe indrindra';
 
   @override
-  String get portfolioShareNote =>
-      'Ny isan-jato ihany no zaraina, tsy misy habetsahana.';
+  String get portfolioShareNote => 'Ny isan-jato ihany no zaraina, tsy misy habetsahana.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Fananana $count',
-      one: 'Fananana $count',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Fananana $count', one: 'Fananana $count');
     return '$_temp0';
   }
 
@@ -2736,8 +2667,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get portfolioSampleRemove => 'Esory ny santionany';
 
   @override
-  String get portfolioStopsAll =>
-      'Fampitandremana fidinana avy amin\'ny tampony ho an\'ny fananana rehetra';
+  String get portfolioStopsAll => 'Fampitandremana fidinana avy amin\'ny tampony ho an\'ny fananana rehetra';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2801,23 +2731,13 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: '$months volana',
-      one: '$months volana',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months volana', one: '$months volana');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days andro',
-      one: '$days andro',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days andro', one: '$days andro');
     return '$_temp0';
   }
 
@@ -2871,8 +2791,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get activitySearchHint => 'Sivano araka ny ticker';
 
   @override
-  String get activityNoMatch =>
-      'Tsy misy fividianana na fivarotana mifanaraka amin\'ny sivana.';
+  String get activityNoMatch => 'Tsy misy fividianana na fivarotana mifanaraka amin\'ny sivana.';
 
   @override
   String portfolioImportDuplicates(int count) {
@@ -2906,12 +2825,10 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'Midira amin\'ny mailakao mba hampiasana kaodin\'ny namana.';
+  String get referralErrSignIn => 'Midira amin\'ny mailakao mba hampiasana kaodin\'ny namana.';
 
   @override
-  String get referralErrFull =>
-      'Efa tratra ny fetran\'ny fampiasana ity kaody ity.';
+  String get referralErrFull => 'Efa tratra ny fetran\'ny fampiasana ity kaody ity.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2923,8 +2840,7 @@ class AppLocalizationsMg extends AppLocalizations {
       'Tapaka ny fandalinana talohan\'ny nahavitany. Andramo indray azafady – tsy nanala tamin\'ny anjaranao izany.';
 
   @override
-  String get errImageUnsupported =>
-      'Tsy azo vakiana ity sary ity. Tehirizo ho JPEG na PNG izy ary andramo indray.';
+  String get errImageUnsupported => 'Tsy azo vakiana ity sary ity. Tehirizo ho JPEG na PNG izy ary andramo indray.';
 
   @override
   String get errRateLimited =>
@@ -2951,8 +2867,7 @@ class AppLocalizationsMg extends AppLocalizations {
       'Tsy misy famandrihana tantanina eto. Ny famandrihana novidiana tao amin\'ny App Store na Google Play dia tantanina ao amin\'ny fikirakiran\'ny fivarotana.';
 
   @override
-  String get backupFailed =>
-      'Tsy voatahiry ny fitahirizana. Andramo indray azafady.';
+  String get backupFailed => 'Tsy voatahiry ny fitahirizana. Andramo indray azafady.';
 
   @override
   String get syncTooLarge =>
@@ -2972,10 +2887,8 @@ class AppLocalizationsMg extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'Tsy misy sandam-bola ny dividandy $count amin\'ny $currencies, ka tsy tafiditra ao amin\'ny fitambarany.',
-      one:
-          'Tsy misy sandam-bola ny dividandy $count amin\'ny $currencies, ka tsy tafiditra ao amin\'ny fitambarany.',
+      other: 'Tsy misy sandam-bola ny dividandy $count amin\'ny $currencies, ka tsy tafiditra ao amin\'ny fitambarany.',
+      one: 'Tsy misy sandam-bola ny dividandy $count amin\'ny $currencies, ka tsy tafiditra ao amin\'ny fitambarany.',
     );
     return '$_temp0';
   }
@@ -2995,8 +2908,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get signOutAnyway => 'Hivoaka ihany';
 
   @override
-  String get fileTooLarge =>
-      'Lehibe loatra ity rakitra ity ka tsy azo sokafana eto.';
+  String get fileTooLarge => 'Lehibe loatra ity rakitra ity ka tsy azo sokafana eto.';
 
   @override
   String portfolioAnnualSummaryYear(String year) {
@@ -3089,8 +3001,7 @@ class AppLocalizationsMg extends AppLocalizations {
       'Fampahalalana ankapobeny novokarin\'ny AI momba ny firafitry ny kitapom-bolanao. Tsy mandinika ny tanjonao, ny toe-bolanao na ny raharaha ara-hetranao izy, ary tsy tolo-kevitra manokana ho anao na torohevitra momba ny fampiasam-bola.';
 
   @override
-  String get briefNotificationTitle =>
-      'Famintinana AI · Anio miaraka amin’ny aksionanao';
+  String get briefNotificationTitle => 'Famintinana AI · Anio miaraka amin’ny aksionanao';
 
   @override
   String get portfolioGoalSet => 'Mametraha tanjona';
@@ -3173,8 +3084,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get compareNextReport => 'Tatitra manaraka';
 
   @override
-  String get resolvingDescription =>
-      'Mamantatra hoe inona ny aksiona tianao holazaina…';
+  String get resolvingDescription => 'Mamantatra hoe inona ny aksiona tianao holazaina…';
 
   @override
   String get instrumentTitle => 'Momba ity fitaovana ity';
@@ -3421,8 +3331,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get signalCrossedBelow => 'nidina ambanin\'ny salan\'isa 200 andro';
 
   @override
-  String get signalAlertsTitle =>
-      'Fampandrenesana momba ny famantarana teknika';
+  String get signalAlertsTitle => 'Fampandrenesana momba ny famantarana teknika';
 
   @override
   String get signalAlertsSubtitle =>

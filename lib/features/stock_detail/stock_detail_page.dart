@@ -292,13 +292,14 @@ class _DetailsBody extends StatelessWidget {
             final name = Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                if (p?.logoUrl != null)
+                // A szolgáltatótól jött logó-cím csak https lehet (titkosítatlanul a ticker is látszana).
+                if (safeWebUri(p?.logoUrl) case final logo? when logo.scheme == 'https')
                   Padding(
                     padding: const EdgeInsetsDirectional.only(end: 12),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8),
                       child: Image.network(
-                        p!.logoUrl!,
+                        logo.toString(),
                         width: 48,
                         height: 48,
                         errorBuilder: (_, _, _) => const SizedBox(width: 48, height: 48),

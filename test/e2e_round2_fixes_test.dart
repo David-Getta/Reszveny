@@ -7,6 +7,8 @@ import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
 import 'package:reszveny/core/config/app_config.dart';
 import 'package:reszveny/core/errors.dart';
+import 'package:reszveny/core/models/stock_report.dart';
+import 'package:reszveny/core/share/share_text.dart';
 import 'package:reszveny/core/models/stock_details.dart';
 import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
 import 'package:reszveny/features/market_data/finnhub_market_data_provider.dart';
@@ -371,6 +373,31 @@ void main() {
     await c.restore();
     expect(c.lastEvent, isNull);
     expect(c.restoreOutcome, RestoreOutcome.nothing);
+  });
+
+  test('a shared analysis never carries the bullet measured against the reader\'s average cost', () {
+    final report = StockReport(
+      symbol: 'AAPL',
+      headline: 'Steady',
+      generatedAt: DateTime.utc(2026, 11, 5),
+      sections: const [
+        ReportSection(
+          kind: ReportSectionKind.outlook,
+          title: 'Outlook',
+          bullets: ['Bull case', 'Base case', 'Bear case', 'Against your average cost of 180 USD: +12% / +3% / -15%'],
+        ),
+      ],
+      outlook: const ReportOutlook(
+        scenarios: [
+          Scenario(kind: ScenarioKind.bull, probability: 25),
+          Scenario(kind: ScenarioKind.base, probability: 50),
+          Scenario(kind: ScenarioKind.bear, probability: 25),
+        ],
+      ),
+    );
+    final text = reportShareText(report, companyName: 'Apple', generatedLine: 'g', disclaimer: 'd');
+    expect(text, contains('Bear case'));
+    expect(text, isNot(contains('average cost')));
   });
 }
 

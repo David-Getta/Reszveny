@@ -147,4 +147,42 @@ void main() {
     expect(s.extraCredits, 0);
     expect(EntitlementState.fromJson({'paid_through': '2026-10-22T16:00:00.000Z'}).paidThrough, isNotNull);
   });
+
+  test("a waiting receipt keeps a hash of its account's e-mail, not the address, and expires", () async {
+    final store = _Store();
+    Future<EntitlementState> offline(BillingEvent e) async => throw const SocketException('offline');
+    final c = BillingController(
+      billing: store,
+      entitlements: EntitlementService(),
+      verifier: offline,
+      owner: () => 'Anna@Example.com',
+    );
+    store.events_.add(bought('receipt-x'));
+    await pumpEventQueue();
+    final raw = (await SharedPreferences.getInstance()).getString('billing_pending_verifications')!;
+    expect(raw, isNot(contains('example.com')));
+    expect(raw, contains(BillingController.ownerKey('anna@example.com')));
+    // A fiók törlésekor (a címével) lekerül.
+    await BillingController.forgetOwner('anna@example.com');
+    expect((await SharedPreferences.getInstance()).getString('billing_pending_verifications'), '[]');
+    c.dispose();
+
+    // Egy 60 napnál régebbi bejegyzést már nem küld el újra.
+    final old = DateTime.now().toUtc().subtract(BillingController.pendingKept + const Duration(days: 1));
+    SharedPreferences.setMockInitialValues({
+      'billing_pending_verifications':
+          '[{"product_id":"whatstock.pack.20","platform":"app_store","data":"stale","owner":"","at":"${old.toIso8601String()}"}]',
+    });
+    final sent = <String?>[];
+    final later = BillingController(
+      billing: store,
+      entitlements: EntitlementService(),
+      verifier: (e) async {
+        sent.add(e.verificationData);
+        return const EntitlementState();
+      },
+    );
+    await later.retryPending();
+    expect(sent, isEmpty);
+  });
 }

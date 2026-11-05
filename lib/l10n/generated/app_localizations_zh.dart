@@ -315,12 +315,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 位分析师',
-      one: '1 位分析师',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析师', one: '1 位分析师');
     return '$_temp0';
   }
 
@@ -475,8 +470,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro =>
-      '由 AI 撰写的详细概览：近期新闻摘要、业务、优势、风险与隐藏因素、估值、从心理、社会、技术和宏观角度给出情景的股价展望，以及值得关注的要点。';
+  String get aiIntro => '由 AI 撰写的详细概览：近期新闻摘要、业务、优势、风险与隐藏因素、估值、从心理、社会、技术和宏观角度给出情景的股价展望，以及值得关注的要点。';
 
   @override
   String get aiGenerate => '生成分析';
@@ -685,12 +679,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '试用期剩余 $days 天',
-      one: '试用期剩余 1 天',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '试用期剩余 $days 天', one: '试用期剩余 1 天');
     return '$_temp0';
   }
 
@@ -704,12 +693,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 次额外分析',
-      one: '$count 次额外分析',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 次额外分析', one: '$count 次额外分析');
     return '$_temp0';
   }
 
@@ -785,8 +769,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get bestValue => '最超值';
 
   @override
-  String get planFeaturesCommon =>
-      '所有计划均包含照片识别、实时数据、图表、收藏和全部 120 种语言。配额仅用于 AI 分析。';
+  String get planFeaturesCommon => '所有计划均包含照片识别、实时数据、图表、收藏和全部 120 种语言。配额仅用于 AI 分析。';
 
   @override
   String get searchLanguages => '搜索语言…';
@@ -825,11 +808,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '消耗 $count 次分析',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '消耗 $count 次分析');
     return '$_temp0';
   }
 
@@ -856,11 +835,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String aiWebSearchesInfo(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '您的计划每次分析最多可进行 $count 次网络搜索',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '您的计划每次分析最多可进行 $count 次网络搜索');
     return '$_temp0';
   }
 
@@ -871,21 +846,13 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '最多 $count 次网络搜索',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '最多 $count 次网络搜索');
     return '$_temp0';
   }
 
   @override
   String planWebSearches(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '每次分析 $count 次网络搜索',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '每次分析 $count 次网络搜索');
     return '$_temp0';
   }
 
@@ -1001,8 +968,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get paymentViaStripe => '通过 Stripe 在浏览器中安全付款。可随时取消。';
 
   @override
-  String get paymentViaStore =>
-      '通过你的 App Store 或 Google Play 账户扣费。可随时在商店设置中取消。';
+  String get paymentViaStore => '通过你的 App Store 或 Google Play 账户扣费。可随时在商店设置中取消。';
 
   @override
   String get keySpace => '空格键';
@@ -1014,8 +980,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get doubleOptionSubtitle => '快速连按两下 Option 键也可呼出 WhatStock。';
 
   @override
-  String get doubleOptionPermission =>
-      '如需在其他应用中也能使用，请在“系统设置”→“隐私与安全性”→“输入监控”中允许 WhatStock，然后重新打开本应用。';
+  String get doubleOptionPermission => '如需在其他应用中也能使用，请在“系统设置”→“隐私与安全性”→“输入监控”中允许 WhatStock，然后重新打开本应用。';
 
   @override
   String get openSystemSettings => '打开系统设置';
@@ -1033,11 +998,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '$years年',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years年');
     return '$_temp0';
   }
 
@@ -1070,8 +1031,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioEmpty => '这里还没有内容。打开一只股票并点按“添加到投资组合”，即可跟踪你的持仓。';
 
   @override
-  String get portfolioLocalNote =>
-      '保存在此设备上，登录后也会保存在您的账户中。合计按欧洲央行参考汇率换算；价格可能有延迟。';
+  String get portfolioLocalNote => '保存在此设备上，登录后也会保存在您的账户中。合计按欧洲央行参考汇率换算；价格可能有延迟。';
 
   @override
   String get addToPortfolio => '添加到投资组合';
@@ -1186,8 +1146,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get alertsEmpty => '还没有提醒。打开一只股票并点按铃铛即可设置。';
 
   @override
-  String get alertsNote =>
-      'WhatStock 运行期间每 5 分钟检查一次提醒。在电脑上，应用会继续在菜单栏或系统托盘中运行；在手机上，目前仅在应用打开时提醒。';
+  String get alertsNote => 'WhatStock 运行期间每 5 分钟检查一次提醒。在电脑上，应用会继续在菜单栏或系统托盘中运行；在手机上，目前仅在应用打开时提醒。';
 
   @override
   String alertDescAbove(String price) {
@@ -1276,8 +1235,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get errDeleteAccount => '无法删除账户。请检查网络连接后重试。';
 
   @override
-  String get aiTrialBriefNote =>
-      '试用期分析为简要版，由速度更快的 AI 模型生成。订阅计划后，您将获得我们能力最强的 AI、更多网络搜索，以及“常规”和“深入”篇幅。';
+  String get aiTrialBriefNote => '试用期分析为简要版，由速度更快的 AI 模型生成。订阅计划后，您将获得我们能力最强的 AI、更多网络搜索，以及“常规”和“深入”篇幅。';
 
   @override
   String get billingMonthly => '按月';
@@ -1334,23 +1292,13 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 小时前',
-      one: '1 小时前',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 小时前', one: '1 小时前');
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 天前',
-      one: '1 天前',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 天前', one: '1 天前');
     return '$_temp0';
   }
 
@@ -1407,12 +1355,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String referralBody(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 次额外分析',
-      one: '1 次额外分析',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 次额外分析', one: '1 次额外分析');
     return '分享你的邀请码。好友立即获得 $_temp0，在其完成首次分析后，你也将获得相同次数。';
   }
 
@@ -1452,12 +1395,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String referralShareText(String code, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 次额外分析',
-      one: '1 次额外分析',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 次额外分析', one: '1 次额外分析');
     return '我在用 WhatStock 分析股票：给股票拍张照，AI 就会为你讲解。使用我的邀请码 $code，即可获得 $_temp0。';
   }
 
@@ -1468,15 +1406,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get onboardTitle1 => '拍下一只股票';
 
   @override
-  String get onboardBody1 =>
-      '券商应用界面、报纸或公司标志都可以：WhatStock 会识别出股票，并显示它的价格、走势图和关键指标。';
+  String get onboardBody1 => '券商应用界面、报纸或公司标志都可以：WhatStock 会识别出股票，并显示它的价格、走势图和关键指标。';
 
   @override
   String get onboardTitle2 => '几分钟就能看懂';
 
   @override
-  String get onboardBody2 =>
-      'AI 分析会解释股价的驱动因素、风险、估值，以及股价可能如何变动的三种示例情景——附有信息来源，并使用你的语言。';
+  String get onboardBody2 => 'AI 分析会解释股价的驱动因素、风险、估值，以及股价可能如何变动的三种示例情景——附有信息来源，并使用你的语言。';
 
   @override
   String get onboardTitle3 => '动态尽在掌握';
@@ -1511,8 +1447,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get telemetryTitle => '帮助改进 WhatStock';
 
   @override
-  String get telemetryBody =>
-      '分享匿名使用统计信息和崩溃报告：使用了哪些功能以及出现了什么问题。绝不包含你的股票、分析或个人数据。你可以随时在设置中更改此选项。';
+  String get telemetryBody => '分享匿名使用统计信息和崩溃报告：使用了哪些功能以及出现了什么问题。绝不包含你的股票、分析或个人数据。你可以随时在设置中更改此选项。';
 
   @override
   String get telemetryAllow => '允许';
@@ -1535,8 +1470,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get askIntro =>
-      '关于这份分析，你可以问任何问题：某项风险意味着什么、什么会改变前景、某个数字是怎么算出来的。回答基于这份分析，不构成投资建议。';
+  String get askIntro => '关于这份分析，你可以问任何问题：某项风险意味着什么、什么会改变前景、某个数字是怎么算出来的。回答基于这份分析，不构成投资建议。';
 
   @override
   String get askHint => '输入问题…';
@@ -1567,11 +1501,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days 天后',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days 天后');
     return '$_temp0';
   }
 
@@ -1599,12 +1529,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get eventDividendEstimate => '根据您记录的派息估算';
 
   @override
-  String get eventsHint =>
-      '收藏和投资组合中股票未来 90 天的财报日期、你的分析中标记的有日期的事件，以及根据你记录的派息估算的预计派息。';
+  String get eventsHint => '收藏和投资组合中股票未来 90 天的财报日期、你的分析中标记的有日期的事件，以及根据你记录的派息估算的预计派息。';
 
   @override
-  String get eventsEmpty =>
-      '未来 90 天内没有有日期的事件。添加收藏或投资组合股票，即可在此查看其财报日期；已记录的股息会在此显示下一次预计派息。';
+  String get eventsEmpty => '未来 90 天内没有有日期的事件。添加收藏或投资组合股票，即可在此查看其财报日期；已记录的股息会在此显示下一次预计派息。';
 
   @override
   String get compareTitle => '对比';
@@ -1673,31 +1601,20 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioImport => '从 CSV 导入';
 
   @override
-  String get portfolioImportHint =>
-      '每行粘贴一笔买入：股票代码、数量、价格、货币、日期（YYYY-MM-DD）。各列可用逗号、分号或制表符分隔；标题行可省略。';
+  String get portfolioImportHint => '每行粘贴一笔买入：股票代码、数量、价格、货币、日期（YYYY-MM-DD）。各列可用逗号、分号或制表符分隔；标题行可省略。';
 
   @override
   String get portfolioImportButton => '导入';
 
   @override
   String portfolioImported(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '已添加 $count 笔交易',
-      one: '已添加 1 笔交易',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '已添加 $count 笔交易', one: '已添加 1 笔交易');
     return '$_temp0';
   }
 
   @override
   String portfolioImportSkipped(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '已跳过 $count 行',
-      one: '已跳过 1 行',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '已跳过 $count 行', one: '已跳过 1 行');
     return '$_temp0';
   }
 
@@ -1731,8 +1648,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioReviewTitle => 'AI 投资组合诊断';
 
   @override
-  String get portfolioReviewIntro =>
-      'AI 将全面审视整个投资组合：集中度、行业与货币敞口、持仓股票的共同风险以及股息。消耗 1 次分析。';
+  String get portfolioReviewIntro => 'AI 将全面审视整个投资组合：集中度、行业与货币敞口、持仓股票的共同风险以及股息。消耗 1 次分析。';
 
   @override
   String get portfolioReviewButton => '诊断我的投资组合';
@@ -1814,8 +1730,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioRealizedByYear => '按年度已实现收益';
 
   @override
-  String get portfolioRealizedHint =>
-      '卖出优先与最早的买入匹配（FIFO），按今日汇率换算。报税时请以券商的结单为准。';
+  String get portfolioRealizedHint => '卖出优先与最早的买入匹配（FIFO），按今日汇率换算。报税时请以券商的结单为准。';
 
   @override
   String staleNewResults(String symbol, String date) {
@@ -1844,12 +1759,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get glossSharesOutstanding => '公司已发行的股份数量。数量增加时，每股所占的份额变小；回购会使其减少。';
 
   @override
-  String get glossPeTrailing =>
-      '股价 ÷ 过去 12 个月的每股收益：相当于您为多少年的当前利润付钱。越低越便宜，但高速成长的公司 P/E 通常较高。';
+  String get glossPeTrailing => '股价 ÷ 过去 12 个月的每股收益：相当于您为多少年的当前利润付钱。越低越便宜，但高速成长的公司 P/E 通常较高。';
 
   @override
-  String get glossPeForward =>
-      '与 P/E 类似，但使用分析师预期的未来 12 个月利润。低于滚动 P/E 意味着预计利润将增长。';
+  String get glossPeForward => '与 P/E 类似，但使用分析师预期的未来 12 个月利润。低于滚动 P/E 意味着预计利润将增长。';
 
   @override
   String get glossPb => '股价 ÷ 每股账面价值（资产减去负债）。约为 1 表示市场对公司的估值相当于其账面上拥有的资产。';
@@ -1915,23 +1828,19 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioBeta => '投资组合贝塔系数';
 
   @override
-  String get glossPortfolioBeta =>
-      '按市值加权的持仓股票贝塔系数：大盘涨跌 1% 时，您的股票大约涨跌百分之几。高于 1 表示波动大于大盘，低于 1 则小于大盘。不含现金。';
+  String get glossPortfolioBeta => '按市值加权的持仓股票贝塔系数：大盘涨跌 1% 时，您的股票大约涨跌百分之几。高于 1 表示波动大于大盘，低于 1 则小于大盘。不含现金。';
 
   @override
   String get portfolioTop3 => '前三大持仓';
 
   @override
-  String get glossPortfolioTop3 =>
-      '您的股票市值中有多少集中在前三大持仓。比例越高，单一公司的坏消息对整个投资组合的冲击就越大。';
+  String get glossPortfolioTop3 => '您的股票市值中有多少集中在前三大持仓。比例越高，单一公司的坏消息对整个投资组合的冲击就越大。';
 
   @override
-  String get glossDividendGrowth5y =>
-      '过去五年每股股息平均每年增长多少。稳定增长通常意味着公司对自身现金流有信心；削减股息往往是一个警示信号。';
+  String get glossDividendGrowth5y => '过去五年每股股息平均每年增长多少。稳定增长通常意味着公司对自身现金流有信心；削减股息往往是一个警示信号。';
 
   @override
-  String get glossYieldOnCost =>
-      '最近12个月收到的股息，除以您为仍持有的股份所支付的金额。与股息率不同，它以您自己的买入价而非当前价格为基准。';
+  String get glossYieldOnCost => '最近12个月收到的股息，除以您为仍持有的股份所支付的金额。与股息率不同，它以您自己的买入价而非当前价格为基准。';
 
   @override
   String get glossTitle => '这是什么意思？';
@@ -2061,12 +1970,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String holdingsAdd(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '添加 $count 个持仓',
-      one: '添加 1 个持仓',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '添加 $count 个持仓', one: '添加 1 个持仓');
     return '$_temp0';
   }
 
@@ -2113,23 +2017,13 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 笔买入',
-      one: '1 笔买入',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 笔买入', one: '1 笔买入');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 笔卖出',
-      one: '1 笔卖出',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 笔卖出', one: '1 笔卖出');
     return '$_temp0';
   }
 
@@ -2145,8 +2039,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get insiderSell => '卖出';
 
   @override
-  String get insiderHint =>
-      '过去 90 天内高管和董事在公开市场的买入和卖出（SEC Form 4）。不包括期权行权和股票奖励。';
+  String get insiderHint => '过去 90 天内高管和董事在公开市场的买入和卖出（SEC Form 4）。不包括期权行权和股票奖励。';
 
   @override
   String get insiderNone => '过去 90 天内没有内部人在公开市场买入或卖出。';
@@ -2271,8 +2164,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get briefAutoTitle => '每日早间摘要';
 
   @override
-  String get briefAutoSubtitle =>
-      '应用运行期间，“今天你的股票”会在早上7点后自动生成；在电脑上会通过通知提醒你。占用每日提问次数，不消耗分析次数。';
+  String get briefAutoSubtitle => '应用运行期间，“今天你的股票”会在早上7点后自动生成；在电脑上会通过通知提醒你。占用每日提问次数，不消耗分析次数。';
 
   @override
   String get targetsButton => '目标配置';
@@ -2281,8 +2173,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get targetsTitle => '目标配置';
 
   @override
-  String get targetsHint =>
-      '设置每只股票在投资组合中应占的比例。留空表示不设目标。应用随后会显示需要买入或卖出多少才能达到目标。';
+  String get targetsHint => '设置每只股票在投资组合中应占的比例。留空表示不设目标。应用随后会显示需要买入或卖出多少才能达到目标。';
 
   @override
   String targetsSum(String percent) {
@@ -2324,17 +2215,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String get watchAlertAll => '单日大幅波动提醒';
 
   @override
-  String get watchAlertAllHint =>
-      '为此列表中的每只股票设置价格提醒：单日上涨或下跌达到该幅度时提醒你。已设有此类提醒的股票将保留原有提醒。';
+  String get watchAlertAllHint => '为此列表中的每只股票设置价格提醒：单日上涨或下跌达到该幅度时提醒你。已设有此类提醒的股票将保留原有提醒。';
 
   @override
   String watchAlertAllDone(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '已设置 $count 个提醒',
-      one: '已设置 1 个提醒',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '已设置 $count 个提醒', one: '已设置 1 个提醒');
     return '$_temp0';
   }
 
@@ -2350,8 +2235,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get portfolioAnnualReturnHint =>
-      '资金加权年化收益率（XIRR）：会考虑你买入和卖出的时间，因此后来追加的资金不会造成偏差。首次买入满一年后显示；不含股息。';
+  String get portfolioAnnualReturnHint => '资金加权年化收益率（XIRR）：会考虑你买入和卖出的时间，因此后来追加的资金不会造成偏差。首次买入满一年后显示；不含股息。';
 
   @override
   String get eventsAddToCalendar => '添加到日历 (.ics)';
@@ -2516,8 +2400,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioFeesPaid => '已付手续费';
 
   @override
-  String get portfolioAnnualSummaryNote =>
-      '金额为原币种，未经换算。卖出收入已扣除卖出手续费；取得成本含买入手续费（FIFO）。报税时请按税务机关要求的汇率换算。';
+  String get portfolioAnnualSummaryNote => '金额为原币种，未经换算。卖出收入已扣除卖出手续费；取得成本含买入手续费（FIFO）。报税时请按税务机关要求的汇率换算。';
 
   @override
   String get portfolioShare => '分享投资表现';
@@ -2533,11 +2416,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 个持仓',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 个持仓');
     return '$_temp0';
   }
 
@@ -2574,8 +2453,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioMaxDrawdown => '最大回撤';
 
   @override
-  String get glossMaxDrawdown =>
-      '您持仓股票市值从此前高点到之后低点的最大跌幅，已剔除买入和卖出的影响（时间加权）。它显示您的投资组合曾经历过多深的下跌。';
+  String get glossMaxDrawdown => '您持仓股票市值从此前高点到之后低点的最大跌幅，已剔除买入和卖出的影响（时间加权）。它显示您的投资组合曾经历过多深的下跌。';
 
   @override
   String watchSince(String date) {
@@ -2654,21 +2532,13 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: '$months个月',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months个月');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days天',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days天');
     return '$_temp0';
   }
 
@@ -2726,12 +2596,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String portfolioImportDuplicates(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 笔已有记录，未重复添加',
-      one: '1 笔已有记录，未重复添加',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 笔已有记录，未重复添加', one: '1 笔已有记录，未重复添加');
     return '$_temp0';
   }
 
@@ -2747,8 +2612,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tickerChangeNew => '新股票代码';
 
   @override
-  String get tickerChangeHint =>
-      '公司更改股票代码时（例如 FB → META），所有交易、股息、股票拆分、笔记和提醒都会转移到新代码下。';
+  String get tickerChangeHint => '公司更改股票代码时（例如 FB → META），所有交易、股息、股票拆分、笔记和提醒都会转移到新代码下。';
 
   @override
   String tickerChanged(String symbol) {
@@ -2792,8 +2656,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get restoreNothing => '未找到可恢复的以往购买记录。';
 
   @override
-  String get manageSubscriptionElsewhere =>
-      '此处没有可管理的订阅。在 App Store 或 Google Play 购买的订阅需在商店设置中管理。';
+  String get manageSubscriptionElsewhere => '此处没有可管理的订阅。在 App Store 或 Google Play 购买的订阅需在商店设置中管理。';
 
   @override
   String get backupFailed => '无法保存备份。请重试。';
@@ -2846,23 +2709,19 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get subscribedInStore =>
-      '你已通过 App Store 或 Google Play 订阅。如需更改计划，请使用该商店的订阅设置。';
+  String get subscribedInStore => '你已通过 App Store 或 Google Play 订阅。如需更改计划，请使用该商店的订阅设置。';
 
   @override
   String get paymentViaAppStore => '通过你的 Apple 账户扣费。可随时在 App Store 订阅设置中取消。';
 
   @override
-  String get paymentViaGooglePlay =>
-      '通过你的 Google Play 账户扣费。可随时在 Google Play 订阅设置中取消。';
+  String get paymentViaGooglePlay => '通过你的 Google Play 账户扣费。可随时在 Google Play 订阅设置中取消。';
 
   @override
-  String get manageSubscriptionAppStore =>
-      '此处没有可管理的订阅。在 App Store 购买的订阅需在你的 App Store 设置中管理。';
+  String get manageSubscriptionAppStore => '此处没有可管理的订阅。在 App Store 购买的订阅需在你的 App Store 设置中管理。';
 
   @override
-  String get manageSubscriptionGooglePlay =>
-      '此处没有可管理的订阅。在 Google Play 购买的订阅需在你的 Google Play 设置中管理。';
+  String get manageSubscriptionGooglePlay => '此处没有可管理的订阅。在 Google Play 购买的订阅需在你的 Google Play 设置中管理。';
 
   @override
   String get deleteAccountBodyAppStore =>
@@ -2889,8 +2748,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get aiConsentSetting => 'AI 功能';
 
   @override
-  String get aiConsentSettingDesc =>
-      '你的请求会发送给 Anthropic（Claude）以获得回答。关闭后，应用会在下一次 AI 请求前询问你，且不会自动生成早间摘要。';
+  String get aiConsentSettingDesc => '你的请求会发送给 Anthropic（Claude）以获得回答。关闭后，应用会在下一次 AI 请求前询问你，且不会自动生成早间摘要。';
 
   @override
   String get aiReport => '举报';
@@ -2920,8 +2778,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get aiReportThanks => '谢谢，我们会进行审核。';
 
   @override
-  String get aiPortfolioDisclaimer =>
-      '由 AI 生成的关于你投资组合构成的一般信息。未考虑你的目标、财务状况或税务情况，不构成个性化建议或投资建议。';
+  String get aiPortfolioDisclaimer => '由 AI 生成的关于你投资组合构成的一般信息。未考虑你的目标、财务状况或税务情况，不构成个性化建议或投资建议。';
 
   @override
   String get briefNotificationTitle => 'AI 总结 · 今天你的股票';
@@ -2962,12 +2819,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String alertsCleared(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '已清除 $count 个提醒',
-      one: '已清除 1 个提醒',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '已清除 $count 个提醒', one: '已清除 1 个提醒');
     return '$_temp0';
   }
 
@@ -2978,8 +2830,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get allocationCountries => '国家';
 
   @override
-  String get newsExplainNoteResearch =>
-      'AI 解读：在网上查证事实，打开原文，并评估来源的可靠程度。不构成投资建议。占用每日提问次数，不消耗分析次数。';
+  String get newsExplainNoteResearch => 'AI 解读：在网上查证事实，打开原文，并评估来源的可靠程度。不构成投资建议。占用每日提问次数，不消耗分析次数。';
 
   @override
   String get sourceOfficial => '官方';
@@ -2997,8 +2848,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get earningsSummaryButton => '最新财报说了什么？';
 
   @override
-  String get earningsSummaryNote =>
-      'AI 汇总公司的业绩公告以及在网上找到的媒体报道。不构成投资建议。占用每日提问次数，不消耗分析次数。';
+  String get earningsSummaryNote => 'AI 汇总公司的业绩公告以及在网上找到的媒体报道。不构成投资建议。占用每日提问次数，不消耗分析次数。';
 
   @override
   String get compareLastSurprise => '上季每股收益 vs 预期';
@@ -3013,15 +2863,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get instrumentTitle => '关于该标的';
 
   @override
-  String get instrumentHint =>
-      '该代码没有公司资料，可能是 ETF、基金或存托凭证。问问 AI 它是什么、持有什么以及费用多少。';
+  String get instrumentHint => '该代码没有公司资料，可能是 ETF、基金或存托凭证。问问 AI 它是什么、持有什么以及费用多少。';
 
   @override
   String get instrumentAsk => '这是什么？';
 
   @override
-  String get instrumentNote =>
-      'AI 根据发行方的基金页面以及在网上找到的财经网站进行说明。不构成投资建议。占用每日提问次数，不消耗分析次数。';
+  String get instrumentNote => 'AI 根据发行方的基金页面以及在网上找到的财经网站进行说明。不构成投资建议。占用每日提问次数，不消耗分析次数。';
 
   @override
   String suggestAskAi(String query) {
@@ -3063,8 +2911,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioDividendDate => '派息日期';
 
   @override
-  String get portfolioDividendsEmpty =>
-      '尚未记录任何股息。可手动添加，或导入券商的导出文件，其中的股息记录也会被识别。';
+  String get portfolioDividendsEmpty => '尚未记录任何股息。可手动添加，或导入券商的导出文件，其中的股息记录也会被识别。';
 
   @override
   String get portfolioSplit => '股票拆分';
@@ -3096,23 +2943,13 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String portfolioSplitsImported(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '已添加 $count 项股票拆分',
-      one: '已添加 1 项股票拆分',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '已添加 $count 项股票拆分', one: '已添加 1 项股票拆分');
     return '$_temp0';
   }
 
   @override
   String portfolioDividendsImported(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '已添加 $count 笔股息',
-      one: '已添加 1 笔股息',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '已添加 $count 笔股息', one: '已添加 1 笔股息');
     return '$_temp0';
   }
 
@@ -3138,12 +2975,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String awayAlerts(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 个提醒已触发',
-      one: '1 个提醒已触发',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 个提醒已触发', one: '1 个提醒已触发');
     return '$_temp0';
   }
 
@@ -3161,8 +2993,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get moveWhyNote =>
-      'AI 根据网上找到的今日新闻给出的解释；真实原因可能未知或有所不同。不构成投资建议。消耗您的每日提问额度，而非分析额度。';
+  String get moveWhyNote => 'AI 根据网上找到的今日新闻给出的解释；真实原因可能未知或有所不同。不构成投资建议。消耗您的每日提问额度，而非分析额度。';
 
   @override
   String get sectionTechnical => '技术面';
@@ -3211,12 +3042,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get glossSma200 => '最近200个交易日收盘价的平均值——经典的长期趋势线。许多投资者把价格位于其上方视为长期上升趋势。';
 
   @override
-  String get glossRsi =>
-      '相对强弱指数：在0–100的区间内比较近期涨幅与近期跌幅。高于70通常称为超买（涨得太快），低于30称为超卖——但强势趋势可能长时间停留在这些区域。';
+  String get glossRsi => '相对强弱指数：在0–100的区间内比较近期涨幅与近期跌幅。高于70通常称为超买（涨得太快），低于30称为超卖——但强势趋势可能长时间停留在这些区域。';
 
   @override
-  String get glossVolatility =>
-      '价格每日波动的幅度，按年折算：20%表示在典型的一年内价格大致在±20%范围内波动。波动率越高，涨跌幅度都越大。';
+  String get glossVolatility => '价格每日波动的幅度，按年折算：20%表示在典型的一年内价格大致在±20%范围内波动。波动率越高，涨跌幅度都越大。';
 
   @override
   String get techNote => '根据每日收盘价计算。技术信号描述的是过去，而非未来。';
@@ -3249,8 +3078,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get signalAlertsTitle => '技术信号通知';
 
   @override
-  String get signalAlertsSubtitle =>
-      '每天一次，当您关注的股票进入超卖或超买（RSI）状态，或其价格穿越200日均线时。';
+  String get signalAlertsSubtitle => '每天一次，当您关注的股票进入超卖或超买（RSI）状态，或其价格穿越200日均线时。';
 
   @override
   String get signalAlertsNotification => '技术信号';
@@ -3612,12 +3440,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 位分析員',
-      one: '1 位分析員',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 位分析員', one: '1 位分析員');
     return '$_temp0';
   }
 
@@ -3772,8 +3595,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get aiSectionTitle => 'AI 分析';
 
   @override
-  String get aiIntro =>
-      '由 AI 撰寫的詳細概覽：近期新聞摘要、業務、優勢、風險與隱藏因素、估值、從心理、社會、技術及宏觀角度給出情景的股價展望，以及值得留意的要點。';
+  String get aiIntro => '由 AI 撰寫的詳細概覽：近期新聞摘要、業務、優勢、風險與隱藏因素、估值、從心理、社會、技術及宏觀角度給出情景的股價展望，以及值得留意的要點。';
 
   @override
   String get aiGenerate => '產生分析';
@@ -3982,12 +3804,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '試用期尚餘 $days 日',
-      one: '試用期尚餘 1 日',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '試用期尚餘 $days 日', one: '試用期尚餘 1 日');
     return '$_temp0';
   }
 
@@ -4001,12 +3818,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String extraCredits(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 次額外分析',
-      one: '$count 次額外分析',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 次額外分析', one: '$count 次額外分析');
     return '$_temp0';
   }
 
@@ -4082,8 +3894,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get bestValue => '最抵用';
 
   @override
-  String get planFeaturesCommon =>
-      '所有計劃均包含相片識別、即時數據、圖表、收藏及全部 120 種語言。配額只用於 AI 分析。';
+  String get planFeaturesCommon => '所有計劃均包含相片識別、即時數據、圖表、收藏及全部 120 種語言。配額只用於 AI 分析。';
 
   @override
   String get searchLanguages => '搜尋語言…';
@@ -4122,11 +3933,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '用 $count 次分析',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '用 $count 次分析');
     return '$_temp0';
   }
 
@@ -4153,11 +3960,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String aiWebSearchesInfo(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '你的計劃每次分析最多可進行 $count 次網上搜尋',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '你的計劃每次分析最多可進行 $count 次網上搜尋');
     return '$_temp0';
   }
 
@@ -4168,21 +3971,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '最多 $count 次網上搜尋',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '最多 $count 次網上搜尋');
     return '$_temp0';
   }
 
   @override
   String planWebSearches(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '每次分析 $count 次網上搜尋',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '每次分析 $count 次網上搜尋');
     return '$_temp0';
   }
 
@@ -4310,8 +4105,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get doubleOptionSubtitle => '快速連按兩下 Option 鍵亦可呼出 WhatStock。';
 
   @override
-  String get doubleOptionPermission =>
-      '如要在其他 App 中亦能使用，請在「系統設定」→「私隱與保安」→「輸入監控」中允許 WhatStock，然後重新開啟此 App。';
+  String get doubleOptionPermission => '如要在其他 App 中亦能使用，請在「系統設定」→「私隱與保安」→「輸入監控」中允許 WhatStock，然後重新開啟此 App。';
 
   @override
   String get openSystemSettings => '開啟系統設定';
@@ -4329,11 +4123,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '$years年',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years年');
     return '$_temp0';
   }
 
@@ -4366,8 +4156,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get portfolioEmpty => '這裡暫時未有內容。打開一隻股票並點一下「加入投資組合」，即可追蹤你的持倉。';
 
   @override
-  String get portfolioLocalNote =>
-      '儲存在此裝置上，登入後亦會儲存在你的帳戶。總計以歐洲央行參考匯率換算；股價可能有延遲。';
+  String get portfolioLocalNote => '儲存在此裝置上，登入後亦會儲存在你的帳戶。總計以歐洲央行參考匯率換算；股價可能有延遲。';
 
   @override
   String get addToPortfolio => '加入投資組合';
@@ -4482,8 +4271,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get alertsEmpty => '暫時未有提示。打開一隻股票並點一下鈴鐺即可設定。';
 
   @override
-  String get alertsNote =>
-      'WhatStock 運行期間每 5 分鐘檢查一次提示。電腦上，程式會繼續在選單列或系統匣中運行；手機上，暫時只會在程式開啟時提示。';
+  String get alertsNote => 'WhatStock 運行期間每 5 分鐘檢查一次提示。電腦上，程式會繼續在選單列或系統匣中運行；手機上，暫時只會在程式開啟時提示。';
 
   @override
   String alertDescAbove(String price) {
@@ -4572,8 +4360,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get errDeleteAccount => '未能刪除帳戶。請檢查網絡連線後再試。';
 
   @override
-  String get aiTrialBriefNote =>
-      '試用期分析為簡要版，由速度更快的 AI 模型生成。訂閱計劃後，你可享用我們能力最強的 AI、更多網上搜尋，以及「常規」和「深入」篇幅。';
+  String get aiTrialBriefNote => '試用期分析為簡要版，由速度更快的 AI 模型生成。訂閱計劃後，你可享用我們能力最強的 AI、更多網上搜尋，以及「常規」和「深入」篇幅。';
 
   @override
   String get billingMonthly => '按月';
@@ -4630,23 +4417,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 小時前',
-      one: '1 小時前',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 小時前', one: '1 小時前');
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 日前',
-      one: '1 日前',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 日前', one: '1 日前');
     return '$_temp0';
   }
 
@@ -4703,12 +4480,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String referralBody(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 次額外分析',
-      one: '1 次額外分析',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 次額外分析', one: '1 次額外分析');
     return '分享你的邀請碼。朋友即時獲得 $_temp0，對方完成首次分析後，你亦會獲得相同次數。';
   }
 
@@ -4748,12 +4520,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String referralShareText(String code, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 次額外分析',
-      one: '1 次額外分析',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 次額外分析', one: '1 次額外分析');
     return '我用 WhatStock 分析股票：為股票拍照，AI 就會為你解釋。用我的邀請碼 $code，即可獲得 $_temp0。';
   }
 
@@ -4764,15 +4531,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get onboardTitle1 => '拍一張股票相片';
 
   @override
-  String get onboardBody1 =>
-      '證券商 App 畫面、報紙或公司商標都可以：WhatStock 會識別股票，並顯示其股價、走勢圖及主要數據。';
+  String get onboardBody1 => '證券商 App 畫面、報紙或公司商標都可以：WhatStock 會識別股票，並顯示其股價、走勢圖及主要數據。';
 
   @override
   String get onboardTitle2 => '數分鐘內輕鬆看懂';
 
   @override
-  String get onboardBody2 =>
-      'AI 分析會解釋推動股價的因素、風險、估值，以及股價可能如何變動的三個示例情境——附有資料來源，並以你的語言呈現。';
+  String get onboardBody2 => 'AI 分析會解釋推動股價的因素、風險、估值，以及股價可能如何變動的三個示例情境——附有資料來源，並以你的語言呈現。';
 
   @override
   String get onboardTitle3 => '市況盡在掌握';
@@ -4807,8 +4572,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get telemetryTitle => '協助改善 WhatStock';
 
   @override
-  String get telemetryBody =>
-      '分享匿名使用統計資料及當機報告：使用了哪些功能，以及出現了甚麼問題。絕不包括你的股票、分析或個人資料。你可隨時在「設定」中更改。';
+  String get telemetryBody => '分享匿名使用統計資料及當機報告：使用了哪些功能，以及出現了甚麼問題。絕不包括你的股票、分析或個人資料。你可隨時在「設定」中更改。';
 
   @override
   String get telemetryAllow => '允許';
@@ -4831,8 +4595,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   }
 
   @override
-  String get askIntro =>
-      '你可以就這份分析提出任何問題：某項風險代表甚麼、甚麼會改變前景、某個數字是怎樣計算出來的。回答以這份分析為基礎，並不構成投資建議。';
+  String get askIntro => '你可以就這份分析提出任何問題：某項風險代表甚麼、甚麼會改變前景、某個數字是怎樣計算出來的。回答以這份分析為基礎，並不構成投資建議。';
 
   @override
   String get askHint => '輸入問題…';
@@ -4863,11 +4626,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days 日後',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days 日後');
     return '$_temp0';
   }
 
@@ -4895,12 +4654,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get eventDividendEstimate => '根據你記錄的派息估算';
 
   @override
-  String get eventsHint =>
-      '收藏及投資組合股票未來 90 日的業績公佈日期、你的分析所標示的有日期事件，以及根據你記錄的派息估算的預計派息。';
+  String get eventsHint => '收藏及投資組合股票未來 90 日的業績公佈日期、你的分析所標示的有日期事件，以及根據你記錄的派息估算的預計派息。';
 
   @override
-  String get eventsEmpty =>
-      '未來 90 日沒有有日期的事件。加入收藏或投資組合股票，即可在此查看其業績公佈日期；已記錄的股息會在此顯示下一次預計派息。';
+  String get eventsEmpty => '未來 90 日沒有有日期的事件。加入收藏或投資組合股票，即可在此查看其業績公佈日期；已記錄的股息會在此顯示下一次預計派息。';
 
   @override
   String get compareTitle => '比較';
@@ -4969,31 +4726,20 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get portfolioImport => '從 CSV 匯入';
 
   @override
-  String get portfolioImportHint =>
-      '每行貼上一筆買入：股票代號、數量、價格、貨幣、日期（YYYY-MM-DD）。各欄可用逗號、分號或定位字元分隔；標題行可省略。';
+  String get portfolioImportHint => '每行貼上一筆買入：股票代號、數量、價格、貨幣、日期（YYYY-MM-DD）。各欄可用逗號、分號或定位字元分隔；標題行可省略。';
 
   @override
   String get portfolioImportButton => '匯入';
 
   @override
   String portfolioImported(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '已加入 $count 筆交易',
-      one: '已加入 1 筆交易',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '已加入 $count 筆交易', one: '已加入 1 筆交易');
     return '$_temp0';
   }
 
   @override
   String portfolioImportSkipped(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '已略過 $count 行',
-      one: '已略過 1 行',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '已略過 $count 行', one: '已略過 1 行');
     return '$_temp0';
   }
 
@@ -5027,8 +4773,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get portfolioReviewTitle => 'AI 投資組合診斷';
 
   @override
-  String get portfolioReviewIntro =>
-      'AI 會全面審視整個投資組合：集中度、行業及貨幣風險、持倉股票的共同風險，以及股息。用 1 次分析。';
+  String get portfolioReviewIntro => 'AI 會全面審視整個投資組合：集中度、行業及貨幣風險、持倉股票的共同風險，以及股息。用 1 次分析。';
 
   @override
   String get portfolioReviewButton => '診斷我的投資組合';
@@ -5110,8 +4855,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get portfolioRealizedByYear => '按年度已實現收益';
 
   @override
-  String get portfolioRealizedHint =>
-      '賣出優先與最早的買入配對（FIFO），按今日匯率換算。報稅時請以經紀的結單為準。';
+  String get portfolioRealizedHint => '賣出優先與最早的買入配對（FIFO），按今日匯率換算。報稅時請以經紀的結單為準。';
 
   @override
   String staleNewResults(String symbol, String date) {
@@ -5140,12 +4884,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get glossSharesOutstanding => '公司已發行的股份數目。數目增加時，每股所佔的份額變小；回購會令其減少。';
 
   @override
-  String get glossPeTrailing =>
-      '股價 ÷ 過去 12 個月的每股盈利：即你為多少年的現時盈利付錢。越低越便宜，但增長快的公司 P/E 通常較高。';
+  String get glossPeTrailing => '股價 ÷ 過去 12 個月的每股盈利：即你為多少年的現時盈利付錢。越低越便宜，但增長快的公司 P/E 通常較高。';
 
   @override
-  String get glossPeForward =>
-      '與 P/E 相似，但採用分析師預期未來 12 個月的盈利。低於歷史 P/E 即預期盈利會增長。';
+  String get glossPeForward => '與 P/E 相似，但採用分析師預期未來 12 個月的盈利。低於歷史 P/E 即預期盈利會增長。';
 
   @override
   String get glossPb => '股價 ÷ 每股賬面值（資產減負債）。約 1 表示市場對公司的估值相當於其賬面上擁有的資產。';
@@ -5154,8 +4896,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get glossPs => '市值 ÷ 全年收入。適用於盈利仍然很少或未有盈利的公司；宜在同一行業內比較。';
 
   @override
-  String get glossEvToFcf =>
-      '包括債務在內的公司價值（EV）÷ 公司扣除投資後一年產生的現金。越低表示你付出的價錢能換到更多現金。';
+  String get glossEvToFcf => '包括債務在內的公司價值（EV）÷ 公司扣除投資後一年產生的現金。越低表示你付出的價錢能換到更多現金。';
 
   @override
   String get glossPeg => 'P/E ÷ 預期每年盈利增長（%）。約 1 通常被視為合理；它從增長角度衡量 P/E。';
@@ -5212,23 +4953,19 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get portfolioBeta => '投資組合 Beta 值';
 
   @override
-  String get glossPortfolioBeta =>
-      '按市值加權的持股 Beta 值：大市升跌 1% 時，你的股票大約升跌百分之幾。高於 1 代表波幅大於大市，低於 1 則較小。不包括現金。';
+  String get glossPortfolioBeta => '按市值加權的持股 Beta 值：大市升跌 1% 時，你的股票大約升跌百分之幾。高於 1 代表波幅大於大市，低於 1 則較小。不包括現金。';
 
   @override
   String get portfolioTop3 => '三大持倉';
 
   @override
-  String get glossPortfolioTop3 =>
-      '你的股票市值中有多少集中在三大持倉。比例越高，單一公司的壞消息對整個投資組合的打擊就越大。';
+  String get glossPortfolioTop3 => '你的股票市值中有多少集中在三大持倉。比例越高，單一公司的壞消息對整個投資組合的打擊就越大。';
 
   @override
-  String get glossDividendGrowth5y =>
-      '過去五年每股股息平均每年增長多少。穩定增長通常代表公司對自身現金流有信心；削減股息往往是警號。';
+  String get glossDividendGrowth5y => '過去五年每股股息平均每年增長多少。穩定增長通常代表公司對自身現金流有信心；削減股息往往是警號。';
 
   @override
-  String get glossYieldOnCost =>
-      '最近12個月收到的股息，除以你為仍然持有的股份所付出的金額。與股息率不同，它以你自己的買入價而非今日價格計算。';
+  String get glossYieldOnCost => '最近12個月收到的股息，除以你為仍然持有的股份所付出的金額。與股息率不同，它以你自己的買入價而非今日價格計算。';
 
   @override
   String get glossTitle => '這是甚麼意思？';
@@ -5358,12 +5095,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String holdingsAdd(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '加入 $count 個持倉',
-      one: '加入 1 個持倉',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '加入 $count 個持倉', one: '加入 1 個持倉');
     return '$_temp0';
   }
 
@@ -5410,23 +5142,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 宗買入',
-      one: '1 宗買入',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 宗買入', one: '1 宗買入');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 宗賣出',
-      one: '1 宗賣出',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 宗賣出', one: '1 宗賣出');
     return '$_temp0';
   }
 
@@ -5567,8 +5289,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get briefAutoTitle => '每日早晨摘要';
 
   @override
-  String get briefAutoSubtitle =>
-      '應用程式運行期間，「今天你的股票」會在早上7時後自動產生；在電腦上會以通知提醒你。佔用每日提問次數，不消耗分析次數。';
+  String get briefAutoSubtitle => '應用程式運行期間，「今天你的股票」會在早上7時後自動產生；在電腦上會以通知提醒你。佔用每日提問次數，不消耗分析次數。';
 
   @override
   String get targetsButton => '目標配置';
@@ -5577,8 +5298,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get targetsTitle => '目標配置';
 
   @override
-  String get targetsHint =>
-      '設定每隻股票在投資組合中應佔的比例。留空即不設目標。應用程式隨後會顯示需要買入或賣出多少才能達到目標。';
+  String get targetsHint => '設定每隻股票在投資組合中應佔的比例。留空即不設目標。應用程式隨後會顯示需要買入或賣出多少才能達到目標。';
 
   @override
   String targetsSum(String percent) {
@@ -5620,17 +5340,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get watchAlertAll => '單日大幅波動提醒';
 
   @override
-  String get watchAlertAllHint =>
-      '為此清單中的每隻股票設定價格提醒：單日上升或下跌達此幅度時通知你。已設有此類提醒的股票會保留原有提醒。';
+  String get watchAlertAllHint => '為此清單中的每隻股票設定價格提醒：單日上升或下跌達此幅度時通知你。已設有此類提醒的股票會保留原有提醒。';
 
   @override
   String watchAlertAllDone(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '已設定 $count 個提醒',
-      one: '已設定 1 個提醒',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '已設定 $count 個提醒', one: '已設定 1 個提醒');
     return '$_temp0';
   }
 
@@ -5646,8 +5360,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   }
 
   @override
-  String get portfolioAnnualReturnHint =>
-      '資金加權年化回報率（XIRR）：會考慮你買入及賣出的時間，因此其後追加的資金不會造成偏差。首次買入滿一年後顯示；不包括股息。';
+  String get portfolioAnnualReturnHint => '資金加權年化回報率（XIRR）：會考慮你買入及賣出的時間，因此其後追加的資金不會造成偏差。首次買入滿一年後顯示；不包括股息。';
 
   @override
   String get eventsAddToCalendar => '加入日曆 (.ics)';
@@ -5812,8 +5525,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get portfolioFeesPaid => '已付佣金';
 
   @override
-  String get portfolioAnnualSummaryNote =>
-      '金額以原貨幣列示，未經換算。出售所得已扣除賣出佣金；購入成本已包括買入佣金（FIFO）。報稅時請按稅務機關要求的匯率換算。';
+  String get portfolioAnnualSummaryNote => '金額以原貨幣列示，未經換算。出售所得已扣除賣出佣金；購入成本已包括買入佣金（FIFO）。報稅時請按稅務機關要求的匯率換算。';
 
   @override
   String get portfolioShare => '分享投資表現';
@@ -5829,11 +5541,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 個持倉',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 個持倉');
     return '$_temp0';
   }
 
@@ -5870,8 +5578,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get portfolioMaxDrawdown => '最大跌幅';
 
   @override
-  String get glossMaxDrawdown =>
-      '你持股市值由先前高位至其後低位的最大跌幅，已剔除買入及賣出的影響（時間加權）。顯示你的投資組合曾經歷過多深的下跌。';
+  String get glossMaxDrawdown => '你持股市值由先前高位至其後低位的最大跌幅，已剔除買入及賣出的影響（時間加權）。顯示你的投資組合曾經歷過多深的下跌。';
 
   @override
   String watchSince(String date) {
@@ -5950,21 +5657,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: '$months個月',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months個月');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days日',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days日');
     return '$_temp0';
   }
 
@@ -6022,12 +5721,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String portfolioImportDuplicates(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 筆已有記錄，未重複加入',
-      one: '1 筆已有記錄，未重複加入',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 筆已有記錄，未重複加入', one: '1 筆已有記錄，未重複加入');
     return '$_temp0';
   }
 
@@ -6043,8 +5737,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get tickerChangeNew => '新股票代號';
 
   @override
-  String get tickerChangeHint =>
-      '公司更改股票代號時（例如 FB → META），所有交易、股息、股票分拆、筆記及提示都會轉移至新代號。';
+  String get tickerChangeHint => '公司更改股票代號時（例如 FB → META），所有交易、股息、股票分拆、筆記及提示都會轉移至新代號。';
 
   @override
   String tickerChanged(String symbol) {
@@ -6088,8 +5781,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get restoreNothing => '找不到可恢復的過往購買紀錄。';
 
   @override
-  String get manageSubscriptionElsewhere =>
-      '這裡沒有可管理的訂閱。在 App Store 或 Google Play 購買的訂閱須於商店設定中管理。';
+  String get manageSubscriptionElsewhere => '這裡沒有可管理的訂閱。在 App Store 或 Google Play 購買的訂閱須於商店設定中管理。';
 
   @override
   String get backupFailed => '無法儲存備份。請再試一次。';
@@ -6142,23 +5834,19 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   }
 
   @override
-  String get subscribedInStore =>
-      '你已透過 App Store 或 Google Play 訂閱。如需更改計劃，請使用該商店的訂閱設定。';
+  String get subscribedInStore => '你已透過 App Store 或 Google Play 訂閱。如需更改計劃，請使用該商店的訂閱設定。';
 
   @override
   String get paymentViaAppStore => '經你的 Apple 帳戶收費。可隨時在 App Store 訂閱設定中取消。';
 
   @override
-  String get paymentViaGooglePlay =>
-      '經你的 Google Play 帳戶收費。可隨時在 Google Play 訂閱設定中取消。';
+  String get paymentViaGooglePlay => '經你的 Google Play 帳戶收費。可隨時在 Google Play 訂閱設定中取消。';
 
   @override
-  String get manageSubscriptionAppStore =>
-      '這裡沒有可管理的訂閱。在 App Store 購買的訂閱須於你的 App Store 設定中管理。';
+  String get manageSubscriptionAppStore => '這裡沒有可管理的訂閱。在 App Store 購買的訂閱須於你的 App Store 設定中管理。';
 
   @override
-  String get manageSubscriptionGooglePlay =>
-      '這裡沒有可管理的訂閱。在 Google Play 購買的訂閱須於你的 Google Play 設定中管理。';
+  String get manageSubscriptionGooglePlay => '這裡沒有可管理的訂閱。在 Google Play 購買的訂閱須於你的 Google Play 設定中管理。';
 
   @override
   String get deleteAccountBodyAppStore =>
@@ -6185,8 +5873,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get aiConsentSetting => 'AI 功能';
 
   @override
-  String get aiConsentSettingDesc =>
-      '你的請求會傳送給 Anthropic（Claude）以作回答。關閉後，應用程式會在下次 AI 請求前詢問你，自動早晨摘要亦不會執行。';
+  String get aiConsentSettingDesc => '你的請求會傳送給 Anthropic（Claude）以作回答。關閉後，應用程式會在下次 AI 請求前詢問你，自動早晨摘要亦不會執行。';
 
   @override
   String get aiReport => '舉報';
@@ -6216,8 +5903,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get aiReportThanks => '多謝，我們會跟進審視。';
 
   @override
-  String get aiPortfolioDisclaimer =>
-      '由 AI 產生、有關你投資組合構成的一般資訊。並未考慮你的目標、財務狀況或稅務情況，並不構成個人化建議或投資建議。';
+  String get aiPortfolioDisclaimer => '由 AI 產生、有關你投資組合構成的一般資訊。並未考慮你的目標、財務狀況或稅務情況，並不構成個人化建議或投資建議。';
 
   @override
   String get briefNotificationTitle => 'AI 總結 · 今天你的股票';
@@ -6258,12 +5944,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String alertsCleared(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '已清除 $count 個提醒',
-      one: '已清除 1 個提醒',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '已清除 $count 個提醒', one: '已清除 1 個提醒');
     return '$_temp0';
   }
 
@@ -6274,8 +5955,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get allocationCountries => '國家';
 
   @override
-  String get newsExplainNoteResearch =>
-      'AI 解讀：在網上查證事實，開啟原文，並評估來源的可靠程度。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
+  String get newsExplainNoteResearch => 'AI 解讀：在網上查證事實，開啟原文，並評估來源的可靠程度。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
 
   @override
   String get sourceOfficial => '官方';
@@ -6293,8 +5973,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get earningsSummaryButton => '最新業績有甚麼內容？';
 
   @override
-  String get earningsSummaryNote =>
-      'AI 概括公司的業績公告，以及在網上找到的傳媒報道。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
+  String get earningsSummaryNote => 'AI 概括公司的業績公告，以及在網上找到的傳媒報道。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
 
   @override
   String get compareLastSurprise => '上季每股盈利 vs 預期';
@@ -6309,15 +5988,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get instrumentTitle => '關於此產品';
 
   @override
-  String get instrumentHint =>
-      '此代號沒有公司資料，可能是 ETF、基金或預託證券。問問 AI 它是甚麼、持有甚麼以及費用多少。';
+  String get instrumentHint => '此代號沒有公司資料，可能是 ETF、基金或預託證券。問問 AI 它是甚麼、持有甚麼以及費用多少。';
 
   @override
   String get instrumentAsk => '這是甚麼？';
 
   @override
-  String get instrumentNote =>
-      'AI 根據發行商的基金頁面以及在網上找到的財經網站作出解釋。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
+  String get instrumentNote => 'AI 根據發行商的基金頁面以及在網上找到的財經網站作出解釋。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
 
   @override
   String suggestAskAi(String query) {
@@ -6359,8 +6036,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get portfolioDividendDate => '派息日期';
 
   @override
-  String get portfolioDividendsEmpty =>
-      '尚未記錄任何股息。可手動新增，或匯入經紀商的匯出檔案，其中的股息記錄亦會被識別。';
+  String get portfolioDividendsEmpty => '尚未記錄任何股息。可手動新增，或匯入經紀商的匯出檔案，其中的股息記錄亦會被識別。';
 
   @override
   String get portfolioSplit => '股票分拆';
@@ -6392,23 +6068,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String portfolioSplitsImported(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '已新增 $count 項股票分拆',
-      one: '已新增 1 項股票分拆',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '已新增 $count 項股票分拆', one: '已新增 1 項股票分拆');
     return '$_temp0';
   }
 
   @override
   String portfolioDividendsImported(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '已新增 $count 筆股息',
-      one: '已新增 1 筆股息',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '已新增 $count 筆股息', one: '已新增 1 筆股息');
     return '$_temp0';
   }
 
@@ -6434,12 +6100,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String awayAlerts(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 個提示已觸發',
-      one: '1 個提示已觸發',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count 個提示已觸發', one: '1 個提示已觸發');
     return '$_temp0';
   }
 
@@ -6457,8 +6118,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   }
 
   @override
-  String get moveWhyNote =>
-      'AI 根據網上找到的今日新聞作出的解釋；真正原因可能未知或有所不同。不構成投資建議。會使用你的每日提問額度，而非分析。';
+  String get moveWhyNote => 'AI 根據網上找到的今日新聞作出的解釋；真正原因可能未知或有所不同。不構成投資建議。會使用你的每日提問額度，而非分析。';
 
   @override
   String get sectionTechnical => '技術面';
@@ -6507,12 +6167,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get glossSma200 => '最近200個交易日收市價的平均值——經典的長線趨勢線。不少投資者把價格高於此線視為長線上升趨勢。';
 
   @override
-  String get glossRsi =>
-      '相對強弱指數：以0至100的刻度比較近期升幅與近期跌幅。高於70通常稱為超買（升得太急），低於30稱為超賣——但強勁趨勢可能長時間停留在這些區域。';
+  String get glossRsi => '相對強弱指數：以0至100的刻度比較近期升幅與近期跌幅。高於70通常稱為超買（升得太急），低於30稱為超賣——但強勁趨勢可能長時間停留在這些區域。';
 
   @override
-  String get glossVolatility =>
-      '價格每日上落的幅度，按年折算：20%代表一般年份價格大約在±20%範圍內波動。波幅愈高，升跌幅度都愈大。';
+  String get glossVolatility => '價格每日上落的幅度，按年折算：20%代表一般年份價格大約在±20%範圍內波動。波幅愈高，升跌幅度都愈大。';
 
   @override
   String get techNote => '按每日收市價計算。技術訊號描述過去，而非未來。';
@@ -6545,8 +6203,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get signalAlertsTitle => '技術訊號通知';
 
   @override
-  String get signalAlertsSubtitle =>
-      '每日一次，當你關注的股票進入超賣或超買（RSI）狀態，或其價格穿越200日平均線時。';
+  String get signalAlertsSubtitle => '每日一次，當你關注的股票進入超賣或超買（RSI）狀態，或其價格穿越200日平均線時。';
 
   @override
   String get signalAlertsNotification => '技術訊號';

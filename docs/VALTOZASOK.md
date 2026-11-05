@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.316)
+# Változásjegyzék (0.2.130 → 0.2.317)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Adatvédelem a készüléken: fotók helyadata, naplók, bizonylatok
+
+- **0.2.317**: a felismerésre küldött fotóból kikerülnek a metaadatok. Eddig egy galériából választott (az
+  app által már kicsinyített) fotó EXIF-adatai – a készítés helye (GPS), ideje, a készülék – változatlanul
+  mentek a szerverre és az AI-hoz; most az ilyen kép újrakódolva megy, csak a képpel.
+- A kiadott változat nem ír hibakereső naplót a rendszernaplóba (benne a figyelt tickerekkel).
+- Egy függőben lévő bolti bizonylat a fiók e-mail címe helyett annak lenyomatát tárolja, és 60 nap után lejár
+  (a bolti „Vásárlások visszaállítása” pótolja).
+- A cég logója csak https-címről töltődik be.
+- A megosztott elemzés szövegében csak a forgatókönyvek pontjai vannak: az átlagárhoz mért pont akkor sem
+  kerülhet bele, ha a modell kevesebb pontot írt.
 
 ## Adatok életciklusa: mi marad, mi törlődik
 

@@ -293,8 +293,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get labelDividendGrowth5y => 'Rast dividendy (5 rokov)';
 
   @override
-  String get dividendNone =>
-      'Za posledných 12 mesiacov nebola vyplatená žiadna dividenda.';
+  String get dividendNone => 'Za posledných 12 mesiacov nebola vyplatená žiadna dividenda.';
 
   @override
   String get dividendOnYourShares => 'Na vaše akcie, ročne';
@@ -367,32 +366,26 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Služba rozpoznávania nedokázala tento obrázok spracovať.';
+  String get errRecognitionRefused => 'Služba rozpoznávania nedokázala tento obrázok spracovať.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Odpoveď služby rozpoznávania bola skrátená. Skúste to znova.';
+  String get errRecognitionTruncated => 'Odpoveď služby rozpoznávania bola skrátená. Skúste to znova.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Neočakávaná odpoveď služby rozpoznávania.';
+  String get errRecognitionBadResponse => 'Neočakávaná odpoveď služby rozpoznávania.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Služba rozpoznávania vrátila prázdnu odpoveď.';
+  String get errRecognitionEmpty => 'Služba rozpoznávania vrátila prázdnu odpoveď.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Trhové údaje nie sú v tejto verzii dostupné.';
+  String get errMissingFinnhubKey => 'Trhové údaje nie sú v tejto verzii dostupné.';
 
   @override
   String get errMarketUnreachable =>
       'Nepodarilo sa pripojiť k službe trhových údajov. Skontrolujte pripojenie na internet.';
 
   @override
-  String get errMarketRateLimited =>
-      'Príliš veľa požiadaviek na službu trhových údajov. Počkajte prosím minútu.';
+  String get errMarketRateLimited => 'Príliš veľa požiadaviek na službu trhových údajov. Počkajte prosím minútu.';
 
   @override
   String errMarketHttp(String status) {
@@ -400,8 +393,7 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Neočakávaná odpoveď služby trhových údajov.';
+  String get errMarketBadResponse => 'Neočakávaná odpoveď služby trhových údajov.';
 
   @override
   String errNoQuote(String symbol) {
@@ -501,8 +493,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get aiRegenerate => 'Vygenerovať znova';
 
   @override
-  String get aiGenerating =>
-      'Pripravujem analýzu… môže to trvať minútu či dve.';
+  String get aiGenerating => 'Pripravujem analýzu… môže to trvať minútu či dve.';
 
   @override
   String get aiSources => 'Zdroje';
@@ -520,8 +511,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get errAiNotConfigured => 'Funkcie AI nie sú v tejto verzii dostupné.';
 
   @override
-  String get errAiUnreachable =>
-      'Nepodarilo sa pripojiť k službe AI. Skontrolujte pripojenie na internet.';
+  String get errAiUnreachable => 'Nepodarilo sa pripojiť k službe AI. Skontrolujte pripojenie na internet.';
 
   @override
   String errAiHttp(String status) {
@@ -553,8 +543,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get rangeFiveYears => '5R';
 
   @override
-  String get chartUnavailable =>
-      'História cien nie je v aktuálnom zdroji údajov k dispozícii.';
+  String get chartUnavailable => 'História cien nie je v aktuálnom zdroji údajov k dispozícii.';
 
   @override
   String get sectionStatements => 'Finančné výkazy (ročné)';
@@ -581,8 +570,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get labelOperatingCashFlow => 'Prevádzkový peňažný tok';
 
   @override
-  String get statementsUnavailable =>
-      'Pre túto akciu nie sú k dispozícii vykázané finančné výkazy.';
+  String get statementsUnavailable => 'Pre túto akciu nie sú k dispozícii vykázané finančné výkazy.';
 
   @override
   String get launchAtLogin => 'Spustiť pri prihlásení';
@@ -591,8 +579,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get hotkeyLabel => 'Globálna skratka';
 
   @override
-  String get hotkeyRecordHint =>
-      'Kliknite sem a potom stlačte novú kombináciu klávesov';
+  String get hotkeyRecordHint => 'Kliknite sem a potom stlačte novú kombináciu klávesov';
 
   @override
   String get hotkeyReset => 'Obnoviť predvolené';
@@ -613,8 +600,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get removeFromFavorites => 'Odstrániť z obľúbených';
 
   @override
-  String get noFavorites =>
-      'Zatiaľ žiadne obľúbené. Ťuknite na hviezdičku pri akcii a pridajte ju.';
+  String get noFavorites => 'Zatiaľ žiadne obľúbené. Ťuknite na hviezdičku pri akcii a pridajte ju.';
 
   @override
   String get displayCurrency => 'Mena zobrazenia';
@@ -661,8 +647,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get updateDownloading => 'Aktualizácia sa sťahuje na pozadí…';
 
   @override
-  String get updateDownloaded =>
-      'Aktualizácia je pripravená. Reštartujte aplikáciu a nainštalujte ju.';
+  String get updateDownloaded => 'Aktualizácia je pripravená. Reštartujte aplikáciu a nainštalujte ju.';
 
   @override
   String get updateNow => 'Aktualizovať';
@@ -671,8 +656,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get restartNow => 'Reštartovať';
 
   @override
-  String get updatesViaStore =>
-      'Aktualizácie prichádzajú automaticky prostredníctvom obchodu s aplikáciami.';
+  String get updatesViaStore => 'Aktualizácie prichádzajú automaticky prostredníctvom obchodu s aplikáciami.';
 
   @override
   String get updateCheckFailed => 'Aktualizácie sa nepodarilo skontrolovať.';
@@ -736,8 +720,7 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Vaša bezplatná skúšobná verzia sa skončila. Vyberte si tarif a pokračujte v analýzach.';
+  String get trialExpired => 'Vaša bezplatná skúšobná verzia sa skončila. Vyberte si tarif a pokračujte v analýzach.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -776,8 +759,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get extraPacksTitle => 'Potrebujete viac? Kúpte si analýzy navyše';
 
   @override
-  String get extraPacksHint =>
-      'Analýzy navyše nikdy nevypršia a použijú sa po vyčerpaní mesačného limitu.';
+  String get extraPacksHint => 'Analýzy navyše nikdy nevypršia a použijú sa po vyčerpaní mesačného limitu.';
 
   @override
   String get buy => 'Kúpiť';
@@ -809,8 +791,7 @@ class AppLocalizationsSk extends AppLocalizations {
       'V tomto období vám nezostávajú žiadne analýzy. Prejdite na vyšší tarif alebo si kúpte analýzy navyše.';
 
   @override
-  String get errTrialExpired =>
-      'Vaša bezplatná skúšobná verzia sa skončila. Vyberte si tarif a pokračujte.';
+  String get errTrialExpired => 'Vaša bezplatná skúšobná verzia sa skončila. Vyberte si tarif a pokračujte.';
 
   @override
   String get errNoPlan => 'Na AI analýzu je potrebný aktívny tarif.';
@@ -822,8 +803,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get usageTitle => 'Využitie';
 
   @override
-  String get demoPurchaseNote =>
-      'Demo platby: nákupy sú na tejto platforme iba simulované.';
+  String get demoPurchaseNote => 'Demo platby: nákupy sú na tejto platforme iba simulované.';
 
   @override
   String get mostPopular => 'Najobľúbenejší';
@@ -863,8 +843,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get aiDepthStandardDesc => 'Úplná správa so všetkými časťami.';
 
   @override
-  String get aiDepthDeepDesc =>
-      'Viac vyhľadávaní na webe, porovnanie s konkurenciou a hlbšie detaily.';
+  String get aiDepthDeepDesc => 'Viac vyhľadávaní na webe, porovnanie s konkurenciou a hlbšie detaily.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -894,19 +873,16 @@ class AppLocalizationsSk extends AppLocalizations {
   String get aiReaderExperienced => 'Skúsený';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'Jednoduchý jazyk; každý odborný pojem je vysvetlený.';
+  String get aiReaderBeginnerDesc => 'Jednoduchý jazyk; každý odborný pojem je vysvetlený.';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'Hutnejší text so štandardnou finančnou terminológiou.';
+  String get aiReaderExperiencedDesc => 'Hutnejší text so štandardnou finančnou terminológiou.';
 
   @override
   String get aiCounterArgument => 'Najsilnejší protiargument';
 
   @override
-  String get aiCounterArgumentDesc =>
-      'Zhrnutie vždy končí najsilnejším argumentom proti vlastnému záveru.';
+  String get aiCounterArgumentDesc => 'Zhrnutie vždy končí najsilnejším argumentom proti vlastnému záveru.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -1005,8 +981,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get upcomingEvents => 'Nadchádzajúce udalosti';
 
   @override
-  String get outlookChartNote =>
-      'Orientačné rozpätia; pravdepodobnosti sú hrubé odhady, nie predpovede.';
+  String get outlookChartNote => 'Orientačné rozpätia; pravdepodobnosti sú hrubé odhady, nie predpovede.';
 
   @override
   String get accountTitle => 'Účet';
@@ -1021,12 +996,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get notSignedIn => 'Neprihlásený';
 
   @override
-  String get accountBenefit =>
-      'Prihláste sa, aby vaše predplatné fungovalo na všetkých vašich zariadeniach.';
+  String get accountBenefit => 'Prihláste sa, aby vaše predplatné fungovalo na všetkých vašich zariadeniach.';
 
   @override
-  String get accountSyncedNote =>
-      'Vaše predplatné a zostávajúce analýzy sú rovnaké na každom zariadení.';
+  String get accountSyncedNote => 'Vaše predplatné a zostávajúce analýzy sú rovnaké na každom zariadení.';
 
   @override
   String get signInTitle => 'Prihlásenie do WhatStock';
@@ -1058,16 +1031,14 @@ class AppLocalizationsSk extends AppLocalizations {
   String get errInvalidEmail => 'Zadajte platnú e-mailovú adresu.';
 
   @override
-  String get errSignInFailed =>
-      'Prihlásenie zlyhalo. Skontrolujte pripojenie na internet a skúste to znova.';
+  String get errSignInFailed => 'Prihlásenie zlyhalo. Skontrolujte pripojenie na internet a skúste to znova.';
 
   @override
   String get checkoutWaiting =>
       'Dokončite platbu v prehliadači. Aplikácia sa po jej dokončení automaticky aktualizuje.';
 
   @override
-  String get paymentViaStripe =>
-      'Bezpečná platba v prehliadači cez Stripe. Zrušiť môžete kedykoľvek.';
+  String get paymentViaStripe => 'Bezpečná platba v prehliadači cez Stripe. Zrušiť môžete kedykoľvek.';
 
   @override
   String get paymentViaStore =>
@@ -1080,8 +1051,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get doubleOptionTitle => 'Dvojité stlačenie Option';
 
   @override
-  String get doubleOptionSubtitle =>
-      'WhatStock vyvoláte aj rýchlym dvojitým stlačením klávesu Option.';
+  String get doubleOptionSubtitle => 'WhatStock vyvoláte aj rýchlym dvojitým stlačením klávesu Option.';
 
   @override
   String get doubleOptionPermission =>
@@ -1216,8 +1186,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get portfolioRemove => 'Odstrániť';
 
   @override
-  String get portfolioExcluded =>
-      'Pozície bez ceny alebo výmenného kurzu nie sú zahrnuté v súčtoch.';
+  String get portfolioExcluded => 'Pozície bez ceny alebo výmenného kurzu nie sú zahrnuté v súčtoch.';
 
   @override
   String get priceAlerts => 'Cenové upozornenia';
@@ -1259,8 +1228,7 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty =>
-      'Zatiaľ žiadne upozornenia. Otvorte akciu a ťuknite na zvonček.';
+  String get alertsEmpty => 'Zatiaľ žiadne upozornenia. Otvorte akciu a ťuknite na zvonček.';
 
   @override
   String get alertsNote =>
@@ -1353,8 +1321,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get accountDeleted => 'Váš účet bol odstránený.';
 
   @override
-  String get errDeleteAccount =>
-      'Účet sa nepodarilo odstrániť. Skontrolujte pripojenie a skúste to znova.';
+  String get errDeleteAccount => 'Účet sa nepodarilo odstrániť. Skontrolujte pripojenie a skúste to znova.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1391,8 +1358,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get inviteTitle => 'Uzavretá ukážka';
 
   @override
-  String get inviteBody =>
-      'WhatStock je zatiaľ dostupný iba na pozvanie. Zadajte kód pozvánky, ktorý ste dostali.';
+  String get inviteBody => 'WhatStock je zatiaľ dostupný iba na pozvanie. Zadajte kód pozvánky, ktorý ste dostali.';
 
   @override
   String get inviteCodeLabel => 'Kód pozvánky';
@@ -1404,19 +1370,16 @@ class AppLocalizationsSk extends AppLocalizations {
   String get inviteInvalid => 'Tento kód pozvánky nie je platný.';
 
   @override
-  String get inviteExpired =>
-      'Platnosť tejto pozvánky vypršala. Požiadajte osobu, ktorá vás pozvala, o nový kód.';
+  String get inviteExpired => 'Platnosť tejto pozvánky vypršala. Požiadajte osobu, ktorá vás pozvala, o nový kód.';
 
   @override
-  String get inviteDeviceLimit =>
-      'Tento kód pozvánky sa už používa na maximálnom počte zariadení.';
+  String get inviteDeviceLimit => 'Tento kód pozvánky sa už používa na maximálnom počte zariadení.';
 
   @override
   String get previewConfidential => 'Dôverná ukážka';
 
   @override
-  String get errPreviewDailyLimit =>
-      'Dnešný limit analýz tejto ukážky bol vyčerpaný. Skúste to znova zajtra.';
+  String get errPreviewDailyLimit => 'Dnešný limit analýz tejto ukážky bol vyčerpaný. Skúste to znova zajtra.';
 
   @override
   String ageHours(int count) {
@@ -1475,8 +1438,7 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint =>
-      'Ťuknite na úroveň odhadnutú AI a dostanete upozornenie, keď ju cena dosiahne.';
+  String get keyLevelAlertHint => 'Ťuknite na úroveň odhadnutú AI a dostanete upozornenie, keď ju cena dosiahne.';
 
   @override
   String get shareAnalysisTitle => 'Zdieľať analýzu';
@@ -1491,8 +1453,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get shareCardFooter => 'Vytvorené pomocou WhatStock';
 
   @override
-  String get shareCardDisclaimer =>
-      'AI analýza · ilustratívne scenáre, nie prognózy · nie je investičné odporúčanie';
+  String get shareCardDisclaimer => 'AI analýza · ilustratívne scenáre, nie prognózy · nie je investičné odporúčanie';
 
   @override
   String get referralTitle => 'Pozvi priateľov';
@@ -1538,15 +1499,13 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown =>
-      'Tento kód neexistuje. Skontroluj ho a skús to znova.';
+  String get referralErrUnknown => 'Tento kód neexistuje. Skontroluj ho a skús to znova.';
 
   @override
   String get referralErrOwn => 'Nemôžeš uplatniť vlastný kód.';
 
   @override
-  String get referralErrAlready =>
-      'Na tomto účte už bol uplatnený kód od priateľa.';
+  String get referralErrAlready => 'Na tomto účte už bol uplatnený kód od priateľa.';
 
   @override
   String referralShareText(String code, int count) {
@@ -1663,8 +1622,7 @@ class AppLocalizationsSk extends AppLocalizations {
       'To bola posledná otázka k tejto analýze. Ak sa chcete pýtať ďalej, vygenerujte novú analýzu.';
 
   @override
-  String get errAskLimit =>
-      'Dosiahli ste dnešný limit otázok. Skúste to znova zajtra.';
+  String get errAskLimit => 'Dosiahli ste dnešný limit otázok. Skúste to znova zajtra.';
 
   @override
   String get eventTomorrow => 'Zajtra';
@@ -1703,8 +1661,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get eventDividend => 'Očakávaná dividenda';
 
   @override
-  String get eventDividendEstimate =>
-      'Odhad podľa výplat, ktoré ste zaznamenali';
+  String get eventDividendEstimate => 'Odhad podľa výplat, ktoré ste zaznamenali';
 
   @override
   String get eventsHint =>
@@ -1763,8 +1720,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get notesTitle => 'Moje poznámky';
 
   @override
-  String get notesHint =>
-      'Prečo ste ju kúpili, čo sledujete, čo by vás prinútilo predať?';
+  String get notesHint => 'Prečo ste ju kúpili, čo sledujete, čo by vás prinútilo predať?';
 
   @override
   String get notesInfo =>
@@ -1830,8 +1786,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get syncNow => 'Synchronizovať teraz';
 
   @override
-  String get syncFailed =>
-      'Synchronizácia zlyhala. Automaticky sa skúsi znova.';
+  String get syncFailed => 'Synchronizácia zlyhala. Automaticky sa skúsi znova.';
 
   @override
   String get alertEmailTitle => 'E-mail pri spustení upozornenia';
@@ -1960,8 +1915,7 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'Koľko je celá firma hodná na burze: cena akcie × počet akcií.';
+  String get glossMarketCap => 'Koľko je celá firma hodná na burze: cena akcie × počet akcií.';
 
   @override
   String get glossSharesOutstanding =>
@@ -2000,8 +1954,7 @@ class AppLocalizationsSk extends AppLocalizations {
       'Nakoľko sa akcia hýbe spolu s trhom: 1 = ako trh, 1,5 = asi o 50 % väčšie výkyvy, pod 1 = pokojnejšia.';
 
   @override
-  String get glossRevenueTtm =>
-      'Celkové predaje za posledných 12 mesiacov pred odpočítaním akýchkoľvek nákladov.';
+  String get glossRevenueTtm => 'Celkové predaje za posledných 12 mesiacov pred odpočítaním akýchkoľvek nákladov.';
 
   @override
   String get glossNetIncomeTtm =>
@@ -2036,20 +1989,17 @@ class AppLocalizationsSk extends AppLocalizations {
       'Krátkodobý majetok ÷ účty splatné do jedného roka. Nad 1 znamená, že firma dokáže pokryť svoje blízke záväzky.';
 
   @override
-  String get glossRevenueGrowth =>
-      'O koľko vzrástli tržby v porovnaní s minulým rokom.';
+  String get glossRevenueGrowth => 'O koľko vzrástli tržby v porovnaní s minulým rokom.';
 
   @override
-  String get glossEpsGrowth =>
-      'O koľko vzrástol zisk na akciu v porovnaní s minulým rokom.';
+  String get glossEpsGrowth => 'O koľko vzrástol zisk na akciu v porovnaní s minulým rokom.';
 
   @override
   String get glossDividendYield =>
       'Ročná dividenda ÷ cena akcie: hotovostný príjem za rok v percentách z toho, čo zaplatíte.';
 
   @override
-  String get glossDividendPerShare =>
-      'Dividenda vyplatená na jednu akciu za posledný rok.';
+  String get glossDividendPerShare => 'Dividenda vyplatená na jednu akciu za posledný rok.';
 
   @override
   String get glossPayoutRatio =>
@@ -2147,8 +2097,7 @@ class AppLocalizationsSk extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'Na úrovni očakávaného EPS alebo nad ním v $beats z posledných $total štvrťrokov',
+      other: 'Na úrovni očakávaného EPS alebo nad ním v $beats z posledných $total štvrťrokov',
       one: 'Na úrovni očakávaného EPS alebo nad ním v $beats z 1 štvrťroka',
     );
     return '$_temp0';
@@ -2307,8 +2256,7 @@ class AppLocalizationsSk extends AppLocalizations {
       'Nákupy a predaje na otvorenom trhu vykonané manažérmi a členmi predstavenstva za posledných 90 dní (SEC Form 4). Uplatnenie opcií a pridelené akcie sa nezapočítavajú.';
 
   @override
-  String get insiderNone =>
-      'Za posledných 90 dní žiadne nákupy ani predaje insiderov na otvorenom trhu.';
+  String get insiderNone => 'Za posledných 90 dní žiadne nákupy ani predaje insiderov na otvorenom trhu.';
 
   @override
   String get analystTrend => 'Ako sa názory menili mesiac po mesiaci';
@@ -2351,8 +2299,7 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'Skopírované do schránky – vložte to tam, kde to chcete zdieľať.';
+  String get sharedToClipboard => 'Skopírované do schránky – vložte to tam, kde to chcete zdieľať.';
 
   @override
   String get glossaryNoMatch => 'Vyhľadávaniu nezodpovedajú žiadne pojmy.';
@@ -2374,16 +2321,13 @@ class AppLocalizationsSk extends AppLocalizations {
       'Tento účet bol odstránený v inom zariadení alebo na webe, preto sa jeho údaje odstránili aj z tohto zariadenia.';
 
   @override
-  String get errAiUnavailable =>
-      'Služba AI momentálne nie je dostupná. Skúste to znova o niekoľko minút.';
+  String get errAiUnavailable => 'Služba AI momentálne nie je dostupná. Skúste to znova o niekoľko minút.';
 
   @override
-  String get errMarketUnavailable =>
-      'Trhové údaje momentálne nie sú dostupné. Skúste to znova o niekoľko minút.';
+  String get errMarketUnavailable => 'Trhové údaje momentálne nie sú dostupné. Skúste to znova o niekoľko minút.';
 
   @override
-  String get purchaseUnavailable =>
-      'Nákupy momentálne nie sú dostupné. Skúste to znova neskôr.';
+  String get purchaseUnavailable => 'Nákupy momentálne nie sú dostupné. Skúste to znova neskôr.';
 
   @override
   String get signOutLocalOnly =>
@@ -2402,15 +2346,13 @@ class AppLocalizationsSk extends AppLocalizations {
   String get backupSave => 'Uložiť zálohu';
 
   @override
-  String get backupSaveHint =>
-      'Vaše obľúbené, zoznamy, portfólio, upozornenia a poznámky v jednom súbore.';
+  String get backupSaveHint => 'Vaše obľúbené, zoznamy, portfólio, upozornenia a poznámky v jednom súbore.';
 
   @override
   String get backupRestore => 'Obnoviť zo zálohy';
 
   @override
-  String get backupRestoreHint =>
-      'Pridá to, čo je v súbore; nič z toho, čo máte teraz, sa nevymaže.';
+  String get backupRestoreHint => 'Pridá to, čo je v súbore; nič z toho, čo máte teraz, sa nevymaže.';
 
   @override
   String get backupRestored => 'Záloha bola obnovená.';
@@ -2531,8 +2473,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Upozornenie na portfólio';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'Upozornenie, keď sa celé tvoje portfólio za deň pohne o toľko.';
+  String get portfolioMoveAlertSubtitle => 'Upozornenie, keď sa celé tvoje portfólio za deň pohne o toľko.';
 
   @override
   String get portfolioMoveAlertOff => 'Vypnuté';
@@ -2825,12 +2766,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get lotNoteAdd => 'Pridať poznámku';
 
   @override
-  String get lotNoteBuyHint =>
-      'Prečo kupujete? Uloží sa do poznámok k akcii aj s dátumom.';
+  String get lotNoteBuyHint => 'Prečo kupujete? Uloží sa do poznámok k akcii aj s dátumom.';
 
   @override
-  String get lotNoteSellHint =>
-      'Prečo predávate? Uloží sa do poznámok k akcii aj s dátumom.';
+  String get lotNoteSellHint => 'Prečo predávate? Uloží sa do poznámok k akcii aj s dátumom.';
 
   @override
   String get lotNoteBought => 'Kúpené';
@@ -2950,12 +2889,10 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'Ak chceš uplatniť kód od priateľa, prihlás sa e-mailom.';
+  String get referralErrSignIn => 'Ak chceš uplatniť kód od priateľa, prihlás sa e-mailom.';
 
   @override
-  String get referralErrFull =>
-      'Tento kód už dosiahol maximálny počet uplatnení.';
+  String get referralErrFull => 'Tento kód už dosiahol maximálny počet uplatnení.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2967,12 +2904,10 @@ class AppLocalizationsSk extends AppLocalizations {
       'Analýza bola prerušená skôr, ako sa dokončila. Skúste to znova – do limitu sa nezapočítala.';
 
   @override
-  String get errImageUnsupported =>
-      'Tento obrázok sa nedá prečítať. Uložte ho ako JPEG alebo PNG a skúste to znova.';
+  String get errImageUnsupported => 'Tento obrázok sa nedá prečítať. Uložte ho ako JPEG alebo PNG a skúste to znova.';
 
   @override
-  String get errRateLimited =>
-      'Príliš veľa požiadaviek v krátkom čase. Počkajte prosím minútu a skúste to znova.';
+  String get errRateLimited => 'Príliš veľa požiadaviek v krátkom čase. Počkajte prosím minútu a skúste to znova.';
 
   @override
   String get watchListNameTaken => 'Zoznam s týmto názvom už existuje.';
@@ -2988,8 +2923,7 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing =>
-      'Nenašli sa žiadne predchádzajúce nákupy na obnovenie.';
+  String get restoreNothing => 'Nenašli sa žiadne predchádzajúce nákupy na obnovenie.';
 
   @override
   String get manageSubscriptionElsewhere =>
@@ -3016,10 +2950,8 @@ class AppLocalizationsSk extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'Dividendy v $currencies bez výmenného kurzu nie sú zahrnuté v súčtoch (počet: $count).',
-      one:
-          '1 dividenda v $currencies nemá výmenný kurz a nie je zahrnutá v súčtoch.',
+      other: 'Dividendy v $currencies bez výmenného kurzu nie sú zahrnuté v súčtoch (počet: $count).',
+      one: '1 dividenda v $currencies nemá výmenný kurz a nie je zahrnutá v súčtoch.',
     );
     return '$_temp0';
   }
@@ -3039,8 +2971,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get signOutAnyway => 'Aj tak sa odhlásiť';
 
   @override
-  String get fileTooLarge =>
-      'Tento súbor je príliš veľký, aby sa dal tu otvoriť.';
+  String get fileTooLarge => 'Tento súbor je príliš veľký, aby sa dal tu otvoriť.';
 
   @override
   String portfolioAnnualSummaryYear(String year) {
@@ -3293,8 +3224,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get portfolioSplitRatio => 'Pomer (nové : staré)';
 
   @override
-  String get portfolioSplitRatioError =>
-      'Zadajte pomer ako 10:1, alebo 1:10 pre reverzné štiepenie.';
+  String get portfolioSplitRatioError => 'Zadajte pomer ako 10:1, alebo 1:10 pre reverzné štiepenie.';
 
   @override
   String get portfolioSplitDate => 'Dátum štiepenia';
@@ -3416,12 +3346,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get techNeutral => 'neutrálne';
 
   @override
-  String get techGoldenCross =>
-      '50-dňový priemer je nad 200-dňovým – podľa klasického výkladu rastúci trend.';
+  String get techGoldenCross => '50-dňový priemer je nad 200-dňovým – podľa klasického výkladu rastúci trend.';
 
   @override
-  String get techDeathCross =>
-      '50-dňový priemer je pod 200-dňovým – podľa klasického výkladu klesajúci trend.';
+  String get techDeathCross => '50-dňový priemer je pod 200-dňovým – podľa klasického výkladu klesajúci trend.';
 
   @override
   String get glossSma50 =>
@@ -3440,8 +3368,7 @@ class AppLocalizationsSk extends AppLocalizations {
       'Ako veľmi cena kolíše zo dňa na deň, prepočítané na rok: 20 % znamená, že v bežnom roku sa pohybuje približne v rozpätí ±20 %. Vyššia volatilita znamená väčšie pohyby oboma smermi.';
 
   @override
-  String get techNote =>
-      'Vypočítané z denných záverečných cien. Technické signály opisujú minulosť, nie budúcnosť.';
+  String get techNote => 'Vypočítané z denných záverečných cien. Technické signály opisujú minulosť, nie budúcnosť.';
 
   @override
   String portfolioAbove200(int above, int count) {
@@ -3481,8 +3408,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get glossaryPageTitle => 'Slovník pojmov';
 
   @override
-  String get glossaryPageSubtitle =>
-      'Jednoduché vysvetlenia každého čísla v aplikácii, od P/E po RSI';
+  String get glossaryPageSubtitle => 'Jednoduché vysvetlenia každého čísla v aplikácii, od P/E po RSI';
 
   @override
   String get glossarySearchHint => 'Hľadať v slovníku';

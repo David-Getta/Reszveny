@@ -13,8 +13,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline =>
-      'Акцияны сүрөткө тартып, ал тууралуу баарын билиңиз.';
+  String get homeTagline => 'Акцияны сүрөткө тартып, ал тууралуу баарын билиңиз.';
 
   @override
   String get homeHint =>
@@ -319,12 +318,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count аналитик',
-      one: '1 аналитик',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count аналитик', one: '1 аналитик');
     return '$_temp0';
   }
 
@@ -352,8 +346,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get recognitionRawText => 'Сүрөттөн окулган текст';
 
   @override
-  String get errMissingAnthropicKey =>
-      'Бул версияда сүрөт таануу жеткиликсиз. Анын ордуна тикерди киргизиңиз.';
+  String get errMissingAnthropicKey => 'Бул версияда сүрөт таануу жеткиликсиз. Анын ордуна тикерди киргизиңиз.';
 
   @override
   String get errRecognitionUnreachable =>
@@ -365,23 +358,19 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Таануу кызматы бул сүрөттү иштете алган жок.';
+  String get errRecognitionRefused => 'Таануу кызматы бул сүрөттү иштете алган жок.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Таануу кызматынын жообу толук келген жок. Кайра аракет кылыңыз.';
+  String get errRecognitionTruncated => 'Таануу кызматынын жообу толук келген жок. Кайра аракет кылыңыз.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Таануу кызматынан күтүлбөгөн жооп келди.';
+  String get errRecognitionBadResponse => 'Таануу кызматынан күтүлбөгөн жооп келди.';
 
   @override
   String get errRecognitionEmpty => 'Таануу кызматы бош жооп кайтарды.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Бул версияда рыноктук маалыматтар жеткиликсиз.';
+  String get errMissingFinnhubKey => 'Бул версияда рыноктук маалыматтар жеткиликсиз.';
 
   @override
   String get errMarketUnreachable =>
@@ -397,8 +386,7 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Рыноктук маалымат кызматынан күтүлбөгөн жооп келди.';
+  String get errMarketBadResponse => 'Рыноктук маалымат кызматынан күтүлбөгөн жооп келди.';
 
   @override
   String errNoQuote(String symbol) {
@@ -498,8 +486,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get aiRegenerate => 'Кайра түзүү';
 
   @override
-  String get aiGenerating =>
-      'Талдоо даярдалууда… бул бир-эки мүнөткө созулушу мүмкүн.';
+  String get aiGenerating => 'Талдоо даярдалууда… бул бир-эки мүнөткө созулушу мүмкүн.';
 
   @override
   String get aiSources => 'Булактар';
@@ -517,8 +504,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get errAiNotConfigured => 'Бул версияда AI функциялары жеткиликсиз.';
 
   @override
-  String get errAiUnreachable =>
-      'AI кызматына туташуу мүмкүн болгон жок. Интернет байланышыңызды текшериңиз.';
+  String get errAiUnreachable => 'AI кызматына туташуу мүмкүн болгон жок. Интернет байланышыңызды текшериңиз.';
 
   @override
   String errAiHttp(String status) {
@@ -550,8 +536,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get rangeFiveYears => '5 жыл';
 
   @override
-  String get chartUnavailable =>
-      'Учурдагы маалымат булагында баа тарыхы жеткиликсиз.';
+  String get chartUnavailable => 'Учурдагы маалымат булагында баа тарыхы жеткиликсиз.';
 
   @override
   String get sectionStatements => 'Каржылык отчеттуулук (жылдык)';
@@ -578,8 +563,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get labelOperatingCashFlow => 'Операциялык акча агымы';
 
   @override
-  String get statementsUnavailable =>
-      'Бул акция үчүн жарыяланган каржылык отчеттор жеткиликсиз.';
+  String get statementsUnavailable => 'Бул акция үчүн жарыяланган каржылык отчеттор жеткиликсиз.';
 
   @override
   String get launchAtLogin => 'Системага киргенде иштетүү';
@@ -588,8 +572,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get hotkeyLabel => 'Глобалдык ыкчам баскыч';
 
   @override
-  String get hotkeyRecordHint =>
-      'Бул жерди басып, андан кийин жаңы баскычтар айкалышын басыңыз';
+  String get hotkeyRecordHint => 'Бул жерди басып, андан кийин жаңы баскычтар айкалышын басыңыз';
 
   @override
   String get hotkeyReset => 'Демейкиге кайтаруу';
@@ -610,8 +593,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get removeFromFavorites => 'Тандалмалардан өчүрүү';
 
   @override
-  String get noFavorites =>
-      'Азырынча тандалмалар жок. Кошуу үчүн акциянын жылдызчасын басыңыз.';
+  String get noFavorites => 'Азырынча тандалмалар жок. Кошуу үчүн акциянын жылдызчасын басыңыз.';
 
   @override
   String get displayCurrency => 'Көрсөтүү валютасы';
@@ -658,8 +640,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get updateDownloading => 'Жаңыртуу фондо жүктөлүүдө…';
 
   @override
-  String get updateDownloaded =>
-      'Жаңыртуу даяр. Орнотуу үчүн колдонмону кайра иштетиңиз.';
+  String get updateDownloaded => 'Жаңыртуу даяр. Орнотуу үчүн колдонмону кайра иштетиңиз.';
 
   @override
   String get updateNow => 'Жаңыртуу';
@@ -668,8 +649,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get restartNow => 'Кайра иштетүү';
 
   @override
-  String get updatesViaStore =>
-      'Жаңыртуулар колдонмолор дүкөнү аркылуу автоматтык түрдө келет.';
+  String get updatesViaStore => 'Жаңыртуулар колдонмолор дүкөнү аркылуу автоматтык түрдө келет.';
 
   @override
   String get updateCheckFailed => 'Жаңыртууларды текшерүү мүмкүн болгон жок.';
@@ -717,8 +697,7 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Акысыз сыноо мөөнөтүңүз бүттү. Талдоону улантуу үчүн тариф тандаңыз.';
+  String get trialExpired => 'Акысыз сыноо мөөнөтүңүз бүттү. Талдоону улантуу үчүн тариф тандаңыз.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -790,8 +769,7 @@ class AppLocalizationsKy extends AppLocalizations {
       'Бул мезгилге талдооңуз калган жок. Тарифиңизди жогорулатыңыз же кошумча талдоо сатып алыңыз.';
 
   @override
-  String get errTrialExpired =>
-      'Акысыз сыноо мөөнөтүңүз бүттү. Улантуу үчүн тариф тандаңыз.';
+  String get errTrialExpired => 'Акысыз сыноо мөөнөтүңүз бүттү. Улантуу үчүн тариф тандаңыз.';
 
   @override
   String get errNoPlan => 'AI талдоосу үчүн активдүү тариф керек.';
@@ -803,8 +781,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get usageTitle => 'Колдонуу';
 
   @override
-  String get demoPurchaseNote =>
-      'Демо төлөм: бул платформада сатып алуулар симуляцияланат.';
+  String get demoPurchaseNote => 'Демо төлөм: бул платформада сатып алуулар симуляцияланат.';
 
   @override
   String get mostPopular => 'Эң популярдуу';
@@ -844,8 +821,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get aiDepthStandardDesc => 'Бардык бөлүмдөрү бар толук отчет.';
 
   @override
-  String get aiDepthDeepDesc =>
-      'Көбүрөөк веб-издөө, атаандаштар менен салыштыруу жана тереңирээк талдоо.';
+  String get aiDepthDeepDesc => 'Көбүрөөк веб-издөө, атаандаштар менен салыштыруу жана тереңирээк талдоо.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -873,12 +849,10 @@ class AppLocalizationsKy extends AppLocalizations {
   String get aiReaderExperienced => 'Тажрыйбалуу';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'Жөнөкөй тил; ар бир адистик термин түшүндүрүлөт.';
+  String get aiReaderBeginnerDesc => 'Жөнөкөй тил; ар бир адистик термин түшүндүрүлөт.';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'Стандарттуу каржылык терминология менен жыш текст.';
+  String get aiReaderExperiencedDesc => 'Стандарттуу каржылык терминология менен жыш текст.';
 
   @override
   String get aiCounterArgument => 'Эң күчтүү каршы аргумент';
@@ -978,8 +952,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get upcomingEvents => 'Алдыдагы окуялар';
 
   @override
-  String get outlookChartNote =>
-      'Шарттуу диапазондор; ыктымалдыктар – болжолдуу баалоолор, божомол эмес.';
+  String get outlookChartNote => 'Шарттуу диапазондор; ыктымалдыктар – болжолдуу баалоолор, божомол эмес.';
 
   @override
   String get accountTitle => 'Аккаунт';
@@ -994,12 +967,10 @@ class AppLocalizationsKy extends AppLocalizations {
   String get notSignedIn => 'Кире элексиз';
 
   @override
-  String get accountBenefit =>
-      'Жазылууңуз бардык түзмөктөрүңүздө иштеши үчүн кириңиз.';
+  String get accountBenefit => 'Жазылууңуз бардык түзмөктөрүңүздө иштеши үчүн кириңиз.';
 
   @override
-  String get accountSyncedNote =>
-      'Жазылууңуз жана калган талдоолоруңуз бардык түзмөктө бирдей.';
+  String get accountSyncedNote => 'Жазылууңуз жана калган талдоолоруңуз бардык түзмөктө бирдей.';
 
   @override
   String get signInTitle => 'WhatStock аккаунтуна кирүү';
@@ -1028,20 +999,16 @@ class AppLocalizationsKy extends AppLocalizations {
   String get errInvalidCode => 'Код туура эмес же мөөнөтү бүткөн.';
 
   @override
-  String get errInvalidEmail =>
-      'Жарактуу электрондук почта дарегин киргизиңиз.';
+  String get errInvalidEmail => 'Жарактуу электрондук почта дарегин киргизиңиз.';
 
   @override
-  String get errSignInFailed =>
-      'Кирүү ишке ашкан жок. Байланышыңызды текшерип, кайра аракет кылыңыз.';
+  String get errSignInFailed => 'Кирүү ишке ашкан жок. Байланышыңызды текшерип, кайра аракет кылыңыз.';
 
   @override
-  String get checkoutWaiting =>
-      'Төлөмдү браузериңизде аяктаңыз. Бүткөндөн кийин колдонмо автоматтык түрдө жаңыланат.';
+  String get checkoutWaiting => 'Төлөмдү браузериңизде аяктаңыз. Бүткөндөн кийин колдонмо автоматтык түрдө жаңыланат.';
 
   @override
-  String get paymentViaStripe =>
-      'Stripe аркылуу браузерде коопсуз төлөм. Каалаган убакта жокко чыгарсаңыз болот.';
+  String get paymentViaStripe => 'Stripe аркылуу браузерде коопсуз төлөм. Каалаган убакта жокко чыгарсаңыз болот.';
 
   @override
   String get paymentViaStore =>
@@ -1054,8 +1021,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get doubleOptionTitle => 'Option баскычын эки жолу басуу';
 
   @override
-  String get doubleOptionSubtitle =>
-      'Option баскычын тез эки жолу басуу да WhatStock колдонмосун чакырат.';
+  String get doubleOptionSubtitle => 'Option баскычын тез эки жолу басуу да WhatStock колдонмосун чакырат.';
 
   @override
   String get doubleOptionPermission =>
@@ -1077,12 +1043,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '$years жыл',
-      one: '1 жыл',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years жыл', one: '1 жыл');
     return '$_temp0';
   }
 
@@ -1188,8 +1149,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get portfolioRemove => 'Өчүрүү';
 
   @override
-  String get portfolioExcluded =>
-      'Баасы же алмашуу курсу жок позициялар жыйынтыкка кирбейт.';
+  String get portfolioExcluded => 'Баасы же алмашуу курсу жок позициялар жыйынтыкка кирбейт.';
 
   @override
   String get priceAlerts => 'Баа эскертмелери';
@@ -1231,8 +1191,7 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty =>
-      'Азырынча баа эскертмелери жок. Эскертме коюу үчүн акцияны ачып, коңгуроону басыңыз.';
+  String get alertsEmpty => 'Азырынча баа эскертмелери жок. Эскертме коюу үчүн акцияны ачып, коңгуроону басыңыз.';
 
   @override
   String get alertsNote =>
@@ -1325,8 +1284,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get accountDeleted => 'Аккаунтуңуз өчүрүлдү.';
 
   @override
-  String get errDeleteAccount =>
-      'Аккаунтту өчүрүү мүмкүн болгон жок. Байланышыңызды текшерип, кайра аракет кылыңыз.';
+  String get errDeleteAccount => 'Аккаунтту өчүрүү мүмкүн болгон жок. Байланышыңызды текшерип, кайра аракет кылыңыз.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1363,8 +1321,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get inviteTitle => 'Жабык алдын ала көрүү';
 
   @override
-  String get inviteBody =>
-      'Азырынча WhatStock чакыруу менен гана жеткиликтүү. Алган чакыруу кодуңузду киргизиңиз.';
+  String get inviteBody => 'Азырынча WhatStock чакыруу менен гана жеткиликтүү. Алган чакыруу кодуңузду киргизиңиз.';
 
   @override
   String get inviteCodeLabel => 'Чакыруу коду';
@@ -1376,39 +1333,26 @@ class AppLocalizationsKy extends AppLocalizations {
   String get inviteInvalid => 'Бул чакыруу коду жараксыз.';
 
   @override
-  String get inviteExpired =>
-      'Бул чакыруунун мөөнөтү бүткөн. Сизди чакырган адамдан жаңы код сураңыз.';
+  String get inviteExpired => 'Бул чакыруунун мөөнөтү бүткөн. Сизди чакырган адамдан жаңы код сураңыз.';
 
   @override
-  String get inviteDeviceLimit =>
-      'Бул чакыруу коду уруксат берилген эң көп түзмөктө колдонулуп жатат.';
+  String get inviteDeviceLimit => 'Бул чакыруу коду уруксат берилген эң көп түзмөктө колдонулуп жатат.';
 
   @override
   String get previewConfidential => 'Купуя алдын ала көрүү';
 
   @override
-  String get errPreviewDailyLimit =>
-      'Бул алдын ала көрүүнүн бүгүнкү талдоо чеги түгөндү. Эртең кайра аракет кылыңыз.';
+  String get errPreviewDailyLimit => 'Бул алдын ала көрүүнүн бүгүнкү талдоо чеги түгөндү. Эртең кайра аракет кылыңыз.';
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count саат мурун',
-      one: '1 саат мурун',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count саат мурун', one: '1 саат мурун');
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count күн мурун',
-      one: '1 күн мурун',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count күн мурун', one: '1 күн мурун');
     return '$_temp0';
   }
 
@@ -1443,8 +1387,7 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint =>
-      'Баа деңгээлге жеткенде эскертме алуу үчүн AI болжолдогон деңгээлди басыңыз.';
+  String get keyLevelAlertHint => 'Баа деңгээлге жеткенде эскертме алуу үчүн AI болжолдогон деңгээлди басыңыз.';
 
   @override
   String get shareAnalysisTitle => 'Талдоо менен бөлүшүү';
@@ -1502,8 +1445,7 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown =>
-      'Мындай код жок. Текшерип, кайра аракет кылыңыз.';
+  String get referralErrUnknown => 'Мындай код жок. Текшерип, кайра аракет кылыңыз.';
 
   @override
   String get referralErrOwn => 'Өз кодуңузду колдоно албайсыз.';
@@ -1583,8 +1525,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get telemetryDecline => 'Жок, рахмат';
 
   @override
-  String get telemetrySetting =>
-      'Анонимдүү статистика жана бузулуу тууралуу кабарлар';
+  String get telemetrySetting => 'Анонимдүү статистика жана бузулуу тууралуу кабарлар';
 
   @override
   String get telemetrySettingHint =>
@@ -1621,24 +1562,17 @@ class AppLocalizationsKy extends AppLocalizations {
   String get askSuggest3 => 'Жөнөкөй тил менен түшүндүрүп бер';
 
   @override
-  String get askMaxReached =>
-      'Бул талдоо боюнча акыркы суроо ушул эле. Дагы суроо берүү үчүн жаңы талдоо түзүңүз.';
+  String get askMaxReached => 'Бул талдоо боюнча акыркы суроо ушул эле. Дагы суроо берүү үчүн жаңы талдоо түзүңүз.';
 
   @override
-  String get errAskLimit =>
-      'Бүгүнкү суроолор чегине жеттиңиз. Эртең кайра аракет кылыңыз.';
+  String get errAskLimit => 'Бүгүнкү суроолор чегине жеттиңиз. Эртең кайра аракет кылыңыз.';
 
   @override
   String get eventTomorrow => 'Эртең';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days күндөн кийин',
-      one: '1 күндөн кийин',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days күндөн кийин', one: '1 күндөн кийин');
     return '$_temp0';
   }
 
@@ -1722,8 +1656,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get notesTitle => 'Менин жазууларым';
 
   @override
-  String get notesHint =>
-      'Эмне үчүн сатып алдыңыз, эмнени көзөмөлдөп жатасыз, эмне болсо сатасыз?';
+  String get notesHint => 'Эмне үчүн сатып алдыңыз, эмнени көзөмөлдөп жатасыз, эмне болсо сатасыз?';
 
   @override
   String get notesInfo =>
@@ -1773,8 +1706,7 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get syncInfo =>
-      'Портфель, тандалмалар, баа эскертмелери жана жазуулар бардык түзмөктөрүңүздө шайкештирилет.';
+  String get syncInfo => 'Портфель, тандалмалар, баа эскертмелери жана жазуулар бардык түзмөктөрүңүздө шайкештирилет.';
 
   @override
   String syncLast(String time) {
@@ -1785,8 +1717,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get syncNow => 'Азыр шайкештирүү';
 
   @override
-  String get syncFailed =>
-      'Шайкештирүү ишке ашкан жок. Кайра автоматтык түрдө аракет кылынат.';
+  String get syncFailed => 'Шайкештирүү ишке ашкан жок. Кайра автоматтык түрдө аракет кылынат.';
 
   @override
   String get alertEmailTitle => 'Эскертме иштегенде электрондук кат';
@@ -1915,8 +1846,7 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'Бүт компаниянын биржадагы баасы: акциянын баасы × акциялардын саны.';
+  String get glossMarketCap => 'Бүт компаниянын биржадагы баасы: акциянын баасы × акциялардын саны.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1955,12 +1885,10 @@ class AppLocalizationsKy extends AppLocalizations {
       'Акция рынок менен канчалык чогуу кыймылдайт: 1 = рыноктой, 1,5 = болжол менен 50% чоңураак термелүүлөр, 1ден төмөн = тынчыраак.';
 
   @override
-  String get glossRevenueTtm =>
-      'Акыркы 12 айдагы жалпы сатуулар, ар кандай чыгымдарга чейин.';
+  String get glossRevenueTtm => 'Акыркы 12 айдагы жалпы сатуулар, ар кандай чыгымдарга чейин.';
 
   @override
-  String get glossNetIncomeTtm =>
-      'Акыркы 12 айда бардык чыгымдардан, пайыздардан жана салыктардан кийин калган пайда.';
+  String get glossNetIncomeTtm => 'Акыркы 12 айда бардык чыгымдардан, пайыздардан жана салыктардан кийин калган пайда.';
 
   @override
   String get glossGrossMargin =>
@@ -1991,20 +1919,17 @@ class AppLocalizationsKy extends AppLocalizations {
       'Кыска мөөнөттүү активдер ÷ бир жылдын ичинде төлөнүүчү милдеттенмелер. 1ден жогору болсо, компания жакынкы төлөмдөрүн жаба алат.';
 
   @override
-  String get glossRevenueGrowth =>
-      'Түшүм бир жыл мурункуга салыштырмалуу канчага өскөнү.';
+  String get glossRevenueGrowth => 'Түшүм бир жыл мурункуга салыштырмалуу канчага өскөнү.';
 
   @override
-  String get glossEpsGrowth =>
-      'Бир акцияга туура келген пайда бир жыл мурункуга салыштырмалуу канчага өскөнү.';
+  String get glossEpsGrowth => 'Бир акцияга туура келген пайда бир жыл мурункуга салыштырмалуу канчага өскөнү.';
 
   @override
   String get glossDividendYield =>
       'Жылдык дивиденд ÷ акциянын баасы: төлөгөн суммаңыздын пайызы катары жыл сайын ала турган акчалай кирешеңиз.';
 
   @override
-  String get glossDividendPerShare =>
-      'Акыркы бир жылда бир акцияга төлөнгөн дивиденд.';
+  String get glossDividendPerShare => 'Акыркы бир жылда бир акцияга төлөнгөн дивиденд.';
 
   @override
   String get glossPayoutRatio =>
@@ -2102,8 +2027,7 @@ class AppLocalizationsKy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'EPS күтүлгөндөн жогору же барабар: акыркы $total чейректин $beats',
+      other: 'EPS күтүлгөндөн жогору же барабар: акыркы $total чейректин $beats',
       one: 'EPS күтүлгөндөн жогору же барабар: 1 чейректин $beats',
     );
     return '$_temp0';
@@ -2220,23 +2144,13 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count сатып алуу',
-      one: '1 сатып алуу',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count сатып алуу', one: '1 сатып алуу');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count сатуу',
-      one: '1 сатуу',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count сатуу', one: '1 сатуу');
     return '$_temp0';
   }
 
@@ -2256,8 +2170,7 @@ class AppLocalizationsKy extends AppLocalizations {
       'Акыркы 90 күндө жетекчилер жана директорлор тарабынан ачык рынокто жасалган сатып алуулар жана сатуулар (SEC Form 4). Опциондорду аткаруу жана акция менен сыйлоо эсептелбейт.';
 
   @override
-  String get insiderNone =>
-      'Акыркы 90 күндө ачык рынокто инсайдердик сатып алуу же сатуу болгон жок.';
+  String get insiderNone => 'Акыркы 90 күндө ачык рынокто инсайдердик сатып алуу же сатуу болгон жок.';
 
   @override
   String get analystTrend => 'Пикирлер айдан айга кантип өзгөрдү';
@@ -2300,8 +2213,7 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'Алмашуу буферине көчүрүлдү – бөлүшкүңүз келген жерге коюңуз.';
+  String get sharedToClipboard => 'Алмашуу буферине көчүрүлдү – бөлүшкүңүз келген жерге коюңуз.';
 
   @override
   String get glossaryNoMatch => 'Издөөңүзгө дал келген термин жок.';
@@ -2323,16 +2235,14 @@ class AppLocalizationsKy extends AppLocalizations {
       'Бул аккаунт башка түзмөктө же вебде өчүрүлгөн, ошондуктан анын маалыматтары бул түзмөктөн да өчүрүлдү.';
 
   @override
-  String get errAiUnavailable =>
-      'AI кызматы азыр жеткиликсиз. Бир нече мүнөттөн кийин кайра аракет кылыңыз.';
+  String get errAiUnavailable => 'AI кызматы азыр жеткиликсиз. Бир нече мүнөттөн кийин кайра аракет кылыңыз.';
 
   @override
   String get errMarketUnavailable =>
       'Рыноктук маалыматтар азыр жеткиликсиз. Бир нече мүнөттөн кийин кайра аракет кылыңыз.';
 
   @override
-  String get purchaseUnavailable =>
-      'Сатып алуулар азыр жеткиликсиз. Кийинчерээк кайра аракет кылыңыз.';
+  String get purchaseUnavailable => 'Сатып алуулар азыр жеткиликсиз. Кийинчерээк кайра аракет кылыңыз.';
 
   @override
   String get signOutLocalOnly =>
@@ -2358,8 +2268,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get backupRestore => 'Камдык көчүрмөдөн калыбына келтирүү';
 
   @override
-  String get backupRestoreHint =>
-      'Файлдагыны кошот; азыркы маалыматтарыңыздан эч нерсе өчүрүлбөйт.';
+  String get backupRestoreHint => 'Файлдагыны кошот; азыркы маалыматтарыңыздан эч нерсе өчүрүлбөйт.';
 
   @override
   String get backupRestored => 'Камдык көчүрмө калыбына келтирилди.';
@@ -2457,8 +2366,7 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get portfolioExportRealized =>
-      'Ишке ашырылган кирешени экспорттоо (CSV)';
+  String get portfolioExportRealized => 'Ишке ашырылган кирешени экспорттоо (CSV)';
 
   @override
   String get portfolioAnnualReturn => 'Жылдык кирешелүүлүк';
@@ -2479,8 +2387,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Портфель эскертмеси';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'Бүт портфелиңиз бир күндө ушунча өзгөргөндө билдирме.';
+  String get portfolioMoveAlertSubtitle => 'Бүт портфелиңиз бир күндө ушунча өзгөргөндө билдирме.';
 
   @override
   String get portfolioMoveAlertOff => 'Өчүк';
@@ -2656,12 +2563,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count позиция',
-      one: '1 позиция',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count позиция', one: '1 позиция');
     return '$_temp0';
   }
 
@@ -2767,12 +2669,10 @@ class AppLocalizationsKy extends AppLocalizations {
   String get lotNoteAdd => 'Жазуу кошуу';
 
   @override
-  String get lotNoteBuyHint =>
-      'Эмне үчүн сатып алып жатасыз? Ал күнү менен акциянын жазууларына кошулат.';
+  String get lotNoteBuyHint => 'Эмне үчүн сатып алып жатасыз? Ал күнү менен акциянын жазууларына кошулат.';
 
   @override
-  String get lotNoteSellHint =>
-      'Эмне үчүн сатып жатасыз? Ал күнү менен акциянын жазууларына кошулат.';
+  String get lotNoteSellHint => 'Эмне үчүн сатып жатасыз? Ал күнү менен акциянын жазууларына кошулат.';
 
   @override
   String get lotNoteBought => 'Сатып алынды';
@@ -2782,23 +2682,13 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: '$months ай',
-      one: '$months ай',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months ай', one: '$months ай');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days күн',
-      one: '$days күн',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days күн', one: '$days күн');
     return '$_temp0';
   }
 
@@ -2886,8 +2776,7 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'Досуңуздун кодун колдонуу үчүн электрондук почтаңыз менен кириңиз.';
+  String get referralErrSignIn => 'Досуңуздун кодун колдонуу үчүн электрондук почтаңыз менен кириңиз.';
 
   @override
   String get referralErrFull => 'Бул код колдонуу чегине жетти.';
@@ -2906,8 +2795,7 @@ class AppLocalizationsKy extends AppLocalizations {
       'Бул сүрөттү окуу мүмкүн эмес. Аны JPEG же PNG форматында сактап, кайра аракет кылыңыз.';
 
   @override
-  String get errRateLimited =>
-      'Кыска убакытта өтө көп суроо-талап жөнөтүлдү. Бир мүнөт күтүп, кайра аракет кылыңыз.';
+  String get errRateLimited => 'Кыска убакытта өтө көп суроо-талап жөнөтүлдү. Бир мүнөт күтүп, кайра аракет кылыңыз.';
 
   @override
   String get watchListNameTaken => 'Мындай аталыштагы тизме мурунтан эле бар.';
@@ -2923,16 +2811,14 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing =>
-      'Калыбына келтире турган мурунку сатып алуулар табылган жок.';
+  String get restoreNothing => 'Калыбына келтире турган мурунку сатып алуулар табылган жок.';
 
   @override
   String get manageSubscriptionElsewhere =>
       'Бул жерде башкара турган жазылуу жок. App Store же Google Play аркылуу сатып алынган жазылуу дүкөндүн жөндөөлөрүнөн башкарылат.';
 
   @override
-  String get backupFailed =>
-      'Камдык көчүрмөнү сактоо мүмкүн болгон жок. Кайра аракет кылыңыз.';
+  String get backupFailed => 'Камдык көчүрмөнү сактоо мүмкүн болгон жок. Кайра аракет кылыңыз.';
 
   @override
   String get syncTooLarge =>
@@ -2952,10 +2838,8 @@ class AppLocalizationsKy extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          '$currencies валютасындагы $count дивидендтин алмашуу курсу жок, ошондуктан алар жыйынтыкка кирбейт.',
-      one:
-          '$currencies валютасындагы 1 дивидендтин алмашуу курсу жок, ошондуктан ал жыйынтыкка кирбейт.',
+      other: '$currencies валютасындагы $count дивидендтин алмашуу курсу жок, ошондуктан алар жыйынтыкка кирбейт.',
+      one: '$currencies валютасындагы 1 дивидендтин алмашуу курсу жок, ошондуктан ал жыйынтыкка кирбейт.',
     );
     return '$_temp0';
   }
@@ -3054,8 +2938,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get aiReportNoteHint => 'Эмнеси туура эмес? (милдеттүү эмес)';
 
   @override
-  String get aiReportPrivacy =>
-      'Текшерүү үчүн бул жооптун текстин жана жазууңузду алабыз — аккаунтуңузсуз.';
+  String get aiReportPrivacy => 'Текшерүү үчүн бул жооптун текстин жана жазууңузду алабыз — аккаунтуңузсуз.';
 
   @override
   String get aiReportSend => 'Даттанууну жөнөтүү';
@@ -3068,8 +2951,7 @@ class AppLocalizationsKy extends AppLocalizations {
       'Портфелиңиздин курамы тууралуу AI түзгөн жалпы маалымат. Ал сиздин максаттарыңызды, каржылык абалыңызды же салык абалыңызды эске албайт жана жеке сунуш же инвестициялык кеңеш эмес.';
 
   @override
-  String get briefNotificationTitle =>
-      'AI корутундусу · Бүгүн акцияларыңыз менен';
+  String get briefNotificationTitle => 'AI корутундусу · Бүгүн акцияларыңыз менен';
 
   @override
   String get portfolioGoalSet => 'Максат коюу';
@@ -3152,8 +3034,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get compareNextReport => 'Кийинки отчет';
 
   @override
-  String get resolvingDescription =>
-      'Кайсы акцияны айтып жатканыңыз аныкталууда…';
+  String get resolvingDescription => 'Кайсы акцияны айтып жатканыңыз аныкталууда…';
 
   @override
   String get instrumentTitle => 'Бул инструмент жөнүндө';
@@ -3228,8 +3109,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get portfolioSplitRatio => 'Катыш (жаңы : эски)';
 
   @override
-  String get portfolioSplitRatioError =>
-      '10:1 сыяктуу катышты киргизиңиз, же тескери бөлүү үчүн 1:10.';
+  String get portfolioSplitRatioError => '10:1 сыяктуу катышты киргизиңиз, же тескери бөлүү үчүн 1:10.';
 
   @override
   String get portfolioSplitDate => 'Бөлүү датасы';
@@ -3348,12 +3228,10 @@ class AppLocalizationsKy extends AppLocalizations {
   String get techNeutral => 'нейтралдуу';
 
   @override
-  String get techGoldenCross =>
-      '50 күндүк орточо 200 күндүк орточодон жогору – классикалык окуу боюнча өсүү тренди.';
+  String get techGoldenCross => '50 күндүк орточо 200 күндүк орточодон жогору – классикалык окуу боюнча өсүү тренди.';
 
   @override
-  String get techDeathCross =>
-      '50 күндүк орточо 200 күндүк орточодон төмөн – классикалык окуу боюнча төмөндөө тренди.';
+  String get techDeathCross => '50 күндүк орточо 200 күндүк орточодон төмөн – классикалык окуу боюнча төмөндөө тренди.';
 
   @override
   String get glossSma50 =>

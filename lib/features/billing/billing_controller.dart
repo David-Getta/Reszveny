@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -213,6 +214,20 @@ class BillingController extends ChangeNotifier {
     }
   }
 
+  /// A függő bizonylat gazdája a készüléken: a fiók e-mail címének lenyomata (nem maga a cím).
+  static String ownerKey(String email) =>
+      email.isEmpty ? '' : 'h:${sha256.convert(utf8.encode(email.trim().toLowerCase())).toString().substring(0, 32)}';
+
+  /// A függő bizonylat ennyi ideig vár a fiókjára (utána a bolti „Vásárlások visszaállítása”
+  /// pótolja): egy régen kilépett fiók bizonylata ne maradjon a készüléken korlátlanul.
+  static const pendingKept = Duration(days: 60);
+
+  static bool _owns(Map<String, dynamic> item, String email) {
+    final of = item['owner'] as String? ?? '';
+    // A régebbi bejegyzésekben még maga a cím van.
+    return of == ownerKey(email) || of == email;
+  }
+
   /// A még ellenőrizetlen bizonylatok újraküldése (indításkor).
   Future<void> retryPending() async {
     final v = verifier;
@@ -222,7 +237,7 @@ class BillingController extends ChangeNotifier {
       // Egy másik fiókban vett csomag megvárja, amíg az a fiók újra belép. A névtelenül
       // vett az épp belépett fiókhoz tartozik (belépéskor a névtelen fiók beleolvad).
       final of = p['owner'] as String? ?? '';
-      if (of.isNotEmpty && of != me) continue;
+      if (of.isNotEmpty && !_owns(p, me)) continue;
       await _verify(
         v,
         BillingEvent(
@@ -240,7 +255,12 @@ class BillingController extends ChangeNotifier {
     try {
       final raw = (await SharedPreferences.getInstance()).getString(_pendingKey);
       final list = raw == null ? const [] : jsonDecode(raw) as List;
-      return [for (final m in list) (m as Map).cast<String, dynamic>()];
+      final cutoff = DateTime.now().toUtc().subtract(pendingKept);
+      return [
+        for (final m in list)
+          // Időbélyeg nélküli (régebbi) bejegyzés marad, amíg egy újabb írás nem ad neki egyet.
+          if (DateTime.tryParse('${(m as Map)['at'] ?? ''}')?.isBefore(cutoff) != true) m.cast<String, dynamic>(),
+      ];
     } catch (_) {
       return [];
     }
@@ -266,7 +286,13 @@ class BillingController extends ChangeNotifier {
     if (items.any((m) => m['data'] == data)) return;
     await _savePending([
       ...items,
-      {'product_id': e.productId, 'platform': e.platform, 'data': data, 'owner': owner?.call() ?? ''},
+      {
+        'product_id': e.productId,
+        'platform': e.platform,
+        'data': data,
+        'owner': ownerKey(owner?.call() ?? ''),
+        'at': DateTime.now().toUtc().toIso8601String(),
+      },
     ]);
   });
 
@@ -285,7 +311,7 @@ class BillingController extends ChangeNotifier {
     final items = await _pending();
     final kept = [
       for (final m in items)
-        if (m['owner'] != email) m,
+        if (!_owns(m, email)) m,
     ];
     if (kept.length != items.length) await _savePending(kept);
   });

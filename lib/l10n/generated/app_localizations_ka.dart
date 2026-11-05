@@ -111,8 +111,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get errorGeneric => 'რაღაც შეცდომა მოხდა.';
 
   @override
-  String get errorSectionUnavailable =>
-      'ამ განყოფილების ჩატვირთვა ვერ მოხერხდა.';
+  String get errorSectionUnavailable => 'ამ განყოფილების ჩატვირთვა ვერ მოხერხდა.';
 
   @override
   String get notAvailable => 'არ არის';
@@ -352,12 +351,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get recognitionRawText => 'სურათიდან წაკითხული ტექსტი';
 
   @override
-  String get errMissingAnthropicKey =>
-      'სურათის ამოცნობა ამ ვერსიაში მიუწვდომელია. სანაცვლოდ შეიყვანეთ ტიკერი.';
+  String get errMissingAnthropicKey => 'სურათის ამოცნობა ამ ვერსიაში მიუწვდომელია. სანაცვლოდ შეიყვანეთ ტიკერი.';
 
   @override
-  String get errRecognitionUnreachable =>
-      'ამოცნობის სერვისთან დაკავშირება ვერ მოხერხდა. შეამოწმეთ ინტერნეტკავშირი.';
+  String get errRecognitionUnreachable => 'ამოცნობის სერვისთან დაკავშირება ვერ მოხერხდა. შეამოწმეთ ინტერნეტკავშირი.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -365,32 +362,26 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'ამოცნობის სერვისმა ვერ დაამუშავა ეს სურათი.';
+  String get errRecognitionRefused => 'ამოცნობის სერვისმა ვერ დაამუშავა ეს სურათი.';
 
   @override
-  String get errRecognitionTruncated =>
-      'ამოცნობის პასუხი შეწყდა. სცადეთ ხელახლა.';
+  String get errRecognitionTruncated => 'ამოცნობის პასუხი შეწყდა. სცადეთ ხელახლა.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'მოულოდნელი პასუხი ამოცნობის სერვისისგან.';
+  String get errRecognitionBadResponse => 'მოულოდნელი პასუხი ამოცნობის სერვისისგან.';
 
   @override
-  String get errRecognitionEmpty =>
-      'ამოცნობის სერვისმა ცარიელი პასუხი დააბრუნა.';
+  String get errRecognitionEmpty => 'ამოცნობის სერვისმა ცარიელი პასუხი დააბრუნა.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'საბაზრო მონაცემები ამ ვერსიაში მიუწვდომელია.';
+  String get errMissingFinnhubKey => 'საბაზრო მონაცემები ამ ვერსიაში მიუწვდომელია.';
 
   @override
   String get errMarketUnreachable =>
       'საბაზრო მონაცემების სერვისთან დაკავშირება ვერ მოხერხდა. შეამოწმეთ ინტერნეტკავშირი.';
 
   @override
-  String get errMarketRateLimited =>
-      'საბაზრო მონაცემების სერვისს ძალიან ბევრი მოთხოვნა გაეგზავნა. დაიცადეთ ერთი წუთი.';
+  String get errMarketRateLimited => 'საბაზრო მონაცემების სერვისს ძალიან ბევრი მოთხოვნა გაეგზავნა. დაიცადეთ ერთი წუთი.';
 
   @override
   String errMarketHttp(String status) {
@@ -398,8 +389,7 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'მოულოდნელი პასუხი საბაზრო მონაცემების სერვისისგან.';
+  String get errMarketBadResponse => 'მოულოდნელი პასუხი საბაზრო მონაცემების სერვისისგან.';
 
   @override
   String errNoQuote(String symbol) {
@@ -499,8 +489,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get aiRegenerate => 'ხელახლა შექმნა';
 
   @override
-  String get aiGenerating =>
-      'ანალიზი მზადდება… ამას შეიძლება ერთი-ორი წუთი დასჭირდეს.';
+  String get aiGenerating => 'ანალიზი მზადდება… ამას შეიძლება ერთი-ორი წუთი დასჭირდეს.';
 
   @override
   String get aiSources => 'წყაროები';
@@ -518,8 +507,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get errAiNotConfigured => 'AI ფუნქციები ამ ვერსიაში მიუწვდომელია.';
 
   @override
-  String get errAiUnreachable =>
-      'AI სერვისთან დაკავშირება ვერ მოხერხდა. შეამოწმეთ ინტერნეტკავშირი.';
+  String get errAiUnreachable => 'AI სერვისთან დაკავშირება ვერ მოხერხდა. შეამოწმეთ ინტერნეტკავშირი.';
 
   @override
   String errAiHttp(String status) {
@@ -551,8 +539,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get rangeFiveYears => '5წ';
 
   @override
-  String get chartUnavailable =>
-      'ფასების ისტორია მიმდინარე მონაცემთა წყაროში მიუწვდომელია.';
+  String get chartUnavailable => 'ფასების ისტორია მიმდინარე მონაცემთა წყაროში მიუწვდომელია.';
 
   @override
   String get sectionStatements => 'ფინანსური ანგარიშგება (წლიური)';
@@ -579,8 +566,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get labelOperatingCashFlow => 'საოპერაციო ფულადი ნაკადი';
 
   @override
-  String get statementsUnavailable =>
-      'ამ აქციისთვის გამოქვეყნებული ფინანსური ანგარიშგება მიუწვდომელია.';
+  String get statementsUnavailable => 'ამ აქციისთვის გამოქვეყნებული ფინანსური ანგარიშგება მიუწვდომელია.';
 
   @override
   String get launchAtLogin => 'გაშვება სისტემაში შესვლისას';
@@ -589,8 +575,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get hotkeyLabel => 'გლობალური მალსახმობი';
 
   @override
-  String get hotkeyRecordHint =>
-      'დააწკაპუნეთ აქ, შემდეგ დააჭირეთ კლავიშების ახალ კომბინაციას';
+  String get hotkeyRecordHint => 'დააწკაპუნეთ აქ, შემდეგ დააჭირეთ კლავიშების ახალ კომბინაციას';
 
   @override
   String get hotkeyReset => 'ნაგულისხმევზე დაბრუნება';
@@ -611,8 +596,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get removeFromFavorites => 'რჩეულებიდან ამოშლა';
 
   @override
-  String get noFavorites =>
-      'რჩეულები ჯერ არ არის. დასამატებლად შეეხეთ ვარსკვლავს აქციის გვერდზე.';
+  String get noFavorites => 'რჩეულები ჯერ არ არის. დასამატებლად შეეხეთ ვარსკვლავს აქციის გვერდზე.';
 
   @override
   String get displayCurrency => 'საჩვენებელი ვალუტა';
@@ -659,8 +643,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get updateDownloading => 'განახლება ფონურ რეჟიმში იტვირთება…';
 
   @override
-  String get updateDownloaded =>
-      'განახლება მზადაა. დასაინსტალირებლად გადატვირთეთ აპი.';
+  String get updateDownloaded => 'განახლება მზადაა. დასაინსტალირებლად გადატვირთეთ აპი.';
 
   @override
   String get updateNow => 'განახლება';
@@ -669,8 +652,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get restartNow => 'გადატვირთვა';
 
   @override
-  String get updatesViaStore =>
-      'განახლებები ავტომატურად მოდის აპების მაღაზიიდან.';
+  String get updatesViaStore => 'განახლებები ავტომატურად მოდის აპების მაღაზიიდან.';
 
   @override
   String get updateCheckFailed => 'განახლებების შემოწმება ვერ მოხერხდა.';
@@ -718,8 +700,7 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'თქვენი უფასო საცდელი პერიოდი დასრულდა. ანალიზის გასაგრძელებლად აირჩიეთ გეგმა.';
+  String get trialExpired => 'თქვენი უფასო საცდელი პერიოდი დასრულდა. ანალიზის გასაგრძელებლად აირჩიეთ გეგმა.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -791,8 +772,7 @@ class AppLocalizationsKa extends AppLocalizations {
       'ამ პერიოდისთვის ანალიზები აღარ დაგრჩათ. გადადით უფრო მაღალ გეგმაზე ან შეიძინეთ დამატებითი ანალიზები.';
 
   @override
-  String get errTrialExpired =>
-      'თქვენი უფასო საცდელი პერიოდი დასრულდა. გასაგრძელებლად აირჩიეთ გეგმა.';
+  String get errTrialExpired => 'თქვენი უფასო საცდელი პერიოდი დასრულდა. გასაგრძელებლად აირჩიეთ გეგმა.';
 
   @override
   String get errNoPlan => 'AI ანალიზისთვის საჭიროა აქტიური გეგმა.';
@@ -804,8 +784,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get usageTitle => 'გამოყენება';
 
   @override
-  String get demoPurchaseNote =>
-      'დემო გადახდა: ამ პლატფორმაზე შენაძენები სიმულირებულია.';
+  String get demoPurchaseNote => 'დემო გადახდა: ამ პლატფორმაზე შენაძენები სიმულირებულია.';
 
   @override
   String get mostPopular => 'ყველაზე პოპულარული';
@@ -845,8 +824,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get aiDepthStandardDesc => 'სრული ანგარიში ყველა განყოფილებით.';
 
   @override
-  String get aiDepthDeepDesc =>
-      'მეტი ვებძიება, კონკურენტებთან შედარება და უფრო დეტალური ანალიზი.';
+  String get aiDepthDeepDesc => 'მეტი ვებძიება, კონკურენტებთან შედარება და უფრო დეტალური ანალიზი.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -874,12 +852,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get aiReaderExperienced => 'გამოცდილი';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'მარტივი ენა; ყველა სპეციალური ტერმინი ახსნილია.';
+  String get aiReaderBeginnerDesc => 'მარტივი ენა; ყველა სპეციალური ტერმინი ახსნილია.';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'უფრო მჭიდრო ტექსტი სტანდარტული ფინანსური ტერმინოლოგიით.';
+  String get aiReaderExperiencedDesc => 'უფრო მჭიდრო ტექსტი სტანდარტული ფინანსური ტერმინოლოგიით.';
 
   @override
   String get aiCounterArgument => 'ყველაზე ძლიერი კონტრარგუმენტი';
@@ -979,8 +955,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get upcomingEvents => 'მოახლოებული მოვლენები';
 
   @override
-  String get outlookChartNote =>
-      'მიახლოებითი დიაპაზონები; ალბათობები უხეში შეფასებებია და არა პროგნოზები.';
+  String get outlookChartNote => 'მიახლოებითი დიაპაზონები; ალბათობები უხეში შეფასებებია და არა პროგნოზები.';
 
   @override
   String get accountTitle => 'ანგარიში';
@@ -995,12 +970,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get notSignedIn => 'არ ხართ შესული';
 
   @override
-  String get accountBenefit =>
-      'შედით, რომ თქვენმა გამოწერამ ყველა თქვენს მოწყობილობაზე იმუშაოს.';
+  String get accountBenefit => 'შედით, რომ თქვენმა გამოწერამ ყველა თქვენს მოწყობილობაზე იმუშაოს.';
 
   @override
-  String get accountSyncedNote =>
-      'თქვენი გამოწერა და დარჩენილი ანალიზები ყველა მოწყობილობაზე ერთნაირია.';
+  String get accountSyncedNote => 'თქვენი გამოწერა და დარჩენილი ანალიზები ყველა მოწყობილობაზე ერთნაირია.';
 
   @override
   String get signInTitle => 'WhatStock-ში შესვლა';
@@ -1032,16 +1005,13 @@ class AppLocalizationsKa extends AppLocalizations {
   String get errInvalidEmail => 'შეიყვანეთ სწორი ელფოსტის მისამართი.';
 
   @override
-  String get errSignInFailed =>
-      'შესვლა ვერ მოხერხდა. შეამოწმეთ კავშირი და სცადეთ ხელახლა.';
+  String get errSignInFailed => 'შესვლა ვერ მოხერხდა. შეამოწმეთ კავშირი და სცადეთ ხელახლა.';
 
   @override
-  String get checkoutWaiting =>
-      'დაასრულეთ გადახდა ბრაუზერში. აპი ავტომატურად განახლდება, როცა ყველაფერი მზად იქნება.';
+  String get checkoutWaiting => 'დაასრულეთ გადახდა ბრაუზერში. აპი ავტომატურად განახლდება, როცა ყველაფერი მზად იქნება.';
 
   @override
-  String get paymentViaStripe =>
-      'უსაფრთხო გადახდა ბრაუზერში Stripe-ის მეშვეობით. გაუქმება ნებისმიერ დროს შეგიძლიათ.';
+  String get paymentViaStripe => 'უსაფრთხო გადახდა ბრაუზერში Stripe-ის მეშვეობით. გაუქმება ნებისმიერ დროს შეგიძლიათ.';
 
   @override
   String get paymentViaStore =>
@@ -1054,8 +1024,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get doubleOptionTitle => 'Option-ზე ორჯერ დაჭერა';
 
   @override
-  String get doubleOptionSubtitle =>
-      'Option კლავიშზე სწრაფად ორჯერ დაჭერაც იძახებს WhatStock-ს.';
+  String get doubleOptionSubtitle => 'Option კლავიშზე სწრაფად ორჯერ დაჭერაც იძახებს WhatStock-ს.';
 
   @override
   String get doubleOptionPermission =>
@@ -1077,12 +1046,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '$years წელი',
-      one: '$years წელი',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years წელი', one: '$years წელი');
     return '$_temp0';
   }
 
@@ -1188,8 +1152,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get portfolioRemove => 'ამოშლა';
 
   @override
-  String get portfolioExcluded =>
-      'პოზიციები ფასის ან გაცვლითი კურსის გარეშე ჯამებში არ ითვლება.';
+  String get portfolioExcluded => 'პოზიციები ფასის ან გაცვლითი კურსის გარეშე ჯამებში არ ითვლება.';
 
   @override
   String get priceAlerts => 'ფასის შეტყობინებები';
@@ -1231,8 +1194,7 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty =>
-      'ფასის შეტყობინებები ჯერ არ არის. გახსენით აქცია და შეეხეთ ზარს, რომ დააყენოთ.';
+  String get alertsEmpty => 'ფასის შეტყობინებები ჯერ არ არის. გახსენით აქცია და შეეხეთ ზარს, რომ დააყენოთ.';
 
   @override
   String get alertsNote =>
@@ -1325,8 +1287,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get accountDeleted => 'თქვენი ანგარიში წაიშალა.';
 
   @override
-  String get errDeleteAccount =>
-      'ანგარიშის წაშლა ვერ მოხერხდა. შეამოწმეთ კავშირი და სცადეთ ხელახლა.';
+  String get errDeleteAccount => 'ანგარიშის წაშლა ვერ მოხერხდა. შეამოწმეთ კავშირი და სცადეთ ხელახლა.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1363,8 +1324,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get inviteTitle => 'დახურული წინასწარი ვერსია';
 
   @override
-  String get inviteBody =>
-      'WhatStock ამჟამად მხოლოდ მოწვევით არის ხელმისაწვდომი. შეიყვანეთ მიღებული მოწვევის კოდი.';
+  String get inviteBody => 'WhatStock ამჟამად მხოლოდ მოწვევით არის ხელმისაწვდომი. შეიყვანეთ მიღებული მოწვევის კოდი.';
 
   @override
   String get inviteCodeLabel => 'მოწვევის კოდი';
@@ -1376,19 +1336,16 @@ class AppLocalizationsKa extends AppLocalizations {
   String get inviteInvalid => 'მოწვევის ეს კოდი არასწორია.';
 
   @override
-  String get inviteExpired =>
-      'ამ მოწვევას ვადა გაუვიდა. ახალი კოდი სთხოვეთ იმას, ვინც მოგიწვიათ.';
+  String get inviteExpired => 'ამ მოწვევას ვადა გაუვიდა. ახალი კოდი სთხოვეთ იმას, ვინც მოგიწვიათ.';
 
   @override
-  String get inviteDeviceLimit =>
-      'მოწვევის ეს კოდი უკვე გამოიყენება მოწყობილობების მაქსიმალურ დასაშვებ რაოდენობაზე.';
+  String get inviteDeviceLimit => 'მოწვევის ეს კოდი უკვე გამოიყენება მოწყობილობების მაქსიმალურ დასაშვებ რაოდენობაზე.';
 
   @override
   String get previewConfidential => 'კონფიდენციალური ვერსია';
 
   @override
-  String get errPreviewDailyLimit =>
-      'ამ წინასწარი ვერსიის დღევანდელი ანალიზების ლიმიტი ამოიწურა. სცადეთ ხვალ ხელახლა.';
+  String get errPreviewDailyLimit => 'ამ წინასწარი ვერსიის დღევანდელი ანალიზების ლიმიტი ამოიწურა. სცადეთ ხვალ ხელახლა.';
 
   @override
   String ageHours(int count) {
@@ -1403,12 +1360,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count დღის წინ',
-      one: '$count დღის წინ',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count დღის წინ', one: '$count დღის წინ');
     return '$_temp0';
   }
 
@@ -1443,8 +1395,7 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint =>
-      'შეეხეთ AI-ის მიერ შეფასებულ დონეს, რომ მიიღოთ შეტყობინება, როცა ფასი მას მიაღწევს.';
+  String get keyLevelAlertHint => 'შეეხეთ AI-ის მიერ შეფასებულ დონეს, რომ მიიღოთ შეტყობინება, როცა ფასი მას მიაღწევს.';
 
   @override
   String get shareAnalysisTitle => 'ანალიზის გაზიარება';
@@ -1502,8 +1453,7 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown =>
-      'ასეთი კოდი არ არსებობს. შეამოწმეთ და სცადეთ ხელახლა.';
+  String get referralErrUnknown => 'ასეთი კოდი არ არსებობს. შეამოწმეთ და სცადეთ ხელახლა.';
 
   @override
   String get referralErrOwn => 'საკუთარი კოდის გააქტიურება შეუძლებელია.';
@@ -1620,24 +1570,17 @@ class AppLocalizationsKa extends AppLocalizations {
   String get askSuggest3 => 'ამიხსენი მარტივად';
 
   @override
-  String get askMaxReached =>
-      'ეს იყო ამ ანალიზის ბოლო კითხვა. მეტი კითხვისთვის შექმენით ახალი ანალიზი.';
+  String get askMaxReached => 'ეს იყო ამ ანალიზის ბოლო კითხვა. მეტი კითხვისთვის შექმენით ახალი ანალიზი.';
 
   @override
-  String get errAskLimit =>
-      'დღევანდელი კითხვების ლიმიტი ამოიწურა. სცადეთ ხვალ ხელახლა.';
+  String get errAskLimit => 'დღევანდელი კითხვების ლიმიტი ამოიწურა. სცადეთ ხვალ ხელახლა.';
 
   @override
   String get eventTomorrow => 'ხვალ';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days დღეში',
-      one: '1 დღეში',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days დღეში', one: '1 დღეში');
     return '$_temp0';
   }
 
@@ -1662,8 +1605,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get eventDividend => 'მოსალოდნელი დივიდენდი';
 
   @override
-  String get eventDividendEstimate =>
-      'შეფასებულია თქვენი ჩაწერილი გადახდებიდან';
+  String get eventDividendEstimate => 'შეფასებულია თქვენი ჩაწერილი გადახდებიდან';
 
   @override
   String get eventsHint =>
@@ -1722,8 +1664,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get notesTitle => 'ჩემი ჩანაწერები';
 
   @override
-  String get notesHint =>
-      'რატომ იყიდეთ, რას აკვირდებით, რა გაიძულებდათ გაყიდვას?';
+  String get notesHint => 'რატომ იყიდეთ, რას აკვირდებით, რა გაიძულებდათ გაყიდვას?';
 
   @override
   String get notesInfo =>
@@ -1785,8 +1726,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get syncNow => 'სინქრონიზაცია ახლა';
 
   @override
-  String get syncFailed =>
-      'სინქრონიზაცია ვერ მოხერხდა. ხელახლა ცდა ავტომატურად მოხდება.';
+  String get syncFailed => 'სინქრონიზაცია ვერ მოხერხდა. ხელახლა ცდა ავტომატურად მოხდება.';
 
   @override
   String get alertEmailTitle => 'ელფოსტა, როცა შეტყობინება ამოქმედდება';
@@ -1915,8 +1855,7 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'რამდენი ღირს მთელი კომპანია საფონდო ბირჟაზე: აქციის ფასი × აქციების რაოდენობა.';
+  String get glossMarketCap => 'რამდენი ღირს მთელი კომპანია საფონდო ბირჟაზე: აქციის ფასი × აქციების რაოდენობა.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1955,12 +1894,10 @@ class AppLocalizationsKa extends AppLocalizations {
       'რამდენად მოძრაობს აქცია ბაზართან ერთად: 1 = ბაზრის მსგავსად, 1,5 = დაახლოებით 50%-ით დიდი რყევები, 1-ზე ნაკლები = უფრო მშვიდი.';
 
   @override
-  String get glossRevenueTtm =>
-      'ბოლო 12 თვის ჯამური გაყიდვები, ნებისმიერ ხარჯამდე.';
+  String get glossRevenueTtm => 'ბოლო 12 თვის ჯამური გაყიდვები, ნებისმიერ ხარჯამდე.';
 
   @override
-  String get glossNetIncomeTtm =>
-      'მოგება, რომელიც ბოლო 12 თვეში ყველა ხარჯის, პროცენტისა და გადასახადის შემდეგ რჩება.';
+  String get glossNetIncomeTtm => 'მოგება, რომელიც ბოლო 12 თვეში ყველა ხარჯის, პროცენტისა და გადასახადის შემდეგ რჩება.';
 
   @override
   String get glossGrossMargin =>
@@ -1979,8 +1916,7 @@ class AppLocalizationsKa extends AppLocalizations {
       'კაპიტალის უკუგება: წლიური მოგება ÷ მფლობელების კაპიტალი. აჩვენებს, რამდენად კარგად იყენებს მენეჯმენტი აქციონერების ფულს; დაახლოებით 15%-ზე მეტი ძლიერია.';
 
   @override
-  String get glossRoa =>
-      'აქტივების უკუგება: წლიური მოგება ÷ ყველაფერი, რაც კომპანიას ეკუთვნის. შეადარეთ იმავე დარგში.';
+  String get glossRoa => 'აქტივების უკუგება: წლიური მოგება ÷ ყველაფერი, რაც კომპანიას ეკუთვნის. შეადარეთ იმავე დარგში.';
 
   @override
   String get glossDebtToEquity =>
@@ -1991,20 +1927,17 @@ class AppLocalizationsKa extends AppLocalizations {
       'მოკლევადიანი აქტივები ÷ ერთ წელიწადში გადასახდელი ვალდებულებები. 1-ზე მეტი ნიშნავს, რომ კომპანიას ახლო ვადის ვალდებულებების დაფარვა შეუძლია.';
 
   @override
-  String get glossRevenueGrowth =>
-      'რამდენით გაიზარდა შემოსავალი წინა წელთან შედარებით.';
+  String get glossRevenueGrowth => 'რამდენით გაიზარდა შემოსავალი წინა წელთან შედარებით.';
 
   @override
-  String get glossEpsGrowth =>
-      'რამდენით გაიზარდა მოგება ერთ აქციაზე წინა წელთან შედარებით.';
+  String get glossEpsGrowth => 'რამდენით გაიზარდა მოგება ერთ აქციაზე წინა წელთან შედარებით.';
 
   @override
   String get glossDividendYield =>
       'წლიური დივიდენდი ÷ აქციის ფასი: ფულადი შემოსავალი, რომელსაც ყოველწლიურად მიიღებდით, გადახდილი თანხის პროცენტად.';
 
   @override
-  String get glossDividendPerShare =>
-      'ბოლო წელს ერთ აქციაზე გადახდილი დივიდენდი.';
+  String get glossDividendPerShare => 'ბოლო წელს ერთ აქციაზე გადახდილი დივიდენდი.';
 
   @override
   String get glossPayoutRatio =>
@@ -2219,23 +2152,13 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count შესყიდვა',
-      one: '1 შესყიდვა',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count შესყიდვა', one: '1 შესყიდვა');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count გაყიდვა',
-      one: '1 გაყიდვა',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count გაყიდვა', one: '1 გაყიდვა');
     return '$_temp0';
   }
 
@@ -2255,8 +2178,7 @@ class AppLocalizationsKa extends AppLocalizations {
       'ხელმძღვანელებისა და დირექტორების შესყიდვები და გაყიდვები ღია ბაზარზე ბოლო 90 დღის განმავლობაში (SEC Form 4). ოფციონების განხორციელება და აქციებით დაჯილდოება არ ითვლება.';
 
   @override
-  String get insiderNone =>
-      'ბოლო 90 დღის განმავლობაში ღია ბაზარზე ინსაიდერული შესყიდვები ან გაყიდვები არ ყოფილა.';
+  String get insiderNone => 'ბოლო 90 დღის განმავლობაში ღია ბაზარზე ინსაიდერული შესყიდვები ან გაყიდვები არ ყოფილა.';
 
   @override
   String get analystTrend => 'როგორ იცვლებოდა შეფასებები თვიდან თვემდე';
@@ -2280,8 +2202,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get watchListAddTo => 'სიაში დამატება';
 
   @override
-  String get watchListEmpty =>
-      'ამ სიაში ჯერ აქციები არ არის. დასამატებლად შეეხეთ სიის ღილაკს აქციის გვერდით.';
+  String get watchListEmpty => 'ამ სიაში ჯერ აქციები არ არის. დასამატებლად შეეხეთ სიის ღილაკს აქციის გვერდით.';
 
   @override
   String favoriteRemoved(String symbol) {
@@ -2299,8 +2220,7 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'დაკოპირდა გაცვლის ბუფერში – ჩასვით იქ, სადაც გაზიარება გსურთ.';
+  String get sharedToClipboard => 'დაკოპირდა გაცვლის ბუფერში – ჩასვით იქ, სადაც გაზიარება გსურთ.';
 
   @override
   String get glossaryNoMatch => 'თქვენს ძიებას არცერთი ტერმინი არ ემთხვევა.';
@@ -2322,16 +2242,13 @@ class AppLocalizationsKa extends AppLocalizations {
       'ეს ანგარიში სხვა მოწყობილობაზე ან ვებში წაიშალა, ამიტომ მისი მონაცემები ამ მოწყობილობიდანაც წაიშალა.';
 
   @override
-  String get errAiUnavailable =>
-      'AI სერვისი ამჟამად მიუწვდომელია. სცადეთ ხელახლა რამდენიმე წუთში.';
+  String get errAiUnavailable => 'AI სერვისი ამჟამად მიუწვდომელია. სცადეთ ხელახლა რამდენიმე წუთში.';
 
   @override
-  String get errMarketUnavailable =>
-      'საბაზრო მონაცემები ამჟამად მიუწვდომელია. სცადეთ ხელახლა რამდენიმე წუთში.';
+  String get errMarketUnavailable => 'საბაზრო მონაცემები ამჟამად მიუწვდომელია. სცადეთ ხელახლა რამდენიმე წუთში.';
 
   @override
-  String get purchaseUnavailable =>
-      'შენაძენები ამჟამად მიუწვდომელია. სცადეთ მოგვიანებით.';
+  String get purchaseUnavailable => 'შენაძენები ამჟამად მიუწვდომელია. სცადეთ მოგვიანებით.';
 
   @override
   String get signOutLocalOnly =>
@@ -2350,15 +2267,13 @@ class AppLocalizationsKa extends AppLocalizations {
   String get backupSave => 'სარეზერვო ასლის შენახვა';
 
   @override
-  String get backupSaveHint =>
-      'თქვენი რჩეულები, სიები, პორტფელი, შეტყობინებები და ჩანაწერები ერთ ფაილში.';
+  String get backupSaveHint => 'თქვენი რჩეულები, სიები, პორტფელი, შეტყობინებები და ჩანაწერები ერთ ფაილში.';
 
   @override
   String get backupRestore => 'სარეზერვო ასლიდან აღდგენა';
 
   @override
-  String get backupRestoreHint =>
-      'ამატებს ფაილის შიგთავსს; თქვენი ამჟამინდელი მონაცემებიდან არაფერი იშლება.';
+  String get backupRestoreHint => 'ამატებს ფაილის შიგთავსს; თქვენი ამჟამინდელი მონაცემებიდან არაფერი იშლება.';
 
   @override
   String get backupRestored => 'სარეზერვო ასლი აღდგენილია.';
@@ -2477,8 +2392,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'პორტფელის შეტყობინება';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'შეტყობინება, როცა შენი მთლიანი პორტფელი ერთ დღეში ამდენით იცვლება.';
+  String get portfolioMoveAlertSubtitle => 'შეტყობინება, როცა შენი მთლიანი პორტფელი ერთ დღეში ამდენით იცვლება.';
 
   @override
   String get portfolioMoveAlertOff => 'გამორთული';
@@ -2654,12 +2568,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count პოზიცია',
-      one: '1 პოზიცია',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count პოზიცია', one: '1 პოზიცია');
     return '$_temp0';
   }
 
@@ -2709,8 +2618,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get portfolioSampleTry => 'სანიმუშო პორტფელით გამოცდა';
 
   @override
-  String get portfolioSampleBanner =>
-      'ეს სანიმუშო პორტფელია. დაამატეთ მის გვერდით თქვენი შენაძენები ან წაშალეთ იგი.';
+  String get portfolioSampleBanner => 'ეს სანიმუშო პორტფელია. დაამატეთ მის გვერდით თქვენი შენაძენები ან წაშალეთ იგი.';
 
   @override
   String get portfolioSampleRemove => 'ნიმუშის წაშლა';
@@ -2765,12 +2673,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lotNoteAdd => 'ჩანაწერის დამატება';
 
   @override
-  String get lotNoteBuyHint =>
-      'რატომ ყიდულობთ? თარიღთან ერთად აქციის ჩანაწერებში დაემატება.';
+  String get lotNoteBuyHint => 'რატომ ყიდულობთ? თარიღთან ერთად აქციის ჩანაწერებში დაემატება.';
 
   @override
-  String get lotNoteSellHint =>
-      'რატომ ყიდით? თარიღთან ერთად აქციის ჩანაწერებში დაემატება.';
+  String get lotNoteSellHint => 'რატომ ყიდით? თარიღთან ერთად აქციის ჩანაწერებში დაემატება.';
 
   @override
   String get lotNoteBought => 'შეძენილია';
@@ -2780,23 +2686,13 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: '$months თვე',
-      one: '$months თვე',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months თვე', one: '$months თვე');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days დღე',
-      one: '$days დღე',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days დღე', one: '$days დღე');
     return '$_temp0';
   }
 
@@ -2884,8 +2780,7 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'შედით ელფოსტით, რომ მეგობრის კოდი გააქტიუროთ.';
+  String get referralErrSignIn => 'შედით ელფოსტით, რომ მეგობრის კოდი გააქტიუროთ.';
 
   @override
   String get referralErrFull => 'ამ კოდის გამოყენების ლიმიტი ამოიწურა.';
@@ -2896,16 +2791,14 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated =>
-      'ანალიზი დასრულებამდე შეწყდა. სცადეთ ხელახლა – ეს თქვენს ლიმიტში არ ჩაითვალა.';
+  String get errAiTruncated => 'ანალიზი დასრულებამდე შეწყდა. სცადეთ ხელახლა – ეს თქვენს ლიმიტში არ ჩაითვალა.';
 
   @override
   String get errImageUnsupported =>
       'ამ სურათის წაკითხვა ვერ ხერხდება. შეინახეთ JPEG ან PNG ფორმატში და სცადეთ ხელახლა.';
 
   @override
-  String get errRateLimited =>
-      'ძალიან ბევრი მოთხოვნა მოკლე დროში. დაიცადეთ ერთი წუთი და სცადეთ ხელახლა.';
+  String get errRateLimited => 'ძალიან ბევრი მოთხოვნა მოკლე დროში. დაიცადეთ ერთი წუთი და სცადეთ ხელახლა.';
 
   @override
   String get watchListNameTaken => 'ამ სახელით სია უკვე არსებობს.';
@@ -2928,8 +2821,7 @@ class AppLocalizationsKa extends AppLocalizations {
       'აქ სამართავი გამოწერა არ არის. App Store-ში ან Google Play-ში შეძენილი გამოწერა მაღაზიის პარამეტრებში იმართება.';
 
   @override
-  String get backupFailed =>
-      'სარეზერვო ასლის შენახვა ვერ მოხერხდა. სცადეთ ხელახლა.';
+  String get backupFailed => 'სარეზერვო ასლის შენახვა ვერ მოხერხდა. სცადეთ ხელახლა.';
 
   @override
   String get syncTooLarge =>
@@ -2949,10 +2841,8 @@ class AppLocalizationsKa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          '$currencies-ში $count დივიდენდს არ აქვს გაცვლითი კურსი და ჯამებში არ ითვლება.',
-      one:
-          '$currencies-ში 1 დივიდენდს არ აქვს გაცვლითი კურსი და ჯამებში არ ითვლება.',
+      other: '$currencies-ში $count დივიდენდს არ აქვს გაცვლითი კურსი და ჯამებში არ ითვლება.',
+      one: '$currencies-ში 1 დივიდენდს არ აქვს გაცვლითი კურსი და ჯამებში არ ითვლება.',
     );
     return '$_temp0';
   }
@@ -3065,8 +2955,7 @@ class AppLocalizationsKa extends AppLocalizations {
       'AI-ის მიერ შექმნილი ზოგადი ინფორმაცია თქვენი პორტფელის შემადგენლობის შესახებ. ის არ ითვალისწინებს თქვენს მიზნებს, ფინანსურ მდგომარეობას ან საგადასახადო სიტუაციას და არ წარმოადგენს პერსონალურ რეკომენდაციას ან საინვესტიციო რჩევას.';
 
   @override
-  String get briefNotificationTitle =>
-      'AI შეჯამება · დღეს თქვენს აქციებთან ერთად';
+  String get briefNotificationTitle => 'AI შეჯამება · დღეს თქვენს აქციებთან ერთად';
 
   @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
@@ -3149,8 +3038,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get compareNextReport => 'შემდეგი ანგარიში';
 
   @override
-  String get resolvingDescription =>
-      'მიმდინარეობს იმის დადგენა, რომელ აქციას გულისხმობთ…';
+  String get resolvingDescription => 'მიმდინარეობს იმის დადგენა, რომელ აქციას გულისხმობთ…';
 
   @override
   String get instrumentTitle => 'ამ ინსტრუმენტის შესახებ';
@@ -3225,8 +3113,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get portfolioSplitRatio => 'თანაფარდობა (ახალი : ძველი)';
 
   @override
-  String get portfolioSplitRatioError =>
-      'შეიყვანეთ თანაფარდობა, მაგალითად 10:1, ან 1:10 უკუდაყოფისთვის.';
+  String get portfolioSplitRatioError => 'შეიყვანეთ თანაფარდობა, მაგალითად 10:1, ან 1:10 უკუდაყოფისთვის.';
 
   @override
   String get portfolioSplitDate => 'დაყოფის თარიღი';
@@ -3345,12 +3232,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get techNeutral => 'ნეიტრალური';
 
   @override
-  String get techGoldenCross =>
-      '50-დღიანი საშუალო 200-დღიანზე მაღლაა – კლასიკური წაკითხვით აღმავალი ტრენდი.';
+  String get techGoldenCross => '50-დღიანი საშუალო 200-დღიანზე მაღლაა – კლასიკური წაკითხვით აღმავალი ტრენდი.';
 
   @override
-  String get techDeathCross =>
-      '50-დღიანი საშუალო 200-დღიანზე დაბლაა – კლასიკური წაკითხვით დაღმავალი ტრენდი.';
+  String get techDeathCross => '50-დღიანი საშუალო 200-დღიანზე დაბლაა – კლასიკური წაკითხვით დაღმავალი ტრენდი.';
 
   @override
   String get glossSma50 =>
@@ -3369,8 +3254,7 @@ class AppLocalizationsKa extends AppLocalizations {
       'რამდენად მერყეობს ფასი დღიდან დღემდე, წლიურ გამოსახულებაში: 20% ნიშნავს, რომ ტიპურ წელს ფასი დაახლოებით ±20%-ის ფარგლებში მოძრაობს. მაღალი ვოლატილობა ნიშნავს უფრო დიდ მოძრაობებს ორივე მიმართულებით.';
 
   @override
-  String get techNote =>
-      'გამოთვლილია დღიური დახურვის ფასებიდან. ტექნიკური სიგნალები აღწერს წარსულს და არა მომავალს.';
+  String get techNote => 'გამოთვლილია დღიური დახურვის ფასებიდან. ტექნიკური სიგნალები აღწერს წარსულს და არა მომავალს.';
 
   @override
   String portfolioAbove200(int above, int count) {
@@ -3410,8 +3294,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get glossaryPageTitle => 'ტერმინების ლექსიკონი';
 
   @override
-  String get glossaryPageSubtitle =>
-      'აპში ნაჩვენები ყველა მაჩვენებლის მარტივი განმარტება, P/E-დან RSI-მდე';
+  String get glossaryPageSubtitle => 'აპში ნაჩვენები ყველა მაჩვენებლის მარტივი განმარტება, P/E-დან RSI-მდე';
 
   @override
   String get glossarySearchHint => 'ძიება ლექსიკონში';

@@ -107,7 +107,11 @@ String reportShareText(
     b
       ..writeln()
       ..writeln(outlook.title);
-    for (final bullet in outlook.bullets.take(4)) {
+    // Csak a forgatókönyvek pontjai: a pozícióhoz mért (átlagáras) pont az utánuk következő,
+    // külön pont – az nem kerülhet a megosztott szövegbe, akkor sem, ha a modell kevesebb
+    // forgatókönyv-pontot írt.
+    final shown = (r.outlook?.scenarios.length ?? 0) > 0 ? r.outlook!.scenarios.length.clamp(1, 4) : 3;
+    for (final bullet in outlook.bullets.take(shown)) {
       b.writeln('• $bullet');
     }
     // A forgatókönyvek mellé a figyelmeztetés is: szemléltető sávok, nem előrejelzés.

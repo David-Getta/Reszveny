@@ -1,5 +1,4 @@
-import 'dart:ui';
-
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
@@ -18,6 +17,9 @@ import 'features/portfolio/portfolio_store.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // Kiadott változatban a hibakereső naplózás néma: a rendszernaplóba (logcat, Console, a
+  // böngésző konzolja) se kerüljenek a figyelt tickerek és a hibák részletei.
+  if (kReleaseMode) debugPrint = (String? message, {int? wrapWidth}) {};
   // Dátumformázás minden támogatott nyelven.
   await initializeDateFormatting();
   final locale = await LocaleController.load();

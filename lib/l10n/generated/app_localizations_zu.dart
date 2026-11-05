@@ -213,8 +213,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get labelWeek52Low => 'Okuphansi kwamasonto angu-52';
 
   @override
-  String get labelAverageVolume10d =>
-      'Ivolumu emaphakathi (izinsuku ezingu-10)';
+  String get labelAverageVolume10d => 'Ivolumu emaphakathi (izinsuku ezingu-10)';
 
   @override
   String updatedAt(String time) {
@@ -294,8 +293,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get labelDividendGrowth5y => 'Ukukhula kwe-dividend (iminyaka engu-5)';
 
   @override
-  String get dividendNone =>
-      'Ayikho i-dividend ekhokhwe ezinyangeni ezingu-12 ezedlule.';
+  String get dividendNone => 'Ayikho i-dividend ekhokhwe ezinyangeni ezingu-12 ezedlule.';
 
   @override
   String get dividendOnYourShares => 'Kumasheya akho, ngonyaka';
@@ -366,32 +364,26 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Isevisi yokuqashelwa ayikwazanga ukucubungula lesi sithombe.';
+  String get errRecognitionRefused => 'Isevisi yokuqashelwa ayikwazanga ukucubungula lesi sithombe.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Impendulo yokuqashelwa inqamukile. Sicela uzame futhi.';
+  String get errRecognitionTruncated => 'Impendulo yokuqashelwa inqamukile. Sicela uzame futhi.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Impendulo engalindelekile evela kusevisi yokuqashelwa.';
+  String get errRecognitionBadResponse => 'Impendulo engalindelekile evela kusevisi yokuqashelwa.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Isevisi yokuqashelwa ibuyise impendulo engenalutho.';
+  String get errRecognitionEmpty => 'Isevisi yokuqashelwa ibuyise impendulo engenalutho.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Idatha yemakethe ayitholakali kule nguqulo.';
+  String get errMissingFinnhubKey => 'Idatha yemakethe ayitholakali kule nguqulo.';
 
   @override
   String get errMarketUnreachable =>
       'Ayikwazanga ukufinyelela isevisi yedatha yemakethe. Hlola uxhumano lwakho lwe-inthanethi.';
 
   @override
-  String get errMarketRateLimited =>
-      'Izicelo eziningi kakhulu kusevisi yedatha yemakethe. Sicela ulinde umzuzu.';
+  String get errMarketRateLimited => 'Izicelo eziningi kakhulu kusevisi yedatha yemakethe. Sicela ulinde umzuzu.';
 
   @override
   String errMarketHttp(String status) {
@@ -399,8 +391,7 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Impendulo engalindelekile evela kusevisi yedatha yemakethe.';
+  String get errMarketBadResponse => 'Impendulo engalindelekile evela kusevisi yedatha yemakethe.';
 
   @override
   String errNoQuote(String symbol) {
@@ -500,8 +491,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get aiRegenerate => 'Yenza kabusha';
 
   @override
-  String get aiGenerating =>
-      'Ilungiselela uhlaziyo… lokhu kungathatha umzuzu owodwa noma emibili.';
+  String get aiGenerating => 'Ilungiselela uhlaziyo… lokhu kungathatha umzuzu owodwa noma emibili.';
 
   @override
   String get aiSources => 'Imithombo';
@@ -519,8 +509,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get errAiNotConfigured => 'Izici ze-AI azitholakali kule nguqulo.';
 
   @override
-  String get errAiUnreachable =>
-      'Ayikwazanga ukufinyelela isevisi ye-AI. Hlola uxhumano lwakho lwe-inthanethi.';
+  String get errAiUnreachable => 'Ayikwazanga ukufinyelela isevisi ye-AI. Hlola uxhumano lwakho lwe-inthanethi.';
 
   @override
   String errAiHttp(String status) {
@@ -531,8 +520,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get errAiRefused => 'Isevisi ye-AI yenqabile ukuhlaziya leli sheya.';
 
   @override
-  String get errAiBadResponse =>
-      'Impendulo engalindelekile evela kusevisi ye-AI.';
+  String get errAiBadResponse => 'Impendulo engalindelekile evela kusevisi ye-AI.';
 
   @override
   String get sectionChart => 'Ishadi lentengo';
@@ -553,8 +541,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable =>
-      'Umlando wentengo awutholakali kumthombo wedatha wamanje.';
+  String get chartUnavailable => 'Umlando wentengo awutholakali kumthombo wedatha wamanje.';
 
   @override
   String get sectionStatements => 'Izitatimende zezimali (zonyaka)';
@@ -581,8 +568,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get labelOperatingCashFlow => 'Ukugeleza kwemali kokusebenza';
 
   @override
-  String get statementsUnavailable =>
-      'Izitatimende zezimali ezibikiwe azitholakali kuleli sheya.';
+  String get statementsUnavailable => 'Izitatimende zezimali ezibikiwe azitholakali kuleli sheya.';
 
   @override
   String get launchAtLogin => 'Qala lapho ungena ngemvume';
@@ -591,19 +577,16 @@ class AppLocalizationsZu extends AppLocalizations {
   String get hotkeyLabel => 'Isinqamuleli esisebenza yonke indawo';
 
   @override
-  String get hotkeyRecordHint =>
-      'Chofoza lapha, bese ucindezela inhlanganisela entsha yokhiye';
+  String get hotkeyRecordHint => 'Chofoza lapha, bese ucindezela inhlanganisela entsha yokhiye';
 
   @override
   String get hotkeyReset => 'Setha kabusha kokuzenzakalelayo';
 
   @override
-  String get pasteImage =>
-      'Namathisela isithombe esivela ebhodini lokunamathisela';
+  String get pasteImage => 'Namathisela isithombe esivela ebhodini lokunamathisela';
 
   @override
-  String get errClipboardNoImage =>
-      'Asikho isithombe ebhodini lokunamathisela.';
+  String get errClipboardNoImage => 'Asikho isithombe ebhodini lokunamathisela.';
 
   @override
   String get favorites => 'Izintandokazi';
@@ -615,8 +598,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get removeFromFavorites => 'Susa kuzintandokazi';
 
   @override
-  String get noFavorites =>
-      'Azikho izintandokazi okwamanje. Thepha inkanyezi esheyeni ukuze ulengeze.';
+  String get noFavorites => 'Azikho izintandokazi okwamanje. Thepha inkanyezi esheyeni ukuze ulengeze.';
 
   @override
   String get displayCurrency => 'Imali yokubonisa';
@@ -663,8 +645,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get updateDownloading => 'Ilanda isibuyekezo ngemuva…';
 
   @override
-  String get updateDownloaded =>
-      'Isibuyekezo silungile. Qala kabusha ukuze usifake.';
+  String get updateDownloaded => 'Isibuyekezo silungile. Qala kabusha ukuze usifake.';
 
   @override
   String get updateNow => 'Buyekeza';
@@ -673,8 +654,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get restartNow => 'Qala kabusha';
 
   @override
-  String get updatesViaStore =>
-      'Izibuyekezo zifika ngokuzenzakalelayo ngesitolo sama-app.';
+  String get updatesViaStore => 'Izibuyekezo zifika ngokuzenzakalelayo ngesitolo sama-app.';
 
   @override
   String get updateCheckFailed => 'Ayikwazanga ukuhlola izibuyekezo.';
@@ -722,8 +702,7 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Ukuzama kwakho mahhala kuphelile. Khetha uhlelo ukuze uqhubeke uhlaziya.';
+  String get trialExpired => 'Ukuzama kwakho mahhala kuphelile. Khetha uhlelo ukuze uqhubeke uhlaziya.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -759,8 +738,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get perMonth => '/ inyanga';
 
   @override
-  String get extraPacksTitle =>
-      'Udinga okwengeziwe? Thenga izinhlaziyo ezengeziwe';
+  String get extraPacksTitle => 'Udinga okwengeziwe? Thenga izinhlaziyo ezengeziwe';
 
   @override
   String get extraPacksHint =>
@@ -796,8 +774,7 @@ class AppLocalizationsZu extends AppLocalizations {
       'Azikho izinhlaziyo ezisele kulesi sikhathi. Thuthukisa uhlelo lwakho noma uthenge izinhlaziyo ezengeziwe.';
 
   @override
-  String get errTrialExpired =>
-      'Ukuzama kwakho mahhala kuphelile. Khetha uhlelo ukuze uqhubeke.';
+  String get errTrialExpired => 'Ukuzama kwakho mahhala kuphelile. Khetha uhlelo ukuze uqhubeke.';
 
   @override
   String get errNoPlan => 'Uhlaziyo lwe-AI ludinga uhlelo olusebenzayo.';
@@ -809,8 +786,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get usageTitle => 'Ukusetshenziswa';
 
   @override
-  String get demoPurchaseNote =>
-      'Ukukhokha kwedemo: ukuthenga kule nkundla kuyalingiswa nje.';
+  String get demoPurchaseNote => 'Ukukhokha kwedemo: ukuthenga kule nkundla kuyalingiswa nje.';
 
   @override
   String get mostPopular => 'Okuthandwa kakhulu';
@@ -879,12 +855,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get aiReaderExperienced => 'Onolwazi';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'Ulimi olulula; lonke igama lobuchwepheshe liyachazwa.';
+  String get aiReaderBeginnerDesc => 'Ulimi olulula; lonke igama lobuchwepheshe liyachazwa.';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'Umbhalo ominyene onamagama ajwayelekile ezezimali.';
+  String get aiReaderExperiencedDesc => 'Umbhalo ominyene onamagama ajwayelekile ezezimali.';
 
   @override
   String get aiCounterArgument => 'Impikiswano eqine kakhulu';
@@ -898,10 +872,8 @@ class AppLocalizationsZu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          'Ngohlelo lwakho ungasesha kuwebhu kuze kube izikhathi ezingu-$count ohlaziyweni ngalunye',
-      one:
-          'Ngohlelo lwakho ungasesha kuwebhu kuze kube isikhathi esingu-$count ohlaziyweni ngalunye',
+      other: 'Ngohlelo lwakho ungasesha kuwebhu kuze kube izikhathi ezingu-$count ohlaziyweni ngalunye',
+      one: 'Ngohlelo lwakho ungasesha kuwebhu kuze kube isikhathi esingu-$count ohlaziyweni ngalunye',
     );
     return '$_temp0';
   }
@@ -986,8 +958,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get upcomingEvents => 'Imicimbi ezayo';
 
   @override
-  String get outlookChartNote =>
-      'Amabanga okuqondisa; amathuba ayizilinganiso nje, hhayi izibikezelo.';
+  String get outlookChartNote => 'Amabanga okuqondisa; amathuba ayizilinganiso nje, hhayi izibikezelo.';
 
   @override
   String get accountTitle => 'I-akhawunti';
@@ -1002,12 +973,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get notSignedIn => 'Awungenile ngemvume';
 
   @override
-  String get accountBenefit =>
-      'Ngena ngemvume ukuze ukubhalisa kwakho kusebenze kuwo wonke amadivayisi akho.';
+  String get accountBenefit => 'Ngena ngemvume ukuze ukubhalisa kwakho kusebenze kuwo wonke amadivayisi akho.';
 
   @override
-  String get accountSyncedNote =>
-      'Ukubhalisa kwakho nezinhlaziyo ezisele kuyafana kuyo yonke idivayisi.';
+  String get accountSyncedNote => 'Ukubhalisa kwakho nezinhlaziyo ezisele kuyafana kuyo yonke idivayisi.';
 
   @override
   String get signInTitle => 'Ngena ku-WhatStock';
@@ -1039,16 +1008,14 @@ class AppLocalizationsZu extends AppLocalizations {
   String get errInvalidEmail => 'Sicela ufake ikheli le-imeyili elivumelekile.';
 
   @override
-  String get errSignInFailed =>
-      'Ukungena kuhlulekile. Hlola uxhumano lwakho bese uzama futhi.';
+  String get errSignInFailed => 'Ukungena kuhlulekile. Hlola uxhumano lwakho bese uzama futhi.';
 
   @override
   String get checkoutWaiting =>
       'Qedela inkokhelo kusiphequluli sakho. I-app izozibuyekeza ngokuzenzakalelayo uma sekuqediwe.';
 
   @override
-  String get paymentViaStripe =>
-      'Inkokhelo ephephile kusiphequluli sakho nge-Stripe. Khansela noma nini.';
+  String get paymentViaStripe => 'Inkokhelo ephephile kusiphequluli sakho nge-Stripe. Khansela noma nini.';
 
   @override
   String get paymentViaStore =>
@@ -1061,8 +1028,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get doubleOptionTitle => 'Cindezela i-Option kabili';
 
   @override
-  String get doubleOptionSubtitle =>
-      'Ukucindezela inkinobho ye-Option kabili ngokushesha nakho kubiza i-WhatStock.';
+  String get doubleOptionSubtitle => 'Ukucindezela inkinobho ye-Option kabili ngokushesha nakho kubiza i-WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1332,8 +1298,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get accountDeleted => 'I-akhawunti yakho isusiwe.';
 
   @override
-  String get errDeleteAccount =>
-      'I-akhawunti ayikwazanga ukususwa. Hlola uxhumano lwakho bese uzama futhi.';
+  String get errDeleteAccount => 'I-akhawunti ayikwazanga ukususwa. Hlola uxhumano lwakho bese uzama futhi.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1370,8 +1335,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get inviteTitle => 'Ukubuka kuqala okuvaliwe';
 
   @override
-  String get inviteBody =>
-      'I-WhatStock itholakala ngesimemo kuphela okwamanje. Faka ikhodi yesimemo oyitholile.';
+  String get inviteBody => 'I-WhatStock itholakala ngesimemo kuphela okwamanje. Faka ikhodi yesimemo oyitholile.';
 
   @override
   String get inviteCodeLabel => 'Ikhodi yesimemo';
@@ -1383,8 +1347,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get inviteInvalid => 'Le khodi yesimemo ayivumelekile.';
 
   @override
-  String get inviteExpired =>
-      'Lesi simemo siphelelwe yisikhathi. Cela ikhodi entsha kumuntu okumemile.';
+  String get inviteExpired => 'Lesi simemo siphelelwe yisikhathi. Cela ikhodi entsha kumuntu okumemile.';
 
   @override
   String get inviteDeviceLimit =>
@@ -1630,8 +1593,7 @@ class AppLocalizationsZu extends AppLocalizations {
       'Lowo bekungumbuzo wokugcina walolu hlaziyo. Yenza uhlaziyo olusha ukuze ubuze okwengeziwe.';
 
   @override
-  String get errAskLimit =>
-      'Ufinyelele umkhawulo wemibuzo wanamuhla. Sicela uzame futhi kusasa.';
+  String get errAskLimit => 'Ufinyelele umkhawulo wemibuzo wanamuhla. Sicela uzame futhi kusasa.';
 
   @override
   String get eventTomorrow => 'Kusasa';
@@ -1668,8 +1630,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get eventDividend => 'Isabelo senzuzo esilindelekile';
 
   @override
-  String get eventDividendEstimate =>
-      'Kulinganiselwe ezinkokhelweni ozirekhodile';
+  String get eventDividendEstimate => 'Kulinganiselwe ezinkokhelweni ozirekhodile';
 
   @override
   String get eventsHint =>
@@ -1728,8 +1689,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get notesTitle => 'Amanothi ami';
 
   @override
-  String get notesHint =>
-      'Ulithengeleni, yini oyiqaphile, yini engakwenza ulithengise?';
+  String get notesHint => 'Ulithengeleni, yini oyiqaphile, yini engakwenza ulithengise?';
 
   @override
   String get notesInfo =>
@@ -1791,8 +1751,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get syncNow => 'Vumelanisa manje';
 
   @override
-  String get syncFailed =>
-      'Ukuvumelanisa kuhlulekile. Kuzozama futhi ngokuzenzakalelayo.';
+  String get syncFailed => 'Ukuvumelanisa kuhlulekile. Kuzozama futhi ngokuzenzakalelayo.';
 
   @override
   String get alertEmailTitle => 'I-imeyili uma isexwayiso senzeka';
@@ -1921,8 +1880,7 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'Inani lenkampani yonke emakethe yamasheya: intengo yesheya × inani lamasheya.';
+  String get glossMarketCap => 'Inani lenkampani yonke emakethe yamasheya: intengo yesheya × inani lamasheya.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1997,20 +1955,17 @@ class AppLocalizationsZu extends AppLocalizations {
       'Izimpahla zesikhathi esifushane ÷ izikweletu okumele zikhokhwe phakathi konyaka. Ngaphezu kuka-1 kusho ukuthi inkampani ingakhokha izikweletu zayo eziseduze.';
 
   @override
-  String get glossRevenueGrowth =>
-      'Imali engenayo ikhule kangakanani uma iqhathaniswa nonyaka odlule.';
+  String get glossRevenueGrowth => 'Imali engenayo ikhule kangakanani uma iqhathaniswa nonyaka odlule.';
 
   @override
-  String get glossEpsGrowth =>
-      'Inzuzo ngesheya ngalinye ikhule kangakanani uma iqhathaniswa nonyaka odlule.';
+  String get glossEpsGrowth => 'Inzuzo ngesheya ngalinye ikhule kangakanani uma iqhathaniswa nonyaka odlule.';
 
   @override
   String get glossDividendYield =>
       'I-dividend yonyaka ÷ intengo yesheya: imali obungayithola ngonyaka, njengephesenti yalokho okukhokhayo.';
 
   @override
-  String get glossDividendPerShare =>
-      'I-dividend ekhokhelwe isheya elilodwa onyakeni odlule.';
+  String get glossDividendPerShare => 'I-dividend ekhokhelwe isheya elilodwa onyakeni odlule.';
 
   @override
   String get glossPayoutRatio =>
@@ -2108,10 +2063,8 @@ class AppLocalizationsZu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'Ilingana noma ingaphezu kwe-EPS elindelekile ku-$beats kumakota angu-$total okugcina',
-      one:
-          'Ilingana noma ingaphezu kwe-EPS elindelekile ku-$beats kwikota engu-$total',
+      other: 'Ilingana noma ingaphezu kwe-EPS elindelekile ku-$beats kumakota angu-$total okugcina',
+      one: 'Ilingana noma ingaphezu kwe-EPS elindelekile ku-$beats kwikota engu-$total',
     );
     return '$_temp0';
   }
@@ -2169,8 +2122,7 @@ class AppLocalizationsZu extends AppLocalizations {
       'Hlola izinombolo ngaphambi kokuthi uzengeze. Intengo yintengo yakho emaphakathi yokuthenga isheya ngalinye, hhayi intengo yanamuhla.';
 
   @override
-  String get holdingsNoPrice =>
-      'Ayikho intengo emaphakathi yokuthenga esithombeni';
+  String get holdingsNoPrice => 'Ayikho intengo emaphakathi yokuthenga esithombeni';
 
   @override
   String holdingsAdd(int count) {
@@ -2331,16 +2283,13 @@ class AppLocalizationsZu extends AppLocalizations {
       'Le akhawunti isusiwe kwenye idivayisi noma kuwebhu, ngakho idatha yayo nayo isusiwe kule divayisi.';
 
   @override
-  String get errAiUnavailable =>
-      'Isevisi ye-AI ayitholakali okwamanje. Zama futhi emizuzwini embalwa.';
+  String get errAiUnavailable => 'Isevisi ye-AI ayitholakali okwamanje. Zama futhi emizuzwini embalwa.';
 
   @override
-  String get errMarketUnavailable =>
-      'Idatha yemakethe ayitholakali okwamanje. Zama futhi emizuzwini embalwa.';
+  String get errMarketUnavailable => 'Idatha yemakethe ayitholakali okwamanje. Zama futhi emizuzwini embalwa.';
 
   @override
-  String get purchaseUnavailable =>
-      'Ukuthenga akutholakali okwamanje. Zama futhi kamuva.';
+  String get purchaseUnavailable => 'Ukuthenga akutholakali okwamanje. Zama futhi kamuva.';
 
   @override
   String get signOutLocalOnly =>
@@ -2366,8 +2315,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get backupRestore => 'Buyisela kusuka esipeleni';
 
   @override
-  String get backupRestoreHint =>
-      'Yengeza okusefayeleni; akukho lutho onalo manje olusulwayo.';
+  String get backupRestoreHint => 'Yengeza okusefayeleni; akukho lutho onalo manje olusulwayo.';
 
   @override
   String get backupRestored => 'Isipele sibuyiselwe.';
@@ -2465,8 +2413,7 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String get portfolioExportRealized =>
-      'Thumela ngaphandle inzuzo etholiwe (CSV)';
+  String get portfolioExportRealized => 'Thumela ngaphandle inzuzo etholiwe (CSV)';
 
   @override
   String get portfolioAnnualReturn => 'Inzuzo yonyaka';
@@ -2487,8 +2434,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Isexwayiso sephothifoliyo';
 
   @override
-  String get portfolioMoveAlertSubtitle =>
-      'Isaziso lapho iphothifoliyo yakho yonke inyakaza kangaka ngosuku olulodwa.';
+  String get portfolioMoveAlertSubtitle => 'Isaziso lapho iphothifoliyo yakho yonke inyakaza kangaka ngosuku olulodwa.';
 
   @override
   String get portfolioMoveAlertOff => 'Kucishiwe';
@@ -2660,8 +2606,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get portfolioTopHoldings => 'Amasheya amakhulu';
 
   @override
-  String get portfolioShareNote =>
-      'Kwabelwana ngamaphesenti kuphela, hhayi ngamanani emali.';
+  String get portfolioShareNote => 'Kwabelwana ngamaphesenti kuphela, hhayi ngamanani emali.';
 
   @override
   String portfolioPositionsCount(int count) {
@@ -2727,8 +2672,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get portfolioSampleRemove => 'Susa isampula';
 
   @override
-  String get portfolioStopsAll =>
-      'Isexwayiso sokwehla kusuka esiqongweni kuwo wonke amasheya';
+  String get portfolioStopsAll => 'Isexwayiso sokwehla kusuka esiqongweni kuwo wonke amasheya';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2777,12 +2721,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get lotNoteAdd => 'Engeza inothi';
 
   @override
-  String get lotNoteBuyHint =>
-      'Ulithengelani? Kuzongezwa kumanothi esheya, kanye nosuku.';
+  String get lotNoteBuyHint => 'Ulithengelani? Kuzongezwa kumanothi esheya, kanye nosuku.';
 
   @override
-  String get lotNoteSellHint =>
-      'Ulithengiselani? Kuzongezwa kumanothi esheya, kanye nosuku.';
+  String get lotNoteSellHint => 'Ulithengiselani? Kuzongezwa kumanothi esheya, kanye nosuku.';
 
   @override
   String get lotNoteBought => 'Kuthengiwe';
@@ -2862,8 +2804,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get activitySearchHint => 'Hlunga nge-ticker';
 
   @override
-  String get activityNoMatch =>
-      'Akukho kuthenga noma kuthengisa okuhambisana nesihlungi.';
+  String get activityNoMatch => 'Akukho kuthenga noma kuthengisa okuhambisana nesihlungi.';
 
   @override
   String portfolioImportDuplicates(int count) {
@@ -2897,12 +2838,10 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'Ngena ngemvume nge-imeyili yakho ukuze usebenzise ikhodi yomngane.';
+  String get referralErrSignIn => 'Ngena ngemvume nge-imeyili yakho ukuze usebenzise ikhodi yomngane.';
 
   @override
-  String get referralErrFull =>
-      'Le khodi isivele isetshenziswe izikhathi zonke ezivumelekile.';
+  String get referralErrFull => 'Le khodi isivele isetshenziswe izikhathi zonke ezivumelekile.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2910,12 +2849,10 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated =>
-      'Uhlaziyo lunqamuke lungakaqedi. Sicela uzame futhi – alusebenzisanga isabelo sakho.';
+  String get errAiTruncated => 'Uhlaziyo lunqamuke lungakaqedi. Sicela uzame futhi – alusebenzisanga isabelo sakho.';
 
   @override
-  String get errImageUnsupported =>
-      'Lesi sithombe asifundeki. Sigcine njenge-JPEG noma i-PNG bese uzama futhi.';
+  String get errImageUnsupported => 'Lesi sithombe asifundeki. Sigcine njenge-JPEG noma i-PNG bese uzama futhi.';
 
   @override
   String get errRateLimited =>
@@ -2935,16 +2872,14 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing =>
-      'Akukho okuthengwe ngaphambilini okutholakele ukuze kubuyiselwe.';
+  String get restoreNothing => 'Akukho okuthengwe ngaphambilini okutholakele ukuze kubuyiselwe.';
 
   @override
   String get manageSubscriptionElsewhere =>
       'Akukho ukubhalisa okungaphathwa lapha. Ukubhalisa okuthengwe ku-App Store noma ku-Google Play kuphathwa kuzilungiselelo zesitolo.';
 
   @override
-  String get backupFailed =>
-      'Isipele asikwazanga ukulondolozwa. Sicela uzame futhi.';
+  String get backupFailed => 'Isipele asikwazanga ukulondolozwa. Sicela uzame futhi.';
 
   @override
   String get syncTooLarge =>
@@ -2987,8 +2922,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get signOutAnyway => 'Phuma noma kunjalo';
 
   @override
-  String get fileTooLarge =>
-      'Leli fayela likhulu kakhulu ukuthi livulwe lapha.';
+  String get fileTooLarge => 'Leli fayela likhulu kakhulu ukuthi livulwe lapha.';
 
   @override
   String portfolioAnnualSummaryYear(String year) {
@@ -3081,8 +3015,7 @@ class AppLocalizationsZu extends AppLocalizations {
       'Ulwazi olujwayelekile olwenziwe yi-AI mayelana nokwakheka kwephothifoliyo yakho. Alubheki izinhloso zakho, isimo sakho sezimali noma isimo sakho sentela, futhi aluyona isincomo esiqondene nawe noma iseluleko sokutshala imali.';
 
   @override
-  String get briefNotificationTitle =>
-      'Isifinyezo se-AI · Namuhla namasheya akho';
+  String get briefNotificationTitle => 'Isifinyezo se-AI · Namuhla namasheya akho';
 
   @override
   String get portfolioGoalSet => 'Setha umgomo';
@@ -3240,8 +3173,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get portfolioSplitRatio => 'Isilinganiso (amasha : amadala)';
 
   @override
-  String get portfolioSplitRatioError =>
-      'Faka isilinganiso esifana no-10:1, noma 1:10 sokuhlukaniswa okubuyela emuva.';
+  String get portfolioSplitRatioError => 'Faka isilinganiso esifana no-10:1, noma 1:10 sokuhlukaniswa okubuyela emuva.';
 
   @override
   String get portfolioSplitDate => 'Usuku lokuhlukaniswa';
@@ -3406,12 +3338,10 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String get signalCrossedAbove =>
-      'liweqile ngaphezulu kwesilinganiso sezinsuku ezingu-200';
+  String get signalCrossedAbove => 'liweqile ngaphezulu kwesilinganiso sezinsuku ezingu-200';
 
   @override
-  String get signalCrossedBelow =>
-      'liweqile ngaphansi kwesilinganiso sezinsuku ezingu-200';
+  String get signalCrossedBelow => 'liweqile ngaphansi kwesilinganiso sezinsuku ezingu-200';
 
   @override
   String get signalAlertsTitle => 'Izaziso zezimpawu zobuchwepheshe';

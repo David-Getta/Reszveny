@@ -13,8 +13,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline =>
-      'Φωτογραφίστε μια μετοχή και μάθετε τα πάντα για αυτήν.';
+  String get homeTagline => 'Φωτογραφίστε μια μετοχή και μάθετε τα πάντα για αυτήν.';
 
   @override
   String get homeHint =>
@@ -112,8 +111,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get errorGeneric => 'Κάτι πήγε στραβά.';
 
   @override
-  String get errorSectionUnavailable =>
-      'Δεν ήταν δυνατή η φόρτωση αυτής της ενότητας.';
+  String get errorSectionUnavailable => 'Δεν ήταν δυνατή η φόρτωση αυτής της ενότητας.';
 
   @override
   String get notAvailable => 'μ/δ';
@@ -295,8 +293,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get labelDividendGrowth5y => 'Αύξηση μερίσματος (5 έτη)';
 
   @override
-  String get dividendNone =>
-      'Δεν καταβλήθηκε μέρισμα τους τελευταίους 12 μήνες.';
+  String get dividendNone => 'Δεν καταβλήθηκε μέρισμα τους τελευταίους 12 μήνες.';
 
   @override
   String get dividendOnYourShares => 'Στις μετοχές σας, ετησίως';
@@ -321,12 +318,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count αναλυτές',
-      one: '1 αναλυτής',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count αναλυτές', one: '1 αναλυτής');
     return '$_temp0';
   }
 
@@ -367,32 +359,26 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused =>
-      'Η υπηρεσία αναγνώρισης δεν μπόρεσε να επεξεργαστεί αυτήν την εικόνα.';
+  String get errRecognitionRefused => 'Η υπηρεσία αναγνώρισης δεν μπόρεσε να επεξεργαστεί αυτήν την εικόνα.';
 
   @override
-  String get errRecognitionTruncated =>
-      'Η απάντηση της αναγνώρισης διακόπηκε. Δοκιμάστε ξανά.';
+  String get errRecognitionTruncated => 'Η απάντηση της αναγνώρισης διακόπηκε. Δοκιμάστε ξανά.';
 
   @override
-  String get errRecognitionBadResponse =>
-      'Μη αναμενόμενη απάντηση από την υπηρεσία αναγνώρισης.';
+  String get errRecognitionBadResponse => 'Μη αναμενόμενη απάντηση από την υπηρεσία αναγνώρισης.';
 
   @override
-  String get errRecognitionEmpty =>
-      'Η υπηρεσία αναγνώρισης επέστρεψε κενή απάντηση.';
+  String get errRecognitionEmpty => 'Η υπηρεσία αναγνώρισης επέστρεψε κενή απάντηση.';
 
   @override
-  String get errMissingFinnhubKey =>
-      'Τα δεδομένα αγοράς δεν είναι διαθέσιμα σε αυτή την έκδοση.';
+  String get errMissingFinnhubKey => 'Τα δεδομένα αγοράς δεν είναι διαθέσιμα σε αυτή την έκδοση.';
 
   @override
   String get errMarketUnreachable =>
       'Δεν ήταν δυνατή η σύνδεση με την υπηρεσία δεδομένων αγοράς. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
 
   @override
-  String get errMarketRateLimited =>
-      'Πάρα πολλά αιτήματα προς την υπηρεσία δεδομένων αγοράς. Περιμένετε ένα λεπτό.';
+  String get errMarketRateLimited => 'Πάρα πολλά αιτήματα προς την υπηρεσία δεδομένων αγοράς. Περιμένετε ένα λεπτό.';
 
   @override
   String errMarketHttp(String status) {
@@ -400,8 +386,7 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse =>
-      'Μη αναμενόμενη απάντηση από την υπηρεσία δεδομένων αγοράς.';
+  String get errMarketBadResponse => 'Μη αναμενόμενη απάντηση από την υπηρεσία δεδομένων αγοράς.';
 
   @override
   String errNoQuote(String symbol) {
@@ -501,8 +486,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get aiRegenerate => 'Δημιουργία ξανά';
 
   @override
-  String get aiGenerating =>
-      'Προετοιμασία της ανάλυσης… μπορεί να χρειαστεί ένα ή δύο λεπτά.';
+  String get aiGenerating => 'Προετοιμασία της ανάλυσης… μπορεί να χρειαστεί ένα ή δύο λεπτά.';
 
   @override
   String get aiSources => 'Πηγές';
@@ -517,12 +501,10 @@ class AppLocalizationsEl extends AppLocalizations {
       'Ανάλυση που δημιουργήθηκε από AI με βάση δημόσια δεδομένα και πρόσφατες ειδήσεις. Μπορεί να περιέχει λάθη ή να μην είναι ενημερωμένη και δεν αποτελεί επενδυτική συμβουλή.';
 
   @override
-  String get errAiNotConfigured =>
-      'Οι λειτουργίες AI δεν είναι διαθέσιμες σε αυτή την έκδοση.';
+  String get errAiNotConfigured => 'Οι λειτουργίες AI δεν είναι διαθέσιμες σε αυτή την έκδοση.';
 
   @override
-  String get errAiUnreachable =>
-      'Δεν ήταν δυνατή η σύνδεση με την υπηρεσία AI. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
+  String get errAiUnreachable => 'Δεν ήταν δυνατή η σύνδεση με την υπηρεσία AI. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
 
   @override
   String errAiHttp(String status) {
@@ -530,8 +512,7 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused =>
-      'Η υπηρεσία AI αρνήθηκε να αναλύσει αυτή τη μετοχή.';
+  String get errAiRefused => 'Η υπηρεσία AI αρνήθηκε να αναλύσει αυτή τη μετοχή.';
 
   @override
   String get errAiBadResponse => 'Μη αναμενόμενη απάντηση από την υπηρεσία AI.';
@@ -555,8 +536,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get rangeFiveYears => '5 έτη';
 
   @override
-  String get chartUnavailable =>
-      'Το ιστορικό τιμών δεν είναι διαθέσιμο από την τρέχουσα πηγή δεδομένων.';
+  String get chartUnavailable => 'Το ιστορικό τιμών δεν είναι διαθέσιμο από την τρέχουσα πηγή δεδομένων.';
 
   @override
   String get sectionStatements => 'Οικονομικές καταστάσεις (ετήσιες)';
@@ -593,8 +573,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get hotkeyLabel => 'Γενική συντόμευση';
 
   @override
-  String get hotkeyRecordHint =>
-      'Κάντε κλικ εδώ και μετά πατήστε τον νέο συνδυασμό πλήκτρων';
+  String get hotkeyRecordHint => 'Κάντε κλικ εδώ και μετά πατήστε τον νέο συνδυασμό πλήκτρων';
 
   @override
   String get hotkeyReset => 'Επαναφορά προεπιλογής';
@@ -615,8 +594,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get removeFromFavorites => 'Αφαίρεση από τα αγαπημένα';
 
   @override
-  String get noFavorites =>
-      'Δεν υπάρχουν αγαπημένα ακόμη. Πατήστε το αστέρι σε μια μετοχή για να την προσθέσετε.';
+  String get noFavorites => 'Δεν υπάρχουν αγαπημένα ακόμη. Πατήστε το αστέρι σε μια μετοχή για να την προσθέσετε.';
 
   @override
   String get displayCurrency => 'Νόμισμα εμφάνισης';
@@ -663,8 +641,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get updateDownloading => 'Λήψη της ενημέρωσης στο παρασκήνιο…';
 
   @override
-  String get updateDownloaded =>
-      'Η ενημέρωση είναι έτοιμη. Επανεκκινήστε για να την εγκαταστήσετε.';
+  String get updateDownloaded => 'Η ενημέρωση είναι έτοιμη. Επανεκκινήστε για να την εγκαταστήσετε.';
 
   @override
   String get updateNow => 'Ενημέρωση';
@@ -673,8 +650,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get restartNow => 'Επανεκκίνηση';
 
   @override
-  String get updatesViaStore =>
-      'Οι ενημερώσεις έρχονται αυτόματα μέσω του καταστήματος εφαρμογών.';
+  String get updatesViaStore => 'Οι ενημερώσεις έρχονται αυτόματα μέσω του καταστήματος εφαρμογών.';
 
   @override
   String get updateCheckFailed => 'Δεν ήταν δυνατός ο έλεγχος για ενημερώσεις.';
@@ -722,8 +698,7 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get trialExpired =>
-      'Η δωρεάν δοκιμή σας έληξε. Επιλέξτε ένα πρόγραμμα για να συνεχίσετε τις αναλύσεις.';
+  String get trialExpired => 'Η δωρεάν δοκιμή σας έληξε. Επιλέξτε ένα πρόγραμμα για να συνεχίσετε τις αναλύσεις.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -759,12 +734,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get perMonth => '/ μήνα';
 
   @override
-  String get extraPacksTitle =>
-      'Χρειάζεστε περισσότερες; Αγοράστε επιπλέον αναλύσεις';
+  String get extraPacksTitle => 'Χρειάζεστε περισσότερες; Αγοράστε επιπλέον αναλύσεις';
 
   @override
-  String get extraPacksHint =>
-      'Οι επιπλέον αναλύσεις δεν λήγουν ποτέ και χρησιμοποιούνται μετά το μηνιαίο όριό σας.';
+  String get extraPacksHint => 'Οι επιπλέον αναλύσεις δεν λήγουν ποτέ και χρησιμοποιούνται μετά το μηνιαίο όριό σας.';
 
   @override
   String get buy => 'Αγορά';
@@ -796,8 +769,7 @@ class AppLocalizationsEl extends AppLocalizations {
       'Δεν σας απομένουν αναλύσεις για αυτήν την περίοδο. Αναβαθμίστε το πρόγραμμά σας ή αγοράστε επιπλέον αναλύσεις.';
 
   @override
-  String get errTrialExpired =>
-      'Η δωρεάν δοκιμή σας έληξε. Επιλέξτε ένα πρόγραμμα για να συνεχίσετε.';
+  String get errTrialExpired => 'Η δωρεάν δοκιμή σας έληξε. Επιλέξτε ένα πρόγραμμα για να συνεχίσετε.';
 
   @override
   String get errNoPlan => 'Για την ανάλυση AI απαιτείται ενεργό πρόγραμμα.';
@@ -809,8 +781,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get usageTitle => 'Χρήση';
 
   @override
-  String get demoPurchaseNote =>
-      'Δοκιμαστική χρέωση: οι αγορές σε αυτήν την πλατφόρμα είναι προσομοίωση.';
+  String get demoPurchaseNote => 'Δοκιμαστική χρέωση: οι αγορές σε αυτήν την πλατφόρμα είναι προσομοίωση.';
 
   @override
   String get mostPopular => 'Πιο δημοφιλές';
@@ -879,12 +850,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get aiReaderExperienced => 'Έμπειρος';
 
   @override
-  String get aiReaderBeginnerDesc =>
-      'Απλή γλώσσα· κάθε τεχνικός όρος εξηγείται.';
+  String get aiReaderBeginnerDesc => 'Απλή γλώσσα· κάθε τεχνικός όρος εξηγείται.';
 
   @override
-  String get aiReaderExperiencedDesc =>
-      'Πιο πυκνό κείμενο με καθιερωμένη χρηματοοικονομική ορολογία.';
+  String get aiReaderExperiencedDesc => 'Πιο πυκνό κείμενο με καθιερωμένη χρηματοοικονομική ορολογία.';
 
   @override
   String get aiCounterArgument => 'Ισχυρότερο αντεπιχείρημα';
@@ -984,8 +953,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get upcomingEvents => 'Επερχόμενα γεγονότα';
 
   @override
-  String get outlookChartNote =>
-      'Ενδεικτικά εύρη· οι πιθανότητες είναι χονδρικές εκτιμήσεις, όχι προβλέψεις.';
+  String get outlookChartNote => 'Ενδεικτικά εύρη· οι πιθανότητες είναι χονδρικές εκτιμήσεις, όχι προβλέψεις.';
 
   @override
   String get accountTitle => 'Λογαριασμός';
@@ -1000,12 +968,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get notSignedIn => 'Δεν έχετε συνδεθεί';
 
   @override
-  String get accountBenefit =>
-      'Συνδεθείτε για να λειτουργεί η συνδρομή σας σε όλες τις συσκευές σας.';
+  String get accountBenefit => 'Συνδεθείτε για να λειτουργεί η συνδρομή σας σε όλες τις συσκευές σας.';
 
   @override
-  String get accountSyncedNote =>
-      'Η συνδρομή σας και οι αναλύσεις που απομένουν είναι ίδιες σε κάθε συσκευή.';
+  String get accountSyncedNote => 'Η συνδρομή σας και οι αναλύσεις που απομένουν είναι ίδιες σε κάθε συσκευή.';
 
   @override
   String get signInTitle => 'Σύνδεση στο WhatStock';
@@ -1037,16 +1003,14 @@ class AppLocalizationsEl extends AppLocalizations {
   String get errInvalidEmail => 'Εισαγάγετε μια έγκυρη διεύθυνση email.';
 
   @override
-  String get errSignInFailed =>
-      'Η σύνδεση απέτυχε. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.';
+  String get errSignInFailed => 'Η σύνδεση απέτυχε. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.';
 
   @override
   String get checkoutWaiting =>
       'Ολοκληρώστε την πληρωμή στο πρόγραμμα περιήγησης. Η εφαρμογή θα ενημερωθεί αυτόματα μόλις ολοκληρωθεί.';
 
   @override
-  String get paymentViaStripe =>
-      'Ασφαλής πληρωμή στο πρόγραμμα περιήγησης μέσω Stripe. Ακύρωση οποιαδήποτε στιγμή.';
+  String get paymentViaStripe => 'Ασφαλής πληρωμή στο πρόγραμμα περιήγησης μέσω Stripe. Ακύρωση οποιαδήποτε στιγμή.';
 
   @override
   String get paymentViaStore =>
@@ -1059,8 +1023,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get doubleOptionTitle => 'Διπλό πάτημα του Option';
 
   @override
-  String get doubleOptionSubtitle =>
-      'Το WhatStock εμφανίζεται επίσης αν πατήσετε γρήγορα δύο φορές το πλήκτρο Option.';
+  String get doubleOptionSubtitle => 'Το WhatStock εμφανίζεται επίσης αν πατήσετε γρήγορα δύο φορές το πλήκτρο Option.';
 
   @override
   String get doubleOptionPermission =>
@@ -1082,12 +1045,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '$years έτη',
-      one: '1 έτος',
-    );
+    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years έτη', one: '1 έτος');
     return '$_temp0';
   }
 
@@ -1148,8 +1106,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get portfolioAdd => 'Προσθήκη';
 
   @override
-  String get portfolioInvalidNumber =>
-      'Εισαγάγετε αριθμό μεγαλύτερο από το μηδέν.';
+  String get portfolioInvalidNumber => 'Εισαγάγετε αριθμό μεγαλύτερο από το μηδέν.';
 
   @override
   String portfolioAdded(String symbol) {
@@ -1194,8 +1151,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get portfolioRemove => 'Αφαίρεση';
 
   @override
-  String get portfolioExcluded =>
-      'Οι θέσεις χωρίς τιμή ή ισοτιμία δεν περιλαμβάνονται στα σύνολα.';
+  String get portfolioExcluded => 'Οι θέσεις χωρίς τιμή ή ισοτιμία δεν περιλαμβάνονται στα σύνολα.';
 
   @override
   String get priceAlerts => 'Ειδοποιήσεις τιμής';
@@ -1237,8 +1193,7 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty =>
-      'Δεν υπάρχουν ακόμη ειδοποιήσεις. Ανοίξτε μια μετοχή και πατήστε το καμπανάκι.';
+  String get alertsEmpty => 'Δεν υπάρχουν ακόμη ειδοποιήσεις. Ανοίξτε μια μετοχή και πατήστε το καμπανάκι.';
 
   @override
   String get alertsNote =>
@@ -1331,8 +1286,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get accountDeleted => 'Ο λογαριασμός σας διαγράφηκε.';
 
   @override
-  String get errDeleteAccount =>
-      'Δεν ήταν δυνατή η διαγραφή του λογαριασμού. Ελέγξτε τη σύνδεση και δοκιμάστε ξανά.';
+  String get errDeleteAccount => 'Δεν ήταν δυνατή η διαγραφή του λογαριασμού. Ελέγξτε τη σύνδεση και δοκιμάστε ξανά.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1382,12 +1336,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get inviteInvalid => 'Αυτός ο κωδικός πρόσκλησης δεν είναι έγκυρος.';
 
   @override
-  String get inviteExpired =>
-      'Αυτή η πρόσκληση έχει λήξει. Ζητήστε νέο κωδικό από το άτομο που σας προσκάλεσε.';
+  String get inviteExpired => 'Αυτή η πρόσκληση έχει λήξει. Ζητήστε νέο κωδικό από το άτομο που σας προσκάλεσε.';
 
   @override
-  String get inviteDeviceLimit =>
-      'Αυτός ο κωδικός πρόσκλησης χρησιμοποιείται ήδη στον μέγιστο αριθμό συσκευών.';
+  String get inviteDeviceLimit => 'Αυτός ο κωδικός πρόσκλησης χρησιμοποιείται ήδη στον μέγιστο αριθμό συσκευών.';
 
   @override
   String get previewConfidential => 'Εμπιστευτική προεπισκόπηση';
@@ -1465,8 +1417,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get shareCardFooter => 'Δημιουργήθηκε με το WhatStock';
 
   @override
-  String get shareCardDisclaimer =>
-      'Ανάλυση AI · ενδεικτικά σενάρια, όχι προβλέψεις · όχι επενδυτική συμβουλή';
+  String get shareCardDisclaimer => 'Ανάλυση AI · ενδεικτικά σενάρια, όχι προβλέψεις · όχι επενδυτική συμβουλή';
 
   @override
   String get referralTitle => 'Προσκαλέστε φίλους';
@@ -1508,16 +1459,13 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown =>
-      'Αυτός ο κωδικός δεν υπάρχει. Ελέγξτε τον και δοκιμάστε ξανά.';
+  String get referralErrUnknown => 'Αυτός ο κωδικός δεν υπάρχει. Ελέγξτε τον και δοκιμάστε ξανά.';
 
   @override
-  String get referralErrOwn =>
-      'Δεν μπορείτε να εξαργυρώσετε τον δικό σας κωδικό.';
+  String get referralErrOwn => 'Δεν μπορείτε να εξαργυρώσετε τον δικό σας κωδικό.';
 
   @override
-  String get referralErrAlready =>
-      'Έχετε ήδη εξαργυρώσει τον κωδικό ενός φίλου.';
+  String get referralErrAlready => 'Έχετε ήδη εξαργυρώσει τον κωδικό ενός φίλου.';
 
   @override
   String referralShareText(String code, int count) {
@@ -1632,20 +1580,14 @@ class AppLocalizationsEl extends AppLocalizations {
       'Αυτή ήταν η τελευταία ερώτηση για αυτή την ανάλυση. Δημιουργήστε νέα ανάλυση για να ρωτήσετε κι άλλα.';
 
   @override
-  String get errAskLimit =>
-      'Φτάσατε το σημερινό όριο ερωτήσεων. Δοκιμάστε ξανά αύριο.';
+  String get errAskLimit => 'Φτάσατε το σημερινό όριο ερωτήσεων. Δοκιμάστε ξανά αύριο.';
 
   @override
   String get eventTomorrow => 'Αύριο';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'σε $days ημέρες',
-      one: 'σε 1 ημέρα',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'σε $days ημέρες', one: 'σε 1 ημέρα');
     return '$_temp0';
   }
 
@@ -1670,8 +1612,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get eventDividend => 'Αναμενόμενο μέρισμα';
 
   @override
-  String get eventDividendEstimate =>
-      'Εκτίμηση από τις καταγεγραμμένες πληρωμές σας';
+  String get eventDividendEstimate => 'Εκτίμηση από τις καταγεγραμμένες πληρωμές σας';
 
   @override
   String get eventsHint =>
@@ -1730,8 +1671,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get notesTitle => 'Οι σημειώσεις μου';
 
   @override
-  String get notesHint =>
-      'Γιατί την αγοράσατε, τι παρακολουθείτε, τι θα σας έκανε να πουλήσετε;';
+  String get notesHint => 'Γιατί την αγοράσατε, τι παρακολουθείτε, τι θα σας έκανε να πουλήσετε;';
 
   @override
   String get notesInfo =>
@@ -1793,8 +1733,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get syncNow => 'Συγχρονισμός τώρα';
 
   @override
-  String get syncFailed =>
-      'Ο συγχρονισμός απέτυχε. Θα γίνει αυτόματα νέα προσπάθεια.';
+  String get syncFailed => 'Ο συγχρονισμός απέτυχε. Θα γίνει αυτόματα νέα προσπάθεια.';
 
   @override
   String get alertEmailTitle => 'Email όταν ενεργοποιείται μια ειδοποίηση';
@@ -1923,8 +1862,7 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap =>
-      'Πόσο αξίζει ολόκληρη η εταιρεία στο χρηματιστήριο: τιμή μετοχής × αριθμός μετοχών.';
+  String get glossMarketCap => 'Πόσο αξίζει ολόκληρη η εταιρεία στο χρηματιστήριο: τιμή μετοχής × αριθμός μετοχών.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1963,8 +1901,7 @@ class AppLocalizationsEl extends AppLocalizations {
       'Πόσο τείνει η μετοχή να κινείται μαζί με την αγορά: 1 = όπως η αγορά, 1,5 = περίπου 50% μεγαλύτερες διακυμάνσεις, κάτω από 1 = πιο ήρεμη.';
 
   @override
-  String get glossRevenueTtm =>
-      'Συνολικές πωλήσεις των τελευταίων 12 μηνών, πριν από οποιοδήποτε κόστος.';
+  String get glossRevenueTtm => 'Συνολικές πωλήσεις των τελευταίων 12 μηνών, πριν από οποιοδήποτε κόστος.';
 
   @override
   String get glossNetIncomeTtm =>
@@ -1999,20 +1936,17 @@ class AppLocalizationsEl extends AppLocalizations {
       'Βραχυπρόθεσμο ενεργητικό ÷ υποχρεώσεις εντός έτους. Πάνω από 1 η εταιρεία μπορεί να καλύψει τις άμεσες υποχρεώσεις της.';
 
   @override
-  String get glossRevenueGrowth =>
-      'Πόσο αυξήθηκαν τα έσοδα σε σύγκριση με ένα χρόνο πριν.';
+  String get glossRevenueGrowth => 'Πόσο αυξήθηκαν τα έσοδα σε σύγκριση με ένα χρόνο πριν.';
 
   @override
-  String get glossEpsGrowth =>
-      'Πόσο αυξήθηκε το κέρδος ανά μετοχή σε σύγκριση με ένα χρόνο πριν.';
+  String get glossEpsGrowth => 'Πόσο αυξήθηκε το κέρδος ανά μετοχή σε σύγκριση με ένα χρόνο πριν.';
 
   @override
   String get glossDividendYield =>
       'Ετήσιο μέρισμα ÷ τιμή μετοχής: το εισόδημα σε μετρητά που θα παίρνατε ετησίως, ως ποσοστό του ποσού που πληρώνετε.';
 
   @override
-  String get glossDividendPerShare =>
-      'Το μέρισμα που καταβλήθηκε ανά μετοχή τον τελευταίο χρόνο.';
+  String get glossDividendPerShare => 'Το μέρισμα που καταβλήθηκε ανά μετοχή τον τελευταίο χρόνο.';
 
   @override
   String get glossPayoutRatio =>
@@ -2110,8 +2044,7 @@ class AppLocalizationsEl extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other:
-          'Στο αναμενόμενο EPS ή υψηλότερα σε $beats από τα τελευταία $total τρίμηνα',
+      other: 'Στο αναμενόμενο EPS ή υψηλότερα σε $beats από τα τελευταία $total τρίμηνα',
       one: 'Στο αναμενόμενο EPS ή υψηλότερα σε $beats από 1 τρίμηνο',
     );
     return '$_temp0';
@@ -2228,23 +2161,13 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count αγορές',
-      one: '1 αγορά',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count αγορές', one: '1 αγορά');
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count πωλήσεις',
-      one: '1 πώληση',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count πωλήσεις', one: '1 πώληση');
     return '$_temp0';
   }
 
@@ -2264,8 +2187,7 @@ class AppLocalizationsEl extends AppLocalizations {
       'Αγορές και πωλήσεις στην ανοιχτή αγορά από στελέχη και μέλη ΔΣ τις τελευταίες 90 ημέρες (SEC Form 4). Δεν υπολογίζονται ασκήσεις δικαιωμάτων προαίρεσης και παραχωρήσεις μετοχών.';
 
   @override
-  String get insiderNone =>
-      'Καμία αγορά ή πώληση εσωτερικών στην ανοιχτή αγορά τις τελευταίες 90 ημέρες.';
+  String get insiderNone => 'Καμία αγορά ή πώληση εσωτερικών στην ανοιχτή αγορά τις τελευταίες 90 ημέρες.';
 
   @override
   String get analystTrend => 'Πώς άλλαξαν οι απόψεις μήνα με τον μήνα';
@@ -2308,12 +2230,10 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get sharedToClipboard =>
-      'Αντιγράφηκε στο πρόχειρο – επικολλήστε το όπου θέλετε να το κοινοποιήσετε.';
+  String get sharedToClipboard => 'Αντιγράφηκε στο πρόχειρο – επικολλήστε το όπου θέλετε να το κοινοποιήσετε.';
 
   @override
-  String get glossaryNoMatch =>
-      'Κανένας όρος δεν ταιριάζει με την αναζήτησή σας.';
+  String get glossaryNoMatch => 'Κανένας όρος δεν ταιριάζει με την αναζήτησή σας.';
 
   @override
   String get cashInvalidAmount => 'Εισαγάγετε ποσό 0 ή μεγαλύτερο.';
@@ -2332,16 +2252,14 @@ class AppLocalizationsEl extends AppLocalizations {
       'Αυτός ο λογαριασμός διαγράφηκε σε άλλη συσκευή ή στο web, οπότε τα δεδομένα του αφαιρέθηκαν και από αυτή τη συσκευή.';
 
   @override
-  String get errAiUnavailable =>
-      'Η υπηρεσία AI δεν είναι διαθέσιμη αυτή τη στιγμή. Δοκιμάστε ξανά σε λίγα λεπτά.';
+  String get errAiUnavailable => 'Η υπηρεσία AI δεν είναι διαθέσιμη αυτή τη στιγμή. Δοκιμάστε ξανά σε λίγα λεπτά.';
 
   @override
   String get errMarketUnavailable =>
       'Τα δεδομένα αγοράς δεν είναι διαθέσιμα αυτή τη στιγμή. Δοκιμάστε ξανά σε λίγα λεπτά.';
 
   @override
-  String get purchaseUnavailable =>
-      'Οι αγορές δεν είναι διαθέσιμες αυτή τη στιγμή. Δοκιμάστε ξανά αργότερα.';
+  String get purchaseUnavailable => 'Οι αγορές δεν είναι διαθέσιμες αυτή τη στιγμή. Δοκιμάστε ξανά αργότερα.';
 
   @override
   String get signOutLocalOnly =>
@@ -2367,15 +2285,13 @@ class AppLocalizationsEl extends AppLocalizations {
   String get backupRestore => 'Επαναφορά από αντίγραφο ασφαλείας';
 
   @override
-  String get backupRestoreHint =>
-      'Προσθέτει ό,τι υπάρχει στο αρχείο· τίποτα από όσα έχετε τώρα δεν διαγράφεται.';
+  String get backupRestoreHint => 'Προσθέτει ό,τι υπάρχει στο αρχείο· τίποτα από όσα έχετε τώρα δεν διαγράφεται.';
 
   @override
   String get backupRestored => 'Το αντίγραφο ασφαλείας επαναφέρθηκε.';
 
   @override
-  String get backupInvalid =>
-      'Αυτό το αρχείο δεν είναι αντίγραφο ασφαλείας του WhatStock.';
+  String get backupInvalid => 'Αυτό το αρχείο δεν είναι αντίγραφο ασφαλείας του WhatStock.';
 
   @override
   String get allocationPositions => 'Μετοχές';
@@ -2467,8 +2383,7 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get portfolioExportRealized =>
-      'Εξαγωγή πραγματοποιηθέντων κερδών (CSV)';
+  String get portfolioExportRealized => 'Εξαγωγή πραγματοποιηθέντων κερδών (CSV)';
 
   @override
   String get portfolioAnnualReturn => 'Ετήσια απόδοση';
@@ -2666,12 +2581,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count θέσεις',
-      one: '1 θέση',
-    );
+    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count θέσεις', one: '1 θέση');
     return '$_temp0';
   }
 
@@ -2748,8 +2658,7 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get lotPreviewRealized =>
-      'Πραγματοποιημένο από αυτή την πώληση (FIFO):';
+  String get lotPreviewRealized => 'Πραγματοποιημένο από αυτή την πώληση (FIFO):';
 
   @override
   String lotPreviewAverage(String after, String before) {
@@ -2778,12 +2687,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get lotNoteAdd => 'Προσθήκη σημείωσης';
 
   @override
-  String get lotNoteBuyHint =>
-      'Γιατί αγοράζετε; Καταχωρίζεται στις σημειώσεις της μετοχής με την ημερομηνία.';
+  String get lotNoteBuyHint => 'Γιατί αγοράζετε; Καταχωρίζεται στις σημειώσεις της μετοχής με την ημερομηνία.';
 
   @override
-  String get lotNoteSellHint =>
-      'Γιατί πουλάτε; Καταχωρίζεται στις σημειώσεις της μετοχής με την ημερομηνία.';
+  String get lotNoteSellHint => 'Γιατί πουλάτε; Καταχωρίζεται στις σημειώσεις της μετοχής με την ημερομηνία.';
 
   @override
   String get lotNoteBought => 'Αγοράστηκαν';
@@ -2793,23 +2700,13 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(
-      months,
-      locale: localeName,
-      other: '$months μήνες',
-      one: '$months μήνας',
-    );
+    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months μήνες', one: '$months μήνας');
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days ημέρες',
-      one: '$days ημέρα',
-    );
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days ημέρες', one: '$days ημέρα');
     return '$_temp0';
   }
 
@@ -2897,12 +2794,10 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn =>
-      'Συνδεθείτε με το email σας για να εξαργυρώσετε τον κωδικό ενός φίλου.';
+  String get referralErrSignIn => 'Συνδεθείτε με το email σας για να εξαργυρώσετε τον κωδικό ενός φίλου.';
 
   @override
-  String get referralErrFull =>
-      'Αυτός ο κωδικός έχει ήδη εξαργυρωθεί τον μέγιστο αριθμό φορών.';
+  String get referralErrFull => 'Αυτός ο κωδικός έχει ήδη εξαργυρωθεί τον μέγιστο αριθμό φορών.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2910,8 +2805,7 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated =>
-      'Η ανάλυση διακόπηκε πριν ολοκληρωθεί. Δοκιμάστε ξανά – δεν προσμετρήθηκε στο όριό σας.';
+  String get errAiTruncated => 'Η ανάλυση διακόπηκε πριν ολοκληρωθεί. Δοκιμάστε ξανά – δεν προσμετρήθηκε στο όριό σας.';
 
   @override
   String get errImageUnsupported =>
@@ -2935,16 +2829,14 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing =>
-      'Δεν βρέθηκαν προηγούμενες αγορές για επαναφορά.';
+  String get restoreNothing => 'Δεν βρέθηκαν προηγούμενες αγορές για επαναφορά.';
 
   @override
   String get manageSubscriptionElsewhere =>
       'Δεν υπάρχει συνδρομή για διαχείριση εδώ. Η διαχείριση μιας συνδρομής που αγοράστηκε στο App Store ή στο Google Play γίνεται από τις ρυθμίσεις του καταστήματος.';
 
   @override
-  String get backupFailed =>
-      'Δεν ήταν δυνατή η αποθήκευση του αντιγράφου ασφαλείας. Δοκιμάστε ξανά.';
+  String get backupFailed => 'Δεν ήταν δυνατή η αποθήκευση του αντιγράφου ασφαλείας. Δοκιμάστε ξανά.';
 
   @override
   String get syncTooLarge =>
@@ -2964,10 +2856,8 @@ class AppLocalizationsEl extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other:
-          '$count μερίσματα σε $currencies δεν έχουν ισοτιμία και δεν περιλαμβάνονται στα σύνολα.',
-      one:
-          '1 μέρισμα σε $currencies δεν έχει ισοτιμία και δεν περιλαμβάνεται στα σύνολα.',
+      other: '$count μερίσματα σε $currencies δεν έχουν ισοτιμία και δεν περιλαμβάνονται στα σύνολα.',
+      one: '1 μέρισμα σε $currencies δεν έχει ισοτιμία και δεν περιλαμβάνεται στα σύνολα.',
     );
     return '$_temp0';
   }
@@ -2987,8 +2877,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get signOutAnyway => 'Αποσύνδεση παρ\' όλα αυτά';
 
   @override
-  String get fileTooLarge =>
-      'Αυτό το αρχείο είναι πολύ μεγάλο για να ανοίξει εδώ.';
+  String get fileTooLarge => 'Αυτό το αρχείο είναι πολύ μεγάλο για να ανοίξει εδώ.';
 
   @override
   String portfolioAnnualSummaryYear(String year) {
@@ -3239,8 +3128,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get portfolioSplitRatio => 'Αναλογία (νέες : παλιές)';
 
   @override
-  String get portfolioSplitRatioError =>
-      'Εισαγάγετε μια αναλογία όπως 10:1, ή 1:10 για αντίστροφη διάσπαση.';
+  String get portfolioSplitRatioError => 'Εισαγάγετε μια αναλογία όπως 10:1, ή 1:10 για αντίστροφη διάσπαση.';
 
   @override
   String get portfolioSplitDate => 'Ημερομηνία διάσπασης';
@@ -3424,8 +3312,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get glossaryPageTitle => 'Γλωσσάρι';
 
   @override
-  String get glossaryPageSubtitle =>
-      'Απλές επεξηγήσεις για κάθε μέγεθος της εφαρμογής, από το P/E έως τον RSI';
+  String get glossaryPageSubtitle => 'Απλές επεξηγήσεις για κάθε μέγεθος της εφαρμογής, από το P/E έως τον RSI';
 
   @override
   String get glossarySearchHint => 'Αναζήτηση στο γλωσσάρι';
