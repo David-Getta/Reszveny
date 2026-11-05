@@ -293,7 +293,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get labelDividendGrowth5y => 'Osingon kasvu (5 v)';
 
   @override
-  String get dividendNone => 'Osinkoa ei ole maksettu viimeisten 12 kuukauden aikana.';
+  String get dividendNone =>
+      'Osinkoa ei ole maksettu viimeisten 12 kuukauden aikana.';
 
   @override
   String get dividendOnYourShares => 'Osakkeillesi vuodessa';
@@ -352,10 +353,11 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get errMissingAnthropicKey =>
-      'Kuvantunnistusta ei ole määritetty (ei ANTHROPIC_API_KEY). Syötä tunnus manuaalisesti.';
+      'Kuvantunnistus ei ole käytettävissä tässä versiossa. Syötä tunnus manuaalisesti.';
 
   @override
-  String get errRecognitionUnreachable => 'Tunnistuspalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
+  String get errRecognitionUnreachable =>
+      'Tunnistuspalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -363,25 +365,32 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Tunnistuspalvelu ei pystynyt käsittelemään tätä kuvaa.';
+  String get errRecognitionRefused =>
+      'Tunnistuspalvelu ei pystynyt käsittelemään tätä kuvaa.';
 
   @override
-  String get errRecognitionTruncated => 'Tunnistuspalvelun vastaus katkesi. Yritä uudelleen.';
+  String get errRecognitionTruncated =>
+      'Tunnistuspalvelun vastaus katkesi. Yritä uudelleen.';
 
   @override
-  String get errRecognitionBadResponse => 'Odottamaton vastaus tunnistuspalvelulta.';
+  String get errRecognitionBadResponse =>
+      'Odottamaton vastaus tunnistuspalvelulta.';
 
   @override
-  String get errRecognitionEmpty => 'Tunnistuspalvelu palautti tyhjän vastauksen.';
+  String get errRecognitionEmpty =>
+      'Tunnistuspalvelu palautti tyhjän vastauksen.';
 
   @override
-  String get errMissingFinnhubKey => 'Markkinadataa ei ole määritetty (ei FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Markkinadata ei ole käytettävissä tässä versiossa.';
 
   @override
-  String get errMarketUnreachable => 'Markkinadatapalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
+  String get errMarketUnreachable =>
+      'Markkinadatapalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
 
   @override
-  String get errMarketRateLimited => 'Liian monta pyyntöä markkinadatapalveluun. Odota hetki.';
+  String get errMarketRateLimited =>
+      'Liian monta pyyntöä markkinadatapalveluun. Odota hetki.';
 
   @override
   String errMarketHttp(String status) {
@@ -389,7 +398,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Odottamaton vastaus markkinadatapalvelulta.';
+  String get errMarketBadResponse =>
+      'Odottamaton vastaus markkinadatapalvelulta.';
 
   @override
   String errNoQuote(String symbol) {
@@ -403,7 +413,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String errDemoUnsupportedSymbol(String symbols) {
-    return 'Demotila tukee vain: $symbols. Lisää FINNHUB_API_KEY saadaksesi reaaliaikaista dataa.';
+    return 'Tässä demossa on esimerkkidataa vain näistä: $symbols.';
   }
 
   @override
@@ -489,7 +499,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get aiRegenerate => 'Luo uudelleen';
 
   @override
-  String get aiGenerating => 'Valmistellaan analyysia… tämä voi kestää minuutin tai kaksi.';
+  String get aiGenerating =>
+      'Valmistellaan analyysia… tämä voi kestää minuutin tai kaksi.';
 
   @override
   String get aiSources => 'Lähteet';
@@ -504,10 +515,12 @@ class AppLocalizationsFi extends AppLocalizations {
       'Tekoälyn tuottama analyysi, joka perustuu julkisiin tietoihin ja tuoreisiin uutisiin. Se voi sisältää virheitä tai olla vanhentunut, eikä se ole sijoitusneuvontaa.';
 
   @override
-  String get errAiNotConfigured => 'Tekoälyanalyysia ei ole määritetty (ei ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Tekoälyominaisuudet eivät ole käytettävissä tässä versiossa.';
 
   @override
-  String get errAiUnreachable => 'Tekoälypalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
+  String get errAiUnreachable =>
+      'Tekoälypalveluun ei saatu yhteyttä. Tarkista internetyhteytesi.';
 
   @override
   String errAiHttp(String status) {
@@ -515,7 +528,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Tekoälypalvelu kieltäytyi analysoimasta tätä osaketta.';
+  String get errAiRefused =>
+      'Tekoälypalvelu kieltäytyi analysoimasta tätä osaketta.';
 
   @override
   String get errAiBadResponse => 'Odottamaton vastaus tekoälypalvelulta.';
@@ -539,7 +553,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get rangeFiveYears => '5v';
 
   @override
-  String get chartUnavailable => 'Kurssihistoria ei ole saatavilla nykyisestä tietolähteestä.';
+  String get chartUnavailable =>
+      'Kurssihistoria ei ole saatavilla nykyisestä tietolähteestä.';
 
   @override
   String get sectionStatements => 'Tilinpäätöstiedot (vuosittain)';
@@ -566,7 +581,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get labelOperatingCashFlow => 'Liiketoiminnan rahavirta';
 
   @override
-  String get statementsUnavailable => 'Raportoituja tilinpäätöstietoja ei ole saatavilla tälle osakkeelle.';
+  String get statementsUnavailable =>
+      'Raportoituja tilinpäätöstietoja ei ole saatavilla tälle osakkeelle.';
 
   @override
   String get launchAtLogin => 'Käynnistä sisäänkirjautuessa';
@@ -575,7 +591,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get hotkeyLabel => 'Yleinen pikanäppäin';
 
   @override
-  String get hotkeyRecordHint => 'Napsauta tätä ja paina sitten uutta näppäinyhdistelmää';
+  String get hotkeyRecordHint =>
+      'Napsauta tätä ja paina sitten uutta näppäinyhdistelmää';
 
   @override
   String get hotkeyReset => 'Palauta oletus';
@@ -596,7 +613,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get removeFromFavorites => 'Poista suosikeista';
 
   @override
-  String get noFavorites => 'Ei vielä suosikkeja. Napauta osakkeen tähteä lisätäksesi sen.';
+  String get noFavorites =>
+      'Ei vielä suosikkeja. Napauta osakkeen tähteä lisätäksesi sen.';
 
   @override
   String get displayCurrency => 'Näyttövaluutta';
@@ -643,7 +661,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get updateDownloading => 'Päivitystä ladataan taustalla…';
 
   @override
-  String get updateDownloaded => 'Päivitys on valmis. Käynnistä sovellus uudelleen asentaaksesi sen.';
+  String get updateDownloaded =>
+      'Päivitys on valmis. Käynnistä sovellus uudelleen asentaaksesi sen.';
 
   @override
   String get updateNow => 'Päivitä';
@@ -652,7 +671,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get restartNow => 'Käynnistä uudelleen';
 
   @override
-  String get updatesViaStore => 'Päivitykset saapuvat automaattisesti sovelluskaupan kautta.';
+  String get updatesViaStore =>
+      'Päivitykset saapuvat automaattisesti sovelluskaupan kautta.';
 
   @override
   String get updateCheckFailed => 'Päivityksiä ei voitu tarkistaa.';
@@ -700,7 +720,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Ilmainen kokeilusi on päättynyt. Valitse paketti jatkaaksesi analysointia.';
+  String get trialExpired =>
+      'Ilmainen kokeilusi on päättynyt. Valitse paketti jatkaaksesi analysointia.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -739,7 +760,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get extraPacksTitle => 'Tarvitsetko lisää? Osta lisäanalyyseja';
 
   @override
-  String get extraPacksHint => 'Lisäanalyysit eivät vanhene koskaan, ja ne käytetään kuukausikiintiön jälkeen.';
+  String get extraPacksHint =>
+      'Lisäanalyysit eivät vanhene koskaan, ja ne käytetään kuukausikiintiön jälkeen.';
 
   @override
   String get buy => 'Osta';
@@ -771,7 +793,8 @@ class AppLocalizationsFi extends AppLocalizations {
       'Analyyseja ei ole jäljellä tällä jaksolla. Päivitä pakettisi tai osta lisäanalyyseja.';
 
   @override
-  String get errTrialExpired => 'Ilmainen kokeilusi on päättynyt. Valitse paketti jatkaaksesi.';
+  String get errTrialExpired =>
+      'Ilmainen kokeilusi on päättynyt. Valitse paketti jatkaaksesi.';
 
   @override
   String get errNoPlan => 'Tekoälyanalyysi edellyttää aktiivista pakettia.';
@@ -783,7 +806,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get usageTitle => 'Käyttö';
 
   @override
-  String get demoPurchaseNote => 'Demolaskutus: ostokset simuloidaan tällä alustalla.';
+  String get demoPurchaseNote =>
+      'Demolaskutus: ostokset simuloidaan tällä alustalla.';
 
   @override
   String get mostPopular => 'Suosituin';
@@ -823,7 +847,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get aiDepthStandardDesc => 'Täysi raportti kaikkine osioineen.';
 
   @override
-  String get aiDepthDeepDesc => 'Enemmän verkkohakuja, vertailu kilpailijoihin ja syvällisemmät yksityiskohdat.';
+  String get aiDepthDeepDesc =>
+      'Enemmän verkkohakuja, vertailu kilpailijoihin ja syvällisemmät yksityiskohdat.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -851,16 +876,19 @@ class AppLocalizationsFi extends AppLocalizations {
   String get aiReaderExperienced => 'Kokenut';
 
   @override
-  String get aiReaderBeginnerDesc => 'Selkeää kieltä; jokainen termi selitetään.';
+  String get aiReaderBeginnerDesc =>
+      'Selkeää kieltä; jokainen termi selitetään.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Tiiviimpää tekstiä vakiintuneella rahoitusalan terminologialla.';
+  String get aiReaderExperiencedDesc =>
+      'Tiiviimpää tekstiä vakiintuneella rahoitusalan terminologialla.';
 
   @override
   String get aiCounterArgument => 'Vahvin vasta-argumentti';
 
   @override
-  String get aiCounterArgumentDesc => 'Yhteenveto päättyy aina vahvimpaan perusteluun omaa johtopäätöstään vastaan.';
+  String get aiCounterArgumentDesc =>
+      'Yhteenveto päättyy aina vahvimpaan perusteluun omaa johtopäätöstään vastaan.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -969,10 +997,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get notSignedIn => 'Et ole kirjautunut';
 
   @override
-  String get accountBenefit => 'Kirjaudu sisään, niin tilauksesi toimii kaikilla laitteillasi.';
+  String get accountBenefit =>
+      'Kirjaudu sisään, niin tilauksesi toimii kaikilla laitteillasi.';
 
   @override
-  String get accountSyncedNote => 'Tilauksesi ja jäljellä olevat analyysisi ovat samat kaikilla laitteilla.';
+  String get accountSyncedNote =>
+      'Tilauksesi ja jäljellä olevat analyysisi ovat samat kaikilla laitteilla.';
 
   @override
   String get signInTitle => 'Kirjaudu WhatStockiin';
@@ -1004,14 +1034,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String get errInvalidEmail => 'Anna kelvollinen sähköpostiosoite.';
 
   @override
-  String get errSignInFailed => 'Kirjautuminen epäonnistui. Tarkista yhteytesi ja yritä uudelleen.';
+  String get errSignInFailed =>
+      'Kirjautuminen epäonnistui. Tarkista yhteytesi ja yritä uudelleen.';
 
   @override
   String get checkoutWaiting =>
       'Viimeistele maksu selaimessa. Sovellus päivittyy automaattisesti, kun maksu on valmis.';
 
   @override
-  String get paymentViaStripe => 'Turvallinen maksu selaimessa Stripen kautta. Voit perua milloin tahansa.';
+  String get paymentViaStripe =>
+      'Turvallinen maksu selaimessa Stripen kautta. Voit perua milloin tahansa.';
 
   @override
   String get paymentViaStore =>
@@ -1024,7 +1056,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get doubleOptionTitle => 'Optio-näppäimen kaksoispainallus';
 
   @override
-  String get doubleOptionSubtitle => 'WhatStock avautuu myös, kun painat Optio-näppäintä nopeasti kahdesti.';
+  String get doubleOptionSubtitle =>
+      'WhatStock avautuu myös, kun painat Optio-näppäintä nopeasti kahdesti.';
 
   @override
   String get doubleOptionPermission =>
@@ -1046,7 +1079,12 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years vuotta', one: '1 vuosi');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years vuotta',
+      one: '1 vuosi',
+    );
     return '$_temp0';
   }
 
@@ -1152,7 +1190,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get portfolioRemove => 'Poista';
 
   @override
-  String get portfolioExcluded => 'Omistukset, joilla ei ole hintaa tai valuuttakurssia, jäävät summien ulkopuolelle.';
+  String get portfolioExcluded =>
+      'Omistukset, joilla ei ole hintaa tai valuuttakurssia, jäävät summien ulkopuolelle.';
 
   @override
   String get priceAlerts => 'Kurssihälytykset';
@@ -1194,7 +1233,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Ei vielä hälytyksiä. Avaa osake ja napauta kelloa.';
+  String get alertsEmpty =>
+      'Ei vielä hälytyksiä. Avaa osake ja napauta kelloa.';
 
   @override
   String get alertsNote =>
@@ -1287,7 +1327,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get accountDeleted => 'Tilisi on poistettu.';
 
   @override
-  String get errDeleteAccount => 'Tiliä ei voitu poistaa. Tarkista yhteys ja yritä uudelleen.';
+  String get errDeleteAccount =>
+      'Tiliä ei voitu poistaa. Tarkista yhteys ja yritä uudelleen.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1324,7 +1365,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get inviteTitle => 'Suljettu esiversio';
 
   @override
-  String get inviteBody => 'WhatStock on toistaiseksi saatavilla vain kutsusta. Anna saamasi kutsukoodi.';
+  String get inviteBody =>
+      'WhatStock on toistaiseksi saatavilla vain kutsusta. Anna saamasi kutsukoodi.';
 
   @override
   String get inviteCodeLabel => 'Kutsukoodi';
@@ -1336,16 +1378,19 @@ class AppLocalizationsFi extends AppLocalizations {
   String get inviteInvalid => 'Tämä kutsukoodi ei ole voimassa.';
 
   @override
-  String get inviteExpired => 'Tämä kutsu on vanhentunut. Pyydä uusi koodi henkilöltä, joka kutsui sinut.';
+  String get inviteExpired =>
+      'Tämä kutsu on vanhentunut. Pyydä uusi koodi henkilöltä, joka kutsui sinut.';
 
   @override
-  String get inviteDeviceLimit => 'Tätä kutsukoodia käytetään jo enimmäismäärällä laitteita.';
+  String get inviteDeviceLimit =>
+      'Tätä kutsukoodia käytetään jo enimmäismäärällä laitteita.';
 
   @override
   String get previewConfidential => 'Luottamuksellinen esiversio';
 
   @override
-  String get errPreviewDailyLimit => 'Tämän esiversion päivittäinen analyysiraja on täynnä. Yritä uudelleen huomenna.';
+  String get errPreviewDailyLimit =>
+      'Tämän esiversion päivittäinen analyysiraja on täynnä. Yritä uudelleen huomenna.';
 
   @override
   String ageHours(int count) {
@@ -1400,7 +1445,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'Napauta tekoälyn arvioimaa tasoa, niin saat hälytyksen, kun hinta saavuttaa sen.';
+  String get keyLevelAlertHint =>
+      'Napauta tekoälyn arvioimaa tasoa, niin saat hälytyksen, kun hinta saavuttaa sen.';
 
   @override
   String get shareAnalysisTitle => 'Jaa analyysi';
@@ -1458,7 +1504,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Koodia ei ole olemassa. Tarkista se ja yritä uudelleen.';
+  String get referralErrUnknown =>
+      'Koodia ei ole olemassa. Tarkista se ja yritä uudelleen.';
 
   @override
   String get referralErrOwn => 'Et voi lunastaa omaa koodiasi.';
@@ -1575,10 +1622,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get askSuggest3 => 'Selitä yksinkertaisesti';
 
   @override
-  String get askMaxReached => 'Tämä oli viimeinen kysymys tähän analyysiin. Luo uusi analyysi, jos haluat kysyä lisää.';
+  String get askMaxReached =>
+      'Tämä oli viimeinen kysymys tähän analyysiin. Luo uusi analyysi, jos haluat kysyä lisää.';
 
   @override
-  String get errAskLimit => 'Olet saavuttanut tämän päivän kysymysrajan. Yritä uudelleen huomenna.';
+  String get errAskLimit =>
+      'Olet saavuttanut tämän päivän kysymysrajan. Yritä uudelleen huomenna.';
 
   @override
   String get eventTomorrow => 'Huomenna';
@@ -1674,7 +1723,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get notesTitle => 'Omat muistiinpanot';
 
   @override
-  String get notesHint => 'Miksi ostit sen, mitä seuraat, mikä saisi sinut myymään?';
+  String get notesHint =>
+      'Miksi ostit sen, mitä seuraat, mikä saisi sinut myymään?';
 
   @override
   String get notesInfo =>
@@ -1724,7 +1774,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get syncInfo => 'Salkku, suosikit, kurssihälytykset ja muistiinpanot synkronoidaan kaikille laitteillesi.';
+  String get syncInfo =>
+      'Salkku, suosikit, kurssihälytykset ja muistiinpanot synkronoidaan kaikille laitteillesi.';
 
   @override
   String syncLast(String time) {
@@ -1735,7 +1786,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get syncNow => 'Synkronoi nyt';
 
   @override
-  String get syncFailed => 'Synkronointi epäonnistui. Sitä yritetään automaattisesti uudelleen.';
+  String get syncFailed =>
+      'Synkronointi epäonnistui. Sitä yritetään automaattisesti uudelleen.';
 
   @override
   String get alertEmailTitle => 'Sähköposti, kun hälytys laukeaa';
@@ -1864,7 +1916,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'Paljonko koko yhtiö on arvoinen pörssissä: osakkeen hinta × osakkeiden määrä.';
+  String get glossMarketCap =>
+      'Paljonko koko yhtiö on arvoinen pörssissä: osakkeen hinta × osakkeiden määrä.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1903,7 +1956,8 @@ class AppLocalizationsFi extends AppLocalizations {
       'Kuinka paljon osake yleensä liikkuu markkinan mukana: 1 = kuten markkina, 1,5 = noin 50 % suuremmat heilahtelut, alle 1 = rauhallisempi.';
 
   @override
-  String get glossRevenueTtm => 'Viimeisen 12 kuukauden kokonaismyynti ennen kuluja.';
+  String get glossRevenueTtm =>
+      'Viimeisen 12 kuukauden kokonaismyynti ennen kuluja.';
 
   @override
   String get glossNetIncomeTtm =>
@@ -1938,17 +1992,20 @@ class AppLocalizationsFi extends AppLocalizations {
       'Lyhytaikaiset varat ÷ vuoden sisällä erääntyvät laskut. Yli 1 tarkoittaa, että yhtiö pystyy kattamaan lähiajan laskunsa.';
 
   @override
-  String get glossRevenueGrowth => 'Kuinka paljon liikevaihto kasvoi vuodentakaiseen verrattuna.';
+  String get glossRevenueGrowth =>
+      'Kuinka paljon liikevaihto kasvoi vuodentakaiseen verrattuna.';
 
   @override
-  String get glossEpsGrowth => 'Kuinka paljon osakekohtainen voitto kasvoi vuodentakaiseen verrattuna.';
+  String get glossEpsGrowth =>
+      'Kuinka paljon osakekohtainen voitto kasvoi vuodentakaiseen verrattuna.';
 
   @override
   String get glossDividendYield =>
       'Vuotuinen osinko ÷ osakkeen hinta: käteistulo, jonka saisit vuodessa, prosentteina maksamastasi summasta.';
 
   @override
-  String get glossDividendPerShare => 'Yhdelle osakkeelle viimeisen vuoden aikana maksettu osinko.';
+  String get glossDividendPerShare =>
+      'Yhdelle osakkeelle viimeisen vuoden aikana maksettu osinko.';
 
   @override
   String get glossPayoutRatio =>
@@ -2046,7 +2103,8 @@ class AppLocalizationsFi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'Odotetulla EPS-tasolla tai sen yli $beats/$total viime neljänneksellä',
+      other:
+          'Odotetulla EPS-tasolla tai sen yli $beats/$total viime neljänneksellä',
       one: 'Odotetulla EPS-tasolla tai sen yli $beats/1 neljänneksellä',
     );
     return '$_temp0';
@@ -2163,13 +2221,23 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ostoa', one: '1 osto');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ostoa',
+      one: '1 osto',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count myyntiä', one: '1 myynti');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count myyntiä',
+      one: '1 myynti',
+    );
     return '$_temp0';
   }
 
@@ -2189,7 +2257,8 @@ class AppLocalizationsFi extends AppLocalizations {
       'Johdon ja hallituksen jäsenten ostot ja myynnit avoimilla markkinoilla viimeisten 90 päivän aikana (SEC Form 4). Optioiden käyttöä ja osakepalkkioita ei lasketa.';
 
   @override
-  String get insiderNone => 'Ei sisäpiirin ostoja tai myyntejä avoimilla markkinoilla viimeisten 90 päivän aikana.';
+  String get insiderNone =>
+      'Ei sisäpiirin ostoja tai myyntejä avoimilla markkinoilla viimeisten 90 päivän aikana.';
 
   @override
   String get analystTrend => 'Miten näkemykset muuttuivat kuukausittain';
@@ -2229,13 +2298,15 @@ class AppLocalizationsFi extends AppLocalizations {
   String get backupSave => 'Tallenna varmuuskopio';
 
   @override
-  String get backupSaveHint => 'Suosikkisi, listasi, salkkusi, hälytyksesi ja muistiinpanosi yhdessä tiedostossa.';
+  String get backupSaveHint =>
+      'Suosikkisi, listasi, salkkusi, hälytyksesi ja muistiinpanosi yhdessä tiedostossa.';
 
   @override
   String get backupRestore => 'Palauta varmuuskopiosta';
 
   @override
-  String get backupRestoreHint => 'Lisää tiedoston sisällön; mitään nykyisistä tiedoistasi ei poisteta.';
+  String get backupRestoreHint =>
+      'Lisää tiedoston sisällön; mitään nykyisistä tiedoistasi ei poisteta.';
 
   @override
   String get backupRestored => 'Varmuuskopio palautettu.';
@@ -2354,7 +2425,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Salkkuhälytys';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'Ilmoitus, kun koko salkkusi liikkuu näin paljon päivässä.';
+  String get portfolioMoveAlertSubtitle =>
+      'Ilmoitus, kun koko salkkusi liikkuu näin paljon päivässä.';
 
   @override
   String get portfolioMoveAlertOff => 'Pois';
@@ -2530,7 +2602,12 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count omistusta', one: '1 omistus');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count omistusta',
+      one: '1 omistus',
+    );
     return '$_temp0';
   }
 
@@ -2580,7 +2657,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get portfolioSampleTry => 'Kokeile esimerkkisalkulla';
 
   @override
-  String get portfolioSampleBanner => 'Tämä on esimerkkisalkku. Lisää omat ostosi sen rinnalle tai poista se.';
+  String get portfolioSampleBanner =>
+      'Tämä on esimerkkisalkku. Lisää omat ostosi sen rinnalle tai poista se.';
 
   @override
   String get portfolioSampleRemove => 'Poista esimerkki';
@@ -2635,10 +2713,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lotNoteAdd => 'Lisää muistiinpano';
 
   @override
-  String get lotNoteBuyHint => 'Miksi ostat? Tallentuu osakkeen muistiinpanoihin päivämäärän kanssa.';
+  String get lotNoteBuyHint =>
+      'Miksi ostat? Tallentuu osakkeen muistiinpanoihin päivämäärän kanssa.';
 
   @override
-  String get lotNoteSellHint => 'Miksi myyt? Tallentuu osakkeen muistiinpanoihin päivämäärän kanssa.';
+  String get lotNoteSellHint =>
+      'Miksi myyt? Tallentuu osakkeen muistiinpanoihin päivämäärän kanssa.';
 
   @override
   String get lotNoteBought => 'Ostettu';
@@ -2659,7 +2739,12 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days päivää', one: '$days päivä');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days päivää',
+      one: '$days päivä',
+    );
     return '$_temp0';
   }
 
@@ -2747,10 +2832,12 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Kirjaudu sisään sähköpostillasi lunastaaksesi ystävän koodin.';
+  String get referralErrSignIn =>
+      'Kirjaudu sisään sähköpostillasi lunastaaksesi ystävän koodin.';
 
   @override
-  String get referralErrFull => 'Tämä koodi on jo lunastettu niin monta kertaa kuin mahdollista.';
+  String get referralErrFull =>
+      'Tämä koodi on jo lunastettu niin monta kertaa kuin mahdollista.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2762,10 +2849,12 @@ class AppLocalizationsFi extends AppLocalizations {
       'Analyysi katkesi ennen kuin se valmistui. Yritä uudelleen – se ei kuluttanut kiintiötäsi.';
 
   @override
-  String get errImageUnsupported => 'Kuvaa ei voi lukea. Tallenna se JPEG- tai PNG-muodossa ja yritä uudelleen.';
+  String get errImageUnsupported =>
+      'Kuvaa ei voi lukea. Tallenna se JPEG- tai PNG-muodossa ja yritä uudelleen.';
 
   @override
-  String get errRateLimited => 'Liian monta pyyntöä lyhyessä ajassa. Odota minuutti ja yritä uudelleen.';
+  String get errRateLimited =>
+      'Liian monta pyyntöä lyhyessä ajassa. Odota minuutti ja yritä uudelleen.';
 
   @override
   String get watchListNameTaken => 'Samanniminen lista on jo olemassa.';
@@ -2788,7 +2877,8 @@ class AppLocalizationsFi extends AppLocalizations {
       'Täällä ei ole hallittavaa tilausta. App Storesta tai Google Playsta ostettua tilausta hallitaan kaupan asetuksissa.';
 
   @override
-  String get backupFailed => 'Varmuuskopiota ei voitu tallentaa. Yritä uudelleen.';
+  String get backupFailed =>
+      'Varmuuskopiota ei voitu tallentaa. Yritä uudelleen.';
 
   @override
   String get syncTooLarge =>
@@ -2808,8 +2898,10 @@ class AppLocalizationsFi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count osinkoa ($currencies) jää summien ulkopuolelle, koska niille ei ole valuuttakurssia.',
-      one: '1 osinko ($currencies) jää summien ulkopuolelle, koska sille ei ole valuuttakurssia.',
+      other:
+          '$count osinkoa ($currencies) jää summien ulkopuolelle, koska niille ei ole valuuttakurssia.',
+      one:
+          '1 osinko ($currencies) jää summien ulkopuolelle, koska sille ei ole valuuttakurssia.',
     );
     return '$_temp0';
   }
@@ -2922,7 +3014,8 @@ class AppLocalizationsFi extends AppLocalizations {
       'Tekoälyn tuottamaa yleistä tietoa salkkusi koostumuksesta. Siinä ei oteta huomioon tavoitteitasi, taloudellista tilannettasi tai verotilannettasi, eikä se ole henkilökohtainen suositus tai sijoitusneuvontaa.';
 
   @override
-  String get briefNotificationTitle => 'Tekoälyn yhteenveto · Tänään osakkeidesi kanssa';
+  String get briefNotificationTitle =>
+      'Tekoälyn yhteenveto · Tänään osakkeidesi kanssa';
 
   @override
   String get portfolioGoalSet => 'Aseta tavoite';
@@ -3080,7 +3173,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get portfolioSplitRatio => 'Suhde (uudet : vanhat)';
 
   @override
-  String get portfolioSplitRatioError => 'Anna suhde, esimerkiksi 10:1, tai 1:10 käänteiselle splitille.';
+  String get portfolioSplitRatioError =>
+      'Anna suhde, esimerkiksi 10:1, tai 1:10 käänteiselle splitille.';
 
   @override
   String get portfolioSplitDate => 'Splitin päivämäärä';
@@ -3264,7 +3358,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get glossaryPageTitle => 'Sanasto';
 
   @override
-  String get glossaryPageSubtitle => 'Selkeät selitykset jokaiselle sovelluksen luvulle, P/E:stä RSI:hin';
+  String get glossaryPageSubtitle =>
+      'Selkeät selitykset jokaiselle sovelluksen luvulle, P/E:stä RSI:hin';
 
   @override
   String get glossarySearchHint => 'Hae sanastosta';

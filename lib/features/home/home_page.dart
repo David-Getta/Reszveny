@@ -22,6 +22,7 @@ import '../../theme/app_theme.dart';
 import '../../widgets/centered_scroll.dart';
 import '../../widgets/desktop_chrome.dart';
 import '../capture/capture_service.dart';
+import '../market_data/quote_check.dart';
 import '../market_data/demo_market_data_provider.dart';
 import 'favorites_strip.dart';
 import 'markets_strip.dart';
@@ -219,7 +220,11 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     setState(() => _busy = false);
 
     if (results.isEmpty) {
-      if (DescriptionResolver.looksLikeTicker(q)) {
+      // Ticker-szerű beírás (pl. „amazon”, „TSLA”): csak akkor nyílik meg tickerként, ha van rá
+      // árfolyam – egy elgépelt vagy nem jegyzett szó ne nyisson hibákkal teli oldalt.
+      final ticker = DescriptionResolver.looksLikeTicker(q) && await hasQuote(services.marketData, q.toUpperCase());
+      if (!mounted) return;
+      if (ticker) {
         _open(StockCandidate(symbol: q.toUpperCase(), companyName: q.toUpperCase(), confidence: 1));
       } else if (services.preferences.resolvedFor(q) case final r?) {
         // Korábban megfejtett leírás: AI nélkül.

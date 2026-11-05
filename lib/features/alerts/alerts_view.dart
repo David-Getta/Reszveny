@@ -191,12 +191,18 @@ class _AlertDialogState extends State<_AlertDialog> {
                   for (final k in AlertKind.values)
                     ChoiceChip(
                       key: ValueKey('alert-kind-${k.name}'),
-                      label: Text(switch (k) {
-                        AlertKind.above => l10n.alertKindAbove,
-                        AlertKind.below => l10n.alertKindBelow,
-                        AlertKind.move => l10n.alertKindMove,
-                        AlertKind.trailing => l10n.alertKindTrailing,
-                      }),
+                      // Keskeny kijelzőn (és hosszabb nyelveken) két sorba törhet, nem vágódik le.
+                      label: Text(
+                        switch (k) {
+                          AlertKind.above => l10n.alertKindAbove,
+                          AlertKind.below => l10n.alertKindBelow,
+                          AlertKind.move => l10n.alertKindMove,
+                          AlertKind.trailing => l10n.alertKindTrailing,
+                        },
+                        softWrap: true,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
                       selected: _kind == k,
                       onSelected: (_) => setState(() {
                         _kind = k;
@@ -240,7 +246,11 @@ class _AlertDialogState extends State<_AlertDialog> {
                       ActionChip(
                         key: const ValueKey('alert-52w-high'),
                         avatar: const Icon(Icons.north_east_rounded, size: 16),
-                        label: Text('${l10n.labelWeek52High} · ${fmt.price(h, widget.currency)}'),
+                        label: Text(
+                          '${l10n.labelWeek52High} · ${fmt.price(h, widget.currency)}',
+                          softWrap: true,
+                          maxLines: 2,
+                        ),
                         visualDensity: VisualDensity.compact,
                         onPressed: () => setState(() {
                           _kind = AlertKind.above;
@@ -251,7 +261,11 @@ class _AlertDialogState extends State<_AlertDialog> {
                       ActionChip(
                         key: const ValueKey('alert-52w-low'),
                         avatar: const Icon(Icons.south_east_rounded, size: 16),
-                        label: Text('${l10n.labelWeek52Low} · ${fmt.price(l, widget.currency)}'),
+                        label: Text(
+                          '${l10n.labelWeek52Low} · ${fmt.price(l, widget.currency)}',
+                          softWrap: true,
+                          maxLines: 2,
+                        ),
                         visualDensity: VisualDensity.compact,
                         onPressed: () => setState(() {
                           _kind = AlertKind.below;

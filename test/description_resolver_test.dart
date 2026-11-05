@@ -185,6 +185,7 @@ void main() {
     await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();
     expect(calls, 0);
-    expect(find.text('XYZ'), findsWidgets);
+    // Árfolyam nélküli (a demóban nem létező) ticker nem nyit hibákkal teli részvényoldalt.
+    expect(find.text('XYZ'), findsNothing);
   });
 }

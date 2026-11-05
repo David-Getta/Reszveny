@@ -10,7 +10,9 @@ import '../../l10n/generated/app_localizations.dart';
 Future<bool> ensureAiConsent(BuildContext context) async {
   final services = AppServices.of(context);
   final prefs = services.preferences;
-  if (prefs.aiConsent == true) return true;
+  // AI nélküli változatban (kulcs és szerver nélkül) nincs mihez hozzájárulni: a kérés úgyis
+  // a „nem érhető el” üzenettel áll meg, adat nem megy ki.
+  if (prefs.aiConsent == true || !services.config.hasAnthropicKey) return true;
   final l10n = AppLocalizations.of(context);
   final privacy = services.legalUri(services.config.privacyUrl, Localizations.localeOf(context));
   final ok = await showDialog<bool>(

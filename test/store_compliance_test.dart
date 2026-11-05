@@ -85,7 +85,24 @@ void main() {
 
   testWidgets('AI features ask for consent once; "Not now" sends nothing and asks again', (tester) async {
     final prefs = AppPreferences(aiConsent: null);
-    await tester.pumpWidget(WhatStockApp(services: services(preferences: prefs)));
+    final ent = EntitlementService();
+    // Szerverrel (AI elérhető): az első AI-kérés előtt kérdez.
+    final s = AppServices(
+      alertNotifier: FakeNotifier(),
+      config: const AppConfig(backendUrl: 'https://api.test'),
+      capture: CaptureService(),
+      recognizer: _NoRecognizer(),
+      marketData: DemoMarketDataProvider(latency: Duration.zero),
+      locale: LocaleController(),
+      preferences: prefs,
+      desktop: DesktopIntegration(),
+      reports: ReportStore(
+        analyst: ClaudeStockAnalyst(config: const AppConfig()),
+        entitlements: ent,
+      ),
+      entitlements: ent,
+    );
+    await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     final context = tester.element(find.byType(Scaffold).first);
 
@@ -303,5 +320,16 @@ void main() {
     final context = tester.element(find.byType(Scaffold).first);
     final button = const ReportAiButton(kind: AiReportKind.ask, text: 'answer').build(context);
     expect(button, isA<SizedBox>());
+  });
+
+  testWidgets('without AI (no key, no server) there is nothing to consent to', (tester) async {
+    final prefs = AppPreferences(aiConsent: null);
+    await tester.pumpWidget(WhatStockApp(services: services(preferences: prefs)));
+    await tester.pumpAndSettle();
+    final result = ensureAiConsent(tester.element(find.byType(Scaffold).first));
+    await tester.pump();
+    expect(find.byKey(const ValueKey('ai-consent-dialog')), findsNothing);
+    expect(await result, isTrue);
+    expect(prefs.aiConsent, isNull, reason: 'nem kérdezett, nem is jegyzett meg semmit');
   });
 }

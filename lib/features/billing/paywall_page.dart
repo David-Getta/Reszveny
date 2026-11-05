@@ -601,7 +601,8 @@ class _PlanCard extends StatelessWidget {
                             height: 16,
                             child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
                           )
-                        : Text(l10n.subscribe),
+                        // A képernyőolvasó a csomag nevét is mondja (négy egyforma gomb helyett).
+                        : Text(l10n.subscribe, semanticsLabel: '${l10n.subscribe} · $name'),
                   ),
           ),
         ],
@@ -644,7 +645,10 @@ class _PackChip extends StatelessWidget {
               Text(product.price, style: TextStyle(color: p.muted, fontSize: 12)),
             ],
           ),
-          FilledButton.tonal(onPressed: busy || locked ? null : onBuy, child: Text(l10n.buy)),
+          FilledButton.tonal(
+            onPressed: busy || locked ? null : onBuy,
+            child: Text(l10n.buy, semanticsLabel: '${l10n.buy} · ${l10n.extraCredits(n)} · ${product.price}'),
+          ),
         ],
       ),
     );

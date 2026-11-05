@@ -13,7 +13,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Bɛta foto ya action mpe yeba makambo nyɔnsɔ etali yango.';
+  String get homeTagline =>
+      'Bɛta foto ya action mpe yeba makambo nyɔnsɔ etali yango.';
 
   @override
   String get homeHint =>
@@ -352,7 +353,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get errMissingAnthropicKey =>
-      'Koyeba bililingi ebongisami te (ANTHROPIC_API_KEY ezali te). Koma ticker yo moko.';
+      'Koyeba bililingi ezali te na version oyo. Koma ticker yo moko.';
 
   @override
   String get errRecognitionUnreachable =>
@@ -364,26 +365,32 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Service ya koyeba bililingi ekokaki te kosala na elilingi oyo.';
+  String get errRecognitionRefused =>
+      'Service ya koyeba bililingi ekokaki te kosala na elilingi oyo.';
 
   @override
-  String get errRecognitionTruncated => 'Eyano ya service ya koyeba bililingi ekatami. Meka lisusu.';
+  String get errRecognitionTruncated =>
+      'Eyano ya service ya koyeba bililingi ekatami. Meka lisusu.';
 
   @override
-  String get errRecognitionBadResponse => 'Eyano ya kokamwa euti na service ya koyeba bililingi.';
+  String get errRecognitionBadResponse =>
+      'Eyano ya kokamwa euti na service ya koyeba bililingi.';
 
   @override
-  String get errRecognitionEmpty => 'Service ya koyeba bililingi ezongisi eyano ya pamba.';
+  String get errRecognitionEmpty =>
+      'Service ya koyeba bililingi ezongisi eyano ya pamba.';
 
   @override
-  String get errMissingFinnhubKey => 'Ba-donnée ya zando ebongisami te (FINNHUB_API_KEY ezali te).';
+  String get errMissingFinnhubKey =>
+      'Ba-donnée ya zando ezali te na version oyo.';
 
   @override
   String get errMarketUnreachable =>
       'Tokokaki te kokɔta na service ya ba-donnée ya zando. Tala soki internet na yo ezali kosala.';
 
   @override
-  String get errMarketRateLimited => 'Masɛngi ebele koleka epai ya service ya ba-donnée ya zando. Zela miniti moko.';
+  String get errMarketRateLimited =>
+      'Masɛngi ebele koleka epai ya service ya ba-donnée ya zando. Zela miniti moko.';
 
   @override
   String errMarketHttp(String status) {
@@ -391,7 +398,8 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Eyano ya kokamwa euti na service ya ba-donnée ya zando.';
+  String get errMarketBadResponse =>
+      'Eyano ya kokamwa euti na service ya ba-donnée ya zando.';
 
   @override
   String errNoQuote(String symbol) {
@@ -405,7 +413,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String errDemoUnsupportedSymbol(String symbols) {
-    return 'Mode démo endimaka kaka $symbols. Bakisa FINNHUB_API_KEY mpo na ba-donnée ya sikoyo.';
+    return 'Démo oyo ezali na ba-donnée ya ndakisa kaka mpo na $symbols.';
   }
 
   @override
@@ -491,7 +499,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get aiRegenerate => 'Bimisa lisusu';
 
   @override
-  String get aiGenerating => 'Ezali kobongisa analyse… ekoki kozwa miniti moko to mibale.';
+  String get aiGenerating =>
+      'Ezali kobongisa analyse… ekoki kozwa miniti moko to mibale.';
 
   @override
   String get aiSources => 'Ba-source';
@@ -506,10 +515,11 @@ class AppLocalizationsLn extends AppLocalizations {
       'Analyse oyo AI ebimisi na ba-donnée ya polele mpe nsango ya sika. Ekoki kozala na mabunga to kozala ya kala, mpe ezali toli ya kotia mbɔngɔ te.';
 
   @override
-  String get errAiNotConfigured => 'Analyse ya AI ebongisami te (ANTHROPIC_API_KEY ezali te).';
+  String get errAiNotConfigured => 'Ba-fonction ya AI ezali te na version oyo.';
 
   @override
-  String get errAiUnreachable => 'Tokokaki te kokɔta na service ya AI. Tala soki internet na yo ezali kosala.';
+  String get errAiUnreachable =>
+      'Tokokaki te kokɔta na service ya AI. Tala soki internet na yo ezali kosala.';
 
   @override
   String errAiHttp(String status) {
@@ -517,7 +527,8 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Service ya AI eboyi kosala analyse ya action oyo.';
+  String get errAiRefused =>
+      'Service ya AI eboyi kosala analyse ya action oyo.';
 
   @override
   String get errAiBadResponse => 'Eyano ya kokamwa euti na service ya AI.';
@@ -541,7 +552,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get rangeFiveYears => 'Mibu 5';
 
   @override
-  String get chartUnavailable => 'Ntalo ya kala ezali te na source ya ba-donnée oyo.';
+  String get chartUnavailable =>
+      'Ntalo ya kala ezali te na source ya ba-donnée oyo.';
 
   @override
   String get sectionStatements => 'Ba-rapport ya mbɔngɔ (mobu na mobu)';
@@ -568,7 +580,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get labelOperatingCashFlow => 'Cash flow ya mosala';
 
   @override
-  String get statementsUnavailable => 'Ba-rapport ya mbɔngɔ ezali te mpo na action oyo.';
+  String get statementsUnavailable =>
+      'Ba-rapport ya mbɔngɔ ezali te mpo na action oyo.';
 
   @override
   String get launchAtLogin => 'Fungola ntango ya kokɔta';
@@ -598,7 +611,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get removeFromFavorites => 'Longola na oyo olingaka';
 
   @override
-  String get noFavorites => 'Naino elɔkɔ te awa. Fina monzoto ya action mpo na kobakisa yango.';
+  String get noFavorites =>
+      'Naino elɔkɔ te awa. Fina monzoto ya action mpo na kobakisa yango.';
 
   @override
   String get displayCurrency => 'Mbɔngɔ ya komonisa';
@@ -645,7 +659,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get updateDownloading => 'Ezali kokitisa mise à jour na nsima…';
 
   @override
-  String get updateDownloaded => 'Mise à jour ebongi. Banda lisusu mpo na kotia yango.';
+  String get updateDownloaded =>
+      'Mise à jour ebongi. Banda lisusu mpo na kotia yango.';
 
   @override
   String get updateNow => 'Sala mise à jour';
@@ -654,7 +669,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get restartNow => 'Banda lisusu';
 
   @override
-  String get updatesViaStore => 'Ba-mise à jour eyaka yango moko na nzela ya store ya ba-application.';
+  String get updatesViaStore =>
+      'Ba-mise à jour eyaka yango moko na nzela ya store ya ba-application.';
 
   @override
   String get updateCheckFailed => 'Tokokaki te koluka ba-mise à jour.';
@@ -702,7 +718,8 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Komeka na yo ya ofele esili. Pɔna forfait mpo na kokoba kosala ba-analyse.';
+  String get trialExpired =>
+      'Komeka na yo ya ofele esili. Pɔna forfait mpo na kokoba kosala ba-analyse.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -738,10 +755,12 @@ class AppLocalizationsLn extends AppLocalizations {
   String get perMonth => '/ sanza';
 
   @override
-  String get extraPacksTitle => 'Ozali na posa ya mingi? Somba ba-analyse ya kobakisa';
+  String get extraPacksTitle =>
+      'Ozali na posa ya mingi? Somba ba-analyse ya kobakisa';
 
   @override
-  String get extraPacksHint => 'Ba-analyse ya kobakisa esilaka te, mpe esalelamaka nsima ya oyo ya sanza na yo.';
+  String get extraPacksHint =>
+      'Ba-analyse ya kobakisa esilaka te, mpe esalelamaka nsima ya oyo ya sanza na yo.';
 
   @override
   String get buy => 'Somba';
@@ -773,10 +792,12 @@ class AppLocalizationsLn extends AppLocalizations {
       'Ba-analyse etikali lisusu te na eleko oyo. Mata na forfait ya likolo to somba ba-analyse ya kobakisa.';
 
   @override
-  String get errTrialExpired => 'Komeka na yo ya ofele esili. Pɔna forfait mpo na kokoba.';
+  String get errTrialExpired =>
+      'Komeka na yo ya ofele esili. Pɔna forfait mpo na kokoba.';
 
   @override
-  String get errNoPlan => 'Esengeli forfait oyo ezali kosala mpo na analyse ya AI.';
+  String get errNoPlan =>
+      'Esengeli forfait oyo ezali kosala mpo na analyse ya AI.';
 
   @override
   String get viewPlans => 'Tala ba-forfait';
@@ -785,7 +806,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get usageTitle => 'Bosaleli';
 
   @override
-  String get demoPurchaseNote => 'Bofuti ya démo: bosombi ezali ya kosakana na plateforme oyo.';
+  String get demoPurchaseNote =>
+      'Bofuti ya démo: bosombi ezali ya kosakana na plateforme oyo.';
 
   @override
   String get mostPopular => 'Oyo bato balingaka mingi';
@@ -825,7 +847,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get aiDepthStandardDesc => 'Rapport mobimba na biteni nyɔnsɔ.';
 
   @override
-  String get aiDepthDeepDesc => 'Boluki mingi na internet, kokokanisa na ba-concurrent mpe makambo mingi ya mozindo.';
+  String get aiDepthDeepDesc =>
+      'Boluki mingi na internet, kokokanisa na ba-concurrent mpe makambo mingi ya mozindo.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -853,10 +876,12 @@ class AppLocalizationsLn extends AppLocalizations {
   String get aiReaderExperienced => 'Moyebi';
 
   @override
-  String get aiReaderBeginnerDesc => 'Lokota ya pɛtɛɛ; liloba nyɔnsɔ ya technique elimbolami.';
+  String get aiReaderBeginnerDesc =>
+      'Lokota ya pɛtɛɛ; liloba nyɔnsɔ ya technique elimbolami.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Makomi ya makasi koleka, na maloba ya finance oyo esalelamaka.';
+  String get aiReaderExperiencedDesc =>
+      'Makomi ya makasi koleka, na maloba ya finance oyo esalelamaka.';
 
   @override
   String get aiCounterArgument => 'Likanisi ya kotɛmɛla oyo eleki makasi';
@@ -870,8 +895,10 @@ class AppLocalizationsLn extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Tii mbala $count ya koluka na internet mpo na analyse moko na forfait na yo',
-      one: 'Tii mbala $count ya koluka na internet mpo na analyse moko na forfait na yo',
+      other:
+          'Tii mbala $count ya koluka na internet mpo na analyse moko na forfait na yo',
+      one:
+          'Tii mbala $count ya koluka na internet mpo na analyse moko na forfait na yo',
     );
     return '$_temp0';
   }
@@ -956,7 +983,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get upcomingEvents => 'Makambo oyo ekoya';
 
   @override
-  String get outlookChartNote => 'Ndelo ya ndakisa; makoki ya kosalema ezali kaka bokanisi, kasi bisakoli te.';
+  String get outlookChartNote =>
+      'Ndelo ya ndakisa; makoki ya kosalema ezali kaka bokanisi, kasi bisakoli te.';
 
   @override
   String get accountTitle => 'Compte';
@@ -971,10 +999,12 @@ class AppLocalizationsLn extends AppLocalizations {
   String get notSignedIn => 'Okɔti te';
 
   @override
-  String get accountBenefit => 'Kɔta mpo abonnement na yo esala na bisaleli na yo nyɔnsɔ.';
+  String get accountBenefit =>
+      'Kɔta mpo abonnement na yo esala na bisaleli na yo nyɔnsɔ.';
 
   @override
-  String get accountSyncedNote => 'Abonnement na yo mpe ba-analyse oyo etikali ezali ndenge moko na bisaleli nyɔnsɔ.';
+  String get accountSyncedNote =>
+      'Abonnement na yo mpe ba-analyse oyo etikali ezali ndenge moko na bisaleli nyɔnsɔ.';
 
   @override
   String get signInTitle => 'Kɔta na WhatStock';
@@ -1006,13 +1036,16 @@ class AppLocalizationsLn extends AppLocalizations {
   String get errInvalidEmail => 'Koma adresse e-mail ya malamu.';
 
   @override
-  String get errSignInFailed => 'Kokɔta elongi te. Tala soki internet na yo ezali kosala mpe meka lisusu.';
+  String get errSignInFailed =>
+      'Kokɔta elongi te. Tala soki internet na yo ezali kosala mpe meka lisusu.';
 
   @override
-  String get checkoutWaiting => 'Silisa kofuta na navigateur na yo. Application ekobongisama yango moko soki osilisi.';
+  String get checkoutWaiting =>
+      'Silisa kofuta na navigateur na yo. Application ekobongisama yango moko soki osilisi.';
 
   @override
-  String get paymentViaStripe => 'Kofuta ebatelami na navigateur na yo na nzela ya Stripe. Okoki kotika ntango nyɔnsɔ.';
+  String get paymentViaStripe =>
+      'Kofuta ebatelami na navigateur na yo na nzela ya Stripe. Okoki kotika ntango nyɔnsɔ.';
 
   @override
   String get paymentViaStore =>
@@ -1025,7 +1058,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get doubleOptionTitle => 'Fina Option mbala mibale';
 
   @override
-  String get doubleOptionSubtitle => 'Kofina touche Option mbala mibale noki ebengaka mpe WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Kofina touche Option mbala mibale noki ebengaka mpe WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1047,7 +1081,12 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'mibu $years', one: 'mobu $years');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'mibu $years',
+      one: 'mobu $years',
+    );
     return '$_temp0';
   }
 
@@ -1153,7 +1192,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get portfolioRemove => 'Longola';
 
   @override
-  String get portfolioExcluded => 'Ba-position oyo ezangi ntalo to taux ya mbɔngɔ etangami te na mitango.';
+  String get portfolioExcluded =>
+      'Ba-position oyo ezangi ntalo to taux ya mbɔngɔ etangami te na mitango.';
 
   @override
   String get priceAlerts => 'Makebisi ya ntalo';
@@ -1195,7 +1235,8 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Naino likebisi moko te. Fungola action mpe fina ngonga mpo na kotia moko.';
+  String get alertsEmpty =>
+      'Naino likebisi moko te. Fungola action mpe fina ngonga mpo na kotia moko.';
 
   @override
   String get alertsNote =>
@@ -1288,7 +1329,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get accountDeleted => 'Compte na yo elimwisami.';
 
   @override
-  String get errDeleteAccount => 'Tokokaki te kolimwisa compte. Tala soki internet na yo ezali kosala mpe meka lisusu.';
+  String get errDeleteAccount =>
+      'Tokokaki te kolimwisa compte. Tala soki internet na yo ezali kosala mpe meka lisusu.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1325,7 +1367,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get inviteTitle => 'Botali ya liboso ya sekele';
 
   @override
-  String get inviteBody => 'Sikoyo WhatStock ezali kaka na libyangi. Kɔtisa code ya libyangi oyo ozwaki.';
+  String get inviteBody =>
+      'Sikoyo WhatStock ezali kaka na libyangi. Kɔtisa code ya libyangi oyo ozwaki.';
 
   @override
   String get inviteCodeLabel => 'Code ya libyangi';
@@ -1337,16 +1380,19 @@ class AppLocalizationsLn extends AppLocalizations {
   String get inviteInvalid => 'Code oyo ya libyangi ezali malamu te.';
 
   @override
-  String get inviteExpired => 'Libyangi oyo eleki ntango. Senga code ya sika epai ya moto oyo abyangaki yo.';
+  String get inviteExpired =>
+      'Libyangi oyo eleki ntango. Senga code ya sika epai ya moto oyo abyangaki yo.';
 
   @override
-  String get inviteDeviceLimit => 'Code oyo ya libyangi esalelami kala na motango ya likolo ya bisaleli.';
+  String get inviteDeviceLimit =>
+      'Code oyo ya libyangi esalelami kala na motango ya likolo ya bisaleli.';
 
   @override
   String get previewConfidential => 'Botali ya sekele';
 
   @override
-  String get errPreviewDailyLimit => 'Ndelo ya ba-analyse ya lelo mpo na botali oyo ekoki. Meka lisusu lobi.';
+  String get errPreviewDailyLimit =>
+      'Ndelo ya ba-analyse ya lelo mpo na botali oyo ekoki. Meka lisusu lobi.';
 
   @override
   String ageHours(int count) {
@@ -1401,7 +1447,8 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'Fina niveau moko oyo AI etangi mpo na kozwa likebisi ntango ntalo ekokoma wana.';
+  String get keyLevelAlertHint =>
+      'Fina niveau moko oyo AI etangi mpo na kozwa likebisi ntango ntalo ekokoma wana.';
 
   @override
   String get shareAnalysisTitle => 'Kabola analyse';
@@ -1416,7 +1463,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get shareCardFooter => 'Esalemi na WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Analyse ya AI · makambo ya ndakisa, bisakoli te · ezali toli ya kotia mbɔngɔ te';
+  String get shareCardDisclaimer =>
+      'Analyse ya AI · makambo ya ndakisa, bisakoli te · ezali toli ya kotia mbɔngɔ te';
 
   @override
   String get referralTitle => 'Benga baninga';
@@ -1458,7 +1506,8 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Code oyo ezali te. Tala yango mpe meka lisusu.';
+  String get referralErrUnknown =>
+      'Code oyo ezali te. Tala yango mpe meka lisusu.';
 
   @override
   String get referralErrOwn => 'Okoki te kosalela code na yo moko.';
@@ -1519,7 +1568,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get changesPrice => 'Ntalo';
 
   @override
-  String get changesNoMajor => 'Ndenge makambo ekoki kozala ebongwani mingi te.';
+  String get changesNoMajor =>
+      'Ndenge makambo ekoki kozala ebongwani mingi te.';
 
   @override
   String get changesPreviousSummary => 'Mokuse ya kala';
@@ -1538,7 +1588,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get telemetryDecline => 'Te, matondi';
 
   @override
-  String get telemetrySetting => 'Ba-statistique ezangi nkombo mpe ba-rapport ya ba-plantage';
+  String get telemetrySetting =>
+      'Ba-statistique ezangi nkombo mpe ba-rapport ya ba-plantage';
 
   @override
   String get telemetrySettingHint =>
@@ -1569,7 +1620,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get askSuggest1 => 'Likama monene ezali nini?';
 
   @override
-  String get askSuggest2 => 'Nini ekoki kobongola makanisi ya mikolo ezali koya?';
+  String get askSuggest2 =>
+      'Nini ekoki kobongola makanisi ya mikolo ezali koya?';
 
   @override
   String get askSuggest3 => 'Limbolá yango na ndenge ya pɛtɛɛ';
@@ -1579,7 +1631,8 @@ class AppLocalizationsLn extends AppLocalizations {
       'Wana ezalaki motuna ya nsuka mpo na analyse oyo. Bimisa analyse ya sika mpo na kotuna lisusu.';
 
   @override
-  String get errAskLimit => 'Okómi na ndelo ya mituna ya lelo. Meka lisusu lobi.';
+  String get errAskLimit =>
+      'Okómi na ndelo ya mituna ya lelo. Meka lisusu lobi.';
 
   @override
   String get eventTomorrow => 'Lobi';
@@ -1675,7 +1728,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get notesTitle => 'Ba note na ngai';
 
   @override
-  String get notesHint => 'Mpo na nini osombaki yango, ozali kotala nini, nini ekoki kotinda yo oteka yango?';
+  String get notesHint =>
+      'Mpo na nini osombaki yango, ozali kotala nini, nini ekoki kotinda yo oteka yango?';
 
   @override
   String get notesInfo =>
@@ -1737,7 +1791,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get syncNow => 'Synchroniser sikoyo';
 
   @override
-  String get syncFailed => 'Synchronisation ekoki te. Ekomeka lisusu yango moko.';
+  String get syncFailed =>
+      'Synchronisation ekoki te. Ekomeka lisusu yango moko.';
 
   @override
   String get alertEmailTitle => 'E-mail ntango likebisi esali';
@@ -1767,7 +1822,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get portfolioReviewAgain => 'Salá lisusu';
 
   @override
-  String get portfolioReviewWorking => 'Tozali kosala analyse ya portefeuille na yo…';
+  String get portfolioReviewWorking =>
+      'Tozali kosala analyse ya portefeuille na yo…';
 
   @override
   String get digestTitle => 'Bokuse ya pɔsɔ na e-mail';
@@ -1866,7 +1922,8 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'Motuya ya kompanyi mobimba na bourse: ntalo ya action × motango ya ba-action.';
+  String get glossMarketCap =>
+      'Motuya ya kompanyi mobimba na bourse: ntalo ya action × motango ya ba-action.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1905,7 +1962,8 @@ class AppLocalizationsLn extends AppLocalizations {
       'Ndenge action eningani elongo na zando: 1 = lokola zando, 1,5 = koningana monene pene na 50% koleka, na nse ya 1 = kimya mingi.';
 
   @override
-  String get glossRevenueTtm => 'Mosolo nyɔnsɔ ya biloko etekamaki na sanza 12 oyo eleki, liboso ya ba-frais nyonso.';
+  String get glossRevenueTtm =>
+      'Mosolo nyɔnsɔ ya biloko etekamaki na sanza 12 oyo eleki, liboso ya ba-frais nyonso.';
 
   @override
   String get glossNetIncomeTtm =>
@@ -1940,17 +1998,20 @@ class AppLocalizationsLn extends AppLocalizations {
       'Bozwi ya ntango mokuse ÷ ba-facture ya kofuta na mobu moko. Koleka 1 elakisi ete kompanyi ekoki kofuta ba-facture na yango ya pene.';
 
   @override
-  String get glossRevenueGrowth => 'Ndenge mosolo nyɔnsɔ ekoli soki tokokanisi na mobu oyo eleki.';
+  String get glossRevenueGrowth =>
+      'Ndenge mosolo nyɔnsɔ ekoli soki tokokanisi na mobu oyo eleki.';
 
   @override
-  String get glossEpsGrowth => 'Ndenge litomba ya action moko ekoli soki tokokanisi na mobu oyo eleki.';
+  String get glossEpsGrowth =>
+      'Ndenge litomba ya action moko ekoli soki tokokanisi na mobu oyo eleki.';
 
   @override
   String get glossDividendYield =>
       'Dividende ya mobu ÷ ntalo ya action: mbongo okozwa mobu na mobu, na pourcentage ya oyo ofuti.';
 
   @override
-  String get glossDividendPerShare => 'Dividende oyo bafutaki na action moko na mobu oyo eleki.';
+  String get glossDividendPerShare =>
+      'Dividende oyo bafutaki na action moko na mobu oyo eleki.';
 
   @override
   String get glossPayoutRatio =>
@@ -2048,8 +2109,10 @@ class AppLocalizationsLn extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'Ekokani to eleki EPS oyo ezelamaki na $beats kati ya ba trimestre $total ya nsuka',
-      one: 'Ekokani to eleki EPS oyo ezelamaki na $beats kati ya trimestre $total',
+      other:
+          'Ekokani to eleki EPS oyo ezelamaki na $beats kati ya ba trimestre $total ya nsuka',
+      one:
+          'Ekokani to eleki EPS oyo ezelamaki na $beats kati ya trimestre $total',
     );
     return '$_temp0';
   }
@@ -2107,7 +2170,8 @@ class AppLocalizationsLn extends AppLocalizations {
       'Talá mitángo liboso ya kobakisa yango. Ntalo ezali ntalo ya katikati oyo osombaki na yango action moko, kasi ntalo ya lelo te.';
 
   @override
-  String get holdingsNoPrice => 'Ntalo ya katikati ya kosomba ezali na elilingi te';
+  String get holdingsNoPrice =>
+      'Ntalo ya katikati ya kosomba ezali na elilingi te';
 
   @override
   String holdingsAdd(int count) {
@@ -2165,13 +2229,23 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count kosomba', one: '$count kosomba');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kosomba',
+      one: '$count kosomba',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count koteka', one: '$count koteka');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count koteka',
+      one: '$count koteka',
+    );
     return '$_temp0';
   }
 
@@ -2191,7 +2265,8 @@ class AppLocalizationsLn extends AppLocalizations {
       'Kosomba mpe koteka na zando ya polele oyo bakambi mpe ba-directeur basalaki na mikolo 90 oyo eleki (SEC Form 4). Kosalela ba-option mpe ba-action oyo bapesi lokola mbano etángami te.';
 
   @override
-  String get insiderNone => 'Kosomba to koteka moko te ya bakambi na zando ya polele na mikolo 90 oyo eleki.';
+  String get insiderNone =>
+      'Kosomba to koteka moko te ya bakambi na zando ya polele na mikolo 90 oyo eleki.';
 
   @override
   String get analystTrend => 'Ndenge makanisi ebongwanaki sanza na sanza';
@@ -2231,19 +2306,22 @@ class AppLocalizationsLn extends AppLocalizations {
   String get backupSave => 'Bomba kopi';
 
   @override
-  String get backupSaveHint => 'Oyo olingaka, ba liste, portefeuille, makebisi mpe ba note na yo na fisyé moko.';
+  String get backupSaveHint =>
+      'Oyo olingaka, ba liste, portefeuille, makebisi mpe ba note na yo na fisyé moko.';
 
   @override
   String get backupRestore => 'Zongisa uta na kopi ya kobomba';
 
   @override
-  String get backupRestoreHint => 'Ebakisaka oyo ezali na fisyé; eloko moko te ya oyo ozali na yango sikoyo ekolongwa.';
+  String get backupRestoreHint =>
+      'Ebakisaka oyo ezali na fisyé; eloko moko te ya oyo ozali na yango sikoyo ekolongwa.';
 
   @override
   String get backupRestored => 'Kopi ya kobomba ezongisami.';
 
   @override
-  String get backupInvalid => 'Fisyé oyo ezali kopi ya kobomba ya WhatStock te.';
+  String get backupInvalid =>
+      'Fisyé oyo ezali kopi ya kobomba ya WhatStock te.';
 
   @override
   String get allocationPositions => 'Ba-action';
@@ -2356,7 +2434,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Likebisi ya portefeuille';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'Liyebisi ntango portefeuille na yo mobimba eningani boye na mokolo moko.';
+  String get portfolioMoveAlertSubtitle =>
+      'Liyebisi ntango portefeuille na yo mobimba eningani boye na mokolo moko.';
 
   @override
   String get portfolioMoveAlertOff => 'Ekangami';
@@ -2528,11 +2607,17 @@ class AppLocalizationsLn extends AppLocalizations {
   String get portfolioTopHoldings => 'Ba-position ya minene';
 
   @override
-  String get portfolioShareNote => 'Ba-pourcentage kaka nde ekabolamaka, mbongo te.';
+  String get portfolioShareNote =>
+      'Ba-pourcentage kaka nde ekabolamaka, mbongo te.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Biteni $count', one: 'Eteni $count');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Biteni $count',
+      one: 'Eteni $count',
+    );
     return '$_temp0';
   }
 
@@ -2589,7 +2674,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get portfolioSampleRemove => 'Longola ndakisa';
 
   @override
-  String get portfolioStopsAll => 'Likebisi ya bokiti uta na nsɔngɛ mpo na biteni nyonso';
+  String get portfolioStopsAll =>
+      'Likebisi ya bokiti uta na nsɔngɛ mpo na biteni nyonso';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2638,10 +2724,12 @@ class AppLocalizationsLn extends AppLocalizations {
   String get lotNoteAdd => 'Bakisa note';
 
   @override
-  String get lotNoteBuyHint => 'Mpo na nini ozali kosomba? Ekokɔta na ba note ya action, elongo na mokɔlɔ.';
+  String get lotNoteBuyHint =>
+      'Mpo na nini ozali kosomba? Ekokɔta na ba note ya action, elongo na mokɔlɔ.';
 
   @override
-  String get lotNoteSellHint => 'Mpo na nini ozali koteka? Ekokɔta na ba note ya action, elongo na mokɔlɔ.';
+  String get lotNoteSellHint =>
+      'Mpo na nini ozali koteka? Ekokɔta na ba note ya action, elongo na mokɔlɔ.';
 
   @override
   String get lotNoteBought => 'Esombami';
@@ -2651,13 +2739,23 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: 'sanza $months', one: 'sanza $months');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'sanza $months',
+      one: 'sanza $months',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'mikɔlɔ $days', one: 'mokɔlɔ $days');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'mikɔlɔ $days',
+      one: 'mokɔlɔ $days',
+    );
     return '$_temp0';
   }
 
@@ -2711,7 +2809,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get activitySearchHint => 'Pona na ticker';
 
   @override
-  String get activityNoMatch => 'Bosombi to boteki moko te ekokani na oyo oponi.';
+  String get activityNoMatch =>
+      'Bosombi to boteki moko te ekokani na oyo oponi.';
 
   @override
   String portfolioImportDuplicates(int count) {
@@ -2745,10 +2844,12 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Kɔta na e-mail na yo mpo na kosalela code ya moninga.';
+  String get referralErrSignIn =>
+      'Kɔta na e-mail na yo mpo na kosalela code ya moninga.';
 
   @override
-  String get referralErrFull => 'Code oyo esalelami esili mbala nyonso oyo epesameli nzela.';
+  String get referralErrFull =>
+      'Code oyo esalelami esili mbala nyonso oyo epesameli nzela.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2756,13 +2857,16 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated => 'Analyse ekatamaki liboso ya kosila. Meka lisusu – elongoli eloko te na eteni na yo.';
+  String get errAiTruncated =>
+      'Analyse ekatamaki liboso ya kosila. Meka lisusu – elongoli eloko te na eteni na yo.';
 
   @override
-  String get errImageUnsupported => 'Tokoki kotánga elilingi oyo te. Bomba yango lokola JPEG to PNG mpe meka lisusu.';
+  String get errImageUnsupported =>
+      'Tokoki kotánga elilingi oyo te. Bomba yango lokola JPEG to PNG mpe meka lisusu.';
 
   @override
-  String get errRateLimited => 'Masɛngi ebele na ntango moke. Zela miniti moko mpe meka lisusu.';
+  String get errRateLimited =>
+      'Masɛngi ebele na ntango moke. Zela miniti moko mpe meka lisusu.';
 
   @override
   String get watchListNameTaken => 'Liste moko na nkombo oyo esili kozala.';
@@ -2778,14 +2882,16 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing => 'Bosombi ya kala moko te emonani mpo na kozongisa.';
+  String get restoreNothing =>
+      'Bosombi ya kala moko te emonani mpo na kozongisa.';
 
   @override
   String get manageSubscriptionElsewhere =>
       'Abonnement moko te ezali awa ya kokamba. Abonnement oyo osombaki na App Store to Google Play ekambamaka na ba-paramètre ya store.';
 
   @override
-  String get backupFailed => 'Kopi ya kobomba ekokaki kobombama te. Meka lisusu.';
+  String get backupFailed =>
+      'Kopi ya kobomba ekokaki kobombama te. Meka lisusu.';
 
   @override
   String get syncTooLarge =>
@@ -2805,8 +2911,10 @@ class AppLocalizationsLn extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Ba dividende $count na $currencies ezangi taux ya mbɔngɔ, yango wana etangami te na mitango.',
-      one: 'Dividende $count na $currencies ezangi taux ya mbɔngɔ, yango wana etangami te na mitango.',
+      other:
+          'Ba dividende $count na $currencies ezangi taux ya mbɔngɔ, yango wana etangami te na mitango.',
+      one:
+          'Dividende $count na $currencies ezangi taux ya mbɔngɔ, yango wana etangami te na mitango.',
     );
     return '$_temp0';
   }
@@ -2826,7 +2934,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get signOutAnyway => 'Bima kaka';
 
   @override
-  String get fileTooLarge => 'Fisyé oyo eleki monene mpo na kofungola yango awa.';
+  String get fileTooLarge =>
+      'Fisyé oyo eleki monene mpo na kofungola yango awa.';
 
   @override
   String portfolioAnnualSummaryYear(String year) {
@@ -2905,7 +3014,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get aiReportNoteHint => 'Nini ezali mabe? (soki olingi)';
 
   @override
-  String get aiReportPrivacy => 'Tozwaka makomi ya eyano oyo mpe note na yo — kozanga compte na yo — mpo totala yango.';
+  String get aiReportPrivacy =>
+      'Tozwaka makomi ya eyano oyo mpe note na yo — kozanga compte na yo — mpo totala yango.';
 
   @override
   String get aiReportSend => 'Tinda rapport';
@@ -3076,7 +3186,8 @@ class AppLocalizationsLn extends AppLocalizations {
   String get portfolioSplitRatio => 'Emekeli (ya sika : ya kala)';
 
   @override
-  String get portfolioSplitRatioError => 'Koma emekeli lokola 10:1, to 1:10 mpo na bokabolami ya kozongisa.';
+  String get portfolioSplitRatioError =>
+      'Koma emekeli lokola 10:1, to 1:10 mpo na bokabolami ya kozongisa.';
 
   @override
   String get portfolioSplitDate => 'Mokolo ya bokabolami';

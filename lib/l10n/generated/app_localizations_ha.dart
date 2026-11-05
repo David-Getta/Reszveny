@@ -13,7 +13,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Ɗauki hoton hannun jari ka san duk abin da ya shafe shi.';
+  String get homeTagline =>
+      'Ɗauki hoton hannun jari ka san duk abin da ya shafe shi.';
 
   @override
   String get homeHint =>
@@ -293,7 +294,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get labelDividendGrowth5y => 'Ƙaruwar rabon riba (shekara 5)';
 
   @override
-  String get dividendNone => 'Ba a biya rabon riba ba a cikin watanni 12 da suka wuce.';
+  String get dividendNone =>
+      'Ba a biya rabon riba ba a cikin watanni 12 da suka wuce.';
 
   @override
   String get dividendOnYourShares => 'Kan hannun jarinka, a shekara';
@@ -318,7 +320,12 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Manazarta $count', one: 'Manazarci 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Manazarta $count',
+      one: 'Manazarci 1',
+    );
     return '$_temp0';
   }
 
@@ -347,10 +354,11 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get errMissingAnthropicKey =>
-      'Ba a saita ganewar hoto ba (babu ANTHROPIC_API_KEY). Shigar da ticker da hannu.';
+      'Ganewar hoto ba ya samuwa a wannan sigar. Shigar da ticker da hannu.';
 
   @override
-  String get errRecognitionUnreachable => 'Ba a iya kaiwa ga sabis na ganewa ba. Duba haɗin intanet ɗinka.';
+  String get errRecognitionUnreachable =>
+      'Ba a iya kaiwa ga sabis na ganewa ba. Duba haɗin intanet ɗinka.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -358,25 +366,32 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Sabis na ganewa bai iya aiwatar da wannan hoto ba.';
+  String get errRecognitionRefused =>
+      'Sabis na ganewa bai iya aiwatar da wannan hoto ba.';
 
   @override
-  String get errRecognitionTruncated => 'An katse amsar ganewa. Da fatan a sake gwada.';
+  String get errRecognitionTruncated =>
+      'An katse amsar ganewa. Da fatan a sake gwada.';
 
   @override
-  String get errRecognitionBadResponse => 'Amsa da ba a yi tsammani ba daga sabis na ganewa.';
+  String get errRecognitionBadResponse =>
+      'Amsa da ba a yi tsammani ba daga sabis na ganewa.';
 
   @override
-  String get errRecognitionEmpty => 'Sabis na ganewa ya dawo da amsa mara komai.';
+  String get errRecognitionEmpty =>
+      'Sabis na ganewa ya dawo da amsa mara komai.';
 
   @override
-  String get errMissingFinnhubKey => 'Ba a saita bayanan kasuwa ba (babu FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Bayanan kasuwa ba sa samuwa a wannan sigar.';
 
   @override
-  String get errMarketUnreachable => 'Ba a iya kaiwa ga sabis na bayanan kasuwa ba. Duba haɗin intanet ɗinka.';
+  String get errMarketUnreachable =>
+      'Ba a iya kaiwa ga sabis na bayanan kasuwa ba. Duba haɗin intanet ɗinka.';
 
   @override
-  String get errMarketRateLimited => 'Buƙatu da yawa ga sabis na bayanan kasuwa. Da fatan a jira minti ɗaya.';
+  String get errMarketRateLimited =>
+      'Buƙatu da yawa ga sabis na bayanan kasuwa. Da fatan a jira minti ɗaya.';
 
   @override
   String errMarketHttp(String status) {
@@ -384,7 +399,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Amsa da ba a yi tsammani ba daga sabis na bayanan kasuwa.';
+  String get errMarketBadResponse =>
+      'Amsa da ba a yi tsammani ba daga sabis na bayanan kasuwa.';
 
   @override
   String errNoQuote(String symbol) {
@@ -398,7 +414,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String errDemoUnsupportedSymbol(String symbols) {
-    return 'Yanayin demo yana goyon bayan $symbols kawai. Ƙara FINNHUB_API_KEY don bayanai kai tsaye.';
+    return 'Wannan demo yana da bayanan misali na $symbols kawai.';
   }
 
   @override
@@ -484,7 +500,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get aiRegenerate => 'Sake ƙirƙira';
 
   @override
-  String get aiGenerating => 'Ana shirya nazarin… wannan na iya ɗaukar minti ɗaya ko biyu.';
+  String get aiGenerating =>
+      'Ana shirya nazarin… wannan na iya ɗaukar minti ɗaya ko biyu.';
 
   @override
   String get aiSources => 'Madogara';
@@ -499,10 +516,11 @@ class AppLocalizationsHa extends AppLocalizations {
       'Nazarin da AI ya ƙirƙira bisa bayanan da ake samu a fili da sabbin labarai. Yana iya ƙunsar kurakurai ko ya zama tsoho, kuma ba shawarar zuba jari ba ne.';
 
   @override
-  String get errAiNotConfigured => 'Ba a saita nazarin AI ba (babu ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'Fasalolin AI ba sa samuwa a wannan sigar.';
 
   @override
-  String get errAiUnreachable => 'Ba a iya kaiwa ga sabis na AI ba. Duba haɗin intanet ɗinka.';
+  String get errAiUnreachable =>
+      'Ba a iya kaiwa ga sabis na AI ba. Duba haɗin intanet ɗinka.';
 
   @override
   String errAiHttp(String status) {
@@ -510,10 +528,12 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get errAiRefused => 'Sabis na AI ya ƙi yin nazarin wannan hannun jari.';
+  String get errAiRefused =>
+      'Sabis na AI ya ƙi yin nazarin wannan hannun jari.';
 
   @override
-  String get errAiBadResponse => 'Amsa da ba a yi tsammani ba daga sabis na AI.';
+  String get errAiBadResponse =>
+      'Amsa da ba a yi tsammani ba daga sabis na AI.';
 
   @override
   String get sectionChart => 'Jadawalin farashi';
@@ -534,7 +554,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Tarihin farashi babu shi daga madogarar bayanai ta yanzu.';
+  String get chartUnavailable =>
+      'Tarihin farashi babu shi daga madogarar bayanai ta yanzu.';
 
   @override
   String get sectionStatements => 'Rahotannin kuɗi (na shekara-shekara)';
@@ -561,7 +582,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get labelOperatingCashFlow => 'Kwararar kuɗin ayyuka';
 
   @override
-  String get statementsUnavailable => 'Babu rahotannin kuɗi da aka bayar na wannan hannun jari.';
+  String get statementsUnavailable =>
+      'Babu rahotannin kuɗi da aka bayar na wannan hannun jari.';
 
   @override
   String get launchAtLogin => 'Buɗe lokacin shiga';
@@ -570,7 +592,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get hotkeyLabel => 'Gajeriyar hanya ta gabaɗaya';
 
   @override
-  String get hotkeyRecordHint => 'Danna nan, sannan ka danna sabon haɗin maɓallan';
+  String get hotkeyRecordHint =>
+      'Danna nan, sannan ka danna sabon haɗin maɓallan';
 
   @override
   String get hotkeyReset => 'Mayar da tsoho';
@@ -591,7 +614,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get removeFromFavorites => 'Cire daga abubuwan da aka fi so';
 
   @override
-  String get noFavorites => 'Babu abubuwan da aka fi so tukuna. Taɓa tauraron da ke kan hannun jari don ƙara shi.';
+  String get noFavorites =>
+      'Babu abubuwan da aka fi so tukuna. Taɓa tauraron da ke kan hannun jari don ƙara shi.';
 
   @override
   String get displayCurrency => 'Nau’in kuɗin nunawa';
@@ -638,7 +662,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get updateDownloading => 'Ana sauke sabuntawa a bayan fage…';
 
   @override
-  String get updateDownloaded => 'Sabuntawa ta shirya. Sake kunna don shigar da ita.';
+  String get updateDownloaded =>
+      'Sabuntawa ta shirya. Sake kunna don shigar da ita.';
 
   @override
   String get updateNow => 'Sabunta';
@@ -647,7 +672,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get restartNow => 'Sake kunna';
 
   @override
-  String get updatesViaStore => 'Sabuntawa suna zuwa ta atomatik ta hanyar shagon manhaja.';
+  String get updatesViaStore =>
+      'Sabuntawa suna zuwa ta atomatik ta hanyar shagon manhaja.';
 
   @override
   String get updateCheckFailed => 'Ba a iya duba sabuntawa ba.';
@@ -695,7 +721,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Gwajin kyauta naka ya ƙare. Zaɓi tsari don ci gaba da nazari.';
+  String get trialExpired =>
+      'Gwajin kyauta naka ya ƙare. Zaɓi tsari don ci gaba da nazari.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -734,7 +761,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get extraPacksTitle => 'Kana buƙatar ƙari? Sayi ƙarin nazari';
 
   @override
-  String get extraPacksHint => 'Ƙarin nazari ba sa ƙarewa, kuma ana amfani da su bayan rabon ka na wata ya ƙare.';
+  String get extraPacksHint =>
+      'Ƙarin nazari ba sa ƙarewa, kuma ana amfani da su bayan rabon ka na wata ya ƙare.';
 
   @override
   String get buy => 'Saya';
@@ -762,10 +790,12 @@ class AppLocalizationsHa extends AppLocalizations {
       'Ba a samu sayayya a wannan dandali ba tukuna. Yi rajista a wayarka ko Mac; tsarin ka zai yi aiki a kowace na’ura.';
 
   @override
-  String get errQuotaExceeded => 'Ba ka da sauran nazari a wannan lokaci. Haɓaka tsarin ka ko sayi ƙarin nazari.';
+  String get errQuotaExceeded =>
+      'Ba ka da sauran nazari a wannan lokaci. Haɓaka tsarin ka ko sayi ƙarin nazari.';
 
   @override
-  String get errTrialExpired => 'Gwajin kyauta naka ya ƙare. Zaɓi tsari don ci gaba.';
+  String get errTrialExpired =>
+      'Gwajin kyauta naka ya ƙare. Zaɓi tsari don ci gaba.';
 
   @override
   String get errNoPlan => 'Ana buƙatar tsari mai aiki don nazarin AI.';
@@ -777,7 +807,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get usageTitle => 'Amfani';
 
   @override
-  String get demoPurchaseNote => 'Biyan kuɗi na gwaji: ana kwaikwayon sayayya a wannan dandali.';
+  String get demoPurchaseNote =>
+      'Biyan kuɗi na gwaji: ana kwaikwayon sayayya a wannan dandali.';
 
   @override
   String get mostPopular => 'Mafi shahara';
@@ -846,10 +877,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get aiReaderExperienced => 'Gogagge';
 
   @override
-  String get aiReaderBeginnerDesc => 'Harshe mai sauƙi; ana bayyana kowace kalmar fasaha.';
+  String get aiReaderBeginnerDesc =>
+      'Harshe mai sauƙi; ana bayyana kowace kalmar fasaha.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Rubutu mai cunkoson bayanai tare da kalmomin kuɗi na yau da kullum.';
+  String get aiReaderExperiencedDesc =>
+      'Rubutu mai cunkoson bayanai tare da kalmomin kuɗi na yau da kullum.';
 
   @override
   String get aiCounterArgument => 'Hujja mafi ƙarfi ta adawa';
@@ -949,7 +982,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get upcomingEvents => 'Abubuwan da ke tafe';
 
   @override
-  String get outlookChartNote => 'Jeri na kimanin; yiwuwar faruwa ƙiyasi ne kawai, ba hasashe ba.';
+  String get outlookChartNote =>
+      'Jeri na kimanin; yiwuwar faruwa ƙiyasi ne kawai, ba hasashe ba.';
 
   @override
   String get accountTitle => 'Asusu';
@@ -964,10 +998,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get notSignedIn => 'Ba ka shiga ba';
 
   @override
-  String get accountBenefit => 'Shiga domin rajistarka ta yi aiki a duk na\'urorinka.';
+  String get accountBenefit =>
+      'Shiga domin rajistarka ta yi aiki a duk na\'urorinka.';
 
   @override
-  String get accountSyncedNote => 'Rajistarka da sauran nazarinka iri ɗaya ne a kowace na\'ura.';
+  String get accountSyncedNote =>
+      'Rajistarka da sauran nazarinka iri ɗaya ne a kowace na\'ura.';
 
   @override
   String get signInTitle => 'Shiga WhatStock';
@@ -996,17 +1032,20 @@ class AppLocalizationsHa extends AppLocalizations {
   String get errInvalidCode => 'Lambar ba daidai ba ce ko ta ƙare.';
 
   @override
-  String get errInvalidEmail => 'Da fatan za a shigar da adireshin imel mai inganci.';
+  String get errInvalidEmail =>
+      'Da fatan za a shigar da adireshin imel mai inganci.';
 
   @override
-  String get errSignInFailed => 'Shiga ya gaza. Duba haɗin intanet ɗinka sannan ka sake gwadawa.';
+  String get errSignInFailed =>
+      'Shiga ya gaza. Duba haɗin intanet ɗinka sannan ka sake gwadawa.';
 
   @override
   String get checkoutWaiting =>
       'Kammala biyan kuɗi a cikin burauzarka. Manhajar za ta sabunta kanta ta atomatik idan an gama.';
 
   @override
-  String get paymentViaStripe => 'Biyan kuɗi mai tsaro a cikin burauzarka ta hanyar Stripe. Soke a kowane lokaci.';
+  String get paymentViaStripe =>
+      'Biyan kuɗi mai tsaro a cikin burauzarka ta hanyar Stripe. Soke a kowane lokaci.';
 
   @override
   String get paymentViaStore =>
@@ -1019,7 +1058,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get doubleOptionTitle => 'Danna Option sau biyu';
 
   @override
-  String get doubleOptionSubtitle => 'Danna maɓallin Option sau biyu da sauri ma zai kira WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Danna maɓallin Option sau biyu da sauri ma zai kira WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1041,7 +1081,12 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: 'shekaru $years', one: 'shekara 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: 'shekaru $years',
+      one: 'shekara 1',
+    );
     return '$_temp0';
   }
 
@@ -1147,7 +1192,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get portfolioRemove => 'Cire';
 
   @override
-  String get portfolioExcluded => 'Ba a haɗa matsayin da ba su da farashi ko farashin musaya a cikin jimilla ba.';
+  String get portfolioExcluded =>
+      'Ba a haɗa matsayin da ba su da farashi ko farashin musaya a cikin jimilla ba.';
 
   @override
   String get priceAlerts => 'Faɗakarwar farashi';
@@ -1189,7 +1235,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Babu faɗakarwa tukuna. Buɗe hannun jari ka taɓa ƙararrawa.';
+  String get alertsEmpty =>
+      'Babu faɗakarwa tukuna. Buɗe hannun jari ka taɓa ƙararrawa.';
 
   @override
   String get alertsNote =>
@@ -1282,7 +1329,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get accountDeleted => 'An share asusunka.';
 
   @override
-  String get errDeleteAccount => 'Ba a iya share asusun ba. Duba haɗin intanet ka sake gwadawa.';
+  String get errDeleteAccount =>
+      'Ba a iya share asusun ba. Duba haɗin intanet ka sake gwadawa.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1332,7 +1380,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get inviteInvalid => 'Wannan lambar gayyata ba ta da inganci.';
 
   @override
-  String get inviteExpired => 'Wannan gayyatar ta ƙare. Nemi sabuwar lamba daga wanda ya gayyace ka.';
+  String get inviteExpired =>
+      'Wannan gayyatar ta ƙare. Nemi sabuwar lamba daga wanda ya gayyace ka.';
 
   @override
   String get inviteDeviceLimit =>
@@ -1342,7 +1391,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get previewConfidential => 'Duban farko na sirri';
 
   @override
-  String get errPreviewDailyLimit => 'An kai iyakar nazarin yau na wannan duban farko. Sake gwadawa gobe.';
+  String get errPreviewDailyLimit =>
+      'An kai iyakar nazarin yau na wannan duban farko. Sake gwadawa gobe.';
 
   @override
   String ageHours(int count) {
@@ -1397,7 +1447,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'Taɓa wani mataki da AI ya ƙiyasta don samun faɗakarwa idan farashi ya kai shi.';
+  String get keyLevelAlertHint =>
+      'Taɓa wani mataki da AI ya ƙiyasta don samun faɗakarwa idan farashi ya kai shi.';
 
   @override
   String get shareAnalysisTitle => 'Raba nazari';
@@ -1412,7 +1463,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get shareCardFooter => 'An yi da WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Nazarin AI · misalan yanayi, ba hasashe ba · ba shawarar zuba jari ba ne';
+  String get shareCardDisclaimer =>
+      'Nazarin AI · misalan yanayi, ba hasashe ba · ba shawarar zuba jari ba ne';
 
   @override
   String get referralTitle => 'Gayyaci abokai';
@@ -1454,13 +1506,15 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Wannan lambar ba ta wanzu ba. Duba ta ka sake gwadawa.';
+  String get referralErrUnknown =>
+      'Wannan lambar ba ta wanzu ba. Duba ta ka sake gwadawa.';
 
   @override
   String get referralErrOwn => 'Ba za ka iya amfani da lambarka ta kanka ba.';
 
   @override
-  String get referralErrAlready => 'Ka riga ka yi amfani da lambar wani abokinka.';
+  String get referralErrAlready =>
+      'Ka riga ka yi amfani da lambar wani abokinka.';
 
   @override
   String referralShareText(String code, int count) {
@@ -1534,7 +1588,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get telemetryDecline => 'A\'a, na gode';
 
   @override
-  String get telemetrySetting => 'Ƙididdiga marasa suna da rahotannin faɗuwar manhaja';
+  String get telemetrySetting =>
+      'Ƙididdiga marasa suna da rahotannin faɗuwar manhaja';
 
   @override
   String get telemetrySettingHint =>
@@ -1671,7 +1726,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get notesTitle => 'Bayanaina';
 
   @override
-  String get notesHint => 'Me ya sa ka saya, me kake lura da shi, me zai sa ka sayar?';
+  String get notesHint =>
+      'Me ya sa ka saya, me kake lura da shi, me zai sa ka sayar?';
 
   @override
   String get notesInfo =>
@@ -1902,10 +1958,12 @@ class AppLocalizationsHa extends AppLocalizations {
       'Yadda hannun jarin ke motsawa tare da kasuwa: 1 = kamar kasuwa, 1.5 = kusan 50% motsi mafi girma, ƙasa da 1 = mafi natsuwa.';
 
   @override
-  String get glossRevenueTtm => 'Jimillar tallace-tallace na watanni 12 da suka wuce, kafin kowane kashe kuɗi.';
+  String get glossRevenueTtm =>
+      'Jimillar tallace-tallace na watanni 12 da suka wuce, kafin kowane kashe kuɗi.';
 
   @override
-  String get glossNetIncomeTtm => 'Ribar da ta rage bayan duk kashe kuɗi, ruwa da haraji a watanni 12 da suka wuce.';
+  String get glossNetIncomeTtm =>
+      'Ribar da ta rage bayan duk kashe kuɗi, ruwa da haraji a watanni 12 da suka wuce.';
 
   @override
   String get glossGrossMargin =>
@@ -1936,17 +1994,20 @@ class AppLocalizationsHa extends AppLocalizations {
       'Kadarori na ɗan gajeren lokaci ÷ basussukan da za a biya cikin shekara guda. Sama da 1 yana nufin kamfanin zai iya biyan basussukan da ke kusa.';
 
   @override
-  String get glossRevenueGrowth => 'Nawa kuɗin shiga ya ƙaru idan aka kwatanta da shekara guda da ta wuce.';
+  String get glossRevenueGrowth =>
+      'Nawa kuɗin shiga ya ƙaru idan aka kwatanta da shekara guda da ta wuce.';
 
   @override
-  String get glossEpsGrowth => 'Nawa ribar kowane hannun jari ta ƙaru idan aka kwatanta da shekara guda da ta wuce.';
+  String get glossEpsGrowth =>
+      'Nawa ribar kowane hannun jari ta ƙaru idan aka kwatanta da shekara guda da ta wuce.';
 
   @override
   String get glossDividendYield =>
       'Rabon riba na shekara ÷ farashin hannun jari: kuɗin da za ka samu kowace shekara, a matsayin kaso na abin da ka biya.';
 
   @override
-  String get glossDividendPerShare => 'Rabon ribar da aka biya kan hannun jari ɗaya a shekarar da ta wuce.';
+  String get glossDividendPerShare =>
+      'Rabon ribar da aka biya kan hannun jari ɗaya a shekarar da ta wuce.';
 
   @override
   String get glossPayoutRatio =>
@@ -2044,7 +2105,8 @@ class AppLocalizationsHa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'Daidai ko sama da EPS da ake tsammani a kwata $beats cikin $total na baya-bayan nan',
+      other:
+          'Daidai ko sama da EPS da ake tsammani a kwata $beats cikin $total na baya-bayan nan',
       one: 'Daidai ko sama da EPS da ake tsammani a kwata $beats cikin 1',
     );
     return '$_temp0';
@@ -2161,13 +2223,23 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'saye $count', one: 'saye 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'saye $count',
+      one: 'saye 1',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'sayarwa $count', one: 'sayarwa 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'sayarwa $count',
+      one: 'sayarwa 1',
+    );
     return '$_temp0';
   }
 
@@ -2187,7 +2259,8 @@ class AppLocalizationsHa extends AppLocalizations {
       'Saye da sayarwar shugabanni da daraktoci a kasuwa a buɗe cikin kwanaki 90 da suka gabata (SEC Form 4). Ba a ƙidaya amfani da zaɓin hannun jari da kyautar hannun jari ba.';
 
   @override
-  String get insiderNone => 'Babu saye ko sayarwar shugabanni a kasuwa a buɗe cikin kwanaki 90 da suka gabata.';
+  String get insiderNone =>
+      'Babu saye ko sayarwar shugabanni a kasuwa a buɗe cikin kwanaki 90 da suka gabata.';
 
   @override
   String get analystTrend => 'Yadda ra\'ayoyi suka sauya wata-wata';
@@ -2262,7 +2335,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get compareFromHigh => 'Daga mafi girma a makonni 52';
 
   @override
-  String get briefAutoTitle => 'Taƙaitaccen bayani na yau da kullum kowace safiya';
+  String get briefAutoTitle =>
+      'Taƙaitaccen bayani na yau da kullum kowace safiya';
 
   @override
   String get briefAutoSubtitle =>
@@ -2354,7 +2428,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Faɗakarwar fayil';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'Sanarwa idan dukkan fayil ɗinka ya motsa haka a rana ɗaya.';
+  String get portfolioMoveAlertSubtitle =>
+      'Sanarwa idan dukkan fayil ɗinka ya motsa haka a rana ɗaya.';
 
   @override
   String get portfolioMoveAlertOff => 'A kashe';
@@ -2526,7 +2601,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get portfolioTopHoldings => 'Manyan matsayi';
 
   @override
-  String get portfolioShareNote => 'Kashi cikin ɗari kawai ake rabawa, ba adadin kuɗi ba.';
+  String get portfolioShareNote =>
+      'Kashi cikin ɗari kawai ake rabawa, ba adadin kuɗi ba.';
 
   @override
   String portfolioPositionsCount(int count) {
@@ -2592,7 +2668,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get portfolioSampleRemove => 'Cire misalin';
 
   @override
-  String get portfolioStopsAll => 'Faɗakarwar faɗuwa daga ƙoli ga dukkan hannayen jari';
+  String get portfolioStopsAll =>
+      'Faɗakarwar faɗuwa daga ƙoli ga dukkan hannayen jari';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2641,10 +2718,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lotNoteAdd => 'Ƙara bayani';
 
   @override
-  String get lotNoteBuyHint => 'Me ya sa kake saye? Za a saka shi cikin bayanan hannun jarin, tare da kwanan wata.';
+  String get lotNoteBuyHint =>
+      'Me ya sa kake saye? Za a saka shi cikin bayanan hannun jarin, tare da kwanan wata.';
 
   @override
-  String get lotNoteSellHint => 'Me ya sa kake sayarwa? Za a saka shi cikin bayanan hannun jarin, tare da kwanan wata.';
+  String get lotNoteSellHint =>
+      'Me ya sa kake sayarwa? Za a saka shi cikin bayanan hannun jarin, tare da kwanan wata.';
 
   @override
   String get lotNoteBought => 'An saya';
@@ -2654,13 +2733,23 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: 'watanni $months', one: 'wata $months');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: 'watanni $months',
+      one: 'wata $months',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: 'kwanaki $days', one: 'kwana $days');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'kwanaki $days',
+      one: 'kwana $days',
+    );
     return '$_temp0';
   }
 
@@ -2748,10 +2837,12 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Shiga da imel ɗinka don yin amfani da lambar abokinka.';
+  String get referralErrSignIn =>
+      'Shiga da imel ɗinka don yin amfani da lambar abokinka.';
 
   @override
-  String get referralErrFull => 'An riga an yi amfani da wannan lambar iyakar adadin da aka yarda.';
+  String get referralErrFull =>
+      'An riga an yi amfani da wannan lambar iyakar adadin da aka yarda.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2759,14 +2850,16 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated => 'An katse nazarin kafin ya kammala. Da fatan a sake gwada – bai ci daga rabon ka ba.';
+  String get errAiTruncated =>
+      'An katse nazarin kafin ya kammala. Da fatan a sake gwada – bai ci daga rabon ka ba.';
 
   @override
   String get errImageUnsupported =>
       'Ba a iya karanta wannan hoto ba. Ajiye shi a matsayin JPEG ko PNG sannan ka sake gwadawa.';
 
   @override
-  String get errRateLimited => 'Buƙatu sun yi yawa cikin ɗan lokaci. Da fatan a jira minti ɗaya sannan a sake gwadawa.';
+  String get errRateLimited =>
+      'Buƙatu sun yi yawa cikin ɗan lokaci. Da fatan a jira minti ɗaya sannan a sake gwadawa.';
 
   @override
   String get watchListNameTaken => 'Akwai jeri mai wannan suna tuni.';
@@ -2782,7 +2875,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing => 'Ba a sami sayayyar da ta gabata da za a dawo da ita ba.';
+  String get restoreNothing =>
+      'Ba a sami sayayyar da ta gabata da za a dawo da ita ba.';
 
   @override
   String get manageSubscriptionElsewhere =>
@@ -2809,8 +2903,10 @@ class AppLocalizationsHa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Rabon riba $count a $currencies ba su da farashin musaya, don haka ba a haɗa su a cikin jimilla ba.',
-      one: 'Rabon riba 1 a $currencies ba shi da farashin musaya, don haka ba a haɗa shi a cikin jimilla ba.',
+      other:
+          'Rabon riba $count a $currencies ba su da farashin musaya, don haka ba a haɗa su a cikin jimilla ba.',
+      one:
+          'Rabon riba 1 a $currencies ba shi da farashin musaya, don haka ba a haɗa shi a cikin jimilla ba.',
     );
     return '$_temp0';
   }
@@ -2830,7 +2926,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get signOutAnyway => 'Fita duk da haka';
 
   @override
-  String get fileTooLarge => 'Wannan fayil ya yi girma matuƙa don a buɗe shi a nan.';
+  String get fileTooLarge =>
+      'Wannan fayil ya yi girma matuƙa don a buɗe shi a nan.';
 
   @override
   String portfolioAnnualSummaryYear(String year) {
@@ -2923,7 +3020,8 @@ class AppLocalizationsHa extends AppLocalizations {
       'Bayanan gaba ɗaya da AI ya ƙirƙira game da tsarin jakar hannun jarinka. Ba sa la\'akari da burinka, yanayin kuɗinka ko na harajinka, kuma ba shawara ta musamman gare ka ba ne, ba kuma shawarar zuba jari ba ne.';
 
   @override
-  String get briefNotificationTitle => 'Taƙaitaccen AI · Yau tare da hannun jarinka';
+  String get briefNotificationTitle =>
+      'Taƙaitaccen AI · Yau tare da hannun jarinka';
 
   @override
   String get portfolioGoalSet => 'Saita buri';
@@ -3081,7 +3179,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get portfolioSplitRatio => 'Rabo (sabo : tsoho)';
 
   @override
-  String get portfolioSplitRatioError => 'Shigar da rabo kamar 10:1, ko 1:10 don rabon akasi.';
+  String get portfolioSplitRatioError =>
+      'Shigar da rabo kamar 10:1, ko 1:10 don rabon akasi.';
 
   @override
   String get portfolioSplitDate => 'Ranar rabon';
@@ -3265,7 +3364,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get glossaryPageTitle => 'Ƙamus na kalmomi';
 
   @override
-  String get glossaryPageSubtitle => 'Bayani mai sauƙi kan kowace alkaluma da manhajar ke nunawa, daga P/E har RSI';
+  String get glossaryPageSubtitle =>
+      'Bayani mai sauƙi kan kowace alkaluma da manhajar ke nunawa, daga P/E har RSI';
 
   @override
   String get glossarySearchHint => 'Bincika a cikin ƙamus';

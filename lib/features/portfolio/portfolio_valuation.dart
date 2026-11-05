@@ -64,6 +64,14 @@ class PositionValue {
     return gain;
   }
 
+  /// A mai eredmény százalékban, a tegnapi értékhez (érték − mai eredmény) mérve – mint a
+  /// portfólió összesítőjében. Ma vett tételnél ez nem a részvény napi változása.
+  double? get dayGainPercent {
+    final g = dayGain, v = value;
+    if (g == null || v == null || v - g == 0) return null;
+    return g / (v - g) * 100;
+  }
+
   /// A napi változás kereskedési napja (New York-i dátum): az ár idejéből, ha ismert,
   /// különben a legutóbbi kereskedési nap – nem a helyi mai nap (hétvégén, nyitás
   /// előtt és New Yorktól keletre az még az előző kereskedési napé).

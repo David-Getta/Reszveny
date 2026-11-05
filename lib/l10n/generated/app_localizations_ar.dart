@@ -16,7 +16,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get homeTagline => 'صوّر سهماً وتعرّف على كل شيء عنه.';
 
   @override
-  String get homeHint => 'شهادة أسهم، أو شاشة تطبيق وساطة، أو صحيفة، أو شعار شركة – أي شيء يحدد السهم.';
+  String get homeHint =>
+      'شهادة أسهم، أو شاشة تطبيق وساطة، أو صحيفة، أو شعار شركة – أي شيء يحدد السهم.';
 
   @override
   String get takePhoto => 'التقاط صورة';
@@ -54,7 +55,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get noCandidatesTitle => 'لم يتم التعرف على أي سهم';
 
   @override
-  String get noCandidatesBody => 'لم نتمكن من تحديد سهم في هذه الصورة. جرّب صورة أوضح أو أدخل رمز السهم يدوياً.';
+  String get noCandidatesBody =>
+      'لم نتمكن من تحديد سهم في هذه الصورة. جرّب صورة أوضح أو أدخل رمز السهم يدوياً.';
 
   @override
   String get whatWeSaw => 'ما رأيناه';
@@ -354,10 +356,11 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get errMissingAnthropicKey =>
-      'لم يتم تكوين التعرف على الصور (لا يوجد ANTHROPIC_API_KEY). أدخل رمز السهم يدوياً.';
+      'التعرف على الصور غير متاح في هذا الإصدار. أدخل رمز السهم بدلاً من ذلك.';
 
   @override
-  String get errRecognitionUnreachable => 'تعذر الوصول إلى خدمة التعرف. تحقق من اتصالك بالإنترنت.';
+  String get errRecognitionUnreachable =>
+      'تعذر الوصول إلى خدمة التعرف. تحقق من اتصالك بالإنترنت.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -365,10 +368,12 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'لم تتمكن خدمة التعرف من معالجة هذه الصورة.';
+  String get errRecognitionRefused =>
+      'لم تتمكن خدمة التعرف من معالجة هذه الصورة.';
 
   @override
-  String get errRecognitionTruncated => 'تم اقتطاع استجابة التعرف. يرجى المحاولة مرة أخرى.';
+  String get errRecognitionTruncated =>
+      'تم اقتطاع استجابة التعرف. يرجى المحاولة مرة أخرى.';
 
   @override
   String get errRecognitionBadResponse => 'استجابة غير متوقعة من خدمة التعرف.';
@@ -377,13 +382,15 @@ class AppLocalizationsAr extends AppLocalizations {
   String get errRecognitionEmpty => 'أعادت خدمة التعرف استجابة فارغة.';
 
   @override
-  String get errMissingFinnhubKey => 'لم يتم تكوين بيانات السوق (لا يوجد FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'بيانات السوق غير متاحة في هذا الإصدار.';
 
   @override
-  String get errMarketUnreachable => 'تعذر الوصول إلى خدمة بيانات السوق. تحقق من اتصالك بالإنترنت.';
+  String get errMarketUnreachable =>
+      'تعذر الوصول إلى خدمة بيانات السوق. تحقق من اتصالك بالإنترنت.';
 
   @override
-  String get errMarketRateLimited => 'طلبات كثيرة جداً إلى خدمة بيانات السوق. يرجى الانتظار دقيقة.';
+  String get errMarketRateLimited =>
+      'طلبات كثيرة جداً إلى خدمة بيانات السوق. يرجى الانتظار دقيقة.';
 
   @override
   String errMarketHttp(String status) {
@@ -405,7 +412,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String errDemoUnsupportedSymbol(String symbols) {
-    return 'الوضع التجريبي يدعم $symbols فقط. أضف FINNHUB_API_KEY للحصول على بيانات مباشرة.';
+    return 'لا تتوفر في هذا العرض التجريبي بيانات نموذجية إلا لـ $symbols.';
   }
 
   @override
@@ -491,7 +498,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get aiRegenerate => 'إعادة الإنشاء';
 
   @override
-  String get aiGenerating => 'جارٍ إعداد التحليل… قد يستغرق ذلك دقيقة أو دقيقتين.';
+  String get aiGenerating =>
+      'جارٍ إعداد التحليل… قد يستغرق ذلك دقيقة أو دقيقتين.';
 
   @override
   String get aiSources => 'المصادر';
@@ -506,10 +514,12 @@ class AppLocalizationsAr extends AppLocalizations {
       'تحليل مُنشأ بالذكاء الاصطناعي استناداً إلى بيانات عامة وأخبار حديثة. قد يحتوي على أخطاء أو يكون قديماً، ولا يُعدّ نصيحة استثمارية.';
 
   @override
-  String get errAiNotConfigured => 'لم يتم تكوين التحليل بالذكاء الاصطناعي (لا يوجد ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'ميزات الذكاء الاصطناعي غير متاحة في هذا الإصدار.';
 
   @override
-  String get errAiUnreachable => 'تعذر الوصول إلى خدمة الذكاء الاصطناعي. تحقق من اتصالك بالإنترنت.';
+  String get errAiUnreachable =>
+      'تعذر الوصول إلى خدمة الذكاء الاصطناعي. تحقق من اتصالك بالإنترنت.';
 
   @override
   String errAiHttp(String status) {
@@ -541,7 +551,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get rangeFiveYears => '5 سنوات';
 
   @override
-  String get chartUnavailable => 'سجل الأسعار غير متاح من مصدر البيانات الحالي.';
+  String get chartUnavailable =>
+      'سجل الأسعار غير متاح من مصدر البيانات الحالي.';
 
   @override
   String get sectionStatements => 'القوائم المالية (سنوية)';
@@ -568,7 +579,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get labelOperatingCashFlow => 'التدفق النقدي التشغيلي';
 
   @override
-  String get statementsUnavailable => 'القوائم المالية المعلنة غير متاحة لهذا السهم.';
+  String get statementsUnavailable =>
+      'القوائم المالية المعلنة غير متاحة لهذا السهم.';
 
   @override
   String get launchAtLogin => 'التشغيل عند تسجيل الدخول';
@@ -598,7 +610,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get removeFromFavorites => 'إزالة من المفضلة';
 
   @override
-  String get noFavorites => 'لا توجد مفضلات بعد. انقر على النجمة بجانب سهم لإضافته.';
+  String get noFavorites =>
+      'لا توجد مفضلات بعد. انقر على النجمة بجانب سهم لإضافته.';
 
   @override
   String get displayCurrency => 'عملة العرض';
@@ -706,7 +719,8 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'انتهت فترتك التجريبية المجانية. اختر خطة لمتابعة التحليل.';
+  String get trialExpired =>
+      'انتهت فترتك التجريبية المجانية. اختر خطة لمتابعة التحليل.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -745,7 +759,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get extraPacksTitle => 'تحتاج إلى المزيد؟ اشترِ تحليلات إضافية';
 
   @override
-  String get extraPacksHint => 'التحليلات الإضافية لا تنتهي صلاحيتها أبداً وتُستخدم بعد استهلاك حصتك الشهرية.';
+  String get extraPacksHint =>
+      'التحليلات الإضافية لا تنتهي صلاحيتها أبداً وتُستخدم بعد استهلاك حصتك الشهرية.';
 
   @override
   String get buy => 'شراء';
@@ -773,10 +788,12 @@ class AppLocalizationsAr extends AppLocalizations {
       'المشتريات غير متاحة على هذه المنصة حتى الآن. اشترك من هاتفك أو جهاز Mac؛ ستعمل خطتك على جميع الأجهزة.';
 
   @override
-  String get errQuotaExceeded => 'لم يبقَ لديك أي تحليلات لهذه الفترة. قم بترقية خطتك أو اشترِ تحليلات إضافية.';
+  String get errQuotaExceeded =>
+      'لم يبقَ لديك أي تحليلات لهذه الفترة. قم بترقية خطتك أو اشترِ تحليلات إضافية.';
 
   @override
-  String get errTrialExpired => 'انتهت فترتك التجريبية المجانية. اختر خطة للمتابعة.';
+  String get errTrialExpired =>
+      'انتهت فترتك التجريبية المجانية. اختر خطة للمتابعة.';
 
   @override
   String get errNoPlan => 'يلزم وجود خطة نشطة للتحليل بالذكاء الاصطناعي.';
@@ -788,7 +805,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get usageTitle => 'الاستخدام';
 
   @override
-  String get demoPurchaseNote => 'فوترة تجريبية: عمليات الشراء على هذه المنصة محاكاة فقط.';
+  String get demoPurchaseNote =>
+      'فوترة تجريبية: عمليات الشراء على هذه المنصة محاكاة فقط.';
 
   @override
   String get mostPopular => 'الأكثر شيوعاً';
@@ -828,7 +846,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get aiDepthStandardDesc => 'تقرير كامل بجميع الأقسام.';
 
   @override
-  String get aiDepthDeepDesc => 'مزيد من عمليات البحث على الويب، ومقارنة بالشركات المنافسة، وتفاصيل أعمق.';
+  String get aiDepthDeepDesc =>
+      'مزيد من عمليات البحث على الويب، ومقارنة بالشركات المنافسة، وتفاصيل أعمق.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -863,13 +882,15 @@ class AppLocalizationsAr extends AppLocalizations {
   String get aiReaderBeginnerDesc => 'لغة بسيطة، مع شرح كل مصطلح تقني.';
 
   @override
-  String get aiReaderExperiencedDesc => 'نص أكثر كثافة بالمصطلحات المالية المعتادة.';
+  String get aiReaderExperiencedDesc =>
+      'نص أكثر كثافة بالمصطلحات المالية المعتادة.';
 
   @override
   String get aiCounterArgument => 'أقوى حجة مضادة';
 
   @override
-  String get aiCounterArgumentDesc => 'يُختتم الملخص دائماً بأقوى حجة ضد استنتاجه.';
+  String get aiCounterArgumentDesc =>
+      'يُختتم الملخص دائماً بأقوى حجة ضد استنتاجه.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -974,7 +995,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get upcomingEvents => 'الأحداث القادمة';
 
   @override
-  String get outlookChartNote => 'نطاقات استرشادية؛ الاحتمالات تقديرات تقريبية وليست تنبؤات.';
+  String get outlookChartNote =>
+      'نطاقات استرشادية؛ الاحتمالات تقديرات تقريبية وليست تنبؤات.';
 
   @override
   String get accountTitle => 'الحساب';
@@ -992,7 +1014,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get accountBenefit => 'سجّل الدخول ليعمل اشتراكك على جميع أجهزتك.';
 
   @override
-  String get accountSyncedNote => 'اشتراكك والتحليلات المتبقية متطابقة على كل جهاز.';
+  String get accountSyncedNote =>
+      'اشتراكك والتحليلات المتبقية متطابقة على كل جهاز.';
 
   @override
   String get signInTitle => 'تسجيل الدخول إلى WhatStock';
@@ -1024,13 +1047,16 @@ class AppLocalizationsAr extends AppLocalizations {
   String get errInvalidEmail => 'يرجى إدخال عنوان بريد إلكتروني صالح.';
 
   @override
-  String get errSignInFailed => 'تعذّر تسجيل الدخول. تحقق من اتصالك وحاول مرة أخرى.';
+  String get errSignInFailed =>
+      'تعذّر تسجيل الدخول. تحقق من اتصالك وحاول مرة أخرى.';
 
   @override
-  String get checkoutWaiting => 'أكمل الدفع في المتصفح. سيتم تحديث التطبيق تلقائيًا عند الانتهاء.';
+  String get checkoutWaiting =>
+      'أكمل الدفع في المتصفح. سيتم تحديث التطبيق تلقائيًا عند الانتهاء.';
 
   @override
-  String get paymentViaStripe => 'دفع آمن في المتصفح عبر Stripe. يمكنك الإلغاء في أي وقت.';
+  String get paymentViaStripe =>
+      'دفع آمن في المتصفح عبر Stripe. يمكنك الإلغاء في أي وقت.';
 
   @override
   String get paymentViaStore =>
@@ -1043,7 +1069,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get doubleOptionTitle => 'الضغط مرتين على Option';
 
   @override
-  String get doubleOptionSubtitle => 'يؤدي الضغط على مفتاح Option مرتين بسرعة أيضًا إلى استدعاء WhatStock.';
+  String get doubleOptionSubtitle =>
+      'يؤدي الضغط على مفتاح Option مرتين بسرعة أيضًا إلى استدعاء WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1104,7 +1131,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get portfolio => 'المحفظة';
 
   @override
-  String get portfolioEmpty => 'لا شيء هنا بعد. افتح سهمًا وانقر على «إضافة إلى المحفظة» لمتابعة ما تملكه.';
+  String get portfolioEmpty =>
+      'لا شيء هنا بعد. افتح سهمًا وانقر على «إضافة إلى المحفظة» لمتابعة ما تملكه.';
 
   @override
   String get portfolioLocalNote =>
@@ -1178,7 +1206,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get portfolioRemove => 'إزالة';
 
   @override
-  String get portfolioExcluded => 'لا تُحتسب في الإجماليات المراكز التي ليس لها سعر أو سعر صرف.';
+  String get portfolioExcluded =>
+      'لا تُحتسب في الإجماليات المراكز التي ليس لها سعر أو سعر صرف.';
 
   @override
   String get priceAlerts => 'تنبيهات السعر';
@@ -1313,7 +1342,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get accountDeleted => 'تم حذف حسابك.';
 
   @override
-  String get errDeleteAccount => 'تعذّر حذف الحساب. تحقق من الاتصال وحاول مرة أخرى.';
+  String get errDeleteAccount =>
+      'تعذّر حذف الحساب. تحقق من الاتصال وحاول مرة أخرى.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1350,7 +1380,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get inviteTitle => 'معاينة مغلقة';
 
   @override
-  String get inviteBody => 'WhatStock متاح حاليًا بالدعوة فقط. أدخل رمز الدعوة الذي تلقيته.';
+  String get inviteBody =>
+      'WhatStock متاح حاليًا بالدعوة فقط. أدخل رمز الدعوة الذي تلقيته.';
 
   @override
   String get inviteCodeLabel => 'رمز الدعوة';
@@ -1362,16 +1393,19 @@ class AppLocalizationsAr extends AppLocalizations {
   String get inviteInvalid => 'رمز الدعوة هذا غير صالح.';
 
   @override
-  String get inviteExpired => 'انتهت صلاحية هذه الدعوة. اطلب رمزًا جديدًا من الشخص الذي دعاك.';
+  String get inviteExpired =>
+      'انتهت صلاحية هذه الدعوة. اطلب رمزًا جديدًا من الشخص الذي دعاك.';
 
   @override
-  String get inviteDeviceLimit => 'رمز الدعوة هذا مستخدم بالفعل على الحد الأقصى من الأجهزة.';
+  String get inviteDeviceLimit =>
+      'رمز الدعوة هذا مستخدم بالفعل على الحد الأقصى من الأجهزة.';
 
   @override
   String get previewConfidential => 'معاينة سرية';
 
   @override
-  String get errPreviewDailyLimit => 'تم بلوغ الحد اليومي للتحليلات في هذه المعاينة. حاول مرة أخرى غدًا.';
+  String get errPreviewDailyLimit =>
+      'تم بلوغ الحد اليومي للتحليلات في هذه المعاينة. حاول مرة أخرى غدًا.';
 
   @override
   String ageHours(int count) {
@@ -1432,7 +1466,8 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'انقر على مستوى قدّره الذكاء الاصطناعي لتلقي تنبيه عندما يصل السعر إليه.';
+  String get keyLevelAlertHint =>
+      'انقر على مستوى قدّره الذكاء الاصطناعي لتلقي تنبيه عندما يصل السعر إليه.';
 
   @override
   String get shareAnalysisTitle => 'مشاركة التحليل';
@@ -1447,7 +1482,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get shareCardFooter => 'صُنع باستخدام WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'تحليل بالذكاء الاصطناعي · سيناريوهات توضيحية وليست تنبؤات · ليس نصيحة استثمارية';
+  String get shareCardDisclaimer =>
+      'تحليل بالذكاء الاصطناعي · سيناريوهات توضيحية وليست تنبؤات · ليس نصيحة استثمارية';
 
   @override
   String get referralTitle => 'ادعُ أصدقاءك';
@@ -1495,7 +1531,8 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'هذا الرمز غير موجود. تحقق منه وحاول مرة أخرى.';
+  String get referralErrUnknown =>
+      'هذا الرمز غير موجود. تحقق منه وحاول مرة أخرى.';
 
   @override
   String get referralErrOwn => 'لا يمكنك تفعيل رمزك الخاص.';
@@ -1615,10 +1652,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get askSuggest3 => 'اشرح ذلك بعبارات بسيطة';
 
   @override
-  String get askMaxReached => 'كان هذا آخر سؤال لهذا التحليل. أنشئ تحليلاً جديداً لطرح المزيد من الأسئلة.';
+  String get askMaxReached =>
+      'كان هذا آخر سؤال لهذا التحليل. أنشئ تحليلاً جديداً لطرح المزيد من الأسئلة.';
 
   @override
-  String get errAskLimit => 'لقد بلغت الحد اليومي للأسئلة. يُرجى المحاولة مرة أخرى غدًا.';
+  String get errAskLimit =>
+      'لقد بلغت الحد اليومي للأسئلة. يُرجى المحاولة مرة أخرى غدًا.';
 
   @override
   String get eventTomorrow => 'غدًا';
@@ -1717,7 +1756,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get notesTitle => 'ملاحظاتي';
 
   @override
-  String get notesHint => 'لماذا اشتريته، وما الذي تتابعه، وما الذي قد يدفعك إلى بيعه؟';
+  String get notesHint =>
+      'لماذا اشتريته، وما الذي تتابعه، وما الذي قد يدفعك إلى بيعه؟';
 
   @override
   String get notesInfo =>
@@ -1773,7 +1813,8 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get syncInfo => 'تتم مزامنة المحفظة والمفضلة وتنبيهات السعر والملاحظات على جميع أجهزتك.';
+  String get syncInfo =>
+      'تتم مزامنة المحفظة والمفضلة وتنبيهات السعر والملاحظات على جميع أجهزتك.';
 
   @override
   String syncLast(String time) {
@@ -1820,7 +1861,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get digestTitle => 'ملخص أسبوعي عبر البريد الإلكتروني';
 
   @override
-  String get digestHint => 'كل يوم اثنين: أداء مفضلتك ومحفظتك خلال الأسبوع الماضي، ومواعيد نتائجها القادمة.';
+  String get digestHint =>
+      'كل يوم اثنين: أداء مفضلتك ومحفظتك خلال الأسبوع الماضي، ومواعيد نتائجها القادمة.';
 
   @override
   String get benchmarkTitle => 'مقارنة بمؤشر S&P 500';
@@ -1912,7 +1954,8 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'قيمة الشركة كلها في سوق الأسهم: سعر السهم × عدد الأسهم.';
+  String get glossMarketCap =>
+      'قيمة الشركة كلها في سوق الأسهم: سعر السهم × عدد الأسهم.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1943,17 +1986,20 @@ class AppLocalizationsAr extends AppLocalizations {
       'P/E ÷ نمو الأرباح السنوي المتوقع (%). قرابة 1 تُعدّ غالبًا قيمة عادلة؛ فهي تضع P/E في ضوء النمو.';
 
   @override
-  String get glossEps => 'ربح السهم الواحد خلال آخر 12 شهرًا. ارتفاع EPS على مر السنين من أقوى علامات الشركة السليمة.';
+  String get glossEps =>
+      'ربح السهم الواحد خلال آخر 12 شهرًا. ارتفاع EPS على مر السنين من أقوى علامات الشركة السليمة.';
 
   @override
   String get glossBeta =>
       'مدى ميل السهم إلى التحرك مع السوق: 1 = مثل السوق، 1.5 = تقلبات أكبر بنحو 50%، أقل من 1 = أهدأ.';
 
   @override
-  String get glossRevenueTtm => 'إجمالي المبيعات في آخر 12 شهرًا، قبل أي تكاليف.';
+  String get glossRevenueTtm =>
+      'إجمالي المبيعات في آخر 12 شهرًا، قبل أي تكاليف.';
 
   @override
-  String get glossNetIncomeTtm => 'الربح المتبقي بعد كل التكاليف والفوائد والضرائب خلال آخر 12 شهرًا.';
+  String get glossNetIncomeTtm =>
+      'الربح المتبقي بعد كل التكاليف والفوائد والضرائب خلال آخر 12 شهرًا.';
 
   @override
   String get glossGrossMargin =>
@@ -1964,14 +2010,16 @@ class AppLocalizationsAr extends AppLocalizations {
       'حصة الإيرادات المتبقية بعد تكاليف تشغيل النشاط (الأجور، الإيجار، التسويق)، قبل الفوائد والضرائب.';
 
   @override
-  String get glossNetMargin => 'حصة الإيرادات التي تتحول إلى ربح نهائي. 20% تعني أن 20 من كل 100 من المبيعات ربح.';
+  String get glossNetMargin =>
+      'حصة الإيرادات التي تتحول إلى ربح نهائي. 20% تعني أن 20 من كل 100 من المبيعات ربح.';
 
   @override
   String get glossRoe =>
       'العائد على حقوق الملكية: الربح السنوي ÷ رأس مال المالكين. يبيّن مدى حسن استخدام الإدارة لأموال المساهمين؛ ما فوق 15% تقريبًا قوي.';
 
   @override
-  String get glossRoa => 'العائد على الأصول: الربح السنوي ÷ كل ما تملكه الشركة. قارنه داخل القطاع نفسه.';
+  String get glossRoa =>
+      'العائد على الأصول: الربح السنوي ÷ كل ما تملكه الشركة. قارنه داخل القطاع نفسه.';
 
   @override
   String get glossDebtToEquity =>
@@ -1992,7 +2040,8 @@ class AppLocalizationsAr extends AppLocalizations {
       'التوزيعات السنوية ÷ سعر السهم: الدخل النقدي الذي ستحصل عليه سنويًا كنسبة مئوية مما تدفعه.';
 
   @override
-  String get glossDividendPerShare => 'التوزيعات المدفوعة عن سهم واحد خلال العام الماضي.';
+  String get glossDividendPerShare =>
+      'التوزيعات المدفوعة عن سهم واحد خلال العام الماضي.';
 
   @override
   String get glossPayoutRatio =>
@@ -2045,7 +2094,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get watchSortName => 'حسب رمز السهم (A–Z)';
 
   @override
-  String get watchHint => 'اسحب المقبض لإعادة الترتيب، ومرّر لليسار للإزالة. يعرض الخط آخر 30 يومًا.';
+  String get watchHint =>
+      'اسحب المقبض لإعادة الترتيب، ومرّر لليسار للإزالة. يعرض الخط آخر 30 يومًا.';
 
   @override
   String analysisReady(String symbol) {
@@ -2089,7 +2139,8 @@ class AppLocalizationsAr extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'ربحية السهم عند المتوقع أو أعلى في $beats من آخر $total من الأرباع',
+      other:
+          'ربحية السهم عند المتوقع أو أعلى في $beats من آخر $total من الأرباع',
       one: 'ربحية السهم عند المتوقع أو أعلى في $beats من ربع واحد',
     );
     return '$_temp0';
@@ -2126,7 +2177,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get earningsRemindersTitle => 'تذكيرات النتائج';
 
   @override
-  String get earningsRemindersSubtitle => 'إشعار قبل يوم من إعلان أسهم المفضلة أو محفظتك نتائجها الفصلية';
+  String get earningsRemindersSubtitle =>
+      'إشعار قبل يوم من إعلان أسهم المفضلة أو محفظتك نتائجها الفصلية';
 
   @override
   String addAllToFavorites(int count) {
@@ -2143,7 +2195,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get holdingsReviewTitle => 'المراكز التي عُثر عليها';
 
   @override
-  String get holdingsReviewHint => 'تحقّق من الأرقام قبل إضافتها. السعر هو متوسط سعر شرائك للسهم، وليس سعر اليوم.';
+  String get holdingsReviewHint =>
+      'تحقّق من الأرقام قبل إضافتها. السعر هو متوسط سعر شرائك للسهم، وليس سعر اليوم.';
 
   @override
   String get holdingsNoPrice => 'لا يوجد متوسط سعر شراء في الصورة';
@@ -2249,7 +2302,8 @@ class AppLocalizationsAr extends AppLocalizations {
       'عمليات الشراء والبيع في السوق المفتوحة من قبل المديرين التنفيذيين وأعضاء مجلس الإدارة خلال آخر 90 يومًا (SEC Form 4). لا تُحتسب ممارسة الخيارات ومنح الأسهم.';
 
   @override
-  String get insiderNone => 'لا توجد عمليات شراء أو بيع للمطلعين في السوق المفتوحة خلال آخر 90 يومًا.';
+  String get insiderNone =>
+      'لا توجد عمليات شراء أو بيع للمطلعين في السوق المفتوحة خلال آخر 90 يومًا.';
 
   @override
   String get analystTrend => 'كيف تغيّرت الآراء شهرًا بعد شهر';
@@ -2273,7 +2327,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get watchListAddTo => 'إضافة إلى قائمة';
 
   @override
-  String get watchListEmpty => 'لا توجد أسهم في هذه القائمة بعد. اضغط على زر القائمة بجانب السهم لإضافته.';
+  String get watchListEmpty =>
+      'لا توجد أسهم في هذه القائمة بعد. اضغط على زر القائمة بجانب السهم لإضافته.';
 
   @override
   String get portfolioAskTitle => 'أسئلة حول محفظتك';
@@ -2288,13 +2343,15 @@ class AppLocalizationsAr extends AppLocalizations {
   String get backupSave => 'حفظ نسخة احتياطية';
 
   @override
-  String get backupSaveHint => 'مفضلتك وقوائمك ومحفظتك وتنبيهاتك وملاحظاتك في ملف واحد.';
+  String get backupSaveHint =>
+      'مفضلتك وقوائمك ومحفظتك وتنبيهاتك وملاحظاتك في ملف واحد.';
 
   @override
   String get backupRestore => 'الاستعادة من نسخة احتياطية';
 
   @override
-  String get backupRestoreHint => 'يضيف ما في الملف؛ لن يُحذف شيء مما لديك الآن.';
+  String get backupRestoreHint =>
+      'يضيف ما في الملف؛ لن يُحذف شيء مما لديك الآن.';
 
   @override
   String get backupRestored => 'تمت استعادة النسخة الاحتياطية.';
@@ -2416,7 +2473,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'تنبيه المحفظة';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'إشعار عندما تتحرك محفظتك بالكامل بهذا القدر خلال يوم واحد.';
+  String get portfolioMoveAlertSubtitle =>
+      'إشعار عندما تتحرك محفظتك بالكامل بهذا القدر خلال يوم واحد.';
 
   @override
   String get portfolioMoveAlertOff => 'إيقاف';
@@ -2453,7 +2511,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get watchImport => 'إضافة رموز الأسهم';
 
   @override
-  String get watchImportHint => 'الصق رموز الأسهم مفصولةً بفواصل أو مسافات أو أسطر جديدة، مثل قائمة شاركها شخص ما معك.';
+  String get watchImportHint =>
+      'الصق رموز الأسهم مفصولةً بفواصل أو مسافات أو أسطر جديدة، مثل قائمة شاركها شخص ما معك.';
 
   @override
   String watchImported(int count) {
@@ -2590,7 +2649,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get portfolioTopHoldings => 'أكبر المراكز';
 
   @override
-  String get portfolioShareNote => 'تتم مشاركة النسب المئوية فقط، دون أي مبالغ.';
+  String get portfolioShareNote =>
+      'تتم مشاركة النسب المئوية فقط، دون أي مبالغ.';
 
   @override
   String portfolioPositionsCount(int count) {
@@ -2618,7 +2678,8 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get contributionHint => 'شراء فقط دون أي بيع: تحصل المراكز الأكثر تأخرًا عن هدفها على المال أولًا.';
+  String get contributionHint =>
+      'شراء فقط دون أي بيع: تحصل المراكز الأكثر تأخرًا عن هدفها على المال أولًا.';
 
   @override
   String contributionShares(String shares) {
@@ -2651,7 +2712,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get portfolioSampleTry => 'تجربة محفظة نموذجية';
 
   @override
-  String get portfolioSampleBanner => 'هذه محفظة نموذجية. أضف مشترياتك الخاصة إلى جانبها، أو أزلها.';
+  String get portfolioSampleBanner =>
+      'هذه محفظة نموذجية. أضف مشترياتك الخاصة إلى جانبها، أو أزلها.';
 
   @override
   String get portfolioSampleRemove => 'إزالة المحفظة النموذجية';
@@ -2709,10 +2771,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lotNoteAdd => 'إضافة ملاحظة';
 
   @override
-  String get lotNoteBuyHint => 'لماذا تشتري؟ ستُضاف إلى ملاحظات السهم مع التاريخ.';
+  String get lotNoteBuyHint =>
+      'لماذا تشتري؟ ستُضاف إلى ملاحظات السهم مع التاريخ.';
 
   @override
-  String get lotNoteSellHint => 'لماذا تبيع؟ ستُضاف إلى ملاحظات السهم مع التاريخ.';
+  String get lotNoteSellHint =>
+      'لماذا تبيع؟ ستُضاف إلى ملاحظات السهم مع التاريخ.';
 
   @override
   String get lotNoteBought => 'شراء';
@@ -2837,7 +2901,8 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'سجّل الدخول ببريدك الإلكتروني لتفعيل رمز صديق.';
+  String get referralErrSignIn =>
+      'سجّل الدخول ببريدك الإلكتروني لتفعيل رمز صديق.';
 
   @override
   String get referralErrFull => 'بلغ هذا الرمز الحد الأقصى لعدد مرات التفعيل.';
@@ -2848,13 +2913,16 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated => 'انقطع التحليل قبل اكتماله. يرجى المحاولة مرة أخرى – لم يُحتسب من حصتك.';
+  String get errAiTruncated =>
+      'انقطع التحليل قبل اكتماله. يرجى المحاولة مرة أخرى – لم يُحتسب من حصتك.';
 
   @override
-  String get errImageUnsupported => 'تعذّرت قراءة هذه الصورة. احفظها بتنسيق JPEG أو PNG وحاول مرة أخرى.';
+  String get errImageUnsupported =>
+      'تعذّرت قراءة هذه الصورة. احفظها بتنسيق JPEG أو PNG وحاول مرة أخرى.';
 
   @override
-  String get errRateLimited => 'طلبات كثيرة جداً خلال وقت قصير. يرجى الانتظار دقيقة ثم المحاولة مرة أخرى.';
+  String get errRateLimited =>
+      'طلبات كثيرة جداً خلال وقت قصير. يرجى الانتظار دقيقة ثم المحاولة مرة أخرى.';
 
   @override
   String get watchListNameTaken => 'توجد قائمة بهذا الاسم بالفعل.';
@@ -2877,14 +2945,16 @@ class AppLocalizationsAr extends AppLocalizations {
       'لا يوجد هنا اشتراك لإدارته. تتم إدارة الاشتراك الذي تم شراؤه من App Store أو Google Play من إعدادات المتجر.';
 
   @override
-  String get backupFailed => 'تعذر حفظ النسخة الاحتياطية. يرجى المحاولة مرة أخرى.';
+  String get backupFailed =>
+      'تعذر حفظ النسخة الاحتياطية. يرجى المحاولة مرة أخرى.';
 
   @override
   String get syncTooLarge =>
       'بياناتك كبيرة جدًا بحيث تتعذّر مزامنتها مع حسابك. احذف المعاملات أو الملاحظات التي لم تعد بحاجة إليها، وستتم إعادة المحاولة.';
 
   @override
-  String get noteFull => 'ملاحظات هذا السهم ممتلئة، لذا لم تتم إضافة هذا الإدخال. اختصر الملاحظات وحاول مرة أخرى.';
+  String get noteFull =>
+      'ملاحظات هذا السهم ممتلئة، لذا لم تتم إضافة هذا الإدخال. اختصر الملاحظات وحاول مرة أخرى.';
 
   @override
   String portfolioNoRateFor(String symbols) {
@@ -2896,8 +2966,10 @@ class AppLocalizationsAr extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count من توزيعات الأرباح بـ $currencies ليس لها سعر صرف، لذا لا تُحتسب في الإجماليات.',
-      one: 'توزيع أرباح واحد بـ $currencies ليس له سعر صرف، لذا لا يُحتسب في الإجماليات.',
+      other:
+          '$count من توزيعات الأرباح بـ $currencies ليس لها سعر صرف، لذا لا تُحتسب في الإجماليات.',
+      one:
+          'توزيع أرباح واحد بـ $currencies ليس له سعر صرف، لذا لا يُحتسب في الإجماليات.',
     );
     return '$_temp0';
   }
@@ -2996,7 +3068,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get aiReportNoteHint => 'ما المشكلة؟ (اختياري)';
 
   @override
-  String get aiReportPrivacy => 'نتلقى نص هذه الإجابة وملاحظتك — دون حسابك — لنتمكن من مراجعتها.';
+  String get aiReportPrivacy =>
+      'نتلقى نص هذه الإجابة وملاحظتك — دون حسابك — لنتمكن من مراجعتها.';
 
   @override
   String get aiReportSend => 'إرسال البلاغ';
@@ -3009,7 +3082,8 @@ class AppLocalizationsAr extends AppLocalizations {
       'معلومات عامة مُنشأة بالذكاء الاصطناعي حول تكوين محفظتك. لا تأخذ في الاعتبار أهدافك أو وضعك المالي أو الضريبي، ولا تُعدّ توصية شخصية ولا نصيحة استثمارية.';
 
   @override
-  String get briefNotificationTitle => 'ملخص بالذكاء الاصطناعي · اليوم مع أسهمك';
+  String get briefNotificationTitle =>
+      'ملخص بالذكاء الاصطناعي · اليوم مع أسهمك';
 
   @override
   String get portfolioGoalSet => 'تحديد هدف';
@@ -3170,7 +3244,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get portfolioSplitRatio => 'النسبة (جديد : قديم)';
 
   @override
-  String get portfolioSplitRatioError => 'أدخل نسبة مثل 10:1، أو 1:10 للتجزئة العكسية.';
+  String get portfolioSplitRatioError =>
+      'أدخل نسبة مثل 10:1، أو 1:10 للتجزئة العكسية.';
 
   @override
   String get portfolioSplitDate => 'تاريخ التجزئة';
@@ -3296,13 +3371,16 @@ class AppLocalizationsAr extends AppLocalizations {
   String get techNeutral => 'متعادل';
 
   @override
-  String get techGoldenCross => 'متوسط 50 يومًا أعلى من متوسط 200 يوم – اتجاه صاعد وفق القراءة التقليدية.';
+  String get techGoldenCross =>
+      'متوسط 50 يومًا أعلى من متوسط 200 يوم – اتجاه صاعد وفق القراءة التقليدية.';
 
   @override
-  String get techDeathCross => 'متوسط 50 يومًا أدنى من متوسط 200 يوم – اتجاه هابط وفق القراءة التقليدية.';
+  String get techDeathCross =>
+      'متوسط 50 يومًا أدنى من متوسط 200 يوم – اتجاه هابط وفق القراءة التقليدية.';
 
   @override
-  String get glossSma50 => 'متوسط سعر الإغلاق لآخر 50 يوم تداول. غالبًا يُقرأ السعر فوقه كقوة قصيرة الأجل، وتحته كضعف.';
+  String get glossSma50 =>
+      'متوسط سعر الإغلاق لآخر 50 يوم تداول. غالبًا يُقرأ السعر فوقه كقوة قصيرة الأجل، وتحته كضعف.';
 
   @override
   String get glossSma200 =>
@@ -3317,7 +3395,8 @@ class AppLocalizationsAr extends AppLocalizations {
       'مقدار تذبذب السعر من يوم لآخر، محسوبًا على أساس سنوي: 20% تعني أن سنة عادية تتحرك ضمن ±20% تقريبًا. التقلب الأعلى يعني تحركات أكبر في الاتجاهين.';
 
   @override
-  String get techNote => 'محسوب من أسعار الإغلاق اليومية. الإشارات الفنية تصف الماضي، لا المستقبل.';
+  String get techNote =>
+      'محسوب من أسعار الإغلاق اليومية. الإشارات الفنية تصف الماضي، لا المستقبل.';
 
   @override
   String portfolioAbove200(int above, int count) {
@@ -3357,7 +3436,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get glossaryPageTitle => 'مسرد المصطلحات';
 
   @override
-  String get glossaryPageSubtitle => 'شروح بسيطة لكل رقم يعرضه التطبيق، من P/E إلى RSI';
+  String get glossaryPageSubtitle =>
+      'شروح بسيطة لكل رقم يعرضه التطبيق، من P/E إلى RSI';
 
   @override
   String get glossarySearchHint => 'البحث في المسرد';

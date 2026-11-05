@@ -293,7 +293,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get labelDividendGrowth5y => 'Зростання дивідендів (5 р.)';
 
   @override
-  String get dividendNone => 'За останні 12 місяців дивіденди не виплачувалися.';
+  String get dividendNone =>
+      'За останні 12 місяців дивіденди не виплачувалися.';
 
   @override
   String get dividendOnYourShares => 'На ваші акції, на рік';
@@ -354,7 +355,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get errMissingAnthropicKey =>
-      'Розпізнавання зображень не налаштовано (немає ANTHROPIC_API_KEY). Введіть тікер вручну.';
+      'Розпізнавання зображень недоступне в цій версії. Введіть тікер вручну.';
 
   @override
   String get errRecognitionUnreachable =>
@@ -366,26 +367,31 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Служба розпізнавання не змогла обробити це зображення.';
+  String get errRecognitionRefused =>
+      'Служба розпізнавання не змогла обробити це зображення.';
 
   @override
-  String get errRecognitionTruncated => 'Відповідь служби розпізнавання була обрізана. Спробуйте ще раз.';
+  String get errRecognitionTruncated =>
+      'Відповідь служби розпізнавання була обрізана. Спробуйте ще раз.';
 
   @override
-  String get errRecognitionBadResponse => 'Неочікувана відповідь від служби розпізнавання.';
+  String get errRecognitionBadResponse =>
+      'Неочікувана відповідь від служби розпізнавання.';
 
   @override
-  String get errRecognitionEmpty => 'Служба розпізнавання повернула порожню відповідь.';
+  String get errRecognitionEmpty =>
+      'Служба розпізнавання повернула порожню відповідь.';
 
   @override
-  String get errMissingFinnhubKey => 'Ринкові дані не налаштовано (немає FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey => 'Ринкові дані недоступні в цій версії.';
 
   @override
   String get errMarketUnreachable =>
       'Не вдалося підключитися до служби ринкових даних. Перевірте підключення до інтернету.';
 
   @override
-  String get errMarketRateLimited => 'Занадто багато запитів до служби ринкових даних. Зачекайте хвилину.';
+  String get errMarketRateLimited =>
+      'Занадто багато запитів до служби ринкових даних. Зачекайте хвилину.';
 
   @override
   String errMarketHttp(String status) {
@@ -393,7 +399,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Неочікувана відповідь від служби ринкових даних.';
+  String get errMarketBadResponse =>
+      'Неочікувана відповідь від служби ринкових даних.';
 
   @override
   String errNoQuote(String symbol) {
@@ -407,7 +414,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String errDemoUnsupportedSymbol(String symbols) {
-    return 'Демо-режим підтримує лише $symbols. Додайте FINNHUB_API_KEY для актуальних даних.';
+    return 'У демо-режимі зразкові дані є лише для $symbols.';
   }
 
   @override
@@ -508,10 +515,11 @@ class AppLocalizationsUk extends AppLocalizations {
       'Аналіз створено ШІ на основі відкритих даних і останніх новин. Він може містити помилки або бути застарілим і не є інвестиційною порадою.';
 
   @override
-  String get errAiNotConfigured => 'ШІ-аналіз не налаштовано (немає ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'Функції ШІ недоступні в цій версії.';
 
   @override
-  String get errAiUnreachable => 'Не вдалося підключитися до служби ШІ. Перевірте підключення до інтернету.';
+  String get errAiUnreachable =>
+      'Не вдалося підключитися до служби ШІ. Перевірте підключення до інтернету.';
 
   @override
   String errAiHttp(String status) {
@@ -543,7 +551,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get rangeFiveYears => '5Р';
 
   @override
-  String get chartUnavailable => 'Історія цін недоступна в поточному джерелі даних.';
+  String get chartUnavailable =>
+      'Історія цін недоступна в поточному джерелі даних.';
 
   @override
   String get sectionStatements => 'Фінансова звітність (річна)';
@@ -570,7 +579,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get labelOperatingCashFlow => 'Операційний грошовий потік';
 
   @override
-  String get statementsUnavailable => 'Опублікована фінансова звітність для цієї акції недоступна.';
+  String get statementsUnavailable =>
+      'Опублікована фінансова звітність для цієї акції недоступна.';
 
   @override
   String get launchAtLogin => 'Запускати під час входу в систему';
@@ -579,7 +589,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get hotkeyLabel => 'Глобальне сполучення клавіш';
 
   @override
-  String get hotkeyRecordHint => 'Натисніть тут, а потім натисніть нове сполучення клавіш';
+  String get hotkeyRecordHint =>
+      'Натисніть тут, а потім натисніть нове сполучення клавіш';
 
   @override
   String get hotkeyReset => 'Скинути до типового';
@@ -600,7 +611,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get removeFromFavorites => 'Видалити з обраного';
 
   @override
-  String get noFavorites => 'В обраному поки нічого немає. Натисніть на зірочку біля акції, щоб додати її.';
+  String get noFavorites =>
+      'В обраному поки нічого немає. Натисніть на зірочку біля акції, щоб додати її.';
 
   @override
   String get displayCurrency => 'Валюта відображення';
@@ -647,7 +659,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get updateDownloading => 'Оновлення завантажується у фоновому режимі…';
 
   @override
-  String get updateDownloaded => 'Оновлення готове. Перезапустіть застосунок, щоб установити його.';
+  String get updateDownloaded =>
+      'Оновлення готове. Перезапустіть застосунок, щоб установити його.';
 
   @override
   String get updateNow => 'Оновити';
@@ -656,7 +669,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get restartNow => 'Перезапустити';
 
   @override
-  String get updatesViaStore => 'Оновлення надходять автоматично через магазин застосунків.';
+  String get updatesViaStore =>
+      'Оновлення надходять автоматично через магазин застосунків.';
 
   @override
   String get updateCheckFailed => 'Не вдалося перевірити оновлення.';
@@ -722,7 +736,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Ваш безкоштовний пробний період завершився. Оберіть тариф, щоб продовжити аналізувати.';
+  String get trialExpired =>
+      'Ваш безкоштовний пробний період завершився. Оберіть тариф, щоб продовжити аналізувати.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -794,7 +809,8 @@ class AppLocalizationsUk extends AppLocalizations {
       'У цьому періоді у вас не залишилося аналізів. Перейдіть на вищий тариф або придбайте додаткові аналізи.';
 
   @override
-  String get errTrialExpired => 'Ваш безкоштовний пробний період завершився. Оберіть тариф, щоб продовжити.';
+  String get errTrialExpired =>
+      'Ваш безкоштовний пробний період завершився. Оберіть тариф, щоб продовжити.';
 
   @override
   String get errNoPlan => 'Для ШІ-аналізу потрібен активний тариф.';
@@ -806,7 +822,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get usageTitle => 'Використання';
 
   @override
-  String get demoPurchaseNote => 'Демо-режим оплати: на цій платформі покупки імітуються.';
+  String get demoPurchaseNote =>
+      'Демо-режим оплати: на цій платформі покупки імітуються.';
 
   @override
   String get mostPopular => 'Найпопулярніший';
@@ -846,7 +863,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get aiDepthStandardDesc => 'Повний звіт з усіма розділами.';
 
   @override
-  String get aiDepthDeepDesc => 'Більше вебпошуків, порівняння з конкурентами та глибша деталізація.';
+  String get aiDepthDeepDesc =>
+      'Більше вебпошуків, порівняння з конкурентами та глибша деталізація.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -876,16 +894,19 @@ class AppLocalizationsUk extends AppLocalizations {
   String get aiReaderExperienced => 'Досвідчений';
 
   @override
-  String get aiReaderBeginnerDesc => 'Простою мовою; кожен фаховий термін пояснено.';
+  String get aiReaderBeginnerDesc =>
+      'Простою мовою; кожен фаховий термін пояснено.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Щільніший текст зі стандартною фінансовою термінологією.';
+  String get aiReaderExperiencedDesc =>
+      'Щільніший текст зі стандартною фінансовою термінологією.';
 
   @override
   String get aiCounterArgument => 'Найсильніший контраргумент';
 
   @override
-  String get aiCounterArgumentDesc => 'Підсумок завжди завершується найвагомішим аргументом проти власного висновку.';
+  String get aiCounterArgumentDesc =>
+      'Підсумок завжди завершується найвагомішим аргументом проти власного висновку.';
 
   @override
   String aiWebSearchesInfo(int count) {
@@ -984,7 +1005,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get upcomingEvents => 'Найближчі події';
 
   @override
-  String get outlookChartNote => 'Орієнтовні діапазони; ймовірності — приблизні оцінки, а не прогнози.';
+  String get outlookChartNote =>
+      'Орієнтовні діапазони; ймовірності — приблизні оцінки, а не прогнози.';
 
   @override
   String get accountTitle => 'Обліковий запис';
@@ -999,10 +1021,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get notSignedIn => 'Вхід не виконано';
 
   @override
-  String get accountBenefit => 'Увійдіть, щоб ваша підписка працювала на всіх ваших пристроях.';
+  String get accountBenefit =>
+      'Увійдіть, щоб ваша підписка працювала на всіх ваших пристроях.';
 
   @override
-  String get accountSyncedNote => 'Ваша підписка та залишок аналізів однакові на всіх пристроях.';
+  String get accountSyncedNote =>
+      'Ваша підписка та залишок аналізів однакові на всіх пристроях.';
 
   @override
   String get signInTitle => 'Вхід у WhatStock';
@@ -1034,13 +1058,16 @@ class AppLocalizationsUk extends AppLocalizations {
   String get errInvalidEmail => 'Введіть дійсну адресу електронної пошти.';
 
   @override
-  String get errSignInFailed => 'Не вдалося увійти. Перевірте підключення до інтернету та спробуйте ще раз.';
+  String get errSignInFailed =>
+      'Не вдалося увійти. Перевірте підключення до інтернету та спробуйте ще раз.';
 
   @override
-  String get checkoutWaiting => 'Завершіть оплату в браузері. Застосунок оновиться автоматично, щойно все буде готово.';
+  String get checkoutWaiting =>
+      'Завершіть оплату в браузері. Застосунок оновиться автоматично, щойно все буде готово.';
 
   @override
-  String get paymentViaStripe => 'Безпечна оплата в браузері через Stripe. Скасувати можна будь-коли.';
+  String get paymentViaStripe =>
+      'Безпечна оплата в браузері через Stripe. Скасувати можна будь-коли.';
 
   @override
   String get paymentViaStore =>
@@ -1053,7 +1080,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get doubleOptionTitle => 'Подвійне натискання Option';
 
   @override
-  String get doubleOptionSubtitle => 'Швидке подвійне натискання клавіші Option також викликає WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Швидке подвійне натискання клавіші Option також викликає WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1188,7 +1216,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get portfolioRemove => 'Видалити';
 
   @override
-  String get portfolioExcluded => 'Позиції без ціни або курсу валют не враховуються в підсумках.';
+  String get portfolioExcluded =>
+      'Позиції без ціни або курсу валют не враховуються в підсумках.';
 
   @override
   String get priceAlerts => 'Цінові сповіщення';
@@ -1230,7 +1259,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Сповіщень поки немає. Відкрийте акцію й натисніть на дзвіночок.';
+  String get alertsEmpty =>
+      'Сповіщень поки немає. Відкрийте акцію й натисніть на дзвіночок.';
 
   @override
   String get alertsNote =>
@@ -1323,7 +1353,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get accountDeleted => 'Ваш акаунт видалено.';
 
   @override
-  String get errDeleteAccount => 'Не вдалося видалити акаунт. Перевірте з’єднання й спробуйте ще раз.';
+  String get errDeleteAccount =>
+      'Не вдалося видалити акаунт. Перевірте з’єднання й спробуйте ще раз.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1360,7 +1391,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get inviteTitle => 'Закритий попередній перегляд';
 
   @override
-  String get inviteBody => 'WhatStock поки що доступний лише за запрошенням. Введіть отриманий код запрошення.';
+  String get inviteBody =>
+      'WhatStock поки що доступний лише за запрошенням. Введіть отриманий код запрошення.';
 
   @override
   String get inviteCodeLabel => 'Код запрошення';
@@ -1372,10 +1404,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get inviteInvalid => 'Цей код запрошення недійсний.';
 
   @override
-  String get inviteExpired => 'Термін дії цього запрошення минув. Попросіть новий код у людини, яка вас запросила.';
+  String get inviteExpired =>
+      'Термін дії цього запрошення минув. Попросіть новий код у людини, яка вас запросила.';
 
   @override
-  String get inviteDeviceLimit => 'Цей код запрошення вже використовується на максимальній кількості пристроїв.';
+  String get inviteDeviceLimit =>
+      'Цей код запрошення вже використовується на максимальній кількості пристроїв.';
 
   @override
   String get previewConfidential => 'Конфіденційний перегляд';
@@ -1441,7 +1475,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'Натисніть на рівень, оцінений ШІ, щоб отримати сповіщення, коли ціна його досягне.';
+  String get keyLevelAlertHint =>
+      'Натисніть на рівень, оцінений ШІ, щоб отримати сповіщення, коли ціна його досягне.';
 
   @override
   String get shareAnalysisTitle => 'Поділитися аналізом';
@@ -1456,7 +1491,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get shareCardFooter => 'Створено у WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'ШІ-аналіз · ілюстративні сценарії, не прогнози · не інвестиційна порада';
+  String get shareCardDisclaimer =>
+      'ШІ-аналіз · ілюстративні сценарії, не прогнози · не інвестиційна порада';
 
   @override
   String get referralTitle => 'Запросіть друзів';
@@ -1502,7 +1538,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Такого коду не існує. Перевірте його та спробуйте ще раз.';
+  String get referralErrUnknown =>
+      'Такого коду не існує. Перевірте його та спробуйте ще раз.';
 
   @override
   String get referralErrOwn => 'Не можна активувати власний код.';
@@ -1625,7 +1662,8 @@ class AppLocalizationsUk extends AppLocalizations {
       'Це було останнє запитання для цього аналізу. Щоб поставити більше запитань, створіть новий аналіз.';
 
   @override
-  String get errAskLimit => 'Ви досягли сьогоднішнього ліміту запитань. Спробуйте ще раз завтра.';
+  String get errAskLimit =>
+      'Ви досягли сьогоднішнього ліміту запитань. Спробуйте ще раз завтра.';
 
   @override
   String get eventTomorrow => 'Завтра';
@@ -1723,7 +1761,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get notesTitle => 'Мої нотатки';
 
   @override
-  String get notesHint => 'Чому ви її купили, за чим стежите, що змусить вас продати?';
+  String get notesHint =>
+      'Чому ви її купили, за чим стежите, що змусить вас продати?';
 
   @override
   String get notesInfo =>
@@ -1777,7 +1816,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get syncInfo => 'Портфель, обране, цінові сповіщення та нотатки синхронізуються на всіх ваших пристроях.';
+  String get syncInfo =>
+      'Портфель, обране, цінові сповіщення та нотатки синхронізуються на всіх ваших пристроях.';
 
   @override
   String syncLast(String time) {
@@ -1788,7 +1828,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get syncNow => 'Синхронізувати зараз';
 
   @override
-  String get syncFailed => 'Не вдалося синхронізувати. Повторна спроба відбудеться автоматично.';
+  String get syncFailed =>
+      'Не вдалося синхронізувати. Повторна спроба відбудеться автоматично.';
 
   @override
   String get alertEmailTitle => 'Лист при спрацюванні сповіщення';
@@ -1917,7 +1958,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'Скільки коштує вся компанія на біржі: ціна акції × кількість акцій.';
+  String get glossMarketCap =>
+      'Скільки коштує вся компанія на біржі: ціна акції × кількість акцій.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1956,7 +1998,8 @@ class AppLocalizationsUk extends AppLocalizations {
       'Наскільки акція зазвичай рухається разом із ринком: 1 = як ринок, 1,5 = коливання приблизно на 50% більші, менше 1 = спокійніша.';
 
   @override
-  String get glossRevenueTtm => 'Загальні продажі за останні 12 місяців, до будь-яких витрат.';
+  String get glossRevenueTtm =>
+      'Загальні продажі за останні 12 місяців, до будь-яких витрат.';
 
   @override
   String get glossNetIncomeTtm =>
@@ -1991,17 +2034,20 @@ class AppLocalizationsUk extends AppLocalizations {
       'Короткострокові активи ÷ рахунки до сплати протягом року. Понад 1 означає, що компанія може покрити найближчі зобов’язання.';
 
   @override
-  String get glossRevenueGrowth => 'Наскільки виручка зросла порівняно з роком раніше.';
+  String get glossRevenueGrowth =>
+      'Наскільки виручка зросла порівняно з роком раніше.';
 
   @override
-  String get glossEpsGrowth => 'Наскільки прибуток на акцію зріс порівняно з роком раніше.';
+  String get glossEpsGrowth =>
+      'Наскільки прибуток на акцію зріс порівняно з роком раніше.';
 
   @override
   String get glossDividendYield =>
       'Річний дивіденд ÷ ціна акції: грошовий дохід, який ви отримували б щороку, у відсотках від того, що платите.';
 
   @override
-  String get glossDividendPerShare => 'Дивіденд, виплачений на одну акцію за останній рік.';
+  String get glossDividendPerShare =>
+      'Дивіденд, виплачений на одну акцію за останній рік.';
 
   @override
   String get glossPayoutRatio =>
@@ -2099,10 +2145,14 @@ class AppLocalizationsUk extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'На рівні очікуваного EPS або вище в $beats з останніх $total кварталів',
-      many: 'На рівні очікуваного EPS або вище в $beats з останніх $total кварталів',
-      few: 'На рівні очікуваного EPS або вище в $beats з останніх $total кварталів',
-      one: 'На рівні очікуваного EPS або вище в $beats з останніх $total кварталу',
+      other:
+          'На рівні очікуваного EPS або вище в $beats з останніх $total кварталів',
+      many:
+          'На рівні очікуваного EPS або вище в $beats з останніх $total кварталів',
+      few:
+          'На рівні очікуваного EPS або вище в $beats з останніх $total кварталів',
+      one:
+          'На рівні очікуваного EPS або вище в $beats з останніх $total кварталу',
     );
     return '$_temp0';
   }
@@ -2260,7 +2310,8 @@ class AppLocalizationsUk extends AppLocalizations {
       'Купівлі та продажі на відкритому ринку керівниками й директорами за останні 90 днів (SEC Form 4). Виконання опціонів і нагородні акції не враховуються.';
 
   @override
-  String get insiderNone => 'За останні 90 днів інсайдери не купували й не продавали акції на відкритому ринку.';
+  String get insiderNone =>
+      'За останні 90 днів інсайдери не купували й не продавали акції на відкритому ринку.';
 
   @override
   String get analystTrend => 'Як змінювалися думки місяць за місяцем';
@@ -2284,7 +2335,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get watchListAddTo => 'Додати до списку';
 
   @override
-  String get watchListEmpty => 'У цьому списку ще немає акцій. Торкніться кнопки списку поруч з акцією, щоб додати її.';
+  String get watchListEmpty =>
+      'У цьому списку ще немає акцій. Торкніться кнопки списку поруч з акцією, щоб додати її.';
 
   @override
   String get portfolioAskTitle => 'Запитання про ваш портфель';
@@ -2299,13 +2351,15 @@ class AppLocalizationsUk extends AppLocalizations {
   String get backupSave => 'Зберегти резервну копію';
 
   @override
-  String get backupSaveHint => 'Ваше обране, списки, портфель, сповіщення та нотатки в одному файлі.';
+  String get backupSaveHint =>
+      'Ваше обране, списки, портфель, сповіщення та нотатки в одному файлі.';
 
   @override
   String get backupRestore => 'Відновити з резервної копії';
 
   @override
-  String get backupRestoreHint => 'Додає вміст файлу; нічого з ваших поточних даних не видаляється.';
+  String get backupRestoreHint =>
+      'Додає вміст файлу; нічого з ваших поточних даних не видаляється.';
 
   @override
   String get backupRestored => 'Резервну копію відновлено.';
@@ -2426,7 +2480,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Сповіщення про портфель';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'Сповіщення, коли весь ваш портфель за день змінюється на стільки.';
+  String get portfolioMoveAlertSubtitle =>
+      'Сповіщення, коли весь ваш портфель за день змінюється на стільки.';
 
   @override
   String get portfolioMoveAlertOff => 'Вимкнено';
@@ -2661,7 +2716,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get portfolioSampleTry => 'Спробувати на демо-портфелі';
 
   @override
-  String get portfolioSampleBanner => 'Це демо-портфель. Додайте поруч свої покупки або видаліть його.';
+  String get portfolioSampleBanner =>
+      'Це демо-портфель. Додайте поруч свої покупки або видаліть його.';
 
   @override
   String get portfolioSampleRemove => 'Видалити демо-портфель';
@@ -2718,10 +2774,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get lotNoteAdd => 'Додати нотатку';
 
   @override
-  String get lotNoteBuyHint => 'Чому ви купуєте? Потрапить у нотатки до акції, з датою.';
+  String get lotNoteBuyHint =>
+      'Чому ви купуєте? Потрапить у нотатки до акції, з датою.';
 
   @override
-  String get lotNoteSellHint => 'Чому ви продаєте? Потрапить у нотатки до акції, з датою.';
+  String get lotNoteSellHint =>
+      'Чому ви продаєте? Потрапить у нотатки до акції, з датою.';
 
   @override
   String get lotNoteBought => 'Куплено';
@@ -2841,10 +2899,12 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Увійдіть з електронною поштою, щоб активувати код друга.';
+  String get referralErrSignIn =>
+      'Увійдіть з електронною поштою, щоб активувати код друга.';
 
   @override
-  String get referralErrFull => 'Цей код уже активовано максимальну кількість разів.';
+  String get referralErrFull =>
+      'Цей код уже активовано максимальну кількість разів.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2852,14 +2912,16 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated => 'Аналіз обірвався до завершення. Спробуйте ще раз – з ліміту нічого не списано.';
+  String get errAiTruncated =>
+      'Аналіз обірвався до завершення. Спробуйте ще раз – з ліміту нічого не списано.';
 
   @override
   String get errImageUnsupported =>
       'Не вдається прочитати це зображення. Збережіть його у форматі JPEG або PNG і спробуйте ще раз.';
 
   @override
-  String get errRateLimited => 'Занадто багато запитів за короткий час. Зачекайте хвилину і спробуйте ще раз.';
+  String get errRateLimited =>
+      'Занадто багато запитів за короткий час. Зачекайте хвилину і спробуйте ще раз.';
 
   @override
   String get watchListNameTaken => 'Список із такою назвою вже існує.';
@@ -2875,14 +2937,16 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing => 'Попередніх покупок для відновлення не знайдено.';
+  String get restoreNothing =>
+      'Попередніх покупок для відновлення не знайдено.';
 
   @override
   String get manageSubscriptionElsewhere =>
       'Тут немає підписки для керування. Підпискою, придбаною в App Store або Google Play, можна керувати в налаштуваннях магазину.';
 
   @override
-  String get backupFailed => 'Не вдалося зберегти резервну копію. Спробуйте ще раз.';
+  String get backupFailed =>
+      'Не вдалося зберегти резервну копію. Спробуйте ще раз.';
 
   @override
   String get syncTooLarge =>
@@ -2902,8 +2966,10 @@ class AppLocalizationsUk extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Дивідендів у $currencies без курсу валют: $count. Їх не враховано в підсумках.',
-      one: 'Немає курсу валют для $count дивіденду в $currencies, його не враховано в підсумках.',
+      other:
+          'Дивідендів у $currencies без курсу валют: $count. Їх не враховано в підсумках.',
+      one:
+          'Немає курсу валют для $count дивіденду в $currencies, його не враховано в підсумках.',
     );
     return '$_temp0';
   }
@@ -3016,7 +3082,8 @@ class AppLocalizationsUk extends AppLocalizations {
       'Загальна інформація про склад вашого портфеля, створена ШІ. Вона не враховує ваших цілей, фінансового становища чи податкової ситуації і не є персональною рекомендацією чи інвестиційною порадою.';
 
   @override
-  String get briefNotificationTitle => 'ШІ-підсумок · Сьогодні з вашими акціями';
+  String get briefNotificationTitle =>
+      'ШІ-підсумок · Сьогодні з вашими акціями';
 
   @override
   String get portfolioGoalSet => 'Задати ціль';
@@ -3324,7 +3391,8 @@ class AppLocalizationsUk extends AppLocalizations {
       'Наскільки сильно ціна коливається з дня на день, у річному вимірі: 20% означає, що у звичайний рік вона рухається приблизно в межах ±20%. Вища волатильність означає більші рухи в обидва боки.';
 
   @override
-  String get techNote => 'Розраховано за денними цінами закриття. Технічні сигнали описують минуле, а не майбутнє.';
+  String get techNote =>
+      'Розраховано за денними цінами закриття. Технічні сигнали описують минуле, а не майбутнє.';
 
   @override
   String portfolioAbove200(int above, int count) {
@@ -3364,7 +3432,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get glossaryPageTitle => 'Глосарій';
 
   @override
-  String get glossaryPageSubtitle => 'Прості пояснення кожного показника в застосунку, від P/E до RSI';
+  String get glossaryPageSubtitle =>
+      'Прості пояснення кожного показника в застосунку, від P/E до RSI';
 
   @override
   String get glossarySearchHint => 'Пошук у глосарії';

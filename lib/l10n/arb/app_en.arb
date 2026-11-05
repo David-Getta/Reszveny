@@ -164,7 +164,8 @@
   "recognitionSummary": "Summary",
   "recognitionEvidence": "Why we think so",
   "recognitionRawText": "Text read from the image",
-  "errMissingAnthropicKey": "Image recognition is not configured (no ANTHROPIC_API_KEY). Enter the ticker manually.",
+  "errMissingAnthropicKey": "Image recognition is not available in this version. Enter the ticker instead.",
+  "@errMissingAnthropicKey": {"description": "Error when photo/screenshot recognition is not available in this build (no AI service). Plain words for end users, no technical names."},
   "errRecognitionUnreachable": "Could not reach the recognition service. Check your internet connection.",
   "errRecognitionHttp": "The recognition service returned an error (HTTP {status}).",
   "@errRecognitionHttp": {
@@ -178,7 +179,8 @@
   "errRecognitionTruncated": "The recognition response was cut off. Please try again.",
   "errRecognitionBadResponse": "Unexpected response from the recognition service.",
   "errRecognitionEmpty": "The recognition service returned an empty response.",
-  "errMissingFinnhubKey": "Market data is not configured (no FINNHUB_API_KEY).",
+  "errMissingFinnhubKey": "Market data is not available in this version.",
+  "@errMissingFinnhubKey": {"description": "Error when live market data is not available in this build. Plain words for end users, no technical names."},
   "errMarketUnreachable": "Could not reach the market data service. Check your internet connection.",
   "errMarketRateLimited": "Too many requests to the market data service. Please wait a minute.",
   "errMarketHttp": "The market data service returned an error (HTTP {status}).",
@@ -206,8 +208,9 @@
       }
     }
   },
-  "errDemoUnsupportedSymbol": "Demo mode only supports {symbols}. Add a FINNHUB_API_KEY for live data.",
+  "errDemoUnsupportedSymbol": "This demo only has sample data for {symbols}.",
   "@errDemoUnsupportedSymbol": {
+    "description": "Error in the demo build when the user opens a stock that has no sample data; {symbols} is a list of tickers.",
     "placeholders": {
       "symbols": {
         "type": "String"
@@ -271,7 +274,8 @@
     }
   },
   "aiDisclaimer": "AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.",
-  "errAiNotConfigured": "AI analysis is not configured (no ANTHROPIC_API_KEY).",
+  "errAiNotConfigured": "AI features are not available in this version.",
+  "@errAiNotConfigured": {"description": "Error when AI features are not available in this build (no AI service). Plain words for end users, no technical names."},
   "errAiUnreachable": "Could not reach the AI service. Check your internet connection.",
   "errAiHttp": "The AI service returned an error (HTTP {status}).",
   "@errAiHttp": {

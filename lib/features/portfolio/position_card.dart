@@ -80,7 +80,9 @@ class PositionCard extends StatelessWidget {
               MetricFigure(
                 label: l10n.portfolioToday,
                 value: fmt.money(row.dayGain, ccy, withSign: true),
-                sub: fmt.percent(q?.changePercent, withSign: true),
+                // A pozíció mai eredménye százalékban (nem a részvény napi változása: ma vett
+                // tételnél a kettő eltér).
+                sub: fmt.percent(row.dayGainPercent, withSign: true),
                 color: gainColor(p, row.dayGain),
               ),
               MetricFigure(

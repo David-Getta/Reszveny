@@ -363,19 +363,24 @@ class _PortfolioBody extends StatelessWidget {
                           spacing: 28,
                           runSpacing: 10,
                           children: [
+                            // Ha egyik pozíció sem számítható át (pl. nincs árfolyam), a mai eredmény
+                            // és a befektetett összeg sem „0” – nem ismert, mint az összérték.
                             MetricFigure(
                               label: l10n.portfolioToday,
-                              value: fmt.money(s.dayGain, ccy, withSign: true),
-                              sub: fmt.percent(s.dayGainPercent, withSign: true),
-                              color: gainColor(p, s.dayGain),
+                              value: s.unknown ? l10n.notAvailable : fmt.money(s.dayGain, ccy, withSign: true),
+                              sub: s.unknown ? null : fmt.percent(s.dayGainPercent, withSign: true),
+                              color: gainColor(p, s.unknown ? null : s.dayGain),
                             ),
                             MetricFigure(
                               label: l10n.portfolioGainLoss,
-                              value: fmt.money(s.gain, ccy, withSign: true),
-                              sub: fmt.percent(s.gainPercent, withSign: true),
-                              color: gainColor(p, s.gain),
+                              value: s.unknown ? l10n.notAvailable : fmt.money(s.gain, ccy, withSign: true),
+                              sub: s.unknown ? null : fmt.percent(s.gainPercent, withSign: true),
+                              color: gainColor(p, s.unknown ? null : s.gain),
                             ),
-                            MetricFigure(label: l10n.portfolioInvested, value: fmt.money(s.cost, ccy)),
+                            MetricFigure(
+                              label: l10n.portfolioInvested,
+                              value: s.unknown ? l10n.notAvailable : fmt.money(s.cost, ccy),
+                            ),
                             if (s.cash > 0)
                               MetricFigure(
                                 key: const ValueKey('portfolio-cash'),

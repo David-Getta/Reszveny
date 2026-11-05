@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.310)
+# Változásjegyzék (0.2.130 → 0.2.311)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,21 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Böngészős végigjátszás: az ötvenharmadik kódátnézés javításai
+
+- **0.2.311**: egy valódi böngészőben (Chromium) telefonos és asztali méretben, magyarul és angolul végigjátszott
+  használat hibáinak javítása. Széles képernyőn az oldalsáv (Keresés, Portfólió, Riasztások, Beállítások) a
+  képernyőolvasó számára is látható és Tabbal elérhető (eddig a fülek belső navigátora elrejtette).
+- Egy tickernek látszó, de árfolyam nélküli szó („amazon”, elgépelés) nem nyit hibákkal teli részvényoldalt:
+  a keresés előbb megnézi, van-e rá árfolyam, és ha nincs, leírásként próbálja vagy „nincs találat”-ot ír.
+- AI nélküli (bemutató) változatban az app nem kér hozzájárulást az adatküldéshez, és a hibaüzenetek nem
+  fejlesztői változóneveket mutatnak („Az AI-funkciók ebben a változatban nem érhetők el.”), 120 nyelven.
+- A részvényoldalon a pozíció „Ma” sora a pozíció saját mai eredményét mutatja százalékban (ma vett tételnél
+  eddig a részvény napi változását írta mellé); ha egyik pozíció sem számítható át, a portfólió mai eredménye, a
+  nyereség és a befektetett összeg is „n/a” (nem „0,00”).
+- A díjcsomag-oldal „Feliratkozás” és „Megvásárlás” gombjait a képernyőolvasó a csomag nevével mondja; a
+  riasztási gyorsgombok keskeny kijelzőn két sorba törnek; a billentyűzettel fókuszált gombok jól látható kerettel.
 
 ## Memória és webes fülváltás
 

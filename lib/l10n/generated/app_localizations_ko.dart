@@ -16,7 +16,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeTagline => '주식을 촬영하고 그 종목의 모든 것을 알아보세요.';
 
   @override
-  String get homeHint => '주권, 증권 앱 화면, 신문, 회사 로고 등 종목을 식별할 수 있는 것이면 무엇이든 가능합니다.';
+  String get homeHint =>
+      '주권, 증권 앱 화면, 신문, 회사 로고 등 종목을 식별할 수 있는 것이면 무엇이든 가능합니다.';
 
   @override
   String get takePhoto => '사진 촬영';
@@ -54,7 +55,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get noCandidatesTitle => '종목을 인식하지 못했습니다';
 
   @override
-  String get noCandidatesBody => '이 이미지에서 종목을 식별할 수 없습니다. 더 선명한 사진을 사용하거나 티커를 직접 입력해 보세요.';
+  String get noCandidatesBody =>
+      '이 이미지에서 종목을 식별할 수 없습니다. 더 선명한 사진을 사용하거나 티커를 직접 입력해 보세요.';
 
   @override
   String get whatWeSaw => '인식된 내용';
@@ -80,7 +82,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get about => '정보';
 
   @override
-  String get disclaimer => '이 앱은 정보 제공만을 목적으로 하며 투자 조언이 아닙니다. 데이터는 지연되거나 부정확할 수 있습니다.';
+  String get disclaimer =>
+      '이 앱은 정보 제공만을 목적으로 하며 투자 조언이 아닙니다. 데이터는 지연되거나 부정확할 수 있습니다.';
 
   @override
   String dataSource(String source) {
@@ -315,7 +318,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '애널리스트 $count명', one: '애널리스트 1명');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '애널리스트 $count명',
+      one: '애널리스트 1명',
+    );
     return '$_temp0';
   }
 
@@ -343,7 +351,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get recognitionRawText => '이미지에서 읽은 텍스트';
 
   @override
-  String get errMissingAnthropicKey => '이미지 인식이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음). 티커를 직접 입력하세요.';
+  String get errMissingAnthropicKey =>
+      '이 버전에서는 이미지 인식을 사용할 수 없습니다. 대신 티커를 입력하세요.';
 
   @override
   String get errRecognitionUnreachable => '인식 서비스에 연결할 수 없습니다. 인터넷 연결을 확인하세요.';
@@ -366,7 +375,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get errRecognitionEmpty => '인식 서비스에서 빈 응답을 반환했습니다.';
 
   @override
-  String get errMissingFinnhubKey => '시장 데이터가 설정되지 않았습니다(FINNHUB_API_KEY 없음).';
+  String get errMissingFinnhubKey => '이 버전에서는 시장 데이터를 사용할 수 없습니다.';
 
   @override
   String get errMarketUnreachable => '시장 데이터 서비스에 연결할 수 없습니다. 인터넷 연결을 확인하세요.';
@@ -394,7 +403,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String errDemoUnsupportedSymbol(String symbols) {
-    return '데모 모드는 $symbols만 지원합니다. 실시간 데이터를 보려면 FINNHUB_API_KEY를 추가하세요.';
+    return '이 데모에는 $symbols의 샘플 데이터만 있습니다.';
   }
 
   @override
@@ -491,10 +500,11 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get aiDisclaimer => '공개 데이터와 최근 뉴스를 바탕으로 AI가 생성한 분석입니다. 오류가 있거나 오래된 정보일 수 있으며 투자 조언이 아닙니다.';
+  String get aiDisclaimer =>
+      '공개 데이터와 최근 뉴스를 바탕으로 AI가 생성한 분석입니다. 오류가 있거나 오래된 정보일 수 있으며 투자 조언이 아닙니다.';
 
   @override
-  String get errAiNotConfigured => 'AI 분석이 설정되지 않았습니다(ANTHROPIC_API_KEY 없음).';
+  String get errAiNotConfigured => '이 버전에서는 AI 기능을 사용할 수 없습니다.';
 
   @override
   String get errAiUnreachable => 'AI 서비스에 연결할 수 없습니다. 인터넷 연결을 확인하세요.';
@@ -680,7 +690,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String trialDaysLeft(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '체험 기간 $days일 남음', one: '체험 기간 1일 남음');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '체험 기간 $days일 남음',
+      one: '체험 기간 1일 남음',
+    );
     return '$_temp0';
   }
 
@@ -694,7 +709,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String extraCredits(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '추가 분석 $count회', one: '추가 분석 $count회');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '추가 분석 $count회',
+      one: '추가 분석 $count회',
+    );
     return '$_temp0';
   }
 
@@ -743,10 +763,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get purchaseCanceled => '구매가 취소되었습니다.';
 
   @override
-  String get billingUnavailable => '이 플랫폼에서는 아직 구매할 수 없습니다. 휴대폰이나 Mac에서 구독하면 모든 기기에서 요금제를 사용할 수 있습니다.';
+  String get billingUnavailable =>
+      '이 플랫폼에서는 아직 구매할 수 없습니다. 휴대폰이나 Mac에서 구독하면 모든 기기에서 요금제를 사용할 수 있습니다.';
 
   @override
-  String get errQuotaExceeded => '이번 기간에 남은 분석이 없습니다. 요금제를 업그레이드하거나 추가 분석을 구매하세요.';
+  String get errQuotaExceeded =>
+      '이번 기간에 남은 분석이 없습니다. 요금제를 업그레이드하거나 추가 분석을 구매하세요.';
 
   @override
   String get errTrialExpired => '무료 체험이 종료되었습니다. 계속하려면 요금제를 선택하세요.';
@@ -770,7 +792,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get bestValue => '최고의 가치';
 
   @override
-  String get planFeaturesCommon => '사진 인식, 실시간 데이터, 차트, 즐겨찾기, 120개 언어 전체가 모든 요금제에 포함됩니다. 할당량은 AI 분석에 적용됩니다.';
+  String get planFeaturesCommon =>
+      '사진 인식, 실시간 데이터, 차트, 즐겨찾기, 120개 언어 전체가 모든 요금제에 포함됩니다. 할당량은 AI 분석에 적용됩니다.';
 
   @override
   String get searchLanguages => '언어 검색…';
@@ -809,7 +832,11 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '분석 $count회 사용');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '분석 $count회 사용',
+    );
     return '$_temp0';
   }
 
@@ -836,7 +863,11 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String aiWebSearchesInfo(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '현재 요금제로 분석당 최대 $count회 웹 검색');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '현재 요금제로 분석당 최대 $count회 웹 검색',
+    );
     return '$_temp0';
   }
 
@@ -847,13 +878,21 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '최대 $count회 웹 검색');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '최대 $count회 웹 검색',
+    );
     return '$_temp0';
   }
 
   @override
   String planWebSearches(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '분석당 웹 검색 $count회');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '분석당 웹 검색 $count회',
+    );
     return '$_temp0';
   }
 
@@ -966,10 +1005,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get checkoutWaiting => '브라우저에서 결제를 완료하세요. 완료되면 앱이 자동으로 업데이트됩니다.';
 
   @override
-  String get paymentViaStripe => 'Stripe를 통해 브라우저에서 안전하게 결제합니다. 언제든지 해지할 수 있습니다.';
+  String get paymentViaStripe =>
+      'Stripe를 통해 브라우저에서 안전하게 결제합니다. 언제든지 해지할 수 있습니다.';
 
   @override
-  String get paymentViaStore => 'App Store 또는 Google Play 계정으로 청구됩니다. 스토어 설정에서 언제든지 해지할 수 있습니다.';
+  String get paymentViaStore =>
+      'App Store 또는 Google Play 계정으로 청구됩니다. 스토어 설정에서 언제든지 해지할 수 있습니다.';
 
   @override
   String get keySpace => '스페이스';
@@ -978,7 +1019,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get doubleOptionTitle => 'Option 키 두 번 누르기';
 
   @override
-  String get doubleOptionSubtitle => 'Option 키를 빠르게 두 번 눌러도 WhatStock을 불러올 수 있습니다.';
+  String get doubleOptionSubtitle =>
+      'Option 키를 빠르게 두 번 눌러도 WhatStock을 불러올 수 있습니다.';
 
   @override
   String get doubleOptionPermission =>
@@ -1000,7 +1042,11 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years년');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years년',
+    );
     return '$_temp0';
   }
 
@@ -1024,16 +1070,19 @@ class AppLocalizationsKo extends AppLocalizations {
   String get confidenceHigh => '신뢰도 높음';
 
   @override
-  String get longTermNote => '장기 범위는 제시된 가정에 근거하며 기간이 길수록 넓어집니다. 가격에는 배당이 포함되지 않습니다. 대략적인 판단이며 예측이 아닙니다.';
+  String get longTermNote =>
+      '장기 범위는 제시된 가정에 근거하며 기간이 길수록 넓어집니다. 가격에는 배당이 포함되지 않습니다. 대략적인 판단이며 예측이 아닙니다.';
 
   @override
   String get portfolio => '포트폴리오';
 
   @override
-  String get portfolioEmpty => '아직 비어 있습니다. 종목을 열고 ‘포트폴리오에 추가’를 탭하면 보유 종목을 추적할 수 있습니다.';
+  String get portfolioEmpty =>
+      '아직 비어 있습니다. 종목을 열고 ‘포트폴리오에 추가’를 탭하면 보유 종목을 추적할 수 있습니다.';
 
   @override
-  String get portfolioLocalNote => '이 기기와, 로그인한 경우 계정에 저장됩니다. 합계는 ECB 기준 환율로 환산되며, 가격은 지연될 수 있습니다.';
+  String get portfolioLocalNote =>
+      '이 기기와, 로그인한 경우 계정에 저장됩니다. 합계는 ECB 기준 환율로 환산되며, 가격은 지연될 수 있습니다.';
 
   @override
   String get addToPortfolio => '포트폴리오에 추가';
@@ -1204,7 +1253,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get keepInTrayTitle => '창을 닫아도 계속 실행';
 
   @override
-  String get keepInTraySubtitle => 'WhatStock이 메뉴 막대나 시스템 트레이에 남아 단축키와 가격 알림이 계속 작동합니다.';
+  String get keepInTraySubtitle =>
+      'WhatStock이 메뉴 막대나 시스템 트레이에 남아 단축키와 가격 알림이 계속 작동합니다.';
 
   @override
   String get termsOfUse => '이용약관';
@@ -1213,7 +1263,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get privacyPolicy => '개인정보 처리방침';
 
   @override
-  String get subscriptionLegal => '구독은 해지할 때까지 매월 자동으로 갱신됩니다. 구독하면 이용약관과 개인정보 처리방침에 동의하는 것입니다.';
+  String get subscriptionLegal =>
+      '구독은 해지할 때까지 매월 자동으로 갱신됩니다. 구독하면 이용약관과 개인정보 처리방침에 동의하는 것입니다.';
 
   @override
   String get deleteAccount => '계정 삭제';
@@ -1259,7 +1310,8 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get subscriptionLegalYearly => '연간 구독은 해지할 때까지 매년 자동으로 갱신됩니다. 구독하면 이용약관과 개인정보 처리방침에 동의하는 것입니다.';
+  String get subscriptionLegalYearly =>
+      '연간 구독은 해지할 때까지 매년 자동으로 갱신됩니다. 구독하면 이용약관과 개인정보 처리방침에 동의하는 것입니다.';
 
   @override
   String get myAnalyses => '내 분석';
@@ -1296,13 +1348,23 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count시간 전', one: '1시간 전');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count시간 전',
+      one: '1시간 전',
+    );
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count일 전', one: '1일 전');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count일 전',
+      one: '1일 전',
+    );
     return '$_temp0';
   }
 
@@ -1337,7 +1399,8 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'AI가 추정한 가격대를 탭하면 주가가 그 가격에 도달했을 때 알림을 받을 수 있습니다.';
+  String get keyLevelAlertHint =>
+      'AI가 추정한 가격대를 탭하면 주가가 그 가격에 도달했을 때 알림을 받을 수 있습니다.';
 
   @override
   String get shareAnalysisTitle => '분석 공유';
@@ -1359,7 +1422,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String referralBody(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '추가 분석 $count회', one: '추가 분석 1회');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '추가 분석 $count회',
+      one: '추가 분석 1회',
+    );
     return '코드를 공유하세요. 친구는 바로 $_temp0를 받고, 친구가 첫 분석을 마치면 회원님도 같은 만큼 받습니다.';
   }
 
@@ -1399,7 +1467,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String referralShareText(String code, int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '추가 분석 $count회', one: '추가 분석 1회');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '추가 분석 $count회',
+      one: '추가 분석 1회',
+    );
     return '저는 WhatStock으로 주식을 분석해요. 종목을 찍으면 AI가 설명해 줘요. 제 코드 $code 입력 시 $_temp0를 받을 수 있어요.';
   }
 
@@ -1410,7 +1483,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get onboardTitle1 => '주식을 촬영하세요';
 
   @override
-  String get onboardBody1 => '증권 앱 화면, 신문, 회사 로고만 있으면 충분합니다. WhatStock이 종목을 인식해 주가, 차트, 핵심 지표를 보여 줍니다.';
+  String get onboardBody1 =>
+      '증권 앱 화면, 신문, 회사 로고만 있으면 충분합니다. WhatStock이 종목을 인식해 주가, 차트, 핵심 지표를 보여 줍니다.';
 
   @override
   String get onboardTitle2 => '몇 분 만에 파악하세요';
@@ -1423,7 +1497,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get onboardTitle3 => '놓치지 마세요';
 
   @override
-  String get onboardBody3 => '즐겨찾기, 포트폴리오, 가격 알림으로 최신 소식을 받아 보세요. 분석 결과는 기기에 저장되어 언제든 다시 열어 볼 수 있습니다.';
+  String get onboardBody3 =>
+      '즐겨찾기, 포트폴리오, 가격 알림으로 최신 소식을 받아 보세요. 분석 결과는 기기에 저장되어 언제든 다시 열어 볼 수 있습니다.';
 
   @override
   String get onboardNext => '다음';
@@ -1465,7 +1540,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get telemetrySetting => '익명 통계 및 비정상 종료 보고서';
 
   @override
-  String get telemetrySettingHint => '기능 사용 빈도와 오류 보고서이며, 개인 데이터나 검색 및 분석 내용은 포함되지 않습니다.';
+  String get telemetrySettingHint =>
+      '기능 사용 빈도와 오류 보고서이며, 개인 데이터나 검색 및 분석 내용은 포함되지 않습니다.';
 
   @override
   String get askButton => '이 분석에 대해 질문하기';
@@ -1508,7 +1584,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days일 후', one: '1일 후');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days일 후',
+      one: '1일 후',
+    );
     return '$_temp0';
   }
 
@@ -1536,7 +1617,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get eventDividendEstimate => '기록한 배당 내역으로 추정';
 
   @override
-  String get eventsHint => '향후 90일간 즐겨찾기 및 포트폴리오 종목의 실적 발표일, 내 분석에서 찾은 날짜가 정해진 이벤트, 그리고 기록한 배당 내역으로 추정한 예상 배당금입니다.';
+  String get eventsHint =>
+      '향후 90일간 즐겨찾기 및 포트폴리오 종목의 실적 발표일, 내 분석에서 찾은 날짜가 정해진 이벤트, 그리고 기록한 배당 내역으로 추정한 예상 배당금입니다.';
 
   @override
   String get eventsEmpty =>
@@ -1555,7 +1637,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get compareTickerHint => '티커(예: MSFT)';
 
   @override
-  String get compareHint => '주요 지표를 나란히 표시합니다. 각 행에서 가장 좋은 값이 강조 표시됩니다. 금액은 각 종목의 통화로 표시됩니다.';
+  String get compareHint =>
+      '주요 지표를 나란히 표시합니다. 각 행에서 가장 좋은 값이 강조 표시됩니다. 금액은 각 종목의 통화로 표시됩니다.';
 
   @override
   String get compareNoAnalysis => '아직 분석 없음';
@@ -1569,7 +1652,8 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get portfolioDividendNote => '예상 연간 배당은 최근 12개월 동안 지급된 배당을 기준으로 하며, 향후 지급은 보장되지 않습니다.';
+  String get portfolioDividendNote =>
+      '예상 연간 배당은 최근 12개월 동안 지급된 배당을 기준으로 하며, 향후 지급은 보장되지 않습니다.';
 
   @override
   String positionDividend(String amount) {
@@ -1628,7 +1712,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String portfolioImportSkipped(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count줄을 건너뛰었습니다', one: '1줄을 건너뛰었습니다');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count줄을 건너뛰었습니다',
+      one: '1줄을 건너뛰었습니다',
+    );
     return '$_temp0';
   }
 
@@ -1662,7 +1751,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioReviewTitle => 'AI 포트폴리오 진단';
 
   @override
-  String get portfolioReviewIntro => 'AI가 포트폴리오 전체를 살펴봅니다: 집중도, 섹터·통화 노출, 보유 종목들의 공통 리스크, 배당. 분석 1회를 사용합니다.';
+  String get portfolioReviewIntro =>
+      'AI가 포트폴리오 전체를 살펴봅니다: 집중도, 섹터·통화 노출, 보유 종목들의 공통 리스크, 배당. 분석 1회를 사용합니다.';
 
   @override
   String get portfolioReviewButton => '내 포트폴리오 진단';
@@ -1677,7 +1767,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get digestTitle => '이메일 주간 요약';
 
   @override
-  String get digestHint => '매주 월요일: 지난주 즐겨찾기와 포트폴리오의 움직임, 그리고 다가오는 실적 발표일을 알려 드립니다.';
+  String get digestHint =>
+      '매주 월요일: 지난주 즐겨찾기와 포트폴리오의 움직임, 그리고 다가오는 실적 발표일을 알려 드립니다.';
 
   @override
   String get benchmarkTitle => 'S&P 500과 비교';
@@ -1686,7 +1777,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get benchmarkTitleIndex => '지수와 비교';
 
   @override
-  String get benchmarkHintIndex => '각 매수 금액을 같은 날 선택한 지수를 추종하는 펀드에 투자했다고 가정한 결과입니다. 배당금 제외. 과거 수익률이 미래 수익률을 보장하지 않습니다.';
+  String get benchmarkHintIndex =>
+      '각 매수 금액을 같은 날 선택한 지수를 추종하는 펀드에 투자했다고 가정한 결과입니다. 배당금 제외. 과거 수익률이 미래 수익률을 보장하지 않습니다.';
 
   @override
   String get benchmarkYours => '내 매수';
@@ -1744,7 +1836,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioRealizedByYear => '연도별 실현 손익';
 
   @override
-  String get portfolioRealizedHint => '매도는 가장 오래된 매수분부터 차감되며(FIFO), 오늘 환율로 환산됩니다. 세금 신고에는 증권사 거래 내역서를 사용하세요.';
+  String get portfolioRealizedHint =>
+      '매도는 가장 오래된 매수분부터 차감되며(FIFO), 오늘 환율로 환산됩니다. 세금 신고에는 증권사 거래 내역서를 사용하세요.';
 
   @override
   String staleNewResults(String symbol, String date) {
@@ -1770,31 +1863,39 @@ class AppLocalizationsKo extends AppLocalizations {
   String get glossMarketCap => '주식시장에서 회사 전체의 가치: 주가 × 주식 수.';
 
   @override
-  String get glossSharesOutstanding => '회사가 발행한 주식의 수. 늘어나면 한 주가 차지하는 몫이 작아지고, 자사주 매입은 이를 줄입니다.';
+  String get glossSharesOutstanding =>
+      '회사가 발행한 주식의 수. 늘어나면 한 주가 차지하는 몫이 작아지고, 자사주 매입은 이를 줄입니다.';
 
   @override
-  String get glossPeTrailing => '주가 ÷ 최근 12개월 주당순이익: 현재 이익의 몇 년 치를 지불하는지 보여 줍니다. 낮을수록 싸지만, 빠르게 성장하는 회사는 보통 P/E가 높습니다.';
+  String get glossPeTrailing =>
+      '주가 ÷ 최근 12개월 주당순이익: 현재 이익의 몇 년 치를 지불하는지 보여 줍니다. 낮을수록 싸지만, 빠르게 성장하는 회사는 보통 P/E가 높습니다.';
 
   @override
-  String get glossPeForward => 'P/E와 같지만, 애널리스트가 예상하는 향후 12개월 이익을 사용합니다. 후행 P/E보다 낮으면 이익 증가가 예상된다는 뜻입니다.';
+  String get glossPeForward =>
+      'P/E와 같지만, 애널리스트가 예상하는 향후 12개월 이익을 사용합니다. 후행 P/E보다 낮으면 이익 증가가 예상된다는 뜻입니다.';
 
   @override
-  String get glossPb => '주가 ÷ 주당 장부가치(자산에서 부채를 뺀 것). 1 안팎이면 시장이 회사를 장부상 보유 자산만큼 평가한다는 뜻입니다.';
+  String get glossPb =>
+      '주가 ÷ 주당 장부가치(자산에서 부채를 뺀 것). 1 안팎이면 시장이 회사를 장부상 보유 자산만큼 평가한다는 뜻입니다.';
 
   @override
   String get glossPs => '시장가치 ÷ 연 매출. 아직 이익이 적거나 없는 회사에 유용하며, 같은 업종 안에서 비교하세요.';
 
   @override
-  String get glossEvToFcf => '부채를 포함한 회사 가치(EV) ÷ 투자 후 1년 동안 벌어들이는 현금. 낮을수록 지불한 가격에 비해 더 많은 현금을 얻습니다.';
+  String get glossEvToFcf =>
+      '부채를 포함한 회사 가치(EV) ÷ 투자 후 1년 동안 벌어들이는 현금. 낮을수록 지불한 가격에 비해 더 많은 현금을 얻습니다.';
 
   @override
-  String get glossPeg => 'P/E ÷ 예상 연간 이익 성장률(%). 1 안팎이면 흔히 적정하다고 보며, 성장을 감안해 P/E를 보여 줍니다.';
+  String get glossPeg =>
+      'P/E ÷ 예상 연간 이익 성장률(%). 1 안팎이면 흔히 적정하다고 보며, 성장을 감안해 P/E를 보여 줍니다.';
 
   @override
-  String get glossEps => '최근 12개월 동안의 주당 이익. 해마다 늘어나는 EPS는 건강한 회사의 가장 강력한 신호 중 하나입니다.';
+  String get glossEps =>
+      '최근 12개월 동안의 주당 이익. 해마다 늘어나는 EPS는 건강한 회사의 가장 강력한 신호 중 하나입니다.';
 
   @override
-  String get glossBeta => '주가가 시장과 얼마나 함께 움직이는지: 1 = 시장과 같음, 1.5 = 변동폭이 약 50% 더 큼, 1 미만 = 더 안정적.';
+  String get glossBeta =>
+      '주가가 시장과 얼마나 함께 움직이는지: 1 = 시장과 같음, 1.5 = 변동폭이 약 50% 더 큼, 1 미만 = 더 안정적.';
 
   @override
   String get glossRevenueTtm => '최근 12개월의 총 판매액(비용을 빼기 전).';
@@ -1803,25 +1904,31 @@ class AppLocalizationsKo extends AppLocalizations {
   String get glossNetIncomeTtm => '최근 12개월 동안 모든 비용, 이자, 세금을 뺀 뒤 남은 이익.';
 
   @override
-  String get glossGrossMargin => '제품의 직접 원가를 빼고 남는 매출의 비율. 높으면 가격 결정력이 있다는 뜻인 경우가 많습니다.';
+  String get glossGrossMargin =>
+      '제품의 직접 원가를 빼고 남는 매출의 비율. 높으면 가격 결정력이 있다는 뜻인 경우가 많습니다.';
 
   @override
-  String get glossOperatingMargin => '사업 운영비(인건비, 임대료, 마케팅)를 빼고 이자와 세금 전에 남는 매출의 비율.';
+  String get glossOperatingMargin =>
+      '사업 운영비(인건비, 임대료, 마케팅)를 빼고 이자와 세금 전에 남는 매출의 비율.';
 
   @override
-  String get glossNetMargin => '매출 중 최종 이익이 되는 비율. 20%면 매출 100마다 20이 이익이라는 뜻입니다.';
+  String get glossNetMargin =>
+      '매출 중 최종 이익이 되는 비율. 20%면 매출 100마다 20이 이익이라는 뜻입니다.';
 
   @override
-  String get glossRoe => '자기자본이익률: 연간 이익 ÷ 주주의 자본. 경영진이 주주의 돈을 얼마나 잘 쓰는지 보여 주며, 약 15%를 넘으면 우수합니다.';
+  String get glossRoe =>
+      '자기자본이익률: 연간 이익 ÷ 주주의 자본. 경영진이 주주의 돈을 얼마나 잘 쓰는지 보여 주며, 약 15%를 넘으면 우수합니다.';
 
   @override
   String get glossRoa => '총자산이익률: 연간 이익 ÷ 회사가 가진 모든 자산. 같은 업종 안에서 비교하세요.';
 
   @override
-  String get glossDebtToEquity => '부채 ÷ 주주의 자본. 높을수록 빌린 돈이 많아 금리가 오르거나 사업이 둔화될 때 위험이 커집니다.';
+  String get glossDebtToEquity =>
+      '부채 ÷ 주주의 자본. 높을수록 빌린 돈이 많아 금리가 오르거나 사업이 둔화될 때 위험이 커집니다.';
 
   @override
-  String get glossCurrentRatio => '단기 자산 ÷ 1년 안에 갚아야 할 부채. 1을 넘으면 회사가 가까운 시일의 지급을 감당할 수 있습니다.';
+  String get glossCurrentRatio =>
+      '단기 자산 ÷ 1년 안에 갚아야 할 부채. 1을 넘으면 회사가 가까운 시일의 지급을 감당할 수 있습니다.';
 
   @override
   String get glossRevenueGrowth => '1년 전과 비교해 매출이 얼마나 늘었는지.';
@@ -1836,7 +1943,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get glossDividendPerShare => '지난 1년 동안 한 주에 지급된 배당금.';
 
   @override
-  String get glossPayoutRatio => '이익 중 배당금으로 지급되는 비율. 100%를 넘으면 버는 것보다 많이 지급하는 것으로, 오래 지속되기 어렵습니다.';
+  String get glossPayoutRatio =>
+      '이익 중 배당금으로 지급되는 비율. 100%를 넘으면 버는 것보다 많이 지급하는 것으로, 오래 지속되기 어렵습니다.';
 
   @override
   String get portfolioBeta => '포트폴리오 베타';
@@ -1849,7 +1957,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioTop3 => '상위 3개 종목';
 
   @override
-  String get glossPortfolioTop3 => '보유 종목 평가액 중 가장 큰 3개 종목이 차지하는 비중이에요. 높을수록 한 회사의 악재가 포트폴리오 전체에 더 큰 타격을 줄 수 있어요.';
+  String get glossPortfolioTop3 =>
+      '보유 종목 평가액 중 가장 큰 3개 종목이 차지하는 비중이에요. 높을수록 한 회사의 악재가 포트폴리오 전체에 더 큰 타격을 줄 수 있어요.';
 
   @override
   String get glossDividendGrowth5y =>
@@ -1884,7 +1993,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get watchSortName => '티커순 (A–Z)';
 
   @override
-  String get watchHint => '핸들을 끌어 순서를 바꾸고, 왼쪽으로 스와이프하여 제거합니다. 선은 최근 30일을 보여줍니다.';
+  String get watchHint =>
+      '핸들을 끌어 순서를 바꾸고, 왼쪽으로 스와이프하여 제거합니다. 선은 최근 30일을 보여줍니다.';
 
   @override
   String analysisReady(String symbol) {
@@ -1903,7 +2013,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get briefButton => '오늘 요약하기';
 
   @override
-  String get briefHint => '포트폴리오와 관심 종목이 오늘 어떻게 움직였는지, 최신 뉴스가 무엇을 말하는지 AI가 짧게 요약합니다. 분석 횟수는 차감되지 않습니다.';
+  String get briefHint =>
+      '포트폴리오와 관심 종목이 오늘 어떻게 움직였는지, 최신 뉴스가 무엇을 말하는지 AI가 짧게 요약합니다. 분석 횟수는 차감되지 않습니다.';
 
   @override
   String get briefRefresh => '업데이트';
@@ -1957,13 +2068,15 @@ class AppLocalizationsKo extends AppLocalizations {
   String get dividendRemindersTitle => '배당금 알림';
 
   @override
-  String get dividendRemindersSubtitle => '기록한 배당 내역의 주기를 바탕으로 배당금이 예상되는 날 알려 드려 바로 기록할 수 있습니다';
+  String get dividendRemindersSubtitle =>
+      '기록한 배당 내역의 주기를 바탕으로 배당금이 예상되는 날 알려 드려 바로 기록할 수 있습니다';
 
   @override
   String get earningsRemindersTitle => '실적 발표 알림';
 
   @override
-  String get earningsRemindersSubtitle => '즐겨찾기나 포트폴리오 종목의 분기 실적 발표 하루 전에 알려 드립니다';
+  String get earningsRemindersSubtitle =>
+      '즐겨찾기나 포트폴리오 종목의 분기 실적 발표 하루 전에 알려 드립니다';
 
   @override
   String addAllToFavorites(int count) {
@@ -1980,19 +2093,26 @@ class AppLocalizationsKo extends AppLocalizations {
   String get holdingsReviewTitle => '찾은 보유 종목';
 
   @override
-  String get holdingsReviewHint => '추가하기 전에 숫자를 확인하세요. 가격은 오늘 가격이 아니라 주당 평균 매수가입니다.';
+  String get holdingsReviewHint =>
+      '추가하기 전에 숫자를 확인하세요. 가격은 오늘 가격이 아니라 주당 평균 매수가입니다.';
 
   @override
   String get holdingsNoPrice => '이미지에 평균 매수가가 없습니다';
 
   @override
   String holdingsAdd(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '보유 종목 $count개 추가', one: '보유 종목 1개 추가');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '보유 종목 $count개 추가',
+      one: '보유 종목 1개 추가',
+    );
     return '$_temp0';
   }
 
   @override
-  String get holdingsNone => '이 이미지에서 보유 종목을 찾지 못했습니다. 증권사 앱의 잔고 또는 보유 종목 화면 스크린샷을 사용해 보세요.';
+  String get holdingsNone =>
+      '이 이미지에서 보유 종목을 찾지 못했습니다. 증권사 앱의 잔고 또는 보유 종목 화면 스크린샷을 사용해 보세요.';
 
   @override
   String get week52Range => '52주 범위';
@@ -2034,13 +2154,23 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '매수 $count건', one: '매수 1건');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '매수 $count건',
+      one: '매수 1건',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '매도 $count건', one: '매도 1건');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '매도 $count건',
+      one: '매도 1건',
+    );
     return '$_temp0';
   }
 
@@ -2056,7 +2186,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get insiderSell => '매도';
 
   @override
-  String get insiderHint => '최근 90일간 임원 및 이사의 공개 시장 매수·매도 (SEC Form 4). 스톡옵션 행사와 주식 보상은 포함되지 않습니다.';
+  String get insiderHint =>
+      '최근 90일간 임원 및 이사의 공개 시장 매수·매도 (SEC Form 4). 스톡옵션 행사와 주식 보상은 포함되지 않습니다.';
 
   @override
   String get insiderNone => '최근 90일간 공개 시장에서의 내부자 매수 또는 매도가 없습니다.';
@@ -2187,7 +2318,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get watchAlertAll => '큰 일일 변동 알림';
 
   @override
-  String get watchAlertAllHint => '이 목록의 모든 종목에 가격 알림을 설정합니다. 하루에 이만큼 오르거나 내리면 알려 줍니다. 이미 알림이 있는 종목은 기존 알림을 유지합니다.';
+  String get watchAlertAllHint =>
+      '이 목록의 모든 종목에 가격 알림을 설정합니다. 하루에 이만큼 오르거나 내리면 알려 줍니다. 이미 알림이 있는 종목은 기존 알림을 유지합니다.';
 
   @override
   String watchAlertAllDone(int count) {
@@ -2249,7 +2381,8 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get whatIfNote => '주가만을 기준으로 하며 배당금, 수수료, 세금은 포함되지 않습니다. 과거 수익률은 미래 수익률을 예측하지 않습니다.';
+  String get whatIfNote =>
+      '주가만을 기준으로 하며 배당금, 수수료, 세금은 포함되지 않습니다. 과거 수익률은 미래 수익률을 예측하지 않습니다.';
 
   @override
   String get watchShare => '목록 공유';
@@ -2258,7 +2391,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get watchImport => '티커 추가';
 
   @override
-  String get watchImportHint => '티커를 쉼표, 공백 또는 줄바꿈으로 구분해 붙여 넣으세요(예: 누군가 공유해 준 목록).';
+  String get watchImportHint =>
+      '티커를 쉼표, 공백 또는 줄바꿈으로 구분해 붙여 넣으세요(예: 누군가 공유해 준 목록).';
 
   @override
   String watchImported(int count) {
@@ -2347,7 +2481,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioAccountsAll => '전체 계좌';
 
   @override
-  String get portfolioAccountNote => '이 계좌의 거래와 배당금만 표시됩니다. 현금, 목표, AI 진단은 \'전체 계좌\'에 표시됩니다.';
+  String get portfolioAccountNote =>
+      '이 계좌의 거래와 배당금만 표시됩니다. 현금, 목표, AI 진단은 \'전체 계좌\'에 표시됩니다.';
 
   @override
   String get portfolioNoAccount => '계좌 없음';
@@ -2395,7 +2530,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count개 종목', one: '1개 종목');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count개 종목',
+      one: '1개 종목',
+    );
     return '$_temp0';
   }
 
@@ -2411,7 +2551,8 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get contributionHint => '매수만 하고 매도는 하지 않습니다. 목표 비중에 가장 못 미치는 종목부터 자금을 배분합니다.';
+  String get contributionHint =>
+      '매수만 하고 매도는 하지 않습니다. 목표 비중에 가장 못 미치는 종목부터 자금을 배분합니다.';
 
   @override
   String contributionShares(String shares) {
@@ -2444,7 +2585,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioSampleTry => '샘플 포트폴리오로 체험하기';
 
   @override
-  String get portfolioSampleBanner => '샘플 포트폴리오입니다. 내 매수 내역을 함께 추가하거나 샘플을 삭제하세요.';
+  String get portfolioSampleBanner =>
+      '샘플 포트폴리오입니다. 내 매수 내역을 함께 추가하거나 샘플을 삭제하세요.';
 
   @override
   String get portfolioSampleRemove => '샘플 삭제';
@@ -2512,13 +2654,21 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months개월');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months개월',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days일');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days일',
+    );
     return '$_temp0';
   }
 
@@ -2597,7 +2747,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tickerChangeNew => '새 티커';
 
   @override
-  String get tickerChangeHint => '회사가 티커를 변경하면(예: FB → META) 모든 거래, 배당금, 주식 분할, 메모, 알림이 새 티커로 옮겨집니다.';
+  String get tickerChangeHint =>
+      '회사가 티커를 변경하면(예: FB → META) 모든 거래, 배당금, 주식 분할, 메모, 알림이 새 티커로 옮겨집니다.';
 
   @override
   String tickerChanged(String symbol) {
@@ -2616,10 +2767,12 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated => '분석이 완료되기 전에 중간에 끊겼습니다. 다시 시도해 주세요. 할당량은 차감되지 않았습니다.';
+  String get errAiTruncated =>
+      '분석이 완료되기 전에 중간에 끊겼습니다. 다시 시도해 주세요. 할당량은 차감되지 않았습니다.';
 
   @override
-  String get errImageUnsupported => '이 이미지를 읽을 수 없습니다. JPEG 또는 PNG로 저장한 후 다시 시도해 주세요.';
+  String get errImageUnsupported =>
+      '이 이미지를 읽을 수 없습니다. JPEG 또는 PNG로 저장한 후 다시 시도해 주세요.';
 
   @override
   String get errRateLimited => '짧은 시간에 요청이 너무 많습니다. 1분 정도 기다린 후 다시 시도해 주세요.';
@@ -2641,13 +2794,15 @@ class AppLocalizationsKo extends AppLocalizations {
   String get restoreNothing => '복원할 이전 구매 내역이 없습니다.';
 
   @override
-  String get manageSubscriptionElsewhere => '여기에서 관리할 구독이 없습니다. App Store 또는 Google Play에서 구매한 구독은 스토어 설정에서 관리합니다.';
+  String get manageSubscriptionElsewhere =>
+      '여기에서 관리할 구독이 없습니다. App Store 또는 Google Play에서 구매한 구독은 스토어 설정에서 관리합니다.';
 
   @override
   String get backupFailed => '백업을 저장할 수 없습니다. 다시 시도해 주세요.';
 
   @override
-  String get syncTooLarge => '데이터가 너무 커서 계정과 동기화할 수 없습니다. 더 이상 필요 없는 거래나 메모를 삭제하면 다시 시도합니다.';
+  String get syncTooLarge =>
+      '데이터가 너무 커서 계정과 동기화할 수 없습니다. 더 이상 필요 없는 거래나 메모를 삭제하면 다시 시도합니다.';
 
   @override
   String get noteFull => '이 종목의 메모가 가득 차서 이 내용을 추가하지 못했습니다. 메모를 줄인 후 다시 시도하세요.';
@@ -2672,10 +2827,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get signOutTitle => '로그아웃할까요?';
 
   @override
-  String get signOutBody => '포트폴리오, 목록, 가격 알림, 메모는 계정에 그대로 남고 이 기기에서는 삭제됩니다. 다시 로그인하면 복원됩니다.';
+  String get signOutBody =>
+      '포트폴리오, 목록, 가격 알림, 메모는 계정에 그대로 남고 이 기기에서는 삭제됩니다. 다시 로그인하면 복원됩니다.';
 
   @override
-  String get signOutUnsaved => '일부 변경 사항을 계정에 저장하지 못했습니다(연결이 끊겼나요?). 지금 로그아웃하면 이 변경 사항은 사라집니다.';
+  String get signOutUnsaved =>
+      '일부 변경 사항을 계정에 저장하지 못했습니다(연결이 끊겼나요?). 지금 로그아웃하면 이 변경 사항은 사라집니다.';
 
   @override
   String get signOutAnyway => '그래도 로그아웃';
@@ -2694,19 +2851,24 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get subscribedInStore => '이미 App Store 또는 Google Play를 통한 구독이 있습니다. 요금제를 변경하려면 해당 스토어의 구독 설정을 이용하세요.';
+  String get subscribedInStore =>
+      '이미 App Store 또는 Google Play를 통한 구독이 있습니다. 요금제를 변경하려면 해당 스토어의 구독 설정을 이용하세요.';
 
   @override
-  String get paymentViaAppStore => 'Apple 계정으로 청구됩니다. App Store 구독 설정에서 언제든지 해지할 수 있습니다.';
+  String get paymentViaAppStore =>
+      'Apple 계정으로 청구됩니다. App Store 구독 설정에서 언제든지 해지할 수 있습니다.';
 
   @override
-  String get paymentViaGooglePlay => 'Google Play 계정으로 청구됩니다. Google Play 구독 설정에서 언제든지 해지할 수 있습니다.';
+  String get paymentViaGooglePlay =>
+      'Google Play 계정으로 청구됩니다. Google Play 구독 설정에서 언제든지 해지할 수 있습니다.';
 
   @override
-  String get manageSubscriptionAppStore => '여기에서 관리할 구독이 없습니다. App Store에서 구매한 구독은 App Store 설정에서 관리합니다.';
+  String get manageSubscriptionAppStore =>
+      '여기에서 관리할 구독이 없습니다. App Store에서 구매한 구독은 App Store 설정에서 관리합니다.';
 
   @override
-  String get manageSubscriptionGooglePlay => '여기에서 관리할 구독이 없습니다. Google Play에서 구매한 구독은 Google Play 설정에서 관리합니다.';
+  String get manageSubscriptionGooglePlay =>
+      '여기에서 관리할 구독이 없습니다. Google Play에서 구매한 구독은 Google Play 설정에서 관리합니다.';
 
   @override
   String get deleteAccountBodyAppStore =>
@@ -2806,7 +2968,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String alertsCleared(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '알림 $count개를 지웠습니다', one: '알림 1개를 지웠습니다');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '알림 $count개를 지웠습니다',
+      one: '알림 1개를 지웠습니다',
+    );
     return '$_temp0';
   }
 
@@ -2836,7 +3003,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get earningsSummaryButton => '최근 실적 발표 내용은?';
 
   @override
-  String get earningsSummaryNote => '회사의 실적 발표와 웹에서 찾은 언론 보도를 AI가 요약합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.';
+  String get earningsSummaryNote =>
+      '회사의 실적 발표와 웹에서 찾은 언론 보도를 AI가 요약합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.';
 
   @override
   String get compareLastSurprise => '지난 분기 EPS vs 예상';
@@ -2858,7 +3026,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get instrumentAsk => '이게 뭔가요?';
 
   @override
-  String get instrumentNote => '발행사의 펀드 페이지와 웹에서 찾은 금융 사이트를 바탕으로 AI가 설명합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.';
+  String get instrumentNote =>
+      '발행사의 펀드 페이지와 웹에서 찾은 금융 사이트를 바탕으로 AI가 설명합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.';
 
   @override
   String suggestAskAi(String query) {
@@ -2900,7 +3069,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioDividendDate => '지급일';
 
   @override
-  String get portfolioDividendsEmpty => '아직 기록된 배당금이 없습니다. 직접 추가하거나 증권사 내보내기 파일을 가져오세요. 배당금 행도 함께 인식됩니다.';
+  String get portfolioDividendsEmpty =>
+      '아직 기록된 배당금이 없습니다. 직접 추가하거나 증권사 내보내기 파일을 가져오세요. 배당금 행도 함께 인식됩니다.';
 
   @override
   String get portfolioSplit => '주식 분할';
@@ -2911,13 +3081,15 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get portfolioSplitHint => '분할 전 날짜의 매수·매도가 조정됩니다. 주식 수는 곱하고 주당 가격은 나누므로 매입 비용은 그대로 유지됩니다.';
+  String get portfolioSplitHint =>
+      '분할 전 날짜의 매수·매도가 조정됩니다. 주식 수는 곱하고 주당 가격은 나누므로 매입 비용은 그대로 유지됩니다.';
 
   @override
   String get portfolioSplitRatio => '비율 (신 : 구)';
 
   @override
-  String get portfolioSplitRatioError => '10:1처럼 비율을 입력하세요. 주식 병합(역분할)은 1:10입니다.';
+  String get portfolioSplitRatioError =>
+      '10:1처럼 비율을 입력하세요. 주식 병합(역분할)은 1:10입니다.';
 
   @override
   String get portfolioSplitDate => '분할 날짜';
@@ -2959,7 +3131,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioDividendDeleted => '배당금이 삭제되었습니다';
 
   @override
-  String get portfolioDividendsHint => '금액은 계좌에 입금된 그대로 지급 통화로 표시되며, 합계는 오늘 환율로 환산됩니다. 세금 신고에는 증권사 명세서를 사용하세요.';
+  String get portfolioDividendsHint =>
+      '금액은 계좌에 입금된 그대로 지급 통화로 표시되며, 합계는 오늘 환율로 환산됩니다. 세금 신고에는 증권사 명세서를 사용하세요.';
 
   @override
   String get awayTitle => '자리를 비운 동안';
@@ -2974,7 +3147,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String awayAlerts(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '알림 $count건 발생', one: '알림 1건 발생');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '알림 $count건 발생',
+      one: '알림 1건 발생',
+    );
     return '$_temp0';
   }
 
@@ -3030,16 +3208,20 @@ class AppLocalizationsKo extends AppLocalizations {
   String get techNeutral => '중립';
 
   @override
-  String get techGoldenCross => '50일 이동평균이 200일 이동평균 위에 있습니다 – 고전적인 해석으로는 상승 추세입니다.';
+  String get techGoldenCross =>
+      '50일 이동평균이 200일 이동평균 위에 있습니다 – 고전적인 해석으로는 상승 추세입니다.';
 
   @override
-  String get techDeathCross => '50일 이동평균이 200일 이동평균 아래에 있습니다 – 고전적인 해석으로는 하락 추세입니다.';
+  String get techDeathCross =>
+      '50일 이동평균이 200일 이동평균 아래에 있습니다 – 고전적인 해석으로는 하락 추세입니다.';
 
   @override
-  String get glossSma50 => '최근 50거래일 종가의 평균입니다. 주가가 그 위에 있으면 단기 강세, 아래에 있으면 약세로 읽는 경우가 많습니다.';
+  String get glossSma50 =>
+      '최근 50거래일 종가의 평균입니다. 주가가 그 위에 있으면 단기 강세, 아래에 있으면 약세로 읽는 경우가 많습니다.';
 
   @override
-  String get glossSma200 => '최근 200거래일 종가의 평균 – 고전적인 장기 추세선입니다. 많은 투자자가 주가가 그 위에 있으면 장기 상승 추세로 봅니다.';
+  String get glossSma200 =>
+      '최근 200거래일 종가의 평균 – 고전적인 장기 추세선입니다. 많은 투자자가 주가가 그 위에 있으면 장기 상승 추세로 봅니다.';
 
   @override
   String get glossRsi =>
@@ -3080,7 +3262,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get signalAlertsTitle => '기술적 신호 알림';
 
   @override
-  String get signalAlertsSubtitle => '하루 한 번, 관심 종목이 과매도 또는 과매수(RSI) 상태가 되거나 주가가 200일 이동평균을 교차할 때 알려 드립니다.';
+  String get signalAlertsSubtitle =>
+      '하루 한 번, 관심 종목이 과매도 또는 과매수(RSI) 상태가 되거나 주가가 200일 이동평균을 교차할 때 알려 드립니다.';
 
   @override
   String get signalAlertsNotification => '기술적 신호';
@@ -3101,7 +3284,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioCashTitle => '현금 잔고';
 
   @override
-  String get portfolioCashHint => '증권사 계좌에 있는 미투자 자금(통화별). 총평가액과 비중에는 포함되지만 수익률에는 포함되지 않습니다.';
+  String get portfolioCashHint =>
+      '증권사 계좌에 있는 미투자 자금(통화별). 총평가액과 비중에는 포함되지만 수익률에는 포함되지 않습니다.';
 
   @override
   String portfolioCashAmount(String currency) {
@@ -3124,7 +3308,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioDividendsExpected => '다음 예상';
 
   @override
-  String get portfolioDividendsExpectedNote => '기록한 배당금의 지급일과 금액으로 추정한 값입니다. 기업이 변경하거나 지급하지 않을 수 있습니다.';
+  String get portfolioDividendsExpectedNote =>
+      '기록한 배당금의 지급일과 금액으로 추정한 값입니다. 기업이 변경하거나 지급하지 않을 수 있습니다.';
 
   @override
   String portfolioDividendAround(String date) {

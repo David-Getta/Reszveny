@@ -7,6 +7,7 @@ import '../../core/models/stock_candidate.dart';
 import '../capture/capture_service.dart';
 import '../../l10n/error_messages.dart';
 import '../../l10n/supported_locales.dart';
+import '../market_data/quote_check.dart';
 import '../recognition/description_resolver.dart';
 import 'candidate_sheet.dart';
 import '../../l10n/generated/app_localizations.dart';
@@ -110,12 +111,17 @@ class _QuickBarState extends State<QuickBar> {
         error = e;
       }
     }
+    // Ticker-szerű beírás: csak akkor nyílik meg, ha van rá árfolyam.
+    final ticker =
+        results.isEmpty &&
+        DescriptionResolver.looksLikeTicker(q) &&
+        await hasQuote(services.marketData, q.toUpperCase());
     if (!mounted) return;
     setState(() => _busy = false);
     final StockCandidate chosen;
     if (results.isNotEmpty) {
       chosen = results.first;
-    } else if (DescriptionResolver.looksLikeTicker(q)) {
+    } else if (ticker) {
       chosen = StockCandidate(symbol: q.toUpperCase(), companyName: q.toUpperCase(), confidence: 1);
     } else {
       // Leírás vagy elgépelés: nem nyitjuk meg tickerként (és nem kerül a legutóbbiak közé).

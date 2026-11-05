@@ -167,6 +167,8 @@ class AppTheme {
           borderSide: BorderSide(color: p.accent, width: 1.5),
         ),
       ),
+      // Billentyűzettel (Tab) fókuszált gomb jól látható kerettel (a halvány fedőszín a
+      // kitöltött gombon alig látszott).
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           backgroundColor: p.accent,
@@ -174,18 +176,23 @@ class AppTheme {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
           textStyle: text.labelLarge?.copyWith(fontWeight: FontWeight.w600),
-        ),
+        ).copyWith(side: focusRing(p.text)),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-          foregroundColor: p.text,
-          side: BorderSide(color: p.border),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
-          textStyle: text.labelLarge?.copyWith(fontWeight: FontWeight.w600),
-        ),
+        style:
+            OutlinedButton.styleFrom(
+              foregroundColor: p.text,
+              side: BorderSide(color: p.border),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+              textStyle: text.labelLarge?.copyWith(fontWeight: FontWeight.w600),
+            ).copyWith(
+              side: focusRing(p.accent, otherwise: BorderSide(color: p.border)),
+            ),
       ),
-      textButtonTheme: TextButtonThemeData(style: TextButton.styleFrom(foregroundColor: p.accent)),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(foregroundColor: p.accent).copyWith(side: focusRing(p.accent)),
+      ),
       iconButtonTheme: IconButtonThemeData(style: IconButton.styleFrom(foregroundColor: p.muted)),
       listTileTheme: ListTileThemeData(
         iconColor: p.muted,
@@ -219,6 +226,12 @@ class AppTheme {
       ),
     );
   }
+
+  /// Fókuszkeret: billentyűzetes fókusznál 2 pontos keret, egyébként [otherwise].
+  static WidgetStateProperty<BorderSide?> focusRing(Color color, {BorderSide? otherwise}) =>
+      WidgetStateProperty.resolveWith(
+        (states) => states.contains(WidgetState.focused) ? BorderSide(color: color, width: 2) : otherwise,
+      );
 }
 
 /// Pozitív/negatív értékek színe (nyereség, változás): a semleges a halvány szín.

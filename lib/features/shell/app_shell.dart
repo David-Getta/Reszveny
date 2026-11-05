@@ -531,7 +531,9 @@ extension on _AppShellState {
                   onOpenAlerts: _openAlerts,
                   onShowShortcuts: _showShortcuts,
                 ),
-                Expanded(child: _tabStack(content)),
+                // Külön szemantikai határ: a fülek belső navigátorának modális sávja (az útvonal
+                // „barrier”-je) különben az oldalsávot is elrejtené a képernyőolvasó elől.
+                Expanded(child: Semantics(container: true, child: _tabStack(content))),
               ],
             ),
           ),

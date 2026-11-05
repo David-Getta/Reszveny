@@ -13,7 +13,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Nka setshwantsho sa shere mme o ithute tsohle ka yona.';
+  String get homeTagline =>
+      'Nka setshwantsho sa shere mme o ithute tsohle ka yona.';
 
   @override
   String get homeHint =>
@@ -293,7 +294,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get labelDividendGrowth5y => 'Kgolo ya dividende (dilemo tse 5)';
 
   @override
-  String get dividendNone => 'Ha ho dividende e lefilweng dikgweding tse 12 tse fetileng.';
+  String get dividendNone =>
+      'Ha ho dividende e lefilweng dikgweding tse 12 tse fetileng.';
 
   @override
   String get dividendOnYourShares => 'Dishereng tsa hao, ka selemo';
@@ -352,7 +354,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get errMissingAnthropicKey =>
-      'Temoho ya ditshwantsho ha e a hlophiswa (ha ho ANTHROPIC_API_KEY). Kenya ticker ka letsoho.';
+      'Temoho ya ditshwantsho ha e fumanehe mofuteng ona. Kenya ticker ka letsoho.';
 
   @override
   String get errRecognitionUnreachable =>
@@ -364,26 +366,32 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Tshebeletso ya temoho ha e a kgona ho sebetsa setshwantsho sena.';
+  String get errRecognitionRefused =>
+      'Tshebeletso ya temoho ha e a kgona ho sebetsa setshwantsho sena.';
 
   @override
-  String get errRecognitionTruncated => 'Karabo ya temoho e kgaohile. Ka kopo leka hape.';
+  String get errRecognitionTruncated =>
+      'Karabo ya temoho e kgaohile. Ka kopo leka hape.';
 
   @override
-  String get errRecognitionBadResponse => 'Karabo e sa lebellwang ho tswa tshebeletsong ya temoho.';
+  String get errRecognitionBadResponse =>
+      'Karabo e sa lebellwang ho tswa tshebeletsong ya temoho.';
 
   @override
-  String get errRecognitionEmpty => 'Tshebeletso ya temoho e kgutlisitse karabo e se nang letho.';
+  String get errRecognitionEmpty =>
+      'Tshebeletso ya temoho e kgutlisitse karabo e se nang letho.';
 
   @override
-  String get errMissingFinnhubKey => 'Data ya mmaraka ha e a hlophiswa (ha ho FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Data ya mmaraka ha e fumanehe mofuteng ona.';
 
   @override
   String get errMarketUnreachable =>
       'Ha e a kgona ho fihlella tshebeletso ya data ya mmaraka. Hlahloba kgokahano ya hao ya inthanete.';
 
   @override
-  String get errMarketRateLimited => 'Dikopo di ngata haholo ho tshebeletso ya data ya mmaraka. Ka kopo ema motsotso.';
+  String get errMarketRateLimited =>
+      'Dikopo di ngata haholo ho tshebeletso ya data ya mmaraka. Ka kopo ema motsotso.';
 
   @override
   String errMarketHttp(String status) {
@@ -391,7 +399,8 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Karabo e sa lebellwang ho tswa tshebeletsong ya data ya mmaraka.';
+  String get errMarketBadResponse =>
+      'Karabo e sa lebellwang ho tswa tshebeletsong ya data ya mmaraka.';
 
   @override
   String errNoQuote(String symbol) {
@@ -405,7 +414,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String errDemoUnsupportedSymbol(String symbols) {
-    return 'Mokgwa wa pontsho o tshehetsa $symbols feela. Kenya FINNHUB_API_KEY bakeng sa data ya nako ya jwale.';
+    return 'Mokgwa ona wa pontsho o na le data ya mohlala bakeng sa $symbols feela.';
   }
 
   @override
@@ -491,7 +500,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get aiRegenerate => 'Etsa hape';
 
   @override
-  String get aiGenerating => 'E lokisa tlhahlobo… sena se ka nka motsotso kapa e mmedi.';
+  String get aiGenerating =>
+      'E lokisa tlhahlobo… sena se ka nka motsotso kapa e mmedi.';
 
   @override
   String get aiSources => 'Mehlodi';
@@ -506,10 +516,12 @@ class AppLocalizationsSt extends AppLocalizations {
       'Tlhahlobo e entsweng ke AI e thehilwe hodima data ya setjhaba le ditaba tsa morao-rao. E ka ba le diphoso kapa ya se be ya morao-rao, mme hase keletso ya ho tsetela.';
 
   @override
-  String get errAiNotConfigured => 'Tlhahlobo ya AI ha e a hlophiswa (ha ho ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured =>
+      'Dikarolo tsa AI ha di fumanehe mofuteng ona.';
 
   @override
-  String get errAiUnreachable => 'Ha e a kgona ho fihlella tshebeletso ya AI. Hlahloba kgokahano ya hao ya inthanete.';
+  String get errAiUnreachable =>
+      'Ha e a kgona ho fihlella tshebeletso ya AI. Hlahloba kgokahano ya hao ya inthanete.';
 
   @override
   String errAiHttp(String status) {
@@ -520,7 +532,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get errAiRefused => 'Tshebeletso ya AI e hanne ho hlahloba shere ena.';
 
   @override
-  String get errAiBadResponse => 'Karabo e sa lebellwang ho tswa tshebeletsong ya AI.';
+  String get errAiBadResponse =>
+      'Karabo e sa lebellwang ho tswa tshebeletsong ya AI.';
 
   @override
   String get sectionChart => 'Kerafo ya theko';
@@ -541,7 +554,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get rangeFiveYears => '5Y';
 
   @override
-  String get chartUnavailable => 'Histori ya theko ha e fumanehe ho tswa mohloding wa data wa hona jwale.';
+  String get chartUnavailable =>
+      'Histori ya theko ha e fumanehe ho tswa mohloding wa data wa hona jwale.';
 
   @override
   String get sectionStatements => 'Ditlaleho tsa ditjhelete (tsa selemo)';
@@ -568,7 +582,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get labelOperatingCashFlow => 'Phallo ya tjhelete ya tshebetso';
 
   @override
-  String get statementsUnavailable => 'Ditlaleho tsa ditjhelete tse tlalehilweng ha di fumanehe bakeng sa shere ena.';
+  String get statementsUnavailable =>
+      'Ditlaleho tsa ditjhelete tse tlalehilweng ha di fumanehe bakeng sa shere ena.';
 
   @override
   String get launchAtLogin => 'Qala ha o kena';
@@ -577,7 +592,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get hotkeyLabel => 'Khutsufatso ya kakaretso';
 
   @override
-  String get hotkeyRecordHint => 'Tobetsa mona, ebe o tobetsa motswako o motjha wa dikonopo';
+  String get hotkeyRecordHint =>
+      'Tobetsa mona, ebe o tobetsa motswako o motjha wa dikonopo';
 
   @override
   String get hotkeyReset => 'Kgutlisetsa tlwaelong';
@@ -598,7 +614,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get removeFromFavorites => 'Tlosa ho tseo o di ratang';
 
   @override
-  String get noFavorites => 'Ha ho so be le tseo o di ratang. Tobetsa naledi shereng ho e kenya.';
+  String get noFavorites =>
+      'Ha ho so be le tseo o di ratang. Tobetsa naledi shereng ho e kenya.';
 
   @override
   String get displayCurrency => 'Mofuta wa tjhelete o bontshwang';
@@ -645,7 +662,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get updateDownloading => 'E dawunelouda ntjhafatso ka morao…';
 
   @override
-  String get updateDownloaded => 'Ntjhafatso e se e loketse. Qala hape ho e kenya.';
+  String get updateDownloaded =>
+      'Ntjhafatso e se e loketse. Qala hape ho e kenya.';
 
   @override
   String get updateNow => 'Ntjhafatsa';
@@ -654,7 +672,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get restartNow => 'Qala hape';
 
   @override
-  String get updatesViaStore => 'Dintjhafatso di tla ka boiketsetso ka lebenkele la di-app.';
+  String get updatesViaStore =>
+      'Dintjhafatso di tla ka boiketsetso ka lebenkele la di-app.';
 
   @override
   String get updateCheckFailed => 'Ha e a kgona ho hlahloba dintjhafatso.';
@@ -702,7 +721,8 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Teko ya hao ya mahala e fedile. Kgetha moralo ho tswela pele ka ditlhahlobo.';
+  String get trialExpired =>
+      'Teko ya hao ya mahala e fedile. Kgetha moralo ho tswela pele ka ditlhahlobo.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -738,7 +758,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get perMonth => '/ kgwedi';
 
   @override
-  String get extraPacksTitle => 'O hloka tse ding? Reka ditlhahlobo tse eketsehileng';
+  String get extraPacksTitle =>
+      'O hloka tse ding? Reka ditlhahlobo tse eketsehileng';
 
   @override
   String get extraPacksHint =>
@@ -774,10 +795,12 @@ class AppLocalizationsSt extends AppLocalizations {
       'Ha o sa na ditlhahlobo nakong ena. Ntlafatsa moralo wa hao kapa o reke ditlhahlobo tse eketsehileng.';
 
   @override
-  String get errTrialExpired => 'Teko ya hao ya mahala e fedile. Kgetha moralo ho tswela pele.';
+  String get errTrialExpired =>
+      'Teko ya hao ya mahala e fedile. Kgetha moralo ho tswela pele.';
 
   @override
-  String get errNoPlan => 'Ho hlokahala moralo o sebetsang bakeng sa tlhahlobo ya AI.';
+  String get errNoPlan =>
+      'Ho hlokahala moralo o sebetsang bakeng sa tlhahlobo ya AI.';
 
   @override
   String get viewPlans => 'Sheba meralo';
@@ -786,7 +809,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get usageTitle => 'Tshebediso';
 
   @override
-  String get demoPurchaseNote => 'Tefo ya pontsho: ditheko di etsiswa feela sethaleng sena.';
+  String get demoPurchaseNote =>
+      'Tefo ya pontsho: ditheko di etsiswa feela sethaleng sena.';
 
   @override
   String get mostPopular => 'E ratwang haholo';
@@ -823,7 +847,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get aiDepthBriefDesc => 'Dintlha tsa bohlokwa, ka potlako.';
 
   @override
-  String get aiDepthStandardDesc => 'Tlaleho e felletseng e nang le dikarolo tsohle.';
+  String get aiDepthStandardDesc =>
+      'Tlaleho e felletseng e nang le dikarolo tsohle.';
 
   @override
   String get aiDepthDeepDesc =>
@@ -855,10 +880,12 @@ class AppLocalizationsSt extends AppLocalizations {
   String get aiReaderExperienced => 'Ya nang le boiphihlelo';
 
   @override
-  String get aiReaderBeginnerDesc => 'Puo e bonolo; lereo le leng le le leng la tekheniki le a hlaloswa.';
+  String get aiReaderBeginnerDesc =>
+      'Puo e bonolo; lereo le leng le le leng la tekheniki le a hlaloswa.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Mongolo o teteaneng o nang le mareo a tlwaelehileng a ditjhelete.';
+  String get aiReaderExperiencedDesc =>
+      'Mongolo o teteaneng o nang le mareo a tlwaelehileng a ditjhelete.';
 
   @override
   String get aiCounterArgument => 'Kganetso e matla ka ho fetisisa';
@@ -872,7 +899,8 @@ class AppLocalizationsSt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Ho fihla ho dipatlo tse $count tsa inthanete tlhahlobong ka nngwe ka moralo wa hao',
+      other:
+          'Ho fihla ho dipatlo tse $count tsa inthanete tlhahlobong ka nngwe ka moralo wa hao',
       one: 'Ho fihla ho patlo e le nngwe ya inthanete tlhahlobong ka nngwe ka moralo wa hao',
     );
     return '$_temp0';
@@ -958,7 +986,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get upcomingEvents => 'Diketsahalo tse tlang';
 
   @override
-  String get outlookChartNote => 'Mekgahlelo ke ya tataiso feela; menyetla ke dikakanyo, hase dipolelopele.';
+  String get outlookChartNote =>
+      'Mekgahlelo ke ya tataiso feela; menyetla ke dikakanyo, hase dipolelopele.';
 
   @override
   String get accountTitle => 'Akhaonto';
@@ -973,7 +1002,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get notSignedIn => 'Ha o a kena';
 
   @override
-  String get accountBenefit => 'Kena e le hore ingodiso ya hao e sebetse disebedisweng tsohle tsa hao.';
+  String get accountBenefit =>
+      'Kena e le hore ingodiso ya hao e sebetse disebedisweng tsohle tsa hao.';
 
   @override
   String get accountSyncedNote =>
@@ -1006,16 +1036,20 @@ class AppLocalizationsSt extends AppLocalizations {
   String get errInvalidCode => 'Khoutu e fosahetse kapa nako ya yona e fetile.';
 
   @override
-  String get errInvalidEmail => 'Ka kopo kenya aterese ya imeile e nepahetseng.';
+  String get errInvalidEmail =>
+      'Ka kopo kenya aterese ya imeile e nepahetseng.';
 
   @override
-  String get errSignInFailed => 'Ho kena ho hlolehile. Hlahloba kgokahano ya hao mme o leke hape.';
+  String get errSignInFailed =>
+      'Ho kena ho hlolehile. Hlahloba kgokahano ya hao mme o leke hape.';
 
   @override
-  String get checkoutWaiting => 'Phethela tefo sebatling sa hao. App e tla ntjhafala ka boiketsetso ha o qetile.';
+  String get checkoutWaiting =>
+      'Phethela tefo sebatling sa hao. App e tla ntjhafala ka boiketsetso ha o qetile.';
 
   @override
-  String get paymentViaStripe => 'Tefo e sireletsehileng sebatling ka Stripe. Khansela nako efe kapa efe.';
+  String get paymentViaStripe =>
+      'Tefo e sireletsehileng sebatling ka Stripe. Khansela nako efe kapa efe.';
 
   @override
   String get paymentViaStore =>
@@ -1028,7 +1062,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get doubleOptionTitle => 'Tobetsa Option habedi';
 
   @override
-  String get doubleOptionSubtitle => 'Ho tobetsa konopo ya Option habedi ka potlako le hona ho bitsa WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Ho tobetsa konopo ya Option habedi ka potlako le hona ho bitsa WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1204,7 +1239,8 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Ha ho so be le ditsebiso tsa theko. Bula shere mme o tobetse tshepe ho beha e nngwe.';
+  String get alertsEmpty =>
+      'Ha ho so be le ditsebiso tsa theko. Bula shere mme o tobetse tshepe ho beha e nngwe.';
 
   @override
   String get alertsNote =>
@@ -1297,7 +1333,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get accountDeleted => 'Akhaonto ya hao e hlakotswe.';
 
   @override
-  String get errDeleteAccount => 'Akhaonto ha e a kgona ho hlakolwa. Hlahloba kgokahano ya hao mme o leke hape.';
+  String get errDeleteAccount =>
+      'Akhaonto ha e a kgona ho hlakolwa. Hlahloba kgokahano ya hao mme o leke hape.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1334,7 +1371,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get inviteTitle => 'Ponelopele e kwetsweng';
 
   @override
-  String get inviteBody => 'WhatStock e fumaneha ka memo feela hajwale. Kenya khoutu ya memo eo o e fumaneng.';
+  String get inviteBody =>
+      'WhatStock e fumaneha ka memo feela hajwale. Kenya khoutu ya memo eo o e fumaneng.';
 
   @override
   String get inviteCodeLabel => 'Khoutu ya memo';
@@ -1346,7 +1384,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get inviteInvalid => 'Khoutu ena ya memo ha e nepahale.';
 
   @override
-  String get inviteExpired => 'Memo ena e fetile nako. Kopa motho ya o memileng khoutu e ntjha.';
+  String get inviteExpired =>
+      'Memo ena e fetile nako. Kopa motho ya o memileng khoutu e ntjha.';
 
   @override
   String get inviteDeviceLimit =>
@@ -1356,7 +1395,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get previewConfidential => 'Ponelopele ya lekunutu';
 
   @override
-  String get errPreviewDailyLimit => 'Moedi wa ditlhahlobo wa kajeno wa ponelopele ena o fihletswe. Leka hape hosane.';
+  String get errPreviewDailyLimit =>
+      'Moedi wa ditlhahlobo wa kajeno wa ponelopele ena o fihletswe. Leka hape hosane.';
 
   @override
   String ageHours(int count) {
@@ -1411,7 +1451,8 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'Tobetsa boemo bo hakantsweng ke AI ho fumana tsebiso ha theko e fihla ho bona.';
+  String get keyLevelAlertHint =>
+      'Tobetsa boemo bo hakantsweng ke AI ho fumana tsebiso ha theko e fihla ho bona.';
 
   @override
   String get shareAnalysisTitle => 'Arolelana tlhahlobo';
@@ -1426,7 +1467,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get shareCardFooter => 'E entswe ka WhatStock';
 
   @override
-  String get shareCardDisclaimer => 'Tlhahlobo ya AI · maemo a mohlala, eseng dikgakanyo · hase keletso ya ho tsetela';
+  String get shareCardDisclaimer =>
+      'Tlhahlobo ya AI · maemo a mohlala, eseng dikgakanyo · hase keletso ya ho tsetela';
 
   @override
   String get referralTitle => 'Mema metswalle';
@@ -1468,7 +1510,8 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Khoutu ena ha e yo. E hlahlobe mme o leke hape.';
+  String get referralErrUnknown =>
+      'Khoutu ena ha e yo. E hlahlobe mme o leke hape.';
 
   @override
   String get referralErrOwn => 'O ke ke wa sebedisa khoutu ya hao.';
@@ -1548,7 +1591,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get telemetryDecline => 'Tjhe, ke a leboha';
 
   @override
-  String get telemetrySetting => 'Dipalopalo tse sa tsebahaleng le ditlaleho tsa ho wa';
+  String get telemetrySetting =>
+      'Dipalopalo tse sa tsebahaleng le ditlaleho tsa ho wa';
 
   @override
   String get telemetrySettingHint =>
@@ -1589,7 +1633,8 @@ class AppLocalizationsSt extends AppLocalizations {
       'Eo e ne e le potso ya ho qetela bakeng sa tlhahlobo ena. Etsa tlhahlobo e ntjha ho botsa tse ding.';
 
   @override
-  String get errAskLimit => 'O fihlile moeding wa dipotso wa kajeno. Ka kopo leka hape hosane.';
+  String get errAskLimit =>
+      'O fihlile moeding wa dipotso wa kajeno. Ka kopo leka hape hosane.';
 
   @override
   String get eventTomorrow => 'Hosane';
@@ -1626,7 +1671,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get eventDividend => 'Dividende e lebelletsweng';
 
   @override
-  String get eventDividendEstimate => 'E hakanyeditswe ho tswa ditefong tseo o di tlalehileng';
+  String get eventDividendEstimate =>
+      'E hakanyeditswe ho tswa ditefong tseo o di tlalehileng';
 
   @override
   String get eventsHint =>
@@ -1685,7 +1731,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get notesTitle => 'Dintlha tsa ka';
 
   @override
-  String get notesHint => 'Hobaneng o e rekile, o shebile eng, ke eng e ka etsang hore o e rekise?';
+  String get notesHint =>
+      'Hobaneng o e rekile, o shebile eng, ke eng e ka etsang hore o e rekise?';
 
   @override
   String get notesInfo =>
@@ -1747,7 +1794,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get syncNow => 'Sinkronaesa hona joale';
 
   @override
-  String get syncFailed => 'Ho sinkronaesa ho hlolehile. Ho tla lekwa hape ka boiketsetso.';
+  String get syncFailed =>
+      'Ho sinkronaesa ho hlolehile. Ho tla lekwa hape ka boiketsetso.';
 
   @override
   String get alertEmailTitle => 'Imeile ha tsebiso e qala';
@@ -1876,7 +1924,8 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'Boleng ba khampani yohle mmarakeng wa dishere: theko ya shere × palo ya dishere.';
+  String get glossMarketCap =>
+      'Boleng ba khampani yohle mmarakeng wa dishere: theko ya shere × palo ya dishere.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1915,7 +1964,8 @@ class AppLocalizationsSt extends AppLocalizations {
       'Hore na shere e tloaetse ho tsamaya hakae le mmaraka: 1 = jwaloka mmaraka, 1.5 = diphetoho tse kgolwanyane ka hoo e ka bang 50%, ka tlase ho 1 = e kgutsitse haholwanyane.';
 
   @override
-  String get glossRevenueTtm => 'Thekiso yohle ya dikgwedi tse 12 tse fetileng, pele ho ditjeo dife kapa dife.';
+  String get glossRevenueTtm =>
+      'Thekiso yohle ya dikgwedi tse 12 tse fetileng, pele ho ditjeo dife kapa dife.';
 
   @override
   String get glossNetIncomeTtm =>
@@ -1950,17 +2000,20 @@ class AppLocalizationsSt extends AppLocalizations {
       'Thepa ya nako e kgutshwane ÷ dikoloto tse lokelang ho lefuwa nakong ya selemo. Ka hodima 1 e bolela hore khampani e kgona ho lefa dikoloto tsa yona tse haufi.';
 
   @override
-  String get glossRevenueGrowth => 'Hore na lekeno le hotse hakae ha le bapiswa le selemo se fetileng.';
+  String get glossRevenueGrowth =>
+      'Hore na lekeno le hotse hakae ha le bapiswa le selemo se fetileng.';
 
   @override
-  String get glossEpsGrowth => 'Hore na phaello ka shere e hotse hakae ha e bapiswa le selemo se fetileng.';
+  String get glossEpsGrowth =>
+      'Hore na phaello ka shere e hotse hakae ha e bapiswa le selemo se fetileng.';
 
   @override
   String get glossDividendYield =>
       'Dividende ya selemo ÷ theko ya shere: tjhelete eo o ka e fumanang ka selemo, e le phesente ya seo o se lefang.';
 
   @override
-  String get glossDividendPerShare => 'Dividende e lefilweng shere e le nngwe selemong se fetileng.';
+  String get glossDividendPerShare =>
+      'Dividende e lefilweng shere e le nngwe selemong se fetileng.';
 
   @override
   String get glossPayoutRatio =>
@@ -2058,7 +2111,8 @@ class AppLocalizationsSt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'E lekana kapa e feta EPS e lebelletsweng ho $beats ho dikotara tse $total tsa ho qetela',
+      other:
+          'E lekana kapa e feta EPS e lebelletsweng ho $beats ho dikotara tse $total tsa ho qetela',
       one: 'E lekana kapa e feta EPS e lebelletsweng ho $beats ho kotara e 1',
     );
     return '$_temp0';
@@ -2117,7 +2171,8 @@ class AppLocalizationsSt extends AppLocalizations {
       'Hlahloba dinomoro pele o di eketsa. Theko ke karolelano ya theko eo o rekileng ka yona seabo ka seng, eseng theko ya kajeno.';
 
   @override
-  String get holdingsNoPrice => 'Ha ho karolelano ya theko ya ho reka setshwantshong';
+  String get holdingsNoPrice =>
+      'Ha ho karolelano ya theko ya ho reka setshwantshong';
 
   @override
   String holdingsAdd(int count) {
@@ -2175,13 +2230,23 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ditheko tse $count', one: 'theko e 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ditheko tse $count',
+      one: 'theko e 1',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'dithekiso tse $count', one: 'thekiso e 1');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'dithekiso tse $count',
+      one: 'thekiso e 1',
+    );
     return '$_temp0';
   }
 
@@ -2205,7 +2270,8 @@ class AppLocalizationsSt extends AppLocalizations {
       'Ha ho ditheko kapa dithekiso tsa ba ka hare mmarakeng o bulehileng matsatsing a 90 a fetileng.';
 
   @override
-  String get analystTrend => 'Kamoo maikutlo a fetohileng ka teng kgwedi le kgwedi';
+  String get analystTrend =>
+      'Kamoo maikutlo a fetohileng ka teng kgwedi le kgwedi';
 
   @override
   String get watchListAll => 'Tsohle';
@@ -2242,19 +2308,22 @@ class AppLocalizationsSt extends AppLocalizations {
   String get backupSave => 'Boloka polokelo ya tshehetso';
 
   @override
-  String get backupSaveHint => 'Tseo o di ratang, manane, potefolio, ditsebiso le dintlha tsa hao faeleng e le nngwe.';
+  String get backupSaveHint =>
+      'Tseo o di ratang, manane, potefolio, ditsebiso le dintlha tsa hao faeleng e le nngwe.';
 
   @override
   String get backupRestore => 'Kgutlisa ho tswa polokelong ya tshehetso';
 
   @override
-  String get backupRestoreHint => 'E eketsa se faeleng; ha ho letho leo o nang le lona hona jwale le hlakolwang.';
+  String get backupRestoreHint =>
+      'E eketsa se faeleng; ha ho letho leo o nang le lona hona jwale le hlakolwang.';
 
   @override
   String get backupRestored => 'Polokelo ya tshehetso e kgutlisitswe.';
 
   @override
-  String get backupInvalid => 'Faele ena hase polokelo ya tshehetso ya WhatStock.';
+  String get backupInvalid =>
+      'Faele ena hase polokelo ya tshehetso ya WhatStock.';
 
   @override
   String get allocationPositions => 'Dishere';
@@ -2275,7 +2344,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get compareFromHigh => 'Ho tloha bophahamong ba dibeke tse 52';
 
   @override
-  String get briefAutoTitle => 'Kakaretso ya letsatsi le letsatsi hoseng ho hong le ho hong';
+  String get briefAutoTitle =>
+      'Kakaretso ya letsatsi le letsatsi hoseng ho hong le ho hong';
 
   @override
   String get briefAutoSubtitle =>
@@ -2346,7 +2416,8 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
-  String get portfolioExportRealized => 'Romela ka ntle phaello e fumanweng (CSV)';
+  String get portfolioExportRealized =>
+      'Romela ka ntle phaello e fumanweng (CSV)';
 
   @override
   String get portfolioAnnualReturn => 'Poelo ya selemo';
@@ -2540,7 +2611,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get portfolioTopHoldings => 'Dishere tse kgolo';
 
   @override
-  String get portfolioShareNote => 'Ho arolelanwa diphesente feela, ha ho dipalo tsa chelete.';
+  String get portfolioShareNote =>
+      'Ho arolelanwa diphesente feela, ha ho dipalo tsa chelete.';
 
   @override
   String portfolioPositionsCount(int count) {
@@ -2599,13 +2671,15 @@ class AppLocalizationsSt extends AppLocalizations {
   String get portfolioSampleTry => 'Leka ka potefolio ya mohlala';
 
   @override
-  String get portfolioSampleBanner => 'Ena ke potefolio ya mohlala. Kenya ditheko tsa hao pela yona, kapa o e tlose.';
+  String get portfolioSampleBanner =>
+      'Ena ke potefolio ya mohlala. Kenya ditheko tsa hao pela yona, kapa o e tlose.';
 
   @override
   String get portfolioSampleRemove => 'Tlosa mohlala';
 
   @override
-  String get portfolioStopsAll => 'Temoso ya ho theoha ho tloha hodimodimo bakeng sa dishere tsohle';
+  String get portfolioStopsAll =>
+      'Temoso ya ho theoha ho tloha hodimodimo bakeng sa dishere tsohle';
 
   @override
   String portfolioStopsDone(int count) {
@@ -2654,10 +2728,12 @@ class AppLocalizationsSt extends AppLocalizations {
   String get lotNoteAdd => 'Eketsa ntlha';
 
   @override
-  String get lotNoteBuyHint => 'Hobaneng o reka? E tla kena dintlheng tsa shere, hammoho le letsatsi.';
+  String get lotNoteBuyHint =>
+      'Hobaneng o reka? E tla kena dintlheng tsa shere, hammoho le letsatsi.';
 
   @override
-  String get lotNoteSellHint => 'Hobaneng o rekisa? E tla kena dintlheng tsa shere, hammoho le letsatsi.';
+  String get lotNoteSellHint =>
+      'Hobaneng o rekisa? E tla kena dintlheng tsa shere, hammoho le letsatsi.';
 
   @override
   String get lotNoteBought => 'E rekilwe';
@@ -2737,7 +2813,8 @@ class AppLocalizationsSt extends AppLocalizations {
   String get activitySearchHint => 'Sefa ka ticker';
 
   @override
-  String get activityNoMatch => 'Ha ho theko kapa thekiso e tsamaellanang le sefa.';
+  String get activityNoMatch =>
+      'Ha ho theko kapa thekiso e tsamaellanang le sefa.';
 
   @override
   String portfolioImportDuplicates(int count) {
@@ -2771,10 +2848,12 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Kena ka imeile ya hao hore o sebedise khoutu ya motswalle.';
+  String get referralErrSignIn =>
+      'Kena ka imeile ya hao hore o sebedise khoutu ya motswalle.';
 
   @override
-  String get referralErrFull => 'Khoutu ena e se e sebedisitswe ka makgetlo ohle a dumeletsweng.';
+  String get referralErrFull =>
+      'Khoutu ena e se e sebedisitswe ka makgetlo ohle a dumeletsweng.';
 
   @override
   String portfolioGoalReachedBody(String value) {
@@ -2782,17 +2861,20 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
-  String get errAiTruncated => 'Tlhahlobo e kgaohile pele e fela. Ka kopo leka hape – ha e a sebedisa kabelo ya hao.';
+  String get errAiTruncated =>
+      'Tlhahlobo e kgaohile pele e fela. Ka kopo leka hape – ha e a sebedisa kabelo ya hao.';
 
   @override
   String get errImageUnsupported =>
       'Setshwantsho sena se ke ke sa balwa. Se boloke jwalo ka JPEG kapa PNG mme o leke hape.';
 
   @override
-  String get errRateLimited => 'Dikopo di ngata haholo ka nako e kgutshwane. Ka kopo ema motsotso mme o leke hape.';
+  String get errRateLimited =>
+      'Dikopo di ngata haholo ka nako e kgutshwane. Ka kopo ema motsotso mme o leke hape.';
 
   @override
-  String get watchListNameTaken => 'Lenane le nang le lebitso lena le se le ntse le le teng.';
+  String get watchListNameTaken =>
+      'Lenane le nang le lebitso lena le se le ntse le le teng.';
 
   @override
   String watchListLimit(int max) {
@@ -2805,14 +2887,16 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing => 'Ha ho ditheko tsa pele tse fumanweng hore di kgutliswe.';
+  String get restoreNothing =>
+      'Ha ho ditheko tsa pele tse fumanweng hore di kgutliswe.';
 
   @override
   String get manageSubscriptionElsewhere =>
       'Ha ho ingodiso eo o ka e laolang mona. Ingodiso e rekilweng ho App Store kapa Google Play e laolwa ditlhophisong tsa lebenkele.';
 
   @override
-  String get backupFailed => 'Polokelo ya tshehetso ha e a kgona ho bolokwa. Ka kopo leka hape.';
+  String get backupFailed =>
+      'Polokelo ya tshehetso ha e a kgona ho bolokwa. Ka kopo leka hape.';
 
   @override
   String get syncTooLarge =>
@@ -2834,7 +2918,8 @@ class AppLocalizationsSt extends AppLocalizations {
       locale: localeName,
       other:
           'Dividende tse $count ka $currencies ha di na sekgahla sa phapanyetsano, kahoo ha di a kenyelletswa dikakaretsong.',
-      one: 'Dividende e 1 ka $currencies ha e na sekgahla sa phapanyetsano, kahoo ha e a kenyelletswa dikakaretsong.',
+      one:
+          'Dividende e 1 ka $currencies ha e na sekgahla sa phapanyetsano, kahoo ha e a kenyelletswa dikakaretsong.',
     );
     return '$_temp0';
   }
@@ -2947,7 +3032,8 @@ class AppLocalizationsSt extends AppLocalizations {
       'Tlhahisoleseding e akaretsang e entsweng ke AI mabapi le sebopeho sa potefolio ya hao. Ha e nahanele dipheo tsa hao, ditjhelete tsa hao kapa boemo ba hao ba lekgetho, mme hase kgothaletso ya hao ka sebele kapa keletso ya ho tsetela.';
 
   @override
-  String get briefNotificationTitle => 'Kakaretso ya AI · Kajeno le diabo tsa hao';
+  String get briefNotificationTitle =>
+      'Kakaretso ya AI · Kajeno le diabo tsa hao';
 
   @override
   String get portfolioGoalSet => 'Beha sepheo';
@@ -3271,10 +3357,12 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
-  String get signalCrossedAbove => 'e tshetse ka hodimo ho karolelano ya matsatsi a 200';
+  String get signalCrossedAbove =>
+      'e tshetse ka hodimo ho karolelano ya matsatsi a 200';
 
   @override
-  String get signalCrossedBelow => 'e tshetse ka tlase ho karolelano ya matsatsi a 200';
+  String get signalCrossedBelow =>
+      'e tshetse ka tlase ho karolelano ya matsatsi a 200';
 
   @override
   String get signalAlertsTitle => 'Ditsebiso tsa matshwao a botekgeniki';

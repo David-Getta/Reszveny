@@ -352,10 +352,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get errMissingAnthropicKey =>
-      'Chưa cấu hình nhận diện ảnh (thiếu ANTHROPIC_API_KEY). Hãy nhập mã cổ phiếu thủ công.';
+      'Phiên bản này không có tính năng nhận diện ảnh. Hãy nhập mã cổ phiếu thủ công.';
 
   @override
-  String get errRecognitionUnreachable => 'Không thể kết nối tới dịch vụ nhận diện. Hãy kiểm tra kết nối internet.';
+  String get errRecognitionUnreachable =>
+      'Không thể kết nối tới dịch vụ nhận diện. Hãy kiểm tra kết nối internet.';
 
   @override
   String errRecognitionHttp(String status) {
@@ -363,25 +364,31 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get errRecognitionRefused => 'Dịch vụ nhận diện không thể xử lý ảnh này.';
+  String get errRecognitionRefused =>
+      'Dịch vụ nhận diện không thể xử lý ảnh này.';
 
   @override
-  String get errRecognitionTruncated => 'Phản hồi nhận diện bị cắt ngắn. Vui lòng thử lại.';
+  String get errRecognitionTruncated =>
+      'Phản hồi nhận diện bị cắt ngắn. Vui lòng thử lại.';
 
   @override
-  String get errRecognitionBadResponse => 'Phản hồi không mong đợi từ dịch vụ nhận diện.';
+  String get errRecognitionBadResponse =>
+      'Phản hồi không mong đợi từ dịch vụ nhận diện.';
 
   @override
   String get errRecognitionEmpty => 'Dịch vụ nhận diện trả về phản hồi trống.';
 
   @override
-  String get errMissingFinnhubKey => 'Chưa cấu hình dữ liệu thị trường (thiếu FINNHUB_API_KEY).';
+  String get errMissingFinnhubKey =>
+      'Phiên bản này không có dữ liệu thị trường.';
 
   @override
-  String get errMarketUnreachable => 'Không thể kết nối tới dịch vụ dữ liệu thị trường. Hãy kiểm tra kết nối internet.';
+  String get errMarketUnreachable =>
+      'Không thể kết nối tới dịch vụ dữ liệu thị trường. Hãy kiểm tra kết nối internet.';
 
   @override
-  String get errMarketRateLimited => 'Quá nhiều yêu cầu tới dịch vụ dữ liệu thị trường. Vui lòng đợi một phút.';
+  String get errMarketRateLimited =>
+      'Quá nhiều yêu cầu tới dịch vụ dữ liệu thị trường. Vui lòng đợi một phút.';
 
   @override
   String errMarketHttp(String status) {
@@ -389,7 +396,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get errMarketBadResponse => 'Phản hồi không mong đợi từ dịch vụ dữ liệu thị trường.';
+  String get errMarketBadResponse =>
+      'Phản hồi không mong đợi từ dịch vụ dữ liệu thị trường.';
 
   @override
   String errNoQuote(String symbol) {
@@ -403,7 +411,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String errDemoUnsupportedSymbol(String symbols) {
-    return 'Chế độ demo chỉ hỗ trợ $symbols. Hãy thêm FINNHUB_API_KEY để có dữ liệu thực.';
+    return 'Bản demo này chỉ có dữ liệu mẫu cho $symbols.';
   }
 
   @override
@@ -489,7 +497,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get aiRegenerate => 'Tạo lại';
 
   @override
-  String get aiGenerating => 'Đang chuẩn bị phân tích… có thể mất một hoặc hai phút.';
+  String get aiGenerating =>
+      'Đang chuẩn bị phân tích… có thể mất một hoặc hai phút.';
 
   @override
   String get aiSources => 'Nguồn';
@@ -504,10 +513,11 @@ class AppLocalizationsVi extends AppLocalizations {
       'Phân tích do AI tạo dựa trên dữ liệu công khai và tin tức gần đây. Nội dung có thể sai hoặc lỗi thời và không phải là lời khuyên đầu tư.';
 
   @override
-  String get errAiNotConfigured => 'Chưa cấu hình phân tích AI (thiếu ANTHROPIC_API_KEY).';
+  String get errAiNotConfigured => 'Phiên bản này không có các tính năng AI.';
 
   @override
-  String get errAiUnreachable => 'Không thể kết nối tới dịch vụ AI. Hãy kiểm tra kết nối internet.';
+  String get errAiUnreachable =>
+      'Không thể kết nối tới dịch vụ AI. Hãy kiểm tra kết nối internet.';
 
   @override
   String errAiHttp(String status) {
@@ -539,7 +549,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get rangeFiveYears => '5N';
 
   @override
-  String get chartUnavailable => 'Nguồn dữ liệu hiện tại không cung cấp lịch sử giá.';
+  String get chartUnavailable =>
+      'Nguồn dữ liệu hiện tại không cung cấp lịch sử giá.';
 
   @override
   String get sectionStatements => 'Báo cáo tài chính (năm)';
@@ -566,7 +577,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get labelOperatingCashFlow => 'Dòng tiền từ hoạt động kinh doanh';
 
   @override
-  String get statementsUnavailable => 'Không có báo cáo tài chính đã công bố cho cổ phiếu này.';
+  String get statementsUnavailable =>
+      'Không có báo cáo tài chính đã công bố cho cổ phiếu này.';
 
   @override
   String get launchAtLogin => 'Khởi chạy khi đăng nhập';
@@ -596,7 +608,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get removeFromFavorites => 'Xóa khỏi yêu thích';
 
   @override
-  String get noFavorites => 'Chưa có mục yêu thích nào. Nhấn vào ngôi sao trên một cổ phiếu để thêm.';
+  String get noFavorites =>
+      'Chưa có mục yêu thích nào. Nhấn vào ngôi sao trên một cổ phiếu để thêm.';
 
   @override
   String get displayCurrency => 'Tiền tệ hiển thị';
@@ -643,7 +656,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get updateDownloading => 'Đang tải bản cập nhật trong nền…';
 
   @override
-  String get updateDownloaded => 'Bản cập nhật đã sẵn sàng. Khởi động lại để cài đặt.';
+  String get updateDownloaded =>
+      'Bản cập nhật đã sẵn sàng. Khởi động lại để cài đặt.';
 
   @override
   String get updateNow => 'Cập nhật';
@@ -652,7 +666,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get restartNow => 'Khởi động lại';
 
   @override
-  String get updatesViaStore => 'Các bản cập nhật được cung cấp tự động qua cửa hàng ứng dụng.';
+  String get updatesViaStore =>
+      'Các bản cập nhật được cung cấp tự động qua cửa hàng ứng dụng.';
 
   @override
   String get updateCheckFailed => 'Không thể kiểm tra bản cập nhật.';
@@ -700,7 +715,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get trialExpired => 'Thời gian dùng thử miễn phí đã kết thúc. Hãy chọn một gói để tiếp tục phân tích.';
+  String get trialExpired =>
+      'Thời gian dùng thử miễn phí đã kết thúc. Hãy chọn một gói để tiếp tục phân tích.';
 
   @override
   String analysesRemaining(int remaining, int total) {
@@ -772,7 +788,8 @@ class AppLocalizationsVi extends AppLocalizations {
       'Bạn đã hết lượt phân tích trong kỳ này. Hãy nâng cấp gói hoặc mua lượt phân tích bổ sung.';
 
   @override
-  String get errTrialExpired => 'Thời gian dùng thử miễn phí đã kết thúc. Hãy chọn một gói để tiếp tục.';
+  String get errTrialExpired =>
+      'Thời gian dùng thử miễn phí đã kết thúc. Hãy chọn một gói để tiếp tục.';
 
   @override
   String get errNoPlan => 'Cần có gói đang hoạt động để phân tích AI.';
@@ -784,7 +801,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get usageTitle => 'Mức sử dụng';
 
   @override
-  String get demoPurchaseNote => 'Thanh toán demo: các giao dịch mua trên nền tảng này chỉ là mô phỏng.';
+  String get demoPurchaseNote =>
+      'Thanh toán demo: các giao dịch mua trên nền tảng này chỉ là mô phỏng.';
 
   @override
   String get mostPopular => 'Phổ biến nhất';
@@ -824,7 +842,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get aiDepthStandardDesc => 'Báo cáo đầy đủ với mọi phần.';
 
   @override
-  String get aiDepthDeepDesc => 'Nhiều lượt tìm kiếm web hơn, so sánh với doanh nghiệp cùng ngành và chi tiết sâu hơn.';
+  String get aiDepthDeepDesc =>
+      'Nhiều lượt tìm kiếm web hơn, so sánh với doanh nghiệp cùng ngành và chi tiết sâu hơn.';
 
   @override
   String aiDepthWords(String min, String max) {
@@ -833,7 +852,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'dùng $count lượt phân tích');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'dùng $count lượt phân tích',
+    );
     return '$_temp0';
   }
 
@@ -847,10 +870,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get aiReaderExperienced => 'Có kinh nghiệm';
 
   @override
-  String get aiReaderBeginnerDesc => 'Ngôn ngữ dễ hiểu; mọi thuật ngữ chuyên môn đều được giải thích.';
+  String get aiReaderBeginnerDesc =>
+      'Ngôn ngữ dễ hiểu; mọi thuật ngữ chuyên môn đều được giải thích.';
 
   @override
-  String get aiReaderExperiencedDesc => 'Văn bản cô đọng hơn với thuật ngữ tài chính tiêu chuẩn.';
+  String get aiReaderExperiencedDesc =>
+      'Văn bản cô đọng hơn với thuật ngữ tài chính tiêu chuẩn.';
 
   @override
   String get aiCounterArgument => 'Lập luận phản bác mạnh nhất';
@@ -864,7 +889,8 @@ class AppLocalizationsVi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Tối đa $count lượt tìm kiếm web cho mỗi phân tích với gói của bạn',
+      other:
+          'Tối đa $count lượt tìm kiếm web cho mỗi phân tích với gói của bạn',
     );
     return '$_temp0';
   }
@@ -876,13 +902,21 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String aiWebSearchesShort(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'tối đa $count lượt tìm kiếm web');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'tối đa $count lượt tìm kiếm web',
+    );
     return '$_temp0';
   }
 
   @override
   String planWebSearches(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count lượt tìm kiếm web mỗi phân tích');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lượt tìm kiếm web mỗi phân tích',
+    );
     return '$_temp0';
   }
 
@@ -939,7 +973,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get upcomingEvents => 'Sự kiện sắp tới';
 
   @override
-  String get outlookChartNote => 'Các vùng giá chỉ mang tính tham khảo; xác suất là ước đoán sơ bộ, không phải dự báo.';
+  String get outlookChartNote =>
+      'Các vùng giá chỉ mang tính tham khảo; xác suất là ước đoán sơ bộ, không phải dự báo.';
 
   @override
   String get accountTitle => 'Tài khoản';
@@ -954,10 +989,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get notSignedIn => 'Chưa đăng nhập';
 
   @override
-  String get accountBenefit => 'Đăng nhập để gói đăng ký của bạn dùng được trên mọi thiết bị.';
+  String get accountBenefit =>
+      'Đăng nhập để gói đăng ký của bạn dùng được trên mọi thiết bị.';
 
   @override
-  String get accountSyncedNote => 'Gói đăng ký và số lượt phân tích còn lại của bạn giống nhau trên mọi thiết bị.';
+  String get accountSyncedNote =>
+      'Gói đăng ký và số lượt phân tích còn lại của bạn giống nhau trên mọi thiết bị.';
 
   @override
   String get signInTitle => 'Đăng nhập vào WhatStock';
@@ -989,13 +1026,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String get errInvalidEmail => 'Vui lòng nhập địa chỉ email hợp lệ.';
 
   @override
-  String get errSignInFailed => 'Đăng nhập không thành công. Hãy kiểm tra kết nối rồi thử lại.';
+  String get errSignInFailed =>
+      'Đăng nhập không thành công. Hãy kiểm tra kết nối rồi thử lại.';
 
   @override
-  String get checkoutWaiting => 'Hãy hoàn tất thanh toán trong trình duyệt. Ứng dụng sẽ tự động cập nhật khi xong.';
+  String get checkoutWaiting =>
+      'Hãy hoàn tất thanh toán trong trình duyệt. Ứng dụng sẽ tự động cập nhật khi xong.';
 
   @override
-  String get paymentViaStripe => 'Thanh toán an toàn trong trình duyệt qua Stripe. Hủy bất cứ lúc nào.';
+  String get paymentViaStripe =>
+      'Thanh toán an toàn trong trình duyệt qua Stripe. Hủy bất cứ lúc nào.';
 
   @override
   String get paymentViaStore =>
@@ -1008,7 +1048,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get doubleOptionTitle => 'Nhấn Option hai lần';
 
   @override
-  String get doubleOptionSubtitle => 'Nhấn nhanh phím Option hai lần cũng sẽ gọi WhatStock.';
+  String get doubleOptionSubtitle =>
+      'Nhấn nhanh phím Option hai lần cũng sẽ gọi WhatStock.';
 
   @override
   String get doubleOptionPermission =>
@@ -1030,7 +1071,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years năm');
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$years năm',
+    );
     return '$_temp0';
   }
 
@@ -1136,7 +1181,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get portfolioRemove => 'Xóa';
 
   @override
-  String get portfolioExcluded => 'Các vị thế không có giá hoặc tỷ giá sẽ không được tính vào tổng.';
+  String get portfolioExcluded =>
+      'Các vị thế không có giá hoặc tỷ giá sẽ không được tính vào tổng.';
 
   @override
   String get priceAlerts => 'Cảnh báo giá';
@@ -1178,7 +1224,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get alertsEmpty => 'Chưa có cảnh báo nào. Mở một cổ phiếu và nhấn vào biểu tượng chuông.';
+  String get alertsEmpty =>
+      'Chưa có cảnh báo nào. Mở một cổ phiếu và nhấn vào biểu tượng chuông.';
 
   @override
   String get alertsNote =>
@@ -1271,7 +1318,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get accountDeleted => 'Tài khoản của bạn đã bị xóa.';
 
   @override
-  String get errDeleteAccount => 'Không thể xóa tài khoản. Hãy kiểm tra kết nối và thử lại.';
+  String get errDeleteAccount =>
+      'Không thể xóa tài khoản. Hãy kiểm tra kết nối và thử lại.';
 
   @override
   String get aiTrialBriefNote =>
@@ -1308,7 +1356,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get inviteTitle => 'Bản xem trước giới hạn';
 
   @override
-  String get inviteBody => 'Hiện tại WhatStock chỉ dành cho người được mời. Hãy nhập mã mời bạn đã nhận được.';
+  String get inviteBody =>
+      'Hiện tại WhatStock chỉ dành cho người được mời. Hãy nhập mã mời bạn đã nhận được.';
 
   @override
   String get inviteCodeLabel => 'Mã mời';
@@ -1320,26 +1369,39 @@ class AppLocalizationsVi extends AppLocalizations {
   String get inviteInvalid => 'Mã mời này không hợp lệ.';
 
   @override
-  String get inviteExpired => 'Lời mời này đã hết hạn. Hãy xin mã mới từ người đã mời bạn.';
+  String get inviteExpired =>
+      'Lời mời này đã hết hạn. Hãy xin mã mới từ người đã mời bạn.';
 
   @override
-  String get inviteDeviceLimit => 'Mã mời này đã được dùng trên số thiết bị tối đa cho phép.';
+  String get inviteDeviceLimit =>
+      'Mã mời này đã được dùng trên số thiết bị tối đa cho phép.';
 
   @override
   String get previewConfidential => 'Bản xem trước bảo mật';
 
   @override
-  String get errPreviewDailyLimit => 'Bản xem trước này đã đạt giới hạn phân tích hôm nay. Hãy thử lại vào ngày mai.';
+  String get errPreviewDailyLimit =>
+      'Bản xem trước này đã đạt giới hạn phân tích hôm nay. Hãy thử lại vào ngày mai.';
 
   @override
   String ageHours(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count giờ trước', one: '1 giờ trước');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count giờ trước',
+      one: '1 giờ trước',
+    );
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count ngày trước', one: '1 ngày trước');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ngày trước',
+      one: '1 ngày trước',
+    );
     return '$_temp0';
   }
 
@@ -1374,7 +1436,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get keyLevelAlertHint => 'Nhấn vào một mức giá do AI ước tính để nhận cảnh báo khi giá chạm tới mức đó.';
+  String get keyLevelAlertHint =>
+      'Nhấn vào một mức giá do AI ước tính để nhận cảnh báo khi giá chạm tới mức đó.';
 
   @override
   String get shareAnalysisTitle => 'Chia sẻ phân tích';
@@ -1432,7 +1495,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get referralErrUnknown => 'Mã này không tồn tại. Hãy kiểm tra và thử lại.';
+  String get referralErrUnknown =>
+      'Mã này không tồn tại. Hãy kiểm tra và thử lại.';
 
   @override
   String get referralErrOwn => 'Bạn không thể đổi mã của chính mình.';
@@ -1549,17 +1613,23 @@ class AppLocalizationsVi extends AppLocalizations {
   String get askSuggest3 => 'Giải thích một cách đơn giản';
 
   @override
-  String get askMaxReached => 'Đó là câu hỏi cuối cùng cho phân tích này. Hãy tạo phân tích mới để hỏi thêm.';
+  String get askMaxReached =>
+      'Đó là câu hỏi cuối cùng cho phân tích này. Hãy tạo phân tích mới để hỏi thêm.';
 
   @override
-  String get errAskLimit => 'Bạn đã đạt giới hạn câu hỏi hôm nay. Hãy thử lại vào ngày mai.';
+  String get errAskLimit =>
+      'Bạn đã đạt giới hạn câu hỏi hôm nay. Hãy thử lại vào ngày mai.';
 
   @override
   String get eventTomorrow => 'Ngày mai';
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days ngày nữa');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ngày nữa',
+    );
     return '$_temp0';
   }
 
@@ -1584,7 +1654,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get eventDividend => 'Dự kiến có cổ tức';
 
   @override
-  String get eventDividendEstimate => 'Ước tính từ các khoản chi trả bạn đã ghi lại';
+  String get eventDividendEstimate =>
+      'Ước tính từ các khoản chi trả bạn đã ghi lại';
 
   @override
   String get eventsHint =>
@@ -1643,7 +1714,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get notesTitle => 'Ghi chú của tôi';
 
   @override
-  String get notesHint => 'Vì sao bạn mua, bạn đang theo dõi điều gì, điều gì sẽ khiến bạn bán?';
+  String get notesHint =>
+      'Vì sao bạn mua, bạn đang theo dõi điều gì, điều gì sẽ khiến bạn bán?';
 
   @override
   String get notesInfo =>
@@ -1693,7 +1765,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get syncInfo => 'Danh mục, mục yêu thích, cảnh báo giá và ghi chú được đồng bộ hóa trên mọi thiết bị của bạn.';
+  String get syncInfo =>
+      'Danh mục, mục yêu thích, cảnh báo giá và ghi chú được đồng bộ hóa trên mọi thiết bị của bạn.';
 
   @override
   String syncLast(String time) {
@@ -1704,7 +1777,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get syncNow => 'Đồng bộ hóa ngay';
 
   @override
-  String get syncFailed => 'Đồng bộ hóa không thành công. Ứng dụng sẽ tự động thử lại.';
+  String get syncFailed =>
+      'Đồng bộ hóa không thành công. Ứng dụng sẽ tự động thử lại.';
 
   @override
   String get alertEmailTitle => 'Gửi email khi cảnh báo được kích hoạt';
@@ -1833,7 +1907,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get glossMarketCap => 'Giá trị của toàn bộ công ty trên thị trường chứng khoán: giá cổ phiếu × số cổ phiếu.';
+  String get glossMarketCap =>
+      'Giá trị của toàn bộ công ty trên thị trường chứng khoán: giá cổ phiếu × số cổ phiếu.';
 
   @override
   String get glossSharesOutstanding =>
@@ -1872,10 +1947,12 @@ class AppLocalizationsVi extends AppLocalizations {
       'Cổ phiếu thường biến động theo thị trường đến mức nào: 1 = như thị trường, 1,5 = dao động lớn hơn khoảng 50%, dưới 1 = ổn định hơn.';
 
   @override
-  String get glossRevenueTtm => 'Tổng doanh số 12 tháng qua, trước mọi chi phí.';
+  String get glossRevenueTtm =>
+      'Tổng doanh số 12 tháng qua, trước mọi chi phí.';
 
   @override
-  String get glossNetIncomeTtm => 'Lợi nhuận còn lại sau mọi chi phí, lãi vay và thuế trong 12 tháng qua.';
+  String get glossNetIncomeTtm =>
+      'Lợi nhuận còn lại sau mọi chi phí, lãi vay và thuế trong 12 tháng qua.';
 
   @override
   String get glossGrossMargin =>
@@ -1906,17 +1983,20 @@ class AppLocalizationsVi extends AppLocalizations {
       'Tài sản ngắn hạn ÷ các khoản phải trả trong vòng một năm. Trên 1 nghĩa là công ty có thể trang trải các khoản phải trả sắp tới.';
 
   @override
-  String get glossRevenueGrowth => 'Doanh thu đã tăng bao nhiêu so với một năm trước.';
+  String get glossRevenueGrowth =>
+      'Doanh thu đã tăng bao nhiêu so với một năm trước.';
 
   @override
-  String get glossEpsGrowth => 'Lợi nhuận trên mỗi cổ phiếu đã tăng bao nhiêu so với một năm trước.';
+  String get glossEpsGrowth =>
+      'Lợi nhuận trên mỗi cổ phiếu đã tăng bao nhiêu so với một năm trước.';
 
   @override
   String get glossDividendYield =>
       'Cổ tức hằng năm ÷ giá cổ phiếu: thu nhập tiền mặt bạn nhận được mỗi năm, tính theo phần trăm số tiền bạn bỏ ra.';
 
   @override
-  String get glossDividendPerShare => 'Cổ tức đã trả cho một cổ phiếu trong năm qua.';
+  String get glossDividendPerShare =>
+      'Cổ tức đã trả cho một cổ phiếu trong năm qua.';
 
   @override
   String get glossPayoutRatio =>
@@ -1969,7 +2049,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get watchSortName => 'Theo mã (A–Z)';
 
   @override
-  String get watchHint => 'Kéo tay cầm để sắp xếp lại, vuốt sang trái để xóa. Đường kẻ hiển thị 30 ngày qua.';
+  String get watchHint =>
+      'Kéo tay cầm để sắp xếp lại, vuốt sang trái để xóa. Đường kẻ hiển thị 30 ngày qua.';
 
   @override
   String analysisReady(String symbol) {
@@ -2076,7 +2157,12 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String holdingsAdd(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'Thêm $count vị thế', one: 'Thêm 1 vị thế');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Thêm $count vị thế',
+      one: 'Thêm 1 vị thế',
+    );
     return '$_temp0';
   }
 
@@ -2125,13 +2211,23 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count lần mua', one: '1 lần mua');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lần mua',
+      one: '1 lần mua',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count lần bán', one: '1 lần bán');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lần bán',
+      one: '1 lần bán',
+    );
     return '$_temp0';
   }
 
@@ -2151,7 +2247,8 @@ class AppLocalizationsVi extends AppLocalizations {
       'Các giao dịch mua và bán trên thị trường mở của lãnh đạo và thành viên hội đồng quản trị trong 90 ngày qua (SEC Form 4). Không tính thực hiện quyền chọn và cổ phiếu thưởng.';
 
   @override
-  String get insiderNone => 'Không có giao dịch mua hoặc bán nội bộ trên thị trường mở trong 90 ngày qua.';
+  String get insiderNone =>
+      'Không có giao dịch mua hoặc bán nội bộ trên thị trường mở trong 90 ngày qua.';
 
   @override
   String get analystTrend => 'Ý kiến thay đổi thế nào qua từng tháng';
@@ -2175,7 +2272,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get watchListAddTo => 'Thêm vào danh sách';
 
   @override
-  String get watchListEmpty => 'Danh sách này chưa có cổ phiếu nào. Nhấn nút danh sách bên cạnh cổ phiếu để thêm.';
+  String get watchListEmpty =>
+      'Danh sách này chưa có cổ phiếu nào. Nhấn nút danh sách bên cạnh cổ phiếu để thêm.';
 
   @override
   String get portfolioAskTitle => 'Câu hỏi về danh mục của bạn';
@@ -2190,13 +2288,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get backupSave => 'Lưu bản sao lưu';
 
   @override
-  String get backupSaveHint => 'Mục yêu thích, danh sách, danh mục, cảnh báo và ghi chú của bạn trong một tệp.';
+  String get backupSaveHint =>
+      'Mục yêu thích, danh sách, danh mục, cảnh báo và ghi chú của bạn trong một tệp.';
 
   @override
   String get backupRestore => 'Khôi phục từ bản sao lưu';
 
   @override
-  String get backupRestoreHint => 'Thêm nội dung trong tệp; không có gì bạn đang có bị xóa.';
+  String get backupRestoreHint =>
+      'Thêm nội dung trong tệp; không có gì bạn đang có bị xóa.';
 
   @override
   String get backupRestored => 'Đã khôi phục bản sao lưu.';
@@ -2315,7 +2415,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get portfolioMoveAlertTitle => 'Cảnh báo danh mục';
 
   @override
-  String get portfolioMoveAlertSubtitle => 'Thông báo khi toàn bộ danh mục của bạn biến động chừng này trong một ngày.';
+  String get portfolioMoveAlertSubtitle =>
+      'Thông báo khi toàn bộ danh mục của bạn biến động chừng này trong một ngày.';
 
   @override
   String get portfolioMoveAlertOff => 'Tắt';
@@ -2487,11 +2588,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String get portfolioTopHoldings => 'Vị thế lớn nhất';
 
   @override
-  String get portfolioShareNote => 'Chỉ chia sẻ tỷ lệ phần trăm, không có số tiền.';
+  String get portfolioShareNote =>
+      'Chỉ chia sẻ tỷ lệ phần trăm, không có số tiền.';
 
   @override
   String portfolioPositionsCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count vị thế');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vị thế',
+    );
     return '$_temp0';
   }
 
@@ -2507,7 +2613,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get contributionHint => 'Chỉ mua, không bán: các vị thế thấp hơn mục tiêu nhiều nhất sẽ nhận tiền trước.';
+  String get contributionHint =>
+      'Chỉ mua, không bán: các vị thế thấp hơn mục tiêu nhiều nhất sẽ nhận tiền trước.';
 
   @override
   String contributionShares(String shares) {
@@ -2596,10 +2703,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lotNoteAdd => 'Thêm ghi chú';
 
   @override
-  String get lotNoteBuyHint => 'Vì sao bạn mua? Nội dung sẽ được thêm vào ghi chú của cổ phiếu, kèm ngày.';
+  String get lotNoteBuyHint =>
+      'Vì sao bạn mua? Nội dung sẽ được thêm vào ghi chú của cổ phiếu, kèm ngày.';
 
   @override
-  String get lotNoteSellHint => 'Vì sao bạn bán? Nội dung sẽ được thêm vào ghi chú của cổ phiếu, kèm ngày.';
+  String get lotNoteSellHint =>
+      'Vì sao bạn bán? Nội dung sẽ được thêm vào ghi chú của cổ phiếu, kèm ngày.';
 
   @override
   String get lotNoteBought => 'Đã mua';
@@ -2609,13 +2718,21 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months tháng');
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months tháng',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days ngày');
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ngày',
+    );
     return '$_temp0';
   }
 
@@ -2703,7 +2820,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get referralErrSignIn => 'Đăng nhập bằng email để đổi mã của một người bạn.';
+  String get referralErrSignIn =>
+      'Đăng nhập bằng email để đổi mã của một người bạn.';
 
   @override
   String get referralErrFull => 'Mã này đã được đổi đủ số lần tối đa.';
@@ -2718,10 +2836,12 @@ class AppLocalizationsVi extends AppLocalizations {
       'Bài phân tích bị cắt ngang trước khi hoàn tất. Vui lòng thử lại – lượt này không trừ vào hạn mức của bạn.';
 
   @override
-  String get errImageUnsupported => 'Không thể đọc ảnh này. Hãy lưu ảnh dưới dạng JPEG hoặc PNG rồi thử lại.';
+  String get errImageUnsupported =>
+      'Không thể đọc ảnh này. Hãy lưu ảnh dưới dạng JPEG hoặc PNG rồi thử lại.';
 
   @override
-  String get errRateLimited => 'Quá nhiều yêu cầu trong thời gian ngắn. Vui lòng đợi một phút rồi thử lại.';
+  String get errRateLimited =>
+      'Quá nhiều yêu cầu trong thời gian ngắn. Vui lòng đợi một phút rồi thử lại.';
 
   @override
   String get watchListNameTaken => 'Đã có danh sách với tên này.';
@@ -2737,7 +2857,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get restoreNothing => 'Không tìm thấy giao dịch mua trước đây nào để khôi phục.';
+  String get restoreNothing =>
+      'Không tìm thấy giao dịch mua trước đây nào để khôi phục.';
 
   @override
   String get manageSubscriptionElsewhere =>
@@ -2751,7 +2872,8 @@ class AppLocalizationsVi extends AppLocalizations {
       'Dữ liệu của bạn quá lớn để đồng bộ hóa với tài khoản. Hãy xóa các giao dịch hoặc ghi chú không còn cần đến, ứng dụng sẽ thử lại.';
 
   @override
-  String get noteFull => 'Ghi chú của cổ phiếu này đã đầy nên mục này chưa được thêm. Hãy rút gọn ghi chú rồi thử lại.';
+  String get noteFull =>
+      'Ghi chú của cổ phiếu này đã đầy nên mục này chưa được thêm. Hãy rút gọn ghi chú rồi thử lại.';
 
   @override
   String portfolioNoRateFor(String symbols) {
@@ -2763,8 +2885,10 @@ class AppLocalizationsVi extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count khoản cổ tức bằng $currencies không có tỷ giá nên không được tính vào tổng.',
-      one: '1 khoản cổ tức bằng $currencies không có tỷ giá nên không được tính vào tổng.',
+      other:
+          '$count khoản cổ tức bằng $currencies không có tỷ giá nên không được tính vào tổng.',
+      one:
+          '1 khoản cổ tức bằng $currencies không có tỷ giá nên không được tính vào tổng.',
     );
     return '$_temp0';
   }
@@ -2877,7 +3001,8 @@ class AppLocalizationsVi extends AppLocalizations {
       'Thông tin chung do AI tạo về cơ cấu danh mục của bạn. Nội dung không xét đến mục tiêu, tình hình tài chính hay tình hình thuế của bạn và không phải là khuyến nghị cá nhân hay lời khuyên đầu tư.';
 
   @override
-  String get briefNotificationTitle => 'Tóm tắt AI · Hôm nay với cổ phiếu của bạn';
+  String get briefNotificationTitle =>
+      'Tóm tắt AI · Hôm nay với cổ phiếu của bạn';
 
   @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
@@ -3035,7 +3160,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get portfolioSplitRatio => 'Tỷ lệ (mới : cũ)';
 
   @override
-  String get portfolioSplitRatioError => 'Nhập tỷ lệ như 10:1, hoặc 1:10 cho chia tách ngược (gộp cổ phiếu).';
+  String get portfolioSplitRatioError =>
+      'Nhập tỷ lệ như 10:1, hoặc 1:10 cho chia tách ngược (gộp cổ phiếu).';
 
   @override
   String get portfolioSplitDate => 'Ngày chia tách';
@@ -3158,7 +3284,8 @@ class AppLocalizationsVi extends AppLocalizations {
       'Trung bình 50 ngày nằm trên trung bình 200 ngày – xu hướng tăng theo cách đọc cổ điển.';
 
   @override
-  String get techDeathCross => 'Trung bình 50 ngày nằm dưới trung bình 200 ngày – xu hướng giảm theo cách đọc cổ điển.';
+  String get techDeathCross =>
+      'Trung bình 50 ngày nằm dưới trung bình 200 ngày – xu hướng giảm theo cách đọc cổ điển.';
 
   @override
   String get glossSma50 =>
@@ -3177,7 +3304,8 @@ class AppLocalizationsVi extends AppLocalizations {
       'Mức độ giá dao động từ ngày này sang ngày khác, quy ra một năm: 20% nghĩa là trong một năm thông thường giá dao động trong khoảng ±20%. Biến động càng cao thì biên độ dao động hai chiều càng lớn.';
 
   @override
-  String get techNote => 'Tính từ giá đóng cửa hàng ngày. Tín hiệu kỹ thuật mô tả quá khứ, không phải tương lai.';
+  String get techNote =>
+      'Tính từ giá đóng cửa hàng ngày. Tín hiệu kỹ thuật mô tả quá khứ, không phải tương lai.';
 
   @override
   String portfolioAbove200(int above, int count) {
@@ -3217,7 +3345,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get glossaryPageTitle => 'Bảng thuật ngữ';
 
   @override
-  String get glossaryPageSubtitle => 'Giải thích đơn giản mọi chỉ số ứng dụng hiển thị, từ P/E đến RSI';
+  String get glossaryPageSubtitle =>
+      'Giải thích đơn giản mọi chỉ số ứng dụng hiển thị, từ P/E đến RSI';
 
   @override
   String get glossarySearchHint => 'Tìm trong bảng thuật ngữ';
