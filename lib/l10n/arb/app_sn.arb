@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Pfupiso yeAI · Nhasi nemasheya ako",
   "favoriteRemoved": "{symbol} yabviswa pane zvaunofarira",
   "listItemRemoved": "{symbol} yabviswa pa {list}",
-  "watchListDeleted": "Rondedzero yadzimwa: {list}"
+  "watchListDeleted": "Rondedzero yadzimwa: {list}",
+  "sharedToClipboard": "Zvakopwa paclipboard – zvinamatidze paunoda kuzvigovera.",
+  "glossaryNoMatch": "Hapana izwi rinoenderana nezvawatsvaga.",
+  "cashInvalidAmount": "Nyora huwandu hwe 0 kana kupfuura.",
+  "portfolioImportNothing": "Hapana kutenga kana kutengesa kwakwanisa kuverengwa muchinyorwa ichi. Tarisa kuti mutsara wega wega wakaita semuenzaniso.",
+  "lotPriceFarFromQuote": "Mutengo uyu uri kure kwazvo nemutengo wanhasi ({price}). Utarise, kana kuti uchengetedze zvakare kana wakarurama."
 }

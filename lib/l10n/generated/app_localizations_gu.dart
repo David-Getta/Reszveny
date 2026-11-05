@@ -2292,6 +2292,25 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'ક્લિપબોર્ડ પર કૉપિ થયું – જ્યાં શેર કરવું હોય ત્યાં પેસ્ટ કરો.';
+
+  @override
+  String get glossaryNoMatch => 'તમારી શોધ સાથે કોઈ શબ્દ મેળ ખાતો નથી.';
+
+  @override
+  String get cashInvalidAmount => '0 અથવા વધુ રકમ દાખલ કરો.';
+
+  @override
+  String get portfolioImportNothing =>
+      'આ ટેક્સ્ટમાંથી કોઈ વ્યવહાર વાંચી શકાયો નથી. દરેક લાઇન ઉદાહરણ જેવી દેખાય છે કે નહીં તે તપાસો.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'આ આજના ભાવ ($price) થી ઘણું અલગ છે. તપાસો, અથવા સાચું હોય તો ફરી સાચવો.';
+  }
+
+  @override
   String get portfolioAskTitle => 'તમારા પોર્ટફોલિયો વિશે પ્રશ્નો';
 
   @override

@@ -2307,6 +2307,25 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Copiat al porta-retalls – enganxa’l on vulguis compartir-lo.';
+
+  @override
+  String get glossaryNoMatch => 'Cap terme no coincideix amb la teva cerca.';
+
+  @override
+  String get cashInvalidAmount => 'Introdueix un import de 0 o més.';
+
+  @override
+  String get portfolioImportNothing =>
+      'No s’ha pogut llegir cap transacció d’aquest text. Comprova que cada línia sigui com l’exemple.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Està molt lluny del preu d’avui ($price). Comprova-ho o desa de nou si és correcte.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Preguntes sobre la teva cartera';
 
   @override

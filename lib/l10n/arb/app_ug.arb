@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI خۇلاسىسى · بۈگۈن پايچېكلىرىڭىز بىلەن",
   "favoriteRemoved": "{symbol} يىغقۇچتىن چىقىرىۋېتىلدى",
   "listItemRemoved": "{symbol} {list} تىزىملىكىدىن چىقىرىۋېتىلدى",
-  "watchListDeleted": "تىزىملىك ئۆچۈرۈلدى: {list}"
+  "watchListDeleted": "تىزىملىك ئۆچۈرۈلدى: {list}",
+  "sharedToClipboard": "چاپلاش تاختىسىغا كۆچۈرۈلدى – ھەمبەھىرلىمەكچى بولغان يەرگە چاپلاڭ.",
+  "glossaryNoMatch": "ئىزدىشىڭىزگە ماس كېلىدىغان ئاتالغۇ يوق.",
+  "cashInvalidAmount": "0 ياكى ئۇنىڭدىن چوڭ سومما كىرگۈزۈڭ.",
+  "portfolioImportNothing": "بۇ تېكىستتىن ھېچقانداق سودا ئوقۇلمىدى. ھەر بىر قۇرنىڭ مىسالدىكىدەك ئىكەنلىكىنى تەكشۈرۈڭ.",
+  "lotPriceFarFromQuote": "بۇ بۈگۈنكى باھادىن ({price}) بەك پەرقلىق. ئۇنى تەكشۈرۈڭ ياكى توغرا بولسا قايتا ساقلاڭ."
 }

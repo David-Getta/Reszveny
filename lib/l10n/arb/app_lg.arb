@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Ebifunze bya AI · Leero ne sitoowa zo",
   "favoriteRemoved": "{symbol} kiggyiddwa ku by'oyagala",
   "listItemRemoved": "{symbol} kiggyiddwa ku {list}",
-  "watchListDeleted": "Olukalala lusanguddwawo: {list}"
+  "watchListDeleted": "Olukalala lusanguddwawo: {list}",
+  "sharedToClipboard": "Kikoppoddwa – kiteeke wonna w'oyagala okukigabana.",
+  "glossaryNoMatch": "Tewali kigambo kikwatagana n'ky'onoonya.",
+  "cashInvalidAmount": "Yingiza omuwendo gwa 0 oba okusingawo.",
+  "portfolioImportNothing": "Tewali kyaguliddwa oba ekyatundiddwa ekisobodde okusomebwa mu biwandiiko bino. Kebera nti buli lunyiriri lufaanana ng'ekyokulabirako.",
+  "lotPriceFarFromQuote": "Kino kiri wala nnyo ku bbeeyi ya leero ({price}). Kikebere, oba tereka nate bwe kiba nga kituufu."
 }

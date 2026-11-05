@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI koe-bõonga · Rũndã ne f aksɩyõnã",
   "favoriteRemoved": "{symbol} yiisame nong-n-yɩɩda pʋgẽ",
   "listItemRemoved": "{symbol} yiisame {list} pʋgẽ",
-  "watchListDeleted": "Listã yẽesame: {list}"
+  "watchListDeleted": "Listã yẽesame: {list}",
+  "sharedToClipboard": "Gʋlsgã lebs n gʋlsame – ning-a zĩig ning f sẽn dat n pʋɩ-a.",
+  "glossaryNoMatch": "Gom-biig ka zems ne f sẽn bao wã ye.",
+  "cashInvalidAmount": "Gʋls ligd sõor sẽn yaa 0 bɩ sẽn yɩɩd-a.",
+  "portfolioImportNothing": "B ka tõog n karem raab bɩ koosg gʋlsg kãngã pʋgẽ ye. Ges tɩ sẽ fãa wõnda makr wã.",
+  "lotPriceFarFromQuote": "Ligdã zãra ne rũndã ligdã ({price}) wʋsgo. Ges-a, bɩ f le bĩng-a sã n yaa sɩda."
 }

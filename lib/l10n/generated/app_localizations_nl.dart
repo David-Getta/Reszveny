@@ -2305,6 +2305,25 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Gekopieerd naar het klembord – plak het waar je het wilt delen.';
+
+  @override
+  String get glossaryNoMatch => 'Geen begrippen gevonden voor je zoekopdracht.';
+
+  @override
+  String get cashInvalidAmount => 'Voer een bedrag van 0 of meer in.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Er konden geen transacties uit deze tekst worden gelezen. Controleer of elke regel eruitziet als het voorbeeld.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Dit wijkt sterk af van de koers van vandaag ($price). Controleer het, of sla opnieuw op als het klopt.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Vragen over je portefeuille';
 
   @override

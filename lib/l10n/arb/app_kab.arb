@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Agzul s AI · Ass-a d tigemmi-k",
   "favoriteRemoved": "{symbol} yettwakkes seg yismenyifen",
   "listItemRemoved": "{symbol} yettwakkes seg {list}",
-  "watchListDeleted": "Tabdart tettwakkes: {list}"
+  "watchListDeleted": "Tabdart tettwakkes: {list}",
+  "sharedToClipboard": "Yettwanɣel ɣer tecfawt – senṭeḍ-it anida tebɣiḍ ad t-tebḍuḍ.",
+  "glossaryNoMatch": "Ulac awal yemṣadan d unadi-ik.",
+  "cashInvalidAmount": "Sekcem azal n 0 neɣ ugar.",
+  "portfolioImportNothing": "Ulac tiɣin neɣ aznuzu i yettwaɣran seg uḍris-a. Senqed ma yal izirig am umedya.",
+  "lotPriceFarFromQuote": "Aya yebɛed ɣef ssuma n wass-a ({price}). Senqed-it, neɣ sekles tikkelt-nniḍen ma yeṣṣeḥ."
 }

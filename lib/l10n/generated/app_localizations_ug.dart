@@ -2300,6 +2300,25 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'چاپلاش تاختىسىغا كۆچۈرۈلدى – ھەمبەھىرلىمەكچى بولغان يەرگە چاپلاڭ.';
+
+  @override
+  String get glossaryNoMatch => 'ئىزدىشىڭىزگە ماس كېلىدىغان ئاتالغۇ يوق.';
+
+  @override
+  String get cashInvalidAmount => '0 ياكى ئۇنىڭدىن چوڭ سومما كىرگۈزۈڭ.';
+
+  @override
+  String get portfolioImportNothing =>
+      'بۇ تېكىستتىن ھېچقانداق سودا ئوقۇلمىدى. ھەر بىر قۇرنىڭ مىسالدىكىدەك ئىكەنلىكىنى تەكشۈرۈڭ.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'بۇ بۈگۈنكى باھادىن ($price) بەك پەرقلىق. ئۇنى تەكشۈرۈڭ ياكى توغرا بولسا قايتا ساقلاڭ.';
+  }
+
+  @override
   String get portfolioAskTitle => 'مەبلەغ بىرىكمىڭىز ھەققىدىكى سوئاللار';
 
   @override

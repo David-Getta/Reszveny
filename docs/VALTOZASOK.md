@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.312)
+# Változásjegyzék (0.2.130 → 0.2.313)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,27 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Második böngészős végigjátszás: keskeny kijelző, import, megosztás
+
+- **0.2.313**: a „Visszavonás” gomb az üzenetsávon világos témában is látszik (eddig fehér volt a világos
+  háttéren, minden visszavonható műveletnél).
+- Fejléc nélküli CSV-ben az eladás minden ismert szóval eladás („eladás”, „Sold”, „Verkauf”); az ismeretlen
+  irányú és a jövőbeli dátumú sor kimarad (eddig vételként, illetve már most tartott részvényként került be).
+  Ha semmi nem olvasható be, az ablak nyitva marad a beillesztett szöveggel.
+- Asztalon az oldalsáv oldalai nem halmozódnak: akárhányszor kattintasz, egy Vissza a kezdőlapra visz.
+- Keskeny kijelzőn és nagyításnál: a keresőmező gombjai a mező alá kerülnek, ha különben a szöveg nem
+  látszana; a kapcsolósávok (téma, elemzés hossza) és az összehasonlítás címkéi nem törnek szó közben; a
+  kártyák kiegészítője és a pozíciók összegei a cím, illetve a név alá kerülnek, nem zsugorodnak
+  olvashatatlanra; a hibaüzenetek több sorban látszanak.
+- Összehasonlítás telefonon: az oszlopok a kijelzőhöz igazodnak (három részvény is elfér), egérrel is húzható
+  oldalra, és árfolyam nélküli ticker nem kerül be („nincs találat”).
+- Weben, ha a böngészőnek nincs megosztás-menüje, a megosztandó szöveg a vágólapra kerül (eddig egy üres
+  e-mail ablak villant fel); a jegyzet a fül bezárásakor is elmentődik.
+- A dátumok ugyanazzal a számjegy-rendszerrel jelennek meg, mint mellettük az összegek.
+- Apróságok: a mai ártól tízszer eltérő vételi ár egyszer rákérdez; a célallokáció 0–100%-on kívüli értéke
+  jelölve van és nem menthető; a szójegyzék üres keresésre kiírja, hogy nincs találat; a készpénz-ablak 0-t
+  is elfogad, és ehhez illő hibát ír. Minden új szöveg 120 nyelven.
 
 ## Lapok, billentyűzet és fordítások
 

@@ -2298,6 +2298,25 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Nĩ yakobĩo – ĩkĩra o kũrĩa kũrĩa ũkwenda kũgayana.';
+
+  @override
+  String get glossaryNoMatch => 'Gũtirĩ kiugo kĩhaana na ũrĩa ũracaria.';
+
+  @override
+  String get cashInvalidAmount => 'Andĩka mũigana wa 0 kana makĩria.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Gũtirĩ ũgũri kana ũendia ũngĩathomeka kuuma mandĩko-inĩ maya. Rora atĩ o mũhari ũhaana ta kĩonereria.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Thogora ũyũ ũraihanĩte mũno na wa ũmũthĩ ($price). Ũthuthurie, kana ũige rĩngĩ angĩkorwo nĩ wa ma.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Ciũria igiĩ hisa ciaku';
 
   @override

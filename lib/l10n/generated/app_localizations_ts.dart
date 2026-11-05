@@ -2315,6 +2315,26 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Swi kopiwile eka klipibodi – swi namarhete laha u lavaka ku swi avelana kona.';
+
+  @override
+  String get glossaryNoMatch =>
+      'A ku na rito leri fambelanaka ni leswi u swi laveke.';
+
+  @override
+  String get cashInvalidAmount => 'Nghenisa ntsengo wa 0 kumbe ku tlula.';
+
+  @override
+  String get portfolioImportNothing =>
+      'A ku na xixaviwa kumbe xixavisiwa lexi koteke ku hlayiwa eka tsalwa leri. Kambela leswaku layini yin\'wana ni yin\'wana yi fana ni xikombiso.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Nxavo lowu wu le kule swinene na nxavo wa namuntlha ($price). Wu kambela, kumbe u wu hlayisa nakambe loko wu lulamile.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Swivutiso hi phothifoliyo ya wena';
 
   @override

@@ -2309,6 +2309,25 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Ekopiami – tya yango esika nyonso olingi kokabola yango.';
+
+  @override
+  String get glossaryNoMatch => 'Liloba moko te ekokani na oyo ozali koluka.';
+
+  @override
+  String get cashInvalidAmount => 'Kotisa motuya ya 0 to koleka.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Tokokaki kotánga bosombi to boteki ata moko na makomi oyo te. Tala soki molɔngɔ mokomoko ezali lokola ndakisa.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Yango ezali mosika mingi na ntalo ya lelo ($price). Talá yango, to bomba lisusu soki ezali sembo.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Mituna na ntina ya portefeuille na yo';
 
   @override

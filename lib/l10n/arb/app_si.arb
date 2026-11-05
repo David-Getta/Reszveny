@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI සාරාංශය · අද ඔබේ කොටස් සමඟ",
   "favoriteRemoved": "{symbol} ප්‍රියතමවලින් ඉවත් කරන ලදී",
   "listItemRemoved": "{symbol} {list} වෙතින් ඉවත් කරන ලදී",
-  "watchListDeleted": "ලැයිස්තුව මකා දමන ලදී: {list}"
+  "watchListDeleted": "ලැයිස්තුව මකා දමන ලදී: {list}",
+  "sharedToClipboard": "පසුරු පුවරුවට පිටපත් කළා – බෙදාගැනීමට අවශ්‍ය ඕනෑම තැනක අලවන්න.",
+  "glossaryNoMatch": "ඔබගේ සෙවුමට ගැළපෙන පද නැත.",
+  "cashInvalidAmount": "0 හෝ ඊට වැඩි මුදලක් ඇතුළු කරන්න.",
+  "portfolioImportNothing": "මෙම පෙළෙන් කිසිදු ගනුදෙනුවක් කියවිය නොහැකි විය. සෑම පේළියක්ම උදාහරණය මෙන් දැයි පරීක්ෂා කරන්න.",
+  "lotPriceFarFromQuote": "මෙය අද මිලට ({price}) වඩා බොහෝ වෙනස් ය. එය පරීක්ෂා කරන්න, නැතහොත් නිවැරදි නම් නැවත සුරකින්න."
 }

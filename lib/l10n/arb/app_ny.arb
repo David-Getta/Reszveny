@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Chidule cha AI · Lero ndi masheya anu",
   "favoriteRemoved": "{symbol} yachotsedwa ku zokondedwa",
   "listItemRemoved": "{symbol} yachotsedwa ku {list}",
-  "watchListDeleted": "Mndandanda wachotsedwa: {list}"
+  "watchListDeleted": "Mndandanda wachotsedwa: {list}",
+  "sharedToClipboard": "Zakopedwa pa clipboard – matani kulikonse komwe mukufuna kugawana.",
+  "glossaryNoMatch": "Palibe mawu ofanana ndi zomwe mwasaka.",
+  "cashInvalidAmount": "Lembani ndalama ya 0 kapena kupitirira.",
+  "portfolioImportNothing": "Palibe zogula kapena zogulitsa zomwe zawerengedwa m'mawu awa. Onetsetsani kuti mzere uliwonse ukufanana ndi chitsanzo.",
+  "lotPriceFarFromQuote": "Mtengo uwu uli kutali kwambiri ndi mtengo wa lero ({price}). Uyang'aneni, kapena musungenso ngati uli wolondola."
 }

@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Tóm tắt AI · Hôm nay với cổ phiếu của bạn",
   "favoriteRemoved": "Đã xóa {symbol} khỏi yêu thích",
   "listItemRemoved": "Đã xóa {symbol} khỏi {list}",
-  "watchListDeleted": "Đã xóa danh sách: {list}"
+  "watchListDeleted": "Đã xóa danh sách: {list}",
+  "sharedToClipboard": "Đã sao chép vào bảng tạm – hãy dán vào nơi bạn muốn chia sẻ.",
+  "glossaryNoMatch": "Không có thuật ngữ nào khớp với tìm kiếm của bạn.",
+  "cashInvalidAmount": "Hãy nhập số tiền từ 0 trở lên.",
+  "portfolioImportNothing": "Không đọc được giao dịch nào từ văn bản này. Hãy kiểm tra xem mỗi dòng có giống ví dụ không.",
+  "lotPriceFarFromQuote": "Giá này chênh lệch nhiều so với giá hôm nay ({price}). Hãy kiểm tra lại, hoặc lưu lần nữa nếu đúng."
 }

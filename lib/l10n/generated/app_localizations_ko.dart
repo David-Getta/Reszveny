@@ -2232,6 +2232,24 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard => '클립보드에 복사했습니다. 공유하려는 곳에 붙여 넣으세요.';
+
+  @override
+  String get glossaryNoMatch => '검색어와 일치하는 용어가 없습니다.';
+
+  @override
+  String get cashInvalidAmount => '0 이상의 금액을 입력하세요.';
+
+  @override
+  String get portfolioImportNothing =>
+      '이 텍스트에서 거래를 읽을 수 없습니다. 각 줄이 예시와 같은 형식인지 확인하세요.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return '오늘 가격($price)과 차이가 큽니다. 확인하거나, 맞다면 다시 저장하세요.';
+  }
+
+  @override
   String get portfolioAskTitle => '내 포트폴리오에 대한 질문';
 
   @override

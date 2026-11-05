@@ -2312,6 +2312,26 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'E kopilwe mo klipbotong – e kgomaretse kwa o batlang go e abelana teng.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Ga go na lereo le le tsamaelanang le se o se batlileng.';
+
+  @override
+  String get cashInvalidAmount => 'Tsenya palo ya 0 kgotsa go feta.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Ga go na theko kgotsa thekiso e e kgonneng go balwa mo mokwalong o. Tlhola gore mola mongwe le mongwe o lebega jaaka sekao.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Tlhwatlhwa e e kgakala thata le tlhwatlhwa ya gompieno ($price). E tlhole, kgotsa o e boloke gape fa e nepagetse.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Dipotso ka potefolio ya gago';
 
   @override

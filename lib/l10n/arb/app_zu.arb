@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Isifinyezo se-AI · Namuhla namasheya akho",
   "favoriteRemoved": "I-{symbol} isusiwe kuzintandokazi",
   "listItemRemoved": "I-{symbol} isusiwe ku-{list}",
-  "watchListDeleted": "Uhlu lususiwe: {list}"
+  "watchListDeleted": "Uhlu lususiwe: {list}",
+  "sharedToClipboard": "Kukopishelwe ebhodini lokunamathisela – namathisela noma kuphi lapho ufuna ukwabelana khona.",
+  "glossaryNoMatch": "Awekho amagama ahambisana nosesho lwakho.",
+  "cashInvalidAmount": "Faka inani elingu-0 noma ngaphezulu.",
+  "portfolioImportNothing": "Akukho kuthenga noma kuthengisa okufundekile kulo mbhalo. Hlola ukuthi umugqa ngamunye ubukeka njengesibonelo.",
+  "lotPriceFarFromQuote": "Le ntengo ikude kakhulu nentengo yanamuhla ({price}). Yihlole, noma uyilondoloze futhi uma ilungile."
 }

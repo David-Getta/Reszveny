@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI nsɛm tiaa · Ɛnnɛ ne wo stocks",
   "favoriteRemoved": "Wɔayi {symbol} afi nea mepɛ mu",
   "listItemRemoved": "Wɔayi {symbol} afi {list} mu",
-  "watchListDeleted": "Wɔayi nhyehyɛe no afi hɔ: {list}"
+  "watchListDeleted": "Wɔayi nhyehyɛe no afi hɔ: {list}",
+  "sharedToClipboard": "Wɔakɔpi no – fa hyɛ baabiara a wopɛ sɛ wokyɛ no.",
+  "glossaryNoMatch": "Nsɛmfua biara nni hɔ a ɛne nea wohwehwɛe no hyia.",
+  "cashInvalidAmount": "Hyɛ sika dodow a ɛyɛ 0 anaa nea ɛboro so.",
+  "portfolioImportNothing": "Yɛantumi ankenkan adetɔ anaa adetɔn biara wɔ nkyerɛwee yi mu. Hwɛ sɛ nkyerɛwee biara te sɛ nhwɛso no.",
+  "lotPriceFarFromQuote": "Eyi ne nnɛ bo ({price}) nhyia koraa. Hwɛ mu bio, anaasɛ kora bio sɛ ɛteɛ a."
 }

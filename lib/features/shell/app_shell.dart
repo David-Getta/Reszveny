@@ -15,6 +15,7 @@ import '../../core/desktop/quick_panel.dart';
 import '../../core/desktop/system_notifier.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_quote.dart';
+import '../../core/share/share_text.dart' show sharedToClipboard;
 import '../../core/util/formatters.dart';
 import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
@@ -168,6 +169,7 @@ class _AppShellState extends State<AppShell> {
     _services?.alertMonitor.openRequest.removeListener(_onOpenRequest);
     _services?.pageRequest.removeListener(_onPageRequest);
     _services?.reports.completed.removeListener(_onAnalysisDone);
+    sharedToClipboard.removeListener(_onSharedToClipboard);
     super.dispose();
   }
 
@@ -192,6 +194,14 @@ class _AppShellState extends State<AppShell> {
           ),
         ),
       );
+  }
+
+  /// A megosztandó szöveg a vágólapra került (weben, megosztás-menü nélkül).
+  void _onSharedToClipboard() {
+    if (!mounted) return;
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).sharedToClipboard)));
   }
 
   /// Elkészült egy elemzés, miközben a felhasználó máshol jár (1–2 percig
@@ -255,6 +265,7 @@ class _AppShellState extends State<AppShell> {
       services.alertMonitor.openRequest.addListener(_onOpenRequest);
       services.pageRequest.addListener(_onPageRequest);
       services.reports.completed.addListener(_onAnalysisDone);
+      sharedToClipboard.addListener(_onSharedToClipboard);
       // A megnyitás már figyelve: jöhetnek a korábbi értesítésekre érkezett kattintások.
       if (services.alertMonitor.notifier case final SystemNotifier n) unawaited(n.listen());
     }
@@ -427,19 +438,32 @@ class _AppShellState extends State<AppShell> {
     if (_tab != 0) setState(() => _tab = 0);
   }
 
-  void _openPortfolio() {
-    _showMain();
-    _navigatorKey.currentState?.push(MaterialPageRoute<void>(builder: (_) => PortfolioPage(onOpenSymbol: _openSymbol)));
-  }
+  void _openPortfolio() => _openSection('/portfolio', (_) => PortfolioPage(onOpenSymbol: _openSymbol));
 
-  void _openAlerts() {
-    _showMain();
-    _navigatorKey.currentState?.push(MaterialPageRoute<void>(builder: (_) => AlertsPage(onOpenSymbol: _openSymbol)));
-  }
+  void _openAlerts() => _openSection('/alerts', (_) => AlertsPage(onOpenSymbol: _openSymbol));
 
-  void _openSettings() {
+  void _openSettings() => _openSection('/settings', (_) => const SettingsPage());
+
+  /// Az oldalsáv egy fő oldala, mint egy fül: a fő navigáció elejére lép vissza, és arra
+  /// nyitja – ötszöri kattintás után sem kell ötször visszalépni. Ha már az látszik, marad.
+  void _openSection(String name, WidgetBuilder builder) {
     _showMain();
-    _navigatorKey.currentState?.push(MaterialPageRoute<void>(builder: (_) => const SettingsPage()));
+    final nav = _navigatorKey.currentState;
+    if (nav == null) return;
+    var onTop = false;
+    // A legfelső útvonal megnézése (a feltétel azonnal igaz, így nem lép vissza).
+    nav.popUntil((route) {
+      onTop = route.settings.name == name;
+      return true;
+    });
+    if (onTop) return;
+    nav.popUntil((route) => route.isFirst);
+    nav.push(
+      MaterialPageRoute<void>(
+        settings: RouteSettings(name: name),
+        builder: builder,
+      ),
+    );
   }
 
   @override

@@ -2290,6 +2290,26 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'དྲས་སྦྱར་པང་དུ་འདྲ་བཤུས་བྱས་ཟིན། མཉམ་སྤྱོད་བྱེད་འདོད་སའི་གནས་གང་དུ་ཡང་སྦྱོར་རོགས།';
+
+  @override
+  String get glossaryNoMatch => 'ཁྱེད་ཀྱི་འཚོལ་ཞིབ་དང་མཐུན་པའི་ཐ་སྙད་མི་འདུག';
+
+  @override
+  String get cashInvalidAmount =>
+      '0 ཡང་ན་དེ་ལས་མང་བའི་གྲངས་འབོར་ནང་འཇུག་གནང་རོགས།';
+
+  @override
+  String get portfolioImportNothing =>
+      'ཡི་གེ་འདི་ནས་ཉོ་འཚོང་གང་ཡང་ཀློག་མ་ཐུབ། ཕྲེང་རེ་རེ་དཔེ་མཚོན་དང་འདྲ་མིན་ལ་ཞིབ་བཤེར་གནང་རོགས།';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'འདི་དེ་རིང་གི་གོང་ཚད་ ($price) ལས་ཧ་ཅང་ཁྱད་པར་ཆེ། ཞིབ་བཤེར་གནང་རོགས། ཡང་ན་ཡང་དག་ཡིན་ན་ཡང་བསྐྱར་ཉར་ཚགས་གནང་རོགས།';
+  }
+
+  @override
   String get portfolioAskTitle => 'ཁྱེད་ཀྱི་མ་འཇོག་ཚོགས་སྡེབ་སྐོར་གྱི་དྲི་བ།';
 
   @override

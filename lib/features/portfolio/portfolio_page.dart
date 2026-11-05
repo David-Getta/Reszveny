@@ -767,54 +767,54 @@ class _PositionTile extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 12),
+              // Keskeny képernyőn (320 pont, nagyítás) az összegek a név alá kerülnek, nem
+              // kicsinyülnek olvashatatlanra; csak a még így sem férő szám kicsinyül.
               Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(pos.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
-                    Text(
-                      '${fmt.quantity(pos.quantity)} × '
-                      '${fmt.unit(row.price, ccy)} · ${l10n.portfolioAvgCost(fmt.unit(pos.averageCost, ccy, showCurrency: false))}',
-                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                    ),
-                    if (row.annualDividend case final d?)
+                child: FitRow(
+                  lead: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(pos.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
                       Text(
-                        l10n.positionDividend(fmt.money(d, ccy)),
-                        style: theme.textTheme.bodySmall?.copyWith(color: p.positive),
+                        '${fmt.quantity(pos.quantity)} × '
+                        '${fmt.unit(row.price, ccy)} · ${l10n.portfolioAvgCost(fmt.unit(pos.averageCost, ccy, showCurrency: false))}',
+                        style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                       ),
-                    // Friss negyedéves eredmény (mint a Kedvencek listán): „EPS +2,7%”.
-                    if (AppServices.of(context).events.recent.where((r) => r.symbol == pos.symbol).firstOrNull
-                        case final r? when r.result.surprise != null)
-                      Tooltip(
-                        message:
-                            '${r.result.beat == true ? l10n.earningsResultBeat(pos.symbol) : l10n.earningsResultMiss(pos.symbol)}'
-                            ' · ${l10n.earningsResultBody(fmt.number(r.result.actual), fmt.number(r.result.estimate))}',
-                        child: Text(
-                          'EPS ${fmt.percent(r.result.surprise, withSign: true, decimals: 1)}',
-                          key: ValueKey('position-result-${pos.symbol}'),
-                          style: theme.textTheme.labelSmall?.copyWith(
-                            color: r.result.beat == true ? p.positive : p.negative,
+                      if (row.annualDividend case final d?)
+                        Text(
+                          l10n.positionDividend(fmt.money(d, ccy)),
+                          style: theme.textTheme.bodySmall?.copyWith(color: p.positive),
+                        ),
+                      // Friss negyedéves eredmény (mint a Kedvencek listán): „EPS +2,7%”.
+                      if (AppServices.of(context).events.recent.where((r) => r.symbol == pos.symbol).firstOrNull
+                          case final r? when r.result.surprise != null)
+                        Tooltip(
+                          message:
+                              '${r.result.beat == true ? l10n.earningsResultBeat(pos.symbol) : l10n.earningsResultMiss(pos.symbol)}'
+                              ' · ${l10n.earningsResultBody(fmt.number(r.result.actual), fmt.number(r.result.estimate))}',
+                          child: Text(
+                            'EPS ${fmt.percent(r.result.surprise, withSign: true, decimals: 1)}',
+                            key: ValueKey('position-result-${pos.symbol}'),
+                            style: theme.textTheme.labelSmall?.copyWith(
+                              color: r.result.beat == true ? p.positive : p.negative,
+                            ),
                           ),
                         ),
-                      ),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 8),
-              // Keskeny képernyőn a számok kicsinyülnek, nem lógnak ki.
-              Flexible(
-                child: FittedBox(
-                  fit: BoxFit.scaleDown,
-                  alignment: AlignmentDirectional.centerEnd,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Text(fmt.money(row.value, ccy), style: const TextStyle(fontWeight: FontWeight.w600)),
-                      Text(
-                        '${fmt.money(row.gain, ccy, withSign: true, showCurrency: false)} (${fmt.percent(row.gainPercent, withSign: true)})',
-                        style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, row.gain)),
-                      ),
                     ],
+                  ),
+                  trailing: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: AlignmentDirectional.centerEnd,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Text(fmt.money(row.value, ccy), style: const TextStyle(fontWeight: FontWeight.w600)),
+                        Text(
+                          '${fmt.money(row.gain, ccy, withSign: true, showCurrency: false)} (${fmt.percent(row.gainPercent, withSign: true)})',
+                          style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, row.gain)),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

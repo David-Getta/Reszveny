@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Povzetek AI · Danes z vašimi delnicami",
   "favoriteRemoved": "{symbol} odstranjen iz priljubljenih",
   "listItemRemoved": "{symbol} odstranjen s seznama {list}",
-  "watchListDeleted": "Seznam izbrisan: {list}"
+  "watchListDeleted": "Seznam izbrisan: {list}",
+  "sharedToClipboard": "Kopirano v odložišče – prilepite ga tja, kjer ga želite deliti.",
+  "glossaryNoMatch": "Iskanju ne ustreza noben pojem.",
+  "cashInvalidAmount": "Vnesite znesek 0 ali več.",
+  "portfolioImportNothing": "Iz tega besedila ni bilo mogoče prebrati nobene transakcije. Preverite, ali je vsaka vrstica videti kot primer.",
+  "lotPriceFarFromQuote": "Cena se močno razlikuje od današnje ({price}). Preverite jo ali jo znova shranite, če je pravilna."
 }

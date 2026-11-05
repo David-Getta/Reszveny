@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Cuunfaa AI · Har’a aksiyoonota kee waliin",
   "favoriteRemoved": "{symbol} filatamoo irraa haqameera",
   "listItemRemoved": "{symbol} {list} irraa haqameera",
-  "watchListDeleted": "Tarreen haqameera: {list}"
+  "watchListDeleted": "Tarreen haqameera: {list}",
+  "sharedToClipboard": "Kilippboordii irratti garagalfameera – bakka qooduu barbaaddutti maxxansi.",
+  "glossaryNoMatch": "Jechi barbaacha kee wajjin walsimu hin jiru.",
+  "cashInvalidAmount": "Hanga 0 ykn isaa ol ta'e galchi.",
+  "portfolioImportNothing": "Barreeffama kana irraa bittaan ykn gurgurtaan tokkollee dubbifamuu hin dandeenye. Sararri hundi fakkeenyicha akka fakkaatu mirkaneessi.",
+  "lotPriceFarFromQuote": "Kun gatii har'aa ({price}) irraa baay'ee fagaata. Mirkaneessi, yookaan sirrii yoo ta'e irra deebi'ii olkaa'i."
 }

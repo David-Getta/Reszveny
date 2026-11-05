@@ -2311,6 +2311,25 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Copiasqañam – rakiyta munasqayki maypipas churay.';
+
+  @override
+  String get glossaryNoMatch => 'Mana ima rimaypas maskasqaykiman tupanchu.';
+
+  @override
+  String get cashInvalidAmount => '0 kaq utaq aswan hatun qullqita qillqay.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Kay qillqamanta mana ima rantiy rantikuytapas ñawinchayta atikunchu. Sapa siqi ejemplo hina kasqanta qhawariy.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Kayqa kunan p\'unchaw chaninmanta ($price) karupim. Qhawariy, utaq allin kaptinqa hukmanta waqaychay.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Tapukuykuna: portafolioyki';
 
   @override

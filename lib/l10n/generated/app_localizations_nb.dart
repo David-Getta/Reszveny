@@ -2299,6 +2299,25 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Kopiert til utklippstavlen – lim det inn der du vil dele det.';
+
+  @override
+  String get glossaryNoMatch => 'Ingen begreper samsvarer med søket ditt.';
+
+  @override
+  String get cashInvalidAmount => 'Skriv inn et beløp på 0 eller mer.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Ingen transaksjoner kunne leses fra denne teksten. Sjekk at hver linje ser ut som eksempelet.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Dette er langt unna dagens kurs ($price). Sjekk den, eller lagre på nytt hvis den stemmer.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Spørsmål om porteføljen din';
 
   @override

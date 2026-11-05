@@ -2309,6 +2309,25 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Kilippboordii irratti garagalfameera – bakka qooduu barbaaddutti maxxansi.';
+
+  @override
+  String get glossaryNoMatch => 'Jechi barbaacha kee wajjin walsimu hin jiru.';
+
+  @override
+  String get cashInvalidAmount => 'Hanga 0 ykn isaa ol ta\'e galchi.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Barreeffama kana irraa bittaan ykn gurgurtaan tokkollee dubbifamuu hin dandeenye. Sararri hundi fakkeenyicha akka fakkaatu mirkaneessi.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Kun gatii har\'aa ($price) irraa baay\'ee fagaata. Mirkaneessi, yookaan sirrii yoo ta\'e irra deebi\'ii olkaa\'i.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Gaaffilee waa\'ee poortfooliyoo keessanii';
 
   @override

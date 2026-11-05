@@ -891,5 +891,10 @@
   "briefNotificationTitle": "የAI ማጠቃለያ · ዛሬ ከአክሲዮኖችዎ ጋር",
   "favoriteRemoved": "{symbol} ከተወዳጆች ተወግዷል",
   "listItemRemoved": "{symbol} ከ{list} ተወግዷል",
-  "watchListDeleted": "ዝርዝሩ ተሰርዟል፦ {list}"
+  "watchListDeleted": "ዝርዝሩ ተሰርዟል፦ {list}",
+  "sharedToClipboard": "ወደ ቅንጥብ ሰሌዳው ተቀድቷል – ማጋራት በሚፈልጉበት ቦታ ይለጥፉት።",
+  "glossaryNoMatch": "ከፍለጋዎ ጋር የሚዛመድ ቃል የለም።",
+  "cashInvalidAmount": "0 ወይም ከዚያ በላይ የሆነ መጠን ያስገቡ።",
+  "portfolioImportNothing": "ከዚህ ጽሑፍ ምንም ግብይት ማንበብ አልተቻለም። እያንዳንዱ መስመር ምሳሌውን የሚመስል መሆኑን ያረጋግጡ።",
+  "lotPriceFarFromQuote": "ይህ ከዛሬው ዋጋ ({price}) በጣም የራቀ ነው። ያረጋግጡት፣ ወይም ትክክል ከሆነ እንደገና ያስቀምጡ።"
 }

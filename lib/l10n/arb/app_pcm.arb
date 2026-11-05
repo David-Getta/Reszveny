@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Na AI summarize am · Today with your stocks",
   "favoriteRemoved": "{symbol} don comot from favourites",
   "listItemRemoved": "{symbol} don comot from {list}",
-  "watchListDeleted": "List don delete: {list}"
+  "watchListDeleted": "List don delete: {list}",
+  "sharedToClipboard": "E don copy go clipboard – paste am anywhere wey you wan share am.",
+  "glossaryNoMatch": "No term match wetin you search.",
+  "cashInvalidAmount": "Put amount wey be 0 or pass am.",
+  "portfolioImportNothing": "We no fit read any buy or sell from dis text. Check say every line look like di example.",
+  "lotPriceFarFromQuote": "Dis one far from today price ({price}). Check am, or save again if e correct."
 }

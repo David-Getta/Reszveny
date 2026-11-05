@@ -2292,6 +2292,25 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'क्लिपबोर्ड में कॉपी हो गइल – जहाँ साझा करे के चाहत बानी, उहाँ पेस्ट करीं।';
+
+  @override
+  String get glossaryNoMatch => 'राउर खोज से मेल खाए वाला कवनो शब्द नइखे।';
+
+  @override
+  String get cashInvalidAmount => '0 भा ओकरा से ज्यादा रकम डालीं।';
+
+  @override
+  String get portfolioImportNothing =>
+      'एह टेक्स्ट से कवनो लेन-देन ना पढ़ल जा सकल। जाँच लीं कि हर लाइन उदाहरण जइसन देखात बा।';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'ई आज के दाम ($price) से बहुत अलग बा। जाँच लीं, ना त सही होखे त फेर से सेव करीं।';
+  }
+
+  @override
   String get portfolioAskTitle => 'राउर पोर्टफ़ोलियो के बारे में सवाल';
 
   @override

@@ -2288,6 +2288,25 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'ڪلپ بورڊ تي ڪاپي ٿي ويو – جتي شيئر ڪرڻ چاهيو اتي پيسٽ ڪريو.';
+
+  @override
+  String get glossaryNoMatch => 'توهان جي ڳولا سان ڪو به اصطلاح نه ٿو ملي.';
+
+  @override
+  String get cashInvalidAmount => '0 يا ان کان وڌيڪ رقم داخل ڪريو.';
+
+  @override
+  String get portfolioImportNothing =>
+      'هن متن مان ڪو به ليڻ دين پڙهي نه سگهيو. چيڪ ڪريو ته هر قطار مثال جهڙي آهي.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'هي اڄ جي قيمت ($price) کان گهڻو پري آهي. ان کي جانچيو، يا جيڪڏهن صحيح آهي ته ٻيهر محفوظ ڪريو.';
+  }
+
+  @override
   String get portfolioAskTitle => 'توهان جي پورٽ فوليو بابت سوال';
 
   @override

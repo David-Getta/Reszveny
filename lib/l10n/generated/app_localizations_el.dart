@@ -2308,6 +2308,26 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Αντιγράφηκε στο πρόχειρο – επικολλήστε το όπου θέλετε να το κοινοποιήσετε.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Κανένας όρος δεν ταιριάζει με την αναζήτησή σας.';
+
+  @override
+  String get cashInvalidAmount => 'Εισαγάγετε ποσό 0 ή μεγαλύτερο.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Δεν ήταν δυνατή η ανάγνωση συναλλαγών από αυτό το κείμενο. Ελέγξτε ότι κάθε γραμμή μοιάζει με το παράδειγμα.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Απέχει πολύ από τη σημερινή τιμή ($price). Ελέγξτε την ή αποθηκεύστε ξανά αν είναι σωστή.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Ερωτήσεις για το χαρτοφυλάκιό σας';
 
   @override

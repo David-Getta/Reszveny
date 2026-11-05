@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Podsumowanie AI · Dziś z Twoimi akcjami",
   "favoriteRemoved": "Usunięto {symbol} z ulubionych",
   "listItemRemoved": "Usunięto {symbol} z listy {list}",
-  "watchListDeleted": "Usunięto listę: {list}"
+  "watchListDeleted": "Usunięto listę: {list}",
+  "sharedToClipboard": "Skopiowano do schowka – wklej tam, gdzie chcesz to udostępnić.",
+  "glossaryNoMatch": "Żadne pojęcie nie pasuje do wyszukiwania.",
+  "cashInvalidAmount": "Wpisz kwotę równą 0 lub większą.",
+  "portfolioImportNothing": "Z tego tekstu nie udało się odczytać żadnej transakcji. Sprawdź, czy każdy wiersz wygląda jak w przykładzie.",
+  "lotPriceFarFromQuote": "To znacznie odbiega od dzisiejszej ceny ({price}). Sprawdź ją lub zapisz ponownie, jeśli jest poprawna."
 }

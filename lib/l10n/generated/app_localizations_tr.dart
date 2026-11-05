@@ -2298,6 +2298,25 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Panoya kopyalandı – paylaşmak istediğiniz yere yapıştırın.';
+
+  @override
+  String get glossaryNoMatch => 'Aramanızla eşleşen terim yok.';
+
+  @override
+  String get cashInvalidAmount => '0 veya daha büyük bir tutar girin.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Bu metinden hiçbir işlem okunamadı. Her satırın örnekteki gibi göründüğünü kontrol edin.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Bu, bugünkü fiyattan ($price) çok uzak. Kontrol edin veya doğruysa yeniden kaydedin.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Portföyün hakkında sorular';
 
   @override

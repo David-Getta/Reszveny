@@ -2294,6 +2294,25 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Алмашу буферына күчерелде – уртаклашырга теләгән җиргә куегыз.';
+
+  @override
+  String get glossaryNoMatch => 'Эзләвегезгә туры килгән термин юк.';
+
+  @override
+  String get cashInvalidAmount => '0 яки аннан зуррак сумма кертегез.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Бу тексттан бер операция дә укып булмады. Һәр юлның үрнәктәге кебек булуын тикшерегез.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Бу бүгенге бәядән ($price) бик ерак. Аны тикшерегез яки дөрес булса, кабат саклагыз.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Портфелегез турында сораулар';
 
   @override

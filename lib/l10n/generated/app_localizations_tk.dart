@@ -2299,6 +2299,25 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Bufere göçürildi – paýlaşmak isleýän ýeriňize goýuň.';
+
+  @override
+  String get glossaryNoMatch => 'Gözlegiňize laýyk adalga ýok.';
+
+  @override
+  String get cashInvalidAmount => '0 ýa-da ondan köp mukdar giriziň.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Bu tekstden hiç hili amal okalyp bilinmedi. Her setiriň mysaldaky ýaly görünýändigini barlaň.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Bu şu günki bahadan ($price) gaty uzak. Ony barlaň ýa-da dogry bolsa, gaýtadan saklaň.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Portfeliňiz barada soraglar';
 
   @override

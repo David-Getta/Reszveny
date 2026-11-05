@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI xulosasi · Bugun aksiyalaringiz bilan",
   "favoriteRemoved": "{symbol} sevimlilardan olib tashlandi",
   "listItemRemoved": "{symbol} {list} roʻyxatidan olib tashlandi",
-  "watchListDeleted": "Roʻyxat oʻchirildi: {list}"
+  "watchListDeleted": "Roʻyxat oʻchirildi: {list}",
+  "sharedToClipboard": "Buferga nusxalandi – ulashmoqchi boʻlgan joyingizga joylang.",
+  "glossaryNoMatch": "Qidiruvingizga mos atama topilmadi.",
+  "cashInvalidAmount": "0 yoki undan katta summa kiriting.",
+  "portfolioImportNothing": "Bu matndan hech qanday operatsiya oʻqib boʻlmadi. Har bir qator namunadagidek koʻrinishini tekshiring.",
+  "lotPriceFarFromQuote": "Bu bugungi narxdan ({price}) juda farq qiladi. Uni tekshiring yoki toʻgʻri boʻlsa, qayta saqlang."
 }

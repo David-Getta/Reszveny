@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI-резиме · Денес со вашите акции",
   "favoriteRemoved": "{symbol} е отстранет од омилени",
   "listItemRemoved": "{symbol} е отстранет од {list}",
-  "watchListDeleted": "Листата е избришана: {list}"
+  "watchListDeleted": "Листата е избришана: {list}",
+  "sharedToClipboard": "Копирано во привремената меморија – залепете го каде што сакате да го споделите.",
+  "glossaryNoMatch": "Нема поими што одговараат на пребарувањето.",
+  "cashInvalidAmount": "Внесете износ од 0 или повеќе.",
+  "portfolioImportNothing": "Од овој текст не може да се прочита ниту една трансакција. Проверете дали секој ред изгледа како примерот.",
+  "lotPriceFarFromQuote": "Цената е далеку од денешната ({price}). Проверете ја или зачувајте ја повторно ако е точна."
 }

@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Mũgĩkĩro wa AI · Ũmũthĩ na hisa ciaku",
   "favoriteRemoved": "{symbol} nĩyerutwo harĩ iria wendete",
   "listItemRemoved": "{symbol} nĩyerutwo harĩ {list}",
-  "watchListDeleted": "Orodha nĩyeherio: {list}"
+  "watchListDeleted": "Orodha nĩyeherio: {list}",
+  "sharedToClipboard": "Nĩ yakobĩo – ĩkĩra o kũrĩa kũrĩa ũkwenda kũgayana.",
+  "glossaryNoMatch": "Gũtirĩ kiugo kĩhaana na ũrĩa ũracaria.",
+  "cashInvalidAmount": "Andĩka mũigana wa 0 kana makĩria.",
+  "portfolioImportNothing": "Gũtirĩ ũgũri kana ũendia ũngĩathomeka kuuma mandĩko-inĩ maya. Rora atĩ o mũhari ũhaana ta kĩonereria.",
+  "lotPriceFarFromQuote": "Thogora ũyũ ũraihanĩte mũno na wa ũmũthĩ ({price}). Ũthuthurie, kana ũige rĩngĩ angĩkorwo nĩ wa ma."
 }

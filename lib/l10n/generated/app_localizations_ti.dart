@@ -2264,6 +2264,24 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard => 'ናብ ክሊፕቦርድ ተቐዲሑ – ከተካፍልዎ ኣብ እትደልይዎ ቦታ ለጥፍዎ።';
+
+  @override
+  String get glossaryNoMatch => 'ምስ ምድላይኩም ዝሰማማዕ ቃል የለን።';
+
+  @override
+  String get cashInvalidAmount => '0 ወይ ካብኡ ዝበዝሕ መጠን ኣእትዉ።';
+
+  @override
+  String get portfolioImportNothing =>
+      'ካብዚ ጽሑፍ ዝኾነ ልውውጥ ክንበብ ኣይከኣለን። ነፍሲ ወከፍ መስመር ከም እቲ ኣብነት ምዃኑ ኣረጋግጹ።';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'እዚ ካብ ናይ ሎሚ ዋጋ ($price) ኣዝዩ ርሑቕ እዩ። ኣረጋግጽዎ፡ ወይ ቅኑዕ እንተኾይኑ እንደገና ዓቅብዎ።';
+  }
+
+  @override
   String get portfolioAskTitle => 'ሕቶታት ብዛዕባ ፖርትፎሊዮኹም';
 
   @override

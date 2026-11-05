@@ -55,6 +55,15 @@ class AllocationCard extends StatefulWidget {
 }
 
 class _AllocationCardState extends State<AllocationCard> {
+  /// A nézetválasztó vízszintes görgetése: a görgetősáv jelzi, ha van még fül jobbra.
+  final _tabs = ScrollController();
+
+  @override
+  void dispose() {
+    _tabs.dispose();
+    super.dispose();
+  }
+
   /// Pénznem szerint a készpénz a saját pénzneméhez adódik (nem külön sor).
   List<({String label, double weight})> _withCashByCurrency(List<({String label, double weight})> entries) {
     final s = widget.snapshot;
@@ -141,25 +150,31 @@ class _AllocationCardState extends State<AllocationCard> {
           children: [
             Text(l10n.portfolioAllocation, style: theme.textTheme.titleMedium),
             const SizedBox(height: 10),
-            // Keskeny képernyőn vízszintesen görgethető.
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: SegmentedButton<AllocationBy>(
-                key: const ValueKey('allocation-by'),
-                showSelectedIcon: false,
-                style: const ButtonStyle(visualDensity: VisualDensity.compact),
-                segments: [
-                  ButtonSegment(value: AllocationBy.positions, label: Text(l10n.allocationPositions)),
-                  ButtonSegment(value: AllocationBy.sectors, label: Text(l10n.allocationSectors)),
-                  ButtonSegment(value: AllocationBy.countries, label: Text(l10n.allocationCountries)),
-                  ButtonSegment(value: AllocationBy.currencies, label: Text(l10n.allocationCurrencies)),
-                  if (accounts) ButtonSegment(value: AllocationBy.accounts, label: Text(l10n.allocationAccounts)),
-                ],
-                selected: {by},
-                onSelectionChanged: (v) => setState(() {
-                  _by = v.first;
-                  if (_by == AllocationBy.sectors || _by == AllocationBy.countries) _profiles ??= _loadProfiles();
-                }),
+            // Keskeny képernyőn vízszintesen görgethető; a látható görgetősáv jelzi, hogy van még.
+            Scrollbar(
+              controller: _tabs,
+              thumbVisibility: true,
+              child: SingleChildScrollView(
+                controller: _tabs,
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.only(bottom: 10),
+                child: SegmentedButton<AllocationBy>(
+                  key: const ValueKey('allocation-by'),
+                  showSelectedIcon: false,
+                  style: const ButtonStyle(visualDensity: VisualDensity.compact),
+                  segments: [
+                    ButtonSegment(value: AllocationBy.positions, label: Text(l10n.allocationPositions)),
+                    ButtonSegment(value: AllocationBy.sectors, label: Text(l10n.allocationSectors)),
+                    ButtonSegment(value: AllocationBy.countries, label: Text(l10n.allocationCountries)),
+                    ButtonSegment(value: AllocationBy.currencies, label: Text(l10n.allocationCurrencies)),
+                    if (accounts) ButtonSegment(value: AllocationBy.accounts, label: Text(l10n.allocationAccounts)),
+                  ],
+                  selected: {by},
+                  onSelectionChanged: (v) => setState(() {
+                    _by = v.first;
+                    if (_by == AllocationBy.sectors || _by == AllocationBy.countries) _profiles ??= _loadProfiles();
+                  }),
+                ),
               ),
             ),
             const SizedBox(height: 12),
@@ -472,6 +487,14 @@ class _TargetsDialogState extends State<_TargetsDialog> {
     super.dispose();
   }
 
+  /// Kitöltött, de nem 0 és 100 közötti (vagy nem szám) mező: eddig csendben kimaradt.
+  bool _invalid(TextEditingController c) {
+    final t = c.text.trim();
+    if (t.isEmpty) return false;
+    final v = parseDecimal(t);
+    return v == null || v < 0 || v > 100;
+  }
+
   Map<String, double> get _values => {
     for (final e in _fields.entries)
       if (parseDecimal(e.value.text) case final v? when v > 0 && v <= 100) e.key: v,
@@ -513,7 +536,11 @@ class _TargetsDialogState extends State<_TargetsDialog> {
                           controller: _fields[r.position.symbol],
                           keyboardType: const TextInputType.numberWithOptions(decimal: true),
                           textAlign: TextAlign.end,
-                          decoration: const InputDecoration(suffixText: '%', isDense: true),
+                          decoration: InputDecoration(
+                            suffixText: '%',
+                            isDense: true,
+                            errorText: _invalid(_fields[r.position.symbol]!) ? '0–100' : null,
+                          ),
                           onChanged: (_) => setState(() {}),
                         ),
                       ),
@@ -536,12 +563,14 @@ class _TargetsDialogState extends State<_TargetsDialog> {
         TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
         FilledButton(
           key: const ValueKey('targets-save'),
-          onPressed: () async {
-            final services = AppServices.of(context);
-            await services.preferences.setTargets(_values);
-            services.telemetry.track('targets_set');
-            if (context.mounted) Navigator.of(context).pop();
-          },
+          onPressed: _fields.values.any(_invalid)
+              ? null
+              : () async {
+                  final services = AppServices.of(context);
+                  await services.preferences.setTargets(_values);
+                  services.telemetry.track('targets_set');
+                  if (context.mounted) Navigator.of(context).pop();
+                },
           child: Text(l10n.ok),
         ),
       ],

@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Famintinana AI · Anio miaraka amin’ny aksionanao",
   "favoriteRemoved": "Nesorina tamin'ny ankafizina ny {symbol}",
   "listItemRemoved": "Nesorina tamin'ny {list} ny {symbol}",
-  "watchListDeleted": "Voafafa ny lisitra: {list}"
+  "watchListDeleted": "Voafafa ny lisitra: {list}",
+  "sharedToClipboard": "Voadika ny soratra – apetaho amin'izay toerana tianao hizarana azy.",
+  "glossaryNoMatch": "Tsy misy teny mifanaraka amin'ny fikarohanao.",
+  "cashInvalidAmount": "Ampidiro vola 0 na mihoatra.",
+  "portfolioImportNothing": "Tsy nisy fividianana na fivarotana voavaky tamin'ity soratra ity. Hamarino fa mitovy amin'ny ohatra ny andalana tsirairay.",
+  "lotPriceFarFromQuote": "Lavitra be amin'ny vidiny androany ({price}) ity. Hamarino, na tehirizo indray raha marina izy."
 }

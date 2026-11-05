@@ -2304,6 +2304,26 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'క్లిప్‌బోర్డ్‌కు కాపీ చేయబడింది – షేర్ చేయాలనుకున్న చోట పేస్ట్ చేయండి.';
+
+  @override
+  String get glossaryNoMatch => 'మీ శోధనకు సరిపోలే పదాలు లేవు.';
+
+  @override
+  String get cashInvalidAmount =>
+      '0 లేదా అంతకంటే ఎక్కువ మొత్తాన్ని నమోదు చేయండి.';
+
+  @override
+  String get portfolioImportNothing =>
+      'ఈ టెక్స్ట్ నుండి ఏ లావాదేవీనీ చదవలేకపోయాము. ప్రతి పంక్తి ఉదాహరణలా ఉందో లేదో తనిఖీ చేయండి.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'ఇది నేటి ధర ($price) కంటే చాలా భిన్నంగా ఉంది. దీన్ని తనిఖీ చేయండి, లేదా సరైనదైతే మళ్లీ సేవ్ చేయండి.';
+  }
+
+  @override
   String get portfolioAskTitle => 'మీ పోర్ట్‌ఫోలియో గురించి ప్రశ్నలు';
 
   @override

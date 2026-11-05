@@ -2301,6 +2301,26 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Disalin kana papan klip – témpélkeun di mana waé anjeun hoyong ngabagikeunana.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Teu aya istilah nu cocog jeung paluruhan anjeun.';
+
+  @override
+  String get cashInvalidAmount => 'Asupkeun jumlah 0 atawa leuwih.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Teu aya transaksi nu bisa dibaca tina téks ieu. Pariksa yén unggal baris katingalina siga conto.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Ieu tebih teuing ti harga poé ieu ($price). Pariksa deui, atanapi simpen deui upami leres.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Patarosan ngeunaan portofolio anjeun';
 
   @override

@@ -28,22 +28,14 @@ class SectionCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // A jobb oldali kiegészítő (pl. frissítés ideje, gomb) legfeljebb a sor
-                // 60 %-át foglalhatja; keskeny képernyőn tördelődik, nem lóg ki.
-                // Összecsukva csak a cím és a nyíl látszik.
-                LayoutBuilder(
-                  builder: (context, c) => CollapsibleHeader(
-                    key: ValueKey('collapse-$key'),
-                    collapsed: collapsed,
-                    onTap: () => store.toggle(key),
-                    trailing: trailing == null || collapsed
-                        ? null
-                        : ConstrainedBox(
-                            constraints: BoxConstraints(maxWidth: c.maxWidth * 0.6),
-                            child: trailing,
-                          ),
-                    child: Text(title, style: theme.textTheme.titleMedium),
-                  ),
+                // A jobb oldali kiegészítő (pl. frissítés ideje, gomb) a cím mellett, vagy ha ott
+                // a címnek nem marad hely, alatta. Összecsukva csak a cím és a nyíl látszik.
+                CollapsibleHeader(
+                  key: ValueKey('collapse-$key'),
+                  collapsed: collapsed,
+                  onTap: () => store.toggle(key),
+                  trailing: collapsed ? null : trailing,
+                  child: Text(title, style: theme.textTheme.titleMedium),
                 ),
                 CollapsibleBody(
                   collapsed: collapsed,

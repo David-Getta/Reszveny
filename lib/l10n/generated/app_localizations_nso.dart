@@ -2314,6 +2314,26 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Go kopiširwe letlapeng la go kopiša – e kgomaretše mo o nyakago go e abelana gona.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Ga go lereo leo le swanago le seo o se nyakilego.';
+
+  @override
+  String get cashInvalidAmount => 'Tsenya palo ya 0 goba go feta.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Ga go thekišano yeo e kgonnego go balwa sengwalweng se. Lekola gore mothalo o mongwe le o mongwe o swana le mohlala.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Theko ye e kgole kudu le theko ya lehono ($price). E lekole, goba o e boloke gape ge e nepagetše.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Dipotšišo ka photefolio ya gago';
 
   @override

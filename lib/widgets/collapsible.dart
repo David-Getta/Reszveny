@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'fit_row.dart';
+
 /// Melyik kártya vagy elemzés-rész van összecsukva. Az app futása alatt
 /// megmarad, így egy összecsukott rész (pl. „Hírek”) a többi részvénynél is
 /// összecsukva látszik.
@@ -61,8 +63,12 @@ class CollapsibleHeader extends StatelessWidget {
             constraints: const BoxConstraints(minHeight: 40),
             child: Row(
               children: [
-                Expanded(child: child),
-                if (trailing case final t?) ...[const SizedBox(width: 8), t, const SizedBox(width: 4)],
+                // Ha a kiegészítő mellett a címnek nem marad a sor fele (keskeny kijelző,
+                // nagyítás), a cím alá kerül – nem tördelődik a cím szótagonként.
+                Expanded(
+                  child: trailing == null ? child : FitRow(lead: child, trailing: trailing!),
+                ),
+                if (trailing != null) const SizedBox(width: 4),
                 AnimatedRotation(
                   // Összecsukva a cím felé mutat: jobbról balra író nyelven a másik irányba.
                   turns: collapsed ? (Directionality.of(context) == TextDirection.rtl ? 0.25 : -0.25) : 0,

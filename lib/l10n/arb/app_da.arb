@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI-resumé · I dag med dine aktier",
   "favoriteRemoved": "{symbol} fjernet fra favoritter",
   "listItemRemoved": "{symbol} fjernet fra “{list}”",
-  "watchListDeleted": "Liste slettet: {list}"
+  "watchListDeleted": "Liste slettet: {list}",
+  "sharedToClipboard": "Kopieret til udklipsholderen – indsæt det, hvor du vil dele det.",
+  "glossaryNoMatch": "Ingen begreber matcher din søgning.",
+  "cashInvalidAmount": "Angiv et beløb på 0 eller mere.",
+  "portfolioImportNothing": "Der kunne ikke læses nogen transaktioner fra denne tekst. Tjek, at hver linje ligner eksemplet.",
+  "lotPriceFarFromQuote": "Det er langt fra dagens kurs ({price}). Tjek det, eller gem igen, hvis det er rigtigt."
 }

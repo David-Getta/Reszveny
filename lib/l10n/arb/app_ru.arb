@@ -891,5 +891,10 @@
   "briefNotificationTitle": "ИИ-сводка · Сегодня с вашими акциями",
   "favoriteRemoved": "{symbol} удалён из избранного",
   "listItemRemoved": "{symbol} удалён из списка «{list}»",
-  "watchListDeleted": "Список удалён: {list}"
+  "watchListDeleted": "Список удалён: {list}",
+  "sharedToClipboard": "Скопировано в буфер обмена – вставьте туда, где хотите поделиться.",
+  "glossaryNoMatch": "По вашему запросу термины не найдены.",
+  "cashInvalidAmount": "Введите сумму не меньше 0.",
+  "portfolioImportNothing": "Из этого текста не удалось прочитать ни одной сделки. Проверьте, что каждая строка выглядит как в примере.",
+  "lotPriceFarFromQuote": "Это сильно отличается от сегодняшней цены ({price}). Проверьте или сохраните ещё раз, если всё верно."
 }

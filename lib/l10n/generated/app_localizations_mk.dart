@@ -2313,6 +2313,25 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Копирано во привремената меморија – залепете го каде што сакате да го споделите.';
+
+  @override
+  String get glossaryNoMatch => 'Нема поими што одговараат на пребарувањето.';
+
+  @override
+  String get cashInvalidAmount => 'Внесете износ од 0 или повеќе.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Од овој текст не може да се прочита ниту една трансакција. Проверете дали секој ред изгледа како примерот.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Цената е далеку од денешната ($price). Проверете ја или зачувајте ја повторно ако е точна.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Прашања за вашето портфолио';
 
   @override

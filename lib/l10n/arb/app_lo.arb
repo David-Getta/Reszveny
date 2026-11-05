@@ -891,5 +891,10 @@
   "briefNotificationTitle": "ສະຫຼຸບ AI · ມື້ນີ້ກັບຫຸ້ນຂອງທ່ານ",
   "favoriteRemoved": "ລຶບ {symbol} ອອກຈາກລາຍການທີ່ມັກແລ້ວ",
   "listItemRemoved": "ລຶບ {symbol} ອອກຈາກ {list} ແລ້ວ",
-  "watchListDeleted": "ລຶບລາຍການແລ້ວ: {list}"
+  "watchListDeleted": "ລຶບລາຍການແລ້ວ: {list}",
+  "sharedToClipboard": "ສຳເນົາໄປໃສ່ຄລິບບອດແລ້ວ – ວາງໄວ້ບ່ອນໃດກໍໄດ້ທີ່ທ່ານຕ້ອງການແບ່ງປັນ",
+  "glossaryNoMatch": "ບໍ່ມີຄຳສັບທີ່ກົງກັບການຊອກຫາຂອງທ່ານ",
+  "cashInvalidAmount": "ໃສ່ຈຳນວນເງິນ 0 ຫຼື ຫຼາຍກວ່າ",
+  "portfolioImportNothing": "ບໍ່ສາມາດອ່ານທຸລະກຳໃດໆຈາກຂໍ້ຄວາມນີ້ໄດ້. ກະລຸນາກວດເບິ່ງວ່າແຕ່ລະແຖວມີລັກສະນະຄືຕົວຢ່າງ.",
+  "lotPriceFarFromQuote": "ລາຄານີ້ຫ່າງໄກຈາກລາຄາມື້ນີ້ ({price}) ຫຼາຍ. ກະລຸນາກວດເບິ່ງ ຫຼື ບັນທຶກອີກຄັ້ງ ຖ້າຖືກຕ້ອງແລ້ວ."
 }

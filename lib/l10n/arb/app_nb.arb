@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI-sammendrag · I dag med aksjene dine",
   "favoriteRemoved": "{symbol} er fjernet fra favoritter",
   "listItemRemoved": "{symbol} er fjernet fra {list}",
-  "watchListDeleted": "Listen er slettet: {list}"
+  "watchListDeleted": "Listen er slettet: {list}",
+  "sharedToClipboard": "Kopiert til utklippstavlen – lim det inn der du vil dele det.",
+  "glossaryNoMatch": "Ingen begreper samsvarer med søket ditt.",
+  "cashInvalidAmount": "Skriv inn et beløp på 0 eller mer.",
+  "portfolioImportNothing": "Ingen transaksjoner kunne leses fra denne teksten. Sjekk at hver linje ser ut som eksempelet.",
+  "lotPriceFarFromQuote": "Dette er langt unna dagens kurs ({price}). Sjekk den, eller lagre på nytt hvis den stemmer."
 }

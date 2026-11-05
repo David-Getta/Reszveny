@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Rezumat AI · Azi cu acțiunile tale",
   "favoriteRemoved": "{symbol} a fost eliminat din favorite",
   "listItemRemoved": "{symbol} a fost eliminat din {list}",
-  "watchListDeleted": "Lista a fost ștearsă: {list}"
+  "watchListDeleted": "Lista a fost ștearsă: {list}",
+  "sharedToClipboard": "Copiat în clipboard – lipește-l unde vrei să-l distribui.",
+  "glossaryNoMatch": "Niciun termen nu se potrivește căutării.",
+  "cashInvalidAmount": "Introdu o sumă de 0 sau mai mare.",
+  "portfolioImportNothing": "Din acest text nu s-a putut citi nicio tranzacție. Verifică dacă fiecare linie arată ca exemplul.",
+  "lotPriceFarFromQuote": "Este foarte departe de prețul de azi ({price}). Verifică-l sau salvează din nou dacă este corect."
 }

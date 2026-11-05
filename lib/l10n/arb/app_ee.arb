@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI ƒe nyagbɔgblɔ kpui · Egbe kple wò stockwo",
   "favoriteRemoved": "Woɖe {symbol} ɖa le nye lɔlɔ̃tɔwo me",
   "listItemRemoved": "Woɖe {symbol} ɖa le {list} me",
-  "watchListDeleted": "Wotutu xexlẽdzesia ɖa: {list}"
+  "watchListDeleted": "Wotutu xexlẽdzesia ɖa: {list}",
+  "sharedToClipboard": "Wokɔpi e – tsɔe de afi sia afi si nèdi be nàmae le.",
+  "glossaryNoMatch": "Nya aɖeke mesɔ kple nu si nèle didim o.",
+  "cashInvalidAmount": "Ŋlɔ home xexlẽ si nye 0 alo wu nenema.",
+  "portfolioImportNothing": "Womete ŋu xlẽ nuƒeƒle alo nudzadzra aɖeke le nuŋɔŋlɔ sia me o. Kpɔe be fli ɖesiaɖe le abe kpɔɖeŋua ene.",
+  "lotPriceFarFromQuote": "Esia didi tso egbe ƒe asi ({price}) gbɔ ŋutɔ. Kpɔe ɖa, alo dzrae ɖo ake ne esɔ."
 }

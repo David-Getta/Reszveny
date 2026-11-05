@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Riassunto con IA · Oggi con le tue azioni",
   "favoriteRemoved": "{symbol} rimosso dai preferiti",
   "listItemRemoved": "{symbol} rimosso da «{list}»",
-  "watchListDeleted": "Lista eliminata: {list}"
+  "watchListDeleted": "Lista eliminata: {list}",
+  "sharedToClipboard": "Copiato negli appunti – incollalo dove vuoi condividerlo.",
+  "glossaryNoMatch": "Nessun termine corrisponde alla tua ricerca.",
+  "cashInvalidAmount": "Inserisci un importo pari o superiore a 0.",
+  "portfolioImportNothing": "Non è stato possibile leggere alcuna transazione da questo testo. Controlla che ogni riga sia come l’esempio.",
+  "lotPriceFarFromQuote": "È molto lontano dal prezzo di oggi ({price}). Controllalo o salva di nuovo se è corretto."
 }

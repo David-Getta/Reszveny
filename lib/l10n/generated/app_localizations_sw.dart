@@ -2300,6 +2300,26 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Imenakiliwa kwenye ubao wa kunakili – ibandike popote unapotaka kuishiriki.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Hakuna istilahi inayolingana na utafutaji wako.';
+
+  @override
+  String get cashInvalidAmount => 'Weka kiasi cha 0 au zaidi.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Hakuna muamala ulioweza kusomwa kutoka kwenye maandishi haya. Hakikisha kila mstari unafanana na mfano.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Hii iko mbali sana na bei ya leo ($price). Ikague, au hifadhi tena ikiwa ni sahihi.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Maswali kuhusu jalada lako la hisa';
 
   @override

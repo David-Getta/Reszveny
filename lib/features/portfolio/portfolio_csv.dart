@@ -496,6 +496,10 @@ final _buyVerb = RegExp(r'(^|[^a-z])(buy|bought)($|[^a-z])');
 // A megtakarítási terv (Scalable Capital „Savings plan”, „Sparplan”) végrehajtása is vétel.
 final _buyWords = RegExp(r'(^|[^\p{L}])(vétel|vásárlás|kauf|reinvest|savings plan|sparplan)', unicode: true);
 
+/// Eladás / vétel az irány-oszlopban (kisbetűvel): angol, magyar és német szóval vagy rövidítéssel.
+bool _isSell(String side) => _sellVerb.hasMatch(side) || side == 's' || side == 'sld' || _sellWords.hasMatch(side);
+bool _isBuy(String side) => _buyVerb.hasMatch(side) || side == 'b' || side == 'bot' || _buyWords.hasMatch(side);
+
 /// Osztaléksor (Schwab „Non-Qualified Div”, Robinhood „CDIV”, Scalable Capital „Distribution” is).
 final _dividendWords = RegExp(
   r'dividend|osztalék|distribution|ausschüttung|(^|[^\p{L}])c?div($|[^\p{L}])',
@@ -655,7 +659,33 @@ DateTime? _date(String raw, {bool monthFirst = false}) {
 /// A perjeles dátumok sorrendjét a fájl dönti el (egy 12-nél nagyobb tag), ennek
 /// híján az amerikai brókerek fejléce, végül a [monthFirst] (pl. amerikai nyelvi
 /// beállításnál).
-CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD', bool monthFirst = false}) {
+CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD', bool monthFirst = false, DateTime? now}) =>
+    _withoutFuture(_parse(text, defaultCurrency: defaultCurrency, monthFirst: monthFirst), now ?? DateTime.now());
+
+/// A jövőbeli dátumú sor (elírás, pl. 2027 a 2025 helyett) kimarad: a dátumválasztó sem enged
+/// jövőbeli napot, és a tétel különben már most tartott részvényként számítana. Egy nap
+/// ráhagyás az időzónák miatt.
+CsvImport _withoutFuture(CsvImport r, DateTime now) {
+  final limit = DateTime(now.year, now.month, now.day + 2);
+  bool ok(DateTime? d) => d == null || d.isBefore(limit);
+  final lots = [
+    for (final l in r.lots)
+      if (ok(l.date)) l,
+  ];
+  final dividends = [
+    for (final d in r.dividends)
+      if (ok(d.date)) d,
+  ];
+  final splits = [
+    for (final s in r.splits)
+      if (ok(s.date)) s,
+  ];
+  final dropped = r.lots.length - lots.length + r.dividends.length - dividends.length + r.splits.length - splits.length;
+  if (dropped == 0) return r;
+  return CsvImport(lots, r.skipped + dropped, dividends: dividends, splits: splits);
+}
+
+CsvImport _parse(String text, {required String defaultCurrency, required bool monthFirst}) {
   // A fájl eleji bájtsorrend-jel (BOM, pl. a saját exportban) nem a fejléc része.
   final lines = _records(text.replaceFirst('\uFEFF', ''));
   // A fejléc nem mindig az első sor: az első 30 sorban bármilyen fejléc, utána csak az
@@ -886,9 +916,9 @@ CsvImport _withHeader(
     bool? sell;
     if (side.isEmpty) {
       sell = signed != null && signed < 0;
-    } else if (_sellVerb.hasMatch(side) || side == 's' || side == 'sld' || _sellWords.hasMatch(side)) {
+    } else if (_isSell(side)) {
       sell = true;
-    } else if (_buyVerb.hasMatch(side) || side == 'b' || side == 'bot' || _buyWords.hasMatch(side)) {
+    } else if (_isBuy(side)) {
       sell = false;
     }
     final (price, priceCcy) = _price(cell(f, 'price'), number);
@@ -1072,7 +1102,14 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
       first = false;
       continue;
     }
-    final sell = (signed != null && signed < 0) || side == 'sell' || side == 's';
+    final sideSell = side.isNotEmpty && _isSell(side);
+    // Ismeretlen irány (pl. elírás): nem kerül be vételként – a kihagyottak közé számít.
+    if (side.isNotEmpty && !sideSell && !_isBuy(side)) {
+      if (!first) skipped++;
+      first = false;
+      continue;
+    }
+    final sell = (signed != null && signed < 0) || sideSell;
     final quantity = signed?.abs();
     final price = f.length > 2 ? parseDecimal(f[2]) : null;
     final ok = _symbol.hasMatch(symbol) && quantity != null && quantity > 0 && price != null && price > 0;

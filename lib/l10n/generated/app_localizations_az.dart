@@ -2300,6 +2300,25 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Mübadilə buferinə kopyalandı – paylaşmaq istədiyiniz yerə yapışdırın.';
+
+  @override
+  String get glossaryNoMatch => 'Axtarışınıza uyğun termin yoxdur.';
+
+  @override
+  String get cashInvalidAmount => '0 və ya daha böyük məbləğ daxil edin.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Bu mətndən heç bir əməliyyat oxumaq mümkün olmadı. Hər sətrin nümunədəki kimi olduğunu yoxlayın.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Bu, bugünkü qiymətdən ($price) çox fərqlidir. Yoxlayın və ya düzgündürsə, yenidən yadda saxlayın.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Portfeliniz haqqında suallar';
 
   @override

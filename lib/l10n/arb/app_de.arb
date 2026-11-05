@@ -891,5 +891,10 @@
   "briefNotificationTitle": "KI-Zusammenfassung · Heute bei deinen Aktien",
   "favoriteRemoved": "{symbol} aus Favoriten entfernt",
   "listItemRemoved": "{symbol} aus „{list}“ entfernt",
-  "watchListDeleted": "Liste gelöscht: {list}"
+  "watchListDeleted": "Liste gelöscht: {list}",
+  "sharedToClipboard": "In die Zwischenablage kopiert – füge es dort ein, wo du es teilen möchtest.",
+  "glossaryNoMatch": "Keine Begriffe passen zu deiner Suche.",
+  "cashInvalidAmount": "Gib einen Betrag von 0 oder mehr ein.",
+  "portfolioImportNothing": "Aus diesem Text konnten keine Transaktionen gelesen werden. Prüfe, ob jede Zeile wie das Beispiel aussieht.",
+  "lotPriceFarFromQuote": "Das weicht stark vom heutigen Kurs ({price}) ab. Prüfe es oder speichere erneut, wenn es stimmt."
 }

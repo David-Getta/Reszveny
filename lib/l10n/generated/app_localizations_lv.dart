@@ -2331,6 +2331,25 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Nokopēts starpliktuvē – ielīmējiet to tur, kur vēlaties kopīgot.';
+
+  @override
+  String get glossaryNoMatch => 'Jūsu meklējumam neatbilst neviens termins.';
+
+  @override
+  String get cashInvalidAmount => 'Ievadiet summu 0 vai vairāk.';
+
+  @override
+  String get portfolioImportNothing =>
+      'No šī teksta neizdevās nolasīt nevienu darījumu. Pārbaudiet, vai katra rinda izskatās kā piemērā.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Tas krietni atšķiras no šodienas cenas ($price). Pārbaudiet vai saglabājiet vēlreiz, ja viss ir pareizi.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Jautājumi par jūsu portfeli';
 
   @override

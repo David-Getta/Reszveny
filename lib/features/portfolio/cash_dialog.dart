@@ -42,7 +42,8 @@ class _CashDialogState extends State<_CashDialog> {
     final amount = parseAmount(_amount.text, Localizations.localeOf(context).toString());
     setState(() {
       _currencyError = !RegExp(r'^[A-Z]{3}$').hasMatch(ccy);
-      _amountError = amount == null || amount < 0 || !amount.isFinite ? l10n.portfolioInvalidNumber : null;
+      // A 0 megengedett (üres egyenleg): a hibaszöveg sem „nullánál nagyobbat” kér.
+      _amountError = amount == null || amount < 0 || !amount.isFinite ? l10n.cashInvalidAmount : null;
     });
     if (_currencyError || _amountError != null) return;
     await AppServices.of(context).portfolio.setCash(ccy, amount!);

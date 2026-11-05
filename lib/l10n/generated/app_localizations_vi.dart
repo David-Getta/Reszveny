@@ -2291,6 +2291,26 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Đã sao chép vào bảng tạm – hãy dán vào nơi bạn muốn chia sẻ.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Không có thuật ngữ nào khớp với tìm kiếm của bạn.';
+
+  @override
+  String get cashInvalidAmount => 'Hãy nhập số tiền từ 0 trở lên.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Không đọc được giao dịch nào từ văn bản này. Hãy kiểm tra xem mỗi dòng có giống ví dụ không.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Giá này chênh lệch nhiều so với giá hôm nay ($price). Hãy kiểm tra lại, hoặc lưu lần nữa nếu đúng.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Câu hỏi về danh mục của bạn';
 
   @override

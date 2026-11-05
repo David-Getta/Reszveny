@@ -2268,6 +2268,25 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'คัดลอกไปยังคลิปบอร์ดแล้ว – วางในที่ที่คุณต้องการแชร์';
+
+  @override
+  String get glossaryNoMatch => 'ไม่มีคำศัพท์ที่ตรงกับการค้นหา';
+
+  @override
+  String get cashInvalidAmount => 'ป้อนจำนวนเงินตั้งแต่ 0 ขึ้นไป';
+
+  @override
+  String get portfolioImportNothing =>
+      'ไม่สามารถอ่านรายการซื้อขายจากข้อความนี้ได้ ตรวจสอบว่าแต่ละบรรทัดมีรูปแบบเหมือนตัวอย่าง';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'ราคานี้ห่างจากราคาวันนี้ ($price) มาก โปรดตรวจสอบ หรือบันทึกอีกครั้งหากถูกต้อง';
+  }
+
+  @override
   String get portfolioAskTitle => 'คำถามเกี่ยวกับพอร์ตโฟลิโอของคุณ';
 
   @override

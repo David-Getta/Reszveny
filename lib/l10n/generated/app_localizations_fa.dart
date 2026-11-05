@@ -2294,6 +2294,25 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'در کلیپ‌بورد کپی شد – هر جا که می‌خواهید به اشتراک بگذارید، جای‌گذاری کنید.';
+
+  @override
+  String get glossaryNoMatch => 'هیچ اصطلاحی با جستجوی شما مطابقت ندارد.';
+
+  @override
+  String get cashInvalidAmount => 'مبلغی برابر با 0 یا بیشتر وارد کنید.';
+
+  @override
+  String get portfolioImportNothing =>
+      'هیچ تراکنشی از این متن خوانده نشد. بررسی کنید که هر خط شبیه نمونه باشد.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'این با قیمت امروز ($price) فاصلهٔ زیادی دارد. آن را بررسی کنید یا اگر درست است، دوباره ذخیره کنید.';
+  }
+
+  @override
   String get portfolioAskTitle => 'پرسش‌ها دربارهٔ سبد سهام شما';
 
   @override

@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Sumaryo sang AI · Subong upod ang imo mga stock",
   "favoriteRemoved": "Ginkuha ang {symbol} sa mga paborito",
   "listItemRemoved": "Ginkuha ang {symbol} sa {list}",
-  "watchListDeleted": "Napanas ang listahan: {list}"
+  "watchListDeleted": "Napanas ang listahan: {list}",
+  "sharedToClipboard": "Nakopya sa clipboard – i-paste ini bisan diin mo gusto ipaambit.",
+  "glossaryNoMatch": "Wala sang termino nga nagatupong sa imo ginpangita.",
+  "cashInvalidAmount": "Magbutang sang kantidad nga 0 ukon labaw pa.",
+  "portfolioImportNothing": "Wala sang transaksyon nga nabasa halin sa sini nga teksto. Siguraduha nga ang kada linya kaangay sang halimbawa.",
+  "lotPriceFarFromQuote": "Malayo gid ini sa presyo subong ({price}). Usisaa ini, ukon i-save liwat kon husto ini."
 }

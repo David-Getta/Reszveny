@@ -2302,6 +2302,25 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Wokɔpi e – tsɔe de afi sia afi si nèdi be nàmae le.';
+
+  @override
+  String get glossaryNoMatch => 'Nya aɖeke mesɔ kple nu si nèle didim o.';
+
+  @override
+  String get cashInvalidAmount => 'Ŋlɔ home xexlẽ si nye 0 alo wu nenema.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Womete ŋu xlẽ nuƒeƒle alo nudzadzra aɖeke le nuŋɔŋlɔ sia me o. Kpɔe be fli ɖesiaɖe le abe kpɔɖeŋua ene.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Esia didi tso egbe ƒe asi ($price) gbɔ ŋutɔ. Kpɔe ɖa, alo dzrae ɖo ake ne esɔ.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Nyabiasewo tso wò akpawo ŋu';
 
   @override

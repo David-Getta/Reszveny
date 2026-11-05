@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI خلاصو · اڄ توهان جي شيئرن سان",
   "favoriteRemoved": "{symbol} پسنديده مان هٽايو ويو",
   "listItemRemoved": "{symbol} {list} مان هٽايو ويو",
-  "watchListDeleted": "فهرست ڊاهي وئي: {list}"
+  "watchListDeleted": "فهرست ڊاهي وئي: {list}",
+  "sharedToClipboard": "ڪلپ بورڊ تي ڪاپي ٿي ويو – جتي شيئر ڪرڻ چاهيو اتي پيسٽ ڪريو.",
+  "glossaryNoMatch": "توهان جي ڳولا سان ڪو به اصطلاح نه ٿو ملي.",
+  "cashInvalidAmount": "0 يا ان کان وڌيڪ رقم داخل ڪريو.",
+  "portfolioImportNothing": "هن متن مان ڪو به ليڻ دين پڙهي نه سگهيو. چيڪ ڪريو ته هر قطار مثال جهڙي آهي.",
+  "lotPriceFarFromQuote": "هي اڄ جي قيمت ({price}) کان گهڻو پري آهي. ان کي جانچيو، يا جيڪڏهن صحيح آهي ته ٻيهر محفوظ ڪريو."
 }

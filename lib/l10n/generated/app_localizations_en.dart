@@ -2297,6 +2297,25 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Copied to the clipboard – paste it wherever you want to share it.';
+
+  @override
+  String get glossaryNoMatch => 'No terms match your search.';
+
+  @override
+  String get cashInvalidAmount => 'Enter an amount of 0 or more.';
+
+  @override
+  String get portfolioImportNothing =>
+      'No transactions could be read from this text. Check that each line looks like the example.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'This is far from today’s price ($price). Check it, or save again if it is right.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Questions about your portfolio';
 
   @override

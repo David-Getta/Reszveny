@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Përmbledhje me AI · Sot me aksionet tuaja",
   "favoriteRemoved": "{symbol} u hoq nga të preferuarat",
   "listItemRemoved": "{symbol} u hoq nga {list}",
-  "watchListDeleted": "Lista u fshi: {list}"
+  "watchListDeleted": "Lista u fshi: {list}",
+  "sharedToClipboard": "U kopjua në kujtesën e përkohshme – ngjiteni aty ku doni ta ndani.",
+  "glossaryNoMatch": "Asnjë term nuk përputhet me kërkimin tuaj.",
+  "cashInvalidAmount": "Vendosni një shumë 0 ose më të madhe.",
+  "portfolioImportNothing": "Nga ky tekst nuk u lexua asnjë transaksion. Kontrolloni që çdo rresht të duket si shembulli.",
+  "lotPriceFarFromQuote": "Ky çmim është shumë larg çmimit të sotëm ({price}). Kontrollojeni ose ruajeni përsëri nëse është i saktë."
 }

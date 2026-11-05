@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Resumo de IA · Hoje com as suas ações",
   "favoriteRemoved": "{symbol} removido dos favoritos",
   "listItemRemoved": "{symbol} removido de {list}",
-  "watchListDeleted": "Lista excluída: {list}"
+  "watchListDeleted": "Lista excluída: {list}",
+  "sharedToClipboard": "Copiado para a área de transferência – cole onde quiser compartilhar.",
+  "glossaryNoMatch": "Nenhum termo corresponde à pesquisa.",
+  "cashInvalidAmount": "Introduza um montante igual ou superior a 0.",
+  "portfolioImportNothing": "Não foi possível ler nenhuma transação deste texto. Verifique se cada linha segue o exemplo.",
+  "lotPriceFarFromQuote": "Este valor está muito longe do preço de hoje ({price}). Verifique-o ou guarde novamente se estiver correto."
 }

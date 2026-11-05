@@ -2315,6 +2315,26 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Voadika ny soratra – apetaho amin\'izay toerana tianao hizarana azy.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Tsy misy teny mifanaraka amin\'ny fikarohanao.';
+
+  @override
+  String get cashInvalidAmount => 'Ampidiro vola 0 na mihoatra.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Tsy nisy fividianana na fivarotana voavaky tamin\'ity soratra ity. Hamarino fa mitovy amin\'ny ohatra ny andalana tsirairay.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Lavitra be amin\'ny vidiny androany ($price) ity. Hamarino, na tehirizo indray raha marina izy.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Fanontaniana momba ny kitapom-bolanao';
 
   @override

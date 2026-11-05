@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI momichĩmbyre · Ko árape ne acción-kuéra ndive",
   "favoriteRemoved": "{symbol} oñembogue ojeguerohoryvévagui",
   "listItemRemoved": "{symbol} oñembogue {list}-gui",
-  "watchListDeleted": "Lista oñembogue: {list}"
+  "watchListDeleted": "Lista oñembogue: {list}",
+  "sharedToClipboard": "Oñekopia kuatiajokohápe – emboja eipotaháme emoherakuã hag̃ua.",
+  "glossaryNoMatch": "Ndaipóri ñeʼẽ ojojoguáva rehekávare.",
+  "cashInvalidAmount": "Ehai peteĩ mboýpa 0 térã hetave.",
+  "portfolioImportNothing": "Ndaikatúi oñemoñeʼẽ mbaʼeve jejogua térã ñemu ko moñeʼẽrãme. Ehecha peteĩteĩ línea ojoguápa techaukarãme.",
+  "lotPriceFarFromQuote": "Kóva mombyry ko árape tepy ({price}) guive. Ehechajey, térã eñongatu jey oĩporã ramo."
 }

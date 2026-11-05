@@ -23,6 +23,22 @@ class _NotesCardState extends State<NotesCard> {
   TextEditingController? _text;
   Timer? _debounce;
 
+  /// A gépelés szünetére váró mentés azonnal, ha az app (a böngészőfül) eltűnik: a bezárás
+  /// előtti utolsó szavak sem vesznek el.
+  late final AppLifecycleListener _lifecycle;
+
+  @override
+  void initState() {
+    super.initState();
+    _lifecycle = AppLifecycleListener(onHide: _flush, onPause: _flush, onDetach: _flush);
+  }
+
+  void _flush() {
+    if (!(_debounce?.isActive ?? false) || _notes == null) return;
+    _debounce!.cancel();
+    _notes!.set(widget.symbol, _text!.text);
+  }
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -45,6 +61,7 @@ class _NotesCardState extends State<NotesCard> {
 
   @override
   void dispose() {
+    _lifecycle.dispose();
     _notes?.removeListener(_onStoreChanged);
     // Kilépéskor a még nem mentett szöveg is mentődik – a fa lezárása után (a mentés
     // értesíti a többi oldalt, pl. a Kedvencek jegyzet-jelét; bontás közben az hibát dobna).

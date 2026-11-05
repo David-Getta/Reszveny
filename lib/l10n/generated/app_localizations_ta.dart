@@ -2309,6 +2309,26 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது – பகிர விரும்பும் இடத்தில் ஒட்டுங்கள்.';
+
+  @override
+  String get glossaryNoMatch => 'உங்கள் தேடலுடன் பொருந்தும் சொற்கள் இல்லை.';
+
+  @override
+  String get cashInvalidAmount =>
+      '0 அல்லது அதற்கு மேற்பட்ட தொகையை உள்ளிடுங்கள்.';
+
+  @override
+  String get portfolioImportNothing =>
+      'இந்த உரையிலிருந்து எந்தப் பரிவர்த்தனையையும் படிக்க முடியவில்லை. ஒவ்வொரு வரியும் எடுத்துக்காட்டைப் போல உள்ளதா எனச் சரிபார்க்குங்கள்.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'இது இன்றைய விலையிலிருந்து ($price) வெகு தொலைவில் உள்ளது. சரிபார்க்கவும், அல்லது சரியானது என்றால் மீண்டும் சேமிக்கவும்.';
+  }
+
+  @override
   String get portfolioAskTitle => 'உங்கள் போர்ட்ஃபோலியோ பற்றிய கேள்விகள்';
 
   @override

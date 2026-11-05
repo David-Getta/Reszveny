@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI a pakabuklan · Ita nga aldaw kadagiti stock-mo",
   "favoriteRemoved": "Naikkat ti {symbol} kadagiti paborito",
   "listItemRemoved": "Naikkat ti {symbol} iti {list}",
-  "watchListDeleted": "Naikkat ti listaan: {list}"
+  "watchListDeleted": "Naikkat ti listaan: {list}",
+  "sharedToClipboard": "Nakopya iti clipboard – i-paste daytoy iti sadinoman a kayatmo nga ibingay.",
+  "glossaryNoMatch": "Awan ti termino a maitutop iti binirokmo.",
+  "cashInvalidAmount": "Mangikabil iti gatad a 0 wenno ad-adu pay.",
+  "portfolioImportNothing": "Awan ti transaksion a nabasa manipud iti daytoy a teksto. Kitaem no kaasping ti pagarigan ti tunggal linia.",
+  "lotPriceFarFromQuote": "Adayo unay daytoy iti presio ita nga aldaw ({price}). Kitaem, wenno i-save manen no husto."
 }

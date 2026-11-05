@@ -891,5 +891,10 @@
   "briefNotificationTitle": "ملخص بالذكاء الاصطناعي · اليوم مع أسهمك",
   "favoriteRemoved": "تمت إزالة {symbol} من المفضلة",
   "listItemRemoved": "تمت إزالة {symbol} من {list}",
-  "watchListDeleted": "تم حذف القائمة: {list}"
+  "watchListDeleted": "تم حذف القائمة: {list}",
+  "sharedToClipboard": "تم النسخ إلى الحافظة – الصقه حيثما تريد مشاركته.",
+  "glossaryNoMatch": "لا توجد مصطلحات تطابق بحثك.",
+  "cashInvalidAmount": "أدخل مبلغًا يساوي 0 أو أكثر.",
+  "portfolioImportNothing": "تعذّرت قراءة أي معاملات من هذا النص. تأكّد من أن كل سطر يشبه المثال.",
+  "lotPriceFarFromQuote": "هذا بعيد جدًا عن سعر اليوم ({price}). تحقّق منه، أو احفظ مجددًا إن كان صحيحًا."
 }

@@ -2289,6 +2289,25 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'کلیپبورډ ته کاپي شو – هر چېرې چې یې شریکول غواړئ، هلته یې پېسټ کړئ.';
+
+  @override
+  String get glossaryNoMatch => 'هېڅ اصطلاح ستاسو له لټون سره سمون نه لري.';
+
+  @override
+  String get cashInvalidAmount => '0 یا له هغه زیات مقدار ولیکئ.';
+
+  @override
+  String get portfolioImportNothing =>
+      'له دې متن څخه هېڅ راکړه ورکړه ونه لوستل شوه. وګورئ چې هره کرښه د بېلګې په څېر ښکاري.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'دا د نن ورځې له بیې ($price) څخه ډېره لرې ده. وې ګورئ، یا که سمه وي بیا یې خوندي کړئ.';
+  }
+
+  @override
   String get portfolioAskTitle => 'ستاسو د پورټفولیو په اړه پوښتنې';
 
   @override

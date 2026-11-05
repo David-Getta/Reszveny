@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Incamake ya AI · Uyu munsi n’imigabane yawe",
   "favoriteRemoved": "{symbol} yakuwe mu byo ukunda",
   "listItemRemoved": "{symbol} yakuwe kuri {list}",
-  "watchListDeleted": "Urutonde rwasibwe: {list}"
+  "watchListDeleted": "Urutonde rwasibwe: {list}",
+  "sharedToClipboard": "Byakopowe mu bubiko bw'agateganyo – byomeke aho ushaka kubisangiza.",
+  "glossaryNoMatch": "Nta jambo rihuye n'ibyo washakishije.",
+  "cashInvalidAmount": "Andika amafaranga angana na 0 cyangwa arenga.",
+  "portfolioImportNothing": "Nta gikorwa cyo kugura cyangwa kugurisha cyashoboye gusomwa muri iyi nyandiko. Reba ko buri murongo usa n'urugero.",
+  "lotPriceFarFromQuote": "Iki giciro kiri kure cyane y'igiciro cy'uyu munsi ({price}). Kigenzure, cyangwa wongere ubike niba ari cyo."
 }

@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Taƙaitaccen AI · Yau tare da hannun jarinka",
   "favoriteRemoved": "An cire {symbol} daga abubuwan da aka fi so",
   "listItemRemoved": "An cire {symbol} daga {list}",
-  "watchListDeleted": "An share jeri: {list}"
+  "watchListDeleted": "An share jeri: {list}",
+  "sharedToClipboard": "An kwafa zuwa clipboard – liƙa shi duk inda kake son raba shi.",
+  "glossaryNoMatch": "Babu kalmar da ta dace da bincikenka.",
+  "cashInvalidAmount": "Shigar da adadi na 0 ko fiye.",
+  "portfolioImportNothing": "Ba a iya karanta wani ma'amala daga wannan rubutu ba. Duba cewa kowane layi yana kama da misalin.",
+  "lotPriceFarFromQuote": "Wannan ya yi nisa da farashin yau ({price}). Duba shi, ko ka sake ajiyewa idan daidai ne."
 }

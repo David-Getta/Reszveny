@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Katingbanan sa AI · Karon uban sa imong mga stock",
   "favoriteRemoved": "Natangtang ang {symbol} sa mga paborito",
   "listItemRemoved": "Natangtang ang {symbol} sa {list}",
-  "watchListDeleted": "Napapas ang lista: {list}"
+  "watchListDeleted": "Napapas ang lista: {list}",
+  "sharedToClipboard": "Nakopya sa clipboard – i-paste kini bisan asa nimo gustong ipaambit.",
+  "glossaryNoMatch": "Walay termino nga motakdo sa imong gipangita.",
+  "cashInvalidAmount": "Pagbutang og kantidad nga 0 o labaw pa.",
+  "portfolioImportNothing": "Walay transaksyon nga nabasa gikan niini nga teksto. Susiha nga ang matag linya susama sa pananglitan.",
+  "lotPriceFarFromQuote": "Layo kaayo kini sa presyo karon ({price}). Susiha kini, o i-save pag-usab kon husto kini."
 }

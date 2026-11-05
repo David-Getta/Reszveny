@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Buod ng AI · Ngayon kasama ang iyong mga stock",
   "favoriteRemoved": "Inalis ang {symbol} sa mga paborito",
   "listItemRemoved": "Inalis ang {symbol} sa {list}",
-  "watchListDeleted": "Nabura ang listahan: {list}"
+  "watchListDeleted": "Nabura ang listahan: {list}",
+  "sharedToClipboard": "Nakopya sa clipboard – i-paste ito kahit saan mo gustong ibahagi.",
+  "glossaryNoMatch": "Walang terminong tumutugma sa iyong paghahanap.",
+  "cashInvalidAmount": "Maglagay ng halagang 0 o higit pa.",
+  "portfolioImportNothing": "Walang transaksyong nabasa mula sa tekstong ito. Tingnan kung kamukha ng halimbawa ang bawat linya.",
+  "lotPriceFarFromQuote": "Malayo ito sa presyo ngayon ({price}). Suriin ito, o i-save muli kung tama ito."
 }

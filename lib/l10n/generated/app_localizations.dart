@@ -4008,6 +4008,36 @@ abstract class AppLocalizations {
   /// **'List deleted: {list}'**
   String watchListDeleted(String list);
 
+  /// Snackbar on the web when the browser has no share menu, so the text to share was copied to the clipboard instead.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied to the clipboard – paste it wherever you want to share it.'**
+  String get sharedToClipboard;
+
+  /// Shown on the glossary page when the search finds no term.
+  ///
+  /// In en, this message translates to:
+  /// **'No terms match your search.'**
+  String get glossaryNoMatch;
+
+  /// Field error in the cash balance dialog when the amount is not a number or is negative (0 is allowed).
+  ///
+  /// In en, this message translates to:
+  /// **'Enter an amount of 0 or more.'**
+  String get cashInvalidAmount;
+
+  /// Field error in the CSV import dialog when nothing could be read; the dialog stays open with the pasted text.
+  ///
+  /// In en, this message translates to:
+  /// **'No transactions could be read from this text. Check that each line looks like the example.'**
+  String get portfolioImportNothing;
+
+  /// Field error in the buy/sell dialog when the entered price is more than 10× above or below today's price (likely a typo). Saving again accepts it. price is today's price with currency.
+  ///
+  /// In en, this message translates to:
+  /// **'This is far from today’s price ({price}). Check it, or save again if it is right.'**
+  String lotPriceFarFromQuote(String price);
+
   /// Title of the sheet where the user asks the AI follow-up questions about its portfolio review.
   ///
   /// In en, this message translates to:

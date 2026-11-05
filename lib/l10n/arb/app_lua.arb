@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Muvungu wa AI · Lelu ne bintu biebe bia mu tshisumbu",
   "favoriteRemoved": "Tuaumbusha {symbol} mu biudi musue",
   "listItemRemoved": "Tuaumbusha {symbol} mu {list}",
-  "watchListDeleted": "Liste wajimijibua: {list}"
+  "watchListDeleted": "Liste wajimijibua: {list}",
+  "sharedToClipboard": "Mmukopiibue – teka muaba wonso uudi musue kuabanya.",
+  "glossaryNoMatch": "Kakuena muaku udi wakanangana ne bidi ukeba.",
+  "cashInvalidAmount": "Funda bungi bua 0 anyi bupite.",
+  "portfolioImportNothing": "Katuena mua kubala kusumba anyi kusumbisha nansha kumue mu mifundu eyi. Tangila ne: mulongo wonso udi bu tshilejilu.",
+  "lotPriceFarFromQuote": "Mushinga eu udi kule be ne mushinga wa lelu ({price}). Utangile, anyi lama kabidi bikala ulelela."
 }

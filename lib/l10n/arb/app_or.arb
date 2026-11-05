@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI ସାରାଂଶ · ଆଜି ଆପଣଙ୍କ ସେୟାର ସହ",
   "favoriteRemoved": "{symbol} ପସନ୍ଦରୁ ହଟାଗଲା",
   "listItemRemoved": "{symbol} {list}ରୁ ହଟାଗଲା",
-  "watchListDeleted": "ତାଲିକା ଡିଲିଟ ହେଲା: {list}"
+  "watchListDeleted": "ତାଲିକା ଡିଲିଟ ହେଲା: {list}",
+  "sharedToClipboard": "କ୍ଲିପବୋର୍ଡକୁ କପି ହେଲା – ଯେଉଁଠି ସେୟାର କରିବାକୁ ଚାହାଁନ୍ତି ସେଠାରେ ପେଷ୍ଟ କରନ୍ତୁ।",
+  "glossaryNoMatch": "ଆପଣଙ୍କ ଖୋଜ ସହ କୌଣସି ଶବ୍ଦ ମେଳ ଖାଉନାହିଁ।",
+  "cashInvalidAmount": "0 କିମ୍ବା ତାଠାରୁ ଅଧିକ ପରିମାଣ ଲେଖନ୍ତୁ।",
+  "portfolioImportNothing": "ଏହି ଟେକ୍ସଟରୁ କୌଣସି କାରବାର ପଢ଼ିହେଲା ନାହିଁ। ପ୍ରତ୍ୟେକ ଧାଡ଼ି ଉଦାହରଣ ପରି ଦେଖାଯାଉଛି କି ନାହିଁ ଯାଞ୍ଚ କରନ୍ତୁ।",
+  "lotPriceFarFromQuote": "ଏହା ଆଜିର ମୂଲ୍ୟଠାରୁ ({price}) ବହୁତ ଅଲଗା। ଏହାକୁ ଯାଞ୍ଚ କରନ୍ତୁ, କିମ୍ବା ଠିକ୍ ଥିଲେ ପୁଣି ସେଭ୍ କରନ୍ତୁ।"
 }

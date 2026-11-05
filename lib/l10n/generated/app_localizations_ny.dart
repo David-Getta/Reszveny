@@ -2304,6 +2304,25 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Zakopedwa pa clipboard – matani kulikonse komwe mukufuna kugawana.';
+
+  @override
+  String get glossaryNoMatch => 'Palibe mawu ofanana ndi zomwe mwasaka.';
+
+  @override
+  String get cashInvalidAmount => 'Lembani ndalama ya 0 kapena kupitirira.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Palibe zogula kapena zogulitsa zomwe zawerengedwa m\'mawu awa. Onetsetsani kuti mzere uliwonse ukufanana ndi chitsanzo.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Mtengo uwu uli kutali kwambiri ndi mtengo wa lero ($price). Uyang\'aneni, kapena musungenso ngati uli wolondola.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Mafunso okhudza masheya anu';
 
   @override

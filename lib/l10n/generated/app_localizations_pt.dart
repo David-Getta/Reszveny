@@ -2303,6 +2303,26 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Copiado para a área de transferência – cole onde quiser compartilhar.';
+
+  @override
+  String get glossaryNoMatch => 'Nenhum termo corresponde à pesquisa.';
+
+  @override
+  String get cashInvalidAmount =>
+      'Introduza um montante igual ou superior a 0.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Não foi possível ler nenhuma transação deste texto. Verifique se cada linha segue o exemplo.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Este valor está muito longe do preço de hoje ($price). Verifique-o ou guarde novamente se estiver correto.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Perguntas sobre sua carteira';
 
   @override

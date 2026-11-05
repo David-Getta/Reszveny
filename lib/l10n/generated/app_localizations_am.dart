@@ -2267,6 +2267,24 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard => 'ወደ ቅንጥብ ሰሌዳው ተቀድቷል – ማጋራት በሚፈልጉበት ቦታ ይለጥፉት።';
+
+  @override
+  String get glossaryNoMatch => 'ከፍለጋዎ ጋር የሚዛመድ ቃል የለም።';
+
+  @override
+  String get cashInvalidAmount => '0 ወይም ከዚያ በላይ የሆነ መጠን ያስገቡ።';
+
+  @override
+  String get portfolioImportNothing =>
+      'ከዚህ ጽሑፍ ምንም ግብይት ማንበብ አልተቻለም። እያንዳንዱ መስመር ምሳሌውን የሚመስል መሆኑን ያረጋግጡ።';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'ይህ ከዛሬው ዋጋ ($price) በጣም የራቀ ነው። ያረጋግጡት፣ ወይም ትክክል ከሆነ እንደገና ያስቀምጡ።';
+  }
+
+  @override
   String get portfolioAskTitle => 'ስለ ፖርትፎሊዮዎ ጥያቄዎች';
 
   @override

@@ -2303,6 +2303,25 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'An kwafa zuwa clipboard – liƙa shi duk inda kake son raba shi.';
+
+  @override
+  String get glossaryNoMatch => 'Babu kalmar da ta dace da bincikenka.';
+
+  @override
+  String get cashInvalidAmount => 'Shigar da adadi na 0 ko fiye.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Ba a iya karanta wani ma\'amala daga wannan rubutu ba. Duba cewa kowane layi yana kama da misalin.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Wannan ya yi nisa da farashin yau ($price). Duba shi, ko ka sake ajiyewa idan daidai ne.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Tambayoyi game da jakar hannun jarinku';
 
   @override

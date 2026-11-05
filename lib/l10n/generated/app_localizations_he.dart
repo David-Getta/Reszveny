@@ -2290,6 +2290,25 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'הועתק ללוח – אפשר להדביק בכל מקום שבו רוצים לשתף.';
+
+  @override
+  String get glossaryNoMatch => 'אין מונחים שתואמים לחיפוש.';
+
+  @override
+  String get cashInvalidAmount => 'יש להזין סכום של 0 ומעלה.';
+
+  @override
+  String get portfolioImportNothing =>
+      'לא ניתן היה לקרוא עסקאות מהטקסט הזה. יש לוודא שכל שורה נראית כמו בדוגמה.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'זה רחוק מאוד מהמחיר של היום ($price). כדאי לבדוק, או לשמור שוב אם הוא נכון.';
+  }
+
+  @override
   String get portfolioAskTitle => 'שאלות על התיק שלך';
 
   @override

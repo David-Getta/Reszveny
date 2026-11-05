@@ -2298,6 +2298,25 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Kopieret til udklipsholderen – indsæt det, hvor du vil dele det.';
+
+  @override
+  String get glossaryNoMatch => 'Ingen begreber matcher din søgning.';
+
+  @override
+  String get cashInvalidAmount => 'Angiv et beløb på 0 eller mere.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Der kunne ikke læses nogen transaktioner fra denne tekst. Tjek, at hver linje ligner eksemplet.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Det er langt fra dagens kurs ($price). Tjek det, eller gem igen, hvis det er rigtigt.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Spørgsmål om din portefølje';
 
   @override

@@ -2298,6 +2298,26 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Wɔakɔpi no – fa hyɛ baabiara a wopɛ sɛ wokyɛ no.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Nsɛmfua biara nni hɔ a ɛne nea wohwehwɛe no hyia.';
+
+  @override
+  String get cashInvalidAmount => 'Hyɛ sika dodow a ɛyɛ 0 anaa nea ɛboro so.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Yɛantumi ankenkan adetɔ anaa adetɔn biara wɔ nkyerɛwee yi mu. Hwɛ sɛ nkyerɛwee biara te sɛ nhwɛso no.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Eyi ne nnɛ bo ($price) nhyia koraa. Hwɛ mu bio, anaasɛ kora bio sɛ ɛteɛ a.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Nsɛmmisa fa wo nkyɛfa ho';
 
   @override

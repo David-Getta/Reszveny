@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Mukanda ya nkufi ya AI · Bubu ti bisikisu na nge",
   "favoriteRemoved": "{symbol} me katulama mu bizolwa",
   "listItemRemoved": "{symbol} me katulama mu {list}",
-  "watchListDeleted": "Lisiti me zimbisama: {list}"
+  "watchListDeleted": "Lisiti me zimbisama: {list}",
+  "sharedToClipboard": "Yo me kopiama – tula yo konso kisika nge ke zola kukabula yo.",
+  "glossaryNoMatch": "Ata ngogo mosi ve ke wakana ti kusosa na nge.",
+  "cashInvalidAmount": "Sonika ntalu ya 0 to mingi.",
+  "portfolioImportNothing": "Beto lendaka ve kutanga kusumba to kuteka ata mosi na masonuku yai. Tala nde konso ndonga kele bonso mbandu.",
+  "lotPriceFarFromQuote": "Yai kele ntama ti ntalu ya bubu ({price}). Tala yo, to bumba diaka kana yo kele mbote."
 }

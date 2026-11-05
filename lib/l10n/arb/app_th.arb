@@ -891,5 +891,10 @@
   "briefNotificationTitle": "สรุปโดย AI · วันนี้กับหุ้นของคุณ",
   "favoriteRemoved": "นำ {symbol} ออกจากรายการโปรดแล้ว",
   "listItemRemoved": "นำ {symbol} ออกจาก {list} แล้ว",
-  "watchListDeleted": "ลบรายการแล้ว: {list}"
+  "watchListDeleted": "ลบรายการแล้ว: {list}",
+  "sharedToClipboard": "คัดลอกไปยังคลิปบอร์ดแล้ว – วางในที่ที่คุณต้องการแชร์",
+  "glossaryNoMatch": "ไม่มีคำศัพท์ที่ตรงกับการค้นหา",
+  "cashInvalidAmount": "ป้อนจำนวนเงินตั้งแต่ 0 ขึ้นไป",
+  "portfolioImportNothing": "ไม่สามารถอ่านรายการซื้อขายจากข้อความนี้ได้ ตรวจสอบว่าแต่ละบรรทัดมีรูปแบบเหมือนตัวอย่าง",
+  "lotPriceFarFromQuote": "ราคานี้ห่างจากราคาวันนี้ ({price}) มาก โปรดตรวจสอบ หรือบันทึกอีกครั้งหากถูกต้อง"
 }

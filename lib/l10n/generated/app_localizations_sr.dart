@@ -2334,6 +2334,25 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Копирано у клипборд – налепите га где год желите да га поделите.';
+
+  @override
+  String get glossaryNoMatch => 'Ниједан појам не одговара претрази.';
+
+  @override
+  String get cashInvalidAmount => 'Унесите износ од 0 или више.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Из овог текста није могла да се прочита ниједна трансакција. Проверите да ли сваки ред изгледа као пример.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Цена је далеко од данашње ($price). Проверите је или је поново сачувајте ако је тачна.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Питања о вашем портфолију';
 
   @override

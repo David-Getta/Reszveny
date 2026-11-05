@@ -891,5 +891,10 @@
   "briefNotificationTitle": "ናይ AI ጽማቝ · ሎሚ ምስ ኣክስዮናትኩም",
   "favoriteRemoved": "{symbol} ካብ ዝተፈተዉ ተኣልዩ",
   "listItemRemoved": "{symbol} ካብ {list} ተኣልዩ",
-  "watchListDeleted": "ዝርዝር ተሰሪዙ: {list}"
+  "watchListDeleted": "ዝርዝር ተሰሪዙ: {list}",
+  "sharedToClipboard": "ናብ ክሊፕቦርድ ተቐዲሑ – ከተካፍልዎ ኣብ እትደልይዎ ቦታ ለጥፍዎ።",
+  "glossaryNoMatch": "ምስ ምድላይኩም ዝሰማማዕ ቃል የለን።",
+  "cashInvalidAmount": "0 ወይ ካብኡ ዝበዝሕ መጠን ኣእትዉ።",
+  "portfolioImportNothing": "ካብዚ ጽሑፍ ዝኾነ ልውውጥ ክንበብ ኣይከኣለን። ነፍሲ ወከፍ መስመር ከም እቲ ኣብነት ምዃኑ ኣረጋግጹ።",
+  "lotPriceFarFromQuote": "እዚ ካብ ናይ ሎሚ ዋጋ ({price}) ኣዝዩ ርሑቕ እዩ። ኣረጋግጽዎ፡ ወይ ቅኑዕ እንተኾይኑ እንደገና ዓቅብዎ።"
 }

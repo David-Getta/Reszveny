@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Ringkesan AI · Dinten ieu sareng saham anjeun",
   "favoriteRemoved": "{symbol} geus dipiceun tina paporit",
   "listItemRemoved": "{symbol} geus dipiceun tina {list}",
-  "watchListDeleted": "Daptar geus dipupus: {list}"
+  "watchListDeleted": "Daptar geus dipupus: {list}",
+  "sharedToClipboard": "Disalin kana papan klip – témpélkeun di mana waé anjeun hoyong ngabagikeunana.",
+  "glossaryNoMatch": "Teu aya istilah nu cocog jeung paluruhan anjeun.",
+  "cashInvalidAmount": "Asupkeun jumlah 0 atawa leuwih.",
+  "portfolioImportNothing": "Teu aya transaksi nu bisa dibaca tina téks ieu. Pariksa yén unggal baris katingalina siga conto.",
+  "lotPriceFarFromQuote": "Ieu tebih teuing ti harga poé ieu ({price}). Pariksa deui, atanapi simpen deui upami leres."
 }

@@ -2298,6 +2298,25 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'کۆپی کرا بۆ کلیپبۆرد – لە هەر شوێنێک دەتەوێت هاوبەشی بکەیت، بیلکێنە.';
+
+  @override
+  String get glossaryNoMatch => 'هیچ زاراوەیەک لەگەڵ گەڕانەکەت ناگونجێت.';
+
+  @override
+  String get cashInvalidAmount => 'بڕێکی 0 یان زیاتر بنووسە.';
+
+  @override
+  String get portfolioImportNothing =>
+      'هیچ مامەڵەیەک لەم دەقە نەخوێندرایەوە. دڵنیابە لەوەی هەر هێڵێک وەک نموونەکە وایە.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'ئەمە زۆر دوورە لە نرخی ئەمڕۆ ($price). بیپشکنە، یان ئەگەر دروستە دووبارە پاشەکەوتی بکە.';
+  }
+
+  @override
   String get portfolioAskTitle => 'پرسیارەکان دەربارەی پۆرتفۆلیۆکەت';
 
   @override

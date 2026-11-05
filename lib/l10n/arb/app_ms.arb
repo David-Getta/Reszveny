@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Ringkasan AI · Hari ini dengan saham anda",
   "favoriteRemoved": "{symbol} dialih keluar daripada kegemaran",
   "listItemRemoved": "{symbol} dialih keluar daripada {list}",
-  "watchListDeleted": "Senarai dipadam: {list}"
+  "watchListDeleted": "Senarai dipadam: {list}",
+  "sharedToClipboard": "Disalin ke papan keratan – tampal di mana-mana sahaja anda mahu berkongsinya.",
+  "glossaryNoMatch": "Tiada istilah yang sepadan dengan carian anda.",
+  "cashInvalidAmount": "Masukkan jumlah 0 atau lebih.",
+  "portfolioImportNothing": "Tiada transaksi yang dapat dibaca daripada teks ini. Pastikan setiap baris kelihatan seperti contoh.",
+  "lotPriceFarFromQuote": "Ini jauh berbeza daripada harga hari ini ({price}). Semak semula, atau simpan sekali lagi jika betul."
 }

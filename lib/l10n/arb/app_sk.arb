@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI zhrnutie · Dnes s vašimi akciami",
   "favoriteRemoved": "{symbol} bol odstránený z obľúbených",
   "listItemRemoved": "{symbol} bol odstránený zo zoznamu {list}",
-  "watchListDeleted": "Zoznam bol odstránený: {list}"
+  "watchListDeleted": "Zoznam bol odstránený: {list}",
+  "sharedToClipboard": "Skopírované do schránky – vložte to tam, kde to chcete zdieľať.",
+  "glossaryNoMatch": "Vyhľadávaniu nezodpovedajú žiadne pojmy.",
+  "cashInvalidAmount": "Zadajte sumu 0 alebo viac.",
+  "portfolioImportNothing": "Z tohto textu sa nepodarilo načítať žiadnu transakciu. Skontrolujte, či každý riadok vyzerá ako príklad.",
+  "lotPriceFarFromQuote": "Toto sa výrazne líši od dnešnej ceny ({price}). Skontrolujte to alebo uložte znova, ak je to správne."
 }

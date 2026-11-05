@@ -2294,6 +2294,26 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Disalin ke papan klip – tempel di mana pun Anda ingin membagikannya.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Tidak ada istilah yang cocok dengan pencarian Anda.';
+
+  @override
+  String get cashInvalidAmount => 'Masukkan jumlah 0 atau lebih.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Tidak ada transaksi yang dapat dibaca dari teks ini. Pastikan setiap baris terlihat seperti contoh.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Ini jauh dari harga hari ini ($price). Periksa kembali, atau simpan lagi jika sudah benar.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Pertanyaan tentang portofolio Anda';
 
   @override

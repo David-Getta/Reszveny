@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI обобщение · Днес с вашите акции",
   "favoriteRemoved": "{symbol} е премахната от любими",
   "listItemRemoved": "{symbol} е премахната от списъка „{list}“",
-  "watchListDeleted": "Списъкът е изтрит: {list}"
+  "watchListDeleted": "Списъкът е изтрит: {list}",
+  "sharedToClipboard": "Копирано в клипборда – поставете го там, където искате да го споделите.",
+  "glossaryNoMatch": "Няма термини, отговарящи на търсенето ви.",
+  "cashInvalidAmount": "Въведете сума 0 или повече.",
+  "portfolioImportNothing": "От този текст не можаха да бъдат прочетени транзакции. Проверете дали всеки ред изглежда като примера.",
+  "lotPriceFarFromQuote": "Това е далеч от днешната цена ({price}). Проверете или запазете отново, ако е вярно."
 }

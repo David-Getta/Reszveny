@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI सारांश · आज रउआ शेयर संगे",
   "favoriteRemoved": "{symbol} पसंदीदा से हटा दिहल गइल",
   "listItemRemoved": "{symbol} {list} से हटा दिहल गइल",
-  "watchListDeleted": "सूची मिटा दिहल गइल: {list}"
+  "watchListDeleted": "सूची मिटा दिहल गइल: {list}",
+  "sharedToClipboard": "क्लिपबोर्ड में कॉपी हो गइल – जहाँ साझा करे के चाहत बानी, उहाँ पेस्ट करीं।",
+  "glossaryNoMatch": "राउर खोज से मेल खाए वाला कवनो शब्द नइखे।",
+  "cashInvalidAmount": "0 भा ओकरा से ज्यादा रकम डालीं।",
+  "portfolioImportNothing": "एह टेक्स्ट से कवनो लेन-देन ना पढ़ल जा सकल। जाँच लीं कि हर लाइन उदाहरण जइसन देखात बा।",
+  "lotPriceFarFromQuote": "ई आज के दाम ({price}) से बहुत अलग बा। जाँच लीं, ना त सही होखे त फेर से सेव करीं।"
 }

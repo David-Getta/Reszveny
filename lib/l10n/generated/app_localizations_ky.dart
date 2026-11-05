@@ -2300,6 +2300,25 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Алмашуу буферине көчүрүлдү – бөлүшкүңүз келген жерге коюңуз.';
+
+  @override
+  String get glossaryNoMatch => 'Издөөңүзгө дал келген термин жок.';
+
+  @override
+  String get cashInvalidAmount => '0 же андан көп сумманы киргизиңиз.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Бул тексттен бир да транзакция окулган жок. Ар бир сап мисалдагыдай экенин текшериңиз.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Бул бүгүнкү баадан ($price) өтө алыс. Текшериңиз же туура болсо, кайра сактаңыз.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Портфелиңиз боюнча суроолор';
 
   @override

@@ -2191,6 +2191,23 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard => '已复制到剪贴板，粘贴到想分享的地方即可。';
+
+  @override
+  String get glossaryNoMatch => '没有与搜索匹配的术语。';
+
+  @override
+  String get cashInvalidAmount => '请输入大于或等于 0 的金额。';
+
+  @override
+  String get portfolioImportNothing => '无法从该文本中读取任何交易。请检查每一行是否与示例格式一致。';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return '此价格与今日价格（$price）相差很大。请核对，若无误请再次保存。';
+  }
+
+  @override
   String get portfolioAskTitle => '关于你的投资组合的问题';
 
   @override
@@ -5452,6 +5469,23 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String watchListDeleted(String list) {
     return '已刪除清單：$list';
+  }
+
+  @override
+  String get sharedToClipboard => '已複製到剪貼簿，貼上到想分享的地方即可。';
+
+  @override
+  String get glossaryNoMatch => '沒有符合搜尋的詞彙。';
+
+  @override
+  String get cashInvalidAmount => '請輸入大於或等於 0 的金額。';
+
+  @override
+  String get portfolioImportNothing => '無法從此文字讀取任何交易。請檢查每一行是否與範例格式一致。';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return '此價格與今日價格（$price）相差很大。請核對，如無誤請再次儲存。';
   }
 
   @override

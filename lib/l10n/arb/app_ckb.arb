@@ -891,5 +891,10 @@
   "briefNotificationTitle": "کورتەی AI · ئەمڕۆ لەگەڵ پشکەکانت",
   "favoriteRemoved": "{symbol} لە دڵخوازەکان لابرا",
   "listItemRemoved": "{symbol} لە {list} لابرا",
-  "watchListDeleted": "لیست سڕایەوە: {list}"
+  "watchListDeleted": "لیست سڕایەوە: {list}",
+  "sharedToClipboard": "کۆپی کرا بۆ کلیپبۆرد – لە هەر شوێنێک دەتەوێت هاوبەشی بکەیت، بیلکێنە.",
+  "glossaryNoMatch": "هیچ زاراوەیەک لەگەڵ گەڕانەکەت ناگونجێت.",
+  "cashInvalidAmount": "بڕێکی 0 یان زیاتر بنووسە.",
+  "portfolioImportNothing": "هیچ مامەڵەیەک لەم دەقە نەخوێندرایەوە. دڵنیابە لەوەی هەر هێڵێک وەک نموونەکە وایە.",
+  "lotPriceFarFromQuote": "ئەمە زۆر دوورە لە نرخی ئەمڕۆ ({price}). بیپشکنە، یان ئەگەر دروستە دووبارە پاشەکەوتی بکە."
 }

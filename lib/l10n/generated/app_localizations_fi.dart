@@ -2301,6 +2301,25 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Kopioitu leikepöydälle – liitä se sinne, minne haluat sen jakaa.';
+
+  @override
+  String get glossaryNoMatch => 'Haullasi ei löytynyt termejä.';
+
+  @override
+  String get cashInvalidAmount => 'Anna summa, joka on 0 tai enemmän.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Tekstistä ei voitu lukea yhtään tapahtumaa. Tarkista, että jokainen rivi on esimerkin mukainen.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Tämä poikkeaa paljon tämän päivän hinnasta ($price). Tarkista se tai tallenna uudelleen, jos se on oikein.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Kysymyksiä salkustasi';
 
   @override

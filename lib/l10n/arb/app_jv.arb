@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Ringkesan AI · Dina iki karo saham sampeyan",
   "favoriteRemoved": "{symbol} wis dibusak saka favorit",
   "listItemRemoved": "{symbol} wis dibusak saka {list}",
-  "watchListDeleted": "Dhaptar wis dibusak: {list}"
+  "watchListDeleted": "Dhaptar wis dibusak: {list}",
+  "sharedToClipboard": "Disalin menyang papan klip – tempelake ing ngendi wae sampeyan pengin mbagekake.",
+  "glossaryNoMatch": "Ora ana istilah sing cocog karo panelusuran sampeyan.",
+  "cashInvalidAmount": "Lebokna jumlah 0 utawa luwih.",
+  "portfolioImportNothing": "Ora ana transaksi sing bisa diwaca saka teks iki. Priksa manawa saben baris katon kaya conto.",
+  "lotPriceFarFromQuote": "Iki adoh banget saka rega dina iki ({price}). Priksa dhisik, utawa simpen maneh yen wis bener."
 }

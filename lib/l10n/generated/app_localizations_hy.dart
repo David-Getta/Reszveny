@@ -2305,6 +2305,25 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Պատճենվեց սեղմատախտակին – տեղադրեք այնտեղ, որտեղ ուզում եք կիսվել։';
+
+  @override
+  String get glossaryNoMatch => 'Ձեր որոնմանը համապատասխանող տերմին չկա։';
+
+  @override
+  String get cashInvalidAmount => 'Մուտքագրեք 0 կամ ավելի գումար։';
+
+  @override
+  String get portfolioImportNothing =>
+      'Այս տեքստից հնարավոր չեղավ կարդալ որևէ գործարք։ Ստուգեք, որ յուրաքանչյուր տող նման լինի օրինակին։';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Սա շատ է տարբերվում այսօրվա գնից ($price)։ Ստուգեք կամ նորից պահեք, եթե ճիշտ է։';
+  }
+
+  @override
   String get portfolioAskTitle => 'Հարցեր ձեր պորտֆելի մասին';
 
   @override

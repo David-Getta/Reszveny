@@ -2223,6 +2223,24 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard => 'クリップボードにコピーしました。共有したい場所に貼り付けてください。';
+
+  @override
+  String get glossaryNoMatch => '検索に一致する用語はありません。';
+
+  @override
+  String get cashInvalidAmount => '0以上の金額を入力してください。';
+
+  @override
+  String get portfolioImportNothing =>
+      'このテキストから取引を読み取れませんでした。各行が例と同じ形式になっているか確認してください。';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return '今日の株価（$price）と大きく離れています。確認するか、正しければもう一度保存してください。';
+  }
+
+  @override
   String get portfolioAskTitle => 'ポートフォリオについての質問';
 
   @override

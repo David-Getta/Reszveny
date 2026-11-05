@@ -2308,6 +2308,25 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Kukopishelwe ebhodini lokunamathisela – namathisela noma kuphi lapho ufuna ukwabelana khona.';
+
+  @override
+  String get glossaryNoMatch => 'Awekho amagama ahambisana nosesho lwakho.';
+
+  @override
+  String get cashInvalidAmount => 'Faka inani elingu-0 noma ngaphezulu.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Akukho kuthenga noma kuthengisa okufundekile kulo mbhalo. Hlola ukuthi umugqa ngamunye ubukeka njengesibonelo.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Le ntengo ikude kakhulu nentengo yanamuhla ($price). Yihlole, noma uyilondoloze futhi uma ilungile.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Imibuzo ngephothifoliyo yakho';
 
   @override

@@ -2313,6 +2313,27 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Nakopya sa clipboard – i-paste ini bisan diin mo gusto ipaambit.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Wala sang termino nga nagatupong sa imo ginpangita.';
+
+  @override
+  String get cashInvalidAmount =>
+      'Magbutang sang kantidad nga 0 ukon labaw pa.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Wala sang transaksyon nga nabasa halin sa sini nga teksto. Siguraduha nga ang kada linya kaangay sang halimbawa.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Malayo gid ini sa presyo subong ($price). Usisaa ini, ukon i-save liwat kon husto ini.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Mga pamangkot parte sa imo portfolio';
 
   @override

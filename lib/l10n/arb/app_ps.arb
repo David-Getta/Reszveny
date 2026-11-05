@@ -891,5 +891,10 @@
   "briefNotificationTitle": "د AI لنډیز · نن ستاسو له ونډو سره",
   "favoriteRemoved": "{symbol} له خوښو لرې شو",
   "listItemRemoved": "{symbol} له {list} لرې شو",
-  "watchListDeleted": "لېست ړنګ شو: {list}"
+  "watchListDeleted": "لېست ړنګ شو: {list}",
+  "sharedToClipboard": "کلیپبورډ ته کاپي شو – هر چېرې چې یې شریکول غواړئ، هلته یې پېسټ کړئ.",
+  "glossaryNoMatch": "هېڅ اصطلاح ستاسو له لټون سره سمون نه لري.",
+  "cashInvalidAmount": "0 یا له هغه زیات مقدار ولیکئ.",
+  "portfolioImportNothing": "له دې متن څخه هېڅ راکړه ورکړه ونه لوستل شوه. وګورئ چې هره کرښه د بېلګې په څېر ښکاري.",
+  "lotPriceFarFromQuote": "دا د نن ورځې له بیې ({price}) څخه ډېره لرې ده. وې ګورئ، یا که سمه وي بیا یې خوندي کړئ."
 }

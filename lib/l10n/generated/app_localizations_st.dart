@@ -2311,6 +2311,26 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'E kopilwe klipbotong – e kgomaretse moo o batlang ho e arolelana teng.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Ha ho lentswe le tsamaellanang le seo o se batlileng.';
+
+  @override
+  String get cashInvalidAmount => 'Kenya palo ya 0 kapa ho feta.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Ha ho theko kapa thekiso e badilweng mongolong ona. Hlahloba hore mola ka mong o tshwana le mohlala.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Theko ena e hole haholo le theko ya kajeno ($price). E hlahlobe, kapa o e boloke hape haeba e nepahetse.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Dipotso ka potefolio ya hao';
 
   @override

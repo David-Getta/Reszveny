@@ -2309,6 +2309,26 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Byakopowe mu bubiko bw\'agateganyo – byomeke aho ushaka kubisangiza.';
+
+  @override
+  String get glossaryNoMatch => 'Nta jambo rihuye n\'ibyo washakishije.';
+
+  @override
+  String get cashInvalidAmount =>
+      'Andika amafaranga angana na 0 cyangwa arenga.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Nta gikorwa cyo kugura cyangwa kugurisha cyashoboye gusomwa muri iyi nyandiko. Reba ko buri murongo usa n\'urugero.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Iki giciro kiri kure cyane y\'igiciro cy\'uyu munsi ($price). Kigenzure, cyangwa wongere ubike niba ari cyo.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Ibibazo ku ishoramari ryawe';
 
   @override

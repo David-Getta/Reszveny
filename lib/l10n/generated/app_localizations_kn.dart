@@ -2303,6 +2303,25 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ – ಹಂಚಿಕೊಳ್ಳಲು ಬಯಸುವಲ್ಲಿ ಅಂಟಿಸಿ.';
+
+  @override
+  String get glossaryNoMatch => 'ನಿಮ್ಮ ಹುಡುಕಾಟಕ್ಕೆ ಹೊಂದುವ ಯಾವುದೇ ಪದವಿಲ್ಲ.';
+
+  @override
+  String get cashInvalidAmount => '0 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ.';
+
+  @override
+  String get portfolioImportNothing =>
+      'ಈ ಪಠ್ಯದಿಂದ ಯಾವುದೇ ವಹಿವಾಟನ್ನು ಓದಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಪ್ರತಿ ಸಾಲು ಉದಾಹರಣೆಯಂತೆ ಇದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'ಇದು ಇಂದಿನ ಬೆಲೆಯಿಂದ ($price) ತುಂಬಾ ದೂರವಿದೆ. ಪರಿಶೀಲಿಸಿ, ಅಥವಾ ಸರಿಯಾಗಿದ್ದರೆ ಮತ್ತೆ ಉಳಿಸಿ.';
+  }
+
+  @override
   String get portfolioAskTitle => 'ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಕುರಿತ ಪ್ರಶ್ನೆಗಳು';
 
   @override

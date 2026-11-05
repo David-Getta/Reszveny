@@ -891,5 +891,10 @@
   "briefNotificationTitle": "סיכום AI · היום עם המניות שלך",
   "favoriteRemoved": "{symbol} הוסרה מהמועדפים",
   "listItemRemoved": "{symbol} הוסרה מהרשימה \"{list}\"",
-  "watchListDeleted": "הרשימה נמחקה: {list}"
+  "watchListDeleted": "הרשימה נמחקה: {list}",
+  "sharedToClipboard": "הועתק ללוח – אפשר להדביק בכל מקום שבו רוצים לשתף.",
+  "glossaryNoMatch": "אין מונחים שתואמים לחיפוש.",
+  "cashInvalidAmount": "יש להזין סכום של 0 ומעלה.",
+  "portfolioImportNothing": "לא ניתן היה לקרוא עסקאות מהטקסט הזה. יש לוודא שכל שורה נראית כמו בדוגמה.",
+  "lotPriceFarFromQuote": "זה רחוק מאוד מהמחיר של היום ({price}). כדאי לבדוק, או לשמור שוב אם הוא נכון."
 }

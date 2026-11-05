@@ -891,5 +891,10 @@
   "briefNotificationTitle": "خلاصهٔ هوش مصنوعی · امروز با سهام شما",
   "favoriteRemoved": "{symbol} از علاقه‌مندی‌ها حذف شد",
   "listItemRemoved": "{symbol} از {list} حذف شد",
-  "watchListDeleted": "فهرست حذف شد: {list}"
+  "watchListDeleted": "فهرست حذف شد: {list}",
+  "sharedToClipboard": "در کلیپ‌بورد کپی شد – هر جا که می‌خواهید به اشتراک بگذارید، جای‌گذاری کنید.",
+  "glossaryNoMatch": "هیچ اصطلاحی با جستجوی شما مطابقت ندارد.",
+  "cashInvalidAmount": "مبلغی برابر با 0 یا بیشتر وارد کنید.",
+  "portfolioImportNothing": "هیچ تراکنشی از این متن خوانده نشد. بررسی کنید که هر خط شبیه نمونه باشد.",
+  "lotPriceFarFromQuote": "این با قیمت امروز ({price}) فاصلهٔ زیادی دارد. آن را بررسی کنید یا اگر درست است، دوباره ذخیره کنید."
 }

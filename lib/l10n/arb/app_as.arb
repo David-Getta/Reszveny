@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI সাৰাংশ · আজি আপোনাৰ শ্বেয়াৰসমূহ",
   "favoriteRemoved": "{symbol} প্ৰিয়ৰ পৰা আঁতৰোৱা হ'ল",
   "listItemRemoved": "{symbol} {list} তালিকাৰ পৰা আঁতৰোৱা হ'ল",
-  "watchListDeleted": "তালিকা মচা হ'ল: {list}"
+  "watchListDeleted": "তালিকা মচা হ'ল: {list}",
+  "sharedToClipboard": "ক্লিপব'ৰ্ডত কপি কৰা হ'ল – য'তে শ্বেয়াৰ কৰিব বিচাৰে তাতে পেষ্ট কৰক।",
+  "glossaryNoMatch": "আপোনাৰ সন্ধানৰ সৈতে মিলা কোনো শব্দ নাই।",
+  "cashInvalidAmount": "0 বা তাতকৈ বেছি পৰিমাণ লিখক।",
+  "portfolioImportNothing": "এই পাঠৰ পৰা কোনো লেনদেন পঢ়িব পৰা নগ'ল। প্ৰতিটো শাৰী উদাহৰণটোৰ দৰে হৈছে নে নাই পৰীক্ষা কৰক।",
+  "lotPriceFarFromQuote": "ই আজিৰ দামৰ ({price}) পৰা বহুত বেলেগ। পৰীক্ষা কৰক, বা শুদ্ধ হ'লে পুনৰ ছেভ কৰক।"
 }

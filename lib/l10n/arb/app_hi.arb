@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI सारांश · आज आपके शेयरों के साथ",
   "favoriteRemoved": "{symbol} पसंदीदा से हटाया गया",
   "listItemRemoved": "{symbol} {list} से हटाया गया",
-  "watchListDeleted": "सूची हटाई गई: {list}"
+  "watchListDeleted": "सूची हटाई गई: {list}",
+  "sharedToClipboard": "क्लिपबोर्ड में कॉपी हो गया – जहाँ शेयर करना चाहें, वहाँ पेस्ट करें।",
+  "glossaryNoMatch": "आपकी खोज से कोई शब्द मेल नहीं खाता।",
+  "cashInvalidAmount": "0 या उससे अधिक की राशि डालें।",
+  "portfolioImportNothing": "इस टेक्स्ट से कोई लेन-देन नहीं पढ़ा जा सका। जाँच लें कि हर पंक्ति उदाहरण जैसी दिखती है।",
+  "lotPriceFarFromQuote": "यह आज की कीमत ({price}) से बहुत अलग है। इसे जाँच लें, या सही हो तो फिर से सेव करें।"
 }

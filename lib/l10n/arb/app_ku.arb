@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Kurteya AI · Îro bi pişkên te re",
   "favoriteRemoved": "{symbol} ji bijareyan hate rakirin",
   "listItemRemoved": "{symbol} ji {list} hate rakirin",
-  "watchListDeleted": "Lîste hate jêbirin: {list}"
+  "watchListDeleted": "Lîste hate jêbirin: {list}",
+  "sharedToClipboard": "Li panoyê hat kopîkirin – li ku dixwazî parve bikî, lê bixe.",
+  "glossaryNoMatch": "Ti têgeh bi lêgerîna te re li hev nayên.",
+  "cashInvalidAmount": "Mîqdarek 0 an zêdetir binivîse.",
+  "portfolioImportNothing": "Ji vê nivîsê ti danûstandin nehatin xwendin. Kontrol bike ku her rêz wek mînakê xuya dike.",
+  "lotPriceFarFromQuote": "Ev ji bihayê îro ({price}) pir dûr e. Kontrol bike, an jî heke rast be dîsa tomar bike."
 }

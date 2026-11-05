@@ -2305,6 +2305,25 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Waxaa lagu koobiyeeyay kilibboodhka – ku dheji meel kasta oo aad rabto inaad ku wadaagto.';
+
+  @override
+  String get glossaryNoMatch => 'Erey la mid ah raadintaada lama helin.';
+
+  @override
+  String get cashInvalidAmount => 'Geli lacag 0 ah ama ka badan.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Qoraalkan lagama akhriyi karin wax macaamil ah. Hubi in saf kastaa u eg yahay tusaalaha.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Tani aad ayay uga fog tahay qiimaha maanta ($price). Hubi, ama mar kale kaydi haddii ay sax tahay.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Su\'aalo ku saabsan portfoliyadaada';
 
   @override

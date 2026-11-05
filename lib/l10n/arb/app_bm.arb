@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI kuma surun · Bi ni i ka aksiyɔnw",
   "favoriteRemoved": "{symbol} bɔra diyanyelenw na",
   "listItemRemoved": "{symbol} bɔra {list} na",
-  "watchListDeleted": "Lisi jɔsira: {list}"
+  "watchListDeleted": "Lisi jɔsira: {list}",
+  "sharedToClipboard": "A kopiyelen don – a bila yɔrɔ o yɔrɔ i b'a fɛ k'a jɛnsɛn yen.",
+  "glossaryNoMatch": "Daɲɛ si tɛ bɛn i ka ɲinini ma.",
+  "cashInvalidAmount": "Hakɛ sɛbɛn min ye 0 ye walima min ka bon ni 0 ye.",
+  "portfolioImportNothing": "Sanni walima feereli si ma se ka kalan nin sɛbɛn in kɔnɔ. A lajɛ ko sira kelen kelen bɛɛ bɛ i n'a fɔ misali.",
+  "lotPriceFarFromQuote": "Nin ni bi sɔngɔ ({price}) cɛ ka jan kosɛbɛ. A lajɛ, walima i k'a mara tugun ni a ka ɲi."
 }

@@ -2297,6 +2297,25 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Li kopye – kole l nenpòt kote ou vle pataje l.';
+
+  @override
+  String get glossaryNoMatch => 'Pa gen okenn tèm ki koresponn ak rechèch ou.';
+
+  @override
+  String get cashInvalidAmount => 'Antre yon montan 0 oswa plis.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Nou pa t ka li okenn tranzaksyon nan tèks sa a. Verifye si chak liy sanble ak egzanp lan.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Sa a lwen pri jodi a ($price). Verifye l, oswa anrejistre ankò si l kòrèk.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Kesyon sou pòtfèy ou';
 
   @override

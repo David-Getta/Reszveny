@@ -59,6 +59,15 @@ class _GlossaryPageState extends State<GlossaryPage> {
                   ),
                 ),
               ),
+              if (shown.isEmpty)
+                Padding(
+                  padding: const EdgeInsets.all(24),
+                  child: Text(
+                    l10n.glossaryNoMatch,
+                    key: const ValueKey('glossary-no-match'),
+                    style: theme.textTheme.bodyMedium?.copyWith(color: p.muted),
+                  ),
+                ),
               Expanded(
                 child: ListView.separated(
                   padding: const EdgeInsets.fromLTRB(16, 4, 16, 24),

@@ -174,6 +174,10 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   String? _quantityError;
   String? _priceError;
 
+  /// A mai ártól nagyon eltérő (tízszeres) ár egyszer rákérdez (elírás, pl. egy lemaradt
+  /// tizedesjel); a második mentés már elfogadja. Az ár módosítása újra kérdez.
+  String? _farPriceConfirmed;
+
   /// A díj (jutalék) mezője; amíg egyik tranzakciónak sincs díja, egy gomb mutatja meg.
   final _fee = TextEditingController();
 
@@ -405,7 +409,14 @@ class _AddLotDialogState extends State<_AddLotDialog> {
           : (min != null && q < min - 1e-9)
           ? l10n.portfolioBuyBelowSold(fmt.quantity(min))
           : null;
-      _priceError = p == null || p <= 0 ? l10n.portfolioInvalidNumber : null;
+      final cp = widget.currentPrice;
+      final far = p != null && p > 0 && cp != null && cp > 0 && (p > cp * 10 || p < cp / 10);
+      _priceError = p == null || p <= 0
+          ? l10n.portfolioInvalidNumber
+          : far && _farPriceConfirmed != _price.text
+          ? l10n.lotPriceFarFromQuote(fmt.unit(cp, widget.currency))
+          : null;
+      if (far) _farPriceConfirmed = _price.text;
       _feeError = fee == null || fee < 0 ? l10n.portfolioInvalidNumber : null;
     });
     if (_quantityError != null || _priceError != null || _feeError != null || _saving) return;

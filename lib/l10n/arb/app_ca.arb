@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Resum amb IA · Avui amb les teves accions",
   "favoriteRemoved": "S’ha eliminat {symbol} dels favorits",
   "listItemRemoved": "S’ha eliminat {symbol} de la llista «{list}»",
-  "watchListDeleted": "S’ha suprimit la llista: {list}"
+  "watchListDeleted": "S’ha suprimit la llista: {list}",
+  "sharedToClipboard": "Copiat al porta-retalls – enganxa’l on vulguis compartir-lo.",
+  "glossaryNoMatch": "Cap terme no coincideix amb la teva cerca.",
+  "cashInvalidAmount": "Introdueix un import de 0 o més.",
+  "portfolioImportNothing": "No s’ha pogut llegir cap transacció d’aquest text. Comprova que cada línia sigui com l’exemple.",
+  "lotPriceFarFromQuote": "Està molt lluny del preu d’avui ({price}). Comprova-ho o desa de nou si és correcte."
 }

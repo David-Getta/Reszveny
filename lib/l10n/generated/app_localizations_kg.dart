@@ -2305,6 +2305,25 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Yo me kopiama – tula yo konso kisika nge ke zola kukabula yo.';
+
+  @override
+  String get glossaryNoMatch => 'Ata ngogo mosi ve ke wakana ti kusosa na nge.';
+
+  @override
+  String get cashInvalidAmount => 'Sonika ntalu ya 0 to mingi.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Beto lendaka ve kutanga kusumba to kuteka ata mosi na masonuku yai. Tala nde konso ndonga kele bonso mbandu.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Yai kele ntama ti ntalu ya bubu ($price). Tala yo, to bumba diaka kana yo kele mbote.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Biuvu mu portefeuille na nge';
 
   @override

@@ -2298,6 +2298,25 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Түр санах ойд хууллаа – хуваалцах газраа буулгана уу.';
+
+  @override
+  String get glossaryNoMatch => 'Хайлтад тохирох нэр томьёо олдсонгүй.';
+
+  @override
+  String get cashInvalidAmount => '0 буюу түүнээс их дүн оруулна уу.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Энэ текстээс нэг ч гүйлгээ уншиж чадсангүй. Мөр бүр жишээтэй адил эсэхийг шалгана уу.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Энэ нь өнөөдрийн үнээс ($price) хэт зөрүүтэй байна. Шалгана уу, эсвэл зөв бол дахин хадгална уу.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Таны портфолиогийн талаарх асуултууд';
 
   @override

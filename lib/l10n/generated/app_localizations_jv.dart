@@ -2300,6 +2300,26 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Disalin menyang papan klip – tempelake ing ngendi wae sampeyan pengin mbagekake.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Ora ana istilah sing cocog karo panelusuran sampeyan.';
+
+  @override
+  String get cashInvalidAmount => 'Lebokna jumlah 0 utawa luwih.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Ora ana transaksi sing bisa diwaca saka teks iki. Priksa manawa saben baris katon kaya conto.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Iki adoh banget saka rega dina iki ($price). Priksa dhisik, utawa simpen maneh yen wis bener.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Pitakon babagan portofolio sampeyan';
 
   @override

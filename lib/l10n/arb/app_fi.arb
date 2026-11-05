@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Tekoälyn yhteenveto · Tänään osakkeidesi kanssa",
   "favoriteRemoved": "{symbol} poistettu suosikeista",
   "listItemRemoved": "{symbol} poistettu listalta ”{list}”",
-  "watchListDeleted": "Lista poistettu: {list}"
+  "watchListDeleted": "Lista poistettu: {list}",
+  "sharedToClipboard": "Kopioitu leikepöydälle – liitä se sinne, minne haluat sen jakaa.",
+  "glossaryNoMatch": "Haullasi ei löytynyt termejä.",
+  "cashInvalidAmount": "Anna summa, joka on 0 tai enemmän.",
+  "portfolioImportNothing": "Tekstistä ei voitu lukea yhtään tapahtumaa. Tarkista, että jokainen rivi on esimerkin mukainen.",
+  "lotPriceFarFromQuote": "Tämä poikkeaa paljon tämän päivän hinnasta ({price}). Tarkista se tai tallenna uudelleen, jos se on oikein."
 }

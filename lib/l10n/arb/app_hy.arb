@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI ամփոփում · Այսօր՝ ձեր բաժնետոմսերով",
   "favoriteRemoved": "{symbol}-ն հեռացվեց ընտրյալներից",
   "listItemRemoved": "{symbol}-ն հեռացվեց «{list}» ցուցակից",
-  "watchListDeleted": "Ցուցակը ջնջվեց՝ {list}"
+  "watchListDeleted": "Ցուցակը ջնջվեց՝ {list}",
+  "sharedToClipboard": "Պատճենվեց սեղմատախտակին – տեղադրեք այնտեղ, որտեղ ուզում եք կիսվել։",
+  "glossaryNoMatch": "Ձեր որոնմանը համապատասխանող տերմին չկա։",
+  "cashInvalidAmount": "Մուտքագրեք 0 կամ ավելի գումար։",
+  "portfolioImportNothing": "Այս տեքստից հնարավոր չեղավ կարդալ որևէ գործարք։ Ստուգեք, որ յուրաքանչյուր տող նման լինի օրինակին։",
+  "lotPriceFarFromQuote": "Սա շատ է տարբերվում այսօրվա գնից ({price})։ Ստուգեք կամ նորից պահեք, եթե ճիշտ է։"
 }

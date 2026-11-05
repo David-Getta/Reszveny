@@ -37,6 +37,7 @@ class _SearchFieldState extends State<SearchField> {
   late final TextEditingController _controller = widget.controller ?? TextEditingController();
   late final FocusNode _focus = widget.focusNode ?? FocusNode();
   bool _hasText = false;
+  final _fieldKey = GlobalKey();
 
   @override
   void initState() {
@@ -81,32 +82,31 @@ class _SearchFieldState extends State<SearchField> {
               ),
             ],
           ),
-          child: Row(
-            children: [
-              ...widget.leading,
-              const SizedBox(width: 4),
-              Expanded(
-                child: TextField(
-                  controller: _controller,
-                  focusNode: _focus,
-                  autofocus: widget.autofocus,
-                  enabled: widget.enabled,
-                  textInputAction: TextInputAction.search,
-                  textCapitalization: TextCapitalization.none,
-                  style: theme.textTheme.bodyLarge?.copyWith(fontSize: widget.compact ? 17 : 18),
-                  decoration: InputDecoration(
-                    hintText: widget.hint,
-                    filled: false,
-                    border: InputBorder.none,
-                    enabledBorder: InputBorder.none,
-                    focusedBorder: InputBorder.none,
-                    contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: widget.compact ? 8 : 14),
-                  ),
-                  onSubmitted: (_) => _submit(),
+          // Nagyon keskeny helyen (200%-os nagyítás, 320 pontos kijelző) a gombok a mező alá
+          // kerülnek: a beírt szöveg így nem szorul néhány pontnyira.
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              // Globális kulccsal a mező az elrendezés váltásakor sem veszíti el a fókuszt.
+              final field = TextField(
+                key: _fieldKey,
+                controller: _controller,
+                focusNode: _focus,
+                autofocus: widget.autofocus,
+                enabled: widget.enabled,
+                textInputAction: TextInputAction.search,
+                textCapitalization: TextCapitalization.none,
+                style: theme.textTheme.bodyLarge?.copyWith(fontSize: widget.compact ? 17 : 18),
+                decoration: InputDecoration(
+                  hintText: widget.hint,
+                  filled: false,
+                  border: InputBorder.none,
+                  enabledBorder: InputBorder.none,
+                  focusedBorder: InputBorder.none,
+                  contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: widget.compact ? 8 : 14),
                 ),
-              ),
-              const SizedBox(width: 4),
-              AnimatedOpacity(
+                onSubmitted: (_) => _submit(),
+              );
+              final submit = AnimatedOpacity(
                 duration: const Duration(milliseconds: 150),
                 opacity: _hasText && widget.enabled ? 1 : 0.45,
                 // Képernyőolvasónak (és egérrel rámutatva) a gomb neve.
@@ -134,8 +134,27 @@ class _SearchFieldState extends State<SearchField> {
                     ),
                   ),
                 ),
-              ),
-            ],
+              );
+              final needed = 48.0 * (widget.leading.length + 1) + 8 + 140;
+              if (constraints.maxWidth.isFinite && constraints.maxWidth < needed) {
+                return Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    field,
+                    Row(children: [...widget.leading, const Spacer(), submit]),
+                  ],
+                );
+              }
+              return Row(
+                children: [
+                  ...widget.leading,
+                  const SizedBox(width: 4),
+                  Expanded(child: field),
+                  const SizedBox(width: 4),
+                  submit,
+                ],
+              );
+            },
           ),
         );
       },

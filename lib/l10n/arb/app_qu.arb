@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI pisichasqa · Kunan p’unchay acciónniykikunawan",
   "favoriteRemoved": "{symbol} munasqakunamanta hurqusqaña",
   "listItemRemoved": "{symbol} {list} listamanta hurqusqaña",
-  "watchListDeleted": "Lista pichasqaña: {list}"
+  "watchListDeleted": "Lista pichasqaña: {list}",
+  "sharedToClipboard": "Copiasqañam – rakiyta munasqayki maypipas churay.",
+  "glossaryNoMatch": "Mana ima rimaypas maskasqaykiman tupanchu.",
+  "cashInvalidAmount": "0 kaq utaq aswan hatun qullqita qillqay.",
+  "portfolioImportNothing": "Kay qillqamanta mana ima rantiy rantikuytapas ñawinchayta atikunchu. Sapa siqi ejemplo hina kasqanta qhawariy.",
+  "lotPriceFarFromQuote": "Kayqa kunan p'unchaw chaninmanta ({price}) karupim. Qhawariy, utaq allin kaptinqa hukmanta waqaychay."
 }

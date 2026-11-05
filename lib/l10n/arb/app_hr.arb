@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI sažetak · Danas s vašim dionicama",
   "favoriteRemoved": "{symbol} je uklonjena iz favorita",
   "listItemRemoved": "{symbol} je uklonjena s popisa „{list}“",
-  "watchListDeleted": "Popis je izbrisan: {list}"
+  "watchListDeleted": "Popis je izbrisan: {list}",
+  "sharedToClipboard": "Kopirano u međuspremnik – zalijepite ga gdje god ga želite podijeliti.",
+  "glossaryNoMatch": "Nijedan pojam ne odgovara vašem pretraživanju.",
+  "cashInvalidAmount": "Unesite iznos od 0 ili više.",
+  "portfolioImportNothing": "Iz ovog teksta nije moguće pročitati nijednu transakciju. Provjerite izgleda li svaki redak kao primjer.",
+  "lotPriceFarFromQuote": "Ovo je daleko od današnje cijene ({price}). Provjerite ili spremite ponovno ako je točno."
 }

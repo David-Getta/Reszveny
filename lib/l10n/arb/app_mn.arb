@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI хураангуй · Өнөөдөр таны хувьцаатай",
   "favoriteRemoved": "{symbol}-г дуртайгаас хаслаа",
   "listItemRemoved": "{symbol}-г {list} жагсаалтаас хаслаа",
-  "watchListDeleted": "Жагсаалтыг устгалаа: {list}"
+  "watchListDeleted": "Жагсаалтыг устгалаа: {list}",
+  "sharedToClipboard": "Түр санах ойд хууллаа – хуваалцах газраа буулгана уу.",
+  "glossaryNoMatch": "Хайлтад тохирох нэр томьёо олдсонгүй.",
+  "cashInvalidAmount": "0 буюу түүнээс их дүн оруулна уу.",
+  "portfolioImportNothing": "Энэ текстээс нэг ч гүйлгээ уншиж чадсангүй. Мөр бүр жишээтэй адил эсэхийг шалгана уу.",
+  "lotPriceFarFromQuote": "Энэ нь өнөөдрийн үнээс ({price}) хэт зөрүүтэй байна. Шалгана уу, эсвэл зөв бол дахин хадгална уу."
 }

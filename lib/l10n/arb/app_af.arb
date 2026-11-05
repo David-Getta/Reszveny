@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI-opsomming · Vandag met jou aandele",
   "favoriteRemoved": "{symbol} uit gunstelinge verwyder",
   "listItemRemoved": "{symbol} uit “{list}” verwyder",
-  "watchListDeleted": "Lys geskrap: {list}"
+  "watchListDeleted": "Lys geskrap: {list}",
+  "sharedToClipboard": "Na die knipbord gekopieer – plak dit waar jy dit ook al wil deel.",
+  "glossaryNoMatch": "Geen terme pas by jou soektog nie.",
+  "cashInvalidAmount": "Voer 'n bedrag van 0 of meer in.",
+  "portfolioImportNothing": "Geen transaksies kon uit hierdie teks gelees word nie. Kontroleer dat elke reël soos die voorbeeld lyk.",
+  "lotPriceFarFromQuote": "Dit is ver van vandag se prys ({price}). Kontroleer dit, of stoor weer as dit reg is."
 }

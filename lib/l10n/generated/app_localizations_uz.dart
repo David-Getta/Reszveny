@@ -2302,6 +2302,25 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Buferga nusxalandi – ulashmoqchi boʻlgan joyingizga joylang.';
+
+  @override
+  String get glossaryNoMatch => 'Qidiruvingizga mos atama topilmadi.';
+
+  @override
+  String get cashInvalidAmount => '0 yoki undan katta summa kiriting.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Bu matndan hech qanday operatsiya oʻqib boʻlmadi. Har bir qator namunadagidek koʻrinishini tekshiring.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Bu bugungi narxdan ($price) juda farq qiladi. Uni tekshiring yoki toʻgʻri boʻlsa, qayta saqlang.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Portfelingiz haqida savollar';
 
   @override

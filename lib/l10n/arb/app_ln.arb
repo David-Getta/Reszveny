@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Bokuse ya AI · Lelo na misolo na yo",
   "favoriteRemoved": "{symbol} elongolami na oyo olingaka",
   "listItemRemoved": "{symbol} elongolami na {list}",
-  "watchListDeleted": "Liste elimwisami: {list}"
+  "watchListDeleted": "Liste elimwisami: {list}",
+  "sharedToClipboard": "Ekopiami – tya yango esika nyonso olingi kokabola yango.",
+  "glossaryNoMatch": "Liloba moko te ekokani na oyo ozali koluka.",
+  "cashInvalidAmount": "Kotisa motuya ya 0 to koleka.",
+  "portfolioImportNothing": "Tokokaki kotánga bosombi to boteki ata moko na makomi oyo te. Tala soki molɔngɔ mokomoko ezali lokola ndakisa.",
+  "lotPriceFarFromQuote": "Yango ezali mosika mingi na ntalo ya lelo ({price}). Talá yango, to bomba lisusu soki ezali sembo."
 }

@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI ਸਾਰ · ਅੱਜ ਤੁਹਾਡੇ ਸ਼ੇਅਰਾਂ ਨਾਲ",
   "favoriteRemoved": "{symbol} ਮਨਪਸੰਦ ਵਿੱਚੋਂ ਹਟਾਇਆ ਗਿਆ",
   "listItemRemoved": "{symbol} {list} ਵਿੱਚੋਂ ਹਟਾਇਆ ਗਿਆ",
-  "watchListDeleted": "ਸੂਚੀ ਮਿਟਾਈ ਗਈ: {list}"
+  "watchListDeleted": "ਸੂਚੀ ਮਿਟਾਈ ਗਈ: {list}",
+  "sharedToClipboard": "ਕਲਿੱਪਬੋਰਡ ’ਤੇ ਕਾਪੀ ਹੋ ਗਿਆ – ਜਿੱਥੇ ਸਾਂਝਾ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ ਉੱਥੇ ਪੇਸਟ ਕਰੋ।",
+  "glossaryNoMatch": "ਤੁਹਾਡੀ ਖੋਜ ਨਾਲ ਕੋਈ ਸ਼ਬਦ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ।",
+  "cashInvalidAmount": "0 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ ਰਕਮ ਦਰਜ ਕਰੋ।",
+  "portfolioImportNothing": "ਇਸ ਟੈਕਸਟ ਤੋਂ ਕੋਈ ਲੈਣ-ਦੇਣ ਪੜ੍ਹਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ। ਜਾਂਚ ਕਰੋ ਕਿ ਹਰ ਲਾਈਨ ਉਦਾਹਰਨ ਵਰਗੀ ਹੈ।",
+  "lotPriceFarFromQuote": "ਇਹ ਅੱਜ ਦੀ ਕੀਮਤ ({price}) ਤੋਂ ਬਹੁਤ ਵੱਖਰੀ ਹੈ। ਇਸਦੀ ਜਾਂਚ ਕਰੋ, ਜਾਂ ਸਹੀ ਹੋਵੇ ਤਾਂ ਦੁਬਾਰਾ ਸੇਵ ਕਰੋ।"
 }

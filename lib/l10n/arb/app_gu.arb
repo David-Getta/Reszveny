@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI સારાંશ · આજે તમારા શેર સાથે",
   "favoriteRemoved": "{symbol} મનપસંદમાંથી દૂર કરાયો",
   "listItemRemoved": "{symbol} {list} યાદીમાંથી દૂર કરાયો",
-  "watchListDeleted": "યાદી કાઢી નાખી: {list}"
+  "watchListDeleted": "યાદી કાઢી નાખી: {list}",
+  "sharedToClipboard": "ક્લિપબોર્ડ પર કૉપિ થયું – જ્યાં શેર કરવું હોય ત્યાં પેસ્ટ કરો.",
+  "glossaryNoMatch": "તમારી શોધ સાથે કોઈ શબ્દ મેળ ખાતો નથી.",
+  "cashInvalidAmount": "0 અથવા વધુ રકમ દાખલ કરો.",
+  "portfolioImportNothing": "આ ટેક્સ્ટમાંથી કોઈ વ્યવહાર વાંચી શકાયો નથી. દરેક લાઇન ઉદાહરણ જેવી દેખાય છે કે નહીં તે તપાસો.",
+  "lotPriceFarFromQuote": "આ આજના ભાવ ({price}) થી ઘણું અલગ છે. તપાસો, અથવા સાચું હોય તો ફરી સાચવો."
 }

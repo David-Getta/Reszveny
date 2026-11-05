@@ -150,6 +150,8 @@ class AppTheme {
       ),
       dividerTheme: DividerThemeData(color: p.border, thickness: 1, space: 1),
       inputDecorationTheme: InputDecorationTheme(
+        // Keskeny dialógusban a hibaüzenet tördelődik (nem „Enter a number great…”).
+        errorMaxLines: 3,
         filled: true,
         fillColor: p.surface,
         hintStyle: TextStyle(color: p.muted),
@@ -207,6 +209,9 @@ class AppTheme {
       snackBarTheme: SnackBarThemeData(
         backgroundColor: p.surfaceRaised,
         contentTextStyle: TextStyle(color: p.text),
+        // A világos sávon az alapértelmezett (onPrimary, fehér) akció nem látszana.
+        actionTextColor: p.accent,
+        disabledActionTextColor: p.muted,
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),

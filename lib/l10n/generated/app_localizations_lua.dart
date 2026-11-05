@@ -2304,6 +2304,25 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Mmukopiibue – teka muaba wonso uudi musue kuabanya.';
+
+  @override
+  String get glossaryNoMatch => 'Kakuena muaku udi wakanangana ne bidi ukeba.';
+
+  @override
+  String get cashInvalidAmount => 'Funda bungi bua 0 anyi bupite.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Katuena mua kubala kusumba anyi kusumbisha nansha kumue mu mifundu eyi. Tangila ne: mulongo wonso udi bu tshilejilu.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Mushinga eu udi kule be ne mushinga wa lelu ($price). Utangile, anyi lama kabidi bikala ulelela.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Nkonko bua portefeuille webe';
 
   @override

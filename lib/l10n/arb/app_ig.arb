@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Nchịkọta AI · Taa na ngwa ahịa gị",
   "favoriteRemoved": "E wepụla {symbol} n'ọkacha mmasị",
   "listItemRemoved": "E wepụla {symbol} na {list}",
-  "watchListDeleted": "E hichapụla ndepụta: {list}"
+  "watchListDeleted": "E hichapụla ndepụta: {list}",
+  "sharedToClipboard": "E depụtala ya – mado ya ebe ọ bụla ị chọrọ ịkesa ya.",
+  "glossaryNoMatch": "Ọ dịghị okwu dabara na ọchụchọ gị.",
+  "cashInvalidAmount": "Tinye ego ole bụ 0 ma ọ bụ karịa.",
+  "portfolioImportNothing": "Enweghị azụmahịa a pụrụ ịgụ n'ederede a. Lelee na ahịrị ọ bụla dị ka ihe atụ ahụ.",
+  "lotPriceFarFromQuote": "Nke a dị anya na ọnụahịa taa ({price}). Lelee ya, ma ọ bụ chekwaa ọzọ ma ọ bụrụ na ọ ziri ezi."
 }

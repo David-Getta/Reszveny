@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Rezime AI · Jodi a ak aksyon ou yo",
   "favoriteRemoved": "{symbol} retire nan favori",
   "listItemRemoved": "{symbol} retire nan {list}",
-  "watchListDeleted": "Lis la efase: {list}"
+  "watchListDeleted": "Lis la efase: {list}",
+  "sharedToClipboard": "Li kopye – kole l nenpòt kote ou vle pataje l.",
+  "glossaryNoMatch": "Pa gen okenn tèm ki koresponn ak rechèch ou.",
+  "cashInvalidAmount": "Antre yon montan 0 oswa plis.",
+  "portfolioImportNothing": "Nou pa t ka li okenn tranzaksyon nan tèks sa a. Verifye si chak liy sanble ak egzanp lan.",
+  "lotPriceFarFromQuote": "Sa a lwen pri jodi a ({price}). Verifye l, oswa anrejistre ankò si l kòrèk."
 }

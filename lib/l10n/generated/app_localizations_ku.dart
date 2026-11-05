@@ -2301,6 +2301,25 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Li panoyê hat kopîkirin – li ku dixwazî parve bikî, lê bixe.';
+
+  @override
+  String get glossaryNoMatch => 'Ti têgeh bi lêgerîna te re li hev nayên.';
+
+  @override
+  String get cashInvalidAmount => 'Mîqdarek 0 an zêdetir binivîse.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Ji vê nivîsê ti danûstandin nehatin xwendin. Kontrol bike ku her rêz wek mînakê xuya dike.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Ev ji bihayê îro ($price) pir dûr e. Kontrol bike, an jî heke rast be dîsa tomar bike.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Pirsên li ser portfolyoya te';
 
   @override

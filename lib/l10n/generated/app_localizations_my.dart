@@ -2291,6 +2291,25 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'ကလစ်ဘုတ်သို့ ကူးယူပြီးပါပြီ – မျှဝေလိုသည့်နေရာတွင် ကူးထည့်ပါ။';
+
+  @override
+  String get glossaryNoMatch => 'ရှာဖွေမှုနှင့် ကိုက်ညီသော ဝေါဟာရ မရှိပါ။';
+
+  @override
+  String get cashInvalidAmount => '0 သို့မဟုတ် ထို့ထက်ပိုသော ပမာဏကို ထည့်ပါ။';
+
+  @override
+  String get portfolioImportNothing =>
+      'ဤစာသားမှ အရောင်းအဝယ်တစ်ခုမျှ ဖတ်၍မရပါ။ စာကြောင်းတိုင်း နမူနာအတိုင်း ဖြစ်မဖြစ် စစ်ဆေးပါ။';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return '၎င်းသည် ယနေ့စျေးနှုန်း ($price) နှင့် အလွန်ကွာခြားနေသည်။ စစ်ဆေးပါ သို့မဟုတ် မှန်ကန်ပါက ထပ်မံ သိမ်းဆည်းပါ။';
+  }
+
+  @override
   String get portfolioAskTitle => 'သင့် ပေါ့ဖိုလီယို အကြောင်း မေးခွန်းများ';
 
   @override

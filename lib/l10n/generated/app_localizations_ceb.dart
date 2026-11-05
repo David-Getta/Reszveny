@@ -2309,6 +2309,25 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Nakopya sa clipboard – i-paste kini bisan asa nimo gustong ipaambit.';
+
+  @override
+  String get glossaryNoMatch => 'Walay termino nga motakdo sa imong gipangita.';
+
+  @override
+  String get cashInvalidAmount => 'Pagbutang og kantidad nga 0 o labaw pa.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Walay transaksyon nga nabasa gikan niini nga teksto. Susiha nga ang matag linya susama sa pananglitan.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Layo kaayo kini sa presyo karon ($price). Susiha kini, o i-save pag-usab kon husto kini.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Mga pangutana bahin sa imong portfolio';
 
   @override

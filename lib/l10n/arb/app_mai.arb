@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI सारांश · आइ अहाँक शेयरक संग",
   "favoriteRemoved": "{symbol} पसंदीदासँ हटाओल गेल",
   "listItemRemoved": "{symbol} {list} सूचीसँ हटाओल गेल",
-  "watchListDeleted": "सूची मेटाओल गेल: {list}"
+  "watchListDeleted": "सूची मेटाओल गेल: {list}",
+  "sharedToClipboard": "क्लिपबोर्डमे कॉपी भेल – जतय साझा करबाक हो, ओतय साटू।",
+  "glossaryNoMatch": "अहाँक खोजसँ कोनो शब्द मेल नहि खाइत अछि।",
+  "cashInvalidAmount": "0 वा ओहिसँ बेसी राशि लिखू।",
+  "portfolioImportNothing": "एहि पाठसँ कोनो लेन-देन नहि पढ़ल जा सकल। जाँचू जे प्रत्येक पाँती उदाहरण जकाँ देखाइत अछि।",
+  "lotPriceFarFromQuote": "ई आजुक दाम ({price}) सँ बहुत भिन्न अछि। जाँचि लिअ, वा सही हो तँ फेरसँ सेव करू।"
 }

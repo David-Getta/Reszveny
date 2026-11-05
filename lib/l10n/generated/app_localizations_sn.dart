@@ -2304,6 +2304,25 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Zvakopwa paclipboard – zvinamatidze paunoda kuzvigovera.';
+
+  @override
+  String get glossaryNoMatch => 'Hapana izwi rinoenderana nezvawatsvaga.';
+
+  @override
+  String get cashInvalidAmount => 'Nyora huwandu hwe 0 kana kupfuura.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Hapana kutenga kana kutengesa kwakwanisa kuverengwa muchinyorwa ichi. Tarisa kuti mutsara wega wega wakaita semuenzaniso.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Mutengo uyu uri kure kwazvo nemutengo wanhasi ($price). Utarise, kana kuti uchengetedze zvakare kana wakarurama.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Mibvunzo nezvepotiforiyo yako';
 
   @override

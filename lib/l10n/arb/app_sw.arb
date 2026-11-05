@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Muhtasari wa AI · Leo na hisa zako",
   "favoriteRemoved": "{symbol} imeondolewa kwenye vipendwa",
   "listItemRemoved": "{symbol} imeondolewa kwenye {list}",
-  "watchListDeleted": "Orodha imefutwa: {list}"
+  "watchListDeleted": "Orodha imefutwa: {list}",
+  "sharedToClipboard": "Imenakiliwa kwenye ubao wa kunakili – ibandike popote unapotaka kuishiriki.",
+  "glossaryNoMatch": "Hakuna istilahi inayolingana na utafutaji wako.",
+  "cashInvalidAmount": "Weka kiasi cha 0 au zaidi.",
+  "portfolioImportNothing": "Hakuna muamala ulioweza kusomwa kutoka kwenye maandishi haya. Hakikisha kila mstari unafanana na mfano.",
+  "lotPriceFarFromQuote": "Hii iko mbali sana na bei ya leo ({price}). Ikague, au hifadhi tena ikiwa ni sahihi."
 }

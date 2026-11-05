@@ -2283,6 +2283,25 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Gʋlsgã lebs n gʋlsame – ning-a zĩig ning f sẽn dat n pʋɩ-a.';
+
+  @override
+  String get glossaryNoMatch => 'Gom-biig ka zems ne f sẽn bao wã ye.';
+
+  @override
+  String get cashInvalidAmount => 'Gʋls ligd sõor sẽn yaa 0 bɩ sẽn yɩɩd-a.';
+
+  @override
+  String get portfolioImportNothing =>
+      'B ka tõog n karem raab bɩ koosg gʋlsg kãngã pʋgẽ ye. Ges tɩ sẽ fãa wõnda makr wã.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Ligdã zãra ne rũndã ligdã ($price) wʋsgo. Ges-a, bɩ f le bĩng-a sã n yaa sɩda.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Sokre: f portfey';
 
   @override

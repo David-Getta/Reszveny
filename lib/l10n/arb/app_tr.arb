@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Yapay zekâ özeti · Bugün hisselerinle",
   "favoriteRemoved": "{symbol} favorilerden kaldırıldı",
   "listItemRemoved": "{symbol}, {list} listesinden kaldırıldı",
-  "watchListDeleted": "Liste silindi: {list}"
+  "watchListDeleted": "Liste silindi: {list}",
+  "sharedToClipboard": "Panoya kopyalandı – paylaşmak istediğiniz yere yapıştırın.",
+  "glossaryNoMatch": "Aramanızla eşleşen terim yok.",
+  "cashInvalidAmount": "0 veya daha büyük bir tutar girin.",
+  "portfolioImportNothing": "Bu metinden hiçbir işlem okunamadı. Her satırın örnekteki gibi göründüğünü kontrol edin.",
+  "lotPriceFarFromQuote": "Bu, bugünkü fiyattan ({price}) çok uzak. Kontrol edin veya doğruysa yeniden kaydedin."
 }

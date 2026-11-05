@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI 总结 · 今天你的股票",
   "favoriteRemoved": "已将 {symbol} 从收藏中移除",
   "listItemRemoved": "已将 {symbol} 从“{list}”中移除",
-  "watchListDeleted": "已删除列表：{list}"
+  "watchListDeleted": "已删除列表：{list}",
+  "sharedToClipboard": "已复制到剪贴板，粘贴到想分享的地方即可。",
+  "glossaryNoMatch": "没有与搜索匹配的术语。",
+  "cashInvalidAmount": "请输入大于或等于 0 的金额。",
+  "portfolioImportNothing": "无法从该文本中读取任何交易。请检查每一行是否与示例格式一致。",
+  "lotPriceFarFromQuote": "此价格与今日价格（{price}）相差很大。请核对，若无误请再次保存。"
 }

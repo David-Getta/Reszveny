@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI-sammanfattning · I dag med dina aktier",
   "favoriteRemoved": "{symbol} har tagits bort från favoriter",
   "listItemRemoved": "{symbol} har tagits bort från {list}",
-  "watchListDeleted": "Listan har raderats: {list}"
+  "watchListDeleted": "Listan har raderats: {list}",
+  "sharedToClipboard": "Kopierat till urklipp – klistra in det där du vill dela det.",
+  "glossaryNoMatch": "Inga begrepp matchar din sökning.",
+  "cashInvalidAmount": "Ange ett belopp på 0 eller mer.",
+  "portfolioImportNothing": "Inga transaktioner kunde läsas från texten. Kontrollera att varje rad ser ut som exemplet.",
+  "lotPriceFarFromQuote": "Det här ligger långt från dagens kurs ({price}). Kontrollera det, eller spara igen om det stämmer."
 }

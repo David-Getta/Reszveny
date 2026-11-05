@@ -2294,6 +2294,25 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'පසුරු පුවරුවට පිටපත් කළා – බෙදාගැනීමට අවශ්‍ය ඕනෑම තැනක අලවන්න.';
+
+  @override
+  String get glossaryNoMatch => 'ඔබගේ සෙවුමට ගැළපෙන පද නැත.';
+
+  @override
+  String get cashInvalidAmount => '0 හෝ ඊට වැඩි මුදලක් ඇතුළු කරන්න.';
+
+  @override
+  String get portfolioImportNothing =>
+      'මෙම පෙළෙන් කිසිදු ගනුදෙනුවක් කියවිය නොහැකි විය. සෑම පේළියක්ම උදාහරණය මෙන් දැයි පරීක්ෂා කරන්න.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'මෙය අද මිලට ($price) වඩා බොහෝ වෙනස් ය. එය පරීක්ෂා කරන්න, නැතහොත් නිවැරදි නම් නැවත සුරකින්න.';
+  }
+
+  @override
   String get portfolioAskTitle => 'ඔබේ කළඹ ගැන ප්‍රශ්න';
 
   @override

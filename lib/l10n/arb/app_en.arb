@@ -1813,6 +1813,27 @@
     "placeholders": {"symbol": {"type": "String"}, "list": {"type": "String"}}
   },
   "watchListDeleted": "List deleted: {list}",
+  "sharedToClipboard": "Copied to the clipboard – paste it wherever you want to share it.",
+  "@sharedToClipboard": {
+    "description": "Snackbar on the web when the browser has no share menu, so the text to share was copied to the clipboard instead."
+  },
+  "glossaryNoMatch": "No terms match your search.",
+  "@glossaryNoMatch": {
+    "description": "Shown on the glossary page when the search finds no term."
+  },
+  "cashInvalidAmount": "Enter an amount of 0 or more.",
+  "@cashInvalidAmount": {
+    "description": "Field error in the cash balance dialog when the amount is not a number or is negative (0 is allowed)."
+  },
+  "portfolioImportNothing": "No transactions could be read from this text. Check that each line looks like the example.",
+  "lotPriceFarFromQuote": "This is far from today’s price ({price}). Check it, or save again if it is right.",
+  "@lotPriceFarFromQuote": {
+    "description": "Field error in the buy/sell dialog when the entered price is more than 10× above or below today's price (likely a typo). Saving again accepts it. price is today's price with currency.",
+    "placeholders": {"price": {"type": "String"}}
+  },
+  "@portfolioImportNothing": {
+    "description": "Field error in the CSV import dialog when nothing could be read; the dialog stays open with the pasted text."
+  },
   "@watchListDeleted": {
     "description": "Snackbar after deleting one of the user's own watch lists (with an Undo action). list is the user's list name.",
     "placeholders": {"list": {"type": "String"}}

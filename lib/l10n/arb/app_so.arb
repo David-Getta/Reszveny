@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Soo koobid AI · Maanta iyo saamiyadaada",
   "favoriteRemoved": "{symbol} waa laga saaray kuwa la jecel yahay",
   "listItemRemoved": "{symbol} waa laga saaray {list}",
-  "watchListDeleted": "Liiska waa la tirtiray: {list}"
+  "watchListDeleted": "Liiska waa la tirtiray: {list}",
+  "sharedToClipboard": "Waxaa lagu koobiyeeyay kilibboodhka – ku dheji meel kasta oo aad rabto inaad ku wadaagto.",
+  "glossaryNoMatch": "Erey la mid ah raadintaada lama helin.",
+  "cashInvalidAmount": "Geli lacag 0 ah ama ka badan.",
+  "portfolioImportNothing": "Qoraalkan lagama akhriyi karin wax macaamil ah. Hubi in saf kastaa u eg yahay tusaalaha.",
+  "lotPriceFarFromQuote": "Tani aad ayay uga fog tahay qiimaha maanta ({price}). Hubi, ama mar kale kaydi haddii ay sax tahay."
 }

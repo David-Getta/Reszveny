@@ -2296,6 +2296,25 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'क्लिपबोर्डवर कॉपी केले – जिथे शेअर करायचे आहे तिथे पेस्ट करा.';
+
+  @override
+  String get glossaryNoMatch => 'तुमच्या शोधाशी जुळणारी कोणतीही संज्ञा नाही.';
+
+  @override
+  String get cashInvalidAmount => '0 किंवा त्याहून अधिक रक्कम लिहा.';
+
+  @override
+  String get portfolioImportNothing =>
+      'या मजकुरातून कोणताही व्यवहार वाचता आला नाही. प्रत्येक ओळ उदाहरणासारखी आहे का ते तपासा.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'ही किंमत आजच्या किमतीपासून ($price) खूप दूर आहे. ती तपासा, किंवा बरोबर असल्यास पुन्हा जतन करा.';
+  }
+
+  @override
   String get portfolioAskTitle => 'तुमच्या पोर्टफोलिओबद्दल प्रश्न';
 
   @override

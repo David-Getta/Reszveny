@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI jemlemesi · Şu gün paýnamalaryňyz bilen",
   "favoriteRemoved": "{symbol} saýlananlardan aýryldy",
   "listItemRemoved": "{symbol} {list} sanawyndan aýryldy",
-  "watchListDeleted": "Sanaw pozuldy: {list}"
+  "watchListDeleted": "Sanaw pozuldy: {list}",
+  "sharedToClipboard": "Bufere göçürildi – paýlaşmak isleýän ýeriňize goýuň.",
+  "glossaryNoMatch": "Gözlegiňize laýyk adalga ýok.",
+  "cashInvalidAmount": "0 ýa-da ondan köp mukdar giriziň.",
+  "portfolioImportNothing": "Bu tekstden hiç hili amal okalyp bilinmedi. Her setiriň mysaldaky ýaly görünýändigini barlaň.",
+  "lotPriceFarFromQuote": "Bu şu günki bahadan ({price}) gaty uzak. Ony barlaň ýa-da dogry bolsa, gaýtadan saklaň."
 }

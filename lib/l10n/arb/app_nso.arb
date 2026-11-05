@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Kakaretšo ya AI · Lehono le dišere tša gago",
   "favoriteRemoved": "{symbol} e tlošitšwe go tše di ratwago",
   "listItemRemoved": "{symbol} e tlošitšwe go {list}",
-  "watchListDeleted": "Lenaneo le phumotšwe: {list}"
+  "watchListDeleted": "Lenaneo le phumotšwe: {list}",
+  "sharedToClipboard": "Go kopiširwe letlapeng la go kopiša – e kgomaretše mo o nyakago go e abelana gona.",
+  "glossaryNoMatch": "Ga go lereo leo le swanago le seo o se nyakilego.",
+  "cashInvalidAmount": "Tsenya palo ya 0 goba go feta.",
+  "portfolioImportNothing": "Ga go thekišano yeo e kgonnego go balwa sengwalweng se. Lekola gore mothalo o mongwe le o mongwe o swana le mohlala.",
+  "lotPriceFarFromQuote": "Theko ye e kgole kudu le theko ya lehono ({price}). E lekole, goba o e boloke gape ge e nepagetše."
 }

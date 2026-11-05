@@ -2296,6 +2296,25 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'E don copy go clipboard – paste am anywhere wey you wan share am.';
+
+  @override
+  String get glossaryNoMatch => 'No term match wetin you search.';
+
+  @override
+  String get cashInvalidAmount => 'Put amount wey be 0 or pass am.';
+
+  @override
+  String get portfolioImportNothing =>
+      'We no fit read any buy or sell from dis text. Check say every line look like di example.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Dis one far from today price ($price). Check am, or save again if e correct.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Questions about your portfolio';
 
   @override

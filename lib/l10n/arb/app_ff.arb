@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Raɓɓinal AI · Hannde e aksiyonji maa",
   "favoriteRemoved": "{symbol} ittaama e cuɓaaɗe",
   "listItemRemoved": "{symbol} ittaama e {list}",
-  "watchListDeleted": "Doggol momtaama: {list}"
+  "watchListDeleted": "Doggol momtaama: {list}",
+  "sharedToClipboard": "Ɗum kopiyaama – ɓortin ɗum e kala nokku ɗo njiɗ-ɗaa lollinde ɗum.",
+  "glossaryNoMatch": "Alaa konngol fotɗungol e ko njiylotaa.",
+  "cashInvalidAmount": "Winndu limoore 0 walla ko ɓuri ɗum.",
+  "portfolioImportNothing": "Alaa soodgol walla yeeyugol mbaawi janngeede e ndee binndi. Ƴeewto so kala diidol ina nanndi e misal ngal.",
+  "lotPriceFarFromQuote": "Ɗum ina woɗɗi coggu hannde ({price}) no feewi. Ƴeewto ɗum, walla mooftu kadi so ɗum ko goonga."
 }

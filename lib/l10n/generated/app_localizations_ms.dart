@@ -2303,6 +2303,26 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Disalin ke papan keratan – tampal di mana-mana sahaja anda mahu berkongsinya.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Tiada istilah yang sepadan dengan carian anda.';
+
+  @override
+  String get cashInvalidAmount => 'Masukkan jumlah 0 atau lebih.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Tiada transaksi yang dapat dibaca daripada teks ini. Pastikan setiap baris kelihatan seperti contoh.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Ini jauh berbeza daripada harga hari ini ($price). Semak semula, atau simpan sekali lagi jika betul.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Soalan tentang portfolio anda';
 
   @override

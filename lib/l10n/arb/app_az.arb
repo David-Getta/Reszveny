@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI xülasəsi · Bu gün səhmlərinizlə",
   "favoriteRemoved": "{symbol} seçilmişlərdən silindi",
   "listItemRemoved": "{symbol} «{list}» siyahısından silindi",
-  "watchListDeleted": "Siyahı silindi: {list}"
+  "watchListDeleted": "Siyahı silindi: {list}",
+  "sharedToClipboard": "Mübadilə buferinə kopyalandı – paylaşmaq istədiyiniz yerə yapışdırın.",
+  "glossaryNoMatch": "Axtarışınıza uyğun termin yoxdur.",
+  "cashInvalidAmount": "0 və ya daha böyük məbləğ daxil edin.",
+  "portfolioImportNothing": "Bu mətndən heç bir əməliyyat oxumaq mümkün olmadı. Hər sətrin nümunədəki kimi olduğunu yoxlayın.",
+  "lotPriceFarFromQuote": "Bu, bugünkü qiymətdən ({price}) çox fərqlidir. Yoxlayın və ya düzgündürsə, yenidən yadda saxlayın."
 }

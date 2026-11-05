@@ -2317,6 +2317,25 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Nakopya iti clipboard – i-paste daytoy iti sadinoman a kayatmo nga ibingay.';
+
+  @override
+  String get glossaryNoMatch => 'Awan ti termino a maitutop iti binirokmo.';
+
+  @override
+  String get cashInvalidAmount => 'Mangikabil iti gatad a 0 wenno ad-adu pay.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Awan ti transaksion a nabasa manipud iti daytoy a teksto. Kitaem no kaasping ti pagarigan ti tunggal linia.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Adayo unay daytoy iti presio ita nga aldaw ($price). Kitaem, wenno i-save manen no husto.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Saludsod maipapan iti portfolio-m';
 
   @override

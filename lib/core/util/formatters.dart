@@ -173,11 +173,17 @@ class Fmt {
 
   String signed(num? v, {int decimals = 2}) => v == null ? na : _signed(v, decimals);
 
+  /// A dátum számjegyei a számokéival egyeznek (arabul a számok latin számjegyűek, a
+  /// dátumformázó alapból arab-indiait írna – egy sorban kettő keveredne).
+  DateFormat _digits(DateFormat f) => f..useNativeDigits = _nativeDigits;
+
+  late final bool _nativeDigits = NumberFormat.decimalPattern(numberLocale).symbols.ZERO_DIGIT != '0';
+
   String date(DateTime? d) {
     if (d == null) return na;
     final local = d.toLocal();
     try {
-      return DateFormat.yMMMd(dateLocale).format(local);
+      return _digits(DateFormat.yMMMd(dateLocale)).format(local);
     } catch (_) {
       return _isoDate(local);
     }
@@ -187,7 +193,7 @@ class Fmt {
   String monthYear(DateTime? d) {
     if (d == null) return na;
     try {
-      return DateFormat.yMMM(dateLocale).format(d);
+      return _digits(DateFormat.yMMM(dateLocale)).format(d);
     } catch (_) {
       return '${d.year}-${_two(d.month)}';
     }
@@ -196,7 +202,7 @@ class Fmt {
   /// Keskeny hónapnév (pl. „O”, „J”) – a havi diagram oszlopai alá.
   String monthNarrow(DateTime d) {
     try {
-      return DateFormat('MMMMM', dateLocale).format(d);
+      return _digits(DateFormat('MMMMM', dateLocale)).format(d);
     } catch (_) {
       return '${d.month}';
     }
@@ -205,7 +211,7 @@ class Fmt {
   /// Rövid hónapnév (pl. „okt.”, „Oct”).
   String monthShort(DateTime d) {
     try {
-      return DateFormat.MMM(dateLocale).format(d);
+      return _digits(DateFormat.MMM(dateLocale)).format(d);
     } catch (_) {
       return _two(d.month);
     }
@@ -216,7 +222,7 @@ class Fmt {
     final local = d.toLocal();
     try {
       // A nyelv szokása szerinti óra (angolul „2:05 PM”, magyarul „14:05”).
-      return DateFormat.yMMMd(dateLocale).add_jm().format(local);
+      return _digits(DateFormat.yMMMd(dateLocale).add_jm()).format(local);
     } catch (_) {
       return '${_isoDate(local)} ${_two(local.hour)}:${_two(local.minute)}';
     }

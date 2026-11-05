@@ -2300,6 +2300,25 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Kopierat till urklipp – klistra in det där du vill dela det.';
+
+  @override
+  String get glossaryNoMatch => 'Inga begrepp matchar din sökning.';
+
+  @override
+  String get cashInvalidAmount => 'Ange ett belopp på 0 eller mer.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Inga transaktioner kunde läsas från texten. Kontrollera att varje rad ser ut som exemplet.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Det här ligger långt från dagens kurs ($price). Kontrollera det, eller spara igen om det stämmer.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Frågor om din portfölj';
 
   @override

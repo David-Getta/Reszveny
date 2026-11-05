@@ -2306,6 +2306,26 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Nakopya sa clipboard – i-paste ito kahit saan mo gustong ibahagi.';
+
+  @override
+  String get glossaryNoMatch =>
+      'Walang terminong tumutugma sa iyong paghahanap.';
+
+  @override
+  String get cashInvalidAmount => 'Maglagay ng halagang 0 o higit pa.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Walang transaksyong nabasa mula sa tekstong ito. Tingnan kung kamukha ng halimbawa ang bawat linya.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Malayo ito sa presyo ngayon ($price). Suriin ito, o i-save muli kung tama ito.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Mga tanong tungkol sa portfolio mo';
 
   @override

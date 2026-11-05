@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Ringkasan AI · Hari ini dengan saham Anda",
   "favoriteRemoved": "{symbol} dihapus dari favorit",
   "listItemRemoved": "{symbol} dihapus dari {list}",
-  "watchListDeleted": "Daftar dihapus: {list}"
+  "watchListDeleted": "Daftar dihapus: {list}",
+  "sharedToClipboard": "Disalin ke papan klip – tempel di mana pun Anda ingin membagikannya.",
+  "glossaryNoMatch": "Tidak ada istilah yang cocok dengan pencarian Anda.",
+  "cashInvalidAmount": "Masukkan jumlah 0 atau lebih.",
+  "portfolioImportNothing": "Tidak ada transaksi yang dapat dibaca dari teks ini. Pastikan setiap baris terlihat seperti contoh.",
+  "lotPriceFarFromQuote": "Ini jauh dari harga hari ini ({price}). Periksa kembali, atau simpan lagi jika sudah benar."
 }

@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI خلاصہ · آج آپ کے شیئرز کے ساتھ",
   "favoriteRemoved": "{symbol} کو پسندیدہ سے ہٹا دیا گیا",
   "listItemRemoved": "{symbol} کو {list} سے ہٹا دیا گیا",
-  "watchListDeleted": "فہرست حذف کر دی گئی: {list}"
+  "watchListDeleted": "فہرست حذف کر دی گئی: {list}",
+  "sharedToClipboard": "کلپ بورڈ پر کاپی ہو گیا – جہاں شیئر کرنا چاہیں وہاں پیسٹ کریں۔",
+  "glossaryNoMatch": "آپ کی تلاش سے کوئی اصطلاح مطابقت نہیں رکھتی۔",
+  "cashInvalidAmount": "0 یا اس سے زیادہ رقم درج کریں۔",
+  "portfolioImportNothing": "اس متن سے کوئی لین دین نہیں پڑھا جا سکا۔ چیک کریں کہ ہر سطر مثال جیسی دکھائی دیتی ہے۔",
+  "lotPriceFarFromQuote": "یہ آج کی قیمت ({price}) سے بہت مختلف ہے۔ اسے چیک کریں، یا درست ہو تو دوبارہ محفوظ کریں۔"
 }

@@ -2295,6 +2295,25 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Yettwanɣel ɣer tecfawt – senṭeḍ-it anida tebɣiḍ ad t-tebḍuḍ.';
+
+  @override
+  String get glossaryNoMatch => 'Ulac awal yemṣadan d unadi-ik.';
+
+  @override
+  String get cashInvalidAmount => 'Sekcem azal n 0 neɣ ugar.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Ulac tiɣin neɣ aznuzu i yettwaɣran seg uḍris-a. Senqed ma yal izirig am umedya.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Aya yebɛed ɣef ssuma n wass-a ($price). Senqed-it, neɣ sekles tikkelt-nniḍen ma yeṣṣeḥ.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Isteqsiyen ɣef uqrab-ik';
 
   @override

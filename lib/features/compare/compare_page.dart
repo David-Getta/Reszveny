@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart' show PointerDeviceKind;
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
@@ -9,7 +10,9 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/fit_text.dart';
 import '../../widgets/research_sheet.dart' show ResearchFollowUpPanel;
+import '../market_data/quote_check.dart';
 import '../stock_detail/widgets/outlook_view.dart';
 import 'compare_rows.dart';
 
@@ -42,6 +45,15 @@ class _ComparePageState extends State<ComparePage> {
   final Map<String, StockReport?> _reports = {};
   bool _askedOnce = false;
   Future<List<StockDetails?>>? _all;
+
+  /// A táblázat vízszintes görgetése (a görgetősávé is).
+  final _hScroll = ScrollController();
+
+  @override
+  void dispose() {
+    _hScroll.dispose();
+    super.dispose();
+  }
 
   /// Az oszlopok adatai együtt; egy részvény hibája nem dönti be a többit
   /// (annak az oszlopa „nem elérhető”). A részletek lekérése szakaszonként nyeli el
@@ -150,17 +162,38 @@ class _ComparePageState extends State<ComparePage> {
 
   Widget _table(BuildContext context, List<StockDetails?> stocks, List<CompareRow> rows) {
     final l10n = AppLocalizations.of(context);
+    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        // Az oszlopok a kijelzőhöz igazodnak (telefonon is mindhárom részvény látszik); csak
+        // ha így sem férnek el (320 pont, nagyítás), görgethető oldalra a táblázat.
+        final width = constraints.maxWidth - 24;
+        final labelWidth = (width * 0.3).clamp(80.0, 132.0);
+        final colWidth = ((width - labelWidth) / _symbols.length).clamp(72.0, 160.0);
+        return _tableIn(context, stocks, rows, fmt: fmt, labelWidth: labelWidth, colWidth: colWidth);
+      },
+    );
+  }
+
+  Widget _tableIn(
+    BuildContext context,
+    List<StockDetails?> stocks,
+    List<CompareRow> rows, {
+    required Fmt fmt,
+    required double labelWidth,
+    required double colWidth,
+  }) {
+    final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
-    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
-    const labelWidth = 132.0, colWidth = 118.0;
-    Widget cell(String? text, {bool best = false, bool head = false, double width = colWidth}) => Container(
-      width: width,
+    Widget cell(String? text, {bool best = false, bool head = false, double? width}) => Container(
+      width: width ?? colWidth,
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 9),
       decoration: best
           ? BoxDecoration(color: p.positive.withValues(alpha: 0.14), borderRadius: BorderRadius.circular(8))
           : null,
-      child: Text(
+      // Hosszú szavas nyelven (német) sem tör szó közben: a leghosszabb szó kisebb betűvel fér el.
+      child: WordFitText(
         text ?? '—',
         maxLines: head ? 2 : 3,
         overflow: TextOverflow.ellipsis,
@@ -178,79 +211,88 @@ class _ComparePageState extends State<ComparePage> {
       children: [
         Text(l10n.compareHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
         const SizedBox(height: 10),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Fejléc: ticker, cégnév, eltávolítás.
-              Row(
+        // Egérrel is húzható (nem csak Shift + görgővel), és a görgetősáv jelzi, hogy van még.
+        ScrollConfiguration(
+          behavior: ScrollConfiguration.of(context).copyWith(dragDevices: PointerDeviceKind.values.toSet()),
+          child: Scrollbar(
+            controller: _hScroll,
+            child: SingleChildScrollView(
+              controller: _hScroll,
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.only(bottom: 10),
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(width: labelWidth),
-                  for (final (i, s) in _symbols.indexed)
-                    SizedBox(
-                      width: colWidth,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
+                  // Fejléc: ticker, cégnév, eltávolítás.
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(width: labelWidth),
+                      for (final (i, s) in _symbols.indexed)
+                        SizedBox(
+                          width: colWidth,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Expanded(
-                                child: InkWell(
-                                  onTap: widget.onOpenSymbol == null
-                                      ? null
-                                      : () => widget.onOpenSymbol!(
-                                          StockCandidate(symbol: s, companyName: stocks[i]?.profile?.name ?? s),
-                                        ),
-                                  child: cell(s, head: true),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: InkWell(
+                                      onTap: widget.onOpenSymbol == null
+                                          ? null
+                                          : () => widget.onOpenSymbol!(
+                                              StockCandidate(symbol: s, companyName: stocks[i]?.profile?.name ?? s),
+                                            ),
+                                      child: cell(s, head: true),
+                                    ),
+                                  ),
+                                  if (_symbols.length > 1)
+                                    IconButton(
+                                      key: ValueKey('compare-remove-$s'),
+                                      tooltip: l10n.compareRemove,
+                                      visualDensity: VisualDensity.compact,
+                                      icon: Icon(Icons.close_rounded, size: 16, color: p.muted),
+                                      onPressed: () => _remove(s),
+                                    ),
+                                ],
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 8),
+                                child: Text(
+                                  stocks[i] == null ? l10n.notAvailable : (stocks[i]!.profile?.name ?? ''),
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                                 ),
                               ),
-                              if (_symbols.length > 1)
-                                IconButton(
-                                  key: ValueKey('compare-remove-$s'),
-                                  tooltip: l10n.compareRemove,
-                                  visualDensity: VisualDensity.compact,
-                                  icon: Icon(Icons.close_rounded, size: 16, color: p.muted),
-                                  onPressed: () => _remove(s),
-                                ),
                             ],
                           ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 8),
-                            child: Text(
-                              stocks[i] == null ? l10n.notAvailable : (stocks[i]!.profile?.name ?? ''),
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                              style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                            ),
-                          ),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 6),
+                  for (final (r, row) in rows.indexed)
+                    Container(
+                      color: r.isEven ? p.border.withValues(alpha: 0.25) : null,
+                      child: Row(
+                        children: [
+                          cell(row.label, width: labelWidth),
+                          for (final (i, v) in row.values.indexed) cell(v, best: row.best == i),
                         ],
                       ),
                     ),
-                ],
-              ),
-              const SizedBox(height: 6),
-              for (final (r, row) in rows.indexed)
-                Container(
-                  color: r.isEven ? p.border.withValues(alpha: 0.25) : null,
-                  child: Row(
+                  const SizedBox(height: 14),
+                  // Az elmentett elemzések lényege.
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      cell(row.label, width: labelWidth),
-                      for (final (i, v) in row.values.indexed) cell(v, best: row.best == i),
+                      cell(l10n.aiSectionTitle, width: labelWidth),
+                      for (final s in _symbols) _AnalysisCell(report: _reports[s], width: colWidth, fmt: fmt),
                     ],
                   ),
-                ),
-              const SizedBox(height: 14),
-              // Az elmentett elemzések lényege.
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  cell(l10n.aiSectionTitle, width: labelWidth),
-                  for (final s in _symbols) _AnalysisCell(report: _reports[s], width: colWidth, fmt: fmt),
                 ],
               ),
-            ],
+            ),
           ),
         ),
         // Az AI-elemzések sora mellé a figyelmeztetés (mint az elemzés alatt).
@@ -349,10 +391,29 @@ class _PickDialogState extends State<_PickDialog> {
     super.dispose();
   }
 
-  void _submit([String? value]) {
+  bool _checking = false;
+  String? _error;
+
+  /// A beírt ticker csak akkor kerül be, ha van rá árfolyam (elgépelt, nem jegyzett
+  /// szó ne adjon egy csupa „—” oszlopot – mint a kezdőlap keresőjénél).
+  Future<void> _submit([String? value]) async {
     final s = (value ?? _ticker.text).trim().toUpperCase();
-    if (s.isEmpty) return;
-    Navigator.of(context).pop(s);
+    if (s.isEmpty || _checking) return;
+    final l10n = AppLocalizations.of(context);
+    setState(() {
+      _checking = true;
+      _error = null;
+    });
+    final ok = await hasQuote(AppServices.of(context).marketData, s);
+    if (!mounted) return;
+    if (ok) {
+      Navigator.of(context).pop(s);
+      return;
+    }
+    setState(() {
+      _checking = false;
+      _error = l10n.errNoResults(s);
+    });
   }
 
   @override
@@ -374,7 +435,10 @@ class _PickDialogState extends State<_PickDialog> {
             textCapitalization: TextCapitalization.characters,
             autocorrect: false,
             onSubmitted: _submit,
-            decoration: InputDecoration(hintText: l10n.compareTickerHint),
+            onChanged: (_) {
+              if (_error != null) setState(() => _error = null);
+            },
+            decoration: InputDecoration(hintText: l10n.compareTickerHint, errorText: _error),
           ),
           if (quick.isNotEmpty) ...[
             const SizedBox(height: 14),
@@ -394,7 +458,11 @@ class _PickDialogState extends State<_PickDialog> {
           onPressed: () => Navigator.of(context).pop(),
           child: Text(MaterialLocalizations.of(context).cancelButtonLabel),
         ),
-        FilledButton(key: const ValueKey('compare-pick-ok'), onPressed: _submit, child: Text(l10n.compareAdd)),
+        FilledButton(
+          key: const ValueKey('compare-pick-ok'),
+          onPressed: _checking ? null : _submit,
+          child: Text(l10n.compareAdd),
+        ),
       ],
     );
   }

@@ -2291,6 +2291,26 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Kopi nañu ko – taf ko fépp fu nga bëgg a séddoo ko.';
+
+  @override
+  String get glossaryNoMatch => 'Amul baat bu dëppoo ak li nga seet.';
+
+  @override
+  String get cashInvalidAmount =>
+      'Bindal limu xaalis bu tollu ci 0 walla bu ko ëpp.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Mënuñu jàng benn jënd walla jaay ci mbind mii. Seetal ndax rëdd bu nekk niroo na ak misaal bi.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Njëg gii sore na lool ak njëgu tey ($price). Seetal ko, walla nga denc ko beneen yoon bu dee dëgg.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Laaj yi ci sa aksiyoŋ yi';
 
   @override

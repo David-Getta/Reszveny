@@ -2292,6 +2292,25 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Ɗum kopiyaama – ɓortin ɗum e kala nokku ɗo njiɗ-ɗaa lollinde ɗum.';
+
+  @override
+  String get glossaryNoMatch => 'Alaa konngol fotɗungol e ko njiylotaa.';
+
+  @override
+  String get cashInvalidAmount => 'Winndu limoore 0 walla ko ɓuri ɗum.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Alaa soodgol walla yeeyugol mbaawi janngeede e ndee binndi. Ƴeewto so kala diidol ina nanndi e misal ngal.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Ɗum ina woɗɗi coggu hannde ($price) no feewi. Ƴeewto ɗum, walla mooftu kadi so ɗum ko goonga.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Naamne dow aksiyoŋ maa';
 
   @override

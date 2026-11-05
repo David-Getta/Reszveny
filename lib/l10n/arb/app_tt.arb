@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI йомгагы · Бүген акцияләрегез белән",
   "favoriteRemoved": "{symbol} сайланмалардан бетерелде",
   "listItemRemoved": "{symbol} «{list}» исемлегеннән бетерелде",
-  "watchListDeleted": "Исемлек бетерелде: {list}"
+  "watchListDeleted": "Исемлек бетерелде: {list}",
+  "sharedToClipboard": "Алмашу буферына күчерелде – уртаклашырга теләгән җиргә куегыз.",
+  "glossaryNoMatch": "Эзләвегезгә туры килгән термин юк.",
+  "cashInvalidAmount": "0 яки аннан зуррак сумма кертегез.",
+  "portfolioImportNothing": "Бу тексттан бер операция дә укып булмады. Һәр юлның үрнәктәге кебек булуын тикшерегез.",
+  "lotPriceFarFromQuote": "Бу бүгенге бәядән ({price}) бик ерак. Аны тикшерегез яки дөрес булса, кабат саклагыз."
 }

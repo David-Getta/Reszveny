@@ -2299,6 +2299,25 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'დაკოპირდა გაცვლის ბუფერში – ჩასვით იქ, სადაც გაზიარება გსურთ.';
+
+  @override
+  String get glossaryNoMatch => 'თქვენს ძიებას არცერთი ტერმინი არ ემთხვევა.';
+
+  @override
+  String get cashInvalidAmount => 'შეიყვანეთ 0 ან მეტი თანხა.';
+
+  @override
+  String get portfolioImportNothing =>
+      'ამ ტექსტიდან ტრანზაქციების წაკითხვა ვერ მოხერხდა. შეამოწმეთ, რომ თითოეული ხაზი მაგალითს ჰგავს.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'ეს ძალიან განსხვავდება დღევანდელი ფასისგან ($price). გადაამოწმეთ ან ხელახლა შეინახეთ, თუ სწორია.';
+  }
+
+  @override
   String get portfolioAskTitle => 'კითხვები თქვენი პორტფელის შესახებ';
 
   @override

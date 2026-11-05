@@ -2278,6 +2278,25 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'បានចម្លងទៅក្ដារតម្បៀតខ្ទាស់ – បិទភ្ជាប់វានៅកន្លែងណាដែលអ្នកចង់ចែករំលែក។';
+
+  @override
+  String get glossaryNoMatch => 'គ្មានពាក្យណាត្រូវនឹងការស្វែងរករបស់អ្នកទេ។';
+
+  @override
+  String get cashInvalidAmount => 'បញ្ចូលចំនួនទឹកប្រាក់ 0 ឬច្រើនជាងនេះ។';
+
+  @override
+  String get portfolioImportNothing =>
+      'មិនអាចអានប្រតិបត្តិការណាមួយពីអត្ថបទនេះបានទេ។ សូមពិនិត្យថាបន្ទាត់នីមួយៗមើលទៅដូចឧទាហរណ៍។';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'តម្លៃនេះខុសឆ្ងាយពីតម្លៃថ្ងៃនេះ ($price)។ សូមពិនិត្យ ឬរក្សាទុកម្តងទៀត ប្រសិនបើវាត្រឹមត្រូវ។';
+  }
+
+  @override
   String get portfolioAskTitle => 'សំណួរអំពីផលប័ត្ររបស់អ្នក';
 
   @override

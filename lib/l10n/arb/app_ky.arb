@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI корутундусу · Бүгүн акцияларыңыз менен",
   "favoriteRemoved": "{symbol} тандалмалардан өчүрүлдү",
   "listItemRemoved": "{symbol} «{list}» тизмесинен өчүрүлдү",
-  "watchListDeleted": "Тизме өчүрүлдү: {list}"
+  "watchListDeleted": "Тизме өчүрүлдү: {list}",
+  "sharedToClipboard": "Алмашуу буферине көчүрүлдү – бөлүшкүңүз келген жерге коюңуз.",
+  "glossaryNoMatch": "Издөөңүзгө дал келген термин жок.",
+  "cashInvalidAmount": "0 же андан көп сумманы киргизиңиз.",
+  "portfolioImportNothing": "Бул тексттен бир да транзакция окулган жок. Ар бир сап мисалдагыдай экенин текшериңиз.",
+  "lotPriceFarFromQuote": "Бул бүгүнкү баадан ({price}) өтө алыс. Текшериңиз же туура болсо, кайра сактаңыз."
 }

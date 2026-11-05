@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI-samenvatting · Vandaag met je aandelen",
   "favoriteRemoved": "{symbol} verwijderd uit favorieten",
   "listItemRemoved": "{symbol} verwijderd uit {list}",
-  "watchListDeleted": "Lijst verwijderd: {list}"
+  "watchListDeleted": "Lijst verwijderd: {list}",
+  "sharedToClipboard": "Gekopieerd naar het klembord – plak het waar je het wilt delen.",
+  "glossaryNoMatch": "Geen begrippen gevonden voor je zoekopdracht.",
+  "cashInvalidAmount": "Voer een bedrag van 0 of meer in.",
+  "portfolioImportNothing": "Er konden geen transacties uit deze tekst worden gelezen. Controleer of elke regel eruitziet als het voorbeeld.",
+  "lotPriceFarFromQuote": "Dit wijkt sterk af van de koers van vandaag ({price}). Controleer het, of sla opnieuw op als het klopt."
 }

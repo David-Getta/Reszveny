@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI সারাংশ · আজ আপনার শেয়ারগুলোর সাথে",
   "favoriteRemoved": "{symbol} পছন্দের তালিকা থেকে সরানো হয়েছে",
   "listItemRemoved": "{symbol} {list} থেকে সরানো হয়েছে",
-  "watchListDeleted": "তালিকা মুছে ফেলা হয়েছে: {list}"
+  "watchListDeleted": "তালিকা মুছে ফেলা হয়েছে: {list}",
+  "sharedToClipboard": "ক্লিপবোর্ডে কপি হয়েছে – যেখানে শেয়ার করতে চান সেখানে পেস্ট করুন।",
+  "glossaryNoMatch": "আপনার খোঁজের সাথে মেলে এমন কোনো শব্দ নেই।",
+  "cashInvalidAmount": "0 বা তার বেশি পরিমাণ লিখুন।",
+  "portfolioImportNothing": "এই টেক্সট থেকে কোনো লেনদেন পড়া যায়নি। প্রতিটি লাইন উদাহরণের মতো দেখাচ্ছে কিনা দেখে নিন।",
+  "lotPriceFarFromQuote": "এটি আজকের দামের ({price}) থেকে অনেক আলাদা। যাচাই করুন, অথবা সঠিক হলে আবার সেভ করুন।"
 }

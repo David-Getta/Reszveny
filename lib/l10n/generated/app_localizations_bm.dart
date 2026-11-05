@@ -2296,6 +2296,26 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'A kopiyelen don – a bila yɔrɔ o yɔrɔ i b\'a fɛ k\'a jɛnsɛn yen.';
+
+  @override
+  String get glossaryNoMatch => 'Daɲɛ si tɛ bɛn i ka ɲinini ma.';
+
+  @override
+  String get cashInvalidAmount =>
+      'Hakɛ sɛbɛn min ye 0 ye walima min ka bon ni 0 ye.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Sanni walima feereli si ma se ka kalan nin sɛbɛn in kɔnɔ. A lajɛ ko sira kelen kelen bɛɛ bɛ i n\'a fɔ misali.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Nin ni bi sɔngɔ ($price) cɛ ka jan kosɛbɛ. A lajɛ, walima i k\'a mara tugun ni a ka ɲi.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Ɲininkaliw i ka aksiyɔn kɛsu kan';
 
   @override

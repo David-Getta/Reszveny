@@ -2329,6 +2329,25 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Copiat în clipboard – lipește-l unde vrei să-l distribui.';
+
+  @override
+  String get glossaryNoMatch => 'Niciun termen nu se potrivește căutării.';
+
+  @override
+  String get cashInvalidAmount => 'Introdu o sumă de 0 sau mai mare.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Din acest text nu s-a putut citi nicio tranzacție. Verifică dacă fiecare linie arată ca exemplul.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Este foarte departe de prețul de azi ($price). Verifică-l sau salvează din nou dacă este corect.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Întrebări despre portofoliul tău';
 
   @override

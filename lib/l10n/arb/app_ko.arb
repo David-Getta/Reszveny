@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI 요약 · 오늘의 내 종목",
   "favoriteRemoved": "{symbol}을(를) 즐겨찾기에서 제거했습니다",
   "listItemRemoved": "{list}에서 {symbol}을(를) 제거했습니다",
-  "watchListDeleted": "목록을 삭제했습니다: {list}"
+  "watchListDeleted": "목록을 삭제했습니다: {list}",
+  "sharedToClipboard": "클립보드에 복사했습니다. 공유하려는 곳에 붙여 넣으세요.",
+  "glossaryNoMatch": "검색어와 일치하는 용어가 없습니다.",
+  "cashInvalidAmount": "0 이상의 금액을 입력하세요.",
+  "portfolioImportNothing": "이 텍스트에서 거래를 읽을 수 없습니다. 각 줄이 예시와 같은 형식인지 확인하세요.",
+  "lotPriceFarFromQuote": "오늘 가격({price})과 차이가 큽니다. 확인하거나, 맞다면 다시 저장하세요."
 }

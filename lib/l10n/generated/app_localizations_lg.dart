@@ -2309,6 +2309,25 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Kikoppoddwa – kiteeke wonna w\'oyagala okukigabana.';
+
+  @override
+  String get glossaryNoMatch => 'Tewali kigambo kikwatagana n\'ky\'onoonya.';
+
+  @override
+  String get cashInvalidAmount => 'Yingiza omuwendo gwa 0 oba okusingawo.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Tewali kyaguliddwa oba ekyatundiddwa ekisobodde okusomebwa mu biwandiiko bino. Kebera nti buli lunyiriri lufaanana ng\'ekyokulabirako.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Kino kiri wala nnyo ku bbeeyi ya leero ($price). Kikebere, oba tereka nate bwe kiba nga kituufu.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Ebibuuzo ku migabo gyo';
 
   @override

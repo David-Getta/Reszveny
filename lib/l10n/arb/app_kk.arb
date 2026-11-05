@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI қорытындысы · Бүгін акцияларыңызбен",
   "favoriteRemoved": "{symbol} таңдаулылардан алып тасталды",
   "listItemRemoved": "{symbol} «{list}» тізімінен алып тасталды",
-  "watchListDeleted": "Тізім жойылды: {list}"
+  "watchListDeleted": "Тізім жойылды: {list}",
+  "sharedToClipboard": "Алмасу буферіне көшірілді – бөліскіңіз келген жерге қойыңыз.",
+  "glossaryNoMatch": "Іздеуіңізге сәйкес термин жоқ.",
+  "cashInvalidAmount": "0 немесе одан көп соманы енгізіңіз.",
+  "portfolioImportNothing": "Бұл мәтіннен бірде-бір операцияны оқу мүмкін болмады. Әр жолдың үлгідегідей екенін тексеріңіз.",
+  "lotPriceFarFromQuote": "Бұл бүгінгі бағадан ({price}) тым алшақ. Тексеріңіз немесе дұрыс болса, қайта сақтаңыз."
 }

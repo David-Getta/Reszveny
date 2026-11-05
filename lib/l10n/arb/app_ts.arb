@@ -891,5 +891,10 @@
   "briefNotificationTitle": "Nkomiso wa AI · Namuntlha ni swiavelo swa wena",
   "favoriteRemoved": "{symbol} yi susiwile eka leswi u swi rhandzaka",
   "listItemRemoved": "{symbol} yi susiwile eka {list}",
-  "watchListDeleted": "Nxaxamelo wu suriwile: {list}"
+  "watchListDeleted": "Nxaxamelo wu suriwile: {list}",
+  "sharedToClipboard": "Swi kopiwile eka klipibodi – swi namarhete laha u lavaka ku swi avelana kona.",
+  "glossaryNoMatch": "A ku na rito leri fambelanaka ni leswi u swi laveke.",
+  "cashInvalidAmount": "Nghenisa ntsengo wa 0 kumbe ku tlula.",
+  "portfolioImportNothing": "A ku na xixaviwa kumbe xixavisiwa lexi koteke ku hlayiwa eka tsalwa leri. Kambela leswaku layini yin'wana ni yin'wana yi fana ni xikombiso.",
+  "lotPriceFarFromQuote": "Nxavo lowu wu le kule swinene na nxavo wa namuntlha ({price}). Wu kambela, kumbe u wu hlayisa nakambe loko wu lulamile."
 }

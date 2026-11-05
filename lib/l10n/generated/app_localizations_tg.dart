@@ -2301,6 +2301,25 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Ба буфери мубодила нусхабардорӣ шуд – онро дар ҷое, ки мехоҳед мубодила кунед, гузоред.';
+
+  @override
+  String get glossaryNoMatch => 'Ягон истилоҳ ба ҷустуҷӯи шумо мувофиқ нест.';
+
+  @override
+  String get cashInvalidAmount => 'Маблағи 0 ё зиёдтарро ворид кунед.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Аз ин матн ягон амалиёт хонда нашуд. Санҷед, ки ҳар сатр ба намуна монанд бошад.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Ин аз нархи имрӯза ($price) хеле дур аст. Онро санҷед ё агар дуруст бошад, аз нав нигоҳ доред.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Саволҳо дар бораи портфели шумо';
 
   @override

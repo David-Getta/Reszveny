@@ -2297,6 +2297,25 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Алмасу буферіне көшірілді – бөліскіңіз келген жерге қойыңыз.';
+
+  @override
+  String get glossaryNoMatch => 'Іздеуіңізге сәйкес термин жоқ.';
+
+  @override
+  String get cashInvalidAmount => '0 немесе одан көп соманы енгізіңіз.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Бұл мәтіннен бірде-бір операцияны оқу мүмкін болмады. Әр жолдың үлгідегідей екенін тексеріңіз.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Бұл бүгінгі бағадан ($price) тым алшақ. Тексеріңіз немесе дұрыс болса, қайта сақтаңыз.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Портфеліңіз туралы сұрақтар';
 
   @override

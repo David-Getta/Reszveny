@@ -259,6 +259,23 @@ const maxImportBytes = 3 * 1024 * 1024;
 class _ImportDialogState extends State<_ImportDialog> {
   final _text = TextEditingController();
 
+  /// Semmi nem volt beolvasható: az ablak nyitva marad a beillesztett szöveggel.
+  String? _error;
+
+  void _import() {
+    // Amerikai rendszer-beállításnál (az app nyelve ország nélküli) a kétértelmű perjeles
+    // dátum hónappal kezdődik.
+    final parsed = parsePortfolioCsv(
+      _text.text,
+      monthFirst: WidgetsBinding.instance.platformDispatcher.locale.countryCode == 'US',
+    );
+    if (parsed.lots.isEmpty && parsed.dividends.isEmpty && parsed.splits.isEmpty) {
+      setState(() => _error = AppLocalizations.of(context).portfolioImportNothing);
+      return;
+    }
+    Navigator.of(context).pop(parsed);
+  }
+
   /// Egy bróker-export vagy saját CSV beolvasása fájlból a szövegmezőbe.
   Future<void> _chooseFile() async {
     try {
@@ -326,9 +343,13 @@ class _ImportDialogState extends State<_ImportDialog> {
                 minLines: 5,
                 maxLines: 10,
                 style: const TextStyle(fontFamily: 'monospace', fontSize: 13),
-                decoration: const InputDecoration(
+                onChanged: (_) {
+                  if (_error != null) setState(() => _error = null);
+                },
+                decoration: InputDecoration(
                   hintText: 'AAPL, 10, 180.50, USD, 2025-03-14',
-                  border: OutlineInputBorder(),
+                  border: const OutlineInputBorder(),
+                  errorText: _error,
                 ),
               ),
             ],
@@ -342,14 +363,7 @@ class _ImportDialogState extends State<_ImportDialog> {
         ),
         FilledButton(
           key: const ValueKey('portfolio-import-ok'),
-          // Amerikai rendszer-beállításnál (az app nyelve ország nélküli) a kétértelmű perjeles
-          // dátum hónappal kezdődik.
-          onPressed: () => Navigator.of(context).pop(
-            parsePortfolioCsv(
-              _text.text,
-              monthFirst: WidgetsBinding.instance.platformDispatcher.locale.countryCode == 'US',
-            ),
-          ),
+          onPressed: _import,
           child: Text(l10n.portfolioImportButton),
         ),
       ],

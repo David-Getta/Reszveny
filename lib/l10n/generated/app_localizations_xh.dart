@@ -2307,6 +2307,25 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Kukhutshelwe kwibhodi yokukopa – ncamathisela naphi na apho ufuna ukwabelana khona.';
+
+  @override
+  String get glossaryNoMatch => 'Akukho gama lihambelana nokukhangela kwakho.';
+
+  @override
+  String get cashInvalidAmount => 'Faka isixa esi-0 okanye ngaphezulu.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Akukho ntengiselwano ibinokufundwa kulo mbhalo. Jonga ukuba umgca ngamnye ufana nomzekelo.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Eli xabiso likude kakhulu kwixabiso lanamhlanje ($price). Lijonge, okanye uligcine kwakhona ukuba lichanekile.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Imibuzo ngepotifoliyo yakho';
 
   @override

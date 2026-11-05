@@ -1,5 +1,5 @@
-import 'dart:typed_data';
-
+import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -10,10 +10,27 @@ import '../models/stock_report.dart';
 typedef ShareHandler = Future<void> Function(String text, {String? subject, Rect? origin});
 
 ShareHandler shareText = (text, {subject, origin}) async {
-  await SharePlus.instance.share(
-    ShareParams(text: text, subject: subject, sharePositionOrigin: originOrCenter(origin)),
-  );
+  try {
+    await SharePlus.instance.share(
+      ShareParams(
+        text: text,
+        subject: subject,
+        sharePositionOrigin: originOrCenter(origin),
+        // Weben a megosztás-menü nélküli böngésző (asztali Chrome Linuxon, Firefox) e-mail
+        // linket nyitna (felvillanó üres ablak): helyette a vágólapra kerül a szöveg.
+        mailToFallbackEnabled: !kIsWeb,
+      ),
+    );
+  } catch (_) {
+    if (!kIsWeb) rethrow;
+    await Clipboard.setData(ClipboardData(text: text));
+    sharedToClipboard.value++;
+  }
 };
+
+/// Nő, ha a megosztandó szöveg a vágólapra került (weben, megosztás-menü nélkül): a keret
+/// erre egy rövid üzenetet mutat („Vágólapra másolva…”).
+final sharedToClipboard = ValueNotifier<int>(0);
 
 /// Kép megosztása (PNG) a rendszer megosztás-menüjével; tesztben lecserélhető.
 typedef ImageShareHandler = Future<void> Function(

@@ -891,5 +891,10 @@
   "briefNotificationTitle": "AI kopsavilkums · Šodien ar jūsu akcijām",
   "favoriteRemoved": "Akcija {symbol} noņemta no izlases",
   "listItemRemoved": "Akcija {symbol} noņemta no saraksta „{list}”",
-  "watchListDeleted": "Saraksts izdzēsts: {list}"
+  "watchListDeleted": "Saraksts izdzēsts: {list}",
+  "sharedToClipboard": "Nokopēts starpliktuvē – ielīmējiet to tur, kur vēlaties kopīgot.",
+  "glossaryNoMatch": "Jūsu meklējumam neatbilst neviens termins.",
+  "cashInvalidAmount": "Ievadiet summu 0 vai vairāk.",
+  "portfolioImportNothing": "No šī teksta neizdevās nolasīt nevienu darījumu. Pārbaudiet, vai katra rinda izskatās kā piemērā.",
+  "lotPriceFarFromQuote": "Tas krietni atšķiras no šodienas cenas ({price}). Pārbaudiet vai saglabājiet vēlreiz, ja viss ir pareizi."
 }

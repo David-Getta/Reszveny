@@ -2304,6 +2304,25 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'U kopjua në kujtesën e përkohshme – ngjiteni aty ku doni ta ndani.';
+
+  @override
+  String get glossaryNoMatch => 'Asnjë term nuk përputhet me kërkimin tuaj.';
+
+  @override
+  String get cashInvalidAmount => 'Vendosni një shumë 0 ose më të madhe.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Nga ky tekst nuk u lexua asnjë transaksion. Kontrolloni që çdo rresht të duket si shembulli.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Ky çmim është shumë larg çmimit të sotëm ($price). Kontrollojeni ose ruajeni përsëri nëse është i saktë.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Pyetje për portofolin tuaj';
 
   @override

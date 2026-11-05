@@ -891,5 +891,10 @@
   "briefNotificationTitle": "DI santrauka · Šiandien su jūsų akcijomis",
   "favoriteRemoved": "{symbol} pašalinta iš mėgstamiausių",
   "listItemRemoved": "{symbol} pašalinta iš sąrašo „{list}“",
-  "watchListDeleted": "Sąrašas ištrintas: {list}"
+  "watchListDeleted": "Sąrašas ištrintas: {list}",
+  "sharedToClipboard": "Nukopijuota į iškarpinę – įklijuokite ten, kur norite bendrinti.",
+  "glossaryNoMatch": "Jūsų paieškos neatitinka joks terminas.",
+  "cashInvalidAmount": "Įveskite 0 arba didesnę sumą.",
+  "portfolioImportNothing": "Iš šio teksto nepavyko nuskaityti jokių operacijų. Patikrinkite, ar kiekviena eilutė atrodo kaip pavyzdyje.",
+  "lotPriceFarFromQuote": "Tai labai skiriasi nuo šiandienos kainos ({price}). Patikrinkite arba išsaugokite dar kartą, jei viskas teisinga."
 }

@@ -2354,6 +2354,25 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Kopirano v odložišče – prilepite ga tja, kjer ga želite deliti.';
+
+  @override
+  String get glossaryNoMatch => 'Iskanju ne ustreza noben pojem.';
+
+  @override
+  String get cashInvalidAmount => 'Vnesite znesek 0 ali več.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Iz tega besedila ni bilo mogoče prebrati nobene transakcije. Preverite, ali je vsaka vrstica videti kot primer.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Cena se močno razlikuje od današnje ($price). Preverite jo ali jo znova shranite, če je pravilna.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Vprašanja o vašem portfelju';
 
   @override

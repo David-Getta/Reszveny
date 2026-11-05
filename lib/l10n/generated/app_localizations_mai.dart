@@ -2291,6 +2291,25 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'क्लिपबोर्डमे कॉपी भेल – जतय साझा करबाक हो, ओतय साटू।';
+
+  @override
+  String get glossaryNoMatch => 'अहाँक खोजसँ कोनो शब्द मेल नहि खाइत अछि।';
+
+  @override
+  String get cashInvalidAmount => '0 वा ओहिसँ बेसी राशि लिखू।';
+
+  @override
+  String get portfolioImportNothing =>
+      'एहि पाठसँ कोनो लेन-देन नहि पढ़ल जा सकल। जाँचू जे प्रत्येक पाँती उदाहरण जकाँ देखाइत अछि।';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'ई आजुक दाम ($price) सँ बहुत भिन्न अछि। जाँचि लिअ, वा सही हो तँ फेरसँ सेव करू।';
+  }
+
+  @override
   String get portfolioAskTitle => 'अहाँक पोर्टफ़ोलियोक बारेमे प्रश्न';
 
   @override

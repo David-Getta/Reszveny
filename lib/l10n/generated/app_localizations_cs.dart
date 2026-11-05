@@ -2347,6 +2347,25 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Zkopírováno do schránky – vložte text tam, kde ho chcete sdílet.';
+
+  @override
+  String get glossaryNoMatch => 'Vašemu hledání neodpovídá žádný pojem.';
+
+  @override
+  String get cashInvalidAmount => 'Zadejte částku 0 nebo vyšší.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Z tohoto textu se nepodařilo načíst žádné transakce. Zkontrolujte, zda každý řádek vypadá jako příklad.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Tato hodnota je daleko od dnešní ceny ($price). Zkontrolujte ji, nebo ji uložte znovu, pokud je správná.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Otázky k vašemu portfoliu';
 
   @override

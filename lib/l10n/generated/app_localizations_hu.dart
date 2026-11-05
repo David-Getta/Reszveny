@@ -2298,6 +2298,25 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Vágólapra másolva – illeszd be oda, ahol meg szeretnéd osztani.';
+
+  @override
+  String get glossaryNoMatch => 'Nincs a keresésnek megfelelő fogalom.';
+
+  @override
+  String get cashInvalidAmount => 'Adj meg egy legalább 0 összeget.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Ebből a szövegből egy tranzakció sem olvasható be. Nézd meg, hogy a sorok a mintához hasonlók-e.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Ez nagyon eltér a mai ártól ($price). Nézd meg, vagy ha jó, mentsd újra.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Kérdések a portfóliódról';
 
   @override

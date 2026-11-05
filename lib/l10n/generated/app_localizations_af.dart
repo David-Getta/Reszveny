@@ -2303,6 +2303,25 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Na die knipbord gekopieer – plak dit waar jy dit ook al wil deel.';
+
+  @override
+  String get glossaryNoMatch => 'Geen terme pas by jou soektog nie.';
+
+  @override
+  String get cashInvalidAmount => 'Voer \'n bedrag van 0 of meer in.';
+
+  @override
+  String get portfolioImportNothing =>
+      'Geen transaksies kon uit hierdie teks gelees word nie. Kontroleer dat elke reël soos die voorbeeld lyk.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Dit is ver van vandag se prys ($price). Kontroleer dit, of stoor weer as dit reg is.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Vrae oor jou portefeulje';
 
   @override

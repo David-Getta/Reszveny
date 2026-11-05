@@ -29,6 +29,7 @@ import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
 import '../../widgets/centered_scroll.dart';
 import '../../widgets/fit_row.dart';
+import '../../widgets/fit_text.dart';
 
 /// Fiók törlése megerősítéssel; a készüléken tárolt adatok törlése is választható.
 /// Fióktörlés folyamatban: lassú hálózaton egy második koppintás ne indítson újabbat.
@@ -321,17 +322,17 @@ class SettingsPage extends StatelessWidget {
                       segments: [
                         ButtonSegment(
                           value: ThemeMode.system,
-                          label: Text(l10n.themeSystem),
+                          label: OneLineLabel(l10n.themeSystem),
                           icon: const Icon(Icons.brightness_auto_outlined),
                         ),
                         ButtonSegment(
                           value: ThemeMode.dark,
-                          label: Text(l10n.themeDark),
+                          label: OneLineLabel(l10n.themeDark),
                           icon: const Icon(Icons.dark_mode_outlined),
                         ),
                         ButtonSegment(
                           value: ThemeMode.light,
-                          label: Text(l10n.themeLight),
+                          label: OneLineLabel(l10n.themeLight),
                           icon: const Icon(Icons.light_mode_outlined),
                         ),
                       ],
@@ -589,9 +590,13 @@ class _AnalysisSettings extends StatelessWidget {
                 child: SegmentedButton<AnalysisDepth>(
                   showSelectedIcon: false,
                   segments: [
-                    ButtonSegment(value: AnalysisDepth.brief, label: Text(l10n.aiDepthBrief)),
-                    ButtonSegment(value: AnalysisDepth.standard, label: Text(l10n.aiDepthStandard), enabled: !trial),
-                    ButtonSegment(value: AnalysisDepth.deep, label: Text(l10n.aiDepthDeep), enabled: !trial),
+                    ButtonSegment(value: AnalysisDepth.brief, label: OneLineLabel(l10n.aiDepthBrief)),
+                    ButtonSegment(
+                      value: AnalysisDepth.standard,
+                      label: OneLineLabel(l10n.aiDepthStandard),
+                      enabled: !trial,
+                    ),
+                    ButtonSegment(value: AnalysisDepth.deep, label: OneLineLabel(l10n.aiDepthDeep), enabled: !trial),
                   ],
                   selected: {depth},
                   onSelectionChanged: (s) => prefs.setAnalysisDepth(s.first),
@@ -608,8 +613,8 @@ class _AnalysisSettings extends StatelessWidget {
                 child: SegmentedButton<ReaderLevel>(
                   showSelectedIcon: false,
                   segments: [
-                    ButtonSegment(value: ReaderLevel.beginner, label: Text(l10n.aiReaderBeginner)),
-                    ButtonSegment(value: ReaderLevel.experienced, label: Text(l10n.aiReaderExperienced)),
+                    ButtonSegment(value: ReaderLevel.beginner, label: OneLineLabel(l10n.aiReaderBeginner)),
+                    ButtonSegment(value: ReaderLevel.experienced, label: OneLineLabel(l10n.aiReaderExperienced)),
                   ],
                   selected: {prefs.readerLevel},
                   onSelectionChanged: (s) => prefs.setReaderLevel(s.first),

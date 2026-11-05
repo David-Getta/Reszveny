@@ -2299,6 +2299,25 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get sharedToClipboard =>
+      'Копирано в клипборда – поставете го там, където искате да го споделите.';
+
+  @override
+  String get glossaryNoMatch => 'Няма термини, отговарящи на търсенето ви.';
+
+  @override
+  String get cashInvalidAmount => 'Въведете сума 0 или повече.';
+
+  @override
+  String get portfolioImportNothing =>
+      'От този текст не можаха да бъдат прочетени транзакции. Проверете дали всеки ред изглежда като примера.';
+
+  @override
+  String lotPriceFarFromQuote(String price) {
+    return 'Това е далеч от днешната цена ($price). Проверете или запазете отново, ако е вярно.';
+  }
+
+  @override
   String get portfolioAskTitle => 'Въпроси за вашия портфейл';
 
   @override
