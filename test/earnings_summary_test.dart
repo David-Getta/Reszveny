@@ -166,7 +166,9 @@ void main() {
     expect(shared.single, startsWith('AAPL · Apple Inc. · What was in the latest report?\n'));
     expect(shared.single, contains('Apple beat expectations: revenue grew 8%.'));
     expect(shared.single, contains('Apple Q3 results: https://investor.apple.com/q3'));
-    expect(shared.single, contains('Not investment advice.'));
+    // Az általános AI-figyelmeztetés, nem a saját keretről szóló megjegyzés (a címzettnek az semmit nem jelent).
+    expect(shared.single, contains('it is not investment advice.'));
+    expect(shared.single, isNot(contains('allowance')));
     // Mentés a jegyzetbe: dátum, cím, szöveg, források; másodszor nem menthető.
     await tester.tap(find.byKey(const ValueKey('research-save-note')));
     await tester.pumpAndSettle();

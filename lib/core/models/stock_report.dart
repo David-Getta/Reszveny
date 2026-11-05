@@ -1,5 +1,7 @@
 import 'dart:math' as math;
 
+import '../util/ai_text.dart';
+
 /// AI-elemzés egy részvényről: szekciókra bontott, a felhasználó nyelvén
 /// megírt átfogó kép, friss hírek összefoglalásával és forrásokkal.
 class StockReport {
@@ -13,9 +15,15 @@ class StockReport {
     this.outlook,
     this.promptVersion,
     this.nextEarnings,
+    this.positionNote,
   });
 
   final String symbol;
+
+  /// A kilátások pozícióhoz mért pontja (hol áll az egyes forgatókönyv a felhasználó
+  /// átlagárához képest): az appban a kilátások alatt látszik, de megosztásba és
+  /// hibajelentésbe nem kerül – a felhasználó saját pozíciója.
+  final String? positionNote;
 
   /// A következő gyorsjelentés napja az elemzés idején (ha ismert): ha azóta
   /// eltelt, az elemzés még a friss eredmények előtt készült.
@@ -51,6 +59,21 @@ class StockReport {
     outlook: outlook,
     promptVersion: promptVersion,
     nextEarnings: date,
+    positionNote: positionNote,
+  );
+
+  /// Ugyanez az elemzés a pozícióhoz mért ponttal (a kilátások pontjai közül kivéve).
+  StockReport withPositionNote(List<ReportSection> sections, String? note) => StockReport(
+    symbol: symbol,
+    headline: headline,
+    sections: sections,
+    generatedAt: generatedAt,
+    sources: sources,
+    language: language,
+    outlook: outlook,
+    promptVersion: promptVersion,
+    nextEarnings: nextEarnings,
+    positionNote: note,
   );
 
   /// Egy-két mondatos lényeg (TL;DR).
@@ -79,6 +102,7 @@ class StockReport {
     if (outlook != null) 'outlook_data': outlook!.toJson(),
     'prompt_version': ?promptVersion,
     if (nextEarnings != null) 'next_earnings': nextEarnings!.toIso8601String().substring(0, 10),
+    'position_note': ?positionNote,
   };
 
   factory StockReport.fromJson(Map<String, dynamic> j) => StockReport(
@@ -97,6 +121,7 @@ class StockReport {
         : null,
     promptVersion: j['prompt_version'] as String?,
     nextEarnings: DateTime.tryParse(j['next_earnings'] as String? ?? ''),
+    positionNote: j['position_note'] as String?,
   );
 }
 
@@ -283,7 +308,30 @@ class ReportOutlook {
   factory ReportOutlook.fromJson(Map<String, dynamic> j) {
     final mood = _num(j['market_mood']);
     final cur = (j['currency'] as String?)?.trim();
-    final scenarios = _list(j['scenarios'], Scenario.fromJson)..sort((a, b) => a.kind.index.compareTo(b.kind.index));
+    final parsed = _list(j['scenarios'], Scenario.fromJson)..sort((a, b) => a.kind.index.compareTo(b.kind.index));
+    // A valószínűségek összege 100%: ha a modell eltért (pl. 120%), arányosan igazítva.
+    final sum = parsed.fold(0.0, (a, s) => a + s.probability);
+    final scenarios = sum > 0 && (sum - 100).abs() > 2
+        ? [
+            for (final s in parsed)
+              Scenario(
+                kind: s.kind,
+                probability: s.probability * 100 / sum,
+                priceLow: s.priceLow,
+                priceHigh: s.priceHigh,
+                horizon: s.horizon,
+                summary: s.summary,
+              ),
+          ]
+        : parsed;
+    // Egy nagyságrendekkel félrecsúszott kulcsszint (más pénzegység, elírás) a grafikont
+    // szétnyomná: a jelenlegi ártól ötszörösnél messzebb lévő szint kimarad.
+    final current = _num(j['current_price']);
+    final reference =
+        current ?? (scenarios.isEmpty ? null : scenarios.map((s) => s.priceHigh ?? s.priceLow ?? 0).reduce(math.max));
+    final levels = _list(j['key_levels'], KeyLevel.fromJson)
+      ..removeWhere((k) => reference != null && reference > 0 && (k.price > reference * 5 || k.price < reference / 5))
+      ..sort((a, b) => a.price.compareTo(b.price));
     final catalysts = _list(j['catalysts'], Catalyst.fromJson)
       ..sort((a, b) {
         final da = a.sortDate, db = b.sortDate;
@@ -293,10 +341,10 @@ class ReportOutlook {
         return da.compareTo(db);
       });
     return ReportOutlook(
-      currentPrice: _num(j['current_price']),
+      currentPrice: current,
       currency: cur == null || cur.isEmpty ? null : cur,
       scenarios: scenarios,
-      keyLevels: _list(j['key_levels'], KeyLevel.fromJson)..sort((a, b) => a.price.compareTo(b.price)),
+      keyLevels: levels,
       catalysts: catalysts,
       marketMood: mood?.round().clamp(-2, 2),
       marketMoodReason: (j['market_mood_reason'] as String? ?? '').trim(),
@@ -419,6 +467,14 @@ class ReportSection {
   final List<String> bullets;
 
   bool get isEmpty => paragraphs.isEmpty && bullets.isEmpty;
+
+  /// Ugyanez a szakasz Markdown-jelölések nélkül (lásd `plainAiText`).
+  ReportSection plain() => ReportSection(
+    kind: kind,
+    title: plainAiText(title),
+    paragraphs: [for (final p in paragraphs) plainAiText(p)],
+    bullets: [for (final b in bullets) plainAiText(b)],
+  );
 
   Map<String, dynamic> toJson() => {'kind': kind.name, 'title': title, 'paragraphs': paragraphs, 'bullets': bullets};
 

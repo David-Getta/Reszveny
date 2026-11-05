@@ -156,9 +156,11 @@ Future<void> showEarningsSummary(
   final services = AppServices.of(context);
   final l10n = AppLocalizations.of(context);
   final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
+  // Cégnév nélkül (a hívó csak a tickert ismeri) nem „AAPL · AAPL”, és az AI-nak sem „AAPL (AAPL)”.
+  final name = companyName.trim().toUpperCase() == symbol.toUpperCase() ? '' : companyName.trim();
   final answer = services.earningsSummarizer.summarize(
     symbol: symbol,
-    companyName: companyName,
+    companyName: name,
     language: language,
     lastPeriod: lastPeriod,
   );
@@ -166,7 +168,7 @@ Future<void> showEarningsSummary(
   return showResearchSheet(
     context,
     sheetKey: const ValueKey('earnings-summary-sheet'),
-    eyebrow: '$symbol · $companyName',
+    eyebrow: name.isEmpty ? symbol : '$symbol · $name',
     title: l10n.earningsSummaryButton,
     answer: answer,
     note: l10n.earningsSummaryNote,

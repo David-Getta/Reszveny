@@ -265,7 +265,15 @@ class _AnalysisCardState extends State<AnalysisCard> {
                 ],
                 for (final s in report.sections)
                   _ReportSectionView(
-                    section: s,
+                    // A pozícióhoz mért pont a kilátások végén (külön tárolva: nem kerül megosztásba).
+                    section: s.kind == ReportSectionKind.outlook && report.positionNote != null
+                        ? ReportSection(
+                            kind: s.kind,
+                            title: s.title,
+                            paragraphs: s.paragraphs,
+                            bullets: [...s.bullets, report.positionNote!],
+                          )
+                        : s,
                     outlook: report.outlook,
                     fmt: fmt,
                     generatedAt: report.generatedAt,
@@ -275,9 +283,14 @@ class _AnalysisCardState extends State<AnalysisCard> {
                   const SizedBox(height: 16),
                   Text(l10n.aiSources, style: theme.textTheme.titleSmall),
                   const SizedBox(height: 6),
-                  for (final src in report.sources.take(12))
+                  // Csak webcím (egy régebben mentett elemzésben más is lehet); ha nem nyílik meg, kiírja.
+                  for (final src in report.sources.where((s) => safeWebUri(s.url) != null).take(12))
                     InkWell(
-                      onTap: () => openWeb(src.url),
+                      onTap: () async {
+                        if (!await openWeb(src.url) && context.mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l10n.openLinkFailed)));
+                        }
+                      },
                       child: Padding(
                         padding: const EdgeInsets.symmetric(vertical: 3),
                         child: Row(

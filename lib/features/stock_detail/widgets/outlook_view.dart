@@ -585,24 +585,53 @@ class _Chip extends StatelessWidget {
   }
 }
 
-/// Közelgő események dátummal, időrendben.
+/// Közelgő események dátummal, időrendben. Az elmúlt események (egy régebbi elemzésben,
+/// vagy ha a modell múltbeli napot írt) nem látszanak „közelgő”-ként; a csak hónapos dátum
+/// a nyelv szerinti hónapnévvel (nem „2026-11”).
 class CatalystTimeline extends StatelessWidget {
-  const CatalystTimeline({super.key, required this.catalysts, required this.fmt});
+  const CatalystTimeline({super.key, required this.catalysts, required this.fmt, this.now});
 
   final List<Catalyst> catalysts;
   final Fmt fmt;
+
+  /// A mai nap (tesztben rögzíthető).
+  final DateTime? now;
+
+  /// A még nem elmúlt események, időrendben (a dátum nélküliek a végén).
+  static List<Catalyst> upcoming(List<Catalyst> all, DateTime now) {
+    final today = DateTime(now.year, now.month, now.day);
+    bool past(Catalyst c) {
+      final d = c.parsedDate;
+      if (d != null) return DateTime(d.year, d.month, d.day).isBefore(today);
+      final m = c.sortDate;
+      return m != null && !DateTime(m.year, m.month + 1).isAfter(today);
+    }
+
+    final kept = [
+      for (final c in all)
+        if (!past(c)) c,
+    ];
+    kept.sort((a, b) {
+      final x = a.sortDate, y = b.sortDate;
+      if (x == null || y == null) return x == null ? (y == null ? 0 : 1) : -1;
+      return x.compareTo(y);
+    });
+    return kept;
+  }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
+    final shown = upcoming(catalysts, now ?? DateTime.now());
+    if (shown.isEmpty) return const SizedBox.shrink();
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(l10n.upcomingEvents, style: theme.textTheme.labelLarge),
         const SizedBox(height: 6),
-        for (final c in catalysts)
+        for (final c in shown)
           Padding(
             padding: const EdgeInsets.only(bottom: 6),
             child: Row(
@@ -616,7 +645,9 @@ class CatalystTimeline extends StatelessWidget {
                     borderRadius: BorderRadius.circular(6),
                   ),
                   child: Text(
-                    c.parsedDate != null && c.date.length >= 10 ? fmt.date(c.parsedDate) : c.date,
+                    c.parsedDate != null && c.date.length >= 10
+                        ? fmt.date(c.parsedDate)
+                        : (c.sortDate != null ? fmt.monthYear(c.sortDate) : c.date),
                     style: theme.textTheme.labelMedium?.copyWith(color: p.accent, fontWeight: FontWeight.w600),
                     textAlign: TextAlign.center,
                   ),

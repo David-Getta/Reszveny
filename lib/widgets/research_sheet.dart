@@ -92,7 +92,9 @@ Future<void> showResearchSheet(
                                       for (final s in r.sources) '${s.title}: ${s.url}',
                                     ],
                                     '',
-                                    note,
+                                    // Az általános AI-figyelmeztetés: a lap megjegyzése a saját keretről
+                                    // szól, ami a címzettnek nem jelent semmit.
+                                    l10n.aiDisclaimer,
                                   ].join('\n'),
                                   subject: '$eyebrow · $title',
                                 ),

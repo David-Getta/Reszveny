@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/ai_text.dart';
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import '../../core/models/company_profile.dart';
@@ -298,10 +299,10 @@ Return one JSON object: {"headline": string (one sentence stating the portfolio'
       final payload = jsonDecode(text) as Map<String, dynamic>;
       report = StockReport(
         symbol: AnalysisChat.portfolioSymbol,
-        headline: (payload['headline'] as String? ?? '').trim(),
+        headline: plainAiText((payload['headline'] as String? ?? '').trim()),
         sections: [
           for (final s in (payload['sections'] as List? ?? const []))
-            if (s is Map) ReportSection.fromJson(s.cast<String, dynamic>()),
+            if (s is Map) ReportSection.fromJson(s.cast<String, dynamic>()).plain(),
         ].where((s) => !s.isEmpty).toList(),
         generatedAt: _clock(),
         language: language,

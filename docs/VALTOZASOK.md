@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.317)
+# Változásjegyzék (0.2.130 → 0.2.318)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,22 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## AI-válaszok: tisztább szöveg, pozíció a megosztáson kívül
+
+- **0.2.318**: az AI-elemzés pozícióhoz mért pontja (hol áll az egyes forgatókönyv az átlagáradhoz képest)
+  külön van tárolva: az appban a kilátások végén látszik, de megosztásba és hibajelentésbe akkor sem kerülhet,
+  ha a modell egy rövid elemzésben összevonta a forgatókönyvek pontjait.
+- Az AI-szövegekben (elemzés, kérdés-válasz, napi összefoglaló, portfólió-áttekintés) nem látszanak nyers
+  Markdown-jelek („**…**”, „[szöveg](cím)”, „## cím”).
+- A „Figyelendő események” között nem jelennek meg elmúlt események (egy régebbi elemzésben sem), a csak
+  hónapos dátum a nyelv szerinti hónapnévvel látszik.
+- Az elemzésenkénti hat kérdés korlátja újraindítás után is megmarad (eddig egy újratöltés nullázta, miközben
+  az app új elemzést javasolt).
+- A megosztott utánanézés (miért mozog, hír, gyorsjelentés, alap) végén az általános AI-figyelmeztetés áll, nem
+  a saját keretről szóló megjegyzés; cégnév nélkül nem „AAPL · AAPL” a gyorsjelentés-összefoglaló címe.
+- Forrásként csak webcím jelenik meg, és ha nem nyílik meg, az app szól; a kilátás-grafikont egy nagyságrenddel
+  elcsúszott kulcsszint nem nyomja szét, és a forgatókönyvek esélye mindig 100%-ra adódik.
 
 ## Adatvédelem a készüléken: fotók helyadata, naplók, bizonylatok
 

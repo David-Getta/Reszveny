@@ -1,8 +1,12 @@
+import 'dart:async';
 import 'dart:convert';
+import 'dart:math' as math;
 
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/ai_text.dart';
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import '../../core/models/stock_report.dart';
@@ -45,6 +49,37 @@ class AnalysisChat extends ChangeNotifier {
   static const maxThreads = 30;
   final Set<String> _busy = {};
 
+  /// Elemzésenként a már feltett kérdések száma, a készüléken megőrizve: a beszélgetés
+  /// csak az app futása alatt él, de a [maxQuestions] korlát újraindítás után is marad
+  /// (különben az „ez volt az utolsó kérdés” egy újratöltéssel kikerülhető).
+  final Map<String, int> _asked = {};
+  static const _askedKey = 'chat_asked';
+
+  /// Ennyi elemzés számát őrzi meg (a legrégebbiek mennek).
+  static const maxAskedKept = 60;
+  Future<void>? _loading;
+
+  Future<void> _load() => _loading ??= () async {
+    try {
+      final raw = (await SharedPreferences.getInstance()).getString(_askedKey);
+      if (raw != null) {
+        for (final e in (jsonDecode(raw) as Map).entries) {
+          if (e.value is num) _asked.putIfAbsent('${e.key}', () => (e.value as num).toInt());
+        }
+      }
+    } catch (_) {}
+    notifyListeners();
+  }();
+
+  Future<void> _saveAsked() async {
+    while (_asked.length > maxAskedKept) {
+      _asked.remove(_asked.keys.first);
+    }
+    try {
+      await (await SharedPreferences.getInstance()).setString(_askedKey, jsonEncode(_asked));
+    } catch (_) {}
+  }
+
   // UTC-ben: a frissen készült (helyi idejű) és a lemezről betöltött (UTC) példány ugyanaz.
   static String _key(StockReport r) => '${r.symbol}|${r.generatedAt.toUtc().toIso8601String()}';
 
@@ -56,16 +91,20 @@ class AnalysisChat extends ChangeNotifier {
   /// A beszélgetések törlése (kijelentkezéskor, a személyes adatokkal együtt).
   void clear() {
     _threads.clear();
+    _asked.clear();
+    unawaited(SharedPreferences.getInstance().then((p) => p.remove(_askedKey), onError: (Object _) => false));
     notifyListeners();
   }
 
-  int questionsLeft(StockReport r) => maxQuestions - thread(r).where((m) => m.fromUser).length;
+  int questionsLeft(StockReport r) =>
+      maxQuestions - math.max(thread(r).where((m) => m.fromUser).length, _asked[_key(r)] ?? 0);
 
   /// Kérdés feltevése; a válasz a beszélgetés végére kerül. Hiba esetén a
   /// kérdés is kikerül (újra feltehető), és [AppException] jön.
   Future<void> ask(StockReport report, String question, {required String companyName, required String language}) async {
     final q = question.trim();
     final key = _key(report);
+    await _load();
     if (q.isEmpty || _busy.contains(key) || questionsLeft(report) <= 0) return;
     // Legfeljebb ennyi beszélgetés marad memóriában (a legrégebben kezdettek mennek).
     if (!_threads.containsKey(key) && _threads.length >= maxThreads) {
@@ -78,7 +117,11 @@ class AnalysisChat extends ChangeNotifier {
     notifyListeners();
     try {
       final answer = await _send(report, list, companyName: companyName, language: language);
-      list.add(ChatMessage(fromUser: false, text: answer.text, sources: answer.sources));
+      list.add(ChatMessage(fromUser: false, text: plainAiText(answer.text), sources: answer.sources));
+      // A legújabb a végére kerül (a mentett lista a legrégebbieket dobja el).
+      final before = _asked.remove(key) ?? 0;
+      _asked[key] = math.max(before + 1, list.where((m) => m.fromUser).length);
+      await _saveAsked();
     } catch (_) {
       list.removeLast();
       rethrow;

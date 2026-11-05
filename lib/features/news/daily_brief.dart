@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/ai_text.dart';
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import '../../core/models/analysis_extras.dart';
@@ -379,7 +380,8 @@ Future<({String text, List<AskSource> sources})> askWithSources(
     // utolsó keresési / oldalbetöltési eredmény utáni szöveg számít (ha az üres, az egész).
     final lastTool = content.lastIndexWhere((b) => '${b['type']}'.endsWith('_tool_result'));
     final answer = textOf(content.skip(lastTool + 1));
-    text = answer.isNotEmpty ? answer : textOf(content);
+    // Markdown-jelölések nélkül: a felület sima szöveget mutat (különben „**…**” látszana).
+    text = plainAiText(answer.isNotEmpty ? answer : textOf(content));
     void add(Object? url, Object? title) {
       if (url is! String || !url.startsWith('http') || sources.length >= maxSources) return;
       if (sources.any((s) => s.url == url)) return;

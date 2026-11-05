@@ -10,6 +10,8 @@ import '../../core/models/stock_report.dart';
 import 'analysis_options.dart';
 import 'price_stats.dart';
 import 'stock_analyst.dart';
+import '../../core/util/ai_text.dart';
+import '../../core/util/links.dart';
 import '../../core/util/text.dart';
 
 /// Átfogó részvény-elemzés a Claude API-val.
@@ -119,7 +121,10 @@ class ClaudeStockAnalyst implements StockAnalyst {
     }
     lastUsage = usage;
     try {
-      return parseResponse(details.symbol, response, language: outputLanguage, earlierContent: earlier);
+      return separatePosition(
+        parseResponse(details.symbol, response, language: outputLanguage, earlierContent: earlier),
+        options.position,
+      );
     } on AnalysisException catch (e) {
       // A kész szöveg nem a kért JSON: egy keresés nélküli, sémára kényszerített
       // kör átalakítja. A keretet nem terheli (a továbbító végponton megy).
@@ -129,13 +134,33 @@ class ClaudeStockAnalyst implements StockAnalyst {
       _addUsage(usage, repaired);
       lastUsage = usage;
       final searched = ((response['content'] as List?) ?? const []).cast<Map<String, dynamic>>();
-      return parseResponse(
-        details.symbol,
-        repaired,
-        language: outputLanguage,
-        earlierContent: [...earlier, ...searched],
+      return separatePosition(
+        parseResponse(details.symbol, repaired, language: outputLanguage, earlierContent: [...earlier, ...searched]),
+        options.position,
       );
     }
+  }
+
+  /// A kilátások pozícióhoz mért pontja külön mezőbe kerül ([StockReport.positionNote]):
+  /// az appban látszik, de a megosztott szövegbe és a hibajelentésbe nem kerülhet – akkor
+  /// sem, ha a modell (rövid elemzésnél) összevonta a forgatókönyvek pontjait. Az a pont,
+  /// amelyben az átlagár szerepel; ha egyikben sem, a forgatókönyvek utáni utolsó pont.
+  static StockReport separatePosition(StockReport r, PositionContext? position) {
+    if (position == null) return r;
+    final i = r.sections.indexWhere((s) => s.kind == ReportSectionKind.outlook);
+    if (i < 0 || r.sections[i].bullets.isEmpty) return r;
+    final outlook = r.sections[i];
+    final cost = _num(position.averageCost);
+    final costPattern = RegExp('(?<![\\d.,])${RegExp.escape(cost).replaceAll(r'\.', '[.,]')}(?![\\d])');
+    var at = outlook.bullets.lastIndexWhere((b) => costPattern.hasMatch(b));
+    if (at < 0 && outlook.bullets.length > (r.outlook?.scenarios.length ?? outlook.bullets.length)) {
+      at = outlook.bullets.length - 1;
+    }
+    if (at < 0) return r;
+    final kept = [...outlook.bullets]..removeAt(at);
+    final sections = [...r.sections]
+      ..[i] = ReportSection(kind: outlook.kind, title: outlook.title, paragraphs: outlook.paragraphs, bullets: kept);
+    return r.withPositionNote(sections, outlook.bullets[at]);
   }
 
   static String _text(Map<String, dynamic> response) => ((response['content'] as List?) ?? const [])
@@ -835,7 +860,7 @@ Check that all eleven sections are present, in order and in the requested langua
             ReportSource.fromJson(s.cast<String, dynamic>())
           else if (s is String && s.trim().startsWith('http'))
             ReportSource(title: s.trim(), url: s.trim()),
-      ].where((s) => s.url.startsWith('http')).toList();
+      ].where((s) => safeWebUri(s.url) != null).toList();
     } on TypeError {
       throw const AnalysisException(AppErrorCode.aiBadResponse);
     }
@@ -846,7 +871,7 @@ Check that all eleven sections are present, in order and in the requested langua
     // sorolt fel, különben a lista tele lenne át sem nézett találatokkal.
     final seen = sources.map((s) => s.url).toSet();
     void add(String? url, String? title) {
-      if (url == null || !url.startsWith('http') || !seen.add(url)) return;
+      if (url == null || safeWebUri(url) == null || !seen.add(url)) return;
       sources.add(ReportSource(title: title?.trim().isNotEmpty == true ? title!.trim() : url, url: url));
     }
 
@@ -869,8 +894,8 @@ Check that all eleven sections are present, in order and in the requested langua
 
     return StockReport(
       symbol: symbol,
-      headline: (payload['headline'] as String? ?? '').trim(),
-      sections: sections,
+      headline: plainAiText((payload['headline'] as String? ?? '').trim()),
+      sections: [for (final s in sections) s.plain()],
       sources: sources,
       generatedAt: DateTime.now(),
       language: language,
