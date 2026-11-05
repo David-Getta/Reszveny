@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.307)
+# Változásjegyzék (0.2.130 → 0.2.308)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,19 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Tárhely évek használata után: az ötvenkettedik kódátnézés javításai (app)
+
+- **0.2.308**: évek használata után sem nő korlátlanul a készülék tára. A felváltott elemzésből csak az
+  összevetéshez szükséges kivonat marad (~1 KB a teljes 20–35 KB helyett), a gyorsítótárazott 5 éves
+  árfolyam-történetből az utolsó év minden napja és a régebbi évekből hetente egy pont (~460 pont 1260 helyett).
+  Így a tár kb. a felére csökken, és asztali gépen (ahol minden mentés a teljes beállításfájlt írja újra) egy
+  szinkron átvétele vagy egy keresés is jóval gyorsabb.
+- Weben a böngésző tárkerete (kb. 5 MB) betelésekor a belépési token, a fiók e-mail címe, a csomag és a szinkron
+  állapota az újratölthető piaci gyorsítótár helyén mentődik (eddig csendben elveszhettek: újratöltés után kilépett
+  állapot); az új elemzés is előbb a gyorsítótár helyét veszi el, és csak végső esetben a régebbi elemzésekét.
+- A teljesült riasztásokból a legújabb 100 és az utolsó 90 nap marad meg (törlési jelzéssel, így a többi
+  eszközről is eltűnnek): a tár, a szinkroncsomag és a Riasztások oldal sem nő évek alatt korlátlanul.
 
 ## Az ötvenkettedik kódátnézés javításai (szerver)
 

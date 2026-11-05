@@ -4,6 +4,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// A piaci adatok gyorsítótárának kulcs-előtagja (`CachingMarketDataProvider`).
 const marketCachePrefix = 'mdc_';
 
+/// A piaci adatok gyorsítótárának törlése (újratölthető): helyet csinál a felhasználó adatainak.
+Future<void> freeMarketCache(SharedPreferences prefs) async {
+  for (final k in prefs.getKeys().where((k) => k.startsWith(marketCachePrefix)).toList()) {
+    await prefs.remove(k);
+  }
+}
+
 /// A felhasználó adatainak mentése: ha a tároló betelt (weben kb. 5 millió karakter,
 /// amit a piaci gyorsítótár nagyrészt kitölthet), a gyorsítótár törlődik, és még egy
 /// próba következik – különben a portfólió változása csendben elveszne az újratöltéskor.
@@ -23,9 +30,7 @@ Future<bool> writeWithRoom(Future<void> Function(SharedPreferences prefs) write)
     debugPrint('Mentés nem sikerült ($e): a gyorsítótár helye felszabadul.');
   }
   try {
-    for (final k in prefs.getKeys().where((k) => k.startsWith(marketCachePrefix)).toList()) {
-      await prefs.remove(k);
-    }
+    await freeMarketCache(prefs);
     await write(prefs);
     return true;
   } catch (e) {

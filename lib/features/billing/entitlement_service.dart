@@ -1,3 +1,5 @@
+import '../../core/util/storage_room.dart';
+
 import 'dart:convert';
 import 'dart:math';
 
@@ -247,11 +249,8 @@ class EntitlementService extends ChangeNotifier {
 
   Future<void> _persist() async {
     notifyListeners();
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setString(_prefsKey, jsonEncode(_state.toJson()));
-    } catch (_) {
-      // A mentés hibája nem akadályozza a működést.
-    }
+    // Teli tárnál a piaci gyorsítótár helyén (a hiba nem akadályozza a működést).
+    final encoded = jsonEncode(_state.toJson());
+    await writeWithRoom((prefs) => prefs.setString(_prefsKey, encoded));
   }
 }

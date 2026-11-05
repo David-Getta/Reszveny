@@ -1,3 +1,5 @@
+import '../../core/util/storage_room.dart';
+
 import 'dart:async';
 import 'dart:convert';
 
@@ -871,9 +873,10 @@ class SyncService extends ChangeNotifier {
     } else {
       _rerun = true;
     }
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_lastKey, at.toIso8601String());
-    await prefs.setString(_emailKey, email ?? '');
+    await writeWithRoom((prefs) async {
+      await prefs.setString(_lastKey, at.toIso8601String());
+      await prefs.setString(_emailKey, email ?? '');
+    });
   }
 
   /// Szinkron most: letöltés, szükség szerint összefésülés, feltöltés. Ha a

@@ -209,12 +209,15 @@ class CachingMarketDataProvider extends MarketDataProvider {
     () => inner.history(symbol, years: years),
     // A gyertya napja dátumként (ÉÉÉÉ-HH-NN): időbélyeggel egy időzóna-váltás (utazás)
     // után minden nap eggyel elcsúszna. A régi (időbélyeges) bejegyzés is olvasható.
-    (h) => {
-      'symbol': h.symbol,
-      'd': [
-        for (final p in h.points) DateTime(p.time.year, p.time.month, p.time.day).toIso8601String().substring(0, 10),
-      ],
-      'c': [for (final p in h.points) p.close],
+    (h) {
+      final points = thinHistory(h.points);
+      return {
+        'symbol': h.symbol,
+        'd': [
+          for (final p in points) DateTime(p.time.year, p.time.month, p.time.day).toIso8601String().substring(0, 10),
+        ],
+        'c': [for (final p in points) p.close],
+      };
     },
     (j) {
       final c = (j['c'] as List).cast<num>();
@@ -229,6 +232,27 @@ class CachingMarketDataProvider extends MarketDataProvider {
       );
     },
   );
+
+  /// A készülékre mentett történet ritkítva: az utolsó év minden napja, a régebbi évekből
+  /// hetente az utolsó kereskedési nap (5 év ~1260 helyett ~460 pont – a tár kisebb, minden
+  /// írás gyorsabb; a hosszú távú grafikonon a különbség nem látszik).
+  static List<PricePoint> thinHistory(List<PricePoint> points) {
+    if (points.length < 2) return points;
+    final cutoff = points.last.time.subtract(const Duration(days: 370));
+    final out = <PricePoint>[];
+    for (var i = 0; i < points.length; i++) {
+      final p = points[i];
+      if (!p.time.isBefore(cutoff) || i == points.length - 1) {
+        out.add(p);
+        continue;
+      }
+      // A hét utolsó pontja marad (a következő pont már másik hétre esik).
+      final next = points[i + 1].time;
+      int week(DateTime t) => DateTime.utc(t.year, t.month, t.day).difference(DateTime.utc(1970, 1, 5)).inDays ~/ 7;
+      if (week(next) != week(p.time)) out.add(p);
+    }
+    return out;
+  }
 
   // A többi adat (hírek, kimutatások, konszenzus, keresés) nem kerül gyorsítótárba.
   @override

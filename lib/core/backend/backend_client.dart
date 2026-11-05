@@ -1,3 +1,5 @@
+import '../util/storage_room.dart';
+
 import 'dart:async';
 import 'dart:convert';
 
@@ -464,18 +466,10 @@ class BackendClient {
     }
   }
 
-  static Future<void> _writeStored(String key, String? value) async {
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      if (value == null) {
-        await prefs.remove(key);
-      } else {
-        await prefs.setString(key, value);
-      }
-    } catch (_) {
-      // A mentés hibája nem akadályozza a működést.
-    }
-  }
+  /// Teli tárnál (weben) a piaci gyorsítótár helyén: a belépési token ne vesszen el csendben
+  /// (újratöltés után a felhasználó különben kijelentkezve, egy új névtelen fiókban találná magát).
+  static Future<void> _writeStored(String key, String? value) =>
+      writeWithRoom((prefs) async => value == null ? await prefs.remove(key) : await prefs.setString(key, value));
 }
 
 /// Minden backend-kérésre ráteszi a meghívókódot (ha van), és ha a szerver

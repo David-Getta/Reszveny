@@ -85,7 +85,8 @@ void main() {
     expect((await cache.profile('AAPL')).name, profile.name);
     expect((await cache.metrics('AAPL')).peTrailing, metrics.peTrailing);
     final h = await cache.history('AAPL');
-    expect(h.points.length, history.points.length);
+    // A mentett történet ritkított (az utolsó év napi, a régebbi heti pontokkal).
+    expect(h.points.length, CachingMarketDataProvider.thinHistory(history.points).length);
     expect(h.points.last.close, history.points.last.close);
     expect(cache.offlineSince.value, DateTime(2026, 10, 15, 9, 12));
     // Amit még sosem töltöttünk le, az offline is hiba.
@@ -117,7 +118,7 @@ void main() {
     final one = await cache.history('SPY', years: 1);
     expect(one.points.length, lessThan(five.points.length));
     inner.offline = true;
-    expect((await cache.history('SPY')).points.length, five.points.length);
+    expect((await cache.history('SPY')).points.length, CachingMarketDataProvider.thinHistory(five.points).length);
     expect((await cache.history('SPY', years: 1)).points.length, one.points.length);
   });
 

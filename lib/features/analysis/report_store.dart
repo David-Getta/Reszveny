@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/storage_room.dart';
 import '../../core/errors.dart';
 import '../../core/models/analysis_extras.dart';
 import '../../core/models/stock_details.dart';
@@ -354,7 +355,7 @@ class ReportStore extends ChangeNotifier {
           ? old
           : null;
       if (keepOld != null) {
-        _previous[symbol] = keepOld;
+        _previous[symbol] = keepOld.comparisonDigest;
       } else {
         _previous.remove(symbol);
       }
@@ -368,7 +369,10 @@ class ReportStore extends ChangeNotifier {
       // régebbi mentett elemzések (az nem helyhiány).
       final String encoded, encodedOld;
       try {
-        (encoded, encodedOld) = (jsonEncode(r.toJson()), keepOld == null ? '' : jsonEncode(keepOld.toJson()));
+        (encoded, encodedOld) = (
+          jsonEncode(r.toJson()),
+          keepOld == null ? '' : jsonEncode(keepOld.comparisonDigest.toJson()),
+        );
       } catch (_) {
         return;
       }
@@ -389,8 +393,15 @@ class ReportStore extends ChangeNotifier {
         try {
           await write(prefs);
         } catch (_) {
-          await _prune(prefs, keep: maxSaved ~/ 2);
-          await write(prefs);
+          // Teli tár (weben): előbb az újratölthető piaci gyorsítótár megy, és csak ha így
+          // sem fér el, a régebbi elemzések fele.
+          await freeMarketCache(prefs);
+          try {
+            await write(prefs);
+          } catch (_) {
+            await _prune(prefs, keep: maxSaved ~/ 2);
+            await write(prefs);
+          }
         }
       } catch (_) {
         // A gyorsítótár hibája nem akadályozza a megjelenítést.

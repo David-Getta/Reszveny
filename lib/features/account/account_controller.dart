@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/util/storage_room.dart';
 import '../../core/backend/backend_client.dart';
 import '../billing/entitlement_service.dart';
 
@@ -107,15 +108,10 @@ class AccountController extends ChangeNotifier {
   Future<void> _setEmail(String? e) async {
     _email = (e == null || e.isEmpty) ? null : e;
     notifyListeners();
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      if (_email == null) {
-        await prefs.remove(_emailKey);
-      } else {
-        await prefs.setString(_emailKey, _email!);
-      }
-    } catch (_) {
-      // A mentés hibája nem akadályozza a működést.
-    }
+    // Teli tárnál a piaci gyorsítótár helyén (a hiba nem akadályozza a működést).
+    final email = _email;
+    await writeWithRoom(
+      (prefs) async => email == null ? await prefs.remove(_emailKey) : await prefs.setString(_emailKey, email),
+    );
   }
 }

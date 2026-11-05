@@ -337,6 +337,28 @@ class AlertStore extends ChangeNotifier {
     await _changed();
   }
 
+  /// A teljesült riasztásokból ennyi napig, és legalább a legújabb ennyi marad meg (évek alatt
+  /// se nőjön korlátlanul a tár, a szinkroncsomag és a Riasztások oldal); a régebbiek
+  /// törlési jelzéssel mennek, így a többi eszközről is eltűnnek.
+  static const keepTriggeredDays = 90;
+  static const keepTriggeredNewest = 100;
+
+  /// A lejárt teljesült riasztások törlése; igaz, ha volt ilyen.
+  bool _expireTriggered() {
+    final triggered = _alerts.where((a) => !a.isActive && a.triggeredAt != null).toList()
+      ..sort((a, b) => b.triggeredAt!.compareTo(a.triggeredAt!));
+    if (triggered.length <= keepTriggeredNewest) return false;
+    final cutoff = DateTime.now().toUtc().subtract(const Duration(days: keepTriggeredDays));
+    final gone = {
+      for (final a in triggered.skip(keepTriggeredNewest))
+        if (a.triggeredAt!.isBefore(cutoff)) a.id,
+    };
+    if (gone.isEmpty) return false;
+    _alerts.removeWhere((a) => gone.contains(a.id));
+    _tombstone(gone);
+    return true;
+  }
+
   /// Az összes teljesült riasztás törlése; a törölteket adja vissza (visszavonáshoz).
   Future<List<PriceAlert>> removeTriggered() async {
     final gone = _alerts.where((a) => !a.isActive).toList();
@@ -401,7 +423,10 @@ class AlertStore extends ChangeNotifier {
     if (changed) await _changed();
   }
 
-  Future<void> markTriggered(String id, DateTime at, double price) => _replace(id, (a) => a.triggered(at, price));
+  Future<void> markTriggered(String id, DateTime at, double price) async {
+    _expireTriggered();
+    await _replace(id, (a) => a.triggered(at, price));
+  }
 
   Future<void> rearm(String id) => _replace(id, (a) => a.rearmed());
 

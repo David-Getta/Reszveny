@@ -21,6 +21,25 @@ class StockReport {
   /// eltelt, az elemzés még a friss eredmények előtt készült.
   final DateTime? nextEarnings;
 
+  /// Az összevetéshez elég kivonat (lényeg, időpont, nyelv, ár, hangulat, forgatókönyvek): a
+  /// felváltott elemzés így ~1 KB a teljes ~20–35 KB helyett a készülék tárában.
+  StockReport get comparisonDigest => StockReport(
+    symbol: symbol,
+    headline: headline,
+    sections: const [],
+    generatedAt: generatedAt,
+    language: language,
+    promptVersion: promptVersion,
+    outlook: outlook == null
+        ? null
+        : ReportOutlook(
+            currentPrice: outlook!.currentPrice,
+            currency: outlook!.currency,
+            scenarios: outlook!.scenarios,
+            marketMood: outlook!.marketMood,
+          ),
+  );
+
   /// Ugyanez az elemzés a következő gyorsjelentés napjával.
   StockReport withNextEarnings(DateTime? date) => StockReport(
     symbol: symbol,
