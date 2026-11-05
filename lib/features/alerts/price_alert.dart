@@ -448,8 +448,8 @@ class AlertStore extends ChangeNotifier {
     if (notify) notifyListeners();
     await writeWithRoom(
       (prefs) => Future.wait([
-        prefs.setString(_key, jsonEncode(_alerts.map((a) => a.toJson()).toList())),
-        prefs.setString(_deletedKey, jsonEncode(deletedJson)),
+        prefs.putString(_key, jsonEncode(_alerts.map((a) => a.toJson()).toList())),
+        prefs.putString(_deletedKey, jsonEncode(deletedJson)),
       ]),
     );
   }

@@ -1469,12 +1469,12 @@ class PortfolioStore extends ChangeNotifier {
     // Betelt tárolónál a gyorsítótár helyén (a tárolás hibája nem akadályozza a működést).
     await writeWithRoom(
       (prefs) => Future.wait([
-        prefs.setString(_key, jsonEncode(_lots.map((l) => l.toJson()).toList())),
-        prefs.setString(_dividendsKey, jsonEncode(_dividends.map((d) => d.toJson()).toList())),
-        prefs.setString(_splitsKey, jsonEncode(_splits.map((s) => s.toJson()).toList())),
-        prefs.setString(_cashKey, jsonEncode(cash)),
-        prefs.setString(_cashAtKey, jsonEncode(cashAtJson)),
-        prefs.setString(_deletedKey, jsonEncode(deletedJson)),
+        prefs.putString(_key, jsonEncode(_lots.map((l) => l.toJson()).toList())),
+        prefs.putString(_dividendsKey, jsonEncode(_dividends.map((d) => d.toJson()).toList())),
+        prefs.putString(_splitsKey, jsonEncode(_splits.map((s) => s.toJson()).toList())),
+        prefs.putString(_cashKey, jsonEncode(cash)),
+        prefs.putString(_cashAtKey, jsonEncode(cashAtJson)),
+        prefs.putString(_deletedKey, jsonEncode(deletedJson)),
       ]),
     );
   }

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.308)
+# Változásjegyzék (0.2.130 → 0.2.309)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,14 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Mentés csak változáskor
+
+- **0.2.309**: a beállítások, a portfólió, a riasztások és a jegyzetek tárolója csak akkor ír, ha az érték
+  változott. Asztali gépen (Windows, Linux) minden mentés a teljes beállításfájlt írja újra, ezért egy másik
+  eszközről érkező szinkron átvétele eddig ötvennél több teljes újraírással járt, akkor is, ha szinte semmi nem
+  változott; most csak a ténylegesen változott tárolók íródnak. Teli böngészőtárnál a helycsinálás utáni második
+  próba továbbra is biztosan kiírja az adatot.
 
 ## Tárhely évek használata után: az ötvenkettedik kódátnézés javításai (app)
 

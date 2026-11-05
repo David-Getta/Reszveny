@@ -135,8 +135,8 @@ class NotesStore extends ChangeNotifier {
 
   Future<void> _save() => writeWithRoom(
     (prefs) => Future.wait([
-      prefs.setString(_key, jsonEncode({for (final e in _notes.entries) e.key: e.value.toJson()})),
-      prefs.setString(_deletedKey, jsonEncode(deletedJson)),
+      prefs.putString(_key, jsonEncode({for (final e in _notes.entries) e.key: e.value.toJson()})),
+      prefs.putString(_deletedKey, jsonEncode(deletedJson)),
     ]),
   );
 }

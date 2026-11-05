@@ -5,7 +5,39 @@ import 'package:reszveny/core/models/price_history.dart';
 import 'package:reszveny/core/models/stock_report.dart';
 import 'package:reszveny/features/alerts/price_alert.dart';
 import 'package:reszveny/features/market_data/caching_market_data_provider.dart';
+import 'package:reszveny/core/util/storage_room.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:shared_preferences_platform_interface/shared_preferences_platform_interface.dart';
+
+/// Számolja az írásokat; az első [failures] írás (pl. teli böngészőtár) hibát dob.
+class _CountingStore extends SharedPreferencesStorePlatform {
+  int failures = 0;
+  int writes = 0;
+  final values = <String, Object>{};
+
+  @override
+  Future<bool> setValue(String valueType, String key, Object value) async {
+    writes++;
+    if (failures > 0) {
+      failures--;
+      throw Exception('quota');
+    }
+    values[key] = value;
+    return true;
+  }
+
+  @override
+  Future<bool> remove(String key) async => values.remove(key) != null;
+
+  @override
+  Future<bool> clear() async {
+    values.clear();
+    return true;
+  }
+
+  @override
+  Future<Map<String, Object>> getAll() async => Map.of(values);
+}
 
 /// Évek használata után se nőjön korlátlanul a készülék tára (az ötvenkettedik átnézés).
 void main() {
@@ -81,5 +113,28 @@ void main() {
     expect(triggered.any((a) => a.id == 'live'), isTrue);
     expect(store.deletedJson.length, 200);
     expect(store.deletedJson.containsKey('a0'), isTrue, reason: 'a legrégebbiek mentek');
+  });
+
+  test('an unchanged value is not written again; the retry after making room is forced', () async {
+    final original = SharedPreferencesStorePlatform.instance;
+    addTearDown(() {
+      SharedPreferencesStorePlatform.instance = original;
+      SharedPreferences.resetStatic();
+    });
+    final store = _CountingStore();
+    SharedPreferencesStorePlatform.instance = store;
+    SharedPreferences.resetStatic();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.putString('k', 'v');
+    await prefs.putString('k', 'v');
+    await prefs.putBool('b', true);
+    await prefs.putBool('b', true);
+    await prefs.putStringList('l', ['a']);
+    await prefs.putStringList('l', ['a']);
+    expect(store.writes, 3);
+    // Teli tár: az első írás elbukik, a második (helycsinálás után) kényszerítve megy ki.
+    store.failures = 1;
+    expect(await writeWithRoom((p) => p.putString('x', 'new')), isTrue);
+    expect(store.values['flutter.x'], 'new');
   });
 }

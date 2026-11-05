@@ -1,8 +1,37 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// A piaci adatok gyorsítótárának kulcs-előtagja (`CachingMarketDataProvider`).
 const marketCachePrefix = 'mdc_';
+
+/// Írás csak változáskor: asztali gépen (Windows, Linux) minden mentés a teljes beállításfájlt
+/// kódolja és írja újra, így egy szinkron átvétele a változatlan tárolókkal is másodpercekig
+/// tartana. Az összevetés a memóriabeli másolattal történik (olcsó).
+///
+/// Egy sikertelen írás után a memóriabeli másolat már az új értéket mutatja: a [writeWithRoom]
+/// újrapróbája ezért kényszerítve ír ([_forceWrite] zónaérték), nem hagyja ki „változatlanként”.
+extension WriteIfChanged on SharedPreferences {
+  bool get _skip => Zone.current[_forceWrite] != true;
+
+  Future<bool> putString(String key, String value) async =>
+      (_skip && getString(key) == value) || await setString(key, value);
+
+  Future<bool> putBool(String key, bool value) async => (_skip && getBool(key) == value) || await setBool(key, value);
+
+  Future<bool> putInt(String key, int value) async => (_skip && getInt(key) == value) || await setInt(key, value);
+
+  Future<bool> putDouble(String key, double value) async =>
+      (_skip && getDouble(key) == value) || await setDouble(key, value);
+
+  Future<bool> putStringList(String key, List<String> value) async {
+    final current = getStringList(key);
+    return (_skip && current != null && listEquals(current, value)) || await setStringList(key, value);
+  }
+}
+
+const _forceWrite = #storageForceWrite;
 
 /// A piaci adatok gyorsítótárának törlése (újratölthető): helyet csinál a felhasználó adatainak.
 Future<void> freeMarketCache(SharedPreferences prefs) async {
@@ -31,7 +60,8 @@ Future<bool> writeWithRoom(Future<void> Function(SharedPreferences prefs) write)
   }
   try {
     await freeMarketCache(prefs);
-    await write(prefs);
+    // Kényszerített írás: az előző, sikertelen próba már beírta az értéket a memóriabeli másolatba.
+    await runZoned(() => write(prefs), zoneValues: {_forceWrite: true});
     return true;
   } catch (e) {
     debugPrint('Mentés a gyorsítótár törlése után sem sikerült: $e');

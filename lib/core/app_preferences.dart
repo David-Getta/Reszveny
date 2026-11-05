@@ -197,10 +197,10 @@ class AppPreferences extends ChangeNotifier {
   }
 
   Future<void> _saveFavorites() => _save((p) async {
-    await p.setStringList(_favoritesKey, _favorites);
-    await p.setString(_favoriteSinceKey, jsonEncode(favoriteSinceJson));
-    await p.setString(_favoritesRemovedKey, jsonEncode(favoritesRemovedJson));
-    await p.setString(_favoritesAddedKey, jsonEncode(favoritesAddedJson));
+    await p.putStringList(_favoritesKey, _favorites);
+    await p.putString(_favoriteSinceKey, jsonEncode(favoriteSinceJson));
+    await p.putString(_favoritesRemovedKey, jsonEncode(favoritesRemovedJson));
+    await p.putString(_favoritesAddedKey, jsonEncode(favoritesAddedJson));
   });
 
   static const _currencyKey = 'display_currency';
@@ -365,7 +365,7 @@ class AppPreferences extends ChangeNotifier {
       _resolved.remove(_resolved.keys.first);
     }
     await _save(
-      (p) => p.setStringList(_resolvedKey, [
+      (p) => p.putStringList(_resolvedKey, [
         for (final e in _resolved.entries) '${e.key}|${e.value.symbol}|${e.value.name.replaceAll('|', ' ')}',
       ]),
     );
@@ -385,7 +385,7 @@ class AppPreferences extends ChangeNotifier {
   Future<void> setHomeSection(String section, bool visible) async {
     if (visible ? !_hiddenHome.remove(section) : !_hiddenHome.add(section)) return;
     notifyListeners();
-    await _save((p) => p.setStringList(_hiddenHomeKey, _hiddenHome.toList()));
+    await _save((p) => p.putStringList(_hiddenHomeKey, _hiddenHome.toList()));
   }
 
   final Map<String, String> _sorts;
@@ -397,7 +397,7 @@ class AppPreferences extends ChangeNotifier {
     if (benchmark == symbol) return;
     benchmark = symbol;
     notifyListeners();
-    await _save((p) => p.setString(_benchmarkKey, symbol));
+    await _save((p) => p.putString(_benchmarkKey, symbol));
   }
 
   /// Egy lista legutóbb választott rendezése (pl. `positions` → `dividend`), hogy
@@ -407,7 +407,7 @@ class AppPreferences extends ChangeNotifier {
   Future<void> setSort(String list, String value) async {
     if (_sorts[list] == value) return;
     _sorts[list] = value;
-    await _save((p) => p.setString(_sortsKey, jsonEncode(_sorts)));
+    await _save((p) => p.putString(_sortsKey, jsonEncode(_sorts)));
   }
 
   /// A célok tárolt módosítási idői (fajta → ISO-8601); a hibás tételek kimaradnak.
@@ -490,8 +490,8 @@ class AppPreferences extends ChangeNotifier {
     }
     notifyListeners();
     await _save((p) async {
-      await (goal == null ? p.remove(key) : p.setString(key, '${goal.amount}|${goal.currency}'));
-      await p.setString(_goalsAtKey, jsonEncode({for (final e in _goalsAt.entries) e.key: e.value.toIso8601String()}));
+      await (goal == null ? p.remove(key) : p.putString(key, '${goal.amount}|${goal.currency}'));
+      await p.putString(_goalsAtKey, jsonEncode({for (final e in _goalsAt.entries) e.key: e.value.toIso8601String()}));
     });
   }
 
@@ -574,8 +574,8 @@ class AppPreferences extends ChangeNotifier {
   }
 
   Future<void> _saveTargets() => _save((p) async {
-    await p.setString(_targetsKey, jsonEncode(_targets));
-    await (targetsAt == null ? p.remove(_targetsAtKey) : p.setString(_targetsAtKey, targetsAt!.toIso8601String()));
+    await p.putString(_targetsKey, jsonEncode(_targets));
+    await (targetsAt == null ? p.remove(_targetsAtKey) : p.putString(_targetsAtKey, targetsAt!.toIso8601String()));
   });
 
   /// A tárolt célarányok beolvasása (hibás érték kimarad).
@@ -644,7 +644,7 @@ class AppPreferences extends ChangeNotifier {
       // a közben írt kulcsok (pl. a próbaidő) után sem tűnik a régi felhasználóénak.
       final onboarding = flag(_onboardingKey);
       final fresh = onboarding == null && prefs.getKeys().isEmpty;
-      if (fresh) await prefs.setBool(_onboardingKey, false);
+      if (fresh) await prefs.putBool(_onboardingKey, false);
       final loaded = AppPreferences(
         themeMode: mode,
         recent: strings(_recentKey) ?? const [],
@@ -705,31 +705,31 @@ class AppPreferences extends ChangeNotifier {
   Future<void> completeOnboarding() async {
     onboardingDone = true;
     notifyListeners();
-    await _save((p) => p.setBool(_onboardingKey, true));
+    await _save((p) => p.putBool(_onboardingKey, true));
   }
 
   /// Egy elemzés elkészült; visszaadja az eddigi számot.
   Future<int> countAnalysis() async {
     analysesDone++;
-    await _save((p) => p.setInt(_analysesDoneKey, analysesDone));
+    await _save((p) => p.putInt(_analysesDoneKey, analysesDone));
     return analysesDone;
   }
 
   Future<void> markReviewAsked() async {
     reviewAsked = true;
-    await _save((p) => p.setBool(_reviewAskedKey, true));
+    await _save((p) => p.putBool(_reviewAskedKey, true));
   }
 
   Future<void> setAiConsent(bool allowed) async {
     aiConsent = allowed;
     notifyListeners();
-    await _save((p) => p.setBool(_aiConsentKey, allowed));
+    await _save((p) => p.putBool(_aiConsentKey, allowed));
   }
 
   Future<void> setTelemetryConsent(bool allowed) async {
     telemetryConsent = allowed;
     notifyListeners();
-    await _save((p) => p.setBool(_telemetryKey, allowed));
+    await _save((p) => p.putBool(_telemetryKey, allowed));
   }
 
   Future<void> setEmailAlerts(bool enabled) async {
@@ -761,9 +761,9 @@ class AppPreferences extends ChangeNotifier {
   Future<void> _saveSwitches() async {
     notifyListeners();
     await _save((p) async {
-      await p.setBool(_emailAlertsKey, emailAlerts);
-      await p.setBool(_weeklyDigestKey, weeklyDigest);
-      await p.setString(_switchesAtKey, jsonEncode(switchesAtJson));
+      await p.putBool(_emailAlertsKey, emailAlerts);
+      await p.putBool(_weeklyDigestKey, weeklyDigest);
+      await p.putString(_switchesAtKey, jsonEncode(switchesAtJson));
     });
   }
 
@@ -940,9 +940,9 @@ class AppPreferences extends ChangeNotifier {
   Future<void> _saveLists() async {
     notifyListeners();
     await _save((p) async {
-      await p.setString(_listsKey, jsonEncode([for (final l in _lists) l.toJson()]));
-      await p.setString(_listsRemovedKey, jsonEncode(listsRemovedJson));
-      await p.setString(_listsAddedKey, jsonEncode(listsAddedJson));
+      await p.putString(_listsKey, jsonEncode([for (final l in _lists) l.toJson()]));
+      await p.putString(_listsRemovedKey, jsonEncode(listsRemovedJson));
+      await p.putString(_listsAddedKey, jsonEncode(listsAddedJson));
     });
   }
 
@@ -950,51 +950,51 @@ class AppPreferences extends ChangeNotifier {
     if (morningBrief == enabled) return;
     morningBrief = enabled;
     notifyListeners();
-    await _save((p) => p.setBool(_morningBriefKey, enabled));
+    await _save((p) => p.putBool(_morningBriefKey, enabled));
   }
 
   Future<void> setPortfolioMoveAlert(double percent) async {
     if (portfolioMoveAlert == percent) return;
     portfolioMoveAlert = percent;
     notifyListeners();
-    await _save((p) => p.setDouble(_portfolioMoveKey, percent));
+    await _save((p) => p.putDouble(_portfolioMoveKey, percent));
   }
 
   Future<void> setPortfolioMoveNotified(String value) async {
     portfolioMoveNotified = value;
-    await _save((p) => p.setString(_portfolioMoveNotifiedKey, value));
+    await _save((p) => p.putString(_portfolioMoveNotifiedKey, value));
   }
 
   Future<void> setPortfolioGoalNotified(String value) async {
     portfolioGoalNotified = value;
-    await _save((p) => p.setString(_portfolioGoalNotifiedKey, value));
+    await _save((p) => p.putString(_portfolioGoalNotifiedKey, value));
   }
 
   Future<void> setEarningsReminders(bool enabled) async {
     if (earningsReminders == enabled) return;
     earningsReminders = enabled;
     notifyListeners();
-    await _save((p) => p.setBool(_earningsRemindersKey, enabled));
+    await _save((p) => p.putBool(_earningsRemindersKey, enabled));
   }
 
   Future<void> setDividendReminders(bool enabled) async {
     if (dividendReminders == enabled) return;
     dividendReminders = enabled;
     notifyListeners();
-    await _save((p) => p.setBool(_dividendRemindersKey, enabled));
+    await _save((p) => p.putBool(_dividendRemindersKey, enabled));
   }
 
   Future<void> setSignalAlerts(bool enabled) async {
     if (signalAlerts == enabled) return;
     signalAlerts = enabled;
     notifyListeners();
-    await _save((p) => p.setBool(_signalAlertsKey, enabled));
+    await _save((p) => p.putBool(_signalAlertsKey, enabled));
   }
 
   Future<void> setThemeMode(ThemeMode mode) async {
     themeMode = mode;
     notifyListeners();
-    await _save((p) => p.setString(_themeKey, mode.name));
+    await _save((p) => p.putString(_themeKey, mode.name));
   }
 
   Future<void> addRecent(String symbol) async {
@@ -1005,7 +1005,7 @@ class AppPreferences extends ChangeNotifier {
       ..insert(0, s);
     if (_recent.length > maxRecent) _recent = _recent.sublist(0, maxRecent);
     notifyListeners();
-    await _save((p) => p.setStringList(_recentKey, _recent));
+    await _save((p) => p.putStringList(_recentKey, _recent));
   }
 
   /// Jelző: a felhasználó még nem választott; ilyenkor a rendszer nyelvéből
@@ -1015,48 +1015,48 @@ class AppPreferences extends ChangeNotifier {
   Future<void> setAnalysisDepth(AnalysisDepth d) async {
     analysisDepth = d;
     notifyListeners();
-    await _save((p) => p.setString(_depthKey, d.name));
+    await _save((p) => p.putString(_depthKey, d.name));
   }
 
   Future<void> setReaderLevel(ReaderLevel l) async {
     readerLevel = l;
     notifyListeners();
-    await _save((p) => p.setString(_readerKey, l.name));
+    await _save((p) => p.putString(_readerKey, l.name));
   }
 
   Future<void> setCounterArgument(bool enabled) async {
     counterArgument = enabled;
     notifyListeners();
-    await _save((p) => p.setBool(_counterKey, enabled));
+    await _save((p) => p.putBool(_counterKey, enabled));
   }
 
   Future<void> setDoubleOption(bool enabled) async {
     doubleOption = enabled;
     notifyListeners();
-    await _save((p) => p.setBool(_doubleOptionKey, enabled));
+    await _save((p) => p.putBool(_doubleOptionKey, enabled));
   }
 
   Future<void> markDoubleOptionAsked() async {
     doubleOptionAsked = true;
-    await _save((p) => p.setBool(_doubleOptionAskedKey, true));
+    await _save((p) => p.putBool(_doubleOptionAskedKey, true));
   }
 
   Future<void> setKeepInTray(bool enabled) async {
     keepInTray = enabled;
     notifyListeners();
-    await _save((p) => p.setBool(_keepInTrayKey, enabled));
+    await _save((p) => p.putBool(_keepInTrayKey, enabled));
   }
 
   Future<void> setAutoUpdate(bool enabled) async {
     autoUpdate = enabled;
     notifyListeners();
-    await _save((p) => p.setBool(_autoUpdateKey, enabled));
+    await _save((p) => p.putBool(_autoUpdateKey, enabled));
   }
 
   Future<void> setDisplayCurrency(String? code) async {
     displayCurrency = code ?? '';
     notifyListeners();
-    await _save((p) => p.setString(_currencyKey, displayCurrency!));
+    await _save((p) => p.putString(_currencyKey, displayCurrency!));
   }
 
   Future<void> toggleFavorite(String symbol) async {
@@ -1075,7 +1075,7 @@ class AppPreferences extends ChangeNotifier {
   Future<void> setHotkeyJson(Map<String, dynamic>? json) async {
     hotkeyJson = json;
     notifyListeners();
-    await _save((p) => json == null ? p.remove(_hotkeyKey) : p.setString(_hotkeyKey, jsonEncode(json)));
+    await _save((p) => json == null ? p.remove(_hotkeyKey) : p.putString(_hotkeyKey, jsonEncode(json)));
   }
 
   /// A kedvencek cseréje (szinkronkor a fiók adataira, visszavonáskor a korábbira).
