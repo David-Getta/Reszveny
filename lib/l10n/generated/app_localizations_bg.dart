@@ -13,9 +13,6 @@ class AppLocalizationsBg extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Снимайте акция и научете всичко за нея.';
-
-  @override
   String get homeHint =>
       'Сертификат за акции, екран на брокерско приложение, вестник или фирмено лого – всичко, което идентифицира акция.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get takePhoto => 'Направи снимка';
 
   @override
-  String get chooseFromGallery => 'Избор от галерията';
-
-  @override
   String get chooseImage => 'Избор на изображение';
-
-  @override
-  String get enterTickerManually => 'Ръчно въвеждане на тикер';
-
-  @override
-  String get tickerInputLabel => 'Тикер символ';
-
-  @override
-  String get tickerInputHint => 'напр. AAPL';
 
   @override
   String get lookUp => 'Търсене';
@@ -186,9 +171,6 @@ class AppLocalizationsBg extends AppLocalizations {
   String get labelHeadquarters => 'Централа';
 
   @override
-  String get labelDescription => 'Описание';
-
-  @override
   String get labelLastPrice => 'Последна цена';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get noNews => 'Няма скорошни новини.';
-
-  @override
-  String get openArticle => 'Отвори статията';
 
   @override
   String get openLinkFailed => 'Връзката не можа да бъде отворена.';
@@ -600,11 +579,6 @@ class AppLocalizationsBg extends AppLocalizations {
   String get displayCurrencyNone => 'Само собствената валута на акцията';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ в $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Курс: 1 $from = $rate $to (ЕЦБ, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count анализа на месец';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days-дневен безплатен пробен период с $count анализа';
   }
 
   @override
@@ -774,9 +743,6 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get viewPlans => 'Виж плановете';
-
-  @override
-  String get usageTitle => 'Използване';
 
   @override
   String get demoPurchaseNote => 'Демо таксуване: покупките на тази платформа са симулирани.';
@@ -1139,9 +1105,6 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Вашата позиция';
-
-  @override
-  String get portfolioPurchases => 'Покупки';
 
   @override
   String get portfolioRemove => 'Премахни';
@@ -2437,6 +2400,9 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Няма нови акции';
+
+  @override
   String get positionsSortWeight => 'Най-големите първо';
 
   @override
@@ -2630,6 +2596,9 @@ class AppLocalizationsBg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Всички позиции вече имат трейлинг стоп';
 
   @override
   String portfolioSinceSale(String percent) {

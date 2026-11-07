@@ -149,7 +149,7 @@ class ScenarioChart extends StatelessWidget {
                     Icon(Icons.my_location_rounded, size: 16, color: colorOf(ml.kind)),
                     Text(l10n.scenarioMostLikely, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
                     Text(
-                      '${scenarioLabel(l10n, ml.kind)} · ${ml.probability.round()}%',
+                      '${scenarioLabel(l10n, ml.kind)} · ${fmt.percent(ml.probability, decimals: 0)}',
                       style: theme.textTheme.labelLarge?.copyWith(color: colorOf(ml.kind), fontWeight: FontWeight.w700),
                     ),
                     if (ml.priceLow != null && ml.priceHigh != null)
@@ -187,7 +187,7 @@ class ScenarioChart extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(width: 8),
-                      Text('${s.probability.round()}%', style: theme.textTheme.labelLarge),
+                      Text(fmt.percent(s.probability, decimals: 0), style: theme.textTheme.labelLarge),
                     ],
                   ),
                   trailing: s.priceLow != null && s.priceHigh != null

@@ -13,28 +13,13 @@ class AppLocalizationsMos extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Rɩk aksiõ foto n bãng a yɛla fãa.';
-
-  @override
   String get homeHint => 'Aksiõ sebre, burs aplikasiõ ekrã, kasɛt bɩ ãterpriz logo – bũmb fãa sẽn wilgd aksiõ.';
 
   @override
   String get takePhoto => 'Rɩk foto';
 
   @override
-  String get chooseFromGallery => 'Yãk galri pʋgẽ';
-
-  @override
   String get chooseImage => 'Yãk foto';
-
-  @override
-  String get enterTickerManually => 'Gʋls aksiõ bãnde f meng';
-
-  @override
-  String get tickerInputLabel => 'Aksiõ bãnde (ticker)';
-
-  @override
-  String get tickerInputHint => 'wala AAPL';
 
   @override
   String get lookUp => 'Bao';
@@ -185,9 +170,6 @@ class AppLocalizationsMos extends AppLocalizations {
   String get labelHeadquarters => 'Zĩig-kãsenga';
 
   @override
-  String get labelDescription => 'Wilgre';
-
-  @override
   String get labelLastPrice => 'Koosg sẽn baase';
 
   @override
@@ -328,9 +310,6 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get noNews => 'Kibay paalb ka be ye.';
-
-  @override
-  String get openArticle => 'Pak sebrã';
 
   @override
   String get openLinkFailed => 'Pa tõog n pak link wã ye.';
@@ -598,11 +577,6 @@ class AppLocalizationsMos extends AppLocalizations {
   String get displayCurrencyNone => 'Aksiõ wã ligd buud bala';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency pʋgẽ';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Teekre: 1 $from = $rate $to (BCE, $date)';
   }
@@ -674,11 +648,6 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Vɛɛse $count kiuug fãa';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Makr zaalem rasem $days ne vɛɛse $count';
   }
 
   @override
@@ -770,9 +739,6 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get viewPlans => 'Ges forfɛ rãmba';
-
-  @override
-  String get usageTitle => 'F sẽn tʋmã';
 
   @override
   String get demoPurchaseNote => 'Wilgr yaoobo: raab ning sẽn be plataform kãngã pa sɩd ye.';
@@ -1133,9 +1099,6 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'F sẽn tarã';
-
-  @override
-  String get portfolioPurchases => 'Raaba';
 
   @override
   String get portfolioRemove => 'Yiis';
@@ -2441,6 +2404,9 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Aksiõ paalg ka be ye';
+
+  @override
   String get positionsSortWeight => 'Sẽn yaa kãsems n deng';
 
   @override
@@ -2632,6 +2598,9 @@ class AppLocalizationsMos extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Aksiõ fãa tara kibay kãnga';
 
   @override
   String portfolioSinceSale(String percent) {

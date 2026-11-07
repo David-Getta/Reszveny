@@ -91,7 +91,9 @@ class _AppShellState extends State<AppShell> {
   }
 
   bool _trayReady = false;
-  bool _quickPanelReady = false;
+
+  /// A gyorspanel és a hozzá csatolt kezelő (a keret eldobásakor leválasztva).
+  (NativeQuickPanel, QuickSearchController)? _quickPanel;
 
   /// A teljes ablak legutóbbi mérete: gyorssáv alatt ezen marad a rejtett felület.
   Size? _fullSize;
@@ -164,6 +166,8 @@ class _AppShellState extends State<AppShell> {
   @override
   void dispose() {
     _trayTimer?.cancel();
+    if (_quickPanel case (final panel, final handler)) panel.detach(handler);
+    _services?.desktop.forgetTrayActions();
     _services?.preferences.removeListener(_onPrefsForTray);
     _services?.alertMonitor.removeListener(_onAlertHits);
     _services?.alertMonitor.openRequest.removeListener(_onOpenRequest);
@@ -264,6 +268,7 @@ class _AppShellState extends State<AppShell> {
     final symbol = _services?.alertMonitor.openRequest.value;
     if (symbol == null || !mounted) return;
     await _services!.desktop.showFullWindow();
+    if (!mounted) return;
     _goHome();
     _openSymbol(StockCandidate(symbol: symbol, companyName: symbol, confidence: 1));
   }
@@ -286,34 +291,33 @@ class _AppShellState extends State<AppShell> {
     }
     if (NativeQuickPanel.isSupported) {
       final panel = services.desktop.quickPanel;
-      if (!_quickPanelReady) {
-        _quickPanelReady = true;
-        panel.attach(
-          QuickSearchController(
-            panel: panel,
-            search: services.marketData.search,
-            // Leírásra („tech 100 etf”) az AI fejti meg a részvényt, ha a kereső nem találja – csak
-            // az AI-hoz adott hozzájárulással (a gyorspanelen nincs hely az engedélykérő ablaknak).
-            resolve: services.config.hasAnthropicKey
-                ? (q) async => services.preferences.aiConsent != true
-                      ? const <StockCandidate>[]
-                      : (await services.descriptionResolver.resolve(
-                          q,
-                          outputLanguage: SupportedLocales.languageFor(Localizations.localeOf(context)).englishName,
-                        )).candidates
-                : null,
-            favorites: () => services.preferences.favorites,
-            recent: () => services.preferences.recent,
-            recentTitle: () => AppLocalizations.of(context).recentSearches,
-            describe: (e) => errorMessage(AppLocalizations.of(context), e),
-            open: _quickOpen,
-            pasteImage: _quickPasteImage,
-            openWindow: () async {
-              await panel.hide();
-              await services.desktop.showFullWindow();
-            },
-          ),
+      if (_quickPanel == null) {
+        final handler = QuickSearchController(
+          panel: panel,
+          search: services.marketData.search,
+          // Leírásra („tech 100 etf”) az AI fejti meg a részvényt, ha a kereső nem találja – csak
+          // az AI-hoz adott hozzájárulással (a gyorspanelen nincs hely az engedélykérő ablaknak).
+          resolve: services.config.hasAnthropicKey
+              ? (q) async => services.preferences.aiConsent != true
+                    ? const <StockCandidate>[]
+                    : (await services.descriptionResolver.resolve(
+                        q,
+                        outputLanguage: SupportedLocales.languageFor(Localizations.localeOf(context)).englishName,
+                      )).candidates
+              : null,
+          favorites: () => services.preferences.favorites,
+          recent: () => services.preferences.recent,
+          recentTitle: () => AppLocalizations.of(context).recentSearches,
+          describe: (e) => errorMessage(AppLocalizations.of(context), e),
+          open: _quickOpen,
+          pasteImage: _quickPasteImage,
+          openWindow: () async {
+            await panel.hide();
+            await services.desktop.showFullWindow();
+          },
         );
+        _quickPanel = (panel, handler);
+        panel.attach(handler);
       }
       // Nyelv- vagy témaváltáskor a panel feliratai és színei is frissülnek.
       panel.configure(
@@ -796,7 +800,10 @@ class _Sidebar extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(hotkeyHintText(l10n, services), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                  Text(
+                    hotkeyHintText(l10n, services, names: keyNamesOf(MaterialLocalizations.of(context))),
+                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                  ),
                   const SizedBox(height: 4),
                   InkWell(
                     key: const ValueKey('shortcuts-help'),

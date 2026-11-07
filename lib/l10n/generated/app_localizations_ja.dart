@@ -13,28 +13,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => '株式を撮影して、その銘柄のすべてを知る。';
-
-  @override
   String get homeHint => '株券、証券アプリの画面、新聞、企業ロゴなど、銘柄を特定できるものなら何でも。';
 
   @override
   String get takePhoto => '写真を撮る';
 
   @override
-  String get chooseFromGallery => 'ギャラリーから選択';
-
-  @override
   String get chooseImage => '画像を選択';
-
-  @override
-  String get enterTickerManually => 'ティッカーを手動入力';
-
-  @override
-  String get tickerInputLabel => 'ティッカーシンボル';
-
-  @override
-  String get tickerInputHint => '例：AAPL';
 
   @override
   String get lookUp => '検索';
@@ -183,9 +168,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get labelHeadquarters => '本社';
 
   @override
-  String get labelDescription => '概要';
-
-  @override
   String get labelLastPrice => '現在値';
 
   @override
@@ -326,9 +308,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get noNews => '最近のニュースはありません。';
-
-  @override
-  String get openArticle => '記事を開く';
 
   @override
   String get openLinkFailed => 'リンクを開けませんでした。';
@@ -594,11 +573,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get displayCurrencyNone => '銘柄の通貨のみ';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency換算';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'レート：1 $from = $rate $to（ECB、$date）';
   }
@@ -670,11 +644,6 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '月 $count 回の分析';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days 日間の無料トライアル（分析 $count 回付き）';
   }
 
   @override
@@ -755,9 +724,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get viewPlans => 'プランを見る';
-
-  @override
-  String get usageTitle => '使用状況';
 
   @override
   String get demoPurchaseNote => 'デモ課金：このプラットフォームでの購入はシミュレーションです。';
@@ -1094,9 +1060,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => '保有状況';
-
-  @override
-  String get portfolioPurchases => '購入履歴';
 
   @override
   String get portfolioRemove => '削除';
@@ -2306,6 +2269,9 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => '新しい銘柄はありません';
+
+  @override
   String get positionsSortWeight => '評価額の大きい順';
 
   @override
@@ -2496,6 +2462,9 @@ class AppLocalizationsJa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'すべての保有銘柄にトレーリングストップが設定済みです';
 
   @override
   String portfolioSinceSale(String percent) {

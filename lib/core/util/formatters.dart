@@ -165,11 +165,26 @@ class Fmt {
     if (v == null) return na;
     final n = _number(v, decimals);
     final positive = withSign && v.isFinite && roundTo(v, decimals) > 0;
-    final body = _percentFirst ? (n.startsWith('-') ? '-%${n.substring(1)}' : '%$n') : '$n%';
+    final body = _percentFirst ? (n.startsWith('-') ? '-%${n.substring(1)}' : '%$n') : '$n$_percentSuffix';
     return _iso('$prefix${positive ? _plus : ''}$body');
   }
 
-  bool get _percentFirst => (NumberFormat.percentPattern(numberLocale).symbols.PERCENT_PATTERN).startsWith('%');
+  late final String _percentPattern = _percentPatternByLocale.putIfAbsent(
+    numberLocale,
+    () => NumberFormat.percentPattern(numberLocale).symbols.PERCENT_PATTERN,
+  );
+  static final Map<String, String> _percentPatternByLocale = {};
+
+  bool get _percentFirst => _percentPattern.startsWith('%');
+
+  /// A szám utáni rész a nyelv mintájából: „%”, vagy szóközzel („30 %” franciául, németül, csehül).
+  String get _percentSuffix {
+    final i = _percentPattern.indexOf('%');
+    return i <= 0 ? '%' : _percentPattern.substring(_percentPattern.lastIndexOf('0', i) + 1, i + 1);
+  }
+
+  /// Évszám csoportosítás nélkül, a nyelv számjegyeivel (ahol a számok is azokkal íródnak).
+  String year(int y) => _nativeDigits ? NumberFormat('0', numberLocale).format(y) : '$y';
 
   String signed(num? v, {int decimals = 2}) => v == null ? na : _signed(v, decimals);
 

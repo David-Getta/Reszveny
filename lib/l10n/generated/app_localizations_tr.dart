@@ -13,9 +13,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Bir hissenin fotoğrafını çekin, hakkındaki her şeyi öğrenin.';
-
-  @override
   String get homeHint =>
       'Hisse senedi belgesi, aracı kurum uygulaması ekranı, gazete veya şirket logosu – hisseyi tanımlayan herhangi bir şey.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get takePhoto => 'Fotoğraf çek';
 
   @override
-  String get chooseFromGallery => 'Galeriden seç';
-
-  @override
   String get chooseImage => 'Görsel seç';
-
-  @override
-  String get enterTickerManually => 'Sembolü elle gir';
-
-  @override
-  String get tickerInputLabel => 'Hisse sembolü';
-
-  @override
-  String get tickerInputHint => 'örn. AAPL';
 
   @override
   String get lookUp => 'Ara';
@@ -186,9 +171,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String get labelHeadquarters => 'Genel merkez';
 
   @override
-  String get labelDescription => 'Açıklama';
-
-  @override
   String get labelLastPrice => 'Son fiyat';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get noNews => 'Güncel haber yok.';
-
-  @override
-  String get openArticle => 'Haberi aç';
 
   @override
   String get openLinkFailed => 'Bağlantı açılamadı.';
@@ -599,11 +578,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String get displayCurrencyNone => 'Yalnızca hissenin kendi para birimi';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency olarak';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kur: 1 $from = $rate $to (AMB, $date)';
   }
@@ -675,11 +649,6 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Ayda $count analiz';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count analiz içeren $days günlük ücretsiz deneme';
   }
 
   @override
@@ -772,9 +741,6 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get viewPlans => 'Planları görüntüle';
-
-  @override
-  String get usageTitle => 'Kullanım';
 
   @override
   String get demoPurchaseNote => 'Demo faturalandırma: bu platformda satın alımlar simüle edilir.';
@@ -1136,9 +1102,6 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Pozisyonunuz';
-
-  @override
-  String get portfolioPurchases => 'Alışlar';
 
   @override
   String get portfolioRemove => 'Kaldır';
@@ -2422,6 +2385,9 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Yeni hisse yok';
+
+  @override
   String get positionsSortWeight => 'En büyükler önce';
 
   @override
@@ -2614,6 +2580,9 @@ class AppLocalizationsTr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Tüm pozisyonlarda zaten iz süren stop var';
 
   @override
   String portfolioSinceSale(String percent) {

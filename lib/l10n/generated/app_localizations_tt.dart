@@ -13,9 +13,6 @@ class AppLocalizationsTt extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Акцияне фотога төшерегез һәм аның турында барысын да белегез.';
-
-  @override
   String get homeHint =>
       'Акция сертификаты, брокер кушымтасы экраны, газета яки компания логотипы – акцияне билгеләргә ярдәм иткән теләсә нәрсә.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsTt extends AppLocalizations {
   String get takePhoto => 'Фотога төшерү';
 
   @override
-  String get chooseFromGallery => 'Галереядан сайлау';
-
-  @override
   String get chooseImage => 'Рәсем сайлау';
-
-  @override
-  String get enterTickerManually => 'Тикерны кулдан кертү';
-
-  @override
-  String get tickerInputLabel => 'Тикер';
-
-  @override
-  String get tickerInputHint => 'мәс., AAPL';
 
   @override
   String get lookUp => 'Эзләү';
@@ -186,9 +171,6 @@ class AppLocalizationsTt extends AppLocalizations {
   String get labelHeadquarters => 'Баш офис';
 
   @override
-  String get labelDescription => 'Тасвирлама';
-
-  @override
   String get labelLastPrice => 'Соңгы бәя';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get noNews => 'Соңгы яңалыклар юк.';
-
-  @override
-  String get openArticle => 'Мәкаләне ачу';
 
   @override
   String get openLinkFailed => 'Сылтаманы ачып булмады.';
@@ -600,11 +579,6 @@ class AppLocalizationsTt extends AppLocalizations {
   String get displayCurrencyNone => 'Акциянең үз валютасы гына';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency исәбендә';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Курс: 1 $from = $rate $to (ECB, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Айга $count анализ';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count анализ белән $days көнлек түләүсез сынау';
   }
 
   @override
@@ -773,9 +742,6 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get viewPlans => 'Тарифларны карау';
-
-  @override
-  String get usageTitle => 'Куллану';
 
   @override
   String get demoPurchaseNote => 'Демо-түләү: бу платформада сатып алулар симуляцияләнә.';
@@ -1137,9 +1103,6 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Сезнең позиция';
-
-  @override
-  String get portfolioPurchases => 'Сатып алулар';
 
   @override
   String get portfolioRemove => 'Бетерү';
@@ -2433,6 +2396,9 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Яңа акцияләр юк';
+
+  @override
   String get positionsSortWeight => 'Иң зурлары башта';
 
   @override
@@ -2626,6 +2592,9 @@ class AppLocalizationsTt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Барлык позицияләрдә дә трейлинг-стоп бар инде';
 
   @override
   String portfolioSinceSale(String percent) {

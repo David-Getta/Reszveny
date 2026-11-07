@@ -1,5 +1,7 @@
 import 'package:intl/intl.dart';
 
+import '../../core/util/formatters.dart';
+
 /// Alapárak USD-ben. A boltokban (App Store, Play) az árszinteket ebből kell
 /// beállítani; a bolt minden régióban a helyi pénznemben mutatja. A demó bolt
 /// és az előnézet ebből számol helyi árat az ECB-árfolyammal, kerekítve.
@@ -55,7 +57,8 @@ class Pricing {
     try {
       return NumberFormat.simpleCurrency(locale: locale, name: c, decimalDigits: decimals).format(amount);
     } catch (_) {
-      return '${amount.toStringAsFixed(decimals)} $c';
+      // Az intl-nek nincs adata a nyelvhez: a Fmt a térség szokása szerint ír (pl. „3,33 EUR”).
+      return Fmt(locale).money(amount, c);
     }
   }
 }

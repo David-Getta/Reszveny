@@ -13,9 +13,6 @@ class AppLocalizationsIg extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'See foto nke stock, mụta ihe niile gbasara ya.';
-
-  @override
   String get homeHint =>
       'Asambodo share, ihuenyo app onye broker, akwụkwọ akụkọ ma ọ bụ akara ụlọ ọrụ – ihe ọ bụla na-egosi stock.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get takePhoto => 'See foto';
 
   @override
-  String get chooseFromGallery => 'Họrọ na gallery';
-
-  @override
   String get chooseImage => 'Họrọ onyonyo';
-
-  @override
-  String get enterTickerManually => 'Tinye ticker n\'aka';
-
-  @override
-  String get tickerInputLabel => 'Akara ticker';
-
-  @override
-  String get tickerInputHint => 'ọmụmaatụ AAPL';
 
   @override
   String get lookUp => 'Chọọ';
@@ -186,9 +171,6 @@ class AppLocalizationsIg extends AppLocalizations {
   String get labelHeadquarters => 'Isi ụlọ ọrụ';
 
   @override
-  String get labelDescription => 'Nkọwa';
-
-  @override
   String get labelLastPrice => 'Ọnụahịa ikpeazụ';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get noNews => 'Enweghị akụkọ ọhụrụ.';
-
-  @override
-  String get openArticle => 'Mepee akụkọ';
 
   @override
   String get openLinkFailed => 'Enweghị ike imepe njikọ ahụ.';
@@ -599,11 +578,6 @@ class AppLocalizationsIg extends AppLocalizations {
   String get displayCurrencyNone => 'Naanị ego stock ahụ';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ na $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Ọnụego: 1 $from = $rate $to (ECB, $date)';
   }
@@ -675,11 +649,6 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Nyocha $count kwa ọnwa';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Nnwale n\'efu ụbọchị $days nwere nyocha $count';
   }
 
   @override
@@ -771,9 +740,6 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get viewPlans => 'Lee atụmatụ';
-
-  @override
-  String get usageTitle => 'Ojiji';
 
   @override
   String get demoPurchaseNote => 'Ịkwụ ụgwọ ngosi: a na-eṅomi ịzụ ihe n\'ikpo okwu a.';
@@ -1135,9 +1101,6 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Ihe ị nwere na ya';
-
-  @override
-  String get portfolioPurchases => 'Ihe ị zụrụ';
 
   @override
   String get portfolioRemove => 'Wepụ';
@@ -2444,6 +2407,9 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Enweghị òkè ọhụrụ';
+
+  @override
   String get positionsSortWeight => 'Ndị kacha ukwuu buru ụzọ';
 
   @override
@@ -2637,6 +2603,9 @@ class AppLocalizationsIg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Òkè ọ bụla enwelarị ọkwa a';
 
   @override
   String portfolioSinceSale(String percent) {

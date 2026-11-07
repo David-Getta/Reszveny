@@ -1,14 +1,9 @@
 {
   "@@locale": "en",
   "appTitle": "WhatStock",
-  "homeTagline": "Photograph a stock and learn everything about it.",
   "homeHint": "A share certificate, a brokerage app screen, a newspaper or a company logo – anything that identifies a stock.",
   "takePhoto": "Take a photo",
-  "chooseFromGallery": "Choose from gallery",
   "chooseImage": "Choose an image",
-  "enterTickerManually": "Enter ticker manually",
-  "tickerInputLabel": "Ticker symbol",
-  "tickerInputHint": "e.g. AAPL",
   "lookUp": "Look up",
   "demoModeBanner": "Demo mode – no market data key configured. Sample data is available for: {symbols}.",
   "@demoModeBanner": {
@@ -83,7 +78,6 @@
   "labelEmployees": "Employees",
   "labelCeo": "CEO",
   "labelHeadquarters": "Headquarters",
-  "labelDescription": "Description",
   "labelLastPrice": "Last price",
   "labelChange": "Change",
   "labelOpen": "Open",
@@ -159,13 +153,14 @@
     }
   },
   "noNews": "No recent news.",
-  "openArticle": "Open article",
   "openLinkFailed": "Could not open the link.",
   "recognitionSummary": "Summary",
   "recognitionEvidence": "Why we think so",
   "recognitionRawText": "Text read from the image",
   "errMissingAnthropicKey": "Image recognition is not available in this version. Enter the ticker instead.",
-  "@errMissingAnthropicKey": {"description": "Error when photo/screenshot recognition is not available in this build (no AI service). Plain words for end users, no technical names."},
+  "@errMissingAnthropicKey": {
+    "description": "Error when photo/screenshot recognition is not available in this build (no AI service). Plain words for end users, no technical names."
+  },
   "errRecognitionUnreachable": "Could not reach the recognition service. Check your internet connection.",
   "errRecognitionHttp": "The recognition service returned an error (HTTP {status}).",
   "@errRecognitionHttp": {
@@ -180,7 +175,9 @@
   "errRecognitionBadResponse": "Unexpected response from the recognition service.",
   "errRecognitionEmpty": "The recognition service returned an empty response.",
   "errMissingFinnhubKey": "Market data is not available in this version.",
-  "@errMissingFinnhubKey": {"description": "Error when live market data is not available in this build. Plain words for end users, no technical names."},
+  "@errMissingFinnhubKey": {
+    "description": "Error when live market data is not available in this build. Plain words for end users, no technical names."
+  },
   "errMarketUnreachable": "Could not reach the market data service. Check your internet connection.",
   "errMarketRateLimited": "Too many requests to the market data service. Please wait a minute.",
   "errMarketHttp": "The market data service returned an error (HTTP {status}).",
@@ -275,7 +272,9 @@
   },
   "aiDisclaimer": "AI-generated analysis based on public data and recent news. It may contain errors or be out of date, and it is not investment advice.",
   "errAiNotConfigured": "AI features are not available in this version.",
-  "@errAiNotConfigured": {"description": "Error when AI features are not available in this build (no AI service). Plain words for end users, no technical names."},
+  "@errAiNotConfigured": {
+    "description": "Error when AI features are not available in this build (no AI service). Plain words for end users, no technical names."
+  },
   "errAiUnreachable": "Could not reach the AI service. Check your internet connection.",
   "errAiHttp": "The AI service returned an error (HTTP {status}).",
   "@errAiHttp": {
@@ -315,14 +314,6 @@
   "noFavorites": "No favorites yet. Tap the star on a stock to add it.",
   "displayCurrency": "Display currency",
   "displayCurrencyNone": "Stock’s own currency only",
-  "labelConverted": "≈ in {currency}",
-  "@labelConverted": {
-    "placeholders": {
-      "currency": {
-        "type": "String"
-      }
-    }
-  },
   "fxRateNote": "Rate: 1 {from} = {rate} {to} (ECB, {date})",
   "@fxRateNote": {
     "placeholders": {
@@ -377,17 +368,6 @@
   "planAnalysesPerMonth": "{count} analyses per month",
   "@planAnalysesPerMonth": {
     "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "planTrialDescription": "{days}-day free trial with {count} analyses",
-  "@planTrialDescription": {
-    "placeholders": {
-      "days": {
-        "type": "int"
-      },
       "count": {
         "type": "int"
       }
@@ -448,7 +428,6 @@
   "errTrialExpired": "Your free trial has ended. Choose a plan to continue.",
   "errNoPlan": "An active plan is needed for AI analysis.",
   "viewPlans": "View plans",
-  "usageTitle": "Usage",
   "demoPurchaseNote": "Demo billing: purchases are simulated on this platform.",
   "mostPopular": "Most popular",
   "bestValue": "Best value",
@@ -705,7 +684,6 @@
     }
   },
   "portfolioYourPosition": "Your position",
-  "portfolioPurchases": "Purchases",
   "portfolioRemove": "Remove",
   "portfolioExcluded": "Positions without a price or exchange rate are left out of the totals.",
   "priceAlerts": "Price alerts",
@@ -1805,12 +1783,23 @@
   "favoriteRemoved": "{symbol} removed from favorites",
   "@favoriteRemoved": {
     "description": "Snackbar after removing a stock from favorites (with an Undo action). symbol is a ticker such as NVDA.",
-    "placeholders": {"symbol": {"type": "String"}}
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
   },
   "listItemRemoved": "{symbol} removed from {list}",
   "@listItemRemoved": {
     "description": "Snackbar after removing a stock from one of the user's own watch lists (with an Undo action). symbol is a ticker, list is the user's list name.",
-    "placeholders": {"symbol": {"type": "String"}, "list": {"type": "String"}}
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      },
+      "list": {
+        "type": "String"
+      }
+    }
   },
   "watchListDeleted": "List deleted: {list}",
   "sharedToClipboard": "Copied to the clipboard – paste it wherever you want to share it.",
@@ -1849,14 +1838,22 @@
   },
   "@lotPriceFarFromQuote": {
     "description": "Field error in the buy/sell dialog when the entered price is more than 10× above or below today's price (likely a typo). Saving again accepts it. price is today's price with currency.",
-    "placeholders": {"price": {"type": "String"}}
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
   },
   "@portfolioImportNothing": {
     "description": "Field error in the CSV import dialog when nothing could be read; the dialog stays open with the pasted text."
   },
   "@watchListDeleted": {
     "description": "Snackbar after deleting one of the user's own watch lists (with an Undo action). list is the user's list name.",
-    "placeholders": {"list": {"type": "String"}}
+    "placeholders": {
+      "list": {
+        "type": "String"
+      }
+    }
   },
   "portfolioAskTitle": "Questions about your portfolio",
   "@portfolioAskTitle": {
@@ -2045,6 +2042,10 @@
       }
     }
   },
+  "watchImportedNone": "No new stocks",
+  "@watchImportedNone": {
+    "description": "Snackbar after pasting or importing tickers when every one of them was already on the list (shown instead of the \"N stocks added\" count)."
+  },
   "positionsSortWeight": "Largest first",
   "positionsSortGain": "Best total return first",
   "positionsSortToday": "Best today first",
@@ -2165,7 +2166,12 @@
   "portfolioFee": "Fee ({currency})",
   "@portfolioFee": {
     "description": "Optional field in the buy/sell dialog: the broker's fee (commission) for this transaction, one amount in the stock's currency. It is added to the cost of a purchase and deducted from the proceeds of a sale.",
-    "placeholders": { "currency": { "type": "String", "example": "USD" } }
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD"
+      }
+    }
   },
   "portfolioFeeAdd": "Add a fee",
   "@portfolioFeeAdd": {
@@ -2174,7 +2180,12 @@
   "portfolioFeeRow": "Fee: {amount}",
   "@portfolioFeeRow": {
     "description": "Under a transaction in the list: the fee (commission) paid on it.",
-    "placeholders": { "amount": { "type": "String", "example": "4.95 USD" } }
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "4.95 USD"
+      }
+    }
   },
   "portfolioAnnualSummary": "Annual summary",
   "@portfolioAnnualSummary": {
@@ -2319,6 +2330,10 @@
         "type": "int"
       }
     }
+  },
+  "portfolioStopsNone": "Every position already has a trailing stop",
+  "@portfolioStopsNone": {
+    "description": "Snackbar after \"trailing stops for all positions\" when nothing had to be added (shown instead of the \"N trailing stops set\" count)."
   },
   "portfolioSinceSale": "{percent} since you sold",
   "@portfolioSinceSale": {
@@ -2568,23 +2583,51 @@
     }
   },
   "errAiTruncated": "The analysis was cut off before it was finished. Please try again – it did not use your allowance.",
-  "@errAiTruncated": {"description": "Error when the AI analysis reply hit the length limit and was incomplete; the user was not charged."},
+  "@errAiTruncated": {
+    "description": "Error when the AI analysis reply hit the length limit and was incomplete; the user was not charged."
+  },
   "errImageUnsupported": "This image can't be read. Save it as a JPEG or PNG and try again.",
-  "@errImageUnsupported": {"description": "Error when a picked or pasted image cannot be decoded (unknown format such as HEIC/TIFF the device cannot read, or a damaged file)."},
+  "@errImageUnsupported": {
+    "description": "Error when a picked or pasted image cannot be decoded (unknown format such as HEIC/TIFF the device cannot read, or a damaged file)."
+  },
   "errRateLimited": "Too many requests in a short time. Please wait a minute and try again.",
-  "@errRateLimited": {"description": "Error when the server or the AI service refuses because of too many requests (HTTP 429)."},
+  "@errRateLimited": {
+    "description": "Error when the server or the AI service refuses because of too many requests (HTTP 429)."
+  },
   "watchListNameTaken": "A list with this name already exists.",
-  "@watchListNameTaken": {"description": "Error under the list name field: another of the user's own watch lists already has this name."},
+  "@watchListNameTaken": {
+    "description": "Error under the list name field: another of the user's own watch lists already has this name."
+  },
   "watchListLimit": "You can have up to {max} lists.",
-  "@watchListLimit": {"description": "Short message when the user tries to create a new watch list but already has the maximum number. {max} is a number like 20.", "placeholders": {"max": {"type": "int"}}},
+  "@watchListLimit": {
+    "description": "Short message when the user tries to create a new watch list but already has the maximum number. {max} is a number like 20.",
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "portfolioBuyBelowSold": "At least {quantity} – that many have already been sold",
-  "@portfolioBuyBelowSold": {"description": "Error under the quantity field when the user corrects a past purchase to fewer shares than were already sold from it. {quantity} is the smallest allowed number of shares, already formatted (e.g. 8).", "placeholders": {"quantity": {"type": "String"}}},
+  "@portfolioBuyBelowSold": {
+    "description": "Error under the quantity field when the user corrects a past purchase to fewer shares than were already sold from it. {quantity} is the smallest allowed number of shares, already formatted (e.g. 8).",
+    "placeholders": {
+      "quantity": {
+        "type": "String"
+      }
+    }
+  },
   "restoreNothing": "No earlier purchases were found to restore.",
-  "@restoreNothing": {"description": "Shown after the user tapped \"Restore purchases\" and the store or server found no earlier purchase on this account."},
+  "@restoreNothing": {
+    "description": "Shown after the user tapped \"Restore purchases\" and the store or server found no earlier purchase on this account."
+  },
   "manageSubscriptionElsewhere": "There is no subscription to manage here. A subscription bought in the App Store or Google Play is managed in the store's settings.",
-  "@manageSubscriptionElsewhere": {"description": "Shown when the user taps \"Manage subscription\" but there is no browser (Stripe) subscription on the account."},
+  "@manageSubscriptionElsewhere": {
+    "description": "Shown when the user taps \"Manage subscription\" but there is no browser (Stripe) subscription on the account."
+  },
   "backupFailed": "The backup could not be saved. Please try again.",
-  "@backupFailed": {"description": "Error after saving the backup file failed (e.g. no permission or disk full)."},
+  "@backupFailed": {
+    "description": "Error after saving the backup file failed (e.g. no permission or disk full)."
+  },
   "syncTooLarge": "Your data is too large to sync with your account. Delete transactions or notes you no longer need, and it will try again.",
   "@syncTooLarge": {
     "description": "Shown under the sync row in Settings when the server rejected the upload because the synced data is over its size limit (about 2 MB)."
@@ -2597,79 +2640,166 @@
   "@portfolioNoRateFor": {
     "description": "Under the portfolio totals: these positions have a price, but their currency could not be converted to the totals' currency, so they are left out. symbols is a comma-separated list of tickers.",
     "placeholders": {
-      "symbols": {"type": "String", "example": "2330.TW, 0700.HK"}
+      "symbols": {
+        "type": "String",
+        "example": "2330.TW, 0700.HK"
+      }
     }
   },
   "dividendsNotConverted": "{count, plural, =1{1 dividend in {currencies} has no exchange rate and is left out of the totals.} other{{count} dividends in {currencies} have no exchange rate and are left out of the totals.}}",
   "@dividendsNotConverted": {
     "description": "Note on the received dividends card: dividends in these currencies could not be converted (no exchange rate available), so they are missing from the totals. currencies is a comma-separated list of currency codes.",
     "placeholders": {
-      "count": {"type": "int", "example": "2"},
-      "currencies": {"type": "String", "example": "TWD"}
+      "count": {
+        "type": "int",
+        "example": "2"
+      },
+      "currencies": {
+        "type": "String",
+        "example": "TWD"
+      }
     }
   },
   "signOutTitle": "Sign out?",
-  "@signOutTitle": {"description": "Title of the confirmation dialog before signing out."},
+  "@signOutTitle": {
+    "description": "Title of the confirmation dialog before signing out."
+  },
   "signOutBody": "Your portfolio, lists, price alerts and notes stay in your account and are removed from this device. Sign in again to get them back.",
-  "@signOutBody": {"description": "Body of the sign-out confirmation: the synced data is removed from the device and comes back when signing in again."},
+  "@signOutBody": {
+    "description": "Body of the sign-out confirmation: the synced data is removed from the device and comes back when signing in again."
+  },
   "signOutUnsaved": "Some changes could not be saved to your account (no connection?). If you sign out now, they will be lost.",
-  "@signOutUnsaved": {"description": "Warning shown when the last changes could not be uploaded before signing out."},
+  "@signOutUnsaved": {
+    "description": "Warning shown when the last changes could not be uploaded before signing out."
+  },
   "signOutAnyway": "Sign out anyway",
-  "@signOutAnyway": {"description": "Button: sign out even though some changes are not saved to the account."},
+  "@signOutAnyway": {
+    "description": "Button: sign out even though some changes are not saved to the account."
+  },
   "fileTooLarge": "This file is too large to open here.",
-  "@fileTooLarge": {"description": "Shown when a chosen CSV or backup file exceeds the size limit."},
+  "@fileTooLarge": {
+    "description": "Shown when a chosen CSV or backup file exceeds the size limit."
+  },
   "portfolioAnnualSummaryYear": "Annual summary {year}",
-  "@portfolioAnnualSummaryYear": {"description": "Heading and share subject of the annual summary for one year.", "placeholders": {"year": {"type": "String", "example": "2025"}}},
+  "@portfolioAnnualSummaryYear": {
+    "description": "Heading and share subject of the annual summary for one year.",
+    "placeholders": {
+      "year": {
+        "type": "String",
+        "example": "2025"
+      }
+    }
+  },
   "portfolioSoldRow": "Sold {quantity} × {price}",
-  "@portfolioSoldRow": {"description": "A sale row in the purchases list: quantity and price per share.", "placeholders": {"quantity": {"type": "String", "example": "10"}, "price": {"type": "String", "example": "182.50 USD"}}},
+  "@portfolioSoldRow": {
+    "description": "A sale row in the purchases list: quantity and price per share.",
+    "placeholders": {
+      "quantity": {
+        "type": "String",
+        "example": "10"
+      },
+      "price": {
+        "type": "String",
+        "example": "182.50 USD"
+      }
+    }
+  },
   "subscribedInStore": "You already have a subscription through the App Store or Google Play. To change your plan, use the subscription settings of that store.",
-  "@subscribedInStore": {"description": "Shown on the desktop/web plans page when the account already has an active App Store or Google Play subscription, so a second (web) subscription is not started."},
+  "@subscribedInStore": {
+    "description": "Shown on the desktop/web plans page when the account already has an active App Store or Google Play subscription, so a second (web) subscription is not started."
+  },
   "paymentViaAppStore": "Billed through your Apple account. Cancel anytime in your App Store subscription settings.",
-  "@paymentViaAppStore": {"description": "Payment note at the bottom of the plans page on iPhone/iPad/Mac (App Store builds). Name only the App Store."},
+  "@paymentViaAppStore": {
+    "description": "Payment note at the bottom of the plans page on iPhone/iPad/Mac (App Store builds). Name only the App Store."
+  },
   "paymentViaGooglePlay": "Billed through your Google Play account. Cancel anytime in your Google Play subscription settings.",
-  "@paymentViaGooglePlay": {"description": "Payment note at the bottom of the plans page on Android. Name only Google Play."},
+  "@paymentViaGooglePlay": {
+    "description": "Payment note at the bottom of the plans page on Android. Name only Google Play."
+  },
   "manageSubscriptionAppStore": "There is no subscription to manage here. A subscription bought in the App Store is managed in your App Store settings.",
-  "@manageSubscriptionAppStore": {"description": "Shown on iPhone/iPad when there is nothing to manage in the app."},
+  "@manageSubscriptionAppStore": {
+    "description": "Shown on iPhone/iPad when there is nothing to manage in the app."
+  },
   "manageSubscriptionGooglePlay": "There is no subscription to manage here. A subscription bought in Google Play is managed in your Google Play settings.",
-  "@manageSubscriptionGooglePlay": {"description": "Shown on Android when there is nothing to manage in the app."},
+  "@manageSubscriptionGooglePlay": {
+    "description": "Shown on Android when there is nothing to manage in the app."
+  },
   "deleteAccountBodyAppStore": "Your account and everything stored on our server (email, allowance, usage) will be deleted for good, and unused analyses are lost. An App Store subscription must be cancelled in your App Store settings.",
-  "@deleteAccountBodyAppStore": {"description": "Account deletion confirmation text on iPhone/iPad (no mention of web payments)."},
+  "@deleteAccountBodyAppStore": {
+    "description": "Account deletion confirmation text on iPhone/iPad (no mention of web payments)."
+  },
   "deleteAccountBodyGooglePlay": "Your account and everything stored on our server (email, allowance, usage) will be deleted for good, and unused analyses are lost. A Google Play subscription must be cancelled in your Google Play settings.",
-  "@deleteAccountBodyGooglePlay": {"description": "Account deletion confirmation text on Android (no mention of web payments)."},
+  "@deleteAccountBodyGooglePlay": {
+    "description": "Account deletion confirmation text on Android (no mention of web payments)."
+  },
   "aiConsentTitle": "Before you use AI features",
-  "@aiConsentTitle": {"description": "Title of the one-time consent dialog shown before the first AI request."},
+  "@aiConsentTitle": {
+    "description": "Title of the one-time consent dialog shown before the first AI request."
+  },
   "aiConsentBody": "To analyse stocks, read photos and screenshots, and answer your questions, WhatStock sends the data needed for the request — the photo or screenshot, the stock, your question and, where you use them, your notes and positions — to Anthropic, which runs the Claude AI model. Anthropic processes it only to answer the request and does not use it to train its AI. Details are in the privacy notice.",
-  "@aiConsentBody": {"description": "Body of the AI consent dialog: what data is sent, to whom (Anthropic, the company behind Claude) and why. Keep the names Anthropic and Claude."},
+  "@aiConsentBody": {
+    "description": "Body of the AI consent dialog: what data is sent, to whom (Anthropic, the company behind Claude) and why. Keep the names Anthropic and Claude."
+  },
   "aiConsentLater": "Not now",
-  "@aiConsentLater": {"description": "Consent dialog button: do not allow AI features for now."},
+  "@aiConsentLater": {
+    "description": "Consent dialog button: do not allow AI features for now."
+  },
   "aiConsentAllow": "Allow",
-  "@aiConsentAllow": {"description": "Consent dialog button: allow sending the request data to Anthropic."},
+  "@aiConsentAllow": {
+    "description": "Consent dialog button: allow sending the request data to Anthropic."
+  },
   "aiConsentSetting": "AI features",
-  "@aiConsentSetting": {"description": "Settings switch title: whether the app may send AI requests (to Anthropic)."},
+  "@aiConsentSetting": {
+    "description": "Settings switch title: whether the app may send AI requests (to Anthropic)."
+  },
   "aiConsentSettingDesc": "Your requests are sent to Anthropic (Claude) to be answered. When off, the app asks before the next AI request, and the automatic morning brief does not run.",
-  "@aiConsentSettingDesc": {"description": "Settings switch subtitle for the AI consent. Keep the names Anthropic and Claude."},
+  "@aiConsentSettingDesc": {
+    "description": "Settings switch subtitle for the AI consent. Keep the names Anthropic and Claude."
+  },
   "aiReport": "Report",
-  "@aiReport": {"description": "Button under an AI answer: report it as wrong, offensive or harmful to the developers."},
+  "@aiReport": {
+    "description": "Button under an AI answer: report it as wrong, offensive or harmful to the developers."
+  },
   "aiReportTitle": "Report this AI answer",
-  "@aiReportTitle": {"description": "Title of the dialog for reporting an AI answer."},
+  "@aiReportTitle": {
+    "description": "Title of the dialog for reporting an AI answer."
+  },
   "aiReportInaccurate": "Wrong or misleading",
-  "@aiReportInaccurate": {"description": "Reason option when reporting an AI answer."},
+  "@aiReportInaccurate": {
+    "description": "Reason option when reporting an AI answer."
+  },
   "aiReportHarmful": "Offensive or harmful",
-  "@aiReportHarmful": {"description": "Reason option when reporting an AI answer."},
+  "@aiReportHarmful": {
+    "description": "Reason option when reporting an AI answer."
+  },
   "aiReportOther": "Something else",
-  "@aiReportOther": {"description": "Reason option when reporting an AI answer."},
+  "@aiReportOther": {
+    "description": "Reason option when reporting an AI answer."
+  },
   "aiReportNoteHint": "What's wrong? (optional)",
-  "@aiReportNoteHint": {"description": "Hint of the optional note field in the report dialog."},
+  "@aiReportNoteHint": {
+    "description": "Hint of the optional note field in the report dialog."
+  },
   "aiReportPrivacy": "We receive the text of this answer and your note — without your account — so we can review it.",
-  "@aiReportPrivacy": {"description": "Small print in the report dialog: what is sent with the report."},
+  "@aiReportPrivacy": {
+    "description": "Small print in the report dialog: what is sent with the report."
+  },
   "aiReportSend": "Send report",
-  "@aiReportSend": {"description": "Send button of the report dialog."},
+  "@aiReportSend": {
+    "description": "Send button of the report dialog."
+  },
   "aiReportThanks": "Thanks — we'll review it.",
-  "@aiReportThanks": {"description": "Snackbar after an AI answer was reported."},
+  "@aiReportThanks": {
+    "description": "Snackbar after an AI answer was reported."
+  },
   "aiPortfolioDisclaimer": "AI-generated, general information about your portfolio's composition. It does not take your goals, finances or tax situation into account and is not a personal recommendation or investment advice.",
-  "@aiPortfolioDisclaimer": {"description": "Note under the AI review of the user's own portfolio: general information, not a personal recommendation (EU investment-advice rules)."},
+  "@aiPortfolioDisclaimer": {
+    "description": "Note under the AI review of the user's own portfolio: general information, not a personal recommendation (EU investment-advice rules)."
+  },
   "briefNotificationTitle": "AI summary · Today with your stocks",
-  "@briefNotificationTitle": {"description": "Title of the system notification that shows the first sentence of the AI-written morning brief; must say it is AI-generated."},
+  "@briefNotificationTitle": {
+    "description": "Title of the system notification that shows the first sentence of the AI-written morning brief; must say it is AI-generated."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

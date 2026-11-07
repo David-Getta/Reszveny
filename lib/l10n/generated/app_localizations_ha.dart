@@ -13,9 +13,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Ɗauki hoton hannun jari ka san duk abin da ya shafe shi.';
-
-  @override
   String get homeHint =>
       'Takardar shaidar hannun jari, allon manhajar broker, jarida ko tambarin kamfani – duk abin da zai nuna hannun jari.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get takePhoto => 'Ɗauki hoto';
 
   @override
-  String get chooseFromGallery => 'Zaɓa daga gallery';
-
-  @override
   String get chooseImage => 'Zaɓi hoto';
-
-  @override
-  String get enterTickerManually => 'Shigar da ticker da hannu';
-
-  @override
-  String get tickerInputLabel => 'Alamar ticker';
-
-  @override
-  String get tickerInputHint => 'misali AAPL';
 
   @override
   String get lookUp => 'Nema';
@@ -186,9 +171,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String get labelHeadquarters => 'Babban ofis';
 
   @override
-  String get labelDescription => 'Bayani';
-
-  @override
   String get labelLastPrice => 'Farashin ƙarshe';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get noNews => 'Babu sabbin labarai.';
-
-  @override
-  String get openArticle => 'Buɗe labarin';
 
   @override
   String get openLinkFailed => 'Ba a iya buɗe hanyar haɗin ba.';
@@ -599,11 +578,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String get displayCurrencyNone => 'Nau’in kuɗin hannun jarin kaɗai';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ a $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Farashin canji: 1 $from = $rate $to (ECB, $date)';
   }
@@ -675,11 +649,6 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Nazari $count a wata';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Gwaji kyauta na kwana $days tare da nazari $count';
   }
 
   @override
@@ -771,9 +740,6 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get viewPlans => 'Duba tsare-tsare';
-
-  @override
-  String get usageTitle => 'Amfani';
 
   @override
   String get demoPurchaseNote => 'Biyan kuɗi na gwaji: ana kwaikwayon sayayya a wannan dandali.';
@@ -1138,9 +1104,6 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Matsayinka';
-
-  @override
-  String get portfolioPurchases => 'Sayayya';
 
   @override
   String get portfolioRemove => 'Cire';
@@ -2456,6 +2419,9 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Babu sabbin hannayen jari';
+
+  @override
   String get positionsSortWeight => 'Mafi girma farko';
 
   @override
@@ -2654,6 +2620,9 @@ class AppLocalizationsHa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Kowane hannun jari yana da wannan faɗakarwa tuni';
 
   @override
   String portfolioSinceSale(String percent) {

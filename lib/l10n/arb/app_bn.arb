@@ -1,14 +1,9 @@
 {
   "@@locale": "bn",
   "appTitle": "WhatStock",
-  "homeTagline": "একটি শেয়ারের ছবি তুলুন এবং তার সম্পর্কে সব জানুন।",
   "homeHint": "শেয়ার সার্টিফিকেট, ব্রোকারেজ অ্যাপের স্ক্রিন, সংবাদপত্র বা কোম্পানির লোগো – যা কিছু একটি শেয়ারকে শনাক্ত করে।",
   "takePhoto": "ছবি তুলুন",
-  "chooseFromGallery": "গ্যালারি থেকে বেছে নিন",
   "chooseImage": "একটি ছবি বেছে নিন",
-  "enterTickerManually": "টিকার ম্যানুয়ালি লিখুন",
-  "tickerInputLabel": "টিকার সিম্বল",
-  "tickerInputHint": "যেমন AAPL",
   "lookUp": "খুঁজুন",
   "demoModeBanner": "ডেমো মোড – কোনো মার্কেট ডেটা কী কনফিগার করা নেই। নমুনা ডেটা পাওয়া যাবে: {symbols}।",
   "recognizing": "ছবি বিশ্লেষণ করা হচ্ছে…",
@@ -18,6 +13,14 @@
   "whatWeSaw": "আমরা যা দেখেছি",
   "chooseCandidateTitle": "আপনি কোন শেয়ারটি বোঝাতে চেয়েছেন?",
   "confidencePercent": "{percent}% নিশ্চয়তা",
+  "@confidencePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "settings": "সেটিংস",
   "language": "ভাষা",
   "systemLanguage": "সিস্টেম ডিফল্ট",
@@ -55,7 +58,6 @@
   "labelEmployees": "কর্মী",
   "labelCeo": "CEO",
   "labelHeadquarters": "সদর দপ্তর",
-  "labelDescription": "বিবরণ",
   "labelLastPrice": "সর্বশেষ দাম",
   "labelChange": "পরিবর্তন",
   "labelOpen": "ওপেন",
@@ -95,9 +97,16 @@
   "ratingSell": "সেল",
   "ratingStrongSell": "স্ট্রং সেল",
   "analystCount": "{count, plural, =1{{count} বিশ্লেষক} other{{count} বিশ্লেষক}}",
+  "@analystCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "analystPeriod": "সময়কাল: {period}",
   "noNews": "সম্প্রতি কোনো খবর নেই।",
-  "openArticle": "নিবন্ধ খুলুন",
   "openLinkFailed": "লিংক খোলা যায়নি।",
   "recognitionSummary": "সারসংক্ষেপ",
   "recognitionEvidence": "আমরা এমন মনে করি কেন",
@@ -179,7 +188,6 @@
   "noFavorites": "এখনও কোনো পছন্দের শেয়ার নেই। যোগ করতে কোনো শেয়ারের তারায় ট্যাপ করুন।",
   "displayCurrency": "প্রদর্শনের মুদ্রা",
   "displayCurrencyNone": "শুধু শেয়ারের নিজস্ব মুদ্রা",
-  "labelConverted": "≈ {currency}-এ",
   "fxRateNote": "হার: 1 {from} = {rate} {to} (ECB, {date})",
   "updates": "আপডেট",
   "currentVersion": "সংস্করণ {version}",
@@ -202,11 +210,46 @@
   "planMax2": "Ultra",
   "planNone": "কোনো সক্রিয় প্ল্যান নেই",
   "planAnalysesPerMonth": "প্রতি মাসে {count} বিশ্লেষণ",
-  "planTrialDescription": "{count} বিশ্লেষণ সহ {days} দিনের বিনামূল্যে ট্রায়াল",
+  "@planAnalysesPerMonth": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "trialDaysLeft": "{days, plural, =1{ট্রায়ালের {days} দিন বাকি} other{ট্রায়ালের {days} দিন বাকি}}",
+  "@trialDaysLeft": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "trialExpired": "আপনার বিনামূল্যের ট্রায়াল শেষ হয়েছে। বিশ্লেষণ চালিয়ে যেতে একটি প্ল্যান বেছে নিন।",
   "analysesRemaining": "এই মেয়াদে {total}টির মধ্যে {remaining}টি বিশ্লেষণ বাকি",
+  "@analysesRemaining": {
+    "placeholders": {
+      "remaining": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "extraCredits": "{count, plural, =1{{count} অতিরিক্ত বিশ্লেষণ} other{{count} অতিরিক্ত বিশ্লেষণ}}",
+  "@extraCredits": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "renewsOn": "{date} তারিখে নবায়ন",
   "choosePlan": "একটি প্ল্যান বেছে নিন",
   "currentPlan": "বর্তমান প্ল্যান",
@@ -226,7 +269,6 @@
   "errTrialExpired": "আপনার বিনামূল্যের ট্রায়াল শেষ হয়েছে। চালিয়ে যেতে একটি প্ল্যান বেছে নিন।",
   "errNoPlan": "AI বিশ্লেষণের জন্য একটি সক্রিয় প্ল্যান প্রয়োজন।",
   "viewPlans": "প্ল্যান দেখুন",
-  "usageTitle": "ব্যবহার",
   "demoPurchaseNote": "ডেমো বিলিং: এই প্ল্যাটফর্মে কেনাকাটা সিমুলেট করা হয়।",
   "mostPopular": "সবচেয়ে জনপ্রিয়",
   "bestValue": "সেরা মূল্য",
@@ -243,6 +285,14 @@
   "aiDepthDeepDesc": "আরও বেশি ওয়েব অনুসন্ধান, সমকক্ষ কোম্পানির সঙ্গে তুলনা এবং আরও গভীর বিবরণ।",
   "aiDepthWords": "প্রায় {min}–{max} শব্দ",
   "aiDepthCost": "{count, plural, =1{{count}টি বিশ্লেষণ খরচ হয়} other{{count}টি বিশ্লেষণ খরচ হয়}}",
+  "@aiDepthCost": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiReaderLevel": "পাঠকের স্তর",
   "aiReaderBeginner": "নতুন",
   "aiReaderExperienced": "অভিজ্ঞ",
@@ -251,10 +301,66 @@
   "aiCounterArgument": "সবচেয়ে জোরালো পাল্টা যুক্তি",
   "aiCounterArgumentDesc": "সারসংক্ষেপ সবসময় নিজের সিদ্ধান্তের বিরুদ্ধে সবচেয়ে জোরালো যুক্তি দিয়ে শেষ হয়।",
   "aiWebSearchesInfo": "{count, plural, =1{আপনার প্ল্যানে প্রতি বিশ্লেষণে সর্বোচ্চ {count}টি ওয়েব অনুসন্ধান} other{আপনার প্ল্যানে প্রতি বিশ্লেষণে সর্বোচ্চ {count}টি ওয়েব অনুসন্ধান}}",
+  "@aiWebSearchesInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiWebSearchesPlans": "প্ল্যান অনুযায়ী স্ট্যান্ডার্ড দৈর্ঘ্য: সাধারণ {normal}, Pro {pro}, Max {max}, Ultra {ultra}। সংক্ষিপ্তে 2টি কম, বিস্তারিতে 2টি বেশি।",
+  "@aiWebSearchesPlans": {
+    "placeholders": {
+      "normal": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "pro": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "max": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "ultra": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiWebSearchesShort": "{count, plural, =1{সর্বোচ্চ {count}টি ওয়েব অনুসন্ধান} other{সর্বোচ্চ {count}টি ওয়েব অনুসন্ধান}}",
+  "@aiWebSearchesShort": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "planWebSearches": "{count, plural, =1{প্রতি বিশ্লেষণে {count}টি ওয়েব অনুসন্ধান} other{প্রতি বিশ্লেষণে {count}টি ওয়েব অনুসন্ধান}}",
+  "@planWebSearches": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "errNotEnoughCredits": "এই দৈর্ঘ্যের জন্য {needed}টি বিশ্লেষণ প্রয়োজন, কিন্তু মাত্র {left}টি বাকি আছে। সেটিংসে ছোট দৈর্ঘ্য বেছে নিন বা আরও বিশ্লেষণ নিন।",
+  "@errNotEnoughCredits": {
+    "placeholders": {
+      "needed": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "left": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "outlookMarketMood": "বাজারের মেজাজ",
   "moodVeryPessimistic": "অত্যন্ত হতাশাবাদী",
   "moodPessimistic": "হতাশাবাদী",
@@ -299,6 +405,14 @@
   "scenarioMostLikely": "সবচেয়ে সম্ভাব্য",
   "longTermToday": "আজ",
   "longTermYears": "{years, plural, one{{years} বছর} other{{years} বছর}}",
+  "@longTermYears": {
+    "placeholders": {
+      "years": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "longTermPerYear": "বছরে {range}",
   "longTermLikely": "সবচেয়ে সম্ভাব্য {price}",
   "confidenceLow": "কম আস্থা",
@@ -324,7 +438,6 @@
   "portfolioPositions": "অবস্থান",
   "portfolioAvgCost": "গড় ক্রয়মূল্য {price}",
   "portfolioYourPosition": "আপনার অবস্থান",
-  "portfolioPurchases": "ক্রয়সমূহ",
   "portfolioRemove": "সরান",
   "portfolioExcluded": "দাম বা বিনিময় হার ছাড়া অবস্থানগুলি মোট হিসাবে ধরা হয় না।",
   "priceAlerts": "দামের সতর্কতা",
@@ -382,12 +495,36 @@
   "previewConfidential": "গোপনীয় প্রিভিউ",
   "errPreviewDailyLimit": "এই প্রিভিউয়ের আজকের বিশ্লেষণের সীমা শেষ হয়ে গেছে। আগামীকাল আবার চেষ্টা করুন।",
   "ageHours": "{count, plural, =1{{count} ঘণ্টা আগে} other{{count} ঘণ্টা আগে}}",
+  "@ageHours": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "ageDays": "{count, plural, =1{{count} দিন আগে} other{{count} দিন আগে}}",
+  "@ageDays": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "staleTitle": "এই বিশ্লেষণ আপডেট করবেন?",
   "staleBody": "এটি {age} তৈরি হয়েছিল। এর পর থেকে দাম, খবর ও ফলাফল বদলে যেতে পারে।",
   "staleKeep": "আগেরটি দেখান",
   "staleRefresh": "নতুন তৈরি করুন",
   "seeAll": "সব দেখুন ({count})",
+  "@seeAll": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "searchAnalyses": "আপনার বিশ্লেষণ খুঁজুন",
   "deleteAnalysis": "মুছুন",
   "analysisDeleted": "{symbol} বিশ্লেষণ মুছে ফেলা হয়েছে",
@@ -399,15 +536,51 @@
   "shareCardDisclaimer": "AI বিশ্লেষণ · দৃষ্টান্তমূলক চিত্র, পূর্বাভাস নয় · বিনিয়োগ পরামর্শ নয়",
   "referralTitle": "বন্ধুদের আমন্ত্রণ জানান",
   "referralBody": "আপনার কোড শেয়ার করুন। আপনার বন্ধু সঙ্গে সঙ্গে {count, plural, =1{{count}টি অতিরিক্ত বিশ্লেষণ} other{{count}টি অতিরিক্ত বিশ্লেষণ}} পাবেন, আর তাঁর প্রথম বিশ্লেষণের পরে আপনিও একই পরিমাণ পাবেন।",
+  "@referralBody": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralYourCode": "আপনার কোড",
   "referralStats": "আমন্ত্রিত: {invited} · পুরস্কৃত: {rewarded}",
+  "@referralStats": {
+    "placeholders": {
+      "invited": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "rewarded": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralHaveCode": "বন্ধুর কাছ থেকে কোড পেয়েছেন?",
   "referralRedeem": "রিডিম করুন",
   "referralRedeemed": "{count, plural, =1{{count}টি অতিরিক্ত বিশ্লেষণ যোগ হয়েছে। স্বাগতম!} other{{count}টি অতিরিক্ত বিশ্লেষণ যোগ হয়েছে। স্বাগতম!}}",
+  "@referralRedeemed": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralErrUnknown": "এই কোডটি নেই। যাচাই করে আবার চেষ্টা করুন।",
   "referralErrOwn": "আপনি নিজের কোড রিডিম করতে পারবেন না।",
   "referralErrAlready": "আপনি ইতিমধ্যে একজন বন্ধুর কোড রিডিম করেছেন।",
   "referralShareText": "আমি WhatStock দিয়ে শেয়ার বিশ্লেষণ করি: একটি শেয়ারের ছবি তুলুন, আর AI সেটি ব্যাখ্যা করবে। আমার কোড {code} দিয়ে আপনি পাবেন {count, plural, =1{{count}টি অতিরিক্ত বিশ্লেষণ} other{{count}টি অতিরিক্ত বিশ্লেষণ}}।",
+  "@referralShareText": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralCopied": "কোড কপি হয়েছে",
   "onboardTitle1": "শেয়ারের ছবি তুলুন",
   "onboardBody1": "ব্রোকারেজ অ্যাপের স্ক্রিন, খবরের কাগজ বা কোম্পানির লোগোই যথেষ্ট: WhatStock শেয়ারটি চিনে নিয়ে এর দাম, চার্ট ও মূল তথ্য দেখায়।",
@@ -441,6 +614,14 @@
   "errAskLimit": "আপনি আজকের প্রশ্নের সীমায় পৌঁছে গেছেন। অনুগ্রহ করে আগামীকাল আবার চেষ্টা করুন।",
   "eventTomorrow": "আগামীকাল",
   "eventInDays": "{days, plural, =1{{days} দিন পরে} other{{days} দিন পরে}}",
+  "@eventInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "eventEarnings": "ত্রৈমাসিক ফলাফল",
   "eventBeforeOpen": "বাজার খোলার আগে",
   "eventAfterClose": "বাজার বন্ধের পরে",
@@ -471,7 +652,23 @@
   "portfolioImportHint": "প্রতি লাইনে একটি ক্রয় পেস্ট করুন: টিকার সিম্বল, পরিমাণ, দাম, মুদ্রা, তারিখ (YYYY-MM-DD)। কলামগুলো কমা, সেমিকোলন বা ট্যাব দিয়ে আলাদা করা যায়; হেডার লাইন ঐচ্ছিক।",
   "portfolioImportButton": "ইমপোর্ট করুন",
   "portfolioImported": "{count, plural, one{{count}টি লেনদেন যোগ হয়েছে} other{{count}টি লেনদেন যোগ হয়েছে}}",
+  "@portfolioImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioImportSkipped": "{count, plural, =1{{count}টি লাইন বাদ দেওয়া হয়েছে} other{{count}টি লাইন বাদ দেওয়া হয়েছে}}",
+  "@portfolioImportSkipped": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "syncInfo": "পোর্টফোলিও, পছন্দের তালিকা, দামের সতর্কতা ও নোট আপনার সব ডিভাইসে সিঙ্ক হয়।",
   "syncLast": "শেষ সিঙ্ক: {time}",
   "syncNow": "এখনই সিঙ্ক করুন",
@@ -553,17 +750,45 @@
   "earningsExpected": "প্রত্যাশিত EPS",
   "earningsReported": "ঘোষিত EPS",
   "earningsBeats": "{total, plural, =1{{total}টি ত্রৈমাসিকের {beats}টিতে প্রত্যাশিত EPS-এর সমান বা বেশি} other{শেষ {total}টি ত্রৈমাসিকের {beats}টিতে প্রত্যাশিত EPS-এর সমান বা বেশি}}",
+  "@earningsBeats": {
+    "placeholders": {
+      "beats": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "earningsReminderTomorrow": "{symbol} আগামীকাল ত্রৈমাসিক ফলাফল প্রকাশ করবে",
   "earningsReminderToday": "{symbol} আজ ত্রৈমাসিক ফলাফল প্রকাশ করবে",
   "earningsRemindersTitle": "ফলাফলের রিমাইন্ডার",
   "earningsRemindersSubtitle": "আপনার পছন্দের বা পোর্টফোলিওর শেয়ারের ত্রৈমাসিক ফলাফল প্রকাশের আগের দিন একটি বিজ্ঞপ্তি",
   "addAllToFavorites": "সব পছন্দের তালিকায় যোগ করুন ({count})",
+  "@addAllToFavorites": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioImportPhoto": "স্ক্রিনশট থেকে ইমপোর্ট করুন",
   "holdingsReading": "আপনার অবস্থান পড়া হচ্ছে…",
   "holdingsReviewTitle": "পাওয়া অবস্থান",
   "holdingsReviewHint": "যোগ করার আগে সংখ্যাগুলো যাচাই করুন। দামটি আজকের দাম নয়, প্রতি শেয়ারে আপনার গড় ক্রয়মূল্য।",
   "holdingsNoPrice": "ছবিতে গড় ক্রয়মূল্য নেই",
   "holdingsAdd": "{count, plural, =1{{count}টি অবস্থান যোগ করুন} other{{count}টি অবস্থান যোগ করুন}}",
+  "@holdingsAdd": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "holdingsNone": "এই ছবিতে কোনো শেয়ার অবস্থান পাওয়া যায়নি। আপনার ব্রোকারের পজিশন বা হোল্ডিংস পৃষ্ঠার একটি স্ক্রিনশট চেষ্টা করুন।",
   "week52Range": "52-সপ্তাহের পরিসর",
   "week52BelowHigh": "52-সপ্তাহের সর্বোচ্চ থেকে {percent} নিচে",
@@ -576,7 +801,23 @@
   "alertHitTrailing": "{symbol} শীর্ষ থেকে {percent} নেমেছে",
   "sectionInsiders": "ইনসাইডার লেনদেন",
   "insiderBuys": "{count, plural, =1{{count}টি ক্রয়} other{{count}টি ক্রয়}}",
+  "@insiderBuys": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "insiderSells": "{count, plural, =1{{count}টি বিক্রি} other{{count}টি বিক্রি}}",
+  "@insiderSells": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "insiderNet": "নিট: {shares} শেয়ার",
   "insiderBuy": "কেনা হয়েছে",
   "insiderSell": "বিক্রি হয়েছে",
@@ -620,6 +861,14 @@
   "watchAlertAll": "বড় দৈনিক পরিবর্তনে সতর্কতা",
   "watchAlertAllHint": "এই তালিকার প্রতিটি শেয়ারের জন্য দামের সতর্কতা: এক দিনে এতটা ওপরে বা নিচে নড়লে জানাবে। যেগুলোর আগে থেকেই আছে, সেগুলোর আগেরটাই থাকবে।",
   "watchAlertAllDone": "{count, plural, =1{{count}টি সতর্কতা সেট হয়েছে} other{{count}টি সতর্কতা সেট হয়েছে}}",
+  "@watchAlertAllDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioExportRealized": "বাস্তবায়িত লাভ এক্সপোর্ট করুন (CSV)",
   "eventsAddToCalendar": "ক্যালেন্ডারে যোগ করুন (.ics)",
   "portfolioAnnualReturn": "বার্ষিক রিটার্ন",
@@ -638,6 +887,14 @@
   "watchImport": "টিকার যোগ করুন",
   "watchImportHint": "কমা, স্পেস বা নতুন লাইন দিয়ে আলাদা করে টিকার পেস্ট করুন – যেমন কেউ আপনার সাথে শেয়ার করেছে এমন একটি তালিকা।",
   "watchImported": "{count, plural, =0{কোনো নতুন স্টক নেই} =1{{count}টি স্টক যোগ হয়েছে} other{{count}টি স্টক যোগ হয়েছে}}",
+  "@watchImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "positionsSortWeight": "সবচেয়ে বড় আগে",
   "positionsSortGain": "সর্বাধিক মোট লাভ আগে",
   "positionsSortToday": "আজকের সেরা আগে",
@@ -647,8 +904,40 @@
   "usMarketOpen": "মার্কিন বাজার খোলা · {time} পরে বন্ধ হবে",
   "usMarketClosed": "মার্কিন বাজার বন্ধ · {time} পরে খুলবে",
   "durationMinutes": "{minutes} মিনিট",
+  "@durationMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationHoursMinutes": "{hours} ঘণ্টা {minutes} মিনিট",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationDaysHours": "{days} দিন {hours} ঘণ্টা",
+  "@durationDaysHours": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "hours": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioGoalSet": "লক্ষ্য ঠিক করুন",
   "portfolioGoalTitle": "পোর্টফোলিও লক্ষ্য",
   "portfolioGoalProgress": "{percent} · লক্ষ্য: {amount}",
@@ -660,6 +949,14 @@
   "alertDeleted": "সতর্কতা মুছে ফেলা হয়েছে",
   "alertsClearTriggered": "ট্রিগার হওয়া সতর্কতা মুছুন",
   "alertsCleared": "{count, plural, =1{{count}টি সতর্কতা মুছে ফেলা হয়েছে} other{{count}টি সতর্কতা মুছে ফেলা হয়েছে}}",
+  "@alertsCleared": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "homeScreenTitle": "হোম স্ক্রিন",
   "allocationCountries": "দেশ",
   "newsExplainNoteResearch": "AI ব্যাখ্যা: এটি ওয়েবে তথ্য যাচাই করে, নিবন্ধটি খোলে এবং উৎসটি কতটা নির্ভরযোগ্য তা বিচার করে। এটি বিনিয়োগ পরামর্শ নয়। এটি আপনার দৈনিক প্রশ্নের সীমা থেকে যায়, কোনো বিশ্লেষণ খরচ হয় না।",
@@ -689,6 +986,14 @@
   "portfolioDividendDate": "পরিশোধের তারিখ",
   "portfolioDividendsEmpty": "এখনও কোনো ডিভিডেন্ড নথিভুক্ত হয়নি। হাতে যোগ করুন, বা আপনার ব্রোকারের এক্সপোর্ট ইম্পোর্ট করুন – এর ডিভিডেন্ডের সারিগুলোও নেওয়া হয়।",
   "portfolioDividendsImported": "{count, plural, =1{{count}টি ডিভিডেন্ড যোগ হয়েছে} other{{count}টি ডিভিডেন্ড যোগ হয়েছে}}",
+  "@portfolioDividendsImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioExportDividends": "ডিভিডেন্ড এক্সপোর্ট করুন (CSV)",
   "portfolioDividendDeleted": "ডিভিডেন্ড মুছে ফেলা হয়েছে",
   "portfolioDividendsHint": "পরিমাণগুলো আপনার অ্যাকাউন্টে যেভাবে এসেছে, পরিশোধের মুদ্রায়; মোট আজকের দরে রূপান্তরিত। কর রিটার্নের জন্য আপনার ব্রোকারের স্টেটমেন্ট ব্যবহার করুন।",
@@ -696,6 +1001,14 @@
   "awaySince": "{when} থেকে",
   "awayQuiet": "বিশেষ কিছু বদলায়নি।",
   "awayAlerts": "{count, plural, =1{{count}টি অ্যালার্ট ট্রিগার হয়েছে} other{{count}টি অ্যালার্ট ট্রিগার হয়েছে}}",
+  "@awayAlerts": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "awayReported": "ফলাফল প্রকাশ করেছে: {symbols}",
   "moveWhyButton": "আজ কেন ওঠানামা করছে?",
   "moveWhyTitle": "আজ {percent}",
@@ -718,6 +1031,18 @@
   "glossVolatility": "দাম দিনে দিনে কতটা ওঠানামা করে, বছরের হিসাবে: ২০% মানে সাধারণ বছরে দাম প্রায় ±২০%-এর মধ্যে চলে। বেশি অস্থিরতা মানে দুই দিকেই বড় ওঠানামা।",
   "techNote": "দৈনিক ক্লোজিং দাম থেকে হিসাব করা। টেকনিক্যাল সংকেত অতীতের বর্ণনা দেয়, ভবিষ্যতের নয়।",
   "portfolioAbove200": "{count}টি অবস্থানের মধ্যে {above}টি নিজেদের ২০০ দিনের গড়ের উপরে",
+  "@portfolioAbove200": {
+    "placeholders": {
+      "above": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "watchSignalsTitle": "সংকেত",
   "signalRsiOversold": "RSI {value} · ওভারসোল্ড",
   "signalRsiOverbought": "RSI {value} · ওভারবট",
@@ -751,6 +1076,14 @@
   "portfolioSplitRow": "স্টক স্প্লিট {ratio}",
   "portfolioSplitRemoved": "স্টক স্প্লিট মুছে ফেলা হয়েছে",
   "portfolioSplitsImported": "{count, plural, =1{{count}টি স্টক স্প্লিট যোগ করা হয়েছে} other{{count}টি স্টক স্প্লিট যোগ করা হয়েছে}}",
+  "@portfolioSplitsImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "labelDividendGrowth5y": "ডিভিডেন্ড বৃদ্ধি (5 বছর)",
   "dividendNone": "গত 12 মাসে কোনো ডিভিডেন্ড দেওয়া হয়নি।",
   "dividendOnYourShares": "আপনার শেয়ারে, বছরে",
@@ -793,6 +1126,14 @@
   "portfolioTopHoldings": "সবচেয়ে বড় অবস্থান",
   "portfolioShareNote": "শুধু শতাংশ শেয়ার করা হয়, কোনো পরিমাণ নয়।",
   "portfolioPositionsCount": "{count, plural, =1{{count}টি অবস্থান} other{{count}টি অবস্থান}}",
+  "@portfolioPositionsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "shareNotAdvice": "বিনিয়োগ পরামর্শ নয়",
   "contributionButton": "নতুন টাকা বিনিয়োগ করুন",
   "contributionAmount": "বিনিয়োগের পরিমাণ ({currency})",
@@ -808,6 +1149,14 @@
   "portfolioSampleRemove": "নমুনা সরান",
   "portfolioStopsAll": "সব অবস্থানে ট্রেইলিং স্টপ",
   "portfolioStopsDone": "{count, plural, =0{প্রতিটি অবস্থানে ইতিমধ্যে ট্রেইলিং স্টপ আছে} =1{{count}টি ট্রেইলিং স্টপ সেট হয়েছে} other{{count}টি ট্রেইলিং স্টপ সেট হয়েছে}}",
+  "@portfolioStopsDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioSinceSale": "বিক্রির পর থেকে {percent}",
   "lotPreviewRealized": "এই বিক্রিতে আদায়কৃত (FIFO):",
   "lotPreviewAverage": "নতুন গড় ক্রয়মূল্য: {after} (এখন {before})",
@@ -822,7 +1171,23 @@
   "lotNoteBought": "কেনা",
   "positionHeld": "ধরে রাখার সময়কাল",
   "durationMonths": "{months, plural, one{{months} মাস} other{{months} মাস}}",
+  "@durationMonths": {
+    "placeholders": {
+      "months": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationDays": "{days, plural, one{{days} দিন} other{{days} দিন}}",
+  "@durationDays": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "positionHeldSince": "{date} থেকে",
   "lotPreviewWeight": "পরে পোর্টফোলিওতে অংশ: {after} (এখন {before})",
   "lotFromCash": "নগদ থেকে পরিশোধ করুন (এখন {amount})",
@@ -837,6 +1202,14 @@
   "activitySearchHint": "টিকার দিয়ে ফিল্টার করুন",
   "activityNoMatch": "ফিল্টারের সঙ্গে কোনো লেনদেন মেলেনি।",
   "portfolioImportDuplicates": "{count, plural, one{{count}টি আগে থেকেই নথিভুক্ত, বাদ দেওয়া হয়েছে} other{{count}টি আগে থেকেই নথিভুক্ত, বাদ দেওয়া হয়েছে}}",
+  "@portfolioImportDuplicates": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "tickerChange": "টিকার পরিবর্তন",
   "tickerChangeTitle": "টিকার পরিবর্তন · {symbol}",
   "tickerChangeNew": "নতুন টিকার",
@@ -850,6 +1223,14 @@
   "errRateLimited": "অল্প সময়ে অত্যধিক অনুরোধ পাঠানো হয়েছে। অনুগ্রহ করে এক মিনিট অপেক্ষা করে আবার চেষ্টা করুন।",
   "watchListNameTaken": "এই নামে একটি তালিকা আগে থেকেই আছে।",
   "watchListLimit": "আপনি সর্বোচ্চ {max}টি তালিকা রাখতে পারেন।",
+  "@watchListLimit": {
+    "placeholders": {
+      "max": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioBuyBelowSold": "কমপক্ষে {quantity}টি – এতগুলো ইতিমধ্যে বিক্রি হয়েছে",
   "restoreNothing": "পুনরুদ্ধার করার মতো আগের কোনো কেনাকাটা পাওয়া যায়নি।",
   "manageSubscriptionElsewhere": "এখানে পরিচালনা করার মতো কোনো সাবস্ক্রিপশন নেই। App Store বা Google Play থেকে কেনা সাবস্ক্রিপশন স্টোরের সেটিংসে পরিচালনা করা হয়।",
@@ -858,6 +1239,14 @@
   "noteFull": "এই শেয়ারের নোট পূর্ণ হয়ে গেছে, তাই এই এন্ট্রিটি যোগ করা হয়নি। নোট ছোট করে আবার চেষ্টা করুন।",
   "portfolioNoRateFor": "{symbols}-এর বিনিময় হার নেই।",
   "dividendsNotConverted": "{count, plural, =1{{currencies}-এ {count}টি ডিভিডেন্ডের বিনিময় হার নেই, তাই এটি মোট হিসাবে ধরা হয়নি।} other{{currencies}-এ {count}টি ডিভিডেন্ডের বিনিময় হার নেই, তাই এগুলি মোট হিসাবে ধরা হয়নি।}}",
+  "@dividendsNotConverted": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "signOutTitle": "সাইন আউট করবেন?",
   "signOutBody": "আপনার পোর্টফোলিও, তালিকা, দামের সতর্কতা ও নোট আপনার অ্যাকাউন্টে থাকবে এবং এই ডিভাইস থেকে সরিয়ে ফেলা হবে। সেগুলো ফিরে পেতে আবার সাইন ইন করুন।",
   "signOutUnsaved": "কিছু পরিবর্তন আপনার অ্যাকাউন্টে সংরক্ষণ করা যায়নি (সংযোগ নেই?)। এখন সাইন আউট করলে সেগুলো হারিয়ে যাবে।",
@@ -901,5 +1290,7 @@
   "errAiUnavailable": "AI সেবা এই মুহূর্তে উপলব্ধ নয়। কয়েক মিনিট পরে আবার চেষ্টা করুন।",
   "errMarketUnavailable": "মার্কেট ডেটা এই মুহূর্তে উপলব্ধ নয়। কয়েক মিনিট পরে আবার চেষ্টা করুন।",
   "purchaseUnavailable": "কেনাকাটা এই মুহূর্তে উপলব্ধ নয়। পরে আবার চেষ্টা করুন।",
-  "signOutLocalOnly": "সংরক্ষিত বিশ্লেষণ ও AI নোট শুধু এই ডিভাইসেই থাকে, আপনার অ্যাকাউন্টে নয়, তাই সেগুলো চিরতরে মুছে যাবে।"
+  "signOutLocalOnly": "সংরক্ষিত বিশ্লেষণ ও AI নোট শুধু এই ডিভাইসেই থাকে, আপনার অ্যাকাউন্টে নয়, তাই সেগুলো চিরতরে মুছে যাবে।",
+  "watchImportedNone": "কোনো নতুন স্টক নেই",
+  "portfolioStopsNone": "প্রতিটি অবস্থানে ইতিমধ্যে ট্রেইলিং স্টপ আছে"
 }

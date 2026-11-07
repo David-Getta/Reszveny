@@ -13,9 +13,6 @@ class AppLocalizationsAz extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Səhmin şəklini çəkin və onun haqqında hər şeyi öyrənin.';
-
-  @override
   String get homeHint =>
       'Səhm sertifikatı, broker tətbiqinin ekranı, qəzet və ya şirkət loqosu – səhmi müəyyən etməyə imkan verən istənilən şey.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get takePhoto => 'Şəkil çək';
 
   @override
-  String get chooseFromGallery => 'Qalereyadan seç';
-
-  @override
   String get chooseImage => 'Şəkil seç';
-
-  @override
-  String get enterTickerManually => 'Tikeri əl ilə daxil et';
-
-  @override
-  String get tickerInputLabel => 'Tiker';
-
-  @override
-  String get tickerInputHint => 'məs., AAPL';
 
   @override
   String get lookUp => 'Axtar';
@@ -186,9 +171,6 @@ class AppLocalizationsAz extends AppLocalizations {
   String get labelHeadquarters => 'Baş ofis';
 
   @override
-  String get labelDescription => 'Təsvir';
-
-  @override
   String get labelLastPrice => 'Son qiymət';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get noNews => 'Son xəbər yoxdur.';
-
-  @override
-  String get openArticle => 'Məqaləni aç';
 
   @override
   String get openLinkFailed => 'Linki açmaq mümkün olmadı.';
@@ -600,11 +579,6 @@ class AppLocalizationsAz extends AppLocalizations {
   String get displayCurrencyNone => 'Yalnız səhmin öz valyutası';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency ilə';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Məzənnə: 1 $from = $rate $to (AMB, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Ayda $count təhlil';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count təhlil ilə $days günlük pulsuz sınaq';
   }
 
   @override
@@ -772,9 +741,6 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get viewPlans => 'Planlara bax';
-
-  @override
-  String get usageTitle => 'İstifadə';
 
   @override
   String get demoPurchaseNote => 'Demo ödəniş: bu platformada alışlar simulyasiya edilir.';
@@ -1137,9 +1103,6 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Sizin mövqeyiniz';
-
-  @override
-  String get portfolioPurchases => 'Alışlar';
 
   @override
   String get portfolioRemove => 'Sil';
@@ -2436,6 +2399,9 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Yeni səhm yoxdur';
+
+  @override
   String get positionsSortWeight => 'Ən böyüklər əvvəl';
 
   @override
@@ -2628,6 +2594,9 @@ class AppLocalizationsAz extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Bütün mövqelərdə artıq izləyən stop var';
 
   @override
   String portfolioSinceSale(String percent) {

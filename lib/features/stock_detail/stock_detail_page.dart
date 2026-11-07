@@ -745,7 +745,7 @@ class _ConsensusView extends StatelessWidget {
                 ),
                 SizedBox(
                   width: 32,
-                  child: Text('$count', textAlign: TextAlign.end, style: theme.textTheme.bodySmall),
+                  child: Text(fmt.integer(count), textAlign: TextAlign.end, style: theme.textTheme.bodySmall),
                 ),
               ],
             ),

@@ -13,9 +13,6 @@ class AppLocalizationsTe extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ఒక స్టాక్ ఫోటో తీయండి, దాని గురించి అన్నీ తెలుసుకోండి.';
-
-  @override
   String get homeHint =>
       'షేర్ సర్టిఫికేట్, బ్రోకరేజ్ యాప్ స్క్రీన్, వార్తాపత్రిక లేదా కంపెనీ లోగో – స్టాక్‌ను గుర్తించే ఏదైనా.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get takePhoto => 'ఫోటో తీయండి';
 
   @override
-  String get chooseFromGallery => 'గ్యాలరీ నుండి ఎంచుకోండి';
-
-  @override
   String get chooseImage => 'చిత్రాన్ని ఎంచుకోండి';
-
-  @override
-  String get enterTickerManually => 'టికర్‌ను మాన్యువల్‌గా నమోదు చేయండి';
-
-  @override
-  String get tickerInputLabel => 'టికర్ సింబల్';
-
-  @override
-  String get tickerInputHint => 'ఉదా. AAPL';
 
   @override
   String get lookUp => 'వెతకండి';
@@ -186,9 +171,6 @@ class AppLocalizationsTe extends AppLocalizations {
   String get labelHeadquarters => 'ప్రధాన కార్యాలయం';
 
   @override
-  String get labelDescription => 'వివరణ';
-
-  @override
   String get labelLastPrice => 'చివరి ధర';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get noNews => 'ఇటీవలి వార్తలు లేవు.';
-
-  @override
-  String get openArticle => 'కథనాన్ని తెరవండి';
 
   @override
   String get openLinkFailed => 'లింక్‌ను తెరవలేకపోయాం.';
@@ -601,11 +580,6 @@ class AppLocalizationsTe extends AppLocalizations {
   String get displayCurrencyNone => 'స్టాక్ సొంత కరెన్సీ మాత్రమే';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currencyలో';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'రేటు: 1 $from = $rate $to (ECB, $date)';
   }
@@ -677,11 +651,6 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'నెలకు $count విశ్లేషణలు';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count విశ్లేషణలతో $days రోజుల ఉచిత ట్రయల్';
   }
 
   @override
@@ -774,9 +743,6 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get viewPlans => 'ప్లాన్‌లను చూడండి';
-
-  @override
-  String get usageTitle => 'వినియోగం';
 
   @override
   String get demoPurchaseNote => 'డెమో బిల్లింగ్: ఈ ప్లాట్‌ఫారమ్‌లో కొనుగోళ్లు సిమ్యులేట్ చేయబడతాయి.';
@@ -1140,9 +1106,6 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'మీ పొజిషన్';
-
-  @override
-  String get portfolioPurchases => 'కొనుగోళ్లు';
 
   @override
   String get portfolioRemove => 'తీసివేయి';
@@ -2439,6 +2402,9 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'కొత్త స్టాక్‌లు లేవు';
+
+  @override
   String get positionsSortWeight => 'అతిపెద్దవి ముందు';
 
   @override
@@ -2632,6 +2598,9 @@ class AppLocalizationsTe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'ప్రతి పొజిషన్‌కు ఇప్పటికే ట్రెయిలింగ్ స్టాప్ ఉంది';
 
   @override
   String portfolioSinceSale(String percent) {

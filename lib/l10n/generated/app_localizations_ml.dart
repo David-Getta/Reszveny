@@ -13,9 +13,6 @@ class AppLocalizationsMl extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ഒരു ഓഹരിയുടെ ഫോട്ടോ എടുത്ത് അതിനെക്കുറിച്ച് എല്ലാം അറിയൂ.';
-
-  @override
   String get homeHint =>
       'ഓഹരി സർട്ടിഫിക്കറ്റ്, ബ്രോക്കറേജ് ആപ്പിന്റെ സ്ക്രീൻ, പത്രം അല്ലെങ്കിൽ കമ്പനിയുടെ ലോഗോ – ഓഹരി തിരിച്ചറിയാൻ സഹായിക്കുന്ന എന്തും.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get takePhoto => 'ഫോട്ടോ എടുക്കുക';
 
   @override
-  String get chooseFromGallery => 'ഗാലറിയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക';
-
-  @override
   String get chooseImage => 'ചിത്രം തിരഞ്ഞെടുക്കുക';
-
-  @override
-  String get enterTickerManually => 'ടിക്കർ നേരിട്ട് നൽകുക';
-
-  @override
-  String get tickerInputLabel => 'ടിക്കർ ചിഹ്നം';
-
-  @override
-  String get tickerInputHint => 'ഉദാ. AAPL';
 
   @override
   String get lookUp => 'തിരയുക';
@@ -186,9 +171,6 @@ class AppLocalizationsMl extends AppLocalizations {
   String get labelHeadquarters => 'ആസ്ഥാനം';
 
   @override
-  String get labelDescription => 'വിവരണം';
-
-  @override
   String get labelLastPrice => 'അവസാന വില';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get noNews => 'സമീപകാല വാർത്തകളൊന്നുമില്ല.';
-
-  @override
-  String get openArticle => 'ലേഖനം തുറക്കുക';
 
   @override
   String get openLinkFailed => 'ലിങ്ക് തുറക്കാനായില്ല.';
@@ -602,11 +581,6 @@ class AppLocalizationsMl extends AppLocalizations {
   String get displayCurrencyNone => 'ഓഹരിയുടെ സ്വന്തം കറൻസി മാത്രം';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency-ൽ';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'നിരക്ക്: 1 $from = $rate $to (ECB, $date)';
   }
@@ -678,11 +652,6 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'മാസം $count വിശകലനങ്ങൾ';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count വിശകലനങ്ങളോടെ $days ദിവസത്തെ സൗജന്യ ട്രയൽ';
   }
 
   @override
@@ -776,9 +745,6 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get viewPlans => 'പ്ലാനുകൾ കാണുക';
-
-  @override
-  String get usageTitle => 'ഉപയോഗം';
 
   @override
   String get demoPurchaseNote => 'ഡെമോ ബില്ലിംഗ്: ഈ പ്ലാറ്റ്ഫോമിൽ വാങ്ങലുകൾ സിമുലേറ്റ് ചെയ്യുന്നു.';
@@ -1144,9 +1110,6 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'നിങ്ങളുടെ പൊസിഷൻ';
-
-  @override
-  String get portfolioPurchases => 'വാങ്ങലുകൾ';
 
   @override
   String get portfolioRemove => 'നീക്കം ചെയ്യുക';
@@ -2461,6 +2424,9 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'പുതിയ ഓഹരികളൊന്നുമില്ല';
+
+  @override
   String get positionsSortWeight => 'ഏറ്റവും വലുത് ആദ്യം';
 
   @override
@@ -2654,6 +2620,9 @@ class AppLocalizationsMl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'എല്ലാ പൊസിഷനുകൾക്കും ഇതിനകം ട്രെയിലിംഗ് സ്റ്റോപ്പ് ഉണ്ട്';
 
   @override
   String portfolioSinceSale(String percent) {

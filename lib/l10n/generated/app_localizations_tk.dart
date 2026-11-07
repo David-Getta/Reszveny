@@ -13,9 +13,6 @@ class AppLocalizationsTk extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Paýnamany surata düşüriň we ol barada hemme zady öwreniň.';
-
-  @override
   String get homeHint =>
       'Paýnama şahadatnamasy, broker programmasynyň ekrany, gazet ýa-da kompaniýanyň logotipi – paýnamany kesgitlemäge kömek edýän islendik zat.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsTk extends AppLocalizations {
   String get takePhoto => 'Surata düşür';
 
   @override
-  String get chooseFromGallery => 'Galereýadan saýla';
-
-  @override
   String get chooseImage => 'Surat saýla';
-
-  @override
-  String get enterTickerManually => 'Tikeri el bilen giriz';
-
-  @override
-  String get tickerInputLabel => 'Tiker';
-
-  @override
-  String get tickerInputHint => 'meselem, AAPL';
 
   @override
   String get lookUp => 'Gözle';
@@ -186,9 +171,6 @@ class AppLocalizationsTk extends AppLocalizations {
   String get labelHeadquarters => 'Baş edara';
 
   @override
-  String get labelDescription => 'Beýan';
-
-  @override
   String get labelLastPrice => 'Soňky baha';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get noNews => 'Soňky habarlar ýok.';
-
-  @override
-  String get openArticle => 'Makalany aç';
 
   @override
   String get openLinkFailed => 'Baglanyşygy açyp bolmady.';
@@ -599,11 +578,6 @@ class AppLocalizationsTk extends AppLocalizations {
   String get displayCurrencyNone => 'Diňe paýnamanyň öz walýutasy';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency hasabynda';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Hümmet: 1 $from = $rate $to (ÝMB, $date)';
   }
@@ -675,11 +649,6 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Aýda $count seljerme';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count seljermeli $days günlük mugt synag';
   }
 
   @override
@@ -773,9 +742,6 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get viewPlans => 'Tariflere seret';
-
-  @override
-  String get usageTitle => 'Ulanyş';
 
   @override
   String get demoPurchaseNote => 'Demo töleg: bu platformada satyn alyşlar simulýasiýa edilýär.';
@@ -1137,9 +1103,6 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Siziň pozisiýaňyz';
-
-  @override
-  String get portfolioPurchases => 'Satyn alyşlar';
 
   @override
   String get portfolioRemove => 'Aýyr';
@@ -2434,6 +2397,9 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Täze paýnama ýok';
+
+  @override
   String get positionsSortWeight => 'Iň ulular ilki';
 
   @override
@@ -2626,6 +2592,9 @@ class AppLocalizationsTk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Ähli pozisiýalarda iň ýokarydan düşüş duýduryşy eýýäm bar';
 
   @override
   String portfolioSinceSale(String percent) {

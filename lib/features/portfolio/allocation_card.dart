@@ -469,19 +469,22 @@ class _TargetsDialog extends StatefulWidget {
 }
 
 class _TargetsDialogState extends State<_TargetsDialog> {
-  late final Map<String, TextEditingController> _fields = {
+  Map<String, TextEditingController>? _controllers;
+
+  /// A mezők az első felépítéskor (a nyelv tizedesjeléhez a context kell): „12,5”, mint a többi mezőben.
+  Map<String, TextEditingController> get _fields => _controllers ??= {
     for (final r in widget.rows)
       r.position.symbol: TextEditingController(
         text: switch (widget.initial[r.position.symbol.toUpperCase()]) {
           null => '',
-          final v => v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toString(),
+          final v => fieldNumber(plainNumber(v), Localizations.localeOf(context).toString()),
         },
       ),
   };
 
   @override
   void dispose() {
-    for (final c in _fields.values) {
+    for (final c in _controllers?.values ?? const <TextEditingController>[]) {
       c.dispose();
     }
     super.dispose();

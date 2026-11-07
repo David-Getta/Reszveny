@@ -13,9 +13,6 @@ class AppLocalizationsKn extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ಒಂದು ಷೇರಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ ಮತ್ತು ಅದರ ಬಗ್ಗೆ ಎಲ್ಲವನ್ನೂ ತಿಳಿಯಿರಿ.';
-
-  @override
   String get homeHint =>
       'ಷೇರು ಪ್ರಮಾಣಪತ್ರ, ಬ್ರೋಕರೇಜ್ ಆ್ಯಪ್‌ನ ಸ್ಕ್ರೀನ್, ಪತ್ರಿಕೆ ಅಥವಾ ಕಂಪನಿಯ ಲೋಗೋ – ಷೇರನ್ನು ಗುರುತಿಸುವ ಯಾವುದಾದರೂ.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get takePhoto => 'ಫೋಟೋ ತೆಗೆಯಿರಿ';
 
   @override
-  String get chooseFromGallery => 'ಗ್ಯಾಲರಿಯಿಂದ ಆಯ್ಕೆಮಾಡಿ';
-
-  @override
   String get chooseImage => 'ಚಿತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ';
-
-  @override
-  String get enterTickerManually => 'ಟಿಕರ್ ಅನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ನಮೂದಿಸಿ';
-
-  @override
-  String get tickerInputLabel => 'ಟಿಕರ್ ಚಿಹ್ನೆ';
-
-  @override
-  String get tickerInputHint => 'ಉದಾ. AAPL';
 
   @override
   String get lookUp => 'ಹುಡುಕಿ';
@@ -186,9 +171,6 @@ class AppLocalizationsKn extends AppLocalizations {
   String get labelHeadquarters => 'ಪ್ರಧಾನ ಕಚೇರಿ';
 
   @override
-  String get labelDescription => 'ವಿವರಣೆ';
-
-  @override
   String get labelLastPrice => 'ಕೊನೆಯ ಬೆಲೆ';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get noNews => 'ಇತ್ತೀಚಿನ ಸುದ್ದಿ ಇಲ್ಲ.';
-
-  @override
-  String get openArticle => 'ಲೇಖನ ತೆರೆಯಿರಿ';
 
   @override
   String get openLinkFailed => 'ಲಿಂಕ್ ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.';
@@ -606,11 +585,6 @@ class AppLocalizationsKn extends AppLocalizations {
   String get displayCurrencyNone => 'ಷೇರಿನ ಸ್ವಂತ ಕರೆನ್ಸಿ ಮಾತ್ರ';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency ನಲ್ಲಿ';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'ದರ: 1 $from = $rate $to (ECB, $date)';
   }
@@ -682,11 +656,6 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'ತಿಂಗಳಿಗೆ $count ವಿಶ್ಲೇಷಣೆಗಳು';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count ವಿಶ್ಲೇಷಣೆಗಳೊಂದಿಗೆ $days ದಿನಗಳ ಉಚಿತ ಪ್ರಾಯೋಗಿಕ ಅವಧಿ';
   }
 
   @override
@@ -780,9 +749,6 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get viewPlans => 'ಪ್ಲಾನ್‌ಗಳನ್ನು ನೋಡಿ';
-
-  @override
-  String get usageTitle => 'ಬಳಕೆ';
 
   @override
   String get demoPurchaseNote => 'ಡೆಮೋ ಬಿಲ್ಲಿಂಗ್: ಈ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ನಲ್ಲಿ ಖರೀದಿಗಳನ್ನು ಅನುಕರಿಸಲಾಗುತ್ತದೆ.';
@@ -1146,9 +1112,6 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'ನಿಮ್ಮ ಪೊಸಿಷನ್';
-
-  @override
-  String get portfolioPurchases => 'ಖರೀದಿಗಳು';
 
   @override
   String get portfolioRemove => 'ತೆಗೆದುಹಾಕಿ';
@@ -2452,6 +2415,9 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'ಹೊಸ ಷೇರುಗಳಿಲ್ಲ';
+
+  @override
   String get positionsSortWeight => 'ಅತಿ ದೊಡ್ಡದು ಮೊದಲು';
 
   @override
@@ -2650,6 +2616,9 @@ class AppLocalizationsKn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'ಎಲ್ಲ ಪೊಸಿಷನ್‌ಗಳಿಗೂ ಈಗಾಗಲೇ ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್ ಇದೆ';
 
   @override
   String portfolioSinceSale(String percent) {

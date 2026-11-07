@@ -13,9 +13,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Nufotografuokite akciją ir sužinokite apie ją viską.';
-
-  @override
   String get homeHint =>
       'Akcijos sertifikatas, brokerio programėlės ekranas, laikraštis ar įmonės logotipas – bet kas, kas identifikuoja akciją.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get takePhoto => 'Fotografuoti';
 
   @override
-  String get chooseFromGallery => 'Pasirinkti iš galerijos';
-
-  @override
   String get chooseImage => 'Pasirinkti vaizdą';
-
-  @override
-  String get enterTickerManually => 'Įvesti simbolį rankiniu būdu';
-
-  @override
-  String get tickerInputLabel => 'Akcijos simbolis';
-
-  @override
-  String get tickerInputHint => 'pvz. AAPL';
 
   @override
   String get lookUp => 'Ieškoti';
@@ -186,9 +171,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get labelHeadquarters => 'Būstinė';
 
   @override
-  String get labelDescription => 'Aprašymas';
-
-  @override
   String get labelLastPrice => 'Paskutinė kaina';
 
   @override
@@ -336,9 +318,6 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get noNews => 'Naujausių naujienų nėra.';
-
-  @override
-  String get openArticle => 'Atidaryti straipsnį';
 
   @override
   String get openLinkFailed => 'Nepavyko atidaryti nuorodos.';
@@ -607,11 +586,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get displayCurrencyNone => 'Tik pačios akcijos valiuta';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ valiuta $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kursas: 1 $from = $rate $to (ECB, $date)';
   }
@@ -689,19 +663,6 @@ class AppLocalizationsLt extends AppLocalizations {
       many: '$count analizės per mėnesį',
       few: '$count analizės per mėnesį',
       one: '$count analizė per mėnesį',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$days d. nemokamas bandomasis laikotarpis su $count analizių',
-      many: '$days d. nemokamas bandomasis laikotarpis su $count analizėmis',
-      few: '$days d. nemokamas bandomasis laikotarpis su $count analizėmis',
-      one: '$days d. nemokamas bandomasis laikotarpis su $count analize',
     );
     return '$_temp0';
   }
@@ -800,9 +761,6 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get viewPlans => 'Peržiūrėti planus';
-
-  @override
-  String get usageTitle => 'Naudojimas';
 
   @override
   String get demoPurchaseNote => 'Demonstracinis atsiskaitymas: šioje platformoje pirkiniai yra imituojami.';
@@ -1180,9 +1138,6 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Jūsų pozicija';
-
-  @override
-  String get portfolioPurchases => 'Pirkimai';
 
   @override
   String get portfolioRemove => 'Pašalinti';
@@ -2530,6 +2485,9 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Naujų akcijų nėra';
+
+  @override
   String get positionsSortWeight => 'Didžiausios pirmiau';
 
   @override
@@ -2731,6 +2689,9 @@ class AppLocalizationsLt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Visos pozicijos jau turi šį įspėjimą';
 
   @override
   String portfolioSinceSale(String percent) {

@@ -13,9 +13,6 @@ class AppLocalizationsUg extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'پاي چېكىنىڭ سۈرىتىنى تارتىپ، ئۇ ھەقتىكى ھەممە ئۇچۇرغا ئېرىشىڭ.';
-
-  @override
   String get homeHint =>
       'پاي چېكى گۇۋاھنامىسى، پاي چېكى ۋاكالەتچىسى ئەپىنىڭ ئېكرانى، گېزىت ياكى شىركەت بەلگىسى – پاي چېكىنى ئېنىقلىغىلى بولىدىغان ھەر قانداق نەرسە.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsUg extends AppLocalizations {
   String get takePhoto => 'سۈرەتكە تارتىش';
 
   @override
-  String get chooseFromGallery => 'سۈرەت ئامبىرىدىن تاللاش';
-
-  @override
   String get chooseImage => 'رەسىم تاللاش';
-
-  @override
-  String get enterTickerManually => 'كودنى قولدا كىرگۈزۈش';
-
-  @override
-  String get tickerInputLabel => 'پاي چېكى كودى';
-
-  @override
-  String get tickerInputHint => 'مەسىلەن AAPL';
 
   @override
   String get lookUp => 'ئىزدەش';
@@ -186,9 +171,6 @@ class AppLocalizationsUg extends AppLocalizations {
   String get labelHeadquarters => 'باش شىتاب';
 
   @override
-  String get labelDescription => 'چۈشەندۈرۈش';
-
-  @override
   String get labelLastPrice => 'ئەڭ يېڭى باھا';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get noNews => 'يېقىنقى خەۋەر يوق.';
-
-  @override
-  String get openArticle => 'ماقالىنى ئېچىش';
 
   @override
   String get openLinkFailed => 'ئۇلانمىنى ئاچقىلى بولمىدى.';
@@ -599,11 +578,6 @@ class AppLocalizationsUg extends AppLocalizations {
   String get displayCurrencyNone => 'پەقەت پاي چېكىنىڭ ئۆز پۇل بىرلىكى';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency ھېسابىدا';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'ئالماشتۇرۇش نىسبىتى: 1 $from = $rate $to (ECB، $date)';
   }
@@ -675,11 +649,6 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'ئايدا $count قېتىم تەھلىل';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count قېتىم تەھلىل بىلەن $days كۈنلۈك ھەقسىز سىناق';
   }
 
   @override
@@ -772,9 +741,6 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get viewPlans => 'پىلانلارنى كۆرۈش';
-
-  @override
-  String get usageTitle => 'ئىشلىتىش ئەھۋالى';
 
   @override
   String get demoPurchaseNote => 'كۆرسەتمە ھەق تۆلەش: بۇ سۇپىدا سېتىۋېلىش تەقلىدىي ئېلىپ بېرىلىدۇ.';
@@ -1136,9 +1102,6 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'سىزنىڭ پايلىرىڭىز';
-
-  @override
-  String get portfolioPurchases => 'سېتىۋېلىشلار';
 
   @override
   String get portfolioRemove => 'چىقىرىۋېتىش';
@@ -2444,6 +2407,9 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'يېڭى پاي چېكى يوق';
+
+  @override
   String get positionsSortWeight => 'ئەڭ چوڭلىرى ئالدىدا';
 
   @override
@@ -2637,6 +2603,9 @@ class AppLocalizationsUg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'بارلىق پايلاردا چوققىدىن چۈشۈش ئاگاھلاندۇرۇشى ئاللىبۇرۇن بار';
 
   @override
   String portfolioSinceSale(String percent) {

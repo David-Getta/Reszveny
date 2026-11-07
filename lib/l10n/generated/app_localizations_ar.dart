@@ -13,28 +13,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'صوّر سهماً وتعرّف على كل شيء عنه.';
-
-  @override
   String get homeHint => 'شهادة أسهم، أو شاشة تطبيق وساطة، أو صحيفة، أو شعار شركة – أي شيء يحدد السهم.';
 
   @override
   String get takePhoto => 'التقاط صورة';
 
   @override
-  String get chooseFromGallery => 'اختيار من المعرض';
-
-  @override
   String get chooseImage => 'اختيار صورة';
-
-  @override
-  String get enterTickerManually => 'إدخال رمز السهم يدوياً';
-
-  @override
-  String get tickerInputLabel => 'رمز السهم';
-
-  @override
-  String get tickerInputHint => 'مثال: AAPL';
 
   @override
   String get lookUp => 'بحث';
@@ -182,9 +167,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get labelHeadquarters => 'المقر الرئيسي';
-
-  @override
-  String get labelDescription => 'الوصف';
 
   @override
   String get labelLastPrice => 'آخر سعر';
@@ -336,9 +318,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get noNews => 'لا توجد أخبار حديثة.';
-
-  @override
-  String get openArticle => 'فتح المقال';
 
   @override
   String get openLinkFailed => 'تعذر فتح الرابط.';
@@ -606,11 +585,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get displayCurrencyNone => 'عملة السهم الأصلية فقط';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ بعملة $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'سعر الصرف: 1 $from = $rate $to (ECB، $date)';
   }
@@ -682,11 +656,6 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count تحليل في الشهر';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'تجربة مجانية لمدة $days يوم تتضمن $count تحليل';
   }
 
   @override
@@ -782,9 +751,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get viewPlans => 'عرض الخطط';
-
-  @override
-  String get usageTitle => 'الاستخدام';
 
   @override
   String get demoPurchaseNote => 'فوترة تجريبية: عمليات الشراء على هذه المنصة محاكاة فقط.';
@@ -1169,9 +1135,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'مركزك';
-
-  @override
-  String get portfolioPurchases => 'عمليات الشراء';
 
   @override
   String get portfolioRemove => 'إزالة';
@@ -2519,6 +2482,9 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'لا توجد أسهم جديدة';
+
+  @override
   String get positionsSortWeight => 'الأكبر أولًا';
 
   @override
@@ -2721,6 +2687,9 @@ class AppLocalizationsAr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'لدى كل المراكز وقف متحرك بالفعل';
 
   @override
   String portfolioSinceSale(String percent) {

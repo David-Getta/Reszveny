@@ -13,9 +13,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fotografoni një aksion dhe mësoni gjithçka për të.';
-
-  @override
   String get homeHint =>
       'Një certifikatë aksionesh, ekrani i një aplikacioni brokerimi, një gazetë ose logoja e një kompanie – çdo gjë që identifikon një aksion.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get takePhoto => 'Bëj një foto';
 
   @override
-  String get chooseFromGallery => 'Zgjidh nga galeria';
-
-  @override
   String get chooseImage => 'Zgjidh një imazh';
-
-  @override
-  String get enterTickerManually => 'Shkruaj simbolin manualisht';
-
-  @override
-  String get tickerInputLabel => 'Simboli i aksionit (ticker)';
-
-  @override
-  String get tickerInputHint => 'p.sh. AAPL';
 
   @override
   String get lookUp => 'Kërko';
@@ -186,9 +171,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get labelHeadquarters => 'Selia';
 
   @override
-  String get labelDescription => 'Përshkrimi';
-
-  @override
   String get labelLastPrice => 'Çmimi i fundit';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get noNews => 'Nuk ka lajme të fundit.';
-
-  @override
-  String get openArticle => 'Hap artikullin';
 
   @override
   String get openLinkFailed => 'Lidhja nuk mund të hapej.';
@@ -602,11 +581,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get displayCurrencyNone => 'Vetëm monedha e vetë aksionit';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ në $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kursi: 1 $from = $rate $to (BQE, $date)';
   }
@@ -678,11 +652,6 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count analiza në muaj';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Provë falas $days-ditore me $count analiza';
   }
 
   @override
@@ -774,9 +743,6 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get viewPlans => 'Shiko planet';
-
-  @override
-  String get usageTitle => 'Përdorimi';
 
   @override
   String get demoPurchaseNote => 'Faturim demo: blerjet simulohen në këtë platformë.';
@@ -1140,9 +1106,6 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Pozicioni juaj';
-
-  @override
-  String get portfolioPurchases => 'Blerjet';
 
   @override
   String get portfolioRemove => 'Hiq';
@@ -2443,6 +2406,9 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Asnjë aksion i ri';
+
+  @override
   String get positionsSortWeight => 'Më të mëdhatë së pari';
 
   @override
@@ -2635,6 +2601,9 @@ class AppLocalizationsSq extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Të gjitha pozicionet kanë tashmë sinjalizim për rënie nga maja';
 
   @override
   String portfolioSinceSale(String percent) {

@@ -13,28 +13,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => '拍下一只股票，了解它的一切。';
-
-  @override
   String get homeHint => '股票凭证、券商应用界面、报纸或公司标志——任何能识别出股票的内容。';
 
   @override
   String get takePhoto => '拍照';
 
   @override
-  String get chooseFromGallery => '从相册选择';
-
-  @override
   String get chooseImage => '选择图片';
-
-  @override
-  String get enterTickerManually => '手动输入股票代码';
-
-  @override
-  String get tickerInputLabel => '股票代码';
-
-  @override
-  String get tickerInputHint => '例如 AAPL';
 
   @override
   String get lookUp => '查询';
@@ -183,9 +168,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get labelHeadquarters => '总部';
 
   @override
-  String get labelDescription => '简介';
-
-  @override
   String get labelLastPrice => '最新价';
 
   @override
@@ -326,9 +308,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get noNews => '暂无最新新闻。';
-
-  @override
-  String get openArticle => '打开文章';
 
   @override
   String get openLinkFailed => '无法打开链接。';
@@ -594,11 +573,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get displayCurrencyNone => '仅显示股票自身货币';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ 折合 $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return '汇率：1 $from = $rate $to（欧洲央行，$date）';
   }
@@ -670,11 +644,6 @@ class AppLocalizationsZh extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '每月 $count 次分析';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days 天免费试用，含 $count 次分析';
   }
 
   @override
@@ -755,9 +724,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get viewPlans => '查看计划';
-
-  @override
-  String get usageTitle => '使用情况';
 
   @override
   String get demoPurchaseNote => '演示计费：此平台上的购买为模拟操作。';
@@ -1093,9 +1059,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => '你的持仓';
-
-  @override
-  String get portfolioPurchases => '买入记录';
 
   @override
   String get portfolioRemove => '移除';
@@ -2295,6 +2258,9 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => '没有新股票';
+
+  @override
   String get positionsSortWeight => '市值最大优先';
 
   @override
@@ -2483,6 +2449,9 @@ class AppLocalizationsZh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => '所有持仓都已设置跟踪止损';
 
   @override
   String portfolioSinceSale(String percent) {
@@ -3138,28 +3107,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => '拍一張股票相片，全面了解該股。';
-
-  @override
   String get homeHint => '股票證書、證券商 App 畫面、報紙或公司商標——任何能識別股票的內容。';
 
   @override
   String get takePhoto => '拍照';
 
   @override
-  String get chooseFromGallery => '從相簿選擇';
-
-  @override
   String get chooseImage => '選擇圖片';
-
-  @override
-  String get enterTickerManually => '手動輸入股票代號';
-
-  @override
-  String get tickerInputLabel => '股票代號';
-
-  @override
-  String get tickerInputHint => '例如 AAPL';
 
   @override
   String get lookUp => '查詢';
@@ -3308,9 +3262,6 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get labelHeadquarters => '總部';
 
   @override
-  String get labelDescription => '簡介';
-
-  @override
   String get labelLastPrice => '最新價';
 
   @override
@@ -3451,9 +3402,6 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get noNews => '暫無最新新聞。';
-
-  @override
-  String get openArticle => '開啟文章';
 
   @override
   String get openLinkFailed => '無法開啟連結。';
@@ -3719,11 +3667,6 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get displayCurrencyNone => '只顯示股票本身貨幣';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ 折合 $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return '匯率：1 $from = $rate $to（歐洲央行，$date）';
   }
@@ -3795,11 +3738,6 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String planAnalysesPerMonth(int count) {
     return '每月 $count 次分析';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days 日免費試用，包含 $count 次分析';
   }
 
   @override
@@ -3880,9 +3818,6 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get viewPlans => '查看計劃';
-
-  @override
-  String get usageTitle => '用量';
 
   @override
   String get demoPurchaseNote => '示範計費：此平台上的購買只屬模擬。';
@@ -4218,9 +4153,6 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioYourPosition => '你的持倉';
-
-  @override
-  String get portfolioPurchases => '買入記錄';
 
   @override
   String get portfolioRemove => '移除';
@@ -5420,6 +5352,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   }
 
   @override
+  String get watchImportedNone => '沒有新股票';
+
+  @override
   String get positionsSortWeight => '市值最大優先';
 
   @override
@@ -5608,6 +5543,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => '所有持倉均已設定追蹤止蝕';
 
   @override
   String portfolioSinceSale(String percent) {

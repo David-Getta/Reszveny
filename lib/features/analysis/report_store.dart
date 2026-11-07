@@ -88,7 +88,14 @@ class ReportStore extends ChangeNotifier {
 
   void addViewer(String symbol, bool Function() visible) => _viewers.putIfAbsent(symbol, () => {}).add(visible);
 
-  void removeViewer(String symbol, bool Function() visible) => _viewers[symbol]?.remove(visible);
+  void removeViewer(String symbol, bool Function() visible) {
+    final set = _viewers[symbol]?..remove(visible);
+    // Üres halmaz nem marad: a valaha megnyitott részvények száma ne növelje a memóriát.
+    if (set != null && set.isEmpty) _viewers.remove(symbol);
+  }
+
+  @visibleForTesting
+  Iterable<String> get debugViewerSymbols => _viewers.keys;
 
   /// Látszik-e most a részvény elemzése (akkor nem kell külön szólni).
   bool isOnScreen(String symbol) => _viewers[symbol]?.any((v) => v()) ?? false;

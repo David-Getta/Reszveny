@@ -13,9 +13,6 @@ class AppLocalizationsDa extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fotografér en aktie og lær alt om den.';
-
-  @override
   String get homeHint =>
       'Et aktiebrev, en skærm i en handelsapp, en avis eller et firmalogo – alt, der identificerer en aktie.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get takePhoto => 'Tag et foto';
 
   @override
-  String get chooseFromGallery => 'Vælg fra galleri';
-
-  @override
   String get chooseImage => 'Vælg et billede';
-
-  @override
-  String get enterTickerManually => 'Indtast ticker manuelt';
-
-  @override
-  String get tickerInputLabel => 'Tickersymbol';
-
-  @override
-  String get tickerInputHint => 'f.eks. AAPL';
 
   @override
   String get lookUp => 'Slå op';
@@ -186,9 +171,6 @@ class AppLocalizationsDa extends AppLocalizations {
   String get labelHeadquarters => 'Hovedkontor';
 
   @override
-  String get labelDescription => 'Beskrivelse';
-
-  @override
   String get labelLastPrice => 'Seneste kurs';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get noNews => 'Ingen aktuelle nyheder.';
-
-  @override
-  String get openArticle => 'Åbn artikel';
 
   @override
   String get openLinkFailed => 'Linket kunne ikke åbnes.';
@@ -600,11 +579,6 @@ class AppLocalizationsDa extends AppLocalizations {
   String get displayCurrencyNone => 'Kun aktiens egen valuta';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ i $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kurs: 1 $from = $rate $to (ECB, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count analyser pr. måned';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days dages gratis prøveperiode med $count analyser';
   }
 
   @override
@@ -773,9 +742,6 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get viewPlans => 'Se planer';
-
-  @override
-  String get usageTitle => 'Forbrug';
 
   @override
   String get demoPurchaseNote => 'Demofakturering: køb simuleres på denne platform.';
@@ -1138,9 +1104,6 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Din beholdning';
-
-  @override
-  String get portfolioPurchases => 'Køb';
 
   @override
   String get portfolioRemove => 'Fjern';
@@ -2446,6 +2409,9 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Ingen nye aktier';
+
+  @override
   String get positionsSortWeight => 'Største først';
 
   @override
@@ -2639,6 +2605,9 @@ class AppLocalizationsDa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Alle beholdninger har allerede et trailing stop';
 
   @override
   String portfolioSinceSale(String percent) {

@@ -13,9 +13,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fotografeer een aandeel en ontdek er alles over.';
-
-  @override
   String get homeHint =>
       'Een aandeelbewijs, een scherm van een brokerapp, een krant of een bedrijfslogo – alles wat een aandeel identificeert.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get takePhoto => 'Foto maken';
 
   @override
-  String get chooseFromGallery => 'Kiezen uit galerij';
-
-  @override
   String get chooseImage => 'Afbeelding kiezen';
-
-  @override
-  String get enterTickerManually => 'Ticker handmatig invoeren';
-
-  @override
-  String get tickerInputLabel => 'Tickersymbool';
-
-  @override
-  String get tickerInputHint => 'bijv. AAPL';
 
   @override
   String get lookUp => 'Opzoeken';
@@ -186,9 +171,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get labelHeadquarters => 'Hoofdkantoor';
 
   @override
-  String get labelDescription => 'Omschrijving';
-
-  @override
   String get labelLastPrice => 'Laatste koers';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get noNews => 'Geen recent nieuws.';
-
-  @override
-  String get openArticle => 'Artikel openen';
 
   @override
   String get openLinkFailed => 'De link kon niet worden geopend.';
@@ -600,11 +579,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get displayCurrencyNone => 'Alleen de eigen valuta van het aandeel';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ in $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Koers: 1 $from = $rate $to (ECB, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count analyses per maand';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days dagen gratis proberen met $count analyses';
   }
 
   @override
@@ -773,9 +742,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get viewPlans => 'Abonnementen bekijken';
-
-  @override
-  String get usageTitle => 'Gebruik';
 
   @override
   String get demoPurchaseNote => 'Demofacturering: aankopen worden op dit platform gesimuleerd.';
@@ -1139,9 +1105,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Jouw positie';
-
-  @override
-  String get portfolioPurchases => 'Aankopen';
 
   @override
   String get portfolioRemove => 'Verwijderen';
@@ -2450,6 +2413,9 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Geen nieuwe aandelen';
+
+  @override
   String get positionsSortWeight => 'Grootste eerst';
 
   @override
@@ -2643,6 +2609,9 @@ class AppLocalizationsNl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Alle posities hebben al een trailing stop';
 
   @override
   String portfolioSinceSale(String percent) {

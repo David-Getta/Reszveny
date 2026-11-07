@@ -13,9 +13,6 @@ class AppLocalizationsHt extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Pran foto yon aksyon epi dekouvri tout sa ou bezwen konnen sou li.';
-
-  @override
   String get homeHint =>
       'Yon sètifika aksyon, ekran yon aplikasyon koutye, yon jounal oswa logo yon konpayi – nenpòt bagay ki idantifye yon aksyon.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsHt extends AppLocalizations {
   String get takePhoto => 'Pran yon foto';
 
   @override
-  String get chooseFromGallery => 'Chwazi nan galri a';
-
-  @override
   String get chooseImage => 'Chwazi yon imaj';
-
-  @override
-  String get enterTickerManually => 'Tape senbòl la alamen';
-
-  @override
-  String get tickerInputLabel => 'Senbòl (ticker)';
-
-  @override
-  String get tickerInputHint => 'egz. AAPL';
 
   @override
   String get lookUp => 'Chèche';
@@ -186,9 +171,6 @@ class AppLocalizationsHt extends AppLocalizations {
   String get labelHeadquarters => 'Biwo santral';
 
   @override
-  String get labelDescription => 'Deskripsyon';
-
-  @override
   String get labelLastPrice => 'Dènye pri';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get noNews => 'Pa gen nouvèl resan.';
-
-  @override
-  String get openArticle => 'Louvri atik la';
 
   @override
   String get openLinkFailed => 'Nou pa t ka louvri lyen an.';
@@ -599,11 +578,6 @@ class AppLocalizationsHt extends AppLocalizations {
   String get displayCurrencyNone => 'Sèlman deviz aksyon an';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ an $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'To: 1 $from = $rate $to (BCE, $date)';
   }
@@ -675,11 +649,6 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count analiz pa mwa';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Esè gratis $days jou ak $count analiz';
   }
 
   @override
@@ -771,9 +740,6 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get viewPlans => 'Wè plan yo';
-
-  @override
-  String get usageTitle => 'Itilizasyon';
 
   @override
   String get demoPurchaseNote => 'Faktirasyon demo: acha yo se similasyon sèlman sou platfòm sa a.';
@@ -1135,9 +1101,6 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Pozisyon ou';
-
-  @override
-  String get portfolioPurchases => 'Acha';
 
   @override
   String get portfolioRemove => 'Retire';
@@ -2434,6 +2397,9 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Pa gen nouvo aksyon';
+
+  @override
   String get positionsSortWeight => 'Pi gwo an premye';
 
   @override
@@ -2626,6 +2592,9 @@ class AppLocalizationsHt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Tout pozisyon yo gen alèt sa a deja';
 
   @override
   String portfolioSinceSale(String percent) {

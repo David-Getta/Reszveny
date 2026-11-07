@@ -13,28 +13,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => '주식을 촬영하고 그 종목의 모든 것을 알아보세요.';
-
-  @override
   String get homeHint => '주권, 증권 앱 화면, 신문, 회사 로고 등 종목을 식별할 수 있는 것이면 무엇이든 가능합니다.';
 
   @override
   String get takePhoto => '사진 촬영';
 
   @override
-  String get chooseFromGallery => '갤러리에서 선택';
-
-  @override
   String get chooseImage => '이미지 선택';
-
-  @override
-  String get enterTickerManually => '티커 직접 입력';
-
-  @override
-  String get tickerInputLabel => '티커 심볼';
-
-  @override
-  String get tickerInputHint => '예: AAPL';
 
   @override
   String get lookUp => '조회';
@@ -183,9 +168,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get labelHeadquarters => '본사';
 
   @override
-  String get labelDescription => '설명';
-
-  @override
   String get labelLastPrice => '현재가';
 
   @override
@@ -326,9 +308,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get noNews => '최근 뉴스가 없습니다.';
-
-  @override
-  String get openArticle => '기사 열기';
 
   @override
   String get openLinkFailed => '링크를 열 수 없습니다.';
@@ -595,11 +574,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get displayCurrencyNone => '종목 통화만 표시';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency 환산';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return '환율: 1 $from = $rate $to (ECB, $date)';
   }
@@ -671,11 +645,6 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '월 $count회 분석';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days일 무료 체험, 분석 $count회 포함';
   }
 
   @override
@@ -756,9 +725,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get viewPlans => '요금제 보기';
-
-  @override
-  String get usageTitle => '사용량';
 
   @override
   String get demoPurchaseNote => '데모 결제: 이 플랫폼에서는 구매가 시뮬레이션됩니다.';
@@ -1095,9 +1061,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => '내 보유 현황';
-
-  @override
-  String get portfolioPurchases => '매수 내역';
 
   @override
   String get portfolioRemove => '삭제';
@@ -2320,6 +2283,9 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => '새 종목이 없습니다';
+
+  @override
   String get positionsSortWeight => '평가액 큰 순';
 
   @override
@@ -2510,6 +2476,9 @@ class AppLocalizationsKo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => '모든 보유 종목에 이미 트레일링 스탑이 있습니다';
 
   @override
   String portfolioSinceSale(String percent) {

@@ -13,9 +13,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'გადაუღეთ ფოტო აქციას და გაიგეთ მასზე ყველაფერი.';
-
-  @override
   String get homeHint =>
       'აქციის სერტიფიკატი, საბროკერო აპის ეკრანი, გაზეთი ან კომპანიის ლოგო – ყველაფერი, რითაც აქციის ამოცნობა შეიძლება.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get takePhoto => 'ფოტოს გადაღება';
 
   @override
-  String get chooseFromGallery => 'გალერეიდან არჩევა';
-
-  @override
   String get chooseImage => 'სურათის არჩევა';
-
-  @override
-  String get enterTickerManually => 'ტიკერის ხელით შეყვანა';
-
-  @override
-  String get tickerInputLabel => 'ტიკერი';
-
-  @override
-  String get tickerInputHint => 'მაგ. AAPL';
 
   @override
   String get lookUp => 'ძიება';
@@ -186,9 +171,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get labelHeadquarters => 'სათაო ოფისი';
 
   @override
-  String get labelDescription => 'აღწერა';
-
-  @override
   String get labelLastPrice => 'ბოლო ფასი';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get noNews => 'ბოლო სიახლეები არ არის.';
-
-  @override
-  String get openArticle => 'სტატიის გახსნა';
 
   @override
   String get openLinkFailed => 'ბმულის გახსნა ვერ მოხერხდა.';
@@ -605,11 +584,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get displayCurrencyNone => 'მხოლოდ აქციის საკუთარი ვალუტა';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency-ში';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'კურსი: 1 $from = $rate $to (ECB, $date)';
   }
@@ -681,11 +655,6 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count ანალიზი თვეში';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days-დღიანი უფასო საცდელი პერიოდი $count ანალიზით';
   }
 
   @override
@@ -779,9 +748,6 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get viewPlans => 'გეგმების ნახვა';
-
-  @override
-  String get usageTitle => 'გამოყენება';
 
   @override
   String get demoPurchaseNote => 'დემო გადახდა: ამ პლატფორმაზე შენაძენები სიმულირებულია.';
@@ -1144,9 +1110,6 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'თქვენი პოზიცია';
-
-  @override
-  String get portfolioPurchases => 'შენაძენები';
 
   @override
   String get portfolioRemove => 'ამოშლა';
@@ -2445,6 +2408,9 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'ახალი აქციები არ არის';
+
+  @override
   String get positionsSortWeight => 'ჯერ ყველაზე დიდი';
 
   @override
@@ -2637,6 +2603,9 @@ class AppLocalizationsKa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'ყველა პოზიციას უკვე აქვს ტრეილინგ სტოპი';
 
   @override
   String portfolioSinceSale(String percent) {

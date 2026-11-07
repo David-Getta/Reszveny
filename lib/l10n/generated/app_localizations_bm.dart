@@ -13,9 +13,6 @@ class AppLocalizationsBm extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Aksiyɔn dɔ ja ta, ka a ko bɛɛ dɔn.';
-
-  @override
   String get homeHint =>
       'Aksiyɔn sɛbɛn, bɔrisi aplikasiyɔn ka ekaran, gazeti walima sosiyete taamasiyɛn – fɛn o fɛn bɛ se ka aksiyɔn dɔ jira.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsBm extends AppLocalizations {
   String get takePhoto => 'Ja ta';
 
   @override
-  String get chooseFromGallery => 'Sugandi galeri kɔnɔ';
-
-  @override
   String get chooseImage => 'Ja dɔ sugandi';
-
-  @override
-  String get enterTickerManually => 'Taamasiyɛn sɛbɛn i yɛrɛ ye';
-
-  @override
-  String get tickerInputLabel => 'Aksiyɔn taamasiyɛn';
-
-  @override
-  String get tickerInputHint => 'misali: AAPL';
 
   @override
   String get lookUp => 'Ɲini';
@@ -186,9 +171,6 @@ class AppLocalizationsBm extends AppLocalizations {
   String get labelHeadquarters => 'Sigiyɔrɔba';
 
   @override
-  String get labelDescription => 'Ɲɛfɔli';
-
-  @override
   String get labelLastPrice => 'Sɔngɔ laban';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get noNews => 'Kibaru kura si tɛ yen.';
-
-  @override
-  String get openArticle => 'Sɛbɛn dayɛlɛ';
 
   @override
   String get openLinkFailed => 'Lɛnki ma se ka dayɛlɛ.';
@@ -604,11 +583,6 @@ class AppLocalizationsBm extends AppLocalizations {
   String get displayCurrencyNone => 'Aksiyɔn yɛrɛ ka wari dɔrɔn';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency la';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Wari falen hakɛ: 1 $from = $rate $to (BCE, $date)';
   }
@@ -680,11 +654,6 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Sɛgɛsɛgɛli $count kalo o kalo';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Kɔrɔbɔli fu tile $days kɔnɔ, ni sɛgɛsɛgɛli $count ye';
   }
 
   @override
@@ -777,9 +746,6 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get viewPlans => 'Pilanw lajɛ';
-
-  @override
-  String get usageTitle => 'Labaarali';
 
   @override
   String get demoPurchaseNote => 'Demo sarali: sanniw ye ɲɛjirali dɔrɔn ye nin sisitɛmu in kan.';
@@ -1141,9 +1107,6 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Min bɛ i bolo';
-
-  @override
-  String get portfolioPurchases => 'Sanniw';
 
   @override
   String get portfolioRemove => 'Bɔ a la';
@@ -2443,6 +2406,9 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Aksiyɔn kura si tɛ';
+
+  @override
   String get positionsSortWeight => 'Minnu ka bon kosɛbɛ fɔlɔ';
 
   @override
@@ -2636,6 +2602,9 @@ class AppLocalizationsBm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Kunnafoni in bɛ aksiyɔn bɛɛ kan kaban';
 
   @override
   String portfolioSinceSale(String percent) {

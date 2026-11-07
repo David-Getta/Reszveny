@@ -13,9 +13,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Kuhanan ng larawan ang isang stock at alamin ang lahat tungkol dito.';
-
-  @override
   String get homeHint =>
       'Share certificate, screen ng brokerage app, diyaryo o logo ng kumpanya – kahit anong tumutukoy sa isang stock.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get takePhoto => 'Kumuha ng larawan';
 
   @override
-  String get chooseFromGallery => 'Pumili mula sa gallery';
-
-  @override
   String get chooseImage => 'Pumili ng larawan';
-
-  @override
-  String get enterTickerManually => 'Ilagay ang ticker nang manu-mano';
-
-  @override
-  String get tickerInputLabel => 'Ticker symbol';
-
-  @override
-  String get tickerInputHint => 'hal. AAPL';
 
   @override
   String get lookUp => 'Hanapin';
@@ -186,9 +171,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get labelHeadquarters => 'Punong-tanggapan';
 
   @override
-  String get labelDescription => 'Paglalarawan';
-
-  @override
   String get labelLastPrice => 'Huling presyo';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get noNews => 'Walang bagong balita.';
-
-  @override
-  String get openArticle => 'Buksan ang artikulo';
 
   @override
   String get openLinkFailed => 'Hindi mabuksan ang link.';
@@ -603,11 +582,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get displayCurrencyNone => 'Sariling currency lang ng stock';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ sa $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Rate: 1 $from = $rate $to (ECB, $date)';
   }
@@ -679,11 +653,6 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count pagsusuri bawat buwan';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days-araw na libreng trial na may $count pagsusuri';
   }
 
   @override
@@ -777,9 +746,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get viewPlans => 'Tingnan ang mga plan';
-
-  @override
-  String get usageTitle => 'Paggamit';
 
   @override
   String get demoPurchaseNote => 'Demo billing: simulated lamang ang mga pagbili sa platform na ito.';
@@ -1147,9 +1113,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Ang posisyon mo';
-
-  @override
-  String get portfolioPurchases => 'Mga pagbili';
 
   @override
   String get portfolioRemove => 'Alisin';
@@ -2467,6 +2430,9 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Walang bagong stock';
+
+  @override
   String get positionsSortWeight => 'Pinakamalaki muna';
 
   @override
@@ -2660,6 +2626,9 @@ class AppLocalizationsFil extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'May trailing stop na ang bawat posisyon';
 
   @override
   String portfolioSinceSale(String percent) {

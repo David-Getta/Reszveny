@@ -13,9 +13,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ថតរូបភាគហ៊ុន ហើយស្វែងយល់អ្វីៗទាំងអស់អំពីវា។';
-
-  @override
   String get homeHint =>
       'វិញ្ញាបនបត្រភាគហ៊ុន អេក្រង់កម្មវិធីឈ្មួញកណ្ដាល កាសែត ឬឡូហ្គោក្រុមហ៊ុន – អ្វីក៏បានដែលអាចសម្គាល់ភាគហ៊ុនមួយ។';
 
@@ -23,19 +20,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get takePhoto => 'ថតរូប';
 
   @override
-  String get chooseFromGallery => 'ជ្រើសរើសពីវិចិត្រសាល';
-
-  @override
   String get chooseImage => 'ជ្រើសរើសរូបភាព';
-
-  @override
-  String get enterTickerManually => 'បញ្ចូលនិមិត្តសញ្ញាដោយដៃ';
-
-  @override
-  String get tickerInputLabel => 'និមិត្តសញ្ញាភាគហ៊ុន';
-
-  @override
-  String get tickerInputHint => 'ឧ. AAPL';
 
   @override
   String get lookUp => 'ស្វែងរក';
@@ -186,9 +171,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String get labelHeadquarters => 'ទីស្នាក់ការកណ្ដាល';
 
   @override
-  String get labelDescription => 'ការពិពណ៌នា';
-
-  @override
   String get labelLastPrice => 'តម្លៃចុងក្រោយ';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get noNews => 'មិនមានព័ត៌មានថ្មីៗទេ។';
-
-  @override
-  String get openArticle => 'បើកអត្ថបទ';
 
   @override
   String get openLinkFailed => 'មិនអាចបើកតំណបានទេ។';
@@ -600,11 +579,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String get displayCurrencyNone => 'តែរូបិយប័ណ្ណរបស់ភាគហ៊ុនប៉ុណ្ណោះ';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ ជា $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'អត្រា៖ 1 $from = $rate $to (ECB, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'ការវិភាគ $count ដងក្នុងមួយខែ';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'សាកល្បងឥតគិតថ្លៃ $days ថ្ងៃ ជាមួយការវិភាគ $count ដង';
   }
 
   @override
@@ -767,9 +736,6 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get viewPlans => 'មើលគម្រោង';
-
-  @override
-  String get usageTitle => 'ការប្រើប្រាស់';
 
   @override
   String get demoPurchaseNote => 'ការទូទាត់គំរូ៖ ការទិញនៅលើវេទិកានេះគ្រាន់តែជាការក្លែងធ្វើ។';
@@ -1122,9 +1088,6 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'ការកាន់កាប់របស់អ្នក';
-
-  @override
-  String get portfolioPurchases => 'ការទិញ';
 
   @override
   String get portfolioRemove => 'ដកចេញ';
@@ -2396,6 +2359,9 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'គ្មានភាគហ៊ុនថ្មីទេ';
+
+  @override
   String get positionsSortWeight => 'ធំបំផុតមុន';
 
   @override
@@ -2587,6 +2553,9 @@ class AppLocalizationsKm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'ការកាន់កាប់នីមួយៗមានការជូនដំណឹងនេះរួចហើយ';
 
   @override
   String portfolioSinceSale(String percent) {

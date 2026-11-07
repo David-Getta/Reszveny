@@ -1,14 +1,9 @@
 {
   "@@locale": "ps",
   "appTitle": "WhatStock",
-  "homeTagline": "د یوې ونډې انځور واخلئ او د هغې په اړه هر څه زده کړئ.",
   "homeHint": "د ونډې سند، د بروکرېج اپ پرده، ورځپاڼه یا د شرکت لوګو – هر هغه څه چې ونډه پرې وپېژندل شي.",
   "takePhoto": "انځور واخلئ",
-  "chooseFromGallery": "له ګالري څخه یې وټاکئ",
   "chooseImage": "انځور وټاکئ",
-  "enterTickerManually": "ټیکر پخپله ولیکئ",
-  "tickerInputLabel": "ټیکر سمبول",
-  "tickerInputHint": "لکه AAPL",
   "lookUp": "ولټوئ",
   "demoModeBanner": "ډیمو حالت – د بازار د معلوماتو کیلي نه ده تنظیم شوې. نمونه معلومات یوازې د دې لپاره شته: {symbols}.",
   "recognizing": "انځور تحلیلېږي…",
@@ -18,6 +13,14 @@
   "whatWeSaw": "موږ څه ولیدل",
   "chooseCandidateTitle": "ستاسو مطلب کومه ونډه وه؟",
   "confidencePercent": "{percent}% باور",
+  "@confidencePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "settings": "تنظیمات",
   "language": "ژبه",
   "systemLanguage": "د سیسټم ډیفالټ",
@@ -55,7 +58,6 @@
   "labelEmployees": "کارکوونکي",
   "labelCeo": "اجرائیوي رئیس",
   "labelHeadquarters": "مرکزي دفتر",
-  "labelDescription": "تشریح",
   "labelLastPrice": "وروستۍ بیه",
   "labelChange": "بدلون",
   "labelOpen": "د پرانیستې بیه",
@@ -95,9 +97,16 @@
   "ratingSell": "پلور",
   "ratingStrongSell": "قوي پلور",
   "analystCount": "{count, plural, =1{1 شنونکی} other{{count} شنونکي}}",
+  "@analystCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "analystPeriod": "موده: {period}",
   "noNews": "تازه خبرونه نشته.",
-  "openArticle": "مقاله پرانیزئ",
   "openLinkFailed": "لینک پرانیستل نه شو.",
   "recognitionSummary": "لنډیز",
   "recognitionEvidence": "ولې داسې فکر کوو",
@@ -179,7 +188,6 @@
   "noFavorites": "تر اوسه خوښې نشته. د ورزیاتولو لپاره د یوې ونډې پر ستوري ټک وکړئ.",
   "displayCurrency": "د ښودلو پولي واحد",
   "displayCurrencyNone": "یوازې د ونډې خپل پولي واحد",
-  "labelConverted": "≈ په {currency}",
   "fxRateNote": "نرخ: 1 {from} = {rate} {to} (ECB، {date})",
   "updates": "اوسمهالونه",
   "currentVersion": "نسخه {version}",
@@ -202,11 +210,46 @@
   "planMax2": "Ultra",
   "planNone": "فعال پلان نشته",
   "planAnalysesPerMonth": "په میاشت کې {count} تحلیلونه",
-  "planTrialDescription": "{days} ورځنی وړیا آزمېښت له {count} تحلیلونو سره",
+  "@planAnalysesPerMonth": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "trialDaysLeft": "{days, plural, =1{د آزمېښت 1 ورځ پاتې ده} other{د آزمېښت {days} ورځې پاتې دي}}",
+  "@trialDaysLeft": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "trialExpired": "ستاسو وړیا آزمېښت پای ته ورسېد. د تحلیل د دوام لپاره یو پلان وټاکئ.",
   "analysesRemaining": "په دې موده کې له {total} څخه {remaining} تحلیلونه پاتې دي",
+  "@analysesRemaining": {
+    "placeholders": {
+      "remaining": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "extraCredits": "{count, plural, =1{{count} اضافي تحلیل} other{{count} اضافي تحلیلونه}}",
+  "@extraCredits": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "renewsOn": "په {date} نوی کېږي",
   "choosePlan": "پلان وټاکئ",
   "currentPlan": "اوسنی پلان",
@@ -226,7 +269,6 @@
   "errTrialExpired": "ستاسو وړیا آزمېښت پای ته ورسېد. د دوام لپاره یو پلان وټاکئ.",
   "errNoPlan": "د AI تحلیل لپاره فعال پلان ته اړتیا ده.",
   "viewPlans": "پلانونه وګورئ",
-  "usageTitle": "کارونه",
   "demoPurchaseNote": "ډیمو بیلنګ: په دې پلاتفورم کې پېرودونه نمایشي دي.",
   "mostPopular": "تر ټولو مشهور",
   "bestValue": "غوره ارزښت",
@@ -243,6 +285,14 @@
   "aiDepthDeepDesc": "ډېر وېب لټونونه، له سیالو شرکتونو سره پرتله او ژور جزئیات.",
   "aiDepthWords": "شاوخوا {min}–{max} کلمې",
   "aiDepthCost": "{count, plural, one{1 تحلیل لګوي} other{{count} تحلیلونه لګوي}}",
+  "@aiDepthCost": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiReaderLevel": "د لوستونکي کچه",
   "aiReaderBeginner": "پیلونکی",
   "aiReaderExperienced": "تجربه لرونکی",
@@ -251,10 +301,66 @@
   "aiCounterArgument": "تر ټولو قوي مخالف دلیل",
   "aiCounterArgumentDesc": "لنډیز تل د خپلې پایلې پر ضد په تر ټولو قوي دلیل پای ته رسېږي.",
   "aiWebSearchesInfo": "{count, plural, one{ستاسو په پلان کې په هر تحلیل کې تر 1 وېب لټون پورې} other{ستاسو په پلان کې په هر تحلیل کې تر {count} وېب لټونونو پورې}}",
+  "@aiWebSearchesInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiWebSearchesPlans": "په معیاري اوږدوالي کې د پلان له مخې وېب لټونونه: عادي {normal}، Pro {pro}، Max {max}، Ultra {ultra}. لنډ کې 2 کم، ژور کې 2 ډېر.",
+  "@aiWebSearchesPlans": {
+    "placeholders": {
+      "normal": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "pro": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "max": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "ultra": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiWebSearchesShort": "{count, plural, one{تر 1 وېب لټون پورې} other{تر {count} وېب لټونونو پورې}}",
+  "@aiWebSearchesShort": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "planWebSearches": "{count, plural, one{په هر تحلیل کې 1 وېب لټون} other{په هر تحلیل کې {count} وېب لټونونه}}",
+  "@planWebSearches": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "errNotEnoughCredits": "دې اوږدوالي ته {needed} تحلیلونه اړین دي، خو یوازې {left} پاتې دي. په تنظیماتو کې لنډ اوږدوالی وټاکئ یا نور تحلیلونه ترلاسه کړئ.",
+  "@errNotEnoughCredits": {
+    "placeholders": {
+      "needed": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "left": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "outlookMarketMood": "د بازار روحیه",
   "moodVeryPessimistic": "ډېر ناهیلی",
   "moodPessimistic": "ناهیلی",
@@ -299,6 +405,14 @@
   "scenarioMostLikely": "تر ټولو احتمالي",
   "longTermToday": "نن",
   "longTermYears": "{years, plural, one{1 کال} other{{years} کاله}}",
+  "@longTermYears": {
+    "placeholders": {
+      "years": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "longTermPerYear": "{range} په کال کې",
   "longTermLikely": "تر ټولو احتمالي {price}",
   "confidenceLow": "ټیټ باور",
@@ -324,7 +438,6 @@
   "portfolioPositions": "پوزیشنونه",
   "portfolioAvgCost": "منځنی لګښت {price}",
   "portfolioYourPosition": "ستاسو پوزیشن",
-  "portfolioPurchases": "پېرودونه",
   "portfolioRemove": "لرې کړئ",
   "portfolioExcluded": "هغه پوزیشنونه چې بیه یا د تبادلې نرخ یې نشته، په ټولو اندازو کې نه دي شامل.",
   "priceAlerts": "د بیې خبرتیاوې",
@@ -382,12 +495,36 @@
   "previewConfidential": "محرمه مخکتنه",
   "errPreviewDailyLimit": "د دې مخکتنې د نن ورځې د تحلیلونو حد پوره شوی. سبا بیا هڅه وکړئ.",
   "ageHours": "{count, plural, =1{1 ساعت مخکې} other{{count} ساعته مخکې}}",
+  "@ageHours": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "ageDays": "{count, plural, =1{1 ورځ مخکې} other{{count} ورځې مخکې}}",
+  "@ageDays": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "staleTitle": "دا تحلیل تازه کړئ؟",
   "staleBody": "دا {age} جوړ شوی و. له هغه وخته بیې، خبرونه او پایلې کېدای شي بدلې شوې وي.",
   "staleKeep": "پخوانی وښیاست",
   "staleRefresh": "نوی جوړ کړئ",
   "seeAll": "ټول وګورئ ({count})",
+  "@seeAll": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "searchAnalyses": "په خپلو تحلیلونو کې ولټوئ",
   "deleteAnalysis": "ړنګ کړئ",
   "analysisDeleted": "د {symbol} تحلیل ړنګ شو",
@@ -399,15 +536,51 @@
   "shareCardDisclaimer": "AI تحلیل · بېلګیزې سناریوګانې، نه وړاندوینې · د پانګونې مشوره نه ده",
   "referralTitle": "ملګري راوبلئ",
   "referralBody": "خپل کوډ شریک کړئ. ستاسو ملګری سمدستي {count, plural, =1{1 اضافي تحلیل} other{{count} اضافي تحلیلونه}} ترلاسه کوي، او تاسو هم د هغه له لومړي تحلیل وروسته همدومره ترلاسه کوئ.",
+  "@referralBody": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralYourCode": "ستاسو کوډ",
   "referralStats": "رابلل شوي: {invited} · انعام اخیستي: {rewarded}",
+  "@referralStats": {
+    "placeholders": {
+      "invited": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "rewarded": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralHaveCode": "د ملګري کوډ لرئ؟",
   "referralRedeem": "وکاروئ",
   "referralRedeemed": "{count, plural, =1{1 اضافي تحلیل اضافه شو. ښه راغلاست!} other{{count} اضافي تحلیلونه اضافه شول. ښه راغلاست!}}",
+  "@referralRedeemed": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralErrUnknown": "دا کوډ نشته. وې ګورئ او بیا هڅه وکړئ.",
   "referralErrOwn": "تاسو خپل کوډ نشئ کارولی.",
   "referralErrAlready": "تاسو مخکې د یوه ملګري کوډ کارولی دی.",
   "referralShareText": "زه د WhatStock په مرسته ونډې تحلیلوم: د یوې ونډې انځور واخلئ او AI یې تشریح کوي. زما د کوډ {code} سره تاسو {count, plural, =1{1 اضافي تحلیل} other{{count} اضافي تحلیلونه}} ترلاسه کوئ.",
+  "@referralShareText": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralCopied": "کوډ کاپي شو",
   "onboardTitle1": "د یوې ونډې انځور واخلئ",
   "onboardBody1": "د بروکرۍ اپ سکرین، ورځپاڼه یا د شرکت لوګو بس دی: WhatStock ونډه پېژني او د هغې بیه، چارټ او مهمې شمېرې درښيي.",
@@ -441,6 +614,14 @@
   "errAskLimit": "تاسو د نن ورځې د پوښتنو حد ته رسېدلي یاست. سبا بیا هڅه وکړئ.",
   "eventTomorrow": "سبا",
   "eventInDays": "{days, plural, =1{په 1 ورځ کې} other{په {days} ورځو کې}}",
+  "@eventInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "eventEarnings": "درېمیاشتنۍ پایلې",
   "eventBeforeOpen": "د بازار له پرانیستلو مخکې",
   "eventAfterClose": "د بازار له تړلو وروسته",
@@ -471,7 +652,23 @@
   "portfolioImportHint": "په هره کرښه کې یو پېرود ولګوئ: ټیکر، شمېر، بیه، پولي واحد، نېټه (YYYY-MM-DD). ستنې د کامې، سیمي کولن یا ټب په واسطه بېلېدای شي؛ د سرلیک کرښه اختیاري ده.",
   "portfolioImportButton": "واردول",
   "portfolioImported": "{count, plural, =1{1 راکړه ورکړه اضافه شوه} other{{count} راکړې ورکړې اضافه شوې}}",
+  "@portfolioImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioImportSkipped": "{count, plural, =1{1 کرښه پرېښودل شوه} other{{count} کرښې پرېښودل شوې}}",
+  "@portfolioImportSkipped": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "syncInfo": "پورټفولیو، خوښې، د بیې خبرتیاوې او یادښتونه ستاسو په ټولو وسیلو کې همغږي کېږي.",
   "syncLast": "وروستی همغږي: {time}",
   "syncNow": "اوس همغږي کړئ",
@@ -553,17 +750,45 @@
   "earningsExpected": "متوقع EPS",
   "earningsReported": "اعلان شوی EPS",
   "earningsBeats": "{total, plural, =1{له 1 درېمیاشتې څخه په {beats} کې د متوقع EPS سره برابر یا ترې پورته} other{له وروستیو {total} درېمیاشتو څخه په {beats} کې د متوقع EPS سره برابر یا ترې پورته}}",
+  "@earningsBeats": {
+    "placeholders": {
+      "beats": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "earningsReminderTomorrow": "{symbol} سبا درېمیاشتنۍ پایلې خپروي",
   "earningsReminderToday": "{symbol} نن درېمیاشتنۍ پایلې خپروي",
   "earningsRemindersTitle": "د پایلو یادونې",
   "earningsRemindersSubtitle": "ستاسو د خوښو یا پورټفولیو د ونډو د درېمیاشتنیو پایلو له خپرېدو یوه ورځ مخکې خبرتیا",
   "addAllToFavorites": "ټول خوښو ته ورزیات کړئ ({count})",
+  "@addAllToFavorites": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioImportPhoto": "له سکرین شاټ څخه واردول",
   "holdingsReading": "ستاسو پوزیشنونه لوستل کېږي…",
   "holdingsReviewTitle": "موندل شوي پوزیشنونه",
   "holdingsReviewHint": "د اضافه کولو مخکې شمېرې وګورئ. بیه ستاسو د هرې ونډې منځنۍ د پېرود بیه ده، نه د نن ورځې بیه.",
   "holdingsNoPrice": "په انځور کې د پېرود منځنۍ بیه نشته",
   "holdingsAdd": "{count, plural, =1{1 پوزیشن اضافه کړئ} other{{count} پوزیشنونه اضافه کړئ}}",
+  "@holdingsAdd": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "holdingsNone": "په دې انځور کې د ونډو هېڅ پوزیشن ونه موندل شو. د خپل بروکر د پوزیشنونو یا شتمنیو د پاڼې سکرین شاټ وازمویئ.",
   "week52Range": "د 52 اونیو حد",
   "week52BelowHigh": "د 52 اونیو له لوړې بیې {percent} ټیټ",
@@ -576,7 +801,23 @@
   "alertHitTrailing": "{symbol} له لوړې کچې {percent} ښکته شو",
   "sectionInsiders": "د داخلي کسانو معاملې",
   "insiderBuys": "{count, plural, =1{1 پېرود} other{{count} پېرودونه}}",
+  "@insiderBuys": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "insiderSells": "{count, plural, =1{1 پلور} other{{count} پلورونه}}",
+  "@insiderSells": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "insiderNet": "خالص: {shares} ونډې",
   "insiderBuy": "پېرل شوي",
   "insiderSell": "پلورل شوي",
@@ -620,6 +861,14 @@
   "watchAlertAll": "د لویو ورځنیو بدلونونو خبرتیا",
   "watchAlertAllHint": "د دې لېست هرې ونډې لپاره د بیې خبرتیا: کله چې په یوه ورځ کې دومره پورته یا ښکته شي، خبر درکوي. هغه ونډې چې دمخه یې لري، خپله ساتي.",
   "watchAlertAllDone": "{count, plural, =1{1 خبرتیا وټاکل شوه} other{{count} خبرتیاوې وټاکل شوې}}",
+  "@watchAlertAllDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioExportRealized": "ترلاسه شوې ګټه صادرول (CSV)",
   "eventsAddToCalendar": "جنتري ته ورزیات کړئ (.ics)",
   "portfolioAnnualReturn": "کلنۍ ګټه",
@@ -638,6 +887,14 @@
   "watchImport": "ټیکرونه زیات کړئ",
   "watchImportHint": "هغه ټیکرونه ولګوئ چې په کامې، تشې یا نوې کرښې سره بېل شوي وي – د بېلګې په توګه هغه لېست چې چا درسره شریک کړی وي.",
   "watchImported": "{count, plural, =0{نوې ونډې نشته} =1{1 ونډه اضافه شوه} other{{count} ونډې اضافه شوې}}",
+  "@watchImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "positionsSortWeight": "تر ټولو لوی لومړی",
   "positionsSortGain": "تر ټولو ډېره ټوله ګټه لومړی",
   "positionsSortToday": "د نن ورځې غوره لومړی",
@@ -647,8 +904,40 @@
   "usMarketOpen": "د امریکا بازار خلاص دی · په {time} کې بندیږي",
   "usMarketClosed": "د امریکا بازار بند دی · په {time} کې خلاصیږي",
   "durationMinutes": "{minutes} دقیقې",
+  "@durationMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationHoursMinutes": "{hours} ساعته {minutes} دقیقې",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationDaysHours": "{days} ورځې {hours} ساعته",
+  "@durationDaysHours": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "hours": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioGoalSet": "موخه وټاکئ",
   "portfolioGoalTitle": "د پورټفولیو موخه",
   "portfolioGoalProgress": "{percent} · موخه: {amount}",
@@ -660,6 +949,14 @@
   "alertDeleted": "خبرتیا ړنګه شوه",
   "alertsClearTriggered": "فعاله شوې خبرتیاوې پاکې کړئ",
   "alertsCleared": "{count, plural, =1{1 خبرتیا پاکه شوه} other{{count} خبرتیاوې پاکې شوې}}",
+  "@alertsCleared": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "homeScreenTitle": "کور پاڼه",
   "allocationCountries": "هېوادونه",
   "newsExplainNoteResearch": "د AI تشریح: په وېب کې حقایق لټوي، مقاله پرانیزي او ارزوي چې سرچینه څومره د باور وړ ده. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.",
@@ -689,6 +986,14 @@
   "portfolioDividendDate": "د تادیې نېټه",
   "portfolioDividendsEmpty": "تر اوسه هیڅ ډیویډنډ ثبت نه دی. په لاس يې اضافه کړئ، یا د خپل بروکر اکسپورټ وارد کړئ – د هغه د ډیویډنډ کرښې هم اخیستل کېږي.",
   "portfolioDividendsImported": "{count, plural, =1{1 ډیویډنډ اضافه شو} other{{count} ډیویډنډونه اضافه شول}}",
+  "@portfolioDividendsImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioExportDividends": "ډیویډنډونه صادر کړئ (CSV)",
   "portfolioDividendDeleted": "ډیویډنډ حذف شو",
   "portfolioDividendsHint": "اندازې هغسې دي چې ستاسو حساب ته راغلي، د تادیې په اسعارو؛ مجموعې د نن ورځې په نرخ بدلېږي. د مالیې راپور لپاره د خپل بروکر بیان وکاروئ.",
@@ -696,6 +1001,14 @@
   "awaySince": "له {when} راهیسې",
   "awayQuiet": "څه ډېر بدلون نه و.",
   "awayAlerts": "{count, plural, =1{1 خبرتیا فعاله شوه} other{{count} خبرتیاوې فعالې شوې}}",
+  "@awayAlerts": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "awayReported": "خپرې شوې پایلې: {symbols}",
   "moveWhyButton": "نن ولې خوځي؟",
   "moveWhyTitle": "نن {percent}",
@@ -718,6 +1031,18 @@
   "glossVolatility": "بیه له یوې ورځې تر بلې څومره بدلېږي، د کال په کچه حساب شوې: ۲۰٪ یعنې یو عادي کال نږدې ±۲۰٪ په حدودو کې حرکت کوي. لوړه بې‌ثباتي یعنې دواړو خواوو ته لوی حرکتونه.",
   "techNote": "له ورځنیو تړلو بیو څخه حساب شوی. تخنیکي نښې تېر وخت بیانوي، نه راتلونکی.",
   "portfolioAbove200": "له {count} پوزیشنونو څخه {above} د خپل 200-ورځني اوسط له پاسه",
+  "@portfolioAbove200": {
+    "placeholders": {
+      "above": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "watchSignalsTitle": "اشارې",
   "signalRsiOversold": "RSI {value} · ډېر پلورل شوی",
   "signalRsiOverbought": "RSI {value} · ډېر پېرودل شوی",
@@ -751,6 +1076,14 @@
   "portfolioSplitRow": "د ونډو ویش {ratio}",
   "portfolioSplitRemoved": "د ونډو ویش ړنګ شو",
   "portfolioSplitsImported": "{count, plural, =1{1 د ونډو ویش زیات شو} other{{count} د ونډو ویشونه زیات شول}}",
+  "@portfolioSplitsImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "labelDividendGrowth5y": "د ونډې ګټې وده (5 کاله)",
   "dividendNone": "په تېرو 12 میاشتو کې د ونډې ګټه نه ده ورکړل شوې.",
   "dividendOnYourShares": "ستاسو پر ونډو، کلنۍ",
@@ -793,6 +1126,14 @@
   "portfolioTopHoldings": "تر ټولو لوی پوزیشنونه",
   "portfolioShareNote": "یوازې سلنې شریکېږي، مقدارونه نه.",
   "portfolioPositionsCount": "{count, plural, one{{count} پوزیشن} other{{count} پوزیشنونه}}",
+  "@portfolioPositionsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "shareNotAdvice": "د پانګونې مشوره نه ده",
   "contributionButton": "نوې پیسې پانګونه کړئ",
   "contributionAmount": "د پانګونې اندازه ({currency})",
@@ -808,6 +1149,14 @@
   "portfolioSampleRemove": "نمونه لرې کړئ",
   "portfolioStopsAll": "د ټولو پوزیشنونو لپاره له لوړې کچې د ښکته کېدو خبرتیا",
   "portfolioStopsDone": "{count, plural, =0{ټول پوزیشنونه دمخه دا خبرتیا لري} =1{1 خبرتیا وټاکل شوه} other{{count} خبرتیاوې وټاکل شوې}}",
+  "@portfolioStopsDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioSinceSale": "{percent} له پلور راهیسې",
   "lotPreviewRealized": "په دې پلور کې تحقق شوې (FIFO):",
   "lotPreviewAverage": "نوی منځنی لګښت: {after} (اوس {before})",
@@ -822,7 +1171,23 @@
   "lotNoteBought": "وپېرل شو",
   "positionHeld": "د ساتلو موده",
   "durationMonths": "{months, plural, one{{months} میاشت} other{{months} میاشتې}}",
+  "@durationMonths": {
+    "placeholders": {
+      "months": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationDays": "{days, plural, one{{days} ورځ} other{{days} ورځې}}",
+  "@durationDays": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "positionHeldSince": "له {date} راهیسې",
   "lotPreviewWeight": "وروسته په پورټفولیو کې برخه: {after} (اوس {before})",
   "lotFromCash": "له نغدو څخه تادیه کړئ (اوس {amount})",
@@ -837,6 +1202,14 @@
   "activitySearchHint": "د ټیکر له مخې فلټر کړئ",
   "activityNoMatch": "هېڅ راکړه ورکړه له فلټر سره سمون نه لري.",
   "portfolioImportDuplicates": "{count, plural, =1{1 مخکې ثبت ده، اضافه نه شوه} other{{count} مخکې ثبت دي، اضافه نه شوې}}",
+  "@portfolioImportDuplicates": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "tickerChange": "د ټیکر بدلون",
   "tickerChangeTitle": "د ټیکر بدلون · {symbol}",
   "tickerChangeNew": "نوی ټیکر",
@@ -850,6 +1223,14 @@
   "errRateLimited": "په لنډ وخت کې ډېرې غوښتنې. مهرباني وکړئ یوه دقیقه انتظار وکړئ او بیا هڅه وکړئ.",
   "watchListNameTaken": "په دې نوم یو لېست له مخکې شته.",
   "watchListLimit": "تاسو تر {max} پورې لېستونه لرلی شئ.",
+  "@watchListLimit": {
+    "placeholders": {
+      "max": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioBuyBelowSold": "لږ تر لږه {quantity} – دومره مخکې پلورل شوې دي",
   "restoreNothing": "د بیا راګرځولو لپاره پخواني پېرودونه ونه موندل شول.",
   "manageSubscriptionElsewhere": "دلته د ادارې لپاره هېڅ ګډون نشته. هغه ګډون چې له App Store یا Google Play څخه اخیستل شوی وي، د سټور په تنظیماتو کې اداره کېږي.",
@@ -858,6 +1239,14 @@
   "noteFull": "د دې ونډې یادښت ډک دی، نو دا لیکنه اضافه نه شوه. یادښت لنډ کړئ او بیا هڅه وکړئ.",
   "portfolioNoRateFor": "د {symbols} لپاره د تبادلې نرخ نشته.",
   "dividendsNotConverted": "{count, plural, =1{په {currencies} کې 1 ډیویډنډ د تبادلې نرخ نه لري او په ټولو اندازو کې نه دی شامل.} other{په {currencies} کې {count} ډیویډنډونه د تبادلې نرخ نه لري او په ټولو اندازو کې نه دي شامل.}}",
+  "@dividendsNotConverted": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "signOutTitle": "له حساب وځئ؟",
   "signOutBody": "ستاسو پورټفولیو، لېستونه، د بیې خبرتیاوې او یادښتونه ستاسو په حساب کې پاتې کېږي او له دې وسیلې لرې کېږي. د بېرته ترلاسه کولو لپاره بیا ننوځئ.",
   "signOutUnsaved": "ځینې بدلونونه ستاسو په حساب کې خوندي نه شول (اتصال نشته؟). که اوس له حساب ووځئ، له منځه به ولاړ شي.",
@@ -901,5 +1290,7 @@
   "errAiUnavailable": "د AI خدمت اوس مهال نشته. څو دقیقې وروسته بیا هڅه وکړئ.",
   "errMarketUnavailable": "د بازار معلومات اوس مهال نشته. څو دقیقې وروسته بیا هڅه وکړئ.",
   "purchaseUnavailable": "پېرود اوس مهال ممکن نه دی. وروسته بیا هڅه وکړئ.",
-  "signOutLocalOnly": "خوندي شوي تحلیلونه او د AI یادښتونه یوازې په دې وسیله کې ساتل کېږي، نه ستاسو په حساب کې، نو د تل لپاره ړنګېږي."
+  "signOutLocalOnly": "خوندي شوي تحلیلونه او د AI یادښتونه یوازې په دې وسیله کې ساتل کېږي، نه ستاسو په حساب کې، نو د تل لپاره ړنګېږي.",
+  "watchImportedNone": "نوې ونډې نشته",
+  "portfolioStopsNone": "ټول پوزیشنونه دمخه له لوړې کچې د ښکته کېدو خبرتیا لري"
 }

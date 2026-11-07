@@ -13,9 +13,6 @@ class AppLocalizationsKab extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Ṭṭef tawlaft n uksyun syen issin kullec fell-as.';
-
-  @override
   String get homeHint =>
       'Aselkin n yiksyunen, agdil n usnas n lbursa, aɣmis neɣ alugu n tkebbanit – ayen akk i d-yemmalen aksyun.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String get takePhoto => 'Ṭṭef tawlaft';
 
   @override
-  String get chooseFromGallery => 'Fren seg tugniwin';
-
-  @override
   String get chooseImage => 'Fren tugna';
-
-  @override
-  String get enterTickerManually => 'Sekcem azamul s ufus';
-
-  @override
-  String get tickerInputLabel => 'Azamul n uksyun';
-
-  @override
-  String get tickerInputHint => 'amedya: AAPL';
 
   @override
   String get lookUp => 'Nadi';
@@ -186,9 +171,6 @@ class AppLocalizationsKab extends AppLocalizations {
   String get labelHeadquarters => 'Amḍiq agejdan';
 
   @override
-  String get labelDescription => 'Aglam';
-
-  @override
   String get labelLastPrice => 'Ssuma taneggarut';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get noNews => 'Ulac isallen n melmi kan.';
-
-  @override
-  String get openArticle => 'Ldi amagrad';
 
   @override
   String get openLinkFailed => 'Aseɣwen ur yezmir ara ad yeldi.';
@@ -600,11 +579,6 @@ class AppLocalizationsKab extends AppLocalizations {
   String get displayCurrencyNone => 'Tadrimt n uksyun kan';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ s $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Azal: 1 $from = $rate $to (BCE, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count n tselḍin deg wayyur';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Tirmit n baṭel n $days wussan s $count n tselḍin';
   }
 
   @override
@@ -772,9 +741,6 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get viewPlans => 'Wali iɣawasen';
-
-  @override
-  String get usageTitle => 'Aseqdec';
 
   @override
   String get demoPurchaseNote => 'Axelleṣ n uskan: tiɣin deg tɣerɣert-a ur d tidet ara.';
@@ -1137,9 +1103,6 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Ayen tesɛiḍ';
-
-  @override
-  String get portfolioPurchases => 'Tiɣin';
 
   @override
   String get portfolioRemove => 'Kkes';
@@ -2438,6 +2401,9 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Ulac aksyun amaynut';
+
+  @override
   String get positionsSortWeight => 'Wid imeqqranen d imezwura';
 
   @override
@@ -2630,6 +2596,9 @@ class AppLocalizationsKab extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Yal adeg yesɛa yakan alɣu-agi';
 
   @override
   String portfolioSinceSale(String percent) {

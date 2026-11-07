@@ -13,9 +13,6 @@ class AppLocalizationsLua extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Ambula foto wa action ne manya malu ayi onso.';
-
-  @override
   String get homeHint =>
       'Mukanda wa action, écran wa application wa bourse, tshikandakanda anyi logo wa kompanyi – tshintu tshionso tshidi tshileja action.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsLua extends AppLocalizations {
   String get takePhoto => 'Ambula foto';
 
   @override
-  String get chooseFromGallery => 'Sungula mu galerie';
-
-  @override
   String get chooseImage => 'Sungula tshimfuanyi';
-
-  @override
-  String get enterTickerManually => 'Funda ticker wewe muine';
-
-  @override
-  String get tickerInputLabel => 'Tshimanyinu tshia ticker';
-
-  @override
-  String get tickerInputHint => 'tshilejilu: AAPL';
 
   @override
   String get lookUp => 'Keba';
@@ -186,9 +171,6 @@ class AppLocalizationsLua extends AppLocalizations {
   String get labelHeadquarters => 'Siège';
 
   @override
-  String get labelDescription => 'Diumvuija';
-
-  @override
   String get labelLastPrice => 'Mushinga wa ndekelu';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get noNews => 'Kakuena lumu lupia.';
-
-  @override
-  String get openArticle => 'Bulula mukanda';
 
   @override
   String get openLinkFailed => 'Katuena mua kubulula lien.';
@@ -606,11 +585,6 @@ class AppLocalizationsLua extends AppLocalizations {
   String get displayCurrencyNone => 'Anu mfranga ya action';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ mu $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Taux: 1 $from = $rate $to (BCE, $date)';
   }
@@ -682,11 +656,6 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Makonkonona $count ku ngondo';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Diteta dia patupu dia matuku $days ne makonkonona $count';
   }
 
   @override
@@ -780,9 +749,6 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get viewPlans => 'Tangila forfait';
-
-  @override
-  String get usageTitle => 'Dienzela mudimu';
 
   @override
   String get demoPurchaseNote => 'Difuta dia démo: disumba mu plateforme eu ndia manaya.';
@@ -1147,9 +1113,6 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Position webe';
-
-  @override
-  String get portfolioPurchases => 'Biuvua musumbe';
 
   @override
   String get portfolioRemove => 'Umbusha';
@@ -2460,6 +2423,9 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Kakuena aksio mupiamupia';
+
+  @override
   String get positionsSortWeight => 'Bidi binene bikole kumpala';
 
   @override
@@ -2653,6 +2619,9 @@ class AppLocalizationsLua extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Tshitupa tshionso tshidi kale ne dimanyisha edi';
 
   @override
   String portfolioSinceSale(String percent) {

@@ -13,9 +13,6 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Snap stock picture, make you sabi evritin about am.';
-
-  @override
   String get homeHint =>
       'Share certificate, broker app screen, newspaper or company logo – anytin wey fit show which stock e be.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get takePhoto => 'Snap foto';
 
   @override
-  String get chooseFromGallery => 'Pick from gallery';
-
-  @override
   String get chooseImage => 'Pick picture';
-
-  @override
-  String get enterTickerManually => 'Type ticker by hand';
-
-  @override
-  String get tickerInputLabel => 'Di ticker';
-
-  @override
-  String get tickerInputHint => 'like AAPL';
 
   @override
   String get lookUp => 'Find am';
@@ -186,9 +171,6 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get labelHeadquarters => 'Head office';
 
   @override
-  String get labelDescription => 'Wetin dem dey do';
-
-  @override
   String get labelLastPrice => 'Last price';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get noNews => 'No fresh tori.';
-
-  @override
-  String get openArticle => 'Open di tori';
 
   @override
   String get openLinkFailed => 'Di link no gree open.';
@@ -599,11 +578,6 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get displayCurrencyNone => 'Only di stock own currency';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ for $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Exchange rate: 1 $from = $rate $to (ECB, $date)';
   }
@@ -675,11 +649,6 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count analysis every month';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Free trial for $days days wit $count analysis';
   }
 
   @override
@@ -772,9 +741,6 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get viewPlans => 'See plans';
-
-  @override
-  String get usageTitle => 'How you don use am';
 
   @override
   String get demoPurchaseNote => 'Demo billing: na pretend purchase for dis platform.';
@@ -1136,9 +1102,6 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Wetin you get';
-
-  @override
-  String get portfolioPurchases => 'Wetin you buy';
 
   @override
   String get portfolioRemove => 'Comot';
@@ -2436,6 +2399,9 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'No new stock';
+
+  @override
   String get positionsSortWeight => 'Wetin big pass first';
 
   @override
@@ -2628,6 +2594,9 @@ class AppLocalizationsPcm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'All your stocks don get trailing stop already';
 
   @override
   String portfolioSinceSale(String percent) {

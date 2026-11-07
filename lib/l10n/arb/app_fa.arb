@@ -1,14 +1,9 @@
 {
   "@@locale": "fa",
   "appTitle": "WhatStock",
-  "homeTagline": "از یک سهم عکس بگیرید و همه‌چیز را درباره‌اش بدانید.",
   "homeHint": "برگه سهام، صفحه اپلیکیشن کارگزاری، روزنامه یا لوگوی شرکت – هر چیزی که سهم را مشخص کند.",
   "takePhoto": "عکس گرفتن",
-  "chooseFromGallery": "انتخاب از گالری",
   "chooseImage": "انتخاب تصویر",
-  "enterTickerManually": "ورود دستی نماد",
-  "tickerInputLabel": "نماد سهم",
-  "tickerInputHint": "مثلاً AAPL",
   "lookUp": "جستجو",
   "demoModeBanner": "حالت نمایشی – کلید داده‌های بازار تنظیم نشده است. داده‌های نمونه برای این نمادها موجود است: {symbols}.",
   "recognizing": "در حال تحلیل تصویر…",
@@ -18,6 +13,14 @@
   "whatWeSaw": "آنچه دیدیم",
   "chooseCandidateTitle": "منظورتان کدام سهم بود؟",
   "confidencePercent": "{percent}٪ اطمینان",
+  "@confidencePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "settings": "تنظیمات",
   "language": "زبان",
   "systemLanguage": "پیش‌فرض سیستم",
@@ -55,7 +58,6 @@
   "labelEmployees": "کارکنان",
   "labelCeo": "CEO",
   "labelHeadquarters": "دفتر مرکزی",
-  "labelDescription": "توضیحات",
   "labelLastPrice": "آخرین قیمت",
   "labelChange": "تغییر",
   "labelOpen": "قیمت بازگشایی",
@@ -95,9 +97,16 @@
   "ratingSell": "فروش",
   "ratingStrongSell": "فروش قوی",
   "analystCount": "{count, plural, =1{{count} تحلیلگر} other{{count} تحلیلگر}}",
+  "@analystCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "analystPeriod": "دوره: {period}",
   "noNews": "خبر تازه‌ای وجود ندارد.",
-  "openArticle": "باز کردن مقاله",
   "openLinkFailed": "پیوند باز نشد.",
   "recognitionSummary": "خلاصه",
   "recognitionEvidence": "چرا این‌طور فکر می‌کنیم",
@@ -179,7 +188,6 @@
   "noFavorites": "هنوز علاقه‌مندی‌ای وجود ندارد. برای افزودن، روی ستارهٔ یک سهم ضربه بزنید.",
   "displayCurrency": "واحد پول نمایش",
   "displayCurrencyNone": "فقط واحد پول خود سهم",
-  "labelConverted": "≈ به {currency}",
   "fxRateNote": "نرخ: 1 {from} = {rate} {to} (ECB، {date})",
   "updates": "به‌روزرسانی‌ها",
   "currentVersion": "نسخهٔ {version}",
@@ -202,11 +210,46 @@
   "planMax2": "Ultra",
   "planNone": "طرح فعالی وجود ندارد",
   "planAnalysesPerMonth": "{count} تحلیل در ماه",
-  "planTrialDescription": "{days} روز آزمایش رایگان با {count} تحلیل",
+  "@planAnalysesPerMonth": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "trialDaysLeft": "{days, plural, =1{{days} روز از دوره آزمایشی باقی مانده} other{{days} روز از دوره آزمایشی باقی مانده}}",
+  "@trialDaysLeft": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "trialExpired": "دوره آزمایشی رایگان شما به پایان رسید. برای ادامه تحلیل یک طرح انتخاب کنید.",
   "analysesRemaining": "{remaining} از {total} تحلیل در این دوره باقی مانده",
+  "@analysesRemaining": {
+    "placeholders": {
+      "remaining": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "extraCredits": "{count, plural, =1{{count} تحلیل اضافی} other{{count} تحلیل اضافی}}",
+  "@extraCredits": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "renewsOn": "تمدید در {date}",
   "choosePlan": "انتخاب طرح",
   "currentPlan": "طرح فعلی",
@@ -226,7 +269,6 @@
   "errTrialExpired": "دوره آزمایشی رایگان شما به پایان رسید. برای ادامه یک طرح انتخاب کنید.",
   "errNoPlan": "برای تحلیل هوش مصنوعی به یک طرح فعال نیاز است.",
   "viewPlans": "مشاهده طرح‌ها",
-  "usageTitle": "میزان استفاده",
   "demoPurchaseNote": "پرداخت آزمایشی: خریدها در این پلتفرم شبیه‌سازی می‌شوند.",
   "mostPopular": "محبوب‌ترین",
   "bestValue": "بهترین ارزش",
@@ -243,6 +285,14 @@
   "aiDepthDeepDesc": "جستجوهای وب بیشتر، مقایسه با رقبا و جزئیات عمیق‌تر.",
   "aiDepthWords": "حدود {min}–{max} کلمه",
   "aiDepthCost": "{count, plural, one{{count} تحلیل مصرف می‌کند} other{{count} تحلیل مصرف می‌کند}}",
+  "@aiDepthCost": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiReaderLevel": "سطح خواننده",
   "aiReaderBeginner": "مبتدی",
   "aiReaderExperienced": "باتجربه",
@@ -251,10 +301,66 @@
   "aiCounterArgument": "قوی‌ترین استدلال مخالف",
   "aiCounterArgumentDesc": "خلاصه همیشه با قوی‌ترین استدلال علیه نتیجه‌گیری خودش به پایان می‌رسد.",
   "aiWebSearchesInfo": "{count, plural, one{تا {count} جستجوی وب برای هر تحلیل با طرح شما} other{تا {count} جستجوی وب برای هر تحلیل با طرح شما}}",
+  "@aiWebSearchesInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiWebSearchesPlans": "تعداد جستجوی وب در طول استاندارد بر اساس طرح: معمولی {normal}، Pro {pro}، Max {max}، Ultra {ultra}. حالت کوتاه 2 جستجوی کمتر و حالت عمیق 2 جستجوی بیشتر دارد.",
+  "@aiWebSearchesPlans": {
+    "placeholders": {
+      "normal": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "pro": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "max": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "ultra": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiWebSearchesShort": "{count, plural, one{تا {count} جستجوی وب} other{تا {count} جستجوی وب}}",
+  "@aiWebSearchesShort": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "planWebSearches": "{count, plural, one{{count} جستجوی وب برای هر تحلیل} other{{count} جستجوی وب برای هر تحلیل}}",
+  "@planWebSearches": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "errNotEnoughCredits": "این طول به {needed} تحلیل نیاز دارد، اما فقط {left} تحلیل باقی مانده است. در تنظیمات طول کوتاه‌تری انتخاب کنید یا تحلیل بیشتری تهیه کنید.",
+  "@errNotEnoughCredits": {
+    "placeholders": {
+      "needed": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "left": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "outlookMarketMood": "حال‌وهوای بازار",
   "moodVeryPessimistic": "بسیار بدبینانه",
   "moodPessimistic": "بدبینانه",
@@ -299,6 +405,14 @@
   "scenarioMostLikely": "محتمل‌ترین",
   "longTermToday": "امروز",
   "longTermYears": "{years, plural, one{{years} سال} other{{years} سال}}",
+  "@longTermYears": {
+    "placeholders": {
+      "years": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "longTermPerYear": "{range} در سال",
   "longTermLikely": "محتمل‌ترین {price}",
   "confidenceLow": "اطمینان کم",
@@ -324,7 +438,6 @@
   "portfolioPositions": "موقعیت‌ها",
   "portfolioAvgCost": "میانگین بهای خرید {price}",
   "portfolioYourPosition": "موقعیت شما",
-  "portfolioPurchases": "خریدها",
   "portfolioRemove": "حذف",
   "portfolioExcluded": "موقعیت‌های بدون قیمت یا نرخ ارز در جمع‌ها لحاظ نمی‌شوند.",
   "priceAlerts": "هشدارهای قیمت",
@@ -382,12 +495,36 @@
   "previewConfidential": "پیش‌نمایش محرمانه",
   "errPreviewDailyLimit": "سقف تحلیل امروزِ این پیش‌نمایش پر شده است. فردا دوباره امتحان کنید.",
   "ageHours": "{count, plural, =1{{count} ساعت پیش} other{{count} ساعت پیش}}",
+  "@ageHours": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "ageDays": "{count, plural, =1{{count} روز پیش} other{{count} روز پیش}}",
+  "@ageDays": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "staleTitle": "این تحلیل به‌روز شود؟",
   "staleBody": "این تحلیل {age} تولید شده است. ممکن است از آن زمان قیمت‌ها، اخبار و نتایج تغییر کرده باشند.",
   "staleKeep": "نمایش تحلیل قبلی",
   "staleRefresh": "تولید تحلیل جدید",
   "seeAll": "دیدن همه ({count})",
+  "@seeAll": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "searchAnalyses": "جستجو در تحلیل‌های شما",
   "deleteAnalysis": "حذف",
   "analysisDeleted": "تحلیل {symbol} حذف شد",
@@ -399,15 +536,51 @@
   "shareCardDisclaimer": "تحلیل هوش مصنوعی · سناریوهای توضیحی، نه پیش‌بینی · توصیه سرمایه‌گذاری نیست",
   "referralTitle": "دعوت از دوستان",
   "referralBody": "کد خود را به اشتراک بگذارید. دوستتان بلافاصله {count, plural, =1{{count} تحلیل اضافی} other{{count} تحلیل اضافی}} دریافت می‌کند و شما هم پس از نخستین تحلیل او همین مقدار را می‌گیرید.",
+  "@referralBody": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralYourCode": "کد شما",
   "referralStats": "دعوت‌شده: {invited} · پاداش‌گرفته: {rewarded}",
+  "@referralStats": {
+    "placeholders": {
+      "invited": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "rewarded": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralHaveCode": "کدی از یک دوست دارید؟",
   "referralRedeem": "اعمال کد",
   "referralRedeemed": "{count, plural, =1{{count} تحلیل اضافی افزوده شد. خوش آمدید!} other{{count} تحلیل اضافی افزوده شد. خوش آمدید!}}",
+  "@referralRedeemed": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralErrUnknown": "این کد وجود ندارد. آن را بررسی کنید و دوباره تلاش کنید.",
   "referralErrOwn": "نمی‌توانید کد خودتان را اعمال کنید.",
   "referralErrAlready": "شما قبلاً کد یک دوست را اعمال کرده‌اید.",
   "referralShareText": "من با WhatStock سهام را تحلیل می‌کنم: از یک سهم عکس بگیرید تا هوش مصنوعی آن را توضیح دهد. با کد من {code} {count, plural, =1{{count} تحلیل اضافی} other{{count} تحلیل اضافی}} دریافت می‌کنید.",
+  "@referralShareText": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralCopied": "کد کپی شد",
   "onboardTitle1": "از یک سهم عکس بگیرید",
   "onboardBody1": "صفحهٔ یک اپ کارگزاری، یک روزنامه یا لوگوی یک شرکت کافی است: WhatStock سهم را تشخیص می‌دهد و قیمت، نمودار و ارقام کلیدی آن را نشان می‌دهد.",
@@ -441,6 +614,14 @@
   "errAskLimit": "به سقف پرسش‌های امروز رسیده‌اید. لطفاً فردا دوباره امتحان کنید.",
   "eventTomorrow": "فردا",
   "eventInDays": "{days, plural, =1{{days} روز دیگر} other{{days} روز دیگر}}",
+  "@eventInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "eventEarnings": "نتایج فصلی",
   "eventBeforeOpen": "پیش از گشایش بازار",
   "eventAfterClose": "پس از بسته شدن بازار",
@@ -471,7 +652,23 @@
   "portfolioImportHint": "در هر خط یک خرید جای‌گذاری کنید: نماد سهم، تعداد، قیمت، واحد پول، تاریخ (YYYY-MM-DD). ستون‌ها می‌توانند با ویرگول، نقطه‌ویرگول یا تب از هم جدا شوند؛ سطر عنوان اختیاری است.",
   "portfolioImportButton": "وارد کردن",
   "portfolioImported": "{count, plural, one{{count} تراکنش افزوده شد} other{{count} تراکنش افزوده شد}}",
+  "@portfolioImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioImportSkipped": "{count, plural, =1{{count} خط نادیده گرفته شد} other{{count} خط نادیده گرفته شد}}",
+  "@portfolioImportSkipped": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "syncInfo": "سبد سهام، علاقه‌مندی‌ها، هشدارهای قیمت و یادداشت‌ها در همه دستگاه‌های شما همگام‌سازی می‌شوند.",
   "syncLast": "آخرین همگام‌سازی: {time}",
   "syncNow": "همگام‌سازی اکنون",
@@ -553,17 +750,45 @@
   "earningsExpected": "EPS مورد انتظار",
   "earningsReported": "EPS گزارش‌شده",
   "earningsBeats": "{total, plural, =1{برابر یا بالاتر از EPS مورد انتظار در {beats} از {total} فصل} other{برابر یا بالاتر از EPS مورد انتظار در {beats} از {total} فصل اخیر}}",
+  "@earningsBeats": {
+    "placeholders": {
+      "beats": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "earningsReminderTomorrow": "{symbol} فردا نتایج فصلی را اعلام می‌کند",
   "earningsReminderToday": "{symbol} امروز نتایج فصلی را اعلام می‌کند",
   "earningsRemindersTitle": "یادآور نتایج",
   "earningsRemindersSubtitle": "اعلانی یک روز پیش از آنکه سهام علاقه‌مندی‌ها یا سبد سهام شما نتایج فصلی را اعلام کنند",
   "addAllToFavorites": "افزودن همه به علاقه‌مندی‌ها ({count})",
+  "@addAllToFavorites": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioImportPhoto": "وارد کردن از اسکرین‌شات",
   "holdingsReading": "در حال خواندن موقعیت‌های شما…",
   "holdingsReviewTitle": "موقعیت‌های یافت‌شده",
   "holdingsReviewHint": "پیش از افزودن، اعداد را بررسی کنید. قیمت، میانگین بهای خرید شما برای هر سهم است، نه قیمت امروز.",
   "holdingsNoPrice": "میانگین بهای خرید در تصویر نیست",
   "holdingsAdd": "{count, plural, =1{افزودن {count} موقعیت} other{افزودن {count} موقعیت}}",
+  "@holdingsAdd": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "holdingsNone": "هیچ موقعیت سهامی در این تصویر یافت نشد. یک اسکرین‌شات از صفحهٔ موقعیت‌ها یا دارایی‌های کارگزارتان را امتحان کنید.",
   "week52Range": "دامنهٔ 52 هفته",
   "week52BelowHigh": "{percent} پایین‌تر از بیشترین قیمت 52 هفته",
@@ -576,7 +801,23 @@
   "alertHitTrailing": "{symbol} {percent} از اوج افت کرد",
   "sectionInsiders": "معاملات افراد مطلع",
   "insiderBuys": "{count, plural, =1{{count} خرید} other{{count} خرید}}",
+  "@insiderBuys": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "insiderSells": "{count, plural, =1{{count} فروش} other{{count} فروش}}",
+  "@insiderSells": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "insiderNet": "خالص: {shares} سهم",
   "insiderBuy": "خرید",
   "insiderSell": "فروش",
@@ -620,6 +861,14 @@
   "watchAlertAll": "هشدار برای نوسان‌های بزرگ روزانه",
   "watchAlertAllHint": "هشدار قیمت برای همهٔ سهم‌های این فهرست: وقتی در یک روز این‌قدر بالا یا پایین برود، خبر می‌دهد. سهم‌هایی که از قبل هشدار دارند، همان را نگه می‌دارند.",
   "watchAlertAllDone": "{count, plural, =1{{count} هشدار تنظیم شد} other{{count} هشدار تنظیم شد}}",
+  "@watchAlertAllDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioExportRealized": "خروجی سود محقق‌شده (CSV)",
   "eventsAddToCalendar": "افزودن به تقویم (.ics)",
   "portfolioAnnualReturn": "بازده سالانه",
@@ -638,6 +887,14 @@
   "watchImport": "افزودن نمادها",
   "watchImportHint": "نمادهای سهام را جدا‌شده با ویرگول، فاصله یا خط جدید جای‌گذاری کنید – مثلاً فهرستی که کسی با شما به اشتراک گذاشته است.",
   "watchImported": "{count, plural, =0{سهم جدیدی نیست} =1{{count} سهم افزوده شد} other{{count} سهم افزوده شد}}",
+  "@watchImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "positionsSortWeight": "بزرگ‌ترین اول",
   "positionsSortGain": "بیشترین بازده کل اول",
   "positionsSortToday": "بهترین امروز اول",
@@ -647,8 +904,40 @@
   "usMarketOpen": "بازار آمریکا باز است · {time} دیگر بسته می‌شود",
   "usMarketClosed": "بازار آمریکا بسته است · {time} دیگر باز می‌شود",
   "durationMinutes": "{minutes} دقیقه",
+  "@durationMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationHoursMinutes": "{hours} ساعت {minutes} دقیقه",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationDaysHours": "{days} روز {hours} ساعت",
+  "@durationDaysHours": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "hours": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioGoalSet": "تعیین هدف",
   "portfolioGoalTitle": "هدف سبد سهام",
   "portfolioGoalProgress": "{percent} از هدف {amount}",
@@ -660,6 +949,14 @@
   "alertDeleted": "هشدار حذف شد",
   "alertsClearTriggered": "پاک کردن هشدارهای فعال‌شده",
   "alertsCleared": "{count, plural, =1{{count} هشدار پاک شد} other{{count} هشدار پاک شد}}",
+  "@alertsCleared": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "homeScreenTitle": "صفحه اصلی",
   "allocationCountries": "کشورها",
   "newsExplainNoteResearch": "توضیح هوش مصنوعی: واقعیت‌ها را در وب جست‌وجو می‌کند، مقاله را باز می‌کند و میزان اعتبار منبع را می‌سنجد. توصیه سرمایه‌گذاری نیست. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها.",
@@ -689,6 +986,14 @@
   "portfolioDividendDate": "تاریخ پرداخت",
   "portfolioDividendsEmpty": "هنوز سود سهامی ثبت نشده است. آن را دستی اضافه کنید یا فایل خروجی کارگزارتان را وارد کنید – ردیف‌های سود سهام آن هم برداشته می‌شوند.",
   "portfolioDividendsImported": "{count, plural, =1{{count} سود سهام اضافه شد} other{{count} سود سهام اضافه شد}}",
+  "@portfolioDividendsImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioExportDividends": "خروجی سود سهام (CSV)",
   "portfolioDividendDeleted": "سود سهام حذف شد",
   "portfolioDividendsHint": "مبالغ همان‌طور که به حسابتان رسیده‌اند، به ارز پرداخت؛ جمع‌ها با نرخ امروز تبدیل می‌شوند. برای اظهارنامه مالیاتی از صورت‌حساب کارگزارتان استفاده کنید.",
@@ -696,6 +1001,14 @@
   "awaySince": "از {when}",
   "awayQuiet": "چیزی تغییر چندانی نکرد.",
   "awayAlerts": "{count, plural, =1{{count} هشدار فعال شد} other{{count} هشدار فعال شد}}",
+  "@awayAlerts": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "awayReported": "نتایج خود را اعلام کردند: {symbols}",
   "moveWhyButton": "چرا امروز تغییر می‌کند؟",
   "moveWhyTitle": "{percent} امروز",
@@ -718,6 +1031,18 @@
   "glossVolatility": "میزان نوسان روزانه قیمت، به‌صورت سالانه: ۲۰٪ یعنی در یک سال معمولی قیمت تقریباً در بازه ±۲۰٪ حرکت می‌کند. نوسان بیشتر یعنی حرکت‌های بزرگ‌تر در هر دو جهت.",
   "techNote": "بر اساس قیمت‌های پایانی روزانه محاسبه شده است. سیگنال‌های تکنیکال گذشته را توصیف می‌کنند، نه آینده را.",
   "portfolioAbove200": "{above} از {count} موقعیت بالاتر از میانگین ۲۰۰ روزه خود",
+  "@portfolioAbove200": {
+    "placeholders": {
+      "above": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "watchSignalsTitle": "سیگنال‌ها",
   "signalRsiOversold": "RSI {value} · اشباع فروش",
   "signalRsiOverbought": "RSI {value} · اشباع خرید",
@@ -751,6 +1076,14 @@
   "portfolioSplitRow": "تجزیه سهام {ratio}",
   "portfolioSplitRemoved": "تجزیه سهام حذف شد",
   "portfolioSplitsImported": "{count, plural, =1{{count} تجزیه سهام اضافه شد} other{{count} تجزیه سهام اضافه شد}}",
+  "@portfolioSplitsImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "labelDividendGrowth5y": "رشد سود نقدی (5 ساله)",
   "dividendNone": "در 12 ماه گذشته سود نقدی پرداخت نشده است.",
   "dividendOnYourShares": "برای سهام شما، سالانه",
@@ -793,6 +1126,14 @@
   "portfolioTopHoldings": "بزرگ‌ترین موقعیت‌ها",
   "portfolioShareNote": "فقط درصدها به اشتراک گذاشته می‌شوند، نه مبالغ.",
   "portfolioPositionsCount": "{count, plural, =1{{count} موقعیت} other{{count} موقعیت}}",
+  "@portfolioPositionsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "shareNotAdvice": "توصیه سرمایه‌گذاری نیست",
   "contributionButton": "سرمایه‌گذاری پول جدید",
   "contributionAmount": "مبلغ سرمایه‌گذاری ({currency})",
@@ -808,6 +1149,14 @@
   "portfolioSampleRemove": "حذف نمونه",
   "portfolioStopsAll": "حد ضرر متحرک برای همه موقعیت‌ها",
   "portfolioStopsDone": "{count, plural, =0{همه موقعیت‌ها از قبل حد ضرر متحرک دارند} =1{{count} حد ضرر متحرک تنظیم شد} other{{count} حد ضرر متحرک تنظیم شد}}",
+  "@portfolioStopsDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioSinceSale": "{percent} از زمان فروش",
   "lotPreviewRealized": "محقق‌شده در این فروش (FIFO):",
   "lotPreviewAverage": "میانگین بهای خرید جدید: {after} (اکنون {before})",
@@ -822,7 +1171,23 @@
   "lotNoteBought": "خرید",
   "positionHeld": "مدت نگهداری",
   "durationMonths": "{months, plural, one{{months} ماه} other{{months} ماه}}",
+  "@durationMonths": {
+    "placeholders": {
+      "months": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationDays": "{days, plural, one{{days} روز} other{{days} روز}}",
+  "@durationDays": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "positionHeldSince": "از {date}",
   "lotPreviewWeight": "سهم از سبد پس از معامله: {after} (اکنون {before})",
   "lotFromCash": "پرداخت از نقد (اکنون {amount})",
@@ -837,6 +1202,14 @@
   "activitySearchHint": "فیلتر بر اساس نماد",
   "activityNoMatch": "هیچ تراکنشی با فیلتر مطابقت ندارد.",
   "portfolioImportDuplicates": "{count, plural, one{{count} از قبل ثبت شده، کنار گذاشته شد} other{{count} از قبل ثبت شده، کنار گذاشته شد}}",
+  "@portfolioImportDuplicates": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "tickerChange": "تغییر نماد",
   "tickerChangeTitle": "تغییر نماد · {symbol}",
   "tickerChangeNew": "نماد جدید",
@@ -850,6 +1223,14 @@
   "errRateLimited": "در مدت کوتاهی درخواست‌های زیادی ارسال شده است. لطفاً یک دقیقه صبر کنید و دوباره تلاش کنید.",
   "watchListNameTaken": "فهرستی با این نام از قبل وجود دارد.",
   "watchListLimit": "حداکثر می‌توانید {max} فهرست داشته باشید.",
+  "@watchListLimit": {
+    "placeholders": {
+      "max": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioBuyBelowSold": "دست‌کم {quantity} – این تعداد قبلاً فروخته شده است",
   "restoreNothing": "هیچ خرید قبلی برای بازیابی پیدا نشد.",
   "manageSubscriptionElsewhere": "اینجا اشتراکی برای مدیریت وجود ندارد. اشتراکی که از App Store یا Google Play خریده شده، در تنظیمات فروشگاه مدیریت می‌شود.",
@@ -858,6 +1239,14 @@
   "noteFull": "یادداشت‌های این سهم پر شده است، به همین دلیل این مورد اضافه نشد. یادداشت‌ها را کوتاه‌تر کنید و دوباره امتحان کنید.",
   "portfolioNoRateFor": "نرخ ارز برای {symbols} موجود نیست.",
   "dividendsNotConverted": "{count, plural, =1{{count} مورد سود سهام به {currencies} نرخ ارز ندارد و در جمع‌ها لحاظ نمی‌شود.} other{{count} مورد سود سهام به {currencies} نرخ ارز ندارند و در جمع‌ها لحاظ نمی‌شوند.}}",
+  "@dividendsNotConverted": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "signOutTitle": "از حساب کاربری خارج می‌شوید؟",
   "signOutBody": "سبد سهام، فهرست‌ها، هشدارهای قیمت و یادداشت‌های شما در حساب کاربری‌تان باقی می‌مانند و از این دستگاه حذف می‌شوند. برای بازگرداندن آن‌ها دوباره وارد شوید.",
   "signOutUnsaved": "برخی تغییرات در حساب کاربری‌تان ذخیره نشد (اتصال برقرار نیست؟). اگر اکنون خارج شوید، این تغییرات از بین می‌روند.",
@@ -901,5 +1290,7 @@
   "errAiUnavailable": "سرویس هوش مصنوعی در حال حاضر در دسترس نیست. چند دقیقه دیگر دوباره امتحان کنید.",
   "errMarketUnavailable": "داده‌های بازار در حال حاضر در دسترس نیست. چند دقیقه دیگر دوباره امتحان کنید.",
   "purchaseUnavailable": "خرید در حال حاضر در دسترس نیست. بعداً دوباره امتحان کنید.",
-  "signOutLocalOnly": "تحلیل‌های ذخیره‌شده و یادداشت‌های هوش مصنوعی فقط روی این دستگاه نگه داشته می‌شوند، نه در حساب کاربری‌تان، بنابراین برای همیشه حذف می‌شوند."
+  "signOutLocalOnly": "تحلیل‌های ذخیره‌شده و یادداشت‌های هوش مصنوعی فقط روی این دستگاه نگه داشته می‌شوند، نه در حساب کاربری‌تان، بنابراین برای همیشه حذف می‌شوند.",
+  "watchImportedNone": "سهم جدیدی نیست",
+  "portfolioStopsNone": "همه موقعیت‌ها از قبل حد ضرر متحرک دارند"
 }

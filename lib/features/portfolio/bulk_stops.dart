@@ -41,7 +41,8 @@ Future<void> showBulkStops(BuildContext context) async {
     ..hideCurrentSnackBar()
     ..showSnackBar(
       SnackBar(
-        content: Text(l10n.portfolioStopsDone(added.length)),
+        // Külön kulcs a nullára: lettül a „zero” alak a 10–20-at is fedi, a =0 szöveg ott nem állhatna.
+        content: Text(added.isEmpty ? l10n.portfolioStopsNone : l10n.portfolioStopsDone(added.length)),
         // Egy koppintással mind visszavonható.
         action: added.isEmpty
             ? null

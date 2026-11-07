@@ -13,9 +13,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'وێنەی پشکێک بگرە و هەموو شتێک دەربارەی بزانە.';
-
-  @override
   String get homeHint =>
       'بڕوانامەی پشک، شاشەی ئەپی بڕۆکەر، ڕۆژنامەیەک یان لۆگۆی کۆمپانیایەک – هەر شتێک کە پشکێک دیاری بکات.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get takePhoto => 'وێنە بگرە';
 
   @override
-  String get chooseFromGallery => 'لە گەلەرییەوە هەڵبژێرە';
-
-  @override
   String get chooseImage => 'وێنەیەک هەڵبژێرە';
-
-  @override
-  String get enterTickerManually => 'هێما بە دەست بنووسە';
-
-  @override
-  String get tickerInputLabel => 'هێمای پشک';
-
-  @override
-  String get tickerInputHint => 'بۆ نموونە AAPL';
 
   @override
   String get lookUp => 'بگەڕێ';
@@ -186,9 +171,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get labelHeadquarters => 'بارەگای سەرەکی';
 
   @override
-  String get labelDescription => 'وەسف';
-
-  @override
   String get labelLastPrice => 'دوایین نرخ';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get noNews => 'هیچ هەواڵێکی نوێ نییە.';
-
-  @override
-  String get openArticle => 'کردنەوەی وتار';
 
   @override
   String get openLinkFailed => 'بەستەرەکە نەکرایەوە.';
@@ -599,11 +578,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get displayCurrencyNone => 'تەنها دراوی خودی پشکەکە';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ بە $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'نرخی گۆڕینەوە: 1 $from = $rate $to (ECB، $date)';
   }
@@ -675,11 +649,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count شیکاری لە مانگێکدا';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'تاقیکردنەوەی بەخۆڕایی $days ڕۆژە لەگەڵ $count شیکاری';
   }
 
   @override
@@ -771,9 +740,6 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get viewPlans => 'بینینی پلانەکان';
-
-  @override
-  String get usageTitle => 'بەکارهێنان';
 
   @override
   String get demoPurchaseNote => 'پارەدانی نموونە: کڕینەکان لەم پلاتفۆرمەدا لاسایی دەکرێنەوە.';
@@ -1135,9 +1101,6 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'پۆزیشنەکەت';
-
-  @override
-  String get portfolioPurchases => 'کڕینەکان';
 
   @override
   String get portfolioRemove => 'لابردن';
@@ -2442,6 +2405,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'هیچ پشکێکی نوێ نییە';
+
+  @override
   String get positionsSortWeight => 'گەورەترین سەرەتا';
 
   @override
@@ -2634,6 +2600,9 @@ class AppLocalizationsCkb extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'هەموو پۆزیشنەکان پێشتر ئەم ئاگادارکردنەوەیەیان هەیە';
 
   @override
   String portfolioSinceSale(String percent) {

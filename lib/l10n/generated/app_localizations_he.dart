@@ -13,28 +13,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'צלמו מניה וגלו עליה הכול.';
-
-  @override
   String get homeHint => 'תעודת מניה, מסך של אפליקציית מסחר, עיתון או לוגו של חברה – כל דבר שמזהה מניה.';
 
   @override
   String get takePhoto => 'צילום תמונה';
 
   @override
-  String get chooseFromGallery => 'בחירה מהגלריה';
-
-  @override
   String get chooseImage => 'בחירת תמונה';
-
-  @override
-  String get enterTickerManually => 'הזנת סימול ידנית';
-
-  @override
-  String get tickerInputLabel => 'סימול המניה';
-
-  @override
-  String get tickerInputHint => 'למשל AAPL';
 
   @override
   String get lookUp => 'חיפוש';
@@ -184,9 +169,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get labelHeadquarters => 'מטה';
 
   @override
-  String get labelDescription => 'תיאור';
-
-  @override
   String get labelLastPrice => 'מחיר אחרון';
 
   @override
@@ -333,9 +315,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get noNews => 'אין חדשות עדכניות.';
-
-  @override
-  String get openArticle => 'פתיחת הכתבה';
 
   @override
   String get openLinkFailed => 'לא ניתן היה לפתוח את הקישור.';
@@ -603,11 +582,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get displayCurrencyNone => 'רק המטבע של המניה';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ ב-$currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'שער: 1 $from = $rate $to (ECB, $date)';
   }
@@ -679,11 +653,6 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count ניתוחים בחודש';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'ניסיון חינם ל-$days ימים עם $count ניתוחים';
   }
 
   @override
@@ -776,9 +745,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get viewPlans => 'הצגת המסלולים';
-
-  @override
-  String get usageTitle => 'שימוש';
 
   @override
   String get demoPurchaseNote => 'חיוב לדוגמה: הרכישות בפלטפורמה הזו הן הדמיה בלבד.';
@@ -1148,9 +1114,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'הפוזיציה שלך';
-
-  @override
-  String get portfolioPurchases => 'רכישות';
 
   @override
   String get portfolioRemove => 'הסרה';
@@ -2446,6 +2409,9 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'אין מניות חדשות';
+
+  @override
   String get positionsSortWeight => 'הגדולות קודם';
 
   @override
@@ -2643,6 +2609,9 @@ class AppLocalizationsHe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'לכל הפוזיציות כבר יש סטופ נגרר';
 
   @override
   String portfolioSinceSale(String percent) {

@@ -13,28 +13,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'አክሲዮንን ፎቶ ያንሱ፤ ስለሱ ሁሉንም ነገር ይወቁ።';
-
-  @override
   String get homeHint => 'የአክሲዮን ሰርተፊኬት፣ የደላላ መተግበሪያ ማያ ገጽ፣ ጋዜጣ ወይም የኩባንያ አርማ – አክሲዮንን የሚለይ ማንኛውም ነገር።';
 
   @override
   String get takePhoto => 'ፎቶ አንሳ';
 
   @override
-  String get chooseFromGallery => 'ከጋለሪ ምረጥ';
-
-  @override
   String get chooseImage => 'ምስል ምረጥ';
-
-  @override
-  String get enterTickerManually => 'ምልክቱን በእጅ አስገባ';
-
-  @override
-  String get tickerInputLabel => 'የአክሲዮን ምልክት';
-
-  @override
-  String get tickerInputHint => 'ለምሳሌ AAPL';
 
   @override
   String get lookUp => 'ፈልግ';
@@ -183,9 +168,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get labelHeadquarters => 'ዋና መሥሪያ ቤት';
 
   @override
-  String get labelDescription => 'መግለጫ';
-
-  @override
   String get labelLastPrice => 'የመጨረሻ ዋጋ';
 
   @override
@@ -326,9 +308,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get noNews => 'የቅርብ ጊዜ ዜና የለም።';
-
-  @override
-  String get openArticle => 'ጽሑፉን ክፈት';
 
   @override
   String get openLinkFailed => 'ሊንኩን መክፈት አልተቻለም።';
@@ -596,11 +575,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get displayCurrencyNone => 'የአክሲዮኑ የራሱ ምንዛሬ ብቻ';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ በ$currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'ተመን፦ 1 $from = $rate $to (ECB፣ $date)';
   }
@@ -672,11 +646,6 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'በወር $count ትንተናዎች';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'የ$days ቀን ነፃ ሙከራ ከ$count ትንተናዎች ጋር';
   }
 
   @override
@@ -767,9 +736,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get viewPlans => 'ዕቅዶችን እይ';
-
-  @override
-  String get usageTitle => 'አጠቃቀም';
 
   @override
   String get demoPurchaseNote => 'የማሳያ ክፍያ፦ በዚህ መድረክ ላይ ግዢዎች የማስመሰል ብቻ ናቸው።';
@@ -1128,9 +1094,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'የእርስዎ ይዞታ';
-
-  @override
-  String get portfolioPurchases => 'ግዢዎች';
 
   @override
   String get portfolioRemove => 'አስወግድ';
@@ -2389,6 +2352,9 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'አዲስ አክሲዮን የለም';
+
+  @override
   String get positionsSortWeight => 'ትልቁ መጀመሪያ';
 
   @override
@@ -2579,6 +2545,9 @@ class AppLocalizationsAm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'ሁሉም ይዞታዎች ቀድሞውኑ ይህ ማንቂያ አላቸው';
 
   @override
   String portfolioSinceSale(String percent) {

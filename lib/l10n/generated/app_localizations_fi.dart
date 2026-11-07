@@ -13,9 +13,6 @@ class AppLocalizationsFi extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Kuvaa osake ja opi siitä kaikki.';
-
-  @override
   String get homeHint =>
       'Osakekirja, välittäjäsovelluksen näyttö, sanomalehti tai yrityksen logo – mikä tahansa, mikä tunnistaa osakkeen.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get takePhoto => 'Ota kuva';
 
   @override
-  String get chooseFromGallery => 'Valitse galleriasta';
-
-  @override
   String get chooseImage => 'Valitse kuva';
-
-  @override
-  String get enterTickerManually => 'Syötä tunnus manuaalisesti';
-
-  @override
-  String get tickerInputLabel => 'Osaketunnus';
-
-  @override
-  String get tickerInputHint => 'esim. AAPL';
 
   @override
   String get lookUp => 'Hae';
@@ -186,9 +171,6 @@ class AppLocalizationsFi extends AppLocalizations {
   String get labelHeadquarters => 'Pääkonttori';
 
   @override
-  String get labelDescription => 'Kuvaus';
-
-  @override
   String get labelLastPrice => 'Viimeisin kurssi';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get noNews => 'Ei tuoreita uutisia.';
-
-  @override
-  String get openArticle => 'Avaa artikkeli';
 
   @override
   String get openLinkFailed => 'Linkkiä ei voitu avata.';
@@ -605,11 +584,6 @@ class AppLocalizationsFi extends AppLocalizations {
   String get displayCurrencyNone => 'Vain osakkeen oma valuutta';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ valuutassa $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kurssi: 1 $from = $rate $to (EKP, $date)';
   }
@@ -681,11 +655,6 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count analyysia kuukaudessa';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days päivän ilmainen kokeilu, $count analyysia';
   }
 
   @override
@@ -778,9 +747,6 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get viewPlans => 'Näytä paketit';
-
-  @override
-  String get usageTitle => 'Käyttö';
 
   @override
   String get demoPurchaseNote => 'Demolaskutus: ostokset simuloidaan tällä alustalla.';
@@ -1144,9 +1110,6 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Omistuksesi';
-
-  @override
-  String get portfolioPurchases => 'Ostot';
 
   @override
   String get portfolioRemove => 'Poista';
@@ -2459,6 +2422,9 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Ei uusia osakkeita';
+
+  @override
   String get positionsSortWeight => 'Suurimmat ensin';
 
   @override
@@ -2651,6 +2617,9 @@ class AppLocalizationsFi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Kaikilla omistuksilla on jo liukuva stop';
 
   @override
   String portfolioSinceSale(String percent) {

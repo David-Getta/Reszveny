@@ -13,9 +13,6 @@ class AppLocalizationsSu extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Poto hiji saham, terus kanyahoan sagala rupa ngeunaan éta saham.';
-
-  @override
   String get homeHint =>
       'Sértifikat saham, layar aplikasi sekuritas, koran atawa logo pausahaan – naon waé nu bisa ngaidéntifikasi hiji saham.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsSu extends AppLocalizations {
   String get takePhoto => 'Candak poto';
 
   @override
-  String get chooseFromGallery => 'Pilih tina galeri';
-
-  @override
   String get chooseImage => 'Pilih gambar';
-
-  @override
-  String get enterTickerManually => 'Asupkeun kode saham sacara manual';
-
-  @override
-  String get tickerInputLabel => 'Kode saham';
-
-  @override
-  String get tickerInputHint => 'conto: AAPL';
 
   @override
   String get lookUp => 'Téangan';
@@ -186,9 +171,6 @@ class AppLocalizationsSu extends AppLocalizations {
   String get labelHeadquarters => 'Kantor puseur';
 
   @override
-  String get labelDescription => 'Pedaran';
-
-  @override
   String get labelLastPrice => 'Harga panungtung';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get noNews => 'Teu aya warta anyar.';
-
-  @override
-  String get openArticle => 'Buka artikel';
 
   @override
   String get openLinkFailed => 'Tautan teu bisa dibuka.';
@@ -600,11 +579,6 @@ class AppLocalizationsSu extends AppLocalizations {
   String get displayCurrencyNone => 'Ngan mata uang saham éta sorangan';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ dina $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kurs: 1 $from = $rate $to (ECB, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count analisis per bulan';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Uji coba gratis $days poé kalayan $count analisis';
   }
 
   @override
@@ -773,9 +742,6 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get viewPlans => 'Tingali pakét';
-
-  @override
-  String get usageTitle => 'Pamakéan';
 
   @override
   String get demoPurchaseNote => 'Tagihan démo: pameulian disimulasikeun dina platform ieu.';
@@ -1140,9 +1106,6 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Posisi anjeun';
-
-  @override
-  String get portfolioPurchases => 'Pameulian';
 
   @override
   String get portfolioRemove => 'Piceun';
@@ -2447,6 +2410,9 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Teu aya saham anyar';
+
+  @override
   String get positionsSortWeight => 'Panggedéna heula';
 
   @override
@@ -2640,6 +2606,9 @@ class AppLocalizationsSu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Sadaya posisi parantos gaduh trailing stop';
 
   @override
   String portfolioSinceSale(String percent) {

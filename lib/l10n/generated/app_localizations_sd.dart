@@ -13,9 +13,6 @@ class AppLocalizationsSd extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ڪنهن شيئر جي تصوير ڪڍو ۽ ان بابت سڀ ڪجهه ڄاڻو.';
-
-  @override
   String get homeHint =>
       'شيئر سرٽيفڪيٽ، بروڪريج ايپ جي اسڪرين، اخبار يا ڪمپني جو لوگو – ڪا به شيءِ جيڪا شيئر جي سڃاڻپ ڪرائي.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsSd extends AppLocalizations {
   String get takePhoto => 'تصوير ڪڍو';
 
   @override
-  String get chooseFromGallery => 'گيلري مان چونڊيو';
-
-  @override
   String get chooseImage => 'تصوير چونڊيو';
-
-  @override
-  String get enterTickerManually => 'ٽڪر هٿ سان داخل ڪريو';
-
-  @override
-  String get tickerInputLabel => 'ٽڪر سمبل';
-
-  @override
-  String get tickerInputHint => 'مثال طور AAPL';
 
   @override
   String get lookUp => 'ڳوليو';
@@ -185,9 +170,6 @@ class AppLocalizationsSd extends AppLocalizations {
   String get labelHeadquarters => 'هيڊ آفيس';
 
   @override
-  String get labelDescription => 'تفصيل';
-
-  @override
   String get labelLastPrice => 'آخري قيمت';
 
   @override
@@ -328,9 +310,6 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get noNews => 'ڪا تازي خبر ناهي.';
-
-  @override
-  String get openArticle => 'مضمون کوليو';
 
   @override
   String get openLinkFailed => 'لنڪ کولي نه سگهياسين.';
@@ -599,11 +578,6 @@ class AppLocalizationsSd extends AppLocalizations {
   String get displayCurrencyNone => 'صرف شيئر جي پنهنجي ڪرنسي';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency ۾';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'شرح: 1 $from = $rate $to (ECB، $date)';
   }
@@ -675,11 +649,6 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'هر مهيني $count تجزيا';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count تجزين سان $days ڏينهن جو مفت آزمائشي دور';
   }
 
   @override
@@ -773,9 +742,6 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get viewPlans => 'پلان ڏسو';
-
-  @override
-  String get usageTitle => 'استعمال';
 
   @override
   String get demoPurchaseNote => 'ڊيمو بلنگ: هن پليٽ فارم تي خريداريون نقلي آهن.';
@@ -1137,9 +1103,6 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'توهان جي پوزيشن';
-
-  @override
-  String get portfolioPurchases => 'خريداريون';
 
   @override
   String get portfolioRemove => 'هٽايو';
@@ -2430,6 +2393,9 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'ڪو به نئون شيئر ناهي';
+
+  @override
   String get positionsSortWeight => 'سڀ کان وڏا پهرين';
 
   @override
@@ -2622,6 +2588,9 @@ class AppLocalizationsSd extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'هر پوزيشن تي اڳ ۾ ئي ٽريلنگ اسٽاپ آهي';
 
   @override
   String portfolioSinceSale(String percent) {

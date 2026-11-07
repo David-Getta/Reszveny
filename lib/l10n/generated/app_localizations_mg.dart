@@ -13,9 +13,6 @@ class AppLocalizationsMg extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Makà sarin\'ny aksiona iray ary fantaro ny momba azy rehetra.';
-
-  @override
   String get homeHint =>
       'Taratasy fanamarinana aksiona, efijerin\'ny fampiharana broker, gazety na logon\'ny orinasa – izay rehetra mamantatra aksiona.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String get takePhoto => 'Makà sary';
 
   @override
-  String get chooseFromGallery => 'Safidio ao amin\'ny tahirin-tsary';
-
-  @override
   String get chooseImage => 'Misafidiana sary';
-
-  @override
-  String get enterTickerManually => 'Soraty ny ticker';
-
-  @override
-  String get tickerInputLabel => 'Marika ticker';
-
-  @override
-  String get tickerInputHint => 'oh. AAPL';
 
   @override
   String get lookUp => 'Tadiavo';
@@ -186,9 +171,6 @@ class AppLocalizationsMg extends AppLocalizations {
   String get labelHeadquarters => 'Foibe';
 
   @override
-  String get labelDescription => 'Fanazavana';
-
-  @override
   String get labelLastPrice => 'Vidiny farany';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get noNews => 'Tsy misy vaovao vao haingana.';
-
-  @override
-  String get openArticle => 'Sokafy ny lahatsoratra';
 
   @override
   String get openLinkFailed => 'Tsy afaka nosokafana ny rohy.';
@@ -609,11 +588,6 @@ class AppLocalizationsMg extends AppLocalizations {
   String get displayCurrencyNone => 'Ny volan\'ny aksiona ihany';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ amin\'ny $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Sandam-bola: 1 $from = $rate $to (BCE, $date)';
   }
@@ -685,11 +659,6 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count fandalinana isam-bolana';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days andro fanandramana maimaim-poana miaraka amin\'ny $count fandalinana';
   }
 
   @override
@@ -784,9 +753,6 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get viewPlans => 'Jereo ny tolotra';
-
-  @override
-  String get usageTitle => 'Fampiasana';
 
   @override
   String get demoPurchaseNote => 'Fandoavam-bola demo: tsy tena izy ny fividianana amin\'ity sehatra ity.';
@@ -1153,9 +1119,6 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Ny fanananao';
-
-  @override
-  String get portfolioPurchases => 'Fividianana';
 
   @override
   String get portfolioRemove => 'Esory';
@@ -2487,6 +2450,9 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Tsy misy anjara vaovao';
+
+  @override
   String get positionsSortWeight => 'Ny lehibe indrindra aloha';
 
   @override
@@ -2680,6 +2646,9 @@ class AppLocalizationsMg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Efa manana io fampitandremana io ny fananana rehetra';
 
   @override
   String portfolioSinceSale(String percent) {

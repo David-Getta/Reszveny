@@ -13,28 +13,13 @@ class AppLocalizationsTi extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ናይ ሓደ ኣክሲዮን ስእሊ ኣልዕሉ፣ ብዛዕባኡ ድማ ኩሉ ፍለጡ።';
-
-  @override
   String get homeHint => 'ሰርቲፊኬት ኣክሲዮን፣ ስክሪን ኣፕ ደላላይ፣ ጋዜጣ ወይ ኣርማ ኩባንያ – ንኣክሲዮን ዘለሊ ዝኾነ ነገር።';
 
   @override
   String get takePhoto => 'ስእሊ ኣልዕል';
 
   @override
-  String get chooseFromGallery => 'ካብ ጋለሪ ምረጽ';
-
-  @override
   String get chooseImage => 'ስእሊ ምረጽ';
-
-  @override
-  String get enterTickerManually => 'ምልክት ብኢድ ኣእቱ';
-
-  @override
-  String get tickerInputLabel => 'ምልክት ኣክሲዮን';
-
-  @override
-  String get tickerInputHint => 'ንኣብነት AAPL';
 
   @override
   String get lookUp => 'ድለ';
@@ -183,9 +168,6 @@ class AppLocalizationsTi extends AppLocalizations {
   String get labelHeadquarters => 'ቀንዲ ቤት ጽሕፈት';
 
   @override
-  String get labelDescription => 'መግለጺ';
-
-  @override
   String get labelLastPrice => 'ናይ መወዳእታ ዋጋ';
 
   @override
@@ -326,9 +308,6 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get noNews => 'ናይ ቀረባ እዋን ዜና የለን።';
-
-  @override
-  String get openArticle => 'ጽሑፍ ክፈት';
 
   @override
   String get openLinkFailed => 'እቲ ሊንክ ክኽፈት ኣይከኣለን።';
@@ -596,11 +575,6 @@ class AppLocalizationsTi extends AppLocalizations {
   String get displayCurrencyNone => 'ናይቲ ኣክሲዮን ናይ ገዛእ ርእሱ ባጤራ ጥራይ';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ ብ$currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'መጠን ምልውዋጥ፦ 1 $from = $rate $to (ECB፣ $date)';
   }
@@ -672,11 +646,6 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'ኣብ ወርሒ $count ትንተናታት';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'ናይ $days መዓልቲ ነጻ ፈተነ ምስ $count ትንተናታት';
   }
 
   @override
@@ -767,9 +736,6 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get viewPlans => 'መደባት ርአ';
-
-  @override
-  String get usageTitle => 'ኣጠቓቕማ';
 
   @override
   String get demoPurchaseNote => 'ናይ ምርኢት ክፍሊት፦ ኣብዚ መድረኽ ዕድግታት ንምምሳል ጥራይ እዮም።';
@@ -1123,9 +1089,6 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'ዋንነትኩም';
-
-  @override
-  String get portfolioPurchases => 'ዕድግታት';
 
   @override
   String get portfolioRemove => 'ኣልግስ';
@@ -2360,6 +2323,9 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'ሓድሽ ኣክሲዮን የለን';
+
+  @override
   String get positionsSortWeight => 'ዝዓበዩ ቅድም';
 
   @override
@@ -2550,6 +2516,9 @@ class AppLocalizationsTi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'ኩሉ ዋንነት ድሮ እዚ መጠንቀቕታ ኣለዎ';
 
   @override
   String portfolioSinceSale(String percent) {

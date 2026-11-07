@@ -386,8 +386,13 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const UpdateBanner(),
-                  if (_showActions)
-                    const Align(alignment: AlignmentDirectional.centerStart, child: UsageChip(compact: true)),
+                  // Láthatóság-váltás, nem feltételes gyerek: az oszlop gyerekeinek száma ne változzon az
+                  // ablak átméretezésekor, különben a kereső és minden szakasz újra felépülne (a gépelés és
+                  // a betöltött adatok elvesznének, a régi kereső figyelője pedig a vezérlőn maradna).
+                  Visibility(
+                    visible: _showActions,
+                    child: const Align(alignment: AlignmentDirectional.centerStart, child: UsageChip(compact: true)),
+                  ),
                   const SizedBox(height: 48),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -531,14 +536,17 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                     const SizedBox(height: 24),
                     _DemoBanner(symbols: DemoMarketDataProvider.supportedSymbols.join(', ')),
                   ],
-                  if (DesktopIntegration.isSupported && _showActions) ...[
-                    const SizedBox(height: 24),
-                    Text(
-                      hotkeyHintText(l10n, services),
-                      textAlign: TextAlign.center,
-                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                  Visibility(
+                    visible: DesktopIntegration.isSupported && _showActions,
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 24),
+                      child: Text(
+                        hotkeyHintText(l10n, services, names: keyNamesOf(MaterialLocalizations.of(context))),
+                        textAlign: TextAlign.center,
+                        style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                      ),
                     ),
-                  ],
+                  ),
                   const SizedBox(height: 40),
                   Text(
                     l10n.disclaimer,

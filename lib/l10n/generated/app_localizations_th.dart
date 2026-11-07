@@ -13,28 +13,13 @@ class AppLocalizationsTh extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ถ่ายรูปหุ้น แล้วรู้ทุกเรื่องเกี่ยวกับหุ้นตัวนั้น';
-
-  @override
   String get homeHint => 'ใบหุ้น หน้าจอแอปโบรกเกอร์ หนังสือพิมพ์ หรือโลโก้บริษัท – อะไรก็ได้ที่บอกได้ว่าเป็นหุ้นตัวไหน';
 
   @override
   String get takePhoto => 'ถ่ายรูป';
 
   @override
-  String get chooseFromGallery => 'เลือกจากคลังภาพ';
-
-  @override
   String get chooseImage => 'เลือกรูปภาพ';
-
-  @override
-  String get enterTickerManually => 'ป้อนชื่อย่อหุ้นเอง';
-
-  @override
-  String get tickerInputLabel => 'ชื่อย่อหุ้น';
-
-  @override
-  String get tickerInputHint => 'เช่น AAPL';
 
   @override
   String get lookUp => 'ค้นหา';
@@ -183,9 +168,6 @@ class AppLocalizationsTh extends AppLocalizations {
   String get labelHeadquarters => 'สำนักงานใหญ่';
 
   @override
-  String get labelDescription => 'คำอธิบาย';
-
-  @override
   String get labelLastPrice => 'ราคาล่าสุด';
 
   @override
@@ -326,9 +308,6 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get noNews => 'ไม่มีข่าวล่าสุด';
-
-  @override
-  String get openArticle => 'เปิดบทความ';
 
   @override
   String get openLinkFailed => 'เปิดลิงก์ไม่ได้';
@@ -596,11 +575,6 @@ class AppLocalizationsTh extends AppLocalizations {
   String get displayCurrencyNone => 'เฉพาะสกุลเงินของหุ้น';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ เป็น $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'อัตรา: 1 $from = $rate $to (ECB, $date)';
   }
@@ -672,11 +646,6 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'วิเคราะห์ได้ $count ครั้งต่อเดือน';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'ทดลองใช้ฟรี $days วัน พร้อมการวิเคราะห์ $count ครั้ง';
   }
 
   @override
@@ -763,9 +732,6 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get viewPlans => 'ดูแพ็กเกจ';
-
-  @override
-  String get usageTitle => 'การใช้งาน';
 
   @override
   String get demoPurchaseNote => 'การชำระเงินสาธิต: การซื้อบนแพลตฟอร์มนี้เป็นเพียงการจำลอง';
@@ -1110,9 +1076,6 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'หุ้นที่คุณถือ';
-
-  @override
-  String get portfolioPurchases => 'รายการซื้อ';
 
   @override
   String get portfolioRemove => 'ลบ';
@@ -2373,6 +2336,9 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'ไม่มีหุ้นใหม่';
+
+  @override
   String get positionsSortWeight => 'ใหญ่ที่สุดก่อน';
 
   @override
@@ -2564,6 +2530,9 @@ class AppLocalizationsTh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'หุ้นที่ถือทุกรายการมี Trailing Stop อยู่แล้ว';
 
   @override
   String portfolioSinceSale(String percent) {

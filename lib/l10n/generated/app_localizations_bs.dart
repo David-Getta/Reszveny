@@ -13,9 +13,6 @@ class AppLocalizationsBs extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fotografišite dionicu i saznajte sve o njoj.';
-
-  @override
   String get homeHint =>
       'Potvrda o dionicama, ekran brokerske aplikacije, novine ili logo kompanije – bilo šta po čemu se dionica može prepoznati.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get takePhoto => 'Snimi fotografiju';
 
   @override
-  String get chooseFromGallery => 'Odaberi iz galerije';
-
-  @override
   String get chooseImage => 'Odaberi sliku';
-
-  @override
-  String get enterTickerManually => 'Ručno unesi tiker';
-
-  @override
-  String get tickerInputLabel => 'Tiker simbol';
-
-  @override
-  String get tickerInputHint => 'npr. AAPL';
 
   @override
   String get lookUp => 'Pretraži';
@@ -186,9 +171,6 @@ class AppLocalizationsBs extends AppLocalizations {
   String get labelHeadquarters => 'Sjedište';
 
   @override
-  String get labelDescription => 'Opis';
-
-  @override
   String get labelLastPrice => 'Posljednja cijena';
 
   @override
@@ -335,9 +317,6 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get noNews => 'Nema novijih vijesti.';
-
-  @override
-  String get openArticle => 'Otvori članak';
 
   @override
   String get openLinkFailed => 'Link nije moguće otvoriti.';
@@ -605,11 +584,6 @@ class AppLocalizationsBs extends AppLocalizations {
   String get displayCurrencyNone => 'Samo vlastita valuta dionice';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ u $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kurs: 1 $from = $rate $to (ECB, $date)';
   }
@@ -686,18 +660,6 @@ class AppLocalizationsBs extends AppLocalizations {
       other: '$count analiza mjesečno',
       few: '$count analize mjesečno',
       one: '$count analiza mjesečno',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Besplatni probni period od $days dana uključuje $count analiza',
-      few: 'Besplatni probni period od $days dana uključuje $count analize',
-      one: 'Besplatni probni period od $days dana uključuje $count analizu',
     );
     return '$_temp0';
   }
@@ -792,9 +754,6 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get viewPlans => 'Pogledaj planove';
-
-  @override
-  String get usageTitle => 'Potrošnja';
 
   @override
   String get demoPurchaseNote => 'Demo naplata: kupovine se na ovoj platformi simuliraju.';
@@ -1167,9 +1126,6 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Vaša pozicija';
-
-  @override
-  String get portfolioPurchases => 'Kupovine';
 
   @override
   String get portfolioRemove => 'Ukloni';
@@ -2503,6 +2459,9 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Nema novih dionica';
+
+  @override
   String get positionsSortWeight => 'Najveće prvo';
 
   @override
@@ -2702,6 +2661,9 @@ class AppLocalizationsBs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Sve pozicije već imaju to upozorenje';
 
   @override
   String portfolioSinceSale(String percent) {

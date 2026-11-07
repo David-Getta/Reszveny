@@ -13,9 +13,6 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Retratuem ti maysa a stock ket ammuem ti amin a maipapan iti dayta.';
-
-  @override
   String get homeHint =>
       'Share certificate, screen ti brokerage app, pagiwarnak wenno logo ti kompania – aniaman a mangbigbig iti maysa a stock.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get takePhoto => 'Agala iti retrato';
 
   @override
-  String get chooseFromGallery => 'Agpili manipud iti gallery';
-
-  @override
   String get chooseImage => 'Agpili iti ladawan';
-
-  @override
-  String get enterTickerManually => 'Iserrek a manual ti ticker';
-
-  @override
-  String get tickerInputLabel => 'Simbolo ti ticker';
-
-  @override
-  String get tickerInputHint => 'kas iti AAPL';
 
   @override
   String get lookUp => 'Biruken';
@@ -186,9 +171,6 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get labelHeadquarters => 'Kangrunaan nga opisina';
 
   @override
-  String get labelDescription => 'Deskripsion';
-
-  @override
   String get labelLastPrice => 'Maudi a presio';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get noNews => 'Awan ti baro a damag.';
-
-  @override
-  String get openArticle => 'Lukatan ti artikulo';
 
   @override
   String get openLinkFailed => 'Saan a malukatan ti link.';
@@ -602,11 +581,6 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get displayCurrencyNone => 'Ti mismo a currency laeng ti stock';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ iti $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Rate: 1 $from = $rate $to (ECB, $date)';
   }
@@ -678,11 +652,6 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count a panangsukimat iti tunggal bulan';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days nga aldaw a libre a trial nga addaan iti $count a panangsukimat';
   }
 
   @override
@@ -776,9 +745,6 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get viewPlans => 'Kitaen dagiti plan';
-
-  @override
-  String get usageTitle => 'Panangusar';
 
   @override
   String get demoPurchaseNote => 'Demo billing: simulated laeng dagiti panaggatang iti daytoy a platform.';
@@ -1143,9 +1109,6 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Ti posisionmo';
-
-  @override
-  String get portfolioPurchases => 'Dagiti gatang';
 
   @override
   String get portfolioRemove => 'Ikkaten';
@@ -2468,6 +2431,9 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Awan ti baro a stock';
+
+  @override
   String get positionsSortWeight => 'Kadakkelan umuna';
 
   @override
@@ -2661,6 +2627,9 @@ class AppLocalizationsIlo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Addan trailing stop ti tunggal posision';
 
   @override
   String portfolioSinceSale(String percent) {

@@ -13,9 +13,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Хувьцааны зургийг аваад, түүний талаар бүгдийг мэдээрэй.';
-
-  @override
   String get homeHint =>
       'Хувьцааны гэрчилгээ, брокерын аппын дэлгэц, сонин эсвэл компанийн лого – хувьцааг тодорхойлох ямар ч зүйл болно.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get takePhoto => 'Зураг авах';
 
   @override
-  String get chooseFromGallery => 'Галерейгаас сонгох';
-
-  @override
   String get chooseImage => 'Зураг сонгох';
-
-  @override
-  String get enterTickerManually => 'Тикерийг гараар оруулах';
-
-  @override
-  String get tickerInputLabel => 'Тикер';
-
-  @override
-  String get tickerInputHint => 'ж.нь AAPL';
 
   @override
   String get lookUp => 'Хайх';
@@ -186,9 +171,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get labelHeadquarters => 'Төв оффис';
 
   @override
-  String get labelDescription => 'Тайлбар';
-
-  @override
   String get labelLastPrice => 'Сүүлийн үнэ';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get noNews => 'Сүүлийн үеийн мэдээ алга.';
-
-  @override
-  String get openArticle => 'Нийтлэлийг нээх';
 
   @override
   String get openLinkFailed => 'Холбоосыг нээж чадсангүй.';
@@ -601,11 +580,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get displayCurrencyNone => 'Зөвхөн хувьцааны өөрийн валют';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency валютаар';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Ханш: 1 $from = $rate $to (ECB, $date)';
   }
@@ -677,11 +651,6 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Сард $count шинжилгээ';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count шинжилгээтэй $days хоногийн үнэгүй туршилт';
   }
 
   @override
@@ -775,9 +744,6 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get viewPlans => 'Багцуудыг харах';
-
-  @override
-  String get usageTitle => 'Хэрэглээ';
 
   @override
   String get demoPurchaseNote => 'Демо төлбөр: энэ платформ дээр худалдан авалтыг дуурайлгана.';
@@ -1140,9 +1106,6 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Таны эзэмшил';
-
-  @override
-  String get portfolioPurchases => 'Худалдан авалтууд';
 
   @override
   String get portfolioRemove => 'Хасах';
@@ -2447,6 +2410,9 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Шинэ хувьцаа алга';
+
+  @override
   String get positionsSortWeight => 'Хамгийн том нь эхэнд';
 
   @override
@@ -2640,6 +2606,9 @@ class AppLocalizationsMn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Бүх эзэмшилд оргилоос унах сэрэмжлүүлэг аль хэдийн байна';
 
   @override
   String portfolioSinceSale(String percent) {

@@ -13,9 +13,6 @@ class AppLocalizationsBo extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ཧུར་ཁག་ཅིག་གི་པར་བླངས་ནས་དེའི་སྐོར་ཚང་མ་ཤེས་རྟོགས་གནང་།';
-
-  @override
   String get homeHint =>
       'ཧུར་ཁག་ལག་འཁྱེར། ཧུར་ཁག་ཉོ་ཚོང་ཉེར་སྤྱོད་ཀྱི་བརྙན་ཡོལ། ཚགས་པར་རམ་ཀུང་སིའི་མཚོན་རྟགས། – ཧུར་ཁག་ངོས་འཛིན་ཐུབ་པའི་དངོས་པོ་གང་ཡིན་ཡང་ཆོག';
 
@@ -23,19 +20,7 @@ class AppLocalizationsBo extends AppLocalizations {
   String get takePhoto => 'པར་ལེན';
 
   @override
-  String get chooseFromGallery => 'པར་མཛོད་ནས་འདེམས';
-
-  @override
   String get chooseImage => 'པར་རིས་འདེམས';
-
-  @override
-  String get enterTickerManually => 'ཨང་རྟགས་ལག་ཐོག་ནས་འཇུག';
-
-  @override
-  String get tickerInputLabel => 'ཧུར་ཁག་ཨང་རྟགས';
-
-  @override
-  String get tickerInputHint => 'དཔེར་ན། AAPL';
 
   @override
   String get lookUp => 'འཚོལ';
@@ -186,9 +171,6 @@ class AppLocalizationsBo extends AppLocalizations {
   String get labelHeadquarters => 'དབུ་ཁང';
 
   @override
-  String get labelDescription => 'གསལ་བཤད';
-
-  @override
   String get labelLastPrice => 'གོང་ཚད་གསར་ཤོས';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get noNews => 'ཉེ་ཆར་གསར་འགྱུར་མེད།';
-
-  @override
-  String get openArticle => 'རྩོམ་ཡིག་ཁ་ཕྱེ';
 
   @override
   String get openLinkFailed => 'སྦྲེལ་མཐུད་ཁ་ཕྱེ་མ་ཐུབ།';
@@ -602,11 +581,6 @@ class AppLocalizationsBo extends AppLocalizations {
   String get displayCurrencyNone => 'ཧུར་ཁག་རང་གི་དངུལ་ལོར་ཁོ་ན';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency ལ་བསྒྱུར་ན';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'བརྗེ་ཚད: 1 $from = $rate $to (ECB, $date)';
   }
@@ -678,11 +652,6 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'ཟླ་རེར་དབྱེ་ཞིབ་ $count';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'དབྱེ་ཞིབ་ $count ཡོད་པའི་ཉིན་ $days རིང་གི་རིན་མེད་ཚོད་ལྟ';
   }
 
   @override
@@ -769,9 +738,6 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get viewPlans => 'འཆར་གཞི་ལ་ལྟ';
-
-  @override
-  String get usageTitle => 'བེད་སྤྱོད་གནས་ཚུལ';
 
   @override
   String get demoPurchaseNote => 'དཔེ་སྟོན་རིན་སྤྲོད: སྟེགས་བུ་འདིའི་ཐོག་ཉོ་སྒྲུབ་ནི་ལད་ཟློས་ཙམ་ཡིན།';
@@ -1119,9 +1085,6 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'ཁྱེད་ཀྱི་ཉར་ཡོད';
-
-  @override
-  String get portfolioPurchases => 'ཉོ་སྒྲུབ';
 
   @override
   String get portfolioRemove => 'སུབ';
@@ -2393,6 +2356,9 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'ཧུར་ཁག་གསར་པ་མེད།';
+
+  @override
   String get positionsSortWeight => 'ཆེ་ཤོས་སྔོན་ལ';
 
   @override
@@ -2586,6 +2552,9 @@ class AppLocalizationsBo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'ཉར་ཡོད་ཧུར་ཁག་ཚང་མར་ཉེན་བརྡ་འདི་སྔོན་ནས་ཡོད།';
 
   @override
   String portfolioSinceSale(String percent) {

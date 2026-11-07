@@ -13,9 +13,6 @@ class AppLocalizationsBn extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'একটি শেয়ারের ছবি তুলুন এবং তার সম্পর্কে সব জানুন।';
-
-  @override
   String get homeHint =>
       'শেয়ার সার্টিফিকেট, ব্রোকারেজ অ্যাপের স্ক্রিন, সংবাদপত্র বা কোম্পানির লোগো – যা কিছু একটি শেয়ারকে শনাক্ত করে।';
 
@@ -23,19 +20,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get takePhoto => 'ছবি তুলুন';
 
   @override
-  String get chooseFromGallery => 'গ্যালারি থেকে বেছে নিন';
-
-  @override
   String get chooseImage => 'একটি ছবি বেছে নিন';
-
-  @override
-  String get enterTickerManually => 'টিকার ম্যানুয়ালি লিখুন';
-
-  @override
-  String get tickerInputLabel => 'টিকার সিম্বল';
-
-  @override
-  String get tickerInputHint => 'যেমন AAPL';
 
   @override
   String get lookUp => 'খুঁজুন';
@@ -66,7 +51,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String confidencePercent(int percent) {
-    return '$percent% নিশ্চয়তা';
+    final intl.NumberFormat percentNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String percentString = percentNumberFormat.format(percent);
+
+    return '$percentString% নিশ্চয়তা';
   }
 
   @override
@@ -184,9 +172,6 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get labelHeadquarters => 'সদর দপ্তর';
-
-  @override
-  String get labelDescription => 'বিবরণ';
 
   @override
   String get labelLastPrice => 'সর্বশেষ দাম';
@@ -318,7 +303,15 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String analystCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count বিশ্লেষক', one: '$count বিশ্লেষক');
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countString বিশ্লেষক',
+      one: '$countString বিশ্লেষক',
+    );
     return '$_temp0';
   }
 
@@ -329,9 +322,6 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get noNews => 'সম্প্রতি কোনো খবর নেই।';
-
-  @override
-  String get openArticle => 'নিবন্ধ খুলুন';
 
   @override
   String get openLinkFailed => 'লিংক খোলা যায়নি।';
@@ -600,11 +590,6 @@ class AppLocalizationsBn extends AppLocalizations {
   String get displayCurrencyNone => 'শুধু শেয়ারের নিজস্ব মুদ্রা';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency-এ';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'হার: 1 $from = $rate $to (ECB, $date)';
   }
@@ -675,21 +660,22 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String planAnalysesPerMonth(int count) {
-    return 'প্রতি মাসে $count বিশ্লেষণ';
-  }
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
 
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count বিশ্লেষণ সহ $days দিনের বিনামূল্যে ট্রায়াল';
+    return 'প্রতি মাসে $countString বিশ্লেষণ';
   }
 
   @override
   String trialDaysLeft(int days) {
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String daysString = daysNumberFormat.format(days);
+
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'ট্রায়ালের $days দিন বাকি',
-      one: 'ট্রায়ালের $days দিন বাকি',
+      other: 'ট্রায়ালের $daysString দিন বাকি',
+      one: 'ট্রায়ালের $daysString দিন বাকি',
     );
     return '$_temp0';
   }
@@ -699,16 +685,24 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String analysesRemaining(int remaining, int total) {
-    return 'এই মেয়াদে $totalটির মধ্যে $remainingটি বিশ্লেষণ বাকি';
+    final intl.NumberFormat remainingNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String remainingString = remainingNumberFormat.format(remaining);
+    final intl.NumberFormat totalNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String totalString = totalNumberFormat.format(total);
+
+    return 'এই মেয়াদে $totalStringটির মধ্যে $remainingStringটি বিশ্লেষণ বাকি';
   }
 
   @override
   String extraCredits(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count অতিরিক্ত বিশ্লেষণ',
-      one: '$count অতিরিক্ত বিশ্লেষণ',
+      other: '$countString অতিরিক্ত বিশ্লেষণ',
+      one: '$countString অতিরিক্ত বিশ্লেষণ',
     );
     return '$_temp0';
   }
@@ -775,9 +769,6 @@ class AppLocalizationsBn extends AppLocalizations {
   String get viewPlans => 'প্ল্যান দেখুন';
 
   @override
-  String get usageTitle => 'ব্যবহার';
-
-  @override
   String get demoPurchaseNote => 'ডেমো বিলিং: এই প্ল্যাটফর্মে কেনাকাটা সিমুলেট করা হয়।';
 
   @override
@@ -827,11 +818,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String aiDepthCost(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি বিশ্লেষণ খরচ হয়',
-      one: '$countটি বিশ্লেষণ খরচ হয়',
+      other: '$countStringটি বিশ্লেষণ খরচ হয়',
+      one: '$countStringটি বিশ্লেষণ খরচ হয়',
     );
     return '$_temp0';
   }
@@ -860,45 +854,68 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String aiWebSearchesInfo(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'আপনার প্ল্যানে প্রতি বিশ্লেষণে সর্বোচ্চ $countটি ওয়েব অনুসন্ধান',
-      one: 'আপনার প্ল্যানে প্রতি বিশ্লেষণে সর্বোচ্চ $countটি ওয়েব অনুসন্ধান',
+      other: 'আপনার প্ল্যানে প্রতি বিশ্লেষণে সর্বোচ্চ $countStringটি ওয়েব অনুসন্ধান',
+      one: 'আপনার প্ল্যানে প্রতি বিশ্লেষণে সর্বোচ্চ $countStringটি ওয়েব অনুসন্ধান',
     );
     return '$_temp0';
   }
 
   @override
   String aiWebSearchesPlans(int normal, int pro, int max, int ultra) {
-    return 'প্ল্যান অনুযায়ী স্ট্যান্ডার্ড দৈর্ঘ্য: সাধারণ $normal, Pro $pro, Max $max, Ultra $ultra। সংক্ষিপ্তে 2টি কম, বিস্তারিতে 2টি বেশি।';
+    final intl.NumberFormat normalNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String normalString = normalNumberFormat.format(normal);
+    final intl.NumberFormat proNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String proString = proNumberFormat.format(pro);
+    final intl.NumberFormat maxNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String maxString = maxNumberFormat.format(max);
+    final intl.NumberFormat ultraNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String ultraString = ultraNumberFormat.format(ultra);
+
+    return 'প্ল্যান অনুযায়ী স্ট্যান্ডার্ড দৈর্ঘ্য: সাধারণ $normalString, Pro $proString, Max $maxString, Ultra $ultraString। সংক্ষিপ্তে 2টি কম, বিস্তারিতে 2টি বেশি।';
   }
 
   @override
   String aiWebSearchesShort(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'সর্বোচ্চ $countটি ওয়েব অনুসন্ধান',
-      one: 'সর্বোচ্চ $countটি ওয়েব অনুসন্ধান',
+      other: 'সর্বোচ্চ $countStringটি ওয়েব অনুসন্ধান',
+      one: 'সর্বোচ্চ $countStringটি ওয়েব অনুসন্ধান',
     );
     return '$_temp0';
   }
 
   @override
   String planWebSearches(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'প্রতি বিশ্লেষণে $countটি ওয়েব অনুসন্ধান',
-      one: 'প্রতি বিশ্লেষণে $countটি ওয়েব অনুসন্ধান',
+      other: 'প্রতি বিশ্লেষণে $countStringটি ওয়েব অনুসন্ধান',
+      one: 'প্রতি বিশ্লেষণে $countStringটি ওয়েব অনুসন্ধান',
     );
     return '$_temp0';
   }
 
   @override
   String errNotEnoughCredits(int needed, int left) {
-    return 'এই দৈর্ঘ্যের জন্য $neededটি বিশ্লেষণ প্রয়োজন, কিন্তু মাত্র $leftটি বাকি আছে। সেটিংসে ছোট দৈর্ঘ্য বেছে নিন বা আরও বিশ্লেষণ নিন।';
+    final intl.NumberFormat neededNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String neededString = neededNumberFormat.format(needed);
+    final intl.NumberFormat leftNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String leftString = leftNumberFormat.format(left);
+
+    return 'এই দৈর্ঘ্যের জন্য $neededStringটি বিশ্লেষণ প্রয়োজন, কিন্তু মাত্র $leftStringটি বাকি আছে। সেটিংসে ছোট দৈর্ঘ্য বেছে নিন বা আরও বিশ্লেষণ নিন।';
   }
 
   @override
@@ -1040,7 +1057,15 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String longTermYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(years, locale: localeName, other: '$years বছর', one: '$years বছর');
+    final intl.NumberFormat yearsNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String yearsString = yearsNumberFormat.format(years);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      years,
+      locale: localeName,
+      other: '$yearsString বছর',
+      one: '$yearsString বছর',
+    );
     return '$_temp0';
   }
 
@@ -1138,9 +1163,6 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'আপনার অবস্থান';
-
-  @override
-  String get portfolioPurchases => 'ক্রয়সমূহ';
 
   @override
   String get portfolioRemove => 'সরান';
@@ -1345,18 +1367,29 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String ageHours(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count ঘণ্টা আগে',
-      one: '$count ঘণ্টা আগে',
+      other: '$countString ঘণ্টা আগে',
+      one: '$countString ঘণ্টা আগে',
     );
     return '$_temp0';
   }
 
   @override
   String ageDays(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count দিন আগে', one: '$count দিন আগে');
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countString দিন আগে',
+      one: '$countString দিন আগে',
+    );
     return '$_temp0';
   }
 
@@ -1376,7 +1409,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String seeAll(int count) {
-    return 'সব দেখুন ($count)';
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
+    return 'সব দেখুন ($countString)';
   }
 
   @override
@@ -1413,11 +1449,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String referralBody(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি অতিরিক্ত বিশ্লেষণ',
-      one: '$countটি অতিরিক্ত বিশ্লেষণ',
+      other: '$countStringটি অতিরিক্ত বিশ্লেষণ',
+      one: '$countStringটি অতিরিক্ত বিশ্লেষণ',
     );
     return 'আপনার কোড শেয়ার করুন। আপনার বন্ধু সঙ্গে সঙ্গে $_temp0 পাবেন, আর তাঁর প্রথম বিশ্লেষণের পরে আপনিও একই পরিমাণ পাবেন।';
   }
@@ -1427,7 +1466,12 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String referralStats(int invited, int rewarded) {
-    return 'আমন্ত্রিত: $invited · পুরস্কৃত: $rewarded';
+    final intl.NumberFormat invitedNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String invitedString = invitedNumberFormat.format(invited);
+    final intl.NumberFormat rewardedNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String rewardedString = rewardedNumberFormat.format(rewarded);
+
+    return 'আমন্ত্রিত: $invitedString · পুরস্কৃত: $rewardedString';
   }
 
   @override
@@ -1438,11 +1482,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String referralRedeemed(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি অতিরিক্ত বিশ্লেষণ যোগ হয়েছে। স্বাগতম!',
-      one: '$countটি অতিরিক্ত বিশ্লেষণ যোগ হয়েছে। স্বাগতম!',
+      other: '$countStringটি অতিরিক্ত বিশ্লেষণ যোগ হয়েছে। স্বাগতম!',
+      one: '$countStringটি অতিরিক্ত বিশ্লেষণ যোগ হয়েছে। স্বাগতম!',
     );
     return '$_temp0';
   }
@@ -1458,11 +1505,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String referralShareText(String code, int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি অতিরিক্ত বিশ্লেষণ',
-      one: '$countটি অতিরিক্ত বিশ্লেষণ',
+      other: '$countStringটি অতিরিক্ত বিশ্লেষণ',
+      one: '$countStringটি অতিরিক্ত বিশ্লেষণ',
     );
     return 'আমি WhatStock দিয়ে শেয়ার বিশ্লেষণ করি: একটি শেয়ারের ছবি তুলুন, আর AI সেটি ব্যাখ্যা করবে। আমার কোড $code দিয়ে আপনি পাবেন $_temp0।';
   }
@@ -1575,7 +1625,15 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String eventInDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days দিন পরে', one: '$days দিন পরে');
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$daysString দিন পরে',
+      one: '$daysString দিন পরে',
+    );
     return '$_temp0';
   }
 
@@ -1688,22 +1746,28 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String portfolioImported(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি লেনদেন যোগ হয়েছে',
-      one: '$countটি লেনদেন যোগ হয়েছে',
+      other: '$countStringটি লেনদেন যোগ হয়েছে',
+      one: '$countStringটি লেনদেন যোগ হয়েছে',
     );
     return '$_temp0';
   }
 
   @override
   String portfolioImportSkipped(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি লাইন বাদ দেওয়া হয়েছে',
-      one: '$countটি লাইন বাদ দেওয়া হয়েছে',
+      other: '$countStringটি লাইন বাদ দেওয়া হয়েছে',
+      one: '$countStringটি লাইন বাদ দেওয়া হয়েছে',
     );
     return '$_temp0';
   }
@@ -2022,11 +2086,16 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String earningsBeats(int beats, int total) {
+    final intl.NumberFormat beatsNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String beatsString = beatsNumberFormat.format(beats);
+    final intl.NumberFormat totalNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String totalString = totalNumberFormat.format(total);
+
     String _temp0 = intl.Intl.pluralLogic(
       total,
       locale: localeName,
-      other: 'শেষ $totalটি ত্রৈমাসিকের $beatsটিতে প্রত্যাশিত EPS-এর সমান বা বেশি',
-      one: '$totalটি ত্রৈমাসিকের $beatsটিতে প্রত্যাশিত EPS-এর সমান বা বেশি',
+      other: 'শেষ $totalStringটি ত্রৈমাসিকের $beatsStringটিতে প্রত্যাশিত EPS-এর সমান বা বেশি',
+      one: '$totalStringটি ত্রৈমাসিকের $beatsStringটিতে প্রত্যাশিত EPS-এর সমান বা বেশি',
     );
     return '$_temp0';
   }
@@ -2067,7 +2136,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String addAllToFavorites(int count) {
-    return 'সব পছন্দের তালিকায় যোগ করুন ($count)';
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
+    return 'সব পছন্দের তালিকায় যোগ করুন ($countString)';
   }
 
   @override
@@ -2088,11 +2160,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String holdingsAdd(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি অবস্থান যোগ করুন',
-      one: '$countটি অবস্থান যোগ করুন',
+      other: '$countStringটি অবস্থান যোগ করুন',
+      one: '$countStringটি অবস্থান যোগ করুন',
     );
     return '$_temp0';
   }
@@ -2141,13 +2216,29 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String insiderBuys(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$countটি ক্রয়', one: '$countটি ক্রয়');
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countStringটি ক্রয়',
+      one: '$countStringটি ক্রয়',
+    );
     return '$_temp0';
   }
 
   @override
   String insiderSells(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$countটি বিক্রি', one: '$countটি বিক্রি');
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countStringটি বিক্রি',
+      one: '$countStringটি বিক্রি',
+    );
     return '$_temp0';
   }
 
@@ -2350,11 +2441,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String watchAlertAllDone(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি সতর্কতা সেট হয়েছে',
-      one: '$countটি সতর্কতা সেট হয়েছে',
+      other: '$countStringটি সতর্কতা সেট হয়েছে',
+      one: '$countStringটি সতর্কতা সেট হয়েছে',
     );
     return '$_temp0';
   }
@@ -2423,15 +2517,21 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String watchImported(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি স্টক যোগ হয়েছে',
-      one: '$countটি স্টক যোগ হয়েছে',
+      other: '$countStringটি স্টক যোগ হয়েছে',
+      one: '$countStringটি স্টক যোগ হয়েছে',
       zero: 'কোনো নতুন স্টক নেই',
     );
     return '$_temp0';
   }
+
+  @override
+  String get watchImportedNone => 'কোনো নতুন স্টক নেই';
 
   @override
   String get positionsSortWeight => 'সবচেয়ে বড় আগে';
@@ -2463,17 +2563,30 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String durationMinutes(int minutes) {
-    return '$minutes মিনিট';
+    final intl.NumberFormat minutesNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String minutesString = minutesNumberFormat.format(minutes);
+
+    return '$minutesString মিনিট';
   }
 
   @override
   String durationHoursMinutes(int hours, int minutes) {
-    return '$hours ঘণ্টা $minutes মিনিট';
+    final intl.NumberFormat hoursNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String hoursString = hoursNumberFormat.format(hours);
+    final intl.NumberFormat minutesNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String minutesString = minutesNumberFormat.format(minutes);
+
+    return '$hoursString ঘণ্টা $minutesString মিনিট';
   }
 
   @override
   String durationDaysHours(int days, int hours) {
-    return '$days দিন $hours ঘণ্টা';
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String daysString = daysNumberFormat.format(days);
+    final intl.NumberFormat hoursNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String hoursString = hoursNumberFormat.format(hours);
+
+    return '$daysString দিন $hoursString ঘণ্টা';
   }
 
   @override
@@ -2557,11 +2670,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String portfolioPositionsCount(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি অবস্থান',
-      one: '$countটি অবস্থান',
+      other: '$countStringটি অবস্থান',
+      one: '$countStringটি অবস্থান',
     );
     return '$_temp0';
   }
@@ -2622,15 +2738,21 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String portfolioStopsDone(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি ট্রেইলিং স্টপ সেট হয়েছে',
-      one: '$countটি ট্রেইলিং স্টপ সেট হয়েছে',
+      other: '$countStringটি ট্রেইলিং স্টপ সেট হয়েছে',
+      one: '$countStringটি ট্রেইলিং স্টপ সেট হয়েছে',
       zero: 'প্রতিটি অবস্থানে ইতিমধ্যে ট্রেইলিং স্টপ আছে',
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'প্রতিটি অবস্থানে ইতিমধ্যে ট্রেইলিং স্টপ আছে';
 
   @override
   String portfolioSinceSale(String percent) {
@@ -2680,13 +2802,24 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String durationMonths(int months) {
-    String _temp0 = intl.Intl.pluralLogic(months, locale: localeName, other: '$months মাস', one: '$months মাস');
+    final intl.NumberFormat monthsNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String monthsString = monthsNumberFormat.format(months);
+
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$monthsString মাস',
+      one: '$monthsString মাস',
+    );
     return '$_temp0';
   }
 
   @override
   String durationDays(int days) {
-    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$days দিন', one: '$days দিন');
+    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String daysString = daysNumberFormat.format(days);
+
+    String _temp0 = intl.Intl.pluralLogic(days, locale: localeName, other: '$daysString দিন', one: '$daysString দিন');
     return '$_temp0';
   }
 
@@ -2744,11 +2877,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String portfolioImportDuplicates(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি আগে থেকেই নথিভুক্ত, বাদ দেওয়া হয়েছে',
-      one: '$countটি আগে থেকেই নথিভুক্ত, বাদ দেওয়া হয়েছে',
+      other: '$countStringটি আগে থেকেই নথিভুক্ত, বাদ দেওয়া হয়েছে',
+      one: '$countStringটি আগে থেকেই নথিভুক্ত, বাদ দেওয়া হয়েছে',
     );
     return '$_temp0';
   }
@@ -2800,7 +2936,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String watchListLimit(int max) {
-    return 'আপনি সর্বোচ্চ $maxটি তালিকা রাখতে পারেন।';
+    final intl.NumberFormat maxNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String maxString = maxNumberFormat.format(max);
+
+    return 'আপনি সর্বোচ্চ $maxStringটি তালিকা রাখতে পারেন।';
   }
 
   @override
@@ -2833,11 +2972,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String dividendsNotConverted(int count, String currencies) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$currencies-এ $countটি ডিভিডেন্ডের বিনিময় হার নেই, তাই এগুলি মোট হিসাবে ধরা হয়নি।',
-      one: '$currencies-এ $countটি ডিভিডেন্ডের বিনিময় হার নেই, তাই এটি মোট হিসাবে ধরা হয়নি।',
+      other: '$currencies-এ $countStringটি ডিভিডেন্ডের বিনিময় হার নেই, তাই এগুলি মোট হিসাবে ধরা হয়নি।',
+      one: '$currencies-এ $countStringটি ডিভিডেন্ডের বিনিময় হার নেই, তাই এটি মোট হিসাবে ধরা হয়নি।',
     );
     return '$_temp0';
   }
@@ -2987,11 +3129,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String alertsCleared(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি সতর্কতা মুছে ফেলা হয়েছে',
-      one: '$countটি সতর্কতা মুছে ফেলা হয়েছে',
+      other: '$countStringটি সতর্কতা মুছে ফেলা হয়েছে',
+      one: '$countStringটি সতর্কতা মুছে ফেলা হয়েছে',
     );
     return '$_temp0';
   }
@@ -3122,22 +3267,28 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String portfolioSplitsImported(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি স্টক স্প্লিট যোগ করা হয়েছে',
-      one: '$countটি স্টক স্প্লিট যোগ করা হয়েছে',
+      other: '$countStringটি স্টক স্প্লিট যোগ করা হয়েছে',
+      one: '$countStringটি স্টক স্প্লিট যোগ করা হয়েছে',
     );
     return '$_temp0';
   }
 
   @override
   String portfolioDividendsImported(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি ডিভিডেন্ড যোগ হয়েছে',
-      one: '$countটি ডিভিডেন্ড যোগ হয়েছে',
+      other: '$countStringটি ডিভিডেন্ড যোগ হয়েছে',
+      one: '$countStringটি ডিভিডেন্ড যোগ হয়েছে',
     );
     return '$_temp0';
   }
@@ -3165,11 +3316,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String awayAlerts(int count) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countটি অ্যালার্ট ট্রিগার হয়েছে',
-      one: '$countটি অ্যালার্ট ট্রিগার হয়েছে',
+      other: '$countStringটি অ্যালার্ট ট্রিগার হয়েছে',
+      one: '$countStringটি অ্যালার্ট ট্রিগার হয়েছে',
     );
     return '$_temp0';
   }
@@ -3252,7 +3406,12 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String portfolioAbove200(int above, int count) {
-    return '$countটি অবস্থানের মধ্যে $aboveটি নিজেদের ২০০ দিনের গড়ের উপরে';
+    final intl.NumberFormat aboveNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String aboveString = aboveNumberFormat.format(above);
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
+    return '$countStringটি অবস্থানের মধ্যে $aboveStringটি নিজেদের ২০০ দিনের গড়ের উপরে';
   }
 
   @override

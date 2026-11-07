@@ -13,9 +13,6 @@ class AppLocalizationsGn extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Ejapyhy peteĩ acción raʼãnga ha eikuaa opa mbaʼe hese.';
-
-  @override
   String get homeHint =>
       'Peteĩ acción kuatia, peteĩ tembiporuʼi bolsa-pegua mbaʼerechaha, periódico térã peteĩ empresa logo – oimeraẽ mbaʼe ohechaukáva peteĩ acción.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsGn extends AppLocalizations {
   String get takePhoto => 'Ejapyhy taʼãnga';
 
   @override
-  String get chooseFromGallery => 'Eiporavo taʼãnga atýgui';
-
-  @override
   String get chooseImage => 'Eiporavo taʼãnga';
-
-  @override
-  String get enterTickerManually => 'Emoinge símbolo nde pópe';
-
-  @override
-  String get tickerInputLabel => 'Símbolo (ticker)';
-
-  @override
-  String get tickerInputHint => 'techapyrã: AAPL';
 
   @override
   String get lookUp => 'Eheka';
@@ -186,9 +171,6 @@ class AppLocalizationsGn extends AppLocalizations {
   String get labelHeadquarters => 'Óga guasu';
 
   @override
-  String get labelDescription => 'Ñemohaʼãnga';
-
-  @override
   String get labelLastPrice => 'Tepy ipahavéva';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get noNews => 'Ndaipóri marandu pyahu.';
-
-  @override
-  String get openArticle => 'Embojuruja jehaipyre';
 
   @override
   String get openLinkFailed => 'Ndaikatúi oñembojuruja juajuha.';
@@ -602,11 +581,6 @@ class AppLocalizationsGn extends AppLocalizations {
   String get displayCurrencyNone => 'Acción pirapire añoite';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency-pe';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Ñemoambue repy: 1 $from = $rate $to (BCE, $date)';
   }
@@ -678,11 +652,6 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count jehesaʼỹijo jasy ñavõ';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days ára jeporu rei $count jehesaʼỹijo reheve';
   }
 
   @override
@@ -775,9 +744,6 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get viewPlans => 'Ehecha plan-kuéra';
-
-  @override
-  String get usageTitle => 'Jeporu';
 
   @override
   String get demoPurchaseNote => 'Jehepymeʼẽ demo: ko plataforma-pe jejogua ndahaʼéi añetegua.';
@@ -1140,9 +1106,6 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Ereguerekóva';
-
-  @override
-  String get portfolioPurchases => 'Jejogua';
 
   @override
   String get portfolioRemove => 'Embogue';
@@ -2441,6 +2404,9 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Ndaipóri acción pyahu';
+
+  @override
   String get positionsSortWeight => 'Tuichavéva raẽ';
 
   @override
@@ -2638,6 +2604,9 @@ class AppLocalizationsGn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Opaite ereguerekóva oguereko voi ko momarandu';
 
   @override
   String portfolioSinceSale(String percent) {

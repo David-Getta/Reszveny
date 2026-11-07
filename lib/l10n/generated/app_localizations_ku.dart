@@ -13,9 +13,6 @@ class AppLocalizationsKu extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Wêneyê pişkekê bikişîne û her tiştî derbarê wê de hîn bibe.';
-
-  @override
   String get homeHint =>
       'Belgeya pişkê, ekrana sepana brokerê, rojnameyek an logoya şirketekê – her tiştê ku pişkekê dide nasîn.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get takePhoto => 'Wêne bikişîne';
 
   @override
-  String get chooseFromGallery => 'Ji galeriyê hilbijêre';
-
-  @override
   String get chooseImage => 'Wêneyekî hilbijêre';
-
-  @override
-  String get enterTickerManually => 'Sembolê bi destan binivîse';
-
-  @override
-  String get tickerInputLabel => 'Sembola pişkê';
-
-  @override
-  String get tickerInputHint => 'mînak AAPL';
 
   @override
   String get lookUp => 'Lê bigere';
@@ -186,9 +171,6 @@ class AppLocalizationsKu extends AppLocalizations {
   String get labelHeadquarters => 'Navenda sereke';
 
   @override
-  String get labelDescription => 'Danasîn';
-
-  @override
   String get labelLastPrice => 'Bihaya dawî';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get noNews => 'Nûçeyên nû tune ne.';
-
-  @override
-  String get openArticle => 'Gotarê veke';
 
   @override
   String get openLinkFailed => 'Girêdan venebû.';
@@ -600,11 +579,6 @@ class AppLocalizationsKu extends AppLocalizations {
   String get displayCurrencyNone => 'Tenê diravê pişkê bi xwe';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ bi $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Rêje: 1 $from = $rate $to (ECB, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count analîz di mehê de';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Ceribandina belaş a $days rojan bi $count analîzan';
   }
 
   @override
@@ -772,9 +741,6 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get viewPlans => 'Planan bibîne';
-
-  @override
-  String get usageTitle => 'Bikaranîn';
 
   @override
   String get demoPurchaseNote => 'Fatûreya demoyê: kirîn li ser vê platformê tên simulekirin.';
@@ -1136,9 +1102,6 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Pozîsyona te';
-
-  @override
-  String get portfolioPurchases => 'Kirîn';
 
   @override
   String get portfolioRemove => 'Rake';
@@ -2433,6 +2396,9 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Pişkên nû tune ne';
+
+  @override
   String get positionsSortWeight => 'Yên herî mezin pêşî';
 
   @override
@@ -2625,6 +2591,9 @@ class AppLocalizationsKu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Her pozîsyonek jixwe xwedî vê hişyariyê ye';
 
   @override
   String portfolioSinceSale(String percent) {

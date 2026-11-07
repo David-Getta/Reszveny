@@ -351,7 +351,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
     services.telemetry.track('tickers_imported');
     messenger
       ..hideCurrentSnackBar()
-      ..showSnackBar(SnackBar(content: Text(l10n.watchImported(added))));
+      ..showSnackBar(SnackBar(content: Text(added == 0 ? l10n.watchImportedNone : l10n.watchImported(added))));
   }
 
   /// A részvény 7 napon belüli gyorsjelentése (ha van), a sor jelzéséhez.

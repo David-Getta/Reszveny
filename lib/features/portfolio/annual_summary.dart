@@ -207,7 +207,7 @@ class _AnnualSummarySheetState extends State<_AnnualSummarySheet> {
                       for (final y in years)
                         ChoiceChip(
                           key: ValueKey('annual-summary-year-$y'),
-                          label: Text('$y'),
+                          label: Text(fmt.year(y)),
                           selected: y == year,
                           onSelected: (_) => setState(() => _year = y),
                         ),

@@ -13,9 +13,6 @@ class AppLocalizationsQu extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Huk accionpa fotonta hurquy, hinaspa tukuy imatapas chaymanta yachay.';
-
-  @override
   String get homeHint =>
       'Accionpa certificadon, broker aplicacionpa pantallan, periódico utaq empresapa logon – accionta riqsichiq imapas.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsQu extends AppLocalizations {
   String get takePhoto => 'Foto hurquy';
 
   @override
-  String get chooseFromGallery => 'Galeríamanta akllay';
-
-  @override
   String get chooseImage => 'Huk rikch\'ayta akllay';
-
-  @override
-  String get enterTickerManually => 'Tickerta makiwan qillqay';
-
-  @override
-  String get tickerInputLabel => 'Símbolo (ticker)';
-
-  @override
-  String get tickerInputHint => 'kayhina: AAPL';
 
   @override
   String get lookUp => 'Maskay';
@@ -186,9 +171,6 @@ class AppLocalizationsQu extends AppLocalizations {
   String get labelHeadquarters => 'Uma wasi';
 
   @override
-  String get labelDescription => 'Sut\'inchay';
-
-  @override
   String get labelLastPrice => 'Qhipa chanin';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get noNews => 'Mana musuq willakuykuna kanchu.';
-
-  @override
-  String get openArticle => 'Qillqata kichay';
 
   @override
   String get openLinkFailed => 'Mana t\'inkita kichayta atirqanchu.';
@@ -602,11 +581,6 @@ class AppLocalizationsQu extends AppLocalizations {
   String get displayCurrencyNone => 'Accionpa qullqillan';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency qullqipi';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Cambio: 1 $from = $rate $to (BCE, $date)';
   }
@@ -678,11 +652,6 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Sapa killa $count t\'aqwiy';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days p\'unchaw gratis malliy, $count t\'aqwiywan';
   }
 
   @override
@@ -776,9 +745,6 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get viewPlans => 'Plankunata qhaway';
-
-  @override
-  String get usageTitle => 'Llamk\'achiy';
 
   @override
   String get demoPurchaseNote => 'Demo cobro: kay plataformapiqa rantiykunaqa simulasqallam.';
@@ -1144,9 +1110,6 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Posiciónniyki';
-
-  @override
-  String get portfolioPurchases => 'Rantisqakuna';
 
   @override
   String get portfolioRemove => 'Hurquy';
@@ -2464,6 +2427,9 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Mana musuq accionkuna kanchu';
+
+  @override
   String get positionsSortWeight => 'Aswan hatunkuna ñawpaqta';
 
   @override
@@ -2657,6 +2623,9 @@ class AppLocalizationsQu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Llapa posicionkunaqa kay willayniyuqñam';
 
   @override
   String portfolioSinceSale(String percent) {

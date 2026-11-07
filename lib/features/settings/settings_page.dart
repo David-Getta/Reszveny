@@ -517,7 +517,9 @@ class SettingsPage extends StatelessWidget {
                         const Divider(height: 1),
                         ListTile(
                           leading: const Icon(Icons.keyboard_command_key_rounded),
-                          title: Text(hotkeyHintText(l10n, services)),
+                          title: Text(
+                            hotkeyHintText(l10n, services, names: keyNamesOf(MaterialLocalizations.of(context))),
+                          ),
                         ),
                       ],
                       for (final (icon, label, url) in [

@@ -13,9 +13,6 @@ class AppLocalizationsCs extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Vyfoťte akcii a zjistěte o ní vše.';
-
-  @override
   String get homeHint =>
       'Akciový certifikát, obrazovka brokerské aplikace, noviny nebo logo firmy – cokoli, co akcii identifikuje.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get takePhoto => 'Vyfotit';
 
   @override
-  String get chooseFromGallery => 'Vybrat z galerie';
-
-  @override
   String get chooseImage => 'Vybrat obrázek';
-
-  @override
-  String get enterTickerManually => 'Zadat ticker ručně';
-
-  @override
-  String get tickerInputLabel => 'Ticker';
-
-  @override
-  String get tickerInputHint => 'např. AAPL';
 
   @override
   String get lookUp => 'Vyhledat';
@@ -186,9 +171,6 @@ class AppLocalizationsCs extends AppLocalizations {
   String get labelHeadquarters => 'Sídlo';
 
   @override
-  String get labelDescription => 'Popis';
-
-  @override
   String get labelLastPrice => 'Poslední cena';
 
   @override
@@ -336,9 +318,6 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get noNews => 'Žádné aktuální zprávy.';
-
-  @override
-  String get openArticle => 'Otevřít článek';
 
   @override
   String get openLinkFailed => 'Odkaz se nepodařilo otevřít.';
@@ -608,11 +587,6 @@ class AppLocalizationsCs extends AppLocalizations {
   String get displayCurrencyNone => 'Pouze vlastní měna akcie';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ v $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kurz: 1 $from = $rate $to (ECB, $date)';
   }
@@ -690,17 +664,6 @@ class AppLocalizationsCs extends AppLocalizations {
       many: '$count analýzy měsíčně',
       few: '$count analýzy měsíčně',
       one: '1 analýza měsíčně',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Bezplatná zkušební verze na $days dní s $count analýzami',
-      one: 'Bezplatná zkušební verze na $days dní s 1 analýzou',
     );
     return '$_temp0';
   }
@@ -797,9 +760,6 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get viewPlans => 'Zobrazit tarify';
-
-  @override
-  String get usageTitle => 'Využití';
 
   @override
   String get demoPurchaseNote => 'Demo platby: nákupy jsou na této platformě pouze simulované.';
@@ -1177,9 +1137,6 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Vaše pozice';
-
-  @override
-  String get portfolioPurchases => 'Nákupy';
 
   @override
   String get portfolioRemove => 'Odebrat';
@@ -2525,6 +2482,9 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Žádné nové akcie';
+
+  @override
   String get positionsSortWeight => 'Největší první';
 
   @override
@@ -2727,6 +2687,9 @@ class AppLocalizationsCs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Všechny pozice už mají trailing stop';
 
   @override
   String portfolioSinceSale(String percent) {

@@ -13,9 +13,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Chụp ảnh một cổ phiếu và tìm hiểu mọi thứ về nó.';
-
-  @override
   String get homeHint =>
       'Chứng chỉ cổ phiếu, màn hình ứng dụng chứng khoán, báo hoặc logo công ty – bất cứ thứ gì giúp nhận diện cổ phiếu.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get takePhoto => 'Chụp ảnh';
 
   @override
-  String get chooseFromGallery => 'Chọn từ thư viện';
-
-  @override
   String get chooseImage => 'Chọn ảnh';
-
-  @override
-  String get enterTickerManually => 'Nhập mã cổ phiếu thủ công';
-
-  @override
-  String get tickerInputLabel => 'Mã cổ phiếu';
-
-  @override
-  String get tickerInputHint => 'ví dụ: AAPL';
 
   @override
   String get lookUp => 'Tra cứu';
@@ -186,9 +171,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get labelHeadquarters => 'Trụ sở chính';
 
   @override
-  String get labelDescription => 'Mô tả';
-
-  @override
   String get labelLastPrice => 'Giá mới nhất';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get noNews => 'Không có tin tức gần đây.';
-
-  @override
-  String get openArticle => 'Mở bài viết';
 
   @override
   String get openLinkFailed => 'Không thể mở liên kết.';
@@ -604,11 +583,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get displayCurrencyNone => 'Chỉ tiền tệ của cổ phiếu';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ theo $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Tỷ giá: 1 $from = $rate $to (ECB, $date)';
   }
@@ -680,11 +654,6 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count lượt phân tích mỗi tháng';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Dùng thử miễn phí $days ngày với $count lượt phân tích';
   }
 
   @override
@@ -778,9 +747,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get viewPlans => 'Xem các gói';
-
-  @override
-  String get usageTitle => 'Mức sử dụng';
 
   @override
   String get demoPurchaseNote => 'Thanh toán demo: các giao dịch mua trên nền tảng này chỉ là mô phỏng.';
@@ -1127,9 +1093,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Vị thế của bạn';
-
-  @override
-  String get portfolioPurchases => 'Lần mua';
 
   @override
   String get portfolioRemove => 'Xóa';
@@ -2417,6 +2380,9 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Không có cổ phiếu mới';
+
+  @override
   String get positionsSortWeight => 'Lớn nhất trước';
 
   @override
@@ -2609,6 +2575,9 @@ class AppLocalizationsVi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Mọi vị thế đã có trailing stop';
 
   @override
   String portfolioSinceSale(String percent) {

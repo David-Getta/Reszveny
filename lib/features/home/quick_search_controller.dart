@@ -44,6 +44,9 @@ class QuickSearchController implements QuickPanelHandler {
 
   static const maxSuggestions = 6;
 
+  /// Ennyi találat marad jegyezve (a cégnévhez): a hetekig futó tálca-app memóriája korlátos.
+  static const maxKnown = 200;
+
   /// Minden új gépelés növeli: a lassú keresések elavult válaszait eldobjuk.
   int _seq = 0;
   final Map<String, StockCandidate> _known = {};
@@ -73,7 +76,11 @@ class QuickSearchController implements QuickPanelHandler {
       if (id != _seq) return;
       final top = results.take(maxSuggestions).toList();
       for (final c in top) {
+        _known.remove(c.symbol);
         _known[c.symbol] = c;
+      }
+      while (_known.length > maxKnown) {
+        _known.remove(_known.keys.first);
       }
       await panel.setSuggestions(text, [
         for (final c in top) _withoutDuplicateName(QuickSuggestion(symbol: c.symbol, name: c.companyName)),

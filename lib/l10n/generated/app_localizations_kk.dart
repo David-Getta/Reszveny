@@ -13,9 +13,6 @@ class AppLocalizationsKk extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Акцияны суретке түсіріп, ол туралы бәрін біліңіз.';
-
-  @override
   String get homeHint =>
       'Акция сертификаты, брокерлік қолданба экраны, газет немесе компания логотипі – акцияны анықтауға көмектесетін кез келген нәрсе.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get takePhoto => 'Суретке түсіру';
 
   @override
-  String get chooseFromGallery => 'Галереядан таңдау';
-
-  @override
   String get chooseImage => 'Сурет таңдау';
-
-  @override
-  String get enterTickerManually => 'Тикерді қолмен енгізу';
-
-  @override
-  String get tickerInputLabel => 'Тикер';
-
-  @override
-  String get tickerInputHint => 'мысалы, AAPL';
 
   @override
   String get lookUp => 'Іздеу';
@@ -186,9 +171,6 @@ class AppLocalizationsKk extends AppLocalizations {
   String get labelHeadquarters => 'Бас кеңсе';
 
   @override
-  String get labelDescription => 'Сипаттама';
-
-  @override
   String get labelLastPrice => 'Соңғы баға';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get noNews => 'Соңғы жаңалықтар жоқ.';
-
-  @override
-  String get openArticle => 'Мақаланы ашу';
 
   @override
   String get openLinkFailed => 'Сілтемені ашу мүмкін болмады.';
@@ -600,11 +579,6 @@ class AppLocalizationsKk extends AppLocalizations {
   String get displayCurrencyNone => 'Тек акцияның өз валютасы';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency есебімен';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Бағам: 1 $from = $rate $to (ЕОБ, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Айына $count талдау';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count талдауы бар $days күндік тегін сынақ';
   }
 
   @override
@@ -774,9 +743,6 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get viewPlans => 'Тарифтерді көру';
-
-  @override
-  String get usageTitle => 'Пайдалану';
 
   @override
   String get demoPurchaseNote => 'Демо төлем: бұл платформада сатып алулар симуляцияланады.';
@@ -1138,9 +1104,6 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Сіздің позицияңыз';
-
-  @override
-  String get portfolioPurchases => 'Сатып алулар';
 
   @override
   String get portfolioRemove => 'Жою';
@@ -2433,6 +2396,9 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Жаңа акция жоқ';
+
+  @override
   String get positionsSortWeight => 'Ең ірілері алдымен';
 
   @override
@@ -2626,6 +2592,9 @@ class AppLocalizationsKk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Барлық позицияда трейлинг-стоп бұрыннан бар';
 
   @override
   String portfolioSinceSale(String percent) {

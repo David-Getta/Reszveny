@@ -310,6 +310,13 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
   void Function(String symbol)? _onTrayStock;
   void Function()? _onTrayPortfolio;
 
+  /// A tálca-menü visszahívásai leválasztva (az app kerete eldobva): egy kattintás ne egy
+  /// már nem létező képernyőt hívjon. A menü marad, a következő keret újra beállítja.
+  void forgetTrayActions() {
+    _onTrayStock = null;
+    _onTrayPortfolio = null;
+  }
+
   /// Menüsor- / tálcaikon létrehozása, illetve a menü frissítése (nyelvváltás,
   /// új árak). A [stocks] a kedvencek a mai árral; kattintásra [onStock].
   Future<void> setupTray({

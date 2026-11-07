@@ -13,9 +13,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ஒரு பங்கைப் புகைப்படம் எடுத்து, அதைப் பற்றி எல்லாவற்றையும் அறியுங்கள்.';
-
-  @override
   String get homeHint =>
       'பங்குச் சான்றிதழ், புரோக்கரேஜ் ஆப் திரை, செய்தித்தாள் அல்லது நிறுவன லோகோ – ஒரு பங்கை அடையாளம் காட்டும் எதுவும்.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get takePhoto => 'புகைப்படம் எடுக்க';
 
   @override
-  String get chooseFromGallery => 'கேலரியிலிருந்து தேர்வு செய்க';
-
-  @override
   String get chooseImage => 'படத்தைத் தேர்வு செய்க';
-
-  @override
-  String get enterTickerManually => 'டிக்கரை கைமுறையாக உள்ளிடுக';
-
-  @override
-  String get tickerInputLabel => 'டிக்கர் குறியீடு';
-
-  @override
-  String get tickerInputHint => 'எ.கா. AAPL';
 
   @override
   String get lookUp => 'தேடு';
@@ -186,9 +171,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get labelHeadquarters => 'தலைமையகம்';
 
   @override
-  String get labelDescription => 'விளக்கம்';
-
-  @override
   String get labelLastPrice => 'கடைசி விலை';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get noNews => 'சமீபத்திய செய்திகள் இல்லை.';
-
-  @override
-  String get openArticle => 'கட்டுரையைத் திற';
 
   @override
   String get openLinkFailed => 'இணைப்பைத் திறக்க முடியவில்லை.';
@@ -600,11 +579,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get displayCurrencyNone => 'பங்கின் சொந்த நாணயம் மட்டும்';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency இல்';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'விகிதம்: 1 $from = $rate $to (ECB, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'மாதத்திற்கு $count பகுப்பாய்வுகள்';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count பகுப்பாய்வுகளுடன் $days நாள் இலவச சோதனை';
   }
 
   @override
@@ -774,9 +743,6 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get viewPlans => 'திட்டங்களைக் காண்க';
-
-  @override
-  String get usageTitle => 'பயன்பாடு';
 
   @override
   String get demoPurchaseNote => 'டெமோ பில்லிங்: இந்தத் தளத்தில் கொள்முதல்கள் உருவகப்படுத்தப்படுகின்றன.';
@@ -1141,9 +1107,6 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'உங்கள் நிலை';
-
-  @override
-  String get portfolioPurchases => 'வாங்குதல்கள்';
 
   @override
   String get portfolioRemove => 'நீக்கு';
@@ -2454,6 +2417,9 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'புதிய பங்குகள் இல்லை';
+
+  @override
   String get positionsSortWeight => 'பெரியவை முதலில்';
 
   @override
@@ -2647,6 +2613,9 @@ class AppLocalizationsTa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'எல்லா நிலைகளுக்கும் ஏற்கெனவே டிரெய்லிங் ஸ்டாப் உள்ளது';
 
   @override
   String portfolioSinceSale(String percent) {

@@ -13,9 +13,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'කොටසක ඡායාරූපයක් ගෙන ඒ ගැන සියල්ල දැනගන්න.';
-
-  @override
   String get homeHint =>
       'කොටස් සහතිකයක්, තැරැව්කාර යෙදුමක තිරයක්, පුවත්පතක් හෝ සමාගම් ලාංඡනයක් – කොටසක් හඳුනාගත හැකි ඕනෑම දෙයක්.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get takePhoto => 'ඡායාරූපයක් ගන්න';
 
   @override
-  String get chooseFromGallery => 'ගැලරියෙන් තෝරන්න';
-
-  @override
   String get chooseImage => 'රූපයක් තෝරන්න';
-
-  @override
-  String get enterTickerManually => 'ටිකර් අතින් ඇතුළු කරන්න';
-
-  @override
-  String get tickerInputLabel => 'ටිකර් සංකේතය';
-
-  @override
-  String get tickerInputHint => 'උදා. AAPL';
 
   @override
   String get lookUp => 'සොයන්න';
@@ -186,9 +171,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get labelHeadquarters => 'ප්‍රධාන කාර්යාලය';
 
   @override
-  String get labelDescription => 'විස්තරය';
-
-  @override
   String get labelLastPrice => 'අවසාන මිල';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get noNews => 'මෑත පුවත් නැත.';
-
-  @override
-  String get openArticle => 'ලිපිය විවෘත කරන්න';
 
   @override
   String get openLinkFailed => 'සබැඳිය විවෘත කළ නොහැකි විය.';
@@ -606,11 +585,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get displayCurrencyNone => 'කොටසේම මුදල් ඒකකය පමණි';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency වලින්';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'විනිමය අනුපාතය: 1 $from = $rate $to (ECB, $date)';
   }
@@ -682,11 +656,6 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'මසකට විශ්ලේෂණ $count';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'විශ්ලේෂණ $count සහිත දින $days නොමිලේ අත්හදා බැලීම';
   }
 
   @override
@@ -779,9 +748,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get viewPlans => 'සැලසුම් බලන්න';
-
-  @override
-  String get usageTitle => 'භාවිතය';
 
   @override
   String get demoPurchaseNote => 'ආදර්ශන බිල්පත්: මෙම වේදිකාවේ මිලදී ගැනීම් අනුකරණය කෙරේ.';
@@ -1144,9 +1110,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'ඔබේ ස්ථානය';
-
-  @override
-  String get portfolioPurchases => 'මිලදී ගැනීම්';
 
   @override
   String get portfolioRemove => 'ඉවත් කරන්න';
@@ -2449,6 +2412,9 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'නව කොටස් නැත';
+
+  @override
   String get positionsSortWeight => 'විශාලතම පළමුව';
 
   @override
@@ -2641,6 +2607,9 @@ class AppLocalizationsSi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'සෑම ස්ථානයකටම දැනටමත් උපරිමයෙන් පහත වැටීමේ ඇඟවීම ඇත';
 
   @override
   String portfolioSinceSale(String percent) {

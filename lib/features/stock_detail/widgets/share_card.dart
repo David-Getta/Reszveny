@@ -132,7 +132,7 @@ class AnalysisShareCard extends StatelessWidget {
                           ),
                           const SizedBox(width: 8),
                           Text(
-                            '${s.probability.round()}%',
+                            fmt.percent(s.probability, decimals: 0),
                             style: TextStyle(color: colorOf(s.kind), fontWeight: FontWeight.w800, fontSize: 18),
                           ),
                         ],

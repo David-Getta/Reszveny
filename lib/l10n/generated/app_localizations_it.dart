@@ -13,9 +13,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fotografa un\'azione e scopri tutto su di essa.';
-
-  @override
   String get homeHint =>
       'Un certificato azionario, la schermata di un\'app di trading, un giornale o il logo di un\'azienda: qualsiasi cosa che identifichi un\'azione.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get takePhoto => 'Scatta una foto';
 
   @override
-  String get chooseFromGallery => 'Scegli dalla galleria';
-
-  @override
   String get chooseImage => 'Scegli un\'immagine';
-
-  @override
-  String get enterTickerManually => 'Inserisci il ticker manualmente';
-
-  @override
-  String get tickerInputLabel => 'Simbolo (ticker)';
-
-  @override
-  String get tickerInputHint => 'es. AAPL';
 
   @override
   String get lookUp => 'Cerca';
@@ -186,9 +171,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get labelHeadquarters => 'Sede centrale';
 
   @override
-  String get labelDescription => 'Descrizione';
-
-  @override
   String get labelLastPrice => 'Ultimo prezzo';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get noNews => 'Nessuna notizia recente.';
-
-  @override
-  String get openArticle => 'Apri l\'articolo';
 
   @override
   String get openLinkFailed => 'Impossibile aprire il link.';
@@ -602,11 +581,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get displayCurrencyNone => 'Solo la valuta dell’azione';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ in $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Cambio: 1 $from = $rate $to (BCE, $date)';
   }
@@ -678,11 +652,6 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count analisi al mese';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Prova gratuita di $days giorni con $count analisi';
   }
 
   @override
@@ -775,9 +744,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get viewPlans => 'Vedi i piani';
-
-  @override
-  String get usageTitle => 'Utilizzo';
 
   @override
   String get demoPurchaseNote => 'Fatturazione demo: su questa piattaforma gli acquisti sono simulati.';
@@ -1135,9 +1101,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'La tua posizione';
-
-  @override
-  String get portfolioPurchases => 'Acquisti';
 
   @override
   String get portfolioRemove => 'Rimuovi';
@@ -2437,6 +2400,9 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Nessun nuovo titolo';
+
+  @override
   String get positionsSortWeight => 'Più grandi prima';
 
   @override
@@ -2630,6 +2596,9 @@ class AppLocalizationsIt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Tutte le posizioni hanno già un trailing stop';
 
   @override
   String portfolioSinceSale(String percent) {

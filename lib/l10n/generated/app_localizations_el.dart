@@ -13,9 +13,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Φωτογραφίστε μια μετοχή και μάθετε τα πάντα για αυτήν.';
-
-  @override
   String get homeHint =>
       'Ένας τίτλος μετοχής, η οθόνη μιας χρηματιστηριακής εφαρμογής, μια εφημερίδα ή ένα λογότυπο εταιρείας – οτιδήποτε ταυτοποιεί μια μετοχή.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get takePhoto => 'Λήψη φωτογραφίας';
 
   @override
-  String get chooseFromGallery => 'Επιλογή από τη συλλογή';
-
-  @override
   String get chooseImage => 'Επιλογή εικόνας';
-
-  @override
-  String get enterTickerManually => 'Χειροκίνητη εισαγωγή συμβόλου';
-
-  @override
-  String get tickerInputLabel => 'Σύμβολο μετοχής (ticker)';
-
-  @override
-  String get tickerInputHint => 'π.χ. AAPL';
 
   @override
   String get lookUp => 'Αναζήτηση';
@@ -186,9 +171,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String get labelHeadquarters => 'Έδρα';
 
   @override
-  String get labelDescription => 'Περιγραφή';
-
-  @override
   String get labelLastPrice => 'Τελευταία τιμή';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get noNews => 'Δεν υπάρχουν πρόσφατες ειδήσεις.';
-
-  @override
-  String get openArticle => 'Άνοιγμα άρθρου';
 
   @override
   String get openLinkFailed => 'Δεν ήταν δυνατό το άνοιγμα του συνδέσμου.';
@@ -603,11 +582,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String get displayCurrencyNone => 'Μόνο το νόμισμα της μετοχής';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ σε $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Ισοτιμία: 1 $from = $rate $to (ΕΚΤ, $date)';
   }
@@ -679,11 +653,6 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count αναλύσεις τον μήνα';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Δωρεάν δοκιμή $days ημερών με $count αναλύσεις';
   }
 
   @override
@@ -776,9 +745,6 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get viewPlans => 'Προβολή προγραμμάτων';
-
-  @override
-  String get usageTitle => 'Χρήση';
 
   @override
   String get demoPurchaseNote => 'Δοκιμαστική χρέωση: οι αγορές σε αυτήν την πλατφόρμα είναι προσομοίωση.';
@@ -1143,9 +1109,6 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Η θέση σας';
-
-  @override
-  String get portfolioPurchases => 'Αγορές';
 
   @override
   String get portfolioRemove => 'Αφαίρεση';
@@ -2458,6 +2421,9 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Καμία νέα μετοχή';
+
+  @override
   String get positionsSortWeight => 'Μεγαλύτερες πρώτα';
 
   @override
@@ -2651,6 +2617,9 @@ class AppLocalizationsEl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Όλες οι θέσεις έχουν ήδη trailing stop';
 
   @override
   String portfolioSinceSale(String percent) {

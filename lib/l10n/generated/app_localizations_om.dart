@@ -13,9 +13,6 @@ class AppLocalizationsOm extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Suuraa aksiyoonaa kaasi, waa\'ee isaa waan hunda baradhu.';
-
-  @override
   String get homeHint =>
       'Waraqaa ragaa aksiyoonaa, iskiriinii appii daldaltuu aksiyoonaa, gaazexaa ykn mallattoo dhaabbataa – waan aksiyoona tokko adda baasu kamiyyuu.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsOm extends AppLocalizations {
   String get takePhoto => 'Suuraa kaasi';
 
   @override
-  String get chooseFromGallery => 'Gaalarii irraa filadhu';
-
-  @override
   String get chooseImage => 'Suuraa filadhu';
-
-  @override
-  String get enterTickerManually => 'Mallattoo harkaan galchi';
-
-  @override
-  String get tickerInputLabel => 'Mallattoo aksiyoonaa';
-
-  @override
-  String get tickerInputHint => 'fkn. AAPL';
 
   @override
   String get lookUp => 'Barbaadi';
@@ -186,9 +171,6 @@ class AppLocalizationsOm extends AppLocalizations {
   String get labelHeadquarters => 'Waajjira muummee';
 
   @override
-  String get labelDescription => 'Ibsa';
-
-  @override
   String get labelLastPrice => 'Gatii dhumaa';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get noNews => 'Oduun dhiyoo hin jiru.';
-
-  @override
-  String get openArticle => 'Barreeffama bani';
 
   @override
   String get openLinkFailed => 'Liinkii banuun hin danda\'amne.';
@@ -603,11 +582,6 @@ class AppLocalizationsOm extends AppLocalizations {
   String get displayCurrencyNone => 'Maallaqa aksiyoonichaa qofa';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ gara ${currency}tti';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Sharafa: 1 $from = $rate $to (ECB, $date)';
   }
@@ -679,11 +653,6 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Ji\'atti xiinxala $count';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Yaalii bilisaa guyyaa $days xiinxala $count waliin';
   }
 
   @override
@@ -777,9 +746,6 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get viewPlans => 'Karoorota ilaali';
-
-  @override
-  String get usageTitle => 'Itti fayyadama';
 
   @override
   String get demoPurchaseNote => 'Kaffaltii agarsiisaa: waltajjii kana irratti bittaan fakkeessaa qofa.';
@@ -1143,9 +1109,6 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Qabiyyee kee';
-
-  @override
-  String get portfolioPurchases => 'Bittaawwan';
 
   @override
   String get portfolioRemove => 'Haqi';
@@ -2454,6 +2417,9 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Aksiyoonni haaraan hin jiru';
+
+  @override
   String get positionsSortWeight => 'Kan guddaa dura';
 
   @override
@@ -2652,6 +2618,9 @@ class AppLocalizationsOm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Qabiyyeen hundi duraanuu akeekkachiisa kana qaba';
 
   @override
   String portfolioSinceSale(String percent) {

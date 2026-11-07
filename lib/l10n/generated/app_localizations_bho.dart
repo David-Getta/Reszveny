@@ -13,9 +13,6 @@ class AppLocalizationsBho extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'कवनो शेयर के फोटो खींचीं आ ओकरा बारे में सब कुछ जानीं।';
-
-  @override
   String get homeHint =>
       'शेयर सर्टिफिकेट, ब्रोकरेज ऐप के स्क्रीन, अखबार भा कंपनी के लोगो – कुछुओ जवना से कवनो शेयर के पहचान होखे।';
 
@@ -23,19 +20,7 @@ class AppLocalizationsBho extends AppLocalizations {
   String get takePhoto => 'फोटो खींचीं';
 
   @override
-  String get chooseFromGallery => 'गैलरी से चुनीं';
-
-  @override
   String get chooseImage => 'तस्वीर चुनीं';
-
-  @override
-  String get enterTickerManually => 'टिकर खुद लिखीं';
-
-  @override
-  String get tickerInputLabel => 'टिकर सिंबल';
-
-  @override
-  String get tickerInputHint => 'जइसे AAPL';
 
   @override
   String get lookUp => 'खोजीं';
@@ -184,9 +169,6 @@ class AppLocalizationsBho extends AppLocalizations {
   String get labelHeadquarters => 'मुख्यालय';
 
   @override
-  String get labelDescription => 'विवरण';
-
-  @override
   String get labelLastPrice => 'आखिरी दाम';
 
   @override
@@ -327,9 +309,6 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get noNews => 'हाल के कवनो खबर नइखे।';
-
-  @override
-  String get openArticle => 'लेख खोलीं';
 
   @override
   String get openLinkFailed => 'लिंक ना खुल सकल।';
@@ -597,11 +576,6 @@ class AppLocalizationsBho extends AppLocalizations {
   String get displayCurrencyNone => 'खाली शेयर के आपन मुद्रा';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency में';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'दर: 1 $from = $rate $to (ECB, $date)';
   }
@@ -673,11 +647,6 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'हर महीना $count विश्लेषण';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count विश्लेषण के संगे $days दिन के मुफ्त ट्रायल';
   }
 
   @override
@@ -770,9 +739,6 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get viewPlans => 'प्लान देखीं';
-
-  @override
-  String get usageTitle => 'इस्तेमाल';
 
   @override
   String get demoPurchaseNote => 'डेमो बिलिंग: एह प्लेटफ़ॉर्म पर खरीदारी सिमुलेट कइल जाला।';
@@ -1134,9 +1100,6 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'राउर पोजीशन';
-
-  @override
-  String get portfolioPurchases => 'खरीदारी';
 
   @override
   String get portfolioRemove => 'हटाईं';
@@ -2422,6 +2385,9 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'कवनो नया शेयर नइखे';
+
+  @override
   String get positionsSortWeight => 'सबसे बड़ा पहिले';
 
   @override
@@ -2614,6 +2580,9 @@ class AppLocalizationsBho extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'हर पोजीशन पर पहिले से ट्रेलिंग स्टॉप लागल बा';
 
   @override
   String portfolioSinceSale(String percent) {

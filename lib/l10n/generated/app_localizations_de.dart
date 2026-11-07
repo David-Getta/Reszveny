@@ -13,9 +13,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fotografiere eine Aktie und erfahre alles über sie.';
-
-  @override
   String get homeHint =>
       'Ein Aktienzertifikat, ein Broker-App-Bildschirm, eine Zeitung oder ein Firmenlogo – alles, was eine Aktie identifiziert.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get takePhoto => 'Foto aufnehmen';
 
   @override
-  String get chooseFromGallery => 'Aus Galerie wählen';
-
-  @override
   String get chooseImage => 'Bild auswählen';
-
-  @override
-  String get enterTickerManually => 'Ticker manuell eingeben';
-
-  @override
-  String get tickerInputLabel => 'Tickersymbol';
-
-  @override
-  String get tickerInputHint => 'z. B. AAPL';
 
   @override
   String get lookUp => 'Suchen';
@@ -186,9 +171,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get labelHeadquarters => 'Hauptsitz';
 
   @override
-  String get labelDescription => 'Beschreibung';
-
-  @override
   String get labelLastPrice => 'Letzter Kurs';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get noNews => 'Keine aktuellen Nachrichten.';
-
-  @override
-  String get openArticle => 'Artikel öffnen';
 
   @override
   String get openLinkFailed => 'Der Link konnte nicht geöffnet werden.';
@@ -601,11 +580,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get displayCurrencyNone => 'Nur die Währung der Aktie';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ in $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kurs: 1 $from = $rate $to (EZB, $date)';
   }
@@ -677,11 +651,6 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count Analysen pro Monat';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days Tage kostenlos testen mit $count Analysen';
   }
 
   @override
@@ -775,9 +744,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get viewPlans => 'Tarife ansehen';
-
-  @override
-  String get usageTitle => 'Nutzung';
 
   @override
   String get demoPurchaseNote => 'Demo-Abrechnung: Käufe werden auf dieser Plattform nur simuliert.';
@@ -1141,9 +1107,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Deine Position';
-
-  @override
-  String get portfolioPurchases => 'Käufe';
 
   @override
   String get portfolioRemove => 'Entfernen';
@@ -2444,6 +2407,9 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Keine neuen Aktien';
+
+  @override
   String get positionsSortWeight => 'Größte zuerst';
 
   @override
@@ -2637,6 +2603,9 @@ class AppLocalizationsDe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Alle Positionen haben schon einen Trailing-Stop';
 
   @override
   String portfolioSinceSale(String percent) {

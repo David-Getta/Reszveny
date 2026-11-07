@@ -1,14 +1,9 @@
 {
   "@@locale": "as",
   "appTitle": "WhatStock",
-  "homeTagline": "এটা শ্বেয়াৰৰ ফটো তোলক আৰু ইয়াৰ বিষয়ে সকলো জানক।",
   "homeHint": "শ্বেয়াৰ চাৰ্টিফিকেট, ব্ৰ'কাৰেজ এপৰ স্ক্ৰীণ, বাতৰি কাকত বা কোম্পানীৰ ল'গ' – যিকোনো বস্তু যিয়ে এটা শ্বেয়াৰ চিনাক্ত কৰে।",
   "takePhoto": "ফটো তোলক",
-  "chooseFromGallery": "গেলেৰীৰ পৰা বাছক",
   "chooseImage": "এখন ছবি বাছক",
-  "enterTickerManually": "টিকাৰ নিজে লিখক",
-  "tickerInputLabel": "টিকাৰ ছিম্বল",
-  "tickerInputHint": "যেনে AAPL",
   "lookUp": "বিচাৰক",
   "demoModeBanner": "ডেমো ম'ড – কোনো মাৰ্কেট ডেটা কী কনফিগাৰ কৰা হোৱা নাই। এইবোৰৰ বাবে নমুনা ডেটা উপলব্ধ: {symbols}।",
   "recognizing": "ছবিখন বিশ্লেষণ কৰি থকা হৈছে…",
@@ -18,6 +13,14 @@
   "whatWeSaw": "আমি কি দেখিলোঁ",
   "chooseCandidateTitle": "আপুনি কোনটো শ্বেয়াৰৰ কথা কৈছিল?",
   "confidencePercent": "{percent}% নিশ্চয়তা",
+  "@confidencePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "settings": "ছেটিংছ",
   "language": "ভাষা",
   "systemLanguage": "ছিষ্টেম ডিফ'ল্ট",
@@ -55,7 +58,6 @@
   "labelEmployees": "কৰ্মচাৰী",
   "labelCeo": "CEO",
   "labelHeadquarters": "মুখ্য কাৰ্যালয়",
-  "labelDescription": "বিৱৰণ",
   "labelLastPrice": "শেষ দাম",
   "labelChange": "পৰিৱৰ্তন",
   "labelOpen": "অ'পেন",
@@ -95,9 +97,16 @@
   "ratingSell": "বিক্ৰী",
   "ratingStrongSell": "দৃঢ় বিক্ৰী",
   "analystCount": "{count, plural, =1{{count} জন বিশ্লেষক} other{{count} জন বিশ্লেষক}}",
+  "@analystCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "analystPeriod": "সময়সীমা: {period}",
   "noNews": "শেহতীয়া কোনো বাতৰি নাই।",
-  "openArticle": "প্ৰবন্ধটো খোলক",
   "openLinkFailed": "লিংকটো খুলিব পৰা নগ'ল।",
   "recognitionSummary": "সাৰাংশ",
   "recognitionEvidence": "আমি কিয় এনে ভাবোঁ",
@@ -179,7 +188,6 @@
   "noFavorites": "এতিয়ালৈকে কোনো প্ৰিয় নাই। যোগ কৰিবলৈ কোনো শ্বেয়াৰৰ তৰাটোত টিপক।",
   "displayCurrency": "প্ৰদৰ্শনৰ মুদ্ৰা",
   "displayCurrencyNone": "কেৱল শ্বেয়াৰৰ নিজৰ মুদ্ৰা",
-  "labelConverted": "≈ {currency}ত",
   "fxRateNote": "হাৰ: 1 {from} = {rate} {to} (ECB, {date})",
   "updates": "আপডেট",
   "currentVersion": "সংস্কৰণ {version}",
@@ -202,11 +210,46 @@
   "planMax2": "Ultra",
   "planNone": "কোনো সক্ৰিয় প্লান নাই",
   "planAnalysesPerMonth": "প্ৰতি মাহে {count}টা বিশ্লেষণ",
-  "planTrialDescription": "{count}টা বিশ্লেষণৰ সৈতে {days} দিনৰ বিনামূলীয়া ট্ৰায়েল",
+  "@planAnalysesPerMonth": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "trialDaysLeft": "{days, plural, =1{ট্ৰায়েলৰ {days} দিন বাকী} other{ট্ৰায়েলৰ {days} দিন বাকী}}",
+  "@trialDaysLeft": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "trialExpired": "আপোনাৰ বিনামূলীয়া ট্ৰায়েল শেষ হ'ল। বিশ্লেষণ অব্যাহত ৰাখিবলৈ এটা প্লান বাছক।",
   "analysesRemaining": "এই সময়সীমাত {total}টাৰ ভিতৰত {remaining}টা বিশ্লেষণ বাকী",
+  "@analysesRemaining": {
+    "placeholders": {
+      "remaining": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "extraCredits": "{count, plural, =1{{count}টা অতিৰিক্ত বিশ্লেষণ} other{{count}টা অতিৰিক্ত বিশ্লেষণ}}",
+  "@extraCredits": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "renewsOn": "{date}ত নবীকৰণ",
   "choosePlan": "এটা প্লান বাছক",
   "currentPlan": "বৰ্তমানৰ প্লান",
@@ -226,7 +269,6 @@
   "errTrialExpired": "আপোনাৰ বিনামূলীয়া ট্ৰায়েল শেষ হ'ল। অব্যাহত ৰাখিবলৈ এটা প্লান বাছক।",
   "errNoPlan": "AI বিশ্লেষণৰ বাবে এটা সক্ৰিয় প্লান প্ৰয়োজন।",
   "viewPlans": "প্লানসমূহ চাওক",
-  "usageTitle": "ব্যৱহাৰ",
   "demoPurchaseNote": "ডেমো বিলিং: এই প্লেটফৰ্মত ক্ৰয় ছিমুলেট কৰা হয়।",
   "mostPopular": "আটাইতকৈ জনপ্ৰিয়",
   "bestValue": "সৰ্বোত্তম মূল্য",
@@ -243,6 +285,14 @@
   "aiDepthDeepDesc": "অধিক ৱেব সন্ধান, সমকক্ষ কোম্পানীৰ সৈতে তুলনা আৰু গভীৰ বিৱৰণ।",
   "aiDepthWords": "প্ৰায় {min}–{max}টা শব্দ",
   "aiDepthCost": "{count, plural, =1{{count}টা বিশ্লেষণ খৰচ হয়} other{{count}টা বিশ্লেষণ খৰচ হয়}}",
+  "@aiDepthCost": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiReaderLevel": "পাঠকৰ স্তৰ",
   "aiReaderBeginner": "নতুন",
   "aiReaderExperienced": "অভিজ্ঞ",
@@ -251,10 +301,66 @@
   "aiCounterArgument": "আটাইতকৈ শক্তিশালী প্ৰতিযুক্তি",
   "aiCounterArgumentDesc": "সাৰাংশ সদায় নিজৰ সিদ্ধান্তৰ বিপক্ষে আটাইতকৈ শক্তিশালী যুক্তিৰে শেষ হয়।",
   "aiWebSearchesInfo": "{count, plural, =1{আপোনাৰ প্লানত প্ৰতিটো বিশ্লেষণত সৰ্বাধিক {count}টা ৱেব সন্ধান} other{আপোনাৰ প্লানত প্ৰতিটো বিশ্লেষণত সৰ্বাধিক {count}টা ৱেব সন্ধান}}",
+  "@aiWebSearchesInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiWebSearchesPlans": "প্লান অনুসৰি মানক দৈৰ্ঘ্য: সাধাৰণ {normal}, Pro {pro}, Max {max}, Ultra {ultra}। চমুত 2টা কম, বিতঙত 2টা বেছি।",
+  "@aiWebSearchesPlans": {
+    "placeholders": {
+      "normal": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "pro": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "max": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "ultra": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiWebSearchesShort": "{count, plural, =1{সৰ্বাধিক {count}টা ৱেব সন্ধান} other{সৰ্বাধিক {count}টা ৱেব সন্ধান}}",
+  "@aiWebSearchesShort": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "planWebSearches": "{count, plural, =1{প্ৰতিটো বিশ্লেষণত {count}টা ৱেব সন্ধান} other{প্ৰতিটো বিশ্লেষণত {count}টা ৱেব সন্ধান}}",
+  "@planWebSearches": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "errNotEnoughCredits": "এই দৈৰ্ঘ্যৰ বাবে {needed}টা বিশ্লেষণ লাগে, কিন্তু মাত্ৰ {left}টা বাকী আছে। ছেটিংছত চুটি দৈৰ্ঘ্য বাছক বা অধিক বিশ্লেষণ লওক।",
+  "@errNotEnoughCredits": {
+    "placeholders": {
+      "needed": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "left": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "outlookMarketMood": "বজাৰৰ মনোভাৱ",
   "moodVeryPessimistic": "অতি নিৰাশাবাদী",
   "moodPessimistic": "নিৰাশাবাদী",
@@ -299,6 +405,14 @@
   "scenarioMostLikely": "আটাইতকৈ সম্ভাৱ্য",
   "longTermToday": "আজি",
   "longTermYears": "{years, plural, =1{{years} বছৰ} other{{years} বছৰ}}",
+  "@longTermYears": {
+    "placeholders": {
+      "years": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "longTermPerYear": "বছৰি {range}",
   "longTermLikely": "আটাইতকৈ সম্ভাৱ্য {price}",
   "confidenceLow": "কম নিশ্চয়তা",
@@ -324,7 +438,6 @@
   "portfolioPositions": "পজিচন",
   "portfolioAvgCost": "গড় খৰচ {price}",
   "portfolioYourPosition": "আপোনাৰ পজিচন",
-  "portfolioPurchases": "ক্ৰয়সমূহ",
   "portfolioRemove": "আঁতৰাওক",
   "portfolioExcluded": "দাম বা বিনিময় হাৰ নথকা পজিচনসমূহ মুঠ হিচাপত ধৰা হোৱা নাই।",
   "priceAlerts": "দামৰ সতৰ্কবাণী",
@@ -382,12 +495,36 @@
   "previewConfidential": "গোপন প্ৰিভিউ",
   "errPreviewDailyLimit": "এই প্ৰিভিউৰ আজিৰ বিশ্লেষণৰ সীমা পূৰ হৈছে। কাইলৈ পুনৰ চেষ্টা কৰক।",
   "ageHours": "{count, plural, =1{{count} ঘণ্টা আগতে} other{{count} ঘণ্টা আগতে}}",
+  "@ageHours": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "ageDays": "{count, plural, =1{{count} দিন আগতে} other{{count} দিন আগতে}}",
+  "@ageDays": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "staleTitle": "এই বিশ্লেষণ আপডেট কৰিবনে?",
   "staleBody": "এইটো {age} সৃষ্টি কৰা হৈছিল। তাৰ পিছত দাম, বাতৰি আৰু ফলাফল সলনি হ'ব পাৰে।",
   "staleKeep": "আগৰটো দেখুৱাওক",
   "staleRefresh": "নতুন এটা সৃষ্টি কৰক",
   "seeAll": "সকলো চাওক ({count})",
+  "@seeAll": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "searchAnalyses": "আপোনাৰ বিশ্লেষণ সন্ধান কৰক",
   "deleteAnalysis": "মচক",
   "analysisDeleted": "{symbol} বিশ্লেষণ মচা হ'ল",
@@ -399,15 +536,51 @@
   "shareCardDisclaimer": "AI বিশ্লেষণ · উদাহৰণমূলক পৰিস্থিতি, ভৱিষ্যদ্বাণী নহয় · বিনিয়োগৰ পৰামৰ্শ নহয়",
   "referralTitle": "বন্ধুক আমন্ত্ৰণ জনাওক",
   "referralBody": "আপোনাৰ ক'ড শ্বেয়াৰ কৰক। আপোনাৰ বন্ধুৱে লগে লগে {count, plural, =1{{count}টা অতিৰিক্ত বিশ্লেষণ} other{{count}টা অতিৰিক্ত বিশ্লেষণ}} পাব, আৰু তেওঁৰ প্ৰথম বিশ্লেষণৰ পিছত আপুনিও সমানেই পাব।",
+  "@referralBody": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralYourCode": "আপোনাৰ ক'ড",
   "referralStats": "আমন্ত্ৰিত: {invited} · পুৰস্কৃত: {rewarded}",
+  "@referralStats": {
+    "placeholders": {
+      "invited": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "rewarded": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralHaveCode": "বন্ধুৰ পৰা পোৱা ক'ড আছে নেকি?",
   "referralRedeem": "ব্যৱহাৰ কৰক",
   "referralRedeemed": "{count, plural, =1{{count}টা অতিৰিক্ত বিশ্লেষণ যোগ কৰা হ'ল। স্বাগতম!} other{{count}টা অতিৰিক্ত বিশ্লেষণ যোগ কৰা হ'ল। স্বাগতম!}}",
+  "@referralRedeemed": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralErrUnknown": "এই ক'ডটো নাই। পৰীক্ষা কৰি পুনৰ চেষ্টা কৰক।",
   "referralErrOwn": "আপুনি নিজৰ ক'ড ব্যৱহাৰ কৰিব নোৱাৰে।",
   "referralErrAlready": "আপুনি ইতিমধ্যে এজন বন্ধুৰ ক'ড ব্যৱহাৰ কৰিছে।",
   "referralShareText": "মই WhatStock-ৰে শ্বেয়াৰ বিশ্লেষণ কৰোঁ: এটা শ্বেয়াৰৰ ফটো তোলক আৰু AI-য়ে বুজাই দিব। মোৰ ক'ড {code} ব্যৱহাৰ কৰি আপুনি {count, plural, =1{{count}টা অতিৰিক্ত বিশ্লেষণ} other{{count}টা অতিৰিক্ত বিশ্লেষণ}} পাব।",
+  "@referralShareText": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralCopied": "ক'ড কপি কৰা হ'ল",
   "onboardTitle1": "এটা শ্বেয়াৰৰ ফটো তোলক",
   "onboardBody1": "ব্ৰ'কাৰেজ এপৰ স্ক্ৰীণ, বাতৰি কাকত বা কোম্পানীৰ ল'গ'ই যথেষ্ট: WhatStock-এ শ্বেয়াৰটো চিনাক্ত কৰি ইয়াৰ দাম, চাৰ্ট আৰু মূল তথ্যসমূহ দেখুৱায়।",
@@ -441,6 +614,14 @@
   "errAskLimit": "আপুনি আজিৰ প্ৰশ্নৰ সীমাত উপনীত হৈছে। অনুগ্ৰহ কৰি কাইলৈ পুনৰ চেষ্টা কৰক।",
   "eventTomorrow": "কাইলৈ",
   "eventInDays": "{days, plural, =1{{days} দিনৰ পিছত} other{{days} দিনৰ পিছত}}",
+  "@eventInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "eventEarnings": "ত্ৰৈমাসিক ফলাফল",
   "eventBeforeOpen": "বজাৰ খোলাৰ আগত",
   "eventAfterClose": "বজাৰ বন্ধ হোৱাৰ পিছত",
@@ -471,7 +652,23 @@
   "portfolioImportHint": "প্ৰতিটো শাৰীত এটাকৈ ক্ৰয় পেষ্ট কৰক: টিকাৰ ছিম্বল, পৰিমাণ, মূল্য, মুদ্ৰা, তাৰিখ (YYYY-MM-DD)। স্তম্ভবোৰ কমা, ছেমিকলন বা টেবেৰে পৃথক কৰিব পাৰি; শিৰোনামৰ শাৰীটো ঐচ্ছিক।",
   "portfolioImportButton": "আমদানি কৰক",
   "portfolioImported": "{count, plural, one{{count}টা লেনদেন যোগ কৰা হ'ল} other{{count}টা লেনদেন যোগ কৰা হ'ল}}",
+  "@portfolioImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioImportSkipped": "{count, plural, =1{{count}টা শাৰী এৰি দিয়া হ'ল} other{{count}টা শাৰী এৰি দিয়া হ'ল}}",
+  "@portfolioImportSkipped": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "syncInfo": "প'ৰ্টফ'লিঅ', প্ৰিয়, দামৰ সতৰ্কবাণী আৰু টোকাসমূহ আপোনাৰ সকলো ডিভাইচত ছিংক হয়।",
   "syncLast": "শেষবাৰ ছিংক: {time}",
   "syncNow": "এতিয়া ছিংক কৰক",
@@ -553,17 +750,45 @@
   "earningsExpected": "প্ৰত্যাশিত EPS",
   "earningsReported": "ঘোষিত EPS",
   "earningsBeats": "{total, plural, =1{{total}টা ত্ৰৈমাসিকৰ {beats}টাত প্ৰত্যাশিত EPSৰ সমান বা অধিক} other{শেহতীয়া {total}টা ত্ৰৈমাসিকৰ {beats}টাত প্ৰত্যাশিত EPSৰ সমান বা অধিক}}",
+  "@earningsBeats": {
+    "placeholders": {
+      "beats": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "earningsReminderTomorrow": "{symbol}: কাইলৈ ত্ৰৈমাসিক ফলাফল",
   "earningsReminderToday": "{symbol}: আজি ত্ৰৈমাসিক ফলাফল",
   "earningsRemindersTitle": "ফলাফলৰ সোঁৱৰণী",
   "earningsRemindersSubtitle": "আপোনাৰ প্ৰিয় বা পৰ্টফ'লিঅ'ৰ শ্বেয়াৰৰ ত্ৰৈমাসিক ফলাফল ঘোষণাৰ আগদিনা এটা জাননী",
   "addAllToFavorites": "সকলো প্ৰিয়ত যোগ কৰক ({count})",
+  "@addAllToFavorites": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioImportPhoto": "স্ক্ৰীণশ্বটৰ পৰা আমদানি কৰক",
   "holdingsReading": "আপোনাৰ পজিচন পঢ়ি থকা হৈছে…",
   "holdingsReviewTitle": "পোৱা পজিচন",
   "holdingsReviewHint": "যোগ কৰাৰ আগতে সংখ্যাবোৰ পৰীক্ষা কৰক। দামটো আজিৰ দাম নহয়, প্ৰতি শ্বেয়াৰত আপোনাৰ গড় ক্ৰয়মূল্য।",
   "holdingsNoPrice": "ছবিখনত গড় ক্ৰয়মূল্য নাই",
   "holdingsAdd": "{count, plural, =1{{count}টা পজিচন যোগ কৰক} other{{count}টা পজিচন যোগ কৰক}}",
+  "@holdingsAdd": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "holdingsNone": "এই ছবিখনত কোনো শ্বেয়াৰ পজিচন পোৱা নগ'ল। আপোনাৰ ব্ৰ'কাৰৰ পজিচন বা হ'ল্ডিং পৃষ্ঠাৰ স্ক্ৰীণশ্বট চেষ্টা কৰক।",
   "week52Range": "52-সপ্তাহৰ পৰিসৰ",
   "week52BelowHigh": "52-সপ্তাহৰ সৰ্বোচ্চতকৈ {percent} তলত",
@@ -576,7 +801,23 @@
   "alertHitTrailing": "{symbol} শীৰ্ষৰ পৰা {percent} নামিল",
   "sectionInsiders": "ইনচাইডাৰ লেনদেন",
   "insiderBuys": "{count, plural, =1{{count}টা ক্ৰয়} other{{count}টা ক্ৰয়}}",
+  "@insiderBuys": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "insiderSells": "{count, plural, =1{{count}টা বিক্ৰী} other{{count}টা বিক্ৰী}}",
+  "@insiderSells": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "insiderNet": "নিট: {shares} শ্বেয়াৰ",
   "insiderBuy": "কিনিলে",
   "insiderSell": "বিক্ৰী কৰিলে",
@@ -620,6 +861,14 @@
   "watchAlertAll": "দৈনিক ডাঙৰ লৰচৰত সতৰ্কবাণী",
   "watchAlertAllHint": "এই তালিকাৰ প্ৰতিটো শ্বেয়াৰৰ বাবে দামৰ সতৰ্কবাণী: এদিনত ইমানখিনি ওপৰলৈ বা তললৈ লৰচৰ হ'লে জনাব। যিবোৰৰ ইতিমধ্যে আছে, সেইবোৰৰ আগৰটোৱেই থাকিব।",
   "watchAlertAllDone": "{count, plural, =1{{count}টা সতৰ্কবাণী ছেট কৰা হ'ল} other{{count}টা সতৰ্কবাণী ছেট কৰা হ'ল}}",
+  "@watchAlertAllDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioExportRealized": "লাভ কৰা মুনাফা ৰপ্তানি কৰক (CSV)",
   "eventsAddToCalendar": "কেলেণ্ডাৰত যোগ কৰক (.ics)",
   "portfolioAnnualReturn": "বাৰ্ষিক ৰিটাৰ্ণ",
@@ -638,6 +887,14 @@
   "watchImport": "টিকাৰ যোগ কৰক",
   "watchImportHint": "কমা, স্পেচ বা নতুন শাৰীৰে পৃথক কৰি টিকাৰবোৰ পেষ্ট কৰক – উদাহৰণস্বৰূপে, কোনোবাই আপোনাক শ্বেয়াৰ কৰা এখন তালিকা।",
   "watchImported": "{count, plural, =0{কোনো নতুন শ্বেয়াৰ নাই} =1{{count}টা শ্বেয়াৰ যোগ কৰা হ'ল} other{{count}টা শ্বেয়াৰ যোগ কৰা হ'ল}}",
+  "@watchImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "positionsSortWeight": "সৰ্ববৃহৎ প্ৰথমে",
   "positionsSortGain": "সৰ্বাধিক মুঠ লাভ প্ৰথমে",
   "positionsSortToday": "আজিৰ শ্ৰেষ্ঠ প্ৰথমে",
@@ -647,8 +904,40 @@
   "usMarketOpen": "আমেৰিকাৰ বজাৰ খোলা · {time} পিছত বন্ধ হ'ব",
   "usMarketClosed": "আমেৰিকাৰ বজাৰ বন্ধ · {time} পিছত খুলিব",
   "durationMinutes": "{minutes} মিনিট",
+  "@durationMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationHoursMinutes": "{hours} ঘণ্টা {minutes} মিনিট",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationDaysHours": "{days} দিন {hours} ঘণ্টা",
+  "@durationDaysHours": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "hours": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioGoalSet": "লক্ষ্য নিৰ্ধাৰণ কৰক",
   "portfolioGoalTitle": "প'ৰ্টফ'লিঅ'ৰ লক্ষ্য",
   "portfolioGoalProgress": "{percent} · লক্ষ্য: {amount}",
@@ -660,6 +949,14 @@
   "alertDeleted": "সতৰ্কবাণী মচা হ'ল",
   "alertsClearTriggered": "সক্ৰিয় হোৱা সতৰ্কবাণী মচক",
   "alertsCleared": "{count, plural, =1{{count}টা সতৰ্কবাণী মচা হ'ল} other{{count}টা সতৰ্কবাণী মচা হ'ল}}",
+  "@alertsCleared": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "homeScreenTitle": "হোম স্ক্ৰীণ",
   "allocationCountries": "দেশ",
   "newsExplainNoteResearch": "AI ব্যাখ্যা: ই ৱেবত তথ্যবোৰ বিচাৰে, প্ৰবন্ধটো খোলে আৰু উৎসটো কিমান বিশ্বাসযোগ্য তাক বিচাৰ কৰে। ই বিনিয়োগৰ পৰামৰ্শ নহয়। ই আপোনাৰ দৈনিক প্ৰশ্নৰ সীমাৰ পৰা যায়, কোনো বিশ্লেষণ খৰচ নকৰে।",
@@ -689,6 +986,14 @@
   "portfolioDividendDate": "পৰিশোধৰ তাৰিখ",
   "portfolioDividendsEmpty": "এতিয়ালৈকে কোনো লাভাংশ লিপিবদ্ধ কৰা হোৱা নাই। হাতে যোগ কৰক, বা আপোনাৰ ব্ৰোকাৰৰ এক্সপোৰ্ট আমদানি কৰক – তাৰ লাভাংশৰ শাৰীসমূহো লোৱা হয়।",
   "portfolioDividendsImported": "{count, plural, =1{{count}টা লাভাংশ যোগ কৰা হ'ল} other{{count}টা লাভাংশ যোগ কৰা হ'ল}}",
+  "@portfolioDividendsImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioExportDividends": "লাভাংশ এক্সপোৰ্ট কৰক (CSV)",
   "portfolioDividendDeleted": "লাভাংশ মচা হ'ল",
   "portfolioDividendsHint": "পৰিমাণসমূহ আপোনাৰ একাউণ্টত অহাৰ দৰে, পৰিশোধৰ মুদ্ৰাত; মুঠ আজিৰ হাৰত ৰূপান্তৰিত হয়। কৰ ৰিটাৰ্ণৰ বাবে আপোনাৰ ব্ৰোকাৰৰ বিবৃতি ব্যৱহাৰ কৰক।",
@@ -696,6 +1001,14 @@
   "awaySince": "{when}ৰ পৰা",
   "awayQuiet": "বিশেষ একো সলনি হোৱা নাই।",
   "awayAlerts": "{count, plural, =1{{count}টা সতৰ্কবাণী সক্ৰিয় হৈছে} other{{count}টা সতৰ্কবাণী সক্ৰিয় হৈছে}}",
+  "@awayAlerts": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "awayReported": "ফলাফল ঘোষণা কৰিলে: {symbols}",
   "moveWhyButton": "আজি কিয় সলনি হৈছে?",
   "moveWhyTitle": "আজি {percent}",
@@ -718,6 +1031,18 @@
   "glossVolatility": "মূল্য দিনে দিনে কিমান ওঠা-নমা কৰে, বছৰৰ হিচাপত: ২০% মানে সাধাৰণ বছৰত প্ৰায় ±২০%ৰ ভিতৰত ওঠা-নমা হয়। উচ্চ অস্থিৰতা মানে দুয়োদিশে ডাঙৰ পৰিবৰ্তন।",
   "techNote": "দৈনিক সমাপ্তি মূল্যৰ পৰা গণনা কৰা। কাৰিকৰী সংকেত অতীতৰ বৰ্ণনা কৰে, ভবিষ্যতৰ নহয়।",
   "portfolioAbove200": "{count}টা পজিচনৰ ভিতৰত {above}টা নিজৰ ২০০ দিনৰ গড়তকৈ ওপৰত",
+  "@portfolioAbove200": {
+    "placeholders": {
+      "above": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "watchSignalsTitle": "সংকেত",
   "signalRsiOversold": "RSI {value} · অতি বিক্ৰয়",
   "signalRsiOverbought": "RSI {value} · অতি ক্ৰয়",
@@ -751,6 +1076,14 @@
   "portfolioSplitRow": "ষ্টক বিভাজন {ratio}",
   "portfolioSplitRemoved": "ষ্টক বিভাজন মচি পেলোৱা হ'ল",
   "portfolioSplitsImported": "{count, plural, =1{{count} টা ষ্টক বিভাজন যোগ কৰা হ'ল} other{{count} টা ষ্টক বিভাজন যোগ কৰা হ'ল}}",
+  "@portfolioSplitsImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "labelDividendGrowth5y": "লভ্যাংশ বৃদ্ধি (5 বছৰ)",
   "dividendNone": "যোৱা 12 মাহত কোনো লভ্যাংশ দিয়া হোৱা নাই।",
   "dividendOnYourShares": "আপোনাৰ শ্বেয়াৰত, বছৰি",
@@ -793,6 +1126,14 @@
   "portfolioTopHoldings": "আটাইতকৈ ডাঙৰ পজিচন",
   "portfolioShareNote": "কেৱল শতাংশহে শ্বেয়াৰ কৰা হয়, কোনো পৰিমাণ নহয়।",
   "portfolioPositionsCount": "{count, plural, =1{{count}টা পজিচন} other{{count}টা পজিচন}}",
+  "@portfolioPositionsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "shareNotAdvice": "বিনিয়োগৰ পৰামৰ্শ নহয়",
   "contributionButton": "নতুন ধন বিনিয়োগ কৰক",
   "contributionAmount": "বিনিয়োগ কৰিবলগীয়া পৰিমাণ ({currency})",
@@ -808,6 +1149,14 @@
   "portfolioSampleRemove": "নমুনা আঁতৰাওক",
   "portfolioStopsAll": "সকলো পজিচনৰ বাবে ট্ৰেইলিং ষ্টপ",
   "portfolioStopsDone": "{count, plural, =0{প্ৰতিটো পজিচনত ইতিমধ্যে ট্ৰেইলিং ষ্টপ আছে} =1{{count}টা ট্ৰেইলিং ষ্টপ ছেট কৰা হ'ল} other{{count}টা ট্ৰেইলিং ষ্টপ ছেট কৰা হ'ল}}",
+  "@portfolioStopsDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioSinceSale": "বিক্ৰী কৰাৰ পৰা {percent}",
   "lotPreviewRealized": "এই বিক্ৰীত বাস্তৱায়িত (FIFO):",
   "lotPreviewAverage": "নতুন গড় খৰচ: {after} (এতিয়া {before})",
@@ -822,7 +1171,23 @@
   "lotNoteBought": "ক্ৰয়",
   "positionHeld": "ধৰি ৰখাৰ সময়",
   "durationMonths": "{months, plural, one{{months} মাহ} other{{months} মাহ}}",
+  "@durationMonths": {
+    "placeholders": {
+      "months": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationDays": "{days, plural, one{{days} দিন} other{{days} দিন}}",
+  "@durationDays": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "positionHeldSince": "{date}ৰ পৰা",
   "lotPreviewWeight": "লেনদেনৰ পিছত প'ৰ্টফ'লিঅ'ত অংশ: {after} (এতিয়া {before})",
   "lotFromCash": "নগদৰ পৰা পৰিশোধ কৰক (এতিয়া {amount})",
@@ -837,6 +1202,14 @@
   "activitySearchHint": "টিকাৰ অনুসৰি ফিল্টাৰ কৰক",
   "activityNoMatch": "ফিল্টাৰৰ সৈতে কোনো লেনদেন মিল নাখালে।",
   "portfolioImportDuplicates": "{count, plural, one{{count}টা আগতেই লিপিবদ্ধ, বাদ দিয়া হ'ল} other{{count}টা আগতেই লিপিবদ্ধ, বাদ দিয়া হ'ল}}",
+  "@portfolioImportDuplicates": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "tickerChange": "টিকাৰ সলনি",
   "tickerChangeTitle": "টিকাৰ সলনি · {symbol}",
   "tickerChangeNew": "নতুন টিকাৰ",
@@ -850,6 +1223,14 @@
   "errRateLimited": "কম সময়ৰ ভিতৰত অত্যধিক অনুৰোধ পঠোৱা হৈছে। অনুগ্ৰহ কৰি এক মিনিট অপেক্ষা কৰি পুনৰ চেষ্টা কৰক।",
   "watchListNameTaken": "এই নামৰ এখন তালিকা ইতিমধ্যে আছে।",
   "watchListLimit": "আপুনি সৰ্বাধিক {max}খন তালিকা ৰাখিব পাৰে।",
+  "@watchListLimit": {
+    "placeholders": {
+      "max": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioBuyBelowSold": "অন্ততঃ {quantity} – ইমানবোৰ ইতিমধ্যে বিক্ৰী কৰা হৈছে",
   "restoreNothing": "পুনৰুদ্ধাৰ কৰিবলৈ আগৰ কোনো ক্ৰয় পোৱা নগ'ল।",
   "manageSubscriptionElsewhere": "ইয়াত পৰিচালনা কৰিবলৈ কোনো ছাবস্ক্ৰিপশ্বন নাই। App Store বা Google Playত কিনা ছাবস্ক্ৰিপশ্বন ষ্ট'ৰৰ ছেটিংছত পৰিচালনা কৰা হয়।",
@@ -858,6 +1239,14 @@
   "noteFull": "এই শ্বেয়াৰটোৰ টোকাসমূহ ভৰি পৰিছে, সেয়েহে এই এণ্ট্ৰিটো যোগ কৰা হোৱা নাই। টোকাসমূহ চুটি কৰি পুনৰ চেষ্টা কৰক।",
   "portfolioNoRateFor": "{symbols}-ৰ বাবে বিনিময় হাৰ নাই।",
   "dividendsNotConverted": "{count, plural, =1{{currencies}-ত থকা {count}টা লাভাংশৰ বিনিময় হাৰ নাই, সেয়েহে ইয়াক মুঠ হিচাপত ধৰা হোৱা নাই।} other{{currencies}-ত থকা {count}টা লাভাংশৰ বিনিময় হাৰ নাই, সেয়েহে সেইবোৰ মুঠ হিচাপত ধৰা হোৱা নাই।}}",
+  "@dividendsNotConverted": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "signOutTitle": "ছাইন আউট কৰিবনে?",
   "signOutBody": "আপোনাৰ প'ৰ্টফ'লিঅ', তালিকা, দামৰ সতৰ্কবাণী আৰু টোকাসমূহ আপোনাৰ একাউণ্টত থাকিব আৰু এই ডিভাইচৰ পৰা আঁতৰোৱা হ'ব। সেইবোৰ ঘূৰাই পাবলৈ পুনৰ ছাইন ইন কৰক।",
   "signOutUnsaved": "কিছুমান পৰিৱৰ্তন আপোনাৰ একাউণ্টত ছেভ কৰিব পৰা নগ'ল (সংযোগ নাই নেকি?)। এতিয়া ছাইন আউট কৰিলে সেইবোৰ হেৰাই যাব।",
@@ -901,5 +1290,7 @@
   "errAiUnavailable": "AI সেৱা এই মুহূৰ্তত উপলব্ধ নহয়। কেইমিনিটমান পিছত পুনৰ চেষ্টা কৰক।",
   "errMarketUnavailable": "মাৰ্কেট ডেটা এই মুহূৰ্তত উপলব্ধ নহয়। কেইমিনিটমান পিছত পুনৰ চেষ্টা কৰক।",
   "purchaseUnavailable": "ক্ৰয় এই মুহূৰ্তত উপলব্ধ নহয়। পিছত পুনৰ চেষ্টা কৰক।",
-  "signOutLocalOnly": "সংৰক্ষিত বিশ্লেষণ আৰু AI টোকাসমূহ কেৱল এই ডিভাইচতহে ৰখা হয়, আপোনাৰ একাউণ্টত নহয়, সেয়েহে সেইবোৰ চিৰদিনৰ বাবে আঁতৰোৱা হ'ব।"
+  "signOutLocalOnly": "সংৰক্ষিত বিশ্লেষণ আৰু AI টোকাসমূহ কেৱল এই ডিভাইচতহে ৰখা হয়, আপোনাৰ একাউণ্টত নহয়, সেয়েহে সেইবোৰ চিৰদিনৰ বাবে আঁতৰোৱা হ'ব।",
+  "watchImportedNone": "কোনো নতুন শ্বেয়াৰ নাই",
+  "portfolioStopsNone": "প্ৰতিটো পজিচনত ইতিমধ্যে ট্ৰেইলিং ষ্টপ আছে"
 }

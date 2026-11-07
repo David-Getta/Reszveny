@@ -13,9 +13,6 @@ class AppLocalizationsZu extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Thatha isithombe sesheya bese ufunda konke ngalo.';
-
-  @override
   String get homeHint =>
       'Isitifiketi sesheya, isikrini se-app ye-broker, iphephandaba noma ilogo yenkampani – noma yini ekhomba isheya.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get takePhoto => 'Thatha isithombe';
 
   @override
-  String get chooseFromGallery => 'Khetha kugalari';
-
-  @override
   String get chooseImage => 'Khetha isithombe';
-
-  @override
-  String get enterTickerManually => 'Faka i-ticker ngesandla';
-
-  @override
-  String get tickerInputLabel => 'Uphawu lwe-ticker';
-
-  @override
-  String get tickerInputHint => 'isb. AAPL';
 
   @override
   String get lookUp => 'Bheka';
@@ -186,9 +171,6 @@ class AppLocalizationsZu extends AppLocalizations {
   String get labelHeadquarters => 'Ikomkhulu';
 
   @override
-  String get labelDescription => 'Incazelo';
-
-  @override
   String get labelLastPrice => 'Intengo yokugcina';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get noNews => 'Azikho izindaba zakamuva.';
-
-  @override
-  String get openArticle => 'Vula isihloko';
 
   @override
   String get openLinkFailed => 'Isixhumanisi asikwazanga ukuvulwa.';
@@ -607,11 +586,6 @@ class AppLocalizationsZu extends AppLocalizations {
   String get displayCurrencyNone => 'Imali yesheya kuphela';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ ku-$currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Izinga: 1 $from = $rate $to (ECB, $date)';
   }
@@ -683,11 +657,6 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Izinhlaziyo ezingu-$count ngenyanga';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Ukuzama mahhala kwezinsuku ezingu-$days nezinhlaziyo ezingu-$count';
   }
 
   @override
@@ -781,9 +750,6 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get viewPlans => 'Buka izinhlelo';
-
-  @override
-  String get usageTitle => 'Ukusetshenziswa';
 
   @override
   String get demoPurchaseNote => 'Ukukhokha kwedemo: ukuthenga kule nkundla kuyalingiswa nje.';
@@ -1153,9 +1119,6 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Okwakho';
-
-  @override
-  String get portfolioPurchases => 'Okuthengiwe';
 
   @override
   String get portfolioRemove => 'Susa';
@@ -2487,6 +2450,9 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Awekho amasheya amasha';
+
+  @override
   String get positionsSortWeight => 'Ezinkulu kakhulu kuqala';
 
   @override
@@ -2685,6 +2651,9 @@ class AppLocalizationsZu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Isheya ngalinye selinaso lesi sexwayiso';
 
   @override
   String portfolioSinceSale(String percent) {

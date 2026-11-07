@@ -13,9 +13,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fotografe uma ação e saiba tudo sobre ela.';
-
-  @override
   String get homeHint =>
       'Um certificado de ações, a imagem de uma app de corretora, um jornal ou o logótipo de uma empresa: qualquer coisa que identifique uma ação.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get takePhoto => 'Tirar uma foto';
 
   @override
-  String get chooseFromGallery => 'Escolher da galeria';
-
-  @override
   String get chooseImage => 'Escolher uma imagem';
-
-  @override
-  String get enterTickerManually => 'Introduzir o ticker manualmente';
-
-  @override
-  String get tickerInputLabel => 'Símbolo (ticker)';
-
-  @override
-  String get tickerInputHint => 'ex.: AAPL';
 
   @override
   String get lookUp => 'Pesquisar';
@@ -186,9 +171,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get labelHeadquarters => 'Sede';
 
   @override
-  String get labelDescription => 'Descrição';
-
-  @override
   String get labelLastPrice => 'Último preço';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get noNews => 'Sem notícias recentes.';
-
-  @override
-  String get openArticle => 'Abrir artigo';
 
   @override
   String get openLinkFailed => 'Não foi possível abrir o link.';
@@ -602,11 +581,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get displayCurrencyNone => 'Apenas a moeda da própria ação';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ em $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Câmbio: 1 $from = $rate $to (BCE, $date)';
   }
@@ -678,11 +652,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count análises por mês';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Teste gratuito de $days dias com $count análises';
   }
 
   @override
@@ -775,9 +744,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get viewPlans => 'Ver planos';
-
-  @override
-  String get usageTitle => 'Utilização';
 
   @override
   String get demoPurchaseNote => 'Faturação de demonstração: as compras são simuladas nesta plataforma.';
@@ -1141,9 +1107,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'A sua posição';
-
-  @override
-  String get portfolioPurchases => 'Compras';
 
   @override
   String get portfolioRemove => 'Remover';
@@ -2445,6 +2408,9 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Nenhuma ação nova';
+
+  @override
   String get positionsSortWeight => 'Maiores primeiro';
 
   @override
@@ -2637,6 +2603,9 @@ class AppLocalizationsPt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Todas as posições já têm stop móvel';
 
   @override
   String portfolioSinceSale(String percent) {

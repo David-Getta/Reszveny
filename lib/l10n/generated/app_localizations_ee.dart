@@ -13,9 +13,6 @@ class AppLocalizationsEe extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Ɖe akpa aɖe ƒe foto eye nànya nu sia nu tso eŋu.';
-
-  @override
   String get homeHint =>
       'Akpa ƒe agbalẽ, broker app ƒe sikrin, nyadzɔdzɔgbalẽ alo dɔwɔƒe ƒe dzesi – nu sia nu si fia akpa aɖe.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsEe extends AppLocalizations {
   String get takePhoto => 'Ɖe foto';
 
   @override
-  String get chooseFromGallery => 'Tia tso gallery me';
-
-  @override
   String get chooseImage => 'Tia nɔnɔmetata';
-
-  @override
-  String get enterTickerManually => 'Ŋlɔ ticker la wò ŋutɔ';
-
-  @override
-  String get tickerInputLabel => 'Ticker dzesi';
-
-  @override
-  String get tickerInputHint => 'kpɔɖeŋu, AAPL';
 
   @override
   String get lookUp => 'Di';
@@ -186,9 +171,6 @@ class AppLocalizationsEe extends AppLocalizations {
   String get labelHeadquarters => 'Dɔwɔƒe gã';
 
   @override
-  String get labelDescription => 'Ɖeɖefia';
-
-  @override
   String get labelLastPrice => 'Asi mamlɛtɔ';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get noNews => 'Nyadzɔdzɔ yeye aɖeke meli o.';
-
-  @override
-  String get openArticle => 'Ʋu nuŋlɔɖi la';
 
   @override
   String get openLinkFailed => 'Míete ŋu ʋu link la o.';
@@ -599,11 +578,6 @@ class AppLocalizationsEe extends AppLocalizations {
   String get displayCurrencyNone => 'Akpa la ŋutɔ ƒe ga ko';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ le $currency me';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Gatɔtrɔ ƒe asi: 1 $from = $rate $to (ECB, $date)';
   }
@@ -675,11 +649,6 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Numekuku $count ɣleti sia ɣleti';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Tetekpɔ femaxee ŋkeke $days kple numekuku $count';
   }
 
   @override
@@ -773,9 +742,6 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get viewPlans => 'Kpɔ plan siwo li';
-
-  @override
-  String get usageTitle => 'Zãzã';
 
   @override
   String get demoPurchaseNote => 'Demo gaxexe: nuƒeƒlewo nye kpɔɖeŋu ko le platform sia dzi.';
@@ -1139,9 +1105,6 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Nu si le asiwò';
-
-  @override
-  String get portfolioPurchases => 'Nuƒeƒlewo';
 
   @override
   String get portfolioRemove => 'Ɖe ɖa';
@@ -2453,6 +2416,9 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Aksiɔn yeye aɖeke meli o';
+
+  @override
   String get positionsSortWeight => 'Esiwo lolo wu gbã';
 
   @override
@@ -2645,6 +2611,9 @@ class AppLocalizationsEe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Nuxlɔ̃ame sia le akpa ɖesiaɖe ŋu xoxo';
 
   @override
   String portfolioSinceSale(String percent) {

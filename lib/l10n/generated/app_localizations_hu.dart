@@ -13,9 +13,6 @@ class AppLocalizationsHu extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fotózz le egy részvényt, és tudj meg róla mindent.';
-
-  @override
   String get homeHint =>
       'Részvényokirat, brókerapp képernyője, újság vagy céglogó – bármi, ami azonosít egy részvényt.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get takePhoto => 'Fotó készítése';
 
   @override
-  String get chooseFromGallery => 'Választás a galériából';
-
-  @override
   String get chooseImage => 'Kép kiválasztása';
-
-  @override
-  String get enterTickerManually => 'Ticker megadása kézzel';
-
-  @override
-  String get tickerInputLabel => 'Tickerszimbólum';
-
-  @override
-  String get tickerInputHint => 'pl. AAPL';
 
   @override
   String get lookUp => 'Keresés';
@@ -186,9 +171,6 @@ class AppLocalizationsHu extends AppLocalizations {
   String get labelHeadquarters => 'Székhely';
 
   @override
-  String get labelDescription => 'Leírás';
-
-  @override
   String get labelLastPrice => 'Utolsó árfolyam';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get noNews => 'Nincsenek friss hírek.';
-
-  @override
-  String get openArticle => 'Cikk megnyitása';
 
   @override
   String get openLinkFailed => 'A hivatkozást nem sikerült megnyitni.';
@@ -599,11 +578,6 @@ class AppLocalizationsHu extends AppLocalizations {
   String get displayCurrencyNone => 'Csak a részvény saját pénzneme';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ átváltva: $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Árfolyam: 1 $from = $rate $to (EKB, $date)';
   }
@@ -675,11 +649,6 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count elemzés havonta';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days napos ingyenes próbaidő $count elemzéssel';
   }
 
   @override
@@ -766,9 +735,6 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get viewPlans => 'Csomagok megtekintése';
-
-  @override
-  String get usageTitle => 'Felhasználás';
 
   @override
   String get demoPurchaseNote => 'Demó számlázás: ezen a platformon a vásárlások csak szimuláltak.';
@@ -1131,9 +1097,6 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'A pozíciód';
-
-  @override
-  String get portfolioPurchases => 'Vételek';
 
   @override
   String get portfolioRemove => 'Törlés';
@@ -2427,6 +2390,9 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Nincs új részvény';
+
+  @override
   String get positionsSortWeight => 'Legnagyobb elöl';
 
   @override
@@ -2619,6 +2585,9 @@ class AppLocalizationsHu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Minden pozíción van már követő stop';
 
   @override
   String portfolioSinceSale(String percent) {

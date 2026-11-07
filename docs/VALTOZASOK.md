@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.320)
+# Változásjegyzék (0.2.130 → 0.2.321)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,31 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Asztali ablakméretezés, számjegyek és százalékjel a nyelv szerint
+
+- **0.2.321**: asztali gépen az ablak átméretezése az oldalsáv küszöbén át (860 px) eddig újraépítette a
+  kezdőlap egész oszlopát: a keresőbe gépelt szöveg és a betöltött szakaszok elvesztek, a régi keresőmező
+  figyelője pedig a vezérlőn maradt, és minden további gépelésnél hibát dobott. Most a kereső és a szakaszok
+  megmaradnak, a figyelő pedig a mező eldobásakor lekerül.
+- A gyorspanel és a tálca-menü visszahívásai leválnak, ha az app kerete eldobódik (pl. a meghívó-oldal váltja
+  le): egy kattintás nem ér egy már nem létező képernyőt. Az elemzés-nézők és a gyorspanel jegyzett találatai
+  nem gyűlnek korlátlanul.
+- Hét nyelven (asszámi, bengáli, perzsa, maráthi, burmai, nepáli, pastu) a mondatba fűzött darabszám („12
+  elemző”) eddig latin számjegyekkel állt a nyelv saját számjegyeivel írt számok mellett; most egységes. Az
+  évszámok (gyorsjelentés-oszlopok, éves összegzés) is a nyelv számjegyeivel, csoportosítás nélkül.
+- A forgatókönyvek esélye (a kilátásokban és a megosztott képen) a nyelv százalékjelével: törökül „%30”,
+  franciául, németül, csehül „30 %” (nem törő szóközzel), ahogy a többi százalék is.
+- Az éves csomag havi díja és a szimulált bolt ára az intl-adat nélküli nyelveken is a térség írásmódjával
+  („3,33 EUR”, nem „3.33 EUR”).
+- A gyorsbillentyű-tipp (kezdőlap, beállítások, oldalsáv) a módosító billentyűk nevét a felhasználó nyelvén
+  írja („Strg”, nem „Ctrl”), ahogy a billentyűparancsok ablaka eddig is.
+- A célarány-mezők kezdőértéke a nyelv tizedesjelével („12,5”), mint a többi mező.
+- „Nincs új részvény” és „Minden pozíción van már követő stop”: külön szöveg a nullára (lettül a „zero” alak
+  a 10–20-at is fedi, ezért a többes szám =0 ága ott nem állhatott).
+- 11 sehol nem használt szöveg kikerült mind a 120 nyelvből. Új teszt: egy többes számú vagy választó
+  üzenet egyetlen ágából sem hiányozhat egy szöveges helyőrző (név, jel, pénznem) – eddig csak kulcsonként
+  volt összevetés.
 
 ## Dokumentáció a kódhoz igazítva
 

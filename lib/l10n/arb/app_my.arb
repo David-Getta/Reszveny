@@ -1,14 +1,9 @@
 {
   "@@locale": "my",
   "appTitle": "WhatStock",
-  "homeTagline": "ရှယ်ယာတစ်ခုကို ဓာတ်ပုံရိုက်ပြီး ၎င်းအကြောင်း အားလုံးကို သိလိုက်ပါ။",
   "homeHint": "ရှယ်ယာလက်မှတ်၊ ပွဲစားအက်ပ် မျက်နှာပြင်၊ သတင်းစာ သို့မဟုတ် ကုမ္ပဏီလိုဂို – ရှယ်ယာကို ခွဲခြားသိနိုင်သည့် မည်သည့်အရာမဆို ရပါသည်။",
   "takePhoto": "ဓာတ်ပုံရိုက်ရန်",
-  "chooseFromGallery": "ပြခန်းမှ ရွေးရန်",
   "chooseImage": "ပုံ ရွေးရန်",
-  "enterTickerManually": "သင်္ကေတကို ကိုယ်တိုင် ထည့်ရန်",
-  "tickerInputLabel": "ရှယ်ယာသင်္ကေတ",
-  "tickerInputHint": "ဥပမာ AAPL",
   "lookUp": "ရှာရန်",
   "demoModeBanner": "သရုပ်ပြမုဒ် – ဈေးကွက်ဒေတာ ကီး သတ်မှတ်မထားပါ။ နမူနာဒေတာ ရနိုင်သည့် ရှယ်ယာများ: {symbols}။",
   "recognizing": "ပုံကို ခွဲခြမ်းစိတ်ဖြာနေသည်…",
@@ -18,6 +13,14 @@
   "whatWeSaw": "ကျွန်ုပ်တို့ တွေ့ရှိခဲ့သည်များ",
   "chooseCandidateTitle": "မည်သည့် ရှယ်ယာကို ဆိုလိုပါသလဲ။",
   "confidencePercent": "ယုံကြည်မှု {percent}%",
+  "@confidencePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "settings": "ဆက်တင်များ",
   "language": "ဘာသာစကား",
   "systemLanguage": "စနစ် မူရင်း",
@@ -55,7 +58,6 @@
   "labelEmployees": "ဝန်ထမ်းများ",
   "labelCeo": "CEO",
   "labelHeadquarters": "ရုံးချုပ်",
-  "labelDescription": "ဖော်ပြချက်",
   "labelLastPrice": "နောက်ဆုံးဈေး",
   "labelChange": "ပြောင်းလဲမှု",
   "labelOpen": "ဖွင့်ဈေး",
@@ -95,9 +97,16 @@
   "ratingSell": "ရောင်းသင့်",
   "ratingStrongSell": "အထူး ရောင်းသင့်",
   "analystCount": "{count, plural, other{လေ့လာသုံးသပ်သူ {count} ဦး}}",
+  "@analystCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "analystPeriod": "ကာလ: {period}",
   "noNews": "မကြာသေးမီ သတင်း မရှိပါ။",
-  "openArticle": "ဆောင်းပါး ဖွင့်ရန်",
   "openLinkFailed": "လင့်ခ်ကို ဖွင့်၍ မရပါ။",
   "recognitionSummary": "အနှစ်ချုပ်",
   "recognitionEvidence": "ဤသို့ ယူဆရသည့် အကြောင်းရင်း",
@@ -179,7 +188,6 @@
   "noFavorites": "အကြိုက်ဆုံး မရှိသေးပါ။ ထည့်ရန် ရှယ်ယာတစ်ခုရှိ ကြယ်ပွင့်ကို တို့ပါ။",
   "displayCurrency": "ပြသမည့် ငွေကြေး",
   "displayCurrencyNone": "ရှယ်ယာ၏ မူလငွေကြေးသာ",
-  "labelConverted": "≈ {currency} ဖြင့်",
   "fxRateNote": "နှုန်း: 1 {from} = {rate} {to} (ECB, {date})",
   "updates": "အပ်ဒိတ်များ",
   "currentVersion": "ဗားရှင်း {version}",
@@ -202,11 +210,46 @@
   "planMax2": "Ultra",
   "planNone": "အသုံးပြုနေသော အစီအစဉ် မရှိပါ",
   "planAnalysesPerMonth": "တစ်လလျှင် သုံးသပ်ချက် {count} ခု",
-  "planTrialDescription": "သုံးသပ်ချက် {count} ခုပါသော {days} ရက် အခမဲ့ အစမ်းသုံးကာလ",
+  "@planAnalysesPerMonth": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "trialDaysLeft": "{days, plural, other{အစမ်းသုံးကာလ {days} ရက် ကျန်သည်}}",
+  "@trialDaysLeft": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "trialExpired": "သင်၏ အခမဲ့ အစမ်းသုံးကာလ ပြီးဆုံးသွားပါပြီ။ ဆက်လက်သုံးသပ်ရန် အစီအစဉ်တစ်ခု ရွေးပါ။",
   "analysesRemaining": "ဤကာလအတွက် သုံးသပ်ချက် {total} ခုတွင် {remaining} ခု ကျန်သည်",
+  "@analysesRemaining": {
+    "placeholders": {
+      "remaining": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "extraCredits": "{count, plural, =1{အပိုသုံးသပ်ချက် {count} ခု} other{အပိုသုံးသပ်ချက် {count} ခု}}",
+  "@extraCredits": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "renewsOn": "{date} တွင် သက်တမ်းတိုးမည်",
   "choosePlan": "အစီအစဉ် ရွေးရန်",
   "currentPlan": "လက်ရှိ အစီအစဉ်",
@@ -226,7 +269,6 @@
   "errTrialExpired": "သင်၏ အခမဲ့ အစမ်းသုံးကာလ ပြီးဆုံးသွားပါပြီ။ ဆက်လက်အသုံးပြုရန် အစီအစဉ်တစ်ခု ရွေးပါ။",
   "errNoPlan": "AI သုံးသပ်ချက်အတွက် အသုံးပြုနေသော အစီအစဉ် လိုအပ်သည်။",
   "viewPlans": "အစီအစဉ်များ ကြည့်ရန်",
-  "usageTitle": "အသုံးပြုမှု",
   "demoPurchaseNote": "သရုပ်ပြ ငွေပေးချေမှု: ဤပလက်ဖောင်းရှိ ဝယ်ယူမှုများသည် အစမ်းသဘောသာ ဖြစ်သည်။",
   "mostPopular": "လူကြိုက်အများဆုံး",
   "bestValue": "အတန်ဆုံး",
@@ -243,6 +285,14 @@
   "aiDepthDeepDesc": "ဝဘ်ရှာဖွေမှု ပိုများခြင်း၊ ပြိုင်ဘက်ကုမ္ပဏီများနှင့် နှိုင်းယှဉ်ခြင်းနှင့် ပိုမိုနက်ရှိုင်းသော အသေးစိတ်။",
   "aiDepthWords": "စကားလုံး {min}–{max} ခန့်",
   "aiDepthCost": "{count, plural, other{သုံးသပ်ချက် {count} ခု သုံးသည်}}",
+  "@aiDepthCost": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiReaderLevel": "စာဖတ်သူ အဆင့်",
   "aiReaderBeginner": "စတင်သူ",
   "aiReaderExperienced": "အတွေ့အကြုံရှိသူ",
@@ -251,10 +301,66 @@
   "aiCounterArgument": "အပြင်းထန်ဆုံး ဆန့်ကျင်ဘက် အငြင်းအခုံ",
   "aiCounterArgumentDesc": "အနှစ်ချုပ်သည် ၎င်း၏ ကောက်ချက်ကို ဆန့်ကျင်သည့် အကောင်းဆုံး အငြင်းအခုံဖြင့် အမြဲ အဆုံးသတ်သည်။",
   "aiWebSearchesInfo": "{count, plural, other{သင့်အစီအစဉ်ဖြင့် သုံးသပ်ချက်တစ်ခုလျှင် ဝဘ်ရှာဖွေမှု အများဆုံး {count} ကြိမ်}}",
+  "@aiWebSearchesInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiWebSearchesPlans": "အစီအစဉ်အလိုက် စံအရှည်: ပုံမှန် {normal}၊ Pro {pro}၊ Max {max}၊ Ultra {ultra}။ အကျဉ်းသည် 2 ကြိမ် လျော့၍ အသေးစိတ်သည် 2 ကြိမ် ပိုသုံးသည်။",
+  "@aiWebSearchesPlans": {
+    "placeholders": {
+      "normal": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "pro": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "max": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "ultra": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "aiWebSearchesShort": "{count, plural, other{ဝဘ်ရှာဖွေမှု အများဆုံး {count} ကြိမ်}}",
+  "@aiWebSearchesShort": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "planWebSearches": "{count, plural, other{သုံးသပ်ချက်တစ်ခုလျှင် ဝဘ်ရှာဖွေမှု {count} ကြိမ်}}",
+  "@planWebSearches": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "errNotEnoughCredits": "ဤအရှည်အတွက် သုံးသပ်ချက် {needed} ခု လိုအပ်သော်လည်း {left} ခုသာ ကျန်ပါသည်။ ဆက်တင်များတွင် ပိုတိုသော အရှည်ကို ရွေးပါ သို့မဟုတ် သုံးသပ်ချက် ထပ်ယူပါ။",
+  "@errNotEnoughCredits": {
+    "placeholders": {
+      "needed": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "left": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "outlookMarketMood": "ဈေးကွက် စိတ်ဓာတ်",
   "moodVeryPessimistic": "အလွန် အဆိုးမြင်",
   "moodPessimistic": "အဆိုးမြင်",
@@ -299,6 +405,14 @@
   "scenarioMostLikely": "ဖြစ်နိုင်ခြေ အများဆုံး",
   "longTermToday": "ယနေ့",
   "longTermYears": "{years, plural, other{{years} နှစ်}}",
+  "@longTermYears": {
+    "placeholders": {
+      "years": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "longTermPerYear": "တစ်နှစ်လျှင် {range}",
   "longTermLikely": "ဖြစ်နိုင်ခြေ အများဆုံး {price}",
   "confidenceLow": "ယုံကြည်မှု နည်း",
@@ -324,7 +438,6 @@
   "portfolioPositions": "ကိုင်ဆောင်ထားမှုများ",
   "portfolioAvgCost": "ပျမ်းမျှ ကုန်ကျစရိတ် {price}",
   "portfolioYourPosition": "သင်၏ ကိုင်ဆောင်ထားမှု",
-  "portfolioPurchases": "ဝယ်ယူမှုများ",
   "portfolioRemove": "ဖယ်ရှားရန်",
   "portfolioExcluded": "ဈေးနှုန်း သို့မဟုတ် ငွေလဲနှုန်း မရှိသော ကိုင်ဆောင်ထားမှုများကို စုစုပေါင်းတွင် ထည့်မတွက်ပါ။",
   "priceAlerts": "ဈေးနှုန်း သတိပေးချက်များ",
@@ -382,12 +495,36 @@
   "previewConfidential": "လျှို့ဝှက် အစမ်းကြည့်ရှုမှု",
   "errPreviewDailyLimit": "ဤအစမ်းကြည့်ရှုမှု၏ ယနေ့ ခွဲခြမ်းစိတ်ဖြာမှု ကန့်သတ်ချက် ပြည့်သွားပါပြီ။ မနက်ဖြန် ထပ်ကြိုးစားပါ။",
   "ageHours": "{count, plural, other{လွန်ခဲ့သော {count} နာရီက}}",
+  "@ageHours": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "ageDays": "{count, plural, other{လွန်ခဲ့သော {count} ရက်က}}",
+  "@ageDays": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "staleTitle": "ဤသုံးသပ်ချက်ကို အပ်ဒိတ်လုပ်မလား။",
   "staleBody": "၎င်းကို {age} ထုတ်ခဲ့သည်။ ထိုအချိန်မှစ၍ ဈေးနှုန်းများ၊ သတင်းများနှင့် ရလဒ်များ ပြောင်းလဲသွားနိုင်သည်။",
   "staleKeep": "ယခင်တစ်ခုကို ပြရန်",
   "staleRefresh": "အသစ်ထုတ်ရန်",
   "seeAll": "အားလုံးကြည့်ရန် ({count})",
+  "@seeAll": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "searchAnalyses": "သင့်သုံးသပ်ချက်များကို ရှာရန်",
   "deleteAnalysis": "ဖျက်ရန်",
   "analysisDeleted": "{symbol} သုံးသပ်ချက်ကို ဖျက်လိုက်ပြီ",
@@ -399,15 +536,51 @@
   "shareCardDisclaimer": "AI သုံးသပ်ချက် · ဥပမာ ဖြစ်နိုင်ခြေများသာ၊ ခန့်မှန်းချက် မဟုတ် · ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ",
   "referralTitle": "သူငယ်ချင်းများကို ဖိတ်ခေါ်ရန်",
   "referralBody": "သင့်ကုဒ်ကို မျှဝေပါ။ သင့်သူငယ်ချင်းသည် {count, plural, other{အပိုသုံးသပ်ချက် {count} ခု}}ကို ချက်ချင်း ရရှိမည်ဖြစ်ပြီး ၎င်း၏ ပထမဆုံး သုံးသပ်ချက်ပြီးနောက် သင်လည်း အလားတူ ရရှိမည်။",
+  "@referralBody": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralYourCode": "သင့်ကုဒ်",
   "referralStats": "ဖိတ်ခေါ်ထားသူ: {invited} · ဆုရရှိပြီး: {rewarded}",
+  "@referralStats": {
+    "placeholders": {
+      "invited": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "rewarded": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralHaveCode": "သူငယ်ချင်းထံမှ ကုဒ် ရှိပါသလား။",
   "referralRedeem": "အသုံးပြုရန်",
   "referralRedeemed": "{count, plural, other{အပိုသုံးသပ်ချက် {count} ခု ထည့်ပြီးပါပြီ။ ကြိုဆိုပါသည်!}}",
+  "@referralRedeemed": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralErrUnknown": "ဤကုဒ် မရှိပါ။ စစ်ဆေးပြီး ထပ်ကြိုးစားပါ။",
   "referralErrOwn": "သင့်ကိုယ်ပိုင်ကုဒ်ကို အသုံးပြု၍ မရပါ။",
   "referralErrAlready": "သင်သည် သူငယ်ချင်းတစ်ဦး၏ ကုဒ်ကို အသုံးပြုပြီးဖြစ်သည်။",
   "referralShareText": "ကျွန်ုပ်သည် WhatStock ဖြင့် ရှယ်ယာများကို သုံးသပ်ပါသည်- ရှယ်ယာတစ်ခု၏ ဓာတ်ပုံရိုက်လိုက်ရုံဖြင့် AI က ရှင်းပြပေးသည်။ ကျွန်ုပ်၏ ကုဒ် {code} ဖြင့် သင် {count, plural, other{အပိုသုံးသပ်ချက် {count} ခု}} ရရှိမည်။",
+  "@referralShareText": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "referralCopied": "ကုဒ် ကူးယူပြီးပါပြီ",
   "onboardTitle1": "ရှယ်ယာကို ဓာတ်ပုံရိုက်ပါ",
   "onboardBody1": "ပွဲစားအက်ပ်မျက်နှာပြင်၊ သတင်းစာ သို့မဟုတ် ကုမ္ပဏီလိုဂို တစ်ခုခုရှိရုံဖြင့် လုံလောက်ပါသည် – WhatStock က ရှယ်ယာကို မှတ်သိပြီး ၎င်း၏ ဈေးနှုန်း၊ ဇယားနှင့် အဓိကကိန်းဂဏန်းများကို ပြသပေးပါသည်။",
@@ -441,6 +614,14 @@
   "errAskLimit": "ယနေ့အတွက် မေးခွန်းကန့်သတ်ချက် ပြည့်သွားပါပြီ။ မနက်ဖြန် ထပ်ကြိုးစားပါ။",
   "eventTomorrow": "မနက်ဖြန်",
   "eventInDays": "{days, plural, other{{days} ရက်အကြာ}}",
+  "@eventInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "eventEarnings": "သုံးလပတ် ရလဒ်များ",
   "eventBeforeOpen": "စျေးကွက်မဖွင့်မီ",
   "eventAfterClose": "စျေးကွက်ပိတ်ပြီးနောက်",
@@ -471,7 +652,23 @@
   "portfolioImportHint": "တစ်ကြောင်းလျှင် ဝယ်ယူမှုတစ်ခု ကူးထည့်ပါ- ရှယ်ယာသင်္ကေတ၊ အရေအတွက်၊ ဈေးနှုန်း၊ ငွေကြေး၊ ရက်စွဲ (YYYY-MM-DD)။ ကော်လံများကို ကော်မာ၊ ဆီမီးကော်လံ သို့မဟုတ် တဘ်ဖြင့် ခွဲခြားနိုင်သည်၊ ခေါင်းစီးစာကြောင်း မပါလည်း ရသည်။",
   "portfolioImportButton": "တင်သွင်းရန်",
   "portfolioImported": "{count, plural, =1{အရောင်းအဝယ် 1 ခု ထည့်ပြီးပါပြီ} other{အရောင်းအဝယ် {count} ခု ထည့်ပြီးပါပြီ}}",
+  "@portfolioImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioImportSkipped": "{count, plural, other{စာကြောင်း {count} ကြောင်း ကျော်ခဲ့သည်}}",
+  "@portfolioImportSkipped": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "syncInfo": "ပေါ့ဖိုလီယို၊ အကြိုက်ဆုံးများ၊ ဈေးနှုန်း သတိပေးချက်များနှင့် မှတ်စုများကို သင့်စက်အားလုံးတွင် စင့်ခ်လုပ်ထားသည်။",
   "syncLast": "နောက်ဆုံး စင့်ခ်လုပ်ချိန် {time}",
   "syncNow": "ယခု စင့်ခ်လုပ်ရန်",
@@ -553,17 +750,45 @@
   "earningsExpected": "မျှော်မှန်း EPS",
   "earningsReported": "ထုတ်ပြန်ထားသော EPS",
   "earningsBeats": "{total, plural, =1{သုံးလပတ် 1 ခုအနက် {beats} ခုတွင် မျှော်မှန်း EPS နှင့် ညီ သို့မဟုတ် ကျော်} other{နောက်ဆုံး သုံးလပတ် {total} ခုအနက် {beats} ခုတွင် မျှော်မှန်း EPS နှင့် ညီ သို့မဟုတ် ကျော်}}",
+  "@earningsBeats": {
+    "placeholders": {
+      "beats": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "earningsReminderTomorrow": "{symbol} သည် မနက်ဖြန် သုံးလပတ် ရလဒ်များ ကြေညာမည်",
   "earningsReminderToday": "{symbol} သည် ယနေ့ သုံးလပတ် ရလဒ်များ ကြေညာမည်",
   "earningsRemindersTitle": "ရလဒ် သတိပေးချက်များ",
   "earningsRemindersSubtitle": "သင်၏ အကြိုက်ဆုံးများ သို့မဟုတ် ပေါ့ဖိုလီယို ရှယ်ယာများ သုံးလပတ် ရလဒ် မကြေညာမီ တစ်ရက်အလိုတွင် အသိပေးချက်",
   "addAllToFavorites": "အားလုံးကို အကြိုက်ဆုံးများသို့ ထည့်ရန် ({count})",
+  "@addAllToFavorites": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioImportPhoto": "စခရင်ရှော့မှ တင်သွင်းရန်",
   "holdingsReading": "သင့်ရှယ်ယာ ပိုင်ဆိုင်မှုများကို ဖတ်နေသည်…",
   "holdingsReviewTitle": "တွေ့ရှိသော ပိုင်ဆိုင်မှုများ",
   "holdingsReviewHint": "မထည့်မီ ဂဏန်းများကို စစ်ဆေးပါ။ စျေးနှုန်းသည် ယနေ့စျေးနှုန်း မဟုတ်ဘဲ ရှယ်ယာတစ်ခုလျှင် သင်၏ ပျမ်းမျှ ဝယ်စျေး ဖြစ်သည်။",
   "holdingsNoPrice": "ပုံတွင် ပျမ်းမျှ ဝယ်စျေး မပါပါ",
   "holdingsAdd": "{count, plural, other{ပိုင်ဆိုင်မှု {count} ခု ထည့်ရန်}}",
+  "@holdingsAdd": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "holdingsNone": "ဤပုံတွင် ရှယ်ယာ ပိုင်ဆိုင်မှု မတွေ့ပါ။ သင့်ပွဲစား၏ ပိုင်ဆိုင်မှု စာမျက်နှာ၏ စခရင်ရှော့ကို စမ်းကြည့်ပါ။",
   "week52Range": "52 ပတ် အပိုင်းအခြား",
   "week52BelowHigh": "52 ပတ် အမြင့်ဆုံးထက် {percent} နိမ့်",
@@ -576,7 +801,23 @@
   "alertHitTrailing": "{symbol} သည် အမြင့်ဆုံးမှ {percent} ကျဆင်းသွားသည်",
   "sectionInsiders": "အတွင်းလူ ရောင်းဝယ်မှုများ",
   "insiderBuys": "{count, plural, =1{ဝယ်ယူမှု 1 ခု} other{ဝယ်ယူမှု {count} ခု}}",
+  "@insiderBuys": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "insiderSells": "{count, plural, =1{ရောင်းချမှု 1 ခု} other{ရောင်းချမှု {count} ခု}}",
+  "@insiderSells": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "insiderNet": "အသားတင်: ရှယ်ယာ {shares}",
   "insiderBuy": "ဝယ်ခဲ့",
   "insiderSell": "ရောင်းခဲ့",
@@ -620,6 +861,14 @@
   "watchAlertAll": "နေ့စဉ် ကြီးမားသော ပြောင်းလဲမှုအတွက် သတိပေးချက်",
   "watchAlertAllHint": "ဤစာရင်းရှိ ရှယ်ယာတိုင်းအတွက် ဈေးနှုန်း သတိပေးချက်- တစ်ရက်အတွင်း ဤမျှ အတက် သို့မဟုတ် အကျ ပြောင်းလဲလျှင် အသိပေးပါမည်။ သတိပေးချက် ရှိပြီးသား ရှယ်ယာများသည် ၎င်းတို့၏ဟာကို ဆက်ထားပါမည်။",
   "watchAlertAllDone": "{count, plural, other{သတိပေးချက် {count} ခု သတ်မှတ်ပြီးပါပြီ}}",
+  "@watchAlertAllDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioExportRealized": "ရရှိပြီးသော အမြတ်ကို ထုတ်ယူရန် (CSV)",
   "eventsAddToCalendar": "ပြက္ခဒိန်သို့ ထည့်ရန် (.ics)",
   "portfolioAnnualReturn": "နှစ်စဉ် အမြတ်နှုန်း",
@@ -638,6 +887,14 @@
   "watchImport": "ရှယ်ယာသင်္ကေတများ ထည့်ရန်",
   "watchImportHint": "ကော်မာ၊ နေရာလွတ် သို့မဟုတ် စာကြောင်းအသစ်ဖြင့် ခွဲထားသော ရှယ်ယာသင်္ကေတများကို ကူးထည့်ပါ – ဥပမာ တစ်စုံတစ်ယောက်က သင့်ထံ မျှဝေထားသော စာရင်း။",
   "watchImported": "{count, plural, =0{ရှယ်ယာအသစ် မရှိပါ} =1{ရှယ်ယာ 1 ခု ထည့်ပြီးပါပြီ} other{ရှယ်ယာ {count} ခု ထည့်ပြီးပါပြီ}}",
+  "@watchImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "positionsSortWeight": "အကြီးဆုံး အရင်",
   "positionsSortGain": "စုစုပေါင်းအမြတ် အများဆုံး အရင်",
   "positionsSortToday": "ယနေ့ အကောင်းဆုံး အရင်",
@@ -647,8 +904,40 @@
   "usMarketOpen": "အမေရိကန် စျေးကွက် ဖွင့်ထားသည် · {time} အကြာတွင် ပိတ်မည်",
   "usMarketClosed": "အမေရိကန် စျေးကွက် ပိတ်ထားသည် · {time} အကြာတွင် ဖွင့်မည်",
   "durationMinutes": "{minutes} မိနစ်",
+  "@durationMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationHoursMinutes": "{hours} နာရီ {minutes} မိနစ်",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "minutes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationDaysHours": "{days} ရက် {hours} နာရီ",
+  "@durationDaysHours": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "hours": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioGoalSet": "ပန်းတိုင် သတ်မှတ်ရန်",
   "portfolioGoalTitle": "ပေါ့ဖိုလီယို ပန်းတိုင်",
   "portfolioGoalProgress": "{percent} · ပန်းတိုင် {amount}",
@@ -660,6 +949,14 @@
   "alertDeleted": "သတိပေးချက်ကို ဖျက်လိုက်ပြီ",
   "alertsClearTriggered": "အသက်ဝင်ခဲ့သော သတိပေးချက်များကို ရှင်းရန်",
   "alertsCleared": "{count, plural, =1{သတိပေးချက် 1 ခု ရှင်းပြီးပါပြီ} other{သတိပေးချက် {count} ခု ရှင်းပြီးပါပြီ}}",
+  "@alertsCleared": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "homeScreenTitle": "ပင်မ မျက်နှာပြင်",
   "allocationCountries": "နိုင်ငံ",
   "newsExplainNoteResearch": "AI ရှင်းလင်းချက်- ဝဘ်ပေါ်တွင် အချက်အလက်များကို ရှာဖွေပြီး ဆောင်းပါးကိုဖွင့်ကာ ရင်းမြစ် မည်မျှ ယုံကြည်စိတ်ချရသည်ကို အကဲဖြတ်ပါသည်။ ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။ နေ့စဉ် မေးခွန်းကန့်သတ်ချက်မှ သုံးပြီး ခွဲခြမ်းစိတ်ဖြာမှု မသုံးပါ။",
@@ -689,6 +986,14 @@
   "portfolioDividendDate": "ပေးချေသည့်ရက်",
   "portfolioDividendsEmpty": "အမြတ်ဝေစု မှတ်တမ်းမရှိသေးပါ။ ကိုယ်တိုင်ထည့်ပါ၊ သို့မဟုတ် သင့်ဘရိုကာ၏ export ဖိုင်ကို တင်သွင်းပါ – ထိုဖိုင်ထဲမှ အမြတ်ဝေစုအတန်းများကိုလည်း ဖမ်းယူပါသည်။",
   "portfolioDividendsImported": "{count, plural, =1{အမြတ်ဝေစု 1 ခု ထည့်ပြီး} other{အမြတ်ဝေစု {count} ခု ထည့်ပြီး}}",
+  "@portfolioDividendsImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioExportDividends": "အမြတ်ဝေစုများ ထုတ်ယူရန် (CSV)",
   "portfolioDividendDeleted": "အမြတ်ဝေစုကို ဖျက်ပြီး",
   "portfolioDividendsHint": "ပမာဏများသည် သင့်အကောင့်ထဲ ရောက်ရှိလာသည့်အတိုင်း၊ ပေးချေငွေကြေးဖြင့် ဖြစ်သည်။ စုစုပေါင်းကို ယနေ့နှုန်းဖြင့် ပြောင်းလဲတွက်ချက်သည်။ အခွန်ကြေညာလွှာအတွက် သင့်ဘရိုကာ၏ ရှင်းတမ်းကို အသုံးပြုပါ။",
@@ -696,6 +1001,14 @@
   "awaySince": "{when} မှစ၍",
   "awayQuiet": "သိသာသော အပြောင်းအလဲ မရှိပါ။",
   "awayAlerts": "{count, plural, =1{သတိပေးချက် 1 ခု အသက်ဝင်ခဲ့သည်} other{သတိပေးချက် {count} ခု အသက်ဝင်ခဲ့သည်}}",
+  "@awayAlerts": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "awayReported": "ရလဒ်ထုတ်ပြန်ပြီး: {symbols}",
   "moveWhyButton": "ယနေ့ ဘာကြောင့် လှုပ်ရှားနေသလဲ။",
   "moveWhyTitle": "ယနေ့ {percent}",
@@ -718,6 +1031,18 @@
   "glossVolatility": "ဈေးနှုန်း တစ်ရက်မှတစ်ရက် မည်မျှ အတက်အကျ ရှိသည်ကို တစ်နှစ်စာအဖြစ် တွက်ထားသည် – ၂၀% ဆိုသည်မှာ ပုံမှန်နှစ်တစ်နှစ်တွင် ခန့်မှန်းခြေ ±၂၀% အတွင်း လှုပ်ရှားသည်။ အတက်အကျ မြင့်လေ နှစ်ဘက်စလုံး လှုပ်ရှားမှု ကြီးလေ ဖြစ်သည်။",
   "techNote": "နေ့စဉ် ပိတ်ဈေးများမှ တွက်ချက်ထားသည်။ နည်းပညာအချက်ပြများသည် အတိတ်ကို ဖော်ပြသည်၊ အနာဂတ်ကို မဟုတ်ပါ။",
   "portfolioAbove200": "ပိုင်ဆိုင်မှု {count} ခုအနက် {above} ခု ၎င်းတို့၏ ရက် 200 ပျမ်းမျှအထက်",
+  "@portfolioAbove200": {
+    "placeholders": {
+      "above": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "watchSignalsTitle": "အချက်ပြများ",
   "signalRsiOversold": "RSI {value} · အရောင်းလွန်",
   "signalRsiOverbought": "RSI {value} · အဝယ်လွန်",
@@ -751,6 +1076,14 @@
   "portfolioSplitRow": "ရှယ်ယာခွဲခြင်း {ratio}",
   "portfolioSplitRemoved": "ရှယ်ယာခွဲခြင်းကို ဖျက်လိုက်ပါပြီ",
   "portfolioSplitsImported": "{count, plural, =1{ရှယ်ယာခွဲခြင်း 1 ခု ထည့်ပြီး} other{ရှယ်ယာခွဲခြင်း {count} ခု ထည့်ပြီး}}",
+  "@portfolioSplitsImported": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "labelDividendGrowth5y": "အမြတ်ဝေစု တိုးတက်မှု (5 နှစ်)",
   "dividendNone": "ပြီးခဲ့သော 12 လအတွင်း အမြတ်ဝေစု မပေးခဲ့ပါ။",
   "dividendOnYourShares": "သင့်ရှယ်ယာများအတွက်၊ တစ်နှစ်လျှင်",
@@ -793,6 +1126,14 @@
   "portfolioTopHoldings": "အကြီးဆုံး ကိုင်ဆောင်ထားမှုများ",
   "portfolioShareNote": "ရာခိုင်နှုန်းများကိုသာ မျှဝေပြီး ပမာဏများ မပါဝင်ပါ။",
   "portfolioPositionsCount": "{count, plural, other{ကိုင်ဆောင်ထားမှု {count} ခု}}",
+  "@portfolioPositionsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "shareNotAdvice": "ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ",
   "contributionButton": "ငွေသစ် ရင်းနှီးရန်",
   "contributionAmount": "ရင်းနှီးမည့် ပမာဏ ({currency})",
@@ -808,6 +1149,14 @@
   "portfolioSampleRemove": "နမူနာ ဖယ်ရှားရန်",
   "portfolioStopsAll": "ကိုင်ဆောင်ထားမှုအားလုံးအတွက် အမြင့်ဆုံးမှ ကျဆင်းမှု သတိပေးချက်",
   "portfolioStopsDone": "{count, plural, =0{ကိုင်ဆောင်ထားမှုတိုင်းတွင် ဤသတိပေးချက် ရှိပြီးသားဖြစ်သည်} =1{သတိပေးချက် 1 ခု သတ်မှတ်ပြီးပါပြီ} other{သတိပေးချက် {count} ခု သတ်မှတ်ပြီးပါပြီ}}",
+  "@portfolioStopsDone": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioSinceSale": "ရောင်းပြီးကတည်းက {percent}",
   "lotPreviewRealized": "ဤရောင်းချမှုတွင် ရရှိပြီး (FIFO) -",
   "lotPreviewAverage": "ပျမ်းမျှ ကုန်ကျစရိတ် အသစ် - {after} (ယခု {before})",
@@ -822,7 +1171,23 @@
   "lotNoteBought": "ဝယ်ပြီး",
   "positionHeld": "ကိုင်ဆောင်ထားသည့်ကာလ",
   "durationMonths": "{months, plural, other{{months} လ}}",
+  "@durationMonths": {
+    "placeholders": {
+      "months": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "durationDays": "{days, plural, other{{days} ရက်}}",
+  "@durationDays": {
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "positionHeldSince": "{date} မှစ၍",
   "lotPreviewWeight": "အရောင်းအဝယ်ပြီးနောက် ပေါ့ဖိုလီယို အချိုး - {after} (ယခု {before})",
   "lotFromCash": "ငွေသားမှ ပေးချေရန် (ယခု {amount})",
@@ -837,6 +1202,14 @@
   "activitySearchHint": "သင်္ကေတဖြင့် စစ်ထုတ်ရန်",
   "activityNoMatch": "စစ်ထုတ်မှုနှင့် ကိုက်ညီသော အရောင်းအဝယ် မရှိပါ။",
   "portfolioImportDuplicates": "{count, plural, =1{1 ခု မှတ်တမ်းရှိပြီးသားဖြစ်၍ မထည့်ပါ} other{{count} ခု မှတ်တမ်းရှိပြီးသားဖြစ်၍ မထည့်ပါ}}",
+  "@portfolioImportDuplicates": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "tickerChange": "သင်္ကေတ ပြောင်းခြင်း",
   "tickerChangeTitle": "သင်္ကေတ ပြောင်းခြင်း · {symbol}",
   "tickerChangeNew": "သင်္ကေတ အသစ်",
@@ -850,6 +1223,14 @@
   "errRateLimited": "အချိန်တိုအတွင်း တောင်းဆိုမှု များလွန်းနေသည်။ တစ်မိနစ်ခန့် စောင့်ပြီး ထပ်စမ်းကြည့်ပါ။",
   "watchListNameTaken": "ဤအမည်ဖြင့် စာရင်းတစ်ခု ရှိပြီးသားဖြစ်သည်။",
   "watchListLimit": "စာရင်း အများဆုံး {max} ခုအထိ ထားနိုင်သည်။",
+  "@watchListLimit": {
+    "placeholders": {
+      "max": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "portfolioBuyBelowSold": "အနည်းဆုံး {quantity} – ထိုမျှ ရောင်းပြီးသားဖြစ်သည်",
   "restoreNothing": "ပြန်ယူရန် ယခင် ဝယ်ယူမှု မတွေ့ပါ။",
   "manageSubscriptionElsewhere": "ဤနေရာတွင် စီမံရန် စာရင်းသွင်းမှု မရှိပါ။ App Store သို့မဟုတ် Google Play တွင် ဝယ်ထားသော စာရင်းသွင်းမှုကို စတိုး ဆက်တင်များတွင် စီမံပါသည်။",
@@ -858,6 +1239,14 @@
   "noteFull": "ဤရှယ်ယာ၏ မှတ်စု ပြည့်နေသဖြင့် ဤစာကို ထည့်၍မရခဲ့ပါ။ မှတ်စုကို တိုအောင်ပြင်ပြီး ထပ်စမ်းကြည့်ပါ။",
   "portfolioNoRateFor": "{symbols} အတွက် ငွေလဲနှုန်း မရှိပါ။",
   "dividendsNotConverted": "{count, plural, =1{{currencies} ဖြင့် အမြတ်ဝေစု 1 ခုအတွက် ငွေလဲနှုန်း မရှိသဖြင့် စုစုပေါင်းတွင် ထည့်မတွက်ပါ။} other{{currencies} ဖြင့် အမြတ်ဝေစု {count} ခုအတွက် ငွေလဲနှုန်း မရှိသဖြင့် စုစုပေါင်းတွင် ထည့်မတွက်ပါ။}}",
+  "@dividendsNotConverted": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
   "signOutTitle": "လက်မှတ်ထိုးထွက်မလား။",
   "signOutBody": "သင့်ပေါ့ဖိုလီယို၊ စာရင်းများ၊ ဈေးနှုန်း သတိပေးချက်များနှင့် မှတ်စုများသည် သင့်အကောင့်တွင် ဆက်ရှိနေပြီး ဤစက်မှ ဖယ်ရှားပါမည်။ ၎င်းတို့ကို ပြန်ရရန် ထပ်မံ လက်မှတ်ထိုးဝင်ပါ။",
   "signOutUnsaved": "အပြောင်းအလဲအချို့ကို သင့်အကောင့်တွင် သိမ်း၍ မရပါ (ချိတ်ဆက်မှု မရှိဘူးလား)။ ယခု လက်မှတ်ထိုးထွက်ပါက ၎င်းတို့ ပျောက်သွားပါမည်။",
@@ -901,5 +1290,7 @@
   "errAiUnavailable": "AI ဝန်ဆောင်မှုကို ယခု အသုံးပြု၍ မရပါ။ မိနစ်အနည်းငယ်အကြာတွင် ထပ်စမ်းကြည့်ပါ။",
   "errMarketUnavailable": "ဈေးကွက်ဒေတာကို ယခု မရနိုင်ပါ။ မိနစ်အနည်းငယ်အကြာတွင် ထပ်စမ်းကြည့်ပါ။",
   "purchaseUnavailable": "ယခု ဝယ်ယူ၍ မရပါ။ နောက်မှ ထပ်စမ်းကြည့်ပါ။",
-  "signOutLocalOnly": "သိမ်းထားသော သုံးသပ်ချက်များနှင့် AI မှတ်စုများကို သင့်အကောင့်တွင် မဟုတ်ဘဲ ဤစက်တွင်သာ သိမ်းထားသဖြင့် ၎င်းတို့ကို အပြီးတိုင် ဖျက်ပစ်ပါမည်။"
+  "signOutLocalOnly": "သိမ်းထားသော သုံးသပ်ချက်များနှင့် AI မှတ်စုများကို သင့်အကောင့်တွင် မဟုတ်ဘဲ ဤစက်တွင်သာ သိမ်းထားသဖြင့် ၎င်းတို့ကို အပြီးတိုင် ဖျက်ပစ်ပါမည်။",
+  "watchImportedNone": "ရှယ်ယာအသစ် မရှိပါ",
+  "portfolioStopsNone": "ကိုင်ဆောင်ထားမှုတိုင်းတွင် အမြင့်ဆုံးမှ ကျဆင်းမှု သတိပေးချက် ရှိပြီးသားဖြစ်သည်"
 }

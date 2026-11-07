@@ -13,9 +13,6 @@ class AppLocalizationsHil extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Kuhai sang litrato ang isa ka stock kag hibal-a ang tanan nahanungod sini.';
-
-  @override
   String get homeHint =>
       'Share certificate, screen sang brokerage app, diaryo ukon logo sang kompanya – bisan ano nga makapakilala sang stock.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsHil extends AppLocalizations {
   String get takePhoto => 'Magkuha sang litrato';
 
   @override
-  String get chooseFromGallery => 'Magpili sa gallery';
-
-  @override
   String get chooseImage => 'Magpili sang litrato';
-
-  @override
-  String get enterTickerManually => 'I-type ang ticker nga mano-mano';
-
-  @override
-  String get tickerInputLabel => 'Ticker symbol';
-
-  @override
-  String get tickerInputHint => 'pananglitan AAPL';
 
   @override
   String get lookUp => 'Pangitaa';
@@ -186,9 +171,6 @@ class AppLocalizationsHil extends AppLocalizations {
   String get labelHeadquarters => 'Punong buhatan';
 
   @override
-  String get labelDescription => 'Paglaragway';
-
-  @override
   String get labelLastPrice => 'Ulihi nga presyo';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get noNews => 'Wala sang bag-o nga balita.';
-
-  @override
-  String get openArticle => 'Buksi ang artikulo';
 
   @override
   String get openLinkFailed => 'Indi mabuksan ang link.';
@@ -608,11 +587,6 @@ class AppLocalizationsHil extends AppLocalizations {
   String get displayCurrencyNone => 'Kaugalingon nga currency lang sang stock';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ sa $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Palitan: 1 $from = $rate $to (ECB, $date)';
   }
@@ -684,11 +658,6 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count ka analisis kada bulan';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days ka adlaw nga libre nga pagtilaw nga may $count ka analisis';
   }
 
   @override
@@ -782,9 +751,6 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get viewPlans => 'Tan-awa ang mga plan';
-
-  @override
-  String get usageTitle => 'Paggamit';
 
   @override
   String get demoPurchaseNote => 'Demo billing: ginasimulate lang ang mga pagbakal sa sini nga platform.';
@@ -1149,9 +1115,6 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Imo posisyon';
-
-  @override
-  String get portfolioPurchases => 'Mga ginbakal';
 
   @override
   String get portfolioRemove => 'Kuhaa';
@@ -2480,6 +2443,9 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Wala sang bag-o nga stock';
+
+  @override
   String get positionsSortWeight => 'Pinakadako anay';
 
   @override
@@ -2673,6 +2639,9 @@ class AppLocalizationsHil extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'May trailing stop na ang kada posisyon';
 
   @override
   String portfolioSinceSale(String percent) {

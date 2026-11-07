@@ -13,9 +13,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Сфотографуйте акцію та дізнайтеся про неї все.';
-
-  @override
   String get homeHint =>
       'Сертифікат акції, екран брокерського застосунку, газета або логотип компанії – будь-що, що дозволяє визначити акцію.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get takePhoto => 'Зробити фото';
 
   @override
-  String get chooseFromGallery => 'Вибрати з галереї';
-
-  @override
   String get chooseImage => 'Вибрати зображення';
-
-  @override
-  String get enterTickerManually => 'Ввести тікер вручну';
-
-  @override
-  String get tickerInputLabel => 'Тікер';
-
-  @override
-  String get tickerInputHint => 'напр. AAPL';
 
   @override
   String get lookUp => 'Знайти';
@@ -186,9 +171,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get labelHeadquarters => 'Штаб-квартира';
 
   @override
-  String get labelDescription => 'Опис';
-
-  @override
   String get labelLastPrice => 'Остання ціна';
 
   @override
@@ -336,9 +318,6 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get noNews => 'Немає свіжих новин.';
-
-  @override
-  String get openArticle => 'Відкрити статтю';
 
   @override
   String get openLinkFailed => 'Не вдалося відкрити посилання.';
@@ -608,11 +587,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get displayCurrencyNone => 'Лише власна валюта акції';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ у $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Курс: 1 $from = $rate $to (ЄЦБ, $date)';
   }
@@ -690,19 +664,6 @@ class AppLocalizationsUk extends AppLocalizations {
       many: '$count аналізів на місяць',
       few: '$count аналізи на місяць',
       one: '$count аналіз на місяць',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Безкоштовний пробний період $days дн. з $count аналізами',
-      many: 'Безкоштовний пробний період $days дн. з $count аналізами',
-      few: 'Безкоштовний пробний період $days дн. з $count аналізами',
-      one: 'Безкоштовний пробний період $days дн. з $count аналізом',
     );
     return '$_temp0';
   }
@@ -800,9 +761,6 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get viewPlans => 'Переглянути тарифи';
-
-  @override
-  String get usageTitle => 'Використання';
 
   @override
   String get demoPurchaseNote => 'Демо-режим оплати: на цій платформі покупки імітуються.';
@@ -1179,9 +1137,6 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Ваша позиція';
-
-  @override
-  String get portfolioPurchases => 'Купівлі';
 
   @override
   String get portfolioRemove => 'Видалити';
@@ -2530,6 +2485,9 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Нових акцій немає';
+
+  @override
   String get positionsSortWeight => 'Спершу найбільші';
 
   @override
@@ -2731,6 +2689,9 @@ class AppLocalizationsUk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Усі позиції вже мають трейлінг-стоп';
 
   @override
   String portfolioSinceSale(String percent) {

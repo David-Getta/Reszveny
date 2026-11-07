@@ -13,9 +13,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Nofotografējiet akciju un uzziniet par to visu.';
-
-  @override
   String get homeHint =>
       'Akciju sertifikāts, brokera lietotnes ekrāns, avīze vai uzņēmuma logotips – jebkas, pēc kā var noteikt akciju.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get takePhoto => 'Uzņemt foto';
 
   @override
-  String get chooseFromGallery => 'Izvēlēties no galerijas';
-
-  @override
   String get chooseImage => 'Izvēlēties attēlu';
-
-  @override
-  String get enterTickerManually => 'Ievadīt simbolu manuāli';
-
-  @override
-  String get tickerInputLabel => 'Akcijas simbols';
-
-  @override
-  String get tickerInputHint => 'piem., AAPL';
 
   @override
   String get lookUp => 'Meklēt';
@@ -186,9 +171,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get labelHeadquarters => 'Galvenā mītne';
 
   @override
-  String get labelDescription => 'Apraksts';
-
-  @override
   String get labelLastPrice => 'Pēdējā cena';
 
   @override
@@ -335,9 +317,6 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get noNews => 'Nav jaunāko ziņu.';
-
-  @override
-  String get openArticle => 'Atvērt rakstu';
 
   @override
   String get openLinkFailed => 'Neizdevās atvērt saiti.';
@@ -607,11 +586,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get displayCurrencyNone => 'Tikai akcijas valūta';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ valūtā $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kurss: 1 $from = $rate $to (ECB, $date)';
   }
@@ -688,18 +662,6 @@ class AppLocalizationsLv extends AppLocalizations {
       other: '$count analīzes mēnesī',
       one: '$count analīze mēnesī',
       zero: '$count analīzes mēnesī',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$days dienu bezmaksas izmēģinājums ar $count analīzēm',
-      one: '$days dienu bezmaksas izmēģinājums ar $count analīzi',
-      zero: '$days dienu bezmaksas izmēģinājums ar $count analīzēm',
     );
     return '$_temp0';
   }
@@ -796,9 +758,6 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get viewPlans => 'Skatīt plānus';
-
-  @override
-  String get usageTitle => 'Lietojums';
 
   @override
   String get demoPurchaseNote => 'Demonstrācijas norēķini: pirkumi šajā platformā tiek simulēti.';
@@ -1171,9 +1130,6 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Jūsu pozīcija';
-
-  @override
-  String get portfolioPurchases => 'Pirkumi';
 
   @override
   String get portfolioRemove => 'Noņemt';
@@ -2498,6 +2454,9 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Nav jaunu akciju';
+
+  @override
   String get positionsSortWeight => 'Lielākās vispirms';
 
   @override
@@ -2697,6 +2656,9 @@ class AppLocalizationsLv extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Visām pozīcijām jau ir šis brīdinājums';
 
   @override
   String portfolioSinceSale(String percent) {

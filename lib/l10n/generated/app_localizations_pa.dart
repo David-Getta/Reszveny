@@ -13,9 +13,6 @@ class AppLocalizationsPa extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ਕਿਸੇ ਸ਼ੇਅਰ ਦੀ ਫ਼ੋਟੋ ਖਿੱਚੋ ਅਤੇ ਉਸ ਬਾਰੇ ਸਭ ਕੁਝ ਜਾਣੋ।';
-
-  @override
   String get homeHint =>
       'ਸ਼ੇਅਰ ਸਰਟੀਫ਼ਿਕੇਟ, ਬ੍ਰੋਕਰੇਜ ਐਪ ਦੀ ਸਕ੍ਰੀਨ, ਅਖ਼ਬਾਰ ਜਾਂ ਕੰਪਨੀ ਦਾ ਲੋਗੋ – ਕੋਈ ਵੀ ਚੀਜ਼ ਜੋ ਕਿਸੇ ਸ਼ੇਅਰ ਦੀ ਪਛਾਣ ਕਰੇ।';
 
@@ -23,19 +20,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get takePhoto => 'ਫ਼ੋਟੋ ਖਿੱਚੋ';
 
   @override
-  String get chooseFromGallery => 'ਗੈਲਰੀ ਵਿੱਚੋਂ ਚੁਣੋ';
-
-  @override
   String get chooseImage => 'ਚਿੱਤਰ ਚੁਣੋ';
-
-  @override
-  String get enterTickerManually => 'ਟਿਕਰ ਹੱਥੀਂ ਦਰਜ ਕਰੋ';
-
-  @override
-  String get tickerInputLabel => 'ਟਿਕਰ ਸਿੰਬਲ';
-
-  @override
-  String get tickerInputHint => 'ਜਿਵੇਂ AAPL';
 
   @override
   String get lookUp => 'ਲੱਭੋ';
@@ -186,9 +171,6 @@ class AppLocalizationsPa extends AppLocalizations {
   String get labelHeadquarters => 'ਮੁੱਖ ਦਫ਼ਤਰ';
 
   @override
-  String get labelDescription => 'ਵੇਰਵਾ';
-
-  @override
   String get labelLastPrice => 'ਆਖ਼ਰੀ ਕੀਮਤ';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get noNews => 'ਕੋਈ ਹਾਲੀਆ ਖ਼ਬਰ ਨਹੀਂ।';
-
-  @override
-  String get openArticle => 'ਲੇਖ ਖੋਲ੍ਹੋ';
 
   @override
   String get openLinkFailed => 'ਲਿੰਕ ਨਹੀਂ ਖੁੱਲ੍ਹ ਸਕਿਆ।';
@@ -605,11 +584,6 @@ class AppLocalizationsPa extends AppLocalizations {
   String get displayCurrencyNone => 'ਸਿਰਫ਼ ਸ਼ੇਅਰ ਦੀ ਆਪਣੀ ਮੁਦਰਾ';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency ਵਿੱਚ';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'ਦਰ: 1 $from = $rate $to (ECB, $date)';
   }
@@ -681,11 +655,6 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'ਪ੍ਰਤੀ ਮਹੀਨਾ $count ਵਿਸ਼ਲੇਸ਼ਣ';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count ਵਿਸ਼ਲੇਸ਼ਣਾਂ ਨਾਲ $days ਦਿਨਾਂ ਦਾ ਮੁਫ਼ਤ ਟ੍ਰਾਇਲ';
   }
 
   @override
@@ -779,9 +748,6 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get viewPlans => 'ਪਲਾਨ ਦੇਖੋ';
-
-  @override
-  String get usageTitle => 'ਵਰਤੋਂ';
 
   @override
   String get demoPurchaseNote => 'ਡੈਮੋ ਬਿਲਿੰਗ: ਇਸ ਪਲੈਟਫ਼ਾਰਮ ’ਤੇ ਖ਼ਰੀਦਾਂ ਸਿਮੂਲੇਟ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।';
@@ -1143,9 +1109,6 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'ਤੁਹਾਡੀ ਪੁਜ਼ੀਸ਼ਨ';
-
-  @override
-  String get portfolioPurchases => 'ਖ਼ਰੀਦਾਂ';
 
   @override
   String get portfolioRemove => 'ਹਟਾਓ';
@@ -2447,6 +2410,9 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'ਕੋਈ ਨਵਾਂ ਸ਼ੇਅਰ ਨਹੀਂ';
+
+  @override
   String get positionsSortWeight => 'ਸਭ ਤੋਂ ਵੱਡੇ ਪਹਿਲਾਂ';
 
   @override
@@ -2644,6 +2610,9 @@ class AppLocalizationsPa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'ਹਰ ਪੁਜ਼ੀਸ਼ਨ ’ਤੇ ਪਹਿਲਾਂ ਹੀ ਟ੍ਰੇਲਿੰਗ ਸਟਾਪ ਹੈ';
 
   @override
   String portfolioSinceSale(String percent) {

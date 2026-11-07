@@ -13,9 +13,6 @@ class AppLocalizationsGu extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'કોઈ શેરનો ફોટો લો અને તેના વિશે બધું જાણો.';
-
-  @override
   String get homeHint =>
       'શેર સર્ટિફિકેટ, બ્રોકરેજ ઍપની સ્ક્રીન, અખબાર કે કંપનીનો લોગો – કોઈ પણ વસ્તુ જે શેરની ઓળખ આપે.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get takePhoto => 'ફોટો લો';
 
   @override
-  String get chooseFromGallery => 'ગૅલેરીમાંથી પસંદ કરો';
-
-  @override
   String get chooseImage => 'છબી પસંદ કરો';
-
-  @override
-  String get enterTickerManually => 'ટિકર જાતે દાખલ કરો';
-
-  @override
-  String get tickerInputLabel => 'ટિકર સિમ્બોલ';
-
-  @override
-  String get tickerInputHint => 'દા.ત. AAPL';
 
   @override
   String get lookUp => 'શોધો';
@@ -185,9 +170,6 @@ class AppLocalizationsGu extends AppLocalizations {
   String get labelHeadquarters => 'મુખ્ય મથક';
 
   @override
-  String get labelDescription => 'વર્ણન';
-
-  @override
   String get labelLastPrice => 'છેલ્લો ભાવ';
 
   @override
@@ -328,9 +310,6 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get noNews => 'તાજેતરના કોઈ સમાચાર નથી.';
-
-  @override
-  String get openArticle => 'લેખ ખોલો';
 
   @override
   String get openLinkFailed => 'લિંક ખોલી શકાઈ નથી.';
@@ -598,11 +577,6 @@ class AppLocalizationsGu extends AppLocalizations {
   String get displayCurrencyNone => 'ફક્ત શેરનું પોતાનું ચલણ';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currencyમાં';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'દર: 1 $from = $rate $to (ECB, $date)';
   }
@@ -674,11 +648,6 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'દર મહિને $count વિશ્લેષણ';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count વિશ્લેષણ સાથે $days દિવસની મફત ટ્રાયલ';
   }
 
   @override
@@ -771,9 +740,6 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get viewPlans => 'પ્લાન જુઓ';
-
-  @override
-  String get usageTitle => 'વપરાશ';
 
   @override
   String get demoPurchaseNote => 'ડેમો બિલિંગ: આ પ્લૅટફૉર્મ પર ખરીદીઓ સિમ્યુલેટ કરવામાં આવે છે.';
@@ -1135,9 +1101,6 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'તમારી પોઝિશન';
-
-  @override
-  String get portfolioPurchases => 'ખરીદીઓ';
 
   @override
   String get portfolioRemove => 'કાઢી નાખો';
@@ -2435,6 +2398,9 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'કોઈ નવા સ્ટૉક નથી';
+
+  @override
   String get positionsSortWeight => 'સૌથી મોટા પહેલા';
 
   @override
@@ -2628,6 +2594,9 @@ class AppLocalizationsGu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'દરેક પોઝિશન પર પહેલેથી ટ્રેલિંગ સ્ટોપ છે';
 
   @override
   String portfolioSinceSale(String percent) {

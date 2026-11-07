@@ -13,9 +13,6 @@ class AppLocalizationsTg extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Аз саҳмия акс гиред ва ҳама чизро дар бораи он бифаҳмед.';
-
-  @override
   String get homeHint =>
       'Сертификати саҳмия, экрани барномаи брокерӣ, рӯзнома ё логотипи ширкат – ҳар чизе, ки саҳмияро муайян мекунад.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsTg extends AppLocalizations {
   String get takePhoto => 'Акс гирифтан';
 
   @override
-  String get chooseFromGallery => 'Интихоб аз галерея';
-
-  @override
   String get chooseImage => 'Интихоби тасвир';
-
-  @override
-  String get enterTickerManually => 'Тикерро дастӣ ворид кардан';
-
-  @override
-  String get tickerInputLabel => 'Тикер';
-
-  @override
-  String get tickerInputHint => 'мас., AAPL';
 
   @override
   String get lookUp => 'Ҷустуҷӯ';
@@ -186,9 +171,6 @@ class AppLocalizationsTg extends AppLocalizations {
   String get labelHeadquarters => 'Идораи марказӣ';
 
   @override
-  String get labelDescription => 'Тавсиф';
-
-  @override
   String get labelLastPrice => 'Нархи охирин';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get noNews => 'Хабарҳои нав нестанд.';
-
-  @override
-  String get openArticle => 'Кушодани мақола';
 
   @override
   String get openLinkFailed => 'Пайванд кушода нашуд.';
@@ -602,11 +581,6 @@ class AppLocalizationsTg extends AppLocalizations {
   String get displayCurrencyNone => 'Танҳо асъори худи саҳмия';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ бо $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Қурб: 1 $from = $rate $to (ECB, $date)';
   }
@@ -678,11 +652,6 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count таҳлил дар як моҳ';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days рӯз озмоиши ройгон бо $count таҳлил';
   }
 
   @override
@@ -776,9 +745,6 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get viewPlans => 'Дидани тарифҳо';
-
-  @override
-  String get usageTitle => 'Истифода';
 
   @override
   String get demoPurchaseNote => 'Пардохти намоишӣ: дар ин платформа харидҳо тақлид карда мешаванд.';
@@ -1140,9 +1106,6 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Мавқеи шумо';
-
-  @override
-  String get portfolioPurchases => 'Харидҳо';
 
   @override
   String get portfolioRemove => 'Хориҷ кардан';
@@ -2443,6 +2406,9 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Саҳмияҳои нав нестанд';
+
+  @override
   String get positionsSortWeight => 'Аввал калонтаринҳо';
 
   @override
@@ -2636,6 +2602,9 @@ class AppLocalizationsTg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Ҳамаи мавқеъҳо аллакай огоҳии афтиш аз авҷ доранд';
 
   @override
   String portfolioSinceSale(String percent) {

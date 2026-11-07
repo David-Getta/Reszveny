@@ -13,9 +13,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Aksiyani suratga oling va u haqida hamma narsani bilib oling.';
-
-  @override
   String get homeHint =>
       'Aksiya sertifikati, broker ilovasi ekrani, gazeta yoki kompaniya logotipi – aksiyani aniqlashga yordam beradigan har qanday narsa.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get takePhoto => 'Suratga olish';
 
   @override
-  String get chooseFromGallery => 'Galereyadan tanlash';
-
-  @override
   String get chooseImage => 'Rasm tanlash';
-
-  @override
-  String get enterTickerManually => 'Tikerni qoʻlda kiritish';
-
-  @override
-  String get tickerInputLabel => 'Tiker';
-
-  @override
-  String get tickerInputHint => 'masalan, AAPL';
 
   @override
   String get lookUp => 'Qidirish';
@@ -186,9 +171,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get labelHeadquarters => 'Bosh ofis';
 
   @override
-  String get labelDescription => 'Tavsif';
-
-  @override
   String get labelLastPrice => 'Oxirgi narx';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get noNews => 'Soʻnggi yangiliklar yoʻq.';
-
-  @override
-  String get openArticle => 'Maqolani ochish';
 
   @override
   String get openLinkFailed => 'Havolani ochib boʻlmadi.';
@@ -600,11 +579,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get displayCurrencyNone => 'Faqat aksiyaning oʻz valyutasi';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency hisobida';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kurs: 1 $from = $rate $to (YeMB, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Oyiga $count ta tahlil';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count ta tahlil bilan $days kunlik bepul sinov';
   }
 
   @override
@@ -774,9 +743,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get viewPlans => 'Tariflarni koʻrish';
-
-  @override
-  String get usageTitle => 'Foydalanish';
 
   @override
   String get demoPurchaseNote => 'Demo toʻlov: bu platformada xaridlar simulyatsiya qilinadi.';
@@ -1138,9 +1104,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Sizning pozitsiyangiz';
-
-  @override
-  String get portfolioPurchases => 'Xaridlar';
 
   @override
   String get portfolioRemove => 'Olib tashlash';
@@ -2438,6 +2401,9 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Yangi aksiyalar yoʻq';
+
+  @override
   String get positionsSortWeight => 'Eng yiriklari avval';
 
   @override
@@ -2636,6 +2602,9 @@ class AppLocalizationsUz extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Barcha pozitsiyalarda allaqachon treyling-stop bor';
 
   @override
   String portfolioSinceSale(String percent) {

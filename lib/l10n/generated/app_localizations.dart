@@ -335,12 +335,6 @@ abstract class AppLocalizations {
   /// **'WhatStock'**
   String get appTitle;
 
-  /// No description provided for @homeTagline.
-  ///
-  /// In en, this message translates to:
-  /// **'Photograph a stock and learn everything about it.'**
-  String get homeTagline;
-
   /// No description provided for @homeHint.
   ///
   /// In en, this message translates to:
@@ -353,35 +347,11 @@ abstract class AppLocalizations {
   /// **'Take a photo'**
   String get takePhoto;
 
-  /// No description provided for @chooseFromGallery.
-  ///
-  /// In en, this message translates to:
-  /// **'Choose from gallery'**
-  String get chooseFromGallery;
-
   /// No description provided for @chooseImage.
   ///
   /// In en, this message translates to:
   /// **'Choose an image'**
   String get chooseImage;
-
-  /// No description provided for @enterTickerManually.
-  ///
-  /// In en, this message translates to:
-  /// **'Enter ticker manually'**
-  String get enterTickerManually;
-
-  /// No description provided for @tickerInputLabel.
-  ///
-  /// In en, this message translates to:
-  /// **'Ticker symbol'**
-  String get tickerInputLabel;
-
-  /// No description provided for @tickerInputHint.
-  ///
-  /// In en, this message translates to:
-  /// **'e.g. AAPL'**
-  String get tickerInputHint;
 
   /// No description provided for @lookUp.
   ///
@@ -659,12 +629,6 @@ abstract class AppLocalizations {
   /// **'Headquarters'**
   String get labelHeadquarters;
 
-  /// No description provided for @labelDescription.
-  ///
-  /// In en, this message translates to:
-  /// **'Description'**
-  String get labelDescription;
-
   /// No description provided for @labelLastPrice.
   ///
   /// In en, this message translates to:
@@ -934,12 +898,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No recent news.'**
   String get noNews;
-
-  /// No description provided for @openArticle.
-  ///
-  /// In en, this message translates to:
-  /// **'Open article'**
-  String get openArticle;
 
   /// No description provided for @openLinkFailed.
   ///
@@ -1427,12 +1385,6 @@ abstract class AppLocalizations {
   /// **'Stock’s own currency only'**
   String get displayCurrencyNone;
 
-  /// No description provided for @labelConverted.
-  ///
-  /// In en, this message translates to:
-  /// **'≈ in {currency}'**
-  String labelConverted(String currency);
-
   /// No description provided for @fxRateNote.
   ///
   /// In en, this message translates to:
@@ -1564,12 +1516,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count} analyses per month'**
   String planAnalysesPerMonth(int count);
-
-  /// No description provided for @planTrialDescription.
-  ///
-  /// In en, this message translates to:
-  /// **'{days}-day free trial with {count} analyses'**
-  String planTrialDescription(int days, int count);
 
   /// No description provided for @trialDaysLeft.
   ///
@@ -1708,12 +1654,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'View plans'**
   String get viewPlans;
-
-  /// No description provided for @usageTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Usage'**
-  String get usageTitle;
 
   /// No description provided for @demoPurchaseNote.
   ///
@@ -2302,12 +2242,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your position'**
   String get portfolioYourPosition;
-
-  /// No description provided for @portfolioPurchases.
-  ///
-  /// In en, this message translates to:
-  /// **'Purchases'**
-  String get portfolioPurchases;
 
   /// No description provided for @portfolioRemove.
   ///
@@ -4355,6 +4289,12 @@ abstract class AppLocalizations {
   /// **'{count, plural, =0{No new stocks} =1{1 stock added} other{{count} stocks added}}'**
   String watchImported(int count);
 
+  /// Snackbar after pasting or importing tickers when every one of them was already on the list (shown instead of the "N stocks added" count).
+  ///
+  /// In en, this message translates to:
+  /// **'No new stocks'**
+  String get watchImportedNone;
+
   /// No description provided for @positionsSortWeight.
   ///
   /// In en, this message translates to:
@@ -4654,6 +4594,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =0{Every position already has a trailing stop} =1{1 trailing stop set} other{{count} trailing stops set}}'**
   String portfolioStopsDone(int count);
+
+  /// Snackbar after "trailing stops for all positions" when nothing had to be added (shown instead of the "N trailing stops set" count).
+  ///
+  /// In en, this message translates to:
+  /// **'Every position already has a trailing stop'**
+  String get portfolioStopsNone;
 
   /// On a fully sold position: how much the price has moved since the last sale, e.g. "+23.0% since you sold".
   ///

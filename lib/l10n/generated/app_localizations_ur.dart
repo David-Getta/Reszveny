@@ -13,9 +13,6 @@ class AppLocalizationsUr extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'کسی شیئر کی تصویر لیں اور اس کے بارے میں سب کچھ جانیں۔';
-
-  @override
   String get homeHint =>
       'شیئر سرٹیفکیٹ، بروکریج ایپ کی اسکرین، اخبار یا کمپنی کا لوگو – کوئی بھی چیز جو شیئر کی شناخت کرے۔';
 
@@ -23,19 +20,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get takePhoto => 'تصویر لیں';
 
   @override
-  String get chooseFromGallery => 'گیلری سے منتخب کریں';
-
-  @override
   String get chooseImage => 'تصویر منتخب کریں';
-
-  @override
-  String get enterTickerManually => 'ٹکر دستی طور پر درج کریں';
-
-  @override
-  String get tickerInputLabel => 'ٹکر سمبل';
-
-  @override
-  String get tickerInputHint => 'مثلاً AAPL';
 
   @override
   String get lookUp => 'تلاش کریں';
@@ -186,9 +171,6 @@ class AppLocalizationsUr extends AppLocalizations {
   String get labelHeadquarters => 'صدر دفتر';
 
   @override
-  String get labelDescription => 'تفصیل';
-
-  @override
   String get labelLastPrice => 'آخری قیمت';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get noNews => 'کوئی حالیہ خبر نہیں۔';
-
-  @override
-  String get openArticle => 'مضمون کھولیں';
 
   @override
   String get openLinkFailed => 'لنک نہیں کھولا جا سکا۔';
@@ -601,11 +580,6 @@ class AppLocalizationsUr extends AppLocalizations {
   String get displayCurrencyNone => 'صرف شیئر کی اپنی کرنسی';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency میں';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'شرح: 1 $from = $rate $to (ECB، $date)';
   }
@@ -677,11 +651,6 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'ماہانہ $count تجزیے';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$count تجزیوں کے ساتھ $days دن کا مفت آزمائشی دور';
   }
 
   @override
@@ -774,9 +743,6 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get viewPlans => 'پلان دیکھیں';
-
-  @override
-  String get usageTitle => 'استعمال';
 
   @override
   String get demoPurchaseNote => 'ڈیمو بلنگ: اس پلیٹ فارم پر خریداریاں نقلی ہیں۔';
@@ -1138,9 +1104,6 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'آپ کی پوزیشن';
-
-  @override
-  String get portfolioPurchases => 'خریداریاں';
 
   @override
   String get portfolioRemove => 'ہٹائیں';
@@ -2422,6 +2385,9 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'کوئی نیا شیئر نہیں';
+
+  @override
   String get positionsSortWeight => 'سب سے بڑے پہلے';
 
   @override
@@ -2614,6 +2580,9 @@ class AppLocalizationsUr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'ہر پوزیشن پر پہلے سے ٹریلنگ اسٹاپ موجود ہے';
 
   @override
   String portfolioSinceSale(String percent) {

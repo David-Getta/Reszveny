@@ -13,9 +13,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Piga picha ya hisa na ujifunze kila kitu kuihusu.';
-
-  @override
   String get homeHint =>
       'Hati ya hisa, skrini ya programu ya broker, gazeti au nembo ya kampuni – kitu chochote kinachotambulisha hisa.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get takePhoto => 'Piga picha';
 
   @override
-  String get chooseFromGallery => 'Chagua kutoka galeri';
-
-  @override
   String get chooseImage => 'Chagua picha';
-
-  @override
-  String get enterTickerManually => 'Ingiza ticker mwenyewe';
-
-  @override
-  String get tickerInputLabel => 'Alama ya ticker';
-
-  @override
-  String get tickerInputHint => 'k.m. AAPL';
 
   @override
   String get lookUp => 'Tafuta';
@@ -186,9 +171,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get labelHeadquarters => 'Makao makuu';
 
   @override
-  String get labelDescription => 'Maelezo';
-
-  @override
   String get labelLastPrice => 'Bei ya mwisho';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get noNews => 'Hakuna habari za hivi karibuni.';
-
-  @override
-  String get openArticle => 'Fungua makala';
 
   @override
   String get openLinkFailed => 'Imeshindwa kufungua kiungo.';
@@ -601,11 +580,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get displayCurrencyNone => 'Sarafu ya hisa yenyewe pekee';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ kwa $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Kiwango: 1 $from = $rate $to (ECB, $date)';
   }
@@ -677,11 +651,6 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Uchambuzi $count kwa mwezi';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Jaribio la bila malipo la siku $days lenye uchambuzi $count';
   }
 
   @override
@@ -774,9 +743,6 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get viewPlans => 'Tazama mipango';
-
-  @override
-  String get usageTitle => 'Matumizi';
 
   @override
   String get demoPurchaseNote => 'Malipo ya majaribio: manunuzi kwenye jukwaa hili ni ya kuigiza tu.';
@@ -1139,9 +1105,6 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Nafasi yako';
-
-  @override
-  String get portfolioPurchases => 'Manunuzi';
 
   @override
   String get portfolioRemove => 'Ondoa';
@@ -2452,6 +2415,9 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Hakuna hisa mpya';
+
+  @override
   String get positionsSortWeight => 'Kubwa zaidi kwanza';
 
   @override
@@ -2645,6 +2611,9 @@ class AppLocalizationsSw extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Kila nafasi tayari ina arifa ya kushuka kutoka kilele';
 
   @override
   String portfolioSinceSale(String percent) {

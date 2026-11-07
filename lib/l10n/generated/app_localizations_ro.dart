@@ -13,9 +13,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fotografiază o acțiune și află totul despre ea.';
-
-  @override
   String get homeHint =>
       'Un certificat de acțiuni, ecranul unei aplicații de brokeraj, un ziar sau logoul unei companii – orice identifică o acțiune.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get takePhoto => 'Fă o fotografie';
 
   @override
-  String get chooseFromGallery => 'Alege din galerie';
-
-  @override
   String get chooseImage => 'Alege o imagine';
-
-  @override
-  String get enterTickerManually => 'Introdu simbolul manual';
-
-  @override
-  String get tickerInputLabel => 'Simbol (ticker)';
-
-  @override
-  String get tickerInputHint => 'ex. AAPL';
 
   @override
   String get lookUp => 'Caută';
@@ -186,9 +171,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get labelHeadquarters => 'Sediu central';
 
   @override
-  String get labelDescription => 'Descriere';
-
-  @override
   String get labelLastPrice => 'Ultimul preț';
 
   @override
@@ -335,9 +317,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get noNews => 'Nu există știri recente.';
-
-  @override
-  String get openArticle => 'Deschide articolul';
 
   @override
   String get openLinkFailed => 'Linkul nu a putut fi deschis.';
@@ -608,11 +587,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get displayCurrencyNone => 'Doar moneda proprie a acțiunii';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ în $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Curs: 1 $from = $rate $to (BCE, $date)';
   }
@@ -691,11 +665,6 @@ class AppLocalizationsRo extends AppLocalizations {
       one: '$count analiză pe lună',
     );
     return '$_temp0';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Probă gratuită de $days zile cu $count analize';
   }
 
   @override
@@ -789,9 +758,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get viewPlans => 'Vezi planurile';
-
-  @override
-  String get usageTitle => 'Utilizare';
 
   @override
   String get demoPurchaseNote => 'Facturare demonstrativă: achizițiile sunt simulate pe această platformă.';
@@ -1164,9 +1130,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Poziția ta';
-
-  @override
-  String get portfolioPurchases => 'Cumpărări';
 
   @override
   String get portfolioRemove => 'Elimină';
@@ -2504,6 +2467,9 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Nicio acțiune nouă';
+
+  @override
   String get positionsSortWeight => 'Cele mai mari întâi';
 
   @override
@@ -2704,6 +2670,9 @@ class AppLocalizationsRo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Toate pozițiile au deja trailing stop';
 
   @override
   String portfolioSinceSale(String percent) {

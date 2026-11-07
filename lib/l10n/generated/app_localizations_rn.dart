@@ -13,9 +13,6 @@ class AppLocalizationsRn extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Fata ifoto y\'umugabane, umenye vyose ku bijanye na wo.';
-
-  @override
   String get homeHint =>
       'Icemezo c\'imigabane, ikirahure ca porogarama y\'umuhuza w\'imari, ikinyamakuru canke ikimenyetso c\'isosiyete – ikintu cose kigaragaza umugabane.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsRn extends AppLocalizations {
   String get takePhoto => 'Fata ifoto';
 
   @override
-  String get chooseFromGallery => 'Hitamwo mu mafoto';
-
-  @override
   String get chooseImage => 'Hitamwo ifoto';
-
-  @override
-  String get enterTickerManually => 'Andika ticker wewe nyene';
-
-  @override
-  String get tickerInputLabel => 'Ikimenyetso (ticker)';
-
-  @override
-  String get tickerInputHint => 'akarorero: AAPL';
 
   @override
   String get lookUp => 'Rondera';
@@ -186,9 +171,6 @@ class AppLocalizationsRn extends AppLocalizations {
   String get labelHeadquarters => 'Icicaro gikuru';
 
   @override
-  String get labelDescription => 'Insiguro';
-
-  @override
   String get labelLastPrice => 'Igiciro ca nyuma';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get noNews => 'Nta makuru mashasha ahari.';
-
-  @override
-  String get openArticle => 'Ugurura inkuru';
 
   @override
   String get openLinkFailed => 'Ntivyakunze kwugurura umurongo.';
@@ -607,11 +586,6 @@ class AppLocalizationsRn extends AppLocalizations {
   String get displayCurrencyNone => 'Ifaranga ry\'umugabane gusa';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ mu $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Igipimo: 1 $from = $rate $to (ECB, $date)';
   }
@@ -683,11 +657,6 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Amasesangura $count ku kwezi';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Igeragezwa ry\'ubuntu ry\'imisi $days n\'amasesangura $count';
   }
 
   @override
@@ -780,9 +749,6 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get viewPlans => 'Raba amapaki';
-
-  @override
-  String get usageTitle => 'Ikoreshwa';
 
   @override
   String get demoPurchaseNote => 'Uburiho bw\'akarorero: ukugura kuri iyi sisitemu ni ukwigana gusa.';
@@ -1146,9 +1112,6 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Imigabane yawe';
-
-  @override
-  String get portfolioPurchases => 'Ivyo waguze';
 
   @override
   String get portfolioRemove => 'Kuramwo';
@@ -2459,6 +2422,9 @@ class AppLocalizationsRn extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Nta migabane mishasha';
+
+  @override
   String get positionsSortWeight => 'Ibinini cane imbere';
 
   @override
@@ -2657,6 +2623,9 @@ class AppLocalizationsRn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Imigabane yose isanzwe ifise iri menyesha';
 
   @override
   String portfolioSinceSale(String percent) {

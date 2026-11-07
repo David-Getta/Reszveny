@@ -13,9 +13,6 @@ class AppLocalizationsLn extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Bɛta foto ya action mpe yeba makambo nyɔnsɔ etali yango.';
-
-  @override
   String get homeHint =>
       'Mokanda ya action, écran ya application ya bourse, zulunalo to logo ya kompanyi – elɔkɔ nyɔnsɔ oyo emonisaka action.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsLn extends AppLocalizations {
   String get takePhoto => 'Bɛta foto';
 
   @override
-  String get chooseFromGallery => 'Pɔna na galerie';
-
-  @override
   String get chooseImage => 'Pɔna elilingi';
-
-  @override
-  String get enterTickerManually => 'Koma ticker yo moko';
-
-  @override
-  String get tickerInputLabel => 'Elembo ya ticker';
-
-  @override
-  String get tickerInputHint => 'ndakisa: AAPL';
 
   @override
   String get lookUp => 'Luka';
@@ -186,9 +171,6 @@ class AppLocalizationsLn extends AppLocalizations {
   String get labelHeadquarters => 'Biro monene';
 
   @override
-  String get labelDescription => 'Bolimboli';
-
-  @override
   String get labelLastPrice => 'Ntalo ya nsuka';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get noNews => 'Nsango ya sika ezali te.';
-
-  @override
-  String get openArticle => 'Fungola lisolo';
 
   @override
   String get openLinkFailed => 'Tokokaki te kofungola lien.';
@@ -606,11 +585,6 @@ class AppLocalizationsLn extends AppLocalizations {
   String get displayCurrencyNone => 'Kaka mbɔngɔ ya action yango moko';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ na $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Taux: 1 $from = $rate $to (BCE, $date)';
   }
@@ -682,11 +656,6 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Ba-analyse $count na sanza';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Komeka ofele ya mikɔlɔ $days na ba-analyse $count';
   }
 
   @override
@@ -779,9 +748,6 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get viewPlans => 'Tala ba-forfait';
-
-  @override
-  String get usageTitle => 'Bosaleli';
 
   @override
   String get demoPurchaseNote => 'Bofuti ya démo: bosombi ezali ya kosakana na plateforme oyo.';
@@ -1144,9 +1110,6 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Position na yo';
-
-  @override
-  String get portfolioPurchases => 'Bosombi';
 
   @override
   String get portfolioRemove => 'Longola';
@@ -2458,6 +2421,9 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Aksyo ya sika ezali te';
+
+  @override
   String get positionsSortWeight => 'Oyo ya monene liboso';
 
   @override
@@ -2651,6 +2617,9 @@ class AppLocalizationsLn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Eteni nyonso esili kozala na likebisi oyo';
 
   @override
   String portfolioSinceSale(String percent) {

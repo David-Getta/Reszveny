@@ -13,9 +13,6 @@ class AppLocalizationsSo extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Sawir saami oo wax walba ka baro.';
-
-  @override
   String get homeHint =>
       'Shahaado saami, shaashadda app-ka dillaalka, wargeys ama astaanta shirkad – wax kasta oo saami lagu garto.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get takePhoto => 'Sawir qaad';
 
   @override
-  String get chooseFromGallery => 'Ka dooro gaalariga';
-
-  @override
   String get chooseImage => 'Dooro sawir';
-
-  @override
-  String get enterTickerManually => 'Astaanta gacanta ku geli';
-
-  @override
-  String get tickerInputLabel => 'Astaanta saamiga';
-
-  @override
-  String get tickerInputHint => 'tus. AAPL';
 
   @override
   String get lookUp => 'Raadi';
@@ -186,9 +171,6 @@ class AppLocalizationsSo extends AppLocalizations {
   String get labelHeadquarters => 'Xarunta dhexe';
 
   @override
-  String get labelDescription => 'Sharaxaad';
-
-  @override
   String get labelLastPrice => 'Qiimihii u dambeeyay';
 
   @override
@@ -329,9 +311,6 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get noNews => 'Ma jiraan warar dhawaan ah.';
-
-  @override
-  String get openArticle => 'Fur maqaalka';
 
   @override
   String get openLinkFailed => 'Linkiga lama furi karin.';
@@ -600,11 +579,6 @@ class AppLocalizationsSo extends AppLocalizations {
   String get displayCurrencyNone => 'Lacagta saamiga oo keliya';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency ahaan';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Sicirka: 1 $from = $rate $to (ECB, $date)';
   }
@@ -676,11 +650,6 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return '$count falanqayn bishii';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Tijaabo bilaash ah oo $days maalmood ah oo leh $count falanqayn';
   }
 
   @override
@@ -775,9 +744,6 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get viewPlans => 'Eeg qorshayaasha';
-
-  @override
-  String get usageTitle => 'Isticmaalka';
 
   @override
   String get demoPurchaseNote => 'Lacag-bixin bandhig: nidaamkan iibsashadu waa ku-dayasho keliya.';
@@ -1142,9 +1108,6 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Haysashadaada';
-
-  @override
-  String get portfolioPurchases => 'Iibsashooyinka';
 
   @override
   String get portfolioRemove => 'Ka saar';
@@ -2465,6 +2428,9 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Saami cusub ma jiro';
+
+  @override
   String get positionsSortWeight => 'Kuwa ugu waaweyn marka hore';
 
   @override
@@ -2657,6 +2623,9 @@ class AppLocalizationsSo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Haysasho kastaa horeba way leedahay digniintan';
 
   @override
   String portfolioSinceSale(String percent) {

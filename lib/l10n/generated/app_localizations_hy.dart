@@ -13,9 +13,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Լուսանկարեք բաժնետոմսը և իմացեք դրա մասին ամեն ինչ։';
-
-  @override
   String get homeHint =>
       'Բաժնետոմսի սերտիֆիկատ, բրոքերային հավելվածի էկրան, թերթ կամ ընկերության լոգո՝ ցանկացած բան, որով կարելի է ճանաչել բաժնետոմսը։';
 
@@ -23,19 +20,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get takePhoto => 'Լուսանկարել';
 
   @override
-  String get chooseFromGallery => 'Ընտրել պատկերասրահից';
-
-  @override
   String get chooseImage => 'Ընտրել պատկեր';
-
-  @override
-  String get enterTickerManually => 'Մուտքագրել թիքերը ձեռքով';
-
-  @override
-  String get tickerInputLabel => 'Թիքեր';
-
-  @override
-  String get tickerInputHint => 'օր.՝ AAPL';
 
   @override
   String get lookUp => 'Որոնել';
@@ -186,9 +171,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get labelHeadquarters => 'Կենտրոնակայան';
 
   @override
-  String get labelDescription => 'Նկարագրություն';
-
-  @override
   String get labelLastPrice => 'Վերջին գին';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get noNews => 'Վերջին նորություններ չկան։';
-
-  @override
-  String get openArticle => 'Բացել հոդվածը';
 
   @override
   String get openLinkFailed => 'Չհաջողվեց բացել հղումը։';
@@ -606,11 +585,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get displayCurrencyNone => 'Միայն բաժնետոմսի սեփական արժույթը';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ $currency-ով';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Փոխարժեք՝ 1 $from = $rate $to (ԵԿԲ, $date)';
   }
@@ -682,11 +656,6 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Ամսական $count վերլուծություն';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return '$days-օրյա անվճար փորձաշրջան՝ $count վերլուծությամբ';
   }
 
   @override
@@ -780,9 +749,6 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get viewPlans => 'Դիտել պլանները';
-
-  @override
-  String get usageTitle => 'Օգտագործում';
 
   @override
   String get demoPurchaseNote => 'Դեմո վճարումներ՝ այս հարթակում գնումները նմանակվում են։';
@@ -1145,9 +1111,6 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Ձեր դիրքը';
-
-  @override
-  String get portfolioPurchases => 'Գնումներ';
 
   @override
   String get portfolioRemove => 'Հեռացնել';
@@ -2445,6 +2408,9 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'Նոր բաժնետոմսեր չկան';
+
+  @override
   String get positionsSortWeight => 'Ամենամեծերը սկզբում';
 
   @override
@@ -2638,6 +2604,9 @@ class AppLocalizationsHy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Բոլոր դիրքերն արդեն ունեն այդ ծանուցումը';
 
   @override
   String portfolioSinceSale(String percent) {

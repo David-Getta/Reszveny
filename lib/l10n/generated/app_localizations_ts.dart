@@ -13,9 +13,6 @@ class AppLocalizationsTs extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'Teka xifaniso xa xere u dyondza hinkwaswo hi yona.';
-
-  @override
   String get homeHint =>
       'Xitifikheti xa tixere, xikirini xa app ya bhrokara, phephahungu kumbe logo ya khampani – xin\'wana na xin\'wana lexi kombisaka xere.';
 
@@ -23,19 +20,7 @@ class AppLocalizationsTs extends AppLocalizations {
   String get takePhoto => 'Teka xifaniso';
 
   @override
-  String get chooseFromGallery => 'Hlawula eka galari';
-
-  @override
   String get chooseImage => 'Hlawula xifaniso';
-
-  @override
-  String get enterTickerManually => 'Nghenisa ticker hi voko';
-
-  @override
-  String get tickerInputLabel => 'Mfungho wa ticker';
-
-  @override
-  String get tickerInputHint => 'xik. AAPL';
 
   @override
   String get lookUp => 'Lava';
@@ -186,9 +171,6 @@ class AppLocalizationsTs extends AppLocalizations {
   String get labelHeadquarters => 'Hofisi-nkulu';
 
   @override
-  String get labelDescription => 'Nhlamuselo';
-
-  @override
   String get labelLastPrice => 'Nxavo wo hetelela';
 
   @override
@@ -334,9 +316,6 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get noNews => 'A ku na mahungu ya sweswinyana.';
-
-  @override
-  String get openArticle => 'Pfula xihloko';
 
   @override
   String get openLinkFailed => 'A swi kotekanga ku pfula linki.';
@@ -608,11 +587,6 @@ class AppLocalizationsTs extends AppLocalizations {
   String get displayCurrencyNone => 'Mali ya xere ntsena';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ hi $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'Mpimo: 1 $from = $rate $to (ECB, $date)';
   }
@@ -684,11 +658,6 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'Minxopaxopo ya $count hi n\'hweti';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'Ndzingeto wa mahala wa masiku ya $days wu ri na minxopaxopo ya $count';
   }
 
   @override
@@ -782,9 +751,6 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get viewPlans => 'Vona makungu';
-
-  @override
-  String get usageTitle => 'Matirhiselo';
 
   @override
   String get demoPurchaseNote => 'Ku hakela ka nkombiso: swixaviwa i swa ku ringeta ntsena eka pulatifomo leyi.';
@@ -1150,9 +1116,6 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'Tixere ta wena';
-
-  @override
-  String get portfolioPurchases => 'Swixaviwa';
 
   @override
   String get portfolioRemove => 'Susa';
@@ -2479,6 +2442,9 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'A ku na tixere letintshwa';
+
+  @override
   String get positionsSortWeight => 'Leswikulu ngopfu ku sungula';
 
   @override
@@ -2672,6 +2638,9 @@ class AppLocalizationsTs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'Xere yin\'wana na yin\'wana se yi na xitsundzuxo lexi';
 
   @override
   String portfolioSinceSale(String percent) {

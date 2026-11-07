@@ -42,14 +42,18 @@ class _SearchFieldState extends State<SearchField> {
   @override
   void initState() {
     super.initState();
-    _controller.addListener(() {
-      final has = _controller.text.trim().isNotEmpty;
-      if (has != _hasText) setState(() => _hasText = has);
-    });
+    _controller.addListener(_onText);
+  }
+
+  void _onText() {
+    final has = _controller.text.trim().isNotEmpty;
+    if (has != _hasText) setState(() => _hasText = has);
   }
 
   @override
   void dispose() {
+    // A szülő vezérlője túléli ezt az állapotot: a figyelő ne hívjon egy eldobott setState-et.
+    _controller.removeListener(_onText);
     if (widget.controller == null) _controller.dispose();
     if (widget.focusNode == null) _focus.dispose();
     super.dispose();

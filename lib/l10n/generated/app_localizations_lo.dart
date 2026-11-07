@@ -13,28 +13,13 @@ class AppLocalizationsLo extends AppLocalizations {
   String get appTitle => 'WhatStock';
 
   @override
-  String get homeTagline => 'ຖ່າຍຮູບຮຸ້ນ ແລ້ວຮູ້ທຸກຢ່າງກ່ຽວກັບຮຸ້ນນັ້ນ';
-
-  @override
   String get homeHint => 'ໃບຮຸ້ນ ໜ້າຈໍແອັບນາຍໜ້າ ໜັງສືພິມ ຫຼື ໂລໂກ້ບໍລິສັດ – ອັນໃດກໍໄດ້ທີ່ບອກໄດ້ວ່າແມ່ນຮຸ້ນໃດ';
 
   @override
   String get takePhoto => 'ຖ່າຍຮູບ';
 
   @override
-  String get chooseFromGallery => 'ເລືອກຈາກຄັງຮູບ';
-
-  @override
   String get chooseImage => 'ເລືອກຮູບພາບ';
-
-  @override
-  String get enterTickerManually => 'ປ້ອນສັນຍາລັກຮຸ້ນເອງ';
-
-  @override
-  String get tickerInputLabel => 'ສັນຍາລັກຮຸ້ນ';
-
-  @override
-  String get tickerInputHint => 'ເຊັ່ນ AAPL';
 
   @override
   String get lookUp => 'ຊອກຫາ';
@@ -183,9 +168,6 @@ class AppLocalizationsLo extends AppLocalizations {
   String get labelHeadquarters => 'ສຳນັກງານໃຫຍ່';
 
   @override
-  String get labelDescription => 'ຄຳອະທິບາຍ';
-
-  @override
   String get labelLastPrice => 'ລາຄາລ່າສຸດ';
 
   @override
@@ -326,9 +308,6 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get noNews => 'ບໍ່ມີຂ່າວລ່າສຸດ';
-
-  @override
-  String get openArticle => 'ເປີດບົດຄວາມ';
 
   @override
   String get openLinkFailed => 'ບໍ່ສາມາດເປີດລິ້ງໄດ້';
@@ -596,11 +575,6 @@ class AppLocalizationsLo extends AppLocalizations {
   String get displayCurrencyNone => 'ສະເພາະສະກຸນເງິນຂອງຮຸ້ນ';
 
   @override
-  String labelConverted(String currency) {
-    return '≈ ເປັນ $currency';
-  }
-
-  @override
   String fxRateNote(String from, String rate, String to, String date) {
     return 'ອັດຕາ: 1 $from = $rate $to (ECB, $date)';
   }
@@ -672,11 +646,6 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String planAnalysesPerMonth(int count) {
     return 'ວິເຄາະໄດ້ $count ຄັ້ງຕໍ່ເດືອນ';
-  }
-
-  @override
-  String planTrialDescription(int days, int count) {
-    return 'ທົດລອງໃຊ້ຟຣີ $days ມື້ ພ້ອມການວິເຄາະ $count ຄັ້ງ';
   }
 
   @override
@@ -763,9 +732,6 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get viewPlans => 'ເບິ່ງແພັກເກັດ';
-
-  @override
-  String get usageTitle => 'ການນຳໃຊ້';
 
   @override
   String get demoPurchaseNote => 'ການຊຳລະເງິນສາທິດ: ການຊື້ໃນແພລດຟອມນີ້ເປັນພຽງການຈຳລອງ';
@@ -1110,9 +1076,6 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get portfolioYourPosition => 'ຮຸ້ນທີ່ທ່ານຖື';
-
-  @override
-  String get portfolioPurchases => 'ລາຍການຊື້';
 
   @override
   String get portfolioRemove => 'ລຶບ';
@@ -2375,6 +2338,9 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get watchImportedNone => 'ບໍ່ມີຮຸ້ນໃໝ່';
+
+  @override
   String get positionsSortWeight => 'ໃຫຍ່ທີ່ສຸດກ່ອນ';
 
   @override
@@ -2566,6 +2532,9 @@ class AppLocalizationsLo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioStopsNone => 'ຮຸ້ນທີ່ຖືທຸກລາຍການມີການແຈ້ງເຕືອນນີ້ແລ້ວ';
 
   @override
   String portfolioSinceSale(String percent) {

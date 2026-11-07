@@ -57,6 +57,15 @@ class NativeQuickPanel {
     _channel.setMethodCallHandler(handleCall);
   }
 
+  /// A kezelő leválasztása (az app kerete eldobva, pl. a meghívó-oldal váltja): a panel
+  /// eseményei addig nem érnek egy már nem létező képernyőhöz, amíg egy új keret nem csatlakozik.
+  void detach(QuickPanelHandler handler) {
+    if (identical(_handler, handler)) _handler = null;
+  }
+
+  @visibleForTesting
+  QuickPanelHandler? get debugHandler => _handler;
+
   /// Feliratok a felhasználó nyelvén, és a téma (sötét / világos).
   void configure({
     required String placeholder,

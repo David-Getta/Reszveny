@@ -41,7 +41,7 @@ class StatementsTable extends StatelessWidget {
         dividerThickness: 0.5,
         columns: [
           DataColumn(label: Text(l10n.labelFiscalYear, style: headStyle)),
-          for (final y in years) DataColumn(label: Text('${y.fiscalYear}', style: headStyle), numeric: true),
+          for (final y in years) DataColumn(label: Text(fmt.year(y.fiscalYear), style: headStyle), numeric: true),
         ],
         rows: [
           for (final (label, get) in rows)
