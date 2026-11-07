@@ -59,10 +59,16 @@ class AnalysisChat extends ChangeNotifier {
   static const maxAskedKept = 60;
   Future<void>? _loading;
 
-  Future<void> _load() => _loading ??= () async {
+  /// [clear] növeli: egy épp futó betöltés ne töltse vissza az előző fiók számait.
+  int _generation = 0;
+
+  /// A mentett számok betöltése (egyszer); a felület az első olvasáskor indítja, hogy az
+  /// „ennyi kérdés maradt” újraindítás után se a teljes keretet mutassa.
+  Future<void> load() => _loading ??= () async {
+    final gen = _generation;
     try {
       final raw = (await SharedPreferences.getInstance()).getString(_askedKey);
-      if (raw != null) {
+      if (raw != null && gen == _generation) {
         for (final e in (jsonDecode(raw) as Map).entries) {
           if (e.value is num) _asked.putIfAbsent('${e.key}', () => (e.value as num).toInt());
         }
@@ -90,22 +96,27 @@ class AnalysisChat extends ChangeNotifier {
 
   /// A beszélgetések törlése (kijelentkezéskor, a személyes adatokkal együtt).
   void clear() {
+    _generation++;
     _threads.clear();
     _asked.clear();
     unawaited(SharedPreferences.getInstance().then((p) => p.remove(_askedKey), onError: (Object _) => false));
     notifyListeners();
   }
 
-  int questionsLeft(StockReport r) =>
-      maxQuestions - math.max(thread(r).where((m) => m.fromUser).length, _asked[_key(r)] ?? 0);
+  int questionsLeft(StockReport r) {
+    // A mentett számok betöltése a háttérben (a kész állapotot a figyelők megkapják).
+    if (_loading == null) unawaited(load());
+    return maxQuestions - math.max(thread(r).where((m) => m.fromUser).length, _asked[_key(r)] ?? 0);
+  }
 
   /// Kérdés feltevése; a válasz a beszélgetés végére kerül. Hiba esetén a
-  /// kérdés is kikerül (újra feltehető), és [AppException] jön.
-  Future<void> ask(StockReport report, String question, {required String companyName, required String language}) async {
+  /// kérdés is kikerül (újra feltehető), és [AppException] jön. Hamis, ha a kérdés el sem
+  /// ment (üres, már fut egy, vagy – a mentett számok szerint – nincs több kérdés).
+  Future<bool> ask(StockReport report, String question, {required String companyName, required String language}) async {
     final q = question.trim();
     final key = _key(report);
-    await _load();
-    if (q.isEmpty || _busy.contains(key) || questionsLeft(report) <= 0) return;
+    await load();
+    if (q.isEmpty || _busy.contains(key) || questionsLeft(report) <= 0) return false;
     // Legfeljebb ennyi beszélgetés marad memóriában (a legrégebben kezdettek mennek).
     if (!_threads.containsKey(key) && _threads.length >= maxThreads) {
       final oldest = _threads.keys.firstWhere((k) => !_busy.contains(k), orElse: () => '');
@@ -129,6 +140,7 @@ class AnalysisChat extends ChangeNotifier {
       _busy.remove(key);
       notifyListeners();
     }
+    return true;
   }
 
   Future<({String text, List<AskSource> sources})> _send(

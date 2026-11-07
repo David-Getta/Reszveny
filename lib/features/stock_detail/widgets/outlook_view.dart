@@ -652,6 +652,8 @@ class CatalystTimeline extends StatelessWidget {
               ],
             ),
           ),
+        // A sorok alján 6 van: együtt 10 a következő bekezdésig.
+        const SizedBox(height: 4),
       ],
     );
   }

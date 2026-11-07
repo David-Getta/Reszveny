@@ -659,9 +659,17 @@ class Store {
       _db.execute('DELETE FROM digest_log WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM digest_unsubscribe WHERE user_id = ?', [userId]);
       // A tesztelői kód és a meghívó helye névtelenítve foglalt marad (csak véletlen
-      // azonosító és időpont): a fiók törlésével nem lehet újrakezdeni a keretüket.
+      // azonosító és időpont): a fiók törlésével nem lehet újrakezdeni a keretüket. Az
+      // elhagyott névtelen fiók kitakarításánál viszont felszabadul: azt nem a felhasználó
+      // kérte, és a visszatérő eszköznek új névtelen fiókot ígérünk – foglalt hellyel a
+      // meghívója betelve utasítaná el.
       for (final table in ['tester_redemptions', 'invite_devices']) {
-        _db.execute("UPDATE $table SET user_id = 'deleted:' || lower(hex(randomblob(8))) WHERE user_id = ?", [userId]);
+        _db.execute(
+          abandoned
+              ? 'DELETE FROM $table WHERE user_id = ?'
+              : "UPDATE $table SET user_id = 'deleted:' || lower(hex(randomblob(8))) WHERE user_id = ?",
+          [userId],
+        );
       }
       _db.execute('DELETE FROM analysis_holds WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [userId]);

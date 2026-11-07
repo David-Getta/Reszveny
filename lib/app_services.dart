@@ -505,7 +505,7 @@ class AppServices {
     await CachingMarketDataProvider.clear();
     chat.clear();
     // A memóriában tartott „amíg távol voltál” kártya és a hírek is az előző fiók portfóliójáról.
-    away.dismiss();
+    away.forget();
     news.forget();
     // Az AI-utánanézések, a kérdezz-vissza beszélgetések és a távollét-pillanatkép is.
     try {

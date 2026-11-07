@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../core/util/links.dart';
@@ -7,8 +9,9 @@ import '../l10n/generated/app_localizations.dart';
 import '../theme/app_theme.dart';
 
 /// Az AI-válasz webes forrásai „Források” címmel: cím és webhely, koppintásra
-/// a böngészőben nyílnak meg.
-class SourceLinks extends StatelessWidget {
+/// a böngészőben nyílnak meg. Ha nem nyílik meg, a sor alatt rövid üzenet (a lapok alatti
+/// üzenetsávot a lap eltakarná).
+class SourceLinks extends StatefulWidget {
   const SourceLinks({super.key, required this.sources, this.keyPrefix = 'source'});
 
   final List<AskSource> sources;
@@ -16,8 +19,35 @@ class SourceLinks extends StatelessWidget {
   /// A sorok kulcsának előtagja (`<előtag>-0`, `<előtag>-1`…), a tesztekhez.
   final String keyPrefix;
 
+  /// Ennyi ideig látszik a „nem nyílt meg” jelzés.
+  static const failedShownFor = Duration(seconds: 3);
+
+  @override
+  State<SourceLinks> createState() => _SourceLinksState();
+}
+
+class _SourceLinksState extends State<SourceLinks> {
+  int? _failed;
+  Timer? _timer;
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  Future<void> _open(int i, String url) async {
+    if (await openWeb(url) || !mounted) return;
+    _timer?.cancel();
+    setState(() => _failed = i);
+    _timer = Timer(SourceLinks.failedShownFor, () {
+      if (mounted) setState(() => _failed = null);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
+    final sources = widget.sources;
     if (sources.isEmpty) return const SizedBox.shrink();
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
@@ -27,10 +57,10 @@ class SourceLinks extends StatelessWidget {
       children: [
         const SizedBox(height: 10),
         Text(l10n.aiSources, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
-        for (final (i, s) in sources.indexed)
+        for (final (i, s) in sources.indexed) ...[
           InkWell(
-            key: ValueKey('$keyPrefix-$i'),
-            onTap: () => openWebOrNotify(context, s.url),
+            key: ValueKey('${widget.keyPrefix}-$i'),
+            onTap: () => _open(i, s.url),
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 5),
               child: Row(
@@ -48,6 +78,13 @@ class SourceLinks extends StatelessWidget {
               ),
             ),
           ),
+          if (_failed == i)
+            Padding(
+              key: ValueKey('${widget.keyPrefix}-$i-failed'),
+              padding: const EdgeInsets.only(left: 22, bottom: 4),
+              child: Text(l10n.openLinkFailed, style: theme.textTheme.bodySmall?.copyWith(color: p.negative)),
+            ),
+        ],
       ],
     );
   }

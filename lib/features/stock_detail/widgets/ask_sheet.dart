@@ -79,10 +79,15 @@ class _AskSheetState extends State<_AskSheet> {
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
     setState(() => _error = null);
     _input.clear();
-    services.telemetry.track('ask_question');
     _scrollToEnd();
     try {
-      await services.chat.ask(widget.report, text, companyName: widget.companyName, language: language);
+      final sent = await services.chat.ask(widget.report, text, companyName: widget.companyName, language: language);
+      if (sent) {
+        services.telemetry.track('ask_question');
+      } else if (mounted && _input.text.isEmpty) {
+        // Nem ment el (pl. a mentett számok szerint nincs több kérdés): a szöveg marad.
+        _input.text = text;
+      }
     } catch (e) {
       if (mounted) {
         setState(() => _error = e);
@@ -146,7 +151,7 @@ class _AskSheetState extends State<_AskSheet> {
                             ActionChip(
                               key: ValueKey('ask-suggest-$i'),
                               label: Text(s),
-                              onPressed: busy ? null : () => _ask(s),
+                              onPressed: busy || left <= 0 ? null : () => _ask(s),
                             ),
                         ],
                       ),

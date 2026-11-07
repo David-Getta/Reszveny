@@ -91,10 +91,14 @@ class AwaySummary extends ChangeNotifier {
   /// Indításkor (és előtérbe kerüléskor, ha azóta legalább [minAway] telt el –
   /// telefonon az app ritkán indul újra): az előző pillanatkép alapján a
   /// jelentés, majd az új pillanatkép.
+  /// [forget] növeli: egy futó ellenőrzés az előző fiók adataiból ne írjon jelentést és pillanatképet.
+  int _epoch = 0;
+
   Future<void> check() async {
     final now = _clock();
     if (_lastCheck case final last? when now.difference(last) < minAway) return;
     _lastCheck = now;
+    final epoch = _epoch;
     final symbols = watched;
     if (symbols.isEmpty) return;
     SharedPreferences prefs;
@@ -114,6 +118,7 @@ class AwaySummary extends ChangeNotifier {
           if (q.price > 0 && !(market is CachingMarketDataProvider && market.quoteIsStale(s))) prices[s] = q.price;
         }, onError: (_) {}),
     ]);
+    if (epoch != _epoch) return;
     // Friss árak nélkül (hálózat nélkül) se jelentés, se új pillanatkép: a következő,
     // már online ellenőrzés a régi pillanatképhez mér.
     if (prices.isEmpty) {
@@ -133,12 +138,14 @@ class AwaySummary extends ChangeNotifier {
         for (final e in prev.earnings.entries)
           if (e.value.isBefore(today) && symbols.contains(e.key)) e.key,
       ];
+      final portfolioPercent = await _portfolioPercent(prev.prices, prices);
+      if (epoch != _epoch) return;
       _report = AwayReport(
         since: prev.at,
         moves: moves.take(maxMoves).toList(),
         alertsTriggered: alerts.alerts.where((a) => a.triggeredAt?.isAfter(prev.at) ?? false).length,
         reported: reported,
-        portfolioPercent: await _portfolioPercent(prev.prices, prices),
+        portfolioPercent: portfolioPercent,
       );
       notifyListeners();
     }
@@ -148,6 +155,7 @@ class AwaySummary extends ChangeNotifier {
     } catch (_) {
       // Események nélkül is jó a pillanatkép.
     }
+    if (epoch != _epoch) return;
     final earnings = {
       for (final e in events.events)
         if (e.kind == UpcomingEventKind.earnings && prices.containsKey(e.symbol)) e.symbol: e.date,
@@ -205,6 +213,15 @@ class AwaySummary extends ChangeNotifier {
 
   void dismiss() {
     _report = null;
+    notifyListeners();
+  }
+
+  /// A személyes adatok törlésekor (kijelentkezés, fióktörlés, fiókváltás): a kártya, a futó
+  /// ellenőrzés eredménye és az időzítés is elvetve – a következő fiók friss pillanatképet kap.
+  void forget() {
+    _epoch++;
+    _report = null;
+    _lastCheck = null;
     notifyListeners();
   }
 

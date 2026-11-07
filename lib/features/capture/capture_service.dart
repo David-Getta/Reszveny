@@ -63,7 +63,8 @@ class CaptureService {
   /// (APP14) a megjelenítéshez kell, az marad.
   static bool _personalJpegSegment(int marker) => marker == 0xE1 || marker == 0xED || marker == 0xFE;
 
-  static const _pngTextChunks = {'eXIf', 'tEXt', 'iTXt', 'zTXt'};
+  /// A PNG személyes darabjai: EXIF, szövegek (készítő, megjegyzés, dátum) és a módosítás ideje.
+  static const _pngTextChunks = {'eXIf', 'tEXt', 'iTXt', 'zTXt', 'tIME'};
 
   /// Hordoz-e a kép személyes metaadatot (hely, idő, készülék, szerző): JPEG-ben EXIF / XMP /
   /// IPTC / megjegyzés, PNG-ben eXIf / szöveges darab, WebP-ben EXIF / XMP darab.
@@ -85,7 +86,8 @@ class CaptureService {
           final len = (b[i] << 24) | (b[i + 1] << 16) | (b[i + 2] << 8) | b[i + 3];
           final kind = String.fromCharCodes(b.sublist(i + 4, i + 8));
           if (_pngTextChunks.contains(kind)) return true;
-          if (kind == 'IDAT' || kind == 'IEND') return false;
+          // A képadat (IDAT) után is állhat szöveg vagy EXIF (az ImageMagick oda írja): a végéig nézzük.
+          if (kind == 'IEND') return false;
           i += 12 + len;
         }
         return false;

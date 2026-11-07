@@ -49,10 +49,16 @@ class WatchNewsService extends ChangeNotifier {
 
   /// A személyes adatok törlésekor: az előző portfólió és kedvencek hírei se maradjanak.
   void forget() {
+    _generation++;
+    // Egy futó frissítés eredménye már nem kell; egy új kérés ne arra várjon.
+    _running = null;
     _cache.clear();
     _news = const [];
     notifyListeners();
   }
+
+  /// [forget] növeli: a törlés előtt indult frissítés eredménye elvetve.
+  int _generation = 0;
 
   bool get loading => _running != null;
 
@@ -71,13 +77,20 @@ class WatchNewsService extends ChangeNotifier {
       {for (final p in portfolio.positions) p.symbol, ...preferences.favorites}.take(maxSymbols).toList();
 
   /// Frissítés; ha már fut egy, azt várja meg (pl. az összefoglaló ne üres hírekből készüljön).
-  Future<void> refresh({bool force = false}) => _running ??= _refresh(force).whenComplete(() {
-    _running = null;
-    notifyListeners();
-  });
+  Future<void> refresh({bool force = false}) {
+    if (_running case final running?) return running;
+    late final Future<void> run;
+    run = _refresh(force).whenComplete(() {
+      // Csak a sajátját engedi el: egy [forget] utáni újabb futás kezelője marad.
+      if (identical(_running, run)) _running = null;
+      notifyListeners();
+    });
+    return _running = run;
+  }
 
   Future<void> _refresh(bool force) async {
     notifyListeners();
+    final gen = _generation;
     try {
       final symbols = watched;
       final queue = [...symbols];
@@ -87,7 +100,9 @@ class WatchNewsService extends ChangeNotifier {
           final c = _cache[s];
           if (!force && c != null && _clock().difference(c.$1) < cacheFor) continue;
           try {
-            _cache[s] = (_clock(), await marketData.news(s, limit: perSymbol).timeout(const Duration(seconds: 20)));
+            final items = await marketData.news(s, limit: perSymbol).timeout(const Duration(seconds: 20));
+            if (gen != _generation) return;
+            _cache[s] = (_clock(), items);
           } catch (e) {
             debugPrint('Hírek nem tölthetők ($s): $e');
           }
@@ -95,6 +110,7 @@ class WatchNewsService extends ChangeNotifier {
       }
 
       await Future.wait([for (var i = 0; i < parallel; i++) worker()]);
+      if (gen != _generation) return;
       final since = _clock().subtract(maxAge);
       // A link és a cím külön halmazban: egy link nélküli hír címe nem ütközhet önmagával.
       final urls = <String>{}, headlines = <String>{};

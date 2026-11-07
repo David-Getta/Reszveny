@@ -459,10 +459,9 @@ class _ReportSectionView extends StatelessWidget {
           ),
           const SizedBox(height: 14),
         ],
-        if (section.kind == ReportSectionKind.watch && outlook != null && outlook!.catalysts.isNotEmpty) ...[
+        // A záró térköz a widgeté: ha minden esemény elmúlt, semmi nem marad belőle.
+        if (section.kind == ReportSectionKind.watch && outlook != null && outlook!.catalysts.isNotEmpty)
           CatalystTimeline(catalysts: outlook!.catalysts, fmt: fmt),
-          const SizedBox(height: 10),
-        ],
         for (final para in section.paragraphs)
           Padding(
             padding: const EdgeInsets.only(bottom: 8),

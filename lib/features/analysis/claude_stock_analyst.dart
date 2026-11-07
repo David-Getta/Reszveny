@@ -144,21 +144,39 @@ class ClaudeStockAnalyst implements StockAnalyst {
 
   /// Tartalék, ha a modell a pozícióhoz mért számítást mégsem a `position_note` mezőbe írta,
   /// hanem a kilátások pontjai közé: az a pont kerül át [StockReport.positionNote]-ba, amelyben
-  /// az átlagár szerepel, vagy ha egyikben sem, a forgatókönyvek utáni utolsó pont. Így a
-  /// megosztott szövegbe és a hibajelentésbe akkor sem kerülhet.
+  /// az átlagár szerepel (két tizedessel, vagy a rövid alakjában; egész árnál csak a pénznemmel
+  /// együtt, hogy egy kulcsszint – „támasz 150” – ne számítson). Ha egyik pont sem ilyen, a
+  /// jelentés marad: a kilátások egy rendes pontja nem kerülhet át.
   static StockReport separatePosition(StockReport r, PositionContext? position) {
     if (position == null || r.positionNote != null) return r;
     final i = r.sections.indexWhere((s) => s.kind == ReportSectionKind.outlook);
     if (i < 0 || r.sections[i].bullets.isEmpty) return r;
     final bullets = r.sections[i].bullets;
-    final cost = RegExp('(?<![\\d.,])${RegExp.escape(_num(position.averageCost)).replaceAll(r'\.', '[.,]')}(?![\\d])');
-    var at = bullets.lastIndexWhere(cost.hasMatch);
-    if (at < 0 && bullets.length > (r.outlook?.scenarios.length ?? bullets.length)) at = bullets.length - 1;
+    final cost = _costPattern(position);
+    final at = bullets.lastIndexWhere(cost.hasMatch);
     if (at < 0) return r;
     return r.copyWith(
       sections: [...r.sections]..[i] = r.sections[i].withBullets([...bullets]..removeAt(at)),
       positionNote: bullets[at],
     );
+  }
+
+  /// Az átlagár a modell lehetséges írásmódjaiban: „150.00” / „150,00”, a rövid „150.5”, és az
+  /// egész „150” csak a pénznem mellett („150 USD”, „USD 150”, „$150”).
+  static RegExp _costPattern(PositionContext position) {
+    final v = position.averageCost;
+    String dec(String s) => RegExp.escape(s).replaceAll(r'\.', '[.,]');
+    final forms = <String>['(?<![\\d.,])${dec(v.toStringAsFixed(2))}(?![\\d])'];
+    // A rövid alak a felesleges nullák nélkül („150.5”, nem „150.50”).
+    final short = _num(v).replaceAll(RegExp(r'0+$'), '').replaceAll(RegExp(r'\.$'), '');
+    if (short.contains('.')) forms.add('(?<![\\d.,])${dec(short)}(?![\\d])');
+    if (v == v.roundToDouble()) {
+      final n = v.round().toString();
+      final cur = RegExp.escape(position.currency);
+      forms.add('(?:$cur\\s?|[\$€£¥])$n(?![\\d.,])');
+      forms.add('(?<![\\d.,])$n(?:[.,]00)?\\s?$cur');
+    }
+    return RegExp(forms.join('|'), caseSensitive: false);
   }
 
   static String _text(Map<String, dynamic> response) => ((response['content'] as List?) ?? const [])

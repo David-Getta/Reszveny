@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.321)
+# Változásjegyzék (0.2.130 → 0.2.322)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,30 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## A legutóbbi hat verzió hibavadász átnézése
+
+- **0.2.322**: a 0.2.316–0.2.321 változásait négy szemszögből nézte át egy-egy ügynök, és minden találatot két
+  szkeptikus ellenőrzött (az egyik tesztben reprodukálva). Mind a 9 különböző találat valós volt; javítva:
+- Újraindítás után az elemzés kérdezője a teljes keretet mutatta, pedig a hat kérdés már elfogyott; a beírt
+  kérdés csendben elveszett. Most a mentett szám már a lap megnyitásakor betöltődik, a javaslat-gombok is
+  tiltva, és ha egy kérdés mégsem megy el, a szövege a mezőben marad.
+- Fiókváltás vagy -törlés közben egy futó „Amíg távol voltál” ellenőrzés az előző fiók adataiból írt
+  jelentést és pillanatképet; a figyelt hírek frissítése is visszatöltötte az előző fiók híreit. Mindkettő
+  elveti a törlés előtt indult munkát; a hírek új frissítése nem a régire vár.
+- PNG-fotónál a képadat után álló EXIF/szöveges darabot (az ImageMagick oda írja a GPS-t és a dátumokat) nem
+  vette észre a metaadat-vizsgálat, így a fotó azokkal ment fel; a módosítás ideje (tIME) is kikerül.
+- A pozíció-megjegyzés tartaléka (ha a modell nem a külön mezőbe írta) a kilátások utolsó pontját – pl. a
+  kulcsszinteket – is kiemelhette; most csak az átlagárat tartalmazó pont kerülhet át (két tizedessel vagy a
+  rövid alakban; egész árnál csak a pénznemmel együtt, hogy egy „támasz 150” ne számítson).
+- Szerver: az elhagyott névtelen fiók kitakarítása foglalva hagyta a meghívó- és tesztelői helyét, így a
+  visszatérő eszköz egy betelt meghívóval nem kapott új fiókot; most felszabadul (a felhasználó kérte
+  törlésnél marad a foglalás).
+- A százalékjel elé került nem törő szóköz miatt a szűk cellák („12,5 %”) nem kicsinyítettek, hanem a jel
+  új sorba tört; a szövegillesztés a motor saját törési szabályai szerint mér.
+- Ha minden figyelt esemény elmúlt, a „Mire figyelj” szakasz tetején üres térköz maradt.
+- A kutatólapokon (hírmagyarázat, gyorsjelentés, kérdés) a „nem nyílt meg a link” üzenet a lap alatt, takarva
+  jelent meg; most a forrás sora alatt látszik.
 
 ## Asztali ablakméretezés, számjegyek és százalékjel a nyelv szerint
 
