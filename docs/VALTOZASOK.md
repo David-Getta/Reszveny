@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.319)
+# Változásjegyzék (0.2.130 → 0.2.320)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,22 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Dokumentáció a kódhoz igazítva
+
+- **0.2.320**: a leírások ott, ahol a tulajdonos beállítást csinálna belőlük, a kódhoz igazítva: a Stripe
+  webhookján mind a hét esemény kell (a visszatérítés és a vita is elveszi a csomagot); a `VERIFY_MODE=store`
+  bolti ellenőrzés kész (az `APPLE_*` / `GOOGLE_*` kulcsokkal); a `/legal` oldalak addig 404-et adnak, amíg a
+  négy szövegfájl nincs a `server/legal` mappában; az Android aláíró titkok neve, aliasa és jelszó-szabálya;
+  a kiadott buildek automatikus frissítése addig inaktív, amíg a `release.yml` nem adja át a define-okat;
+  a `MAIL_FROM` elhagyható, de a feladó domainjét a Resendnél igazolni kell.
+- Javított számok és leírások: szinkron-csomag 2 MB (nem 512 KB); fizetés iOS/Android bolton át, máshol
+  Stripe Checkout (a szimulált bolt csak backend nélküli fejlesztői buildben); a portfólió és a jegyzet
+  belépve a szerverre is szinkronizálva (nem „csak a készüléken”); 34 mutató a fogalomtárban; a segéd-hívás
+  napi kerete próbaidőben 20; a CI és a Release tényleges lépései; a szerver README teljes változó- és
+  végpontlistára mutat.
+- Új teszt: a csomagok keretei (elemzések, webkeresések, próbaidő, csomagok) a szerveren és az appban
+  egyeznek (eddig csak az USD-árakat egyeztette teszt).
 
 ## Belső rendrakás: kevesebb ismétlés, kisebb fotók
 

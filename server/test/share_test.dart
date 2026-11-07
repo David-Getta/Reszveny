@@ -247,4 +247,30 @@ void main() {
     };
     expect(found, PlanSpec.usd);
   });
+
+  test('the plan quotas (analyses, web searches, trial, packs) match the app', () {
+    // A kliens `PlanSpec`-je és a szerveré kézzel van párban tartva: ez a teszt őrzi.
+    final client = File('../lib/features/billing/plan.dart').readAsStringSync();
+    final plans = {
+      for (final m in RegExp(
+        r"productId: '(whatstock\.[a-z0-9.]+)',\s*analysesPerPeriod: (\d+),\s*webSearches: (\d+),"
+        r"(?:\s*yearlyProductId: '([a-z0-9.]+)',)?",
+      ).allMatches(client))
+        m[1]!: (analyses: int.parse(m[2]!), searches: int.parse(m[3]!), yearly: m[4]),
+    };
+    expect(plans, {
+      for (final p in PlanSpec.paid)
+        p.productId: (analyses: p.analysesPerPeriod, searches: p.webSearches, yearly: p.yearlyProductId),
+    });
+    final trial = RegExp(
+      r"productId: '',\s*analysesPerPeriod: (\d+),\s*webSearches: \d+,\s*trialLength: Duration\(days: (\d+)\)",
+    ).firstMatch(client)!;
+    expect(int.parse(trial[1]!), PlanSpec.trialAnalyses);
+    expect(int.parse(trial[2]!), PlanSpec.trialDays);
+    final packs = {
+      for (final m in RegExp(r"AddOnPack\(productId: '(whatstock\.pack\.\d+)', analyses: (\d+)\)").allMatches(client))
+        m[1]!: int.parse(m[2]!),
+    };
+    expect(packs, PlanSpec.packs);
+  });
 }

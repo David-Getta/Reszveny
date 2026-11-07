@@ -56,8 +56,9 @@ A HTTPS (lakat) mindhárom esetben megoldható; a Railway automatikusan adja.
 ## Biztonság a zárt teszt alatt
 
 - A szerver most **fejlesztői módban** ellenőrzi a vásárlásokat (`VERIFY_MODE=dev`): minden
-  vásárlást elfogad. Ezért az appot csak ismerősöknek add oda, ne tedd ki nyilvánosan, amíg a
-  valódi bolti ellenőrzés (5b) el nem készül.
+  vásárlást elfogad. Ezért az appot csak ismerősöknek add oda, ne tedd ki nyilvánosan, amíg át nem
+  állítod `store`-ra (a valódi bolti ellenőrzés kész; az `APPLE_*` / `GOOGLE_*` kulcsok kellenek hozzá,
+  lásd `docs/ELOFIZETES.md`). Más értéket a szerver nem fogad el: nem indul el.
 - Amíg az Anthropic-fiókon csak a promóciós kredit van, és az automatikus feltöltés ki van
   kapcsolva, a legrosszabb eset is ennyi: elfogy a kredit, és a hívások leállnak. Kártyaterhelés
   nincs.
@@ -139,7 +140,8 @@ tároljuk.
 ## Szinkron
 
 E-mailes belépés után az app a portfóliót, a kedvenceket, a riasztásokat és a jegyzeteket a
-szerveren tárolt fiókcsomaggal szinkronizálja (`GET`/`PUT /v1/sync`, legfeljebb 512 KB). Csak
+szerveren tárolt fiókcsomaggal szinkronizálja (`GET`/`PUT /v1/sync`, legfeljebb 2 MB; fölötte 413
+`too_large`). Csak
 e-mailes fiók írhat; a fiók törlésekor ez is törlődik. Az adatkezelési tájékoztatóba ezt is bele
 kell írni (portfólió és jegyzetek a szerveren, ha a felhasználó belép).
 
@@ -159,7 +161,8 @@ A szerver `ALERT_CHECK_MINUTES` percenként (alapból 10; 0 = ki) végignézi az
 szinkronizált, aktív árfolyam-riasztásait (Finnhub ár). Ha egy teljesül, megjelöli (a készülékek a
 következő szinkronnál átveszik), és e-mailt küld a felhasználó nyelvén (magyar vagy angol) – egy
 riasztásról csak egyszer. Az appban a Riasztások oldalon kapcsolható ki. Az e-mailhez a
-`RESEND_API_KEY` és a `MAIL_FROM` kell (nélkülük csak a naplóba kerül). A követő stop riasztásnál
+`RESEND_API_KEY` kell (nélküle csak a naplóba kerül); a `MAIL_FROM` elhagyható (alapból
+`WhatStock <login@whatstock.app>`), de a feladó domainjét a Resendnél igazolni kell, különben a küldés elbukik. A követő stop riasztásnál
 („Esés a csúcsról”) a szerver minden körben feljegyzi az új csúcsot a szinkron-adatban (e-mail nélkül),
 és akkor szól, ha az ár a csúcs alá esik a megadott százalékkal.
 
@@ -198,9 +201,19 @@ az egy hívással, Finnhub-tartaléknál nincs.
 
 ## Később (éles indulás előtt)
 
-- `VERIFY_MODE=store` a bolti fiókok és az 5b után; Stripe-kulcsok (`STRIPE_*`) az asztali és webes
-  fizetéshez; `RESEND_API_KEY` és `MAIL_FROM` az e-mailes belépéshez (nélkülük a belépőkód csak a
-  naplóba kerül).
+- `VERIFY_MODE=store` pontosan így (a bolti ellenőrzés kész, az `APPLE_*` / `GOOGLE_*` kulcsokkal);
+  Stripe-kulcsok (`STRIPE_*`) az asztali és webes fizetéshez, a webhookon mind a hét esemény
+  (`docs/ELOFIZETES.md`); `RESEND_API_KEY` az e-mailes belépéshez (nélküle a belépőkód csak a naplóba
+  kerül), `MAIL_FROM` elhagyható, de a feladó domainje legyen igazolva a Resendnél.
+- A jogi szövegek: a `server/legal` mappába négy fájl kell (`terms.hu.md`, `terms.en.md`,
+  `privacy.hu.md`, `privacy.en.md`, lásd az ottani `README.md`-t), utána újraépítés – nélkülük a
+  `/legal/terms` és `/legal/privacy` oldal 404-et ad, pedig az app csomagválasztója és beállításai ide
+  mutatnak.
+- Android aláírás a kiadáshoz: a GitHub-titkok `ANDROID_KEYSTORE_BASE64` (a `.jks` base64-ben) és
+  `ANDROID_KEYSTORE_PASSWORD`; a kulcs aliasa `whatstock` legyen, és a kulcs jelszava egyezzen a
+  tárolóéval (a build ugyanazt használja). Titkok nélkül a Release debug kulccsal ír alá (figyelmeztetéssel).
+- Az automatikus frissítés a kiadott buildekben addig nem él, amíg a `release.yml` nem adja át az
+  `UPDATE_APPCAST_URL` / `UPDATE_MANIFEST_URL` define-okat, és nem készül appcast (Sparkle-kulcs után).
 - Saját domain (pl. `api.whatstock.app`) a Railway *Custom Domain* beállításával.
 - Rendszeres mentés a `/data` kötetről.
 

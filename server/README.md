@@ -22,7 +22,7 @@ a `/v1/me`-ből frissül.
 | `GET /v1/me` | jogosultság (csomag, időszak, felhasznált, extra) |
 | `POST /v1/purchases/verify` | `{platform, product_id, verification_data}` → jogosultság |
 | `POST /v1/analyze` | Anthropic Messages továbbítás; 402 `quota_exceeded` / `trial_expired` / `no_plan`. A próba-keret elemzései rövidek, és az olcsóbb modellen futnak (`ANTHROPIC_TRIAL_MODEL`) |
-| `POST /v1/anthropic/v1/messages` | segéd-hívás (fotófelismerés, formátumjavítás): nem von le elemzést, de rögzített modell, legfeljebb 16 000 token, eszközök nélkül, legfeljebb 2 üzenet, 120 000 karakter és 1 kép, felhasználónként óránként 20 és naponta 60 hívás (429) |
+| `POST /v1/anthropic/v1/messages` | segéd-hívás (fotófelismerés, formátumjavítás): nem von le elemzést, de rögzített modell, legfeljebb 16 000 token, eszközök nélkül, legfeljebb 2 üzenet, 120 000 karakter és 1 kép, felhasználónként óránként 20 és naponta 60 hívás, próbaidőben naponta 20 (429) |
 | `GET /v1/market/<path>` | Finnhub továbbítás a szerver kulcsával |
 | `POST /v1/auth/email/start` | `{email}` → 6 jegyű belépőkód e-mailben (10 perc, 5 próbálkozás, óránként 5 kód) |
 | `POST /v1/auth/email/verify` | `{email, code}` → a fiók tokenje; az eszközön gyűlt keret átkerül |
@@ -35,11 +35,20 @@ a `/v1/me`-ből frissül.
 
 Környezeti változók: `ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL` (alapból `claude-opus-5-5`; minden hívás ezen fut, a kliens nem választhat mást), `ANTHROPIC_TRIAL_MODEL` (alapból `claude-sonnet-5-5`; a próbaidő rövid elemzései), `FINNHUB_API_KEY`, `TWELVEDATA_API_KEY` (nem kötelező: az árfolyamtörténet – grafikon – innen jön, mert a Finnhub ingyenes csomagja nem adja; 6 órás gyorsítótárral), `PORT` (8080), `DATABASE_PATH`
 (`whatstock.db`, SQLite), `VERIFY_MODE` (`dev`: minden bizonylatot elfogad; `store`: App Store
-Server API / Play Developer API – a bolti fiókok után készül el), `PUBLIC_URL` (a szerver nyilvános
+Server API / Play Developer API – kész, az `APPLE_*` / `GOOGLE_*` változókkal kapcsolható be, lásd
+`docs/ELOFIZETES.md`; más érték: a szerver nem indul), `PUBLIC_URL` (a szerver nyilvános
 címe, ide tér vissza a Stripe), `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_PRICES`
 (`whatstock.sub.normal=price_…,whatstock.sub.pro=price_…,whatstock.sub.pro.year=price_…,…,whatstock.pack.5=price_…`; az éves termékekhez éves ismétlődésű Stripe-ár),
 `RESEND_API_KEY` és `MAIL_FROM` (belépőkód e-mailben; nélkülük a kód a naplóba kerül), `LEGAL_DIR`
-(a jogi szövegek mappája, alapból `legal`; a Docker-képben `/legal`).
+(a jogi szövegek mappája, alapból `legal`; a Docker-képben `/legal`). Ez nem a teljes lista: a
+meghívók, tesztelői kódok, ajánlás, riasztás- és összefoglaló-időzítés, admin, bolti értesítések és a
+bolti ellenőrzés változói a `bin/server.dart` fejlécében és a `docs/SZERVER.md`-ben vannak.
+
+A táblázat a fő végpontokat mutatja; ezeken túl: `/v1/ask` (kérdés az elemzésről), `/v1/sync`,
+`/v1/share` és `/s/<id>` (megosztott válasz), `/v1/telemetry`, `/v1/report`, `/v1/referral*`,
+`/v1/stores/{apple,google}/notifications`, `/account/delete`, `/admin*`, `/u/<token>` (leiratkozás),
+és a weboldal (`/`, `/pricing`, `/stocks`, `/glossary`, `/sample`, `/legal/*`) – a részletek az
+`api.dart` útválasztójában.
 
 Élesítés lépésről lépésre (Railway, Hetzner, Fly.io): [`docs/SZERVER.md`](../docs/SZERVER.md).
 

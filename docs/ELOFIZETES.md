@@ -63,8 +63,10 @@ kedvencek és a 120 nyelv minden csomagban korlátlan.
 - `features/billing/entitlement_service.dart` – jogosultság: csomag, időszak, felhasznált és
   extra elemzések; próbaidő indítása; időszak-görgetés; `check()` → ok / nincs csomag /
   lejárt próba / kimerült keret; `consume()` elemzés után.
-- `features/billing/billing_service.dart` + `store_billing_service.dart` (App Store, Play,
-  macOS: `in_app_purchase`) + `demo_billing_service.dart` (szimulált bolt).
+- `features/billing/billing_service.dart` + `store_billing_service.dart` (App Store, Play:
+  `in_app_purchase`; csak iOS-en és Androidon) + `web_checkout_billing_service.dart` (Stripe Checkout
+  macOS-en, Windowson és weben) + `demo_billing_service.dart` (szimulált bolt, csak backend nélkül,
+  nem kiadott buildben) + `fallback_billing_service.dart`, `trial_upsell.dart`.
 - `features/billing/billing_controller.dart` – vásárlási esemény → jogosultság.
 - `features/billing/paywall_page.dart` – csomagválasztó; `usage_chip.dart` – használat-kijelző
   az oldalsávban, a kezdőképernyőn és a beállításokban.
@@ -90,9 +92,10 @@ boltjában még nincs felvett termék, vagy nincs backend, a demó bolt fut.
 
 Szerver-beállítás: `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_PRICES`
 (`whatstock.sub.pro=price_…,…`), `PUBLIC_URL`; a belépőkódhoz `RESEND_API_KEY` és `MAIL_FROM`
-(nélkülük a kód a szerver naplójába kerül). A Stripe-ban a webhook eseményei:
-`checkout.session.completed`, `invoice.paid`, `customer.subscription.updated`,
-`customer.subscription.deleted`.
+(nélkülük a kód a szerver naplójába kerül). A Stripe-ban a webhook eseményei (mind a hét kell):
+`checkout.session.completed`, `checkout.session.async_payment_succeeded`, `invoice.paid`,
+`customer.subscription.updated`, `customer.subscription.deleted`, `charge.refunded` és
+`charge.dispute.created` (az utolsó kettő veszi el a csomagot visszatérítésnél és vitánál).
 
 ## Elemzés hossza és webkeresések
 
@@ -122,7 +125,7 @@ történik. A `server/` mappában egy kis Dart (shelf + SQLite) szerver van, Doc
 | `GET /v1/me` | A jogosultság a kliens `EntitlementState` formátumában |
 | `POST /v1/purchases/verify` | Bolti bizonylat ellenőrzése, csomag/extra jóváírása (tranzakciónként egyszer) |
 | `POST /v1/analyze` | Anthropic-továbbítás kvóta-ellenőrzéssel; 402 ha nincs keret; befejezett válasz után levonás és napló |
-| `POST /v1/anthropic/v1/messages` | Segéd-hívás (fotófelismerés, formátumjavítás): nem von le elemzést; rögzített modell, legfeljebb 16 000 token, eszközök nélkül, 120 000 karakter és 1 kép, felhasználónként óránként 20 / naponta 60 hívás |
+| `POST /v1/anthropic/v1/messages` | Segéd-hívás (fotófelismerés, formátumjavítás): nem von le elemzést; rögzített modell, legfeljebb 16 000 token, eszközök nélkül, 120 000 karakter és 1 kép, felhasználónként óránként 20 / naponta 60 hívás (próbaidőben naponta 20) |
 | `GET /v1/market/*` | Finnhub-továbbítás a szerver kulcsával |
 | `DELETE /v1/account` | Fiók törlése: a böngészős (Stripe) előfizetés lemondása, majd a szerveren tárolt adatok törlése; a vásárlási sorok névtelenítve maradnak |
 | `GET /legal/terms`, `/legal/privacy` | Felhasználási feltételek és adatkezelési tájékoztató (magyar / angol) |

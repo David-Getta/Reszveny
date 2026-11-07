@@ -25,7 +25,7 @@ koncepció a [`docs/KONCEPCIO.md`](docs/KONCEPCIO.md) fájlban.
 - **Beállítások**: a gyorsbillentyű átállítható (kattints, nyomd le az újat), bejelentkezéskori indítás kapcsoló.
 - **Kedvencek**: csillag a részvény fejlécében; a kedvencek az oldalsávban és a kezdőképernyőn élő árral jelennek meg.
 - **Árfolyam-riasztás**: a részvény oldalán a csengővel (fölé / alá / napi ±%); 5 percenként ellenőrzi, asztali gépen rendszerértesítést küld, és az app a menüsorban / tálcán fut tovább a bezárt ablak után is (kapcsolható). Telefonon egyelőre akkor jelez, amikor az app nyitva van.
-- **Portfólió**: a részvény oldalán „Hozzáadás a portfólióhoz” (darab, ár, dátum); a portfólió oldalon összérték a saját pénznemedben, napi változás, nyereség/veszteség, megoszlás-sáv és a pozíciók; a részvény oldalán „A pozícióm” kártya; részvényfelaprózás (10:1 vagy 1:10) rögzíthető, a korábbi tételek igazodnak. Csak a készüléken tárolódik. Ha a részvény a portfóliódban van, az AI-elemzés a forgatókönyveket az átlagáradhoz is viszonyítja (tanácsadás nélkül).
+- **Portfólió**: a részvény oldalán „Hozzáadás a portfólióhoz” (darab, ár, dátum); a portfólió oldalon összérték a saját pénznemedben, napi változás, nyereség/veszteség, megoszlás-sáv és a pozíciók; a részvény oldalán „A pozícióm” kártya; részvényfelaprózás (10:1 vagy 1:10) rögzíthető, a korábbi tételek igazodnak. A készüléken tárolódik; e-mailes belépés után a fiókkal a szerverre is szinkronizálva (a kedvencekkel, riasztásokkal és jegyzetekkel együtt). Ha a részvény a portfóliódban van, az AI-elemzés a forgatókönyveket az átlagáradhoz is viszonyítja (tanácsadás nélkül).
 - **Automatikus frissítés**: Sparkle (macOS/Windows), Play rugalmas frissítés (Android), áruház (iOS), JSON-kiáltvány tartalékként; beállításokban verzió, kapcsoló, kézi ellenőrzés.
 - **Deviza-átváltás**: az ár a saját pénznemedben is megjelenik (ECB napi árfolyam, a Frankfurter nyílt API-n át, kulcs nélkül); a pénznem a beállításokban választható, alapból a rendszer nyelvéből/országából jön.
 - **Grafikon és kimutatások**: 1H–5É árfolyamgrafikon és az utolsó évek jelentett kimutatásai (bevétel, nettó eredmény, eszközök, kötelezettségek, saját tőke, működési cash flow).
@@ -66,7 +66,7 @@ Vezérlés `--dart-define`-nal: `ANTHROPIC_REPORT_EFFORT` (`low`…`max`, alap `
 - **Kérdezz vissza**: a hírmagyarázat, a gyorsjelentés-összefoglaló, az ETF-magyarázat, az összehasonlító táblázat és a napi összefoglaló alatt is kérdezhetsz; a válasz a megkapott szövegből (szükség esetén egy webkereséssel) jön, a kérdések a lap újranyitásáig megmaradnak, és minden kutatási lap szövegként megosztható vagy a részvény jegyzetébe menthető.
 - **Friss gyorsjelentések**: a figyelt cégek nemrég zárult negyedévének eredménye (EPS a várthoz képest) a kezdőképernyőn, az események oldalán, a kedvenceknél és a portfólió-sorokon; a heti e-mail-összefoglalóban is.
 - **Készpénz a brókernél**: pénznemenként megadható egyenleg; az összértékbe és a megoszlásba számít, a hozamba nem; szinkronizálva.
-- **Fogalomtár**: az app 28 mutatójának közérthető magyarázata egy kereshető oldalon a Beállításokban.
+- **Fogalomtár**: az app 34 mutatójának közérthető magyarázata egy kereshető oldalon a Beállításokban.
 - **Jelzések a Kedvencek oldalon**: a lista részvényeinek technikai jelzései a záróárakból – RSI túladott/túlvett, a 200 napos átlag átlépése ma – chipekként, koppintásra a részvény; asztali gépen naponta egyszer rendszerértesítés is (kikapcsolható).
 - **Technikai kép**: 50 és 200 napos mozgóátlag (és hol tart hozzájuk az ár), 14 napos RSI az állapotával, 30 napos volatilitás a napi záróárakból, ⓘ magyarázatokkal kezdőknek.
 - **„Miért mozog ma?”**: ha a részvény napi mozgása legalább 2,5%, egy gombbal AI-magyarázat a mai hírekből (forrásokkal, kérdezz-vissza mezővel); részvényenként és naponként egyszer, a szerver a többi felhasználóval megosztja.
@@ -91,8 +91,9 @@ felület kulcs nélkül is végigjárható.
 ## Előfizetés
 
 3 napos próbaidő (3 rövid elemzés, gyorsabb modellel), majd Normál (8 elemzés/hó), Pro (18), Max (40), Ultra (70) – a Pro és a Max évesen is, 2 hónap ingyen –, és
-külön vásárolható elemzés-csomagok (+5, +20, +50). Fizetés az App Store-on, a Play-en és a Mac
-App Store-on keresztül (`in_app_purchase`); asztali gépen és weben szimulált bolt, amely az USD-alapárat a régió pénznemére váltja (ECB-árfolyam, helyi kerekítés). A havi keret
+külön vásárolható elemzés-csomagok (+5, +20, +50). Fizetés iOS-en és Androidon az App Store-on és a
+Play-en keresztül (`in_app_purchase`); macOS-en, Windowson és weben Stripe Checkout a szerveren át
+(ügyfélportállal). Backend nélküli fejlesztői buildben szimulált bolt, amely az USD-alapárat a régió pénznemére váltja (ECB-árfolyam, helyi kerekítés). A havi keret
 az AI-elemzésekre vonatkozik. Éles kiadásban a keretet és a bolti bizonylatokat a saját backend
 ([`server/`](server/README.md)) kezeli, a kliens `BACKEND_URL`-lel áll rá; részletek:
 [`docs/ELOFIZETES.md`](docs/ELOFIZETES.md).
@@ -125,7 +126,8 @@ Sparkle-hez egyszer kulcsot kell generálni (`dart run auto_updater:generate_key
 Windowson), a publikus kulcsot a `macos/Runner/Info.plist` `SUPublicEDKey` bejegyzésébe kell
 tenni, és minden kiadást alá kell írni (`dart run auto_updater:sign_update <fájl>`), az
 aláírás az appcast `enclosure` elemébe kerül. Az appcast és a kiáltvány CI-ból generálható
-minden kiadásnál.
+minden kiadásnál – ez még nincs bekötve: a `release.yml` most csak a `BACKEND_URL`-t adja át, így a
+kiadott buildekben az automatikus frissítés inaktív, amíg a két define és az appcast-lépés be nem kerül.
 
 ## Előnézet a böngészőben
 
@@ -195,7 +197,8 @@ lib/
 test/          egységtesztek (parse-olás, ticker-kereső, nyelvfeloldás, ARB-teljesség), widget-tesztek
 server/        Dart (shelf + SQLite) backend: proxy, kvóta, vásárlás-ellenőrzés – saját tesztekkel
 test/screenshots képernyőképek valódi betűkkel: flutter test --tags screenshot --dart-define=SHOTS=<mappa>
-.github/       CI: analyze + test, majd Android / Windows / iOS+macOS build
+.github/       CI: analyze + test + Android debug APK minden pushra; Windows / iOS / macOS build csak natív
+               változásra (ci-native.yml); Release: pubspec-verzióváltásra Android, Windows, macOS, web
 ```
 
 ## Új nyelv vagy új szöveg
