@@ -124,6 +124,43 @@ String listingSymbol(String symbol, String? exchange) {
   return suffix == null ? s : '$s$suffix';
 }
 
+/// A tőzsde helyi idejének eltérése az UTC-től a ticker utótagja szerint ([utc] napján, a
+/// nyári időszámítással), azoknál a tőzsdéknél, amelyeknek a kereskedési napja nem esik
+/// egybe a New York-i dátummal (Ázsia, Óceánia: náluk a helyi délelőtt New Yorkban még az
+/// előző nap). Máshol (amerikai, európai, afrikai, közel-keleti tőzsde) `null`: ott a
+/// New York-i dátum a kereskedési nap.
+Duration? exchangeUtcOffset(String symbol, DateTime utc) {
+  final dot = symbol.lastIndexOf('.');
+  if (dot <= 0) return null;
+  final u = utc.toUtc();
+  DateTime firstSunday(int month) {
+    var d = DateTime.utc(u.year, month);
+    while (d.weekday != DateTime.sunday) {
+      d = d.add(const Duration(days: 1));
+    }
+    return d;
+  }
+
+  DateTime lastSunday(int month) {
+    var d = DateTime.utc(u.year, month + 1).subtract(const Duration(days: 1));
+    while (d.weekday != DateTime.sunday) {
+      d = d.subtract(const Duration(days: 1));
+    }
+    return d;
+  }
+
+  return switch (symbol.substring(dot).toUpperCase()) {
+    '.T' || '.KS' || '.KQ' => const Duration(hours: 9),
+    '.HK' || '.SS' || '.SZ' || '.TW' || '.TWO' || '.SI' => const Duration(hours: 8),
+    '.NS' || '.BO' => const Duration(hours: 5, minutes: 30),
+    // Sydney: nyári idő október első vasárnapjától április első vasárnapjáig.
+    '.AX' => Duration(hours: u.isBefore(firstSunday(4)) || !u.isBefore(firstSunday(10)) ? 11 : 10),
+    // Auckland: szeptember utolsó vasárnapjától április első vasárnapjáig.
+    '.NZ' => Duration(hours: u.isBefore(firstSunday(4)) || !u.isBefore(lastSunday(9)) ? 13 : 12),
+    _ => null,
+  };
+}
+
 /// A ticker utótagjából a kereskedés valószínű pénzneme (`OTP.BD` → HUF, `SIE.DE` →
 /// EUR); utótag nélkül (amerikai tőzsde) vagy ismeretlen utótagnál `null`.
 String? currencyForListing(String symbol) {

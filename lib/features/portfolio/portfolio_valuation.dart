@@ -6,6 +6,7 @@ import '../fx/fx_service.dart';
 import '../market_data/market_data_provider.dart';
 import 'annual_return.dart';
 import 'portfolio_store.dart';
+import '../recognition/listing_symbol.dart' show exchangeUtcOffset;
 
 /// Egy pozíció értékelése az aktuális árral.
 class PositionValue {
@@ -64,19 +65,51 @@ class PositionValue {
     return gain;
   }
 
-  /// A mai eredmény százalékban, a tegnapi értékhez (érték − mai eredmény) mérve – mint a
-  /// portfólió összesítőjében. Ma vett tételnél ez nem a részvény napi változása.
-  double? get dayGainPercent {
-    final g = dayGain, v = value;
-    if (g == null || v == null || v - g == 0) return null;
-    return g / (v - g) * 100;
+  /// A mai kereskedési napon eladott darabok bevétele a részvény pénznemében: ezek a
+  /// darabok a tegnapi értékben még benne voltak, a mai értékben már nem – a mai
+  /// eredmény alapjához vissza kell adni őket.
+  double get sessionSales {
+    if (dayChange == null || price == null) return 0;
+    final session = _sessionDay;
+    var sales = 0.0;
+    for (final l in position.lots) {
+      final d = l.date;
+      if (!l.sell || d == null || DateTime(d.year, d.month, d.day).isBefore(session)) continue;
+      sales += l.price * l.quantity;
+    }
+    return sales;
   }
 
-  /// A napi változás kereskedési napja (New York-i dátum): az ár idejéből, ha ismert,
-  /// különben a legutóbbi kereskedési nap – nem a helyi mai nap (hétvégén, nyitás
-  /// előtt és New Yorktól keletre az még az előző kereskedési napé).
+  /// A mai eredmény százalékban, a tegnapi értékhez (érték − mai eredmény + a ma eladott
+  /// darabok bevétele) mérve – mint a portfólió összesítőjében. Ma vett tételnél ez nem a
+  /// részvény napi változása (az alapban a vétel összege van).
+  double? get dayGainPercent {
+    final g = dayGain, v = value;
+    if (g == null || v == null) return null;
+    final base = v - g + sessionSales;
+    return base == 0 ? null : g / base * 100;
+  }
+
+  /// A napi változás kereskedési napja: az ár idejéből, ha ismert, különben a legutóbbi
+  /// kereskedési nap – nem a helyi mai nap (hétvégén, nyitás előtt és New Yorktól keletre
+  /// az még az előző kereskedési napé). Amerikai és európai papírnál a New York-i dátum;
+  /// ázsiai és óceániai tőzsdénél a tőzsde helyi dátuma (Tokióban délelőtt New Yorkban még
+  /// az előző nap van – különben a tegnap vett tétel „mainak” számítana).
   DateTime get _sessionDay {
     final t = quoteTime;
+    final at = (t ?? DateTime.now()).toUtc();
+    if (exchangeUtcOffset(position.symbol, at) case final offset?) {
+      final local = at.add(offset);
+      var day = DateTime(local.year, local.month, local.day);
+      if (t == null) {
+        // Ár nélkül: helyi nyitás (9 óra) előtt és hétvégén a legutóbbi kereskedési nap.
+        if (local.hour < 9) day = DateTime(day.year, day.month, day.day - 1);
+        while (day.weekday == DateTime.saturday || day.weekday == DateTime.sunday) {
+          day = DateTime(day.year, day.month, day.day - 1);
+        }
+      }
+      return day;
+    }
     if (t == null) return UsMarketHours.sessionDate(DateTime.now().toUtc());
     final ny = UsMarketHours.newYorkTime(t);
     return DateTime(ny.year, ny.month, ny.day);
@@ -103,7 +136,12 @@ class PortfolioSnapshot {
     this.cashByCurrency = const {},
     this.beta,
     this.quoteTime,
+    this.daySales = 0,
   });
+
+  /// A mai kereskedési napon eladott darabok bevétele az összesítés pénznemében: a
+  /// [dayGainPercent] alapjához tartozik (a tegnapi értékben még benne voltak).
+  final double daySales;
 
   /// A legfrissebb ár ideje (UTC): ennek a kereskedési napnak a mozgása a [dayGain]
   /// (hétvégén, ünnepnapon és nyitás előtt még az előző napé).
@@ -171,8 +209,11 @@ class PortfolioSnapshot {
   double get gain => value - cost;
   double? get gainPercent => cost == 0 ? null : gain / cost * 100;
 
-  /// Napi változás százalékban a tegnapi záró értékhez képest.
-  double? get dayGainPercent => value - dayGain == 0 ? null : dayGain / (value - dayGain) * 100;
+  /// Napi változás százalékban a tegnapi záró értékhez képest (a ma eladott darabokkal együtt).
+  double? get dayGainPercent {
+    final base = value - dayGain + daySales;
+    return base == 0 ? null : dayGain / base * 100;
+  }
 
   /// Egyetlen pozíciónak sincs ára vagy árfolyama, és készpénz sincs: az összeg nem ismert (nem 0).
   bool get unknown => rows.isNotEmpty && rows.every((r) => !r.inTotal) && cash <= 0;
@@ -194,7 +235,7 @@ class PortfolioSnapshot {
     Map<String, double> betas = const {},
   }) {
     final rows = <PositionValue>[];
-    var value = 0.0, cost = 0.0, day = 0.0, dividend = 0.0, realized = 0.0;
+    var value = 0.0, cost = 0.0, day = 0.0, dividend = 0.0, realized = 0.0, daySales = 0.0;
     // A béta súlyozott összege és a bétával rendelkező pozíciók értéke.
     var betaSum = 0.0, betaBase = 0.0;
     double? rateOf(String c) => c == currency ? 1.0 : rate(c, currency);
@@ -212,6 +253,13 @@ class PortfolioSnapshot {
       final r = rateOf(p.currency);
       addRealized(p, r);
       closedRows.add((position: p, realized: r == null ? null : p.realizedGain * r));
+      // A ma teljesen eladott pozíció mai eredménye (az eladási árig) is a napé: a
+      // részleges eladásé is beszámít, a teljesé sem tűnhet el.
+      if (quotes[p.symbol] case final q? when r != null) {
+        final row = PositionValue(position: p, price: q.price, dayChange: q.change, rate: r, quoteTime: q.timestamp);
+        day += (row.dayGain ?? 0) * r;
+        daySales += row.sessionSales * r;
+      }
     }
     DateTime? latest;
     for (final p in positions) {
@@ -232,6 +280,7 @@ class PortfolioSnapshot {
       value += row.value! * r!;
       cost += p.cost * r;
       day += (row.dayGain ?? 0) * r;
+      daySales += row.sessionSales * r;
       dividend += (row.annualDividend ?? 0) * r;
       if (betas[p.symbol] case final b?) {
         betaSum += b * row.value! * r;
@@ -278,6 +327,7 @@ class PortfolioSnapshot {
       cashByCurrency: cashByCurrency,
       beta: betaBase > 0 && betaBase >= value * minBetaCoverage ? betaSum / betaBase : null,
       quoteTime: latest,
+      daySales: daySales,
     );
   }
 
@@ -317,8 +367,13 @@ class PortfolioSnapshot {
       if (r != null) rates[from] = r.rate;
     }
 
+    // A lezárt pozíciók közül azoké az ára is kell, amelyekben a napokban volt tranzakció
+    // (a ma eladott darabok mai eredményéhez); a régebben lezártaké nem.
+    final recent = DateTime.now().subtract(const Duration(days: 5));
     await Future.wait([
       for (final p in positions) quote(p.symbol),
+      for (final p in closed)
+        if (p.lots.any((l) => l.date?.isAfter(recent) ?? false)) quote(p.symbol),
       for (final s in {for (final p in positions) p.symbol}) metrics(s),
       for (final c in {
         for (final p in [...positions, ...closed]) p.currency,

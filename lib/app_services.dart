@@ -601,6 +601,8 @@ class AppServices {
       marketData: marketData,
       fx: fx,
       currency: PortfolioSnapshot.totalCurrency(positions, displayCurrency(_appLocale)),
+      // A ma teljesen eladott pozíció mai eredménye is a napi mozgás része (értesítés, tálca).
+      closed: portfolio.closedPositions,
       cash: portfolio.cash,
     );
   }

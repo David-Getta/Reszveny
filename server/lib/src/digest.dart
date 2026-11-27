@@ -111,6 +111,10 @@ class DigestSender {
 
   /// A még birtokolt darabszám tickerenként (vétel +, eladás −) és a tételek
   /// pénzneme a szinkronizált csomag tranzakcióiból.
+  /// Ennyi nappal a kifizetés előtti darabszám jogosít az osztalékra (az app
+  /// `PortfolioStore.exDateLeadDays` értékével egyezik).
+  static const exDateLeadDays = 7;
+
   static ({Map<String, double> held, Map<String, String> currencies}) holdingsOf(
     Map<String, dynamic> data, {
     DateTime? at,
@@ -263,8 +267,10 @@ class DigestSender {
       final next = _addMonths(paidOn.last, period);
       if (next.isBefore(today) || next.isAfter(until)) continue;
       // Egy azóta vett vagy eladott rész: a mai darabszámra arányosítva – mint az appban.
-      final then = holdingsOf(data, at: paidOn.last).held[e.key.$1];
-      final scale = then == null ? 1.0 : held[e.key.$1]! / then;
+      // A jogosító darabszám a kifizetés előtti héten (ex-dátum adat nélkül) – mint az appban
+      // (`PortfolioStore.exDateLeadDays`).
+      final then = holdingsOf(data, at: paidOn.last.subtract(const Duration(days: exDateLeadDays))).held[e.key.$1];
+      final scale = then == null || then <= 0 ? 1.0 : held[e.key.$1]! / then;
       out.add((symbol: e.key.$1, amount: amountOn[paidOn.last]! * scale, currency: e.key.$2, date: next));
     }
     return out..sort((a, b) {

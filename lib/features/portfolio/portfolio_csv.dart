@@ -1,6 +1,7 @@
 import '../../core/models/stock_candidate.dart';
 import 'add_lot_dialog.dart' show parseAmount, parseDecimal;
 import 'portfolio_store.dart';
+import '../recognition/listing_symbol.dart' show currencyForListing;
 
 /// A portfólió tranzakciói CSV-ben (táblázatkezelőbe, másik appba):
 /// `symbol,quantity,price,currency,date,side`, ponttal mint tizedesjel; a `side`
@@ -162,7 +163,13 @@ class ImportedLot {
     this.fee = 0,
     this.isin,
     this.originalPrice,
+    this.currencyGuessed = false,
   });
+
+  /// A fájlban nem volt pénznem (se oszlop, se az ár mellett): a [currency] a ticker
+  /// tőzsdéjéből vagy az alapértelmezésből jön. Egy már birtokolt pozíciónál ilyenkor a
+  /// pozíció pénzneme számít, átváltás nélkül ([CsvImport.inOneCurrency]).
+  final bool currencyGuessed;
 
   /// Más pénznemből átváltott tételnél ([CsvImport.inOneCurrency]) a fájlban szereplő
   /// ár: az ismétlés-szűrés így egy korábbi, átváltás nélkül felvett tételt is felismer.
@@ -297,7 +304,30 @@ class CsvImport {
     final currencyOf = <String, String>{};
     final out = <ImportedLot>[];
     for (final l in lots) {
-      final c = currencyOf[l.symbol.toUpperCase()] ??= recorded(l.symbol) ?? l.currency;
+      final key = l.symbol.toUpperCase();
+      // Kikövetkeztetett pénznem: a pozíció (vagy az importban már látott) pénzneme, átváltás
+      // nélkül – a fájl nem mondta, hogy más pénznemű (egy OTP.BD 30000-es ár forint).
+      if (l.currencyGuessed) {
+        if (currencyOf[key] ?? recorded(l.symbol) case final c? when c != l.currency) {
+          currencyOf[key] ??= c;
+          out.add(
+            ImportedLot(
+              symbol: l.symbol,
+              quantity: l.quantity,
+              price: l.price,
+              currency: c,
+              date: l.date,
+              sell: l.sell,
+              account: l.account,
+              fee: l.fee,
+              isin: l.isin,
+              currencyGuessed: true,
+            ),
+          );
+          continue;
+        }
+      }
+      final c = currencyOf[key] ??= recorded(l.symbol) ?? l.currency;
       final r = c == l.currency ? null : await rate(l.currency, c, l.date ?? DateTime.now());
       if (r == null || !r.isFinite || r <= 0) {
         out.add(l);
@@ -341,6 +371,7 @@ class CsvImport {
             account: l.account,
             fee: l.fee,
             isin: l.isin,
+            currencyGuessed: l.currencyGuessed,
           ),
         );
       } else {
@@ -940,7 +971,7 @@ CsvImport _withHeader(
       final ccyCell = storedCurrency(cell(f, 'currency'));
       final ccy = _currency.hasMatch(totalCcy)
           ? totalCcy
-          : (amountCcy ?? (_currency.hasMatch(ccyCell) ? ccyCell : defaultCurrency));
+          : (amountCcy ?? (_currency.hasMatch(ccyCell) ? ccyCell : currencyForListing(symbol) ?? defaultCurrency));
       if (!dividend) {
         // Forrásadó külön sorban: az aznapi osztalékból levonva (az előjelétől függetlenül).
         if (known && amount != null && amount != 0) {
@@ -988,7 +1019,9 @@ CsvImport _withHeader(
       continue;
     }
     final ccyCell = storedCurrency(priceCcyCol == null ? cell(f, 'currency') : at(f, priceCcyCol));
-    final ccy = _currency.hasMatch(ccyCell) ? ccyCell : (priceCcy ?? defaultCurrency);
+    // Pénznem nélküli fájlban a ticker tőzsdéjének pénzneme (OTP.BD → HUF), végül az alapértelmezett.
+    final guessed = !_currency.hasMatch(ccyCell) && priceCcy == null;
+    final ccy = _currency.hasMatch(ccyCell) ? ccyCell : (priceCcy ?? currencyForListing(symbol) ?? defaultCurrency);
     // A más pénznemű díj (DEGIRO: az alapdevizában) az árfolyammal a kereskedés pénznemébe.
     final fees = [for (final i in feeCols) ?number(at(f, i))];
     var fee = fees.isEmpty ? null : fees.fold(0.0, (sum, v) => sum + v.abs());
@@ -1008,6 +1041,7 @@ CsvImport _withHeader(
         account: PortfolioLot.cleanAccount(cell(f, 'account')),
         fee: PortfolioLot.cleanFee(fee),
         isin: byIsin ? isin : null,
+        currencyGuessed: guessed,
       ),
     );
   }
@@ -1075,7 +1109,9 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
     final side = f.length > 5 ? f[5].toLowerCase() : '';
     if (side == 'dividend') {
       final amount = f.length > 2 ? parseDecimal(f[2]) : null;
-      final ccy = f.length > 3 && _currency.hasMatch(storedCurrency(f[3])) ? storedCurrency(f[3]) : defaultCurrency;
+      final ccy = f.length > 3 && _currency.hasMatch(storedCurrency(f[3]))
+          ? storedCurrency(f[3])
+          : currencyForListing(symbol) ?? defaultCurrency;
       if (_symbol.hasMatch(symbol) && amount != null && amount > 0) {
         dividends.add(
           ImportedDividend(
@@ -1116,7 +1152,8 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
       continue;
     }
     first = false;
-    final ccy = f.length > 3 && _currency.hasMatch(storedCurrency(f[3])) ? storedCurrency(f[3]) : defaultCurrency;
+    final stated = f.length > 3 && _currency.hasMatch(storedCurrency(f[3]));
+    final ccy = stated ? storedCurrency(f[3]) : currencyForListing(symbol) ?? defaultCurrency;
     final date = f.length > 4 ? _date(f[4]) : null;
     lots.add(
       ImportedLot(
@@ -1127,6 +1164,7 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
         date: date,
         sell: sell,
         account: _positionalAccount(f),
+        currencyGuessed: !stated,
       ),
     );
   }

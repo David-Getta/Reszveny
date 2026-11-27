@@ -11,6 +11,7 @@ import '../../theme/app_theme.dart';
 import '../capture/capture_service.dart';
 import 'holdings_reader.dart';
 import 'portfolio_store.dart' show storedCurrency;
+import '../recognition/listing_symbol.dart' show currencyForListing;
 
 /// Portfólió importálása a bróker „Pozícióim” képernyőjének képéről: kép
 /// kiválasztása vagy beillesztése, beolvasás, majd átnézés és kijelölt sorok
@@ -75,30 +76,42 @@ Future<void> showHoldingsImport(BuildContext context) async {
   );
   if (chosen == null || chosen.isEmpty) return;
 
-  String key(String symbol, double q, double p) => '$symbol|$q|$p';
-  final existing = {
+  // Már rögzített: egy dátum nélküli, ugyanannyi darabos vétel a képen szereplő áron, vagy
+  // (átváltott tételnél) a mai árfolyamon számolt áron, kis eltéréssel – az árfolyam napról
+  // napra mozog, így egy másnapi ismételt beolvasás is felismerhető.
+  final existing = [
     for (final l in services.portfolio.lots)
-      if (l.date == null && !l.sell) key(l.symbol, l.quantity, l.price),
-  };
+      if (l.date == null && !l.sell) (symbol: l.symbol, quantity: l.quantity, price: l.price),
+  ];
+  bool recorded(String symbol, double q, double raw, double stored) => existing.any(
+    (e) => e.symbol == symbol && e.quantity == q && (e.price == raw || (e.price - stored).abs() <= stored.abs() * 0.02),
+  );
   var added = 0;
   // Egy kötegben: egyetlen értesítés és mentés a végén.
   await services.portfolio.batch(() async {
     for (final h in chosen) {
-      if (!existing.add(key(h.symbol, h.quantity!, h.averagePrice!))) continue;
+      final raw = h.averagePrice!;
       var currency = h.currency;
+      // A képről olvasott pénznem biztos; a kikövetkeztetett csak a pozíció hiányában számít.
+      final stated = currency != null;
       if (currency == null) {
         try {
           currency = (await services.marketData.profile(h.symbol)).currency;
         } catch (_) {}
       }
-      var ccy = storedCurrency(currency ?? 'USD'), price = h.averagePrice!;
+      var ccy = storedCurrency(currency ?? currencyForListing(h.symbol) ?? 'USD'), price = raw;
       if (ccy == 'GBX') await services.portfolio.fixLegacyPence(h.symbol, pencePrice: price);
-      // Egy ticker tételei egy pénznemben: a meglévő pozícióéban, a mai árfolyamon átváltva.
+      // Egy ticker tételei egy pénznemben: a meglévő pozícióéban – a képen szereplő pénznemből
+      // a mai árfolyamon átváltva, kikövetkeztetett pénznemnél átváltás nélkül.
       if (services.portfolio.currencyOf(h.symbol) case final held? when held != ccy) {
-        if ((await services.fx.rate(ccy, held))?.rate case final r? when r.isFinite && r > 0) {
+        if (!stated) {
+          ccy = held;
+        } else if ((await services.fx.rate(ccy, held))?.rate case final r? when r.isFinite && r > 0) {
           (ccy, price) = (held, price * r);
         }
       }
+      if (recorded(h.symbol, h.quantity!, raw, price)) continue;
+      existing.add((symbol: h.symbol, quantity: h.quantity!, price: price));
       await services.portfolio.add(symbol: h.symbol, quantity: h.quantity!, price: price, currency: ccy);
       added++;
     }

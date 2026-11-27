@@ -502,7 +502,10 @@ void main() {
     addTearDown(tester.view.reset);
     final s = services();
     await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD', date: DateTime(2025, 5, 2));
-    await s.portfolio.addDividend(symbol: 'AAPL', amount: 2.5, currency: 'USD', date: DateTime(2025, 11, 13));
+    // Tavalyi, de az elmúlt 12 hónapba eső tétel (a futás napjától függetlenül): nem „idei”,
+    // de a bekerülési hozamba számít – az év utolsó percében, hogy december 31-én is az legyen.
+    final lastYear = DateTime(DateTime.now().year - 1, 12, 31, 23, 59);
+    await s.portfolio.addDividend(symbol: 'AAPL', amount: 2.5, currency: 'USD', date: lastYear);
     await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     // A főoldali portfólió-kártyán az idei osztalék (a 2025-ös tétel nem idei).

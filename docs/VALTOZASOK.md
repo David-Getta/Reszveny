@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.322)
+# Változásjegyzék (0.2.130 → 0.2.323)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,39 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Portfólió: pénzszámítás átnézése (66. kör)
+
+- **0.2.323**: a portfólió pénzszámítását négy szemszögből (aritmetika, deviza, tételek és eladások,
+  időszakok) nézték át ügynökök, és minden találatot egy szkeptikus ellenőrző tesztben reprodukált. Javítva:
+- **„Ma” százalék aznapi eladásnál**: az eladott darabok bevétele kimaradt a viszonyítási alapból, így egy
+  aznapi eladás után a „Ma” százalék elszállt vagy előjelet váltott (pl. +5% helyett −126%), és téves
+  „nagyot mozdult a portfólió” értesítést is küldhetett. Most a tegnapi értékhez mér.
+- **Ma teljesen eladott pozíció**: a napi eredménye eltűnt a „Ma” összegből (részleges eladásnál benne
+  volt); most beszámít – a tálcán és az értesítésben is.
+- **Ázsiai és óceániai tőzsdék** (Tokió, Hongkong, Sanghaj, Szöul, Szingapúr, India, Sydney, Auckland): a
+  kereskedési nap a New York-i dátum volt, így helyi délelőtt a tegnap vett tétel „mainak” számított (a
+  napi eredmény kétszerese). Most a tőzsde helyi napja számít, nyári időszámítással.
+- **Osztalék**: a bekerülési osztalékhozam számla-nézetben a többi számla vételeivel is arányosított; a
+  pozíció „kapott osztalék” sora a jövőre bejelentett tételt is beszámolta; a várható osztalék a kifizetés
+  napján birtokolt darabhoz mért (a kifizetés előtti héten vett darab még nem jogosít – ex-dátum adat
+  nincs, ezért egy héttel korábbi darabszám számít, az appban és a heti e-mailben is).
+- **Pénznem pénznem-oszlop nélküli CSV-ben**: minden ilyen sor dollárnak számított (egy OTP.BD 30 000-es ár
+  dollárként, forintra váltva 11 millió forint lett). Most a ticker tőzsdéjének pénzneme, egy már
+  birtokolt pozíciónál pedig annak pénzneme, átváltás nélkül; az osztaléksoroknál is.
+- **Pennyben jegyzett londoni papírok**: a képernyőképes import a „GBp”-t fontnak olvasta (100-szoros ár);
+  a készpénzből fizetett vétel a font-egyenleg helyett egy külön penny-egyenleget írt; a devizamegoszlás
+  külön sorba tette a pennyt és a fontot. Mindhárom javítva.
+- **Ismételt képernyőképes import**: egy átváltott tétel újra felvéve megduplázta a pozíciót; most felismeri.
+- **Index-összehasonlítás**: egy indexet verő papír eladása után az index-oldal negatív darabszámra futott
+  (az index „hozama” negatív lett); most legfeljebb annyi jön ki belőle, amennyi benne van.
+- **Idei index-hozam**: ha a portfólió tavaly egy időre kiszállt, az index a hónapokkal korábbi eladástól
+  mérődött, nem az év elejétől.
+- **Lejárt árfolyam**: 12 óra után egy sikertelen frissítés kidobta a meglévő árfolyamot, és a pozíciók
+  kimaradtak az összegből; most a korábbi árfolyam szolgál, amíg nincs újabb.
+- **„Tartja” időtartam**: dátum nélküli birtokolt tételnél a legutóbbi vétel napjától számolt; most nem
+  mutatja (nem ismert).
+- Két, a futás napjától függő teszt (várható osztalék dátuma, 12 havi osztalékhozam) dátumfüggetlenné vált.
 
 ## A legutóbbi hat verzió hibavadász átnézése
 

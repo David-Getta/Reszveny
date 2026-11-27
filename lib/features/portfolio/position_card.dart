@@ -129,7 +129,11 @@ class PositionCard extends StatelessWidget {
                   MetricFigure(
                     key: const ValueKey('position-dividends'),
                     label: l10n.portfolioDividendsReceived,
-                    value: fmt.money(ds.fold<double>(0, (sum, d) => sum + d.amount), ccy),
+                    // A jövőre bejelentett (még nem kapott) tétel nélkül, mint az osztalékkártyán.
+                    value: fmt.money(
+                      ds.where((d) => !(d.date?.isAfter(now) ?? false)).fold<double>(0, (sum, d) => sum + d.amount),
+                      ccy,
+                    ),
                   ),
                   if (yieldOnCost(ds, pos.cost, now: now, scale: services.portfolio.dividendScale) case final y?)
                     MetricFigure(

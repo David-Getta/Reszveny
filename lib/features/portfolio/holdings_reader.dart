@@ -6,6 +6,7 @@ import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import '../capture/capture_service.dart';
 import '../recognition/claude_vision_recognizer.dart';
+import 'portfolio_store.dart' show storedCurrency;
 
 /// Egy képernyőképről kiolvasott pozíció.
 class ReadHolding {
@@ -55,7 +56,9 @@ class HoldingsReader {
             },
             'currency': {
               'type': ['string', 'null'],
-              'description': 'ISO 4217 code of average_price, e.g. USD, EUR, HUF.',
+              'description':
+                  'Currency code of average_price, e.g. USD, EUR, HUF; for prices quoted in pence use GBX, in South '
+                  'African cents ZAC, in Israeli agorot ILA.',
             },
           },
           'required': ['symbol', 'company_name', 'quantity', 'average_price', 'currency'],
@@ -73,7 +76,7 @@ For every stock or ETF position, return:
 - symbol: the ticker on the primary listing exchange (infer it from the company name if only the name is shown);
 - quantity: the number of shares held;
 - average_price: the average purchase price per share. If only the total cost and the quantity are shown, divide them. Never use the current market price or the market value. If it cannot be determined, return null;
-- currency: the currency of average_price.
+- currency: the currency of average_price (GBX when the price is in pence, ZAC in South African cents, ILA in agorot).
 Use dot as the decimal separator and no thousands separators. Skip cash, totals, options, crypto and other rows that are not stock positions. If no positions are visible, return an empty list.''';
 
   Map<String, dynamic> buildRequestBody(CapturedImage image) => {
@@ -149,7 +152,8 @@ Use dot as the decimal separator and no thousands separators. Skip cash, totals,
       final symbol = '${r['symbol'] ?? ''}'.trim().toUpperCase();
       // Betűvel vagy számmal kezdődik (a „-” vagy „.” helykitöltő nem ticker).
       if (!RegExp(r'^[A-Z0-9][A-Z0-9.\-:]{0,14}$').hasMatch(symbol)) continue;
-      final cur = '${r['currency'] ?? ''}'.trim().toUpperCase();
+      // A „GBp” (penny) ne legyen font: a tárolt kód GBX (100-szoros eltérés).
+      final cur = storedCurrency('${r['currency'] ?? ''}');
       final h = ReadHolding(
         symbol: symbol,
         companyName: '${r['company_name'] ?? ''}'.trim(),

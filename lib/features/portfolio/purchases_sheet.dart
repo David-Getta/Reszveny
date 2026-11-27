@@ -150,7 +150,8 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                       padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
                       child: Text(
                         '${l10n.portfolioDividendsReceived}: '
-                        '${fmt.money(ds.fold<double>(0, (sum, d) => sum + d.amount), position.currency)}',
+                        // A jövőre bejelentett (még nem kapott) tétel nélkül.
+                        '${fmt.money(ds.where((d) => !(d.date?.isAfter(DateTime.now()) ?? false)).fold<double>(0, (sum, d) => sum + d.amount), position.currency)}',
                         style: TextStyle(color: p.muted, fontWeight: FontWeight.w600),
                       ),
                     ),

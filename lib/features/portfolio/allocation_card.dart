@@ -13,6 +13,7 @@ import '../../widgets/metric_hint.dart';
 import 'add_lot_dialog.dart';
 import 'portfolio_store.dart';
 import 'portfolio_valuation.dart';
+import '../fx/fx_service.dart';
 
 /// A megoszlás színei sorrendben (a legnagyobb pozíció kapja az elsőt).
 List<Color> allocationColors(AppPalette p) => [
@@ -70,7 +71,8 @@ class _AllocationCardState extends State<AllocationCard> {
     if (s.cash <= 0 || s.totalValue <= 0) return entries;
     final sums = {for (final e in entries) e.label: e.weight};
     for (final e in s.cashByCurrency.entries) {
-      sums.update(e.key, (v) => v + e.value / s.totalValue, ifAbsent: () => e.value / s.totalValue);
+      final c = FxService.major(e.key).$1;
+      sums.update(c, (v) => v + e.value / s.totalValue, ifAbsent: () => e.value / s.totalValue);
     }
     return [for (final e in sums.entries) (label: e.key, weight: e.value)]
       ..sort((a, b) => b.weight.compareTo(a.weight));
@@ -195,7 +197,8 @@ class _AllocationCardState extends State<AllocationCard> {
                 ],
               ),
               AllocationBy.currencies => AllocationBar(
-                entries: _withCashByCurrency(groupWeights(widget.rows, (r) => r.position.currency)),
+                // Főpénznem szerint: a pennyben jegyzett (GBX) papír és a fontos készpénz egy sor.
+                entries: _withCashByCurrency(groupWeights(widget.rows, (r) => FxService.major(r.position.currency).$1)),
                 fmt: widget.fmt,
               ),
               AllocationBy.sectors || AllocationBy.countries => FutureBuilder(

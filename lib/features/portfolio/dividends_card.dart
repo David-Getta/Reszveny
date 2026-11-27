@@ -121,7 +121,10 @@ class DividendsCard extends StatelessWidget {
                         cost,
                         now: now,
                         rate: (d) => rate(d.currency),
-                        scale: services.portfolio.dividendScale,
+                        // A számla darabszámaival (mint a várható osztalékoknál): egy másik
+                        // számla vétele vagy eladása ne torzítsa ennek a hozamát.
+                        scale: (d) =>
+                            d.date == null ? 1 : services.portfolio.holdingScale(d.symbol, d.date!, account: account),
                       );
                       // Évenként is, ha több évből van tétel (az adóbevalláshoz).
                       // A jövőre bejelentett (még nem kapott) tétel nem nyit üres évet.

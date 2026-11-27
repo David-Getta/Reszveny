@@ -533,7 +533,10 @@ class Position {
   /// Mennyiséggel súlyozott átlagos vételár (a birtokolt darabokra).
   double get averageCost => quantity <= 1e-9 ? 0 : cost / quantity;
 
+  /// A legrégebbi még birtokolt vétel napja; `null`, ha van dátum nélküli birtokolt tétel
+  /// (a FIFO azt tekinti a legrégebbinek, így nem ismert, mióta tartja).
   DateTime? get firstDate {
+    if (_fifo.open.any((l) => l.date == null)) return null;
     final dates = [for (final l in _fifo.open) ?l.date]..sort();
     return dates.firstOrNull;
   }
@@ -673,10 +676,16 @@ class PortfolioStore extends ChangeNotifier {
     return q;
   }
 
-  /// A mai darabszám a [date] napján birtokolthoz képest (az [account] mint a
-  /// [quantityAt]-nál): egy azóta eladott vagy vett rész arányosításához. Akkori darab nélkül 1.
+  /// Az osztalékra a kifizetés előtti nap (az ex-dátum) darabszáma jogosít, nem a kifizetésé;
+  /// ex-dátum adat nincs, ezért ennyi nappal a kifizetés előtti darabszám számít (az
+  /// amerikai papíroknál jellemzően 1–4 hét, az európaiaknál néhány nap a különbség).
+  static const exDateLeadDays = 7;
+
+  /// A mai darabszám a [date] napi kifizetésre jogosító (ennyivel korábbi: [exDateLeadDays])
+  /// darabszámhoz képest (az [account] mint a [quantityAt]-nál): egy azóta eladott vagy vett
+  /// rész arányosításához – a kifizetés előtti héten vett darab még nem kapta meg. Akkori darab nélkül 1.
   double holdingScale(String symbol, DateTime date, {String? account}) {
-    final then = quantityAt(symbol, date, account: account);
+    final then = quantityAt(symbol, date.subtract(const Duration(days: exDateLeadDays)), account: account);
     if (then <= 1e-9) return 1;
     return (quantityAt(symbol, DateTime(9999), account: account) / then).clamp(0, double.infinity).toDouble();
   }

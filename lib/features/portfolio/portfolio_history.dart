@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
@@ -209,7 +211,9 @@ List<PricePoint> portfolioTwrIndex(
   if (identical(base, end) || base.close <= 0) return null;
   final pts = benchmark?.points ?? const <PricePoint>[];
   double? closeOn(DateTime d) => pts.where((p) => !_day(p.time).isAfter(d)).lastOrNull?.close;
-  final b0 = closeOn(base.time), b1 = closeOn(end.time);
+  // Az index az év elejétől: ha a portfólió tavaly egy időre kiszállt (a sorozatnak az év
+  // végéig nincs pontja), az utolsó tavalyi pont hónapokkal korábbi lehet.
+  final b0 = closeOn(base.time.isBefore(jan1) ? DateTime(now.year - 1, 12, 31) : base.time), b1 = closeOn(end.time);
   return (
     percent: (end.close / base.close - 1) * 100,
     benchmark: b0 == null || b1 == null || b0 <= 0 ? null : (b1 / b0 - 1) * 100,
@@ -270,10 +274,16 @@ BenchmarkComparison? benchmarkComparison(
     return lo == 0 ? idx.first.close : idx[lo - 1].close;
   }
 
-  var invested = 0.0, cash = 0.0, units = 0.0;
+  var invested = 0.0, cash = 0.0, units = 0.0, debt = 0.0;
   final held = <String, double>{};
   final lastValue = <String, double>{};
-  for (final l in lots) {
+  // Időrendben (egy napon a vétel az eladás előtt): az index-oldal egyenlege a sorrendtől függ.
+  final ordered = [...lots]
+    ..sort((a, b) {
+      final byDay = _lotKey(a).compareTo(_lotKey(b));
+      return byDay != 0 ? byDay : (a.sell ? 1 : 0) - (b.sell ? 1 : 0);
+    });
+  for (final l in ordered) {
     final r = rate(l.currency);
     final pts = histories[l.symbol]?.points;
     if (r == null || pts == null || pts.isEmpty) continue;
@@ -285,12 +295,19 @@ BenchmarkComparison? benchmarkComparison(
     held[l.symbol] = (held[l.symbol] ?? 0) + l.signedQuantity;
     lastValue[l.symbol] = pts.last.close * r;
     if (amount <= 0) continue;
+    // Az index-oldalból legfeljebb annyi jön ki, amennyi benne van: egy indexet verő papír
+    // eladásakor a többlet „tartozás”, amit a következő vételek törlesztenek (különben az
+    // index-oldal negatív darabszámmal a további emelkedésen veszítene).
     if (l.sell) {
+      final out = math.min(amount, units * at);
+      units -= out / at;
+      debt += amount - out;
       cash += amount;
-      units -= amount / at;
     } else {
       invested += amount;
-      units += amount / at;
+      final repay = math.min(amount, debt);
+      debt -= repay;
+      units += (amount - repay) / at;
     }
   }
   if (invested <= 0) return null;
@@ -298,7 +315,11 @@ BenchmarkComparison? benchmarkComparison(
   for (final e in held.entries) {
     if (e.value > 0) value += e.value * lastValue[e.key]!;
   }
-  return BenchmarkComparison(invested: invested, portfolioValue: value, benchmarkValue: units * idx.last.close + cash);
+  return BenchmarkComparison(
+    invested: invested,
+    portfolioValue: value,
+    benchmarkValue: units * idx.last.close + cash - debt,
+  );
 }
 
 /// A portfólió értékalakulásánál választható indexek: ugyanazok, mint a „Piacok

@@ -9,7 +9,8 @@ import '../../theme/app_theme.dart';
 import '../../widgets/date_picker_row.dart';
 import '../stock_detail/widgets/earnings_soon_line.dart';
 import 'account_field.dart';
-import 'portfolio_store.dart' show PortfolioLot, largestKey;
+import '../fx/fx_service.dart';
+import 'portfolio_store.dart' show PortfolioLot, largestKey, storedCurrency;
 import 'portfolio_valuation.dart' show PortfolioSnapshot, weightChange;
 
 /// Szám a beviteli mezőbe: pont tizedesjellel, ezres tagolás nélkül, amit a
@@ -187,7 +188,11 @@ class _AddLotDialogState extends State<_AddLotDialog> {
 
   /// A brókernél vezetett készpénz a kereskedés pénznemében (ha van): vételnél
   /// alapból levonódik, eladásnál hozzáadódik – kikapcsolható.
-  late final double? _cashNow = AppServices.of(context).portfolio.cash[widget.currency.toUpperCase()];
+  late final double? _cashNow = AppServices.of(context).portfolio.cash[_cashUnit.$1];
+
+  /// A készpénz pénzneme és a kereskedési egység szorzója: pennyben jegyzett londoni papírnál
+  /// a font (×0,01) – a készpénzt a felhasználó főpénznemben vezeti.
+  late final (String, double) _cashUnit = FxService.major(storedCurrency(widget.currency));
 
   /// A felhasználó választása; amíg nem nyúlt hozzá, csak a mai napra írt tranzakció
   /// változtatja a készpénzt (egy régebbi tétel pótlásakor az egyenleg már tartalmazza).
@@ -309,7 +314,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
         sell: widget.sell,
         price: widget.currentPrice,
         currency: widget.currency,
-        cash: _cashNow != null && _useCash ? _cashNow : null,
+        cash: _cashNow != null && _useCash ? _cashNow / _cashUnit.$2 : null,
       ),
       _ => null,
     };
@@ -474,9 +479,10 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     // A készpénz-egyenleg követi a tranzakciót (a díjjal együtt), a mostani egyenlegből
     // (egy közben, pl. szinkronnal érkezett változás nem vész el).
     if (useCash) {
-      final cash = services.portfolio.cash[widget.currency.toUpperCase()] ?? 0;
-      final amount = q * p + (widget.sell ? -fee : fee);
-      await services.portfolio.setCash(widget.currency, widget.sell ? cash + amount : cash - amount);
+      final (cashCcy, scale) = _cashUnit;
+      final cash = services.portfolio.cash[cashCcy] ?? 0;
+      final amount = (q * p + (widget.sell ? -fee : fee)) * scale;
+      await services.portfolio.setCash(cashCcy, widget.sell ? cash + amount : cash - amount);
     }
     // A jegyzet a tranzakció adataival a részvény jegyzeteinek végére (befektetési napló).
     if (note.isNotEmpty) {
@@ -597,8 +603,8 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                 controlAffinity: ListTileControlAffinity.leading,
                 title: Text(
                   widget.sell
-                      ? l10n.lotToCash(fmt.money(cash, widget.currency))
-                      : l10n.lotFromCash(fmt.money(cash, widget.currency)),
+                      ? l10n.lotToCash(fmt.money(cash, _cashUnit.$1))
+                      : l10n.lotFromCash(fmt.money(cash, _cashUnit.$1)),
                 ),
               ),
             // Díj (jutalék) egy összegben: ha már van díjas tranzakció, rögtön látszik.

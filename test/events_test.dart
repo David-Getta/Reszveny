@@ -27,6 +27,8 @@ import 'package:reszveny/l10n/generated/app_localizations.dart';
 
 import 'app_widget_test.dart' show FakeNotifier;
 
+import 'package:reszveny/features/portfolio/dividend_forecast.dart' show addMonths;
+
 class _NoRecognizer implements StockRecognizer {
   @override
   String get name => 'test';
@@ -154,7 +156,9 @@ void main() {
     await s.refresh();
     final div = s.events.where((e) => e.kind == UpcomingEventKind.dividend).toList();
     expect(div.map((e) => e.symbol), ['KO']);
-    expect(div.single.date, DateTime(last.year, last.month, last.day + 91));
+    // Negyedéves ritmus: a következő a legutóbbi után három naptári hónappal (nem 91 nappal –
+    // a kettő csak egyes napokon esik egybe, a teszt különben a futás napjától függne).
+    expect(div.single.date, addMonths(DateTime(last.year, last.month, last.day), 3));
     expect(div.single.amount, 5.1);
     expect(div.single.currency, 'USD');
   });

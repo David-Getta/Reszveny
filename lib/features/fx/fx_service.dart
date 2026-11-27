@@ -123,7 +123,11 @@ class FxService extends ChangeNotifier {
     final key = '$f>$t';
     final cached = _cache[key];
     if (cached != null && DateTime.now().difference(cached.$1) < _ttl) return Future.value(cached.$2);
-    if (_failedAt[key] case final at? when DateTime.now().difference(at) < retryAfter) return Future.value(null);
+    // Sikertelen frissítés után egy percig nem próbálja újra; addig a korábbi (12 óránál
+    // régebbi) árfolyam szolgál – egy napos árfolyam jobb, mint a pozíciók kihagyása.
+    if (_failedAt[key] case final at? when DateTime.now().difference(at) < retryAfter) {
+      return Future.value(cached?.$2);
+    }
     return _inFlight.putIfAbsent(key, () async {
       FxRate? parsed;
       try {
@@ -142,7 +146,7 @@ class FxService extends ChangeNotifier {
         _inFlight.remove(key);
       }
       if (parsed == null) _failedAt[key] = DateTime.now();
-      return parsed;
+      return parsed ?? _cache[key]?.$2;
     });
   }
 
