@@ -168,7 +168,9 @@ Future<void> showPortfolioImport(BuildContext context) async {
   // Ticker nélküli export (DEGIRO): az ISIN-ekhez a kereső adja a tickert.
   final isins = parsed.isins;
   if (isins.isNotEmpty) messenger.showSnackBar(SnackBar(content: Text(l10n.loadingData)));
-  final resolved = isins.isEmpty ? parsed : parsed.withSymbols(await resolveIsins(services.marketData.search, isins));
+  final resolved = (isins.isEmpty ? parsed : parsed.withSymbols(await resolveIsins(services.marketData.search, isins)))
+      // Egy azóta tickert váltott papír régi tickerű sorai az új tickerre (ismétlés-szűrés, pozíció).
+      .withRenamed(services.portfolio.formerSymbols);
   // A régi, fontnak címkézett pennyárak előbb GBX-re javítva (lásd `fixLegacyPence`).
   for (final l in resolved.lots) {
     if (storedCurrency(l.currency) == 'GBX') await services.portfolio.fixLegacyPence(l.symbol, pencePrice: l.price);

@@ -17,6 +17,23 @@ String storedCurrency(String code) => switch (code.trim()) {
   final c => c.toUpperCase(),
 };
 
+/// Egy tétel korábbi tickerei (legfeljebb ennyi, a legutóbbiak).
+const maxFormerSymbols = 5;
+
+/// A korábbi tickerek beolvasása (nagybetűvel, üres nélkül).
+List<String> formerSymbolsFrom(Object? v) => v is List
+    ? [
+        for (final x in v)
+          if (x is String && x.trim().isNotEmpty) x.trim().toUpperCase(),
+      ].take(maxFormerSymbols).toList()
+    : const [];
+
+/// A korábbi tickerek egy újabb tickerváltás után (a [from] a végén, ismétlés nélkül).
+List<String> withFormerSymbol(List<String> formerly, String from) {
+  final all = [...formerly.where((x) => x != from), from];
+  return all.length > maxFormerSymbols ? all.sublist(all.length - maxFormerSymbols) : all;
+}
+
 /// Egy tranzakció: vétel (vagy [sell] esetén eladás) – hány darab, milyen
 /// áron (a részvény saját pénznemében), mikor.
 class PortfolioLot {
@@ -32,11 +49,16 @@ class PortfolioLot {
     this.fee = 0,
     this.edited,
     this.renamed,
+    this.formerly = const [],
   });
 
   final String id;
   final String symbol;
   final double quantity;
+
+  /// A tétel korábbi tickerei (tickerváltáskor, a legrégebbi elöl): egy régi tickerű
+  /// bróker-export ismételt beolvasása így is felismeri, és az új tickerre teszi.
+  final List<String> formerly;
 
   /// Az utolsó javítás ideje (UTC); `null`, ha nem javították. Szinkronkor azonos
   /// azonosítónál az újabb javítás nyer.
@@ -100,6 +122,7 @@ class PortfolioLot {
     if (fee > 0) 'fee': fee,
     if (edited != null) 'edited': edited!.toUtc().toIso8601String(),
     if (renamed != null) 'renamed': renamed!.toUtc().toIso8601String(),
+    if (formerly.isNotEmpty) 'formerly': formerly,
   };
 
   static PortfolioLot? fromJson(Map<String, dynamic> j) {
@@ -119,6 +142,7 @@ class PortfolioLot {
       fee: cleanFee(j['fee']),
       edited: parseStamp(asText(j['edited'])),
       renamed: parseStamp(asText(j['renamed'])),
+      formerly: formerSymbolsFrom(j['formerly']),
     );
   }
 }
@@ -135,11 +159,15 @@ class DividendRecord {
     this.account,
     this.edited,
     this.renamed,
+    this.formerly = const [],
   });
 
   final String id;
   final String symbol;
   final double amount;
+
+  /// A korábbi tickerek, mint a [PortfolioLot.formerly].
+  final List<String> formerly;
 
   /// Az utolsó javítás ideje (UTC); `null`, ha nem javították.
   final DateTime? edited;
@@ -164,6 +192,7 @@ class DividendRecord {
     'account': ?account,
     if (edited != null) 'edited': edited!.toUtc().toIso8601String(),
     if (renamed != null) 'renamed': renamed!.toUtc().toIso8601String(),
+    if (formerly.isNotEmpty) 'formerly': formerly,
   };
 
   static DividendRecord? fromJson(Map<String, dynamic> j) {
@@ -179,6 +208,7 @@ class DividendRecord {
       account: PortfolioLot.cleanAccount(j['account']),
       edited: parseStamp(asText(j['edited'])),
       renamed: parseStamp(asText(j['renamed'])),
+      formerly: formerSymbolsFrom(j['formerly']),
     );
   }
 }
@@ -195,7 +225,11 @@ class SplitRecord {
     required this.date,
     this.edited,
     this.renamed,
+    this.formerly = const [],
   });
+
+  /// A korábbi tickerek, mint a [PortfolioLot.formerly].
+  final List<String> formerly;
 
   final String id;
   final String symbol;
@@ -231,6 +265,7 @@ class SplitRecord {
     'date': date.toIso8601String().substring(0, 10),
     if (edited != null) 'edited': edited!.toUtc().toIso8601String(),
     if (renamed != null) 'renamed': renamed!.toUtc().toIso8601String(),
+    if (formerly.isNotEmpty) 'formerly': formerly,
   };
 
   static SplitRecord? fromJson(Map<String, dynamic> j) {
@@ -246,6 +281,7 @@ class SplitRecord {
       date: DateTime(date.year, date.month, date.day),
       edited: parseStamp(asText(j['edited'])),
       renamed: parseStamp(asText(j['renamed'])),
+      formerly: formerSymbolsFrom(j['formerly']),
     );
   }
 
@@ -268,6 +304,7 @@ class SplitRecord {
       fee: l.fee,
       edited: l.edited,
       renamed: l.renamed,
+      formerly: l.formerly,
     );
   }
 
@@ -288,6 +325,7 @@ class SplitRecord {
       fee: l.fee,
       edited: l.edited,
       renamed: l.renamed,
+      formerly: l.formerly,
     );
   }
 }
@@ -389,7 +427,10 @@ class Position {
       byAccount.putIfAbsent(l.account, () => []).add(l);
     }
     if (byAccount.length <= 1) return _settle(_fifoOf(lots));
-    final parts = [for (final l in byAccount.values) _fifoOf(l)];
+    // Előbb minden számla a saját vételeiből: egy a vétele előtti dátummal rögzített eladás
+    // a saját (későbbi) vételét fogyassza – mint egy számlánál –, ne egy másik számla régebbi
+    // tételét. A többi számlához csak az megy, amit a saját vételei sosem fedhetnek.
+    final parts = [for (final l in byAccount.values) _settle(_fifoOf(l))];
     // A birtokolt tételek a vétel napja szerint (dátum nélküli elöl).
     final open = [for (final p in parts) ...p.open]..sort((a, b) => _byDate(a.date, b.date));
     final sales = [for (final p in parts) ...p.sales];
@@ -1006,6 +1047,7 @@ class PortfolioStore extends ChangeNotifier {
         fee: l.fee,
         edited: now,
         renamed: l.renamed,
+        formerly: l.formerly,
       );
     }
     notifyListeners();
@@ -1386,6 +1428,32 @@ class PortfolioStore extends ChangeNotifier {
   /// felaprózása az új tickerre kerül, ugyanazzal az azonosítóval, a váltás idejével
   /// (a szinkron így a másik eszközre is átviszi; egy közben másutt törölt tételt
   /// viszont nem hoz vissza). Az áthelyezett tételek számát adja.
+  /// A tickerváltások: régi ticker → az új és a váltás ideje (UTC) – a tételek
+  /// [PortfolioLot.formerly] mezőiből, a legutóbbi váltás szerint. Egy régi tickerű
+  /// bróker-export sorai ezzel kerülnek az új tickerre ([CsvImport.withRenamed]).
+  Map<String, ({String to, DateTime at})> get formerSymbols {
+    final out = <String, ({String to, DateTime at})>{};
+    void add(String symbol, List<String> formerly, DateTime? at) {
+      if (at == null) return;
+      for (final f in formerly) {
+        if (f == symbol) continue;
+        if (out[f] case final e? when !at.isAfter(e.at)) continue;
+        out[f] = (to: symbol, at: at);
+      }
+    }
+
+    for (final l in _lots) {
+      add(l.symbol, l.formerly, l.renamed);
+    }
+    for (final d in _dividends) {
+      add(d.symbol, d.formerly, d.renamed);
+    }
+    for (final sp in _splits) {
+      add(sp.symbol, sp.formerly, sp.renamed);
+    }
+    return out;
+  }
+
   Future<int> renameSymbol(String from, String to) async {
     final f = from.trim().toUpperCase(), t = to.trim().toUpperCase();
     if (f == t || t.isEmpty) return 0;
@@ -1406,6 +1474,7 @@ class PortfolioStore extends ChangeNotifier {
         fee: l.fee,
         edited: l.edited,
         renamed: stamp,
+        formerly: withFormerSymbol(l.formerly, f),
       );
     }
     for (final (i, d) in _dividends.indexed) {
@@ -1420,12 +1489,22 @@ class PortfolioStore extends ChangeNotifier {
         account: d.account,
         edited: d.edited,
         renamed: stamp,
+        formerly: withFormerSymbol(d.formerly, f),
       );
     }
     final renamed = [
       for (final s in _splits)
         if (s.symbol == f)
-          SplitRecord(id: s.id, symbol: t, from: s.from, to: s.to, date: s.date, edited: s.edited, renamed: stamp),
+          SplitRecord(
+            id: s.id,
+            symbol: t,
+            from: s.from,
+            to: s.to,
+            date: s.date,
+            edited: s.edited,
+            renamed: stamp,
+            formerly: withFormerSymbol(s.formerly, f),
+          ),
     ];
     moved += renamed.length;
     // Ha az új tickeren már rögzítve volt ugyanaz a felaprózás, az marad; a

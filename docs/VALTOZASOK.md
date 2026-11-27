@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.323)
+# Változásjegyzék (0.2.130 → 0.2.324)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,17 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Számlák és tickerváltás
+
+- **0.2.324**: több számla esetén egy eladás, amelyet a saját számláján a vétele előtti dátummal rögzítettek,
+  egy másik számla régebbi tételét fogyasztotta el: a másik számla darabszáma csökkent, a realizált eredmény
+  pedig téves lett (pl. −100 helyett +400). Most minden számla előbb a saját vételeiből számol – mint egy
+  számlánál –, és csak a sosem fedezhető maradék megy a többi számlához.
+- Tickerváltás (pl. FB → META) után ugyanannak a bróker-exportnak az ismételt beolvasása újra felvette a régi
+  tickerű tételeket és osztalékokat (a pozíció megduplázódott). A tételek mostantól megőrzik a korábbi
+  tickereiket (a mentésben és a szinkronban is), és a beolvasás a váltás napjáig dátumozott régi tickerű
+  sorokat az új tickerre teszi – így ismétlésként felismerhetők, egy új sor pedig a pozícióhoz kerül.
 
 ## Portfólió: pénzszámítás átnézése (66. kör)
 

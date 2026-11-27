@@ -351,6 +351,52 @@ class CsvImport {
     return CsvImport(out, skipped, dividends: dividends, splits: splits);
   }
 
+  /// A tickerváltás előtti (a váltás napjáig dátumozott vagy dátum nélküli) sorok a régi
+  /// tickerről az újra ([renames]: régi → új és a váltás ideje): így egy korábban már
+  /// beolvasott, régi tickerű export ismétlésként ismerhető fel, az új sor pedig a
+  /// pozícióhoz kerül, nem egy külön régi tickerű pozícióba.
+  CsvImport withRenamed(Map<String, ({String to, DateTime at})> renames) {
+    if (renames.isEmpty) return this;
+    String map(String symbol, DateTime? date) => switch (renames[symbol.toUpperCase()]) {
+      final r? when date == null || !DateTime(date.year, date.month, date.day).isAfter(r.at.toLocal()) => r.to,
+      _ => symbol,
+    };
+    return CsvImport(
+      [
+        for (final l in lots)
+          ImportedLot(
+            symbol: map(l.symbol, l.date),
+            quantity: l.quantity,
+            price: l.price,
+            currency: l.currency,
+            date: l.date,
+            sell: l.sell,
+            account: l.account,
+            fee: l.fee,
+            isin: l.isin,
+            originalPrice: l.originalPrice,
+            currencyGuessed: l.currencyGuessed,
+          ),
+      ],
+      skipped,
+      dividends: [
+        for (final d in dividends)
+          ImportedDividend(
+            symbol: map(d.symbol, d.date),
+            amount: d.amount,
+            currency: d.currency,
+            date: d.date,
+            account: d.account,
+            isin: d.isin,
+          ),
+      ],
+      splits: [
+        for (final sp in splits)
+          ImportedSplit(symbol: map(sp.symbol, sp.date), from: sp.from, to: sp.to, date: sp.date),
+      ],
+    );
+  }
+
   /// A ticker nélküli sorok a feloldott tickerrel ([symbols]: ISIN és pénznem →
   /// ticker); amit nem sikerült feloldani, kimarad (a kihagyottak közé számít).
   CsvImport withSymbols(Map<IsinKey, String> symbols) {

@@ -310,4 +310,46 @@ void main() {
     expect(find.textContaining(RegExp(r'^GBP \d')), findsOneWidget);
     expect(find.textContaining(RegExp(r'^GBX')), findsNothing);
   });
+
+  test('a sale dated before its own account\'s buy uses that buy, not another account\'s older shares', () {
+    final store = PortfolioStore(
+      lots: [
+        lot('t', 'AAPL', 10, 100, DateTime(2024, 1, 2), account: 'TBSZ'),
+        lot('n', 'AAPL', 10, 200, DateTime(2026, 10, 20), account: 'Normál'),
+        lot('ns', 'AAPL', 5, 180, DateTime(2026, 3, 2), sell: true, account: 'Normál'),
+      ],
+    );
+    expect(store.heldByAccount('AAPL'), {'TBSZ': 10, 'Normál': 5});
+    // (180 − 200) × 5: a Normál saját vételéből, mint egy számlánál.
+    expect(store.positionOf('AAPL')!.realizedGain, closeTo(-100, 1e-9));
+  });
+
+  test('a broker export imported again after a ticker change is recognised, and old-ticker rows land on the new ticker', () async {
+    const export =
+        'Date,Ticker,Type,Quantity,Price per share,Total Amount,Currency,FX Rate\n'
+        '2024-03-14T10:00:00Z,FB,BUY - MARKET,10,USD 180.00,USD 1800.00,USD,1';
+    final store = PortfolioStore();
+    final first = parsePortfolioCsv(export);
+    for (final l in first.lots) {
+      await store.add(symbol: l.symbol, quantity: l.quantity, price: l.price, currency: l.currency, date: l.date);
+    }
+    await store.renameSymbol('FB', 'META');
+    expect(store.formerSymbols.keys, ['FB']);
+    // Ugyanaz az export újra: a régi tickerű sor ismétlés.
+    final again = parsePortfolioCsv(export).withRenamed(store.formerSymbols);
+    expect(again.lots.single.symbol, 'META');
+    final (:rest, :duplicates) = again.withoutRecorded(store.lots, store.dividends);
+    expect(duplicates, 1);
+    expect(rest.lots, isEmpty);
+    // A váltás utáni napra dátumozott régi tickerű sor (egy másik cég?) nem kerül át.
+    final later = parsePortfolioCsv(
+      'symbol,quantity,price,currency,date\nFB,1,10,USD,${DateTime.now().add(const Duration(days: 1)).toIso8601String().substring(0, 10)}',
+      now: DateTime.now().add(const Duration(days: 2)),
+    ).withRenamed(store.formerSymbols);
+    expect(later.lots.single.symbol, 'FB');
+    // A korábbi ticker a mentésben és a szinkronban is megmarad.
+    final json = store.lots.single.toJson();
+    expect(json['formerly'], ['FB']);
+    expect(PortfolioLot.fromJson(json)!.formerly, ['FB']);
+  });
 }

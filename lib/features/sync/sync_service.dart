@@ -184,9 +184,22 @@ class SyncService extends ChangeNotifier {
 
   /// A tételfajták mezői, amelyeket ez a változat ismer (és a [snapshotOf] ír).
   static const _knownFields = {
-    'lots': {'id', 'symbol', 'quantity', 'price', 'currency', 'date', 'side', 'account', 'fee', 'edited', 'renamed'},
-    'dividends': {'id', 'symbol', 'amount', 'currency', 'date', 'account', 'edited', 'renamed'},
-    'splits': {'id', 'symbol', 'from', 'to', 'date', 'edited', 'renamed'},
+    'lots': {
+      'id',
+      'symbol',
+      'quantity',
+      'price',
+      'currency',
+      'date',
+      'side',
+      'account',
+      'fee',
+      'edited',
+      'renamed',
+      'formerly',
+    },
+    'dividends': {'id', 'symbol', 'amount', 'currency', 'date', 'account', 'edited', 'renamed', 'formerly'},
+    'splits': {'id', 'symbol', 'from', 'to', 'date', 'edited', 'renamed', 'formerly'},
     'alerts': {
       'id',
       'symbol',
@@ -598,7 +611,8 @@ class SyncService extends ChangeNotifier {
   /// Darabra párosít – két azonos helyi tételből csak annyi esik ki, ahány a fiókban van.
   static List<Map<String, dynamic>> _withoutTwins(Object? local, Object? remote) {
     String content(Map<String, dynamic> e) {
-      final keys = e.keys.where((k) => k != 'id' && k != 'edited' && k != 'renamed').toList()..sort();
+      final keys = e.keys.where((k) => k != 'id' && k != 'edited' && k != 'renamed' && k != 'formerly').toList()
+        ..sort();
       // Számként egységesen (egy régebbi app 10-et írhatott 10.0 helyett).
       return jsonEncode([
         for (final k in keys) [k, e[k] is num ? (e[k] as num).toDouble() : e[k]],
